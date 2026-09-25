@@ -21,6 +21,7 @@ const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.
 const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442] };
 const bandIn = (cuts, v) => (v >= cuts[2] ? 1 : v >= cuts[1] ? 5 : v >= cuts[0] ? 10 : 0);
 const bandCol = (cuts, v) => BAND[bandIn(cuts, v)];   // a value's color = its FPR band under its own metric's cutoff
+const ARCHIVE = { doi: '10.5281/zenodo.22964480', url: 'https://doi.org/10.5281/zenodo.22964480' };   // the atlas's data record (all versions: the concept DOI)
 const REF = {
   livia: ['Kim & Perrimon (2026) LIVIA, bioRxiv', '10.64898/2026.05.01.721633'],
   flypredictome: ['Kim et al. (2026) FlyPredictome, bioRxiv', '10.64898/2026.04.14.718529'],
@@ -598,7 +599,7 @@ async function viewHome() {
       <p class="lede">Search AlphaFold-Multimer interaction screens by protein. Every prediction is scored with iLIS and its interface is resolved
         to residues: which partners a protein is predicted to bind, how confidently, and where.</p>
       <div id="home-search" class="hero-search"></div>
-      <div class="totals"><span><b>${fmtInt(tot('predictions'))}</b> predictions</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
+      <div class="totals"><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
       <div class="chips"><span class="lbl">Try</span>${(reg.species || []).map((x, i) => (reg.species.length > 1 ? `<span class="lbl${i ? ' sp' : ''}">${esc(x.label)}</span>` : '')
         + (TRY[x.id] || []).map((g) => `<a class="chip" data-sp="${x.id}" data-g="${g}">${g}</a>`).join('')).join('')}</div>
@@ -682,10 +683,10 @@ function viewAbout() {
       keeps every model with its source. The interface residues on both proteins are kept for every prediction, and each protein page runs
       <a href="${LIVIA}clip.html" target="_blank" rel="noopener">LIVIA cLIP</a> in the browser: partners are clustered by their interaction fingerprints, and the clusters
       are mapped onto the AlphaFold DB structure with pLDDT and, for human proteins, AlphaMissense.</p>
-      <p style="max-width:78ch">Fly pages are keyed by FlyBase gene. FlyPredictome folded many constructs of a gene: isoforms, fragments, phosphosite windows,
+      <p style="max-width:78ch">Fly pages are organized by FlyBase gene. FlyPredictome folded many constructs of a gene: isoforms, fragments, phosphosite windows,
       point mutants. Every name is resolved to its gene, and a construct is placed on the gene's reference sequence when its sequence is known, so its
       contacts are drawn in the gene's residue numbering. Clustering uses the full-length construct; the others are listed with their partners.
-      The name-to-gene table is a file of the dataset.</p></div>
+      The table of construct names and their genes is on the FlyPredictome page.</p></div>
     <div class="card"><h2>Cite</h2>
       <p style="max-width:78ch">Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv.
       <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">doi.org/${REF.livia[1]}</a></p>
@@ -703,11 +704,11 @@ function setsCard(TS) {
   const row = (S) => `<tr><td class="set-name"><i style="background:${S.color}"></i><a href="#/datasets/${TS.ds.id}/${S.id}">${esc(S.title)}</a>${S.source
     ? `<a class="set-cite" href="${esc(S.source.url)}" target="_blank" rel="noopener">${esc(shortCite(S.source))} ↗</a>` : ''}</td>
     <td class="n">${fmtInt(S.counts.proteins)}</td><td class="n">${fmtInt(S.counts.pairs)}</td><td class="n">${fmtInt(S.counts.predictions)}</td>
-    <td class="set-bar" title="${(100 * S.counts.predictions / total).toFixed(1)}% of all predictions"><div><span style="width:${Math.max(1, 100 * S.counts.predictions / total).toFixed(1)}%;background:${S.color}"></span></div></td></tr>`;
+    <td class="set-bar" title="${(100 * S.counts.predictions / total).toFixed(1)}% of all models"><div><span style="width:${Math.max(1, 100 * S.counts.predictions / total).toFixed(1)}%;background:${S.color}"></span></div></td></tr>`;
   const grp = (label, list) => (list.length ? `<tr class="set-grp"><th colspan="5">${label}</th></tr>${list.map(row).join('')}` : '');
   const scr = TS.list.filter((x) => x.type === 'screen'), cat = TS.list.filter((x) => x.type !== 'screen');
-  return `<div class="card"><div class="card-head"><h2>Thematic sets</h2><span class="muted">views over ${esc(TS.ds.reg.short)} · open one, or pick it on a protein page</span></div>
-    <div class="tbl-wrap"><table class="sets"><thead><tr><th>Set</th><th class="n">Proteins</th><th class="n">Pairs</th><th class="n">Predictions</th><th>Share of predictions</th></tr></thead>
+  return `<div class="card"><div class="card-head"><h2>Thematic sets</h2><span class="muted">subsets of ${esc(TS.ds.reg.short)} · open one, or choose it at the top of a protein page</span></div>
+    <div class="tbl-wrap"><table class="sets"><thead><tr><th>Set</th><th class="n">Proteins</th><th class="n">Pairs</th><th class="n">Models</th><th>Share of models</th></tr></thead>
       <tbody>${grp('Screens', scr)}${grp('Source categories', cat)}</tbody></table></div></div>`;
 }
 /* a thematic set: a view over one dataset (its prediction runs), with its own counts, citation, hubs and search */
@@ -721,19 +722,18 @@ async function viewSet(dsId, setId) {
   const link = (u, t) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a> / ${esc(S.short)}</div>
     <div class="dshead"><h1>${esc(S.title)}</h1>
-      <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} of ${esc(ds.reg.title)} · ${fmtInt(S.runs.length)} prediction runs · <i>${esc(m.species.name)}</i></div>
+      <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} within ${esc(ds.reg.title)} · <i>${esc(m.species.name)}</i></div>
       ${S.source ? `<div class="cite">${link(S.source.url, `${S.source.citation} doi:${S.source.doi}`)}</div>` : ''}
       <div class="cite">Part of ${m.source.url ? link(m.source.url, m.source.citation) : esc(m.source.citation)}</div></div>
-    <div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.predictions)}</b><span>predictions</span></div>
+    <div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>
       <div class="kpi"><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR</span></div>
       <div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR</span></div></div>
     <div class="card"><h2>Search this set</h2><p class="muted" style="margin:2px 0 10px">Protein pages opened from here show only this set's predictions, with a switch to all of ${esc(ds.reg.short)}.</p><div id="set-search"></div></div>
     <div class="card"><h2>Most connected proteins in this set <span class="muted">partners past the 10% FPR cutoff</span></h2>
       <div class="chips">${hubs.map((r) => { const R = sp.byKey.get(r.key); return `<a class="chip" href="#/${sp.id}/${r.key}?set=${S.id}">${esc(R ? R.gene : r.key)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
-    <div class="card"><h2>Files</h2><p class="muted" style="font-size:14px">A set is a list of prediction runs in <a href="${ds.base}${m.files.sets}">sets.json</a>;
-      its proteins and partner counts are in <a href="${new URL(S.files.proteins, ds.base).href}">proteins.json</a> and its pairs past 10% FPR in
-      <a href="${new URL(S.files.edges, ds.base).href}">edges.tsv</a> (row numbers of the species index). Each gene's bundle holds every run, so a set is read
-      from the same files as the whole dataset: its rows are those whose <span class="mono">batch</span> is one of the set's runs.</p></div>`;
+    <div class="card"><h2>Data</h2><p class="muted" style="font-size:14px;margin:4px 0 0">This set is part of the ${esc(ds.reg.title)} download in the
+      <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA cLIP Atlas record on Zenodo ↗</a>;
+      <a href="https://github.com/flyark/livia-atlas/blob/main/tools/extract_set.py" target="_blank" rel="noopener">extract_set.py ↗</a> pulls out just this set as a table.</p></div>`;
   mountSearch($('#set-search'), { spId: sp.id, only: keys, set: S.id });
 }
 async function viewDataset(dsId) {   // one screen: what it is, its counts and files; proteins link to their species pages
@@ -743,7 +743,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / ${esc(ds.reg.title)}</div>
     <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å</div>
       <div class="cite">${m.source.url ? `<a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.citation)}${m.source.doi ? ` doi:${esc(m.source.doi)}` : ''} ↗</a>` : esc(m.source.citation)}</div></div>
-    <div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.predictions)}</b><span>predictions</span></div>
+    <div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>
       <div class="kpi"><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR</span></div>
       <div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR</span></div></div>
     <div class="card"><h2>Search</h2><p class="muted" style="margin:2px 0 10px">${sp.dsIds.length > 1 ? `Protein pages opened from here show only this screen, <span class="src" style="--c:${ds.reg.color}">${esc(ds.reg.short)}</span>, with a switch to every ${esc(sp.reg.label.toLowerCase())} screen.`
@@ -751,19 +751,16 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
     <div class="card"><h2>Most connected proteins in this screen <span class="muted">partners past the 10% FPR cutoff</span></h2>
       <div class="chips">${hubs.map((r) => { const R = sp.byName.get(r.id); return `<a class="chip" href="#/${sp.id}/${R ? R.key : r.id}${scopeQ}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
     ${setsCard(TS)}
-    <div class="card"><h2>Files</h2><p class="muted" style="font-size:14px">Everything is a static file: <a href="${ds.base}manifest.json">manifest.json</a> ·
-      <a href="${ds.base}proteins.json">proteins.json</a> (search index) · <a href="${ds.base}edges.tsv">edges.tsv</a> (pairs past 10% FPR, best and average iLIS over ranks) ·
-      ${m.files.identity ? `<a href="${ds.base}${m.files.identity}">${m.files.identity}</a> (every name the screen used → its FlyBase gene, what the construct is, and where it sits on the gene) · ` : ''}
-      <span class="mono">b/&lt;id&gt;.zip</span> (per-${m.keyBy === 'gene' ? 'gene lis.py rows of every construct, FASTA and construct table' : 'protein lis.py rows, FASTA and identity map — opens in LIVIA cLIP'}) ·
-      <span class="mono">s/&lt;id&gt;.fa</span> (per-${m.keyBy === 'gene' ? 'gene reference' : 'protein'} sequence)${ds.reg.zip ? `. The per-${m.keyBy === 'gene' ? 'gene' : 'protein'} files are one archive
-      ${ds.reg.zip.record ? `<a href="${esc(ds.reg.zip.record)}" target="_blank" rel="noopener">on Zenodo${ds.reg.zip.doi ? ` (doi:${esc(ds.reg.zip.doi)})` : ''} ↗</a>` : 'on Zenodo'}, read here one file at a time by byte range` : ''}.</p></div>`;
+    <div class="card"><h2>Data</h2><p class="muted" style="font-size:14px;margin:4px 0 0">Every file of this screen is in the
+      <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA cLIP Atlas record on Zenodo (doi:${ARCHIVE.doi}) ↗</a>. A protein page's
+      <b>Data</b> menu downloads that protein's predictions.${m.files.identity ? ` <a href="${ds.base}${m.files.identity}" download>Construct names and their FlyBase genes</a> (table).` : ''}</p></div>`;
   mountSearch($('#ds-search'), sp.dsIds.length > 1 ? { spId: sp.id, set: ds.id, only: new Set(rows.map((r) => { const R = sp.byName.get(r.id); return R ? R.key : r.id; })) } : { spId: sp.id });
 }
 
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925b'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925c'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -784,7 +781,7 @@ function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene
 
 async function viewProtein(spId, q, setId = '') {   // setId: show only that thematic set's predictions
   const sp = await species(spId), P = resolveRow(sp, q), qs = setId ? `?set=${encodeURIComponent(setId)}` : '';
-  if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q)}” in the ${esc(sp.reg.label.toLowerCase())} screens.</div>`; return; }
+  if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q)}” in the ${esc(sp.reg.label.toLowerCase())} screens. <a href="#/${sp.id}">Search ${esc(sp.reg.label.toLowerCase())} proteins</a></div>`; return; }
   if (P.key !== q) { location.replace(`#/${sp.id}/${P.key}${qs}`); return; }
   document.title = `${P.gene} · LIVIA cLIP Atlas`;
   const flags = [];
@@ -819,8 +816,8 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></div></div></div></div>
     <div class="card" id="c-clip"><div class="card-head"><div><h2 id="clip-title">${esc(P.gene)} — interactome</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div>
-      <div class="stat4"><div><b id="s-partners">–</b><span>partners</span></div><div><b id="s-preds">–</b><span>predictions</span></div><div><b id="s-k">–</b><span>clusters</span></div><div><b id="s-len">–</b><span>query length</span></div></div>
-      <p class="explain">LIVIA cLIP, run in your browser on every screen's predictions: the residues of ${esc(P.gene)} that a prediction past the cutoff contacts
+      <div class="stat4"><div><b id="s-partners">–</b><span>partners</span></div><div><b id="s-preds">–</b><span>models</span></div><div><b id="s-k">–</b><span>clusters</span></div><div><b id="s-len">–</b><span>query length</span></div></div>
+      <p class="explain">LIVIA cLIP, run in your browser on the predictions shown: the residues of ${esc(P.gene)} that a prediction past the cutoff contacts
         (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å) form its interaction fingerprint. Fingerprints are compared by cosine distance and joined by average linkage, and the number
         of clusters is chosen by silhouette. Clusters are numbered by size: Cluster 1 is the largest.</p><p class="note" id="clip-aside" hidden></p></div>
     <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted">predictions contacting each residue, colored by their most frequent cluster</span>${xticks}</div></div>
@@ -1442,8 +1439,8 @@ async function viewSpecies(spId) {
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
   document.title = `${sp.reg.label} · LIVIA cLIP Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / ${esc(sp.reg.label)}</div>
-    <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens merged'}, keyed by ${esc(sp.manifest.keyedBy || 'UniProt accession')}</div></div>
-    <div class="kpirow"><div class="kpi"><b>${fmtInt(c.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(c.predictions)}</b><span>predictions</span></div>
+    <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
+    <div class="kpirow"><div class="kpi"><b>${fmtInt(c.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(c.predictions)}</b><span>models</span></div>
       <div class="kpi"><b>${fmtInt(c.pairs)}</b><span>pairs</span></div><div class="kpi f10"><b>${fmtInt(c.pairsFpr10)}</b><span>pairs past 10% FPR</span></div>
       <div class="kpi f5"><b>${fmtInt(c.pairsFpr5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b>${fmtInt(c.pairsFpr1)}</b><span>past 1% FPR</span></div></div>
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
@@ -1481,7 +1478,7 @@ async function route() {
       const sp = await species(d.species), k = (n) => { const r = sp.byName.get(n); return r ? r.key : n; };
       location.replace(`#/${sp.id}/${parts.slice(1).map(k).join('/')}`); return;
     }
-    else app.innerHTML = `<div class="empty">Nothing at “${esc(parts.join('/'))}”.</div>`;
+    else app.innerHTML = `<div class="empty">Nothing at “${esc(parts.join('/'))}”. <a href="#/">Go to the atlas home</a></div>`;
   } catch (e) { app.innerHTML = `<div class="empty">${esc(e.message || e)}</div>`; console.error(e); }
   if (location.hash === here) trackView();   // not for a view that redirected
   if (!$('#top-search').firstChild) mountSearch($('#top-search'));
