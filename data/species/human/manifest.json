@@ -1,0 +1,54 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "human",
+ "species": {
+  "name": "Homo sapiens",
+  "taxon": 9606
+ },
+ "datasets": [
+  {
+   "id": "human-predictomes",
+   "short": "Proteome-wide",
+   "title": "Human proteome-wide AlphaFold-Multimer screen",
+   "citation": "Schmid EW, Zhu H, Ryu E, Lim Y, Smogorzewska A, Brown A, Walter JC (2025). Proteome-wide in silico screening for human protein-protein interactions. bioRxiv.",
+   "counts": {
+    "proteins": 20200,
+    "pairs": 1614047,
+    "predictions": 4842140,
+    "pairsFpr10": 227130,
+    "pairsFpr5": 127585,
+    "pairsFpr1": 38200
+   },
+   "url": "https://www.biorxiv.org/content/10.1101/2025.11.10.687652v1"
+  },
+  {
+   "id": "human-kinase-tf",
+   "short": "Kinase–TF",
+   "title": "Human kinase–transcription factor screen",
+   "citation": "Kim AR, Huang K, Johnson JL, Yaron-Barir TM, Wang K, Cantley LC, Hu Y, Perrimon N (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. bioRxiv.",
+   "counts": {
+    "proteins": 1481,
+    "pairs": 377262,
+    "predictions": 1885929,
+    "pairsFpr10": 59323,
+    "pairsFpr5": 29043,
+    "pairsFpr1": 3644
+   },
+   "url": "https://www.biorxiv.org/content/10.1101/2025.10.10.681672"
+  }
+ ],
+ "counts": {
+  "proteins": 20198,
+  "pairs": 1986099,
+  "predictions": 6728039,
+  "pairsFpr10": 285945,
+  "pairsFpr5": 156368,
+  "pairsFpr1": 41775,
+  "pairsInSeveral": 5195
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta"
+ }
+}

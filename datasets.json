@@ -1,0 +1,66 @@
+{
+ "species": [
+  {
+   "id": "human",
+   "label": "Human",
+   "name": "Homo sapiens",
+   "base": "data/species/human/",
+   "datasets": [
+    "human-predictomes",
+    "human-kinase-tf"
+   ]
+  }
+ ],
+ "datasets": [
+  {
+   "id": "human-predictomes",
+   "species": "human",
+   "title": "Human proteome-wide screen",
+   "short": "Proteome-wide",
+   "color": "#2B5F8E",
+   "base": "https://flyark.github.io/livia-atlas-human-proteome/",
+   "status": "live",
+   "source": "Schmid et al. 2025 · bioRxiv",
+   "paper": "https://www.biorxiv.org/content/10.1101/2025.11.10.687652v1",
+   "dev": "../data/human-predictomes/"
+  },
+  {
+   "id": "human-kinase-tf",
+   "species": "human",
+   "title": "Human kinase–transcription factor screen",
+   "short": "Kinase–TF",
+   "color": "#9A4A8F",
+   "base": "https://flyark.github.io/livia-atlas-human-kinase-tf/",
+   "status": "live",
+   "source": "Kim et al. 2025 · bioRxiv",
+   "paper": "https://www.biorxiv.org/content/10.1101/2025.10.10.681672",
+   "dev": "../data/human-kinase-tf/"
+  },
+  {
+   "id": "flypredictome",
+   "title": "FlyPredictome",
+   "species": "Drosophila melanogaster",
+   "status": "external",
+   "source": "Kim et al. 2026 · bioRxiv",
+   "url": "https://flyark.github.io/FlyPredictome-network/",
+   "note": "Network with a cLIP link on every node; joins the atlas format next.",
+   "paper": "https://doi.org/10.64898/2026.04.14.718529"
+  },
+  {
+   "id": "afdb-complexes",
+   "title": "AlphaFold DB complexes",
+   "species": "many species",
+   "status": "planned",
+   "source": "EMBL-EBI AlphaFold Protein Structure Database",
+   "note": "Predicted complexes scored with the same pipeline."
+  },
+  {
+   "id": "virus-host",
+   "title": "Virus–host interactions",
+   "species": "virus × host",
+   "status": "planned",
+   "source": "public large-scale screens",
+   "note": "Any screen with PAE output can be added."
+  }
+ ]
+}
