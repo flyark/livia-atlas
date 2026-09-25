@@ -702,15 +702,20 @@ function viewAbout() {
 }
 
 const shortCite = (src) => `${src.citation.split(' ')[0]} et al. ${(src.citation.match(/\((\d{4})\)/) || [])[1] || ''}`.trim();
-// Thematic sets of a dataset, for its dataset and species pages: screens first, then source categories
+// Thematic sets of a dataset, for its dataset and species pages: one table, screens first, then source categories;
+// the bar is each set's share of the dataset's predictions (sets overlap, so shares need not add up)
 function setsCard(TS) {
   if (!TS) return '';
-  const row = (S) => `<div class="screen"><span class="src" style="--c:${S.color}">${esc(S.short)}</span><div><a href="#/datasets/${TS.ds.id}/${S.id}"><b>${esc(S.title)}</b></a>
-    <div class="muted">${fmtInt(S.counts.proteins)} proteins · ${fmtInt(S.counts.pairs)} pairs · ${fmtInt(S.counts.predictions)} predictions${S.source ? ` · <a href="${esc(S.source.url)}" target="_blank" rel="noopener">${esc(shortCite(S.source))} ↗</a>` : ''}</div></div></div>`;
+  const total = TS.ds.manifest.counts.predictions || Math.max(...TS.list.map((x) => x.counts.predictions));
+  const row = (S) => `<tr><td class="set-name"><i style="background:${S.color}"></i><a href="#/datasets/${TS.ds.id}/${S.id}">${esc(S.title)}</a>${S.source
+    ? `<a class="set-cite" href="${esc(S.source.url)}" target="_blank" rel="noopener">${esc(shortCite(S.source))} ↗</a>` : ''}</td>
+    <td class="n">${fmtInt(S.counts.proteins)}</td><td class="n">${fmtInt(S.counts.pairs)}</td><td class="n">${fmtInt(S.counts.predictions)}</td>
+    <td class="set-bar" title="${(100 * S.counts.predictions / total).toFixed(1)}% of all predictions"><div><span style="width:${Math.max(1, 100 * S.counts.predictions / total).toFixed(1)}%;background:${S.color}"></span></div></td></tr>`;
+  const grp = (label, list) => (list.length ? `<tr class="set-grp"><th colspan="5">${label}</th></tr>${list.map(row).join('')}` : '');
   const scr = TS.list.filter((x) => x.type === 'screen'), cat = TS.list.filter((x) => x.type !== 'screen');
-  return `<div class="card"><h2>Thematic sets of ${esc(TS.ds.reg.short)} <span class="muted">views over the one dataset; a protein page can show a single set</span></h2>
-    ${scr.length ? `<h3 class="sets-h">Screens</h3><div class="screens">${scr.map(row).join('')}</div>` : ''}
-    ${cat.length ? `<h3 class="sets-h">Source categories</h3><div class="screens">${cat.map(row).join('')}</div>` : ''}</div>`;
+  return `<div class="card"><div class="card-head"><h2>Thematic sets</h2><span class="muted">views over ${esc(TS.ds.reg.short)} · open one, or pick it on a protein page</span></div>
+    <div class="tbl-wrap"><table class="sets"><thead><tr><th>Set</th><th class="n">Proteins</th><th class="n">Pairs</th><th class="n">Predictions</th><th>Share of predictions</th></tr></thead>
+      <tbody>${grp('Screens', scr)}${grp('Source categories', cat)}</tbody></table></div></div>`;
 }
 /* a thematic set: a view over one dataset (its prediction runs), with its own counts, citation, hubs and search */
 async function viewSet(dsId, setId) {

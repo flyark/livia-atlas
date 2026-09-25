@@ -361,3 +361,20 @@ select { max-width: 100%; }
 .scope-chip:not(.on):hover { box-shadow: inset 0 0 0 1px var(--c); }
 .scope-chip:focus-visible { outline: 2px solid var(--c); outline-offset: 1px; }
 .setbar[hidden] { display: none; }
+table.sets { width: 100%; border-collapse: collapse; font-size: 14px; }
+.sets th, .sets td { padding: 8px 12px; border-bottom: 1px solid var(--line-2); text-align: left; vertical-align: middle; }
+.sets thead th { font-size: 12px; font-weight: 600; color: var(--ink-3); border-bottom: 1px solid var(--line); white-space: nowrap; }
+.sets .n { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; color: var(--ink-2); white-space: nowrap; }
+.sets tr.set-grp th { padding: 16px 12px 6px; font-size: 11px; font-weight: 600; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); border-bottom: 1px solid var(--line-2); }
+.sets .set-name { white-space: nowrap; }
+.sets .set-name i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 10px; vertical-align: 0; }
+.sets .set-name a { font-weight: 600; }
+.sets .set-bar { width: 24%; min-width: 110px; }
+.sets .set-bar div { height: 6px; border-radius: 3px; background: var(--line-2); overflow: hidden; }
+.sets .set-bar span { display: block; height: 100%; border-radius: 3px; opacity: .8; }
+.sets tbody tr:not(.set-grp):hover td { background: #FAFBFD; }
+.sets thead th, .sets tr.set-grp th { font-family: var(--sans); }
+.sets .set-cite { margin-left: 10px; font-size: 12.5px; font-weight: 400; }
+@media (max-width: 600px) { .sets th:nth-child(3), .sets td:nth-child(3), .sets th:nth-child(5), .sets td:nth-child(5) { display: none; } .sets .set-name { white-space: normal; } }
+.sets thead th.n { font-family: var(--sans); color: var(--ink-3); }
+@media (max-width: 600px) { .sets .set-cite { display: block; margin: 2px 0 0 19px; } }
