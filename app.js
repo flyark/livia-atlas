@@ -51,7 +51,20 @@ const uniprotLink = (acc, label) => (acc ? `<a href="https://www.uniprot.org/uni
 /* ── data: registry, screens, species, merged bundles, sequences ──────────────────────────────────────── */
 let REG = null;
 const DSC = {}, SPC = {};
-async function registry() { if (!REG) REG = await (await fetch('datasets.json')).json(); return REG; }
+let ROUTE = 0;   // bumped by every navigation: a view still loading for an earlier page stops at its next await
+const stale = (gen) => gen !== ROUTE;
+// The site's and the data repos' files. GitHub Pages answers 5xx now and then (right after a deploy): one retry, then a
+// message a reader can act on, never a parse error.
+async function getFile(url, as) {
+  for (let i = 0; ; i++) {
+    let res = null; try { res = await fetch(url); } catch (e) { /* offline, or blocked */ }
+    if (res && res.ok) return as === 'text' ? res.text() : res.json();
+    if (i || (res && res.status < 500)) throw new Error(`The atlas data could not be loaded${res ? ` (HTTP ${res.status})` : ''}. Try reloading the page.`);
+    await new Promise((r) => setTimeout(r, 1500));
+  }
+}
+const getJSON = (url) => getFile(url, 'json'), getText = (url) => getFile(url, 'text');
+async function registry() { if (!REG) REG = await getJSON('datasets.json'); return REG; }
 const regDataset = async (id) => (await registry()).datasets.find((d) => d.id === id);
 const regSpecies = async (id) => ((await registry()).species || []).find((s) => s.id === id);
 
@@ -60,9 +73,7 @@ async function dataset(id) {   // one screen: its manifest; proteins.json only w
   const reg = await regDataset(id);
   if (!reg || !reg.base) throw new Error(`Unknown dataset “${id}”.`);
   const base = new URL(DEV && reg.dev ? reg.dev : reg.base, location.href).href;   // each screen is its own Pages repo
-  const res = await fetch(base + 'manifest.json');
-  if (!res.ok) throw new Error(`The ${reg.short || reg.title} data could not be reached.`);
-  DSC[id] = { id, reg, base, manifest: await res.json(), raw: new Map(), rows: null };
+  DSC[id] = { id, reg, base, manifest: await getJSON(base + 'manifest.json'), raw: new Map(), rows: null };
   return DSC[id];
 }
 // Thematic sets of a dataset (sets.json): views over the one dataset, each a list of its prediction runs — a screen the
@@ -71,7 +82,7 @@ function setsOf(ds) {
   if (!ds.setsJob) ds.setsJob = (async () => {
     const f = ds.manifest.files && ds.manifest.files.sets; if (!f) return null;
     try {
-      const j = await (await fetch(new URL(f, ds.base).href)).json(), runSets = new Map();
+      const j = await getJSON(new URL(f, ds.base).href), runSets = new Map();
       for (const s of j.sets) { SET_COL[s.short] = s.color; for (const r of s.runs) { if (!runSets.has(r)) runSets.set(r, []); runSets.get(r).push(s); } }
       return { list: j.sets, byId: new Map(j.sets.map((s) => [s.id, s])), runSets, ds };
     } catch (e) { return null; }
@@ -93,7 +104,7 @@ async function screenFile(ds, rel) {
 }
 async function datasetRows(ds) {
   if (ds.rows) return ds.rows;
-  const prot = await (await fetch(ds.base + 'proteins.json')).json(), c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
+  const prot = await getJSON(ds.base + 'proteins.json'), c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
   ds.rows = prot.rows.map((r) => ({ id: r[c.id], gene: r[c.gene], acc: r[c.acc], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1] }));
   return ds.rows;
 }
@@ -102,7 +113,7 @@ async function species(id) {   // the species index: one row per protein over ev
   const reg = await regSpecies(id);
   if (!reg) throw new Error(`Unknown species “${id}”.`);
   const base = new URL(reg.base, location.href).href;
-  const [manifest, prot] = await Promise.all([fetch(base + 'manifest.json').then((r) => r.json()), fetch(base + 'proteins.json').then((r) => r.json())]);
+  const [manifest, prot] = await Promise.all([getJSON(base + 'manifest.json'), getJSON(base + 'proteins.json')]);
   const c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
   const rows = prot.rows.map((r, i) => {
     const occ = String(r[c.occ] || '').split(' ').filter(Boolean).map((t) => { const k = t.indexOf(':'); return { di: +t.slice(0, k), name: t.slice(k + 1) }; });
@@ -130,7 +141,7 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
       const ds = await dataset(setId), rows = await datasetRows(ds);
       map = rows.map((r) => { const R = sp.byName.get(r.id) || sp.byKey.get(r.id); return R ? R.i : -1; }); url = ds.base + 'edges.tsv';
     } else if (setId) for (const id of sp.dsIds) { const TS = await setsOf(await dataset(id)).catch(() => null), S = TS && TS.byId.get(setId); if (S) { url = new URL(S.files.edges, TS.ds.base).href; break; } }
-    const lines = (await (await fetch(url)).text()).split('\n');
+    const lines = (await getText(url)).split('\n');
     const head = lines[0].split('\t'), cb = head.indexOf('iLIS_best'), ca = head.indexOf('iLIS_avg'), cs = head.indexOf('src');
     const adj = new Map();
     for (let k = 1; k < lines.length; k++) {
@@ -141,7 +152,7 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
       adj.get(i).set(j, e); adj.get(j).set(i, e);
     }
     return { adj };
-  })());
+  })().catch((e) => { sp.edgesBy.delete(setId); throw e; }));   // a failed read is not kept: the next draw tries again
   return sp.edgesBy.get(setId);
 }
 function parseCSV(text) {
@@ -620,8 +631,9 @@ function canvasAxes(g, xs, ys, m, W, H, xTitle, yTitle) {
 /* ── views ───────────────────────────────────────────────────────────────────────────────────────────── */
 const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: ['arm', 'dsh', 'Ras85D', 'N', 'yki', 'Akt'] };   // example proteins on the home page
 async function viewHome() {
-  const reg = await registry(), SPX = reg.species[0], sp = await species(SPX.id);
+  const gen = ROUTE, reg = await registry(), SPX = reg.species[0], sp = await species(SPX.id);
   const all = await Promise.all((reg.species || []).map((x) => species(x.id)));   // totals over every species and screen: they grow as screens are added
+  if (stale(gen)) return;
   const tot = (k) => all.reduce((s, x) => s + (x.manifest.counts[k] || 0), 0), nScreens = all.reduce((s, x) => s + x.dsIds.length, 0);
   app.innerHTML = `
     <section class="hero hero-center">
@@ -682,9 +694,10 @@ async function fillDsStats() {
 }
 async function showcase(sp, P) {
   if (!P) return;
+  const gen = ROUTE;
   try {
     const B = await merged(sp, P), M = await runClip(B.clipRows, B.qLabel, CUT[10]);
-    const cv = $('#sc-cv'); if (!cv) return;
+    const cv = $('#sc-cv'); if (!cv || stale(gen)) return;
     const L = M.plen || P.clen, n = M.fingerprints.length, tot = new Uint16Array(L + 2), byC = new Map();
     for (let i = 0; i < n; i++) for (const r of M.fingerprints[i]) { if (r < 1 || r > L) continue; tot[r]++; const m = byC.get(r) || {}; m[M.labels[i]] = (m[M.labels[i]] || 0) + 1; byC.set(r, m); }
     let max = 1; for (let r = 1; r <= L; r++) max = Math.max(max, tot[r]);
@@ -696,11 +709,12 @@ async function showcase(sp, P) {
     g.fillStyle = '#8593A5'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textAlign = 'left'; g.fillText('1', 0, H - 4); g.textAlign = 'right'; g.fillText(String(L), W, H - 4);
     const parts = new Set(M.preds.map((p) => (B.labels.get(p.partner) || {}).key)).size;
     $('#sc-note').textContent = `${M.k} clusters · ${fmtInt(parts)} partners past 10% FPR`;
-  } catch (e) { const n = $('#sc-note'); if (n) n.textContent = ''; }
+  } catch (e) { const n = !stale(gen) && $('#sc-note'); if (n) n.textContent = ''; }
 }
 
 async function viewDatasets() {
-  const reg = await registry();
+  const gen = ROUTE, reg = await registry();
+  if (stale(gen)) return;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Datasets</div>
     <h2 class="section-h" style="margin-top:4px">Datasets</h2>
     <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>`;
@@ -767,10 +781,12 @@ async function themeMembers(T) {
   }))).filter(Boolean);
 }
 async function viewTheme(id) {
-  const reg = await registry(), T = (reg.themes || []).find((t) => t.id === id);
+  const gen = ROUTE, reg = await registry(), T = (reg.themes || []).find((t) => t.id === id);
+  if (stale(gen)) return;
   if (!T) { app.innerHTML = `<div class="empty">No theme “${esc(id)}”. <a href="#/">Go to the atlas home</a></div>`; return; }
   document.title = `${T.title} · LIVIA cLIP Atlas`;
   const rows = await themeMembers(T), sum = (k) => rows.reduce((a, r) => a + (r.counts[k] || 0), 0);
+  if (stale(gen)) return;
   const cite = (src) => (src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(shortCite(src))} ↗</a>` : '');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Themes / ${esc(T.title)}</div>
     <div class="dshead"><h1>${esc(T.title)}</h1><div class="pname">${esc(T.about || '')}</div></div>
@@ -783,10 +799,12 @@ async function viewTheme(id) {
 }
 /* a thematic set: a view over one dataset (its prediction runs), with its own counts, citation, hubs and search */
 async function viewSet(dsId, setId) {
-  const ds = await dataset(dsId), TS = await setsOf(ds), S = TS && TS.byId.get(setId), sp = await species(ds.reg.species), m = ds.manifest;
+  const gen = ROUTE, ds = await dataset(dsId), TS = await setsOf(ds), S = TS && TS.byId.get(setId), sp = await species(ds.reg.species), m = ds.manifest;
+  if (stale(gen)) return;
   if (!S) { app.innerHTML = `<div class="empty">No set “${esc(setId)}” in ${esc(ds.reg.title)}.</div>`; return; }
   document.title = `${S.short} · ${ds.reg.short} · LIVIA cLIP Atlas`;
-  const prot = await (await fetch(new URL(S.files.proteins, ds.base).href)).json(), c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
+  const prot = await getJSON(new URL(S.files.proteins, ds.base).href), c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
+  if (stale(gen)) return;
   const rows = prot.rows.map((r) => ({ key: r[c.key], pos10: r[c.pos10] })), keys = new Set(rows.map((r) => r.key));
   const hubs = [...rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24), k = S.counts;
   const link = (u, t) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`;
@@ -805,8 +823,9 @@ async function viewSet(dsId, setId) {
   mountSearch($('#set-search'), { spId: sp.id, only: keys, set: S.id });
 }
 async function viewDataset(dsId) {   // one screen: what it is, its counts and files; proteins link to their species pages
-  const ds = await dataset(dsId), m = ds.manifest, k = m.counts, sp = await species(ds.reg.species), TS = await setsOf(ds);
+  const gen = ROUTE, ds = await dataset(dsId), m = ds.manifest, k = m.counts, sp = await species(ds.reg.species), TS = await setsOf(ds);
   const rows = await datasetRows(ds), hubs = [...rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24);
+  if (stale(gen)) return;
   const scopeQ = sp.dsIds.length > 1 ? `?set=${encodeURIComponent(ds.id)}` : '';   // one of several screens: its protein pages open in its scope
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / ${esc(ds.reg.title)}</div>
     <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å</div>
@@ -826,9 +845,15 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925e'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925f'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
+}
+function stopClip() {   // leaving a page mid-clustering: drop its job, so the next page does not wait behind it
+  if (!CLIPW || !clipWait.size) return;
+  CLIPW.terminate(); CLIPW = null;
+  for (const w of clipWait.values()) w.reject(new Error('The page changed.'));
+  clipWait.clear();
 }
 const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the fingerprint: dendrogram + cluster strip / y axis live in AXL
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
@@ -846,7 +871,9 @@ function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene
 }
 
 async function viewProtein(spId, q, setId = '') {   // setId: show only that thematic set's predictions
+  const gen = ROUTE, gone = () => stale(gen);   // after every await: stop if the reader has moved to another page
   const sp = await species(spId), P = resolveRow(sp, q), qs = setId ? `?set=${encodeURIComponent(setId)}` : '';
+  if (gone()) return;
   if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q)}” in the ${esc(sp.reg.label.toLowerCase())} screens. <a href="#/${sp.id}">Search ${esc(sp.reg.label.toLowerCase())} proteins</a></div>`; return; }
   if (P.key !== q) { location.replace(`#/${sp.id}/${P.key}${qs}`); return; }
   document.title = `${P.gene} · LIVIA cLIP Atlas`;
@@ -861,6 +888,7 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
+  if (gone()) return;
   const dataMenu = occ.map((o, i) => { const u = bundleUrl(o.ds, o.name), label = `${sp.dsShort[o.di]}${occ.filter((x) => x.di === o.di).length > 1 ? ' · ' + o.name : ''}`;
     if (o.ds.reg.zip) return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="#" data-dl="${i}">Download .zip</a></div>`;   // inside the archive: saved from the read
     return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="${LIVIA}clip.html?data=${encodeURIComponent(u)}&gene=${encodeURIComponent(P.gene)}" target="_blank" rel="noopener">Open in LIVIA cLIP ↗</a><a href="${u}" download>Download .zip</a></div>`; }).join('');
@@ -937,12 +965,14 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   // Scope: one screen of the species (human kinase–TF …) or one thematic set of a screen (FlyPredictome's kinase–TF
   // screen, a source category …). The "In" row switches it; a banner says what is shown; links keep it.
   const TS0 = (await Promise.all(occ.map((o) => setsOf(o.ds).catch(() => null)))).find(Boolean) || null;
+  if (gone()) return;
   const dsScope = setId ? occ.find((o) => o.ds.id === setId) : null;
   const SET = dsScope ? { id: setId, type: 'dataset', title: dsScope.ds.reg.title, short: dsScope.ds.reg.short, color: dsScope.ds.reg.color, source: dsScope.ds.manifest.source }
     : setId && TS0 ? TS0.byId.get(setId) || null : null;
   const scopeQ = SET ? `?set=${encodeURIComponent(SET.id)}` : '';
   let B, B0;
-  try { B = await merged(sp, P, SET ? SET.id : ''); B0 = SET ? await merged(sp, P) : B; } catch (e) { $('#clip-sub').textContent = e.message; return; }
+  try { B = await merged(sp, P, SET ? SET.id : ''); B0 = SET ? await merged(sp, P) : B; } catch (e) { if (!gone()) $('#clip-sub').textContent = e.message; return; }
+  if (gone()) return;
   {
     const n = new Map(); for (const p of B0.preds) { const d = sp.dsIds[p.di]; n.set(d, (n.get(d) || 0) + 1); for (const t of p.tags || []) n.set(t, (n.get(t) || 0) + 1); }
     const screens = occ.length > 1 ? occ.map((o) => ({ id: o.ds.id, short: o.ds.reg.short, color: o.ds.reg.color, title: o.ds.reg.title })) : [];
@@ -965,6 +995,7 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
     document.title = `${P.gene} · ${SET.short} · LIVIA cLIP Atlas`;
   }
   const refSeq = await seqOf(sp, P, B);   // the reference sequence (UniProt; FlyBase for fly)
+  if (gone()) return;
   let CQ = B.C0, qSeq = '';   // the clustered construct (a choice of B.choices): its rows, its axis, and the letters along it
   const setQSeq = () => { qSeq = B.cons.size && CQ.qName ? B.seqs.get(CQ.qName) || '' : refSeq;
     if (qSeq && CQ.qLen && qSeq.length !== CQ.qLen) qSeq = (CQ.qName && B.seqs.get(CQ.qName)) || ''; };
@@ -1018,7 +1049,10 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   /* cLIP ─ clustering + everything drawn from it */
   async function cluster() {
     $('#clip-sub').textContent = 'Clustering…';
-    try { M = await runClip(CQ.rows, B.qLabel, CUT[cut]); } catch (e) { M = null; $('#clip-sub').textContent = `Clustering failed: ${e.message}`; }
+    let m = null, err = null;
+    try { m = await runClip(CQ.rows, B.qLabel, CUT[cut]); } catch (e) { err = e; }
+    if (gone()) return;
+    M = m; if (err) $('#clip-sub').textContent = `Clustering failed: ${err.message}`;
     predCluster.clear(); partnerCluster.clear();
     if (M) {
       const best = new Map();
@@ -1235,17 +1269,20 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   async function loadStructure() {
     const msg = (t) => { const m = $('#v3d-msg'); if (m) { m.hidden = false; m.innerHTML = t; } };
     if (!P.acc) { S.state = 'none'; msg('No UniProt accession for this protein, so there is no AlphaFold DB model to show.'); return; }
-    try { await liviaReady(); } catch (e) { S.state = 'none'; msg(esc(e.message)); return; }
-    domainsOf(P.acc).then((d) => { S.domains = d; drawFreq(); });
+    try { await liviaReady(); } catch (e) { if (!gone()) { S.state = 'none'; msg(esc(e.message)); } return; }
+    if (gone()) return;
+    domainsOf(P.acc).then((d) => { if (gone()) return; S.domains = d; drawFreq(); });
     const entry = await afdbEntry(P.acc);
+    if (gone()) return;
     if (!entry) { S.state = 'none'; msg(`No AlphaFold DB model for ${esc(P.acc)} (the database has none for proteins longer than 2,700 residues).`); $('#struct-badge').textContent = ''; return; }
     S.uniSeq = S.entrySeq = entry.seq || ''; mapStruct();
-    try { S.text = await (await fetch(entry.cifUrl)).text(); } catch (e) { S.state = 'none'; msg('The AlphaFold DB model could not be downloaded.'); return; }
+    try { S.text = await (await fetch(entry.cifUrl)).text(); } catch (e) { if (!gone()) { S.state = 'none'; msg('The AlphaFold DB model could not be downloaded.'); } return; }
+    if (gone()) return;
     S.len = entry.seq.length || P.clen; S.plddt = parseBfactorsPerResidue(S.text, 'cif'); S.state = 'ready';
     if (!S.mapOK) { V.mode = 'plddt'; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === 'plddt')); }
     drawFreq(); msg('The 3D viewer loads when this card scrolls into view.');
     if (V.want) show3D();
-    if (entry.amUrl) alphaMissense(entry.amUrl).then((a) => { if (!a) return; S.am = a; $('#cm-am').hidden = false; drawFreq(); });
+    if (entry.amUrl) alphaMissense(entry.amUrl).then((a) => { if (!a || gone()) return; S.am = a; $('#cm-am').hidden = false; drawFreq(); });
   }
   $('#cmode').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; V.mode = b.dataset.m; V.auto = false;
     app.querySelectorAll('#cmode button').forEach((x) => x.classList.toggle('on', x === b)); $('#am-cut-wrap').hidden = V.mode !== 'am'; recolor3D(); };
@@ -1413,7 +1450,8 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   io.observe(netBox);
   $('#net-n').onchange = drawNet; $('#net-cut').onchange = drawNet;
   async function drawNet() {
-    const E = await edges(sp, B.setId);
+    let E; try { E = await edges(sp, B.setId); } catch (e) { if (!gone()) netBox.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
+    if (gone()) return;
     const n = +$('#net-n').value, c = CUT[+$('#net-cut').value];
     const nb = [...(E.adj.get(P.i) || new Map())].filter(([, e]) => e.best >= c).sort((a, b) => b[1].best - a[1].best).slice(0, n);
     netBox.innerHTML = '<svg></svg>';
@@ -1473,11 +1511,13 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
 
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
 async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pair was opened from (a screen or a thematic set)
-  const sp = await species(spId), P = resolveRow(sp, q1), O0 = resolveRow(sp, q2);
+  const gen = ROUTE, sp = await species(spId), P = resolveRow(sp, q1), O0 = resolveRow(sp, q2);
+  if (stale(gen)) return;
   if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q1)}”.</div>`; return; }
   let scope = '', label = '';
   if (setId && sp.dsIds.includes(setId)) { scope = setId; label = (await regDataset(setId)).short; }
   else if (setId) for (const id of sp.dsIds) { const TS = await setsOf(await dataset(id)).catch(() => null), S = TS && TS.byId.get(setId); if (S) { scope = setId; label = S.short; break; } }
+  if (stale(gen)) return;
   const scopeQ = scope ? `?set=${encodeURIComponent(scope)}` : '';
   if (P.key !== q1 || (O0 && O0.key !== q2)) { location.replace(`#/${sp.id}/${P.key}/${O0 ? O0.key : q2}${scopeQ}`); return; }
   const O = O0 || { key: q2, gene: q2, name: '', acc: '', clen: 0, len: 0, occ: [], id: q2 };
@@ -1486,6 +1526,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
   let B;
   try { B = await merged(sp, P, scope); } catch (e) { B = { partners: [] }; }
+  if (stale(gen)) return;
   const part = B.partners.find((p) => p.id === O.key);
   if (!part) { app.innerHTML = crumbs + `<div class="empty">${esc(P.gene)} and ${esc(O.gene)} were not predicted together${scope ? ` in ${esc(label)}. <a href="#/${sp.id}/${P.key}/${O.key}">Every screen</a>` : ' in these screens'}.</div>`; return; }
   const best = [...part.preds].sort((a, b) => b.iLIS - a.iLIS)[0], b = bandOf(part.best), oLen = O.clen || part.preds[0].pLen;
@@ -1526,8 +1567,9 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
 
 /* species page: the merged index — its screens, counts and most connected proteins */
 async function viewSpecies(spId) {
-  const sp = await species(spId), c = sp.manifest.counts, hubs = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24);
+  const gen = ROUTE, sp = await species(spId), c = sp.manifest.counts, hubs = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24);
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
+  if (stale(gen)) return;
   document.title = `${sp.reg.label} · LIVIA cLIP Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / ${esc(sp.reg.label)}</div>
     <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
@@ -1552,11 +1594,13 @@ function trackView() {
 }
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
 async function route() {
-  const { parts, q } = hashPath(), setId = q.get('set') || '', here = location.hash;
+  const gen = ++ROUTE, { parts, q } = hashPath(), setId = q.get('set') || '', here = location.hash;
   window.scrollTo(0, 0); hideTip(); window.onresize = null;
   document.title = 'LIVIA cLIP Atlas';
-  const reg = await registry();
+  stopClip();
   try {
+    await registry();
+    if (stale(gen)) return;
     if (!parts.length) await viewHome();
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
@@ -1569,7 +1613,8 @@ async function route() {
       location.replace(`#/${sp.id}/${parts.slice(1).map(k).join('/')}`); return;
     }
     else app.innerHTML = `<div class="empty">Nothing at “${esc(parts.join('/'))}”. <a href="#/">Go to the atlas home</a></div>`;
-  } catch (e) { app.innerHTML = `<div class="empty">${esc(e.message || e)}</div>`; console.error(e); }
+  } catch (e) { if (!stale(gen)) app.innerHTML = `<div class="empty">${esc(e.message || e)}</div>`; console.error(e); }
+  if (stale(gen)) return;
   if (location.hash === here) trackView();   // not for a view that redirected
   if (!$('#top-search').firstChild) mountSearch($('#top-search'));
 }
