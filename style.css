@@ -360,3 +360,4 @@ select { max-width: 100%; }
 .scope-chip.on .n { opacity: .9; }
 .scope-chip:not(.on):hover { box-shadow: inset 0 0 0 1px var(--c); }
 .scope-chip:focus-visible { outline: 2px solid var(--c); outline-offset: 1px; }
+.setbar[hidden] { display: none; }
