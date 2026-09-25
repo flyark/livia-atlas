@@ -662,14 +662,7 @@ async function viewDatasets() {
   const reg = await registry();
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Datasets</div>
     <h2 class="section-h" style="margin-top:4px">Datasets</h2>
-    <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>
-    <div class="card add-ds" style="margin-top:22px"><div><h2>Add a dataset</h2>
-      <p>Any screen whose predictions come with a PAE matrix can join. Run <a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">lis.py</a> over the predictions,
-      build the dataset folder, and add one entry to <span class="mono">datasets.json</span>. A new screen of a species already here is merged into that species' protein pages;
-      species, identifier system and construct type (full length or fragments) are declared in its manifest.</p></div>
-      <ul class="files"><li><span class="mono">manifest.json</span>species, source, citation, cutoffs, counts</li><li><span class="mono">proteins.json</span>search index</li>
-        <li><span class="mono">edges.tsv</span>pairs past 10% FPR, for networks</li>
-        <li><span class="mono">b/&lt;id&gt;.zip</span>one cLIP bundle per protein</li><li><span class="mono">s/&lt;id&gt;.fa</span>one sequence per protein, for pair views</li></ul></div>`;
+    <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>`;
   fillDsStats();
 }
 
@@ -770,7 +763,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925b'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
