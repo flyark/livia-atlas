@@ -1,0 +1,43 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "fly",
+ "species": {
+  "name": "Drosophila melanogaster",
+  "taxon": 7227
+ },
+ "keyedBy": "FlyBase gene",
+ "datasets": [
+  {
+   "id": "flypredictome",
+   "short": "FlyPredictome",
+   "title": "FlyPredictome",
+   "citation": "Kim AR, Comjean A, Veal A, Rodiger J, Han M, Hu Y, Perrimon N (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in Drosophila. bioRxiv.",
+   "url": "https://doi.org/10.64898/2026.04.14.718529",
+   "counts": {
+    "proteins": 14032,
+    "pairs": 1110715,
+    "predictions": 7469962,
+    "pairsFpr10": 152329,
+    "pairsFpr5": 73474,
+    "pairsFpr1": 11028,
+    "genes": 13939,
+    "constructs": 28357
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 14032,
+  "pairs": 1110715,
+  "predictions": 7469962,
+  "pairsFpr10": 152329,
+  "pairsFpr5": 73474,
+  "pairsFpr1": 11028,
+  "genes": 13939,
+  "constructs": 28357,
+  "pairsInSeveral": 0
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

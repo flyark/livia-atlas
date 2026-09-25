@@ -4,8 +4,9 @@
  * keeps its screen, chain order and rank. The page runs LIVIA cLIP on them (contact residue frequency, clustered
  * interaction fingerprint, cluster info, interaction residues, 3D structure, interaction scatter plot) and adds a
  * partner overview, a network and a partner table.
- * Static: each screen is a folder (manifest.json, proteins.json, edges.tsv, b/<id>.zip, s/<id>.fa) and each
- * species an index over its screens (proteins.json keyed by UniProt accession, merged edges), all in datasets.json. */
+ * Static: each screen is a folder (manifest.json, proteins.json, edges.tsv, b/<id>.zip, s/<id>.fa) — or one
+ * uncompressed zip read by byte range (Zenodo) — and each species an index over its screens (proteins.json keyed by
+ * UniProt accession, or by FlyBase gene for fly, whose bundles gather every construct of a gene), all in datasets.json. */
 
 const DEV = location.hostname === 'localhost' || location.hostname === '127.0.0.1';   // local preview: LIVIA on :8000, screens from ../data/
 const LIVIA = DEV ? 'http://localhost:8000/' : 'https://flyark.github.io/LIVIA/';
@@ -63,13 +64,25 @@ async function dataset(id) {   // one screen: its manifest; proteins.json only w
   DSC[id] = { id, reg, base, manifest: await res.json(), raw: new Map(), rows: null };
   return DSC[id];
 }
+// A screen's per-protein files: in its folder, or — for a screen kept as one uncompressed zip (Zenodo) — one HTTP Range
+// read each, at the byte range the offsets map kept with the site gives. Never the whole archive.
+const OFFS = new Map();
+async function screenFile(ds, rel) {
+  const z = ds.reg.zip;
+  if (!z) { const res = await fetch(new URL(rel.split('/').map(encodeURIComponent).join('/'), ds.manifest.bundleBase || ds.base).href); return res.ok ? res : null; }
+  if (!OFFS.has(ds.id)) OFFS.set(ds.id, fetch(new URL(z.offsets, location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+  const at = (await OFFS.get(ds.id))[rel]; if (!at) return null;
+  const res = await fetch(DEV && z.dev ? new URL(z.dev, location.href).href : z.url, { headers: { Range: `bytes=${at[0]}-${at[0] + at[1] - 1}` } });
+  if (res.status !== 206) { try { if (res.body) res.body.cancel(); } catch (e) { /* nothing to cancel */ } return null; }
+  return res;
+}
 async function datasetRows(ds) {
   if (ds.rows) return ds.rows;
   const prot = await (await fetch(ds.base + 'proteins.json')).json(), c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
   ds.rows = prot.rows.map((r) => ({ id: r[c.id], gene: r[c.gene], acc: r[c.acc], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1] }));
   return ds.rows;
 }
-async function species(id) {   // the species index: one row per protein over every screen, keyed by UniProt accession
+async function species(id) {   // the species index: one row per protein over every screen, keyed by UniProt accession (fly: FlyBase gene)
   if (SPC[id]) return SPC[id];
   const reg = await regSpecies(id);
   if (!reg) throw new Error(`Unknown species “${id}”.`);
@@ -127,25 +140,36 @@ function parseFasta(text) { const m = new Map(); let id = null, buf = [];
   for (const line of (text || '').split('\n')) { if (line.startsWith('>')) { if (id) m.set(id, buf.join('')); id = line.slice(1).trim(); buf = []; } else if (line) buf.push(line.trim()); }
   if (id) m.set(id, buf.join('')); return m; }
 
-const bundleUrl = (ds, name) => new URL((ds.manifest.files.bundle || 'b/{id}.zip').replace('{id}', encodeURIComponent(name)), ds.manifest.bundleBase || ds.base).href;
-function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: lis.py rows + FASTA
-  const url = bundleUrl(ds, name);
-  if (!ds.raw.has(url)) {
+const bundleRel = (ds, name) => (ds.manifest.files.bundle || 'b/{id}.zip').replace('{id}', name);
+const bundleUrl = (ds, name) => new URL(bundleRel(ds, name).split('/').map(encodeURIComponent).join('/'), ds.manifest.bundleBase || ds.base).href;
+// A gene-keyed bundle names its constructs: name → gene key, kind, label, length, offset on the gene's reference sequence
+function parseCons(text) {
+  const m = new Map();
+  for (const line of text.split('\n').slice(1)) { if (!line) continue; const [name, key, kind, label, len, off] = line.split('\t');
+    m.set(name, { key, kind, label, len: +len, off: off === '' || off == null ? null : +off }); }
+  return m;
+}
+function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: lis.py rows + FASTA (+ its construct table)
+  const rel = bundleRel(ds, name);
+  if (!ds.raw.has(rel)) {
     const job = (async () => {
-      const res = await fetch(url);
-      if (!res.ok) throw new Error(`No interaction data for ${name}.`);
-      const zip = await JSZip.loadAsync(await res.arrayBuffer()), files = Object.keys(zip.files);
+      const res = await screenFile(ds, rel);
+      if (!res) throw new Error(`No interaction data for ${name}.`);
+      const bytes = await res.arrayBuffer(), zip = await JSZip.loadAsync(bytes), files = Object.keys(zip.files);
       const csvName = files.find((f) => /\.csv$/i.test(f) && !/identity[_-]?map/i.test(f)), faName = files.find((f) => /\.(fa|fasta)$/i.test(f));
+      const conName = files.find((f) => /(^|\/)constructs\.tsv$/.test(f));
       const t = parseCSV(await zip.file(csvName).async('string'));
-      return { url, header: t[0], H: Object.fromEntries(t[0].map((k, i) => [k, i])), rows: t.slice(1).filter((r) => r.length > 10),
-        seqs: parseFasta(faName ? await zip.file(faName).async('string') : '') };
+      return { rel, bytes, header: t[0], H: Object.fromEntries(t[0].map((k, i) => [k, i])), rows: t.slice(1).filter((r) => r.length > 10),
+        seqs: parseFasta(faName ? await zip.file(faName).async('string') : ''), cons: conName ? parseCons(await zip.file(conName).async('string')) : null };
     })();
-    ds.raw.set(url, job); job.catch(() => ds.raw.delete(url));
+    ds.raw.set(rel, job); job.catch(() => ds.raw.delete(rel));
   }
-  return ds.raw.get(url);
+  return ds.raw.get(rel);
 }
 // Every prediction of one protein across the screens of its species. A pair predicted in two screens, or both ways
-// round in one, keeps every model; each keeps its screen and chain order (its "run") and rank.
+// round in one, keeps every model; each keeps its screen and chain order (its "run") and rank. A gene-keyed bundle
+// (FlyPredictome) holds every construct of the gene: its construct table says which construct belongs to which gene,
+// and each prediction also keeps its screen category (set) and prediction run (batch).
 function merged(sp, P) {
   if (!sp.cache.has(P.key)) {
     const job = (async () => {
@@ -153,17 +177,22 @@ function merged(sp, P) {
         try { return { di: o.di, name: o.name, raw: await bundleRaw(await dataset(sp.dsIds[o.di]), o.name) }; } catch (e) { return null; }
       }))).filter(Boolean);
       if (!parts.length) throw new Error(`No interaction data for ${P.gene}.`);
-      const preds = [], runs = new Map(), seqs = new Map();
+      const preds = [], runs = new Map(), seqs = new Map(), cons = new Map(), sets = [];
       for (const part of parts) {
-        for (const [nm, s] of part.raw.seqs) { const r = sp.byName.get(nm); seqs.set(r ? r.key : nm, s); }
+        const C = part.raw.cons;
+        if (C) for (const [nm, c] of C) cons.set(nm, c);
+        const keyOf = (nm) => { const c = C && C.get(nm); if (c) return c.key; const r = sp.byName.get(nm); return r ? r.key : nm; };
+        for (const [nm, s] of part.raw.seqs) seqs.set(C ? nm : keyOf(nm), s);   // gene-keyed: the reference under the gene key, constructs by name
         const H = part.raw.H, num = (r, c) => (H[c] == null || r[H[c]] === '' ? NaN : +r[H[c]]);
         for (const r of part.raw.rows) {
-          const nm = r[H.name], at = nm.indexOf('___'), a = nm.slice(0, at), b = nm.slice(at + 3), qi = a === part.name;
-          if (!qi && b !== part.name) continue;
-          const pn = qi ? b : a, prow = sp.byName.get(pn), key = prow ? prow.key : pn, rid = part.di + '|' + nm;
-          if (!runs.has(rid)) runs.set(rid, { id: rid, di: part.di, qi, key });
+          const nm = r[H.name], at = nm.indexOf('___'), a = nm.slice(0, at), b = nm.slice(at + 3), qi = C ? keyOf(a) === P.key : a === part.name;
+          if (!qi && (C ? keyOf(b) !== P.key : b !== part.name)) continue;
+          const qc = qi ? a : b, pc = qi ? b : a, key = keyOf(pc), set = H.set != null ? r[H.set] : '';
+          const rid = part.di + '|' + nm + (H.batch != null ? '|' + r[H.batch] : '');
+          if (!runs.has(rid)) runs.set(rid, { id: rid, di: part.di, qi, key, qc, pc, set });
+          if (set && !sets.includes(set)) sets.push(set);
           const s = (x, y) => (qi ? x : y);
-          const p = { partner: key, run: rid, di: part.di, qi, rank: num(r, 'rank'), iLIS: num(r, 'iLIS'), iLIA: num(r, 'iLIA'), iLISA: num(r, 'iLISA'), ipTM: num(r, 'ipTM'),
+          const p = { partner: key, run: rid, di: part.di, qi, qc, pc, set, rank: num(r, 'rank'), iLIS: num(r, 'iLIS'), iLIA: num(r, 'iLIA'), iLISA: num(r, 'iLISA'), ipTM: num(r, 'ipTM'),
             pTM: num(r, 'pTM'), LIS: num(r, 'LIS'), cLIS: num(r, 'cLIS'), LIA: num(r, 'LIA'), cLIA: num(r, 'cLIA'), ipSAE: num(r, 'ipSAE'), actifpTM: num(r, 'actifpTM'),
             qPl: num(r, s('pLDDT_i', 'pLDDT_j')), pPl: num(r, s('pLDDT_j', 'pLDDT_i')), qLIR: num(r, s('LIR_i', 'LIR_j')), pLIR: num(r, s('LIR_j', 'LIR_i')),
             qcLIR: num(r, s('cLIR_i', 'cLIR_j')), pcLIR: num(r, s('cLIR_j', 'cLIR_i')), qLen: num(r, s('len_i', 'len_j')), pLen: num(r, s('len_j', 'len_i')),
@@ -180,33 +209,56 @@ function merged(sp, P) {
         ps.sort((x, y) => ids.indexOf(x.run) - ids.indexOf(y.run) || x.rank - y.rank);
         const il = ps.map((p) => p.iLIS || 0), ip = ps.map((p) => p.ipTM || 0);
         return { id: key, row: sp.byKey.get(key) || null, preds: ps, runs: ids, src: ps.reduce((m, p) => m | (1 << p.di), 0), best: Math.max(...il), avg: mean(il),
-          ilisaBest: Math.max(...ps.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...ps.map((p) => p.qcLIR || 0)) };
+          ilisaBest: Math.max(...ps.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...ps.map((p) => p.qcLIR || 0)),
+          sets: [...new Set(ps.map((p) => p.set).filter(Boolean))] };
       });
       for (const pt of partners) for (const rid of pt.runs) { const ru = runs.get(rid); ru.twin = pt.runs.some((o) => o !== rid && runs.get(o).di === ru.di); }
-      // cLIP clusters one construct of the query: the UniProt-length one when a screen used it, else the one most predictions used;
-      // a screen that folded another construct is set aside (listed, not clustered)
-      const lenN = new Map(); for (const p of preds) lenN.set(p.qLen, (lenN.get(p.qLen) || 0) + 1);
+      if (cons.size) for (const pt of partners) {   // a run of a gene-keyed screen: its category, and the constructs when they are not the genes themselves
+        const og = (sp.byKey.get(pt.id) || {}).gene || pt.id, seen = new Map(), k = new Map();
+        for (const rid of pt.runs) { const ru = runs.get(rid), qc = cons.get(ru.qc), pc = cons.get(ru.pc), ql = qc ? qc.label : P.gene, pl = pc ? pc.label : og;
+          ru.base = (ru.set || sp.dsShort[ru.di]) + (ql !== P.gene || pl !== og ? ` · ${ql} – ${pl}` : ''); seen.set(ru.base, (seen.get(ru.base) || 0) + 1); }
+        for (const rid of pt.runs) { const ru = runs.get(rid); const i = (k.get(ru.base) || 0) + 1; k.set(ru.base, i); ru.label = seen.get(ru.base) > 1 ? `${ru.base} · run ${i}` : ru.base; }
+      }
+      // cLIP clusters one construct of the query: the reference-length one (UniProt; FlyBase for fly) when a screen used
+      // it, else the one most predictions used. A screen that folded another construct, and every window, fragment,
+      // mutant or variant of a gene, is set aside: listed with its partners, not clustered.
+      const full = (p) => { const c = cons.get(p.qc); return !c || c.kind === 'gene' || c.kind === 'isoform'; };
+      const pool = preds.some(full) ? preds.filter(full) : preds;
+      const lenN = new Map(); for (const p of pool) lenN.set(p.qLen, (lenN.get(p.qLen) || 0) + 1);
       const qLen = [...lenN].sort((a, b) => (b[0] === P.len) - (a[0] === P.len) || b[1] - a[1])[0][0];
-      const aside = new Map(); for (const p of preds) if (p.qLen !== qLen) aside.set(p.di, p.qLen);
+      const inClip = (p) => p.qLen === qLen && (pool === preds || full(p));
+      const aside = new Map(), nameN = new Map();
+      for (const p of preds) {
+        if (inClip(p)) { nameN.set(p.qc, (nameN.get(p.qc) || 0) + 1); continue; }
+        const c = cons.get(p.qc), k = c ? p.qc : 'screen ' + p.di;
+        if (!aside.has(k)) aside.set(k, { di: p.di, len: p.qLen, con: c || null, n: 0 }); aside.get(k).n++;
+      }
+      const qName = [...nameN].sort((a, b) => b[1] - a[1]).map(([n]) => n)[0] || '';
       const labels = new Map(), labelOf = new Map();
       for (const pt of partners) pt.runs.forEach((rid, i) => { const lab = pt.runs.length > 1 || pt.id === P.key ? `${pt.id}~${i + 1}` : pt.id; labelOf.set(rid, lab); labels.set(lab, { key: pt.id, run: rid }); });
       const clipRows = [];
       for (const p of preds) {
         p.label = labelOf.get(p.run);
-        if (p.qLen !== qLen || !(p.iLIS >= CUT[10])) continue;
+        if (!inClip(p) || !(p.iLIS >= CUT[10])) continue;
         const o = {}; p.hdr.forEach((c, i) => { o[c] = p.row[i]; });
         o.name = p.qi ? `${P.key}___${p.label}` : `${p.label}___${P.key}`;
         clipRows.push(o);
       }
       for (const p of preds) { delete p.row; delete p.hdr; }
-      return { parts, preds, partners, runs, seqs, clipRows, qLabel: P.key, labels, qLen, aside };
+      return { parts, preds, partners, runs, seqs, cons, sets, clipRows, qLabel: P.key, labels, qLen, qName, aside };
     })();
     sp.cache.set(P.key, job); job.catch(() => sp.cache.delete(P.key));
   }
   return sp.cache.get(P.key);
 }
-const runLabel = (sp, B, rid, P) => { const ru = B.runs.get(rid); if (!ru) return ''; const O = sp.byKey.get(ru.key), og = O ? O.gene : ru.key;
+const runLabel = (sp, B, rid, P) => { const ru = B.runs.get(rid); if (!ru) return ''; if (ru.label) return ru.label;
+  const O = sp.byKey.get(ru.key), og = O ? O.gene : ru.key;
   return sp.dsShort[ru.di] + (ru.twin ? ` · ${ru.qi ? P.gene + '–' + og : og + '–' + P.gene}` : ''); };
+// FlyPredictome's source categories (the paper's), as badges
+const SET_COL = { 'Ligand–receptor': '#2B7A78', Kinase: '#9A4A8F', 'Literature-derived': '#8C6D31', 'Large-scale proteomics': '#2B5F8E',
+  'Subcellular organelle': '#5E7D2B', 'Inferred from orthologs': '#B5543C', Other: '#5B6B7F' };
+const setBadges = (sets) => sets.map((s) => `<span class="src" style="--c:${SET_COL[s] || '#5B6B7F'}">${esc(s)}</span>`).join('');
+const runColor = (sp, p) => (p.set ? SET_COL[p.set] || '#5B6B7F' : sp.dsColor[p.di]);
 // A protein's predicted sequence: from a bundle FASTA when one carries it, else a screen's per-protein s/<name>.fa.
 const SEQS = new Map();
 function seqOf(sp, R, B) {
@@ -216,9 +268,9 @@ function seqOf(sp, R, B) {
     for (const o of R.occ || []) {
       let ds; try { ds = await dataset(sp.dsIds[o.di]); } catch (e) { continue; }
       const f = ds.manifest.files && ds.manifest.files.sequence; if (!f) continue;
-      const url = new URL(f.replace('{id}', encodeURIComponent(o.name)), ds.base).href;
-      if (!SEQS.has(url)) SEQS.set(url, fetch(url).then((r) => (r.ok ? r.text() : '')).then((t) => [...parseFasta(t).values()][0] || '').catch(() => ''));
-      const seq = await SEQS.get(url); if (seq) return seq;
+      const rel = f.replace('{id}', o.name), ck = ds.id + '|' + rel;
+      if (!SEQS.has(ck)) SEQS.set(ck, screenFile(ds, rel).then((r) => (r ? r.text() : '')).then((t) => [...parseFasta(t).values()][0] || '').catch(() => ''));
+      const seq = await SEQS.get(ck); if (seq) return seq;
     }
     return '';
   })();
@@ -288,12 +340,14 @@ function svgExport(host, name, getSvg) {
 }
 
 /* ── search ──────────────────────────────────────────────────────────────────────────────────────────── */
-function findProteins(sp, q, limit = 10) {
-  q = q.trim().toLowerCase(); if (!q) return [];
+function scoreProteins(sp, raw, limit = 10) {   // → [{ row, score }], best first; an exact-case symbol first (fly: tor is torso, Tor is TOR)
+  const q = raw.trim().toLowerCase(); if (!q) return [];
   const scored = [];
   for (let i = 0; i < sp.rows.length; i++) {
-    const k = sp.keys[i]; let s = 0;
-    if (k.gene === q || k.acc === q || k.key === q || k.ids.includes(q)) s = 100;
+    const k = sp.keys[i], r = sp.rows[i]; let s = 0;
+    if (r.gene === raw.trim() || r.key === raw.trim()) s = 130;                        // exact case first: fly's Tor (mTor) is not tor (torso);
+    else if ((' ' + (r.syn || '') + ' ').includes(' ' + raw.trim() + ' ')) s = 115;   // tiers stay further apart than the partner bonus (≤ 10)
+    else if (k.gene === q || k.acc === q || k.key === q || k.ids.includes(q)) s = 100;
     else if (k.syn.includes(q)) s = 80;
     else if (k.gene.startsWith(q)) s = 60 - Math.min(20, k.gene.length - q.length);
     else if (k.ids.some((x) => x.startsWith(q))) s = 45;
@@ -302,32 +356,35 @@ function findProteins(sp, q, limit = 10) {
     if (s) scored.push([s + Math.min(10, Math.log10(1 + sp.rows[i].pos10) * 3), i]);
   }
   scored.sort((a, b) => b[0] - a[0]);
-  return scored.slice(0, limit).map(([, i]) => sp.rows[i]);
+  return scored.slice(0, limit).map(([score, i]) => ({ row: sp.rows[i], score }));
 }
-function mountSearch(host, { big = false, spId = 'human', autofocus = false } = {}) {
+const findProteins = (sp, q, limit = 10) => scoreProteins(sp, q, limit).map((h) => h.row);
+function mountSearch(host, { big = false, spId = null, autofocus = false } = {}) {   // spId null: every species
   host.innerHTML = `<div class="search ${big ? 'big' : ''}">
       <svg class="glass" width="${big ? 20 : 17}" height="${big ? 20 : 17}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
-      <input type="search" placeholder="${big ? 'Gene, UniProt accession, entry name or protein name' : 'Search a protein'}" aria-label="Search proteins" autocomplete="off" spellcheck="false">
+      <input type="search" placeholder="${big ? (spId ? 'Gene, accession or protein name' : 'Gene, UniProt accession, FlyBase ID or protein name') : 'Search a protein'}" aria-label="Search proteins" autocomplete="off" spellcheck="false">
       <div class="suggest" hidden></div></div>`;
   const input = $('input', host), box = $('.suggest', host);
   let items = [], on = -1, timer = null;
-  const go = (row) => { box.hidden = true; input.value = ''; location.hash = `#/${spId}/${row.key}`; };
+  const go = (it) => { box.hidden = true; input.value = ''; location.hash = `#/${it.sp.id}/${it.row.key}`; };
   const paint = () => { [...box.children].forEach((c, k) => c.classList.toggle('on', k === on)); };
   async function update() {
-    const q = input.value; const sp = await species(spId);
-    const res = findProteins(sp, q);
-    items = res.map((row) => ({ row })); on = res.length ? 0 : -1;
-    box.innerHTML = res.map((r) => `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
-        <span class="sub">${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`).join('') || (q.trim() ? '<div class="sg-note">No match. Try a gene symbol, UniProt accession or entry name.</div>' : '');
+    const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(((await registry()).species || []).map((x) => species(x.id).catch(() => null)));
+    const many = sps.filter(Boolean).length > 1;
+    items = sps.filter(Boolean).flatMap((sp) => scoreProteins(sp, q).map((h) => ({ ...h, sp }))).sort((x, y) => y.score - x.score).slice(0, 10);
+    on = items.length ? 0 : -1;
+    box.innerHTML = items.map(({ row: r, sp }) => `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
+        <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`).join('')
+      || (q.trim() ? '<div class="sg-note">No match. Try a gene symbol, UniProt accession, FlyBase ID or protein name.</div>' : '');
     box.hidden = !box.innerHTML;
-    [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k].row));
+    [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k]));
     paint();
   }
   input.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(update, 60); });
   input.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowDown') { on = Math.min(items.length - 1, on + 1); paint(); e.preventDefault(); }
     else if (e.key === 'ArrowUp') { on = Math.max(0, on - 1); paint(); e.preventDefault(); }
-    else if (e.key === 'Enter' && items[on >= 0 ? on : 0]) { go(items[on >= 0 ? on : 0].row); }
+    else if (e.key === 'Enter' && items[on >= 0 ? on : 0]) { go(items[on >= 0 ? on : 0]); }
     else if (e.key === 'Escape') { box.hidden = true; }
   });
   document.addEventListener('click', (e) => { if (!host.contains(e.target)) box.hidden = true; });
@@ -394,10 +451,11 @@ function drawIfaceTracks(cv, tracks) {
   const g = canvasCtx(cv, W, H);
   let y = 0; cv._blocks = [];
   for (const t of tracks) {
-    const L = t.len, bw = Math.max(1.3, (W - 2 * pad) / L);
-    g.font = '600 13.5px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = t.col.clir; g.textBaseline = 'alphabetic'; g.textAlign = 'left'; g.fillText(t.gene, pad, y + 15);
-    const gw = g.measureText(t.gene).width; g.font = '12px "IBM Plex Mono", ui-monospace, monospace'; g.fillStyle = '#6B7A8D';
-    g.fillText(`${fmtInt(L)} aa · ${t.lir.length} interface · ${t.clir.length} contact`, pad + gw + 10, y + 15);
+    const L = t.len, bw = Math.max(1.3, (W - 2 * pad) / L), name = t.label || t.gene;
+    g.font = '600 13.5px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = t.col.clir; g.textBaseline = 'alphabetic'; g.textAlign = 'left'; g.fillText(name, pad, y + 15);
+    const gw = g.measureText(name).width; g.font = '12px "IBM Plex Mono", ui-monospace, monospace'; g.fillStyle = '#6B7A8D';
+    const extent = t.span ? `residues ${fmtInt(t.span[0])}–${fmtInt(t.span[1])} of ${fmtInt(L)}` : t.own ? `${fmtInt(L)} aa construct, its own numbering` : `${fmtInt(L)} aa`;
+    g.fillText(`${extent} · ${t.lir.length} interface · ${t.clir.length} contact`, pad + gw + 10, y + 15);
     y += 22;
     for (const d of t.doms) { const x0 = t.x(Math.max(1, d.start)), x1 = Math.max(x0 + 2, t.x(Math.min(L, d.end) + 1)), yy = y + d.lane * 15;
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, yy, x1 - x0, 13); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, yy + 0.3, x1 - x0 - 0.6, 12.4);
@@ -405,7 +463,10 @@ function drawIfaceTracks(cv, tracks) {
       if (s.length > 2 && g.measureText(s).width <= x1 - x0 - 6) g.fillText(s, x0 + 3, yy + 10); }
     y += t.nl * 15 + (t.nl ? 4 : 0);
     const by = y;
-    g.fillStyle = t.col.base; g.fillRect(pad, y + 3, W - 2 * pad, 14);
+    if (t.span) {   // a fragment or window on its whole gene: the gene faint, the folded part in the usual gray
+      g.fillStyle = '#F2F4F7'; g.fillRect(pad, y + 3, W - 2 * pad, 14);
+      g.fillStyle = t.col.base; g.fillRect(t.x(t.span[0]), y + 3, Math.max(bw, t.x(t.span[1] + 1) - t.x(t.span[0])), 14);
+    } else { g.fillStyle = t.col.base; g.fillRect(pad, y + 3, W - 2 * pad, 14); }
     g.fillStyle = t.col.lir; for (const r of t.lir) g.fillRect(t.x(r), y + 3, bw, 14);
     g.fillStyle = t.col.clir; for (const r of t.clir) g.fillRect(t.x(r), y, bw, 20);
     cv._blocks.push({ t, y0: by, y1: by + 20 });
@@ -416,44 +477,61 @@ function drawIfaceTracks(cv, tracks) {
   cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, yy = e.clientY - b.top;
     const blk = cv._blocks.find((k) => yy >= k.y0 - 4 && yy <= k.y1 + 4); if (!blk) return hideTip();
     const t = blk.t, r = Math.floor((x - pad) / (W - 2 * pad) * t.len) + 1; if (r < 1 || r > t.len) return hideTip();
-    const st = t.clirSet.has(r) ? 'contact (cLIR)' : t.lirSet.has(r) ? 'interface (LIR)' : 'not in the interface';
+    const st = t.span && (r < t.span[0] || r > t.span[1]) ? 'not in the folded construct' : t.clirSet.has(r) ? 'contact (cLIR)' : t.lirSet.has(r) ? 'interface (LIR)' : 'not in the interface';
     const dom = t.doms.filter((d) => r >= d.start && r <= d.end).map((d) => d.name).join(', ');
     showTip(`<b>${esc(t.gene)}</b> ${t.seq && t.seq[r - 1] ? t.seq[r - 1] : ''}${r} · ${st}${dom ? `<br>${esc(dom)}` : ''}`, e.clientX, e.clientY); };
   cv.onmouseleave = hideTip;
 }
 // One sequence as a continuous, searchable flow in 10-residue groups (position numbers are CSS, not text), as clip.html.
-function seqPanel(label, seq, lir, clir, col, len) {
-  const head = `<div class="seqh"><b style="color:${col.clir}">${esc(label)}</b> <span class="muted">${fmtInt(len || seq.length)} residues · ${lir.length} interface · ${clir.length} contact</span></div>`;
+function seqPanel(label, seq, lir, clir, col, len, span) {   // span: the folded part of a longer gene; the rest is dimmed
+  const ext = span ? `residues ${fmtInt(span[0])}–${fmtInt(span[1])} of ${fmtInt(len)}` : `${fmtInt(len || seq.length)} residues`;
+  const head = `<div class="seqh"><b style="color:${col.clir}">${esc(label)}</b> <span class="muted">${ext} · ${lir.length} interface · ${clir.length} contact</span></div>`;
   if (!seq || (len && seq.length !== len)) return head + '<p class="muted" style="margin:6px 0 0">The predicted sequence is not available for this construct.</p>';
   const L = new Set(lir), C = new Set(clir); let body = '';
   for (let i = 0; i < seq.length; i++) {
     if (i % 10 === 0) { if (i) body += '</span><wbr>'; body += `<span class="g10" data-n="${Math.min(i + 10, seq.length)}">`; }
     const r = i + 1, ch = seq[i];
-    body += C.has(r) ? `<span class="c" style="background:${col.clir}">${ch}</span>` : L.has(r) ? `<span class="l" style="background:${col.lir}">${ch}</span>` : ch;
+    body += C.has(r) ? `<span class="c" style="background:${col.clir}">${ch}</span>` : L.has(r) ? `<span class="l" style="background:${col.lir}">${ch}</span>`
+      : span && (r < span[0] || r > span[1]) ? `<span class="out">${ch}</span>` : ch;
   }
   return head + `<div class="seq-flow">${body}</span></div>`;
 }
 // Interaction Residues for one prediction (protein page card and pair page), with LIVIA's export bar under the map.
+// A construct placed on its gene's reference sequence (a fragment, a phosphosite window) is drawn on the whole gene in
+// reference numbering, its extent shaded; a construct that is not placed keeps its own numbering, and says so.
 async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   const tok = (host._tok = (host._tok || 0) + 1);
-  const qL = expand(pred.qL), qC = expand(pred.qC), pL = expand(pred.pL), pC = expand(pred.pC);
+  const side = (R, name, len) => {
+    const c = B.cons && B.cons.get(name), label = c ? c.label : R.gene;
+    const placed = c && c.off != null && c.len === len && R.len && c.off + len <= R.len;
+    if (!c || (placed && c.off === 0 && len === R.len)) return { label, len: len || R.clen || 1, shift: 0, span: null, own: false, name };
+    if (placed) return { label, len: R.len, shift: c.off, span: [c.off + 1, c.off + len], own: false, name };
+    return { label, len: len || 1, shift: 0, span: null, own: true, name };
+  };
+  const q = side(P, pred.qc, pred.qLen), o = side(O, pred.pc, pred.pLen), sh = (s, k) => expand(s).map((r) => r + k);
+  const qL = sh(pred.qL, q.shift), qC = sh(pred.qC, q.shift), pL = sh(pred.pL, o.shift), pC = sh(pred.pC, o.shift);
   const none = !qL.length && !pL.length && !qC.length && !pC.length;
   host.innerHTML = `${none ? `<p class="note">This model has no residue pair with PAE ≤ 12 Å between the two proteins, so it has no interface.</p>` : ''}
     <div class="ifmap"><canvas id="${canvasId}"></canvas></div><div class="seqpanels"><div class="seqp"></div><div class="seqp"></div></div>`;
   const cv = $('canvas', host);
-  const T = [{ gene: P.gene, len: pred.qLen || P.clen || 1, lir: qL, clir: qC, lirSet: new Set(qL), clirSet: new Set(qC), col: PAIR_COL.q, doms: [] },
-    { gene: O.gene, len: pred.pLen || O.clen || 1, lir: pL, clir: pC, lirSet: new Set(pL), clirSet: new Set(pC), col: PAIR_COL.p, doms: [] }];
+  const T = [{ gene: P.gene, label: q.label, len: q.len, span: q.span, own: q.own, lir: qL, clir: qC, lirSet: new Set(qL), clirSet: new Set(qC), col: PAIR_COL.q, doms: [] },
+    { gene: O.gene, label: o.label, len: o.len, span: o.span, own: o.own, lir: pL, clir: pC, lirSet: new Set(pL), clirSet: new Set(pC), col: PAIR_COL.p, doms: [] }];
   host._redraw = () => drawIfaceTracks(cv, T);
   host._redraw();
   attachExport(canvasId, `atlas_${P.gene}_vs_${O.gene}_residues`, host._redraw);
-  const [qs, os] = await Promise.all([seqOf(sp, P, B), seqOf(sp, O, B)]);
+  const seqFor = (R, s) => (s.own ? Promise.resolve(B.seqs.get(s.name) || '') : seqOf(sp, R, B));   // the reference, or the construct's own
+  const [qs, os] = await Promise.all([seqFor(P, q), seqFor(O, o)]);
   if (host._tok !== tok) return;
   T[0].seq = qs; T[1].seq = os;
   const panels = host.querySelectorAll('.seqp');
-  panels[0].innerHTML = seqPanel(P.gene, qs, qL, qC, PAIR_COL.q, T[0].len);
-  panels[1].innerHTML = seqPanel(O.gene, os, pL, pC, PAIR_COL.p, T[1].len);
-  const lenOK = (R, len) => R && R.acc && R.len && R.len === len;   // UniProt domain coordinates only fit a full-length construct
-  const [qd, od] = await Promise.all([lenOK(P, T[0].len) ? domainsOf(P.acc) : [], lenOK(O, T[1].len) ? domainsOf(O.acc) : []]);
+  panels[0].innerHTML = seqPanel(q.label, qs, qL, qC, PAIR_COL.q, T[0].len, q.span);
+  panels[1].innerHTML = seqPanel(o.label, os, pL, pC, PAIR_COL.p, T[1].len, o.span);
+  // UniProt domain coordinates fit only the UniProt sequence: a full-length human construct; for fly, a FlyBase
+  // reference that is UniProt's sequence (checked against the AlphaFold DB entry)
+  const domOK = async (R, s, seq) => { if (!R || !R.acc || s.own) return false;
+    if (!sp.manifest.keyedBy) return !!(R.len && R.len === s.len);
+    const e = await afdbEntry(R.acc); return !!(e && seq && e.seq === seq); };
+  const [qd, od] = await Promise.all([domOK(P, q, qs).then((ok) => (ok ? domainsOf(P.acc) : [])), domOK(O, o, os).then((ok) => (ok ? domainsOf(O.acc) : []))]);
   if (host._tok !== tok) return;
   T[0].doms = (qd || []).map((d) => ({ ...d })); T[1].doms = (od || []).map((d) => ({ ...d }));
   if (T[0].doms.length || T[1].doms.length) host._redraw();
@@ -482,6 +560,7 @@ function canvasAxes(g, xs, ys, m, W, H, xTitle, yTitle) {
 }
 
 /* ── views ───────────────────────────────────────────────────────────────────────────────────────────── */
+const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: ['arm', 'dsh', 'Ras85D', 'N', 'yki', 'Akt'] };   // example proteins on the home page
 async function viewHome() {
   const reg = await registry(), SPX = reg.species[0], sp = await species(SPX.id);
   const all = await Promise.all((reg.species || []).map((x) => species(x.id)));   // totals over every species and screen: they grow as screens are added
@@ -494,8 +573,8 @@ async function viewHome() {
       <div id="home-search" class="hero-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('predictions'))}</b> predictions</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
-      <div class="chips"><span class="lbl">Try</span>${['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'YWHAB', 'SMAD4', 'KRAS', 'BRCA1']
-        .map((g) => `<a class="chip" data-g="${g}">${g}</a>`).join('')}</div>
+      <div class="chips"><span class="lbl">Try</span>${(reg.species || []).map((x, i) => (reg.species.length > 1 ? `<span class="lbl${i ? ' sp' : ''}">${esc(x.label)}</span>` : '')
+        + (TRY[x.id] || []).map((g) => `<a class="chip" data-sp="${x.id}" data-g="${g}">${g}</a>`).join('')).join('')}</div>
       <a class="showcase" id="showcase" href="#/${sp.id}/P04637" style="color:inherit;text-decoration:none">
         <div class="sc-top"><b>TP53</b><span id="sc-note">clustering its partners…</span></div>
         <canvas id="sc-cv" height="150"></canvas>
@@ -509,9 +588,9 @@ async function viewHome() {
       <div class="step"><h4>2 · Score</h4><p>lis.py scores each prediction over its confident residue pairs only: iLIS, with cutoffs benchmarked at 10%, 5% and 1% false-positive rate (${cite('flypredictome')}).</p></div>
       <div class="step"><h4>3 · Resolve</h4><p>The contact residues of every interface are kept, so partners can be compared by where they bind and clustered by their interaction fingerprints with LIVIA cLIP.</p></div>
     </div>`;
-  mountSearch($('#home-search'), { big: true, spId: sp.id, autofocus: true });
+  mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase(sp, sp.byKey.get('P04637'));
-  app.querySelectorAll('.chip[data-g]').forEach((a) => a.onclick = () => { const r = findProteins(sp, a.dataset.g, 1)[0]; if (r) location.hash = `#/${sp.id}/${r.key}`; });
+  app.querySelectorAll('.chip[data-g]').forEach((a) => a.onclick = async () => { const s2 = await species(a.dataset.sp), r = resolveRow(s2, a.dataset.g); if (r) location.hash = `#/${s2.id}/${r.key}`; });
   fillDsStats();
 }
 function dsCard(d) {
@@ -579,7 +658,11 @@ function viewAbout() {
       <p style="max-width:78ch">Each protein has one page per species that gathers its predictions from every screen. A pair predicted in two screens, or both ways round,
       keeps every model with its source. The interface residues on both proteins are kept for every prediction, and each protein page runs
       <a href="${LIVIA}clip.html" target="_blank" rel="noopener">LIVIA cLIP</a> in the browser: partners are clustered by their interaction fingerprints, and the clusters
-      are mapped onto the AlphaFold DB structure with pLDDT and, for human proteins, AlphaMissense.</p></div>
+      are mapped onto the AlphaFold DB structure with pLDDT and, for human proteins, AlphaMissense.</p>
+      <p style="max-width:78ch">Fly pages are keyed by FlyBase gene. FlyPredictome folded many constructs of a gene: isoforms, fragments, phosphosite windows,
+      point mutants. Every name is resolved to its gene, and a construct is placed on the gene's reference sequence when its sequence is known, so its
+      contacts are drawn in the gene's residue numbering. Clustering uses the full-length construct; the others are listed with their partners.
+      The name-to-gene table is a file of the dataset.</p></div>
     <div class="card"><h2>Cite</h2>
       <p style="max-width:78ch">Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv.
       <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">doi.org/${REF.livia[1]}</a></p>
@@ -602,8 +685,10 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
       <div class="chips">${hubs.map((r) => { const R = sp.byName.get(r.id); return `<a class="chip" href="#/${sp.id}/${R ? R.key : r.id}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
     <div class="card"><h2>Files</h2><p class="muted" style="font-size:14px">Everything is a static file: <a href="${ds.base}manifest.json">manifest.json</a> ·
       <a href="${ds.base}proteins.json">proteins.json</a> (search index) · <a href="${ds.base}edges.tsv">edges.tsv</a> (pairs past 10% FPR, best and average iLIS over ranks) ·
-      <span class="mono">b/&lt;id&gt;.zip</span> (per-protein lis.py rows, FASTA and identity map — opens in LIVIA cLIP) ·
-      <span class="mono">s/&lt;id&gt;.fa</span> (per-protein sequence).</p></div>`;
+      ${m.files.identity ? `<a href="${ds.base}${m.files.identity}">${m.files.identity}</a> (every name the screen used → its FlyBase gene, what the construct is, and where it sits on the gene) · ` : ''}
+      <span class="mono">b/&lt;id&gt;.zip</span> (per-${m.keyBy === 'gene' ? 'gene lis.py rows of every construct, FASTA and construct table' : 'protein lis.py rows, FASTA and identity map — opens in LIVIA cLIP'}) ·
+      <span class="mono">s/&lt;id&gt;.fa</span> (per-${m.keyBy === 'gene' ? 'gene reference' : 'protein'} sequence)${ds.reg.zip ? `. The per-${m.keyBy === 'gene' ? 'gene' : 'protein'} files are one archive
+      ${ds.reg.zip.record ? `<a href="${esc(ds.reg.zip.record)}" target="_blank" rel="noopener">on Zenodo${ds.reg.zip.doi ? ` (doi:${esc(ds.reg.zip.doi)})` : ''} ↗</a>` : 'on Zenodo'}, read here one file at a time by byte range` : ''}.</p></div>`;
   mountSearch($('#ds-search'), { spId: sp.id });
 }
 
@@ -618,10 +703,14 @@ const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
 const ECOL = () => d3.scaleLinear().domain([CUT[10], CUT[5], CUT[1], 0.85]).range(['#E0AE2E', '#16956A', '#6D4FD1', '#2A1B7A']).interpolate(d3.interpolateLab).clamp(true);
 const EWID = (a) => 0.5 + 4.3 * Math.max(0, Math.min(1, a / 0.8));
-function resolveRow(sp, q) {   // a key, any screen's name, an accession or a gene symbol
+function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene symbol (exact case first), a CG number or an older name
   if (sp.byKey.has(q)) return sp.byKey.get(q);
   if (sp.byName.has(q)) return sp.byName.get(q);
-  const l = q.toLowerCase(), i = sp.keys.findIndex((k) => k.gene === l || k.acc === l || k.ids.includes(l));
+  if (sp.byGene.has(q)) return sp.byGene.get(q);
+  let i = sp.rows.findIndex((r) => (' ' + (r.syn || '') + ' ').includes(' ' + q + ' '));   // an older name, exact case
+  if (i >= 0) return sp.rows[i];
+  const l = q.toLowerCase(); i = sp.keys.findIndex((k) => k.gene === l || k.acc === l || k.ids.includes(l));
+  if (i < 0) i = sp.keys.findIndex((k) => k.syn.includes(l));
   return i >= 0 ? sp.rows[i] : null;
 }
 
@@ -633,15 +722,19 @@ async function viewProtein(spId, q) {
   const flags = [];
   if (P.status === 'renamed') flags.push(`<span class="flag">named ${esc(P.occ.map((o) => o.name).filter((n, i, a) => a.indexOf(n) === i).join(' / '))} in the screens; UniProt renamed it</span>`);
   if (P.status === 'unreviewed') flags.push('<span class="flag">unreviewed UniProt entry</span>');
+  if (P.status === 'other species') flags.push('<span class="flag">not a fly protein: folded as a partner of fly proteins</span>');
+  if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
+  const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
   const nav = [['c-overview', 'Overview'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-3d', '3D structure'], ['c-scatter', 'Scatter'], ['c-net', 'Network'], ['c-pt', 'Partners']];
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
-  const dataMenu = occ.map((o) => { const u = bundleUrl(o.ds, o.name), label = `${sp.dsShort[o.di]}${occ.filter((x) => x.di === o.di).length > 1 ? ' · ' + o.name : ''}`;
+  const dataMenu = occ.map((o, i) => { const u = bundleUrl(o.ds, o.name), label = `${sp.dsShort[o.di]}${occ.filter((x) => x.di === o.di).length > 1 ? ' · ' + o.name : ''}`;
+    if (o.ds.reg.zip) return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="#" data-dl="${i}">Download .zip</a></div>`;   // inside the archive: saved from the read
     return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="${LIVIA}clip.html?data=${encodeURIComponent(u)}&gene=${encodeURIComponent(P.gene)}" target="_blank" rel="noopener">Open in LIVIA cLIP ↗</a><a href="${u}" download>Download .zip</a></div>`; }).join('');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(P.gene)}</div>
     <div class="phead"><div><h1>${esc(P.gene)}</h1><div class="pname" title="${esc(P.name)}">${esc(short(P.name) || P.id)}</div>
-      <div class="ids">${uniprotLink(P.acc)}<span>${esc(P.id)}</span>${P.clen ? `<span>${fmtInt(P.clen)} aa</span>` : ''}</div>
+      <div class="ids">${fbLink}${uniprotLink(P.acc)}${fbLink ? '' : `<span>${esc(P.id)}</span>`}${P.clen ? `<span>${fmtInt(P.clen)} aa</span>` : ''}</div>
       <div class="srcs">In ${srcBadges(sp, P.src)}</div>
       <div class="flags" id="flags">${flags.join('')}</div>
       <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details></div></div>
@@ -702,10 +795,17 @@ async function viewProtein(spId, q) {
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>`;
   app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'smooth' }); });
   { const dm = $('.dmenu'); document.addEventListener('click', (e) => { if (dm && dm.open && !dm.contains(e.target)) dm.open = false; }); }
+  app.querySelectorAll('[data-dl]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it, save it
+    e.preventDefault(); const o = occ[+a.dataset.dl];
+    try { const raw = await bundleRaw(o.ds, o.name), u = URL.createObjectURL(new Blob([raw.bytes], { type: 'application/zip' }));
+      const d = document.createElement('a'); d.href = u; d.download = `${o.name}.zip`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 5000); }
+    catch (err) { a.textContent = 'Not available'; } });
 
   let B;
   try { B = await merged(sp, P); } catch (e) { $('#clip-sub').textContent = e.message; return; }
-  const qSeq = await seqOf(sp, P, B);
+  let qSeq = await seqOf(sp, P, B);   // letters along the clustered construct: its own sequence when it is not the reference
+  if (qSeq && B.qLen && qSeq.length !== B.qLen) qSeq = (B.qName && B.seqs.get(B.qName)) || '';
+  const SETS = B.sets.length ? B.sets : null;   // a screen with categories: the Source column shows them
   const gname = (key) => { const r = sp.byKey.get(key); return r ? r.gene : key; };
   const range = (k) => Array.from({ length: k }, (_, i) => i + 1);
   let cut = 10, M = null, ACTIVE = new Set(), NET = null, infoOpen = new Set();
@@ -719,12 +819,19 @@ async function viewProtein(spId, q) {
   const xtWant = () => { const v = +((app.querySelector('.xticks') || {}).value); return v >= 2 ? Math.min(40, v) : 0; };
   $('#s-len').textContent = fmtInt(B.qLen || P.clen || 0);
   { const byDs = new Map(); for (const p of B.preds) { if (!byDs.has(p.di)) byDs.set(p.di, new Set()); byDs.get(p.di).add(p.qLen); }   // the construct each screen folded
-    const lens = new Set(B.preds.map((p) => p.qLen));
-    const f = lens.size > 1 ? `constructs differ between screens: ${[...byDs].map(([di, ls]) => `${sp.dsShort[di]} ${[...ls].map(fmtInt).join(' / ')} aa`).join(' · ')}${P.len ? `; UniProt ${fmtInt(P.len)} aa` : ''}`
-      : P.len && B.qLen !== P.len ? `predicted construct ${fmtInt(B.qLen)} aa, UniProt ${fmtInt(P.len)} aa; residue numbers follow the construct` : '';
+    const lens = new Set(B.preds.map((p) => p.qLen)), ref = sp.manifest.keyedBy ? 'FlyBase reference' : 'UniProt';
+    const f = !B.cons.size && lens.size > 1 ? `constructs differ between screens: ${[...byDs].map(([di, ls]) => `${sp.dsShort[di]} ${[...ls].map(fmtInt).join(' / ')} aa`).join(' · ')}${P.len ? `; UniProt ${fmtInt(P.len)} aa` : ''}`
+      : P.len && B.qLen !== P.len ? `clustered construct ${fmtInt(B.qLen)} aa, ${ref} ${fmtInt(P.len)} aa; residue numbers follow the construct` : '';
     if (f) $('#flags').insertAdjacentHTML('beforeend', `<span class="flag">${esc(f)}</span>`); }
   if (B.aside.size) { const a = $('#clip-aside'); a.hidden = false;
-    a.textContent = [...B.aside].map(([di, len]) => `${sp.dsShort[di]} predicted ${P.gene} as a ${fmtInt(len)} aa construct`).join('; ') + `, so those models are listed but left out of the clustering, which uses the ${fmtInt(B.qLen)} aa construct.`; }
+    if (B.cons.size) {   // a gene-keyed screen: its windows, fragments, mutants … by kind
+      const KIND = { phosphosite: ['phosphosite window', 'phosphosite windows'], fragment: ['fragment', 'fragments'], mutant: ['point mutant', 'point mutants'],
+        variant: ['variant', 'variants'], peptide: ['peptide', 'peptides'], isoform: ['other isoform', 'other isoforms'] }, byKind = new Map();
+      for (const x of B.aside.values()) { const k = x.con ? x.con.kind : 'construct'; if (!byKind.has(k)) byKind.set(k, []); byKind.get(k).push(x); }
+      const said = [...byKind].map(([k, xs]) => { const [one, many] = KIND[k] || ['other construct', 'other constructs'], ex = xs.slice(0, 3).map((x) => (x.con ? x.con.label : '')).filter(Boolean);
+        return `${fmtInt(xs.length)} ${xs.length === 1 ? one : many}${ex.length ? ` (${ex.join(', ')}${xs.length > 3 ? ', …' : ''})` : ''}`; });
+      a.textContent = `${P.gene} was also folded as ${said.join(', ')}. Their models are listed with their partners and on the pair pages, and left out of the clustering, which uses the ${fmtInt(B.qLen)} aa construct.`;
+    } else a.textContent = [...B.aside.values()].map((x) => `${sp.dsShort[x.di]} predicted ${P.gene} as a ${fmtInt(x.len)} aa construct`).join('; ') + `, so those models are listed but left out of the clustering, which uses the ${fmtInt(B.qLen)} aa construct.`; }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); }; });
 
   /* cLIP ─ clustering + everything drawn from it */
@@ -770,6 +877,7 @@ async function viewProtein(spId, q) {
   function emptyPlot(host, msg) { host.innerHTML = `<div class="plot-empty">${msg}</div>`; }
   function qDomains(L) {   // UniProt domains sit on the current UniProt sequence: drawn only when the predicted construct is that sequence's length
     if (!S.domains || !S.domains.length || !(P.len && P.len === L)) return [];
+    if (sp.manifest.keyedBy && !(qSeq && S.uniSeq === qSeq)) return [];   // fly: only when the FlyBase reference is UniProt's sequence
     return S.domains.map((d) => ({ name: d.name, start: d.start, end: d.end, s: d.start, e: d.end })).filter((d) => d.e >= 1 && d.s <= L).sort((a, b) => a.s - b.s);
   }
 
@@ -940,7 +1048,7 @@ async function viewProtein(spId, q) {
     domainsOf(P.acc).then((d) => { S.domains = d; drawFreq(); });
     const entry = await afdbEntry(P.acc);
     if (!entry) { S.state = 'none'; msg(`No AlphaFold DB model for ${esc(P.acc)} (the database has none for proteins longer than 2,700 residues).`); $('#struct-badge').textContent = ''; return; }
-    const cLen = B.qLen || P.clen;
+    const cLen = B.qLen || P.clen; S.uniSeq = entry.seq || '';
     if (qSeq && entry.seq && qSeq.length === cLen) {
       if (qSeq === entry.seq) { S.map = null; S.mapOK = true; S.mapNote = 'sequence 1:1'; }
       else { const mi = CLIPResolver.alignMap(qSeq, entry.seq); S.map = mi.map; S.mapOK = mi.covered > 0; S.mapNote = `remapped (${mi.method}, ${Math.round(100 * mi.covered / qSeq.length)}% matched)`; }
@@ -1050,7 +1158,7 @@ async function viewProtein(spId, q) {
     const pts = [...list].sort((a, b) => (a.c ? 1 : 0) - (b.c ? 1 : 0) || a.best - b.best);
     svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (p) => x(p.iptmBest)).attr('cy', (p) => y(p.best)).attr('r', (p) => rad(p.avg))
       .attr('fill', color).attr('fill-opacity', (p) => (p.c ? 0.8 : 0.35)).attr('stroke', '#fff').attr('stroke-width', 0.8).style('cursor', 'pointer')
-      .on('mousemove', (ev, p) => showTip(`<b>${esc(p.gene)}</b> · iLIS ${p.best.toFixed(3)} (avg ${p.avg.toFixed(3)}) · iLISA ${p.ilisaBest.toFixed(1)} · ipTM ${p.iptmBest.toFixed(2)}${p.c ? ` · ${clusterLabel(p.c)}` : ''}<br>${srcBadges(sp, p.src)}`, ev.clientX, ev.clientY))
+      .on('mousemove', (ev, p) => showTip(`<b>${esc(p.gene)}</b> · iLIS ${p.best.toFixed(3)} (avg ${p.avg.toFixed(3)}) · iLISA ${p.ilisaBest.toFixed(1)} · ipTM ${p.iptmBest.toFixed(2)}${p.c ? ` · ${clusterLabel(p.c)}` : ''}<br>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, p) => { hideTip(); location.hash = `#/${sp.id}/${P.key}/${p.id}`; });
     const placed = [...[CUT[10], CUT[5], CUT[1]].map((v) => [W - m.r - 60, y(v) - 16, W - m.r, y(v)]),   // cutoff labels are taken
       ...FPR.ipTM.map((u) => [x(u) - 16, 0, x(u) + 16, m.t])], labels = [];
@@ -1081,7 +1189,7 @@ async function viewProtein(spId, q) {
   const cols = [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
   function drawTable() {
     let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.preds.filter((x) => x.iLIS >= CUT[10]).length }; });
-    if (T.src) list = list.filter((p) => p.src & T.src);
+    if (T.src) list = list.filter((p) => (SETS ? p.sets.includes(T.src) : p.src & T.src));
     if (T.band) list = list.filter((p) => p.best >= CUT[T.band]);
     if (T.filter) { const f = T.filter.toLowerCase(); list = list.filter((p) => p.gene.toLowerCase().includes(f) || (p.name || '').toLowerCase().includes(f) || p.id.toLowerCase().includes(f)); }
     const key = T.sort; list.sort((a, b) => (typeof a[key] === 'string' ? a[key].localeCompare(b[key]) : a[key] - b[key]) * (T.asc ? 1 : -1));
@@ -1092,7 +1200,7 @@ async function viewProtein(spId, q) {
       const b = bandOf(p.best);
       return `<tr><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}">${esc(p.gene)}</a></td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
-        <td class="srcc">${srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
+        <td class="srcc">${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
         <td class="n v" style="color:${BAND[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
@@ -1104,7 +1212,8 @@ async function viewProtein(spId, q) {
   }
   $('#pt-band').value = String(T.band);
   $('#pt-band').onchange = (e) => { T.band = +e.target.value; T.page = 0; drawTable(); };
-  $('#pt-src').onchange = (e) => { T.src = +e.target.value; T.page = 0; drawTable(); };
+  if (SETS) $('#pt-src').innerHTML = `<option value="">all categories</option>${SETS.map((x) => `<option>${esc(x)}</option>`).join('')}`;   // one screen: filter by its categories
+  $('#pt-src').onchange = (e) => { T.src = SETS ? e.target.value : +e.target.value; T.page = 0; drawTable(); };
   $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; drawTable(); };
 
   /* network: edge color = best iLIS over the models, edge width = average iLIS */
@@ -1182,7 +1291,7 @@ async function viewPair(spId, q1, q2) {
   const sp = await species(spId), P = resolveRow(sp, q1), O0 = resolveRow(sp, q2);
   if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q1)}”.</div>`; return; }
   if (P.key !== q1 || (O0 && O0.key !== q2)) { location.replace(`#/${sp.id}/${P.key}/${O0 ? O0.key : q2}`); return; }
-  const O = O0 || { key: q2, gene: q2.replace(/_HUMAN$/, ''), name: '', acc: '', clen: 0, len: 0, occ: [], id: q2 };
+  const O = O0 || { key: q2, gene: q2, name: '', acc: '', clen: 0, len: 0, occ: [], id: q2 };
   document.title = `${P.gene} · ${O.gene} · LIVIA cLIP Atlas`;
   const crumbs = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}">${esc(P.gene)}</a> / ${esc(O.gene)}</div>`;
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
@@ -1197,7 +1306,7 @@ async function viewPair(spId, q1, q2) {
   app.innerHTML = `${crumbs}
     <div class="phead"><div><h1><span style="color:var(--query)">${esc(P.gene)}</span> <span style="color:var(--ink-3);font-weight:600">×</span> <span style="color:var(--partner)">${esc(O.gene)}</span></h1>
         <div class="pairwho">${who(P, P.clen, 'var(--query)')}${who(O, oLen, 'var(--partner)')}</div>
-        <div class="srcs">Predicted in ${srcBadges(sp, part.src)}</div>
+        <div class="srcs">Predicted in ${part.sets.length ? setBadges(part.sets) : srcBadges(sp, part.src)}</div>
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}</div></div>
       <div class="kpis"><div class="kpi"><b style="color:${BAND[b]}">${part.best.toFixed(3)}</b><span>iLIS best · ${bandLabel[b]}</span></div><div class="kpi"><b>${part.ilisaBest.toFixed(1)}</b><span>iLISA best</span></div>
         <div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>
@@ -1207,7 +1316,7 @@ async function viewPair(spId, q1, q2) {
         <tr><th rowspan="2">Source</th><th rowspan="2">Rank</th><th rowspan="2" class="n">iLIS</th><th rowspan="2" class="n">iLISA</th><th rowspan="2" class="n">ipTM</th><th rowspan="2" class="n">LIS</th><th rowspan="2" class="n">cLIS</th>
           <th colspan="2" class="grp">Interface residues (LIR)</th><th colspan="2" class="grp">Contact residues (cLIR)</th></tr>
         <tr><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th></tr></thead>
-        <tbody>${part.preds.map((p, i) => `<tr data-i="${i}"><td><span class="src" style="--c:${sp.dsColor[p.di]}">${esc(lab(p))}</span></td><td>${p.rank}</td>
+        <tbody>${part.preds.map((p, i) => `<tr data-i="${i}"><td><span class="src" style="--c:${runColor(sp, p)}">${esc(lab(p))}</span></td><td>${p.rank}</td>
           <td class="n">${fmtNum(p.iLIS, 3)} <span class="band b${bandOf(p.iLIS)}">${bandLabel[bandOf(p.iLIS)]}</span></td>
           ${num(p.iLISA, 1)}<td class="n" style="color:${bandCol(FPR.ipTM, p.ipTM)};font-weight:600">${fmtNum(p.ipTM, 2)}</td>${num(p.LIS, 3)}${num(p.cLIS, 3)}${num(p.qLIR, 0)}${num(p.pLIR, 0)}${num(p.qcLIR, 0)}${num(p.pcLIR, 0)}</tr>`).join('')}</tbody></table></div></div>
     <div class="card"><div class="card-head"><h2>Interaction Residues</h2><select id="model-pick" aria-label="Model" style="font:13px var(--sans);padding:5px 8px;border:1px solid var(--line);border-radius:7px">${part.preds.map((p, i) =>
@@ -1230,7 +1339,7 @@ async function viewSpecies(spId) {
   const sp = await species(spId), c = sp.manifest.counts, hubs = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24);
   document.title = `${sp.reg.label} · LIVIA cLIP Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / ${esc(sp.reg.label)}</div>
-    <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length} screens merged, keyed by UniProt accession</div></div>
+    <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens merged'}, keyed by ${esc(sp.manifest.keyedBy || 'UniProt accession')}</div></div>
     <div class="kpirow"><div class="kpi"><b>${fmtInt(c.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(c.predictions)}</b><span>predictions</span></div>
       <div class="kpi"><b>${fmtInt(c.pairs)}</b><span>pairs</span></div><div class="kpi f10"><b>${fmtInt(c.pairsFpr10)}</b><span>pairs past 10% FPR</span></div>
       <div class="kpi f5"><b>${fmtInt(c.pairsFpr5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b>${fmtInt(c.pairsFpr1)}</b><span>past 1% FPR</span></div></div>
@@ -1238,7 +1347,7 @@ async function viewSpecies(spId) {
     <div class="card"><h2>Screens</h2><div class="screens">${sp.manifest.datasets.map((d, di) => `<div class="screen"><span class="src" style="--c:${sp.dsColor[di]}">${esc(d.short)}</span>
       <div><a href="#/datasets/${d.id}"><b>${esc(d.title)}</b></a><div class="muted">${fmtInt(d.counts.proteins)} proteins · ${fmtInt(d.counts.pairs)} pairs · ${fmtInt(d.counts.predictions)} predictions</div>
       <div class="cite">${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.citation)} ↗</a>` : esc(d.citation)}</div></div></div>`).join('')}</div>
-      <p class="muted" style="margin:10px 0 0">${fmtInt(c.pairsInSeveral)} pairs were predicted in more than one screen; their pages keep every model with its source.</p></div>
+      ${sp.dsIds.length > 1 ? `<p class="muted" style="margin:10px 0 0">${fmtInt(c.pairsInSeveral)} pairs were predicted in more than one screen; their pages keep every model with its source.</p>` : ''}</div>
     <div class="card"><h2>Most connected proteins <span class="muted">partners past the 10% FPR cutoff, any screen</span></h2>
       <div class="chips">${hubs.map((r) => `<a class="chip" href="#/${sp.id}/${r.key}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`).join('')}</div></div>`;
   mountSearch($('#sp-search'), { spId });
@@ -1269,7 +1378,7 @@ async function route() {
     else app.innerHTML = `<div class="empty">Nothing at “${esc(parts.join('/'))}”.</div>`;
   } catch (e) { app.innerHTML = `<div class="empty">${esc(e.message || e)}</div>`; console.error(e); }
   if (location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(decodeURIComponent).join('/') === parts.join('/')) trackView();   // not for a view that redirected
-  if (!$('#top-search').firstChild) mountSearch($('#top-search'), { spId: (reg.species[0] || {}).id || 'human' });
+  if (!$('#top-search').firstChild) mountSearch($('#top-search'));
 }
 window.addEventListener('hashchange', route);
 route();

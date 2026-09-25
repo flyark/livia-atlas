@@ -1,0 +1,58 @@
+{
+ "format": "livia-atlas/1",
+ "id": "flypredictome",
+ "title": "FlyPredictome",
+ "short": "FlyPredictome",
+ "speciesId": "fly",
+ "species": {
+  "name": "Drosophila melanogaster",
+  "taxon": 7227
+ },
+ "ids": "FlyBase gene (FBgn, FB2026_03); every construct is placed on its gene",
+ "keyBy": "gene",
+ "source": {
+  "citation": "Kim AR, Comjean A, Veal A, Rodiger J, Han M, Hu Y, Perrimon N (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in Drosophila. bioRxiv.",
+  "doi": "10.64898/2026.04.14.718529",
+  "url": "https://doi.org/10.64898/2026.04.14.718529",
+  "method": "AlphaFold-Multimer, 5 ranked models per pair"
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  }
+ },
+ "counts": {
+  "proteins": 14032,
+  "pairs": 1110715,
+  "predictions": 7469962,
+  "pairsFpr10": 152329,
+  "pairsFpr5": 73474,
+  "pairsFpr1": 11028,
+  "genes": 13939,
+  "constructs": 28357
+ },
+ "sets": [
+  "Inferred from orthologs",
+  "Kinase",
+  "Large-scale proteomics",
+  "Ligand\u2013receptor",
+  "Literature-derived",
+  "Other",
+  "Subcellular organelle"
+ ],
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "identity": "identity.tsv",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

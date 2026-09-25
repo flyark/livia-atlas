@@ -9,6 +9,15 @@
     "human-predictomes",
     "human-kinase-tf"
    ]
+  },
+  {
+   "id": "fly",
+   "label": "Fly",
+   "name": "Drosophila melanogaster",
+   "base": "data/species/fly/",
+   "datasets": [
+    "flypredictome"
+   ]
   }
  ],
  "datasets": [
@@ -38,13 +47,21 @@
   },
   {
    "id": "flypredictome",
+   "species": "fly",
    "title": "FlyPredictome",
-   "species": "Drosophila melanogaster",
-   "status": "external",
+   "short": "FlyPredictome",
+   "color": "#B5543C",
+   "base": "data/screens/flypredictome/",
+   "status": "live",
    "source": "Kim et al. 2026 · bioRxiv",
-   "url": "https://flyark.github.io/FlyPredictome-network/",
-   "note": "Network with a cLIP link on every node; joins the atlas format next.",
-   "paper": "https://doi.org/10.64898/2026.04.14.718529"
+   "paper": "https://doi.org/10.64898/2026.04.14.718529",
+   "zip": {
+    "url": "https://zenodo.org/api/records/22964480/files/livia-atlas-fly.zip/content",
+    "dev": "../zenodo/livia-atlas-fly.zip",
+    "offsets": "data/screens/flypredictome/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964480",
+    "doi": "10.5281/zenodo.22964480"
+   }
   }
  ]
 }
