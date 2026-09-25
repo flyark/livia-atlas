@@ -487,20 +487,20 @@ async function viewHome() {
   const all = await Promise.all((reg.species || []).map((x) => species(x.id)));   // totals over every species and screen: they grow as screens are added
   const tot = (k) => all.reduce((s, x) => s + (x.manifest.counts[k] || 0), 0), nScreens = all.reduce((s, x) => s + x.dsIds.length, 0);
   app.innerHTML = `
-    <section class="hero"><div class="hero-grid"><div>
+    <section class="hero hero-center">
       <h1>Every predicted <em>partner</em>, down to the <em>residue</em>.</h1>
       <p class="lede">Search AlphaFold-Multimer interaction screens by protein. Every prediction is scored with iLIS and its interface is resolved
         to residues: which partners a protein is predicted to bind, how confidently, and where.</p>
-      <div id="home-search"></div>
+      <div id="home-search" class="hero-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('predictions'))}</b> predictions</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
       <div class="chips"><span class="lbl">Try</span>${['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'YWHAB', 'SMAD4', 'KRAS', 'BRCA1']
-        .map((g) => `<a class="chip" data-g="${g}">${g}</a>`).join('')}</div></div>
+        .map((g) => `<a class="chip" data-g="${g}">${g}</a>`).join('')}</div>
       <a class="showcase" id="showcase" href="#/${sp.id}/P04637" style="color:inherit;text-decoration:none">
         <div class="sc-top"><b>TP53</b><span id="sc-note">clustering its partners…</span></div>
         <canvas id="sc-cv" height="150"></canvas>
         <div class="sc-foot"><span>Contact residue frequency, colored by cluster</span><span style="color:var(--blue)">Open TP53 →</span></div></a>
-    </div></section>
+    </section>
     <h2 class="section-h">Datasets</h2>
     <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>
     <h2 class="section-h">How it works</h2>
