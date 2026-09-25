@@ -282,6 +282,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 @media (max-width: 900px) { .seqpanels { grid-template-columns: 1fr; } }
 @media (max-width: 720px) { .stat4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } .viewer3d { height: 420px; } .pairwho { grid-template-columns: 1fr; } .subnav { top: 60px; } }
 @media (max-width: 720px) { .net { height: 440px; } }
+@media (max-width: 720px) { .phead > .kpis { flex: 1 1 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } }   /* phone: the tiles fill the row */
 
 /* ── screens (sources) ── */
 .src { display: inline-block; font-size: 11.5px; font-weight: 600; font-style: normal; line-height: 1.5; padding: 0 7px; border-radius: 5px; margin-right: 4px;
