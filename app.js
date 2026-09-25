@@ -490,7 +490,7 @@ async function viewHome() {
     <section class="hero"><div class="hero-grid"><div>
       <h1>Every predicted <em>partner</em>, down to the <em>residue</em>.</h1>
       <p class="lede">Search AlphaFold-Multimer interaction screens by protein. Every prediction is scored with iLIS and its interface is resolved
-        to residues: who a protein is predicted to bind, how confidently, and where.</p>
+        to residues: which partners a protein is predicted to bind, how confidently, and where.</p>
       <div id="home-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('predictions'))}</b> predictions</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
@@ -982,8 +982,10 @@ async function viewProtein(spId, q) {
     for (const p of B.preds) { const x = val(p, xK), y = val(p, yK); if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
       const c = predCluster.get(p.label + '|' + p.rank); pts.push({ p, x, y, c: c != null && (mode === 'all' || p.rank === 1) ? c : 0 }); }
     pts.sort((a, b) => (a.c ? 1 : 0) - (b.c ? 1 : 0));
-    const W = cv.parentElement.clientWidth, H = 440, m = { l: 62, r: 18, t: 12, b: 46 };
-    const dom = (key, vs) => (key === '_rank' ? [0, Math.max(1, vs.length)] : [Math.min(0, d3.min(vs) ?? 0), Math.max(1e-6, (d3.max(vs) ?? 1) * 1.04)]);
+    const W = cv.parentElement.clientWidth, H = 450, m = { l: 62, r: 18, t: 24, b: 46 };
+    const UNIT = new Set(['iLIS', 'ipTM', 'pTM', 'LIS', 'cLIS', 'ipSAE', 'actifpTM']);   // scores bounded by 1 keep their whole 0–1 range
+    const dom = (key, vs) => (key === '_rank' ? [0, Math.max(1, vs.length)] : UNIT.has(key) ? [0, 1] : key === 'qPl' || key === 'pPl' ? [0, 100]
+      : [Math.min(0, d3.min(vs) ?? 0), Math.max(1e-6, (d3.max(vs) ?? 1) * 1.04)]);
     const xs = d3.scaleLinear(dom(xK, pts.map((q) => q.x)), [m.l, W - m.r]).nice(), ys = d3.scaleLinear(dom(yK, pts.map((q) => q.y)), [H - m.b, m.t]).nice();
     const g = canvasCtx(cv, W, H);
     const title = (key) => (key === '_rank' ? `global rank (by ${METRICS[rankBy]})` : METRICS[key]);
@@ -994,7 +996,7 @@ async function viewProtein(spId, q) {
       g.strokeStyle = BAND[f]; g.fillStyle = BAND[f];
       const vy = FPR[yK] && FPR[yK][j], vx = FPR[xK] && FPR[xK][j];
       if (vy != null && vy <= ys.domain()[1]) { const y = Math.round(ys(vy)) + 0.5; dash(m.l, y, W - m.r, y); g.textAlign = 'right'; g.textBaseline = 'bottom'; g.fillText(`${f}% FPR (${vy})`, W - m.r - 2, y - 3); }
-      if (vx != null && vx <= xs.domain()[1]) { const x = Math.round(xs(vx)) + 0.5; dash(x, m.t, x, H - m.b); g.textAlign = 'left'; g.textBaseline = 'top'; g.fillText(`${f}%`, x + 3, m.t + 2); }
+      if (vx != null && vx <= xs.domain()[1]) { const x = Math.round(xs(vx)) + 0.5; dash(x, m.t, x, H - m.b); g.textAlign = 'center'; g.textBaseline = 'bottom'; g.fillText(`${f}%`, x, m.t - 5); }
     });
     g.restore();
     for (const q of pts) { g.beginPath(); g.arc(xs(q.x), ys(q.y), q.c ? 4.3 : 2.5, 0, 2 * Math.PI); g.fillStyle = q.c ? clusterColor(q.c, k) : '#CDD3DB'; g.fill(); if (q.c) { g.lineWidth = 0.7; g.strokeStyle = '#fff'; g.stroke(); } }
@@ -1028,9 +1030,8 @@ async function viewProtein(spId, q) {
     const host = $('#scat'); if (!host) return;
     const list = B.partners.map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 }));
     $('#sc-sub').textContent = `${fmtInt(list.length)} partners · best model of each pair`;
-    const W = host.clientWidth, H = 380, m = { l: 48, r: 14, t: 12, b: 42 };
-    const ymax = Math.max(0.8, ...list.map((p) => p.best)) * 1.02;
-    const x = d3.scaleLinear([0, 1], [m.l, W - m.r]), y = d3.scaleLinear([0, ymax], [H - m.b, m.t]), rad = (v) => 2.2 + 8 * Math.min(1, v / 0.8);
+    const W = host.clientWidth, H = 400, m = { l: 48, r: 14, t: 26, b: 42 };
+    const x = d3.scaleLinear([0, 1], [m.l, W - m.r]), y = d3.scaleLinear([0, 1], [H - m.b, m.t]), rad = (v) => 2.2 + 8 * Math.min(1, v / 0.8);   // both scores span 0–1: room above the top partners for their labels
     host.innerHTML = '';
     const svg = d3.select(host).append('svg').attr('width', W).attr('height', H);
     svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(5));
@@ -1043,7 +1044,7 @@ async function viewProtein(spId, q) {
       svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', BAND[f]).attr('stroke-dasharray', '4 4').attr('opacity', 0.7);
       svg.append('text').attr('x', W - m.r - 2).attr('y', y(v) - 4).attr('text-anchor', 'end').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', BAND[f]).text(`${f}% FPR`);
       svg.append('line').attr('x1', x(u)).attr('x2', x(u)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', BAND[f]).attr('stroke-dasharray', '2 5').attr('opacity', 0.55);
-      svg.append('text').attr('x', x(u) + 3).attr('y', m.t + 10).attr('font-size', 10).attr('font-family', 'IBM Plex Mono').attr('fill', BAND[f]).text(`${f}%`);
+      svg.append('text').attr('x', x(u)).attr('y', m.t - 8).attr('text-anchor', 'middle').attr('font-size', 10).attr('font-family', 'IBM Plex Mono').attr('fill', BAND[f]).text(`${f}%`);
     });
     const k = M ? M.k : 1, color = (p) => (p.c ? clusterColor(p.c, k) : '#B7C2CE');
     const pts = [...list].sort((a, b) => (a.c ? 1 : 0) - (b.c ? 1 : 0) || a.best - b.best);
@@ -1051,12 +1052,13 @@ async function viewProtein(spId, q) {
       .attr('fill', color).attr('fill-opacity', (p) => (p.c ? 0.8 : 0.35)).attr('stroke', '#fff').attr('stroke-width', 0.8).style('cursor', 'pointer')
       .on('mousemove', (ev, p) => showTip(`<b>${esc(p.gene)}</b> · iLIS ${p.best.toFixed(3)} (avg ${p.avg.toFixed(3)}) · iLISA ${p.ilisaBest.toFixed(1)} · ipTM ${p.iptmBest.toFixed(2)}${p.c ? ` · ${clusterLabel(p.c)}` : ''}<br>${srcBadges(sp, p.src)}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, p) => { hideTip(); location.hash = `#/${sp.id}/${P.key}/${p.id}`; });
-    const placed = [CUT[10], CUT[5], CUT[1]].map((v) => [W - m.r - 60, y(v) - 16, W - m.r, y(v)]), labels = [];   // FPR line labels are taken
+    const placed = [...[CUT[10], CUT[5], CUT[1]].map((v) => [W - m.r - 60, y(v) - 16, W - m.r, y(v)]),   // cutoff labels are taken
+      ...FPR.ipTM.map((u) => [x(u) - 16, 0, x(u) + 16, m.t])], labels = [];
     for (const p of [...list].sort((a, b) => b.best - a.best).slice(0, 10)) {   // label the top partners where a label fits, never on another label
       const cx = x(p.iptmBest), cy = y(p.best), rr = rad(p.avg), w = p.gene.length * 7 + 4, h = 13;
       for (const [tx, ty, anchor] of [[cx + rr + 4, cy + 4, 'start'], [cx - rr - 4, cy + 4, 'end'], [cx, cy - rr - 5, 'middle'], [cx, cy + rr + 13, 'middle']]) {
         const bx = anchor === 'start' ? tx : anchor === 'end' ? tx - w : tx - w / 2, box = [bx, ty - h + 2, bx + w, ty + 3];
-        if (box[0] < m.l || box[2] > W - m.r || box[1] < 0) continue;
+        if (box[0] < m.l || box[2] > W - m.r || box[1] < m.t - 2) continue;
         if (placed.some((q) => box[0] < q[2] && box[2] > q[0] && box[1] < q[3] && box[3] > q[1])) continue;
         placed.push(box); labels.push({ p, tx, ty, anchor }); break;
       }
