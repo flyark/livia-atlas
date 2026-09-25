@@ -327,3 +327,9 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .src-line a { color: var(--blue); }
 .totals { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 14px; font-size: 13.5px; color: var(--ink-3); }
 .totals b { font-family: var(--mono); color: var(--ink); font-weight: 600; }
+.beta { font: 700 10px/1 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: #B45309; background: #FEF3C7; padding: 3px 6px; border-radius: 5px; margin-left: 2px; align-self: flex-start; margin-top: 2px; }
+table.cuts { border-collapse: collapse; margin: 14px 0 6px; font-size: 13.5px; }
+table.cuts caption { caption-side: top; text-align: left; font-size: 13px; color: var(--ink-2); padding-bottom: 6px; }
+table.cuts th, table.cuts td { padding: 6px 14px 6px 0; text-align: left; border-bottom: 1px solid var(--line-2); }
+table.cuts td { font-family: var(--mono); font-weight: 600; }
+table.cuts thead th { font-size: 12px; color: var(--ink-3); font-weight: 600; }

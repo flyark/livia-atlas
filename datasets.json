@@ -45,22 +45,6 @@
    "url": "https://flyark.github.io/FlyPredictome-network/",
    "note": "Network with a cLIP link on every node; joins the atlas format next.",
    "paper": "https://doi.org/10.64898/2026.04.14.718529"
-  },
-  {
-   "id": "afdb-complexes",
-   "title": "AlphaFold DB complexes",
-   "species": "many species",
-   "status": "planned",
-   "source": "EMBL-EBI AlphaFold Protein Structure Database",
-   "note": "Predicted complexes scored with the same pipeline."
-  },
-  {
-   "id": "virus-host",
-   "title": "Virus–host interactions",
-   "species": "virus × host",
-   "status": "planned",
-   "source": "public large-scale screens",
-   "note": "Any screen with PAE output can be added."
   }
  ]
 }
