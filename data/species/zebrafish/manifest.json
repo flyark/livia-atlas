@@ -1,0 +1,40 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "zebrafish",
+ "species": {
+  "name": "Danio rerio",
+  "taxon": 7955
+ },
+ "datasets": [
+  {
+   "id": "zebrafish-kinase-kinase",
+   "short": "Kinase\u2013kinase",
+   "title": "Zebrafish kinase\u2013kinase screen",
+   "citation": "Kim AR, Perrimon N (2026). LIVIA cLIP Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. Zenodo.",
+   "url": "https://doi.org/10.5281/zenodo.22964479",
+   "counts": {
+    "proteins": 252,
+    "pairs": 4278,
+    "predictions": 21390,
+    "pairsFpr10": 1228,
+    "pairsFpr5": 576,
+    "pairsFpr1": 72,
+    "runs": 4278
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 252,
+  "pairs": 4278,
+  "predictions": 21390,
+  "runs": 4278,
+  "pairsFpr10": 1228,
+  "pairsFpr5": 576,
+  "pairsFpr1": 72,
+  "pairsInSeveral": 0
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

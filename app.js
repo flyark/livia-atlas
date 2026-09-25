@@ -21,7 +21,7 @@ const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.
 const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442] };
 const bandIn = (cuts, v) => (v >= cuts[2] ? 1 : v >= cuts[1] ? 5 : v >= cuts[0] ? 10 : 0);
 const bandCol = (cuts, v) => BAND[bandIn(cuts, v)];   // a value's color = its FPR band under its own metric's cutoff
-const ARCHIVE = { doi: '10.5281/zenodo.22964480', url: 'https://doi.org/10.5281/zenodo.22964480' };   // the atlas's data record (all versions: the concept DOI)
+const ARCHIVE = { doi: '10.5281/zenodo.22964479', url: 'https://doi.org/10.5281/zenodo.22964479' };   // the atlas's data record: the concept DOI, always the latest version
 const REF = {
   livia: ['Kim & Perrimon (2026) LIVIA, bioRxiv', '10.64898/2026.05.01.721633'],
   flypredictome: ['Kim et al. (2026) FlyPredictome, bioRxiv', '10.64898/2026.04.14.718529'],
@@ -157,6 +157,9 @@ function parseCSV(text) {
   if (f || row.length) { row.push(f); out.push(row); }
   return out;
 }
+const shiftRanges = (s, k) => (!k || !s || s === '[]' ? s : '[' + String(s).replace(/[\[\]\s]/g, '').split(',').filter(Boolean).map((t) => t.split('-').map((x) => +x + k).join('-')).join(',') + ']');
+const rangesOf = (a) => { if (!a.length) return '[]'; const t = []; let x = a[0], y = a[0];
+  for (const r of a.slice(1)) { if (r === y + 1) { y = r; continue; } t.push(x === y ? String(x) : `${x}-${y}`); x = y = r; } t.push(x === y ? String(x) : `${x}-${y}`); return '[' + t.join(',') + ']'; };
 const expand = (s) => { const out = []; for (const t of String(s || '').replace(/[\[\]\s]/g, '').split(',')) { if (!t) continue;
   const [a, b] = t.split('-').map(Number); if (b >= a) for (let x = a; x <= b; x++) out.push(x); else if (a) out.push(a); } return out; };
 function parseFasta(text) { const m = new Map(); let id = null, buf = [];
@@ -168,8 +171,9 @@ const bundleUrl = (ds, name) => new URL(bundleRel(ds, name).split('/').map(encod
 // A gene-keyed bundle names its constructs: name → gene key, kind, label, length, offset on the gene's reference sequence
 function parseCons(text) {
   const m = new Map();
-  for (const line of text.split('\n').slice(1)) { if (!line) continue; const [name, key, kind, label, len, off] = line.split('\t');
-    m.set(name, { key, kind, label, len: +len, off: off === '' || off == null ? null : +off }); }
+  for (const line of text.split('\n').slice(1)) { if (!line) continue; const [name, key, kind, label, len, off, exact, mut, seg] = line.split('\t');
+    m.set(name, { key, kind, label, len: +len, off: off === '' || off == null ? null : +off, exact: exact === 'y', mut: mut || '',
+      seg: seg ? seg.split(',').map((t) => t.split(':').map(Number)) : null }); }
   return m;
 }
 function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: lis.py rows + FASTA (+ its construct table)
@@ -245,34 +249,59 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
           ru.base = (ru.set || sp.dsShort[ru.di]) + (ql !== P.gene || pl !== og ? ` · ${ql} – ${pl}` : ''); seen.set(ru.base, (seen.get(ru.base) || 0) + 1); }
         for (const rid of pt.runs) { const ru = runs.get(rid); const i = (k.get(ru.base) || 0) + 1; k.set(ru.base, i); ru.label = seen.get(ru.base) > 1 ? `${ru.base} · run ${i}` : ru.base; }
       }
-      // cLIP clusters one construct of the query: the reference-length one (UniProt; FlyBase for fly) when a screen used
-      // it, else the one most predictions used. A screen that folded another construct, and every window, fragment,
-      // mutant or variant of a gene, is set aside: listed with its partners, not clustered.
-      const full = (p) => { const c = cons.get(p.qc); return !c || c.kind === 'gene' || c.kind === 'isoform'; };
-      const pool = preds.some(full) ? preds.filter(full) : preds;
-      const lenN = new Map(); for (const p of pool) lenN.set(p.qLen, (lenN.get(p.qLen) || 0) + 1);
-      const qLen = [...lenN].sort((a, b) => (b[0] === P.len) - (a[0] === P.len) || b[1] - a[1])[0][0];
-      const inClip = (p) => p.qLen === qLen && (pool === preds || full(p));
-      const aside = new Map(), nameN = new Map();
-      for (const p of preds) {
-        if (inClip(p)) { nameN.set(p.qc, (nameN.get(p.qc) || 0) + 1); continue; }
-        const c = cons.get(p.qc), k = c ? p.qc : 'screen ' + p.di;
-        if (!aside.has(k)) aside.set(k, { di: p.di, len: p.qLen, con: c || null, n: 0 }); aside.get(k).n++;
+      // What cLIP clusters. A gene-keyed screen (FlyPredictome) offers choices: the gene's reference sequence, with
+      // every construct placed on it exactly (the full length, a trimmed or tiled part, a phosphosite window) or mapped
+      // residue by residue (another isoform sharing 95% of its residues) — or any other construct, in its own numbering.
+      // The default is the choice with the most models; point mutants and variants are never clustered. Other screens:
+      // one construct, the reference-length one (UniProt) when a screen used it, else the one most predictions used.
+      const R0 = P.len || 0;
+      const onRef = (p) => { const c = cons.get(p.qc);
+        return !!(c && c.len === p.qLen && c.kind !== 'mutant' && c.kind !== 'variant' && ((c.exact && c.off != null && c.off + p.qLen <= R0) || c.seg)); };
+      const choices = [];
+      if (cons.size && R0) {
+        const own = new Map(); let refN = 0;
+        for (const p of preds) { if (onRef(p)) { refN++; continue; } const c = cons.get(p.qc); if (c && c.kind !== 'mutant' && c.kind !== 'variant') own.set(p.qc, (own.get(p.qc) || 0) + 1); }
+        if (refN) choices.push({ id: '', label: `${P.gene}, its reference (${fmtInt(R0)} aa)`, n: refN, len: R0 });
+        for (const [name, n] of own) { const c = cons.get(name); choices.push({ id: name, label: /\(\d/.test(c.label) ? c.label : `${c.label} (${fmtInt(c.len)} aa)`, n, len: c.len }); }
+        choices.sort((x, y) => y.n - x.n || (x.id ? 1 : -1));
       }
-      const qName = [...nameN].sort((a, b) => b[1] - a[1]).map(([n]) => n)[0] || '';
+      const toRef = (c, r) => { if (c.exact && c.off != null) return r + c.off; if (c.seg) for (const [a, b, n] of c.seg) if (r >= a && r < a + n) return b + r - a; return null; };
+      const onRefRanges = (v, c) => rangesOf([...new Set(expand(v).map((r) => toRef(c, r)).filter((x) => x != null))].sort((x, y) => x - y));
+      let fallback = null;
+      if (!choices.length) {
+        const full = (p) => { const c = cons.get(p.qc); return !c || c.kind === 'gene' || c.kind === 'isoform'; };
+        const pool = preds.some(full) ? preds.filter(full) : preds;
+        const lenN = new Map(); for (const p of pool) lenN.set(p.qLen, (lenN.get(p.qLen) || 0) + 1);
+        const qL = [...lenN].sort((x, y) => (y[0] === P.len) - (x[0] === P.len) || y[1] - x[1])[0][0];
+        fallback = { qLen: qL, inClip: (p) => p.qLen === qL && (pool === preds || full(p)) };
+      }
       const labels = new Map(), labelOf = new Map();
       for (const pt of partners) pt.runs.forEach((rid, i) => { const lab = pt.runs.length > 1 || pt.id === P.key ? `${pt.id}~${i + 1}` : pt.id; labelOf.set(rid, lab); labels.set(lab, { key: pt.id, run: rid }); });
-      const clipRows = [];
-      for (const p of preds) {
-        p.label = labelOf.get(p.run);
-        if (!inClip(p) || !(p.iLIS >= CUT[10])) continue;
-        const o = {}; p.hdr.forEach((c, i) => { o[c] = p.row[i]; });
-        o.name = p.qi ? `${P.key}___${p.label}` : `${p.label}___${P.key}`;
-        clipRows.push(o);
-      }
-      for (const p of preds) { delete p.row; delete p.hdr; }
+      for (const p of preds) p.label = labelOf.get(p.run);
+      const clipFor = (choice) => {   // → the rows cLIP clusters for one choice, its axis, and what is left out
+        const ref = choices.length > 0 && choice === '', inClip = !choices.length ? fallback.inClip : ref ? onRef : (p) => p.qc === choice;
+        const qLen = !choices.length ? fallback.qLen : ref ? R0 : cons.get(choice).len;
+        const rows = [], aside = new Map(), nameN = new Map();
+        for (const p of preds) {
+          if (!inClip(p)) { const c = cons.get(p.qc), k = c ? p.qc : 'screen ' + p.di; if (!aside.has(k)) aside.set(k, { di: p.di, len: p.qLen, con: c || null, n: 0 }); aside.get(k).n++; continue; }
+          nameN.set(p.qc, (nameN.get(p.qc) || 0) + 1);
+          if (!(p.iLIS >= CUT[10]) || !p.row) continue;
+          const o = {}; p.hdr.forEach((c, i) => { o[c] = p.row[i]; });
+          if (ref) {   // the query side in the reference's numbering
+            const q = p.qi ? 'i' : 'j', c = cons.get(p.qc);
+            if (!(c.exact && c.off === 0)) { o['LIR_indices_' + q] = onRefRanges(o['LIR_indices_' + q], c); o['cLIR_indices_' + q] = onRefRanges(o['cLIR_indices_' + q], c); }
+            o['len_' + q] = String(R0);
+          }
+          o.name = p.qi ? `${P.key}___${p.label}` : `${p.label}___${P.key}`;
+          rows.push(o);
+        }
+        const qName = choices.length ? choice : [...nameN].sort((x, y) => y[1] - x[1]).map(([n]) => n)[0] || '';
+        return { choice, rows, qLen, qName, aside };
+      };
+      for (const p of preds) if (!(p.iLIS >= CUT[10])) { delete p.row; delete p.hdr; }   // only rows past the lowest cutoff are ever clustered
+      const C0 = clipFor(choices.length ? choices[0].id : '');
       if (scope && !preds.length) throw new Error(`${P.gene} has no predictions in this ${onlyDi >= 0 ? 'screen' : 'set'}.`);
-      return { parts, preds, partners, runs, seqs, cons, sets, TS, setId: scope, clipRows, qLabel: P.key, labels, qLen, qName, aside };
+      return { parts, preds, partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside };
     })();
     sp.cache.set(ck, job); job.catch(() => sp.cache.delete(ck));
   }
@@ -599,7 +628,7 @@ async function viewHome() {
       <p class="lede">Search AlphaFold-Multimer interaction screens by protein. Every prediction is scored with iLIS and its interface is resolved
         to residues: which partners a protein is predicted to bind, how confidently, and where.</p>
       <div id="home-search" class="hero-search"></div>
-      <div class="totals"><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
+      <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
       <div class="chips"><span class="lbl">Try</span>${(reg.species || []).map((x, i) => (reg.species.length > 1 ? `<span class="lbl${i ? ' sp' : ''}">${esc(x.label)}</span>` : '')
         + (TRY[x.id] || []).map((g) => `<a class="chip" data-sp="${x.id}" data-g="${g}">${g}</a>`).join('')).join('')}</div>
@@ -608,6 +637,7 @@ async function viewHome() {
         <canvas id="sc-cv" height="150"></canvas>
         <div class="sc-foot"><span>Contact residue frequency, colored by cluster</span><span style="color:var(--blue)">Open TP53 →</span></div></a>
     </section>
+    ${(REG.themes || []).length ? '<h2 class="section-h">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h">Datasets</h2>
     <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>
     <h2 class="section-h">How it works</h2>
@@ -619,7 +649,16 @@ async function viewHome() {
   mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase(sp, sp.byKey.get('P04637'));
   app.querySelectorAll('.chip[data-g]').forEach((a) => a.onclick = async () => { const s2 = await species(a.dataset.sp), r = resolveRow(s2, a.dataset.g); if (r) location.hash = `#/${s2.id}/${r.key}`; });
-  fillDsStats();
+  fillDsStats(); fillThemes();
+}
+async function fillThemes() {   // home: each theme's species and totals, from its members' counts
+  const reg = await registry(), box = $('#themes'); if (!box) return;
+  const cards = await Promise.all((reg.themes || []).map(async (T) => { const rows = await themeMembers(T), sum = (k) => rows.reduce((a, r) => a + (r.counts[k] || 0), 0);
+    return `<div class="ds live"><span class="badge on">Theme</span><h3><a href="#/themes/${T.id}">${esc(T.title)}</a></h3>
+      <div class="sp">${rows.map((r) => esc(r.S.label)).join(' · ')}</div>
+      <div class="stats"><div><b>${fmtInt(sum('proteins'))}</b><span>proteins</span></div><div><b>${fmtInt(sum('pairs'))}</b><span>pairs</span></div><div><b>${fmtInt(sum('pairsFpr10'))}</b><span>past 10% FPR</span></div></div>
+      <div class="src-line">${esc(T.about || '')}</div></div>`; }));
+  box.innerHTML = cards.join('');
 }
 function dsCard(d) {
   const live = d.status === 'live', spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
@@ -695,6 +734,12 @@ function viewAbout() {
       <p class="muted" style="font-size:14px">Each dataset page lists the screen it comes from; please cite that source too.</p></div></div>`;
 }
 
+// The counts of a screen, a species or a set, in one row: a prediction is a pair folded once (its ranked models are
+// counted as models); protein pairs are unique pairs, a protein with itself left out
+const kpiRow = (k) => `<div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.pairs)}</b><span>protein pairs</span></div>
+  ${k.runs ? `<div class="kpi"><b>${fmtInt(k.runs)}</b><span>predictions</span></div>` : ''}<div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>
+  <div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR</span></div><div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR</span></div>
+  <div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR</span></div></div>`;
 const shortCite = (src) => `${src.citation.split(' ')[0]} et al. ${(src.citation.match(/\((\d{4})\)/) || [])[1] || ''}`.trim();
 // Thematic sets of a dataset, for its dataset and species pages: one table, screens first, then source categories;
 // the bar is each set's share of the dataset's predictions (sets overlap, so shares need not add up)
@@ -711,6 +756,30 @@ function setsCard(TS) {
     <div class="tbl-wrap"><table class="sets"><thead><tr><th>Set</th><th class="n">Proteins</th><th class="n">Pairs</th><th class="n">Models</th><th>Share of models</th></tr></thead>
       <tbody>${grp('Screens', scr)}${grp('Source categories', cat)}</tbody></table></div></div>`;
 }
+/* themes: one biological question across species — each member a screen of a species, or a thematic set of a screen */
+async function themeMembers(T) {
+  return (await Promise.all(T.members.map(async (m) => {
+    const S = await regSpecies(m.species); let ds; try { ds = await dataset(m.dataset); } catch (e) { return null; }
+    if (m.set) { const TS = await setsOf(ds).catch(() => null), st = TS && TS.byId.get(m.set); if (!st) return null;
+      return { S, title: st.title, within: ds.reg.title, counts: st.counts, href: `#/datasets/${ds.id}/${st.id}`, source: st.source || null }; }
+    return { S, title: ds.reg.title, within: '', counts: ds.manifest.counts, href: `#/datasets/${ds.id}`, source: ds.manifest.source || null };
+  }))).filter(Boolean);
+}
+async function viewTheme(id) {
+  const reg = await registry(), T = (reg.themes || []).find((t) => t.id === id);
+  if (!T) { app.innerHTML = `<div class="empty">No theme “${esc(id)}”. <a href="#/">Go to the atlas home</a></div>`; return; }
+  document.title = `${T.title} · LIVIA cLIP Atlas`;
+  const rows = await themeMembers(T), sum = (k) => rows.reduce((a, r) => a + (r.counts[k] || 0), 0);
+  const cite = (src) => (src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(shortCite(src))} ↗</a>` : '');
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Themes / ${esc(T.title)}</div>
+    <div class="dshead"><h1>${esc(T.title)}</h1><div class="pname">${esc(T.about || '')}</div></div>
+    ${kpiRow({ proteins: sum('proteins'), pairs: sum('pairs'), runs: sum('runs'), predictions: sum('predictions'), pairsFpr10: sum('pairsFpr10'), pairsFpr5: sum('pairsFpr5'), pairsFpr1: sum('pairsFpr1') })}
+    <div class="card"><div class="card-head"><h2>By species</h2><span class="muted">open one to search it; its protein pages show only this theme</span></div>
+      <div class="tbl-wrap"><table class="sets"><thead><tr><th>Species</th><th class="n">Proteins</th><th class="n">Protein pairs</th><th class="n">Predictions</th><th class="n">Past 10% FPR</th></tr></thead><tbody>
+      ${rows.map((r) => `<tr><td class="set-name"><i style="background:${T.color}"></i><a href="${r.href}">${esc(r.S.label)}</a> <span class="muted" style="font-style:italic">${esc(r.S.name)}</span>${r.within ? ` <span class="muted">· in ${esc(r.within)}</span>` : ''}${r.source ? `<span class="set-cite">${cite(r.source)}</span>` : ''}</td>
+        <td class="n">${fmtInt(r.counts.proteins)}</td><td class="n">${fmtInt(r.counts.pairs)}</td><td class="n">${fmtInt(r.counts.runs || r.counts.predictions)}</td><td class="n">${fmtInt(r.counts.pairsFpr10)}</td></tr>`).join('')}
+      </tbody></table></div></div>`;
+}
 /* a thematic set: a view over one dataset (its prediction runs), with its own counts, citation, hubs and search */
 async function viewSet(dsId, setId) {
   const ds = await dataset(dsId), TS = await setsOf(ds), S = TS && TS.byId.get(setId), sp = await species(ds.reg.species), m = ds.manifest;
@@ -725,9 +794,7 @@ async function viewSet(dsId, setId) {
       <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} within ${esc(ds.reg.title)} · <i>${esc(m.species.name)}</i></div>
       ${S.source ? `<div class="cite">${link(S.source.url, `${S.source.citation} doi:${S.source.doi}`)}</div>` : ''}
       <div class="cite">Part of ${m.source.url ? link(m.source.url, m.source.citation) : esc(m.source.citation)}</div></div>
-    <div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>
-      <div class="kpi"><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR</span></div>
-      <div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR</span></div></div>
+    ${kpiRow(k)}
     <div class="card"><h2>Search this set</h2><p class="muted" style="margin:2px 0 10px">Protein pages opened from here show only this set's predictions, with a switch to all of ${esc(ds.reg.short)}.</p><div id="set-search"></div></div>
     <div class="card"><h2>Most connected proteins in this set <span class="muted">partners past the 10% FPR cutoff</span></h2>
       <div class="chips">${hubs.map((r) => { const R = sp.byKey.get(r.key); return `<a class="chip" href="#/${sp.id}/${r.key}?set=${S.id}">${esc(R ? R.gene : r.key)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
@@ -743,9 +810,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / ${esc(ds.reg.title)}</div>
     <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å</div>
       <div class="cite">${m.source.url ? `<a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.citation)}${m.source.doi ? ` doi:${esc(m.source.doi)}` : ''} ↗</a>` : esc(m.source.citation)}</div></div>
-    <div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>
-      <div class="kpi"><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR</span></div>
-      <div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR</span></div></div>
+    ${kpiRow(k)}
     <div class="card"><h2>Search</h2><p class="muted" style="margin:2px 0 10px">${sp.dsIds.length > 1 ? `Protein pages opened from here show only this screen, <span class="src" style="--c:${ds.reg.color}">${esc(ds.reg.short)}</span>, with a switch to every ${esc(sp.reg.label.toLowerCase())} screen.`
       : `Protein pages show every prediction of this screen${TS ? ', with a switch to each of its thematic sets' : ''}.`}</p><div id="ds-search"></div></div>
     <div class="card"><h2>Most connected proteins in this screen <span class="muted">partners past the 10% FPR cutoff</span></h2>
@@ -760,7 +825,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925c'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925d'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -789,6 +854,7 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   if (P.status === 'unreviewed') flags.push('<span class="flag">unreviewed UniProt entry</span>');
   if (P.status === 'other species') flags.push('<span class="flag">not a fly protein: folded as a partner of fly proteins</span>');
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
+  if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
   const nav = [['c-overview', 'Overview'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-3d', '3D structure'], ['c-scatter', 'Scatter'], ['c-net', 'Network'], ['c-pt', 'Partners']];
   const chips = '<div class="chips cl-chips" data-chips></div>';
@@ -897,8 +963,11 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
     $('#kp-all').textContent = fmtInt(others.length); $('#kp-10').textContent = fmtInt(cnt(CUT[10])); $('#kp-5').textContent = fmtInt(cnt(CUT[5])); $('#kp-1').textContent = fmtInt(cnt(CUT[1]));
     document.title = `${P.gene} · ${SET.short} · LIVIA cLIP Atlas`;
   }
-  let qSeq = await seqOf(sp, P, B);   // letters along the clustered construct: its own sequence when it is not the reference
-  if (qSeq && B.qLen && qSeq.length !== B.qLen) qSeq = (B.qName && B.seqs.get(B.qName)) || '';
+  const refSeq = await seqOf(sp, P, B);   // the reference sequence (UniProt; FlyBase for fly)
+  let CQ = B.C0, qSeq = '';   // the clustered construct (a choice of B.choices): its rows, its axis, and the letters along it
+  const setQSeq = () => { qSeq = B.cons.size && CQ.qName ? B.seqs.get(CQ.qName) || '' : refSeq;
+    if (qSeq && CQ.qLen && qSeq.length !== CQ.qLen) qSeq = (CQ.qName && B.seqs.get(CQ.qName)) || ''; };
+  setQSeq();
   const SETS = B.sets.length ? B.sets : null;   // a screen with categories: the Source column shows them
   const gname = (key) => { const r = sp.byKey.get(key); return r ? r.gene : key; };
   const range = (k) => Array.from({ length: k }, (_, i) => i + 1);
@@ -911,27 +980,44 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   const toStruct = (r) => (S.map ? S.map[r - 1] : r);
   const who = (label) => B.labels.get(label) || { key: label, run: null };    // a cLIP partner label → partner key + screen run
   const xtWant = () => { const v = +((app.querySelector('.xticks') || {}).value); return v >= 2 ? Math.min(40, v) : 0; };
-  $('#s-len').textContent = fmtInt(B.qLen || P.clen || 0);
   { const byDs = new Map(); for (const p of B.preds) { if (!byDs.has(p.di)) byDs.set(p.di, new Set()); byDs.get(p.di).add(p.qLen); }   // the construct each screen folded
     const lens = new Set(B.preds.map((p) => p.qLen)), ref = sp.manifest.keyedBy ? 'FlyBase reference' : 'UniProt';
     const f = !B.cons.size && lens.size > 1 ? `constructs differ between screens: ${[...byDs].map(([di, ls]) => `${sp.dsShort[di]} ${[...ls].map(fmtInt).join(' / ')} aa`).join(' · ')}${P.len ? `; UniProt ${fmtInt(P.len)} aa` : ''}`
-      : P.len && B.qLen !== P.len ? `clustered construct ${fmtInt(B.qLen)} aa, ${ref} ${fmtInt(P.len)} aa; residue numbers follow the construct` : '';
+      : !B.cons.size && P.len && CQ.qLen !== P.len ? `clustered construct ${fmtInt(CQ.qLen)} aa, ${ref} ${fmtInt(P.len)} aa; residue numbers follow the construct` : '';
     if (f) $('#flags').insertAdjacentHTML('beforeend', `<span class="flag">${esc(f)}</span>`); }
-  if (B.aside.size) { const a = $('#clip-aside'); a.hidden = false;
-    if (B.cons.size) {   // a gene-keyed screen: its windows, fragments, mutants … by kind
+  const constructNote = () => {   // what the clustering uses, and what it leaves out
+    $('#s-len').textContent = fmtInt(CQ.qLen || P.clen || 0);
+    const a = $('#clip-aside');
+    if (B.cons.size) {   // a gene-keyed screen: its other constructs by kind
       const KIND = { phosphosite: ['phosphosite window', 'phosphosite windows'], fragment: ['fragment', 'fragments'], mutant: ['point mutant', 'point mutants'],
-        variant: ['variant', 'variants'], peptide: ['peptide', 'peptides'], isoform: ['other isoform', 'other isoforms'] }, byKind = new Map();
-      for (const x of B.aside.values()) { const k = x.con ? x.con.kind : 'construct'; if (!byKind.has(k)) byKind.set(k, []); byKind.get(k).push(x); }
-      const said = [...byKind].map(([k, xs]) => { const [one, many] = KIND[k] || ['other construct', 'other constructs'], ex = xs.slice(0, 3).map((x) => (x.con ? x.con.label : '')).filter(Boolean);
-        return `${fmtInt(xs.length)} ${xs.length === 1 ? one : many}${ex.length ? ` (${ex.join(', ')}${xs.length > 3 ? ', …' : ''})` : ''}`; });
-      a.textContent = `${P.gene} was also folded as ${said.join(', ')}. Their models are listed with their partners and on the pair pages, and left out of the clustering, which uses the ${fmtInt(B.qLen)} aa construct.`;
-    } else a.textContent = [...B.aside.values()].map((x) => `${sp.dsShort[x.di]} predicted ${P.gene} as a ${fmtInt(x.len)} aa construct`).join('; ') + `, so those models are listed but left out of the clustering, which uses the ${fmtInt(B.qLen)} aa construct.`; }
+        variant: ['variant', 'variants'], peptide: ['peptide', 'peptides'], isoform: ['isoform', 'isoforms'], gene: ['construct', 'constructs'] };
+      const pickable = new Set((B.choices || []).map((c) => c.id)), say = (list) => { const byKind = new Map();
+        for (const x of list) { const k = x.con ? x.con.kind : 'construct'; if (!byKind.has(k)) byKind.set(k, []); byKind.get(k).push(x); }
+        return [...byKind].map(([k, xs]) => { const [one, many] = KIND[k] || ['construct', 'constructs'], ex = xs.slice(0, 3).map((x) => (x.con ? x.con.label : '')).filter(Boolean);
+          return `${fmtInt(xs.length)} ${xs.length === 1 ? one : many}${ex.length ? ` (${ex.join(', ')}${xs.length > 3 ? ', …' : ''})` : ''}`; }).join(', '); };
+      const own = [...CQ.aside.entries()].filter(([k]) => pickable.has(k)).map(([, x]) => x), rest = [...CQ.aside.entries()].filter(([k]) => !pickable.has(k)).map(([, x]) => x);
+      const uses = CQ.qName ? `${(B.cons.get(CQ.qName) || {}).label || CQ.qName}, in its own numbering` : `the ${fmtInt(CQ.qLen)} aa reference, with every construct placed or mapped on it`;
+      a.textContent = CQ.qName ? `Clustering uses ${uses}. The ${P.gene} reference and its other constructs are in the menu above.` : `Clustering uses ${uses}.`
+        + (own.length ? ` ${say(own)} ${own.length === 1 ? 'shares' : 'share'} too little sequence with ${CQ.qName ? 'it' : 'the reference'} to be drawn on it; choose one in the menu above to cluster it on its own.` : '')
+        + (rest.length ? ` ${say(rest)} ${rest.length === 1 ? 'is' : 'are'} listed with ${rest.length === 1 ? 'its' : 'their'} partners and on the pair pages, not clustered.` : '');
+      a.hidden = !(own.length || rest.length || CQ.qName);
+    } else if (CQ.aside.size) { a.hidden = false;
+      a.textContent = [...CQ.aside.values()].map((x) => `${sp.dsShort[x.di]} predicted ${P.gene} as a ${fmtInt(x.len)} aa construct`).join('; ') + `, so those models are listed but left out of the clustering, which uses the ${fmtInt(CQ.qLen)} aa construct.`;
+    } else a.hidden = true;
+  };
+  constructNote();
+  if (B.choices && B.choices.length > 1) {   // which construct to cluster: the reference, or another construct with models of its own
+    $('.clip-ctl').insertAdjacentHTML('afterbegin', `<select id="clip-construct" class="setpick" aria-label="Construct to cluster">${B.choices.map((c) =>
+      `<option value="${esc(c.id)}">${esc(c.label)} · ${fmtInt(c.n)} models</option>`).join('')}</select>`);
+    $('#clip-construct').value = CQ.choice;
+    $('#clip-construct').onchange = (e) => { CQ = B.clipFor(e.target.value); setQSeq(); constructNote(); mapStruct(); cluster(); };
+  }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); }; });
 
   /* cLIP ─ clustering + everything drawn from it */
   async function cluster() {
     $('#clip-sub').textContent = 'Clustering…';
-    try { M = await runClip(B.clipRows, B.qLabel, CUT[cut]); } catch (e) { M = null; $('#clip-sub').textContent = `Clustering failed: ${e.message}`; }
+    try { M = await runClip(CQ.rows, B.qLabel, CUT[cut]); } catch (e) { M = null; $('#clip-sub').textContent = `Clustering failed: ${e.message}`; }
     predCluster.clear(); partnerCluster.clear();
     if (M) {
       const best = new Map();
@@ -1135,6 +1221,16 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
     V.shown = true; $('#v3d-msg').hidden = true; legend3D();
   }
   function recolor3D() { legend3D(); if (V.shown) applyColorsToMolstarFrame('viewer3d-frame', colorComponents(), 'mmcif'); }
+  function mapStruct() {   // the clustered construct onto the AlphaFold DB model (the UniProt sequence)
+    const es = S.entrySeq; if (!es) return;
+    const cLen = CQ.qLen || P.clen;
+    if (qSeq && qSeq.length === cLen) {
+      if (qSeq === es) { S.map = null; S.mapOK = true; S.mapNote = 'sequence 1:1'; }
+      else { const mi = CLIPResolver.alignMap(qSeq, es); S.map = mi.map; S.mapOK = mi.covered > 0; S.mapNote = `remapped (${mi.method}, ${Math.round(100 * mi.covered / qSeq.length)}% matched)`; }
+    } else if (es.length === cLen) { S.map = null; S.mapOK = true; S.mapNote = 'same length'; }
+    else { S.map = null; S.mapOK = false; S.mapNote = `The clustered construct (${fmtInt(cLen)} aa) differs from the model (${fmtInt(es.length)} aa), so clusters are not placed on it.`; }
+    $('#struct-badge').innerHTML = `AlphaFold DB <a href="https://alphafold.ebi.ac.uk/entry/${esc(P.acc)}" target="_blank" rel="noopener">${esc(P.acc)}</a> · ${esc(S.mapOK ? S.mapNote : 'not mapped')}`;
+  }
   async function loadStructure() {
     const msg = (t) => { const m = $('#v3d-msg'); if (m) { m.hidden = false; m.innerHTML = t; } };
     if (!P.acc) { S.state = 'none'; msg('No UniProt accession for this protein, so there is no AlphaFold DB model to show.'); return; }
@@ -1142,13 +1238,7 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
     domainsOf(P.acc).then((d) => { S.domains = d; drawFreq(); });
     const entry = await afdbEntry(P.acc);
     if (!entry) { S.state = 'none'; msg(`No AlphaFold DB model for ${esc(P.acc)} (the database has none for proteins longer than 2,700 residues).`); $('#struct-badge').textContent = ''; return; }
-    const cLen = B.qLen || P.clen; S.uniSeq = entry.seq || '';
-    if (qSeq && entry.seq && qSeq.length === cLen) {
-      if (qSeq === entry.seq) { S.map = null; S.mapOK = true; S.mapNote = 'sequence 1:1'; }
-      else { const mi = CLIPResolver.alignMap(qSeq, entry.seq); S.map = mi.map; S.mapOK = mi.covered > 0; S.mapNote = `remapped (${mi.method}, ${Math.round(100 * mi.covered / qSeq.length)}% matched)`; }
-    } else if (entry.seq && entry.seq.length === cLen) { S.map = null; S.mapOK = true; S.mapNote = 'same length'; }
-    else { S.map = null; S.mapOK = false; S.mapNote = `The predicted construct (${fmtInt(cLen)} aa) differs from the model (${fmtInt(entry.seq.length)} aa), so clusters are not placed on it.`; }
-    $('#struct-badge').innerHTML = `AlphaFold DB <a href="https://alphafold.ebi.ac.uk/entry/${esc(P.acc)}" target="_blank" rel="noopener">${esc(P.acc)}</a> · ${esc(S.mapOK ? S.mapNote : 'not mapped')}`;
+    S.uniSeq = S.entrySeq = entry.seq || ''; mapStruct();
     try { S.text = await (await fetch(entry.cifUrl)).text(); } catch (e) { S.state = 'none'; msg('The AlphaFold DB model could not be downloaded.'); return; }
     S.len = entry.seq.length || P.clen; S.plddt = parseBfactorsPerResidue(S.text, 'cif'); S.state = 'ready';
     if (!S.mapOK) { V.mode = 'plddt'; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === 'plddt')); }
@@ -1440,9 +1530,7 @@ async function viewSpecies(spId) {
   document.title = `${sp.reg.label} · LIVIA cLIP Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / ${esc(sp.reg.label)}</div>
     <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
-    <div class="kpirow"><div class="kpi"><b>${fmtInt(c.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(c.predictions)}</b><span>models</span></div>
-      <div class="kpi"><b>${fmtInt(c.pairs)}</b><span>pairs</span></div><div class="kpi f10"><b>${fmtInt(c.pairsFpr10)}</b><span>pairs past 10% FPR</span></div>
-      <div class="kpi f5"><b>${fmtInt(c.pairsFpr5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b>${fmtInt(c.pairsFpr1)}</b><span>past 1% FPR</span></div></div>
+    ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
     <div class="card"><h2>Screens</h2><div class="screens">${sp.manifest.datasets.map((d, di) => `<div class="screen"><span class="src" style="--c:${sp.dsColor[di]}">${esc(d.short)}</span>
       <div><a href="#/datasets/${d.id}"><b>${esc(d.title)}</b></a><div class="muted">${fmtInt(d.counts.proteins)} proteins · ${fmtInt(d.counts.pairs)} pairs · ${fmtInt(d.counts.predictions)} predictions</div>
@@ -1471,6 +1559,7 @@ async function route() {
     if (!parts.length) await viewHome();
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
+    else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
     else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);

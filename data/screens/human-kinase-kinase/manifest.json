@@ -1,0 +1,46 @@
+{
+ "format": "livia-atlas/1",
+ "id": "human-kinase-kinase",
+ "title": "Human kinase\u2013kinase screen",
+ "short": "Kinase\u2013kinase",
+ "speciesId": "human",
+ "species": {
+  "name": "Homo sapiens",
+  "taxon": 9606
+ },
+ "ids": "UniProtKB entry name",
+ "source": {
+  "citation": "Kim AR, Perrimon N (2026). LIVIA cLIP Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. Zenodo.",
+  "doi": "10.5281/zenodo.22964479",
+  "url": "https://doi.org/10.5281/zenodo.22964479",
+  "method": "AlphaFold-Multimer, 5 ranked models per pair"
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  }
+ },
+ "counts": {
+  "proteins": 243,
+  "pairs": 4057,
+  "predictions": 20285,
+  "pairsFpr10": 1233,
+  "pairsFpr5": 566,
+  "pairsFpr1": 69
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

@@ -1,0 +1,46 @@
+{
+ "format": "livia-atlas/1",
+ "id": "worm-kinase-kinase",
+ "title": "C. elegans kinase\u2013kinase screen",
+ "short": "Kinase\u2013kinase",
+ "speciesId": "worm",
+ "species": {
+  "name": "Caenorhabditis elegans",
+  "taxon": 6239
+ },
+ "ids": "UniProtKB entry name",
+ "source": {
+  "citation": "Kim AR, Perrimon N (2026). LIVIA cLIP Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. Zenodo.",
+  "doi": "10.5281/zenodo.22964479",
+  "url": "https://doi.org/10.5281/zenodo.22964479",
+  "method": "AlphaFold-Multimer, 5 ranked models per pair"
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  }
+ },
+ "counts": {
+  "proteins": 187,
+  "pairs": 2309,
+  "predictions": 11545,
+  "pairsFpr10": 557,
+  "pairsFpr5": 251,
+  "pairsFpr1": 18
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

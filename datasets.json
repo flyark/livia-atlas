@@ -7,7 +7,8 @@
    "base": "data/species/human/",
    "datasets": [
     "human-predictomes",
-    "human-kinase-tf"
+    "human-kinase-tf",
+    "human-kinase-kinase"
    ]
   },
   {
@@ -17,6 +18,33 @@
    "base": "data/species/fly/",
    "datasets": [
     "flypredictome"
+   ]
+  },
+  {
+   "id": "zebrafish",
+   "label": "Zebrafish",
+   "name": "Danio rerio",
+   "base": "data/species/zebrafish/",
+   "datasets": [
+    "zebrafish-kinase-kinase"
+   ]
+  },
+  {
+   "id": "yeast",
+   "label": "Yeast",
+   "name": "Saccharomyces cerevisiae",
+   "base": "data/species/yeast/",
+   "datasets": [
+    "yeast-kinase-kinase"
+   ]
+  },
+  {
+   "id": "worm",
+   "label": "C. elegans",
+   "name": "Caenorhabditis elegans",
+   "base": "data/species/worm/",
+   "datasets": [
+    "worm-kinase-kinase"
    ]
   }
  ],
@@ -56,12 +84,132 @@
    "source": "Kim et al. 2026 · bioRxiv",
    "paper": "https://doi.org/10.64898/2026.04.14.718529",
    "zip": {
-    "url": "https://zenodo.org/api/records/22964480/files/livia-atlas-flypredictome.zip/content",
+    "url": "https://zenodo.org/api/records/22967610/files/livia-atlas-flypredictome.zip/content",
     "dev": "../zenodo/livia-atlas-flypredictome.zip",
     "offsets": "data/screens/flypredictome/offsets.json",
-    "record": "https://doi.org/10.5281/zenodo.22964480",
-    "doi": "10.5281/zenodo.22964480"
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
    }
+  },
+  {
+   "id": "human-kinase-kinase",
+   "species": "human",
+   "title": "Human kinase–kinase screen",
+   "short": "Kinase–kinase",
+   "color": "#6B5B95",
+   "base": "data/screens/human-kinase-kinase/",
+   "status": "live",
+   "source": "Kim & Perrimon 2026 · Zenodo",
+   "paper": "https://doi.org/10.5281/zenodo.22964479",
+   "zip": {
+    "url": "https://zenodo.org/api/records/22967610/files/livia-atlas-human-kinase-kinase.zip/content",
+    "dev": "../zenodo/livia-atlas-human-kinase-kinase.zip",
+    "offsets": "data/screens/human-kinase-kinase/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "zebrafish-kinase-kinase",
+   "species": "zebrafish",
+   "title": "Zebrafish kinase–kinase screen",
+   "short": "Kinase–kinase",
+   "color": "#6B5B95",
+   "base": "data/screens/zebrafish-kinase-kinase/",
+   "status": "live",
+   "source": "Kim & Perrimon 2026 · Zenodo",
+   "paper": "https://doi.org/10.5281/zenodo.22964479",
+   "zip": {
+    "url": "https://zenodo.org/api/records/22967610/files/livia-atlas-zebrafish-kinase-kinase.zip/content",
+    "dev": "../zenodo/livia-atlas-zebrafish-kinase-kinase.zip",
+    "offsets": "data/screens/zebrafish-kinase-kinase/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "yeast-kinase-kinase",
+   "species": "yeast",
+   "title": "Yeast kinase–kinase screen",
+   "short": "Kinase–kinase",
+   "color": "#6B5B95",
+   "base": "data/screens/yeast-kinase-kinase/",
+   "status": "live",
+   "source": "Kim & Perrimon 2026 · Zenodo",
+   "paper": "https://doi.org/10.5281/zenodo.22964479",
+   "zip": {
+    "url": "https://zenodo.org/api/records/22967610/files/livia-atlas-yeast-kinase-kinase.zip/content",
+    "dev": "../zenodo/livia-atlas-yeast-kinase-kinase.zip",
+    "offsets": "data/screens/yeast-kinase-kinase/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "worm-kinase-kinase",
+   "species": "worm",
+   "title": "C. elegans kinase–kinase screen",
+   "short": "Kinase–kinase",
+   "color": "#6B5B95",
+   "base": "data/screens/worm-kinase-kinase/",
+   "status": "live",
+   "source": "Kim & Perrimon 2026 · Zenodo",
+   "paper": "https://doi.org/10.5281/zenodo.22964479",
+   "zip": {
+    "url": "https://zenodo.org/api/records/22967610/files/livia-atlas-worm-kinase-kinase.zip/content",
+    "dev": "../zenodo/livia-atlas-worm-kinase-kinase.zip",
+    "offsets": "data/screens/worm-kinase-kinase/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  }
+ ],
+ "themes": [
+  {
+   "id": "kinase-kinase",
+   "title": "Kinase–kinase",
+   "color": "#6B5B95",
+   "about": "Kinases folded against kinases, in five species.",
+   "members": [
+    {
+     "species": "human",
+     "dataset": "human-kinase-kinase"
+    },
+    {
+     "species": "fly",
+     "dataset": "flypredictome",
+     "set": "kinase-kinase"
+    },
+    {
+     "species": "zebrafish",
+     "dataset": "zebrafish-kinase-kinase"
+    },
+    {
+     "species": "yeast",
+     "dataset": "yeast-kinase-kinase"
+    },
+    {
+     "species": "worm",
+     "dataset": "worm-kinase-kinase"
+    }
+   ]
+  },
+  {
+   "id": "kinase-tf",
+   "title": "Kinase–transcription factor",
+   "color": "#9A4A8F",
+   "about": "Kinases folded against transcription factors, in human and fly.",
+   "members": [
+    {
+     "species": "human",
+     "dataset": "human-kinase-tf"
+    },
+    {
+     "species": "fly",
+     "dataset": "flypredictome",
+     "set": "kinase-tf"
+    }
+   ]
   }
  ]
 }

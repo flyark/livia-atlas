@@ -1,0 +1,40 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "yeast",
+ "species": {
+  "name": "Saccharomyces cerevisiae",
+  "taxon": 559292
+ },
+ "datasets": [
+  {
+   "id": "yeast-kinase-kinase",
+   "short": "Kinase\u2013kinase",
+   "title": "Yeast kinase\u2013kinase screen",
+   "citation": "Kim AR, Perrimon N (2026). LIVIA cLIP Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. Zenodo.",
+   "url": "https://doi.org/10.5281/zenodo.22964479",
+   "counts": {
+    "proteins": 105,
+    "pairs": 1070,
+    "predictions": 5350,
+    "pairsFpr10": 186,
+    "pairsFpr5": 43,
+    "pairsFpr1": 5,
+    "runs": 1070
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 105,
+  "pairs": 1066,
+  "predictions": 5330,
+  "runs": 1070,
+  "pairsFpr10": 184,
+  "pairsFpr5": 42,
+  "pairsFpr1": 4,
+  "pairsInSeveral": 0
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}
