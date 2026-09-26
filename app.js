@@ -821,7 +821,7 @@ async function showcase() {
     at = (k + S.length) % S.length; const s = S[at], href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
     const paint = () => {
       $('#sc-gene').textContent = s.gene; $('#sc-gene').href = href; $('#sc-sp').textContent = s.spLabel;
-      $('#sc-note').innerHTML = `<span class="q">c</span>lustered <span class="q">L</span>ocal <span class="q">I</span>nteraction <span class="q">P</span>rofiler · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
+      $('#sc-note').innerHTML = `<span class="q">c</span>lustered <span class="q">L</span>ocal <span class="q">I</span>nteraction <span class="q">P</span>rofiler (<span class="q">cLIP</span>) · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
       $('#sc-cap').innerHTML = '<span class="q">cLIP</span> groups partners by the residues they contact: '   // the full name is on the line above
         + ['contacts per residue above,', 'one row per partner below'].map((t) => t.replace(/ /g, '&nbsp;')).join(' ');   // each legend phrase stays on one line
       $('#sc-open').textContent = `Open ${s.gene} →`; $('#sc-open').href = href;
