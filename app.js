@@ -927,7 +927,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925k'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925l'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -1713,9 +1713,15 @@ function trackView() {
   if (window.goatcounter && window.goatcounter.count) count(); else window.addEventListener('load', () => setTimeout(count, 0), { once: true });
 }
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
+let LAST_PATH = null, holdTimer = null;
 async function route() {
   const gen = ++ROUTE, { parts, q } = hashPath(), setId = q.get('set') || '', here = location.hash;
-  window.scrollTo(0, 0); hideTip(); window.onresize = null;
+  // The same page with another isoform or scope (?iso=, ?set=) keeps the reader where they were: the page holds its height
+  // while it redraws, then returns to the same place. Any other page starts at the top.
+  const path = parts.join('/'), stay = path === LAST_PATH, keepY = window.scrollY; LAST_PATH = path;
+  clearTimeout(holdTimer);
+  if (stay) app.style.minHeight = `${app.offsetHeight}px`; else { app.style.minHeight = ''; window.scrollTo(0, 0); }
+  hideTip(); window.onresize = null;
   document.title = 'LIVIA Atlas';
   stopClip();
   try {
@@ -1735,6 +1741,7 @@ async function route() {
     else app.innerHTML = `<div class="empty">Nothing at “${esc(parts.join('/'))}”. <a href="#/">Go to the atlas home</a></div>`;
   } catch (e) { if (!stale(gen)) app.innerHTML = `<div class="empty">${esc(e.message || e)}</div>`; console.error(e); }
   if (stale(gen)) return;
+  if (stay) { window.scrollTo({ top: keepY, behavior: 'instant' }); holdTimer = setTimeout(() => { app.style.minHeight = ''; }, 4000); }
   if (location.hash === here) trackView();   // not for a view that redirected
   if (!$('#top-search').firstChild) mountSearch($('#top-search'));
 }
