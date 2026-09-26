@@ -1062,7 +1062,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
       <p class="muted" style="margin:2px 0 6px">${esc(P.gene)} as predicted alone in the AlphaFold Database, residues colored by the cluster that consensus-contacts them · click clusters to isolate.
         <b>C<i>n</i> (N)</b>: N = predictions (AlphaFold ranks) in that cluster.</p>
-      <div class="controls"><span>Highlight residues contacted by ≥</span><select id="commonality">${[0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}">${Math.round(v * 100)}%</option>`).join('')}</select>
+      <div class="controls"><span>Highlight residues contacted by ≥</span><select id="commonality" title="Fraction of a cluster's members (predictions) that must contact a residue for it to take the cluster's color">${[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}"${v === 0.5 ? ' selected' : ''}>${Math.round(v * 100)}%</option>`).join('')}<option value="custom">custom…</option></select>
+        <span id="commonality-custom" hidden><input type="number" id="commonality-pct" min="1" max="100" step="1" style="width:64px" title="Any value from 1 to 100%; applied on Enter or when the field loses focus"> %</span>
         <span>of a cluster's members · color only clusters with ≥</span><input type="number" id="min-cluster" min="1" value="5" style="width:60px"><span>predictions</span></div>
       ${chips}
       <div class="controls"><span>Color by</span><div class="seg" id="cmode"><button data-m="cluster" class="on">cluster</button><button data-m="plddt">pLDDT</button><button data-m="am" id="cm-am" hidden>AlphaMissense</button></div>
@@ -1482,7 +1483,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   $('#cmode').onclick = (e) => { const b = e.target.closest('button'); if (!b) return; V.mode = b.dataset.m; V.auto = false;
     app.querySelectorAll('#cmode button').forEach((x) => x.classList.toggle('on', x === b)); $('#am-cut-wrap').hidden = V.mode !== 'am'; recolor3D(); };
-  $('#commonality').onchange = (e) => { V.thr = +e.target.value; recolor3D(); };
+  $('#commonality').onchange = (e) => {   // a preset (10–90%), or "custom…" for any value from 1 to 100%
+    if (e.target.value === 'custom') { $('#commonality-custom').hidden = false; $('#commonality-pct').value = +(V.thr * 100).toFixed(1); $('#commonality-pct').focus(); $('#commonality-pct').select(); return; }   // selected: typing replaces the value
+    $('#commonality-custom').hidden = true; V.thr = +e.target.value; recolor3D(); };
+  $('#commonality-pct').onchange = (e) => { const pct = Math.min(100, Math.max(1, parseFloat(e.target.value) || 50)); e.target.value = pct; V.thr = pct / 100; recolor3D(); };
   $('#min-cluster').onchange = (e) => { V.minC = Math.max(1, +e.target.value || 1); recolor3D(); };
   $('#am-cutoff').onchange = (e) => { V.amCut = +e.target.value; recolor3D(); };
   { const io3 = new IntersectionObserver((ents) => { if (ents.some((x) => x.isIntersecting)) { io3.disconnect(); show3D(); } }, { rootMargin: '300px' }); io3.observe($('#c-3d')); }
