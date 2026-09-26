@@ -692,7 +692,7 @@ async function viewHome() {
   const tot = (k) => all.reduce((s, m) => s + (m.counts[k] || 0), 0), nScreens = all.reduce((s, m) => s + (m.datasets || []).length, 0);
   app.innerHTML = `
     <section class="hero hero-center">
-      <h1>Every predicted <em>partner</em>, down to the <em>residue</em>.</h1>
+      <h1><span class="ini">c</span>lustered <span class="ini">L</span>ocal <span class="ini">I</span>nteraction <span class="ini">P</span>rofiler</h1>
       <p class="lede">Search AlphaFold-Multimer interaction screens by protein. Every prediction is scored with iLIS and its interface is resolved
         to residues: which partners a protein is predicted to bind, how confidently, and where.</p>
       <div id="home-search" class="hero-search"></div>
@@ -702,9 +702,6 @@ async function viewHome() {
         + (TRY[x.id] || []).map((g) => `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`).join('')).join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
     </section>
-    ${(REG.themes || []).length ? '<h2 class="section-h">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
-    <h2 class="section-h">Datasets</h2>
-    <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>
     <h2 class="section-h">How it works</h2>
     <div class="steps">
       <div class="step"><h4>1 · Predict</h4><p>A screen of protein pairs folded with AlphaFold-Multimer (or any predictor that reports PAE).</p></div>
@@ -712,7 +709,7 @@ async function viewHome() {
       <div class="step"><h4>3 · Resolve</h4><p>The contact residues of every interface are kept, so partners can be compared by where they bind and clustered by their interaction fingerprints with LIVIA cLIP.</p></div>
     </div>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
-  showcase(); fillDsStats(); fillThemes();
+  showcase();
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1500));
   idle(() => { if (!stale(gen)) for (const x of reg.species || []) species(x.id).catch(() => {}); }, { timeout: 4000 });   // search is instant by the first keystroke
 }
@@ -745,40 +742,41 @@ async function fillDsStats() {
   }
 }
 // The home banner: example proteins from every species, precomputed by LIVIA cLIP (atlas build/make_showcase.js), one
-// every 7 s, alternating the contact residue frequency with the clustered fingerprints. Hover or focus pauses it; with
+// every 7 s, each with its contact residue frequency over its clustered fingerprints. Hover or focus pauses it; with
 // reduced motion it only moves when asked.
 async function showcase() {
   const gen = ROUTE, box = $('#showcase'); if (!box) return;
   let data; try { data = await getJSON('data/showcase.json'); } catch (e) { box.remove(); return; }
   const S = (data && data.slides) || []; if (stale(gen) || !S.length) { if (!S.length) box.remove(); return; }
   box.innerHTML = `<div class="sc-top"><div class="sc-name"><a id="sc-gene"></a><span class="sc-sp" id="sc-sp"></span></div><span id="sc-note"></span></div>
-    <div class="sc-stage"><canvas id="sc-cv" height="150"></canvas></div>
+    <div class="sc-stage"><canvas id="sc-cv"></canvas></div>
     <div class="sc-foot"><span id="sc-cap"></span><a id="sc-open"></a></div>
     <div class="sc-dots">${S.map((s, k) => `<button type="button" data-k="${k}" aria-label="${esc(s.gene)}, ${esc(s.spLabel)}"></button>`).join('')}</div>`;
   const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   let at = 0, timer = null, paused = false;
-  const draw = (s, kind) => {
-    const cv = $('#sc-cv'), W = cv.clientWidth, H = 150, g = canvasCtx(cv, W, H), L = s.L, base = H - 18, x = (r) => (r - 1) / L * W, bw = Math.max(1, W / L);
-    g.fillStyle = '#F4F7FA'; g.fillRect(0, 0, W, base);
-    if (kind === 'freq') {   // contact residue frequency, each residue in its most frequent cluster's colour
-      const max = Math.max(1, ...s.tot);
-      for (let r = 1; r <= L; r++) { const n = s.tot[r - 1]; if (!n) continue; const h = n / max * (base - 6); g.fillStyle = clusterColor(s.dom[r - 1] || 1, s.k); g.fillRect(x(r), base - h, bw, h); }
-    } else {   // one row per prediction in dendrogram order, a mark per contact residue, in its cluster's colour; the strip on the left is the cluster
-      const n = s.fp.length, rh = (base - 4) / n, pad = 8;
-      s.fp.forEach(([c, ...res], i) => { const y = 2 + i * rh, col = clusterColor(c, s.k); g.fillStyle = col; g.fillRect(0, y, 5, Math.max(1, rh));
-        for (const r of res) g.fillRect(pad + (r - 1) / L * (W - pad), y, Math.max(1, (W - pad) / L), Math.max(1, rh)); });
-    }
-    g.fillStyle = '#8593A5'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textAlign = 'left'; g.fillText('1', 0, H - 4); g.textAlign = 'right'; g.fillText(fmtInt(L), W, H - 4);
+  const draw = (s) => {   // as on a protein page: frequency (bars in their most frequent cluster's colour) over the fingerprint (contacts in navy, clusters in the strip), one residue axis
+    const cv = $('#sc-cv'), W = cv.clientWidth, FH = 78, GAP = 6, PH = 112, H = FH + GAP + PH + 16, g = canvasCtx(cv, W, H), L = s.L, X0 = 12, bw = (W - X0) / L, x = (r) => X0 + (r - 1) * bw;
+    const max = Math.max(1, ...s.tot);
+    for (let r = 1; r <= L; r++) { const n = s.tot[r - 1]; if (!n) continue; const h = n / max * (FH - 4); g.fillStyle = clusterColor(s.dom[r - 1] || 1, s.k); g.fillRect(x(r), FH - h, Math.max(1, bw), h); }
+    g.fillStyle = '#D5DDE6'; g.fillRect(X0, FH, W - X0, 1);
+    const n = s.fp.length, y0 = FH + GAP, rh = PH / n;
+    g.fillStyle = '#F7FBFF'; g.fillRect(X0, y0, W - X0, PH);
+    s.fp.forEach(([c, ...res], i) => { const y = y0 + i * rh, hh = Math.max(1, rh);
+      g.fillStyle = clusterColor(c, s.k); g.fillRect(0, y, X0 - 4, hh);
+      g.fillStyle = '#08306B'; for (const r of res) g.fillRect(x(r), y, Math.max(1, bw), hh); });
+    g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.strokeRect(X0 + 0.5, y0 + 0.5, W - X0 - 1, PH - 1);
+    g.fillStyle = '#8593A5'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textBaseline = 'alphabetic';
+    g.textAlign = 'left'; g.fillText('1', X0, H - 3); g.textAlign = 'right'; g.fillText(fmtInt(L), W, H - 3);
   };
   const show = (k, user) => {
     if (stale(gen) || !box.isConnected) { clearInterval(timer); return; }
-    at = (k + S.length) % S.length; const s = S[at], kind = at % 2 ? 'fp' : 'freq', href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
+    at = (k + S.length) % S.length; const s = S[at], href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
     const paint = () => {
       $('#sc-gene').textContent = s.gene; $('#sc-gene').href = href; $('#sc-sp').textContent = s.spLabel;
       $('#sc-note').textContent = `${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
-      $('#sc-cap').textContent = kind === 'freq' ? 'Contact residue frequency, colored by cluster' : 'Interaction fingerprints, one row per prediction, clustered';
+      $('#sc-cap').textContent = 'Contact residue frequency (top) and clustered interaction fingerprints (bottom), colored by cluster';
       $('#sc-open').textContent = `Open ${s.gene} →`; $('#sc-open').href = href;
-      draw(s, kind); box.querySelectorAll('.sc-dots button').forEach((b, i) => b.setAttribute('aria-current', i === at ? 'true' : 'false'));
+      draw(s); box.querySelectorAll('.sc-dots button').forEach((b, i) => b.setAttribute('aria-current', i === at ? 'true' : 'false'));
       box.classList.remove('sc-out');
     };
     if (reduce || !user && at === 0 && !box.dataset.shown) { paint(); box.dataset.shown = '1'; return; }
@@ -788,7 +786,7 @@ async function showcase() {
   box.querySelectorAll('.sc-dots button').forEach((b) => b.onclick = () => { show(+b.dataset.k, true); run(); });
   box.addEventListener('mouseenter', () => { paused = true; }); box.addEventListener('mouseleave', () => { paused = false; });
   box.addEventListener('focusin', () => { paused = true; }); box.addEventListener('focusout', () => { paused = false; });
-  window.onresize = () => { if (box.isConnected) draw(S[at], at % 2 ? 'fp' : 'freq'); };
+  window.onresize = () => { if (box.isConnected) draw(S[at]); };
   show(0); run();
 }
 
@@ -796,9 +794,10 @@ async function viewDatasets() {
   const gen = ROUTE, reg = await registry();
   if (stale(gen)) return;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Datasets</div>
-    <h2 class="section-h" style="margin-top:4px">Datasets</h2>
+    ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
+    <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
     <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>`;
-  fillDsStats();
+  fillDsStats(); fillThemes();
 }
 
 function viewAbout() {
@@ -928,7 +927,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925j'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925k'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
