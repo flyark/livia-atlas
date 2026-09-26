@@ -225,11 +225,12 @@ function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: li
       const bytes = await res.arrayBuffer(), zip = await JSZip.loadAsync(bytes), files = Object.keys(zip.files);
       const csvName = files.find((f) => /\.csv$/i.test(f) && !/identity[_-]?map/i.test(f)), faName = files.find((f) => /\.(fa|fasta)$/i.test(f));
       const conName = files.find((f) => /(^|\/)constructs\.tsv$/.test(f));
-      return { rel, bytes, csvName, ...(await csvRows(zip, csvName)),
-        seqs: parseFasta(faName ? await zip.file(faName).async('string') : ''), cons: conName ? parseCons(await zip.file(conName).async('string')) : null };
+      return { rel, bytes, csvName, faName, ...(await csvRows(zip, csvName)),
+        seqs: parseFasta(faName ? await zip.file(faName).async('string') : ''), cons: conName ? parseCons(await zip.file(conName).async('string')) : null,
+        isoforms: files.includes('isoforms.json') ? JSON.parse(await zip.file('isoforms.json').async('string')) : null };   // v1.2: its other isoforms are files of their own
     })();
     ds.raw.set(rel, job); job.catch(() => ds.raw.delete(rel));
-    while (ds.raw.size > 8) ds.raw.delete(ds.raw.keys().next().value);   // the most recent bundles only
+    while (ds.raw.size > 16) ds.raw.delete(ds.raw.keys().next().value);   // the most recent bundles only
   } else { const job = ds.raw.get(rel); ds.raw.delete(rel); ds.raw.set(rel, job); }
   return ds.raw.get(rel);
 }
@@ -241,14 +242,45 @@ async function csvRows(zip, csvName) {   // a bundle's lis.py rows; merged() rea
 // round in one, keeps every model; each keeps its screen and chain order (its "run") and rank. A gene-keyed bundle
 // (FlyPredictome) holds every construct of the gene: its construct table says which construct belongs to which gene,
 // and each prediction also keeps its screen category (set) and prediction run (batch).
-function merged(sp, P, scope = '') {   // scope: one screen of the species (its dataset id) or one thematic set
-  const ck = P.key + (scope ? '?' + scope : ''), onlyDi = scope ? sp.dsIds.indexOf(scope) : -1, setId = onlyDi >= 0 ? '' : scope;
+function merged(sp, P, scope = '', whole = false) {   // scope: one screen of the species (its dataset id) or one thematic set; whole: every isoform file
+  const ck = P.key + (scope ? '?' + scope : '') + (whole ? '#whole' : ''), onlyDi = scope ? sp.dsIds.indexOf(scope) : -1, setId = onlyDi >= 0 ? '' : scope;
   if (!sp.cache.has(ck)) {
     const job = (async () => {
       const parts = (await Promise.all(P.occ.filter((o) => onlyDi < 0 || o.di === onlyDi).map(async (o) => {   // a screen that cannot be reached is left out
         try { const ds = await dataset(sp.dsIds[o.di]); return { di: o.di, name: o.name, ds, raw: await bundleRaw(ds, o.name), TS: await setsOf(ds) }; } catch (e) { return null; }
       }))).filter(Boolean);
       if (!parts.length) throw new Error(`No interaction data for ${P.gene}.`);
+      const split = parts.find((x) => x.raw.isoforms) || null;   // atlas v1.2: this gene's other isoforms are files of their own
+      if (split && whole) parts.push(...await Promise.all(split.raw.isoforms.choices.map(async (c) => ({ ...split, name: c.file, raw: await bundleRaw(split.ds, c.file) }))));
+      const all = await assemble(sp, P, parts, scope, onlyDi, setId);
+      if (split && !whole) isoformFiles(all, split, sp, P, scope, onlyDi, setId);
+      if (scope && !all.preds.length && !(all.choices || []).length) throw new Error(`${P.gene} has no predictions in this ${onlyDi >= 0 ? 'screen' : 'set'}.`);
+      return all;
+    })();
+    sp.cache.set(ck, job); job.catch(() => sp.cache.delete(ck));
+    while (sp.cache.size > 6) sp.cache.delete(sp.cache.keys().next().value);   // the proteins read most recently
+  } else { const job = sp.cache.get(ck); sp.cache.delete(ck); sp.cache.set(ck, job); }
+  return sp.cache.get(ck);
+}
+// A split gene's bundle as one file again (the download): its rows from every isoform file, its constructs and sequences.
+async function wholeBundle(ds, raw) {
+  const subs = await Promise.all(raw.isoforms.choices.map((c) => bundleRaw(ds, c.file)));
+  const texts = await Promise.all([raw, ...subs].map(async (r) => (await JSZip.loadAsync(r.bytes)).file(r.csvName).async('string')));
+  const main = await JSZip.loadAsync(raw.bytes), zip = new JSZip(), nl = texts[0].indexOf('\n') + 1;
+  zip.file(raw.csvName, texts[0].slice(0, nl) + texts.map((t) => t.slice(t.indexOf('\n') + 1)).join(''));
+  for (const f of ['constructs.tsv', raw.faName].filter(Boolean)) zip.file(f, await main.file(f).async('string'));
+  return zip.generateAsync({ type: 'blob', compression: 'DEFLATE', compressionOptions: { level: 6 } });
+}
+// Clustering choices in page order: the reference first when it holds at least 5% of the models (the page opens on it),
+// then the others by models, ties by name; a nearly empty reference goes by its count like the rest.
+function orderChoices(choices) {
+  const total = choices.reduce((a, c) => a + c.n, 0), ref = choices.find((c) => c.id === '');
+  choices.sort((x, y) => y.n - x.n || (x.id < y.id ? -1 : x.id > y.id ? 1 : 0));
+  if (ref && ref.n >= 0.05 * total) { choices.splice(choices.indexOf(ref), 1); choices.unshift(ref); }
+  return choices;
+}
+// The predictions of the given bundles merged into one view of the protein: its partners, its clustering choices, cLIP rows.
+async function assemble(sp, P, parts, scope, onlyDi, setId) {
       const preds = [], runs = new Map(), seqs = new Map(), cons = new Map(), sets = [], TS = (parts.find((x) => x.TS) || {}).TS || null;
       for (const part of parts) {
         if (!part.raw.rows) Object.assign(part.raw, await csvRows(await JSZip.loadAsync(part.raw.bytes), part.raw.csvName));   // read again: an earlier view let them go
@@ -283,7 +315,7 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
         const byP = new Map();
         for (const p of list) { if (!byP.has(p.partner)) byP.set(p.partner, []); byP.get(p.partner).push(p); }
         return [...byP].map(([key, ps]) => {
-          const ids = [...new Set(ps.map((p) => p.run))].sort((x, y) => runs.get(x).di - runs.get(y).di || (runs.get(y).qi ? 1 : 0) - (runs.get(x).qi ? 1 : 0));
+          const ids = [...new Set(ps.map((p) => p.run))].sort((x, y) => runs.get(x).di - runs.get(y).di || (runs.get(y).qi ? 1 : 0) - (runs.get(x).qi ? 1 : 0) || (x < y ? -1 : x > y ? 1 : 0));   // the same order however the rows were packed
           ps.sort((x, y) => ids.indexOf(x.run) - ids.indexOf(y.run) || x.rank - y.rank);
           const il = ps.map((p) => p.iLIS || 0), ip = ps.map((p) => p.ipTM || 0);
           return { id: key, row: sp.byKey.get(key) || null, preds: ps, runs: ids, src: ps.reduce((m, p) => m | (1 << p.di), 0), best: Math.max(...il), avg: mean(il),
@@ -313,7 +345,7 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
         for (const p of preds) { if (onRef(p)) { refN++; continue; } const c = cons.get(p.qc); if (c && c.kind !== 'mutant' && c.kind !== 'variant') own.set(p.qc, (own.get(p.qc) || 0) + 1); }
         if (refN) choices.push({ id: '', label: `${P.gene}, its reference (${fmtInt(R0)} aa)`, n: refN, len: R0 });
         for (const [name, n] of own) { const c = cons.get(name); choices.push({ id: name, label: /\(\d/.test(c.label) ? c.label : `${c.label} (${fmtInt(c.len)} aa)`, n, len: c.len }); }
-        choices.sort((x, y) => y.n - x.n || (x.id ? 1 : -1));
+        orderChoices(choices);
       }
       const toRef = (c, r) => { if (c.exact && c.off != null) return r + c.off; if (c.seg) for (const [a, b, n] of c.seg) if (r >= a && r < a + n) return b + r - a; return null; };
       const onRefRanges = (v, c) => rangesOf([...new Set(expand(v).map((r) => toRef(c, r)).filter((x) => x != null))].sort((x, y) => x - y));
@@ -349,7 +381,6 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
         return { choice, rows, qLen, qName, aside };
       };
       const C0 = clipFor(choices.length ? choices[0].id : '');
-      if (scope && !preds.length) throw new Error(`${P.gene} has no predictions in this ${onlyDi >= 0 ? 'screen' : 'set'}.`);
       const all = { parts, preds, partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside, iso: null };
       // One choice's predictions only (the reference with everything placed on it, or one other construct): a gene whose
       // isoforms were folded separately is read one isoform at a time, every card on the same predictions.
@@ -365,11 +396,26 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
         return views.get(id);
       };
       return all;
-    })();
-    sp.cache.set(ck, job); job.catch(() => sp.cache.delete(ck));
-    while (sp.cache.size > 6) sp.cache.delete(sp.cache.keys().next().value);   // the proteins read most recently
-  } else { const job = sp.cache.get(ck); sp.cache.delete(ck); sp.cache.set(ck, job); }
-  return sp.cache.get(ck);
+}
+// A gene split into isoform files (v1.2): the reference view comes from its own file; the other choices are listed from
+// the file's isoforms.json (models in scope, for the switch and the Isoforms card) and each is read when it is chosen.
+function isoformFiles(all, split, sp, P, scope, onlyDi, setId) {
+  const S = split.raw.isoforms, ref = (all.choices || []).find((c) => c.id === '');
+  const scoped = (t) => (setId ? (t.bySet || {})[setId] || { models: 0, partners: 0, p10: 0, p5: 0, p1: 0, top: [] } : t);   // a set-scoped page counts that set only
+  const others = S.choices.filter((c) => scoped(c).models > 0).map((c) => ({ id: c.id, label: /\(\d/.test(c.label) ? c.label : `${c.label} (${fmtInt(c.len)} aa)`, n: scoped(c).models, len: c.len, file: c.file, stats: scoped(c) }));
+  all.choices = orderChoices([...(ref ? [ref] : []), ...others]);
+  all.split = { summary: S, part: split, others, allStats: scoped(S.all) };
+  const views = new Map();
+  all.load = (id) => {
+    if (!id) return Promise.resolve(all);
+    if (!views.has(id)) {
+      const c = S.choices.find((x) => x.id === id); if (!c) return Promise.reject(new Error(`No isoform “${id}”.`));
+      views.set(id, (async () => { const raw = await bundleRaw(split.ds, c.file), v = await assemble(sp, P, [{ ...split, name: c.file, raw }], scope, onlyDi, setId);
+        return Object.assign(v, { iso: id, choices: all.choices, split: all.split }); })().catch((e) => { views.delete(id); throw e; }));
+    }
+    return views.get(id);
+  };
+  all.only = (id) => (id ? null : all);
 }
 const runLabel = (sp, B, rid, P) => { const ru = B.runs.get(rid); if (!ru) return ''; if (ru.label) return ru.label;
   const O = sp.byKey.get(ru.key), og = O ? O.gene : ru.key;
@@ -927,7 +973,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925m'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925o'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -1043,7 +1089,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   { const dm = $('.dmenu'), shut = (e) => { if (!dm || !dm.isConnected) { document.removeEventListener('click', shut); return; } if (dm.open && !dm.contains(e.target)) dm.open = false; }; document.addEventListener('click', shut); }
   app.querySelectorAll('[data-dl]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it, save it
     e.preventDefault(); const o = occ[+a.dataset.dl];
-    try { const raw = await bundleRaw(o.ds, o.name), u = URL.createObjectURL(new Blob([raw.bytes], { type: 'application/zip' }));
+    try { const raw = await bundleRaw(o.ds, o.name), u = URL.createObjectURL(raw.isoforms ? await wholeBundle(o.ds, raw) : new Blob([raw.bytes], { type: 'application/zip' }));
       const d = document.createElement('a'); d.href = u; d.download = `${o.name}.zip`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 5000); }
     catch (err) { a.textContent = 'Not available'; } });
 
@@ -1060,12 +1106,17 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (gone()) return;
   // Isoforms folded separately (a construct too unlike the reference to be drawn on it): the page shows one at a time,
   // every card on its predictions; the "Isoform" row switches, the Isoforms card compares them. BA keeps them all.
-  const BA = B, ISO = BA.choices && BA.choices.length > 1 ? BA.choices.find((c) => c.id === (iso === 'reference' ? '' : iso)) || BA.choices[0] : null;
+  const BA = B, pick = BA.choices && (BA.choices.length > 1 || (BA.split && BA.choices[0] && BA.choices[0].id));   // a split gene in a set with isoform models only opens on one
+  const ISO = pick ? BA.choices.find((c) => c.id === (iso === 'reference' ? '' : iso)) || BA.choices[0] : null;
   const WORD = ISO && BA.choices.every((c) => !c.id || (BA.cons.get(c.id) || {}).kind === 'isoform') ? 'Isoform' : 'Construct';
   const isoName = (c) => (c.id ? String((BA.cons.get(c.id) || {}).label || c.id).replace(P.gene + ' ', '').replace(/ \(([\d,]+) aa\)$/, ' · $1 aa') : `reference · ${fmtInt(c.len)} aa`);
   const isoHref = (c) => `#/${sp.id}/${P.key}?${SET ? `set=${encodeURIComponent(SET.id)}&` : ''}iso=${c.id ? encodeURIComponent(c.id) : 'reference'}`;
   if (ISO) {
-    B = BA.only(ISO.id);
+    if (BA.split && ISO.id) {   // a split gene (v1.2): this isoform's predictions are in a file of their own, read now
+      $('#clip-sub').textContent = 'Loading this isoform…';
+      try { B = await BA.load(ISO.id); } catch (e) { if (!gone()) $('#clip-sub').textContent = e.message; return; }
+      if (gone()) return;
+    } else B = BA.only(ISO.id);
     const row = $('#isorow'); row.hidden = false;
     row.innerHTML = `<span class="lbl">${WORD}</span>${BA.choices.map((c) => `<a class="src scope-chip${c === ISO ? ' on' : ''}" style="--c:#1A5276" href="${isoHref(c)}"
       title="${esc(c.label)}: ${fmtInt(c.n)} models">${esc(isoName(c))} <span class="n">${fmtInt(c.n)}</span></a>`).join('')}`;
@@ -1073,12 +1124,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   {
     const n = new Map(); for (const p of B0.preds) { const d = sp.dsIds[p.di]; n.set(d, (n.get(d) || 0) + 1); for (const t of p.tags || []) n.set(t, (n.get(t) || 0) + 1); }
+    let total = B0.preds.length;
+    if (B0.split) for (const c of B0.split.summary.choices) {   // the isoform files, counted from the gene's summary
+      const d = sp.dsIds[B0.split.part.di]; n.set(d, (n.get(d) || 0) + c.models); total += c.models;
+      for (const [t, k] of Object.entries(c.sets || {})) n.set(t, (n.get(t) || 0) + k); }
     const screens = occ.length > 1 ? occ.map((o) => ({ id: o.ds.id, short: o.ds.reg.short, color: o.ds.reg.color, title: o.ds.reg.title })) : [];
     const sets = TS0 ? TS0.list.filter((x) => n.get(x.id)).sort((x, y) => (x.type === 'screen' ? 0 : 1) - (y.type === 'screen' ? 0 : 1)) : [];
     const chip = (x) => `<a class="src scope-chip${SET && SET.id === x.id ? ' on' : ''}" style="--c:${x.color}" href="#/${sp.id}/${P.key}?set=${encodeURIComponent(x.id)}"
       title="${esc(x.title)}: ${fmtInt(n.get(x.id) || 0)} models">${esc(x.short)} <span class="n">${fmtInt(n.get(x.id) || 0)}</span></a>`;
     if (screens.length || sets.length) $('#scope').innerHTML = `<span class="lbl">In</span><a class="src scope-chip all${SET ? '' : ' on'}" href="#/${sp.id}/${P.key}"
-      title="every screen and set">All <span class="n">${fmtInt(B0.preds.length)}</span></a>${screens.map(chip).join('')}${screens.length && sets.length ? '<span class="sep"></span>' : ''}${sets.map(chip).join('')}`;
+      title="every screen and set">All <span class="n">${fmtInt(total)}</span></a>${screens.map(chip).join('')}${screens.length && sets.length ? '<span class="sep"></span>' : ''}${sets.map(chip).join('')}`;
   }
   if (SET) {
     const who = SET.source && SET.source.citation ? `${SET.source.citation.split(' ')[0]} et al. ${(SET.source.citation.match(/\((\d{4})\)/) || [])[1] || ''}` : '';
@@ -1087,7 +1142,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const about = SET.type === 'dataset' ? `#/datasets/${SET.id}` : `#/datasets/${TS0.ds.id}/${SET.id}`;
     const bar = $('#setbar'); bar.hidden = false;
     bar.innerHTML = `<span class="src" style="--c:${SET.color}">${esc(SET.short)}</span><span>Only ${esc(what)}${who ? ` (<a href="${esc(SET.source.url)}" target="_blank" rel="noopener">${esc(who)}</a>)` : ''}:
-      ${fmtInt(BA.preds.length)} of ${fmtInt(B0.preds.length)} models.</span><span><a href="#/${sp.id}/${P.key}">Show every prediction</a> · <a href="${about}">about this ${SET.type === 'dataset' ? 'screen' : 'set'}</a></span>`;
+      ${fmtInt(BA.preds.length + (BA.split ? BA.split.others.reduce((a, c) => a + c.n, 0) : 0))} of ${fmtInt(B0.preds.length + (B0.split ? B0.split.summary.choices.reduce((a, c) => a + c.models, 0) : 0))} models.</span><span><a href="#/${sp.id}/${P.key}">Show every prediction</a> · <a href="${about}">about this ${SET.type === 'dataset' ? 'screen' : 'set'}</a></span>`;
     document.title = `${P.gene} · ${SET.short} · LIVIA Atlas`;
   }
   if (SET || ISO) {   // the tiles count what the page shows
@@ -1144,7 +1199,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         for (const x of list) { const k = x.con ? x.con.kind : 'construct'; if (!byKind.has(k)) byKind.set(k, []); byKind.get(k).push(x); }
         return [...byKind].map(([k, xs]) => { const [one, many] = KIND[k] || ['construct', 'constructs'], ex = xs.slice(0, 3).map((x) => (x.con ? x.con.label : '')).filter(Boolean);
           return `${fmtInt(xs.length)} ${xs.length === 1 ? one : many}${ex.length ? ` (${ex.join(', ')}${xs.length > 3 ? ', …' : ''})` : ''}`; }).join(', '); };
-      const own = [...CQ.aside.entries()].filter(([k]) => pickable.has(k)).map(([, x]) => x), rest = [...CQ.aside.entries()].filter(([k]) => !pickable.has(k)).map(([, x]) => x);
+      const own = (BA.split ? BA.split.others.map((c) => ({ con: BA.cons.get(c.id) || { kind: 'isoform', label: c.label } }))
+        : [...CQ.aside.entries()].filter(([k]) => pickable.has(k)).map(([, x]) => x)).sort((x, y) => ((x.con || {}).label || '').localeCompare((y.con || {}).label || ''));
+      const rest = [...CQ.aside.entries()].filter(([k]) => !pickable.has(k)).map(([, x]) => x);
       const row = `the ${WORD} row at the top`;
       a.textContent = CQ.qName ? `Clustering uses ${(B.cons.get(CQ.qName) || {}).label || CQ.qName}, in its own numbering.`
           + (ISO ? ` Every card on this page shows its predictions; the ${P.gene} reference and the other ${WORD.toLowerCase()}s are in ${row}.` : '')
@@ -1160,10 +1217,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (ISO) {   // the isoforms side by side: what each was folded with and what binds it best
     const tally = (V) => { const ot = V.partners.filter((x) => x.id !== P.key), n = (c) => ot.filter((x) => x.best >= c).length;
       return { n: ot.length, p10: n(CUT[10]), p5: n(CUT[5]), p1: n(CUT[1]), top: [...ot].sort((x, y) => y.best - x.best).slice(0, 3) }; };
-    const all = tally(BA), card = $('#c-iso'); card.hidden = false;
+    const fromSummary = (t) => ({ n: t.partners, p10: t.p10, p5: t.p5, p1: t.p1, top: (t.top || []).map(([id, best]) => ({ id, best })) });
+    const all = BA.split ? fromSummary(BA.split.allStats) : tally(BA), card = $('#c-iso'); card.hidden = false;
     card.innerHTML = `<div class="card-head"><h2>${WORD}s</h2><span class="muted">each folded separately · open one to see it on this page</span></div>
       <div class="tbl-wrap"><table class="sets isotbl"><thead><tr><th>${WORD}</th><th class="n">Models</th><th class="n">Partners</th><th class="n">Past 10% FPR</th><th class="n">5%</th><th class="n">1%</th><th>Top partners (iLIS)</th></tr></thead><tbody>
-      ${BA.choices.map((c) => { const t = tally(BA.only(c.id));
+      ${BA.choices.map((c) => { const t = c.stats ? fromSummary(c.stats) : tally(BA.only(c.id));
         return `<tr class="${c === ISO ? 'on' : ''}"><td class="set-name"><a href="${isoHref(c)}">${esc(isoName(c))}</a>${c === ISO ? ' <span class="muted">· shown</span>' : ''}</td>
           <td class="n">${fmtInt(c.n)}</td><td class="n">${fmtInt(t.n)}</td><td class="n">${fmtInt(t.p10)}</td><td class="n">${fmtInt(t.p5)}</td><td class="n">${fmtInt(t.p1)}</td>
           <td class="iso-top">${t.top.map((x) => `<a href="#/${sp.id}/${x.id}${scopeQ}">${esc(gname(x.id))}</a> <span class="num">${x.best.toFixed(2)}</span>`).join(' · ')}</td></tr>`; }).join('')}
@@ -1669,7 +1727,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   const crumbs = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}${scopeQ}">${esc(P.gene)}</a> / ${esc(O.gene)}</div>`;
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
   let B;
-  try { B = await merged(sp, P, scope); } catch (e) { B = { partners: [] }; }
+  try { B = await merged(sp, P, scope, true); } catch (e) { B = { partners: [] }; }   // every model of the pair: all of a split gene's files
   if (stale(gen)) return;
   const part = B.partners.find((p) => p.id === O.key);
   if (!part) { app.innerHTML = crumbs + `<div class="empty">${esc(P.gene)} and ${esc(O.gene)} were not predicted together${scope ? ` in ${esc(label)}. <a href="#/${sp.id}/${P.key}/${O.key}">Every screen</a>` : ' in these screens'}.</div>`; return; }
