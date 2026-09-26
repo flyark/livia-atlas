@@ -1,5 +1,5 @@
 'use strict';
-/* LIVIA cLIP Atlas — search AlphaFold-predicted protein interactions by protein.
+/* LIVIA Atlas — search AlphaFold-predicted protein interactions by protein.
  * One page per protein per species, gathering its predictions from every screen of that species: each prediction
  * keeps its screen, chain order and rank. The page runs LIVIA cLIP on them (contact residue frequency, clustered
  * interaction fingerprint, cluster info, interaction residues, 3D structure, interaction scatter plot) and adds a
@@ -243,16 +243,19 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
           preds.push(p);
         }
       }
-      const byP = new Map();
-      for (const p of preds) { if (!byP.has(p.partner)) byP.set(p.partner, []); byP.get(p.partner).push(p); }
-      const partners = [...byP].map(([key, ps]) => {
-        const ids = [...new Set(ps.map((p) => p.run))].sort((x, y) => runs.get(x).di - runs.get(y).di || (runs.get(y).qi ? 1 : 0) - (runs.get(x).qi ? 1 : 0));
-        ps.sort((x, y) => ids.indexOf(x.run) - ids.indexOf(y.run) || x.rank - y.rank);
-        const il = ps.map((p) => p.iLIS || 0), ip = ps.map((p) => p.ipTM || 0);
-        return { id: key, row: sp.byKey.get(key) || null, preds: ps, runs: ids, src: ps.reduce((m, p) => m | (1 << p.di), 0), best: Math.max(...il), avg: mean(il),
-          ilisaBest: Math.max(...ps.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...ps.map((p) => p.qcLIR || 0)),
-          sets: [...new Set(ps.map((p) => p.set).filter(Boolean))] };
-      });
+      const aggregate = (list) => {   // predictions → one row per partner: its runs, its best and average scores
+        const byP = new Map();
+        for (const p of list) { if (!byP.has(p.partner)) byP.set(p.partner, []); byP.get(p.partner).push(p); }
+        return [...byP].map(([key, ps]) => {
+          const ids = [...new Set(ps.map((p) => p.run))].sort((x, y) => runs.get(x).di - runs.get(y).di || (runs.get(y).qi ? 1 : 0) - (runs.get(x).qi ? 1 : 0));
+          ps.sort((x, y) => ids.indexOf(x.run) - ids.indexOf(y.run) || x.rank - y.rank);
+          const il = ps.map((p) => p.iLIS || 0), ip = ps.map((p) => p.ipTM || 0);
+          return { id: key, row: sp.byKey.get(key) || null, preds: ps, runs: ids, src: ps.reduce((m, p) => m | (1 << p.di), 0), best: Math.max(...il), avg: mean(il),
+            ilisaBest: Math.max(...ps.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...ps.map((p) => p.qcLIR || 0)),
+            sets: [...new Set(ps.map((p) => p.set).filter(Boolean))] };
+        });
+      };
+      const partners = aggregate(preds);
       for (const pt of partners) for (const rid of pt.runs) { const ru = runs.get(rid); ru.twin = pt.runs.some((o) => o !== rid && runs.get(o).di === ru.di); }
       if (cons.size) for (const pt of partners) {   // a run of a gene-keyed screen: its category, and the constructs when they are not the genes themselves
         const og = (sp.byKey.get(pt.id) || {}).gene || pt.id, seen = new Map(), k = new Map();
@@ -312,7 +315,19 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
       for (const p of preds) if (!(p.iLIS >= CUT[10])) { delete p.row; delete p.hdr; }   // only rows past the lowest cutoff are ever clustered
       const C0 = clipFor(choices.length ? choices[0].id : '');
       if (scope && !preds.length) throw new Error(`${P.gene} has no predictions in this ${onlyDi >= 0 ? 'screen' : 'set'}.`);
-      return { parts, preds, partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside };
+      const all = { parts, preds, partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside, iso: null };
+      // One choice's predictions only (the reference with everything placed on it, or one other construct): a gene whose
+      // isoforms were folded separately is read one isoform at a time, every card on the same predictions.
+      const views = new Map(), others = new Set(choices.filter((c) => c.id).map((c) => c.id));
+      all.only = (id) => {
+        if (choices.length < 2) return all;
+        if (!views.has(id)) {
+          const ps = preds.filter((p) => (id ? p.qc === id : !others.has(p.qc))), C = clipFor(id);
+          views.set(id, { ...all, preds: ps, partners: aggregate(ps), C0: C, clipRows: C.rows, qLen: C.qLen, qName: C.qName, aside: C.aside, iso: id });
+        }
+        return views.get(id);
+      };
+      return all;
     })();
     sp.cache.set(ck, job); job.catch(() => sp.cache.delete(ck));
   }
@@ -724,7 +739,7 @@ async function viewDatasets() {
 function viewAbout() {
   app.innerHTML = `<div class="reading"><div class="crumbs"><a href="#/">Atlas</a> / About</div>
     <div class="card" style="margin-top:6px"><h2>What this is</h2>
-      <p style="max-width:78ch">LIVIA cLIP Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
+      <p style="max-width:78ch">LIVIA Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
       <b>iLIS</b>, the integrated local interaction score computed by lis.py over residue pairs with predicted aligned error of at most 12 Å (LIS), and over those that
       are also in contact, Cβ–Cβ distance of at most 8 Å (cLIS): iLIS = √(LIS × cLIS). Benchmarked cutoffs mark predictions at a 10%, 5% and 1% false-positive rate
       (iLIS ≥ 0.223, 0.339, 0.551; ${cite('flypredictome')}).</p>
@@ -784,7 +799,7 @@ async function viewTheme(id) {
   const gen = ROUTE, reg = await registry(), T = (reg.themes || []).find((t) => t.id === id);
   if (stale(gen)) return;
   if (!T) { app.innerHTML = `<div class="empty">No theme “${esc(id)}”. <a href="#/">Go to the atlas home</a></div>`; return; }
-  document.title = `${T.title} · LIVIA cLIP Atlas`;
+  document.title = `${T.title} · LIVIA Atlas`;
   const rows = await themeMembers(T), sum = (k) => rows.reduce((a, r) => a + (r.counts[k] || 0), 0);
   if (stale(gen)) return;
   const cite = (src) => (src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(shortCite(src))} ↗</a>` : '');
@@ -802,7 +817,7 @@ async function viewSet(dsId, setId) {
   const gen = ROUTE, ds = await dataset(dsId), TS = await setsOf(ds), S = TS && TS.byId.get(setId), sp = await species(ds.reg.species), m = ds.manifest;
   if (stale(gen)) return;
   if (!S) { app.innerHTML = `<div class="empty">No set “${esc(setId)}” in ${esc(ds.reg.title)}.</div>`; return; }
-  document.title = `${S.short} · ${ds.reg.short} · LIVIA cLIP Atlas`;
+  document.title = `${S.short} · ${ds.reg.short} · LIVIA Atlas`;
   const prot = await getJSON(new URL(S.files.proteins, ds.base).href), c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
   if (stale(gen)) return;
   const rows = prot.rows.map((r) => ({ key: r[c.key], pos10: r[c.pos10] })), keys = new Set(rows.map((r) => r.key));
@@ -818,7 +833,7 @@ async function viewSet(dsId, setId) {
     <div class="card"><h2>Most connected proteins in this set <span class="muted">partners past the 10% FPR cutoff</span></h2>
       <div class="chips">${hubs.map((r) => { const R = sp.byKey.get(r.key); return `<a class="chip" href="#/${sp.id}/${r.key}?set=${S.id}">${esc(R ? R.gene : r.key)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
     <div class="card"><h2>Data</h2><p class="muted" style="font-size:14px;margin:4px 0 0">This set is part of the ${esc(ds.reg.title)} download in the
-      <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA cLIP Atlas record on Zenodo ↗</a>;
+      <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo ↗</a>;
       <a href="https://github.com/flyark/livia-atlas/blob/main/tools/extract_set.py" target="_blank" rel="noopener">extract_set.py ↗</a> pulls out just this set as a table.</p></div>`;
   mountSearch($('#set-search'), { spId: sp.id, only: keys, set: S.id });
 }
@@ -837,7 +852,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
       <div class="chips">${hubs.map((r) => { const R = sp.byName.get(r.id); return `<a class="chip" href="#/${sp.id}/${R ? R.key : r.id}${scopeQ}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
     ${setsCard(TS)}
     <div class="card"><h2>Data</h2><p class="muted" style="font-size:14px;margin:4px 0 0">Every file of this screen is in the
-      <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA cLIP Atlas record on Zenodo (doi:${ARCHIVE.doi}) ↗</a>. A protein page's
+      <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo (doi:${ARCHIVE.doi}) ↗</a>. A protein page's
       <b>Data</b> menu downloads that protein's predictions.${m.files.identity ? ` <a href="${ds.base}${m.files.identity}" download>Construct names and their FlyBase genes</a> (table).` : ''}</p></div>`;
   mountSearch($('#ds-search'), sp.dsIds.length > 1 ? { spId: sp.id, set: ds.id, only: new Set(rows.map((r) => { const R = sp.byName.get(r.id); return R ? R.key : r.id; })) } : { spId: sp.id });
 }
@@ -845,7 +860,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925h'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925i'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -870,13 +885,14 @@ function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene
   return i >= 0 ? sp.rows[i] : null;
 }
 
-async function viewProtein(spId, q, setId = '') {   // setId: show only that thematic set's predictions
+async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only that thematic set's predictions; iso: one isoform ('reference' or a construct)
   const gen = ROUTE, gone = () => stale(gen);   // after every await: stop if the reader has moved to another page
-  const sp = await species(spId), P = resolveRow(sp, q), qs = setId ? `?set=${encodeURIComponent(setId)}` : '';
+  const qp = new URLSearchParams(); if (setId) qp.set('set', setId); if (iso) qp.set('iso', iso);
+  const sp = await species(spId), P = resolveRow(sp, q), qs = qp.toString() ? `?${qp}` : '';
   if (gone()) return;
   if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q)}” in the ${esc(sp.reg.label.toLowerCase())} screens. <a href="#/${sp.id}">Search ${esc(sp.reg.label.toLowerCase())} proteins</a></div>`; return; }
   if (P.key !== q) { location.replace(`#/${sp.id}/${P.key}${qs}`); return; }
-  document.title = `${P.gene} · LIVIA cLIP Atlas`;
+  document.title = `${P.gene} · LIVIA Atlas`;
   const flags = [];
   if (P.status === 'renamed') flags.push(`<span class="flag">named ${esc(P.occ.map((o) => o.name).filter((n, i, a) => a.indexOf(n) === i).join(' / '))} in the screens; UniProt renamed it</span>`);
   if (P.status === 'unreviewed') flags.push('<span class="flag">unreviewed UniProt entry</span>');
@@ -900,8 +916,10 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
       <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details></div></div>
       <div class="kpis"><div class="kpi"><b id="kp-all">${fmtInt(P.partners)}</b><span>partners predicted</span></div><div class="kpi f10"><b id="kp-10">${fmtInt(P.pos10)}</b><span>past 10% FPR</span></div>
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR</span></div></div></div>
+    <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
     <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}">${l}</button>`).join('')}</nav>
+    <div class="card" id="c-iso" hidden></div>
     <div class="card" id="c-overview"><div class="card-head"><h2>Partners by score</h2><span class="muted" id="sc-sub"></span></div>
       <div class="overview"><div><div class="scat" id="scat"></div>
           <div class="legend"><span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span><span>color: cluster (gray: not clustered)</span></div></div>
@@ -973,6 +991,19 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   let B, B0;
   try { B = await merged(sp, P, SET ? SET.id : ''); B0 = SET ? await merged(sp, P) : B; } catch (e) { if (!gone()) $('#clip-sub').textContent = e.message; return; }
   if (gone()) return;
+  // Isoforms folded separately (a construct too unlike the reference to be drawn on it): the page shows one at a time,
+  // every card on its predictions; the "Isoform" row switches, the Isoforms card compares them. BA keeps them all.
+  const BA = B, ISO = BA.choices && BA.choices.length > 1 ? BA.choices.find((c) => c.id === (iso === 'reference' ? '' : iso)) || BA.choices[0] : null;
+  const WORD = ISO && BA.choices.every((c) => !c.id || (BA.cons.get(c.id) || {}).kind === 'isoform') ? 'Isoform' : 'Construct';
+  const isoName = (c) => (c.id ? String((BA.cons.get(c.id) || {}).label || c.id).replace(P.gene + ' ', '').replace(/ \(([\d,]+) aa\)$/, ' · $1 aa') : `reference · ${fmtInt(c.len)} aa`);
+  const isoHref = (c) => `#/${sp.id}/${P.key}?${SET ? `set=${encodeURIComponent(SET.id)}&` : ''}iso=${c.id ? encodeURIComponent(c.id) : 'reference'}`;
+  if (ISO) {
+    B = BA.only(ISO.id);
+    const row = $('#isorow'); row.hidden = false;
+    row.innerHTML = `<span class="lbl">${WORD}</span>${BA.choices.map((c) => `<a class="src scope-chip${c === ISO ? ' on' : ''}" style="--c:#1A5276" href="${isoHref(c)}"
+      title="${esc(c.label)}: ${fmtInt(c.n)} models">${esc(isoName(c))} <span class="n">${fmtInt(c.n)}</span></a>`).join('')}`;
+    if (ISO !== BA.choices[0]) document.title = `${P.gene} · ${isoName(ISO)} · LIVIA Atlas`;
+  }
   {
     const n = new Map(); for (const p of B0.preds) { const d = sp.dsIds[p.di]; n.set(d, (n.get(d) || 0) + 1); for (const t of p.tags || []) n.set(t, (n.get(t) || 0) + 1); }
     const screens = occ.length > 1 ? occ.map((o) => ({ id: o.ds.id, short: o.ds.reg.short, color: o.ds.reg.color, title: o.ds.reg.title })) : [];
@@ -989,10 +1020,12 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
     const about = SET.type === 'dataset' ? `#/datasets/${SET.id}` : `#/datasets/${TS0.ds.id}/${SET.id}`;
     const bar = $('#setbar'); bar.hidden = false;
     bar.innerHTML = `<span class="src" style="--c:${SET.color}">${esc(SET.short)}</span><span>Only ${esc(what)}${who ? ` (<a href="${esc(SET.source.url)}" target="_blank" rel="noopener">${esc(who)}</a>)` : ''}:
-      ${fmtInt(B.preds.length)} of ${fmtInt(B0.preds.length)} models.</span><span><a href="#/${sp.id}/${P.key}">Show every prediction</a> · <a href="${about}">about this ${SET.type === 'dataset' ? 'screen' : 'set'}</a></span>`;
+      ${fmtInt(BA.preds.length)} of ${fmtInt(B0.preds.length)} models.</span><span><a href="#/${sp.id}/${P.key}">Show every prediction</a> · <a href="${about}">about this ${SET.type === 'dataset' ? 'screen' : 'set'}</a></span>`;
+    document.title = `${P.gene} · ${SET.short} · LIVIA Atlas`;
+  }
+  if (SET || ISO) {   // the tiles count what the page shows
     const others = B.partners.filter((x) => x.id !== P.key), cnt = (c) => others.filter((x) => x.best >= c).length;
     $('#kp-all').textContent = fmtInt(others.length); $('#kp-10').textContent = fmtInt(cnt(CUT[10])); $('#kp-5').textContent = fmtInt(cnt(CUT[5])); $('#kp-1').textContent = fmtInt(cnt(CUT[1]));
-    document.title = `${P.gene} · ${SET.short} · LIVIA cLIP Atlas`;
   }
   const refSeq = await seqOf(sp, P, B);   // the reference sequence (UniProt; FlyBase for fly)
   if (gone()) return;
@@ -1028,21 +1061,32 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
         return [...byKind].map(([k, xs]) => { const [one, many] = KIND[k] || ['construct', 'constructs'], ex = xs.slice(0, 3).map((x) => (x.con ? x.con.label : '')).filter(Boolean);
           return `${fmtInt(xs.length)} ${xs.length === 1 ? one : many}${ex.length ? ` (${ex.join(', ')}${xs.length > 3 ? ', …' : ''})` : ''}`; }).join(', '); };
       const own = [...CQ.aside.entries()].filter(([k]) => pickable.has(k)).map(([, x]) => x), rest = [...CQ.aside.entries()].filter(([k]) => !pickable.has(k)).map(([, x]) => x);
-      const uses = CQ.qName ? `${(B.cons.get(CQ.qName) || {}).label || CQ.qName}, in its own numbering` : `the ${fmtInt(CQ.qLen)} aa reference, with every construct placed or mapped on it`;
-      a.textContent = CQ.qName ? `Clustering uses ${uses}. The ${P.gene} reference and its other constructs are in the menu above.` : `Clustering uses ${uses}.`
-        + (own.length ? ` ${say(own)} ${own.length === 1 ? 'shares' : 'share'} too little sequence with ${CQ.qName ? 'it' : 'the reference'} to be drawn on it; choose one in the menu above to cluster it on its own.` : '')
-        + (rest.length ? ` ${say(rest)} ${rest.length === 1 ? 'is' : 'are'} listed with ${rest.length === 1 ? 'its' : 'their'} partners and on the pair pages, not clustered.` : '');
+      const row = `the ${WORD} row at the top`;
+      a.textContent = CQ.qName ? `Clustering uses ${(B.cons.get(CQ.qName) || {}).label || CQ.qName}, in its own numbering.`
+          + (ISO ? ` Every card on this page shows its predictions; the ${P.gene} reference and the other ${WORD.toLowerCase()}s are in ${row}.` : '')
+        : `Clustering uses the ${fmtInt(CQ.qLen)} aa reference, with every construct placed or mapped on it.`
+          + (own.length ? ` ${say(own)} ${own.length === 1 ? 'shares' : 'share'} too little sequence with the reference to be drawn on it; ${row} shows each on its own.` : '')
+          + (rest.length ? ` ${say(rest)} ${rest.length === 1 ? 'is' : 'are'} listed with ${rest.length === 1 ? 'its' : 'their'} partners and on the pair pages, not clustered.` : '');
       a.hidden = !(own.length || rest.length || CQ.qName);
     } else if (CQ.aside.size) { a.hidden = false;
       a.textContent = [...CQ.aside.values()].map((x) => `${sp.dsShort[x.di]} predicted ${P.gene} as a ${fmtInt(x.len)} aa construct`).join('; ') + `, so those models are listed but left out of the clustering, which uses the ${fmtInt(CQ.qLen)} aa construct.`;
     } else a.hidden = true;
   };
   constructNote();
-  if (B.choices && B.choices.length > 1) {   // which construct to cluster: the reference, or another construct with models of its own
-    $('.clip-ctl').insertAdjacentHTML('afterbegin', `<select id="clip-construct" class="setpick" aria-label="Construct to cluster">${B.choices.map((c) =>
-      `<option value="${esc(c.id)}">${esc(c.label)} · ${fmtInt(c.n)} models</option>`).join('')}</select>`);
-    $('#clip-construct').value = CQ.choice;
-    $('#clip-construct').onchange = (e) => { CQ = B.clipFor(e.target.value); setQSeq(); constructNote(); mapStruct(); cluster(); };
+  if (ISO) {   // the isoforms side by side: what each was folded with and what binds it best
+    const tally = (V) => { const ot = V.partners.filter((x) => x.id !== P.key), n = (c) => ot.filter((x) => x.best >= c).length;
+      return { n: ot.length, p10: n(CUT[10]), p5: n(CUT[5]), p1: n(CUT[1]), top: [...ot].sort((x, y) => y.best - x.best).slice(0, 3) }; };
+    const all = tally(BA), card = $('#c-iso'); card.hidden = false;
+    card.innerHTML = `<div class="card-head"><h2>${WORD}s</h2><span class="muted">each folded separately · open one to see it on this page</span></div>
+      <div class="tbl-wrap"><table class="sets isotbl"><thead><tr><th>${WORD}</th><th class="n">Models</th><th class="n">Partners</th><th class="n">Past 10% FPR</th><th class="n">5%</th><th class="n">1%</th><th>Top partners (iLIS)</th></tr></thead><tbody>
+      ${BA.choices.map((c) => { const t = tally(BA.only(c.id));
+        return `<tr class="${c === ISO ? 'on' : ''}"><td class="set-name"><a href="${isoHref(c)}">${esc(isoName(c))}</a>${c === ISO ? ' <span class="muted">· shown</span>' : ''}</td>
+          <td class="n">${fmtInt(c.n)}</td><td class="n">${fmtInt(t.n)}</td><td class="n">${fmtInt(t.p10)}</td><td class="n">${fmtInt(t.p5)}</td><td class="n">${fmtInt(t.p1)}</td>
+          <td class="iso-top">${t.top.map((x) => `<a href="#/${sp.id}/${x.id}${scopeQ}">${esc(gname(x.id))}</a> <span class="num">${x.best.toFixed(2)}</span>`).join(' · ')}</td></tr>`; }).join('')}
+      </tbody></table></div>
+      <p class="muted" style="margin:10px 0 0;font-size:13.5px">All ${fmtInt(BA.choices.length)} together: ${fmtInt(all.n)} partners, ${fmtInt(all.p10)} past the 10% FPR cutoff.</p>`;
+    const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; nav.prepend(btn);
+    btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - 112, behavior: 'smooth' });
   }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); }; });
 
@@ -1252,7 +1296,14 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
   function show3D() {
     V.want = true; if (S.state !== 'ready' || V.shown) return;
     const frame = $('#viewer3d-frame'); if (!frame) return;
-    frame.src = URL.createObjectURL(new Blob([buildMolstarPage(S.text, 'mmcif', colorComponents(), LIVIA)], { type: 'text/html' }));
+    // A colour update sent while the viewer page is still booting is lost (clustering can finish in that window), so
+    // once the viewer says it is ready, the colours are sent again if they changed since it was built.
+    const comps = colorComponents(), built = JSON.stringify(comps);
+    const onReady = (ev) => { if (!ev.data || ev.data.type !== 'molstarReady') return; const f = $('#viewer3d-frame');
+      if (gone() || !f || ev.source === f.contentWindow) window.removeEventListener('message', onReady);
+      if (!gone() && f && ev.source === f.contentWindow && JSON.stringify(colorComponents()) !== built) recolor3D(); };
+    window.addEventListener('message', onReady);
+    frame.src = URL.createObjectURL(new Blob([buildMolstarPage(S.text, 'mmcif', comps, LIVIA)], { type: 'text/html' }));
     V.shown = true; $('#v3d-msg').hidden = true; legend3D();
   }
   function recolor3D() { legend3D(); if (V.shown) applyColorsToMolstarFrame('viewer3d-frame', colorComponents(), 'mmcif'); }
@@ -1453,7 +1504,9 @@ async function viewProtein(spId, q, setId = '') {   // setId: show only that the
     let E; try { E = await edges(sp, B.setId); } catch (e) { if (!gone()) netBox.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     if (gone()) return;
     const n = +$('#net-n').value, c = CUT[+$('#net-cut').value];
-    const nb = [...(E.adj.get(P.i) || new Map())].filter(([, e]) => e.best >= c).sort((a, b) => b[1].best - a[1].best).slice(0, n);
+    const qAdj = ISO ? new Map(B.partners.filter((x) => x.id !== P.key && sp.byKey.has(x.id)).map((x) => [sp.byKey.get(x.id).i, { best: x.best, avg: x.avg, src: x.src }]))   // this isoform's partners
+      : E.adj.get(P.i) || new Map();
+    const nb = [...qAdj].filter(([, e]) => e.best >= c).sort((a, b) => b[1].best - a[1].best).slice(0, n);
     netBox.innerHTML = '<svg></svg>';
     if (!nb.length) { netBox.innerHTML = '<div class="empty">No partners past this cutoff.</div>'; return; }
     const nodes = [{ id: P.i, row: P, q: true }, ...nb.map(([j, e]) => ({ id: j, row: sp.rows[j], e }))];
@@ -1521,7 +1574,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   const scopeQ = scope ? `?set=${encodeURIComponent(scope)}` : '';
   if (P.key !== q1 || (O0 && O0.key !== q2)) { location.replace(`#/${sp.id}/${P.key}/${O0 ? O0.key : q2}${scopeQ}`); return; }
   const O = O0 || { key: q2, gene: q2, name: '', acc: '', clen: 0, len: 0, occ: [], id: q2 };
-  document.title = `${P.gene} · ${O.gene} · LIVIA cLIP Atlas`;
+  document.title = `${P.gene} · ${O.gene} · LIVIA Atlas`;
   const crumbs = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}${scopeQ}">${esc(P.gene)}</a> / ${esc(O.gene)}</div>`;
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
   let B;
@@ -1570,7 +1623,7 @@ async function viewSpecies(spId) {
   const gen = ROUTE, sp = await species(spId), c = sp.manifest.counts, hubs = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24);
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
   if (stale(gen)) return;
-  document.title = `${sp.reg.label} · LIVIA cLIP Atlas`;
+  document.title = `${sp.reg.label} · LIVIA Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / ${esc(sp.reg.label)}</div>
     <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
     ${kpiRow(c)}
@@ -1596,7 +1649,7 @@ const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').sp
 async function route() {
   const gen = ++ROUTE, { parts, q } = hashPath(), setId = q.get('set') || '', here = location.hash;
   window.scrollTo(0, 0); hideTip(); window.onresize = null;
-  document.title = 'LIVIA cLIP Atlas';
+  document.title = 'LIVIA Atlas';
   stopClip();
   try {
     await registry();
@@ -1605,7 +1658,7 @@ async function route() {
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
-    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }

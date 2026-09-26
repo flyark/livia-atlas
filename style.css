@@ -1,4 +1,4 @@
-/* LIVIA cLIP Atlas — part of the LIVIA family: light ground, navy brand, teal query / coral partner, iLIS bands. */
+/* LIVIA Atlas — part of the LIVIA family: light ground, navy brand, teal query / coral partner, iLIS bands. */
 :root {
   --ground: #F4F6F9; --card: #FFFFFF; --ink: #17263A; --ink-2: #4E5E73; --ink-3: #8593A5; --line: #DDE3EA; --line-2: #EDF1F5;
   --navy: #1A5276; --blue: #2471A3; --blue-soft: #E8F1F8;
@@ -365,6 +365,8 @@ select { max-width: 100%; }
 .scope-chip:not(.on):hover { box-shadow: inset 0 0 0 1px var(--c); }
 .scope-chip:focus-visible { outline: 2px solid var(--c); outline-offset: 1px; }
 .setbar[hidden] { display: none; }
+.isorow { margin: -4px 0 16px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--card, #fff); }   /* a gene's isoforms, one shown at a time */
+.isorow[hidden] { display: none; }
 table.sets { width: 100%; border-collapse: collapse; font-size: 14px; }
 .sets th, .sets td { padding: 8px 12px; border-bottom: 1px solid var(--line-2); text-align: left; vertical-align: middle; }
 .sets thead th { font-size: 12px; font-weight: 600; color: var(--ink-3); border-bottom: 1px solid var(--line); white-space: nowrap; }
@@ -382,3 +384,10 @@ table.sets { width: 100%; border-collapse: collapse; font-size: 14px; }
 @media (max-width: 600px) { .sets th:nth-child(3), .sets td:nth-child(3), .sets th:nth-child(5), .sets td:nth-child(5) { display: none; } .sets .set-name { white-space: normal; } }
 .sets thead th.n { font-family: var(--sans); color: var(--ink-3); }
 @media (max-width: 600px) { .sets .set-cite { display: block; margin: 2px 0 0 19px; } }
+/* a gene's isoforms side by side (protein page) */
+.isotbl tbody tr.on td, .isotbl tbody tr.on:hover td { background: var(--blue-soft); }
+.isotbl .iso-top { font-size: 13px; color: var(--ink-2); min-width: 220px; }
+.isotbl .iso-top a { font-weight: 500; }
+.isotbl .iso-top .num { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+@media (max-width: 600px) { .sets.isotbl th:nth-child(3), .sets.isotbl td:nth-child(3) { display: table-cell; }
+  .sets.isotbl th:nth-child(2), .sets.isotbl td:nth-child(2), .sets.isotbl th:nth-child(6), .sets.isotbl td:nth-child(6) { display: none; } }
