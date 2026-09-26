@@ -417,3 +417,10 @@ button.iso-tag:hover { background: #D6E6F3; }
 button.iso-tag:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
 .pt tr.iso-sub td { background: #FAFCFE; font-size: 12.5px; }
 .pt tr.iso-sub td.g { padding-left: 26px; color: var(--ink-2); font-weight: 500; }
+
+/* Top partners: the name and its isoform tag share one cell (a long name is cut, the numbers keep their columns);
+   the FPR key's swatches wrap together, never one by one */
+.tl-name { display: flex; align-items: center; gap: 5px; min-width: 0; }
+.tl-name a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.tl-name .iso-tag { flex: none; margin-left: 0; }
+.tl-keys { display: inline-flex; flex-wrap: nowrap; gap: 12px; white-space: nowrap; }

@@ -973,7 +973,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925o'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925p'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -1039,7 +1039,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div><h3>Top partners <span class="muted">by iLIS of the best model</span></h3>
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span></div>
           <ol class="toplist" id="toplist"></ol>
-          <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></div></div></div></div>
+          <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
     <div class="card" id="c-clip"><div class="card-head"><div><h2 id="clip-title">${esc(P.gene)} — interactome</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div>
       <div class="stat4"><div><b id="s-partners">–</b><span>partners</span></div><div><b id="s-preds">–</b><span>models</span></div><div><b id="s-k">–</b><span>clusters</span></div><div><b id="s-len">–</b><span>query length</span></div></div>
@@ -1589,7 +1589,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     svg.append('g').selectAll('text').data(labels).join('text').attr('x', (d) => d.tx).attr('y', (d) => d.ty).attr('text-anchor', (d) => d.anchor)
       .attr('font-size', 11.5).attr('font-weight', 600).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3).text((d) => d.p.gene);
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
-    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}
+    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
       <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
