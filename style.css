@@ -361,7 +361,10 @@ table.cuts thead th { font-size: 12px; color: var(--ink-3); font-weight: 600; }
 .hero-center .chips { max-width: var(--col); column-gap: 18px; row-gap: 10px; }
 .chip-group { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }   /* a species keeps its examples */
 .hero-center .showcase { width: 100%; max-width: var(--col); margin-top: 34px; text-align: left; }
-.showcase span.q { color: var(--query); font-weight: 600; }   /* cLIP and its initials, as the title's teal (beats .sc-top span) */
+.showcase span.q { color: var(--query); font-weight: 600; }
+.showcase .sc-own { margin-top: 10px; font-size: 13px; color: var(--ink-2); }   /* the way from the Atlas to cLIP on your own data */
+.showcase .sc-own a { color: var(--blue); font-weight: 600; text-decoration: none; }
+.showcase .sc-own a:hover { text-decoration: underline; }   /* cLIP and its initials, as the title's teal (beats .sc-top span) */
 .sg .sub .sp-tag { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--ink-2); background: var(--line-2); border-radius: 5px; padding: 1px 6px; margin-right: 6px; }
 .seq-flow .out { color: #B9C2CD; }
 .chips .lbl.sp { margin-left: 10px; }

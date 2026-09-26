@@ -798,10 +798,11 @@ async function showcase() {
   box.innerHTML = `<div class="sc-top"><div class="sc-name"><a id="sc-gene"></a><span class="sc-sp" id="sc-sp"></span></div><span id="sc-note"></span></div>
     <div class="sc-stage"><canvas id="sc-cv"></canvas></div>
     <div class="sc-foot"><span id="sc-cap"></span><a id="sc-open"></a></div>
+    <div class="sc-own">Have your own screen? <a href="${LIVIA}clip.html" target="_blank" rel="noopener">Use cLIP in LIVIA →</a></div>
     <div class="sc-dots">${S.map((s, k) => `<button type="button" data-k="${k}" aria-label="${esc(s.gene)}, ${esc(s.spLabel)}"></button>`).join('')}</div>`;
   const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   let at = 0, timer = null, paused = false;
-  const draw = (s) => {   // as on a protein page: frequency (bars in their most frequent cluster's colour) over the fingerprint (contacts in navy, clusters in the strip), one residue axis
+  const draw = (s) => {   // as on a protein page: frequency (bars in their most frequent cluster's color) over the fingerprint (contacts in navy, clusters in the strip), one residue axis
     const cv = $('#sc-cv'), W = cv.clientWidth, FH = 78, GAP = 6, PH = 112, H = FH + GAP + PH + 16, g = canvasCtx(cv, W, H), L = s.L, X0 = 12, bw = (W - X0) / L, x = (r) => X0 + (r - 1) * bw;
     const max = Math.max(1, ...s.tot);
     for (let r = 1; r <= L; r++) { const n = s.tot[r - 1]; if (!n) continue; const h = n / max * (FH - 4); g.fillStyle = clusterColor(s.dom[r - 1] || 1, s.k); g.fillRect(x(r), FH - h, Math.max(1, bw), h); }
@@ -820,9 +821,9 @@ async function showcase() {
     at = (k + S.length) % S.length; const s = S[at], href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
     const paint = () => {
       $('#sc-gene').textContent = s.gene; $('#sc-gene').href = href; $('#sc-sp').textContent = s.spLabel;
-      $('#sc-note').innerHTML = `<span class="q">cLIP</span> · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
-      $('#sc-cap').innerHTML = '<span class="q">cLIP</span> (<span class="q">c</span>lustered <span class="q">L</span>ocal <span class="q">I</span>nteraction <span class="q">P</span>rofiler) '
-        + 'groups partners by the residues they contact: ' + ['contacts per residue above,', 'one row per partner below'].map((t) => t.replace(/ /g, '&nbsp;')).join(' ');   // each legend phrase stays on one line
+      $('#sc-note').innerHTML = `<span class="q">c</span>lustered <span class="q">L</span>ocal <span class="q">I</span>nteraction <span class="q">P</span>rofiler · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
+      $('#sc-cap').innerHTML = '<span class="q">cLIP</span> groups partners by the residues they contact: '   // the full name is on the line above
+        + ['contacts per residue above,', 'one row per partner below'].map((t) => t.replace(/ /g, '&nbsp;')).join(' ');   // each legend phrase stays on one line
       $('#sc-open').textContent = `Open ${s.gene} →`; $('#sc-open').href = href;
       draw(s); box.querySelectorAll('.sc-dots button').forEach((b, i) => b.setAttribute('aria-current', i === at ? 'true' : 'false'));
       box.classList.remove('sc-out');
@@ -1440,8 +1441,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function show3D() {
     V.want = true; if (S.state !== 'ready' || V.shown) return;
     const frame = $('#viewer3d-frame'); if (!frame) return;
-    // A colour update sent while the viewer page is still booting is lost (clustering can finish in that window), so
-    // once the viewer says it is ready, the colours are sent again if they changed since it was built.
+    // A color update sent while the viewer page is still booting is lost (clustering can finish in that window), so
+    // once the viewer says it is ready, the colors are sent again if they changed since it was built.
     const comps = colorComponents(), built = JSON.stringify(comps);
     const onReady = (ev) => { if (!ev.data || ev.data.type !== 'molstarReady') return; const f = $('#viewer3d-frame');
       if (gone() || !f || ev.source === f.contentWindow) window.removeEventListener('message', onReady);
