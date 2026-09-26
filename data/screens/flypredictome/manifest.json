@@ -54,7 +54,9 @@
   "identity": "identity.tsv",
   "bundle": "b/{id}.zip",
   "sequence": "s/{id}.fa",
-  "sets": "sets.json"
+  "sets": "sets.json",
+  "isoforms": "b/{id}~{k}.zip"
  },
- "nameKey": "id"
+ "nameKey": "id",
+ "isoformNote": "Genes whose isoforms were folded separately keep one file per isoform: b/{id}.zip holds the reference and isoforms.json lists the others."
 }
