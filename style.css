@@ -353,12 +353,15 @@ table.cuts td, table.cuts thead th:not(:first-child) { text-align: right; paddin
 table.cuts td { font-family: var(--mono); font-weight: 600; }
 table.cuts thead th { font-size: 12px; color: var(--ink-3); font-weight: 600; }
 /* home hero: one centered column — headline, text, search, totals, examples, then the TP53 preview */
-.hero-center { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 56px 0 28px; }
+.hero-center { --col: 800px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 56px 0 28px; }   /* one column under the title */
 .hero-center h1 { max-width: 30ch; margin-inline: auto; }
-.hero-center .lede { margin-inline: auto; }
-.hero-center .hero-search { width: 100%; max-width: 760px; }
+.hero-center p.lede { max-width: var(--col); margin-inline: auto; text-wrap: balance; }   /* beats .hero p.lede's 62ch */
+.hero-center .hero-search { width: 100%; max-width: var(--col); }
 .hero-center .totals, .hero-center .chips { justify-content: center; }
-.hero-center .showcase { width: 100%; max-width: 860px; margin-top: 34px; text-align: left; }
+.hero-center .chips { max-width: var(--col); column-gap: 18px; row-gap: 10px; }
+.chip-group { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }   /* a species keeps its examples */
+.hero-center .showcase { width: 100%; max-width: var(--col); margin-top: 34px; text-align: left; }
+.showcase span.q { color: var(--query); font-weight: 600; }   /* cLIP and its initials, as the title's teal (beats .sc-top span) */
 .sg .sub .sp-tag { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--ink-2); background: var(--line-2); border-radius: 5px; padding: 1px 6px; margin-right: 6px; }
 .seq-flow .out { color: #B9C2CD; }
 .chips .lbl.sp { margin-left: 10px; }

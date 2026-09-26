@@ -740,13 +740,13 @@ async function viewHome() {
     <section class="hero hero-center">
       <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
       <p class="lede">AlphaFold-Multimer predicts not only whether two proteins bind, but through which residues. Pooled across large-scale
-        screens, those interfaces map a protein's many partners onto its sequence and show which of them share a site. Search a protein
+        screens, those interfaces map a protein's many partners onto its sequence and show which of them share a site.<br>Search a protein
         to see who is predicted to bind it, how confidently, and where.</p>
       <div id="home-search" class="hero-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
-      <div class="chips"><span class="lbl">Try</span>${(reg.species || []).map((x, i) => (reg.species.length > 1 ? `<span class="lbl${i ? ' sp' : ''}">${esc(x.label)}</span>` : '')
-        + (TRY[x.id] || []).map((g) => `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`).join('')).join('')}</div>
+      <div class="chips">${(reg.species || []).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<span class="lbl">${esc(x.label)}</span>` : ''}`
+        + (TRY[x.id] || []).map((g) => `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`).join('') + '</span>').join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
     </section>
     <h2 class="section-h">How it works</h2>
@@ -820,9 +820,9 @@ async function showcase() {
     at = (k + S.length) % S.length; const s = S[at], href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
     const paint = () => {
       $('#sc-gene').textContent = s.gene; $('#sc-gene').href = href; $('#sc-sp').textContent = s.spLabel;
-      $('#sc-note').textContent = `cLIP · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
-      $('#sc-cap').textContent = 'cLIP (clustered Local Interaction Profiler) groups partners by the residues they contact: '   // each legend phrase stays on one line
-        + ['contacts per residue above,', 'one row per partner below'].map((t) => t.replace(/ /g, '\u00a0')).join(' ');
+      $('#sc-note').innerHTML = `<span class="q">cLIP</span> · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
+      $('#sc-cap').innerHTML = '<span class="q">cLIP</span> (<span class="q">c</span>lustered <span class="q">L</span>ocal <span class="q">I</span>nteraction <span class="q">P</span>rofiler) '
+        + 'groups partners by the residues they contact: ' + ['contacts per residue above,', 'one row per partner below'].map((t) => t.replace(/ /g, '&nbsp;')).join(' ');   // each legend phrase stays on one line
       $('#sc-open').textContent = `Open ${s.gene} →`; $('#sc-open').href = href;
       draw(s); box.querySelectorAll('.sc-dots button').forEach((b, i) => b.setAttribute('aria-current', i === at ? 'true' : 'false'));
       box.classList.remove('sc-out');
