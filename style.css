@@ -410,3 +410,10 @@ table.sets { width: 100%; border-collapse: collapse; font-size: 14px; }
 .refs { margin: 4px 0 12px; padding-left: 20px; display: grid; gap: 8px; }
 .refs li { line-height: 1.5; }
 .refs a { word-break: break-word; }
+/* a partner folded as several isoforms or constructs: a tag on its row; in the partner table the tag opens one row per construct */
+.iso-tag { display: inline-block; font: 600 11px/1.5 var(--sans); color: var(--navy); background: var(--blue-soft); border: 0; border-radius: 999px; padding: 0 7px; margin-left: 6px; white-space: nowrap; vertical-align: 1px; }
+button.iso-tag { cursor: pointer; }
+button.iso-tag:hover { background: #D6E6F3; }
+button.iso-tag:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
+.pt tr.iso-sub td { background: #FAFCFE; font-size: 12.5px; }
+.pt tr.iso-sub td.g { padding-left: 26px; color: var(--ink-2); font-weight: 500; }

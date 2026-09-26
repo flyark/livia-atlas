@@ -927,7 +927,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925l'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925m'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -1105,6 +1105,23 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const range = (k) => Array.from({ length: k }, (_, i) => i + 1);
   let cut = 10, M = null, ACTIVE = new Set(), NET = null, infoOpen = new Set();
   const predCluster = new Map(), partnerCluster = new Map();
+  // A partner folded as several constructs (a receptor's isoforms, its fragments): each one's scores and cluster, so a
+  // partner that binds through one isoform and not another shows it. One row per gene; the constructs open under it.
+  const isoCache = new Map();
+  const partnerIsos = (pt) => {
+    if (!B.cons.size) return null;
+    if (!isoCache.has(pt.id)) {
+      const by = new Map(); for (const p of pt.preds) { if (!by.has(p.pc)) by.set(p.pc, []); by.get(p.pc).push(p); }
+      isoCache.set(pt.id, by.size < 2 ? null : [...by].map(([pc, ps]) => { const c = B.cons.get(pc), il = ps.map((p) => p.iLIS || 0), ip = ps.map((p) => p.ipTM || 0);
+        return { pc, label: c ? c.label : pc, kind: c ? c.kind : '', preds: [...ps].sort((a, b) => b.iLIS - a.iLIS), best: Math.max(...il), avg: mean(il), iptmBest: Math.max(...ip), iptmAvg: mean(ip),
+          contacts: Math.max(...ps.map((p) => p.qcLIR || 0)), pass: ps.filter((p) => p.iLIS >= CUT[10]).length, n: ps.length }; }).sort((a, b) => b.best - a.best));
+    }
+    return isoCache.get(pt.id);
+  };
+  const isoCluster = (x) => { for (const p of x.preds) { const c = predCluster.get(p.label + '|' + p.rank); if (c != null) return c; } return 0; };
+  const isoWord = (xs) => (xs.every((x) => x.kind === 'isoform' || x.kind === 'gene') ? 'isoforms' : 'constructs');
+  const isoTip = (p, xs) => `${xs.length} ${isoWord(xs)} of ${gname(p.id)} were folded; best iLIS: ${xs.map((x) => `${x.label} ${x.best.toFixed(2)}`).join(' · ')}`;
+  const isoOpen = new Set();
   const clustered = () => !!(M && M.fingerprints.length >= 2);
   const allOn = () => !M || ACTIVE.size === M.k;
   const S = { state: 'loading', map: null, mapOK: false };              // AlphaFold DB model of this protein
@@ -1514,12 +1531,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     svg.append('g').selectAll('text').data(labels).join('text').attr('x', (d) => d.tx).attr('y', (d) => d.ty).attr('text-anchor', (d) => d.anchor)
       .attr('font-size', 11.5).attr('font-weight', 600).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3).text((d) => d.p.gene);
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
-    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => `<li><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>
+    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
       <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
-      <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span></li>`).join('');
+      <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span></li>`; }).join('');
     svgExport(host, `atlas_${P.gene}_partners`, () => $('svg', host));
   }
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
@@ -1537,15 +1554,22 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
     $('#pt-note').textContent = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.length)} predicted`;
     $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
-      const b = bandOf(p.best);
-      return `<tr><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a></td>
+      const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
+      const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
+      const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best);
+        return `<tr class="iso-sub"><td class="g">${esc(x.label)}</td><td>${c ? `<span class="mdot" style="background:${clusterColor(c, k)}"></span>${clusterLabel(c, true)}` : '<span class="muted">—</span>'}</td>
+          <td></td><td class="nm">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
+          <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td><td class="n v" style="color:${bandCol(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
+          <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td><td class="n">${fmtInt(x.contacts)}</td><td class="n">${x.pass} / ${x.n}</td></tr>`; }).join('') : '';
+      return `<tr><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${tag}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         <td class="srcc">${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
         <td class="n v" style="color:${BAND[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
         <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>
-        <td class="n">${fmtInt(p.contacts)}</td><td class="n" title="models past the 10% FPR cutoff">${p.pass} / ${p.preds.length}</td></tr>`; }).join('')}</tbody>`;
+        <td class="n">${fmtInt(p.contacts)}</td><td class="n" title="models past the 10% FPR cutoff">${p.pass} / ${p.preds.length}</td></tr>${subs}`; }).join('')}</tbody>`;
+    $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
     $('#pt').querySelectorAll('th').forEach((th) => th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : (c === 'gene' || c === 'name' || c === 'c'); T.sort = c; drawTable(); });
     $('#pager').innerHTML = pages > 1 ? `<button class="btn" id="pp" ${T.page ? '' : 'disabled'}>Previous</button><span>Page ${T.page + 1} of ${pages}</span><button class="btn" id="pn" ${T.page < pages - 1 ? '' : 'disabled'}>Next</button>` : '';
     if (pages > 1) { $('#pp').onclick = () => { T.page--; drawTable(); }; $('#pn').onclick = () => { T.page++; drawTable(); }; }
