@@ -738,9 +738,10 @@ async function viewHome() {
   const tot = (k) => all.reduce((s, m) => s + (m.counts[k] || 0), 0), nScreens = all.reduce((s, m) => s + (m.datasets || []).length, 0);
   app.innerHTML = `
     <section class="hero hero-center">
-      <h1><span class="ini">c</span>lustered <span class="ini">L</span>ocal <span class="ini">I</span>nteraction <span class="ini">P</span>rofiler</h1>
-      <p class="lede">Search AlphaFold-Multimer interaction screens by protein. Every prediction is scored with iLIS and its interface is resolved
-        to residues: which partners a protein is predicted to bind, how confidently, and where.</p>
+      <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
+      <p class="lede">AlphaFold-Multimer predicts not only whether two proteins bind, but through which residues. Pooled across large-scale
+        screens, those interfaces map a protein's many partners onto its sequence and show which of them share a site. Search a protein
+        to see who is predicted to bind it, how confidently, and where.</p>
       <div id="home-search" class="hero-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
@@ -819,8 +820,9 @@ async function showcase() {
     at = (k + S.length) % S.length; const s = S[at], href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
     const paint = () => {
       $('#sc-gene').textContent = s.gene; $('#sc-gene').href = href; $('#sc-sp').textContent = s.spLabel;
-      $('#sc-note').textContent = `${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
-      $('#sc-cap').textContent = 'Contact residue frequency (top) and clustered interaction fingerprints (bottom), colored by cluster';
+      $('#sc-note').textContent = `cLIP · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
+      $('#sc-cap').textContent = 'cLIP (clustered Local Interaction Profiler) groups partners by the residues they contact: '   // each legend phrase stays on one line
+        + ['contacts per residue above,', 'one row per partner below'].map((t) => t.replace(/ /g, '\u00a0')).join(' ');
       $('#sc-open').textContent = `Open ${s.gene} →`; $('#sc-open').href = href;
       draw(s); box.querySelectorAll('.sc-dots button').forEach((b, i) => b.setAttribute('aria-current', i === at ? 'true' : 'false'));
       box.classList.remove('sc-out');

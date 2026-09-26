@@ -54,8 +54,9 @@ a:hover { text-decoration: underline; }
 /* ── home ── */
 .hero { padding: 64px 0 36px; }
 .hero h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5.4vw, 60px); line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 16px; max-width: 16ch; text-wrap: balance; }
-.hero h1 .ini { color: var(--query); }   /* the letters of cLIP */
+.hero h1 .ini { color: var(--query); }   /* the words the headline stresses */
 .hero p.lede { font-size: 18px; color: var(--ink-2); max-width: 62ch; margin: 0 0 26px; }
+@media (max-width: 480px) { .hero p.lede { font-size: 16px; } }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; align-items: center; }
 .chip { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); font-size: 13px; color: var(--ink-2); cursor: pointer; }
 .chip:hover { border-color: var(--blue); color: var(--blue); text-decoration: none; }
@@ -155,7 +156,8 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .showcase .sc-top b { font-family: var(--display); font-size: 22px; letter-spacing: -0.02em; }
 .showcase .sc-top span { font-size: 12.5px; color: var(--ink-3); }
 .showcase canvas { width: 100%; display: block; }
-.showcase .sc-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 13px; color: var(--ink-2); }
+.showcase .sc-foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 10px; font-size: 13px; color: var(--ink-2); }
+.showcase .sc-foot span { text-wrap: pretty; }
 .showcase .sc-top { flex-wrap: wrap; row-gap: 4px; }
 .showcase .sc-name { display: flex; align-items: baseline; gap: 10px; min-width: 0; }
 .showcase .sc-name a { font-family: var(--display); font-size: 22px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); text-decoration: none; }
@@ -352,7 +354,7 @@ table.cuts td { font-family: var(--mono); font-weight: 600; }
 table.cuts thead th { font-size: 12px; color: var(--ink-3); font-weight: 600; }
 /* home hero: one centered column — headline, text, search, totals, examples, then the TP53 preview */
 .hero-center { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 56px 0 28px; }
-.hero-center h1 { max-width: 18ch; margin-inline: auto; }
+.hero-center h1 { max-width: 30ch; margin-inline: auto; }
 .hero-center .lede { margin-inline: auto; }
 .hero-center .hero-search { width: 100%; max-width: 760px; }
 .hero-center .totals, .hero-center .chips { justify-content: center; }
