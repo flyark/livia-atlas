@@ -25,6 +25,7 @@ const ARCHIVE = { doi: '10.5281/zenodo.22964479', url: 'https://doi.org/10.5281/
 const REF = {
   livia: ['Kim & Perrimon (2026) LIVIA, bioRxiv', '10.64898/2026.05.01.721633'],
   flypredictome: ['Kim et al. (2026) FlyPredictome, bioRxiv', '10.64898/2026.04.14.718529'],
+  afmlis: ['Kim et al. (2024) AFM-LIS, bioRxiv', '10.1101/2024.02.19.580970'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
 
@@ -108,12 +109,21 @@ async function datasetRows(ds) {
   ds.rows = prot.rows.map((r) => ({ id: r[c.id], gene: r[c.gene], acc: r[c.acc], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1] }));
   return ds.rows;
 }
-async function species(id) {   // the species index: one row per protein over every screen, keyed by UniProt accession (fly: FlyBase gene)
-  if (SPC[id]) return SPC[id];
+const SPM = {};
+function speciesManifest(id) {   // a species' counts and screens only (the home page needs no more)
+  if (!SPM[id]) SPM[id] = (async () => { const reg = await regSpecies(id); if (!reg) throw new Error(`Unknown species “${id}”.`); return getJSON(new URL(reg.base, location.href).href + 'manifest.json'); })()
+    .catch((e) => { delete SPM[id]; throw e; });
+  return SPM[id];
+}
+function species(id) {   // one load per species however many callers ask at once
+  if (!SPC[id]) SPC[id] = speciesIndex(id).catch((e) => { delete SPC[id]; throw e; });
+  return SPC[id];
+}
+async function speciesIndex(id) {   // the species index: one row per protein over every screen, keyed by UniProt accession (fly: FlyBase gene)
   const reg = await regSpecies(id);
   if (!reg) throw new Error(`Unknown species “${id}”.`);
   const base = new URL(reg.base, location.href).href;
-  const [manifest, prot] = await Promise.all([getJSON(base + 'manifest.json'), getJSON(base + 'proteins.json')]);
+  const [manifest, prot] = await Promise.all([speciesManifest(id), getJSON(base + 'proteins.json')]);
   const c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
   const rows = prot.rows.map((r, i) => {
     const occ = String(r[c.occ] || '').split(' ').filter(Boolean).map((t) => { const k = t.indexOf(':'); return { di: +t.slice(0, k), name: t.slice(k + 1) }; });
@@ -126,9 +136,8 @@ async function species(id) {   // the species index: one row per protein over ev
   const keys = rows.map((r) => ({ gene: r.gene.toLowerCase(), key: r.key.toLowerCase(), acc: (r.acc || '').toLowerCase(), ids: r.occ.map((o) => o.name.toLowerCase()),
     syn: (r.syn || '').toLowerCase().split(/\s+/).filter(Boolean), name: (r.name || '').toLowerCase() }));
   const dsIds = manifest.datasets.map((d) => d.id), regs = await Promise.all(dsIds.map(regDataset));
-  SPC[id] = { id, reg, base, manifest, rows, byKey, byName, byGene, keys, dsIds, dsShort: manifest.datasets.map((d) => d.short),
+  return { id, reg, base, manifest, rows, byKey, byName, byGene, keys, dsIds, dsShort: manifest.datasets.map((d) => d.short),
     dsColor: regs.map((r) => (r && r.color) || '#5B6B7F'), edges: null, cache: new Map() };
-  return SPC[id];
 }
 const srcBadges = (sp, mask) => sp.dsIds.map((_, di) => (mask & (1 << di) ? `<span class="src" style="--c:${sp.dsColor[di]}">${esc(sp.dsShort[di])}</span>` : '')).join('');
 
@@ -141,33 +150,53 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
       const ds = await dataset(setId), rows = await datasetRows(ds);
       map = rows.map((r) => { const R = sp.byName.get(r.id) || sp.byKey.get(r.id); return R ? R.i : -1; }); url = ds.base + 'edges.tsv';
     } else if (setId) for (const id of sp.dsIds) { const TS = await setsOf(await dataset(id)).catch(() => null), S = TS && TS.byId.get(setId); if (S) { url = new URL(S.files.edges, TS.ds.base).href; break; } }
-    const lines = (await getText(url)).split('\n');
-    const head = lines[0].split('\t'), cb = head.indexOf('iLIS_best'), ca = head.indexOf('iLIS_avg'), cs = head.indexOf('src');
-    const adj = new Map();
-    for (let k = 1; k < lines.length; k++) {
-      if (!lines[k]) continue;
-      const t = lines[k].split('\t'), i = map ? map[+t[0]] : +t[0], j = map ? map[+t[1]] : +t[1], e = { best: +t[cb], avg: +t[ca], src: cs >= 0 ? +t[cs] : 1 };
-      if (i < 0 || j < 0 || i == null || j == null) continue;
-      if (!adj.has(i)) adj.set(i, new Map()); if (!adj.has(j)) adj.set(j, new Map());
-      adj.get(i).set(j, e); adj.get(j).set(i, e);
+    // Every protein's neighbours side by side in typed arrays (scores in thousandths, exact to the file's 3 decimals):
+    // a few MB where a Map per protein took tens. adj.get(i) builds one protein's Map when a network asks for it.
+    const text = await getText(url), nl = text.indexOf('\n'), head = text.slice(0, nl).split('\t');
+    const cb = head.indexOf('iLIS_best'), ca = head.indexOf('iLIS_avg'), cs = head.indexOf('src'), N = sp.rows.length;
+    const I = [], J = [], BE = [], AV = [], SR = [];
+    for (let p = nl + 1; p < text.length;) {
+      let e = text.indexOf('\n', p); if (e < 0) e = text.length;
+      if (e > p) { const t = text.slice(p, e).split('\t'), i = map ? map[+t[0]] : +t[0], j = map ? map[+t[1]] : +t[1];
+        if (i >= 0 && j >= 0 && i < N && j < N) { I.push(i); J.push(j); BE.push(Math.round(+t[cb] * 1000)); AV.push(Math.round(+t[ca] * 1000)); SR.push(cs >= 0 ? +t[cs] : 1); } }
+      p = e + 1;
     }
+    const off = new Uint32Array(N + 1);
+    for (let k = 0; k < I.length; k++) { off[I[k] + 1]++; off[J[k] + 1]++; }
+    for (let v = 0; v < N; v++) off[v + 1] += off[v];
+    const at = off.slice(0, N), nb = new Int32Array(2 * I.length), best = new Int16Array(2 * I.length), avg = new Int16Array(2 * I.length), src = new Uint8Array(2 * I.length);
+    const put = (a, b, k) => { const x = at[a]++; nb[x] = b; best[x] = BE[k]; avg[x] = AV[k]; src[x] = SR[k]; };
+    for (let k = 0; k < I.length; k++) { put(I[k], J[k], k); put(J[k], I[k], k); }
+    const memo = new Map();
+    const adj = { get(v) {
+      if (!(v >= 0 && v < N) || off[v] === off[v + 1]) return undefined;
+      if (!memo.has(v)) { if (memo.size > 500) memo.clear(); const m = new Map();
+        for (let x = off[v]; x < off[v + 1]; x++) m.set(nb[x], { best: best[x] / 1000, avg: avg[x] / 1000, src: src[x] }); memo.set(v, m); }
+      return memo.get(v); } };
     return { adj };
   })().catch((e) => { sp.edgesBy.delete(setId); throw e; }));   // a failed read is not kept: the next draw tries again
   return sp.edgesBy.get(setId);
 }
-function parseCSV(text) {
-  const out = []; let row = [], f = '', q = false;
-  for (let i = 0; i < text.length; i++) {
-    const ch = text[i];
-    if (q) { if (ch === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += ch; }
-    else if (ch === '"') q = true;
-    else if (ch === ',') { row.push(f); f = ''; }
-    else if (ch === '\n') { row.push(f); out.push(row); row = []; f = ''; }
-    else if (ch !== '\r') f += ch;
+function parseCSV(text) {   // lis.py CSV: quoted only where a residue list holds commas. Fields are sliced, never built a character at a time
+  const out = [], n = text.length;
+  for (let i = 0; i < n;) {
+    let e = text.indexOf('\n', i); if (e < 0) e = n;
+    const end = e > i && text.charCodeAt(e - 1) === 13 ? e - 1 : e, row = [];
+    for (let k = i; k <= end;) {
+      if (text.charCodeAt(k) === 34 && k < end) {   // "…", with "" for a quote
+        let f = '', m = k + 1;
+        for (;;) { const q = text.indexOf('"', m); if (q < 0 || q >= end) { f += text.slice(m, end); k = end; break; }
+          f += text.slice(m, q); if (text.charCodeAt(q + 1) === 34) { f += '"'; m = q + 2; } else { k = q + 1; break; } }
+        row.push(f); if (k < end && text.charCodeAt(k) === 44) k++; else break;
+      } else { let c = text.indexOf(',', k); if (c < 0 || c > end) c = end; row.push(text.slice(k, c)); k = c + 1; }
+    }
+    out.push(row); i = e + 1;
   }
-  if (f || row.length) { row.push(f); out.push(row); }
   return out;
 }
+// A string cut from a large text keeps that whole text alive (V8 slices point into their parent): what the predictions
+// keep is copied out, so a bundle's CSV can be freed once it is read.
+const own = (s) => (typeof s === 'string' && s.length > 12 ? (' ' + s).slice(1) : s);
 const shiftRanges = (s, k) => (!k || !s || s === '[]' ? s : '[' + String(s).replace(/[\[\]\s]/g, '').split(',').filter(Boolean).map((t) => t.split('-').map((x) => +x + k).join('-')).join(',') + ']');
 const rangesOf = (a) => { if (!a.length) return '[]'; const t = []; let x = a[0], y = a[0];
   for (const r of a.slice(1)) { if (r === y + 1) { y = r; continue; } t.push(x === y ? String(x) : `${x}-${y}`); x = y = r; } t.push(x === y ? String(x) : `${x}-${y}`); return '[' + t.join(',') + ']'; };
@@ -196,13 +225,17 @@ function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: li
       const bytes = await res.arrayBuffer(), zip = await JSZip.loadAsync(bytes), files = Object.keys(zip.files);
       const csvName = files.find((f) => /\.csv$/i.test(f) && !/identity[_-]?map/i.test(f)), faName = files.find((f) => /\.(fa|fasta)$/i.test(f));
       const conName = files.find((f) => /(^|\/)constructs\.tsv$/.test(f));
-      const t = parseCSV(await zip.file(csvName).async('string'));
-      return { rel, bytes, header: t[0], H: Object.fromEntries(t[0].map((k, i) => [k, i])), rows: t.slice(1).filter((r) => r.length > 10),
+      return { rel, bytes, csvName, ...(await csvRows(zip, csvName)),
         seqs: parseFasta(faName ? await zip.file(faName).async('string') : ''), cons: conName ? parseCons(await zip.file(conName).async('string')) : null };
     })();
     ds.raw.set(rel, job); job.catch(() => ds.raw.delete(rel));
-  }
+    while (ds.raw.size > 8) ds.raw.delete(ds.raw.keys().next().value);   // the most recent bundles only
+  } else { const job = ds.raw.get(rel); ds.raw.delete(rel); ds.raw.set(rel, job); }
   return ds.raw.get(rel);
+}
+async function csvRows(zip, csvName) {   // a bundle's lis.py rows; merged() reads them once and lets them go (a big bundle's rows run to hundreds of MB)
+  const t = parseCSV(await zip.file(csvName).async('string'));
+  return { header: t[0], H: Object.fromEntries(t[0].map((k, i) => [k, i])), rows: t.slice(1).filter((r) => r.length > 10) };
 }
 // Every prediction of one protein across the screens of its species. A pair predicted in two screens, or both ways
 // round in one, keeps every model; each keeps its screen and chain order (its "run") and rank. A gene-keyed bundle
@@ -218,17 +251,18 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
       if (!parts.length) throw new Error(`No interaction data for ${P.gene}.`);
       const preds = [], runs = new Map(), seqs = new Map(), cons = new Map(), sets = [], TS = (parts.find((x) => x.TS) || {}).TS || null;
       for (const part of parts) {
+        if (!part.raw.rows) Object.assign(part.raw, await csvRows(await JSZip.loadAsync(part.raw.bytes), part.raw.csvName));   // read again: an earlier view let them go
         const C = part.raw.cons;
         if (C) for (const [nm, c] of C) cons.set(nm, c);
         const keyOf = (nm) => { const c = C && C.get(nm); if (c) return c.key; const r = sp.byName.get(nm); return r ? r.key : nm; };
         for (const [nm, s] of part.raw.seqs) seqs.set(C ? nm : keyOf(nm), s);   // gene-keyed: the reference under the gene key, constructs by name
-        const H = part.raw.H, num = (r, c) => (H[c] == null || r[H[c]] === '' ? NaN : +r[H[c]]);
+        const H = part.raw.H, hdr = part.raw.header.map(own), num = (r, c) => (H[c] == null || r[H[c]] === '' ? NaN : +r[H[c]]);
         for (const r of part.raw.rows) {
           const nm = r[H.name], at = nm.indexOf('___'), a = nm.slice(0, at), b = nm.slice(at + 3), qi = C ? keyOf(a) === P.key : a === part.name;
           if (!qi && (C ? keyOf(b) !== P.key : b !== part.name)) continue;
           const tags = part.TS && H.batch != null ? part.TS.runSets.get(+r[H.batch]) || [] : null;   // the run's thematic sets
           if (setId && !(tags && tags.some((t) => t.id === setId))) continue;
-          const ps = primarySet(tags), qc = qi ? a : b, pc = qi ? b : a, key = keyOf(pc), set = ps ? ps.short : H.set != null ? r[H.set] : '';
+          const ps = primarySet(tags), qc = own(qi ? a : b), pc = own(qi ? b : a), key = keyOf(pc), set = ps ? ps.short : H.set != null ? own(r[H.set]) : '';
           const rid = part.di + '|' + nm + (H.batch != null ? '|' + r[H.batch] : '');
           if (!runs.has(rid)) runs.set(rid, { id: rid, di: part.di, qi, key, qc, pc, set, tags: tags ? tags.map((t) => t.id) : [] });
           if (set && !sets.includes(set)) sets.push(set);
@@ -237,11 +271,13 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
             pTM: num(r, 'pTM'), LIS: num(r, 'LIS'), cLIS: num(r, 'cLIS'), LIA: num(r, 'LIA'), cLIA: num(r, 'cLIA'), ipSAE: num(r, 'ipSAE'), actifpTM: num(r, 'actifpTM'),
             qPl: num(r, s('pLDDT_i', 'pLDDT_j')), pPl: num(r, s('pLDDT_j', 'pLDDT_i')), qLIR: num(r, s('LIR_i', 'LIR_j')), pLIR: num(r, s('LIR_j', 'LIR_i')),
             qcLIR: num(r, s('cLIR_i', 'cLIR_j')), pcLIR: num(r, s('cLIR_j', 'cLIR_i')), qLen: num(r, s('len_i', 'len_j')), pLen: num(r, s('len_j', 'len_i')),
-            qL: r[H[s('LIR_indices_i', 'LIR_indices_j')]], pL: r[H[s('LIR_indices_j', 'LIR_indices_i')]],
-            qC: r[H[s('cLIR_indices_i', 'cLIR_indices_j')]], pC: r[H[s('cLIR_indices_j', 'cLIR_indices_i')]], row: r, hdr: part.raw.header };
+            qL: own(r[H[s('LIR_indices_i', 'LIR_indices_j')]]), pL: own(r[H[s('LIR_indices_j', 'LIR_indices_i')]]),
+            qC: own(r[H[s('cLIR_indices_i', 'cLIR_indices_j')]]), pC: own(r[H[s('cLIR_indices_j', 'cLIR_indices_i')]]), row: null, hdr: null };
+          if (p.iLIS >= CUT[10]) { p.row = r.map(own); p.hdr = hdr; }   // only rows past the lowest cutoff are ever clustered
           if (!Number.isFinite(p.iLISA)) p.iLISA = (p.iLIS || 0) * (p.iLIA || 0);
           preds.push(p);
         }
+        part.raw.rows = null;   // read: the predictions keep what they need (and the rows past the cutoff, below)
       }
       const aggregate = (list) => {   // predictions → one row per partner: its runs, its best and average scores
         const byP = new Map();
@@ -312,7 +348,6 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
         const qName = choices.length ? choice : [...nameN].sort((x, y) => y[1] - x[1]).map(([n]) => n)[0] || '';
         return { choice, rows, qLen, qName, aside };
       };
-      for (const p of preds) if (!(p.iLIS >= CUT[10])) { delete p.row; delete p.hdr; }   // only rows past the lowest cutoff are ever clustered
       const C0 = clipFor(choices.length ? choices[0].id : '');
       if (scope && !preds.length) throw new Error(`${P.gene} has no predictions in this ${onlyDi >= 0 ? 'screen' : 'set'}.`);
       const all = { parts, preds, partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside, iso: null };
@@ -322,15 +357,18 @@ function merged(sp, P, scope = '') {   // scope: one screen of the species (its 
       all.only = (id) => {
         if (choices.length < 2) return all;
         if (!views.has(id)) {
-          const ps = preds.filter((p) => (id ? p.qc === id : !others.has(p.qc))), C = clipFor(id);
-          views.set(id, { ...all, preds: ps, partners: aggregate(ps), C0: C, clipRows: C.rows, qLen: C.qLen, qName: C.qName, aside: C.aside, iso: id });
+          const ps = preds.filter((p) => (id ? p.qc === id : !others.has(p.qc))), v = { ...all, preds: ps, partners: aggregate(ps), iso: id };
+          let C = null; const clip = () => (C ||= clipFor(id));   // built when this isoform is the one shown, not for the comparison table
+          Object.defineProperties(v, { C0: { get: clip }, clipRows: { get: () => clip().rows }, qLen: { get: () => clip().qLen }, qName: { get: () => clip().qName }, aside: { get: () => clip().aside } });
+          views.set(id, v);
         }
         return views.get(id);
       };
       return all;
     })();
     sp.cache.set(ck, job); job.catch(() => sp.cache.delete(ck));
-  }
+    while (sp.cache.size > 6) sp.cache.delete(sp.cache.keys().next().value);   // the proteins read most recently
+  } else { const job = sp.cache.get(ck); sp.cache.delete(ck); sp.cache.set(ck, job); }
   return sp.cache.get(ck);
 }
 const runLabel = (sp, B, rid, P) => { const ru = B.runs.get(rid); if (!ru) return ''; if (ru.label) return ru.label;
@@ -470,7 +508,8 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
     else if (e.key === 'Enter' && items[on >= 0 ? on : 0]) { go(items[on >= 0 ? on : 0]); }
     else if (e.key === 'Escape') { box.hidden = true; }
   });
-  document.addEventListener('click', (e) => { if (!host.contains(e.target)) box.hidden = true; });
+  const outside = (e) => { if (!host.isConnected) { document.removeEventListener('click', outside); return; } if (!host.contains(e.target)) box.hidden = true; };
+  document.addEventListener('click', outside);   // gone with the page
   if (autofocus) setTimeout(() => input.focus(), 50);
   return input;
 }
@@ -644,12 +683,13 @@ function canvasAxes(g, xs, ys, m, W, H, xTitle, yTitle) {
 }
 
 /* ── views ───────────────────────────────────────────────────────────────────────────────────────────── */
-const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: ['arm', 'dsh', 'Ras85D', 'N', 'yki', 'Akt'] };   // example proteins on the home page
+const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: ['arm', 'dsh', 'Ras85D', 'N', 'yki', 'Akt'],   // example proteins on the home page
+  zebrafish: ['ksr1a', 'map3k7'], yeast: ['PRR2', 'YAK1'], worm: ['ksr-1', 'par-1'] };
 async function viewHome() {
-  const gen = ROUTE, reg = await registry(), SPX = reg.species[0], sp = await species(SPX.id);
-  const all = await Promise.all((reg.species || []).map((x) => species(x.id)));   // totals over every species and screen: they grow as screens are added
+  // Totals come from the species manifests alone; the species indexes (search) load once the page is idle.
+  const gen = ROUTE, reg = await registry(), all = await Promise.all((reg.species || []).map((x) => speciesManifest(x.id)));
   if (stale(gen)) return;
-  const tot = (k) => all.reduce((s, x) => s + (x.manifest.counts[k] || 0), 0), nScreens = all.reduce((s, x) => s + x.dsIds.length, 0);
+  const tot = (k) => all.reduce((s, m) => s + (m.counts[k] || 0), 0), nScreens = all.reduce((s, m) => s + (m.datasets || []).length, 0);
   app.innerHTML = `
     <section class="hero hero-center">
       <h1>Every predicted <em>partner</em>, down to the <em>residue</em>.</h1>
@@ -659,11 +699,8 @@ async function viewHome() {
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
       <div class="chips"><span class="lbl">Try</span>${(reg.species || []).map((x, i) => (reg.species.length > 1 ? `<span class="lbl${i ? ' sp' : ''}">${esc(x.label)}</span>` : '')
-        + (TRY[x.id] || []).map((g) => `<a class="chip" data-sp="${x.id}" data-g="${g}">${g}</a>`).join('')).join('')}</div>
-      <a class="showcase" id="showcase" href="#/${sp.id}/P04637" style="color:inherit;text-decoration:none">
-        <div class="sc-top"><b>TP53</b><span id="sc-note">clustering its partners…</span></div>
-        <canvas id="sc-cv" height="150"></canvas>
-        <div class="sc-foot"><span>Contact residue frequency, colored by cluster</span><span style="color:var(--blue)">Open TP53 →</span></div></a>
+        + (TRY[x.id] || []).map((g) => `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`).join('')).join('')}</div>
+      <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
     </section>
     ${(REG.themes || []).length ? '<h2 class="section-h">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h">Datasets</h2>
@@ -671,13 +708,13 @@ async function viewHome() {
     <h2 class="section-h">How it works</h2>
     <div class="steps">
       <div class="step"><h4>1 · Predict</h4><p>A screen of protein pairs folded with AlphaFold-Multimer (or any predictor that reports PAE).</p></div>
-      <div class="step"><h4>2 · Score</h4><p>lis.py scores each prediction over its confident residue pairs only: iLIS, with cutoffs benchmarked at 10%, 5% and 1% false-positive rate (${cite('flypredictome')}).</p></div>
+      <div class="step"><h4>2 · Score</h4><p>lis.py (<a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>) scores each prediction over its confident residue pairs only: iLIS, with cutoffs benchmarked at 10%, 5% and 1% false-positive rate (${cite('flypredictome')}).</p></div>
       <div class="step"><h4>3 · Resolve</h4><p>The contact residues of every interface are kept, so partners can be compared by where they bind and clustered by their interaction fingerprints with LIVIA cLIP.</p></div>
     </div>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
-  showcase(sp, sp.byKey.get('P04637'));
-  app.querySelectorAll('.chip[data-g]').forEach((a) => a.onclick = async () => { const s2 = await species(a.dataset.sp), r = resolveRow(s2, a.dataset.g); if (r) location.hash = `#/${s2.id}/${r.key}`; });
-  fillDsStats(); fillThemes();
+  showcase(); fillDsStats(); fillThemes();
+  const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1500));
+  idle(() => { if (!stale(gen)) for (const x of reg.species || []) species(x.id).catch(() => {}); }, { timeout: 4000 });   // search is instant by the first keystroke
 }
 async function fillThemes() {   // home: each theme's species and totals, from its members' counts
   const reg = await registry(), box = $('#themes'); if (!box) return;
@@ -707,24 +744,52 @@ async function fillDsStats() {
       `<a class="src" style="--c:${x.color}" href="#/datasets/${d.id}/${x.id}">${esc(x.short)}</a>`).join('')}<a href="#/datasets/${d.id}">all ${TS.list.length} ›</a></div>`);
   }
 }
-async function showcase(sp, P) {
-  if (!P) return;
-  const gen = ROUTE;
-  try {
-    const B = await merged(sp, P), M = await runClip(B.clipRows, B.qLabel, CUT[10]);
-    const cv = $('#sc-cv'); if (!cv || stale(gen)) return;
-    const L = M.plen || P.clen, n = M.fingerprints.length, tot = new Uint16Array(L + 2), byC = new Map();
-    for (let i = 0; i < n; i++) for (const r of M.fingerprints[i]) { if (r < 1 || r > L) continue; tot[r]++; const m = byC.get(r) || {}; m[M.labels[i]] = (m[M.labels[i]] || 0) + 1; byC.set(r, m); }
-    let max = 1; for (let r = 1; r <= L; r++) max = Math.max(max, tot[r]);
-    const W = cv.clientWidth, H = 150, g = canvasCtx(cv, W, H);
-    const x = (r) => (r - 1) / L * W, bw = Math.max(1, W / L), base = H - 18;
+// The home banner: example proteins from every species, precomputed by LIVIA cLIP (atlas build/make_showcase.js), one
+// every 7 s, alternating the contact residue frequency with the clustered fingerprints. Hover or focus pauses it; with
+// reduced motion it only moves when asked.
+async function showcase() {
+  const gen = ROUTE, box = $('#showcase'); if (!box) return;
+  let data; try { data = await getJSON('data/showcase.json'); } catch (e) { box.remove(); return; }
+  const S = (data && data.slides) || []; if (stale(gen) || !S.length) { if (!S.length) box.remove(); return; }
+  box.innerHTML = `<div class="sc-top"><div class="sc-name"><a id="sc-gene"></a><span class="sc-sp" id="sc-sp"></span></div><span id="sc-note"></span></div>
+    <div class="sc-stage"><canvas id="sc-cv" height="150"></canvas></div>
+    <div class="sc-foot"><span id="sc-cap"></span><a id="sc-open"></a></div>
+    <div class="sc-dots">${S.map((s, k) => `<button type="button" data-k="${k}" aria-label="${esc(s.gene)}, ${esc(s.spLabel)}"></button>`).join('')}</div>`;
+  const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let at = 0, timer = null, paused = false;
+  const draw = (s, kind) => {
+    const cv = $('#sc-cv'), W = cv.clientWidth, H = 150, g = canvasCtx(cv, W, H), L = s.L, base = H - 18, x = (r) => (r - 1) / L * W, bw = Math.max(1, W / L);
     g.fillStyle = '#F4F7FA'; g.fillRect(0, 0, W, base);
-    for (let r = 1; r <= L; r++) { if (!tot[r]) continue; let dom = 1, b = -1; const cc = byC.get(r); for (const c in cc) if (cc[c] > b) { b = cc[c]; dom = +c; }
-      const h = tot[r] / max * (base - 6); g.fillStyle = clusterColor(dom, M.k); g.fillRect(x(r), base - h, bw, h); }
-    g.fillStyle = '#8593A5'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textAlign = 'left'; g.fillText('1', 0, H - 4); g.textAlign = 'right'; g.fillText(String(L), W, H - 4);
-    const parts = new Set(M.preds.map((p) => (B.labels.get(p.partner) || {}).key)).size;
-    $('#sc-note').textContent = `${M.k} clusters · ${fmtInt(parts)} partners past 10% FPR`;
-  } catch (e) { const n = !stale(gen) && $('#sc-note'); if (n) n.textContent = ''; }
+    if (kind === 'freq') {   // contact residue frequency, each residue in its most frequent cluster's colour
+      const max = Math.max(1, ...s.tot);
+      for (let r = 1; r <= L; r++) { const n = s.tot[r - 1]; if (!n) continue; const h = n / max * (base - 6); g.fillStyle = clusterColor(s.dom[r - 1] || 1, s.k); g.fillRect(x(r), base - h, bw, h); }
+    } else {   // one row per prediction in dendrogram order, a mark per contact residue, in its cluster's colour; the strip on the left is the cluster
+      const n = s.fp.length, rh = (base - 4) / n, pad = 8;
+      s.fp.forEach(([c, ...res], i) => { const y = 2 + i * rh, col = clusterColor(c, s.k); g.fillStyle = col; g.fillRect(0, y, 5, Math.max(1, rh));
+        for (const r of res) g.fillRect(pad + (r - 1) / L * (W - pad), y, Math.max(1, (W - pad) / L), Math.max(1, rh)); });
+    }
+    g.fillStyle = '#8593A5'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textAlign = 'left'; g.fillText('1', 0, H - 4); g.textAlign = 'right'; g.fillText(fmtInt(L), W, H - 4);
+  };
+  const show = (k, user) => {
+    if (stale(gen) || !box.isConnected) { clearInterval(timer); return; }
+    at = (k + S.length) % S.length; const s = S[at], kind = at % 2 ? 'fp' : 'freq', href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
+    const paint = () => {
+      $('#sc-gene').textContent = s.gene; $('#sc-gene').href = href; $('#sc-sp').textContent = s.spLabel;
+      $('#sc-note').textContent = `${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
+      $('#sc-cap').textContent = kind === 'freq' ? 'Contact residue frequency, colored by cluster' : 'Interaction fingerprints, one row per prediction, clustered';
+      $('#sc-open').textContent = `Open ${s.gene} →`; $('#sc-open').href = href;
+      draw(s, kind); box.querySelectorAll('.sc-dots button').forEach((b, i) => b.setAttribute('aria-current', i === at ? 'true' : 'false'));
+      box.classList.remove('sc-out');
+    };
+    if (reduce || !user && at === 0 && !box.dataset.shown) { paint(); box.dataset.shown = '1'; return; }
+    box.classList.add('sc-out'); setTimeout(paint, 180);
+  };
+  const run = () => { clearInterval(timer); if (!reduce) timer = setInterval(() => { if (!paused) show(at + 1); }, 7000); };
+  box.querySelectorAll('.sc-dots button').forEach((b) => b.onclick = () => { show(+b.dataset.k, true); run(); });
+  box.addEventListener('mouseenter', () => { paused = true; }); box.addEventListener('mouseleave', () => { paused = false; });
+  box.addEventListener('focusin', () => { paused = true; }); box.addEventListener('focusout', () => { paused = false; });
+  window.onresize = () => { if (box.isConnected) draw(S[at], at % 2 ? 'fp' : 'freq'); };
+  show(0); run();
 }
 
 async function viewDatasets() {
@@ -737,31 +802,34 @@ async function viewDatasets() {
 }
 
 function viewAbout() {
-  app.innerHTML = `<div class="reading"><div class="crumbs"><a href="#/">Atlas</a> / About</div>
+  const ref = (k, text) => `<li>${text} <a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">doi.org/${REF[k][1]}</a></li>`;
+  const AFM = '<a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>';
+  app.innerHTML = `<div class="reading about"><div class="crumbs"><a href="#/">Atlas</a> / About</div>
     <div class="card" style="margin-top:6px"><h2>What this is</h2>
-      <p style="max-width:78ch">LIVIA Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
-      <b>iLIS</b>, the integrated local interaction score computed by lis.py over residue pairs with predicted aligned error of at most 12 Å (LIS), and over those that
-      are also in contact, Cβ–Cβ distance of at most 8 Å (cLIS): iLIS = √(LIS × cLIS). Benchmarked cutoffs mark predictions at a 10%, 5% and 1% false-positive rate
-      (iLIS ≥ 0.223, 0.339, 0.551; ${cite('flypredictome')}).</p>
-      <table class="cuts"><caption>Benchmarked cutoffs, from the AFM-LIS benchmark on Y2H reference sets in yeast, fly and human
-        (${cite('flypredictome')}; <a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>)</caption>
+      <p>LIVIA Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
+      <b>iLIS</b>, the integrated local interaction score, computed by lis.py (${AFM} on GitHub) over residue pairs with predicted aligned error of at most 12 Å
+      (LIS), and over those that are also in contact, Cβ–Cβ distance of at most 8 Å (cLIS): iLIS = √(LIS × cLIS).</p>
+      <table class="cuts"><caption>Benchmarked cutoffs at a 10%, 5% and 1% false-positive rate, from Y2H reference sets in yeast, fly and human (${cite('flypredictome')})</caption>
         <thead><tr><th></th><th>10% FPR</th><th>5% FPR</th><th>1% FPR</th></tr></thead>
         <tbody>${[['iLIS, best model', FPR.iLIS, 3], ['iLIS, average over models', FPR_AVG.iLIS, 3], ['ipTM, best model', FPR.ipTM, 2], ['ipTM, average over models', FPR_AVG.ipTM, 3]]
           .map(([l, c, d]) => `<tr><th>${l}</th>${c.map((v, j) => `<td style="color:${BAND[[10, 5, 1][j]]}">≥ ${v.toFixed(d)}</td>`).join('')}</tr>`).join('')}</tbody></table>
-      <p style="max-width:78ch">Each protein has one page per species that gathers its predictions from every screen. A pair predicted in two screens, or both ways round,
+      <p>Each protein has one page per species that gathers its predictions from every screen. A pair predicted in two screens, or both ways round,
       keeps every model with its source. The interface residues on both proteins are kept for every prediction, and each protein page runs
       <a href="${LIVIA}clip.html" target="_blank" rel="noopener">LIVIA cLIP</a> in the browser: partners are clustered by their interaction fingerprints, and the clusters
       are mapped onto the AlphaFold DB structure with pLDDT and, for human proteins, AlphaMissense.</p>
-      <p style="max-width:78ch">Fly pages are organized by FlyBase gene. FlyPredictome folded many constructs of a gene: isoforms, fragments, phosphosite windows,
-      point mutants. Every name is resolved to its gene, and a construct is placed on the gene's reference sequence when its sequence is known, so its
-      contacts are drawn in the gene's residue numbering. Clustering uses the full-length construct; the others are listed with their partners.
-      The table of construct names and their genes is on the FlyPredictome page.</p></div>
+      <p>Fly pages are organized by FlyBase gene. FlyPredictome folded many constructs of a gene: isoforms, fragments, phosphosite windows,
+      point mutants. Every name is resolved to its gene, and each construct is placed on the gene's reference sequence by its folded sequence, so its
+      contacts are drawn in the gene's residue numbering. An isoform too unlike the reference to be placed is shown on its own: its page has an
+      Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p></div>
     <div class="card"><h2>Cite</h2>
-      <p style="max-width:78ch">Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv.
-      <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">doi.org/${REF.livia[1]}</a></p>
-      <p style="max-width:78ch">iLIS cutoffs: Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. bioRxiv.
-      <a href="https://doi.org/${REF.flypredictome[1]}" target="_blank" rel="noopener">doi.org/${REF.flypredictome[1]}</a></p>
-      <p class="muted" style="font-size:14px">Each dataset page lists the screen it comes from; please cite that source too.</p></div></div>`;
+      <ul class="refs">
+        ${ref('livia', 'LIVIA: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.')}
+        ${ref('flypredictome', 'iLIS and its cutoffs: Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.')}
+        ${ref('afmlis', 'LIS and AFM-LIS: Kim, A.-R. et al. (2024). Enhanced protein-protein interaction discovery via AlphaFold-Multimer. <i>bioRxiv</i>.')}
+        <li>The data: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. <i>Zenodo</i>.
+          <a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi.org/${ARCHIVE.doi}</a></li>
+      </ul>
+      <p class="muted" style="font-size:14px;margin-bottom:0">Each dataset page names the screen it comes from; please cite that source too.</p></div></div>`;
 }
 
 // The counts of a screen, a species or a set, in one row: a prediction is a pair folded once (its ranked models are
@@ -860,7 +928,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925i'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925j'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
   const id = ++clipSeq;
   return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
@@ -973,7 +1041,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>`;
   app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'smooth' }); });
-  { const dm = $('.dmenu'); document.addEventListener('click', (e) => { if (dm && dm.open && !dm.contains(e.target)) dm.open = false; }); }
+  { const dm = $('.dmenu'), shut = (e) => { if (!dm || !dm.isConnected) { document.removeEventListener('click', shut); return; } if (dm.open && !dm.contains(e.target)) dm.open = false; }; document.addEventListener('click', shut); }
   app.querySelectorAll('[data-dl]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it, save it
     e.preventDefault(); const o = occ[+a.dataset.dl];
     try { const raw = await bundleRaw(o.ds, o.name), u = URL.createObjectURL(new Blob([raw.bytes], { type: 'application/zip' }));
