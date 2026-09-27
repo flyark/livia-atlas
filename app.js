@@ -187,25 +187,25 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
     // Every protein's neighbours side by side in typed arrays (scores in thousandths, exact to the file's 3 decimals):
     // a few MB where a Map per protein took tens. adj.get(i) builds one protein's Map when a network asks for it.
     const text = await getText(url), nl = text.indexOf('\n'), head = text.slice(0, nl).split('\t');
-    const cb = head.indexOf('iLIS_best'), ca = head.indexOf('iLIS_avg'), cs = head.indexOf('src'), N = sp.rows.length;
-    const I = [], J = [], BE = [], AV = [], SR = [];
+    const cb = head.indexOf('iLIS_best'), ca = head.indexOf('iLIS_avg'), cs = head.indexOf('src'), cp = head.indexOf('ipTM_best'), N = sp.rows.length;
+    const I = [], J = [], BE = [], AV = [], SR = [], IP = [];
     for (let p = nl + 1; p < text.length;) {
       let e = text.indexOf('\n', p); if (e < 0) e = text.length;
       if (e > p) { const t = text.slice(p, e).split('\t'), i = map ? map[+t[0]] : +t[0], j = map ? map[+t[1]] : +t[1];
-        if (i >= 0 && j >= 0 && i < N && j < N) { I.push(i); J.push(j); BE.push(Math.round(+t[cb] * 1000)); AV.push(Math.round(+t[ca] * 1000)); SR.push(cs >= 0 ? +t[cs] : 1); } }
+        if (i >= 0 && j >= 0 && i < N && j < N) { I.push(i); J.push(j); BE.push(Math.round(+t[cb] * 1000)); AV.push(Math.round(+t[ca] * 1000)); SR.push(cs >= 0 ? +t[cs] : 1); IP.push(cp >= 0 ? Math.round(+t[cp] * 100) : -1); } }
       p = e + 1;
     }
     const off = new Uint32Array(N + 1);
     for (let k = 0; k < I.length; k++) { off[I[k] + 1]++; off[J[k] + 1]++; }
     for (let v = 0; v < N; v++) off[v + 1] += off[v];
-    const at = off.slice(0, N), nb = new Int32Array(2 * I.length), best = new Int16Array(2 * I.length), avg = new Int16Array(2 * I.length), src = new Uint8Array(2 * I.length);
-    const put = (a, b, k) => { const x = at[a]++; nb[x] = b; best[x] = BE[k]; avg[x] = AV[k]; src[x] = SR[k]; };
+    const at = off.slice(0, N), nb = new Int32Array(2 * I.length), best = new Int16Array(2 * I.length), avg = new Int16Array(2 * I.length), src = new Uint8Array(2 * I.length), ipt = new Int16Array(2 * I.length);
+    const put = (a, b, k) => { const x = at[a]++; nb[x] = b; best[x] = BE[k]; avg[x] = AV[k]; src[x] = SR[k]; ipt[x] = IP[k]; };
     for (let k = 0; k < I.length; k++) { put(I[k], J[k], k); put(J[k], I[k], k); }
     const memo = new Map();
     const adj = { get(v) {
       if (!(v >= 0 && v < N) || off[v] === off[v + 1]) return undefined;
       if (!memo.has(v)) { if (memo.size > 500) memo.clear(); const m = new Map();
-        for (let x = off[v]; x < off[v + 1]; x++) m.set(nb[x], { best: best[x] / 1000, avg: avg[x] / 1000, src: src[x] }); memo.set(v, m); }
+        for (let x = off[v]; x < off[v + 1]; x++) m.set(nb[x], { best: best[x] / 1000, avg: avg[x] / 1000, src: src[x], iptm: ipt[x] >= 0 ? ipt[x] / 100 : NaN }); memo.set(v, m); }
       return memo.get(v); } };
     return { adj };
   })().catch((e) => { sp.edgesBy.delete(setId); throw e; }));   // a failed read is not kept: the next draw tries again
@@ -301,8 +301,8 @@ function countOnce(list) {
   for (const p of list) { n.set(p.run, (n.get(p.run) || 0) + 1); const b = best.get(p.sp); if (!b || (p.iLIS || 0) > b.v) best.set(p.sp, { v: p.iLIS || 0, run: p.run }); }
   let s = 0; for (const b of best.values()) s += n.get(b.run); return s;
 }
-// Hand a bundle to a cLIP tab opened with ?post=1: ping until it says it is ready, then post the bytes (its handshake).
-function handToClip(w, msg) {
+// Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
+function handTo(w, msg) {
   const origin = new URL(LIVIA, location.href).origin; let done = false, n = 0;
   const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready' || done) return; done = true; window.removeEventListener('message', onMsg); clearInterval(t); w.postMessage(msg, origin); };
   window.addEventListener('message', onMsg);
@@ -1065,7 +1065,22 @@ function stopClip() {   // leaving a page mid-clustering: drop its job, so the n
 }
 const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the fingerprint: dendrogram + cluster strip / y axis live in AXL
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
-const ECOL = () => d3.scaleLinear().domain([CUT[10], CUT[5], CUT[1], 0.85]).range(['#E0AE2E', '#16956A', '#6D4FD1', '#2A1B7A']).interpolate(d3.interpolateLab).clamp(true);
+// Edge colors of every network: best iLIS from the 10% FPR cutoff (0.223) to 0.85, in the palette the reader picks
+// (remembered in this browser). "FPR bands" passes through the band colors used across the page.
+const EDGE_PALETTES = { bands: { label: 'FPR bands', stops: ['#E0AE2E', '#16956A', '#6D4FD1', '#2A1B7A'] }, viridis: { label: 'Viridis', fn: 'interpolateViridis', to: 0.92 },
+  magma: { label: 'Magma', fn: 'interpolateMagma', from: 0.12, to: 0.82 }, cividis: { label: 'Cividis', fn: 'interpolateCividis' },
+  blues: { label: 'Blues', fn: 'interpolateBlues', from: 0.35 }, reds: { label: 'Reds', fn: 'interpolateReds', from: 0.35 }, grays: { label: 'Grays', fn: 'interpolateGreys', from: 0.35 } };
+let EDGE_PAL = (() => { try { const v = localStorage.getItem('atlas.edgePalette'); return EDGE_PALETTES[v] ? v : 'bands'; } catch (e) { return 'bands'; } })();
+function setEdgePalette(v) { if (!EDGE_PALETTES[v]) return; EDGE_PAL = v; try { localStorage.setItem('atlas.edgePalette', v); } catch (e) { /* private window */ } }
+const palStops = (name) => { const P = EDGE_PALETTES[name] || EDGE_PALETTES.bands; if (P.stops) return P.stops;
+  const f = d3[P.fn], a = P.from ?? 0, b = P.to ?? 1; return [0, 1 / 3, 2 / 3, 1].map((t) => d3.color(f(a + (b - a) * t)).formatHex()); };
+const paletteSelect = (id) => `<select id="${id}" aria-label="Edge colors">${Object.entries(EDGE_PALETTES).map(([k, P]) => `<option value="${k}"${k === EDGE_PAL ? ' selected' : ''}>${P.label}</option>`).join('')}</select>`;
+const ECOL = (name = EDGE_PAL) => d3.scaleLinear().domain([CUT[10], CUT[5], CUT[1], 0.85]).range(palStops(name)).interpolate(d3.interpolateLab).clamp(true);
+function paintEdgeKey(grad, labels, ecol) {   // the gradient under a network: 0.223 … 0.85+
+  grad.style.background = `linear-gradient(90deg, ${d3.range(0, 1.0001, 0.1).map((t) => `${ecol(CUT[10] + t * (0.85 - CUT[10]))} ${(t * 100).toFixed(0)}%`).join(', ')})`;
+  const pos = (v) => `${((v - CUT[10]) / (0.85 - CUT[10])) * 100}%`;
+  labels.innerHTML = [[CUT[10], '0.223'], [CUT[5], '0.339'], [CUT[1], '0.551'], [0.85, '0.85+']].map(([v, l]) => `<span style="left:${pos(v)}">${l}</span>`).join('');
+}
 const EWID = (a) => 0.5 + 4.3 * Math.max(0, Math.min(1, a / 0.8));
 function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene symbol (exact case first), a CG number or an older name
   if (sp.byKey.has(q)) return sp.byKey.get(q);
@@ -1154,9 +1169,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><span>Partners</span><select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select>
-        <span>Cutoff</span><select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select></div></div>
+        <span>Cutoff</span><select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select><span>Edge colors</span>${paletteSelect('net-pal')}</div></div>
       <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color. Edges between partners join partners
-        predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open.</p>
+        predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
       <div class="netkey"><div><span>Edge color · best iLIS over the models</span><div class="grad" id="net-grad"></div><div class="gl" id="net-gl"></div></div>
         <div><span>Edge width · average iLIS</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
@@ -1179,7 +1194,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   app.querySelectorAll('[data-clip]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it here and hand its bytes to cLIP
     e.preventDefault(); const o = occ[+a.dataset.clip], w = window.open(`${LIVIA}clip.html?post=1`, '_blank'); if (!w) return;
     try { const raw = await bundleRaw(o.ds, o.name), data = raw.isoforms ? await (await wholeBundle(o.ds, raw)).arrayBuffer() : raw.bytes.slice(0);
-      handToClip(w, { type: 'livia-load', name: `${o.name}.zip`, data, gene: P.gene }); }
+      handTo(w, { type: 'livia-load', name: `${o.name}.zip`, data, gene: P.gene }); }
     catch (err) { a.textContent = 'Not available'; try { w.close(); } catch (x) { /* already closed */ } } });
   app.querySelectorAll('[data-dl]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it, save it
     e.preventDefault(); const o = occ[+a.dataset.dl];
@@ -1774,12 +1789,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; drawTable(); };
 
   /* network: edge color = best iLIS over the models, edge width = average iLIS */
-  const netBox = $('#net'), ecol = ECOL();
-  { const stops = d3.range(0, 1.0001, 0.1).map((t) => { const v = CUT[10] + t * (0.85 - CUT[10]); return `${ecol(v)} ${(t * 100).toFixed(0)}%`; });
-    $('#net-grad').style.background = `linear-gradient(90deg, ${stops.join(', ')})`;
-    const pos = (v) => ((v - CUT[10]) / (0.85 - CUT[10]) * 100).toFixed(1) + '%';
-    $('#net-gl').innerHTML = [[CUT[10], '0.223'], [CUT[5], '0.339'], [CUT[1], '0.551'], [0.85, '0.85+']].map(([v, l]) => `<span style="left:${pos(v)}">${l}</span>`).join('');
-    const w = d3.select('#net-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
+  const netBox = $('#net'); let ecol = ECOL();
+  paintEdgeKey($('#net-grad'), $('#net-gl'), ecol);
+  $('#net-pal').onchange = (e) => { setEdgePalette(e.target.value); ecol = ECOL(); paintEdgeKey($('#net-grad'), $('#net-gl'), ecol); if (NET && NET.link) NET.link.attr('stroke', (d) => ecol(d.best)); };
+  { const w = d3.select('#net-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
       w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
   io.observe(netBox);
@@ -1816,7 +1829,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 14 : 11)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', (d) => (d.q ? 4 : 3)).attr('stroke-linejoin', 'round');
     node.filter((d) => d.q).raise();
-    NET = { recolor() {
+    NET = { link, recolor() {
       const k = M ? M.k : 1;
       circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
       const used = [...new Set(nodes.filter((d) => !d.q).map((d) => partnerCluster.get(d.row.key)).filter(Boolean))].sort((a, b) => a - b);
@@ -1912,6 +1925,8 @@ async function viewSpecies(spId) {
     <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
+    <div class="card"><div class="card-head"><div><h2>Network of your proteins</h2><div class="muted">name a few ${sp.manifest.keyedBy ? 'genes' : 'proteins'}; see the predicted pairs among them and, if you like, the partners they share</div></div>
+      <a class="btn" href="#/${sp.id}/network">Build a network →</a></div></div>
     <div class="card"><h2>Screens</h2><div class="screens">${sp.manifest.datasets.map((d, di) => `<div class="screen"><span class="src" style="--c:${sp.dsColor[di]}">${esc(d.short)}</span>
       <div><a href="#/datasets/${d.id}"><b>${esc(d.title)}</b></a><div class="muted">${fmtInt(d.counts.proteins)} proteins · ${fmtInt(d.counts.pairs)} pairs · ${d.counts.runs ? `${fmtInt(d.counts.runs)} predictions · ` : ''}${fmtInt(d.counts.predictions)} models</div>
       <div class="cite">${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.citation)} ↗</a>` : esc(d.citation)}</div></div></div>`).join('')}</div>
@@ -1920,6 +1935,115 @@ async function viewSpecies(spId) {
       <div class="chips">${hubs.map((r) => `<a class="chip" href="#/${sp.id}/${r.key}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`).join('')}</div></div>
     ${TSs.map(setsCard).join('')}`;
   mountSearch($('#sp-search'), { spId });
+}
+
+/* ── network builder: the proteins a reader names and the predicted pairs among them. It reads only the species index
+   and edge list already on the site (no bundle); a protein or an edge opens its page. ─────────────────────────────── */
+async function viewNetwork(spId, q) {
+  const gen = ROUTE, sp = await species(spId);
+  const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
+  if (stale(gen)) return;
+  document.title = `Network · ${sp.reg.label} · LIVIA Atlas`;
+  const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),
+    ...TSs.filter(Boolean).flatMap((T) => T.list.map((x) => [x.id, x.short]))];
+  const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 5)),
+    cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '' };
+  const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / Network</div>
+    <div class="dshead"><h1>Network of your proteins</h1><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
+    <div class="card"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions${sp.manifest.keyedBy ? ', FlyBase IDs' : ''} or older names · commas, spaces or new lines</span></div>
+      <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
+      <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
+        <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein</span>
+        <span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR</button>`).join('')}</div>
+        <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
+        <button class="btn" id="nw-go" type="button">Draw the network</button></div>
+      <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
+    <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><span>Edge colors</span>${paletteSelect('nw-pal')}
+        <button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-csv" type="button">↓ CSV</button>
+        <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div></div>
+      <p class="muted" style="margin:2px 0 12px">Your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} are large and dark, added partners small and light. Click a protein for its page, an edge for the interface residues of the pair. Drag to move, scroll to zoom.</p>
+      <div class="net" id="nw-net"></div>
+      <div class="netkey"><div><span>Edge color · best iLIS over the models</span><div class="grad" id="nw-grad"></div><div class="gl" id="nw-gl"></div></div>
+        <div><span>Edge width · average iLIS</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
+  $('#nw-add').value = S.add;
+  const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top'; }; showK(); $('#nw-add').onchange = showK;
+  $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); };
+  let ecol = ECOL(), net = null;
+  paintEdgeKey($('#nw-grad'), $('#nw-gl'), ecol);
+  { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
+    w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
+  $('#nw-pal').onchange = (e) => { setEdgePalette(e.target.value); ecol = ECOL(); paintEdgeKey($('#nw-grad'), $('#nw-gl'), ecol); if (net) net.link.attr('stroke', (d) => ecol(d.best)); };
+  const status = (t) => { $('#nw-status').innerHTML = t; };
+  const gname = (i) => sp.rows[i].gene, screens = (m) => sp.dsShort.filter((_, di) => m & (1 << di)).join(' + ');
+  async function draw() {
+    const toks = [...new Set($('#nw-ids').value.split(/[\s,;]+/).map((t) => t.trim()).filter(Boolean))];
+    S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 5)); S.set = $('#nw-set').value;
+    const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top') qs.set('k', S.k); qs.set('cut', S.cut); if (S.set) qs.set('set', S.set);
+    history.replaceState(null, '', `#/${sp.id}/network?${qs}`);
+    if (!toks.length) { status('Name at least one protein.'); $('#nw-card').hidden = true; return; }
+    const found = [], missing = [];
+    for (const t of toks) { const r = resolveRow(sp, t); if (!r) missing.push(t); else if (!found.includes(r)) found.push(r); }
+    if (!found.length) { status(`None of these names is in the ${esc(sp.reg.label)} screens: ${esc(missing.join(', '))}.`); $('#nw-card').hidden = true; return; }
+    status('Reading the edge list…');
+    let E; try { E = await edges(sp, S.set); } catch (e) { status(esc(e.message)); return; }
+    if (stale(gen)) return;
+    const c = CUT[S.cut], Q = new Set(found.map((r) => r.i)), keep = new Set(Q), CAP = 400;
+    const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => e.best >= c);
+    if (S.add === 'shared') { const n = new Map(); for (const i of Q) for (const [j] of nb(i)) if (!Q.has(j)) n.set(j, (n.get(j) || 0) + 1);
+      [...n].filter(([, k]) => k >= 2).sort((a, b) => b[1] - a[1] || gname(a[0]).localeCompare(gname(b[0]))).slice(0, CAP - keep.size).forEach(([j]) => keep.add(j)); }
+    else if (S.add === 'top') for (const i of Q) { for (const [j] of nb(i).sort((a, b) => b[1].best - a[1].best).slice(0, S.k)) { if (keep.size >= CAP) break; keep.add(j); } }
+    const links = [];
+    for (const a of keep) for (const [b, e] of E.adj.get(a) || []) if (b > a && keep.has(b) && e.best >= c) links.push({ source: a, target: b, ...e });
+    const added = keep.size - Q.size, alone = [...Q].filter((i) => !links.some((l) => l.source === i || l.target === i)).map(gname);
+    status(`${fmtInt(Q.size)} of your ${sp.manifest.keyedBy ? 'genes' : 'proteins'}${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${S.cut}% FPR)`
+      + `${missing.length ? ` · not found: ${esc(missing.join(', '))}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.join(', '))}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}`);
+    $('#nw-card').hidden = false;
+    if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; return; }
+    graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), links);
+  }
+  function graph(nodes, links) {
+    const box = $('#nw-net'); box.innerHTML = '<svg></svg>';
+    const W = box.clientWidth, H = box.clientHeight, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
+    const zoom = d3.zoom().scaleExtent([0.1, 5]).on('zoom', (ev) => g.attr('transform', ev.transform)); svg.call(zoom);
+    const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
+    const r = (d) => (d.q ? 10 : 4) + Math.min(8, Math.sqrt(deg.get(d.id) || 0) * 1.4);
+    const labeled = new Set(nodes.length <= 80 ? nodes.map((d) => d.id) : [...nodes.filter((d) => d.q), ...[...nodes].filter((d) => !d.q).sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0)).slice(0, 25)].map((d) => d.id));
+    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', (d) => ecol(d.best)).attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-opacity', 0.85).attr('stroke-linecap', 'round').style('cursor', 'pointer');
+    const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
+    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}<br>${srcBadges(sp, d.src)} · click for the interface residues`, ev.clientX, ev.clientY); })
+      .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; });
+    const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
+      .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
+        .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+    node.append('circle').attr('r', r).attr('fill', (d) => (d.q ? '#1A5276' : '#AEBBCA')).attr('stroke', '#fff').attr('stroke-width', (d) => (d.q ? 2.2 : 1.5));
+    node.filter((d) => labeled.has(d.id)).append('text').text((d) => d.row.gene).attr('text-anchor', 'middle').attr('dy', (d) => -r(d) - 5)
+      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 13 : 10.5)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
+      .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3).attr('stroke-linejoin', 'round');
+    node.filter((d) => d.q).raise();
+    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas`, ev.clientX, ev.clientY))
+      .on('mouseleave', hideTip).on('click', (ev, d) => { if (!ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}`; });
+    const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => 70 + 60 * (1 - Math.min(1, l.best))).strength(0.4))
+      .force('charge', d3.forceManyBody().strength(-260)).force('collide', d3.forceCollide().radius((d) => r(d) + 10)).force('x', d3.forceX(W / 2).strength(0.05)).force('y', d3.forceY(H / 2).strength(0.06))
+      .on('tick', () => { link.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+    let fitted = false;   // once the layout settles, zoom so every node and label fits (the zoom stays free afterwards)
+    sim.on('end', () => { if (fitted) return; fitted = true; const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y);
+      const x0 = Math.min(...xs) - 48, x1 = Math.max(...xs) + 48, y0 = Math.min(...ys) - 34, y1 = Math.max(...ys) + 24, sc = Math.min(1.4, 0.96 * Math.min(W / (x1 - x0), H / (y1 - y0)));
+      svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - sc * (x0 + x1) / 2, H / 2 - sc * (y0 + y1) / 2).scale(sc)); });
+    svgExport($('#nw-x'), `atlas_${sp.id}_network`, () => $('svg', box));
+    net = { link, nodes, links };
+  }
+  $('#nw-go').onclick = draw;
+  $('#nw-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); draw(); } };
+  $('#nw-link').onclick = async () => { const b = $('#nw-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
+  const rowsOut = () => (net ? net.links.map((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return { a, b, l }; }) : []);
+  $('#nw-csv').onclick = () => { const csvq = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
+    const text = 'Protein_1,Protein_2,iLIS_best,iLIS_avg,ipTM_best,screens\n' + rowsOut().map(({ a, b, l }) => [csvq(gname(a)), csvq(gname(b)), l.best.toFixed(3), l.avg.toFixed(3), Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : '', csvq(screens(l.src))].join(',')).join('\n') + '\n';
+    const u = URL.createObjectURL(new Blob([text], { type: 'text/csv' })), d = document.createElement('a'); d.href = u; d.download = `atlas_${sp.id}_network.csv`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
+  $('#nw-livia').onclick = () => { if (!net) return; const w = window.open(`${LIVIA}network.html?post=1`, '_blank'); if (!w) return;
+    const text = 'name,Symbol_1,Symbol_2,iLIS,ipTM\n' + rowsOut().map(({ a, b, l }) => `${gname(a)}___${gname(b)},${gname(a)},${gname(b)},${l.best.toFixed(3)},${Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : ''}`).join('\n') + '\n';   // the pair table LIVIA's network reads (names already split)
+    handTo(w, { type: 'livia-load', name: `atlas_${sp.id}_network.csv`, data: new Blob([text], { type: 'text/csv' }), ilis: CUT[S.cut] }); };
+  if (S.ids) draw(); else $('#nw-ids').focus();
 }
 
 /* ── router ─────────────────────────────────────────────────────────────────────────────────────────── */
@@ -1948,7 +2072,7 @@ async function route() {
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
-    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }

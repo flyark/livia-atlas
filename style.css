@@ -431,3 +431,7 @@ button.iso-tag:focus-visible { outline: 2px solid var(--blue); outline-offset: 1
 #loadbar .spin { display: inline-block; width: 11px; height: 11px; margin-right: 8px; border: 2px solid #8FA3B8; border-top-color: #F2F5F8; border-radius: 50%; vertical-align: -1px; animation: lb-spin 0.9s linear infinite; }
 @keyframes lb-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { #loadbar .spin { animation: none; } }
+
+/* network builder: the list of proteins */
+textarea.ids { width: 100%; box-sizing: border-box; font: 13.5px/1.5 var(--mono); padding: 9px 11px; border: 1px solid var(--line); border-radius: 10px; background: #FBFCFD; color: var(--ink); resize: vertical; margin-top: 10px; }
+textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
