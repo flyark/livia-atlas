@@ -174,9 +174,9 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
   return { id, reg, base, manifest, rows, byKey, byName, byGene, keys, dsIds, dsShort: manifest.datasets.map((d) => d.short),
     dsColor: regs.map((r) => (r && r.color) || '#5B6B7F'), edges: null, cache: new Map() };
 }
-// Pairs reported in BioGRID (physical interactions) among a species' proteins, from data/species/<sp>/biogrid.tsv on the
-// site: row numbers of the species index and the number of publications. The file names the index it was built for;
-// a file for another index is not used, so a pair is never marked by a stale match. null: no file, or not this index.
+// Pairs reported in BioGRID among a species' proteins, from data/species/<sp>/biogrid.tsv on the site: row numbers of the
+// species index and the number of publications reporting a physical and a genetic interaction. The file names the index it
+// was built for; a file for another index is not used, so a pair is never marked by a stale match. null: no file, or not this index.
 function reported(sp) {
   if (!sp.known) sp.known = (async () => {
     let t; try { t = await getText(sp.base + 'biogrid.tsv'); } catch (e) { return null; }
@@ -184,12 +184,13 @@ function reported(sp) {
     if (+idx[2] !== N) return null;
     const dig = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(sp.rows.map((r) => r.key).join('\n')));
     if ([...new Uint8Array(dig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 12) !== idx[3]) return null;
-    const m = new Map();
+    const m = new Map(), gm = new Map();
     for (let p = 0; p < t.length;) { let e = t.indexOf('\n', p); if (e < 0) e = t.length;
-      if (t[p] !== '#' && t[p] !== 'i') { const a = t.indexOf('\t', p), b = t.indexOf('\t', a + 1); m.set(+t.slice(p, a) * N + +t.slice(a + 1, b), +t.slice(b + 1, e)); }
+      if (t[p] !== '#' && t[p] !== 'i') { const [a, b, ph, ge] = t.slice(p, e).split('\t'), k = +a * N + +b;
+        if (+ph) m.set(k, +ph); if (+ge) gm.set(k, +ge); }
       p = e + 1; }
-    const release = ((head[0] || '').match(/BioGRID ([\d.]+)/) || [])[1] || '';
-    return { release, pubs: (a, b) => m.get(Math.min(a, b) * N + Math.max(a, b)) || 0 };
+    const release = ((head[0] || '').match(/BioGRID ([\d.]+)/) || [])[1] || '', at = (a, b) => Math.min(a, b) * N + Math.max(a, b);
+    return { release, pubs: (a, b) => m.get(at(a, b)) || 0, gen: (a, b) => gm.get(at(a, b)) || 0 };   // publications: physical, genetic
   })();
   return sp.known;
 }
@@ -969,9 +970,10 @@ function viewAbout() {
       point mutants. Every name is resolved to its gene, and each construct is placed on the gene's reference sequence by its folded sequence, so its
       contacts are drawn in the gene's residue numbering. An isoform too unlike the reference to be placed is shown on its own: its page has an
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
-      <p>Networks outline the predicted pairs that BioGRID reports as physical interactions (release 5.0.261, MIT license; ${cite('biogrid')}), matched to each
-      species' proteins by UniProt accession, official symbol or systematic name. The matched pairs are a file on this site for each species, so nothing is
-      looked up elsewhere while a network is drawn.</p></div>
+      <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
+      accession, official symbol or systematic name. Networks outline the predicted pairs reported as physical interactions. On a protein page, a partner
+      with a reported physical interaction is ringed in the Overview and bold under Clusters, and one with a reported genetic interaction is underlined.
+      The matched pairs are a file on this site for each species, so nothing is looked up elsewhere.</p></div>
     <div class="card"><h2>Cite</h2>
       <ul class="refs">
         ${ref('livia', 'LIVIA: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.')}
@@ -1122,6 +1124,11 @@ function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene
 
 async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only that thematic set's predictions; iso: one isoform ('reference' or a construct)
   const gen = ROUTE, gone = () => stale(gen);   // after every await: stop if the reader has moved to another page
+  /* BioGRID: partners with a reported interaction, from the species file (reported); marked once it arrives */
+  let KB = null, scKnown = true;
+  const kbOf = (key) => { if (!KB) return null; const r = sp.byKey.get(key); if (!r || r.i == null || r.i === P.i) return null;
+    const ph = KB.pubs(P.i, r.i), ge = KB.gen(P.i, r.i); return ph || ge ? { ph, ge } : null; };
+  const kbTip = (kb) => `reported in BioGRID ${KB.release}: ${[kb.ph ? `physical, ${kb.ph} publication${kb.ph === 1 ? '' : 's'}` : '', kb.ge ? `genetic, ${kb.ge} publication${kb.ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ')}`;
   const qp = new URLSearchParams(); if (setId) qp.set('set', setId); if (iso) qp.set('iso', iso);
   const sp = await species(spId), P = resolveRow(sp, q), qs = qp.toString() ? `?${qp}` : '';
   if (gone()) return;
@@ -1178,18 +1185,20 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p>
-      <div class="plot" id="sites-map"></div><div class="domlegend" id="sites-domains"></div>
+      <div class="plot" id="sites-map"></div><p class="sites-more" id="sites-more" hidden></p><div class="domlegend" id="sites-domains"></div>
       <p class="muted sites-note">How the sites are found: LIVIA cLIP, run in your browser on the predictions shown, takes the residues of ${esc(P.gene)} that
         each prediction past the cutoff contacts (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å) as its fingerprint, compares fingerprints by cosine distance, joins them by
-        average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by size; the map has one lane per site. Solid marks
+        average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by size; the map has one lane per major site, one
+        with at least 3 partners and 2% of all partners, and shows the minor sites when asked. Solid marks
         a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
         show only that site on the page; the partners of each site are listed under Clusters.</p><p class="note" id="clip-aside" hidden></p></div>
     <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted">predictions contacting each residue, colored by their most frequent cluster</span>${xticks}</div></div>
       ${chips}<div class="plot" id="freq-wrap"></div><div class="domlegend" id="freq-domains"></div><div class="hot" id="hot"></div></div>
-    <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per prediction, in dendrogram order · hover for the partner, click to open the pair</span>${xticks}</div></div>
-      ${chips}<div class="plot" id="fp-wrap"></div>
+    <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per prediction, in dendrogram order · hover for the partner, click to open the pair</span>
+        <input type="search" id="fp-find" list="sc-list" placeholder="Find partner" style="width:140px" aria-label="Find a partner in the fingerprint">${xticks}</div></div>
+      ${chips}<div class="plot" id="fp-wrap"></div><p class="sites-more" id="fp-found" hidden></p>
       <div class="legend"><span><i style="background:#08306B"></i>contact residue (cLIR)</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each prediction</span></div></div>
-    <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div></div>
+    <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
     <div class="card" id="c-res"><div class="card-head"><h2>Interaction Residues</h2>
         <div class="controls" style="margin:0"><select id="res-partner" aria-label="Partner" style="max-width:300px"></select><input type="search" id="res-find" placeholder="Find partner" style="width:130px"><select id="res-rank" aria-label="Model" style="max-width:280px"></select></div></div>
       <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not in the interface</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interface (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span></div>
@@ -1462,6 +1471,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     attachExport('freq', `atlas_${P.gene}_frequency`, drawFreq);
   }
 
+  function fpHit() {   // the partner typed in the fingerprint's Find partner box: exact name, then prefix, then substring
+    const f = ($('#fp-find') || {}).value; const q = (f || '').trim().toLowerCase(); if (!q) return null;
+    const gl = (p) => gname(p.id).toLowerCase();
+    return B.partners.find((p) => gl(p) === q) || B.partners.find((p) => gl(p).startsWith(q)) || B.partners.find((p) => gl(p).includes(q)) || false;
+  }
   function drawHeatmap() {
     const host = $('#fp-wrap'); if (!host) return;
     if (!clustered()) { emptyPlot(host, M ? 'Nothing to cluster at this cutoff.' : 'Clustering…'); return; }
@@ -1477,6 +1491,19 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       g.fillStyle = clusterColor(M.labels[i], k); g.fillRect(sx0, y0, sx1 - sx0, hh);
       g.fillStyle = '#F7FBFF'; g.fillRect(rx0, y0, rx1 - rx0, hh);
       g.fillStyle = '#08306B'; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, hh); } }
+    const hit = fpHit(), found = $('#fp-found'), mine = hit ? M.order.filter((i) => who(M.preds[i].partner).key === hit.id) : [];
+    $('#fp-find').classList.toggle('nf', hit === false); found.hidden = !hit;
+    if (hit) {   // its rows: contacts in orange on a light band, at least 3 px tall however many rows share the height, and a marker at the right
+      const on = new Set(order), cl = [...new Set(mine.map((i) => M.labels[i]))].sort((a, b) => a - b), mh = Math.round(3 * dpr), col = '#E67E22';
+      order.forEach((i, row) => { if (!mine.includes(i)) return; const yc = (rowTop(row) + rowTop(row + 1)) / 2, y0 = Math.round(yc - mh / 2);
+        g.fillStyle = 'rgba(230,126,34,0.2)'; g.fillRect(rx0, y0, rx1 - rx0, mh);
+        g.fillStyle = col; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, mh); }
+        g.beginPath(); g.moveTo(rx1 + X(2), yc); g.lineTo(rx1 + X(11), yc - X(5)); g.lineTo(rx1 + X(11), yc + X(5)); g.closePath(); g.fill(); });
+      const shownN = mine.filter((i) => on.has(i)).length;
+      found.innerHTML = !mine.length ? `<b>${esc(gname(hit.id))}</b> has no prediction past the ${cut}% FPR cutoff.`
+        : `<b style="color:${col}">${esc(gname(hit.id))}</b>: ${mine.length} prediction${mine.length === 1 ? '' : 's'}, in ${cl.map((c) => `<span style="color:${clusterColor(c, k)}">●</span> ${clusterLabel(c)}`).join(', ')}`
+          + (shownN < mine.length ? ` · ${mine.length - shownN} hidden by the cluster choice above` : '') + ' · marked in orange';
+    }
     const Z = M.Z || [];
     if (all && Z.length === n - 1 && n >= 2) {                                  // row dendrogram: leaves at the strip, root at the left; x ∝ merge distance
       const yv = new Float64Array(2 * n), xv = new Float64Array(2 * n), d0 = X(3), d1 = X(31), maxD = Z[Z.length - 1][2] || 1;
@@ -1513,11 +1540,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   const rangeText = (rs) => rs.map(([a, b]) => (a === b ? `${a}` : `${a}–${b}`)).join(', ');
   const stretches = (rs) => { const out = []; for (const [a, b] of rs) { const l = out[out.length - 1]; if (l && a - l[1] <= 4) l[1] = b; else out.push([a, b]); } return out; };   // gaps of up to 3 residues joined
+  const major = (st, np) => st.partners.length >= Math.max(3, Math.ceil(0.02 * np));   // a major site: at least 3 partners and 2% of them
+  let sitesAll = false;   // the map shows the major sites until asked for all
   const siteDomains = (st, doms) => doms.filter((d) => st.foot.some((r) => r >= d.s && r <= d.e)).map((d) => d.name).slice(0, 2);
   function renderSites() {
     const ans = $('#sites-answer'), map = $('#sites-map'); if (!ans) return;
     if (!clustered()) { ans.innerHTML = M ? `No binding site to show: ${M.fingerprints.length ? 'only one prediction is' : 'no prediction is'} past the ${cut}% FPR cutoff.` : 'Finding the binding sites…';
-      map.innerHTML = ''; $('#sites-domains').innerHTML = ''; return; }
+      map.innerHTML = ''; $('#sites-domains').innerHTML = ''; $('#sites-more').hidden = true; return; }
     const sites = sitesOf(), doms = qDomains(M.plen), K = sites.length, np = partnerCluster.size, big = sites[0], lanesOrder = [...sites].sort((a, b) => a.c - b.c);
     const names = (ps) => ps.map((x) => `<a href="#/${sp.id}/${P.key}/${x.key}${scopeQ}">${esc(gname(x.key))}</a>`);
     const andList = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
@@ -1526,7 +1555,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       return `${r.length <= 3 ? `residues ${rangeText(r)}` : `${r.length} stretches between residues ${r[0][0]} and ${r[r.length - 1][1]}`}${dn.length ? ` (${esc(dn.join(', '))})` : ''}`; };
     ans.innerHTML = `<b>${esc(P.gene)}</b>: ${fmtInt(np)} partner${np === 1 ? ' is' : 's are'} predicted, past the ${cut}% FPR cutoff, to contact ${K === 1 ? 'one site' : `${K} sites`}.`
       + ` The largest, at ${where(big)}, is contacted by ${fmtInt(big.partners.length)} of them${big.partners.length ? `, including ${andList(names(big.partners.slice(0, 3)))}` : ''}.`;
-    drawSitesMap(map, lanesOrder, doms);
+    const nMajor = sites.filter((st) => major(st, np)).length, collapse = !sitesAll && nMajor > 0 && nMajor < K;
+    const shown = collapse ? lanesOrder.filter((st) => major(st, np) || (!allOn() && ACTIVE.has(st.c))) : lanesOrder;   // a site chosen elsewhere stays in view
+    drawSitesMap(map, shown, doms);
+    const more = $('#sites-more'); more.hidden = !(nMajor > 0 && nMajor < K);
+    if (!more.hidden) { more.innerHTML = sitesAll ? `All ${K} sites. <button class="more" type="button">Show the ${nMajor} major sites</button>`
+      : `The ${nMajor} major sites, each with at least 3 partners and 2% of all partners; ${K - nMajor} minor site${K - nMajor === 1 ? '' : 's'} hidden. <button class="more" type="button">Show all ${K} sites</button>`;
+      $('button', more).onclick = () => { sitesAll = !sitesAll; renderSites(); }; }
     $('#sites-domains').innerHTML = doms.length ? doms.map((d, i) => `<span><b>D${i + 1}</b> ${esc(d.name)} (${d.s}–${d.e})</span>`).join('') : '';
   }
   function drawSitesMap(host, sites, doms) {   // one lane per site on the query's residues: solid = footprint, shade = contact frequency within the site
@@ -1564,9 +1599,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     box.innerHTML = range(M.k).map((c) => {
       const rows = [...(mem[c] || [])].map((x) => sp.byKey.get(x) || { key: x, gene: x }).sort((a, b) => a.gene.toLowerCase().localeCompare(b.gene.toLowerCase()));
       const show = infoOpen.has(c) ? rows : rows.slice(0, cap);
-      return `<div class="cl-row"><i style="background:${clusterColor(c, M.k)}"></i><div><b>${clusterLabel(c)}</b> <span class="muted">(${rows.length} / ${cnt[c]})</span>: ${show.map((r) =>
-        `<a href="#/${sp.id}/${P.key}/${r.key}${scopeQ}">${esc(r.gene)}</a>`).join(', ')}${rows.length > cap ? ` <button class="more" data-c="${c}">${infoOpen.has(c) ? 'show fewer' : `+${rows.length - cap} more`}</button>` : ''}</div></div>`; }).join('');
+      return `<div class="cl-row"><i style="background:${clusterColor(c, M.k)}"></i><div><b>${clusterLabel(c)}</b> <span class="muted">(${rows.length} / ${cnt[c]})</span>: ${show.map((r) => { const kb = kbOf(r.key);
+        return `<a href="#/${sp.id}/${P.key}/${r.key}${scopeQ}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''}>${esc(r.gene)}</a>`; }).join(', ')}${rows.length > cap ? ` <button class="more" data-c="${c}">${infoOpen.has(c) ? 'show fewer' : `+${rows.length - cap} more`}</button>` : ''}</div></div>`; }).join('');
     box.querySelectorAll('.more').forEach((b) => b.onclick = () => { const c = +b.dataset.c; infoOpen.has(c) ? infoOpen.delete(c) : infoOpen.add(c); renderClusterInfo(); });
+    const leg = $('#info-kb'), all = [...new Set(Object.values(mem).flatMap((x) => [...x]))].map(kbOf).filter(Boolean);
+    const nP = all.filter((x) => x.ph).length, nG = all.filter((x) => x.ge).length;
+    leg.hidden = !KB; if (KB) leg.innerHTML = `<span><b>bold</b>: physical interaction reported in BioGRID ${KB.release} (${fmtInt(nP)} partner${nP === 1 ? '' : 's'})</span>`
+      + `<span><u>underlined</u>: genetic interaction reported (${fmtInt(nG)})</span>`;
   }
 
   /* Interaction Residues: any partner, any screen, any model */
@@ -1685,6 +1724,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#sc-y').value = 'iLIS'; $('#sc-x').value = present.includes('iLISA') ? 'iLISA' : 'ipTM';
   $('#sc-list').innerHTML = [...new Set(B.partners.map((p) => gname(p.id)))].sort((a, b) => a.localeCompare(b)).map((g) => `<option value="${esc(g)}"></option>`).join('');
   ['#sc-x', '#sc-y', '#sc-pts'].forEach((s) => { $(s).onchange = () => drawScatter(); });
+  $('#fp-find').oninput = () => { if (clustered()) drawHeatmap(); };
   $('#sc-find').onchange = () => drawScatter();
   $('#sc-find').onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); drawScatter(); } };
   $('#sc-find').oninput = (e) => { if (!e.target.value) drawScatter(); };
@@ -1721,6 +1761,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const rad = (q) => (per ? 2.2 + 8 * Math.min(1, (q.t.avg || 0) / 0.8) : q.c ? 4.3 : 2.5);
     for (const q of pts) { g.beginPath(); g.arc(xs(q.x), ys(q.y), rad(q), 0, 2 * Math.PI); g.fillStyle = q.c ? clusterColor(q.c, k) : '#CDD3DB';
       g.globalAlpha = per ? (q.c ? 0.8 : 0.4) : 1; g.fill(); g.globalAlpha = 1; if (q.c || per) { g.lineWidth = 0.7; g.strokeStyle = '#fff'; g.stroke(); } }
+    const ringed = KB && scKnown ? pts.filter((q) => (kbOf(q.t ? q.t.id : q.p.partner) || {}).ph) : [];   // reported in BioGRID (physical): a dark ring
+    for (const q of ringed) { g.beginPath(); g.arc(xs(q.x), ys(q.y), rad(q) + 1.3, 0, 2 * Math.PI);   // lighter on the gray, unclustered dots
+      g.lineWidth = q.c ? 1.6 : 1; g.strokeStyle = q.c ? '#17263A' : 'rgba(23,38,58,0.45)'; g.stroke(); }
     if (per) {   // label the top partners where a label fits, never on a cutoff label or another label
       const placed = [], shown = [];
       [10, 5, 1].forEach((f, j) => { const vy = FPR[yK] && FPR[yK][j], vx = FPR[xK] && FPR[xK][j];
@@ -1758,7 +1801,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const unit = per ? 'partners' : 'predictions';
     $('#sc-legend').innerHTML = (per ? '<span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span>' : '')
       + Object.keys(cnt).map(Number).sort((a, b) => a - b).map((c) => `<span><i style="background:${clusterColor(c, k)};border-radius:50%"></i>${clusterLabel(c)} (${cnt[c]})</span>`).join('')
-      + `<span><i style="background:#CDD3DB;border-radius:50%"></i>not clustered (${fmtInt(other)} ${unit})</span>`;
+      + `<span><i style="background:#CDD3DB;border-radius:50%"></i>not clustered (${fmtInt(other)} ${unit})</span>`
+      + (KB ? `<label class="kb-toggle"><input type="checkbox" id="sc-known"${scKnown ? ' checked' : ''}><i class="kb-ring"></i>reported in BioGRID ${KB.release}, physical${scKnown ? ` (${fmtInt(ringed.length)} ${ringed.length === 1 ? unit.slice(0, -1) : unit})` : ''}</label>` : '');
+    if (KB) $('#sc-known').onchange = (e) => { scKnown = e.target.checked; drawScatter(); drawTopList(); };
     attachExport('scatter-canvas', `atlas_${P.gene}_partners`, drawScatter);
   }
 
@@ -1766,13 +1811,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function drawTopList() {
     const list = B.partners.filter((p) => p.id !== P.key && !p.rep).map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 })), k = M ? M.k : 1;
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
-    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
+    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
       <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span></li>`; }).join('');
   }
+  reported(sp).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); if (clustered()) renderClusterInfo(); }).catch(() => {});
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
 
   /* partner table */
