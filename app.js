@@ -27,6 +27,13 @@ const REF = {
   flypredictome: ['Kim et al. (2026) FlyPredictome, bioRxiv', '10.64898/2026.04.14.718529'],
   afmlis: ['Kim et al. (2024) AFM-LIS, bioRxiv', '10.1101/2024.02.19.580970'],
   biogrid: ['Oughtred et al. 2021', '10.1002/pro.3978'],
+  uniprot: ['UniProt Consortium 2025', '10.1093/nar/gkae1010'], flybase: ['Öztürk-Çolak et al. 2024', '10.1093/genetics/iyad211'],
+  afdb: ['Varadi et al. 2024', '10.1093/nar/gkad1011'], alphafold: ['Jumper et al. 2021', '10.1038/s41586-021-03819-2'],
+  alphamissense: ['Cheng et al. 2023', '10.1126/science.adg7492'], afm: ['Evans et al. 2021', '10.1101/2021.10.04.463034'],
+  colabfold: ['Mirdita et al. 2022', '10.1038/s41592-022-01488-1'], silhouette: ['Rousseeuw 1987', '10.1016/0377-0427(87)90125-7'],
+  molstar: ['Sehnal et al. 2021', '10.1093/nar/gkab314'], d3: ['Bostock et al. 2011', '10.1109/TVCG.2011.185'],
+  leiden: ['Traag et al. 2019', '10.1038/s41598-019-41695-z'], zenodo: ['Zenodo', '10.25495/7GXK-RD71'],
+  schmid2025: ['Schmid et al. 2025', '10.1101/2025.11.10.687652'], kim2025: ['Kim et al. 2025', '10.1101/2025.10.10.681672'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
 
@@ -950,9 +957,23 @@ async function viewDatasets() {
   fillDsStats(); fillThemes();
 }
 
-function viewAbout() {
+async function viewAbout() {
+  const gen = ROUTE, reg = await registry(); if (stale(gen)) return;
   const ref = (k, text) => `<li>${text} <a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">doi.org/${REF[k][1]}</a></li>`;
   const AFM = '<a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>';
+  // each live screen's source, screens that share one grouped on one line; a screen not listed here shows its registry source
+  const SRC = { 'human-predictomes': ['schmid2025', 'Schmid, E. W. et al. (2025). Proteome-wide in silico screening for human protein-protein interactions. <i>bioRxiv</i>.'],
+    'human-kinase-tf': ['kim2025', 'Kim, A.-R. et al. (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. <i>bioRxiv</i>.'],
+    flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'] };
+  const kk = 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>. The predictions are in the LIVIA Atlas record on Zenodo, cited above.';
+  const groups = new Map();
+  for (const d of (reg.datasets || []).filter((x) => x.status === 'live')) {
+    const [k, text] = SRC[d.id] || (/kinase-kinase$/.test(d.id) ? ['livia', kk] : [null, `${esc(d.source || '')}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`]);
+    const spx = (reg.species || []).find((x) => x.id === d.species), g = groups.get(k || d.id) || { k, text, short: d.short, titles: [], sps: [] };
+    g.titles.push(d.title); g.sps.push(spx ? (/^[A-Z]\. /.test(spx.label) ? spx.label : spx.label.toLowerCase()) : d.species); groups.set(k || d.id, g); }
+  const andJoin = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+  const screenList = [...groups.values()].map((g) => { const t = `<b>${esc(g.titles.length > 1 ? `${g.short} screens (${andJoin(g.sps)})` : g.titles[0])}</b>: ${g.text}`;
+    return g.k ? ref(g.k, t) : `<li>${t}</li>`; }).join('');
   app.innerHTML = `<div class="reading about"><div class="crumbs"><a href="#/">Atlas</a> / About</div>
     <div class="card" style="margin-top:6px"><h2>What this is</h2>
       <p>LIVIA Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
@@ -979,11 +1000,35 @@ function viewAbout() {
         ${ref('livia', 'LIVIA: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.')}
         ${ref('flypredictome', 'iLIS and its cutoffs: Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.')}
         ${ref('afmlis', 'LIS and AFM-LIS: Kim, A.-R. et al. (2024). Enhanced protein-protein interaction discovery via AlphaFold-Multimer. <i>bioRxiv</i>.')}
-        ${ref('biogrid', 'Reported interactions: Oughtred, R. et al. (2021). The BioGRID database: a comprehensive biomedical resource of curated protein, genetic, and chemical interactions. <i>Protein Sci.</i> 30, 187–200.')}
         <li>The data: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. <i>Zenodo</i>.
           <a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi.org/${ARCHIVE.doi}</a></li>
       </ul>
-      <p class="muted" style="font-size:14px;margin-bottom:0">Each dataset page names the screen it comes from; please cite that source too.</p></div></div>`;
+      <p class="muted" style="font-size:14px;margin-bottom:0">Please also cite the source of each screen you use, and the resources below that your work draws on.</p></div>
+    <div class="card"><h2>Screens</h2>
+      <ul class="refs">${screenList}</ul></div>
+    <div class="card"><h2>Data and software</h2>
+      <h3 class="refs-h">Structures and annotations</h3>
+      <ul class="refs">
+        ${ref('uniprot', 'Protein names, sequences and domains (Domain, DNA-binding and zinc-finger features): The UniProt Consortium (2025). UniProt: the Universal Protein Knowledgebase in 2025. <i>Nucleic Acids Res.</i> 53, D609–D617.')}
+        ${ref('flybase', 'Fly genes, symbols and synonyms (release FB2026_03): Öztürk-Çolak, A. et al. (2024). FlyBase: updates to the <i>Drosophila</i> genes and genomes database. <i>Genetics</i> 227, iyad211.')}
+        ${ref('afdb', 'Single-chain models in the 3D view: Varadi, M. et al. (2024). AlphaFold Protein Structure Database in 2024: providing structure coverage for over 214 million protein sequences. <i>Nucleic Acids Res.</i> 52, D368–D375.')}
+        ${ref('alphafold', 'Those models and their pLDDT: Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. <i>Nature</i> 596, 583–589.')}
+        ${ref('alphamissense', 'Missense pathogenicity on human proteins: Cheng, J. et al. (2023). Accurate proteome-wide missense variant effect prediction with AlphaMissense. <i>Science</i> 381, eadg7492.')}
+        ${ref('biogrid', 'Reported physical and genetic interactions (release 5.0.261): Oughtred, R. et al. (2021). The BioGRID database: a comprehensive biomedical resource of curated protein, genetic, and chemical interactions. <i>Protein Sci.</i> 30, 187–200.')}
+      </ul>
+      <h3 class="refs-h">Prediction, scoring and display</h3>
+      <ul class="refs">
+        ${ref('afm', 'Every screen was folded with AlphaFold-Multimer: Evans, R. et al. (2021). Protein complex prediction with AlphaFold-Multimer. <i>bioRxiv</i>.')}
+        ${ref('colabfold', 'The kinase–kinase screens were run through ColabFold: Mirdita, M. et al. (2022). ColabFold: making protein folding accessible to all. <i>Nat. Methods</i> 19, 679–682.')}
+        <li>Scores: lis.py from ${AFM} (LIS, cLIS, iLIS; cited above), on every model.</li>
+        ${ref('silhouette', 'Binding sites: LIVIA cLIP, run in the browser, picks the number of clusters by silhouette: Rousseeuw, P. J. (1987). Silhouettes: a graphical aid to the interpretation and validation of cluster analysis. <i>J. Comput. Appl. Math.</i> 20, 53–65.')}
+        ${ref('molstar', '3D view, in LIVIA\'s Mol* page: Sehnal, D. et al. (2021). Mol* Viewer: modern web app for 3D visualization and analysis of large biomolecular structures. <i>Nucleic Acids Res.</i> 49, W431–W437.')}
+        ${ref('d3', 'Plots and networks, D3 7.9: Bostock, M., Ogievetsky, V. &amp; Heer, J. (2011). D³ data-driven documents. <i>IEEE Trans. Vis. Comput. Graph.</i> 17, 2301–2309.')}
+        ${ref('leiden', 'Communities in LIVIA\'s network page: Traag, V. A., Waltman, L. &amp; van Eck, N. J. (2019). From Louvain to Leiden: guaranteeing well-connected communities. <i>Sci. Rep.</i> 9, 5233.')}
+        <li>Reading prediction bundles in the browser: JSZip 3.10. <a href="https://stuk.github.io/jszip/" target="_blank" rel="noopener">stuk.github.io/jszip</a></li>
+        ${ref('zenodo', 'Hosting: the site and some screens on GitHub Pages; the others in the LIVIA Atlas record on Zenodo, read by byte range, so a page loads only its own bundles. European Organization for Nuclear Research &amp; OpenAIRE (2013). <i>Zenodo</i>. CERN.')}
+        <li>Visits are counted with GoatCounter, without cookies.</li>
+      </ul></div></div>`;
 }
 
 // The counts of a screen, a species or a set, in one row: a prediction is a pair folded once (its ranked models are
@@ -1095,12 +1140,12 @@ function stopClip() {   // leaving a page mid-clustering: drop its job, so the n
 const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the fingerprint: dendrogram + cluster strip / y axis live in AXL
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
 // Edge colors of every network: best iLIS from the 10% FPR cutoff (0.223) to 0.85, in the palette the reader picks
-// (remembered in this browser). "FPR bands" passes through the band colors used across the page.
+// (remembered in this browser; Grays by default). "FPR bands" passes through the band colors used across the page.
 const EDGE_PALETTES = { bands: { label: 'FPR bands', stops: ['#E0AE2E', '#16956A', '#6D4FD1', '#2A1B7A'] }, viridis: { label: 'Viridis', fn: 'interpolateViridis', to: 0.92 },
   magma: { label: 'Magma', fn: 'interpolateMagma', from: 0.12, to: 0.82 }, cividis: { label: 'Cividis', fn: 'interpolateCividis' },
   blues: { label: 'Blues', fn: 'interpolateBlues', from: 0.35 }, reds: { label: 'Reds', fn: 'interpolateReds', from: 0.35 }, grays: { label: 'Grays', fn: 'interpolateGreys', from: 0.35 } };
-let EDGE_PAL = (() => { try { const v = localStorage.getItem('atlas.edgePalette'); return EDGE_PALETTES[v] ? v : 'bands'; } catch (e) { return 'bands'; } })();
-function setEdgePalette(v) { if (!EDGE_PALETTES[v]) return; EDGE_PAL = v; try { localStorage.setItem('atlas.edgePalette', v); } catch (e) { /* private window */ } }
+let EDGE_PAL = (() => { try { const v = localStorage.getItem('atlas.edgePal'); return EDGE_PALETTES[v] ? v : 'grays'; } catch (e) { return 'grays'; } })();
+function setEdgePalette(v) { if (!EDGE_PALETTES[v]) return; EDGE_PAL = v; try { localStorage.setItem('atlas.edgePal', v); } catch (e) { /* private window */ } }
 const palStops = (name) => { const P = EDGE_PALETTES[name] || EDGE_PALETTES.bands; if (P.stops) return P.stops;
   const f = d3[P.fn], a = P.from ?? 0, b = P.to ?? 1; return [0, 1 / 3, 2 / 3, 1].map((t) => d3.color(f(a + (b - a) * t)).formatHex()); };
 const paletteSelect = (id) => `<select id="${id}" aria-label="Edge colors">${Object.entries(EDGE_PALETTES).map(([k, P]) => `<option value="${k}"${k === EDGE_PAL ? ' selected' : ''}>${P.label}</option>`).join('')}</select>`;
@@ -1125,7 +1170,7 @@ function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene
 async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only that thematic set's predictions; iso: one isoform ('reference' or a construct)
   const gen = ROUTE, gone = () => stale(gen);   // after every await: stop if the reader has moved to another page
   /* BioGRID: partners with a reported interaction, from the species file (reported); marked once it arrives */
-  let KB = null, scKnown = true;
+  let KB = null, scKnown = 'pass';   // rings in the Overview: 'pass' (partners past the 10% FPR cutoff), 'all' or 'off'
   const kbOf = (key) => { if (!KB) return null; const r = sp.byKey.get(key); if (!r || r.i == null || r.i === P.i) return null;
     const ph = KB.pubs(P.i, r.i), ge = KB.gen(P.i, r.i); return ph || ge ? { ph, ge } : null; };
   const kbTip = (kb) => `reported in BioGRID ${KB.release}: ${[kb.ph ? `physical, ${kb.ph} publication${kb.ph === 1 ? '' : 's'}` : '', kb.ge ? `genetic, ${kb.ge} publication${kb.ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ')}`;
@@ -1178,7 +1223,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <span id="commonality-custom" hidden><input type="number" id="commonality-pct" min="1" max="100" step="1" style="width:64px" title="Any value from 1 to 100%; applied on Enter or when the field loses focus"> %</span>
         <span>of a cluster's members · color only clusters with ≥</span><input type="number" id="min-cluster" min="1" value="5" style="width:60px"><span>predictions</span></div>
       ${chips}
-      <div class="controls"><span>Color by</span><div class="seg" id="cmode"><button data-m="cluster" class="on">cluster</button><button data-m="plddt">pLDDT</button><button data-m="am" id="cm-am" hidden>AlphaMissense</button></div>
+      <div class="controls"><div class="ctl"><span>Color by</span><div class="seg" id="cmode"><button data-m="cluster" class="on">cluster</button><button data-m="plddt">pLDDT</button><button data-m="am" id="cm-am" hidden>AlphaMissense</button></div></div>
         <span id="am-cut-wrap" hidden>AM pathogenicity average ≥ <select id="am-cutoff">${[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}">${Math.round(v * 100)}%</option>`).join('')}</select></span></div>
       <div class="viewer3d"><iframe id="viewer3d-frame" title="3D structure viewer"></iframe><div class="v3d-msg" id="v3d-msg">Loading the AlphaFold DB model…</div></div>
       <div class="legend" id="legend-3d"></div></div>
@@ -1204,8 +1249,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not in the interface</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interface (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span></div>
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
-      <div class="controls" style="margin:0"><span>Partners</span><select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select>
-        <span>Cutoff</span><select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select><label title="outline the pairs reported in BioGRID (physical interactions)"><input type="checkbox" id="net-known" checked> BioGRID</label><span>Edge colors</span>${paletteSelect('net-pal')}</div></div>
+      <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select></label><label title="outline the pairs reported in BioGRID (physical interactions)"><input type="checkbox" id="net-known" checked> BioGRID</label><label class="ctl">Edge colors${paletteSelect('net-pal')}</label></div></div>
       <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color. Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
@@ -1761,9 +1806,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const rad = (q) => (per ? 2.2 + 8 * Math.min(1, (q.t.avg || 0) / 0.8) : q.c ? 4.3 : 2.5);
     for (const q of pts) { g.beginPath(); g.arc(xs(q.x), ys(q.y), rad(q), 0, 2 * Math.PI); g.fillStyle = q.c ? clusterColor(q.c, k) : '#CDD3DB';
       g.globalAlpha = per ? (q.c ? 0.8 : 0.4) : 1; g.fill(); g.globalAlpha = 1; if (q.c || per) { g.lineWidth = 0.7; g.strokeStyle = '#fff'; g.stroke(); } }
-    const ringed = KB && scKnown ? pts.filter((q) => (kbOf(q.t ? q.t.id : q.p.partner) || {}).ph) : [];   // reported in BioGRID (physical): a dark ring
-    for (const q of ringed) { g.beginPath(); g.arc(xs(q.x), ys(q.y), rad(q) + 1.3, 0, 2 * Math.PI);   // lighter on the gray, unclustered dots
-      g.lineWidth = q.c ? 1.6 : 1; g.strokeStyle = q.c ? '#17263A' : 'rgba(23,38,58,0.45)'; g.stroke(); }
+    const reportedPts = KB ? pts.filter((q) => (kbOf(q.t ? q.t.id : q.p.partner) || {}).ph) : [], passing = (q) => (q.p.iLIS || 0) >= CUT[10];
+    const ringed = scKnown === 'all' ? reportedPts : scKnown === 'pass' ? reportedPts.filter(passing) : [];   // reported in BioGRID (physical): a translucent dark ring
+    for (const q of ringed) { g.beginPath(); g.arc(xs(q.x), ys(q.y), rad(q) + 1.3, 0, 2 * Math.PI);
+      g.lineWidth = passing(q) ? 1.4 : 1; g.strokeStyle = passing(q) ? 'rgba(23,38,58,0.6)' : 'rgba(23,38,58,0.3)'; g.stroke(); }
     if (per) {   // label the top partners where a label fits, never on a cutoff label or another label
       const placed = [], shown = [];
       [10, 5, 1].forEach((f, j) => { const vy = FPR[yK] && FPR[yK][j], vx = FPR[xK] && FPR[xK][j];
@@ -1802,8 +1848,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     $('#sc-legend').innerHTML = (per ? '<span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span>' : '')
       + Object.keys(cnt).map(Number).sort((a, b) => a - b).map((c) => `<span><i style="background:${clusterColor(c, k)};border-radius:50%"></i>${clusterLabel(c)} (${cnt[c]})</span>`).join('')
       + `<span><i style="background:#CDD3DB;border-radius:50%"></i>not clustered (${fmtInt(other)} ${unit})</span>`
-      + (KB ? `<label class="kb-toggle"><input type="checkbox" id="sc-known"${scKnown ? ' checked' : ''}><i class="kb-ring"></i>reported in BioGRID ${KB.release}, physical${scKnown ? ` (${fmtInt(ringed.length)} ${ringed.length === 1 ? unit.slice(0, -1) : unit})` : ''}</label>` : '');
-    if (KB) $('#sc-known').onchange = (e) => { scKnown = e.target.checked; drawScatter(); drawTopList(); };
+      + (KB ? `<label class="kb-toggle"><i class="kb-ring"></i>reported in BioGRID ${KB.release}, physical<select id="sc-known" aria-label="Which reported partners to ring">${[
+        ['pass', `past 10% FPR (${fmtInt(reportedPts.filter(passing).length)})`], ['all', `all (${fmtInt(reportedPts.length)})`], ['off', 'none']].map(([v, l]) => `<option value="${v}"${v === scKnown ? ' selected' : ''}>${l}</option>`).join('')}</select></label>` : '');
+    if (KB) $('#sc-known').onchange = (e) => { scKnown = e.target.value; drawScatter(); drawTopList(); };
     attachExport('scatter-canvas', `atlas_${P.gene}_partners`, drawScatter);
   }
 
@@ -1811,7 +1858,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function drawTopList() {
     const list = B.partners.filter((p) => p.id !== P.key && !p.rep).map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 })), k = M ? M.k : 1;
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
-    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
+    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
       <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
@@ -1865,7 +1912,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const netBox = $('#net'); let ecol = ECOL();
   paintEdgeKey($('#net-grad'), $('#net-gl'), ecol);
   $('#net-known').onchange = () => { if (NET) drawNet(); };
-  $('#net-pal').onchange = (e) => { setEdgePalette(e.target.value); ecol = ECOL(); paintEdgeKey($('#net-grad'), $('#net-gl'), ecol); if (NET && NET.link) NET.link.attr('stroke', (d) => ecol(d.best)); };
+  $('#net-pal').onchange = (e) => { setEdgePalette(e.target.value); ecol = ECOL(); paintEdgeKey($('#net-grad'), $('#net-gl'), ecol); app.querySelectorAll('#c-net .kb-rep').forEach((i) => { i.style.background = palStops(EDGE_PAL)[2]; }); if (NET && NET.link) NET.link.attr('stroke', (d) => ecol(d.best)); };
   { const w = d3.select('#net-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
       w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
@@ -1909,7 +1956,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const k = M ? M.k : 1;
       circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
       const used = [...new Set(nodes.filter((d) => !d.q).map((d) => partnerCluster.get(d.row.key)).filter(Boolean))].sort((a, b) => a - b);
-      $('#net-legend').innerHTML = (K && $('#net-known').checked ? `<span><i class="kb-rep" style="width:26px;border-radius:3px"></i>reported in BioGRID ${K.release} (${fmtInt(links.filter((l) => l.pubs).length)} of ${fmtInt(links.length)} pairs)</span>` : '') + (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '');
+      $('#net-legend').innerHTML = (K && $('#net-known').checked ? `<span><i class="kb-rep" style="width:26px;border-radius:3px;background:${palStops(EDGE_PAL)[2]}"></i>reported in BioGRID ${K.release} (${fmtInt(links.filter((l) => l.pubs).length)} of ${fmtInt(links.length)} pairs)</span>` : '') + (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '');
     } };
     NET.recolor();
     node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR` : `<b>${esc(d.row.gene)}</b> · iLIS best ${d.e.best.toFixed(3)} · average ${d.e.avg.toFixed(3)} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}`, ev.clientX, ev.clientY))
@@ -2031,12 +2078,12 @@ async function viewNetwork(spId, q) {
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein</span>
-        <span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR</button>`).join('')}</div>
+        <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div>
         <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
     <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label><input type="checkbox" id="nw-known" checked> BioGRID</label>
-        <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label><span>Edge colors</span>${paletteSelect('nw-pal')}
+        <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label><label class="ctl">Edge colors${paletteSelect('nw-pal')}</label>
         <button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-csv" type="button">↓ CSV</button>
         <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div></div>
       <p class="muted" style="margin:2px 0 12px">Your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} are large and dark, added partners small and light. Click a protein for its page, an edge for the interface residues of the pair. Drag to move, scroll to zoom.</p>
@@ -2051,7 +2098,7 @@ async function viewNetwork(spId, q) {
   paintEdgeKey($('#nw-grad'), $('#nw-gl'), ecol);
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
-  $('#nw-pal').onchange = (e) => { setEdgePalette(e.target.value); ecol = ECOL(); paintEdgeKey($('#nw-grad'), $('#nw-gl'), ecol); if (net) net.link.attr('stroke', (d) => ecol(d.best)); };
+  $('#nw-pal').onchange = (e) => { setEdgePalette(e.target.value); ecol = ECOL(); paintEdgeKey($('#nw-grad'), $('#nw-gl'), ecol); app.querySelectorAll('#nw-card .kb-rep').forEach((i) => { i.style.background = palStops(EDGE_PAL)[2]; }); if (net) net.link.attr('stroke', (d) => ecol(d.best)); };
   const status = (t) => { $('#nw-status').innerHTML = t; };
   const gname = (i) => sp.rows[i].gene, screens = (m) => sp.dsShort.filter((_, di) => m & (1 << di)).join(' + ');
   async function draw() {
@@ -2083,7 +2130,7 @@ async function viewNetwork(spId, q) {
       + `${missing.length ? ` · not found: ${esc(missing.join(', '))}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.join(', '))}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}`);
     $('#nw-card').hidden = false;
     if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; return; }
-    $('#nw-kb').innerHTML = K ? `<span>BioGRID ${K.release} · physical interactions</span><div class="kbrow"><i class="kb-rep"></i>predicted and reported${$('#nw-unpred').checked ? '<i class="kb-dash"></i>reported, not predicted' : ''}</div>` : '';
+    $('#nw-kb').innerHTML = K ? `<span>BioGRID ${K.release} · physical interactions</span><div class="kbrow"><i class="kb-rep" style="background:${palStops(EDGE_PAL)[2]}"></i>predicted and reported${$('#nw-unpred').checked ? '<i class="kb-dash"></i>reported, not predicted' : ''}</div>` : '';
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), links, extra);
   }
   function graph(nodes, links, extra = []) {
