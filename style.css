@@ -432,3 +432,6 @@ button.iso-tag:focus-visible { outline: 2px solid var(--blue); outline-offset: 1
 .tl-name a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .tl-name .iso-tag { flex: none; margin-left: 0; }
 .tl-keys { display: inline-flex; flex-wrap: nowrap; gap: 12px; white-space: nowrap; }
+
+/* a partner whose runs all repeat another partner's sequence pair (counted once, under that partner) */
+.pt tr.rep td { color: var(--ink-3); }

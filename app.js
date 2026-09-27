@@ -262,6 +262,12 @@ function merged(sp, P, scope = '', whole = false) {   // scope: one screen of th
   } else { const job = sp.cache.get(ck); sp.cache.delete(ck); sp.cache.set(ck, job); }
   return sp.cache.get(ck);
 }
+// The models a view of just these predictions counts: one run per sequence pair, its highest-iLIS run.
+function countOnce(list) {
+  const best = new Map(), n = new Map();
+  for (const p of list) { n.set(p.run, (n.get(p.run) || 0) + 1); const b = best.get(p.sp); if (!b || (p.iLIS || 0) > b.v) best.set(p.sp, { v: p.iLIS || 0, run: p.run }); }
+  let s = 0; for (const b of best.values()) s += n.get(b.run); return s;
+}
 // A split gene's bundle as one file again (the download): its rows from every isoform file, its constructs and sequences.
 async function wholeBundle(ds, raw) {
   const subs = await Promise.all(raw.isoforms.choices.map((c) => bundleRaw(ds, c.file)));
@@ -282,6 +288,9 @@ function orderChoices(choices) {
 // The predictions of the given bundles merged into one view of the protein: its partners, its clustering choices, cLIP rows.
 async function assemble(sp, P, parts, scope, onlyDi, setId) {
       const preds = [], runs = new Map(), seqs = new Map(), cons = new Map(), sets = [], TS = (parts.find((x) => x.TS) || {}).TS || null;
+      const seqNo = new Map(), sno = (s) => { let i = seqNo.get(s); if (i == null) seqNo.set(s, i = seqNo.size); return i; };
+      const pairKey = (S, q, o, ql, ol) => { const x = S && S.get(q), y = S && S.get(o);   // the two sequences, the query's first
+        return x && y ? sno(x) + '|' + sno(y) : `${q}|${o}|${ql}|${ol}`; };               // (names and lengths without a FASTA)
       for (const part of parts) {
         if (!part.raw.rows) Object.assign(part.raw, await csvRows(await JSZip.loadAsync(part.raw.bytes), part.raw.csvName));   // read again: an earlier view let them go
         const C = part.raw.cons;
@@ -307,19 +316,33 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
             qC: own(r[H[s('cLIR_indices_i', 'cLIR_indices_j')]]), pC: own(r[H[s('cLIR_indices_j', 'cLIR_indices_i')]]), row: null, hdr: null };
           if (p.iLIS >= CUT[10]) { p.row = r.map(own); p.hdr = hdr; }   // only rows past the lowest cutoff are ever clustered
           if (!Number.isFinite(p.iLISA)) p.iLISA = (p.iLIS || 0) * (p.iLIA || 0);
+          p.sp = pairKey(part.raw.seqs, qi ? a : b, qi ? b : a, p.qLen, p.pLen);
           preds.push(p);
         }
         part.raw.rows = null;   // read: the predictions keep what they need (and the rows past the cutoff, below)
       }
+      // A sequence pair counts once in a view (the atlas rule, 2026-09-27): the same two sequences folded in several runs
+      // (two screens or sets, both chain orders, a re-run) keep the run with the highest iLIS for every residue view and
+      // count; the other runs stay listed as repeats (the pair page shows their models) but add no contacts or models.
+      const top = new Map();   // run → its best iLIS and sequence pair
+      for (const p of preds) { const t = top.get(p.run); if (!t) top.set(p.run, { best: p.iLIS || 0, sp: p.sp }); else if ((p.iLIS || 0) > t.best) t.best = p.iLIS || 0; }
+      const better = (x, y) => { const X = top.get(x), Y = top.get(y), rx = runs.get(x), ry = runs.get(y);   // ties: the earlier screen, the query first, the id
+        return X.best !== Y.best ? X.best > Y.best : rx.di !== ry.di ? rx.di < ry.di : rx.qi !== ry.qi ? rx.qi : x < y; };
+      const kept = new Map();
+      for (const [rid, t] of top) { const k = kept.get(t.sp); if (k == null || better(rid, k)) kept.set(t.sp, rid); }
+      for (const [rid, t] of top) { const k = kept.get(t.sp); runs.get(rid).repeatOf = k === rid ? null : k; }
+      for (const p of preds) p.rep = !!runs.get(p.run).repeatOf;
       const aggregate = (list) => {   // predictions → one row per partner: its runs, its best and average scores
         const byP = new Map();
         for (const p of list) { if (!byP.has(p.partner)) byP.set(p.partner, []); byP.get(p.partner).push(p); }
         return [...byP].map(([key, ps]) => {
           const ids = [...new Set(ps.map((p) => p.run))].sort((x, y) => runs.get(x).di - runs.get(y).di || (runs.get(y).qi ? 1 : 0) - (runs.get(x).qi ? 1 : 0) || (x < y ? -1 : x > y ? 1 : 0));   // the same order however the rows were packed
           ps.sort((x, y) => ids.indexOf(x.run) - ids.indexOf(y.run) || x.rank - y.rank);
-          const il = ps.map((p) => p.iLIS || 0), ip = ps.map((p) => p.ipTM || 0);
-          return { id: key, row: sp.byKey.get(key) || null, preds: ps, runs: ids, src: ps.reduce((m, p) => m | (1 << p.di), 0), best: Math.max(...il), avg: mean(il),
-            ilisaBest: Math.max(...ps.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...ps.map((p) => p.qcLIR || 0)),
+          const cs = ps.some((p) => !p.rep) ? ps.filter((p) => !p.rep) : ps;   // scores from the runs this view counts
+          const il = cs.map((p) => p.iLIS || 0), ip = cs.map((p) => p.ipTM || 0);
+          const rep = !ps.some((p) => !p.rep), of = rep ? runs.get(runs.get(ps[0].run).repeatOf) : null;   // every run a repeat: same sequences as another partner
+          return { id: key, row: sp.byKey.get(key) || null, preds: ps, counted: cs, rep, repOf: of ? of.key : null, runs: ids, src: ps.reduce((m, p) => m | (1 << p.di), 0), best: Math.max(...il), avg: mean(il),
+            ilisaBest: Math.max(...cs.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...cs.map((p) => p.qcLIR || 0)),
             sets: [...new Set(ps.map((p) => p.set).filter(Boolean))] };
         });
       };
@@ -365,6 +388,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         const qLen = !choices.length ? fallback.qLen : ref ? R0 : cons.get(choice).len;
         const rows = [], aside = new Map(), nameN = new Map();
         for (const p of preds) {
+          if (p.rep) continue;   // a repeat of a sequence pair adds no contacts
           if (!inClip(p)) { const c = cons.get(p.qc), k = c ? p.qc : 'screen ' + p.di; if (!aside.has(k)) aside.set(k, { di: p.di, len: p.qLen, con: c || null, n: 0 }); aside.get(k).n++; continue; }
           nameN.set(p.qc, (nameN.get(p.qc) || 0) + 1);
           if (!(p.iLIS >= CUT[10]) || !p.row) continue;
@@ -381,14 +405,14 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         return { choice, rows, qLen, qName, aside };
       };
       const C0 = clipFor(choices.length ? choices[0].id : '');
-      const all = { parts, preds, partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside, iso: null };
+      const all = { parts, preds, counted: preds.filter((p) => !p.rep), partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside, iso: null };
       // One choice's predictions only (the reference with everything placed on it, or one other construct): a gene whose
       // isoforms were folded separately is read one isoform at a time, every card on the same predictions.
       const views = new Map(), others = new Set(choices.filter((c) => c.id).map((c) => c.id));
       all.only = (id) => {
         if (choices.length < 2) return all;
         if (!views.has(id)) {
-          const ps = preds.filter((p) => (id ? p.qc === id : !others.has(p.qc))), v = { ...all, preds: ps, partners: aggregate(ps), iso: id };
+          const ps = preds.filter((p) => (id ? p.qc === id : !others.has(p.qc))), v = { ...all, preds: ps, counted: ps.filter((p) => !p.rep), partners: aggregate(ps), iso: id };
           let C = null; const clip = () => (C ||= clipFor(id));   // built when this isoform is the one shown, not for the comparison table
           Object.defineProperties(v, { C0: { get: clip }, clipRows: { get: () => clip().rows }, qLen: { get: () => clip().qLen }, qName: { get: () => clip().qName }, aside: { get: () => clip().aside } });
           views.set(id, v);
@@ -1127,8 +1151,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (ISO !== BA.choices[0]) document.title = `${P.gene} · ${isoName(ISO)} · LIVIA Atlas`;
   }
   {
-    const n = new Map(); for (const p of B0.preds) { const d = sp.dsIds[p.di]; n.set(d, (n.get(d) || 0) + 1); for (const t of p.tags || []) n.set(t, (n.get(t) || 0) + 1); }
-    let total = B0.preds.length;
+    const n = new Map(), by = new Map();   // each screen and set counts its own models, a sequence pair once
+    for (const p of B0.preds) for (const k of [sp.dsIds[p.di], ...(p.tags || [])]) { if (!by.has(k)) by.set(k, []); by.get(k).push(p); }
+    for (const [k, ps] of by) n.set(k, countOnce(ps));
+    let total = B0.counted.length;
     if (B0.split) for (const c of B0.split.summary.choices) {   // the isoform files, counted from the gene's summary
       const d = sp.dsIds[B0.split.part.di]; n.set(d, (n.get(d) || 0) + c.models); total += c.models;
       for (const [t, k] of Object.entries(c.sets || {})) n.set(t, (n.get(t) || 0) + k); }
@@ -1146,11 +1172,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const about = SET.type === 'dataset' ? `#/datasets/${SET.id}` : `#/datasets/${TS0.ds.id}/${SET.id}`;
     const bar = $('#setbar'); bar.hidden = false;
     bar.innerHTML = `<span class="src" style="--c:${SET.color}">${esc(SET.short)}</span><span>Only ${esc(what)}${who ? ` (<a href="${esc(SET.source.url)}" target="_blank" rel="noopener">${esc(who)}</a>)` : ''}:
-      ${fmtInt(BA.preds.length + (BA.split ? BA.split.others.reduce((a, c) => a + c.n, 0) : 0))} of ${fmtInt(B0.preds.length + (B0.split ? B0.split.summary.choices.reduce((a, c) => a + c.models, 0) : 0))} models.</span><span><a href="#/${sp.id}/${P.key}">Show every prediction</a> · <a href="${about}">about this ${SET.type === 'dataset' ? 'screen' : 'set'}</a></span>`;
+      ${fmtInt(BA.counted.length + (BA.split ? BA.split.others.reduce((a, c) => a + c.n, 0) : 0))} of ${fmtInt(B0.counted.length + (B0.split ? B0.split.summary.choices.reduce((a, c) => a + c.models, 0) : 0))} models.</span><span><a href="#/${sp.id}/${P.key}">Show every prediction</a> · <a href="${about}">about this ${SET.type === 'dataset' ? 'screen' : 'set'}</a></span>`;
     document.title = `${P.gene} · ${SET.short} · LIVIA Atlas`;
   }
   if (SET || ISO) {   // the tiles count what the page shows
-    const others = B.partners.filter((x) => x.id !== P.key), cnt = (c) => others.filter((x) => x.best >= c).length;
+    const others = B.partners.filter((x) => x.id !== P.key && !x.rep), cnt = (c) => others.filter((x) => x.best >= c).length;
     $('#kp-all').textContent = fmtInt(others.length); $('#kp-10').textContent = fmtInt(cnt(CUT[10])); $('#kp-5').textContent = fmtInt(cnt(CUT[5])); $('#kp-1').textContent = fmtInt(cnt(CUT[1]));
   }
   const refSeq = await seqOf(sp, P, B);   // the reference sequence (UniProt; FlyBase for fly)
@@ -1219,7 +1245,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   };
   constructNote();
   if (ISO) {   // the isoforms side by side: what each was folded with and what binds it best
-    const tally = (V) => { const ot = V.partners.filter((x) => x.id !== P.key), n = (c) => ot.filter((x) => x.best >= c).length;
+    const tally = (V) => { const ot = V.partners.filter((x) => x.id !== P.key && !x.rep), n = (c) => ot.filter((x) => x.best >= c).length;
       return { n: ot.length, p10: n(CUT[10]), p5: n(CUT[5]), p1: n(CUT[1]), top: [...ot].sort((x, y) => y.best - x.best).slice(0, 3) }; };
     const fromSummary = (t) => ({ n: t.partners, p10: t.p10, p5: t.p5, p1: t.p1, top: (t.top || []).map(([id, best]) => ({ id, best })) });
     const all = BA.split ? fromSummary(BA.split.allStats) : tally(BA), card = $('#c-iso'); card.hidden = false;
@@ -1396,7 +1422,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function pickPartner() {
     const id = $('#res-partner').value, part = B.partners.find((p) => p.id === id); if (!part) return;
     const best = [...part.preds].sort((a, b) => b.iLIS - a.iLIS)[0];
-    $('#res-rank').innerHTML = part.preds.map((p, i) => `<option value="${i}">${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank} · iLIS ${fmtNum(p.iLIS, 3)}</option>`).join('');
+    $('#res-rank').innerHTML = part.preds.map((p, i) => `<option value="${i}">${esc(runLabel(sp, B, p.run, P))}${p.rep ? ' (repeat)' : ''} · rank ${p.rank} · iLIS ${fmtNum(p.iLIS, 3)}</option>`).join('');
     $('#res-rank').value = String(part.preds.indexOf(best));
     drawResidues();
   }
@@ -1492,7 +1518,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   { const io3 = new IntersectionObserver((ents) => { if (ents.some((x) => x.isIntersecting)) { io3.disconnect(); show3D(); } }, { rootMargin: '300px' }); io3.observe($('#c-3d')); }
 
   /* Interaction scatter plot: every prediction (or rank 1 of each run), cluster colors, any two metrics — on a canvas, so it exports */
-  const present = Object.keys(METRICS).filter((k) => k === '_rank' || B.preds.some((p) => Number.isFinite(p[k]) && p[k] !== 0));
+  const present = Object.keys(METRICS).filter((k) => k === '_rank' || B.counted.some((p) => Number.isFinite(p[k]) && p[k] !== 0));
   $('#sc-y').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
   $('#sc-x').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
   $('#sc-y').value = 'iLIS'; $('#sc-x').value = present.includes('iLISA') ? 'iLISA' : 'ipTM';
@@ -1506,10 +1532,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const xK = $('#sc-x').value, yK = $('#sc-y').value, mode = $('#sc-pts').value, k = M ? M.k : 1;
     const rankBy = yK !== '_rank' ? yK : xK !== '_rank' ? xK : 'iLIS';
     let grank = null;
-    if (xK === '_rank' || yK === '_rank') { grank = new Map(); B.preds.map((p, i) => [p, i]).sort((a, b) => ((b[0][rankBy] || 0) - (a[0][rankBy] || 0)) || a[1] - b[1]).forEach(([p], i) => grank.set(p, i + 1)); }
+    if (xK === '_rank' || yK === '_rank') { grank = new Map(); B.counted.map((p, i) => [p, i]).sort((a, b) => ((b[0][rankBy] || 0) - (a[0][rankBy] || 0)) || a[1] - b[1]).forEach(([p], i) => grank.set(p, i + 1)); }
     const val = (p, key) => (key === '_rank' ? grank.get(p) : p[key]);
     const pts = [];
-    for (const p of B.preds) { const x = val(p, xK), y = val(p, yK); if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
+    for (const p of B.counted) { const x = val(p, xK), y = val(p, yK); if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
       const c = predCluster.get(p.label + '|' + p.rank); pts.push({ p, x, y, c: c != null && (mode === 'all' || p.rank === 1) ? c : 0 }); }
     pts.sort((a, b) => (a.c ? 1 : 0) - (b.c ? 1 : 0));
     const W = cv.parentElement.clientWidth, H = 450, m = { l: 62, r: 18, t: 24, b: 46 };
@@ -1610,14 +1636,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const T = { sort: 'best', asc: false, page: 0, band: P.pos10 ? 10 : 0, filter: '', src: 0 };
   const cols = [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
   function drawTable() {
-    let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.preds.filter((x) => x.iLIS >= CUT[10]).length }; });
+    let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length }; });
     if (T.src) list = list.filter((p) => (SETS ? p.sets.includes(T.src) : p.src & T.src));
     if (T.band) list = list.filter((p) => p.best >= CUT[T.band]);
     if (T.filter) { const f = T.filter.toLowerCase(); list = list.filter((p) => p.gene.toLowerCase().includes(f) || (p.name || '').toLowerCase().includes(f) || p.id.toLowerCase().includes(f)); }
     const key = T.sort; list.sort((a, b) => (typeof a[key] === 'string' ? a[key].localeCompare(b[key]) : a[key] - b[key]) * (T.asc ? 1 : -1));
     const per = 40, pages = Math.max(1, Math.ceil(list.length / per)); T.page = Math.min(T.page, pages - 1);
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
-    $('#pt-note').textContent = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.length)} predicted`;
+    $('#pt-note').textContent = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted`;
     $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
       const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
@@ -1626,14 +1652,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <td></td><td class="nm">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
           <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td><td class="n v" style="color:${bandCol(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
           <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td><td class="n">${fmtInt(x.contacts)}</td><td class="n">${x.pass} / ${x.n}</td></tr>`; }).join('') : '';
-      return `<tr><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${tag}</td>
+      const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
+      return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         <td class="srcc">${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
         <td class="n v" style="color:${BAND[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
         <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>
-        <td class="n">${fmtInt(p.contacts)}</td><td class="n" title="models past the 10% FPR cutoff">${p.pass} / ${p.preds.length}</td></tr>${subs}`; }).join('')}</tbody>`;
+        <td class="n">${fmtInt(p.contacts)}</td><td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td></tr>${subs}`; }).join('')}</tbody>`;
     $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
     $('#pt').querySelectorAll('th').forEach((th) => th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : (c === 'gene' || c === 'name' || c === 'c'); T.sort = c; drawTable(); });
     $('#pager').innerHTML = pages > 1 ? `<button class="btn" id="pp" ${T.page ? '' : 'disabled'}>Previous</button><span>Page ${T.page + 1} of ${pages}</span><button class="btn" id="pn" ${T.page < pages - 1 ? '' : 'disabled'}>Next</button>` : '';
@@ -1660,7 +1687,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     let E; try { E = await edges(sp, B.setId); } catch (e) { if (!gone()) netBox.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     if (gone()) return;
     const n = +$('#net-n').value, c = CUT[+$('#net-cut').value];
-    const qAdj = ISO ? new Map(B.partners.filter((x) => x.id !== P.key && sp.byKey.has(x.id)).map((x) => [sp.byKey.get(x.id).i, { best: x.best, avg: x.avg, src: x.src }]))   // this isoform's partners
+    const qAdj = ISO ? new Map(B.partners.filter((x) => x.id !== P.key && !x.rep && sp.byKey.has(x.id)).map((x) => [sp.byKey.get(x.id).i, { best: x.best, avg: x.avg, src: x.src }]))   // this isoform's partners
       : E.adj.get(P.i) || new Map();
     const nb = [...qAdj].filter(([, e]) => e.best >= c).sort((a, b) => b[1].best - a[1].best).slice(0, n);
     netBox.innerHTML = '<svg></svg>';
@@ -1742,7 +1769,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   const who = (R, len, col) => `<div class="who"><b style="color:${col}">${esc(R.gene)}</b> <span>${esc(short(R.name) || '')}</span>
       <div class="ids">${R.acc ? uniprotLink(R.acc) : '<span>no UniProt entry</span>'}<span>${esc(R.id)}</span>${len ? `<span>${fmtInt(len)} aa</span>` : ''}</div></div>`;
   const num = (v, d) => `<td class="n">${fmtNum(v, d)}</td>`;
-  const lab = (p) => runLabel(sp, B, p.run, P);
+  const lab = (p) => runLabel(sp, B, p.run, P) + (p.rep ? ` · repeat of ${runLabel(sp, B, B.runs.get(p.run).repeatOf, P)}` : '');
   app.innerHTML = `${crumbs}
     <div class="phead"><div><h1><span style="color:var(--query)">${esc(P.gene)}</span> <span style="color:var(--ink-3);font-weight:600">×</span> <span style="color:var(--partner)">${esc(O.gene)}</span></h1>
         <div class="pairwho">${who(P, P.clen, 'var(--query)')}${who(O, oLen, 'var(--partner)')}</div>
@@ -1751,7 +1778,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
       <div class="kpis"><div class="kpi"><b style="color:${BAND[b]}">${part.best.toFixed(3)}</b><span>iLIS best · ${bandLabel[b]}</span></div><div class="kpi"><b>${part.ilisaBest.toFixed(1)}</b><span>iLISA best</span></div>
         <div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>
         <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM best · ${bandLabel[bandIn(FPR.ipTM, part.iptmBest)]}</span></div></div></div>
-    <div class="card"><div class="card-head"><h2>Ranked models</h2><span class="muted">every model of every screen · rank = the prediction's own model order, ipTM-based, not the iLIS order · click one to show its interface</span></div>
+    <div class="card"><div class="card-head"><h2>Ranked models</h2><span class="muted">every model of every screen · rank = the prediction's own model order, ipTM-based, not the iLIS order · click one to show its interface${part.preds.some((p) => p.rep) ? ' · a repeat folded the same two sequences again: listed, not counted' : ''}</span></div>
       <div class="tbl-wrap"><table class="pt models"><thead>
         <tr><th rowspan="2">Source</th><th rowspan="2" title="The model's rank within its prediction: the predictor's own ipTM-based order, not the iLIS order">Rank</th><th rowspan="2" class="n">iLIS</th><th rowspan="2" class="n">iLISA</th><th rowspan="2" class="n">ipTM</th><th rowspan="2" class="n">LIS</th><th rowspan="2" class="n">cLIS</th>
           <th colspan="2" class="grp">Interface residues (LIR)</th><th colspan="2" class="grp">Contact residues (cLIR)</th></tr>
