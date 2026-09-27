@@ -1308,11 +1308,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     for (const d of doms) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = 4 + d.lane * DRH;   // domains D1, D2 … (names in the legend), as LIVIA cLIP
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, y + 0.3, x1 - x0 - 0.6, 11.4);
       g.fillStyle = '#34445A'; g.font = '10px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; const lb = 'D' + d.idx; if (g.measureText(lb).width < x1 - x0 - 2) g.fillText(lb, (x0 + x1) / 2, y + 6.5); }
-    frame(padT, fBase);   // # partners (predictions contacting the residue); bar color = the residue's most frequent cluster
+    frame(padT, fBase);   // # predictions contacting the residue; bar color = the residue's most frequent cluster
     g.strokeStyle = '#E3E8EE'; g.lineWidth = 1; for (const f of [0.5, 1]) { const y = Math.round(fBase - f * fH) + 0.5; g.beginPath(); g.moveTo(AXL, y); g.lineTo(W - AXR, y); g.stroke(); }
     for (let r = 1; r <= L; r++) { if (!tot[r]) continue; let dom = 1, b = -1; const cc = byC[r]; for (const c in cc) if (cc[c] > b) { b = cc[c]; dom = +c; }
       const h = tot[r] / max * fH; g.fillStyle = clusterColor(dom, k); g.fillRect(xOf(r), fBase - h, Math.max(1, bw), h); }
-    yTicks([...new Set([0, Math.round(max / 2), max])], String, (v) => fBase - v / max * fH); yLabel('# partners', padT, fBase, '#34445A');
+    yTicks([...new Set([0, Math.round(max / 2), max])], String, (v) => fBase - v / max * fH); yLabel('# predictions', padT, fBase, '#34445A');
     const line = (vals, yOf, col) => { let prev = null; g.lineWidth = 1.5;
       for (let r = 1; r <= L; r++) { const sr = toStruct(r), v = sr ? vals(sr) : null; if (v == null) { prev = null; continue; } const x = xc(r), y = yOf(v);
         if (prev) { const mx = (prev.x + x) / 2, my = (prev.y + y) / 2; g.strokeStyle = col(prev.v); g.beginPath(); g.moveTo(prev.x, prev.y); g.lineTo(mx, my); g.stroke(); g.strokeStyle = col(v); g.beginPath(); g.moveTo(mx, my); g.lineTo(x, y); g.stroke(); }
