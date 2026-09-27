@@ -884,7 +884,7 @@ function canvasAxes(g, xs, ys, m, W, H, xTitle, yTitle) {
 /* ── views ───────────────────────────────────────────────────────────────────────────────────────────── */
 const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: ['arm', 'dsh', 'Ras85D', 'N', 'yki', 'Akt'],   // example proteins on the home page
   zebrafish: ['ksr1a', 'map3k7'], yeast: ['PRR2', 'YAK1'], worm: ['ksr-1', 'par-1'],
-  virus: [['Zaire ebolavirus', 'taxon/128952'], ['Vaccinia virus', 'taxon/10254'], ['Human cytomegalovirus', 'taxon/295027']] };   // viruses open their network page
+  virus: [['Herpes simplex virus 1', 'taxon/10299'], ['Influenza A virus', 'taxon/211044?cut=5'], ['Mpox virus', 'taxon/619591']] };   // viruses open their network page (influenza's polymerase shows at 5% FPR)
 async function viewHome() {
   // Totals come from the species manifests alone; the species indexes (search) load once the page is idle.
   const gen = ROUTE, reg = await registry(), all = await Promise.all((reg.species || []).map((x) => speciesManifest(x.id)));
@@ -2270,11 +2270,15 @@ async function viewVirus(spId, taxid) {
   if (stale(gen)) return;
   const q = hashPath().q; let cut = [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 1, topk = q.has('top') ? Math.max(0, +q.get('top') || 0) : 0;   // defaults: 1% FPR, every edge
   const R = (i) => sp.rows[i], lines = text.trim().split('\n'), head = lines[0].split('\t');
-  const all = lines.slice(1).map((l) => { const t = l.split('\t'), m = {}; let model = ''; head.forEach((h, k) => { if (h === 'model') model = t[k] || ''; else if (k > 1) m[h] = t[k] === '' ? NaN : +t[k]; });
-    return { a: +t[0], b: +t[1], best: m.iLIS, avg: m.iLIS, iptm: m.ipTM, m, model }; }).sort((x, y) => y.best - x.best);   // one model per pair: best = average
-  const MCOL = head.slice(2).filter((h) => h !== 'model'), AFDBOK = new Map(), mfmt = (k, x) => (!Number.isFinite(x) ? '–' : k === 'iLISA' ? x.toFixed(1) : k === 'ipTM' ? x.toFixed(2) : x.toFixed(3));
+  const all = lines.slice(1).map((l) => { const t = l.split('\t'), m = {}; let model = '', shown = false; head.forEach((h, k) => { if (h === 'model') model = t[k] || ''; else if (h === 'afdb') shown = t[k] === '1'; else if (k > 1) m[h] = t[k] === '' ? NaN : +t[k]; });
+    return { a: +t[0], b: +t[1], best: m.iLIS, avg: m.iLIS, iptm: m.ipTM, m, model, shown }; }).sort((x, y) => y.best - x.best);   // one model per pair: best = average
+  const MCOL = head.slice(2).filter((h) => h !== 'model' && h !== 'afdb'), mfmt = (k, x) => (!Number.isFinite(x) ? '–' : k === 'iLISA' ? x.toFixed(1) : k === 'ipTM' ? x.toFixed(2) : x.toFixed(3));
   let sortKey = 'iLIS', sortAsc = false;
-  const lab = (r) => (r.gene.length > 16 ? r.gene.slice(0, 15) + '…' : r.gene);
+  const lab = (r) => {   // a short node label: the gene, or the code that names a polyprotein product ("Serine protease NS3" → NS3)
+    const g = r.gene; if (g.length <= 12) return g;
+    const ns = g.match(/^Non[ -]?structural protein\s+(\w+)$/i); if (ns) return 'NS' + ns[1];
+    const last = g.split(/\s+/).pop(); if (/^(NS\d+[A-Z]?|nsP\d|VP\d+[a-z]?|[A-Za-z]{1,3}\d*[A-Z]?|2[Kk]|\d[A-C])$/.test(last) && last.length <= 5) return last;
+    return g.slice(0, 11) + '…'; };
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(v.name)}</div>
     <div class="phead"><div><h1>${esc(v.name)}</h1>
       <div class="pname">every pair of its ${fmtInt(v.n)} proteins folded with AlphaFold-Multimer (one model each) and scored with lis.py</div>
@@ -2289,8 +2293,8 @@ async function viewVirus(spId, taxid) {
       <div class="net" id="vn-net"></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
     <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><button class="btn" id="vp-csv" type="button">↓ CSV</button></div>
       <div class="legend" style="margin:0 0 10px">iLIS and ipTM are colored by the false-positive-rate band they pass, each by its own benchmarked cutoffs:
-        ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}<span class="muted">· click a column to sort</span></div>
-      <div class="tbl-wrap"><table class="pt" id="vp"></table></div><div class="pager" id="vp-more"></div></div>
+        ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}<span class="muted">Click a column to sort.</span></div>
+      <div class="tbl-wrap"><table class="pt compact" id="vp"></table></div><div class="pager" id="vp-more"></div></div>
     <div class="card"><div class="card-head"><h2>Proteins <span class="muted">${fmtInt(v.n)}</span></h2></div><div class="tbl-wrap"><table class="pt" id="vprot"></table></div></div>`;
   let shownPairs = 60;
   const pairHref = (x) => `#/${sp.id}/${R(x.a).key}/${R(x.b).key}`;
@@ -2299,17 +2303,11 @@ async function viewVirus(spId, taxid) {
     for (const x of P) if (x.a === x.b) homo.add(x.a); else { deg.set(x.a, (deg.get(x.a) || 0) + 1); deg.set(x.b, (deg.get(x.b) || 0) + 1); }
     $('#vp-note').textContent = `${fmtInt(P.length)} past iLIS ${c} (${cut}% FPR), ${fmtInt(P.filter((x) => x.a === x.b).length)} of them homodimers`;
     const PS = [...P].sort((x, y) => { const d = (x.m[sortKey] ?? -Infinity) - (y.m[sortKey] ?? -Infinity); return (sortAsc ? d : -d) || y.best - x.best; });
-    $('#vp').innerHTML = `<thead><tr><th>Protein</th><th>Partner</th>${MCOL.map((k) => `<th class="n${k === sortKey ? ' sorted' + (sortAsc ? ' asc' : '') : ''}" data-k="${k}" style="cursor:pointer">${k}</th>`).join('')}<th>Interface</th><th title="the model in LIVIA's AlphaFold DB page, for pairs the database displays">Structure</th></tr></thead><tbody>${PS.slice(0, shownPairs).map((x) => { const b = bandOf(x.best);
-      return `<tr><td class="g"><a href="#/${sp.id}/${R(x.a).key}">${esc(R(x.a).gene)}</a></td><td class="g">${x.a === x.b ? '<span class="muted">itself (homodimer)</span>' : `<a href="#/${sp.id}/${R(x.b).key}">${esc(R(x.b).gene)}</a>`}</td>
-        ${MCOL.map((k) => (k === 'iLIS' ? `<td class="n v"><a href="${pairHref(x)}" style="color:${BAND[b]}">${mfmt(k, x.m[k])}</a></td>` : k === 'ipTM' ? `<td class="n v" style="color:${bandCol(FPR.ipTM, x.m[k])}">${mfmt(k, x.m[k])}</td>` : `<td class="n">${mfmt(k, x.m[k])}</td>`)).join('')}
-        <td><a href="${pairHref(x)}">residues →</a></td>
-        <td>${x.model ? `<button class="more" type="button" data-af="${esc(x.model)}">${AFDBOK.get(x.model) === false ? 'not displayed by AFDB' : 'LIVIA ↗'}</button>` : '<span class="muted">—</span>'}</td></tr>`; }).join('')}</tbody>`;
-    $('#vp').querySelectorAll('button[data-af]').forEach((bt) => bt.onclick = async () => {   // AFDB serves only the complexes it displays: ask first, open LIVIA on the model if it does
-      const af = bt.dataset.af; if (AFDBOK.get(af) === false) return;
-      const w = window.open('', '_blank');   // opened now, while the click still counts, so it is not blocked
-      if (!AFDBOK.has(af)) { bt.textContent = 'checking…'; try { AFDBOK.set(af, (await fetch(`https://alphafold.ebi.ac.uk/api/complex/${af}`)).ok); } catch (e) { AFDBOK.delete(af); } }
-      if (AFDBOK.get(af)) { bt.textContent = 'LIVIA ↗'; if (w) w.location = `${LIVIA}dimer.html?id=${encodeURIComponent(af)}`; else window.open(`${LIVIA}dimer.html?id=${encodeURIComponent(af)}`, '_blank'); }
-      else { if (w) w.close(); bt.textContent = AFDBOK.get(af) === false ? 'not displayed by AFDB' : 'no answer from AFDB'; bt.title = 'AlphaFold DB shows only the complexes that pass its own filter; the others open from the release archive once it is indexed'; } });
+    $('#vp').innerHTML = `<thead><tr><th>Protein</th><th>Partner</th><th title="the interface residues of the pair">Pair</th><th title="the model in LIVIA, for the pairs the AlphaFold Database displays (its filter: ipSAE ≥ 0.60 and pDockQ2 ≥ 0.23)">3D</th>${MCOL.map((k) => `<th class="n${k === sortKey ? ' sorted' + (sortAsc ? ' asc' : '') : ''}" data-k="${k}" style="cursor:pointer">${k}</th>`).join('')}</tr></thead><tbody>${PS.slice(0, shownPairs).map((x) => { const b = bandOf(x.best);
+      return `<tr><td class="g"><a href="#/${sp.id}/${R(x.a).key}">${esc(R(x.a).gene)}</a></td><td class="g">${x.a === x.b ? '<span class="muted" title="homodimer: the protein with itself">self</span>' : `<a href="#/${sp.id}/${R(x.b).key}">${esc(R(x.b).gene)}</a>`}</td>
+        <td><a href="${pairHref(x)}" title="interface residues">residues</a></td>
+        <td>${x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>` : '<span class="muted" title="not displayed by the AlphaFold Database (below its filter); the structure opens from the release archive once it is indexed">—</span>'}</td>
+        ${MCOL.map((k) => (k === 'iLIS' ? `<td class="n v"><a href="${pairHref(x)}" style="color:${BAND[b]}">${mfmt(k, x.m[k])}</a></td>` : k === 'ipTM' ? `<td class="n v" style="color:${bandCol(FPR.ipTM, x.m[k])}">${mfmt(k, x.m[k])}</td>` : `<td class="n">${mfmt(k, x.m[k])}</td>`)).join('')}</tr>`; }).join('')}</tbody>`;
     $('#vp').querySelectorAll('th[data-k]').forEach((th) => th.onclick = () => { const k = th.dataset.k; if (k === sortKey) sortAsc = !sortAsc; else { sortKey = k; sortAsc = false; } tables(); });
     $('#vp-more').innerHTML = P.length > shownPairs ? `<button class="more" type="button">show ${fmtInt(Math.min(200, P.length - shownPairs))} more</button>` : '';
     const mb = $('#vp-more button'); if (mb) mb.onclick = () => { shownPairs += 200; tables(); };
@@ -2376,7 +2374,7 @@ async function viewVirus(spId, taxid) {
   $('#vn-comm').onchange = () => draw();
   $('#vn-top').onchange = (e) => { topk = +e.target.value; const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); topk ? u.set('top', topk) : u.delete('top'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); };
   $('#vp-csv').onclick = () => { const csvq = (x) => (/[",\n]/.test(x) ? `"${String(x).replace(/"/g, '""')}"` : x), c = CUT[cut];
-    const text = `Protein_1,Protein_2,accession_1,accession_2,${MCOL.join(',')},band,AFDB_model\n` + all.filter((x) => x.best >= c).map((x) => [csvq(R(x.a).gene), csvq(R(x.b).gene), R(x.a).acc || R(x.a).key, R(x.b).acc || R(x.b).key, ...MCOL.map((k) => (Number.isFinite(x.m[k]) ? x.m[k] : '')), bandLabel[bandOf(x.best)], x.model].join(',')).join('\n') + '\n';
+    const text = `Protein_1,Protein_2,accession_1,accession_2,${MCOL.join(',')},band,AFDB_model,displayed_by_AFDB\n` + all.filter((x) => x.best >= c).map((x) => [csvq(R(x.a).gene), csvq(R(x.b).gene), R(x.a).acc || R(x.a).key, R(x.b).acc || R(x.b).key, ...MCOL.map((k) => (Number.isFinite(x.m[k]) ? x.m[k] : '')), bandLabel[bandOf(x.best)], x.model, x.shown ? 'yes' : 'no'].join(',')).join('\n') + '\n';
     const u = URL.createObjectURL(new Blob([text], { type: 'text/csv' })), a = document.createElement('a'); a.href = u; a.download = `atlas_virus_${v.taxid}_pairs.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   draw();
 }

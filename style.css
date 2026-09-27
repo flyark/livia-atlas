@@ -121,6 +121,8 @@ table.pt { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .pt td.g a { font-weight: 600; }
 .pt td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
 .pt td.nm { color: var(--ink-3); max-width: 340px; overflow: hidden; text-overflow: ellipsis; }
+.pt.compact th, .pt.compact td { padding: 6px 7px; }
+.pt.compact td.n, .pt.compact th.n { font-size: 12.5px; }
 .bar { display: inline-block; width: 64px; height: 7px; border-radius: 4px; background: var(--line-2); vertical-align: middle; margin-left: 8px; position: relative; overflow: hidden; }
 .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; }
 .band { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 5px; }
