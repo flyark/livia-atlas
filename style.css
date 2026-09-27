@@ -435,3 +435,7 @@ button.iso-tag:focus-visible { outline: 2px solid var(--blue); outline-offset: 1
 /* network builder: the list of proteins */
 textarea.ids { width: 100%; box-sizing: border-box; font: 13.5px/1.5 var(--mono); padding: 9px 11px; border: 1px solid var(--line); border-radius: 10px; background: #FBFCFD; color: var(--ink); resize: vertical; margin-top: 10px; }
 textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
+/* BioGRID key under a network */
+.kbrow { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--ink-2); margin-top: 6px; flex-wrap: wrap; }
+.kb-rep { display: inline-block; width: 36px; height: 4px; border-radius: 3px; background: #7A6FD0; box-shadow: 0 0 0 2px rgba(23, 38, 58, 0.55); }
+.kb-dash { display: inline-block; width: 36px; height: 0; border-top: 1.5px dashed #6F7D90; margin-left: 10px; }
