@@ -561,11 +561,12 @@ const DOMS = new Map();   // accession → Promise<[{start, end, name}]> (UniPro
 const domainsOf = (acc) => { if (!DOMS.has(acc)) DOMS.set(acc, liviaReady().then(() => CLIPResolver.fetchDomains(acc)).catch(() => [])); return DOMS.get(acc); };
 const AFDB = new Map();   // accession → Promise<{cifUrl, seq, amUrl} | null>
 function afdbEntry(acc) {
-  if (!AFDB.has(acc)) AFDB.set(acc, fetch(`https://alphafold.ebi.ac.uk/api/prediction/${encodeURIComponent(acc)}`).then((r) => (r.ok ? r.json() : null)).then((d) => {
+  if (!AFDB.has(acc)) AFDB.set(acc, fetch(`https://alphafold.ebi.ac.uk/api/prediction/${encodeURIComponent(acc)}`).then((r) => {
+    if (r.status === 404) return null; if (!r.ok) throw new Error(`AlphaFold DB answered ${r.status}`); return r.json(); }).then((d) => {
     const list = Array.isArray(d) ? d : d ? [d] : [];
     const e = list.find((x) => (x.uniprotAccession === acc) && (x.uniprotStart || x.sequenceStart || 1) === 1) || list[0];
     return e && e.cifUrl ? { cifUrl: e.cifUrl, seq: e.uniprotSequence || e.sequence || '', amUrl: e.amAnnotationsUrl || null } : null;
-  }).catch(() => null));
+  }).catch(() => { AFDB.delete(acc); return { failed: true }; }));   // null: AFDB has no model; failed: the request did not get through (not remembered, so it can be retried)
   return AFDB.get(acc);
 }
 async function alphaMissense(url) {   // mean pathogenicity over all substitutions at each residue (as LIVIA's resolver)
@@ -815,7 +816,7 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   // reference that is UniProt's sequence (checked against the AlphaFold DB entry)
   const domOK = async (R, s, seq) => { if (!R || !R.acc || s.own) return false;
     if (!sp.manifest.keyedBy) return !!(R.len && R.len === s.len);
-    const e = await afdbEntry(R.acc); return !!(e && seq && e.seq === seq); };
+    const e = await afdbEntry(R.acc); return !!(e && !e.failed && seq && e.seq === seq); };
   const [qd, od] = await Promise.all([domOK(P, q, qs).then((ok) => (ok ? domainsOf(P.acc) : [])), domOK(O, o, os).then((ok) => (ok ? domainsOf(O.acc) : []))]);
   if (host._tok !== tok) return;
   T[0].doms = (qd || []).map((d) => ({ ...d })); T[1].doms = (od || []).map((d) => ({ ...d }));
@@ -1003,8 +1004,8 @@ async function viewAbout() {
       contacts are drawn in the gene's residue numbering. An isoform too unlike the reference to be placed is shown on its own: its page has an
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
-      accession, official symbol or systematic name. In networks, an edge's color says what BioGRID reports for the pair: a physical interaction (red),
-      a genetic one (blue), both (purple) or neither (gray); its width is the average iLIS. On a protein page, a partner
+      accession, official symbol or systematic name. In networks, edges are shaded in gray by the pair's best iLIS, and the pairs BioGRID reports
+      (physical, genetic or either, as the reader chooses) can be drawn in crimson; the width is the average iLIS. On a protein page, a partner
       with a reported physical interaction is ringed in the Overview and bold under Clusters, and one with a reported genetic interaction is underlined.
       The matched pairs are a file on this site for each species, so nothing is looked up elsewhere.</p></div>
     <div class="card"><h2>Cite</h2>
@@ -1151,17 +1152,25 @@ function stopClip() {   // leaving a page mid-clustering: drop its job, so the n
 }
 const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the fingerprint: dendrogram + cluster strip / y axis live in AXL
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
-// Edge colors of every network: what BioGRID reports for the pair (physical red, genetic blue, both purple); gray when
-// nothing is reported or the marks are off. Edge width is the average iLIS.
-const KB_COL = { p: '#D1343F', g: '#2F7FC1', pg: '#8A4FC7', none: '#A7B1BC' };
-const KB_LABEL = { p: 'physical', g: 'genetic', pg: 'physical and genetic', none: 'not reported' };
-const kbKind = (ph, ge) => (ph && ge ? 'pg' : ph ? 'p' : ge ? 'g' : 'none');
+// Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS in gray (light
+// at the 10% FPR cutoff, dark at 0.85 and above; off: one flat gray) and, when chosen, the pairs reported in BioGRID in crimson
+// (physical, genetic or either). Edge width is the average iLIS.
+const EGRAY = d3.scaleLinear().domain([CUT[10], 0.85]).range(['#C5CCD4', '#1E2A38']).clamp(true), EFLAT = '#9AA5B1', KB_RED = '#B3122E';
 const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');
-function kbKey(K, links, extra = []) {   // the color key under a network, with the number of pairs of each kind
-  if (!K) return '<span class="muted">No BioGRID records for this species; every edge is gray.</span>';
-  const n = { p: 0, g: 0, pg: 0, none: 0 }; links.forEach((l) => { n[kbKind(l.pubs, l.gen)]++; });
-  return `<span class="kbhead">Edge color · reported in BioGRID ${esc(K.release)}</span><div class="kbrow">${['p', 'g', 'pg', 'none'].map((k) => `<span><i style="background:${KB_COL[k]}"></i>${KB_LABEL[k]} (${fmtInt(n[k])})</span>`).join('')}`
-    + (extra.length ? `<span><i class="kb-dash"></i>reported, not predicted (${fmtInt(extra.length)})</span>` : '') + '</div>';
+const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.pubs > 0 || d.gen > 0);
+const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
+const edgeCtl = (id) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above"><input type="checkbox" id="${id}-shade" checked> iLIS gray scale</label>
+  <label class="ctl" title="draw the pairs reported in BioGRID in crimson"><input type="checkbox" id="${id}-kb"> BioGRID in crimson</label><select id="${id}-ev" aria-label="Which BioGRID evidence" disabled>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
+function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a crimson (reported) one
+  const shade = $(`#${id}-shade`).checked, kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
+  return { shade, kb, ev, hit, color: (d) => (hit(d) ? KB_RED : shade ? EGRAY(d.best) : EFLAT) };
+}
+function edgeKey(st, K, links, extra = []) {   // the key under a network: the gray scale (or flat gray) and, when on, the crimson pairs
+  const base = st.shade ? '<span><i class="kb-grad"></i>best iLIS, 0.223 to 0.85+</span>' : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
+  const red = !K ? '<span class="muted">no BioGRID records for this species</span>'
+    : st.kb ? `<span><i style="background:${KB_RED}"></i>reported in BioGRID ${esc(K.release)}, ${KB_EV[st.ev]} (${fmtInt(links.filter((d) => kbHit(d, st.ev)).length)} of ${fmtInt(links.length)} pairs)</span>`
+      + (extra.length ? `<span><i class="kb-dash"></i>reported, not predicted (${fmtInt(extra.length)})</span>` : '') : '';
+  return `<span class="kbhead">Edge color</span><div class="kbrow">${base}${red}</div>`;
 }
 const EWID = (a) => 0.5 + 4.3 * Math.max(0, Math.min(1, a / 0.8));
 function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene symbol (exact case first), a CG number or an older name
@@ -1205,7 +1214,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-partners', 'Overview'], ['c-3d', '3D structure'], ['c-sites', 'Binding sites'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners']];
+  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners']];   // answers first (who, where, which share), then evidence, then tools
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -1234,17 +1243,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span></div>
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
-    <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
-      <p class="muted" style="margin:2px 0 6px">${esc(P.gene)} as predicted alone in the AlphaFold Database, residues colored by the cluster that consensus-contacts them · click clusters to isolate.
-        <b>C<i>n</i> (N)</b>: N = predictions (AlphaFold ranks) in that cluster.</p>
-      <div class="controls"><span>Highlight residues contacted by ≥</span><select id="commonality" title="Fraction of a cluster's members (predictions) that must contact a residue for it to take the cluster's color">${[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}"${v === 0.5 ? ' selected' : ''}>${Math.round(v * 100)}%</option>`).join('')}<option value="custom">custom…</option></select>
-        <span id="commonality-custom" hidden><input type="number" id="commonality-pct" min="1" max="100" step="1" style="width:64px" title="Any value from 1 to 100%; applied on Enter or when the field loses focus"> %</span>
-        <span>of a cluster's members · color only clusters with ≥</span><input type="number" id="min-cluster" min="1" value="5" style="width:60px"><span>predictions</span></div>
-      ${chips}
-      <div class="controls"><div class="ctl"><span>Color by</span><div class="seg" id="cmode"><button data-m="cluster" class="on">cluster</button><button data-m="plddt">pLDDT</button><button data-m="am" id="cm-am" hidden>AlphaMissense</button></div></div>
-        <span id="am-cut-wrap" hidden>AM pathogenicity average ≥ <select id="am-cutoff">${[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}">${Math.round(v * 100)}%</option>`).join('')}</select></span></div>
-      <div class="viewer3d"><iframe id="viewer3d-frame" title="3D structure viewer"></iframe><div class="v3d-msg" id="v3d-msg">Loading the AlphaFold DB model…</div></div>
-      <div class="legend" id="legend-3d"></div></div>
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><label class="ctl muted" title="a residue number or a variant (983, T983A): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or T983A" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
@@ -1256,20 +1254,31 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
         show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a variant (for example T983A) to see which
         predictions, partners and sites contact it; the link keeps it.</p><p class="note" id="clip-aside" hidden></p></div>
+    <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
+    <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
+      <p class="muted" style="margin:2px 0 6px">${esc(P.gene)} as predicted alone in the AlphaFold Database, residues colored by the cluster that consensus-contacts them · click clusters to isolate.
+        <b>C<i>n</i> (N)</b>: N = predictions (AlphaFold ranks) in that cluster.</p>
+      <div class="controls"><span>Highlight residues contacted by ≥</span><select id="commonality" title="Fraction of a cluster's members (predictions) that must contact a residue for it to take the cluster's color">${[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}"${v === 0.5 ? ' selected' : ''}>${Math.round(v * 100)}%</option>`).join('')}<option value="custom">custom…</option></select>
+        <span id="commonality-custom" hidden><input type="number" id="commonality-pct" min="1" max="100" step="1" style="width:64px" title="Any value from 1 to 100%; applied on Enter or when the field loses focus"> %</span>
+        <span>of a cluster's members · color only clusters with ≥</span><input type="number" id="min-cluster" min="1" value="5" style="width:60px"><span>predictions</span></div>
+      ${chips}
+      <div class="controls"><div class="ctl"><span>Color by</span><div class="seg" id="cmode"><button data-m="cluster" class="on">cluster</button><button data-m="plddt">pLDDT</button><button data-m="am" id="cm-am" hidden>AlphaMissense</button></div></div>
+        <span id="am-cut-wrap" hidden>AM pathogenicity average ≥ <select id="am-cutoff">${[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}">${Math.round(v * 100)}%</option>`).join('')}</select></span></div>
+      <div class="viewer3d"><iframe id="viewer3d-frame" title="3D structure viewer"></iframe><div class="v3d-msg" id="v3d-msg">Loading the AlphaFold DB model…</div></div>
+      <div class="legend" id="legend-3d"></div></div>
     <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted">predictions contacting each residue, colored by their most frequent cluster</span>${xticks}</div></div>
       ${chips}<div class="plot" id="freq-wrap"></div><div class="domlegend" id="freq-domains"></div><div class="hot" id="hot"></div></div>
     <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per prediction, in dendrogram order · hover for the partner, click to open the pair</span>
         <input type="search" id="fp-find" list="sc-list" placeholder="Find partner" style="width:140px" aria-label="Find a partner in the fingerprint">${xticks}</div></div>
       ${chips}<div class="plot" id="fp-wrap"></div><p class="sites-more" id="fp-found" hidden></p>
       <div class="legend"><span><i style="background:#08306B"></i>contact residue (cLIR)</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each prediction</span></div></div>
-    <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
     <div class="card" id="c-res"><div class="card-head"><h2>Interaction Residues</h2>
         <div class="controls" style="margin:0"><select id="res-partner" aria-label="Partner" style="max-width:300px"></select><input type="search" id="res-find" placeholder="Find partner" style="width:130px"><select id="res-rank" aria-label="Model" style="max-width:280px"></select></div></div>
       <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not in the interface</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interface (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span></div>
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
-        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select></label><label title="color each edge by what BioGRID reports for the pair: physical, genetic or both"><input type="checkbox" id="net-known" checked> BioGRID colors</label></div></div>
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select></label>${edgeCtl('net')}</div></div>
       <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color. Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
@@ -1786,7 +1795,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     domainsOf(P.acc).then((d) => { if (gone()) return; S.domains = d; drawFreq(); if (clustered()) renderSites(); });
     const entry = await afdbEntry(P.acc);
     if (gone()) return;
-    if (!entry) { S.state = 'none'; msg(`No AlphaFold DB model for ${esc(P.acc)} (the database has none for proteins longer than 2,700 residues).`); $('#struct-badge').textContent = ''; return; }
+    if (entry && entry.failed) { S.state = 'none'; msg(`The AlphaFold DB model of ${esc(P.acc)} could not be loaded (no answer from alphafold.ebi.ac.uk). Reload the page to try again.`); $('#struct-badge').textContent = ''; return; }
+    if (!entry) { S.state = 'none'; msg(`No AlphaFold DB model for ${esc(P.acc)}${(P.clen || P.len) > 2700 ? ' (the database has none for proteins longer than 2,700 residues)' : ''}.`); $('#struct-badge').textContent = ''; return; }
     S.uniSeq = S.entrySeq = entry.seq || ''; mapStruct();
     try { S.text = await (await fetch(entry.cifUrl)).text(); } catch (e) { if (!gone()) { S.state = 'none'; msg('The AlphaFold DB model could not be downloaded.'); } return; }
     if (gone()) return;
@@ -1957,7 +1967,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   /* network: edge color = what BioGRID reports for the pair, edge width = average iLIS */
   const netBox = $('#net');
-  $('#net-known').onchange = () => { if (NET) drawNet(); };
+  ['#net-shade', '#net-kb', '#net-ev'].forEach((q) => { $(q).onchange = () => { $('#net-ev').disabled = !$('#net-kb').checked; if (NET && NET.restyle) NET.restyle(); }; });
   { const w = d3.select('#net-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
       w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
@@ -1977,15 +1987,18 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     for (let a = 1; a < nodes.length; a++) { const mm = E.adj.get(nodes[a].id); if (!mm) continue;
       for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg }); } }
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); l.pubs = K ? K.pubs(l.source, l.target) : 0; l.gen = K ? K.gen(l.source, l.target) : 0; });
-    const known = $('#net-known').checked, kind = (d) => (known ? kbKind(d.pubs, d.gen) : 'none');
+    if (!K) { $('#net-kb').checked = false; $('#net-kb').disabled = true; $('#net-ev').disabled = true; }
     const svg = d3.select(netBox).select('svg'), W = netBox.clientWidth, H = netBox.clientHeight;
     svg.attr('width', W).attr('height', H);
     const g = svg.append('g');
     const zoom = d3.zoom().scaleExtent([0.2, 4]).on('zoom', (ev) => g.attr('transform', ev.transform));
     svg.call(zoom);
-    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', (d) => KB_COL[kind(d)]).attr('stroke-width', (d) => EWID(d.avg))
-      .attr('stroke-opacity', (d) => (kind(d) !== 'none' ? 0.9 : d.q ? 0.45 : 0.7)).attr('stroke-linecap', 'round');
-    link.filter((d) => !d.q).raise(); link.filter((d) => kind(d) !== 'none').raise();   // reported pairs on top
+    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round');
+    link.filter((d) => !d.q).raise();
+    const restyle = () => { const st = edgeStyle('net', K);   // recolor in place: no new layout
+      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // crimson pairs on top
+      $('#net-kbkey').innerHTML = edgeKey(st, K, links); };
+    restyle();
     link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
     const r = (d) => (d.q ? 18 : 6 + Math.min(10, Math.sqrt(deg.get(d.id) || 1) * 1.6));
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
@@ -1996,11 +2009,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 14 : 11)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', (d) => (d.q ? 4 : 3)).attr('stroke-linejoin', 'round');
     node.filter((d) => d.q).raise();
-    NET = { link, recolor() {
+    NET = { link, restyle, recolor() {
       const k = M ? M.k : 1;
       circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
       const used = [...new Set(nodes.filter((d) => !d.q).map((d) => partnerCluster.get(d.row.key)).filter(Boolean))].sort((a, b) => a - b);
-      $('#net-kbkey').innerHTML = known || !K ? kbKey(K, links) : '<span class="muted">BioGRID colors off: every edge gray.</span>';
       $('#net-legend').innerHTML = (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '');
     } };
     NET.recolor();
@@ -2127,18 +2139,18 @@ async function viewNetwork(spId, q) {
         <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
-    <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label title="color each edge by what BioGRID reports for the pair: physical, genetic or both"><input type="checkbox" id="nw-known" checked> BioGRID colors</label>
+    <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw')}
         <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
         <button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-csv" type="button">↓ CSV</button>
         <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div></div>
       <p class="muted" style="margin:2px 0 12px">Your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} are large and dark, added partners small and light. Click a protein for its page, an edge for the interface residues of the pair. Drag to move, scroll to zoom.</p>
       <div class="net" id="nw-net"></div>
-      <div class="netkey"><div class="kbkey" id="nw-kb"></div>
+      <div class="netkey"><div class="kbkey" id="nw-key"></div>
         <div><span>Edge width · average iLIS</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
   $('#nw-add').value = S.add;
   const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top'; }; showK(); $('#nw-add').onchange = showK;
   $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); };
-  let net = null;
+  let net = null, KBN = null;   // KBN: this species' BioGRID pairs, for the drawing
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const status = (t) => { $('#nw-status').innerHTML = t; };
@@ -2154,6 +2166,7 @@ async function viewNetwork(spId, q) {
     if (!found.length) { status(`None of these names is in the ${esc(sp.reg.label)} screens: ${esc(missing.join(', '))}.`); $('#nw-card').hidden = true; return; }
     status('Reading the edge list…');
     let E, K; try { [E, K] = await Promise.all([edges(sp, S.set), reported(sp)]); } catch (e) { status(esc(e.message)); return; }
+    KBN = K;
     if (stale(gen)) return;
     const c = CUT[S.cut], Q = new Set(found.map((r) => r.i)), keep = new Set(Q), CAP = 400;
     const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => e.best >= c);
@@ -2172,7 +2185,7 @@ async function viewNetwork(spId, q) {
       + `${missing.length ? ` · not found: ${esc(missing.join(', '))}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.join(', '))}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}`);
     $('#nw-card').hidden = false;
     if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; return; }
-    $('#nw-kb').innerHTML = $('#nw-known').checked || !K ? kbKey(K, links, extra) : '<span class="muted">BioGRID colors off: every edge gray.</span>';
+    if (!K) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), links, extra);
   }
   function graph(nodes, links, extra = []) {
@@ -2182,11 +2195,13 @@ async function viewNetwork(spId, q) {
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
     const r = (d) => (d.q ? 10 : 4) + Math.min(8, Math.sqrt(deg.get(d.id) || 0) * 1.4);
     const labeled = new Set(nodes.length <= 80 ? nodes.map((d) => d.id) : [...nodes.filter((d) => d.q), ...[...nodes].filter((d) => !d.q).sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0)).slice(0, 25)].map((d) => d.id));
-    const known = $('#nw-known').checked, kind = (d) => (known ? kbKind(d.pubs, d.gen) : 'none');
-    const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', (d) => KB_COL[kbKind(d.pubs, d.gen)]).attr('stroke-opacity', 0.8).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
-    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', (d) => KB_COL[kind(d)]).attr('stroke-width', (d) => EWID(d.avg))
-      .attr('stroke-opacity', (d) => (kind(d) !== 'none' ? 0.9 : 0.7)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
-    link.filter((d) => kind(d) !== 'none').raise();   // reported pairs on top
+    const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', KB_RED).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
+    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
+    const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
+      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : 0.8)); link.filter(st.hit).raise();   // crimson pairs on top
+      const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
+      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra); };
+    restyle();
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
     link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interface residues`, ev.clientX, ev.clientY); })
@@ -2211,10 +2226,10 @@ async function viewNetwork(spId, q) {
       const x0 = Math.min(...xs) - 48, x1 = Math.max(...xs) + 48, y0 = Math.min(...ys) - 34, y1 = Math.max(...ys) + 24, sc = Math.min(1.4, 0.96 * Math.min(W / (x1 - x0), H / (y1 - y0)));
       svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - sc * (x0 + x1) / 2, H / 2 - sc * (y0 + y1) / 2).scale(sc)); });
     svgExport($('#nw-x'), `atlas_${sp.id}_network`, () => $('svg', box));
-    net = { link, nodes, links };
+    net = { link, nodes, links, restyle };
   }
   $('#nw-go').onclick = draw;
-  $('#nw-known').onchange = draw; $('#nw-unpred').onchange = draw;
+  ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if (net && net.restyle) net.restyle(); }; }); $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
   $('#nw-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); draw(); } };
   $('#nw-link').onclick = async () => { const b = $('#nw-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
   const rowsOut = () => (net ? net.links.map((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return { a, b, l }; }) : []);
