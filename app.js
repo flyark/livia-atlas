@@ -94,14 +94,43 @@ const primarySet = (tags) => (tags && tags.length ? tags.find((s) => s.type === 
 // A screen's per-protein files: in its folder, or — for a screen kept as one uncompressed zip (Zenodo) — one HTTP Range
 // read each, at the byte range the offsets map kept with the site gives. Never the whole archive.
 const OFFS = new Map();
+// Zenodo can answer slowly or stall. Each archive read shows in a status pill (which screen, how long, a note when slow),
+// times out after 45 s and is tried twice; then the pill says Zenodo did not answer, with a button to try again.
+const LOADS = new Map(); let LOADN = 0, LOADT = null, LOADFAIL = '';
+function loadBar() { let el = document.getElementById('loadbar'); if (!el) { el = document.createElement('div'); el.id = 'loadbar'; el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite'); el.hidden = true; document.body.appendChild(el); } return el; }
+function paintLoads() {
+  const el = loadBar(), list = [...LOADS.values()];
+  if (!list.length) { clearInterval(LOADT); LOADT = null;
+    if (LOADFAIL) { el.hidden = false; el.className = 'fail'; el.innerHTML = `${esc(LOADFAIL)} <button type="button" id="loadbar-retry">Try again</button>`; $('#loadbar-retry').onclick = () => location.reload(); }
+    else el.hidden = true;
+    return; }
+  const sec = Math.round((Date.now() - Math.min(...list.map((x) => x.t0))) / 1000), what = [...new Set(list.map((x) => x.what))].join(', ');
+  el.hidden = false; el.className = sec >= 12 ? 'slow' : '';
+  el.innerHTML = `<span class="spin" aria-hidden="true"></span>Reading ${esc(what)} from Zenodo · ${sec} s${sec >= 12 ? '<br><small>Zenodo is answering slowly. The page fills in as soon as the data arrive.</small>' : ''}`;
+}
+function trackLoad(what, job) {
+  const id = ++LOADN; LOADFAIL = ''; LOADS.set(id, { what, t0: Date.now() }); if (!LOADT) LOADT = setInterval(paintLoads, 1000); paintLoads();
+  return job.then((v) => { LOADS.delete(id); paintLoads(); return v; }, (e) => { LOADS.delete(id); LOADFAIL = e.message; paintLoads(); throw e; });
+}
+async function rangeRead(url, range) {   // → the bytes of one Range read, or null when the host did not answer 206
+  for (let i = 1; ; i++) {
+    const ac = new AbortController(), t = setTimeout(() => ac.abort(), 45000);
+    try {
+      const res = await fetch(url, { headers: { Range: range }, signal: ac.signal });
+      if (res.status !== 206) { try { if (res.body) res.body.cancel(); } catch (e) { /* nothing to cancel */ } return null; }
+      return await res.arrayBuffer();   // the body under the same clock: a read can stall after the headers
+    } catch (e) { if (i >= 2) throw new Error(`Zenodo did not answer in time (tried twice). It is often slow for a few minutes.`); }
+    finally { clearTimeout(t); }
+  }
+}
 async function screenFile(ds, rel) {
   const z = ds.reg.zip;
   if (!z) { const res = await fetch(new URL(rel.split('/').map(encodeURIComponent).join('/'), ds.manifest.bundleBase || ds.base).href); return res.ok ? res : null; }
   if (!OFFS.has(ds.id)) OFFS.set(ds.id, fetch(new URL(z.offsets, location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
   const at = (await OFFS.get(ds.id))[rel]; if (!at) return null;
-  const res = await fetch(DEV && z.dev ? new URL(z.dev, location.href).href : z.url, { headers: { Range: `bytes=${at[0]}-${at[0] + at[1] - 1}` } });
-  if (res.status !== 206) { try { if (res.body) res.body.cancel(); } catch (e) { /* nothing to cancel */ } return null; }
-  return res;
+  const t = ds.reg.title || ds.id, what = /^(Human|Zebrafish|Yeast|Fly|Worm)\b/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t;   // “the human kinase–kinase screen”, “C. elegans …”, “FlyPredictome”
+  const buf = await trackLoad(what, rangeRead(DEV && z.dev ? new URL(z.dev, location.href).href : z.url, `bytes=${at[0]}-${at[0] + at[1] - 1}`));
+  return buf ? new Response(buf) : null;
 }
 async function datasetRows(ds) {
   if (ds.rows) return ds.rows;
@@ -246,10 +275,10 @@ function merged(sp, P, scope = '', whole = false) {   // scope: one screen of th
   const ck = P.key + (scope ? '?' + scope : '') + (whole ? '#whole' : ''), onlyDi = scope ? sp.dsIds.indexOf(scope) : -1, setId = onlyDi >= 0 ? '' : scope;
   if (!sp.cache.has(ck)) {
     const job = (async () => {
-      const parts = (await Promise.all(P.occ.filter((o) => onlyDi < 0 || o.di === onlyDi).map(async (o) => {   // a screen that cannot be reached is left out
-        try { const ds = await dataset(sp.dsIds[o.di]); return { di: o.di, name: o.name, ds, raw: await bundleRaw(ds, o.name), TS: await setsOf(ds) }; } catch (e) { return null; }
+      const errs = [], parts = (await Promise.all(P.occ.filter((o) => onlyDi < 0 || o.di === onlyDi).map(async (o) => {   // a screen that cannot be reached is left out
+        try { const ds = await dataset(sp.dsIds[o.di]); return { di: o.di, name: o.name, ds, raw: await bundleRaw(ds, o.name), TS: await setsOf(ds) }; } catch (e) { errs.push(e); return null; }
       }))).filter(Boolean);
-      if (!parts.length) throw new Error(`No interaction data for ${P.gene}.`);
+      if (!parts.length) throw (errs.find((e) => /Zenodo/.test(e.message)) || new Error(`No interaction data for ${P.gene}.`));
       const split = parts.find((x) => x.raw.isoforms) || null;   // atlas v1.2: this gene's other isoforms are files of their own
       if (split && whole) parts.push(...await Promise.all(split.raw.isoforms.choices.map(async (c) => ({ ...split, name: c.file, raw: await bundleRaw(split.ds, c.file) }))));
       const all = await assemble(sp, P, parts, scope, onlyDi, setId);
@@ -267,6 +296,13 @@ function countOnce(list) {
   const best = new Map(), n = new Map();
   for (const p of list) { n.set(p.run, (n.get(p.run) || 0) + 1); const b = best.get(p.sp); if (!b || (p.iLIS || 0) > b.v) best.set(p.sp, { v: p.iLIS || 0, run: p.run }); }
   let s = 0; for (const b of best.values()) s += n.get(b.run); return s;
+}
+// Hand a bundle to a cLIP tab opened with ?post=1: ping until it says it is ready, then post the bytes (its handshake).
+function handToClip(w, msg) {
+  const origin = new URL(LIVIA, location.href).origin; let done = false, n = 0;
+  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready' || done) return; done = true; window.removeEventListener('message', onMsg); clearInterval(t); w.postMessage(msg, origin); };
+  window.addEventListener('message', onMsg);
+  const t = setInterval(() => { if (done || w.closed || ++n > 120) { clearInterval(t); window.removeEventListener('message', onMsg); return; } try { w.postMessage({ type: 'livia-ping' }, origin); } catch (e) { /* not loaded yet */ } }, 250);
 }
 // A split gene's bundle as one file again (the download): its rows from every isoform file, its constructs and sequences.
 async function wholeBundle(ds, raw) {
@@ -1040,13 +1076,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-overview', 'Overview'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-3d', '3D structure'], ['c-scatter', 'Scatter'], ['c-net', 'Network'], ['c-pt', 'Partners']];
+  const nav = [['c-sites', 'Binding sites'], ['c-overview', 'Overview'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-3d', '3D structure'], ['c-scatter', 'Scatter'], ['c-net', 'Network'], ['c-pt', 'Partners']];
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
   if (gone()) return;
   const dataMenu = occ.map((o, i) => { const u = bundleUrl(o.ds, o.name), label = `${sp.dsShort[o.di]}${occ.filter((x) => x.di === o.di).length > 1 ? ' · ' + o.name : ''}`;
-    if (o.ds.reg.zip) return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="#" data-dl="${i}">Download .zip</a></div>`;   // inside the archive: saved from the read
+    if (o.ds.reg.zip) return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="#" data-clip="${i}">Open in LIVIA cLIP ↗</a><a href="#" data-dl="${i}">Download .zip</a></div>`;   // inside the archive: read here, then handed to cLIP or saved
     return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="${LIVIA}clip.html?data=${encodeURIComponent(u)}&gene=${encodeURIComponent(P.gene)}" target="_blank" rel="noopener">Open in LIVIA cLIP ↗</a><a href="${u}" download>Download .zip</a></div>`; }).join('');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(P.gene)}</div>
     <div class="phead"><div><h1>${esc(P.gene)}</h1><div class="pname" title="${esc(P.name)}">${esc(short(P.name) || P.id)}</div>
@@ -1060,6 +1096,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="setbar" id="setbar" hidden></div>
     <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}">${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
+    <div class="card" id="c-sites"><div class="card-head"><h2>Binding sites</h2><span class="muted">where ${esc(P.gene)}'s partners bind, from LIVIA cLIP below · click a site to show only it on the page</span></div>
+      <p class="sites-answer" id="sites-answer">Finding the binding sites…</p>
+      <div class="plot" id="sites-map"></div><div class="domlegend" id="sites-domains"></div>
+      <div class="sites" id="sites-list"></div>
+      <p class="muted sites-note">A site is one cLIP cluster: partners whose predicted contacts on ${esc(P.gene)} overlap. Its footprint (solid) is the residues that at least 30% of the site's predictions contact; the lighter shades show how often the other residues are contacted. A partner predicted more than once can sit in more than one site.</p></div>
     <div class="card" id="c-overview"><div class="card-head"><h2>Partners by score</h2><span class="muted" id="sc-sub"></span></div>
       <div class="overview"><div><div class="scat" id="scat"></div>
           <div class="legend"><span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span><span>color: cluster (gray: not clustered)</span></div></div>
@@ -1115,6 +1156,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>`;
   app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'smooth' }); });
   { const dm = $('.dmenu'), shut = (e) => { if (!dm || !dm.isConnected) { document.removeEventListener('click', shut); return; } if (dm.open && !dm.contains(e.target)) dm.open = false; }; document.addEventListener('click', shut); }
+  app.querySelectorAll('[data-clip]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it here and hand its bytes to cLIP
+    e.preventDefault(); const o = occ[+a.dataset.clip], w = window.open(`${LIVIA}clip.html?post=1`, '_blank'); if (!w) return;
+    try { const raw = await bundleRaw(o.ds, o.name), data = raw.isoforms ? await (await wholeBundle(o.ds, raw)).arrayBuffer() : raw.bytes.slice(0);
+      handToClip(w, { type: 'livia-load', name: `${o.name}.zip`, data, gene: P.gene }); }
+    catch (err) { a.textContent = 'Not available'; try { w.close(); } catch (x) { /* already closed */ } } });
   app.querySelectorAll('[data-dl]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it, save it
     e.preventDefault(); const o = occ[+a.dataset.dl];
     try { const raw = await bundleRaw(o.ds, o.name), u = URL.createObjectURL(raw.isoforms ? await wholeBundle(o.ds, raw) : new Blob([raw.bytes], { type: 'application/zip' }));
@@ -1283,7 +1329,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : `${n ? 'Only one prediction' : 'No predictions'} past the ${cut}% FPR cutoff, so there is nothing to cluster.`;
     const want = !clustered() && V.mode === 'cluster' ? 'plddt' : clustered() && V.auto && S.mapOK ? 'cluster' : null;   // no clusters: show pLDDT until there are
     if (want) { V.auto = want === 'plddt'; V.mode = want; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === want)); }
-    renderChips(); drawFreq(); drawHeatmap(); renderClusterInfo(); recolor3D(); drawScatter(); drawOverview(); drawTable(); fillPartners(); if (NET) NET.recolor();
+    renderChips(); renderSites(); drawFreq(); drawHeatmap(); renderClusterInfo(); recolor3D(); drawScatter(); drawOverview(); drawTable(); fillPartners(); if (NET) NET.recolor();
   }
   function renderChips() {
     app.querySelectorAll('[data-chips]').forEach((box) => {
@@ -1298,7 +1344,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function toggleCluster(c) {   // as clip.html: from "all", a click isolates that cluster; further clicks add or remove
     if (c === 'all') ACTIVE = new Set(range(M.k));
     else { const id = +c; if (allOn()) ACTIVE = new Set([id]); else if (ACTIVE.has(id)) { ACTIVE.delete(id); if (!ACTIVE.size) ACTIVE = new Set(range(M.k)); } else ACTIVE.add(id); }
-    paintChips(); drawFreq(); drawHeatmap(); recolor3D();
+    paintChips(); renderSites(); drawFreq(); drawHeatmap(); recolor3D();
   }
   function paintChips() {
     const all = allOn();
@@ -1395,6 +1441,65 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     attachExport('heatmap', `atlas_${P.gene}_fingerprint`, drawHeatmap);
   }
 
+  /* Binding sites: each cLIP cluster's footprint on the query, the page's answer to "where do the partners bind" */
+  const SITE_FRAC = 0.3;   // a site's footprint: residues contacted by at least 30% of its predictions (the cluster footprint of the paper)
+  let sitesOpen = false;
+  function sitesOf() {     // → sites, most partners first: cluster, predictions, partners by best iLIS, contacts per residue, footprint
+    const by = new Map();
+    M.preds.forEach((p, i) => { const c = M.labels[i]; let t = by.get(c); if (!t) by.set(c, t = { c, n: 0, hits: new Map(), best: new Map() });
+      t.n++; for (const r of M.fingerprints[i]) t.hits.set(r, (t.hits.get(r) || 0) + 1);
+      const k = who(p.partner).key; if (k !== P.key) t.best.set(k, Math.max(t.best.get(k) || 0, p.iLIS || 0)); });
+    return [...by.values()].map((t) => { const foot = [...t.hits].filter(([, h]) => h / t.n >= SITE_FRAC).map(([r]) => r).sort((a, b) => a - b);
+      return { ...t, partners: [...t.best].map(([key, best]) => ({ key, best })).sort((a, b) => b.best - a.best), foot, ranges: runs(foot) }; })
+      .sort((a, b) => b.partners.length - a.partners.length || b.n - a.n || a.c - b.c);
+  }
+  const rangeText = (rs) => rs.map(([a, b]) => (a === b ? `${a}` : `${a}–${b}`)).join(', ');
+  const stretches = (rs) => { const out = []; for (const [a, b] of rs) { const l = out[out.length - 1]; if (l && a - l[1] <= 4) l[1] = b; else out.push([a, b]); } return out; };   // gaps of up to 3 residues joined
+  const siteDomains = (st, doms) => doms.filter((d) => st.foot.some((r) => r >= d.s && r <= d.e)).map((d) => d.name).slice(0, 2);
+  function renderSites() {
+    const ans = $('#sites-answer'), map = $('#sites-map'), list = $('#sites-list'); if (!ans) return;
+    if (!clustered()) { ans.innerHTML = M ? `No binding site to show: ${M.fingerprints.length ? 'only one prediction is' : 'no prediction is'} past the ${cut}% FPR cutoff.` : 'Finding the binding sites…';
+      map.innerHTML = ''; list.innerHTML = ''; $('#sites-domains').innerHTML = ''; return; }
+    const sites = sitesOf(), doms = qDomains(M.plen), K = sites.length, np = partnerCluster.size, big = sites[0];
+    const names = (ps) => ps.map((x) => `<a href="#/${sp.id}/${P.key}/${x.key}${scopeQ}">${esc(gname(x.key))}</a>`);
+    const andList = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+    const where = (st) => { if (!st.foot.length) return 'no residue shared by 30% of its predictions';
+      const r = stretches(st.ranges), dn = siteDomains(st, doms);
+      return `${r.length <= 3 ? `residues ${rangeText(r)}` : `${r.length} stretches between residues ${r[0][0]} and ${r[r.length - 1][1]}`}${dn.length ? ` (${esc(dn.join(', '))})` : ''}`; };
+    ans.innerHTML = `<b>${esc(P.gene)}</b>: ${fmtInt(np)} partner${np === 1 ? '' : 's'} past the ${cut}% FPR cutoff bind${np === 1 ? 's' : ''} ${K === 1 ? 'one site' : `${K} sites`}.`
+      + ` The largest, at ${where(big)}, holds ${fmtInt(big.partners.length)} of them${big.partners.length ? `, including ${andList(names(big.partners.slice(0, 3)))}` : ''}.`;
+    const show = sitesOpen ? sites : sites.slice(0, 8);
+    drawSitesMap(map, show, doms);
+    $('#sites-domains').innerHTML = doms.length ? doms.map((d, i) => `<span><b>D${i + 1}</b> ${esc(d.name)} (${d.s}–${d.e})</span>`).join('') : '';
+    list.innerHTML = show.map((st) => `<div class="site${!allOn() && ACTIVE.has(st.c) ? ' on' : ''}" data-c="${st.c}" role="button" tabindex="0" title="show only this site on the page">
+        <i style="background:${clusterColor(st.c, M.k)}"></i><div><b>${clusterLabel(st.c)}</b> · ${where(st)} · <span class="muted">${fmtInt(st.partners.length)} partner${st.partners.length === 1 ? '' : 's'}, ${fmtInt(st.n)} prediction${st.n === 1 ? '' : 's'}</span><br>
+        ${names(st.partners.slice(0, 8)).join(', ')}${st.partners.length > 8 ? ` <span class="muted">+${st.partners.length - 8} more (Cluster info)</span>` : ''}</div></div>`).join('')
+      + (sites.length > 8 ? `<button class="more" id="sites-more">${sitesOpen ? 'show the 8 largest' : `show all ${sites.length} sites`}</button>` : '');
+    list.querySelectorAll('.site').forEach((el) => { const go = (e) => { if (e.target.closest('a')) return; toggleCluster(el.dataset.c); };
+      el.onclick = go; el.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(e); } }; });
+    const more = $('#sites-more'); if (more) more.onclick = () => { sitesOpen = !sitesOpen; renderSites(); };
+  }
+  function drawSitesMap(host, sites, doms) {   // one lane per site on the query's residues: solid = footprint, shade = contact frequency within the site
+    if (!$('#sites-canvas', host)) host.innerHTML = '<canvas id="sites-canvas"></canvas>';
+    const cv = $('#sites-canvas', host), L = M.plen, W = host.clientWidth, bw = (W - AXL - AXR) / L, xOf = (r) => AXL + (r - 1) * bw;
+    doms.forEach((d, i) => { d.idx = i + 1; });
+    const nL = doms.length ? lanes(doms, (d) => xOf(Math.max(1, d.s)), (d) => Math.max(xOf(Math.max(1, d.s)) + 2, xOf(Math.min(L, d.e) + 1))) : 0;
+    const DRH = 15, LH = 20, top = 4 + nL * DRH + (nL ? 6 : 0), H = top + sites.length * LH + 26, g = canvasCtx(cv, W, H);
+    for (const d of doms) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = 4 + d.lane * DRH;
+      g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.fillStyle = '#51607A'; g.font = '10px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle';
+      if (x1 - x0 > 18) g.fillText('D' + d.idx, x0 + 3, y + 6.5); }
+    sites.forEach((st, j) => { const y = top + j * LH, col = clusterColor(st.c, M.k);
+      g.fillStyle = '#F3F6F9'; g.fillRect(AXL, y + 3, W - AXL - AXR, LH - 6);
+      g.globalAlpha = 1; g.fillStyle = '#51607A'; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'right'; g.fillText(clusterLabel(st.c), AXL - 8, y + LH / 2);
+      g.textAlign = 'left';
+      for (const [r, h] of st.hits) { if (r < 1 || r > L) continue; const f = h / st.n; g.fillStyle = col; g.globalAlpha = f >= SITE_FRAC ? 1 : 0.12 + 0.5 * f / SITE_FRAC; g.fillRect(xOf(r), y + 3, Math.max(1, bw), LH - 6); }
+      g.globalAlpha = 1; });
+    drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), top + sites.length * LH + 2, (r) => xOf(r) + bw / 2, W);
+    cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, y = e.clientY - b.top, j = Math.floor((y - top) / LH), r = Math.floor((x - AXL) / bw) + 1;
+      const st = sites[j]; if (!st || r < 1 || r > L) return hideTip(); const h = st.hits.get(r) || 0;
+      showTip(`<b>${clusterLabel(st.c)}</b> · ${qSeq && qSeq[r - 1] ? qSeq[r - 1] : ''}${r}<br>${h} of ${st.n} predictions contact it (${Math.round(100 * h / st.n)}%)`, e.clientX, e.clientY); };
+    cv.onmouseleave = hideTip;
+  }
   function renderClusterInfo() {
     const box = $('#cluster-info'); if (!box) return;
     if (!clustered()) { box.innerHTML = `<p class="muted" style="margin:0">${M ? 'Nothing to cluster at this cutoff.' : 'Clustering…'}</p>`; return; }
@@ -1494,7 +1599,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (!P.acc) { S.state = 'none'; msg('No UniProt accession for this protein, so there is no AlphaFold DB model to show.'); return; }
     try { await liviaReady(); } catch (e) { if (!gone()) { S.state = 'none'; msg(esc(e.message)); } return; }
     if (gone()) return;
-    domainsOf(P.acc).then((d) => { if (gone()) return; S.domains = d; drawFreq(); });
+    domainsOf(P.acc).then((d) => { if (gone()) return; S.domains = d; drawFreq(); if (clustered()) renderSites(); });
     const entry = await afdbEntry(P.acc);
     if (gone()) return;
     if (!entry) { S.state = 'none'; msg(`No AlphaFold DB model for ${esc(P.acc)} (the database has none for proteins longer than 2,700 residues).`); $('#struct-badge').textContent = ''; return; }
@@ -1742,7 +1847,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   drawOverview(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
   loadStructure();
   cluster();
-  let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { drawFreq(); drawHeatmap(); drawOverview(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
+  let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawOverview(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
 }
 
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
