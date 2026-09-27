@@ -11,6 +11,7 @@
 const DEV = location.hostname === 'localhost' || location.hostname === '127.0.0.1';   // local preview: LIVIA on :8000, screens from ../data/
 const LIVIA = DEV ? 'http://localhost:8000/' : 'https://flyark.github.io/LIVIA/';
 const CUT = { 10: 0.223, 5: 0.339, 1: 0.551 };
+const cutNote = (f) => `<i class="kc">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count
 const BAND = { 1: '#6D4FD1', 5: '#16956A', 10: '#C78B00', 0: '#A7B2BF' };
 const bandOf = (v) => (v >= CUT[1] ? 1 : v >= CUT[5] ? 5 : v >= CUT[10] ? 10 : 0);
 const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
@@ -194,7 +195,9 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
   let viruses = null;   // the viral species: which virus (taxon) each protein belongs to, for the virus pages and search
   if (manifest.files && manifest.files.viruses) {
     const V = await getJSON(base + manifest.files.viruses);
-    viruses = V.viruses.map(([taxid, name, n, het, hom, hpos, mpos, pwp, members]) => ({ taxid, name, n, het, hom, hpos, mpos, pwp, members }));
+    const c = Object.fromEntries(V.columns.map((k, i) => [k, i])), both = (r, f) => (c[`hetero_pos${f}`] == null ? null : r[c[`hetero_pos${f}`]] + r[c[`homo_pos${f}`]]);
+    viruses = V.viruses.map((r) => ({ taxid: r[c.taxid], name: r[c.name], n: r[c.proteins], het: r[c.hetero_pairs], hom: r[c.homo_pairs], hpos: r[c.hetero_pos10], mpos: r[c.homo_pos10],
+      pos5: both(r, 5), pos1: both(r, 1), pwp: r[c.proteins_with_partner], members: r[c.rows] }));
     for (const v of viruses) for (const i of v.members) rows[i].virus = v;
   }
   return { id, reg, base, manifest, rows, byKey, byName, byGene, keys, viruses, dsIds, dsShort: manifest.datasets.map((d) => d.short),
@@ -1083,11 +1086,12 @@ async function viewAbout() {
 }
 
 // The counts of a screen, a species or a set, in one row: a prediction is a pair folded once (its ranked models are
-// counted as models); protein pairs are unique pairs, a protein with itself left out
-const kpiRow = (k) => `<div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.pairs)}</b><span>protein pairs</span></div>
-  ${k.runs ? `<div class="kpi"><b>${fmtInt(k.runs)}</b><span>predictions</span></div>` : ''}<div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>
-  <div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR</span></div><div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR</span></div>
-  <div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR</span></div></div>`;
+// counted as models); protein pairs are unique pairs. One model per pair (the same three numbers): one tile, so marked
+const kpiRow = (k) => { const one = k.predictions === k.pairs && (!k.runs || k.runs === k.pairs);
+  return `<div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.pairs)}</b><span>protein pairs${one ? '<i class="kc t">one model each</i>' : ''}</span></div>
+  ${one ? '' : `${k.runs ? `<div class="kpi"><b>${fmtInt(k.runs)}</b><span>predictions</span></div>` : ''}<div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>`}
+  <div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR${cutNote(10)}</span></div><div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR${cutNote(5)}</span></div>
+  <div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div>`; };
 const shortCite = (src) => `${src.citation.split(' ')[0]} et al. ${(src.citation.match(/\((\d{4})\)/) || [])[1] || ''}`.trim();
 // Thematic sets of a dataset, for its dataset and species pages: one table, screens first, then source categories;
 // the bar is each set's share of the dataset's predictions (sets overlap, so shares need not add up)
@@ -1298,8 +1302,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="srcs scope" id="scope">In ${srcBadges(sp, P.src)}</div>
       <div class="flags" id="flags">${flags.join('')}</div>
       <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`)}</div></div>
-      <div class="kpis"><div class="kpi"><b id="kp-all">${fmtInt(P.partners)}</b><span>partners predicted</span></div><div class="kpi f10"><b id="kp-10">${fmtInt(P.pos10)}</b><span>past 10% FPR</span></div>
-        <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR</span></div></div></div>
+      <div class="kpis"><div class="kpi"><b id="kp-all">${fmtInt(P.partners)}</b><span>partners predicted</span></div><div class="kpi f10"><b id="kp-10">${fmtInt(P.pos10)}</b><span>past 10% FPR${cutNote(10)}</span></div>
+        <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
     <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}">${l}</button>`).join('')}</nav>
@@ -2259,8 +2263,9 @@ async function viewSpecies(spId) {
   mountSearch($('#sp-search'), { spId });
   if (sp.viruses) {   // the virus list: most pairs past the 10% FPR cutoff first, filtered by name
     const draw = () => { const f = $('#vir-filter').value.trim().toLowerCase(), all = sp.viruses.filter((v) => !f || v.name.toLowerCase().includes(f)).sort((a, b) => (b.hpos + b.mpos) - (a.hpos + a.mpos) || b.n - a.n), show = all.slice(0, 60);
-      $('#vir-t').innerHTML = `<thead><tr><th>Virus</th><th class="n">Proteins</th><th class="n">Pairs folded</th><th class="n">Pairs past 10% FPR</th><th class="n">Proteins with a partner</th></tr></thead><tbody>${show.map((v) =>
-        `<tr><td class="g"><a href="#/${sp.id}/taxon/${v.taxid}">${esc(v.name)}</a></td><td class="n">${fmtInt(v.n)}</td><td class="n">${fmtInt(v.het + v.hom)}</td><td class="n">${fmtInt(v.hpos + v.mpos)}</td><td class="n">${fmtInt(v.pwp)}</td></tr>`).join('')}</tbody>`;
+      const n = (x) => (x == null ? '<span class="muted">—</span>' : fmtInt(x));
+      $('#vir-t').innerHTML = `<thead><tr><th>Virus</th><th class="n">Proteins</th><th class="n">Pairs folded</th>${[10, 5, 1].map((f) => `<th class="n">Past ${f}% FPR${cutNote(f)}</th>`).join('')}<th class="n">Proteins with a partner</th></tr></thead><tbody>${show.map((v) =>
+        `<tr><td class="g"><a href="#/${sp.id}/taxon/${v.taxid}">${esc(v.name)}</a></td><td class="n">${fmtInt(v.n)}</td><td class="n">${fmtInt(v.het + v.hom)}</td><td class="n">${fmtInt(v.hpos + v.mpos)}</td><td class="n">${n(v.pos5)}</td><td class="n">${n(v.pos1)}</td><td class="n">${fmtInt(v.pwp)}</td></tr>`).join('')}</tbody>`;
       $('#vir-note').textContent = all.length > show.length ? `${fmtInt(show.length)} of ${fmtInt(all.length)} shown; type to narrow.` : `${fmtInt(all.length)} shown.`; };
     $('#vir-filter').oninput = draw; draw();
   }
@@ -2293,8 +2298,8 @@ async function viewVirus(spId, taxid) {
       <div class="pname">every pair of its ${fmtInt(v.n)} proteins folded with AlphaFold-Multimer (one model each) and scored with lis.py</div>
       <div class="ids"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${v.taxid}" target="_blank" rel="noopener">NCBI taxon ${v.taxid}</a><span>${fmtInt(v.het)} heterodimers · ${fmtInt(v.hom)} homodimers folded</span></div>
       <div class="actions">${citeBtn(`${v.name} (virus)`)}</div></div>
-      <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR</span></div>
-        <div class="kpi"><b>${fmtInt(v.mpos)}</b><span>homodimers past 10% FPR</span></div><div class="kpi"><b>${fmtInt(v.pwp)}</b><span>proteins with a partner</span></div></div></div>
+      <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR${cutNote(10)}</span></div>
+        <div class="kpi"><b>${fmtInt(v.mpos)}</b><span>homodimers past 10% FPR${cutNote(10)}</span></div><div class="kpi"><b>${fmtInt(v.pwp)}</b><span>proteins with a partner</span></div></div></div>
     <div class="card" id="vn-card"><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label class="ctl" title="a large virus is easier to read with each protein's strongest pairs only; the pairs table lists every pair">Edges<select id="vn-top"><option value="0">all</option><option value="5">top 5 per protein</option><option value="3">top 3 per protein</option><option value="1">top 1 per protein</option></select></label>
         <label class="ctl" title="find groups of proteins predicted to bind each other more than the rest (Louvain communities, iLIS-weighted) and lay each group out apart"><input type="checkbox" id="vn-comm" checked> Group by community</label>
         <div class="ctl"><span>Cutoff</span><div class="seg" id="vn-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>

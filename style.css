@@ -93,6 +93,8 @@ a:hover { text-decoration: underline; }
 .kpi b { display: block; font-family: var(--mono); font-size: 22px; font-weight: 600; line-height: 1.1; }
 .kpi span { font-size: 11.5px; color: var(--ink-3); letter-spacing: 0.02em; }
 .kpi.f1 b { color: var(--fpr1-t); } .kpi.f5 b { color: var(--fpr5-t); } .kpi.f10 b { color: var(--fpr10-t); }
+.kc { display: block; font-style: normal; font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--ink-3); letter-spacing: 0; margin-top: 1px; }   /* the iLIS cutoff under a count */
+.kc.t { font-family: inherit; }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 4px 0 20px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 16px; border-radius: 9px; font: 600 14px var(--sans); border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
 .btn:hover { text-decoration: none; border-color: var(--blue); color: var(--blue); }
