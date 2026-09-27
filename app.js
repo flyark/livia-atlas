@@ -845,13 +845,7 @@ async function viewHome() {
       <div class="chips">${(reg.species || []).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<span class="lbl">${esc(x.label)}</span>` : ''}`
         + (TRY[x.id] || []).map((g) => `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`).join('') + '</span>').join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
-    </section>
-    <h2 class="section-h">How it works</h2>
-    <div class="steps">
-      <div class="step"><h4>1 · Predict</h4><p>A screen of protein pairs folded with AlphaFold-Multimer (or any predictor that reports PAE).</p></div>
-      <div class="step"><h4>2 · Score</h4><p>lis.py (<a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>) scores each prediction over its confident residue pairs only: iLIS, with cutoffs benchmarked at 10%, 5% and 1% false-positive rate (${cite('flypredictome')}).</p></div>
-      <div class="step"><h4>3 · Resolve</h4><p>The contact residues of every interface are kept, so partners can be compared by where they bind and clustered by their interaction fingerprints with LIVIA cLIP.</p></div>
-    </div>`;
+    </section>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase();
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1500));
@@ -896,7 +890,9 @@ async function showcase() {
     <div class="sc-stage"><canvas id="sc-cv"></canvas></div>
     <div class="sc-foot"><span id="sc-cap"></span><a id="sc-open"></a></div>
     <div class="sc-own">Have your own screen? <a href="${LIVIA}clip.html" target="_blank" rel="noopener">Use cLIP in LIVIA →</a></div>
-    <div class="sc-dots">${S.map((s, k) => `<button type="button" data-k="${k}" aria-label="${esc(s.gene)}, ${esc(s.spLabel)}"></button>`).join('')}</div>`;
+    <div class="sc-nav"><button type="button" class="sc-arrow" id="sc-prev" aria-label="Previous protein"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+      <div class="sc-dots">${S.map((s, k) => `<button type="button" data-k="${k}" aria-label="${esc(s.gene)}, ${esc(s.spLabel)}"></button>`).join('')}</div>
+      <button type="button" class="sc-arrow" id="sc-next" aria-label="Next protein"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button></div>`;
   const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   let at = 0, timer = null, paused = false;
   const draw = (s) => {   // as on a protein page: frequency (bars in their most frequent cluster's color) over the fingerprint (contacts in navy, clusters in the strip), one residue axis
@@ -930,6 +926,13 @@ async function showcase() {
   };
   const run = () => { clearInterval(timer); if (!reduce) timer = setInterval(() => { if (!paused) show(at + 1); }, 7000); };
   box.querySelectorAll('.sc-dots button').forEach((b) => b.onclick = () => { show(+b.dataset.k, true); run(); });
+  const step = (d) => { show(at + d, true); run(); };   // arrows, the arrow keys and a sideways swipe move one protein
+  $('#sc-prev').onclick = () => step(-1); $('#sc-next').onclick = () => step(1);
+  box.addEventListener('keydown', (e) => { if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') { e.preventDefault(); step(e.key === 'ArrowLeft' ? -1 : 1); } });
+  let t0 = null;
+  box.addEventListener('touchstart', (e) => { const t = e.touches[0]; t0 = [t.clientX, t.clientY]; }, { passive: true });
+  box.addEventListener('touchend', (e) => { if (!t0) return; const t = e.changedTouches[0], dx = t.clientX - t0[0], dy = t.clientY - t0[1]; t0 = null;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > 1.5 * Math.abs(dy)) step(dx < 0 ? 1 : -1); }, { passive: true });
   box.addEventListener('mouseenter', () => { paused = true; }); box.addEventListener('mouseleave', () => { paused = false; });
   box.addEventListener('focusin', () => { paused = true; }); box.addEventListener('focusout', () => { paused = false; });
   window.onresize = () => { if (box.isConnected) draw(S[at]); };

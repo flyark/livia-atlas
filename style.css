@@ -75,10 +75,6 @@ a:hover { text-decoration: underline; }
 .ds .badge { align-self: flex-start; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; padding: 3px 8px; border-radius: 6px; }
 .badge.on { background: #E3F4EE; color: var(--fpr5); }
 .badge.soon { background: #F1F3F6; color: var(--ink-3); }
-.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-.step { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 16px 18px; }
-.step h4 { margin: 0 0 6px; font-size: 15px; }
-.step p { margin: 0; color: var(--ink-2); font-size: 14px; }
 
 /* ── cards / protein page ── */
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 20px 22px; margin-bottom: 18px; box-shadow: var(--shadow); }
@@ -160,12 +156,17 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .showcase .sc-foot a { color: var(--blue); text-decoration: none; white-space: nowrap; }
 .showcase .sc-top, .showcase .sc-stage, .showcase .sc-foot { transition: opacity .18s ease; }
 .showcase.sc-out .sc-top, .showcase.sc-out .sc-stage, .showcase.sc-out .sc-foot { opacity: 0; }
-.showcase .sc-dots { display: flex; justify-content: center; gap: 2px; margin-top: 10px; }
+.showcase .sc-nav { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; }
+.showcase .sc-dots { display: flex; justify-content: center; gap: 2px; }
+.showcase .sc-arrow { width: 32px; height: 32px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--card); color: var(--ink-2);
+  display: grid; place-items: center; cursor: pointer; transition: color .15s ease, border-color .15s ease; }
+@media (hover: hover) { .showcase .sc-arrow:hover { color: var(--navy); border-color: var(--navy); } }   /* a tap must not leave it lit */
+.showcase .sc-arrow:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
 .showcase .sc-dots button { width: 22px; height: 22px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
 .showcase .sc-dots button::after { content: ''; width: 7px; height: 7px; border-radius: 4px; background: var(--line); transition: width .2s ease, background .2s ease; }
 .showcase .sc-dots button[aria-current="true"]::after { width: 20px; background: var(--navy); }
 .showcase .sc-dots button:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; border-radius: 6px; }
-@media (prefers-reduced-motion: reduce) { .showcase .sc-top, .showcase .sc-stage, .showcase .sc-foot, .showcase .sc-dots button::after { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .showcase .sc-top, .showcase .sc-stage, .showcase .sc-foot, .showcase .sc-dots button::after, .showcase .sc-arrow { transition: none; } }
 
 /* datasets: live cards share the row; planned ones sit below, quieter */
 .live-row { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
