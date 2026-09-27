@@ -217,6 +217,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .subnav button { all: unset; cursor: pointer; font: 500 13px var(--sans); color: var(--ink-2); padding: 5px 11px; border-radius: 8px; }
 .subnav button:hover { background: var(--blue-soft); color: var(--blue); }
 .subnav button:focus-visible { outline: 2px solid var(--blue); }
+.subnav button.on, .subnav button.on:hover { background: #1A5276; color: #fff; }   /* the section in view, as LIVIA's section bar */
 .clip-ctl { display: flex; align-items: center; gap: 10px; }
 .explain { color: var(--ink-2); font-size: 13.5px; margin: 12px 0 0; }
 .cl-chips { margin: 8px 0 10px; gap: 6px; }

@@ -708,6 +708,19 @@ function drawIfaceTracks(cv, tracks) {
     showTip(`<b>${esc(t.gene)}</b> ${t.seq && t.seq[r - 1] ? t.seq[r - 1] : ''}${r} · ${st}${dom ? `<br>${esc(dom)}` : ''}`, e.clientX, e.clientY); };
   cv.onmouseleave = hideTip;
 }
+// A sequence fills its line: the font (11–14.5 px) is chosen so a whole number of 10-residue groups spans the width,
+// on a phone as on a wide screen, instead of leaving a ragged gap at the right.
+const SEQFIT = typeof ResizeObserver === 'function' ? new ResizeObserver((ents) => ents.forEach((e) => fitSeq(e.target))) : null;
+function fitSeq(f) {
+  const W = f.clientWidth; if (!W || !f.isConnected) return;
+  const probe = document.createElement('span'); probe.textContent = 'MMMMMMMMMM'; probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;font-size:100px';
+  f.appendChild(probe); const unit = probe.getBoundingClientRect().width / 1000; probe.remove();   // a character's width per px of font size
+  const per = 10 * unit + 0.7;                                   // one group and its 0.7em gap, per px of font size
+  let pick = null;
+  for (let n = 1; n <= 20; n++) { const px = Math.floor((W - 2) / n / per * 10) / 10; if (px >= 11 && px <= 14.5 && (!pick || Math.abs(px - 12.5) < Math.abs(pick - 12.5))) pick = px; }
+  if (pick && f.style.fontSize !== pick + 'px') f.style.fontSize = pick + 'px';
+}
+function fitSeqs(root) { root.querySelectorAll('.seq-flow').forEach((f) => { fitSeq(f); if (SEQFIT) SEQFIT.observe(f); }); }
 // One sequence as a continuous, searchable flow in 10-residue groups (position numbers are CSS, not text), as clip.html.
 function seqPanel(label, seq, lir, clir, col, len, span) {   // span: the folded part of a longer gene; the rest is dimmed
   const ext = span ? `residues ${fmtInt(span[0])}–${fmtInt(span[1])} of ${fmtInt(len)}` : `${fmtInt(len || seq.length)} residues`;
@@ -753,6 +766,7 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   const panels = host.querySelectorAll('.seqp');
   panels[0].innerHTML = seqPanel(q.label, qs, qL, qC, PAIR_COL.q, T[0].len, q.span);
   panels[1].innerHTML = seqPanel(o.label, os, pL, pC, PAIR_COL.p, T[1].len, o.span);
+  fitSeqs(panels[0]); fitSeqs(panels[1]);
   // UniProt domain coordinates fit only the UniProt sequence: a full-length human construct; for fly, a FlyBase
   // reference that is UniProt's sequence (checked against the AlphaFold DB entry)
   const domOK = async (R, s, seq) => { if (!R || !R.acc || s.own) return false;
@@ -1074,7 +1088,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-partners', 'Partners'], ['c-sites', 'Binding sites'], ['c-freq', 'Frequency'], ['c-3d', '3D structure'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Table']];
+  const nav = [['c-partners', 'Overview'], ['c-3d', '3D structure'], ['c-sites', 'Binding sites'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners']];
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -1094,7 +1108,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="setbar" id="setbar" hidden></div>
     <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}">${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
-    <div class="card" id="c-partners"><div class="card-head"><h2>Partners by score</h2>
+    <div class="card" id="c-partners"><div class="card-head"><div><h2>Overview</h2><div class="muted">each partner by its best model</div></div>
         <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
           <label>show <select id="sc-pts"><option value="partner">one per partner (best model)</option><option value="all">every prediction</option><option value="rank1">rank-1 per pair</option></select></label>
           <input type="search" id="sc-find" list="sc-list" placeholder="Find partner" style="width:140px"><datalist id="sc-list"></datalist></div></div>
@@ -1103,17 +1117,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span></div>
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
-    <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
-        <div class="clip-ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div>
-      <p class="sites-answer" id="sites-answer">Finding the binding sites…</p>
-      <div class="plot" id="sites-map"></div><div class="domlegend" id="sites-domains"></div>
-      <p class="muted sites-note">How the sites are found: LIVIA cLIP, run in your browser on the predictions shown, takes the residues of ${esc(P.gene)} that
-        each prediction past the cutoff contacts (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å) as its fingerprint, compares fingerprints by cosine distance, joins them by
-        average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by size; the map has one lane per site. Solid marks
-        a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
-        show only that site on the page; the partners of each site are listed under Clusters.</p><p class="note" id="clip-aside" hidden></p></div>
-    <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted">predictions contacting each residue, colored by their most frequent cluster</span>${xticks}</div></div>
-      ${chips}<div class="plot" id="freq-wrap"></div><div class="domlegend" id="freq-domains"></div><div class="hot" id="hot"></div></div>
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
       <p class="muted" style="margin:2px 0 6px">${esc(P.gene)} as predicted alone in the AlphaFold Database, residues colored by the cluster that consensus-contacts them · click clusters to isolate.
         <b>C<i>n</i> (N)</b>: N = predictions (AlphaFold ranks) in that cluster.</p>
@@ -1125,6 +1128,17 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <span id="am-cut-wrap" hidden>AM pathogenicity average ≥ <select id="am-cutoff">${[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}">${Math.round(v * 100)}%</option>`).join('')}</select></span></div>
       <div class="viewer3d"><iframe id="viewer3d-frame" title="3D structure viewer"></iframe><div class="v3d-msg" id="v3d-msg">Loading the AlphaFold DB model…</div></div>
       <div class="legend" id="legend-3d"></div></div>
+    <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
+        <div class="clip-ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div>
+      <p class="sites-answer" id="sites-answer">Finding the binding sites…</p>
+      <div class="plot" id="sites-map"></div><div class="domlegend" id="sites-domains"></div>
+      <p class="muted sites-note">How the sites are found: LIVIA cLIP, run in your browser on the predictions shown, takes the residues of ${esc(P.gene)} that
+        each prediction past the cutoff contacts (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å) as its fingerprint, compares fingerprints by cosine distance, joins them by
+        average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by size; the map has one lane per site. Solid marks
+        a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
+        show only that site on the page; the partners of each site are listed under Clusters.</p><p class="note" id="clip-aside" hidden></p></div>
+    <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted">predictions contacting each residue, colored by their most frequent cluster</span>${xticks}</div></div>
+      ${chips}<div class="plot" id="freq-wrap"></div><div class="domlegend" id="freq-domains"></div><div class="hot" id="hot"></div></div>
     <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per prediction, in dendrogram order · hover for the partner, click to open the pair</span>${xticks}</div></div>
       ${chips}<div class="plot" id="fp-wrap"></div>
       <div class="legend"><span><i style="background:#08306B"></i>contact residue (cLIR)</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each prediction</span></div></div>
@@ -1147,6 +1161,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <select id="pt-band"><option value="10">past 10% FPR</option><option value="5">past 5% FPR</option><option value="1">past 1% FPR</option><option value="0">all predicted</option></select>
         <input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>`;
+  { const bar = $('.subnav'); let cur = null, raf = 0;
+    const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
+      const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
+      for (const b of bar.querySelectorAll('button')) { const t = document.getElementById(b.dataset.t); if (t && !t.hidden && t.getBoundingClientRect().top <= lim) on = b; }
+      if (on === cur) return; cur = on; bar.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === on));
+      if (on && bar.scrollWidth > bar.clientWidth + 1) bar.scrollTo({ left: Math.max(0, on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2), behavior: 'smooth' }); };
+    const onScroll = () => { if (!raf) raf = requestAnimationFrame(spy); };
+    window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(spy); }
   app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'smooth' }); });
   { const dm = $('.dmenu'), shut = (e) => { if (!dm || !dm.isConnected) { document.removeEventListener('click', shut); return; } if (dm.open && !dm.contains(e.target)) dm.open = false; }; document.addEventListener('click', shut); }
   app.querySelectorAll('[data-clip]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it here and hand its bytes to cLIP
@@ -1660,7 +1682,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       for (const q of [...pts].sort((a, b) => (b.t.best || 0) - (a.t.best || 0)).slice(0, 10)) {
         const cx = xs(q.x), cy = ys(q.y), rr = rad(q), name = gname(q.t.id), w = g.measureText(name).width + 4, h = 13;
         for (const [tx, ty, anchor] of [[cx + rr + 4, cy + 4, 'left'], [cx - rr - 4, cy + 4, 'right'], [cx, cy - rr - 5, 'center'], [cx, cy + rr + 13, 'center']]) {
-          const bx = anchor === 'left' ? tx : anchor === 'right' ? tx - w : tx - w / 2, box = [bx, ty - h + 2, bx + w, ty + 3];
+          const bx = anchor === 'left' ? tx : anchor === 'right' ? tx - w : tx - w / 2, box = [bx - 3, ty - h, bx + w + 3, ty + 4];   // a little room around each label
           if (box[0] < m.l || box[2] > W - m.r || box[1] < m.t - 2 || box[3] > H - m.b) continue;
           if (placed.some((o) => box[0] < o[2] && box[2] > o[0] && box[1] < o[3] && box[3] > o[1])) continue;
           placed.push(box); shown.push([name, tx, ty, anchor]); break; } }
