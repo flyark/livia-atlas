@@ -263,11 +263,6 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .scat2 svg, .scat2 canvas { position: absolute; left: 0; top: 0; }
 .netkey { display: flex; flex-wrap: wrap; gap: 14px 48px; justify-content: center; align-items: flex-start; margin-top: 14px; font-size: 12.5px; color: var(--ink-2); }
 .netkey > div { display: flex; flex-direction: column; gap: 6px; }
-.netkey .grad { width: 300px; max-width: 80vw; height: 10px; border-radius: 5px; }
-.netkey .gl { position: relative; height: 14px; width: 300px; max-width: 80vw; font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
-.netkey .gl span { position: absolute; top: 0; transform: translateX(-50%); }
-.netkey .gl span:first-child { transform: none; }
-.netkey .gl span:last-child { transform: translateX(-100%); }
 #net-legend { justify-content: center; }
 
 /* interaction residues (protein page card and pair page) */
@@ -455,5 +450,7 @@ textarea.ids { width: 100%; box-sizing: border-box; font: 13.5px/1.5 var(--mono)
 textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 /* BioGRID key under a network */
 .kbrow { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--ink-2); margin-top: 6px; flex-wrap: wrap; }
-.kb-rep { display: inline-block; width: 36px; height: 4px; border-radius: 3px; background: #7A6FD0; box-shadow: 0 0 0 2px rgba(23, 38, 58, 0.55); }
-.kb-dash { display: inline-block; width: 36px; height: 0; border-top: 1.5px dashed #6F7D90; margin-left: 10px; }
+.kbkey .kbrow { gap: 6px 14px; margin-top: 0; }
+.kbkey .kbrow span { display: inline-flex; align-items: center; gap: 6px; }
+.kbkey .kbrow i { display: inline-block; width: 26px; height: 4px; border-radius: 2px; }
+.kbkey .kbrow i.kb-dash { height: 0; border-top: 1.5px dashed #6F7D90; border-radius: 0; }
