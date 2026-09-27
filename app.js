@@ -226,7 +226,6 @@ function parseCSV(text) {   // lis.py CSV: quoted only where a residue list hold
 // A string cut from a large text keeps that whole text alive (V8 slices point into their parent): what the predictions
 // keep is copied out, so a bundle's CSV can be freed once it is read.
 const own = (s) => (typeof s === 'string' && s.length > 12 ? (' ' + s).slice(1) : s);
-const shiftRanges = (s, k) => (!k || !s || s === '[]' ? s : '[' + String(s).replace(/[\[\]\s]/g, '').split(',').filter(Boolean).map((t) => t.split('-').map((x) => +x + k).join('-')).join(',') + ']');
 const rangesOf = (a) => { if (!a.length) return '[]'; const t = []; let x = a[0], y = a[0];
   for (const r of a.slice(1)) { if (r === y + 1) { y = r; continue; } t.push(x === y ? String(x) : `${x}-${y}`); x = y = r; } t.push(x === y ? String(x) : `${x}-${y}`); return '[' + t.join(',') + ']'; };
 const expand = (s) => { const out = []; for (const t of String(s || '').replace(/[\[\]\s]/g, '').split(',')) { if (!t) continue;
@@ -584,7 +583,6 @@ function scoreProteins(sp, raw, limit = 10) {   // → [{ row, score }], best fi
   scored.sort((a, b) => b[0] - a[0]);
   return scored.slice(0, limit).map(([score, i]) => ({ row: sp.rows[i], score }));
 }
-const findProteins = (sp, q, limit = 10) => scoreProteins(sp, q, limit).map((h) => h.row);
 function mountSearch(host, { big = false, spId = null, autofocus = false, only = null, set = '' } = {}) {   // spId null: every species; only: a set's keys
   host.innerHTML = `<div class="search ${big ? 'big' : ''}">
       <svg class="glass" width="${big ? 20 : 17}" height="${big ? 20 : 17}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
@@ -1076,7 +1074,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-sites', 'Binding sites'], ['c-overview', 'Overview'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-3d', '3D structure'], ['c-scatter', 'Scatter'], ['c-net', 'Network'], ['c-pt', 'Partners']];
+  const nav = [['c-partners', 'Partners'], ['c-sites', 'Binding sites'], ['c-freq', 'Frequency'], ['c-3d', '3D structure'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Table']];
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -1096,34 +1094,26 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="setbar" id="setbar" hidden></div>
     <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}">${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
-    <div class="card" id="c-sites"><div class="card-head"><h2>Binding sites</h2><span class="muted">where ${esc(P.gene)}'s partners bind, from LIVIA cLIP below · click a site to show only it on the page</span></div>
-      <p class="sites-answer" id="sites-answer">Finding the binding sites…</p>
-      <div class="plot" id="sites-map"></div><div class="domlegend" id="sites-domains"></div>
-      <div class="sites" id="sites-list"></div>
-      <p class="muted sites-note">A site is one cLIP cluster: partners whose predicted contacts on ${esc(P.gene)} overlap. Its footprint (solid) is the residues that at least 30% of the site's predictions contact; the lighter shades show how often the other residues are contacted. A partner predicted more than once can sit in more than one site.</p></div>
-    <div class="card" id="c-overview"><div class="card-head"><h2>Partners by score</h2><span class="muted" id="sc-sub"></span></div>
-      <div class="overview"><div><div class="scat" id="scat"></div>
-          <div class="legend"><span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span><span>color: cluster (gray: not clustered)</span></div></div>
+    <div class="card" id="c-partners"><div class="card-head"><h2>Partners by score</h2>
+        <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
+          <label>show <select id="sc-pts"><option value="partner">one per partner (best model)</option><option value="all">every prediction</option><option value="rank1">rank-1 per pair</option></select></label>
+          <input type="search" id="sc-find" list="sc-list" placeholder="Find partner" style="width:140px"><datalist id="sc-list"></datalist></div></div>
+      <div class="overview"><div><div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="plot" id="scat2"><canvas id="scatter-canvas"></canvas></div><div class="legend" id="sc-legend"></div></div>
         <div><h3>Top partners <span class="muted">by iLIS of the best model</span></h3>
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span></div>
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
-    <div class="card" id="c-clip"><div class="card-head"><div><h2 id="clip-title">${esc(P.gene)} — interactome</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
+    <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div>
-      <div class="stat4"><div><b id="s-partners">–</b><span>partners</span></div><div><b id="s-preds">–</b><span>models</span></div><div><b id="s-k">–</b><span>clusters</span></div><div><b id="s-len">–</b><span>query length</span></div></div>
-      <p class="explain">LIVIA cLIP, run in your browser on the predictions shown: the residues of ${esc(P.gene)} that a prediction past the cutoff contacts
-        (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å) form its interaction fingerprint. Fingerprints are compared by cosine distance and joined by average linkage, and the number
-        of clusters is chosen by silhouette. Clusters are numbered by size: Cluster 1 is the largest.</p><p class="note" id="clip-aside" hidden></p></div>
+      <p class="sites-answer" id="sites-answer">Finding the binding sites…</p>
+      <div class="plot" id="sites-map"></div><div class="domlegend" id="sites-domains"></div>
+      <p class="muted sites-note">How the sites are found: LIVIA cLIP, run in your browser on the predictions shown, takes the residues of ${esc(P.gene)} that
+        each prediction past the cutoff contacts (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å) as its fingerprint, compares fingerprints by cosine distance, joins them by
+        average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by size; the map has one lane per site. Solid marks
+        a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
+        show only that site on the page; the partners of each site are listed under Clusters.</p><p class="note" id="clip-aside" hidden></p></div>
     <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted">predictions contacting each residue, colored by their most frequent cluster</span>${xticks}</div></div>
       ${chips}<div class="plot" id="freq-wrap"></div><div class="domlegend" id="freq-domains"></div><div class="hot" id="hot"></div></div>
-    <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per prediction, in dendrogram order · hover for the partner, click to open the pair</span>${xticks}</div></div>
-      ${chips}<div class="plot" id="fp-wrap"></div>
-      <div class="legend"><span><i style="background:#08306B"></i>contact residue (cLIR)</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each prediction</span></div></div>
-    <div class="card" id="c-info"><div class="card-head"><h2>Cluster info</h2><span class="muted">Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div></div>
-    <div class="card" id="c-res"><div class="card-head"><h2>Interaction Residues</h2>
-        <div class="controls" style="margin:0"><select id="res-partner" aria-label="Partner" style="max-width:300px"></select><input type="search" id="res-find" placeholder="Find partner" style="width:130px"><select id="res-rank" aria-label="Model" style="max-width:280px"></select></div></div>
-      <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not in the interface</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interface (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span></div>
-      <div id="res-body"></div></div>
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
       <p class="muted" style="margin:2px 0 6px">${esc(P.gene)} as predicted alone in the AlphaFold Database, residues colored by the cluster that consensus-contacts them · click clusters to isolate.
         <b>C<i>n</i> (N)</b>: N = predictions (AlphaFold ranks) in that cluster.</p>
@@ -1135,11 +1125,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <span id="am-cut-wrap" hidden>AM pathogenicity average ≥ <select id="am-cutoff">${[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9].map((v) => `<option value="${v}">${Math.round(v * 100)}%</option>`).join('')}</select></span></div>
       <div class="viewer3d"><iframe id="viewer3d-frame" title="3D structure viewer"></iframe><div class="v3d-msg" id="v3d-msg">Loading the AlphaFold DB model…</div></div>
       <div class="legend" id="legend-3d"></div></div>
-    <div class="card" id="c-scatter"><div class="card-head"><h2>Interaction scatter plot</h2>
-        <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
-          <label>show <select id="sc-pts"><option value="all">every prediction</option><option value="rank1">rank-1 per pair</option></select></label>
-          <input type="search" id="sc-find" list="sc-list" placeholder="Find partner" style="width:140px"><datalist id="sc-list"></datalist></div></div>
-      <div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="plot" id="scat2"><canvas id="scatter-canvas"></canvas></div><div class="legend" id="sc-legend"></div></div>
+    <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per prediction, in dendrogram order · hover for the partner, click to open the pair</span>${xticks}</div></div>
+      ${chips}<div class="plot" id="fp-wrap"></div>
+      <div class="legend"><span><i style="background:#08306B"></i>contact residue (cLIR)</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each prediction</span></div></div>
+    <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div></div>
+    <div class="card" id="c-res"><div class="card-head"><h2>Interaction Residues</h2>
+        <div class="controls" style="margin:0"><select id="res-partner" aria-label="Partner" style="max-width:300px"></select><input type="search" id="res-find" placeholder="Find partner" style="width:130px"><select id="res-rank" aria-label="Model" style="max-width:280px"></select></div></div>
+      <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not in the interface</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interface (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span></div>
+      <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><span>Partners</span><select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select>
         <span>Cutoff</span><select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select></div></div>
@@ -1266,7 +1259,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : !B.cons.size && P.len && CQ.qLen !== P.len ? `clustered construct ${fmtInt(CQ.qLen)} aa, ${ref} ${fmtInt(P.len)} aa; residue numbers follow the construct` : '';
     if (f) $('#flags').insertAdjacentHTML('beforeend', `<span class="flag">${esc(f)}</span>`); }
   const constructNote = () => {   // what the clustering uses, and what it leaves out
-    $('#s-len').textContent = fmtInt(CQ.qLen || P.clen || 0);
     const a = $('#clip-aside');
     if (B.cons.size) {   // a gene-keyed screen: its other constructs by kind
       const KIND = { phosphosite: ['phosphosite window', 'phosphosite windows'], fragment: ['fragment', 'fragments'], mutant: ['point mutant', 'point mutants'],
@@ -1323,13 +1315,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       ACTIVE = new Set(range(M.k));
     }
     const n = M ? M.fingerprints.length : 0, k = clustered() ? M.k : 0;
-    $('#s-partners').textContent = fmtInt(partnerCluster.size); $('#s-preds').textContent = fmtInt(n); $('#s-k').textContent = k || '–';
-    $('#clip-title').innerHTML = `${esc(P.gene)} — interactome <span class="muted">(${fmtInt(partnerCluster.size)} partners, ${fmtInt(n)} predictions, ${k} clusters)</span>`;
-    if (M) $('#clip-sub').textContent = clustered() ? `query length ${fmtInt(M.plen)} aa · cosine + average linkage · silhouette-optimal k · iLIS ≥ ${CUT[cut]} (${cut}% FPR)`
+    if (M) $('#clip-sub').textContent = clustered() ? `${fmtInt(n)} predictions of ${fmtInt(partnerCluster.size)} partners past iLIS ${CUT[cut]} (${cut}% FPR) · query ${fmtInt(M.plen)} aa · cosine distance, average linkage, silhouette`
       : `${n ? 'Only one prediction' : 'No predictions'} past the ${cut}% FPR cutoff, so there is nothing to cluster.`;
     const want = !clustered() && V.mode === 'cluster' ? 'plddt' : clustered() && V.auto && S.mapOK ? 'cluster' : null;   // no clusters: show pLDDT until there are
     if (want) { V.auto = want === 'plddt'; V.mode = want; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === want)); }
-    renderChips(); renderSites(); drawFreq(); drawHeatmap(); renderClusterInfo(); recolor3D(); drawScatter(); drawOverview(); drawTable(); fillPartners(); if (NET) NET.recolor();
+    renderChips(); renderSites(); drawFreq(); drawHeatmap(); renderClusterInfo(); recolor3D(); drawScatter(); drawTopList(); drawTable(); fillPartners(); if (NET) NET.recolor();
   }
   function renderChips() {
     app.querySelectorAll('[data-chips]').forEach((box) => {
@@ -1443,7 +1433,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   /* Binding sites: each cLIP cluster's footprint on the query, the page's answer to "where do the partners bind" */
   const SITE_FRAC = 0.3;   // a site's footprint: residues contacted by at least 30% of its predictions (the cluster footprint of the paper)
-  let sitesOpen = false;
   function sitesOf() {     // → sites, most partners first: cluster, predictions, partners by best iLIS, contacts per residue, footprint
     const by = new Map();
     M.preds.forEach((p, i) => { const c = M.labels[i]; let t = by.get(c); if (!t) by.set(c, t = { c, n: 0, hits: new Map(), best: new Map() });
@@ -1457,48 +1446,45 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const stretches = (rs) => { const out = []; for (const [a, b] of rs) { const l = out[out.length - 1]; if (l && a - l[1] <= 4) l[1] = b; else out.push([a, b]); } return out; };   // gaps of up to 3 residues joined
   const siteDomains = (st, doms) => doms.filter((d) => st.foot.some((r) => r >= d.s && r <= d.e)).map((d) => d.name).slice(0, 2);
   function renderSites() {
-    const ans = $('#sites-answer'), map = $('#sites-map'), list = $('#sites-list'); if (!ans) return;
+    const ans = $('#sites-answer'), map = $('#sites-map'); if (!ans) return;
     if (!clustered()) { ans.innerHTML = M ? `No binding site to show: ${M.fingerprints.length ? 'only one prediction is' : 'no prediction is'} past the ${cut}% FPR cutoff.` : 'Finding the binding sites…';
-      map.innerHTML = ''; list.innerHTML = ''; $('#sites-domains').innerHTML = ''; return; }
-    const sites = sitesOf(), doms = qDomains(M.plen), K = sites.length, np = partnerCluster.size, big = sites[0];
+      map.innerHTML = ''; $('#sites-domains').innerHTML = ''; return; }
+    const sites = sitesOf(), doms = qDomains(M.plen), K = sites.length, np = partnerCluster.size, big = sites[0], lanesOrder = [...sites].sort((a, b) => a.c - b.c);
     const names = (ps) => ps.map((x) => `<a href="#/${sp.id}/${P.key}/${x.key}${scopeQ}">${esc(gname(x.key))}</a>`);
     const andList = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
     const where = (st) => { if (!st.foot.length) return 'no residue shared by 30% of its predictions';
       const r = stretches(st.ranges), dn = siteDomains(st, doms);
       return `${r.length <= 3 ? `residues ${rangeText(r)}` : `${r.length} stretches between residues ${r[0][0]} and ${r[r.length - 1][1]}`}${dn.length ? ` (${esc(dn.join(', '))})` : ''}`; };
-    ans.innerHTML = `<b>${esc(P.gene)}</b>: ${fmtInt(np)} partner${np === 1 ? '' : 's'} past the ${cut}% FPR cutoff bind${np === 1 ? 's' : ''} ${K === 1 ? 'one site' : `${K} sites`}.`
-      + ` The largest, at ${where(big)}, holds ${fmtInt(big.partners.length)} of them${big.partners.length ? `, including ${andList(names(big.partners.slice(0, 3)))}` : ''}.`;
-    const show = sitesOpen ? sites : sites.slice(0, 8);
-    drawSitesMap(map, show, doms);
+    ans.innerHTML = `<b>${esc(P.gene)}</b>: ${fmtInt(np)} partner${np === 1 ? ' is' : 's are'} predicted, past the ${cut}% FPR cutoff, to contact ${K === 1 ? 'one site' : `${K} sites`}.`
+      + ` The largest, at ${where(big)}, is contacted by ${fmtInt(big.partners.length)} of them${big.partners.length ? `, including ${andList(names(big.partners.slice(0, 3)))}` : ''}.`;
+    drawSitesMap(map, lanesOrder, doms);
     $('#sites-domains').innerHTML = doms.length ? doms.map((d, i) => `<span><b>D${i + 1}</b> ${esc(d.name)} (${d.s}–${d.e})</span>`).join('') : '';
-    list.innerHTML = show.map((st) => `<div class="site${!allOn() && ACTIVE.has(st.c) ? ' on' : ''}" data-c="${st.c}" role="button" tabindex="0" title="show only this site on the page">
-        <i style="background:${clusterColor(st.c, M.k)}"></i><div><b>${clusterLabel(st.c)}</b> · ${where(st)} · <span class="muted">${fmtInt(st.partners.length)} partner${st.partners.length === 1 ? '' : 's'}, ${fmtInt(st.n)} prediction${st.n === 1 ? '' : 's'}</span><br>
-        ${names(st.partners.slice(0, 8)).join(', ')}${st.partners.length > 8 ? ` <span class="muted">+${st.partners.length - 8} more (Cluster info)</span>` : ''}</div></div>`).join('')
-      + (sites.length > 8 ? `<button class="more" id="sites-more">${sitesOpen ? 'show the 8 largest' : `show all ${sites.length} sites`}</button>` : '');
-    list.querySelectorAll('.site').forEach((el) => { const go = (e) => { if (e.target.closest('a')) return; toggleCluster(el.dataset.c); };
-      el.onclick = go; el.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(e); } }; });
-    const more = $('#sites-more'); if (more) more.onclick = () => { sitesOpen = !sitesOpen; renderSites(); };
   }
   function drawSitesMap(host, sites, doms) {   // one lane per site on the query's residues: solid = footprint, shade = contact frequency within the site
     if (!$('#sites-canvas', host)) host.innerHTML = '<canvas id="sites-canvas"></canvas>';
     const cv = $('#sites-canvas', host), L = M.plen, W = host.clientWidth, bw = (W - AXL - AXR) / L, xOf = (r) => AXL + (r - 1) * bw;
     doms.forEach((d, i) => { d.idx = i + 1; });
     const nL = doms.length ? lanes(doms, (d) => xOf(Math.max(1, d.s)), (d) => Math.max(xOf(Math.max(1, d.s)) + 2, xOf(Math.min(L, d.e) + 1))) : 0;
-    const DRH = 15, LH = 20, top = 4 + nL * DRH + (nL ? 6 : 0), H = top + sites.length * LH + 26, g = canvasCtx(cv, W, H);
+    const DRH = 15, LH = sites.length > 14 ? 14 : 20, top = 4 + nL * DRH + (nL ? 6 : 0), H = top + sites.length * LH + 26, g = canvasCtx(cv, W, H), one = !allOn();
     for (const d of doms) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = 4 + d.lane * DRH;
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.fillStyle = '#51607A'; g.font = '10px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle';
       if (x1 - x0 > 18) g.fillText('D' + d.idx, x0 + 3, y + 6.5); }
     sites.forEach((st, j) => { const y = top + j * LH, col = clusterColor(st.c, M.k);
       g.fillStyle = '#F3F6F9'; g.fillRect(AXL, y + 3, W - AXL - AXR, LH - 6);
-      g.globalAlpha = 1; g.fillStyle = '#51607A'; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'right'; g.fillText(clusterLabel(st.c), AXL - 8, y + LH / 2);
+      if (one && ACTIVE.has(st.c)) { g.strokeStyle = '#E67E22'; g.lineWidth = 1.5; g.strokeRect(AXL - 0.5, y + 2.5, W - AXL - AXR + 1, LH - 5); }
+      g.globalAlpha = one && !ACTIVE.has(st.c) ? 0.35 : 1;
+      g.fillStyle = '#51607A'; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'right'; g.fillText(clusterLabel(st.c), AXL - 8, y + LH / 2);
       g.textAlign = 'left';
-      for (const [r, h] of st.hits) { if (r < 1 || r > L) continue; const f = h / st.n; g.fillStyle = col; g.globalAlpha = f >= SITE_FRAC ? 1 : 0.12 + 0.5 * f / SITE_FRAC; g.fillRect(xOf(r), y + 3, Math.max(1, bw), LH - 6); }
+      const dim = one && !ACTIVE.has(st.c) ? 0.35 : 1;
+      for (const [r, h] of st.hits) { if (r < 1 || r > L) continue; const f = h / st.n; g.fillStyle = col; g.globalAlpha = dim * (f >= SITE_FRAC ? 1 : 0.12 + 0.5 * f / SITE_FRAC); g.fillRect(xOf(r), y + 3, Math.max(1, bw), LH - 6); }
       g.globalAlpha = 1; });
     drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), top + sites.length * LH + 2, (r) => xOf(r) + bw / 2, W);
     cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, y = e.clientY - b.top, j = Math.floor((y - top) / LH), r = Math.floor((x - AXL) / bw) + 1;
-      const st = sites[j]; if (!st || r < 1 || r > L) return hideTip(); const h = st.hits.get(r) || 0;
-      showTip(`<b>${clusterLabel(st.c)}</b> · ${qSeq && qSeq[r - 1] ? qSeq[r - 1] : ''}${r}<br>${h} of ${st.n} predictions contact it (${Math.round(100 * h / st.n)}%)`, e.clientX, e.clientY); };
-    cv.onmouseleave = hideTip;
+      const st = sites[j]; if (!st || r < 1 || r > L) { cv.style.cursor = ''; return hideTip(); } const h = st.hits.get(r) || 0;
+      cv.style.cursor = 'pointer';
+      showTip(`<b>${clusterLabel(st.c)}</b> · ${fmtInt(st.partners.length)} partner${st.partners.length === 1 ? '' : 's'}, ${fmtInt(st.n)} prediction${st.n === 1 ? '' : 's'}<br>${qSeq && qSeq[r - 1] ? qSeq[r - 1] : ''}${r}: ${h} of ${st.n} contact it (${Math.round(100 * h / st.n)}%) · click to show only this site`, e.clientX, e.clientY); };
+    cv.onmouseleave = () => { cv.style.cursor = ''; hideTip(); };
+    cv.onclick = (e) => { const b = cv.getBoundingClientRect(), j = Math.floor((e.clientY - b.top - top) / LH); if (sites[j]) { hideTip(); toggleCluster(sites[j].c); } };
   }
   function renderClusterInfo() {
     const box = $('#cluster-info'); if (!box) return;
@@ -1622,7 +1608,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#am-cutoff').onchange = (e) => { V.amCut = +e.target.value; recolor3D(); };
   { const io3 = new IntersectionObserver((ents) => { if (ents.some((x) => x.isIntersecting)) { io3.disconnect(); show3D(); } }, { rootMargin: '300px' }); io3.observe($('#c-3d')); }
 
-  /* Interaction scatter plot: every prediction (or rank 1 of each run), cluster colors, any two metrics — on a canvas, so it exports */
+  /* Partners by score: one point per partner (its best model; dot size = iLIS average) or per prediction, any two scores,
+     cluster colors — on a canvas, so it exports */
   const present = Object.keys(METRICS).filter((k) => k === '_rank' || B.counted.some((p) => Number.isFinite(p[k]) && p[k] !== 0));
   $('#sc-y').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
   $('#sc-x').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
@@ -1637,11 +1624,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const xK = $('#sc-x').value, yK = $('#sc-y').value, mode = $('#sc-pts').value, k = M ? M.k : 1;
     const rankBy = yK !== '_rank' ? yK : xK !== '_rank' ? xK : 'iLIS';
     let grank = null;
-    if (xK === '_rank' || yK === '_rank') { grank = new Map(); B.counted.map((p, i) => [p, i]).sort((a, b) => ((b[0][rankBy] || 0) - (a[0][rankBy] || 0)) || a[1] - b[1]).forEach(([p], i) => grank.set(p, i + 1)); }
+    if (xK === '_rank' || yK === '_rank') { grank = new Map(); B.counted.map((p, i) => [p, i]).sort((a, b) => ((b[0][rankBy] || 0) - (a[0][rankBy] || 0)) || a[1] - b[1]).forEach(([p], i) => grank.set(p, i + 1)); }   // partners: their best model's rank
     const val = (p, key) => (key === '_rank' ? grank.get(p) : p[key]);
-    const pts = [];
-    for (const p of B.counted) { const x = val(p, xK), y = val(p, yK); if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
-      const c = predCluster.get(p.label + '|' + p.rank); pts.push({ p, x, y, c: c != null && (mode === 'all' || p.rank === 1) ? c : 0 }); }
+    const per = mode === 'partner', pts = [];
+    const src = per ? B.partners.filter((t) => t.id !== P.key && !t.rep).map((t) => ({ t, p: t.counted.reduce((a, b) => ((b.iLIS || 0) > (a.iLIS || 0) ? b : a), t.counted[0]) }))
+      : B.counted.map((p) => ({ t: null, p }));
+    for (const { t, p } of src) { const x = val(p, xK), y = val(p, yK); if (!Number.isFinite(x) || !Number.isFinite(y)) continue;
+      const c = per ? partnerCluster.get(t.id) : predCluster.get(p.label + '|' + p.rank); pts.push({ p, t, x, y, c: c != null && (per || mode === 'all' || p.rank === 1) ? c : 0 }); }
     pts.sort((a, b) => (a.c ? 1 : 0) - (b.c ? 1 : 0));
     const W = cv.parentElement.clientWidth, H = 450, m = { l: 62, r: 18, t: 24, b: 46 };
     const UNIT = new Set(['iLIS', 'ipTM', 'pTM', 'LIS', 'cLIS', 'ipSAE', 'actifpTM']);   // scores bounded by 1 keep their whole 0–1 range
@@ -1649,7 +1638,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : [Math.min(0, d3.min(vs) ?? 0), Math.max(1e-6, (d3.max(vs) ?? 1) * 1.04)]);
     const xs = d3.scaleLinear(dom(xK, pts.map((q) => q.x)), [m.l, W - m.r]).nice(), ys = d3.scaleLinear(dom(yK, pts.map((q) => q.y)), [H - m.b, m.t]).nice();
     const g = canvasCtx(cv, W, H);
-    const title = (key) => (key === '_rank' ? `global rank (by ${METRICS[rankBy]})` : METRICS[key]);
+    const title = (key) => (key === '_rank' ? `global rank (by ${METRICS[rankBy]})` : METRICS[key] + (per ? ' (best model)' : ''));
     canvasAxes(g, xs, ys, m, W, H, title(xK), title(yK));
     g.save(); g.lineWidth = 1; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace';
     const dash = (x0, y0, x1, y1) => { const L = Math.hypot(x1 - x0, y1 - y0); g.beginPath(); for (let t = 0; t < L; t += 8) { const a = t / L, b = Math.min(L, t + 4) / L; g.moveTo(x0 + (x1 - x0) * a, y0 + (y1 - y0) * a); g.lineTo(x0 + (x1 - x0) * b, y0 + (y1 - y0) * b); } g.stroke(); };   // dashes as segments: canvas2svg has no setLineDash
@@ -1660,14 +1649,30 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (vx != null && vx <= xs.domain()[1]) { const x = Math.round(xs(vx)) + 0.5; dash(x, m.t, x, H - m.b); g.textAlign = 'center'; g.textBaseline = 'bottom'; g.fillText(`${f}%`, x, m.t - 5); }
     });
     g.restore();
-    for (const q of pts) { g.beginPath(); g.arc(xs(q.x), ys(q.y), q.c ? 4.3 : 2.5, 0, 2 * Math.PI); g.fillStyle = q.c ? clusterColor(q.c, k) : '#CDD3DB'; g.fill(); if (q.c) { g.lineWidth = 0.7; g.strokeStyle = '#fff'; g.stroke(); } }
+    const rad = (q) => (per ? 2.2 + 8 * Math.min(1, (q.t.avg || 0) / 0.8) : q.c ? 4.3 : 2.5);
+    for (const q of pts) { g.beginPath(); g.arc(xs(q.x), ys(q.y), rad(q), 0, 2 * Math.PI); g.fillStyle = q.c ? clusterColor(q.c, k) : '#CDD3DB';
+      g.globalAlpha = per ? (q.c ? 0.8 : 0.4) : 1; g.fill(); g.globalAlpha = 1; if (q.c || per) { g.lineWidth = 0.7; g.strokeStyle = '#fff'; g.stroke(); } }
+    if (per) {   // label the top partners where a label fits, never on a cutoff label or another label
+      const placed = [], shown = [];
+      [10, 5, 1].forEach((f, j) => { const vy = FPR[yK] && FPR[yK][j], vx = FPR[xK] && FPR[xK][j];
+        if (vy != null) placed.push([W - m.r - 118, ys(vy) - 15, W - m.r, ys(vy)]); if (vx != null) placed.push([xs(vx) - 16, 0, xs(vx) + 16, m.t]); });
+      g.font = '600 11.5px "IBM Plex Sans", system-ui, sans-serif';
+      for (const q of [...pts].sort((a, b) => (b.t.best || 0) - (a.t.best || 0)).slice(0, 10)) {
+        const cx = xs(q.x), cy = ys(q.y), rr = rad(q), name = gname(q.t.id), w = g.measureText(name).width + 4, h = 13;
+        for (const [tx, ty, anchor] of [[cx + rr + 4, cy + 4, 'left'], [cx - rr - 4, cy + 4, 'right'], [cx, cy - rr - 5, 'center'], [cx, cy + rr + 13, 'center']]) {
+          const bx = anchor === 'left' ? tx : anchor === 'right' ? tx - w : tx - w / 2, box = [bx, ty - h + 2, bx + w, ty + 3];
+          if (box[0] < m.l || box[2] > W - m.r || box[1] < m.t - 2 || box[3] > H - m.b) continue;
+          if (placed.some((o) => box[0] < o[2] && box[2] > o[0] && box[1] < o[3] && box[3] > o[1])) continue;
+          placed.push(box); shown.push([name, tx, ty, anchor]); break; } }
+      for (const [name, tx, ty, anchor] of shown) { g.textAlign = anchor; g.textBaseline = 'alphabetic'; g.lineWidth = 3; g.strokeStyle = 'rgba(255,255,255,0.92)'; g.strokeText(name, tx, ty); g.fillStyle = '#17263A'; g.fillText(name, tx, ty); }
+    }
     const find = $('#sc-find').value.trim().toLowerCase();
     if (find) {
       const gl = (p) => gname(p.id).toLowerCase(), hit = B.partners.find((p) => gl(p) === find) || B.partners.find((p) => gl(p).startsWith(find)) || B.partners.find((p) => gl(p).includes(find));
       $('#sc-find').classList.toggle('nf', !hit);
-      if (hit) for (const q of pts.filter((q) => q.p.partner === hit.id)) { const x = xs(q.x), y = ys(q.y);
+      if (hit) for (const q of pts.filter((q) => (q.t ? q.t.id : q.p.partner) === hit.id)) { const x = xs(q.x), y = ys(q.y);
         g.beginPath(); g.arc(x, y, 8.5, 0, 2 * Math.PI); g.lineWidth = 2.5; g.strokeStyle = '#17263A'; g.stroke();
-        g.font = '600 12px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'alphabetic'; g.lineWidth = 3; g.strokeStyle = 'rgba(255,255,255,0.92)'; const t = `${gname(hit.id)} (R${q.p.rank})`;
+        g.font = '600 12px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'alphabetic'; g.lineWidth = 3; g.strokeStyle = 'rgba(255,255,255,0.92)'; const t = per ? gname(hit.id) : `${gname(hit.id)} (R${q.p.rank})`;
         g.strokeText(t, x, y - 13); g.fillStyle = '#17263A'; g.fillText(t, x, y - 13); }
     } else $('#sc-find').classList.remove('nf');
     const qt = d3.quadtree(pts, (q) => xs(q.x), (q) => ys(q.y));
@@ -1675,57 +1680,22 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const fmtM = (key, v) => (Number.isFinite(v) ? (['iLIA', 'iLISA', 'LIA', 'cLIA', 'qPl', 'pPl'].includes(key) ? v.toFixed(1) : v.toFixed(3)) : '–');
     cv.onmousemove = (e) => { const q = near(e); if (!q) { cv.style.cursor = ''; return hideTip(); } cv.style.cursor = 'pointer'; const p = q.p;
       const keys = [...new Set(['iLIS', 'iLISA', 'iLIA', 'ipTM', yK, xK])].filter((x) => x !== '_rank' && present.includes(x));
-      showTip(`<b>${esc(gname(p.partner))}</b> · ${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
+      showTip(`<b>${esc(gname(p.partner))}</b> · ${per ? `best of ${fmtInt(q.t.counted.length)} model${q.t.counted.length === 1 ? '' : 's'} (${esc(runLabel(sp, B, p.run, P))}, rank ${p.rank}) · iLIS average ${fmtNum(q.t.avg, 3)}` : `${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}`}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const q = near(e); if (!q) return; hideTip(); location.hash = `#/${sp.id}/${P.key}/${q.p.partner}${scopeQ}`; };
     const r1 = pearson(pts.map((q) => q.x), pts.map((q) => q.y)), rho = spearman(pts.map((q) => q.x), pts.map((q) => q.y));
-    $('#sc-rho').textContent = `${Number.isFinite(r1) ? `Pearson r = ${r1.toFixed(3)} · ` : ''}${Number.isFinite(rho) ? `Spearman ρ = ${rho.toFixed(3)} ` : ''}(n = ${fmtInt(pts.length)})`;
+    $('#sc-rho').textContent = `${fmtInt(pts.length)} ${per ? 'partners, the best model of each pair' : mode === 'rank1' ? 'predictions; rank-1 models colored by cluster' : 'predictions'} · ${Number.isFinite(r1) ? `Pearson r = ${r1.toFixed(3)} · ` : ''}${Number.isFinite(rho) ? `Spearman ρ = ${rho.toFixed(3)}` : ''}`;
     const cnt = {}; let other = 0; for (const q of pts) q.c ? (cnt[q.c] = (cnt[q.c] || 0) + 1) : other++;
-    $('#sc-legend').innerHTML = Object.keys(cnt).map(Number).sort((a, b) => a - b).map((c) => `<span><i style="background:${clusterColor(c, k)};border-radius:50%"></i>cluster ${c} (${cnt[c]})</span>`).join('')
-      + `<span><i style="background:#CDD3DB;border-radius:50%"></i>other predictions (${fmtInt(other)})</span>`;
-    attachExport('scatter-canvas', `atlas_${P.gene}_scatter`, drawScatter);
+    const unit = per ? 'partners' : 'predictions';
+    $('#sc-legend').innerHTML = (per ? '<span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span>' : '')
+      + Object.keys(cnt).map(Number).sort((a, b) => a - b).map((c) => `<span><i style="background:${clusterColor(c, k)};border-radius:50%"></i>${clusterLabel(c)} (${cnt[c]})</span>`).join('')
+      + `<span><i style="background:#CDD3DB;border-radius:50%"></i>not clustered (${fmtInt(other)} ${unit})</span>`;
+    attachExport('scatter-canvas', `atlas_${P.gene}_partners`, drawScatter);
   }
 
-  /* overview: iLIS × ipTM for every partner (best model of any screen), dot size = iLIS average, color = cluster */
-  function drawOverview() {
-    const host = $('#scat'); if (!host) return;
-    const list = B.partners.map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 }));
-    $('#sc-sub').textContent = `${fmtInt(list.length)} partners · best model of each pair`;
-    const W = host.clientWidth, H = 400, m = { l: 48, r: 14, t: 26, b: 42 };
-    const x = d3.scaleLinear([0, 1], [m.l, W - m.r]), y = d3.scaleLinear([0, 1], [H - m.b, m.t]), rad = (v) => 2.2 + 8 * Math.min(1, v / 0.8);   // both scores span 0–1: room above the top partners for their labels
-    host.innerHTML = '';
-    const svg = d3.select(host).append('svg').attr('width', W).attr('height', H);
-    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(5));
-    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5));
-    svg.selectAll('.tick text').attr('font-family', 'IBM Plex Mono').attr('fill', '#6B7A8D'); svg.selectAll('.domain, .tick line').attr('stroke', '#D5DDE6');
-    svg.append('text').attr('x', (m.l + W - m.r) / 2).attr('y', H - 6).attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', '#34445A').text('ipTM (best model)');
-    svg.append('text').attr('transform', `translate(13,${(m.t + H - m.b) / 2}) rotate(-90)`).attr('text-anchor', 'middle').attr('font-size', 12).attr('fill', '#34445A').text('iLIS (best model)');
-    [10, 5, 1].forEach((f, j) => {   // benchmarked cutoffs: iLIS across, ipTM down
-      const v = FPR.iLIS[j], u = FPR.ipTM[j];
-      svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', BAND[f]).attr('stroke-dasharray', '4 4').attr('opacity', 0.7);
-      svg.append('text').attr('x', W - m.r - 2).attr('y', y(v) - 4).attr('text-anchor', 'end').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', BAND[f]).text(`${f}% FPR`);
-      svg.append('line').attr('x1', x(u)).attr('x2', x(u)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', BAND[f]).attr('stroke-dasharray', '2 5').attr('opacity', 0.55);
-      svg.append('text').attr('x', x(u)).attr('y', m.t - 8).attr('text-anchor', 'middle').attr('font-size', 10).attr('font-family', 'IBM Plex Mono').attr('fill', BAND[f]).text(`${f}%`);
-    });
-    const k = M ? M.k : 1, color = (p) => (p.c ? clusterColor(p.c, k) : '#B7C2CE');
-    const pts = [...list].sort((a, b) => (a.c ? 1 : 0) - (b.c ? 1 : 0) || a.best - b.best);
-    svg.append('g').selectAll('circle').data(pts).join('circle').attr('cx', (p) => x(p.iptmBest)).attr('cy', (p) => y(p.best)).attr('r', (p) => rad(p.avg))
-      .attr('fill', color).attr('fill-opacity', (p) => (p.c ? 0.8 : 0.35)).attr('stroke', '#fff').attr('stroke-width', 0.8).style('cursor', 'pointer')
-      .on('mousemove', (ev, p) => showTip(`<b>${esc(p.gene)}</b> · iLIS ${p.best.toFixed(3)} (avg ${p.avg.toFixed(3)}) · iLISA ${p.ilisaBest.toFixed(1)} · ipTM ${p.iptmBest.toFixed(2)}${p.c ? ` · ${clusterLabel(p.c)}` : ''}<br>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}`, ev.clientX, ev.clientY))
-      .on('mouseleave', hideTip).on('click', (ev, p) => { hideTip(); location.hash = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`; });
-    const placed = [...[CUT[10], CUT[5], CUT[1]].map((v) => [W - m.r - 60, y(v) - 16, W - m.r, y(v)]),   // cutoff labels are taken
-      ...FPR.ipTM.map((u) => [x(u) - 16, 0, x(u) + 16, m.t])], labels = [];
-    for (const p of [...list].sort((a, b) => b.best - a.best).slice(0, 10)) {   // label the top partners where a label fits, never on another label
-      const cx = x(p.iptmBest), cy = y(p.best), rr = rad(p.avg), w = p.gene.length * 7 + 4, h = 13;
-      for (const [tx, ty, anchor] of [[cx + rr + 4, cy + 4, 'start'], [cx - rr - 4, cy + 4, 'end'], [cx, cy - rr - 5, 'middle'], [cx, cy + rr + 13, 'middle']]) {
-        const bx = anchor === 'start' ? tx : anchor === 'end' ? tx - w : tx - w / 2, box = [bx, ty - h + 2, bx + w, ty + 3];
-        if (box[0] < m.l || box[2] > W - m.r || box[1] < m.t - 2) continue;
-        if (placed.some((q) => box[0] < q[2] && box[2] > q[0] && box[1] < q[3] && box[3] > q[1])) continue;
-        placed.push(box); labels.push({ p, tx, ty, anchor }); break;
-      }
-    }
-    svg.append('g').selectAll('text').data(labels).join('text').attr('x', (d) => d.tx).attr('y', (d) => d.ty).attr('text-anchor', (d) => d.anchor)
-      .attr('font-size', 11.5).attr('font-weight', 600).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3).text((d) => d.p.gene);
+  /* top partners beside the scatter: the best model of each pair */
+  function drawTopList() {
+    const list = B.partners.filter((p) => p.id !== P.key && !p.rep).map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 })), k = M ? M.k : 1;
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
     $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
@@ -1733,7 +1703,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span></li>`; }).join('');
-    svgExport(host, `atlas_${P.gene}_partners`, () => $('svg', host));
   }
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
 
@@ -1844,10 +1813,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     svgExport($('#net-x'), `atlas_${P.gene}_network`, () => $('svg', netBox));
   }
 
-  drawOverview(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
+  drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
   loadStructure();
   cluster();
-  let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawOverview(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
+  let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
 }
 
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
