@@ -660,7 +660,7 @@ function resTicks(L, plotW, want) {
   if (L > 1) t.push(L); return t;
 }
 function drawTicks(g, ticks, y, xc, W) {   // xc(r): tick x for residue r; labels stay inside the canvas
-  g.save(); g.fillStyle = '#6B7A8D'; g.strokeStyle = '#B9C4CF'; g.lineWidth = 1; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace'; g.textBaseline = 'top'; g.textAlign = 'left';
+  g.save(); g.fillStyle = '#5A697C'; g.strokeStyle = '#B9C4CF'; g.lineWidth = 1; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace'; g.textBaseline = 'top'; g.textAlign = 'left';
   for (const r of ticks) { const x = Math.round(xc(r)) + 0.5, s = String(r), w = g.measureText(s).width;
     g.beginPath(); g.moveTo(x, y); g.lineTo(x, y + 4); g.stroke(); g.fillText(s, Math.max(1, Math.min(W - w - 1, x - w / 2)), y + 6); }
   g.restore();
@@ -679,7 +679,7 @@ function drawIfaceTracks(cv, tracks) {
   for (const t of tracks) {
     const L = t.len, bw = Math.max(1.3, (W - 2 * pad) / L), name = t.label || t.gene;
     g.font = '600 13.5px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = t.col.clir; g.textBaseline = 'alphabetic'; g.textAlign = 'left'; g.fillText(name, pad, y + 15);
-    const gw = g.measureText(name).width; g.font = '12px "IBM Plex Mono", ui-monospace, monospace'; g.fillStyle = '#6B7A8D';
+    const gw = g.measureText(name).width; g.font = '12px "IBM Plex Mono", ui-monospace, monospace'; g.fillStyle = '#5A697C';
     const extent = t.span ? `residues ${fmtInt(t.span[0])}–${fmtInt(t.span[1])} of ${fmtInt(L)}` : t.own ? `${fmtInt(L)} aa construct, its own numbering` : `${fmtInt(L)} aa`;
     g.fillText(`${extent} · ${t.lir.length} interface · ${t.clir.length} contact`, pad + gw + 10, y + 15);
     y += 22;
@@ -787,7 +787,7 @@ function spearman(xs, ys) { const n = xs.length; if (n < 3) return NaN;
 function canvasAxes(g, xs, ys, m, W, H, xTitle, yTitle) {
   g.save(); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1;
   g.beginPath(); g.moveTo(m.l + 0.5, m.t); g.lineTo(m.l + 0.5, H - m.b + 0.5); g.lineTo(W - m.r, H - m.b + 0.5); g.stroke();
-  g.fillStyle = '#6B7A8D'; g.font = '11px "IBM Plex Mono", ui-monospace, monospace';
+  g.fillStyle = '#5A697C'; g.font = '11px "IBM Plex Mono", ui-monospace, monospace';
   const xt = xs.ticks(Math.max(3, Math.floor((W - m.l - m.r) / 110))), xf = xs.tickFormat(xt.length);
   g.textAlign = 'center'; g.textBaseline = 'top';
   for (const t of xt) { const x = Math.round(xs(t)) + 0.5; g.beginPath(); g.moveTo(x, H - m.b); g.lineTo(x, H - m.b + 5); g.stroke(); g.fillText(xf(t), x, H - m.b + 8); }
@@ -885,7 +885,7 @@ async function showcase() {
       g.fillStyle = clusterColor(c, s.k); g.fillRect(0, y, X0 - 4, hh);
       g.fillStyle = '#08306B'; for (const r of res) g.fillRect(x(r), y, Math.max(1, bw), hh); });
     g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.strokeRect(X0 + 0.5, y0 + 0.5, W - X0 - 1, PH - 1);
-    g.fillStyle = '#8593A5'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textBaseline = 'alphabetic';
+    g.fillStyle = '#627085'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textBaseline = 'alphabetic';
     g.textAlign = 'left'; g.fillText('1', X0, H - 3); g.textAlign = 'right'; g.fillText(fmtInt(L), W, H - 3);
   };
   const show = (k, user) => {
@@ -1387,7 +1387,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const pTop = fBase + 18, pH = 46, pBase = pl ? pTop + pH : fBase, aTop = pBase + 18, aH = 42, aBase = am ? aTop + aH : pBase, H = aBase + 26;
     const g = canvasCtx(cv, W, H);
     const yLabel = (text, y0, y1, color) => { g.save(); g.translate(13, (y0 + y1) / 2); g.rotate(-Math.PI / 2); g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = color; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.fillText(text, 0, 0); g.restore(); };
-    const yTicks = (vals, fmt, yOf) => { g.fillStyle = '#6B7A8D'; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace'; g.textAlign = 'right'; g.textBaseline = 'middle'; for (const v of vals) g.fillText(fmt(v), AXL - 6, yOf(v)); };
+    const yTicks = (vals, fmt, yOf) => { g.fillStyle = '#5A697C'; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace'; g.textAlign = 'right'; g.textBaseline = 'middle'; for (const v of vals) g.fillText(fmt(v), AXL - 6, yOf(v)); };
     const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
     for (const d of doms) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = 4 + d.lane * DRH;   // domains D1, D2 … (names in the legend), as LIVIA cLIP
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, y + 0.3, x1 - x0 - 0.6, 11.4);
@@ -1489,13 +1489,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const nL = doms.length ? lanes(doms, (d) => xOf(Math.max(1, d.s)), (d) => Math.max(xOf(Math.max(1, d.s)) + 2, xOf(Math.min(L, d.e) + 1))) : 0;
     const DRH = 15, LH = sites.length > 14 ? 14 : 20, top = 4 + nL * DRH + (nL ? 6 : 0), H = top + sites.length * LH + 26, g = canvasCtx(cv, W, H), one = !allOn();
     for (const d of doms) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = 4 + d.lane * DRH;
-      g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.fillStyle = '#51607A'; g.font = '10px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle';
+      g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.fillStyle = '#4A596F'; g.font = '10px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle';
       if (x1 - x0 > 18) g.fillText('D' + d.idx, x0 + 3, y + 6.5); }
     sites.forEach((st, j) => { const y = top + j * LH, col = clusterColor(st.c, M.k);
       g.fillStyle = '#F3F6F9'; g.fillRect(AXL, y + 3, W - AXL - AXR, LH - 6);
       if (one && ACTIVE.has(st.c)) { g.strokeStyle = '#E67E22'; g.lineWidth = 1.5; g.strokeRect(AXL - 0.5, y + 2.5, W - AXL - AXR + 1, LH - 5); }
       g.globalAlpha = one && !ACTIVE.has(st.c) ? 0.35 : 1;
-      g.fillStyle = '#51607A'; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'right'; g.fillText(clusterLabel(st.c), AXL - 8, y + LH / 2);
+      g.fillStyle = '#4A596F'; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'right'; g.fillText(clusterLabel(st.c), AXL - 8, y + LH / 2);
       g.textAlign = 'left';
       const dim = one && !ACTIVE.has(st.c) ? 0.35 : 1;
       for (const [r, h] of st.hits) { if (r < 1 || r > L) continue; const f = h / st.n; g.fillStyle = col; g.globalAlpha = dim * (f >= SITE_FRAC ? 1 : 0.12 + 0.5 * f / SITE_FRAC); g.fillRect(xOf(r), y + 3, Math.max(1, bw), LH - 6); }
@@ -1775,7 +1775,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const pos = (v) => ((v - CUT[10]) / (0.85 - CUT[10]) * 100).toFixed(1) + '%';
     $('#net-gl').innerHTML = [[CUT[10], '0.223'], [CUT[5], '0.339'], [CUT[1], '0.551'], [0.85, '0.85+']].map(([v, l]) => `<span style="left:${pos(v)}">${l}</span>`).join('');
     const w = d3.select('#net-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
-      w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#6B7A8D').text(a.toFixed(1)); }); }
+      w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
   io.observe(netBox);
   $('#net-n').onchange = drawNet; $('#net-cut').onchange = drawNet;
