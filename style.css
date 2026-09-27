@@ -222,7 +222,10 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .subnav button:hover { background: var(--blue-soft); color: var(--blue); }
 .subnav button:focus-visible { outline: 2px solid var(--blue); }
 .subnav button.on, .subnav button.on:hover { background: #1A5276; color: #fff; }   /* the section in view, as LIVIA's section bar */
-.clip-ctl { display: flex; align-items: center; gap: 10px; }
+.clip-ctl { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 8px 10px; margin-left: auto; }   /* stays right when the head wraps */
+.clip-ctl > span, .clip-ctl .ctl, .clip-ctl .seg button { white-space: nowrap; }
+.clip-ctl input[type=number] { font: 13px var(--sans); width: 70px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink); }
+.res-look { margin: -4px 0 10px; font-size: 13.5px; line-height: 1.55; color: var(--ink-2); border-left: 3px solid var(--ink); padding: 2px 0 2px 10px; }
 .explain { color: var(--ink-2); font-size: 13.5px; margin: 12px 0 0; }
 .cl-chips { margin: 8px 0 10px; gap: 6px; }
 .cl-chips:empty { display: none; }
