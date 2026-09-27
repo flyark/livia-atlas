@@ -198,7 +198,7 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
     for (const v of viruses) for (const i of v.members) rows[i].virus = v;
   }
   return { id, reg, base, manifest, rows, byKey, byName, byGene, keys, viruses, dsIds, dsShort: manifest.datasets.map((d) => d.short),
-    dsColor: regs.map((r) => (r && r.color) || '#5B6B7F'), edges: null, cache: new Map() };
+    dsColor: regs.map((r) => (r && r.color) || '#5B6B7F'), one: regs.every((r) => r && r.models === 1), edges: null, cache: new Map() };   // one: one model per pair, so best = average
 }
 // Pairs reported in BioGRID among a species' proteins, from data/species/<sp>/biogrid.tsv on the site: row numbers of the
 // species index and the number of publications reporting a physical and a genetic interaction. The file names the index it
@@ -884,7 +884,7 @@ function canvasAxes(g, xs, ys, m, W, H, xTitle, yTitle) {
 /* ── views ───────────────────────────────────────────────────────────────────────────────────────────── */
 const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: ['arm', 'dsh', 'Ras85D', 'N', 'yki', 'Akt'],   // example proteins on the home page
   zebrafish: ['ksr1a', 'map3k7'], yeast: ['PRR2', 'YAK1'], worm: ['ksr-1', 'par-1'],
-  virus: [['Herpes simplex virus 1', 'taxon/10299'], ['Influenza A virus', 'taxon/211044?cut=5'], ['Mpox virus', 'taxon/619591']] };   // viruses open their network page (influenza's polymerase shows at 5% FPR)
+  virus: [['Herpes simplex virus 1', 'taxon/10299'], ['Epstein-Barr virus', 'taxon/10377'], ['Poliovirus', 'taxon/12081'], ['Mpox virus', 'taxon/619591']] };   // viruses open their network page; each shows reported complexes at the default 1% FPR
 async function viewHome() {
   // Totals come from the species manifests alone; the species indexes (search) load once the page is idle.
   const gen = ROUTE, reg = await registry(), all = await Promise.all((reg.species || []).map((x) => speciesManifest(x.id)));
@@ -1353,7 +1353,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
       <div class="netkey"><div class="kbkey" id="net-kbkey"></div>
-        <div><span>Edge width · average iLIS</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
+        <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
       <div class="legend" id="net-legend"></div><div id="net-x"></div></div>
     <div class="card" id="c-pt"><div class="card-head"><h2>Partners <span class="muted" id="pt-note"></span></h2>
       <div class="controls" style="margin:0"><select id="pt-src" aria-label="Which screens"><option value="0">all screens</option>${sp.dsIds.map((_, di) => (P.src & (1 << di) ? `<option value="${1 << di}">${esc(sp.dsShort[di])}</option>` : '')).join('')}</select>
@@ -1438,6 +1438,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (SET || ISO) {   // the tiles count what the page shows
     const others = B.partners.filter((x) => x.id !== P.key && !x.rep), cnt = (c) => others.filter((x) => x.best >= c).length;
     $('#kp-all').textContent = fmtInt(others.length); $('#kp-10').textContent = fmtInt(cnt(CUT[10])); $('#kp-5').textContent = fmtInt(cnt(CUT[5])); $('#kp-1').textContent = fmtInt(cnt(CUT[1]));
+  }
+  // One model per pair (the viral release, or a page whose screens folded one model): best = average, so one value is shown
+  const ONE = sp.one || B.partners.every((x) => x.counted.length <= 1);
+  if (ONE) {
+    $('#c-partners .card-head .muted').textContent = 'each partner, one model per pair'; $('#sc-pts').closest('label').style.display = 'none';
+    $('#c-partners h3 .muted').textContent = 'by iLIS';
+    $('.tl-head').innerHTML = '<span></span><span>Partner</span><span>Cluster</span><span>iLIS</span><span>ipTM</span>';
+    $('.tl-head').classList.add('one'); $('#toplist').classList.add('one');
   }
   const refSeq = await seqOf(sp, P, B);   // the reference sequence (UniProt; FlyBase for fly)
   if (gone()) return;
@@ -1972,7 +1980,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : [Math.min(0, d3.min(vs) ?? 0), Math.max(1e-6, (d3.max(vs) ?? 1) * 1.04)]);
     const xs = d3.scaleLinear(dom(xK, pts.map((q) => q.x)), [m.l, W - m.r]).nice(), ys = d3.scaleLinear(dom(yK, pts.map((q) => q.y)), [H - m.b, m.t]).nice();
     const g = canvasCtx(cv, W, H);
-    const title = (key) => (key === '_rank' ? `global rank (by ${METRICS[rankBy]})` : METRICS[key] + (per ? ' (best model)' : ''));
+    const title = (key) => (key === '_rank' ? `global rank (by ${METRICS[rankBy]})` : METRICS[key] + (per && !ONE ? ' (best model)' : ''));
     canvasAxes(g, xs, ys, m, W, H, title(xK), title(yK));
     g.save(); g.lineWidth = 1; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace';
     const dash = (x0, y0, x1, y1) => { const L = Math.hypot(x1 - x0, y1 - y0); g.beginPath(); for (let t = 0; t < L; t += 8) { const a = t / L, b = Math.min(L, t + 4) / L; g.moveTo(x0 + (x1 - x0) * a, y0 + (y1 - y0) * a); g.lineTo(x0 + (x1 - x0) * b, y0 + (y1 - y0) * b); } g.stroke(); };   // dashes as segments: canvas2svg has no setLineDash
@@ -2018,16 +2026,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const fmtM = (key, v) => (Number.isFinite(v) ? (['iLIA', 'iLISA', 'LIA', 'cLIA', 'qPl', 'pPl'].includes(key) ? v.toFixed(1) : v.toFixed(3)) : '–');
     cv.onmousemove = (e) => { const q = near(e); if (!q) { cv.style.cursor = ''; return hideTip(); } cv.style.cursor = 'pointer'; const p = q.p;
       const keys = [...new Set(['iLIS', 'iLISA', 'iLIA', 'ipTM', yK, xK])].filter((x) => x !== '_rank' && present.includes(x));
-      showTip(`<b>${esc(gname(p.partner))}</b> · ${per ? `best of ${fmtInt(q.t.counted.length)} model${q.t.counted.length === 1 ? '' : 's'} (${esc(runLabel(sp, B, p.run, P))}, rank ${p.rank}) · iLIS average ${fmtNum(q.t.avg, 3)}` : `${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}`}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
+      showTip(`<b>${esc(gname(p.partner))}</b> · ${per && !ONE ? `best of ${fmtInt(q.t.counted.length)} model${q.t.counted.length === 1 ? '' : 's'} (${esc(runLabel(sp, B, p.run, P))}, rank ${p.rank}) · iLIS average ${fmtNum(q.t.avg, 3)}` : `${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}`}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const q = near(e); if (!q) return; hideTip(); location.hash = `#/${sp.id}/${P.key}/${q.p.partner}${scopeQ}`; };
     const r1 = pearson(pts.map((q) => q.x), pts.map((q) => q.y)), rho = spearman(pts.map((q) => q.x), pts.map((q) => q.y));
     { const d = $('#sc-def'), used = [xK, yK].some((x) => x === 'iLISA' || x === 'iLIA'); d.hidden = !used;
       if (used) d.textContent = 'iLISA = iLIS × iLIA; iLIA = √(LIA × cLIA), where LIA and cLIA count the residue pairs that enter LIS and cLIS'; }
-    $('#sc-rho').textContent = `${fmtInt(pts.length)} ${per ? 'partners, the best model of each pair' : mode === 'rank1' ? 'predictions; rank-1 models colored by cluster' : 'predictions'} · ${Number.isFinite(r1) ? `Pearson r = ${r1.toFixed(3)} · ` : ''}${Number.isFinite(rho) ? `Spearman ρ = ${rho.toFixed(3)}` : ''}`;
+    $('#sc-rho').textContent = `${fmtInt(pts.length)} ${per ? (ONE ? 'partners, one model each' : 'partners, the best model of each pair') : mode === 'rank1' ? 'predictions; rank-1 models colored by cluster' : 'predictions'} · ${Number.isFinite(r1) ? `Pearson r = ${r1.toFixed(3)} · ` : ''}${Number.isFinite(rho) ? `Spearman ρ = ${rho.toFixed(3)}` : ''}`;
     const cnt = {}; let other = 0; for (const q of pts) q.c ? (cnt[q.c] = (cnt[q.c] || 0) + 1) : other++;
     const unit = per ? 'partners' : 'predictions';
-    $('#sc-legend').innerHTML = (per ? '<span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span>' : '')
+    $('#sc-legend').innerHTML = (per ? `<span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: ${ONE ? 'iLIS' : 'iLIS average over the models'}</span>` : '')
       + Object.keys(cnt).map(Number).sort((a, b) => a - b).map((c) => `<span><i style="background:${clusterColor(c, k)};border-radius:50%"></i>${clusterLabel(c)} (${cnt[c]})</span>`).join('')
       + `<span><i style="background:#CDD3DB;border-radius:50%"></i>not clustered (${fmtInt(other)} ${unit})</span>`
       + (KB ? `<label class="kb-toggle"><i class="kb-ring"></i>reported in BioGRID ${KB.release}, physical<select id="sc-known" aria-label="Which reported partners to ring">${[
@@ -2044,18 +2052,19 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const past = (p) => p.counted.filter((x) => x.iLIS >= CUT[10]).length / Math.max(1, p.counted.length);
     $('#toplist').innerHTML = [...list].sort((a, b) => past(b) - past(a) || b.avg - a.avg || b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
-      <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
-      <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
-      <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
-      <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span>
-      <span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span></li>`; }).join('');
+      <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, ONE ? 'iLIS' : 'iLIS best')}">${p.best.toFixed(3)}</span>
+      ${ONE ? '' : `<span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>`}
+      <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, ONE ? 'ipTM' : 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
+      ${ONE ? '' : `<span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span>`}
+      ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span>`}</li>`; }).join('');
   }
   reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
 
   /* partner table */
   const T = { sort: 'best', asc: false, page: 0, band: P.pos10 ? 10 : 0, filter: '', src: 0 };
-  const cols = [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
+  const cols = ONE ? [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS'], ['iptmBest', 'ipTM'], ['contacts', 'Contacts']]
+    : [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
   function drawTable() {
     let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length }; });
     if (T.src) list = list.filter((p) => (SETS ? p.sets.includes(T.src) : p.src & T.src));
@@ -2071,17 +2080,17 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best);
         return `<tr class="iso-sub"><td class="g">${esc(x.label)}</td><td>${c ? `<span class="mdot" style="background:${clusterColor(c, k)}"></span>${clusterLabel(c, true)}` : '<span class="muted">—</span>'}</td>
           <td></td><td class="nm">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND_TXT[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
-          <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td><td class="n v" style="color:${bandCol(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
-          <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td><td class="n">${fmtInt(x.contacts)}</td><td class="n">${x.pass} / ${x.n}</td></tr>`; }).join('') : '';
+          ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td>`}<td class="n v" style="color:${bandCol(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
+          ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td>`}<td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
       const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
       return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         <td class="srcc">${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
         <td class="n v" style="color:${BAND_TXT[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
-        <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>
+        ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>`}
         <td class="n v" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
-        <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>
-        <td class="n">${fmtInt(p.contacts)}</td><td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td></tr>${subs}`; }).join('')}</tbody>`;
+        ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>`}
+        <td class="n">${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td>`}</tr>${subs}`; }).join('')}</tbody>`;
     $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
     $('#pt').querySelectorAll('th').forEach((th) => th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : (c === 'gene' || c === 'name' || c === 'c'); T.sort = c; drawTable(); });
     $('#pager').innerHTML = pages > 1 ? `<button class="btn" id="pp" ${T.page ? '' : 'disabled'}>Previous</button><span>Page ${T.page + 1} of ${pages}</span><button class="btn" id="pn" ${T.page < pages - 1 ? '' : 'disabled'}>Next</button>` : '';
@@ -2128,7 +2137,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // crimson pairs on top
       $('#net-kbkey').innerHTML = edgeKey(st, K, links); };
     restyle();
-    link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
+    link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS ${ONE ? d.best.toFixed(3) : `best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}`}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
     const r = (d) => (d.q ? 18 : 6 + Math.min(10, Math.sqrt(deg.get(d.id) || 1) * 1.6));
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
@@ -2146,7 +2155,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       $('#net-legend').innerHTML = (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '') + (homo.size ? homoKey(homo.size) : '');
     } };
     NET.recolor();
-    node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR` : `<b>${esc(d.row.gene)}</b> · iLIS best ${d.e.best.toFixed(3)} · average ${d.e.avg.toFixed(3)} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}`, ev.clientX, ev.clientY))
+    node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR` : `<b>${esc(d.row.gene)}</b> · iLIS ${ONE ? d.e.best.toFixed(3) : `best ${d.e.best.toFixed(3)} · average ${d.e.avg.toFixed(3)}`} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip)
       .on('click', (ev, d) => { if (!d.q && !ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}${scopeQ}`; });
     const q = nodes[0]; q.fx = W / 2; q.fy = H / 2;
@@ -2189,7 +2198,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   if (stale(gen)) return;
   const part = B.partners.find((p) => p.id === O.key);
   if (!part) { app.innerHTML = crumbs + `<div class="empty">${esc(P.gene)} and ${esc(O.gene)} were not predicted together${scope ? ` in ${esc(label)}. <a href="#/${sp.id}/${P.key}/${O.key}">Every screen</a>` : ' in these screens'}.</div>`; return; }
-  const best = [...part.preds].sort((a, b) => b.iLIS - a.iLIS)[0], b = bandOf(part.best), oLen = O.clen || part.preds[0].pLen;
+  const best = [...part.preds].sort((a, b) => b.iLIS - a.iLIS)[0], b = bandOf(part.best), oLen = O.clen || part.preds[0].pLen, one = part.counted.length <= 1;   // one model: best = average
   const who = (R, len, col) => `<div class="who"><b style="color:${col}">${esc(R.gene)}</b> <span>${esc(short(R.name) || '')}</span>
       <div class="ids">${R.acc ? uniprotLink(R.acc) : '<span>no UniProt entry</span>'}<span>${esc(R.id)}</span>${len ? `<span>${fmtInt(len)} aa</span>` : ''}</div></div>`;
   const num = (v, d) => `<td class="n">${fmtNum(v, d)}</td>`;
@@ -2199,9 +2208,9 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
         <div class="pairwho">${who(P, P.clen, 'var(--query-t)')}${who(O, oLen, 'var(--partner-t)')}</div>
         <div class="srcs">Predicted in ${part.sets.length ? setBadges(part.sets) : srcBadges(sp, part.src)}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`)}</div></div>
-      <div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS best · ${bandLabel[b]}</span></div><div class="kpi"><b>${part.ilisaBest.toFixed(1)}</b><span>iLISA best</span></div>
-        <div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>
-        <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM best · ${bandLabel[bandIn(FPR.ipTM, part.iptmBest)]}</span></div></div></div>
+      <div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${one ? '' : ' best'} · ${bandLabel[b]}</span></div><div class="kpi"><b>${part.ilisaBest.toFixed(1)}</b><span>iLISA${one ? '' : ' best'}</span></div>
+        ${one ? '' : `<div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>`}
+        <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM${one ? '' : ' best'} · ${bandLabel[bandIn(FPR.ipTM, part.iptmBest)]}</span></div></div></div>
     <div class="card"><div class="card-head"><h2>Ranked models</h2><span class="muted">every model of every screen · rank = the prediction's own model order, ipTM-based, not the iLIS order · click one to show its interface${part.preds.some((p) => p.rep) ? ' · a repeat folded the same two sequences again: listed, not counted' : ''}</span></div>
       <div class="tbl-wrap"><table class="pt models"><thead>
         <tr><th rowspan="2">Source</th><th rowspan="2" title="The model's rank within its prediction: the predictor's own ipTM-based order, not the iLIS order">Rank</th><th rowspan="2" class="n">iLIS</th><th rowspan="2" class="n">iLISA</th><th rowspan="2" class="n">ipTM</th><th rowspan="2" class="n">LIS</th><th rowspan="2" class="n">cLIS</th>
@@ -2307,7 +2316,7 @@ async function viewVirus(spId, taxid) {
       return `<tr><td class="g"><a href="#/${sp.id}/${R(x.a).key}">${esc(R(x.a).gene)}</a></td><td class="g">${x.a === x.b ? '<span class="muted" title="homodimer: the protein with itself">self</span>' : `<a href="#/${sp.id}/${R(x.b).key}">${esc(R(x.b).gene)}</a>`}</td>
         <td><a href="${pairHref(x)}" title="interface residues">residues</a></td>
         <td>${x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>` : '<span class="muted" title="not displayed by the AlphaFold Database (below its filter); the structure opens from the release archive once it is indexed">—</span>'}</td>
-        ${MCOL.map((k) => (k === 'iLIS' ? `<td class="n v"><a href="${pairHref(x)}" style="color:${BAND[b]}">${mfmt(k, x.m[k])}</a></td>` : k === 'ipTM' ? `<td class="n v" style="color:${bandCol(FPR.ipTM, x.m[k])}">${mfmt(k, x.m[k])}</td>` : `<td class="n">${mfmt(k, x.m[k])}</td>`)).join('')}</tr>`; }).join('')}</tbody>`;
+        ${MCOL.map((k) => (k === 'iLIS' ? `<td class="n v"><a href="${pairHref(x)}" style="color:${BAND_TXT[b]}">${mfmt(k, x.m[k])}</a></td>` : k === 'ipTM' ? `<td class="n v" style="color:${bandCol(FPR.ipTM, x.m[k])}">${mfmt(k, x.m[k])}</td>` : `<td class="n">${mfmt(k, x.m[k])}</td>`)).join('')}</tr>`; }).join('')}</tbody>`;
     $('#vp').querySelectorAll('th[data-k]').forEach((th) => th.onclick = () => { const k = th.dataset.k; if (k === sortKey) sortAsc = !sortAsc; else { sortKey = k; sortAsc = false; } tables(); });
     $('#vp-more').innerHTML = P.length > shownPairs ? `<button class="more" type="button">show ${fmtInt(Math.min(200, P.length - shownPairs))} more</button>` : '';
     const mb = $('#vp-more button'); if (mb) mb.onclick = () => { shownPairs += 200; tables(); };
@@ -2408,7 +2417,7 @@ async function viewNetwork(spId, q) {
       <p class="muted" style="margin:2px 0 12px">Your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} are large and dark, added partners small and light. Click a protein for its page, an edge for the interface residues of the pair. Drag to move, scroll to zoom.</p>
       <div class="net" id="nw-net"></div>
       <div class="netkey"><div class="kbkey" id="nw-key"></div>
-        <div><span>Edge width · average iLIS</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
+        <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
   $('#nw-add').value = S.add;
   const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top'; }; showK(); $('#nw-add').onchange = showK;
   $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); };
@@ -2467,7 +2476,7 @@ async function viewNetwork(spId, q) {
     restyle();
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
-    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interface residues`, ev.clientX, ev.clientY); })
+    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interface residues`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; });
     dash.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${CUT[S.cut]}; click for the pair's predictions`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}`; });
@@ -2547,3 +2556,19 @@ async function route() {
 }
 window.addEventListener('hashchange', route);
 route();
+// Column headers stay in view while a long table scrolls under the page header (and a protein page's section bar). The
+// wrapper scrolls sideways, which stops CSS sticky, so the header cells are moved down instead, never past the last row.
+{
+  let raf = 0;
+  const pin = () => {
+    raf = 0;
+    const line = Math.max(0, ...['.top', '.subnav'].map((q) => { const e = document.querySelector(q); return e ? e.getBoundingClientRect().bottom : 0; }));
+    for (const t of document.querySelectorAll('table.pt')) {
+      const r = t.getBoundingClientRect(), h = t.tHead ? t.tHead.offsetHeight : 0;
+      const y = h && r.top < line ? Math.max(0, Math.min(line - r.top, r.height - 2 * h)) : 0;
+      t.style.setProperty('--hy', `${y}px`); t.classList.toggle('pinned', y > 0);
+    }
+  };
+  const later = () => { if (!raf) raf = requestAnimationFrame(pin); };
+  addEventListener('scroll', later, { passive: true }); addEventListener('resize', later);
+}
