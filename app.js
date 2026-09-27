@@ -94,8 +94,9 @@ const primarySet = (tags) => (tags && tags.length ? tags.find((s) => s.type === 
 // A screen's per-protein files: in its folder, or — for a screen kept as one uncompressed zip (Zenodo) — one HTTP Range
 // read each, at the byte range the offsets map kept with the site gives. Never the whole archive.
 const OFFS = new Map();
-// Zenodo can answer slowly or stall. Each archive read shows in a status pill (which screen, how long, a note when slow),
-// times out after 45 s and is tried twice; then the pill says Zenodo did not answer, with a button to try again.
+// Zenodo can answer slowly or stall, and a large interactome takes seconds to cluster. Each archive read and each clustering
+// shows in a status pill (what, how long, a note when slow). A read times out after 45 s and is tried twice; then the pill
+// says Zenodo did not answer, with a button to try again (a clustering failure is reported on its card).
 const LOADS = new Map(); let LOADN = 0, LOADT = null, LOADFAIL = '';
 function loadBar() { let el = document.getElementById('loadbar'); if (!el) { el = document.createElement('div'); el.id = 'loadbar'; el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite'); el.hidden = true; document.body.appendChild(el); } return el; }
 function paintLoads() {
@@ -104,13 +105,17 @@ function paintLoads() {
     if (LOADFAIL) { el.hidden = false; el.className = 'fail'; el.innerHTML = `${esc(LOADFAIL)} <button type="button" id="loadbar-retry">Try again</button>`; $('#loadbar-retry').onclick = () => location.reload(); }
     else el.hidden = true;
     return; }
-  const sec = Math.round((Date.now() - Math.min(...list.map((x) => x.t0))) / 1000), what = [...new Set(list.map((x) => x.what))].join(', ');
-  el.hidden = false; el.className = sec >= 12 ? 'slow' : '';
-  el.innerHTML = `<span class="spin" aria-hidden="true"></span>Reading ${esc(what)} from Zenodo · ${sec} s${sec >= 12 ? '<br><small>Zenodo is answering slowly. The page fills in as soon as the data arrive.</small>' : ''}`;
+  const now = Date.now(), sec = Math.round((now - Math.min(...list.map((x) => x.t0))) / 1000);
+  const reads = [...new Set(list.filter((x) => x.kind === 'zenodo').map((x) => x.what))], tasks = [...new Set(list.filter((x) => x.kind !== 'zenodo').map((x) => x.what))];
+  const slowRead = list.some((x) => x.kind === 'zenodo' && now - x.t0 >= 12000), slowTask = list.some((x) => x.kind !== 'zenodo' && now - x.t0 >= 8000);
+  const text = [...(reads.length ? [`Reading ${reads.join(', ')} from Zenodo`] : []), ...tasks].join(' · ');
+  el.hidden = false; el.className = slowRead ? 'slow' : '';
+  el.innerHTML = `<span class="spin" aria-hidden="true"></span>${esc(text)} · ${sec} s${slowRead ? '<br><small>Zenodo is answering slowly. The page fills in as soon as the data arrive.</small>'
+    : slowTask ? '<br><small>A large interactome takes a little longer to cluster; the page fills in when it is done.</small>' : ''}`;
 }
-function trackLoad(what, job) {
-  const id = ++LOADN; LOADFAIL = ''; LOADS.set(id, { what, t0: Date.now() }); if (!LOADT) LOADT = setInterval(paintLoads, 1000); paintLoads();
-  return job.then((v) => { LOADS.delete(id); paintLoads(); return v; }, (e) => { LOADS.delete(id); LOADFAIL = e.message; paintLoads(); throw e; });
+function trackLoad(what, job, kind = 'zenodo') {   // kind 'zenodo': "Reading <what> from Zenodo"; any other kind: <what> as written
+  const id = ++LOADN; if (kind === 'zenodo') LOADFAIL = ''; LOADS.set(id, { what, kind, t0: Date.now() }); if (!LOADT) LOADT = setInterval(paintLoads, 1000); paintLoads();
+  return job.then((v) => { LOADS.delete(id); paintLoads(); return v; }, (e) => { LOADS.delete(id); if (kind === 'zenodo') LOADFAIL = e.message; paintLoads(); throw e; });
 }
 async function rangeRead(url, range) {   // → the bytes of one Range read, or null when the host did not answer 206
   for (let i = 1; ; i++) {
@@ -1326,7 +1331,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   async function cluster() {
     $('#clip-sub').textContent = 'Clustering…';
     let m = null, err = null;
-    try { m = await runClip(CQ.rows, B.qLabel, CUT[cut]); } catch (e) { err = e; }
+    try { m = await trackLoad(`Clustering ${P.gene}'s partners (${cut}% FPR)`, runClip(CQ.rows, B.qLabel, CUT[cut]), 'task'); } catch (e) { err = e; }
     if (gone()) return;
     M = m; if (err) $('#clip-sub').textContent = `Clustering failed: ${err.message}`;
     predCluster.clear(); partnerCluster.clear();
