@@ -87,10 +87,9 @@ a:hover { text-decoration: underline; }
 .crumbs { font-size: 13px; color: var(--ink-3); margin: 22px 0 10px; }
 .crumbs a { color: var(--ink-2); }
 .phead { display: flex; flex-wrap: wrap; gap: 18px 36px; align-items: flex-end; justify-content: space-between; margin-bottom: 18px; }
-.phead.vh > div:first-child { flex: 1 1 440px; min-width: 0; }
-.phead > .kpis { flex: 1 1 auto; justify-content: flex-end; } .phead > .kpis > .kpi { flex: 1 1 0; }   /* tiles fill their row: beside the title, or across the page when they wrap */   /* a virus page: the text gives way so the tiles stay beside it, on the right */
+.phead > .kpis { flex: 1 1 auto; justify-content: flex-end; } .phead > .kpis > .kpi { flex: 1 1 0; }   /* tiles fill their row: beside the title, or across the page when they wrap */
 .phead h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5vw, 52px); letter-spacing: -0.02em; line-height: 1; margin: 0; }
-.phead .pname { color: var(--ink-2); font-size: 15px; margin-top: 8px; max-width: 70ch; }
+.phead .pname { color: var(--ink-2); font-size: 15px; margin-top: 8px; }   /* a description runs the width it has */
 .phead .ids { font-family: var(--mono); font-size: 13px; color: var(--ink-3); margin-top: 6px; display: flex; gap: 14px; flex-wrap: wrap; }
 .kpis { display: flex; gap: 10px; flex-wrap: wrap; }
 .kpi { min-width: 96px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
@@ -500,4 +499,3 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .lede span.q { color: var(--query-t); font-weight: 700; }   /* the letters that spell cLIP */
 .cite-link { font: 500 13px var(--sans); color: var(--ink-3); background: none; border: 0; padding: 6px 4px; cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; align-self: center; }
 .cite-link:hover { color: var(--blue); }
-.phead.vh { align-items: flex-start; }   /* a virus page: the tiles sit level with the title */

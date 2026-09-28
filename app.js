@@ -1404,6 +1404,15 @@ function louvain(n, edges) {
   order.forEach(([i], rank) => { for (const x of member[i]) out[x] = rank; });
   return out;
 }
+// A network's labels in one layer drawn after every node, so no node covers a label; the query's label last. Returns
+// the function each tick calls to keep the labels on their nodes.
+function liftLabels(g, node) {
+  const layer = g.append('g').attr('class', 'net-labels').style('pointer-events', 'none'), wraps = [];
+  node.each(function (d) { const t = this.querySelector('text'); if (!t) return; const w = layer.append('g').datum(d).node(); w.appendChild(t); wraps.push(w); });
+  wraps.sort((a, b) => (d3.select(a).datum().q ? 1 : 0) - (d3.select(b).datum().q ? 1 : 0)).forEach((w) => layer.node().appendChild(w));
+  const ws = d3.selectAll(wraps);
+  return () => ws.attr('transform', (d) => `translate(${d.x},${d.y})`);
+}
 const EWID = (a) => 0.5 + 4.3 * Math.max(0, Math.min(1, a / 0.8));
 function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene symbol (exact case first), a CG number or an older name
   if (sp.byKey.has(q)) return sp.byKey.get(q);
@@ -2316,6 +2325,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 14 : 11)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', (d) => (d.q ? 4 : 3)).attr('stroke-linejoin', 'round');
     node.filter((d) => d.q).raise();
+    const placeLabels = liftLabels(g, node);
     NET = { link, restyle, recolor() {
       const k = M ? M.k : 1;
       circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
@@ -2330,7 +2340,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const R = Math.min(W, H) * 0.42;
     const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => (l.q ? R * (1.15 - 0.55 * Math.min(1, l.best)) : 60)).strength((l) => (l.q ? 0.5 : 0.35)))
       .force('charge', d3.forceManyBody().strength(-340)).force('collide', d3.forceCollide().radius((d) => r(d) + 14)).force('x', d3.forceX(W / 2).strength(0.04)).force('y', d3.forceY(H / 2).strength(0.05))
-      .on('tick', () => { for (const sel of [link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); for (const sel of [link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     let fitted = false;   // once the layout settles, zoom so every node and label fits the box (the zoom stays free afterwards)
     sim.on('end', () => { if (fitted) return; fitted = true;
       const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y);
@@ -2583,6 +2593,7 @@ async function viewVirus(spId, taxid) {
     const label = node.append('text').text((d) => lab(d.row)).attr('text-anchor', 'middle')
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', 600).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-linejoin', 'round');
+    const placeLabels = liftLabels(g, node);
     function relabel(z) {   // zoomed in, more labels; each at the same size on screen. About 40 labels at the fitted view of a large virus, every label for a small one
       const budget = nodes.length <= 60 ? Infinity : 40 * z * z / Math.max(0.2, fitK * fitK);
       label.attr('display', (d) => (rank.get(d.id) < budget ? null : 'none')).attr('font-size', 10.5 / z).attr('stroke-width', 3 / z).attr('dy', (d) => -r(d) - 5 / z);
@@ -2594,7 +2605,7 @@ async function viewVirus(spId, taxid) {
     const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => 60 + 60 * (1 - Math.min(1, l.best))).strength((l) => (grouped && !same(l) ? 0.02 : 0.5)))
       .force('charge', d3.forceManyBody().strength(nodes.length > 150 ? -90 : -200)).force('collide', d3.forceCollide().radius((d) => r(d) + 8))
       .force('x', d3.forceX((d) => home(d)[0]).strength((d) => (grouped && center.has(d.c) ? 0.4 : 0.07))).force('y', d3.forceY((d) => home(d)[1]).strength((d) => (grouped && center.has(d.c) ? 0.4 : 0.09)))
-      .on('tick', () => { link.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); link.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     let fitted = false;
     sim.on('end', () => { if (fitted) return; fitted = true; const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y), pad = 40;
       const x0 = Math.min(...xs) - pad, x1 = Math.max(...xs) + pad, y0 = Math.min(...ys) - pad - 12, y1 = Math.max(...ys) + pad, k = Math.min(2, W / (x1 - x0), H / (y1 - y0));
@@ -2715,11 +2726,12 @@ async function viewNetwork(spId, q) {
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 13 : 10.5)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3).attr('stroke-linejoin', 'round');
     node.filter((d) => d.q).raise();
+    const placeLabels = liftLabels(g, node);
     node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, d) => { if (!ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}`; });
     const sim = d3.forceSimulation(nodes).force('link', d3.forceLink([...links, ...extra]).id((d) => d.id).distance((l) => 70 + 60 * (1 - Math.min(1, l.best || 0))).strength((l) => (l.unpred ? 0 : 0.4)))
       .force('charge', d3.forceManyBody().strength(-260)).force('collide', d3.forceCollide().radius((d) => r(d) + 10)).force('x', d3.forceX(W / 2).strength(0.05)).force('y', d3.forceY(H / 2).strength(0.06))
-      .on('tick', () => { for (const sel of [dash, link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); for (const sel of [dash, link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     let fitted = false;   // once the layout settles, zoom so every node and label fits (the zoom stays free afterwards)
     sim.on('end', () => { if (fitted) return; fitted = true; const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y);
       const x0 = Math.min(...xs) - 48, x1 = Math.max(...xs) + 48, y0 = Math.min(...ys) - 34, y1 = Math.max(...ys) + 24, sc = Math.min(1.4, 0.96 * Math.min(W / (x1 - x0), H / (y1 - y0)));
