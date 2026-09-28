@@ -1240,7 +1240,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <label>show <select id="sc-pts"><option value="partner">one per partner (best model)</option><option value="all">every prediction</option><option value="rank1">rank-1 per pair</option></select></label>
           <input type="search" id="sc-find" list="sc-list" placeholder="Find partner" style="width:140px"><datalist id="sc-list"></datalist></div></div>
       <div class="overview"><div><div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="muted" id="sc-def" style="margin:-4px 0 8px" hidden></div><div class="plot" id="scat2"><canvas id="scatter-canvas"></canvas></div><div class="legend" id="sc-legend"></div></div>
-        <div><h3>Top partners <span class="muted">by iLIS of the best model</span></h3>
+        <div><h3>Top partners <span class="muted">by the share of models past the 10% cutoff, then average iLIS</span></h3>
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span><span title="models past the 10% FPR cutoff, of the pair's models">models<br>past</span></div>
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
@@ -1636,9 +1636,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const sites = sitesOf(), doms = qDomains(M.plen), K = sites.length, np = partnerCluster.size, big = sites[0], lanesOrder = [...sites].sort((a, b) => a.c - b.c);
     const names = (ps) => ps.map((x) => `<a href="#/${sp.id}/${P.key}/${x.key}${scopeQ}">${esc(gname(x.key))}</a>`);
     const andList = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
-    // the partners named as examples: most models past the cutoff first, then the average iLIS, so a pair past it in one
-    // model of three is not named before one past it in all
-    const PB = new Map(B.partners.map((x) => [x.id, x])), passN = (t) => (t ? t.counted.filter((p) => p.iLIS >= CUT[cut]).length : 0);
+    // the partners named as examples: the largest share of models past the cutoff first, then the average iLIS, so a pair
+    // past it in one model of three is not named before one past it in all (3 of 3 counts as 5 of 5)
+    const PB = new Map(B.partners.map((x) => [x.id, x])), passN = (t) => (t ? t.counted.filter((p) => p.iLIS >= CUT[cut]).length / Math.max(1, t.counted.length) : 0);
     const steady = (ps) => ps.map((x) => ({ ...x, pass: passN(PB.get(x.key)), avg: (PB.get(x.key) || {}).avg || 0 })).sort((a, b) => b.pass - a.pass || b.avg - a.avg || b.best - a.best);
     const where = (st) => { if (!st.foot.length) return 'no residue shared by 30% of its predictions';
       const r = stretches(st.ranges), dn = siteDomains(st, doms);
@@ -1672,7 +1672,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : `contacted in ${fmtInt(hit.length)} of ${fmtInt(M.preds.length)} predictions past the ${cut}% FPR cutoff, by ${fmtInt(best.size)} partner${best.size === 1 ? '' : 's'}`
         + `, in ${inS.map((x) => `<span style="color:${clusterColor(x.st.c, M.k)}">●</span> ${clusterLabel(x.st.c)} (${x.h} of ${x.st.n}${x.st.foot.includes(r) ? ', in its footprint' : ''})`).join(', ')}.`
         + ` Partners: ${shown.map(([k]) => `<a href="#/${sp.id}/${P.key}/${k}${scopeQ}">${esc(gname(k))}</a>`).join(', ')}${top.length > shown.length ? ` and ${top.length - shown.length} more` : ''}.`)
-      + ` <button class="more" type="button" id="res-copy">Copy link</button>`;
+      + ` <button class="more" type="button" id="res-copy">Copy link</button>`
+      + (RESV.mut ? `<span class="res-note">A contact in a prediction says where partners bind, not what the substitution does to them; the page does not predict its effect.</span>` : '');
     $('#res-copy').onclick = (e) => { navigator.clipboard && navigator.clipboard.writeText(location.href).then(() => { e.target.textContent = 'Copied'; }, () => {}); };
     if (!resScrolled) { resScrolled = true; $('#c-sites').scrollIntoView({ block: 'start' }); }
   }
@@ -1946,7 +1947,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function drawTopList() {
     const list = B.partners.filter((p) => p.id !== P.key && !p.rep).map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 })), k = M ? M.k : 1;
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
-    $('#toplist').innerHTML = [...list].sort((a, b) => b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
+    // the steadiest calls first: the share of a pair's models past the 10% cutoff (3 of 3 = 5 of 5, whatever the screen), then average iLIS
+    const past = (p) => p.counted.filter((x) => x.iLIS >= CUT[10]).length / Math.max(1, p.counted.length);
+    $('#toplist').innerHTML = [...list].sort((a, b) => past(b) - past(a) || b.avg - a.avg || b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
       <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
