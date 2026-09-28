@@ -473,7 +473,7 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .kbkey .kbrow { gap: 6px 14px; margin-top: 0; }
 .kbkey .kbrow span { display: inline-flex; align-items: center; gap: 6px; }
 .kbkey .kbrow i { display: inline-block; width: 26px; height: 4px; border-radius: 2px; }
-.kbkey .kbrow i.kb-dash { height: 0; border-top: 1.5px dashed #B3122E; border-radius: 0; }
+.kbkey .kbrow i.kb-dash { height: 0; border-top: 1.5px dashed #5B6573; border-radius: 0; }
 .kbkey .kbrow i.kb-grad { width: 70px; background: linear-gradient(90deg, #C5CCD4, #1E2A38); }
 
 #sites-answer a, .res-look a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in running text are not told apart by color alone */

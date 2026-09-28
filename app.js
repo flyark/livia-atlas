@@ -1217,24 +1217,34 @@ function stopClip() {   // leaving a page mid-clustering: drop its job, so the n
 }
 const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the fingerprint: dendrogram + cluster strip / y axis live in AXL
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
-// Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS in gray (light
-// at the 10% FPR cutoff, dark at 0.85 and above; off: one flat gray) and, when chosen, the pairs reported in BioGRID in crimson
-// (physical, genetic or either). Edge width is the average iLIS.
-const EGRAY = d3.scaleLinear().domain([CUT[10], 0.85]).range(['#C5CCD4', '#1E2A38']).clamp(true), EFLAT = '#9AA5B1', KB_RED = '#B3122E';
+// Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS on a color
+// scale the reader picks (light at the 10% FPR cutoff, dark at 0.85 and above; or one flat gray) and, when chosen, the
+// pairs reported in BioGRID colored by what was reported: physical red, genetic green, both purple. Edge width is the
+// average iLIS.
+const ESCALE = { gray: ['#C5CCD4', '#1E2A38'], blue: ['#C6DBEF', '#08306B'], brown: ['#E8D9C4', '#5B3A1A'] };
+const ESCALE_LBL = { gray: 'gray', blue: 'blue', brown: 'brown', flat: 'off (one gray)' };
+const EFLAT = '#9AA5B1', KB_COL = { p: '#C62828', g: '#2E7D32', pg: '#6A1B9A' };
+const escale = (k) => d3.scaleLinear().domain([CUT[10], 0.85]).range(ESCALE[k] || ESCALE.gray).clamp(true);
 const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');
 const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.pubs > 0 || d.gen > 0);
+const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
 const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
-const edgeCtl = (id) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above"><input type="checkbox" id="${id}-shade" checked> iLIS gray scale</label>
-  <label class="ctl" title="draw the pairs reported in BioGRID in crimson"><input type="checkbox" id="${id}-kb"> BioGRID in crimson</label><select id="${id}-ev" aria-label="Which BioGRID evidence" disabled>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
-function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a crimson (reported) one
-  const shade = $(`#${id}-shade`).checked, kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
-  return { shade, kb, ev, hit, color: (d) => (hit(d) ? KB_RED : shade ? EGRAY(d.best) : EFLAT) };
+const edgeCtl = (id) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above">iLIS scale<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
+  <label class="ctl" title="color the pairs reported in BioGRID: physical red, genetic green, both purple"><input type="checkbox" id="${id}-kb"> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence" disabled>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
+function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a reported one
+  const sc = $(`#${id}-shade`).value, shade = sc !== 'flat', ramp = escale(sc), kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
+  return { shade, sc, kb, ev, hit, color: (d) => (hit(d) ? kbCol(d) : shade ? ramp(d.best) : EFLAT) };
 }
-function edgeKey(st, K, links, extra = []) {   // the key under a network: the gray scale (or flat gray) and, when on, the crimson pairs
-  const base = st.shade ? '<span><i class="kb-grad"></i>best iLIS, 0.223 to 0.85+</span>' : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
+function edgeKey(st, K, links, extra = []) {   // the key under a network: the iLIS scale (or flat gray) and, when on, the reported pairs by type
+  const [lo, hi] = ESCALE[st.sc] || ESCALE.gray;
+  const base = st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>best iLIS, 0.223 to 0.85+</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
+  const on = links.filter((d) => kbHit(d, st.ev)), n = (f) => fmtInt(on.filter(f).length);
   const red = !K ? '<span class="muted">no BioGRID records for this species</span>'
-    : st.kb ? `<span><i style="background:${KB_RED}"></i>reported in BioGRID ${esc(K.release)}, ${KB_EV[st.ev]} (${fmtInt(links.filter((d) => kbHit(d, st.ev)).length)} of ${fmtInt(links.length)} pairs)</span>`
-      + (extra.length ? `<span><i class="kb-dash"></i>reported, not predicted (${fmtInt(extra.length)})</span>` : '') : '';
+    : st.kb ? `<span class="muted">reported in BioGRID ${esc(K.release)} (${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
+      + (st.ev !== 'g' ? `<span><i style="background:${KB_COL.p}"></i>physical (${n((d) => d.pubs > 0 && !(d.gen > 0))})</span>` : '')
+      + (st.ev !== 'p' ? `<span><i style="background:${KB_COL.g}"></i>genetic (${n((d) => d.gen > 0 && !(d.pubs > 0))})</span>` : '')
+      + `<span><i style="background:${KB_COL.pg}"></i>both (${n((d) => d.pubs > 0 && d.gen > 0)})</span>`
+      + (extra.length ? `<span><i class="kb-dash"></i>reported, not predicted, dashed in the same colors (${fmtInt(extra.length)})</span>` : '') : '';
   return `<span class="kbhead">Edge color</span><div class="kbrow">${base}${red}</div>`;
 }
 const EWID = (a) => 0.5 + 4.3 * Math.max(0, Math.min(1, a / 0.8));
@@ -2123,7 +2133,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round');
     link.filter((d) => !d.q).raise();
     const restyle = () => { const st = edgeStyle('net', K);   // recolor in place: no new layout
-      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // crimson pairs on top
+      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       $('#net-kbkey').innerHTML = edgeKey(st, K, links); };
     restyle();
     link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
@@ -2326,10 +2336,10 @@ async function viewNetwork(spId, q) {
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
     const r = (d) => (d.q ? 10 : 4) + Math.min(8, Math.sqrt(deg.get(d.id) || 0) * 1.4);
     const labeled = new Set(nodes.length <= 80 ? nodes.map((d) => d.id) : [...nodes.filter((d) => d.q), ...[...nodes].filter((d) => !d.q).sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0)).slice(0, 25)].map((d) => d.id));
-    const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', KB_RED).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
+    const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
-      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : 0.8)); link.filter(st.hit).raise();   // crimson pairs on top
+      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
       $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra); };
     restyle();
