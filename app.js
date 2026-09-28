@@ -989,8 +989,29 @@ async function viewDatasets() {
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Datasets</div>
     ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
-    <div class="datasets live-row">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>`;
-  fillDsStats(); fillThemes();
+    <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>`;
+  fillDsStats(); fillThemes(); setCards(gen, reg);
+}
+// A screen kept as a set inside a larger dataset (the fly kinase–kinase and kinase–TF screens in FlyPredictome) gets its
+// own card, placed after the other screens of its kind; it cites what they cite.
+async function setCards(gen, reg) {
+  for (const d of reg.datasets.filter((x) => x.status === 'live')) {
+    let TS; try { TS = await setsOf(await dataset(d.id)); } catch (e) { continue; }
+    if (stale(gen) || !TS) continue;
+    const spx = (reg.species || []).find((s) => s.id === d.species);
+    for (const s of TS.list.filter((x) => x.type === 'screen')) {
+      const box = $('#ds-cards'); if (!box || box.querySelector(`[data-set="${d.id}/${s.id}"]`)) continue;
+      const kin = reg.datasets.filter((x) => x.short === s.short && x.id !== d.id), cite = kin[0], k = s.counts || {};
+      const src = cite ? (cite.paper ? `<a href="${esc(cite.paper)}" target="_blank" rel="noopener">${esc(cite.source)} ↗</a>` : esc(cite.source)) : '';
+      const card = `<div class="ds live" data-set="${d.id}/${s.id}"><span class="badge on">Searchable</span>
+        <h3><a href="#/datasets/${d.id}/${s.id}">${esc(spx ? spx.label : d.species)} ${esc(s.title.charAt(0).toLowerCase() + s.title.slice(1))}</a></h3>
+        <div class="sp">${esc(spx ? spx.name : d.species)} · <span class="src" style="--c:${s.color}">${esc(s.short)}</span></div>
+        <div class="stats"><div><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div><b>${fmtInt(k.pairsFpr10)}</b><span>past 10% FPR${cutNote(10)}</span></div></div>
+        <div class="src-line">${src}${src ? ' · ' : ''}a set within <a href="#/datasets/${d.id}">${esc(d.title)}</a></div></div>`;
+      const after = kin.map((x) => box.querySelector(`[data-ds="${x.id}"]`)).filter(Boolean)[0];
+      if (after) after.insertAdjacentHTML('afterend', card); else box.insertAdjacentHTML('beforeend', card);
+    }
+  }
 }
 
 async function viewAbout() {
