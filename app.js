@@ -57,14 +57,19 @@ const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" dat
 // A page's citation: the page (title, link, date), the Atlas data version each of its screens is read from (the Zenodo
 // version DOI, not the concept DOI that always opens the newest), the method, and the source of each screen shown, which
 // the screens' licenses (CC BY) require.
+const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3' };   // the Atlas record's versions on Zenodo
+const archiveOf = (recs) => (recs.length ? recs.map((r) => `LIVIA Atlas version ${REC_VERSION[r] || '?'}, Zenodo, https://doi.org/10.5281/zenodo.${r}`).join('; ') : `LIVIA Atlas, Zenodo, https://doi.org/${ARCHIVE.doi}`);
+const archiveLine = () => { const recs = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(recOf).filter(Boolean))].sort();   // the versions this site reads
+  return recs.map((r) => { const ids = [...new Set(REG.datasets.filter((d) => recOf(d) === r).map((d) => d.short))]; return `LIVIA Atlas version ${REC_VERSION[r] || '?'}, <i>Zenodo</i>, <a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">doi:10.5281/zenodo.${r}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi:${ARCHIVE.doi}</a>`; };
 const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && d.zip.url) || ''); return m ? m[1] : null; };
 const citeText = (title, ids = []) => {
   const ds = ids.map((id) => ((REG && REG.datasets) || []).find((d) => d.id === id)).filter(Boolean);
-  const recs = [...new Set(ds.map(recOf).filter(Boolean))], data = recs.length ? recs.map((r) => `https://doi.org/10.5281/zenodo.${r}`).join(', ') : `https://doi.org/${ARCHIVE.doi}`;
-  const src = [...new Set(ds.filter((d) => d.paper && !d.paper.includes(ARCHIVE.doi)).map((d) => `${d.source.replace(' · ', ', ')}, ${d.paper}`))];
+  const recs = [...new Set(ds.map(recOf).filter(Boolean))];
+  const doiUrl = (u) => { const m = /(10\.\d{4,9}\/[^\s?#]+?)(v\d+)?(\.full(\.pdf)?)?$/.exec(u || ''); return m && !/^http.*nvidia/.test(u) ? `https://doi.org/${m[1]}` : u; };   // a preprint cited by its DOI
+  const src = [...new Set(ds.filter((d) => d.paper && !d.paper.includes(ARCHIVE.doi)).map((d) => `${d.source.replace(' · ', ', ')}, ${doiUrl(d.paper)}`))];
   return `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (accessed ${new Date().toISOString().slice(0, 10)}). `
-    + `Data: Kim, A.-R. & Perrimon, N. (2026). LIVIA Atlas. Zenodo. ${data}. Method: Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}`
-    + (src.length ? `. Predictions: ${src.join('; ')}.` : '');
+    + `Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}. `
+    + `Data archive: ${archiveOf(recs)}.` + (src.length ? ` Screens: ${src.join('; ')}.` : '');
 };
 document.addEventListener('click', async (e) => {
   const b = e.target.closest && e.target.closest('[data-cite]'); if (!b) return;
@@ -1196,10 +1201,9 @@ async function viewAbout() {
     <div class="card"><h2>Cite</h2>
       <ul class="refs">
         ${ref('livia', 'LIVIA: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.')}
+        <li>Data archive: ${archiveLine()}</li>
         ${ref('flypredictome', 'iLIS and its cutoffs: Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.')}
         ${ref('afmlis', 'LIS and AFM-LIS: Kim, A.-R. et al. (2024). Enhanced protein-protein interaction discovery via AlphaFold-Multimer. <i>bioRxiv</i>.')}
-        <li>The data: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. <i>Zenodo</i>.
-          <a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi.org/${ARCHIVE.doi}</a></li>
       </ul>
       <p class="muted" style="font-size:14px;margin-bottom:0">Please also cite the source of each screen you use, and the resources below that your work draws on.</p></div>
     <div class="card"><h2>Screens</h2>
@@ -1456,7 +1460,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       ${P.virus ? `<div class="srcs">Virus <a href="#/${sp.id}/taxon/${P.virus.taxid}">${esc(P.virus.name)}</a> <span class="muted">· ${fmtInt(P.virus.n)} proteins, every pair folded${P.key.includes('_p') ? ' · a mature peptide of a polyprotein, numbered from its own first residue' : ''}</span></div>` : ''}
       <div class="srcs scope" id="scope">In ${srcBadges(sp, P.src)}</div>
       <div class="flags" id="flags">${flags.join('')}</div>
-      <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => P.src & (1 << i)))}</div></div>
+      <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`, setId && sp.dsIds.includes(setId) ? [setId] : sp.dsIds.filter((_, i) => P.src & (1 << i)))}</div></div>
       <div class="kpis"><div class="kpi"><b id="kp-all">${fmtInt(P.partners)}</b><span>partners predicted</span></div><div class="kpi f10"><b id="kp-10">${fmtInt(P.pos10)}</b><span>past 10% FPR${cutNote(10)}</span></div>
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
