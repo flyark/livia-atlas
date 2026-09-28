@@ -346,7 +346,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .flags:empty { display: none; }
 .card { scroll-margin-top: 124px; }   /* scrollIntoView leaves room for the sticky header + section bar */
 /* partner table: fits the card — colored numbers instead of bars, stacked source badges, truncated names */
-.pt td.v { font-weight: 600; }
+.pt td.v { font-weight: 400; }   /* weight comes from the FPR band (BAND_W) */
 .pt td.srcc { white-space: normal; max-width: 130px; }
 .pt td.srcc .src { margin: 1px 4px 1px 0; }
 .pt td.nm { max-width: 250px; }
