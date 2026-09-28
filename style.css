@@ -3,8 +3,8 @@
   --ground: #F4F6F9; --card: #FFFFFF; --ink: #17263A; --ink-2: #445368; --ink-3: #627085; --line: #DDE3EA; --line-2: #EDF1F5;
   --navy: #1A5276; --blue: #2471A3; --blue-soft: #E8F1F8;
   --query: #00897B; --query-l: #B2DFDB; --partner: #E64A19; --partner-l: #FFCCBC;
-  --fpr1: #6D4FD1; --fpr5: #16956A; --fpr10: #C78B00; --below: #A7B2BF;
-  --fpr1-t: #6D4FD1; --fpr5-t: #127A57; --fpr10-t: #8F6400; --below-t: #5D6C7F; --query-t: #00776B; --partner-t: #C13E15;   /* the same bands as text: at least 4.5:1 on white and on their chips */
+  --fpr1: #6B21A8; --fpr5: #0C735C; --fpr10: #875F00; --below: #A7B2BF;   /* LIVIA's band colors */
+  --fpr1-t: #6B21A8; --fpr5-t: #0C735C; --fpr10-t: #875F00; --below-t: #5F6771; --query-t: #00776B; --partner-t: #C13E15;   /* the same bands as text: at least 4.5:1 on white and on their chips */
   --display: 'Archivo', 'Helvetica Neue', 'Segoe UI', system-ui, sans-serif;
   --sans: 'IBM Plex Sans', 'Helvetica Neue', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
@@ -87,6 +87,8 @@ a:hover { text-decoration: underline; }
 .crumbs { font-size: 13px; color: var(--ink-3); margin: 22px 0 10px; }
 .crumbs a { color: var(--ink-2); }
 .phead { display: flex; flex-wrap: wrap; gap: 18px 36px; align-items: flex-end; justify-content: space-between; margin-bottom: 18px; }
+.phead.vh > div:first-child { flex: 1 1 440px; min-width: 0; }
+.phead > .kpis { flex: 1 1 auto; justify-content: flex-end; } .phead > .kpis > .kpi { flex: 1 1 0; }   /* tiles fill their row: beside the title, or across the page when they wrap */   /* a virus page: the text gives way so the tiles stay beside it, on the right */
 .phead h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5vw, 52px); letter-spacing: -0.02em; line-height: 1; margin: 0; }
 .phead .pname { color: var(--ink-2); font-size: 15px; margin-top: 8px; max-width: 70ch; }
 .phead .ids { font-family: var(--mono); font-size: 13px; color: var(--ink-3); margin-top: 6px; display: flex; gap: 14px; flex-wrap: wrap; }

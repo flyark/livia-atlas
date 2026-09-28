@@ -19,7 +19,7 @@ const VALIAS = (() => { const m = {}; for (const [name, xs] of Object.entries({
   'human papillomavirus type 16': ['hpv16', 'hpv-16'], 'hepatitis b virus': ['hbv'], 'zaire ebolavirus': ['ebola', 'ebola virus'] })) for (const x of xs) (m[x] ||= []).push(name);
   return m; })();
 const cutNote = (f) => `<i class="kc">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count
-const BAND = { 1: '#6D4FD1', 5: '#16956A', 10: '#C78B00', 0: '#A7B2BF' };
+const BAND = { 1: '#6B21A8', 5: '#0C735C', 10: '#875F00', 0: '#A7B2BF' };   // LIVIA's band colors (js/livia-core.js ilisColor)
 const bandOf = (v) => (v >= CUT[1] ? 1 : v >= CUT[5] ? 5 : v >= CUT[10] ? 10 : 0);
 const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
 // Benchmarked cutoffs at 10 / 5 / 1% FPR for single models and for the average over a pair's models: AFM-LIS
@@ -47,7 +47,7 @@ function overlapNote(sp, B, preds, P) {
 }
 const bandIn = (cuts, v) => (v >= cuts[2] ? 1 : v >= cuts[1] ? 5 : v >= cuts[0] ? 10 : 0);
 // Text shades of the band colors, at least 4.5:1 on white and on the light band chips (BAND itself stays for plots and swatches)
-const BAND_TXT = { 1: '#6D4FD1', 5: '#127A57', 10: '#8F6400', 0: '#5D6C7F' };
+const BAND_TXT = { 1: '#6B21A8', 5: '#0C735C', 10: '#875F00', 0: '#5F6771' };
 const bandCol = (cuts, v) => BAND_TXT[bandIn(cuts, v)];   // a value's color = its FPR band under its own metric's cutoff
 const BAND_W = { 1: 700, 5: 600, 10: 500, 0: 400 };   // weight grows with the band: 1% boldest, below 10% plain
 const bandSty = (cuts, v) => `color:${bandCol(cuts, v)};font-weight:${BAND_W[bandIn(cuts, v)]}`;
@@ -1433,7 +1433,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div><h3>Top partners <span class="muted">by the share of models past the 10% cutoff, then average iLIS</span></h3>
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span><span title="models past the 10% FPR cutoff, of the pair's models">models<br>past</span></div>
           <ol class="toplist" id="toplist"></ol>
-          <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
+          <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:${BAND[1]}"></i>1%</span><span><i style="background:${BAND[5]}"></i>5%</span><span><i style="background:${BAND[10]}"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><label class="ctl muted" title="a residue number or a variant (983, T983A): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or T983A" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
@@ -2470,7 +2470,7 @@ async function viewVirus(spId, taxid) {
     const last = g.split(/\s+/).pop(); if (/^(NS\d+[A-Z]?|nsP\d|VP\d+[a-z]?|[A-Za-z]{1,3}\d*[A-Z]?|2[Kk]|\d[A-C])$/.test(last) && last.length <= 5) return last;
     return g.slice(0, 11) + '…'; };
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(v.name)}</div>
-    <div class="phead"><div><h1>${esc(v.name)}</h1>
+    <div class="phead vh"><div><h1>${esc(v.name)}</h1>
       <div class="pname">every pair of its ${fmtInt(v.n)} proteins folded with AlphaFold-Multimer (one model each) and scored with lis.py</div>
       ${v.family ? `<div class="pname">${esc(v.family)}${v.genus ? ` · <i>${esc(v.genus)}</i>` : ''}${v.species ? ` · species <i>${esc(v.species)}</i>` : ''}${v.host ? ` · host: ${esc(v.host)}` : ''} <span class="muted">(ICTV VMR MSL40)</span></div>` : ''}
       <div class="ids"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${v.taxid}" target="_blank" rel="noopener">NCBI taxon ${v.taxid}</a><span>${fmtInt(v.het)} heterodimers · ${fmtInt(v.hom)} homodimers folded</span></div>
