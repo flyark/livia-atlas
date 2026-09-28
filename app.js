@@ -44,7 +44,7 @@ const bandCol = (cuts, v) => BAND_TXT[bandIn(cuts, v)];   // a value's color = i
 const ARCHIVE = { doi: '10.5281/zenodo.22964479', url: 'https://doi.org/10.5281/zenodo.22964479' };   // the atlas's data record: the concept DOI, always the latest version
 // "Cite this view": the page, its link and the date, with the Atlas data record, copied for a methods section or a legend
 const citeBtn = (title) => `<button class="btn" type="button" data-cite="${esc(title)}" title="copy a citation of this page: its title, link and today's date, with the Atlas data record">Cite this view</button>`;
-const citeText = (title) => `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (accessed ${new Date().toISOString().slice(0, 10)}). Data: Kim, A.-R. & Perrimon, N. (2026). LIVIA Atlas. Zenodo. https://doi.org/${ARCHIVE.doi}`;
+const citeText = (title) => `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (accessed ${new Date().toISOString().slice(0, 10)}). Data: Kim, A.-R. & Perrimon, N. (2026). LIVIA Atlas. Zenodo. https://doi.org/${ARCHIVE.doi}. Method: Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}`;
 document.addEventListener('click', async (e) => {
   const b = e.target.closest && e.target.closest('[data-cite]'); if (!b) return;
   const t = citeText(b.dataset.cite), box = b.parentElement.parentElement.querySelector('.cite-box');
