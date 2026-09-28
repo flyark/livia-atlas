@@ -370,6 +370,24 @@ function countOnce(list) {
   for (const p of list) { n.set(p.run, (n.get(p.run) || 0) + 1); const b = best.get(p.sp); if (!b || (p.iLIS || 0) > b.v) best.set(p.sp, { v: p.iLIS || 0, run: p.run }); }
   let s = 0; for (const b of best.values()) s += n.get(b.run); return s;
 }
+// A pair of the viral release that the AlphaFold Database does not display: its model and PAE read by byte range from the
+// release archive at EBI (zstd members of chunk_N.tar; addresses from the Atlas index), unpacked in the browser (fzstd,
+// fflate) and handed to LIVIA's prediction page as a bundle. The tab opens at the click so no popup blocker stops it.
+const ARCH_COLS = ['chunk', 'cif_off', 'cif_len', 'pae_off', 'pae_len'];
+const ARCH_URL = (n) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/pandemic_prep/chunk_${n}.tar`;
+async function openFromArchive(model, ad, link) {
+  const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
+  const txt = link.textContent; link.textContent = 'reading…';
+  const get = async (o, n) => { for (let t = 0; ; t++) { try { const r = await fetch(ARCH_URL(ad.chunk), { headers: { Range: `bytes=${o}-${o + n - 1}` } });
+    if (r.status !== 206) throw new Error(`the archive answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; }
+    catch (e) { if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1))); } } };   // EBI sometimes refuses a connection: retry
+  try {
+    const [[{ decompress }, { zipSync }], cif, pae] = await Promise.all([Promise.all([import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm'), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]),
+      get(ad.cif_off, ad.cif_len), get(ad.pae_off, ad.pae_len)]);
+    const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) });
+    handTo(w, { type: 'livia-load', name: `${model}_viral.zip`, data: zip.buffer }); link.textContent = txt;
+  } catch (e) { link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`; try { w.close(); } catch (_) {} }
+}
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
   const origin = new URL(LIVIA, location.href).origin; let done = false, n = 0;
@@ -2307,8 +2325,10 @@ async function viewVirus(spId, taxid) {
   if (stale(gen)) return;
   const q = hashPath().q; let cut = [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 1, topk = q.has('top') ? Math.max(0, +q.get('top') || 0) : 0;   // defaults: 1% FPR, every edge
   const R = (i) => sp.rows[i], lines = text.trim().split('\n'), head = lines[0].split('\t');
-  const all = lines.slice(1).map((l) => { const t = l.split('\t'), m = {}; let model = '', shown = false; head.forEach((h, k) => { if (h === 'model') model = t[k] || ''; else if (h === 'afdb') shown = t[k] === '1'; else if (k > 1) m[h] = t[k] === '' ? NaN : +t[k]; });
-    return { a: +t[0], b: +t[1], best: m.iLIS, avg: m.iLIS, iptm: m.ipTM, m, model, shown }; }).sort((x, y) => y.best - x.best);   // one model per pair: best = average
+  const all = lines.slice(1).map((l) => { const t = l.split('\t'), m = {}, ad = {}; let model = '', shown = false; head.forEach((h, k) => { if (h === 'model') model = t[k] || ''; else if (h === 'afdb') shown = t[k] === '1';
+    else if (ARCH_COLS.includes(h)) { if (t[k] !== '' && t[k] != null) ad[h] = +t[k]; } else if (k > 1) m[h] = t[k] === '' ? NaN : +t[k]; });
+    const addr = ARCH_COLS.every((h) => Number.isFinite(ad[h])) ? ad : null;   // its place in the release archive, once its chunk is indexed
+    return { a: +t[0], b: +t[1], best: m.iLIS, avg: m.iLIS, iptm: m.ipTM, m, model, shown, addr }; }).sort((x, y) => y.best - x.best);   // one model per pair: best = average
   const MCOL = head.slice(2).filter((h) => h !== 'model' && h !== 'afdb'), mfmt = (k, x) => (!Number.isFinite(x) ? '–' : k === 'iLISA' ? x.toFixed(1) : k === 'ipTM' ? x.toFixed(2) : x.toFixed(3));
   let sortKey = 'iLIS', sortAsc = false;
   const lab = (r) => {   // a short node label: the gene, or the code that names a polyprotein product ("Serine protease NS3" → NS3)
@@ -2344,9 +2364,12 @@ async function viewVirus(spId, taxid) {
     $('#vp').innerHTML = `<thead><tr><th>Protein</th><th>Partner</th><th title="the interface residues of the pair">Pair</th><th title="the model in LIVIA, for the pairs the AlphaFold Database displays (its filter: ipSAE ≥ 0.60 and pDockQ2 ≥ 0.23)">3D</th>${MCOL.map((k) => `<th class="n${k === sortKey ? ' sorted' + (sortAsc ? ' asc' : '') : ''}" data-k="${k}" style="cursor:pointer">${k}</th>`).join('')}</tr></thead><tbody>${PS.slice(0, shownPairs).map((x) => { const b = bandOf(x.best);
       return `<tr><td class="g"><a href="#/${sp.id}/${R(x.a).key}">${esc(R(x.a).gene)}</a></td><td class="g">${x.a === x.b ? '<span class="muted" title="homodimer: the protein with itself">self</span>' : `<a href="#/${sp.id}/${R(x.b).key}">${esc(R(x.b).gene)}</a>`}</td>
         <td><a href="${pairHref(x)}" title="interface residues">residues</a></td>
-        <td>${x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>` : '<span class="muted" title="not displayed by the AlphaFold Database (below its filter); the structure opens from the release archive once it is indexed">—</span>'}</td>
+        <td>${x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>`
+          : x.addr && x.model ? `<a href="#" class="arch" data-m="${esc(x.model)}" title="${esc(x.model)} in LIVIA, read from the release archive at EBI (${((x.addr.cif_len + x.addr.pae_len) / 1048576).toFixed(1)} MB; not displayed by the AlphaFold Database)">LIVIA ↗</a>`
+          : '<span class="muted" title="not displayed by the AlphaFold Database (below its filter); the structure opens from the release archive once its part is indexed">—</span>'}</td>
         ${MCOL.map((k) => (k === 'iLIS' ? `<td class="n v"><a href="${pairHref(x)}" style="color:${BAND_TXT[b]}">${mfmt(k, x.m[k])}</a></td>` : k === 'ipTM' ? `<td class="n v" style="color:${bandCol(FPR.ipTM, x.m[k])}">${mfmt(k, x.m[k])}</td>` : `<td class="n">${mfmt(k, x.m[k])}</td>`)).join('')}</tr>`; }).join('')}</tbody>`;
     $('#vp').querySelectorAll('th[data-k]').forEach((th) => th.onclick = () => { const k = th.dataset.k; if (k === sortKey) sortAsc = !sortAsc; else { sortKey = k; sortAsc = false; } tables(); });
+    $('#vp').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = all.find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
     $('#vp-more').innerHTML = P.length > shownPairs ? `<button class="more" type="button">show ${fmtInt(Math.min(200, P.length - shownPairs))} more</button>` : '';
     const mb = $('#vp-more button'); if (mb) mb.onclick = () => { shownPairs += 200; tables(); };
     const prot = [...v.members].sort((a, b) => (deg.get(b) || 0) - (deg.get(a) || 0) || R(a).gene.localeCompare(R(b).gene));
