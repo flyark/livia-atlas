@@ -949,8 +949,11 @@ async function viewHome() {
     <section class="hero hero-center">
       <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
       <p class="lede">AlphaFold-Multimer predicts not only whether two proteins bind, but through which residues. Pooled across large-scale
-        screens, those interfaces map a protein's many partners onto its sequence and show which of them share a site.<br>Search a protein
+        screens, those interfaces map a protein's many partners onto its sequence. On every protein page, <a href="${LIVIA}clip.html" target="_blank" rel="noopener">cLIP</a>
+        (clustered Local Interaction Profiler) groups the partners by the residues they contact, so partners that share a binding site fall into one cluster.<br>Search a protein
         to see who is predicted to bind it, how confidently, and where.</p>
+      <p class="lede-src">cLIP is part of <a href="${LIVIA}" target="_blank" rel="noopener">LIVIA</a>, a browser-based tool for assessing and visualizing predicted protein interactions
+        (Kim &amp; Perrimon, 2026, <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">bioRxiv</a>).</p>
       <div id="home-search" class="hero-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
