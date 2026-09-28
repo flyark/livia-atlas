@@ -11,6 +11,13 @@
 const DEV = location.hostname === 'localhost' || location.hostname === '127.0.0.1';   // local preview: LIVIA on :8000, screens from ../data/
 const LIVIA = DEV ? 'http://localhost:8000/' : 'https://flyark.github.io/LIVIA/';
 const CUT = { 10: 0.223, 5: 0.339, 1: 0.551 };
+// Common names and abbreviations of viruses the taxonomy names otherwise: alias → taxonomy names (search, virus list filter)
+const VALIAS = (() => { const m = {}; for (const [name, xs] of Object.entries({
+  'monkeypox virus': ['mpox', 'mpox virus', 'mpxv'], 'variola virus': ['smallpox'], 'epstein-barr virus': ['ebv', 'hhv-4', 'hhv4'],
+  'human herpesvirus 1': ['hsv-1', 'hsv1', 'herpes simplex', 'herpes simplex virus', 'herpes simplex virus 1'], 'human herpesvirus 2': ['hsv-2', 'hsv2', 'herpes simplex virus 2'],
+  'human herpesvirus 8 type p': ['kshv', 'hhv-8', 'hhv8'], 'human cytomegalovirus': ['hcmv', 'cmv', 'hhv-5'], 'varicella-zoster virus': ['vzv', 'chickenpox', 'hhv-3'],
+  'human papillomavirus type 16': ['hpv16', 'hpv-16'], 'hepatitis b virus': ['hbv'], 'zaire ebolavirus': ['ebola', 'ebola virus'] })) for (const x of xs) (m[x] ||= []).push(name);
+  return m; })();
 const cutNote = (f) => `<i class="kc">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count
 const BAND = { 1: '#6D4FD1', 5: '#16956A', 10: '#C78B00', 0: '#A7B2BF' };
 const bandOf = (v) => (v >= CUT[1] ? 1 : v >= CUT[5] ? 5 : v >= CUT[10] ? 10 : 0);
@@ -665,8 +672,8 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
   async function update() {
     const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(((await registry()).species || []).map((x) => species(x.id).catch(() => null)));
     const many = sps.filter(Boolean).length > 1;
-    const t = q.trim().toLowerCase(), vir = t.length < 3 || only ? [] : sps.filter((sp) => sp && sp.viruses).flatMap((sp) => sp.viruses.map((v) => {
-      const nm = v.name.toLowerCase(), score = nm === t ? 3 : nm.startsWith(t) ? 2 : nm.includes(t) ? 1 : 0; return { v, sp, score }; }))
+    const t = q.trim().toLowerCase(), al = VALIAS[t] || [], vir = (t.length < 3 && !al.length) || only ? [] : sps.filter((sp) => sp && sp.viruses).flatMap((sp) => sp.viruses.map((v) => {
+      const nm = v.name.toLowerCase(), score = nm === t || al.includes(nm) ? 3 : nm.startsWith(t) ? 2 : nm.includes(t) ? 1 : 0; return { v, sp, score }; }))
       .filter((x) => x.score).sort((a, b) => b.score - a.score || b.v.hpos - a.v.hpos).slice(0, 4);   // a named virus first
     const hits = sps.filter(Boolean).flatMap((sp) => scoreProteins(sp, q, only ? 400 : 10).filter((h) => !only || only.has(h.row.key)).map((h) => ({ ...h, sp })));
     let prot;
@@ -677,7 +684,9 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
       for (const h of [...hits].sort((a, b) => b.score - a.score)) { if (!bySp.has(h.sp)) bySp.set(h.sp, []); bySp.get(h.sp).push(h); }
       prot = [...hits].sort((a, b) => x(b) - x(a)).map((h) => bySp.get(h.sp).shift());
     } else prot = hits.sort((a, b) => b.score - a.score);
-    items = [...vir, ...prot.slice(0, 10 - vir.length)];
+    // a virus named exactly (or by a common name) first, then exact gene matches, then viruses named in part ("Tor" is a gene first)
+    const exact = prot.filter((h) => h.base >= 80), rest = prot.filter((h) => h.base < 80);
+    items = [...vir.filter((x) => x.score === 3), ...exact, ...vir.filter((x) => x.score < 3), ...rest].slice(0, 10);
     on = items.length ? 0 : -1;
     box.innerHTML = items.map(({ row: r, sp, v }) => (v ? `<div class="sg"><b>${esc(v.name)}</b><span class="nm">virus · ${fmtInt(v.n)} proteins</span><span class="ct">${fmtInt(v.hpos + v.mpos)} pairs</span>
         <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}its proteins' network · taxon ${v.taxid}</span></div>`
@@ -2262,7 +2271,7 @@ async function viewSpecies(spId) {
     ${TSs.map(setsCard).join('')}`;
   mountSearch($('#sp-search'), { spId });
   if (sp.viruses) {   // the virus list: most pairs past the 10% FPR cutoff first, filtered by name
-    const draw = () => { const f = $('#vir-filter').value.trim().toLowerCase(), all = sp.viruses.filter((v) => !f || v.name.toLowerCase().includes(f)).sort((a, b) => (b.hpos + b.mpos) - (a.hpos + a.mpos) || b.n - a.n), show = all.slice(0, 60);
+    const draw = () => { const f = $('#vir-filter').value.trim().toLowerCase(), al = VALIAS[f] || [], all = sp.viruses.filter((v) => !f || v.name.toLowerCase().includes(f) || al.includes(v.name.toLowerCase())).sort((a, b) => (b.hpos + b.mpos) - (a.hpos + a.mpos) || b.n - a.n), show = all.slice(0, 60);
       const n = (x) => (x == null ? '<span class="muted">—</span>' : fmtInt(x));
       $('#vir-t').innerHTML = `<thead><tr><th>Virus</th><th class="n">Proteins</th><th class="n">Pairs folded</th>${[10, 5, 1].map((f) => `<th class="n">Past ${f}% FPR${cutNote(f)}</th>`).join('')}<th class="n">Proteins with a partner</th></tr></thead><tbody>${show.map((v) =>
         `<tr><td class="g"><a href="#/${sp.id}/taxon/${v.taxid}">${esc(v.name)}</a></td><td class="n">${fmtInt(v.n)}</td><td class="n">${fmtInt(v.het + v.hom)}</td><td class="n">${fmtInt(v.hpos + v.mpos)}</td><td class="n">${n(v.pos5)}</td><td class="n">${n(v.pos1)}</td><td class="n">${fmtInt(v.pwp)}</td></tr>`).join('')}</tbody>`;
