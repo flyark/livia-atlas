@@ -20,6 +20,8 @@ const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.
   LIS: [0.168, 0.257, 0.439], cLIS: [0.298, 0.449, 0.716], ipSAE: [0.165, 0.363, 0.615], actifpTM: [0.745, 0.880, 0.963] };
 const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442] };
 const cutNote = (f) => `<i class="kc">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count
+// A UniProt domain box under the pointer: its name and span (the plots draw D1, D2 … or a clipped name)
+const domTip = (d) => { const a = d.s != null ? d.s : d.start, z = d.e != null ? d.e : d.end; return `<b>${d.idx ? `D${d.idx} ` : ''}${esc(d.name)}</b><br>residues ${a}–${z} (${z - a + 1} aa) · UniProt domain`; };
 // Each screen's run settings (registry: models, recycles). The cutoffs were calibrated on five models with five recycles
 // per pair; a screen run otherwise says so where its settings are shown.
 const CALIB = 'Cutoffs and average-iLIS cutoffs were calibrated on AlphaFold-Multimer runs with five models and five recycles per pair. For screens run with fewer models or other settings, they are a guide rather than a measured error rate.';
@@ -758,7 +760,7 @@ function drawIfaceTracks(cv, tracks) {
   const bh = (t) => 22 + t.nl * 15 + (t.nl ? 4 : 0) + 22 + 20;
   const H = tracks.reduce((s, t) => s + bh(t), 0) + gap * (tracks.length - 1);
   const g = canvasCtx(cv, W, H);
-  let y = 0; cv._blocks = [];
+  let y = 0; cv._blocks = []; cv._doms = [];
   for (const t of tracks) {
     const L = t.len, bw = Math.max(1.3, (W - 2 * pad) / L), name = t.label || t.gene;
     g.font = '600 13.5px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = t.col.clir; g.textBaseline = 'alphabetic'; g.textAlign = 'left'; g.fillText(name, pad, y + 15);
@@ -769,7 +771,7 @@ function drawIfaceTracks(cv, tracks) {
     for (const d of t.doms) { const x0 = t.x(Math.max(1, d.start)), x1 = Math.max(x0 + 2, t.x(Math.min(L, d.end) + 1)), yy = y + d.lane * 15;
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, yy, x1 - x0, 13); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, yy + 0.3, x1 - x0 - 0.6, 12.4);
       g.font = '10.5px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = '#34445A'; let s = d.name; while (s.length > 2 && g.measureText(s).width > x1 - x0 - 6) s = s.slice(0, -2) + '…';
-      if (s.length > 2 && g.measureText(s).width <= x1 - x0 - 6) g.fillText(s, x0 + 3, yy + 10); }
+      if (s.length > 2 && g.measureText(s).width <= x1 - x0 - 6) g.fillText(s, x0 + 3, yy + 10); cv._doms.push({ d, x0, x1, y0: yy, y1: yy + 13 }); }
     y += t.nl * 15 + (t.nl ? 4 : 0);
     const by = y;
     if (t.span) {   // a fragment or window on its whole gene: the gene faint, the folded part in the usual gray
@@ -784,6 +786,7 @@ function drawIfaceTracks(cv, tracks) {
     y += 20 + gap;
   }
   cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, yy = e.clientY - b.top;
+    const hd = cv._doms.find((k) => x >= k.x0 && x <= k.x1 && yy >= k.y0 && yy <= k.y1); if (hd) return showTip(domTip(hd.d), e.clientX, e.clientY);   // a domain box
     const blk = cv._blocks.find((k) => yy >= k.y0 - 4 && yy <= k.y1 + 4); if (!blk) return hideTip();
     const t = blk.t, r = Math.floor((x - pad) / (W - 2 * pad) * t.len) + 1; if (r < 1 || r > t.len) return hideTip();
     const st = t.span && (r < t.span[0] || r > t.span[1]) ? 'not in the folded construct' : t.clirSet.has(r) ? 'contact (cLIR)' : t.lirSet.has(r) ? 'interface (LIR)' : 'not in the interface';
@@ -1596,6 +1599,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (am) { frame(aTop, aBase); const yOf = (v) => aBase - v * aH; line((sr) => S.am[sr], yOf, amCol); yTicks([0, 0.5, 1], (v) => v.toFixed(1), yOf); yLabel('AM path.', aTop, aBase, '#A33'); }
     drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), aBase + 2, xc, W);
     cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), r = Math.floor((e.clientX - b.left - AXL) / bw) + 1; if (r < 1 || r > L) return hideTip();
+      const my = e.clientY - b.top, hd = my < padT - 4 && doms.find((d) => r >= d.s && r <= d.e && my >= 4 + d.lane * DRH && my <= 16 + d.lane * DRH);
+      if (hd) return showTip(domTip(hd), e.clientX, e.clientY);   // a domain box: its name and span
       const cc = byC[r] || {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => `<span style="color:${clusterColor(c, k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`).join(' · ');
       const sr = toStruct(r), plv = pl && sr ? S.plddt.get('A:' + sr) : null, amv = am && sr ? S.am[sr] : null, dom = doms.filter((d) => r >= d.s && r <= d.e).map((d) => d.name).join(', ');
       showTip(`<b>${qSeq[r - 1] || ''}${r}</b> · ${tot[r]} prediction${tot[r] === 1 ? '' : 's'}${parts ? '<br>' + parts : ''}${dom ? `<br>${esc(dom)}` : ''}${plv != null ? `<br>pLDDT ${plv.toFixed(0)}` : ''}${amv != null ? `${plv != null ? ' · ' : '<br>'}AM ${amv.toFixed(2)}` : ''}`, e.clientX, e.clientY); };
@@ -1789,6 +1794,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       g.strokeStyle = '#17263A'; g.lineWidth = 1.5; g.beginPath(); g.moveTo(x, top); g.lineTo(x, top + sites.length * LH); g.stroke();   // dark: no cluster has this color
       g.fillStyle = '#17263A'; g.beginPath(); g.moveTo(x - 4, top - 5); g.lineTo(x + 4, top - 5); g.lineTo(x, top); g.closePath(); g.fill(); }
     cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, y = e.clientY - b.top, j = Math.floor((y - top) / LH), r = Math.floor((x - AXL) / bw) + 1;
+      const hd = y < top && doms.find((d) => r >= d.s && r <= d.e && y >= 4 + d.lane * DRH && y <= 16 + d.lane * DRH);
+      if (hd) { cv.style.cursor = ''; return showTip(domTip(hd), e.clientX, e.clientY); }   // a domain box: its name and span
       if (BGH && j === sites.length && r >= 1 && r <= L) { cv.style.cursor = ''; return showTip(`<b>Background</b> · ${qSeq && qSeq[r - 1] ? qSeq[r - 1] : ''}${r}: contacted in ${(100 * bgd.f[r]).toFixed(1)}% of ${fmtInt(bgd.n)} predictions below the cutoff`, e.clientX, e.clientY); }
       const st = sites[j]; if (!st || r < 1 || r > L) { cv.style.cursor = ''; return hideTip(); } const h = st.hits.get(r) || 0;
       cv.style.cursor = 'pointer';
@@ -2042,7 +2049,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span>
       <span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span></li>`; }).join('');
   }
-  reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
+  reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
 
   /* partner table */
@@ -2056,7 +2063,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const key = T.sort; list.sort((a, b) => (typeof a[key] === 'string' ? a[key].localeCompare(b[key]) : a[key] - b[key]) * (T.asc ? 1 : -1));
     const per = 40, pages = Math.max(1, Math.ceil(list.length / per)); T.page = Math.min(T.page, pages - 1);
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
-    $('#pt-note').textContent = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted`;
+    $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${KB ? ` · reported in BioGRID ${esc(KB.release)}: <b>bold</b> physical, <u>underlined</u> genetic` : ''}`;
     $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
       const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
@@ -2066,7 +2073,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td><td class="n v" style="color:${bandCol(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
           <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td><td class="n">${fmtInt(x.contacts)}</td><td class="n">${x.pass} / ${x.n}</td></tr>`; }).join('') : '';
       const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
-      return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${tag}${same}</td>
+      return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}"${(() => { const kb = kbOf(p.id); return kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''; })()}>${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         <td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
         <td class="n v" style="color:${BAND_TXT[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
