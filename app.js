@@ -990,7 +990,8 @@ async function viewAbout() {
     <div class="card" style="margin-top:6px"><h2>What this is</h2>
       <p>LIVIA Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
       <b>iLIS</b>, the integrated local interaction score, computed by lis.py (${AFM} on GitHub) over residue pairs with predicted aligned error of at most 12 Å
-      (LIS), and over those that are also in contact, Cβ–Cβ distance of at most 8 Å (cLIS): iLIS = √(LIS × cLIS).</p>
+      (LIS), and over those that are also in contact, Cβ–Cβ distance of at most 8 Å (cLIS): iLIS = √(LIS × cLIS). <b>iLISA</b> weighs iLIS by
+      the size of the interface: iLISA = iLIS × iLIA, where iLIA = √(LIA × cLIA) and LIA and cLIA count the residue pairs that enter LIS and cLIS.</p>
       <table class="cuts"><caption>Benchmarked cutoffs at a 10%, 5% and 1% false-positive rate, from Y2H reference sets in yeast, fly and human (${cite('flypredictome')})</caption>
         <thead><tr><th></th><th>10% FPR</th><th>5% FPR</th><th>1% FPR</th></tr></thead>
         <tbody>${[['iLIS, best model', FPR.iLIS, 3], ['iLIS, average over models', FPR_AVG.iLIS, 3], ['ipTM, best model', FPR.ipTM, 2], ['ipTM, average over models', FPR_AVG.ipTM, 3]]
@@ -1238,9 +1239,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
           <label>show <select id="sc-pts"><option value="partner">one per partner (best model)</option><option value="all">every prediction</option><option value="rank1">rank-1 per pair</option></select></label>
           <input type="search" id="sc-find" list="sc-list" placeholder="Find partner" style="width:140px"><datalist id="sc-list"></datalist></div></div>
-      <div class="overview"><div><div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="plot" id="scat2"><canvas id="scatter-canvas"></canvas></div><div class="legend" id="sc-legend"></div></div>
+      <div class="overview"><div><div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="muted" id="sc-def" style="margin:-4px 0 8px" hidden></div><div class="plot" id="scat2"><canvas id="scatter-canvas"></canvas></div><div class="legend" id="sc-legend"></div></div>
         <div><h3>Top partners <span class="muted">by iLIS of the best model</span></h3>
-          <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span></div>
+          <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span><span title="models past the 10% FPR cutoff, of the pair's models">models<br>past</span></div>
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
@@ -1252,7 +1253,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by size; the map has one lane per major site, one
         with at least 3 partners and 2% of all partners, and shows the minor sites when asked. Solid marks
         a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
-        show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a variant (for example T983A) to see which
+        show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a variant (for example <span id="res-eg">T983A</span>) to see which
         predictions, partners and sites contact it; the link keeps it.</p><p class="note" id="clip-aside" hidden></p></div>
     <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
@@ -1616,6 +1617,18 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const major = (st, np) => st.partners.length >= Math.max(3, Math.ceil(0.02 * np));   // a major site: at least 3 partners and 2% of them
   let sitesAll = false;   // the map shows the major sites until asked for all
   const siteDomains = (st, doms) => doms.filter((d) => st.foot.some((r) => r >= d.s && r <= d.e)).map((d) => d.name).slice(0, 2);
+  // Partners past the cutoff (the tiles) that no site holds, and why: cLIP takes a pair only when its rank-1 model passes,
+  // and drops a model without contact residues and constructs named phospho- or mutant (its default filter)
+  function outOfSites() {
+    const miss = B.partners.filter((x) => x.id !== P.key && !x.rep && x.best >= CUT[cut] && !partnerCluster.has(x.id));
+    if (!miss.length) return '';
+    const r1 = (x) => x.counted.filter((p) => p.rank === 1 && p.iLIS >= CUT[cut]);
+    const low = miss.filter((x) => !r1(x).length).length, bare = miss.filter((x) => r1(x).length && r1(x).every((p) => !p.qcLIR)).length, other = miss.length - low - bare;
+    const n1 = miss.length === 1, why = [[low, `pass${n1 ? 'es' : ''} only in lower-ranked models (a site takes a pair when its rank-1 model passes)`],
+      [bare, `ha${n1 ? 's' : 've'} no contact residues`], [other, `${n1 ? 'is a construct' : 'are constructs'} that cLIP leaves out by name (phospho-, mutant)`]].filter(([k]) => k);
+    const head = `${fmtInt(miss.length)} more partner${n1 ? '' : 's'} past the cutoff ${n1 ? 'is' : 'are'} in no site`;
+    return ` <span class="muted">${why.length === 1 ? `${head}: ${n1 ? 'it' : 'they'} ${why[0][1]}` : `${head}: ${why.map(([k, t]) => `${fmtInt(k)} ${t}`).join('; ')}`}.</span>`;
+  }
   function renderSites() {
     const ans = $('#sites-answer'), map = $('#sites-map'); if (!ans) return;
     if (!clustered()) { ans.innerHTML = M ? `No binding site to show: ${M.fingerprints.length ? 'only one prediction is' : 'no prediction is'} past the ${cut}% FPR cutoff.` : 'Finding the binding sites…';
@@ -1623,11 +1636,20 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const sites = sitesOf(), doms = qDomains(M.plen), K = sites.length, np = partnerCluster.size, big = sites[0], lanesOrder = [...sites].sort((a, b) => a.c - b.c);
     const names = (ps) => ps.map((x) => `<a href="#/${sp.id}/${P.key}/${x.key}${scopeQ}">${esc(gname(x.key))}</a>`);
     const andList = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
+    // the partners named as examples: most models past the cutoff first, then the average iLIS, so a pair past it in one
+    // model of three is not named before one past it in all
+    const PB = new Map(B.partners.map((x) => [x.id, x])), passN = (t) => (t ? t.counted.filter((p) => p.iLIS >= CUT[cut]).length : 0);
+    const steady = (ps) => ps.map((x) => ({ ...x, pass: passN(PB.get(x.key)), avg: (PB.get(x.key) || {}).avg || 0 })).sort((a, b) => b.pass - a.pass || b.avg - a.avg || b.best - a.best);
     const where = (st) => { if (!st.foot.length) return 'no residue shared by 30% of its predictions';
       const r = stretches(st.ranges), dn = siteDomains(st, doms);
       return `${r.length <= 3 ? `residues ${rangeText(r)}` : `${r.length} stretches between residues ${r[0][0]} and ${r[r.length - 1][1]}`}${dn.length ? ` (${esc(dn.join(', '))})` : ''}`; };
     ans.innerHTML = `<b>${esc(P.gene)}</b>: ${fmtInt(np)} partner${np === 1 ? ' is' : 's are'} predicted, past the ${cut}% FPR cutoff, to contact ${K === 1 ? 'one site' : `${K} sites`}.`
-      + ` The largest, at ${where(big)}, is contacted by ${fmtInt(big.partners.length)} of them${big.partners.length ? `, including ${andList(names(big.partners.slice(0, 3)))}` : ''}.`;
+      + ` The largest, at ${where(big)}, is contacted by ${fmtInt(big.partners.length)} of them${big.partners.length ? `, including ${andList(names(steady(big.partners).slice(0, 3)))}` : ''}.`
+      + outOfSites();
+    { const [pos] = [...big.hits].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0] || [], aa = pos && qSeq ? qSeq[pos - 1] : '';   // the most contacted residue of the largest site
+      if (pos) { const ex = aa ? `${pos} or ${aa}${pos}${aa === 'A' ? 'G' : 'A'}` : `${pos}`, box = $('#res-q'); box.placeholder = ex;
+        box.closest('label').title = `a residue number or a variant (${ex.replace(' or ', ', ')}): which predictions, partners and sites contact it; the link keeps it`;
+        const eg = $('#res-eg'); if (eg && aa) eg.textContent = ex.split(' or ')[1]; } }
     const nMajor = sites.filter((st) => major(st, np)).length, collapse = !sitesAll && nMajor > 0 && nMajor < K;
     const shown = collapse ? lanesOrder.filter((st) => major(st, np) || (!allOn() && ACTIVE.has(st.c))) : lanesOrder;   // a site chosen elsewhere stays in view
     drawSitesMap(map, shown, doms); renderResLook(sites);
@@ -1689,6 +1711,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     cv.onmouseleave = () => { cv.style.cursor = ''; hideTip(); };
     cv.onclick = (e) => { const b = cv.getBoundingClientRect(), j = Math.floor((e.clientY - b.top - top) / LH); if (sites[j]) { hideTip(); toggleCluster(sites[j].c); } };
   }
+  // What "reported" means for this protein: the share of all its predicted partners, and of those below the cutoff, that
+  // BioGRID reports (well-studied proteins have many reports whatever the prediction)
+  function kbBase() {
+    const all = B.partners.filter((x) => x.id !== P.key && !x.rep), low = all.filter((x) => x.best < CUT[cut]);
+    const pct = (xs) => (xs.length ? `${(100 * xs.filter((x) => kbOf(x.id)).length / xs.length).toFixed(0)}%` : '—');
+    return `<span>for comparison, ${pct(all)} of all ${fmtInt(all.length)} predicted partners of ${esc(P.gene)} are reported, and ${pct(low)} of the ${fmtInt(low.length)} below the cutoff; a report is evidence of an interaction, not of this interface</span>`;
+  }
   function renderClusterInfo() {
     const box = $('#cluster-info'); if (!box) return;
     if (!clustered()) { box.innerHTML = `<p class="muted" style="margin:0">${M ? 'Nothing to cluster at this cutoff.' : 'Clustering…'}</p>`; return; }
@@ -1704,7 +1733,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const leg = $('#info-kb'), all = [...new Set(Object.values(mem).flatMap((x) => [...x]))].map(kbOf).filter(Boolean);
     const nP = all.filter((x) => x.ph).length, nG = all.filter((x) => x.ge).length;
     leg.hidden = !KB; if (KB) leg.innerHTML = `<span><b>bold</b>: physical interaction reported in BioGRID ${KB.release} (${fmtInt(nP)} partner${nP === 1 ? '' : 's'})</span>`
-      + `<span><u>underlined</u>: genetic interaction reported (${fmtInt(nG)})</span>`;
+      + `<span><u>underlined</u>: genetic interaction reported (${fmtInt(nG)})</span>` + (KB ? kbBase() : '');
   }
 
   /* Interaction Residues: any partner, any screen, any model */
@@ -1899,6 +1928,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const q = near(e); if (!q) return; hideTip(); location.hash = `#/${sp.id}/${P.key}/${q.p.partner}${scopeQ}`; };
     const r1 = pearson(pts.map((q) => q.x), pts.map((q) => q.y)), rho = spearman(pts.map((q) => q.x), pts.map((q) => q.y));
+    { const d = $('#sc-def'), used = [xK, yK].some((x) => x === 'iLISA' || x === 'iLIA'); d.hidden = !used;
+      if (used) d.textContent = 'iLISA = iLIS × iLIA; iLIA = √(LIA × cLIA), where LIA and cLIA count the residue pairs that enter LIS and cLIS'; }
     $('#sc-rho').textContent = `${fmtInt(pts.length)} ${per ? 'partners, the best model of each pair' : mode === 'rank1' ? 'predictions; rank-1 models colored by cluster' : 'predictions'} · ${Number.isFinite(r1) ? `Pearson r = ${r1.toFixed(3)} · ` : ''}${Number.isFinite(rho) ? `Spearman ρ = ${rho.toFixed(3)}` : ''}`;
     const cnt = {}; let other = 0; for (const q of pts) q.c ? (cnt[q.c] = (cnt[q.c] || 0) + 1) : other++;
     const unit = per ? 'partners' : 'predictions';
@@ -1920,7 +1951,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
       <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
-      <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span></li>`; }).join('');
+      <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span>
+      <span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span></li>`; }).join('');
   }
   reported(sp).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); if (clustered()) renderClusterInfo(); }).catch(() => {});
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
