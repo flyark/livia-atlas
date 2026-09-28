@@ -197,22 +197,32 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
 // Pairs reported in BioGRID among a species' proteins, from data/species/<sp>/biogrid.tsv on the site: row numbers of the
 // species index and the number of publications reporting a physical and a genetic interaction. The file names the index it
 // was built for; a file for another index is not used, so a pair is never marked by a stale match. null: no file, or not this index.
-function reported(sp) {
-  if (!sp.known) sp.known = (async () => {
-    let t; try { t = await getText(sp.base + 'biogrid.tsv'); } catch (e) { return null; }
-    const head = t.slice(0, 600).split('\n'), idx = (head.find((l) => l.startsWith('# index ')) || '').split(' '), N = sp.rows.length;
-    if (+idx[2] !== N) return null;
-    const dig = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(sp.rows.map((r) => r.key).join('\n')));
-    if ([...new Uint8Array(dig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 12) !== idx[3]) return null;
-    const m = new Map(), gm = new Map();
-    for (let p = 0; p < t.length;) { let e = t.indexOf('\n', p); if (e < 0) e = t.length;
-      if (t[p] !== '#' && t[p] !== 'i') { const [a, b, ph, ge] = t.slice(p, e).split('\t'), k = +a * N + +b;
-        if (+ph) m.set(k, +ph); if (+ge) gm.set(k, +ge); }
-      p = e + 1; }
-    const release = ((head[0] || '').match(/BioGRID ([\d.]+)/) || [])[1] || '', at = (a, b) => Math.min(a, b) * N + Math.max(a, b);
-    return { release, pubs: (a, b) => m.get(at(a, b)) || 0, gen: (a, b) => gm.get(at(a, b)) || 0 };   // publications: physical, genetic
-  })();
+// One parser for the whole file and for a shard (the same header: release, index size and hash of the species index)
+async function parseReported(sp, t) {
+  const head = t.slice(0, 600).split('\n'), idx = (head.find((l) => l.startsWith('# index ')) || '').split(' '), N = sp.rows.length;
+  if (+idx[2] !== N) return null;
+  const dig = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(sp.rows.map((r) => r.key).join('\n')));
+  if ([...new Uint8Array(dig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 12) !== idx[3]) return null;
+  const m = new Map(), gm = new Map();
+  for (let p = 0; p < t.length;) { let e = t.indexOf('\n', p); if (e < 0) e = t.length;
+    if (t[p] !== '#' && t[p] !== 'i') { const [a, b, ph, ge] = t.slice(p, e).split('\t'), k = +a * N + +b;
+      if (+ph) m.set(k, +ph); if (+ge) gm.set(k, +ge); }
+    p = e + 1; }
+  const release = ((head[0] || '').match(/BioGRID ([\d.]+)/) || [])[1] || '', at = (a, b) => Math.min(a, b) * N + Math.max(a, b);
+  return { release, pubs: (a, b) => m.get(at(a, b)) || 0, gen: (a, b) => gm.get(at(a, b)) || 0 };   // publications: physical, genetic
+}
+function reported(sp) {   // every reported pair of the species: the network views
+  if (!sp.known) sp.known = (async () => { let t; try { t = await getText(sp.base + 'biogrid.tsv'); } catch (e) { return null; } return parseReported(sp, t); })();
   return sp.known;
+}
+// The reported pairs of one protein (row i): its shard of biogrid.tsv (biogrid/<i % S>.tsv holds every pair of the proteins
+// in it), so a protein page reads ~100 kB instead of the whole file; species without shards read the whole file.
+function reportedOf(sp, i) {
+  const S = (sp.manifest.files || {}).biogridShards; if (!S || i == null) return reported(sp);
+  if (sp.known) return sp.known;   // the whole file is already here
+  sp.knownShard = sp.knownShard || new Map(); const k = i % S;
+  if (!sp.knownShard.has(k)) sp.knownShard.set(k, (async () => { let t; try { t = await getText(`${sp.base}biogrid/${k}.tsv`); } catch (e) { return reported(sp); } return parseReported(sp, t); })());
+  return sp.knownShard.get(k);
 }
 const srcBadges = (sp, mask) => sp.dsIds.map((_, di) => (mask & (1 << di) ? `<span class="src" style="--c:${sp.dsColor[di]}">${esc(sp.dsShort[di])}</span>` : '')).join('');
 
@@ -1994,7 +2004,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span>
       <span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span></li>`; }).join('');
   }
-  reported(sp).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); if (clustered()) renderClusterInfo(); }).catch(() => {});
+  reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
 
   /* partner table */
