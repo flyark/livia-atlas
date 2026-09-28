@@ -623,10 +623,10 @@ function scoreProteins(sp, raw, limit = 10) {   // → [{ row, score }], best fi
     else if (k.ids.some((x) => x.startsWith(q))) s = 45;
     else if (q.length >= 3 && k.name.includes(q)) s = 25;
     else if (q.length >= 3 && k.syn.some((x) => x.startsWith(q))) s = 20;
-    if (s) scored.push([s + Math.min(10, Math.log10(1 + sp.rows[i].pos10) * 3), i]);
+    if (s) { const bonus = Math.min(10, Math.log10(1 + sp.rows[i].pos10) * 3); scored.push([s + bonus, i, s, bonus]); }
   }
   scored.sort((a, b) => b[0] - a[0]);
-  return scored.slice(0, limit).map(([score, i]) => ({ row: sp.rows[i], score }));
+  return scored.slice(0, limit).map(([score, i, base, bonus]) => ({ row: sp.rows[i], score, base, bonus }));
 }
 function mountSearch(host, { big = false, spId = null, autofocus = false, only = null, set = '' } = {}) {   // spId null: every species; only: a set's keys
   host.innerHTML = `<div class="search ${big ? 'big' : ''}">
@@ -640,8 +640,14 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
   async function update() {
     const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(((await registry()).species || []).map((x) => species(x.id).catch(() => null)));
     const many = sps.filter(Boolean).length > 1;
-    items = sps.filter(Boolean).flatMap((sp) => scoreProteins(sp, q, only ? 400 : 10).filter((h) => !only || only.has(h.row.key)).map((h) => ({ ...h, sp })))
-      .sort((x, y) => y.score - x.score).slice(0, 10);
+    const hits = sps.filter(Boolean).flatMap((sp) => scoreProteins(sp, q, only ? 400 : 10).filter((h) => !only || only.has(h.row.key)).map((h) => ({ ...h, sp })));
+    if (many) {   // across species an exact match counts whatever its case (the case rule separates genes within a species: fly's Tor
+      // is not tor), so exact matches are ordered by how many partners pass ("p53": human TP53 before fly p53); each species' own
+      // hits keep their order
+      const x = (h) => (h.base >= 80 ? 100 : h.base) + h.bonus, bySp = new Map();
+      for (const h of [...hits].sort((a, b) => b.score - a.score)) { if (!bySp.has(h.sp)) bySp.set(h.sp, []); bySp.get(h.sp).push(h); }
+      items = [...hits].sort((a, b) => x(b) - x(a)).map((h) => bySp.get(h.sp).shift()).slice(0, 10);
+    } else items = hits.sort((a, b) => b.score - a.score).slice(0, 10);
     on = items.length ? 0 : -1;
     box.innerHTML = items.map(({ row: r, sp }) => `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
         <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`).join('')
