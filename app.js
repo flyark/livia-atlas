@@ -398,8 +398,12 @@ function orderChoices(choices) {
 async function assemble(sp, P, parts, scope, onlyDi, setId) {
       const preds = [], runs = new Map(), seqs = new Map(), cons = new Map(), sets = [], TS = (parts.find((x) => x.TS) || {}).TS || null;
       const seqNo = new Map(), sno = (s) => { let i = seqNo.get(s); if (i == null) seqNo.set(s, i = seqNo.size); return i; };
-      const pairKey = (S, q, o, ql, ol) => { const x = S && S.get(q), y = S && S.get(o);   // the two sequences, the query's first
-        return x && y ? sno(x) + '|' + sno(y) : `${q}|${o}|${ql}|${ol}`; };               // (names and lengths without a FASTA)
+      // Without a FASTA, a construct placed exactly on its gene's reference (no mutation) is that stretch of the reference,
+      // whatever it is called: 'Cdk1' and 'FBgn0004106' folded as the same 297 residues are one sequence, not two isoforms.
+      const seqId = (C, nm, len) => { const c = C && C.get(nm);
+        return c && c.exact && c.off != null && !c.mut && c.kind !== 'mutant' && c.kind !== 'variant' ? `${c.key}@${c.off}+${c.len || len}` : `${nm}:${len}`; };
+      const pairKey = (S, q, o, ql, ol, C) => { const x = S && S.get(q), y = S && S.get(o);   // the two sequences, the query's first
+        return x && y ? sno(x) + '|' + sno(y) : `${seqId(C, q, ql)}|${seqId(C, o, ol)}`; };   // (their placement, or names and lengths, without a FASTA)
       for (const part of parts) {
         if (!part.raw.rows) Object.assign(part.raw, await csvRows(await JSZip.loadAsync(part.raw.bytes), part.raw.csvName));   // read again: an earlier view let them go
         const C = part.raw.cons;
@@ -425,7 +429,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
             qC: own(r[H[s('cLIR_indices_i', 'cLIR_indices_j')]]), pC: own(r[H[s('cLIR_indices_j', 'cLIR_indices_i')]]), row: null, hdr: null };
           if (p.iLIS >= CUT[10]) { p.row = r.map(own); p.hdr = hdr; }   // only rows past the lowest cutoff are ever clustered
           if (!Number.isFinite(p.iLISA)) p.iLISA = (p.iLIS || 0) * (p.iLIA || 0);
-          p.sp = pairKey(part.raw.seqs, qi ? a : b, qi ? b : a, p.qLen, p.pLen);
+          p.sp = pairKey(part.raw.seqs, qi ? a : b, qi ? b : a, p.qLen, p.pLen, C);
           preds.push(p);
         }
         part.raw.rows = null;   // read: the predictions keep what they need (and the rows past the cutoff, below)
@@ -1461,7 +1465,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const partnerIsos = (pt) => {
     if (!B.cons.size) return null;
     if (!isoCache.has(pt.id)) {
-      const by = new Map(); for (const p of pt.preds) { if (!by.has(p.pc)) by.set(p.pc, []); by.get(p.pc).push(p); }
+      const by = new Map(); for (const p of pt.counted) { if (!by.has(p.pc)) by.set(p.pc, []); by.get(p.pc).push(p); }   // counted runs only: the same sequence under another name is a repeat, not an isoform
       isoCache.set(pt.id, by.size < 2 ? null : [...by].map(([pc, ps]) => { const c = B.cons.get(pc), il = ps.map((p) => p.iLIS || 0), ip = ps.map((p) => p.ipTM || 0);
         return { pc, label: c ? c.label : pc, kind: c ? c.kind : '', preds: [...ps].sort((a, b) => b.iLIS - a.iLIS), best: Math.max(...il), avg: mean(il), iptmBest: Math.max(...ip), iptmAvg: mean(ip),
           contacts: Math.max(...ps.map((p) => p.qcLIR || 0)), pass: ps.filter((p) => p.iLIS >= CUT[10]).length, n: ps.length }; }).sort((a, b) => b.best - a.best));
