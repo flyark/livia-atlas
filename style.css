@@ -478,3 +478,9 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 
 #sites-answer a, .res-look a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in running text are not told apart by color alone */
 .muted a:not(.btn), footer a, .reading p a, .reading caption a, .reading li a, .crumbs a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in notes and the footer */
+
+.kb-badge { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 4px 10px; border: 1px solid #E6B8BF; border-radius: 999px; background: #FDF1F3; color: #8E1B2C; font-size: 13px; font-weight: 600; text-decoration: none; }   /* a reported interaction: jumps to its references */
+.kb-badge:hover { background: #FAE3E7; }
+.pt.ref-tbl { width: 100%; table-layout: fixed; }
+.pt.ref-tbl th:nth-child(1) { width: 90px; } .pt.ref-tbl th:nth-child(2) { width: 150px; } .pt.ref-tbl th:nth-child(4) { width: 170px; } .pt.ref-tbl th:nth-child(5) { width: 64px; }
+.pt.ref-tbl td.t, .pt.ref-tbl td.a { white-space: normal; line-height: 1.4; }

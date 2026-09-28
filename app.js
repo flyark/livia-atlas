@@ -221,13 +221,13 @@ async function parseReported(sp, t) {
   if (+idx[2] !== N) return null;
   const dig = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(sp.rows.map((r) => r.key).join('\n')));
   if ([...new Uint8Array(dig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 12) !== idx[3]) return null;
-  const m = new Map(), gm = new Map();
+  const m = new Map(), gm = new Map(), rm = new Map();   // rm: the pair's publications, where the file carries them (per-protein shards)
   for (let p = 0; p < t.length;) { let e = t.indexOf('\n', p); if (e < 0) e = t.length;
-    if (t[p] !== '#' && t[p] !== 'i') { const [a, b, ph, ge] = t.slice(p, e).split('\t'), k = +a * N + +b;
-      if (+ph) m.set(k, +ph); if (+ge) gm.set(k, +ge); }
+    if (t[p] !== '#' && t[p] !== 'i') { const [a, b, ph, ge, pr, gr] = t.slice(p, e).split('\t'), k = +a * N + +b;
+      if (+ph) m.set(k, +ph); if (+ge) gm.set(k, +ge); if (pr || gr) rm.set(k, { p: pr ? pr.split(',') : [], g: gr ? gr.split(',') : [] }); }
     p = e + 1; }
   const release = ((head[0] || '').match(/BioGRID ([\d.]+)/) || [])[1] || '', at = (a, b) => Math.min(a, b) * N + Math.max(a, b);
-  return { release, pubs: (a, b) => m.get(at(a, b)) || 0, gen: (a, b) => gm.get(at(a, b)) || 0 };   // publications: physical, genetic
+  return { release, pubs: (a, b) => m.get(at(a, b)) || 0, gen: (a, b) => gm.get(at(a, b)) || 0, refs: (a, b) => rm.get(at(a, b)) || null };   // publications: physical, genetic; their ids
 }
 function reported(sp) {   // every reported pair of the species: the network views
   if (!sp.known) sp.known = (async () => { let t; try { t = await getText(sp.base + 'biogrid.tsv'); } catch (e) { return null; } return parseReported(sp, t); })();
@@ -2181,6 +2181,38 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 }
 
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
+// A pair reported in BioGRID: a badge in the pair's header that jumps to a card listing each publication (PubMed title,
+// authors and year from NCBI where the record is a PubMed id), from the same BioGRID release as the counts elsewhere.
+async function pairRefs(sp, P, O, gone) {
+  const R = sp.byKey.get(O.key); if (P.i == null || !R || R.i == null) return;
+  let K; try { K = await reportedOf(sp, P.i); } catch (e) { return; }
+  if (gone() || !K) return;
+  const ph = K.pubs(P.i, R.i), ge = K.gen(P.i, R.i), refs = K.refs && K.refs(P.i, R.i); if (!ph && !ge) return;
+  const head = app.querySelector('.phead .srcs');
+  if (head) head.insertAdjacentHTML('afterend', `<a class="kb-badge" href="#c-refs" title="${esc(kbTip0(K, ph, ge))}">Reported in BioGRID ${esc(K.release)} · ${[ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join(' · ')} ↓</a>`);
+  const badge = app.querySelector('.kb-badge'); if (badge) badge.onclick = (e) => { e.preventDefault(); $('#c-refs').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+  const rows = refs ? [...refs.p.map((x) => ['physical', x]), ...refs.g.map((x) => ['genetic', x])] : [];
+  const link = (x) => { const [k, v] = [x.slice(0, x.indexOf(':')), x.slice(x.indexOf(':') + 1)];
+    return k === 'PUBMED' ? `<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(v)}/" target="_blank" rel="noopener">PMID ${esc(v)} ↗</a>` : k === 'DOI' ? `<a href="https://doi.org/${esc(v)}" target="_blank" rel="noopener">doi:${esc(v)} ↗</a>` : esc(x); };
+  app.insertAdjacentHTML('beforeend', `<div class="card" id="c-refs"><div class="card-head"><h2>Reported interactions <span class="muted">BioGRID ${esc(K.release)}</span></h2>
+    <a class="btn" href="https://thebiogrid.org/" target="_blank" rel="noopener">BioGRID ↗</a></div>
+    <p class="muted" style="margin:2px 0 10px">Publications that BioGRID lists for ${esc(P.gene)} and ${esc(O.gene)}: a reported interaction, not a validation of this prediction.</p>
+    ${rows.length ? `<div class="tbl-wrap"><table class="pt ref-tbl"><thead><tr><th>Evidence</th><th>Publication</th><th>Title</th><th>Authors</th><th class="n">Year</th></tr></thead><tbody>${rows.map(([ty, x]) =>
+      `<tr data-ref="${esc(x)}"${rows.length > 25 && rows.indexOf(rows.find((z) => z[1] === x)) >= 25 ? ' hidden' : ''}><td>${ty}</td><td>${link(x)}</td><td class="t muted">…</td><td class="a"></td><td class="n y"></td></tr>`).join('')}</tbody></table></div>
+      ${rows.length > 25 ? `<div class="pager"><button class="more" type="button" id="refs-all">show all ${fmtInt(rows.length)}</button></div>` : ''}`
+      : `<p class="muted">${fmtInt(ph + ge)} publication${ph + ge === 1 ? '' : 's'}; this page's file does not list them. Search the pair on BioGRID.</p>`}</div>`);
+  const all = $('#refs-all'); if (all) all.onclick = () => { app.querySelectorAll('#c-refs tr[hidden]').forEach((t) => { t.hidden = false; }); all.remove(); };
+  const ids = [...new Set(rows.map(([, x]) => x).filter((x) => x.startsWith('PUBMED:')).map((x) => x.slice(7)))];
+  for (let i = 0; i < ids.length; i += 150) {   // NCBI E-utilities esummary: title, first author, year
+    let d; try { d = await (await fetch(`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id=${ids.slice(i, i + 150).join(',')}`)).json(); } catch (e) { d = null; }
+    if (gone()) return;
+    for (const tr of app.querySelectorAll('#c-refs tr[data-ref^="PUBMED:"]')) { const r = d && d.result && d.result[tr.dataset.ref.slice(7)]; if (!r && d) continue;
+      tr.querySelector('.t').textContent = r ? r.title || '' : ''; tr.querySelector('.t').classList.remove('muted');
+      if (r) { const au = r.authors || []; tr.querySelector('.a').textContent = au.length ? au[0].name + (au.length > 1 ? ' et al.' : '') : ''; tr.querySelector('.y').textContent = (r.pubdate || '').slice(0, 4); } }
+  }
+  for (const td of app.querySelectorAll('#c-refs td.t.muted')) td.textContent = '';
+}
+const kbTip0 = (K, ph, ge) => `reported in BioGRID ${K.release}: ${[ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ')}`;
 async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pair was opened from (a screen or a thematic set)
   const gen = ROUTE, sp = await species(spId), P = resolveRow(sp, q1), O0 = resolveRow(sp, q2);
   if (stale(gen)) return;
@@ -2237,6 +2269,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   $('#model-pick').onchange = (e) => pick(+e.target.value);
   app.querySelectorAll('.models tbody tr').forEach((tr) => tr.onclick = () => pick(+tr.dataset.i));
   pick(part.preds.indexOf(best));
+  pairRefs(sp, P, O, () => stale(gen));
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
 }
 
