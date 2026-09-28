@@ -137,7 +137,7 @@ table.pt { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .bar { display: inline-block; width: 64px; height: 7px; border-radius: 4px; background: var(--line-2); vertical-align: middle; margin-left: 8px; position: relative; overflow: hidden; }
 .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; }
 .band { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 5px; }
-.band.b1 { background: #EEE9FB; color: var(--fpr1-t); } .band.b5 { background: #E3F4EE; color: var(--fpr5-t); } .band.b10 { background: #FBF1DC; color: var(--fpr10-t); } .band.b0 { background: #F1F3F6; color: var(--ink-3); }
+.band.b1 { background: #F3EAFB; color: var(--fpr1-t); } .band.b5 { background: #E1F1EB; color: var(--fpr5-t); } .band.b10 { background: #F6EEDC; color: var(--fpr10-t); } .band.b0 { background: #F1F3F6; color: var(--ink-3); }
 .pager { display: flex; gap: 10px; align-items: center; justify-content: flex-end; font-size: 13px; color: var(--ink-2); margin-top: 10px; }
 
 /* network */
@@ -497,3 +497,4 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .lede-src { margin: -6px auto 18px; max-width: 640px; font-size: 13.5px; color: var(--ink-3); text-align: center; }   /* the source line under the home lede */
 .lede a, .lede-src a { text-decoration: underline; text-underline-offset: 2px; }   /* links in running text */
 .legend-text { margin: 2px 0 6px; font-size: 13px; color: var(--ink-3); }   /* a legend's sentence, above its swatches */
+.lede span.q { color: var(--query-t); font-weight: 700; }   /* the letters that spell cLIP */

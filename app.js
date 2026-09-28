@@ -977,7 +977,7 @@ async function viewHome() {
       <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
       <p class="lede">AlphaFold-Multimer predicts not only whether two proteins bind, but through which residues. Pooled across large-scale
         screens, those interfaces map a protein's many partners onto its sequence. On every protein page, <a href="${LIVIA}clip.html" target="_blank" rel="noopener">cLIP</a>
-        (clustered Local Interaction Profiler) groups the partners by the residues they contact, so partners that share a binding site fall into one cluster.<br>Search a protein
+        (<span class="q">c</span>lustered <span class="q">L</span>ocal <span class="q">I</span>nteraction <span class="q">P</span>rofiler) groups the partners by the residues they contact, so partners that share a binding site fall into one cluster.<br>Search a protein
         to see who is predicted to bind it, how confidently, and where.</p>
       <p class="lede-src">cLIP is part of <a href="${LIVIA}" target="_blank" rel="noopener">LIVIA</a>, a browser-based tool for assessing and visualizing predicted protein interactions
         (Kim &amp; Perrimon, 2026, <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">bioRxiv</a>).</p>
