@@ -1427,6 +1427,50 @@ function liftLabels(g, node) {
   const ws = d3.selectAll(wraps);
   return () => ws.attr('transform', (d) => `translate(${d.x},${d.y})`);
 }
+// A Find partner box that suggests partners with their iLIS, in place of the browser's datalist (a second column looks
+// different in every browser, and a native popup cannot be checked headless). items() returns the rows to list, each
+// {name, best, dot, sty, tip}, in the order to show; the list filters by what is typed (substring, any case), opens on focus,
+// click and typing, and picking a partner sets the box and fires input and change, so the box's own handlers run as if it
+// had been typed. Arrow keys move, Enter picks, Escape closes. The list sits on the page body, so no card clips it.
+const PSUG_ABORT = new Map();   // input id -> the controller of the window listeners its list added on the last draw
+function partnerSuggest(input, items) {
+  const id = `psug-${input.id}`, old = document.getElementById(id); if (old) old.remove();   // the page is drawn again on each route
+  if (PSUG_ABORT.has(id)) PSUG_ABORT.get(id).abort();
+  const ac = new AbortController(); PSUG_ABORT.set(id, ac);
+  const list = document.createElement('div'); list.className = 'psug'; list.id = id; list.hidden = true; list.setAttribute('role', 'listbox'); document.body.appendChild(list);
+  input.setAttribute('role', 'combobox'); input.setAttribute('aria-autocomplete', 'list'); input.setAttribute('aria-expanded', 'false'); input.setAttribute('aria-controls', id); input.autocomplete = 'off';
+  let rows = [], at = -1, picking = false, shown = 0;
+  const close = () => { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); at = -1; };
+  const mark = (n) => { at = n; [...list.querySelectorAll('.psug-row')].forEach((r, i) => { r.classList.toggle('on', i === n); r.setAttribute('aria-selected', i === n ? 'true' : 'false'); });
+    if (n >= 0) { const r = list.querySelectorAll('.psug-row')[n]; r.scrollIntoView({ block: 'nearest' }); input.setAttribute('aria-activedescendant', r.id); } else input.removeAttribute('aria-activedescendant'); };
+  const pick = (name) => { picking = true; close(); input.value = name; input.dispatchEvent(new Event('input', { bubbles: true })); input.dispatchEvent(new Event('change', { bubbles: true })); picking = false; };
+  const place = () => {   // under the box; kept open while the page scrolls or the phone's keyboard resizes the window, closed when the box leaves the screen
+    const r = input.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) { close(); return; }
+    const w = Math.max(230, r.width);
+    list.style.minWidth = `${w}px`; list.style.left = `${Math.max(8, Math.min(r.left, innerWidth - w - 8))}px`; list.style.top = `${r.bottom + 4}px`;
+    list.style.maxHeight = `${Math.max(140, Math.min(340, innerHeight - r.bottom - 16))}px`; };
+  const open = () => {
+    if (picking) return;
+    if (!input.isConnected) { list.remove(); return; }
+    const q = input.value.trim().toLowerCase(); rows = items().filter((it) => !q || it.name.toLowerCase().includes(q));
+    if (!rows.length) { close(); return; }
+    shown = Math.min(rows.length, 300);
+    list.innerHTML = rows.slice(0, shown).map((it, i) => `<div class="psug-row" role="option" aria-selected="false" id="${id}-${i}" data-i="${i}" title="${esc(it.tip || '')}"><span class="mdot" style="background:${it.dot}"></span><span class="psug-n">${esc(it.name)}</span><span class="psug-v num" style="${it.sty}">${it.best.toFixed(3)}</span></div>`).join('')
+      + (rows.length > shown ? `<div class="psug-more">${fmtInt(rows.length - shown)} more: keep typing</div>` : '');
+    list.hidden = false; place(); input.setAttribute('aria-expanded', 'true'); mark(-1);
+  };
+  input.addEventListener('focus', open); input.addEventListener('click', open); input.addEventListener('input', open);
+  input.addEventListener('keydown', (e) => {   // capture: before the box's own key handler, so Enter on a marked row picks it instead of searching
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); if (list.hidden) { open(); return; } mark(Math.max(0, Math.min(shown - 1, at + (e.key === 'ArrowDown' ? 1 : -1)))); }
+    else if (e.key === 'Enter' && !list.hidden && at >= 0) { e.preventDefault(); e.stopImmediatePropagation(); pick(rows[at].name); }
+    else if (e.key === 'Escape' && !list.hidden) { e.preventDefault(); e.stopPropagation(); close(); }   // preventDefault: Chrome's search box would also clear its text
+    else if (e.key === 'Tab') close();
+  }, true);
+  list.addEventListener('mousedown', (e) => { const row = e.target.closest('.psug-row'); if (!row) return; e.preventDefault(); pick(rows[+row.dataset.i].name); });
+  input.addEventListener('blur', () => setTimeout(close, 120));
+  const again = (e) => { if (!list.hidden && !(e.target instanceof Node && list.contains(e.target))) place(); };   // a resize's target is the window, not a node
+  addEventListener('resize', again, { signal: ac.signal }); addEventListener('scroll', again, { capture: true, signal: ac.signal });
+}
 const EWID = (a) => 0.5 + 4.3 * Math.max(0, Math.min(1, a / 0.8));
 function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene symbol (exact case first), a CG number or an older name
   if (sp.byKey.has(q)) return sp.byKey.get(q);
@@ -1493,7 +1537,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="card" id="c-partners"><div class="card-head"><div><h2>Overview</h2><div class="muted">each partner by its best model</div></div>
         <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
           <label>show <select id="sc-pts"><option value="partner">one per partner (best model)</option><option value="all">every prediction</option><option value="rank1">rank-1 per pair</option></select></label>
-          <input type="search" id="sc-find" list="sc-list" placeholder="Find partner" style="width:140px"><datalist id="sc-list"></datalist></div></div>
+          <input type="search" id="sc-find" placeholder="Find partner" aria-label="Find a partner in the plot" style="width:140px"></div></div>
       <div class="overview"><div><div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="muted" id="sc-def" style="margin:-4px 0 8px" hidden></div><div class="plot" id="scat2"><canvas id="scatter-canvas"></canvas></div><div class="legend" id="sc-legend"></div></div>
         <div><h3>Top partners <span class="muted">by the share of models past the 10% cutoff, then average iLIS</span></h3>
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span><span title="models past the 10% FPR cutoff, of the pair's models">models<br>past</span></div>
@@ -1525,11 +1569,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted">predictions contacting each residue, colored by their most frequent cluster</span>${xticks}</div></div>
       ${chips}<div class="plot" id="freq-wrap"></div><div class="domlegend" id="freq-domains"></div><div class="hot" id="hot"></div></div>
     <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per prediction, in dendrogram order · hover for the partner, click to open the pair</span>
-        <input type="search" id="fp-find" list="sc-list" placeholder="Find partner" style="width:140px" aria-label="Find a partner in the fingerprint">${xticks}</div></div>
+        <input type="search" id="fp-find" placeholder="Find partner" style="width:140px" aria-label="Find a partner in the fingerprint">${xticks}</div></div>
       ${chips}<div class="plot" id="fp-wrap"></div><p class="sites-more" id="fp-found" hidden></p>
       <div class="legend"><span><i style="background:#08306B"></i>contact residue (cLIR)</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each prediction</span></div></div>
     <div class="card" id="c-res"><div class="card-head"><h2>Interaction Residues</h2>
-        <div class="controls" style="margin:0"><select id="res-partner" aria-label="Partner" style="max-width:300px"></select><input type="search" id="res-find" placeholder="Find partner" style="width:130px"><select id="res-rank" aria-label="Model" style="max-width:280px"></select><span id="res-struct"></span></div></div>
+        <div class="controls" style="margin:0"><select id="res-partner" aria-label="Partner" style="max-width:300px"></select><input type="search" id="res-find" placeholder="Find partner" aria-label="Find a partner for the residue view" style="width:130px"><select id="res-rank" aria-label="Model" style="max-width:280px"></select><span id="res-struct"></span></div></div>
       <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not an interaction residue</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interaction residue (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span></div>
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
@@ -2143,7 +2187,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#sc-y').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
   $('#sc-x').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
   $('#sc-y').value = 'iLIS'; $('#sc-x').value = present.includes('iLISA') ? 'iLISA' : 'ipTM';
-  $('#sc-list').innerHTML = [...new Set(B.partners.map((p) => gname(p.id)))].sort((a, b) => a.localeCompare(b)).map((g) => `<option value="${esc(g)}"></option>`).join('');
+  const suggestItems = () => {   // each partner once, by its best iLIS, in name order; the dot is its cluster's color
+    const by = new Map(); for (const p of B.partners) { const n = gname(p.id), cur = by.get(n); if (!cur || p.best > cur.best) by.set(n, p); }
+    return [...by].sort((a, b) => a[0].localeCompare(b[0], undefined, { numeric: true })).map(([n, p]) => { const c = partnerCluster.get(p.id), k = M ? M.k : 1;   // UL2 before UL10
+      return { name: n, best: p.best, dot: c ? clusterColor(c, k) : '#DDE3EA', sty: bandSty(FPR.iLIS, p.best), tip: `iLIS ${p.best.toFixed(3)}: ${bandLabel[bandIn(FPR.iLIS, p.best)]}${c ? ` · ${clusterLabel(c)}` : ''}` }; }); };
+  ['#sc-find', '#fp-find', '#res-find'].forEach((q) => partnerSuggest($(q), suggestItems));   // all three Find partner boxes suggest partners with their iLIS
   ['#sc-x', '#sc-y', '#sc-pts'].forEach((s) => { $(s).onchange = () => drawScatter(); });
   $('#fp-find').oninput = () => { if (clustered()) drawHeatmap(); };
   $('#res-q').onchange = (e) => setRes(e.target.value);

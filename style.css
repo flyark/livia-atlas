@@ -505,3 +505,12 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .pt th.sortable { cursor: pointer; }
 table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric: normal; } table.cuts tr.avg td, table.cuts tr.avg th { border-top: 0; }
 .clinfo a.kb-p, .clinfo a.kb-g { padding: 0 3px; margin: 0 -1px; }   /* in running lists, a tighter mark, so the comma stays next to the name */
+
+/* Find partner suggestions: the partner's name with its iLIS (colored by the FPR band it passes) and its cluster's dot */
+.psug { position: fixed; z-index: 60; overflow-y: auto; background: var(--card); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 10px 30px rgba(23, 38, 58, 0.16); padding: 4px; }
+.psug[hidden] { display: none; }
+.psug-row { display: flex; align-items: center; gap: 10px; padding: 6px 10px; border-radius: 7px; cursor: pointer; font-size: 14px; color: var(--ink); }
+.psug-row.on, .psug-row:hover { background: var(--blue-soft); }
+.psug-n { flex: 1; min-width: 0; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.psug-v { font-size: 13px; }
+.psug-more { padding: 6px 10px 4px; font-size: 12.5px; color: var(--ink-3); }
