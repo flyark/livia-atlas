@@ -1486,10 +1486,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
       for (const b of bar.querySelectorAll('button')) { const t = document.getElementById(b.dataset.t); if (t && !t.hidden && t.getBoundingClientRect().top <= lim) on = b; }
       if (on === cur) return; cur = on; bar.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === on));
-      if (on && bar.scrollWidth > bar.clientWidth + 1) bar.scrollTo({ left: Math.max(0, on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2), behavior: 'smooth' }); };
+      if (on && bar.scrollWidth > bar.clientWidth + 1) bar.scrollTo({ left: Math.max(0, on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2), behavior: 'auto' }); };
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(spy); };
     window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(spy); }
-  app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'smooth' }); });
+  app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' }); });
   { const dm = $('.dmenu'), shut = (e) => { if (!dm || !dm.isConnected) { document.removeEventListener('click', shut); return; } if (dm.open && !dm.contains(e.target)) dm.open = false; }; document.addEventListener('click', shut); }
   app.querySelectorAll('[data-clip]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it here and hand its bytes to cLIP
     e.preventDefault(); const o = occ[+a.dataset.clip], w = window.open(`${LIVIA}clip.html?post=1`, '_blank'); if (!w) return;
@@ -1646,7 +1646,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       </tbody></table></div>
       <p class="muted" style="margin:10px 0 0;font-size:13.5px">All ${fmtInt(BA.choices.length)} together: ${fmtInt(all.n)} partners, ${fmtInt(all.p10)} past the 10% FPR cutoff.</p>`;
     const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; nav.prepend(btn);
-    btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - 112, behavior: 'smooth' });
+    btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' });
   }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); }; });
 
@@ -2315,7 +2315,7 @@ async function pairRefs(sp, P, O, gone) {
   const ph = K.pubs(P.i, R.i), ge = K.gen(P.i, R.i), refs = K.refs && K.refs(P.i, R.i); if (!ph && !ge) return;
   const head = app.querySelector('.phead .srcs');
   if (head) head.insertAdjacentHTML('afterend', `<a class="kb-badge" href="#c-refs" title="${esc(kbTip0(K, ph, ge))}">Reported in BioGRID ${esc(K.release)} · ${[ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join(' · ')} ↓</a>`);
-  const badge = app.querySelector('.kb-badge'); if (badge) badge.onclick = (e) => { e.preventDefault(); $('#c-refs').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+  const badge = app.querySelector('.kb-badge'); if (badge) badge.onclick = (e) => { e.preventDefault(); $('#c-refs').scrollIntoView({ behavior: 'auto', block: 'start' }); };
   const rows = refs ? [...refs.p.map((x) => ['physical', x]), ...refs.g.map((x) => ['genetic', x])] : [];
   const link = (x) => { const [k, v] = [x.slice(0, x.indexOf(':')), x.slice(x.indexOf(':') + 1)];
     return k === 'PUBMED' ? `<a href="https://pubmed.ncbi.nlm.nih.gov/${esc(v)}/" target="_blank" rel="noopener">PMID ${esc(v)} ↗</a>` : k === 'DOI' ? `<a href="https://doi.org/${esc(v)}" target="_blank" rel="noopener">doi:${esc(v)} ↗</a>` : esc(x); };
