@@ -1621,6 +1621,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     return (CQ._bg = { L, n, f, mean: sum / L, max, ok: n >= BG_MIN }); };
   const bgRatio = (st) => { const b = bgOf(); if (!b || !b.ok || !st.foot.length || !b.mean) return null;
     return st.foot.reduce((a, r) => a + (b.f[r] || 0), 0) / st.foot.length / b.mean; };
+  // Site enrichment: how often the site's own predictions contact its footprint, over how often predictions below the
+  // cutoff contact the same residues (both means over the footprint); a sticky surface is contacted by both
+  const bgEnrich = (st) => { const b = bgOf(); if (!b || !b.ok || !st.foot.length) return null;
+    const own = st.foot.reduce((a, r) => a + (st.hits.get(r) || 0) / st.n, 0), bg = st.foot.reduce((a, r) => a + (b.f[r] || 0), 0);
+    return bg > 0 ? own / bg : null; };
   const SITE_FRAC = 0.3;   // a site's footprint: residues contacted by at least 30% of its predictions (the cluster footprint of the paper)
   function sitesOf() {     // → sites, most partners first: cluster, predictions, partners by best iLIS, contacts per residue, footprint
     const by = new Map();
@@ -1756,7 +1761,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     box.innerHTML = range(M.k).map((c) => {
       const rows = [...(mem[c] || [])].map((x) => sp.byKey.get(x) || { key: x, gene: x }).sort((a, b) => a.gene.toLowerCase().localeCompare(b.gene.toLowerCase()));
       const show = infoOpen.has(c) ? rows : rows.slice(0, cap);
-      return `<div class="cl-row"><i style="background:${clusterColor(c, M.k)}"></i><div><b>${clusterLabel(c)}</b> <span class="muted">(${rows.length} / ${cnt[c]})${(() => { const st = siteBy.get(c), q = st && bgRatio(st); return q != null ? ` · <span title="mean background over the site's footprint, relative to the protein's mean">background ${q.toFixed(1)}× the protein mean</span>` : ''; })()}${KB ? ` · <span title="partners with a physical or genetic interaction reported in BioGRID ${KB.release}">${rows.filter((r) => kbOf(r.key)).length} of ${rows.length} reported</span>` : ''}</span>: ${show.map((r) => { const kb = kbOf(r.key);
+      return `<div class="cl-row"><i style="background:${clusterColor(c, M.k)}"></i><div><b>${clusterLabel(c)}</b> <span class="muted">(${rows.length} / ${cnt[c]})${(() => { const st = siteBy.get(c), q = st && bgRatio(st), e = st && bgEnrich(st); return q != null ? ` · <span title="mean background over the site's footprint, relative to the protein's mean">background ${q.toFixed(1)}× the protein mean</span>`
+        + (e != null ? `, <span title="how often the site's own predictions contact its footprint, over how often predictions below the cutoff contact the same residues">contacts ${e.toFixed(1)}× the background</span>` : '') : ''; })()}${KB ? ` · <span title="partners with a physical or genetic interaction reported in BioGRID ${KB.release}">${rows.filter((r) => kbOf(r.key)).length} of ${rows.length} reported</span>` : ''}</span>: ${show.map((r) => { const kb = kbOf(r.key);
         return `<a href="#/${sp.id}/${P.key}/${r.key}${scopeQ}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''}>${esc(r.gene)}</a>`; }).join(', ')}${rows.length > cap ? ` <button class="more" data-c="${c}">${infoOpen.has(c) ? 'show fewer' : `+${rows.length - cap} more`}</button>` : ''}</div></div>`; }).join('');
     box.querySelectorAll('.more').forEach((b) => b.onclick = () => { const c = +b.dataset.c; infoOpen.has(c) ? infoOpen.delete(c) : infoOpen.add(c); renderClusterInfo(); });
     const leg = $('#info-kb'), all = [...new Set(Object.values(mem).flatMap((x) => [...x]))].map(kbOf).filter(Boolean);
