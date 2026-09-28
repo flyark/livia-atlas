@@ -27,7 +27,8 @@ const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
 const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.3, 1247.4, 3078.8], iLISA: [143.9, 360.6, 1241.0],
   LIS: [0.168, 0.257, 0.439], cLIS: [0.298, 0.449, 0.716], ipSAE: [0.165, 0.363, 0.615], actifpTM: [0.745, 0.880, 0.963],
   pDockQ: [0.293, 0.385, 0.567], LIpDockQ: [0.108, 0.178, 0.332], pDockQ2: [0.022, 0.036, 0.158], LIpDockQ2: [0.058, 0.132, 0.377] };   // best model, same benchmark as iLIS
-const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442] };
+const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442], iLISA: [40.0, 101.7, 332.0], LIS: [0.057, 0.096, 0.201], cLIS: [0.084, 0.158, 0.358],
+  ipSAE: [0.039, 0.085, 0.241], actifpTM: [0.419, 0.504, 0.738], pDockQ: [0.288, 0.343, 0.438], LIpDockQ: [0.041, 0.064, 0.128], pDockQ2: [0.014, 0.019, 0.052], LIpDockQ2: [0.025, 0.044, 0.131] };   // mean of five models, same benchmark
 // A UniProt domain box under the pointer: its name and span (the plots draw D1, D2 … or a clipped name)
 const domTip = (d) => { const a = d.s != null ? d.s : d.start, z = d.e != null ? d.e : d.end; return `<b>${d.idx ? `D${d.idx} ` : ''}${esc(d.name)}</b><br>residues ${a}–${z} (${z - a + 1} aa) · UniProt domain`; };
 // Each screen's run settings (registry: models, recycles). The cutoffs were calibrated on five models with five recycles
@@ -1178,12 +1179,10 @@ async function viewAbout() {
       <b>iLIS</b>, the integrated local interaction score, computed by lis.py (${AFM} on GitHub) over residue pairs with predicted aligned error of at most 12 Å
       (LIS), and over those that are also in contact, Cβ–Cβ distance of at most 8 Å (cLIS): iLIS = √(LIS × cLIS). <b>iLISA</b> weighs iLIS by
       the size of the interface: iLISA = iLIS × iLIA, where iLIA = √(LIA × cLIA) and LIA and cLIA count the residue pairs that enter LIS and cLIS.</p>
-      <table class="cuts"><caption>Benchmarked cutoffs at a 10%, 5% and 1% false-positive rate, from Y2H reference sets in yeast, fly and human (${cite('flypredictome')})</caption>
-        <thead><tr><th></th><th>10% FPR</th><th>5% FPR</th><th>1% FPR</th></tr></thead>
-        <tbody>${[['iLIS, best model', FPR.iLIS, 3], ['iLIS, average over models', FPR_AVG.iLIS, 3], ['ipTM, best model', FPR.ipTM, 2], ['ipTM, average over models', FPR_AVG.ipTM, 3], ['iLISA, best model', FPR.iLISA, 1], ['LIS, best model', FPR.LIS, 3], ['cLIS, best model', FPR.cLIS, 3],
-          ['ipSAE, best model', FPR.ipSAE, 3], ['actifpTM, best model', FPR.actifpTM, 3], ['pDockQ, best model', FPR.pDockQ, 3], ['LIpDockQ, best model', FPR.LIpDockQ, 3],
-          ['pDockQ2, best model', FPR.pDockQ2, 3], ['LIpDockQ2, best model', FPR.LIpDockQ2, 3]]
-          .map(([l, c, d]) => `<tr><th>${l}</th>${c.map((v, j) => `<td style="color:${BAND_TXT[[10, 5, 1][j]]}">≥ ${v.toFixed(d)}</td>`).join('')}</tr>`).join('')}</tbody></table>
+      <table class="cuts"><caption>Cutoffs at a 10%, 5% and 1% false-positive rate, from Y2H reference sets in yeast, fly and human (357 positive and 1,255 negative pairs; ${cite('flypredictome')}), for the top-ranked model of a pair and for the average of its five models. The Atlas applies the top-ranked cutoffs to a pair's best model; on the same set that gives 10.4%, 5.3% and 1.1%. Cutoff tables: <a href="https://github.com/flyark/AFM-LIS/blob/main/thresholds_data_yfh_lipdockq.xlsx" target="_blank" rel="noopener">AFM-LIS repository ↗</a></caption>
+        <thead><tr><th>Metric</th><th>Model</th><th>10% FPR</th><th>5% FPR</th><th>1% FPR</th></tr></thead>
+        <tbody>${[['iLIS', 3], ['iLISA', 1], ['LIS', 3], ['cLIS', 3], ['ipTM', 2], ['ipSAE', 3], ['actifpTM', 3], ['pDockQ', 3], ['LIpDockQ', 3], ['pDockQ2', 3], ['LIpDockQ2', 3]]
+          .map(([m, d]) => [['top-ranked', FPR[m]], ['average of 5', FPR_AVG[m]]].map(([l, c], k) => `<tr${k ? ' class="avg"' : ''}>${k ? '' : `<th rowspan="2">${m}</th>`}<td class="mdl">${l}</td>${c ? c.map((v, j) => `<td style="color:${BAND_TXT[[10, 5, 1][j]]}">≥ ${v.toFixed(d)}</td>`).join('') : '<td>—</td><td>—</td><td>—</td>'}</tr>`).join('')).join('')}</tbody></table>
       <p class="muted">${CALIB} In practice they transfer well, and where two human screens called the same pair, they placed the interface on nearly the same residues. Each screen's models and recycles are listed on its <a href="#/datasets">dataset page</a>. The screens in the Atlas were scored with lis.py before 26 September 2026, which left out values exactly at a cutoff (a PAE of 12 Å, a Cβ distance of 8 Å); LIVIA includes them, and iLIS differs by at most about 0.003.</p>
       <p>Each protein has one page per species that gathers its predictions from every screen. A pair predicted in two screens, or both ways round,
       keeps every model with its source. The interface residues on both proteins are kept for every prediction, and each protein page runs

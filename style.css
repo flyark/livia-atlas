@@ -501,3 +501,4 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .cite-link:hover { color: var(--blue); }
 .tbl-find { display: block; margin: 0 0 8px auto; width: 200px; }   /* a table's filter box */
 .pt th.sortable { cursor: pointer; }
+table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric: normal; } table.cuts tr.avg td, table.cuts tr.avg th { border-top: 0; }
