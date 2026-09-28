@@ -263,6 +263,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .domlegend > b { color: var(--ink); }
 .clinfo { display: grid; gap: 8px; font-size: 13.5px; line-height: 1.65; }
 .cl-row { display: grid; grid-template-columns: 14px 1fr; gap: 10px; padding: 8px 12px; border: 1px solid var(--line-2); border-radius: 10px; background: #FBFCFD; }
+.cl-names { margin-top: 2px; }   /* the partner names on their own line, under the cluster's summary */
 .cl-row > i { width: 13px; height: 13px; border-radius: 3px; margin-top: 5px; }
 .clinfo a.kb-p { font-weight: 700; }   /* reported in BioGRID: physical bold, genetic underlined */
 .clinfo a.kb-g { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 2.5px; }
