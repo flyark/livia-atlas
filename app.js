@@ -204,7 +204,9 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
     const V = await getJSON(base + manifest.files.viruses);
     const c = Object.fromEntries(V.columns.map((k, i) => [k, i])), both = (r, f) => (c[`hetero_pos${f}`] == null ? null : r[c[`hetero_pos${f}`]] + r[c[`homo_pos${f}`]]);
     viruses = V.viruses.map((r) => ({ taxid: r[c.taxid], name: r[c.name], n: r[c.proteins], het: r[c.hetero_pairs], hom: r[c.homo_pairs], hpos: r[c.hetero_pos10], mpos: r[c.homo_pos10],
-      pos5: both(r, 5), pos1: both(r, 1), pwp: r[c.proteins_with_partner], members: r[c.rows] }));
+      pos5: both(r, 5), pos1: both(r, 1), pwp: r[c.proteins_with_partner], members: r[c.rows],
+      family: c.family != null ? r[c.family] || '' : '', genus: c.genus != null ? r[c.genus] || '' : '', host: c.host != null ? r[c.host] || '' : '',   // ICTV VMR MSL40
+      species: c.species != null ? r[c.species] || '' : '', spTax: c.species_taxid != null ? r[c.species_taxid] : null, lineage: c.lineage != null ? r[c.lineage] || [] : [] }));
     for (const v of viruses) for (const i of v.members) rows[i].virus = v;
   }
   return { id, reg, base, manifest, rows, byKey, byName, byGene, keys, viruses, dsIds, dsShort: manifest.datasets.map((d) => d.short),
@@ -673,7 +675,7 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
     const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(((await registry()).species || []).map((x) => species(x.id).catch(() => null)));
     const many = sps.filter(Boolean).length > 1;
     const t = q.trim().toLowerCase(), al = VALIAS[t] || [], vir = (t.length < 3 && !al.length) || only ? [] : sps.filter((sp) => sp && sp.viruses).flatMap((sp) => sp.viruses.map((v) => {
-      const nm = v.name.toLowerCase(), score = nm === t || al.includes(nm) ? 3 : nm.startsWith(t) ? 2 : nm.includes(t) ? 1 : 0; return { v, sp, score }; }))
+      const nm = v.name.toLowerCase(), spn = (v.species || '').toLowerCase(), score = nm === t || al.includes(nm) || spn === t ? 3 : nm.startsWith(t) || spn.startsWith(t) ? 2 : nm.includes(t) ? 1 : 0; return { v, sp, score }; }))
       .filter((x) => x.score).sort((a, b) => b.score - a.score || b.v.hpos - a.v.hpos).slice(0, 4);   // a named virus first
     const hits = sps.filter(Boolean).flatMap((sp) => scoreProteins(sp, q, only ? 400 : 10).filter((h) => !only || only.has(h.row.key)).map((h) => ({ ...h, sp })));
     let prot;
@@ -2258,7 +2260,7 @@ async function viewSpecies(spId) {
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
     ${sp.viruses ? `<div class="card" id="vir-card"><div class="card-head"><div><h2>Viruses</h2><div class="muted">${fmtInt(sp.viruses.length)} viruses; in each, every pair of its proteins was folded. Open one for its network.</div></div>
-      <input type="search" id="vir-filter" placeholder="Filter by name" aria-label="Filter viruses by name" style="width:220px"></div>
+      <input type="search" id="vir-filter" placeholder="Filter by name or family" aria-label="Filter viruses by name, family, genus or species" style="width:220px"></div>
       <div class="tbl-wrap"><table class="pt" id="vir-t"></table></div><p class="muted" id="vir-note" style="margin:8px 0 0"></p></div>` : ''}
     <div class="card"><div class="card-head"><div><h2>Network of your proteins</h2><div class="muted">name a few ${sp.manifest.keyedBy ? 'genes' : 'proteins'}; see the predicted pairs among them and, if you like, the partners they share</div></div>
       <a class="btn" href="#/${sp.id}/network">Build a network →</a></div></div>
@@ -2270,12 +2272,20 @@ async function viewSpecies(spId) {
       <div class="chips">${hubs.map((r) => `<a class="chip" href="#/${sp.id}/${r.key}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`).join('')}</div></div>
     ${TSs.map(setsCard).join('')}`;
   mountSearch($('#sp-search'), { spId });
-  if (sp.viruses) {   // the virus list: most pairs past the 10% FPR cutoff first, filtered by name
-    const draw = () => { const f = $('#vir-filter').value.trim().toLowerCase(), al = VALIAS[f] || [], all = sp.viruses.filter((v) => !f || v.name.toLowerCase().includes(f) || al.includes(v.name.toLowerCase())).sort((a, b) => (b.hpos + b.mpos) - (a.hpos + a.mpos) || b.n - a.n), show = all.slice(0, 60);
+  if (sp.viruses) {   // the virus list: by family, then name (or any column clicked); filtered by name, family, genus or species
+    const VS = { key: 'family', asc: true }, name = (v) => v.name.toLowerCase();
+    const COLS = [['name', 'Virus', name], ['family', 'Family', (v) => (v.family || '\uffff').toLowerCase()], ['host', 'Host', (v) => (v.host || '\uffff').toLowerCase()], ['n', 'Proteins', (v) => v.n],
+      ['pairs', 'Pairs folded', (v) => v.het + v.hom], ['p10', `Past 10% FPR${cutNote(10)}`, (v) => v.hpos + v.mpos], ['p5', `Past 5% FPR${cutNote(5)}`, (v) => v.pos5 || 0],
+      ['p1', `Past 1% FPR${cutNote(1)}`, (v) => v.pos1 || 0], ['pwp', 'Proteins with a partner', (v) => v.pwp]];
+    const draw = () => { const f = $('#vir-filter').value.trim().toLowerCase(), al = VALIAS[f] || [], [, , val] = COLS.find(([k]) => k === VS.key);
+      const all = sp.viruses.filter((v) => !f || name(v).includes(f) || al.includes(name(v)) || [v.family, v.genus, v.species].some((x) => x && x.toLowerCase().includes(f)))
+        .sort((a, b) => { const x = val(a), y = val(b), d = typeof x === 'string' ? x.localeCompare(y) : x - y; return (VS.asc ? d : -d) || name(a).localeCompare(name(b)); }), show = all.slice(0, 60);
       const n = (x) => (x == null ? '<span class="muted">—</span>' : fmtInt(x));
-      $('#vir-t').innerHTML = `<thead><tr><th>Virus</th><th class="n">Proteins</th><th class="n">Pairs folded</th>${[10, 5, 1].map((f) => `<th class="n">Past ${f}% FPR${cutNote(f)}</th>`).join('')}<th class="n">Proteins with a partner</th></tr></thead><tbody>${show.map((v) =>
-        `<tr><td class="g"><a href="#/${sp.id}/taxon/${v.taxid}">${esc(v.name)}</a></td><td class="n">${fmtInt(v.n)}</td><td class="n">${fmtInt(v.het + v.hom)}</td><td class="n">${fmtInt(v.hpos + v.mpos)}</td><td class="n">${n(v.pos5)}</td><td class="n">${n(v.pos1)}</td><td class="n">${fmtInt(v.pwp)}</td></tr>`).join('')}</tbody>`;
-      $('#vir-note').textContent = all.length > show.length ? `${fmtInt(show.length)} of ${fmtInt(all.length)} shown; type to narrow.` : `${fmtInt(all.length)} shown.`; };
+      $('#vir-t').innerHTML = `<thead><tr>${COLS.map(([k, l]) => `<th data-k="${k}" class="${['name', 'family', 'host'].includes(k) ? '' : 'n'}${VS.key === k ? ' sorted' + (VS.asc ? ' asc' : '') : ''}">${l}</th>`).join('')}</tr></thead><tbody>${show.map((v) =>
+        `<tr><td class="g"><a href="#/${sp.id}/taxon/${v.taxid}">${esc(v.name)}</a></td><td title="${esc(v.genus ? 'genus ' + v.genus : '')}">${esc(v.family || '—')}</td><td class="nm">${esc(v.host || '—')}</td><td class="n">${fmtInt(v.n)}</td><td class="n">${fmtInt(v.het + v.hom)}</td><td class="n">${fmtInt(v.hpos + v.mpos)}</td><td class="n">${n(v.pos5)}</td><td class="n">${n(v.pos1)}</td><td class="n">${fmtInt(v.pwp)}</td></tr>`).join('')}</tbody>`;
+      $('#vir-t').querySelectorAll('th').forEach((th) => th.onclick = () => { const k = th.dataset.k; VS.asc = VS.key === k ? !VS.asc : ['name', 'family', 'host'].includes(k); VS.key = k; draw(); });
+      $('#vir-note').textContent = (all.length > show.length ? `${fmtInt(show.length)} of ${fmtInt(all.length)} shown; type to narrow.` : `${fmtInt(all.length)} shown.`)
+        + ' Family and host from the ICTV Virus Metadata Resource (MSL40); click a column to sort.'; };
     $('#vir-filter').oninput = draw; draw();
   }
 }
@@ -2286,7 +2296,11 @@ async function viewSpecies(spId) {
 async function viewVirus(spId, taxid) {
   const gen = ROUTE, sp = await species(spId), v = (sp.viruses || []).find((x) => String(x.taxid) === String(taxid));
   if (stale(gen)) return;
-  if (!v) { app.innerHTML = `<div class="empty">No virus with taxon ${esc(taxid)} here. <a href="#/${sp.id}">All viruses</a></div>`; return; }
+  if (!v) {   // a species taxid (NCBI): its strain here, or the list of them
+    const kin = (sp.viruses || []).filter((x) => x.lineage.some((t) => String(t) === String(taxid)));   // any NCBI taxon between the family and the virus
+    if (kin.length === 1) { location.replace(`#/${sp.id}/taxon/${kin[0].taxid}`); return; }
+    app.innerHTML = kin.length ? `<div class="empty">Taxon ${esc(taxid)} holds ${fmtInt(kin.length)} viruses here: ${kin.slice(0, 60).map((x) => `<a href="#/${sp.id}/taxon/${x.taxid}">${esc(x.name)}</a>`).join(', ')}${kin.length > 60 ? ` and ${fmtInt(kin.length - 60)} more` : ''}.</div>`
+      : `<div class="empty">No virus with taxon ${esc(taxid)} here. <a href="#/${sp.id}">All viruses</a></div>`; return; }
   document.title = `${v.name} · LIVIA Atlas`;
   // this virus's pairs at iLIS >= 0.223 (homodimers included) with every score lis.py wrote: data/species/virus/pairs/<taxid>.tsv
   let text; try { text = await getText(sp.base + `pairs/${v.taxid}.tsv`); } catch (e) { if (!stale(gen)) app.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
@@ -2305,6 +2319,7 @@ async function viewVirus(spId, taxid) {
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(v.name)}</div>
     <div class="phead"><div><h1>${esc(v.name)}</h1>
       <div class="pname">every pair of its ${fmtInt(v.n)} proteins folded with AlphaFold-Multimer (one model each) and scored with lis.py</div>
+      ${v.family ? `<div class="pname">${esc(v.family)}${v.genus ? ` · <i>${esc(v.genus)}</i>` : ''}${v.species ? ` · species <i>${esc(v.species)}</i>` : ''}${v.host ? ` · host: ${esc(v.host)}` : ''} <span class="muted">(ICTV VMR MSL40)</span></div>` : ''}
       <div class="ids"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${v.taxid}" target="_blank" rel="noopener">NCBI taxon ${v.taxid}</a><span>${fmtInt(v.het)} heterodimers · ${fmtInt(v.hom)} homodimers folded</span></div>
       <div class="actions">${citeBtn(`${v.name} (virus)`)}</div></div>
       <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR${cutNote(10)}</span></div>
