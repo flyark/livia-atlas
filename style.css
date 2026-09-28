@@ -4,6 +4,7 @@
   --navy: #1A5276; --blue: #2471A3; --blue-soft: #E8F1F8;
   --query: #00897B; --query-l: #B2DFDB; --partner: #E64A19; --partner-l: #FFCCBC;
   --fpr1: #6D4FD1; --fpr5: #16956A; --fpr10: #C78B00; --below: #A7B2BF;
+  --fpr1-t: #6D4FD1; --fpr5-t: #127A57; --fpr10-t: #8F6400; --below-t: #5D6C7F; --query-t: #00776B; --partner-t: #C13E15;   /* the same bands as text: at least 4.5:1 on white and on their chips */
   --display: 'Archivo', 'Helvetica Neue', 'Segoe UI', system-ui, sans-serif;
   --sans: 'IBM Plex Sans', 'Helvetica Neue', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
@@ -73,7 +74,7 @@ a:hover { text-decoration: underline; }
 .ds .stats span { font-size: 12px; color: var(--ink-3); }
 .ds .src-line { font-size: 13px; color: var(--ink-2); }
 .ds .badge { align-self: flex-start; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; padding: 3px 8px; border-radius: 6px; }
-.badge.on { background: #E3F4EE; color: var(--fpr5); }
+.badge.on { background: #E3F4EE; color: var(--fpr5-t); }
 .badge.soon { background: #F1F3F6; color: var(--ink-3); }
 
 /* ── cards / protein page ── */
@@ -90,7 +91,7 @@ a:hover { text-decoration: underline; }
 .kpi { min-width: 96px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
 .kpi b { display: block; font-family: var(--mono); font-size: 22px; font-weight: 600; line-height: 1.1; }
 .kpi span { font-size: 11.5px; color: var(--ink-3); letter-spacing: 0.02em; }
-.kpi.f1 b { color: var(--fpr1); } .kpi.f5 b { color: var(--fpr5); } .kpi.f10 b { color: var(--fpr10); }
+.kpi.f1 b { color: var(--fpr1-t); } .kpi.f5 b { color: var(--fpr5-t); } .kpi.f10 b { color: var(--fpr10-t); }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 4px 0 20px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 16px; border-radius: 9px; font: 600 14px var(--sans); border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
 .btn:hover { text-decoration: none; border-color: var(--blue); color: var(--blue); }
@@ -122,7 +123,7 @@ table.pt { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .bar { display: inline-block; width: 64px; height: 7px; border-radius: 4px; background: var(--line-2); vertical-align: middle; margin-left: 8px; position: relative; overflow: hidden; }
 .bar i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 4px; }
 .band { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 7px; border-radius: 5px; }
-.band.b1 { background: #EEE9FB; color: var(--fpr1); } .band.b5 { background: #E3F4EE; color: var(--fpr5); } .band.b10 { background: #FBF1DC; color: var(--fpr10); } .band.b0 { background: #F1F3F6; color: var(--ink-3); }
+.band.b1 { background: #EEE9FB; color: var(--fpr1-t); } .band.b5 { background: #E3F4EE; color: var(--fpr5-t); } .band.b10 { background: #FBF1DC; color: var(--fpr10-t); } .band.b0 { background: #F1F3F6; color: var(--ink-3); }
 .pager { display: flex; gap: 10px; align-items: center; justify-content: flex-end; font-size: 13px; color: var(--ink-2); margin-top: 10px; }
 
 /* network */
@@ -292,8 +293,8 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .pt th.n { text-align: right; }
 .models th { cursor: default; }
 .models th.grp { text-align: center; }
-.models th.q { color: var(--query); }
-.models th.p { color: var(--partner); }
+.models th.q { color: var(--query-t); }
+.models th.p { color: var(--partner-t); }
 .models tbody tr { cursor: pointer; }
 .models tbody tr.on td { background: var(--blue-soft); }
 
@@ -322,7 +323,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .xt { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
 .xt input { width: 62px; font: 12.5px var(--mono); padding: 3px 6px; border: 1px solid var(--line); border-radius: 6px; }
 /* LIVIA's figure export bar (↓ SVG · ↓ PNG · W · H · font ×), for the SVG figures too */
-.xbar { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; justify-content: center; margin-top: 6px; font-size: 0.72rem; color: #888; }
+.xbar { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; justify-content: center; margin-top: 6px; font-size: 0.72rem; color: #6B6B6B; }
 .xbar button { font-size: 0.72rem; color: #2471A3; background: none; border: none; cursor: pointer; font-weight: 600; padding: 0 6px; }
 .xbar input { width: 58px; font-size: 0.7rem; padding: 1px 3px; color: #555; }
 @media (max-width: 720px) { .dm-pop { min-width: 0; width: calc(100vw - 40px); } .dm-row { grid-template-columns: 1fr; gap: 4px; } }
@@ -364,7 +365,7 @@ table.cuts thead th { font-size: 12px; color: var(--ink-3); font-weight: 600; }
 .hero-center .chips { max-width: var(--col); column-gap: 18px; row-gap: 10px; }
 .chip-group { display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; }   /* a species keeps its examples */
 .hero-center .showcase { width: 100%; max-width: var(--col); margin-top: 34px; text-align: left; }
-.showcase span.q { color: var(--query); font-weight: 600; }
+.showcase span.q { color: var(--query-t); font-weight: 600; }
 .showcase .sc-own { margin-top: 10px; font-size: 13px; color: var(--ink-2); }   /* the way from the Atlas to cLIP on your own data */
 .showcase .sc-own a { color: var(--blue); font-weight: 600; text-decoration: none; }
 .showcase .sc-own a:hover { text-decoration: underline; }   /* cLIP and its initials, as the title's teal (beats .sc-top span) */
@@ -380,7 +381,8 @@ select { max-width: 100%; }
 .scope .lbl { color: var(--ink-3); margin-right: 2px; }
 .scope .sep { width: 1px; height: 18px; background: var(--line); margin: 0 4px; }
 .scope-chip { text-decoration: none; cursor: pointer; }
-.scope-chip .n { font-family: var(--mono); font-size: 11px; opacity: .75; margin-left: 3px; }
+.scope-chip .n { font-family: var(--mono); font-size: 11px; color: var(--ink-2); margin-left: 3px; }   /* ink, not the chip color: readable on every chip */
+.scope-chip.on .n { color: inherit; }
 .scope-chip.all { --c: #5B6B7F; }
 .scope-chip.on { background: var(--c); color: #fff; }
 .scope-chip.on .n { opacity: .9; }
@@ -464,3 +466,6 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .kbkey .kbrow i { display: inline-block; width: 26px; height: 4px; border-radius: 2px; }
 .kbkey .kbrow i.kb-dash { height: 0; border-top: 1.5px dashed #B3122E; border-radius: 0; }
 .kbkey .kbrow i.kb-grad { width: 70px; background: linear-gradient(90deg, #C5CCD4, #1E2A38); }
+
+#sites-answer a, .res-look a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in running text are not told apart by color alone */
+.muted a:not(.btn), footer a, .reading p a, .reading caption a, .reading li a, .crumbs a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in notes and the footer */
