@@ -53,11 +53,22 @@ const BAND_W = { 1: 700, 5: 600, 10: 500, 0: 400 };   // weight grows with the b
 const bandSty = (cuts, v) => `color:${bandCol(cuts, v)};font-weight:${BAND_W[bandIn(cuts, v)]}`;
 const ARCHIVE = { doi: '10.5281/zenodo.22964479', url: 'https://doi.org/10.5281/zenodo.22964479' };   // the atlas's data record: the concept DOI, always the latest version
 // "Cite this view": the page, its link and the date, with the Atlas data record, copied for a methods section or a legend
-const citeBtn = (title) => `<button class="btn" type="button" data-cite="${esc(title)}" title="copy a citation of this page: its title, link and today's date, with the Atlas data record">Cite this view</button>`;
-const citeText = (title) => `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (accessed ${new Date().toISOString().slice(0, 10)}). Data: Kim, A.-R. & Perrimon, N. (2026). LIVIA Atlas. Zenodo. https://doi.org/${ARCHIVE.doi}. Method: Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}`;
+const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" data-cite="${esc(title)}" data-ds="${esc(ds.join(','))}" title="copy a citation of this page: its title, link and date, the Atlas data version it reads, and the screens its predictions come from">Cite</button>`;
+// A page's citation: the page (title, link, date), the Atlas data version each of its screens is read from (the Zenodo
+// version DOI, not the concept DOI that always opens the newest), the method, and the source of each screen shown, which
+// the screens' licenses (CC BY) require.
+const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && d.zip.url) || ''); return m ? m[1] : null; };
+const citeText = (title, ids = []) => {
+  const ds = ids.map((id) => ((REG && REG.datasets) || []).find((d) => d.id === id)).filter(Boolean);
+  const recs = [...new Set(ds.map(recOf).filter(Boolean))], data = recs.length ? recs.map((r) => `https://doi.org/10.5281/zenodo.${r}`).join(', ') : `https://doi.org/${ARCHIVE.doi}`;
+  const src = [...new Set(ds.filter((d) => d.paper && !d.paper.includes(ARCHIVE.doi)).map((d) => `${d.source.replace(' · ', ', ')}, ${d.paper}`))];
+  return `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (accessed ${new Date().toISOString().slice(0, 10)}). `
+    + `Data: Kim, A.-R. & Perrimon, N. (2026). LIVIA Atlas. Zenodo. ${data}. Method: Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}`
+    + (src.length ? `. Predictions: ${src.join('; ')}.` : '');
+};
 document.addEventListener('click', async (e) => {
   const b = e.target.closest && e.target.closest('[data-cite]'); if (!b) return;
-  const t = citeText(b.dataset.cite), box = b.parentElement.parentElement.querySelector('.cite-box');
+  const t = citeText(b.dataset.cite, (b.dataset.ds || '').split(',').filter(Boolean)), box = b.parentElement.parentElement.querySelector('.cite-box');
   try { await navigator.clipboard.writeText(t); b.textContent = 'Copied'; setTimeout(() => { b.textContent = 'Cite this view'; }, 2000); if (box) box.remove(); }
   catch (err) {   // no clipboard (an insecure page, a locked-down browser): show the text to copy by hand
     const ta = box || Object.assign(document.createElement('textarea'), { className: 'cite-box', readOnly: true, rows: 3 });
@@ -258,7 +269,7 @@ function reported(sp) {   // every reported pair of the species: the network vie
 // in it), so a protein page reads ~100 kB instead of the whole file; species without shards read the whole file.
 function reportedOf(sp, i) {
   const S = (sp.manifest.files || {}).biogridShards; if (!S || i == null) return reported(sp);
-  if (sp.known) return sp.known;   // the whole file is already here
+  // always the protein's shard, even when the whole file is loaded: the shard carries each pair's publications
   sp.knownShard = sp.knownShard || new Map(); const k = i % S;
   if (!sp.knownShard.has(k)) sp.knownShard.set(k, (async () => { let t; try { t = await getText(`${sp.base}biogrid/${k}.tsv`); } catch (e) { return reported(sp); } return parseReported(sp, t); })());
   return sp.knownShard.get(k);
@@ -627,6 +638,9 @@ const runLabel = (sp, B, rid, P) => { const ru = B.runs.get(rid); if (!ru) retur
 // FlyPredictome's source categories (the paper's), as badges
 const SET_COL = { 'Ligand–receptor': '#2B7A78', Kinase: '#B04A73', 'Kinase–TF': '#9A4A8F', 'Literature-derived': '#8C6D31', 'Large-scale proteomics': '#2B5F8E',
   'Subcellular organelle': '#5E7D2B', 'Inferred from orthologs': '#B5543C', Other: '#5B6B7F' };
+const srcPapers = (sp, mask) => { const seen = new Set();   // the paper behind each screen in `mask`, linked
+  return sp.dsIds.filter((_, di) => mask & (1 << di)).map((id) => ((REG && REG.datasets) || []).find((d) => d.id === id)).filter((d) => d && d.paper && !seen.has(d.source) && seen.add(d.source))
+    .map((d) => `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source.split(' · ')[0])} ↗</a>`).join(', '); };
 const setBadges = (sets) => sets.map((s) => `<span class="src" style="--c:${SET_COL[s] || '#5B6B7F'}">${esc(s)}</span>`).join('');
 const runColor = (sp, p) => (p.set ? SET_COL[p.set] || '#5B6B7F' : sp.dsColor[p.di]);
 // A protein's predicted sequence: from a bundle FASTA when one carries it, else a screen's per-protein s/<name>.fa.
@@ -1051,10 +1065,34 @@ async function showcase() {
     g.fillStyle = '#627085'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textBaseline = 'alphabetic';
     g.textAlign = 'left'; g.fillText('1', X0, H - 3); g.textAlign = 'right'; g.fillText(fmtInt(L), W, H - 3);
   };
+  const drawNet = (s) => {   // a virus slide: its network at the cutoff, as on the virus page (gray edges by iLIS, black rings for homodimers)
+    const cv = $('#sc-cv'), W = cv.clientWidth, H = 206, g = canvasCtx(cv, W, H);
+    if (!s._pos) { const nodes = s.nodes.map((l, i) => ({ i })), links = s.edges.map(([a, b, w]) => ({ source: a, target: b, w }));
+      const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).distance(26).strength(0.6)).force('charge', d3.forceManyBody().strength(-38))
+        .force('x', d3.forceX(0).strength(0.05)).force('y', d3.forceY(0).strength(0.09)).stop();
+      for (let t = 0; t < 320; t++) sim.tick();
+      const xs = nodes.map((n) => n.x), ys = nodes.map((n) => n.y), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+      s._pos = nodes.map((n) => [(n.x - x0) / Math.max(1, x1 - x0), (n.y - y0) / Math.max(1, y1 - y0)]); }
+    const P = s._pos.map(([u, v]) => [24 + u * (W - 48), 14 + v * (H - 28)]), deg = new Map(); s.edges.forEach(([a, b]) => { deg.set(a, (deg.get(a) || 0) + 1); deg.set(b, (deg.get(b) || 0) + 1); });
+    for (const [a, b, w] of s.edges) { g.strokeStyle = EGRAY(w); g.lineWidth = EWID(w); g.beginPath(); g.moveTo(...P[a]); g.lineTo(...P[b]); g.stroke(); }
+    const homo = new Set(s.homo);
+    P.forEach(([x, y], i) => { g.beginPath(); g.arc(x, y, 4.5, 0, 2 * Math.PI); g.fillStyle = '#2B6CB0'; g.fill(); if (homo.has(i)) { g.lineWidth = 1.6; g.strokeStyle = '#17263A'; g.stroke(); } });
+    g.font = '600 10px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'alphabetic';
+    P.forEach(([x, y], i) => { if ((deg.get(i) || 0) < 3) return; g.lineWidth = 3; g.strokeStyle = 'rgba(255,255,255,0.9)'; g.strokeText(s.nodes[i], x, y - 7); g.fillStyle = '#17263A'; g.fillText(s.nodes[i], x, y - 7); });
+  };
   const show = (k, user) => {
     if (stale(gen) || !box.isConnected) { clearInterval(timer); return; }
     at = (k + S.length) % S.length; const s = S[at], href = `#/${s.sp}/${encodeURIComponent(s.key)}`;
     const paint = () => {
+      if (s.kind === 'virus') {   // a virus: its predicted network
+        const vh = `#/virus/taxon/${s.taxid}`;
+        $('#sc-gene').textContent = s.gene; $('#sc-gene').href = vh; $('#sc-sp').textContent = s.spLabel;
+        $('#sc-note').innerHTML = `virus network · ${fmtInt(s.proteins)} proteins · ${fmtInt(s.edges.length)} pairs and ${fmtInt(s.homo.length)} homodimers past 5% FPR (iLIS ≥ ${s.cut})`;
+        $('#sc-cap').innerHTML = 'every protein pair of the virus folded and scored: an edge per pair past the cutoff, darker for higher iLIS; ringed proteins bind themselves';
+        $('#sc-open').textContent = `Open ${s.gene} →`; $('#sc-open').href = vh;
+        drawNet(s); box.querySelectorAll('.sc-dots button').forEach((b, i) => b.setAttribute('aria-current', i === at ? 'true' : 'false'));
+        box.classList.remove('sc-out'); return;
+      }
       $('#sc-gene').textContent = s.gene; $('#sc-gene').href = href; $('#sc-sp').textContent = s.spLabel;
       $('#sc-note').innerHTML = `<span class="q">c</span>lustered <span class="q">L</span>ocal <span class="q">I</span>nteraction <span class="q">P</span>rofiler (<span class="q">cLIP</span>) · ${s.k} clusters · ${fmtInt(s.partners)} partners past 10% FPR`;
       $('#sc-cap').innerHTML = '<span class="q">cLIP</span> groups partners by the residues they contact: '   // the full name is on the line above
@@ -1077,14 +1115,14 @@ async function showcase() {
     if (Math.abs(dx) > 40 && Math.abs(dx) > 1.5 * Math.abs(dy)) step(dx < 0 ? 1 : -1); }, { passive: true });
   box.addEventListener('mouseenter', () => { paused = true; }); box.addEventListener('mouseleave', () => { paused = false; });
   box.addEventListener('focusin', () => { paused = true; }); box.addEventListener('focusout', () => { paused = false; });
-  window.onresize = () => { if (box.isConnected) draw(S[at]); };
+  window.onresize = () => { if (box.isConnected) (S[at].kind === 'virus' ? drawNet : draw)(S[at]); };
   show(0); run();
 }
 
 async function viewDatasets() {
   const gen = ROUTE, reg = await registry();
   if (stale(gen)) return;
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Datasets</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div>
     ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
     <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>`;
@@ -1129,7 +1167,7 @@ async function viewAbout() {
   const andJoin = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
   const screenList = [...groups.values()].map((g) => { const t = `<b>${esc(g.titles.length > 1 ? `${g.short} screens (${andJoin(g.sps)})` : g.titles[0])}</b>: ${g.text}`;
     return g.k ? ref(g.k, t) : `<li>${t}</li>`; }).join('');
-  app.innerHTML = `<div class="reading about"><div class="crumbs"><a href="#/">Atlas</a> / About</div>
+  app.innerHTML = `<div class="reading about"><div class="crumbs"><a href="#/">Atlas</a> / <a href="#/about">About</a></div>
     <div class="card" style="margin-top:6px"><h2>What this is</h2>
       <p>LIVIA Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
       <b>iLIS</b>, the integrated local interaction score, computed by lis.py (${AFM} on GitHub) over residue pairs with predicted aligned error of at most 12 Å
@@ -1231,7 +1269,7 @@ async function viewTheme(id) {
   const rows = await themeMembers(T), sum = (k) => rows.reduce((a, r) => a + (r.counts[k] || 0), 0);
   if (stale(gen)) return;
   const cite = (src) => (src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(shortCite(src))} ↗</a>` : '');
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Themes / ${esc(T.title)}</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Themes</a> / <a href="#/themes/${T.id}">${esc(T.title)}</a></div>
     <div class="dshead"><h1>${esc(T.title)}</h1><div class="pname">${esc(T.about || '')}</div></div>
     ${kpiRow({ proteins: sum('proteins'), pairs: sum('pairs'), runs: sum('runs'), predictions: sum('predictions'), pairsFpr10: sum('pairsFpr10'), pairsFpr5: sum('pairsFpr5'), pairsFpr1: sum('pairsFpr1') })}
     <div class="card"><div class="card-head"><h2>By species</h2><span class="muted">open one to search it; its protein pages show only this theme</span></div>
@@ -1251,7 +1289,7 @@ async function viewSet(dsId, setId) {
   const rows = prot.rows.map((r) => ({ key: r[c.key], pos10: r[c.pos10] })), keys = new Set(rows.map((r) => r.key));
   const hubs = [...rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24), k = S.counts;
   const link = (u, t) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`;
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a> / ${esc(S.short)}</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a> / <a href="#/datasets/${ds.id}/${S.id}">${esc(S.short)}</a></div>
     <div class="dshead"><h1>${esc(S.title)}</h1>
       <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} within ${esc(ds.reg.title)} · <i>${esc(m.species.name)}</i></div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
       ${S.source ? `<div class="cite">${link(S.source.url, `${S.source.citation} doi:${S.source.doi}`)}</div>` : ''}
@@ -1270,7 +1308,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
   const rows = await datasetRows(ds), hubs = [...rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24);
   if (stale(gen)) return;
   const scopeQ = sp.dsIds.length > 1 ? `?set=${encodeURIComponent(ds.id)}` : '';   // one of several screens: its protein pages open in its scope
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / ${esc(ds.reg.title)}</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a></div>
     <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, <span title="${m.analysis.inclusive ? 'cutoffs as LIVIA applies them' : 'as scored: lis.py before 26 Sep 2026 left out values exactly at a cutoff; LIVIA includes them, and iLIS differs by at most about 0.003'}">${m.analysis.inclusive ? `PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å` : `PAE ${m.analysis.paeCutoff} Å, Cβ ${m.analysis.cbCutoff} Å, values exactly at a cutoff excluded`}</span></div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
       <div class="cite">${m.source.url ? `<a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.citation)}${m.source.doi ? ` doi:${esc(m.source.doi)}` : ''} ↗</a>` : esc(m.source.citation)}</div></div>
     ${kpiRow(k)}
@@ -1412,13 +1450,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const dataMenu = occ.map((o, i) => { const u = bundleUrl(o.ds, o.name), label = `${sp.dsShort[o.di]}${occ.filter((x) => x.di === o.di).length > 1 ? ' · ' + o.name : ''}`;
     if (o.ds.reg.zip) return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="#" data-clip="${i}">Open in LIVIA cLIP ↗</a><a href="#" data-dl="${i}">Download .zip</a></div>`;   // inside the archive: read here, then handed to cLIP or saved
     return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="${LIVIA}clip.html?data=${encodeURIComponent(u)}&gene=${encodeURIComponent(P.gene)}" target="_blank" rel="noopener">Open in LIVIA cLIP ↗</a><a href="${u}" download>Download .zip</a></div>`; }).join('');
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(P.gene)}</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}">${esc(P.gene)}</a></div>
     <div class="phead"><div><h1>${esc(P.gene)}</h1><div class="pname" title="${esc(P.name)}">${esc(short(P.name) || P.id)}</div>
       <div class="ids">${fbLink}${uniprotLink(P.acc)}${fbLink ? '' : `<span>${esc(P.id)}</span>`}${P.clen ? `<span>${fmtInt(P.clen)} aa</span>` : ''}</div>
       ${P.virus ? `<div class="srcs">Virus <a href="#/${sp.id}/taxon/${P.virus.taxid}">${esc(P.virus.name)}</a> <span class="muted">· ${fmtInt(P.virus.n)} proteins, every pair folded${P.key.includes('_p') ? ' · a mature peptide of a polyprotein, numbered from its own first residue' : ''}</span></div>` : ''}
       <div class="srcs scope" id="scope">In ${srcBadges(sp, P.src)}</div>
       <div class="flags" id="flags">${flags.join('')}</div>
-      <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`)}</div></div>
+      <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => P.src & (1 << i)))}</div></div>
       <div class="kpis"><div class="kpi"><b id="kp-all">${fmtInt(P.partners)}</b><span>partners predicted</span></div><div class="kpi f10"><b id="kp-10">${fmtInt(P.pos10)}</b><span>past 10% FPR${cutNote(10)}</span></div>
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
@@ -1811,11 +1849,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     return (CQ._bg = { L, n, f, mean: sum / L, max, ok: n >= BG_MIN }); };
   const bgRatio = (st) => { const b = bgOf(); if (!b || !b.ok || !st.foot.length || !b.mean) return null;
     return st.foot.reduce((a, r) => a + (b.f[r] || 0), 0) / st.foot.length / b.mean; };
-  // Site enrichment: how often the site's own predictions contact its footprint, over how often predictions below the
-  // cutoff contact the same residues (both means over the footprint); a sticky surface is contacted by both
-  const bgEnrich = (st) => { const b = bgOf(); if (!b || !b.ok || !st.foot.length) return null;
-    const own = st.foot.reduce((a, r) => a + (st.hits.get(r) || 0) / st.n, 0), bg = st.foot.reduce((a, r) => a + (b.f[r] || 0), 0);
-    return bg > 0 ? own / bg : null; };
+  // The two contact rates over a site's footprint: its own predictions, and the protein's predictions below the cutoff
+  // (both as the mean over the footprint's residues). Shown side by side, never as a ratio: the footprint is chosen by
+  // the first rate, and a ratio over a near-empty background only grows.
+  const bgRates = (st) => { const b = bgOf(); if (!b || !b.ok || !st.foot.length) return null;
+    return { own: st.foot.reduce((a, r) => a + (st.hits.get(r) || 0) / st.n, 0) / st.foot.length, bg: st.foot.reduce((a, r) => a + (b.f[r] || 0), 0) / st.foot.length }; };
   const SITE_FRAC = 0.3;   // a site's footprint: residues contacted by at least 30% of its predictions (the cluster footprint of the paper)
   function sitesOf() {     // → sites, most partners first: cluster, predictions, partners by best iLIS, contacts per residue, footprint
     const by = new Map();
@@ -1933,7 +1971,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (BGH && j === sites.length && r >= 1 && r <= L) { cv.style.cursor = ''; return showTip(`<b>Background</b> · ${qSeq && qSeq[r - 1] ? qSeq[r - 1] : ''}${r}: contacted in ${(100 * bgd.f[r]).toFixed(1)}% of ${fmtInt(bgd.n)} predictions below the cutoff`, e.clientX, e.clientY); }
       const st = sites[j]; if (!st || r < 1 || r > L) { cv.style.cursor = ''; return hideTip(); } const h = st.hits.get(r) || 0;
       cv.style.cursor = 'pointer';
-      showTip(`<b>${clusterLabel(st.c)}</b> · ${fmtInt(st.partners.length)} partner${st.partners.length === 1 ? '' : 's'}, ${fmtInt(st.n)} prediction${st.n === 1 ? '' : 's'}<br>${qSeq && qSeq[r - 1] ? qSeq[r - 1] : ''}${r}: ${h} of ${st.n} contact it (${Math.round(100 * h / st.n)}%) · click to show only this site`, e.clientX, e.clientY); };
+      showTip(`<b>${clusterLabel(st.c)}</b> · ${fmtInt(st.partners.length)} partner${st.partners.length === 1 ? '' : 's'}, ${fmtInt(st.n)} prediction${st.n === 1 ? '' : 's'}<br>${qSeq && qSeq[r - 1] ? qSeq[r - 1] : ''}${r}: ${h} of ${st.n} contact it (${Math.round(100 * h / st.n)}%)${(() => { const q = bgRatio(st), rt = bgRates(st); return q == null || !rt ? '' : `<br>footprint: background ${q.toFixed(1)}× the protein mean; its partners' models contact it in ${Math.round(100 * rt.own)}% of cases, predictions below the cutoff in ${Math.round(100 * rt.bg)}%`; })()} · click to show only this site`, e.clientX, e.clientY); };
     cv.onmouseleave = () => { cv.style.cursor = ''; hideTip(); };
     cv.onclick = (e) => { const b = cv.getBoundingClientRect(), j = Math.floor((e.clientY - b.top - top) / LH); if (sites[j]) { hideTip(); toggleCluster(sites[j].c); } };
   }
@@ -1953,9 +1991,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     box.innerHTML = range(M.k).map((c) => {
       const rows = [...(mem[c] || [])].map((x) => sp.byKey.get(x) || { key: x, gene: x }).sort((a, b) => a.gene.toLowerCase().localeCompare(b.gene.toLowerCase()));
       const show = infoOpen.has(c) ? rows : rows.slice(0, cap);
-      return `<div class="cl-row"><i style="background:${clusterColor(c, M.k)}"></i><div><b>${clusterLabel(c)}</b> <span class="muted">(${rows.length} / ${cnt[c]})${(() => { const st = siteBy.get(c), q = st && bgRatio(st), e = st && bgEnrich(st); return q != null ? ` · <span title="mean background over the site's footprint, relative to the protein's mean">background ${q.toFixed(1)}× the protein mean</span>`
-        + (e != null ? `, <span title="how often the site's own predictions contact its footprint, over how often predictions below the cutoff contact the same residues">contacts ${e.toFixed(1)}× the background</span>` : '') : ''; })()}${KB ? ` · <span title="partners with a physical or genetic interaction reported in BioGRID ${KB.release}">${rows.filter((r) => kbOf(r.key)).length} of ${rows.length} reported</span>` : ''}</span><div class="cl-names">${show.map((r) => { const kb = kbOf(r.key);
-        return `<a href="#/${sp.id}/${P.key}/${r.key}${scopeQ}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''}>${esc(r.gene)}</a>`; }).join(', ')}${rows.length > cap ? ` <button class="more" data-c="${c}">${infoOpen.has(c) ? 'show fewer' : `+${rows.length - cap} more`}</button>` : ''}</div></div></div>`; }).join('');
+      return `<div class="cl-row"><i style="background:${clusterColor(c, M.k)}"></i><div><b${(() => { const st = siteBy.get(c), q = st && bgRatio(st); return q != null ? ` title="background over this site's footprint: ${q.toFixed(1)}× the protein mean"` : ''; })()}>${clusterLabel(c)}</b> <span class="muted">(${rows.length} / ${cnt[c]})${KB ? ` · <span title="partners with a physical or genetic interaction reported in BioGRID ${KB.release}">${rows.filter((r) => kbOf(r.key)).length} of ${rows.length} reported</span>` : ''}</span>: ${show.map((r) => { const kb = kbOf(r.key);
+        return `<a href="#/${sp.id}/${P.key}/${r.key}${scopeQ}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''}>${esc(r.gene)}</a>`; }).join(', ')}${rows.length > cap ? ` <button class="more" data-c="${c}">${infoOpen.has(c) ? 'show fewer' : `+${rows.length - cap} more`}</button>` : ''}</div></div>`; }).join('');
     box.querySelectorAll('.more').forEach((b) => b.onclick = () => { const c = +b.dataset.c; infoOpen.has(c) ? infoOpen.delete(c) : infoOpen.add(c); renderClusterInfo(); });
     const leg = $('#info-kb'), all = [...new Set(Object.values(mem).flatMap((x) => [...x]))].map(kbOf).filter(Boolean);
     const nP = all.filter((x) => x.ph).length, nG = all.filter((x) => x.ge).length;
@@ -2350,7 +2387,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   if (P.key !== q1 || (O0 && O0.key !== q2)) { location.replace(`#/${sp.id}/${P.key}/${O0 ? O0.key : q2}${scopeQ}`); return; }
   const O = O0 || { key: q2, gene: q2, name: '', acc: '', clen: 0, len: 0, occ: [], id: q2 };
   document.title = `${P.gene} · ${O.gene} · LIVIA Atlas`;
-  const crumbs = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}${scopeQ}">${esc(P.gene)}</a> / ${esc(O.gene)}</div>`;
+  const crumbs = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}${scopeQ}">${esc(P.gene)}</a> / ${O0 ? `<a href="#/${sp.id}/${O.key}">${esc(O.gene)}</a>` : esc(O.gene)}</div>`;
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
   let B;
   try { B = await merged(sp, P, scope, true); } catch (e) { B = { partners: [] }; }   // every model of the pair: all of a split gene's files
@@ -2366,8 +2403,8 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.innerHTML = `${crumbs}
     <div class="phead"><div><h1><span style="color:var(--query-t)">${esc(P.gene)}</span> <span style="color:var(--ink-3);font-weight:600">×</span> <span style="color:var(--partner-t)">${esc(O.gene)}</span></h1>
         <div class="pairwho">${who(P, P.clen, 'var(--query-t)')}${who(O, oLen, 'var(--partner-t)')}</div>
-        <div class="srcs">Predicted in ${part.sets.length ? setBadges(part.sets) : srcBadges(sp, part.src)}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P); return t ? `<div class="srcs muted ovl">${esc(t)}</div>` : ''; })()}
-        <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`)}<span id="pair-struct"></span></div></div>
+        <div class="srcs">Predicted in ${part.sets.length ? setBadges(part.sets) : srcBadges(sp, part.src)}${(() => { const t = srcPapers(sp, part.src); return t ? ` <span class="muted">· ${t}</span>` : ''; })()}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P); return t ? `<div class="srcs muted ovl">${esc(t)}</div>` : ''; })()}
+        <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => part.src & (1 << i)))}<span id="pair-struct"></span></div></div>
       <div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${one ? '' : ' best'} · ${bandLabel[b]}</span></div>
         ${one ? '' : `<div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>`}
         <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM${one ? '' : ' best'} · ${bandLabel[bandIn(FPR.ipTM, part.iptmBest)]}</span></div>
@@ -2405,7 +2442,7 @@ async function viewSpecies(spId) {
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
   if (stale(gen)) return;
   document.title = `${sp.reg.label} · LIVIA Atlas`;
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / ${esc(sp.reg.label)}</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a></div>
     <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
@@ -2469,12 +2506,13 @@ async function viewVirus(spId, taxid) {
     const ns = g.match(/^Non[ -]?structural protein\s+(\w+)$/i); if (ns) return 'NS' + ns[1];
     const last = g.split(/\s+/).pop(); if (/^(NS\d+[A-Z]?|nsP\d|VP\d+[a-z]?|[A-Za-z]{1,3}\d*[A-Z]?|2[Kk]|\d[A-C])$/.test(last) && last.length <= 5) return last;
     return g.slice(0, 11) + '…'; };
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(v.name)}</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/taxon/${v.taxid}">${esc(v.name)}</a></div>
     <div class="phead vh"><div><h1>${esc(v.name)}</h1>
       <div class="pname">every pair of its ${fmtInt(v.n)} proteins folded with AlphaFold-Multimer (one model each) and scored with lis.py</div>
       ${v.family ? `<div class="pname">${esc(v.family)}${v.genus ? ` · <i>${esc(v.genus)}</i>` : ''}${v.species ? ` · species <i>${esc(v.species)}</i>` : ''}${v.host ? ` · host: ${esc(v.host)}` : ''} <span class="muted">(ICTV VMR MSL40)</span></div>` : ''}
+      ${(() => { const d = ((REG && REG.datasets) || []).find((x) => x.id === 'viral-dimers-afdb'); return d ? `<div class="pname vsrc">Predictions from the AlphaFold Database release of viral protein complexes (EMBL-EBI, Google DeepMind, NVIDIA and collaborators; models CC BY 4.0): <a href="${esc(d.paper)}" target="_blank" rel="noopener">Han, Narain et al. 2026 ↗</a> · data: <a href="https://doi.org/10.5281/zenodo.${recOf(d) || ''}" target="_blank" rel="noopener">LIVIA Atlas on Zenodo ↗</a></div>` : ''; })()}
       <div class="ids"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${v.taxid}" target="_blank" rel="noopener">NCBI taxon ${v.taxid}</a><span>${fmtInt(v.het)} heterodimers · ${fmtInt(v.hom)} homodimers folded</span></div>
-      <div class="actions">${citeBtn(`${v.name} (virus)`)}</div></div>
+      <div class="actions">${citeBtn(`${v.name} (virus)`, sp.dsIds)}</div></div>
       <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR${cutNote(10)}</span></div>
         <div class="kpi"><b>${fmtInt(v.mpos)}</b><span>homodimers past 10% FPR${cutNote(10)}</span></div><div class="kpi"><b>${fmtInt(v.pwp)}</b><span>proteins with a partner</span></div></div></div>
     <div class="card" id="vn-card"><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label class="ctl" title="a large virus is easier to read with each protein's strongest pairs only; the pairs table lists every pair">Edges<select id="vn-top"><option value="0">all</option><option value="5">top 5 per protein</option><option value="3">top 3 per protein</option><option value="1">top 1 per protein</option></select></label>
@@ -2585,7 +2623,7 @@ async function viewNetwork(spId, q) {
   const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 5)),
     cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '' };
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / Network</div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
     <div class="dshead"><h1>Network of your proteins</h1><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
     <div class="card"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions${sp.manifest.keyedBy ? ', FlyBase IDs' : ''} or older names · commas, spaces or new lines</span></div>
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>

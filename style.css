@@ -498,3 +498,6 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .lede a, .lede-src a { text-decoration: underline; text-underline-offset: 2px; }   /* links in running text */
 .legend-text { margin: 2px 0 6px; font-size: 13px; color: var(--ink-3); }   /* a legend's sentence, above its swatches */
 .lede span.q { color: var(--query-t); font-weight: 700; }   /* the letters that spell cLIP */
+.cite-link { font: 500 13px var(--sans); color: var(--ink-3); background: none; border: 0; padding: 6px 4px; cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; align-self: center; }
+.cite-link:hover { color: var(--blue); }
+.phead.vh { align-items: flex-start; }   /* a virus page: the tiles sit level with the title */
