@@ -415,16 +415,22 @@ const ARCH_COLS = ['chunk', 'cif_off', 'cif_len', 'pae_off', 'pae_len'];
 const ARCH_URL = (n) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/pandemic_prep/chunk_${n}.tar`;
 // A virus pair's structure: its model in the AlphaFold Database (pairs the database displays) or in the release archive
 // (the rest), from its virus's pair table; null for a pair below the 10% FPR cutoff (not in the table) or outside viruses.
+// A virus's pairs file (data/species/virus/pairs/<taxid>.tsv), read once: each pair's model, its archive address and the
+// ipSAE and pDockQ2 the protein page's partner table shows.
+function virusRows(sp, taxid) {
+  sp.vpairs = sp.vpairs || new Map();
+  if (!sp.vpairs.has(taxid)) sp.vpairs.set(taxid, getText(sp.base + `pairs/${taxid}.tsv`).then((t) => {
+    const L = t.trim().split('\n'), ix = Object.fromEntries(L[0].split('\t').map((k, i) => [k, i]));
+    return L.slice(1).map((l) => { const r = l.split('\t'), ad = {}; for (const k of ARCH_COLS) if (r[ix[k]] !== '' && r[ix[k]] != null) ad[k] = +r[ix[k]];
+      const num = (k) => (ix[k] != null && r[ix[k]] !== '' ? +r[ix[k]] : NaN);
+      return { a: +r[0], b: +r[1], model: r[ix.model] || '', shown: r[ix.afdb] === '1', addr: ARCH_COLS.every((k) => Number.isFinite(ad[k])) ? ad : null, ipsae: num('ipSAE'), pdq2: num('pDockQ2') }; });
+  }).catch(() => []));
+  return sp.vpairs.get(taxid);
+}
 async function virusStruct(sp, ia, ib) {
   if (!sp.viruses || ia == null || ib == null) return null;
   const v = sp.viruses.find((x) => (x.members || []).includes(ia) && (x.members || []).includes(ib)); if (!v) return null;
-  sp.vpairs = sp.vpairs || new Map();
-  if (!sp.vpairs.has(v.taxid)) sp.vpairs.set(v.taxid, getText(sp.base + `pairs/${v.taxid}.tsv`).then((t) => {
-    const L = t.trim().split('\n'), ix = Object.fromEntries(L[0].split('\t').map((k, i) => [k, i]));
-    return L.slice(1).map((l) => { const r = l.split('\t'), ad = {}; for (const k of ARCH_COLS) if (r[ix[k]] !== '' && r[ix[k]] != null) ad[k] = +r[ix[k]];
-      return { a: +r[0], b: +r[1], model: r[ix.model] || '', shown: r[ix.afdb] === '1', addr: ARCH_COLS.every((k) => Number.isFinite(ad[k])) ? ad : null }; });
-  }).catch(() => []));
-  const rows = await sp.vpairs.get(v.taxid);
+  const rows = await virusRows(sp, v.taxid);
   return rows.find((x) => (x.a === ia && x.b === ib) || (x.a === ib && x.b === ia)) || null;
 }
 // The link to a virus pair's model in LIVIA, wired: the database's copy, or a byte-range read of the release archive.
@@ -2245,25 +2251,29 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   /* partner table */
   const T = { sort: 'best', asc: false, page: 0, band: P.pos10 ? 10 : 0, filter: '', src: 0 };
-  const cols = ONE ? [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS'], ['iptmBest', 'ipTM'], ['contacts', 'Contacts']]
+  // a virus protein: ipSAE and pDockQ2 as well, from its virus's pairs file (the pair's one model)
+  const VX = sp.id === 'virus' && sp.viruses ? new Map() : null;
+  if (VX) { const v = sp.viruses.find((x) => (x.members || []).includes(P.i));
+    if (v) virusRows(sp, v.taxid).then((rows) => { if (gone()) return; for (const x of rows) { if (x.a === P.i) VX.set(x.b, x); else if (x.b === P.i) VX.set(x.a, x); } drawTable(); }); }
+  const cols = ONE ? [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS'], ['iptmBest', 'ipTM'], ...(VX ? [['ipsae', 'ipSAE'], ['pdq2', 'pDockQ2']] : []), ['contacts', 'Contacts']]
     : [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
   function drawTable() {
-    let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length }; });
+    let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length, ...(VX ? (() => { const x = r && VX.get(r.i); return { ipsae: x ? x.ipsae : NaN, pdq2: x ? x.pdq2 : NaN }; })() : {}) }; });
     if (T.src) list = list.filter((p) => (SETS ? p.sets.includes(T.src) : p.src & T.src));
     if (T.band) list = list.filter((p) => p.best >= CUT[T.band]);
     if (T.filter) { const f = T.filter.toLowerCase(); list = list.filter((p) => p.gene.toLowerCase().includes(f) || (p.name || '').toLowerCase().includes(f) || p.id.toLowerCase().includes(f)); }
-    const key = T.sort; list.sort((a, b) => (typeof a[key] === 'string' ? a[key].localeCompare(b[key]) : a[key] - b[key]) * (T.asc ? 1 : -1));
+    const key = T.sort; const nv = (x) => (Number.isFinite(x) ? x : -Infinity); list.sort((a, b) => (typeof a[key] === 'string' ? a[key].localeCompare(b[key]) : nv(a[key]) - nv(b[key])) * (T.asc ? 1 : -1));
     const per = 40, pages = Math.max(1, Math.ceil(list.length / per)); T.page = Math.min(T.page, pages - 1);
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
     $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${KB ? ` · reported in BioGRID ${esc(KB.release)}: <span class="kb-mark kb-p">physical</span> <span class="kb-mark kb-g">genetic</span> <span class="kb-mark kb-p kb-g">both</span>` : ''}`;
-    $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
+    $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${['best', 'avg', 'iptmBest', 'iptmAvg', 'ipsae', 'pdq2', 'contacts', 'pass'].includes(c) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
       const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
       const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best);
         return `<tr class="iso-sub"><td class="g">${esc(x.label)}</td><td>${c ? `<span class="mdot" style="background:${clusterColor(c, k)}"></span>${clusterLabel(c, true)}` : '<span class="muted">—</span>'}</td>
           <td></td><td class="nm">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND_TXT[bb]};font-weight:${BAND_W[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
           ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td>`}<td class="n v" style="${bandSty(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
-          ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td>`}<td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
+          ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td>`}${VX ? '<td></td><td></td>' : ''}<td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
       const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
       return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}"${(() => { const kb = kbOf(p.id); return kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''; })()}>${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
@@ -2272,6 +2282,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>`}
         <td class="n v" style="${bandSty(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
         ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>`}
+        ${VX ? ['ipsae', 'pdq2'].map((k) => `<td class="n v">${Number.isFinite(p[k]) ? p[k].toFixed(3) : '<span class="muted">—</span>'}</td>`).join('') : ''}
         <td class="n">${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td>`}</tr>${subs}`; }).join('')}</tbody>`;
     $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
     $('#pt').querySelectorAll('th').forEach((th) => th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : (c === 'gene' || c === 'name' || c === 'c'); T.sort = c; drawTable(); });
