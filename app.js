@@ -1071,18 +1071,25 @@ async function showcase() {
     g.fillStyle = '#627085'; g.font = '10.5px "IBM Plex Mono", monospace'; g.textBaseline = 'alphabetic';
     g.textAlign = 'left'; g.fillText('1', X0, H - 3); g.textAlign = 'right'; g.fillText(fmtInt(L), W, H - 3);
   };
-  const drawNet = (s) => {   // a virus slide: its network at the cutoff, as on the virus page (gray edges by iLIS, black rings for homodimers)
+  const drawNet = (s) => {   // a virus slide: its network at the cutoff, as on the virus page (gray edges by iLIS, nodes colored by community, black rings for homodimers)
     const cv = $('#sc-cv'), W = cv.clientWidth, H = 206, g = canvasCtx(cv, W, H);
-    if (!s._pos) { const nodes = s.nodes.map((l, i) => ({ i })), links = s.edges.map(([a, b, w]) => ({ source: a, target: b, w }));
-      const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).distance(26).strength(0.6)).force('charge', d3.forceManyBody().strength(-38))
-        .force('x', d3.forceX(0).strength(0.05)).force('y', d3.forceY(0).strength(0.09)).stop();
+    if (!s._pos) {   // communities as on the virus page (Louvain, iLIS-weighted; groups of three or more colored), each group laid out apart
+      const cm = louvain(s.nodes.length, s.edges), csize = new Map(); cm.forEach((c) => csize.set(c, (csize.get(c) || 0) + 1));
+      const big = [...csize].filter(([, z]) => z >= 3).map(([c]) => c).sort((a, b) => a - b), center = new Map();
+      big.forEach((c, n) => { if (n === 0) center.set(c, [0, 0]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [150 * Math.cos(t), 70 * Math.sin(t)]); } });
+      const linked = new Set(s.edges.flatMap(([a, b]) => [a, b]));
+      s._col = cm.map((c, i) => (!linked.has(i) ? '#C3CCD6' : big.includes(c) && big.indexOf(c) < TAB10.length ? TAB10[big.indexOf(c)] : '#1A5276'));
+      const home = (d) => center.get(cm[d.i]) || [0, 0], nodes = s.nodes.map((l, i) => ({ i, x: (center.get(cm[i]) || [0, 0])[0] + 20 * Math.cos(i), y: (center.get(cm[i]) || [0, 0])[1] + 20 * Math.sin(i) }));
+      const links = s.edges.map(([a, b, w]) => ({ source: a, target: b, w, same: cm[a] === cm[b] }));
+      const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).distance(26).strength((l) => (l.same ? 0.6 : 0.02))).force('charge', d3.forceManyBody().strength(-38))
+        .force('x', d3.forceX((d) => home(d)[0]).strength((d) => (center.has(cm[d.i]) ? 0.3 : 0.05))).force('y', d3.forceY((d) => home(d)[1]).strength((d) => (center.has(cm[d.i]) ? 0.3 : 0.09))).stop();
       for (let t = 0; t < 320; t++) sim.tick();
       const xs = nodes.map((n) => n.x), ys = nodes.map((n) => n.y), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
       s._pos = nodes.map((n) => [(n.x - x0) / Math.max(1, x1 - x0), (n.y - y0) / Math.max(1, y1 - y0)]); }
     const P = s._pos.map(([u, v]) => [24 + u * (W - 48), 14 + v * (H - 28)]), deg = new Map(); s.edges.forEach(([a, b]) => { deg.set(a, (deg.get(a) || 0) + 1); deg.set(b, (deg.get(b) || 0) + 1); });
     for (const [a, b, w] of s.edges) { g.strokeStyle = EGRAY(w); g.lineWidth = EWID(w); g.beginPath(); g.moveTo(...P[a]); g.lineTo(...P[b]); g.stroke(); }
     const homo = new Set(s.homo);
-    P.forEach(([x, y], i) => { g.beginPath(); g.arc(x, y, 4.5, 0, 2 * Math.PI); g.fillStyle = '#2B6CB0'; g.fill(); if (homo.has(i)) { g.lineWidth = 1.6; g.strokeStyle = '#17263A'; g.stroke(); } });
+    P.forEach(([x, y], i) => { g.beginPath(); g.arc(x, y, 4.5, 0, 2 * Math.PI); g.fillStyle = s._col[i]; g.fill(); g.lineWidth = homo.has(i) ? 1.8 : 1; g.strokeStyle = homo.has(i) ? HOMO_RING : '#fff'; g.stroke(); });
     g.font = '600 10px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     P.forEach(([x, y], i) => { if ((deg.get(i) || 0) < 3) return; g.lineWidth = 3; g.strokeStyle = 'rgba(255,255,255,0.9)'; g.strokeText(s.nodes[i], x, y - 7); g.fillStyle = '#17263A'; g.fillText(s.nodes[i], x, y - 7); });
   };
