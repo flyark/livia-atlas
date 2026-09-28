@@ -272,9 +272,11 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .cl-row { display: grid; grid-template-columns: 14px 1fr; gap: 10px; padding: 8px 12px; border: 1px solid var(--line-2); border-radius: 10px; background: #FBFCFD; }
 .cl-names { margin-top: 2px; }   /* the partner names on their own line, under the cluster's summary */
 .cl-row > i { width: 13px; height: 13px; border-radius: 3px; margin-top: 5px; }
-#c-pt .pt td.g a { font-weight: 500; }   /* the Partners table: plain weight, so bold can mean "reported" */
-.clinfo a.kb-p, #c-pt .pt td.g a.kb-p { font-weight: 700; }   /* reported in BioGRID: physical bold, genetic underlined */
-.clinfo a.kb-g, #c-pt .pt td.g a.kb-g { text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 2.5px; }
+/* reported in BioGRID: a highlighter mark in the network's colors, light (physical red, genetic green, both purple) */
+.clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g, .kb-mark { padding: 1px 5px; border-radius: 4px; text-decoration: none; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.clinfo a.kb-p, #c-pt .pt td.g a.kb-p, .kb-mark.kb-p { background: #FBE0DF; }
+.clinfo a.kb-g, #c-pt .pt td.g a.kb-g, .kb-mark.kb-g { background: #DCEFDC; }
+.clinfo a.kb-p.kb-g, #c-pt .pt td.g a.kb-p.kb-g, .kb-mark.kb-p.kb-g { background: #EADFF3; }
 .legend i.kb-ring, .tl-name i.kb-ring { display: inline-block; flex: none; width: 11px; height: 11px; border-radius: 50%; border: 1.6px solid rgba(23, 38, 58, 0.6); background: none; box-sizing: border-box; }
 .tl-name i.kb-ring { width: 9px; height: 9px; border-width: 1.4px; }
 .legend .kb-toggle { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
@@ -502,3 +504,4 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .tbl-find { display: block; margin: 0 0 8px auto; width: 200px; }   /* a table's filter box */
 .pt th.sortable { cursor: pointer; }
 table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric: normal; } table.cuts tr.avg td, table.cuts tr.avg th { border-top: 0; }
+.clinfo a.kb-p, .clinfo a.kb-g { padding: 0 3px; margin: 0 -1px; }   /* in running lists, a tighter mark, so the comma stays next to the name */

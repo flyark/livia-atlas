@@ -1201,8 +1201,8 @@ async function viewAbout() {
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
       accession, official symbol or systematic name. In networks, edges are shaded in gray by the pair's best iLIS, and the pairs BioGRID reports
-      (physical, genetic or either, as the reader chooses) can be drawn in crimson; the width is the average iLIS. On a protein page, a partner
-      with a reported physical interaction is ringed in the Overview and bold under Clusters, and one with a reported genetic interaction is underlined.
+      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical red, genetic green, both purple); the width is the average iLIS. On a protein page, a partner
+      with a reported physical interaction is ringed in the Overview, and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species, so nothing is looked up elsewhere.</p></div>
     <div class="card"><h2>Cite</h2>
       <ul class="refs">
@@ -2015,8 +2015,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     box.querySelectorAll('.more').forEach((b) => b.onclick = () => { const c = +b.dataset.c; infoOpen.has(c) ? infoOpen.delete(c) : infoOpen.add(c); renderClusterInfo(); });
     const leg = $('#info-kb'), all = [...new Set(Object.values(mem).flatMap((x) => [...x]))].map(kbOf).filter(Boolean);
     const nP = all.filter((x) => x.ph).length, nG = all.filter((x) => x.ge).length;
-    leg.hidden = !KB; if (KB) leg.innerHTML = `<span><b>bold</b>: physical interaction reported in BioGRID ${KB.release} (${fmtInt(nP)} partner${nP === 1 ? '' : 's'})</span>`
-      + `<span><u>underlined</u>: genetic interaction reported (${fmtInt(nG)})</span>` + (KB ? kbBase() : '');
+    leg.hidden = !KB; if (KB) leg.innerHTML = `<span>reported in BioGRID ${KB.release}: <span class="kb-mark kb-p">physical</span> (${fmtInt(nP)} partner${nP === 1 ? '' : 's'}), <span class="kb-mark kb-g">genetic</span> (${fmtInt(nG)}), <span class="kb-mark kb-p kb-g">both</span></span>` + (KB ? kbBase() : '');
   }
 
   /* Interaction Residues: any partner, any screen, any model */
@@ -2256,7 +2255,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const key = T.sort; list.sort((a, b) => (typeof a[key] === 'string' ? a[key].localeCompare(b[key]) : a[key] - b[key]) * (T.asc ? 1 : -1));
     const per = 40, pages = Math.max(1, Math.ceil(list.length / per)); T.page = Math.min(T.page, pages - 1);
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
-    $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${KB ? ` · reported in BioGRID ${esc(KB.release)}: <b>bold</b> physical, <u>underlined</u> genetic` : ''}`;
+    $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${KB ? ` · reported in BioGRID ${esc(KB.release)}: <span class="kb-mark kb-p">physical</span> <span class="kb-mark kb-g">genetic</span> <span class="kb-mark kb-p kb-g">both</span>` : ''}`;
     $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
       const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
