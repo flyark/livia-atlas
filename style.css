@@ -494,3 +494,4 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 
 .lede-src { margin: -6px auto 18px; max-width: 640px; font-size: 13.5px; color: var(--ink-3); text-align: center; }   /* the source line under the home lede */
 .lede a, .lede-src a { text-decoration: underline; text-underline-offset: 2px; }   /* links in running text */
+.legend-text { margin: 2px 0 6px; font-size: 13px; color: var(--ink-3); }   /* a legend's sentence, above its swatches */
