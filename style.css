@@ -493,3 +493,4 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .pt.ref-tbl td.t, .pt.ref-tbl td.a { white-space: normal; line-height: 1.4; }
 
 .lede-src { margin: -6px auto 18px; max-width: 640px; font-size: 13.5px; color: var(--ink-3); text-align: center; }   /* the source line under the home lede */
+.lede a, .lede-src a { text-decoration: underline; text-underline-offset: 2px; }   /* links in running text */
