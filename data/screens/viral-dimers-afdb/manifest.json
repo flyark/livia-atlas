@@ -1,0 +1,52 @@
+{
+ "format": "livia-atlas/1",
+ "id": "viral-dimers-afdb",
+ "title": "Viral proteome dimers (AFDB pandemic preparedness)",
+ "short": "Viral dimers (AFDB)",
+ "speciesId": "virus",
+ "species": {
+  "name": "Viruses of 23 human-infecting families (2,812 proteomes)",
+  "taxon": 10239
+ },
+ "ids": "UniProt accession; polyprotein mature peptides as <accession>_p<md5(sequence)[:10]>",
+ "source": {
+  "citation": "Han Y, Narain R, et al. (2026). Systematic exploration of predicted quaternary structures within pandemic-relevant viral proteomes. Models: AlphaFold Database / EMBL-EBI FTP (alphafold/collaborations/nvda/pandemic_prep), CC BY 4.0.",
+  "url": "https://research.nvidia.com/labs/dbr/assets/data/manuscripts/viralcomplexes.pdf",
+  "method": "AlphaFold-Multimer v3, ONE model per pair (model_1_multimer_v3), 12 recycles, Logan-enriched unpaired MSA (NVIDIA BioNeMo / OpenFold); rescored with lis.py. iLIS cutoffs were calibrated on best-of-5 models, so at the same cutoff this screen is less sensitive (transient interfaces that only some models capture are missed); a low iLIS here means \"not seen by model_1\"."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  }
+ },
+ "counts": {
+  "proteins": 41774,
+  "pairs": 1694023,
+  "predictions": 1694023,
+  "runs": 1694023,
+  "pairsFpr10": 63132,
+  "pairsFpr5": 38554,
+  "pairsFpr1": 10152,
+  "homodimers": 39586,
+  "organisms": 2765
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id",
+ "folded": {
+  "predictions": 1699288,
+  "note": "identical sequence pairs in related strains are served on every strain, counted once"
+ }
+}

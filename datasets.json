@@ -46,6 +46,16 @@
    "datasets": [
     "worm-kinase-kinase"
    ]
+  },
+  {
+   "id": "virus",
+   "label": "Viruses",
+   "name": "Viruses in 23 families that include human-infecting viruses",
+   "base": "data/species/virus/",
+   "datasets": [
+    "viral-dimers-afdb"
+   ],
+   "heading": "Viral protein interactions"
   }
  ],
  "datasets": [
@@ -83,7 +93,7 @@
    "species": "fly",
    "title": "FlyPredictome",
    "short": "FlyPredictome",
-   "color": "#B5543C",
+   "color": "#AD5039",
    "base": "data/screens/flypredictome/",
    "status": "live",
    "source": "Kim et al. 2026 · bioRxiv",
@@ -177,6 +187,27 @@
    },
    "models": 5,
    "recycles": 5
+  },
+  {
+   "id": "viral-dimers-afdb",
+   "species": "virus",
+   "title": "Viral proteome dimers (AlphaFold Database)",
+   "short": "Viral dimers (AFDB)",
+   "color": "#AD5039",
+   "base": "data/screens/viral-dimers-afdb/",
+   "status": "live",
+   "models": 1,
+   "source": "Han, Narain et al. 2026 · AlphaFold Database",
+   "paper": "https://research.nvidia.com/labs/dbr/assets/data/manuscripts/viralcomplexes.pdf",
+   "zip": {
+    "url": "https://zenodo.org/api/records/22984781/files/livia-atlas-viral-dimers-afdb.zip/content",
+    "dev": "../zenodo/livia-atlas-viral-dimers-afdb.zip",
+    "offsets": "data/screens/viral-dimers-afdb/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   },
+   "recycles": 12,
+   "modelsNote": "model_1_multimer_v3"
   }
  ],
  "themes": [

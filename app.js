@@ -11,6 +11,14 @@
 const DEV = location.hostname === 'localhost' || location.hostname === '127.0.0.1';   // local preview: LIVIA on :8000, screens from ../data/
 const LIVIA = DEV ? 'http://localhost:8000/' : 'https://flyark.github.io/LIVIA/';
 const CUT = { 10: 0.223, 5: 0.339, 1: 0.551 };
+// Common names and abbreviations of viruses the taxonomy names otherwise: alias → taxonomy names (search, virus list filter)
+const VALIAS = (() => { const m = {}; for (const [name, xs] of Object.entries({
+  'monkeypox virus': ['mpox', 'mpox virus', 'mpxv'], 'variola virus': ['smallpox'], 'epstein-barr virus': ['ebv', 'hhv-4', 'hhv4'],
+  'human herpesvirus 1': ['hsv-1', 'hsv1', 'herpes simplex', 'herpes simplex virus', 'herpes simplex virus 1'], 'human herpesvirus 2': ['hsv-2', 'hsv2', 'herpes simplex virus 2'],
+  'human herpesvirus 8 type p': ['kshv', 'hhv-8', 'hhv8'], 'human cytomegalovirus': ['hcmv', 'cmv', 'hhv-5'], 'varicella-zoster virus': ['vzv', 'chickenpox', 'hhv-3'],
+  'human papillomavirus type 16': ['hpv16', 'hpv-16'], 'hepatitis b virus': ['hbv'], 'zaire ebolavirus': ['ebola', 'ebola virus'] })) for (const x of xs) (m[x] ||= []).push(name);
+  return m; })();
+const cutNote = (f) => `<i class="kc">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count
 const BAND = { 1: '#6D4FD1', 5: '#16956A', 10: '#C78B00', 0: '#A7B2BF' };
 const bandOf = (v) => (v >= CUT[1] ? 1 : v >= CUT[5] ? 5 : v >= CUT[10] ? 10 : 0);
 const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
@@ -19,7 +27,6 @@ const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
 const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.3, 1247.4, 3078.8], iLISA: [143.9, 360.6, 1241.0],
   LIS: [0.168, 0.257, 0.439], cLIS: [0.298, 0.449, 0.716], ipSAE: [0.165, 0.363, 0.615], actifpTM: [0.745, 0.880, 0.963] };
 const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442] };
-const cutNote = (f) => `<i class="kc">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count
 // A UniProt domain box under the pointer: its name and span (the plots draw D1, D2 … or a clipped name)
 const domTip = (d) => { const a = d.s != null ? d.s : d.start, z = d.e != null ? d.e : d.end; return `<b>${d.idx ? `D${d.idx} ` : ''}${esc(d.name)}</b><br>residues ${a}–${z} (${z - a + 1} aa) · UniProt domain`; };
 // Each screen's run settings (registry: models, recycles). The cutoffs were calibrated on five models with five recycles
@@ -200,7 +207,7 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
   const c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
   const rows = prot.rows.map((r, i) => {
     const occ = String(r[c.occ] || '').split(' ').filter(Boolean).map((t) => { const k = t.indexOf(':'); return { di: +t.slice(0, k), name: t.slice(k + 1) }; });
-    return { i, key: r[c.key], gene: r[c.gene], acc: r[c.acc], name: r[c.name], syn: r[c.syn], len: r[c.len], clen: r[c.clen], status: r[c.status], occ,
+    return { i, key: r[c.key], gene: r[c.gene] || r[c.name] || r[c.key], acc: r[c.acc], name: r[c.name], syn: r[c.syn], len: r[c.len], clen: r[c.clen], status: r[c.status], occ,
       id: occ.length ? occ[0].name : r[c.key], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1], best: r[c.bestIlis],
       src: occ.reduce((m, o) => m | (1 << o.di), 0) };
   });
@@ -209,8 +216,18 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
   const keys = rows.map((r) => ({ gene: r.gene.toLowerCase(), key: r.key.toLowerCase(), acc: (r.acc || '').toLowerCase(), ids: r.occ.map((o) => o.name.toLowerCase()),
     syn: (r.syn || '').toLowerCase().split(/\s+/).filter(Boolean), name: (r.name || '').toLowerCase() }));
   const dsIds = manifest.datasets.map((d) => d.id), regs = await Promise.all(dsIds.map(regDataset));
-  return { id, reg, base, manifest, rows, byKey, byName, byGene, keys, dsIds, dsShort: manifest.datasets.map((d) => d.short),
-    dsColor: regs.map((r) => (r && r.color) || '#5B6B7F'), edges: null, cache: new Map() };
+  let viruses = null;   // the viral species: which virus (taxon) each protein belongs to, for the virus pages and search
+  if (manifest.files && manifest.files.viruses) {
+    const V = await getJSON(base + manifest.files.viruses);
+    const c = Object.fromEntries(V.columns.map((k, i) => [k, i])), both = (r, f) => (c[`hetero_pos${f}`] == null ? null : r[c[`hetero_pos${f}`]] + r[c[`homo_pos${f}`]]);
+    viruses = V.viruses.map((r) => ({ taxid: r[c.taxid], name: r[c.name], n: r[c.proteins], het: r[c.hetero_pairs], hom: r[c.homo_pairs], hpos: r[c.hetero_pos10], mpos: r[c.homo_pos10],
+      pos5: both(r, 5), pos1: both(r, 1), pwp: r[c.proteins_with_partner], members: r[c.rows],
+      family: c.family != null ? r[c.family] || '' : '', genus: c.genus != null ? r[c.genus] || '' : '', host: c.host != null ? r[c.host] || '' : '',   // ICTV VMR MSL40
+      species: c.species != null ? r[c.species] || '' : '', spTax: c.species_taxid != null ? r[c.species_taxid] : null, lineage: c.lineage != null ? r[c.lineage] || [] : [] }));
+    for (const v of viruses) for (const i of v.members) rows[i].virus = v;
+  }
+  return { id, reg, base, manifest, rows, byKey, byName, byGene, keys, viruses, dsIds, dsShort: manifest.datasets.map((d) => d.short),
+    dsColor: regs.map((r) => (r && r.color) || '#5B6B7F'), one: regs.every((r) => r && r.models === 1), edges: null, cache: new Map() };   // one: one model per pair, so best = average
 }
 // Pairs reported in BioGRID among a species' proteins, from data/species/<sp>/biogrid.tsv on the site: row numbers of the
 // species index and the number of publications reporting a physical and a genetic interaction. The file names the index it
@@ -230,6 +247,7 @@ async function parseReported(sp, t) {
   return { release, pubs: (a, b) => m.get(at(a, b)) || 0, gen: (a, b) => gm.get(at(a, b)) || 0, refs: (a, b) => rm.get(at(a, b)) || null };   // publications: physical, genetic; their ids
 }
 function reported(sp) {   // every reported pair of the species: the network views
+  if (!(sp.manifest.files || {}).biogridShards) return Promise.resolve(null);   // a species without BioGRID records (zebrafish, viruses) has no file to ask for
   if (!sp.known) sp.known = (async () => { let t; try { t = await getText(sp.base + 'biogrid.tsv'); } catch (e) { return null; } return parseReported(sp, t); })();
   return sp.known;
 }
@@ -369,6 +387,24 @@ function countOnce(list) {
   const best = new Map(), n = new Map();
   for (const p of list) { n.set(p.run, (n.get(p.run) || 0) + 1); const b = best.get(p.sp); if (!b || (p.iLIS || 0) > b.v) best.set(p.sp, { v: p.iLIS || 0, run: p.run }); }
   let s = 0; for (const b of best.values()) s += n.get(b.run); return s;
+}
+// A pair of the viral release that the AlphaFold Database does not display: its model and PAE read by byte range from the
+// release archive at EBI (zstd members of chunk_N.tar; addresses from the Atlas index), unpacked in the browser (fzstd,
+// fflate) and handed to LIVIA's prediction page as a bundle. The tab opens at the click so no popup blocker stops it.
+const ARCH_COLS = ['chunk', 'cif_off', 'cif_len', 'pae_off', 'pae_len'];
+const ARCH_URL = (n) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/pandemic_prep/chunk_${n}.tar`;
+async function openFromArchive(model, ad, link) {
+  const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
+  const txt = link.textContent; link.textContent = 'reading…';
+  const get = async (o, n) => { for (let t = 0; ; t++) { try { const r = await fetch(ARCH_URL(ad.chunk), { headers: { Range: `bytes=${o}-${o + n - 1}` } });
+    if (r.status !== 206) throw new Error(`the archive answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; }
+    catch (e) { if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1))); } } };   // EBI sometimes refuses a connection: retry
+  try {
+    const [[{ decompress }, { zipSync }], cif, pae] = await Promise.all([Promise.all([import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm'), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]),
+      get(ad.cif_off, ad.cif_len), get(ad.pae_off, ad.pae_len)]);
+    const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) });
+    handTo(w, { type: 'livia-load', name: `${model}_viral.zip`, data: zip.buffer }); link.textContent = txt;
+  } catch (e) { link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`; try { w.close(); } catch (_) {} }
 }
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
@@ -669,26 +705,35 @@ function scoreProteins(sp, raw, limit = 10) {   // → [{ row, score }], best fi
 function mountSearch(host, { big = false, spId = null, autofocus = false, only = null, set = '' } = {}) {   // spId null: every species; only: a set's keys
   host.innerHTML = `<div class="search ${big ? 'big' : ''}">
       <svg class="glass" width="${big ? 20 : 17}" height="${big ? 20 : 17}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
-      <input type="search" placeholder="${big ? (spId ? 'Gene, accession or protein name' : 'Gene, UniProt accession, FlyBase ID or protein name') : 'Search a protein'}" aria-label="Search proteins" autocomplete="off" spellcheck="false">
+      <input type="search" placeholder="${big ? (spId ? (spId === 'virus' ? 'Virus, protein name or accession' : 'Gene, accession or protein name') : 'Gene, UniProt accession, FlyBase ID, protein or virus') : 'Search a protein or virus'}" aria-label="Search proteins" autocomplete="off" spellcheck="false">
       <div class="suggest" hidden></div></div>`;
   const input = $('input', host), box = $('.suggest', host);
   let items = [], on = -1, timer = null;
-  const go = (it) => { box.hidden = true; input.value = ''; location.hash = `#/${it.sp.id}/${it.row.key}${set ? '?set=' + encodeURIComponent(set) : ''}`; };
+  const go = (it) => { box.hidden = true; input.value = ''; location.hash = it.v ? `#/${it.sp.id}/taxon/${it.v.taxid}` : `#/${it.sp.id}/${it.row.key}${set ? '?set=' + encodeURIComponent(set) : ''}`; };
   const paint = () => { [...box.children].forEach((c, k) => c.classList.toggle('on', k === on)); };
   async function update() {
     const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(((await registry()).species || []).map((x) => species(x.id).catch(() => null)));
     const many = sps.filter(Boolean).length > 1;
+    const t = q.trim().toLowerCase(), al = VALIAS[t] || [], vir = (t.length < 3 && !al.length) || only ? [] : sps.filter((sp) => sp && sp.viruses).flatMap((sp) => sp.viruses.map((v) => {
+      const nm = v.name.toLowerCase(), spn = (v.species || '').toLowerCase(), score = nm === t || al.includes(nm) || spn === t ? 3 : nm.startsWith(t) || spn.startsWith(t) ? 2 : nm.includes(t) ? 1 : 0; return { v, sp, score }; }))
+      .filter((x) => x.score).sort((a, b) => b.score - a.score || b.v.hpos - a.v.hpos).slice(0, 4);   // a named virus first
     const hits = sps.filter(Boolean).flatMap((sp) => scoreProteins(sp, q, only ? 400 : 10).filter((h) => !only || only.has(h.row.key)).map((h) => ({ ...h, sp })));
+    let prot;
     if (many) {   // across species an exact match counts whatever its case (the case rule separates genes within a species: fly's Tor
       // is not tor), so exact matches are ordered by how many partners pass ("p53": human TP53 before fly p53); each species' own
       // hits keep their order
       const x = (h) => (h.base >= 80 ? 100 : h.base) + h.bonus, bySp = new Map();
       for (const h of [...hits].sort((a, b) => b.score - a.score)) { if (!bySp.has(h.sp)) bySp.set(h.sp, []); bySp.get(h.sp).push(h); }
-      items = [...hits].sort((a, b) => x(b) - x(a)).map((h) => bySp.get(h.sp).shift()).slice(0, 10);
-    } else items = hits.sort((a, b) => b.score - a.score).slice(0, 10);
+      prot = [...hits].sort((a, b) => x(b) - x(a)).map((h) => bySp.get(h.sp).shift());
+    } else prot = hits.sort((a, b) => b.score - a.score);
+    // a virus named exactly (or by a common name) first, then exact gene matches, then viruses named in part ("Tor" is a gene first)
+    const exact = prot.filter((h) => h.base >= 80), rest = prot.filter((h) => h.base < 80);
+    items = [...vir.filter((x) => x.score === 3), ...exact, ...vir.filter((x) => x.score < 3), ...rest].slice(0, 10);
     on = items.length ? 0 : -1;
-    box.innerHTML = items.map(({ row: r, sp }) => `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
-        <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`).join('')
+    box.innerHTML = items.map(({ row: r, sp, v }) => (v ? `<div class="sg"><b>${esc(v.name)}</b><span class="nm">virus · ${fmtInt(v.n)} proteins</span><span class="ct">${fmtInt(v.hpos + v.mpos)} pairs</span>
+        <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}its proteins' network · taxon ${v.taxid}</span></div>`
+      : `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
+        <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${r.virus ? `${esc(r.virus.name)} · ` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`)).join('')
       || (q.trim() ? '<div class="sg-note">No match. Try a gene symbol, UniProt accession, FlyBase ID or protein name.</div>' : '');
     box.hidden = !box.innerHTML;
     [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k]));
@@ -893,7 +938,8 @@ function canvasAxes(g, xs, ys, m, W, H, xTitle, yTitle) {
 
 /* ── views ───────────────────────────────────────────────────────────────────────────────────────────── */
 const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: ['arm', 'dsh', 'Ras85D', 'N', 'yki', 'Akt'],   // example proteins on the home page
-  zebrafish: ['ksr1a', 'map3k7'], yeast: ['PRR2', 'YAK1'], worm: ['ksr-1', 'par-1'] };
+  zebrafish: ['ksr1a', 'map3k7'], yeast: ['PRR2', 'YAK1'], worm: ['ksr-1', 'par-1'],
+  virus: [['Herpes simplex virus 1', 'taxon/10299'], ['Epstein-Barr virus', 'taxon/10377'], ['Poliovirus', 'taxon/12081'], ['Mpox virus', 'taxon/619591']] };   // viruses open their network page; each shows reported complexes at the default 1% FPR
 async function viewHome() {
   // Totals come from the species manifests alone; the species indexes (search) load once the page is idle.
   const gen = ROUTE, reg = await registry(), all = await Promise.all((reg.species || []).map((x) => speciesManifest(x.id)));
@@ -909,7 +955,7 @@ async function viewHome() {
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
       <div class="chips">${(reg.species || []).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<a class="lbl sp-link" href="#/${x.id}" title="every ${esc(x.label.toLowerCase())} protein, screen and network">${esc(x.label)}</a>` : ''}`
-        + (TRY[x.id] || []).map((g) => `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`).join('') + '</span>').join('')}</div>
+        + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
     </section>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
@@ -1114,11 +1160,12 @@ async function viewAbout() {
 }
 
 // The counts of a screen, a species or a set, in one row: a prediction is a pair folded once (its ranked models are
-// counted as models); protein pairs are unique pairs, a protein with itself left out
-const kpiRow = (k) => `<div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.pairs)}</b><span>protein pairs</span></div>
-  ${k.runs ? `<div class="kpi"><b>${fmtInt(k.runs)}</b><span>predictions</span></div>` : ''}<div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>
+// counted as models); protein pairs are unique pairs. One model per pair (the same three numbers): one tile, so marked
+const kpiRow = (k) => { const one = k.predictions === k.pairs && (!k.runs || k.runs === k.pairs);
+  return `<div class="kpirow"><div class="kpi"><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div class="kpi"><b>${fmtInt(k.pairs)}</b><span>protein pairs${one ? '<i class="kc t">one model each</i>' : ''}</span></div>
+  ${one ? '' : `${k.runs ? `<div class="kpi"><b>${fmtInt(k.runs)}</b><span>predictions</span></div>` : ''}<div class="kpi"><b>${fmtInt(k.predictions)}</b><span>models</span></div>`}
   <div class="kpi f10"><b>${fmtInt(k.pairsFpr10)}</b><span>pairs past 10% FPR${cutNote(10)}</span></div><div class="kpi f5"><b>${fmtInt(k.pairsFpr5)}</b><span>past 5% FPR${cutNote(5)}</span></div>
-  <div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div>`;
+  <div class="kpi f1"><b>${fmtInt(k.pairsFpr1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div>`; };
 const shortCite = (src) => `${src.citation.split(' ')[0]} et al. ${(src.citation.match(/\((\d{4})\)/) || [])[1] || ''}`.trim();
 // Thematic sets of a dataset, for its dataset and species pages: one table, screens first, then source categories;
 // the bar is each set's share of the dataset's predictions (sets overlap, so shares need not add up)
@@ -1229,6 +1276,7 @@ const ESCALE = { gray: ['#C5CCD4', '#1E2A38'], blue: ['#C6DBEF', '#08306B'], bro
 const ESCALE_LBL = { gray: 'gray', blue: 'blue', brown: 'brown', flat: 'off (one gray)' };
 const EFLAT = '#9AA5B1', KB_COL = { p: '#C62828', g: '#2E7D32', pg: '#6A1B9A' };
 const escale = (k) => d3.scaleLinear().domain([CUT[10], 0.85]).range(ESCALE[k] || ESCALE.gray).clamp(true);
+const EGRAY = escale('gray');   // the fixed gray scale of the virus networks
 const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');
 const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.pubs > 0 || d.gen > 0);
 const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
@@ -1250,6 +1298,37 @@ function edgeKey(st, K, links, extra = []) {   // the key under a network: the i
       + `<span><i style="background:${KB_COL.pg}"></i>both (${n((d) => d.pubs > 0 && d.gen > 0)})</span>`
       + (extra.length ? `<span><i class="kb-dash"></i>reported, not predicted, dashed in the same colors (${fmtInt(extra.length)})</span>` : '') : '';
   return `<span class="kbhead">Edge color</span><div class="kbrow">${base}${red}</div>`;
+}
+const HOMO_RING = '#111111';   // a black ring (community colors include red) around a protein predicted to form a homodimer (its pair with itself past the cutoff)
+const homoKey = (n) => `<span><i style="background:#fff;border:3px solid ${HOMO_RING};border-radius:50%;box-sizing:border-box"></i>predicted homodimer${n == null ? '' : ` (${fmtInt(n)})`}</span>`;
+// Communities of a small network by Louvain (modularity, resolution 1): nodes 0..n-1, edges [u, v, weight]. Deterministic
+// (nodes visited in index order), so the same network always gives the same grouping. Returns a community index per node,
+// communities numbered by size, largest first; isolated nodes get their own.
+function louvain(n, edges) {
+  let comm = [...Array(n).keys()], N = n, E = edges.map(([u, v, w]) => [u, v, w]);
+  const member = [...Array(n).keys()].map((i) => [i]);   // original nodes in each current node
+  for (let level = 0; level < 10; level++) {
+    const adj = [...Array(N)].map(() => new Map()), k = new Float64Array(N); let m2 = 0;
+    for (const [u, v, w] of E) { adj[u].set(v, (adj[u].get(v) || 0) + w); adj[v].set(u, (adj[v].get(u) || 0) + w); k[u] += w; k[v] += w; m2 += 2 * w; }
+    if (!m2) break;
+    const c = [...Array(N).keys()], tot = Float64Array.from(k);
+    let moved = true, any = false, rounds = 0;
+    while (moved && rounds++ < 50) { moved = false;
+      for (let i = 0; i < N; i++) {
+        const ci = c[i], wt = new Map(); for (const [j, w] of adj[i]) if (j !== i) wt.set(c[j], (wt.get(c[j]) || 0) + w);
+        tot[ci] -= k[i]; let best = ci, gain = (wt.get(ci) || 0) - tot[ci] * k[i] / m2;
+        for (const [cj, w] of wt) { const g = w - tot[cj] * k[i] / m2; if (g > gain + 1e-12) { gain = g; best = cj; } }
+        tot[best] += k[i]; if (best !== ci) { c[i] = best; moved = true; any = true; } }
+    }
+    if (!any) break;
+    const ids = new Map(); c.forEach((x) => { if (!ids.has(x)) ids.set(x, ids.size); });
+    const next = [...Array(ids.size)].map(() => []); for (let i = 0; i < N; i++) next[ids.get(c[i])].push(...member[i]);
+    const agg = new Map(); for (const [u, v, w] of E) { const a = ids.get(c[u]), b = ids.get(c[v]), key = a < b ? a * ids.size + b : b * ids.size + a; agg.set(key, (agg.get(key) || 0) + w); }
+    E = [...agg].map(([key, w]) => [Math.floor(key / ids.size), key % ids.size, w]); N = ids.size; member.length = 0; member.push(...next);
+  }
+  const order = member.map((m, i) => [i, m.length]).sort((a, b) => b[1] - a[1]), out = new Array(n);
+  order.forEach(([i], rank) => { for (const x of member[i]) out[x] = rank; });
+  return out;
 }
 const EWID = (a) => 0.5 + 4.3 * Math.max(0, Math.min(1, a / 0.8));
 function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene symbol (exact case first), a CG number or an older name
@@ -1304,6 +1383,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(P.gene)}</div>
     <div class="phead"><div><h1>${esc(P.gene)}</h1><div class="pname" title="${esc(P.name)}">${esc(short(P.name) || P.id)}</div>
       <div class="ids">${fbLink}${uniprotLink(P.acc)}${fbLink ? '' : `<span>${esc(P.id)}</span>`}${P.clen ? `<span>${fmtInt(P.clen)} aa</span>` : ''}</div>
+      ${P.virus ? `<div class="srcs">Virus <a href="#/${sp.id}/taxon/${P.virus.taxid}">${esc(P.virus.name)}</a> <span class="muted">· ${fmtInt(P.virus.n)} proteins, every pair folded${P.key.includes('_p') ? ' · a mature peptide of a polyprotein, numbered from its own first residue' : ''}</span></div>` : ''}
       <div class="srcs scope" id="scope">In ${srcBadges(sp, P.src)}</div>
       <div class="flags" id="flags">${flags.join('')}</div>
       <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`)}</div></div>
@@ -1323,7 +1403,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:#6D4FD1"></i>1%</span><span><i style="background:#16956A"></i>5%</span><span><i style="background:#C78B00"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
-        <div class="clip-ctl"><label class="ctl muted" title="a residue number or a variant (983, T983A): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or T983A" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div></div></div>
+        <div class="clip-ctl"><label class="ctl muted" title="a residue number or a variant (983, T983A): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or T983A" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === 10 ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
       <div class="plot" id="sites-map"></div><p class="sites-bg muted" id="sites-bg"></p><p class="sites-more" id="sites-more" hidden></p><div class="domlegend" id="sites-domains"></div>
       <p class="muted sites-note">How the sites are found: LIVIA cLIP, run in your browser on the predictions shown, takes the residues of ${esc(P.gene)} that
@@ -1357,16 +1437,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
-        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR</option><option value="5">5% FPR</option><option value="1">1% FPR</option></select></label>${edgeCtl('net')}</div></div>
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net')}</div></div>
       <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color. Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
       <div class="netkey"><div class="kbkey" id="net-kbkey"></div>
-        <div><span>Edge width · average iLIS</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
+        <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
       <div class="legend" id="net-legend"></div><div id="net-x"></div></div>
     <div class="card" id="c-pt"><div class="card-head"><h2>Partners <span class="muted" id="pt-note"></span></h2>
       <div class="controls" style="margin:0"><select id="pt-src" aria-label="Which screens"><option value="0">all screens</option>${sp.dsIds.map((_, di) => (P.src & (1 << di) ? `<option value="${1 << di}">${esc(sp.dsShort[di])}</option>` : '')).join('')}</select>
-        <select id="pt-band" aria-label="Which partners, by FPR band"><option value="10">past 10% FPR</option><option value="5">past 5% FPR</option><option value="1">past 1% FPR</option><option value="0">all predicted</option></select>
+        <select id="pt-band" aria-label="Which partners, by FPR band"><option value="10">past 10% FPR (iLIS ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ${CUT[1]})</option><option value="0">all predicted</option></select>
         <input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>`;
   { const bar = $('.subnav'); let cur = null, raf = 0;
@@ -1447,6 +1527,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (SET || ISO) {   // the tiles count what the page shows
     const others = B.partners.filter((x) => x.id !== P.key && !x.rep), cnt = (c) => others.filter((x) => x.best >= c).length;
     $('#kp-all').textContent = fmtInt(others.length); $('#kp-10').textContent = fmtInt(cnt(CUT[10])); $('#kp-5').textContent = fmtInt(cnt(CUT[5])); $('#kp-1').textContent = fmtInt(cnt(CUT[1]));
+  }
+  // One model per pair (the viral release, or a page whose screens folded one model): best = average, so one value is shown
+  const ONE = sp.one || B.partners.every((x) => x.counted.length <= 1);
+  if (ONE) {
+    $('#c-partners .card-head .muted').textContent = 'each partner, one model per pair'; $('#sc-pts').closest('label').style.display = 'none';
+    $('#c-partners h3 .muted').textContent = 'by iLIS';
+    $('.tl-head').innerHTML = '<span></span><span>Partner</span><span>Cluster</span><span>iLIS</span><span>ipTM</span>';
+    $('.tl-head').classList.add('one'); $('#toplist').classList.add('one');
   }
   const refSeq = await seqOf(sp, P, B);   // the reference sequence (UniProt; FlyBase for fly)
   if (gone()) return;
@@ -1985,7 +2073,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : [Math.min(0, d3.min(vs) ?? 0), Math.max(1e-6, (d3.max(vs) ?? 1) * 1.04)]);
     const xs = d3.scaleLinear(dom(xK, pts.map((q) => q.x)), [m.l, W - m.r]).nice(), ys = d3.scaleLinear(dom(yK, pts.map((q) => q.y)), [H - m.b, m.t]).nice();
     const g = canvasCtx(cv, W, H);
-    const title = (key) => (key === '_rank' ? `global rank (by ${METRICS[rankBy]})` : METRICS[key] + (per ? ' (best model)' : ''));
+    const title = (key) => (key === '_rank' ? `global rank (by ${METRICS[rankBy]})` : METRICS[key] + (per && !ONE ? ' (best model)' : ''));
     canvasAxes(g, xs, ys, m, W, H, title(xK), title(yK));
     g.save(); g.lineWidth = 1; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace';
     const dash = (x0, y0, x1, y1) => { const L = Math.hypot(x1 - x0, y1 - y0); g.beginPath(); for (let t = 0; t < L; t += 8) { const a = t / L, b = Math.min(L, t + 4) / L; g.moveTo(x0 + (x1 - x0) * a, y0 + (y1 - y0) * a); g.lineTo(x0 + (x1 - x0) * b, y0 + (y1 - y0) * b); } g.stroke(); };   // dashes as segments: canvas2svg has no setLineDash
@@ -2031,16 +2119,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const fmtM = (key, v) => (Number.isFinite(v) ? (['iLIA', 'iLISA', 'LIA', 'cLIA', 'qPl', 'pPl'].includes(key) ? v.toFixed(1) : v.toFixed(3)) : '–');
     cv.onmousemove = (e) => { const q = near(e); if (!q) { cv.style.cursor = ''; return hideTip(); } cv.style.cursor = 'pointer'; const p = q.p;
       const keys = [...new Set(['iLIS', 'iLISA', 'iLIA', 'ipTM', yK, xK])].filter((x) => x !== '_rank' && present.includes(x));
-      showTip(`<b>${esc(gname(p.partner))}</b> · ${per ? `best of ${fmtInt(q.t.counted.length)} model${q.t.counted.length === 1 ? '' : 's'} (${esc(runLabel(sp, B, p.run, P))}, rank ${p.rank}) · iLIS average ${fmtNum(q.t.avg, 3)}` : `${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}`}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
+      showTip(`<b>${esc(gname(p.partner))}</b> · ${per && !ONE ? `best of ${fmtInt(q.t.counted.length)} model${q.t.counted.length === 1 ? '' : 's'} (${esc(runLabel(sp, B, p.run, P))}, rank ${p.rank}) · iLIS average ${fmtNum(q.t.avg, 3)}` : `${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}`}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const q = near(e); if (!q) return; hideTip(); location.hash = `#/${sp.id}/${P.key}/${q.p.partner}${scopeQ}`; };
     const r1 = pearson(pts.map((q) => q.x), pts.map((q) => q.y)), rho = spearman(pts.map((q) => q.x), pts.map((q) => q.y));
     { const d = $('#sc-def'), used = [xK, yK].some((x) => x === 'iLISA' || x === 'iLIA'); d.hidden = !used;
       if (used) d.textContent = 'iLISA = iLIS × iLIA; iLIA = √(LIA × cLIA), where LIA and cLIA count the residue pairs that enter LIS and cLIS'; }
-    $('#sc-rho').textContent = `${fmtInt(pts.length)} ${per ? 'partners, the best model of each pair' : mode === 'rank1' ? 'predictions; rank-1 models colored by cluster' : 'predictions'} · ${Number.isFinite(r1) ? `Pearson r = ${r1.toFixed(3)} · ` : ''}${Number.isFinite(rho) ? `Spearman ρ = ${rho.toFixed(3)}` : ''}`;
+    $('#sc-rho').textContent = `${fmtInt(pts.length)} ${per ? (ONE ? 'partners, one model each' : 'partners, the best model of each pair') : mode === 'rank1' ? 'predictions; rank-1 models colored by cluster' : 'predictions'} · ${Number.isFinite(r1) ? `Pearson r = ${r1.toFixed(3)} · ` : ''}${Number.isFinite(rho) ? `Spearman ρ = ${rho.toFixed(3)}` : ''}`;
     const cnt = {}; let other = 0; for (const q of pts) q.c ? (cnt[q.c] = (cnt[q.c] || 0) + 1) : other++;
     const unit = per ? 'partners' : 'predictions';
-    $('#sc-legend').innerHTML = (per ? '<span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: iLIS average over the models</span>' : '')
+    $('#sc-legend').innerHTML = (per ? `<span><i style="background:#A7B2BF;border-radius:50%"></i>dot size: ${ONE ? 'iLIS' : 'iLIS average over the models'}</span>` : '')
       + Object.keys(cnt).map(Number).sort((a, b) => a - b).map((c) => `<span><i style="background:${clusterColor(c, k)};border-radius:50%"></i>${clusterLabel(c)} (${cnt[c]})</span>`).join('')
       + `<span><i style="background:#CDD3DB;border-radius:50%"></i>not clustered (${fmtInt(other)} ${unit})</span>`
       + (KB ? `<label class="kb-toggle"><i class="kb-ring"></i>reported in BioGRID ${KB.release}, physical<select id="sc-known" aria-label="Which reported partners to ring">${[
@@ -2057,18 +2145,19 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const past = (p) => p.counted.filter((x) => x.iLIS >= CUT[10]).length / Math.max(1, p.counted.length);
     $('#toplist').innerHTML = [...list].sort((a, b) => past(b) - past(a) || b.avg - a.avg || b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
-      <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS best')}">${p.best.toFixed(3)}</span>
-      <span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>
-      <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
-      <span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span>
-      <span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span></li>`; }).join('');
+      <span class="num" style="color:${bandCol(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, ONE ? 'iLIS' : 'iLIS best')}">${p.best.toFixed(3)}</span>
+      ${ONE ? '' : `<span class="num" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${tip(FPR_AVG.iLIS, p.avg, 'iLIS average')}">${p.avg.toFixed(3)}</span>`}
+      <span class="num" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, ONE ? 'ipTM' : 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
+      ${ONE ? '' : `<span class="num" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${tip(FPR_AVG.ipTM, p.iptmAvg, 'ipTM average')}">${p.iptmAvg.toFixed(2)}</span>`}
+      ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span>`}</li>`; }).join('');
   }
   reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); cluster(); };
 
   /* partner table */
   const T = { sort: 'best', asc: false, page: 0, band: P.pos10 ? 10 : 0, filter: '', src: 0 };
-  const cols = [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
+  const cols = ONE ? [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS'], ['iptmBest', 'ipTM'], ['contacts', 'Contacts']]
+    : [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
   function drawTable() {
     let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length }; });
     if (T.src) list = list.filter((p) => (SETS ? p.sets.includes(T.src) : p.src & T.src));
@@ -2084,17 +2173,17 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best);
         return `<tr class="iso-sub"><td class="g">${esc(x.label)}</td><td>${c ? `<span class="mdot" style="background:${clusterColor(c, k)}"></span>${clusterLabel(c, true)}` : '<span class="muted">—</span>'}</td>
           <td></td><td class="nm">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND_TXT[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
-          <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td><td class="n v" style="color:${bandCol(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
-          <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td><td class="n">${fmtInt(x.contacts)}</td><td class="n">${x.pass} / ${x.n}</td></tr>`; }).join('') : '';
+          ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td>`}<td class="n v" style="color:${bandCol(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
+          ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td>`}<td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
       const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
       return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}"${(() => { const kb = kbOf(p.id); return kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''; })()}>${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         <td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
         <td class="n v" style="color:${BAND_TXT[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
-        <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>
+        ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>`}
         <td class="n v" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
-        <td class="n v" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>
-        <td class="n">${fmtInt(p.contacts)}</td><td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td></tr>${subs}`; }).join('')}</tbody>`;
+        ${ONE ? '' : `<td class="n v" style="color:${bandCol(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>`}
+        <td class="n">${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td>`}</tr>${subs}`; }).join('')}</tbody>`;
     $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
     $('#pt').querySelectorAll('th').forEach((th) => th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : (c === 'gene' || c === 'name' || c === 'c'); T.sort = c; drawTable(); });
     $('#pager').innerHTML = pages > 1 ? `<button class="btn" id="pp" ${T.page ? '' : 'disabled'}>Previous</button><span>Page ${T.page + 1} of ${pages}</span><button class="btn" id="pn" ${T.page < pages - 1 ? '' : 'disabled'}>Next</button>` : '';
@@ -2120,7 +2209,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const n = +$('#net-n').value, c = CUT[+$('#net-cut').value];
     const qAdj = ISO ? new Map(B.partners.filter((x) => x.id !== P.key && !x.rep && sp.byKey.has(x.id)).map((x) => [sp.byKey.get(x.id).i, { best: x.best, avg: x.avg, src: x.src }]))   // this isoform's partners
       : E.adj.get(P.i) || new Map();
-    const nb = [...qAdj].filter(([, e]) => e.best >= c).sort((a, b) => b[1].best - a[1].best).slice(0, n);
+    const nb = [...qAdj].filter(([j, e]) => j !== P.i && e.best >= c).sort((a, b) => b[1].best - a[1].best).slice(0, n);   // the pair with itself is drawn as a ring, not as a partner
+    const homoOf = (i) => { const e = (E.adj.get(i) || new Map()).get(i); return !!(e && e.best >= c); };
     netBox.innerHTML = '<svg></svg>';
     if (!nb.length) { netBox.innerHTML = '<div class="empty">No partners past this cutoff.</div>'; return; }
     const nodes = [{ id: P.i, row: P, q: true }, ...nb.map(([j, e]) => ({ id: j, row: sp.rows[j], e }))];
@@ -2140,12 +2230,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       $('#net-kbkey').innerHTML = edgeKey(st, K, links); };
     restyle();
-    link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
+    link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS ${ONE ? d.best.toFixed(3) : `best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}`}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
     const r = (d) => (d.q ? 18 : 6 + Math.min(10, Math.sqrt(deg.get(d.id) || 1) * 1.6));
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
         .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); if (!d.q) { d.fx = null; d.fy = null; } }));
-    const circle = node.append('circle').attr('r', r).attr('stroke', '#fff').attr('stroke-width', (d) => (d.q ? 2.5 : 1.8));
+    const homo = new Set(nodes.filter((d) => homoOf(d.id)).map((d) => d.id));
+    const circle = node.append('circle').attr('r', r).attr('stroke', (d) => (homo.has(d.id) ? HOMO_RING : '#fff')).attr('stroke-width', (d) => (homo.has(d.id) ? 3.2 : d.q ? 2.5 : 1.8));
     node.append('text').text((d) => d.row.gene).attr('text-anchor', 'middle').attr('dy', (d) => -r(d) - 6)   // every label, the center one too: dark text on a white edge
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 14 : 11)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', (d) => (d.q ? 4 : 3)).attr('stroke-linejoin', 'round');
@@ -2154,10 +2245,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const k = M ? M.k : 1;
       circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
       const used = [...new Set(nodes.filter((d) => !d.q).map((d) => partnerCluster.get(d.row.key)).filter(Boolean))].sort((a, b) => a - b);
-      $('#net-legend').innerHTML = (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '');
+      $('#net-legend').innerHTML = (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '') + (homo.size ? homoKey(homo.size) : '');
     } };
     NET.recolor();
-    node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR` : `<b>${esc(d.row.gene)}</b> · iLIS best ${d.e.best.toFixed(3)} · average ${d.e.avg.toFixed(3)} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}`, ev.clientX, ev.clientY))
+    node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR` : `<b>${esc(d.row.gene)}</b> · iLIS ${ONE ? d.e.best.toFixed(3) : `best ${d.e.best.toFixed(3)} · average ${d.e.avg.toFixed(3)}`} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip)
       .on('click', (ev, d) => { if (!d.q && !ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}${scopeQ}`; });
     const q = nodes[0]; q.fx = W / 2; q.fy = H / 2;
@@ -2232,7 +2323,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   if (stale(gen)) return;
   const part = B.partners.find((p) => p.id === O.key);
   if (!part) { app.innerHTML = crumbs + `<div class="empty">${esc(P.gene)} and ${esc(O.gene)} were not predicted together${scope ? ` in ${esc(label)}. <a href="#/${sp.id}/${P.key}/${O.key}">Every screen</a>` : ' in these screens'}.</div>`; return; }
-  const best = [...part.preds].sort((a, b) => b.iLIS - a.iLIS)[0], b = bandOf(part.best), oLen = O.clen || part.preds[0].pLen;
+  const best = [...part.preds].sort((a, b) => b.iLIS - a.iLIS)[0], b = bandOf(part.best), oLen = O.clen || part.preds[0].pLen, one = part.counted.length <= 1;   // one model: best = average
   const who = (R, len, col) => `<div class="who"><b style="color:${col}">${esc(R.gene)}</b> <span>${esc(short(R.name) || '')}</span>
       <div class="ids">${R.acc ? uniprotLink(R.acc) : '<span>no UniProt entry</span>'}<span>${esc(R.id)}</span>${len ? `<span>${fmtInt(len)} aa</span>` : ''}</div></div>`;
   const num = (v, d) => `<td class="n">${fmtNum(v, d)}</td>`;
@@ -2243,10 +2334,10 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
         <div class="pairwho">${who(P, P.clen, 'var(--query-t)')}${who(O, oLen, 'var(--partner-t)')}</div>
         <div class="srcs">Predicted in ${part.sets.length ? setBadges(part.sets) : srcBadges(sp, part.src)}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P); return t ? `<div class="srcs muted ovl">${esc(t)}</div>` : ''; })()}
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`)}</div></div>
-      <div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS best · ${bandLabel[b]}</span></div>
-        <div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>
-        <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM best · ${bandLabel[bandIn(FPR.ipTM, part.iptmBest)]}</span></div>
-        <div class="kpi"><b style="color:${bandCol(FPR_AVG.ipTM, part.iptmAvg)}">${part.iptmAvg.toFixed(2)}</b><span>ipTM average · ${bandLabel[bandIn(FPR_AVG.ipTM, part.iptmAvg)]}</span></div></div></div>
+      <div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${one ? '' : ' best'} · ${bandLabel[b]}</span></div>
+        ${one ? '' : `<div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>`}
+        <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM${one ? '' : ' best'} · ${bandLabel[bandIn(FPR.ipTM, part.iptmBest)]}</span></div>
+        ${one ? '' : `<div class="kpi"><b style="color:${bandCol(FPR_AVG.ipTM, part.iptmAvg)}">${part.iptmAvg.toFixed(2)}</b><span>ipTM average · ${bandLabel[bandIn(FPR_AVG.ipTM, part.iptmAvg)]}</span></div>`}</div></div>
     <div class="card"><div class="card-head"><h2>Ranked models</h2><span class="muted">every model of every screen · rank = the prediction's own model order, ipTM-based, not the iLIS order · click one to show its interface${part.preds.some((p) => p.rep) ? ' · a repeat folded the same two sequences again: listed, not counted' : ''}</span></div>
       <div class="legend" style="margin:0 0 10px">Scores are colored by the false-positive-rate band they pass, each metric by its own benchmarked cutoffs (listed on the About page):
         ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}</div>
@@ -2280,9 +2371,12 @@ async function viewSpecies(spId) {
   if (stale(gen)) return;
   document.title = `${sp.reg.label} · LIVIA Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / ${esc(sp.reg.label)}</div>
-    <div class="dshead"><h1>${esc(sp.reg.label)} protein interactions</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
+    <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
+    ${sp.viruses ? `<div class="card" id="vir-card"><div class="card-head"><div><h2>Viruses</h2><div class="muted">${fmtInt(sp.viruses.length)} viruses; in each, every pair of its proteins was folded. Open one for its network.</div></div>
+      <input type="search" id="vir-filter" placeholder="Filter by name or family" aria-label="Filter viruses by name, family, genus or species" style="width:220px"></div>
+      <div class="tbl-wrap"><table class="pt" id="vir-t"></table></div><p class="muted" id="vir-note" style="margin:8px 0 0"></p></div>` : ''}
     <div class="card"><div class="card-head"><div><h2>Network of your proteins</h2><div class="muted">name a few ${sp.manifest.keyedBy ? 'genes' : 'proteins'}; see the predicted pairs among them and, if you like, the partners they share</div></div>
       <a class="btn" href="#/${sp.id}/network">Build a network →</a></div></div>
     <div class="card"><h2>Screens</h2><div class="screens">${sp.manifest.datasets.map((d, di) => `<div class="screen"><span class="src" style="--c:${sp.dsColor[di]}">${esc(d.short)}</span>
@@ -2293,6 +2387,155 @@ async function viewSpecies(spId) {
       <div class="chips">${hubs.map((r) => `<a class="chip" href="#/${sp.id}/${r.key}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`).join('')}</div></div>
     ${TSs.map(setsCard).join('')}`;
   mountSearch($('#sp-search'), { spId });
+  if (sp.viruses) {   // the virus list: by family, then name (or any column clicked); filtered by name, family, genus or species
+    const VS = { key: 'family', asc: true }, name = (v) => v.name.toLowerCase();
+    const COLS = [['name', 'Virus', name], ['family', 'Family', (v) => (v.family || '\uffff').toLowerCase()], ['host', 'Host', (v) => (v.host || '\uffff').toLowerCase()], ['n', 'Proteins', (v) => v.n],
+      ['pairs', 'Pairs folded', (v) => v.het + v.hom], ['p10', `Past 10% FPR${cutNote(10)}`, (v) => v.hpos + v.mpos], ['p5', `Past 5% FPR${cutNote(5)}`, (v) => v.pos5 || 0],
+      ['p1', `Past 1% FPR${cutNote(1)}`, (v) => v.pos1 || 0], ['pwp', 'Proteins with a partner', (v) => v.pwp]];
+    const draw = () => { const f = $('#vir-filter').value.trim().toLowerCase(), al = VALIAS[f] || [], [, , val] = COLS.find(([k]) => k === VS.key);
+      const all = sp.viruses.filter((v) => !f || name(v).includes(f) || al.includes(name(v)) || [v.family, v.genus, v.species].some((x) => x && x.toLowerCase().includes(f)))
+        .sort((a, b) => { const x = val(a), y = val(b), d = typeof x === 'string' ? x.localeCompare(y) : x - y; return (VS.asc ? d : -d) || name(a).localeCompare(name(b)); }), show = all.slice(0, 60);
+      const n = (x) => (x == null ? '<span class="muted">—</span>' : fmtInt(x));
+      $('#vir-t').innerHTML = `<thead><tr>${COLS.map(([k, l]) => `<th data-k="${k}" class="${['name', 'family', 'host'].includes(k) ? '' : 'n'}${VS.key === k ? ' sorted' + (VS.asc ? ' asc' : '') : ''}">${l}</th>`).join('')}</tr></thead><tbody>${show.map((v) =>
+        `<tr><td class="g"><a href="#/${sp.id}/taxon/${v.taxid}">${esc(v.name)}</a></td><td title="${esc(v.genus ? 'genus ' + v.genus : '')}">${esc(v.family || '—')}</td><td class="nm">${esc(v.host || '—')}</td><td class="n">${fmtInt(v.n)}</td><td class="n">${fmtInt(v.het + v.hom)}</td><td class="n">${fmtInt(v.hpos + v.mpos)}</td><td class="n">${n(v.pos5)}</td><td class="n">${n(v.pos1)}</td><td class="n">${fmtInt(v.pwp)}</td></tr>`).join('')}</tbody>`;
+      $('#vir-t').querySelectorAll('th').forEach((th) => th.onclick = () => { const k = th.dataset.k; VS.asc = VS.key === k ? !VS.asc : ['name', 'family', 'host'].includes(k); VS.key = k; draw(); });
+      $('#vir-note').textContent = (all.length > show.length ? `${fmtInt(show.length)} of ${fmtInt(all.length)} shown; type to narrow.` : `${fmtInt(all.length)} shown.`)
+        + ' Family and host from the ICTV Virus Metadata Resource (MSL40); click a column to sort.'; };
+    $('#vir-filter').oninput = draw; draw();
+  }
+}
+
+/* ── virus page: one virus of the viral dataset, whose proteins were folded all against all. Its network (every protein
+   a node, pairs past the cutoff as edges colored by FPR band, a ring for a predicted homodimer), its pairs and its proteins.
+   Reads only the species index and edge list on the site. ───────────────────────────────────────────────────────── */
+async function viewVirus(spId, taxid) {
+  const gen = ROUTE, sp = await species(spId), v = (sp.viruses || []).find((x) => String(x.taxid) === String(taxid));
+  if (stale(gen)) return;
+  if (!v) {   // a species taxid (NCBI): its strain here, or the list of them
+    const kin = (sp.viruses || []).filter((x) => x.lineage.some((t) => String(t) === String(taxid)));   // any NCBI taxon between the family and the virus
+    if (kin.length === 1) { location.replace(`#/${sp.id}/taxon/${kin[0].taxid}`); return; }
+    app.innerHTML = kin.length ? `<div class="empty">Taxon ${esc(taxid)} holds ${fmtInt(kin.length)} viruses here: ${kin.slice(0, 60).map((x) => `<a href="#/${sp.id}/taxon/${x.taxid}">${esc(x.name)}</a>`).join(', ')}${kin.length > 60 ? ` and ${fmtInt(kin.length - 60)} more` : ''}.</div>`
+      : `<div class="empty">No virus with taxon ${esc(taxid)} here. <a href="#/${sp.id}">All viruses</a></div>`; return; }
+  document.title = `${v.name} · LIVIA Atlas`;
+  // this virus's pairs at iLIS >= 0.223 (homodimers included) with every score lis.py wrote: data/species/virus/pairs/<taxid>.tsv
+  let text; try { text = await getText(sp.base + `pairs/${v.taxid}.tsv`); } catch (e) { if (!stale(gen)) app.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
+  if (stale(gen)) return;
+  const q = hashPath().q; let cut = [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, topk = q.has('top') ? Math.max(0, +q.get('top') || 0) : 0;   // defaults: 5% FPR, every edge
+  const R = (i) => sp.rows[i], lines = text.trim().split('\n'), head = lines[0].split('\t');
+  const all = lines.slice(1).map((l) => { const t = l.split('\t'), m = {}, ad = {}; let model = '', shown = false; head.forEach((h, k) => { if (h === 'model') model = t[k] || ''; else if (h === 'afdb') shown = t[k] === '1';
+    else if (ARCH_COLS.includes(h)) { if (t[k] !== '' && t[k] != null) ad[h] = +t[k]; } else if (k > 1) m[h] = t[k] === '' ? NaN : +t[k]; });
+    const addr = ARCH_COLS.every((h) => Number.isFinite(ad[h])) ? ad : null;   // its place in the release archive, once its chunk is indexed
+    return { a: +t[0], b: +t[1], best: m.iLIS, avg: m.iLIS, iptm: m.ipTM, m, model, shown, addr }; }).sort((x, y) => y.best - x.best);   // one model per pair: best = average
+  const MCOL = head.slice(2).filter((h) => h !== 'model' && h !== 'afdb' && !ARCH_COLS.includes(h)),   // scores only: the archive address columns drive the LIVIA link
+    mfmt = (k, x) => (!Number.isFinite(x) ? '–' : k === 'iLISA' ? x.toFixed(1) : k === 'ipTM' ? x.toFixed(2) : x.toFixed(3));
+  let sortKey = 'iLIS', sortAsc = false;
+  const lab = (r) => {   // a short node label: the gene, or the code that names a polyprotein product ("Serine protease NS3" → NS3)
+    const g = r.gene; if (g.length <= 12) return g;
+    const ns = g.match(/^Non[ -]?structural protein\s+(\w+)$/i); if (ns) return 'NS' + ns[1];
+    const last = g.split(/\s+/).pop(); if (/^(NS\d+[A-Z]?|nsP\d|VP\d+[a-z]?|[A-Za-z]{1,3}\d*[A-Z]?|2[Kk]|\d[A-C])$/.test(last) && last.length <= 5) return last;
+    return g.slice(0, 11) + '…'; };
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / ${esc(v.name)}</div>
+    <div class="phead"><div><h1>${esc(v.name)}</h1>
+      <div class="pname">every pair of its ${fmtInt(v.n)} proteins folded with AlphaFold-Multimer (one model each) and scored with lis.py</div>
+      ${v.family ? `<div class="pname">${esc(v.family)}${v.genus ? ` · <i>${esc(v.genus)}</i>` : ''}${v.species ? ` · species <i>${esc(v.species)}</i>` : ''}${v.host ? ` · host: ${esc(v.host)}` : ''} <span class="muted">(ICTV VMR MSL40)</span></div>` : ''}
+      <div class="ids"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${v.taxid}" target="_blank" rel="noopener">NCBI taxon ${v.taxid}</a><span>${fmtInt(v.het)} heterodimers · ${fmtInt(v.hom)} homodimers folded</span></div>
+      <div class="actions">${citeBtn(`${v.name} (virus)`)}</div></div>
+      <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR${cutNote(10)}</span></div>
+        <div class="kpi"><b>${fmtInt(v.mpos)}</b><span>homodimers past 10% FPR${cutNote(10)}</span></div><div class="kpi"><b>${fmtInt(v.pwp)}</b><span>proteins with a partner</span></div></div></div>
+    <div class="card" id="vn-card"><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label class="ctl" title="a large virus is easier to read with each protein's strongest pairs only; the pairs table lists every pair">Edges<select id="vn-top"><option value="0">all</option><option value="5">top 5 per protein</option><option value="3">top 3 per protein</option><option value="1">top 1 per protein</option></select></label>
+        <label class="ctl" title="find groups of proteins predicted to bind each other more than the rest (Louvain communities, iLIS-weighted) and lay each group out apart"><input type="checkbox" id="vn-comm" checked> Group by community</label>
+        <div class="ctl"><span>Cutoff</span><div class="seg" id="vn-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
+      <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, shaded in gray by its iLIS (darker is higher), its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. Grouped by community, proteins predicted to bind each other more than the rest sit together, one color per group. Click a protein for its page, an edge for the pair.</p>
+      <div class="net" id="vn-net"></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
+    <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><button class="btn" id="vp-csv" type="button">↓ CSV</button></div>
+      <div class="legend" style="margin:0 0 10px">iLIS and ipTM are colored by the false-positive-rate band they pass, each by its own benchmarked cutoffs:
+        ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}<span class="muted">Click a column to sort.</span></div>
+      <div class="tbl-wrap"><table class="pt compact" id="vp"></table></div><div class="pager" id="vp-more"></div></div>
+    <div class="card"><div class="card-head"><h2>Proteins <span class="muted">${fmtInt(v.n)}</span></h2></div><div class="tbl-wrap"><table class="pt" id="vprot"></table></div></div>`;
+  let shownPairs = 60;
+  const pairHref = (x) => `#/${sp.id}/${R(x.a).key}/${R(x.b).key}`;
+  function tables() {
+    const c = CUT[cut], P = all.filter((x) => x.best >= c), deg = new Map(), homo = new Set();
+    for (const x of P) if (x.a === x.b) homo.add(x.a); else { deg.set(x.a, (deg.get(x.a) || 0) + 1); deg.set(x.b, (deg.get(x.b) || 0) + 1); }
+    $('#vp-note').textContent = `${fmtInt(P.length)} past iLIS ${c} (${cut}% FPR), ${fmtInt(P.filter((x) => x.a === x.b).length)} of them homodimers`;
+    const PS = [...P].sort((x, y) => { const d = (x.m[sortKey] ?? -Infinity) - (y.m[sortKey] ?? -Infinity); return (sortAsc ? d : -d) || y.best - x.best; });
+    $('#vp').innerHTML = `<thead><tr><th>Protein</th><th>Partner</th><th title="the interface residues of the pair">Pair</th><th title="the model in LIVIA, for the pairs the AlphaFold Database displays (its filter: ipSAE ≥ 0.60 and pDockQ2 ≥ 0.23)">3D</th>${MCOL.map((k) => `<th class="n${k === sortKey ? ' sorted' + (sortAsc ? ' asc' : '') : ''}" data-k="${k}" style="cursor:pointer">${k}</th>`).join('')}</tr></thead><tbody>${PS.slice(0, shownPairs).map((x) => { const b = bandOf(x.best);
+      return `<tr><td class="g"><a href="#/${sp.id}/${R(x.a).key}">${esc(R(x.a).gene)}</a></td><td class="g">${x.a === x.b ? '<span class="muted" title="homodimer: the protein with itself">self</span>' : `<a href="#/${sp.id}/${R(x.b).key}">${esc(R(x.b).gene)}</a>`}</td>
+        <td><a href="${pairHref(x)}" title="interface residues">residues</a></td>
+        <td>${x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>`
+          : x.addr && x.model ? `<a href="#" class="arch" data-m="${esc(x.model)}" title="${esc(x.model)} in LIVIA, read from the release archive at EBI (${((x.addr.cif_len + x.addr.pae_len) / 1048576).toFixed(1)} MB; not displayed by the AlphaFold Database)">LIVIA ↗</a>`
+          : '<span class="muted" title="not displayed by the AlphaFold Database (below its filter); the structure opens from the release archive once its part is indexed">—</span>'}</td>
+        ${MCOL.map((k) => (k === 'iLIS' ? `<td class="n v"><a href="${pairHref(x)}" style="color:${BAND_TXT[b]}">${mfmt(k, x.m[k])}</a></td>` : k === 'ipTM' ? `<td class="n v" style="color:${bandCol(FPR.ipTM, x.m[k])}">${mfmt(k, x.m[k])}</td>` : `<td class="n">${mfmt(k, x.m[k])}</td>`)).join('')}</tr>`; }).join('')}</tbody>`;
+    $('#vp').querySelectorAll('th[data-k]').forEach((th) => th.onclick = () => { const k = th.dataset.k; if (k === sortKey) sortAsc = !sortAsc; else { sortKey = k; sortAsc = false; } tables(); });
+    $('#vp').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = all.find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
+    $('#vp-more').innerHTML = P.length > shownPairs ? `<button class="more" type="button">show ${fmtInt(Math.min(200, P.length - shownPairs))} more</button>` : '';
+    const mb = $('#vp-more button'); if (mb) mb.onclick = () => { shownPairs += 200; tables(); };
+    const prot = [...v.members].sort((a, b) => (deg.get(b) || 0) - (deg.get(a) || 0) || R(a).gene.localeCompare(R(b).gene));
+    $('#vprot').innerHTML = `<thead><tr><th>Protein</th><th>Name</th><th class="n">Length</th><th class="n">Partners in the virus</th><th>Homodimer</th></tr></thead><tbody>${prot.map((i) =>
+      `<tr><td class="g"><a href="#/${sp.id}/${R(i).key}">${esc(R(i).gene)}</a></td><td class="nm" title="${esc(R(i).name)}">${esc(short(R(i).name))}</td><td class="n">${fmtInt(R(i).clen || R(i).len)}</td>
+        <td class="n">${fmtInt(deg.get(i) || 0)}</td><td>${homo.has(i) ? 'predicted' : '<span class="muted">—</span>'}</td></tr>`).join('')}</tbody>`;
+    return { P, deg, homo };
+  }
+  function draw() {
+    const { P, deg, homo } = tables(), box = $('#vn-net'); box.innerHTML = '<svg></svg>';
+    const W = box.clientWidth, H = box.clientHeight, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
+    const zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', (ev) => { g.attr('transform', ev.transform); relabel(ev.transform.k); }); svg.call(zoom);
+    const het = P.filter((x) => x.a !== x.b), k = topk; $('#vn-top').value = String(k);
+    let shown = het;
+    if (k) { const keep = new Set(), per = new Map(); for (const x of het) { for (const i of [x.a, x.b]) { if (!per.has(i)) per.set(i, []); per.get(i).push(x); } }
+      for (const xs of per.values()) xs.sort((a, b) => b.best - a.best).slice(0, k).forEach((x) => keep.add(x)); shown = het.filter((x) => keep.has(x)); }   // an edge stays if it is among either end's k strongest
+    const nodes = v.members.map((i) => ({ id: i, row: R(i) })), links = shown.map((x) => ({ source: x.a, target: x.b, best: x.best, avg: x.avg, x }));
+    const r = (d) => 5 + Math.min(9, Math.sqrt(deg.get(d.id) || 0) * 1.7);
+    // communities on every pair past the cutoff (not only the edges drawn); groups of three or more get a color and a place of their own
+    const idx = new Map(nodes.map((d, n) => [d.id, n])), cm = louvain(nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]));
+    const csize = new Map(); nodes.forEach((d, n) => { d.c = cm[n]; csize.set(d.c, (csize.get(d.c) || 0) + 1); });
+    const big = [...csize].filter(([c, sz]) => sz >= 3).map(([c]) => c).sort((a, b) => a - b), grouped = $('#vn-comm').checked;
+    const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : grouped && big.includes(d.c) && big.indexOf(d.c) < TAB10.length ? TAB10[big.indexOf(d.c)] : '#1A5276');
+    const center = new Map();   // each group's place: groups on a ring around the largest, spaced by their size
+    if (grouped) { const R0 = Math.min(W, H) * 0.42; big.forEach((c, n) => { if (n === 0) center.set(c, [W / 2, H / 2]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [W / 2 + R0 * Math.cos(t), H / 2 + R0 * 0.8 * Math.sin(t)]); } }); }
+    const home = (d) => center.get(d.c) || [W / 2, H / 2];
+    if (grouped) nodes.forEach((d, n) => { const [cx, cy] = home(d); d.x = cx + 30 * Math.cos(n); d.y = cy + 30 * Math.sin(n); });   // each node starts at its group's place
+    const rank = new Map([...nodes].sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0) || (homo.has(b.id) - homo.has(a.id))).map((d, n) => [d.id, n]));   // label priority: most partners first
+    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', (d) => EGRAY(d.best)).attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-opacity', 0.85).attr('stroke-linecap', 'round').style('cursor', 'pointer');
+    link.on('mousemove', (ev, d) => showTip(`<b>${esc(d.x && R(d.x.a).gene)}</b> × <b>${esc(d.x && R(d.x.b).gene)}</b> · iLIS ${d.best.toFixed(3)} · ${bandLabel[bandOf(d.best)]}${Number.isFinite(d.x.iptm) ? ` · ipTM ${d.x.iptm.toFixed(2)}` : ''}<br>click for the pair`, ev.clientX, ev.clientY))
+      .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); location.hash = pairHref(d.x); });
+    const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
+      .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
+        .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+    node.append('circle').attr('r', r).attr('fill', ccol).attr('stroke', (d) => (homo.has(d.id) ? HOMO_RING : '#fff')).attr('stroke-width', (d) => (homo.has(d.id) ? 3 : 1.5));
+    const label = node.append('text').text((d) => lab(d.row)).attr('text-anchor', 'middle')
+      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', 600).attr('fill', '#17263A')
+      .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-linejoin', 'round');
+    function relabel(z) {   // zoomed in, more labels; each at the same size on screen. About 40 labels at the fitted view of a large virus, every label for a small one
+      const budget = nodes.length <= 60 ? Infinity : 40 * z * z / Math.max(0.2, fitK * fitK);
+      label.attr('display', (d) => (rank.get(d.id) < budget ? null : 'none')).attr('font-size', 10.5 / z).attr('stroke-width', 3 / z).attr('dy', (d) => -r(d) - 5 / z);
+    }
+    let fitK = 1; relabel(1);
+    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name && d.row.name !== d.row.gene ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} partner${(deg.get(d.id) || 0) === 1 ? '' : 's'} in the virus at this cutoff${homo.has(d.id) ? ' · predicted homodimer' : ''}`, ev.clientX, ev.clientY))
+      .on('mouseleave', hideTip).on('click', (ev, d) => { if (!ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}`; });
+    const same = (l) => (typeof l.source === 'object' ? l.source.c === l.target.c : true);
+    const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => 60 + 60 * (1 - Math.min(1, l.best))).strength((l) => (grouped && !same(l) ? 0.02 : 0.5)))
+      .force('charge', d3.forceManyBody().strength(nodes.length > 150 ? -90 : -200)).force('collide', d3.forceCollide().radius((d) => r(d) + 8))
+      .force('x', d3.forceX((d) => home(d)[0]).strength((d) => (grouped && center.has(d.c) ? 0.4 : 0.07))).force('y', d3.forceY((d) => home(d)[1]).strength((d) => (grouped && center.has(d.c) ? 0.4 : 0.09)))
+      .on('tick', () => { link.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+    let fitted = false;
+    sim.on('end', () => { if (fitted) return; fitted = true; const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y), pad = 40;
+      const x0 = Math.min(...xs) - pad, x1 = Math.max(...xs) + pad, y0 = Math.min(...ys) - pad - 12, y1 = Math.max(...ys) + pad, k = Math.min(2, W / (x1 - x0), H / (y1 - y0));
+      fitK = k; svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k)); });
+    $('#vn-legend').innerHTML = (k ? `<span class="muted">${fmtInt(links.length)} of ${fmtInt(het.length)} edges drawn: each protein's ${k} strongest</span>` : '')
+      + '<span><i style="background:linear-gradient(90deg, #C5CCD4, #1E2A38);height:4px;width:60px;border-radius:2px"></i>iLIS, 0.223 to 0.85+</span>'
+      + (grouped && big.length ? big.slice(0, TAB10.length).map((c, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>community ${n + 1} (${fmtInt(csize.get(c))})</span>`).join('') + (big.length > TAB10.length ? `<span class="muted">+${big.length - TAB10.length} smaller communities in dark blue</span>` : '') : '')
+      + `${homoKey(homo.size)}<span><i style="background:#C3CCD6;border-radius:50%"></i>no partner at this cutoff (${fmtInt(v.members.filter((i) => !deg.get(i)).length)})</span>`;
+    svgExport($('#vn-x'), `atlas_virus_${v.taxid}_network`, () => $('svg', box));
+  }
+  $('#vn-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#vn-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
+    const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); cut === 5 ? u.delete('cut') : u.set('cut', cut); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); shownPairs = 60; draw(); };
+  $('#vn-comm').onchange = () => draw();
+  $('#vn-top').onchange = (e) => { topk = +e.target.value; const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); topk ? u.set('top', topk) : u.delete('top'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); };
+  $('#vp-csv').onclick = () => { const csvq = (x) => (/[",\n]/.test(x) ? `"${String(x).replace(/"/g, '""')}"` : x), c = CUT[cut];
+    const text = `Protein_1,Protein_2,accession_1,accession_2,${MCOL.join(',')},band,AFDB_model,displayed_by_AFDB\n` + all.filter((x) => x.best >= c).map((x) => [csvq(R(x.a).gene), csvq(R(x.b).gene), R(x.a).acc || R(x.a).key, R(x.b).acc || R(x.b).key, ...MCOL.map((k) => (Number.isFinite(x.m[k]) ? x.m[k] : '')), bandLabel[bandOf(x.best)], x.model, x.shown ? 'yes' : 'no'].join(',')).join('\n') + '\n';
+    const u = URL.createObjectURL(new Blob([text], { type: 'text/csv' })), a = document.createElement('a'); a.href = u; a.download = `atlas_virus_${v.taxid}_pairs.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
+  draw();
 }
 
 /* ── network builder: the proteins a reader names and the predicted pairs among them. It reads only the species index
@@ -2313,7 +2556,7 @@ async function viewNetwork(spId, q) {
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein</span>
-        <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR</button>`).join('')}</div></div>
+        <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div>
         <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
@@ -2324,11 +2567,11 @@ async function viewNetwork(spId, q) {
       <p class="muted" style="margin:2px 0 12px">Your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} are large and dark, added partners small and light. Click a protein for its page, an edge for the interface residues of the pair. Drag to move, scroll to zoom.</p>
       <div class="net" id="nw-net"></div>
       <div class="netkey"><div class="kbkey" id="nw-key"></div>
-        <div><span>Edge width · average iLIS</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
+        <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
   $('#nw-add').value = S.add;
   const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top'; }; showK(); $('#nw-add').onchange = showK;
   $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); };
-  let net = null, KBN = null;   // KBN: this species' BioGRID pairs, for the drawing
+  let net = null, KBN = null, EB = null;   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const status = (t) => { $('#nw-status').innerHTML = t; };
@@ -2344,7 +2587,7 @@ async function viewNetwork(spId, q) {
     if (!found.length) { status(`None of these names is in the ${esc(sp.reg.label)} screens: ${esc(missing.join(', '))}.`); $('#nw-card').hidden = true; return; }
     status('Reading the edge list…');
     let E, K; try { [E, K] = await Promise.all([edges(sp, S.set), reported(sp)]); } catch (e) { status(esc(e.message)); return; }
-    KBN = K;
+    KBN = K; EB = E;
     if (stale(gen)) return;
     const c = CUT[S.cut], Q = new Set(found.map((r) => r.i)), keep = new Set(Q), CAP = 400;
     const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => e.best >= c);
@@ -2375,21 +2618,22 @@ async function viewNetwork(spId, q) {
     const labeled = new Set(nodes.length <= 80 ? nodes.map((d) => d.id) : [...nodes.filter((d) => d.q), ...[...nodes].filter((d) => !d.q).sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0)).slice(0, 25)].map((d) => d.id));
     const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
+    const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && e.best >= CUT[S.cut]; }).map((d) => d.id));
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
       link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
-      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra); };
+      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra) + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : ''); };
     restyle();
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
-    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interface residues`, ev.clientX, ev.clientY); })
+    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interface residues`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; });
     dash.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${CUT[S.cut]}; click for the pair's predictions`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}`; });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
         .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
-    node.append('circle').attr('r', r).attr('fill', (d) => (d.q ? '#1A5276' : '#AEBBCA')).attr('stroke', '#fff').attr('stroke-width', (d) => (d.q ? 2.2 : 1.5));
+    node.append('circle').attr('r', r).attr('fill', (d) => (d.q ? '#1A5276' : '#AEBBCA')).attr('stroke', (d) => (homo.has(d.id) ? HOMO_RING : '#fff')).attr('stroke-width', (d) => (homo.has(d.id) ? 3 : d.q ? 2.2 : 1.5));
     node.filter((d) => labeled.has(d.id)).append('text').text((d) => d.row.gene).attr('text-anchor', 'middle').attr('dy', (d) => -r(d) - 5)
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 13 : 10.5)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3).attr('stroke-linejoin', 'round');
@@ -2446,7 +2690,7 @@ async function route() {
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
-    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }
@@ -2462,3 +2706,19 @@ async function route() {
 }
 window.addEventListener('hashchange', route);
 route();
+// Column headers stay in view while a long table scrolls under the page header (and a protein page's section bar). The
+// wrapper scrolls sideways, which stops CSS sticky, so the header cells are moved down instead, never past the last row.
+{
+  let raf = 0;
+  const pin = () => {
+    raf = 0;
+    const line = Math.max(0, ...['.top', '.subnav'].map((q) => { const e = document.querySelector(q); return e ? e.getBoundingClientRect().bottom : 0; }));
+    for (const t of document.querySelectorAll('table.pt')) {
+      const r = t.getBoundingClientRect(), h = t.tHead ? t.tHead.offsetHeight : 0;
+      const y = h && r.top < line ? Math.max(0, Math.min(line - r.top, r.height - 2 * h)) : 0;
+      t.style.setProperty('--hy', `${y}px`); t.classList.toggle('pinned', y > 0);
+    }
+  };
+  const later = () => { if (!raf) raf = requestAnimationFrame(pin); };
+  addEventListener('scroll', later, { passive: true }); addEventListener('resize', later);
+}
