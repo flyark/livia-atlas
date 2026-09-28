@@ -2534,7 +2534,7 @@ async function viewVirus(spId, taxid) {
         <div class="ctl"><span>Cutoff</span><div class="seg" id="vn-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, shaded in gray by its iLIS (darker is higher), its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. Grouped by community, proteins predicted to bind each other more than the rest sit together, one color per group. Click a protein for its page, an edge for the pair.</p>
       <div class="net" id="vn-net"></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
-    <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><button class="btn" id="vp-csv" type="button">↓ CSV</button></div>
+    <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><div class="controls" style="margin:0"><input type="search" id="vp-find" placeholder="Filter pairs" aria-label="Filter pairs by protein" style="width:170px"><button class="btn" id="vp-csv" type="button">↓ CSV</button></div></div>
       <p class="legend-text">iLIS and ipTM are colored by the false-positive-rate band they pass, each by its own benchmarked cutoffs (every cutoff is on the About page).</p><div class="legend" style="margin:0 0 10px">
         ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}<span class="muted">Click a column to sort.</span></div>
       <div class="tbl-wrap"><table class="pt compact" id="vp"></table></div><div class="pager" id="vp-more"></div></div>
@@ -2542,8 +2542,9 @@ async function viewVirus(spId, taxid) {
   let shownPairs = 60;
   const pairHref = (x) => `#/${sp.id}/${R(x.a).key}/${R(x.b).key}`;
   function tables() {
-    const c = CUT[cut], P = all.filter((x) => x.best >= c), deg = new Map(), homo = new Set();
-    for (const x of P) if (x.a === x.b) homo.add(x.a); else { deg.set(x.a, (deg.get(x.a) || 0) + 1); deg.set(x.b, (deg.get(x.b) || 0) + 1); }
+    const c = CUT[cut], vq = (($('#vp-find') || {}).value || '').trim().toLowerCase(), hit = (x) => !vq || [R(x.a), R(x.b)].some((r) => [r.gene, r.name, r.key].some((t) => String(t || '').toLowerCase().includes(vq)));
+    const P0 = all.filter((x) => x.best >= c), P = vq ? P0.filter(hit) : P0, deg = new Map(), homo = new Set();   // counts from every pair at the cutoff; the filter narrows the list only
+    for (const x of P0) if (x.a === x.b) homo.add(x.a); else { deg.set(x.a, (deg.get(x.a) || 0) + 1); deg.set(x.b, (deg.get(x.b) || 0) + 1); }
     $('#vp-note').textContent = `${fmtInt(P.length)} past iLIS ${c} (${cut}% FPR), ${fmtInt(P.filter((x) => x.a === x.b).length)} of them homodimers`;
     const PS = [...P].sort((x, y) => { const d = (x.m[sortKey] ?? -Infinity) - (y.m[sortKey] ?? -Infinity); return (sortAsc ? d : -d) || y.best - x.best; });
     $('#vp').innerHTML = `<thead><tr><th>Protein</th><th>Partner</th><th title="the interface residues of the pair">Pair</th><th title="the model in LIVIA, for the pairs the AlphaFold Database displays (its filter: ipSAE ≥ 0.60 and pDockQ2 ≥ 0.23)">3D</th>${MCOL.map((k) => `<th class="n${k === sortKey ? ' sorted' + (sortAsc ? ' asc' : '') : ''}" data-k="${k}" style="cursor:pointer">${k}</th>`).join('')}</tr></thead><tbody>${PS.slice(0, shownPairs).map((x) => { const b = bandOf(x.best);
@@ -2620,6 +2621,7 @@ async function viewVirus(spId, taxid) {
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); cut === 5 ? u.delete('cut') : u.set('cut', cut); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); shownPairs = 60; draw(); };
   $('#vn-comm').onchange = () => draw();
   $('#vn-top').onchange = (e) => { topk = +e.target.value; const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); topk ? u.set('top', topk) : u.delete('top'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); };
+  $('#vp-find').oninput = () => { shownPairs = 60; tables(); };   // filter by either protein's gene, name or accession
   $('#vp-csv').onclick = () => { const csvq = (x) => (/[",\n]/.test(x) ? `"${String(x).replace(/"/g, '""')}"` : x), c = CUT[cut];
     const text = `Protein_1,Protein_2,accession_1,accession_2,${MCOL.join(',')},band,AFDB_model,displayed_by_AFDB\n` + all.filter((x) => x.best >= c).map((x) => [csvq(R(x.a).gene), csvq(R(x.b).gene), R(x.a).acc || R(x.a).key, R(x.b).acc || R(x.b).key, ...MCOL.map((k) => (Number.isFinite(x.m[k]) ? x.m[k] : '')), bandLabel[bandOf(x.best)], x.model, x.shown ? 'yes' : 'no'].join(',')).join('\n') + '\n';
     const u = URL.createObjectURL(new Blob([text], { type: 'text/csv' })), a = document.createElement('a'); a.href = u; a.download = `atlas_virus_${v.taxid}_pairs.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
@@ -2763,6 +2765,44 @@ function trackView() {
 }
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
 let LAST_PATH = null, holdTimer = null;
+// Every page with three or more cards gets the section bar the protein page has: sticky, the card in view marked, a
+// click jumps to it. Built after the page renders; the protein page keeps its own.
+function mountSections() {
+  if (app.querySelector('.subnav')) return;
+  const cards = [...app.querySelectorAll(':scope > .card, :scope > .reading > .card')].filter((c) => !c.hidden && c.querySelector('h2'));
+  if (cards.length < 3) return;
+  const items = cards.map((c, i) => { if (!c.id) c.id = `sec-${i}`; const h = c.querySelector('h2'); return [c.id, ((h.childNodes[0] && h.childNodes[0].textContent) || h.textContent).trim()]; });
+  const bar = el(`<nav class="subnav" aria-label="Sections">${items.map(([t, l]) => `<button data-t="${t}">${esc(l)}</button>`).join('')}</nav>`);
+  cards[0].before(bar);
+  bar.querySelectorAll('button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' }); });
+  let cur = null, raf = 0;
+  const spy = () => { raf = 0; if (!bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
+    const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
+    for (const b of bar.querySelectorAll('button')) { const t = document.getElementById(b.dataset.t); if (t && !t.hidden && t.getBoundingClientRect().top <= lim) on = b; }
+    if (on === cur) return; cur = on; bar.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === on));
+    if (on && bar.scrollWidth > bar.clientWidth + 1) bar.scrollLeft = Math.max(0, on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2); };
+  const onScroll = () => { if (!raf) raf = requestAnimationFrame(spy); };
+  window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(spy);
+}
+// Any table without its own controls: a click on a column sorts by it (numbers as numbers), and a box above filters the
+// rows by text. Tables that sort and filter themselves (header cells with data-k or data-c) are left alone.
+function enhanceTables(root = app) {
+  for (const t of root.querySelectorAll('table.pt, table.sets')) {
+    if (t.dataset.enh || t.querySelector('th[data-k], th[data-c]') || !t.tBodies[0] || t.tBodies[0].rows.length < 2) continue;
+    t.dataset.enh = '1';
+    const wrap = t.closest('.tbl-wrap') || t, box = el('<input type="search" class="tbl-find" placeholder="Filter rows" aria-label="Filter the table">');
+    wrap.before(box);
+    box.oninput = () => { const q = box.value.trim().toLowerCase(); for (const r of t.tBodies[0].rows) r.hidden = !!q && !r.textContent.toLowerCase().includes(q); };
+    if (!t.tHead || t.tHead.rows.length !== 1) continue;   // several header rows: filter only
+    const num = (s) => { const v = parseFloat(String(s).replace(/[,%×]/g, '').replace(/^[^\d.-]+/, '')); return Number.isFinite(v) ? v : null; };
+    [...t.tHead.rows[0].cells].forEach((th, k) => { th.classList.add('sortable'); th.title = th.title || 'click to sort';
+      th.onclick = () => { const asc = th.dataset.dir !== 'asc'; [...t.tHead.rows[0].cells].forEach((x) => { delete x.dataset.dir; x.classList.remove('sorted', 'asc'); });
+        th.dataset.dir = asc ? 'asc' : 'desc'; th.classList.add('sorted'); if (asc) th.classList.add('asc');
+        const rows = [...t.tBodies[0].rows], val = (r) => (r.cells[k] ? r.cells[k].textContent.trim() : ''), allNum = rows.every((r) => val(r) === '' || val(r) === '—' || num(val(r)) != null);
+        rows.sort((a, b) => { const x = val(a), y = val(b); const d = allNum ? (num(x) ?? -Infinity) - (num(y) ?? -Infinity) : x.localeCompare(y); return asc ? d : -d; });
+        for (const r of rows) t.tBodies[0].appendChild(r); }; });
+  }
+}
 async function route() {
   const gen = ++ROUTE, { parts, q } = hashPath(), setId = q.get('set') || '', here = location.hash;
   // The same page with another isoform or scope (?iso=, ?set=) keeps the reader where they were: the page holds its height
@@ -2792,6 +2832,7 @@ async function route() {
   if (stale(gen)) return;
   if (stay) { window.scrollTo({ top: keepY, behavior: 'instant' }); holdTimer = setTimeout(() => { app.style.minHeight = ''; }, 4000); }
   if (location.hash === here) trackView();   // not for a view that redirected
+  if (!stale(gen)) { mountSections(); enhanceTables(); setTimeout(() => { if (!stale(gen)) { mountSections(); enhanceTables(); } }, 2500); }   // cards and tables that fill in later
   if (!$('#top-search').firstChild) mountSearch($('#top-search'));
 }
 window.addEventListener('hashchange', route);
