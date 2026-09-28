@@ -2762,10 +2762,12 @@ async function viewNetwork(spId, q) {
 
 /* ── router ─────────────────────────────────────────────────────────────────────────────────────────── */
 // GoatCounter counts page loads only; the atlas routes by #/…, so each view is counted by hand, on the atlas's own
-// counter (livia-atlas.goatcounter.com). Every view is counted as one path, '/': the counter shows how much the atlas is
-// used, never which protein, pair or species a reader opened.
+// counter (livia-atlas.goatcounter.com). A view is counted by its species only ('/human', '/virus', …; every other page as
+// '/'): the counter shows how much each species is used, never which protein, pair or virus a reader opened.
+const COUNT_SP = new Set(['human', 'fly', 'worm', 'zebrafish', 'yeast', 'virus']);
 function trackView() {
-  const count = () => window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: '/', title: 'LIVIA Atlas' });
+  const sp = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0], path = COUNT_SP.has(sp) ? `/${sp}` : '/';
+  const count = () => window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path, title: path === '/' ? 'LIVIA Atlas' : `${sp} · LIVIA Atlas` });
   if (window.goatcounter && window.goatcounter.count) count(); else window.addEventListener('load', () => setTimeout(count, 0), { once: true });
 }
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
