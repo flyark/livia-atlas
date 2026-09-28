@@ -25,7 +25,8 @@ const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
 // Benchmarked cutoffs at 10 / 5 / 1% FPR for single models and for the average over a pair's models: AFM-LIS
 // thresholds_data_yfh_lipdockq.xlsx ("total group"; Y2H reference sets in yeast, fly and human — Kim et al. 2026, FlyPredictome).
 const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.3, 1247.4, 3078.8], iLISA: [143.9, 360.6, 1241.0],
-  LIS: [0.168, 0.257, 0.439], cLIS: [0.298, 0.449, 0.716], ipSAE: [0.165, 0.363, 0.615], actifpTM: [0.745, 0.880, 0.963] };
+  LIS: [0.168, 0.257, 0.439], cLIS: [0.298, 0.449, 0.716], ipSAE: [0.165, 0.363, 0.615], actifpTM: [0.745, 0.880, 0.963],
+  pDockQ: [0.293, 0.385, 0.567], LIpDockQ: [0.108, 0.178, 0.332], pDockQ2: [0.022, 0.036, 0.158], LIpDockQ2: [0.058, 0.132, 0.377] };   // best model, same benchmark as iLIS
 const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442] };
 const bandIn = (cuts, v) => (v >= cuts[2] ? 1 : v >= cuts[1] ? 5 : v >= cuts[0] ? 10 : 0);
 // Text shades of the band colors, at least 4.5:1 on white and on the light band chips (BAND itself stays for plots and swatches)
@@ -1063,7 +1064,9 @@ async function viewAbout() {
       the size of the interface: iLISA = iLIS × iLIA, where iLIA = √(LIA × cLIA) and LIA and cLIA count the residue pairs that enter LIS and cLIS.</p>
       <table class="cuts"><caption>Benchmarked cutoffs at a 10%, 5% and 1% false-positive rate, from Y2H reference sets in yeast, fly and human (${cite('flypredictome')})</caption>
         <thead><tr><th></th><th>10% FPR</th><th>5% FPR</th><th>1% FPR</th></tr></thead>
-        <tbody>${[['iLIS, best model', FPR.iLIS, 3], ['iLIS, average over models', FPR_AVG.iLIS, 3], ['ipTM, best model', FPR.ipTM, 2], ['ipTM, average over models', FPR_AVG.ipTM, 3]]
+        <tbody>${[['iLIS, best model', FPR.iLIS, 3], ['iLIS, average over models', FPR_AVG.iLIS, 3], ['ipTM, best model', FPR.ipTM, 2], ['ipTM, average over models', FPR_AVG.ipTM, 3], ['iLISA, best model', FPR.iLISA, 1], ['LIS, best model', FPR.LIS, 3], ['cLIS, best model', FPR.cLIS, 3],
+          ['ipSAE, best model', FPR.ipSAE, 3], ['actifpTM, best model', FPR.actifpTM, 3], ['pDockQ, best model', FPR.pDockQ, 3], ['LIpDockQ, best model', FPR.LIpDockQ, 3],
+          ['pDockQ2, best model', FPR.pDockQ2, 3], ['LIpDockQ2, best model', FPR.LIpDockQ2, 3]]
           .map(([l, c, d]) => `<tr><th>${l}</th>${c.map((v, j) => `<td style="color:${BAND_TXT[[10, 5, 1][j]]}">≥ ${v.toFixed(d)}</td>`).join('')}</tr>`).join('')}</tbody></table>
       <p>Each protein has one page per species that gathers its predictions from every screen. A pair predicted in two screens, or both ways round,
       keeps every model with its source. The interface residues on both proteins are kept for every prediction, and each protein page runs
@@ -2351,7 +2354,7 @@ async function viewVirus(spId, taxid) {
       <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, shaded in gray by its iLIS (darker is higher), its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. Grouped by community, proteins predicted to bind each other more than the rest sit together, one color per group. Click a protein for its page, an edge for the pair.</p>
       <div class="net" id="vn-net"></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
     <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><button class="btn" id="vp-csv" type="button">↓ CSV</button></div>
-      <div class="legend" style="margin:0 0 10px">Each score with a benchmarked cutoff (iLIS, iLISA, ipSAE, actifpTM, ipTM, LIS, cLIS) is colored by the false-positive-rate band it passes, by its own cutoffs; the pDockQ columns have none:
+      <div class="legend" style="margin:0 0 10px">Every score is colored by the false-positive-rate band it passes, each by its own benchmarked cutoffs (listed on the About page):
         ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}<span class="muted">Click a column to sort.</span></div>
       <div class="tbl-wrap"><table class="pt compact" id="vp"></table></div><div class="pager" id="vp-more"></div></div>
     <div class="card"><div class="card-head"><h2>Proteins <span class="muted">${fmtInt(v.n)}</span></h2></div><div class="tbl-wrap"><table class="pt" id="vprot"></table></div></div>`;
