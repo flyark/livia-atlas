@@ -20,6 +20,21 @@ const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.
   LIS: [0.168, 0.257, 0.439], cLIS: [0.298, 0.449, 0.716], ipSAE: [0.165, 0.363, 0.615], actifpTM: [0.745, 0.880, 0.963] };
 const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442] };
 const cutNote = (f) => `<i class="kc">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count
+// Each screen's run settings (registry: models, recycles). The cutoffs were calibrated on five models with five recycles
+// per pair; a screen run otherwise says so where its settings are shown.
+const CALIB = 'Cutoffs and average-iLIS cutoffs were calibrated on AlphaFold-Multimer runs with five models and five recycles per pair. For screens run with fewer models or other settings, they are a guide rather than a measured error rate.';
+const runSettings = (d) => { if (!d || !d.models) return '';
+  const off = !(d.models === 5 && d.recycles === 5), t = `${d.models} model${d.models === 1 ? '' : 's'}${d.recycles ? ` × ${d.recycles} recycles` : ''} per pair${d.modelsNote ? ` (${d.modelsNote})` : ''}`;
+  return `<span class="runset${off ? ' off' : ''}"${off ? ` title="${esc(CALIB)}"` : ''}>${esc(t)}</span>`; };
+// A pair folded in several runs counts once, by its run with the highest iLIS: which run a view shows, and what else holds it.
+function overlapNote(sp, B, preds, P) {
+  const by = new Map();
+  for (const p of preds) { if (!by.has(p.run)) by.set(p.run, { n: 0, best: 0, rep: p.rep }); const r = by.get(p.run); r.n++; r.best = Math.max(r.best, p.iLIS || 0); }
+  const shown = [...by].filter(([, r]) => !r.rep), also = [...by].filter(([, r]) => r.rep);
+  if (!shown.length || !also.length) return '';
+  const lab = ([rid, r]) => `${runLabel(sp, B, rid, P)} (${r.n} model${r.n === 1 ? '' : 's'}; highest iLIS ${r.best.toFixed(3)})`;
+  return `Shown: ${shown.map(lab).join(', ')}. Also in: ${also.map(lab).join(', ')}, listed as ${also.length === 1 ? 'a repeat' : 'repeats'}. A pair folded more than once counts once, by its run with the highest iLIS.`;
+}
 const bandIn = (cuts, v) => (v >= cuts[2] ? 1 : v >= cuts[1] ? 5 : v >= cuts[0] ? 10 : 0);
 // Text shades of the band colors, at least 4.5:1 on white and on the light band chips (BAND itself stays for plots and swatches)
 const BAND_TXT = { 1: '#6D4FD1', 5: '#127A57', 10: '#8F6400', 0: '#5D6C7F' };
@@ -908,7 +923,7 @@ function dsCard(d) {
   const live = d.status === 'live', spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
   const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : 'Planned'}</span>
     <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
-    <div class="sp">${esc(spx ? spx.name : d.species)}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>`;
+    <div class="sp">${esc(spx ? spx.name : d.species)}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
   const src = d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source);   // every paper reference links to the paper
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
     <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div></div>`;
@@ -1005,7 +1020,7 @@ async function setCards(gen, reg) {
       const src = cite ? (cite.paper ? `<a href="${esc(cite.paper)}" target="_blank" rel="noopener">${esc(cite.source)} ↗</a>` : esc(cite.source)) : '';
       const card = `<div class="ds live" data-set="${d.id}/${s.id}"><span class="badge on">Searchable</span>
         <h3><a href="#/datasets/${d.id}/${s.id}">${esc(spx ? spx.label : d.species)} ${esc(s.title.charAt(0).toLowerCase() + s.title.slice(1))}</a></h3>
-        <div class="sp">${esc(spx ? spx.name : d.species)} · <span class="src" style="--c:${s.color}">${esc(s.short)}</span></div>
+        <div class="sp">${esc(spx ? spx.name : d.species)} · <span class="src" style="--c:${s.color}">${esc(s.short)}</span></div>${d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}
         <div class="stats"><div><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div><b>${fmtInt(k.pairsFpr10)}</b><span>past 10% FPR${cutNote(10)}</span></div></div>
         <div class="src-line">${src}${src ? ' · ' : ''}a set within <a href="#/datasets/${d.id}">${esc(d.title)}</a></div></div>`;
       const after = kin.map((x) => box.querySelector(`[data-ds="${x.id}"]`)).filter(Boolean)[0];
@@ -1041,6 +1056,7 @@ async function viewAbout() {
         <thead><tr><th></th><th>10% FPR</th><th>5% FPR</th><th>1% FPR</th></tr></thead>
         <tbody>${[['iLIS, best model', FPR.iLIS, 3], ['iLIS, average over models', FPR_AVG.iLIS, 3], ['ipTM, best model', FPR.ipTM, 2], ['ipTM, average over models', FPR_AVG.ipTM, 3]]
           .map(([l, c, d]) => `<tr><th>${l}</th>${c.map((v, j) => `<td style="color:${BAND_TXT[[10, 5, 1][j]]}">≥ ${v.toFixed(d)}</td>`).join('')}</tr>`).join('')}</tbody></table>
+      <p class="muted">${CALIB} In practice they transfer well, and where two human screens called the same pair, they placed the interface on nearly the same residues. Each screen's models and recycles are listed on its <a href="#/datasets">dataset page</a>.</p>
       <p>Each protein has one page per species that gathers its predictions from every screen. A pair predicted in two screens, or both ways round,
       keeps every model with its source. The interface residues on both proteins are kept for every prediction, and each protein page runs
       <a href="${LIVIA}clip.html" target="_blank" rel="noopener">LIVIA cLIP</a> in the browser: partners are clustered by their interaction fingerprints, and the clusters
@@ -1151,7 +1167,7 @@ async function viewSet(dsId, setId) {
   const link = (u, t) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a> / ${esc(S.short)}</div>
     <div class="dshead"><h1>${esc(S.title)}</h1>
-      <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} within ${esc(ds.reg.title)} · <i>${esc(m.species.name)}</i></div>
+      <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} within ${esc(ds.reg.title)} · <i>${esc(m.species.name)}</i></div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
       ${S.source ? `<div class="cite">${link(S.source.url, `${S.source.citation} doi:${S.source.doi}`)}</div>` : ''}
       <div class="cite">Part of ${m.source.url ? link(m.source.url, m.source.citation) : esc(m.source.citation)}</div></div>
     ${kpiRow(k)}
@@ -1169,7 +1185,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
   if (stale(gen)) return;
   const scopeQ = sp.dsIds.length > 1 ? `?set=${encodeURIComponent(ds.id)}` : '';   // one of several screens: its protein pages open in its scope
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / ${esc(ds.reg.title)}</div>
-    <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å</div>
+    <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å</div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
       <div class="cite">${m.source.url ? `<a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.citation)}${m.source.doi ? ` doi:${esc(m.source.doi)}` : ''} ↗</a>` : esc(m.source.citation)}</div></div>
     ${kpiRow(k)}
     <div class="card"><h2>Search</h2><p class="muted" style="margin:2px 0 10px">${sp.dsIds.length > 1 ? `Protein pages opened from here show only this screen, <span class="src" style="--c:${ds.reg.color}">${esc(ds.reg.short)}</span>, with a switch to every ${esc(sp.reg.label.toLowerCase())} screen.`
@@ -2052,7 +2068,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
       return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}">${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
-        <td class="srcc">${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
+        <td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
         <td class="n v" style="color:${BAND_TXT[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>
         <td class="n v" style="color:${bandCol(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
@@ -2171,7 +2187,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.innerHTML = `${crumbs}
     <div class="phead"><div><h1><span style="color:var(--query-t)">${esc(P.gene)}</span> <span style="color:var(--ink-3);font-weight:600">×</span> <span style="color:var(--partner-t)">${esc(O.gene)}</span></h1>
         <div class="pairwho">${who(P, P.clen, 'var(--query-t)')}${who(O, oLen, 'var(--partner-t)')}</div>
-        <div class="srcs">Predicted in ${part.sets.length ? setBadges(part.sets) : srcBadges(sp, part.src)}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>
+        <div class="srcs">Predicted in ${part.sets.length ? setBadges(part.sets) : srcBadges(sp, part.src)}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P); return t ? `<div class="srcs muted ovl">${esc(t)}</div>` : ''; })()}
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`)}</div></div>
       <div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS best · ${bandLabel[b]}</span></div><div class="kpi"><b>${part.ilisaBest.toFixed(1)}</b><span>iLISA best</span></div>
         <div class="kpi"><b style="color:${bandCol(FPR_AVG.iLIS, part.avg)}">${part.avg.toFixed(3)}</b><span>iLIS average · ${bandLabel[bandIn(FPR_AVG.iLIS, part.avg)]}</span></div>

@@ -94,6 +94,9 @@ a:hover { text-decoration: underline; }
 .kpi { min-width: 96px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); }
 .kpi b { display: block; font-family: var(--mono); font-size: 22px; font-weight: 600; line-height: 1.1; }
 .kpi span { font-size: 11.5px; color: var(--ink-3); letter-spacing: 0.02em; }
+.runset { font-style: normal; color: var(--ink-3); }
+.runset.off { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
+.srcs.ovl { font-size: 13px; margin-top: 4px; }
 .kc { display: block; font-style: normal; font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--ink-3); letter-spacing: 0; margin-top: 1px; }   /* the iLIS cutoff under a count */
 .kpi.f1 b { color: var(--fpr1-t); } .kpi.f5 b { color: var(--fpr5-t); } .kpi.f10 b { color: var(--fpr10-t); }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 4px 0 20px; }

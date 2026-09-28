@@ -59,7 +59,10 @@
    "status": "live",
    "source": "Schmid et al. 2025 · bioRxiv",
    "paper": "https://www.biorxiv.org/content/10.1101/2025.11.10.687652v1",
-   "dev": "../data/human-predictomes/"
+   "dev": "../data/human-predictomes/",
+   "models": 3,
+   "recycles": 3,
+   "modelsNote": "AlphaFold-Multimer v3 models 1, 2 and 4"
   },
   {
    "id": "human-kinase-tf",
@@ -71,7 +74,9 @@
    "status": "live",
    "source": "Kim et al. 2025 · bioRxiv",
    "paper": "https://www.biorxiv.org/content/10.1101/2025.10.10.681672",
-   "dev": "../data/human-kinase-tf/"
+   "dev": "../data/human-kinase-tf/",
+   "models": 5,
+   "recycles": 5
   },
   {
    "id": "flypredictome",
@@ -89,7 +94,9 @@
     "offsets": "data/screens/flypredictome/offsets-v12.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "models": 5,
+   "recycles": 5
   },
   {
    "id": "human-kinase-kinase",
@@ -107,7 +114,9 @@
     "offsets": "data/screens/human-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "models": 5,
+   "recycles": 5
   },
   {
    "id": "zebrafish-kinase-kinase",
@@ -125,7 +134,9 @@
     "offsets": "data/screens/zebrafish-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "models": 5,
+   "recycles": 5
   },
   {
    "id": "yeast-kinase-kinase",
@@ -143,7 +154,9 @@
     "offsets": "data/screens/yeast-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "models": 5,
+   "recycles": 5
   },
   {
    "id": "worm-kinase-kinase",
@@ -161,7 +174,9 @@
     "offsets": "data/screens/worm-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "models": 5,
+   "recycles": 5
   }
  ],
  "themes": [
