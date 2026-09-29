@@ -1519,11 +1519,12 @@ function readIdTable(sp, text) {
   const sample = cells.slice(0, 400), cols = [];
   for (let c = 0; c < nc; c++) {
     const v = sample.slice(1).map((r) => r[c] || '').filter((x) => x && !BLANK.test(x)), num = v.length && v.every((x) => NUMCELL.test(x));
-    const hits = num ? 0 : v.filter((x) => resolveHow(sp, x, true)).length, headHit = !!(sample[0][c] && resolveHow(sp, sample[0][c], true));
+    const hits = num ? 0 : new Set(v.map((x) => { const h = resolveHow(sp, x, true); return h ? h.row.i : null; }).filter((i) => i != null)).size, headHit = !!(sample[0][c] && resolveHow(sp, sample[0][c], true));
     cols.push({ c, name: sample[0][c] || `column ${c + 1}`, num, hits, n: v.length, headHit });
   }
   const header = cols.every((x) => !x.headHit || x.num);   // a first row whose cells are not names is a header
   if (!header) cols.forEach((x) => { if (!x.num) { x.hits += x.headHit ? 1 : 0; x.n += sample[0][x.c] ? 1 : 0; } });   // no header: the first row is data too
+  // hits count different proteins, so a column that repeats one word (a "prey" that is also an old gene name) cannot outscore the names
   // no header, no number column and every column mostly names: a list wrapped over lines, so every name is read;
   // and when no column holds a single name we know, a list too, so each unknown name is reported rather than taken for a header
   if (!header && !cols.some((x) => x.num) && cols.every((x) => !x.n || x.hits >= 0.5 * x.n)) return null;
@@ -2763,6 +2764,9 @@ async function viewVirus(spId, taxid) {
 
 /* ── network builder: the proteins a reader names and the predicted pairs among them. It reads only the species index
    and edge list already on the site (no bundle); a protein or an edge opens its page. ─────────────────────────────── */
+// The network builder's example tables: published IP-MS hit lists (the paper's own cutoff), under CC BY 4.0
+const EXAMPLES = { human: { what: 'TXNIP AP-MS interactors', cite: 'Lee et al. 2024, eLife', doi: '10.7554/eLife.88328' },
+  fly: { what: 'Dicer-2 IP-MS interactors', cite: 'Rousseau et al. 2025, PLoS Pathog', doi: '10.1371/journal.ppat.1013093' } };
 async function viewNetwork(spId, q) {
   const gen = ROUTE, sp = await species(spId);
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
@@ -2779,7 +2783,7 @@ async function viewNetwork(spId, q) {
     <div class="card"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions (isoforms too)${sp.manifest.keyedBy ? ', FlyBase IDs, CG numbers' : ''} or older names · commas, spaces or new lines, or a table</span></div>
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
       <div class="controls" style="margin-top:8px"><button class="btn" id="nw-filebtn" type="button" title="a list or a table of names: txt, csv or tsv; a table's name column is found for you">Load a file</button><input type="file" id="nw-file" accept=".txt,.csv,.tsv,.tab,text/plain,text/csv,text/tab-separated-values" hidden>
-        ${['human', 'fly'].includes(sp.id) ? `<span class="muted">Example table: <a href="data/examples/network_${sp.id}.tsv" download>download</a> · <a href="#" id="nw-ex">load it</a></span>` : ''}
+        ${EXAMPLES[sp.id] ? `<span class="muted">Example: ${esc(EXAMPLES[sp.id].what)} (<a href="https://doi.org/${EXAMPLES[sp.id].doi}" target="_blank" rel="noopener">${esc(EXAMPLES[sp.id].cite)}</a>, CC BY 4.0) · <a href="data/examples/network_${sp.id}.tsv" download>download</a> · <a href="#" id="nw-ex">load it</a></span>` : ''}
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein</span>
@@ -2861,13 +2865,17 @@ async function viewNetwork(spId, q) {
     wrap.hidden = named.length < 2;
     const nums = T.cols.filter((x) => x.num).map((x) => x.name);
     tableNote = `a table of ${fmtInt(T.rows.length)} row${T.rows.length === 1 ? '' : 's'}, names read from “${T.cols[S.col].name}”${nums.length ? `; number column${nums.length === 1 ? '' : 's'} not read as names: ${nums.map((n) => `“${n}”`).join(', ')}` : ''}`;
+    // a row whose name is unknown is tried by its other ID columns (a UniProt accession beside an old symbol)
+    const alts = T.cols.filter((x) => !x.num && x.c !== S.col && x.hits >= 3);
+    const rowName = T.rows.map((r) => { const nm = (r[S.col] || '').trim(); if (!nm || resolveHow(sp, nm, true)) return nm;
+      for (const x of alts) { const a = (r[x.c] || '').trim(); if (a && resolveHow(sp, a, true)) return a; } return nm; });
     // the other columns, to color the proteins by: numbers, or a few categories (a column of names is not one)
     S.data = []; for (const x of T.cols) { if (x.c === S.col) continue; const vals = new Map();
-      for (const r of T.rows) { const nm = (r[S.col] || '').trim(), v = (r[x.c] || '').trim(), h = nm && v && !BLANK.test(v) && resolveHow(sp, nm, true); if (h && !vals.has(h.row.i)) vals.set(h.row.i, x.num ? parseFloat(v) : v); }
+      T.rows.forEach((r, k) => { const nm = rowName[k], v = (r[x.c] || '').trim(), h = nm && v && !BLANK.test(v) && resolveHow(sp, nm, true); if (h && !vals.has(h.row.i)) vals.set(h.row.i, x.num ? parseFloat(v) : v); });
       const kinds = new Set(vals.values());
       if (x.num) S.data.push({ name: x.name, kind: 'num', vals }); else if (kinds.size >= 2 && kinds.size <= 12 && x.hits <= 0.2 * Math.max(1, x.n)) S.data.push({ name: x.name, kind: 'cat', vals }); }
     $('#nw-table').textContent = tableNote;
-    return [...new Set(T.rows.map((r) => (r[S.col] || '').trim()).filter(Boolean))];
+    return [...new Set(rowName.filter(Boolean))];
   }
   async function draw(seed = null) {   // seed: the positions and zoom to keep when a click adds partners
     const toks = readInput();
