@@ -3149,14 +3149,13 @@ async function viewNetwork(spId, q) {
   function graph(nodes, links, extra = [], seed = null) {
     const box = $('#nw-net'); box.innerHTML = '<svg></svg>';
     const W = box.clientWidth, H = box.clientHeight, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
-    let label = null, rank = null, fitK = seed ? seed.t.k : 1, nBase = Infinity;   // labels: set once the nodes are drawn; relabel() shows more as the view zooms in
+    let label = null, rank = null, fitK = seed ? seed.t.k : 1;   // labels: set once the nodes are drawn; relabel() shows more as the view zooms in
     const zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', (ev) => { g.attr('transform', ev.transform); relabel(ev.transform.k); }); svg.call(zoom);
     if (seed) { svg.call(zoom.transform, seed.t);   // a click added partners: the old nodes stay put, the new ones start at the protein clicked
       const [ax, ay] = seed.pos.get(seed.at) || [W / 2, H / 2];
       nodes.forEach((d, n) => { const p = seed.pos.get(d.id); if (p) { [d.x, d.y] = p; } else { d.x = ax + 25 * Math.cos(n); d.y = ay + 25 * Math.sin(n); } }); }
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
     const r = (d) => (d.q ? 10 : 4) + Math.min(8, Math.sqrt(deg.get(d.id) || 0) * 1.4);
-    const labeled = new Set(nodes.length <= 80 ? nodes.map((d) => d.id) : [...nodes.filter((d) => d.q), ...[...nodes].filter((d) => !d.q).sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0)).slice(0, 25)].map((d) => d.id));
     const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && e.best >= CUT[S.cut]; }).map((d) => d.id));
@@ -3186,13 +3185,22 @@ async function viewNetwork(spId, q) {
     // every protein gets a label; the fitted view shows your proteins and the best-connected partners, and zooming in shows
     // more (the budget grows with the square of the zoom), each label at the same size on screen
     rank = new Map([...nodes].sort((a, b) => (b.q - a.q) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0))).map((d, n) => [d.id, n]));
-    nBase = nodes.length <= 80 ? Infinity : labeled.size;
     label = node.append('text').text((d) => d.row.gene).attr('text-anchor', 'middle')
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-linejoin', 'round');
     relabel(d3.zoomTransform(svg.node()).k);
-    function relabel(k) { if (!label) return; const budget = nBase === Infinity ? Infinity : nBase * (k * k) / Math.max(0.05, fitK * fitK), z = Math.max(k, 0.35);
-      label.attr('display', (d) => (rank.get(d.id) < budget ? null : 'none')).attr('font-size', (d) => (d.q ? 13 : 10.5) / z).attr('stroke-width', 3 / z).attr('dy', (d) => -r(d) - 5 / z); }
+    // Labels in priority order (your proteins, then the best connected), each kept only if it does not overlap one already
+    // placed, on screen. Below the fitted zoom they shrink with the view; zoomed in they keep their size, so more fit.
+    function relabel(k) { if (!label) return; const z = Math.max(k, fitK), t = d3.zoomTransform(svg.node()), boxes = [];
+      const fs = (d) => (d.q ? 13 : 10.5) * (k / z);   // font size on screen
+      const shown = new Set(), order = [...nodes].sort((a, b) => rank.get(a.id) - rank.get(b.id));
+      const partners = nodes.length <= 80 || k >= fitK * 1.3;   // added partners get labels once the view is zoomed in past the fit
+      for (const d of order) { if (d.x == null || (!d.q && !partners)) continue; const f = fs(d); if (f < 6.5) continue;
+        const w = String(d.row.gene).length * f * 0.62 + 8, h = f + 5, cx = t.applyX(d.x), cy = t.applyY(d.y) - (r(d) * k + 5 * (k / z)) - f / 2;
+        const b = [cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2];
+        if (boxes.some((o) => b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1])) continue;
+        boxes.push(b); shown.add(d.id); }
+      label.attr('display', (d) => (shown.has(d.id) ? null : 'none')).attr('font-size', (d) => (d.q ? 13 : 10.5) / z).attr('stroke-width', 3 / z).attr('dy', (d) => -r(d) - 5 / z); }
     node.filter((d) => d.q).raise();
     const recolor = () => { const nc = nodeColors(); node.select('circle.nfill').attr('fill', nc.fill); $('#nw-nkey').innerHTML = nc.key; }; recolor();
     const placeLabels = liftLabels(g, node);
@@ -3209,6 +3217,7 @@ async function viewNetwork(spId, q) {
     sim.on('end', () => { if (fitted) return; fitted = true; const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y);
       const x0 = Math.min(...xs) - 48, x1 = Math.max(...xs) + 48, y0 = Math.min(...ys) - 34, y1 = Math.max(...ys) + 24, sc = Math.min(1.4, 0.96 * Math.min(W / (x1 - x0), H / (y1 - y0)));
       fitK = sc; svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - sc * (x0 + x1) / 2, H / 2 - sc * (y0 + y1) / 2).scale(sc)); });
+    sim.on('end.labels', () => relabel(d3.zoomTransform(svg.node()).k));
     svgExport($('#nw-x'), `atlas_${sp.id}_network`, () => $('svg', box));
     net = { link, nodes, links, extra, restyle, recolor };
   }
