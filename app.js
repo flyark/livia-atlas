@@ -2831,15 +2831,15 @@ async function viewVirus(spId, taxid) {
     const zi = [], tx = []; let past = 0, below = 0, miss = 0, homo = 0;
     for (let i = 0; i < n; i++) { const ri = [], rt = [];
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, x = M.get(a < b ? a + ',' + b : b + ',' + a), f = !x && TP ? TP.has(a, b) : !x ? null : true;
-        const v = x ? x.best : TP && f ? TP.score(a, b) : null;
+        const v = x ? x.best : TP && f ? Math.min(TP.score(a, b), CUT[10] - 0.001) : null;   // not in the edge table: below the cutoff, whatever the 1-byte rounding
         ri.push(v != null && Number.isFinite(v) && v >= minV ? v : null);
         rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${x ? `iLIS ${x.best.toFixed(3)}${Number.isFinite(x.iptm) ? ` · ipTM ${x.iptm.toFixed(2)}` : ''}` : v != null ? `iLIS ≈${v.toFixed(2)}` : TP ? 'not folded in the release' : 'below 10% FPR'}`);
-        if (j >= i) { if (i === j && v != null && v >= CUT[10]) homo++; else if (i !== j) { if (v != null && v >= CUT[10]) past++; else if (v != null) below++; else miss++; } } }
+        if (j >= i) { if (i === j && v != null && v >= CUT[10]) homo++; else if (i !== j) { if (v != null && v >= CUT[10]) past++; else if (v != null) below++; else if (TP) miss++; } } }
       zi.push(ri); tx.push(rt); }
-    $('#vm-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} pairs and ${fmtInt(homo)} homodimers at ≥ 10% FPR · ${fmtInt(below)} below it` + (miss ? ` · ${fmtInt(miss)} not folded in the release` : '');
-    $('#vm-key').innerHTML = `<span class="muted">every pair of the virus on one scale, whatever the network's cutoff; the diagonal is the protein with itself</span>${miss ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>not folded in the release</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
+    $('#vm-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} pairs and ${fmtInt(homo)} homodimers at ≥ 10% FPR` + (TP ? ` · ${fmtInt(below)} below it` : ' · the index of every pair did not load, so the pairs below it are blank') + (miss ? ` · ${fmtInt(miss)} not folded in the release` : '');
+    $('#vm-key').innerHTML = `<span class="muted">${TP ? 'every pair of the virus on one scale' : 'the pairs at ≥ 10% FPR'}, whatever the network's cutoff; the diagonal is the protein with itself</span>${miss ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>not folded in the release</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let Pl; try { Pl = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
-    if (!zi.some((r) => r.some((x) => x != null))) { Pl.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to every folded pair.</div>`; return; }
+    if (!zi.some((r) => r.some((x) => x != null))) { Pl.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to ${esc($('#vm-show').options[0].text)}.</div>`; return; }
     const shapes = []; ord.forEach((d, k) => { if (k && grp(d) !== grp(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     if (box.querySelector(':scope > .empty')) box.innerHTML = '';
@@ -3262,7 +3262,7 @@ async function viewNetwork(spId, q) {
     const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB;   // the matrix: every pair in the edge table (the screen's, with a filter), apart from the network's cutoff
     const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
       const l = M.get(key(a, b)); if (l) return { v: l.best, ip: l.iptm, exact: true };
-      if (TP) { if (!TP.has(a, b)) return null; const s = TP.score ? TP.score(a, b) : NaN; return { v: s, exact: false }; } return { v: NaN, exact: false }; };
+      if (TP) { if (!TP.has(a, b)) return null; const s = TP.score ? Math.min(TP.score(a, b), CUT[10] - 0.001) : NaN; return { v: s, exact: false }; } return { v: NaN, exact: false }; };   // not an edge: below the cutoff, whatever the 1-byte rounding
     const zi = [], tx = []; let past = 0, folded = 0, never = 0;
     for (let i = 0; i < n; i++) { const ri = [], rt = [];
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, q = pairOf(a, b), v = q && Number.isFinite(q.v) ? q.v : null;
@@ -3273,7 +3273,7 @@ async function viewNetwork(spId, q) {
     $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pairs at ≥ 10% FPR` + (!TP ? (S.set ? ' in this screen' : '') : ` · ${fmtInt(folded)} folded below it`) + (TP ? ` · ${fmtInt(never)} never folded` : '');
     $('#nw-heat-key').innerHTML = `<span class="muted">${!TP ? `only pairs at ≥ 10% FPR are listed${S.set ? ' for this screen' : ''}; the others are blank` : "every folded pair on one scale, whatever the network's cutoff"}</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let P; try { P = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
-    if (!zi.some((r) => r.some((x) => x != null))) { P.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to every folded pair.</div>`; return; }
+    if (!zi.some((r) => r.some((x) => x != null))) { P.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to ${esc($('#nw-heat-show').options[0].text)}.</div>`; return; }
     const shapes = []; ord.forEach((d, k) => { if (k && gi(d) !== gi(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     const cs = $('#nw-heat-cs').value || 'Blues';
