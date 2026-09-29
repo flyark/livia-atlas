@@ -2821,7 +2821,7 @@ async function viewVirus(spId, taxid) {
     vmatrix(nodes, all, grouped ? (d) => (big.includes(d.c) ? big.indexOf(d.c) : big.length) : () => 0, deg);   // every pair of the virus, whatever the page's cutoff
   }
   // Every pair of the virus's proteins as a matrix (the diagonal: the protein with itself). The release folded every pair of a
-  // virus (a few viruses miss some), so a cell is colored past the cutoff and gray below it; rows follow the communities.
+  // virus (a few viruses miss some), so every cell but a missing pair is colored by its iLIS on one scale; rows follow the communities.
   async function vmatrix(nodes, P, grp, deg) {
     const box = $('#vm-heat'), n = nodes.length; if (n < 2) { $('#vm-card').hidden = true; return; }
     const ord = [...nodes].sort((a, b) => (grp(a) - grp(b)) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || R(a.id).gene.localeCompare(R(b.id).gene));
@@ -3242,18 +3242,15 @@ async function viewNetwork(spId, q) {
       + `${missing.length ? ` · not found: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.slice(0, 30).join(', '))}${alone.length > 30 ? ` and ${fmtInt(alone.length - 30)} more` : ''}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
       + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}</span>`);
     $('#nw-card').hidden = false;
-    if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; $('#nw-heat-wrap').hidden = true; return; }
+    if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); return; }   // the matrix still shows the pairs below this cutoff
     if (!K) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
     if (TPN) for (const d of extra) { const k = fkey(d.source, d.target); if (!FOLD.has(k)) FOLD.set(k, TPN.has(d.source, d.target) ? { st: 'low', best: TPN.score ? TPN.score(d.source, d.target) : NaN } : { st: 'none' }); }   // the index says folded or not; the score comes on hover
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed);
   }
-  // The drawn proteins as a matrix: a predicted pair past the cutoff colored by its best iLIS; folded but below the cutoff light
-  // gray; never folded white (from the index of tested pairs; without it, every other cell is gray). Rows follow the grouping.
   let heatArgs = null;
-
-
-  // The drawn proteins as a matrix: a predicted pair past the cutoff colored by its best iLIS; folded but below the cutoff gray;
-  // never folded white (from the index of tested pairs; without it, every other cell is gray). Rows follow the grouping.
+  // The drawn proteins as a matrix, apart from the network's cutoff: every folded pair colored by its best iLIS on one scale
+  // (below 10% FPR from the index of tested pairs); never folded white. Without the index (or with a screen filter) only the
+  // edge table's pairs at >= 10% FPR are known, and the rest stay blank. Rows follow the grouping.
   async function heatmap(nodes, links, gk, groups, gname2, deg) {
     heatArgs = [nodes, links, gk, groups, gname2, deg];
     const wrap = $('#nw-heat-wrap'), box = $('#nw-heat'), n = nodes.length; wrap.hidden = n < 2; if (n < 2) return;
@@ -3262,7 +3259,7 @@ async function viewNetwork(spId, q) {
     const M = new Map(), key = (a, b) => (a < b ? a + ',' + b : b + ',' + a);
     for (const l of links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; M.set(key(a, b), l); }
     const TP = S.set ? null : TPN, cut = cutV(), names = ord.map((d) => d.row.gene);
-    const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB && !S.set ? EB : null;   // the matrix: every folded pair, apart from the network's cutoff
+    const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB;   // the matrix: every pair in the edge table (the screen's, with a filter), apart from the network's cutoff
     const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
       const l = M.get(key(a, b)); if (l) return { v: l.best, ip: l.iptm, exact: true };
       if (TP) { if (!TP.has(a, b)) return null; const s = TP.score ? TP.score(a, b) : NaN; return { v: s, exact: false }; } return { v: NaN, exact: false }; };
@@ -3270,11 +3267,11 @@ async function viewNetwork(spId, q) {
     for (let i = 0; i < n; i++) { const ri = [], rt = [];
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, q = pairOf(a, b), v = q && Number.isFinite(q.v) ? q.v : null;
         ri.push(v != null && v >= minV ? v : null);
-        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${!q ? 'never folded in these screens' : v == null ? (S.set ? 'below 10% FPR or not folded in this screen' : 'folded') : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
+        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${!q ? 'never folded in these screens' : v == null ? (TP ? 'folded' : `below 10% FPR or not folded${S.set ? ' in this screen' : ''}`) : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
         if (j > i) { if (!q) never++; else if (v != null && v >= CUT[10]) past++; else folded++; } }
       zi.push(ri); tx.push(rt); }
-    $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pairs at ≥ 10% FPR ` + (S.set ? 'in this screen' : ` · ${fmtInt(folded)} folded below it`) + (TP ? ` · ${fmtInt(never)} never folded` : '');
-    $('#nw-heat-key').innerHTML = `<span class="muted">${S.set ? "this screen's table lists only pairs at ≥ 10% FPR; the others are blank" : "every folded pair on one scale, whatever the network's cutoff"}</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
+    $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pairs at ≥ 10% FPR` + (!TP ? (S.set ? ' in this screen' : '') : ` · ${fmtInt(folded)} folded below it`) + (TP ? ` · ${fmtInt(never)} never folded` : '');
+    $('#nw-heat-key').innerHTML = `<span class="muted">${!TP ? `only pairs at ≥ 10% FPR are listed${S.set ? ' for this screen' : ''}; the others are blank` : "every folded pair on one scale, whatever the network's cutoff"}</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let P; try { P = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     if (!zi.some((r) => r.some((x) => x != null))) { P.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to every folded pair.</div>`; return; }
     const shapes = []; ord.forEach((d, k) => { if (k && gi(d) !== gi(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
