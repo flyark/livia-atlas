@@ -1533,6 +1533,30 @@ function readIdTable(sp, text) {
   return { cols, header, rows: header ? cells.slice(1) : cells };
 }
 
+// The names a reader gives (network builder, nested network): a plain list, or the chosen column of a table; lines starting
+// with # are notes. → { toks, T, col, named, data, note }: the names in order, the table (or null), its name column, how many
+// columns hold names, its other columns (numbers or a few categories, for coloring) and a note on how the text was read
+function readIdInput(sp, raw, colPref = null) {
+  const text = String(raw || '').split(/\r?\n/).filter((l) => !/^\s*#/.test(l)).join('\n'), T = readIdTable(sp, text);
+  if (!T) { let body = text, note = ''; const ls = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
+    if (ls.length >= 3 && !/[\s,;]/.test(ls[0]) && !resolveHow(sp, ls[0], true)) {   // one column with a header line: the header is not a missing name
+      const rest = ls.slice(1, 200); if (rest.filter((x) => resolveHow(sp, x, true)).length >= 0.5 * rest.length) { body = ls.slice(1).join('\n'); note = `first line “${ls[0]}” read as a header`; } }
+    return { toks: [...new Set(body.split(/[\s,;]+/).map((t) => t.trim()).filter(Boolean))], T: null, col: null, named: 0, data: [], note }; }
+  const named = T.cols.filter((x) => !x.num), best = named.reduce((a, b) => (b.hits > a.hits ? b : a), named[0] || T.cols[0]);
+  const col = colPref == null || !T.cols[colPref] || T.cols[colPref].num ? (best ? best.c : 0) : colPref;
+  const nums = T.cols.filter((x) => x.num).map((x) => x.name);
+  const note = `a table of ${fmtInt(T.rows.length)} row${T.rows.length === 1 ? '' : 's'}, names read from “${T.cols[col].name}”${nums.length ? `; number column${nums.length === 1 ? '' : 's'} not read as names: ${nums.map((n) => `“${n}”`).join(', ')}` : ''}`;
+  // a row whose name is unknown is tried by its other ID columns (a UniProt accession beside an old symbol)
+  const alts = T.cols.filter((x) => !x.num && x.c !== col && x.hits >= 3);
+  const rowName = T.rows.map((r) => { const nm = (r[col] || '').trim(); if (!nm || resolveHow(sp, nm, true)) return nm;
+    for (const x of alts) { const a = (r[x.c] || '').trim(); if (a && resolveHow(sp, a, true)) return a; } return nm; });
+  // the other columns, to color the proteins by: numbers, or a few categories (a column of names is not one)
+  const data = []; for (const x of T.cols) { if (x.c === col) continue; const vals = new Map();
+    T.rows.forEach((r, k) => { const nm = rowName[k], v = (r[x.c] || '').trim(), h = nm && v && !BLANK.test(v) && resolveHow(sp, nm, true); if (h && !vals.has(h.row.i)) vals.set(h.row.i, x.num ? parseFloat(v) : v); });
+    const kinds = new Set(vals.values());
+    if (x.num) data.push({ name: x.name, kind: 'num', vals }); else if (kinds.size >= 2 && kinds.size <= 12 && x.hits <= 0.2 * Math.max(1, x.n)) data.push({ name: x.name, kind: 'cat', vals }); }
+  return { toks: [...new Set(rowName.filter(Boolean))], T, col, named: named.length, data, note };
+}
 // Residue lookup input: "983", "T983", "T983A", "p.T983A" or "Thr983Ala" → { n, wt, mut } (one-letter codes)
 const AA3 = { ALA: 'A', ARG: 'R', ASN: 'N', ASP: 'D', CYS: 'C', GLN: 'Q', GLU: 'E', GLY: 'G', HIS: 'H', ILE: 'I', LEU: 'L', LYS: 'K', MET: 'M', PHE: 'F', PRO: 'P', SER: 'S', THR: 'T', TRP: 'W', TYR: 'Y', VAL: 'V', TER: '*' };
 function parseRes(v) {
@@ -2764,6 +2788,171 @@ async function viewVirus(spId, taxid) {
 
 /* ── network builder: the proteins a reader names and the predicted pairs among them. It reads only the species index
    and edge list already on the site (no bundle); a protein or an edge opens its page. ─────────────────────────────── */
+/* ── nested network: baits, then the candidates that join round by round. Round 1 takes a candidate with a predicted pair
+   to any bait past the cutoff; from round 2 a candidate needs at least k connections into the network accepted so far.
+   Every candidate carries a p-value: the chance of that many connections by chance, P(X ≥ k | m, p_c), where m is the
+   accepted network's size (interim: the coverage index that gives the partners each candidate was tested against is not
+   built yet) and p_c the candidate's own share of partners past the cutoff (proteins.json, the same best-over-models iLIS
+   the edges use), shrunk toward the benchmark rate so a protein with few partners is not over-read. ───────────────── */
+function binomTail(m, p, k) {   // P(X ≥ k), X ~ Binomial(m, p)
+  if (k <= 0) return 1; if (m < k || p <= 0) return 0; if (p >= 1) return 1;
+  let s = 0, t = Math.pow(1 - p, m); for (let i = 0; i < k; i++) { s += t; t *= ((m - i) / (i + 1)) * (p / (1 - p)); } return Math.min(1, Math.max(0, 1 - s));
+}
+function bhQ(ps) {   // Benjamini–Hochberg q-values, in the input order
+  const o = ps.map((p, i) => [p, i]).sort((a, b) => a[0] - b[0]), q = new Array(ps.length); let run = 1;
+  for (let r = o.length - 1; r >= 0; r--) { run = Math.min(run, (o[r][0] * o.length) / (r + 1)); q[o[r][1]] = run; } return q;
+}
+function nestedRun(E, baits, cands, o) {   // o: { c: cutoff, f: its FPR in %, k, rounds, strict, pc(i), m1(i) } → rounds, groups and each candidate's support
+  // m1 (optional): the baits a candidate was folded with (from the baits' own predictions). Round 1 then tests only those,
+  // with m = that count; a candidate folded with no bait cannot be judged in round 1. Without it, m is the network's size.
+  const acc = new Map(baits.map((i) => [i, 0])), info = new Map(), rounds = [], nb = (i) => E.adj.get(i) || new Map();
+  let cumFP = 0;
+  for (let r = 1; r <= o.rounds; r++) {
+    const kReq = r === 1 ? 1 : o.k, m = acc.size, rest = cands.filter((i) => !acc.has(i)), rows = []; let untested = 0;
+    for (const i of rest) { const mi = r === 1 && o.m1 ? o.m1(i) : m; if (!mi) { untested++; continue; }
+      const sup = [...nb(i)].filter(([j, e]) => acc.has(j) && e.best >= o.c).map(([j]) => j), p0 = o.pc(i);
+      rows.push({ i, sup, n: sup.length, m: mi, p: binomTail(mi, p0, Math.max(1, sup.length)), e: binomTail(mi, p0, kReq) }); }
+    const q = bhQ(rows.map((x) => x.p)); rows.forEach((x, n) => { x.q = q[n]; });
+    const pass = rows.filter((x) => x.n >= kReq && (!o.strict || x.q <= 0.05)), eFP = rows.reduce((s, x) => s + x.e, 0); cumFP += eFP;
+    const hidden = r === 1 ? [] : rows.filter((x) => x.n >= 1 && x.n < kReq);
+    for (const x of [...pass, ...hidden]) info.set(x.i, { ...x, r, hidden: x.n < kReq || (o.strict && x.q > 0.05) });
+    for (const x of pass) acc.set(x.i, r);
+    rounds.push({ r, m, kReq, tested: rows.length, untested: r === 1 && o.m1 ? untested : null, accepted: pass.length, hidden: hidden.length, eFP, cumFP });
+    if (!pass.length) break;
+  }
+  return { acc, info, rounds };
+}
+
+async function viewNested(spId, q) {
+  const gen = ROUTE, sp = await species(spId); if (stale(gen)) return;
+  document.title = `Nested network · ${sp.reg.label} · LIVIA Atlas`;
+  const S = { baits: q.get('baits') || '', ids: q.get('ids') || '', cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 1, k: [1, 2, 3].includes(+q.get('k')) ? +q.get('k') : 2,
+    rounds: [1, 2, 3].includes(+q.get('rounds')) ? +q.get('rounds') : 3, strict: q.get('strict') === '1', hidden: false, col: null };
+  const G = sp.manifest.keyedBy ? 'genes' : 'proteins';
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/network">Network</a> / <a href="${esc(location.hash)}">Nested</a></div>
+    <div class="dshead"><h1>Nested network</h1><div class="pname">${esc(sp.reg.label)} · baits, then the candidates predicted to join them, round by round</div></div>
+    <div class="card"><div class="card-head"><h2>Baits and candidates</h2><span class="muted">names as in the network builder: symbols, accessions, older names, or a table</span></div>
+      <label class="nlab">Baits<textarea class="ids" id="ns-baits" rows="2" spellcheck="false" placeholder="one or a few ${G}">${esc(S.baits.split(',').join(', '))}</textarea></label>
+      <label class="nlab">Candidates <span class="muted">(IP-MS preys, screen hits, GWAS or proteomics hits)</span><textarea class="ids" id="ns-ids" rows="4" spellcheck="false">${esc(S.ids.split(',').join(', '))}</textarea></label>
+      <div class="controls" style="margin-top:8px"><button class="btn" id="ns-filebtn" type="button">Load candidates from a file</button><input type="file" id="ns-file" accept=".txt,.csv,.tsv,.tab,text/plain,text/csv,text/tab-separated-values" hidden>
+        ${EXAMPLES[sp.id] ? `<span class="muted">Example: ${esc(EXAMPLES[sp.id].what)} (<a href="https://doi.org/${EXAMPLES[sp.id].doi}" target="_blank" rel="noopener">${esc(EXAMPLES[sp.id].cite)}</a>, CC BY 4.0) · <a href="#" id="ns-ex">load it</a></span>` : ''}</div>
+      <div class="controls" style="margin-top:10px"><div class="ctl"><span>Cutoff</span><div class="seg" id="ns-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div>
+        <label title="from round 2, a candidate joins with at least this many connections into the network accepted so far">At least <select id="ns-k">${[1, 2, 3].map((k) => `<option value="${k}"${k === S.k ? ' selected' : ''}>${k}</option>`).join('')}</select> connections from round 2</label>
+        <label>Rounds <select id="ns-rounds">${[1, 2, 3].map((k) => `<option value="${k}"${k === S.rounds ? ' selected' : ''}>up to ${k}</option>`).join('')}</select></label>
+        <label title="accept only candidates whose chance p-value passes Benjamini–Hochberg q ≤ 0.05 within their round"><input type="checkbox" id="ns-strict"${S.strict ? ' checked' : ''}> Strict (BH q ≤ 0.05)</label>
+        <button class="btn" id="ns-go" type="button">Build the nested network</button></div>
+      <p class="muted" id="ns-status" style="margin:10px 0 0"></p></div>
+    <div class="card" id="ns-card" hidden><div class="card-head"><h2>Rounds</h2></div><div class="tbl-wrap"><table class="pt compact" id="ns-rounds-t"></table></div><p class="muted" id="ns-base" style="margin:8px 0 0"></p>
+      <p class="legend-text">p: the chance of at least that many connections by chance, from the candidate's own share of partners past the cutoff and the accepted network's size (m). Expected false positives: the sum of those chances over every candidate tested in the round; since each candidate's share of partners past the cutoff includes its real partners, this errs high (compare the random networks below). The cutoffs are benchmarked on the top-ranked model's iLIS while an edge takes the best iLIS over every model, so the nominal false positive rate is a lower bound. In round 1, m is the number of baits the candidate was folded with; in later rounds it is the accepted network's size until the index of tested pairs is built.</p></div>
+    <div class="card" id="ns-ncard" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label><input type="checkbox" id="ns-hidden"> show hidden candidates</label>
+      <button class="btn" id="ns-csv" type="button">↓ CSV</button><button class="btn" id="ns-graphml" type="button">↓ GraphML</button></div></div>
+      <p class="muted" style="margin:2px 0 10px">Columns by round: baits at the left, then each round's accepted ${G}. An edge is a predicted pair past the cutoff, colored by the round of the later ${G.slice(0, -1)}. Click a ${G.slice(0, -1)} for its page, an edge for the pair.</p>
+      <div class="net" id="ns-net"></div><div class="legend" id="ns-legend"></div><div id="ns-x"></div></div>
+    <div class="card" id="ns-tcard" hidden><div class="card-head"><h2>Accepted ${G}</h2></div><div class="tbl-wrap"><table class="pt compact" id="ns-t"></table></div></div>`;
+  const status = (t) => { $('#ns-status').innerHTML = t; };
+  const RC = ['#1A5276', '#E67E22', '#27AE60', '#8E44AD'], gname = (i) => sp.rows[i].gene;
+  let res = null, last = null;
+  $('#ns-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#ns-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); if (res) run(); };
+  ['#ns-k', '#ns-rounds', '#ns-strict'].forEach((s) => { $(s).onchange = () => { if (res) run(); }; });
+  $('#ns-hidden').onchange = () => { if (last) drawNet(last); };
+  $('#ns-go').onclick = () => run();
+  $('#ns-filebtn').onclick = () => $('#ns-file').click();
+  $('#ns-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#ns-ids').value = await f.text(); e.target.value = ''; run(); };
+  if ($('#ns-ex')) $('#ns-ex').onclick = async (e) => { e.preventDefault(); let t; try { t = await getText(`data/examples/network_${sp.id}.tsv`); } catch (err) { status(esc(err.message)); return; }
+    const R = readIdInput(sp, t), bait = R.T ? R.T.rows.find((r) => (r.join('\t')).includes('\tbait')) : null;   // the example names its bait in the role column
+    const bn = bait ? bait[R.col] : ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); };
+  async function run() {
+    const Rb = readIdInput(sp, $('#ns-baits').value), Rc = readIdInput(sp, $('#ns-ids').value, S.col); S.col = Rc.col;
+    const res1 = (toks) => { const ok = [], miss = []; for (const t of toks) { const h = resolveHow(sp, t, true); if (h) { if (!ok.includes(h.row.i)) ok.push(h.row.i); } else miss.push(t); } return { ok, miss }; };
+    const B = res1(Rb.toks), C = res1(Rc.toks); S.k = +$('#ns-k').value; S.rounds = +$('#ns-rounds').value; S.strict = $('#ns-strict').checked;
+    const cands = C.ok.filter((i) => !B.ok.includes(i));
+    const qs = new URLSearchParams({ baits: B.ok.map((i) => sp.rows[i].key).join(','), cut: S.cut, k: S.k, rounds: S.rounds }); if (S.strict) qs.set('strict', '1'); if (Rc.toks.length <= 400) qs.set('ids', Rc.toks.join(','));
+    history.replaceState(null, '', `#/${sp.id}/nested?${qs}`);
+    if (!B.ok.length) { status(`Name at least one bait the ${esc(sp.reg.label)} screens hold${B.miss.length ? ` (not found: ${esc(B.miss.join(', '))})` : ''}.`); return; }
+    if (!cands.length) { status('Give the candidates to test against the baits.'); return; }
+    status('Reading the edge list…'); let E, K; try { [E, K] = await Promise.all([edges(sp), reported(sp)]); } catch (e) { status(esc(e.message)); return; }
+    if (stale(gen)) return;
+    const c = CUT[S.cut], f = S.cut / 100, posKey = { 10: 'pos10', 5: 'pos5', 1: 'pos1' }[S.cut], A = 20;
+    const pc = (i) => { const r = sp.rows[i]; return r.partners ? ((r[posKey] || 0) + A * f) / (r.partners + A) : f; };   // shrunk toward the benchmark rate
+    status('Reading the baits’ predictions (which candidates each was folded with)…');
+    const tb = await Promise.all(B.ok.map(async (b) => { try { const all = await merged(sp, sp.rows[b], '', true); return new Set(all.preds.map((x) => sp.byKey.get(x.partner)).filter(Boolean).map((x) => x.i)); } catch (e) { return null; } }));
+    if (stale(gen)) return;
+    const m1 = tb.every(Boolean) ? (i) => tb.filter((s) => s.has(i)).length : null;   // a bait whose predictions did not load: fall back to the network's size
+    const o = { c, f, k: S.k, rounds: S.rounds, strict: S.strict, pc, m1 };
+    res = nestedRun(E, B.ok, cands, o);
+    // random networks of this size: the same candidates and rules, baits drawn at random from the proteins with predictions
+    const pool = sp.rows.filter((r) => r.partners > 0 && !cands.includes(r.i)).map((r) => r.i), base = [];
+    const ob = { ...o, m1: null };   // random baits: their predictions are not read, so round 1 uses the network's size
+    for (let t = 0; t < 200; t++) { const rb = new Set(); while (rb.size < B.ok.length && rb.size < pool.length) rb.add(pool[Math.floor(Math.random() * pool.length)]);
+      base.push(nestedRun(E, [...rb], cands, ob).acc.size - rb.size); }
+    base.sort((a, b) => a - b);
+    const nAcc = res.acc.size - B.ok.length, never = cands.filter((i) => (sp.rows[i].partners || 0) < S.k).length;
+    const kbShare = (r) => { const ids = [...res.acc].filter(([, rr]) => rr === r).map(([i]) => i); if (!K || !ids.length) return '';
+      const before = new Set([...res.acc].filter(([, rr]) => rr < r).map(([i]) => i)); const n = ids.filter((i) => [...before].some((j) => K.pubs(i, j) > 0)).length; return `${fmtInt(n)} of ${fmtInt(ids.length)}`; };
+    $('#ns-card').hidden = false;
+    $('#ns-rounds-t').innerHTML = `<thead><tr><th>Round</th><th class="n" title="the network accepted before this round">m</th><th>rule</th><th class="n">tested</th><th class="n" title="round 1: candidates folded with no bait (not tested, not negatives); later rounds need the tested-pair index">cannot be judged</th><th class="n">accepted</th><th class="n" title="one connection short of the rule">hidden</th><th class="n">expected false positives</th><th class="n">cumulative</th><th title="accepted ${G} with a pair reported in BioGRID (physical) into the network before the round; the file has no low- or high-throughput flag">BioGRID support</th></tr></thead><tbody>`
+      + res.rounds.map((x) => `<tr><td>${x.r}</td><td class="n">${fmtInt(x.m)}</td><td>≥ ${x.kReq} connection${x.kReq === 1 ? '' : 's'}${S.strict ? ', q ≤ 0.05' : ''}</td><td class="n">${fmtInt(x.tested)}</td><td class="n">${x.untested == null ? '<span class="muted">–</span>' : fmtInt(x.untested)}</td><td class="n"><b>${fmtInt(x.accepted)}</b></td><td class="n">${fmtInt(x.hidden)}</td><td class="n">${x.eFP.toFixed(1)}</td><td class="n">${x.cumFP.toFixed(1)}</td><td>${kbShare(x.r) || '<span class="muted">–</span>'}</td></tr>`).join('') + '</tbody>';
+    $('#ns-base').innerHTML = `Random networks of this size (${fmtInt(B.ok.length)} random bait${B.ok.length === 1 ? '' : 's'} drawn from the ${G} with predictions, the same candidates and rules, 200 runs) accept ${d3.mean(base).toFixed(1)} candidates on average (95th percentile ${fmtInt(Math.ceil(d3.quantile(base, 0.95)))}); this network accepts <b>${fmtInt(nAcc)}</b>.`
+      + (never ? ` ${fmtInt(never)} candidate${never === 1 ? '' : 's'} can never reach ${S.k} connections: fewer than ${S.k} partners folded in all.` : '')
+      + ` Round 1 counts only the candidates folded with a bait (from the baits’ own predictions); for later rounds, which pairs were folded needs the tested-pair index, so m there is the network’s size.`;
+    status(`${fmtInt(B.ok.length)} bait${B.ok.length === 1 ? '' : 's'} · ${fmtInt(cands.length)} candidates · ${fmtInt(nAcc)} accepted over ${res.rounds.filter((x) => x.accepted).length} round${res.rounds.filter((x) => x.accepted).length === 1 ? '' : 's'} at iLIS ${c} (${S.cut}% FPR)`
+      + `${B.miss.length || C.miss.length ? ` · not found: ${esc([...B.miss, ...C.miss].slice(0, 30).join(', '))}` : ''}`);
+    last = { E, K, B: B.ok, o }; drawNet(last); table();
+  }
+  function nodesOf(showHidden) {   // baits, the accepted, and (when asked) the hidden; at most 400, kept by p then connections
+    let ids = [...res.acc.keys()]; if (showHidden) ids = ids.concat([...res.info].filter(([, x]) => x.hidden).map(([i]) => i));
+    if (ids.length > 400) { const B = new Set(last.B); ids = [...B, ...ids.filter((i) => !B.has(i)).sort((a, b) => (res.info.get(a).p - res.info.get(b).p) || (res.info.get(b).n - res.info.get(a).n)).slice(0, 400 - B.size)]; }
+    return ids;
+  }
+  function drawNet({ E, o }) {
+    $('#ns-ncard').hidden = false; const showH = $('#ns-hidden').checked, ids = nodesOf(showH), set = new Set(ids);
+    const col = (i) => (res.acc.has(i) ? res.acc.get(i) : res.info.get(i).r), box = $('#ns-net'); box.innerHTML = '<svg></svg>';
+    const W = box.clientWidth, H = box.clientHeight, nc = Math.max(...ids.map(col)) + 1, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
+    svg.call(d3.zoom().scaleExtent([0.2, 6]).on('zoom', (ev) => g.attr('transform', ev.transform)));
+    const links = []; for (const a of ids) for (const [b, e] of E.adj.get(a) || []) if (b > a && set.has(b) && e.best >= o.c) links.push({ a, b, e, r: Math.max(col(a), col(b)) });
+    const byCol = d3.range(nc).map((k) => ids.filter((i) => col(i) === k)), y = new Map();
+    byCol.forEach((xs) => xs.forEach((i, n) => y.set(i, (n + 1) / (xs.length + 1))));
+    const nbs = new Map(ids.map((i) => [i, []])); for (const l of links) { nbs.get(l.a).push(l.b); nbs.get(l.b).push(l.a); }
+    for (let sweep = 0; sweep < 4; sweep++) for (let k = 1; k < nc; k++) {   // order each column by the mean height of its links to earlier columns
+      const xs = byCol[k].map((i) => { const up = nbs.get(i).filter((j) => col(j) < k); return [i, up.length ? d3.mean(up, (j) => y.get(j)) : y.get(i)]; }).sort((a, b) => a[1] - b[1]);
+      xs.forEach(([i], n) => y.set(i, (n + 1) / (xs.length + 1))); byCol[k] = xs.map(([i]) => i); }
+    const X = (i) => 70 + (col(i) / Math.max(1, nc - 1)) * (W - 180), Y = (i) => 20 + y.get(i) * (H - 40);
+    g.append('g').selectAll('line').data(links).join('line').attr('x1', (d) => X(d.a)).attr('y1', (d) => Y(d.a)).attr('x2', (d) => X(d.b)).attr('y2', (d) => Y(d.b))
+      .attr('stroke', (d) => RC[Math.min(d.r, RC.length - 1)]).attr('stroke-opacity', (d) => (col(d.a) === col(d.b) ? 0.25 : 0.55)).attr('stroke-width', (d) => EWID(d.e.avg)).style('cursor', 'pointer')
+      .on('mousemove', (ev, d) => showTip(`<b>${esc(gname(d.a))}</b> × <b>${esc(gname(d.b))}</b> · iLIS ${d.e.best.toFixed(3)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip)
+      .on('click', (ev, d) => { hideTip(); location.hash = `#/${sp.id}/${sp.rows[d.a].key}/${sp.rows[d.b].key}`; });
+    const many = ids.length > 90, node = g.append('g').selectAll('g').data(ids).join('g').attr('transform', (i) => `translate(${X(i)},${Y(i)})`).style('cursor', 'pointer');
+    node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : RC[Math.min(col(i), RC.length - 1)]))
+      .attr('stroke', (i) => RC[Math.min(col(i), RC.length - 1)]).attr('stroke-width', 1.6).attr('stroke-dasharray', (i) => (res.info.get(i) && res.info.get(i).hidden ? '2 2' : null));
+    node.filter((i) => !many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01)).append('text').text(gname).attr('x', 9).attr('dy', '0.32em').attr('font-size', 10.5)
+      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', (i) => (col(i) === 0 ? 700 : 600)).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3);
+    node.on('mousemove', (ev, i) => { const x = res.info.get(i); showTip(`<b>${esc(gname(i))}</b> · ${col(i) === 0 ? 'bait' : `${x.hidden ? 'hidden, ' : ''}round ${x.r}`}${x ? `<br>${fmtInt(x.n)} connection${x.n === 1 ? '' : 's'} into the network · p ${x.p.toExponential(1)} · q ${x.q.toFixed(3)}` : ''}`, ev.clientX, ev.clientY); })
+      .on('mouseleave', hideTip).on('click', (ev, i) => { location.hash = `#/${sp.id}/${sp.rows[i].key}`; });
+    $('#ns-legend').innerHTML = RC.slice(0, nc).map((cc, k) => `<span><i style="background:${cc};border-radius:50%"></i>${k === 0 ? 'baits' : `round ${k}`} (${fmtInt(byCol[k].filter((i) => !(res.info.get(i) || {}).hidden).length)})</span>`).join('')
+      + (showH ? '<span><i style="background:#fff;border:1.5px dashed #5B6573;border-radius:50%"></i>hidden: one connection short</span>' : '') + (ids.length >= 400 ? '<span class="muted">capped at 400, kept by p, then connections</span>' : '');
+    svgExport($('#ns-x'), `atlas_${sp.id}_nested`, () => $('svg', box));
+  }
+  function rowsOut() { return [...res.acc.keys(), ...[...res.info].filter(([, x]) => x.hidden).map(([i]) => i)].map((i) => { const x = res.info.get(i), r = res.acc.has(i) ? res.acc.get(i) : x.r;
+    return { i, grp: r === 0 ? 'bait' : x.hidden ? 'hidden' : `round ${r}`, r, x }; }); }
+  function table() {
+    $('#ns-tcard').hidden = false;
+    $('#ns-t').innerHTML = `<thead><tr><th>${G.slice(0, -1)}</th><th>group</th><th class="n">connections</th><th>supported by</th><th class="n">p</th><th class="n">q</th></tr></thead><tbody>`
+      + rowsOut().filter((d) => d.grp !== 'hidden').map((d) => `<tr><td class="g"><a href="#/${sp.id}/${sp.rows[d.i].key}">${esc(gname(d.i))}</a></td><td>${d.grp}</td><td class="n">${d.x ? fmtInt(d.x.n) : '–'}</td>
+        <td>${d.x ? esc(d.x.sup.map(gname).slice(0, 12).join(', ')) + (d.x.sup.length > 12 ? ` +${d.x.sup.length - 12}` : '') : '<span class="muted">–</span>'}</td><td class="n">${d.x ? d.x.p.toExponential(1) : '–'}</td><td class="n">${d.x ? d.x.q.toFixed(3) : '–'}</td></tr>`).join('') + '</tbody>';
+  }
+  const dl = (text, name, type) => { const u = URL.createObjectURL(new Blob([text], { type })), a = document.createElement('a'); a.href = u; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
+  $('#ns-csv').onclick = () => { if (!res) return; const q2 = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
+    dl('protein,key,group,round,connections,supported_by,p,q\n' + rowsOut().map((d) => [q2(gname(d.i)), sp.rows[d.i].key, d.grp, d.r, d.x ? d.x.n : '', q2(d.x ? d.x.sup.map(gname).join(' ') : ''), d.x ? d.x.p : '', d.x ? d.x.q : ''].join(',')).join('\n') + '\n', `atlas_${sp.id}_nested.csv`, 'text/csv'); };
+  $('#ns-graphml').onclick = () => { if (!res || !last) return; const x = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    const R = rowsOut(), set = new Set(R.map((d) => d.i)), col = new Map(R.map((d) => [d.i, d.r])), E = last.E;
+    const keys = [['gene', 'node', 'gene', 'string'], ['key', 'node', 'key', 'string'], ['group', 'node', 'group', 'string'], ['round', 'node', 'round', 'int'], ['conn', 'node', 'connections', 'int'],
+      ['p', 'node', 'p', 'double'], ['q', 'node', 'q', 'double'], ['ilis', 'edge', 'iLIS_best', 'double'], ['eround', 'edge', 'round', 'int']];
+    const nodes = R.map((d) => `<node id="n${d.i}"><data key="gene">${x(gname(d.i))}</data><data key="key">${x(sp.rows[d.i].key)}</data><data key="group">${d.grp}</data><data key="round">${d.r}</data>${d.x ? `<data key="conn">${d.x.n}</data><data key="p">${d.x.p}</data><data key="q">${d.x.q}</data>` : ''}</node>`);
+    const eds = []; for (const a of set) for (const [b, e] of E.adj.get(a) || []) if (b > a && set.has(b) && e.best >= last.o.c) eds.push(`<edge source="n${a}" target="n${b}"><data key="ilis">${e.best}</data><data key="eround">${Math.max(col.get(a), col.get(b))}</data></edge>`);
+    dl(`<?xml version="1.0" encoding="UTF-8"?>\n<graphml xmlns="http://graphml.graphdrawing.org/xmlns">\n${keys.map(([id, f, nm, t]) => `<key id="${id}" for="${f}" attr.name="${nm}" attr.type="${t}"/>`).join('\n')}\n<graph id="atlas_${sp.id}_nested" edgedefault="undirected">\n${nodes.join('\n')}\n${eds.join('\n')}\n</graph>\n</graphml>\n`, `atlas_${sp.id}_nested.graphml`, 'application/xml'); };
+  if (S.baits && S.ids) run(); else $('#ns-baits').focus();
+}
+
 // The network builder's example tables: published IP-MS hit lists (the paper's own cutoff), under CC BY 4.0
 const EXAMPLES = { human: { what: 'TXNIP AP-MS interactors', cite: 'Lee et al. 2024, eLife', doi: '10.7554/eLife.88328' },
   fly: { what: 'Dicer-2 IP-MS interactors', cite: 'Rousseau et al. 2025, PLoS Pathog', doi: '10.1371/journal.ppat.1013093' } };
@@ -2779,7 +2968,7 @@ async function viewNetwork(spId, q) {
     exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [], ncol: '' };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
-    <div class="dshead"><h1>Network of your proteins</h1><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
+    <div class="dshead"><h1>Network of your proteins</h1><div class="pname"><a href="#/${sp.id}/nested">Nested network ↗</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
     <div class="card"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions (isoforms too)${sp.manifest.keyedBy ? ', FlyBase IDs, CG numbers' : ''} or older names · commas, spaces or new lines, or a table</span></div>
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
       <div class="controls" style="margin-top:8px"><button class="btn" id="nw-filebtn" type="button" title="a list or a table of names: txt, csv or tsv; a table's name column is found for you">Load a file</button><input type="file" id="nw-file" accept=".txt,.csv,.tsv,.tab,text/plain,text/csv,text/tab-separated-values" hidden>
@@ -2853,29 +3042,11 @@ async function viewNetwork(spId, q) {
   const status = (t) => { $('#nw-status').innerHTML = t; };
   const gname = (i) => sp.rows[i].gene, screens = (m) => sp.dsShort.filter((_, di) => m & (1 << di)).join(' + ');
   let tableNote = '';
-  function readInput() {   // the names to draw: a plain list, or the chosen column of a table; lines starting with # are notes
-    const text = $('#nw-ids').value.split(/\r?\n/).filter((l) => !/^\s*#/.test(l)).join('\n'), T = readIdTable(sp, text), wrap = $('#nw-col-wrap'); tableNote = '';
-    if (!T) { wrap.hidden = true; S.data = []; let body = text; const ls = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
-      if (ls.length >= 3 && !/[\s,;]/.test(ls[0]) && !resolveHow(sp, ls[0], true)) {   // one column with a header line: the header is not a missing name
-        const rest = ls.slice(1, 200); if (rest.filter((x) => resolveHow(sp, x, true)).length >= 0.5 * rest.length) { body = ls.slice(1).join('\n'); tableNote = `first line “${ls[0]}” read as a header`; } }
-      $('#nw-table').textContent = tableNote; return [...new Set(body.split(/[\s,;]+/).map((t) => t.trim()).filter(Boolean))]; }
-    const named = T.cols.filter((x) => !x.num), best = named.reduce((a, b) => (b.hits > a.hits ? b : a), named[0] || T.cols[0]);
-    if (S.col == null || !T.cols[S.col] || T.cols[S.col].num) S.col = best ? best.c : 0;
-    const sel = $('#nw-col'); sel.innerHTML = T.cols.map((x) => `<option value="${x.c}"${x.c === S.col ? ' selected' : ''}${x.num ? ' disabled' : ''}>${esc(x.name)}${x.num ? ' (numbers)' : ` (${fmtInt(x.hits)} found)`}</option>`).join('');
-    wrap.hidden = named.length < 2;
-    const nums = T.cols.filter((x) => x.num).map((x) => x.name);
-    tableNote = `a table of ${fmtInt(T.rows.length)} row${T.rows.length === 1 ? '' : 's'}, names read from “${T.cols[S.col].name}”${nums.length ? `; number column${nums.length === 1 ? '' : 's'} not read as names: ${nums.map((n) => `“${n}”`).join(', ')}` : ''}`;
-    // a row whose name is unknown is tried by its other ID columns (a UniProt accession beside an old symbol)
-    const alts = T.cols.filter((x) => !x.num && x.c !== S.col && x.hits >= 3);
-    const rowName = T.rows.map((r) => { const nm = (r[S.col] || '').trim(); if (!nm || resolveHow(sp, nm, true)) return nm;
-      for (const x of alts) { const a = (r[x.c] || '').trim(); if (a && resolveHow(sp, a, true)) return a; } return nm; });
-    // the other columns, to color the proteins by: numbers, or a few categories (a column of names is not one)
-    S.data = []; for (const x of T.cols) { if (x.c === S.col) continue; const vals = new Map();
-      T.rows.forEach((r, k) => { const nm = rowName[k], v = (r[x.c] || '').trim(), h = nm && v && !BLANK.test(v) && resolveHow(sp, nm, true); if (h && !vals.has(h.row.i)) vals.set(h.row.i, x.num ? parseFloat(v) : v); });
-      const kinds = new Set(vals.values());
-      if (x.num) S.data.push({ name: x.name, kind: 'num', vals }); else if (kinds.size >= 2 && kinds.size <= 12 && x.hits <= 0.2 * Math.max(1, x.n)) S.data.push({ name: x.name, kind: 'cat', vals }); }
-    $('#nw-table').textContent = tableNote;
-    return [...new Set(rowName.filter(Boolean))];
+  function readInput() {   // the names to draw, through readIdInput; the column picker and the note follow it
+    const R = readIdInput(sp, $('#nw-ids').value, S.col), wrap = $('#nw-col-wrap'); S.col = R.col; S.data = R.data; tableNote = R.note;
+    if (R.T) { $('#nw-col').innerHTML = R.T.cols.map((x) => `<option value="${x.c}"${x.c === S.col ? ' selected' : ''}${x.num ? ' disabled' : ''}>${esc(x.name)}${x.num ? ' (numbers)' : ` (${fmtInt(x.hits)} found)`}</option>`).join(''); wrap.hidden = R.named < 2; }
+    else wrap.hidden = true;
+    $('#nw-table').textContent = tableNote; return R.toks;
   }
   async function draw(seed = null) {   // seed: the positions and zoom to keep when a click adds partners
     const toks = readInput();
@@ -3097,7 +3268,7 @@ async function route() {
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
-    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }
