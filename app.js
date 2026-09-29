@@ -3250,7 +3250,8 @@ async function viewNetwork(spId, q) {
     const u = URL.createObjectURL(new Blob([text], { type: 'application/xml' })), a = document.createElement('a'); a.href = u; a.download = `atlas_${sp.id}_network.graphml`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   $('#nw-livia').onclick = () => { if (!net) return; const w = window.open(`${LIVIA}network.html?post=1`, '_blank'); if (!w) return;
     const text = 'name,Symbol_1,Symbol_2,iLIS,ipTM\n' + rowsOut().map(({ a, b, l }) => `${gname(a)}___${gname(b)},${gname(a)},${gname(b)},${l.best.toFixed(3)},${Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : ''}`).join('\n') + '\n';   // the pair table LIVIA's network reads (names already split)
-    handTo(w, { type: 'livia-load', name: `atlas_${sp.id}_network.csv`, data: new Blob([text], { type: 'text/csv' }), ilis: CUT[S.cut] }); };
+    const keys = {}; for (const n of net.nodes) { keys[n.row.gene] = n.row.key; keys[String(n.row.gene).toUpperCase()] = keys[String(n.row.gene).toUpperCase()] || n.row.key; }   // LIVIA's cLIP opens each protein's Atlas page
+    handTo(w, { type: 'livia-load', name: `atlas_${sp.id}_network.csv`, data: new Blob([text], { type: 'text/csv' }), ilis: CUT[S.cut], atlas: { url: location.href.split('#')[0], sp: sp.id, keys } }); };
   if (S.ids) draw(); else $('#nw-ids').focus();
 }
 
