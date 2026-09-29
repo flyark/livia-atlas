@@ -1,79 +1,79 @@
 # Example: Dicer-2 IP-MS interactors in adult flies, wild type, not infected (SAINT BFDR <= 0.01), collapsed by gene, plus the bait.
 # Source: Rousseau C, Morand T, Haas G, et al. (2025) In vivo Dicer-2 interactome during viral infection reveals novel pro and antiviral factors in Drosophila melanogaster. PLoS Pathog 21(5):e1013093. https://doi.org/10.1371/journal.ppat.1013093
-# S1 Table, sheet "SAINT raw data", bait condition Dicer_WT_GFP_NI. Licensed CC BY 4.0; values as published; UniProt accession given for each prey.
-gene	accession	role	FoldChange	BFDR
-Dcr-2		bait		
-r2d2	Q2EJB1	prey	1066.67	0
-PNPase	Q5U117	prey	126.67	0
-loqs	Q9VJY9	prey	123.33	0
-Arc1	Q7K1Q7	prey	90	0
-CG9684	N0A2N3	prey	78.67	0
-DCP1	Q9W1H5	prey	66.67	0
-GIP	P04146	prey	60	0
-CkIalpha	P54362	prey	56.67	0
-AGO1	Q32KD2	prey	52	0
-BEST:CK01174	Q9VSH0	prey	46.67	0
-DIP1	A4V4V2	prey	46.67	0
-CG5913	Q95WY3	prey	43.33	0
-CG5641	Q9VG73	prey	40	0
-Q6AWL1	Q5U1E0	prey	40	0
-homer	O96607	prey	39.2	0
-CG1814	A1Z7V9	prey	36.67	0
-Cbp80	Q7K4L8	prey	33.33	0
-gag-r	P91622	prey	33.33	0
-Tailor	A0A0B4KGN4	prey	32	0
-Marf	Q7PLS8	prey	30	0
-RtcB	Q9VIW7	prey	30	0
-Hsp22	P02515	prey	26.67	0
-aub	O76922	prey	26.67	0
-gag	Q04047	prey	26.67	0
-piwi	Q9VKM1	prey	26	0
-san	Q9NHD5	prey	23.33	0
-exu	P28668	prey	18.53	0
-CG31879	Q7KTB7	prey	17.33	0
-ps	Q0KI25	prey	11.2	0
-CG13850	Q9VD14	prey	10.67	0
-mEFTu2	Q7K3N4	prey	10.29	0
-Cdep	A0A0C4DHA1	prey	9	0
-Ge-1	Q9VKK1	prey	9	0
-AGO2	Q9VUQ5	prey	8.59	0
-DmRH5	Q8MZG9	prey	7.09	0
-Syp	A0A0B4KHT5	prey	6.75	0
-Zn72D	Q86BH5	prey	6.13	0
-nonA	Q03427	prey	6.11	0
-Hem	P55035	prey	6	0
-eIF4E1	P48596	prey	5.42	0
-GluProRS	P26802	prey	5.18	0
-cup	Q9VMA3	prey	5.15	0
-Imp	Q0KHU0	prey	4.66	0
-bsf	Q95083	prey	4.04	0
-Dp1	Q7KN63	prey	4.03	0
-rump	Q9VHC7	prey	3.75	0
-Rm62	P19107	prey	3.6	0
-eIF4A	Q02427	prey	3.35	0
-me31B	P22977	prey	3.25	0
-yps	Q95RC5	prey	3.24	0
-BEST:GH19547	A1ZAU4	prey	20	0.01
-CG7382	Q9VMR0	prey	20	0.01
-Larp4B	Q9I7T7	prey	20	0.01
-Pp1alpha-96A	P48375	prey	20	0.01
-Trap1	A1Z6L9	prey	20	0.01
-numb	P16378	prey	20	0.01
-EG:115C2.2	O77426	prey	18	0.01
-EP(2)2054	A1Z9K0	prey	18	0.01
-mago	P48994	prey	18	0.01
-Sec22	O77434	prey	16	0.01
-rig	Q86BR8	prey	16	0.01
-eIF4G2	Q9VCH1	prey	13	0.01
-caz	Q27272	prey	12.67	0.01
-rept	Q9V3K3	prey	12	0.01
-Ddx1	Q9VNV3	prey	11.2	0.01
-Not1	A0A0B4LEZ3	prey	10	0.01
-FASN2	M9PB21	prey	7.16	0.01
-ninaC	P10676	prey	5.7	0.01
-CG15784	Q9W4C1	prey	5.04	0.01
-clu	A1ZAB5	prey	4.8	0.01
-Opa1	A0A0B4LGF5	prey	4.19	0.01
-Cam	P61857	prey	3.95	0.01
-mahe	Q9W3M7	prey	3.86	0.01
-Pep	M9NG39	prey	3.18	0.01
+# S1 Table, sheet "SAINT raw data", bait condition Dicer_WT_GFP_NI. Licensed CC BY 4.0; values as published; gene symbols only (the source table's accession column was not carried over).
+gene	role	FoldChange	BFDR
+Dcr-2	bait		
+r2d2	prey	1066.67	0
+PNPase	prey	126.67	0
+loqs	prey	123.33	0
+Arc1	prey	90	0
+CG9684	prey	78.67	0
+DCP1	prey	66.67	0
+GIP	prey	60	0
+CkIalpha	prey	56.67	0
+AGO1	prey	52	0
+BEST:CK01174	prey	46.67	0
+DIP1	prey	46.67	0
+CG5913	prey	43.33	0
+CG5641	prey	40	0
+Q6AWL1	prey	40	0
+homer	prey	39.2	0
+CG1814	prey	36.67	0
+Cbp80	prey	33.33	0
+gag-r	prey	33.33	0
+Tailor	prey	32	0
+Marf	prey	30	0
+RtcB	prey	30	0
+Hsp22	prey	26.67	0
+aub	prey	26.67	0
+gag	prey	26.67	0
+piwi	prey	26	0
+san	prey	23.33	0
+exu	prey	18.53	0
+CG31879	prey	17.33	0
+ps	prey	11.2	0
+CG13850	prey	10.67	0
+mEFTu2	prey	10.29	0
+Cdep	prey	9	0
+Ge-1	prey	9	0
+AGO2	prey	8.59	0
+DmRH5	prey	7.09	0
+Syp	prey	6.75	0
+Zn72D	prey	6.13	0
+nonA	prey	6.11	0
+Hem	prey	6	0
+eIF4E1	prey	5.42	0
+GluProRS	prey	5.18	0
+cup	prey	5.15	0
+Imp	prey	4.66	0
+bsf	prey	4.04	0
+Dp1	prey	4.03	0
+rump	prey	3.75	0
+Rm62	prey	3.6	0
+eIF4A	prey	3.35	0
+me31B	prey	3.25	0
+yps	prey	3.24	0
+BEST:GH19547	prey	20	0.01
+CG7382	prey	20	0.01
+Larp4B	prey	20	0.01
+Pp1alpha-96A	prey	20	0.01
+Trap1	prey	20	0.01
+numb	prey	20	0.01
+EG:115C2.2	prey	18	0.01
+EP(2)2054	prey	18	0.01
+mago	prey	18	0.01
+Sec22	prey	16	0.01
+rig	prey	16	0.01
+eIF4G2	prey	13	0.01
+caz	prey	12.67	0.01
+rept	prey	12	0.01
+Ddx1	prey	11.2	0.01
+Not1	prey	10	0.01
+FASN2	prey	7.16	0.01
+ninaC	prey	5.7	0.01
+CG15784	prey	5.04	0.01
+clu	prey	4.8	0.01
+Opa1	prey	4.19	0.01
+Cam	prey	3.95	0.01
+mahe	prey	3.86	0.01
+Pep	prey	3.18	0.01

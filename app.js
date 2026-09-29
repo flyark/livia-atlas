@@ -1576,7 +1576,11 @@ function readIdInput(sp, raw, colPref = null) {
     return { toks: [...new Set(body.split(/[\s,;]+/).map((t) => t.trim()).filter(Boolean))], T: null, col: null, named: 0, data: [], note }; }
   const named = T.cols.filter((x) => !x.num), best = named.reduce((a, b) => (b.hits > a.hits ? b : a), named[0] || T.cols[0]);
   const strong = named.filter((x) => x.n && x.raw >= 0.5 * x.n);   // columns that are mostly names we know: a pair list (bait, prey), or a symbol beside an accession
-  const all = strong.length >= 2 && (colPref == null || colPref === 'all');
+  // several name columns: a pair list names different proteins in a row (read them all); a symbol beside its accession names
+  // the same one (read one column, the others as a fallback)
+  const sameRow = strong.length >= 2 ? (() => { let both = 0, same = 0; for (const r of T.rows.slice(0, 300)) { const ids = strong.map((x) => { const h = resolveHow(sp, (r[x.c] || '').trim(), true); return h ? h.row.i : null; }).filter((v) => v != null);
+    if (ids.length >= 2) { both++; if (new Set(ids).size === 1) same++; } } return both && same >= 0.5 * both; })() : false;
+  const all = strong.length >= 2 && !sameRow && (colPref == null || colPref === 'all');
   const col = all ? best.c : colPref == null || colPref === 'all' || !T.cols[colPref] || T.cols[colPref].num ? (best ? best.c : 0) : colPref;
   const nums = T.cols.filter((x) => x.num).map((x) => x.name);
   const note = `a table of ${fmtInt(T.rows.length)} row${T.rows.length === 1 ? '' : 's'}, names read from ${all ? strong.map((x) => `“${x.name}”`).join(' and ') : `“${T.cols[col].name}”`}${nums.length ? `; number column${nums.length === 1 ? '' : 's'} not read as names: ${nums.map((n) => `“${n}”`).join(', ')}` : ''}`;
@@ -2865,7 +2869,7 @@ function nestedRun(E, baits, cands, o) {   // o: { c: cutoff, f: its FPR in %, k
 async function viewNested(spId, q) {
   const gen = ROUTE, sp = await species(spId); if (stale(gen)) return;
   document.title = `Nested network · ${sp.reg.label} · LIVIA Atlas`;
-  const S = { baits: q.get('baits') || '', ids: q.get('ids') || '', cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 1, k: [1, 2, 3].includes(+q.get('k')) ? +q.get('k') : 2,
+  const S = { baits: q.get('baits') || '', ids: q.get('ids') || '', cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, k: [1, 2, 3].includes(+q.get('k')) ? +q.get('k') : 2,
     rounds: [1, 2, 3].includes(+q.get('rounds')) ? +q.get('rounds') : 3, strict: q.get('strict') === '1', para: q.get('para') === '1', hidden: false, col: null };
   const G = sp.manifest.keyedBy ? 'genes' : 'proteins';
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/network">Network</a> / <a href="${esc(location.hash)}">Nested</a></div>
@@ -2901,7 +2905,7 @@ async function viewNested(spId, q) {
   $('#ns-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#ns-ids').value = await f.text(); e.target.value = ''; run(); };
   examplePicker($('#ns-ex'), sp.id, (t) => {
     const R = readIdInput(sp, t), bait = R.T ? R.T.rows.find((r) => r.includes('bait')) : null;   // an example with a bait names it in the role column
-    if (!bait) { status('This example has no bait; name one in the Baits box, then Build.'); $('#ns-ids').value = t; return; }
+    if (!bait) { $('#ns-baits').value = ''; status('This example has no bait; name one in the Baits box, then Build.'); $('#ns-ids').value = t; return; }
     const bn = [bait[R.col], ...bait].find((x) => x && resolveHow(sp, String(x).trim(), true)) || ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); });
   async function run() {
     const Rb = readIdInput(sp, $('#ns-baits').value), Rc = readIdInput(sp, $('#ns-ids').value, S.col); S.col = Rc.col;
@@ -2955,7 +2959,7 @@ async function viewNested(spId, q) {
     $('#ns-ncard').hidden = false; const showH = $('#ns-hidden').checked, ids = nodesOf(showH), set = new Set(ids);
     const col = (i) => (res.acc.has(i) ? res.acc.get(i) : res.info.get(i).r), box = $('#ns-net'); box.innerHTML = '<svg></svg>';
     const W = box.clientWidth, H = box.clientHeight, nc = Math.max(...ids.map(col)) + 1, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
-    svg.call(d3.zoom().scaleExtent([0.2, 6]).on('zoom', (ev) => g.attr('transform', ev.transform)));
+    let lab = null; svg.call(d3.zoom().scaleExtent([0.2, 6]).on('zoom', (ev) => { g.attr('transform', ev.transform); if (lab) lab.attr('display', (i) => (ev.transform.k >= 1.6 || !many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01) ? null : 'none')).attr('font-size', 10.5 / Math.max(1, ev.transform.k)); }));   // zoomed in, every label
     const links = []; for (const a of ids) for (const [b, e] of E.adj.get(a) || []) if (b > a && set.has(b) && e.best >= o.c) links.push({ a, b, e, r: Math.max(col(a), col(b)) });
     const byCol = d3.range(nc).map((k) => ids.filter((i) => col(i) === k)), y = new Map();
     byCol.forEach((xs) => xs.forEach((i, n) => y.set(i, (n + 1) / (xs.length + 1))));
@@ -2971,12 +2975,12 @@ async function viewNested(spId, q) {
     const many = ids.length > 90, node = g.append('g').selectAll('g').data(ids).join('g').attr('transform', (i) => `translate(${X(i)},${Y(i)})`).style('cursor', 'pointer');
     node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : RC[Math.min(col(i), RC.length - 1)]))
       .attr('stroke', (i) => RC[Math.min(col(i), RC.length - 1)]).attr('stroke-width', 1.6).attr('stroke-dasharray', (i) => (res.info.get(i) && res.info.get(i).hidden ? '2 2' : null));
-    node.filter((i) => !many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01)).append('text').text(gname).attr('x', 9).attr('dy', '0.32em').attr('font-size', 10.5)
+    lab = node.append('text').attr('display', (i) => (!many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01) ? null : 'none')).text(gname).attr('x', 9).attr('dy', '0.32em').attr('font-size', 10.5)
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', (i) => (col(i) === 0 ? 700 : 600)).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3);
     node.on('mousemove', (ev, i) => { const x = res.info.get(i); showTip(`<b>${esc(gname(i))}</b> · ${col(i) === 0 ? 'bait' : `${x.hidden ? 'hidden, ' : ''}round ${x.r}`}${x ? `<br>${fmtInt(x.n)} connection${x.n === 1 ? '' : 's'} into the network · p ${x.p.toExponential(1)} · q ${x.q.toFixed(3)}` : ''}`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, i) => { location.hash = `#/${sp.id}/${sp.rows[i].key}`; });
     $('#ns-legend').innerHTML = RC.slice(0, nc).map((cc, k) => `<span><i style="background:${cc};border-radius:50%"></i>${k === 0 ? 'baits' : `round ${k}`} (${fmtInt(byCol[k].filter((i) => !(res.info.get(i) || {}).hidden).length)})</span>`).join('')
-      + (showH ? '<span><i style="background:#fff;border:1.5px dashed #5B6573;border-radius:50%"></i>hidden: below the rule</span>' : '') + (ids.length >= 400 ? '<span class="muted">capped at 400, kept by p, then connections</span>' : '');
+      + (showH && [...res.info.values()].some((x) => x.hidden) ? '<span><i style="background:#fff;border:1.5px dashed #5B6573;border-radius:50%"></i>hidden: below the rule</span>' : '') + (ids.length >= 400 ? '<span class="muted">capped at 400, kept by p, then connections</span>' : '');
     svgExport($('#ns-x'), `atlas_${sp.id}_nested`, () => $('svg', box));
   }
   function rowsOut() { return [...res.acc.keys(), ...[...res.info].filter(([, x]) => x.hidden).map(([i]) => i)].map((i) => { const x = res.info.get(i), r = res.acc.has(i) ? res.acc.get(i) : x.r;
@@ -2991,7 +2995,7 @@ async function viewNested(spId, q) {
   $('#ns-csv').onclick = () => { if (!res) return; const q2 = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
     dl('protein,key,group,round,connections,supported_by,p,q,chance_of_rule\n' + rowsOut().map((d) => [q2(gname(d.i)), sp.rows[d.i].key, d.grp, d.r, d.x ? d.x.n : '', q2(d.x ? d.x.sup.map(gname).join(' ') : ''), d.x ? d.x.p : '', d.x ? d.x.q : '', d.x ? d.x.e : ''].join(',')).join('\n') + '\n', `atlas_${sp.id}_nested.csv`, 'text/csv'); };
   $('#ns-graphml').onclick = () => { if (!res || !last) return; const x = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-    const R = rowsOut(), set = new Set(R.map((d) => d.i)), col = new Map(R.map((d) => [d.i, d.r])), E = last.E;
+    const R = rowsOut().filter((d) => d.grp !== 'hidden' || $('#ns-hidden').checked), set = new Set(R.map((d) => d.i)), col = new Map(R.map((d) => [d.i, d.r])), E = last.E;   // what is drawn
     const keys = [['gene', 'node', 'gene', 'string'], ['key', 'node', 'key', 'string'], ['group', 'node', 'group', 'string'], ['round', 'node', 'round', 'int'], ['conn', 'node', 'connections', 'int'],
       ['p', 'node', 'p', 'double'], ['q', 'node', 'q', 'double'], ['ilis', 'edge', 'iLIS_best', 'double'], ['eround', 'edge', 'round', 'int']];
     const nodes = R.map((d) => `<node id="n${d.i}"><data key="gene">${x(gname(d.i))}</data><data key="key">${x(sp.rows[d.i].key)}</data><data key="group">${d.grp}</data><data key="round">${d.r}</data>${d.x ? `<data key="conn">${d.x.n}</data><data key="p">${d.x.p}</data><data key="q">${d.x.q}</data>` : ''}</node>`);
@@ -3024,7 +3028,7 @@ async function viewNetwork(spId, q) {
   const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 5)),
     cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
-    mind: [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 0, grp: q.get('grp') || '', exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [], ncol: '' };   // exp: proteins expanded by a click (keys), in the order clicked
+    mind: [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 0, grp: q.get('grp') || '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [] };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
     <div class="dshead"><h1>Network of your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} of interest</h1><div class="pname"><a href="#/${sp.id}/nested">Nested network ↗</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
@@ -3117,7 +3121,7 @@ async function viewNetwork(spId, q) {
     return { fill: (d) => { const v = D.vals.get(d.id); return Number.isFinite(v) ? sc(tf(v)) : none; },
       key: `<div class="kbrow"><span class="muted">proteins by ${esc(lab)}:</span><span><i class="kb-grad" style="background:linear-gradient(90deg, ${stops})"></i>${f2(ends[0])} to ${zeros ? '≥ ' : ''}${f2(ends[1])}</span>${zeros ? '<span class="muted">values of 0 shown at the top, one step past the smallest nonzero value</span>' : ''}<span><i style="background:${none};border-radius:50%"></i>no value</span></div>` };
   }
-  const foldText = (f) => (!f ? 'not checked yet: hover again in a moment' : f.st === 'low' && !Number.isFinite(f.best) ? `folded, scored below the cutoff ${cutV()}` : f.st === 'low' ? `folded: best iLIS ${f.best < CUT[10] ? '≈' + f.best.toFixed(2) : f.best.toFixed(3)}${Number.isFinite(f.iptm) ? `, ipTM ${f.iptm.toFixed(2)}` : ''}, below the cutoff ${CUT[S.cut]}`
+  const foldText = (f) => (!f ? 'not checked yet: hover again in a moment' : f.st === 'low' && !Number.isFinite(f.best) ? `folded, scored below the cutoff ${cutV()}` : f.st === 'low' ? `folded: best iLIS ${f.best < CUT[10] ? '≈' + f.best.toFixed(2) : f.best.toFixed(3)}${Number.isFinite(f.iptm) ? `, ipTM ${f.iptm.toFixed(2)}` : ''}, below the cutoff ${cutV()}`
     : f.st === 'none' ? 'never folded in these screens: not tested, not a negative' : 'could not be checked (the prediction files did not load)');
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
@@ -3126,27 +3130,28 @@ async function viewNetwork(spId, q) {
   let tableNote = '';
   function readInput() {   // the names to draw, through readIdInput; the column picker and the note follow it
     const R = readIdInput(sp, $('#nw-ids').value, S.col), wrap = $('#nw-col-wrap'); S.col = R.col; S.data = R.data; tableNote = R.note;
-    if (R.T) { $('#nw-col').innerHTML = (R.strongN >= 2 ? `<option value="all"${S.col === 'all' ? ' selected' : ''}>all name columns</option>` : '') + R.T.cols.map((x) => `<option value="${x.c}"${x.c === S.col ? ' selected' : ''}${x.num ? ' disabled' : ''}>${esc(x.name)}${x.num ? ' (numbers)' : ` (${fmtInt(x.hits)} found)`}</option>`).join(''); wrap.hidden = R.named < 2; }
+    if (R.T) { $('#nw-col').innerHTML = (R.col === 'all' ? `<option value="all"${S.col === 'all' ? ' selected' : ''}>all name columns</option>` : '') + R.T.cols.map((x) => `<option value="${x.c}"${x.c === S.col ? ' selected' : ''}${x.num ? ' disabled' : ''}>${esc(x.name)}${x.num ? ' (numbers)' : ` (${fmtInt(x.hits)} found)`}</option>`).join(''); wrap.hidden = R.named < 2; }
     else wrap.hidden = true;
     $('#nw-table').textContent = tableNote; return R.toks;
   }
   async function draw(seed = null) {   // seed: the positions and zoom to keep when a click adds partners
-    const toks = readInput();
+    hideTip(); const toks = readInput();
     const ns = $('#nw-ncol'); if (S.ncol && !(S.data || []).some((x) => x.name === S.ncol)) S.ncol = '';
     if (!S.ncolUser) S.ncol = autoColor(S.data || []);   // chosen for the reader until they pick one
     ns.innerHTML = `<option value="">of interest · added partners</option>` + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
     $('#nw-ncol-wrap').style.display = (S.data || []).length ? '' : 'none';
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
     $('#nw-grp').innerHTML = [['', 'none'], ['comm', 'communities (predicted pairs)'], ['q', 'of interest · added partners'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join('');
-    S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 5)); S.set = $('#nw-set').value;
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind) qs.set('mind', S.mind); if (S.grp) qs.set('grp', S.grp); if (S.set) qs.set('set', S.set);
+    S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 5)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind) qs.set('mind', S.mind); if (S.grp) qs.set('grp', S.grp); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
     if (!toks.length) { status('Name at least one protein.'); $('#nw-card').hidden = true; return; }
+    if (toks.length === 1 && $('#nw-add').value === 'none' && !seed) { $('#nw-add').value = 'top'; S.add = 'top'; showK(); }   // one protein alone has no pair: show its top partners
     const found = [], missing = [], how = new Map();
     for (const t of toks) { const h = resolveHow(sp, t, true); if (!h) { missing.push(t); continue; } how.set(h.how, (how.get(h.how) || 0) + 1); if (!found.includes(h.row)) found.push(h.row); }
-    if (!found.length) { status(`None of these names is in the ${esc(sp.reg.label)} screens: ${esc(missing.join(', '))}.`); $('#nw-card').hidden = true; return; }
+    if (!found.length) { status(`None of these names is in the ${esc(sp.reg.label)} screens: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}.${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions.' : ''}`); $('#nw-card').hidden = true; return; }
     const nFound = [...how.values()].reduce((s, n) => s + n, 0), twice = nFound - found.length;   // before the cap trims the list
     const CAP = 400, over = found.length > CAP ? found.length : 0; if (over) found.length = CAP;
     if (toks.length > CAP) { S.ids = found.map((r) => r.key).join(','); writeURL(); }   // a long file: the link carries the proteins drawn, not every line
@@ -3183,7 +3188,7 @@ async function viewNetwork(spId, q) {
     const Qin = [...Q].filter((i) => keep.has(i)), added = keep.size - Qin.length, alone = Qin.filter((i) => !links.some((l) => l.source === i || l.target === i)).map(gname);
     status(`${fmtInt(Qin.length)} ${sp.manifest.keyedBy ? 'genes' : 'proteins'} of interest${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}`
       + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : ' · no BioGRID records for this species'}`
-      + `${missing.length ? ` · not found: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.join(', '))}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
+      + `${missing.length ? ` · not found: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.slice(0, 30).join(', '))}${alone.length > 30 ? ` and ${fmtInt(alone.length - 30)} more` : ''}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
       + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}</span>`);
     $('#nw-card').hidden = false;
     if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; $('#nw-heat-wrap').hidden = true; return; }
@@ -3231,7 +3236,7 @@ async function viewNetwork(spId, q) {
       { type: 'heatmap', z: zg, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: [[0, '#F1F3F5'], [1, '#8E98A3']], zmin: 0, zmax: cut, showscale: false, xgap: 1, ygap: 1, hoverongaps: false },   // below the cutoff: grays, darker toward it
       { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS(cs), zmin: CUT[10], zmax: 0.85,
         colorbar: { title: { text: 'best iLIS', side: 'right' }, thickness: 12, len: 0.6 }, xgap: 1, ygap: 1, hoverongaps: false }],
-      { width: Math.min(box.clientWidth || 900, side + 120), height: side, margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
+      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
         xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain' },
         yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x' }, dragmode: 'zoom' },
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_${sp.id}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
@@ -3383,7 +3388,9 @@ async function viewNetwork(spId, q) {
   $('#nw-link').onclick = async () => { const b = $('#nw-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
   const rowsOut = () => (net ? net.links.map((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return { a, b, l }; }) : []);
   $('#nw-csv').onclick = () => { const csvq = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
-    const text = 'Protein_1,Protein_2,iLIS_best,iLIS_avg,ipTM_best,screens,BioGRID_physical,BioGRID_genetic\n' + rowsOut().map(({ a, b, l }) => [csvq(gname(a)), csvq(gname(b)), l.best.toFixed(3), l.avg.toFixed(3), Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : '', csvq(screens(l.src)), l.pubs || 0, l.gen || 0].join(',')).join('\n') + '\n';
+    const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
+    const rep = (net ? net.extra : []).map((l) => { const [a, b] = e2(l), f = FOLD.get(fkey(a, b)); return [csvq(gname(a)), csvq(gname(b)), f && Number.isFinite(f.best) ? f.best.toFixed(3) : '', '', '', '', l.pubs || 0, l.gen || 0, f ? (f.st === 'none' ? 'reported, never folded' : 'reported, folded below the cutoff') : 'reported, not predicted'].join(','); });
+    const text = 'Protein_1,Protein_2,iLIS_best,iLIS_avg,ipTM_best,screens,BioGRID_physical,BioGRID_genetic,type\n' + rowsOut().map(({ a, b, l }) => [csvq(gname(a)), csvq(gname(b)), l.best.toFixed(3), l.avg.toFixed(3), Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : '', csvq(screens(l.src)), l.pubs || 0, l.gen || 0, 'predicted'].join(',')).concat(rep).join('\n') + '\n';
     const u = URL.createObjectURL(new Blob([text], { type: 'text/csv' })), d = document.createElement('a'); d.href = u; d.download = `atlas_${sp.id}_network.csv`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   $('#nw-graphml').onclick = () => { if (!net) return;
     const x = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');

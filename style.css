@@ -520,4 +520,5 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .nlab textarea.ids { font-weight: 400; margin-top: 6px; }
 
 .ex-row { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.ex-row select { max-width: 360px; }
+.ex-row { max-width: 100%; }
+.ex-row select { max-width: min(360px, 100%); }
