@@ -1847,17 +1847,20 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const tally = (V) => { const ot = V.partners.filter((x) => x.id !== P.key && !x.rep), n = (c) => ot.filter((x) => x.best >= c).length;
       return { n: ot.length, p10: n(CUT[10]), p5: n(CUT[5]), p1: n(CUT[1]), top: [...ot].sort((x, y) => y.best - x.best).slice(0, 3) }; };
     const fromSummary = (t) => ({ n: t.partners, p10: t.p10, p5: t.p5, p1: t.p1, top: (t.top || []).map(([id, best]) => ({ id, best })) });
-    const all = BA.split ? fromSummary(BA.split.allStats) : tally(BA), card = $('#c-iso'); card.hidden = false;
+    const all = BA.split ? fromSummary(BA.split.allStats) : tally(BA), card = $('#c-iso');
+    const stat = new Map(BA.choices.map((c) => [c, c.stats ? fromSummary(c.stats) : tally(BA.only(c.id))]));
+    const listed = BA.choices.filter((c) => c === ISO || stat.get(c).n > 1), few = BA.choices.length - listed.length;   // a construct folded with one partner is left out of the table (its pair page still has it)
+    card.hidden = listed.length < 2;
     card.innerHTML = `<div class="card-head"><h2>${WORD}s</h2><span class="muted">each folded separately · open one to see it on this page</span></div>
       <div class="tbl-wrap"><table class="sets isotbl"><thead><tr><th>${WORD}</th><th class="n">Models</th><th class="n">Partners</th><th class="n">Past 10% FPR</th><th class="n">5%</th><th class="n">1%</th><th>Top partners (iLIS)</th></tr></thead><tbody>
-      ${BA.choices.map((c) => { const t = c.stats ? fromSummary(c.stats) : tally(BA.only(c.id));
+      ${listed.map((c) => { const t = stat.get(c);
         return `<tr class="${c === ISO ? 'on' : ''}"><td class="set-name"><a href="${isoHref(c)}">${esc(isoName(c))}</a>${c === ISO ? ' <span class="muted">· shown</span>' : ''}</td>
           <td class="n">${fmtInt(c.n)}</td><td class="n">${fmtInt(t.n)}</td><td class="n">${fmtInt(t.p10)}</td><td class="n">${fmtInt(t.p5)}</td><td class="n">${fmtInt(t.p1)}</td>
           <td class="iso-top">${t.top.map((x) => `<a href="#/${sp.id}/${x.id}${scopeQ}">${esc(gname(x.id))}</a> <span class="num">${x.best.toFixed(2)}</span>`).join(' · ')}</td></tr>`; }).join('')}
       </tbody></table></div>
-      <p class="muted" style="margin:10px 0 0;font-size:13.5px">All ${fmtInt(BA.choices.length)} together: ${fmtInt(all.n)} partners, ${fmtInt(all.p10)} past the 10% FPR cutoff.</p>`;
-    const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; nav.prepend(btn);
-    btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' });
+      <p class="muted" style="margin:10px 0 0;font-size:13.5px">All ${fmtInt(BA.choices.length)} together: ${fmtInt(all.n)} partners, ${fmtInt(all.p10)} past the 10% FPR cutoff.${few ? ` ${fmtInt(few)} ${few === 1 ? 'construct' : 'constructs'} folded with a single partner ${few === 1 ? 'is' : 'are'} not listed.` : ''}</p>`;
+    if (!card.hidden) { const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; nav.prepend(btn);
+      btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' }); }
   }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); }; });
 
@@ -2864,7 +2867,7 @@ async function viewNested(spId, q) {
       <label class="nlab">Baits<textarea class="ids" id="ns-baits" rows="2" spellcheck="false" placeholder="one or a few ${G}">${esc(S.baits.split(',').join(', '))}</textarea></label>
       <label class="nlab">Candidates <span class="muted">(IP-MS preys, screen hits, GWAS or proteomics hits)</span><textarea class="ids" id="ns-ids" rows="4" spellcheck="false">${esc(S.ids.split(',').join(', '))}</textarea></label>
       <div class="controls" style="margin-top:8px"><button class="btn" id="ns-filebtn" type="button">Load candidates from a file</button><input type="file" id="ns-file" accept=".txt,.csv,.tsv,.tab,text/plain,text/csv,text/tab-separated-values" hidden>
-        ${EXAMPLES[sp.id] ? `<span class="muted">Example: ${esc(EXAMPLES[sp.id].what)} (<a href="https://doi.org/${EXAMPLES[sp.id].doi}" target="_blank" rel="noopener">${esc(EXAMPLES[sp.id].cite)}</a>, CC BY 4.0) · <a href="#" id="ns-ex">load it</a></span>` : ''}</div>
+        <span class="ex-row" id="ns-ex"></span></div>
       <div class="controls" style="margin-top:10px"><div class="ctl"><span>Cutoff</span><div class="seg" id="ns-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div>
         <label title="from round 2, a candidate joins with at least this many connections into the network accepted so far">At least <select id="ns-k">${[1, 2, 3].map((k) => `<option value="${k}"${k === S.k ? ' selected' : ''}>${k}</option>`).join('')}</select> connections from round 2</label>
         <label>Rounds <select id="ns-rounds">${[1, 2, 3].map((k) => `<option value="${k}"${k === S.rounds ? ' selected' : ''}>up to ${k}</option>`).join('')}</select></label>
@@ -2889,9 +2892,10 @@ async function viewNested(spId, q) {
   $('#ns-go').onclick = () => run();
   $('#ns-filebtn').onclick = () => $('#ns-file').click();
   $('#ns-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#ns-ids').value = await f.text(); e.target.value = ''; run(); };
-  if ($('#ns-ex')) $('#ns-ex').onclick = async (e) => { e.preventDefault(); let t; try { t = await getText(`data/examples/network_${sp.id}.tsv`); } catch (err) { status(esc(err.message)); return; }
-    const R = readIdInput(sp, t), bait = R.T ? R.T.rows.find((r) => (r.join('\t')).includes('\tbait')) : null;   // the example names its bait in the role column
-    const bn = bait ? [bait[R.col], ...bait].find((x) => x && resolveHow(sp, String(x).trim(), true)) || '' : ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); };
+  examplePicker($('#ns-ex'), sp.id, (t) => {
+    const R = readIdInput(sp, t), bait = R.T ? R.T.rows.find((r) => r.includes('bait')) : null;   // an example with a bait names it in the role column
+    if (!bait) { status('This example has no bait; name one in the Baits box, then Build.'); $('#ns-ids').value = t; return; }
+    const bn = [bait[R.col], ...bait].find((x) => x && resolveHow(sp, String(x).trim(), true)) || ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); });
   async function run() {
     const Rb = readIdInput(sp, $('#ns-baits').value), Rc = readIdInput(sp, $('#ns-ids').value, S.col); S.col = Rc.col;
     const res1 = (toks) => { const ok = [], miss = []; for (const t of toks) { const h = resolveHow(sp, t, true); if (h) { if (!ok.includes(h.row.i)) ok.push(h.row.i); } else miss.push(t); } return { ok, miss }; };
@@ -2990,8 +2994,19 @@ async function viewNested(spId, q) {
 }
 
 // The network builder's example tables: published IP-MS hit lists (the paper's own cutoff), under CC BY 4.0
-const EXAMPLES = { human: { what: 'TXNIP AP-MS interactors', cite: 'Lee et al. 2024, eLife', doi: '10.7554/eLife.88328' },
-  fly: { what: 'Dicer-2 IP-MS interactors', cite: 'Rousseau et al. 2025, PLoS Pathog', doi: '10.1371/journal.ppat.1013093' } };
+// Example tables for the network views (data/examples/index.json): published hit lists and gene sets under CC BY or CC0,
+// each at its paper's own cutoff; a picker lists a species' examples, and the row under it cites the one chosen.
+let EXIDX = null;
+const examplesFor = async (spId) => { if (!EXIDX) EXIDX = getJSON('data/examples/index.json').catch(() => []); return (await EXIDX).filter((x) => x.species === spId); };
+function examplePicker(host, spId, onLoad) {   // host: an element; onLoad(text, entry) when the reader loads one
+  examplesFor(spId).then((xs) => { if (!xs.length || !host.isConnected) return;
+    host.innerHTML = `<label>Example <select class="ex-pick" aria-label="Example table">${xs.map((x, n) => `<option value="${n}">${esc(x.what)} · ${esc(x.type)}</option>`).join('')}</select></label>
+      <button class="btn ex-load" type="button">Load</button><span class="muted ex-cite"></span>`;
+    const sel = host.querySelector('.ex-pick'), cite = () => { const x = xs[+sel.value];
+      host.querySelector('.ex-cite').innerHTML = `<a href="https://doi.org/${esc(x.doi)}" target="_blank" rel="noopener">${esc(x.cite)}</a>, ${esc(x.license)} · <a href="data/examples/${esc(x.file)}" download>download</a>`; };
+    sel.onchange = cite; cite();
+    host.querySelector('.ex-load').onclick = async () => { const x = xs[+sel.value]; let t; try { t = await getText(`data/examples/${x.file}`); } catch (e) { return; } onLoad(t, x); }; });
+}
 async function viewNetwork(spId, q) {
   const gen = ROUTE, sp = await species(spId);
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
@@ -3009,7 +3024,7 @@ async function viewNetwork(spId, q) {
     <div class="card"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions (isoforms too)${sp.manifest.keyedBy ? ', FlyBase IDs, CG numbers' : ''} or older names · commas, spaces or new lines, or a table</span></div>
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
       <div class="controls" style="margin-top:8px"><button class="btn" id="nw-filebtn" type="button" title="a list or a table of names: txt, csv or tsv; a table's name column is found for you">Load a file</button><input type="file" id="nw-file" accept=".txt,.csv,.tsv,.tab,text/plain,text/csv,text/tab-separated-values" hidden>
-        ${EXAMPLES[sp.id] ? `<span class="muted">Example: ${esc(EXAMPLES[sp.id].what)} (<a href="https://doi.org/${EXAMPLES[sp.id].doi}" target="_blank" rel="noopener">${esc(EXAMPLES[sp.id].cite)}</a>, CC BY 4.0) · <a href="data/examples/network_${sp.id}.tsv" download>download</a> · <a href="#" id="nw-ex">load it</a></span>` : ''}
+        <span class="ex-row" id="nw-ex"></span>
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein</span>
@@ -3238,8 +3253,8 @@ async function viewNetwork(spId, q) {
   }
   $('#nw-go').onclick = () => draw();
   $('#nw-filebtn').onclick = () => $('#nw-file').click();
-  if ($('#nw-ex')) $('#nw-ex').onclick = async (e) => { e.preventDefault(); try { $('#nw-ids').value = await getText(`data/examples/network_${sp.id}.tsv`); } catch (err) { status(esc(err.message)); return; }
-    S.col = null; S.exp = []; S.ncolUser = false; $('#nw-add').value = 'top'; $('#nw-k').value = 3; showK(); draw(); };   // the example opens with each hit's top partners, so the list grows outward
+  examplePicker($('#nw-ex'), sp.id, (t) => { $('#nw-ids').value = t;
+    S.col = null; S.exp = []; S.ncolUser = false; $('#nw-add').value = 'top'; $('#nw-k').value = 3; showK(); draw(); });   // an example opens with each hit's top partners, so the list grows outward
   $('#nw-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#nw-ids').value = await f.text(); S.col = null; S.exp = []; S.ncolUser = false; e.target.value = ''; draw(); };
   $('#nw-col').onchange = (e) => { S.col = +e.target.value; S.exp = []; S.ncolUser = false; draw(); };
   $('#nw-ids').oninput = () => { S.col = null; S.ncolUser = false; };

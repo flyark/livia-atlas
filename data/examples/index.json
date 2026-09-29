@@ -1,0 +1,128 @@
+[
+ {
+  "file": "network_human_txnip-apms.tsv",
+  "species": "human",
+  "what": "TXNIP AP-MS interactors (HEK293)",
+  "type": "AP-MS",
+  "cite": "Lee et al. 2024, eLife",
+  "doi": "10.7554/eLife.88328",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_fly_dcr2-ipms.tsv",
+  "species": "fly",
+  "what": "Dicer-2 IP-MS interactors (adult flies)",
+  "type": "IP-MS",
+  "cite": "Rousseau et al. 2025, PLoS Pathog",
+  "doi": "10.1371/journal.ppat.1013093",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_omm-apex.tsv",
+  "species": "human",
+  "what": "Outer mitochondrial membrane APEX2 proteome",
+  "type": "proximity labeling",
+  "cite": "Hung et al. 2017, eLife",
+  "doi": "10.7554/eLife.24463",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_esyt1-bioid.tsv",
+  "species": "human",
+  "what": "ESYT1 BioID proximity interactome",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Janer et al. 2024, Life Sci Alliance",
+  "doi": "10.26508/lsa.202302335",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_dyrk2-phospho.tsv",
+  "species": "human",
+  "what": "DYRK2 inhibitor phosphoproteome (myeloma cells)",
+  "type": "phosphoproteomics",
+  "cite": "Wei et al. 2022, eLife",
+  "doi": "10.7554/eLife.77696",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_crispri-proteostat.tsv",
+  "species": "human",
+  "what": "CRISPRi screen for protein-aggregate (ProteoStat) regulators",
+  "type": "CRISPR screen",
+  "cite": "Yong et al. 2024, eLife",
+  "doi": "10.7554/eLife.86194",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_rnaseq-mtf2-ko.tsv",
+  "species": "human",
+  "what": "MTF2 knockout (PRC2.1 loss) RNA-seq",
+  "type": "differential expression (RNA-seq)",
+  "cite": "Longhurst et al. 2025, eLife",
+  "doi": "10.7554/eLife.97577",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_exome-schizophrenia.tsv",
+  "species": "human",
+  "what": "Schizophrenia rare-variant exome risk genes",
+  "type": "rare-variant gene set",
+  "cite": "Chick et al. 2025, Nat Commun",
+  "doi": "10.1038/s41467-025-62429-y",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_alzheimer-gwas.tsv",
+  "species": "human",
+  "what": "Alzheimer's disease GWAS loci (nearest genes)",
+  "type": "GWAS gene set",
+  "cite": "Bellenguez et al. 2022, Nat Genet",
+  "doi": "10.1038/s41588-022-01024-z",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_complex-i.tsv",
+  "species": "human",
+  "what": "Mitochondrial complex I subunits",
+  "type": "curated complex",
+  "cite": "HGNC gene groups (Seal et al. 2023, Nucleic Acids Res)",
+  "doi": "10.1093/nar/gkac888",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "network_fly_drice-turboid.tsv",
+  "species": "fly",
+  "what": "Drice (executioner caspase) TurboID proximity proteome, brain",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Muramoto et al. 2025, eLife",
+  "doi": "10.7554/eLife.99650",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_fly_tdp43-suppressor-rnai.tsv",
+  "species": "fly",
+  "what": "In vivo RNAi suppressors of TDP-43 toxicity",
+  "type": "RNAi screen",
+  "cite": "Azpurua et al. 2021, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1009882",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_fly_err-female-rnaseq.tsv",
+  "species": "fly",
+  "what": "ERR knockout adult female RNA-seq",
+  "type": "differential expression (RNA-seq)",
+  "cite": "Fleck et al. 2026, G3",
+  "doi": "10.1093/g3journal/jkag186",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_fly_proteasome-26s.tsv",
+  "species": "fly",
+  "what": "26S proteasome subunits",
+  "type": "curated complex",
+  "cite": "FlyBase gene groups (Ozturk-Colak et al. 2024, Genetics)",
+  "doi": "10.1093/genetics/iyad211",
+  "license": "CC BY 4.0"
+ }
+]

@@ -1,0 +1,39 @@
+# Validated RNAi suppressors of TDP-43 toxicity in a Drosophila in vivo shRNA (TRiP) screen: negative geotaxis rescue in E49>hTDP-43 males
+# Azpurua J, El-Karim EG, Tranquille M, et al. 2021. A behavioral screen for mediators of age-dependent TDP-43 neurodegeneration identifies SF2/SRSF1 among a group of potent suppressors in both neurons and glia. PLoS Genet 17:e1009882. https://doi.org/10.1371/journal.pgen.1009882
+# Source: pgen.1009882.s002.xlsx (S2 Table), sheets "Hit Validation" (hits) and "First Screen" (score) (https://journals.plos.org/plosgenetics/article/file?id=10.1371/journal.pgen.1009882.s002&type=supplementary)
+# Cutoff: >35% of males crossing the 10 cm mark within 10 s in the primary screen AND in an independent validation cross ("GEOTAXIS RESCUE REPLICATED" = YES, incl. 2 borderline); score shown is the primary-screen geotaxis fraction; best line per gene
+# Licensed CC BY 4.0
+gene	FBgn	Geotaxis (F1 Males)
+Taf1	FBgn0010355	1
+e(y)3	FBgn0087008	0.95
+CG2186	FBgn0030243	0.9167
+CG30379	FBgn0050379	0.9123
+CG9451	FBgn0036876	0.8958
+sbr	FBgn0003321	0.88
+polybromo	FBgn0039227	0.8611
+SF2	FBgn0283477	0.8182
+Taf9	FBgn0000617	0.81
+Su(Tpl)	FBgn0014037	0.8
+msk	FBgn0026252	0.7917
+CG7309	FBgn0032314	0.7917
+Chd1	FBgn0250786	0.7857
+MED15	FBgn0027592	0.7647
+Hsp70Ba	FBgn0013277	0.7576
+MED8	FBgn0034503	0.75
+MED27	FBgn0037359	0.7167
+br	FBgn0283451	0.7111
+Hel25E	FBgn0014189	0.6667
+MED28	FBgn0039337	0.65
+enok	FBgn0034975	0.6389
+ash1	FBgn0005386	0.6333
+tomb	FBgn0031715	0.5897
+MED21	FBgn0040020	0.5833
+MED31	FBgn0037262	0.5417
+MED7	FBgn0051390	0.5417
+mor	FBgn0002783	0.5417
+Ggamma30A	FBgn0267252	0.5
+nito	FBgn0027548	0.43
+MED22	FBgn0040339	0.4
+mlm	FBgn0031011	0.381
+MED11	FBgn0036811	0.3704
+Br140	FBgn0033155	0.3636

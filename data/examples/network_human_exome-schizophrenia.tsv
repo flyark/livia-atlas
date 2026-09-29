@@ -1,0 +1,32 @@
+# Schizophrenia risk genes from rare coding variants: case-control plus de novo exome meta-analysis (28,898 cases, 103,041 controls, 3,444 trios)
+# Chick SL, Holmans P, Cameron D, et al. 2025. Whole-exome sequencing analysis identifies risk genes for schizophrenia. Nat Commun 16:7102. https://doi.org/10.1038/s41467-025-62429-y
+# Source: 41467_2025_62429_MOESM4_ESM.xlsx (Supplementary Data 2), sheet "Supplementary Data 2", final case-control-de novo meta-analysis columns (https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-62429-y/MediaObjects/41467_2025_62429_MOESM4_ESM.xlsx)
+# Cutoff: Q-val < 0.05 (FDR < 5%, the paper's threshold); class = variant class of the meta-analysis test
+# Licensed CC BY 4.0
+gene	uniprot	P-val	Q-val	class
+SETD1A	O15047	2.25e-14	6.9e-10	PTV + MPC >2
+XPO7	Q9UIA9	1.36e-09	1.05e-05	PTV + MPC >3
+HERC1	Q15751	1.42e-08	7.24e-05	PTV
+STAG1	Q8WVM7	3.65e-08	0.00014	PTV + MPC >2
+CUL1	Q13616	3.66e-08	0.00014	PTV
+TRIO	O75962	5.43e-08	0.000177	PTV
+SRRM2	Q9UQ35	3.54e-07	0.000988	PTV
+ZNF136	P52737	6.17e-07	0.00158	PTV
+GRIA3	P42263	7.32e-07	0.00173	PTV + MPC >3
+AKAP11	Q9UKA4	1.07e-06	0.00223	PTV
+SP4	Q02446	1.92e-06	0.00349	PTV
+SLC6A1	P30531	1.93e-06	0.00349	MPC >2
+GRIN2A	Q12879	2.42e-06	0.00412	PTV + MPC >3
+PCLO	Q9Y6V0	2.68e-06	0.00433	PTV
+RB1CC1	Q8TDY2	5.07e-06	0.00724	PTV
+FAM120A	Q9NZB2	6.54e-06	0.00836	PTV + MPC >3
+MAGEC1	O60732	7.84e-06	0.00962	PTV
+ZMYM2	Q9UBW7	1.07e-05	0.0127	PTV + MPC >2
+ZMYND11	Q15326	1.6e-05	0.0174	PTV
+BSCL2	Q96G97	1.94e-05	0.0192	PTV
+H1-4	P10412	3.12e-05	0.029	PTV
+ANKRD12	Q6UB98	4.96e-05	0.0424	PTV
+KLC1	Q07866	4.97e-05	0.0424	MPC >2
+CGREF1	Q99674	4.97e-05	0.0424	PTV
+OR4P4	Q8NGL7	5.58e-05	0.0439	PTV
+MAGI2	Q86UL8	5.82e-05	0.0446	PTV
