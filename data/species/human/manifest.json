@@ -63,11 +63,13 @@
   "pairsFpr10": 287013,
   "pairsFpr5": 156836,
   "pairsFpr1": 41818,
-  "pairsInSeveral": 5647
+  "pairsInSeveral": 5647,
+  "pairsTested": 1989692
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 256
+  "biogridShards": 256,
+  "tested": "tested.bin"
  }
 }

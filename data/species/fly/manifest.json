@@ -36,11 +36,13 @@
   "pairsFpr1": 11028,
   "genes": 13939,
   "constructs": 28357,
-  "pairsInSeveral": 0
+  "pairsInSeveral": 0,
+  "pairsTested": 1128685
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 256
+  "biogridShards": 256,
+  "tested": "tested.bin"
  }
 }

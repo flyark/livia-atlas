@@ -280,6 +280,25 @@ function reportedOf(sp, i) {
   if (!sp.knownShard.has(k)) sp.knownShard.set(k, (async () => { let t; try { t = await getText(`${sp.base}biogrid/${k}.tsv`); } catch (e) { return reported(sp); } return parseReported(sp, t); })());
   return sp.knownShard.get(k);
 }
+// Every pair folded in the species' screens (data/species/<sp>/tested.bin, built by tools/tested_index.py): whether a pair
+// was tested at all, below the cutoff or not. The file names the index it was built for (rows and key hash); a file for
+// another index is not used. → { has(a, b), P } or null (no file, or not this index)
+function tested(sp) {
+  const f = (sp.manifest.files || {}).tested; if (!f) return Promise.resolve(null);
+  if (!sp.testedP) sp.testedP = (async () => {
+    const res = await fetch(sp.base + f); if (!res.ok) return null; const buf = await res.arrayBuffer(), dv = new DataView(buf), td = new TextDecoder();
+    if (td.decode(new Uint8Array(buf, 0, 5)) !== 'LVTP1') return null;
+    const N = dv.getUint32(6, true), P = dv.getUint32(10, true), sha = td.decode(new Uint8Array(buf, 14, 12));
+    if (N !== sp.rows.length) return null;
+    const dig = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(sp.rows.map((r) => r.key).join('\n')));
+    if ([...new Uint8Array(dig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 12) !== sha) return null;
+    const off = new Uint32Array(buf, 32, N + 1), nb = new Uint16Array(buf, 32 + 4 * (N + 1), P);
+    const has = (a, b) => { const i = Math.min(a, b), j = Math.max(a, b); if (!(i >= 0 && j < N)) return false; let lo = off[i], hi = off[i + 1];
+      while (lo < hi) { const m = (lo + hi) >> 1; if (nb[m] < j) lo = m + 1; else hi = m; } return lo < off[i + 1] && nb[lo] === j; };
+    return { has, P };
+  })().catch(() => null);
+  return sp.testedP;
+}
 const srcBadges = (sp, mask) => sp.dsIds.map((_, di) => (mask & (1 << di) ? `<span class="src" style="--c:${sp.dsColor[di]}">${esc(sp.dsShort[di])}</span>` : '')).join('');
 
 // edges.tsv of a species: every pair past 10% FPR in any screen — best iLIS over every model, mean iLIS, screens
@@ -2803,13 +2822,14 @@ function bhQ(ps) {   // Benjamini–Hochberg q-values, in the input order
   for (let r = o.length - 1; r >= 0; r--) { run = Math.min(run, (o[r][0] * o.length) / (r + 1)); q[o[r][1]] = run; } return q;
 }
 function nestedRun(E, baits, cands, o) {   // o: { c: cutoff, f: its FPR in %, k, rounds, strict, pc(i), m1(i) } → rounds, groups and each candidate's support
-  // m1 (optional): the baits a candidate was folded with (from the baits' own predictions). Round 1 then tests only those,
+  // mt (optional): how many of the accepted network a candidate was folded with (the tested-pair index), every round;
+  // a candidate folded with fewer than the rule needs cannot be judged. m1 (optional, without mt): the baits a candidate was folded with (from the baits' own predictions). Round 1 then tests only those,
   // with m = that count; a candidate folded with no bait cannot be judged in round 1. Without it, m is the network's size.
   const acc = new Map(baits.map((i) => [i, 0])), info = new Map(), rounds = [], nb = (i) => E.adj.get(i) || new Map();
   let cumFP = 0;
   for (let r = 1; r <= o.rounds; r++) {
     const kReq = r === 1 ? 1 : o.k, m = acc.size, rest = cands.filter((i) => !acc.has(i)), rows = []; let untested = 0;
-    for (const i of rest) { const mi = r === 1 && o.m1 ? o.m1(i) : m; if (!mi) { untested++; continue; }
+    for (const i of rest) { const mi = o.mt ? o.mt(i, acc) : r === 1 && o.m1 ? o.m1(i) : m; if (mi < kReq) { untested++; continue; }   // too few tested partners in the network to reach the rule: cannot be judged
       const sup = [...nb(i)].filter(([j, e]) => acc.has(j) && e.best >= o.c).map(([j]) => j), p0 = o.pc(i);
       rows.push({ i, sup, n: sup.length, m: mi, p: binomTail(mi, p0, Math.max(1, sup.length)), e: binomTail(mi, p0, kReq) }); }
     const q = bhQ(rows.map((x) => x.p)); rows.forEach((x, n) => { x.q = q[n]; });
@@ -2817,7 +2837,7 @@ function nestedRun(E, baits, cands, o) {   // o: { c: cutoff, f: its FPR in %, k
     const hidden = r === 1 ? [] : rows.filter((x) => x.n >= 1 && x.n < kReq);
     for (const x of [...pass, ...hidden]) info.set(x.i, { ...x, r, hidden: x.n < kReq || (o.strict && x.q > 0.05) });
     for (const x of pass) acc.set(x.i, r);
-    rounds.push({ r, m, kReq, tested: rows.length, untested: r === 1 && o.m1 ? untested : null, accepted: pass.length, hidden: hidden.length, eFP, cumFP });
+    rounds.push({ r, m, kReq, tested: rows.length, untested: o.mt || (r === 1 && o.m1) ? untested : null, accepted: pass.length, hidden: hidden.length, eFP, cumFP });
     if (!pass.length) break;
   }
   return { acc, info, rounds };
@@ -2843,7 +2863,7 @@ async function viewNested(spId, q) {
         <button class="btn" id="ns-go" type="button">Build the nested network</button></div>
       <p class="muted" id="ns-status" style="margin:10px 0 0"></p></div>
     <div class="card" id="ns-card" hidden><div class="card-head"><h2>Rounds</h2></div><div class="tbl-wrap"><table class="pt compact" id="ns-rounds-t"></table></div><p class="muted" id="ns-base" style="margin:8px 0 0"></p>
-      <p class="legend-text">p: the chance of at least that many connections by chance, from the candidate's own share of partners past the cutoff and the accepted network's size (m). Expected false positives: the sum of those chances over every candidate tested in the round; since each candidate's share of partners past the cutoff includes its real partners, this errs high (compare the random networks below). The cutoffs are benchmarked on the top-ranked model's iLIS while an edge takes the best iLIS over every model, so the nominal false positive rate is a lower bound. In round 1, m is the number of baits the candidate was folded with; in later rounds it is the accepted network's size until the index of tested pairs is built.</p></div>
+      <p class="legend-text">p: the chance of at least that many connections by chance, from the candidate's own share of partners past the cutoff and the accepted network's size (m). Expected false positives: the sum of those chances over every candidate tested in the round; since each candidate's share of partners past the cutoff includes its real partners, this errs high (compare the random networks below). The cutoffs are benchmarked on the top-ranked model's iLIS while an edge takes the best iLIS over every model, so the nominal false positive rate is a lower bound. m is how many of the accepted network the candidate was folded with (from the index of tested pairs; for a species without it, the baits in round 1 and the network's size after).</p></div>
     <div class="card" id="ns-ncard" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label><input type="checkbox" id="ns-hidden"> show hidden candidates</label>
       <button class="btn" id="ns-csv" type="button">↓ CSV</button><button class="btn" id="ns-graphml" type="button">↓ GraphML</button></div></div>
       <p class="muted" style="margin:2px 0 10px">Columns by round: baits at the left, then each round's accepted ${G}. An edge is a predicted pair past the cutoff, colored by the round of the later ${G.slice(0, -1)}. Click a ${G.slice(0, -1)} for its page, an edge for the pair.</p>
@@ -2874,15 +2894,17 @@ async function viewNested(spId, q) {
     if (stale(gen)) return;
     const c = CUT[S.cut], f = S.cut / 100, posKey = { 10: 'pos10', 5: 'pos5', 1: 'pos1' }[S.cut], A = 20;
     const pc = (i) => { const r = sp.rows[i]; return r.partners ? ((r[posKey] || 0) + A * f) / (r.partners + A) : f; };   // shrunk toward the benchmark rate
-    status('Reading the baits’ predictions (which candidates each was folded with)…');
-    const tb = await Promise.all(B.ok.map(async (b) => { try { const all = await merged(sp, sp.rows[b], '', true); return new Set(all.preds.map((x) => sp.byKey.get(x.partner)).filter(Boolean).map((x) => x.i)); } catch (e) { return null; } }));
+    const TP = await tested(sp); if (stale(gen)) return;
+    const mt = TP ? (i, acc) => { let n = 0; for (const j of acc.keys()) if (TP.has(i, j)) n++; return n; } : null;
+    if (!TP) status('Reading the baits’ predictions (which candidates each was folded with)…');
+    const tb = TP ? [] : await Promise.all(B.ok.map(async (b) => { try { const all = await merged(sp, sp.rows[b], '', true); return new Set(all.preds.map((x) => sp.byKey.get(x.partner)).filter(Boolean).map((x) => x.i)); } catch (e) { return null; } }));
     if (stale(gen)) return;
-    const m1 = tb.every(Boolean) ? (i) => tb.filter((s) => s.has(i)).length : null;   // a bait whose predictions did not load: fall back to the network's size
-    const o = { c, f, k: S.k, rounds: S.rounds, strict: S.strict, pc, m1 };
+    const m1 = !TP && tb.every(Boolean) ? (i) => tb.filter((s) => s.has(i)).length : null;   // a bait whose predictions did not load: fall back to the network's size
+    const o = { c, f, k: S.k, rounds: S.rounds, strict: S.strict, pc, m1, mt };
     res = nestedRun(E, B.ok, cands, o);
     // random networks of this size: the same candidates and rules, baits drawn at random from the proteins with predictions
     const pool = sp.rows.filter((r) => r.partners > 0 && !cands.includes(r.i)).map((r) => r.i), base = [];
-    const ob = { ...o, m1: null };   // random baits: their predictions are not read, so round 1 uses the network's size
+    const ob = { ...o, m1: null };   // random baits: the tested-pair index when there is one; else their predictions are not read and round 1 uses the network's size
     for (let t = 0; t < 200; t++) { const rb = new Set(); while (rb.size < B.ok.length && rb.size < pool.length) rb.add(pool[Math.floor(Math.random() * pool.length)]);
       base.push(nestedRun(E, [...rb], cands, ob).acc.size - rb.size); }
     base.sort((a, b) => a - b);
@@ -2890,11 +2912,12 @@ async function viewNested(spId, q) {
     const kbShare = (r) => { const ids = [...res.acc].filter(([, rr]) => rr === r).map(([i]) => i); if (!K || !ids.length) return '';
       const before = new Set([...res.acc].filter(([, rr]) => rr < r).map(([i]) => i)); const n = ids.filter((i) => [...before].some((j) => K.pubs(i, j) > 0)).length; return `${fmtInt(n)} of ${fmtInt(ids.length)}`; };
     $('#ns-card').hidden = false;
-    $('#ns-rounds-t').innerHTML = `<thead><tr><th>Round</th><th class="n" title="the network accepted before this round">m</th><th>rule</th><th class="n">tested</th><th class="n" title="round 1: candidates folded with no bait (not tested, not negatives); later rounds need the tested-pair index">cannot be judged</th><th class="n">accepted</th><th class="n" title="one connection short of the rule">hidden</th><th class="n">expected false positives</th><th class="n">cumulative</th><th title="accepted ${G} with a pair reported in BioGRID (physical) into the network before the round; the file has no low- or high-throughput flag">BioGRID support</th></tr></thead><tbody>`
+    $('#ns-rounds-t').innerHTML = `<thead><tr><th>Round</th><th class="n" title="the network accepted before this round">m</th><th>rule</th><th class="n">tested</th><th class="n" title="candidates folded with fewer of the network than the rule needs: not tested, not negatives">cannot be judged</th><th class="n">accepted</th><th class="n" title="one connection short of the rule">hidden</th><th class="n">expected false positives</th><th class="n">cumulative</th><th title="accepted ${G} with a pair reported in BioGRID (physical) into the network before the round; the file has no low- or high-throughput flag">BioGRID support</th></tr></thead><tbody>`
       + res.rounds.map((x) => `<tr><td>${x.r}</td><td class="n">${fmtInt(x.m)}</td><td>≥ ${x.kReq} connection${x.kReq === 1 ? '' : 's'}${S.strict ? ', q ≤ 0.05' : ''}</td><td class="n">${fmtInt(x.tested)}</td><td class="n">${x.untested == null ? '<span class="muted">–</span>' : fmtInt(x.untested)}</td><td class="n"><b>${fmtInt(x.accepted)}</b></td><td class="n">${fmtInt(x.hidden)}</td><td class="n">${x.eFP.toFixed(1)}</td><td class="n">${x.cumFP.toFixed(1)}</td><td>${kbShare(x.r) || '<span class="muted">–</span>'}</td></tr>`).join('') + '</tbody>';
     $('#ns-base').innerHTML = `Random networks of this size (${fmtInt(B.ok.length)} random bait${B.ok.length === 1 ? '' : 's'} drawn from the ${G} with predictions, the same candidates and rules, 200 runs) accept ${d3.mean(base).toFixed(1)} candidates on average (95th percentile ${fmtInt(Math.ceil(d3.quantile(base, 0.95)))}); this network accepts <b>${fmtInt(nAcc)}</b>.`
       + (never ? ` ${fmtInt(never)} candidate${never === 1 ? '' : 's'} can never reach ${S.k} connections: fewer than ${S.k} partners folded in all.` : '')
-      + ` Round 1 counts only the candidates folded with a bait (from the baits’ own predictions); for later rounds, which pairs were folded needs the tested-pair index, so m there is the network’s size.`;
+      + (TP ? ` Every round counts only what was folded: m is how many of the network each candidate was folded with (the index of tested pairs), and a candidate folded with fewer than the rule needs cannot be judged.`
+        : ` Round 1 counts only the candidates folded with a bait (from the baits’ own predictions); later rounds need the index of tested pairs, which this species does not have yet, so m there is the network’s size.`);
     status(`${fmtInt(B.ok.length)} bait${B.ok.length === 1 ? '' : 's'} · ${fmtInt(cands.length)} candidates · ${fmtInt(nAcc)} accepted over ${res.rounds.filter((x) => x.accepted).length} round${res.rounds.filter((x) => x.accepted).length === 1 ? '' : 's'} at iLIS ${c} (${S.cut}% FPR)`
       + `${B.miss.length || C.miss.length ? ` · not found: ${esc([...B.miss, ...C.miss].slice(0, 30).join(', '))}` : ''}`);
     last = { E, K, B: B.ok, o }; drawNet(last); table();
@@ -2999,7 +3022,7 @@ async function viewNetwork(spId, q) {
   $('#nw-add').onchange = () => { showK(); redraw(); };
   $('#nw-set').onchange = redraw;
   { let t = 0; $('#nw-k').oninput = () => { clearTimeout(t); t = setTimeout(redraw, 350); }; }
-  let net = null, KBN = null, EB = null;   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
+  let net = null, KBN = null, EB = null, TPN = null;   // TPN: the species' tested pairs (every screen), when the file is there   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
   // A reported pair that was not predicted past the cutoff is one of two things: folded and scored below the cutoff, or never
   // folded in these screens. edges.tsv holds only pairs past 10% FPR, so the answer comes from one end's own predictions
   // (its bundle lists every partner it was folded with). FOLD: scope|a,b → { st: 'low', best, iptm } | { st: 'none' } | { st: 'err' }
@@ -3035,7 +3058,7 @@ async function viewNetwork(spId, q) {
     return { fill: (d) => { const v = D.vals.get(d.id); return Number.isFinite(v) ? sc(tf(v)) : none; },
       key: `<div class="kbrow"><span class="muted">proteins by ${esc(lab)}:</span><span><i class="kb-grad" style="background:linear-gradient(90deg, ${stops})"></i>${f2(ends[0])} to ${f2(ends[1])}</span><span><i style="background:${none};border-radius:50%"></i>no value</span></div>` };
   }
-  const foldText = (f) => (!f ? 'not checked yet: hover again in a moment' : f.st === 'low' ? `folded: best iLIS ${f.best.toFixed(3)}${Number.isFinite(f.iptm) ? `, ipTM ${f.iptm.toFixed(2)}` : ''}, below the cutoff ${CUT[S.cut]}`
+  const foldText = (f) => (!f ? 'not checked yet: hover again in a moment' : f.st === 'low' && !Number.isFinite(f.best) ? `folded, scored below the cutoff ${CUT[S.cut]}` : f.st === 'low' ? `folded: best iLIS ${f.best.toFixed(3)}${Number.isFinite(f.iptm) ? `, ipTM ${f.iptm.toFixed(2)}` : ''}, below the cutoff ${CUT[S.cut]}`
     : f.st === 'none' ? 'never folded in these screens: not tested, not a negative' : 'could not be checked (the prediction files did not load)');
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
@@ -3067,8 +3090,8 @@ async function viewNetwork(spId, q) {
     if (toks.length > CAP) { S.ids = found.map((r) => r.key).join(','); writeURL(); }   // a long file: the link carries the proteins drawn, not every line
     const howText = `${fmtInt(nFound)} name${nFound === 1 ? '' : 's'} found, by ${[...how].sort((a, b) => b[1] - a[1]).map(([h, n]) => `${h} ${fmtInt(n)}`).join(', ')}${twice ? ` (${fmtInt(twice)} named the same protein twice)` : ''}`;
     status('Reading the edge list…');
-    let E, K; try { [E, K] = await Promise.all([edges(sp, S.set), reported(sp)]); } catch (e) { status(esc(e.message)); return; }
-    KBN = K; EB = E;
+    let E, K, TP; try { [E, K, TP] = await Promise.all([edges(sp, S.set), reported(sp), S.set ? null : tested(sp)]); } catch (e) { status(esc(e.message)); return; }
+    KBN = K; EB = E; TPN = TP;
     if (stale(gen)) return;
     const c = CUT[S.cut], Q = new Set(found.map((r) => r.i)), keep = new Set(Q), grew = new Set(), expd = new Set();
     const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => e.best >= c);
@@ -3099,6 +3122,7 @@ async function viewNetwork(spId, q) {
     $('#nw-card').hidden = false;
     if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; return; }
     if (!K) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
+    if (TPN) for (const d of extra) { const k = fkey(d.source, d.target); if (!FOLD.has(k)) FOLD.set(k, TPN.has(d.source, d.target) ? { st: 'low', best: NaN } : { st: 'none' }); }   // the index says folded or not; the score comes on hover
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed);
   }
   function graph(nodes, links, extra = [], seed = null) {
@@ -3130,7 +3154,7 @@ async function viewNetwork(spId, q) {
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; });
     dash.on('mousemove', (ev, d) => { const [a, b] = ends(d), f = FOLD.get(fkey(a, b));
         showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${CUT[S.cut]}: ${esc(foldText(f))}<br>click for the pair's predictions`, ev.clientX, ev.clientY);
-        if (!f && !d.checking) { d.checking = true; checkFolded([[a, b]]).then(() => { d.checking = false; restyle(); }); } })
+        if ((!f || (f.st === 'low' && !Number.isFinite(f.best))) && !d.checking) { d.checking = true; if (f) FOLD.delete(fkey(a, b)); checkFolded([[a, b]]).then(() => { d.checking = false; restyle(); }); } })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}`; });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
