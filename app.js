@@ -2731,7 +2731,7 @@ async function viewVirus(spId, taxid) {
         <div class="ctl"><span>Cutoff</span><div class="seg" id="vn-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, shaded in gray by its iLIS (darker is higher), its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. Grouped by community, proteins predicted to bind each other more than the rest sit together, one color per group. Click a protein for its page, an edge for the pair.</p>
       <div class="net" id="vn-net"></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
-    <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl">Colors <select id="vm-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
+    <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">≥ 10% FPR</option><option value="5">≥ 5% FPR</option><option value="1">≥ 1% FPR</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
       <div id="vm-heat" style="width:100%"></div><div class="legend" id="vm-key"></div></div>
     <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="list each protein's pair with itself as well"><input type="checkbox" id="vp-homo"> Homodimers</label><input type="search" id="vp-find" placeholder="Filter pairs" aria-label="Filter pairs by protein" style="width:170px"><button class="btn" id="vp-csv" type="button">↓ CSV</button></div></div>
       <p class="legend-text">iLIS and ipTM are colored by the false-positive-rate band they pass, each by its own benchmarked cutoffs (every cutoff is on the About page).</p><div class="legend" style="margin:0 0 10px">
@@ -2816,7 +2816,7 @@ async function viewVirus(spId, taxid) {
       + (grouped && big.length ? big.slice(0, TAB10.length).map((c, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>community ${n + 1} (${fmtInt(csize.get(c))})</span>`).join('') + (big.length > TAB10.length ? `<span class="muted">+${big.length - TAB10.length} smaller communities in dark blue</span>` : '') : '')
       + `${homoKey(homo.size)}<span><i style="background:#C3CCD6;border-radius:50%"></i>no partner at this cutoff (${fmtInt(v.members.filter((i) => !deg.get(i)).length)})</span>`;
     svgExport($('#vn-x'), `atlas_virus_${v.taxid}_network`, () => $('svg', box));
-    vmatrix(nodes, P, grouped ? (d) => (big.includes(d.c) ? big.indexOf(d.c) : big.length) : () => 0, deg);
+    vmatrix(nodes, all, grouped ? (d) => (big.includes(d.c) ? big.indexOf(d.c) : big.length) : () => 0, deg);   // every pair of the virus, whatever the page's cutoff
   }
   // Every pair of the virus's proteins as a matrix (the diagonal: the protein with itself). The release folded every pair of a
   // virus (a few viruses miss some), so a cell is colored past the cutoff and gray below it; rows follow the communities.
@@ -2825,35 +2825,35 @@ async function viewVirus(spId, taxid) {
     const ord = [...nodes].sort((a, b) => (grp(a) - grp(b)) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || R(a.id).gene.localeCompare(R(b.id).gene));
     const names = ord.map((d) => lab(d.row) + (ord.filter((x) => lab(x.row) === lab(d.row)).length > 1 ? ` (${d.row.key})` : '')), M = new Map();
     for (const x of P) M.set(x.a < x.b ? x.a + ',' + x.b : x.b + ',' + x.a, x);
-    const zi = [], zg = [], tx = [];
-    for (let i = 0; i < n; i++) { const ri = [], rg = [], rt = [];
-      for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, x = M.get(a < b ? a + ',' + b : b + ',' + a);
-        ri.push(x ? x.best : null); rg.push(x ? null : 1);
-        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${x ? `iLIS ${x.best.toFixed(3)}${Number.isFinite(x.iptm) ? ` · ipTM ${x.iptm.toFixed(2)}` : ''}` : `below iLIS ${CUT[cut]}`}`); }
-      zi.push(ri); zg.push(rg); tx.push(rt); }
-    const nh = P.filter((x) => x.a === x.b).length;
-    $('#vm-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(P.length - nh)} pairs and ${fmtInt(nh)} homodimers past iLIS ${CUT[cut]} (${cut}% FPR)`;
-    $('#vm-key').innerHTML = `<span><i style="background:#D5DAE0"></i>below the cutoff (every pair of a virus was folded; a few viruses miss some)</span><span class="muted">diagonal: the protein with itself · scroll or drag a box to zoom · double-click to reset · click a colored cell for the pair</span>`;
+    const TP = await tested(sp), minV = FPRSHOW($('#vm-show').value);   // below 10% FPR: the index of every folded pair, with its score
+    const zi = [], tx = []; let past = 0, below = 0, miss = 0, homo = 0;
+    for (let i = 0; i < n; i++) { const ri = [], rt = [];
+      for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, x = M.get(a < b ? a + ',' + b : b + ',' + a), f = !x && TP ? TP.has(a, b) : !x ? null : true;
+        const v = x ? x.best : TP && f ? TP.score(a, b) : null;
+        ri.push(v != null && Number.isFinite(v) && v >= minV ? v : null);
+        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${x ? `iLIS ${x.best.toFixed(3)}${Number.isFinite(x.iptm) ? ` · ipTM ${x.iptm.toFixed(2)}` : ''}` : v != null ? `iLIS ≈${v.toFixed(2)}` : TP ? 'not folded in the release' : 'below 10% FPR'}`);
+        if (j >= i) { if (i === j && v != null && v >= CUT[10]) homo++; else if (i !== j) { if (v != null && v >= CUT[10]) past++; else if (v != null) below++; else miss++; } } }
+      zi.push(ri); tx.push(rt); }
+    $('#vm-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} pairs and ${fmtInt(homo)} homodimers at ≥ 10% FPR · ${fmtInt(below)} below it` + (miss ? ` · ${fmtInt(miss)} not folded in the release` : '');
+    $('#vm-key').innerHTML = `<span class="muted">every pair of the virus on one scale, whatever the network's cutoff; the diagonal is the protein with itself</span>${miss ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>not folded in the release</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let Pl; try { Pl = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     const shapes = []; ord.forEach((d, k) => { if (k && grp(d) !== grp(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     Pl.react(box, [
-      { type: 'heatmap', z: zg, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: [[0, '#D5DAE0'], [1, '#D5DAE0']], showscale: false, xgap: 1, ygap: 1, hoverongaps: false },
-      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS($('#vm-cs').value), zmin: CUT[10], zmax: 0.85,
-        colorbar: { title: { text: 'iLIS', side: 'right' }, thickness: 12, len: 0.6 }, xgap: 1, ygap: 1, hoverongaps: false }],
+      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0($('#vm-cs').value), zmin: 0, zmax: 0.85, colorbar: HEATBAR, xgap: 1, ygap: 1, hoverongaps: false }],
       { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
         xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain' },
         yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x' }, dragmode: 'zoom' },
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_virus_${v.taxid}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
     box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
-    box.on('plotly_click', (ev) => { const p = ev.points && ev.points.find((q) => q.curveNumber === 1); if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; if (e2.metaKey || e2.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
+    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; if (e2.metaKey || e2.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
     box.on('plotly_relayout', (ev) => { const xr = ev['xaxis.range[0]'] != null ? [ev['xaxis.range[0]'], ev['xaxis.range[1]']] : Array.isArray(ev['xaxis.range']) ? ev['xaxis.range'] : ev['xaxis.autorange'] ? [-0.5, n - 0.5] : null;
       if (!xr) return; const f = Math.max(6, Math.min(14, 520 / Math.max(1, Math.abs(xr[1] - xr[0])))); if (Math.abs(f - (box.__tick || tick)) < 0.5) return; box.__tick = f; Pl.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f }); });
   }
   $('#vn-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#vn-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); cut === 5 ? u.delete('cut') : u.set('cut', cut); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); shownPairs = 60; draw(); };
   $('#vn-comm').onchange = () => draw();
-  $('#vm-cs').onchange = () => draw();
+  $('#vm-cs').onchange = () => draw(); $('#vm-show').onchange = () => draw();
   $('#vn-top').onchange = (e) => { topk = +e.target.value; const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); topk ? u.set('top', topk) : u.delete('top'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); };
   $('#vp-homo').onchange = () => { shownPairs = 60; tables(); };
   $('#vp-find').oninput = () => { shownPairs = 60; tables(); };   // filter by either protein's gene, name or accession
@@ -3045,6 +3045,10 @@ const HEATCS = (k) => { const f = { Blues: (t) => d3.interpolateBlues(0.35 + 0.6
   Reds: (t) => d3.interpolateReds(0.35 + 0.65 * t), Grays: (t) => d3.interpolateGreys(0.45 + 0.55 * t), Cividis: (t) => d3.interpolateCividis(0.95 - 0.95 * t) }[k] || ((t) => d3.interpolateBlues(0.35 + 0.65 * t));
   return d3.range(0, 1.0001, 0.1).map((t) => [+t.toFixed(2), f(t)]); };
 // Plotly, loaded the first time a matrix is drawn (zoom, pan, every label on hover and when zoomed)
+// A matrix scale over every score: near white at 0, the chosen colors from the 10% FPR cutoff up to 0.85
+const HEATCS0 = (k) => { const s = HEATCS(k), c0 = CUT[10] / 0.85; return [[0, '#F4F6F8'], [c0 * 0.999, '#DDE2E7'], ...s.map(([t, col]) => [c0 + (1 - c0) * t, col])]; };
+const HEATBAR = { title: { text: 'best iLIS', side: 'right' }, thickness: 12, len: 0.7, tickvals: [0, 0.1, CUT[10], 0.4, 0.6, 0.8], ticktext: ['0', '0.1', `${CUT[10]} (10% FPR)`, '0.4', '0.6', '0.8'] };
+const FPRSHOW = (sel) => ({ all: 0, 10: CUT[10], 5: CUT[5], 1: CUT[1] }[sel] ?? 0);   // a matrix's own filter, apart from the network's cutoff
 const plotly = () => (window.Plotly ? Promise.resolve(window.Plotly) : (window.__plotlyP = window.__plotlyP || new Promise((ok, no) => {
   const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js'; s.onload = () => ok(window.Plotly); s.onerror = () => no(new Error('Plotly did not load')); document.head.appendChild(s); })));
 // The network builder's example tables: published IP-MS hit lists (the paper's own cutoff), under CC BY 4.0
@@ -3104,7 +3108,7 @@ async function viewNetwork(spId, q) {
       <div class="netkey"><div class="kbkey" id="nw-key"></div><div class="kbkey" id="nw-nkey"></div>
         <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div>
 <div id="nw-heat-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Pairs as a matrix</h3><div class="controls" style="margin:0"><span class="muted" id="nw-heat-note"></span>
-        <label class="ctl" title="every folded pair with its best iLIS (below the cutoff in grays), or only the pairs past the cutoff">Show <select id="nw-heat-show"><option value="all">every folded pair</option><option value="pos">pairs past the cutoff only</option></select></label>
+        <label class="ctl" title="the matrix shows every folded pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="nw-heat-show"><option value="all">every folded pair</option><option value="10">≥ 10% FPR</option><option value="5">≥ 5% FPR</option><option value="1">≥ 1% FPR</option></select></label>
         <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
         <div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
   $('#nw-add').value = S.add;
@@ -3254,26 +3258,25 @@ async function viewNetwork(spId, q) {
     const M = new Map(), key = (a, b) => (a < b ? a + ',' + b : b + ',' + a);
     for (const l of links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; M.set(key(a, b), l); }
     const TP = S.set ? null : TPN, cut = cutV(), names = ord.map((d) => d.row.gene);
-    const showAll = $('#nw-heat-show').value !== 'pos', E0 = EB && !S.set ? EB : null;   // below the cutoff: the edge list's score (0.223 and up), else the index's
-    const zi = [], zg = [], tx = []; let folded = 0, never = 0;
-    for (let i = 0; i < n; i++) { const ri = [], rg = [], rt = [];
-      for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, l = i === j ? null : M.get(key(a, b)), f = i !== j && !l && (!TP || TP.has(a, b));
-        let v = NaN; if (f) { const e = E0 && (E0.adj.get(a) || new Map()).get(b); v = e ? e.best : TP && TP.score ? TP.score(a, b) : NaN; }
-        ri.push(l ? l.best : null); rg.push(f && showAll ? (Number.isFinite(v) ? v : 0) : null);
-        const vs = Number.isFinite(v) ? `best iLIS ${v < CUT[10] ? '≈' + v.toFixed(2) : v.toFixed(3)}, below the cutoff` : TP ? 'folded, below the cutoff' : 'not past the cutoff';
-        rt.push(i === j ? names[i] : l ? `${names[i]} × ${names[j]}<br>iLIS ${l.best.toFixed(3)}${Number.isFinite(l.iptm) ? ` · ipTM ${l.iptm.toFixed(2)}` : ''}` : f ? `${names[i]} × ${names[j]}<br>${vs}` : `${names[i]} × ${names[j]}<br>never folded in these screens`);
-        if (j > i && !l) { if (f) folded++; else never++; } }
-      zi.push(ri); zg.push(rg); tx.push(rt); }
-    $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(links.length)} of ${fmtInt(n * (n - 1) / 2)} pairs past iLIS ${cut}` + (TP ? ` · ${fmtInt(folded)} folded below it · ${fmtInt(never)} never folded` : '');
-    $('#nw-heat-key').innerHTML = `${showAll ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, #F1F3F5, #8E98A3)"></i>${TP ? `folded, below the cutoff: best iLIS 0 to ${cut}` : 'below the cutoff or not folded'}</span>` : '<span class="muted">pairs below the cutoff not shown</span>'}${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a colored cell for the pair</span>`;
+    const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB && !S.set ? EB : null;   // the matrix: every folded pair, apart from the network's cutoff
+    const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
+      const l = M.get(key(a, b)); if (l) return { v: l.best, ip: l.iptm, exact: true };
+      if (TP) { if (!TP.has(a, b)) return null; const s = TP.score ? TP.score(a, b) : NaN; return { v: s, exact: false }; } return { v: NaN, exact: false }; };
+    const zi = [], tx = []; let past = 0, folded = 0, never = 0;
+    for (let i = 0; i < n; i++) { const ri = [], rt = [];
+      for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, q = pairOf(a, b), v = q && Number.isFinite(q.v) ? q.v : null;
+        ri.push(v != null && v >= minV ? v : null);
+        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${!q ? 'never folded in these screens' : v == null ? 'folded' : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
+        if (j > i) { if (!q) never++; else if (v != null && v >= CUT[10]) past++; else folded++; } }
+      zi.push(ri); tx.push(rt); }
+    $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pairs at ≥ 10% FPR · ${fmtInt(folded)} folded below it` + (TP ? ` · ${fmtInt(never)} never folded` : '');
+    $('#nw-heat-key').innerHTML = `<span class="muted">every folded pair on one scale, whatever the network's cutoff</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let P; try { P = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     const shapes = []; ord.forEach((d, k) => { if (k && gi(d) !== gi(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     const cs = $('#nw-heat-cs').value || 'Blues';
     P.react(box, [
-      { type: 'heatmap', z: zg, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: [[0, '#F1F3F5'], [1, '#8E98A3']], zmin: 0, zmax: cut, showscale: false, xgap: 1, ygap: 1, hoverongaps: false },   // below the cutoff: grays, darker toward it
-      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS(cs), zmin: CUT[10], zmax: 0.85,
-        colorbar: { title: { text: 'best iLIS', side: 'right' }, thickness: 12, len: 0.6 }, xgap: 1, ygap: 1, hoverongaps: false }],
+      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: HEATBAR, xgap: 1, ygap: 1, hoverongaps: false }],
       { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
         xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain' },
         yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x' }, dragmode: 'zoom' },
@@ -3283,7 +3286,7 @@ async function viewNetwork(spId, q) {
       const xr = ev['xaxis.range[0]'] != null ? [ev['xaxis.range[0]'], ev['xaxis.range[1]']] : Array.isArray(ev['xaxis.range']) ? ev['xaxis.range'] : ev['xaxis.autorange'] ? [-0.5, n - 0.5] : null;
       if (!xr) return; const shown = Math.max(1, Math.abs(xr[1] - xr[0])), f = Math.max(6, Math.min(14, 520 / shown));
       if (Math.abs(f - (box.__tick || tick)) < 0.5) return; box.__tick = f; P.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f }); });
-    box.on('plotly_click', (ev) => { const p = ev.points && ev.points.find((q) => q.curveNumber === 1); if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; if (e2.metaKey || e2.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
+    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; if (e2.metaKey || e2.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
   }
   function graph(nodes, links, extra = [], seed = null) {
     const box = $('#nw-net'); box.innerHTML = '<svg></svg>';

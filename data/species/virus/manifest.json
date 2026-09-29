@@ -33,11 +33,13 @@
   "pairsFpr10": 63132,
   "pairsFpr5": 38554,
   "pairsFpr1": 10152,
-  "pairsInSeveral": 0
+  "pairsInSeveral": 0,
+  "pairsTested": 1699288
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "viruses": "viruses.json"
+  "viruses": "viruses.json",
+  "tested": "tested.bin"
  }
 }
