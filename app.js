@@ -2794,8 +2794,12 @@ async function viewNetwork(spId, q) {
       <div class="netkey"><div class="kbkey" id="nw-key"></div>
         <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
   $('#nw-add').value = S.add;
-  const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; }; showK(); $('#nw-add').onchange = showK;   // the number also sets how many a click adds
-  $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); };
+  const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; }; showK();   // the number also sets how many a click adds
+  const redraw = () => { if (!$('#nw-card').hidden) draw(); };   // once a network is drawn, every option redraws it at once
+  $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); redraw(); };
+  $('#nw-add').onchange = () => { showK(); redraw(); };
+  $('#nw-set').onchange = redraw;
+  { let t = 0; $('#nw-k').oninput = () => { clearTimeout(t); t = setTimeout(redraw, 350); }; }
   let net = null, KBN = null, EB = null;   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
