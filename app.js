@@ -1531,6 +1531,8 @@ function resolveHow(sp, q, iso = false) {
 }
 // A pasted or loaded list: plain names (commas, spaces, new lines) or a table (tab or comma separated, two or more columns).
 // For a table, every column is scored by how many of its cells resolve; a column of numbers is never read as names.
+// column titles that are also gene names somewhere (prey, bait, target...): in the first row they are a header, not a protein
+const HEADWORD = /^(bait|baits|prey|preys|gene|genes|gene[ _]?(name|symbol|id)|protein|proteins|protein[ _]?[ab12]|gene[ _]?[ab12]|symbol|symbols|name|names|id|ids|uniprot|accession|fbgn|flybase|target|targets|source|query|partner|partners|hit|hits|interactor|interactors)$/i;
 const NUMCELL = /^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?%?$/i, BLANK = /^(na|nan|n\/a|null|none|-|—|–|\.)$/i;   // blanks a number column may hold
 function readIdTable(sp, text) {
   const lines = text.split(/\r?\n/).filter((l) => l.trim());
@@ -1547,15 +1549,16 @@ function readIdTable(sp, text) {
   const sample = cells.slice(0, 400), cols = [];
   for (let c = 0; c < nc; c++) {
     const v = sample.slice(1).map((r) => r[c] || '').filter((x) => x && !BLANK.test(x)), num = v.length && v.every((x) => NUMCELL.test(x));
-    const hits = num ? 0 : new Set(v.map((x) => { const h = resolveHow(sp, x, true); return h ? h.row.i : null; }).filter((i) => i != null)).size, headHit = !!(sample[0][c] && resolveHow(sp, sample[0][c], true));
-    cols.push({ c, name: sample[0][c] || `column ${c + 1}`, num, hits, n: v.length, headHit });
+    const res = num ? [] : v.map((x) => { const h = resolveHow(sp, x, true); return h ? h.row.i : null; }).filter((i) => i != null);
+    const hits = new Set(res).size, raw = res.length, headHit = !HEADWORD.test(sample[0][c] || '') && !!(sample[0][c] && resolveHow(sp, sample[0][c], true));
+    cols.push({ c, name: sample[0][c] || `column ${c + 1}`, num, hits, raw, n: v.length, headHit });
   }
   const header = cols.every((x) => !x.headHit || x.num);   // a first row whose cells are not names is a header
-  if (!header) cols.forEach((x) => { if (!x.num) { x.hits += x.headHit ? 1 : 0; x.n += sample[0][x.c] ? 1 : 0; } });   // no header: the first row is data too
+  if (!header) cols.forEach((x) => { if (!x.num) { x.hits += x.headHit ? 1 : 0; x.raw += x.headHit ? 1 : 0; x.n += sample[0][x.c] ? 1 : 0; } });   // no header: the first row is data too
   // hits count different proteins, so a column that repeats one word (a "prey" that is also an old gene name) cannot outscore the names
   // no header, no number column and every column mostly names: a list wrapped over lines, so every name is read;
   // and when no column holds a single name we know, a list too, so each unknown name is reported rather than taken for a header
-  if (!header && !cols.some((x) => x.num) && cols.every((x) => !x.n || x.hits >= 0.5 * x.n)) return null;
+  if (!header && !cols.some((x) => x.num) && cols.every((x) => !x.n || x.raw >= 0.5 * x.n)) return null;   // per cell: a pair list repeats names
   if (cols.every((x) => x.num || !x.hits) && !cols.some((x) => x.headHit)) return null;
   if (!header) cols.forEach((x) => { x.name = `column ${x.c + 1}`; });
   return { cols, header, rows: header ? cells.slice(1) : cells };
@@ -1571,9 +1574,11 @@ function readIdInput(sp, raw, colPref = null) {
       const rest = ls.slice(1, 200); if (rest.filter((x) => resolveHow(sp, x, true)).length >= 0.5 * rest.length) { body = ls.slice(1).join('\n'); note = `first line “${ls[0]}” read as a header`; } }
     return { toks: [...new Set(body.split(/[\s,;]+/).map((t) => t.trim()).filter(Boolean))], T: null, col: null, named: 0, data: [], note }; }
   const named = T.cols.filter((x) => !x.num), best = named.reduce((a, b) => (b.hits > a.hits ? b : a), named[0] || T.cols[0]);
-  const col = colPref == null || !T.cols[colPref] || T.cols[colPref].num ? (best ? best.c : 0) : colPref;
+  const strong = named.filter((x) => x.n && x.raw >= 0.5 * x.n);   // columns that are mostly names we know: a pair list (bait, prey), or a symbol beside an accession
+  const all = strong.length >= 2 && (colPref == null || colPref === 'all');
+  const col = all ? best.c : colPref == null || colPref === 'all' || !T.cols[colPref] || T.cols[colPref].num ? (best ? best.c : 0) : colPref;
   const nums = T.cols.filter((x) => x.num).map((x) => x.name);
-  const note = `a table of ${fmtInt(T.rows.length)} row${T.rows.length === 1 ? '' : 's'}, names read from “${T.cols[col].name}”${nums.length ? `; number column${nums.length === 1 ? '' : 's'} not read as names: ${nums.map((n) => `“${n}”`).join(', ')}` : ''}`;
+  const note = `a table of ${fmtInt(T.rows.length)} row${T.rows.length === 1 ? '' : 's'}, names read from ${all ? strong.map((x) => `“${x.name}”`).join(' and ') : `“${T.cols[col].name}”`}${nums.length ? `; number column${nums.length === 1 ? '' : 's'} not read as names: ${nums.map((n) => `“${n}”`).join(', ')}` : ''}`;
   // a row whose name is unknown is tried by its other ID columns (a UniProt accession beside an old symbol)
   const alts = T.cols.filter((x) => !x.num && x.c !== col && x.hits >= 3);
   const rowName = T.rows.map((r) => { const nm = (r[col] || '').trim(); if (!nm || resolveHow(sp, nm, true)) return nm;
@@ -1583,7 +1588,8 @@ function readIdInput(sp, raw, colPref = null) {
     T.rows.forEach((r, k) => { const nm = rowName[k], v = (r[x.c] || '').trim(), h = nm && v && !BLANK.test(v) && resolveHow(sp, nm, true); if (h && !vals.has(h.row.i)) vals.set(h.row.i, x.num ? parseFloat(v) : v); });
     const kinds = new Set(vals.values());
     if (x.num) data.push({ name: x.name, kind: 'num', vals }); else if (kinds.size >= 2 && kinds.size <= 12 && x.hits <= 0.2 * Math.max(1, x.n)) data.push({ name: x.name, kind: 'cat', vals }); }
-  return { toks: [...new Set(rowName.filter(Boolean))], T, col, named: named.length, data, note };
+  const toks = all ? [...new Set(T.rows.flatMap((r) => strong.map((x) => (r[x.c] || '').trim())).filter(Boolean))] : [...new Set(rowName.filter(Boolean))];
+  return { toks, T, col: all ? 'all' : col, strongN: strong.length, named: named.length, data, note };
 }
 // Residue lookup input: "983", "T983", "T983A", "p.T983A" or "Thr983Ala" → { n, wt, mut } (one-letter codes)
 const AA3 = { ALA: 'A', ARG: 'R', ASN: 'N', ASP: 'D', CYS: 'C', GLN: 'Q', GLU: 'E', GLY: 'G', HIS: 'H', ILE: 'I', LEU: 'L', LYS: 'K', MET: 'M', PHE: 'F', PRO: 'P', SER: 'S', THR: 'T', TRP: 'W', TYR: 'Y', VAL: 'V', TER: '*' };
@@ -3017,7 +3023,7 @@ async function viewNetwork(spId, q) {
   const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 5)),
     cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
-    exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [], ncol: '' };   // exp: proteins expanded by a click (keys), in the order clicked
+    mind: [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 0, exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [], ncol: '' };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
     <div class="dshead"><h1>Network of your proteins</h1><div class="pname"><a href="#/${sp.id}/nested">Nested network ↗</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
@@ -3027,6 +3033,7 @@ async function viewNetwork(spId, q) {
         <span class="ex-row" id="nw-ex"></span>
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
+        <label title="hide proteins with fewer predicted pairs than this in the drawing (repeated until every protein left has at least this many)">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein</span>
         <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}<button data-f="c" class="${S.cut === 'c' ? 'on' : ''}" title="an iLIS cutoff of your own">custom</button></div>
           <input type="number" id="nw-cutv" min="${CUT[10]}" max="1" step="0.01" value="${S.cutv}" style="width:70px${S.cut === 'c' ? '' : ';display:none'}" aria-label="custom iLIS cutoff" title="iLIS from ${CUT[10]} (the edge list holds the pairs past 10% FPR) to 1"></div>
@@ -3056,6 +3063,7 @@ async function viewNetwork(spId, q) {
     let u = 0; $('#nw-iptm').oninput = (e) => { clearTimeout(u); u = setTimeout(() => { const v = parseFloat(e.target.value); S.iptm = Number.isFinite(v) ? Math.min(1, Math.max(0, v)) : 0; redraw(); }, 400); }; }
   $('#nw-add').onchange = () => { showK(); redraw(); };
   $('#nw-set').onchange = redraw;
+  $('#nw-mind').onchange = () => { S.mind = +$('#nw-mind').value; redraw(); };
   { let t = 0; $('#nw-k').oninput = () => { clearTimeout(t); t = setTimeout(redraw, 350); }; }
   const cutV = () => (S.cut === 'c' ? S.cutv : CUT[S.cut]), cutLab = () => (S.cut === 'c' ? 'custom' : `${S.cut}% FPR`);   // the iLIS cutoff in force and its name
   const passE = (e) => e.best >= cutV() && (!S.iptm || (Number.isFinite(e.iptm) && e.iptm >= S.iptm));   // a pair past the cutoff and, when asked, the ipTM
@@ -3111,7 +3119,7 @@ async function viewNetwork(spId, q) {
   let tableNote = '';
   function readInput() {   // the names to draw, through readIdInput; the column picker and the note follow it
     const R = readIdInput(sp, $('#nw-ids').value, S.col), wrap = $('#nw-col-wrap'); S.col = R.col; S.data = R.data; tableNote = R.note;
-    if (R.T) { $('#nw-col').innerHTML = R.T.cols.map((x) => `<option value="${x.c}"${x.c === S.col ? ' selected' : ''}${x.num ? ' disabled' : ''}>${esc(x.name)}${x.num ? ' (numbers)' : ` (${fmtInt(x.hits)} found)`}</option>`).join(''); wrap.hidden = R.named < 2; }
+    if (R.T) { $('#nw-col').innerHTML = (R.strongN >= 2 ? `<option value="all"${S.col === 'all' ? ' selected' : ''}>all name columns</option>` : '') + R.T.cols.map((x) => `<option value="${x.c}"${x.c === S.col ? ' selected' : ''}${x.num ? ' disabled' : ''}>${esc(x.name)}${x.num ? ' (numbers)' : ` (${fmtInt(x.hits)} found)`}</option>`).join(''); wrap.hidden = R.named < 2; }
     else wrap.hidden = true;
     $('#nw-table').textContent = tableNote; return R.toks;
   }
@@ -3122,7 +3130,7 @@ async function viewNetwork(spId, q) {
     ns.innerHTML = `<option value="">your list and added partners</option>` + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
     $('#nw-ncol-wrap').style.display = (S.data || []).length ? '' : 'none';
     S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 5)); S.set = $('#nw-set').value;
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.set) qs.set('set', S.set);
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind) qs.set('mind', S.mind); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
@@ -3153,17 +3161,21 @@ async function viewNetwork(spId, q) {
     if (seed && !expNote && lastFresh && !lastAdded) expNote = ` · the network is at ${CAP} proteins; a click adds no more`;
     if (expNote && S.exp.length) { S.exp.pop(); writeURL(); }   // a click that added nothing is not kept in the link
     $('#nw-unexp').style.display = S.exp.length ? '' : 'none';
-    const links = [];
+    let links = [];
     for (const a of keep) for (const [b, e] of E.adj.get(a) || []) if (b > a && keep.has(b) && passE(e)) links.push({ source: a, target: b, ...e, pubs: K ? K.pubs(a, b) : 0, gen: K ? K.gen(a, b) : 0 });
+    let pruned = 0;   // Min. pairs: drop proteins with fewer pairs in the drawing, again until none is left below it (a k-core)
+    if (S.mind) for (let again = true; again;) { again = false; const dg = new Map(); for (const l of links) { dg.set(l.source, (dg.get(l.source) || 0) + 1); dg.set(l.target, (dg.get(l.target) || 0) + 1); }
+      for (const i of [...keep]) if ((dg.get(i) || 0) < S.mind) { keep.delete(i); pruned++; again = true; }
+      if (again) links = links.filter((l) => keep.has(l.source) && keep.has(l.target)); }
     const nRep = links.filter((l) => l.pubs || l.gen).length, extra = [];
     if (K && $('#nw-unpred').checked) { const ks = [...keep], has = new Set(links.map((l) => l.source * sp.rows.length + l.target));
       for (let x = 0; x < ks.length; x++) for (let y = x + 1; y < ks.length; y++) { const a = Math.min(ks[x], ks[y]), b = Math.max(ks[x], ks[y]), n = K.pubs(a, b), gg = K.gen(a, b);
         if ((n || gg) && !has.has(a * sp.rows.length + b)) extra.push({ source: a, target: b, pubs: n, gen: gg, unpred: true }); } }
-    const added = keep.size - Q.size, alone = [...Q].filter((i) => !links.some((l) => l.source === i || l.target === i)).map(gname);
-    status(`${fmtInt(Q.size)} of your ${sp.manifest.keyedBy ? 'genes' : 'proteins'}${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}`
+    const Qin = [...Q].filter((i) => keep.has(i)), added = keep.size - Qin.length, alone = Qin.filter((i) => !links.some((l) => l.source === i || l.target === i)).map(gname);
+    status(`${fmtInt(Qin.length)} of your ${sp.manifest.keyedBy ? 'genes' : 'proteins'}${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}`
       + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : ' · no BioGRID records for this species'}`
       + `${missing.length ? ` · not found: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.join(', '))}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
-      + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}</span>`);
+      + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}</span>`);
     $('#nw-card').hidden = false;
     if (!links.length) { $('#nw-net').innerHTML = '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; return; }
     if (!K) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
@@ -3256,7 +3268,7 @@ async function viewNetwork(spId, q) {
   examplePicker($('#nw-ex'), sp.id, (t) => { $('#nw-ids').value = t;
     S.col = null; S.exp = []; S.ncolUser = false; $('#nw-add').value = 'top'; $('#nw-k').value = 3; showK(); draw(); });   // an example opens with each hit's top partners, so the list grows outward
   $('#nw-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#nw-ids').value = await f.text(); S.col = null; S.exp = []; S.ncolUser = false; e.target.value = ''; draw(); };
-  $('#nw-col').onchange = (e) => { S.col = +e.target.value; S.exp = []; S.ncolUser = false; draw(); };
+  $('#nw-col').onchange = (e) => { S.col = e.target.value === 'all' ? 'all' : +e.target.value; S.exp = []; S.ncolUser = false; draw(); };
   $('#nw-ids').oninput = () => { S.col = null; S.ncolUser = false; };
   $('#nw-click').onclick = (e) => { const m = e.target.dataset.m; if (!m) return; S.click = m; [...$('#nw-click').children].forEach((b) => b.classList.toggle('on', b.dataset.m === m)); showK();
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); m === 'open' ? u.set('click', 'open') : u.delete('click'); history.replaceState(null, '', `${path}?${u}`); };
