@@ -3053,11 +3053,12 @@ async function viewNetwork(spId, q) {
         <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
       <p class="muted" style="margin:2px 0 12px">Your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} are large and dark, added partners small and light; a ring of dashes marks a protein you expanded. Click an edge for the interaction residues of the pair. Drag to move, scroll to zoom.</p>
       <div class="net" id="nw-net"></div>
-      <div id="nw-heat-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Pairs as a matrix</h3><div class="controls" style="margin:0"><span class="muted" id="nw-heat-note"></span>
-        <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Greys', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
-        <div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div>
+
       <div class="netkey"><div class="kbkey" id="nw-key"></div><div class="kbkey" id="nw-nkey"></div>
-        <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div></div>`;
+        <div><span>Edge width · ${sp.one ? 'iLIS' : 'average iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div>
+<div id="nw-heat-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Pairs as a matrix</h3><div class="controls" style="margin:0"><span class="muted" id="nw-heat-note"></span>
+        <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Greys', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
+        <div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
   $('#nw-add').value = S.add;
   const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; }; showK();   // the number also sets how many a click adds
   const redraw = () => { if (!$('#nw-card').hidden) draw(); };   // once a network is drawn, every option redraws it at once
