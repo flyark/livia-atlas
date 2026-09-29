@@ -3076,10 +3076,10 @@ async function viewNetwork(spId, q) {
   document.title = `Network · ${sp.reg.label} · LIVIA Atlas`;
   const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),
     ...TSs.filter(Boolean).flatMap((T) => T.list.map((x) => [x.id, x.short]))];
-  const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 5)),
+  const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 10)),
     cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
-    mind: [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 0, grp: q.get('grp') || '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [] };   // exp: proteins expanded by a click (keys), in the order clicked
+    mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, grp: q.get('grp') || '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [] };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
     <div class="dshead"><h1>Network of your proteins-of-interest</h1><div class="pname"><a href="#/${sp.id}/nested">Nested network ↗</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
@@ -3193,8 +3193,8 @@ async function viewNetwork(spId, q) {
     $('#nw-ncol-wrap').style.display = (S.data || []).length ? '' : 'none';
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
     $('#nw-grp').innerHTML = [['', 'none'], ['comm', 'communities (predicted pairs)'], ['q', 'proteins-of-interest · added partners'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join('');
-    S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 5)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind) qs.set('mind', S.mind); if (S.grp) qs.set('grp', S.grp); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
+    S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 10)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind !== 2) qs.set('mind', S.mind); if (S.grp) qs.set('grp', S.grp); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
@@ -3318,11 +3318,11 @@ async function viewNetwork(spId, q) {
     const hullG = g.append('g').attr('class', 'nw-hulls').style('pointer-events', 'none'), GCOL = (n) => TAB10[(catOrder ? catOrder.indexOf(groups[n]) : n) % TAB10.length];
     const hulls = hullG.selectAll('g').data(groups).join('g');
     hulls.append('path').attr('fill', (k, n) => GCOL(n)).attr('fill-opacity', 0.07).attr('stroke', (k, n) => GCOL(n)).attr('stroke-opacity', 0.45).attr('stroke-width', 1.5).attr('stroke-linejoin', 'round');
-    hulls.append('text').text((k) => `${gname2.get(k) || k} (${fmtInt(gsize.get(k))})`).attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', 12).attr('font-weight', 700).attr('fill', (k, n) => GCOL(n)).attr('text-anchor', 'middle');
     const drawHulls = () => { if (!groups.length) return; hulls.each(function (k) { const pts = []; for (const d of nodes) if (gk.get(d.id) === k && d.x != null) { const rr = r(d) + 14; for (let a = 0; a < 6; a++) pts.push([d.x + rr * Math.cos(a * Math.PI / 3), d.y + rr * Math.sin(a * Math.PI / 3)]); }
       const h = pts.length >= 3 ? d3.polygonHull(pts) : null; const el = d3.select(this);
       el.select('path').attr('d', h ? d3.line().curve(d3.curveCatmullRomClosed.alpha(0.6))(h) : null);
-      if (h) { const top = h.reduce((a, b) => (b[1] < a[1] ? b : a)); const cx = d3.mean(h, (p) => p[0]); el.select('text').attr('x', cx).attr('y', top[1] - 6); } }); };
+      const tx = hullTxt.filter((kk) => kk === k).attr('display', h ? null : 'none');
+      if (h) { const top = h.reduce((a, b) => (b[1] < a[1] ? b : a)); const cx = d3.mean(h, (p) => p[0]); tx.attr('x', cx).attr('y', top[1] - 6); } }); };
     const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && passE(e); }).map((d) => d.id));
@@ -3369,8 +3369,13 @@ async function viewNetwork(spId, q) {
         boxes.push(b); shown.add(d.id); }
       label.attr('display', (d) => (shown.has(d.id) ? null : 'none')).attr('font-size', (d) => (d.q ? 13 : 10.5) / z).attr('stroke-width', 3 / z).attr('dy', (d) => -r(d) - 5 / z); }
     node.filter((d) => d.q).raise();
+    // group names on the top layer, above edges and proteins, with a halo so a line under them doesn't cut the text
+    const hullLabG = g.append('g').attr('class', 'nw-hull-labels').style('pointer-events', 'none'), hullTxt = hullLabG.selectAll('text').data(groups).join('text')
+      .text((k) => `${gname2.get(k) || k} (${fmtInt(gsize.get(k))})`).attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', 12).attr('font-weight', 700)
+      .attr('fill', (k, n) => GCOL(n)).attr('text-anchor', 'middle').attr('stroke', '#fff').attr('stroke-width', 3).attr('stroke-linejoin', 'round').attr('paint-order', 'stroke');
     const recolor = () => { const nc = nodeColors(); node.select('circle.nfill').attr('fill', nc.fill); $('#nw-nkey').innerHTML = nc.key; }; recolor();
     const placeLabels = liftLabels(g, node);
+    hullLabG.raise();   // group names above the protein-name layer too
     node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partners · ⌘ or Ctrl-click opens its page in a new tab` : 'click for its page'}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, d) => { if (ev.defaultPrevented) return; hideTip();
         if (ev.metaKey || ev.ctrlKey) { window.open(`#/${sp.id}/${d.row.key}`, '_blank'); return; }   // a new tab, as for a link
@@ -3400,7 +3405,7 @@ async function viewNetwork(spId, q) {
   $('#nw-go').onclick = () => draw();
   $('#nw-filebtn').onclick = () => $('#nw-file').click();
   examplePicker($('#nw-ex'), sp.id, (t) => { $('#nw-ids').value = t;
-    S.col = null; S.exp = []; S.ncolUser = false; $('#nw-add').value = 'top'; $('#nw-k').value = 3; showK(); draw(); });   // an example opens with each hit's top partners, so the list grows outward
+    S.col = null; S.exp = []; S.ncolUser = false; $('#nw-add').value = 'top'; $('#nw-k').value = 10; showK(); draw(); });   // an example opens with each hit's top partners, so the list grows outward
   $('#nw-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#nw-ids').value = await f.text(); S.col = null; S.exp = []; S.ncolUser = false; e.target.value = ''; draw(); };
   $('#nw-col').onchange = (e) => { S.col = e.target.value === 'all' ? 'all' : +e.target.value; S.exp = []; S.ncolUser = false; draw(); };
   $('#nw-ids').oninput = () => { S.col = null; S.ncolUser = false; };
