@@ -299,6 +299,17 @@ function tested(sp) {
   })().catch(() => null);
   return sp.testedP;
 }
+// Paralog families (data/species/<sp>/paralogs.json, tools/paralog_index.py): row → family, for counting two paralogs of one
+// complex as one connection. Checked against the index it was built for. → { of(i), note } or null
+function paralogs(sp) {
+  const f = (sp.manifest.files || {}).paralogs; if (!f) return Promise.resolve(null);
+  if (!sp.paraP) sp.paraP = (async () => { const J = await getJSON(sp.base + f);
+    const dig = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(sp.rows.map((r) => r.key).join('\n')));
+    if ([...new Uint8Array(dig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 12) !== J.index) return null;
+    const m = new Map(); J.families.forEach((fam, n) => fam.forEach((i) => m.set(i, n)));
+    return { of: (i) => (m.has(i) ? 'f' + m.get(i) : 'r' + i), note: J.identity, n: J.families.length }; })().catch(() => null);
+  return sp.paraP;
+}
 const srcBadges = (sp, mask) => sp.dsIds.map((_, di) => (mask & (1 << di) ? `<span class="src" style="--c:${sp.dsColor[di]}">${esc(sp.dsShort[di])}</span>` : '')).join('');
 
 // edges.tsv of a species: every pair past 10% FPR in any screen — best iLIS over every model, mean iLIS, screens
@@ -2831,7 +2842,8 @@ function nestedRun(E, baits, cands, o) {   // o: { c: cutoff, f: its FPR in %, k
     const kReq = r === 1 ? 1 : o.k, m = acc.size, rest = cands.filter((i) => !acc.has(i)), rows = []; let untested = 0;
     for (const i of rest) { const mi = o.mt ? o.mt(i, acc) : r === 1 && o.m1 ? o.m1(i) : m; if (mi < kReq) { untested++; continue; }   // too few tested partners in the network to reach the rule: cannot be judged
       const sup = [...nb(i)].filter(([j, e]) => acc.has(j) && e.best >= o.c).map(([j]) => j), p0 = o.pc(i);
-      rows.push({ i, sup, n: sup.length, m: mi, p: binomTail(mi, p0, Math.max(1, sup.length)), e: binomTail(mi, p0, kReq) }); }
+      const nsup = o.fam ? new Set(sup.map(o.fam)).size : sup.length;   // paralogs counted once: one per family
+      rows.push({ i, sup, n: nsup, m: mi, p: binomTail(mi, p0, Math.max(1, nsup)), e: binomTail(mi, p0, kReq) }); }
     const q = bhQ(rows.map((x) => x.p)); rows.forEach((x, n) => { x.q = q[n]; });
     const pass = rows.filter((x) => x.n >= kReq && (!o.strict || x.q <= 0.05)), eFP = rows.reduce((s, x) => s + x.e, 0); cumFP += eFP;
     const hidden = r === 1 ? [] : rows.filter((x) => x.n >= 1 && x.n < kReq);
@@ -2847,7 +2859,7 @@ async function viewNested(spId, q) {
   const gen = ROUTE, sp = await species(spId); if (stale(gen)) return;
   document.title = `Nested network · ${sp.reg.label} · LIVIA Atlas`;
   const S = { baits: q.get('baits') || '', ids: q.get('ids') || '', cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 1, k: [1, 2, 3].includes(+q.get('k')) ? +q.get('k') : 2,
-    rounds: [1, 2, 3].includes(+q.get('rounds')) ? +q.get('rounds') : 3, strict: q.get('strict') === '1', hidden: false, col: null };
+    rounds: [1, 2, 3].includes(+q.get('rounds')) ? +q.get('rounds') : 3, strict: q.get('strict') === '1', para: q.get('para') === '1', hidden: false, col: null };
   const G = sp.manifest.keyedBy ? 'genes' : 'proteins';
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/network">Network</a> / <a href="${esc(location.hash)}">Nested</a></div>
     <div class="dshead"><h1>Nested network</h1><div class="pname">${esc(sp.reg.label)} · baits, then the candidates predicted to join them, round by round</div></div>
@@ -2860,6 +2872,7 @@ async function viewNested(spId, q) {
         <label title="from round 2, a candidate joins with at least this many connections into the network accepted so far">At least <select id="ns-k">${[1, 2, 3].map((k) => `<option value="${k}"${k === S.k ? ' selected' : ''}>${k}</option>`).join('')}</select> connections from round 2</label>
         <label>Rounds <select id="ns-rounds">${[1, 2, 3].map((k) => `<option value="${k}"${k === S.rounds ? ' selected' : ''}>up to ${k}</option>`).join('')}</select></label>
         <label title="accept only candidates whose chance p-value passes Benjamini–Hochberg q ≤ 0.05 within their round"><input type="checkbox" id="ns-strict"${S.strict ? ' checked' : ''}> Strict (BH q ≤ 0.05)</label>
+        <label id="ns-para-wrap" title="two paralogs in the network count as one connection (MMseqs2 families, 30% identity over half of both sequences)"><input type="checkbox" id="ns-para"${S.para ? ' checked' : ''}> Count paralogs once</label>
         <button class="btn" id="ns-go" type="button">Build the nested network</button></div>
       <p class="muted" id="ns-status" style="margin:10px 0 0"></p></div>
     <div class="card" id="ns-card" hidden><div class="card-head"><h2>Rounds</h2></div><div class="tbl-wrap"><table class="pt compact" id="ns-rounds-t"></table></div><p class="muted" id="ns-base" style="margin:8px 0 0"></p>
@@ -2873,7 +2886,8 @@ async function viewNested(spId, q) {
   const RC = ['#1A5276', '#E67E22', '#27AE60', '#8E44AD'], gname = (i) => sp.rows[i].gene;
   let res = null, last = null;
   $('#ns-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#ns-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); if (res) run(); };
-  ['#ns-k', '#ns-rounds', '#ns-strict'].forEach((s) => { $(s).onchange = () => { if (res) run(); }; });
+  if (!(sp.manifest.files || {}).paralogs) $('#ns-para-wrap').style.display = 'none';
+  ['#ns-k', '#ns-rounds', '#ns-strict', '#ns-para'].forEach((s) => { $(s).onchange = () => { if (res) run(); }; });
   $('#ns-hidden').onchange = () => { if (last) drawNet(last); };
   $('#ns-go').onclick = () => run();
   $('#ns-filebtn').onclick = () => $('#ns-file').click();
@@ -2884,9 +2898,9 @@ async function viewNested(spId, q) {
   async function run() {
     const Rb = readIdInput(sp, $('#ns-baits').value), Rc = readIdInput(sp, $('#ns-ids').value, S.col); S.col = Rc.col;
     const res1 = (toks) => { const ok = [], miss = []; for (const t of toks) { const h = resolveHow(sp, t, true); if (h) { if (!ok.includes(h.row.i)) ok.push(h.row.i); } else miss.push(t); } return { ok, miss }; };
-    const B = res1(Rb.toks), C = res1(Rc.toks); S.k = +$('#ns-k').value; S.rounds = +$('#ns-rounds').value; S.strict = $('#ns-strict').checked;
+    const B = res1(Rb.toks), C = res1(Rc.toks); S.k = +$('#ns-k').value; S.rounds = +$('#ns-rounds').value; S.strict = $('#ns-strict').checked; S.para = $('#ns-para').checked;
     const cands = C.ok.filter((i) => !B.ok.includes(i));
-    const qs = new URLSearchParams({ baits: B.ok.map((i) => sp.rows[i].key).join(','), cut: S.cut, k: S.k, rounds: S.rounds }); if (S.strict) qs.set('strict', '1'); if (Rc.toks.length <= 400) qs.set('ids', Rc.toks.join(','));
+    const qs = new URLSearchParams({ baits: B.ok.map((i) => sp.rows[i].key).join(','), cut: S.cut, k: S.k, rounds: S.rounds }); if (S.strict) qs.set('strict', '1'); if (S.para) qs.set('para', '1'); if (Rc.toks.length <= 400) qs.set('ids', Rc.toks.join(','));
     history.replaceState(null, '', `#/${sp.id}/nested?${qs}`);
     if (!B.ok.length) { status(`Name at least one bait the ${esc(sp.reg.label)} screens hold${B.miss.length ? ` (not found: ${esc(B.miss.join(', '))})` : ''}.`); return; }
     if (!cands.length) { status('Give the candidates to test against the baits.'); return; }
@@ -2894,13 +2908,15 @@ async function viewNested(spId, q) {
     if (stale(gen)) return;
     const c = CUT[S.cut], f = S.cut / 100, posKey = { 10: 'pos10', 5: 'pos5', 1: 'pos1' }[S.cut], A = 20;
     const pc = (i) => { const r = sp.rows[i]; return r.partners ? ((r[posKey] || 0) + A * f) / (r.partners + A) : f; };   // shrunk toward the benchmark rate
-    const TP = await tested(sp); if (stale(gen)) return;
-    const mt = TP ? (i, acc) => { let n = 0; for (const j of acc.keys()) if (TP.has(i, j)) n++; return n; } : null;
+    const [TP, PA] = await Promise.all([tested(sp), S.para ? paralogs(sp) : null]); if (stale(gen)) return;
+    const fam = PA ? PA.of : null;
+    const mt = TP ? (i, acc) => { if (!fam) { let n = 0; for (const j of acc.keys()) if (TP.has(i, j)) n++; return n; }
+      const s = new Set(); for (const j of acc.keys()) if (TP.has(i, j)) s.add(fam(j)); return s.size; } : null;   // families, when paralogs count once
     if (!TP) status('Reading the baits’ predictions (which candidates each was folded with)…');
     const tb = TP ? [] : await Promise.all(B.ok.map(async (b) => { try { const all = await merged(sp, sp.rows[b], '', true); return new Set(all.preds.map((x) => sp.byKey.get(x.partner)).filter(Boolean).map((x) => x.i)); } catch (e) { return null; } }));
     if (stale(gen)) return;
     const m1 = !TP && tb.every(Boolean) ? (i) => tb.filter((s) => s.has(i)).length : null;   // a bait whose predictions did not load: fall back to the network's size
-    const o = { c, f, k: S.k, rounds: S.rounds, strict: S.strict, pc, m1, mt };
+    const o = { c, f, k: S.k, rounds: S.rounds, strict: S.strict, pc, m1, mt, fam };
     res = nestedRun(E, B.ok, cands, o);
     // random networks of this size: the same candidates and rules, baits drawn at random from the proteins with predictions
     const pool = sp.rows.filter((r) => r.partners > 0 && !cands.includes(r.i)).map((r) => r.i), base = [];
@@ -2918,7 +2934,7 @@ async function viewNested(spId, q) {
       + (never ? ` ${fmtInt(never)} candidate${never === 1 ? '' : 's'} can never reach ${S.k} connections: fewer than ${S.k} partners folded in all.` : '')
       + (TP ? ` Every round counts only what was folded: m is how many of the network each candidate was folded with (the index of tested pairs), and a candidate folded with fewer than the rule needs cannot be judged.`
         : ` Round 1 counts only the candidates folded with a bait (from the baits’ own predictions); later rounds need the index of tested pairs, which this species does not have yet, so m there is the network’s size.`);
-    status(`${fmtInt(B.ok.length)} bait${B.ok.length === 1 ? '' : 's'} · ${fmtInt(cands.length)} candidates · ${fmtInt(nAcc)} accepted over ${res.rounds.filter((x) => x.accepted).length} round${res.rounds.filter((x) => x.accepted).length === 1 ? '' : 's'} at iLIS ${c} (${S.cut}% FPR)`
+    status(`${fmtInt(B.ok.length)} bait${B.ok.length === 1 ? '' : 's'} · ${fmtInt(cands.length)} candidates${fam ? ' · paralogs counted once' : ''} · ${fmtInt(nAcc)} accepted over ${res.rounds.filter((x) => x.accepted).length} round${res.rounds.filter((x) => x.accepted).length === 1 ? '' : 's'} at iLIS ${c} (${S.cut}% FPR)`
       + `${B.miss.length || C.miss.length ? ` · not found: ${esc([...B.miss, ...C.miss].slice(0, 30).join(', '))}` : ''}`);
     last = { E, K, B: B.ok, o }; drawNet(last); table();
   }
