@@ -3000,7 +3000,8 @@ async function viewNetwork(spId, q) {
   const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),
     ...TSs.filter(Boolean).flatMap((T) => T.list.map((x) => [x.id, x.short]))];
   const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 5)),
-    cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
+    cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
+    set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
     exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [], ncol: '' };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
@@ -3012,7 +3013,9 @@ async function viewNetwork(spId, q) {
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein</span>
-        <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div>
+        <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}<button data-f="c" class="${S.cut === 'c' ? 'on' : ''}" title="an iLIS cutoff of your own">custom</button></div>
+          <input type="number" id="nw-cutv" min="${CUT[10]}" max="1" step="0.01" value="${S.cutv}" style="width:70px${S.cut === 'c' ? '' : ';display:none'}" aria-label="custom iLIS cutoff" title="iLIS from ${CUT[10]} (the edge list holds the pairs past 10% FPR) to 1"></div>
+        <label title="also require this ipTM (best over models); blank or 0 for none">ipTM ≥ <input type="number" id="nw-iptm" min="0" max="1" step="0.05" value="${S.iptm || ''}" placeholder="any" style="width:64px"></label>
         <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
@@ -3020,9 +3023,9 @@ async function viewNetwork(spId, q) {
         <label class="ctl" id="nw-ncol-wrap" style="display:none" title="color your proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
         <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
         <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button>
-        <button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
+        <button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as your list">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
         <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div></div>
-      <div class="controls" style="margin:2px 0 6px"><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click still opens its page">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
+      <div class="controls" style="margin:2px 0 6px"><label class="ctl" title="find a protein in this network: it is centered and marked">Find <input type="search" id="nw-find" placeholder="a protein in the network" aria-label="Find a protein in the network" style="width:190px"></label><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click still opens its page">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
         <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
       <p class="muted" style="margin:2px 0 12px">Your ${sp.manifest.keyedBy ? 'genes' : 'proteins'} are large and dark, added partners small and light; a ring of dashes marks a protein you expanded. Click an edge for the interaction residues of the pair. Drag to move, scroll to zoom.</p>
       <div class="net" id="nw-net"></div>
@@ -3031,10 +3034,16 @@ async function viewNetwork(spId, q) {
   $('#nw-add').value = S.add;
   const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; }; showK();   // the number also sets how many a click adds
   const redraw = () => { if (!$('#nw-card').hidden) draw(); };   // once a network is drawn, every option redraws it at once
-  $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f)); redraw(); };
+  $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = f === 'c' ? 'c' : +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
+    $('#nw-cutv').style.display = S.cut === 'c' ? '' : 'none'; redraw(); };
+  { let t = 0; $('#nw-cutv').oninput = (e) => { clearTimeout(t); t = setTimeout(() => { const v = parseFloat(e.target.value); if (!Number.isFinite(v)) return;
+      S.cutv = Math.min(1, Math.max(CUT[10], v)); if (S.cutv !== v) e.target.value = S.cutv; redraw(); }, 400); };
+    let u = 0; $('#nw-iptm').oninput = (e) => { clearTimeout(u); u = setTimeout(() => { const v = parseFloat(e.target.value); S.iptm = Number.isFinite(v) ? Math.min(1, Math.max(0, v)) : 0; redraw(); }, 400); }; }
   $('#nw-add').onchange = () => { showK(); redraw(); };
   $('#nw-set').onchange = redraw;
   { let t = 0; $('#nw-k').oninput = () => { clearTimeout(t); t = setTimeout(redraw, 350); }; }
+  const cutV = () => (S.cut === 'c' ? S.cutv : CUT[S.cut]), cutLab = () => (S.cut === 'c' ? 'custom' : `${S.cut}% FPR`);   // the iLIS cutoff in force and its name
+  const passE = (e) => e.best >= cutV() && (!S.iptm || (Number.isFinite(e.iptm) && e.iptm >= S.iptm));   // a pair past the cutoff and, when asked, the ipTM
   let net = null, KBN = null, EB = null, TPN = null;   // TPN: the species' tested pairs (every screen), when the file is there   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
   // A reported pair that was not predicted past the cutoff is one of two things: folded and scored below the cutoff, or never
   // folded in these screens. edges.tsv holds only pairs past 10% FPR, so the answer comes from one end's own predictions
@@ -3078,7 +3087,7 @@ async function viewNetwork(spId, q) {
     return { fill: (d) => { const v = D.vals.get(d.id); return Number.isFinite(v) ? sc(tf(v)) : none; },
       key: `<div class="kbrow"><span class="muted">proteins by ${esc(lab)}:</span><span><i class="kb-grad" style="background:linear-gradient(90deg, ${stops})"></i>${f2(ends[0])} to ${zeros ? '≥ ' : ''}${f2(ends[1])}</span>${zeros ? '<span class="muted">values of 0 shown at the top, one step past the smallest nonzero value</span>' : ''}<span><i style="background:${none};border-radius:50%"></i>no value</span></div>` };
   }
-  const foldText = (f) => (!f ? 'not checked yet: hover again in a moment' : f.st === 'low' && !Number.isFinite(f.best) ? `folded, scored below the cutoff ${CUT[S.cut]}` : f.st === 'low' ? `folded: best iLIS ${f.best.toFixed(3)}${Number.isFinite(f.iptm) ? `, ipTM ${f.iptm.toFixed(2)}` : ''}, below the cutoff ${CUT[S.cut]}`
+  const foldText = (f) => (!f ? 'not checked yet: hover again in a moment' : f.st === 'low' && !Number.isFinite(f.best) ? `folded, scored below the cutoff ${cutV()}` : f.st === 'low' ? `folded: best iLIS ${f.best.toFixed(3)}${Number.isFinite(f.iptm) ? `, ipTM ${f.iptm.toFixed(2)}` : ''}, below the cutoff ${CUT[S.cut]}`
     : f.st === 'none' ? 'never folded in these screens: not tested, not a negative' : 'could not be checked (the prediction files did not load)');
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
@@ -3098,7 +3107,7 @@ async function viewNetwork(spId, q) {
     ns.innerHTML = `<option value="">your list and added partners</option>` + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
     $('#nw-ncol-wrap').style.display = (S.data || []).length ? '' : 'none';
     S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 5)); S.set = $('#nw-set').value;
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.set) qs.set('set', S.set);
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
@@ -3114,8 +3123,8 @@ async function viewNetwork(spId, q) {
     let E, K, TP; try { [E, K, TP] = await Promise.all([edges(sp, S.set), reported(sp), S.set ? null : tested(sp)]); } catch (e) { status(esc(e.message)); return; }
     KBN = K; EB = E; TPN = TP;
     if (stale(gen)) return;
-    const c = CUT[S.cut], Q = new Set(found.map((r) => r.i)), keep = new Set(Q), grew = new Set(), expd = new Set();
-    const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => e.best >= c);
+    const c = cutV(), Q = new Set(found.map((r) => r.i)), keep = new Set(Q), grew = new Set(), expd = new Set();
+    const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => passE(e));
     if (S.add === 'shared') { const n = new Map(); for (const i of Q) for (const [j] of nb(i)) if (!Q.has(j)) n.set(j, (n.get(j) || 0) + 1);
       [...n].filter(([, k]) => k >= 2).sort((a, b) => b[1] - a[1] || gname(a[0]).localeCompare(gname(b[0]))).slice(0, CAP - keep.size).forEach(([j]) => keep.add(j)); }
     else if (S.add === 'top') for (const i of Q) { for (const [j] of nb(i).sort((a, b) => b[1].best - a[1].best).slice(0, S.k)) { if (keep.size >= CAP) break; keep.add(j); } }
@@ -3130,13 +3139,13 @@ async function viewNetwork(spId, q) {
     if (expNote && S.exp.length) { S.exp.pop(); writeURL(); }   // a click that added nothing is not kept in the link
     $('#nw-unexp').style.display = S.exp.length ? '' : 'none';
     const links = [];
-    for (const a of keep) for (const [b, e] of E.adj.get(a) || []) if (b > a && keep.has(b) && e.best >= c) links.push({ source: a, target: b, ...e, pubs: K ? K.pubs(a, b) : 0, gen: K ? K.gen(a, b) : 0 });
+    for (const a of keep) for (const [b, e] of E.adj.get(a) || []) if (b > a && keep.has(b) && passE(e)) links.push({ source: a, target: b, ...e, pubs: K ? K.pubs(a, b) : 0, gen: K ? K.gen(a, b) : 0 });
     const nRep = links.filter((l) => l.pubs || l.gen).length, extra = [];
     if (K && $('#nw-unpred').checked) { const ks = [...keep], has = new Set(links.map((l) => l.source * sp.rows.length + l.target));
       for (let x = 0; x < ks.length; x++) for (let y = x + 1; y < ks.length; y++) { const a = Math.min(ks[x], ks[y]), b = Math.max(ks[x], ks[y]), n = K.pubs(a, b), gg = K.gen(a, b);
         if ((n || gg) && !has.has(a * sp.rows.length + b)) extra.push({ source: a, target: b, pubs: n, gen: gg, unpred: true }); } }
     const added = keep.size - Q.size, alone = [...Q].filter((i) => !links.some((l) => l.source === i || l.target === i)).map(gname);
-    status(`${fmtInt(Q.size)} of your ${sp.manifest.keyedBy ? 'genes' : 'proteins'}${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${S.cut}% FPR)`
+    status(`${fmtInt(Q.size)} of your ${sp.manifest.keyedBy ? 'genes' : 'proteins'}${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}`
       + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : ' · no BioGRID records for this species'}`
       + `${missing.length ? ` · not found: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.join(', '))}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
       + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}</span>`);
@@ -3158,7 +3167,7 @@ async function viewNetwork(spId, q) {
     const r = (d) => (d.q ? 10 : 4) + Math.min(8, Math.sqrt(deg.get(d.id) || 0) * 1.4);
     const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
-    const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && e.best >= CUT[S.cut]; }).map((d) => d.id));
+    const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && passE(e); }).map((d) => d.id));
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
       link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
@@ -3174,7 +3183,7 @@ async function viewNetwork(spId, q) {
     link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interaction residues`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; });
     dash.on('mousemove', (ev, d) => { const [a, b] = ends(d), f = FOLD.get(fkey(a, b));
-        showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${CUT[S.cut]}: ${esc(foldText(f))}<br>click for the pair's predictions`, ev.clientX, ev.clientY);
+        showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${cutV()}${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}: ${esc(foldText(f))}<br>click for the pair's predictions`, ev.clientX, ev.clientY);
         if ((!f || (f.st === 'low' && !Number.isFinite(f.best))) && !d.checking) { d.checking = true; if (f) FOLD.delete(fkey(a, b)); checkFolded([[a, b]]).then(() => { d.checking = false; restyle(); }); } })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}`; });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
@@ -3219,7 +3228,13 @@ async function viewNetwork(spId, q) {
       fitK = sc; svg.transition().duration(450).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - sc * (x0 + x1) / 2, H / 2 - sc * (y0 + y1) / 2).scale(sc)); });
     sim.on('end.labels', () => relabel(d3.zoomTransform(svg.node()).k));
     svgExport($('#nw-x'), `atlas_${sp.id}_network`, () => $('svg', box));
-    net = { link, nodes, links, extra, restyle, recolor };
+    const focus = (id) => { const d = nodes.find((n) => n.id === id); if (!d || d.x == null) return;   // center the protein, zoomed in, and mark it
+      const k = Math.max(d3.zoomTransform(svg.node()).k, fitK * 2.2, 1.2);
+      svg.transition().duration(550).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * d.x, H / 2 - k * d.y).scale(k));
+      g.selectAll('circle.nw-found').remove();
+      const ring = g.append('circle').attr('class', 'nw-found').attr('cx', d.x).attr('cy', d.y).attr('r', r(d) + 6).attr('fill', 'none').attr('stroke', '#E4572E').attr('stroke-width', 3).style('pointer-events', 'none');
+      ring.transition().delay(550).duration(900).attr('r', r(d) + 16).attr('stroke-opacity', 0.2).transition().duration(600).attr('r', r(d) + 6).attr('stroke-opacity', 1); };
+    net = { link, nodes, links, extra, restyle, recolor, focus };
   }
   $('#nw-go').onclick = () => draw();
   $('#nw-filebtn').onclick = () => $('#nw-file').click();
@@ -3238,6 +3253,18 @@ async function viewNetwork(spId, q) {
     delete b.dataset.busy; if (net && net.restyle) net.restyle(); };
   ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if (net && net.restyle) net.restyle(); }; }); $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
   $('#nw-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); draw(); } };
+  const drawnIds = () => (net ? [...net.nodes].sort((a, b) => (b.q - a.q) || a.row.gene.localeCompare(b.row.gene)).map((d) => d.row.gene) : []);   // yours first, then the added, by name
+  // Find: the proteins of the drawn network, with the iLIS of each one's strongest pair here; picking one centers it
+  partnerSuggest($('#nw-find'), () => { if (!net) return []; const best = new Map();
+    for (const l of net.links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; for (const v of [a, b]) best.set(v, Math.max(best.get(v) || 0, l.best)); }
+    return [...net.nodes].map((d) => ({ name: d.row.gene, best: best.get(d.id) || 0, dot: d.q ? '#1A5276' : '#AEBBCA', sty: '', tip: d.q ? 'your protein' : 'added partner' }))
+      .sort((a, b) => a.name.localeCompare(b.name)); });
+  $('#nw-find').onchange = () => { if (!net) return; const q = $('#nw-find').value.trim().toLowerCase(); const d = net.nodes.find((n) => n.row.gene.toLowerCase() === q) || net.nodes.find((n) => n.row.gene.toLowerCase().startsWith(q));
+    if (d) net.focus(d.id); };
+  $('#nw-copyids').onclick = async () => { const b = $('#nw-copyids'), t = drawnIds().join(', '); if (!t) return;
+    try { await navigator.clipboard.writeText(t); b.textContent = `Copied ${fmtInt(drawnIds().length)}`; } catch (e) { window.prompt('Copy these proteins:', t); } setTimeout(() => { b.textContent = 'Copy proteins'; }, 1500); };
+  $('#nw-useids').onclick = () => { const ids = drawnIds(); if (!ids.length) return; $('#nw-ids').value = ids.join(', '); S.col = null; S.exp = []; S.ncolUser = false;
+    $('#nw-add').value = 'none'; showK(); window.scrollTo({ top: $('#nw-ids').getBoundingClientRect().top + scrollY - 90, behavior: 'smooth' }); draw(); };
   $('#nw-link').onclick = async () => { const b = $('#nw-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
   const rowsOut = () => (net ? net.links.map((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return { a, b, l }; }) : []);
   $('#nw-csv').onclick = () => { const csvq = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
@@ -3260,7 +3287,7 @@ async function viewNetwork(spId, q) {
   $('#nw-livia').onclick = () => { if (!net) return; const w = window.open(`${LIVIA}network.html?post=1`, '_blank'); if (!w) return;
     const text = 'name,Symbol_1,Symbol_2,iLIS,ipTM\n' + rowsOut().map(({ a, b, l }) => `${gname(a)}___${gname(b)},${gname(a)},${gname(b)},${l.best.toFixed(3)},${Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : ''}`).join('\n') + '\n';   // the pair table LIVIA's network reads (names already split)
     const keys = {}; for (const n of net.nodes) { keys[n.row.gene] = n.row.key; keys[String(n.row.gene).toUpperCase()] = keys[String(n.row.gene).toUpperCase()] || n.row.key; }   // LIVIA's cLIP opens each protein's Atlas page
-    handTo(w, { type: 'livia-load', name: `atlas_${sp.id}_network.csv`, data: new Blob([text], { type: 'text/csv' }), ilis: CUT[S.cut], atlas: { url: location.href.split('#')[0], sp: sp.id, keys } }); };
+    handTo(w, { type: 'livia-load', name: `atlas_${sp.id}_network.csv`, data: new Blob([text], { type: 'text/csv' }), ilis: cutV(), atlas: { url: location.href.split('#')[0], sp: sp.id, keys } }); };
   if (S.ids) draw(); else $('#nw-ids').focus();
 }
 
