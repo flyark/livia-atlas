@@ -2785,6 +2785,7 @@ async function viewNetwork(spId, q) {
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
     <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw')}
         <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
+        <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button>
         <button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
         <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div></div>
       <div class="controls" style="margin:2px 0 6px"><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click still opens its page">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
@@ -2801,13 +2802,31 @@ async function viewNetwork(spId, q) {
   $('#nw-set').onchange = redraw;
   { let t = 0; $('#nw-k').oninput = () => { clearTimeout(t); t = setTimeout(redraw, 350); }; }
   let net = null, KBN = null, EB = null;   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
+  // A reported pair that was not predicted past the cutoff is one of two things: folded and scored below the cutoff, or never
+  // folded in these screens. edges.tsv holds only pairs past 10% FPR, so the answer comes from one end's own predictions
+  // (its bundle lists every partner it was folded with). FOLD: scope|a,b → { st: 'low', best, iptm } | { st: 'none' } | { st: 'err' }
+  const FOLD = new Map(), fkey = (a, b) => `${S.set}|${Math.min(a, b)},${Math.max(a, b)}`;
+  async function foldedWith(i) {   // → Map(partner row → best iLIS over every model, best ipTM), or null when the protein is in no screen of this scope
+    let all; try { all = await merged(sp, sp.rows[i], S.set); } catch (e) { if (/no predictions|No interaction data/i.test(e.message)) return null; throw e; }
+    const m = new Map(); for (const p of all.preds) { const r = sp.byKey.get(p.partner); if (!r) continue; const x = m.get(r.i);
+      if (!x || (p.iLIS || 0) > x.best) m.set(r.i, { best: p.iLIS || 0, iptm: Number.isFinite(p.ipTM) ? Math.max(p.ipTM, x ? x.iptm || 0 : 0) : x ? x.iptm : NaN }); }
+    return m; }
+  async function checkFolded(pairs, tick) {   // reads as few proteins as it can: each time the protein that ends the most unchecked pairs
+    let left = pairs.filter(([a, b]) => !FOLD.has(fkey(a, b))), n = 0;
+    while (left.length) { const cnt = new Map(); for (const [a, b] of left) for (const v of [a, b]) cnt.set(v, (cnt.get(v) || 0) + 1);
+      const v = [...cnt].sort((x, y) => y[1] - x[1])[0][0]; let m, bad = false; try { m = await foldedWith(v); } catch (e) { bad = true; }
+      for (const [a, b] of left.filter(([a, b]) => a === v || b === v)) { const o = a === v ? b : a;
+        FOLD.set(fkey(a, b), bad ? { st: 'err' } : m && m.has(o) ? { st: 'low', ...m.get(o) } : { st: 'none' }); }
+      left = left.filter(([a, b]) => a !== v && b !== v); if (tick) tick(++n, n + new Set(left.flat()).size); } }
+  const foldText = (f) => (!f ? 'not checked yet: hover again in a moment' : f.st === 'low' ? `folded: best iLIS ${f.best.toFixed(3)}${Number.isFinite(f.iptm) ? `, ipTM ${f.iptm.toFixed(2)}` : ''}, below the cutoff ${CUT[S.cut]}`
+    : f.st === 'none' ? 'never folded in these screens: not tested, not a negative' : 'could not be checked (the prediction files did not load)');
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const status = (t) => { $('#nw-status').innerHTML = t; };
   const gname = (i) => sp.rows[i].gene, screens = (m) => sp.dsShort.filter((_, di) => m & (1 << di)).join(' + ');
   let tableNote = '';
-  function readInput() {   // the names to draw: a plain list, or the chosen column of a table
-    const text = $('#nw-ids').value, T = readIdTable(sp, text), wrap = $('#nw-col-wrap'); tableNote = '';
+  function readInput() {   // the names to draw: a plain list, or the chosen column of a table; lines starting with # are notes
+    const text = $('#nw-ids').value.split(/\r?\n/).filter((l) => !/^\s*#/.test(l)).join('\n'), T = readIdTable(sp, text), wrap = $('#nw-col-wrap'); tableNote = '';
     if (!T) { wrap.hidden = true; let body = text; const ls = text.split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
       if (ls.length >= 3 && !/[\s,;]/.test(ls[0]) && !resolveHow(sp, ls[0], true)) {   // one column with a header line: the header is not a missing name
         const rest = ls.slice(1, 200); if (rest.filter((x) => resolveHow(sp, x, true)).length >= 0.5 * rest.length) { body = ls.slice(1).join('\n'); tableNote = `first line “${ls[0]}” read as a header`; } }
@@ -2884,16 +2903,23 @@ async function viewNetwork(spId, q) {
     const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.avg)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && e.best >= CUT[S.cut]; }).map((d) => d.id));
+    const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
       link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
-      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra) + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : ''); };
+      const fo = (d) => FOLD.get(fkey(...ends(d)));
+      dash.attr('stroke-dasharray', (d) => ((fo(d) || {}).st === 'none' ? '1.2 4.5' : '5 4')).attr('stroke-opacity', (d) => ((fo(d) || {}).st === 'none' ? 0.55 : 0.75));
+      const nf = (s) => shownExtra.filter((d) => (fo(d) || {}).st === s).length, nck = shownExtra.filter((d) => fo(d)).length;
+      const foldKey = shownExtra.length && nck ? `<div class="kbrow"><span class="muted">reported, not predicted (${fmtInt(shownExtra.length)}):</span><span><i class="kb-dash"></i>folded, scored below the cutoff (${fmtInt(nf('low'))})</span><span><i class="kb-dot"></i>never folded in these screens (${fmtInt(nf('none'))})</span>${nck < shownExtra.length ? `<span class="muted">not checked (${fmtInt(shownExtra.length - nck)})</span>` : ''}${nf('err') ? `<span class="muted">could not be checked (${fmtInt(nf('err'))})</span>` : ''}</div>` : '';
+      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra) + foldKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
+      const cb = $('#nw-check'); cb.style.display = shownExtra.length ? '' : 'none'; if (!cb.dataset.busy) cb.textContent = nck && nck === shownExtra.length ? 'Checked: which were folded' : 'Check which were folded'; };
     restyle();
-    const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
     link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)} · average ${d.avg.toFixed(3)}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interaction residues`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; });
-    dash.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${CUT[S.cut]}; click for the pair's predictions`, ev.clientX, ev.clientY); })
+    dash.on('mousemove', (ev, d) => { const [a, b] = ends(d), f = FOLD.get(fkey(a, b));
+        showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${CUT[S.cut]}: ${esc(foldText(f))}<br>click for the pair's predictions`, ev.clientX, ev.clientY);
+        if (!f && !d.checking) { d.checking = true; checkFolded([[a, b]]).then(() => { d.checking = false; restyle(); }); } })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d); location.hash = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}`; });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
@@ -2923,13 +2949,18 @@ async function viewNetwork(spId, q) {
   }
   $('#nw-go').onclick = () => draw();
   $('#nw-filebtn').onclick = () => $('#nw-file').click();
-  if ($('#nw-ex')) $('#nw-ex').onclick = async (e) => { e.preventDefault(); try { $('#nw-ids').value = await getText(`data/examples/network_${sp.id}.tsv`); } catch (err) { status(esc(err.message)); return; } S.col = null; S.exp = []; draw(); };
+  if ($('#nw-ex')) $('#nw-ex').onclick = async (e) => { e.preventDefault(); try { $('#nw-ids').value = await getText(`data/examples/network_${sp.id}.tsv`); } catch (err) { status(esc(err.message)); return; }
+    S.col = null; S.exp = []; $('#nw-add').value = 'top'; $('#nw-k').value = 3; showK(); draw(); };   // the example opens with each hit's top partners, so the list grows outward
   $('#nw-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#nw-ids').value = await f.text(); S.col = null; S.exp = []; e.target.value = ''; draw(); };
   $('#nw-col').onchange = (e) => { S.col = +e.target.value; S.exp = []; draw(); };
   $('#nw-ids').oninput = () => { S.col = null; };
   $('#nw-click').onclick = (e) => { const m = e.target.dataset.m; if (!m) return; S.click = m; [...$('#nw-click').children].forEach((b) => b.classList.toggle('on', b.dataset.m === m)); showK();
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); m === 'open' ? u.set('click', 'open') : u.delete('click'); history.replaceState(null, '', `${path}?${u}`); };
   $('#nw-unexp').onclick = () => { S.exp = []; draw(); };
+  $('#nw-check').onclick = async () => { if (!net || !net.extra.length) return; const b = $('#nw-check'); if (b.dataset.busy) return; b.dataset.busy = '1';
+    const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
+    b.textContent = 'Checking…'; await checkFolded(net.extra.map(e2), (n, of) => { b.textContent = `Checking ${n} of ${of} proteins…`; });
+    delete b.dataset.busy; if (net && net.restyle) net.restyle(); };
   ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if (net && net.restyle) net.restyle(); }; }); $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
   $('#nw-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); draw(); } };
   $('#nw-link').onclick = async () => { const b = $('#nw-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
@@ -2946,7 +2977,7 @@ async function viewNetwork(spId, q) {
     const nodesX = net.nodes.map((n) => `<node id="n${n.id}">${d('gene', n.row.gene)}${d('key', n.row.key)}${d('accession', n.row.acc || '')}${d('group', n.q ? 'query' : n.grew ? 'added by a click' : 'added partner')}${d('degree', deg.get(n.id) || 0)}</node>`);
     const ends = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
     const edgesX = [...rowsOut().map(({ a, b, l }) => `<edge source="n${a}" target="n${b}">${d('type', 'predicted')}${d('iLIS_best', +l.best.toFixed(3))}${d('iLIS_avg', +l.avg.toFixed(3))}${d('ipTM_best', Number.isFinite(l.iptm) ? +l.iptm.toFixed(2) : '')}${d('screens', screens(l.src))}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`),
-      ...net.extra.map((l) => { const [a, b] = ends(l); return `<edge source="n${a}" target="n${b}">${d('type', 'reported, not predicted')}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`; })];
+      ...net.extra.map((l) => { const [a, b] = ends(l); const f = FOLD.get(fkey(a, b)); return `<edge source="n${a}" target="n${b}">${d('type', `reported, not predicted${!f ? '' : f.st === 'low' ? '; folded, below the cutoff' : f.st === 'none' ? '; never folded in these screens' : ''}`)}${f && f.st === 'low' ? d('iLIS_best', +f.best.toFixed(3)) : ''}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`; })];
     const text = `<?xml version="1.0" encoding="UTF-8"?>\n<graphml xmlns="http://graphml.graphdrawing.org/xmlns">\n${keys.map(([id, f, t]) => `<key id="${id}" for="${f}" attr.name="${id}" attr.type="${t}"/>`).join('\n')}\n`
       + `<graph id="atlas_${sp.id}_network" edgedefault="undirected">\n${nodesX.join('\n')}\n${edgesX.join('\n')}\n</graph>\n</graphml>\n`;
     const u = URL.createObjectURL(new Blob([text], { type: 'application/xml' })), a = document.createElement('a'); a.href = u; a.download = `atlas_${sp.id}_network.graphml`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
