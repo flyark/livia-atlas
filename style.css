@@ -328,6 +328,8 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .screens { display: grid; gap: 10px; margin-top: 8px; }
 .screen { display: grid; grid-template-columns: 110px 1fr; gap: 12px; align-items: start; padding: 10px 12px; border: 1px solid var(--line-2); border-radius: 10px; background: #FBFCFD; }
 .screen .src { justify-self: start; }
+.screen.sub { margin-left: 24px; }
+@media (max-width: 480px) { .screen.sub { margin-left: 12px; } }
 @media (max-width: 480px) { .screen { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
 .dmenu { position: relative; }
 .dmenu > summary { list-style: none; }

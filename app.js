@@ -2664,7 +2664,9 @@ async function viewSpecies(spId) {
       <a class="btn" href="#/${sp.id}/network">Build a network →</a></div></div>
     <div class="card"><h2>Screens</h2><div class="screens">${sp.manifest.datasets.map((d, di) => `<div class="screen"><span class="src" style="--c:${sp.dsColor[di]}">${esc(d.short)}</span>
       <div><a href="#/datasets/${d.id}"><b>${esc(d.title)}</b></a><div class="muted">${fmtInt(d.counts.proteins)} proteins · ${fmtInt(d.counts.pairs)} pairs · ${d.counts.runs ? `${fmtInt(d.counts.runs)} predictions · ` : ''}${fmtInt(d.counts.predictions)} models</div>
-      <div class="cite">${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.citation)} ↗</a>` : esc(d.citation)}</div></div></div>`).join('')}</div>
+      <div class="cite">${d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.citation)} ↗</a>` : esc(d.citation)}</div></div></div>${((TSs[di] && TSs[di].list) || []).filter((s) => s.type === 'screen' && s.source && s.source.citation).map((s) => `<div class="screen sub"><span class="src" style="--c:${s.color}">${esc(s.short)}</span>
+      <div><a href="#/datasets/${d.id}/${s.id}"><b>${esc(s.title)}</b></a> <span class="muted">within ${esc(d.short)}</span><div class="muted">${fmtInt(s.counts.proteins)} proteins · ${fmtInt(s.counts.pairs)} pairs · ${fmtInt(s.counts.predictions)} models</div>
+      <div class="cite">${s.source.url ? `<a href="${esc(s.source.url)}" target="_blank" rel="noopener">${esc(s.source.citation)} ↗</a>` : esc(s.source.citation)}</div></div></div>`).join('')}`).join('')}</div>
       ${sp.dsIds.length > 1 ? `<p class="muted" style="margin:10px 0 0">${fmtInt(c.pairsInSeveral)} pairs were predicted in more than one screen; their pages keep every model with its source.</p>` : ''}</div>
     <div class="card"><h2>Most connected proteins <span class="muted">partners past the 10% FPR cutoff, any screen</span></h2>
       <div class="chips">${hubs.map((r) => `<a class="chip" href="#/${sp.id}/${r.key}">${esc(r.gene)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`).join('')}</div></div>
