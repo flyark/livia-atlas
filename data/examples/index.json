@@ -9,12 +9,21 @@
   "license": "CC BY 4.0"
  },
  {
-  "file": "network_fly_dcr2-ipms.tsv",
-  "species": "fly",
-  "what": "Dicer-2 IP-MS interactors (adult flies)",
-  "type": "IP-MS",
-  "cite": "Rousseau et al. 2025, PLoS Pathog",
-  "doi": "10.1371/journal.ppat.1013093",
+  "file": "network_human_tead3_apms.tsv",
+  "species": "human",
+  "what": "TEAD3 AP-MS interactors (HEK293)",
+  "type": "AP-MS",
+  "cite": "Calses et al. 2023, Mol Cell Proteomics",
+  "doi": "10.1016/j.mcpro.2023.100496",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_human_rbbp4_apms.tsv",
+  "species": "human",
+  "what": "RBBP4 AP-MS interactors (HEK293)",
+  "type": "AP-MS",
+  "cite": "Nabeel-Shah et al. 2021, Nucleic Acids Res",
+  "doi": "10.1093/nar/gkab413",
   "license": "CC BY 4.0"
  },
  {
@@ -88,6 +97,42 @@
   "cite": "HGNC gene groups (Seal et al. 2023, Nucleic Acids Res)",
   "doi": "10.1093/nar/gkac888",
   "license": "CC0 1.0"
+ },
+ {
+  "file": "network_fly_dcr2-ipms.tsv",
+  "species": "fly",
+  "what": "Dicer-2 IP-MS interactors (adult flies)",
+  "type": "IP-MS",
+  "cite": "Rousseau et al. 2025, PLoS Pathog",
+  "doi": "10.1371/journal.ppat.1013093",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_fly_mnb_apms.tsv",
+  "species": "fly",
+  "what": "Minibrain AP-MS interactors (embryo)",
+  "type": "AP-MS",
+  "cite": "Brown et al. 2024, G3",
+  "doi": "10.1093/g3journal/jkae219",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_fly_mkrn1_ipms.tsv",
+  "species": "fly",
+  "what": "Makorin 1 IP-MS interactors (S2R+ cells)",
+  "type": "IP-MS",
+  "cite": "Dold et al. 2020, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1008581",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_fly_noc1_ipms.tsv",
+  "species": "fly",
+  "what": "NOC1 IP-MS interactors (larvae)",
+  "type": "IP-MS",
+  "cite": "Manara et al. 2023, Front Cell Dev Biol",
+  "doi": "10.3389/fcell.2023.1293420",
+  "license": "CC BY 4.0"
  },
  {
   "file": "network_fly_drice-turboid.tsv",

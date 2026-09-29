@@ -1,0 +1,33 @@
+# Makorin 1 (Mkrn1) interactome: Myc-Mkrn1 vs Myc-GFP immunoprecipitation from Drosophila S2R+ cells, label-free LC-MS/MS, limma
+# Citation: Dold A, Han H, Liu N, Hildebrandt A, Brüggemann M, Rücklé C, Hänel H, Busch A, Beli P, Zarnack K, König J, Roignant JY, Lasko P. Makorin 1 controls embryonic patterning by alleviating Bruno1-mediated repression of oskar translation. PLoS Genet 16(1):e1008581 (2020). doi:10.1371/journal.pgen.1008581
+# Source: S1 Table (pgen.1008581.s014.xlsx), Sheet1; Europe PMC PMC7001992
+# Cutoff: limma log2 fold change >= 2 and FDR <= 0.05 (Myc-Mkrn1 vs Myc-GFP); 25 proteins pass incl. bait; all kept
+# License: This is an open access article distributed under the terms of the Creative Commons Attribution License , which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+# Columns: gene = current FlyBase symbol (via UniProt, first D. melanogaster accession); flybase_id = FBgn; uniprot = Protein IDs as given; name_in_table = Gene names as given; log2FC = limma log2 fold change; adj_p = limma adjusted P value
+# Note: the table lists "w" (white) as a significant prey; kept as published
+gene	flybase_id	uniprot	name_in_table	log2FC	adj_p	role
+Mkrn1	FBgn0029152	Q9VP20	Mkrn1	11.4851658963145	0.000296504177333964	bait
+w	FBgn0003996	P10090	w	6.02754778995653	0.00238953871070878	prey
+sqd	FBgn0263396	Q08473-2	sqd	5.46901022756176	0.0137157384893815	prey
+CG4612	FBgn0035016	Q9W158	CG4612	5.05641648839936	0.00074541628776856	prey
+CG15784	FBgn0029766	Q9W4C1	CG15784	4.79429284869546	0.0293106588762256	prey
+Larp4B	FBgn0035424	Q9I7T7-2	CG11505	4.17029248754543	0.0227302879250864	prey
+lost	FBgn0263594	Q9VN21	lost	3.9311807188881	0.0341682491142486	prey
+larp	FBgn0261618	A0A0B4K7Y7	larp	3.88183545903604	0.0227302879250864	prey
+AGO2	FBgn0087035	Q9VUQ5	AGO2	3.8033760267468	0.0164686752191334	prey
+qkr58E-1	FBgn0022986	Q9W255	qkr58E-1	3.79064030772929	0.0137157384893815	prey
+CG5477	FBgn0050122	A8E6M1	CG5477	3.77913134121907	0.0107345390220565	prey
+Imp	FBgn0285926	Q9VZ69	Imp	3.60762634661824	0.0285909688092932	prey
+mahe	FBgn0029979	Q9W3M7	mahe	3.20590718352757	0.0338261852335715	prey
+yps	FBgn0022959	Q95RE4	yps	3.10464998954373	0.00772440349020617	prey
+ena	FBgn0000578	Q8T4F7-1	ena	2.96209181907263	0.0227302879250864	prey
+pAbp	FBgn0265297	P21187	pAbp	2.69691249668241	0.00373061036493931	prey
+ERp60	FBgn0033663	Q3YMU0	ERp60	2.67273637843296	0.047139560805602	prey
+Pep	FBgn0004401	P41073	Pep	2.61276161525873	0.00183602169280532	prey
+BubR1	FBgn0263855	A1Z6I7	BubR1	2.58261350671316	0.047139560805602	prey
+CG1316	FBgn0035526	Q9VZE4	CG1316	2.56316058878006	0.0192339884127193	prey
+Hrb27C	FBgn0004838	E1JHA4	Hrb27C	2.32159119765754	0.00433335026843702	prey
+Fmr1	FBgn0028734	A0A126GUS7	Fmr1	2.16933609210347	0.0266898173615945	prey
+lark	FBgn0011640	Q94901	lark	2.1508871416012	0.0227302879250864	prey
+tho2	FBgn0031390	Q9VQ76	tho2	2.11510219382327	0.0380729921391686	prey
+Hrb98DE	FBgn0001215	A4V3J5	Hrb98DE	2.08103896232383	0.034058209754104	prey
