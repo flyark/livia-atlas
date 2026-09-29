@@ -1399,18 +1399,16 @@ const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : '
 const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.pubs > 0 || d.gen > 0);
 const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
 const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
-const edgeCtl = (id, kbOn = false, met = false) => `${met ? `<label class="ctl" title="the score that colors each predicted pair">Edge color<select id="${id}-met" aria-label="Edge color score"><option value="best">best iLIS</option>${met === 'one' ? '' : '<option value="avg">average iLIS</option>'}<option value="iptm">best ipTM</option></select></label>` : ''}<label class="ctl" title="${met ? 'shade each edge by the score chosen in Edge color: light at its 10% FPR cutoff (best iLIS 0.223, average iLIS 0.072, best ipTM 0.48), dark at the top' : 'shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above'}">${met ? 'Scale' : 'iLIS scale'}<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
+const edgeCtl = (id, kbOn = false) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above">iLIS scale<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
   <label class="ctl" title="color the pairs reported in BioGRID: physical red, genetic green, both purple"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
 function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a reported one
   const sc = $(`#${id}-shade`).value, shade = sc !== 'flat', kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
-  const met = ($(`#${id}-met`) || {}).value || 'best', lin = (lo, hi) => d3.scaleLinear().domain([lo, hi]).range(ESCALE[sc] || ESCALE.gray).clamp(true);
-  const ramp = met === 'iptm' ? lin(FPR.ipTM[0], 0.9) : met === 'avg' ? lin(FPR_AVG.iLIS[0], 0.85) : escale(sc);   // each score from its own 10% FPR cutoff
-  const val = (d) => (met === 'iptm' ? d.iptm : met === 'avg' ? d.avg : d.best);
-  return { shade, sc, kb, ev, hit, met, color: (d) => (hit(d) ? kbCol(d) : shade && Number.isFinite(val(d)) ? ramp(val(d)) : EFLAT) };
+  const ramp = escale(sc);
+  return { shade, sc, kb, ev, hit, color: (d) => (hit(d) ? kbCol(d) : shade ? ramp(d.best) : EFLAT) };
 }
 function edgeKey(st, K, links, extra = []) {   // the key under a network: the iLIS scale (or flat gray) and, when on, the reported pairs by type
   const [lo, hi] = ESCALE[st.sc] || ESCALE.gray;
-  const base = st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>${st.met === 'iptm' ? `best ipTM, ${FPR.ipTM[0].toFixed(2)} to 0.90+` : st.met === 'avg' ? `average iLIS, ${FPR_AVG.iLIS[0].toFixed(3)} to 0.85+` : 'best iLIS, 0.223 to 0.85+'}</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
+  const base = st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>best iLIS, 0.223 to 0.85+</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
   const on = links.filter((d) => kbHit(d, st.ev)), n = (f) => fmtInt(on.filter(f).length);
   const red = !K ? '<span class="muted">no BioGRID records for this species</span>'
     : st.kb ? `<span class="muted">reported in BioGRID ${esc(K.release)} (${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
@@ -1682,7 +1680,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
-        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true, sp.one ? 'one' : true)}</div></div>
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}</div></div>
       <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color. Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
@@ -2466,7 +2464,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   /* network: edge color = what BioGRID reports for the pair, edge width = average iLIS */
   const netBox = $('#net');
-  ['#net-shade', '#net-kb', '#net-ev', '#net-met'].forEach((q) => { $(q).onchange = () => { $('#net-ev').disabled = !$('#net-kb').checked; if (NET && NET.restyle) NET.restyle(); }; });
+  ['#net-shade', '#net-kb', '#net-ev'].forEach((q) => { $(q).onchange = () => { $('#net-ev').disabled = !$('#net-kb').checked; if (NET && NET.restyle) NET.restyle(); }; });
   { const w = d3.select('#net-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
       w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
@@ -2483,10 +2481,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     netBox.innerHTML = '<svg></svg>';
     if (!nb.length) { netBox.innerHTML = '<div class="empty">No partners past this cutoff.</div>'; return; }
     const nodes = [{ id: P.i, row: P, q: true }, ...nb.map(([j, e]) => ({ id: j, row: sp.rows[j], e }))];
-    const ipOf = (a, b) => { const e = (E.adj.get(a) || new Map()).get(b); return e ? e.iptm : NaN; };   // for Edge color: best ipTM
-    const links = nb.map(([j, e]) => ({ source: P.i, target: j, best: e.best, avg: e.avg, iptm: ipOf(P.i, j), q: true }));
+    const links = nb.map(([j, e]) => ({ source: P.i, target: j, best: e.best, avg: e.avg, q: true }));
     for (let a = 1; a < nodes.length; a++) { const mm = E.adj.get(nodes[a].id); if (!mm) continue;
-      for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg, iptm: ipOf(nodes[a].id, nodes[b].id) }); } }
+      for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg }); } }
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); l.pubs = K ? K.pubs(l.source, l.target) : 0; l.gen = K ? K.gen(l.source, l.target) : 0; });
     if (!K) { $('#net-kb').checked = false; $('#net-kb').disabled = true; $('#net-ev').disabled = true; }
     const svg = d3.select(netBox).select('svg'), W = netBox.clientWidth, H = netBox.clientHeight;
@@ -3019,7 +3016,7 @@ async function viewNetwork(spId, q) {
         <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
-    <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw', false, sp.one ? 'one' : true)}
+    <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw')}
         <label class="ctl" id="nw-ncol-wrap" style="display:none" title="color your proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
         <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
         <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button>
@@ -3058,6 +3055,11 @@ async function viewNetwork(spId, q) {
   // Proteins colored by a column of the reader's table: numbers on a scale (centered on 0 when the column has both signs;
   // a p-value column as -log10), or up to 12 categories. Proteins the table does not give a value for stay light gray.
   const PCOL = /(^|[^a-z])(p|q)[-_. ]?(val|value)|padj|p\.adj|adj[-_. ]?p|fdr|bfdr/i;
+  // The column a table's proteins are colored by until the reader picks one: a fold change or score, else a p-value, else the
+  // first number column, else a column of groups; none for a plain list
+  const FCOL = /fold|log2|lfc|\bfc\b|ratio|enrich|score|effect|\bbeta\b|\bz\b|abundance|intensity/i;
+  const autoColor = (D) => { const num = D.filter((x) => x.kind === 'num'), pick = num.find((x) => FCOL.test(x.name) && !PCOL.test(x.name)) || num.find((x) => PCOL.test(x.name)) || num[0] || D.find((x) => x.kind === 'cat');
+    return pick ? pick.name : ''; };
   function nodeColors() {
     const D = (S.data || []).find((x) => x.name === S.ncol), base = (d) => (d.q ? '#1A5276' : '#AEBBCA');
     if (!D) return { fill: base, key: '' };
@@ -3067,8 +3069,9 @@ async function viewNetwork(spId, q) {
         key: `<div class="kbrow"><span class="muted">proteins by ${esc(D.name)}:</span>${cats.map((v) => `<span><i style="background:${col(v)};border-radius:50%"></i>${esc(v)}</span>`).join('')}<span><i style="background:${none};border-radius:50%"></i>no value</span></div>` }; }
     const raw = [...D.vals.values()].filter(Number.isFinite), isP = PCOL.test(D.name) || (raw.length && raw.every((v) => v > 0 && v <= 1) && d3.median(raw) < 0.2);
     const pos = raw.filter((v) => v > 0), top = isP && pos.length ? Math.max(...pos.map((v) => -Math.log10(v))) + 1 : 1, zeros = isP && raw.some((v) => v <= 0);
-    const tf = (v) => (isP ? (v > 0 ? -Math.log10(v) : top) : v), vs = raw.map(tf).sort((a, b) => a - b), lo = d3.quantile(vs, 0.02), hi = d3.quantile(vs, 0.98);   // a p-value of 0 sits one step past the column's largest -log10
-    let sc, lab = isP ? `−log10 ${D.name}` : D.name, ends;
+    const isRatio = !isP && /fold|ratio|\bfc\b/i.test(D.name) && !/log/i.test(D.name) && pos.length === raw.length && raw.length && Math.max(...raw) / Math.min(...raw) > 10;   // a raw fold change spanning a decade or more: shown as log2
+    const tf = (v) => (isP ? (v > 0 ? -Math.log10(v) : top) : isRatio ? Math.log2(v) : v), vs = raw.map(tf).sort((a, b) => a - b), lo = d3.quantile(vs, 0.02), hi = d3.quantile(vs, 0.98);   // a p-value of 0 sits one step past the column's largest -log10
+    let sc, lab = isP ? `−log10 ${D.name}` : isRatio ? `log2 ${D.name}` : D.name, ends;
     if (lo < 0 && hi > 0) { const m = Math.max(-lo, hi); sc = d3.scaleDiverging((t) => d3.interpolateRdBu(1 - t)).domain([-m, 0, m]).clamp(true); ends = [-m, m]; }
     else { sc = d3.scaleSequential(d3.interpolateYlOrRd).domain([lo, hi === lo ? lo + 1 : hi]).clamp(true); ends = [lo, hi]; }
     const stops = d3.range(0, 1.01, 0.1).map((t) => sc(ends[0] + t * (ends[1] - ends[0]))).join(', '), f2 = (v) => (Math.abs(v) >= 100 ? v.toFixed(0) : v.toFixed(Math.abs(v) >= 10 ? 1 : 2));
@@ -3091,6 +3094,7 @@ async function viewNetwork(spId, q) {
   async function draw(seed = null) {   // seed: the positions and zoom to keep when a click adds partners
     const toks = readInput();
     const ns = $('#nw-ncol'); if (S.ncol && !(S.data || []).some((x) => x.name === S.ncol)) S.ncol = '';
+    if (!S.ncolUser) S.ncol = autoColor(S.data || []);   // chosen for the reader until they pick one
     ns.innerHTML = `<option value="">your list and added partners</option>` + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
     $('#nw-ncol-wrap').style.display = (S.data || []).length ? '' : 'none';
     S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 5)); S.set = $('#nw-set').value;
@@ -3203,19 +3207,19 @@ async function viewNetwork(spId, q) {
   $('#nw-go').onclick = () => draw();
   $('#nw-filebtn').onclick = () => $('#nw-file').click();
   if ($('#nw-ex')) $('#nw-ex').onclick = async (e) => { e.preventDefault(); try { $('#nw-ids').value = await getText(`data/examples/network_${sp.id}.tsv`); } catch (err) { status(esc(err.message)); return; }
-    S.col = null; S.exp = []; $('#nw-add').value = 'top'; $('#nw-k').value = 3; showK(); draw(); };   // the example opens with each hit's top partners, so the list grows outward
-  $('#nw-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#nw-ids').value = await f.text(); S.col = null; S.exp = []; e.target.value = ''; draw(); };
-  $('#nw-col').onchange = (e) => { S.col = +e.target.value; S.exp = []; draw(); };
-  $('#nw-ids').oninput = () => { S.col = null; };
+    S.col = null; S.exp = []; S.ncolUser = false; $('#nw-add').value = 'top'; $('#nw-k').value = 3; showK(); draw(); };   // the example opens with each hit's top partners, so the list grows outward
+  $('#nw-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#nw-ids').value = await f.text(); S.col = null; S.exp = []; S.ncolUser = false; e.target.value = ''; draw(); };
+  $('#nw-col').onchange = (e) => { S.col = +e.target.value; S.exp = []; S.ncolUser = false; draw(); };
+  $('#nw-ids').oninput = () => { S.col = null; S.ncolUser = false; };
   $('#nw-click').onclick = (e) => { const m = e.target.dataset.m; if (!m) return; S.click = m; [...$('#nw-click').children].forEach((b) => b.classList.toggle('on', b.dataset.m === m)); showK();
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); m === 'open' ? u.set('click', 'open') : u.delete('click'); history.replaceState(null, '', `${path}?${u}`); };
   $('#nw-unexp').onclick = () => { S.exp = []; draw(); };
-  $('#nw-ncol').onchange = (e) => { S.ncol = e.target.value; if (net && net.recolor) net.recolor(); };
+  $('#nw-ncol').onchange = (e) => { S.ncol = e.target.value; S.ncolUser = true; if (net && net.recolor) net.recolor(); };
   $('#nw-check').onclick = async () => { if (!net || !net.extra.length) return; const b = $('#nw-check'); if (b.dataset.busy) return; b.dataset.busy = '1';
     const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
     b.textContent = 'Checking…'; await checkFolded(net.extra.map(e2), (n, of) => { b.textContent = `Checking ${n} of ${of} proteins…`; });
     delete b.dataset.busy; if (net && net.restyle) net.restyle(); };
-  ['#nw-shade', '#nw-kb', '#nw-ev', '#nw-met'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if (net && net.restyle) net.restyle(); }; }); $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
+  ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if (net && net.restyle) net.restyle(); }; }); $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
   $('#nw-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); draw(); } };
   $('#nw-link').onclick = async () => { const b = $('#nw-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
   const rowsOut = () => (net ? net.links.map((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return { a, b, l }; }) : []);
