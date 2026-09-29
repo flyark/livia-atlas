@@ -2839,8 +2839,10 @@ async function viewVirus(spId, taxid) {
     $('#vm-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} pairs and ${fmtInt(homo)} homodimers at ≥ 10% FPR · ${fmtInt(below)} below it` + (miss ? ` · ${fmtInt(miss)} not folded in the release` : '');
     $('#vm-key').innerHTML = `<span class="muted">every pair of the virus on one scale, whatever the network's cutoff; the diagonal is the protein with itself</span>${miss ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>not folded in the release</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let Pl; try { Pl = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
+    if (!zi.some((r) => r.some((x) => x != null))) { Pl.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to every folded pair.</div>`; return; }
     const shapes = []; ord.forEach((d, k) => { if (k && grp(d) !== grp(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
+    if (box.querySelector(':scope > .empty')) box.innerHTML = '';
     Pl.react(box, [
       { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0($('#vm-cs').value), zmin: 0, zmax: 0.85, colorbar: HEATBAR, xgap: 1, ygap: 1, hoverongaps: false }],
       { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
@@ -3268,15 +3270,17 @@ async function viewNetwork(spId, q) {
     for (let i = 0; i < n; i++) { const ri = [], rt = [];
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, q = pairOf(a, b), v = q && Number.isFinite(q.v) ? q.v : null;
         ri.push(v != null && v >= minV ? v : null);
-        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${!q ? 'never folded in these screens' : v == null ? 'folded' : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
+        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${!q ? 'never folded in these screens' : v == null ? (S.set ? 'below 10% FPR or not folded in this screen' : 'folded') : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
         if (j > i) { if (!q) never++; else if (v != null && v >= CUT[10]) past++; else folded++; } }
       zi.push(ri); tx.push(rt); }
-    $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pairs at ≥ 10% FPR · ${fmtInt(folded)} folded below it` + (TP ? ` · ${fmtInt(never)} never folded` : '');
-    $('#nw-heat-key').innerHTML = `<span class="muted">every folded pair on one scale, whatever the network's cutoff</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
+    $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pairs at ≥ 10% FPR ` + (S.set ? 'in this screen' : ` · ${fmtInt(folded)} folded below it`) + (TP ? ` · ${fmtInt(never)} never folded` : '');
+    $('#nw-heat-key').innerHTML = `<span class="muted">${S.set ? "this screen's table lists only pairs at ≥ 10% FPR; the others are blank" : "every folded pair on one scale, whatever the network's cutoff"}</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let P; try { P = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
+    if (!zi.some((r) => r.some((x) => x != null))) { P.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to every folded pair.</div>`; return; }
     const shapes = []; ord.forEach((d, k) => { if (k && gi(d) !== gi(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     const cs = $('#nw-heat-cs').value || 'Blues';
+    if (box.querySelector(':scope > .empty')) box.innerHTML = '';
     P.react(box, [
       { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: HEATBAR, xgap: 1, ygap: 1, hoverongaps: false }],
       { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
