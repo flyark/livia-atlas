@@ -2894,7 +2894,7 @@ async function viewNested(spId, q) {
   $('#ns-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#ns-ids').value = await f.text(); e.target.value = ''; run(); };
   if ($('#ns-ex')) $('#ns-ex').onclick = async (e) => { e.preventDefault(); let t; try { t = await getText(`data/examples/network_${sp.id}.tsv`); } catch (err) { status(esc(err.message)); return; }
     const R = readIdInput(sp, t), bait = R.T ? R.T.rows.find((r) => (r.join('\t')).includes('\tbait')) : null;   // the example names its bait in the role column
-    const bn = bait ? bait[R.col] : ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); };
+    const bn = bait ? [bait[R.col], ...bait].find((x) => x && resolveHow(sp, String(x).trim(), true)) || '' : ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); };
   async function run() {
     const Rb = readIdInput(sp, $('#ns-baits').value), Rc = readIdInput(sp, $('#ns-ids').value, S.col); S.col = Rc.col;
     const res1 = (toks) => { const ok = [], miss = []; for (const t of toks) { const h = resolveHow(sp, t, true); if (h) { if (!ok.includes(h.row.i)) ok.push(h.row.i); } else miss.push(t); } return { ok, miss }; };
@@ -2975,13 +2975,13 @@ async function viewNested(spId, q) {
     return { i, grp: r === 0 ? 'bait' : x.hidden ? 'hidden' : `round ${r}`, r, x }; }); }
   function table() {
     $('#ns-tcard').hidden = false;
-    $('#ns-t').innerHTML = `<thead><tr><th>${G.slice(0, -1)}</th><th>group</th><th class="n">connections</th><th>supported by</th><th class="n">p</th><th class="n">q</th></tr></thead><tbody>`
-      + rowsOut().filter((d) => d.grp !== 'hidden').map((d) => `<tr><td class="g"><a href="#/${sp.id}/${sp.rows[d.i].key}">${esc(gname(d.i))}</a></td><td>${d.grp}</td><td class="n">${d.x ? fmtInt(d.x.n) : '–'}</td>
-        <td>${d.x ? esc(d.x.sup.map(gname).slice(0, 12).join(', ')) + (d.x.sup.length > 12 ? ` +${d.x.sup.length - 12}` : '') : '<span class="muted">–</span>'}</td><td class="n">${d.x ? d.x.p.toExponential(1) : '–'}</td><td class="n">${d.x ? d.x.q.toFixed(3) : '–'}</td></tr>`).join('') + '</tbody>';
+    $('#ns-t').innerHTML = `<thead><tr><th>${G.slice(0, -1)}</th><th>group</th><th class="n">connections</th><th>supported by</th><th class="n" title="the chance of at least that many connections by chance">p</th><th class="n">q</th><th class="n" title="the chance of meeting this round's rule by chance; summed over the round's candidates it gives the expected false positives">chance of the rule</th></tr></thead><tbody>`
+      + rowsOut().filter((d) => d.grp !== 'hidden').sort((a, b) => (a.r - b.r) || ((a.x ? a.x.p : 0) - (b.x ? b.x.p : 0))).map((d) => `<tr><td class="g"><a href="#/${sp.id}/${sp.rows[d.i].key}">${esc(gname(d.i))}</a></td><td>${d.grp}</td><td class="n">${d.x ? fmtInt(d.x.n) : '–'}</td>
+        <td>${d.x ? esc(d.x.sup.map(gname).slice(0, 12).join(', ')) + (d.x.sup.length > 12 ? ` +${d.x.sup.length - 12}` : '') : '<span class="muted">–</span>'}</td><td class="n">${d.x ? d.x.p.toExponential(1) : '–'}</td><td class="n">${d.x ? d.x.q.toFixed(3) : '–'}</td><td class="n">${d.x ? d.x.e.toExponential(1) : '–'}</td></tr>`).join('') + '</tbody>';
   }
   const dl = (text, name, type) => { const u = URL.createObjectURL(new Blob([text], { type })), a = document.createElement('a'); a.href = u; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   $('#ns-csv').onclick = () => { if (!res) return; const q2 = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
-    dl('protein,key,group,round,connections,supported_by,p,q\n' + rowsOut().map((d) => [q2(gname(d.i)), sp.rows[d.i].key, d.grp, d.r, d.x ? d.x.n : '', q2(d.x ? d.x.sup.map(gname).join(' ') : ''), d.x ? d.x.p : '', d.x ? d.x.q : ''].join(',')).join('\n') + '\n', `atlas_${sp.id}_nested.csv`, 'text/csv'); };
+    dl('protein,key,group,round,connections,supported_by,p,q,chance_of_rule\n' + rowsOut().map((d) => [q2(gname(d.i)), sp.rows[d.i].key, d.grp, d.r, d.x ? d.x.n : '', q2(d.x ? d.x.sup.map(gname).join(' ') : ''), d.x ? d.x.p : '', d.x ? d.x.q : '', d.x ? d.x.e : ''].join(',')).join('\n') + '\n', `atlas_${sp.id}_nested.csv`, 'text/csv'); };
   $('#ns-graphml').onclick = () => { if (!res || !last) return; const x = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     const R = rowsOut(), set = new Set(R.map((d) => d.i)), col = new Map(R.map((d) => [d.i, d.r])), E = last.E;
     const keys = [['gene', 'node', 'gene', 'string'], ['key', 'node', 'key', 'string'], ['group', 'node', 'group', 'string'], ['round', 'node', 'round', 'int'], ['conn', 'node', 'connections', 'int'],
