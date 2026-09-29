@@ -1369,17 +1369,18 @@ const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : '
 const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.pubs > 0 || d.gen > 0);
 const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
 const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
-const edgeCtl = (id, kbOn = false, met = false) => `${met ? `<label class="ctl" title="the score that colors each predicted pair">Edge color<select id="${id}-met" aria-label="Edge color score"><option value="best">best iLIS</option><option value="avg">average iLIS</option><option value="iptm">best ipTM</option></select></label>` : ''}<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above">${met ? 'Scale' : 'iLIS scale'}<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
+const edgeCtl = (id, kbOn = false, met = false) => `${met ? `<label class="ctl" title="the score that colors each predicted pair">Edge color<select id="${id}-met" aria-label="Edge color score"><option value="best">best iLIS</option><option value="avg">average iLIS</option><option value="iptm">best ipTM</option></select></label>` : ''}<label class="ctl" title="${met ? 'shade each edge by the score chosen in Edge color: light at its 10% FPR cutoff (ipTM: 0.30), dark at the top' : 'shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above'}">${met ? 'Scale' : 'iLIS scale'}<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
   <label class="ctl" title="color the pairs reported in BioGRID: physical red, genetic green, both purple"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
 function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a reported one
   const sc = $(`#${id}-shade`).value, shade = sc !== 'flat', kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
-  const met = ($(`#${id}-met`) || {}).value || 'best', ramp = met === 'iptm' ? d3.scaleLinear().domain([0.3, 0.9]).range(ESCALE[sc] || ESCALE.gray).clamp(true) : escale(sc);
+  const met = ($(`#${id}-met`) || {}).value || 'best', lin = (lo, hi) => d3.scaleLinear().domain([lo, hi]).range(ESCALE[sc] || ESCALE.gray).clamp(true);
+  const ramp = met === 'iptm' ? lin(0.3, 0.9) : met === 'avg' ? lin(0.072, 0.85) : escale(sc);   // average iLIS: its own 10% FPR cutoff (0.072)
   const val = (d) => (met === 'iptm' ? d.iptm : met === 'avg' ? d.avg : d.best);
   return { shade, sc, kb, ev, hit, met, color: (d) => (hit(d) ? kbCol(d) : shade && Number.isFinite(val(d)) ? ramp(val(d)) : EFLAT) };
 }
 function edgeKey(st, K, links, extra = []) {   // the key under a network: the iLIS scale (or flat gray) and, when on, the reported pairs by type
   const [lo, hi] = ESCALE[st.sc] || ESCALE.gray;
-  const base = st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>${st.met === 'iptm' ? 'best ipTM, 0.30 to 0.90+' : st.met === 'avg' ? 'average iLIS, 0.223 to 0.85+' : 'best iLIS, 0.223 to 0.85+'}</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
+  const base = st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>${st.met === 'iptm' ? 'best ipTM, 0.30 to 0.90+' : st.met === 'avg' ? 'average iLIS, 0.072 to 0.85+' : 'best iLIS, 0.223 to 0.85+'}</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
   const on = links.filter((d) => kbHit(d, st.ev)), n = (f) => fmtInt(on.filter(f).length);
   const red = !K ? '<span class="muted">no BioGRID records for this species</span>'
     : st.kb ? `<span class="muted">reported in BioGRID ${esc(K.release)} (${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
@@ -1502,7 +1503,7 @@ function resolveHow(sp, q, iso = false) {
 }
 // A pasted or loaded list: plain names (commas, spaces, new lines) or a table (tab or comma separated, two or more columns).
 // For a table, every column is scored by how many of its cells resolve; a column of numbers is never read as names.
-const NUMCELL = /^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?%?$/i;
+const NUMCELL = /^[-+]?(\d+\.?\d*|\.\d+)(e[-+]?\d+)?%?$/i, BLANK = /^(na|nan|n\/a|null|none|-|—|–|\.)$/i;   // blanks a number column may hold
 function readIdTable(sp, text) {
   const lines = text.split(/\r?\n/).filter((l) => l.trim());
   const delim = lines.length >= 2 && lines.every((l) => l.includes('\t')) ? '\t' : lines.length >= 2 && lines.filter((l) => l.includes(',')).length >= 0.8 * lines.length && lines.some((l) => /,\s*\S/.test(l) && /\S\s*,/.test(l)) && new Set(lines.map((l) => l.split(',').length)).size <= 2 ? ',' : null;
@@ -1517,7 +1518,7 @@ function readIdTable(sp, text) {
   if (nc < 2) return null;
   const sample = cells.slice(0, 400), cols = [];
   for (let c = 0; c < nc; c++) {
-    const v = sample.slice(1).map((r) => r[c] || '').filter(Boolean), num = v.length && v.every((x) => NUMCELL.test(x));
+    const v = sample.slice(1).map((r) => r[c] || '').filter((x) => x && !BLANK.test(x)), num = v.length && v.every((x) => NUMCELL.test(x));
     const hits = num ? 0 : v.filter((x) => resolveHow(sp, x, true)).length, headHit = !!(sample[0][c] && resolveHow(sp, sample[0][c], true));
     cols.push({ c, name: sample[0][c] || `column ${c + 1}`, num, hits, n: v.length, headHit });
   }
@@ -1626,7 +1627,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
-        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}</div></div>
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true, true)}</div></div>
       <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color. Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
@@ -2410,7 +2411,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   /* network: edge color = what BioGRID reports for the pair, edge width = average iLIS */
   const netBox = $('#net');
-  ['#net-shade', '#net-kb', '#net-ev'].forEach((q) => { $(q).onchange = () => { $('#net-ev').disabled = !$('#net-kb').checked; if (NET && NET.restyle) NET.restyle(); }; });
+  ['#net-shade', '#net-kb', '#net-ev', '#net-met'].forEach((q) => { $(q).onchange = () => { $('#net-ev').disabled = !$('#net-kb').checked; if (NET && NET.restyle) NET.restyle(); }; });
   { const w = d3.select('#net-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
       w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
@@ -2427,9 +2428,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     netBox.innerHTML = '<svg></svg>';
     if (!nb.length) { netBox.innerHTML = '<div class="empty">No partners past this cutoff.</div>'; return; }
     const nodes = [{ id: P.i, row: P, q: true }, ...nb.map(([j, e]) => ({ id: j, row: sp.rows[j], e }))];
-    const links = nb.map(([j, e]) => ({ source: P.i, target: j, best: e.best, avg: e.avg, q: true }));
+    const ipOf = (a, b) => { const e = (E.adj.get(a) || new Map()).get(b); return e ? e.iptm : NaN; };   // for Edge color: best ipTM
+    const links = nb.map(([j, e]) => ({ source: P.i, target: j, best: e.best, avg: e.avg, iptm: ipOf(P.i, j), q: true }));
     for (let a = 1; a < nodes.length; a++) { const mm = E.adj.get(nodes[a].id); if (!mm) continue;
-      for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg }); } }
+      for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg, iptm: ipOf(nodes[a].id, nodes[b].id) }); } }
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); l.pubs = K ? K.pubs(l.source, l.target) : 0; l.gen = K ? K.gen(l.source, l.target) : 0; });
     if (!K) { $('#net-kb').checked = false; $('#net-kb').disabled = true; $('#net-ev').disabled = true; }
     const svg = d3.select(netBox).select('svg'), W = netBox.clientWidth, H = netBox.clientHeight;
@@ -2810,7 +2812,7 @@ async function viewNetwork(spId, q) {
   // (its bundle lists every partner it was folded with). FOLD: scope|a,b → { st: 'low', best, iptm } | { st: 'none' } | { st: 'err' }
   const FOLD = new Map(), fkey = (a, b) => `${S.set}|${Math.min(a, b)},${Math.max(a, b)}`;
   async function foldedWith(i) {   // → Map(partner row → best iLIS over every model, best ipTM), or null when the protein is in no screen of this scope
-    let all; try { all = await merged(sp, sp.rows[i], S.set); } catch (e) { if (/no predictions|No interaction data/i.test(e.message)) return null; throw e; }
+    let all; try { all = await merged(sp, sp.rows[i], S.set, true); } catch (e) { if (/no predictions|No interaction data/i.test(e.message)) return null; throw e; }   // true: every isoform file too
     const m = new Map(); for (const p of all.preds) { const r = sp.byKey.get(p.partner); if (!r) continue; const x = m.get(r.i);
       if (!x || (p.iLIS || 0) > x.best) m.set(r.i, { best: p.iLIS || 0, iptm: Number.isFinite(p.ipTM) ? Math.max(p.ipTM, x ? x.iptm || 0 : 0) : x ? x.iptm : NaN }); }
     return m; }
@@ -2861,7 +2863,7 @@ async function viewNetwork(spId, q) {
     tableNote = `a table of ${fmtInt(T.rows.length)} row${T.rows.length === 1 ? '' : 's'}, names read from “${T.cols[S.col].name}”${nums.length ? `; number column${nums.length === 1 ? '' : 's'} not read as names: ${nums.map((n) => `“${n}”`).join(', ')}` : ''}`;
     // the other columns, to color the proteins by: numbers, or a few categories (a column of names is not one)
     S.data = []; for (const x of T.cols) { if (x.c === S.col) continue; const vals = new Map();
-      for (const r of T.rows) { const nm = (r[S.col] || '').trim(), v = (r[x.c] || '').trim(), h = nm && v && resolveHow(sp, nm, true); if (h && !vals.has(h.row.i)) vals.set(h.row.i, x.num ? parseFloat(v) : v); }
+      for (const r of T.rows) { const nm = (r[S.col] || '').trim(), v = (r[x.c] || '').trim(), h = nm && v && !BLANK.test(v) && resolveHow(sp, nm, true); if (h && !vals.has(h.row.i)) vals.set(h.row.i, x.num ? parseFloat(v) : v); }
       const kinds = new Set(vals.values());
       if (x.num) S.data.push({ name: x.name, kind: 'num', vals }); else if (kinds.size >= 2 && kinds.size <= 12 && x.hits <= 0.2 * Math.max(1, x.n)) S.data.push({ name: x.name, kind: 'cat', vals }); }
     $('#nw-table').textContent = tableNote;
