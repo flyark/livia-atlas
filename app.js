@@ -1423,7 +1423,7 @@ const homoKey = (n) => `<span><i style="background:#fff;border:3px solid ${HOMO_
 // Communities of a small network by Louvain (modularity, resolution 1): nodes 0..n-1, edges [u, v, weight]. Deterministic
 // (nodes visited in index order), so the same network always gives the same grouping. Returns a community index per node,
 // communities numbered by size, largest first; isolated nodes get their own.
-function louvain(n, edges) {
+function louvain(n, edges, gamma = 1) {
   let comm = [...Array(n).keys()], N = n, E = edges.map(([u, v, w]) => [u, v, w]);
   const member = [...Array(n).keys()].map((i) => [i]);   // original nodes in each current node
   for (let level = 0; level < 10; level++) {
@@ -1435,8 +1435,8 @@ function louvain(n, edges) {
     while (moved && rounds++ < 50) { moved = false;
       for (let i = 0; i < N; i++) {
         const ci = c[i], wt = new Map(); for (const [j, w] of adj[i]) if (j !== i) wt.set(c[j], (wt.get(c[j]) || 0) + w);
-        tot[ci] -= k[i]; let best = ci, gain = (wt.get(ci) || 0) - tot[ci] * k[i] / m2;
-        for (const [cj, w] of wt) { const g = w - tot[cj] * k[i] / m2; if (g > gain + 1e-12) { gain = g; best = cj; } }
+        tot[ci] -= k[i]; let best = ci, gain = (wt.get(ci) || 0) - gamma * tot[ci] * k[i] / m2;
+        for (const [cj, w] of wt) { const g = w - gamma * tot[cj] * k[i] / m2; if (g > gain + 1e-12) { gain = g; best = cj; } }
         tot[best] += k[i]; if (best !== ci) { c[i] = best; moved = true; any = true; } }
     }
     if (!any) break;
@@ -1447,6 +1447,52 @@ function louvain(n, edges) {
   }
   const order = member.map((m, i) => [i, m.length]).sort((a, b) => b[1] - a[1]), out = new Array(n);
   order.forEach(([i], rank) => { for (const x of member[i]) out[x] = rank; });
+  return out;
+}
+// Communities by Leiden (Traag, Waltman & van Eck 2019): Louvain's local moves, then a refinement that splits each community
+// into well-connected parts before the network is aggregated, so no community ends up internally disconnected. Modularity
+// with a resolution (higher: more, smaller communities). Deterministic like louvain(): nodes in index order, and the
+// refinement merges each node into its best well-connected part rather than a random one.
+function leiden(n, edges, gamma = 1) {
+  let N = n, E = edges.map(([u, v, w]) => [u, v, w]), P = [...Array(n).keys()];
+  const member = [...Array(n).keys()].map((i) => [i]);
+  for (let level = 0; level < 20; level++) {
+    const adj = [...Array(N)].map(() => new Map()), k = new Float64Array(N); let m2 = 0;
+    for (const [u, v, w] of E) { adj[u].set(v, (adj[u].get(v) || 0) + w); adj[v].set(u, (adj[v].get(u) || 0) + w); k[u] += w; k[v] += w; m2 += 2 * w; }
+    if (!m2) break;
+    const tot = new Map(); for (let i = 0; i < N; i++) tot.set(P[i], (tot.get(P[i]) || 0) + k[i]);
+    let moved = true, rounds = 0;
+    while (moved && rounds++ < 50) { moved = false;
+      for (let i = 0; i < N; i++) {
+        const ci = P[i], wt = new Map(); for (const [j, w] of adj[i]) if (j !== i) wt.set(P[j], (wt.get(P[j]) || 0) + w);
+        tot.set(ci, tot.get(ci) - k[i]); let best = ci, gain = (wt.get(ci) || 0) - gamma * tot.get(ci) * k[i] / m2;
+        for (const [cj, w] of wt) { const g = w - gamma * (tot.get(cj) || 0) * k[i] / m2; if (g > gain + 1e-12) { gain = g; best = cj; } }
+        tot.set(best, (tot.get(best) || 0) + k[i]); if (best !== ci) { P[i] = best; moved = true; } }
+    }
+    const comms = new Map(); for (let i = 0; i < N; i++) { if (!comms.has(P[i])) comms.set(P[i], []); comms.get(P[i]).push(i); }
+    if (comms.size === N) break;
+    const R = [...Array(N).keys()], rtot = Float64Array.from(k), rsize = new Array(N).fill(1), sOut = new Float64Array(N);
+    for (const nodes of comms.values()) {
+      const inC = new Set(nodes), totC = nodes.reduce((s, i) => s + k[i], 0), wC = new Map();
+      for (const i of nodes) { let s = 0; for (const [j, w] of adj[i]) if (j !== i && inC.has(j)) s += w; wC.set(i, s); sOut[i] = s; }
+      for (const v of nodes) {
+        if (rsize[R[v]] !== 1 || R[v] !== v) continue;
+        if (wC.get(v) < gamma * k[v] * (totC - k[v]) / m2) continue;
+        const wS = new Map(); for (const [j, w] of adj[v]) if (j !== v && inC.has(j)) wS.set(R[j], (wS.get(R[j]) || 0) + w);
+        let best = v, gain = 0;
+        for (const [s, w] of wS) { if (sOut[s] < gamma * rtot[s] * (totC - rtot[s]) / m2) continue; const g = w - gamma * k[v] * rtot[s] / m2; if (g > gain + 1e-12) { gain = g; best = s; } }
+        if (best !== v) { const w = wS.get(best); R[v] = best; rtot[best] += k[v]; rsize[best]++; rsize[v] = 0; sOut[best] = sOut[best] + wC.get(v) - 2 * w; }
+      }
+    }
+    const ids = new Map(); R.forEach((x) => { if (!ids.has(x)) ids.set(x, ids.size); });
+    if (ids.size === N) break;
+    const next = [...Array(ids.size)].map(() => []), nP = new Array(ids.size), pid = new Map();
+    for (let i = 0; i < N; i++) { const a = ids.get(R[i]); next[a].push(...member[i]); if (!pid.has(P[i])) pid.set(P[i], pid.size); nP[a] = pid.get(P[i]); }
+    const agg = new Map(); for (const [u, v, w] of E) { const a = ids.get(R[u]), b = ids.get(R[v]), key = a < b ? a * ids.size + b : b * ids.size + a; agg.set(key, (agg.get(key) || 0) + w); }
+    E = [...agg].map(([key, w]) => [Math.floor(key / ids.size), key % ids.size, w]); N = ids.size; member.length = 0; member.push(...next); P = nP;
+  }
+  const groups = new Map(); for (let i = 0; i < N; i++) { if (!groups.has(P[i])) groups.set(P[i], []); groups.get(P[i]).push(...member[i]); }
+  const out = new Array(n); [...groups.values()].sort((a, b) => b.length - a.length).forEach((g, rank) => { for (const x of g) out[x] = rank; });
   return out;
 }
 // A network's labels in one layer drawn after every node, so no node covers a label; the query's label last. Returns
@@ -3077,7 +3123,7 @@ async function viewNetwork(spId, q) {
   const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),
     ...TSs.filter(Boolean).flatMap((T) => T.list.map((x) => [x.id, x.short]))];
   const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 10)),
-    cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
+    cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
     mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, grp: q.get('grp') || '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [] };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
@@ -3089,22 +3135,24 @@ async function viewNetwork(spId, q) {
         <span class="ex-row" id="nw-ex"></span>
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
-        <label title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label>
-        <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein <button type="button" class="btn" id="nw-kscan" title="how deep each protein’s ranked partners stay shared with another protein-of-interest, compared with random lists; exploratory">Suggest</button><span class="muted" id="nw-khint" style="margin-left:6px"></span></span>
+        <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein <button type="button" class="btn" id="nw-kscan" title="how deep each protein’s ranked partners stay shared with another protein-of-interest, compared with random lists; exploratory">Suggest <span class="tag-alpha">alpha</span></button></span>
         <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}<button data-f="c" class="${S.cut === 'c' ? 'on' : ''}" title="an iLIS cutoff of your own">custom</button></div>
           <input type="number" id="nw-cutv" min="${CUT[10]}" max="1" step="0.01" value="${S.cutv}" style="width:70px${S.cut === 'c' ? '' : ';display:none'}" aria-label="custom iLIS cutoff" title="iLIS from ${CUT[10]} (the edge list holds the pairs past 10% FPR) to 1"></div>
         <label title="also require this ipTM (best over models); blank or 0 for none">ipTM ≥ <input type="number" id="nw-iptm" min="0" max="1" step="0.05" value="${S.iptm || ''}" placeholder="any" style="width:64px"></label>
         <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
+      <p class="muted khint" id="nw-khint"></p>
       <div class="kscan" id="nw-kscan-out" hidden></div>
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
     <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw')}
         <label class="ctl" id="nw-ncol-wrap" style="display:none" title="color the proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
         <label class="ctl" title="lay the network out in groups, each in its own area with an outline">Group by<select id="nw-grp"></select></label>
+        <label class="ctl" id="nw-res-wrap" hidden title="community resolution: higher gives more, smaller communities; 1 is standard modularity">Resolution <input type="number" id="nw-res" min="0.1" max="5" step="0.1" value="${S.res}" style="width:64px"></label>
+        <label class="ctl" title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label>
         <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
         <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button>
-        <button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
-        <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div></div>
+        </div></div><div class="controls" style="margin:8px 0 0"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
+        <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div>
       <div class="controls" style="margin:2px 0 6px"><label class="ctl" title="find a protein in this network: it is centered and marked">Find <input type="search" id="nw-find" placeholder="a protein in the network" aria-label="Find a protein in the network" style="width:190px"></label><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click opens its page in a new tab">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
         <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
       <p class="muted" style="margin:2px 0 12px">Proteins-of-interest are large and dark, added partners small and light; a ring of dashes marks a protein you expanded. Click an edge for the interaction residues of the pair. Drag to move, scroll to zoom.</p>
@@ -3118,6 +3166,7 @@ async function viewNetwork(spId, q) {
         <div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
   $('#nw-add').value = S.add;
   const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; $('#nw-kscan').hidden = $('#nw-add').value !== 'top'; if ($('#nw-add').value !== 'top') $('#nw-kscan-out').hidden = true; }; showK();   // the number also sets how many a click adds
+  const showRes = () => { $('#nw-res-wrap').hidden = !['comm', 'leiden'].includes(S.grp); };   // the resolution box, only for communities
   const redraw = () => { if (!$('#nw-card').hidden) draw(); };   // once a network is drawn, every option redraws it at once
   // Suggest a number of partners per protein (exploratory). For ranks 1-2, 3-5, 6-10 ... 51-100: the share of each protein's
   // partner at that rank that is itself a protein-of-interest or has a predicted pair with another one, against 100 random
@@ -3163,9 +3212,9 @@ async function viewNetwork(spId, q) {
       + `<text x="${(L + W) / 2}" y="${H - 4}" text-anchor="middle" font-size="10" fill="var(--ink-3)">partner rank</text><text x="10" y="${(T + H - B) / 2}" text-anchor="middle" font-size="10" fill="var(--ink-3)" transform="rotate(-90 10 ${(T + H - B) / 2})">shared</text></svg>`;
     const kb = (k) => `<button type="button" class="btn" data-k="${k}">${k} per protein</button>`;
     out.innerHTML = (depth
-      ? `<p>Each protein’s partners stay shared with another protein-of-interest more often than in random lists through rank <b>${depth}</b>. Suggested: ${kb(kS)} <span class="muted">(${fmtInt(size[kS - 1])} proteins drawn)</span>${kC > kS ? ` · up to ${kb(kC)} <span class="muted">within rank ${depth} and under the ${CAP}-protein cap (${fmtInt(size[kC - 1])})</span>` : ''}</p>`
+      ? `<p>Down to each protein’s <b>${depth}</b> best partners, the partners also pair with other proteins-of-interest more often than in random lists. Suggested: ${kb(kS)} <span class="muted">(${fmtInt(size[kS - 1])} proteins drawn)</span>${kC > kS ? ` · up to ${kb(kC)} <span class="muted">within rank ${depth} and under the ${CAP}-protein cap (${fmtInt(size[kC - 1])})</span>` : ''}</p>`
       : `<p>At no rank are partners shared with another protein-of-interest more often than in random lists, so added partners would mostly be unrelated to the rest. No suggestion.${Q.size < 20 ? ` With ${fmtInt(Q.size)} proteins-of-interest only strong sharing can show.` : ''}</p>`)
-      + `<div class="kscan-body">` + svg + `<p class="muted" style="margin:0"><span style="color:var(--navy)">●</span> these proteins-of-interest, filled while above random · dashed line and band: 100 random lists (median, 5th–95th percentile) of proteins with as many partners past the cutoff, the same for every run of this list at this cutoff. Shared: the partner is itself a protein-of-interest or has a predicted pair with another one. Exploratory: k is chosen from these data, not tested. Proteins drawn are counted before Min. pairs.${never != null && never > 0.75 ? ` ${Math.round(100 * never)}% of pairs among these proteins were never folded, so sharing is undercounted.` : ''}</p></div>`;
+      + `<div class="kscan-body">` + svg + `<p class="muted" style="margin:0"><b>How to read it.</b> Along the bottom are each protein’s partners in order, best first. The line shows how often those partners also pair with another protein-of-interest; the gray band shows the same for 100 random lists of proteins with as many partners. A filled dot means clearly more than random. The suggestion is the most partners per protein within that range that still draws about 250 proteins or fewer. It is a guide chosen from these data, not a statistical test.${never != null && never > 0.75 ? ` ${Math.round(100 * never)}% of pairs among these proteins were never predicted, so the real sharing may be higher.` : ''}</p></div>`;
     out.querySelectorAll('button[data-k]').forEach((b) => (b.onclick = () => { $('#nw-k').value = b.dataset.k; draw(); }));
   }
   $('#nw-kscan').onclick = () => draw().then(kScan);   // always the list in the box, drawn first
@@ -3244,9 +3293,9 @@ async function viewNetwork(spId, q) {
     ns.innerHTML = `<option value="">proteins-of-interest · added partners</option>` + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
     $('#nw-ncol-wrap').style.display = (S.data || []).length ? '' : 'none';
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
-    $('#nw-grp').innerHTML = [['', 'none'], ['comm', 'communities (predicted pairs)'], ['q', 'proteins-of-interest · added partners'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join('');
+    $('#nw-grp').innerHTML = [['', 'none'], ['comm', 'communities · Louvain'], ['leiden', 'communities · Leiden'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join(''); showRes();
     S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 10)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind !== 2) qs.set('mind', S.mind); if (S.grp) qs.set('grp', S.grp); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind !== 2) qs.set('mind', S.mind); if (S.grp) qs.set('grp', S.grp); if (S.res !== 1) qs.set('res', S.res); if (S.grp) qs.set('grp', S.grp); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
@@ -3360,10 +3409,9 @@ async function viewNetwork(spId, q) {
     const r = (d) => (d.q ? 10 : 4) + Math.min(8, Math.sqrt(deg.get(d.id) || 0) * 1.4);
     // Group by: a key per protein; groups of two or more get a place of their own on a ring and an outline
     let gkey = null, gname2 = new Map();
-    if (S.grp === 'comm') { const ix = new Map(nodes.map((d, n) => [d.id, n])), cm = louvain(nodes.length, links.map((l) => [ix.get(typeof l.source === 'object' ? l.source.id : l.source), ix.get(typeof l.target === 'object' ? l.target.id : l.target), l.best]));
+    if (S.grp === 'comm' || S.grp === 'leiden') { const ix = new Map(nodes.map((d, n) => [d.id, n])), cm = (S.grp === 'leiden' ? leiden : louvain)(nodes.length, links.map((l) => [ix.get(typeof l.source === 'object' ? l.source.id : l.source), ix.get(typeof l.target === 'object' ? l.target.id : l.target), l.best]), S.res);
       const size = new Map(); cm.forEach((k) => size.set(k, (size.get(k) || 0) + 1)); const order = [...size].filter(([, s]) => s >= 3).sort((a, b) => b[1] - a[1]).map(([k]) => k);
       gkey = (d) => { const k = cm[ix.get(d.id)]; return order.includes(k) ? 'c' + k : null; }; order.forEach((k, n) => gname2.set('c' + k, `community ${n + 1}`)); }
-    else if (S.grp === 'q') { gkey = (d) => (d.q ? 'q' : 'a'); gname2.set('q', 'proteins-of-interest'); gname2.set('a', 'added partners'); }
     else if (S.grp.startsWith('col:')) { const D = (S.data || []).find((x) => 'col:' + x.name === S.grp); if (D) { gkey = (d) => (D.vals.has(d.id) ? 'v' + D.vals.get(d.id) : null); for (const v of new Set(D.vals.values())) gname2.set('v' + v, String(v)); } }
     const gk = new Map(), gsize = new Map(); if (gkey) for (const d of nodes) { const k = gkey(d); if (k != null) { gk.set(d.id, k); gsize.set(k, (gsize.get(k) || 0) + 1); } }
     const groups = [...gsize].filter(([, s]) => s >= 2).sort((a, b) => b[1] - a[1]).map(([k]) => k), gcenter = new Map();
@@ -3469,7 +3517,8 @@ async function viewNetwork(spId, q) {
   $('#nw-click').onclick = (e) => { const m = e.target.dataset.m; if (!m) return; S.click = m; [...$('#nw-click').children].forEach((b) => b.classList.toggle('on', b.dataset.m === m)); showK();
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); m === 'open' ? u.set('click', 'open') : u.delete('click'); history.replaceState(null, '', `${path}?${u}`); };
   $('#nw-unexp').onclick = () => { S.exp = []; draw(); };
-  $('#nw-grp').onchange = (e) => { S.grp = e.target.value; draw(); };
+  $('#nw-grp').onchange = (e) => { S.grp = e.target.value; showRes(); draw(); };
+  { let t = 0; $('#nw-res').oninput = () => { const v = +$('#nw-res').value; if (!(v >= 0.1 && v <= 5)) return; S.res = v; clearTimeout(t); t = setTimeout(() => draw(), 350); }; }
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
   $('#nw-heat-show').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
   $('#nw-ncol').onchange = (e) => { S.ncol = e.target.value; S.ncolUser = true; if (net && net.recolor) net.recolor(); };

@@ -531,3 +531,16 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .kscan .btn { padding: 2px 8px; font-size: 13px; }
 .kscan-body { display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr); gap: 16px; align-items: center; }
 @media (max-width: 720px) { .kscan-body { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
+/* One control height and one type size in every control row: buttons, dropdowns, number and search boxes, and segmented
+   buttons share 32 px and 13 px, so their tops, bottoms and text line up (larger stand-alone buttons keep .btn's 38 px). */
+:root { --ctl-h: 32px; }
+.controls .btn, .ex-row .btn { height: var(--ctl-h); padding: 0 12px; font-size: 13px; border-radius: 8px; }
+.controls select, .controls input[type=search], .controls input[type=number], .controls input[type=text], .ex-row select { box-sizing: border-box; height: var(--ctl-h); padding: 0 8px; font-size: 13px; line-height: normal; }
+.controls .seg { box-sizing: border-box; height: var(--ctl-h); }
+.controls .seg button { display: inline-flex; align-items: center; height: 100%; padding: 0 11px; font-size: 13px; }
+.controls input[type=checkbox], .controls input[type=radio] { margin: 0; vertical-align: middle; }
+.controls label:has(> input[type=checkbox]) { display: inline-flex; align-items: center; gap: 6px; }
+.ex-row label select { flex: 0 1 360px; width: auto; }   /* the label is as wide as the picker, not its longest example name */
+.tag-alpha { display: inline-block; margin-left: 2px; padding: 1px 5px; border-radius: 5px; font: 700 10px var(--sans); letter-spacing: 0.04em; text-transform: uppercase; color: var(--fpr10); background: #FFF4D6; border: 1px solid #F0DDA4; }
+.khint { margin: -4px 0 8px; font-size: 13px; }
+.khint:empty { display: none; }
