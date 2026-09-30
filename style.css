@@ -545,3 +545,4 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .khint { margin: -4px 0 8px; font-size: 13px; }
 .khint:empty { display: none; }
 .ctl[hidden], .controls [hidden] { display: none !important; }   /* hidden wins over the controls' own display */
+.card.dropping { outline: 2px dashed var(--blue); outline-offset: -6px; background: var(--blue-soft); }   /* a file is being dragged over the card */

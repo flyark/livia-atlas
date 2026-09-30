@@ -2987,10 +2987,10 @@ async function viewNested(spId, q) {
   const G = sp.manifest.keyedBy ? 'genes' : 'proteins';
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/network">Network</a> / <a href="${esc(location.hash)}">Nested</a></div>
     <div class="dshead"><h1>Nested network</h1><div class="pname">${esc(sp.reg.label)} · baits, then the candidates predicted to join them, round by round</div></div>
-    <div class="card"><div class="card-head"><h2>Baits and candidates</h2><span class="muted">names as in the network builder: symbols, accessions, older names, or a table</span></div>
+    <div class="card" id="ns-in"><div class="card-head"><h2>Baits and candidates</h2><span class="muted">names as in the network builder: symbols, accessions, older names, or a table · drop a file (Excel, CSV, TSV) for the candidates</span></div>
       <label class="nlab">Baits<textarea class="ids" id="ns-baits" rows="2" spellcheck="false" placeholder="one or a few ${G}">${esc(S.baits.split(',').join(', '))}</textarea></label>
       <label class="nlab">Candidates <span class="muted">(IP-MS preys, screen hits, GWAS or proteomics hits)</span><textarea class="ids" id="ns-ids" rows="4" spellcheck="false">${esc(S.ids.split(',').join(', '))}</textarea></label>
-      <div class="controls" style="margin-top:8px"><button class="btn" id="ns-filebtn" type="button">Load candidates from a file</button><input type="file" id="ns-file" accept=".txt,.csv,.tsv,.tab,text/plain,text/csv,text/tab-separated-values" hidden>
+      <div class="controls" style="margin-top:8px"><button class="btn" id="ns-filebtn" type="button" title="txt, csv, tsv or Excel; you can also drop the file on this card">Load candidates from a file</button><input type="file" id="ns-file" accept="${FILE_ACCEPT}" hidden><label class="ctl" id="ns-sheet-wrap" hidden title="the workbook's sheets; the one with the most rows opens first">Sheet <select id="ns-sheet"></select></label>
         <span class="ex-row" id="ns-ex"></span></div>
       <div class="controls" style="margin-top:10px"><div class="ctl"><span>Cutoff</span><div class="seg" id="ns-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div>
         <label title="from round 2, a candidate joins with at least this many connections into the network accepted so far">At least <select id="ns-k">${[1, 2, 3].map((k) => `<option value="${k}"${k === S.k ? ' selected' : ''}>${k}</option>`).join('')}</select> connections from round 2</label>
@@ -3015,8 +3015,9 @@ async function viewNested(spId, q) {
   $('#ns-hidden').onchange = () => { if (last) drawNet(last); };
   $('#ns-go').onclick = () => run();
   $('#ns-filebtn').onclick = () => $('#ns-file').click();
-  $('#ns-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#ns-ids').value = await f.text(); e.target.value = ''; run(); };
-  examplePicker($('#ns-ex'), sp.id, (t) => {
+  const nsTable = tableInput({ card: $('#ns-in'), file: $('#ns-file'), sheetWrap: $('#ns-sheet-wrap'), sheet: $('#ns-sheet'), onStatus: status,
+    onText: (t) => { $('#ns-ids').value = t; run(); } });
+  examplePicker($('#ns-ex'), sp.id, (t) => { nsTable.clear();
     const R = readIdInput(sp, t), bait = R.T ? R.T.rows.find((r) => r.includes('bait')) : null;   // an example with a bait names it in the role column
     if (!bait) { $('#ns-baits').value = ''; status('This example has no bait; name one in the Baits box, then Build.'); $('#ns-ids').value = t; return; }
     const bn = [bait[R.col], ...bait].find((x) => x && resolveHow(sp, String(x).trim(), true)) || ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); });
@@ -3126,6 +3127,44 @@ const HEATCS = (k) => { const f = { Blues: (t) => d3.interpolateBlues(0.35 + 0.6
 const HEATCS0 = (k) => { const s = HEATCS(k), c0 = CUT[10] / 0.85; return [[0, '#F4F6F8'], [c0 * 0.999, '#DDE2E7'], ...s.map(([t, col]) => [c0 + (1 - c0) * t, col])]; };
 const HEATBAR = { title: { text: 'best iLIS', side: 'right' }, thickness: 12, len: 0.7, tickvals: [0, 0.1, CUT[10], 0.4, 0.6, 0.8], ticktext: ['0', '0.1', `${CUT[10]} (10% FPR)`, '0.4', '0.6', '0.8'] };
 const FPRSHOW = (sel) => ({ all: 0, 10: CUT[10], 5: CUT[5], 1: CUT[1] }[sel] ?? 0);   // a matrix's own filter, apart from the network's cutoff
+// Tables loaded or dropped: text files as they are; Excel workbooks read in the browser (SheetJS, loaded on first use), each
+// sheet as tab-separated text. The sheet with the most rows is the default and the others stay one click away.
+let XLSXp = null;
+const loadXLSX = () => (window.XLSX ? Promise.resolve(window.XLSX) : (XLSXp = XLSXp || new Promise((ok, no) => {
+  const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
+  s.onload = () => ok(window.XLSX); s.onerror = () => { XLSXp = null; no(new Error('The Excel reader did not load; save the sheet as CSV or TSV and load that.')); };
+  document.head.appendChild(s); })));
+async function readTableFile(f) {
+  if (/\.(xlsx|xlsm|xls|ods)$/i.test(f.name)) {
+    const X = await loadXLSX(), wb = X.read(await f.arrayBuffer(), { type: 'array' });
+    const sheets = wb.SheetNames.map((name) => { const lines = X.utils.sheet_to_csv(wb.Sheets[name], { FS: '\t', blankrows: false }).split('\n'), h = lines.findIndex((l) => l.split('\t').filter((c) => c.trim()).length >= 2), text = (h > 0 ? lines.slice(h) : lines).join('\n'); return { name, text, rows: text.split('\n').filter((l) => l.replace(/\t/g, '').trim()).length }; }).filter((x) => x.rows);
+    if (!sheets.length) throw new Error(`${f.name} has no rows.`);
+    let pick = 0; sheets.forEach((x, i) => { if (x.rows > sheets[pick].rows) pick = i; });
+    return { sheets, pick };
+  }
+  return { sheets: [{ name: f.name, text: await f.text(), rows: 0 }], pick: 0 };
+}
+const FILE_ACCEPT = '.txt,.csv,.tsv,.tab,.xlsx,.xls,.xlsm,.ods,text/plain,text/csv,text/tab-separated-values';
+// A card that takes a dropped file: it lights up while a file is over it and hands the first file on.
+function dropZone(el, onFile) {
+  let n = 0; const files = (e) => [...((e.dataTransfer && e.dataTransfer.types) || [])].includes('Files'), on = (v) => el.classList.toggle('dropping', v);
+  el.addEventListener('dragenter', (e) => { if (!files(e)) return; e.preventDefault(); n++; on(true); });
+  el.addEventListener('dragover', (e) => { if (!files(e)) return; e.preventDefault(); e.dataTransfer.dropEffect = 'copy'; });
+  el.addEventListener('dragleave', () => { if (--n <= 0) { n = 0; on(false); } });
+  el.addEventListener('drop', (e) => { const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]; n = 0; on(false); if (!f) return; e.preventDefault(); onFile(f); });
+}
+// Wire a table input: the file button, the dropped file, and a Sheet menu that shows only for workbooks with several sheets.
+function tableInput({ card, file, sheetWrap, sheet, onText, onStatus }) {
+  let book = null;
+  const use = async (f) => { onStatus(`Reading ${esc(f.name)}…`); try { book = await readTableFile(f); } catch (e) { onStatus(esc(e.message)); return; }
+    sheetWrap.hidden = book.sheets.length < 2;
+    sheet.innerHTML = book.sheets.map((x, i) => `<option value="${i}"${i === book.pick ? ' selected' : ''}>${esc(x.name)} (${fmtInt(x.rows)} rows)</option>`).join('');
+    onText(book.sheets[book.pick].text); };
+  sheet.onchange = () => { if (book) onText(book.sheets[+sheet.value].text); };
+  file.onchange = (e) => { const f = e.target.files[0]; e.target.value = ''; if (f) use(f); };
+  dropZone(card, use);
+  return { clear: () => { book = null; sheetWrap.hidden = true; } };
+}
 const plotly = () => (window.Plotly ? Promise.resolve(window.Plotly) : (window.__plotlyP = window.__plotlyP || new Promise((ok, no) => {
   const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js'; s.onload = () => ok(window.Plotly); s.onerror = () => no(new Error('Plotly did not load')); document.head.appendChild(s); })));
 // The network builder's example tables: published IP-MS hit lists (the paper's own cutoff), under CC BY 4.0
@@ -3156,9 +3195,9 @@ async function viewNetwork(spId, q) {
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
     <div class="dshead"><h1>Network of your proteins-of-interest</h1><div class="pname"><a href="#/${sp.id}/nested">Nested network ↗</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
-    <div class="card"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions (isoforms too)${sp.manifest.keyedBy ? ', FlyBase IDs, CG numbers' : ''} or older names · commas, spaces or new lines, or a table</span></div>
+    <div class="card" id="nw-in"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions (isoforms too)${sp.manifest.keyedBy ? ', FlyBase IDs, CG numbers' : ''} or older names · commas, spaces or new lines, or a table · or drop a file (Excel, CSV, TSV) on this card</span></div>
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
-      <div class="controls" style="margin-top:8px"><button class="btn" id="nw-filebtn" type="button" title="a list or a table of names: txt, csv or tsv; a table's name column is found for you">Load a file</button><input type="file" id="nw-file" accept=".txt,.csv,.tsv,.tab,text/plain,text/csv,text/tab-separated-values" hidden>
+      <div class="controls" style="margin-top:8px"><button class="btn" id="nw-filebtn" type="button" title="a list or a table of names: txt, csv, tsv or Excel; a table's name column is found for you; you can also drop the file on this card">Load a file</button><input type="file" id="nw-file" accept="${FILE_ACCEPT}" hidden><label class="ctl" id="nw-sheet-wrap" hidden title="the workbook's sheets; the one with the most rows opens first">Sheet <select id="nw-sheet"></select></label>
         <span class="ex-row" id="nw-ex"></span>
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
@@ -3547,9 +3586,10 @@ async function viewNetwork(spId, q) {
   }
   $('#nw-go').onclick = () => draw();
   $('#nw-filebtn').onclick = () => $('#nw-file').click();
-  examplePicker($('#nw-ex'), sp.id, (t) => { $('#nw-ids').value = t;
+  examplePicker($('#nw-ex'), sp.id, (t) => { nwTable.clear(); $('#nw-ids').value = t;
     S.col = null; S.exp = []; S.ncolUser = false; $('#nw-add').value = 'top'; $('#nw-k').value = 10; showK(); draw(); });   // an example opens with each hit's top partners, so the list grows outward
-  $('#nw-file').onchange = async (e) => { const f = e.target.files[0]; if (!f) return; $('#nw-ids').value = await f.text(); S.col = null; S.exp = []; S.ncolUser = false; e.target.value = ''; draw(); };
+  const nwTable = tableInput({ card: $('#nw-in'), file: $('#nw-file'), sheetWrap: $('#nw-sheet-wrap'), sheet: $('#nw-sheet'), onStatus: status,
+    onText: (t) => { $('#nw-ids').value = t; S.col = null; S.exp = []; S.ncolUser = false; draw(); } });
   $('#nw-col').onchange = (e) => { S.col = e.target.value === 'all' ? 'all' : +e.target.value; S.exp = []; S.ncolUser = false; draw(); };
   $('#nw-ids').oninput = () => { S.col = null; S.ncolUser = false; };
   $('#nw-click').onclick = (e) => { const m = e.target.dataset.m; if (!m) return; S.click = m; [...$('#nw-click').children].forEach((b) => b.classList.toggle('on', b.dataset.m === m)); showK();
