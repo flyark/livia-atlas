@@ -1032,7 +1032,7 @@ async function viewHome() {
   // Totals come from the species manifests alone; the species indexes (search) load once the page is idle.
   const gen = ROUTE, reg = await registry(), all = await Promise.all((reg.species || []).map((x) => speciesManifest(x.id)));
   if (stale(gen)) return;
-  const tot = (k) => all.reduce((s, m) => s + (m.counts[k] || 0), 0), nScreens = all.reduce((s, m) => s + (m.datasets || []).length, 0);
+  const tot = (k) => all.reduce((s, m) => s + (m.counts[k] || 0), 0);
   app.innerHTML = `
     <section class="hero hero-center">
       <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
@@ -1044,7 +1044,7 @@ async function viewHome() {
         (Kim &amp; Perrimon, 2026, <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">bioRxiv</a>).</p>
       <div id="home-search" class="hero-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
-        <span><b>${fmtInt(tot('proteins'))}</b> proteins</span><span><b>${fmtInt(nScreens)}</b> screen${nScreens === 1 ? '' : 's'}</span></div>
+        <span><b>${fmtInt(tot('proteins'))}</b> proteins</span></div>
       <div class="chips">${(reg.species || []).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<a class="lbl sp-link" href="#/${x.id}" title="every ${esc(x.label.toLowerCase())} protein, screen and network">${esc(x.label)}</a>` : ''}`
         + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
@@ -2767,7 +2767,7 @@ async function viewSpecies(spId) {
   if (stale(gen)) return;
   document.title = `${sp.reg.label} · LIVIA Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a></div>
-    <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · ${sp.dsIds.length === 1 ? 'one screen' : sp.dsIds.length + ' screens'}, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
+    <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · from the available interactome datasets, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
     ${sp.viruses ? `<div class="card" id="vir-card"><div class="card-head"><div><h2>Viruses</h2><div class="muted">${fmtInt(sp.viruses.length)} viruses; in each, every pair of its proteins was folded. Open one for its network.</div></div>
