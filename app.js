@@ -3127,11 +3127,11 @@ const HEATCS = (k) => { const f = { Blues: (t) => d3.interpolateBlues(0.35 + 0.6
 const HEATCS0 = (k) => { const s = HEATCS(k), c0 = CUT[10] / 0.85; return [[0, '#F4F6F8'], [c0 * 0.999, '#DDE2E7'], ...s.map(([t, col]) => [c0 + (1 - c0) * t, col])]; };
 const HEATBAR = { title: { text: 'best iLIS', side: 'right' }, thickness: 12, len: 0.7, tickvals: [0, 0.1, CUT[10], 0.4, 0.6, 0.8], ticktext: ['0', '0.1', `${CUT[10]} (10% FPR)`, '0.4', '0.6', '0.8'] };
 const FPRSHOW = (sel) => ({ all: 0, 10: CUT[10], 5: CUT[5], 1: CUT[1] }[sel] ?? 0);   // a matrix's own filter, apart from the network's cutoff
-// Tables loaded or dropped: text files as they are; Excel workbooks read in the browser (SheetJS, loaded on first use), each
+// Tables loaded or dropped: text files as they are; Excel workbooks read in the browser (SheetJS 0.20.3 from its own CDN, loaded on first use), each
 // sheet as tab-separated text. The sheet with the most rows is the default and the others stay one click away.
 let XLSXp = null;
 const loadXLSX = () => (window.XLSX ? Promise.resolve(window.XLSX) : (XLSXp = XLSXp || new Promise((ok, no) => {
-  const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js';
+  const s = document.createElement('script'); s.src = 'https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js';
   s.onload = () => ok(window.XLSX); s.onerror = () => { XLSXp = null; no(new Error('The Excel reader did not load; save the sheet as CSV or TSV and load that.')); };
   document.head.appendChild(s); })));
 async function readTableFile(f) {
@@ -3158,7 +3158,7 @@ function tableInput({ card, file, sheetWrap, sheet, onText, onStatus }) {
   let book = null;
   const use = async (f) => { onStatus(`Reading ${esc(f.name)}…`); try { book = await readTableFile(f); } catch (e) { onStatus(esc(e.message)); return; }
     sheetWrap.hidden = book.sheets.length < 2;
-    sheet.innerHTML = book.sheets.map((x, i) => `<option value="${i}"${i === book.pick ? ' selected' : ''}>${esc(x.name)} (${fmtInt(x.rows)} rows)</option>`).join('');
+    sheet.innerHTML = book.sheets.map((x, i) => `<option value="${i}"${i === book.pick ? ' selected' : ''}>${esc(x.name)} (${fmtInt(x.rows)} row${x.rows === 1 ? '' : 's'})</option>`).join('');
     onText(book.sheets[book.pick].text); };
   sheet.onchange = () => { if (book) onText(book.sheets[+sheet.value].text); };
   file.onchange = (e) => { const f = e.target.files[0]; e.target.value = ''; if (f) use(f); };
@@ -3566,7 +3566,10 @@ async function viewNetwork(spId, q) {
       const P = S.lay === 'fr' ? layoutSpring(nodes.length, E) : S.lay === 'kk' ? layoutKK(nodes.length, E) : layoutCircle(nodes.length);
       const xs = P.map((p) => p[0]), ys = P.map((p) => p[1]), x0 = Math.min(...xs), y0 = Math.min(...ys), sx = Math.max(1e-9, Math.max(...xs) - x0), sy = Math.max(1e-9, Math.max(...ys) - y0);
       const side = S.lay === 'circle' ? Math.min(W, H) - 80 : 0, bw = side || W - 80, bh = side || H - 80, ox = (W - bw) / 2, oy = (H - bh) / 2;
-      nodes.forEach((d) => { const p = P[pos.get(d.id)]; d.x = d.fx = ox + (p[0] - x0) / sx * bw; d.y = d.fy = oy + (p[1] - y0) / sy * bh; });
+      const kept = seed && seed.pos, at = kept && seed.pos.get(seed.at), fresh = kept ? nodes.filter((d) => !seed.pos.has(d.id)) : [];
+      nodes.forEach((d) => { if (kept && seed.pos.has(d.id)) { [d.x, d.y] = seed.pos.get(d.id); d.fx = d.x; d.fy = d.y; return; }   // after a click: the drawn proteins stay put
+        if (kept) { const a = 2 * Math.PI * fresh.indexOf(d) / Math.max(1, fresh.length), c = at || [W / 2, H / 2]; d.x = d.fx = c[0] + 70 * Math.cos(a); d.y = d.fy = c[1] + 70 * Math.sin(a); return; }   // the added partners on a ring around the clicked protein
+        const p = P[pos.get(d.id)]; d.x = d.fx = ox + (p[0] - x0) / sx * bw; d.y = d.fy = oy + (p[1] - y0) / sy * bh; });
       sim.alpha(0.05);
     }
     let fitted = !!seed;   // once the layout settles, zoom so every node and label fits (the zoom stays free afterwards); kept as it was after a click
