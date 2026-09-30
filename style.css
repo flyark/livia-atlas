@@ -554,3 +554,7 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .optgrid .controls { margin: 0; }
 .optlab { font: 600 11px var(--sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
 @media (max-width: 640px) { .optgrid { grid-template-columns: minmax(0, 1fr); gap: 4px; } .optlab { margin-top: 6px; } }
+
+/* network: the partner count, its unit, auto and Suggest in one evenly spaced group */
+#nw-k-wrap { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+#nw-k-wrap .ctl { gap: 4px; }
