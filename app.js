@@ -3137,7 +3137,7 @@ const loadXLSX = () => (window.XLSX ? Promise.resolve(window.XLSX) : (XLSXp = XL
 async function readTableFile(f) {
   if (/\.(xlsx|xlsm|xls|ods)$/i.test(f.name)) {
     const X = await loadXLSX(), wb = X.read(await f.arrayBuffer(), { type: 'array' });
-    const sheets = wb.SheetNames.map((name) => { const lines = X.utils.sheet_to_csv(wb.Sheets[name], { FS: '\t', blankrows: false }).split('\n'), h = lines.findIndex((l) => l.split('\t').filter((c) => c.trim()).length >= 2), text = (h > 0 ? lines.slice(h) : lines).join('\n'); return { name, text, rows: text.split('\n').filter((l) => l.replace(/\t/g, '').trim()).length }; }).filter((x) => x.rows);
+    const sheets = wb.SheetNames.map((name) => { const lines = X.utils.sheet_to_json(wb.Sheets[name], { header: 1, blankrows: false, defval: '', raw: false }).map((r) => r.map((c) => String(c).replace(/[\t\r\n]+/g, ' ').trim()).join('\t')).filter((l) => l.replace(/\t/g, '').trim()), h = lines.findIndex((l) => l.split('\t').filter((c) => c.trim()).length >= 2), text = (h > 0 ? lines.slice(h) : lines).join('\n'); return { name, text, rows: text.split('\n').filter((l) => l.replace(/\t/g, '').trim()).length }; }).filter((x) => x.rows);
     if (!sheets.length) throw new Error(`${f.name} has no rows.`);
     let pick = 0; sheets.forEach((x, i) => { if (x.rows > sheets[pick].rows) pick = i; });
     return { sheets, pick };
@@ -3564,12 +3564,13 @@ async function viewNetwork(spId, q) {
       if (S.lay === 'circle') ord.sort((a, b) => ((gix.get(gk.get(nodes[a].id)) ?? 1e9) - (gix.get(gk.get(nodes[b].id)) ?? 1e9)) || ((deg.get(nodes[b].id) || 0) - (deg.get(nodes[a].id) || 0)));
       const pos = new Map(ord.map((i, k) => [nodes[i].id, k])), E = links.map((l) => [pos.get(typeof l.source === 'object' ? l.source.id : l.source), pos.get(typeof l.target === 'object' ? l.target.id : l.target), l.best || 0.3]);
       const P = S.lay === 'fr' ? layoutSpring(nodes.length, E) : S.lay === 'kk' ? layoutKK(nodes.length, E) : layoutCircle(nodes.length);
-      const xs = P.map((p) => p[0]), ys = P.map((p) => p[1]), x0 = Math.min(...xs), y0 = Math.min(...ys), sx = Math.max(1e-9, Math.max(...xs) - x0), sy = Math.max(1e-9, Math.max(...ys) - y0);
+      const xs = P.map((p) => p[0]), ys = P.map((p) => p[1]), sx = Math.max(...xs) - Math.min(...xs), sy = Math.max(...ys) - Math.min(...ys), x0 = sx < 1e-6 ? Math.min(...xs) - 0.5 : Math.min(...xs), y0 = sy < 1e-6 ? Math.min(...ys) - 0.5 : Math.min(...ys);
+      const sxx = sx < 1e-6 ? 1 : sx, syy = sy < 1e-6 ? 1 : sy;   // one protein (no spread): centered
       const side = S.lay === 'circle' ? Math.min(W, H) - 80 : 0, bw = side || W - 80, bh = side || H - 80, ox = (W - bw) / 2, oy = (H - bh) / 2;
       const kept = seed && seed.pos, at = kept && seed.pos.get(seed.at), fresh = kept ? nodes.filter((d) => !seed.pos.has(d.id)) : [];
       nodes.forEach((d) => { if (kept && seed.pos.has(d.id)) { [d.x, d.y] = seed.pos.get(d.id); d.fx = d.x; d.fy = d.y; return; }   // after a click: the drawn proteins stay put
         if (kept) { const a = 2 * Math.PI * fresh.indexOf(d) / Math.max(1, fresh.length), c = at || [W / 2, H / 2]; d.x = d.fx = c[0] + 70 * Math.cos(a); d.y = d.fy = c[1] + 70 * Math.sin(a); return; }   // the added partners on a ring around the clicked protein
-        const p = P[pos.get(d.id)]; d.x = d.fx = ox + (p[0] - x0) / sx * bw; d.y = d.fy = oy + (p[1] - y0) / sy * bh; });
+        const p = P[pos.get(d.id)]; d.x = d.fx = ox + (p[0] - x0) / sxx * bw; d.y = d.fy = oy + (p[1] - y0) / syy * bh; });
       sim.alpha(0.05);
     }
     let fitted = !!seed;   // once the layout settles, zoom so every node and label fits (the zoom stays free afterwards); kept as it was after a click
