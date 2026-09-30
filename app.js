@@ -3117,7 +3117,7 @@ async function viewNetwork(spId, q) {
         <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
         <div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
   $('#nw-add').value = S.add;
-  const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; $('#nw-kscan').hidden = $('#nw-add').value !== 'top'; }; showK();   // the number also sets how many a click adds
+  const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; $('#nw-kscan').hidden = $('#nw-add').value !== 'top'; if ($('#nw-add').value !== 'top') $('#nw-kscan-out').hidden = true; }; showK();   // the number also sets how many a click adds
   const redraw = () => { if (!$('#nw-card').hidden) draw(); };   // once a network is drawn, every option redraws it at once
   // Suggest a number of partners per protein (exploratory). For ranks 1-2, 3-5, 6-10 ... 51-100: the share of each protein's
   // partner at that rank that is itself a protein-of-interest or has a predicted pair with another one, against 100 random
@@ -3146,6 +3146,7 @@ async function viewNetwork(spId, q) {
       rows.push({ k0, k1, f, lo: qt(rv, 0.05), med: qt(rv, 0.5), hi: qt(rv, 0.95) });
       await new Promise((r) => setTimeout(r, 0)); if (!SCAN || SCAN.key !== key) return;
     }
+    if (!rows.length) { out.innerHTML = '<p class="muted">None of these proteins-of-interest has a partner past this cutoff, so there is nothing to suggest.</p>'; return; }
     let depth = 0; for (const r of rows) { if (r.f > r.hi) depth = r.k1; else break; }
     const kMax = Math.max(1, Math.min(depth, 50)), size = []; for (let k = 1; k <= kMax; k++) size.push(expandTop(Q, k, new Set(Q)).size);
     let kS = 1, kC = 1; for (let k = 1; k <= kMax; k++) { if (size[k - 1] <= KREAD && size[k - 1] < CAP) kS = k; else break; }
@@ -3159,15 +3160,15 @@ async function viewNetwork(spId, q) {
       + `<polyline points="${rows.map((r, i) => `${xs(i)},${ys(r.med)}`).join(' ')}" fill="none" stroke="var(--below)" stroke-dasharray="4 3"/>`
       + `<polyline points="${rows.map((r, i) => `${xs(i)},${ys(r.f)}`).join(' ')}" fill="none" stroke="var(--navy)" stroke-width="2"/>`
       + rows.map((r, i) => `<circle cx="${xs(i)}" cy="${ys(r.f)}" r="4" fill="${r.k1 <= depth ? 'var(--navy)' : 'var(--card)'}" stroke="var(--navy)" stroke-width="1.5"><title>ranks ${r.k0}–${r.k1}: ${(100 * r.f).toFixed(0)}% shared; random lists ${(100 * r.med).toFixed(0)}% (95th percentile ${(100 * r.hi).toFixed(0)}%)</title></circle><text x="${xs(i)}" y="${H - B + 16}" text-anchor="middle" font-size="10" fill="var(--ink-3)">${r.k0}–${r.k1}</text>`).join('')
-      + `<text x="${(L + W) / 2}" y="${H - 4}" text-anchor="middle" font-size="10" fill="var(--ink-3)">partner rank</text><text x="10" y="${(T + H - B) / 2}" text-anchor="middle" font-size="10" fill="var(--ink-3)" transform="rotate(-90 10 ${(T + H - B) / 2})">share shared</text></svg>`;
+      + `<text x="${(L + W) / 2}" y="${H - 4}" text-anchor="middle" font-size="10" fill="var(--ink-3)">partner rank</text><text x="10" y="${(T + H - B) / 2}" text-anchor="middle" font-size="10" fill="var(--ink-3)" transform="rotate(-90 10 ${(T + H - B) / 2})">shared</text></svg>`;
     const kb = (k) => `<button type="button" class="btn" data-k="${k}">${k} per protein</button>`;
     out.innerHTML = (depth
       ? `<p>Each protein’s partners stay shared with another protein-of-interest more often than in random lists through rank <b>${depth}</b>. Suggested: ${kb(kS)} <span class="muted">(${fmtInt(size[kS - 1])} proteins drawn)</span>${kC > kS ? ` · up to ${kb(kC)} <span class="muted">before the ${CAP}-protein cap (${fmtInt(size[kC - 1])})</span>` : ''}</p>`
-      : `<p>At no rank are partners shared with another protein-of-interest more often than in random lists, so added partners would mostly be unrelated to the rest. No suggestion.</p>`)
+      : `<p>At no rank are partners shared with another protein-of-interest more often than in random lists, so added partners would mostly be unrelated to the rest. No suggestion.${Q.size < 20 ? ` With ${fmtInt(Q.size)} proteins-of-interest only strong sharing can show.` : ''}</p>`)
       + `<div class="kscan-body">` + svg + `<p class="muted" style="margin:0"><span style="color:var(--navy)">●</span> these proteins-of-interest, filled while above random · dashed line and band: 100 random lists (median, 5th–95th percentile) of proteins with as many partners past the cutoff, the same for every run of this list. Shared: the partner is itself a protein-of-interest or has a predicted pair with another one. Exploratory: k is chosen from these data, not tested. Proteins drawn are counted before Min. pairs.${never != null && never > 0.75 ? ` ${Math.round(100 * never)}% of pairs among these proteins were never folded, so sharing is undercounted.` : ''}</p></div>`;
     out.querySelectorAll('button[data-k]').forEach((b) => (b.onclick = () => { $('#nw-k').value = b.dataset.k; draw(); }));
   }
-  $('#nw-kscan').onclick = () => { if ($('#nw-card').hidden) draw().then(kScan); else kScan(); };
+  $('#nw-kscan').onclick = () => draw().then(kScan);   // always the list in the box, drawn first
   $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = f === 'c' ? 'c' : +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     $('#nw-cutv').style.display = S.cut === 'c' ? '' : 'none'; redraw(); };
   { let t = 0; $('#nw-cutv').oninput = (e) => { clearTimeout(t); t = setTimeout(() => { const v = parseFloat(e.target.value); if (!Number.isFinite(v)) return;
@@ -3235,7 +3236,8 @@ async function viewNetwork(spId, q) {
     else wrap.hidden = true;
     $('#nw-table').textContent = tableNote; return R.toks;
   }
-  async function draw(seed = null) {   // seed: the positions and zoom to keep when a click adds partners
+  async function draw(seed = null) {
+    const scanWas = !$('#nw-kscan-out').hidden && SCAN ? SCAN.key : null; SCAN = null; $('#nw-kscan-out').hidden = true;   // a draw that stops early leaves no list to suggest for   // seed: the positions and zoom to keep when a click adds partners
     hideTip(); const toks = readInput();
     const ns = $('#nw-ncol'); if (S.ncol && !(S.data || []).some((x) => x.name === S.ncol)) S.ncol = '';
     if (!S.ncolUser) S.ncol = autoColor(S.data || []);   // chosen for the reader until they pick one
@@ -3265,7 +3267,7 @@ async function viewNetwork(spId, q) {
     const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => passE(e));
     const srt = new Map(), nbS = (i) => { let v = srt.get(i); if (!v) { v = nb(i).sort((a, b) => b[1].best - a[1].best).map(([j]) => j); srt.set(i, v); } return v; };   // partners past the cutoff, best first
     const expandTop = (Q0, k, into) => { for (const i of Q0) for (const j of nbS(i).slice(0, k)) { if (into.size >= CAP) break; into.add(j); } return into; };   // each protein's top k partners, up to the cap
-    const skey = [[...Q].sort((a, b) => a - b).join(','), c, S.iptm, S.set].join('|'); if (SCAN && SCAN.key !== skey) $('#nw-kscan-out').hidden = true;
+    const skey = [[...Q].sort((a, b) => a - b).join(','), c, S.iptm, S.set].join('|'); if (scanWas === skey) $('#nw-kscan-out').hidden = false;
     SCAN = { key: skey, Q, nbS, expandTop, n: sp.rows.length, CAP, TP: S.set ? null : TP };
     if (S.add === 'shared') { const n = new Map(); for (const i of Q) for (const [j] of nb(i)) if (!Q.has(j)) n.set(j, (n.get(j) || 0) + 1);
       [...n].filter(([, k]) => k >= 2).sort((a, b) => b[1] - a[1] || gname(a[0]).localeCompare(gname(b[0]))).slice(0, CAP - keep.size).forEach(([j]) => keep.add(j)); }
@@ -3280,7 +3282,7 @@ async function viewNetwork(spId, q) {
     if (seed && !expNote && lastFresh && !lastAdded) expNote = ` · the network is at ${CAP} proteins; a click adds no more`;
     if (expNote && S.exp.length) { S.exp.pop(); writeURL(); }   // a click that added nothing is not kept in the link
     $('#nw-unexp').style.display = S.exp.length ? '' : 'none';
-    $('#nw-khint').textContent = keep.size >= CAP && (S.add === 'top' || S.exp.length) ? `capped at ${CAP} proteins: a higher number adds pairs, not proteins` : '';
+    $('#nw-khint').textContent = keep.size >= CAP && Q.size < CAP && (S.add === 'top' || S.exp.length) ? `capped at ${CAP} proteins: a higher number gives the first proteins more partners and later ones fewer` : '';
     let links = [];
     for (const a of keep) for (const [b, e] of E.adj.get(a) || []) if (b > a && keep.has(b) && passE(e)) links.push({ source: a, target: b, ...e, pubs: K ? K.pubs(a, b) : 0, gen: K ? K.gen(a, b) : 0 });
     let pruned = 0;   // Min. pairs: drop added partners with fewer pairs in the drawing, again until none is left below it (a k-core)
