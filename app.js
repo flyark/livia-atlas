@@ -1495,6 +1495,33 @@ function leiden(n, edges, gamma = 1) {
   const out = new Array(n); [...groups.values()].sort((a, b) => b.length - a.length).forEach((g, rank) => { for (const x of g) out[x] = rank; });
   return out;
 }
+// Fixed layouts for the network builder, as in LIVIA's network page. Nodes 0..n-1, edges [u, v, weight]; returns [x, y] per
+// node in a unit box. Deterministic: every run starts from the same circle.
+//   spring: Fruchterman & Reingold (1991), heavier pairs pull harder; Kamada-Kawai: Kamada & Kawai (1989), drawn by stress
+//   majorization (Gansner, Koren & North 2004) so distances follow shortest paths; circle: in the order given (groups kept together).
+function layoutCircle(n) { return [...Array(n).keys()].map((i) => [0.5 + 0.5 * Math.cos(2 * Math.PI * i / n - Math.PI / 2), 0.5 + 0.5 * Math.sin(2 * Math.PI * i / n - Math.PI / 2)]); }
+function layoutSpring(n, E, iters = 300) {
+  const P = layoutCircle(n).map(([x, y]) => [x - 0.5, y - 0.5]), k = Math.sqrt(1 / Math.max(1, n)), wmax = Math.max(1e-9, ...E.map((e) => e[2]));
+  for (let it = 0, t = 0.1; it < iters; it++, t = 0.1 * (1 - it / iters) + 0.002) {
+    const D = P.map(() => [0, 0]);
+    for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++) { const dx = P[i][0] - P[j][0], dy = P[i][1] - P[j][1], d = Math.max(1e-4, Math.hypot(dx, dy)), f = k * k / d / d; D[i][0] += dx * f; D[i][1] += dy * f; D[j][0] -= dx * f; D[j][1] -= dy * f; }
+    for (const [u, v, w] of E) { const dx = P[u][0] - P[v][0], dy = P[u][1] - P[v][1], d = Math.max(1e-4, Math.hypot(dx, dy)), f = d / k * (0.3 + 0.7 * w / wmax); D[u][0] -= dx * f; D[u][1] -= dy * f; D[v][0] += dx * f; D[v][1] += dy * f; }
+    for (let i = 0; i < n; i++) { const l = Math.max(1e-9, Math.hypot(D[i][0], D[i][1])), s = Math.min(l, t) / l; P[i][0] += D[i][0] * s; P[i][1] += D[i][1] * s; P[i][0] -= P[i][0] * 0.01; P[i][1] -= P[i][1] * 0.01; }
+  }
+  return P;
+}
+function layoutKK(n, E, iters = 200) {
+  const adj = [...Array(n)].map(() => []); for (const [u, v] of E) { adj[u].push(v); adj[v].push(u); }
+  const Dm = [...Array(n)].map(() => new Int16Array(n).fill(-1)); let dmax = 1;
+  for (let s = 0; s < n; s++) { const d = Dm[s], q = [s]; d[s] = 0; for (let h = 0; h < q.length; h++) { const u = q[h]; for (const v of adj[u]) if (d[v] < 0) { d[v] = d[u] + 1; dmax = Math.max(dmax, d[v]); q.push(v); } } }
+  const dist = (i, j) => (Dm[i][j] < 0 ? dmax + 1 : Dm[i][j]), P = layoutCircle(n).map(([x, y]) => [(x - 0.5) * dmax, (y - 0.5) * dmax]);
+  for (let it = 0; it < iters; it++) for (let i = 0; i < n; i++) {
+    let sx = 0, sy = 0, sw = 0;
+    for (let j = 0; j < n; j++) { if (j === i) continue; const dij = dist(i, j), w = 1 / (dij * dij), dx = P[i][0] - P[j][0], dy = P[i][1] - P[j][1], l = Math.max(1e-6, Math.hypot(dx, dy)); sx += w * (P[j][0] + dij * dx / l); sy += w * (P[j][1] + dij * dy / l); sw += w; }
+    if (sw) { P[i][0] = sx / sw; P[i][1] = sy / sw; }
+  }
+  return P;
+}
 // A network's labels in one layer drawn after every node, so no node covers a label; the query's label last. Returns
 // the function each tick calls to keep the labels on their nodes.
 function liftLabels(g, node) {
@@ -3123,7 +3150,7 @@ async function viewNetwork(spId, q) {
   const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),
     ...TSs.filter(Boolean).flatMap((T) => T.list.map((x) => [x.id, x.short]))];
   const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 10)),
-    cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
+    cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), lay: ['fr', 'kk', 'circle'].includes(q.get('lay')) ? q.get('lay') : 'force', cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
     mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, grp: /^(comm|leiden|col:.+)$/.test(q.get('grp') || '') ? q.get('grp') : '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [] };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
@@ -3146,6 +3173,7 @@ async function viewNetwork(spId, q) {
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
     <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw')}
         <label class="ctl" id="nw-ncol-wrap" style="display:none" title="color the proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
+        <label class="ctl" title="how the proteins are placed: force moves live; spring and Kamada-Kawai are fixed layouts, as in LIVIA Network">Layout <select id="nw-lay">${[['force', 'force (live)'], ['fr', 'spring (Fruchterman-Reingold)'], ['kk', 'Kamada-Kawai'], ['circle', 'circle']].map(([v, l]) => `<option value="${v}"${v === S.lay ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
         <label class="ctl" title="lay the network out in groups, each in its own area with an outline">Group by<select id="nw-grp"></select></label>
         <label class="ctl" id="nw-res-wrap" hidden title="community resolution: higher gives more, smaller communities; 1 is standard modularity">Resolution <input type="number" id="nw-res" min="0.1" max="5" step="0.1" value="${S.res}" style="width:64px"></label>
         <label class="ctl" title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label>
@@ -3295,7 +3323,7 @@ async function viewNetwork(spId, q) {
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
     $('#nw-grp').innerHTML = [['', 'none'], ['comm', 'communities · Louvain'], ['leiden', 'communities · Leiden'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join(''); showRes();
     S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 10)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind !== 2) qs.set('mind', S.mind); if (S.res !== 1) qs.set('res', S.res); if (S.grp) qs.set('grp', S.grp); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind !== 2) qs.set('mind', S.mind); if (S.res !== 1) qs.set('res', S.res); if (S.grp) qs.set('grp', S.grp); if (S.lay !== 'force') qs.set('lay', S.lay); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
@@ -3451,7 +3479,7 @@ async function viewNetwork(spId, q) {
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d), u = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}`; if (ev.metaKey || ev.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
-        .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
+        .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); if (S.lay === 'force') { d.fx = null; d.fy = null; } }));
     node.append('circle').attr('class', 'nfill').attr('r', r).attr('fill', (d) => (d.q ? '#1A5276' : '#AEBBCA')).attr('stroke', (d) => (homo.has(d.id) ? HOMO_RING : '#fff')).attr('stroke-width', (d) => (homo.has(d.id) ? 3 : d.q ? 2.2 : 1.5));
     node.filter((d) => d.expd).append('circle').attr('r', (d) => r(d) + 4.5).attr('fill', 'none').attr('stroke', '#1A5276').attr('stroke-width', 1.4).attr('stroke-dasharray', '3 2.5');   // expanded by a click
     // every protein gets a label; the fitted view shows the proteins-of-interest and the best-connected partners, and zooming in shows
@@ -3492,6 +3520,16 @@ async function viewNetwork(spId, q) {
       .force('x', d3.forceX((d) => (home(d) || [W / 2])[0]).strength((d) => (home(d) ? 0.35 : 0.05))).force('y', d3.forceY((d) => (home(d) || [0, H / 2])[1]).strength((d) => (home(d) ? 0.35 : 0.06)))
       .on('tick', () => { placeLabels(); drawHulls(); for (const sel of [dash, link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     if (seed) sim.alpha(0.35);   // settle the new nodes without reshuffling the rest
+    if (S.lay !== 'force') {   // a fixed layout: every protein pinned where the layout puts it, groups kept together on the circle
+      const ord = nodes.map((d, i) => i), gix = new Map(groups.map((g, i) => [g, i]));
+      if (S.lay === 'circle') ord.sort((a, b) => ((gix.get(gk.get(nodes[a].id)) ?? 1e9) - (gix.get(gk.get(nodes[b].id)) ?? 1e9)) || ((deg.get(nodes[b].id) || 0) - (deg.get(nodes[a].id) || 0)));
+      const pos = new Map(ord.map((i, k) => [nodes[i].id, k])), E = links.map((l) => [pos.get(typeof l.source === 'object' ? l.source.id : l.source), pos.get(typeof l.target === 'object' ? l.target.id : l.target), l.best || 0.3]);
+      const P = S.lay === 'fr' ? layoutSpring(nodes.length, E) : S.lay === 'kk' ? layoutKK(nodes.length, E) : layoutCircle(nodes.length);
+      const xs = P.map((p) => p[0]), ys = P.map((p) => p[1]), x0 = Math.min(...xs), y0 = Math.min(...ys), sx = Math.max(1e-9, Math.max(...xs) - x0), sy = Math.max(1e-9, Math.max(...ys) - y0);
+      const side = S.lay === 'circle' ? Math.min(W, H) - 80 : 0, bw = side || W - 80, bh = side || H - 80, ox = (W - bw) / 2, oy = (H - bh) / 2;
+      nodes.forEach((d) => { const p = P[pos.get(d.id)]; d.x = d.fx = ox + (p[0] - x0) / sx * bw; d.y = d.fy = oy + (p[1] - y0) / sy * bh; });
+      sim.alpha(0.05);
+    }
     let fitted = !!seed;   // once the layout settles, zoom so every node and label fits (the zoom stays free afterwards); kept as it was after a click
     sim.on('end', () => { if (fitted) return; fitted = true; const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y);
       const x0 = Math.min(...xs) - 48, x1 = Math.max(...xs) + 48, y0 = Math.min(...ys) - 34, y1 = Math.max(...ys) + 24, sc = Math.min(1.4, 0.96 * Math.min(W / (x1 - x0), H / (y1 - y0)));
@@ -3518,6 +3556,7 @@ async function viewNetwork(spId, q) {
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); m === 'open' ? u.set('click', 'open') : u.delete('click'); history.replaceState(null, '', `${path}?${u}`); };
   $('#nw-unexp').onclick = () => { S.exp = []; draw(); };
   $('#nw-grp').onchange = (e) => { S.grp = e.target.value; showRes(); draw(); };
+  $('#nw-lay').onchange = (e) => { S.lay = e.target.value; draw(); };
   { let t = 0; $('#nw-res').oninput = () => { const v = +$('#nw-res').value; if (!(v >= 0.1 && v <= 5)) return; S.res = v; clearTimeout(t); t = setTimeout(() => draw(), 350); }; }
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
   $('#nw-heat-show').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
