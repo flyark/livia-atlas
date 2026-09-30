@@ -544,3 +544,4 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .tag-alpha { display: inline-block; margin-left: 2px; padding: 1px 5px; border-radius: 5px; font: 700 10px var(--sans); letter-spacing: 0.04em; text-transform: uppercase; color: var(--fpr10); background: #FFF4D6; border: 1px solid #F0DDA4; }
 .khint { margin: -4px 0 8px; font-size: 13px; }
 .khint:empty { display: none; }
+.ctl[hidden], .controls [hidden] { display: none !important; }   /* hidden wins over the controls' own display */
