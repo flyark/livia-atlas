@@ -819,7 +819,10 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
         <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}its proteins' network · taxon ${v.taxid}</span></div>`
       : `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
         <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${r.virus ? `${esc(r.virus.name)} · ` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`)).join('')
-      || (q.trim() ? '<div class="sg-note">No match. Try a gene symbol, UniProt accession, FlyBase ID or protein name.</div>' : '');
+      || (q.trim() ? `<div class="sg-note">No match.${(() => { const t0 = q.trim();
+        if (/^ENS[A-Z]*[GTP]\d{6,}/i.test(t0) || /^\d+$/.test(t0)) return ' Ensembl and Entrez IDs are not in the Atlas: try the gene symbol or UniProt accession.';
+        const near = sps.filter(Boolean).map((sp) => [sp, nearRow(sp, t0)]).filter(([, r]) => r).slice(0, 3);
+        return near.length ? ` Close: ${near.map(([sp, r]) => `<a href="#/${sp.id}/${encodeURIComponent(r.key)}">${esc(r.gene)}</a>${many ? ` <span class="muted">(${esc(sp.reg.label)})</span>` : ''}`).join(', ')}.` : ' Try a gene symbol, UniProt accession, FlyBase ID or protein name.'; })()}</div>` : '');
     box.hidden = !box.innerHTML;
     [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k]));
     paint();
@@ -1583,6 +1586,39 @@ function resolveRow(sp, q) {   // a key, any screen's name, an accession, a gene
 // thousands of names does not scan every row per name; the first row in index order wins, as a scan would.
 // iso: also take a UniProt isoform (P04637-2) as its canonical accession
 const ACC_ISO = /^((?:[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9](?:[A-Z][A-Z0-9]{2}[0-9]){1,2}))-\d+$/i;
+// Why names were not found: found in another species of the Atlas (viruses only by UniProt accession, since short viral gene
+// names match by chance), a near spelling here (dashes and spaces aside, or one letter off), an ID type the Atlas does not
+// read, or none of these. Returns one line of HTML per kind.
+function lev1(a, b) {   // edit distance at most 1
+  if (a === b) return true; const la = a.length, lb = b.length; if (Math.abs(la - lb) > 1) return false;
+  let i = 0, j = 0, e = 0;
+  while (i < la && j < lb) { if (a[i] === b[j]) { i++; j++; continue; } if (++e > 1) return false; if (la > lb) i++; else if (lb > la) j++; else { i++; j++; } }
+  return e + (la - i) + (lb - j) <= 1;
+}
+function nearRow(sp, t) {   // a protein here whose gene symbol is the name with dashes and spaces aside, or one letter off
+  if (!sp.nearIx) { sp.nearIx = new Map(); sp.rows.forEach((r) => { const k = String(r.gene || '').toUpperCase().replace(/[^A-Z0-9]/g, ''); if (k && !sp.nearIx.has(k)) sp.nearIx.set(k, r); }); }
+  const k = String(t).toUpperCase().replace(/[^A-Z0-9]/g, ''); let r = sp.nearIx.get(k);
+  if (!r && k.length >= 4) for (const [kk, rr] of sp.nearIx) if (Math.abs(kk.length - k.length) <= 1 && lev1(kk, k)) { r = rr; break; }
+  return r || null;
+}
+const netLink = (spId, names) => `#/${spId}/network?ids=${encodeURIComponent(names.join(','))}`;
+async function explainMissing(sp, missing, { all = missing, link = netLink } = {}) {
+  const toks = [...new Set(missing)].slice(0, 200), left = new Set(toks), out = [], reg = await registry();
+  for (const o of (reg.species || []).filter((s) => s.id !== sp.id)) {
+    let osp; try { osp = await species(o.id); } catch (e) { continue; }
+    const hit = [...left].filter((t) => { const h = resolveHow(osp, t, true); return h && (o.id !== 'virus' || h.how === 'UniProt accession'); });
+    if (!hit.length) continue; hit.forEach((t) => left.delete(t));
+    const there = [...new Set(all)].filter((t) => { const h = resolveHow(osp, t, true); return h && (o.id !== 'virus' || h.how === 'UniProt accession'); });   // the link carries every name that species knows, not only the missing ones
+    out.push(`${fmtInt(hit.length)} found in ${esc(o.label)}: ${esc(hit.slice(0, 8).join(', '))}${hit.length > 8 ? ' …' : ''} · <a href="${link(o.id, there)}">open ${there.length === 1 ? 'it' : `all ${fmtInt(there.length)} names it knows`} in ${esc(o.label)}</a>`);
+  }
+  const near = [];
+  for (const t of [...left].slice(0, 40)) { const r = nearRow(sp, t); if (r) { near.push(`${esc(t)} → <a href="#/${sp.id}/${encodeURIComponent(r.key)}">${esc(r.gene)}</a>`); left.delete(t); } }
+  if (near.length) out.push(`close to a name here: ${near.join(', ')}`);
+  const idLike = [...left].filter((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)); idLike.forEach((t) => left.delete(t));
+  if (idLike.length) out.push(`${fmtInt(idLike.length)} look like Ensembl or Entrez IDs, which the Atlas does not read: use gene symbols or UniProt accessions`);
+  if (left.size) out.push(`not in any Atlas screen: ${esc([...left].slice(0, 20).join(', '))}${left.size > 20 ? ` and ${fmtInt(left.size - 20)} more` : ''}`);
+  return out;
+}
 function resolveHow(sp, q, iso = false) {
   const keyRule = sp.manifest.keyedBy ? 'FlyBase ID' : 'UniProt accession';
   if (sp.byKey.has(q)) return { row: sp.byKey.get(q), how: keyRule };
@@ -1689,7 +1725,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const qp = new URLSearchParams(); if (setId) qp.set('set', setId); if (iso) qp.set('iso', iso); if (RESQ) qp.set('res', resLabel(RESV));   // kept through the redirect to the canonical key
   const sp = await species(spId), P = resolveRow(sp, q), qs = qp.toString() ? `?${qp}` : '';
   if (gone()) return;
-  if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q)}” in the ${esc(sp.reg.label.toLowerCase())} screens. <a href="#/${sp.id}">Search ${esc(sp.reg.label.toLowerCase())} proteins</a></div>`; return; }
+  if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q)}” in the ${esc(sp.reg.label.toLowerCase())} screens. <a href="#/${sp.id}">Search ${esc(sp.reg.label.toLowerCase())} proteins</a><div class="miss" id="pp-miss" hidden style="text-align:left;max-width:640px;margin:12px auto 0"></div></div>`;
+    explainMissing(sp, [q], { link: (id, names) => `#/${id}/${encodeURIComponent(names[0])}` }).then((L) => { const b = $('#pp-miss'); if (!b || gone() || !L.length) return; b.innerHTML = L.map((x) => `<div>${x}</div>`).join(''); b.hidden = false; });
+    return; }
   if (P.key !== q) { location.replace(`#/${sp.id}/${P.key}${qs}`); return; }
   document.title = `${P.gene} · LIVIA Atlas`;
   const flags = [];
@@ -2998,7 +3036,7 @@ async function viewNested(spId, q) {
         <label title="accept only candidates whose chance p-value passes Benjamini–Hochberg q ≤ 0.05 within their round"><input type="checkbox" id="ns-strict"${S.strict ? ' checked' : ''}> Strict (BH q ≤ 0.05)</label>
         <label id="ns-para-wrap" title="two paralogs in the network count as one connection (MMseqs2 families, 30% identity over half of both sequences)"><input type="checkbox" id="ns-para"${S.para ? ' checked' : ''}> Count paralogs once</label>
         <button class="btn" id="ns-go" type="button">Build the nested network</button></div>
-      <p class="muted" id="ns-status" style="margin:10px 0 0"></p></div>
+      <p class="muted" id="ns-status" style="margin:10px 0 0"></p><div class="miss" id="ns-miss" hidden></div></div>
     <div class="card" id="ns-card" hidden><div class="card-head"><h2>Rounds</h2></div><div class="tbl-wrap"><table class="pt compact" id="ns-rounds-t"></table></div><p class="muted" id="ns-base" style="margin:8px 0 0"></p>
       <p class="legend-text">p: the chance of at least that many connections by chance, from the candidate's own share of partners past the cutoff and the accepted network's size (m). Expected false positives: the sum of those chances over every candidate tested in the round; since each candidate's share of partners past the cutoff includes its real partners, this errs high (compare the random networks below). The cutoffs are benchmarked on the top-ranked model's iLIS while an edge takes the best iLIS over every model, so the nominal false positive rate is a lower bound. m is how many of the accepted network the candidate was folded with (from the index of tested pairs; for a species without it, the baits in round 1 and the network's size after).</p></div>
     <div class="card" id="ns-ncard" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label><input type="checkbox" id="ns-hidden"> show hidden candidates</label>
@@ -3028,6 +3066,8 @@ async function viewNested(spId, q) {
     const cands = C.ok.filter((i) => !B.ok.includes(i));
     const qs = new URLSearchParams({ baits: B.ok.map((i) => sp.rows[i].key).join(','), cut: S.cut, k: S.k, rounds: S.rounds }); if (S.strict) qs.set('strict', '1'); if (S.para) qs.set('para', '1'); if (Rc.toks.length <= 400) qs.set('ids', Rc.toks.join(','));
     history.replaceState(null, '', `#/${sp.id}/nested?${qs}`);
+    { const mbox = $('#ns-miss'), mtok = String((+mbox.dataset.t || 0) + 1), miss = [...B.miss, ...C.miss]; mbox.dataset.t = mtok; mbox.hidden = true;   // why names were not found, as in the builder
+      if (miss.length) explainMissing(sp, miss).then((L) => { if (mbox.dataset.t !== mtok || !L.length) return; mbox.innerHTML = `<b>${fmtInt(new Set(miss).size)} name${new Set(miss).size === 1 ? '' : 's'} not found</b>` + L.map((x) => `<div>${x}</div>`).join(''); mbox.hidden = false; }); }
     if (!B.ok.length) { status(`Name at least one bait the ${esc(sp.reg.label)} screens hold${B.miss.length ? ` (not found: ${esc(B.miss.join(', '))})` : ''}.`); return; }
     if (!cands.length) { status('Give the candidates to test against the baits.'); return; }
     status('Reading the edge list…'); let E, K; try { [E, K] = await Promise.all([edges(sp), reported(sp)]); } catch (e) { status(esc(e.message)); return; }
@@ -3197,7 +3237,7 @@ async function viewNetwork(spId, q) {
     <div class="dshead"><h1>Network of your proteins-of-interest</h1><div class="pname"><a href="#/${sp.id}/nested">Nested network ↗</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
     <div class="card" id="nw-in"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions (isoforms too)${sp.manifest.keyedBy ? ', FlyBase IDs, CG numbers' : ''} or older names · commas, spaces or new lines, or a table · or drop a file (Excel, CSV, TSV) on this card</span></div>
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="for example: ${esc(eg)}">${esc(S.ids.split(',').join(', '))}</textarea>
-      <div class="controls" style="margin-top:8px"><button class="btn" id="nw-filebtn" type="button" title="a list or a table of names: txt, csv, tsv or Excel; a table's name column is found for you; you can also drop the file on this card">Load a file</button><input type="file" id="nw-file" accept="${FILE_ACCEPT}" hidden><label class="ctl" id="nw-sheet-wrap" hidden title="the workbook's sheets; the one with the most rows opens first">Sheet <select id="nw-sheet"></select></label>
+      <div class="controls" style="margin-top:8px"><button class="btn" id="nw-filebtn" type="button" title="a list or a table of names: txt, csv, tsv or Excel; a table's name column is found for you; you can also drop the file on this card">Load a file</button><input type="file" id="nw-file" accept="${FILE_ACCEPT}" hidden><label class="ctl" title="the species whose screens the network uses; switching keeps the names">Species <select id="nw-sp">${((REG && REG.species) || []).map((x) => `<option value="${x.id}"${x.id === sp.id ? ' selected' : ''}>${esc(x.label)}</option>`).join('')}</select></label><label class="ctl" id="nw-sheet-wrap" hidden title="the workbook's sheets; the one with the most rows opens first">Sheet <select id="nw-sheet"></select></label>
         <span class="ex-row" id="nw-ex"></span>
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
@@ -3209,19 +3249,22 @@ async function viewNetwork(spId, q) {
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
       <p class="muted khint" id="nw-khint"></p>
       <div class="kscan" id="nw-kscan-out" hidden></div>
-      <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
-    <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw')}
-        <label class="ctl" id="nw-ncol-wrap" style="display:none" title="color the proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
-        <label class="ctl" title="how the proteins are placed: force moves live; spring and Kamada-Kawai are fixed layouts, as in LIVIA Network">Layout <select id="nw-lay">${[['force', 'force (live)'], ['fr', 'spring (Fruchterman-Reingold)'], ['kk', 'Kamada-Kawai'], ['circle', 'circle']].map(([v, l]) => `<option value="${v}"${v === S.lay ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
-        <label class="ctl" title="lay the network out in groups, each in its own area with an outline">Group by<select id="nw-grp"></select></label>
-        <label class="ctl" id="nw-res-wrap" hidden title="community resolution: higher gives more, smaller communities; 1 is standard modularity">Resolution <input type="number" id="nw-res" min="0.1" max="5" step="0.1" value="${S.res}" style="width:64px"></label>
-        <label class="ctl" title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label>
-        <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
-        <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button>
-        </div></div><div class="controls" style="margin:8px 0 0"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
+      <p class="muted" id="nw-status" style="margin:10px 0 0"></p><div class="miss" id="nw-miss" hidden></div></div>
+    <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2></div>
+      <div class="optgrid">
+        <span class="optlab">Pairs</span><div class="controls">${edgeCtl('nw')}
+          <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
+          <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button></div>
+        <span class="optlab">Proteins</span><div class="controls"><label class="ctl" id="nw-ncol-wrap" style="display:none" title="color the proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
+          <label class="ctl" title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label></div>
+        <span class="optlab">Layout</span><div class="controls"><label class="ctl" title="how the proteins are placed: force moves live; spring and Kamada-Kawai are fixed layouts, as in LIVIA Network">Layout <select id="nw-lay">${[['force', 'force (live)'], ['fr', 'spring (Fruchterman-Reingold)'], ['kk', 'Kamada-Kawai'], ['circle', 'circle']].map(([v, l]) => `<option value="${v}"${v === S.lay ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
+          <label class="ctl" title="lay the network out in groups, each in its own area with an outline">Group by<select id="nw-grp"></select></label>
+          <label class="ctl" id="nw-res-wrap" hidden title="community resolution: higher gives more, smaller communities; 1 is standard modularity">Resolution <input type="number" id="nw-res" min="0.1" max="5" step="0.1" value="${S.res}" style="width:64px"></label></div>
+        <span class="optlab">Share</span><div class="controls"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
         <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div>
-      <div class="controls" style="margin:2px 0 6px"><label class="ctl" title="find a protein in this network: it is centered and marked">Find <input type="search" id="nw-find" placeholder="a protein in the network" aria-label="Find a protein in the network" style="width:190px"></label><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click opens its page in a new tab">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
-        <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
+        <span class="optlab">Explore</span><div class="controls"><label class="ctl" title="find a protein in this network: it is centered and marked">Find <input type="search" id="nw-find" placeholder="a protein in the network" aria-label="Find a protein in the network" style="width:190px"></label><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click opens its page in a new tab">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
+          <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
+      </div>
       <p class="muted" style="margin:2px 0 12px">Proteins-of-interest are large and dark, added partners small and light; a ring of dashes marks a protein you expanded. Click an edge for the interaction residues of the pair. Drag to move, scroll to zoom.</p>
       <div class="net" id="nw-net"></div>
 
@@ -3370,6 +3413,8 @@ async function viewNetwork(spId, q) {
     if (toks.length === 1 && $('#nw-add').value === 'none' && !seed) { $('#nw-add').value = 'top'; S.add = 'top'; showK(); }   // one protein alone has no pair: show its top partners
     const found = [], missing = [], how = new Map();
     for (const t of toks) { const h = resolveHow(sp, t, true); if (!h) { missing.push(t); continue; } how.set(h.how, (how.get(h.how) || 0) + 1); if (!found.includes(h.row)) found.push(h.row); }
+    const mbox = $('#nw-miss'), mtok = String((+mbox.dataset.t || 0) + 1); mbox.dataset.t = mtok; mbox.hidden = true;   // a newer draw wins over an older explanation still loading
+    if (missing.length) explainMissing(sp, missing, { all: toks }).then((L) => { if (stale(gen) || mbox.dataset.t !== mtok || !L.length) return; $('#nw-miss').innerHTML = `<b>${fmtInt(new Set(missing).size)} name${new Set(missing).size === 1 ? '' : 's'} not found</b>` + L.map((x) => `<div>${x}</div>`).join(''); $('#nw-miss').hidden = false; });
     if (!found.length) { status(`None of these names is in the ${esc(sp.reg.label)} screens: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}.${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions.' : ''}`); $('#nw-card').hidden = true; return; }
     const nFound = [...how.values()].reduce((s, n) => s + n, 0), twice = nFound - found.length;   // before the cap trims the list
     const CAP = 400, over = found.length > CAP ? found.length : 0; if (over) found.length = CAP;
@@ -3601,6 +3646,7 @@ async function viewNetwork(spId, q) {
   $('#nw-unexp').onclick = () => { S.exp = []; draw(); };
   $('#nw-grp').onchange = (e) => { S.grp = e.target.value; showRes(); draw(); };
   $('#nw-lay').onchange = (e) => { S.lay = e.target.value; draw(); };
+  $('#nw-sp').onchange = (e) => { const ids = S.ids || $('#nw-ids').value.split(/[\s,;]+/).filter(Boolean).join(','); location.hash = `#/${e.target.value}/network?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };
   { let t = 0; $('#nw-res').oninput = () => { const v = +$('#nw-res').value; if (!(v >= 0.1 && v <= 5)) return; S.res = v; clearTimeout(t); t = setTimeout(() => draw(), 350); }; }
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
   $('#nw-heat-show').onchange = () => { if (heatArgs) heatmap(...heatArgs); };

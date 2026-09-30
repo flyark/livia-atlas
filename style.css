@@ -546,3 +546,11 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .khint:empty { display: none; }
 .ctl[hidden], .controls [hidden] { display: none !important; }   /* hidden wins over the controls' own display */
 .card.dropping { outline: 2px dashed var(--blue); outline-offset: -6px; background: var(--blue-soft); }   /* a file is being dragged over the card */
+.miss { margin: 8px 0 0; padding: 8px 12px; border-left: 3px solid var(--fpr10); background: #FFF8E6; border-radius: 0 8px 8px 0; font-size: 13px; color: var(--ink-2); display: grid; gap: 3px; }
+.miss b { color: var(--ink); font-weight: 600; }
+/* The network's options in labeled rows: what the pairs show, how proteins are colored or hidden, the layout and its groups,
+   sharing, and exploring. Related settings stay on one row whatever the width. */
+.optgrid { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 8px 14px; align-items: center; margin: 10px 0 8px; }
+.optgrid .controls { margin: 0; }
+.optlab { font: 600 11px var(--sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+@media (max-width: 640px) { .optgrid { grid-template-columns: minmax(0, 1fr); gap: 4px; } .optlab { margin-top: 6px; } }
