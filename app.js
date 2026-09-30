@@ -63,10 +63,11 @@ const archiveOf = (recs) => (recs.length ? recs.map((r) => `LIVIA Atlas version 
 const archiveLine = () => { const recs = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(recOf).filter(Boolean))].sort();   // the versions this site reads
   return recs.map((r) => { const ids = [...new Set(REG.datasets.filter((d) => recOf(d) === r).map((d) => d.short))]; return `LIVIA Atlas version ${REC_VERSION[r] || '?'}, <i>Zenodo</i>, <a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">doi:10.5281/zenodo.${r}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi:${ARCHIVE.doi}</a>`; };
 const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && d.zip.url) || ''); return m ? m[1] : null; };
+const doiUrl = (u) => { const m = /(10\.\d{4,9}\/[^\s?#]+?)(v\d+)?(\.full(\.pdf)?)?$/.exec(u || ''); return m && !/^http.*nvidia/.test(u) ? `https://doi.org/${m[1]}` : u; };   // a preprint cited by its DOI
+const refOf = (id) => { const d = ((REG && REG.datasets) || []).find((x) => x.id === id); return d ? `${d.source.replace(' · ', ', ')}${d.paper ? `, ${doiUrl(d.paper)}` : ''}` : ''; };   // a screen's source, for exported tables
 const citeText = (title, ids = []) => {
   const ds = ids.map((id) => ((REG && REG.datasets) || []).find((d) => d.id === id)).filter(Boolean);
   const recs = [...new Set(ds.map(recOf).filter(Boolean))];
-  const doiUrl = (u) => { const m = /(10\.\d{4,9}\/[^\s?#]+?)(v\d+)?(\.full(\.pdf)?)?$/.exec(u || ''); return m && !/^http.*nvidia/.test(u) ? `https://doi.org/${m[1]}` : u; };   // a preprint cited by its DOI
   const src = [...new Set(ds.filter((d) => d.paper && !d.paper.includes(ARCHIVE.doi)).map((d) => `${d.source.replace(' · ', ', ')}, ${doiUrl(d.paper)}`))];
   return `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (accessed ${new Date().toISOString().slice(0, 10)}). `
     + `Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}. `
@@ -2975,7 +2976,7 @@ async function viewVirus(spId, taxid) {
   $('#vp-homo').onchange = () => { shownPairs = 60; tables(); };
   $('#vp-find').oninput = () => { shownPairs = 60; tables(); };   // filter by either protein's gene, name or accession
   $('#vp-csv').onclick = () => { const csvq = (x) => (/[",\n]/.test(x) ? `"${String(x).replace(/"/g, '""')}"` : x), c = CUT[cut];
-    const text = `Protein_1,Protein_2,accession_1,accession_2,${MCOL.join(',')},band,AFDB_model,displayed_by_AFDB\n` + all.filter((x) => x.best >= c).map((x) => [csvq(R(x.a).gene), csvq(R(x.b).gene), R(x.a).acc || R(x.a).key, R(x.b).acc || R(x.b).key, ...MCOL.map((k) => (Number.isFinite(x.m[k]) ? x.m[k] : '')), bandLabel[bandOf(x.best)], x.model, x.shown ? 'yes' : 'no'].join(',')).join('\n') + '\n';
+    const text = `Protein_1,Protein_2,accession_1,accession_2,${MCOL.join(',')},band,AFDB_model,displayed_by_AFDB,reference\n` + all.filter((x) => x.best >= c).map((x) => [csvq(R(x.a).gene), csvq(R(x.b).gene), R(x.a).acc || R(x.a).key, R(x.b).acc || R(x.b).key, ...MCOL.map((k) => (Number.isFinite(x.m[k]) ? x.m[k] : '')), bandLabel[bandOf(x.best)], x.model, x.shown ? 'yes' : 'no', csvq(sp.dsIds.map(refOf).filter(Boolean).join('; '))].join(',')).join('\n') + '\n';
     const u = URL.createObjectURL(new Blob(['\ufeff' + text], { type: 'text/csv;charset=utf-8' })), a = document.createElement('a'); a.href = u; a.download = `atlas_virus_${v.taxid}_pairs.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   draw();
 }
@@ -3390,7 +3391,7 @@ async function viewNetwork(spId, q) {
   { const w = d3.select('#nw-w'); [[0.1, 10], [0.4, 95], [0.7, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
     w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a.toFixed(1)); }); }
   const status = (t) => { $('#nw-status').innerHTML = t; };
-  const gname = (i) => sp.rows[i].gene, screens = (m) => sp.dsShort.filter((_, di) => m & (1 << di)).join(' + ');
+  const gname = (i) => sp.rows[i].gene, screens = (m) => sp.dsShort.filter((_, di) => m & (1 << di)).join(' + '), refs = (m) => [...new Set(sp.dsIds.filter((_, di) => m & (1 << di)).map(refOf).filter(Boolean))].join('; ');
   let tableNote = '';
   function readInput() {   // the names to draw, through readIdInput; the column picker and the note follow it
     const R = readIdInput(sp, $('#nw-ids').value, S.col), wrap = $('#nw-col-wrap'); S.col = R.col; S.data = R.data; tableNote = R.note;
@@ -3680,9 +3681,9 @@ async function viewNetwork(spId, q) {
   $('#nw-csv').onclick = () => { const csvq = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
     const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
     const fly = !!sp.manifest.keyedBy, ids = (i) => (fly ? [sp.rows[i].key, sp.rows[i].acc || ''] : [sp.rows[i].acc || sp.rows[i].key]);   // which protein: the UniProt accession (fly: FlyBase gene and UniProt)
-    const rep = (net ? net.extra : []).map((l) => { const [a, b] = e2(l), f = FOLD.get(fkey(a, b)); return [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), f && Number.isFinite(f.best) ? f.best.toFixed(3) : '', '', '', '', '', l.pubs || 0, l.gen || 0, f ? (f.st === 'none' ? 'reported, never folded' : 'reported, folded below the cutoff') : 'reported, not predicted'].join(','); });
+    const rep = (net ? net.extra : []).map((l) => { const [a, b] = e2(l), f = FOLD.get(fkey(a, b)); return [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), f && Number.isFinite(f.best) ? f.best.toFixed(3) : '', '', '', '', '', '', l.pubs || 0, l.gen || 0, csvq(f ? (f.st === 'none' ? 'reported, never folded' : 'reported, folded below the cutoff') : 'reported, not predicted')].join(','); });
     const idHead = fly ? 'FlyBase_1,UniProt_1,FlyBase_2,UniProt_2' : 'UniProt_1,UniProt_2';
-    const text = `Protein_1,Protein_2,${idHead},iLIS_best,iLIS_avg,ipTM_best,ipTM_avg,screens,BioGRID_physical,BioGRID_genetic,type\n` + rowsOut().map(({ a, b, l }) => [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), l.best.toFixed(3), l.avg.toFixed(3), Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : '', Number.isFinite(l.ipta) ? l.ipta.toFixed(2) : '', csvq(screens(l.src)), l.pubs || 0, l.gen || 0, 'predicted'].join(','))
+    const text = `Protein_1,Protein_2,${idHead},iLIS_best,iLIS_avg,ipTM_best,ipTM_avg,screens,reference,BioGRID_physical,BioGRID_genetic,type\n` + rowsOut().map(({ a, b, l }) => [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), l.best.toFixed(3), l.avg.toFixed(3), Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : '', Number.isFinite(l.ipta) ? l.ipta.toFixed(2) : '', csvq(screens(l.src)), csvq(refs(l.src)), l.pubs || 0, l.gen || 0, 'predicted'].join(','))
       .concat(rep).join('\n') + '\n';
     const u = URL.createObjectURL(new Blob(['\ufeff' + text], { type: 'text/csv;charset=utf-8' })), d = document.createElement('a'); d.href = u; d.download = `atlas_${sp.id}_network.csv`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   $('#nw-graphml').onclick = () => { if (!net) return;
@@ -3690,11 +3691,11 @@ async function viewNetwork(spId, q) {
     const deg = new Map(); rowsOut().forEach(({ a, b }) => { deg.set(a, (deg.get(a) || 0) + 1); deg.set(b, (deg.get(b) || 0) + 1); });
     const keys = [['gene', 'node', 'string'], ['key', 'node', 'string'], ['accession', 'node', 'string'], ['group', 'node', 'string'], ['degree', 'node', 'int'],
       ...(S.data || []).map((x, n) => [`data${n}`, 'node', x.kind === 'num' ? 'double' : 'string', x.name]),
-      ['type', 'edge', 'string'], ['iLIS_best', 'edge', 'double'], ['iLIS_avg', 'edge', 'double'], ['ipTM_best', 'edge', 'double'], ['ipTM_avg', 'edge', 'double'], ['screens', 'edge', 'string'], ['BioGRID_physical', 'edge', 'int'], ['BioGRID_genetic', 'edge', 'int']];
+      ['type', 'edge', 'string'], ['iLIS_best', 'edge', 'double'], ['iLIS_avg', 'edge', 'double'], ['ipTM_best', 'edge', 'double'], ['ipTM_avg', 'edge', 'double'], ['screens', 'edge', 'string'], ['reference', 'edge', 'string'], ['BioGRID_physical', 'edge', 'int'], ['BioGRID_genetic', 'edge', 'int']];
     const d = (k, v) => (v === '' || v == null || (typeof v === 'number' && !Number.isFinite(v)) ? '' : `<data key="${k}">${x(v)}</data>`);
     const nodesX = net.nodes.map((n) => `<node id="n${n.id}">${d('gene', n.row.gene)}${d('key', n.row.key)}${d('accession', n.row.acc || '')}${d('group', n.q ? 'query' : n.grew ? 'added by a click' : 'added partner')}${d('degree', deg.get(n.id) || 0)}${(S.data || []).map((c2, k) => (c2.vals.has(n.id) ? d(`data${k}`, c2.vals.get(n.id)) : '')).join('')}</node>`);
     const ends = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
-    const edgesX = [...rowsOut().map(({ a, b, l }) => `<edge source="n${a}" target="n${b}">${d('type', 'predicted')}${d('iLIS_best', +l.best.toFixed(3))}${d('iLIS_avg', +l.avg.toFixed(3))}${d('ipTM_best', Number.isFinite(l.iptm) ? +l.iptm.toFixed(2) : '')}${d('ipTM_avg', Number.isFinite(l.ipta) ? +l.ipta.toFixed(2) : '')}${d('screens', screens(l.src))}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`),
+    const edgesX = [...rowsOut().map(({ a, b, l }) => `<edge source="n${a}" target="n${b}">${d('type', 'predicted')}${d('iLIS_best', +l.best.toFixed(3))}${d('iLIS_avg', +l.avg.toFixed(3))}${d('ipTM_best', Number.isFinite(l.iptm) ? +l.iptm.toFixed(2) : '')}${d('ipTM_avg', Number.isFinite(l.ipta) ? +l.ipta.toFixed(2) : '')}${d('screens', screens(l.src))}${d('reference', refs(l.src))}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`),
       ...net.extra.map((l) => { const [a, b] = ends(l); const f = FOLD.get(fkey(a, b)); return `<edge source="n${a}" target="n${b}">${d('type', `reported, not predicted${!f ? '' : f.st === 'low' ? '; folded, below the cutoff' : f.st === 'none' ? '; never folded in these screens' : ''}`)}${f && f.st === 'low' ? d('iLIS_best', +f.best.toFixed(3)) : ''}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`; })];
     const text = `<?xml version="1.0" encoding="UTF-8"?>\n<graphml xmlns="http://graphml.graphdrawing.org/xmlns">\n${keys.map(([id, f, t, nm]) => `<key id="${id}" for="${f}" attr.name="${x(nm || id)}" attr.type="${t}"/>`).join('\n')}\n`
       + `<graph id="atlas_${sp.id}_network" edgedefault="undirected">\n${nodesX.join('\n')}\n${edgesX.join('\n')}\n</graph>\n</graphml>\n`;
