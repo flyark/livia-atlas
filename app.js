@@ -3163,9 +3163,9 @@ async function viewNetwork(spId, q) {
       + `<text x="${(L + W) / 2}" y="${H - 4}" text-anchor="middle" font-size="10" fill="var(--ink-3)">partner rank</text><text x="10" y="${(T + H - B) / 2}" text-anchor="middle" font-size="10" fill="var(--ink-3)" transform="rotate(-90 10 ${(T + H - B) / 2})">shared</text></svg>`;
     const kb = (k) => `<button type="button" class="btn" data-k="${k}">${k} per protein</button>`;
     out.innerHTML = (depth
-      ? `<p>Each protein’s partners stay shared with another protein-of-interest more often than in random lists through rank <b>${depth}</b>. Suggested: ${kb(kS)} <span class="muted">(${fmtInt(size[kS - 1])} proteins drawn)</span>${kC > kS ? ` · up to ${kb(kC)} <span class="muted">before the ${CAP}-protein cap (${fmtInt(size[kC - 1])})</span>` : ''}</p>`
+      ? `<p>Each protein’s partners stay shared with another protein-of-interest more often than in random lists through rank <b>${depth}</b>. Suggested: ${kb(kS)} <span class="muted">(${fmtInt(size[kS - 1])} proteins drawn)</span>${kC > kS ? ` · up to ${kb(kC)} <span class="muted">within rank ${depth} and under the ${CAP}-protein cap (${fmtInt(size[kC - 1])})</span>` : ''}</p>`
       : `<p>At no rank are partners shared with another protein-of-interest more often than in random lists, so added partners would mostly be unrelated to the rest. No suggestion.${Q.size < 20 ? ` With ${fmtInt(Q.size)} proteins-of-interest only strong sharing can show.` : ''}</p>`)
-      + `<div class="kscan-body">` + svg + `<p class="muted" style="margin:0"><span style="color:var(--navy)">●</span> these proteins-of-interest, filled while above random · dashed line and band: 100 random lists (median, 5th–95th percentile) of proteins with as many partners past the cutoff, the same for every run of this list. Shared: the partner is itself a protein-of-interest or has a predicted pair with another one. Exploratory: k is chosen from these data, not tested. Proteins drawn are counted before Min. pairs.${never != null && never > 0.75 ? ` ${Math.round(100 * never)}% of pairs among these proteins were never folded, so sharing is undercounted.` : ''}</p></div>`;
+      + `<div class="kscan-body">` + svg + `<p class="muted" style="margin:0"><span style="color:var(--navy)">●</span> these proteins-of-interest, filled while above random · dashed line and band: 100 random lists (median, 5th–95th percentile) of proteins with as many partners past the cutoff, the same for every run of this list at this cutoff. Shared: the partner is itself a protein-of-interest or has a predicted pair with another one. Exploratory: k is chosen from these data, not tested. Proteins drawn are counted before Min. pairs.${never != null && never > 0.75 ? ` ${Math.round(100 * never)}% of pairs among these proteins were never folded, so sharing is undercounted.` : ''}</p></div>`;
     out.querySelectorAll('button[data-k]').forEach((b) => (b.onclick = () => { $('#nw-k').value = b.dataset.k; draw(); }));
   }
   $('#nw-kscan').onclick = () => draw().then(kScan);   // always the list in the box, drawn first
@@ -3236,8 +3236,8 @@ async function viewNetwork(spId, q) {
     else wrap.hidden = true;
     $('#nw-table').textContent = tableNote; return R.toks;
   }
-  async function draw(seed = null) {
-    const scanWas = !$('#nw-kscan-out').hidden && SCAN ? SCAN.key : null; SCAN = null; $('#nw-kscan-out').hidden = true;   // a draw that stops early leaves no list to suggest for   // seed: the positions and zoom to keep when a click adds partners
+  async function draw(seed = null) {   // seed: the positions and zoom to keep when a click adds partners
+    const scanWas = !$('#nw-kscan-out').hidden && SCAN ? SCAN.key : null; SCAN = null; $('#nw-kscan-out').hidden = true; $('#nw-khint').textContent = '';   // a draw that stops early leaves no list to suggest for
     hideTip(); const toks = readInput();
     const ns = $('#nw-ncol'); if (S.ncol && !(S.data || []).some((x) => x.name === S.ncol)) S.ncol = '';
     if (!S.ncolUser) S.ncol = autoColor(S.data || []);   // chosen for the reader until they pick one
