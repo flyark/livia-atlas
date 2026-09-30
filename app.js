@@ -3090,12 +3090,13 @@ async function viewNetwork(spId, q) {
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="shared">+ partners that two or more share</option><option value="top">+ each one's top partners</option></select></label>
         <label title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label>
-        <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein<span class="muted" id="nw-khint" style="margin-left:6px"></span></span>
+        <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein <button type="button" class="btn" id="nw-kscan" title="how deep each protein’s ranked partners stay shared with another protein-of-interest, compared with random lists; exploratory">Suggest</button><span class="muted" id="nw-khint" style="margin-left:6px"></span></span>
         <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}<button data-f="c" class="${S.cut === 'c' ? 'on' : ''}" title="an iLIS cutoff of your own">custom</button></div>
           <input type="number" id="nw-cutv" min="${CUT[10]}" max="1" step="0.01" value="${S.cutv}" style="width:70px${S.cut === 'c' ? '' : ';display:none'}" aria-label="custom iLIS cutoff" title="iLIS from ${CUT[10]} (the edge list holds the pairs past 10% FPR) to 1"></div>
         <label title="also require this ipTM (best over models); blank or 0 for none">ipTM ≥ <input type="number" id="nw-iptm" min="0" max="1" step="0.05" value="${S.iptm || ''}" placeholder="any" style="width:64px"></label>
         <label>In <select id="nw-set">${scopes.map(([id, l]) => `<option value="${esc(id)}"${id === S.set ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
         <button class="btn" id="nw-go" type="button">Draw the network</button></div>
+      <div class="kscan" id="nw-kscan-out" hidden></div>
       <p class="muted" id="nw-status" style="margin:10px 0 0"></p></div>
     <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0">${edgeCtl('nw')}
         <label class="ctl" id="nw-ncol-wrap" style="display:none" title="color the proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
@@ -3116,8 +3117,57 @@ async function viewNetwork(spId, q) {
         <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
         <div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
   $('#nw-add').value = S.add;
-  const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; }; showK();   // the number also sets how many a click adds
+  const showK = () => { $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; $('#nw-kscan').hidden = $('#nw-add').value !== 'top'; }; showK();   // the number also sets how many a click adds
   const redraw = () => { if (!$('#nw-card').hidden) draw(); };   // once a network is drawn, every option redraws it at once
+  // Suggest a number of partners per protein (exploratory). For ranks 1-2, 3-5, 6-10 ... 51-100: the share of each protein's
+  // partner at that rank that is itself a protein-of-interest or has a predicted pair with another one, against 100 random
+  // lists of proteins with the same number of partners past the cutoff (drawn with a seed from the list, so a list always gets
+  // the same answer). Depth: the last rank of an unbroken run of windows above the random 95th percentile. Suggested k: the
+  // largest k within that depth that draws at most 250 proteins; the other number is the largest before the 400-protein cap.
+  let SCAN = null;
+  const KWIN = [[1, 2], [3, 5], [6, 10], [11, 15], [16, 20], [21, 30], [31, 50], [51, 100]], KREAD = 250, KRUNS = 100;
+  async function kScan() {
+    const out = $('#nw-kscan-out'); if (!SCAN) return;
+    const { Q, nbS, expandTop, n, CAP, TP } = SCAN, key = SCAN.key;
+    out.hidden = false;
+    if (Q.size < 5) { out.innerHTML = '<p class="muted">Suggest needs at least 5 proteins-of-interest.</p>'; return; }
+    out.innerHTML = '<p class="muted">Comparing with 100 random lists…</p>';
+    await new Promise((r) => setTimeout(r, 0));
+    let h = 2166136261; for (const i of [...Q].sort((a, b) => a - b)) { h ^= i; h = Math.imul(h, 16777619); }
+    let a = h >>> 0; const rand = () => { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+    const bin = (i) => { const d = nbS(i).length; return d ? 1 + Math.floor(Math.log2(d)) : 0; }, byBin = new Map();
+    for (let i = 0; i < n; i++) { const b = bin(i); if (!byBin.has(b)) byBin.set(b, []); byBin.get(b).push(i); }
+    const rset = () => { const o = new Set(); for (const q of Q) { const b = bin(q); for (let w = 0; w < 30; w++) { const cand = []; for (let bb = b - w; bb <= b + w; bb++) for (const i of byBin.get(bb) || []) if (!Q.has(i) && !o.has(i)) cand.push(i); if (cand.length) { o.add(cand[Math.floor(rand() * cand.length)]); break; } } } return o; };
+    const share = (L, k0, k1) => { let m = 0, sh = 0; for (const i of L) for (let k = k0; k <= k1; k++) { const j = nbS(i)[k - 1]; if (j == null) continue; m++; if (L.has(j) || nbS(j).some((x) => x !== i && L.has(x))) sh++; } return m ? sh / m : NaN; };
+    const sets = Array.from({ length: KRUNS }, rset), qt = (v, p) => v[Math.min(v.length - 1, Math.floor(p * (v.length - 1)))], rows = [];
+    for (const [k0, k1] of KWIN) {
+      const f = share(Q, k0, k1), rv = sets.map((L) => share(L, k0, k1)).filter((x) => !Number.isNaN(x)).sort((x, y) => x - y);
+      if (Number.isNaN(f) || !rv.length) break;
+      rows.push({ k0, k1, f, lo: qt(rv, 0.05), med: qt(rv, 0.5), hi: qt(rv, 0.95) });
+      await new Promise((r) => setTimeout(r, 0)); if (!SCAN || SCAN.key !== key) return;
+    }
+    let depth = 0; for (const r of rows) { if (r.f > r.hi) depth = r.k1; else break; }
+    const kMax = Math.max(1, Math.min(depth, 50)), size = []; for (let k = 1; k <= kMax; k++) size.push(expandTop(Q, k, new Set(Q)).size);
+    let kS = 1, kC = 1; for (let k = 1; k <= kMax; k++) { if (size[k - 1] <= KREAD && size[k - 1] < CAP) kS = k; else break; }
+    for (let k = 1; k <= kMax; k++) { if (size[k - 1] < CAP) kC = k; else break; }
+    let never = null; if (TP) { const qa = [...Q]; let all = 0, un = 0; for (let x = 0; x < qa.length; x++) for (let y = x + 1; y < qa.length; y++) { all++; if (!TP.has(qa[x], qa[y])) un++; } never = all ? un / all : null; }
+    const W = 460, H = 150, L = 40, B = 34, T = 10, xs = (i) => L + (i + 0.5) * (W - L - 8) / rows.length, ys = (v) => T + (1 - v) * (H - T - B);
+    const band = rows.map((r, i) => `${xs(i)},${ys(r.hi)}`).join(' ') + ' ' + rows.map((r, i) => `${xs(i)},${ys(r.lo)}`).reverse().join(' ');
+    const svg = `<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W}px" role="img" aria-label="share of ranked partners shared with another protein-of-interest, by rank, against random lists">`
+      + [0, 0.5, 1].map((v) => `<line x1="${L}" x2="${W - 8}" y1="${ys(v)}" y2="${ys(v)}" stroke="var(--line)"/><text x="${L - 6}" y="${ys(v) + 4}" text-anchor="end" font-size="10" fill="var(--ink-3)">${v}</text>`).join('')
+      + `<polygon points="${band}" fill="var(--line-2)" stroke="none"/>`
+      + `<polyline points="${rows.map((r, i) => `${xs(i)},${ys(r.med)}`).join(' ')}" fill="none" stroke="var(--below)" stroke-dasharray="4 3"/>`
+      + `<polyline points="${rows.map((r, i) => `${xs(i)},${ys(r.f)}`).join(' ')}" fill="none" stroke="var(--navy)" stroke-width="2"/>`
+      + rows.map((r, i) => `<circle cx="${xs(i)}" cy="${ys(r.f)}" r="4" fill="${r.k1 <= depth ? 'var(--navy)' : 'var(--card)'}" stroke="var(--navy)" stroke-width="1.5"><title>ranks ${r.k0}–${r.k1}: ${(100 * r.f).toFixed(0)}% shared; random lists ${(100 * r.med).toFixed(0)}% (95th percentile ${(100 * r.hi).toFixed(0)}%)</title></circle><text x="${xs(i)}" y="${H - B + 16}" text-anchor="middle" font-size="10" fill="var(--ink-3)">${r.k0}–${r.k1}</text>`).join('')
+      + `<text x="${(L + W) / 2}" y="${H - 4}" text-anchor="middle" font-size="10" fill="var(--ink-3)">partner rank</text><text x="10" y="${(T + H - B) / 2}" text-anchor="middle" font-size="10" fill="var(--ink-3)" transform="rotate(-90 10 ${(T + H - B) / 2})">share shared</text></svg>`;
+    const kb = (k) => `<button type="button" class="btn" data-k="${k}">${k} per protein</button>`;
+    out.innerHTML = (depth
+      ? `<p>Each protein’s partners stay shared with another protein-of-interest more often than in random lists through rank <b>${depth}</b>. Suggested: ${kb(kS)} <span class="muted">(${fmtInt(size[kS - 1])} proteins drawn)</span>${kC > kS ? ` · up to ${kb(kC)} <span class="muted">before the ${CAP}-protein cap (${fmtInt(size[kC - 1])})</span>` : ''}</p>`
+      : `<p>At no rank are partners shared with another protein-of-interest more often than in random lists, so added partners would mostly be unrelated to the rest. No suggestion.</p>`)
+      + `<div class="kscan-body">` + svg + `<p class="muted" style="margin:0"><span style="color:var(--navy)">●</span> these proteins-of-interest, filled while above random · dashed line and band: 100 random lists (median, 5th–95th percentile) of proteins with as many partners past the cutoff, the same for every run of this list. Shared: the partner is itself a protein-of-interest or has a predicted pair with another one. Exploratory: k is chosen from these data, not tested. Proteins drawn are counted before Min. pairs.${never != null && never > 0.75 ? ` ${Math.round(100 * never)}% of pairs among these proteins were never folded, so sharing is undercounted.` : ''}</p></div>`;
+    out.querySelectorAll('button[data-k]').forEach((b) => (b.onclick = () => { $('#nw-k').value = b.dataset.k; draw(); }));
+  }
+  $('#nw-kscan').onclick = () => { if ($('#nw-card').hidden) draw().then(kScan); else kScan(); };
   $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = f === 'c' ? 'c' : +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     $('#nw-cutv').style.display = S.cut === 'c' ? '' : 'none'; redraw(); };
   { let t = 0; $('#nw-cutv').oninput = (e) => { clearTimeout(t); t = setTimeout(() => { const v = parseFloat(e.target.value); if (!Number.isFinite(v)) return;
@@ -3213,9 +3263,13 @@ async function viewNetwork(spId, q) {
     if (stale(gen)) return;
     const c = cutV(), Q = new Set(found.map((r) => r.i)), keep = new Set(Q), grew = new Set(), expd = new Set();
     const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => passE(e));
+    const srt = new Map(), nbS = (i) => { let v = srt.get(i); if (!v) { v = nb(i).sort((a, b) => b[1].best - a[1].best).map(([j]) => j); srt.set(i, v); } return v; };   // partners past the cutoff, best first
+    const expandTop = (Q0, k, into) => { for (const i of Q0) for (const j of nbS(i).slice(0, k)) { if (into.size >= CAP) break; into.add(j); } return into; };   // each protein's top k partners, up to the cap
+    const skey = [[...Q].sort((a, b) => a - b).join(','), c, S.iptm, S.set].join('|'); if (SCAN && SCAN.key !== skey) $('#nw-kscan-out').hidden = true;
+    SCAN = { key: skey, Q, nbS, expandTop, n: sp.rows.length, CAP, TP: S.set ? null : TP };
     if (S.add === 'shared') { const n = new Map(); for (const i of Q) for (const [j] of nb(i)) if (!Q.has(j)) n.set(j, (n.get(j) || 0) + 1);
       [...n].filter(([, k]) => k >= 2).sort((a, b) => b[1] - a[1] || gname(a[0]).localeCompare(gname(b[0]))).slice(0, CAP - keep.size).forEach(([j]) => keep.add(j)); }
-    else if (S.add === 'top') for (const i of Q) { for (const [j] of nb(i).sort((a, b) => b[1].best - a[1].best).slice(0, S.k)) { if (keep.size >= CAP) break; keep.add(j); } }
+    else if (S.add === 'top') expandTop(Q, S.k, keep);
     let expNote = '', lastFresh = 0, lastAdded = 0;   // what the latest click could add, and did
     for (const key of S.exp) {   // clicks: each expanded protein's top partners, in the order clicked, while under the cap
       const r = sp.byKey.get(key); if (!r || !keep.has(r.i)) continue; expd.add(r.i);

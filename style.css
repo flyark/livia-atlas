@@ -526,3 +526,8 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .ex-row select { max-width: min(360px, 100%); }
 .ex-row label { display: inline-flex; align-items: center; gap: 6px; min-width: 0; max-width: 100%; }   /* the picker shrinks to the row, not to its longest name */
 .ex-row label select { min-width: 0; flex: 1 1 auto; }
+.kscan { margin: 10px 0 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--card); max-width: 100%; overflow-x: auto; }
+.kscan p { margin: 0 0 6px; }
+.kscan .btn { padding: 2px 8px; font-size: 13px; }
+.kscan-body { display: grid; grid-template-columns: minmax(0, 460px) minmax(0, 1fr); gap: 16px; align-items: center; }
+@media (max-width: 720px) { .kscan-body { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
