@@ -1605,7 +1605,16 @@ function nearRow(sp, t) {   // a protein here whose gene symbol is the name with
 }
 const netLink = (spId, names) => `#/${spId}/network?ids=${encodeURIComponent(names.join(','))}`;
 async function explainMissing(sp, missing, { all = missing, link = netLink } = {}) {
-  const toks = [...new Set(missing)].slice(0, 200), left = new Set(toks), out = [], reg = await registry();
+  const toks = [...new Set(missing)].slice(0, 200), left = new Set(toks), out = [], reg = await registry(), heads = [];
+  if (sp.absent === undefined) sp.absent = await getJSON(sp.base + 'absent.json').catch(() => null);   // real genes the screens do not hold (UniProt, human)
+  const A = sp.absent;
+  if (A) {   // a real gene is never turned into a look-alike symbol: too long for the screens, or not in them, with its length
+    const known = [...left].map((t) => { const g = A.g[t] ? t : A.g[t.toUpperCase()] ? t.toUpperCase() : A.s[t] || A.s[t.toUpperCase()]; return g ? { t, g, len: A.g[g][1] } : null; }).filter(Boolean);
+    known.forEach((k) => left.delete(k.t));
+    const nm = (k) => `${esc(k.t)}${k.g !== k.t ? ` (${esc(k.g)})` : ''} ${fmtInt(k.len)} aa`, long = known.filter((k) => k.len > A.maxLen), other = known.filter((k) => k.len <= A.maxLen);
+    if (long.length) { out.push(`${fmtInt(long.length)} too long for the screens (the longest protein folded here is ${fmtInt(A.maxLen)} aa): ${long.slice(0, 12).map(nm).join(', ')}${long.length > 12 ? ' …' : ''}`); heads.push(`${fmtInt(long.length)} too long for the screens (${esc(long.slice(0, 3).map((k) => k.t).join(', '))}${long.length > 3 ? ' …' : ''})`); }
+    if (other.length) { out.push(`${fmtInt(other.length)} real gene${other.length === 1 ? '' : 's'} not in these screens: ${other.slice(0, 12).map(nm).join(', ')}${other.length > 12 ? ' …' : ''}`); heads.push(`${fmtInt(other.length)} not in these screens`); }
+  }
   for (const o of (reg.species || []).filter((s) => s.id !== sp.id)) {
     let osp; try { osp = await species(o.id); } catch (e) { continue; }
     const hit = [...left].filter((t) => { const h = resolveHow(osp, t, true); return h && (o.id !== 'virus' || h.how === 'UniProt accession'); });
@@ -1614,11 +1623,12 @@ async function explainMissing(sp, missing, { all = missing, link = netLink } = {
     out.push(`${fmtInt(hit.length)} found in ${esc(o.label)}: ${esc(hit.slice(0, 8).join(', '))}${hit.length > 8 ? ' …' : ''} · <a href="${link(o.id, there)}">open ${there.length === 1 ? 'it' : `all ${fmtInt(there.length)} names it knows`} in ${esc(o.label)}</a>`);
   }
   const near = [];
-  for (const t of [...left].slice(0, 40)) { const r = nearRow(sp, t); if (r) { near.push(`${esc(t)} → <a href="#/${sp.id}/${encodeURIComponent(r.key)}">${esc(r.gene)}</a>`); left.delete(t); } }
-  if (near.length) out.push(`close to a name here: ${near.join(', ')}`);
+  for (const t of [...left].slice(0, 40)) { const r = nearRow(sp, t); if (r) { near.push(`${esc(t)}: <a href="#/${sp.id}/${encodeURIComponent(r.key)}">${esc(r.gene)}</a>?`); left.delete(t); } }
+  if (near.length) { out.push(`unknown name, possibly a typo (not used): ${near.join(', ')}`); heads.push(`${fmtInt(near.length)} possibly a typo`); }
   const idLike = [...left].filter((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)); idLike.forEach((t) => left.delete(t));
   if (idLike.length) out.push(`${fmtInt(idLike.length)} look like Ensembl or Entrez IDs, which the Atlas does not read: use gene symbols or UniProt accessions`);
-  if (left.size) out.push(`not in any Atlas screen: ${esc([...left].slice(0, 20).join(', '))}${left.size > 20 ? ` and ${fmtInt(left.size - 20)} more` : ''}`);
+  if (left.size) { out.push(`not in any Atlas screen: ${esc([...left].slice(0, 20).join(', '))}${left.size > 20 ? ` and ${fmtInt(left.size - 20)} more` : ''}`); heads.push(`${fmtInt(left.size)} unknown`); }
+  out.head = heads.length ? heads.join(' · ') : '';   // the summary names the reasons, not just a count
   return out;
 }
 function resolveHow(sp, q, iso = false) {
@@ -3071,7 +3081,7 @@ async function viewNested(spId, q) {
     const qs = new URLSearchParams({ baits: B.ok.map((i) => sp.rows[i].key).join(','), cut: S.cut, k: S.k, rounds: S.rounds }); if (S.strict) qs.set('strict', '1'); if (S.para) qs.set('para', '1'); if (Rc.toks.length <= 400) qs.set('ids', Rc.toks.join(','));
     history.replaceState(null, '', `#/${sp.id}/nested?${qs}`);
     { const mbox = $('#ns-miss'), mtok = String((+mbox.dataset.t || 0) + 1), miss = [...B.miss, ...C.miss]; mbox.dataset.t = mtok; mbox.hidden = true;   // why names were not found, as in the builder
-      if (miss.length) explainMissing(sp, miss).then((L) => { if (mbox.dataset.t !== mtok || !L.length) return; mbox.innerHTML = `<b>${fmtInt(new Set(miss).size)} name${new Set(miss).size === 1 ? '' : 's'} not found</b>` + L.map((x) => `<div>${x}</div>`).join(''); mbox.hidden = false; }); }
+      if (miss.length) explainMissing(sp, miss).then((L) => { if (mbox.dataset.t !== mtok || !L.length) return; mbox.innerHTML = `<b>${fmtInt(new Set(miss).size)} name${new Set(miss).size === 1 ? '' : 's'} not used${L.head ? `: ${L.head}` : ''}</b>` + L.map((x) => `<div>${x}</div>`).join(''); mbox.hidden = false; }); }
     if (!B.ok.length) { status(`Name at least one bait the ${esc(sp.reg.label)} screens hold${B.miss.length ? ` (not found: ${esc(B.miss.join(', '))})` : ''}.`); return; }
     if (!cands.length) { status('Give the candidates to test against the baits.'); return; }
     status('Reading the edge list…'); let E, K; try { [E, K] = await Promise.all([edges(sp), reported(sp)]); } catch (e) { status(esc(e.message)); return; }
@@ -3426,7 +3436,7 @@ async function viewNetwork(spId, q) {
     const found = [], missing = [], how = new Map();
     for (const t of toks) { const h = resolveHow(sp, t, true); if (!h) { missing.push(t); continue; } how.set(h.how, (how.get(h.how) || 0) + 1); if (!found.includes(h.row)) found.push(h.row); }
     const mbox = $('#nw-miss'), mtok = String((+mbox.dataset.t || 0) + 1); mbox.dataset.t = mtok; mbox.hidden = true;   // a newer draw wins over an older explanation still loading
-    if (missing.length) explainMissing(sp, missing, { all: toks }).then((L) => { if (stale(gen) || mbox.dataset.t !== mtok || !L.length) return; $('#nw-miss').innerHTML = `<b>${fmtInt(new Set(missing).size)} name${new Set(missing).size === 1 ? '' : 's'} not found</b>` + L.map((x) => `<div>${x}</div>`).join(''); $('#nw-miss').hidden = false; });
+    if (missing.length) explainMissing(sp, missing, { all: toks }).then((L) => { if (stale(gen) || mbox.dataset.t !== mtok || !L.length) return; $('#nw-miss').innerHTML = `<b>${fmtInt(new Set(missing).size)} name${new Set(missing).size === 1 ? '' : 's'} not drawn${L.head ? `: ${L.head}` : ''}</b>` + L.map((x) => `<div>${x}</div>`).join(''); $('#nw-miss').hidden = false; });
     if (!found.length) { status(`None of these names is in the ${esc(sp.reg.label)} screens: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}.${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions.' : ''}`); $('#nw-card').hidden = true; return; }
     const nFound = [...how.values()].reduce((s, n) => s + n, 0), twice = nFound - found.length;   // before the cap trims the list
     const CAP = 400, over = found.length > CAP ? found.length : 0; if (over) found.length = CAP;
