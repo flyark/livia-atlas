@@ -2959,8 +2959,8 @@ async function viewVirus(spId, taxid) {
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     if (box.querySelector(':scope > .empty')) box.innerHTML = '';
     Pl.react(box, [
-      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0($('#vm-cs').value), zmin: 0, zmax: 0.85, colorbar: HEATBAR, xgap: 1, ygap: 1, hoverongaps: false }],
-      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
+      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0($('#vm-cs').value), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],
+      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
         xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain' },
         yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x' }, dragmode: 'zoom' },
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_virus_${v.taxid}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
@@ -3169,7 +3169,12 @@ const HEATCS = (k) => { const f = { Blues: (t) => d3.interpolateBlues(0.35 + 0.6
 // Plotly, loaded the first time a matrix is drawn (zoom, pan, every label on hover and when zoomed)
 // A matrix scale over every score: near white at 0, the chosen colors from the 10% FPR cutoff up to 0.85
 const HEATCS0 = (k) => { const s = HEATCS(k), c0 = CUT[10] / 0.85; return [[0, '#F4F6F8'], [c0 * 0.999, '#DDE2E7'], ...s.map(([t, col]) => [c0 + (1 - c0) * t, col])]; };
-const HEATBAR = { title: { text: 'best iLIS', side: 'right' }, thickness: 12, len: 0.7, tickvals: [0, 0.1, CUT[10], 0.4, 0.6, 0.8], ticktext: ['0', '0.1', `${CUT[10]} (10% FPR)`, '0.4', '0.6', '0.8'] };
+const HEATTICKS = { tickvals: [0, 0.1, CUT[10], 0.4, 0.6, 0.8], ticktext: ['0', '0.1', String(CUT[10]), '0.4', '0.6', '0.8'] };   // the 10% FPR cut is named in the title
+const heatNarrow = (box) => (box.clientWidth || 900) < 600;
+const heatBar = (box) => (heatNarrow(box)   // a phone: a horizontal bar under the matrix, so the cells keep the full width
+  ? { orientation: 'h', x: 0.5, xanchor: 'center', y: -0.02, yanchor: 'top', len: 0.8, thickness: 10, title: { text: `best iLIS (10% FPR at ${CUT[10]})`, side: 'top' }, tickangle: 0, tickvals: [0, CUT[10], 0.8], ticktext: ['0', String(CUT[10]), '0.8'] }
+  : { x: 1.02, xanchor: 'left', xpad: 6, thickness: 12, len: 0.7, title: { text: `best iLIS (10% FPR at ${CUT[10]})`, side: 'right' }, ...HEATTICKS });
+const heatMargin = (box) => (heatNarrow(box) ? { l: 110, r: 20, t: 110, b: 80 } : { l: 110, r: 90, t: 110, b: 20 });
 const FPRSHOW = (sel) => ({ all: 0, 10: CUT[10], 5: CUT[5], 1: CUT[1] }[sel] ?? 0);   // a matrix's own filter, apart from the network's cutoff
 // Tables loaded or dropped: text files as they are; Excel workbooks read in the browser (SheetJS 0.20.3 from its own CDN, loaded on first use), each
 // sheet as tab-separated text. The sheet with the most rows is the default and the others stay one click away.
@@ -3508,8 +3513,8 @@ async function viewNetwork(spId, q) {
     const cs = $('#nw-heat-cs').value || 'Blues';
     if (box.querySelector(':scope > .empty')) box.innerHTML = '';
     P.react(box, [
-      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: HEATBAR, xgap: 1, ygap: 1, hoverongaps: false }],
-      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: { l: 110, r: 20, t: 110, b: 20 }, plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
+      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],
+      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
         xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain' },
         yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x' }, dragmode: 'zoom' },
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_${sp.id}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
