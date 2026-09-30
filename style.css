@@ -524,3 +524,5 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .ex-row { display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .ex-row { max-width: 100%; }
 .ex-row select { max-width: min(360px, 100%); }
+.ex-row label { display: inline-flex; align-items: center; gap: 6px; min-width: 0; max-width: 100%; }   /* the picker shrinks to the row, not to its longest name */
+.ex-row label select { min-width: 0; flex: 1 1 auto; }
