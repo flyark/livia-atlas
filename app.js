@@ -821,7 +821,7 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
         <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${r.virus ? `${esc(r.virus.name)} · ` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`)).join('')
       || (q.trim() ? `<div class="sg-note">No match.${(() => { const t0 = q.trim();
         if (/^ENS[A-Z]*[GTP]\d{6,}/i.test(t0) || /^\d+$/.test(t0)) return ' Ensembl and Entrez IDs are not in the Atlas: try the gene symbol or UniProt accession.';
-        const near = sps.filter(Boolean).map((sp) => [sp, nearRow(sp, t0)]).filter(([, r]) => r).slice(0, 3);
+        const near = sps.filter((sp) => sp && !sp.viruses).map((sp) => [sp, nearRow(sp, t0)]).filter(([, r]) => r).slice(0, 3);
         return near.length ? ` Close: ${near.map(([sp, r]) => `<a href="#/${sp.id}/${encodeURIComponent(r.key)}">${esc(r.gene)}</a>${many ? ` <span class="muted">(${esc(sp.reg.label)})</span>` : ''}`).join(', ')}.` : ' Try a gene symbol, UniProt accession, FlyBase ID or protein name.'; })()}</div>` : '');
     box.hidden = !box.innerHTML;
     [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k]));
@@ -2700,7 +2700,9 @@ const kbTip0 = (K, ph, ge) => `reported in BioGRID ${K.release}: ${[ph ? `physic
 async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pair was opened from (a screen or a thematic set)
   const gen = ROUTE, sp = await species(spId), P = resolveRow(sp, q1), O0 = resolveRow(sp, q2);
   if (stale(gen)) return;
-  if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q1)}”.</div>`; return; }
+  if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q1)}”.<div class="miss" id="pp-miss" hidden style="text-align:left;max-width:640px;margin:12px auto 0"></div></div>`;
+    explainMissing(sp, [q1], { link: (id, names) => `#/${id}/${encodeURIComponent(names[0])}` }).then((L) => { const b = $('#pp-miss'); if (!b || !L.length) return; b.innerHTML = L.map((x) => `<div>${x}</div>`).join(''); b.hidden = false; });
+    return; }
   let scope = '', label = '';
   if (setId && sp.dsIds.includes(setId)) { scope = setId; label = (await regDataset(setId)).short; }
   else if (setId) for (const id of sp.dsIds) { const TS = await setsOf(await dataset(id)).catch(() => null), S = TS && TS.byId.get(setId); if (S) { scope = setId; label = S.short; break; } }
@@ -3229,7 +3231,7 @@ async function viewNetwork(spId, q) {
   const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),
     ...TSs.filter(Boolean).flatMap((T) => T.list.map((x) => [x.id, x.short]))];
   const S = { ids: q.get('ids') || '', add: ['none', 'shared', 'top'].includes(q.get('add')) ? q.get('add') : 'none', k: Math.max(1, Math.min(50, +q.get('k') || 10)),
-    cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), lay: ['fr', 'kk', 'circle'].includes(q.get('lay')) ? q.get('lay') : 'force', cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
+    cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), lay: ['fr', 'kk', 'circle'].includes(q.get('lay')) ? q.get('lay') : 'force', lone: q.get('lone') === '1', cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
     mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, grp: /^(comm|leiden|col:.+)$/.test(q.get('grp') || '') ? q.get('grp') : '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [] };   // exp: proteins expanded by a click (keys), in the order clicked
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
@@ -3256,7 +3258,8 @@ async function viewNetwork(spId, q) {
           <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
           <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button></div>
         <span class="optlab">Proteins</span><div class="controls"><label class="ctl" id="nw-ncol-wrap" style="display:none" title="color the proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
-          <label class="ctl" title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label></div>
+          <label class="ctl" title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest always stay">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label>
+          <label class="ctl" title="leave out every protein with no predicted pair in the drawing, proteins-of-interest too; they are listed in the status line"><input type="checkbox" id="nw-lone"${S.lone ? ' checked' : ''}> hide proteins with no pair</label></div>
         <span class="optlab">Layout</span><div class="controls"><label class="ctl" title="how the proteins are placed: force moves live; spring and Kamada-Kawai are fixed layouts, as in LIVIA Network">Layout <select id="nw-lay">${[['force', 'force (live)'], ['fr', 'spring (Fruchterman-Reingold)'], ['kk', 'Kamada-Kawai'], ['circle', 'circle']].map(([v, l]) => `<option value="${v}"${v === S.lay ? ' selected' : ''}>${l}</option>`).join('')}</select></label>
           <label class="ctl" title="lay the network out in groups, each in its own area with an outline">Group by<select id="nw-grp"></select></label>
           <label class="ctl" id="nw-res-wrap" hidden title="community resolution: higher gives more, smaller communities; 1 is standard modularity">Resolution <input type="number" id="nw-res" min="0.1" max="5" step="0.1" value="${S.res}" style="width:64px"></label></div>
@@ -3405,7 +3408,7 @@ async function viewNetwork(spId, q) {
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
     $('#nw-grp').innerHTML = [['', 'none'], ['comm', 'communities · Louvain'], ['leiden', 'communities · Leiden'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join(''); showRes();
     S.ids = toks.join(','); S.add = $('#nw-add').value; S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 10)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind !== 2) qs.set('mind', S.mind); if (S.res !== 1) qs.set('res', S.res); if (S.grp) qs.set('grp', S.grp); if (S.lay !== 'force') qs.set('lay', S.lay); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (S.add === 'top' || S.exp.length) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.mind !== 2) qs.set('mind', S.mind); if (S.res !== 1) qs.set('res', S.res); if (S.grp) qs.set('grp', S.grp); if (S.lay !== 'force') qs.set('lay', S.lay); if (S.lone) qs.set('lone', '1'); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
@@ -3450,6 +3453,8 @@ async function viewNetwork(spId, q) {
     if (S.mind) for (let again = true; again;) { again = false; const dg = new Map(); for (const l of links) { dg.set(l.source, (dg.get(l.source) || 0) + 1); dg.set(l.target, (dg.get(l.target) || 0) + 1); }
       for (const i of [...keep]) if (!Q.has(i) && (dg.get(i) || 0) < S.mind) { keep.delete(i); pruned++; again = true; }
       if (again) links = links.filter((l) => keep.has(l.source) && keep.has(l.target)); }
+    let lone = 0;   // hide proteins with no pair: every protein left without a predicted pair in the drawing
+    if (S.lone) { const linked = new Set(); for (const l of links) { linked.add(l.source); linked.add(l.target); } for (const i of [...keep]) if (!linked.has(i)) { keep.delete(i); lone++; } }
     const nRep = links.filter((l) => l.pubs || l.gen).length, extra = [];
     if (K && $('#nw-unpred').checked) { const ks = [...keep], has = new Set(links.map((l) => l.source * sp.rows.length + l.target));
       for (let x = 0; x < ks.length; x++) for (let y = x + 1; y < ks.length; y++) { const a = Math.min(ks[x], ks[y]), b = Math.max(ks[x], ks[y]), n = K.pubs(a, b), gg = K.gen(a, b);
@@ -3458,7 +3463,7 @@ async function viewNetwork(spId, q) {
     status(`${fmtInt(Q.size)} proteins-of-interest${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}`
       + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : ' · no BioGRID records for this species'}`
       + `${missing.length ? ` · not found: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.slice(0, 30).join(', '))}${alone.length > 30 ? ` and ${fmtInt(alone.length - 30)} more` : ''}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
-      + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} added partner${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${S.add === 'shared' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: a higher Min. pairs or a stricter cutoff thins it` : ''}</span>`);
+      + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} added partner${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${lone ? ` · ${fmtInt(lone)} protein${lone === 1 ? '' : 's'} with no pair hidden` : ''}${S.add === 'shared' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: a higher Min. pairs or a stricter cutoff thins it` : ''}</span>`);
     $('#nw-card').hidden = false;
     if (!links.length) { $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} added partner${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pairs). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); return; }   // the matrix still shows the pairs below this cutoff
     if (!K) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
@@ -3646,7 +3651,8 @@ async function viewNetwork(spId, q) {
   $('#nw-unexp').onclick = () => { S.exp = []; draw(); };
   $('#nw-grp').onchange = (e) => { S.grp = e.target.value; showRes(); draw(); };
   $('#nw-lay').onchange = (e) => { S.lay = e.target.value; draw(); };
-  $('#nw-sp').onchange = (e) => { const ids = S.ids || $('#nw-ids').value.split(/[\s,;]+/).filter(Boolean).join(','); location.hash = `#/${e.target.value}/network?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };
+  $('#nw-lone').onchange = (e) => { S.lone = e.target.checked; draw(); };
+  $('#nw-sp').onchange = (e) => { const raw = $('#nw-ids').value, ids = S.ids || (/\t/.test(raw) ? '' : raw.split(/[\s,;]+/).filter(Boolean).join(',')); location.hash = `#/${e.target.value}/network?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };   // the names drawn last; a pasted table is not split into its cells
   { let t = 0; $('#nw-res').oninput = () => { const v = +$('#nw-res').value; if (!(v >= 0.1 && v <= 5)) return; S.res = v; clearTimeout(t); t = setTimeout(() => draw(), 350); }; }
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
   $('#nw-heat-show').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
