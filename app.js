@@ -494,6 +494,47 @@ async function afdbPartnerRows(sp, i, partners) {
   return out;
 }
 const pairStruct = (sp, ia, ib) => (sp.viruses ? virusStruct(sp, ia, ib) : sp.reg && sp.reg.structs ? afdbStruct(sp, ia, ib) : Promise.resolve(null));
+// A species picker that both scrolls and searches. The <select> stays, hidden, as the value and its change event; a text box
+// filters the species by name, scientific name, taxon or id, and the list is grouped as on the Species page.
+function speciesCombo(sel, reg) {
+  if (!sel || sel.dataset.combo) return; sel.dataset.combo = '1';
+  const list = (reg && reg.species) || [], order = ['Model organisms', 'Other species', 'Viral proteomes'];
+  const grp = (x) => (x.heading ? 'Viral proteomes' : !x.group || x.group === 'Model organisms' ? 'Model organisms' : 'Other species');
+  const wrap = document.createElement('span'), inp = document.createElement('input'), box = document.createElement('div');
+  wrap.className = 'sp-combo'; inp.type = 'text'; inp.className = 'sp-combo-in'; inp.placeholder = 'Search species'; inp.autocomplete = 'off'; inp.spellcheck = false;
+  box.className = 'sp-combo-list'; box.id = sel.id + '-list'; box.hidden = true; box.setAttribute('role', 'listbox');
+  for (const [k, v] of [['role', 'combobox'], ['aria-autocomplete', 'list'], ['aria-expanded', 'false'], ['aria-controls', box.id], ['aria-label', 'Species']]) inp.setAttribute(k, v);
+  const ALSO = { human: '9606', fly: '7227 fruit fly', worm: '6239 nematode', zebrafish: '7955', yeast: '559292 budding yeast', 'mus-musculus': 'mouse', 'rattus-norvegicus': 'rat',
+    'xenopus-laevis': 'frog', 'schizosaccharomyces-pombe': 'fission yeast', 'arabidopsis-thaliana': 'thale cress plant', 'dictyostelium-discoideum': 'slime mold amoeba', 'escherichia-coli-83333': 'k-12 bacteria', virus: 'viruses' };   // taxa and common names the registry entries lack
+  const label = () => { const x = list.find((s) => s.id === sel.value); return x ? x.label : ''; };
+  inp.value = label(); sel.hidden = true; sel.after(wrap); wrap.append(inp, box);
+  let shown = [], act = -1;
+  const draw = () => {
+    const q = inp.value.trim().toLowerCase(), every = !q || q === label().toLowerCase();
+    shown = list.filter((x) => every || [x.label, x.name, String(x.taxon || ''), x.id, ALSO[x.id]].some((v) => (v || '').toLowerCase().includes(q)));
+    shown.sort((a, b) => order.indexOf(grp(a)) - order.indexOf(grp(b)) || (grp(a) === 'Model organisms' ? 0 : a.name.localeCompare(b.name)));
+    let g = '', h = '';
+    shown.forEach((x, n) => { if (grp(x) !== g) { g = grp(x); h += `<div class="sp-combo-g">${esc(g)}</div>`; }
+      h += `<div class="sp-combo-o${x.id === sel.value ? ' cur' : ''}${n === act ? ' act' : ''}" role="option" id="${box.id}-${n}" data-n="${n}" aria-selected="${x.id === sel.value}">${esc(x.label)}${x.name && x.name !== x.label ? ` <i>${esc(x.name)}</i>` : ''}</div>`; });
+    box.innerHTML = h || '<div class="sp-combo-none">No species matches</div>';
+    const a = act >= 0 && box.querySelector(`[data-n="${act}"]`);
+    if (a) { a.scrollIntoView({ block: 'nearest' }); inp.setAttribute('aria-activedescendant', a.id); } else inp.removeAttribute('aria-activedescendant');
+  };
+  const open = () => { box.hidden = false; inp.setAttribute('aria-expanded', 'true'); act = -1; draw(); const c = box.querySelector('.cur'); if (c) c.scrollIntoView({ block: 'nearest' }); };
+  const close = () => { box.hidden = true; inp.setAttribute('aria-expanded', 'false'); inp.value = label(); };
+  const pick = (x) => { if (x && x.id !== sel.value) { sel.value = x.id; close(); sel.dispatchEvent(new Event('change')); } else close(); };
+  inp.onfocus = () => { inp.select(); open(); };
+  inp.oninput = () => { if (box.hidden) open(); act = 0; draw(); };
+  inp.onkeydown = (e) => {
+    if (box.hidden && (e.key === 'ArrowDown' || e.key === 'Enter')) { e.preventDefault(); open(); return; }
+    if (e.key === 'ArrowDown') { e.preventDefault(); act = Math.min(shown.length - 1, act + 1); draw(); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); act = Math.max(0, act - 1); draw(); }
+    else if (e.key === 'Enter') { e.preventDefault(); pick(shown[Math.max(0, act)]); inp.blur(); }
+    else if (e.key === 'Escape') { close(); inp.blur(); }
+  };
+  box.onmousedown = (e) => { e.preventDefault(); const o = e.target.closest('[data-n]'); if (o) { pick(shown[+o.dataset.n]); inp.blur(); } };
+  inp.onblur = () => setTimeout(() => { if (!box.hidden) close(); }, 0);
+}
 function structLink(host, x, cls) {
   if (!host) return; host.innerHTML = '';
   if (!x || !x.model || !(x.shown || x.addr)) return;
@@ -3748,6 +3789,7 @@ async function viewNetwork(spId, q) {
   $('#nw-grp').onchange = (e) => { S.grp = e.target.value; showRes(); draw(); };
   $('#nw-lay').onchange = (e) => { S.lay = e.target.value; draw(); };
   $('#nw-lone').onchange = (e) => { S.lone = e.target.checked; draw(); };
+  speciesCombo($('#nw-sp'), REG);
   $('#nw-sp').onchange = (e) => { const raw = $('#nw-ids').value, ids = S.ids || (/\t/.test(raw) ? '' : raw.split(/[\s,;]+/).filter(Boolean).join(',')); location.hash = `#/${e.target.value}/network?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };   // the names drawn last; a pasted table is not split into its cells
   { let t = 0; $('#nw-res').oninput = () => { const v = +$('#nw-res').value; if (!(v >= 0.1 && v <= 5)) return; S.res = v; clearTimeout(t); t = setTimeout(() => draw(), 350); }; }
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
