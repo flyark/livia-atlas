@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "neisseria-gonorrhoeae",
+ "species": {
+  "name": "Neisseria gonorrhoeae",
+  "taxon": 242231
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-242231",
+   "short": "AFDB heterodimers",
+   "title": "Neisseria gonorrhoeae proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 1154,
+    "pairs": 11368,
+    "predictions": 11368,
+    "runs": 11368,
+    "pairsFpr10": 663,
+    "pairsFpr5": 447,
+    "pairsFpr1": 157
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 1154,
+  "pairs": 11368,
+  "predictions": 11368,
+  "runs": 11368,
+  "pairsFpr10": 663,
+  "pairsFpr5": 447,
+  "pairsFpr1": 157,
+  "pairsInSeveral": 0,
+  "pairsTested": 11368
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

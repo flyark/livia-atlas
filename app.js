@@ -59,7 +59,7 @@ const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" dat
 // A page's citation: the page (title, link, date), the Atlas data version each of its screens is read from (the Zenodo
 // version DOI, not the concept DOI that always opens the newest), the method, and the source of each screen shown, which
 // the screens' licenses (CC BY) require.
-const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3' };   // the Atlas record's versions on Zenodo
+const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3', 23063255: '0.1.4' };   // the Atlas record's versions on Zenodo
 const archiveOf = (recs) => (recs.length ? recs.map((r) => `LIVIA Atlas version ${REC_VERSION[r] || '?'}, Zenodo, https://doi.org/10.5281/zenodo.${r}`).join('; ') : `LIVIA Atlas, Zenodo, https://doi.org/${ARCHIVE.doi}`);
 const archiveLine = () => { const recs = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(recOf).filter(Boolean))].sort();   // the versions this site reads
   return recs.map((r) => { const ids = [...new Set(REG.datasets.filter((d) => recOf(d) === r).map((d) => d.short))]; return `LIVIA Atlas version ${REC_VERSION[r] || '?'}, <i>Zenodo</i>, <a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">doi:10.5281/zenodo.${r}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi:${ARCHIVE.doi}</a>`; };
@@ -136,6 +136,7 @@ const getJSON = (url) => getFile(url, 'json'), getText = (url) => getFile(url, '
 async function registry() { if (!REG) REG = await getJSON('datasets.json'); return REG; }
 const regDataset = async (id) => (await registry()).datasets.find((d) => d.id === id);
 const regSpecies = async (id) => ((await registry()).species || []).find((s) => s.id === id);
+const coreSpecies = (reg) => (reg.species || []).filter((s) => !s.group);   // the Atlas's own screens; grouped species (one AFDB screen each) are listed on #/species
 
 async function dataset(id) {   // one screen: its manifest; proteins.json only when a screen page needs it
   if (DSC[id]) return DSC[id];
@@ -468,6 +469,17 @@ async function virusStruct(sp, ia, ib) {
   return rows.find((x) => (x.a === ia && x.b === ib) || (x.a === ib && x.b === ia)) || null;
 }
 // The link to a virus pair's model in LIVIA, wired: the database's copy, or a byte-range read of the release archive.
+// An AFDB heterodimer pair (species with one AFDB screen): its model and PAE in the heterodimer release at EBI, addresses from
+// structs/<k>.tsv (pairs past 10% FPR, sharded by the lower proteins.json row // 1000); null below the cutoff.
+const HET_URL = (tar) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers/${tar}`;
+async function afdbStruct(sp, ia, ib) {
+  if (ia == null || ib == null) return null;
+  const k = Math.floor(Math.min(ia, ib) / 1000); sp.hstr = sp.hstr || new Map();
+  if (!sp.hstr.has(k)) sp.hstr.set(k, getText(sp.base + `structs/${k}.tsv`).then((t) => t.trim().split('\n').slice(1).map((l) => l.split('\t'))).catch(() => []));
+  const r = (await sp.hstr.get(k)).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
+  return r ? { model: r[2], shown: false, addr: { tar: r[3], cif_off: +r[4], cif_len: +r[5], pae_off: +r[6], pae_len: +r[7] } } : null;
+}
+const pairStruct = (sp, ia, ib) => (sp.viruses ? virusStruct(sp, ia, ib) : sp.reg && sp.reg.group ? afdbStruct(sp, ia, ib) : Promise.resolve(null));
 function structLink(host, x, cls) {
   if (!host) return; host.innerHTML = '';
   if (!x || !x.model || !(x.shown || x.addr)) return;
@@ -480,14 +492,14 @@ function structLink(host, x, cls) {
 async function openFromArchive(model, ad, link) {
   const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
   const txt = link.textContent; link.textContent = 'reading…';
-  const get = async (o, n) => { for (let t = 0; ; t++) { try { const r = await fetch(ARCH_URL(ad.chunk), { headers: { Range: `bytes=${o}-${o + n - 1}` } });
+  const get = async (o, n) => { for (let t = 0; ; t++) { try { const r = await fetch(ad.tar ? HET_URL(ad.tar) : ARCH_URL(ad.chunk), { headers: { Range: `bytes=${o}-${o + n - 1}` } });
     if (r.status !== 206) throw new Error(`the archive answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; }
     catch (e) { if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1))); } } };   // EBI sometimes refuses a connection: retry
   try {
     const [[{ decompress }, { zipSync }], cif, pae] = await Promise.all([Promise.all([import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm'), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]),
       get(ad.cif_off, ad.cif_len), get(ad.pae_off, ad.pae_len)]);
     const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) });
-    handTo(w, { type: 'livia-load', name: `${model}_viral.zip`, data: zip.buffer }); link.textContent = txt;
+    handTo(w, { type: 'livia-load', name: `${model}_${ad.tar ? 'afdb' : 'viral'}.zip`, data: zip.buffer }); link.textContent = txt;
   } catch (e) { link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`; try { w.close(); } catch (_) {} }
 }
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
@@ -799,7 +811,7 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
   const go = (it) => { box.hidden = true; input.value = ''; location.hash = it.v ? `#/${it.sp.id}/taxon/${it.v.taxid}` : `#/${it.sp.id}/${it.row.key}${set ? '?set=' + encodeURIComponent(set) : ''}`; };
   const paint = () => { [...box.children].forEach((c, k) => c.classList.toggle('on', k === on)); };
   async function update() {
-    const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(((await registry()).species || []).map((x) => species(x.id).catch(() => null)));
+    const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(coreSpecies(await registry()).map((x) => species(x.id).catch(() => null)));
     const many = sps.filter(Boolean).length > 1;
     const t = q.trim().toLowerCase(), al = VALIAS[t] || [], vir = (t.length < 3 && !al.length) || only ? [] : sps.filter((sp) => sp && sp.viruses).flatMap((sp) => sp.viruses.map((v) => {
       const nm = v.name.toLowerCase(), spn = (v.species || '').toLowerCase(), score = nm === t || al.includes(nm) || spn === t ? 3 : nm.startsWith(t) || spn.startsWith(t) ? 2 : nm.includes(t) ? 1 : 0; return { v, sp, score }; }))
@@ -1047,14 +1059,14 @@ async function viewHome() {
       <div id="home-search" class="hero-search"></div>
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span></div>
-      <div class="chips">${(reg.species || []).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<a class="lbl sp-link" href="#/${x.id}" title="every ${esc(x.label.toLowerCase())} protein, screen and network">${esc(x.label)}</a>` : ''}`
-        + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}</div>
+      <div class="chips">${coreSpecies(reg).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<a class="lbl sp-link" href="#/${x.id}" title="every ${esc(x.label.toLowerCase())} protein, screen and network">${esc(x.label)}</a>` : ''}`
+        + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}${[...new Set((reg.species || []).filter((x) => x.group).map((x) => x.group))].map((g) => `<span class="chip-group"><a class="lbl sp-link" href="#/species" title="one AlphaFold Database heterodimer screen per species">${esc(g)} (${fmtInt(reg.species.filter((x) => x.group === g).length)})</a></span>`).join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
     </section>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase();
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1500));
-  idle(() => { if (!stale(gen)) for (const x of reg.species || []) species(x.id).catch(() => {}); }, { timeout: 4000 });   // search is instant by the first keystroke
+  idle(() => { if (!stale(gen)) for (const x of coreSpecies(reg)) species(x.id).catch(() => {}); }, { timeout: 4000 });   // search is instant by the first keystroke
 }
 async function fillThemes() {   // home: each theme's species and totals, from its members' counts
   const reg = await registry(), box = $('#themes'); if (!box) return;
@@ -1206,6 +1218,19 @@ async function setCards(gen, reg) {
   }
 }
 
+async function viewSpeciesList() {   // every species: the Atlas's own first, then each group (one AlphaFold Database screen per species)
+  const gen = ROUTE, reg = await registry(), list = reg.species || [];
+  const groups = [['', coreSpecies(reg)], ...[...new Set(list.filter((x) => x.group).map((x) => x.group))].map((g) => [g, list.filter((x) => x.group === g).sort((a, b) => a.name.localeCompare(b.name))])];
+  const row = (x) => `<tr><td><a href="#/${x.id}"><i>${esc(x.name)}</i></a>${x.label !== x.name ? ` <span class="muted">${esc(x.label)}</span>` : ''}</td><td class="n" data-tx>${x.taxon || ''}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`;
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Species</div>
+    <div class="card"><h1 style="margin:0">Species</h1>
+    ${groups.map(([g, xs]) => `<h2 style="margin:18px 0 6px">${g ? esc(g) : 'Atlas screens'} <span class="muted">${fmtInt(xs.length)}</span></h2>${g ? '<p class="muted" style="margin:0 0 8px">One AlphaFold Database heterodimer screen per species, one AlphaFold-Multimer model per pair, rescored with lis.py. Search a protein on its species page.</p>' : ''}
+      <div class="tbl-wrap"><table class="sets spl"><thead><tr><th>Species</th><th class="n">Taxon</th><th class="n">Proteins</th><th class="n">Protein pairs</th><th class="n">Past 10% FPR</th></tr></thead><tbody>${xs.map(row).join('')}</tbody></table></div>`).join('')}</div>`;
+  const ms = await Promise.all(list.map((x) => speciesManifest(x.id).catch(() => null))); if (stale(gen)) return;
+  list.forEach((x, i) => { const m = ms[i], tr = app.querySelector(`table.spl a[href="#/${x.id}"]`); if (!m || !tr) return;
+    const r = tr.closest('tr'), tx = r.querySelector('td[data-tx]'); if (tx && !tx.textContent && m.species && m.species.taxon) tx.textContent = m.species.taxon;
+    r.querySelectorAll('td[data-k]').forEach((td) => { td.textContent = fmtInt(m.counts[td.dataset.k] || 0); }); });
+}
 async function viewAbout() {
   const gen = ROUTE, reg = await registry(); if (stale(gen)) return;
   const ref = (k, text) => `<li>${text} <a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">doi.org/${REF[k][1]}</a></li>`;
@@ -1362,7 +1387,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
   if (stale(gen)) return;
   const scopeQ = sp.dsIds.length > 1 ? `?set=${encodeURIComponent(ds.id)}` : '';   // one of several screens: its protein pages open in its scope
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a></div>
-    <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, <span title="${m.analysis.inclusive ? 'cutoffs as LIVIA applies them' : 'as scored: lis.py before 26 Sep 2026 left out values exactly at a cutoff; LIVIA includes them, and iLIS differs by at most about 0.003'}">${m.analysis.inclusive ? `PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å` : `PAE ${m.analysis.paeCutoff} Å, Cβ ${m.analysis.cbCutoff} Å, values exactly at a cutoff excluded`}</span></div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
+    <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname"><i>${esc(m.species.name)}</i> · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, ${m.analysis.plainCutoffs ? `<span>PAE ${m.analysis.paeCutoff} Å, Cβ ${m.analysis.cbCutoff} Å</span>` : `<span title="${m.analysis.inclusive ? 'cutoffs as LIVIA applies them' : 'as scored: lis.py before 26 Sep 2026 left out values exactly at a cutoff; LIVIA includes them, and iLIS differs by at most about 0.003'}">${m.analysis.inclusive ? `PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å` : `PAE ${m.analysis.paeCutoff} Å, Cβ ${m.analysis.cbCutoff} Å, values exactly at a cutoff excluded`}</span>`}</div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
       <div class="cite">${m.source.url ? `<a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.citation)}${m.source.doi ? ` doi:${esc(m.source.doi)}` : ''} ↗</a>` : esc(m.source.citation)}</div></div>
     ${kpiRow(k)}
     <div class="card"><h2>Search</h2><p class="muted" style="margin:2px 0 10px">${sp.dsIds.length > 1 ? `Protein pages opened from here show only this screen, <span class="src" style="--c:${ds.reg.color}">${esc(ds.reg.short)}</span>, with a switch to every ${esc(sp.reg.label.toLowerCase())} screen.`
@@ -1615,7 +1640,7 @@ async function explainMissing(sp, missing, { all = missing, link = netLink } = {
     if (long.length) { out.push(`${fmtInt(long.length)} too long for the screens (the longest protein folded here is ${fmtInt(A.maxLen)} aa): ${long.slice(0, 12).map(nm).join(', ')}${long.length > 12 ? ' …' : ''}`); heads.push(`${fmtInt(long.length)} too long for the screens (${esc(long.slice(0, 3).map((k) => k.t).join(', '))}${long.length > 3 ? ' …' : ''})`); }
     if (other.length) { out.push(`${fmtInt(other.length)} real gene${other.length === 1 ? '' : 's'} not in these screens: ${other.slice(0, 12).map(nm).join(', ')}${other.length > 12 ? ' …' : ''}`); heads.push(`${fmtInt(other.length)} not in these screens`); }
   }
-  for (const o of (reg.species || []).filter((s) => s.id !== sp.id)) {
+  for (const o of coreSpecies(reg).filter((s) => s.id !== sp.id)) {   // the Atlas's own species; one-screen AFDB species are not searched for a name
     let osp; try { osp = await species(o.id); } catch (e) { continue; }
     const hit = [...left].filter((t) => { const h = resolveHow(osp, t, true); return h && (o.id !== 'virus' || h.how === 'UniProt accession'); });
     if (!hit.length) continue; hit.forEach((t) => left.delete(t));
@@ -2330,8 +2355,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const id = $('#res-partner').value, part = B.partners.find((p) => p.id === id); if (!part) return;
     const pred = part.preds[+$('#res-rank').value] || part.preds[0];
     ifaceView($('#res-body'), { sp, P, O: PLACE(id), pred, B, canvasId: 'res-canvas' });
-    if (sp.viruses) { const pid = $('#res-partner').value, R2 = sp.byKey.get(pid);   // a virus pair: its structure, where the Atlas can reach it
-      virusStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!gone() && $('#res-partner') && $('#res-partner').value === pid) structLink($('#res-struct'), x, 'btn'); }); }
+    if (sp.viruses || (sp.reg && sp.reg.group)) { const pid = $('#res-partner').value, R2 = sp.byKey.get(pid);   // a virus or AFDB heterodimer pair: its structure, where the Atlas can reach it
+      pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!gone() && $('#res-partner') && $('#res-partner').value === pid) structLink($('#res-struct'), x, 'btn'); }); }
   }
   $('#res-partner').onchange = pickPartner;
   $('#res-rank').onchange = drawResidues;
@@ -2768,7 +2793,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.querySelectorAll('.models tbody tr').forEach((tr) => tr.onclick = () => pick(+tr.dataset.i));
   pick(part.preds.indexOf(best));
   pairRefs(sp, P, O, () => stale(gen));
-  if (sp.viruses) { const R2 = sp.byKey.get(O.key); virusStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!stale(gen)) structLink($('#pair-struct'), x, 'btn'); }); }   // a virus pair: its model in LIVIA
+  if (sp.viruses || (sp.reg && sp.reg.group)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!stale(gen)) structLink($('#pair-struct'), x, 'btn'); }); }   // a virus pair: its model in LIVIA
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
 }
 
@@ -3793,6 +3818,7 @@ async function route() {
     if (!parts.length) await viewHome();
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
+    else if (parts[0] === 'species' && parts.length === 1) await viewSpeciesList();
     else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
     else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]

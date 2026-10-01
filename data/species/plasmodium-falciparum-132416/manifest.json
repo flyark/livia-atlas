@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "plasmodium-falciparum-132416",
+ "species": {
+  "name": "Plasmodium falciparum (taxon 132416)",
+  "taxon": 132416
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-132416",
+   "short": "AFDB heterodimers",
+   "title": "Plasmodium falciparum proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 24,
+    "pairs": 23,
+    "predictions": 23,
+    "runs": 23,
+    "pairsFpr10": 5,
+    "pairsFpr5": 5,
+    "pairsFpr1": 2
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 24,
+  "pairs": 23,
+  "predictions": 23,
+  "runs": 23,
+  "pairsFpr10": 5,
+  "pairsFpr5": 5,
+  "pairsFpr1": 2,
+  "pairsInSeveral": 0,
+  "pairsTested": 23
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

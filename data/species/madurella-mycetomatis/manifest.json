@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "madurella-mycetomatis",
+ "species": {
+  "name": "Madurella mycetomatis",
+  "taxon": 100816
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-100816",
+   "short": "AFDB heterodimers",
+   "title": "Madurella mycetomatis proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 5431,
+    "pairs": 85246,
+    "predictions": 85246,
+    "runs": 85246,
+    "pairsFpr10": 5815,
+    "pairsFpr5": 3399,
+    "pairsFpr1": 844
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 5431,
+  "pairs": 85246,
+  "predictions": 85246,
+  "runs": 85246,
+  "pairsFpr10": 5815,
+  "pairsFpr5": 3399,
+  "pairsFpr1": 844,
+  "pairsInSeveral": 0,
+  "pairsTested": 85246
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

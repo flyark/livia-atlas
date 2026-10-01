@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "takifugu-rubripes",
+ "species": {
+  "name": "Takifugu rubripes",
+  "taxon": 31033
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-31033",
+   "short": "AFDB heterodimers",
+   "title": "Takifugu rubripes proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 266,
+    "pairs": 265,
+    "predictions": 265,
+    "runs": 265,
+    "pairsFpr10": 10,
+    "pairsFpr5": 3,
+    "pairsFpr1": 0
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 266,
+  "pairs": 265,
+  "predictions": 265,
+  "runs": 265,
+  "pairsFpr10": 10,
+  "pairsFpr5": 3,
+  "pairsFpr1": 0,
+  "pairsInSeveral": 0,
+  "pairsTested": 265
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "sinapis-alba",
+ "species": {
+  "name": "Sinapis alba",
+  "taxon": 3728
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-3728",
+   "short": "AFDB heterodimers",
+   "title": "Sinapis alba proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 91,
+    "pairs": 89,
+    "predictions": 89,
+    "runs": 89,
+    "pairsFpr10": 2,
+    "pairsFpr5": 1,
+    "pairsFpr1": 1
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 91,
+  "pairs": 89,
+  "predictions": 89,
+  "runs": 89,
+  "pairsFpr10": 2,
+  "pairsFpr5": 1,
+  "pairsFpr1": 1,
+  "pairsInSeveral": 0,
+  "pairsTested": 89
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

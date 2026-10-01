@@ -1,0 +1,51 @@
+{
+ "format": "livia-atlas/1",
+ "id": "afdb-het-243232",
+ "title": "Methanocaldococcus jannaschii proteome heterodimers (AFDB complexes)",
+ "short": "AFDB heterodimers",
+ "speciesId": "methanocaldococcus-jannaschii",
+ "species": {
+  "name": "Methanocaldococcus jannaschii",
+  "taxon": 243232
+ },
+ "ids": "UniProt accession (<accession>_<range> when one accession has several fragments in this screen)",
+ "source": {
+  "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+  "url": "https://alphafold.ebi.ac.uk/",
+  "method": "AlphaFold-Multimer v3, one model per pair (model_1_multimer_v3); rescored with lis.py. iLIS cutoffs were calibrated on best-of-5 models, so at the same cutoff this screen is less sensitive; a low iLIS here means \"not seen by model_1\"."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "plainCutoffs": true
+ },
+ "counts": {
+  "proteins": 745,
+  "pairs": 4822,
+  "predictions": 4822,
+  "runs": 4822,
+  "pairsFpr10": 365,
+  "pairsFpr5": 287,
+  "pairsFpr1": 156,
+  "homodimers": 0,
+  "repeatsDropped": 33,
+  "crossSpeciesPairs": 0,
+  "organisms": 1
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

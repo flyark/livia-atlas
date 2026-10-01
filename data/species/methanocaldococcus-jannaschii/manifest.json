@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "methanocaldococcus-jannaschii",
+ "species": {
+  "name": "Methanocaldococcus jannaschii",
+  "taxon": 243232
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-243232",
+   "short": "AFDB heterodimers",
+   "title": "Methanocaldococcus jannaschii proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 745,
+    "pairs": 4822,
+    "predictions": 4822,
+    "runs": 4822,
+    "pairsFpr10": 365,
+    "pairsFpr5": 287,
+    "pairsFpr1": 156
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 745,
+  "pairs": 4822,
+  "predictions": 4822,
+  "runs": 4822,
+  "pairsFpr10": 365,
+  "pairsFpr5": 287,
+  "pairsFpr1": 156,
+  "pairsInSeveral": 0,
+  "pairsTested": 4822
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

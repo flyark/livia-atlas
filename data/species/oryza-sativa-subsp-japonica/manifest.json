@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "oryza-sativa-subsp-japonica",
+ "species": {
+  "name": "Oryza sativa subsp. japonica",
+  "taxon": 39947
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-39947",
+   "short": "AFDB heterodimers",
+   "title": "Oryza sativa subsp. japonica proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 19302,
+    "pairs": 634633,
+    "predictions": 634633,
+    "runs": 634633,
+    "pairsFpr10": 40390,
+    "pairsFpr5": 22774,
+    "pairsFpr1": 6124
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 19302,
+  "pairs": 634633,
+  "predictions": 634633,
+  "runs": 634633,
+  "pairsFpr10": 40390,
+  "pairsFpr5": 22774,
+  "pairsFpr1": 6124,
+  "pairsInSeveral": 0,
+  "pairsTested": 634633
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

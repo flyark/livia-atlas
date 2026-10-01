@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "brassica-campestris",
+ "species": {
+  "name": "Brassica campestris",
+  "taxon": 3711
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-3711",
+   "short": "AFDB heterodimers",
+   "title": "Brassica campestris proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 58,
+    "pairs": 57,
+    "predictions": 57,
+    "runs": 57,
+    "pairsFpr10": 4,
+    "pairsFpr5": 1,
+    "pairsFpr1": 0
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 58,
+  "pairs": 57,
+  "predictions": 57,
+  "runs": 57,
+  "pairsFpr10": 4,
+  "pairsFpr5": 1,
+  "pairsFpr1": 0,
+  "pairsInSeveral": 0,
+  "pairsTested": 57
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

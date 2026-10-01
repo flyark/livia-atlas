@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "staphylococcus-aureus-196620",
+ "species": {
+  "name": "Staphylococcus aureus (taxon 196620)",
+  "taxon": 196620
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-196620",
+   "short": "AFDB heterodimers",
+   "title": "Staphylococcus aureus proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 183,
+    "pairs": 245,
+    "predictions": 245,
+    "runs": 245,
+    "pairsFpr10": 18,
+    "pairsFpr5": 10,
+    "pairsFpr1": 6
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 183,
+  "pairs": 245,
+  "predictions": 245,
+  "runs": 245,
+  "pairsFpr10": 18,
+  "pairsFpr5": 10,
+  "pairsFpr1": 6,
+  "pairsInSeveral": 0,
+  "pairsTested": 245
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

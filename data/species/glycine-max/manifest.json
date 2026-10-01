@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "glycine-max",
+ "species": {
+  "name": "Glycine max",
+  "taxon": 3847
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-3847",
+   "short": "AFDB heterodimers",
+   "title": "Glycine max proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 30449,
+    "pairs": 1821317,
+    "predictions": 1821317,
+    "runs": 1821317,
+    "pairsFpr10": 122066,
+    "pairsFpr5": 71575,
+    "pairsFpr1": 19606
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 30449,
+  "pairs": 1821317,
+  "predictions": 1821317,
+  "runs": 1821317,
+  "pairsFpr10": 122066,
+  "pairsFpr5": 71575,
+  "pairsFpr1": 19606,
+  "pairsInSeveral": 0,
+  "pairsTested": 1821317
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

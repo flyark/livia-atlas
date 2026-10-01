@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "fonsecaea-pedrosoi-cbs-271-37",
+ "species": {
+  "name": "Fonsecaea pedrosoi CBS 271.37",
+  "taxon": 1442368
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-1442368",
+   "short": "AFDB heterodimers",
+   "title": "Fonsecaea pedrosoi CBS 271.37 proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 5654,
+    "pairs": 69797,
+    "predictions": 69797,
+    "runs": 69797,
+    "pairsFpr10": 5745,
+    "pairsFpr5": 3573,
+    "pairsFpr1": 921
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 5654,
+  "pairs": 69797,
+  "predictions": 69797,
+  "runs": 69797,
+  "pairsFpr10": 5745,
+  "pairsFpr5": 3573,
+  "pairsFpr1": 921,
+  "pairsInSeveral": 0,
+  "pairsTested": 69797
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

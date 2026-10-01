@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "haemophilus-influenzae",
+ "species": {
+  "name": "Haemophilus influenzae",
+  "taxon": 71421
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-71421",
+   "short": "AFDB heterodimers",
+   "title": "Haemophilus influenzae proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 1006,
+    "pairs": 8056,
+    "predictions": 8056,
+    "runs": 8056,
+    "pairsFpr10": 593,
+    "pairsFpr5": 419,
+    "pairsFpr1": 172
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 1006,
+  "pairs": 8056,
+  "predictions": 8056,
+  "runs": 8056,
+  "pairsFpr10": 593,
+  "pairsFpr5": 419,
+  "pairsFpr1": 172,
+  "pairsInSeveral": 0,
+  "pairsTested": 8056
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

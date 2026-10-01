@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "trypanosoma-brucei-brucei-5702",
+ "species": {
+  "name": "Trypanosoma brucei brucei (taxon 5702)",
+  "taxon": 5702
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-5702",
+   "short": "AFDB heterodimers",
+   "title": "Trypanosoma brucei brucei proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 59,
+    "pairs": 88,
+    "predictions": 88,
+    "runs": 88,
+    "pairsFpr10": 3,
+    "pairsFpr5": 3,
+    "pairsFpr1": 1
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 59,
+  "pairs": 88,
+  "predictions": 88,
+  "runs": 88,
+  "pairsFpr10": 3,
+  "pairsFpr5": 3,
+  "pairsFpr1": 1,
+  "pairsInSeveral": 0,
+  "pairsTested": 88
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

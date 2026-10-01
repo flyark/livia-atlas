@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "schizosaccharomyces-pombe",
+ "species": {
+  "name": "Schizosaccharomyces pombe",
+  "taxon": 284812
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-284812",
+   "short": "AFDB heterodimers",
+   "title": "Schizosaccharomyces pombe proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 4248,
+    "pairs": 67642,
+    "predictions": 67642,
+    "runs": 67642,
+    "pairsFpr10": 6211,
+    "pairsFpr5": 4021,
+    "pairsFpr1": 1212
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 4248,
+  "pairs": 67642,
+  "predictions": 67642,
+  "runs": 67642,
+  "pairsFpr10": 6211,
+  "pairsFpr5": 4021,
+  "pairsFpr1": 1212,
+  "pairsInSeveral": 0,
+  "pairsTested": 67642
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

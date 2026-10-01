@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "brassica-napus",
+ "species": {
+  "name": "Brassica napus",
+  "taxon": 3708
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-3708",
+   "short": "AFDB heterodimers",
+   "title": "Brassica napus proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 550,
+    "pairs": 549,
+    "predictions": 549,
+    "runs": 549,
+    "pairsFpr10": 16,
+    "pairsFpr5": 4,
+    "pairsFpr1": 0
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 550,
+  "pairs": 549,
+  "predictions": 549,
+  "runs": 549,
+  "pairsFpr10": 16,
+  "pairsFpr5": 4,
+  "pairsFpr1": 0,
+  "pairsInSeveral": 0,
+  "pairsTested": 549
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

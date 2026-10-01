@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "spisula-solidissima",
+ "species": {
+  "name": "Spisula solidissima",
+  "taxon": 6584
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-6584",
+   "short": "AFDB heterodimers",
+   "title": "Spisula solidissima proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 409,
+    "pairs": 408,
+    "predictions": 408,
+    "runs": 408,
+    "pairsFpr10": 79,
+    "pairsFpr5": 63,
+    "pairsFpr1": 44
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 409,
+  "pairs": 408,
+  "predictions": 408,
+  "runs": 408,
+  "pairsFpr10": 79,
+  "pairsFpr5": 63,
+  "pairsFpr1": 44,
+  "pairsInSeveral": 0,
+  "pairsTested": 408
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

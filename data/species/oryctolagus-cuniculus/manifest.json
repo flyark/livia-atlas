@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "oryctolagus-cuniculus",
+ "species": {
+  "name": "Oryctolagus cuniculus",
+  "taxon": 9986
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-9986",
+   "short": "AFDB heterodimers",
+   "title": "Oryctolagus cuniculus proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 1016,
+    "pairs": 1017,
+    "predictions": 1017,
+    "runs": 1017,
+    "pairsFpr10": 137,
+    "pairsFpr5": 101,
+    "pairsFpr1": 74
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 1016,
+  "pairs": 1017,
+  "predictions": 1017,
+  "runs": 1017,
+  "pairsFpr10": 137,
+  "pairsFpr5": 101,
+  "pairsFpr1": 74,
+  "pairsInSeveral": 0,
+  "pairsTested": 1017
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

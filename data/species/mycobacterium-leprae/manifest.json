@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "mycobacterium-leprae",
+ "species": {
+  "name": "Mycobacterium leprae",
+  "taxon": 272631
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-272631",
+   "short": "AFDB heterodimers",
+   "title": "Mycobacterium leprae proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 1199,
+    "pairs": 17485,
+    "predictions": 17485,
+    "runs": 17485,
+    "pairsFpr10": 684,
+    "pairsFpr5": 455,
+    "pairsFpr1": 156
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 1199,
+  "pairs": 17485,
+  "predictions": 17485,
+  "runs": 17485,
+  "pairsFpr10": 684,
+  "pairsFpr5": 455,
+  "pairsFpr1": 156,
+  "pairsInSeveral": 0,
+  "pairsTested": 17485
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

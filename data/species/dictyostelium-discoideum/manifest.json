@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "dictyostelium-discoideum",
+ "species": {
+  "name": "Dictyostelium discoideum",
+  "taxon": 44689
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-44689",
+   "short": "AFDB heterodimers",
+   "title": "Dictyostelium discoideum proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 5014,
+    "pairs": 63917,
+    "predictions": 63917,
+    "runs": 63917,
+    "pairsFpr10": 6260,
+    "pairsFpr5": 4170,
+    "pairsFpr1": 1252
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 5014,
+  "pairs": 63917,
+  "predictions": 63917,
+  "runs": 63917,
+  "pairsFpr10": 6260,
+  "pairsFpr5": 4170,
+  "pairsFpr1": 1252,
+  "pairsInSeveral": 0,
+  "pairsTested": 63917
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

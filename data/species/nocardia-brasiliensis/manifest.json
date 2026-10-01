@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "nocardia-brasiliensis",
+ "species": {
+  "name": "Nocardia brasiliensis",
+  "taxon": 1133849
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-1133849",
+   "short": "AFDB heterodimers",
+   "title": "Nocardia brasiliensis proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 4808,
+    "pairs": 97453,
+    "predictions": 97453,
+    "runs": 97453,
+    "pairsFpr10": 4665,
+    "pairsFpr5": 3059,
+    "pairsFpr1": 1032
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 4808,
+  "pairs": 97453,
+  "predictions": 97453,
+  "runs": 97453,
+  "pairsFpr10": 4665,
+  "pairsFpr5": 3059,
+  "pairsFpr1": 1032,
+  "pairsInSeveral": 0,
+  "pairsTested": 97453
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

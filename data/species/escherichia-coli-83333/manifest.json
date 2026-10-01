@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "escherichia-coli-83333",
+ "species": {
+  "name": "Escherichia coli (taxon 83333)",
+  "taxon": 83333
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-83333",
+   "short": "AFDB heterodimers",
+   "title": "Escherichia coli proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 2822,
+    "pairs": 35920,
+    "predictions": 35920,
+    "runs": 35920,
+    "pairsFpr10": 4641,
+    "pairsFpr5": 3386,
+    "pairsFpr1": 716
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 2822,
+  "pairs": 35920,
+  "predictions": 35920,
+  "runs": 35920,
+  "pairsFpr10": 4641,
+  "pairsFpr5": 3386,
+  "pairsFpr1": 716,
+  "pairsInSeveral": 0,
+  "pairsTested": 35920
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

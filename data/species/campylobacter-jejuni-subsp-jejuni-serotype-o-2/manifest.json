@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+ "species": {
+  "name": "Campylobacter jejuni subsp. jejuni serotype O:2",
+  "taxon": 192222
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-192222",
+   "short": "AFDB heterodimers",
+   "title": "Campylobacter jejuni subsp. jejuni serotype O:2 proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 1507,
+    "pairs": 21172,
+    "predictions": 21172,
+    "runs": 21172,
+    "pairsFpr10": 975,
+    "pairsFpr5": 638,
+    "pairsFpr1": 259
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 1507,
+  "pairs": 21172,
+  "predictions": 21172,
+  "runs": 21172,
+  "pairsFpr10": 975,
+  "pairsFpr5": 638,
+  "pairsFpr1": 259,
+  "pairsInSeveral": 0,
+  "pairsTested": 21172
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

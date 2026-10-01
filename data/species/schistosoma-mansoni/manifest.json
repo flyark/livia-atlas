@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "schistosoma-mansoni",
+ "species": {
+  "name": "Schistosoma mansoni",
+  "taxon": 6183
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-6183",
+   "short": "AFDB heterodimers",
+   "title": "Schistosoma mansoni proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 6516,
+    "pairs": 125909,
+    "predictions": 125909,
+    "runs": 125909,
+    "pairsFpr10": 10649,
+    "pairsFpr5": 6688,
+    "pairsFpr1": 1753
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 6516,
+  "pairs": 125909,
+  "predictions": 125909,
+  "runs": 125909,
+  "pairsFpr10": 10649,
+  "pairsFpr5": 6688,
+  "pairsFpr1": 1753,
+  "pairsInSeveral": 0,
+  "pairsTested": 125909
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

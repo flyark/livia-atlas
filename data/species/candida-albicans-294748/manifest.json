@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "candida-albicans-294748",
+ "species": {
+  "name": "Candida albicans (taxon 294748)",
+  "taxon": 294748
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-294748",
+   "short": "AFDB heterodimers",
+   "title": "Candida albicans proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 218,
+    "pairs": 257,
+    "predictions": 257,
+    "runs": 257,
+    "pairsFpr10": 15,
+    "pairsFpr5": 12,
+    "pairsFpr1": 3
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 218,
+  "pairs": 257,
+  "predictions": 257,
+  "runs": 257,
+  "pairsFpr10": 15,
+  "pairsFpr5": 12,
+  "pairsFpr1": 3,
+  "pairsInSeveral": 0,
+  "pairsTested": 257
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "shigella-dysenteriae-serotype-1",
+ "species": {
+  "name": "Shigella dysenteriae serotype 1",
+  "taxon": 300267
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-300267",
+   "short": "AFDB heterodimers",
+   "title": "Shigella dysenteriae serotype 1 proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 2289,
+    "pairs": 21034,
+    "predictions": 21034,
+    "runs": 21034,
+    "pairsFpr10": 1381,
+    "pairsFpr5": 999,
+    "pairsFpr1": 403
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 2289,
+  "pairs": 21034,
+  "predictions": 21034,
+  "runs": 21034,
+  "pairsFpr10": 1381,
+  "pairsFpr5": 999,
+  "pairsFpr1": 403,
+  "pairsInSeveral": 0,
+  "pairsTested": 21034
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

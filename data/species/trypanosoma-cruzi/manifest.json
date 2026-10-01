@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "trypanosoma-cruzi",
+ "species": {
+  "name": "Trypanosoma cruzi",
+  "taxon": 353153
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-353153",
+   "short": "AFDB heterodimers",
+   "title": "Trypanosoma cruzi proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 8111,
+    "pairs": 280562,
+    "predictions": 280562,
+    "runs": 280562,
+    "pairsFpr10": 16017,
+    "pairsFpr5": 9844,
+    "pairsFpr1": 2510
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 8111,
+  "pairs": 280562,
+  "predictions": 280562,
+  "runs": 280562,
+  "pairsFpr10": 16017,
+  "pairsFpr5": 9844,
+  "pairsFpr1": 2510,
+  "pairsInSeveral": 0,
+  "pairsTested": 280562
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

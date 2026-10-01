@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "mus-musculus",
+ "species": {
+  "name": "Mus musculus",
+  "taxon": 10090
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-10090",
+   "short": "AFDB heterodimers",
+   "title": "Mus musculus proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 18657,
+    "pairs": 295369,
+    "predictions": 295369,
+    "runs": 295369,
+    "pairsFpr10": 36856,
+    "pairsFpr5": 24482,
+    "pairsFpr1": 7947
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 18657,
+  "pairs": 295369,
+  "predictions": 295369,
+  "runs": 295369,
+  "pairsFpr10": 36856,
+  "pairsFpr5": 24482,
+  "pairsFpr1": 7947,
+  "pairsInSeveral": 0,
+  "pairsTested": 295369
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

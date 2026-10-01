@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "sporothrix-schenckii",
+ "species": {
+  "name": "Sporothrix schenckii",
+  "taxon": 1391915
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-1391915",
+   "short": "AFDB heterodimers",
+   "title": "Sporothrix schenckii proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 5288,
+    "pairs": 93672,
+    "predictions": 93672,
+    "runs": 93672,
+    "pairsFpr10": 6631,
+    "pairsFpr5": 3839,
+    "pairsFpr1": 978
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 5288,
+  "pairs": 93672,
+  "predictions": 93672,
+  "runs": 93672,
+  "pairsFpr10": 6631,
+  "pairsFpr5": 3839,
+  "pairsFpr1": 978,
+  "pairsInSeveral": 0,
+  "pairsTested": 93672
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

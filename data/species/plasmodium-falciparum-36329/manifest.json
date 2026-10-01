@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "plasmodium-falciparum-36329",
+ "species": {
+  "name": "Plasmodium falciparum (taxon 36329)",
+  "taxon": 36329
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-36329",
+   "short": "AFDB heterodimers",
+   "title": "Plasmodium falciparum proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 2609,
+    "pairs": 33366,
+    "predictions": 33366,
+    "runs": 33366,
+    "pairsFpr10": 2722,
+    "pairsFpr5": 1838,
+    "pairsFpr1": 522
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 2609,
+  "pairs": 33366,
+  "predictions": 33366,
+  "runs": 33366,
+  "pairsFpr10": 2722,
+  "pairsFpr5": 1838,
+  "pairsFpr1": 522,
+  "pairsInSeveral": 0,
+  "pairsTested": 33366
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "wuchereria-bancrofti",
+ "species": {
+  "name": "Wuchereria bancrofti",
+  "taxon": 6293
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-6293",
+   "short": "AFDB heterodimers",
+   "title": "Wuchereria bancrofti proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 601,
+    "pairs": 2796,
+    "predictions": 2796,
+    "runs": 2796,
+    "pairsFpr10": 231,
+    "pairsFpr5": 143,
+    "pairsFpr1": 41
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 601,
+  "pairs": 2796,
+  "predictions": 2796,
+  "runs": 2796,
+  "pairsFpr10": 231,
+  "pairsFpr5": 143,
+  "pairsFpr1": 41,
+  "pairsInSeveral": 0,
+  "pairsTested": 2796
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

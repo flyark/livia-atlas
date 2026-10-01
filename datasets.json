@@ -56,6 +56,908 @@
     "viral-dimers-afdb"
    ],
    "heading": "Viral protein interactions"
+  },
+  {
+   "id": "madurella-mycetomatis",
+   "label": "Madurella mycetomatis",
+   "name": "Madurella mycetomatis",
+   "base": "data/species/madurella-mycetomatis/",
+   "datasets": [
+    "afdb-het-100816"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 100816
+  },
+  {
+   "id": "mus-musculus",
+   "label": "Mus musculus",
+   "name": "Mus musculus",
+   "base": "data/species/mus-musculus/",
+   "datasets": [
+    "afdb-het-10090"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 10090
+  },
+  {
+   "id": "rattus-norvegicus",
+   "label": "Rattus norvegicus",
+   "name": "Rattus norvegicus",
+   "base": "data/species/rattus-norvegicus/",
+   "datasets": [
+    "afdb-het-10116"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 10116
+  },
+  {
+   "id": "klebsiella-pneumoniae-subsp-pneumoniae",
+   "label": "Klebsiella pneumoniae subsp. pneumoniae",
+   "name": "Klebsiella pneumoniae subsp. pneumoniae",
+   "base": "data/species/klebsiella-pneumoniae-subsp-pneumoniae/",
+   "datasets": [
+    "afdb-het-1125630"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 1125630
+  },
+  {
+   "id": "nocardia-brasiliensis",
+   "label": "Nocardia brasiliensis",
+   "name": "Nocardia brasiliensis",
+   "base": "data/species/nocardia-brasiliensis/",
+   "datasets": [
+    "afdb-het-1133849"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 1133849
+  },
+  {
+   "id": "staphylococcus-aureus-1280",
+   "label": "Staphylococcus aureus (taxon 1280)",
+   "name": "Staphylococcus aureus (taxon 1280)",
+   "base": "data/species/staphylococcus-aureus-1280/",
+   "datasets": [
+    "afdb-het-1280"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 1280
+  },
+  {
+   "id": "plasmodium-falciparum-132416",
+   "label": "Plasmodium falciparum (taxon 132416)",
+   "name": "Plasmodium falciparum (taxon 132416)",
+   "base": "data/species/plasmodium-falciparum-132416/",
+   "datasets": [
+    "afdb-het-132416"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 132416
+  },
+  {
+   "id": "sporothrix-schenckii",
+   "label": "Sporothrix schenckii",
+   "name": "Sporothrix schenckii",
+   "base": "data/species/sporothrix-schenckii/",
+   "datasets": [
+    "afdb-het-1391915"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 1391915
+  },
+  {
+   "id": "fonsecaea-pedrosoi-cbs-271-37",
+   "label": "Fonsecaea pedrosoi CBS 271.37",
+   "name": "Fonsecaea pedrosoi CBS 271.37",
+   "base": "data/species/fonsecaea-pedrosoi-cbs-271-37/",
+   "datasets": [
+    "afdb-het-1442368"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 1442368
+  },
+  {
+   "id": "pseudomonas-putida",
+   "label": "Pseudomonas putida",
+   "name": "Pseudomonas putida",
+   "base": "data/species/pseudomonas-putida/",
+   "datasets": [
+    "afdb-het-160488"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 160488
+  },
+  {
+   "id": "streptococcus-pneumoniae",
+   "label": "Streptococcus pneumoniae",
+   "name": "Streptococcus pneumoniae",
+   "base": "data/species/streptococcus-pneumoniae/",
+   "datasets": [
+    "afdb-het-171101"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 171101
+  },
+  {
+   "id": "trypanosoma-brucei-brucei-185431",
+   "label": "Trypanosoma brucei brucei (taxon 185431)",
+   "name": "Trypanosoma brucei brucei (taxon 185431)",
+   "base": "data/species/trypanosoma-brucei-brucei-185431/",
+   "datasets": [
+    "afdb-het-185431"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 185431
+  },
+  {
+   "id": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+   "label": "Campylobacter jejuni subsp. jejuni serotype O:2",
+   "name": "Campylobacter jejuni subsp. jejuni serotype O:2",
+   "base": "data/species/campylobacter-jejuni-subsp-jejuni-serotype-o-2/",
+   "datasets": [
+    "afdb-het-192222"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 192222
+  },
+  {
+   "id": "staphylococcus-aureus-196620",
+   "label": "Staphylococcus aureus (taxon 196620)",
+   "name": "Staphylococcus aureus (taxon 196620)",
+   "base": "data/species/staphylococcus-aureus-196620/",
+   "datasets": [
+    "afdb-het-196620"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 196620
+  },
+  {
+   "id": "escherichia-coli-o6-h1",
+   "label": "Escherichia coli O6:H1",
+   "name": "Escherichia coli O6:H1",
+   "base": "data/species/escherichia-coli-o6-h1/",
+   "datasets": [
+    "afdb-het-199310"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 199310
+  },
+  {
+   "id": "pseudomonas-aeruginosa",
+   "label": "Pseudomonas aeruginosa",
+   "name": "Pseudomonas aeruginosa",
+   "base": "data/species/pseudomonas-aeruginosa/",
+   "datasets": [
+    "afdb-het-208964"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 208964
+  },
+  {
+   "id": "mycobacterium-bovis",
+   "label": "Mycobacterium bovis",
+   "name": "Mycobacterium bovis",
+   "base": "data/species/mycobacterium-bovis/",
+   "datasets": [
+    "afdb-het-233413"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 233413
+  },
+  {
+   "id": "candida-albicans-237561",
+   "label": "Candida albicans (taxon 237561)",
+   "name": "Candida albicans (taxon 237561)",
+   "base": "data/species/candida-albicans-237561/",
+   "datasets": [
+    "afdb-het-237561"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 237561
+  },
+  {
+   "id": "neisseria-gonorrhoeae",
+   "label": "Neisseria gonorrhoeae",
+   "name": "Neisseria gonorrhoeae",
+   "base": "data/species/neisseria-gonorrhoeae/",
+   "datasets": [
+    "afdb-het-242231"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 242231
+  },
+  {
+   "id": "methanocaldococcus-jannaschii",
+   "label": "Methanocaldococcus jannaschii",
+   "name": "Methanocaldococcus jannaschii",
+   "base": "data/species/methanocaldococcus-jannaschii/",
+   "datasets": [
+    "afdb-het-243232"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 243232
+  },
+  {
+   "id": "mycobacterium-leprae",
+   "label": "Mycobacterium leprae",
+   "name": "Mycobacterium leprae",
+   "base": "data/species/mycobacterium-leprae/",
+   "datasets": [
+    "afdb-het-272631"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 272631
+  },
+  {
+   "id": "schizosaccharomyces-pombe",
+   "label": "Schizosaccharomyces pombe",
+   "name": "Schizosaccharomyces pombe",
+   "base": "data/species/schizosaccharomyces-pombe/",
+   "datasets": [
+    "afdb-het-284812"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 284812
+  },
+  {
+   "id": "candida-albicans-294748",
+   "label": "Candida albicans (taxon 294748)",
+   "name": "Candida albicans (taxon 294748)",
+   "base": "data/species/candida-albicans-294748/",
+   "datasets": [
+    "afdb-het-294748"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 294748
+  },
+  {
+   "id": "shigella-dysenteriae-serotype-1",
+   "label": "Shigella dysenteriae serotype 1",
+   "name": "Shigella dysenteriae serotype 1",
+   "base": "data/species/shigella-dysenteriae-serotype-1/",
+   "datasets": [
+    "afdb-het-300267"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 300267
+  },
+  {
+   "id": "shigella-sonnei",
+   "label": "Shigella sonnei",
+   "name": "Shigella sonnei",
+   "base": "data/species/shigella-sonnei/",
+   "datasets": [
+    "afdb-het-300269"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 300269
+  },
+  {
+   "id": "takifugu-rubripes",
+   "label": "Takifugu rubripes",
+   "name": "Takifugu rubripes",
+   "base": "data/species/takifugu-rubripes/",
+   "datasets": [
+    "afdb-het-31033"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 31033
+  },
+  {
+   "id": "dracunculus-medinensis",
+   "label": "Dracunculus medinensis",
+   "name": "Dracunculus medinensis",
+   "base": "data/species/dracunculus-medinensis/",
+   "datasets": [
+    "afdb-het-318479"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 318479
+  },
+  {
+   "id": "trypanosoma-cruzi",
+   "label": "Trypanosoma cruzi",
+   "name": "Trypanosoma cruzi",
+   "base": "data/species/trypanosoma-cruzi/",
+   "datasets": [
+    "afdb-het-353153"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 353153
+  },
+  {
+   "id": "campylobacter-jejuni-subsp-jejuni-serotype-o-23-36",
+   "label": "Campylobacter jejuni subsp. jejuni serotype O:23/36",
+   "name": "Campylobacter jejuni subsp. jejuni serotype O:23/36",
+   "base": "data/species/campylobacter-jejuni-subsp-jejuni-serotype-o-23-36/",
+   "datasets": [
+    "afdb-het-354242"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 354242
+  },
+  {
+   "id": "trichuris-trichiura",
+   "label": "Trichuris trichiura",
+   "name": "Trichuris trichiura",
+   "base": "data/species/trichuris-trichiura/",
+   "datasets": [
+    "afdb-het-36087"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 36087
+  },
+  {
+   "id": "plasmodium-falciparum-36329",
+   "label": "Plasmodium falciparum (taxon 36329)",
+   "name": "Plasmodium falciparum (taxon 36329)",
+   "base": "data/species/plasmodium-falciparum-36329/",
+   "datasets": [
+    "afdb-het-36329"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 36329
+  },
+  {
+   "id": "arabidopsis-thaliana",
+   "label": "Arabidopsis thaliana",
+   "name": "Arabidopsis thaliana",
+   "base": "data/species/arabidopsis-thaliana/",
+   "datasets": [
+    "afdb-het-3702"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 3702
+  },
+  {
+   "id": "brassica-napus",
+   "label": "Brassica napus",
+   "name": "Brassica napus",
+   "base": "data/species/brassica-napus/",
+   "datasets": [
+    "afdb-het-3708"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 3708
+  },
+  {
+   "id": "brassica-campestris",
+   "label": "Brassica campestris",
+   "name": "Brassica campestris",
+   "base": "data/species/brassica-campestris/",
+   "datasets": [
+    "afdb-het-3711"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 3711
+  },
+  {
+   "id": "raphanus-sativus",
+   "label": "Raphanus sativus",
+   "name": "Raphanus sativus",
+   "base": "data/species/raphanus-sativus/",
+   "datasets": [
+    "afdb-het-3726"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 3726
+  },
+  {
+   "id": "sinapis-alba",
+   "label": "Sinapis alba",
+   "name": "Sinapis alba",
+   "base": "data/species/sinapis-alba/",
+   "datasets": [
+    "afdb-het-3728"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 3728
+  },
+  {
+   "id": "glycine-max",
+   "label": "Glycine max",
+   "name": "Glycine max",
+   "base": "data/species/glycine-max/",
+   "datasets": [
+    "afdb-het-3847"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 3847
+  },
+  {
+   "id": "vicia-faba",
+   "label": "Vicia faba",
+   "name": "Vicia faba",
+   "base": "data/species/vicia-faba/",
+   "datasets": [
+    "afdb-het-3906"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 3906
+  },
+  {
+   "id": "oryza-sativa-subsp-indica",
+   "label": "Oryza sativa subsp. indica",
+   "name": "Oryza sativa subsp. indica",
+   "base": "data/species/oryza-sativa-subsp-indica/",
+   "datasets": [
+    "afdb-het-39946"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 39946
+  },
+  {
+   "id": "oryza-sativa-subsp-japonica",
+   "label": "Oryza sativa subsp. japonica",
+   "name": "Oryza sativa subsp. japonica",
+   "base": "data/species/oryza-sativa-subsp-japonica/",
+   "datasets": [
+    "afdb-het-39947"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 39947
+  },
+  {
+   "id": "nicotiana-tabacum",
+   "label": "Nicotiana tabacum",
+   "name": "Nicotiana tabacum",
+   "base": "data/species/nicotiana-tabacum/",
+   "datasets": [
+    "afdb-het-4097"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 4097
+  },
+  {
+   "id": "dictyostelium-discoideum",
+   "label": "Dictyostelium discoideum",
+   "name": "Dictyostelium discoideum",
+   "base": "data/species/dictyostelium-discoideum/",
+   "datasets": [
+    "afdb-het-44689"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 44689
+  },
+  {
+   "id": "ajellomyces-capsulatus",
+   "label": "Ajellomyces capsulatus",
+   "name": "Ajellomyces capsulatus",
+   "base": "data/species/ajellomyces-capsulatus/",
+   "datasets": [
+    "afdb-het-447093"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 447093
+  },
+  {
+   "id": "saccharum-officinarum",
+   "label": "Saccharum officinarum",
+   "name": "Saccharum officinarum",
+   "base": "data/species/saccharum-officinarum/",
+   "datasets": [
+    "afdb-het-4547"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 4547
+  },
+  {
+   "id": "triticum-aestivum",
+   "label": "Triticum aestivum",
+   "name": "Triticum aestivum",
+   "base": "data/species/triticum-aestivum/",
+   "datasets": [
+    "afdb-het-4565"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 4565
+  },
+  {
+   "id": "zea-mays",
+   "label": "Zea mays",
+   "name": "Zea mays",
+   "base": "data/species/zea-mays/",
+   "datasets": [
+    "afdb-het-4577"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 4577
+  },
+  {
+   "id": "paracoccidioides-lutzii",
+   "label": "Paracoccidioides lutzii",
+   "name": "Paracoccidioides lutzii",
+   "base": "data/species/paracoccidioides-lutzii/",
+   "datasets": [
+    "afdb-het-502779"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 502779
+  },
+  {
+   "id": "candida-albicans-5476",
+   "label": "Candida albicans (taxon 5476)",
+   "name": "Candida albicans (taxon 5476)",
+   "base": "data/species/candida-albicans-5476/",
+   "datasets": [
+    "afdb-het-5476"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 5476
+  },
+  {
+   "id": "escherichia-coli-562",
+   "label": "Escherichia coli (taxon 562)",
+   "name": "Escherichia coli (taxon 562)",
+   "base": "data/species/escherichia-coli-562/",
+   "datasets": [
+    "afdb-het-562"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 562
+  },
+  {
+   "id": "leishmania-infantum",
+   "label": "Leishmania infantum",
+   "name": "Leishmania infantum",
+   "base": "data/species/leishmania-infantum/",
+   "datasets": [
+    "afdb-het-5671"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 5671
+  },
+  {
+   "id": "trypanosoma-brucei-brucei-5702",
+   "label": "Trypanosoma brucei brucei (taxon 5702)",
+   "name": "Trypanosoma brucei brucei (taxon 5702)",
+   "base": "data/species/trypanosoma-brucei-brucei-5702/",
+   "datasets": [
+    "afdb-het-5702"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 5702
+  },
+  {
+   "id": "plasmodium-falciparum-5839",
+   "label": "Plasmodium falciparum (taxon 5839)",
+   "name": "Plasmodium falciparum (taxon 5839)",
+   "base": "data/species/plasmodium-falciparum-5839/",
+   "datasets": [
+    "afdb-het-5839"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 5839
+  },
+  {
+   "id": "schistosoma-mansoni",
+   "label": "Schistosoma mansoni",
+   "name": "Schistosoma mansoni",
+   "base": "data/species/schistosoma-mansoni/",
+   "datasets": [
+    "afdb-het-6183"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6183
+  },
+  {
+   "id": "shigella-flexneri",
+   "label": "Shigella flexneri",
+   "name": "Shigella flexneri",
+   "base": "data/species/shigella-flexneri/",
+   "datasets": [
+    "afdb-het-623"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 623
+  },
+  {
+   "id": "strongyloides-stercoralis",
+   "label": "Strongyloides stercoralis",
+   "name": "Strongyloides stercoralis",
+   "base": "data/species/strongyloides-stercoralis/",
+   "datasets": [
+    "afdb-het-6248"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6248
+  },
+  {
+   "id": "brugia-malayi",
+   "label": "Brugia malayi",
+   "name": "Brugia malayi",
+   "base": "data/species/brugia-malayi/",
+   "datasets": [
+    "afdb-het-6279"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6279
+  },
+  {
+   "id": "onchocerca-volvulus",
+   "label": "Onchocerca volvulus",
+   "name": "Onchocerca volvulus",
+   "base": "data/species/onchocerca-volvulus/",
+   "datasets": [
+    "afdb-het-6282"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6282
+  },
+  {
+   "id": "wuchereria-bancrofti",
+   "label": "Wuchereria bancrofti",
+   "name": "Wuchereria bancrofti",
+   "base": "data/species/wuchereria-bancrofti/",
+   "datasets": [
+    "afdb-het-6293"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6293
+  },
+  {
+   "id": "yersinia-pestis",
+   "label": "Yersinia pestis",
+   "name": "Yersinia pestis",
+   "base": "data/species/yersinia-pestis/",
+   "datasets": [
+    "afdb-het-632"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 632
+  },
+  {
+   "id": "spisula-solidissima",
+   "label": "Spisula solidissima",
+   "name": "Spisula solidissima",
+   "base": "data/species/spisula-solidissima/",
+   "datasets": [
+    "afdb-het-6584"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6584
+  },
+  {
+   "id": "tigriopus-californicus",
+   "label": "Tigriopus californicus",
+   "name": "Tigriopus californicus",
+   "base": "data/species/tigriopus-californicus/",
+   "datasets": [
+    "afdb-het-6832"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6832
+  },
+  {
+   "id": "locusta-migratoria",
+   "label": "Locusta migratoria",
+   "name": "Locusta migratoria",
+   "base": "data/species/locusta-migratoria/",
+   "datasets": [
+    "afdb-het-7004"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 7004
+  },
+  {
+   "id": "haemophilus-influenzae",
+   "label": "Haemophilus influenzae",
+   "name": "Haemophilus influenzae",
+   "base": "data/species/haemophilus-influenzae/",
+   "datasets": [
+    "afdb-het-71421"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 71421
+  },
+  {
+   "id": "ceratitis-capitata",
+   "label": "Ceratitis capitata",
+   "name": "Ceratitis capitata",
+   "base": "data/species/ceratitis-capitata/",
+   "datasets": [
+    "afdb-het-7213"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 7213
+  },
+  {
+   "id": "drosophila-simulans",
+   "label": "Drosophila simulans",
+   "name": "Drosophila simulans",
+   "base": "data/species/drosophila-simulans/",
+   "datasets": [
+    "afdb-het-7240"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 7240
+  },
+  {
+   "id": "mycobacterium-tuberculosis",
+   "label": "Mycobacterium tuberculosis",
+   "name": "Mycobacterium tuberculosis",
+   "base": "data/species/mycobacterium-tuberculosis/",
+   "datasets": [
+    "afdb-het-83332"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 83332
+  },
+  {
+   "id": "escherichia-coli-83333",
+   "label": "Escherichia coli (taxon 83333)",
+   "name": "Escherichia coli (taxon 83333)",
+   "base": "data/species/escherichia-coli-83333/",
+   "datasets": [
+    "afdb-het-83333"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 83333
+  },
+  {
+   "id": "escherichia-coli-o157-h7",
+   "label": "Escherichia coli O157:H7",
+   "name": "Escherichia coli O157:H7",
+   "base": "data/species/escherichia-coli-o157-h7/",
+   "datasets": [
+    "afdb-het-83334"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 83334
+  },
+  {
+   "id": "xenopus-laevis",
+   "label": "Xenopus laevis",
+   "name": "Xenopus laevis",
+   "base": "data/species/xenopus-laevis/",
+   "datasets": [
+    "afdb-het-8355"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 8355
+  },
+  {
+   "id": "oenothera-elata-subsp-hookeri",
+   "label": "Oenothera elata subsp. hookeri",
+   "name": "Oenothera elata subsp. hookeri",
+   "base": "data/species/oenothera-elata-subsp-hookeri/",
+   "datasets": [
+    "afdb-het-85636"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 85636
+  },
+  {
+   "id": "helicobacter-pylori",
+   "label": "Helicobacter pylori",
+   "name": "Helicobacter pylori",
+   "base": "data/species/helicobacter-pylori/",
+   "datasets": [
+    "afdb-het-85962"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 85962
+  },
+  {
+   "id": "cladophialophora-carrionii",
+   "label": "Cladophialophora carrionii",
+   "name": "Cladophialophora carrionii",
+   "base": "data/species/cladophialophora-carrionii/",
+   "datasets": [
+    "afdb-het-86049"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 86049
+  },
+  {
+   "id": "salmonella-typhi",
+   "label": "Salmonella typhi",
+   "name": "Salmonella typhi",
+   "base": "data/species/salmonella-typhi/",
+   "datasets": [
+    "afdb-het-90370"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 90370
+  },
+  {
+   "id": "staphylococcus-aureus-93061",
+   "label": "Staphylococcus aureus (taxon 93061)",
+   "name": "Staphylococcus aureus (taxon 93061)",
+   "base": "data/species/staphylococcus-aureus-93061/",
+   "datasets": [
+    "afdb-het-93061"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 93061
+  },
+  {
+   "id": "trichosurus-vulpecula",
+   "label": "Trichosurus vulpecula",
+   "name": "Trichosurus vulpecula",
+   "base": "data/species/trichosurus-vulpecula/",
+   "datasets": [
+    "afdb-het-9337"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9337
+  },
+  {
+   "id": "tupaia-glis",
+   "label": "Tupaia glis",
+   "name": "Tupaia glis",
+   "base": "data/species/tupaia-glis/",
+   "datasets": [
+    "afdb-het-9395"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9395
+  },
+  {
+   "id": "macaca-mulatta",
+   "label": "Macaca mulatta",
+   "name": "Macaca mulatta",
+   "base": "data/species/macaca-mulatta/",
+   "datasets": [
+    "afdb-het-9544"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9544
+  },
+  {
+   "id": "papio-anubis",
+   "label": "Papio anubis",
+   "name": "Papio anubis",
+   "base": "data/species/papio-anubis/",
+   "datasets": [
+    "afdb-het-9555"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9555
+  },
+  {
+   "id": "pan-troglodytes",
+   "label": "Pan troglodytes",
+   "name": "Pan troglodytes",
+   "base": "data/species/pan-troglodytes/",
+   "datasets": [
+    "afdb-het-9598"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9598
+  },
+  {
+   "id": "salmonella-typhimurium",
+   "label": "Salmonella typhimurium",
+   "name": "Salmonella typhimurium",
+   "base": "data/species/salmonella-typhimurium/",
+   "datasets": [
+    "afdb-het-99287"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 99287
+  },
+  {
+   "id": "ovis-aries",
+   "label": "Ovis aries",
+   "name": "Ovis aries",
+   "base": "data/species/ovis-aries/",
+   "datasets": [
+    "afdb-het-9940"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9940
+  },
+  {
+   "id": "oryctolagus-cuniculus",
+   "label": "Oryctolagus cuniculus",
+   "name": "Oryctolagus cuniculus",
+   "base": "data/species/oryctolagus-cuniculus/",
+   "datasets": [
+    "afdb-het-9986"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9986
   }
  ],
  "datasets": [
@@ -208,6 +1110,1564 @@
    },
    "recycles": 12,
    "modelsNote": "model_1_multimer_v3"
+  },
+  {
+   "id": "afdb-het-100816",
+   "species": "madurella-mycetomatis",
+   "title": "Madurella mycetomatis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-100816/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content",
+    "offsets": "data/screens/afdb-het-100816/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-10090",
+   "species": "mus-musculus",
+   "title": "Mus musculus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-10090/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content",
+    "offsets": "data/screens/afdb-het-10090/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-10116",
+   "species": "rattus-norvegicus",
+   "title": "Rattus norvegicus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-10116/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content",
+    "offsets": "data/screens/afdb-het-10116/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-1125630",
+   "species": "klebsiella-pneumoniae-subsp-pneumoniae",
+   "title": "Klebsiella pneumoniae subsp. pneumoniae proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-1125630/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-1125630/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-1133849",
+   "species": "nocardia-brasiliensis",
+   "title": "Nocardia brasiliensis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-1133849/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-1133849/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-1280",
+   "species": "staphylococcus-aureus-1280",
+   "title": "Staphylococcus aureus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-1280/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-1280/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-132416",
+   "species": "plasmodium-falciparum-132416",
+   "title": "Plasmodium falciparum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-132416/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-132416/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-1391915",
+   "species": "sporothrix-schenckii",
+   "title": "Sporothrix schenckii proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-1391915/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-1391915/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-1442368",
+   "species": "fonsecaea-pedrosoi-cbs-271-37",
+   "title": "Fonsecaea pedrosoi CBS 271.37 proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-1442368/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-1442368/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-160488",
+   "species": "pseudomonas-putida",
+   "title": "Pseudomonas putida proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-160488/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-160488/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-171101",
+   "species": "streptococcus-pneumoniae",
+   "title": "Streptococcus pneumoniae proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-171101/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-171101/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-185431",
+   "species": "trypanosoma-brucei-brucei-185431",
+   "title": "Trypanosoma brucei brucei proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-185431/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-185431/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-192222",
+   "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+   "title": "Campylobacter jejuni subsp. jejuni serotype O:2 proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-192222/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-192222/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-196620",
+   "species": "staphylococcus-aureus-196620",
+   "title": "Staphylococcus aureus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-196620/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-196620/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-199310",
+   "species": "escherichia-coli-o6-h1",
+   "title": "Escherichia coli O6:H1 proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-199310/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content",
+    "offsets": "data/screens/afdb-het-199310/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-208964",
+   "species": "pseudomonas-aeruginosa",
+   "title": "Pseudomonas aeruginosa proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-208964/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-208964/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-233413",
+   "species": "mycobacterium-bovis",
+   "title": "Mycobacterium bovis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-233413/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-233413/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-237561",
+   "species": "candida-albicans-237561",
+   "title": "Candida albicans proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-237561/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-237561/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-242231",
+   "species": "neisseria-gonorrhoeae",
+   "title": "Neisseria gonorrhoeae proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-242231/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-242231/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-243232",
+   "species": "methanocaldococcus-jannaschii",
+   "title": "Methanocaldococcus jannaschii proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-243232/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content",
+    "offsets": "data/screens/afdb-het-243232/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-272631",
+   "species": "mycobacterium-leprae",
+   "title": "Mycobacterium leprae proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-272631/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-272631/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-284812",
+   "species": "schizosaccharomyces-pombe",
+   "title": "Schizosaccharomyces pombe proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-284812/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-284812/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-294748",
+   "species": "candida-albicans-294748",
+   "title": "Candida albicans proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-294748/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-294748/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-300267",
+   "species": "shigella-dysenteriae-serotype-1",
+   "title": "Shigella dysenteriae serotype 1 proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-300267/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-300267/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-300269",
+   "species": "shigella-sonnei",
+   "title": "Shigella sonnei proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-300269/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content",
+    "offsets": "data/screens/afdb-het-300269/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-31033",
+   "species": "takifugu-rubripes",
+   "title": "Takifugu rubripes proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-31033/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content",
+    "offsets": "data/screens/afdb-het-31033/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-318479",
+   "species": "dracunculus-medinensis",
+   "title": "Dracunculus medinensis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-318479/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-318479/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-353153",
+   "species": "trypanosoma-cruzi",
+   "title": "Trypanosoma cruzi proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-353153/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-353153/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-354242",
+   "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-23-36",
+   "title": "Campylobacter jejuni subsp. jejuni serotype O:23/36 proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-354242/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-354242/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-36087",
+   "species": "trichuris-trichiura",
+   "title": "Trichuris trichiura proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-36087/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content",
+    "offsets": "data/screens/afdb-het-36087/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-36329",
+   "species": "plasmodium-falciparum-36329",
+   "title": "Plasmodium falciparum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-36329/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-36329/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-3702",
+   "species": "arabidopsis-thaliana",
+   "title": "Arabidopsis thaliana proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-3702/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content",
+    "offsets": "data/screens/afdb-het-3702/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-3708",
+   "species": "brassica-napus",
+   "title": "Brassica napus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-3708/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-3708/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-3711",
+   "species": "brassica-campestris",
+   "title": "Brassica campestris proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-3711/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-3711/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-3726",
+   "species": "raphanus-sativus",
+   "title": "Raphanus sativus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-3726/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-3726/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-3728",
+   "species": "sinapis-alba",
+   "title": "Sinapis alba proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-3728/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-3728/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-3847",
+   "species": "glycine-max",
+   "title": "Glycine max proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-3847/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part1.zip/content",
+    "offsets": "data/screens/afdb-het-3847/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-3906",
+   "species": "vicia-faba",
+   "title": "Vicia faba proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-3906/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-3906/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-39946",
+   "species": "oryza-sativa-subsp-indica",
+   "title": "Oryza sativa subsp. indica proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-39946/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content",
+    "offsets": "data/screens/afdb-het-39946/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-39947",
+   "species": "oryza-sativa-subsp-japonica",
+   "title": "Oryza sativa subsp. japonica proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-39947/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content",
+    "offsets": "data/screens/afdb-het-39947/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-4097",
+   "species": "nicotiana-tabacum",
+   "title": "Nicotiana tabacum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-4097/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-4097/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-44689",
+   "species": "dictyostelium-discoideum",
+   "title": "Dictyostelium discoideum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-44689/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-44689/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-447093",
+   "species": "ajellomyces-capsulatus",
+   "title": "Ajellomyces capsulatus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-447093/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-447093/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-4547",
+   "species": "saccharum-officinarum",
+   "title": "Saccharum officinarum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-4547/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-4547/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-4565",
+   "species": "triticum-aestivum",
+   "title": "Triticum aestivum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-4565/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-4565/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-4577",
+   "species": "zea-mays",
+   "title": "Zea mays proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-4577/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-4577/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-502779",
+   "species": "paracoccidioides-lutzii",
+   "title": "Paracoccidioides lutzii proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-502779/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-502779/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-5476",
+   "species": "candida-albicans-5476",
+   "title": "Candida albicans proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-5476/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-5476/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-562",
+   "species": "escherichia-coli-562",
+   "title": "Escherichia coli proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-562/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-562/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-5671",
+   "species": "leishmania-infantum",
+   "title": "Leishmania infantum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-5671/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-5671/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-5702",
+   "species": "trypanosoma-brucei-brucei-5702",
+   "title": "Trypanosoma brucei brucei proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-5702/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-5702/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-5839",
+   "species": "plasmodium-falciparum-5839",
+   "title": "Plasmodium falciparum proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-5839/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-5839/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6183",
+   "species": "schistosoma-mansoni",
+   "title": "Schistosoma mansoni proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6183/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-6183/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-623",
+   "species": "shigella-flexneri",
+   "title": "Shigella flexneri proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-623/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-623/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6248",
+   "species": "strongyloides-stercoralis",
+   "title": "Strongyloides stercoralis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6248/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-6248/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6279",
+   "species": "brugia-malayi",
+   "title": "Brugia malayi proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6279/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-6279/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6282",
+   "species": "onchocerca-volvulus",
+   "title": "Onchocerca volvulus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6282/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-6282/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6293",
+   "species": "wuchereria-bancrofti",
+   "title": "Wuchereria bancrofti proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6293/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-6293/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-632",
+   "species": "yersinia-pestis",
+   "title": "Yersinia pestis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-632/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-632/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6584",
+   "species": "spisula-solidissima",
+   "title": "Spisula solidissima proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6584/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-6584/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6832",
+   "species": "tigriopus-californicus",
+   "title": "Tigriopus californicus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6832/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-6832/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-7004",
+   "species": "locusta-migratoria",
+   "title": "Locusta migratoria proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-7004/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-7004/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-71421",
+   "species": "haemophilus-influenzae",
+   "title": "Haemophilus influenzae proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-71421/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-71421/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-7213",
+   "species": "ceratitis-capitata",
+   "title": "Ceratitis capitata proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-7213/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-7213/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-7240",
+   "species": "drosophila-simulans",
+   "title": "Drosophila simulans proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-7240/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-7240/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-83332",
+   "species": "mycobacterium-tuberculosis",
+   "title": "Mycobacterium tuberculosis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-83332/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-83332/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-83333",
+   "species": "escherichia-coli-83333",
+   "title": "Escherichia coli proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-83333/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-83333/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-83334",
+   "species": "escherichia-coli-o157-h7",
+   "title": "Escherichia coli O157:H7 proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-83334/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-83334/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-8355",
+   "species": "xenopus-laevis",
+   "title": "Xenopus laevis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-8355/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-8355/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-85636",
+   "species": "oenothera-elata-subsp-hookeri",
+   "title": "Oenothera elata subsp. hookeri proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-85636/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-85636/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-85962",
+   "species": "helicobacter-pylori",
+   "title": "Helicobacter pylori proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-85962/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-85962/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-86049",
+   "species": "cladophialophora-carrionii",
+   "title": "Cladophialophora carrionii proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-86049/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-86049/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-90370",
+   "species": "salmonella-typhi",
+   "title": "Salmonella typhi proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-90370/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-90370/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-93061",
+   "species": "staphylococcus-aureus-93061",
+   "title": "Staphylococcus aureus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-93061/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-93061/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9337",
+   "species": "trichosurus-vulpecula",
+   "title": "Trichosurus vulpecula proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9337/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-9337/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9395",
+   "species": "tupaia-glis",
+   "title": "Tupaia glis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9395/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content",
+    "offsets": "data/screens/afdb-het-9395/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9544",
+   "species": "macaca-mulatta",
+   "title": "Macaca mulatta proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9544/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content",
+    "offsets": "data/screens/afdb-het-9544/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9555",
+   "species": "papio-anubis",
+   "title": "Papio anubis proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9555/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-9555/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9598",
+   "species": "pan-troglodytes",
+   "title": "Pan troglodytes proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9598/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-9598/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-99287",
+   "species": "salmonella-typhimurium",
+   "title": "Salmonella typhimurium proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-99287/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-99287/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9940",
+   "species": "ovis-aries",
+   "title": "Ovis aries proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9940/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-9940/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9986",
+   "species": "oryctolagus-cuniculus",
+   "title": "Oryctolagus cuniculus proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9986/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-9986/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
   }
  ],
  "themes": [

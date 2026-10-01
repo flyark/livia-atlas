@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "nicotiana-tabacum",
+ "species": {
+  "name": "Nicotiana tabacum",
+  "taxon": 4097
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-4097",
+   "short": "AFDB heterodimers",
+   "title": "Nicotiana tabacum proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 705,
+    "pairs": 704,
+    "predictions": 704,
+    "runs": 704,
+    "pairsFpr10": 26,
+    "pairsFpr5": 14,
+    "pairsFpr1": 1
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 705,
+  "pairs": 704,
+  "predictions": 704,
+  "runs": 704,
+  "pairsFpr10": 26,
+  "pairsFpr5": 14,
+  "pairsFpr1": 1,
+  "pairsInSeveral": 0,
+  "pairsTested": 704
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}
