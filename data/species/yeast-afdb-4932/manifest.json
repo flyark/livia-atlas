@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "yeast-afdb-4932",
+ "species": {
+  "name": "Saccharomyces cerevisiae (AFDB, taxon 4932)",
+  "taxon": 4932
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-4932",
+   "short": "AFDB heterodimers",
+   "title": "Saccharomyces cerevisiae proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 148,
+    "pairs": 148,
+    "predictions": 148,
+    "runs": 148,
+    "pairsFpr10": 13,
+    "pairsFpr5": 11,
+    "pairsFpr1": 3
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 148,
+  "pairs": 148,
+  "predictions": 148,
+  "runs": 148,
+  "pairsFpr10": 13,
+  "pairsFpr5": 11,
+  "pairsFpr1": 3,
+  "pairsInSeveral": 0,
+  "pairsTested": 148
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

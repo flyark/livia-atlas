@@ -958,6 +958,72 @@
    ],
    "group": "AFDB proteomes",
    "taxon": 9986
+  },
+  {
+   "id": "yeast-afdb-4932",
+   "label": "Saccharomyces cerevisiae (AFDB, taxon 4932)",
+   "name": "Saccharomyces cerevisiae (AFDB, taxon 4932)",
+   "base": "data/species/yeast-afdb-4932/",
+   "datasets": [
+    "afdb-het-4932"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 4932
+  },
+  {
+   "id": "yeast-afdb-559292",
+   "label": "Saccharomyces cerevisiae (AFDB, taxon 559292)",
+   "name": "Saccharomyces cerevisiae (AFDB, taxon 559292)",
+   "base": "data/species/yeast-afdb-559292/",
+   "datasets": [
+    "afdb-het-559292"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 559292
+  },
+  {
+   "id": "worm-afdb",
+   "label": "Caenorhabditis elegans (AFDB)",
+   "name": "Caenorhabditis elegans (AFDB)",
+   "base": "data/species/worm-afdb/",
+   "datasets": [
+    "afdb-het-6239"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 6239
+  },
+  {
+   "id": "fly-afdb",
+   "label": "Drosophila melanogaster (AFDB)",
+   "name": "Drosophila melanogaster (AFDB)",
+   "base": "data/species/fly-afdb/",
+   "datasets": [
+    "afdb-het-7227"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 7227
+  },
+  {
+   "id": "zebrafish-afdb",
+   "label": "Danio rerio (AFDB)",
+   "name": "Danio rerio (AFDB)",
+   "base": "data/species/zebrafish-afdb/",
+   "datasets": [
+    "afdb-het-7955"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 7955
+  },
+  {
+   "id": "human-afdb",
+   "label": "Homo sapiens (AFDB)",
+   "name": "Homo sapiens (AFDB)",
+   "base": "data/species/human-afdb/",
+   "datasets": [
+    "afdb-het-9606"
+   ],
+   "group": "AFDB proteomes",
+   "taxon": 9606
   }
  ],
  "datasets": [
@@ -1102,7 +1168,7 @@
    "source": "Han, Narain et al. 2026 · AlphaFold Database",
    "paper": "https://research.nvidia.com/labs/dbr/assets/data/manuscripts/viralcomplexes.pdf",
    "zip": {
-    "url": "https://zenodo.org/api/records/22984781/files/livia-atlas-viral-dimers-afdb.zip/content",
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-viral-dimers-afdb.zip/content",
     "dev": "../zenodo/livia-atlas-viral-dimers-afdb.zip",
     "offsets": "data/screens/viral-dimers-afdb/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
@@ -2665,6 +2731,120 @@
    "zip": {
     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
     "offsets": "data/screens/afdb-het-9986/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-4932",
+   "species": "yeast-afdb-4932",
+   "title": "Saccharomyces cerevisiae proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-4932/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content",
+    "offsets": "data/screens/afdb-het-4932/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-559292",
+   "species": "yeast-afdb-559292",
+   "title": "Saccharomyces cerevisiae proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-559292/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-559292/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-6239",
+   "species": "worm-afdb",
+   "title": "Caenorhabditis elegans proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-6239/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-6239/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-7227",
+   "species": "fly-afdb",
+   "title": "Drosophila melanogaster proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-7227/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-7227/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-7955",
+   "species": "zebrafish-afdb",
+   "title": "Danio rerio proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-7955/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content",
+    "offsets": "data/screens/afdb-het-7955/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "afdb-het-9606",
+   "species": "human-afdb",
+   "title": "Homo sapiens proteome heterodimers (AFDB complexes)",
+   "short": "AFDB heterodimers",
+   "color": "#5B7F95",
+   "base": "data/screens/afdb-het-9606/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "model_1_multimer_v3",
+   "source": "AlphaFold Database complexes · EMBL-EBI, NVIDIA",
+   "paper": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content",
+    "offsets": "data/screens/afdb-het-9606/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
    }

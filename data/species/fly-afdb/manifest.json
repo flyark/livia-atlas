@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "fly-afdb",
+ "species": {
+  "name": "Drosophila melanogaster (AFDB)",
+  "taxon": 7227
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-7227",
+   "short": "AFDB heterodimers",
+   "title": "Drosophila melanogaster proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 9740,
+    "pairs": 138938,
+    "predictions": 138938,
+    "runs": 138938,
+    "pairsFpr10": 13570,
+    "pairsFpr5": 8855,
+    "pairsFpr1": 2750
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 9740,
+  "pairs": 138938,
+  "predictions": 138938,
+  "runs": 138938,
+  "pairsFpr10": 13570,
+  "pairsFpr5": 8855,
+  "pairsFpr1": 2750,
+  "pairsInSeveral": 0,
+  "pairsTested": 138938
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

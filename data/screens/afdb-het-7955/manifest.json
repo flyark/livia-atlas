@@ -1,0 +1,51 @@
+{
+ "format": "livia-atlas/1",
+ "id": "afdb-het-7955",
+ "title": "Danio rerio proteome heterodimers (AFDB complexes)",
+ "short": "AFDB heterodimers",
+ "speciesId": "zebrafish-afdb",
+ "species": {
+  "name": "Danio rerio (AFDB)",
+  "taxon": 7955
+ },
+ "ids": "UniProt accession (<accession>_<range> when one accession has several fragments in this screen)",
+ "source": {
+  "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+  "url": "https://alphafold.ebi.ac.uk/",
+  "method": "AlphaFold-Multimer v3, one model per pair (model_1_multimer_v3); rescored with lis.py. iLIS cutoffs were calibrated on best-of-5 models, so at the same cutoff this screen is less sensitive; a low iLIS here means \"not seen by model_1\"."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "plainCutoffs": true
+ },
+ "counts": {
+  "proteins": 12609,
+  "pairs": 263985,
+  "predictions": 263985,
+  "runs": 263985,
+  "pairsFpr10": 30450,
+  "pairsFpr5": 20179,
+  "pairsFpr1": 6810,
+  "homodimers": 0,
+  "repeatsDropped": 3587,
+  "crossSpeciesPairs": 169,
+  "organisms": 2
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

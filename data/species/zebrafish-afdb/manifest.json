@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "zebrafish-afdb",
+ "species": {
+  "name": "Danio rerio (AFDB)",
+  "taxon": 7955
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-7955",
+   "short": "AFDB heterodimers",
+   "title": "Danio rerio proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 12609,
+    "pairs": 263985,
+    "predictions": 263985,
+    "runs": 263985,
+    "pairsFpr10": 30450,
+    "pairsFpr5": 20179,
+    "pairsFpr1": 6810
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 12609,
+  "pairs": 263985,
+  "predictions": 263985,
+  "runs": 263985,
+  "pairsFpr10": 30450,
+  "pairsFpr5": 20179,
+  "pairsFpr1": 6810,
+  "pairsInSeveral": 0,
+  "pairsTested": 263985
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "human-afdb",
+ "species": {
+  "name": "Homo sapiens (AFDB)",
+  "taxon": 9606
+ },
+ "datasets": [
+  {
+   "id": "afdb-het-9606",
+   "short": "AFDB heterodimers",
+   "title": "Homo sapiens proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 17326,
+    "pairs": 598295,
+    "predictions": 598295,
+    "runs": 598295,
+    "pairsFpr10": 60123,
+    "pairsFpr5": 36356,
+    "pairsFpr1": 10840
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 17326,
+  "pairs": 598295,
+  "predictions": 598295,
+  "runs": 598295,
+  "pairsFpr10": 60123,
+  "pairsFpr5": 36356,
+  "pairsFpr1": 10840,
+  "pairsInSeveral": 0,
+  "pairsTested": 598295
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}
