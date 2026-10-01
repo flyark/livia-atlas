@@ -21,21 +21,55 @@
     "pairsFpr1": 5,
     "runs": 1070
    }
+  },
+  {
+   "id": "afdb-het-559292",
+   "short": "AFDB heterodimers",
+   "title": "Saccharomyces cerevisiae proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 5756,
+    "pairs": 158840,
+    "predictions": 158840,
+    "runs": 158840,
+    "pairsFpr10": 10243,
+    "pairsFpr5": 6131,
+    "pairsFpr1": 1561
+   }
+  },
+  {
+   "id": "afdb-het-4932",
+   "short": "AFDB heterodimers",
+   "title": "Saccharomyces cerevisiae proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 148,
+    "pairs": 148,
+    "predictions": 148,
+    "runs": 148,
+    "pairsFpr10": 13,
+    "pairsFpr5": 11,
+    "pairsFpr1": 3
+   }
   }
  ],
  "counts": {
-  "proteins": 105,
-  "pairs": 1066,
-  "predictions": 5330,
-  "runs": 1070,
-  "pairsFpr10": 184,
-  "pairsFpr5": 42,
-  "pairsFpr1": 4,
-  "pairsInSeveral": 0
+  "proteins": 5762,
+  "pairs": 159992,
+  "predictions": 164301,
+  "runs": 160041,
+  "pairsFpr10": 10427,
+  "pairsFpr5": 6176,
+  "pairsFpr1": 1563,
+  "pairsInSeveral": 45,
+  "pairsTested": 159992
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 1
+  "biogridShards": 256,
+  "tested": "tested.bin"
  }
 }

@@ -21,21 +21,39 @@
     "pairsFpr1": 18,
     "runs": 2309
    }
+  },
+  {
+   "id": "afdb-het-6239",
+   "short": "AFDB heterodimers",
+   "title": "Caenorhabditis elegans proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 11124,
+    "pairs": 139719,
+    "predictions": 139719,
+    "runs": 139719,
+    "pairsFpr10": 11867,
+    "pairsFpr5": 7833,
+    "pairsFpr1": 2263
+   }
   }
  ],
  "counts": {
-  "proteins": 187,
-  "pairs": 2309,
-  "predictions": 11545,
-  "runs": 2309,
-  "pairsFpr10": 557,
-  "pairsFpr5": 251,
-  "pairsFpr1": 18,
-  "pairsInSeveral": 0
+  "proteins": 11162,
+  "pairs": 141987,
+  "predictions": 151254,
+  "runs": 142018,
+  "pairsFpr10": 12406,
+  "pairsFpr5": 8077,
+  "pairsFpr1": 2276,
+  "pairsInSeveral": 31,
+  "pairsTested": 141987
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 1
+  "biogridShards": 256,
+  "tested": "tested.bin"
  }
 }

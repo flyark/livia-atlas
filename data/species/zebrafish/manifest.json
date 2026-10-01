@@ -21,20 +21,39 @@
     "pairsFpr1": 72,
     "runs": 4278
    }
+  },
+  {
+   "id": "afdb-het-7955",
+   "short": "AFDB heterodimers",
+   "title": "Danio rerio proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 12609,
+    "pairs": 263985,
+    "predictions": 263985,
+    "runs": 263985,
+    "pairsFpr10": 30450,
+    "pairsFpr5": 20179,
+    "pairsFpr1": 6810
+   }
   }
  ],
  "counts": {
-  "proteins": 252,
-  "pairs": 4278,
-  "predictions": 21390,
-  "runs": 4278,
-  "pairsFpr10": 1228,
-  "pairsFpr5": 576,
-  "pairsFpr1": 72,
-  "pairsInSeveral": 0
+  "proteins": 12749,
+  "pairs": 268057,
+  "predictions": 285194,
+  "runs": 268082,
+  "pairsFpr10": 31651,
+  "pairsFpr5": 20739,
+  "pairsFpr1": 6872,
+  "pairsInSeveral": 25,
+  "pairsTested": 268057
  },
  "files": {
   "proteins": "proteins.json",
-  "edges": "edges.tsv"
+  "edges": "edges.tsv",
+  "tested": "tested.bin",
+  "biogridShards": 256
  }
 }

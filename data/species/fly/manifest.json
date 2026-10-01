@@ -24,20 +24,36 @@
     "genes": 13939,
     "constructs": 28357
    }
+  },
+  {
+   "id": "afdb-het-7227",
+   "short": "AFDB heterodimers",
+   "title": "Drosophila melanogaster proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 9740,
+    "pairs": 138938,
+    "predictions": 138938,
+    "runs": 138938,
+    "pairsFpr10": 13570,
+    "pairsFpr5": 8855,
+    "pairsFpr1": 2750
+   }
   }
  ],
  "counts": {
-  "proteins": 14032,
-  "pairs": 1110715,
-  "predictions": 7469962,
-  "runs": 1493926,
-  "pairsFpr10": 152329,
-  "pairsFpr5": 73474,
-  "pairsFpr1": 11028,
+  "proteins": 14038,
+  "pairs": 1218490,
+  "predictions": 7607942,
+  "runs": 1631906,
+  "pairsFpr10": 161834,
+  "pairsFpr5": 79324,
+  "pairsFpr1": 12531,
   "genes": 13939,
   "constructs": 28357,
-  "pairsInSeveral": 0,
-  "pairsTested": 1128685
+  "pairsInSeveral": 30205,
+  "pairsTested": 1236460
  },
  "files": {
   "proteins": "proteins.json",

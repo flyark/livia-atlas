@@ -53,18 +53,34 @@
     "pairsFpr1": 69,
     "runs": 4057
    }
+  },
+  {
+   "id": "afdb-het-9606",
+   "short": "AFDB heterodimers",
+   "title": "Homo sapiens proteome heterodimers (AFDB complexes)",
+   "citation": "AlphaFold Database complexes release (heterodimers), EMBL-EBI / Google DeepMind / NVIDIA and collaborators, 2026. Models: ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers, CC BY 4.0. Scores: lis.py (AFM-LIS) computed by the LIVIA Atlas team.",
+   "url": "https://alphafold.ebi.ac.uk/",
+   "counts": {
+    "proteins": 17326,
+    "pairs": 598295,
+    "predictions": 598295,
+    "runs": 598295,
+    "pairsFpr10": 60123,
+    "pairsFpr5": 36356,
+    "pairsFpr1": 10840
+   }
   }
  ],
  "counts": {
-  "proteins": 20199,
-  "pairs": 1989686,
-  "predictions": 6748324,
-  "runs": 1995381,
-  "pairsFpr10": 287013,
-  "pairsFpr5": 156836,
-  "pairsFpr1": 41818,
-  "pairsInSeveral": 5647,
-  "pairsTested": 1989692
+  "proteins": 20526,
+  "pairs": 2245221,
+  "predictions": 7337994,
+  "runs": 2585051,
+  "pairsFpr10": 318275,
+  "pairsFpr5": 173600,
+  "pairsFpr1": 45152,
+  "pairsInSeveral": 339782,
+  "pairsTested": 2245227
  },
  "files": {
   "proteins": "proteins.json",

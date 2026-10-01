@@ -479,7 +479,7 @@ async function afdbStruct(sp, ia, ib) {
   const r = (await sp.hstr.get(k)).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
   return r ? { model: r[2], shown: false, addr: { tar: r[3], cif_off: +r[4], cif_len: +r[5], pae_off: +r[6], pae_len: +r[7] } } : null;
 }
-const pairStruct = (sp, ia, ib) => (sp.viruses ? virusStruct(sp, ia, ib) : sp.reg && sp.reg.group ? afdbStruct(sp, ia, ib) : Promise.resolve(null));
+const pairStruct = (sp, ia, ib) => (sp.viruses ? virusStruct(sp, ia, ib) : sp.reg && sp.reg.structs ? afdbStruct(sp, ia, ib) : Promise.resolve(null));
 function structLink(host, x, cls) {
   if (!host) return; host.innerHTML = '';
   if (!x || !x.model || !(x.shown || x.addr)) return;
@@ -801,6 +801,23 @@ function scoreProteins(sp, raw, limit = 10) {   // → [{ row, score }], best fi
   scored.sort((a, b) => b[0] - a[0]);
   return scored.slice(0, limit).map(([score, i, base, bonus]) => ({ row: sp.rows[i], score, base, bonus }));
 }
+// Names of the species the home search does not load (data/search/, build/search_index.py): one small shard per name prefix,
+// so a query reads one file; matches carry their species. → [{ row, sp, base, bonus, score }]
+let SIDX = null; const SSH = new Map();
+async function searchOthers(q) {
+  const Q = q.trim().toUpperCase(); if (Q.length < 3) return [];
+  if (!SIDX) SIDX = getJSON('data/search/index.json').then((j) => new Set(j.split)).catch(() => new Set());
+  const split = await SIDX; let L = 3; while (split.has(Q.slice(0, L)) && Q.length > L) L++;
+  const k = Q.slice(0, L).replace(/[^A-Z0-9_-]/g, '_');
+  if (!SSH.has(k)) SSH.set(k, getText(`data/search/${k}.tsv`).then((t) => t.trim().split('\n').map((l) => l.split('\t'))).catch(() => []));
+  const reg = await registry(), lab = new Map((reg.species || []).map((x) => [x.id, x])), seen = new Set(), out = [];
+  for (const [n, sid, key, gene, acc, pos10, partners, name] of await SSH.get(k)) {
+    if (!n || !n.startsWith(Q) || seen.has(sid + key)) continue; seen.add(sid + key);
+    const base = n === Q ? 80 : 40, x = lab.get(sid); if (!x) continue;
+    out.push({ row: { key, gene: gene || key, acc, id: key, name, pos10: +pos10, partners: +partners }, sp: { id: sid, reg: x }, base, bonus: Math.min(19, Math.log10(1 + +pos10) * 6), score: base + Math.log10(1 + +pos10) });
+  }
+  return out.sort((a, b) => b.score - a.score).slice(0, 12);
+}
 function mountSearch(host, { big = false, spId = null, autofocus = false, only = null, set = '' } = {}) {   // spId null: every species; only: a set's keys
   host.innerHTML = `<div class="search ${big ? 'big' : ''}">
       <svg class="glass" width="${big ? 20 : 17}" height="${big ? 20 : 17}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
@@ -825,14 +842,17 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
       for (const h of [...hits].sort((a, b) => b.score - a.score)) { if (!bySp.has(h.sp)) bySp.set(h.sp, []); bySp.get(h.sp).push(h); }
       prot = [...hits].sort((a, b) => x(b) - x(a)).map((h) => bySp.get(h.sp).shift());
     } else prot = hits.sort((a, b) => b.score - a.score);
+    const others = spId || only ? [] : await searchOthers(q); if (q !== input.value) return;   // the one-screen AFDB species, from the name index
+    if (others.length) prot = [...prot, ...others].sort((a, b) => (b.base >= 80) - (a.base >= 80) || (b.row.pos10 || 0) - (a.row.pos10 || 0));   // exact names first, then by pairs past 10% FPR, whatever the species
     // a virus named exactly (or by a common name) first, then exact gene matches, then viruses named in part ("Tor" is a gene first)
     const exact = prot.filter((h) => h.base >= 80), rest = prot.filter((h) => h.base < 80);
     items = [...vir.filter((x) => x.score === 3), ...exact, ...vir.filter((x) => x.score < 3), ...rest].slice(0, 10);
     on = items.length ? 0 : -1;
+    const manyX = many || others.length > 0;
     box.innerHTML = items.map(({ row: r, sp, v }) => (v ? `<div class="sg"><b>${esc(v.name)}</b><span class="nm">virus · ${fmtInt(v.n)} proteins</span><span class="ct">${fmtInt(v.hpos + v.mpos)} pairs</span>
-        <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}its proteins' network · taxon ${v.taxid}</span></div>`
+        <span class="sub">${manyX ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}its proteins' network · taxon ${v.taxid}</span></div>`
       : `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
-        <span class="sub">${many ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${r.virus ? `${esc(r.virus.name)} · ` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`)).join('')
+        <span class="sub">${manyX ? `<span class="sp-tag">${esc(sp.reg.label)}</span>` : ''}${r.virus ? `${esc(r.virus.name)} · ` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`)).join('')
       || (q.trim() ? `<div class="sg-note">No match.${(() => { const t0 = q.trim();
         if (/^ENS[A-Z]*[GTP]\d{6,}/i.test(t0) || /^\d+$/.test(t0)) return ' Ensembl and Entrez IDs are not in the Atlas: try the gene symbol or UniProt accession.';
         const near = sps.filter((sp) => sp && !sp.viruses).map((sp) => [sp, nearRow(sp, t0)]).filter(([, r]) => r).slice(0, 3);
@@ -1220,11 +1240,11 @@ async function setCards(gen, reg) {
 
 async function viewSpeciesList() {   // every species: the Atlas's own first, then each group (one AlphaFold Database screen per species)
   const gen = ROUTE, reg = await registry(), list = reg.species || [];
-  const groups = [['', coreSpecies(reg)], ...[...new Set(list.filter((x) => x.group).map((x) => x.group))].map((g) => [g, list.filter((x) => x.group === g).sort((a, b) => a.name.localeCompare(b.name))])];
+  const groups = [['Interactome screens', coreSpecies(reg).filter((x) => !x.heading)], ['Viral proteomes', coreSpecies(reg).filter((x) => x.heading)], ...[...new Set(list.filter((x) => x.group).map((x) => x.group))].map((g) => [g, list.filter((x) => x.group === g).sort((a, b) => a.name.localeCompare(b.name))])];
   const row = (x) => `<tr><td><a href="#/${x.id}"><i>${esc(x.name)}</i></a>${x.label !== x.name ? ` <span class="muted">${esc(x.label)}</span>` : ''}</td><td class="n" data-tx>${x.taxon || ''}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Species</div>
     <div class="card"><h1 style="margin:0">Species</h1>
-    ${groups.map(([g, xs]) => `<h2 style="margin:18px 0 6px">${g ? esc(g) : 'Atlas screens'} <span class="muted">${fmtInt(xs.length)}</span></h2>${g ? '<p class="muted" style="margin:0 0 8px">One AlphaFold Database heterodimer screen per species, one AlphaFold-Multimer model per pair, rescored with lis.py. Search a protein on its species page.</p>' : ''}
+    ${groups.filter(([, xs]) => xs.length).map(([g, xs]) => `<h2 style="margin:18px 0 6px">${esc(g)} <span class="muted">${fmtInt(xs.length)}</span></h2>${xs.some((x) => x.group) ? '<p class="muted" style="margin:0 0 8px">One AlphaFold Database heterodimer screen per species, one AlphaFold-Multimer model per pair, rescored with lis.py.</p>' : ''}
       <div class="tbl-wrap"><table class="sets spl"><thead><tr><th>Species</th><th class="n">Taxon</th><th class="n">Proteins</th><th class="n">Protein pairs</th><th class="n">Past 10% FPR</th></tr></thead><tbody>${xs.map(row).join('')}</tbody></table></div>`).join('')}</div>`;
   const ms = await Promise.all(list.map((x) => speciesManifest(x.id).catch(() => null))); if (stale(gen)) return;
   list.forEach((x, i) => { const m = ms[i], tr = app.querySelector(`table.spl a[href="#/${x.id}"]`); if (!m || !tr) return;
@@ -2355,7 +2375,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const id = $('#res-partner').value, part = B.partners.find((p) => p.id === id); if (!part) return;
     const pred = part.preds[+$('#res-rank').value] || part.preds[0];
     ifaceView($('#res-body'), { sp, P, O: PLACE(id), pred, B, canvasId: 'res-canvas' });
-    if (sp.viruses || (sp.reg && sp.reg.group)) { const pid = $('#res-partner').value, R2 = sp.byKey.get(pid);   // a virus or AFDB heterodimer pair: its structure, where the Atlas can reach it
+    if (sp.viruses || (sp.reg && sp.reg.structs)) { const pid = $('#res-partner').value, R2 = sp.byKey.get(pid);   // a virus or AFDB heterodimer pair: its structure, where the Atlas can reach it
       pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!gone() && $('#res-partner') && $('#res-partner').value === pid) structLink($('#res-struct'), x, 'btn'); }); }
   }
   $('#res-partner').onchange = pickPartner;
@@ -2793,7 +2813,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.querySelectorAll('.models tbody tr').forEach((tr) => tr.onclick = () => pick(+tr.dataset.i));
   pick(part.preds.indexOf(best));
   pairRefs(sp, P, O, () => stale(gen));
-  if (sp.viruses || (sp.reg && sp.reg.group)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!stale(gen)) structLink($('#pair-struct'), x, 'btn'); }); }   // a virus pair: its model in LIVIA
+  if (sp.viruses || (sp.reg && sp.reg.structs)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!stale(gen)) structLink($('#pair-struct'), x, 'btn'); }); }   // a virus pair: its model in LIVIA
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
 }
 

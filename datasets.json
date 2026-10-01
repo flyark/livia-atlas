@@ -8,8 +8,10 @@
    "datasets": [
     "human-predictomes",
     "human-kinase-tf",
-    "human-kinase-kinase"
-   ]
+    "human-kinase-kinase",
+    "afdb-het-9606"
+   ],
+   "structs": true
   },
   {
    "id": "fly",
@@ -17,8 +19,10 @@
    "name": "Drosophila melanogaster",
    "base": "data/species/fly/",
    "datasets": [
-    "flypredictome"
-   ]
+    "flypredictome",
+    "afdb-het-7227"
+   ],
+   "structs": true
   },
   {
    "id": "zebrafish",
@@ -26,8 +30,10 @@
    "name": "Danio rerio",
    "base": "data/species/zebrafish/",
    "datasets": [
-    "zebrafish-kinase-kinase"
-   ]
+    "zebrafish-kinase-kinase",
+    "afdb-het-7955"
+   ],
+   "structs": true
   },
   {
    "id": "yeast",
@@ -35,8 +41,11 @@
    "name": "Saccharomyces cerevisiae",
    "base": "data/species/yeast/",
    "datasets": [
-    "yeast-kinase-kinase"
-   ]
+    "yeast-kinase-kinase",
+    "afdb-het-559292",
+    "afdb-het-4932"
+   ],
+   "structs": true
   },
   {
    "id": "worm",
@@ -44,8 +53,10 @@
    "name": "Caenorhabditis elegans",
    "base": "data/species/worm/",
    "datasets": [
-    "worm-kinase-kinase"
-   ]
+    "worm-kinase-kinase",
+    "afdb-het-6239"
+   ],
+   "structs": true
   },
   {
    "id": "virus",
@@ -65,8 +76,9 @@
    "datasets": [
     "afdb-het-100816"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 100816
+   "group": "More species from the AlphaFold Database",
+   "taxon": 100816,
+   "structs": true
   },
   {
    "id": "mus-musculus",
@@ -76,8 +88,9 @@
    "datasets": [
     "afdb-het-10090"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 10090
+   "group": "More species from the AlphaFold Database",
+   "taxon": 10090,
+   "structs": true
   },
   {
    "id": "rattus-norvegicus",
@@ -87,8 +100,9 @@
    "datasets": [
     "afdb-het-10116"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 10116
+   "group": "More species from the AlphaFold Database",
+   "taxon": 10116,
+   "structs": true
   },
   {
    "id": "klebsiella-pneumoniae-subsp-pneumoniae",
@@ -98,8 +112,9 @@
    "datasets": [
     "afdb-het-1125630"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 1125630
+   "group": "More species from the AlphaFold Database",
+   "taxon": 1125630,
+   "structs": true
   },
   {
    "id": "nocardia-brasiliensis",
@@ -109,8 +124,9 @@
    "datasets": [
     "afdb-het-1133849"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 1133849
+   "group": "More species from the AlphaFold Database",
+   "taxon": 1133849,
+   "structs": true
   },
   {
    "id": "staphylococcus-aureus-1280",
@@ -120,8 +136,9 @@
    "datasets": [
     "afdb-het-1280"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 1280
+   "group": "More species from the AlphaFold Database",
+   "taxon": 1280,
+   "structs": true
   },
   {
    "id": "plasmodium-falciparum-132416",
@@ -131,8 +148,9 @@
    "datasets": [
     "afdb-het-132416"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 132416
+   "group": "More species from the AlphaFold Database",
+   "taxon": 132416,
+   "structs": true
   },
   {
    "id": "sporothrix-schenckii",
@@ -142,8 +160,9 @@
    "datasets": [
     "afdb-het-1391915"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 1391915
+   "group": "More species from the AlphaFold Database",
+   "taxon": 1391915,
+   "structs": true
   },
   {
    "id": "fonsecaea-pedrosoi-cbs-271-37",
@@ -153,8 +172,9 @@
    "datasets": [
     "afdb-het-1442368"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 1442368
+   "group": "More species from the AlphaFold Database",
+   "taxon": 1442368,
+   "structs": true
   },
   {
    "id": "pseudomonas-putida",
@@ -164,8 +184,9 @@
    "datasets": [
     "afdb-het-160488"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 160488
+   "group": "More species from the AlphaFold Database",
+   "taxon": 160488,
+   "structs": true
   },
   {
    "id": "streptococcus-pneumoniae",
@@ -175,8 +196,9 @@
    "datasets": [
     "afdb-het-171101"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 171101
+   "group": "More species from the AlphaFold Database",
+   "taxon": 171101,
+   "structs": true
   },
   {
    "id": "trypanosoma-brucei-brucei-185431",
@@ -186,8 +208,9 @@
    "datasets": [
     "afdb-het-185431"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 185431
+   "group": "More species from the AlphaFold Database",
+   "taxon": 185431,
+   "structs": true
   },
   {
    "id": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
@@ -197,8 +220,9 @@
    "datasets": [
     "afdb-het-192222"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 192222
+   "group": "More species from the AlphaFold Database",
+   "taxon": 192222,
+   "structs": true
   },
   {
    "id": "staphylococcus-aureus-196620",
@@ -208,8 +232,9 @@
    "datasets": [
     "afdb-het-196620"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 196620
+   "group": "More species from the AlphaFold Database",
+   "taxon": 196620,
+   "structs": true
   },
   {
    "id": "escherichia-coli-o6-h1",
@@ -219,8 +244,9 @@
    "datasets": [
     "afdb-het-199310"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 199310
+   "group": "More species from the AlphaFold Database",
+   "taxon": 199310,
+   "structs": true
   },
   {
    "id": "pseudomonas-aeruginosa",
@@ -230,8 +256,9 @@
    "datasets": [
     "afdb-het-208964"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 208964
+   "group": "More species from the AlphaFold Database",
+   "taxon": 208964,
+   "structs": true
   },
   {
    "id": "mycobacterium-bovis",
@@ -241,8 +268,9 @@
    "datasets": [
     "afdb-het-233413"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 233413
+   "group": "More species from the AlphaFold Database",
+   "taxon": 233413,
+   "structs": true
   },
   {
    "id": "candida-albicans-237561",
@@ -252,8 +280,9 @@
    "datasets": [
     "afdb-het-237561"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 237561
+   "group": "More species from the AlphaFold Database",
+   "taxon": 237561,
+   "structs": true
   },
   {
    "id": "neisseria-gonorrhoeae",
@@ -263,8 +292,9 @@
    "datasets": [
     "afdb-het-242231"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 242231
+   "group": "More species from the AlphaFold Database",
+   "taxon": 242231,
+   "structs": true
   },
   {
    "id": "methanocaldococcus-jannaschii",
@@ -274,8 +304,9 @@
    "datasets": [
     "afdb-het-243232"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 243232
+   "group": "More species from the AlphaFold Database",
+   "taxon": 243232,
+   "structs": true
   },
   {
    "id": "mycobacterium-leprae",
@@ -285,8 +316,9 @@
    "datasets": [
     "afdb-het-272631"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 272631
+   "group": "More species from the AlphaFold Database",
+   "taxon": 272631,
+   "structs": true
   },
   {
    "id": "schizosaccharomyces-pombe",
@@ -296,8 +328,9 @@
    "datasets": [
     "afdb-het-284812"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 284812
+   "group": "More species from the AlphaFold Database",
+   "taxon": 284812,
+   "structs": true
   },
   {
    "id": "candida-albicans-294748",
@@ -307,8 +340,9 @@
    "datasets": [
     "afdb-het-294748"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 294748
+   "group": "More species from the AlphaFold Database",
+   "taxon": 294748,
+   "structs": true
   },
   {
    "id": "shigella-dysenteriae-serotype-1",
@@ -318,8 +352,9 @@
    "datasets": [
     "afdb-het-300267"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 300267
+   "group": "More species from the AlphaFold Database",
+   "taxon": 300267,
+   "structs": true
   },
   {
    "id": "shigella-sonnei",
@@ -329,8 +364,9 @@
    "datasets": [
     "afdb-het-300269"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 300269
+   "group": "More species from the AlphaFold Database",
+   "taxon": 300269,
+   "structs": true
   },
   {
    "id": "takifugu-rubripes",
@@ -340,8 +376,9 @@
    "datasets": [
     "afdb-het-31033"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 31033
+   "group": "More species from the AlphaFold Database",
+   "taxon": 31033,
+   "structs": true
   },
   {
    "id": "dracunculus-medinensis",
@@ -351,8 +388,9 @@
    "datasets": [
     "afdb-het-318479"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 318479
+   "group": "More species from the AlphaFold Database",
+   "taxon": 318479,
+   "structs": true
   },
   {
    "id": "trypanosoma-cruzi",
@@ -362,8 +400,9 @@
    "datasets": [
     "afdb-het-353153"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 353153
+   "group": "More species from the AlphaFold Database",
+   "taxon": 353153,
+   "structs": true
   },
   {
    "id": "campylobacter-jejuni-subsp-jejuni-serotype-o-23-36",
@@ -373,8 +412,9 @@
    "datasets": [
     "afdb-het-354242"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 354242
+   "group": "More species from the AlphaFold Database",
+   "taxon": 354242,
+   "structs": true
   },
   {
    "id": "trichuris-trichiura",
@@ -384,8 +424,9 @@
    "datasets": [
     "afdb-het-36087"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 36087
+   "group": "More species from the AlphaFold Database",
+   "taxon": 36087,
+   "structs": true
   },
   {
    "id": "plasmodium-falciparum-36329",
@@ -395,8 +436,9 @@
    "datasets": [
     "afdb-het-36329"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 36329
+   "group": "More species from the AlphaFold Database",
+   "taxon": 36329,
+   "structs": true
   },
   {
    "id": "arabidopsis-thaliana",
@@ -406,8 +448,9 @@
    "datasets": [
     "afdb-het-3702"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 3702
+   "group": "More species from the AlphaFold Database",
+   "taxon": 3702,
+   "structs": true
   },
   {
    "id": "brassica-napus",
@@ -417,8 +460,9 @@
    "datasets": [
     "afdb-het-3708"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 3708
+   "group": "More species from the AlphaFold Database",
+   "taxon": 3708,
+   "structs": true
   },
   {
    "id": "brassica-campestris",
@@ -428,8 +472,9 @@
    "datasets": [
     "afdb-het-3711"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 3711
+   "group": "More species from the AlphaFold Database",
+   "taxon": 3711,
+   "structs": true
   },
   {
    "id": "raphanus-sativus",
@@ -439,8 +484,9 @@
    "datasets": [
     "afdb-het-3726"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 3726
+   "group": "More species from the AlphaFold Database",
+   "taxon": 3726,
+   "structs": true
   },
   {
    "id": "sinapis-alba",
@@ -450,8 +496,9 @@
    "datasets": [
     "afdb-het-3728"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 3728
+   "group": "More species from the AlphaFold Database",
+   "taxon": 3728,
+   "structs": true
   },
   {
    "id": "glycine-max",
@@ -461,8 +508,9 @@
    "datasets": [
     "afdb-het-3847"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 3847
+   "group": "More species from the AlphaFold Database",
+   "taxon": 3847,
+   "structs": true
   },
   {
    "id": "vicia-faba",
@@ -472,8 +520,9 @@
    "datasets": [
     "afdb-het-3906"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 3906
+   "group": "More species from the AlphaFold Database",
+   "taxon": 3906,
+   "structs": true
   },
   {
    "id": "oryza-sativa-subsp-indica",
@@ -483,8 +532,9 @@
    "datasets": [
     "afdb-het-39946"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 39946
+   "group": "More species from the AlphaFold Database",
+   "taxon": 39946,
+   "structs": true
   },
   {
    "id": "oryza-sativa-subsp-japonica",
@@ -494,8 +544,9 @@
    "datasets": [
     "afdb-het-39947"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 39947
+   "group": "More species from the AlphaFold Database",
+   "taxon": 39947,
+   "structs": true
   },
   {
    "id": "nicotiana-tabacum",
@@ -505,8 +556,9 @@
    "datasets": [
     "afdb-het-4097"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 4097
+   "group": "More species from the AlphaFold Database",
+   "taxon": 4097,
+   "structs": true
   },
   {
    "id": "dictyostelium-discoideum",
@@ -516,8 +568,9 @@
    "datasets": [
     "afdb-het-44689"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 44689
+   "group": "More species from the AlphaFold Database",
+   "taxon": 44689,
+   "structs": true
   },
   {
    "id": "ajellomyces-capsulatus",
@@ -527,8 +580,9 @@
    "datasets": [
     "afdb-het-447093"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 447093
+   "group": "More species from the AlphaFold Database",
+   "taxon": 447093,
+   "structs": true
   },
   {
    "id": "saccharum-officinarum",
@@ -538,8 +592,9 @@
    "datasets": [
     "afdb-het-4547"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 4547
+   "group": "More species from the AlphaFold Database",
+   "taxon": 4547,
+   "structs": true
   },
   {
    "id": "triticum-aestivum",
@@ -549,8 +604,9 @@
    "datasets": [
     "afdb-het-4565"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 4565
+   "group": "More species from the AlphaFold Database",
+   "taxon": 4565,
+   "structs": true
   },
   {
    "id": "zea-mays",
@@ -560,8 +616,9 @@
    "datasets": [
     "afdb-het-4577"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 4577
+   "group": "More species from the AlphaFold Database",
+   "taxon": 4577,
+   "structs": true
   },
   {
    "id": "paracoccidioides-lutzii",
@@ -571,8 +628,9 @@
    "datasets": [
     "afdb-het-502779"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 502779
+   "group": "More species from the AlphaFold Database",
+   "taxon": 502779,
+   "structs": true
   },
   {
    "id": "candida-albicans-5476",
@@ -582,8 +640,9 @@
    "datasets": [
     "afdb-het-5476"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 5476
+   "group": "More species from the AlphaFold Database",
+   "taxon": 5476,
+   "structs": true
   },
   {
    "id": "escherichia-coli-562",
@@ -593,8 +652,9 @@
    "datasets": [
     "afdb-het-562"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 562
+   "group": "More species from the AlphaFold Database",
+   "taxon": 562,
+   "structs": true
   },
   {
    "id": "leishmania-infantum",
@@ -604,8 +664,9 @@
    "datasets": [
     "afdb-het-5671"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 5671
+   "group": "More species from the AlphaFold Database",
+   "taxon": 5671,
+   "structs": true
   },
   {
    "id": "trypanosoma-brucei-brucei-5702",
@@ -615,8 +676,9 @@
    "datasets": [
     "afdb-het-5702"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 5702
+   "group": "More species from the AlphaFold Database",
+   "taxon": 5702,
+   "structs": true
   },
   {
    "id": "plasmodium-falciparum-5839",
@@ -626,8 +688,9 @@
    "datasets": [
     "afdb-het-5839"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 5839
+   "group": "More species from the AlphaFold Database",
+   "taxon": 5839,
+   "structs": true
   },
   {
    "id": "schistosoma-mansoni",
@@ -637,8 +700,9 @@
    "datasets": [
     "afdb-het-6183"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 6183
+   "group": "More species from the AlphaFold Database",
+   "taxon": 6183,
+   "structs": true
   },
   {
    "id": "shigella-flexneri",
@@ -648,8 +712,9 @@
    "datasets": [
     "afdb-het-623"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 623
+   "group": "More species from the AlphaFold Database",
+   "taxon": 623,
+   "structs": true
   },
   {
    "id": "strongyloides-stercoralis",
@@ -659,8 +724,9 @@
    "datasets": [
     "afdb-het-6248"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 6248
+   "group": "More species from the AlphaFold Database",
+   "taxon": 6248,
+   "structs": true
   },
   {
    "id": "brugia-malayi",
@@ -670,8 +736,9 @@
    "datasets": [
     "afdb-het-6279"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 6279
+   "group": "More species from the AlphaFold Database",
+   "taxon": 6279,
+   "structs": true
   },
   {
    "id": "onchocerca-volvulus",
@@ -681,8 +748,9 @@
    "datasets": [
     "afdb-het-6282"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 6282
+   "group": "More species from the AlphaFold Database",
+   "taxon": 6282,
+   "structs": true
   },
   {
    "id": "wuchereria-bancrofti",
@@ -692,8 +760,9 @@
    "datasets": [
     "afdb-het-6293"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 6293
+   "group": "More species from the AlphaFold Database",
+   "taxon": 6293,
+   "structs": true
   },
   {
    "id": "yersinia-pestis",
@@ -703,8 +772,9 @@
    "datasets": [
     "afdb-het-632"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 632
+   "group": "More species from the AlphaFold Database",
+   "taxon": 632,
+   "structs": true
   },
   {
    "id": "spisula-solidissima",
@@ -714,8 +784,9 @@
    "datasets": [
     "afdb-het-6584"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 6584
+   "group": "More species from the AlphaFold Database",
+   "taxon": 6584,
+   "structs": true
   },
   {
    "id": "tigriopus-californicus",
@@ -725,8 +796,9 @@
    "datasets": [
     "afdb-het-6832"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 6832
+   "group": "More species from the AlphaFold Database",
+   "taxon": 6832,
+   "structs": true
   },
   {
    "id": "locusta-migratoria",
@@ -736,8 +808,9 @@
    "datasets": [
     "afdb-het-7004"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 7004
+   "group": "More species from the AlphaFold Database",
+   "taxon": 7004,
+   "structs": true
   },
   {
    "id": "haemophilus-influenzae",
@@ -747,8 +820,9 @@
    "datasets": [
     "afdb-het-71421"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 71421
+   "group": "More species from the AlphaFold Database",
+   "taxon": 71421,
+   "structs": true
   },
   {
    "id": "ceratitis-capitata",
@@ -758,8 +832,9 @@
    "datasets": [
     "afdb-het-7213"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 7213
+   "group": "More species from the AlphaFold Database",
+   "taxon": 7213,
+   "structs": true
   },
   {
    "id": "drosophila-simulans",
@@ -769,8 +844,9 @@
    "datasets": [
     "afdb-het-7240"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 7240
+   "group": "More species from the AlphaFold Database",
+   "taxon": 7240,
+   "structs": true
   },
   {
    "id": "mycobacterium-tuberculosis",
@@ -780,8 +856,9 @@
    "datasets": [
     "afdb-het-83332"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 83332
+   "group": "More species from the AlphaFold Database",
+   "taxon": 83332,
+   "structs": true
   },
   {
    "id": "escherichia-coli-83333",
@@ -791,8 +868,9 @@
    "datasets": [
     "afdb-het-83333"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 83333
+   "group": "More species from the AlphaFold Database",
+   "taxon": 83333,
+   "structs": true
   },
   {
    "id": "escherichia-coli-o157-h7",
@@ -802,8 +880,9 @@
    "datasets": [
     "afdb-het-83334"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 83334
+   "group": "More species from the AlphaFold Database",
+   "taxon": 83334,
+   "structs": true
   },
   {
    "id": "xenopus-laevis",
@@ -813,8 +892,9 @@
    "datasets": [
     "afdb-het-8355"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 8355
+   "group": "More species from the AlphaFold Database",
+   "taxon": 8355,
+   "structs": true
   },
   {
    "id": "oenothera-elata-subsp-hookeri",
@@ -824,8 +904,9 @@
    "datasets": [
     "afdb-het-85636"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 85636
+   "group": "More species from the AlphaFold Database",
+   "taxon": 85636,
+   "structs": true
   },
   {
    "id": "helicobacter-pylori",
@@ -835,8 +916,9 @@
    "datasets": [
     "afdb-het-85962"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 85962
+   "group": "More species from the AlphaFold Database",
+   "taxon": 85962,
+   "structs": true
   },
   {
    "id": "cladophialophora-carrionii",
@@ -846,8 +928,9 @@
    "datasets": [
     "afdb-het-86049"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 86049
+   "group": "More species from the AlphaFold Database",
+   "taxon": 86049,
+   "structs": true
   },
   {
    "id": "salmonella-typhi",
@@ -857,8 +940,9 @@
    "datasets": [
     "afdb-het-90370"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 90370
+   "group": "More species from the AlphaFold Database",
+   "taxon": 90370,
+   "structs": true
   },
   {
    "id": "staphylococcus-aureus-93061",
@@ -868,8 +952,9 @@
    "datasets": [
     "afdb-het-93061"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 93061
+   "group": "More species from the AlphaFold Database",
+   "taxon": 93061,
+   "structs": true
   },
   {
    "id": "trichosurus-vulpecula",
@@ -879,8 +964,9 @@
    "datasets": [
     "afdb-het-9337"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 9337
+   "group": "More species from the AlphaFold Database",
+   "taxon": 9337,
+   "structs": true
   },
   {
    "id": "tupaia-glis",
@@ -890,8 +976,9 @@
    "datasets": [
     "afdb-het-9395"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 9395
+   "group": "More species from the AlphaFold Database",
+   "taxon": 9395,
+   "structs": true
   },
   {
    "id": "macaca-mulatta",
@@ -901,8 +988,9 @@
    "datasets": [
     "afdb-het-9544"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 9544
+   "group": "More species from the AlphaFold Database",
+   "taxon": 9544,
+   "structs": true
   },
   {
    "id": "papio-anubis",
@@ -912,8 +1000,9 @@
    "datasets": [
     "afdb-het-9555"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 9555
+   "group": "More species from the AlphaFold Database",
+   "taxon": 9555,
+   "structs": true
   },
   {
    "id": "pan-troglodytes",
@@ -923,8 +1012,9 @@
    "datasets": [
     "afdb-het-9598"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 9598
+   "group": "More species from the AlphaFold Database",
+   "taxon": 9598,
+   "structs": true
   },
   {
    "id": "salmonella-typhimurium",
@@ -934,8 +1024,9 @@
    "datasets": [
     "afdb-het-99287"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 99287
+   "group": "More species from the AlphaFold Database",
+   "taxon": 99287,
+   "structs": true
   },
   {
    "id": "ovis-aries",
@@ -945,8 +1036,9 @@
    "datasets": [
     "afdb-het-9940"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 9940
+   "group": "More species from the AlphaFold Database",
+   "taxon": 9940,
+   "structs": true
   },
   {
    "id": "oryctolagus-cuniculus",
@@ -956,74 +1048,9 @@
    "datasets": [
     "afdb-het-9986"
    ],
-   "group": "AFDB proteomes",
-   "taxon": 9986
-  },
-  {
-   "id": "yeast-afdb-4932",
-   "label": "Saccharomyces cerevisiae (AFDB, taxon 4932)",
-   "name": "Saccharomyces cerevisiae (AFDB, taxon 4932)",
-   "base": "data/species/yeast-afdb-4932/",
-   "datasets": [
-    "afdb-het-4932"
-   ],
-   "group": "AFDB proteomes",
-   "taxon": 4932
-  },
-  {
-   "id": "yeast-afdb-559292",
-   "label": "Saccharomyces cerevisiae (AFDB, taxon 559292)",
-   "name": "Saccharomyces cerevisiae (AFDB, taxon 559292)",
-   "base": "data/species/yeast-afdb-559292/",
-   "datasets": [
-    "afdb-het-559292"
-   ],
-   "group": "AFDB proteomes",
-   "taxon": 559292
-  },
-  {
-   "id": "worm-afdb",
-   "label": "Caenorhabditis elegans (AFDB)",
-   "name": "Caenorhabditis elegans (AFDB)",
-   "base": "data/species/worm-afdb/",
-   "datasets": [
-    "afdb-het-6239"
-   ],
-   "group": "AFDB proteomes",
-   "taxon": 6239
-  },
-  {
-   "id": "fly-afdb",
-   "label": "Drosophila melanogaster (AFDB)",
-   "name": "Drosophila melanogaster (AFDB)",
-   "base": "data/species/fly-afdb/",
-   "datasets": [
-    "afdb-het-7227"
-   ],
-   "group": "AFDB proteomes",
-   "taxon": 7227
-  },
-  {
-   "id": "zebrafish-afdb",
-   "label": "Danio rerio (AFDB)",
-   "name": "Danio rerio (AFDB)",
-   "base": "data/species/zebrafish-afdb/",
-   "datasets": [
-    "afdb-het-7955"
-   ],
-   "group": "AFDB proteomes",
-   "taxon": 7955
-  },
-  {
-   "id": "human-afdb",
-   "label": "Homo sapiens (AFDB)",
-   "name": "Homo sapiens (AFDB)",
-   "base": "data/species/human-afdb/",
-   "datasets": [
-    "afdb-het-9606"
-   ],
-   "group": "AFDB proteomes",
-   "taxon": 9606
+   "group": "More species from the AlphaFold Database",
+   "taxon": 9986,
+   "structs": true
   }
  ],
  "datasets": [
@@ -2737,7 +2764,7 @@
   },
   {
    "id": "afdb-het-4932",
-   "species": "yeast-afdb-4932",
+   "species": "yeast",
    "title": "Saccharomyces cerevisiae proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
@@ -2756,7 +2783,7 @@
   },
   {
    "id": "afdb-het-559292",
-   "species": "yeast-afdb-559292",
+   "species": "yeast",
    "title": "Saccharomyces cerevisiae proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
@@ -2775,7 +2802,7 @@
   },
   {
    "id": "afdb-het-6239",
-   "species": "worm-afdb",
+   "species": "worm",
    "title": "Caenorhabditis elegans proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
@@ -2794,7 +2821,7 @@
   },
   {
    "id": "afdb-het-7227",
-   "species": "fly-afdb",
+   "species": "fly",
    "title": "Drosophila melanogaster proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
@@ -2813,7 +2840,7 @@
   },
   {
    "id": "afdb-het-7955",
-   "species": "zebrafish-afdb",
+   "species": "zebrafish",
    "title": "Danio rerio proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
@@ -2832,7 +2859,7 @@
   },
   {
    "id": "afdb-het-9606",
-   "species": "human-afdb",
+   "species": "human",
    "title": "Homo sapiens proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
