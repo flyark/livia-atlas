@@ -1060,14 +1060,20 @@
    "title": "Human proteome-wide screen",
    "short": "Proteome-wide",
    "color": "#2B5F8E",
-   "base": "https://flyark.github.io/livia-atlas-human-proteome/",
+   "base": "data/screens/human-predictomes/",
    "status": "live",
    "source": "Schmid et al. 2025 · bioRxiv",
    "paper": "https://www.biorxiv.org/content/10.1101/2025.11.10.687652v1",
    "dev": "../data/human-predictomes/",
    "models": 3,
    "recycles": 3,
-   "modelsNote": "AlphaFold-Multimer v3 models 1, 2 and 4"
+   "modelsNote": "AlphaFold-Multimer v3 models 1, 2 and 4",
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-human-proteome.zip/content",
+    "offsets": "data/screens/human-predictomes/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
   },
   {
    "id": "human-kinase-tf",
@@ -1075,13 +1081,19 @@
    "title": "Human kinase–transcription factor screen",
    "short": "Kinase–TF",
    "color": "#9A4A8F",
-   "base": "https://flyark.github.io/livia-atlas-human-kinase-tf/",
+   "base": "data/screens/human-kinase-tf/",
    "status": "live",
    "source": "Kim et al. 2025 · bioRxiv",
    "paper": "https://www.biorxiv.org/content/10.1101/2025.10.10.681672",
    "dev": "../data/human-kinase-tf/",
    "models": 5,
-   "recycles": 5
+   "recycles": 5,
+   "zip": {
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-human-kinase-tf.zip/content",
+    "offsets": "data/screens/human-kinase-tf/offsets.json",
+    "record": "https://doi.org/10.5281/zenodo.22964479",
+    "doi": "10.5281/zenodo.22964479"
+   }
   },
   {
    "id": "flypredictome",
@@ -1094,9 +1106,8 @@
    "source": "Kim et al. 2026 · bioRxiv",
    "paper": "https://doi.org/10.64898/2026.04.14.718529",
    "zip": {
-    "url": "https://zenodo.org/api/records/22968056/files/livia-atlas-flypredictome.zip/content",
-    "dev": "../zenodo/v12/livia-atlas-flypredictome.zip",
-    "offsets": "data/screens/flypredictome/offsets-v12.json",
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-flypredictome.zip/content",
+    "offsets": "data/screens/flypredictome/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
    },
@@ -1114,8 +1125,7 @@
    "source": "Kim & Perrimon 2026 · Zenodo",
    "paper": "https://doi.org/10.5281/zenodo.22964479",
    "zip": {
-    "url": "https://zenodo.org/api/records/22968056/files/livia-atlas-human-kinase-kinase.zip/content",
-    "dev": "../zenodo/livia-atlas-human-kinase-kinase.zip",
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-human-kinase-kinase.zip/content",
     "offsets": "data/screens/human-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1134,8 +1144,7 @@
    "source": "Kim & Perrimon 2026 · Zenodo",
    "paper": "https://doi.org/10.5281/zenodo.22964479",
    "zip": {
-    "url": "https://zenodo.org/api/records/22968056/files/livia-atlas-zebrafish-kinase-kinase.zip/content",
-    "dev": "../zenodo/livia-atlas-zebrafish-kinase-kinase.zip",
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-zebrafish-kinase-kinase.zip/content",
     "offsets": "data/screens/zebrafish-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1154,8 +1163,7 @@
    "source": "Kim & Perrimon 2026 · Zenodo",
    "paper": "https://doi.org/10.5281/zenodo.22964479",
    "zip": {
-    "url": "https://zenodo.org/api/records/22968056/files/livia-atlas-yeast-kinase-kinase.zip/content",
-    "dev": "../zenodo/livia-atlas-yeast-kinase-kinase.zip",
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-yeast-kinase-kinase.zip/content",
     "offsets": "data/screens/yeast-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1174,8 +1182,7 @@
    "source": "Kim & Perrimon 2026 · Zenodo",
    "paper": "https://doi.org/10.5281/zenodo.22964479",
    "zip": {
-    "url": "https://zenodo.org/api/records/22968056/files/livia-atlas-worm-kinase-kinase.zip/content",
-    "dev": "../zenodo/livia-atlas-worm-kinase-kinase.zip",
+    "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-worm-kinase-kinase.zip/content",
     "offsets": "data/screens/worm-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"

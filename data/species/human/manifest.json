@@ -16,10 +16,10 @@
     "proteins": 20200,
     "pairs": 1614047,
     "predictions": 4842140,
+    "runs": 1614047,
     "pairsFpr10": 227130,
     "pairsFpr5": 127585,
-    "pairsFpr1": 38200,
-    "runs": 1614047
+    "pairsFpr1": 38200
    }
   },
   {
@@ -31,11 +31,11 @@
    "counts": {
     "proteins": 1481,
     "pairs": 377262,
-    "predictions": 1885929,
+    "predictions": 1885854,
+    "runs": 377262,
     "pairsFpr10": 59323,
     "pairsFpr5": 29043,
-    "pairsFpr1": 3644,
-    "runs": 377277
+    "pairsFpr1": 3644
    }
   },
   {
@@ -48,10 +48,10 @@
     "proteins": 243,
     "pairs": 4057,
     "predictions": 20285,
+    "runs": 4057,
     "pairsFpr10": 1233,
     "pairsFpr5": 566,
-    "pairsFpr1": 69,
-    "runs": 4057
+    "pairsFpr1": 69
    }
   },
   {
@@ -74,19 +74,22 @@
  "counts": {
   "proteins": 20526,
   "pairs": 2245221,
-  "predictions": 7337994,
-  "runs": 2585051,
+  "predictions": 7313462,
+  "runs": 2579371,
   "pairsFpr10": 318275,
-  "pairsFpr5": 173600,
-  "pairsFpr1": 45152,
+  "pairsFpr5": 173162,
+  "pairsFpr1": 44978,
   "pairsInSeveral": 339782,
-  "pairsTested": 2245227
+  "pairsTested": 2245221
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 256,
   "tested": "tested.bin",
-  "paralogs": "paralogs.json"
+  "paralogs": "paralogs.json",
+  "biogridShards": 256
+ },
+ "folded": {
+  "runs": 1995381
  }
 }

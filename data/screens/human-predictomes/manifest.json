@@ -1,0 +1,47 @@
+{
+ "format": "livia-atlas/1",
+ "id": "human-predictomes",
+ "title": "Human proteome-wide AlphaFold-Multimer screen",
+ "short": "Proteome-wide",
+ "speciesId": "human",
+ "species": {
+  "name": "Homo sapiens",
+  "taxon": 9606
+ },
+ "ids": "UniProtKB entry name",
+ "source": {
+  "citation": "Schmid EW, Zhu H, Ryu E, Lim Y, Smogorzewska A, Brown A, Walter JC (2025). Proteome-wide in silico screening for human protein-protein interactions. bioRxiv.",
+  "doi": "10.1101/2025.11.10.687652",
+  "url": "https://www.biorxiv.org/content/10.1101/2025.11.10.687652v1",
+  "method": "AlphaFold-Multimer, 3 ranked models per pair"
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  }
+ },
+ "counts": {
+  "proteins": 20200,
+  "pairs": 1614047,
+  "predictions": 4842140,
+  "runs": 1614047,
+  "pairsFpr10": 227130,
+  "pairsFpr5": 127585,
+  "pairsFpr1": 38200
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

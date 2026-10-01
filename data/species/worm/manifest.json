@@ -16,10 +16,10 @@
     "proteins": 187,
     "pairs": 2309,
     "predictions": 11545,
+    "runs": 2309,
     "pairsFpr10": 557,
     "pairsFpr5": 251,
-    "pairsFpr1": 18,
-    "runs": 2309
+    "pairsFpr1": 18
    }
   },
   {
@@ -45,7 +45,7 @@
   "predictions": 151254,
   "runs": 142018,
   "pairsFpr10": 12406,
-  "pairsFpr5": 8077,
+  "pairsFpr5": 8076,
   "pairsFpr1": 2276,
   "pairsInSeveral": 31,
   "pairsTested": 141987
@@ -53,7 +53,7 @@
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 256,
-  "tested": "tested.bin"
+  "tested": "tested.bin",
+  "biogridShards": 256
  }
 }

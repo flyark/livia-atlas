@@ -1,0 +1,51 @@
+{
+ "format": "livia-atlas/1",
+ "id": "human-kinase-tf",
+ "title": "Human kinase\u2013transcription factor screen",
+ "short": "Kinase\u2013TF",
+ "speciesId": "human",
+ "species": {
+  "name": "Homo sapiens",
+  "taxon": 9606
+ },
+ "ids": "UniProtKB entry name",
+ "source": {
+  "citation": "Kim AR, Huang K, Johnson JL, Yaron-Barir TM, Wang K, Cantley LC, Hu Y, Perrimon N (2025). A structure-guided kinase\u2013transcription factor interactome atlas reveals docking landscapes of the kinome. bioRxiv.",
+  "doi": "10.1101/2025.10.10.681672",
+  "url": "https://www.biorxiv.org/content/10.1101/2025.10.10.681672",
+  "method": "AlphaFold-Multimer, 5 ranked models per pair"
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  }
+ },
+ "counts": {
+  "proteins": 1481,
+  "pairs": 377262,
+  "predictions": 1885854,
+  "runs": 377262,
+  "pairsFpr10": 59323,
+  "pairsFpr5": 29043,
+  "pairsFpr1": 3644
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id",
+ "folded": {
+  "predictions": 1885929,
+  "runs": 377277
+ }
+}

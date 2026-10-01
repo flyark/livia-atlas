@@ -14,15 +14,19 @@
    "citation": "Kim AR, Comjean A, Veal A, Rodiger J, Han M, Hu Y, Perrimon N (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in Drosophila. bioRxiv.",
    "url": "https://doi.org/10.64898/2026.04.14.718529",
    "counts": {
-    "proteins": 14032,
-    "pairs": 1110715,
-    "predictions": 7469962,
-    "runs": 1493926,
-    "pairsFpr10": 152329,
-    "pairsFpr5": 73474,
-    "pairsFpr1": 11028,
-    "genes": 13939,
-    "constructs": 28357
+    "proteins": 14031,
+    "pairs": 1098702,
+    "predictions": 7398295,
+    "runs": 1479659,
+    "pairsFpr10": 148604,
+    "pairsFpr5": 71311,
+    "pairsFpr1": 10644,
+    "genes": 13938,
+    "constructs": 27978,
+    "folded": {
+     "predictions": 7512440,
+     "runs": 1502488
+    }
    }
   },
   {
@@ -43,23 +47,23 @@
   }
  ],
  "counts": {
-  "proteins": 14038,
-  "pairs": 1218490,
-  "predictions": 7607942,
-  "runs": 1631906,
-  "pairsFpr10": 161834,
-  "pairsFpr5": 79324,
-  "pairsFpr1": 12531,
-  "genes": 13939,
-  "constructs": 28357,
+  "proteins": 14037,
+  "pairs": 1206477,
+  "predictions": 7536275,
+  "runs": 1617639,
+  "pairsFpr10": 158124,
+  "pairsFpr5": 76937,
+  "pairsFpr1": 12080,
+  "genes": 13938,
+  "constructs": 27978,
   "pairsInSeveral": 30205,
-  "pairsTested": 1236460
+  "pairsTested": 1206477
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 256,
   "tested": "tested.bin",
-  "paralogs": "paralogs.json"
+  "paralogs": "paralogs.json",
+  "biogridShards": 256
  }
 }

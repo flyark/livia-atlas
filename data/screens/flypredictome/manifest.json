@@ -29,15 +29,19 @@
   }
  },
  "counts": {
-  "proteins": 14032,
-  "pairs": 1110715,
-  "predictions": 7469962,
-  "runs": 1493926,
-  "pairsFpr10": 152329,
-  "pairsFpr5": 73474,
-  "pairsFpr1": 11028,
-  "genes": 13939,
-  "constructs": 28357
+  "proteins": 14031,
+  "pairs": 1098702,
+  "predictions": 7398295,
+  "runs": 1479659,
+  "pairsFpr10": 148604,
+  "pairsFpr5": 71311,
+  "pairsFpr1": 10644,
+  "genes": 13938,
+  "constructs": 27978,
+  "folded": {
+   "predictions": 7512440,
+   "runs": 1502488
+  }
  },
  "sets": [
   "Inferred from orthologs",
