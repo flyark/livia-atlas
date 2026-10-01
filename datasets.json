@@ -129,30 +129,6 @@
    "structs": true
   },
   {
-   "id": "staphylococcus-aureus-1280",
-   "label": "Staphylococcus aureus (taxon 1280)",
-   "name": "Staphylococcus aureus (taxon 1280)",
-   "base": "data/species/staphylococcus-aureus-1280/",
-   "datasets": [
-    "afdb-het-1280"
-   ],
-   "group": "Other species",
-   "taxon": 1280,
-   "structs": true
-  },
-  {
-   "id": "plasmodium-falciparum-132416",
-   "label": "Plasmodium falciparum (taxon 132416)",
-   "name": "Plasmodium falciparum (taxon 132416)",
-   "base": "data/species/plasmodium-falciparum-132416/",
-   "datasets": [
-    "afdb-het-132416"
-   ],
-   "group": "Other species",
-   "taxon": 132416,
-   "structs": true
-  },
-  {
    "id": "sporothrix-schenckii",
    "label": "Sporothrix schenckii",
    "name": "Sporothrix schenckii",
@@ -174,18 +150,6 @@
    ],
    "group": "Other species",
    "taxon": 1442368,
-   "structs": true
-  },
-  {
-   "id": "pseudomonas-putida",
-   "label": "Pseudomonas putida",
-   "name": "Pseudomonas putida",
-   "base": "data/species/pseudomonas-putida/",
-   "datasets": [
-    "afdb-het-160488"
-   ],
-   "group": "Other species",
-   "taxon": 160488,
    "structs": true
   },
   {
@@ -225,30 +189,6 @@
    "structs": true
   },
   {
-   "id": "staphylococcus-aureus-196620",
-   "label": "Staphylococcus aureus (taxon 196620)",
-   "name": "Staphylococcus aureus (taxon 196620)",
-   "base": "data/species/staphylococcus-aureus-196620/",
-   "datasets": [
-    "afdb-het-196620"
-   ],
-   "group": "Other species",
-   "taxon": 196620,
-   "structs": true
-  },
-  {
-   "id": "escherichia-coli-o6-h1",
-   "label": "Escherichia coli O6:H1",
-   "name": "Escherichia coli O6:H1",
-   "base": "data/species/escherichia-coli-o6-h1/",
-   "datasets": [
-    "afdb-het-199310"
-   ],
-   "group": "Other species",
-   "taxon": 199310,
-   "structs": true
-  },
-  {
    "id": "pseudomonas-aeruginosa",
    "label": "Pseudomonas aeruginosa",
    "name": "Pseudomonas aeruginosa",
@@ -258,18 +198,6 @@
    ],
    "group": "Other species",
    "taxon": 208964,
-   "structs": true
-  },
-  {
-   "id": "mycobacterium-bovis",
-   "label": "Mycobacterium bovis",
-   "name": "Mycobacterium bovis",
-   "base": "data/species/mycobacterium-bovis/",
-   "datasets": [
-    "afdb-het-233413"
-   ],
-   "group": "Other species",
-   "taxon": 233413,
    "structs": true
   },
   {
@@ -333,18 +261,6 @@
    "structs": true
   },
   {
-   "id": "candida-albicans-294748",
-   "label": "Candida albicans (taxon 294748)",
-   "name": "Candida albicans (taxon 294748)",
-   "base": "data/species/candida-albicans-294748/",
-   "datasets": [
-    "afdb-het-294748"
-   ],
-   "group": "Other species",
-   "taxon": 294748,
-   "structs": true
-  },
-  {
    "id": "shigella-dysenteriae-serotype-1",
    "label": "Shigella dysenteriae serotype 1",
    "name": "Shigella dysenteriae serotype 1",
@@ -354,30 +270,6 @@
    ],
    "group": "Other species",
    "taxon": 300267,
-   "structs": true
-  },
-  {
-   "id": "shigella-sonnei",
-   "label": "Shigella sonnei",
-   "name": "Shigella sonnei",
-   "base": "data/species/shigella-sonnei/",
-   "datasets": [
-    "afdb-het-300269"
-   ],
-   "group": "Other species",
-   "taxon": 300269,
-   "structs": true
-  },
-  {
-   "id": "takifugu-rubripes",
-   "label": "Takifugu rubripes",
-   "name": "Takifugu rubripes",
-   "base": "data/species/takifugu-rubripes/",
-   "datasets": [
-    "afdb-het-31033"
-   ],
-   "group": "Other species",
-   "taxon": 31033,
    "structs": true
   },
   {
@@ -402,18 +294,6 @@
    ],
    "group": "Other species",
    "taxon": 353153,
-   "structs": true
-  },
-  {
-   "id": "campylobacter-jejuni-subsp-jejuni-serotype-o-23-36",
-   "label": "Campylobacter jejuni subsp. jejuni serotype O:23/36",
-   "name": "Campylobacter jejuni subsp. jejuni serotype O:23/36",
-   "base": "data/species/campylobacter-jejuni-subsp-jejuni-serotype-o-23-36/",
-   "datasets": [
-    "afdb-het-354242"
-   ],
-   "group": "Other species",
-   "taxon": 354242,
    "structs": true
   },
   {
@@ -453,54 +333,6 @@
    "structs": true
   },
   {
-   "id": "brassica-napus",
-   "label": "Brassica napus",
-   "name": "Brassica napus",
-   "base": "data/species/brassica-napus/",
-   "datasets": [
-    "afdb-het-3708"
-   ],
-   "group": "Other species",
-   "taxon": 3708,
-   "structs": true
-  },
-  {
-   "id": "brassica-campestris",
-   "label": "Brassica campestris",
-   "name": "Brassica campestris",
-   "base": "data/species/brassica-campestris/",
-   "datasets": [
-    "afdb-het-3711"
-   ],
-   "group": "Other species",
-   "taxon": 3711,
-   "structs": true
-  },
-  {
-   "id": "raphanus-sativus",
-   "label": "Raphanus sativus",
-   "name": "Raphanus sativus",
-   "base": "data/species/raphanus-sativus/",
-   "datasets": [
-    "afdb-het-3726"
-   ],
-   "group": "Other species",
-   "taxon": 3726,
-   "structs": true
-  },
-  {
-   "id": "sinapis-alba",
-   "label": "Sinapis alba",
-   "name": "Sinapis alba",
-   "base": "data/species/sinapis-alba/",
-   "datasets": [
-    "afdb-het-3728"
-   ],
-   "group": "Other species",
-   "taxon": 3728,
-   "structs": true
-  },
-  {
    "id": "glycine-max",
    "label": "Glycine max",
    "name": "Glycine max",
@@ -513,30 +345,6 @@
    "structs": true
   },
   {
-   "id": "vicia-faba",
-   "label": "Vicia faba",
-   "name": "Vicia faba",
-   "base": "data/species/vicia-faba/",
-   "datasets": [
-    "afdb-het-3906"
-   ],
-   "group": "Other species",
-   "taxon": 3906,
-   "structs": true
-  },
-  {
-   "id": "oryza-sativa-subsp-indica",
-   "label": "Oryza sativa subsp. indica",
-   "name": "Oryza sativa subsp. indica",
-   "base": "data/species/oryza-sativa-subsp-indica/",
-   "datasets": [
-    "afdb-het-39946"
-   ],
-   "group": "Other species",
-   "taxon": 39946,
-   "structs": true
-  },
-  {
    "id": "oryza-sativa-subsp-japonica",
    "label": "Oryza sativa subsp. japonica",
    "name": "Oryza sativa subsp. japonica",
@@ -546,18 +354,6 @@
    ],
    "group": "Other species",
    "taxon": 39947,
-   "structs": true
-  },
-  {
-   "id": "nicotiana-tabacum",
-   "label": "Nicotiana tabacum",
-   "name": "Nicotiana tabacum",
-   "base": "data/species/nicotiana-tabacum/",
-   "datasets": [
-    "afdb-het-4097"
-   ],
-   "group": "Other species",
-   "taxon": 4097,
    "structs": true
   },
   {
@@ -585,30 +381,6 @@
    "structs": true
   },
   {
-   "id": "saccharum-officinarum",
-   "label": "Saccharum officinarum",
-   "name": "Saccharum officinarum",
-   "base": "data/species/saccharum-officinarum/",
-   "datasets": [
-    "afdb-het-4547"
-   ],
-   "group": "Other species",
-   "taxon": 4547,
-   "structs": true
-  },
-  {
-   "id": "triticum-aestivum",
-   "label": "Triticum aestivum",
-   "name": "Triticum aestivum",
-   "base": "data/species/triticum-aestivum/",
-   "datasets": [
-    "afdb-het-4565"
-   ],
-   "group": "Other species",
-   "taxon": 4565,
-   "structs": true
-  },
-  {
    "id": "zea-mays",
    "label": "Zea mays",
    "name": "Zea mays",
@@ -633,30 +405,6 @@
    "structs": true
   },
   {
-   "id": "candida-albicans-5476",
-   "label": "Candida albicans (taxon 5476)",
-   "name": "Candida albicans (taxon 5476)",
-   "base": "data/species/candida-albicans-5476/",
-   "datasets": [
-    "afdb-het-5476"
-   ],
-   "group": "Other species",
-   "taxon": 5476,
-   "structs": true
-  },
-  {
-   "id": "escherichia-coli-562",
-   "label": "Escherichia coli (taxon 562)",
-   "name": "Escherichia coli (taxon 562)",
-   "base": "data/species/escherichia-coli-562/",
-   "datasets": [
-    "afdb-het-562"
-   ],
-   "group": "Other species",
-   "taxon": 562,
-   "structs": true
-  },
-  {
    "id": "leishmania-infantum",
    "label": "Leishmania infantum",
    "name": "Leishmania infantum",
@@ -666,30 +414,6 @@
    ],
    "group": "Other species",
    "taxon": 5671,
-   "structs": true
-  },
-  {
-   "id": "trypanosoma-brucei-brucei-5702",
-   "label": "Trypanosoma brucei brucei (taxon 5702)",
-   "name": "Trypanosoma brucei brucei (taxon 5702)",
-   "base": "data/species/trypanosoma-brucei-brucei-5702/",
-   "datasets": [
-    "afdb-het-5702"
-   ],
-   "group": "Other species",
-   "taxon": 5702,
-   "structs": true
-  },
-  {
-   "id": "plasmodium-falciparum-5839",
-   "label": "Plasmodium falciparum (taxon 5839)",
-   "name": "Plasmodium falciparum (taxon 5839)",
-   "base": "data/species/plasmodium-falciparum-5839/",
-   "datasets": [
-    "afdb-het-5839"
-   ],
-   "group": "Other species",
-   "taxon": 5839,
    "structs": true
   },
   {
@@ -765,54 +489,6 @@
    "structs": true
   },
   {
-   "id": "yersinia-pestis",
-   "label": "Yersinia pestis",
-   "name": "Yersinia pestis",
-   "base": "data/species/yersinia-pestis/",
-   "datasets": [
-    "afdb-het-632"
-   ],
-   "group": "Other species",
-   "taxon": 632,
-   "structs": true
-  },
-  {
-   "id": "spisula-solidissima",
-   "label": "Spisula solidissima",
-   "name": "Spisula solidissima",
-   "base": "data/species/spisula-solidissima/",
-   "datasets": [
-    "afdb-het-6584"
-   ],
-   "group": "Other species",
-   "taxon": 6584,
-   "structs": true
-  },
-  {
-   "id": "tigriopus-californicus",
-   "label": "Tigriopus californicus",
-   "name": "Tigriopus californicus",
-   "base": "data/species/tigriopus-californicus/",
-   "datasets": [
-    "afdb-het-6832"
-   ],
-   "group": "Other species",
-   "taxon": 6832,
-   "structs": true
-  },
-  {
-   "id": "locusta-migratoria",
-   "label": "Locusta migratoria",
-   "name": "Locusta migratoria",
-   "base": "data/species/locusta-migratoria/",
-   "datasets": [
-    "afdb-het-7004"
-   ],
-   "group": "Other species",
-   "taxon": 7004,
-   "structs": true
-  },
-  {
    "id": "haemophilus-influenzae",
    "label": "Haemophilus influenzae",
    "name": "Haemophilus influenzae",
@@ -822,30 +498,6 @@
    ],
    "group": "Other species",
    "taxon": 71421,
-   "structs": true
-  },
-  {
-   "id": "ceratitis-capitata",
-   "label": "Ceratitis capitata",
-   "name": "Ceratitis capitata",
-   "base": "data/species/ceratitis-capitata/",
-   "datasets": [
-    "afdb-het-7213"
-   ],
-   "group": "Other species",
-   "taxon": 7213,
-   "structs": true
-  },
-  {
-   "id": "drosophila-simulans",
-   "label": "Drosophila simulans",
-   "name": "Drosophila simulans",
-   "base": "data/species/drosophila-simulans/",
-   "datasets": [
-    "afdb-het-7240"
-   ],
-   "group": "Other species",
-   "taxon": 7240,
    "structs": true
   },
   {
@@ -873,42 +525,6 @@
    "structs": true
   },
   {
-   "id": "escherichia-coli-o157-h7",
-   "label": "Escherichia coli O157:H7",
-   "name": "Escherichia coli O157:H7",
-   "base": "data/species/escherichia-coli-o157-h7/",
-   "datasets": [
-    "afdb-het-83334"
-   ],
-   "group": "Other species",
-   "taxon": 83334,
-   "structs": true
-  },
-  {
-   "id": "xenopus-laevis",
-   "label": "Xenopus laevis",
-   "name": "Xenopus laevis",
-   "base": "data/species/xenopus-laevis/",
-   "datasets": [
-    "afdb-het-8355"
-   ],
-   "group": "Model organisms",
-   "taxon": 8355,
-   "structs": true
-  },
-  {
-   "id": "oenothera-elata-subsp-hookeri",
-   "label": "Oenothera elata subsp. hookeri",
-   "name": "Oenothera elata subsp. hookeri",
-   "base": "data/species/oenothera-elata-subsp-hookeri/",
-   "datasets": [
-    "afdb-het-85636"
-   ],
-   "group": "Other species",
-   "taxon": 85636,
-   "structs": true
-  },
-  {
    "id": "helicobacter-pylori",
    "label": "Helicobacter pylori",
    "name": "Helicobacter pylori",
@@ -933,18 +549,6 @@
    "structs": true
   },
   {
-   "id": "salmonella-typhi",
-   "label": "Salmonella typhi",
-   "name": "Salmonella typhi",
-   "base": "data/species/salmonella-typhi/",
-   "datasets": [
-    "afdb-het-90370"
-   ],
-   "group": "Other species",
-   "taxon": 90370,
-   "structs": true
-  },
-  {
    "id": "staphylococcus-aureus-93061",
    "label": "Staphylococcus aureus (taxon 93061)",
    "name": "Staphylococcus aureus (taxon 93061)",
@@ -957,66 +561,6 @@
    "structs": true
   },
   {
-   "id": "trichosurus-vulpecula",
-   "label": "Trichosurus vulpecula",
-   "name": "Trichosurus vulpecula",
-   "base": "data/species/trichosurus-vulpecula/",
-   "datasets": [
-    "afdb-het-9337"
-   ],
-   "group": "Other species",
-   "taxon": 9337,
-   "structs": true
-  },
-  {
-   "id": "tupaia-glis",
-   "label": "Tupaia glis",
-   "name": "Tupaia glis",
-   "base": "data/species/tupaia-glis/",
-   "datasets": [
-    "afdb-het-9395"
-   ],
-   "group": "Other species",
-   "taxon": 9395,
-   "structs": true
-  },
-  {
-   "id": "macaca-mulatta",
-   "label": "Macaca mulatta",
-   "name": "Macaca mulatta",
-   "base": "data/species/macaca-mulatta/",
-   "datasets": [
-    "afdb-het-9544"
-   ],
-   "group": "Other species",
-   "taxon": 9544,
-   "structs": true
-  },
-  {
-   "id": "papio-anubis",
-   "label": "Papio anubis",
-   "name": "Papio anubis",
-   "base": "data/species/papio-anubis/",
-   "datasets": [
-    "afdb-het-9555"
-   ],
-   "group": "Other species",
-   "taxon": 9555,
-   "structs": true
-  },
-  {
-   "id": "pan-troglodytes",
-   "label": "Pan troglodytes",
-   "name": "Pan troglodytes",
-   "base": "data/species/pan-troglodytes/",
-   "datasets": [
-    "afdb-het-9598"
-   ],
-   "group": "Other species",
-   "taxon": 9598,
-   "structs": true
-  },
-  {
    "id": "salmonella-typhimurium",
    "label": "Salmonella typhimurium",
    "name": "Salmonella typhimurium",
@@ -1026,30 +570,6 @@
    ],
    "group": "Other species",
    "taxon": 99287,
-   "structs": true
-  },
-  {
-   "id": "ovis-aries",
-   "label": "Ovis aries",
-   "name": "Ovis aries",
-   "base": "data/species/ovis-aries/",
-   "datasets": [
-    "afdb-het-9940"
-   ],
-   "group": "Other species",
-   "taxon": 9940,
-   "structs": true
-  },
-  {
-   "id": "oryctolagus-cuniculus",
-   "label": "Oryctolagus cuniculus",
-   "name": "Oryctolagus cuniculus",
-   "base": "data/species/oryctolagus-cuniculus/",
-   "datasets": [
-    "afdb-het-9986"
-   ],
-   "group": "Other species",
-   "taxon": 9986,
    "structs": true
   }
  ],
@@ -1308,12 +828,12 @@
   },
   {
    "id": "afdb-het-1280",
-   "species": "staphylococcus-aureus-1280",
+   "species": null,
    "title": "Staphylococcus aureus proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-1280/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1323,16 +843,17 @@
     "offsets": "data/screens/afdb-het-1280/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Staphylococcus aureus (taxon 1280)"
   },
   {
    "id": "afdb-het-132416",
-   "species": "plasmodium-falciparum-132416",
+   "species": null,
    "title": "Plasmodium falciparum proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-132416/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1342,7 +863,8 @@
     "offsets": "data/screens/afdb-het-132416/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Plasmodium falciparum (taxon 132416)"
   },
   {
    "id": "afdb-het-1391915",
@@ -1384,12 +906,12 @@
   },
   {
    "id": "afdb-het-160488",
-   "species": "pseudomonas-putida",
+   "species": null,
    "title": "Pseudomonas putida proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-160488/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1399,7 +921,8 @@
     "offsets": "data/screens/afdb-het-160488/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Pseudomonas putida"
   },
   {
    "id": "afdb-het-171101",
@@ -1460,12 +983,12 @@
   },
   {
    "id": "afdb-het-196620",
-   "species": "staphylococcus-aureus-196620",
+   "species": null,
    "title": "Staphylococcus aureus proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-196620/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1475,16 +998,17 @@
     "offsets": "data/screens/afdb-het-196620/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Staphylococcus aureus (taxon 196620)"
   },
   {
    "id": "afdb-het-199310",
-   "species": "escherichia-coli-o6-h1",
+   "species": null,
    "title": "Escherichia coli O6:H1 proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-199310/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1494,7 +1018,8 @@
     "offsets": "data/screens/afdb-het-199310/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Escherichia coli O6:H1"
   },
   {
    "id": "afdb-het-208964",
@@ -1517,12 +1042,12 @@
   },
   {
    "id": "afdb-het-233413",
-   "species": "mycobacterium-bovis",
+   "species": null,
    "title": "Mycobacterium bovis proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-233413/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1532,7 +1057,8 @@
     "offsets": "data/screens/afdb-het-233413/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Mycobacterium bovis"
   },
   {
    "id": "afdb-het-237561",
@@ -1631,12 +1157,12 @@
   },
   {
    "id": "afdb-het-294748",
-   "species": "candida-albicans-294748",
+   "species": null,
    "title": "Candida albicans proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-294748/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1646,7 +1172,8 @@
     "offsets": "data/screens/afdb-het-294748/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Candida albicans (taxon 294748)"
   },
   {
    "id": "afdb-het-300267",
@@ -1669,12 +1196,12 @@
   },
   {
    "id": "afdb-het-300269",
-   "species": "shigella-sonnei",
+   "species": null,
    "title": "Shigella sonnei proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-300269/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1684,16 +1211,17 @@
     "offsets": "data/screens/afdb-het-300269/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Shigella sonnei"
   },
   {
    "id": "afdb-het-31033",
-   "species": "takifugu-rubripes",
+   "species": null,
    "title": "Takifugu rubripes proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-31033/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1703,7 +1231,8 @@
     "offsets": "data/screens/afdb-het-31033/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Takifugu rubripes"
   },
   {
    "id": "afdb-het-318479",
@@ -1745,12 +1274,12 @@
   },
   {
    "id": "afdb-het-354242",
-   "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-23-36",
+   "species": null,
    "title": "Campylobacter jejuni subsp. jejuni serotype O:23/36 proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-354242/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1760,7 +1289,8 @@
     "offsets": "data/screens/afdb-het-354242/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Campylobacter jejuni subsp. jejuni serotype O:23/36"
   },
   {
    "id": "afdb-het-36087",
@@ -1821,12 +1351,12 @@
   },
   {
    "id": "afdb-het-3708",
-   "species": "brassica-napus",
+   "species": null,
    "title": "Brassica napus proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-3708/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1836,16 +1366,17 @@
     "offsets": "data/screens/afdb-het-3708/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Brassica napus"
   },
   {
    "id": "afdb-het-3711",
-   "species": "brassica-campestris",
+   "species": null,
    "title": "Brassica campestris proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-3711/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1855,16 +1386,17 @@
     "offsets": "data/screens/afdb-het-3711/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Brassica campestris"
   },
   {
    "id": "afdb-het-3726",
-   "species": "raphanus-sativus",
+   "species": null,
    "title": "Raphanus sativus proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-3726/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1874,16 +1406,17 @@
     "offsets": "data/screens/afdb-het-3726/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Raphanus sativus"
   },
   {
    "id": "afdb-het-3728",
-   "species": "sinapis-alba",
+   "species": null,
    "title": "Sinapis alba proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-3728/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1893,7 +1426,8 @@
     "offsets": "data/screens/afdb-het-3728/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Sinapis alba"
   },
   {
    "id": "afdb-het-3847",
@@ -1916,12 +1450,12 @@
   },
   {
    "id": "afdb-het-3906",
-   "species": "vicia-faba",
+   "species": null,
    "title": "Vicia faba proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-3906/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1931,16 +1465,17 @@
     "offsets": "data/screens/afdb-het-3906/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Vicia faba"
   },
   {
    "id": "afdb-het-39946",
-   "species": "oryza-sativa-subsp-indica",
+   "species": null,
    "title": "Oryza sativa subsp. indica proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-39946/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1950,7 +1485,8 @@
     "offsets": "data/screens/afdb-het-39946/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Oryza sativa subsp. indica"
   },
   {
    "id": "afdb-het-39947",
@@ -1973,12 +1509,12 @@
   },
   {
    "id": "afdb-het-4097",
-   "species": "nicotiana-tabacum",
+   "species": null,
    "title": "Nicotiana tabacum proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-4097/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -1988,7 +1524,8 @@
     "offsets": "data/screens/afdb-het-4097/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Nicotiana tabacum"
   },
   {
    "id": "afdb-het-44689",
@@ -2030,12 +1567,12 @@
   },
   {
    "id": "afdb-het-4547",
-   "species": "saccharum-officinarum",
+   "species": null,
    "title": "Saccharum officinarum proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-4547/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2045,16 +1582,17 @@
     "offsets": "data/screens/afdb-het-4547/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Saccharum officinarum"
   },
   {
    "id": "afdb-het-4565",
-   "species": "triticum-aestivum",
+   "species": null,
    "title": "Triticum aestivum proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-4565/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2064,7 +1602,8 @@
     "offsets": "data/screens/afdb-het-4565/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Triticum aestivum"
   },
   {
    "id": "afdb-het-4577",
@@ -2106,12 +1645,12 @@
   },
   {
    "id": "afdb-het-5476",
-   "species": "candida-albicans-5476",
+   "species": null,
    "title": "Candida albicans proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-5476/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2121,16 +1660,17 @@
     "offsets": "data/screens/afdb-het-5476/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Candida albicans (taxon 5476)"
   },
   {
    "id": "afdb-het-562",
-   "species": "escherichia-coli-562",
+   "species": null,
    "title": "Escherichia coli proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-562/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2140,7 +1680,8 @@
     "offsets": "data/screens/afdb-het-562/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Escherichia coli (taxon 562)"
   },
   {
    "id": "afdb-het-5671",
@@ -2163,12 +1704,12 @@
   },
   {
    "id": "afdb-het-5702",
-   "species": "trypanosoma-brucei-brucei-5702",
+   "species": null,
    "title": "Trypanosoma brucei brucei proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-5702/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2178,16 +1719,17 @@
     "offsets": "data/screens/afdb-het-5702/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Trypanosoma brucei brucei (taxon 5702)"
   },
   {
    "id": "afdb-het-5839",
-   "species": "plasmodium-falciparum-5839",
+   "species": null,
    "title": "Plasmodium falciparum proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-5839/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2197,7 +1739,8 @@
     "offsets": "data/screens/afdb-het-5839/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Plasmodium falciparum (taxon 5839)"
   },
   {
    "id": "afdb-het-6183",
@@ -2315,12 +1858,12 @@
   },
   {
    "id": "afdb-het-632",
-   "species": "yersinia-pestis",
+   "species": null,
    "title": "Yersinia pestis proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-632/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2330,16 +1873,17 @@
     "offsets": "data/screens/afdb-het-632/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Yersinia pestis"
   },
   {
    "id": "afdb-het-6584",
-   "species": "spisula-solidissima",
+   "species": null,
    "title": "Spisula solidissima proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-6584/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2349,16 +1893,17 @@
     "offsets": "data/screens/afdb-het-6584/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Spisula solidissima"
   },
   {
    "id": "afdb-het-6832",
-   "species": "tigriopus-californicus",
+   "species": null,
    "title": "Tigriopus californicus proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-6832/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2368,16 +1913,17 @@
     "offsets": "data/screens/afdb-het-6832/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Tigriopus californicus"
   },
   {
    "id": "afdb-het-7004",
-   "species": "locusta-migratoria",
+   "species": null,
    "title": "Locusta migratoria proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-7004/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2387,7 +1933,8 @@
     "offsets": "data/screens/afdb-het-7004/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Locusta migratoria"
   },
   {
    "id": "afdb-het-71421",
@@ -2410,12 +1957,12 @@
   },
   {
    "id": "afdb-het-7213",
-   "species": "ceratitis-capitata",
+   "species": null,
    "title": "Ceratitis capitata proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-7213/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2425,16 +1972,17 @@
     "offsets": "data/screens/afdb-het-7213/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Ceratitis capitata"
   },
   {
    "id": "afdb-het-7240",
-   "species": "drosophila-simulans",
+   "species": null,
    "title": "Drosophila simulans proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-7240/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2444,7 +1992,8 @@
     "offsets": "data/screens/afdb-het-7240/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Drosophila simulans"
   },
   {
    "id": "afdb-het-83332",
@@ -2486,12 +2035,12 @@
   },
   {
    "id": "afdb-het-83334",
-   "species": "escherichia-coli-o157-h7",
+   "species": null,
    "title": "Escherichia coli O157:H7 proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-83334/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2501,16 +2050,17 @@
     "offsets": "data/screens/afdb-het-83334/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Escherichia coli O157:H7"
   },
   {
    "id": "afdb-het-8355",
-   "species": "xenopus-laevis",
+   "species": null,
    "title": "Xenopus laevis proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-8355/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2520,16 +2070,17 @@
     "offsets": "data/screens/afdb-het-8355/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Xenopus laevis"
   },
   {
    "id": "afdb-het-85636",
-   "species": "oenothera-elata-subsp-hookeri",
+   "species": null,
    "title": "Oenothera elata subsp. hookeri proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-85636/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2539,7 +2090,8 @@
     "offsets": "data/screens/afdb-het-85636/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Oenothera elata subsp. hookeri"
   },
   {
    "id": "afdb-het-85962",
@@ -2581,12 +2133,12 @@
   },
   {
    "id": "afdb-het-90370",
-   "species": "salmonella-typhi",
+   "species": null,
    "title": "Salmonella typhi proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-90370/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2596,7 +2148,8 @@
     "offsets": "data/screens/afdb-het-90370/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Salmonella typhi"
   },
   {
    "id": "afdb-het-93061",
@@ -2619,12 +2172,12 @@
   },
   {
    "id": "afdb-het-9337",
-   "species": "trichosurus-vulpecula",
+   "species": null,
    "title": "Trichosurus vulpecula proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-9337/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2634,16 +2187,17 @@
     "offsets": "data/screens/afdb-het-9337/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Trichosurus vulpecula"
   },
   {
    "id": "afdb-het-9395",
-   "species": "tupaia-glis",
+   "species": null,
    "title": "Tupaia glis proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-9395/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2653,16 +2207,17 @@
     "offsets": "data/screens/afdb-het-9395/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Tupaia glis"
   },
   {
    "id": "afdb-het-9544",
-   "species": "macaca-mulatta",
+   "species": null,
    "title": "Macaca mulatta proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-9544/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2672,16 +2227,17 @@
     "offsets": "data/screens/afdb-het-9544/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Macaca mulatta"
   },
   {
    "id": "afdb-het-9555",
-   "species": "papio-anubis",
+   "species": null,
    "title": "Papio anubis proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-9555/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2691,16 +2247,17 @@
     "offsets": "data/screens/afdb-het-9555/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Papio anubis"
   },
   {
    "id": "afdb-het-9598",
-   "species": "pan-troglodytes",
+   "species": null,
    "title": "Pan troglodytes proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-9598/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2710,7 +2267,8 @@
     "offsets": "data/screens/afdb-het-9598/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Pan troglodytes"
   },
   {
    "id": "afdb-het-99287",
@@ -2733,12 +2291,12 @@
   },
   {
    "id": "afdb-het-9940",
-   "species": "ovis-aries",
+   "species": null,
    "title": "Ovis aries proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-9940/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2748,16 +2306,17 @@
     "offsets": "data/screens/afdb-het-9940/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Ovis aries"
   },
   {
    "id": "afdb-het-9986",
-   "species": "oryctolagus-cuniculus",
+   "species": null,
    "title": "Oryctolagus cuniculus proteome heterodimers (AFDB complexes)",
    "short": "AFDB heterodimers",
    "color": "#5B7F95",
    "base": "data/screens/afdb-het-9986/",
-   "status": "live",
+   "status": "record",
    "models": 1,
    "modelsNote": "model_1_multimer_v3",
    "source": "Han et al. 2026 · AlphaFold Database",
@@ -2767,7 +2326,8 @@
     "offsets": "data/screens/afdb-het-9986/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
-   }
+   },
+   "speciesName": "Oryctolagus cuniculus"
   },
   {
    "id": "afdb-het-4932",

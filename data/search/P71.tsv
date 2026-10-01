@@ -1,12 +1,12 @@
 P71128	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P71128	cysM	P71128	0	10	Cysteine synthase B
-P71229	escherichia-coli-83333	P71229	hyfR	P71229	1	2	DNA-binding transcriptional activator HyfR
+P71229	escherichia-coli-83333	P71229	hyfR	P71229	0	1	DNA-binding transcriptional activator HyfR
 P71237	escherichia-coli-83333	P71237	wcaC	P71237	0	7	Putative colanic acid biosynthesis glycosyl transferase WcaC
 P71238	escherichia-coli-83333	P71238	wcaD	P71238	0	1	Putative colanic acid polymerase
-P71239	escherichia-coli-83333	P71239	wcaE	P71239	0	1	Putative colanic acid biosynthesis glycosyl transferase WcaE
+P71239	escherichia-coli-83333	P71239	wcaE	P71239	0	0	Putative colanic acid biosynthesis glycosyl transferase WcaE
 P71241	escherichia-coli-83333	P71241	wcaJ	P71241	0	6	UDP-glucose:undecaprenyl-phosphate glucose-1-phosphate transferase
 P71243	escherichia-coli-83333	P71243	wcaL	P71243	0	5	Putative colanic acid biosynthesis glycosyltransferase WcaL
 P71298	escherichia-coli-83333	P71298	intF	P71298	0	2	Prophage integrase IntF
-P71301	escherichia-coli-83333	P71301	ecpR	P71301	1	4	HTH-type transcriptional regulator EcpR
+P71301	escherichia-coli-83333	P71301	ecpR	P71301	0	3	HTH-type transcriptional regulator EcpR
 P71335	haemophilus-influenzae	P71335	ybeY	P71335	1	27	Endoribonuclease YbeY
 P71336	haemophilus-influenzae	P71336	HI_0052	P71336	0	1	Uncharacterized protein HI_0052
 P71338	haemophilus-influenzae	P71338	fbpB2	P71338	5	6	Fe(3+)-transport system permease protein FbpB 2
@@ -39,10 +39,10 @@ P71404	helicobacter-pylori	P71404	clpB	P71404	0	10	Chaperone protein ClpB
 P71405	helicobacter-pylori	P71405	cysE	P71405	0	2	Serine acetyltransferase
 P71408	helicobacter-pylori	P71408	ftsH	P71408	0	54	ATP-dependent zinc metalloprotease FtsH
 P71538	mycobacterium-tuberculosis	P71538	accA2	P71538	3	18	Biotin-dependent 3-methylcrotonyl-coenzyme A carboxylase alpha1 subunit
-P71540	mycobacterium-tuberculosis	P71540	echA7	P71540	0	96	Probable enoyl-CoA hydratase EchA7 (Enoyl hydrase) (Unsaturated acyl-CoA hydrata
+P71540	mycobacterium-tuberculosis	P71540	echA7	P71540	0	94	Probable enoyl-CoA hydratase EchA7 (Enoyl hydrase) (Unsaturated acyl-CoA hydrata
 P71552	mycobacterium-tuberculosis	P71552	Rv0958	P71552	0	4	Possible magnesium chelatase
 P71560	mycobacterium-tuberculosis	P71560	Rv0950c	P71560	0	1	M23ase beta-sheet core domain-containing protein
-P71590	mycobacterium-tuberculosis	P71590	fhaA	P71590	1	21	FHA domain-containing protein FhaA
+P71590	mycobacterium-tuberculosis	P71590	fhaA	P71590	1	19	FHA domain-containing protein FhaA
 P71591	mycobacterium-tuberculosis	P71591	Rv0021c	P71591	0	6	Nitronate monooxygenase
 P71594	mycobacterium-tuberculosis	P71594	Rv0024	P71594	0	3	Secreted protein P60-related protein
 P71615	mycobacterium-tuberculosis	P71615	nrnA	P71615	0	2	Bifunctional oligoribonuclease and PAP phosphatase NrnA
@@ -54,12 +54,12 @@ P71629	mycobacterium-tuberculosis	P71629	cas10	P71629	1	6	CRISPR system single-s
 P71644	mycobacterium-tuberculosis	P71644	Rv2807	P71644	0	7	Integrase catalytic domain-containing protein
 P71646	mycobacterium-tuberculosis	P71646	Rv2805	P71646	0	7	Uncharacterized protein
 P71650	mycobacterium-tuberculosis	P71650	mazF9	P71650	2	7	Endoribonuclease MazF9
-P71658	mycobacterium-tuberculosis	P71658	mihF	P71658	7	243	Integration host factor
-P71662	mycobacterium-tuberculosis	P71662	Rv1393c	P71662	0	87	Probable monoxygenase
+P71658	mycobacterium-tuberculosis	P71658	mihF	P71658	7	241	Integration host factor
+P71662	mycobacterium-tuberculosis	P71662	Rv1393c	P71662	0	86	Probable monoxygenase
 P71664	mycobacterium-tuberculosis	P71664	PE_PGRS25	P71664	0	38	PE-PGRS family protein PE_PGRS25
 P71668	mycobacterium-tuberculosis	P71668	lipI	P71668	0	34	Esterase LipI
 P71701	mycobacterium-tuberculosis	P71701	Rv0044c	P71701	0	7	Possible oxidoreductase
-P71707	mycobacterium-tuberculosis	P71707	ponA1	P71707	0	15	Penicillin-binding protein 1A
+P71707	mycobacterium-tuberculosis	P71707	ponA1	P71707	0	13	Penicillin-binding protein 1A
 P71716	mycobacterium-tuberculosis	P71716	mbtA	P71716	0	5	Salicyl-AMP ligase / salicyl-S-ArCP synthetase
 P71718	mycobacterium-tuberculosis	P71718	mbtC	P71718	0	15	Polyketide synthetase MbtC (Polyketide synthase)
 P71719	mycobacterium-tuberculosis	P71719	mbtD	P71719	1	15	Polyketide synthetase MbtD (Polyketide synthase)
@@ -77,14 +77,14 @@ P71754	mycobacterium-tuberculosis	P71754	Rv2390c	P71754	5	98	Mce associated memb
 P71757	mycobacterium-tuberculosis	P71757	Rv2387	P71757	0	1	Conserved protein
 P71785	mycobacterium-tuberculosis	P71785	Rv1506c	P71785	0	1	Putative methyltransferase Rv1506c
 P71790	mycobacterium-tuberculosis	P71790	gmdA	P71790	0	2	GDP-mannose 4,6-dehydratase
-P71791	mycobacterium-tuberculosis	P71791	epiA	P71791	0	110	GDP-L-fucose synthase
+P71791	mycobacterium-tuberculosis	P71791	epiA	P71791	0	109	GDP-L-fucose synthase
 P71792	mycobacterium-tuberculosis	P71792	Rv1513	P71792	0	1	Conserved protein
 P71794	mycobacterium-tuberculosis	P71794	Rv1515c	P71794	0	10	Methyltransferase type 11 domain-containing protein
-P71799	mycobacterium-tuberculosis	P71799	Rv1371	P71799	0	22	Probable conserved membrane protein
+P71799	mycobacterium-tuberculosis	P71799	Rv1371	P71799	0	21	Probable conserved membrane protein
 P71805	mycobacterium-tuberculosis	P71805	Rv1377c	P71805	0	10	Transferase
 P71810	mycobacterium-tuberculosis	P71810	Rv1382	P71810	0	1	Probable export or membrane protein
 P71813	mycobacterium-tuberculosis	P71813	Rv0756c	P71813	0	6	ABC transporter
-P71814	mycobacterium-tuberculosis	P71814	phoP	P71814	4	33	Possible two component system response transcriptional positive regulator PhoP
+P71814	mycobacterium-tuberculosis	P71814	phoP	P71814	4	32	Possible two component system response transcriptional positive regulator PhoP
 P71815	mycobacterium-tuberculosis	P71815	phoR	P71815	5	15	histidine kinase
 P71846	mycobacterium-tuberculosis	P71846	fdxB	P71846	0	118	Possible electron transfer protein FdxB
 P71847	mycobacterium-tuberculosis	P71847	ipdC	P71847	0	5	(3aS,4S,5R,7aS)-5-hydroxy-7a-methyl-1-oxo-octahydro-1H-indene-4-carboxyl-CoA deh
@@ -102,7 +102,7 @@ P71896	mycobacterium-tuberculosis	P71896	uspA	P71896	9	11	Probable sugar-transpo
 P71905	mycobacterium-tuberculosis	P71905	rne	P71905	2	10	Ribonuclease E
 P71906	mycobacterium-tuberculosis	P71906	dctA	P71906	0	1	Probable C4-dicarboxylate-transport transmembrane protein DctA
 P71913	mycobacterium-tuberculosis	P71913	rbsK	P71913	0	2	Ribokinase
-P71914	mycobacterium-tuberculosis	P71914	Rv2435c	P71914	1	22	Probable cyclase (Adenylyl-or guanylyl-)(Adenylate-or guanylate-)
+P71914	mycobacterium-tuberculosis	P71914	Rv2435c	P71914	1	20	Probable cyclase (Adenylyl-or guanylyl-)(Adenylate-or guanylate-)
 P71915	mycobacterium-tuberculosis	P71915	Rv2434c	P71915	1	17	Probable conserved transmembrane protein
 P71922	mycobacterium-tuberculosis	P71922	Rv2426c	P71922	0	1	AAA+ ATPase domain-containing protein
 P71947	mycobacterium-tuberculosis	P71947	Rv2650c	P71947	0	9	Possible PhiRv2 prophage protein

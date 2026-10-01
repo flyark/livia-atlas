@@ -13,7 +13,7 @@ GLN2	oryza-sativa-subsp-japonica	P14655	GLN2	P14655	0	14	Glutamine synthetase, c
 GLN2	zea-mays	P25462	GLN2	P25462	0	6	Glutamine synthetase, chloroplastic
 GLN2	zea-mays	P38560	GLN2	P38560	0	3	Glutamine synthetase root isozyme 2
 GLN3	candida-albicans-237561	A0A1D8PNX9	GLN3	A0A1D8PNX9	1	6	Nitrogen-responsive transcriptional regulator
-GLN4	candida-albicans-237561	A0A1D8PQM9	GLN4	A0A1D8PQM9	0	118	glutamine--tRNA ligase
+GLN4	candida-albicans-237561	A0A1D8PQM9	GLN4	A0A1D8PQM9	0	117	glutamine--tRNA ligase
 GLN4	zea-mays	P38561	GLN4	P38561	0	3	Glutamine synthetase root isozyme 3
 GLN5	zea-mays	P38562	GLN5	P38562	0	5	Glutamine synthetase root isozyme 4
 GLN6	zea-mays	P38559	GLN6	P38559	0	3	Glutamine synthetase root isozyme 1
@@ -37,7 +37,7 @@ GLNA2	mycobacterium-tuberculosis	P9WN37	glnA2	P9WN37	0	6	Glutamine synthetase
 GLNA3	dictyostelium-discoideum	Q54WR9	glnA3	Q54WR9	0	7	Type-3 glutamine synthetase
 GLNA3	mycobacterium-tuberculosis	O07752	glnA3	O07752	0	6	Probable glutamine synthetase GlnA3 (Glutamine synthase) (GS-I)
 GLNA4	mycobacterium-tuberculosis	I6X5K1	glnA4	I6X5K1	0	6	Probable glutamine synthetase GlnA4 (Glutamine synthase) (GS-II)
-GLNB	escherichia-coli-83333	P0A9Z1	glnB	P0A9Z1	1	17	Nitrogen regulatory protein P-II 1
+GLNB	escherichia-coli-83333	P0A9Z1	glnB	P0A9Z1	1	16	Nitrogen regulatory protein P-II 1
 GLNB	haemophilus-influenzae	P43795	glnB	P43795	0	1	Nitrogen regulatory protein P-II
 GLNB	mycobacterium-tuberculosis	P9WN31	glnB	P9WN31	1	9	Nitrogen regulatory protein P-II
 GLNB	salmonella-typhimurium	P0A9Z4	glnB	P0A9Z4	2	17	Nitrogen regulatory protein P-II 1
@@ -55,10 +55,10 @@ GLNE	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H378	glnE	A0A0H3H378	0	2	Bifun
 GLNG	escherichia-coli-83333	P0AFB8	glnG	P0AFB8	2	15	DNA-binding transcriptional regulator NtrC
 GLNG	salmonella-typhimurium	P41789	glnG	P41789	0	16	DNA-binding transcriptional regulator NtrC
 GLNG	shigella-dysenteriae-serotype-1	Q32A39	glnG	Q32A39	1	16	DNA-binding transcriptional regulator NtrC
-GLNH	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA73	glnH	Q0PA73	3	6	Glutamine binding periplasmic protein
-GLNH	escherichia-coli-83333	P0AEQ3	glnH	P0AEQ3	4	188	Glutamine-binding periplasmic protein
+GLNH	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA73	glnH	Q0PA73	3	5	Glutamine binding periplasmic protein
+GLNH	escherichia-coli-83333	P0AEQ3	glnH	P0AEQ3	2	173	Glutamine-binding periplasmic protein
 GLNH	mycobacterium-leprae	Q9CCX0	glnH	Q9CCX0	1	43	Glutamine-binding protein
-GLNH	mycobacterium-tuberculosis	P96257	glnH	P96257	0	9	Probable glutamine-binding lipoprotein GlnH (GLNBP)
+GLNH	mycobacterium-tuberculosis	P96257	glnH	P96257	0	8	Probable glutamine-binding lipoprotein GlnH (GLNBP)
 GLNH	salmonella-typhimurium	Q7CQW0	glnH	Q7CQW0	1	4	Glutamine-binding periplasmic protein
 GLNH	shigella-dysenteriae-serotype-1	Q32I89	glnH	Q32I89	1	3	Glutamine-binding periplasmic protein
 GLNH	streptococcus-pneumoniae	Q8CWT1	glnH	Q8CWT1	3	9	ABC transporter substrate-binding protein-glutamine transport/Major cell binding
@@ -76,7 +76,7 @@ GLNL	shigella-dysenteriae-serotype-1	Q32A40	glnL	Q32A40	1	12	Sensory histidine k
 GLNP	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9V9	glnP	Q0P9V9	12	20	Glutamine transport system permease
 GLNP	salmonella-typhimurium	Q7CQW1	glnP	Q7CQW1	23	57	Glutamine transport system permease protein GlnP
 GLNP	shigella-dysenteriae-serotype-1	Q32I88	glnP	Q32I88	14	39	Glutamine transport system permease protein GlnP
-GLNP	shigella-flexneri	P0AEQ9	glnP	P0AEQ9	72	161	Glutamine transport system permease protein GlnP
+GLNP	shigella-flexneri	P0AEQ9	glnP	P0AEQ9	10	18	Glutamine transport system permease protein GlnP
 GLNP	streptococcus-pneumoniae	Q8DP48	glnP	Q8DP48	23	40	ABC transporter membrane-spanning permease-glutamine transport
 GLNP	streptococcus-pneumoniae	Q8DPK5	glnP	Q8DPK5	27	45	ABC transporter membrane spanning permease-glutamine transport
 GLNP	streptococcus-pneumoniae	Q8DQD5	glnP	Q8DQD5	24	40	ABC transporter membrane-spanning permease-glutamine transport
@@ -85,7 +85,7 @@ GLNP	streptococcus-pneumoniae	Q8DQL0	glnP	Q8DQL0	27	40	ABC transporter membrane-
 GLNP	streptococcus-pneumoniae	Q8DQR7	glnP	Q8DQR7	26	40	ABC transporter membrane-spanning permease-glutamine transport
 GLNP	streptococcus-pneumoniae	Q8DQR8	glnP	Q8DQR8	28	40	ABC transporter membrane-spanning permease-glutamine transport
 GLNQ	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9Z6	glnQ	Q0P9Z6	6	10	Probable ABC transporter ATP-binding protein PEB1C
-GLNQ	escherichia-coli-83333	P10346	glnQ	P10346	58	191	Glutamine transport ATP-binding protein GlnQ
+GLNQ	escherichia-coli-83333	P10346	glnQ	P10346	49	175	Glutamine transport ATP-binding protein GlnQ
 GLNQ	salmonella-typhimurium	Q7CQW2	glnQ	Q7CQW2	6	7	Glutamine high-affinity transporter
 GLNQ	shigella-dysenteriae-serotype-1	Q32I87	glnQ	Q32I87	4	6	ATP-binding component of glutamine high-affinity transport system
 GLNQ	streptococcus-pneumoniae	Q8DP49	glnQ	Q8DP49	9	10	ABC transporter ATP-binding protein-glutamine transport
@@ -95,10 +95,10 @@ GLNQ	streptococcus-pneumoniae	Q8DQL1	glnQ	Q8DQL1	9	9	ABC transporter ATP-binding
 GLNQ	streptococcus-pneumoniae	Q8DR01	glnQ	Q8DR01	9	9	ABC transporter ATP-binding protein-glutamine
 GLNR	streptococcus-pneumoniae	Q8DQX7	glnR	Q8DQX7	0	9	Transcriptional repressor of the glutamine synthetase protein
 GLNS	dictyostelium-discoideum	P14325	glnS	P14325	2	116	Probable glutamine--tRNA ligase
-GLNS	escherichia-coli-83333	P00962	glnS	P00962	0	77	Glutamine--tRNA ligase
+GLNS	escherichia-coli-83333	P00962	glnS	P00962	0	75	Glutamine--tRNA ligase
 GLNS	haemophilus-influenzae	P43831	glnS	P43831	0	62	Glutamine--tRNA ligase
 GLNS	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GPY5	glnS	A0A0H3GPY5	2	171	Glutamine--tRNA ligase
 GLNS	neisseria-gonorrhoeae	Q5F7G0	glnS	Q5F7G0	0	77	Glutamine--tRNA ligase
 GLNS	pseudomonas-aeruginosa	Q9I2U8	glnS	Q9I2U8	0	124	Glutamine--tRNA ligase
-GLNS	salmonella-typhimurium	Q8ZQX5	glnS	Q8ZQX5	1	95	Glutamine--tRNA ligase
+GLNS	salmonella-typhimurium	Q8ZQX5	glnS	Q8ZQX5	1	92	Glutamine--tRNA ligase
 GLNS	shigella-dysenteriae-serotype-1	Q32IQ0	glnS	Q32IQ0	1	87	Glutamine--tRNA ligase

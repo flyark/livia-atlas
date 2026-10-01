@@ -1,5 +1,5 @@
 P42-1	glycine-max	Q84L66	P42-1	Q84L66	2	6	glycerate dehydrogenase
-P42036	arabidopsis-thaliana	P42036	RPS14C	P42036	31	679	Small ribosomal subunit protein uS11x
+P42036	arabidopsis-thaliana	P42036	RPS14C	P42036	30	677	Small ribosomal subunit protein uS11x
 P42043	arabidopsis-thaliana	P42043	FC1	P42043	0	28	Ferrochelatase-1, chloroplastic/mitochondrial
 P42057	zea-mays	P42057	POR1	P42057	0	30	Outer plastidial membrane protein porin
 P42082	mus-musculus	P42082	Cd86	P42082	9	81	T-lymphocyte activation antigen CD86
@@ -8,7 +8,7 @@ P42125	mus-musculus	P42125	Eci1	P42125	3	71	Enoyl-CoA delta isomerase 1, mitocho
 P42128	mus-musculus	P42128	Foxk1	P42128	2	16	Forkhead box protein K1
 P42158	arabidopsis-thaliana	P42158	CKL1	P42158	1	14	Casein kinase 1-like protein 1
 P42203	rattus-norvegicus	P42203	Il13	P42203	4	41	Interleukin-13
-P42208	mus-musculus	P42208	Septin2	P42208	17	52	Septin-2
+P42208	mus-musculus	P42208	Septin2	P42208	16	51	Septin-2
 P42209	mus-musculus	P42209	Septin1	P42209	13	18	Septin-1
 P42225	mus-musculus	P42225	Stat1	P42225	14	230	Signal transducer and activator of transcription 1
 P42227	mus-musculus	P42227	Stat3	P42227	19	314	Signal transducer and activator of transcription 3
@@ -17,7 +17,7 @@ P42232	mus-musculus	P42232	Stat5b	P42232	12	75	Signal transducer and activator o
 P42257	pseudomonas-aeruginosa	P42257	pilJ	P42257	7	33	Protein PilJ
 P42260	rattus-norvegicus	P42260	Grik2	P42260	17	77	Glutamate receptor ionotropic, kainate 2
 P42264	rattus-norvegicus	P42264	Grik3	P42264	16	61	Glutamate receptor ionotropic, kainate 3
-P42335	rattus-norvegicus	P42335	Itpkb	P42335	1	9	Inositol-trisphosphate 3-kinase B
+P42335	rattus-norvegicus	P42335	Itpkb	P42335	0	8	Inositol-trisphosphate 3-kinase B
 P42337	mus-musculus	P42337	Pik3ca	P42337	13	213	Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform
 P42339	arabidopsis-thaliana	P42339	VPS34	P42339	5	112	Phosphatidylinositol 3-kinase VPS34
 P42347	glycine-max	P42347	?	P42347	10	155	Phosphatidylinositol 3-kinase, root isoform
@@ -43,7 +43,7 @@ P42528	dictyostelium-discoideum	P42528	arpC	P42528	7	60	Actin-related protein 3
 P42529	dictyostelium-discoideum	P42529	cbpA	P42529	0	4	Calcium-binding protein A
 P42530	dictyostelium-discoideum	P42530	dscE	P42530	0	1	Discoidin-2
 P42533	rattus-norvegicus	P42533	F3	P42533	4	46	Tissue factor
-P42551	arabidopsis-thaliana	P42551	S1FA1	P42551	1	243	DNA-binding protein S1FA1
+P42551	arabidopsis-thaliana	P42551	S1FA1	P42551	1	241	DNA-binding protein S1FA1
 P42553	oryza-sativa-subsp-japonica	P42553	S1FA1	P42553	1	387	DNA-binding protein S1FA1
 P42567	mus-musculus	P42567	Eps15	P42567	27	154	Epidermal growth factor receptor substrate 15
 P42571	rattus-norvegicus	P42571	Pou2f3	P42571	4	11	POU domain, class 2, transcription factor 3
@@ -67,7 +67,7 @@ P42630	escherichia-coli-83333	P42630	tdcG	P42630	2	6	L-serine dehydratase TdcG
 P42632	escherichia-coli-83333	P42632	tdcE	P42632	1	7	PFL-like enzyme TdcE
 P42637	schistosoma-mansoni	P42637	?	P42637	3	33	Tropomyosin-1
 P42638	schistosoma-mansoni	P42638	?	P42638	2	33	Tropomyosin-2
-P42641	escherichia-coli-83333	P42641	obgE	P42641	3	52	GTPase ObgE/CgtA
+P42641	escherichia-coli-83333	P42641	obgE	P42641	3	50	GTPase ObgE/CgtA
 P42643	arabidopsis-thaliana	P42643	GRF1	P42643	39	278	14-3-3-like protein GF14 chi
 P42644	arabidopsis-thaliana	P42644	GRF3	P42644	43	316	14-3-3-like protein GF14 psi
 P42645	arabidopsis-thaliana	P42645	GRF5	P42645	23	110	14-3-3-like protein GF14 upsilon
@@ -83,11 +83,11 @@ P42699	arabidopsis-thaliana	P42699	DRT112	P42699	2	22	Plastocyanin major isoform
 P42703	mus-musculus	P42703	Lifr	P42703	13	32	Leukemia inhibitory factor receptor
 P42730	arabidopsis-thaliana	P42730	CLPB1	P42730	2	29	Chaperone protein ClpB1
 P42731	arabidopsis-thaliana	P42731	PAB2	P42731	11	50	Polyadenylate-binding protein 2
-P42732	arabidopsis-thaliana	P42732	RPS13	P42732	54	793	Small ribosomal subunit protein uS13c
-P42733	arabidopsis-thaliana	P42733	RPS11C	P42733	34	786	Small ribosomal subunit protein uS17x
+P42732	arabidopsis-thaliana	P42732	RPS13	P42732	54	791	Small ribosomal subunit protein uS13c
+P42733	arabidopsis-thaliana	P42733	RPS11C	P42733	34	784	Small ribosomal subunit protein uS17x
 P42734	arabidopsis-thaliana	P42734	CAD9	P42734	0	6	Probable cinnamyl alcohol dehydrogenase 9
 P42736	arabidopsis-thaliana	P42736	RAP2-3	P42736	0	12	Ethylene-responsive transcription factor RAP2-3
-P42737	arabidopsis-thaliana	P42737	BCA2	P42737	2	49	Beta carbonic anhydrase 2, chloroplastic
+P42737	arabidopsis-thaliana	P42737	BCA2	P42737	2	48	Beta carbonic anhydrase 2, chloroplastic
 P42738	arabidopsis-thaliana	P42738	CM1	P42738	2	12	Chorismate mutase 1, chloroplastic
 P42742	arabidopsis-thaliana	P42742	PBF1	P42742	6	150	Proteasome subunit beta type-1
 P42743	arabidopsis-thaliana	P42743	UBC15	P42743	25	117	Ubiquitin-conjugating enzyme 15
@@ -110,13 +110,13 @@ P42774	arabidopsis-thaliana	P42774	GBF1	P42774	4	11	G-box-binding factor 1
 P42775	arabidopsis-thaliana	P42775	GBF2	P42775	6	9	G-box-binding factor 2
 P42776	arabidopsis-thaliana	P42776	GBF3	P42776	5	7	G-box-binding factor 3
 P42777	arabidopsis-thaliana	P42777	GBF4	P42777	5	8	G-box-binding factor 4
-P42791	arabidopsis-thaliana	P42791	RPL18B	P42791	34	574	Large ribosomal subunit protein eL18y
-P42792	arabidopsis-thaliana	P42792	MT-CYB	P42792	25	168	Cytochrome b
+P42791	arabidopsis-thaliana	P42791	RPL18B	P42791	34	572	Large ribosomal subunit protein eL18y
+P42792	arabidopsis-thaliana	P42792	MT-CYB	P42792	24	163	Cytochrome b
 P42793	arabidopsis-thaliana	P42793	RPL5	P42793	5	73	Large ribosomal subunit protein uL5m
-P42794	arabidopsis-thaliana	P42794	RPL11C	P42794	19	762	Large ribosomal subunit protein uL5y/uL5x/uL5w
-P42795	arabidopsis-thaliana	P42795	RPL11A	P42795	15	755	Large ribosomal subunit protein uL5z
+P42794	arabidopsis-thaliana	P42794	RPL11C	P42794	19	760	Large ribosomal subunit protein uL5y/uL5x/uL5w
+P42795	arabidopsis-thaliana	P42795	RPL11A	P42795	15	753	Large ribosomal subunit protein uL5z
 P42797	arabidopsis-thaliana	P42797	RPS10	P42797	9	81	Small ribosomal subunit protein uS10m
-P42798	arabidopsis-thaliana	P42798	RPS15AA	P42798	23	712	Small ribosomal subunit protein uS8z/uS8w
+P42798	arabidopsis-thaliana	P42798	RPS15AA	P42798	23	710	Small ribosomal subunit protein uS8z/uS8w
 P42799	arabidopsis-thaliana	P42799	GSA1	P42799	1	20	Glutamate-1-semialdehyde 2,1-aminomutase 1, chloroplastic
 P42800	candida-albicans-237561	P42800	INO1	P42800	0	3	Inositol-3-phosphate synthase
 P42801	arabidopsis-thaliana	P42801	IPS1	P42801	2	13	Inositol-3-phosphate synthase isozyme 1
@@ -131,8 +131,8 @@ P42818	arabidopsis-thaliana	P42818	ATPK1	P42818	5	50	Serine/threonine-protein ki
 P42825	arabidopsis-thaliana	P42825	ATJ2	P42825	14	41	Chaperone protein dnaJ 2
 P42854	rattus-norvegicus	P42854	Reg3g	P42854	1	2	Regenerating islet-derived protein 3-gamma
 P42856	zea-mays	P42856	ZBP14	P42856	0	4	14 kDa zinc-binding protein
-P42862	oryza-sativa-subsp-japonica	P42862	Os03g0776000	P42862	0	36	Glucose-6-phosphate isomerase, cytosolic A
-P42863	oryza-sativa-subsp-japonica	P42863	Os06g0256500	P42863	0	36	Glucose-6-phosphate isomerase, cytosolic B
+P42862	oryza-sativa-subsp-japonica	P42862	Os03g0776000	P42862	0	35	Glucose-6-phosphate isomerase, cytosolic A
+P42863	oryza-sativa-subsp-japonica	P42863	Os06g0256500	P42863	0	35	Glucose-6-phosphate isomerase, cytosolic B
 P42867	mus-musculus	P42867	Dpagt1	P42867	0	4	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosaminephosphotransferas
 P42872	haemophilus-influenzae	P42872	tonB	P42872	3	15	Protein TonB
 P42881	schizosaccharomyces-pombe	P42881	gpt2	P42881	0	3	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosaminephosphotransferas

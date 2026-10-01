@@ -1,19 +1,11 @@
 P0A011	staphylococcus-aureus-93061	P0A011	lacD	P0A011	0	2	Tagatose 1,6-diphosphate aldolase
-P0A020	staphylococcus-aureus-196620	P0A020	dltC	P0A020	10	81	D-alanyl carrier protein
-P0A034	staphylococcus-aureus-196620	P0A034	fur	P0A034	0	2	Ferric uptake regulation protein
-P0A083	staphylococcus-aureus-196620	P0A083	msrA1	P0A083	0	1	Peptide methionine sulfoxide reductase MsrA 1
-P0A085	staphylococcus-aureus-196620	P0A085	msrA2	P0A085	0	1	Peptide methionine sulfoxide reductase MsrA 2
-P0A087	staphylococcus-aureus-196620	P0A087	msrB	P0A087	2	15	Peptide methionine sulfoxide reductase MsrB
-P0A0B6	staphylococcus-aureus-196620	P0A0B6	ahpC	P0A0B6	0	26	Alkyl hydroperoxide reductase C
 P0A0B9	staphylococcus-aureus-93061	P0A0B9	lacC	P0A0B9	0	3	Tagatose-6-phosphate kinase
-P0A0F4	staphylococcus-aureus-93061	P0A0F4	rplK	P0A0F4	4	152	Large ribosomal subunit protein uL11
-P0A0F8	staphylococcus-aureus-93061	P0A0F8	rplO	P0A0F8	4	153	Large ribosomal subunit protein uL15
-P0A0G2	staphylococcus-aureus-93061	P0A0G2	rpmD	P0A0G2	6	120	Large ribosomal subunit protein uL30
-P0A0G5	staphylococcus-aureus-196620	P0A0G5	MW0499	P0A0G5	5	58	RNA-binding protein MW0499
-P0A0H0	staphylococcus-aureus-93061	P0A0H0	rpsL	P0A0H0	8	135	Small ribosomal subunit protein uS12
-P0A0I4	staphylococcus-aureus-93061	P0A0I4	secE	P0A0I4	4	65	Protein translocase subunit SecE
+P0A0F4	staphylococcus-aureus-93061	P0A0F4	rplK	P0A0F4	4	147	Large ribosomal subunit protein uL11
+P0A0F8	staphylococcus-aureus-93061	P0A0F8	rplO	P0A0F8	3	152	Large ribosomal subunit protein uL15
+P0A0G2	staphylococcus-aureus-93061	P0A0G2	rpmD	P0A0G2	6	119	Large ribosomal subunit protein uL30
+P0A0H0	staphylococcus-aureus-93061	P0A0H0	rpsL	P0A0H0	8	133	Small ribosomal subunit protein uS12
+P0A0I4	staphylococcus-aureus-93061	P0A0I4	secE	P0A0I4	4	64	Protein translocase subunit SecE
 P0A0J0	staphylococcus-aureus-93061	P0A0J0	sigA	P0A0J0	2	24	RNA polymerase sigma factor SigA
-P0A0J2	staphylococcus-aureus-196620	P0A0J2	sodA	P0A0J2	0	35	Superoxide dismutase
 P0A0K3	staphylococcus-aureus-93061	P0A0K3	SAOUHSC_02013	P0A0K3	0	3	Uncharacterized protein SAOUHSC_02013
 P0A0Q7	helicobacter-pylori	P0A0Q7	vdlD	P0A0Q7	0	3	Protein VdlD
 P0A0R3	helicobacter-pylori	P0A0R3	groES	P0A0R3	1	14	Co-chaperonin GroES
@@ -45,7 +37,7 @@ P0A1D1	salmonella-typhimurium	P0A1D1	pduU	P0A1D1	0	6	Bacterial microcompartment 
 P0A1D3	salmonella-typhimurium	P0A1D3	groEL	P0A1D3	2	121	Chaperonin GroEL
 P0A1D5	salmonella-typhimurium	P0A1D5	groES	P0A1D5	2	26	Co-chaperonin GroES
 P0A1D7	salmonella-typhimurium	P0A1D7	clpP	P0A1D7	1	16	ATP-dependent Clp protease proteolytic subunit
-P0A1D9	salmonella-typhimurium	P0A1D9	cspH	P0A1D9	4	58	Cold shock-like protein CspH
+P0A1D9	salmonella-typhimurium	P0A1D9	cspH	P0A1D9	3	52	Cold shock-like protein CspH
 P0A1E1	salmonella-typhimurium	P0A1E1	hemN	P0A1E1	0	2	Oxygen-independent coproporphyrinogen III oxidase
 P0A1E3	salmonella-typhimurium	P0A1E3	cysK	P0A1E3	0	6	Cysteine synthase A
 P0A1E5	salmonella-typhimurium	P0A1E5	csgA	P0A1E5	0	12	Major curlin subunit
@@ -55,11 +47,11 @@ P0A1F2	salmonella-typhimurium	P0A1F2	dapF	P0A1F2	1	7	Diaminopimelate epimerase
 P0A1F4	salmonella-typhimurium	P0A1F4	yghB	P0A1F4	0	1	Inner membrane protein YghB
 P0A1F6	salmonella-typhimurium	P0A1F6	udp	P0A1F6	0	3	Uridine phosphorylase
 P0A1F8	salmonella-typhimurium	P0A1F8	asd	P0A1F8	0	4	Aspartate-semialdehyde dehydrogenase
-P0A1G5	salmonella-typhimurium	P0A1G5	dksA	P0A1G5	0	10	RNA polymerase-binding transcription factor DksA
-P0A1G7	salmonella-typhimurium	P0A1G7	dnaJ	P0A1G7	5	167	Chaperone protein DnaJ
+P0A1G5	salmonella-typhimurium	P0A1G5	dksA	P0A1G5	0	8	RNA polymerase-binding transcription factor DksA
+P0A1G7	salmonella-typhimurium	P0A1G7	dnaJ	P0A1G7	5	163	Chaperone protein DnaJ
 P0A1G9	salmonella-typhimurium	P0A1G9	dnaQ	P0A1G9	2	10	DNA polymerase III subunit epsilon
 P0A1H1	salmonella-typhimurium	P0A1H1	dsbI	P0A1H1	0	6	Protein-disulfide oxidoreductase DsbI
-P0A1H3	salmonella-typhimurium	P0A1H3	fusA	P0A1H3	0	140	Elongation factor G
+P0A1H3	salmonella-typhimurium	P0A1H3	fusA	P0A1H3	0	138	Elongation factor G
 P0A1H5	salmonella-typhimurium	P0A1H5	tufA	P0A1H5	1	106	Elongation factor Tu
 P0A1H7	salmonella-typhimurium	P0A1H7	exbB	P0A1H7	2	8	Biopolymer transport protein ExbB
 P0A1H9	salmonella-typhimurium	P0A1H9	fabZ	P0A1H9	3	19	3-hydroxyacyl-
@@ -81,11 +73,11 @@ P0A1N2	salmonella-typhimurium	P0A1N2	fliT	P0A1N2	4	11	Flagellar protein FliT
 P0A1N4	salmonella-typhimurium	P0A1N4	flhE	P0A1N4	1	2	Flagellar protein FlhE
 P0A1N6	salmonella-typhimurium	P0A1N6	fldB	P0A1N6	1	1	Flavodoxin 2
 P0A1N8	salmonella-typhimurium	P0A1N8	flgH	P0A1N8	1	25	Flagellar L-ring protein
-P0A1P0	salmonella-typhimurium	P0A1P0	gapA	P0A1P0	0	46	Glyceraldehyde-3-phosphate dehydrogenase
+P0A1P0	salmonella-typhimurium	P0A1P0	gapA	P0A1P0	0	45	Glyceraldehyde-3-phosphate dehydrogenase
 P0A1P2	salmonella-typhimurium	P0A1P2	gpsA	P0A1P2	0	8	Glycerol-3-phosphate dehydrogenase
-P0A1P4	salmonella-typhimurium	P0A1P4	rfbJ	P0A1P4	1	82	CDP-abequose synthase
+P0A1P4	salmonella-typhimurium	P0A1P4	rfbJ	P0A1P4	1	78	CDP-abequose synthase
 P0A1P6	salmonella-typhimurium	P0A1P6	glnA	P0A1P6	0	35	Glutamine synthetase
-P0A1P8	salmonella-typhimurium	P0A1P8	grxA	P0A1P8	0	7	Glutaredoxin 1
+P0A1P8	salmonella-typhimurium	P0A1P8	grxA	P0A1P8	0	6	Glutaredoxin 1
 P0A1Q2	salmonella-typhimurium	P0A1Q2	gloA	P0A1Q2	0	8	Lactoylglutathione lyase
 P0A1Q4	salmonella-typhimurium	P0A1Q4	dnaB	P0A1Q4	2	18	Replicative DNA helicase DnaB
 P0A1Q6	salmonella-typhimurium	P0A1Q6	hemA	P0A1Q6	0	1	Glutamyl-tRNA reductase
@@ -108,16 +100,16 @@ P0A1U8	salmonella-typhimurium	P0A1U8	yiiY	P0A1U8	0	3	Uncharacterized protein Yii
 P0A1V4	salmonella-typhimurium	P0A1V4	adk	P0A1V4	0	15	Adenylate kinase
 P0A1V6	salmonella-typhimurium	P0A1V6	prs	P0A1V6	0	27	Ribose-phosphate pyrophosphokinase
 P0A1W2	salmonella-typhimurium	P0A1W2	lepB	P0A1W2	1	19	Signal peptidase I
-P0A1W4	salmonella-typhimurium	P0A1W4	lepA	P0A1W4	0	61	Elongation factor 4
+P0A1W4	salmonella-typhimurium	P0A1W4	lepA	P0A1W4	0	56	Elongation factor 4
 P0A1W6	salmonella-typhimurium	P0A1W6	livK	P0A1W6	2	6	Leucine-specific-binding protein
 P0A1X0	salmonella-typhimurium	P0A1X0	slyB	P0A1X0	0	2	Outer membrane lipoprotein SlyB
 P0A1X4	salmonella-typhimurium	P0A1X4	lpxD	P0A1X4	0	2	UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltransferase
-P0A1X6	salmonella-typhimurium	P0A1X6	map	P0A1X6	8	56	Methionine aminopeptidase
+P0A1X6	salmonella-typhimurium	P0A1X6	map	P0A1X6	8	53	Methionine aminopeptidase
 P0A1Y0	salmonella-typhimurium	P0A1Y0	mutS	P0A1Y0	2	28	DNA mismatch repair protein MutS
 P0A1Y2	salmonella-typhimurium	P0A1Y2	asrC	P0A1Y2	1	5	Anaerobic sulfite reductase subunit C
-P0A1Y4	salmonella-typhimurium	P0A1Y4	nuoG	P0A1Y4	4	69	NADH-quinone oxidoreductase subunit G
-P0A1Y6	salmonella-typhimurium	P0A1Y6	nuoC	P0A1Y6	7	116	NADH-quinone oxidoreductase subunit C/D
-P0A1Y8	salmonella-typhimurium	P0A1Y8	nuoE	P0A1Y8	3	79	NADH-quinone oxidoreductase subunit E
+P0A1Y4	salmonella-typhimurium	P0A1Y4	nuoG	P0A1Y4	4	68	NADH-quinone oxidoreductase subunit G
+P0A1Y6	salmonella-typhimurium	P0A1Y6	nuoC	P0A1Y6	7	114	NADH-quinone oxidoreductase subunit C/D
+P0A1Y8	salmonella-typhimurium	P0A1Y8	nuoE	P0A1Y8	3	78	NADH-quinone oxidoreductase subunit E
 P0A1Z0	salmonella-typhimurium	P0A1Z0	cadA	P0A1Z0	1	2	Inducible lysine decarboxylase
 P0A1Z2	salmonella-typhimurium	P0A1Z2	skp	P0A1Z2	0	7	Chaperone protein Skp
 P0A1Z4	salmonella-typhimurium	P0A1Z4	pyrB	P0A1Z4	1	6	Aspartate carbamoyltransferase catalytic subunit
@@ -147,19 +139,19 @@ P0A277	salmonella-typhimurium	P0A277	gpt	P0A277	0	3	Xanthine-guanine phosphoribo
 P0A281	salmonella-typhimurium	P0A281	pth	P0A281	0	2	Peptidyl-tRNA hydrolase
 P0A283	salmonella-typhimurium	P0A283	crr	P0A283	5	23	PTS system glucose-specific EIIA component
 P0A285	salmonella-typhimurium	P0A285	recO	P0A285	2	7	DNA repair protein RecO
-P0A287	salmonella-typhimurium	P0A287	prfA	P0A287	1	78	Peptide chain release factor 1
-P0A289	salmonella-typhimurium	P0A289	prfB	P0A289	0	88	Peptide chain release factor 2
+P0A287	salmonella-typhimurium	P0A287	prfA	P0A287	1	73	Peptide chain release factor 1
+P0A289	salmonella-typhimurium	P0A289	prfB	P0A289	0	83	Peptide chain release factor 2
 P0A293	salmonella-typhimurium	P0A293	prmB	P0A293	0	13	Ribosomal protein uL3 glutamine methyltransferase
 P0A295	salmonella-typhimurium	P0A295	rho	P0A295	1	18	Transcription termination factor Rho
 P0A297	salmonella-typhimurium	P0A297	rplJ	P0A297	0	136	Large ribosomal subunit protein uL10
 P0A299	salmonella-typhimurium	P0A299	rplL	P0A299	2	86	Large ribosomal subunit protein bL12
-P0A2A1	salmonella-typhimurium	P0A2A1	rplS	P0A2A1	13	179	Large ribosomal subunit protein bL19
+P0A2A1	salmonella-typhimurium	P0A2A1	rplS	P0A2A1	13	173	Large ribosomal subunit protein bL19
 P0A2A3	salmonella-typhimurium	P0A2A3	rplA	P0A2A3	7	116	Large ribosomal subunit protein uL1
 P0A2A5	salmonella-typhimurium	P0A2A5	rpmB	P0A2A5	5	154	Large ribosomal subunit protein bL28
-P0A2A7	salmonella-typhimurium	P0A2A7	rpmD	P0A2A7	9	159	Large ribosomal subunit protein uL30
-P0A2A9	salmonella-typhimurium	P0A2A9	rpsP	P0A2A9	4	157	Small ribosomal subunit protein bS16
-P0A2B1	salmonella-typhimurium	P0A2B1	rpsT	P0A2B1	2	118	Small ribosomal subunit protein bS20
-P0A2B3	salmonella-typhimurium	P0A2B3	rpsG	P0A2B3	3	190	Small ribosomal subunit protein uS7
+P0A2A7	salmonella-typhimurium	P0A2A7	rpmD	P0A2A7	9	156	Large ribosomal subunit protein uL30
+P0A2A9	salmonella-typhimurium	P0A2A9	rpsP	P0A2A9	4	151	Small ribosomal subunit protein bS16
+P0A2B1	salmonella-typhimurium	P0A2B1	rpsT	P0A2B1	2	111	Small ribosomal subunit protein bS20
+P0A2B3	salmonella-typhimurium	P0A2B3	rpsG	P0A2B3	3	188	Small ribosomal subunit protein uS7
 P0A2B5	salmonella-typhimurium	P0A2B5	rimM	P0A2B5	0	6	Ribosome maturation factor RimM
 P0A2B7	salmonella-typhimurium	P0A2B7	rmuC	P0A2B7	0	1	DNA recombination protein RmuC
 P0A2B9	salmonella-typhimurium	P0A2B9	rnhA	P0A2B9	1	9	Ribonuclease HI
@@ -173,15 +165,14 @@ P0A2D3	salmonella-typhimurium	P0A2D3	secE	P0A2D3	1	61	Protein translocase subuni
 P0A2D5	salmonella-typhimurium	P0A2D5	cheY	P0A2D5	5	49	Chemotaxis protein CheY
 P0A2D9	salmonella-typhimurium	P0A2D9	glnL	P0A2D9	1	11	Sensory histidine kinase/phosphatase NtrB
 P0A2E1	salmonella-typhimurium	P0A2E1	glyA	P0A2E1	0	41	Serine hydroxymethyltransferase
-P0A2E3	salmonella-typhimurium	P0A2E3	rpoD	P0A2E3	2	94	RNA polymerase sigma factor RpoD
-P0A2E6	salmonella-typhi	P0A2E6	rpoS	P0A2E6	2	25	RNA polymerase sigma factor RpoS
+P0A2E3	salmonella-typhimurium	P0A2E3	rpoD	P0A2E3	2	93	RNA polymerase sigma factor RpoD
 P0A2E8	salmonella-typhimurium	P0A2E8	fliA	P0A2E8	3	12	RNA polymerase sigma factor FliA
-P0A2F0	salmonella-typhimurium	P0A2F0	rpoE	P0A2F0	3	27	ECF RNA polymerase sigma-E factor
+P0A2F0	salmonella-typhimurium	P0A2F0	rpoE	P0A2F0	3	26	ECF RNA polymerase sigma-E factor
 P0A2F2	salmonella-typhimurium	P0A2F2	cobB	P0A2F2	2	24	NAD-dependent protein deacylase
-P0A2F4	salmonella-typhimurium	P0A2F4	sodB	P0A2F4	2	94	Superoxide dismutase
+P0A2F4	salmonella-typhimurium	P0A2F4	sodB	P0A2F4	2	90	Superoxide dismutase
 P0A2F6	salmonella-typhimurium	P0A2F6	ssb	P0A2F6	8	24	Single-stranded DNA-binding protein 1
-P0A2G1	salmonella-typhimurium	P0A2G1	smpB	P0A2G1	3	59	SsrA-binding protein
-P0A2G7	salmonella-typhimurium	P0A2G7	yciH	P0A2G7	2	42	Uncharacterized protein YciH
+P0A2G1	salmonella-typhimurium	P0A2G1	smpB	P0A2G1	3	54	SsrA-binding protein
+P0A2G7	salmonella-typhimurium	P0A2G7	yciH	P0A2G7	2	40	Uncharacterized protein YciH
 P0A2H3	salmonella-typhimurium	P0A2H3	tatA	P0A2H3	2	7	Sec-independent protein translocase protein TatA
 P0A2H5	salmonella-typhimurium	P0A2H5	tatE	P0A2H5	2	7	Probable Sec-independent protein translocase protein TatE
 P0A2H7	salmonella-typhimurium	P0A2H7	fadA	P0A2H7	3	10	3-ketoacyl-CoA thiolase
@@ -196,7 +187,7 @@ P0A2J3	salmonella-typhimurium	P0A2J3	sapB	P0A2J3	4	4	Peptide transport system pe
 P0A2J5	salmonella-typhimurium	P0A2J5	sapC	P0A2J5	4	4	Peptide transport system permease protein SapC
 P0A2J9	salmonella-typhimurium	P0A2J9	trkA	P0A2J9	1	2	Trk system potassium uptake protein TrkA
 P0A2K1	salmonella-typhimurium	P0A2K1	trpB	P0A2K1	1	5	Tryptophan synthase beta chain
-P0A2K3	salmonella-typhimurium	P0A2K3	gltX	P0A2K3	0	95	Glutamate--tRNA ligase
+P0A2K3	salmonella-typhimurium	P0A2K3	gltX	P0A2K3	0	92	Glutamate--tRNA ligase
 P0A2K5	salmonella-typhimurium	P0A2K5	ubiE	P0A2K5	0	1	Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
 P0A2K7	salmonella-typhimurium	P0A2K7	galF	P0A2K7	1	2	UTP--glucose-1-phosphate uridylyltransferase
 P0A2K9	salmonella-typhimurium	P0A2K9	nudL	P0A2K9	0	11	Uncharacterized Nudix hydrolase NudL
@@ -217,7 +208,7 @@ P0A2R6	salmonella-typhimurium	P0A2R6	dusB	P0A2R6	0	1	tRNA-dihydrouridine synthas
 P0A2S4	salmonella-typhimurium	P0A2S4	marA	P0A2S4	0	3	Multiple antibiotic resistance protein MarA
 P0A2S9	salmonella-typhimurium	P0A2S9	rhaS	P0A2S9	0	6	HTH-type transcriptional activator RhaS
 P0A2T6	salmonella-typhimurium	P0A2T6	crp	P0A2T6	0	20	cAMP-activated global transcriptional regulator CRP
-P0A2T8	salmonella-typhimurium	P0A2T8	fnr	P0A2T8	1	16	Fumarate and nitrate reduction regulatory protein
+P0A2T8	salmonella-typhimurium	P0A2T8	fnr	P0A2T8	1	15	Fumarate and nitrate reduction regulatory protein
 P0A2U0	salmonella-typhimurium	P0A2U0	ogt	P0A2U0	0	1	Methylated-DNA--protein-cysteine methyltransferase
 P0A2U2	salmonella-typhimurium	P0A2U2	rimK	P0A2U2	0	1	Ribosomal protein bS6--L-glutamate ligase
 P0A2U7	streptococcus-pneumoniae	P0A2U7	adcC	P0A2U7	2	31	Zinc transport system ATP-binding protein AdcC
@@ -274,265 +265,254 @@ P0A4N4	streptococcus-pneumoniae	P0A4N4	malD	P0A4N4	7	11	Maltodextrin transport s
 P0A4Q0	streptococcus-pneumoniae	P0A4Q0	plsY	P0A4Q0	0	1	Glycerol-3-phosphate acyltransferase
 P0A4S2	streptococcus-pneumoniae	P0A4S2	fba	P0A4S2	0	45	Fructose-bisphosphate aldolase
 P0A4T2	streptococcus-pneumoniae	P0A4T2	malR	P0A4T2	0	6	HTH-type transcriptional regulator MalR
-P0A4W5	mycobacterium-bovis	P0A4W5	BQ2027_MB1304C	P0A4W5	2	18	Uncharacterized ABC transporter ATP-binding protein Mb1304c
-P0A5B0	mycobacterium-bovis	P0A5B0	BQ2027_MB2227C	P0A5B0	0	3	Protein Mb2227c
-P0A5C8	mycobacterium-bovis	P0A5C8	BQ2027_MB0449C	P0A5C8	0	16	Uncharacterized protein Mb0449c
 P0A5D0	mycobacterium-leprae	P0A5D0	ML2428.1	P0A5D0	0	51	Uncharacterized protein ML2428.1
-P0A5D2	mycobacterium-bovis	P0A5D2	BQ2027_MB0513	P0A5D2	2	105	Uncharacterized protein Mb0513
-P0A5D6	mycobacterium-bovis	P0A5D6	BQ2027_MB0909	P0A5D6	1	5	Uncharacterized protein Mb0909
-P0A5E2	mycobacterium-bovis	P0A5E2	BQ2027_MB1300C	P0A5E2	1	4	Protein Mb1300c
-P0A5G2	mycobacterium-bovis	P0A5G2	BQ2027_MB2093C	P0A5G2	0	2	Uncharacterized protein Mb2093c
-P0A5H0	mycobacterium-bovis	P0A5H0	BQ2027_MB2896	P0A5H0	2	5	Uncharacterized protein Mb2896
 P0A5H7	mycobacterium-leprae	P0A5H7	infA	P0A5H7	4	66	Translation initiation factor IF-1
-P0A5T3	mycobacterium-bovis	P0A5T3	BQ2027_MB1567	P0A5T3	4	24	Uncharacterized RNA pseudouridine synthase Mb1567
-P0A643	mycobacterium-bovis	P0A643	BQ2027_MB2594	P0A643	0	6	Uncharacterized NTE family protein Mb2594
 P0A698	escherichia-coli-83333	P0A698	uvrA	P0A698	2	27	UvrABC system protein A
 P0A6A0	escherichia-coli-83333	P0A6A0	ubiB	P0A6A0	0	5	Probable protein kinase UbiB
-P0A6A3	escherichia-coli-83333	P0A6A3	ackA	P0A6A3	1	6	Acetate kinase
+P0A6A3	escherichia-coli-83333	P0A6A3	ackA	P0A6A3	1	5	Acetate kinase
 P0A6A6	escherichia-coli-83333	P0A6A6	leuC	P0A6A6	1	6	3-isopropylmalate dehydratase large subunit
-P0A6B1	salmonella-typhimurium	P0A6B1	acpP	P0A6B1	65	279	Acyl carrier protein
+P0A6B1	salmonella-typhimurium	P0A6B1	acpP	P0A6B1	36	165	Acyl carrier protein
 P0A6B4	escherichia-coli-83333	P0A6B4	alr	P0A6B4	1	1	Alanine racemase, biosynthetic
-P0A6C0	shigella-flexneri	P0A6C0	iscS	P0A6C0	2	18	Cysteine desulfurase IscS
+P0A6C0	shigella-flexneri	P0A6C0	iscS	P0A6C0	1	5	Cysteine desulfurase IscS
 P0A6C1	escherichia-coli-83333	P0A6C1	nfo	P0A6C1	0	3	Endonuclease 4
 P0A6C5	escherichia-coli-83333	P0A6C5	argA	P0A6C5	0	2	Amino-acid acetyltransferase
 P0A6C8	escherichia-coli-83333	P0A6C8	argB	P0A6C8	0	1	Acetylglutamate kinase
 P0A6D0	escherichia-coli-83333	P0A6D0	argR	P0A6D0	0	5	Arginine repressor
 P0A6D3	escherichia-coli-83333	P0A6D3	aroA	P0A6D3	0	1	3-phosphoshikimate 1-carboxyvinyltransferase
-P0A6D5	escherichia-coli-83333	P0A6D5	ydiB	P0A6D5	0	8	Quinate/shikimate dehydrogenase
-P0A6E1	escherichia-coli-83333	P0A6E1	aroL	P0A6E1	1	1	Shikimate kinase 2
+P0A6D5	escherichia-coli-83333	P0A6D5	ydiB	P0A6D5	0	7	Quinate/shikimate dehydrogenase
+P0A6E1	escherichia-coli-83333	P0A6E1	aroL	P0A6E1	0	0	Shikimate kinase 2
 P0A6E4	escherichia-coli-83333	P0A6E4	argG	P0A6E4	0	7	Argininosuccinate synthase
-P0A6E6	escherichia-coli-83333	P0A6E6	atpC	P0A6E6	1	20	ATP synthase epsilon chain
+P0A6E6	escherichia-coli-83333	P0A6E6	atpC	P0A6E6	1	18	ATP synthase epsilon chain
 P0A6E9	escherichia-coli-83333	P0A6E9	bioD2	P0A6E9	1	3	ATP-dependent dethiobiotin synthetase BioD 2
 P0A6F1	escherichia-coli-83333	P0A6F1	carA	P0A6F1	1	5	Carbamoyl phosphate synthase small chain
 P0A6F3	escherichia-coli-83333	P0A6F3	glpK	P0A6F3	0	22	Glycerol kinase
-P0A6F5	escherichia-coli-83333	P0A6F5	groEL	P0A6F5	5	97	Chaperonin GroEL
+P0A6F5	escherichia-coli-83333	P0A6F5	groEL	P0A6F5	5	96	Chaperonin GroEL
 P0A6F9	escherichia-coli-83333	P0A6F9	groES	P0A6F9	1	18	Co-chaperonin GroES
 P0A6G3	escherichia-coli-83333	P0A6G3	pncC	P0A6G3	0	3	Nicotinamide-nucleotide amidohydrolase PncC
 P0A6G5	escherichia-coli-83333	P0A6G5	citX	P0A6G5	0	1	Apo-citrate lyase phosphoribosyl-dephospho-CoA transferase
-P0A6G7	escherichia-coli-83333	P0A6G7	clpP	P0A6G7	4	27	ATP-dependent Clp protease proteolytic subunit
-P0A6H1	escherichia-coli-83333	P0A6H1	clpX	P0A6H1	0	18	ATP-dependent Clp protease ATP-binding subunit ClpX
+P0A6G7	escherichia-coli-83333	P0A6G7	clpP	P0A6G7	3	20	ATP-dependent Clp protease proteolytic subunit
+P0A6H1	escherichia-coli-83333	P0A6H1	clpX	P0A6H1	0	17	ATP-dependent Clp protease ATP-binding subunit ClpX
 P0A6H5	escherichia-coli-83333	P0A6H5	hslU	P0A6H5	0	15	ATP-dependent protease ATPase subunit HslU
 P0A6H8	escherichia-coli-83333	P0A6H8	clsA	P0A6H8	0	3	Cardiolipin synthase A
 P0A6J1	escherichia-coli-83333	P0A6J1	cysC	P0A6J1	0	3	Adenylyl-sulfate kinase
-P0A6J5	escherichia-coli-83333	P0A6J5	dadA	P0A6J5	0	4	D-amino acid dehydrogenase
+P0A6J5	escherichia-coli-83333	P0A6J5	dadA	P0A6J5	0	3	D-amino acid dehydrogenase
 P0A6J8	escherichia-coli-83333	P0A6J8	ddlA	P0A6J8	1	7	D-alanine--D-alanine ligase A
-P0A6K3	escherichia-coli-83333	P0A6K3	def	P0A6K3	11	56	Peptide deformylase
+P0A6K3	escherichia-coli-83333	P0A6K3	def	P0A6K3	11	55	Peptide deformylase
 P0A6K6	escherichia-coli-83333	P0A6K6	deoB	P0A6K6	0	2	Phosphopentomutase
 P0A6L0	escherichia-coli-83333	P0A6L0	deoC	P0A6L0	0	14	Deoxyribose-phosphate aldolase
-P0A6L9	escherichia-coli-83333	P0A6L9	hscB	P0A6L9	3	11	Co-chaperone protein HscB
+P0A6L9	escherichia-coli-83333	P0A6L9	hscB	P0A6L9	3	9	Co-chaperone protein HscB
 P0A6M2	escherichia-coli-83333	P0A6M2	dsbB	P0A6M2	0	9	Disulfide bond formation protein B
 P0A6M4	escherichia-coli-83333	P0A6M4	dtd	P0A6M4	0	3	D-aminoacyl-tRNA deacylase
-P0A6M8	escherichia-coli-83333	P0A6M8	fusA	P0A6M8	2	129	Elongation factor G
-P0A6N2	escherichia-coli-o6-h1	P0A6N2	tufA	P0A6N2	0	15	Elongation factor Tu
-P0A6N4	escherichia-coli-83333	P0A6N4	efp	P0A6N4	4	69	Elongation factor P
-P0A6N8	escherichia-coli-83333	P0A6N8	yeiP	P0A6N8	3	67	Elongation factor P-like protein
-P0A6P1	escherichia-coli-83333	P0A6P1	tsf	P0A6P1	1	9	Elongation factor Ts
+P0A6M8	escherichia-coli-83333	P0A6M8	fusA	P0A6M8	2	124	Elongation factor G
+P0A6N4	escherichia-coli-83333	P0A6N4	efp	P0A6N4	3	68	Elongation factor P
+P0A6N8	escherichia-coli-83333	P0A6N8	yeiP	P0A6N8	3	65	Elongation factor P-like protein
+P0A6P1	escherichia-coli-83333	P0A6P1	tsf	P0A6P1	0	5	Elongation factor Ts
 P0A6P5	escherichia-coli-83333	P0A6P5	der	P0A6P5	0	2	GTPase Der
 P0A6P7	escherichia-coli-83333	P0A6P7	engB	P0A6P7	1	25	Probable GTP-binding protein EngB
-P0A6P9	escherichia-coli-83333	P0A6P9	eno	P0A6P9	0	47	Enolase
-P0A6Q5	shigella-flexneri	P0A6Q5	fabA	P0A6Q5	2	9	3-hydroxydecanoyl-
-P0A6Q9	shigella-flexneri	P0A6Q9	fabZ	P0A6Q9	2	14	3-hydroxyacyl-
-P0A6R0	escherichia-coli-83333	P0A6R0	fabH	P0A6R0	0	4	Beta-ketoacyl-
+P0A6P9	escherichia-coli-83333	P0A6P9	eno	P0A6P9	0	45	Enolase
+P0A6Q5	shigella-flexneri	P0A6Q5	fabA	P0A6Q5	1	5	3-hydroxydecanoyl-
+P0A6Q9	shigella-flexneri	P0A6Q9	fabZ	P0A6Q9	1	5	3-hydroxyacyl-
+P0A6R0	escherichia-coli-83333	P0A6R0	fabH	P0A6R0	0	2	Beta-ketoacyl-
 P0A6R3	escherichia-coli-83333	P0A6R3	fis	P0A6R3	0	20	DNA-binding protein Fis
-P0A6R8	shigella-flexneri	P0A6R8	fis	P0A6R8	0	4	DNA-binding protein Fis
-P0A6S2	shigella-flexneri	P0A6S2	flgH	P0A6S2	1	21	Flagellar L-ring protein
-P0A6S4	shigella-flexneri	P0A6S4	flgI	P0A6S4	1	18	Flagellar P-ring protein
+P0A6R8	shigella-flexneri	P0A6R8	fis	P0A6R8	0	0	DNA-binding protein Fis
+P0A6S2	shigella-flexneri	P0A6S2	flgH	P0A6S2	1	2	Flagellar L-ring protein
+P0A6S4	shigella-flexneri	P0A6S4	flgI	P0A6S4	1	3	Flagellar P-ring protein
 P0A6S5	escherichia-coli-83333	P0A6S5	ftsB	P0A6S5	1	10	Cell division protein FtsB
 P0A6S7	escherichia-coli-83333	P0A6S7	gpsA	P0A6S7	0	7	Glycerol-3-phosphate dehydrogenase
 P0A6T1	escherichia-coli-83333	P0A6T1	pgi	P0A6T1	0	21	Glucose-6-phosphate isomerase
 P0A6T3	escherichia-coli-83333	P0A6T3	galK	P0A6T3	0	9	Galactokinase
-P0A6U2	shigella-flexneri	P0A6U2	gcvH	P0A6U2	2	2	Glycine cleavage system H protein
+P0A6U2	shigella-flexneri	P0A6U2	gcvH	P0A6U2	0	0	Glycine cleavage system H protein
 P0A6U3	escherichia-coli-83333	P0A6U3	mnmG	P0A6U3	1	2	tRNA uridine 5-carboxymethylaminomethyl modification enzyme MnmG
 P0A6U5	escherichia-coli-83333	P0A6U5	rsmG	P0A6U5	0	2	Ribosomal RNA small subunit methyltransferase G
 P0A6U8	escherichia-coli-83333	P0A6U8	glgA	P0A6U8	0	1	Glycogen synthase
 P0A6V1	escherichia-coli-83333	P0A6V1	glgC	P0A6V1	0	10	Glucose-1-phosphate adenylyltransferase
-P0A6V7	shigella-flexneri	P0A6V7	glpE	P0A6V7	2	6	Thiosulfate sulfurtransferase GlpE
-P0A6V8	escherichia-coli-83333	P0A6V8	glk	P0A6V8	0	4	Glucokinase
+P0A6V7	shigella-flexneri	P0A6V7	glpE	P0A6V7	0	1	Thiosulfate sulfurtransferase GlpE
+P0A6V8	escherichia-coli-83333	P0A6V8	glk	P0A6V8	0	3	Glucokinase
 P0A6W0	escherichia-coli-83333	P0A6W0	glsA2	P0A6W0	0	3	Glutaminase 2
-P0A6W8	shigella-flexneri	P0A6W8	greA	P0A6W8	1	8	Transcription elongation factor GreA
+P0A6W8	shigella-flexneri	P0A6W8	greA	P0A6W8	0	3	Transcription elongation factor GreA
 P0A6W9	escherichia-coli-83333	P0A6W9	gshA	P0A6W9	0	3	Glutamate--cysteine ligase
 P0A6X1	escherichia-coli-83333	P0A6X1	hemA	P0A6X1	0	2	Glutamyl-tRNA reductase
-P0A6X6	shigella-flexneri	P0A6X6	hfq	P0A6X6	2	8	RNA-binding protein Hfq
+P0A6X6	shigella-flexneri	P0A6X6	hfq	P0A6X6	2	5	RNA-binding protein Hfq
 P0A6X7	escherichia-coli-83333	P0A6X7	ihfA	P0A6X7	1	9	Integration host factor subunit alpha
 P0A6Y1	escherichia-coli-83333	P0A6Y1	ihfB	P0A6Y1	1	12	Integration host factor subunit beta
-P0A6Y5	escherichia-coli-83333	P0A6Y5	hslO	P0A6Y5	0	2	33 kDa chaperonin
-P0A6Y8	escherichia-coli-83333	P0A6Y8	dnaK	P0A6Y8	13	118	Chaperone protein DnaK
-P0A6Z1	escherichia-coli-83333	P0A6Z1	hscA	P0A6Z1	8	88	Chaperone protein HscA
-P0A6Z3	escherichia-coli-83333	P0A6Z3	htpG	P0A6Z3	1	97	Chaperone protein HtpG
-P0A6Z9	shigella-flexneri	P0A6Z9	nikR	P0A6Z9	0	2	Nickel-responsive regulator
-P0A700	escherichia-coli-83333	P0A700	hypA	P0A700	1	13	Hydrogenase maturation factor HypA
+P0A6Y5	escherichia-coli-83333	P0A6Y5	hslO	P0A6Y5	0	1	33 kDa chaperonin
+P0A6Y8	escherichia-coli-83333	P0A6Y8	dnaK	P0A6Y8	12	104	Chaperone protein DnaK
+P0A6Z1	escherichia-coli-83333	P0A6Z1	hscA	P0A6Z1	8	84	Chaperone protein HscA
+P0A6Z3	escherichia-coli-83333	P0A6Z3	htpG	P0A6Z3	1	89	Chaperone protein HtpG
+P0A6Z9	shigella-flexneri	P0A6Z9	nikR	P0A6Z9	0	0	Nickel-responsive regulator
+P0A700	escherichia-coli-83333	P0A700	hypA	P0A700	1	12	Hydrogenase maturation factor HypA
 P0A704	shigella-flexneri	P0A704	hybF	P0A704	0	1	Hydrogenase maturation factor HybF
-P0A707	escherichia-coli-83333	P0A707	infC	P0A707	3	24	Translation initiation factor IF-3
-P0A716	shigella-flexneri	P0A716	kdsA	P0A716	0	1	2-dehydro-3-deoxyphosphooctonate aldolase
-P0A717	escherichia-coli-83333	P0A717	prs	P0A717	0	36	Ribose-phosphate pyrophosphokinase
-P0A721	shigella-flexneri	P0A721	tmk	P0A721	0	3	Thymidylate kinase
-P0A724	shigella-flexneri	P0A724	lpxA	P0A724	0	4	Acyl-
-P0A725	escherichia-coli-83333	P0A725	lpxC	P0A725	1	5	UDP-3-O-acyl-N-acetylglucosamine deacetylase
-P0A737	shigella-flexneri	P0A737	minE	P0A737	1	2	Cell division topological specificity factor
+P0A707	escherichia-coli-83333	P0A707	infC	P0A707	3	22	Translation initiation factor IF-3
+P0A716	shigella-flexneri	P0A716	kdsA	P0A716	0	0	2-dehydro-3-deoxyphosphooctonate aldolase
+P0A717	escherichia-coli-83333	P0A717	prs	P0A717	0	35	Ribose-phosphate pyrophosphokinase
+P0A721	shigella-flexneri	P0A721	tmk	P0A721	0	0	Thymidylate kinase
+P0A724	shigella-flexneri	P0A724	lpxA	P0A724	0	0	Acyl-
+P0A725	escherichia-coli-83333	P0A725	lpxC	P0A725	1	4	UDP-3-O-acyl-N-acetylglucosamine deacetylase
+P0A737	shigella-flexneri	P0A737	minE	P0A737	1	1	Cell division topological specificity factor
 P0A741	shigella-flexneri	P0A741	moaC	P0A741	0	1	Cyclic pyranopterin monophosphate synthase
 P0A744	escherichia-coli-83333	P0A744	msrA	P0A744	0	10	Peptide methionine sulfoxide reductase MsrA
-P0A746	escherichia-coli-83333	P0A746	msrB	P0A746	2	31	Peptide methionine sulfoxide reductase MsrB
+P0A746	escherichia-coli-83333	P0A746	msrB	P0A746	2	30	Peptide methionine sulfoxide reductase MsrB
 P0A749	escherichia-coli-83333	P0A749	murA	P0A749	0	8	UDP-N-acetylglucosamine 1-carboxyvinyltransferase
-P0A753	shigella-flexneri	P0A753	nadD	P0A753	0	4	Nicotinate-nucleotide adenylyltransferase
+P0A753	shigella-flexneri	P0A753	nadD	P0A753	0	0	Nicotinate-nucleotide adenylyltransferase
 P0A754	escherichia-coli-83333	P0A754	kefF	P0A754	3	8	Glutathione-regulated potassium-efflux system ancillary protein KefF
 P0A756	escherichia-coli-83333	P0A756	kefG	P0A756	3	7	Glutathione-regulated potassium-efflux system ancillary protein KefG
 P0A759	escherichia-coli-83333	P0A759	nagB	P0A759	0	5	Glucosamine-6-phosphate deaminase
 P0A761	escherichia-coli-83333	P0A761	nanE	P0A761	0	2	Putative N-acetylmannosamine-6-phosphate 2-epimerase
-P0A765	shigella-flexneri	P0A765	ndk	P0A765	1	56	Nucleoside diphosphate kinase
-P0A766	escherichia-coli-83333	P0A766	rsxA	P0A766	3	10	Ion-translocating oxidoreductase complex subunit A
+P0A765	shigella-flexneri	P0A765	ndk	P0A765	0	9	Nucleoside diphosphate kinase
+P0A766	escherichia-coli-83333	P0A766	rsxA	P0A766	3	9	Ion-translocating oxidoreductase complex subunit A
 P0A769	escherichia-coli-83333	P0A769	mntH	P0A769	0	6	Divalent metal cation transporter MntH
-P0A775	shigella-flexneri	P0A775	nrdI	P0A775	1	1	Protein NrdI
-P0A779	shigella-flexneri	P0A779	rppH	P0A779	1	11	RNA pyrophosphohydrolase
+P0A775	shigella-flexneri	P0A775	nrdI	P0A775	0	0	Protein NrdI
+P0A779	shigella-flexneri	P0A779	rppH	P0A779	0	2	RNA pyrophosphohydrolase
 P0A780	escherichia-coli-83333	P0A780	nusB	P0A780	1	9	Transcription antitermination protein NusB
 P0A784	escherichia-coli-83333	P0A784	orn	P0A784	0	2	Oligoribonuclease
-P0A793	shigella-flexneri	P0A793	panD	P0A793	0	3	Aspartate 1-decarboxylase
+P0A793	shigella-flexneri	P0A793	panD	P0A793	0	1	Aspartate 1-decarboxylase
 P0A794	escherichia-coli-83333	P0A794	pdxJ	P0A794	0	1	Pyridoxine 5'-phosphate synthase
 P0A796	escherichia-coli-83333	P0A796	pfkA	P0A796	0	16	ATP-dependent 6-phosphofructokinase isozyme 1
-P0A799	escherichia-coli-83333	P0A799	pgk	P0A799	0	32	Phosphoglycerate kinase
+P0A799	escherichia-coli-83333	P0A799	pgk	P0A799	0	30	Phosphoglycerate kinase
 P0A7A2	escherichia-coli-83333	P0A7A2	gpmB	P0A7A2	0	2	Probable phosphoglycerate mutase GpmB
 P0A7A5	escherichia-coli-83333	P0A7A5	pcm	P0A7A5	0	4	Protein-L-isoaspartate O-methyltransferase
 P0A7A7	escherichia-coli-83333	P0A7A7	plsB	P0A7A7	0	12	Glycerol-3-phosphate acyltransferase
 P0A7A9	escherichia-coli-83333	P0A7A9	ppa	P0A7A9	0	11	Inorganic pyrophosphatase
 P0A7B1	escherichia-coli-83333	P0A7B1	ppk	P0A7B1	0	5	Polyphosphate kinase
-P0A7B4	shigella-flexneri	P0A7B4	nadK	P0A7B4	0	2	NAD kinase
+P0A7B4	shigella-flexneri	P0A7B4	nadK	P0A7B4	0	1	NAD kinase
 P0A7B8	escherichia-coli-83333	P0A7B8	hslV	P0A7B8	0	12	ATP-dependent protease subunit HslV
 P0A7C2	escherichia-coli-83333	P0A7C2	lexA	P0A7C2	0	10	LexA repressor
 P0A7C6	escherichia-coli-83333	P0A7C6	pepE	P0A7C6	0	3	Peptidase E
 P0A7D1	escherichia-coli-83333	P0A7D1	pth	P0A7D1	0	2	Peptidyl-tRNA hydrolase
 P0A7D4	escherichia-coli-83333	P0A7D4	purA	P0A7D4	0	4	Adenylosuccinate synthetase
-P0A7E0	shigella-flexneri	P0A7E0	purC	P0A7E0	0	5	Phosphoribosylaminoimidazole-succinocarboxamide synthase
-P0A7E1	escherichia-coli-83333	P0A7E1	pyrD	P0A7E1	0	3	Dihydroorotate dehydrogenase (quinone)
+P0A7E0	shigella-flexneri	P0A7E0	purC	P0A7E0	0	0	Phosphoribosylaminoimidazole-succinocarboxamide synthase
+P0A7E1	escherichia-coli-83333	P0A7E1	pyrD	P0A7E1	0	2	Dihydroorotate dehydrogenase (quinone)
 P0A7E3	escherichia-coli-83333	P0A7E3	pyrE	P0A7E3	0	1	Orotate phosphoribosyltransferase
-P0A7E5	escherichia-coli-83333	P0A7E5	pyrG	P0A7E5	0	31	CTP synthase
-P0A7F2	shigella-flexneri	P0A7F2	pyrH	P0A7F2	0	8	Uridylate kinase
-P0A7F3	escherichia-coli-83333	P0A7F3	pyrI	P0A7F3	1	1	Aspartate carbamoyltransferase regulatory chain
+P0A7E5	escherichia-coli-83333	P0A7E5	pyrG	P0A7E5	0	30	CTP synthase
+P0A7F2	shigella-flexneri	P0A7F2	pyrH	P0A7F2	0	1	Uridylate kinase
+P0A7F3	escherichia-coli-83333	P0A7F3	pyrI	P0A7F3	0	0	Aspartate carbamoyltransferase regulatory chain
 P0A7F9	escherichia-coli-83333	P0A7F9	queA	P0A7F9	0	3	S-adenosylmethionine:tRNA ribosyltransferase-isomerase
-P0A7G2	escherichia-coli-83333	P0A7G2	rbfA	P0A7G2	3	19	30S ribosome-binding factor
-P0A7G9	shigella-flexneri	P0A7G9	recA	P0A7G9	0	36	Protein RecA
+P0A7G2	escherichia-coli-83333	P0A7G2	rbfA	P0A7G2	3	17	30S ribosome-binding factor
+P0A7G9	shigella-flexneri	P0A7G9	recA	P0A7G9	0	4	Protein RecA
 P0A7H0	escherichia-coli-83333	P0A7H0	recF	P0A7H0	1	6	DNA replication and repair protein RecF
-P0A7H3	escherichia-coli-83333	P0A7H3	recO	P0A7H3	2	7	DNA repair protein RecO
-P0A7H6	escherichia-coli-83333	P0A7H6	recR	P0A7H6	2	12	Recombination protein RecR
-P0A7I3	shigella-flexneri	P0A7I3	prfA	P0A7I3	0	73	Peptide chain release factor 1
+P0A7H3	escherichia-coli-83333	P0A7H3	recO	P0A7H3	2	5	DNA repair protein RecO
+P0A7H6	escherichia-coli-83333	P0A7H6	recR	P0A7H6	2	11	Recombination protein RecR
+P0A7I3	shigella-flexneri	P0A7I3	prfA	P0A7I3	0	9	Peptide chain release factor 1
 P0A7I4	escherichia-coli-83333	P0A7I4	prfC	P0A7I4	0	56	Peptide chain release factor RF3
 P0A7J0	escherichia-coli-83333	P0A7J0	ribB	P0A7J0	0	4	3,4-dihydroxy-2-butanone 4-phosphate synthase
 P0A7J3	escherichia-coli-83333	P0A7J3	rplJ	P0A7J3	0	113	Large ribosomal subunit protein uL10
 P0A7J7	escherichia-coli-83333	P0A7J7	rplK	P0A7J7	6	158	Large ribosomal subunit protein uL11
 P0A7K0	salmonella-typhimurium	P0A7K0	rplK	P0A7K0	6	185	Large ribosomal subunit protein uL11
 P0A7K2	escherichia-coli-83333	P0A7K2	rplL	P0A7K2	0	81	Large ribosomal subunit protein bL12
-P0A7K6	escherichia-coli-83333	P0A7K6	rplS	P0A7K6	9	140	Large ribosomal subunit protein bL19
-P0A7L0	escherichia-coli-83333	P0A7L0	rplA	P0A7L0	8	107	Large ribosomal subunit protein uL1
-P0A7L6	salmonella-typhimurium	P0A7L6	rplT	P0A7L6	9	269	Large ribosomal subunit protein bL20
-P0A7L8	escherichia-coli-83333	P0A7L8	rpmA	P0A7L8	4	136	Large ribosomal subunit protein bL27
-P0A7M2	escherichia-coli-83333	P0A7M2	rpmB	P0A7M2	5	124	Large ribosomal subunit protein bL28
-P0A7M6	escherichia-coli-83333	P0A7M6	rpmC	P0A7M6	3	121	Large ribosomal subunit protein uL29
-P0A7M9	escherichia-coli-83333	P0A7M9	rpmE	P0A7M9	4	81	Large ribosomal subunit protein bL31
-P0A7N1	escherichia-coli-83333	P0A7N1	ykgM	P0A7N1	3	69	Large ribosomal subunit protein bL31B
-P0A7N4	escherichia-coli-83333	P0A7N4	rpmF	P0A7N4	10	143	Large ribosomal subunit protein bL32
-P0A7N6	salmonella-typhimurium	P0A7N6	rpmF	P0A7N6	10	174	Large ribosomal subunit protein bL32
-P0A7N9	escherichia-coli-83333	P0A7N9	rpmG	P0A7N9	3	128	Large ribosomal subunit protein bL33
+P0A7K6	escherichia-coli-83333	P0A7K6	rplS	P0A7K6	9	132	Large ribosomal subunit protein bL19
+P0A7L0	escherichia-coli-83333	P0A7L0	rplA	P0A7L0	8	106	Large ribosomal subunit protein uL1
+P0A7L6	salmonella-typhimurium	P0A7L6	rplT	P0A7L6	4	154	Large ribosomal subunit protein bL20
+P0A7L8	escherichia-coli-83333	P0A7L8	rpmA	P0A7L8	3	133	Large ribosomal subunit protein bL27
+P0A7M2	escherichia-coli-83333	P0A7M2	rpmB	P0A7M2	5	123	Large ribosomal subunit protein bL28
+P0A7M6	escherichia-coli-83333	P0A7M6	rpmC	P0A7M6	3	117	Large ribosomal subunit protein uL29
+P0A7M9	escherichia-coli-83333	P0A7M9	rpmE	P0A7M9	4	80	Large ribosomal subunit protein bL31
+P0A7N1	escherichia-coli-83333	P0A7N1	ykgM	P0A7N1	3	60	Large ribosomal subunit protein bL31B
+P0A7N4	escherichia-coli-83333	P0A7N4	rpmF	P0A7N4	7	127	Large ribosomal subunit protein bL32
+P0A7N6	salmonella-typhimurium	P0A7N6	rpmF	P0A7N6	9	167	Large ribosomal subunit protein bL32
+P0A7N9	escherichia-coli-83333	P0A7N9	rpmG	P0A7N9	3	127	Large ribosomal subunit protein bL33
 P0A7P2	salmonella-typhimurium	P0A7P2	rpmG	P0A7P2	13	164	Large ribosomal subunit protein bL33
-P0A7P5	escherichia-coli-83333	P0A7P5	rpmH	P0A7P5	3	90	Large ribosomal subunit protein bL34
+P0A7P5	escherichia-coli-83333	P0A7P5	rpmH	P0A7P5	3	89	Large ribosomal subunit protein bL34
 P0A7P8	salmonella-typhimurium	P0A7P8	rpmH	P0A7P8	4	120	Large ribosomal subunit protein bL34
-P0A7Q5	shigella-flexneri	P0A7Q5	rpmI	P0A7Q5	2	178	Large ribosomal subunit protein bL35
-P0A7Q6	escherichia-coli-83333	P0A7Q6	rpmJ	P0A7Q6	2	125	Large ribosomal subunit protein bL36A
-P0A7R0	shigella-flexneri	P0A7R0	rpmJ	P0A7R0	0	64	Large ribosomal subunit protein bL36
+P0A7Q5	shigella-flexneri	P0A7Q5	rpmI	P0A7Q5	0	13	Large ribosomal subunit protein bL35
+P0A7Q6	escherichia-coli-83333	P0A7Q6	rpmJ	P0A7Q6	2	122	Large ribosomal subunit protein bL36A
+P0A7R0	shigella-flexneri	P0A7R0	rpmJ	P0A7R0	0	4	Large ribosomal subunit protein bL36
 P0A7R1	escherichia-coli-83333	P0A7R1	rplI	P0A7R1	1	109	Large ribosomal subunit protein bL9
-P0A7R5	escherichia-coli-83333	P0A7R5	rpsJ	P0A7R5	6	156	Small ribosomal subunit protein uS10
-P0A7R9	escherichia-coli-83333	P0A7R9	rpsK	P0A7R9	10	158	Small ribosomal subunit protein uS11
-P0A7S8	shigella-flexneri	P0A7S8	rpsL	P0A7S8	3	95	Small ribosomal subunit protein uS12
-P0A7S9	escherichia-coli-83333	P0A7S9	rpsM	P0A7S9	4	153	Small ribosomal subunit protein uS13
-P0A7T6	shigella-flexneri	P0A7T6	rpsP	P0A7T6	1	95	Small ribosomal subunit protein bS16
+P0A7R5	escherichia-coli-83333	P0A7R5	rpsJ	P0A7R5	6	151	Small ribosomal subunit protein uS10
+P0A7R9	escherichia-coli-83333	P0A7R9	rpsK	P0A7R9	10	153	Small ribosomal subunit protein uS11
+P0A7S8	shigella-flexneri	P0A7S8	rpsL	P0A7S8	1	16	Small ribosomal subunit protein uS12
+P0A7S9	escherichia-coli-83333	P0A7S9	rpsM	P0A7S9	4	149	Small ribosomal subunit protein uS13
+P0A7T6	shigella-flexneri	P0A7T6	rpsP	P0A7T6	0	13	Small ribosomal subunit protein bS16
 P0A7T7	escherichia-coli-83333	P0A7T7	rpsR	P0A7T7	3	90	Small ribosomal subunit protein bS18
-P0A7U3	escherichia-coli-83333	P0A7U3	rpsS	P0A7U3	7	130	Small ribosomal subunit protein uS19
-P0A7U7	escherichia-coli-83333	P0A7U7	rpsT	P0A7U7	1	102	Small ribosomal subunit protein bS20
-P0A7V0	escherichia-coli-83333	P0A7V0	rpsB	P0A7V0	6	176	Small ribosomal subunit protein uS2
-P0A7V3	escherichia-coli-83333	P0A7V3	rpsC	P0A7V3	3	128	Small ribosomal subunit protein uS3
-P0A7V6	salmonella-typhimurium	P0A7V6	rpsC	P0A7V6	2	161	Small ribosomal subunit protein uS3
-P0A7V8	escherichia-coli-83333	P0A7V8	rpsD	P0A7V8	0	162	Small ribosomal subunit protein uS4
-P0A7W1	escherichia-coli-83333	P0A7W1	rpsE	P0A7W1	4	164	Small ribosomal subunit protein uS5
-P0A7W4	salmonella-typhimurium	P0A7W4	rpsE	P0A7W4	2	195	Small ribosomal subunit protein uS5
-P0A7W7	escherichia-coli-83333	P0A7W7	rpsH	P0A7W7	9	156	Small ribosomal subunit protein uS8
-P0A7X0	salmonella-typhimurium	P0A7X0	rpsH	P0A7X0	16	186	Small ribosomal subunit protein uS8
-P0A7X3	escherichia-coli-83333	P0A7X3	rpsI	P0A7X3	13	128	Small ribosomal subunit protein uS9
-P0A7X9	shigella-flexneri	P0A7X9	rimM	P0A7X9	0	2	Ribosome maturation factor RimM
-P0A7Y0	escherichia-coli-83333	P0A7Y0	rnc	P0A7Y0	3	105	Ribonuclease 3
-P0A7Y7	shigella-flexneri	P0A7Y7	rnhA	P0A7Y7	1	13	Ribonuclease HI
+P0A7U3	escherichia-coli-83333	P0A7U3	rpsS	P0A7U3	7	126	Small ribosomal subunit protein uS19
+P0A7U7	escherichia-coli-83333	P0A7U7	rpsT	P0A7U7	1	87	Small ribosomal subunit protein bS20
+P0A7V0	escherichia-coli-83333	P0A7V0	rpsB	P0A7V0	4	157	Small ribosomal subunit protein uS2
+P0A7V3	escherichia-coli-83333	P0A7V3	rpsC	P0A7V3	3	123	Small ribosomal subunit protein uS3
+P0A7V6	salmonella-typhimurium	P0A7V6	rpsC	P0A7V6	2	158	Small ribosomal subunit protein uS3
+P0A7V8	escherichia-coli-83333	P0A7V8	rpsD	P0A7V8	0	157	Small ribosomal subunit protein uS4
+P0A7W1	escherichia-coli-83333	P0A7W1	rpsE	P0A7W1	3	160	Small ribosomal subunit protein uS5
+P0A7W4	salmonella-typhimurium	P0A7W4	rpsE	P0A7W4	2	192	Small ribosomal subunit protein uS5
+P0A7W7	escherichia-coli-83333	P0A7W7	rpsH	P0A7W7	9	152	Small ribosomal subunit protein uS8
+P0A7X0	salmonella-typhimurium	P0A7X0	rpsH	P0A7X0	16	183	Small ribosomal subunit protein uS8
+P0A7X3	escherichia-coli-83333	P0A7X3	rpsI	P0A7X3	12	125	Small ribosomal subunit protein uS9
+P0A7X9	shigella-flexneri	P0A7X9	rimM	P0A7X9	0	0	Ribosome maturation factor RimM
+P0A7Y0	escherichia-coli-83333	P0A7Y0	rnc	P0A7Y0	3	100	Ribonuclease 3
+P0A7Y7	shigella-flexneri	P0A7Y7	rnhA	P0A7Y7	0	0	Ribonuclease HI
 P0A7Y8	escherichia-coli-83333	P0A7Y8	rnpA	P0A7Y8	2	14	Ribonuclease P protein component
 P0A7Z0	escherichia-coli-83333	P0A7Z0	rpiA	P0A7Z0	0	1	Ribose-5-phosphate isomerase A
-P0A7Z4	escherichia-coli-83333	P0A7Z4	rpoA	P0A7Z4	1	138	DNA-directed RNA polymerase subunit alpha
-P0A7Z7	salmonella-typhimurium	P0A7Z7	rpoA	P0A7Z7	1	188	DNA-directed RNA polymerase subunit alpha
-P0A800	escherichia-coli-83333	P0A800	rpoZ	P0A800	4	108	DNA-directed RNA polymerase subunit omega
+P0A7Z4	escherichia-coli-83333	P0A7Z4	rpoA	P0A7Z4	1	134	DNA-directed RNA polymerase subunit alpha
+P0A7Z7	salmonella-typhimurium	P0A7Z7	rpoA	P0A7Z7	1	184	DNA-directed RNA polymerase subunit alpha
+P0A800	escherichia-coli-83333	P0A800	rpoZ	P0A800	4	106	DNA-directed RNA polymerase subunit omega
 P0A803	salmonella-typhimurium	P0A803	rpoZ	P0A803	2	143	DNA-directed RNA polymerase subunit omega
-P0A808	shigella-flexneri	P0A808	frr	P0A808	2	68	Ribosome-recycling factor
-P0A809	escherichia-coli-83333	P0A809	ruvA	P0A809	2	22	Holliday junction branch migration complex subunit RuvA
-P0A812	escherichia-coli-83333	P0A812	ruvB	P0A812	1	25	Holliday junction branch migration complex subunit RuvB
+P0A808	shigella-flexneri	P0A808	frr	P0A808	0	8	Ribosome-recycling factor
+P0A809	escherichia-coli-83333	P0A809	ruvA	P0A809	2	20	Holliday junction branch migration complex subunit RuvA
+P0A812	escherichia-coli-83333	P0A812	ruvB	P0A812	1	22	Holliday junction branch migration complex subunit RuvB
 P0A814	escherichia-coli-83333	P0A814	ruvC	P0A814	0	14	Crossover junction endodeoxyribonuclease RuvC
 P0A817	escherichia-coli-83333	P0A817	metK	P0A817	1	34	S-adenosylmethionine synthase
 P0A821	escherichia-coli-83333	P0A821	selA	P0A821	0	1	L-seryl-tRNA(Sec) selenium transferase
 P0A823	escherichia-coli-83333	P0A823	sfsA	P0A823	0	2	Sugar fermentation stimulation protein A
 P0A825	escherichia-coli-83333	P0A825	glyA	P0A825	0	32	Serine hydroxymethyltransferase
-P0A835	shigella-flexneri	P0A835	smpB	P0A835	1	55	SsrA-binding protein
-P0A836	escherichia-coli-83333	P0A836	sucC	P0A836	1	28	Succinate--CoA ligase
+P0A835	shigella-flexneri	P0A835	smpB	P0A835	0	5	SsrA-binding protein
+P0A836	escherichia-coli-83333	P0A836	sucC	P0A836	1	27	Succinate--CoA ligase
 P0A840	escherichia-coli-83333	P0A840	surE	P0A840	0	8	5/3-nucleotidase SurE
-P0A846	shigella-flexneri	P0A846	tatE	P0A846	0	5	Probable Sec-independent protein translocase protein TatE
-P0A847	escherichia-coli-83333	P0A847	tgt	P0A847	0	10	Queuine tRNA-ribosyltransferase
-P0A850	escherichia-coli-83333	P0A850	tig	P0A850	0	108	Trigger factor
-P0A853	escherichia-coli-83333	P0A853	tnaA	P0A853	0	3	Tryptophanase
-P0A855	escherichia-coli-83333	P0A855	tolB	P0A855	5	25	Tol-Pal system protein TolB
+P0A846	shigella-flexneri	P0A846	tatE	P0A846	0	0	Probable Sec-independent protein translocase protein TatE
+P0A847	escherichia-coli-83333	P0A847	tgt	P0A847	0	7	Queuine tRNA-ribosyltransferase
+P0A850	escherichia-coli-83333	P0A850	tig	P0A850	0	94	Trigger factor
+P0A853	escherichia-coli-83333	P0A853	tnaA	P0A853	0	2	Tryptophanase
+P0A855	escherichia-coli-83333	P0A855	tolB	P0A855	5	24	Tol-Pal system protein TolB
 P0A858	escherichia-coli-83333	P0A858	tpiA	P0A858	0	19	Triosephosphate isomerase
 P0A865	shigella-flexneri	P0A865	tpx	P0A865	0	3	Thiol peroxidase
 P0A867	escherichia-coli-83333	P0A867	talA	P0A867	0	4	Transaldolase A
-P0A872	shigella-flexneri	P0A872	talB	P0A872	1	11	Transaldolase B
-P0A873	escherichia-coli-83333	P0A873	trmD	P0A873	0	7	tRNA (guanine-N(1)-)-methyltransferase
-P0A878	shigella-flexneri	P0A878	trpA	P0A878	1	6	Tryptophan synthase alpha chain
-P0A880	shigella-flexneri	P0A880	trpB	P0A880	1	6	Tryptophan synthase beta chain
+P0A872	shigella-flexneri	P0A872	talB	P0A872	0	2	Transaldolase B
+P0A873	escherichia-coli-83333	P0A873	trmD	P0A873	0	6	tRNA (guanine-N(1)-)-methyltransferase
+P0A878	shigella-flexneri	P0A878	trpA	P0A878	1	1	Tryptophan synthase alpha chain
+P0A880	shigella-flexneri	P0A880	trpB	P0A880	1	1	Tryptophan synthase beta chain
 P0A881	escherichia-coli-83333	P0A881	trpR	P0A881	0	1	Trp operon repressor
 P0A884	escherichia-coli-83333	P0A884	thyA	P0A884	0	5	Thymidylate synthase
 P0A887	escherichia-coli-83333	P0A887	ubiE	P0A887	4	9	Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE
 P0A890	escherichia-coli-83333	P0A890	tusA	P0A890	6	18	Sulfur carrier protein TusA
 P0A894	escherichia-coli-83333	P0A894	rapZ	P0A894	0	3	RNase adapter protein RapZ
-P0A899	shigella-flexneri	P0A899	ybeY	P0A899	2	34	Endoribonuclease YbeY
-P0A8A1	shigella-flexneri	P0A8A1	yebC	P0A8A1	0	7	Probable transcriptional regulatory protein YebC
+P0A899	shigella-flexneri	P0A899	ybeY	P0A899	0	1	Endoribonuclease YbeY
+P0A8A1	shigella-flexneri	P0A8A1	yebC	P0A8A1	0	1	Probable transcriptional regulatory protein YebC
 P0A8A2	escherichia-coli-83333	P0A8A2	yeeN	P0A8A2	0	5	Probable transcriptional regulatory protein YeeN
-P0A8A7	shigella-flexneri	P0A8A7	ppsR	P0A8A7	0	3	Phosphoenolpyruvate synthase regulatory protein
-P0A8B1	shigella-flexneri	P0A8B1	rimP	P0A8B1	2	17	Ribosome maturation factor RimP
-P0A8B4	shigella-flexneri	P0A8B4	smrB	P0A8B4	2	48	Ribosome rescue factor SmrB
-P0A8B5	escherichia-coli-83333	P0A8B5	ybaB	P0A8B5	0	3	Nucleoid-associated protein YbaB
-P0A8C7	shigella-flexneri	P0A8C7	ygfB	P0A8C7	0	1	UPF0149 protein YgfB
-P0A8D0	escherichia-coli-83333	P0A8D0	nrdR	P0A8D0	0	6	Transcriptional repressor NrdR
+P0A8A7	shigella-flexneri	P0A8A7	ppsR	P0A8A7	0	0	Phosphoenolpyruvate synthase regulatory protein
+P0A8B1	shigella-flexneri	P0A8B1	rimP	P0A8B1	1	2	Ribosome maturation factor RimP
+P0A8B4	shigella-flexneri	P0A8B4	smrB	P0A8B4	0	4	Ribosome rescue factor SmrB
+P0A8B5	escherichia-coli-83333	P0A8B5	ybaB	P0A8B5	0	2	Nucleoid-associated protein YbaB
+P0A8C7	shigella-flexneri	P0A8C7	ygfB	P0A8C7	0	0	UPF0149 protein YgfB
+P0A8D0	escherichia-coli-83333	P0A8D0	nrdR	P0A8D0	0	4	Transcriptional repressor NrdR
 P0A8D3	escherichia-coli-83333	P0A8D3	yaiI	P0A8D3	0	4	UPF0178 protein YaiI
-P0A8E4	shigella-flexneri	P0A8E4	ycfP	P0A8E4	0	4	UPF0227 protein YcfP
+P0A8E4	shigella-flexneri	P0A8E4	ycfP	P0A8E4	0	2	UPF0227 protein YcfP
 P0A8E5	escherichia-coli-83333	P0A8E5	yacL	P0A8E5	1	8	UPF0231 protein YacL
-P0A8E7	escherichia-coli-83333	P0A8E7	yajQ	P0A8E7	0	3	Nucleotide-binding protein YajQ
-P0A8F7	shigella-flexneri	P0A8F7	udk	P0A8F7	0	14	Uridine kinase
-P0A8F8	escherichia-coli-83333	P0A8F8	uvrB	P0A8F8	5	34	UvrABC system protein B
+P0A8E7	escherichia-coli-83333	P0A8E7	yajQ	P0A8E7	0	1	Nucleotide-binding protein YajQ
+P0A8F7	shigella-flexneri	P0A8F7	udk	P0A8F7	0	2	Uridine kinase
+P0A8F8	escherichia-coli-83333	P0A8F8	uvrB	P0A8F8	5	33	UvrABC system protein B
 P0A8G0	escherichia-coli-83333	P0A8G0	uvrC	P0A8G0	2	25	UvrABC system protein C
-P0A8G8	shigella-flexneri	P0A8G8	SF1008	P0A8G8	0	3	NAD(P)H dehydrogenase (quinone)
+P0A8G8	shigella-flexneri	P0A8G8	SF1008	P0A8G8	0	0	NAD(P)H dehydrogenase (quinone)
 P0A8G9	escherichia-coli-83333	P0A8G9	xseB	P0A8G9	1	2	Exodeoxyribonuclease 7 small subunit
 P0A8H3	escherichia-coli-83333	P0A8H3	zupT	P0A8H3	0	2	Zinc transporter ZupT
 P0A8H6	escherichia-coli-83333	P0A8H6	yihI	P0A8H6	0	4	Der GTPase-activating protein YihI
-P0A8I0	shigella-flexneri	P0A8I0	yacG	P0A8I0	0	3	DNA gyrase inhibitor YacG
-P0A8I4	shigella-flexneri	P0A8I4	yaaA	P0A8I4	0	1	UPF0246 protein YaaA
-P0A8I5	escherichia-coli-83333	P0A8I5	trmB	P0A8I5	0	10	tRNA (guanine-N(7)-)-methyltransferase
+P0A8I0	shigella-flexneri	P0A8I0	yacG	P0A8I0	0	0	DNA gyrase inhibitor YacG
+P0A8I4	shigella-flexneri	P0A8I4	yaaA	P0A8I4	0	0	UPF0246 protein YaaA
+P0A8I5	escherichia-coli-83333	P0A8I5	trmB	P0A8I5	0	9	tRNA (guanine-N(7)-)-methyltransferase
 P0A8J2	escherichia-coli-83333	P0A8J2	dnaT	P0A8J2	2	19	Replication restart protein DnaT
-P0A8J7	shigella-flexneri	P0A8J7	ybeD	P0A8J7	0	3	UPF0250 protein YbeD
+P0A8J7	shigella-flexneri	P0A8J7	ybeD	P0A8J7	0	1	UPF0250 protein YbeD
 P0A8J8	escherichia-coli-83333	P0A8J8	rhlB	P0A8J8	3	87	ATP-dependent RNA helicase RhlB
 P0A8K1	escherichia-coli-83333	P0A8K1	psd	P0A8K1	0	1	Phosphatidylserine decarboxylase proenzyme
-P0A8L1	escherichia-coli-83333	P0A8L1	serS	P0A8L1	0	16	Serine--tRNA ligase
+P0A8L1	escherichia-coli-83333	P0A8L1	serS	P0A8L1	0	14	Serine--tRNA ligase
 P0A8L7	escherichia-coli-83333	P0A8L7	yciU	P0A8L7	0	2	Putative double-stranded DNA mimic protein YciU
-P0A8M2	shigella-flexneri	P0A8M2	asnS	P0A8M2	2	15	Asparagine--tRNA ligase
-P0A8M5	shigella-flexneri	P0A8M5	thrS	P0A8M5	1	67	Threonine--tRNA ligase
-P0A8M9	shigella-flexneri	P0A8M9	tmaR	P0A8M9	0	2	Pole-localizer protein TmaR
-P0A8N2	shigella-flexneri	P0A8N2	matP	P0A8N2	0	7	Macrodomain Ter protein
+P0A8M2	shigella-flexneri	P0A8M2	asnS	P0A8M2	0	1	Asparagine--tRNA ligase
+P0A8M5	shigella-flexneri	P0A8M5	thrS	P0A8M5	0	9	Threonine--tRNA ligase
+P0A8M9	shigella-flexneri	P0A8M9	tmaR	P0A8M9	0	1	Pole-localizer protein TmaR
+P0A8N2	shigella-flexneri	P0A8N2	matP	P0A8N2	0	0	Macrodomain Ter protein
 P0A8N3	escherichia-coli-83333	P0A8N3	lysS	P0A8N3	1	16	Lysine--tRNA ligase
 P0A8N5	escherichia-coli-83333	P0A8N5	lysU	P0A8N5	1	19	Lysine--tRNA ligase, heat inducible
-P0A8P2	shigella-flexneri	P0A8P2	aat	P0A8P2	0	2	Leucyl/phenylalanyl-tRNA--protein transferase
+P0A8P2	shigella-flexneri	P0A8P2	aat	P0A8P2	0	1	Leucyl/phenylalanyl-tRNA--protein transferase
 P0A8P6	escherichia-coli-83333	P0A8P6	xerC	P0A8P6	1	19	Tyrosine recombinase XerC
 P0A8P8	escherichia-coli-83333	P0A8P8	xerD	P0A8P8	1	14	Tyrosine recombinase XerD
 P0A8Q0	escherichia-coli-83333	P0A8Q0	frdC	P0A8Q0	2	3	Fumarate reductase subunit C
-P0A8Q5	shigella-flexneri	P0A8Q5	frdD	P0A8Q5	1	2	Fumarate reductase subunit D
-P0A8Q9	shigella-flexneri	P0A8Q9	clpS	P0A8Q9	1	27	ATP-dependent Clp protease adapter protein ClpS
-P0A8R0	escherichia-coli-83333	P0A8R0	rraA	P0A8R0	0	3	Regulator of ribonuclease activity A
+P0A8Q5	shigella-flexneri	P0A8Q5	frdD	P0A8Q5	0	0	Fumarate reductase subunit D
+P0A8Q9	shigella-flexneri	P0A8Q9	clpS	P0A8Q9	0	7	ATP-dependent Clp protease adapter protein ClpS
+P0A8R0	escherichia-coli-83333	P0A8R0	rraA	P0A8R0	0	2	Regulator of ribonuclease activity A
 P0A8R7	escherichia-coli-83333	P0A8R7	ycjF	P0A8R7	0	1	UPF0283 membrane protein YcjF
 P0A8S1	escherichia-coli-83333	P0A8S1	argP	P0A8S1	0	2	HTH-type transcriptional regulator ArgP
 P0A8S9	escherichia-coli-83333	P0A8S9	flhD	P0A8S9	1	9	Flagellar transcriptional regulator FlhD
@@ -540,276 +520,276 @@ P0A8T1	escherichia-coli-83333	P0A8T1	prmA	P0A8T1	1	5	Ribosomal protein L11 methy
 P0A8T5	escherichia-coli-83333	P0A8T5	fliE	P0A8T5	0	20	Flagellar hook-basal body complex protein FliE
 P0A8T7	escherichia-coli-83333	P0A8T7	rpoC	P0A8T7	10	109	DNA-directed RNA polymerase subunit beta
 P0A8U6	escherichia-coli-83333	P0A8U6	metJ	P0A8U6	1	2	Met repressor
-P0A8V1	shigella-flexneri	P0A8V1	rbn	P0A8V1	0	1	Ribonuclease BN
+P0A8V1	shigella-flexneri	P0A8V1	rbn	P0A8V1	0	0	Ribonuclease BN
 P0A8V2	escherichia-coli-83333	P0A8V2	rpoB	P0A8V2	7	141	DNA-directed RNA polymerase subunit beta
 P0A8W5	escherichia-coli-83333	P0A8W5	yqgE	P0A8W5	0	3	UPF0301 protein YqgE
 P0A8X0	escherichia-coli-83333	P0A8X0	darP	P0A8X0	3	30	Dual-action ribosomal maturation protein DarP
 P0A8X2	escherichia-coli-83333	P0A8X2	yceI	P0A8X2	0	2	Protein YceI
-P0A8X7	shigella-flexneri	P0A8X7	yccT	P0A8X7	0	3	UPF0319 protein YccT
+P0A8X7	shigella-flexneri	P0A8X7	yccT	P0A8X7	0	2	UPF0319 protein YccT
 P0A8Y1	escherichia-coli-83333	P0A8Y1	yjjG	P0A8Y1	0	7	Pyrimidine 5'-nucleotidase YjjG
 P0A8Y3	escherichia-coli-83333	P0A8Y3	yihX	P0A8Y3	0	2	Alpha-D-glucose 1-phosphate phosphatase YihX
 P0A8Y5	escherichia-coli-83333	P0A8Y5	yidA	P0A8Y5	0	1	Sugar phosphatase YidA
 P0A8Y8	escherichia-coli-83333	P0A8Y8	entH	P0A8Y8	0	1	Proofreading thioesterase EntH
 P0A8Z0	escherichia-coli-83333	P0A8Z0	yciA	P0A8Z0	0	1	Acyl-CoA thioester hydrolase YciA
-P0A8Z3	escherichia-coli-83333	P0A8Z3	ybgC	P0A8Z3	1	9	Acyl-CoA thioester hydrolase YbgC
+P0A8Z3	escherichia-coli-83333	P0A8Z3	ybgC	P0A8Z3	0	8	Acyl-CoA thioester hydrolase YbgC
 P0A8Z7	escherichia-coli-83333	P0A8Z7	yqiA	P0A8Z7	0	1	Esterase YqiA
 P0A901	escherichia-coli-83333	P0A901	blc	P0A901	0	1	Outer membrane lipoprotein Blc
-P0A904	shigella-flexneri	P0A904	bamC	P0A904	0	4	Outer membrane protein assembly factor BamC
-P0A907	shigella-flexneri	P0A907	slyB	P0A907	0	3	Outer membrane lipoprotein SlyB
-P0A910	escherichia-coli-83333	P0A910	ompA	P0A910	7	102	Outer membrane protein A
-P0A912	escherichia-coli-83333	P0A912	pal	P0A912	2	16	Peptidoglycan-associated lipoprotein
-P0A916	shigella-flexneri	P0A916	ompW	P0A916	0	11	Outer membrane protein W
-P0A920	shigella-flexneri	P0A920	ompX	P0A920	0	9	Outer membrane protein X
+P0A904	shigella-flexneri	P0A904	bamC	P0A904	0	1	Outer membrane protein assembly factor BamC
+P0A907	shigella-flexneri	P0A907	slyB	P0A907	0	2	Outer membrane lipoprotein SlyB
+P0A910	escherichia-coli-83333	P0A910	ompA	P0A910	7	94	Outer membrane protein A
+P0A912	escherichia-coli-83333	P0A912	pal	P0A912	1	14	Peptidoglycan-associated lipoprotein
+P0A916	shigella-flexneri	P0A916	ompW	P0A916	0	4	Outer membrane protein W
+P0A920	shigella-flexneri	P0A920	ompX	P0A920	0	3	Outer membrane protein X
 P0A921	escherichia-coli-83333	P0A921	pldA	P0A921	0	4	Phospholipase A1
-P0A926	shigella-flexneri	P0A926	pgpB	P0A926	0	12	Phosphatidylglycerophosphatase B
-P0A927	escherichia-coli-83333	P0A927	tsx	P0A927	5	18	Nucleoside-specific channel-forming protein Tsx
+P0A926	shigella-flexneri	P0A926	pgpB	P0A926	0	0	Phosphatidylglycerophosphatase B
+P0A927	escherichia-coli-83333	P0A927	tsx	P0A927	5	17	Nucleoside-specific channel-forming protein Tsx
 P0A930	escherichia-coli-83333	P0A930	wza	P0A930	0	17	Putative polysaccharide export protein Wza
-P0A934	shigella-flexneri	P0A934	gfcE	P0A934	1	11	Putative polysaccharide export protein GfcE
+P0A934	shigella-flexneri	P0A934	gfcE	P0A934	0	0	Putative polysaccharide export protein GfcE
 P0A935	escherichia-coli-83333	P0A935	mltA	P0A935	0	1	Membrane-bound lytic murein transglycosylase A
-P0A939	shigella-flexneri	P0A939	bamE	P0A939	2	11	Outer membrane protein assembly factor BamE
-P0A940	escherichia-coli-83333	P0A940	bamA	P0A940	2	25	Outer membrane protein assembly factor BamA
+P0A939	shigella-flexneri	P0A939	bamE	P0A939	1	4	Outer membrane protein assembly factor BamE
+P0A940	escherichia-coli-83333	P0A940	bamA	P0A940	1	20	Outer membrane protein assembly factor BamA
 P0A944	escherichia-coli-83333	P0A944	rimI	P0A944	0	1	KAT
 P0A948	escherichia-coli-83333	P0A948	rimJ	P0A948	0	1	Acetylating enzyme for N-terminal of ribosomal protein S5
-P0A951	escherichia-coli-83333	P0A951	speG	P0A951	0	1	Spermidine N(1)-acetyltransferase
+P0A951	escherichia-coli-83333	P0A951	speG	P0A951	0	0	Spermidine N(1)-acetyltransferase
 P0A953	escherichia-coli-83333	P0A953	fabB	P0A953	0	4	3-oxoacyl-
-P0A958	shigella-flexneri	P0A958	SF1860	P0A958	0	2	KHG/KDPG aldolase
-P0A961	shigella-flexneri	P0A961	alaA	P0A961	1	5	Glutamate-pyruvate aminotransferase AlaA
+P0A958	shigella-flexneri	P0A958	SF1860	P0A958	0	0	KHG/KDPG aldolase
+P0A961	shigella-flexneri	P0A961	alaA	P0A961	0	0	Glutamate-pyruvate aminotransferase AlaA
 P0A962	escherichia-coli-83333	P0A962	ansA	P0A962	1	4	L-asparaginase 1
-P0A964	escherichia-coli-83333	P0A964	cheW	P0A964	8	24	Chemotaxis protein CheW
-P0A971	shigella-flexneri	P0A971	cspD	P0A971	0	9	Cold shock-like protein CspD
-P0A975	shigella-flexneri	P0A975	cspE	P0A975	2	11	Cold shock-like protein CspE
-P0A981	shigella-flexneri	P0A981	cspG	P0A981	1	4	Cold shock-like protein CspG
+P0A964	escherichia-coli-83333	P0A964	cheW	P0A964	8	22	Chemotaxis protein CheW
+P0A971	shigella-flexneri	P0A971	cspD	P0A971	0	3	Cold shock-like protein CspD
+P0A975	shigella-flexneri	P0A975	cspE	P0A975	1	2	Cold shock-like protein CspE
+P0A981	shigella-flexneri	P0A981	cspG	P0A981	0	1	Cold shock-like protein CspG
 P0A988	escherichia-coli-83333	P0A988	dnaN	P0A988	10	46	Beta sliding clamp
 P0A991	escherichia-coli-83333	P0A991	fbaB	P0A991	0	3	Fructose-bisphosphate aldolase class 1
 P0A993	escherichia-coli-83333	P0A993	fbp	P0A993	0	8	Fructose-1,6-bisphosphatase class 1
 P0A996	escherichia-coli-83333	P0A996	glpC	P0A996	2	8	Anaerobic glycerol-3-phosphate dehydrogenase subunit C
-P0A9A1	shigella-flexneri	P0A9A1	ftnA	P0A9A1	0	2	Bacterial non-heme ferritin
-P0A9A5	shigella-flexneri	P0A9A5	ftnB	P0A9A5	0	3	Bacterial non-heme ferritin-like protein
-P0A9A6	escherichia-coli-83333	P0A9A6	ftsZ	P0A9A6	4	52	Cell division protein FtsZ
-P0A9A9	escherichia-coli-83333	P0A9A9	fur	P0A9A9	0	10	Ferric uptake regulation protein
-P0A9B2	escherichia-coli-83333	P0A9B2	gapA	P0A9B2	0	54	Glyceraldehyde-3-phosphate dehydrogenase A
-P0A9B6	escherichia-coli-83333	P0A9B6	epd	P0A9B6	0	35	D-erythrose-4-phosphate dehydrogenase
-P0A9C2	shigella-flexneri	P0A9C2	glpA	P0A9C2	2	4	Anaerobic glycerol-3-phosphate dehydrogenase subunit A
-P0A9C4	shigella-flexneri	P0A9C4	galM	P0A9C4	0	1	Aldose 1-epimerase
+P0A9A1	shigella-flexneri	P0A9A1	ftnA	P0A9A1	0	0	Bacterial non-heme ferritin
+P0A9A5	shigella-flexneri	P0A9A5	ftnB	P0A9A5	0	0	Bacterial non-heme ferritin-like protein
+P0A9A6	escherichia-coli-83333	P0A9A6	ftsZ	P0A9A6	4	46	Cell division protein FtsZ
+P0A9A9	escherichia-coli-83333	P0A9A9	fur	P0A9A9	0	9	Ferric uptake regulation protein
+P0A9B2	escherichia-coli-83333	P0A9B2	gapA	P0A9B2	0	48	Glyceraldehyde-3-phosphate dehydrogenase A
+P0A9B6	escherichia-coli-83333	P0A9B6	epd	P0A9B6	0	33	D-erythrose-4-phosphate dehydrogenase
+P0A9C2	shigella-flexneri	P0A9C2	glpA	P0A9C2	0	0	Anaerobic glycerol-3-phosphate dehydrogenase subunit A
+P0A9C4	shigella-flexneri	P0A9C4	galM	P0A9C4	0	0	Aldose 1-epimerase
 P0A9C5	escherichia-coli-83333	P0A9C5	glnA	P0A9C5	0	19	Glutamine synthetase
 P0A9C9	escherichia-coli-83333	P0A9C9	glpX	P0A9C9	1	11	Fructose-1,6-bisphosphatase 1 class 2
 P0A9D2	escherichia-coli-83333	P0A9D2	gstA	P0A9D2	1	14	Glutathione S-transferase GstA
 P0A9D4	escherichia-coli-83333	P0A9D4	cysE	P0A9D4	0	1	Serine acetyltransferase
-P0A9D8	escherichia-coli-83333	P0A9D8	dapD	P0A9D8	0	5	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase
+P0A9D8	escherichia-coli-83333	P0A9D8	dapD	P0A9D8	0	4	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase
 P0A9E0	escherichia-coli-83333	P0A9E0	araC	P0A9E0	0	8	Arabinose operon regulatory protein
 P0A9E2	escherichia-coli-83333	P0A9E2	soxS	P0A9E2	0	6	Regulatory protein SoxS
-P0A9E5	escherichia-coli-83333	P0A9E5	fnr	P0A9E5	2	14	Fumarate and nitrate reduction regulatory protein
-P0A9E9	escherichia-coli-83333	P0A9E9	yeiL	P0A9E9	1	10	Regulatory protein YeiL
+P0A9E5	escherichia-coli-83333	P0A9E5	fnr	P0A9E5	1	13	Fumarate and nitrate reduction regulatory protein
+P0A9E9	escherichia-coli-83333	P0A9E9	yeiL	P0A9E9	1	9	Regulatory protein YeiL
 P0A9F1	escherichia-coli-83333	P0A9F1	mntR	P0A9F1	1	9	Transcriptional regulator MntR
-P0A9F3	escherichia-coli-83333	P0A9F3	cysB	P0A9F3	0	3	HTH-type transcriptional regulator CysB
-P0A9G3	shigella-flexneri	P0A9G3	nhaR	P0A9G3	2	4	Transcriptional activator protein NhaR
-P0A9G4	escherichia-coli-83333	P0A9G4	cueR	P0A9G4	0	18	HTH-type transcriptional regulator CueR
+P0A9F3	escherichia-coli-83333	P0A9F3	cysB	P0A9F3	0	2	HTH-type transcriptional regulator CysB
+P0A9G3	shigella-flexneri	P0A9G3	nhaR	P0A9G3	0	1	Transcriptional activator protein NhaR
+P0A9G4	escherichia-coli-83333	P0A9G4	cueR	P0A9G4	0	17	HTH-type transcriptional regulator CueR
 P0A9G6	escherichia-coli-83333	P0A9G6	aceA	P0A9G6	0	2	Isocitrate lyase
-P0A9H0	shigella-flexneri	P0A9H0	modE	P0A9H0	0	3	Transcriptional regulator ModE
+P0A9H0	shigella-flexneri	P0A9H0	modE	P0A9H0	0	0	Transcriptional regulator ModE
 P0A9H3	escherichia-coli-83333	P0A9H3	cadA	P0A9H3	1	3	Inducible lysine decarboxylase
 P0A9H5	escherichia-coli-83333	P0A9H5	btuR	P0A9H5	0	2	Corrinoid adenosyltransferase
 P0A9H7	escherichia-coli-83333	P0A9H7	cfa	P0A9H7	0	4	Cyclopropane-fatty-acyl-phospholipid synthase
 P0A9H9	escherichia-coli-83333	P0A9H9	cheZ	P0A9H9	1	10	Protein phosphatase CheZ
 P0A9I1	escherichia-coli-83333	P0A9I1	citE	P0A9I1	1	2	Citrate lyase subunit beta
-P0A9I4	shigella-flexneri	P0A9I4	gcvR	P0A9I4	0	1	Glycine cleavage system transcriptional repressor
-P0A9I7	shigella-flexneri	P0A9I7	napD	P0A9I7	0	1	Chaperone NapD
+P0A9I4	shigella-flexneri	P0A9I4	gcvR	P0A9I4	0	0	Glycine cleavage system transcriptional repressor
+P0A9I7	shigella-flexneri	P0A9I7	napD	P0A9I7	0	0	Chaperone NapD
 P0A9I8	escherichia-coli-83333	P0A9I8	nirD	P0A9I8	1	4	Nitrite reductase (NADH) small subunit
-P0A9J0	escherichia-coli-83333	P0A9J0	rng	P0A9J0	0	12	Ribonuclease G
-P0A9J5	shigella-flexneri	P0A9J5	panE	P0A9J5	0	1	2-dehydropantoate 2-reductase
+P0A9J0	escherichia-coli-83333	P0A9J0	rng	P0A9J0	0	10	Ribonuclease G
+P0A9J5	shigella-flexneri	P0A9J5	panE	P0A9J5	0	0	2-dehydropantoate 2-reductase
 P0A9J6	escherichia-coli-83333	P0A9J6	rbsK	P0A9J6	0	4	Ribokinase
-P0A9K0	shigella-flexneri	P0A9K0	pheA	P0A9K0	1	18	Bifunctional chorismate mutase/prephenate dehydratase
+P0A9K0	shigella-flexneri	P0A9K0	pheA	P0A9K0	0	4	Bifunctional chorismate mutase/prephenate dehydratase
 P0A9K1	escherichia-coli-83333	P0A9K1	phoH	P0A9K1	0	4	Protein PhoH
-P0A9K6	shigella-flexneri	P0A9K6	ybeZ	P0A9K6	0	10	PhoH-like protein
+P0A9K6	shigella-flexneri	P0A9K6	ybeZ	P0A9K6	0	2	PhoH-like protein
 P0A9K7	escherichia-coli-83333	P0A9K7	phoU	P0A9K7	1	4	Phosphate-specific transport system accessory protein PhoU
-P0A9K9	escherichia-coli-83333	P0A9K9	slyD	P0A9K9	1	8	FKBP-type peptidyl-prolyl cis-trans isomerase SlyD
-P0A9L4	shigella-flexneri	P0A9L4	fklB	P0A9L4	0	5	FKBP-type 22 kDa peptidyl-prolyl cis-trans isomerase
-P0A9L5	escherichia-coli-83333	P0A9L5	ppiC	P0A9L5	0	10	Peptidyl-prolyl cis-trans isomerase C
+P0A9K9	escherichia-coli-83333	P0A9K9	slyD	P0A9K9	0	7	FKBP-type peptidyl-prolyl cis-trans isomerase SlyD
+P0A9L4	shigella-flexneri	P0A9L4	fklB	P0A9L4	0	4	FKBP-type 22 kDa peptidyl-prolyl cis-trans isomerase
+P0A9L5	escherichia-coli-83333	P0A9L5	ppiC	P0A9L5	0	9	Peptidyl-prolyl cis-trans isomerase C
 P0A9L8	escherichia-coli-83333	P0A9L8	proC	P0A9L8	0	9	Pyrroline-5-carboxylate reductase
-P0A9M0	escherichia-coli-83333	P0A9M0	lon	P0A9M0	0	16	Lon protease
-P0A9M4	shigella-flexneri	P0A9M4	hpt	P0A9M4	0	17	Hypoxanthine phosphoribosyltransferase
+P0A9M0	escherichia-coli-83333	P0A9M0	lon	P0A9M0	0	14	Lon protease
+P0A9M4	shigella-flexneri	P0A9M4	hpt	P0A9M4	0	1	Hypoxanthine phosphoribosyltransferase
 P0A9M5	escherichia-coli-83333	P0A9M5	gpt	P0A9M5	0	2	Xanthine-guanine phosphoribosyltransferase
-P0A9M9	shigella-flexneri	P0A9M9	pta	P0A9M9	1	4	Phosphate acetyltransferase
+P0A9M9	shigella-flexneri	P0A9M9	pta	P0A9M9	0	0	Phosphate acetyltransferase
 P0A9N0	escherichia-coli-83333	P0A9N0	ptsO	P0A9N0	1	13	Phosphocarrier protein NPr
 P0A9N4	escherichia-coli-83333	P0A9N4	pflA	P0A9N4	1	5	Pyruvate formate-lyase 1-activating enzyme
 P0A9N8	escherichia-coli-83333	P0A9N8	nrdG	P0A9N8	1	2	Anaerobic ribonucleoside-triphosphate reductase-activating protein
-P0A9P0	escherichia-coli-83333	P0A9P0	lpdA	P0A9P0	2	28	Dihydrolipoyl dehydrogenase
-P0A9P4	escherichia-coli-83333	P0A9P4	trxB	P0A9P4	0	17	Thioredoxin reductase
-P0A9P8	shigella-flexneri	P0A9P8	deaD	P0A9P8	1	73	ATP-dependent RNA helicase DeaD
+P0A9P0	escherichia-coli-83333	P0A9P0	lpdA	P0A9P0	2	24	Dihydrolipoyl dehydrogenase
+P0A9P4	escherichia-coli-83333	P0A9P4	trxB	P0A9P4	0	14	Thioredoxin reductase
+P0A9P8	shigella-flexneri	P0A9P8	deaD	P0A9P8	0	13	ATP-dependent RNA helicase DeaD
 P0A9P9	escherichia-coli-83333	P0A9P9	idnO	P0A9P9	0	29	5-keto-D-gluconate 5-reductase
 P0A9Q1	escherichia-coli-83333	P0A9Q1	arcA	P0A9Q1	2	23	Aerobic respiration control protein ArcA
 P0A9Q5	escherichia-coli-83333	P0A9Q5	accD	P0A9Q5	1	12	Acetyl-coenzyme A carboxylase carboxyl transferase subunit beta
 P0A9Q7	escherichia-coli-83333	P0A9Q7	adhE	P0A9Q7	2	39	Bifunctional aldehyde-alcohol dehydrogenase AdhE
 P0A9Q9	escherichia-coli-83333	P0A9Q9	asd	P0A9Q9	0	2	Aspartate-semialdehyde dehydrogenase
-P0A9R6	shigella-flexneri	P0A9R6	fdx	P0A9R6	2	38	2Fe-2S ferredoxin
+P0A9R6	shigella-flexneri	P0A9R6	fdx	P0A9R6	1	9	2Fe-2S ferredoxin
 P0A9R7	escherichia-coli-83333	P0A9R7	ftsE	P0A9R7	0	10	Cell division ATP-binding protein FtsE
 P0A9S1	escherichia-coli-83333	P0A9S1	fucO	P0A9S1	0	2	Lactaldehyde reductase
 P0A9S3	escherichia-coli-83333	P0A9S3	gatD	P0A9S3	0	3	Galactitol 1-phosphate 5-dehydrogenase
 P0A9S5	escherichia-coli-83333	P0A9S5	gldA	P0A9S5	0	3	Glycerol dehydrogenase
-P0A9S7	escherichia-coli-83333	P0A9S7	livG	P0A9S7	36	174	High-affinity branched-chain amino acid transport ATP-binding protein LivG
-P0A9T3	shigella-flexneri	P0A9T3	serA	P0A9T3	0	17	D-3-phosphoglycerate dehydrogenase
-P0A9T5	shigella-flexneri	P0A9T5	tas	P0A9T5	0	7	Protein tas
-P0A9U2	shigella-flexneri	P0A9U2	ybhF	P0A9U2	18	171	Probable multidrug ABC transporter ATP-binding protein YbhF
-P0A9U3	escherichia-coli-83333	P0A9U3	ybiT	P0A9U3	1	57	Probable ATP-binding protein YbiT
-P0A9U7	shigella-flexneri	P0A9U7	puuR	P0A9U7	0	7	HTH-type transcriptional regulator PuuR
-P0A9U8	escherichia-coli-83333	P0A9U8	ydiO	P0A9U8	2	28	Probable acyl-CoA dehydrogenase YdiO
-P0A9V1	escherichia-coli-83333	P0A9V1	lptB	P0A9V1	73	180	Lipopolysaccharide export system ATP-binding protein LptB
+P0A9S7	escherichia-coli-83333	P0A9S7	livG	P0A9S7	35	173	High-affinity branched-chain amino acid transport ATP-binding protein LivG
+P0A9T3	shigella-flexneri	P0A9T3	serA	P0A9T3	0	1	D-3-phosphoglycerate dehydrogenase
+P0A9T5	shigella-flexneri	P0A9T5	tas	P0A9T5	0	2	Protein tas
+P0A9U2	shigella-flexneri	P0A9U2	ybhF	P0A9U2	7	19	Probable multidrug ABC transporter ATP-binding protein YbhF
+P0A9U3	escherichia-coli-83333	P0A9U3	ybiT	P0A9U3	1	51	Probable ATP-binding protein YbiT
+P0A9U7	shigella-flexneri	P0A9U7	puuR	P0A9U7	0	0	HTH-type transcriptional regulator PuuR
+P0A9U8	escherichia-coli-83333	P0A9U8	ydiO	P0A9U8	2	26	Probable acyl-CoA dehydrogenase YdiO
+P0A9V1	escherichia-coli-83333	P0A9V1	lptB	P0A9V1	72	177	Lipopolysaccharide export system ATP-binding protein LptB
 P0A9V5	escherichia-coli-83333	P0A9V5	yiaG	P0A9V5	0	1	Uncharacterized HTH-type transcriptional regulator YiaG
 P0A9W0	escherichia-coli-83333	P0A9W0	ulaR	P0A9W0	0	2	HTH-type transcriptional regulator UlaR
 P0A9W3	escherichia-coli-83333	P0A9W3	ettA	P0A9W3	1	52	Energy-dependent translational throttle protein EttA
 P0A9W6	escherichia-coli-83333	P0A9W6	ibaG	P0A9W6	1	4	Acid stress protein IbaG
 P0A9W9	escherichia-coli-83333	P0A9W9	yrdA	P0A9W9	0	1	Protein YrdA
-P0A9X1	escherichia-coli-83333	P0A9X1	znuC	P0A9X1	24	177	Zinc import ATP-binding protein ZnuC
-P0A9X4	escherichia-coli-83333	P0A9X4	mreB	P0A9X4	1	46	Cell shape-determining protein MreB
-P0A9X8	shigella-flexneri	P0A9X8	mreB	P0A9X8	0	3	Cell shape-determining protein MreB
-P0A9Y4	shigella-flexneri	P0A9Y4	cspA	P0A9Y4	3	24	Cold shock protein CspA
-P0A9Y9	salmonella-typhimurium	P0A9Y9	cspC	P0A9Y9	7	66	Cold shock-like protein CspC
-P0A9Z1	escherichia-coli-83333	P0A9Z1	glnB	P0A9Z1	1	17	Nitrogen regulatory protein P-II 1
+P0A9X1	escherichia-coli-83333	P0A9X1	znuC	P0A9X1	24	173	Zinc import ATP-binding protein ZnuC
+P0A9X4	escherichia-coli-83333	P0A9X4	mreB	P0A9X4	1	44	Cell shape-determining protein MreB
+P0A9X8	shigella-flexneri	P0A9X8	mreB	P0A9X8	0	0	Cell shape-determining protein MreB
+P0A9Y4	shigella-flexneri	P0A9Y4	cspA	P0A9Y4	1	8	Cold shock protein CspA
+P0A9Y9	salmonella-typhimurium	P0A9Y9	cspC	P0A9Y9	7	55	Cold shock-like protein CspC
+P0A9Z1	escherichia-coli-83333	P0A9Z1	glnB	P0A9Z1	1	16	Nitrogen regulatory protein P-II 1
 P0A9Z4	salmonella-typhimurium	P0A9Z4	glnB	P0A9Z4	2	17	Nitrogen regulatory protein P-II 1
 P0AA02	salmonella-typhimurium	P0AA02	nusG	P0AA02	5	64	Transcription termination/antitermination protein NusG
-P0AA04	escherichia-coli-83333	P0AA04	ptsH	P0AA04	5	26	Phosphocarrier protein HPr
+P0AA04	escherichia-coli-83333	P0AA04	ptsH	P0AA04	4	25	Phosphocarrier protein HPr
 P0AA07	salmonella-typhimurium	P0AA07	ptsH	P0AA07	12	53	Phosphocarrier protein HPr
-P0AA10	escherichia-coli-83333	P0AA10	rplM	P0AA10	4	174	Large ribosomal subunit protein uL13
-P0AA13	salmonella-typhimurium	P0AA13	rplM	P0AA13	3	214	Large ribosomal subunit protein uL13
-P0AA16	escherichia-coli-83333	P0AA16	ompR	P0AA16	5	28	DNA-binding dual transcriptional regulator OmpR
-P0AA21	shigella-flexneri	P0AA21	ompR	P0AA21	3	7	DNA-binding dual transcriptional regulator OmpR
-P0AA30	shigella-flexneri	P0AA30	trxA	P0AA30	3	39	Thioredoxin 1
-P0AA36	shigella-flexneri	P0AA36	yedF	P0AA36	0	6	Putative sulfur carrier protein YedF
-P0AA38	shigella-flexneri	P0AA38	rluA	P0AA38	2	28	Dual-specificity RNA pseudouridine synthase RluA
-P0AA40	shigella-flexneri	P0AA40	rluC	P0AA40	1	35	Ribosomal large subunit pseudouridine synthase C
-P0AA42	shigella-flexneri	P0AA42	truC	P0AA42	0	16	tRNA pseudouridine synthase C
+P0AA10	escherichia-coli-83333	P0AA10	rplM	P0AA10	4	169	Large ribosomal subunit protein uL13
+P0AA13	salmonella-typhimurium	P0AA13	rplM	P0AA13	3	209	Large ribosomal subunit protein uL13
+P0AA16	escherichia-coli-83333	P0AA16	ompR	P0AA16	5	26	DNA-binding dual transcriptional regulator OmpR
+P0AA21	shigella-flexneri	P0AA21	ompR	P0AA21	0	0	DNA-binding dual transcriptional regulator OmpR
+P0AA30	shigella-flexneri	P0AA30	trxA	P0AA30	0	16	Thioredoxin 1
+P0AA36	shigella-flexneri	P0AA36	yedF	P0AA36	0	1	Putative sulfur carrier protein YedF
+P0AA38	shigella-flexneri	P0AA38	rluA	P0AA38	0	3	Dual-specificity RNA pseudouridine synthase RluA
+P0AA40	shigella-flexneri	P0AA40	rluC	P0AA40	0	4	Ribosomal large subunit pseudouridine synthase C
+P0AA42	shigella-flexneri	P0AA42	truC	P0AA42	0	2	tRNA pseudouridine synthase C
 P0AA43	escherichia-coli-83333	P0AA43	rsuA	P0AA43	0	3	Ribosomal small subunit pseudouridine synthase A
-P0AA47	escherichia-coli-83333	P0AA47	plaP	P0AA47	0	8	Low-affinity putrescine importer PlaP
+P0AA47	escherichia-coli-83333	P0AA47	plaP	P0AA47	0	7	Low-affinity putrescine importer PlaP
 P0AA53	escherichia-coli-83333	P0AA53	qmcA	P0AA53	1	8	Protein QmcA
 P0AA57	escherichia-coli-83333	P0AA57	yobA	P0AA57	0	1	Protein YobA
 P0AA60	escherichia-coli-83333	P0AA60	yghB	P0AA60	0	1	Inner membrane protein YghB
 P0AA63	escherichia-coli-83333	P0AA63	yqjA	P0AA63	0	1	Inner membrane protein YqjA
 P0AA84	escherichia-coli-83333	P0AA84	clsB	P0AA84	0	3	Cardiolipin synthase B
-P0AA86	escherichia-coli-83333	P0AA86	dsbE	P0AA86	4	108	Thiol:disulfide interchange protein DsbE
+P0AA86	escherichia-coli-83333	P0AA86	dsbE	P0AA86	4	101	Thiol:disulfide interchange protein DsbE
 P0AA89	escherichia-coli-83333	P0AA89	dosC	P0AA89	0	4	Diguanylate cyclase DosC
 P0AA91	escherichia-coli-83333	P0AA91	yeaY	P0AA91	0	5	Uncharacterized lipoprotein YeaY
-P0AA93	escherichia-coli-83333	P0AA93	ypdA	P0AA93	1	1	Sensor histidine kinase YpdA
+P0AA93	escherichia-coli-83333	P0AA93	ypdA	P0AA93	0	0	Sensor histidine kinase YpdA
 P0AA95	escherichia-coli-83333	P0AA95	yacC	P0AA95	0	1	Uncharacterized protein YacC
 P0AA99	escherichia-coli-83333	P0AA99	yafK	P0AA99	0	1	Putative L,D-transpeptidase YafK
-P0AAB2	escherichia-coli-83333	P0AAB2	wzb	P0AAB2	1	21	Low molecular weight protein-tyrosine-phosphatase Wzb
+P0AAB2	escherichia-coli-83333	P0AAB2	wzb	P0AAB2	1	18	Low molecular weight protein-tyrosine-phosphatase Wzb
 P0AAB4	escherichia-coli-83333	P0AAB4	ubiD	P0AAB4	0	2	3-octaprenyl-4-hydroxybenzoate carboxy-lyase
 P0AAB6	escherichia-coli-83333	P0AAB6	galF	P0AAB6	0	1	UTP--glucose-1-phosphate uridylyltransferase
 P0AAB8	escherichia-coli-83333	P0AAB8	uspD	P0AAB8	1	3	Universal stress protein D
-P0AAD1	shigella-flexneri	P0AAD1	iscA	P0AAD1	0	3	Iron-binding protein IscA
+P0AAD1	shigella-flexneri	P0AAD1	iscA	P0AAD1	0	2	Iron-binding protein IscA
 P0AAD2	escherichia-coli-83333	P0AAD2	mtr	P0AAD2	0	3	Tryptophan-specific transport protein
-P0AAD5	shigella-flexneri	P0AAD5	tyrP	P0AAD5	0	4	Tyrosine-specific transport system
+P0AAD5	shigella-flexneri	P0AAD5	tyrP	P0AAD5	0	1	Tyrosine-specific transport system
 P0AAD6	escherichia-coli-83333	P0AAD6	sdaC	P0AAD6	0	3	Serine transporter SdaC
 P0AAD8	escherichia-coli-83333	P0AAD8	tdcC	P0AAD8	0	3	Threonine/serine transporter TdcC
-P0AAE2	escherichia-coli-83333	P0AAE2	proY	P0AAE2	0	1	Proline-specific permease ProY
-P0AAE7	shigella-flexneri	P0AAE7	ydgI	P0AAE7	0	8	Putative arginine/ornithine antiporter
+P0AAE2	escherichia-coli-83333	P0AAE2	proY	P0AAE2	0	0	Proline-specific permease ProY
+P0AAE7	shigella-flexneri	P0AAE7	ydgI	P0AAE7	0	2	Putative arginine/ornithine antiporter
 P0AAE8	escherichia-coli-83333	P0AAE8	cadB	P0AAE8	0	8	Cadaverine/lysine antiporter
-P0AAF1	escherichia-coli-83333	P0AAF1	potE	P0AAF1	0	9	Putrescine transporter PotE
-P0AAF3	escherichia-coli-83333	P0AAF3	araG	P0AAF3	23	179	Arabinose import ATP-binding protein AraG
-P0AAF9	shigella-flexneri	P0AAF9	artP	P0AAF9	51	154	Arginine transport ATP-binding protein ArtP
-P0AAG0	escherichia-coli-83333	P0AAG0	dppD	P0AAG0	40	174	Dipeptide transport ATP-binding protein DppD
-P0AAG3	escherichia-coli-83333	P0AAG3	gltL	P0AAG3	58	191	Glutamate/aspartate import ATP-binding protein GltL
-P0AAG5	escherichia-coli-83333	P0AAG5	mdlB	P0AAG5	1	25	Multidrug resistance-like ATP-binding protein MdlB
-P0AAG8	escherichia-coli-83333	P0AAG8	mglA	P0AAG8	18	178	Galactose/methyl galactoside import ATP-binding protein MglA
-P0AAH0	escherichia-coli-83333	P0AAH0	pstB	P0AAH0	64	190	Phosphate import ATP-binding protein PstB
-P0AAH7	shigella-flexneri	P0AAH7	sapD	P0AAH7	34	136	Peptide transport system ATP-binding protein SapD
-P0AAI0	shigella-flexneri	P0AAI0	sapF	P0AAI0	46	136	Peptide transport system ATP-binding protein SapF
-P0AAI1	escherichia-coli-83333	P0AAI1	ssuB	P0AAI1	48	186	Aliphatic sulfonates import ATP-binding protein SsuB
-P0AAI3	escherichia-coli-83333	P0AAI3	ftsH	P0AAI3	0	74	ATP-dependent zinc metalloprotease FtsH
-P0AAI8	shigella-flexneri	P0AAI8	fabF	P0AAI8	1	5	3-oxoacyl-
-P0AAI9	escherichia-coli-83333	P0AAI9	fabD	P0AAI9	4	43	Malonyl CoA-acyl carrier protein transacylase
-P0AAJ1	escherichia-coli-83333	P0AAJ1	ynfG	P0AAJ1	5	12	Probable anaerobic dimethyl sulfoxide reductase chain YnfG
-P0AAJ4	shigella-flexneri	P0AAJ4	fdnH	P0AAJ4	7	24	Formate dehydrogenase, nitrate-inducible, iron-sulfur subunit
-P0AAJ5	escherichia-coli-83333	P0AAJ5	fdoH	P0AAJ5	7	23	Formate dehydrogenase-O iron-sulfur subunit
-P0AAJ8	escherichia-coli-83333	P0AAJ8	hybA	P0AAJ8	4	15	Hydrogenase-2 operon protein HybA
-P0AAK3	shigella-flexneri	P0AAK3	hycB	P0AAK3	1	6	Formate hydrogenlyase subunit 2
+P0AAF1	escherichia-coli-83333	P0AAF1	potE	P0AAF1	0	7	Putrescine transporter PotE
+P0AAF3	escherichia-coli-83333	P0AAF3	araG	P0AAF3	22	175	Arabinose import ATP-binding protein AraG
+P0AAF9	shigella-flexneri	P0AAF9	artP	P0AAF9	11	18	Arginine transport ATP-binding protein ArtP
+P0AAG0	escherichia-coli-83333	P0AAG0	dppD	P0AAG0	40	173	Dipeptide transport ATP-binding protein DppD
+P0AAG3	escherichia-coli-83333	P0AAG3	gltL	P0AAG3	48	173	Glutamate/aspartate import ATP-binding protein GltL
+P0AAG5	escherichia-coli-83333	P0AAG5	mdlB	P0AAG5	1	22	Multidrug resistance-like ATP-binding protein MdlB
+P0AAG8	escherichia-coli-83333	P0AAG8	mglA	P0AAG8	17	174	Galactose/methyl galactoside import ATP-binding protein MglA
+P0AAH0	escherichia-coli-83333	P0AAH0	pstB	P0AAH0	63	189	Phosphate import ATP-binding protein PstB
+P0AAH7	shigella-flexneri	P0AAH7	sapD	P0AAH7	7	18	Peptide transport system ATP-binding protein SapD
+P0AAI0	shigella-flexneri	P0AAI0	sapF	P0AAI0	12	18	Peptide transport system ATP-binding protein SapF
+P0AAI1	escherichia-coli-83333	P0AAI1	ssuB	P0AAI1	42	174	Aliphatic sulfonates import ATP-binding protein SsuB
+P0AAI3	escherichia-coli-83333	P0AAI3	ftsH	P0AAI3	0	72	ATP-dependent zinc metalloprotease FtsH
+P0AAI8	shigella-flexneri	P0AAI8	fabF	P0AAI8	0	2	3-oxoacyl-
+P0AAI9	escherichia-coli-83333	P0AAI9	fabD	P0AAI9	3	35	Malonyl CoA-acyl carrier protein transacylase
+P0AAJ1	escherichia-coli-83333	P0AAJ1	ynfG	P0AAJ1	5	11	Probable anaerobic dimethyl sulfoxide reductase chain YnfG
+P0AAJ4	shigella-flexneri	P0AAJ4	fdnH	P0AAJ4	1	3	Formate dehydrogenase, nitrate-inducible, iron-sulfur subunit
+P0AAJ5	escherichia-coli-83333	P0AAJ5	fdoH	P0AAJ5	7	22	Formate dehydrogenase-O iron-sulfur subunit
+P0AAJ8	escherichia-coli-83333	P0AAJ8	hybA	P0AAJ8	4	14	Hydrogenase-2 operon protein HybA
+P0AAK3	shigella-flexneri	P0AAK3	hycB	P0AAK3	0	3	Formate hydrogenlyase subunit 2
 P0AAK4	escherichia-coli-83333	P0AAK4	hydN	P0AAK4	0	5	Electron transport protein HydN
 P0AAK7	escherichia-coli-83333	P0AAK7	nrfC	P0AAK7	3	11	Protein NrfC
-P0AAL0	escherichia-coli-83333	P0AAL0	napF	P0AAL0	0	14	Ferredoxin-type protein NapF
-P0AAL3	escherichia-coli-83333	P0AAL3	napG	P0AAL3	2	12	Ferredoxin-type protein NapG
-P0AAL8	shigella-flexneri	P0AAL8	ydhY	P0AAL8	1	5	Uncharacterized ferredoxin-like protein YdhY
-P0AAL9	escherichia-coli-83333	P0AAL9	ykgJ	P0AAL9	0	4	Uncharacterized protein YkgJ
+P0AAL0	escherichia-coli-83333	P0AAL0	napF	P0AAL0	0	12	Ferredoxin-type protein NapF
+P0AAL3	escherichia-coli-83333	P0AAL3	napG	P0AAL3	2	11	Ferredoxin-type protein NapG
+P0AAL8	shigella-flexneri	P0AAL8	ydhY	P0AAL8	0	0	Uncharacterized ferredoxin-like protein YdhY
+P0AAL9	escherichia-coli-83333	P0AAL9	ykgJ	P0AAL9	0	2	Uncharacterized protein YkgJ
 P0AAM1	escherichia-coli-83333	P0AAM1	hyaC	P0AAM1	1	4	Probable Ni/Fe-hydrogenase 1 B-type cytochrome subunit
-P0AAM3	escherichia-coli-83333	P0AAM3	hypC	P0AAM3	1	12	Hydrogenase maturation factor HypC
+P0AAM3	escherichia-coli-83333	P0AAM3	hypC	P0AAM3	1	11	Hydrogenase maturation factor HypC
 P0AAM7	escherichia-coli-83333	P0AAM7	hybG	P0AAM7	1	9	Hydrogenase maturation factor HybG
 P0AAN1	escherichia-coli-83333	P0AAN1	hybE	P0AAN1	1	3	Hydrogenase-2 operon protein HybE
-P0AAN3	escherichia-coli-83333	P0AAN3	hypB	P0AAN3	2	4	Hydrogenase maturation factor HypB
-P0AAN9	escherichia-coli-83333	P0AAN9	iraP	P0AAN9	0	1	Anti-adapter protein IraP
+P0AAN3	escherichia-coli-83333	P0AAN3	hypB	P0AAN3	1	3	Hydrogenase maturation factor HypB
+P0AAN9	escherichia-coli-83333	P0AAN9	iraP	P0AAN9	0	0	Anti-adapter protein IraP
 P0AAP1	escherichia-coli-83333	P0AAP1	dgcC	P0AAP1	0	3	Probable diguanylate cyclase DgcC
-P0AAP5	escherichia-coli-83333	P0AAP5	iprA	P0AAP5	1	11	Inhibitor of hydrogen peroxide resistance
+P0AAP5	escherichia-coli-83333	P0AAP5	iprA	P0AAP5	1	9	Inhibitor of hydrogen peroxide resistance
 P0AAR3	escherichia-coli-83333	P0AAR3	ybaK	P0AAR3	0	4	Cys-tRNA(Pro)/Cys-tRNA(Cys) deacylase YbaK
 P0AAR8	escherichia-coli-83333	P0AAR8	ybaV	P0AAR8	0	2	Uncharacterized protein YbaV
 P0AAS5	escherichia-coli-83333	P0AAS5	allH	P0AAS5	0	2	Oxamate carbamoyltransferase subunit AllH
-P0AAS7	escherichia-coli-83333	P0AAS7	ybcJ	P0AAS7	0	15	Putative RNA-binding protein YbcJ
-P0AAT8	shigella-flexneri	P0AAT8	rsfS	P0AAT8	5	68	Ribosomal silencing factor RsfS
-P0AAT9	escherichia-coli-83333	P0AAT9	ybeL	P0AAT9	0	32	Uncharacterized protein YbeL
-P0AAU9	shigella-flexneri	P0AAU9	ybfE	P0AAU9	0	2	Uncharacterized protein YbfE
+P0AAS7	escherichia-coli-83333	P0AAS7	ybcJ	P0AAS7	0	12	Putative RNA-binding protein YbcJ
+P0AAT8	shigella-flexneri	P0AAT8	rsfS	P0AAT8	0	7	Ribosomal silencing factor RsfS
+P0AAT9	escherichia-coli-83333	P0AAT9	ybeL	P0AAT9	0	31	Uncharacterized protein YbeL
+P0AAU9	shigella-flexneri	P0AAU9	ybfE	P0AAU9	0	0	Uncharacterized protein YbfE
 P0AAV4	escherichia-coli-83333	P0AAV4	pxpB	P0AAV4	1	2	5-oxoprolinase subunit B
-P0AAW4	shigella-flexneri	P0AAW4	ybhP	P0AAW4	0	2	Uncharacterized protein YbhP
-P0AAX2	shigella-flexneri	P0AAX2	acrZ	P0AAX2	0	1	Multidrug efflux pump accessory protein AcrZ
+P0AAW4	shigella-flexneri	P0AAW4	ybhP	P0AAW4	0	0	Uncharacterized protein YbhP
+P0AAX2	shigella-flexneri	P0AAX2	acrZ	P0AAX2	0	0	Multidrug efflux pump accessory protein AcrZ
 P0AAX8	escherichia-coli-83333	P0AAX8	ybiS	P0AAX8	0	2	Probable L,D-transpeptidase YbiS
-P0AAY9	shigella-flexneri	P0AAY9	ybjN	P0AAY9	0	2	Uncharacterized protein YbjN
-P0AAZ4	escherichia-coli-83333	P0AAZ4	rarA	P0AAZ4	1	28	Replication-associated recombination protein A
-P0AB00	shigella-flexneri	P0AB00	ycaR	P0AB00	0	1	UPF0434 protein YcaR
+P0AAY9	shigella-flexneri	P0AAY9	ybjN	P0AAY9	0	0	Uncharacterized protein YbjN
+P0AAZ4	escherichia-coli-83333	P0AAZ4	rarA	P0AAZ4	1	25	Replication-associated recombination protein A
+P0AB00	shigella-flexneri	P0AB00	ycaR	P0AB00	0	0	UPF0434 protein YcaR
 P0AB01	escherichia-coli-83333	P0AB01	elyC	P0AB01	0	1	Envelope biogenesis factor ElyC
-P0AB05	shigella-flexneri	P0AB05	ycbJ	P0AB05	0	6	Uncharacterized protein YcbJ
-P0AB11	shigella-flexneri	P0AB11	pqiC	P0AB11	0	10	Intermembrane transport lipoprotein PqiC
-P0AB19	shigella-flexneri	P0AB19	tusE	P0AB19	4	12	Sulfurtransferase TusE
+P0AB05	shigella-flexneri	P0AB05	ycbJ	P0AB05	0	0	Uncharacterized protein YcbJ
+P0AB11	shigella-flexneri	P0AB11	pqiC	P0AB11	0	3	Intermembrane transport lipoprotein PqiC
+P0AB19	shigella-flexneri	P0AB19	tusE	P0AB19	1	2	Sulfurtransferase TusE
 P0AB26	escherichia-coli-83333	P0AB26	yceB	P0AB26	0	1	Uncharacterized lipoprotein YceB
 P0AB28	escherichia-coli-83333	P0AB28	yceD	P0AB28	1	2	Large ribosomal RNA subunit accumulation protein YceD
 P0AB38	escherichia-coli-83333	P0AB38	lpoB	P0AB38	2	10	Penicillin-binding protein activator LpoB
 P0AB43	escherichia-coli-83333	P0AB43	ycgL	P0AB43	0	1	Protein YcgL
-P0AB49	escherichia-coli-83333	P0AB49	ychH	P0AB49	0	1	Uncharacterized protein YchH
-P0AB54	shigella-flexneri	P0AB54	ychN	P0AB54	1	1	Protein YchN
+P0AB49	escherichia-coli-83333	P0AB49	ychH	P0AB49	0	0	Uncharacterized protein YchH
+P0AB54	shigella-flexneri	P0AB54	ychN	P0AB54	0	0	Protein YchN
 P0AB58	escherichia-coli-83333	P0AB58	lapB	P0AB58	1	4	Lipopolysaccharide assembly protein B
 P0AB65	escherichia-coli-83333	P0AB65	yccX	P0AB65	0	1	Acylphosphatase
-P0AB70	shigella-flexneri	P0AB70	pntB	P0AB70	1	3	NAD(P) transhydrogenase subunit beta
-P0AB71	escherichia-coli-83333	P0AB71	fbaA	P0AB71	0	65	Fructose-bisphosphate aldolase class 2
-P0AB74	escherichia-coli-83333	P0AB74	kbaY	P0AB74	0	59	D-tagatose-1,6-bisphosphate aldolase subunit KbaY
+P0AB70	shigella-flexneri	P0AB70	pntB	P0AB70	0	1	NAD(P) transhydrogenase subunit beta
+P0AB71	escherichia-coli-83333	P0AB71	fbaA	P0AB71	0	63	Fructose-bisphosphate aldolase class 2
+P0AB74	escherichia-coli-83333	P0AB74	kbaY	P0AB74	0	58	D-tagatose-1,6-bisphosphate aldolase subunit KbaY
 P0AB77	escherichia-coli-83333	P0AB77	kbl	P0AB77	0	8	2-amino-3-ketobutyrate coenzyme A ligase
 P0AB80	escherichia-coli-83333	P0AB80	ilvE	P0AB80	0	1	Branched-chain-amino-acid aminotransferase
 P0AB83	escherichia-coli-83333	P0AB83	nth	P0AB83	1	5	Endonuclease III
 P0AB85	escherichia-coli-83333	P0AB85	apbE	P0AB85	1	1	FAD:protein FMN transferase
-P0AB89	escherichia-coli-83333	P0AB89	purB	P0AB89	0	6	Adenylosuccinate lyase
+P0AB89	escherichia-coli-83333	P0AB89	purB	P0AB89	0	4	Adenylosuccinate lyase
 P0AB91	escherichia-coli-83333	P0AB91	aroG	P0AB91	2	2	Phospho-2-dehydro-3-deoxyheptonate aldolase, Phe-sensitive
 P0AB96	escherichia-coli-83333	P0AB96	arsC	P0AB96	0	7	Arsenate reductase
-P0AB98	escherichia-coli-83333	P0AB98	atpB	P0AB98	3	22	ATP synthase subunit a
-P0ABA0	escherichia-coli-83333	P0ABA0	atpF	P0ABA0	2	11	ATP synthase subunit b
-P0ABA4	escherichia-coli-83333	P0ABA4	atpH	P0ABA4	1	27	ATP synthase subunit delta
-P0ABA6	escherichia-coli-83333	P0ABA6	atpG	P0ABA6	2	27	ATP synthase gamma chain
-P0ABB3	shigella-flexneri	P0ABB3	atpA	P0ABB3	1	15	ATP synthase subunit alpha
-P0ABB4	escherichia-coli-83333	P0ABB4	atpD	P0ABB4	2	36	ATP synthase subunit beta
+P0AB98	escherichia-coli-83333	P0AB98	atpB	P0AB98	3	20	ATP synthase subunit a
+P0ABA0	escherichia-coli-83333	P0ABA0	atpF	P0ABA0	1	9	ATP synthase subunit b
+P0ABA4	escherichia-coli-83333	P0ABA4	atpH	P0ABA4	1	26	ATP synthase subunit delta
+P0ABA6	escherichia-coli-83333	P0ABA6	atpG	P0ABA6	2	25	ATP synthase gamma chain
+P0ABB3	shigella-flexneri	P0ABB3	atpA	P0ABB3	0	5	ATP synthase subunit alpha
+P0ABB4	escherichia-coli-83333	P0ABB4	atpD	P0ABB4	1	33	ATP synthase subunit beta
 P0ABB8	escherichia-coli-83333	P0ABB8	mgtA	P0ABB8	0	7	Magnesium-transporting ATPase, P-type 1
 P0ABC2	shigella-flexneri	P0ABC2	atpI	P0ABC2	0	1	ATP synthase protein I
 P0ABC3	escherichia-coli-83333	P0ABC3	hflC	P0ABC3	1	10	Modulator of FtsH protease HflC
 P0ABC7	escherichia-coli-83333	P0ABC7	hflK	P0ABC7	2	10	Modulator of FtsH protease HflK
 P0ABD3	escherichia-coli-83333	P0ABD3	bfr	P0ABD3	1	1	Bacterioferritin
-P0ABD7	shigella-flexneri	P0ABD7	accA	P0ABD7	1	13	Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha
+P0ABD7	shigella-flexneri	P0ABD7	accA	P0ABD7	0	1	Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha
 P0ABD8	escherichia-coli-83333	P0ABD8	accB	P0ABD8	2	12	Biotin carboxyl carrier protein of acetyl-CoA carboxylase
 P0ABE2	escherichia-coli-83333	P0ABE2	bolA	P0ABE2	0	12	DNA-binding transcriptional regulator BolA
-P0ABE9	escherichia-coli-83333	P0ABE9	cynT	P0ABE9	0	6	Carbonic anhydrase 1
-P0ABF1	escherichia-coli-83333	P0ABF1	pcnB	P0ABF1	1	11	Poly(A) polymerase I
+P0ABE9	escherichia-coli-83333	P0ABE9	cynT	P0ABE9	0	5	Carbonic anhydrase 1
+P0ABF1	escherichia-coli-83333	P0ABF1	pcnB	P0ABF1	1	10	Poly(A) polymerase I
 P0ABF4	escherichia-coli-83333	P0ABF4	eutM	P0ABF4	1	6	Bacterial microcompartment shell protein EutM
 P0ABG1	escherichia-coli-83333	P0ABG1	cdsA	P0ABG1	0	2	Phosphatidate cytidylyltransferase
-P0ABG4	escherichia-coli-83333	P0ABG4	ftsW	P0ABG4	2	25	Probable peptidoglycan glycosyltransferase FtsW
-P0ABG9	shigella-flexneri	P0ABG9	mrdB	P0ABG9	1	18	Peptidoglycan glycosyltransferase MrdB
-P0ABH3	shigella-flexneri	P0ABH3	ftsA	P0ABH3	2	23	Cell division protein FtsA
+P0ABG4	escherichia-coli-83333	P0ABG4	ftsW	P0ABG4	2	23	Probable peptidoglycan glycosyltransferase FtsW
+P0ABG9	shigella-flexneri	P0ABG9	mrdB	P0ABG9	0	3	Peptidoglycan glycosyltransferase MrdB
+P0ABH3	shigella-flexneri	P0ABH3	ftsA	P0ABH3	0	3	Cell division protein FtsA
 P0ABH4	escherichia-coli-83333	P0ABH4	mreD	P0ABH4	1	9	Rod shape-determining protein MreD
-P0ABH7	escherichia-coli-83333	P0ABH7	gltA	P0ABH7	0	29	Citrate synthase
+P0ABH7	escherichia-coli-83333	P0ABH7	gltA	P0ABH7	0	28	Citrate synthase
 P0ABH9	escherichia-coli-83333	P0ABH9	clpA	P0ABH9	1	19	ATP-dependent Clp protease ATP-binding subunit ClpA
-P0ABI8	escherichia-coli-83333	P0ABI8	cyoB	P0ABI8	2	34	Cytochrome bo(3) ubiquinol oxidase subunit 1
-P0ABJ1	escherichia-coli-83333	P0ABJ1	cyoA	P0ABJ1	3	40	Cytochrome bo(3) ubiquinol oxidase subunit 2
-P0ABJ3	escherichia-coli-83333	P0ABJ3	cyoC	P0ABJ3	3	34	Cytochrome bo(3) ubiquinol oxidase subunit 3
-P0ABJ6	escherichia-coli-83333	P0ABJ6	cyoD	P0ABJ6	3	9	Cytochrome bo(3) ubiquinol oxidase subunit 4
-P0ABK1	shigella-flexneri	P0ABK1	cydA	P0ABK1	3	5	Cytochrome bd-I ubiquinol oxidase subunit 1
+P0ABI8	escherichia-coli-83333	P0ABI8	cyoB	P0ABI8	2	28	Cytochrome bo(3) ubiquinol oxidase subunit 1
+P0ABJ1	escherichia-coli-83333	P0ABJ1	cyoA	P0ABJ1	3	34	Cytochrome bo(3) ubiquinol oxidase subunit 2
+P0ABJ3	escherichia-coli-83333	P0ABJ3	cyoC	P0ABJ3	3	28	Cytochrome bo(3) ubiquinol oxidase subunit 3
+P0ABJ6	escherichia-coli-83333	P0ABJ6	cyoD	P0ABJ6	3	8	Cytochrome bo(3) ubiquinol oxidase subunit 4
+P0ABK1	shigella-flexneri	P0ABK1	cydA	P0ABK1	0	0	Cytochrome bd-I ubiquinol oxidase subunit 1
 P0ABK2	escherichia-coli-83333	P0ABK2	cydB	P0ABK2	3	7	Cytochrome bd-I ubiquinol oxidase subunit 2
 P0ABK5	escherichia-coli-83333	P0ABK5	cysK	P0ABK5	0	8	Cysteine synthase A
-P0ABK7	escherichia-coli-83333	P0ABK7	csgB	P0ABK7	1	12	Minor curlin subunit
+P0ABK7	escherichia-coli-83333	P0ABK7	csgB	P0ABK7	1	11	Minor curlin subunit
 P0ABK9	escherichia-coli-83333	P0ABK9	nrfA	P0ABK9	0	6	Cytochrome c-552
 P0ABL1	escherichia-coli-83333	P0ABL1	nrfB	P0ABL1	0	3	Cytochrome c-type protein NrfB
-P0ABL3	escherichia-coli-83333	P0ABL3	napB	P0ABL3	3	15	Periplasmic nitrate reductase, electron transfer subunit
+P0ABL3	escherichia-coli-83333	P0ABL3	napB	P0ABL3	3	14	Periplasmic nitrate reductase, electron transfer subunit
 P0ABL5	escherichia-coli-83333	P0ABL5	napC	P0ABL5	0	4	Cytochrome c-type protein NapC
-P0ABL8	escherichia-coli-83333	P0ABL8	ccmB	P0ABL8	15	177	Heme exporter protein B
-P0ABM1	escherichia-coli-83333	P0ABM1	ccmC	P0ABM1	3	177	Heme exporter protein C
-P0ABM5	escherichia-coli-83333	P0ABM5	ccmD	P0ABM5	2	176	Heme exporter protein D
+P0ABL8	escherichia-coli-83333	P0ABL8	ccmB	P0ABL8	15	174	Heme exporter protein B
+P0ABM1	escherichia-coli-83333	P0ABM1	ccmC	P0ABM1	3	174	Heme exporter protein C
+P0ABM5	escherichia-coli-83333	P0ABM5	ccmD	P0ABM5	2	173	Heme exporter protein D
 P0ABM9	escherichia-coli-83333	P0ABM9	ccmH	P0ABM9	1	2	Cytochrome c-type biogenesis protein CcmH
 P0ABN9	escherichia-coli-83333	P0ABN9	dcuB	P0ABN9	0	1	Anaerobic C4-dicarboxylate transporter DcuB
 P0ABP6	escherichia-coli-83333	P0ABP6	dedA	P0ABP6	0	2	Protein DedA
@@ -817,76 +797,76 @@ P0ABP8	escherichia-coli-83333	P0ABP8	deoD	P0ABP8	0	5	Purine nucleoside phosphory
 P0ABQ0	escherichia-coli-83333	P0ABQ0	coaBC	P0ABQ0	0	3	Coenzyme A biosynthesis bifunctional protein CoaBC
 P0ABQ2	escherichia-coli-83333	P0ABQ2	garR	P0ABQ2	1	1	2-hydroxy-3-oxopropionate reductase
 P0ABQ4	escherichia-coli-83333	P0ABQ4	folA	P0ABQ4	0	11	Dihydrofolate reductase
-P0ABR4	shigella-flexneri	P0ABR4	dinI	P0ABR4	0	3	DNA damage-inducible protein I
-P0ABR5	escherichia-coli-83333	P0ABR5	hcaE	P0ABR5	1	7	3-phenylpropionate/cinnamic acid dioxygenase subunit alpha
+P0ABR4	shigella-flexneri	P0ABR4	dinI	P0ABR4	0	1	DNA damage-inducible protein I
+P0ABR5	escherichia-coli-83333	P0ABR5	hcaE	P0ABR5	1	6	3-phenylpropionate/cinnamic acid dioxygenase subunit alpha
 P0ABR7	escherichia-coli-83333	P0ABR7	yeaW	P0ABR7	0	4	Carnitine monooxygenase oxygenase subunit
-P0ABS4	shigella-flexneri	P0ABS4	dksA	P0ABS4	0	9	RNA polymerase-binding transcription factor DksA
-P0ABS7	shigella-flexneri	P0ABS7	dnaG	P0ABS7	1	23	DNA primase
-P0ABT1	shigella-flexneri	P0ABT1	holE	P0ABT1	0	18	DNA polymerase III subunit theta
-P0ABT4	shigella-flexneri	P0ABT4	dps	P0ABT4	0	21	DNA protection during starvation protein
+P0ABS4	shigella-flexneri	P0ABS4	dksA	P0ABS4	0	2	RNA polymerase-binding transcription factor DksA
+P0ABS7	shigella-flexneri	P0ABS7	dnaG	P0ABS7	0	4	DNA primase
+P0ABT1	shigella-flexneri	P0ABT1	holE	P0ABT1	0	4	DNA polymerase III subunit theta
+P0ABT4	shigella-flexneri	P0ABT4	dps	P0ABT4	0	4	DNA protection during starvation protein
 P0ABT5	escherichia-coli-83333	P0ABT5	dusB	P0ABT5	0	1	tRNA-dihydrouridine synthase B
-P0ABU4	shigella-flexneri	P0ABU4	ychF	P0ABU4	0	1	Ribosome-binding ATPase YchF
+P0ABU4	shigella-flexneri	P0ABU4	ychF	P0ABU4	0	0	Ribosome-binding ATPase YchF
 P0ABU7	escherichia-coli-83333	P0ABU7	exbB	P0ABU7	1	14	Biopolymer transport protein ExbB
 P0ABU9	escherichia-coli-83333	P0ABU9	tolQ	P0ABU9	3	12	Tol-Pal system protein TolQ
 P0ABV2	escherichia-coli-83333	P0ABV2	exbD	P0ABV2	2	13	Biopolymer transport protein ExbD
 P0ABV6	escherichia-coli-83333	P0ABV6	tolR	P0ABV6	1	12	Tol-Pal system protein TolR
-P0ABW2	shigella-flexneri	P0ABW2	hcaC	P0ABW2	1	4	3-phenylpropionate/cinnamic acid dioxygenase ferredoxin subunit
-P0ABW3	escherichia-coli-83333	P0ABW3	yfaE	P0ABW3	3	57	Uncharacterized ferredoxin-like protein YfaE
+P0ABW2	shigella-flexneri	P0ABW2	hcaC	P0ABW2	0	0	3-phenylpropionate/cinnamic acid dioxygenase ferredoxin subunit
+P0ABW3	escherichia-coli-83333	P0ABW3	yfaE	P0ABW3	2	50	Uncharacterized ferredoxin-like protein YfaE
 P0ABW5	escherichia-coli-83333	P0ABW5	sfmA	P0ABW5	15	21	Uncharacterized fimbrial-like protein SfmA
-P0ABX1	shigella-flexneri	P0ABX1	flgB	P0ABX1	3	20	Flagellar basal body rod protein FlgB
-P0ABX2	escherichia-coli-83333	P0ABX2	flgC	P0ABX2	1	20	Flagellar basal-body rod protein FlgC
-P0ABX5	escherichia-coli-83333	P0ABX5	flgG	P0ABX5	1	45	Flagellar basal-body rod protein FlgG
+P0ABX1	shigella-flexneri	P0ABX1	flgB	P0ABX1	0	2	Flagellar basal body rod protein FlgB
+P0ABX2	escherichia-coli-83333	P0ABX2	flgC	P0ABX2	1	18	Flagellar basal-body rod protein FlgC
+P0ABX5	escherichia-coli-83333	P0ABX5	flgG	P0ABX5	1	43	Flagellar basal-body rod protein FlgG
 P0ABX8	escherichia-coli-83333	P0ABX8	fliL	P0ABX8	0	7	Flagellar protein FliL
 P0ABY2	escherichia-coli-83333	P0ABY2	fliT	P0ABY2	3	13	Flagellar protein FliT
-P0ABZ0	shigella-flexneri	P0ABZ0	flhC	P0ABZ0	1	2	Flagellar transcriptional regulator FlhC
-P0ABZ1	escherichia-coli-83333	P0ABZ1	fliG	P0ABZ1	3	30	Flagellar motor switch protein FliG
-P0ABZ9	shigella-flexneri	P0ABZ9	surA	P0ABZ9	1	17	Chaperone SurA
-P0AC84	escherichia-coli-83333	P0AC84	gloB	P0AC84	0	20	Hydroxyacylglutathione hydrolase GloB
+P0ABZ0	shigella-flexneri	P0ABZ0	flhC	P0ABZ0	0	0	Flagellar transcriptional regulator FlhC
+P0ABZ1	escherichia-coli-83333	P0ABZ1	fliG	P0ABZ1	3	29	Flagellar motor switch protein FliG
+P0ABZ9	shigella-flexneri	P0ABZ9	surA	P0ABZ9	0	2	Chaperone SurA
+P0AC84	escherichia-coli-83333	P0AC84	gloB	P0AC84	0	16	Hydroxyacylglutathione hydrolase GloB
 P0ACR0	escherichia-coli-83333	P0ACR0	allS	P0ACR0	0	1	HTH-type transcriptional activator AllS
 P0ACT2	escherichia-coli-83333	P0ACT2	envR	P0ACT2	0	3	Probable acrEF/envCD operon repressor
-P0ACV6	escherichia-coli-83333	P0ACV6	mpaA	P0ACV6	0	2	Murein peptide amidase A
-P0ACZ2	escherichia-coli-83333	P0ACZ2	etp	P0ACZ2	1	21	Low molecular weight protein-tyrosine-phosphatase Etp
+P0ACV6	escherichia-coli-83333	P0ACV6	mpaA	P0ACV6	0	1	Murein peptide amidase A
+P0ACZ2	escherichia-coli-83333	P0ACZ2	etp	P0ACZ2	1	17	Low molecular weight protein-tyrosine-phosphatase Etp
 P0AD01	escherichia-coli-83333	P0AD01	dcuR	P0AD01	1	6	Transcriptional regulatory protein DcuR
 P0AD03	escherichia-coli-83333	P0AD03	letA	P0AD03	0	2	Lipophilic envelope-spanning tunnel protein A
-P0AD06	shigella-flexneri	P0AD06	yecA	P0AD06	0	2	Uncharacterized protein YecA
-P0AD12	escherichia-coli-83333	P0AD12	yeeZ	P0AD12	2	85	Protein YeeZ
+P0AD06	shigella-flexneri	P0AD06	yecA	P0AD06	0	0	Uncharacterized protein YecA
+P0AD12	escherichia-coli-83333	P0AD12	yeeZ	P0AD12	2	82	Protein YeeZ
 P0AD14	escherichia-coli-83333	P0AD14	btsS	P0AD14	1	1	Sensor histidine kinase BtsS
 P0AD17	escherichia-coli-83333	P0AD17	yohC	P0AD17	0	1	Inner membrane protein YohC
 P0AD21	escherichia-coli-83333	P0AD21	yejG	P0AD21	0	3	Uncharacterized protein YejG
 P0AD27	escherichia-coli-83333	P0AD27	yejM	P0AD27	0	1	Inner membrane protein YejM
 P0AD30	escherichia-coli-83333	P0AD30	yfcA	P0AD30	0	3	Probable membrane transporter protein YfcA
 P0AD33	escherichia-coli-83333	P0AD33	yfcZ	P0AD33	0	1	UPF0381 protein YfcZ
-P0AD39	shigella-flexneri	P0AD39	yfeC	P0AD39	1	1	Uncharacterized protein YfeC
+P0AD39	shigella-flexneri	P0AD39	yfeC	P0AD39	0	0	Uncharacterized protein YfeC
 P0AD42	escherichia-coli-83333	P0AD42	pgpC	P0AD42	0	4	Phosphatidylglycerophosphatase C
-P0AD46	shigella-flexneri	P0AD46	yfhG	P0AD46	0	2	Uncharacterized protein YfhG
-P0AD52	shigella-flexneri	P0AD52	yfiA	P0AD52	1	52	Ribosome-associated factor Y
-P0AD61	escherichia-coli-83333	P0AD61	pykF	P0AD61	1	48	Pyruvate kinase I
+P0AD46	shigella-flexneri	P0AD46	yfhG	P0AD46	0	0	Uncharacterized protein YfhG
+P0AD52	shigella-flexneri	P0AD52	yfiA	P0AD52	0	5	Ribosome-associated factor Y
+P0AD61	escherichia-coli-83333	P0AD61	pykF	P0AD61	1	44	Pyruvate kinase I
 P0AD65	escherichia-coli-83333	P0AD65	mrdA	P0AD65	2	16	Peptidoglycan D,D-transpeptidase MrdA
-P0AD68	escherichia-coli-83333	P0AD68	ftsI	P0AD68	3	30	Peptidoglycan D,D-transpeptidase FtsI
+P0AD68	escherichia-coli-83333	P0AD68	ftsI	P0AD68	2	28	Peptidoglycan D,D-transpeptidase FtsI
 P0AD70	escherichia-coli-83333	P0AD70	ampH	P0AD70	0	1	D-alanyl-D-alanine-carboxypeptidase/endopeptidase AmpH
-P0AD96	escherichia-coli-83333	P0AD96	livJ	P0AD96	4	176	Leu/Ile/Val-binding protein
+P0AD96	escherichia-coli-83333	P0AD96	livJ	P0AD96	4	175	Leu/Ile/Val-binding protein
 P0AD99	escherichia-coli-83333	P0AD99	brnQ	P0AD99	0	1	Branched-chain amino acid permease BrnQ
 P0ADA1	escherichia-coli-83333	P0ADA1	tesA	P0ADA1	1	2	Thioesterase 1/protease 1/lysophospholipase L1
 P0ADA3	escherichia-coli-83333	P0ADA3	nlpD	P0ADA3	1	3	Murein hydrolase activator NlpD
 P0ADA5	escherichia-coli-83333	P0ADA5	yajG	P0ADA5	1	1	Uncharacterized lipoprotein YajG
-P0ADB0	shigella-flexneri	P0ADB0	osmB	P0ADB0	0	2	Osmotically-inducible lipoprotein B
-P0ADB3	shigella-flexneri	P0ADB3	osmE	P0ADB3	0	10	Osmotically-inducible putative lipoprotein OsmE
+P0ADB0	shigella-flexneri	P0ADB0	osmB	P0ADB0	0	0	Osmotically-inducible lipoprotein B
+P0ADB3	shigella-flexneri	P0ADB3	osmE	P0ADB3	0	2	Osmotically-inducible putative lipoprotein OsmE
 P0ADB7	escherichia-coli-83333	P0ADB7	ecnB	P0ADB7	1	7	Entericidin B
 P0ADC1	escherichia-coli-83333	P0ADC1	lptE	P0ADC1	1	6	LPS-assembly lipoprotein LptE
-P0ADC3	escherichia-coli-83333	P0ADC3	lolC	P0ADC3	28	189	Lipoprotein-releasing system transmembrane protein LolC
-P0ADC6	escherichia-coli-83333	P0ADC6	lptG	P0ADC6	33	179	Lipopolysaccharide export system permease protein LptG
+P0ADC3	escherichia-coli-83333	P0ADC3	lolC	P0ADC3	27	176	Lipoprotein-releasing system transmembrane protein LolC
+P0ADC6	escherichia-coli-83333	P0ADC6	lptG	P0ADC6	33	178	Lipopolysaccharide export system permease protein LptG
 P0ADD5	escherichia-coli-83333	P0ADD5	yjjP	P0ADD5	0	1	Probable succinate transporter subunit YjjP
 P0ADD7	escherichia-coli-83333	P0ADD7	yjjQ	P0ADD7	0	3	Putative transcription factor YjjQ
 P0ADE2	escherichia-coli-83333	P0ADE2	ytfK	P0ADE2	0	2	Uncharacterized protein YtfK
 P0ADE4	escherichia-coli-83333	P0ADE4	tamA	P0ADE4	1	1	Translocation and assembly module subunit TamA
 P0ADE6	escherichia-coli-83333	P0ADE6	kbp	P0ADE6	0	10	Potassium binding protein Kbp
-P0ADE9	shigella-flexneri	P0ADE9	ygfZ	P0ADE9	0	2	tRNA-modifying protein YgfZ
+P0ADE9	shigella-flexneri	P0ADE9	ygfZ	P0ADE9	0	1	tRNA-modifying protein YgfZ
 P0ADF8	escherichia-coli-83333	P0ADF8	ilvN	P0ADF8	4	11	Acetolactate synthase isozyme 1 small subunit
 P0ADG1	escherichia-coli-83333	P0ADG1	ilvM	P0ADG1	5	6	Acetolactate synthase isozyme 2 small subunit
 P0ADG4	escherichia-coli-83333	P0ADG4	suhB	P0ADG4	1	12	Nus factor SuhB
-P0ADG9	shigella-flexneri	P0ADG9	guaB	P0ADG9	0	7	Inosine-5'-monophosphate dehydrogenase
+P0ADG9	shigella-flexneri	P0ADG9	guaB	P0ADG9	0	2	Inosine-5'-monophosphate dehydrogenase
 P0ADH5	escherichia-coli-83333	P0ADH5	fimB	P0ADH5	0	2	Type 1 fimbriae regulatory protein FimB
-P0ADI4	escherichia-coli-83333	P0ADI4	entB	P0ADI4	1	18	Enterobactin synthase component B
+P0ADI4	escherichia-coli-83333	P0ADI4	entB	P0ADI4	1	17	Enterobactin synthase component B
 P0ADJ3	escherichia-coli-83333	P0ADJ3	yhjR	P0ADJ3	0	1	Protein YhjR
 P0ADJ5	escherichia-coli-83333	P0ADJ5	bcsF	P0ADJ5	1	3	Cellulose biosynthesis protein BcsF
 P0ADK0	escherichia-coli-83333	P0ADK0	yiaF	P0ADK0	0	2	Uncharacterized protein YiaF
@@ -896,13 +876,13 @@ P0ADM6	escherichia-coli-83333	P0ADM6	yidX	P0ADM6	0	1	Uncharacterized protein Yid
 P0ADM8	escherichia-coli-83333	P0ADM8	yieE	P0ADM8	0	1	Uncharacterized protein YieE
 P0ADN0	escherichia-coli-83333	P0ADN0	viaA	P0ADN0	0	2	Regulatory protein ViaA
 P0ADN2	escherichia-coli-83333	P0ADN2	maoP	P0ADN2	0	1	Macrodomain Ori protein
-P0ADP0	escherichia-coli-83333	P0ADP0	yigB	P0ADP0	1	6	5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase YigB
+P0ADP0	escherichia-coli-83333	P0ADP0	yigB	P0ADP0	1	5	5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase YigB
 P0ADP7	escherichia-coli-83333	P0ADP7	ubiJ	P0ADP7	3	6	Ubiquinone biosynthesis accessory factor UbiJ
 P0ADP9	escherichia-coli-83333	P0ADP9	yihD	P0ADP9	0	1	Protein YihD
 P0ADQ2	escherichia-coli-83333	P0ADQ2	fabY	P0ADQ2	0	5	Probable acyltransferase FabY
 P0ADQ7	escherichia-coli-83333	P0ADQ7	ygaM	P0ADQ7	0	1	Uncharacterized protein YgaM
-P0ADR6	escherichia-coli-83333	P0ADR6	rlmM	P0ADR6	0	1	Ribosomal RNA large subunit methyltransferase M
-P0ADS1	shigella-flexneri	P0ADS1	ppnN	P0ADS1	0	2	Pyrimidine/purine nucleotide 5'-monophosphate nucleosidase
+P0ADR6	escherichia-coli-83333	P0ADR6	rlmM	P0ADR6	0	0	Ribosomal RNA large subunit methyltransferase M
+P0ADS1	shigella-flexneri	P0ADS1	ppnN	P0ADS1	0	1	Pyrimidine/purine nucleotide 5'-monophosphate nucleosidase
 P0ADS2	escherichia-coli-83333	P0ADS2	zapA	P0ADS2	1	12	Cell division protein ZapA
 P0ADT5	escherichia-coli-83333	P0ADT5	ygiC	P0ADT5	0	1	Putative acid--amine ligase YgiC
 P0ADU5	escherichia-coli-83333	P0ADU5	ygiW	P0ADU5	0	1	Protein YgiW
@@ -913,40 +893,40 @@ P0ADV9	escherichia-coli-83333	P0ADV9	lptC	P0ADV9	3	6	Lipopolysaccharide export s
 P0ADW6	escherichia-coli-83333	P0ADW6	yhcC	P0ADW6	0	1	Protein YhcC
 P0ADX5	escherichia-coli-83333	P0ADX5	yhfG	P0ADX5	1	1	Uncharacterized protein YhfG
 P0ADY1	escherichia-coli-83333	P0ADY1	ppiD	P0ADY1	2	12	Periplasmic chaperone PpiD
-P0ADY3	escherichia-coli-83333	P0ADY3	rplN	P0ADY3	3	168	Large ribosomal subunit protein uL14
-P0ADY7	escherichia-coli-83333	P0ADY7	rplP	P0ADY7	8	159	Large ribosomal subunit protein uL16
-P0ADZ0	escherichia-coli-83333	P0ADZ0	rplW	P0ADZ0	7	129	Large ribosomal subunit protein uL23
-P0ADZ4	escherichia-coli-83333	P0ADZ4	rpsO	P0ADZ4	3	168	Small ribosomal subunit protein uS15
-P0ADZ7	escherichia-coli-83333	P0ADZ7	yajC	P0ADZ7	2	18	Sec translocon accessory complex subunit YajC
-P0AE03	shigella-flexneri	P0AE03	trmJ	P0AE03	0	1	tRNA (cytidine/uridine-2'-O-)-methyltransferase TrmJ
-P0AE06	escherichia-coli-83333	P0AE06	acrA	P0AE06	4	24	Multidrug efflux pump subunit AcrA
-P0AE11	shigella-flexneri	P0AE11	ahpC	P0AE11	0	34	Alkyl hydroperoxide reductase C
-P0AE12	escherichia-coli-83333	P0AE12	amn	P0AE12	0	3	AMP nucleosidase
-P0AE15	shigella-flexneri	P0AE15	ampE	P0AE15	0	1	Protein AmpE
-P0AE16	escherichia-coli-83333	P0AE16	ampG	P0AE16	0	1	Anhydromuropeptide permease
-P0AE18	escherichia-coli-83333	P0AE18	map	P0AE18	8	56	Methionine aminopeptidase
+P0ADY3	escherichia-coli-83333	P0ADY3	rplN	P0ADY3	3	163	Large ribosomal subunit protein uL14
+P0ADY7	escherichia-coli-83333	P0ADY7	rplP	P0ADY7	8	155	Large ribosomal subunit protein uL16
+P0ADZ0	escherichia-coli-83333	P0ADZ0	rplW	P0ADZ0	7	125	Large ribosomal subunit protein uL23
+P0ADZ4	escherichia-coli-83333	P0ADZ4	rpsO	P0ADZ4	3	163	Small ribosomal subunit protein uS15
+P0ADZ7	escherichia-coli-83333	P0ADZ7	yajC	P0ADZ7	1	17	Sec translocon accessory complex subunit YajC
+P0AE03	shigella-flexneri	P0AE03	trmJ	P0AE03	0	0	tRNA (cytidine/uridine-2'-O-)-methyltransferase TrmJ
+P0AE06	escherichia-coli-83333	P0AE06	acrA	P0AE06	4	23	Multidrug efflux pump subunit AcrA
+P0AE11	shigella-flexneri	P0AE11	ahpC	P0AE11	0	1	Alkyl hydroperoxide reductase C
+P0AE12	escherichia-coli-83333	P0AE12	amn	P0AE12	0	2	AMP nucleosidase
+P0AE15	shigella-flexneri	P0AE15	ampE	P0AE15	0	0	Protein AmpE
+P0AE16	escherichia-coli-83333	P0AE16	ampG	P0AE16	0	0	Anhydromuropeptide permease
+P0AE18	escherichia-coli-83333	P0AE18	map	P0AE18	7	54	Methionine aminopeptidase
 P0AE23	shigella-flexneri	P0AE23	aphA	P0AE23	0	2	Class B acid phosphatase
-P0AE27	shigella-flexneri	P0AE27	araH	P0AE27	3	19	L-arabinose transport system permease protein AraH
-P0AE33	shigella-flexneri	P0AE33	artM	P0AE33	65	151	Arginine ABC transporter permease protein ArtM
-P0AE36	shigella-flexneri	P0AE36	artQ	P0AE36	73	151	Arginine ABC transporter permease protein ArtQ
+P0AE27	shigella-flexneri	P0AE27	araH	P0AE27	2	18	L-arabinose transport system permease protein AraH
+P0AE33	shigella-flexneri	P0AE33	artM	P0AE33	10	18	Arginine ABC transporter permease protein ArtM
+P0AE36	shigella-flexneri	P0AE36	artQ	P0AE36	13	18	Arginine ABC transporter permease protein ArtQ
 P0AE42	escherichia-coli-83333	P0AE42	yqaE	P0AE42	0	4	UPF0057 membrane protein YqaE
 P0AE45	escherichia-coli-83333	P0AE45	paeA	P0AE45	0	1	Polyamine export protein
 P0AE48	escherichia-coli-83333	P0AE48	ytfP	P0AE48	0	1	Gamma-glutamylcyclotransferase family protein YtfP
 P0AE56	escherichia-coli-83333	P0AE56	bfd	P0AE56	1	1	Bacterioferritin-associated ferredoxin
-P0AE59	shigella-flexneri	P0AE59	caiF	P0AE59	0	1	Transcriptional activatory protein CaiF
+P0AE59	shigella-flexneri	P0AE59	caiF	P0AE59	0	0	Transcriptional activatory protein CaiF
 P0AE60	escherichia-coli-83333	P0AE60	cedA	P0AE60	0	6	Cell division activator CedA
 P0AE67	escherichia-coli-83333	P0AE67	cheY	P0AE67	6	32	Chemotaxis protein CheY
-P0AE70	escherichia-coli-83333	P0AE70	mazF	P0AE70	3	24	Endoribonuclease toxin MazF
+P0AE70	escherichia-coli-83333	P0AE70	mazF	P0AE70	3	23	Endoribonuclease toxin MazF
 P0AE72	escherichia-coli-83333	P0AE72	mazE	P0AE72	5	23	Antitoxin MazE
 P0AE82	escherichia-coli-83333	P0AE82	cpxA	P0AE82	7	34	Sensor histidine kinase CpxA
 P0AE85	escherichia-coli-83333	P0AE85	cpxP	P0AE85	1	2	Periplasmic protein CpxP
 P0AE88	escherichia-coli-83333	P0AE88	cpxR	P0AE88	4	25	Transcriptional regulatory protein CpxR
 P0AE95	escherichia-coli-83333	P0AE95	csgE	P0AE95	1	6	Curli production assembly/transport component CsgE
-P0AEA1	shigella-flexneri	P0AEA1	csgF	P0AEA1	2	6	Curli production assembly/transport component CsgF
-P0AEA2	escherichia-coli-83333	P0AEA2	csgG	P0AEA2	0	5	Curli production assembly/transport component CsgG
+P0AEA1	shigella-flexneri	P0AEA1	csgF	P0AEA1	0	1	Curli production assembly/transport component CsgF
+P0AEA2	escherichia-coli-83333	P0AEA2	csgG	P0AEA2	0	4	Curli production assembly/transport component CsgG
 P0AEA5	escherichia-coli-83333	P0AEA5	cyoE	P0AEA5	0	4	Protoheme IX farnesyltransferase
 P0AEA8	escherichia-coli-83333	P0AEA8	cysG	P0AEA8	0	3	Siroheme synthase
-P0AEB0	escherichia-coli-83333	P0AEB0	cysW	P0AEB0	69	175	Sulfate transport system permease protein CysW
+P0AEB0	escherichia-coli-83333	P0AEB0	cysW	P0AEB0	69	174	Sulfate transport system permease protein CysW
 P0AEB2	escherichia-coli-83333	P0AEB2	dacA	P0AEB2	2	6	D-alanyl-D-alanine carboxypeptidase DacA
 P0AEB5	escherichia-coli-83333	P0AEB5	ynaI	P0AEB5	0	2	Low conductance mechanosensitive channel YnaI
 P0AEC0	escherichia-coli-83333	P0AEC0	yoaE	P0AEC0	0	1	UPF0053 inner membrane protein YoaE
@@ -955,91 +935,91 @@ P0AEC5	escherichia-coli-83333	P0AEC5	barA	P0AEC5	20	126	Signal transduction hist
 P0AEC8	escherichia-coli-83333	P0AEC8	dcuS	P0AEC8	2	3	Sensor histidine kinase DcuS
 P0AED0	escherichia-coli-83333	P0AED0	uspA	P0AED0	1	3	Universal stress protein A
 P0AED5	escherichia-coli-83333	P0AED5	uvrY	P0AED5	2	4	Response regulator UvrY
-P0AED8	shigella-flexneri	P0AED8	dapE	P0AED8	0	1	Succinyl-diaminopimelate desuccinylase
+P0AED8	shigella-flexneri	P0AED8	dapE	P0AED8	0	0	Succinyl-diaminopimelate desuccinylase
 P0AED9	escherichia-coli-83333	P0AED9	dcm	P0AED9	0	1	DNA-cytosine methyltransferase
 P0AEE1	escherichia-coli-83333	P0AEE1	dcrB	P0AEE1	1	6	Inner membrane lipoprotein DcrB
-P0AEE3	escherichia-coli-83333	P0AEE3	degS	P0AEE3	1	30	Serine endoprotease DegS
-P0AEE5	escherichia-coli-83333	P0AEE5	mglB	P0AEE5	9	193	D-galactose/methyl-galactoside binding periplasmic protein MglB
+P0AEE3	escherichia-coli-83333	P0AEE3	degS	P0AEE3	1	29	Serine endoprotease DegS
+P0AEE5	escherichia-coli-83333	P0AEE5	mglB	P0AEE5	8	188	D-galactose/methyl-galactoside binding periplasmic protein MglB
 P0AEE8	escherichia-coli-83333	P0AEE8	dam	P0AEE8	0	1	DNA adenine methylase
 P0AEF0	escherichia-coli-83333	P0AEF0	dnaC	P0AEF0	0	19	Replicative helicase loader DnaC
-P0AEF7	shigella-flexneri	P0AEF7	dpiA	P0AEF7	0	7	Transcriptional regulatory protein DpiA
-P0AEF8	escherichia-coli-83333	P0AEF8	dppB	P0AEF8	58	174	Dipeptide transport system permease protein DppB
-P0AEG1	escherichia-coli-83333	P0AEG1	dppC	P0AEG1	66	175	Dipeptide transport system permease protein DppC
+P0AEF7	shigella-flexneri	P0AEF7	dpiA	P0AEF7	0	0	Transcriptional regulatory protein DpiA
+P0AEF8	escherichia-coli-83333	P0AEF8	dppB	P0AEF8	58	173	Dipeptide transport system permease protein DppB
+P0AEG1	escherichia-coli-83333	P0AEG1	dppC	P0AEG1	66	174	Dipeptide transport system permease protein DppC
 P0AEG4	escherichia-coli-83333	P0AEG4	dsbA	P0AEG4	0	8	Thiol:disulfide interchange protein DsbA
 P0AEG6	escherichia-coli-83333	P0AEG6	dsbC	P0AEG6	1	2	Thiol:disulfide interchange protein DsbC
 P0AEG8	escherichia-coli-83333	P0AEG8	dsrB	P0AEG8	0	1	Protein DsrB
 P0AEH1	escherichia-coli-83333	P0AEH1	rseP	P0AEH1	0	1	Regulator of sigma-E protease RseP
 P0AEH5	escherichia-coli-83333	P0AEH5	elaB	P0AEH5	0	4	Protein ElaB
 P0AEI1	escherichia-coli-83333	P0AEI1	miaB	P0AEI1	0	5	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase
-P0AEI4	escherichia-coli-83333	P0AEI4	rimO	P0AEI4	0	3	Ribosomal protein uS12 methylthiotransferase RimO
+P0AEI4	escherichia-coli-83333	P0AEI4	rimO	P0AEI4	0	2	Ribosomal protein uS12 methylthiotransferase RimO
 P0AEJ0	escherichia-coli-83333	P0AEJ0	emrB	P0AEJ0	3	13	Multidrug export protein EmrB
 P0AEJ2	escherichia-coli-83333	P0AEJ2	entC	P0AEJ2	0	2	Isochorismate synthase EntC
 P0AEJ4	escherichia-coli-83333	P0AEJ4	envZ	P0AEJ4	6	32	Sensor histidine kinase EnvZ
 P0AEJ6	escherichia-coli-83333	P0AEJ6	eutB	P0AEJ6	1	5	Ethanolamine ammonia-lyase large subunit
 P0AEJ8	escherichia-coli-83333	P0AEJ8	eutN	P0AEJ8	0	6	Bacterial microcompartment shell vertex protein EutN
-P0AEK3	shigella-flexneri	P0AEK3	fabG	P0AEK3	1	31	3-oxoacyl-
-P0AEK6	shigella-flexneri	P0AEK6	fabI	P0AEK6	1	8	Enoyl-
-P0AEK9	shigella-flexneri	P0AEK9	fdnI	P0AEK9	2	16	Formate dehydrogenase, nitrate-inducible, cytochrome b556(Fdn) subunit
+P0AEK3	shigella-flexneri	P0AEK3	fabG	P0AEK3	1	7	3-oxoacyl-
+P0AEK6	shigella-flexneri	P0AEK6	fabI	P0AEK6	1	4	Enoyl-
+P0AEK9	shigella-flexneri	P0AEK9	fdnI	P0AEK9	1	3	Formate dehydrogenase, nitrate-inducible, cytochrome b556(Fdn) subunit
 P0AEL0	escherichia-coli-83333	P0AEL0	fdoI	P0AEL0	1	12	Formate dehydrogenase, cytochrome b556(fdo) subunit
 P0AEL3	escherichia-coli-83333	P0AEL3	feoA	P0AEL3	1	6	Fe(2+) transport protein A
-P0AEL6	escherichia-coli-83333	P0AEL6	fepB	P0AEL6	3	192	Ferric enterobactin-binding periplasmic protein FepB
+P0AEL6	escherichia-coli-83333	P0AEL6	fepB	P0AEL6	3	174	Ferric enterobactin-binding periplasmic protein FepB
 P0AEL8	escherichia-coli-83333	P0AEL8	fimZ	P0AEL8	1	5	Fimbriae Z protein
-P0AEM3	shigella-flexneri	P0AEM3	fkpB	P0AEM3	0	5	FKBP-type 16 kDa peptidyl-prolyl cis-trans isomerase
-P0AEM5	shigella-flexneri	P0AEM5	flgM	P0AEM5	2	12	Negative regulator of flagellin synthesis
+P0AEM3	shigella-flexneri	P0AEM3	fkpB	P0AEM3	0	0	FKBP-type 16 kDa peptidyl-prolyl cis-trans isomerase
+P0AEM5	shigella-flexneri	P0AEM5	flgM	P0AEM5	0	0	Negative regulator of flagellin synthesis
 P0AEM6	escherichia-coli-83333	P0AEM6	fliA	P0AEM6	2	17	RNA polymerase sigma factor FliA
-P0AEM9	escherichia-coli-83333	P0AEM9	tcyJ	P0AEM9	5	182	L-cystine-binding protein TcyJ
-P0AEN1	escherichia-coli-83333	P0AEN1	fre	P0AEN1	2	15	NAD(P)H-flavin reductase
-P0AEN7	shigella-flexneri	P0AEN7	ftsL	P0AEN7	3	20	Cell division protein FtsL
+P0AEM9	escherichia-coli-83333	P0AEM9	tcyJ	P0AEM9	3	179	L-cystine-binding protein TcyJ
+P0AEN1	escherichia-coli-83333	P0AEN1	fre	P0AEN1	2	14	NAD(P)H-flavin reductase
+P0AEN7	shigella-flexneri	P0AEN7	ftsL	P0AEN7	0	2	Cell division protein FtsL
 P0AEN8	escherichia-coli-83333	P0AEN8	fucU	P0AEN8	0	1	L-fucose mutarotase
 P0AEP1	escherichia-coli-83333	P0AEP1	galP	P0AEP1	0	1	Galactose-proton symporter
-P0AEP6	shigella-flexneri	P0AEP6	galU	P0AEP6	1	1	UTP--glucose-1-phosphate uridylyltransferase
+P0AEP6	shigella-flexneri	P0AEP6	galU	P0AEP6	0	0	UTP--glucose-1-phosphate uridylyltransferase
 P0AEP7	escherichia-coli-83333	P0AEP7	gcl	P0AEP7	2	6	Glyoxylate carboligase
 P0AEP9	escherichia-coli-83333	P0AEP9	glcD	P0AEP9	2	21	Glycolate oxidase subunit GlcD
-P0AEQ3	escherichia-coli-83333	P0AEQ3	glnH	P0AEQ3	4	188	Glutamine-binding periplasmic protein
-P0AEQ9	shigella-flexneri	P0AEQ9	glnP	P0AEQ9	72	161	Glutamine transport system permease protein GlnP
-P0AER0	escherichia-coli-83333	P0AER0	glpF	P0AER0	0	19	Glycerol uptake facilitator protein
-P0AER3	escherichia-coli-83333	P0AER3	gltJ	P0AER3	78	191	Glutamate/aspartate import permease protein GltJ
-P0AER5	escherichia-coli-83333	P0AER5	gltK	P0AER5	84	191	Glutamate/aspartate import permease protein GltK
+P0AEQ3	escherichia-coli-83333	P0AEQ3	glnH	P0AEQ3	2	173	Glutamine-binding periplasmic protein
+P0AEQ9	shigella-flexneri	P0AEQ9	glnP	P0AEQ9	10	18	Glutamine transport system permease protein GlnP
+P0AER0	escherichia-coli-83333	P0AER0	glpF	P0AER0	0	18	Glycerol uptake facilitator protein
+P0AER3	escherichia-coli-83333	P0AER3	gltJ	P0AER3	67	173	Glutamate/aspartate import permease protein GltJ
+P0AER5	escherichia-coli-83333	P0AER5	gltK	P0AER5	72	173	Glutamate/aspartate import permease protein GltK
 P0AER8	escherichia-coli-83333	P0AER8	gltS	P0AER8	0	1	Sodium/glutamate symporter
-P0AES0	escherichia-coli-83333	P0AES0	gss	P0AES0	0	4	Bifunctional glutathionylspermidine synthetase/amidase
+P0AES0	escherichia-coli-83333	P0AES0	gss	P0AES0	0	3	Bifunctional glutathionylspermidine synthetase/amidase
 P0AES2	escherichia-coli-83333	P0AES2	gudD	P0AES2	1	1	Glucarate dehydratase
-P0AES4	escherichia-coli-83333	P0AES4	gyrA	P0AES4	3	26	DNA gyrase subunit A
+P0AES4	escherichia-coli-83333	P0AES4	gyrA	P0AES4	3	24	DNA gyrase subunit A
 P0AES6	escherichia-coli-83333	P0AES6	gyrB	P0AES6	3	32	DNA gyrase subunit B
 P0AES9	escherichia-coli-83333	P0AES9	hdeA	P0AES9	0	2	Acid stress chaperone HdeA
 P0AET2	escherichia-coli-83333	P0AET2	hdeB	P0AET2	0	2	Acid stress chaperone HdeB
-P0AET8	escherichia-coli-83333	P0AET8	hdhA	P0AET8	0	33	7alpha-hydroxysteroid dehydrogenase
-P0AEU0	escherichia-coli-83333	P0AEU0	hisJ	P0AEU0	4	175	Histidine-binding periplasmic protein
-P0AEU6	shigella-flexneri	P0AEU6	hisM	P0AEU6	45	88	Histidine/lysine/arginine/ornithine transport system permease protein HisM
-P0AEV0	shigella-flexneri	P0AEV0	skp	P0AEV0	0	11	Chaperone protein Skp
-P0AEV3	shigella-flexneri	P0AEV3	rssB	P0AEV3	1	28	Regulator of RpoS
+P0AET8	escherichia-coli-83333	P0AET8	hdhA	P0AET8	0	29	7alpha-hydroxysteroid dehydrogenase
+P0AEU0	escherichia-coli-83333	P0AEU0	hisJ	P0AEU0	4	173	Histidine-binding periplasmic protein
+P0AEU6	shigella-flexneri	P0AEU6	hisM	P0AEU6	12	18	Histidine/lysine/arginine/ornithine transport system permease protein HisM
+P0AEV0	shigella-flexneri	P0AEV0	skp	P0AEV0	0	4	Chaperone protein Skp
+P0AEV3	shigella-flexneri	P0AEV3	rssB	P0AEV3	0	1	Regulator of RpoS
 P0AEV7	escherichia-coli-83333	P0AEV7	hycH	P0AEV7	0	2	Formate hydrogenlyase maturation protein HycH
 P0AEV9	escherichia-coli-83333	P0AEV9	hycI	P0AEV9	0	4	Hydrogenase 3 maturation protease
-P0AEW3	shigella-flexneri	P0AEW3	hyfE	P0AEW3	1	14	Hydrogenase-4 component E
+P0AEW3	shigella-flexneri	P0AEW3	hyfE	P0AEW3	0	3	Hydrogenase-4 component E
 P0AEW4	escherichia-coli-83333	P0AEW4	cpdA	P0AEW4	0	2	3,5-cyclic adenosine monophosphate phosphodiesterase CpdA
 P0AEW6	escherichia-coli-83333	P0AEW6	gsk	P0AEW6	0	6	Guanosine-inosine kinase
-P0AEX2	shigella-flexneri	P0AEX2	fruK	P0AEX2	0	3	1-phosphofructokinase
+P0AEX2	shigella-flexneri	P0AEX2	fruK	P0AEX2	0	0	1-phosphofructokinase
 P0AEX5	escherichia-coli-83333	P0AEX5	prkB	P0AEX5	0	2	Probable phosphoribulokinase
-P0AEX7	escherichia-coli-83333	P0AEX7	livH	P0AEX7	47	174	High-affinity branched-chain amino acid transport system permease protein LivH
-P0AEX9	escherichia-coli-83333	P0AEX9	malE	P0AEX9	2	188	Maltose/maltodextrin-binding periplasmic protein
+P0AEX7	escherichia-coli-83333	P0AEX7	livH	P0AEX7	46	173	High-affinity branched-chain amino acid transport system permease protein LivH
+P0AEX9	escherichia-coli-83333	P0AEX9	malE	P0AEX9	2	187	Maltose/maltodextrin-binding periplasmic protein
 P0AEY3	escherichia-coli-83333	P0AEY3	mazG	P0AEY3	0	4	Nucleoside triphosphate pyrophosphohydrolase
 P0AEY5	escherichia-coli-83333	P0AEY5	mdaB	P0AEY5	0	1	NADPH:quinone oxidoreductase MdaB
-P0AEY8	escherichia-coli-83333	P0AEY8	mdfA	P0AEY8	0	1	Multidrug transporter MdfA
+P0AEY8	escherichia-coli-83333	P0AEY8	mdfA	P0AEY8	0	0	Multidrug transporter MdfA
 P0AEZ1	escherichia-coli-83333	P0AEZ1	metF	P0AEZ1	0	1	5,10-methylenetetrahydrofolate reductase
-P0AEZ6	shigella-flexneri	P0AEZ6	minD	P0AEZ6	2	6	Septum site-determining protein MinD
-P0AEZ7	escherichia-coli-83333	P0AEZ7	mltD	P0AEZ7	0	66	Membrane-bound lytic murein transglycosylase D
-P0AEZ9	escherichia-coli-83333	P0AEZ9	moaB	P0AEZ9	0	4	Molybdenum cofactor biosynthesis protein B
-P0AF01	escherichia-coli-83333	P0AF01	modB	P0AF01	82	192	Molybdenum transport system permease protein ModB
-P0AF05	shigella-flexneri	P0AF05	mog	P0AF05	1	11	Molybdopterin adenylyltransferase
-P0AF06	escherichia-coli-83333	P0AF06	motB	P0AF06	1	20	Motility protein B
-P0AF08	escherichia-coli-83333	P0AF08	mrp	P0AF08	0	6	Iron-sulfur cluster carrier protein
+P0AEZ6	shigella-flexneri	P0AEZ6	minD	P0AEZ6	1	2	Septum site-determining protein MinD
+P0AEZ7	escherichia-coli-83333	P0AEZ7	mltD	P0AEZ7	0	58	Membrane-bound lytic murein transglycosylase D
+P0AEZ9	escherichia-coli-83333	P0AEZ9	moaB	P0AEZ9	0	3	Molybdenum cofactor biosynthesis protein B
+P0AF01	escherichia-coli-83333	P0AF01	modB	P0AF01	70	174	Molybdenum transport system permease protein ModB
+P0AF05	shigella-flexneri	P0AF05	mog	P0AF05	0	3	Molybdopterin adenylyltransferase
+P0AF06	escherichia-coli-83333	P0AF06	motB	P0AF06	1	19	Motility protein B
+P0AF08	escherichia-coli-83333	P0AF08	mrp	P0AF08	0	5	Iron-sulfur cluster carrier protein
 P0AF10	escherichia-coli-83333	P0AF10	mtlR	P0AF10	1	1	Mannitol operon repressor
-P0AF15	shigella-flexneri	P0AF15	mtnN	P0AF15	0	3	5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase
+P0AF15	shigella-flexneri	P0AF15	mtnN	P0AF15	0	0	5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase
 P0AF16	escherichia-coli-83333	P0AF16	murJ	P0AF16	0	1	Lipid II flippase MurJ
 P0AF18	escherichia-coli-83333	P0AF18	nagA	P0AF18	0	3	N-acetylglucosamine-6-phosphate deacetylase
-P0AF23	shigella-flexneri	P0AF23	nagC	P0AF23	0	2	N-acetylglucosamine repressor
+P0AF23	shigella-flexneri	P0AF23	nagC	P0AF23	0	1	N-acetylglucosamine repressor
 P0AF24	escherichia-coli-83333	P0AF24	nagD	P0AF24	0	2	Ribonucleotide monophosphatase NagD
 P0AF26	escherichia-coli-83333	P0AF26	narJ	P0AF26	3	6	Nitrate reductase molybdenum cofactor assembly chaperone NarJ
-P0AF31	shigella-flexneri	P0AF31	narL	P0AF31	2	5	Nitrate/nitrite response regulator protein NarL
+P0AF31	shigella-flexneri	P0AF31	narL	P0AF31	1	1	Nitrate/nitrite response regulator protein NarL
 P0AF32	escherichia-coli-83333	P0AF32	narV	P0AF32	4	8	Respiratory nitrate reductase 2 gamma chain
 P0AF36	escherichia-coli-83333	P0AF36	zapB	P0AF36	0	4	Cell division protein ZapB
 P0AF40	escherichia-coli-83333	P0AF40	yijD	P0AF40	0	2	Inner membrane protein YijD
@@ -1052,145 +1032,144 @@ P0AF80	escherichia-coli-83333	P0AF80	yjfL	P0AF80	0	1	UPF0719 inner membrane prot
 P0AF82	escherichia-coli-83333	P0AF82	yjfN	P0AF82	0	1	Uncharacterized protein YjfN
 P0AF90	escherichia-coli-83333	P0AF90	rraB	P0AF90	0	6	Regulator of ribonuclease activity B
 P0AF93	escherichia-coli-83333	P0AF93	ridA	P0AF93	0	1	2-iminobutanoate/2-iminopropanoate deaminase
-P0AF98	escherichia-coli-83333	P0AF98	lptF	P0AF98	36	179	Lipopolysaccharide export system permease protein LptF
-P0AFA4	shigella-flexneri	P0AFA4	narX	P0AFA4	2	3	Nitrate/nitrite sensor protein NarX
-P0AFA5	escherichia-coli-83333	P0AFA5	nfrB	P0AFA5	0	9	Bacteriophage adsorption protein B
-P0AFA9	escherichia-coli-83333	P0AFA9	nikC	P0AFA9	55	174	Nickel transport system permease protein NikC
+P0AF98	escherichia-coli-83333	P0AF98	lptF	P0AF98	36	178	Lipopolysaccharide export system permease protein LptF
+P0AFA4	shigella-flexneri	P0AFA4	narX	P0AFA4	1	1	Nitrate/nitrite sensor protein NarX
+P0AFA5	escherichia-coli-83333	P0AFA5	nfrB	P0AFA5	0	8	Bacteriophage adsorption protein B
+P0AFA9	escherichia-coli-83333	P0AFA9	nikC	P0AFA9	55	173	Nickel transport system permease protein NikC
 P0AFB1	escherichia-coli-83333	P0AFB1	nlpI	P0AFB1	1	2	Lipoprotein NlpI
 P0AFB5	escherichia-coli-83333	P0AFB5	glnL	P0AFB5	1	10	Sensory histidine kinase/phosphatase NtrB
 P0AFB8	escherichia-coli-83333	P0AFB8	glnG	P0AFB8	2	15	DNA-binding transcriptional regulator NtrC
-P0AFC2	shigella-flexneri	P0AFC2	nudB	P0AFC2	0	5	Dihydroneopterin triphosphate diphosphatase
-P0AFC6	shigella-flexneri	P0AFC6	nuoA	P0AFC6	3	41	NADH-quinone oxidoreductase subunit A
-P0AFD0	shigella-flexneri	P0AFD0	nuoB	P0AFD0	5	47	NADH-quinone oxidoreductase subunit B
-P0AFD3	shigella-flexneri	P0AFD3	nuoE	P0AFD3	0	31	NADH-quinone oxidoreductase subunit E
-P0AFD4	escherichia-coli-83333	P0AFD4	nuoH	P0AFD4	6	76	NADH-quinone oxidoreductase subunit H
-P0AFD9	shigella-flexneri	P0AFD9	nuoI	P0AFD9	11	50	NADH-quinone oxidoreductase subunit I
-P0AFE3	shigella-flexneri	P0AFE3	nuoJ	P0AFE3	3	20	NADH-quinone oxidoreductase subunit J
-P0AFE7	shigella-flexneri	P0AFE7	nuoK	P0AFE7	1	20	NADH-quinone oxidoreductase subunit K
-P0AFE8	escherichia-coli-83333	P0AFE8	nuoM	P0AFE8	5	82	NADH-quinone oxidoreductase subunit M
-P0AFF0	escherichia-coli-83333	P0AFF0	nuoN	P0AFF0	4	78	NADH-quinone oxidoreductase subunit N
+P0AFC2	shigella-flexneri	P0AFC2	nudB	P0AFC2	0	1	Dihydroneopterin triphosphate diphosphatase
+P0AFC6	shigella-flexneri	P0AFC6	nuoA	P0AFC6	1	7	NADH-quinone oxidoreductase subunit A
+P0AFD0	shigella-flexneri	P0AFD0	nuoB	P0AFD0	1	7	NADH-quinone oxidoreductase subunit B
+P0AFD3	shigella-flexneri	P0AFD3	nuoE	P0AFD3	0	6	NADH-quinone oxidoreductase subunit E
+P0AFD4	escherichia-coli-83333	P0AFD4	nuoH	P0AFD4	4	71	NADH-quinone oxidoreductase subunit H
+P0AFD9	shigella-flexneri	P0AFD9	nuoI	P0AFD9	1	7	NADH-quinone oxidoreductase subunit I
+P0AFE3	shigella-flexneri	P0AFE3	nuoJ	P0AFE3	2	6	NADH-quinone oxidoreductase subunit J
+P0AFE7	shigella-flexneri	P0AFE7	nuoK	P0AFE7	1	6	NADH-quinone oxidoreductase subunit K
+P0AFE8	escherichia-coli-83333	P0AFE8	nuoM	P0AFE8	5	73	NADH-quinone oxidoreductase subunit M
+P0AFF0	escherichia-coli-83333	P0AFF0	nuoN	P0AFF0	2	70	NADH-quinone oxidoreductase subunit N
 P0AFF2	escherichia-coli-83333	P0AFF2	nupC	P0AFF2	0	1	Nucleoside permease NupC
 P0AFF4	escherichia-coli-83333	P0AFF4	nupG	P0AFF4	0	1	Nucleoside permease NupG
-P0AFF6	escherichia-coli-83333	P0AFF6	nusA	P0AFF6	6	64	Transcription termination/antitermination protein NusA
+P0AFF6	escherichia-coli-83333	P0AFF6	nusA	P0AFF6	6	62	Transcription termination/antitermination protein NusA
 P0AFG0	escherichia-coli-83333	P0AFG0	nusG	P0AFG0	3	62	Transcription termination/antitermination protein NusG
-P0AFG3	escherichia-coli-83333	P0AFG3	sucA	P0AFG3	0	33	2-oxoglutarate dehydrogenase E1 component
-P0AFG6	escherichia-coli-83333	P0AFG6	sucB	P0AFG6	1	39	Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehy
+P0AFG3	escherichia-coli-83333	P0AFG3	sucA	P0AFG3	0	31	2-oxoglutarate dehydrogenase E1 component
+P0AFG6	escherichia-coli-83333	P0AFG6	sucB	P0AFG6	1	38	Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehy
 P0AFG8	escherichia-coli-83333	P0AFG8	aceE	P0AFG8	1	13	Pyruvate dehydrogenase E1 component
-P0AFH5	shigella-flexneri	P0AFH5	oppB	P0AFH5	56	138	Oligopeptide transport system permease protein OppB
-P0AFH6	escherichia-coli-83333	P0AFH6	oppC	P0AFH6	75	183	Oligopeptide transport system permease protein OppC
+P0AFH5	shigella-flexneri	P0AFH5	oppB	P0AFH5	11	18	Oligopeptide transport system permease protein OppB
+P0AFH6	escherichia-coli-83333	P0AFH6	oppC	P0AFH6	68	173	Oligopeptide transport system permease protein OppC
 P0AFH8	escherichia-coli-83333	P0AFH8	osmY	P0AFH8	0	1	Osmotically-inducible protein Y
 P0AFI0	escherichia-coli-83333	P0AFI0	oxc	P0AFI0	0	3	Oxalyl-CoA decarboxylase
 P0AFI2	escherichia-coli-83333	P0AFI2	parC	P0AFI2	3	11	DNA topoisomerase 4 subunit A
-P0AFI5	escherichia-coli-83333	P0AFI5	pbpG	P0AFI5	2	6	D-alanyl-D-alanine endopeptidase
-P0AFI8	shigella-flexneri	P0AFI8	pdxH	P0AFI8	0	2	Pyridoxine/pyridoxamine 5'-phosphate oxidase
-P0AFJ5	escherichia-coli-83333	P0AFJ5	phoB	P0AFJ5	3	33	Phosphate regulon transcriptional regulatory protein PhoB
+P0AFI5	escherichia-coli-83333	P0AFI5	pbpG	P0AFI5	2	5	D-alanyl-D-alanine endopeptidase
+P0AFI8	shigella-flexneri	P0AFI8	pdxH	P0AFI8	0	0	Pyridoxine/pyridoxamine 5'-phosphate oxidase
+P0AFJ5	escherichia-coli-83333	P0AFJ5	phoB	P0AFJ5	3	27	Phosphate regulon transcriptional regulatory protein PhoB
 P0AFJ7	escherichia-coli-83333	P0AFJ7	pitA	P0AFJ7	0	1	Low-affinity inorganic phosphate transporter PitA
 P0AFK0	escherichia-coli-83333	P0AFK0	pmbA	P0AFK0	1	3	Metalloprotease PmbA
-P0AFK5	shigella-flexneri	P0AFK5	potB	P0AFK5	53	141	Spermidine/putrescine transport system permease protein PotB
-P0AFK6	escherichia-coli-83333	P0AFK6	potC	P0AFK6	78	186	Spermidine/putrescine transport system permease protein PotC
-P0AFL0	shigella-flexneri	P0AFL0	potD	P0AFL0	1	3	Spermidine/putrescine-binding periplasmic protein
-P0AFL1	escherichia-coli-83333	P0AFL1	potI	P0AFL1	71	188	Putrescine transport system permease protein PotI
-P0AFL3	escherichia-coli-83333	P0AFL3	ppiA	P0AFL3	4	113	Peptidyl-prolyl cis-trans isomerase A
+P0AFK5	shigella-flexneri	P0AFK5	potB	P0AFK5	10	19	Spermidine/putrescine transport system permease protein PotB
+P0AFK6	escherichia-coli-83333	P0AFK6	potC	P0AFK6	70	174	Spermidine/putrescine transport system permease protein PotC
+P0AFL0	shigella-flexneri	P0AFL0	potD	P0AFL0	1	1	Spermidine/putrescine-binding periplasmic protein
+P0AFL1	escherichia-coli-83333	P0AFL1	potI	P0AFL1	62	173	Putrescine transport system permease protein PotI
+P0AFL3	escherichia-coli-83333	P0AFL3	ppiA	P0AFL3	4	111	Peptidyl-prolyl cis-trans isomerase A
 P0AFL6	escherichia-coli-83333	P0AFL6	ppx	P0AFL6	1	3	Exopolyphosphatase
-P0AFM2	escherichia-coli-83333	P0AFM2	proX	P0AFM2	4	175	Glycine betaine/proline betaine-binding periplasmic protein
-P0AFM8	shigella-flexneri	P0AFM8	pspA	P0AFM8	0	3	Phage shock protein A
-P0AFM9	escherichia-coli-83333	P0AFM9	pspB	P0AFM9	0	2	Phage shock protein B
-P0AFN5	shigella-flexneri	P0AFN5	pspC	P0AFN5	0	4	Phage shock protein C
-P0AFN9	shigella-flexneri	P0AFN9	yadH	P0AFN9	6	189	Inner membrane transport permease YadH
+P0AFM2	escherichia-coli-83333	P0AFM2	proX	P0AFM2	4	174	Glycine betaine/proline betaine-binding periplasmic protein
+P0AFM8	shigella-flexneri	P0AFM8	pspA	P0AFM8	0	1	Phage shock protein A
+P0AFM9	escherichia-coli-83333	P0AFM9	pspB	P0AFM9	0	1	Phage shock protein B
+P0AFN5	shigella-flexneri	P0AFN5	pspC	P0AFN5	0	1	Phage shock protein C
+P0AFN9	shigella-flexneri	P0AFN9	yadH	P0AFN9	1	18	Inner membrane transport permease YadH
 P0AFP0	escherichia-coli-83333	P0AFP0	yadS	P0AFP0	0	1	UPF0126 inner membrane protein YadS
 P0AFP2	escherichia-coli-83333	P0AFP2	atl	P0AFP2	0	3	DNA base-flipping protein
-P0AFP4	escherichia-coli-83333	P0AFP4	ybbO	P0AFP4	0	4	Uncharacterized oxidoreductase YbbO
+P0AFP4	escherichia-coli-83333	P0AFP4	ybbO	P0AFP4	0	3	Uncharacterized oxidoreductase YbbO
 P0AFP6	escherichia-coli-83333	P0AFP6	ybgI	P0AFP6	0	1	GTP cyclohydrolase 1 type 2 homolog
-P0AFQ1	shigella-flexneri	P0AFQ1	ybhR	P0AFQ1	21	163	Probable multidrug ABC transporter permease YbhR
-P0AFQ2	escherichia-coli-83333	P0AFQ2	ybhS	P0AFQ2	28	190	Probable multidrug ABC transporter permease YbhS
+P0AFQ1	shigella-flexneri	P0AFQ1	ybhR	P0AFQ1	2	18	Probable multidrug ABC transporter permease YbhR
+P0AFQ2	escherichia-coli-83333	P0AFQ2	ybhS	P0AFQ2	24	173	Probable multidrug ABC transporter permease YbhS
 P0AFQ5	escherichia-coli-83333	P0AFQ5	rutC	P0AFQ5	0	1	3-aminoacrylate deaminase RutC
 P0AFQ7	escherichia-coli-83333	P0AFQ7	ycfH	P0AFQ7	0	2	Uncharacterized metal-dependent hydrolase YcfH
 P0AFR1	shigella-flexneri	P0AFR1	rssA	P0AFR1	0	1	NTE family protein RssA
-P0AFR2	escherichia-coli-83333	P0AFR2	dauA	P0AFR2	0	19	C4-dicarboxylic acid transporter DauA
-P0AFR8	shigella-flexneri	P0AFR8	ycjO	P0AFR8	46	132	Inner membrane ABC transporter permease protein YcjO
-P0AFS0	shigella-flexneri	P0AFS0	ydcV	P0AFS0	50	126	Inner membrane ABC transporter permease protein YdcV
-P0AFS2	shigella-flexneri	P0AFS2	lsrD	P0AFS2	25	119	Autoinducer 2 import system permease protein LsrD
-P0AFS3	escherichia-coli-83333	P0AFS3	folM	P0AFS3	0	34	Dihydromonapterin reductase
-P0AFT1	shigella-flexneri	P0AFT1	mepM	P0AFT1	0	2	Murein DD-endopeptidase MepM
-P0AFT4	shigella-flexneri	P0AFT4	tcyL	P0AFT4	50	107	L-cystine transport system permease protein TcyL
+P0AFR2	escherichia-coli-83333	P0AFR2	dauA	P0AFR2	0	18	C4-dicarboxylic acid transporter DauA
+P0AFR8	shigella-flexneri	P0AFR8	ycjO	P0AFR8	6	18	Inner membrane ABC transporter permease protein YcjO
+P0AFS0	shigella-flexneri	P0AFS0	ydcV	P0AFS0	11	18	Inner membrane ABC transporter permease protein YdcV
+P0AFS2	shigella-flexneri	P0AFS2	lsrD	P0AFS2	2	18	Autoinducer 2 import system permease protein LsrD
+P0AFS3	escherichia-coli-83333	P0AFS3	folM	P0AFS3	0	30	Dihydromonapterin reductase
+P0AFT1	shigella-flexneri	P0AFT1	mepM	P0AFT1	0	0	Murein DD-endopeptidase MepM
+P0AFT4	shigella-flexneri	P0AFT4	tcyL	P0AFT4	12	18	L-cystine transport system permease protein TcyL
 P0AFT5	escherichia-coli-83333	P0AFT5	btsR	P0AFT5	1	3	Transcriptional regulatory protein BtsR
 P0AFT8	escherichia-coli-83333	P0AFT8	yeiW	P0AFT8	0	5	UPF0153 protein YeiW
-P0AFU0	escherichia-coli-83333	P0AFU0	yejB	P0AFU0	66	176	Inner membrane ABC transporter permease protein YejB
+P0AFU0	escherichia-coli-83333	P0AFU0	yejB	P0AFU0	65	173	Inner membrane ABC transporter permease protein YejB
 P0AFU2	escherichia-coli-83333	P0AFU2	yfbS	P0AFU2	0	1	Uncharacterized transporter YfbS
-P0AFU5	escherichia-coli-o157-h7	P0AFU5	qseF	P0AFU5	0	9	Transcriptional regulatory protein QseF
 P0AFU6	escherichia-coli-83333	P0AFU6	yiiF	P0AFU6	0	1	Uncharacterized protein YiiF
 P0AFV0	escherichia-coli-83333	P0AFV0	yibH	P0AFV0	0	1	Inner membrane protein YibH
 P0AFV2	escherichia-coli-83333	P0AFV2	yhiD	P0AFV2	0	4	Putative magnesium transporter YhiD
 P0AFW0	escherichia-coli-83333	P0AFW0	rfaH	P0AFW0	1	5	Transcription antitermination protein RfaH
-P0AFW2	escherichia-coli-83333	P0AFW2	rmf	P0AFW2	2	52	Ribosome modulation factor
-P0AFW7	shigella-flexneri	P0AFW7	rnk	P0AFW7	0	6	Regulator of nucleoside diphosphate kinase
+P0AFW2	escherichia-coli-83333	P0AFW2	rmf	P0AFW2	2	46	Ribosome modulation factor
+P0AFW7	shigella-flexneri	P0AFW7	rnk	P0AFW7	0	0	Regulator of nucleoside diphosphate kinase
 P0AFW9	shigella-flexneri	P0AFW9	rof	P0AFW9	1	2	Protein rof
-P0AFX0	escherichia-coli-83333	P0AFX0	hpf	P0AFX0	4	53	Ribosome hibernation promoting factor
+P0AFX0	escherichia-coli-83333	P0AFX0	hpf	P0AFX0	3	52	Ribosome hibernation promoting factor
 P0AFX4	escherichia-coli-83333	P0AFX4	rsd	P0AFX4	2	16	Regulator of sigma D
 P0AFX7	escherichia-coli-83333	P0AFX7	rseA	P0AFX7	5	11	Anti-sigma-E factor RseA
 P0AFX9	escherichia-coli-83333	P0AFX9	rseB	P0AFX9	1	5	Sigma-E factor regulatory protein RseB
-P0AFZ0	shigella-flexneri	P0AFZ0	seqA	P0AFZ0	0	3	Negative modulator of initiation of replication
-P0AFZ2	shigella-flexneri	P0AFZ2	sseB	P0AFZ2	1	20	Protein SseB
+P0AFZ0	shigella-flexneri	P0AFZ0	seqA	P0AFZ0	0	0	Negative modulator of initiation of replication
+P0AFZ2	shigella-flexneri	P0AFZ2	sseB	P0AFZ2	0	3	Protein SseB
 P0AFZ3	escherichia-coli-83333	P0AFZ3	sspB	P0AFZ3	1	10	Stringent starvation protein B
 P0AFZ5	escherichia-coli-83333	P0AFZ5	sulA	P0AFZ5	1	3	Cell division inhibitor SulA
-P0AFZ7	escherichia-coli-83333	P0AFZ7	trkH	P0AFZ7	2	5	Trk system potassium uptake protein TrkH
+P0AFZ7	escherichia-coli-83333	P0AFZ7	trkH	P0AFZ7	2	4	Trk system potassium uptake protein TrkH
 P0AG03	escherichia-coli-83333	P0AG03	ubiX	P0AG03	0	1	Flavin prenyltransferase UbiX
 P0AG07	escherichia-coli-83333	P0AG07	rpe	P0AG07	0	22	Ribulose-phosphate 3-epimerase
-P0AG11	escherichia-coli-83333	P0AG11	umuD	P0AG11	1	17	Protein UmuD
-P0AG17	shigella-flexneri	P0AG17	purF	P0AG17	0	4	Amidophosphoribosyltransferase
-P0AG20	escherichia-coli-83333	P0AG20	relA	P0AG20	1	49	GTP pyrophosphokinase
-P0AG24	escherichia-coli-83333	P0AG24	spoT	P0AG24	1	12	Bifunctional (p)ppGpp synthase/hydrolase SpoT
+P0AG11	escherichia-coli-83333	P0AG11	umuD	P0AG11	1	15	Protein UmuD
+P0AG17	shigella-flexneri	P0AG17	purF	P0AG17	0	0	Amidophosphoribosyltransferase
+P0AG20	escherichia-coli-83333	P0AG20	relA	P0AG20	1	47	GTP pyrophosphokinase
+P0AG24	escherichia-coli-83333	P0AG24	spoT	P0AG24	1	11	Bifunctional (p)ppGpp synthase/hydrolase SpoT
 P0AG27	escherichia-coli-83333	P0AG27	yibN	P0AG27	1	36	Uncharacterized protein YibN
-P0AG33	shigella-flexneri	P0AG33	rho	P0AG33	1	9	Transcription termination factor Rho
+P0AG33	shigella-flexneri	P0AG33	rho	P0AG33	0	3	Transcription termination factor Rho
 P0AG34	escherichia-coli-83333	P0AG34	rhtB	P0AG34	0	1	Homoserine/homoserine lactone efflux protein
 P0AG38	escherichia-coli-83333	P0AG38	rhtC	P0AG38	0	1	Threonine efflux protein
-P0AG43	shigella-flexneri	P0AG43	ribF	P0AG43	0	9	Bifunctional riboflavin kinase/FMN adenylyltransferase
-P0AG44	escherichia-coli-83333	P0AG44	rplQ	P0AG44	7	153	Large ribosomal subunit protein bL17
-P0AG48	escherichia-coli-83333	P0AG48	rplU	P0AG48	5	138	Large ribosomal subunit protein bL21
-P0AG51	escherichia-coli-83333	P0AG51	rpmD	P0AG51	3	123	Large ribosomal subunit protein uL30
-P0AG55	escherichia-coli-83333	P0AG55	rplF	P0AG55	0	168	Large ribosomal subunit protein uL6
-P0AG59	escherichia-coli-83333	P0AG59	rpsN	P0AG59	11	144	Small ribosomal subunit protein uS14
-P0AG63	escherichia-coli-83333	P0AG63	rpsQ	P0AG63	6	168	Small ribosomal subunit protein uS17
-P0AG70	shigella-flexneri	P0AG70	rpsA	P0AG70	0	87	Small ribosomal subunit protein bS1
+P0AG43	shigella-flexneri	P0AG43	ribF	P0AG43	0	1	Bifunctional riboflavin kinase/FMN adenylyltransferase
+P0AG44	escherichia-coli-83333	P0AG44	rplQ	P0AG44	6	149	Large ribosomal subunit protein bL17
+P0AG48	escherichia-coli-83333	P0AG48	rplU	P0AG48	5	134	Large ribosomal subunit protein bL21
+P0AG51	escherichia-coli-83333	P0AG51	rpmD	P0AG51	2	119	Large ribosomal subunit protein uL30
+P0AG55	escherichia-coli-83333	P0AG55	rplF	P0AG55	0	164	Large ribosomal subunit protein uL6
+P0AG59	escherichia-coli-83333	P0AG59	rpsN	P0AG59	11	140	Small ribosomal subunit protein uS14
+P0AG63	escherichia-coli-83333	P0AG63	rpsQ	P0AG63	6	163	Small ribosomal subunit protein uS17
+P0AG70	shigella-flexneri	P0AG70	rpsA	P0AG70	0	9	Small ribosomal subunit protein bS1
 P0AG71	escherichia-coli-83333	P0AG71	rmuC	P0AG71	0	2	DNA recombination protein RmuC
-P0AG76	escherichia-coli-83333	P0AG76	sbcD	P0AG76	1	46	Nuclease SbcCD subunit D
-P0AG78	escherichia-coli-83333	P0AG78	sbp	P0AG78	3	174	Sulfate-binding protein
-P0AG80	escherichia-coli-83333	P0AG80	ugpB	P0AG80	4	179	sn-glycerol-3-phosphate-binding periplasmic protein UgpB
-P0AG82	escherichia-coli-83333	P0AG82	pstS	P0AG82	3	179	Phosphate-binding protein PstS
+P0AG76	escherichia-coli-83333	P0AG76	sbcD	P0AG76	1	41	Nuclease SbcCD subunit D
+P0AG78	escherichia-coli-83333	P0AG78	sbp	P0AG78	3	173	Sulfate-binding protein
+P0AG80	escherichia-coli-83333	P0AG80	ugpB	P0AG80	4	178	sn-glycerol-3-phosphate-binding periplasmic protein UgpB
+P0AG82	escherichia-coli-83333	P0AG82	pstS	P0AG82	3	178	Phosphate-binding protein PstS
 P0AG84	escherichia-coli-83333	P0AG84	yghA	P0AG84	0	29	Uncharacterized oxidoreductase YghA
 P0AG86	escherichia-coli-83333	P0AG86	secB	P0AG86	0	14	Protein-export protein SecB
 P0AG90	escherichia-coli-83333	P0AG90	secD	P0AG90	1	10	Protein translocase subunit SecD
 P0AG93	escherichia-coli-83333	P0AG93	secF	P0AG93	1	9	Protein translocase subunit SecF
 P0AG96	escherichia-coli-83333	P0AG96	secE	P0AG96	1	62	Protein translocase subunit SecE
 P0AG99	escherichia-coli-83333	P0AG99	secG	P0AG99	1	40	Protein-export membrane protein SecG
-P0AGA2	escherichia-coli-83333	P0AGA2	secY	P0AGA2	5	79	Protein translocase subunit SecY
+P0AGA2	escherichia-coli-83333	P0AGA2	secY	P0AGA2	5	78	Protein translocase subunit SecY
 P0AGA6	escherichia-coli-83333	P0AGA6	uhpA	P0AGA6	1	5	Transcriptional regulatory protein UhpA
 P0AGB0	escherichia-coli-83333	P0AGB0	serB	P0AGB0	0	3	Phosphoserine phosphatase
-P0AGB3	escherichia-coli-83333	P0AGB3	rpoH	P0AGB3	4	31	RNA polymerase sigma factor RpoH
+P0AGB3	escherichia-coli-83333	P0AGB3	rpoH	P0AGB3	4	30	RNA polymerase sigma factor RpoH
 P0AGB6	escherichia-coli-83333	P0AGB6	rpoE	P0AGB6	3	28	ECF RNA polymerase sigma-E factor
 P0AGC0	escherichia-coli-83333	P0AGC0	uhpT	P0AGC0	0	1	Hexose-6-phosphate:phosphate antiporter
 P0AGC3	escherichia-coli-83333	P0AGC3	slt	P0AGC3	0	2	Soluble lytic murein transglycosylase
 P0AGC7	escherichia-coli-83333	P0AGC7	ytjB	P0AGC7	0	2	Probable inner membrane protein Smp
 P0AGD1	escherichia-coli-83333	P0AGD1	sodC	P0AGD1	2	23	Superoxide dismutase
-P0AGD3	escherichia-coli-83333	P0AGD3	sodB	P0AGD3	0	87	Superoxide dismutase
-P0AGD7	escherichia-coli-83333	P0AGD7	ffh	P0AGD7	3	81	Signal recognition particle protein
+P0AGD3	escherichia-coli-83333	P0AGD3	sodB	P0AGD3	0	82	Superoxide dismutase
+P0AGD7	escherichia-coli-83333	P0AGD7	ffh	P0AGD7	3	78	Signal recognition particle protein
 P0AGE0	escherichia-coli-83333	P0AGE0	ssb	P0AGE0	8	36	Single-stranded DNA-binding protein
-P0AGE9	escherichia-coli-83333	P0AGE9	sucD	P0AGE9	1	10	Succinate--CoA ligase
+P0AGE9	escherichia-coli-83333	P0AGE9	sucD	P0AGE9	1	9	Succinate--CoA ligase
 P0AGF2	escherichia-coli-83333	P0AGF2	csdE	P0AGF2	5	16	Sulfur acceptor protein CsdE
 P0AGF4	escherichia-coli-83333	P0AGF4	xylE	P0AGF4	0	1	D-xylose-proton symporter
 P0AGF6	escherichia-coli-83333	P0AGF6	tdcB	P0AGF6	1	4	L-threonine dehydratase catabolic TdcB
 P0AGG0	escherichia-coli-83333	P0AGG0	thiL	P0AGG0	0	2	Thiamine-monophosphate kinase
-P0AGG7	shigella-flexneri	P0AGG7	trxC	P0AGG7	1	7	Thioredoxin 2
+P0AGG7	shigella-flexneri	P0AGG7	trxC	P0AGG7	0	1	Thioredoxin 2
 P0AGG8	escherichia-coli-83333	P0AGG8	tldD	P0AGG8	1	1	Metalloprotease TldD
-P0AGH1	escherichia-coli-83333	P0AGH1	yhhJ	P0AGH1	28	174	Inner membrane transport permease YhhJ
-P0AGH3	escherichia-coli-83333	P0AGH3	sapB	P0AGH3	58	180	Putrescine export system permease protein SapB
-P0AGH7	shigella-flexneri	P0AGH7	sapC	P0AGH7	53	135	Peptide transport system permease protein SapC
-P0AGH8	escherichia-coli-83333	P0AGH8	pstC	P0AGH8	63	175	Phosphate transport system permease protein PstC
-P0AGI1	escherichia-coli-83333	P0AGI1	rbsC	P0AGI1	41	176	Ribose import permease protein RbsC
-P0AGI4	escherichia-coli-83333	P0AGI4	xylH	P0AGI4	37	175	Xylose transport system permease protein XylH
+P0AGH1	escherichia-coli-83333	P0AGH1	yhhJ	P0AGH1	27	173	Inner membrane transport permease YhhJ
+P0AGH3	escherichia-coli-83333	P0AGH3	sapB	P0AGH3	54	173	Putrescine export system permease protein SapB
+P0AGH7	shigella-flexneri	P0AGH7	sapC	P0AGH7	11	18	Peptide transport system permease protein SapC
+P0AGH8	escherichia-coli-83333	P0AGH8	pstC	P0AGH8	63	174	Phosphate transport system permease protein PstC
+P0AGI1	escherichia-coli-83333	P0AGI1	rbsC	P0AGI1	40	175	Ribose import permease protein RbsC
+P0AGI4	escherichia-coli-83333	P0AGI4	xylH	P0AGI4	36	174	Xylose transport system permease protein XylH
 P0AGI8	escherichia-coli-83333	P0AGI8	trkA	P0AGI8	1	3	Trk system potassium uptake protein TrkA
 P0AGJ2	escherichia-coli-83333	P0AGJ2	trmH	P0AGJ2	1	42	tRNA (guanosine(18)-2'-O)-methyltransferase
-P0AGJ5	escherichia-coli-83333	P0AGJ5	yfiF	P0AGJ5	2	60	Uncharacterized tRNA/rRNA methyltransferase YfiF
+P0AGJ5	escherichia-coli-83333	P0AGJ5	yfiF	P0AGJ5	2	56	Uncharacterized tRNA/rRNA methyltransferase YfiF
 P0AGJ7	escherichia-coli-83333	P0AGJ7	trmL	P0AGJ7	0	1	tRNA (cytidine(34)-2'-O)-methyltransferase
 P0AGJ9	escherichia-coli-83333	P0AGJ9	tyrS	P0AGJ9	0	12	Tyrosine--tRNA ligase
 P0AGK1	escherichia-coli-83333	P0AGK1	ubiA	P0AGK1	0	4	4-hydroxybenzoate octaprenyltransferase

@@ -5,26 +5,26 @@ FABA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GL47	fabA	A0A0H3GL47	2	61	3-hy
 FABA	pseudomonas-aeruginosa	O33877	fabA	O33877	3	49	3-hydroxydecanoyl-
 FABA	salmonella-typhimurium	P64105	fabA	P64105	3	18	3-hydroxydecanoyl-
 FABA	shigella-dysenteriae-serotype-1	Q32HV2	fabA	Q32HV2	2	22	3-hydroxydecanoyl-
-FABA	shigella-flexneri	P0A6Q5	fabA	P0A6Q5	2	9	3-hydroxydecanoyl-
+FABA	shigella-flexneri	P0A6Q5	fabA	P0A6Q5	1	5	3-hydroxydecanoyl-
 FABB	escherichia-coli-83333	P0A953	fabB	P0A953	0	4	3-oxoacyl-
 FABB	haemophilus-influenzae	P43710	fabB	P43710	1	8	3-oxoacyl-
 FABB	pseudomonas-aeruginosa	Q9I3B2	fabB	Q9I3B2	3	42	3-oxoacyl-
 FABB	salmonella-typhimurium	Q7CQ36	fabB	Q7CQ36	2	20	3-oxoacyl-
 FABB	shigella-dysenteriae-serotype-1	Q32DL3	fabB	Q32DL3	3	21	3-oxoacyl-
-FABD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PC21	fabD	Q0PC21	6	84	Malonyl CoA-acyl carrier protein transacylase
-FABD	escherichia-coli-83333	P0AAI9	fabD	P0AAI9	4	43	Malonyl CoA-acyl carrier protein transacylase
+FABD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PC21	fabD	Q0PC21	6	82	Malonyl CoA-acyl carrier protein transacylase
+FABD	escherichia-coli-83333	P0AAI9	fabD	P0AAI9	3	35	Malonyl CoA-acyl carrier protein transacylase
 FABD	haemophilus-influenzae	P43712	fabD	P43712	3	28	Malonyl CoA-acyl carrier protein transacylase
 FABD	mycobacterium-leprae	Q7AQ33	fabD	Q7AQ33	1	49	Malonyl CoA-acyl carrier protein transacylase
 FABD	mycobacterium-tuberculosis	P9WNG5	fabD	P9WNG5	2	68	Malonyl CoA-acyl carrier protein transacylase
 FABD	pseudomonas-aeruginosa	G3XCZ6	fabD	G3XCZ6	4	74	Malonyl CoA-acyl carrier protein transacylase
-FABD	salmonella-typhimurium	O85140	fabD	O85140	3	52	Malonyl CoA-acyl carrier protein transacylase
+FABD	salmonella-typhimurium	O85140	fabD	O85140	3	50	Malonyl CoA-acyl carrier protein transacylase
 FABD	shigella-dysenteriae-serotype-1	Q32EV2	fabD	Q32EV2	5	44	Malonyl CoA-acyl carrier protein transacylase
 FABD	streptococcus-pneumoniae	Q8DR16	fabD	Q8DR16	4	28	Malonyl CoA-acyl carrier protein transacylase
-FABD2	mycobacterium-tuberculosis	Q79FX5	fabD2	Q79FX5	0	5	Possible malonyl CoA-acyl carrier protein transacylase FabD2 (MCT)
+FABD2	mycobacterium-tuberculosis	Q79FX5	fabD2	Q79FX5	0	4	Possible malonyl CoA-acyl carrier protein transacylase FabD2 (MCT)
 FABF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PB68	fabF	Q0PB68	1	45	3-oxoacyl-
 FABF	salmonella-typhimurium	Q8ZQ14	fabF	Q8ZQ14	2	20	3-oxoacyl-
 FABF	shigella-dysenteriae-serotype-1	Q32EV5	fabF	Q32EV5	3	19	3-oxoacyl-
-FABF	shigella-flexneri	P0AAI8	fabF	P0AAI8	1	5	3-oxoacyl-
+FABF	shigella-flexneri	P0AAI8	fabF	P0AAI8	0	2	3-oxoacyl-
 FABF	streptococcus-pneumoniae	Q8DR14	fabF	Q8DR14	2	9	3-oxoacyl-
 FABF1	pseudomonas-aeruginosa	G3XDA2	fabF1	G3XDA2	3	42	3-oxoacyl-
 FABF2	pseudomonas-aeruginosa	Q9I3X1	fabF2	Q9I3X1	3	42	3-oxoacyl-
@@ -44,17 +44,16 @@ FABG	nocardia-brasiliensis	K0F2V1	fabG	K0F2V1	0	78	3-ketoacyl-(Acyl-carrier-prot
 FABG	pseudomonas-aeruginosa	O54438	fabG	O54438	0	51	3-oxoacyl-
 FABG	salmonella-typhimurium	P0A2C9	fabG	P0A2C9	0	38	3-oxoacyl-
 FABG	shigella-dysenteriae-serotype-1	Q32EV3	fabG	Q32EV3	1	43	3-oxoacyl-
-FABG	shigella-flexneri	P0AEK3	fabG	P0AEK3	1	31	3-oxoacyl-
+FABG	shigella-flexneri	P0AEK3	fabG	P0AEK3	1	7	3-oxoacyl-
 FABG	streptococcus-pneumoniae	Q8CWS3	fabG	Q8CWS3	1	12	3-Ketoacyl-ACP reductase
 FABG	streptococcus-pneumoniae	Q8DR15	fabG	Q8DR15	1	12	3-oxoacyl-
 FABG1	mycobacterium-leprae	Q9CBM0	fabG1	Q9CBM0	2	62	3-oxoacyl-
-FABG2	mycobacterium-bovis	P66782	fabG2	P66782	0	30	Uncharacterized oxidoreductase Mb1385
 FABG3	mycobacterium-tuberculosis	P9WGT1	fabG3	P9WGT1	0	36	3-alpha-(or 20-beta)-hydroxysteroid dehydrogenase
 FABG4	mycobacterium-leprae	Q7APU2	fabG4	Q7APU2	0	61	Possible oxidoreductase
-FABG4	mycobacterium-tuberculosis	I6Y778	fabG4	I6Y778	0	40	3-oxoacyl-
+FABG4	mycobacterium-tuberculosis	I6Y778	fabG4	I6Y778	0	39	3-oxoacyl-
 FABG5	mycobacterium-tuberculosis	I6YEB6	fabG5	I6YEB6	0	36	Probable short-chain type dehydrogenase/reductase
 FABH	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIH1	fabH	Q9PIH1	0	35	Beta-ketoacyl-
-FABH	escherichia-coli-83333	P0A6R0	fabH	P0A6R0	0	4	Beta-ketoacyl-
+FABH	escherichia-coli-83333	P0A6R0	fabH	P0A6R0	0	2	Beta-ketoacyl-
 FABH	haemophilus-influenzae	P43711	fabH	P43711	0	5	Beta-ketoacyl-
 FABH	helicobacter-pylori	O24994	fabH	O24994	0	5	Beta-ketoacyl-
 FABH	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRH3	fabH	A0A0H3GRH3	0	76	Beta-ketoacyl-
@@ -71,7 +70,7 @@ FABI	helicobacter-pylori	O24990	fabI	O24990	2	9	Enoyl-
 FABI	pseudomonas-aeruginosa	Q9ZFE4	fabI	Q9ZFE4	2	23	Enoyl-
 FABI	salmonella-typhimurium	P16657	fabI	P16657	1	12	Enoyl-
 FABI	shigella-dysenteriae-serotype-1	Q32GP2	fabI	Q32GP2	2	10	Enoyl-
-FABI	shigella-flexneri	P0AEK6	fabI	P0AEK6	1	8	Enoyl-
+FABI	shigella-flexneri	P0AEK6	fabI	P0AEK6	1	4	Enoyl-
 FABI	staphylococcus-aureus-93061	Q2FZQ3	fabI	Q2FZQ3	0	12	Enoyl-
 FABK	streptococcus-pneumoniae	Q8DR17	fabK	Q8DR17	1	3	Probable nitronate monooxygenase
 FABM	streptococcus-pneumoniae	Q8DR19	fabM	Q8DR19	0	62	Trans-2-decenoyl-
@@ -107,6 +106,6 @@ FABZ	neisseria-gonorrhoeae	Q5F5W5	fabZ	Q5F5W5	2	14	3-hydroxyacyl-
 FABZ	pseudomonas-aeruginosa	Q9HXY7	fabZ	Q9HXY7	3	53	3-hydroxyacyl-
 FABZ	salmonella-typhimurium	P0A1H9	fabZ	P0A1H9	3	19	3-hydroxyacyl-
 FABZ	shigella-dysenteriae-serotype-1	Q32JS9	fabZ	Q32JS9	2	23	3-hydroxyacyl-
-FABZ	shigella-flexneri	P0A6Q9	fabZ	P0A6Q9	2	14	3-hydroxyacyl-
+FABZ	shigella-flexneri	P0A6Q9	fabZ	P0A6Q9	1	5	3-hydroxyacyl-
 FABZ	staphylococcus-aureus-93061	Q2FWF5	fabZ	Q2FWF5	1	5	3-hydroxyacyl-
 FABZ	streptococcus-pneumoniae	P59202	fabZ	P59202	2	9	3-hydroxyacyl-

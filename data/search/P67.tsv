@@ -8,15 +8,12 @@ P67091	salmonella-typhimurium	P67091	uspF	P67091	0	2	Universal stress protein F
 P67093	salmonella-typhimurium	P67093	uspG	P67093	0	1	Universal stress protein G
 P67095	escherichia-coli-83333	P67095	yfcE	P67095	0	1	Phosphodiesterase YfcE
 P67100	salmonella-typhimurium	P67100	tusA	P67100	3	7	Sulfur carrier protein TusA
-P67156	shigella-flexneri	P67156	yqfA	P67156	0	2	UPF0073 inner membrane protein YqfA
-P67160	mycobacterium-bovis	P67160	BQ2027_MB1318	P67160	0	5	Putative HTH-type transcriptional regulator Mb1318
+P67156	shigella-flexneri	P67156	yqfA	P67156	0	1	UPF0073 inner membrane protein YqfA
 P67161	salmonella-typhimurium	P67161	plsY	P67161	0	3	Glycerol-3-phosphate acyltransferase
 P67179	salmonella-typhimurium	P67179	yebC	P67179	0	4	Probable transcriptional regulatory protein YebC
 P67197	salmonella-typhimurium	P67197	ppsR	P67197	0	1	Phosphoenolpyruvate synthase regulatory protein
-P67205	mycobacterium-bovis	P67205	BQ2027_MB0919	P67205	0	8	Putative diacyglycerol O-acyltransferase Mb0919
-P67207	mycobacterium-bovis	P67207	BQ2027_MB2306	P67207	0	1	Putative diacyglycerol O-acyltransferase Mb2306
-P67218	salmonella-typhimurium	P67218	rimP	P67218	4	22	Ribosome maturation factor RimP
-P67246	salmonella-typhimurium	P67246	smrB	P67246	4	53	Ribosome rescue factor SmrB
+P67218	salmonella-typhimurium	P67218	rimP	P67218	2	20	Ribosome maturation factor RimP
+P67246	salmonella-typhimurium	P67246	smrB	P67246	4	48	Ribosome rescue factor SmrB
 P67270	salmonella-typhimurium	P67270	ybgI	P67270	0	1	GTP cyclohydrolase 1 type 2 homolog
 P67283	streptococcus-pneumoniae	P67283	rny	P67283	0	11	Ribonuclease Y
 P67319	streptococcus-pneumoniae	P67319	nrdR	P67319	0	1	Transcriptional repressor NrdR
@@ -30,22 +27,19 @@ P67430	escherichia-coli-83333	P67430	nemR	P67430	0	1	HTH-type transcriptional re
 P67458	salmonella-typhimurium	P67458	xseB	P67458	1	1	Exodeoxyribonuclease 7 small subunit
 P67466	streptococcus-pneumoniae	P67466	xseB	P67466	1	1	Exodeoxyribonuclease 7 small subunit
 P67470	salmonella-typhimurium	P67470	zupT	P67470	0	2	Zinc transporter ZupT
-P67474	mycobacterium-bovis	P67474	BQ2027_MB2213C	P67474	0	1	Probable endopeptidase Mb2213c
 P67481	salmonella-typhimurium	P67481	yacG	P67481	0	5	DNA gyrase inhibitor YacG
 P67507	streptococcus-pneumoniae	P67507	trmB	P67507	0	3	tRNA (guanine-N(7)-)-methyltransferase
 P67524	salmonella-typhimurium	P67524	dnaT	P67524	2	7	Replication restart protein DnaT
 P67537	salmonella-typhimurium	P67537	ybeD	P67537	0	4	UPF0250 protein YbeD
 P67553	escherichia-coli-83333	P67553	ynfC	P67553	0	6	UPF0257 lipoprotein YnfC
-P67563	salmonella-typhimurium	P67563	serS	P67563	0	12	Serine--tRNA ligase
-P67581	streptococcus-pneumoniae	P67581	metG	P67581	0	36	Methionine--tRNA ligase
+P67563	salmonella-typhimurium	P67563	serS	P67563	0	11	Serine--tRNA ligase
+P67581	streptococcus-pneumoniae	P67581	metG	P67581	0	35	Methionine--tRNA ligase
 P67596	streptococcus-pneumoniae	P67596	trpS	P67596	0	9	Tryptophan--tRNA ligase
 P67638	salmonella-typhimurium	P67638	frdC	P67638	4	8	Fumarate reductase subunit C
 P67645	salmonella-typhimurium	P67645	frdD	P67645	4	8	Fumarate reductase subunit D
 P67649	salmonella-typhimurium	P67649	clpS	P67649	1	8	ATP-dependent Clp protease adapter protein ClpS
 P67651	salmonella-typhimurium	P67651	rraA	P67651	0	8	Regulator of ribonuclease activity A
 P67660	escherichia-coli-83333	P67660	yhaJ	P67660	1	1	Probable HTH-type transcriptional regulator YhaJ
-P67670	mycobacterium-bovis	P67670	BQ2027_MB1859	P67670	0	14	Uncharacterized HTH-type transcriptional regulator Mb1859
-P67672	mycobacterium-bovis	P67672	BQ2027_MB1861	P67672	0	14	Uncharacterized HTH-type transcriptional regulator Mb1861
 P67685	streptococcus-pneumoniae	P67685	rsgA	P67685	0	20	Small ribosomal subunit biogenesis GTPase RsgA
 P67688	salmonella-typhimurium	P67688	prmA	P67688	1	1	Ribosomal protein L11 methyltransferase
 P67693	salmonella-typhimurium	P67693	zapD	P67693	1	2	Cell division protein ZapD
@@ -61,7 +55,6 @@ P67871	mus-musculus	P67871	Csnk2b	P67871	3	95	Casein kinase II subunit beta
 P67874	rattus-norvegicus	P67874	Csnk2b	P67874	3	73	Casein kinase II subunit beta
 P67877	brugia-malayi	P67877	?	P67877	1	9	Cuticular glutathione peroxidase
 P67899	haemophilus-influenzae	P67899	rpsS	P67899	6	114	Small ribosomal subunit protein uS19
-P67906	yersinia-pestis	P67906	rpsJ	P67906	2	43	Small ribosomal subunit protein uS10
 P67910	escherichia-coli-83333	P67910	hldD	P67910	0	82	ADP-L-glycero-D-manno-heptose-6-epimerase
 P67912	salmonella-typhimurium	P67912	hldD	P67912	2	78	ADP-L-glycero-D-manno-heptose-6-epimerase
 P67917	haemophilus-influenzae	P67917	rpmI	P67917	2	92	Large ribosomal subunit protein bL35

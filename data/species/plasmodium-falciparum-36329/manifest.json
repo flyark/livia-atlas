@@ -24,19 +24,20 @@
   }
  ],
  "counts": {
-  "proteins": 2609,
-  "pairs": 33366,
-  "predictions": 33366,
-  "runs": 33366,
+  "proteins": 2608,
+  "pairs": 33361,
+  "predictions": 33361,
+  "runs": 33361,
   "pairsFpr10": 2722,
   "pairsFpr5": 1838,
   "pairsFpr1": 522,
   "pairsInSeveral": 0,
-  "pairsTested": 33366
+  "pairsTested": 33361
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
   "biogridShards": 256
- }
+ },
+ "ownTaxonOnly": true
 }

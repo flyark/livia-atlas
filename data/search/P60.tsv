@@ -1,10 +1,9 @@
-P60003	mus-musculus	P60003	Elof1	P60003	1	96	Transcription elongation factor 1 homolog
-P60007	mus-musculus	P60007	Anapc15	P60007	0	10	Anaphase-promoting complex subunit 15
-P60023	pan-troglodytes	P60023	DEFB1	P60023	0	27	Beta-defensin 1
-P60039	arabidopsis-thaliana	P60039	RPL7C	P60039	26	617	Large ribosomal subunit protein uL30x
-P60040	arabidopsis-thaliana	P60040	RPL7B	P60040	20	635	Large ribosomal subunit protein uL30y
+P60003	mus-musculus	P60003	Elof1	P60003	1	79	Transcription elongation factor 1 homolog
+P60007	mus-musculus	P60007	Anapc15	P60007	0	0	Anaphase-promoting complex subunit 15
+P60039	arabidopsis-thaliana	P60039	RPL7C	P60039	26	615	Large ribosomal subunit protein uL30x
+P60040	arabidopsis-thaliana	P60040	RPL7B	P60040	20	633	Large ribosomal subunit protein uL30y
 P60041	mus-musculus	P60041	Sst	P60041	8	42	Somatostatin
-P60042	rattus-norvegicus	P60042	Sst	P60042	6	44	Somatostatin
+P60042	rattus-norvegicus	P60042	Sst	P60042	6	43	Somatostatin
 P60060	mus-musculus	P60060	Sec61g	P60060	5	183	Protein transport protein Sec61 subunit gamma
 P60061	escherichia-coli-83333	P60061	adiC	P60061	0	7	Arginine/agmatine antiporter
 P60066	salmonella-typhimurium	P60066	adiC	P60066	0	6	Arginine/agmatine antiporter
@@ -12,9 +11,8 @@ P60070	staphylococcus-aureus-93061	P60070	rsbV	P60070	1	2	Anti-sigma-B factor an
 P60112	arabidopsis-thaliana	P60112	ATP9	P60112	7	95	ATP synthase subunit 9, mitochondrial
 P60122	mus-musculus	P60122	Ruvbl1	P60122	12	378	RuvB-like 1
 P60123	rattus-norvegicus	P60123	Ruvbl1	P60123	10	291	RuvB-like 1
-P60129	arabidopsis-thaliana	P60129	psbL	P60129	25	138	Photosystem II reaction center protein L
+P60129	arabidopsis-thaliana	P60129	psbL	P60129	25	136	Photosystem II reaction center protein L
 P60137	oryza-sativa-subsp-japonica	P60137	psbL	P60137	30	151	Photosystem II reaction center protein L
-P60140	triticum-aestivum	P60140	psbL	P60140	6	20	Photosystem II reaction center protein L
 P60191	mus-musculus	P60191	Rims4	P60191	0	3	Regulating synaptic membrane exocytosis protein 4
 P60192	rattus-norvegicus	P60192	Snapin	P60192	14	86	SNARE-associated protein Snapin
 P60195	salmonella-typhimurium	P60195	rbn	P60195	0	3	Ribonuclease BN
@@ -23,9 +21,9 @@ P60203	rattus-norvegicus	P60203	Plp1	P60203	4	44	Myelin proteolipid protein
 P60206	ajellomyces-capsulatus	P60206	CAM1	P60206	15	106	Calmodulin
 P60217	salmonella-typhimurium	P60217	mtnN	P60217	0	1	5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase
 P60229	mus-musculus	P60229	Eif3e	P60229	28	162	Eukaryotic translation initiation factor 3 subunit E
-P60240	escherichia-coli-83333	P60240	rapA	P60240	0	59	RNA polymerase-associated protein RapA
+P60240	escherichia-coli-83333	P60240	rapA	P60240	0	53	RNA polymerase-associated protein RapA
 P60243	streptococcus-pneumoniae	P60243	comC1	P60243	0	1	Competence-stimulating peptide type 1
-P60293	escherichia-coli-83333	P60293	mukF	P60293	2	5	Chromosome partition protein MukF
+P60293	escherichia-coli-83333	P60293	mukF	P60293	2	3	Chromosome partition protein MukF
 P60300	arabidopsis-thaliana	P60300	CLC-G	P60300	0	1	Putative chloride channel-like protein CLC-g
 P60317	salmonella-typhimurium	P60317	proQ	P60317	0	2	RNA chaperone ProQ
 P60322	mus-musculus	P60322	Nanos2	P60322	1	9	Nanos homolog 2
@@ -34,60 +32,55 @@ P60325	helicobacter-pylori	P60325	rpoZ	P60325	6	82	DNA-directed RNA polymerase s
 P60334	mus-musculus	P60334	Cdo1	P60334	0	8	Cysteine dioxygenase type 1
 P60335	mus-musculus	P60335	Pcbp1	P60335	3	115	Poly(rC)-binding protein 1
 P60340	escherichia-coli-83333	P60340	truB	P60340	0	15	tRNA pseudouridine synthase B
-P60390	escherichia-coli-83333	P60390	rsmH	P60390	1	26	Ribosomal RNA small subunit methyltransferase H
+P60390	escherichia-coli-83333	P60390	rsmH	P60390	1	20	Ribosomal RNA small subunit methyltransferase H
 P60393	staphylococcus-aureus-93061	P60393	rsmH	P60393	0	27	Ribosomal RNA small subunit methyltransferase H
-P60422	escherichia-coli-83333	P60422	rplB	P60422	3	189	Large ribosomal subunit protein uL2
-P60428	salmonella-typhimurium	P60428	rplB	P60428	5	218	Large ribosomal subunit protein uL2
-P60433	staphylococcus-aureus-196620	P60433	rplB	P60433	0	12	Large ribosomal subunit protein uL2
-P60438	escherichia-coli-83333	P60438	rplC	P60438	1	171	Large ribosomal subunit protein uL3
-P60446	salmonella-typhimurium	P60446	rplC	P60446	4	211	Large ribosomal subunit protein uL3
+P60422	escherichia-coli-83333	P60422	rplB	P60422	3	183	Large ribosomal subunit protein uL2
+P60428	salmonella-typhimurium	P60428	rplB	P60428	5	215	Large ribosomal subunit protein uL2
+P60438	escherichia-coli-83333	P60438	rplC	P60438	1	166	Large ribosomal subunit protein uL3
+P60446	salmonella-typhimurium	P60446	rplC	P60446	4	208	Large ribosomal subunit protein uL3
 P60469	mus-musculus	P60469	Ppfia3	P60469	9	42	Liprin-alpha-3
-P60475	shigella-flexneri	P60475	uppS	P60475	0	1	Ditrans,polycis-undecaprenyl-diphosphate synthase ((2E,6E)-farnesyl-diphosphate 
+P60475	shigella-flexneri	P60475	uppS	P60475	0	0	Ditrans,polycis-undecaprenyl-diphosphate synthase ((2E,6E)-farnesyl-diphosphate 
 P60486	rattus-norvegicus	P60486	Dazap2	P60486	0	6	DAZ-associated protein 2
 P60487	mus-musculus	P60487	Pdxp	P60487	0	9	Chronophin
-P60497	arabidopsis-thaliana	P60497	ND6	P60497	9	88	NADH-ubiquinone oxidoreductase chain 6
-P60498	brassica-campestris	P60498	ND6	P60498	4	57	NADH-ubiquinone oxidoreductase chain 6
+P60497	arabidopsis-thaliana	P60497	ND6	P60497	9	87	NADH-ubiquinone oxidoreductase chain 6
 P60517	rattus-norvegicus	P60517	Gabarap	P60517	45	118	Gamma-aminobutyric acid receptor-associated protein
 P60521	mus-musculus	P60521	Gabarapl2	P60521	49	123	Gamma-aminobutyric acid receptor-associated protein-like 2
-P60522	rattus-norvegicus	P60522	Gabarapl2	P60522	136	563	Gamma-aminobutyric acid receptor-associated protein-like 2
+P60522	rattus-norvegicus	P60522	Gabarapl2	P60522	40	102	Gamma-aminobutyric acid receptor-associated protein-like 2
 P60546	escherichia-coli-83333	P60546	gmk	P60546	0	12	Guanylate kinase
-P60560	escherichia-coli-83333	P60560	guaC	P60560	0	9	GMP reductase
-P60566	escherichia-coli-83333	P60566	fixA	P60566	9	35	Protein FixA
+P60560	escherichia-coli-83333	P60560	guaC	P60560	0	8	GMP reductase
+P60566	escherichia-coli-83333	P60566	fixA	P60566	8	31	Protein FixA
 P60570	rattus-norvegicus	P60570	Panx1	P60570	1	25	Pannexin-1
 P60571	rattus-norvegicus	P60571	Panx2	P60571	1	3	Pannexin-2
-P60584	escherichia-coli-83333	P60584	caiA	P60584	2	28	Crotonobetainyl-CoA reductase
+P60584	escherichia-coli-83333	P60584	caiA	P60584	2	26	Crotonobetainyl-CoA reductase
 P60595	escherichia-coli-83333	P60595	hisH	P60595	1	2	Imidazole glycerol phosphate synthase subunit HisH
-P60603	mus-musculus	P60603	Romo1	P60603	3	26	Reactive oxygen species modulator 1
+P60603	mus-musculus	P60603	Romo1	P60603	2	16	Reactive oxygen species modulator 1
 P60605	mus-musculus	P60605	Ube2g2	P60605	10	28	Ubiquitin-conjugating enzyme E2 G2
 P60611	staphylococcus-aureus-93061	P60611	lytR	P60611	1	1	Transcriptional regulatory protein LytR
-P60621	raphanus-sativus	P60621	COX1	P60621	8	89	Cytochrome c oxidase subunit 1
-P60624	escherichia-coli-83333	P60624	rplX	P60624	2	157	Large ribosomal subunit protein uL24
-P60626	salmonella-typhimurium	P60626	rplX	P60626	3	197	Large ribosomal subunit protein uL24
+P60624	escherichia-coli-83333	P60624	rplX	P60624	2	152	Large ribosomal subunit protein uL24
+P60626	salmonella-typhimurium	P60626	rplX	P60626	3	194	Large ribosomal subunit protein uL24
 P60630	streptococcus-pneumoniae	P60630	rplX	P60630	2	138	Large ribosomal subunit protein uL24
 P60651	escherichia-coli-83333	P60651	speB	P60651	0	4	Agmatinase
 P60656	salmonella-typhimurium	P60656	speB	P60656	0	3	Agmatinase
 P60659	salmonella-typhimurium	P60659	speA	P60659	0	1	Biosynthetic arginine decarboxylase
 P60664	escherichia-coli-83333	P60664	hisF	P60664	1	3	Imidazole glycerol phosphate synthase subunit HisF
-P60668	salmonella-typhi	P60668	nanE	P60668	1	1	Putative N-acetylmannosamine-6-phosphate 2-epimerase
 P60669	rattus-norvegicus	P60669	Plekha4	P60669	2	13	Pleckstrin homology domain-containing family A member 4
 P60670	mus-musculus	P60670	Nploc4	P60670	7	112	Nuclear protein localization protein 4 homolog
-P60707	trichosurus-vulpecula	P60707	ACTB	P60707	6	33	Actin, cytoplasmic 1
-P60710	mus-musculus	P60710	Actb	P60710	56	406	Actin, cytoplasmic 1
-P60719	shigella-flexneri	P60719	lipA	P60719	0	4	Lipoyl synthase
-P60723	escherichia-coli-83333	P60723	rplD	P60723	2	172	Large ribosomal subunit protein uL4
-P60726	salmonella-typhimurium	P60726	rplD	P60726	4	216	Large ribosomal subunit protein uL4
-P60752	escherichia-coli-83333	P60752	msbA	P60752	29	207	ATP-dependent lipid A-core flippase
+P60710	mus-musculus	P60710	Actb	P60710	56	405	Actin, cytoplasmic 1
+P60719	shigella-flexneri	P60719	lipA	P60719	0	1	Lipoyl synthase
+P60723	escherichia-coli-83333	P60723	rplD	P60723	2	168	Large ribosomal subunit protein uL4
+P60726	salmonella-typhimurium	P60726	rplD	P60726	4	213	Large ribosomal subunit protein uL4
+P60752	escherichia-coli-83333	P60752	msbA	P60752	27	193	ATP-dependent lipid A-core flippase
 P60755	mus-musculus	P60755	Mdga2	P60755	0	10	MAM domain-containing glycosylphosphatidylinositol anchor protein 2
 P60756	rattus-norvegicus	P60756	Mdga2	P60756	0	4	MAM domain-containing glycosylphosphatidylinositol anchor protein 2
 P60757	escherichia-coli-83333	P60757	hisG	P60757	0	1	ATP phosphoribosyltransferase
 P60761	mus-musculus	P60761	Nrgn	P60761	2	12	Neurogranin
 P60762	mus-musculus	P60762	Morf4l1	P60762	20	93	Mortality factor 4-like protein 1
-P60764	mus-musculus	P60764	Rac3	P60764	21	134	Ras-related C3 botulinum toxin substrate 3
-P60766	mus-musculus	P60766	Cdc42	P60766	68	325	Cell division control protein 42 homolog
+P60764	mus-musculus	P60764	Rac3	P60764	21	133	Ras-related C3 botulinum toxin substrate 3
+P60766	mus-musculus	P60766	Cdc42	P60766	68	324	Cell division control protein 42 homolog
 P60778	escherichia-coli-83333	P60778	tsgA	P60778	0	1	Protein TsgA
 P60782	escherichia-coli-83333	P60782	plsY	P60782	0	3	Probable glycerol-3-phosphate acyltransferase
-P60785	escherichia-coli-83333	P60785	lepA	P60785	0	66	Elongation factor 4
-P60802	salmonella-typhimurium	P60802	pdxB	P60802	2	22	Erythronate-4-phosphate dehydrogenase
+P60785	escherichia-coli-83333	P60785	lepA	P60785	0	63	Elongation factor 4
+P60802	salmonella-typhimurium	P60802	pdxB	P60802	2	21	Erythronate-4-phosphate dehydrogenase
 P60815	rattus-norvegicus	P60815	Flvcr2	P60815	0	2	Choline/ethanolamine transporter FLVCR2
 P60822	salmonella-typhimurium	P60822	yhbP	P60822	0	1	UPF0306 protein YhbP
 P60824	mus-musculus	P60824	Cirbp	P60824	2	29	Cold-inducible RNA-binding protein
@@ -96,19 +89,19 @@ P60829	salmonella-typhimurium	P60829	darP	P60829	3	35	Dual-action ribosomal matu
 P60838	arabidopsis-thaliana	P60838	SUMM2	P60838	0	3	Disease resistance protein SUMM2
 P60840	mus-musculus	P60840	Ensa	P60840	2	5	Alpha-endosulfine
 P60841	rattus-norvegicus	P60841	Ensa	P60841	5	9	Alpha-endosulfine
-P60843	mus-musculus	P60843	Eif4a1	P60843	20	383	Eukaryotic initiation factor 4A-I
+P60843	mus-musculus	P60843	Eif4a1	P60843	11	161	Eukaryotic initiation factor 4A-I
 P60853	mus-musculus	P60853	Lzts1	P60853	2	3	Leucine zipper putative tumor suppressor 1
 P60867	mus-musculus	P60867	Rps20	P60867	19	484	Small ribosomal subunit protein uS10
-P60868	rattus-norvegicus	P60868	Rps20	P60868	19	403	Small ribosomal subunit protein uS10
+P60868	rattus-norvegicus	P60868	Rps20	P60868	19	402	Small ribosomal subunit protein uS10
 P60879	mus-musculus	P60879	Snap25	P60879	59	184	Synaptosomal-associated protein 25
-P60881	rattus-norvegicus	P60881	Snap25	P60881	46	148	Synaptosomal-associated protein 25
+P60881	rattus-norvegicus	P60881	Snap25	P60881	0	3	Synaptosomal-associated protein 25
 P60889	rattus-norvegicus	P60889	Cbx7	P60889	15	70	Chromobox protein homolog 7
 P60892	rattus-norvegicus	P60892	Prps1	P60892	5	16	Ribose-phosphate pyrophosphokinase 1
 P60894	mus-musculus	P60894	Gpr85	P60894	0	3	Probable G-protein coupled receptor 85
-P60895	rattus-norvegicus	P60895	Gpr85	P60895	0	4	Probable G-protein coupled receptor 85
+P60895	rattus-norvegicus	P60895	Gpr85	P60895	0	2	Probable G-protein coupled receptor 85
 P60897	mus-musculus	P60897	Sem1	P60897	8	104	26S proteasome complex subunit SEM1
 P60898	mus-musculus	P60898	Polr2i	P60898	9	199	DNA-directed RNA polymerase II subunit RPB9
-P60901	rattus-norvegicus	P60901	Psma6	P60901	4	80	Proteasome subunit alpha type-6
+P60901	rattus-norvegicus	P60901	Psma6	P60901	4	79	Proteasome subunit alpha type-6
 P60904	mus-musculus	P60904	Dnajc5	P60904	6	69	DnaJ homolog subfamily C member 5
 P60905	rattus-norvegicus	P60905	Dnajc5	P60905	10	90	DnaJ homolog subfamily C member 5
 P60906	escherichia-coli-83333	P60906	hisS	P60906	0	13	Histidine--tRNA ligase

@@ -9,18 +9,18 @@ RHO	neisseria-gonorrhoeae	Q5FA35	rho	Q5FA35	1	13	Transcription termination facto
 RHO	nocardia-brasiliensis	K0EQH0	rho	K0EQH0	2	18	Transcription termination factor Rho
 RHO	nocardia-brasiliensis	K0FAG7	rho	K0FAG7	1	18	Transcription termination factor Rho
 RHO	pseudomonas-aeruginosa	Q9HTV1	rho	Q9HTV1	1	24	Transcription termination factor Rho
-RHO	rattus-norvegicus	P51489	Rho	P51489	17	82	Rhodopsin
+RHO	rattus-norvegicus	P51489	Rho	P51489	17	81	Rhodopsin
 RHO	salmonella-typhimurium	P0A295	rho	P0A295	1	18	Transcription termination factor Rho
 RHO	shigella-dysenteriae-serotype-1	Q329W1	rho	Q329W1	1	21	Transcription termination factor Rho
-RHO	shigella-flexneri	P0AG33	rho	P0AG33	1	9	Transcription termination factor Rho
+RHO	shigella-flexneri	P0AG33	rho	P0AG33	0	3	Transcription termination factor Rho
 RHO	staphylococcus-aureus-93061	Q2FWD7	rho	Q2FWD7	0	11	Transcription termination factor Rho
-RHO1	candida-albicans-237561	O42825	RHO1	O42825	12	41	GTP-binding protein RHO1
+RHO1	candida-albicans-237561	O42825	RHO1	O42825	11	40	GTP-binding protein RHO1
 RHO1	schistosoma-mansoni	Q9XZG7	Rho1	Q9XZG7	28	128	Rho GTPase
 RHO1	schizosaccharomyces-pombe	Q09914	rho1	Q09914	9	51	GTP-binding protein rho1
-RHO2	candida-albicans-237561	A0A1D8PHZ5	RHO2	A0A1D8PHZ5	10	34	Rho family GTPase
+RHO2	candida-albicans-237561	A0A1D8PHZ5	RHO2	A0A1D8PHZ5	9	33	Rho family GTPase
 RHO2	cladophialophora-carrionii	A0A1C1CF24	rho2	A0A1C1CF24	16	64	GTP-binding protein rho2
 RHO2	schizosaccharomyces-pombe	Q10133	rho2	Q10133	15	35	GTP-binding protein rho2
-RHO3	candida-albicans-237561	A0A1D8PH96	RHO3	A0A1D8PH96	9	35	GTP-binding protein RHO3
+RHO3	candida-albicans-237561	A0A1D8PH96	RHO3	A0A1D8PH96	8	34	GTP-binding protein RHO3
 RHO3	cladophialophora-carrionii	A0A1C1CTT6	RHO3	A0A1C1CTT6	13	66	GTP-binding protein RHO3
 RHO3	schistosoma-mansoni	Q8I8A0	Rho3	Q8I8A0	17	81	Rho3 GTPase
 RHO3	schizosaccharomyces-pombe	O13928	rho3	O13928	10	43	GTP-binding protein rho3
@@ -28,14 +28,14 @@ RHO4	schizosaccharomyces-pombe	Q874R1	rho4	Q874R1	10	36	GTP-binding protein rho4
 RHO5	schizosaccharomyces-pombe	Q9HE04	rho5	Q9HE04	7	34	GTP-binding protein rho5
 RHOA	cladophialophora-carrionii	A0A1C1CSQ0	rhoA	A0A1C1CSQ0	16	68	GTP-binding protein rhoA
 RHOA	mus-musculus	Q9QUI0	Rhoa	Q9QUI0	40	246	Transforming protein RhoA
-RHOA	rattus-norvegicus	P61589	Rhoa	P61589	47	241	Transforming protein RhoA
+RHOA	rattus-norvegicus	P61589	Rhoa	P61589	47	240	Transforming protein RhoA
 RHOAL1	rattus-norvegicus	A6KF31	Rhoal1	A6KF31	33	80	RSA-14-44 protein
 RHOB	mus-musculus	P62746	Rhob	P62746	25	78	Rho-related GTP-binding protein RhoB
-RHOB	rattus-norvegicus	P62747	Rhob	P62747	75	427	Rho-related GTP-binding protein RhoB
+RHOB	rattus-norvegicus	P62747	Rhob	P62747	32	91	Rho-related GTP-binding protein RhoB
 RHOBTB1	mus-musculus	Q9DAK3	Rhobtb1	Q9DAK3	2	40	Rho-related BTB domain-containing protein 1
 RHOBTB1	rattus-norvegicus	A0A0G2JWZ1	Rhobtb1	A0A0G2JWZ1	3	50	Rho-related BTB domain containing 1
 RHOBTB2	mus-musculus	Q91V93	Rhobtb2	Q91V93	2	39	Rho-related BTB domain-containing protein 2
-RHOBTB2	rattus-norvegicus	Q5BJV7	Rhobtb2	Q5BJV7	3	48	Rho-related BTB domain-containing protein 2
+RHOBTB2	rattus-norvegicus	Q5BJV7	Rhobtb2	Q5BJV7	3	47	Rho-related BTB domain-containing protein 2
 RHOBTB3	mus-musculus	Q9CTN4	Rhobtb3	Q9CTN4	5	27	Rho-related BTB domain-containing protein 3
 RHOBTB3	rattus-norvegicus	D3ZW90	Rhobtb3	D3ZW90	4	33	Rho-related BTB domain-containing protein 3
 RHOC	cladophialophora-carrionii	A0A1C1D2K6	rhoC	A0A1C1D2K6	11	66	GTP-binding protein rhoC
@@ -44,7 +44,7 @@ RHOD	mus-musculus	P97348	Rhod	P97348	10	47	Rho-related GTP-binding protein RhoD
 RHOD	rattus-norvegicus	D4ADM8	Rhod	D4ADM8	7	53	Ras homolog family member D
 RHOF	mus-musculus	Q8BYP3	Rhof	Q8BYP3	13	44	Rho-related GTP-binding protein RhoF
 RHOF	rattus-norvegicus	D3ZRB3	Rhof	D3ZRB3	22	68	Ras homolog family member F, filopodia associated
-RHOG	mus-musculus	P84096	Rhog	P84096	36	220	Rho-related GTP-binding protein RhoG
+RHOG	mus-musculus	P84096	Rhog	P84096	17	96	Rho-related GTP-binding protein RhoG
 RHOG	rattus-norvegicus	Q32PX6	Rhog	Q32PX6	27	113	Rho-related GTP-binding protein RhoG
 RHOH	mus-musculus	Q9D3G9	Rhoh	Q9D3G9	10	45	Rho-related GTP-binding protein RhoH
 RHOH	rattus-norvegicus	Q5BJZ5	Rhoh	Q5BJZ5	11	70	Rho-related GTP-binding protein RhoH

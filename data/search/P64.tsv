@@ -3,11 +3,11 @@ P64023	streptococcus-pneumoniae	P64023	fusA	P64023	1	91	Elongation factor G
 P64031	streptococcus-pneumoniae	P64031	tuf	P64031	2	85	Elongation factor Tu
 P64036	salmonella-typhimurium	P64036	efp	P64036	4	73	Elongation factor P
 P64043	streptococcus-pneumoniae	P64043	efp	P64043	3	61	Elongation factor P
-P64046	salmonella-typhimurium	P64046	yeiP	P64046	3	78	Elongation factor P-like protein
+P64046	salmonella-typhimurium	P64046	yeiP	P64046	3	73	Elongation factor P-like protein
 P64052	salmonella-typhimurium	P64052	tsf	P64052	1	10	Elongation factor Ts
 P64068	salmonella-typhimurium	P64068	engB	P64068	0	32	Probable GTP-binding protein EngB
 P64073	streptococcus-pneumoniae	P64073	engB	P64073	0	27	Probable GTP-binding protein EngB
-P64076	salmonella-typhimurium	P64076	eno	P64076	0	60	Enolase
+P64076	salmonella-typhimurium	P64076	eno	P64076	0	59	Enolase
 P64095	salmonella-typhimurium	P64095	fixB	P64095	3	25	Protein FixB
 P64101	helicobacter-pylori	P64101	HP_1446	P64101	2	4	Putative biopolymer transport protein ExbD-like 2
 P64105	salmonella-typhimurium	P64105	fabA	P64105	3	18	3-hydroxydecanoyl-
@@ -17,8 +17,6 @@ P64209	salmonella-typhimurium	P64209	folE	P64209	0	1	GTP cyclohydrolase 1
 P64222	salmonella-typhimurium	P64222	gcvT	P64222	1	16	Aminomethyltransferase
 P64237	salmonella-typhimurium	P64237	rsmG	P64237	0	2	Ribosomal RNA small subunit methyltransferase G
 P64251	salmonella-typhimurium	P64251	glpE	P64251	2	45	Thiosulfate sulfurtransferase GlpE
-P64262	mycobacterium-bovis	P64262	BQ2027_MB2612C	P64262	0	4	Uncharacterized protein Mb2612c
-P64264	mycobacterium-bovis	P64264	BQ2027_MB1310	P64264	0	13	Uncharacterized GMC-type oxidoreductase Mb1310
 P64275	helicobacter-pylori	P64275	greA	P64275	0	2	Transcription elongation factor GreA
 P64281	salmonella-typhimurium	P64281	greA	P64281	1	6	Transcription elongation factor GreA
 P64298	streptococcus-pneumoniae	P64298	guaA	P64298	0	16	GMP synthase
@@ -55,8 +53,8 @@ P64594	escherichia-coli-83333	P64594	yhaV	P64594	6	23	Ribonuclease toxin YhaV
 P64596	escherichia-coli-83333	P64596	dolP	P64596	0	1	Outer membrane lipoprotein DolP
 P64602	escherichia-coli-83333	P64602	mlaB	P64602	1	6	Intermembrane phospholipid transport system binding protein MlaB
 P64604	escherichia-coli-83333	P64604	mlaD	P64604	2	7	Intermembrane phospholipid transport system binding protein MlaD
-P64606	escherichia-coli-83333	P64606	mlaE	P64606	23	180	Intermembrane phospholipid transport system permease protein MlaE
-P64610	escherichia-coli-83333	P64610	yrbL	P64610	1	102	Uncharacterized protein YrbL
+P64606	escherichia-coli-83333	P64606	mlaE	P64606	23	179	Intermembrane phospholipid transport system permease protein MlaE
+P64610	escherichia-coli-83333	P64610	yrbL	P64610	1	100	Uncharacterized protein YrbL
 P64612	escherichia-coli-83333	P64612	zapE	P64612	0	2	Cell division protein ZapE
 P64616	escherichia-coli-83333	P64616	yhcO	P64616	1	2	Uncharacterized protein YhcO
 P64631	escherichia-coli-83333	P64631	yhfU	P64631	0	1	Uncharacterized protein YhfU
@@ -68,29 +66,3 @@ P64651	helicobacter-pylori	P64651	HP_0085	P64651	0	1	Uncharacterized protein HP_
 P64657	helicobacter-pylori	P64657	HP_0245	P64657	0	4	Uncharacterized protein HP_0245
 P64659	helicobacter-pylori	P64659	HP_0386	P64659	1	1	Uncharacterized protein HP_0386
 P64663	helicobacter-pylori	P64663	HP_0664	P64663	0	1	UPF0763 protein HP_0664
-P64682	mycobacterium-bovis	P64682	BQ2027_MB0088	P64682	1	1	Uncharacterized protein Mb0088
-P64692	mycobacterium-bovis	P64692	BQ2027_MB0109	P64692	0	3	Uncharacterized protein Mb0109
-P64698	mycobacterium-bovis	P64698	BQ2027_MB0487	P64698	0	49	Uncharacterized protein Mb0487
-P64718	mycobacterium-bovis	P64718	BQ2027_MB0509	P64718	0	1	Uncharacterized protein Mb0509
-P64726	mycobacterium-bovis	P64726	BQ2027_MB0516C	P64726	1	4	UPF0336 protein Mb0516c
-P64728	mycobacterium-bovis	P64728	BQ2027_MB0520	P64728	0	2	Uncharacterized protein Mb0520
-P64740	mycobacterium-bovis	P64740	BQ2027_MB0907C	P64740	3	42	Uncharacterized protein Mb0907c
-P64746	mycobacterium-bovis	P64746	BQ2027_MB0916	P64746	0	57	Uncharacterized monooxygenase Mb0916
-P64796	mycobacterium-bovis	P64796	BQ2027_MB1309	P64796	0	8	Uncharacterized protein Mb1309
-P64806	mycobacterium-bovis	P64806	BQ2027_MB1356	P64806	1	5	Uncharacterized protein Mb1356
-P64808	mycobacterium-bovis	P64808	BQ2027_MB1359	P64808	1	25	Uncharacterized protein Mb1359
-P64816	mycobacterium-bovis	P64816	BQ2027_MB1372	P64816	0	6	Uncharacterized protein Mb1372
-P64826	mycobacterium-bovis	P64826	BQ2027_MB1389C	P64826	1	20	Uncharacterized protein Mb1389c
-P64830	mycobacterium-bovis	P64830	BQ2027_MB1392C	P64830	1	1	Uncharacterized protein Mb1392c
-P64832	mycobacterium-bovis	P64832	BQ2027_MB1395	P64832	0	5	Uncharacterized protein Mb1395
-P64866	mycobacterium-bovis	P64866	BQ2027_MB1551	P64866	0	12	Uncharacterized glycosyltransferase Mb1551
-P64870	mycobacterium-bovis	P64870	BQ2027_MB1553C	P64870	0	12	Uncharacterized protein Mb1553c
-P64876	mycobacterium-bovis	P64876	BQ2027_MB1584	P64876	0	12	Putative F420H(2)-dependent quinone reductase Mb1584
-P64878	mycobacterium-bovis	P64878	BQ2027_MB1586	P64878	4	8	Uncharacterized protein Mb1586
-P64890	mycobacterium-bovis	P64890	BQ2027_MB1843C	P64890	0	2	Uncharacterized protein Mb1843c
-P64898	mycobacterium-bovis	P64898	BQ2027_MB1858	P64898	2	11	Uncharacterized protein Mb1858
-P64918	mycobacterium-bovis	P64918	BQ2027_MB2023	P64918	1	34	Uncharacterized protein Mb2023
-P64920	mycobacterium-bovis	P64920	BQ2027_MB2026C	P64920	1	8	Uncharacterized protein Mb2026c
-P64934	mycobacterium-bovis	P64934	BQ2027_MB2102C	P64934	0	1	Uncharacterized protein Mb2102c
-P64956	mycobacterium-bovis	P64956	BQ2027_MB2253C	P64956	0	3	Uncharacterized protein Mb2253c
-P64982	mycobacterium-bovis	P64982	BQ2027_MB2322C	P64982	0	5	Probable metallo-hydrolase Mb2322c

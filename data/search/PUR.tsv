@@ -18,7 +18,7 @@ PURA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GLD4	purA	A0A0H3GLD4	0	73	Aden
 PURA	methanocaldococcus-jannaschii	Q57981	purA	Q57981	0	4	Adenylosuccinate synthetase
 PURA	mus-musculus	P42669	Pura	P42669	1	43	Transcriptional activator protein Pur-alpha
 PURA	mycobacterium-leprae	O69595	purA	O69595	0	14	Adenylosuccinate synthetase
-PURA	mycobacterium-tuberculosis	P9WHN3	purA	P9WHN3	1	9	Adenylosuccinate synthetase
+PURA	mycobacterium-tuberculosis	P9WHN3	purA	P9WHN3	0	8	Adenylosuccinate synthetase
 PURA	neisseria-gonorrhoeae	Q5F9J5	purA	Q5F9J5	0	3	Adenylosuccinate synthetase
 PURA	nocardia-brasiliensis	K0F1W0	purA	K0F1W0	0	17	Adenylosuccinate synthetase
 PURA	nocardia-brasiliensis	K0FE24	purA	K0FE24	0	17	Adenylosuccinate synthetase
@@ -33,7 +33,7 @@ PURA1	oryza-sativa-subsp-japonica	Q10R17	PURA1	Q10R17	0	6	Adenylosuccinate synth
 PURA2	oryza-sativa-subsp-japonica	Q851S8	PURA2	Q851S8	1	6	Adenylosuccinate synthetase 2, chloroplastic
 PURB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PCA2	purB	Q0PCA2	0	57	Adenylosuccinate lyase
 PURB	dictyostelium-discoideum	Q54J34	purB	Q54J34	0	2	Adenylosuccinate lyase
-PURB	escherichia-coli-83333	P0AB89	purB	P0AB89	0	6	Adenylosuccinate lyase
+PURB	escherichia-coli-83333	P0AB89	purB	P0AB89	0	4	Adenylosuccinate lyase
 PURB	haemophilus-influenzae	P44797	purB	P44797	0	3	Adenylosuccinate lyase
 PURB	helicobacter-pylori	P56468	purB	P56468	0	1	Adenylosuccinate lyase
 PURB	methanocaldococcus-jannaschii	Q58339	purB	Q58339	0	2	Adenylosuccinate lyase
@@ -57,7 +57,7 @@ PURC	nocardia-brasiliensis	K0EJX4	purC	K0EJX4	0	14	Phosphoribosylaminoimidazole-
 PURC	pseudomonas-aeruginosa	Q9I4W0	purC	Q9I4W0	0	16	Phosphoribosylaminoimidazole-succinocarboxamide synthase
 PURC	salmonella-typhimurium	P65889	purC	P65889	0	6	Phosphoribosylaminoimidazole-succinocarboxamide synthase
 PURC	shigella-dysenteriae-serotype-1	Q32D90	purC	Q32D90	0	7	Phosphoribosylaminoimidazole-succinocarboxamide synthase
-PURC	shigella-flexneri	P0A7E0	purC	P0A7E0	0	5	Phosphoribosylaminoimidazole-succinocarboxamide synthase
+PURC	shigella-flexneri	P0A7E0	purC	P0A7E0	0	0	Phosphoribosylaminoimidazole-succinocarboxamide synthase
 PURC	staphylococcus-aureus-93061	Q2FZJ3	purC	Q2FZJ3	0	4	Phosphoribosylaminoimidazole-succinocarboxamide synthase
 PURC	streptococcus-pneumoniae	Q8DRM7	purC	Q8DRM7	0	4	Phosphoribosylaminoimidazole-succinocarboxamide synthase
 PURC/E	dictyostelium-discoideum	Q54QE4	purC/E	Q54QE4	0	1	Bifunctional purine synthesis protein purC/E
@@ -98,7 +98,7 @@ PURF	nocardia-brasiliensis	K0EH47	purF	K0EH47	0	12	Amidophosphoribosyltransferas
 PURF	pseudomonas-aeruginosa	Q51342	purF	Q51342	0	15	Amidophosphoribosyltransferase
 PURF	salmonella-typhimurium	Q8ZNC2	purF	Q8ZNC2	0	6	Amidophosphoribosyltransferase
 PURF	shigella-dysenteriae-serotype-1	Q32DM4	purF	Q32DM4	0	6	Amidophosphoribosyltransferase
-PURF	shigella-flexneri	P0AG17	purF	P0AG17	0	4	Amidophosphoribosyltransferase
+PURF	shigella-flexneri	P0AG17	purF	P0AG17	0	0	Amidophosphoribosyltransferase
 PURF	staphylococcus-aureus-93061	Q2FZI9	purF	Q2FZI9	0	4	Amidophosphoribosyltransferase
 PURF	streptococcus-pneumoniae	Q8DRM5	purF	Q8DRM5	0	5	Amidophosphoribosyltransferase
 PURG	mus-musculus	Q8R4E6	Purg	Q8R4E6	0	1	Purine-rich element-binding protein gamma
@@ -157,7 +157,7 @@ PURN	salmonella-typhimurium	H9L487	purN	H9L487	0	7	Phosphoribosylglycinamide for
 PURN	shigella-dysenteriae-serotype-1	Q32D68	purN	Q32D68	0	7	Phosphoribosylglycinamide formyltransferase
 PURN	staphylococcus-aureus-93061	Q2FZI7	purN	Q2FZI7	0	6	Phosphoribosylglycinamide formyltransferase
 PURN	streptococcus-pneumoniae	Q8DRM3	purN	Q8DRM3	0	5	Phosphoribosylglycinamide formyltransferase
-PURQ	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PHZ7	purQ	Q9PHZ7	2	14	Phosphoribosylformylglycinamidine synthase subunit PurQ
+PURQ	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PHZ7	purQ	Q9PHZ7	2	13	Phosphoribosylformylglycinamidine synthase subunit PurQ
 PURQ	methanocaldococcus-jannaschii	Q59042	purQ	Q59042	2	3	Phosphoribosylformylglycinamidine synthase subunit PurQ
 PURQ	mycobacterium-leprae	O05756	purQ	O05756	2	7	Phosphoribosylformylglycinamidine synthase subunit PurQ
 PURQ	mycobacterium-tuberculosis	P9WHL5	purQ	P9WHL5	2	2	Phosphoribosylformylglycinamidine synthase subunit PurQ
@@ -172,7 +172,7 @@ PURS	methanocaldococcus-jannaschii	Q58988	purS	Q58988	1	2	Phosphoribosylformylgl
 PURS	mycobacterium-tuberculosis	I6Y8S6	purS	I6Y8S6	1	3	Phosphoribosylformylglycinamidine synthase subunit PurS
 PURS	nocardia-brasiliensis	K0ESB2	purS	K0ESB2	1	2	Phosphoribosylformylglycinamidine synthase subunit PurS
 PURS	staphylococcus-aureus-93061	Q2FZJ2	purS	Q2FZJ2	1	3	Phosphoribosylformylglycinamidine synthase subunit PurS
-PURT	escherichia-coli-83333	P33221	purT	P33221	0	5	Formate-dependent phosphoribosylglycinamide formyltransferase
+PURT	escherichia-coli-83333	P33221	purT	P33221	0	4	Formate-dependent phosphoribosylglycinamide formyltransferase
 PURT	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQ50	purT	A0A0H3GQ50	0	2	Formate-dependent phosphoribosylglycinamide formyltransferase
 PURT	methanocaldococcus-jannaschii	Q58881	purT	Q58881	0	2	Formate-dependent phosphoribosylglycinamide formyltransferase
 PURT	mycobacterium-tuberculosis	P95197	purT	P95197	0	4	Phosphoribosylglycinamide formyltransferase 2

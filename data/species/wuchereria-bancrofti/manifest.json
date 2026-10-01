@@ -24,18 +24,19 @@
   }
  ],
  "counts": {
-  "proteins": 601,
-  "pairs": 2796,
-  "predictions": 2796,
-  "runs": 2796,
-  "pairsFpr10": 231,
-  "pairsFpr5": 143,
-  "pairsFpr1": 41,
+  "proteins": 587,
+  "pairs": 2566,
+  "predictions": 2566,
+  "runs": 2566,
+  "pairsFpr10": 217,
+  "pairsFpr5": 131,
+  "pairsFpr1": 35,
   "pairsInSeveral": 0,
-  "pairsTested": 2796
+  "pairsTested": 2566
  },
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv"
- }
+ },
+ "ownTaxonOnly": true
 }

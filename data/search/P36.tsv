@@ -3,12 +3,12 @@ P36198	rattus-norvegicus	P36198	Lhx2	P36198	3	14	LIM/homeobox protein Lhx2
 P36201	rattus-norvegicus	P36201	Crip2	P36201	0	1	Cysteine-rich protein 2
 P36202	rattus-norvegicus	P36202	Pdlim4	P36202	4	40	PDZ and LIM domain protein 4
 P36209	schizosaccharomyces-pombe	P36209	sts1	P36209	0	6	Delta(24(24(1)))-sterol reductase
-P36210	arabidopsis-thaliana	P36210	RPL12A	P36210	4	231	Large ribosomal subunit protein bL12cz
-P36211	arabidopsis-thaliana	P36211	RPL12B	P36211	4	223	Large ribosomal subunit protein bL12cy
-P36212	arabidopsis-thaliana	P36212	RPL12C	P36212	3	225	Large ribosomal subunit protein bL12cx
+P36210	arabidopsis-thaliana	P36210	RPL12A	P36210	4	229	Large ribosomal subunit protein bL12cz
+P36211	arabidopsis-thaliana	P36211	RPL12B	P36211	4	221	Large ribosomal subunit protein bL12cy
+P36212	arabidopsis-thaliana	P36212	RPL12C	P36212	3	223	Large ribosomal subunit protein bL12cx
 P36245	salmonella-typhimurium	P36245	trmD	P36245	0	4	tRNA (guanine-N(1)-)-methyltransferase
 P36363	mus-musculus	P36363	Fgf7	P36363	7	95	Fibroblast growth factor 7
-P36364	rattus-norvegicus	P36364	Fgf9	P36364	6	81	Fibroblast growth factor 9
+P36364	rattus-norvegicus	P36364	Fgf9	P36364	6	80	Fibroblast growth factor 9
 P36365	rattus-norvegicus	P36365	Fmo1	P36365	0	43	Flavin-containing monooxygenase 1
 P36369	mus-musculus	P36369	Klk1b26	P36369	0	1	Kallikrein 1-related peptidase b26
 P36370	rattus-norvegicus	P36370	Tap1	P36370	3	23	Antigen peptide transporter 1
@@ -20,7 +20,7 @@ P36376	rattus-norvegicus	P36376	Klk12	P36376	0	18	Glandular kallikrein-12, subma
 P36380	rattus-norvegicus	P36380	Gjb4	P36380	0	18	Gap junction beta-4 protein
 P36394	rattus-norvegicus	P36394	Sry	P36394	5	39	Sex-determining region Y protein
 P36397	arabidopsis-thaliana	P36397	ARF1	P36397	13	88	ADP-ribosylation factor 1
-P36407	rattus-norvegicus	P36407	Trim23	P36407	17	72	E3 ubiquitin-protein ligase TRIM23
+P36407	rattus-norvegicus	P36407	Trim23	P36407	17	71	E3 ubiquitin-protein ligase TRIM23
 P36408	dictyostelium-discoideum	P36408	gpbA	P36408	14	90	Guanine nucleotide-binding protein subunit beta
 P36409	dictyostelium-discoideum	P36409	rab2A	P36409	2	6	Ras-related protein Rab-2A
 P36410	dictyostelium-discoideum	P36410	rab14	P36410	2	9	Ras-related protein Rab-14
@@ -31,7 +31,7 @@ P36415	dictyostelium-discoideum	P36415	hspB	P36415	15	32	Heat shock cognate 70 k
 P36416	dictyostelium-discoideum	P36416	natA	P36416	3	27	N-terminal acetyltransferase complex ARD1 subunit homolog
 P36418	dictyostelium-discoideum	P36418	vilB	P36418	1	5	Protovillin
 P36423	mus-musculus	P36423	Tbxas1	P36423	0	2	Thromboxane-A synthase
-P36428	arabidopsis-thaliana	P36428	ALATS	P36428	1	181	Alanine--tRNA ligase
+P36428	arabidopsis-thaliana	P36428	ALATS	P36428	1	180	Alanine--tRNA ligase
 P36429	mycobacterium-leprae	P36429	aspS	P36429	2	23	Aspartate--tRNA(Asp/Asn) ligase
 P36506	rattus-norvegicus	P36506	Map2k2	P36506	19	82	Dual specificity mitogen-activated protein kinase kinase 2
 P36511	rattus-norvegicus	P36511	Ugt2b15	P36511	0	1	UDP-glucuronosyltransferase 2B15
@@ -103,7 +103,7 @@ P36646	escherichia-coli-83333	P36646	hofC	P36646	1	10	Protein transport protein 
 P36647	escherichia-coli-83333	P36647	ppdD	P36647	0	3	Prepilin peptidase-dependent protein D
 P36649	escherichia-coli-83333	P36649	cueO	P36649	0	6	Multicopper oxidase CueO
 P36655	escherichia-coli-83333	P36655	dsbD	P36655	2	8	Thiol:disulfide interchange protein DsbD
-P36659	escherichia-coli-83333	P36659	cbpA	P36659	7	158	Curved DNA-binding protein
+P36659	escherichia-coli-83333	P36659	cbpA	P36659	7	143	Curved DNA-binding protein
 P36662	escherichia-coli-83333	P36662	torD	P36662	2	7	Chaperone protein TorD
 P36672	escherichia-coli-83333	P36672	treB	P36672	0	7	PTS system trehalose-specific EIIBC component
 P36673	escherichia-coli-83333	P36673	treR	P36673	0	12	HTH-type transcriptional regulator TreR
@@ -111,26 +111,26 @@ P36674	salmonella-typhimurium	P36674	treR	P36674	1	15	HTH-type transcriptional r
 P36675	escherichia-coli-83333	P36675	arfA	P36675	3	48	Alternative ribosome-rescue factor A
 P36678	escherichia-coli-83333	P36678	gspM	P36678	2	5	Putative type II secretion system protein M
 P36680	escherichia-coli-83333	P36680	zapD	P36680	1	4	Cell division protein ZapD
-P36682	escherichia-coli-83333	P36682	yacH	P36682	1	19	Uncharacterized protein YacH
-P36683	escherichia-coli-83333	P36683	acnB	P36683	0	11	Aconitate hydratase B
+P36682	escherichia-coli-83333	P36682	yacH	P36682	1	17	Uncharacterized protein YacH
+P36683	escherichia-coli-83333	P36683	acnB	P36683	0	10	Aconitate hydratase B
 P36767	escherichia-coli-83333	P36767	rdgC	P36767	0	6	Recombination-associated protein RdgC
 P36771	escherichia-coli-83333	P36771	lrhA	P36771	0	1	Probable HTH-type transcriptional regulator LrhA
-P36860	rattus-norvegicus	P36860	Ralb	P36860	11	46	Ras-related protein Ral-B
+P36860	rattus-norvegicus	P36860	Ralb	P36860	10	45	Ras-related protein Ral-B
 P36876	rattus-norvegicus	P36876	Ppp2r2a	P36876	8	62	Serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B alpha isofor
 P36877	rattus-norvegicus	P36877	Ppp2r2b	P36877	4	41	Serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B beta isoform
-P36879	escherichia-coli-83333	P36879	yadG	P36879	1	11	Uncharacterized ABC transporter ATP-binding protein YadG
+P36879	escherichia-coli-83333	P36879	yadG	P36879	1	10	Uncharacterized ABC transporter ATP-binding protein YadG
 P36881	escherichia-coli-83333	P36881	yadI	P36881	0	1	Putative phosphotransferase enzyme IIA component YadI
 P36895	mus-musculus	P36895	Bmpr1a	P36895	17	60	Bone morphogenetic protein receptor type-1A
 P36898	mus-musculus	P36898	Bmpr1b	P36898	14	58	Bone morphogenetic protein receptor type-1B
 P36916	mus-musculus	P36916	Gnl1	P36916	2	130	Guanine nucleotide-binding protein-like 1
-P36928	escherichia-coli-83333	P36928	yegD	P36928	1	85	Uncharacterized chaperone protein YegD
-P36929	escherichia-coli-83333	P36929	rsmB	P36929	1	41	Ribosomal RNA small subunit methyltransferase B
+P36928	escherichia-coli-83333	P36928	yegD	P36928	1	80	Uncharacterized chaperone protein YegD
+P36929	escherichia-coli-83333	P36929	rsmB	P36929	1	39	Ribosomal RNA small subunit methyltransferase B
 P36938	escherichia-coli-83333	P36938	pgm	P36938	0	9	Phosphoglucomutase
-P36940	rattus-norvegicus	P36940	Faslg	P36940	11	69	Tumor necrosis factor ligand superfamily member 6
+P36940	rattus-norvegicus	P36940	Faslg	P36940	11	68	Tumor necrosis factor ligand superfamily member 6
 P36953	rattus-norvegicus	P36953	Afm	P36953	2	9	Afamin
 P36967	dictyostelium-discoideum	P36967	scsA	P36967	3	10	Succinate--CoA ligase
 P36972	rattus-norvegicus	P36972	Aprt	P36972	0	2	Adenine phosphoribosyltransferase
 P36979	escherichia-coli-83333	P36979	rlmN	P36979	0	18	Dual-specificity RNA methyltransferase RlmN
 P36993	mus-musculus	P36993	Ppm1b	P36993	1	18	Protein phosphatase 1B
-P36995	escherichia-coli-83333	P36995	cspB	P36995	1	1	Cold shock-like protein CspB
+P36995	escherichia-coli-83333	P36995	cspB	P36995	0	0	Cold shock-like protein CspB
 P36999	escherichia-coli-83333	P36999	rlmA	P36999	0	2	23S rRNA (guanine(745)-N(1))-methyltransferase

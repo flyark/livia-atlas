@@ -1,12 +1,12 @@
-FTSA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAI4	ftsA	Q0PAI4	1	14	Cell division protein FtsA
+FTSA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAI4	ftsA	Q0PAI4	1	13	Cell division protein FtsA
 FTSA	haemophilus-influenzae	P45068	ftsA	P45068	3	18	Cell division protein FtsA
 FTSA	helicobacter-pylori	O25629	ftsA	O25629	1	17	Cell division protein FtsA
 FTSA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GJA5	ftsA	A0A0H3GJA5	2	53	Cell division protein FtsA
 FTSA	neisseria-gonorrhoeae	Q5F6M2	ftsA	Q5F6M2	3	19	Cell division protein FtsA
 FTSA	pseudomonas-aeruginosa	P47203	ftsA	P47203	1	29	Cell division protein FtsA
-FTSA	salmonella-typhimurium	Q7CR80	ftsA	Q7CR80	1	23	Cell division protein FtsA
+FTSA	salmonella-typhimurium	Q7CR80	ftsA	Q7CR80	1	22	Cell division protein FtsA
 FTSA	shigella-dysenteriae-serotype-1	Q32JZ8	ftsA	Q32JZ8	1	28	Cell division protein FtsA
-FTSA	shigella-flexneri	P0ABH3	ftsA	P0ABH3	2	23	Cell division protein FtsA
+FTSA	shigella-flexneri	P0ABH3	ftsA	P0ABH3	0	3	Cell division protein FtsA
 FTSA	staphylococcus-aureus-93061	O07325	ftsA	O07325	3	18	Cell division protein FtsA
 FTSA	streptococcus-pneumoniae	Q8DNV8	ftsA	Q8DNV8	1	17	Cell division protein FtsA
 FTSB	escherichia-coli-83333	P0A6S5	ftsB	P0A6S5	1	10	Cell division protein FtsB
@@ -27,7 +27,7 @@ FTSE	salmonella-typhimurium	Q7CPJ6	ftsE	Q7CPJ6	2	18	Cell division ATP-binding pr
 FTSE	shigella-dysenteriae-serotype-1	Q32AS0	ftsE	Q32AS0	1	15	Cell division ATP-binding protein FtsE
 FTSE	streptococcus-pneumoniae	Q8DQH4	ftsE	Q8DQH4	1	10	Cell division ATP-binding protein FtsE
 FTSH	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9D8	ftsH	Q0P9D8	0	58	ATP-dependent zinc metalloprotease FtsH
-FTSH	escherichia-coli-83333	P0AAI3	ftsH	P0AAI3	0	74	ATP-dependent zinc metalloprotease FtsH
+FTSH	escherichia-coli-83333	P0AAI3	ftsH	P0AAI3	0	72	ATP-dependent zinc metalloprotease FtsH
 FTSH	haemophilus-influenzae	P71377	ftsH	P71377	2	48	ATP-dependent zinc metalloprotease FtsH
 FTSH	helicobacter-pylori	P71408	ftsH	P71408	0	54	ATP-dependent zinc metalloprotease FtsH
 FTSH	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GTR0	ftsH	A0A0H3GTR0	1	151	ATP-dependent zinc metalloprotease FtsH
@@ -36,8 +36,8 @@ FTSH	mycobacterium-tuberculosis	P9WQN3	ftsH	P9WQN3	2	108	ATP-dependent zinc meta
 FTSH	neisseria-gonorrhoeae	Q5F9L1	ftsH	Q5F9L1	1	65	ATP-dependent zinc metalloprotease FtsH
 FTSH	nocardia-brasiliensis	K0ERS2	ftsH	K0ERS2	3	114	ATP-dependent zinc metalloprotease FtsH
 FTSH	pseudomonas-aeruginosa	Q9HV48	ftsH	Q9HV48	2	123	ATP-dependent zinc metalloprotease FtsH
-FTSH	salmonella-typhimurium	P63343	ftsH	P63343	0	87	ATP-dependent zinc metalloprotease FtsH
-FTSH	staphylococcus-aureus-93061	Q2G0R0	ftsH	Q2G0R0	2	58	ATP-dependent zinc metalloprotease FtsH
+FTSH	salmonella-typhimurium	P63343	ftsH	P63343	0	82	ATP-dependent zinc metalloprotease FtsH
+FTSH	staphylococcus-aureus-93061	Q2G0R0	ftsH	Q2G0R0	2	57	ATP-dependent zinc metalloprotease FtsH
 FTSH	streptococcus-pneumoniae	P59652	ftsH	P59652	0	63	ATP-dependent zinc metalloprotease FtsH
 FTSH1	arabidopsis-thaliana	Q39102	FTSH1	Q39102	3	48	ATP-dependent zinc metalloprotease FTSH 1, chloroplastic
 FTSH1	oryza-sativa-subsp-japonica	Q5Z974	FTSH1	Q5Z974	3	87	ATP-dependent zinc metalloprotease FTSH 1, chloroplastic
@@ -66,19 +66,18 @@ FTSHI2	arabidopsis-thaliana	A8MPR5	FTSHI2	A8MPR5	4	42	Probable inactive ATP-depe
 FTSHI3	arabidopsis-thaliana	Q9M895	FTSHI3	Q9M895	2	39	Probable inactive ATP-dependent zinc metalloprotease FTSHI 3, chloroplastic
 FTSHI4	arabidopsis-thaliana	F4KF14	FTSHI4	F4KF14	4	42	Probable inactive ATP-dependent zinc metalloprotease FTSHI 4, chloroplastic
 FTSHI5	arabidopsis-thaliana	F4J3N2	FTSHI5	F4J3N2	3	39	Probable inactive ATP-dependent zinc metalloprotease FTSHI 5, chloroplastic
-FTSI	escherichia-coli-83333	P0AD68	ftsI	P0AD68	3	30	Peptidoglycan D,D-transpeptidase FtsI
+FTSI	escherichia-coli-83333	P0AD68	ftsI	P0AD68	2	28	Peptidoglycan D,D-transpeptidase FtsI
 FTSI	haemophilus-influenzae	P45059	ftsI	P45059	4	20	Peptidoglycan D,D-transpeptidase FtsI
 FTSI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GN85	ftsI	A0A0H3GN85	3	41	Peptidoglycan D,D-transpeptidase FtsI
 FTSI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GVC7	ftsI	A0A0H3GVC7	3	39	Peptidoglycan D,D-transpeptidase FtsI
 FTSI	pseudomonas-aeruginosa	G3XD46	ftsI	G3XD46	4	31	Peptidoglycan D,D-transpeptidase FtsI
-FTSI	salmonella-typhimurium	Q7CQD7	ftsI	Q7CQD7	5	27	Peptidoglycan D,D-transpeptidase FtsI
-FTSI	salmonella-typhimurium	Q7CR83	ftsI	Q7CR83	4	28	Peptidoglycan D,D-transpeptidase FtsI
+FTSI	salmonella-typhimurium	Q7CQD7	ftsI	Q7CQD7	5	26	Peptidoglycan D,D-transpeptidase FtsI
+FTSI	salmonella-typhimurium	Q7CR83	ftsI	Q7CR83	4	27	Peptidoglycan D,D-transpeptidase FtsI
 FTSI	shigella-dysenteriae-serotype-1	Q32K08	ftsI	Q32K08	5	29	Peptidoglycan D,D-transpeptidase FtsI
 FTSJ1	mus-musculus	Q8CBC7	Ftsj1	Q8CBC7	5	89	tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase
-FTSJ1	rattus-norvegicus	D3ZZA1	Ftsj1	D3ZZA1	7	178	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase
+FTSJ1	rattus-norvegicus	D3ZZA1	Ftsj1	D3ZZA1	7	177	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase
 FTSJ3	mus-musculus	Q9DBE9	Ftsj3	Q9DBE9	19	144	pre-rRNA 2'-O-ribose RNA methyltransferase FTSJ3
-FTSJ3	rattus-norvegicus	Q5RJT2	Ftsj3	Q5RJT2	19	236	pre-rRNA 2'-O-ribose RNA methyltransferase FTSJ3
-FTSK	campylobacter-jejuni-subsp-jejuni-serotype-o-23-36	A1VZM0	ftsK	A1VZM0	0	5	DNA translocase FtsK
+FTSJ3	rattus-norvegicus	Q5RJT2	Ftsj3	Q5RJT2	19	235	pre-rRNA 2'-O-ribose RNA methyltransferase FTSJ3
 FTSK	escherichia-coli-83333	P46889	ftsK	P46889	1	17	DNA translocase FtsK
 FTSK	helicobacter-pylori	O25722	ftsK	O25722	0	7	DNA translocase FtsK
 FTSK	mycobacterium-leprae	O05560	ftsK	O05560	0	38	DNA translocase FtsK
@@ -93,7 +92,7 @@ FTSL	neisseria-gonorrhoeae	Q5F6K8	ftsL	Q5F6K8	1	4	Cell division protein FtsL
 FTSL	pseudomonas-aeruginosa	Q9HVZ6	ftsL	Q9HVZ6	4	17	Cell division protein FtsL
 FTSL	salmonella-typhimurium	Q7CR84	ftsL	Q7CR84	4	17	Cell division protein FtsL
 FTSL	shigella-dysenteriae-serotype-1	Q32K09	ftsL	Q32K09	3	16	Cell division protein FtsL
-FTSL	shigella-flexneri	P0AEN7	ftsL	P0AEN7	3	20	Cell division protein FtsL
+FTSL	shigella-flexneri	P0AEN7	ftsL	P0AEN7	0	2	Cell division protein FtsL
 FTSL	staphylococcus-aureus-93061	Q2FZ95	ftsL	Q2FZ95	3	11	Cell division protein FtsL
 FTSL	streptococcus-pneumoniae	Q8DR70	ftsL	Q8DR70	1	8	Cell division protein FtsL
 FTSN	escherichia-coli-83333	P29131	ftsN	P29131	1	18	Cell division protein FtsN
@@ -105,23 +104,23 @@ FTSP	haemophilus-influenzae	P44847	ftsP	P44847	0	1	Putative cell division protei
 FTSP	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GTE1	ftsP	A0A0H3GTE1	0	23	Cell division protein FtsP
 FTSP	salmonella-typhimurium	P0A1C5	ftsP	P0A1C5	0	9	Cell division protein FtsP
 FTSP	shigella-dysenteriae-serotype-1	Q32BS6	ftsP	Q32BS6	0	8	Cell division protein FtsP
-FTSQ	escherichia-coli-83333	P06136	ftsQ	P06136	3	80	Cell division protein FtsQ
+FTSQ	escherichia-coli-83333	P06136	ftsQ	P06136	3	73	Cell division protein FtsQ
 FTSQ	haemophilus-influenzae	P45067	ftsQ	P45067	2	64	Cell division protein FtsQ
 FTSQ	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GN94	ftsQ	A0A0H3GN94	4	85	Cell division protein FtsQ
 FTSQ	mycobacterium-leprae	Q9CCE5	ftsQ	Q9CCE5	3	78	Cell division protein FtsQ
 FTSQ	mycobacterium-tuberculosis	P9WNA1	ftsQ	P9WNA1	0	77	Cell division protein FtsQ
 FTSQ	neisseria-gonorrhoeae	Q5F6M1	ftsQ	Q5F6M1	4	69	Cell division protein FtsQ
 FTSQ	pseudomonas-aeruginosa	G3XDA7	ftsQ	G3XDA7	5	80	Cell division protein FtsQ
-FTSQ	salmonella-typhimurium	Q7CR81	ftsQ	Q7CR81	4	77	Cell division protein FtsQ
+FTSQ	salmonella-typhimurium	Q7CR81	ftsQ	Q7CR81	4	71	Cell division protein FtsQ
 FTSQ	shigella-dysenteriae-serotype-1	Q32JZ9	ftsQ	Q32JZ9	4	73	Cell division protein FtsQ
-FTSW	escherichia-coli-83333	P0ABG4	ftsW	P0ABG4	2	25	Probable peptidoglycan glycosyltransferase FtsW
+FTSW	escherichia-coli-83333	P0ABG4	ftsW	P0ABG4	2	23	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	haemophilus-influenzae	P45064	ftsW	P45064	4	22	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GN92	ftsW	A0A0H3GN92	4	55	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	mycobacterium-leprae	Q7AQC4	ftsW	Q7AQC4	1	25	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	mycobacterium-tuberculosis	P9WN97	ftsW	P9WN97	3	20	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	neisseria-gonorrhoeae	Q5F6L7	ftsW	Q5F6L7	2	17	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	pseudomonas-aeruginosa	Q9HW00	ftsW	Q9HW00	4	40	Probable peptidoglycan glycosyltransferase FtsW
-FTSW	salmonella-typhimurium	Q7CR82	ftsW	Q7CR82	5	31	Probable peptidoglycan glycosyltransferase FtsW
+FTSW	salmonella-typhimurium	Q7CR82	ftsW	Q7CR82	5	30	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	shigella-dysenteriae-serotype-1	Q32K03	ftsW	Q32K03	3	30	Probable peptidoglycan glycosyltransferase FtsW
 FTSW	streptococcus-pneumoniae	Q8DPW6	ftsW	Q8DPW6	3	19	Probable peptidoglycan glycosyltransferase FtsW
 FTSX	haemophilus-influenzae	P44872	ftsX	P44872	2	7	Cell division protein FtsX
@@ -144,19 +143,19 @@ FTSY	nocardia-brasiliensis	K0F3B5	ftsY	K0F3B5	4	63	Signal recognition particle r
 FTSY	pseudomonas-aeruginosa	Q9I6C1	ftsY	Q9I6C1	3	50	Signal recognition particle receptor FtsY
 FTSY	salmonella-typhimurium	Q8ZLE9	ftsY	Q8ZLE9	1	42	Signal recognition particle receptor FtsY
 FTSY	shigella-dysenteriae-serotype-1	Q32AR9	ftsY	Q32AR9	1	51	Signal recognition particle receptor FtsY
-FTSY	staphylococcus-aureus-93061	Q2FZ48	ftsY	Q2FZ48	2	44	Signal recognition particle receptor FtsY
+FTSY	staphylococcus-aureus-93061	Q2FZ48	ftsY	Q2FZ48	2	43	Signal recognition particle receptor FtsY
 FTSY	streptococcus-pneumoniae	Q8DPK2	ftsY	Q8DPK2	3	44	Signal recognition particle receptor FtsY
-FTSZ	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAI3	ftsZ	Q0PAI3	1	35	Cell division protein FtsZ
-FTSZ	escherichia-coli-83333	P0A9A6	ftsZ	P0A9A6	4	52	Cell division protein FtsZ
+FTSZ	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAI3	ftsZ	Q0PAI3	1	33	Cell division protein FtsZ
+FTSZ	escherichia-coli-83333	P0A9A6	ftsZ	P0A9A6	4	46	Cell division protein FtsZ
 FTSZ	haemophilus-influenzae	P45069	ftsZ	P45069	2	29	Cell division protein FtsZ
 FTSZ	helicobacter-pylori	P56097	ftsZ	P56097	2	24	Cell division protein FtsZ
 FTSZ	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRR0	ftsZ	A0A0H3GRR0	5	150	Cell division protein FtsZ
 FTSZ	mycobacterium-leprae	Q9CCE4	ftsZ	Q9CCE4	1	81	Cell division protein FtsZ
-FTSZ	mycobacterium-tuberculosis	P9WN95	ftsZ	P9WN95	1	46	Cell division protein FtsZ
+FTSZ	mycobacterium-tuberculosis	P9WN95	ftsZ	P9WN95	1	45	Cell division protein FtsZ
 FTSZ	neisseria-gonorrhoeae	Q5F6M3	ftsZ	Q5F6M3	1	36	Cell division protein FtsZ
 FTSZ	nocardia-brasiliensis	K0ETB6	ftsZ	K0ETB6	4	335	Cell division protein FtsZ
 FTSZ	pseudomonas-aeruginosa	P47204	ftsZ	P47204	1	102	Cell division protein FtsZ
-FTSZ	salmonella-typhimurium	Q8ZRU0	ftsZ	Q8ZRU0	5	51	Cell division protein FtsZ
+FTSZ	salmonella-typhimurium	Q8ZRU0	ftsZ	Q8ZRU0	5	49	Cell division protein FtsZ
 FTSZ	shigella-dysenteriae-serotype-1	Q32JZ7	ftsZ	Q32JZ7	4	61	Cell division protein FtsZ
 FTSZ	staphylococcus-aureus-93061	Q2FZ89	ftsZ	Q2FZ89	3	24	Cell division protein FtsZ
 FTSZ	streptococcus-pneumoniae	Q8DNV9	ftsZ	Q8DNV9	1	36	Cell division protein FtsZ

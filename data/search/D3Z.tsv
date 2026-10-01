@@ -31,7 +31,7 @@ D3Z4K0	mus-musculus	D3Z4K0	Ankrd48	D3Z4K0	0	1	Ankyrin repeat domain 48
 D3Z4R1	mus-musculus	D3Z4R1	Hfm1	D3Z4R1	4	101	Probable ATP-dependent DNA helicase HFM1
 D3Z4R4	mus-musculus	D3Z4R4	Nkx6-2	D3Z4R4	0	3	NK6 homeobox 2
 D3Z4S3	mus-musculus	D3Z4S3	Ptrhd1	D3Z4S3	0	3	Putative peptidyl-tRNA hydrolase PTRHD1
-D3Z4Z0	mus-musculus	D3Z4Z0	Tada2b	D3Z4Z0	10	71	Transcriptional adapter
+D3Z4Z0	mus-musculus	D3Z4Z0	Tada2b	D3Z4Z0	4	51	Transcriptional adapter
 D3Z5D4	mus-musculus	D3Z5D4	Cd209g	D3Z5D4	0	6	CD209g antigen
 D3Z5F7	mus-musculus	D3Z5F7	Gm20521	D3Z5F7	4	33	Bcl-2-like protein 2
 D3Z5G7	mus-musculus	D3Z5G7	Ces1b	D3Z5G7	0	2	Carboxylic ester hydrolase
@@ -48,7 +48,7 @@ D3Z689	mus-musculus	D3Z689	Adamtsl5	D3Z689	0	1	ADAMTS-like 5
 D3Z690	mus-musculus	D3Z690	Izumo4	D3Z690	0	20	Izumo sperm-egg fusion protein 4
 D3Z6A3	mus-musculus	D3Z6A3	Ism2	D3Z6A3	0	7	Isthmin 2
 D3Z6E3	mus-musculus	D3Z6E3	Chst13	D3Z6E3	1	2	Carbohydrate sulfotransferase
-D3Z6H8	mus-musculus	D3Z6H8	Amd2	D3Z6H8	1	3	S-adenosylmethionine decarboxylase proenzyme 2
+D3Z6H8	mus-musculus	D3Z6H8	Amd2	D3Z6H8	0	2	S-adenosylmethionine decarboxylase proenzyme 2
 D3Z6I1	mus-musculus	D3Z6I1	Mmp27	D3Z6I1	1	2	Matrix metalloproteinase-27
 D3Z6P0	mus-musculus	D3Z6P0	Pdia2	D3Z6P0	5	24	Protein disulfide-isomerase A2
 D3Z6P9	mus-musculus	D3Z6P9	Ddx43	D3Z6P9	0	5	RNA helicase
@@ -99,7 +99,7 @@ D3Z8F6	rattus-norvegicus	D3Z8F6	Dennd1b	D3Z8F6	1	9	DENN domain containing 1B
 D3Z8F7	rattus-norvegicus	D3Z8F7	Gykl1	D3Z8F7	2	32	glycerol kinase
 D3Z8G3	rattus-norvegicus	D3Z8G3	Rpgrip1l	D3Z8G3	5	28	Protein fantom
 D3Z8G4	rattus-norvegicus	D3Z8G4	Adamts18	D3Z8G4	0	1	A disintegrin and metalloproteinase with thrombospondin motifs 18
-D3Z8G7	rattus-norvegicus	D3Z8G7	Tjp3	D3Z8G7	9	61	Tight junction protein 3
+D3Z8G7	rattus-norvegicus	D3Z8G7	Tjp3	D3Z8G7	9	60	Tight junction protein 3
 D3Z8G8	rattus-norvegicus	D3Z8G8	Mau2	D3Z8G8	3	10	MAU2 chromatid cohesion factor homolog
 D3Z8G9	rattus-norvegicus	D3Z8G9	Cnfn	D3Z8G9	1	51	Cornifelin
 D3Z8H9	rattus-norvegicus	D3Z8H9	Dnaaf19	D3Z8H9	1	11	Coiled-coil domain containing 103
@@ -107,7 +107,7 @@ D3Z8I0	rattus-norvegicus	D3Z8I0	Zfp541	D3Z8I0	1	2	Zinc finger protein 541
 D3Z8I3	rattus-norvegicus	D3Z8I3	Fnip2	D3Z8I3	2	15	Folliculin interacting protein 2
 D3Z8I4	rattus-norvegicus	D3Z8I4	Map4k1	D3Z8I4	7	21	Mitogen-activated protein kinase kinase kinase kinase
 D3Z8I9	rattus-norvegicus	D3Z8I9	Myo19	D3Z8I9	8	29	Unconventional myosin-XIX
-D3Z8J0	rattus-norvegicus	D3Z8J0	Psmb3l2	D3Z8J0	3	78	Proteasome subunit beta type-3
+D3Z8J0	rattus-norvegicus	D3Z8J0	Psmb3l2	D3Z8J0	3	77	Proteasome subunit beta type-3
 D3Z8J6	rattus-norvegicus	D3Z8J6	Entrep3	D3Z8J6	0	9	Endosomal transmembrane epsin interactor 3
 D3Z8K2	rattus-norvegicus	D3Z8K2	Ccdc39	D3Z8K2	2	4	Coiled-coil domain-containing protein 39
 D3Z8K5	rattus-norvegicus	D3Z8K5	Usp38	D3Z8K5	4	11	ubiquitinyl hydrolase 1
@@ -121,7 +121,7 @@ D3Z8N2	rattus-norvegicus	D3Z8N2	Rnf187	D3Z8N2	1	5	E3 ubiquitin-protein ligase RN
 D3Z8N4	rattus-norvegicus	D3Z8N4	Klhl20	D3Z8N4	21	77	Kelch-like protein 20
 D3Z8N7	rattus-norvegicus	D3Z8N7	Fbxo15	D3Z8N7	1	14	F-box protein 15
 D3Z8N9	rattus-norvegicus	D3Z8N9	Asxl2	D3Z8N9	7	42	ASXL transcriptional regulator 2
-D3Z8P1	rattus-norvegicus	D3Z8P1	Rnf7	D3Z8P1	23	213	RING-box protein 2
+D3Z8P1	rattus-norvegicus	D3Z8P1	Rnf7	D3Z8P1	23	212	RING-box protein 2
 D3Z8P8	rattus-norvegicus	D3Z8P8	Eef2kmt	D3Z8P8	1	3	Eukaryotic elongation factor 2 lysine methyltransferase
 D3Z8P9	rattus-norvegicus	D3Z8P9	Cfap144	D3Z8P9	0	28	Cilia and flagella associated protein 144
 D3Z8Q5	rattus-norvegicus	D3Z8Q5	Tusc2	D3Z8Q5	0	1	Tumor suppressor 2, mitochondrial calcium regulator
@@ -130,7 +130,7 @@ D3Z8Q7	rattus-norvegicus	D3Z8Q7	Ciao2b	D3Z8Q7	2	17	Cytosolic iron-sulfur assembl
 D3Z8R0	rattus-norvegicus	D3Z8R0	Peg12	D3Z8R0	1	14	Paternally expressed 12
 D3Z8R9	rattus-norvegicus	D3Z8R9	Nxf2	D3Z8R9	10	50	Tip-associated protein
 D3Z8S0	rattus-norvegicus	D3Z8S0	Sh3d19	D3Z8S0	4	6	SH3 domain containing 19
-D3Z8T0	rattus-norvegicus	D3Z8T0	AABR07053402.1	D3Z8T0	7	408	High mobility group nucleosomal binding domain 2, pseudo 3
+D3Z8T0	rattus-norvegicus	D3Z8T0	AABR07053402.1	D3Z8T0	7	407	High mobility group nucleosomal binding domain 2, pseudo 3
 D3Z8T6	rattus-norvegicus	D3Z8T6	Klb	D3Z8T6	3	19	Klotho beta
 D3Z8U5	rattus-norvegicus	D3Z8U5	Tll1	D3Z8U5	1	3	Metalloendopeptidase
 D3Z8V6	rattus-norvegicus	D3Z8V6	Hacd4	D3Z8V6	0	12	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase
@@ -157,12 +157,12 @@ D3Z930	rattus-norvegicus	D3Z930	Mettl17	D3Z930	3	116	Ribosome assembly protein M
 D3Z932	rattus-norvegicus	D3Z932	LOC120096971	D3Z932	1	4	Developmental pluripotency-associated protein 3-like
 D3Z937	rattus-norvegicus	D3Z937	Hmg20a	D3Z937	8	15	High mobility group protein 20A
 D3Z940	rattus-norvegicus	D3Z940	Zscan30	D3Z940	1	1	Zinc finger and SCAN domain containing 30
-D3Z941	rattus-norvegicus	D3Z941	Mars1	D3Z941	10	55	Methionine--tRNA ligase, cytoplasmic
+D3Z941	rattus-norvegicus	D3Z941	Mars1	D3Z941	10	54	Methionine--tRNA ligase, cytoplasmic
 D3Z945	rattus-norvegicus	D3Z945	Carns1	D3Z945	1	8	Carnosine synthase 1
 D3Z946	rattus-norvegicus	D3Z946	Tmem70	D3Z946	0	6	Transmembrane protein 70
 D3Z951	rattus-norvegicus	D3Z951	Arhgap11a	D3Z951	0	1	Rho GTPase-activating protein 11A
 D3Z952	rattus-norvegicus	D3Z952	Mfap2	D3Z952	1	16	Microfibril associated protein 2
-D3Z953	rattus-norvegicus	D3Z953	Ky	D3Z953	1	11	Kyphoscoliosis peptidase
+D3Z953	rattus-norvegicus	D3Z953	Ky	D3Z953	1	10	Kyphoscoliosis peptidase
 D3Z954	rattus-norvegicus	D3Z954	Patl2	D3Z954	5	76	PAT1 homolog 2
 D3Z955	rattus-norvegicus	D3Z955	Pgm2l1	D3Z955	0	2	Phosphoglucomutase 2-like 1
 D3Z956	rattus-norvegicus	D3Z956	Rlbp1	D3Z956	0	4	Retinaldehyde-binding protein 1
@@ -180,9 +180,9 @@ D3Z9D2	rattus-norvegicus	D3Z9D2	Fyco1	D3Z9D2	4	10	FYVE and coiled-coil domain-co
 D3Z9D3	rattus-norvegicus	D3Z9D3	Brms1l	D3Z9D3	12	41	BRMS1 like transcriptional repressor
 D3Z9E1	rattus-norvegicus	D3Z9E1	Emilin1	D3Z9E1	3	33	EMILIN-1
 D3Z9E6	rattus-norvegicus	D3Z9E6	Cpsf2	D3Z9E6	4	58	Cleavage and polyadenylation specificity factor subunit 2
-D3Z9E7	rattus-norvegicus	D3Z9E7	Dpf3	D3Z9E7	1	34	Double PHD fingers 3
+D3Z9E7	rattus-norvegicus	D3Z9E7	Dpf3	D3Z9E7	1	32	Double PHD fingers 3
 D3Z9E9	rattus-norvegicus	D3Z9E9	Tmem30b	D3Z9E9	10	32	Cell cycle control protein
-D3Z9F2	rattus-norvegicus	D3Z9F2	Cfap184	D3Z9F2	3	27	Coiled-coil domain containing 96
+D3Z9F2	rattus-norvegicus	D3Z9F2	Cfap184	D3Z9F2	3	26	Coiled-coil domain containing 96
 D3Z9F7	rattus-norvegicus	D3Z9F7	Cr2	D3Z9F7	3	38	Complement component receptor 1-like protein
 D3Z9F9	rattus-norvegicus	D3Z9F9	Spaca1	D3Z9F9	0	4	Sperm acrosome associated 1
 D3Z9G1	rattus-norvegicus	D3Z9G1	Fbxw17	D3Z9G1	3	74	F-box and WD-40 domain protein 17
@@ -208,10 +208,10 @@ D3Z9L0	rattus-norvegicus	D3Z9L0	Agk	D3Z9L0	1	10	Acylglycerol kinase, mitochondri
 D3Z9L5	rattus-norvegicus	D3Z9L5	Wdr11	D3Z9L5	0	5	WD repeat-containing protein 11
 D3Z9M1	rattus-norvegicus	D3Z9M1	Mettl16	D3Z9M1	1	13	U6 small nuclear RNA (adenine-(43)-N(6))-methyltransferase
 D3Z9P5	rattus-norvegicus	D3Z9P5	Pole4	D3Z9P5	14	64	DNA polymerase epsilon subunit 4
-D3Z9P6	rattus-norvegicus	D3Z9P6	Epgn	D3Z9P6	7	44	Epigen
+D3Z9P6	rattus-norvegicus	D3Z9P6	Epgn	D3Z9P6	7	43	Epigen
 D3Z9R2	rattus-norvegicus	D3Z9R2	Mettl22	D3Z9R2	1	1	Methyltransferase-like protein 22
 D3Z9R6	rattus-norvegicus	D3Z9R6	Ermap	D3Z9R6	0	7	Erythroblast membrane associated protein (Scianna blood group)
-D3Z9R8	rattus-norvegicus	D3Z9R8	Atp5mpl	D3Z9R8	5	31	ATP synthase subunit ATP5MPL, mitochondrial
+D3Z9R8	rattus-norvegicus	D3Z9R8	Atp5mpl	D3Z9R8	4	30	ATP synthase subunit ATP5MPL, mitochondrial
 D3Z9S9	rattus-norvegicus	D3Z9S9	Nrarp	D3Z9S9	0	7	Notch-regulated ankyrin repeat protein
 D3Z9T4	rattus-norvegicus	D3Z9T4	Siglec5	D3Z9T4	0	9	Sialic acid binding Ig-like lectin 5
 D3Z9T8	rattus-norvegicus	D3Z9T8	Plscr1l1	D3Z9T8	0	1	Phospholipid scramblase
@@ -228,12 +228,12 @@ D3ZA00	rattus-norvegicus	D3ZA00	Atp6ap1l	D3ZA00	1	36	V-type proton ATPase subuni
 D3ZA02	rattus-norvegicus	D3ZA02	Fam13a	D3ZA02	0	2	Family with sequence similarity 13, member A
 D3ZA19	rattus-norvegicus	D3ZA19	Satl1	D3ZA19	0	1	Spermidine/spermine N1-acetyl transferase-like 1
 D3ZA21	rattus-norvegicus	D3ZA21	Plekhg3	D3ZA21	0	3	Pleckstrin homology and RhoGEF domain containing G3
-D3ZA22	rattus-norvegicus	D3ZA22	Trim47	D3ZA22	1	7	E3 ubiquitin-protein ligase TRIM47
+D3ZA22	rattus-norvegicus	D3ZA22	Trim47	D3ZA22	1	6	E3 ubiquitin-protein ligase TRIM47
 D3ZA25	rattus-norvegicus	D3ZA25	Ankrd42	D3ZA25	0	2	Ankyrin repeat domain-containing protein 42
 D3ZA31	rattus-norvegicus	D3ZA31	Mtmr2	D3ZA31	3	7	Phosphatidylinositol-3,5-bisphosphate 3-phosphatase MTMR2
 D3ZA32	rattus-norvegicus	D3ZA32	Gsdma	D3ZA32	0	1	Gasdermin A
 D3ZA38	rattus-norvegicus	D3ZA38	Mybpc2	D3ZA38	0	37	Myosin-binding protein C, fast-type
-D3ZA45	rattus-norvegicus	D3ZA45	Atg13	D3ZA45	16	58	Autophagy related 13
+D3ZA45	rattus-norvegicus	D3ZA45	Atg13	D3ZA45	15	57	Autophagy related 13
 D3ZA46	rattus-norvegicus	D3ZA46	Gmip	D3ZA46	0	4	Gem-interacting protein
 D3ZA50	rattus-norvegicus	D3ZA50	Klhl15	D3ZA50	21	35	Kelch-like protein 15
 D3ZA53	rattus-norvegicus	D3ZA53	Pnma8a	D3ZA53	0	6	PNMA family member 8A
@@ -246,7 +246,7 @@ D3ZA67	rattus-norvegicus	D3ZA67	Barx1	D3ZA67	1	2	BARX homeobox 1
 D3ZA68	rattus-norvegicus	D3ZA68	Twnk	D3ZA68	0	14	Twinkle mtDNA helicase
 D3ZA76	rattus-norvegicus	D3ZA76	Htra3	D3ZA76	0	10	Serine protease HTRA3
 D3ZA78	rattus-norvegicus	D3ZA78	Tpx2	D3ZA78	1	22	TPX2, microtubule nucleation factor
-D3ZA80	rattus-norvegicus	D3ZA80	Jazf1	D3ZA80	0	18	Juxtaposed with another zinc finger protein 1
+D3ZA80	rattus-norvegicus	D3ZA80	Jazf1	D3ZA80	0	17	Juxtaposed with another zinc finger protein 1
 D3ZA85	rattus-norvegicus	D3ZA85	Nfu1	D3ZA85	2	8	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial
 D3ZA88	rattus-norvegicus	D3ZA88	Trim34	D3ZA88	0	8	Tripartite motif-containing 34
 D3ZA93	rattus-norvegicus	D3ZA93	Acot13	D3ZA93	0	1	Acyl-coenzyme A thioesterase 13
@@ -256,7 +256,7 @@ D3ZAB1	rattus-norvegicus	D3ZAB1	Ltf	D3ZAB1	2	72	Lactotransferrin
 D3ZAB5	rattus-norvegicus	D3ZAB5	Ccdc120	D3ZAB5	7	16	Coiled-coil domain containing 120
 D3ZAB6	rattus-norvegicus	D3ZAB6	Obi1	D3ZAB6	0	3	ORC ubiquitin ligase 1
 D3ZAB7	rattus-norvegicus	D3ZAB7	Zfp688	D3ZAB7	1	1	Zinc finger protein 688
-D3ZAC0	rattus-norvegicus	D3ZAC0	Itga2b	D3ZAC0	9	104	Integrin subunit alpha 2b
+D3ZAC0	rattus-norvegicus	D3ZAC0	Itga2b	D3ZAC0	9	103	Integrin subunit alpha 2b
 D3ZAC5	rattus-norvegicus	D3ZAC5	Dnajb3	D3ZAC5	3	53	DnaJ heat shock protein family (Hsp40) member B3
 D3ZAD7	rattus-norvegicus	D3ZAD7	Slamf1	D3ZAD7	5	33	Signaling lymphocytic activation molecule family member 1
 D3ZAD9	rattus-norvegicus	D3ZAD9	Nlrp9	D3ZAD9	1	24	NLR family, pyrin domain containing 9
@@ -285,18 +285,18 @@ D3ZAM6	rattus-norvegicus	D3ZAM6	Tmem198b	D3ZAM6	0	7	Transmembrane protein 198
 D3ZAN0	rattus-norvegicus	D3ZAN0	LOC120098290	D3ZAN0	0	2	Carcinoembryonic antigen-related cell adhesion molecule 3-like
 D3ZAN2	rattus-norvegicus	D3ZAN2	Cdhr2	D3ZAN2	4	10	Cadherin-related family member 2
 D3ZAN3	rattus-norvegicus	D3ZAN3	Ganab	D3ZAN3	4	105	Neutral alpha-glucosidase AB
-D3ZAN6	rattus-norvegicus	D3ZAN6	Papolg	D3ZAN6	8	74	polynucleotide adenylyltransferase
+D3ZAN6	rattus-norvegicus	D3ZAN6	Papolg	D3ZAN6	7	73	polynucleotide adenylyltransferase
 D3ZAN8	rattus-norvegicus	D3ZAN8	Zbtb33	D3ZAN8	6	16	Transcriptional regulator Kaiso
 D3ZAN9	rattus-norvegicus	D3ZAN9	Prelid3a	D3ZAN9	1	1	PRELI domain containing 3A
 D3ZAP1	rattus-norvegicus	D3ZAP1	Med19	D3ZAP1	5	118	Mediator of RNA polymerase II transcription subunit 19
 D3ZAP9	rattus-norvegicus	D3ZAP9	Gpd1l	D3ZAP9	1	4	Glycerol-3-phosphate dehydrogenase
 D3ZAQ0	rattus-norvegicus	D3ZAQ0	Fundc2	D3ZAQ0	0	3	FUN14 domain-containing protein 2
-D3ZAQ1	rattus-norvegicus	D3ZAQ1	Actr5	D3ZAQ1	7	102	Actin-related protein 5
+D3ZAQ1	rattus-norvegicus	D3ZAQ1	Actr5	D3ZAQ1	7	101	Actin-related protein 5
 D3ZAQ2	rattus-norvegicus	D3ZAQ2	Smad6	D3ZAQ2	8	64	Mothers against decapentaplegic homolog
 D3ZAQ6	rattus-norvegicus	D3ZAQ6	Nol7	D3ZAQ6	7	126	Nucleolar protein 7
-D3ZAQ9	rattus-norvegicus	D3ZAQ9	Ercc1	D3ZAQ9	13	101	DNA excision repair protein ERCC-1
+D3ZAQ9	rattus-norvegicus	D3ZAQ9	Ercc1	D3ZAQ9	13	100	DNA excision repair protein ERCC-1
 D3ZAR1	rattus-norvegicus	D3ZAR1	Ldlrap1	D3ZAR1	4	12	Low density lipoprotein receptor adapter protein 1
-D3ZAR8	rattus-norvegicus	D3ZAR8	Otub2	D3ZAR8	7	59	ubiquitinyl hydrolase 1
+D3ZAR8	rattus-norvegicus	D3ZAR8	Otub2	D3ZAR8	6	58	ubiquitinyl hydrolase 1
 D3ZAS0	rattus-norvegicus	D3ZAS0	Ly86	D3ZAS0	1	14	Lymphocyte antigen 86
 D3ZAS1	rattus-norvegicus	D3ZAS1	Rps2-ps42	D3ZAS1	25	460	Small ribosomal subunit protein uS5
 D3ZAS2	rattus-norvegicus	D3ZAS2	Sgsm1	D3ZAS2	3	4	Small G protein signaling modulator 1
@@ -307,11 +307,11 @@ D3ZAT0	rattus-norvegicus	D3ZAT0	Svs3b	D3ZAT0	4	182	Seminal vesicle secretory pro
 D3ZAT1	rattus-norvegicus	D3ZAT1	Hinfp	D3ZAT1	2	3	Histone H4 transcription factor
 D3ZAT4	rattus-norvegicus	D3ZAT4	Serpina9	D3ZAT4	0	1	Serpin family A member 9
 D3ZAU3	rattus-norvegicus	D3ZAU3	Fancl	D3ZAU3	13	51	E3 ubiquitin-protein ligase FANCL
-D3ZAU6	rattus-norvegicus	D3ZAU6	Rps18l2	D3ZAU6	33	512	Small ribosomal subunit protein uS13
+D3ZAU6	rattus-norvegicus	D3ZAU6	Rps18l2	D3ZAU6	33	511	Small ribosomal subunit protein uS13
 D3ZAV8	rattus-norvegicus	D3ZAV8	Lrrn2	D3ZAV8	1	2	Leucine rich repeat neuronal 2
 D3ZAW2	rattus-norvegicus	D3ZAW2	Pisd	D3ZAW2	0	1	Phosphatidylserine decarboxylase proenzyme, mitochondrial
 D3ZAW4	rattus-norvegicus	D3ZAW4	Abhd4	D3ZAW4	0	7	(Lyso)-N-acylphosphatidylethanolamine lipase
-D3ZAW6	rattus-norvegicus	D3ZAW6	Tfe3	D3ZAW6	14	35	Transcription factor binding to IGHM enhancer 3
+D3ZAW6	rattus-norvegicus	D3ZAW6	Tfe3	D3ZAW6	13	34	Transcription factor binding to IGHM enhancer 3
 D3ZAX5	rattus-norvegicus	D3ZAX5	Cherp	D3ZAX5	8	25	Calcium homeostasis endoplasmic reticulum protein
 D3ZAX6	rattus-norvegicus	D3ZAX6	Meikin	D3ZAX6	1	1	Meiotic kinetochore factor
 D3ZAY4	rattus-norvegicus	D3ZAY4	Krtap9-7	D3ZAY4	0	5	Keratin associated protein 9-7
@@ -322,7 +322,7 @@ D3ZAZ8	rattus-norvegicus	D3ZAZ8	Ccdc42	D3ZAZ8	4	6	Coiled-coil domain containing 
 D3ZB44	rattus-norvegicus	D3ZB44	Zfp324	D3ZB44	1	1	Zinc finger protein 324
 D3ZB48	rattus-norvegicus	D3ZB48	Hook1	D3ZB48	6	10	Hook microtubule-tethering protein 1
 D3ZB49	rattus-norvegicus	D3ZB49	Osgin2	D3ZB49	0	5	Oxidative stress induced growth inhibitor family member 2
-D3ZB50	rattus-norvegicus	D3ZB50	LOC120093238	D3ZB50	26	415	Large ribosomal subunit protein uL29
+D3ZB50	rattus-norvegicus	D3ZB50	LOC120093238	D3ZB50	26	414	Large ribosomal subunit protein uL29
 D3ZB51	rattus-norvegicus	D3ZB51	Igsf9b	D3ZB51	0	2	Protein turtle homolog B
 D3ZB52	rattus-norvegicus	D3ZB52	Adam8	D3ZB52	0	8	ADAM metallopeptidase domain 8
 D3ZB56	rattus-norvegicus	D3ZB56	Ccdc66	D3ZB56	0	9	Coiled-coil domain containing 66
@@ -334,14 +334,14 @@ D3ZB81	rattus-norvegicus	D3ZB81	Slc25a31	D3ZB81	1	79	ADP/ATP translocase
 D3ZB91	rattus-norvegicus	D3ZB91	Elac1	D3ZB91	0	3	Zinc phosphodiesterase ELAC protein 1
 D3ZB92	rattus-norvegicus	D3ZB92	Coprs	D3ZB92	1	6	Coordinator of PRMT5 and differentiation stimulator
 D3ZB94	rattus-norvegicus	D3ZB94	Gfral	D3ZB94	1	6	GDNF family receptor alpha-like
-D3ZB96	rattus-norvegicus	D3ZB96	Rnf115	D3ZB96	5	14	E3 ubiquitin-protein ligase RNF115
+D3ZB96	rattus-norvegicus	D3ZB96	Rnf115	D3ZB96	5	13	E3 ubiquitin-protein ligase RNF115
 D3ZB99	rattus-norvegicus	D3ZB99	Nek1	D3ZB99	1	11	non-specific serine/threonine protein kinase
 D3ZBA3	rattus-norvegicus	D3ZBA3	Cd160	D3ZBA3	1	11	CD160 antigen
 D3ZBA8	rattus-norvegicus	D3ZBA8	Aadacl4fm1	D3ZBA8	1	29	AADACL4 family member 1
 D3ZBB5	rattus-norvegicus	D3ZBB5	Ccdc14	D3ZBB5	4	9	Coiled-coil domain containing 14
 D3ZBC4	rattus-norvegicus	D3ZBC4	Atxn1l	D3ZBC4	1	10	Ataxin 1 like
 D3ZBC9	rattus-norvegicus	D3ZBC9	Cfap91	D3ZBC9	0	5	Cilia- and flagella-associated protein 91
-D3ZBD0	rattus-norvegicus	D3ZBD0	Msl1	D3ZBD0	15	54	Male-specific lethal 1 homolog
+D3ZBD0	rattus-norvegicus	D3ZBD0	Msl1	D3ZBD0	14	52	Male-specific lethal 1 homolog
 D3ZBD1	rattus-norvegicus	D3ZBD1	Rspo1	D3ZBD1	3	8	R-spondin-1
 D3ZBD2	rattus-norvegicus	D3ZBD2	Krtap2-4l1	D3ZBD2	0	5	Keratin associated protein 2-4
 D3ZBE5	rattus-norvegicus	D3ZBE5	Nek7	D3ZBE5	2	17	Serine/threonine-protein kinase Nek7
@@ -358,14 +358,14 @@ D3ZBL3	rattus-norvegicus	D3ZBL3	Ngdn	D3ZBL3	25	164	Neuroguidin
 D3ZBL6	rattus-norvegicus	D3ZBL6	Nup160	D3ZBL6	2	33	Nucleoporin 160
 D3ZBM0	rattus-norvegicus	D3ZBM0	R3hdml	D3ZBM0	0	1	R3H domain containing-like
 D3ZBM3	rattus-norvegicus	D3ZBM3	Fech	D3ZBM3	0	24	Ferrochelatase
-D3ZBM7	rattus-norvegicus	D3ZBM7	Hace1	D3ZBM7	3	14	E3 ubiquitin-protein ligase HACE1
+D3ZBM7	rattus-norvegicus	D3ZBM7	Hace1	D3ZBM7	2	13	E3 ubiquitin-protein ligase HACE1
 D3ZBN0	rattus-norvegicus	D3ZBN0	H1-5	D3ZBN0	0	21	Histone H1.5
 D3ZBN3	rattus-norvegicus	D3ZBN3	Epha2	D3ZBN3	15	71	Ephrin type-A receptor 2
 D3ZBN4	rattus-norvegicus	D3ZBN4	Erg28	D3ZBN4	0	40	Ergosterol biosynthesis 28 homolog
 D3ZBP3	rattus-norvegicus	D3ZBP3	Exosc2	D3ZBP3	12	135	Exosome complex component RRP4
 D3ZBP4	rattus-norvegicus	D3ZBP4	Mical1	D3ZBP4	4	12	Molecule interacting with CasL protein 1
 D3ZBP5	rattus-norvegicus	D3ZBP5	Fmol	D3ZBP5	0	37	Flavin-containing monooxygenase
-D3ZBQ1	rattus-norvegicus	D3ZBQ1	Foxo3	D3ZBQ1	21	102	Forkhead box O3
+D3ZBQ1	rattus-norvegicus	D3ZBQ1	Foxo3	D3ZBQ1	21	101	Forkhead box O3
 D3ZBQ6	rattus-norvegicus	D3ZBQ6	Car15	D3ZBQ6	0	6	carbonic anhydrase
 D3ZBR0	rattus-norvegicus	D3ZBR0	Krtap3-2	D3ZBR0	1	5	Keratin associated protein 3-2
 D3ZBR5	rattus-norvegicus	D3ZBR5	Skint2	D3ZBR5	0	1	Selection and upkeep of intraepithelial T cells 2
@@ -374,7 +374,7 @@ D3ZBT2	rattus-norvegicus	D3ZBT2	Bbln	D3ZBT2	0	1	Bublin coiled coil protein
 D3ZBU7	rattus-norvegicus	D3ZBU7	Cracdl	D3ZBU7	0	1	CRACD like
 D3ZBU8	rattus-norvegicus	D3ZBU8	Nmrk2	D3ZBU8	0	20	Nicotinamide riboside kinase 2
 D3ZBV8	rattus-norvegicus	D3ZBV8	Irak1bp1	D3ZBV8	0	2	Interleukin-1 receptor-associated kinase 1-binding protein 1
-D3ZBV9	rattus-norvegicus	D3ZBV9	Yeats2	D3ZBV9	21	102	YEATS domain-containing protein 2
+D3ZBV9	rattus-norvegicus	D3ZBV9	Yeats2	D3ZBV9	21	100	YEATS domain-containing protein 2
 D3ZBW3	rattus-norvegicus	D3ZBW3	Tmem201	D3ZBW3	0	15	Transmembrane protein 201
 D3ZBX0	rattus-norvegicus	D3ZBX0	Cd207	D3ZBX0	0	7	C-type lectin domain family 4 member K
 D3ZBX1	rattus-norvegicus	D3ZBX1	Lgals12	D3ZBX1	0	7	Galectin 12
@@ -388,7 +388,7 @@ D3ZC01	rattus-norvegicus	D3ZC01	Rbbp5	D3ZC01	6	288	Retinoblastoma-binding protei
 D3ZC04	rattus-norvegicus	D3ZC04	Esyt3	D3ZC04	0	1	Extended synaptotagmin-3
 D3ZC07	rattus-norvegicus	D3ZC07	Pkn3	D3ZC07	3	16	Protein SET
 D3ZC08	rattus-norvegicus	D3ZC08	Sap30	D3ZC08	8	57	Sin3A associated protein 30
-D3ZC11	rattus-norvegicus	D3ZC11	G2e3	D3ZC11	0	6	G2/M-phase specific E3 ubiquitin protein ligase
+D3ZC11	rattus-norvegicus	D3ZC11	G2e3	D3ZC11	0	5	G2/M-phase specific E3 ubiquitin protein ligase
 D3ZC14	rattus-norvegicus	D3ZC14	Slco6d1	D3ZC14	0	17	Solute carrier organic anion transporter family, member 6d1
 D3ZC15	rattus-norvegicus	D3ZC15	Carmil2	D3ZC15	3	11	Capping protein regulator and myosin 1 linker 2
 D3ZC16	rattus-norvegicus	D3ZC16	Dusp22	D3ZC16	1	35	JNK pathway associated phosphatase
@@ -398,7 +398,7 @@ D3ZC52	rattus-norvegicus	D3ZC52	Rad1	D3ZC52	9	39	Cell cycle checkpoint protein R
 D3ZC55	rattus-norvegicus	D3ZC55	Hspa12a	D3ZC55	4	57	Heat shock 70 kDa protein 12A
 D3ZC60	rattus-norvegicus	D3ZC60	Eme2	D3ZC60	8	60	Structure-specific endonuclease subunit EME2
 D3ZC63	rattus-norvegicus	D3ZC63	Cmpk2	D3ZC63	0	12	UMP-CMP kinase 2, mitochondrial
-D3ZC68	rattus-norvegicus	D3ZC68	Uqcr11l1	D3ZC68	9	115	Cytochrome b-c1 complex subunit 10
+D3ZC68	rattus-norvegicus	D3ZC68	Uqcr11l1	D3ZC68	9	114	Cytochrome b-c1 complex subunit 10
 D3ZC69	rattus-norvegicus	D3ZC69	Hmgb1l5	D3ZC69	0	17	High mobility group box 1 like 5
 D3ZC81	rattus-norvegicus	D3ZC81	Pex10	D3ZC81	4	74	Peroxisome biogenesis factor 10
 D3ZC82	rattus-norvegicus	D3ZC82	Nufip2	D3ZC82	7	42	Nuclear FMR1 interacting protein 2
@@ -427,7 +427,7 @@ D3ZCK2	rattus-norvegicus	D3ZCK2	Nkiras2	D3ZCK2	0	1	NF-kappa-B inhibitor-interact
 D3ZCK4	rattus-norvegicus	D3ZCK4	Def6	D3ZCK4	0	4	IRF4-binding protein
 D3ZCK7	rattus-norvegicus	D3ZCK7	Emx2	D3ZCK7	1	6	Empty spiracles homeobox 2
 D3ZCL0	rattus-norvegicus	D3ZCL0	Nkx6-3	D3ZCL0	1	1	NK6 homeobox 3
-D3ZCL3	rattus-norvegicus	D3ZCL3	Snrpc	D3ZCL3	4	87	U1 small nuclear ribonucleoprotein C
+D3ZCL3	rattus-norvegicus	D3ZCL3	Snrpc	D3ZCL3	4	86	U1 small nuclear ribonucleoprotein C
 D3ZCL4	rattus-norvegicus	D3ZCL4	Zscan18	D3ZCL4	1	1	Zinc finger and SCAN domain containing 18
 D3ZCM2	rattus-norvegicus	D3ZCM2	Tbx21	D3ZCM2	1	17	T-box transcription factor TBX21
 D3ZCM3	rattus-norvegicus	D3ZCM3	Abcg4	D3ZCM3	1	15	ATP-binding cassette subfamily G member 4
@@ -436,7 +436,7 @@ D3ZCM7	rattus-norvegicus	D3ZCM7	Tle1	D3ZCM7	21	50	TLE family member 1, transcrip
 D3ZCM8	rattus-norvegicus	D3ZCM8	Scp2d1	D3ZCM8	0	3	SCP2 sterol-binding domain containing 1
 D3ZCM9	rattus-norvegicus	D3ZCM9	Dnaaf3	D3ZCM9	0	35	Dynein axonemal assembly factor 3
 D3ZCN1	rattus-norvegicus	D3ZCN1	Mob3b	D3ZCN1	0	1	MOB kinase activator 3B
-D3ZCN9	rattus-norvegicus	D3ZCN9	Rps10	D3ZCN9	23	358	Small ribosomal subunit protein eS10
+D3ZCN9	rattus-norvegicus	D3ZCN9	Rps10	D3ZCN9	23	357	Small ribosomal subunit protein eS10
 D3ZCP6	rattus-norvegicus	D3ZCP6	Amer1	D3ZCP6	5	25	APC membrane recruitment protein 1
 D3ZCP9	rattus-norvegicus	D3ZCP9	Gtf2e2	D3ZCP9	25	133	Transcription initiation factor IIE subunit beta
 D3ZCQ0	rattus-norvegicus	D3ZCQ0	Col19a1	D3ZCQ0	1	16	Collagen alpha-1(XIX) chain
@@ -453,7 +453,7 @@ D3ZCT5	rattus-norvegicus	D3ZCT5	Pald1	D3ZCT5	0	3	Paladin
 D3ZCT7	rattus-norvegicus	D3ZCT7	Sec23b	D3ZCT7	10	36	Protein transport protein SEC23
 D3ZCT9	rattus-norvegicus	D3ZCT9	Gal3st1	D3ZCT9	0	1	Galactose-3-O-sulfotransferase 1
 D3ZCU8	rattus-norvegicus	D3ZCU8	Rab33a	D3ZCU8	8	63	small monomeric GTPase
-D3ZCV0	rattus-norvegicus	D3ZCV0	Actn2	D3ZCV0	7	115	F-actin cross-linking protein
+D3ZCV0	rattus-norvegicus	D3ZCV0	Actn2	D3ZCV0	7	113	F-actin cross-linking protein
 D3ZCV2	rattus-norvegicus	D3ZCV2	Cst7	D3ZCV2	0	1	Cystatin F
 D3ZCV5	rattus-norvegicus	D3ZCV5	Aldh1a7	D3ZCV5	0	3	Aldehyde dehydrogenase family 1, subfamily A7
 D3ZCW5	rattus-norvegicus	D3ZCW5	Alg9	D3ZCW5	1	14	Mannosyltransferase
@@ -469,13 +469,13 @@ D3ZD07	rattus-norvegicus	D3ZD07	Fmo9	D3ZD07	1	37	Flavin-containing monooxygenase
 D3ZD11	rattus-norvegicus	D3ZD11	Spcs2	D3ZD11	3	11	Signal peptidase complex subunit 2
 D3ZD18	rattus-norvegicus	D3ZD18	Stk32a	D3ZD18	2	9	Serine/threonine-protein kinase 32A
 D3ZD22	rattus-norvegicus	D3ZD22	Klk12	D3ZD22	6	9	Kallikrein k
-D3ZD23	rattus-norvegicus	D3ZD23	Abce1	D3ZD23	10	350	ATP-binding cassette sub-family E member 1
+D3ZD23	rattus-norvegicus	D3ZD23	Abce1	D3ZD23	10	349	ATP-binding cassette sub-family E member 1
 D3ZD24	rattus-norvegicus	D3ZD24	Syne3	D3ZD24	3	18	Nesprin-3
 D3ZD27	rattus-norvegicus	D3ZD27	Ndst4	D3ZD27	0	3	D3ZD27_RAT
 D3ZD31	rattus-norvegicus	D3ZD31	Mrc1	D3ZD31	0	47	Macrophage mannose receptor 1
 D3ZD36	rattus-norvegicus	D3ZD36	Cabcoco1	D3ZD36	0	5	Ciliary associated calcium binding coiled-coil 1
 D3ZD38	rattus-norvegicus	D3ZD38	Dynlt2b-ps1	D3ZD38	9	21	Dynein light chain Tctex-type 2B, pseudogene 1
-D3ZD46	rattus-norvegicus	D3ZD46	Dhx58	D3ZD46	1	74	RNA helicase
+D3ZD46	rattus-norvegicus	D3ZD46	Dhx58	D3ZD46	1	73	RNA helicase
 D3ZD48	rattus-norvegicus	D3ZD48	Rab11fip2	D3ZD48	4	19	Rab11 family-interacting protein 2
 D3ZD59	rattus-norvegicus	D3ZD59	Mettl4	D3ZD59	0	5	Methyltransferase 4, N6-adenosine
 D3ZD62	rattus-norvegicus	D3ZD62	Ndst2	D3ZD62	0	2	D3ZD62_RAT
@@ -487,10 +487,10 @@ D3ZD78	rattus-norvegicus	D3ZD78	Raver2	D3ZD78	0	16	Ribonucleoprotein, PTB-bindin
 D3ZD80	rattus-norvegicus	D3ZD80	Gtf3c4	D3ZD80	3	22	General transcription factor IIIC subunit 4
 D3ZD82	rattus-norvegicus	D3ZD82	Dnajc5b	D3ZD82	4	71	DnaJ homolog subfamily C member 5B
 D3ZD88	rattus-norvegicus	D3ZD88	Cd22	D3ZD88	2	54	B-cell receptor CD22
-D3ZD89	rattus-norvegicus	D3ZD89	Naa15	D3ZD89	9	53	N(alpha)-acetyltransferase 15, NatA auxiliary subunit
+D3ZD89	rattus-norvegicus	D3ZD89	Naa15	D3ZD89	8	51	N(alpha)-acetyltransferase 15, NatA auxiliary subunit
 D3ZD94	rattus-norvegicus	D3ZD94	Gsta3l1	D3ZD94	0	1	glutathione transferase
 D3ZD96	rattus-norvegicus	D3ZD96	Tmigd1	D3ZD96	1	5	Transmembrane and immunoglobulin domain-containing protein 1
-D3ZD97	rattus-norvegicus	D3ZD97	Dhx15	D3ZD97	18	169	ATP-dependent RNA helicase DHX15
+D3ZD97	rattus-norvegicus	D3ZD97	Dhx15	D3ZD97	18	168	ATP-dependent RNA helicase DHX15
 D3ZDB8	rattus-norvegicus	D3ZDB8	Or10x1	D3ZDB8	0	3	Olfactory receptor family 10 subfamily X member 1
 D3ZDC2	rattus-norvegicus	D3ZDC2	Slc43a2	D3ZDC2	0	4	Large neutral amino acids transporter small subunit 4
 D3ZDC7	rattus-norvegicus	D3ZDC7	Zfyve9	D3ZDC7	6	13	Zinc finger FYVE domain-containing protein
@@ -502,13 +502,13 @@ D3ZDG6	rattus-norvegicus	D3ZDG6	Lhx6	D3ZDG6	2	8	LIM homeobox 6
 D3ZDG9	rattus-norvegicus	D3ZDG9	Or7c19	D3ZDG9	0	4	Olfactory receptor
 D3ZDH4	rattus-norvegicus	D3ZDH4	Epha1	D3ZDH4	12	50	Ephrin type-A receptor 1
 D3ZDI6	rattus-norvegicus	D3ZDI6	Mylip	D3ZDI6	5	17	E3 ubiquitin-protein ligase MYLIP
-D3ZDI7	rattus-norvegicus	D3ZDI7	Ppp2r5a	D3ZDI7	5	58	Serine/threonine-protein phosphatase 2A 56 kDa regulatory subunit
+D3ZDI7	rattus-norvegicus	D3ZDI7	Ppp2r5a	D3ZDI7	5	57	Serine/threonine-protein phosphatase 2A 56 kDa regulatory subunit
 D3ZDI8	rattus-norvegicus	D3ZDI8	Pde6b	D3ZDI8	3	9	Phosphodiesterase
 D3ZDI9	rattus-norvegicus	D3ZDI9	Usp13	D3ZDI9	7	34	Ubiquitin carboxyl-terminal hydrolase
 D3ZDJ4	rattus-norvegicus	D3ZDJ4	Unc93b1	D3ZDJ4	6	9	Protein unc-93 homolog B1
 D3ZDJ5	rattus-norvegicus	D3ZDJ5	Rrp36	D3ZDJ5	4	35	rRNA biogenesis protein RRP36
 D3ZDJ9	rattus-norvegicus	D3ZDJ9	Bicc1	D3ZDJ9	3	13	BicC family RNA binding protein 1
-D3ZDK2	rattus-norvegicus	D3ZDK2	Ube2d1	D3ZDK2	42	142	Ubiquitin-conjugating enzyme E2 D1
+D3ZDK2	rattus-norvegicus	D3ZDK2	Ube2d1	D3ZDK2	41	141	Ubiquitin-conjugating enzyme E2 D1
 D3ZDK4	rattus-norvegicus	D3ZDK4	Angptl7	D3ZDK4	0	3	Angiopoietin like 7
 D3ZDK7	rattus-norvegicus	D3ZDK7	Pgp	D3ZDK7	0	2	Glycerol-3-phosphate phosphatase
 D3ZDL1	rattus-norvegicus	D3ZDL1	Hs3st5	D3ZDL1	0	1	Sulfotransferase
@@ -518,13 +518,13 @@ D3ZDM6	rattus-norvegicus	D3ZDM6	Cdk19	D3ZDM6	2	72	cyclin-dependent kinase
 D3ZDM7	rattus-norvegicus	D3ZDM7	Ddo	D3ZDM7	1	18	D-aspartate oxidase
 D3ZDM8	rattus-norvegicus	D3ZDM8	Zfp334	D3ZDM8	1	1	Zinc finger protein 334
 D3ZDN6	rattus-norvegicus	D3ZDN6	Zfp787	D3ZDN6	0	4	Zinc finger protein 787
-D3ZDN9	rattus-norvegicus	D3ZDN9	Anapc16	D3ZDN9	9	111	Anaphase-promoting complex subunit 16
+D3ZDN9	rattus-norvegicus	D3ZDN9	Anapc16	D3ZDN9	9	110	Anaphase-promoting complex subunit 16
 D3ZDP2	rattus-norvegicus	D3ZDP2	Mrpl58	D3ZDP2	15	267	Mitochondrial ribosomal protein L58
 D3ZDP7	rattus-norvegicus	D3ZDP7	Nyap1	D3ZDP7	0	2	Neuronal tyrosine-phosphorylated phosphoinositide-3-kinase adaptor 1
 D3ZDQ2	rattus-norvegicus	D3ZDQ2	Nkx2-2	D3ZDQ2	7	20	NK2 homeobox 2
 D3ZDQ9	rattus-norvegicus	D3ZDQ9	Sgca	D3ZDQ9	2	39	Sarcoglycan, alpha
 D3ZDR1	rattus-norvegicus	D3ZDR1	Fam193b	D3ZDR1	1	30	Family with sequence similarity 193, member B
-D3ZDR2	rattus-norvegicus	D3ZDR2	Chmp6	D3ZDR2	7	45	Charged multivesicular body protein 6
+D3ZDR2	rattus-norvegicus	D3ZDR2	Chmp6	D3ZDR2	7	44	Charged multivesicular body protein 6
 D3ZDR5	rattus-norvegicus	D3ZDR5	Prmt9	D3ZDR5	1	4	Protein arginine N-methyltransferase 9
 D3ZDR7	rattus-norvegicus	D3ZDR7	Themis2	D3ZDR7	2	6	Thymocyte selection associated family member 2
 D3ZDR8	rattus-norvegicus	D3ZDR8	Akap17b	D3ZDR8	0	1	A kinase (PRKA) anchor protein 17B
@@ -532,11 +532,11 @@ D3ZDR9	rattus-norvegicus	D3ZDR9	Nrde2	D3ZDR9	2	14	NRDE-2, necessary for RNA inte
 D3ZDS2	rattus-norvegicus	D3ZDS2	Msr1	D3ZDS2	1	31	Macrophage scavenger receptor 1
 D3ZDS3	rattus-norvegicus	D3ZDS3	Ptk6	D3ZDS3	5	79	Tyrosine-protein kinase
 D3ZDS4	rattus-norvegicus	D3ZDS4	Emg1	D3ZDS4	5	195	18S rRNA (pseudouridine(1248)-N1)-methyltransferase
-D3ZDS8	rattus-norvegicus	D3ZDS8	Zranb3	D3ZDS8	2	26	DNA annealing helicase and endonuclease ZRANB3
+D3ZDS8	rattus-norvegicus	D3ZDS8	Zranb3	D3ZDS8	2	25	DNA annealing helicase and endonuclease ZRANB3
 D3ZDS9	rattus-norvegicus	D3ZDS9	Ifnar1	D3ZDS9	17	55	Interferon alpha/beta receptor 1
 D3ZDT0	rattus-norvegicus	D3ZDT0	Klhdc9	D3ZDT0	0	15	Kelch domain-containing protein 9
 D3ZDT6	rattus-norvegicus	D3ZDT6	Pkd2l1	D3ZDT6	0	3	Polycystin 2 like 1, transient receptor potential cation channel
-D3ZDU2	rattus-norvegicus	D3ZDU2	Rptor	D3ZDU2	3	145	Regulatory-associated protein of mTOR
+D3ZDU2	rattus-norvegicus	D3ZDU2	Rptor	D3ZDU2	3	144	Regulatory-associated protein of mTOR
 D3ZDV2	rattus-norvegicus	D3ZDV2	Eps8l1	D3ZDV2	4	19	Epidermal growth factor receptor kinase substrate 8-like protein 1
 D3ZDV9	rattus-norvegicus	D3ZDV9	Nek4	D3ZDV9	1	9	Serine/threonine-protein kinase Nek4
 D3ZDW3	rattus-norvegicus	D3ZDW3	Tsc22d2	D3ZDW3	2	2	TSC22 domain family, member 2
@@ -554,7 +554,7 @@ D3ZE07	rattus-norvegicus	D3ZE07	AC109901.2	D3ZE07	2	22	Ig-like domain-containing
 D3ZE08	rattus-norvegicus	D3ZE08	ENSRNOG00000065564	D3ZE08	3	22	Ig-like domain-containing protein
 D3ZE10	rattus-norvegicus	D3ZE10	Mrpl35	D3ZE10	12	191	Large ribosomal subunit protein bL35m
 D3ZE11	rattus-norvegicus	D3ZE11	Snrnp25	D3ZE11	2	24	U11/U12 small nuclear ribonucleoprotein 25 kDa protein
-D3ZE15	rattus-norvegicus	D3ZE15	Ndufa13	D3ZE15	11	181	NADH dehydrogenase
+D3ZE15	rattus-norvegicus	D3ZE15	Ndufa13	D3ZE15	11	180	NADH dehydrogenase
 D3ZE16	rattus-norvegicus	D3ZE16	Idua	D3ZE16	0	8	Alpha-L-iduronidase
 D3ZE20	rattus-norvegicus	D3ZE20	Nfatc1	D3ZE20	8	54	Nuclear factor of activated T-cells 1
 D3ZE21	rattus-norvegicus	D3ZE21	Tmed11	D3ZE21	7	9	Transmembrane emp24 protein transport domain containing 11
@@ -568,16 +568,16 @@ D3ZE62	rattus-norvegicus	D3ZE62	Atp8b3	D3ZE62	2	5	Phospholipid-transporting ATPa
 D3ZE63	rattus-norvegicus	D3ZE63	Mifl2	D3ZE63	0	13	Macrophage migration inhibitory factor
 D3ZE70	rattus-norvegicus	D3ZE70	Nlrp4al1	D3ZE70	0	3	NLR family, pyrin domain containing 4A like 1
 D3ZE71	rattus-norvegicus	D3ZE71	Faap24	D3ZE71	10	67	Fanconi anemia core complex-associated protein 24
-D3ZE72	rattus-norvegicus	D3ZE72	Metap1	D3ZE72	47	249	Methionine aminopeptidase
+D3ZE72	rattus-norvegicus	D3ZE72	Metap1	D3ZE72	47	247	Methionine aminopeptidase
 D3ZE73	rattus-norvegicus	D3ZE73	Smc1b	D3ZE73	7	39	Structural maintenance of chromosomes protein
 D3ZE75	rattus-norvegicus	D3ZE75	Lrp8	D3ZE75	10	42	Low-density lipoprotein receptor-related protein 8
-D3ZE76	rattus-norvegicus	D3ZE76	Or10w1	D3ZE76	0	166	Olfactory receptor
+D3ZE76	rattus-norvegicus	D3ZE76	Or10w1	D3ZE76	0	165	Olfactory receptor
 D3ZE85	rattus-norvegicus	D3ZE85	Frrs1l	D3ZE85	6	153	DOMON domain-containing protein FRRS1L
 D3ZE86	rattus-norvegicus	D3ZE86	Lrr1	D3ZE86	5	47	Leucine-rich repeat protein 1
 D3ZE91	rattus-norvegicus	D3ZE91	Kctd9	D3ZE91	1	6	BTB/POZ domain-containing protein KCTD9
 D3ZE94	rattus-norvegicus	D3ZE94	Cimap1a	D3ZE94	0	4	Ciliary microtubule associated protein 1A
 D3ZE95	rattus-norvegicus	D3ZE95	Zfp385c	D3ZE95	0	1	Zinc finger protein 385C
-D3ZE96	rattus-norvegicus	D3ZE96	Pacrgl	D3ZE96	17	184	Parkin coregulated like
+D3ZE96	rattus-norvegicus	D3ZE96	Pacrgl	D3ZE96	16	183	Parkin coregulated like
 D3ZEA0	rattus-norvegicus	D3ZEA0	Fndc3a	D3ZEA0	0	2	Fibronectin type-III domain-containing protein 3A
 D3ZEB4	rattus-norvegicus	D3ZEB4	Zglp1	D3ZEB4	2	2	GATA-type zinc finger protein 1
 D3ZEB8	rattus-norvegicus	D3ZEB8	Rps12l7	D3ZEB8	32	451	40S ribosomal protein S12
@@ -593,18 +593,18 @@ D3ZEF9	rattus-norvegicus	D3ZEF9	B3gnt2	D3ZEF9	0	2	Hexosyltransferase
 D3ZEG0	rattus-norvegicus	D3ZEG0	H1f8	D3ZEG0	1	70	Histone H1.8
 D3ZEG1	rattus-norvegicus	D3ZEG1	Crygn	D3ZEG1	0	11	Gamma-crystallin N
 D3ZEG8	rattus-norvegicus	D3ZEG8	Carm1	D3ZEG8	1	14	Histone-arginine methyltransferase CARM1
-D3ZEG9	rattus-norvegicus	D3ZEG9	Ercc2	D3ZEG9	7	189	General transcription and DNA repair factor IIH helicase subunit XPD
+D3ZEG9	rattus-norvegicus	D3ZEG9	Ercc2	D3ZEG9	7	188	General transcription and DNA repair factor IIH helicase subunit XPD
 D3ZEH0	rattus-norvegicus	D3ZEH0	Duoxa1	D3ZEH0	1	8	Dual oxidase maturation factor 1
 D3ZEH2	rattus-norvegicus	D3ZEH2	Foxred1	D3ZEH2	3	62	FAD-dependent oxidoreductase domain-containing protein 1
-D3ZEH3	rattus-norvegicus	D3ZEH3	Sec61a2	D3ZEH3	8	376	SEC61 translocon subunit alpha 2
+D3ZEH3	rattus-norvegicus	D3ZEH3	Sec61a2	D3ZEH3	8	375	SEC61 translocon subunit alpha 2
 D3ZEH4	rattus-norvegicus	D3ZEH4	Pudp	D3ZEH4	0	1	Pseudouridine-5'-phosphatase
 D3ZEH5	rattus-norvegicus	D3ZEH5	Sidt2	D3ZEH5	3	74	SID1 transmembrane family member 2
 D3ZEH8	rattus-norvegicus	D3ZEH8	Pmf1	D3ZEH8	7	17	Polyamine-modulated factor 1
-D3ZEI0	rattus-norvegicus	D3ZEI0	AABR07016623.1	D3ZEI0	5	369	Large ribosomal subunit protein eL28
+D3ZEI0	rattus-norvegicus	D3ZEI0	AABR07016623.1	D3ZEI0	5	367	Large ribosomal subunit protein eL28
 D3ZEI2	rattus-norvegicus	D3ZEI2	Cfap100	D3ZEI2	2	2	Cilia and flagella associated protein 100
 D3ZEI4	rattus-norvegicus	D3ZEI4	Hepacam	D3ZEI4	0	3	Hepatic and glial cell adhesion molecule
 D3ZEI6	rattus-norvegicus	D3ZEI6	Ncoa5	D3ZEI6	7	93	Nuclear receptor coactivator 5
-D3ZEI7	rattus-norvegicus	D3ZEI7	Gtf2h5	D3ZEI7	8	117	General transcription and DNA repair factor IIH subunit TFB5
+D3ZEI7	rattus-norvegicus	D3ZEI7	Gtf2h5	D3ZEI7	8	116	General transcription and DNA repair factor IIH subunit TFB5
 D3ZEJ0	rattus-norvegicus	D3ZEJ0	Prdm12	D3ZEJ0	0	1	PR domain zinc finger protein 12
 D3ZEJ2	rattus-norvegicus	D3ZEJ2	Mcur1	D3ZEJ2	0	8	Mitochondrial calcium uniporter regulator 1
 D3ZEJ5	rattus-norvegicus	D3ZEJ5	Duoxa2	D3ZEJ5	1	7	Dual oxidase maturation factor 2
@@ -624,7 +624,7 @@ D3ZEM8	rattus-norvegicus	D3ZEM8	Tsr1	D3ZEM8	20	212	Pre-rRNA-processing protein T
 D3ZEN0	rattus-norvegicus	D3ZEN0	Micall2	D3ZEN0	1	11	MICAL-like protein 2
 D3ZEN1	rattus-norvegicus	D3ZEN1	Efna4	D3ZEN1	14	26	Ephrin-A4
 D3ZEN8	rattus-norvegicus	D3ZEN8	C1ql1	D3ZEN8	1	4	Adiponectin l
-D3ZEP2	rattus-norvegicus	D3ZEP2	Ndp	D3ZEP2	4	30	Norrin
+D3ZEP2	rattus-norvegicus	D3ZEP2	Ndp	D3ZEP2	3	29	Norrin
 D3ZEP8	rattus-norvegicus	D3ZEP8	Adam32	D3ZEP8	3	5	ADAM metallopeptidase domain 32
 D3ZEP9	rattus-norvegicus	D3ZEP9	Rdh12	D3ZEP9	0	3	NADP-retinol dehydrogenase
 D3ZEQ6	rattus-norvegicus	D3ZEQ6	Spata46	D3ZEQ6	0	1	Spermatogenesis associated 46
@@ -638,7 +638,7 @@ D3ZES2	rattus-norvegicus	D3ZES2	Trappc6b	D3ZES2	13	30	Trafficking protein partic
 D3ZES9	rattus-norvegicus	D3ZES9	Prc1	D3ZES9	3	27	Protein regulator of cytokinesis 1
 D3ZET1	rattus-norvegicus	D3ZET1	Nectin4	D3ZET1	3	3	Nectin-4
 D3ZEU8	rattus-norvegicus	D3ZEU8	Fam76a	D3ZEU8	0	2	Family with sequence similarity 76, member A
-D3ZEV0	rattus-norvegicus	D3ZEV0	Ybx1-ps20	D3ZEV0	3	137	Y box binding protein 1, pseudogene 20
+D3ZEV0	rattus-norvegicus	D3ZEV0	Ybx1-ps20	D3ZEV0	3	136	Y box binding protein 1, pseudogene 20
 D3ZEX3	rattus-norvegicus	D3ZEX3	Trappc3l	D3ZEX3	13	32	Trafficking protein particle complex subunit
 D3ZEX6	rattus-norvegicus	D3ZEX6	Irf4	D3ZEX6	3	35	Interferon regulatory factor 4
 D3ZEX7	rattus-norvegicus	D3ZEX7	Spire1	D3ZEX7	2	6	Spire-type actin nucleation factor 1
@@ -649,11 +649,11 @@ D3ZF01	rattus-norvegicus	D3ZF01	Mybl1	D3ZF01	9	72	MYB proto-oncogene like 1
 D3ZF03	rattus-norvegicus	D3ZF03	Aifm3	D3ZF03	4	59	Apoptosis-inducing factor 3
 D3ZF07	rattus-norvegicus	D3ZF07	Rpl27al3	D3ZF07	28	431	Large ribosomal subunit protein uL15
 D3ZF09	rattus-norvegicus	D3ZF09	Or2t48	D3ZF09	0	3	Olfactory receptor
-D3ZF11	rattus-norvegicus	D3ZF11	Lamtor5	D3ZF11	12	71	Ragulator complex protein LAMTOR5
+D3ZF11	rattus-norvegicus	D3ZF11	Lamtor5	D3ZF11	11	70	Ragulator complex protein LAMTOR5
 D3ZF12	rattus-norvegicus	D3ZF12	Spcs3	D3ZF12	3	9	Signal peptidase complex subunit 3
-D3ZF13	rattus-norvegicus	D3ZF13	Ndufab1	D3ZF13	80	499	Acyl carrier protein
+D3ZF13	rattus-norvegicus	D3ZF13	Ndufab1	D3ZF13	80	498	Acyl carrier protein
 D3ZF16	rattus-norvegicus	D3ZF16	Lmf1	D3ZF16	0	2	Lipase maturation factor
-D3ZF17	rattus-norvegicus	D3ZF17	Adgrd1	D3ZF17	3	49	Adhesion G-protein coupled receptor D1
+D3ZF17	rattus-norvegicus	D3ZF17	Adgrd1	D3ZF17	3	48	Adhesion G-protein coupled receptor D1
 D3ZF29	rattus-norvegicus	D3ZF29	Dnase1l2	D3ZF29	0	1	Deoxyribonuclease
 D3ZF32	rattus-norvegicus	D3ZF32	Treml2	D3ZF32	0	2	Trem-like transcript 2 protein
 D3ZF35	rattus-norvegicus	D3ZF35	Mzf1	D3ZF35	2	6	Myeloid zinc finger 1
@@ -662,7 +662,7 @@ D3ZF42	rattus-norvegicus	D3ZF42	Senp7	D3ZF42	7	22	Sentrin-specific protease 7
 D3ZF45	rattus-norvegicus	D3ZF45	Larp4b	D3ZF45	2	38	La ribonucleoprotein 4B
 D3ZF49	rattus-norvegicus	D3ZF49	Tmprss6	D3ZF49	1	10	Transmembrane protease serine 6
 D3ZF50	rattus-norvegicus	D3ZF50	Cip2a	D3ZF50	0	5	Cellular inhibitor of PP2A
-D3ZF52	rattus-norvegicus	D3ZF52	Rpl15l2	D3ZF52	32	564	Ribosomal protein L15
+D3ZF52	rattus-norvegicus	D3ZF52	Rpl15l2	D3ZF52	32	563	Ribosomal protein L15
 D3ZF53	rattus-norvegicus	D3ZF53	Bpifb9a	D3ZF53	0	1	BPI fold containing family B, member 9A
 D3ZF54	rattus-norvegicus	D3ZF54	Ano10	D3ZF54	1	5	Anoctamin
 D3ZF63	rattus-norvegicus	D3ZF63	Wnt9a	D3ZF63	2	3	Protein Wnt
@@ -680,7 +680,7 @@ D3ZFA4	rattus-norvegicus	D3ZFA4	Or2a57	D3ZFA4	1	3	Olfactory receptor
 D3ZFA7	rattus-norvegicus	D3ZFA7	Nr1h5	D3ZFA7	6	15	Nuclear receptor subfamily 1, group H, member 5
 D3ZFA8	rattus-norvegicus	D3ZFA8	LOC100362366	D3ZFA8	42	311	Small ribosomal subunit protein eS17
 D3ZFB0	rattus-norvegicus	D3ZFB0	Golt1a	D3ZFB0	0	4	Golgi transport 1A
-D3ZFB2	rattus-norvegicus	D3ZFB2	Luc7l3	D3ZFB2	8	52	Luc7-like protein
+D3ZFB2	rattus-norvegicus	D3ZFB2	Luc7l3	D3ZFB2	7	51	Luc7-like protein
 D3ZFB6	rattus-norvegicus	D3ZFB6	Prrt2	D3ZFB6	1	9	Proline-rich transmembrane protein 2
 D3ZFC5	rattus-norvegicus	D3ZFC5	Atp11c	D3ZFC5	3	22	Phospholipid-transporting ATPase
 D3ZFC8	rattus-norvegicus	D3ZFC8	Efcab9	D3ZFC8	3	54	EF-hand calcium binding domain 9
@@ -688,21 +688,21 @@ D3ZFD3	rattus-norvegicus	D3ZFD3	Dynapl1	D3ZFD3	0	1	Dynactin associated protein-l
 D3ZFD9	rattus-norvegicus	D3ZFD9	Rarb	D3ZFD9	13	28	Retinoic acid receptor beta
 D3ZFE0	rattus-norvegicus	D3ZFE0	Or1a1b	D3ZFE0	0	3	Olfactory receptor family 1 subfamily A member 1B
 D3ZFE5	rattus-norvegicus	D3ZFE5	Ctsml1	D3ZFE5	0	2	Cathepsin M
-D3ZFE9	rattus-norvegicus	D3ZFE9	Mrpl1	D3ZFE9	45	396	Large ribosomal subunit protein uL1m
+D3ZFE9	rattus-norvegicus	D3ZFE9	Mrpl1	D3ZFE9	45	395	Large ribosomal subunit protein uL1m
 D3ZFF1	rattus-norvegicus	D3ZFF1	AABR07058937.1	D3ZFF1	9	179	60S ribosomal protein L29
 D3ZFF4	rattus-norvegicus	D3ZFF4	Lclat1	D3ZFF4	0	13	Lysocardiolipin acyltransferase 1
 D3ZFG3	rattus-norvegicus	D3ZFG3	Cela3b	D3ZFG3	3	8	Chymotrypsin like elastase 3B
 D3ZFG5	rattus-norvegicus	D3ZFG5	Pmp2	D3ZFG5	2	7	Myelin P2 protein
 D3ZFH0	rattus-norvegicus	D3ZFH0	Ifna4	D3ZFH0	2	11	Interferon 1ai2
 D3ZFH5	rattus-norvegicus	D3ZFH5	Itih2	D3ZFH5	0	22	Inter-alpha-trypsin inhibitor heavy chain 2
-D3ZFJ0	rattus-norvegicus	D3ZFJ0	Pik3cg	D3ZFJ0	14	97	Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit gamma isoform
+D3ZFJ0	rattus-norvegicus	D3ZFJ0	Pik3cg	D3ZFJ0	14	96	Phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit gamma isoform
 D3ZFJ3	rattus-norvegicus	D3ZFJ3	Sh3bp1	D3ZFJ3	3	26	SH3 domain-binding protein 1
 D3ZFJ6	rattus-norvegicus	D3ZFJ6	Lactb	D3ZFJ6	0	7	Serine beta-lactamase-like protein LACTB, mitochondrial
 D3ZFK0	rattus-norvegicus	D3ZFK0	Rnf144b	D3ZFK0	2	2	E3 ubiquitin-protein ligase RNF144B
 D3ZFK5	rattus-norvegicus	D3ZFK5	Spcs1	D3ZFK5	3	13	Signal peptidase complex subunit 1
 D3ZFK8	rattus-norvegicus	D3ZFK8	Farp2	D3ZFK8	3	15	FERM, ARHGEF and pleckstrin domain-containing protein 2
 D3ZFK9	rattus-norvegicus	D3ZFK9	Amn	D3ZFK9	2	10	Protein amnionless
-D3ZFL3	rattus-norvegicus	D3ZFL3	Map3k6	D3ZFL3	3	22	mitogen-activated protein kinase kinase kinase
+D3ZFL3	rattus-norvegicus	D3ZFL3	Map3k6	D3ZFL3	3	21	mitogen-activated protein kinase kinase kinase
 D3ZFL6	rattus-norvegicus	D3ZFL6	Mex3b	D3ZFL6	0	1	Mex-3 RNA binding family member B
 D3ZFM1	rattus-norvegicus	D3ZFM1	Asf1a	D3ZFM1	15	43	Anti-silencing function 1A histone chaperone
 D3ZFM4	rattus-norvegicus	D3ZFM4	Nus1	D3ZFM4	2	4	Dehydrodolichyl diphosphate synthase complex subunit NUS1
@@ -715,33 +715,33 @@ D3ZFP7	rattus-norvegicus	D3ZFP7	Insc	D3ZFP7	6	18	Protein inscuteable homolog
 D3ZFQ3	rattus-norvegicus	D3ZFQ3	Nubpl	D3ZFQ3	0	7	Iron-sulfur cluster transfer protein NUBPL
 D3ZFQ4	rattus-norvegicus	D3ZFQ4	Zscan10	D3ZFQ4	2	4	Zinc finger and SCAN domain-containing protein 10
 D3ZFQ5	rattus-norvegicus	D3ZFQ5	Cdh9	D3ZFQ5	4	25	Cadherin 9
-D3ZFQ8	rattus-norvegicus	D3ZFQ8	Cyc1	D3ZFQ8	10	187	Cytochrome c1, heme protein, mitochondrial
+D3ZFQ8	rattus-norvegicus	D3ZFQ8	Cyc1	D3ZFQ8	10	186	Cytochrome c1, heme protein, mitochondrial
 D3ZFR0	rattus-norvegicus	D3ZFR0	Fastkd1	D3ZFR0	0	1	FAST kinase domains 1
 D3ZFR1	rattus-norvegicus	D3ZFR1	Hs3st3a1	D3ZFR1	0	1	Sulfotransferase
 D3ZFR9	rattus-norvegicus	D3ZFR9	Rdh13	D3ZFR9	0	2	NADP-retinol dehydrogenase
 D3ZFS0	rattus-norvegicus	D3ZFS0	Wnt9b	D3ZFS0	6	11	Protein Wnt
-D3ZFS1	rattus-norvegicus	D3ZFS1	Opn3	D3ZFS1	0	20	Opsin-3
+D3ZFS1	rattus-norvegicus	D3ZFS1	Opn3	D3ZFS1	0	19	Opsin-3
 D3ZFS2	rattus-norvegicus	D3ZFS2	Clgn	D3ZFS2	1	32	Calmegin
 D3ZFS7	rattus-norvegicus	D3ZFS7	Lyplal1	D3ZFS7	1	1	Lysophospholipase-like protein 1
-D3ZFT1	rattus-norvegicus	D3ZFT1	Rfc1	D3ZFT1	6	51	Replication factor C subunit 1
+D3ZFT1	rattus-norvegicus	D3ZFT1	Rfc1	D3ZFT1	6	50	Replication factor C subunit 1
 D3ZFU1	rattus-norvegicus	D3ZFU1	Lcn4	D3ZFU1	1	1	Lipocalin 4
 D3ZFW5	rattus-norvegicus	D3ZFW5	Tmem107	D3ZFW5	1	17	Transmembrane protein 107
 D3ZFW6	rattus-norvegicus	D3ZFW6	Dcaf15	D3ZFW6	2	33	DDB1 and CUL4 associated factor 15
-D3ZFW8	rattus-norvegicus	D3ZFW8	Ccr1l1	D3ZFW8	11	55	Chemokine (C-C motif) receptor 1-like 1
+D3ZFW8	rattus-norvegicus	D3ZFW8	Ccr1l1	D3ZFW8	11	54	Chemokine (C-C motif) receptor 1-like 1
 D3ZFY0	rattus-norvegicus	D3ZFY0	Sephs1	D3ZFY0	2	8	Selenide, water dikinase 1
 D3ZFY8	rattus-norvegicus	D3ZFY8	Ube2v1	D3ZFY8	10	93	Ubiquitin conjugating enzyme E2 V1
 D3ZFZ1	rattus-norvegicus	D3ZFZ1	Zfp157	D3ZFZ1	1	1	Zinc finger protein 157
-D3ZFZ8	rattus-norvegicus	D3ZFZ8	Rps24l3	D3ZFZ8	23	574	40S ribosomal protein S24
+D3ZFZ8	rattus-norvegicus	D3ZFZ8	Rps24l3	D3ZFZ8	23	573	40S ribosomal protein S24
 D3ZG03	rattus-norvegicus	D3ZG03	Rpl27al5	D3ZG03	18	433	Large ribosomal subunit protein uL15
 D3ZG05	rattus-norvegicus	D3ZG05	LOC120100003	D3ZG05	31	451	40S ribosomal protein S12
 D3ZG06	rattus-norvegicus	D3ZG06	Tbc1d30	D3ZG06	3	19	TBC1 domain family member 30
-D3ZG07	rattus-norvegicus	D3ZG07	Lsm6	D3ZG07	25	148	U6 snRNA-associated Sm-like protein LSm6
+D3ZG07	rattus-norvegicus	D3ZG07	Lsm6	D3ZG07	24	147	U6 snRNA-associated Sm-like protein LSm6
 D3ZG10	rattus-norvegicus	D3ZG10	Grap2	D3ZG10	21	112	Adapter protein GRID
 D3ZG27	rattus-norvegicus	D3ZG27	Ubiad1	D3ZG27	1	1	UbiA prenyltransferase domain-containing protein 1
 D3ZG28	rattus-norvegicus	D3ZG28	Slc23a3	D3ZG28	0	22	Solute carrier family 23, member 3
 D3ZG35	rattus-norvegicus	D3ZG35	Zbtb26	D3ZG35	0	3	Zinc finger and BTB domain containing 26
 D3ZG42	rattus-norvegicus	D3ZG42	Cdcp2	D3ZG42	0	6	CUB domain containing protein 2
-D3ZG43	rattus-norvegicus	D3ZG43	Ndufs3	D3ZG43	13	286	NADH dehydrogenase
+D3ZG43	rattus-norvegicus	D3ZG43	Ndufs3	D3ZG43	13	285	NADH dehydrogenase
 D3ZG44	rattus-norvegicus	D3ZG44	Klf12	D3ZG44	0	1	KLF transcription factor 12
 D3ZG48	rattus-norvegicus	D3ZG48	Ddx50	D3ZG48	3	66	RNA helicase
 D3ZG52	rattus-norvegicus	D3ZG52	Dna2	D3ZG52	9	124	DNA replication ATP-dependent helicase/nuclease DNA2
@@ -757,11 +757,11 @@ D3ZG81	rattus-norvegicus	D3ZG81	Marchf8	D3ZG81	0	2	RING-type E3 ubiquitin transf
 D3ZG83	rattus-norvegicus	D3ZG83	Map3k10	D3ZG83	2	7	Mitogen-activated protein kinase kinase kinase 10
 D3ZG85	rattus-norvegicus	D3ZG85	Cdkl5	D3ZG85	0	2	Cyclin-dependent kinase-like 5
 D3ZG86	rattus-norvegicus	D3ZG86	Mael	D3ZG86	2	3	Protein maelstrom homolog
-D3ZG87	rattus-norvegicus	D3ZG87	Rgr	D3ZG87	0	20	RPE-retinal G protein-coupled receptor
+D3ZG87	rattus-norvegicus	D3ZG87	Rgr	D3ZG87	0	19	RPE-retinal G protein-coupled receptor
 D3ZG88	rattus-norvegicus	D3ZG88	Znrd2	D3ZG88	3	5	Zinc ribbon domain containing 2
 D3ZG90	rattus-norvegicus	D3ZG90	A4gnt	D3ZG90	0	1	Alpha-1,4-N-acetylglucosaminyltransferase
 D3ZG92	rattus-norvegicus	D3ZG92	Rccd1	D3ZG92	1	3	RCC1 domain containing 1
-D3ZG94	rattus-norvegicus	D3ZG94	Slc25a43	D3ZG94	0	58	Solute carrier family 25 member 43
+D3ZG94	rattus-norvegicus	D3ZG94	Slc25a43	D3ZG94	0	57	Solute carrier family 25 member 43
 D3ZGA0	rattus-norvegicus	D3ZGA0	Irx2	D3ZGA0	0	4	Iroquois homeobox 2
 D3ZGA5	rattus-norvegicus	D3ZGA5	Rilp	D3ZGA5	2	28	Rab-interacting lysosomal protein
 D3ZGB0	rattus-norvegicus	D3ZGB0	Usp27x	D3ZGB0	14	40	Ubiquitin carboxyl-terminal hydrolase
@@ -777,7 +777,7 @@ D3ZGG9	rattus-norvegicus	D3ZGG9	Xcr1	D3ZGG9	0	39	Chemokine XC receptor 1
 D3ZGH2	rattus-norvegicus	D3ZGH2	Zfp398	D3ZGH2	2	4	Zinc finger protein 398
 D3ZGH9	rattus-norvegicus	D3ZGH9	Pom121l2	D3ZGH9	0	1	POM121 transmembrane nucleoporin-like 2
 D3ZGI6	rattus-norvegicus	D3ZGI6	Crct1	D3ZGI6	0	5	Cysteine-rich C-terminal 1
-D3ZGI8	rattus-norvegicus	D3ZGI8	Mrm2	D3ZGI8	17	202	rRNA methyltransferase 2, mitochondrial
+D3ZGI8	rattus-norvegicus	D3ZGI8	Mrm2	D3ZGI8	17	201	rRNA methyltransferase 2, mitochondrial
 D3ZGJ0	rattus-norvegicus	D3ZGJ0	Dhx32	D3ZGJ0	12	112	Putative pre-mRNA-splicing factor ATP-dependent RNA helicase DHX32
 D3ZGJ1	rattus-norvegicus	D3ZGJ1	Ildr2	D3ZGJ1	1	2	Immunoglobulin-like domain containing receptor 2
 D3ZGJ2	rattus-norvegicus	D3ZGJ2	Espnl	D3ZGJ2	0	3	Espin-like protein
@@ -791,11 +791,11 @@ D3ZGN0	rattus-norvegicus	D3ZGN0	Tbc1d4	D3ZGN0	4	9	TBC1 domain family member 4
 D3ZGN2	rattus-norvegicus	D3ZGN2	Cpne5	D3ZGN2	0	2	Copine-5
 D3ZGN4	rattus-norvegicus	D3ZGN4	Kctd20	D3ZGN4	1	8	Potassium channel tetramerization domain containing 20
 D3ZGN6	rattus-norvegicus	D3ZGN6	Pla2g3	D3ZGN6	5	79	Phospholipase A2, group III
-D3ZGN8	rattus-norvegicus	D3ZGN8	Rps19l3	D3ZGN8	38	436	Small ribosomal subunit protein eS19
+D3ZGN8	rattus-norvegicus	D3ZGN8	Rps19l3	D3ZGN8	38	435	Small ribosomal subunit protein eS19
 D3ZGP2	rattus-norvegicus	D3ZGP2	Edar	D3ZGP2	2	5	Tumor necrosis factor receptor superfamily member EDAR
 D3ZGP9	rattus-norvegicus	D3ZGP9	Dhrs7c	D3ZGP9	1	12	Dehydrogenase/reductase SDR family member 7C
 D3ZGQ0	rattus-norvegicus	D3ZGQ0	Il17rd	D3ZGQ0	1	14	Interleukin-17 receptor D
-D3ZGQ2	rattus-norvegicus	D3ZGQ2	Tk2	D3ZGQ2	2	112	Thymidine kinase 2, mitochondrial
+D3ZGQ2	rattus-norvegicus	D3ZGQ2	Tk2	D3ZGQ2	2	111	Thymidine kinase 2, mitochondrial
 D3ZGQ5	rattus-norvegicus	D3ZGQ5	Nek8	D3ZGQ5	2	10	Serine/threonine-protein kinase Nek8
 D3ZGQ8	rattus-norvegicus	D3ZGQ8	Rsf1	D3ZGQ8	3	17	Remodeling and spacing factor 1
 D3ZGR7	rattus-norvegicus	D3ZGR7	Trir	D3ZGR7	12	132	Telomerase RNA component interacting RNase
@@ -808,21 +808,21 @@ D3ZGW2	rattus-norvegicus	D3ZGW2	Ap1g2	D3ZGW2	3	96	AP-1 complex subunit gamma
 D3ZGY1	rattus-norvegicus	D3ZGY1	Pym1	D3ZGY1	1	14	PYM homolog 1, exon junction complex associated factor
 D3ZGY4	rattus-norvegicus	D3ZGY4	AABR07025010.1	D3ZGY4	3	91	glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)
 D3ZGY5	rattus-norvegicus	D3ZGY5	Tmem269	D3ZGY5	0	1	Transmembrane protein 269
-D3ZGZ4	rattus-norvegicus	D3ZGZ4	Rai2	D3ZGZ4	2	17	Retinoic acid induced 2
+D3ZGZ4	rattus-norvegicus	D3ZGZ4	Rai2	D3ZGZ4	2	16	Retinoic acid induced 2
 D3ZGZ9	rattus-norvegicus	D3ZGZ9	Wdr59	D3ZGZ9	4	15	WD repeat domain 59
 D3ZH12	rattus-norvegicus	D3ZH12	Nosip	D3ZH12	0	3	Nitric oxide synthase-interacting protein
 D3ZH23	rattus-norvegicus	D3ZH23	Mrpl41l1	D3ZH23	11	294	Mitochondrial ribosomal protein L41 like 1
 D3ZH30	rattus-norvegicus	D3ZH30	Rngtt	D3ZH30	1	30	mRNA-capping enzyme
 D3ZH34	rattus-norvegicus	D3ZH34	Tent5a	D3ZH34	0	8	polynucleotide adenylyltransferase
 D3ZH36	rattus-norvegicus	D3ZH36	Elfn2	D3ZH36	0	3	Extracellular leucine-rich repeat and fibronectin type III domain containing 2
-D3ZH38	rattus-norvegicus	D3ZH38	Wbp2nl	D3ZH38	1	43	WBP2 N-terminal like
+D3ZH38	rattus-norvegicus	D3ZH38	Wbp2nl	D3ZH38	1	42	WBP2 N-terminal like
 D3ZH39	rattus-norvegicus	D3ZH39	Ephb3	D3ZH39	13	40	Ephrin type-B receptor 3
 D3ZH41	rattus-norvegicus	D3ZH41	Ckap4	D3ZH41	0	9	Cytoskeleton-associated protein 4
 D3ZH42	rattus-norvegicus	D3ZH42	Mov10l1	D3ZH42	1	6	RNA helicase Mov10l1
 D3ZH46	rattus-norvegicus	D3ZH46	Ibtk	D3ZH46	1	5	Inhibitor of Bruton tyrosine kinase
 D3ZH50	rattus-norvegicus	D3ZH50	Kics2	D3ZH50	0	15	KICSTOR subunit 2
 D3ZH55	rattus-norvegicus	D3ZH55	Fam53c	D3ZH55	1	1	Family with sequence similarity 53, member C
-D3ZH66	rattus-norvegicus	D3ZH66	Taf5	D3ZH66	22	160	Transcription initiation factor TFIID subunit 5
+D3ZH66	rattus-norvegicus	D3ZH66	Taf5	D3ZH66	22	159	Transcription initiation factor TFIID subunit 5
 D3ZH67	rattus-norvegicus	D3ZH67	Shld2	D3ZH67	1	4	Shieldin complex subunit 2
 D3ZH71	rattus-norvegicus	D3ZH71	Tyrp1	D3ZH71	1	6	5,6-dihydroxyindole-2-carboxylic acid oxidase
 D3ZH75	rattus-norvegicus	D3ZH75	Akt1s1	D3ZH75	8	35	AKT1 substrate 1
@@ -865,10 +865,10 @@ D3ZHI3	rattus-norvegicus	D3ZHI3	Klhl4	D3ZHI3	1	9	Kelch-like family member 4
 D3ZHI6	rattus-norvegicus	D3ZHI6	Ctla2a	D3ZHI6	0	1	Cytotoxic T lymphocyte-associated protein 2 alpha
 D3ZHJ3	rattus-norvegicus	D3ZHJ3	Sema3b	D3ZHJ3	2	12	Semaphorin-3B
 D3ZHJ4	rattus-norvegicus	D3ZHJ4	Dok2	D3ZHJ4	6	26	Docking protein 2
-D3ZHK9	rattus-norvegicus	D3ZHK9	Zfp36l2	D3ZHK9	1	11	mRNA decay activator protein ZFP36
+D3ZHK9	rattus-norvegicus	D3ZHK9	Zfp36l2	D3ZHK9	1	10	mRNA decay activator protein ZFP36
 D3ZHL1	rattus-norvegicus	D3ZHL1	Ksr1	D3ZHL1	14	69	non-specific serine/threonine protein kinase
 D3ZHL6	rattus-norvegicus	D3ZHL6	Map4k5	D3ZHL6	2	12	Mitogen-activated protein kinase kinase kinase kinase
-D3ZHL8	rattus-norvegicus	D3ZHL8	Gpr150	D3ZHL8	0	9	Probable G-protein coupled receptor 150
+D3ZHL8	rattus-norvegicus	D3ZHL8	Gpr150	D3ZHL8	0	8	Probable G-protein coupled receptor 150
 D3ZHM5	rattus-norvegicus	D3ZHM5	Hoxa10	D3ZHM5	2	9	Homeobox A10
 D3ZHM7	rattus-norvegicus	D3ZHM7	Dnttip2	D3ZHM7	9	181	Deoxynucleotidyltransferase, terminal, interacting protein 2
 D3ZHM9	rattus-norvegicus	D3ZHM9	ENSRNOG00000068649	D3ZHM9	2	47	Ig-like domain-containing protein
@@ -882,7 +882,7 @@ D3ZHR8	rattus-norvegicus	D3ZHR8	Tyw3	D3ZHR8	0	4	tRNA wybutosine-synthesizing pro
 D3ZHR9	rattus-norvegicus	D3ZHR9	Rskr	D3ZHR9	1	1	Protein kinase domain-containing protein
 D3ZHS0	rattus-norvegicus	D3ZHS0	Tmem40	D3ZHS0	0	1	Transmembrane protein 40
 D3ZHS5	rattus-norvegicus	D3ZHS5	Cpa4	D3ZHS5	0	6	Carboxypeptidase A4
-D3ZHS6	rattus-norvegicus	D3ZHS6	Bap1	D3ZHS6	28	111	Ubiquitin carboxyl-terminal hydrolase BAP1
+D3ZHS6	rattus-norvegicus	D3ZHS6	Bap1	D3ZHS6	27	110	Ubiquitin carboxyl-terminal hydrolase BAP1
 D3ZHT3	rattus-norvegicus	D3ZHT3	Bahd1	D3ZHT3	3	21	Bromo adjacent homology domain containing 1
 D3ZHT5	rattus-norvegicus	D3ZHT5	Ccno	D3ZHT5	14	27	Cyclin-O
 D3ZHT8	rattus-norvegicus	D3ZHT8	Or2t29	D3ZHT8	0	3	Olfactory receptor
@@ -890,19 +890,19 @@ D3ZHU3	rattus-norvegicus	D3ZHU3	Mamstr	D3ZHU3	6	29	MEF2-activating motif and SAP
 D3ZHU5	rattus-norvegicus	D3ZHU5	Ccdc77	D3ZHU5	1	1	Coiled-coil domain containing 77
 D3ZHU7	rattus-norvegicus	D3ZHU7	Mbd3l2	D3ZHU7	4	17	Methyl-CpG binding domain protein 3-like 2
 D3ZHU8	rattus-norvegicus	D3ZHU8	Rbm19	D3ZHU8	3	7	Probable RNA-binding protein 19
-D3ZHV0	rattus-norvegicus	D3ZHV0	Nup42	D3ZHV0	9	74	Nucleoporin NUP42
+D3ZHV0	rattus-norvegicus	D3ZHV0	Nup42	D3ZHV0	9	73	Nucleoporin NUP42
 D3ZHV1	rattus-norvegicus	D3ZHV1	Tnip1	D3ZHV1	6	19	TNFAIP3-interacting protein 1
 D3ZHV6	rattus-norvegicus	D3ZHV6	Tmc3	D3ZHV6	8	13	Transmembrane channel-like protein
-D3ZHW0	rattus-norvegicus	D3ZHW0	Dhx29	D3ZHW0	4	187	ATP-dependent RNA helicase DHX29
+D3ZHW0	rattus-norvegicus	D3ZHW0	Dhx29	D3ZHW0	4	186	ATP-dependent RNA helicase DHX29
 D3ZHW1	rattus-norvegicus	D3ZHW1	Fam168a	D3ZHW1	0	1	Family with sequence similarity 168, member A
 D3ZHW3	rattus-norvegicus	D3ZHW3	Ocstamp	D3ZHW3	2	3	Osteoclast stimulatory transmembrane protein
-D3ZHW9	rattus-norvegicus	D3ZHW9	Sem1	D3ZHW9	9	116	26S proteasome complex subunit SEM1
+D3ZHW9	rattus-norvegicus	D3ZHW9	Sem1	D3ZHW9	9	115	26S proteasome complex subunit SEM1
 D3ZHX4	rattus-norvegicus	D3ZHX4	Rmi1	D3ZHX4	7	62	RecQ-mediated genome instability protein 1
 D3ZHY6	rattus-norvegicus	D3ZHY6	Ddx54	D3ZHY6	3	63	ATP-dependent RNA helicase DDX54
 D3ZHY9	rattus-norvegicus	D3ZHY9	Rasal1	D3ZHY9	3	5	RAS protein activator like 1
 D3ZHZ3	rattus-norvegicus	D3ZHZ3	Osbpl3	D3ZHZ3	3	7	Oxysterol-binding protein
 D3ZI07	rattus-norvegicus	D3ZI07	Kif3b	D3ZI07	10	59	Kinesin-like protein
-D3ZI16	rattus-norvegicus	D3ZI16	Cops6	D3ZI16	22	143	COP9 signalosome complex subunit 6
+D3ZI16	rattus-norvegicus	D3ZI16	Cops6	D3ZI16	22	142	COP9 signalosome complex subunit 6
 D3ZI34	rattus-norvegicus	D3ZI34	Ifnk	D3ZI34	3	8	Interferon 1fa
 D3ZI35	rattus-norvegicus	D3ZI35	Cep135	D3ZI35	6	30	Centrosomal protein 135
 D3ZI38	rattus-norvegicus	D3ZI38	Zswim5	D3ZI38	1	16	Zinc finger, SWIM-type containing 5
@@ -910,25 +910,25 @@ D3ZI42	rattus-norvegicus	D3ZI42	Lrsam1	D3ZI42	1	11	Leucine rich repeat and steri
 D3ZI60	rattus-norvegicus	D3ZI60	LOC108351703	D3ZI60	23	435	Large ribosomal subunit protein uL15
 D3ZI62	rattus-norvegicus	D3ZI62	Tmem86a	D3ZI62	0	4	lysoplasmalogenase
 D3ZI64	rattus-norvegicus	D3ZI64	Ankrd34c	D3ZI64	0	2	Ankyrin repeat domain 34C
-D3ZI66	rattus-norvegicus	D3ZI66	Rnf149	D3ZI66	1	4	Ring finger protein 149
+D3ZI66	rattus-norvegicus	D3ZI66	Rnf149	D3ZI66	1	3	Ring finger protein 149
 D3ZI68	rattus-norvegicus	D3ZI68	Prpf31	D3ZI68	10	136	U4/U6 small nuclear ribonucleoprotein Prp31
 D3ZI74	rattus-norvegicus	D3ZI74	Zfp628	D3ZI74	1	7	Zinc finger protein 628
 D3ZI75	rattus-norvegicus	D3ZI75	LOC120099907	D3ZI75	5	192	NADH dehydrogenase
 D3ZI76	rattus-norvegicus	D3ZI76	Gpat2	D3ZI76	0	3	Glycerol-3-phosphate acyltransferase 2, mitochondrial
-D3ZI84	rattus-norvegicus	D3ZI84	Ccl19	D3ZI84	11	55	C-C motif chemokine
+D3ZI84	rattus-norvegicus	D3ZI84	Ccl19	D3ZI84	11	54	C-C motif chemokine
 D3ZI86	rattus-norvegicus	D3ZI86	Chodl	D3ZI86	0	2	Chondrolectin
 D3ZI87	rattus-norvegicus	D3ZI87	Prdm14	D3ZI87	0	14	PR domain zinc finger protein 14
 D3ZI88	rattus-norvegicus	D3ZI88	Kiaa2012	D3ZI88	2	85	KIAA2012 homolog
 D3ZI89	rattus-norvegicus	D3ZI89	Slc7a15	D3ZI89	2	5	Solute carrier family 7 (cationic amino acid transporter, y+ system), member 15
 D3ZIA4	rattus-norvegicus	D3ZIA4	Kctd11	D3ZIA4	0	1	BTB/POZ domain-containing protein KCTD11
-D3ZIA5	rattus-norvegicus	D3ZIA5	Kif18a	D3ZIA5	21	82	Kinesin-like protein
+D3ZIA5	rattus-norvegicus	D3ZIA5	Kif18a	D3ZIA5	21	81	Kinesin-like protein
 D3ZIA7	rattus-norvegicus	D3ZIA7	Agr2	D3ZIA7	1	13	Anterior gradient 2, protein disulphide isomerase family member
 D3ZIA9	rattus-norvegicus	D3ZIA9	Glis2	D3ZIA9	1	6	Zinc finger protein GLIS2
 D3ZIB0	rattus-norvegicus	D3ZIB0	Enam	D3ZIB0	0	8	Enamelin
 D3ZIC4	rattus-norvegicus	D3ZIC4	Ppp1r12b	D3ZIC4	6	12	Protein phosphatase 1 regulatory subunit
 D3ZID7	rattus-norvegicus	D3ZID7	Guca1b	D3ZID7	1	24	Guanylyl cyclase-activating protein 2
 D3ZID8	rattus-norvegicus	D3ZID8	Ubxn2a	D3ZID8	3	31	UBX domain-containing protein 2A
-D3ZIE1	rattus-norvegicus	D3ZIE1	Rps8l1	D3ZIE1	40	521	40S ribosomal protein S8
+D3ZIE1	rattus-norvegicus	D3ZIE1	Rps8l1	D3ZIE1	40	518	40S ribosomal protein S8
 D3ZIE4	rattus-norvegicus	D3ZIE4	Fyb1	D3ZIE4	8	25	FYN-binding protein 1
 D3ZIE5	rattus-norvegicus	D3ZIE5	Smarca1	D3ZIE5	5	75	SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subf
 D3ZIF0	rattus-norvegicus	D3ZIF0	Zfp512	D3ZIF0	1	4	Zinc finger protein 512
@@ -938,10 +938,10 @@ D3ZIG3	rattus-norvegicus	D3ZIG3	Zfp3	D3ZIG3	0	1	Zinc finger protein 3
 D3ZIH1	rattus-norvegicus	D3ZIH1	Gpr132	D3ZIH1	0	3	G protein-coupled receptor 132
 D3ZIH3	rattus-norvegicus	D3ZIH3	Heyl	D3ZIH3	2	7	Hes-related family bHLH transcription factor with YRPW motif-like
 D3ZIH4	rattus-norvegicus	D3ZIH4	Fbxo4	D3ZIH4	2	20	F-box only protein 4
-D3ZIH5	rattus-norvegicus	D3ZIH5	Suv39h2	D3ZIH5	8	65	Histone-lysine N-methyltransferase
+D3ZIH5	rattus-norvegicus	D3ZIH5	Suv39h2	D3ZIH5	8	64	Histone-lysine N-methyltransferase
 D3ZII5	rattus-norvegicus	D3ZII5	Col20a1	D3ZII5	0	18	Collagen alpha-1(XX) chain
 D3ZII7	rattus-norvegicus	D3ZII7	Yaf2	D3ZII7	19	52	YY1 associated factor 2
-D3ZII8	rattus-norvegicus	D3ZII8	Smyd5	D3ZII8	0	10	Protein-lysine N-trimethyltransferase SMYD5
+D3ZII8	rattus-norvegicus	D3ZII8	Smyd5	D3ZII8	0	9	Protein-lysine N-trimethyltransferase SMYD5
 D3ZII9	rattus-norvegicus	D3ZII9	Guca1a	D3ZII9	0	17	Guanylyl cyclase-activating protein 1
 D3ZIJ4	rattus-norvegicus	D3ZIJ4	Sel1l3	D3ZIJ4	5	23	SEL1L family member 3
 D3ZIJ5	rattus-norvegicus	D3ZIJ5	Dpm3	D3ZIJ5	1	4	Dolichol-phosphate mannosyltransferase subunit 3
@@ -962,8 +962,8 @@ D3ZIQ1	rattus-norvegicus	D3ZIQ1	Acot4	D3ZIQ1	2	25	Acyl-CoA thioesterase 4
 D3ZIQ8	rattus-norvegicus	D3ZIQ8	Ice2	D3ZIQ8	3	51	Interactor of little elongation complex ELL subunit 2
 D3ZIQ9	rattus-norvegicus	D3ZIQ9	Znrf1	D3ZIQ9	1	5	E3 ubiquitin-protein ligase ZNRF1
 D3ZIS0	rattus-norvegicus	D3ZIS0	Slc5a4	D3ZIS0	1	2	Solute carrier family 5 member 4
-D3ZIT4	rattus-norvegicus	D3ZIT4	Anapc7	D3ZIT4	6	116	Anaphase-promoting complex subunit 7
-D3ZIT9	rattus-norvegicus	D3ZIT9	RGD1559536	D3ZIT9	0	17	Similar to vitellogenin-like 1 precursor
+D3ZIT4	rattus-norvegicus	D3ZIT4	Anapc7	D3ZIT4	6	115	Anaphase-promoting complex subunit 7
+D3ZIT9	rattus-norvegicus	D3ZIT9	RGD1559536	D3ZIT9	0	16	Similar to vitellogenin-like 1 precursor
 D3ZIU2	rattus-norvegicus	D3ZIU2	Psmg3	D3ZIU2	0	3	Proteasome assembly chaperone 3
 D3ZIU8	rattus-norvegicus	D3ZIU8	Hvcn1	D3ZIU8	0	1	Voltage-gated hydrogen channel 1
 D3ZIU9	rattus-norvegicus	D3ZIU9	LOC108350839	D3ZIU9	1	63	HMG box domain-containing protein
@@ -982,7 +982,7 @@ D3ZJ25	rattus-norvegicus	D3ZJ25	Slc1a5	D3ZJ25	0	18	Neutral amino acid transporte
 D3ZJ28	rattus-norvegicus	D3ZJ28	Trim52	D3ZJ28	5	99	Tripartite motif-containing 52
 D3ZJ29	rattus-norvegicus	D3ZJ29	Zfp512b	D3ZJ29	0	3	Zinc finger protein 512B
 D3ZJ32	rattus-norvegicus	D3ZJ32	Esyt2	D3ZJ32	1	5	Extended synaptotagmin-2
-D3ZJ49	rattus-norvegicus	D3ZJ49	Usp49	D3ZJ49	8	32	Ubiquitin carboxyl-terminal hydrolase
+D3ZJ49	rattus-norvegicus	D3ZJ49	Usp49	D3ZJ49	7	30	Ubiquitin carboxyl-terminal hydrolase
 D3ZJ50	rattus-norvegicus	D3ZJ50	Pkp3	D3ZJ50	15	37	Plakophilin-3
 D3ZJ51	rattus-norvegicus	D3ZJ51	Phf8l	D3ZJ51	0	11	PHD finger protein 8 like
 D3ZJ56	rattus-norvegicus	D3ZJ56	Gbp3	D3ZJ56	0	1	Guanylate binding protein 3
@@ -990,15 +990,15 @@ D3ZJ66	rattus-norvegicus	D3ZJ66	Npas1	D3ZJ66	11	25	Neuronal PAS domain-containin
 D3ZJ69	rattus-norvegicus	D3ZJ69	Tfap2e	D3ZJ69	2	6	Transcription factor AP-2 epsilon
 D3ZJ70	rattus-norvegicus	D3ZJ70	Klk13	D3ZJ70	6	8	Kallikrein l
 D3ZJ72	rattus-norvegicus	D3ZJ72	Krtap31-1	D3ZJ72	0	5	Keratin associated protein 31-1
-D3ZJ78	rattus-norvegicus	D3ZJ78	Atp6v1e2	D3ZJ78	7	58	ATPase H+ transporting V1 subunit E2
+D3ZJ78	rattus-norvegicus	D3ZJ78	Atp6v1e2	D3ZJ78	7	57	ATPase H+ transporting V1 subunit E2
 D3ZJ81	rattus-norvegicus	D3ZJ81	Fstl4	D3ZJ81	1	5	Follistatin-like 4
 D3ZJ84	rattus-norvegicus	D3ZJ84	Tssk5	D3ZJ84	0	5	non-specific serine/threonine protein kinase
 D3ZJ85	rattus-norvegicus	D3ZJ85	Dmc1	D3ZJ85	4	44	Meiotic recombination protein
 D3ZJ86	rattus-norvegicus	D3ZJ86	Slc9a6	D3ZJ86	0	2	Sodium/hydrogen exchanger 6
 D3ZJ87	rattus-norvegicus	D3ZJ87	Nphp1	D3ZJ87	4	81	Nephrocystin-1
 D3ZJ91	rattus-norvegicus	D3ZJ91	Ddhd2	D3ZJ91	0	2	DDHD domain containing 2
-D3ZJ92	rattus-norvegicus	D3ZJ92	Prpf40a	D3ZJ92	3	44	Pre-mRNA-processing factor 40 homolog A
-D3ZJ96	rattus-norvegicus	D3ZJ96	Usp28	D3ZJ96	7	24	Ubiquitin carboxyl-terminal hydrolase 28
+D3ZJ92	rattus-norvegicus	D3ZJ92	Prpf40a	D3ZJ92	3	43	Pre-mRNA-processing factor 40 homolog A
+D3ZJ96	rattus-norvegicus	D3ZJ96	Usp28	D3ZJ96	6	23	Ubiquitin carboxyl-terminal hydrolase 28
 D3ZJA3	rattus-norvegicus	D3ZJA3	Spry4	D3ZJA3	2	14	Sprouty RTK signaling antagonist 4
 D3ZJA4	rattus-norvegicus	D3ZJA4	Svs6	D3ZJA4	0	5	Seminal vesicle secretory protein 6
 D3ZJA5	rattus-norvegicus	D3ZJA5	Snrnp48	D3ZJA5	12	95	Small nuclear ribonucleoprotein U11/U12 subunit 48
@@ -1010,10 +1010,10 @@ D3ZJB7	rattus-norvegicus	D3ZJB7	Slc30a10	D3ZJB7	0	6	Solute carrier family 30, me
 D3ZJB8	rattus-norvegicus	D3ZJB8	Arih2	D3ZJB8	3	25	E3 ubiquitin-protein ligase ARIH2
 D3ZJC0	rattus-norvegicus	D3ZJC0	Btbd3	D3ZJC0	1	4	BTB domain containing 3
 D3ZJC3	rattus-norvegicus	D3ZJC3	Tmc7	D3ZJC3	0	2	Transmembrane channel-like protein
-D3ZJD2	rattus-norvegicus	D3ZJD2	Atad2	D3ZJD2	1	28	ATPase family AAA domain-containing protein 2
+D3ZJD2	rattus-norvegicus	D3ZJD2	Atad2	D3ZJD2	1	27	ATPase family AAA domain-containing protein 2
 D3ZJD8	rattus-norvegicus	D3ZJD8	Clec1b	D3ZJD8	1	23	C-type lectin domain family 1 member B
 D3ZJE0	rattus-norvegicus	D3ZJE0	Edem1	D3ZJE0	3	23	alpha-1,2-Mannosidase
-D3ZJE2	rattus-norvegicus	D3ZJE2	Rpl12-ps1	D3ZJE2	38	466	Large ribosomal subunit protein uL11
+D3ZJE2	rattus-norvegicus	D3ZJE2	Rpl12-ps1	D3ZJE2	38	465	Large ribosomal subunit protein uL11
 D3ZJF7	rattus-norvegicus	D3ZJF7	Terf2	D3ZJF7	24	72	Telomeric repeat-binding factor
 D3ZJF9	rattus-norvegicus	D3ZJF9	Gla	D3ZJF9	0	2	Alpha-galactosidase
 D3ZJG1	rattus-norvegicus	D3ZJG1	Mettl21c	D3ZJG1	1	3	Protein-lysine methyltransferase METTL21C
@@ -1037,12 +1037,12 @@ D3ZJN4	rattus-norvegicus	D3ZJN4	Asb3	D3ZJN4	0	1	Ankyrin repeat and SOCS box-cont
 D3ZJN7	rattus-norvegicus	D3ZJN7	Rasgef1b	D3ZJN7	0	1	RasGEF domain family, member 1B
 D3ZJN9	rattus-norvegicus	D3ZJN9	Evi5	D3ZJN9	6	9	Ecotropic viral integration site 5
 D3ZJP9	rattus-norvegicus	D3ZJP9	Ftdc2	D3ZJP9	0	2	Ferritin
-D3ZJQ8	rattus-norvegicus	D3ZJQ8	Rnf151	D3ZJQ8	0	9	Ring finger protein 151
-D3ZJR1	rattus-norvegicus	D3ZJR1	Eps15l1	D3ZJR1	16	96	Epidermal growth factor receptor substrate 15-like 1
-D3ZJR6	rattus-norvegicus	D3ZJR6	Smcr8	D3ZJR6	6	42	SMCR8-C9orf72 complex subunit
+D3ZJQ8	rattus-norvegicus	D3ZJQ8	Rnf151	D3ZJQ8	0	8	Ring finger protein 151
+D3ZJR1	rattus-norvegicus	D3ZJR1	Eps15l1	D3ZJR1	15	95	Epidermal growth factor receptor substrate 15-like 1
+D3ZJR6	rattus-norvegicus	D3ZJR6	Smcr8	D3ZJR6	6	41	SMCR8-C9orf72 complex subunit
 D3ZJR7	rattus-norvegicus	D3ZJR7	Dsc2	D3ZJR7	4	11	Desmocollin 2
 D3ZJT1	rattus-norvegicus	D3ZJT1	Wdr76	D3ZJT1	4	27	WD repeat-containing protein 76
-D3ZJT4	rattus-norvegicus	D3ZJT4	Rplp0l1	D3ZJT4	16	559	60S acidic ribosomal protein P0
+D3ZJT4	rattus-norvegicus	D3ZJT4	Rplp0l1	D3ZJT4	16	558	60S acidic ribosomal protein P0
 D3ZJT6	rattus-norvegicus	D3ZJT6	Tfap4	D3ZJT6	1	1	Transcription factor AP-4
 D3ZJT9	rattus-norvegicus	D3ZJT9	L3mbtl3	D3ZJT9	1	15	L3MBTL histone methyl-lysine binding protein 3
 D3ZJU9	rattus-norvegicus	D3ZJU9	Lgr6	D3ZJU9	4	14	Leucine-rich repeat-containing G protein-coupled receptor 6
@@ -1055,7 +1055,7 @@ D3ZJX0	rattus-norvegicus	D3ZJX0	Cd200r1l	D3ZJX0	4	4	CD200 receptor 1-like
 D3ZJX5	rattus-norvegicus	D3ZJX5	Timm50	D3ZJX5	2	28	Mitochondrial import inner membrane translocase subunit TIM50
 D3ZJY0	rattus-norvegicus	D3ZJY0	Fam13b	D3ZJY0	0	1	Protein FAM13B
 D3ZJY1	rattus-norvegicus	D3ZJY1	Mrpl28	D3ZJY1	8	196	Large ribosomal subunit protein bL28m
-D3ZJY5	rattus-norvegicus	D3ZJY5	Rps10l6	D3ZJY5	10	355	Small ribosomal subunit protein eS10
+D3ZJY5	rattus-norvegicus	D3ZJY5	Rps10l6	D3ZJY5	10	354	Small ribosomal subunit protein eS10
 D3ZJZ0	rattus-norvegicus	D3ZJZ0	Tmem205	D3ZJZ0	0	1	Transmembrane protein 205
 D3ZJZ2	rattus-norvegicus	D3ZJZ2	Il20ra	D3ZJZ2	6	17	Interleukin 20 receptor subunit alpha
 D3ZJZ8	rattus-norvegicus	D3ZJZ8	Capn12	D3ZJZ8	2	5	Calpain-12
@@ -1093,7 +1093,7 @@ D3ZKK4	rattus-norvegicus	D3ZKK4	Zfp869	D3ZKK4	1	1	Zinc finger protein 869
 D3ZKM3	rattus-norvegicus	D3ZKM3	Gpr15lg	D3ZKM3	0	3	Protein GPR15LG
 D3ZKM9	rattus-norvegicus	D3ZKM9	Mis18bp1	D3ZKM9	3	22	Mis18-binding protein 1
 D3ZKN0	rattus-norvegicus	D3ZKN0	Ccdc9b	D3ZKN0	0	1	Coiled-coil domain containing 9B
-D3ZKN4	rattus-norvegicus	D3ZKN4	Whamm	D3ZKN4	1	13	WASP homolog associated with actin, golgi membranes and microtubules
+D3ZKN4	rattus-norvegicus	D3ZKN4	Whamm	D3ZKN4	1	12	WASP homolog associated with actin, golgi membranes and microtubules
 D3ZKN9	rattus-norvegicus	D3ZKN9	Dcaf12l2	D3ZKN9	3	30	DDB1 and CUL4 associated factor 12-like 2
 D3ZKP1	rattus-norvegicus	D3ZKP1	Ankrd34b	D3ZKP1	1	1	Ankyrin repeat domain 34B
 D3ZKP6	rattus-norvegicus	D3ZKP6	Mlkl	D3ZKP6	1	22	Mixed lineage kinase domain-like protein
@@ -1106,7 +1106,7 @@ D3ZKU3	rattus-norvegicus	D3ZKU3	Stk35	D3ZKU3	9	29	Serine/threonine-protein kinas
 D3ZKU6	rattus-norvegicus	D3ZKU6	Gbp1	D3ZKU6	0	5	Guanylate binding protein 1
 D3ZKU7	rattus-norvegicus	D3ZKU7	Bloc1s1	D3ZKU7	12	44	Biogenesis of lysosome-related organelles complex 1 subunit 1
 D3ZKV8	rattus-norvegicus	D3ZKV8	Hoxc13	D3ZKV8	2	2	Homeobox C13
-D3ZKV9	rattus-norvegicus	D3ZKV9	Mss51	D3ZKV9	4	11	Putative protein MSS51 homolog, mitochondrial
+D3ZKV9	rattus-norvegicus	D3ZKV9	Mss51	D3ZKV9	4	10	Putative protein MSS51 homolog, mitochondrial
 D3ZKW5	rattus-norvegicus	D3ZKW5	Pdik1l	D3ZKW5	6	34	Serine/threonine-protein kinase PDIK1L
 D3ZKW6	rattus-norvegicus	D3ZKW6	Upk3b	D3ZKW6	1	1	Uroplakin 3B
 D3ZKW7	rattus-norvegicus	D3ZKW7	Tlcd3a	D3ZKW7	0	7	TLC domain containing 3A
@@ -1115,7 +1115,7 @@ D3ZKX8	rattus-norvegicus	D3ZKX8	Fam169a	D3ZKX8	0	5	Family with sequence similari
 D3ZKY5	rattus-norvegicus	D3ZKY5	Zc3h3	D3ZKY5	5	37	Zinc finger CCCH domain-containing protein 3
 D3ZKY9	rattus-norvegicus	D3ZKY9	Spata22	D3ZKY9	2	3	Spermatogenesis associated 22
 D3ZKZ6	rattus-norvegicus	D3ZKZ6	Nudt16l2	D3ZKZ6	1	7	U8 snoRNA-decapping enzyme
-D3ZKZ8	rattus-norvegicus	D3ZKZ8	Atxn7	D3ZKZ8	15	80	Ataxin 7
+D3ZKZ8	rattus-norvegicus	D3ZKZ8	Atxn7	D3ZKZ8	15	78	Ataxin 7
 D3ZL04	rattus-norvegicus	D3ZL04	Slc25a45	D3ZL04	0	2	Solute carrier family 25 member 45
 D3ZL05	rattus-norvegicus	D3ZL05	Siglec15	D3ZL05	1	14	Sialic acid binding Ig-like lectin 15
 D3ZL11	rattus-norvegicus	D3ZL11	Rbsn	D3ZL11	11	39	Rabenosyn, RAB effector
@@ -1153,14 +1153,14 @@ D3ZLH9	rattus-norvegicus	D3ZLH9	Ssbl1	D3ZLH9	1	11	Small RNA binding exonuclease 
 D3ZLI9	rattus-norvegicus	D3ZLI9	Pdzd4	D3ZLI9	0	1	PDZ domain containing 4
 D3ZLK1	rattus-norvegicus	D3ZLK1	Gcsam	D3ZLK1	0	1	Germinal center-associated, signaling and motility
 D3ZLK2	rattus-norvegicus	D3ZLK2	Rasl12	D3ZLK2	0	4	Ras-like protein family member 12
-D3ZLL8	rattus-norvegicus	D3ZLL8	Rps15al4	D3ZLL8	33	491	Small ribosomal subunit protein uS8
+D3ZLL8	rattus-norvegicus	D3ZLL8	Rps15al4	D3ZLL8	32	490	Small ribosomal subunit protein uS8
 D3ZLM5	rattus-norvegicus	D3ZLM5	Nhlrc2	D3ZLM5	0	1	NHL repeat-containing protein 2
 D3ZLM7	rattus-norvegicus	D3ZLM7	Zc3h10	D3ZLM7	0	2	Zinc finger CCCH domain-containing protein 10
 D3ZLN2	rattus-norvegicus	D3ZLN2	Foxi3	D3ZLN2	0	2	Forkhead box I3
 D3ZLN6	rattus-norvegicus	D3ZLN6	Trim43a	D3ZLN6	1	3	Tripartite motif-containing 43A
-D3ZLN7	rattus-norvegicus	D3ZLN7	Commd2	D3ZLN7	11	144	COMM domain containing 2
+D3ZLN7	rattus-norvegicus	D3ZLN7	Commd2	D3ZLN7	11	143	COMM domain containing 2
 D3ZLP3	rattus-norvegicus	D3ZLP3	Crtam	D3ZLP3	1	7	Cytotoxic and regulatory T cell molecule
-D3ZLP9	rattus-norvegicus	D3ZLP9	Sap130	D3ZLP9	5	24	Sin3A associated protein 130
+D3ZLP9	rattus-norvegicus	D3ZLP9	Sap130	D3ZLP9	5	23	Sin3A associated protein 130
 D3ZLQ1	rattus-norvegicus	D3ZLQ1	Dennd2a	D3ZLQ1	0	3	DENN domain containing 2A
 D3ZLQ6	rattus-norvegicus	D3ZLQ6	Ints8	D3ZLQ6	6	61	Integrator complex subunit 8
 D3ZLQ7	rattus-norvegicus	D3ZLQ7	Or5al1	D3ZLQ7	0	3	Olfactory receptor
@@ -1169,7 +1169,7 @@ D3ZLR3	rattus-norvegicus	D3ZLR3	Zfp612	D3ZLR3	1	1	Zinc finger protein 612
 D3ZLR4	rattus-norvegicus	D3ZLR4	Ralgps1	D3ZLR4	0	11	Ras-specific guanine nucleotide-releasing factor RalGPS1
 D3ZLR9	rattus-norvegicus	D3ZLR9	Kcnk16	D3ZLR9	13	13	2P domain potassium channel Talk-1
 D3ZLS2	rattus-norvegicus	D3ZLS2	Chst4	D3ZLS2	1	2	Sulfotransferase
-D3ZLT1	rattus-norvegicus	D3ZLT1	Ndufb7	D3ZLT1	13	209	NADH dehydrogenase
+D3ZLT1	rattus-norvegicus	D3ZLT1	Ndufb7	D3ZLT1	13	208	NADH dehydrogenase
 D3ZLT6	rattus-norvegicus	D3ZLT6	Klhl31	D3ZLT6	0	2	Kelch-like protein 31
 D3ZLT7	rattus-norvegicus	D3ZLT7	2510039O18Rikl	D3ZLT7	0	9	RIKEN cDNA 2510039O18 gene like
 D3ZLU1	rattus-norvegicus	D3ZLU1	Extl1	D3ZLU1	1	4	Exostosin-like 1
@@ -1181,27 +1181,27 @@ D3ZLX3	rattus-norvegicus	D3ZLX3	Mob2	D3ZLX3	2	13	MOB kinase activator 2
 D3ZLX4	rattus-norvegicus	D3ZLX4	Fam170b	D3ZLX4	0	41	Family with sequence similarity 170 member B
 D3ZLY0	rattus-norvegicus	D3ZLY0	Atpsckmt	D3ZLY0	0	4	ATP synthase subunit C lysine N-methyltransferase
 D3ZLY5	rattus-norvegicus	D3ZLY5	Cfap141	D3ZLY5	4	87	Cilia and flagella associated protein 141
-D3ZLZ3	rattus-norvegicus	D3ZLZ3	Cxhxorf66	D3ZLZ3	31	652	Similar to human chromosome X open reading frame 66
+D3ZLZ3	rattus-norvegicus	D3ZLZ3	Cxhxorf66	D3ZLZ3	31	651	Similar to human chromosome X open reading frame 66
 D3ZLZ7	rattus-norvegicus	D3ZLZ7	Impdh1	D3ZLZ7	0	9	Inosine-5'-monophosphate dehydrogenase 1
 D3ZLZ9	rattus-norvegicus	D3ZLZ9	Troap	D3ZLZ9	0	9	Trophinin associated protein
-D3ZM01	rattus-norvegicus	D3ZM01	Rps17l1	D3ZM01	72	614	Small ribosomal subunit protein eS17
+D3ZM01	rattus-norvegicus	D3ZM01	Rps17l1	D3ZM01	72	613	Small ribosomal subunit protein eS17
 D3ZM03	rattus-norvegicus	D3ZM03	Vma21	D3ZM03	2	15	Vacuolar ATPase assembly factor VMA21
 D3ZM05	rattus-norvegicus	D3ZM05	Ttc14	D3ZM05	0	1	Tetratricopeptide repeat domain 14
 D3ZM07	rattus-norvegicus	D3ZM07	Mcrip2	D3ZM07	1	1	MAPK regulated co-repressor interacting protein 2
 D3ZM09	rattus-norvegicus	D3ZM09	Sars2	D3ZM09	1	17	Serine--tRNA ligase, mitochondrial
-D3ZM14	rattus-norvegicus	D3ZM14	Palb2	D3ZM14	48	510	Partner and localizer of BRCA2
+D3ZM14	rattus-norvegicus	D3ZM14	Palb2	D3ZM14	48	509	Partner and localizer of BRCA2
 D3ZM21	rattus-norvegicus	D3ZM21	Comtd1	D3ZM21	0	2	Catechol-O-methyltransferase domain containing 1
 D3ZM22	rattus-norvegicus	D3ZM22	Slc41a1	D3ZM22	0	5	Solute carrier family 41 member
 D3ZM26	rattus-norvegicus	D3ZM26	Mecom	D3ZM26	1	23	MDS1 and EVI1 complex locus
 D3ZM27	rattus-norvegicus	D3ZM27	Ankrd2	D3ZM27	1	9	Ankyrin repeat domain-containing protein 2
-D3ZM33	rattus-norvegicus	D3ZM33	Rps18l5	D3ZM33	28	512	Small ribosomal subunit protein uS13
+D3ZM33	rattus-norvegicus	D3ZM33	Rps18l5	D3ZM33	28	511	Small ribosomal subunit protein uS13
 D3ZM36	rattus-norvegicus	D3ZM36	Il10rb	D3ZM36	10	41	Interleukin 10 receptor subunit beta
 D3ZM37	rattus-norvegicus	D3ZM37	Med8	D3ZM37	1	27	Mediator complex subunit 8
 D3ZM38	rattus-norvegicus	D3ZM38	Spata31d1	D3ZM38	0	5	SPATA31 subfamily D member 1
 D3ZM39	rattus-norvegicus	D3ZM39	Dsg1	D3ZM39	9	27	Desmoglein 1
 D3ZM47	rattus-norvegicus	D3ZM47	Zfp764	D3ZM47	1	1	Zinc finger protein 764
 D3ZM60	rattus-norvegicus	D3ZM60	Ppp1r3a	D3ZM60	10	30	Protein phosphatase 1 regulatory subunit 3A
-D3ZM64	rattus-norvegicus	D3ZM64	Jade1	D3ZM64	4	8	Protein Jade-1
+D3ZM64	rattus-norvegicus	D3ZM64	Jade1	D3ZM64	3	7	Protein Jade-1
 D3ZM69	rattus-norvegicus	D3ZM69	Epb41l2	D3ZM69	3	12	Erythrocyte membrane protein band 4.1-like 2
 D3ZM73	rattus-norvegicus	D3ZM73	Or7g41	D3ZM73	0	3	Olfactory receptor
 D3ZM81	rattus-norvegicus	D3ZM81	Hoxa3	D3ZM81	0	2	Homeobox A3
@@ -1211,14 +1211,14 @@ D3ZM91	rattus-norvegicus	D3ZM91	Sync	D3ZM91	2	11	Syncoilin, intermediate filamen
 D3ZM99	rattus-norvegicus	D3ZM99	Rergl	D3ZM99	0	4	small monomeric GTPase
 D3ZMA2	rattus-norvegicus	D3ZMA2	Mtmr14	D3ZMA2	0	2	Myotubularin related protein 14
 D3ZMA3	rattus-norvegicus	D3ZMA3	Dmbx1	D3ZMA3	1	3	Diencephalon/mesencephalon homeobox protein 1
-D3ZMD3	rattus-norvegicus	D3ZMD3	Brpf3	D3ZMD3	7	21	Bromodomain and PHD finger containing, 3
+D3ZMD3	rattus-norvegicus	D3ZMD3	Brpf3	D3ZMD3	6	20	Bromodomain and PHD finger containing, 3
 D3ZME3	rattus-norvegicus	D3ZME3	Gapdh-ps17	D3ZME3	0	3	glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)
 D3ZME7	rattus-norvegicus	D3ZME7	Hscb	D3ZME7	4	32	Iron-sulfur cluster co-chaperone protein HscB
 D3ZMG0	rattus-norvegicus	D3ZMG0	Ulk1	D3ZMG0	11	65	Serine/threonine-protein kinase
 D3ZMH7	rattus-norvegicus	D3ZMH7	Slc36a4	D3ZMH7	0	9	Solute carrier family 36 member 4
 D3ZMI0	rattus-norvegicus	D3ZMI0	Angptl8	D3ZMI0	1	3	Angiopoietin-like 8
 D3ZMI6	rattus-norvegicus	D3ZMI6	Olfm4	D3ZMI6	0	10	Olfactomedin 4
-D3ZMJ4	rattus-norvegicus	D3ZMJ4	Ankrd13c	D3ZMJ4	0	1	Ankyrin repeat domain-containing protein 13C
+D3ZMJ4	rattus-norvegicus	D3ZMJ4	Ankrd13c	D3ZMJ4	0	0	Ankyrin repeat domain-containing protein 13C
 D3ZMK6	rattus-norvegicus	D3ZMK6	Tbx22	D3ZMK6	0	4	T-box transcription factor 22
 D3ZMK9	rattus-norvegicus	D3ZMK9	Prag1	D3ZMK9	0	5	Inactive tyrosine-protein kinase PRAG1
 D3ZML2	rattus-norvegicus	D3ZML2	Brsk2	D3ZML2	1	26	Serine/threonine-protein kinase BRSK2
@@ -1231,9 +1231,9 @@ D3ZMN5	rattus-norvegicus	D3ZMN5	Snx29	D3ZMN5	1	3	Sorting nexin 29
 D3ZMP6	rattus-norvegicus	D3ZMP6	Nop10	D3ZMP6	5	71	H/ACA ribonucleoprotein complex subunit 3
 D3ZMP7	rattus-norvegicus	D3ZMP7	Cstdc2	D3ZMP7	0	1	Cystatin domain containing 2
 D3ZMP9	rattus-norvegicus	D3ZMP9	Rangrf	D3ZMP9	0	4	Ran guanine nucleotide release factor
-D3ZMQ3	rattus-norvegicus	D3ZMQ3	Itga4	D3ZMQ3	17	90	Integrin alpha-4
+D3ZMQ3	rattus-norvegicus	D3ZMQ3	Itga4	D3ZMQ3	17	87	Integrin alpha-4
 D3ZMR0	rattus-norvegicus	D3ZMR0	Olfml2a	D3ZMR0	1	1	Olfactomedin-like 2A
-D3ZMR1	rattus-norvegicus	D3ZMR1	Tomm7	D3ZMR1	4	21	Mitochondrial import receptor subunit TOM7 homolog
+D3ZMR1	rattus-norvegicus	D3ZMR1	Tomm7	D3ZMR1	3	20	Mitochondrial import receptor subunit TOM7 homolog
 D3ZMR4	rattus-norvegicus	D3ZMR4	Nutm1	D3ZMR4	0	1	NUT midline carcinoma, family member 1
 D3ZMR9	rattus-norvegicus	D3ZMR9	Mrpl21	D3ZMR9	14	452	Large ribosomal subunit protein bL21m
 D3ZMS1	rattus-norvegicus	D3ZMS1	Sf3b2	D3ZMS1	27	199	Splicing factor 3b, subunit 2
@@ -1241,7 +1241,7 @@ D3ZMS3	rattus-norvegicus	D3ZMS3	Matn4	D3ZMS3	1	11	Matrilin-4
 D3ZMS4	rattus-norvegicus	D3ZMS4	Arhgap26	D3ZMS4	3	8	Rho GTPase-activating protein 26
 D3ZMS7	rattus-norvegicus	D3ZMS7	ENSRNOG00000070810	D3ZMS7	2	53	Ig-like domain-containing protein
 D3ZMS9	rattus-norvegicus	D3ZMS9	Cst9l	D3ZMS9	1	1	Cystatin 9-like
-D3ZMT2	rattus-norvegicus	D3ZMT2	Ndufa3-ps1	D3ZMT2	10	110	NADH dehydrogenase
+D3ZMT2	rattus-norvegicus	D3ZMT2	Ndufa3-ps1	D3ZMT2	10	109	NADH dehydrogenase
 D3ZMU8	rattus-norvegicus	D3ZMU8	Sim1	D3ZMU8	10	10	SIM bHLH transcription factor 1
 D3ZMV1	rattus-norvegicus	D3ZMV1	Sla2	D3ZMV1	8	38	Src-like-adapter 2
 D3ZMW3	rattus-norvegicus	D3ZMW3	Msto1	D3ZMW3	0	1	Protein misato homolog 1
@@ -1249,17 +1249,17 @@ D3ZMX6	rattus-norvegicus	D3ZMX6	Sntb2	D3ZMX6	4	29	Beta-2-syntrophin
 D3ZMY7	rattus-norvegicus	D3ZMY7	Nt5c2	D3ZMY7	0	15	Cytosolic purine 5'-nucleotidase
 D3ZMZ8	rattus-norvegicus	D3ZMZ8	Ifitm10	D3ZMZ8	0	1	Interferon induced transmembrane protein 10
 D3ZMZ9	rattus-norvegicus	D3ZMZ9	Gnl3l	D3ZMZ9	6	242	Guanine nucleotide-binding protein-like 3-like protein
-D3ZN03	rattus-norvegicus	D3ZN03	Rplp2l3	D3ZN03	5	291	Large ribosomal subunit protein P2
+D3ZN03	rattus-norvegicus	D3ZN03	Rplp2l3	D3ZN03	5	290	Large ribosomal subunit protein P2
 D3ZN06	rattus-norvegicus	D3ZN06	Cd248	D3ZN06	1	11	Endosialin
-D3ZN15	rattus-norvegicus	D3ZN15	Tdh	D3ZN15	3	163	L-threonine 3-dehydrogenase, mitochondrial
+D3ZN15	rattus-norvegicus	D3ZN15	Tdh	D3ZN15	3	162	L-threonine 3-dehydrogenase, mitochondrial
 D3ZN16	rattus-norvegicus	D3ZN16	Sergef	D3ZN16	1	2	Secretion regulating guanine nucleotide exchange factor
 D3ZN19	rattus-norvegicus	D3ZN19	Rnf121	D3ZN19	0	1	Ring finger protein 121
-D3ZN20	rattus-norvegicus	D3ZN20	Il4i1	D3ZN20	2	35	Amine oxidase
+D3ZN20	rattus-norvegicus	D3ZN20	Il4i1	D3ZN20	2	34	Amine oxidase
 D3ZN21	rattus-norvegicus	D3ZN21	Ddx3	D3ZN21	6	109	RNA helicase
 D3ZN31	rattus-norvegicus	D3ZN31	Shb	D3ZN31	4	13	SH2 domain containing adaptor protein B
 D3ZN35	rattus-norvegicus	D3ZN35	Sdr16c6	D3ZN35	0	5	Short chain dehydrogenase/reductase family 16C, member 6
 D3ZN38	rattus-norvegicus	D3ZN38	Stard5	D3ZN38	1	6	StAR-related lipid transfer protein 5
-D3ZN39	rattus-norvegicus	D3ZN39	Usp8	D3ZN39	15	36	Ubiquitin carboxyl-terminal hydrolase 8
+D3ZN39	rattus-norvegicus	D3ZN39	Usp8	D3ZN39	14	35	Ubiquitin carboxyl-terminal hydrolase 8
 D3ZN41	rattus-norvegicus	D3ZN41	Atp10d	D3ZN41	3	11	Phospholipid-transporting ATPase
 D3ZN43	rattus-norvegicus	D3ZN43	Ndufaf6	D3ZN43	2	33	NADH dehydrogenase (ubiquinone) complex I, assembly factor 6
 D3ZN46	rattus-norvegicus	D3ZN46	Dnajb7	D3ZN46	3	53	DnaJ homolog subfamily B member 6
@@ -1272,7 +1272,7 @@ D3ZN61	rattus-norvegicus	D3ZN61	Lgi3	D3ZN61	4	7	Leucine-rich repeat LGI family, 
 D3ZN63	rattus-norvegicus	D3ZN63	Wdhd1	D3ZN63	11	61	WD repeat and HMG-box DNA-binding protein 1
 D3ZN64	rattus-norvegicus	D3ZN64	Col28a1	D3ZN64	0	25	Collagen alpha-1(XXVIII) chain
 D3ZN69	rattus-norvegicus	D3ZN69	Ppef2	D3ZN69	0	37	Serine/threonine-protein phosphatase with EF-hands
-D3ZN79	rattus-norvegicus	D3ZN79	Rpl35l1	D3ZN79	27	415	Large ribosomal subunit protein uL29
+D3ZN79	rattus-norvegicus	D3ZN79	Rpl35l1	D3ZN79	27	414	Large ribosomal subunit protein uL29
 D3ZN93	rattus-norvegicus	D3ZN93	Nhlh1	D3ZN93	3	10	Nescient helix loop helix 1
 D3ZNA3	rattus-norvegicus	D3ZNA3	AABR07049918.1	D3ZNA3	14	310	60S ribosomal protein L7a
 D3ZNA8	rattus-norvegicus	D3ZNA8	Hus1	D3ZNA8	5	37	Checkpoint protein
@@ -1304,7 +1304,7 @@ D3ZNS7	rattus-norvegicus	D3ZNS7	4933427D14Rikl	D3ZNS7	1	7	RIKEN cDNA 4933427D14 
 D3ZNS8	rattus-norvegicus	D3ZNS8	Aaas	D3ZNS8	4	33	Aladin
 D3ZNT5	rattus-norvegicus	D3ZNT5	Col9a2	D3ZNT5	4	25	Collagen type IX alpha 2 chain
 D3ZNT6	rattus-norvegicus	D3ZNT6	Mafa	D3ZNT6	12	14	Transcription factor MafA
-D3ZNU0	rattus-norvegicus	D3ZNU0	Rnf215	D3ZNU0	0	17	RING finger protein 215
+D3ZNU0	rattus-norvegicus	D3ZNU0	Rnf215	D3ZNU0	0	16	RING finger protein 215
 D3ZNU1	rattus-norvegicus	D3ZNU1	Cebpz	D3ZNU1	3	33	CCAAT/enhancer-binding protein zeta
 D3ZNU3	rattus-norvegicus	D3ZNU3	Cramp1	D3ZNU3	1	5	Protein cramped-like
 D3ZNV5	rattus-norvegicus	D3ZNV5	Pdzrn4	D3ZNV5	5	22	PDZ domain containing RING finger 4
@@ -1312,7 +1312,7 @@ D3ZNV6	rattus-norvegicus	D3ZNV6	Elmod2	D3ZNV6	0	1	ELMO domain containing 2
 D3ZNV7	rattus-norvegicus	D3ZNV7	Ly6k	D3ZNV7	1	2	Lymphocyte antigen 6 family member K
 D3ZNW4	rattus-norvegicus	D3ZNW4	Acer2	D3ZNW4	0	9	Alkaline ceramidase
 D3ZNX0	rattus-norvegicus	D3ZNX0	Kctd3	D3ZNX0	0	6	BTB/POZ domain-containing protein KCTD3
-D3ZNY3	rattus-norvegicus	D3ZNY3	Mmaa	D3ZNY3	1	16	Metabolism of cobalamin associated A
+D3ZNY3	rattus-norvegicus	D3ZNY3	Mmaa	D3ZNY3	1	15	Metabolism of cobalamin associated A
 D3ZNY8	rattus-norvegicus	D3ZNY8	Ror2	D3ZNY8	1	19	Receptor tyrosine kinase-like orphan receptor 2
 D3ZNZ9	rattus-norvegicus	D3ZNZ9	Hist3h2ba	D3ZNZ9	23	169	Histone H2B
 D3ZP13	rattus-norvegicus	D3ZP13	Qsox2	D3ZP13	0	2	Sulfhydryl oxidase
@@ -1331,7 +1331,7 @@ D3ZP59	rattus-norvegicus	D3ZP59	AABR07055527.1	D3ZP59	0	22	Nucleophosmin
 D3ZP60	rattus-norvegicus	D3ZP60	Vwa5b1	D3ZP60	1	10	von Willebrand factor A domain containing 5B1
 D3ZP67	rattus-norvegicus	D3ZP67	Ppp1r15b	D3ZP67	4	17	Protein phosphatase 1, regulatory subunit 15B
 D3ZP72	rattus-norvegicus	D3ZP72	Mob3c	D3ZP72	0	1	MOB kinase activator 3C
-D3ZP81	rattus-norvegicus	D3ZP81	Rnf43	D3ZP81	1	22	RING-type E3 ubiquitin transferase
+D3ZP81	rattus-norvegicus	D3ZP81	Rnf43	D3ZP81	1	21	RING-type E3 ubiquitin transferase
 D3ZP82	rattus-norvegicus	D3ZP82	Loxl3	D3ZP82	1	17	Lysyl oxidase homolog
 D3ZP87	rattus-norvegicus	D3ZP87	Cibar1	D3ZP87	1	3	CBY1 interacting BAR domain containing 1
 D3ZP88	rattus-norvegicus	D3ZP88	Hoxc5	D3ZP88	1	7	Homeo box C5
@@ -1343,7 +1343,7 @@ D3ZP98	rattus-norvegicus	D3ZP98	Hm13	D3ZP98	0	13	MCTS family member 2
 D3ZP99	rattus-norvegicus	D3ZP99	Ppm1n	D3ZP99	1	7	Probable protein phosphatase 1N
 D3ZPA1	rattus-norvegicus	D3ZPA1	Gcc1	D3ZPA1	6	214	GRIP and coiled-coil domain-containing protein 1
 D3ZPA7	rattus-norvegicus	D3ZPA7	Scara3	D3ZPA7	0	6	Scavenger receptor class A, member 3
-D3ZPA8	rattus-norvegicus	D3ZPA8	Gtse1	D3ZPA8	4	164	G-2 and S-phase expressed 1
+D3ZPA8	rattus-norvegicus	D3ZPA8	Gtse1	D3ZPA8	4	163	G-2 and S-phase expressed 1
 D3ZPB6	rattus-norvegicus	D3ZPB6	Ust	D3ZPB6	0	1	Uronyl 2-sulfotransferase
 D3ZPC8	rattus-norvegicus	D3ZPC8	Xrcc2	D3ZPC8	3	28	X-ray repair cross complementing 2
 D3ZPD0	rattus-norvegicus	D3ZPD0	Ckap2	D3ZPD0	1	14	Cytoskeleton associated protein 2
@@ -1352,7 +1352,7 @@ D3ZPD8	rattus-norvegicus	D3ZPD8	B3galt1	D3ZPD8	0	2	Hexosyltransferase
 D3ZPE6	rattus-norvegicus	D3ZPE6	Mrpl51	D3ZPE6	10	195	Large ribosomal subunit protein mL51
 D3ZPF0	rattus-norvegicus	D3ZPF0	Fhl3	D3ZPF0	0	12	Four and a half LIM domains protein 3
 D3ZPF2	rattus-norvegicus	D3ZPF2	Mcat	D3ZPF2	6	62	Malonyl-CoA-acyl carrier protein transacylase, mitochondrial
-D3ZPG5	rattus-norvegicus	D3ZPG5	Usp30	D3ZPG5	9	46	Ubiquitin carboxyl-terminal hydrolase 30
+D3ZPG5	rattus-norvegicus	D3ZPG5	Usp30	D3ZPG5	9	45	Ubiquitin carboxyl-terminal hydrolase 30
 D3ZPG6	rattus-norvegicus	D3ZPG6	Fbxl13	D3ZPG6	2	9	F-box and leucine-rich repeat protein 13
 D3ZPI8	rattus-norvegicus	D3ZPI8	C8g	D3ZPI8	3	30	Complement component C8 gamma chain
 D3ZPJ0	rattus-norvegicus	D3ZPJ0	Shisa7	D3ZPJ0	1	49	Shisa family member 7
@@ -1370,14 +1370,14 @@ D3ZPN5	rattus-norvegicus	D3ZPN5	Mtpap	D3ZPN5	0	4	Mitochondrial poly(A) polymeras
 D3ZPN6	rattus-norvegicus	D3ZPN6	Clec5a	D3ZPN6	0	5	C-type lectin domain family 5 member A
 D3ZPN7	rattus-norvegicus	D3ZPN7	LOC134480579	D3ZPN7	10	139	Large ribosomal subunit protein eL21
 D3ZPP0	rattus-norvegicus	D3ZPP0	Zfp668	D3ZPP0	0	7	Zinc finger protein 668
-D3ZPP2	rattus-norvegicus	D3ZPP2	Arl8a	D3ZPP2	2	10	ADP-ribosylation factor like GTPase 8A
+D3ZPP2	rattus-norvegicus	D3ZPP2	Arl8a	D3ZPP2	2	9	ADP-ribosylation factor like GTPase 8A
 D3ZPP3	rattus-norvegicus	D3ZPP3	Psd4	D3ZPP3	0	3	PH and SEC7 domain-containing protein 4
 D3ZPP5	rattus-norvegicus	D3ZPP5	Slc45a3	D3ZPP5	0	7	Solute carrier family 45, member 3
 D3ZPP6	rattus-norvegicus	D3ZPP6	Herc3	D3ZPP6	1	4	HECT and RLD domain containing E3 ubiquitin protein ligase 3
 D3ZPP7	rattus-norvegicus	D3ZPP7	Lrtm2	D3ZPP7	0	5	Leucine-rich repeats and transmembrane domains 2
 D3ZPP9	rattus-norvegicus	D3ZPP9	Card19	D3ZPP9	0	2	Caspase recruitment domain-containing protein 19
 D3ZPQ3	rattus-norvegicus	D3ZPQ3	Xaf1	D3ZPQ3	2	9	XIAP associated factor 1
-D3ZPR0	rattus-norvegicus	D3ZPR0	Cse1l	D3ZPR0	8	33	Exportin-2
+D3ZPR0	rattus-norvegicus	D3ZPR0	Cse1l	D3ZPR0	7	32	Exportin-2
 D3ZPR2	rattus-norvegicus	D3ZPR2	Zfp395	D3ZPR2	4	66	Zinc finger protein 395
 D3ZPS4	rattus-norvegicus	D3ZPS4	Spns2	D3ZPS4	2	72	SPNS lysolipid transporter 2, sphingosine-1-phosphate
 D3ZPS9	rattus-norvegicus	D3ZPS9	Macir	D3ZPS9	0	2	Macrophage immunometabolism regulator
@@ -1389,7 +1389,7 @@ D3ZPV3	rattus-norvegicus	D3ZPV3	Ciart	D3ZPV3	1	3	Circadian associated repressor 
 D3ZPV8	rattus-norvegicus	D3ZPV8	Ggct	D3ZPV8	0	2	Gamma-glutamylcyclotransferase
 D3ZPW1	rattus-norvegicus	D3ZPW1	Arrdc2	D3ZPW1	7	16	Arrestin domain-containing protein 2
 D3ZPW3	rattus-norvegicus	D3ZPW3	Il27	D3ZPW3	5	14	Interleukin-27 subunit alpha
-D3ZPW4	rattus-norvegicus	D3ZPW4	Ppp1r26	D3ZPW4	29	586	Protein phosphatase 1, regulatory subunit 26
+D3ZPW4	rattus-norvegicus	D3ZPW4	Ppp1r26	D3ZPW4	29	585	Protein phosphatase 1, regulatory subunit 26
 D3ZPW7	rattus-norvegicus	D3ZPW7	Gpx8	D3ZPW7	1	4	Glutathione peroxidase
 D3ZPX0	rattus-norvegicus	D3ZPX0	Zmym5	D3ZPX0	2	5	Zinc finger MYM-type containing 5
 D3ZPX3	rattus-norvegicus	D3ZPX3	Kash5	D3ZPX3	6	12	KASH domain containing 5
@@ -1406,7 +1406,7 @@ D3ZQ25	rattus-norvegicus	D3ZQ25	Fbln1	D3ZQ25	2	16	Fibulin-1
 D3ZQ26	rattus-norvegicus	D3ZQ26	Rnf25	D3ZQ26	9	11	E3 ubiquitin-protein ligase RNF25
 D3ZQ30	rattus-norvegicus	D3ZQ30	Telo2	D3ZQ30	2	29	Telomere length regulation protein TEL2 homolog
 D3ZQ38	rattus-norvegicus	D3ZQ38	Tldc2	D3ZQ38	1	3	TBC/LysM-associated domain containing 2
-D3ZQ41	rattus-norvegicus	D3ZQ41	Ccne2	D3ZQ41	23	54	Cyclin E2
+D3ZQ41	rattus-norvegicus	D3ZQ41	Ccne2	D3ZQ41	23	53	Cyclin E2
 D3ZQ46	rattus-norvegicus	D3ZQ46	Cmtm5	D3ZQ46	0	2	CKLF-like MARVEL transmembrane domain containing 5
 D3ZQ48	rattus-norvegicus	D3ZQ48	Ctcfl1	D3ZQ48	1	32	CCCTC-binding factor
 D3ZQ49	rattus-norvegicus	D3ZQ49	Pgr15l	D3ZQ49	0	5	G-protein coupled receptor 83
@@ -1416,11 +1416,11 @@ D3ZQ56	rattus-norvegicus	D3ZQ56	Polr3f	D3ZQ56	9	45	DNA-directed RNA polymerase I
 D3ZQ60	rattus-norvegicus	D3ZQ60	Plekhg4	D3ZQ60	0	4	Pleckstrin homology and RhoGEF domain containing G4
 D3ZQ63	rattus-norvegicus	D3ZQ63	Mettl2	D3ZQ63	0	12	tRNA N(3)-cytidine methyltransferase
 D3ZQ64	rattus-norvegicus	D3ZQ64	Or1n2	D3ZQ64	0	3	Olfactory receptor
-D3ZQ67	rattus-norvegicus	D3ZQ67	Etaa1	D3ZQ67	6	48	ETAA1 activator of ATR kinase, pseudogene 1
+D3ZQ67	rattus-norvegicus	D3ZQ67	Etaa1	D3ZQ67	6	47	ETAA1 activator of ATR kinase, pseudogene 1
 D3ZQ68	rattus-norvegicus	D3ZQ68	Zfp263	D3ZQ68	0	2	Zinc finger protein 263
 D3ZQ77	rattus-norvegicus	D3ZQ77	C10h5orf15	D3ZQ77	0	3	Similar to human chromosome 5 open reading frame 15
 D3ZQ80	rattus-norvegicus	D3ZQ80	Smg8	D3ZQ80	3	13	Nonsense-mediated mRNA decay factor SMG8
-D3ZQ81	rattus-norvegicus	D3ZQ81	2200002J24Rikl	D3ZQ81	3	547	RIKEN cDNA 2200002J24 gene like
+D3ZQ81	rattus-norvegicus	D3ZQ81	2200002J24Rikl	D3ZQ81	3	546	RIKEN cDNA 2200002J24 gene like
 D3ZQ82	rattus-norvegicus	D3ZQ82	Rfx1	D3ZQ82	1	12	Regulatory factor X1
 D3ZQ86	rattus-norvegicus	D3ZQ86	Igdcc3	D3ZQ86	0	16	Immunoglobulin superfamily DCC subclass member 3
 D3ZQ91	rattus-norvegicus	D3ZQ91	Rpa3l1	D3ZQ91	4	40	Replication protein A 14 kDa subunit
@@ -1429,7 +1429,7 @@ D3ZQ99	rattus-norvegicus	D3ZQ99	Prdm15	D3ZQ99	0	1	PR domain zinc finger protein 
 D3ZQA6	rattus-norvegicus	D3ZQA6	Prdm6	D3ZQA6	0	6	Putative histone-lysine N-methyltransferase PRDM6
 D3ZQB1	rattus-norvegicus	D3ZQB1	Arid3c	D3ZQB1	1	10	AT-rich interactive domain-containing protein 3
 D3ZQB6	rattus-norvegicus	D3ZQB6	Hdhd5	D3ZQB6	0	1	Haloacid dehalogenase-like hydrolase domain-containing 5
-D3ZQB7	rattus-norvegicus	D3ZQB7	Phf20	D3ZQB7	20	96	PHD finger protein 20
+D3ZQB7	rattus-norvegicus	D3ZQB7	Phf20	D3ZQB7	18	94	PHD finger protein 20
 D3ZQD2	rattus-norvegicus	D3ZQD2	C1qtnf12	D3ZQD2	0	1	Adipolin
 D3ZQD3	rattus-norvegicus	D3ZQD3	Ogdhl	D3ZQD3	2	23	2-oxoglutarate dehydrogenase-like, mitochondrial
 D3ZQD9	rattus-norvegicus	D3ZQD9	LOC120096627	D3ZQD9	1	4	Developmental pluripotency-associated protein 3-like
@@ -1448,9 +1448,9 @@ D3ZQH3	rattus-norvegicus	D3ZQH3	Ssc4d	D3ZQH3	0	1	Scavenger receptor cysteine ric
 D3ZQH5	rattus-norvegicus	D3ZQH5	Mtmr11	D3ZQH5	1	7	Myotubularin related protein 11
 D3ZQH6	rattus-norvegicus	D3ZQH6	Pla2g4d	D3ZQH6	0	2	Phospholipase A2
 D3ZQH9	rattus-norvegicus	D3ZQH9	Rasa4	D3ZQH9	4	7	RAS p21 protein activator 4
-D3ZQI0	rattus-norvegicus	D3ZQI0	Polr2j	D3ZQI0	11	230	RNA polymerase II subunit J
+D3ZQI0	rattus-norvegicus	D3ZQI0	Polr2j	D3ZQI0	11	229	RNA polymerase II subunit J
 D3ZQI1	rattus-norvegicus	D3ZQI1	Gpx7	D3ZQI1	1	9	Glutathione peroxidase
-D3ZQI4	rattus-norvegicus	D3ZQI4	Zfand1	D3ZQI4	1	10	AN1-type zinc finger protein 1
+D3ZQI4	rattus-norvegicus	D3ZQI4	Zfand1	D3ZQI4	1	9	AN1-type zinc finger protein 1
 D3ZQI6	rattus-norvegicus	D3ZQI6	Xpo4	D3ZQI6	2	7	Exportin-4
 D3ZQI7	rattus-norvegicus	D3ZQI7	Zbtb47	D3ZQI7	0	2	Zinc finger and BTB domain containing 47
 D3ZQI9	rattus-norvegicus	D3ZQI9	Iffo1	D3ZQI9	0	2	Intermediate filament family orphan 1
@@ -1460,7 +1460,7 @@ D3ZQJ3	rattus-norvegicus	D3ZQJ3	Gigyf1	D3ZQJ3	3	15	GRB10 interacting GYF protein
 D3ZQJ8	rattus-norvegicus	D3ZQJ8	Prss56	D3ZQJ8	0	2	Serine protease 56
 D3ZQK4	rattus-norvegicus	D3ZQK4	Txndc16	D3ZQK4	1	8	Thioredoxin domain containing 16
 D3ZQK5	rattus-norvegicus	D3ZQK5	Nhsl3	D3ZQK5	0	5	NHS like 3
-D3ZQL0	rattus-norvegicus	D3ZQL0	Fanca	D3ZQL0	5	64	FA complementation group A
+D3ZQL0	rattus-norvegicus	D3ZQL0	Fanca	D3ZQL0	5	63	FA complementation group A
 D3ZQL1	rattus-norvegicus	D3ZQL1	Emc7	D3ZQL1	1	11	Endoplasmic reticulum membrane protein complex subunit 7
 D3ZQL3	rattus-norvegicus	D3ZQL3	Gbp4	D3ZQL3	0	5	Guanylate binding protein 4
 D3ZQL4	rattus-norvegicus	D3ZQL4	Zfp346	D3ZQL4	0	1	Zinc finger protein 346
@@ -1468,7 +1468,7 @@ D3ZQL6	rattus-norvegicus	D3ZQL6	Micall1	D3ZQL6	3	11	MICAL-like protein 1
 D3ZQL7	rattus-norvegicus	D3ZQL7	Tppp	D3ZQL7	0	12	Tubulin polymerization-promoting protein
 D3ZQL8	rattus-norvegicus	D3ZQL8	Pum2	D3ZQL8	3	33	Pumilio RNA-binding family member 2
 D3ZQL9	rattus-norvegicus	D3ZQL9	Atoh1	D3ZQL9	3	3	Atonal bHLH transcription factor 1
-D3ZQM0	rattus-norvegicus	D3ZQM0	Sf3a1	D3ZQM0	34	183	Splicing factor 3A subunit 1
+D3ZQM0	rattus-norvegicus	D3ZQM0	Sf3a1	D3ZQM0	34	182	Splicing factor 3A subunit 1
 D3ZQM6	rattus-norvegicus	D3ZQM6	Mbd3l1	D3ZQM6	7	31	Methyl-CpG binding domain protein 3-like 1
 D3ZQM9	rattus-norvegicus	D3ZQM9	AABR07065789.1	D3ZQM9	6	44	Ig-like domain-containing protein
 D3ZQN0	rattus-norvegicus	D3ZQN0	Fam83a	D3ZQN0	0	3	Family with sequence similarity 83, member A
@@ -1484,16 +1484,16 @@ D3ZQU7	rattus-norvegicus	D3ZQU7	Gp1ba	D3ZQU7	6	59	Platelet glycoprotein Ib alpha
 D3ZQV0	rattus-norvegicus	D3ZQV0	Prss3	D3ZQV0	4	13	trypsin
 D3ZQV2	rattus-norvegicus	D3ZQV2	Lrig2	D3ZQV2	1	8	Leucine-rich repeats and immunoglobulin-like domains protein 2
 D3ZQV3	rattus-norvegicus	D3ZQV3	Mbnl3	D3ZQV3	0	4	Muscleblind-like splicing regulator 3
-D3ZQV8	rattus-norvegicus	D3ZQV8	Phf6	D3ZQV8	2	18	PHD finger protein 6
+D3ZQV8	rattus-norvegicus	D3ZQV8	Phf6	D3ZQV8	2	17	PHD finger protein 6
 D3ZQW1	rattus-norvegicus	D3ZQW1	Blm	D3ZQW1	3	75	RecQ-like DNA helicase BLM
 D3ZQW3	rattus-norvegicus	D3ZQW3	Trmt9b	D3ZQW3	3	4	Probable tRNA methyltransferase 9B
 D3ZQW5	rattus-norvegicus	D3ZQW5	Tmem151b	D3ZQW5	0	5	Transmembrane protein 151B
 D3ZQW7	rattus-norvegicus	D3ZQW7	AC136661.1	D3ZQW7	20	460	Small ribosomal subunit protein uS5
 D3ZQX2	rattus-norvegicus	D3ZQX2	Nilr1	D3ZQX2	0	11	Neutrophil immunoglobulin-like receptor 1
-D3ZQX3	rattus-norvegicus	D3ZQX3	Mrps12	D3ZQX3	28	623	Small ribosomal subunit protein uS12m
-D3ZQX4	rattus-norvegicus	D3ZQX4	Anapc15	D3ZQX4	2	65	Anaphase-promoting complex subunit 15
+D3ZQX3	rattus-norvegicus	D3ZQX3	Mrps12	D3ZQX3	28	621	Small ribosomal subunit protein uS12m
+D3ZQX4	rattus-norvegicus	D3ZQX4	Anapc15	D3ZQX4	2	64	Anaphase-promoting complex subunit 15
 D3ZQZ0	rattus-norvegicus	D3ZQZ0	Vsx1	D3ZQZ0	0	3	Visual system homeobox 1
-D3ZR08	rattus-norvegicus	D3ZR08	Ddb2	D3ZR08	2	104	DNA damage-binding protein 2
+D3ZR08	rattus-norvegicus	D3ZR08	Ddb2	D3ZR08	2	103	DNA damage-binding protein 2
 D3ZR10	rattus-norvegicus	D3ZR10	Dcdc2	D3ZR10	0	5	Doublecortin domain-containing protein 2
 D3ZR12	rattus-norvegicus	D3ZR12	Sntg2	D3ZR12	0	23	Syntrophin, gamma 2
 D3ZR16	rattus-norvegicus	D3ZR16	AC099183.3	D3ZR16	0	5	Uncharacterized protein
@@ -1522,12 +1522,12 @@ D3ZRE1	rattus-norvegicus	D3ZRE1	Piwil2	D3ZRE1	5	32	Piwi-like protein 2
 D3ZRE6	rattus-norvegicus	D3ZRE6	Adck2	D3ZRE6	0	3	NADH:ubiquinone oxidoreductase subunit B2
 D3ZRE7	rattus-norvegicus	D3ZRE7	Swap70	D3ZRE7	2	10	Switch-associated protein 70
 D3ZRF0	rattus-norvegicus	D3ZRF0	Rptn	D3ZRF0	1	33	Repetin
-D3ZRF9	rattus-norvegicus	D3ZRF9	Mcoln1	D3ZRF9	2	23	Mucolipin TRP cation channel 1
+D3ZRF9	rattus-norvegicus	D3ZRF9	Mcoln1	D3ZRF9	2	22	Mucolipin TRP cation channel 1
 D3ZRG7	rattus-norvegicus	D3ZRG7	Rbm26	D3ZRG7	1	2	RNA-binding protein 26
 D3ZRH1	rattus-norvegicus	D3ZRH1	Oxa1l	D3ZRH1	2	91	OXA1L, mitochondrial inner membrane protein
 D3ZRH4	rattus-norvegicus	D3ZRH4	Pih1d2	D3ZRH4	8	93	PIH1 domain-containing protein 2
 D3ZRH5	rattus-norvegicus	D3ZRH5	Zfp275	D3ZRH5	0	2	Zinc finger protein 275
-D3ZRH6	rattus-norvegicus	D3ZRH6	Lnx2	D3ZRH6	3	42	Ligand of Numb protein X 2
+D3ZRH6	rattus-norvegicus	D3ZRH6	Lnx2	D3ZRH6	3	41	Ligand of Numb protein X 2
 D3ZRI4	rattus-norvegicus	D3ZRI4	Irx4	D3ZRI4	1	3	Iroquois homeobox 4
 D3ZRI6	rattus-norvegicus	D3ZRI6	Kin	D3ZRI6	6	52	DNA/RNA-binding protein KIN17
 D3ZRI9	rattus-norvegicus	D3ZRI9	Gan	D3ZRI9	16	53	Gigaxonin
@@ -1545,9 +1545,9 @@ D3ZRL8	rattus-norvegicus	D3ZRL8	Scml2	D3ZRL8	1	45	Scm polycomb group protein lik
 D3ZRM2	rattus-norvegicus	D3ZRM2	Il18r1	D3ZRM2	2	26	Interleukin 18 receptor 1
 D3ZRM3	rattus-norvegicus	D3ZRM3	Chsy1	D3ZRM3	3	3	Hexosyltransferase
 D3ZRM5	rattus-norvegicus	D3ZRM5	Rab23	D3ZRM5	4	13	Ras-related protein Rab-23
-D3ZRM9	rattus-norvegicus	D3ZRM9	LOC100360491	D3ZRM9	41	439	60S ribosomal protein L13-like
+D3ZRM9	rattus-norvegicus	D3ZRM9	LOC100360491	D3ZRM9	41	438	60S ribosomal protein L13-like
 D3ZRN1	rattus-norvegicus	D3ZRN1	Tmem179b	D3ZRN1	1	20	Transmembrane protein 179B
-D3ZRN3	rattus-norvegicus	D3ZRN3	Actbl2	D3ZRN3	17	114	Actin, beta-like 2
+D3ZRN3	rattus-norvegicus	D3ZRN3	Actbl2	D3ZRN3	16	112	Actin, beta-like 2
 D3ZRN5	rattus-norvegicus	D3ZRN5	Ro60	D3ZRN5	2	15	RNA-binding protein RO60
 D3ZRP5	rattus-norvegicus	D3ZRP5	Tnks2	D3ZRP5	3	27	Tankyrase 2
 D3ZRR1	rattus-norvegicus	D3ZRR1	LOC680428	D3ZRR1	0	5	Uncharacterized protein
@@ -1559,7 +1559,7 @@ D3ZRW5	rattus-norvegicus	D3ZRW5	Wnt10a	D3ZRW5	3	9	Protein Wnt
 D3ZRW8	rattus-norvegicus	D3ZRW8	Etnk2	D3ZRW8	0	4	Ethanolamine kinase 2
 D3ZRW9	rattus-norvegicus	D3ZRW9	Gzmn	D3ZRW9	0	2	Granzyme N
 D3ZRX1	rattus-norvegicus	D3ZRX1	Zfp189	D3ZRX1	1	2	Zinc finger protein 189
-D3ZRX9	rattus-norvegicus	D3ZRX9	Cnn2	D3ZRX9	0	49	Calponin
+D3ZRX9	rattus-norvegicus	D3ZRX9	Cnn2	D3ZRX9	0	48	Calponin
 D3ZRZ2	rattus-norvegicus	D3ZRZ2	Mmp1b	D3ZRZ2	2	14	interstitial collagenase
 D3ZRZ9	rattus-norvegicus	D3ZRZ9	Prdm5	D3ZRZ9	0	1	Zinc finger protein
 D3ZS02	rattus-norvegicus	D3ZS02	Cbll1	D3ZS02	1	18	E3 ubiquitin-protein ligase Hakai
@@ -1576,7 +1576,7 @@ D3ZS39	rattus-norvegicus	D3ZS39	Mms22l	D3ZS39	3	57	Protein MMS22-like
 D3ZS41	rattus-norvegicus	D3ZS41	Ecm2	D3ZS41	2	9	Extracellular matrix protein 2
 D3ZS52	rattus-norvegicus	D3ZS52	Tmem258b	D3ZS52	3	21	Dolichyl-diphosphooligosaccharide-protein glycosyltransferase subunit TMEM258
 D3ZS55	rattus-norvegicus	D3ZS55	Sbspon	D3ZS55	1	20	Somatomedin B and thrombospondin, type 1 domain containing
-D3ZS58	rattus-norvegicus	D3ZS58	Ndufa2	D3ZS58	9	200	NADH dehydrogenase
+D3ZS58	rattus-norvegicus	D3ZS58	Ndufa2	D3ZS58	9	199	NADH dehydrogenase
 D3ZS59	rattus-norvegicus	D3ZS59	Fbxl22	D3ZS59	1	6	F-box and leucine-rich protein 22
 D3ZS61	rattus-norvegicus	D3ZS61	Rps15al2	D3ZS61	18	490	Small ribosomal subunit protein uS8
 D3ZS67	rattus-norvegicus	D3ZS67	Pcare	D3ZS67	1	1	Photoreceptor cilium actin regulator
@@ -1587,7 +1587,7 @@ D3ZS88	rattus-norvegicus	D3ZS88	Atf7ip	D3ZS88	8	11	Activating transcription fact
 D3ZS97	rattus-norvegicus	D3ZS97	Cd226	D3ZS97	11	93	CD226 molecule
 D3ZSA0	rattus-norvegicus	D3ZSA0	Anxa9	D3ZSA0	1	22	Annexin
 D3ZSA9	rattus-norvegicus	D3ZSA9	Nomo1	D3ZSA9	1	1	Nodal modulator 1
-D3ZSB0	rattus-norvegicus	D3ZSB0	Cox6b1	D3ZSB0	4	141	Cytochrome c oxidase subunit 6B1
+D3ZSB0	rattus-norvegicus	D3ZSB0	Cox6b1	D3ZSB0	4	140	Cytochrome c oxidase subunit 6B1
 D3ZSB7	rattus-norvegicus	D3ZSB7	Rps6ka4	D3ZSB7	0	6	Ribosomal protein S6 kinase
 D3ZSC1	rattus-norvegicus	D3ZSC1	Susd5	D3ZSC1	1	35	Sushi domain containing 5
 D3ZSC2	rattus-norvegicus	D3ZSC2	Pdcd2l	D3ZSC2	0	2	Programmed cell death 2-like
@@ -1596,10 +1596,10 @@ D3ZSD3	rattus-norvegicus	D3ZSD3	Gabpb2	D3ZSD3	0	1	GA binding protein transcripti
 D3ZSE6	rattus-norvegicus	D3ZSE6	Pjvk	D3ZSE6	0	4	Pejvakin
 D3ZSF0	rattus-norvegicus	D3ZSF0	Fam217b	D3ZSF0	1	1	Family with sequence similarity 217, member B
 D3ZSF7	rattus-norvegicus	D3ZSF7	Slc39a5	D3ZSF7	1	1	Solute carrier family 39 member 5
-D3ZSF9	rattus-norvegicus	D3ZSF9	Rpl22l2	D3ZSF9	22	448	Ribosomal protein L22-like 2
+D3ZSF9	rattus-norvegicus	D3ZSF9	Rpl22l2	D3ZSF9	22	447	Ribosomal protein L22-like 2
 D3ZSG1	rattus-norvegicus	D3ZSG1	Scnm1	D3ZSG1	3	38	Sodium channel modifier 1
 D3ZSG3	rattus-norvegicus	D3ZSG3	Tmod4	D3ZSG3	1	39	Tropomodulin 4
-D3ZSH6	rattus-norvegicus	D3ZSH6	LOC108348601	D3ZSH6	33	436	40S ribosomal protein S19 pseudogene
+D3ZSH6	rattus-norvegicus	D3ZSH6	LOC108348601	D3ZSH6	33	435	40S ribosomal protein S19 pseudogene
 D3ZSI0	rattus-norvegicus	D3ZSI0	Or4l1	D3ZSI0	1	3	Olfactory receptor
 D3ZSI8	rattus-norvegicus	D3ZSI8	Pip5k1a	D3ZSI8	5	41	Phosphatidylinositol 4-phosphate 5-kinase type-1 alpha
 D3ZSK3	rattus-norvegicus	D3ZSK3	Peli2	D3ZSK3	2	20	E3 ubiquitin-protein ligase pellino homolog
@@ -1611,9 +1611,9 @@ D3ZSN4	rattus-norvegicus	D3ZSN4	Zfp330	D3ZSN4	1	1	Zinc finger protein 330
 D3ZSN7	rattus-norvegicus	D3ZSN7	Slc25a44	D3ZSN7	0	1	Solute carrier family 25, member 44
 D3ZSP1	rattus-norvegicus	D3ZSP1	Snrpe	D3ZSP1	15	247	Small nuclear ribonucleoprotein E
 D3ZSR2	rattus-norvegicus	D3ZSR2	Pabpc4-ps1	D3ZSR2	9	42	Polyadenylate-binding protein
-D3ZSR8	rattus-norvegicus	D3ZSR8	Rpl23al6	D3ZSR8	12	439	Large ribosomal subunit protein uL23
+D3ZSR8	rattus-norvegicus	D3ZSR8	Rpl23al6	D3ZSR8	12	437	Large ribosomal subunit protein uL23
 D3ZSS0	rattus-norvegicus	D3ZSS0	Phtf2	D3ZSS0	1	20	Putative homeodomain transcription factor 2
-D3ZSS5	rattus-norvegicus	D3ZSS5	Gnat1	D3ZSS5	48	110	G protein subunit alpha transducin 1
+D3ZSS5	rattus-norvegicus	D3ZSS5	Gnat1	D3ZSS5	48	109	G protein subunit alpha transducin 1
 D3ZST4	rattus-norvegicus	D3ZST4	B430306N03Rikl	D3ZST4	0	1	RIKEN cDNA B430306N03 gene
 D3ZSU4	rattus-norvegicus	D3ZSU4	Ms4a15	D3ZSU4	0	2	Membrane spanning 4-domains A15
 D3ZSU5	rattus-norvegicus	D3ZSU5	Hoxa9	D3ZSU5	1	29	Homeobox protein
@@ -1627,7 +1627,7 @@ D3ZSW9	rattus-norvegicus	D3ZSW9	Rufy2	D3ZSW9	2	6	RUN and FYVE domain containing 
 D3ZSX2	rattus-norvegicus	D3ZSX2	Aff4	D3ZSX2	17	68	ALF transcription elongation factor 4
 D3ZSX5	rattus-norvegicus	D3ZSX5	C19h16orf74	D3ZSX5	1	9	Similar to human chromosome 16 open reading frame 74
 D3ZSX6	rattus-norvegicus	D3ZSX6	Paxip1	D3ZSX6	8	95	PAX-interacting protein 1
-D3ZSX8	rattus-norvegicus	D3ZSX8	Kat14	D3ZSX8	7	47	Cysteine-rich protein 2-binding protein
+D3ZSX8	rattus-norvegicus	D3ZSX8	Kat14	D3ZSX8	6	45	Cysteine-rich protein 2-binding protein
 D3ZSX9	rattus-norvegicus	D3ZSX9	S100pbp	D3ZSX9	0	1	S100P-binding protein
 D3ZSY1	rattus-norvegicus	D3ZSY1	Tent4a	D3ZSY1	4	27	Terminal nucleotidyltransferase 4A
 D3ZSY2	rattus-norvegicus	D3ZSY2	Mei1	D3ZSY2	2	5	Meiotic double-stranded break formation protein 1
@@ -1659,7 +1659,7 @@ D3ZT87	rattus-norvegicus	D3ZT87	Cep126	D3ZT87	1	9	Centrosomal protein 126
 D3ZT88	rattus-norvegicus	D3ZT88	Sp6	D3ZT88	0	5	Transcription factor Sp6
 D3ZT90	rattus-norvegicus	D3ZT90	Gcdh	D3ZT90	1	10	Glutaryl-CoA dehydrogenase, mitochondrial
 D3ZT94	rattus-norvegicus	D3ZT94	Ptx3	D3ZT94	0	44	Pentraxin-related protein PTX3
-D3ZT95	rattus-norvegicus	D3ZT95	Ercc4	D3ZT95	14	87	DNA repair endonuclease XPF
+D3ZT95	rattus-norvegicus	D3ZT95	Ercc4	D3ZT95	14	86	DNA repair endonuclease XPF
 D3ZT97	rattus-norvegicus	D3ZT97	Sac3d1	D3ZT97	5	90	SAC3 domain containing 1
 D3ZT98	rattus-norvegicus	D3ZT98	Bola3	D3ZT98	1	6	BolA-like protein 3
 D3ZTA2	rattus-norvegicus	D3ZTA2	Tbc1d31	D3ZTA2	0	15	TBC1 domain family member 31
@@ -1695,8 +1695,8 @@ D3ZTK7	rattus-norvegicus	D3ZTK7	AABR07012426.1	D3ZTK7	4	10	TDPOZ2
 D3ZTL0	rattus-norvegicus	D3ZTL0	Tcerg1	D3ZTL0	6	67	Transcription elongation regulator 1
 D3ZTL1	rattus-norvegicus	D3ZTL1	Pou4f3	D3ZTL1	1	2	POU domain, class 4, transcription factor 3
 D3ZTL5	rattus-norvegicus	D3ZTL5	Magel2	D3ZTL5	2	21	MAGE family member L2
-D3ZTM2	rattus-norvegicus	D3ZTM2	Ino80d	D3ZTM2	3	35	INO80 complex subunit D
-D3ZTM4	rattus-norvegicus	D3ZTM4	Atxn7l1	D3ZTM4	9	81	Uncharacterized protein
+D3ZTM2	rattus-norvegicus	D3ZTM2	Ino80d	D3ZTM2	2	34	INO80 complex subunit D
+D3ZTM4	rattus-norvegicus	D3ZTM4	Atxn7l1	D3ZTM4	9	79	Uncharacterized protein
 D3ZTM5	rattus-norvegicus	D3ZTM5	Pierce1	D3ZTM5	1	73	Piercer of microtubule wall 1
 D3ZTN1	rattus-norvegicus	D3ZTN1	Tesc	D3ZTN1	4	15	Calcineurin B homologous protein 3
 D3ZTN6	rattus-norvegicus	D3ZTN6	Spring1	D3ZTN6	1	1	SREBP regulating gene protein
@@ -1726,9 +1726,9 @@ D3ZTW9	rattus-norvegicus	D3ZTW9	Exog	D3ZTW9	0	4	Nuclease EXOG, mitochondrial
 D3ZTX0	rattus-norvegicus	D3ZTX0	Tmed7	D3ZTX0	9	225	Transmembrane emp24 domain-containing protein 7
 D3ZTX1	rattus-norvegicus	D3ZTX1	Trim67	D3ZTX1	0	8	Tripartite motif-containing protein 67
 D3ZTX2	rattus-norvegicus	D3ZTX2	Nkx2-4	D3ZTX2	0	6	NK2 homeobox 4
-D3ZTX5	rattus-norvegicus	D3ZTX5	Efhb	D3ZTX5	6	130	EF hand domain family, member B
+D3ZTX5	rattus-norvegicus	D3ZTX5	Efhb	D3ZTX5	6	129	EF hand domain family, member B
 D3ZTX7	rattus-norvegicus	D3ZTX7	Usp22	D3ZTX7	13	53	Ubiquitin carboxyl-terminal hydrolase
-D3ZTX9	rattus-norvegicus	D3ZTX9	Rpl23a	D3ZTX9	16	446	Large ribosomal subunit protein uL23
+D3ZTX9	rattus-norvegicus	D3ZTX9	Rpl23a	D3ZTX9	16	444	Large ribosomal subunit protein uL23
 D3ZTY0	rattus-norvegicus	D3ZTY0	Cnih4	D3ZTY0	0	9	Cornichon family member 4
 D3ZTY1	rattus-norvegicus	D3ZTY1	Zbtb46	D3ZTY1	0	1	Zinc finger and BTB domain-containing protein 46
 D3ZTY4	rattus-norvegicus	D3ZTY4	Adgrf4	D3ZTY4	2	7	Adhesion G protein-coupled receptor F4
@@ -1750,9 +1750,9 @@ D3ZU52	rattus-norvegicus	D3ZU52	Cops7b	D3ZU52	11	53	COP9 signalosome subunit 7B
 D3ZU54	rattus-norvegicus	D3ZU54	Denr	D3ZU54	9	158	Density-regulated protein
 D3ZU55	rattus-norvegicus	D3ZU55	Foxk1	D3ZU55	3	15	Forkhead box protein K1
 D3ZU57	rattus-norvegicus	D3ZU57	Riox1	D3ZU57	0	13	Ribosomal oxygenase 1
-D3ZU60	rattus-norvegicus	D3ZU60	Rnf216	D3ZU60	6	14	E3 ubiquitin-protein ligase RNF216
+D3ZU60	rattus-norvegicus	D3ZU60	Rnf216	D3ZU60	5	13	E3 ubiquitin-protein ligase RNF216
 D3ZU63	rattus-norvegicus	D3ZU63	Stard13	D3ZU63	4	8	StAR-related lipid transfer protein 13
-D3ZU64	rattus-norvegicus	D3ZU64	Vps37b	D3ZU64	8	28	VPS37B subunit of ESCRT-I
+D3ZU64	rattus-norvegicus	D3ZU64	Vps37b	D3ZU64	8	27	VPS37B subunit of ESCRT-I
 D3ZU83	rattus-norvegicus	D3ZU83	Ergic3	D3ZU83	2	7	Endoplasmic reticulum-Golgi intermediate compartment protein
 D3ZU84	rattus-norvegicus	D3ZU84	Stxbp5l	D3ZU84	15	52	Syntaxin binding protein 5L
 D3ZU85	rattus-norvegicus	D3ZU85	Frmd4a	D3ZU85	5	13	FERM domain containing 4A
@@ -1764,15 +1764,15 @@ D3ZUA0	rattus-norvegicus	D3ZUA0	Mthfd2l	D3ZUA0	3	6	Bifunctional methylenetetrahy
 D3ZUA2	rattus-norvegicus	D3ZUA2	Nlrp10	D3ZUA2	0	22	NACHT, LRR and PYD domains-containing protein 10
 D3ZUB0	rattus-norvegicus	D3ZUB0	Rcn1	D3ZUB0	0	10	Reticulocalbin-1
 D3ZUB4	rattus-norvegicus	D3ZUB4	Tmem14a	D3ZUB4	0	2	Transmembrane protein 14A
-D3ZUB7	rattus-norvegicus	D3ZUB7	Anapc4	D3ZUB7	13	160	Anaphase-promoting complex subunit 4
-D3ZUC1	rattus-norvegicus	D3ZUC1	Smtnl2	D3ZUC1	3	34	Smoothelin-like 2
+D3ZUB7	rattus-norvegicus	D3ZUB7	Anapc4	D3ZUB7	13	159	Anaphase-promoting complex subunit 4
+D3ZUC1	rattus-norvegicus	D3ZUC1	Smtnl2	D3ZUC1	2	33	Smoothelin-like 2
 D3ZUC2	rattus-norvegicus	D3ZUC2	Mov10	D3ZUC2	1	27	RNA helicase
 D3ZUC4	rattus-norvegicus	D3ZUC4	Aunip	D3ZUC4	0	1	Aurora kinase A- and ninein-interacting protein
 D3ZUC9	rattus-norvegicus	D3ZUC9	Oxsr1	D3ZUC9	5	24	Serine/threonine-protein kinase OSR1
 D3ZUD0	rattus-norvegicus	D3ZUD0	Ect2	D3ZUD0	3	46	Protein ECT2
 D3ZUD3	rattus-norvegicus	D3ZUD3	Wipf2	D3ZUD3	8	19	WAS/WASL interacting protein family, member 2
 D3ZUD5	rattus-norvegicus	D3ZUD5	Ofd1	D3ZUD5	3	26	Ofd1 centriole and centriolar satellite protein
-D3ZUD7	rattus-norvegicus	D3ZUD7	LOC120095010	D3ZUD7	38	431	Small ribosomal subunit protein eS19
+D3ZUD7	rattus-norvegicus	D3ZUD7	LOC120095010	D3ZUD7	38	430	Small ribosomal subunit protein eS19
 D3ZUD8	rattus-norvegicus	D3ZUD8	Tm9sf3	D3ZUD8	0	1	Transmembrane 9 superfamily member
 D3ZUE1	rattus-norvegicus	D3ZUE1	Gas2l2	D3ZUE1	0	11	GAS2-like protein 2
 D3ZUE4	rattus-norvegicus	D3ZUE4	Socs5	D3ZUE4	9	50	Suppressor of cytokine signaling 5
@@ -1786,12 +1786,12 @@ D3ZUH5	rattus-norvegicus	D3ZUH5	Prr36	D3ZUH5	1	32	Proline rich 36
 D3ZUI1	rattus-norvegicus	D3ZUI1	Apip	D3ZUI1	0	4	Methylthioribulose-1-phosphate dehydratase
 D3ZUI5	rattus-norvegicus	D3ZUI5	Cobl	D3ZUI5	7	11	Protein cordon-bleu
 D3ZUJ5	rattus-norvegicus	D3ZUJ5	Dtymk	D3ZUJ5	0	8	dTMP kinase
-D3ZUJ7	rattus-norvegicus	D3ZUJ7	Ankrd13d	D3ZUJ7	0	1	Ankyrin repeat domain 13D
+D3ZUJ7	rattus-norvegicus	D3ZUJ7	Ankrd13d	D3ZUJ7	0	0	Ankyrin repeat domain 13D
 D3ZUJ8	rattus-norvegicus	D3ZUJ8	Tmtc3	D3ZUJ8	2	30	Protein O-mannosyl-transferase TMTC3
 D3ZUJ9	rattus-norvegicus	D3ZUJ9	Snx8	D3ZUJ9	5	30	Sorting nexin-8
 D3ZUK3	rattus-norvegicus	D3ZUK3	Dlk2	D3ZUK3	0	4	Protein delta homolog 2
 D3ZUK4	rattus-norvegicus	D3ZUK4	Trim33	D3ZUK4	6	33	E3 ubiquitin-protein ligase TRIM33
-D3ZUL1	rattus-norvegicus	D3ZUL1	Ccdc124	D3ZUL1	19	314	Coiled-coil domain containing 124
+D3ZUL1	rattus-norvegicus	D3ZUL1	Ccdc124	D3ZUL1	19	312	Coiled-coil domain containing 124
 D3ZUL2	rattus-norvegicus	D3ZUL2	Mkx	D3ZUL2	0	3	Mohawk homeobox
 D3ZUL3	rattus-norvegicus	D3ZUL3	Col6a1	D3ZUL3	3	31	Collagen alpha-1(VI) chain
 D3ZUL4	rattus-norvegicus	D3ZUL4	Bcl7c	D3ZUL4	0	21	BAF chromatin remodeling complex subunit BCL7C
@@ -1801,41 +1801,41 @@ D3ZUM4	rattus-norvegicus	D3ZUM4	Glb1	D3ZUM4	0	5	Beta-galactosidase
 D3ZUN5	rattus-norvegicus	D3ZUN5	Pofut2	D3ZUN5	0	1	GDP-fucose protein O-fucosyltransferase 2
 D3ZUP1	rattus-norvegicus	D3ZUP1	Krtap10-8l1	D3ZUP1	0	5	Keratin associated protein 10-8 like 1
 D3ZUP4	rattus-norvegicus	D3ZUP4	Gpatch2l	D3ZUP4	2	15	G patch domain containing 2-like
-D3ZUP5	rattus-norvegicus	D3ZUP5	Brk1	D3ZUP5	11	40	Protein BRICK1
+D3ZUP5	rattus-norvegicus	D3ZUP5	Brk1	D3ZUP5	9	38	Protein BRICK1
 D3ZUQ0	rattus-norvegicus	D3ZUQ0	Rilpl1	D3ZUQ0	2	10	RILP-like protein 1
 D3ZUQ1	rattus-norvegicus	D3ZUQ1	Lipo1	D3ZUQ1	0	2	Lipase
 D3ZUQ2	rattus-norvegicus	D3ZUQ2	Naa10	D3ZUQ2	3	29	N-terminal amino-acid N(alpha)-acetyltransferase NatA
 D3ZUQ7	rattus-norvegicus	D3ZUQ7	Pank3	D3ZUQ7	2	4	Pantothenate kinase 3
 D3ZUR5	rattus-norvegicus	D3ZUR5	Slurp2	D3ZUR5	0	1	Secreted Ly-6/uPAR domain-containing protein 2
-D3ZUR6	rattus-norvegicus	D3ZUR6	Usp51	D3ZUR6	16	41	Ubiquitin carboxyl-terminal hydrolase
+D3ZUR6	rattus-norvegicus	D3ZUR6	Usp51	D3ZUR6	16	40	Ubiquitin carboxyl-terminal hydrolase
 D3ZUT1	rattus-norvegicus	D3ZUT1	Spock3	D3ZUT1	1	1	Testican-3
 D3ZUT9	rattus-norvegicus	D3ZUT9	Ints3	D3ZUT9	7	43	Integrator complex subunit 3
 D3ZUU5	rattus-norvegicus	D3ZUU5	Dnajb1	D3ZUU5	15	128	DnaJ heat shock protein family (Hsp40) member B1
 D3ZUV0	rattus-norvegicus	D3ZUV0	Zbed4	D3ZUV0	0	4	Zinc finger, BED-type containing 4
 D3ZUV1	rattus-norvegicus	D3ZUV1	Nipa2	D3ZUV1	0	3	NIPA magnesium transporter 2
 D3ZUV2	rattus-norvegicus	D3ZUV2	Mib1	D3ZUV2	10	305	E3 ubiquitin-protein ligase MIB1
-D3ZUV3	rattus-norvegicus	D3ZUV3	Eif2a	D3ZUV3	3	106	Eukaryotic translation initiation factor 2A
+D3ZUV3	rattus-norvegicus	D3ZUV3	Eif2a	D3ZUV3	3	105	Eukaryotic translation initiation factor 2A
 D3ZUV9	rattus-norvegicus	D3ZUV9	Cnot3	D3ZUV9	7	118	CCR4-NOT transcription complex subunit 3
 D3ZUW2	rattus-norvegicus	D3ZUW2	Accsl	D3ZUW2	1	1	1-aminocyclopropane-1-carboxylate synthase-like
-D3ZUW6	rattus-norvegicus	D3ZUW6	Ube2c	D3ZUW6	14	107	Ubiquitin-conjugating enzyme E2 C
-D3ZUW8	rattus-norvegicus	D3ZUW8	Brd1	D3ZUW8	8	21	Bromodomain containing 1
+D3ZUW6	rattus-norvegicus	D3ZUW6	Ube2c	D3ZUW6	13	106	Ubiquitin-conjugating enzyme E2 C
+D3ZUW8	rattus-norvegicus	D3ZUW8	Brd1	D3ZUW8	7	20	Bromodomain containing 1
 D3ZUX5	rattus-norvegicus	D3ZUX5	Chchd3	D3ZUX5	3	21	Coiled-coil-helix-coiled-coil-helix domain containing 3
 D3ZUX7	rattus-norvegicus	D3ZUX7	Acsf3	D3ZUX7	2	87	Malonate--CoA ligase ACSF3, mitochondrial
 D3ZUY0	rattus-norvegicus	D3ZUY0	Rdh14	D3ZUY0	0	2	Retinol dehydrogenase 14
 D3ZUY5	rattus-norvegicus	D3ZUY5	Map3k1	D3ZUY5	7	35	Mitogen-activated protein kinase kinase kinase 1
-D3ZUY8	rattus-norvegicus	D3ZUY8	Ap2a1	D3ZUY8	19	145	AP-2 complex subunit alpha
+D3ZUY8	rattus-norvegicus	D3ZUY8	Ap2a1	D3ZUY8	19	144	AP-2 complex subunit alpha
 D3ZUZ4	rattus-norvegicus	D3ZUZ4	Fam20b	D3ZUZ4	0	1	FAM20B, glycosaminoglycan xylosylkinase
 D3ZV15	rattus-norvegicus	D3ZV15	Cbl	D3ZV15	34	189	E3 ubiquitin-protein ligase CBL
 D3ZV19	rattus-norvegicus	D3ZV19	Tmem64	D3ZV19	0	1	Transmembrane protein 64
 D3ZV21	rattus-norvegicus	D3ZV21	Foxo6	D3ZV21	9	22	Forkhead box O6
 D3ZV22	rattus-norvegicus	D3ZV22	Samtor	D3ZV22	1	16	S-adenosylmethionine sensor upstream of mTORC1
 D3ZV29	rattus-norvegicus	D3ZV29	Ndufb4l1	D3ZV29	7	110	NADH dehydrogenase
-D3ZV30	rattus-norvegicus	D3ZV30	Polr3b	D3ZV30	13	308	DNA-directed RNA polymerase subunit beta
+D3ZV30	rattus-norvegicus	D3ZV30	Polr3b	D3ZV30	13	307	DNA-directed RNA polymerase subunit beta
 D3ZV31	rattus-norvegicus	D3ZV31	Zcchc4	D3ZV31	0	7	rRNA N(6)-adenosine-methyltransferase ZCCHC4
 D3ZV32	rattus-norvegicus	D3ZV32	Slc26a9	D3ZV32	1	24	Solute carrier family 26 member 9
 D3ZV37	rattus-norvegicus	D3ZV37	Cisd3	D3ZV37	1	36	CDGSH iron sulfur domain 3
-D3ZV49	rattus-norvegicus	D3ZV49	Aire	D3ZV49	17	70	Autoimmune regulator
-D3ZV50	rattus-norvegicus	D3ZV50	Rps9l1	D3ZV50	17	646	Small ribosomal subunit protein uS4
+D3ZV49	rattus-norvegicus	D3ZV49	Aire	D3ZV49	16	69	Autoimmune regulator
+D3ZV50	rattus-norvegicus	D3ZV50	Rps9l1	D3ZV50	17	645	Small ribosomal subunit protein uS4
 D3ZV54	rattus-norvegicus	D3ZV54	Pwp2	D3ZV54	8	201	Periodic tryptophan protein 2 homolog
 D3ZV56	rattus-norvegicus	D3ZV56	Rnf150	D3ZV56	0	4	RING finger protein 150
 D3ZV63	rattus-norvegicus	D3ZV63	Odr4	D3ZV63	1	1	Protein odr-4 homolog
@@ -1855,7 +1855,7 @@ D3ZVB0	rattus-norvegicus	D3ZVB0	Ap5b1	D3ZVB0	8	39	AP-5 complex subunit beta-1
 D3ZVB7	rattus-norvegicus	D3ZVB7	Ogn	D3ZVB7	4	16	Mimecan
 D3ZVB9	rattus-norvegicus	D3ZVB9	Ankrd23	D3ZVB9	0	5	Ankyrin repeat domain-containing protein 23
 D3ZVC2	rattus-norvegicus	D3ZVC2	Dcstamp	D3ZVC2	1	6	Dendrocyte expressed seven transmembrane protein
-D3ZVC4	rattus-norvegicus	D3ZVC4	Arel1	D3ZVC4	0	8	Apoptosis-resistant E3 ubiquitin protein ligase 1
+D3ZVC4	rattus-norvegicus	D3ZVC4	Arel1	D3ZVC4	0	7	Apoptosis-resistant E3 ubiquitin protein ligase 1
 D3ZVD1	rattus-norvegicus	D3ZVD1	Phc1	D3ZVD1	14	84	Polyhomeotic homolog 1
 D3ZVD3	rattus-norvegicus	D3ZVD3	Nt5c1a	D3ZVD3	0	44	5'-nucleotidase, cytosolic IA
 D3ZVD4	rattus-norvegicus	D3ZVD4	Zfp28	D3ZVD4	1	1	Zinc finger protein 28
@@ -1863,11 +1863,11 @@ D3ZVD5	rattus-norvegicus	D3ZVD5	Lrrc32	D3ZVD5	0	6	Transforming growth factor bet
 D3ZVD7	rattus-norvegicus	D3ZVD7	Kera	D3ZVD7	0	9	Keratocan
 D3ZVD8	rattus-norvegicus	D3ZVD8	Hdac6	D3ZVD8	1	124	Protein deacetylase HDAC6
 D3ZVF2	rattus-norvegicus	D3ZVF2	Zbtb21	D3ZVF2	0	1	Zinc finger and BTB domain containing 21
-D3ZVF4	rattus-norvegicus	D3ZVF4	Trappc2b	D3ZVF4	11	29	Trafficking protein particle complex subunit 2B
+D3ZVF4	rattus-norvegicus	D3ZVF4	Trappc2b	D3ZVF4	11	28	Trafficking protein particle complex subunit 2B
 D3ZVF5	rattus-norvegicus	D3ZVF5	Rpl31l9	D3ZVF5	12	250	Large ribosomal subunit protein eL31
 D3ZVG6	rattus-norvegicus	D3ZVG6	Klf14	D3ZVG6	1	3	KLF transcription factor 14
 D3ZVH0	rattus-norvegicus	D3ZVH0	Stradb	D3ZVH0	4	27	STE20-related kinase adapter protein beta
-D3ZVH2	rattus-norvegicus	D3ZVH2	Rps3l1	D3ZVH2	26	609	Small ribosomal subunit protein uS3
+D3ZVH2	rattus-norvegicus	D3ZVH2	Rps3l1	D3ZVH2	26	607	Small ribosomal subunit protein uS3
 D3ZVH4	rattus-norvegicus	D3ZVH4	Or10g3	D3ZVH4	0	3	Olfactory receptor family 10 subfamily G member 3
 D3ZVH6	rattus-norvegicus	D3ZVH6	Vps41	D3ZVH6	6	27	Vacuolar protein sorting-associated protein 41 homolog
 D3ZVI0	rattus-norvegicus	D3ZVI0	Fgfbp3	D3ZVI0	1	4	Fibroblast growth factor binding protein 3
@@ -1890,12 +1890,12 @@ D3ZVN5	rattus-norvegicus	D3ZVN5	Dnaaf9	D3ZVN5	2	17	Dynein axonemal assembly fact
 D3ZVN7	rattus-norvegicus	D3ZVN7	Ppox	D3ZVN7	0	7	Amine oxidase
 D3ZVN8	rattus-norvegicus	D3ZVN8	4933400A11Rik	D3ZVN8	7	42	F-actin-capping protein subunit alpha
 D3ZVP6	rattus-norvegicus	D3ZVP6	Ppwd1	D3ZVP6	8	69	Peptidylprolyl isomerase domain and WD repeat-containing protein 1
-D3ZVQ0	rattus-norvegicus	D3ZVQ0	Usp5	D3ZVQ0	8	33	Ubiquitin carboxyl-terminal hydrolase
+D3ZVQ0	rattus-norvegicus	D3ZVQ0	Usp5	D3ZVQ0	7	32	Ubiquitin carboxyl-terminal hydrolase
 D3ZVQ1	rattus-norvegicus	D3ZVQ1	Cep72	D3ZVQ1	3	9	Centrosomal protein of 72 kDa
 D3ZVQ3	rattus-norvegicus	D3ZVQ3	Porcn	D3ZVQ3	19	67	Protein-serine O-palmitoleoyltransferase porcupine
 D3ZVQ4	rattus-norvegicus	D3ZVQ4	Or9g20	D3ZVQ4	0	3	Olfactory receptor
 D3ZVQ8	rattus-norvegicus	D3ZVQ8	Gstm3	D3ZVQ8	12	16	Glutathione S-transferase
-D3ZVR0	rattus-norvegicus	D3ZVR0	Tubgcp4	D3ZVR0	3	40	Gamma-tubulin complex component
+D3ZVR0	rattus-norvegicus	D3ZVR0	Tubgcp4	D3ZVR0	3	38	Gamma-tubulin complex component
 D3ZVR4	rattus-norvegicus	D3ZVR4	Mplkip	D3ZVR4	0	1	M-phase specific PLK1 interacting protein
 D3ZVR7	rattus-norvegicus	D3ZVR7	Prxl2b	D3ZVR7	0	3	Prostamide/prostaglandin F synthase
 D3ZVR8	rattus-norvegicus	D3ZVR8	Ppp1r16a	D3ZVR8	4	5	Protein phosphatase 1 regulatory inhibitor subunit 16B
@@ -1904,14 +1904,14 @@ D3ZVS2	rattus-norvegicus	D3ZVS2	L2hgdh	D3ZVS2	0	1	L-2-hydroxyglutarate dehydroge
 D3ZVS5	rattus-norvegicus	D3ZVS5	Gen1	D3ZVS5	2	36	Flap endonuclease GEN homolog 1
 D3ZVS6	rattus-norvegicus	D3ZVS6	Kbtbd2	D3ZVS6	0	1	Kelch repeat and BTB domain containing 2
 D3ZVS7	rattus-norvegicus	D3ZVS7	Sass6	D3ZVS7	3	61	Spindle assembly abnormal protein 6 homolog
-D3ZVT1	rattus-norvegicus	D3ZVT1	Actr8	D3ZVT1	7	94	Actin-related protein 8
+D3ZVT1	rattus-norvegicus	D3ZVT1	Actr8	D3ZVT1	7	92	Actin-related protein 8
 D3ZVT6	rattus-norvegicus	D3ZVT6	Asb7	D3ZVT6	1	22	Ankyrin repeat and SOCS box protein 7
 D3ZVT7	rattus-norvegicus	D3ZVT7	Clca2	D3ZVT7	0	7	Calcium-activated chloride channel regulator 2
 D3ZVU1	rattus-norvegicus	D3ZVU1	Sprtn	D3ZVU1	4	16	DNA-dependent metalloprotease SPRTN
 D3ZVU2	rattus-norvegicus	D3ZVU2	Fan1	D3ZVU2	3	24	Fanconi-associated nuclease
 D3ZVU3	rattus-norvegicus	D3ZVU3	Myf5	D3ZVU3	8	23	Myogenic factor
 D3ZVU4	rattus-norvegicus	D3ZVU4	Rbks	D3ZVU4	0	6	Ribokinase
-D3ZVU7	rattus-norvegicus	D3ZVU7	Hdac1l	D3ZVU7	45	343	Histone deacetylase 1
+D3ZVU7	rattus-norvegicus	D3ZVU7	Hdac1l	D3ZVU7	45	342	Histone deacetylase 1
 D3ZVU8	rattus-norvegicus	D3ZVU8	Spsb3	D3ZVU8	4	18	SPRY domain-containing SOCS box protein 3
 D3ZVU9	rattus-norvegicus	D3ZVU9	Nat8l	D3ZVU9	0	8	N-acetylaspartate synthetase
 D3ZVV1	rattus-norvegicus	D3ZVV1	Khdc3	D3ZVV1	1	7	KH domain-containing protein 3
@@ -1937,7 +1937,7 @@ D3ZW58	rattus-norvegicus	D3ZW58	Golm2	D3ZW58	0	1	Protein GOLM2
 D3ZW59	rattus-norvegicus	D3ZW59	Itgb1bp2	D3ZW59	2	19	Integrin beta-1-binding protein 2
 D3ZW62	rattus-norvegicus	D3ZW62	Thsd1	D3ZW62	0	1	Thrombospondin type 1 domain containing 1
 D3ZW79	rattus-norvegicus	D3ZW79	Ebf4	D3ZW79	0	5	Transcription factor COE4
-D3ZW82	rattus-norvegicus	D3ZW82	Itga10	D3ZW82	7	39	Integrin subunit alpha 10
+D3ZW82	rattus-norvegicus	D3ZW82	Itga10	D3ZW82	7	37	Integrin subunit alpha 10
 D3ZW89	rattus-norvegicus	D3ZW89	Cabp5	D3ZW89	6	16	Calcium binding protein 5
 D3ZW90	rattus-norvegicus	D3ZW90	Rhobtb3	D3ZW90	4	33	Rho-related BTB domain-containing protein 3
 D3ZW91	rattus-norvegicus	D3ZW91	Poc1b	D3ZW91	4	42	POC1 centriolar protein homolog B
@@ -1957,7 +1957,7 @@ D3ZWE7	rattus-norvegicus	D3ZWE7	Hormad1	D3ZWE7	4	15	HORMA domain-containing prot
 D3ZWF2	rattus-norvegicus	D3ZWF2	Fbrs	D3ZWF2	5	11	Fibrosin
 D3ZWF3	rattus-norvegicus	D3ZWF3	Immp1l	D3ZWF3	0	10	Mitochondrial inner membrane protease subunit
 D3ZWF4	rattus-norvegicus	D3ZWF4	Prr14	D3ZWF4	0	2	Proline rich 14
-D3ZWF5	rattus-norvegicus	D3ZWF5	Eny2	D3ZWF5	6	129	Transcription and mRNA export factor ENY2
+D3ZWF5	rattus-norvegicus	D3ZWF5	Eny2	D3ZWF5	6	127	Transcription and mRNA export factor ENY2
 D3ZWF9	rattus-norvegicus	D3ZWF9	Arhgap40	D3ZWF9	0	3	Rho GTPase activating protein 40
 D3ZWG3	rattus-norvegicus	D3ZWG3	Tcl1a	D3ZWG3	0	8	T-cell leukemia/lymphoma protein 1A
 D3ZWG8	rattus-norvegicus	D3ZWG8	Cfap95	D3ZWG8	2	86	Cilia and flagella associated protein 95
@@ -1969,10 +1969,10 @@ D3ZWI8	rattus-norvegicus	D3ZWI8	Dnajb8	D3ZWI8	3	52	DnaJ heat shock protein famil
 D3ZWI9	rattus-norvegicus	D3ZWI9	Mlana	D3ZWI9	0	9	Melan-A
 D3ZWJ0	rattus-norvegicus	D3ZWJ0	Gmnn	D3ZWJ0	2	18	Geminin, DNA replication inhibitor
 D3ZWJ1	rattus-norvegicus	D3ZWJ1	Dnlz	D3ZWJ1	0	1	DNL-type zinc finger
-D3ZWK2	rattus-norvegicus	D3ZWK2	Parvg	D3ZWK2	4	46	Gamma-parvin
+D3ZWK2	rattus-norvegicus	D3ZWK2	Parvg	D3ZWK2	4	45	Gamma-parvin
 D3ZWK4	rattus-norvegicus	D3ZWK4	L3mbtl1	D3ZWK4	6	27	Lethal(3)malignant brain tumor-like protein 1
-D3ZWL0	rattus-norvegicus	D3ZWL0	Rpl32l1	D3ZWL0	20	456	Ribosomal protein L32 like 1
-D3ZWL1	rattus-norvegicus	D3ZWL1	Skil	D3ZWL1	6	23	SKI-like proto-oncogene
+D3ZWL0	rattus-norvegicus	D3ZWL0	Rpl32l1	D3ZWL0	20	455	Ribosomal protein L32 like 1
+D3ZWL1	rattus-norvegicus	D3ZWL1	Skil	D3ZWL1	6	22	SKI-like proto-oncogene
 D3ZWL5	rattus-norvegicus	D3ZWL5	Hoxb13	D3ZWL5	2	9	Homeo box B13
 D3ZWL6	rattus-norvegicus	D3ZWL6	Ahcyl2	D3ZWL6	0	7	Adenosylhomocysteinase-like 2
 D3ZWM1	rattus-norvegicus	D3ZWM1	Acod1	D3ZWM1	0	16	Cis-aconitate decarboxylase
@@ -1981,9 +1981,9 @@ D3ZWN1	rattus-norvegicus	D3ZWN1	Zpr1	D3ZWN1	3	13	Zinc finger protein ZPR1
 D3ZWN3	rattus-norvegicus	D3ZWN3	Evc2	D3ZWN3	1	2	EvC ciliary complex subunit 2
 D3ZWN6	rattus-norvegicus	D3ZWN6	Enkur	D3ZWN6	12	67	Enkurin, TRPC channel interacting protein
 D3ZWP1	rattus-norvegicus	D3ZWP1	Msc	D3ZWP1	0	3	Musculin
-D3ZWP4	rattus-norvegicus	D3ZWP4	Smtnl1	D3ZWP4	3	37	Smoothelin-like 1
+D3ZWP4	rattus-norvegicus	D3ZWP4	Smtnl1	D3ZWP4	3	35	Smoothelin-like 1
 D3ZWP8	rattus-norvegicus	D3ZWP8	Lrrc58	D3ZWP8	0	2	Leucine rich repeat containing 58
-D3ZWQ0	rattus-norvegicus	D3ZWQ0	Prrt3	D3ZWQ0	0	13	Proline-rich transmembrane protein 3
+D3ZWQ0	rattus-norvegicus	D3ZWQ0	Prrt3	D3ZWQ0	0	12	Proline-rich transmembrane protein 3
 D3ZWQ5	rattus-norvegicus	D3ZWQ5	Sncaip	D3ZWQ5	5	20	Synphilin-1
 D3ZWR3	rattus-norvegicus	D3ZWR3	Asnsd1	D3ZWR3	0	10	Asparagine synthetase domain-containing protein 1
 D3ZWR8	rattus-norvegicus	D3ZWR8	Shisa2	D3ZWR8	0	2	Shisa family member 2
@@ -1993,24 +1993,24 @@ D3ZWT9	rattus-norvegicus	D3ZWT9	CLEC6A	D3ZWT9	2	8	C-type lectin domain family 6 
 D3ZWV0	rattus-norvegicus	D3ZWV0	Rarg	D3ZWV0	15	23	Retinoic acid receptor, gamma
 D3ZWV2	rattus-norvegicus	D3ZWV2	LOC120101714	D3ZWV2	0	34	glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)
 D3ZWW3	rattus-norvegicus	D3ZWW3	Rasal3	D3ZWW3	5	13	RAS protein activator like 3
-D3ZWX4	rattus-norvegicus	D3ZWX4	Nckipsd	D3ZWX4	7	93	NCK interacting protein with SH3 domain
+D3ZWX4	rattus-norvegicus	D3ZWX4	Nckipsd	D3ZWX4	7	91	NCK interacting protein with SH3 domain
 D3ZWX6	rattus-norvegicus	D3ZWX6	Lrrc30	D3ZWX6	0	2	Leucine-rich repeat-containing protein 30
 D3ZWY4	rattus-norvegicus	D3ZWY4	C10h17orf58	D3ZWY4	0	16	Similar to human chromosome 17 open reading frame 58
 D3ZWZ1	rattus-norvegicus	D3ZWZ1	Itgax	D3ZWZ1	17	68	Integrin subunit alpha X
 D3ZWZ6	rattus-norvegicus	D3ZWZ6	Igf2bp2	D3ZWZ6	0	34	Insulin-like growth factor 2 mRNA-binding protein 2
 D3ZWZ9	rattus-norvegicus	D3ZWZ9	Gpr107	D3ZWZ9	0	1	Protein GPR107
-D3ZX01	rattus-norvegicus	D3ZX01	Rps4x-ps13	D3ZX01	21	594	Small ribosomal subunit protein eS4
+D3ZX01	rattus-norvegicus	D3ZX01	Rps4x-ps13	D3ZX01	21	593	Small ribosomal subunit protein eS4
 D3ZX02	rattus-norvegicus	D3ZX02	Fscn2	D3ZX02	0	11	Fascin
 D3ZX03	rattus-norvegicus	D3ZX03	Faap100	D3ZX03	2	99	FA core complex associated protein 100
 D3ZX04	rattus-norvegicus	D3ZX04	Abcc10	D3ZX04	0	9	ATP-binding cassette sub-family C member 10
-D3ZX08	rattus-norvegicus	D3ZX08	Aars2	D3ZX08	1	35	Alanine--tRNA ligase, mitochondrial
+D3ZX08	rattus-norvegicus	D3ZX08	Aars2	D3ZX08	1	34	Alanine--tRNA ligase, mitochondrial
 D3ZX15	rattus-norvegicus	D3ZX15	Patz1	D3ZX15	1	3	BTB/POZ domain zinc finger transcription factor
 D3ZX21	rattus-norvegicus	D3ZX21	Ap4e1	D3ZX21	37	78	AP-4 complex subunit epsilon
 D3ZX30	rattus-norvegicus	D3ZX30	Dennd2c	D3ZX30	1	5	DENN domain containing 2C
 D3ZX31	rattus-norvegicus	D3ZX31	B3gnt3	D3ZX31	0	10	Hexosyltransferase
 D3ZX38	rattus-norvegicus	D3ZX38	Pfdn1	D3ZX38	2	20	Prefoldin subunit 1
 D3ZX40	rattus-norvegicus	D3ZX40	Ripor3	D3ZX40	1	16	RIPOR family member 3
-D3ZX41	rattus-norvegicus	D3ZX41	Fpr2l1	D3ZX41	4	8	Formyl peptide receptor 2 like 1
+D3ZX41	rattus-norvegicus	D3ZX41	Fpr2l1	D3ZX41	4	7	Formyl peptide receptor 2 like 1
 D3ZX42	rattus-norvegicus	D3ZX42	Rabgap1	D3ZX42	7	11	Rab GTPase-activating protein 1
 D3ZX44	rattus-norvegicus	D3ZX44	Best4	D3ZX44	0	2	Bestrophin
 D3ZX48	rattus-norvegicus	D3ZX48	Lonrf2	D3ZX48	3	15	LON peptidase N-terminal domain and ring finger 2
@@ -2042,13 +2042,13 @@ D3ZXI0	rattus-norvegicus	D3ZXI0	Pycr1	D3ZXI0	3	10	Pyrroline-5-carboxylate reduct
 D3ZXI2	rattus-norvegicus	D3ZXI2	Npm1	D3ZXI2	0	22	Nucleophosmin
 D3ZXI3	rattus-norvegicus	D3ZXI3	Notum	D3ZXI3	0	1	NOTUM, palmitoleoyl-protein carboxylesterase
 D3ZXJ0	rattus-norvegicus	D3ZXJ0	Mmp17	D3ZXJ0	1	3	Matrix metalloproteinase-17
-D3ZXJ5	rattus-norvegicus	D3ZXJ5	Efl1	D3ZXJ5	14	427	Elongation factor-like GTPase 1
+D3ZXJ5	rattus-norvegicus	D3ZXJ5	Efl1	D3ZXJ5	14	426	Elongation factor-like GTPase 1
 D3ZXK4	rattus-norvegicus	D3ZXK4	Abhd11	D3ZXK4	0	7	sn-1-specific diacylglycerol lipase ABHD11
 D3ZXK7	rattus-norvegicus	D3ZXK7	Rnf123	D3ZXK7	0	3	E3 ubiquitin-protein ligase RNF123
 D3ZXL0	rattus-norvegicus	D3ZXL0	Slc26a10	D3ZXL0	0	22	Solute carrier family 26, member 10
-D3ZXL1	rattus-norvegicus	D3ZXL1	Arih1	D3ZXL1	12	34	E3 ubiquitin-protein ligase ARIH1
+D3ZXL1	rattus-norvegicus	D3ZXL1	Arih1	D3ZXL1	11	33	E3 ubiquitin-protein ligase ARIH1
 D3ZXL5	rattus-norvegicus	D3ZXL5	Ncbp3	D3ZXL5	4	22	Nuclear cap-binding protein subunit 3
-D3ZXM0	rattus-norvegicus	D3ZXM0	Rnf19a	D3ZXM0	2	4	RBR-type E3 ubiquitin transferase
+D3ZXM0	rattus-norvegicus	D3ZXM0	Rnf19a	D3ZXM0	1	3	RBR-type E3 ubiquitin transferase
 D3ZXM1	rattus-norvegicus	D3ZXM1	Adamts15	D3ZXM1	0	1	ADAM metallopeptidase with thrombospondin type 1 motif, 15
 D3ZXM2	rattus-norvegicus	D3ZXM2	Rad9a	D3ZXM2	13	55	Cell cycle checkpoint control protein
 D3ZXM4	rattus-norvegicus	D3ZXM4	Evi5l	D3ZXM4	4	4	Ecotropic viral integration site 5-like
@@ -2067,7 +2067,7 @@ D3ZXU3	rattus-norvegicus	D3ZXU3	Ceacam18	D3ZXU3	0	1	CEA cell adhesion molecule 1
 D3ZXU4	rattus-norvegicus	D3ZXU4	Prss42	D3ZXU4	0	2	Serine protease 42
 D3ZXW4	rattus-norvegicus	D3ZXW4	Gcm2	D3ZXW4	0	2	Glial cells missing transcription factor 2
 D3ZXW5	rattus-norvegicus	D3ZXW5	Aadacl2l	D3ZXW5	0	31	Arylacetamide deacetylase-like 2 like
-D3ZXX8	rattus-norvegicus	D3ZXX8	Ndufa4l2	D3ZXX8	7	40	NDUFA4, mitochondrial complex associated like 2
+D3ZXX8	rattus-norvegicus	D3ZXX8	Ndufa4l2	D3ZXX8	7	39	NDUFA4, mitochondrial complex associated like 2
 D3ZXY2	rattus-norvegicus	D3ZXY2	Pdzd8	D3ZXY2	1	2	PDZ domain-containing protein 8
 D3ZXY4	rattus-norvegicus	D3ZXY4	Aldh8a1	D3ZXY4	0	3	2-aminomuconic semialdehyde dehydrogenase
 D3ZY07	rattus-norvegicus	D3ZY07	Plk5	D3ZY07	2	30	Serine/threonine-protein kinase PLK
@@ -2083,8 +2083,8 @@ D3ZY38	rattus-norvegicus	D3ZY38	Fam222a	D3ZY38	0	3	Family with sequence similari
 D3ZY39	rattus-norvegicus	D3ZY39	Rrp1b	D3ZY39	15	177	Ribosomal RNA processing 1B
 D3ZY41	rattus-norvegicus	D3ZY41	Mkrn3	D3ZY41	0	1	RING-type E3 ubiquitin transferase
 D3ZY42	rattus-norvegicus	D3ZY42	Tchp	D3ZY42	0	51	Trichoplein keratin filament-binding protein
-D3ZY44	rattus-norvegicus	D3ZY44	Mrps2	D3ZY44	39	612	Small ribosomal subunit protein uS2m
-D3ZY47	rattus-norvegicus	D3ZY47	C19h1orf198	D3ZY47	6	134	Similar to human chromosome 1 open reading frame 198
+D3ZY44	rattus-norvegicus	D3ZY44	Mrps2	D3ZY44	39	611	Small ribosomal subunit protein uS2m
+D3ZY47	rattus-norvegicus	D3ZY47	C19h1orf198	D3ZY47	6	133	Similar to human chromosome 1 open reading frame 198
 D3ZY49	rattus-norvegicus	D3ZY49	Sppl3	D3ZY49	0	1	Signal peptide peptidase like 3
 D3ZY50	rattus-norvegicus	D3ZY50	Atpaf1	D3ZY50	2	7	ATP synthase mitochondrial F1 complex assembly factor 1
 D3ZY51	rattus-norvegicus	D3ZY51	Pkp1	D3ZY51	24	41	Plakophilin-1
@@ -2119,10 +2119,10 @@ D3ZYI0	rattus-norvegicus	D3ZYI0	Gca	D3ZYI0	1	13	Grancalcin
 D3ZYI6	rattus-norvegicus	D3ZYI6	Zfp846	D3ZYI6	0	1	Zinc finger protein 846
 D3ZYJ2	rattus-norvegicus	D3ZYJ2	Slc51b	D3ZYJ2	1	1	SLC51 subunit beta
 D3ZYJ5	rattus-norvegicus	D3ZYJ5	Gramd1b	D3ZYJ5	0	5	GRAM domain containing 1B
-D3ZYK3	rattus-norvegicus	D3ZYK3	Kcnd1	D3ZYK3	14	106	A-type voltage-gated potassium channel KCND1
-D3ZYK5	rattus-norvegicus	D3ZYK5	Rps11l1	D3ZYK5	33	699	Ribosomal protein S11 like 1
+D3ZYK3	rattus-norvegicus	D3ZYK3	Kcnd1	D3ZYK3	14	105	A-type voltage-gated potassium channel KCND1
+D3ZYK5	rattus-norvegicus	D3ZYK5	Rps11l1	D3ZYK5	33	698	Ribosomal protein S11 like 1
 D3ZYK9	rattus-norvegicus	D3ZYK9	Npm3	D3ZYK9	1	5	Nucleoplasmin-3
-D3ZYL0	rattus-norvegicus	D3ZYL0	Ripk1	D3ZYL0	7	123	Receptor-interacting serine/threonine-protein kinase 1
+D3ZYL0	rattus-norvegicus	D3ZYL0	Ripk1	D3ZYL0	7	122	Receptor-interacting serine/threonine-protein kinase 1
 D3ZYL2	rattus-norvegicus	D3ZYL2	9330159F19Rikl	D3ZYL2	1	1	Kiaa0408-like
 D3ZYM3	rattus-norvegicus	D3ZYM3	Enox1	D3ZYM3	0	1	Ecto-NOX disulfide-thiol exchanger 1
 D3ZYM4	rattus-norvegicus	D3ZYM4	Mst1r	D3ZYM4	12	299	Macrophage-stimulating protein receptor
@@ -2145,7 +2145,7 @@ D3ZYR4	rattus-norvegicus	D3ZYR4	Sema4d	D3ZYR4	0	19	Semaphorin-4D
 D3ZYS1	rattus-norvegicus	D3ZYS1	Purg	D3ZYS1	0	15	Purine-rich element binding protein G
 D3ZYS4	rattus-norvegicus	D3ZYS4	Fign	D3ZYS4	0	33	Fidgetin
 D3ZYS7	rattus-norvegicus	D3ZYS7	G3bp1	D3ZYS7	15	63	Ras GTPase-activating protein-binding protein 1
-D3ZYT2	rattus-norvegicus	D3ZYT2	Mrps5	D3ZYT2	19	473	Small ribosomal subunit protein uS5m
+D3ZYT2	rattus-norvegicus	D3ZYT2	Mrps5	D3ZYT2	19	472	Small ribosomal subunit protein uS5m
 D3ZYT5	rattus-norvegicus	D3ZYT5	Myt1	D3ZYT5	0	1	Myelin transcription factor 1
 D3ZYT6	rattus-norvegicus	D3ZYT6	Treml1	D3ZYT6	1	14	Triggering receptor expressed on myeloid cells-like 1
 D3ZYT9	rattus-norvegicus	D3ZYT9	Fbxl8	D3ZYT9	3	15	F-box/LRR-repeat protein 8
@@ -2153,7 +2153,7 @@ D3ZYU1	rattus-norvegicus	D3ZYU1	Wdr93	D3ZYU1	3	55	WD repeat domain 93
 D3ZYV4	rattus-norvegicus	D3ZYV4	Dmpk	D3ZYV4	2	58	Myotonin-protein kinase
 D3ZYW7	rattus-norvegicus	D3ZYW7	Fxn	D3ZYW7	9	64	Frataxin, mitochondrial
 D3ZYX8	rattus-norvegicus	D3ZYX8	Cox7a2l	D3ZYX8	10	53	Cytochrome c oxidase subunit 7A2 like
-D3ZYY5	rattus-norvegicus	D3ZYY5	Rnf144a	D3ZYY5	1	3	E3 ubiquitin-protein ligase RNF144A
+D3ZYY5	rattus-norvegicus	D3ZYY5	Rnf144a	D3ZYY5	1	2	E3 ubiquitin-protein ligase RNF144A
 D3ZYY8	rattus-norvegicus	D3ZYY8	Pigb	D3ZYY8	0	1	Mannosyltransferase
 D3ZZ04	rattus-norvegicus	D3ZZ04	Mettl9	D3ZZ04	0	1	Methyltransferase 9, His-X-His N1(pi)-histidine
 D3ZZ05	rattus-norvegicus	D3ZZ05	Cyb5rl	D3ZZ05	1	13	NADH-cytochrome b5 reductase-like
@@ -2176,17 +2176,17 @@ D3ZZ89	rattus-norvegicus	D3ZZ89	Trem2	D3ZZ89	3	46	Triggering receptor expressed 
 D3ZZ94	rattus-norvegicus	D3ZZ94	Parp10	D3ZZ94	0	2	Poly
 D3ZZ95	rattus-norvegicus	D3ZZ95	Rpl36l3	D3ZZ95	34	335	60S ribosomal protein L36
 D3ZZ97	rattus-norvegicus	D3ZZ97	Ror1	D3ZZ97	2	19	Receptor tyrosine kinase-like orphan receptor 1
-D3ZZA1	rattus-norvegicus	D3ZZA1	Ftsj1	D3ZZA1	7	178	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase
+D3ZZA1	rattus-norvegicus	D3ZZA1	Ftsj1	D3ZZA1	7	177	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase
 D3ZZA8	rattus-norvegicus	D3ZZA8	Sec24a	D3ZZA8	11	65	SEC24 homolog A, COPII coat complex component
 D3ZZB2	rattus-norvegicus	D3ZZB2	Pex1	D3ZZB2	4	45	Peroxisomal ATPase PEX1
 D3ZZC1	rattus-norvegicus	D3ZZC1	Txndc5	D3ZZC1	2	42	Thioredoxin domain-containing protein 5
 D3ZZC3	rattus-norvegicus	D3ZZC3	Klhl22	D3ZZC3	22	57	Kelch-like protein 22
-D3ZZC5	rattus-norvegicus	D3ZZC5	Tradd	D3ZZC5	12	85	Tumor necrosis factor receptor type 1-associated DEATH domain protein
+D3ZZC5	rattus-norvegicus	D3ZZC5	Tradd	D3ZZC5	12	84	Tumor necrosis factor receptor type 1-associated DEATH domain protein
 D3ZZC7	rattus-norvegicus	D3ZZC7	Rps15al2	D3ZZC7	22	490	Small ribosomal subunit protein uS8
 D3ZZE0	rattus-norvegicus	D3ZZE0	Topors	D3ZZE0	3	18	E3 ubiquitin-protein ligase Topors
 D3ZZE3	rattus-norvegicus	D3ZZE3	Armh3	D3ZZE3	2	2	Armadillo-like helical domain containing 3
-D3ZZH2	rattus-norvegicus	D3ZZH2	Rpl38l3	D3ZZH2	36	378	Large ribosomal subunit protein eL38
-D3ZZH6	rattus-norvegicus	D3ZZH6	Map3k5	D3ZZH6	4	48	mitogen-activated protein kinase kinase kinase
+D3ZZH2	rattus-norvegicus	D3ZZH2	Rpl38l3	D3ZZH2	36	377	Large ribosomal subunit protein eL38
+D3ZZH6	rattus-norvegicus	D3ZZH6	Map3k5	D3ZZH6	4	47	mitogen-activated protein kinase kinase kinase
 D3ZZH7	rattus-norvegicus	D3ZZH7	Rsbn1l	D3ZZH7	0	2	Round spermatid basic protein 1-like
 D3ZZH9	rattus-norvegicus	D3ZZH9	LOC134480843	D3ZZH9	3	122	Large ribosomal subunit protein eL21
 D3ZZJ7	rattus-norvegicus	D3ZZJ7	Dcp1b	D3ZZJ7	14	49	5'-(N(7)-methylguanosine 5'-triphospho)-
@@ -2203,7 +2203,7 @@ D3ZZM3	rattus-norvegicus	D3ZZM3	Cog4	D3ZZM3	15	47	Conserved oligomeric Golgi com
 D3ZZM7	rattus-norvegicus	D3ZZM7	Slco5a1	D3ZZM7	0	13	Solute carrier organic anion transporter family member
 D3ZZN2	rattus-norvegicus	D3ZZN2	Rasgrp3	D3ZZN2	14	42	RAS guanyl releasing protein 3
 D3ZZN3	rattus-norvegicus	D3ZZN3	Acss1	D3ZZN3	0	10	Acetyl-coenzyme A synthetase
-D3ZZN4	rattus-norvegicus	D3ZZN4	Rpl35al5	D3ZZN4	21	385	Large ribosomal subunit protein eL33
+D3ZZN4	rattus-norvegicus	D3ZZN4	Rpl35al5	D3ZZN4	21	384	Large ribosomal subunit protein eL33
 D3ZZN9	rattus-norvegicus	D3ZZN9	Syde1	D3ZZN9	1	9	Rho GTPase-activating protein SYDE1
 D3ZZP2	rattus-norvegicus	D3ZZP2	Rab39a	D3ZZP2	2	18	small monomeric GTPase
 D3ZZP4	rattus-norvegicus	D3ZZP4	Prima1	D3ZZP4	1	3	Proline-rich membrane anchor 1
@@ -2211,12 +2211,12 @@ D3ZZQ5	rattus-norvegicus	D3ZZQ5	Naa40	D3ZZQ5	0	5	N-alpha-acetyltransferase 40
 D3ZZQ6	rattus-norvegicus	D3ZZQ6	Ints4	D3ZZQ6	7	52	Integrator complex subunit 4
 D3ZZR4	rattus-norvegicus	D3ZZR4	Fem1c	D3ZZR4	5	37	Protein fem-1 homolog C
 D3ZZR5	rattus-norvegicus	D3ZZR5	Snrpa1	D3ZZR5	26	172	Small nuclear ribonucleoprotein polypeptide A
-D3ZZR6	rattus-norvegicus	D3ZZR6	Kcnv2	D3ZZR6	6	79	Potassium voltage-gated channel subfamily V member 2
+D3ZZR6	rattus-norvegicus	D3ZZR6	Kcnv2	D3ZZR6	6	78	Potassium voltage-gated channel subfamily V member 2
 D3ZZR7	rattus-norvegicus	D3ZZR7	Ctag2	D3ZZR7	3	8	L antigen family member 3
 D3ZZR8	rattus-norvegicus	D3ZZR8	Krtap3-1	D3ZZR8	0	5	Keratin associated protein 3-1
 D3ZZR9	rattus-norvegicus	D3ZZR9	Fkbp2	D3ZZR9	0	11	peptidylprolyl isomerase
 D3ZZS5	rattus-norvegicus	D3ZZS5	Tmem95	D3ZZS5	0	3	Transmembrane protein 95
-D3ZZS8	rattus-norvegicus	D3ZZS8	Atp6v1b1	D3ZZS8	4	60	Vacuolar proton pump subunit B
+D3ZZS8	rattus-norvegicus	D3ZZS8	Atp6v1b1	D3ZZS8	4	59	Vacuolar proton pump subunit B
 D3ZZT6	rattus-norvegicus	D3ZZT6	Tsen54	D3ZZT6	5	29	tRNA splicing endonuclease subunit 54
 D3ZZT7	rattus-norvegicus	D3ZZT7	Pp2d1	D3ZZT7	0	24	Protein phosphatase 2C-like domain containing 1
 D3ZZU7	rattus-norvegicus	D3ZZU7	Pigf	D3ZZU7	3	12	Phosphatidylinositol glycan anchor biosynthesis, class F
@@ -2228,6 +2228,6 @@ D3ZZX4	rattus-norvegicus	D3ZZX4	Cyp2ab1	D3ZZX4	0	1	unspecific monooxygenase
 D3ZZX9	rattus-norvegicus	D3ZZX9	Sfxn4	D3ZZX9	0	1	Sideroflexin 4
 D3ZZY0	rattus-norvegicus	D3ZZY0	Klk7	D3ZZY0	0	3	Kallikrein-related peptidase 7
 D3ZZY2	rattus-norvegicus	D3ZZY2	Utp14a	D3ZZY2	39	205	UTP14A small subunit processome component
-D3ZZY7	rattus-norvegicus	D3ZZY7	Kansl1l	D3ZZY7	16	41	KAT8 regulatory NSL complex subunit 1-like
+D3ZZY7	rattus-norvegicus	D3ZZY7	Kansl1l	D3ZZY7	16	39	KAT8 regulatory NSL complex subunit 1-like
 D3ZZZ5	rattus-norvegicus	D3ZZZ5	Ppcdc	D3ZZZ5	1	1	Phosphopantothenoylcysteine decarboxylase
 D3ZZZ9	rattus-norvegicus	D3ZZZ9	Ctnnd1	D3ZZZ9	35	109	Catenin delta 1

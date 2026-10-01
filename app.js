@@ -605,6 +605,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
           const tags = part.TS && H.batch != null ? part.TS.runSets.get(+r[H.batch]) || [] : null;   // the run's thematic sets
           if (setId && !(tags && tags.some((t) => t.id === setId))) continue;
           const ps = primarySet(tags), qc = own(qi ? a : b), pc = own(qi ? b : a), key = keyOf(pc), set = ps ? ps.short : H.set != null ? own(r[H.set]) : '';
+          if (/^afdb-het-/.test(sp.dsIds[part.di] || '') && !sp.byKey.get(key)) continue;   // an AFDB pair with another species' protein: left out, as the species index leaves it out
           const rid = part.di + '|' + nm + (H.batch != null ? '|' + r[H.batch] : '');
           if (!runs.has(rid)) runs.set(rid, { id: rid, di: part.di, qi, key, qc, pc, set, tags: tags ? tags.map((t) => t.id) : [] });
           if (set && !sets.includes(set)) sets.push(set);
@@ -1157,9 +1158,10 @@ async function fillThemes() {   // home: each theme's species and totals, from i
 }
 function dsCard(d) {
   const live = d.status === 'live', spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
-  const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : 'Planned'}</span>
-    <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
-    <div class="sp">${esc(spx ? spx.name : d.species)}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
+  const rec = d.status === 'record' && d.zip && d.zip.record;   // in the Zenodo record only: its proteins are mostly other species' partners, so no species page
+  const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : d.status === 'record' ? 'Zenodo record' : 'Planned'}</span>
+    <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : rec ? `<a href="${esc(d.zip.record)}" target="_blank" rel="noopener" title="in the LIVIA Atlas record on Zenodo; most of its proteins are other species' partners, so the Atlas has no page for it">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
+    <div class="sp">${esc(spx ? spx.name : d.speciesName || d.species || '')}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
   const src = d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source);   // every paper reference links to the paper
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
     <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div></div>`;
