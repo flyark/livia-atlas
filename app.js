@@ -94,6 +94,7 @@ const REF = {
   molstar: ['Sehnal et al. 2021', '10.1093/nar/gkab314'], d3: ['Bostock et al. 2011', '10.1109/TVCG.2011.185'],
   leiden: ['Traag et al. 2019', '10.1038/s41598-019-41695-z'], zenodo: ['Zenodo', '10.25495/7GXK-RD71'],
   schmid2025: ['Schmid et al. 2025', '10.1101/2025.11.10.687652'], kim2025: ['Kim et al. 2025', '10.1101/2025.10.10.681672'],
+  han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
 
@@ -1319,14 +1320,15 @@ async function viewAbout() {
   const SRC = { 'human-predictomes': ['schmid2025', 'Schmid, E. W. et al. (2025). Proteome-wide in silico screening for human protein-protein interactions. <i>bioRxiv</i>.'],
     'human-kinase-tf': ['kim2025', 'Kim, A.-R. et al. (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. <i>bioRxiv</i>.'],
     flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'] };
+  const HAN = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>.'];   // every AFDB heterodimer screen
   const kk = 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>. The predictions are in the LIVIA Atlas record on Zenodo, cited above.';
   const groups = new Map();
   for (const d of (reg.datasets || []).filter((x) => x.status === 'live')) {
-    const [k, text] = SRC[d.id] || (/kinase-kinase$/.test(d.id) ? ['livia', kk] : [null, `${esc(d.source || '')}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`]);
+    const [k, text] = SRC[d.id] || (/^afdb-het-/.test(d.id) ? HAN : /kinase-kinase$/.test(d.id) ? ['livia', kk] : [null, `${esc(d.source || '')}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`]);
     const spx = (reg.species || []).find((x) => x.id === d.species), g = groups.get(k || d.id) || { k, text, short: d.short, titles: [], sps: [] };
     g.titles.push(d.title); g.sps.push(spx ? (/^[A-Z]\. /.test(spx.label) ? spx.label : spx.label.toLowerCase()) : d.species); groups.set(k || d.id, g); }
   const andJoin = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
-  const screenList = [...groups.values()].map((g) => { const t = `<b>${esc(g.titles.length > 1 ? `${g.short} screens (${andJoin(g.sps)})` : g.titles[0])}</b>: ${g.text}`;
+  const screenList = [...groups.values()].map((g) => { const t = `<b>${esc(g.k === 'han2026' ? 'AFDB heterodimer screens, one per species' : g.titles.length > 1 ? `${g.short} screens (${andJoin(g.sps)})` : g.titles[0])}</b>: ${g.text}`;
     return g.k ? ref(g.k, t) : `<li>${t}</li>`; }).join('');
   app.innerHTML = `<div class="reading about"><div class="crumbs"><a href="#/">Atlas</a> / <a href="#/about">About</a></div>
     <div class="card" style="margin-top:6px"><h2>What this is</h2>
@@ -1929,7 +1931,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="card" id="c-pt"><div class="card-head"><h2>Partners <span class="muted" id="pt-note"></span></h2>
       <div class="controls" style="margin:0"><select id="pt-src" aria-label="Which screens"><option value="0">all screens</option>${sp.dsIds.map((_, di) => (P.src & (1 << di) ? `<option value="${1 << di}">${esc(sp.dsShort[di])}</option>` : '')).join('')}</select>
         <select id="pt-band" aria-label="Which partners, by FPR band"><option value="10">past 10% FPR (iLIS ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ${CUT[1]})</option><option value="0">all predicted</option></select>
-        <input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
+        <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>`;
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
@@ -2652,11 +2654,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (VX) T.sort = 'm:iLIS';
   // every other protein: the same layout, each score from the partner's best model (highest iLIS) as lis.py wrote it, – where its screen
   // has no such column; 3D for the AFDB pairs the Atlas indexes (past 10% FPR), read from the release archive at EBI
-  const BCOL = VMCOL.filter((k) => k !== 'iLIS'), SRC = !VX && (SETS || (sp.manifest.datasets || []).length > 1);
+  const BCOL = VMCOL.filter((k) => k !== 'iLIS'), SRC0 = !VX && (SETS || (sp.manifest.datasets || []).length > 1);
+  const showSrc = () => SRC0 && !!T.showSrc;   // the Source column is hidden until asked for (several screens make it wide)
   const AX = !VX && sp.reg && sp.reg.structs ? new Map() : null;
   if (AX) afdbPartnerRows(sp, P.i, B.partners).then((m) => { if (gone()) return; for (const [j, x] of m) AX.set(j, x); drawTable(); });
-  const cols = VX ? [['gene', 'Partner'], ['c', 'Cluster'], ['pair', 'Pair'], ['d3', '3D'], ...VMCOL.map((k) => ['m:' + k, k]), ['contacts', 'Contacts']]
-    : [['gene', 'Partner'], ['c', 'Cluster'], ...(SRC ? [['src', 'Source']] : []), ['pair', 'Pair'], ['d3', '3D'], ['best', ONE ? 'iLIS' : 'iLIS best'], ...(ONE ? [] : [['avg', 'iLIS avg']]),
+  const colsNow = () => VX ? [['gene', 'Partner'], ['c', 'Cluster'], ['pair', 'Pair'], ['d3', '3D'], ...VMCOL.map((k) => ['m:' + k, k]), ['contacts', 'Contacts']]
+    : [['gene', 'Partner'], ['c', 'Cluster'], ...(showSrc() ? [['src', 'Source']] : []), ['pair', 'Pair'], ['d3', '3D'], ['best', ONE ? 'iLIS' : 'iLIS best'], ...(ONE ? [] : [['avg', 'iLIS avg']]),
       ...BCOL.map((k) => ['b:' + k, k]), ['contacts', 'Contacts'], ...(ONE ? [] : [['pass', 'Models past']])];
   function drawTable() {
     let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length, ...(VX ? (() => { const x = r && VX.get(r.i), o = { vx: x };
@@ -2669,12 +2672,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const per = 40, pages = Math.max(1, Math.ceil(list.length / per)); T.page = Math.min(T.page, pages - 1);
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
     $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${KB ? ` · reported in BioGRID ${esc(KB.release)}: <span class="kb-mark kb-p">physical</span> <span class="kb-mark kb-g">genetic</span> <span class="kb-mark kb-p kb-g">both</span>` : ''}`;
+    const cols = colsNow();
     $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${(['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) || c.startsWith('m:') || c.startsWith('b:')) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
       const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
       const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best);   // one isoform of the partner: its models' best and average, ipTM best, contacts
         return `<tr class="iso-sub"><td class="g">${esc(x.label)}</td><td>${c ? `<span class="mdot" style="background:${clusterColor(c, k)}"></span>${clusterLabel(c, true)}` : '<span class="muted">—</span>'}</td>
-          ${SRC ? '<td></td>' : ''}<td class="nm" colspan="2">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND_TXT[bb]};font-weight:${BAND_W[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
+          ${showSrc() ? '<td></td>' : ''}<td class="nm" colspan="2">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND_TXT[bb]};font-weight:${BAND_W[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
           ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td>`}${BCOL.map((kk) => (kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>` : '<td></td>')).join('')}
           <td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
       if (VX) { const x = p.vx, href = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`, kb = kbOf(p.id);
@@ -2692,7 +2696,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const href = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`, kb = kbOf(p.id), ax = p.ax;
       return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${p.id}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ` title="${esc(p.name)}"`}>${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
-        ${SRC ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
+        ${showSrc() ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
         <td><a href="${href}" title="interaction residues">residues</a></td>
         <td>${ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`
           : `<span class="muted" title="${AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'}">–</span>`}</td>
@@ -2712,6 +2716,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (SETS) $('#pt-src').innerHTML = `<option value="">all categories</option>${SETS.map((x) => `<option>${esc(x)}</option>`).join('')}`;   // one screen: filter by its categories
   $('#pt-src').onchange = (e) => { T.src = SETS ? e.target.value : +e.target.value; T.page = 0; drawTable(); };
   $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; drawTable(); };
+  $('#pt-showsrc-wrap').hidden = !SRC0; $('#pt-showsrc').onchange = (e) => { T.showSrc = e.target.checked; drawTable(); };
 
   /* network: edge color = what BioGRID reports for the pair, edge width = average iLIS */
   const netBox = $('#net');
