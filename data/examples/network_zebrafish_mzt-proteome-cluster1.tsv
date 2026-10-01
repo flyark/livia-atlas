@@ -1,0 +1,149 @@
+# Proteins of expression cluster 1 (abundance rising steadily from the 64-cell to the 50%-epiboly stage) among proteins changing across the maternal-to-zygotic transition in whole zebrafish embryos (TMT quantitative proteomics, RPLC- and CZE-MS/MS)
+# Fang F, Chen D, Basharat AR, et al. 2024. Quantitative proteomics reveals the dynamic proteome landscape of zebrafish embryos during the maternal-to-zygotic transition. iScience 27:109944. https://doi.org/10.1016/j.isci.2024.109944
+# Source: mmc4.xlsx (Table S3), sheet "Sheet1" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11111832/supplementaryFiles)
+# Cutoff: the paper's differentially expressed proteins (maSigPro; absolute log2 fold change > 0.2 between any two stages, FDR-adjusted p < 0.05; 694 proteins in six clusters); all 143 proteins of cluster 1 kept; values are log2 ratios normalized to the 64-cell stage (2 hpf), as published; gene names as given in the table (UniProt gene-name list)
+# Licensed CC BY 4.0
+gene	uniprot	Log2Ratio Int5.25hpf/Int2hpf (50% epiboly)	Log2Ratio Int4.3hpf/Int2hpf (Dome stage)	description	protein	cluster
+atxn1b si:ch211-125a6.1 atxn1a	Q1L966	1.888	0.928	Ataxin 1a (Ataxin 1b) (ataxin-1) (ataxin-1 isoform X1)	Q1L966	1
+zgc:103764 hint1 so:0001217 zgc:103764	Q642J0	1.661	0.7014	Histidine triad Nucleotide-binding protein 1 (Zgc:103764) (Zgc:103764 protein)	Q642J0	1
+plagl2 so:0001217	B3DK35	1.574	0.8854	Pleiomorphic adenoma gene-like 2 (zinc finger protein PLAGL2 isoform X1)	B3DK35	1
+zgc:171657 mmaa	B8A4L3	1.358	0.8608	Metabolism of cobalamin-associated A (methylmalonic aciduria type A protein, mitochondrial isoform X1)	B8A4L3	1
+abca3b		1.072	0.6982	ATP-binding cassette, sub-family A (ABC1), member 3b	A0A0R4IUM5	1
+hnrnpa0b	A0AB32T746	0.9373	0.2747	Heterogeneous nuclear ribonucleoprotein A0b	F1QTL9	1
+ndufab1a		0.9066	0.3065	Acyl carrier protein	F1R611	1
+hnrnpua	E7F3J2	0.8939	0.3877	Heterogeneous nuclear ribonucleoprotein Ua	E7F3J2	1
+si:ch211-113a14.11	X1WDH8	0.8803	0.3502	Si:ch211-113a14.11	R4GE02	1
+loc100334800	A0A2R8PYX8	0.8117	0.4983	Microfibril-associated glycoprotein 4-like	A0A2R8QAE1	1
+mospd1 wu:fc26f10 zgc:56336 mospd1 so:0001217		0.8103	0.5604	Motile sperm domain-containing protein 1	Q7ZUX7	1
+glb1	A0A8M2B6W2	0.7783	0.2552	Beta-galactosidase (EC 3.2.1.23)	A2BG54	1
+eny2 zgc:92656	Q6DH42	0.7763	0.3202	Transcription and mRNA export factor ENY2 (Enhancer of yellow 2 transcription factor homolog)	Q6DH42	1
+h1l1	A0A140LH34	0.7738	0.5531	Si:ch1073-159d7.7	A0A140LH34	1
+vtg1	Q1LWN2	0.7528	0.3101	Vitellogenin 1	A0A2R8Q212	1
+histone h3 si:ch1073-153i20.2 loc108190746 loc108190747 si:ch211-113a14.27 zgc:173552	A8KBJ5	0.7405	0.3734	Histone H3	A8KBJ5	1
+psmb4 so:0001217		0.6943	0.1512	Proteasome subunit beta	A8E7N8	1
+mcu	Q08BI9	0.6782	0.3274	Calcium uniporter protein	F1QT29	1
+hnrpab hm:zeh1271 hnrnpab sqd-likea wu:fa18g02 wu:fb07b06 wu:fb16c05 zeh1271 hnrnpaba	Q6NYU8	0.6455	0.2212	Heterogeneous Nuclear ribonucleoprotein a/b	Q6NYU8	1
+si:dkey-16p21.8		0.6435	0.3286	Si:dkey-16p21.8	X1WCS1	1
+ctcf	Q6JAA4	0.6324	0.4509	CCCTC-binding factor (zinc finger protein)	A0A2R8Q542	1
+zp3c		0.6311	0.3736	Zona pellucida glycoprotein 3c	B8A4S8	1
+stam		0.6196	0.1634	Signal transducing adaptor molecule (SH3 domain and ITAM motif) 1	A5PMY5	1
+gpt2		0.6061	0.2952	alanine transaminase (EC 2.6.1.2)	F1R6D2	1
+apoc1	E9QDI1	0.6024	0.2564	Apolipoprotein C-I	E9QFX0	1
+cstf3	F1QIB2	0.5966	0.4357	Cleavage stimulation factor, 3' pre-RNA, subunit 3	F1QIB2	1
+ctsla		0.5959	0.2185	Cathepsin La	A5WVL6	1
+sephs1	Q7ZW38	0.5944	0.1504	Selenide, water dikinase 1	A3KPM5	1
+cfi		0.5938	0.3108	Complement factor I	A0A0G2L5F9	1
+wu:fj97b10 scamp2 zgc:63465 zgc:63511 scamp2l	Q7SXR6	0.5935	0.2789	Secretory carrier-associated membrane protein (Secretory carrier membrane protein)	Q7SXR6	1
+ctsa		0.5856	0.1649	Carboxypeptidase (EC 3.4.16.-)	A0A0R4ILY1	1
+psap	B8JI17	0.583	0.1607	Prosaposin	B8JI17	1
+gstt1a	E7EZ94	0.5772	0.258	glutathione transferase (EC 2.5.1.18)	E9QFP4	1
+slc4a1ap	E7F3T1	0.577	0.1652	Solute carrier family 4 member 1 adaptor protein	E7F3T1	1
+bzw1a 5mp2a bzw1 si:ch211-246m6.3 zgc:63787	Q6PD83	0.5754	0.4224	eIF5-mimic protein 2-A (Basic leucine zipper and W2 domain-containing protein 1-A)	Q6PD83	1
+rpl27 zgc:56171	Q7ZV82	0.5698	0.1132	60S ribosomal protein L27	Q7ZV82	1
+hm:zeh0024 zgc:123331 ndufb5	A8E5B7	0.5542	0.3255	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5, mitochondrial (Complex I-SGDH) (NADH-ubiquinone oxidoreductase SGDH subunit)	A8E5B7	1
+hnrpa0l fb38a07 wu:fb38a07 wu:fb82e07 hnrnpa0l	Q7ZU48	0.5491	0.3578	Hnrpa0l protein (heterogeneous nuclear ribonucleoprotein A0, like)	Q7ZU48	1
+loc564644 zgc:194590 zgc:194609 nsmce2 so:0001217	B3DIX8	0.5421	0.3062	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE2) (Non-structural maintenance of chromosomes element 2 homolog)	B3DIX8	1
+tpp1	F8W2M8	0.5417	0.1563	Tripeptidyl-peptidase 1 (TPP-1) (EC 3.4.14.9) (Tripeptidyl aminopeptidase) (Tripeptidyl-peptidase I) (TPP-I)	F8W2M8	1
+wu:fa07h08 ik:tdsubc_2c8 wu:fb93d11 wu:fc20b11 xx:tdsubc_2c8 rpe	Q6PBW9	0.5389	0.375	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	Q6PBW9	1
+hells		0.5343	0.2491	Helicase, lymphoid-specific	A0A2R8Q4P5	1
+si:dkey-222f8.3		0.5333	0.3473	Uridylate-specific endoribonuclease (EC 4.6.1.-)	H0WF22	1
+zgc:92790 polr2f	Q6DGS5	0.532	0.3091	DNA-directed RNA polymerases I, II, and III subunit RPABC2 (DNA-directed RNA polymerase II subunit F) (RPB6 homolog)	Q6DGS5	1
+dcaf11	Q499B0	0.5179	0.2108	Ddb1 and cul4-associated factor 11	E9QGZ8	1
+hnrnpub	Q5RHQ7	0.5138	0.3177	Heterogeneous nuclear ribonucleoprotein Ub	Q5RHQ7	1
+pih1d1	Q1RM55	0.5044	0.2281	PIH1 domain-containing protein 1	F1R0N8	1
+sfrs5 fb49e01 im:6906390 sfrs5 sfrs5a wu:fb49e01 wu:fj09b12 zgc:77797 srsf5a	Q6TGT9	0.4986	0.3613	Splicing factor, arginine/serine-rich 5 (serine and arginine rich splicing factor 5a)	Q6TGT9	1
+ahcy cb1079 d150 ducttrip hm:zeh1173 hm:zeh1364 wu:fj67b02 ahcy	Q803T5	0.4985	0.1565	Adenosylhomocysteinase (EC 3.3.1.1)	Q803T5	1
+micos13 mic13 qil1 si:dkey-78l4.14	Q1LUK1	0.4971	0.2463	MICOS complex subunit MIC13	Q1LUK1	1
+si:ch211-194d6.2 gtf2e1 ch211-194d6.2-001	Q5SQE1	0.492	0.234	General transcription factor IIE, polypeptide 1, alpha (Novel protein similar to vertebrate general transcription factor IIE polypeptide 1 alpha 56kDa (GTF2E1)) (general transcription factor IIE subunit 1) (general transcription factor IIE subunit 1 isoform X1)	Q5SQE1	1
+wu:fb73g02 zgc:77804 u2af2b so:0001217	Q6P022	0.4884	0.2361	Splicing factor U2AF subunit (U2 snRNP auxiliary factor large subunit)	Q6P022	1
+ap1m1	A0A0R4IRS1	0.4877	0.1634	AP-1 complex subunit mu-1	A0A0R4IRS1	1
+pgam1b	B8A4H6	0.4864	0.1537	Phosphoglycerate mutase (EC 5.4.2.11) (EC 5.4.2.4)	B8A4H6	1
+trim33	A0A2R8Q2E8	0.4845	0.1236	E3 ubiquitin-protein ligase TRIM33	F1R9F9	1
+mrpl41	Q502B0	0.484	0.2368	39S ribosomal protein L41, mitochondrial	B0S7H9	1
+pcbd zgc:73389 pcbd1	Q6PBI6	0.4825	0.1886	4a-hydroxytetrahydrobiopterin dehydratase (EC 4.2.1.96)	Q6PBI6	1
+carm1 si:dkey-204f11.63 zgc:100805	Q6DC04	0.473	0.2055	Histone-arginine methyltransferase CARM1 (EC 2.1.1.319) (Coactivator-associated arginine methyltransferase 1) (Protein arginine N-methyltransferase 4)	Q6DC04	1
+hnrnpa1b	A0A8M1PGI6	0.4681	0.1419	Heterogeneous nuclear ribonucleoprotein A1b	F1QFV2	1
+cb195 cb757 etid49849.2 fb39g09 fd19d09 gso1 sb:cb195 wu:fb39g09 wu:fd19d09 glula	Q7T2P7	0.4635	0.1725	Glutamine synthetase (EC 6.3.1.2)	Q7T2P7	1
+tnpo2 fb01c02 fe01f03 ik:tdsubc_2a7 tdsubc_2a7 wu:fb01c02 wu:fe01f03 wu:fe16e12 xx:tdsubc_2a7 zgc:101009 tnpo2a	Q68EK8	0.4512	0.1929	Transportin 2 (Importin 3, Karyopherin beta 2b) (transportin-2)	Q68EK8	1
+rps4x rps4 zgc:92076	Q642H9	0.4478	0.1086	40S ribosomal protein S4, X isoform	Q642H9	1
+syncripl	A0AB32TC38	0.4445	0.191	Synaptotagmin-binding, cytoplasmic RNA-interacting protein,-like	Q6NYJ5	1
+dis3l2	E7F350	0.4368	0.2325	DIS3-like exonuclease 2 (EC 3.1.13.-)	A0A2R8Q8H5	1
+tsfm tsfm	A1A5Z3	0.4231	0.08099	Elongation factor Ts, mitochondrial (EF-Ts) (EF-TsMt)	F1Q963	1
+cdc42a fj62g06 wu:fb07d08 wu:fj62g06 zgc:63918 cdc42	Q6PFU4	0.4206	0.1213	Cell division control protein 42 homolog (EC 3.6.5.2)	Q6PFU4	1
+chchd5	E7F5H1	0.4085	0.2336	Coiled-coil-helix-coiled-coil-helix domain containing 5	E7F5H1	1
+mettl2a	A8KBL7	0.4057	0.1062	tRNA N(3)-methylcytidine methyltransferase METTL2	A0A2R8QLB3	1
+psmd2		0.4057	0.2902	Proteasome 26S subunit, non-ATPase 2	A0A0G2KH95	1
+acp5a	Q7SXT1	0.4006	0.2688	Tartrate-resistant acid phosphatase type 5 (EC 3.1.3.2) (Tartrate-resistant acid ATPase) (Type 5 acid phosphatase)	E9QEJ8	1
+znf1069		0.3961	0.1367	Zinc finger protein 1069	F1RD83	1
+shisa10.4	F1R3D6	0.3934	0.1886	Si:dkey-42i9.8	F1R3D6	1
+cox15	F1R355	0.3915	0.1433	Cytochrome c oxidase assembly homolog 15 (yeast)	F1RBQ3	1
+rdh14a		0.3912	0.2351	Retinol dehydrogenase 14a	B8JIJ7	1
+tial1	Q7SXQ1	0.3878	0.1744	TIA1 cytotoxic granule-associated RNA-binding protein-like 1	E9QJJ0	1
+ddx39aa	A2AWA1	0.3838	0.1841	RNA helicase (EC 3.6.4.13)	A2AWA1	1
+fd20a07 hacp nanog wu:fd19e04 wu:fd20a07 nanog zgc:193933	A5JNG8	0.3771	0.2473	NANOG Homeobox (Nanog) (Nanog protein) (Ovary-expressed homeobox protein) (Zgc:193933)	A5JNG8	1
+pa28-gamma unp310 wu:fb19c08 psme3	Q7ZU20	0.3748	0.2436	Proteasome activator subunit 3 (Psme3 protein) (proteasome activator complex subunit 3)	Q7ZU20	1
+klhl11	A0A8M1PFX0	0.3746	0.07547	Kelch-like family member 11	F1Q6J6	1
+cdc5l	E9QIC1	0.3733	0.1687	CDC5 cell division cycle 5-like (S. pombe)	E9QIC1	1
+cs	Q7ZVY5	0.3653	0.1537	Citrate synthase	B2GTW6	1
+fb12c06 fb52f02 fk95b04 wu:fb12c06 wu:fb52f02 wu:fk95b04 si:ch211-157c3.4	E7FAA1	0.3644	0.17	Si:ch211-157c3.4 (lipopolysaccharide-induced tumor necrosis factor-alpha factor-like) (lipopolysaccharide-induced tumor necrosis factor-alpha factor-like isoform X1)	E7FAA1	1
+srm	F1R3G8	0.3641	0.08689	Spermidine synthase	F1R3G8	1
+ninl		0.3604	0.2474	Ninein-like	A0A0G2LAC3	1
+znf1147		0.3592	0.2294	Zinc finger protein 1147	E9QG34	1
+zgc:162401 sb:eu1637 si:dkey-265m8.2 mrps11 dkey-265m8.2-001	Q5VSI2	0.357	0.1484	28S ribosomal protein S11, mitochondrial (Novel protein similar to mouse and human mitochondrial ribosomal protein S11 (MRPS11)) (Si:dkey-265m8.2) (Zgc:162401 protein)	Q5VSI2	1
+cbr1	Q7SYD0	0.3561	0.2294	carbonyl reductase (NADPH) (EC 1.1.1.184)	Q7SYD0	1
+ap1g1	A0AB32TXY2	0.3558	0.1279	AP-1 complex subunit gamma	A0A0R4IU05	1
+caprin1a	E7FDQ5	0.3529	0.2119	Cell cycle-associated protein 1a	F1QIJ0	1
+zgc:123245 ppil1	Q3KR14	0.3507	0.163	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	Q3KR14	1
+nudt12	A0A8M9Q9P3	0.3503	0.1254	NAD-capped RNA hydrolase NUDT12 (EC 3.6.1.22) (NADH pyrophosphatase NUDT12) (Nucleoside diphosphate-linked moiety X motif 12)	A0A0R4ISD4	1
+atp5o wu:fk86d05 zgc:109976 atp5po	Q6DRD1	0.3441	0.1079	ATP synthase subunit O, mitochondrial (Oligomycin sensitivity conferral protein)	Q6DRD1	1
+ubl5 zgc:66388		0.3414	0.1458	Ubiquitin-like protein 5	Q7SXF2	1
+gyg1 gyg1a	Q6IQP1	0.3411	0.2483	Glycogenin 1 (Gyg1 protein)	Q6NV37	1
+fa94d03 wu:fa94d03 wu:fq25e02 zgc:103577 pgrmc1	Q5U3G0	0.3327	0.116	Progesterone receptor membrane component 1 (membrane-associated progesterone receptor component 1)	Q5U3G0	1
+eef1da	A0A0R4IA30	0.3325	0.08861	Eukaryotic translation elongation factor 1 delta a (guanine nucleotide exchange protein)	A0A0R4IA30	1
+prdx4		0.3271	0.1914	Peroxiredoxin 4	F1QSP8	1
+c1qbp	F1R3F7	0.3253	0.1226	Complement component 1 Q subcomponent-binding protein, mitochondrial	F1R3F7	1
+cd82 kai1 wu:fc19g11 cd82b	Q7T2E0	0.3243	0.1711	Tetraspanin	Q7T2E0	1
+zgc:56668 srp9	Q7ZW94	0.3241	0.1416	Signal recognition particle 9 kDa protein (SRP9)	Q7ZW94	1
+ddx5	F1Q5L6	0.323	0.1419	RNA helicase (EC 3.6.4.13)	F1Q5L6	1
+si:ch211-212c13.8		0.3219	0.1024	Si:ch211-212c13.8	X1WC44	1
+asmtl	A0A8M1PJK7	0.3203	0.137	Acetylserotonin O-methyltransferase-like	B0S731	1
+nhp2 nola2 zgc:73227	Q6PBV6	0.3201	0.2317	H/ACA ribonucleoprotein complex subunit 2-like protein (Nucleolar protein family A member 2-like protein) (snoRNP protein NHP2)	Q6PBV6	1
+fc07e03 si:zc14a17.4 wu:fc07e03 ap1g2 zc14a17.4-001	B0R024	0.3183	0.09893	AP-1 complex subunit gamma	B0R024	1
+zgc:171710 rps23 zgc:171710	A8KB78	0.3108	0.1775	40S ribosomal protein S23	A8KB78	1
+zgc:103730 ab02c03 fa93a01 mg:ab02c03 wu:fa93a01 rpl9 so:0001217	Q5BKV9	0.3101	0.06637	60S ribosomal protein L9	Q5BKV9	1
+tarbp2 tarbp2	Q7SXR1	0.3101	0.1041	RISC-loading complex subunit TARBP2	F1QP01	1
+triap1 so:0001217	F1Q6Y0	0.3077	0.1444	TP53-regulated inhibitor of apoptosis 1	F1Q6Y0	1
+llgl2	Q7SZE3	0.3053	0.1138	LLGL scribble cell polarity complex component 2	A0A2R8Q3V3	1
+prodhb	E7FFM5	0.2982	0.07372	Proline dehydrogenase (EC 1.5.5.2)	E7FEU8	1
+pafah1b1a lis1b si:dkey-95o3.1	Q7T394	0.2934	0.08624	Lissencephaly-1 homolog A (Platelet-activating factor acetylhydrolase IB subunit alpha a)	Q7T394	1
+mcm2	A0A0R4IF65	0.2915	0.1509	DNA replication licensing factor MCM2 (EC 3.6.4.12)	A0A0R4IF65	1
+timm13 tim13a timm13a zgc:92895	Q6DGJ3	0.2915	0.1191	Mitochondrial import inner membrane translocase subunit Tim13	Q6DGJ3	1
+cdca7b		0.2909	0.2093	Cell division cycle-associated 7b	E7FGN3	1
+si:ch211-116i17.1 ipo8	A5WW24	0.2903	0.1809	Importin-8	B7ZV68	1
+mapk14a	Q9DGE2	0.2899	0.2031	mitogen-activated protein kinase (EC 2.7.11.24)	A0A2R8Q3H6	1
+ptgr1.1		0.2896	0.168	Prostaglandin reductase 1 (EC 1.3.1.48) (EC 1.3.1.74) (15-oxoprostaglandin 13-reductase) (Dithiolethione-inducible gene 1 protein) (Leukotriene B4 12-hydroxydehydrogenase) (NAD(P)H-dependent alkenal/one oxidoreductase)	F1QVB1	1
+drg2 wu:fb96a09 wu:fb96b01 zgc:101029 drg2	Q6TH20	0.2878	0.06423	Developmentally-regulated GTP-binding protein 2 (Drg2 protein)	Q6TH20	1
+rab8a rab8 zgc:162699 rab8a so:0001217	A4FVK4	0.2851	0.09974	RAB8A, member RAS oncogene family (Rab8a protein) (ras-related protein Rab-8A)	A4FVK4	1
+rpl5b	Q6IQB1	0.2829	0.07934	Ribosomal protein L5b	A0A286YAR2	1
+gnai2l gnai2 gnai2 wu:fb10b04 wu:fb19c04 zgc:92609 gnai2a	Q6TNT8	0.2825	0.1601	Guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 2 (Guanine nucleotide binding protein (G protein), alpha inhibiting activity polypeptide 2, like) (Guanine nucleotide-binding protein (G protein), alpha-inhibiting activity polypeptide 2a) (guanine nucleotide-binding protein G(I) subunit alpha-2)	Q6TNT8	1
+map3k4	A0A0R4IK63	0.2823	0.08456	Mitogen-activated protein kinase kinase kinase 4	A0A0R4IK63	1
+anxa5b so:0001217		0.2812	0.1658	Annexin	Q6P0V8	1
+bc2 chmp2a	Q7ZW25	0.2809	0.1172	Bc2 protein (Charged multivesicular body protein 2a)	B7ZV06	1
+chchd7		0.2804	0.1831	Coiled-coil-helix-coiled-coil-helix domain-containing 7	F1QKA5	1
+zgc:56374 wu:fb11d10 wu:fu88b08 zgc:92596 psmb3	Q7ZUJ8	0.2784	0.1209	Proteasome subunit beta	Q7ZUJ8	1
+adkb		0.2783	0.07849	Adenosine kinase (AK) (EC 2.7.1.20) (Adenosine 5'-phosphotransferase)	A0A0R4IIH9	1
+gcat	F6P2R4	0.2767	0.1286	Glycine C-acetyltransferase	F6P2R4	1
+wu:fb17e01 wu:fb63h04 wu:fk81e04 zgc:77099 eif5a	Q6NX89	0.2739	0.07994	Eukaryotic translation initiation factor 5A (eIF-5A)	Q6NX89	1
+tomm70a	Q6PBY6	0.2725	0.1356	Translocase of outer mitochondrial membrane 70 homolog A (S. cerevisiae)	F1QQI6	1
+prrc2c		0.2718	0.1229	Proline-rich coiled-coil 2C	A0A286YBN1	1
+caprin1b		0.2693	0.1399	Cell cycle-associated protein 1b	A5WVQ1	1
+zgc:114172 ndufa5 so:0001217	Q5BJA2	0.2665	0.1519	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5 (Complex I subunit B13) (Complex I-13kD-B) (NADH-ubiquinone oxidoreductase 13 kDa-B subunit)	Q5BJA2	1
+si:ch211-240l14.3 grhpra zc240l14.3-001		0.2659	0.1171	Glyoxylate reductase/hydroxypyruvate reductase a (Novel protein similar to human glyoxylate reductase/hydroxypyruvate reductase (GRHPR))	Q7SZY8	1
+zgc:66391 ndufa11	Q7SXE9	0.2645	0.1547	HIG1 domain-containing protein (NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 11)	A0A2R8Q522	1
+wu:fa12a02 wu:fq38h02 zgc:73282 atp6v1g1 dkey-190c14.3-001	Q6PBR5	0.2629	0.1317	V-type proton ATPase subunit G	Q6PBR5	1
+eno1 eno1a	Q6TH14	0.2604	0.1313	phosphopyruvate hydratase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase)	Q6PC12	1
+fdx1	E7F7J1	0.2572	0.1008	Ferredoxin 1 (adrenodoxin)	E7F7J1	1
+pds5a zgc:66331	A1L1F4	0.256	0.1159	Sister chromatid cohesion protein PDS5 homolog A	A1L1F4	1
+sde2 zgc:112095	Q7T293	0.2258	0.1641	Splicing regulator SDE2 (Replication stress response regulator SDE2)	Q7T293	1
+arhgef1b	F1Q4Y0	0.2221	0.09805	Rho guanine nucleotide exchange factor (GEF) 1b	F1Q4Y0	1
+fj48e12 wu:fj48e12 zgc:63975 tcea1 so:0001217	Q7T3C1	0.1514	0.1108	Transcription elongation factor	Q7T3C1	1

@@ -1,0 +1,54 @@
+# Coronin A interactome: FLAG-CorA affinity-purified (anti-FLAG) from growing corA-null Dictyostelium discoideum cells re-expressing FLAG-CorA, versus cells expressing untagged CorA; pooled 24, 48 and 110 h samples, label-free quantification
+# Fabrice TN, Fiedler T, Studer V, et al. 2020. Interactome and F-Actin Interaction Analysis of Dictyostelium discoideum Coronin A. Int J Mol Sci 21(4):1469. https://doi.org/10.3390/ijms21041469
+# Source: ijms-21-01469-s001.zip, "Table S1_Summary Sheet for all time points plus the combined.xlsx", sheet "InterAct Combined" (Condition3 = FLAG-CorA vs Condition1 = untagged CorA control); same proteins as Table S2_Log2ratios_FLAG-CorA.pdf (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7073074/supplementaryFiles)
+# Cutoff: log2ratio_Condition3 > 1 and qValue_Condition3 < 0.05, which reproduces the 47 interactors of the paper's Table S2 (the main text states log2ratio > 1.5, but Table S2 lists ratios down to 1.00); 47 preys plus the bait corA (48 rows); all kept
+# Licensed CC BY 4.0
+protein	gene	role	log2ratio_FLAG-CorA	qValue
+P27133	corA	bait	3.226	0.000152
+Q54IG1	DDB0219382	prey	2.971	5.45e-05
+Q58A40	DD7-1	prey	2.959	0.005
+Q54LF1	DDB_G0286669	prey	2.803	0.006
+Q55BU2	cahA	prey	2.554	0.002
+Q86J14	DDB0167842	prey	2.381	0.003
+Q75JC8	tbca	prey	2.237	0.017
+P54653	cbp2	prey	2.054	0.025
+P54640	cprE	prey	1.845	0.005
+Q54QI4	hgd	prey	1.791	0.037
+Q54K96	jcdg	prey	1.775	0.003
+Q550A8	atg3	prey	1.675	0.009
+Q54BQ5	nsfl1c	prey	1.631	0.039
+Q55E34	pycr2	prey	1.625	0.001
+Q54UU2	DDB_G0280825	prey	1.583	0.003
+Q55DC0	DDB0190490	prey	1.529	0.000209
+Q54FV6	DDB0188965	prey	1.524	0.003
+Q9XXV8	myoK	prey	1.52	0.003
+Q54KS4	gnl3	prey	1.47	0.023
+Q65YR8	cpiA	prey	1.451	0.013
+A9CLV7	atp8	prey	1.433	0.025
+P42525	erkA	prey	1.429	0.009
+Q86H60	hspK	prey	1.417	0.025
+Q54UF5	DDB_G0281105	prey	1.39	0.05
+Q54DF1	atp5C1	prey	1.329	0.006
+Q55GC0	DDB0189501	prey	1.326	0.003
+Q58A42	DD3-3	prey	1.313	0.003
+Q54BM7	ppkA	prey	1.301	0.028
+Q54HM2	DDB_G0289357	prey	1.284	0.046
+Q8MQU6	cshA	prey	1.267	0.01
+Q27562	psmA1	prey	1.21	0.018
+Q55DU1	abnB	prey	1.207	0.016
+Q54EW2	DDB_G0291301	prey	1.189	0.036
+Q54V27	lmcA	prey	1.169	0.000717
+Q54G77	DDB0188843	prey	1.165	0.006
+Q54IP4	shkB	prey	1.161	0.048
+Q54K81	talB	prey	1.158	0.017
+P54680	fimA	prey	1.154	0.025
+P54657	cadA	prey	1.126	0.048
+Q55GG3	DDB_G0268498	prey	1.116	0.000697
+Q8MYF0	mgm101	prey	1.116	0.026
+Q86K89	DDB0169073	prey	1.116	0.005
+Q54Z60	acsA	prey	1.104	0.003
+Q54Q32	DDB0185860	prey	1.086	0.025
+Q86A21	psmB1	prey	1.068	0.023
+O61122	svkA	prey	1.031	0.019
+Q54PJ6	DDB_G0284509	prey	1.024	0.028
+P34098	manA	prey	1.004	0.002

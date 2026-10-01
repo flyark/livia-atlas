@@ -1,0 +1,35 @@
+# Example: Co-immunoprecipitation-MS partners of the Rho GTPase SmRho1 in adult Schistosoma mansoni (anti-SmRho1 mouse antiserum vs pre-immune serum; experiment IP2), plus the bait.
+# Source: Pagliazzo L, Caby S, Lancelot J, et al. (2021) Histone deacetylase 8 interacts with the GTPase SmRho1 in Schistosoma mansoni. PLoS Negl Trop Dis 15(11):e0009503. https://doi.org/10.1371/journal.pntd.0009503
+# S3 Table (pntd.0009503.s009.xlsx), sheet "IP2 SmRho1selected proteins": the paper's 32 selected proteins (>= 3 peptides in the co-IP, <= 2 in the control, spectral-count ratio co-IP/control > 3); the SmRho1.1 and SmRho1.2 rows are merged into the bait row and rows that map to one UniProt accession are collapsed (first kept), leaving 30 preys. Licensed CC BY 4.0; values as published; spectra = total spectra in IP2 SmRho1; "uniprot" = current UniProt accession in the LIVIA Atlas index, added by ID mapping via accession or GN= locus (blank: not in the index).
+protein	uniprot	role	spectra_IP2_SmRho1	ratio
+Smp_330190	Q9XZG7	bait		
+G4V9A8	G4V9A8	prey	9	4.5
+G4LZY0	G4LZY0	prey	14	3.5
+G4VP86	G4VP86	prey	7	3.5
+G4VHC0	G4VHC0	prey	4	4
+G4VBS3	A0A3Q0KF84	prey	6	3
+G4LW12	A0A3Q0KHL3	prey	9	18
+G4VRA7	G4VRA7	prey	3	6
+G4LZI3	G4LZI3	prey	4	8
+G4VJV2	A0A3Q0KTB3	prey	3	6
+P91888		prey	14	28
+G4VAG2		prey	6	3
+G4VLT9	G4VLT9	prey	3	6
+G4VBQ1	A0A3Q0KGK8	prey	3	6
+G4LXT7	G4LXT7	prey	3	6
+G4VK21		prey	24	48
+I4EC26		prey	3	6
+G4VGS2	G4VGS4	prey	3	6
+G4VI75		prey	4	8
+G4LWD1		prey	3	6
+E9LZR7	E9LZR7	prey	12	3
+G4LUZ0	G4LUZ0	prey	5	5
+G4LWV8	G4LWV8	prey	4	4
+G4M057	A0A3Q0KHR2	prey	3	3
+G4VCG8	G4VCG8	prey	4	4
+G4VG42	G4VG42	prey	6	3
+G4VG55	G4VG55	prey	3	3
+G4VGU2	G4VGU2	prey	3	3
+G4VIC9	A0A3Q0KFS8	prey	4	8
+G4LVB6	G4LVB6	prey	3	3
+G4VRU0	G4VRU0	prey	16	5.333333333333333

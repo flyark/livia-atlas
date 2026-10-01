@@ -1,0 +1,46 @@
+# Pseudomonas aeruginosa proteins retained by the bsrA promoter region in a DNA-affinity pull-down from PAO1161 cell extract and identified by mass spectrometry; only proteins that bound bsrAp and not the control fragment
+# Modrzejewska M, Kawalek A, Bartosik AA. 2021. The LysR-type transcriptional regulator BsrA (PA2121) controls vital metabolic pathways in Pseudomonas aeruginosa. mSystems 6(4):e00015-21. https://doi.org/10.1128/mSystems.00015-21
+# Source: Data Set S4 (msystems.00015-21-sd004.xlsx) (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8407307/supplementaryFiles)
+# Cutoff: the table as published, which the legend defines as the proteins binding bsrAp but not the control fragment; 39 proteins listed, all kept
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag = PAO1_ID as published; gene = Gene name as published (empty where the table leaves it empty); uniprot = the protein in the species index, matched by PAO1 locus tag; accession = Accession as published (RefSeq or GenBank); score = mass spectrometry score as published
+locus_tag	gene	uniprot	accession	score
+PA2551			PXB94697.1	11746
+PA3587	metR		WP_003092181.1	5522
+PA2121	bsrA		WP_096221331.1	3394
+PA4462	rpoN	P49988	SQL00252.1	3026
+PA5189			AVK04797.1	2683
+PA4915		Q9HUP8	VFT10095.1	1569
+PA3398			CCQ84256.1	1086
+PA5337	rpoZ	Q9HTM1	WP_003096602.1	782
+PA4902			WP_003095545.1	617
+PA5293			AYN84867.1	558
+PA1586	sucB	Q9I3D2	RCN16818.1	375
+PA1309			WP_003082684.1	308
+PA3344	recQ	Q9HYQ1	KEA29613.1	219
+PA2588		Q9I0P9	PXB90503.1	197
+PA4328		Q9HW73	ALS14895.1	139
+PA2900		Q9HZU7	ETD42453.1	72
+PA3742	rplS	Q9HXQ2	PXB85272.1	70
+PA5485	ampDh2		OKO12693.1	69
+PA1947	rbsA	Q9I2F7	WP_132863737.1	68
+PA4264	rpsJ	Q9HWD4	PBN28702.1	65
+PA3746	ffh	Q9HXP8	PXC05003.1	61
+PA3729			AVK19956.1	59
+PA4743	rbfA	Q9HV56	RCH07747.1	59
+PA2840		Q9I003	KXE06835.1	56
+PA3656	rpsB	O82850	AVK28594.1	55
+PA4057	nrdR	Q9HWX1	RCH01756.1	53
+PA4120		Q9HWR1	ARI03808.1	49
+PA3690		Q9HXV0	ARI03343.1	49
+PA3391	nosR	Q9HYL3	PXC05486.1	48
+PA1554	ccoN1	Q9I3G3	ERX00767.1	46
+PA4507		Q9HVR4	RCI69444.1	45
+PA4446	algW	Q9HVX1	PYB22540.1	44
+PA5344	oxyR		RFK17252.1	41
+PA4760	dnaJ	Q9HV44	KWS01265.1	37
+PA5078	opgG	Q9HUA5	ARI04814.1	36
+PA4844	ctpL	Q9HUW6	WP_125883392.1	36
+PA4932	rplI	Q9HUN2	WP_003095627.1	35
+PA4386	groES	P30720	OPF46669.1	34
+PA1920	nrdD	Q9I2I4	EHF11643.1	32

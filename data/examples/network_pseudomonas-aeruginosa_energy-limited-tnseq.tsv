@@ -1,0 +1,69 @@
+# Fitness determinants of Pseudomonas aeruginosa UCBPP-PA14 during energy-limited growth arrest: transposon mutants with a fitness defect after 10 days of carbon limitation or oxygen limitation followed by aerobic outgrowth
+# Basta DW, Bergkessel M, Newman DK. 2017. Identification of fitness determinants during energy-limited growth arrest in Pseudomonas aeruginosa. mBio 8(6):e01170-17. https://doi.org/10.1128/mBio.01170-17
+# Source: Data Set S1 (mbo006173591sd1.xlsx, sheet "Carbon limited") and Data Set S2 (mbo006173591sd2.xlsx, sheet "Oxygen limited") (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5705914/supplementaryFiles)
+# Cutoff: the paper's own criterion, geometric mean read ratio of the two replicates < 0.25 and combined P < 0.05 (Fisher); 24 genes pass under carbon limitation and 42 under oxygen limitation, 62 distinct genes in the union (intergenic regions excluded)
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag = PA14 locus tag as published; gene = UniProt primary gene name for that tag; uniprot = the PAO1 protein in the species index, by blastp best hit of the PA14 protein against the index (>= 90% identity and >= 90% coverage of both sequences); mean_read_ratio = geometric mean of the replicate read ratios; fisher_p = combined P value; condition = the screen the gene passed in
+locus_tag	gene	uniprot	mean_read_ratio	fisher_p	condition
+PA14_45960	lasR	P25084	0.002096	0.0001	oxygen-limited
+PA14_04410	ptsP	G3XD36	0.007671	1.84e-14	carbon- and oxygen-limited
+PA14_32420			0.0107	0.011	carbon-limited
+PA14_53480	pta	Q9I5A5	0.01468	9.87e-15	oxygen-limited
+PA14_00120		Q9I7B5	0.01516	0.00113	oxygen-limited
+PA14_62860	ftsH	Q9HV48	0.01586	1.5e-11	carbon- and oxygen-limited
+PA14_53470	ackA	Q9I5A4	0.02602	1.02e-06	oxygen-limited
+PA14_69070	yhiH	Q9HTV9	0.02907	2.13e-16	oxygen-limited
+PA14_51320		Q9I4W8	0.02911	0.00116	oxygen-limited
+PA14_69090	yhiI	Q9HTV8	0.03752	6.44e-07	oxygen-limited
+PA14_65390	yjeF	Q9HUL5	0.04847	1.39e-06	oxygen-limited
+PA14_21220		Q9HYT5	0.04912	0.000672	oxygen-limited
+PA14_65750	ompH	Q9HUJ1	0.06204	1.89e-06	oxygen-limited
+PA14_52270	ldhA	Q9I530	0.06667	1.94e-06	oxygen-limited
+PA14_23500	tyrB	P72173	0.07398	0.00458	oxygen-limited
+PA14_69060	yhhJ	Q9HTW0	0.0748	0.00039	oxygen-limited
+PA14_44490	anr	P23926	0.0842	0.0371	oxygen-limited
+PA14_61060	fnr-2	Q9HVH6	0.08816	0.000156	oxygen-limited
+PA14_72700			0.08818	0.00278	oxygen-limited
+PA14_01300	coxA	Q9I726	0.08943	1.1e-09	carbon-limited
+PA14_62730	truB	P72154	0.09563	0.00188	oxygen-limited
+PA14_61680	prmC	Q9HVC8	0.1019	0.000452	oxygen-limited
+PA14_27230			0.1047	0.0226	carbon-limited
+PA14_25180	psrA	Q9HZJ9	0.109	0.00203	oxygen-limited
+PA14_72490	polA	Q9HT80	0.1166	8.7e-05	oxygen-limited
+PA14_01290	coxB	Q9I727	0.12	0.000616	carbon-limited
+PA14_52060		Q9I515	0.1228	0.0041	carbon-limited
+PA14_66270	glnE		0.1268	1.34e-12	carbon-limited
+PA14_60650		Q9HVK1	0.1357	0.0232	oxygen-limited
+PA14_26590		Q9HZV0	0.1375	5.52e-05	carbon-limited
+PA14_60190	clpB	Q9HVN5	0.1379	6.31e-10	oxygen-limited
+PA14_67580	thiI	Q9HU66	0.1388	4.39e-06	oxygen-limited
+PA14_00060			0.1397	0.0187	oxygen-limited
+PA14_63070	pdhR	Q9HV39	0.1416	0.00078	oxygen-limited
+PA14_66570	gltB	Q9HUD5	0.1429	1.93e-13	carbon-limited
+PA14_17520	cinA	Q9HY10	0.1436	0.00316	oxygen-limited
+PA14_39330	rbsA	Q9I2F7	0.1457	0.00182	oxygen-limited
+PA14_01380	cyoE1	Q9I719	0.1478	0.0021	carbon-limited
+PA14_25250	gap2	Q9HZK4	0.1483	0.000807	carbon- and oxygen-limited
+PA14_29920	nuoI	Q9I0J4	0.1493	0.0152	carbon-limited
+PA14_22800	yciB		0.1537	0.0106	oxygen-limited
+PA14_27200		Q9HZZ1	0.165	0.0269	oxygen-limited
+PA14_12650			0.1651	0.00292	oxygen-limited
+PA14_69000	pepP	Q9HTW6	0.1683	0.00158	carbon-limited
+PA14_01320	coIII	Q9I724	0.1757	0.00012	carbon-limited
+PA14_17480	rpoS	P45684	0.1759	0.00171	carbon- and oxygen-limited
+PA14_17470	nlpD	P45682	0.1764	0.00215	oxygen-limited
+PA14_65320	miaA		0.1818	0.000187	oxygen-limited
+PA14_65420	rsgA	Q9HUL3	0.1883	0.032	oxygen-limited
+PA14_62490	dksA	G3XD14	0.1899	0.0299	carbon-limited
+PA14_27180	erfK		0.1944	4.58e-05	oxygen-limited
+PA14_01340		Q9I722	0.2013	3.88e-05	carbon-limited
+PA14_66560	gltD	G3XD09	0.2059	0.00023	carbon-limited
+PA14_54660		Q9I5I5	0.2064	0.00246	carbon-limited
+PA14_67810	ctpA	Q9HU50	0.217	0.000763	carbon-limited
+PA14_23470	wbpM	Q9HZ86	0.2183	3.4e-07	carbon-limited
+PA14_60210	rluD	P33640	0.2207	0.000388	oxygen-limited
+PA14_52180	relA	Q9I524	0.2258	1.7e-07	oxygen-limited
+PA14_29880	nuoL	Q9I0J1	0.2343	0.00811	carbon-limited
+PA14_72650			0.2372	0.017	oxygen-limited
+PA14_25090	fadA	Q9HZJ3	0.2384	0.00464	oxygen-limited
+PA14_46570			0.2492	0.0046	carbon-limited

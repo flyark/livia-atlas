@@ -1,0 +1,58 @@
+# Example: Putative nuclear-localized binding partners of histone deacetylase HDA19 (anti-GFP IP-MS from hypocotyls of 6-day-old etiolated 35S::HDA19-GFP vs Col-0 seedlings); the bait is part of the published table.
+# Source: Vélez-Bermúdez IC, Schmidt W (2023) The interactome of histone deacetylase HDA19 in dark-grown Arabidopsis seedlings. Front Plant Sci 14:1296767. https://doi.org/10.3389/fpls.2023.1296767
+# Source: main-text Table 1 (Europe PMC full text, PMC10701890); raw per-replicate identifications are in Table_1.xlsx (Supplementary Table 1).
+# Cutoff: the paper's Table 1 (proteins identified in at least two biological replicates, control background removed, nuclear localization experimental or predicted); 52 rows, one duplicate row (UBA2, At5g06460) merged, 51 proteins incl. HDA19
+# Licensed CC BY 4.0
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+protein	role	description	function	uniprot
+At4g38130	bait	HDA1; HDA19; HISTONE DEACETYLASE 19	Histone deacetylation	O22446
+At5g58230	prey	MSI1; MULTICOPY SUPRESSOR OF IRA1	Chromatin remodelling	O22467
+At3g42170	prey	DAYSLEEPER	Post-embryonic development	Q9M2N5
+At1g06760	prey	H1.1; histone 1.1	Nucleosome assembly	P26568
+At3g48750	prey	CDC2; CELL DIVISION CONTROL 2	DNA endoreduplication	P24100
+At1g74560	prey	NRP1; NAP1-related protein 1	Nucleosome assembly	Q9CA59
+At1g43190	prey	PTB3; POLYPYRIMIDINE TRACT-BINDING PROTEIN 3	Regulation of RNA splicing	Q6ICX4
+At3g50670	prey	U1SNRNP; U1 SMALL NUCLEAR RIBONUCLEOPROTEIN-70K	mRNA splicing	Q42404
+At1g80930	prey	MIF4G domain-containing protein	mRNA splicing	Q9SAG7
+At3g63130	prey	RANGAP1; RAN GTPASE ACTIVATING PROTEIN 1	Protein import into nucleus	Q9LE82
+At5g63550	prey	DEK domain-containing chromatin-associated protein	Chromatin remodelling	Q84JB7
+At3g18790	prey	Pre-mRNA-splicing factor ISY1-like protein	Generation of catalytic spliceosome for second transesterification step	Q9LS97
+At1g17720	prey	ATB BETA; protein phosphatase 2A	Cell differentiation	Q39247
+At3g29310	prey	Calmodulin-binding protein-related	Protein folding	Q9LIB3
+At5g67630	prey	ISE4	Chromatin remodelling	
+At5g55920	prey	TRM4C, TRNA METHYLTRANSFERASE 4C	Maturation of LSU-rRNA	Q9FG73
+At1g33240	prey	GTL1; GT-2-LIKE 1	DNA-templated transcription	Q9C882
+At4g00238	prey	ATSTKL1	DNA-templated transcription	Q8LG05
+At5g41340	prey	Ubiquitin conjugating enzyme 4	Protein polyubiquitination	P42748
+At5g18200	prey	UTP:galactose-1-phosphate uridylyltransferases;ribose-5-phosphate adenylyltransferases	Galactose catabolic process	Q9FK51
+At5g09850	prey	MED26C; MEDIATOR 26C	Transcriptional initiation	F4KFC7
+At2g19570	prey	CDA1; CYTIDINE DEAMINASE 1	Cytidine deamination	O65896
+At1g03350	prey	BSD domain-containing protein	Unknown	Q9ZVT6
+At2g42810	prey	PP5; PROTEIN PHOSPHATASE 5	Chloroplast-nucleus signalling	Q84XU2
+At1g55380	prey	Cysteine/histidine-rich C1 domain family protein	Unknown	
+At2g22310	prey	UBP4; UBIQUITIN-SPECIFIC PROTEASE 4	Protein deubiquination	Q8LAM0
+At4g32270	prey	Ubiquitin-like superfamily protein	mRNA splicing	
+At3g11330	prey	PIRL9; PLANT INTRACELLULAR RAS GROUP-RELATED LRR 9	Unknown	Q8VYG9
+At2g29570	prey	PCNA2; PROLIFERATING CELL NUCLEAR ANTIGEN 2	DNA repair	Q9ZW35
+At5g17020	prey	XPO1A; EXPORTIN 1A	Protein export from nucleus	Q9SMV6
+At1g02090	prey	COP15; CONSTITUTIVE PHOTOMORPHOGENIC 15	Photomorphogenesis	Q94JU3
+At1g73030	prey	CHMP1A; CHARGED MULTIVESICULAR BODY PROTEIN/CHROMATIN MODIFYING PROTEIN1A	Embryo development	Q9SSM4
+At5g06460	prey	UBA 2; UBIQUITIN ACTIVATING ENZYME 2	Protein ubiquitination; DNA damage response	P92974
+At1g20960	prey	BRR2A	mRNA processing	
+At1g02080	prey	NOT1	Nuclear-transcribed mRNA catabolic process	
+At5g64130	prey	cAMP-regulated phosphoprotein 19-related protein	Negative regulation of protein dephosphorylation	
+At3g08947	prey	ARM repeat superfamily protein	Protein import into nucleus	Q0WML1
+At1g78150	prey	N-lysine methyltransferase	RNA metabolism	
+At1g63660	prey	GMP synthase	GMP biosynthetic process	Q9CAD1
+At5g06600	prey	UBP12; UBIQUITIN-SPECIFIC PROTEASE 12	Protein deubiquitination	Q9FPT1
+At3g29075	prey	Glycine-rich protein	Regulation of gene expression	
+At5g40340	prey	PDP3, PWWP DOMAIN PROTEIN 3	Epigenetic regulation of gene expression	Q9FNE4
+At4g39200	prey	ES25W, RIBOSOMAL PROTEIN ES25W	mRNA binding	Q9T029
+At1g48410	prey	AGO1; ARGONAUTE 1	Regulatory ncRNA-mediated post-transcriptional gene silencing	O04379
+At3g01320	prey	SNL1; SIN3-LIKE 1	Negative regulation of transcription	Q9SRH9
+At1g67230	prey	LINC1; LITTLE NUCLEI 1	Nucleus organisation	F4HRT5
+At1g59890	prey	SNL5; SIN3-LIKE 5	Negative regulation of transcription	Q9XIE1
+At1g70060	prey	SNL4; SIN3-LIKE 4	Negative regulation of transcription	O04539
+At5g15020	prey	SNL2; SIN3-LIKE 2	Negative regulation of transcription	Q9LFQ3
+At1g24190	prey	SNL3; SIN3-like 3	Negative regulation of transcription	O48686
+At5g08450	prey	HDC1, HISTONE DEACETYLATION COMPLEX 1	Histone deacetylation	Q8RWV9

@@ -1,0 +1,61 @@
+# Dictyostelium discoideum proteins on the Francisella novicida-containing vacuole (FCV, isolated 60 min after infection, label-free proteomics) that carry the GO terms "phagocytosis" or "response to bacterium"
+# Marecic V, Shevchuk O, Link M, et al. 2024. Francisella novicida-Containing Vacuole within Dictyostelium discoideum: Isolation and Proteomic Characterization. Microorganisms 12(10):1949. https://doi.org/10.3390/microorganisms12101949
+# Source: microorganisms-12-01949-s001.zip, "Supplementary table 4.xlsx", sheets "Proteins_Phagocytosis" and "Proteins_Response to bacterium"; LFQ values from "Supplementary table 2.xlsx" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11509842/supplementaryFiles)
+# Selection: the paper's GO-annotated subsets of the 684 host FCV proteins (Table S2) for the enriched terms phagocytosis and response to bacterium (Table S4); proteins in both lists merged; gene name as given in parentheses; score = mean of the four replicate LFQ intensity values in Table S2, as published
+# Licensed CC BY 4.0
+protein	gene	GO_term	mean_LFQ
+P07830	act1/act11/act12/act13/act14/act15/act16/act19/act2/act20/act21/act4/act5/act6/act7/act8/act9	phagocytosis	28.414
+Q54UU8	trrA	phagocytosis	25.997
+P13466	abpC	phagocytosis	24.339
+Q9U3X4	sdhA	phagocytosis	23.222
+O96621	arpB	phagocytosis	22.66
+P05095	abpA	phagocytosis	22.433
+O96624	arcC	phagocytosis	21.849
+P54686	DAip1	phagocytosis	21.747
+P36411	rab7A	phagocytosis	21.64
+O96622	arcA	phagocytosis	21.56
+O96623	arcB	phagocytosis	21.484
+O96625	arcD	phagocytosis	21.395
+P15064	rasG	phagocytosis	20.452
+Q75JI3	nsfA	phagocytosis	19.776
+Q03380	comA	phagocytosis; response to bacterium	22.839
+P42528	arpC	phagocytosis; response to bacterium	22.497
+P27133	corA	phagocytosis; response to bacterium	22.488
+Q55E54	corB	phagocytosis; response to bacterium	21.031
+P0DJ27	cofA/cofB	response to bacterium	27.459
+Q55GQ5	sodA	response to bacterium	27.195
+Q6IMN8	alrA	response to bacterium	27.13
+P22887	ndkC-1/ndkC-2	response to bacterium	26.892
+P42530	dscE	response to bacterium	26.81
+P02886	dscA-1/dscA-2	response to bacterium	25.956
+P0CT32	efaAI/efaAII	response to bacterium	25.683
+Q86IC8	omt6	response to bacterium	25.265
+P34093	ndkM	response to bacterium	25.091
+P24639	nxnA	response to bacterium	24.254
+P34121	coaA	response to bacterium	24.148
+Q54F93	DDB_G0290997	response to bacterium	23.967
+P15112	efbA	response to bacterium	23.851
+Q9GRF8	efa1B	response to bacterium	23.812
+P29505	cxeA	response to bacterium	23.559
+Q23921	pkiA	response to bacterium	23.549
+P13022	acpB	response to bacterium	23.306
+P54647	vatA	response to bacterium	23.236
+Q95UQ1	rdiA	response to bacterium	23.234
+Q65YR8	cpiA	response to bacterium	23.234
+P13021	acpA	response to bacterium	23.063
+Q557E0	hspE-1/hspE-2	response to bacterium	22.931
+Q55BY1	rpsA	response to bacterium	22.802
+Q76NU1	vatB	response to bacterium	22.635
+Q54X53	rpl21	response to bacterium	22.594
+Q75JQ1	aspS1	response to bacterium	22.446
+Q54VA2	fumH	response to bacterium	22.357
+Q54WR9	glnA3	response to bacterium	22.265
+P54632	fttB	response to bacterium	22.25
+Q54HG2	ctxA	response to bacterium	22.185
+P90532	cdcD	response to bacterium	21.89
+P34118	mvpA	response to bacterium	21.711
+P32256	tubB	response to bacterium	21.59
+Q54PX9	rps12	response to bacterium	21.519
+Q54I98	smt1	response to bacterium	21.235
+Q54EN4	pdi2	response to bacterium	20.916
+Q54PA9	prsA	response to bacterium	20.534

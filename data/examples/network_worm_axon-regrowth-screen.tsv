@@ -1,0 +1,88 @@
+# Genetic screen of 613 C. elegans genes (mutants) for PLM mechanosensory axon regrowth 24 h after laser axotomy; genes whose mutants regrow significantly less (promote regrowth) or more (inhibit regrowth) than matched controls
+# Kim KW, Tang NH, Piggott CA, et al. 2018. Expanded genetic screening in Caenorhabditis elegans identifies new regulators and an inhibitory role for NAD+ in axon regeneration. eLife 7:e39756. https://doi.org/10.7554/eLife.39756
+# Source: article Table 1 ("Mutants displaying reduced PLM regrowth") and Table 2 ("Mutants displaying increased PLM regrowth"), read from the Europe PMC full text (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6281318/fullTextXML); screened gene list in elife-39756-fig1-data1.xlsx
+# Cutoff: the paper's significance (Student's t-test vs controls, *p<0.05, **p<0.01, ***p<0.001); all listed genes kept: 49 reduced (Table 1) and 33 increased (Table 2; the text states 49 and 34); score = normalized regrowth relative to controls; footnote letters removed from names
+# Licensed CC BY 4.0
+gene	uniprot	Normalized regrowth (24 hr)	P value	Mutations	effect	class
+adt-1		0.75	**	cn30	reduced regrowth	Cell Adhesion and ECM
+adt-3		0.71	**	ok923	reduced regrowth	Cell Adhesion and ECM
+C05D9.7	Q9GYK1	0.6	***	ok2931	reduced regrowth	Cell Adhesion and ECM
+dpy-10	P35800	0.67	**	e128	reduced regrowth	Cell Adhesion and ECM
+F35G2.1	Q20063	0.68	***	ok1669	reduced regrowth	Cell Adhesion and ECM
+gly-2		0.69	*	tm839	reduced regrowth	Cell Adhesion and ECM
+osm-11	O45346	0.72	**	rt142	reduced regrowth	Cell Adhesion and ECM
+zig-1	G5EGI7	0.68	*	ok784	reduced regrowth	Cell Adhesion and ECM
+zig-3	G5EEY6	0.73	**	ok1476	reduced regrowth	Cell Adhesion and ECM
+abts-1	B3WFV9	0.74	***	ok1566	reduced regrowth	Channels and transporters
+mfsd-6	Q95Y88	0.68	**	ju833	reduced regrowth	Channels and transporters
+fli-1	P34268	0.61	***	ky535	reduced regrowth	Cytoskeleton and motors
+mec-12	P91910	0.73	*	e1605	reduced regrowth	Cytoskeleton and motors
+mec-17	O45100	0.55	**	ok2109	reduced regrowth	Cytoskeleton and motors
+tba-9	Q20221	0.7	**	ok1858	reduced regrowth	Cytoskeleton and motors
+vab-10		0.78	*	e698	reduced regrowth	Cytoskeleton and motors
+plk-1	P34331	0.59	**	or683ts	reduced regrowth	Protein kinases and phosphatases
+svh-2	H2KZU7	0.68	***	tm737	reduced regrowth	Protein kinases and phosphatases
+cept-2	G5EC25	0.68	*	ok3135	reduced regrowth	Neurotransmission, metabolism, and lipid
+cpr-1	P25807	0.6	***	ok1344	reduced regrowth	Neurotransmission, metabolism, and lipid
+dhhc-11	Q9N5D8	0.75	***	gk1105	reduced regrowth	Neurotransmission, metabolism, and lipid
+eat-3	Q18965	0.74	**	tm1107	reduced regrowth	Neurotransmission, metabolism, and lipid
+npr-20		0.49	***	ok2575	reduced regrowth	Neurotransmission, metabolism, and lipid
+ptps-1	O02058	0.55	***	tm1984	reduced regrowth	Neurotransmission, metabolism, and lipid
+supr-1		0.78	**	ju1118	reduced regrowth	Neurotransmission, metabolism, and lipid
+jph-1	Q22667	0.77	**	ok2823	reduced regrowth	Trafficking
+rab-8	G5EFC1	0.77	**	tm2526	reduced regrowth	Trafficking
+rsef-1	Q22908	0.66	*	ok1356	reduced regrowth	Trafficking
+osm-7	O45750	0.57	**	tm2256	reduced regrowth	Signaling and interactions
+par-2	Q965F9	0.63	***	or373	reduced regrowth	Signaling and interactions
+rgl-1	Q19852	0.74	**	ok1921	reduced regrowth	Signaling and interactions
+wdfy-3		0.52	***	ok912	reduced regrowth	Signaling and interactions
+wdr-23	P90794	0.66	***	tm1817	reduced regrowth	Signaling and interactions
+brap-2	Q95QN6	0.61	***	ok1492	reduced regrowth	Protein turnover, proteases, cell death
+cdc-48.1	P54811	0.69	**	tm544	reduced regrowth	Protein turnover, proteases, cell death
+ced-9	P41958	0.73	*	n1950	reduced regrowth	Protein turnover, proteases, cell death
+dnj-23	Q22751	0.69	**	tm7102	reduced regrowth	Protein turnover, proteases, cell death
+fbxc-50	O16541	0.73	*	tm5154	reduced regrowth	Protein turnover, proteases, cell death
+math-33	Q7JKC3	0.64	***	ok2974	reduced regrowth	Protein turnover, proteases, cell death
+skr-5	Q9XU27	0.69	*	ok3068	reduced regrowth	Protein turnover, proteases, cell death
+tep-1		0.53	***	tm3720	reduced regrowth	Protein turnover, proteases, cell death
+mec-8	G5ECJ4	0.23	***	e398	reduced regrowth	Gene expression and RNA regulation
+rict-1		0.58	***	mg360	reduced regrowth	Gene expression and RNA regulation
+rtcb-1	P90838	0.58	***	gk451	reduced regrowth	Gene expression and RNA regulation
+skn-1	P34707	0.78	*	ok2315	reduced regrowth	Gene expression and RNA regulation
+smg-3	C2BR97	0.68	***	r930	reduced regrowth	Gene expression and RNA regulation
+syd-9	A0A5E4M3Q4	0.47	***	ju49	reduced regrowth	Gene expression and RNA regulation
+tdp-1	D0VWM8	0.7	***	ok803	reduced regrowth	Gene expression and RNA regulation
+wdr-5.1	Q17963	0.7	***	ok1417	reduced regrowth	Gene expression and RNA regulation
+emb-9		1.37	***	tk75	increased regrowth	Cell adhesion and ECM
+epi-1		1.33	***	gm121	increased regrowth	Cell adhesion and ECM
+mig-17		1.24	***	k174	increased regrowth	Cell adhesion and ECM
+ZC116.3		1.4	***	ok1618	increased regrowth	Cell adhesion and ECM
+lgc-12	Q95Y94	1.33	**	ok3546	increased regrowth	Channels and transporters
+tmc-1	D3KZG3	1.31	**	ok1859	increased regrowth	Channels and transporters
+ivns-1	Q21854	1.31	**	ok3171	increased regrowth	Cytoskeleton and motors
+twf-2	Q20173	1.33	**	ok3564	increased regrowth	Cytoskeleton and motors
+nud-1	G5EE74	1.3	**	ok552	increased regrowth	Cytoskeleton and motors
+tba-7	O18154	1.45	***	gk787939	increased regrowth	Cytoskeleton and motors
+nmat-2	P91851	1.55	***	tm2905	increased regrowth	Neurotransmission, metabolism, and lipid
+qns-1	Q9XXK6	1.13	*	ju1563	increased regrowth	Neurotransmission, metabolism, and lipid
+mgl-1	Q09630	1.24	**	tm1811	increased regrowth	Neurotransmission, metabolism, and lipid
+mgl-3	A1IMB8	1.32	**	tm1766	increased regrowth	Neurotransmission, metabolism, and lipid
+npr-25	O18014	1.27	**	ok2008	increased regrowth	Neurotransmission, metabolism, and lipid
+ucr-2.3	Q9TZ33	1.41	***	ok3073	increased regrowth	Neurotransmission, metabolism, and lipid
+nex-1	G5EEA8	1.38	***	gk148	increased regrowth	Trafficking
+nex-2	Q27512	1.23	**	ok764	increased regrowth	Trafficking
+snb-6	Q94057	1.3	**	tm5195	increased regrowth	Trafficking
+drag-1	G5EDE5	1.52	**	tm3773	increased regrowth	Signaling and interactions
+ect-2	Q9U364	1.31	**	ku427	increased regrowth	Signaling and interactions
+lin-2	P54936	1.31	***	e1309	increased regrowth	Signaling and interactions
+magi-1	C1P633	1.4	***	zh66	increased regrowth	Signaling and interactions
+prmt-5	P46580	1.26	**	gk357	increased regrowth	Signaling and interactions
+rap-1	Q18246	1.33	***	tm861	increased regrowth	Signaling and interactions
+smz-1	Q18167	1.39	*	ok3576	increased regrowth	Signaling and interactions
+trxr-1		1.3	*	tm2047	increased regrowth	Signaling and interactions
+natb-1	Q965S3	1.29	*	ju1405	increased regrowth	Protein turnover, proteases, cell death
+rnf-5	Q09463	1.28	*	tm794	increased regrowth	Protein turnover, proteases, cell death
+ulp-5	O44984	1.22	***	tm3063	increased regrowth	Protein turnover, proteases, cell death
+csr-1	H2KZD5	1.24	***	fj54	increased regrowth	Gene expression and RNA regulation
+hda-6	Q20296	1.29	***	tm3436	increased regrowth	Gene expression and RNA regulation
+elpc-3	Q23651	1.31	***	ok2452	increased regrowth	Gene expression and RNA regulation

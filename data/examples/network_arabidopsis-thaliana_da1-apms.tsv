@@ -1,0 +1,38 @@
+# Example: Proteins co-purifying with the ubiquitin-dependent peptidase DA1 (anti-GFP immunoprecipitation from 35S::GFP-DA1 seedlings vs control, label-free quantification); bait DA1 included, GFP tag removed.
+# Source: Vanhaeren H, Chen Y, Vermeersch M, et al. (2020) UBP12 and UBP13 negatively regulate the activity of the ubiquitin-dependent peptidases DA1, DAR1 and DAR2. eLife 9:e52276. https://doi.org/10.7554/eLife.52276
+# Source: elife-52276-fig1-data1-v2.xlsx (Figure 1-source data 1), sheet "F1A_DA1 interactors" (https://cdn.elifesciences.org/articles/52276/elife-52276-fig1-data1-v2.xlsx)
+# Cutoff: rows marked significant ("+") in the sheet (paper: FDR = 0.01, S0 = 1, permutation-based FDR-corrected t-test); 32 rows, GFP tag row dropped, 31 proteins incl. DA1; sorted by Difference (log2 enrichment)
+# Licensed CC BY 4.0
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+protein	role	description	Difference	-LOG(P-value)	uniprot
+AT1G19270	bait	DA1	6.119	4.342	
+AT3G11910	prey	UBP13	4.614	3.829	Q84WU2
+AT5G51110	prey	Transcriptional coactivator/pterin dehydratase	4.508	3.830	Q9LU63
+AT3G12915	prey	Ribosomal protein S5/Elongation factor G/III/V family protein	3.864	3.061	F4JB05
+AT3G47470	prey	LHCA4, CAB4 | light-harvesting chlorophyll-protein complex I subunit A4	3.812	1.748	P27521
+AT5G06600	prey	UBP12	3.756	2.580	Q9FPT1
+AT4G27170	prey	SESA4, AT2S4 | seed storage albumin 4	3.270	3.002	P15460
+AT1G55670	prey	PSAG | photosystem I subunit G	3.267	2.277	Q9S7N7
+AT3G18190	prey	TCP-1/cpn60 chaperonin family protein	3.097	2.363	Q9LV21
+AT3G52140	prey	tetratricopeptide repeat (TPR)-containing protein	3.093	3.391	F4J5S1
+AT1G16890	prey	UBC36, UBC13B | ubiquitin-conjugating enzyme 36	3.060	3.533	Q9FZ48
+AT4G39520	prey	GTP-binding protein-related	3.044	3.453	Q9SVA6
+AT3G02260	prey	BIG, DOC1, TIR3, UMB1, ASA1, LPR1, CRM1 | auxin transport protein (BIG)	3.043	2.510	
+AT3G13160	prey	Tetratricopeptide repeat (TPR)-like superfamily protein	3.037	2.038	Q9LK57
+AT3G61470	prey	LHCA2 | photosystem I light harvesting complex gene 2	3.021	1.880	Q9SYW8
+AT1G02150	prey	Tetratricopeptide repeat (TPR)-like superfamily protein	2.852	3.482	Q8LPS6
+AT3G19130	prey	ATRBP47B, RBP47B | RNA-binding protein 47B	2.659	2.473	Q0WW84
+AT5G35620	prey	LSP1, EIF(ISO)4E, LSP, EIF4E2, eIFiso4E | Eukaryotic initiation factor 4E protein	2.640	3.123	O04663
+AT3G48870	prey	HSP93-III | Clp ATPase	2.610	1.962	Q9SXJ7
+AT4G39980	prey	DHS1 | 3-deoxy-D-arabino-heptulosonate 7-phosphate synthase 1	2.516	4.172	P29976
+AT5G60600	prey	GCPE, ISPG, CSB3, CLB4, HDS | 4-hydroxy-3-methylbut-2-enyl diphosphate synthase	2.436	2.424	F4K0E8
+ATCG00670	prey	CLPP1, PCLPP | plastid-encoded CLP P	2.351	2.424	P56772
+AT1G53750	prey	RPT1A | regulatory particle triple-A 1A	2.321	3.168	Q9SSB5
+AT1G61520	prey	LHCA3 | photosystem I light harvesting complex gene 3	2.286	3.457	Q9SY97
+AT1G78570	prey	RHM1, ROL1, ATRHM1 | rhamnose biosynthesis 1	2.232	2.709	Q9SYM5
+AT1G15820	prey	LHCB6, CP24 | light harvesting complex photosystem II subunit 6	2.198	3.302	Q9LMQ2
+AT4G27500	prey	PPI1 | proton pump interactor 1	2.159	3.735	O23144
+AT3G44110	prey	ATJ3, ATJ | DNAJ homologue 3	2.034	3.135	Q94AW8
+AT5G65010	prey	ASN2 | asparagine synthetase 2	1.990	3.677	Q9LV77
+AT5G16070	prey	TCP-1/cpn60 chaperonin family protein	1.985	3.691	Q8L7N0
+AT4G27440	prey	PORB | protochlorophyllide oxidoreductase B	1.782	4.677	P21218

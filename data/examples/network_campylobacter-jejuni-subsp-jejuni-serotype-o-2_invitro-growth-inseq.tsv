@@ -1,0 +1,65 @@
+# Campylobacter jejuni 81-176 genes whose transposon insertion mutants grow less well in all four in vitro conditions tested (rich medium and a defined DMEM medium with asparagine, glutamine or serine), from insertion sequencing (INSeq)
+# Gao B, Vorwerk H, Huber C, Lara-Tejero M, Mohr J, Goodman AL, Eisenreich W, Galán JE, Hofreuter D. 2017. Metabolic and fitness determinants for in vitro growth and intestinal colonization of the bacterial pathogen Campylobacter jejuni. PLoS Biol 15(5):e2001390. https://doi.org/10.1371/journal.pbio.2001390
+# Source: Table S2 (pbio.2001390.s019.xlsx), section A, "List of genes whose insertion mutants show decreased growth in all 4 in vitro conditions tested" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5438104/supplementaryFiles)
+# Cutoff: the published section A list, which is the paper's own set of genes with decreased growth in all four in vitro conditions; all 58 genes kept, with the functional category the table groups them under
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag = 81-176 Gene ID as published; gene = Symbol as published; uniprot = the NCTC 11168 protein in the species index, by blastp best hit of the 81-176 protein (RefSeq CDS translations of CP000538.1) against the index at >= 90% identity and >= 90% coverage of both sequences; the four log2 fold change columns as published; category = the table's functional grouping
+locus_tag	gene	uniprot	log2fc_rich_medium	log2fc_dmem_asn	log2fc_dmem_gln	log2fc_dmem_ser	category
+CJJ81176_0052		Q0PCA0	-4.044	-4.275	-5.023	-5.067	Transporters
+CJJ81176_0177	znuB	Q0PBZ6	-4.773	-3.183	-4.773	-4.773	Transporters
+CJJ81176_0179	znuA	Q0PBZ4	-4.973	-4.973	-4.973	-4.973	Transporters
+CJJ81176_0795	metN	Q0PAB6	-6.790	-3.179	-4.608	-5.116	Transporters
+CJJ81176_1616	sdaC	Q0P803	-6.873	-4.376	-5.534	-8.388	Transporters
+CJJ81176_0134	birA	Q0PC38	-3.017	-3.017	-3.017	-3.017	Energy production and coenzyme metabolism
+CJJ81176_0162	accD	Q0PC10	-3.603	-3.603	-3.603	-3.603	Energy production and coenzyme metabolism
+CJJ81176_0327	bioG		-3.724	-3.850	-6.132	-6.279	Energy production and coenzyme metabolism
+CJJ81176_0336	lysA	Q9PII5	-4.018	-3.148	-4.018	-4.018	Energy production and coenzyme metabolism
+CJJ81176_0434	frdB	Q0PBA0	-3.423	-4.528	-6.494	-8.551	Energy production and coenzyme metabolism
+CJJ81176_1067	thiF	Q0P9K6	-3.158	-3.718	-3.718	-3.718	Energy production and coenzyme metabolism
+CJJ81176_1511	moeA2	Q0P8A0	-3.711	-3.287	-3.908	-4.381	Energy production and coenzyme metabolism
+CJJ81176_0258	pyrE	Q9PIR1	-5.663	-5.663	-5.663	-5.663	Nucleotide metabolism
+CJJ81176_0540	purC	Q9PHZ9	-4.437	-5.063	-5.063	-5.063	Nucleotide metabolism
+CJJ81176_0825	pyrD	Q0PA86	-6.284	-6.761	-6.761	-6.761	Nucleotide metabolism
+CJJ81176_1486	carA	Q9PMG8	-6.719	-6.719	-6.719	-6.719	Nucleotide metabolism
+CJJ81176_1490	purA	Q9PMG4	-7.470	-5.363	-6.714	-7.470	Nucleotide metabolism
+CJJ81176_0182	trxB	Q0PBZ1	-3.477	-3.477	-3.477	-3.477	Respiration and response to oxidative stress
+CJJ81176_0392	ccoG_rdxA_fixG	Q0PBE1	-3.312	-3.010	-3.848	-4.925	Respiration and response to oxidative stress
+CJJ81176_0800	tpx	Q9PPE0	-5.933	-4.140	-5.210	-6.478	Respiration and response to oxidative stress
+CJJ81176_0919		Q0P9Y8	-3.187	-3.187	-3.187	-3.187	Respiration and response to oxidative stress
+CJJ81176_1124		Q0P9E8	-4.411	-4.411	-4.411	-4.411	Respiration and response to oxidative stress
+CJJ81176_1222		Q0P949	-4.123	-4.719	-3.831	-4.719	Respiration and response to oxidative stress
+CJJ81176_1382		Q0P8M9	-3.017	-3.017	-3.017	-3.017	Respiration and response to oxidative stress
+CJJ81176_1553	nuoL	Q9PMA7	-5.019	-5.019	-4.346	-5.019	Respiration and response to oxidative stress
+CJJ81176_0164	bamA	Q0PC08	-4.719	-4.719	-4.046	-4.719	Cell envelop biogenesis
+CJJ81176_0260	secG	Q0PBR9	-3.925	-3.925	-3.925	-3.925	Cell envelop biogenesis
+CJJ81176_1430			-7.527	-6.453	-6.066	-6.476	Cell envelop biogenesis
+CJJ81176_1431			-3.039	-3.249	-4.356	-3.337	Cell envelop biogenesis
+CJJ81176_1436			-3.106	-3.388	-4.570	-3.582	Cell envelop biogenesis
+CJJ81176_1440	kpsT	Q0P8G8	-5.928	-4.184	-5.408	-6.558	Cell envelop biogenesis
+CJJ81176_1441	kpsM	Q0P8G7	-3.825	-3.825	-3.069	-3.825	Cell envelop biogenesis
+CJJ81176_0026	ruvC	Q9PLU8	-4.662	-4.662	-4.662	-4.662	DNA replication and repair
+CJJ81176_0609	nidH	Q9PHT5	-5.754	-5.997	-5.079	-6.962	DNA replication and repair
+CJJ81176_0672		Q0PAM4	-4.655	-3.178	-5.304	-5.304	DNA replication and repair
+CJJ81176_0969		Q0P9V4	-3.545	-4.514	-5.264	-6.648	DNA replication and repair
+CJJ81176_1474		Q0P8D6	-4.725	-3.109	-3.970	-3.410	DNA replication and repair
+CJJ81176_1475		Q0P8D5	-4.668	-3.549	-5.228	-5.228	DNA replication and repair
+CJJ81176_0189		Q0PBY4	-4.603	-4.603	-4.603	-4.603	Translation and protein turnover
+CJJ81176_0259	frr	Q9PIR0	-4.018	-3.313	-4.018	-4.018	Translation and protein turnover
+CJJ81176_0131	obgE	Q0PC41	-4.188	-4.188	-4.188	-4.188	Translation and protein turnover
+CJJ81176_1125	clpS	Q9PNI7	-4.925	-4.124	-4.925	-4.925	Translation and protein turnover
+CJJ81176_1126	clpA	Q0P9E6	-5.634	-4.574	-4.959	-5.745	Translation and protein turnover
+CJJ81176_1243	dnaJ-1	Q0P927	-5.148	-4.358	-4.392	-5.148	Translation and protein turnover
+CJJ81176_1093	fliW	Q0P9H9	-5.304	-5.304	-5.304	-5.304	Flagellar Motility
+CJJ81176_0149		Q0PC23	-4.125	-3.097	-3.702	-5.106	Hypothetical proteins
+CJJ81176_0193		Q0PBY0	-3.925	-3.925	-3.925	-3.925	Hypothetical proteins
+CJJ81176_0367		Q0PBG6	-6.397	-6.371	-6.818	-9.334	Hypothetical proteins
+CJJ81176_0447		Q0PB83	-4.719	-4.719	-4.719	-4.719	Hypothetical proteins
+CJJ81176_0518		Q0PB16	-4.973	-4.973	-4.973	-4.973	Hypothetical proteins
+CJJ81176_0547		Q0PAZ6	-3.718	-3.718	-3.718	-3.718	Hypothetical proteins
+CJJ81176_0638		Q0PAQ8	-7.229	-6.524	-7.229	-7.229	Hypothetical proteins
+CJJ81176_0747		Q0PAF5	-4.090	-5.267	-4.025	-4.427	Hypothetical proteins
+CJJ81176_0797		Q0PAB4	-3.187	-3.187	-3.187	-3.187	Hypothetical proteins
+CJJ81176_0886			-4.662	-3.873	-3.906	-3.508	Hypothetical proteins
+CJJ81176_0982		Q9PNX6	-3.187	-3.187	-3.187	-3.187	Hypothetical proteins
+CJJ81176_1055		Q0P9L6	-3.513	-4.339	-3.803	-3.070	Hypothetical proteins
+CJJ81176_1631		Q0P7Y8	-4.781	-4.551	-4.452	-5.341	Hypothetical proteins

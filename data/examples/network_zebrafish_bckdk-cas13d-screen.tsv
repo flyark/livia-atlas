@@ -1,0 +1,55 @@
+# All 49 maternal mRNAs (kinases, phosphatases and regulators of protein phosphorylation) knocked down in a CRISPR-RfxCas13d maternal screen in zebrafish embryos, scored for epiboly delay at 6 hpf
+# Hernández-Huertas L, Moreno-Sánchez I, Crespo-Cuadrado J, et al. 2025. CRISPR-RfxCas13d screening uncovers Bckdk as a post-translational regulator of maternal-to-zygotic transition in teleosts. EMBO J 44:7021-7059. https://doi.org/10.1038/s44318-025-00617-8
+# Source: 44318_2025_617_MOESM2_ESM.xlsx (Dataset EV1, sheet "Maternal_screening_info": the 49 screened genes) and Fig1.xlsx in 44318_2025_617_MOESM4_ESM.zip (Figure 1 source data, sheet "Fig1C") (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12669676/supplementaryFiles)
+# Cutoff: the paper calls a knockdown positive when more than 35% of embryos show developmental delay (30-50% epiboly at 6 hpf); 7 of 49 positive (call column); all 49 screened genes listed (gfp, rfp and nanog controls left out); score = mean over the published replicates of the percentages at 30% plus 50% epiboly (Fig1C sheet); the paper also reports a 24 hpf phenotype for mibp (Fig EV1E), not flagged here
+# Licensed CC BY 4.0
+gene	uniprot	% embryos at 30-50% epiboly at 6 hpf (mean of replicates)	call	gene_id
+bckdk	B0R159	62.5	positive	ENSDARG00000016904
+ppp4r2a	Q6P964	49.28	positive	ENSDARG00000026540
+calm1a	Q6PI52	47.26	positive	ENSDARG00000021811
+calm2a	Q6PI52	41.27	positive	ENSDARG00000031427
+mknk1	F1QJV2	39.41	positive	ENSDARG00000018411
+cab39l	Q5U373	38.79	positive	ENSDARG00000036658
+mknk2a	Q7ZVV9	36.67	positive	ENSDARG00000011373
+ppp1r8b	A0AB32T6D8	33.1	negative	ENSDARG00000022430
+pim3		30.34	negative	ENSDARG00000055129
+stk26	B1WB98	29.43	negative	ENSDARG00000060390
+rac1a	Q7ZSZ9	26.76	negative	ENSDARG00000074849
+ppp1cab	Q7ZVR3	22.58	negative	ENSDARG00000071566
+plpp2b	A0A8M1PDR3	21.59	negative	ENSDARG00000028896
+ppp4r2b	A1L1M4	20.95	negative	ENSDARG00000053447
+dctpp1	Q7T009	20.26	negative	ENSDARG00000054334
+pi4k2b	Q49GP5	19.48	negative	ENSDARG00000013881
+akirin1	Q7T377	19.16	negative	ENSDARG00000039969
+ptp4a2b	Q6TLG9	18.61	negative	ENSDARG00000035676
+pip4k2ca		18.07	negative	ENSDARG00000031020
+pdik1l	Q32PP3	18.05	negative	ENSDARG00000056509
+mibp	Q7ZW81	17.36	negative	ENSDARG00000101362
+rps6ka3a		17.09	negative	ENSDARG00000035556
+stk3	Q7ZUQ3	17.04	negative	ENSDARG00000011312
+vrk3	A0A8M1N4J9	16.97	negative	ENSDARG00000036056
+ppp4ca	A8WGP3	16.71	negative	ENSDARG00000070570
+ctdnep1b	Q5U3T3	16.29	negative	ENSDARG00000035781
+ppm1g	F1QJE5	16.23	negative	ENSDARG00000075559
+ctdspl2a	Q08BB5	15.61	negative	ENSDARG00000061587
+ppp4cb	A9JRC7	15.3	negative	ENSDARG00000076439
+pak4	F1QZR2	15	negative	ENSDARG00000018110
+ppp1r13bb	A0A2R8QDZ7	14.28	negative	ENSDARG00000009142
+ppp1r3b	Q803M0	14.28	negative	ENSDARG00000044691
+camk2g1	Q4V9P8	13.75	negative	ENSDARG00000071395
+zgc:86598	Q6IQV0	13.38	negative	ENSDARG00000014222
+cab39l1	A0AB32T8Z7	13.11	negative	ENSDARG00000021374
+ppp1r2	Q6P0J0	11.76	negative	ENSDARG00000054007
+ror2	E7FCE4	11.29	negative	ENSDARG00000076227
+itpkca	E7F4R8	10.89	negative	ENSDARG00000002994
+cab39		10.13	negative	ENSDARG00000043451
+ppp1caa	Q6NSN6	9.85	negative	ENSDARG00000003486
+ctdsplb		9.83	negative	ENSDARG00000062116
+akip1	Q1L8C6	9.3	negative	ENSDARG00000069037
+gbp	Q9YI01	8.79	negative	ENSDARG00000040059
+rhogc	Q803L7	8.32	negative	ENSDARG00000028401
+baiap2l1a	E7F8C7	8.13	negative	ENSDARG00000029305
+tlk2	Q1ECX4	7.77	negative	ENSDARG00000010779
+hexim1	A5D8S8	6.71	negative	ENSDARG00000036482
+marcksb		5.85	negative	ENSDARG00000008803
+akap8l	A0A0H2UKW6	3.75	negative	ENSDARG00000099635

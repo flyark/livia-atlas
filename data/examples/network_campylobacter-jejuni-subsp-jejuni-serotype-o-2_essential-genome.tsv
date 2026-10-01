@@ -1,0 +1,152 @@
+# Essential genes of Campylobacter jejuni NCTC 11168 from Tn5 transposon insertion sequencing of a seed library and a reconstructed library, called with the EL-ARTIST pipeline
+# Mandal RK, Jiang T, Kwon YM. 2017. Essential genome of Campylobacter jejuni. BMC Genomics 18:616. https://doi.org/10.1186/s12864-017-4032-8
+# Source: Additional file 2 (12864_2017_4032_MOESM2_ESM.xlsx), sheet "SH2", the paper's list of 166 essential genes (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5557513/supplementaryFiles)
+# Cutoff: the published list of 166 essential genes, restricted to the 145 that carry an EL-ARTIST call in all three libraries (the remaining 21 are NA in every library); calls are EOG (essential for optimal growth), DEG (domain essential for growth) and NEG, as the file's legend defines them
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag and gene = Locus tag and Locus as published; uniprot = the accession matched to the species index; protein_name as published; the three call columns are the published essential calls for the seed library, the seed library with dual priming oligonucleotides, and the reconstructed library
+locus_tag	gene	uniprot	protein_name	call_seed	call_seed_dpo	call_reconstructed
+Cj0094	rplU	Q0PC43	50S ribosomal protein L21	NEG	NEG	NEG
+Cj0098	fmt	Q9PJ28	methionyl-tRNA formyltransferase	EOG	NEG	NEG
+Cj0099	birA	Q0PC38	biotin-	EOG	NEG	NEG
+Cj0102	atpF'	Q0PC35	ATP synthase subunit B\'	NEG	NEG	NEG
+Cj0104	atpH	Q0PC33	ATP synthase subunit delta	EOG	EOG	EOG
+Cj0110	exbD3	Q0PC27	ExbD/TolR family transport protein	NEG	NEG	NEG
+Cj0113	pal	Q0PC24	peptidoglycan associated lipoprotein	NEG	NEG	NEG
+Cj0114	-	Q0PC23	periplasmic protein	EOG	EOG	EOG
+Cj0117	pfs	Q0PC20	aminodeoxyfutalosine nucleosidase	EOG	EOG	EOG
+Cj0127c	accD	Q0PC10	acetyl-CoA carboxylase carboxyl transferase subunit beta	NEG	NEG	NEG
+Cj0132	lpxC	Q9PIZ5	UDP-3-O	EOG	EOG	EOG
+Cj0151c	-	Q0PBY6	periplasmic protein	NEG	NEG	NEG
+Cj0180	exbD1	Q0PBV9	biopolymer transport protein	NEG	NEG	NEG
+Cj0191c	def	Q9PIT8	peptide deformylase	NEG	NEG	NEG
+Cj0205	uppP	Q9PIS4	undecaprenyl-diphosphatase	NEG	NEG	NEG
+Cj0206	thrS	Q9PIS3	threonine--tRNA ligase	EOG	EOG	EOG
+Cj0231c	nrdF	Q0PBS3	ribonucleotide-diphosphate reductase subunit beta	EOG	NEG	NEG
+Cj0273	fabZ	Q9PIM2	3-hydroxyacyl-ACP dehydratase	EOG	NEG	NEG
+Cj0286c	-	Q0PBM0	hypothetical protein Cj0286c	NEG	NEG	NEG
+Cj0288c	lpxB		ipid-A-disaccharide synthase	NEG	NEG	NEG
+Cj0311	-	Q9PII8	50S ribosomal protein L25	NEG	NEG	EOG
+Cj0329c	plsX	Q9PIH0	phosphate acyltransferase	NEG	NEG	NEG
+Cj0355c	-	Q0PBF4	two-component regulator	EOG	EOG	EOG
+Cj0357c	-	Q9PIE4	glycerol-3-phosphate acyltransferase PlsY	EOG	EOG	EOG
+Cj0369c	-	Q0PBE1	ferredoxin domain-containing integral membrane protein	NEG	NEG	NEG
+Cj0382c	nusB	Q9PIC0	transcription antitermination protein NusB	NEG	NEG	NEG
+Cj0383c	ribH	Q9PIB9	6,7-dimethyl-8-ribityllumazine synthase	NEG	NEG	NEG
+Cj0389	serS	Q9PIB3	serine--tRNA ligase	NEG	EOG	EOG
+Cj0395c	-	Q0PBB5	hypothetical protein Cj0395c	NEG	NEG	NEG
+Cj0430	-	Q0PB80	integral membrane protein	EOG	NEG	NEG
+Cj0451	rep	Q0PB62	ribulose-phosphate 3-epimerase	NEG	NEG	NEG
+Cj0458c	miaB	Q0PB55	tRNA-2-methylthio-N(6)-dimethylallyladenosine synthase	NEG	NEG	NEG
+Cj0473	nusG	Q9PI36	transcription termination/antitermination protein NusG	EOG	EOG	EOG
+Cj0474	rplK	Q9PI35	50S ribosomal protein L11	NEG	NEG	NEG
+Cj0475	rplA	Q9PI34	50S ribosomal protein L1	EOG	EOG	EOG
+Cj0477	rplL	Q9PI32	50S ribosomal protein L7/L12	NEG	NEG	NEG
+Cj0492	rpsG	Q9PI17	30S ribosomal protein S7	NEG	NEG	NEG
+Cj0503c	hemH	Q9PI08	ferrochelatase	NEG	EOG	EOG
+Cj0507	maf	Q9PI04	Maf-like protein	EOG	EOG	EOG
+Cj0516	plsC	Q0PAZ9	1-acyl-SN-glycerol-3-phosphate acyltransferase	NEG	NEG	NEG
+Cj0526c	fliE	Q9PHY8	flagellar hook-basal body protein FliE	NEG	NEG	NEG
+Cj0541	-		polyprenyl synthetase	EOG	EOG	EOG
+Cj0544	-	Q0PAX2	integral membrane protein	NEG	NEG	NEG
+Cj0578c	tatC	Q9PHT8	Sec-independent protein translocase TatC	NEG	NEG	NEG
+Cj0582	lysC	Q0PAT5	aspartatokinase	EOG	EOG	EOG
+Cj0586	ligA	Q0PAT1	DNA ligase	EOG	EOG	EOG
+Cj0596	peb4cbf2		peptidyl-prolyl cis-trans isomerase	NEG	NEG	NEG
+Cj0597	fba	Q0PAS0	fructose-bisphosphate aldolase	NEG	NEG	NEG
+Cj0616	pstB	Q9PHQ1	phosphate ABC transporter ATP-binding protein	NEG	NEG	NEG
+Cj0638c	ppa	Q9PHM9	inorganic pyrophosphatase	NEG	NEG	NEG
+Cj0641	pnk	Q9PHM6	NAD kinase	EOG	NEG	EOG
+Cj0648	-		membrane protein	NEG	NEG	NEG
+Cj0649	-	Q0PAL9	OstA family protein	EOG	EOG	EOG
+Cj0650	engB	Q9PHL7	GTP-binding protein EngB	NEG	NEG	NEG
+Cj0651	-	Q0PAL7	integral membrane protein	NEG	NEG	NEG
+Cj0659c	-		periplasmic protein	NEG	EOG	EOG
+Cj0668	-	Q0PAK6	ATP/GTP-binding protein	NEG	NEG	NEG
+Cj0681	-	Q0PAJ8	hypothetical protein Cj0681	NEG	NEG	NEG
+Cj0692c	-	Q0PAI7	membrane protein	EOG	EOG	EOG
+Cj0707	kdtA	Q0PAH2	3-deoxy-D-manno-octulosonic-acid transferase	NEG	NEG	NEG
+Cj0710	rpsP	Q9PPJ7	30S ribosomal protein S16	NEG	NEG	NEG
+Cj0726c	corA		magnesium and cobalt transport protein	EOG	EOG	EOG
+Cj0765c	hisS	Q9PPF4	histidine--tRNA ligase	EOG	EOG	EOG
+Cj0766c	tmk	Q9PPF3	thymidylate kinase	NEG	NEG	NEG
+Cj0768c	-	Q9PPF1	3-polyprenyl-4-hydroxybenzoate decarboxylase	EOG	EOG	EOG
+Cj0795c	murF	Q0PA95	UDP-N-acetylmuramoyl-tripeptide D-alanyl-D-alanine ligase	EOG	EOG	EOG
+Cj0796c	-	Q0PA94	hydrolase	EOG	EOG	EOG
+Cj0801	-	Q0PA89	integral membrane protein	EOG	EOG	EOG
+Cj0811	lpxK		tetraacyldisaccharide 4\'-kinase	EOG	EOG	NEG
+Cj0821	glmU	Q9PPA2	bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase	EOG	EOG	NEG
+Cj0822	dfp	Q0PA68	bifunctional phosphopantothenoylcysteine decarboxylase/phosphopantothenate synthase	EOG	EOG	NEG
+Cj0837c	-	Q0PA53	hypothetical protein Cj0837c	EOG	EOG	EOG
+Cj0839c	-	Q0PA51	hypothetical protein Cj0839c	NEG	NEG	NEG
+Cj0851c	-	Q0PA39	integral membrane protein	NEG	NEG	NEG
+Cj0852c	-	Q0PA38	integral membrane protein	NEG	NEG	NEG
+Cj0854c	-	Q0PA36	periplasmic protein	NEG	NEG	NEG
+Cj0855	folD	Q0PA35	bifunctional 5,10-methylene-tetrahydrofolate dehydrogenase/ 5,10-methylene-tetrahydrofolate cyclohydrolase	EOG	EOG	EOG
+Cj0881c	-	Q0PA16	hypothetical protein Cj0881c	NEG	NEG	NEG
+Cj0886c	ftsK	A1VZM0	DNA translocase FtsK	EOG	EOG	EOG
+Cj0894c	ispH	P0C632	4-hydroxy-3-methylbut-2-enyl diphosphate reductase	EOG	NEG	NEG
+Cj0897c	pheS	Q9PP34	phenylalanine--tRNA ligase subunit alpha	EOG	NEG	NEG
+Cj0905c	alr	Q9PP26	alanine racemase	NEG	NEG	NEG
+Cj0916c	-	Q0P9Y3	hypothetical protein Cj0916c	NEG	NEG	NEG
+Cj0925	rpiB	Q0P9X4	ribose 5-phosphate isomerase	NEG	NEG	NEG
+Cj0939c	-	Q0P9W0	hypothetical protein Cj0939c	NEG	NEG	NEG
+Cj0941c	-	Q0P9V8	permease	EOG	EOG	EOG
+Cj0959c	-	Q9PNX6	membrane protein insertion efficiency factor	NEG	NEG	NEG
+Cj0961c	rpmH	Q9PNX4	50S ribosomal protein L34	NEG	NEG	NEG
+Cj0972	-	Q0P9T0	hypothetical protein Cj0972	NEG	NEG	NEG
+Cj0988c	-		hypothetical protein Cj0988c	NEG	NEG	NEG
+Cj0991c	-	Q0P9R1	oxidoreductase ferredoxin-type electron transport protein	DEG	DEG	DEG
+Cj0993c	-	Q0P9Q9	hypothetical protein Cj0993c	NEG	NEG	NEG
+Cj0999c	-	Q9PNU1	membrane protein	NEG	NEG	NEG
+Cj1005c	-	Q0P9P7	membrane bound ATPase	EOG	EOG	EOG
+Cj1023c	asd	Q59291	aspartate-semialdehyde dehydrogenase	NEG	NEG	NEG
+Cj1039	murG	Q9PNQ2	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase	NEG	EOG	NEG
+Cj1045c	thiG	Q9PNP6	thiazole synthase	EOG	EOG	EOG
+Cj1046c	moeB	Q0P9K6	thiamine biosynthesis protein ThiF	EOG	EOG	EOG
+Cj1067	pgsA	Q0P9I7	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase	NEG	NEG	NEG
+Cj1070	rpsF	Q9ZAH3	30S ribosomal protein S6	NEG	NEG	NEG
+Cj1071	ssb	O69302	single-stranded DNA-binding protein	NEG	NEG	NEG
+Cj1080c	hemD	Q0P9H4	uroporphyrinogen-III synthase	NEG	NEG	NEG
+Cj1082c	thiD	Q0P9H2	phosphomethylpyrimidine kinase	NEG	NEG	NEG
+Cj1092c	secF	Q0P9G2	protein translocase subunit SecF	EOG	EOG	EOG
+Cj1157	dnaX	Q0P999	DNA polymerase III subunits gamma and tau	EOG	EOG	EOG
+Cj1176c	tatA	Q9PNB9	Sec-independent protein translocase	NEG	NEG	NEG
+Cj1180c	-	Q0P976	ABC transporter ATP-binding protein	NEG	NEG	NEG
+Cj1185c	petB	Q0P971	ubiquinol-cytochrome C reductase cytochrome B subunit	EOG	EOG	EOG
+Cj1186c	petA	Q0P970	ubiquinol-cytochrome C reductase iron-sulfur subunit	EOG	EOG	EOG
+Cj1196c	gpsA	Q9PN99	glycerol-3-phosphate dehydrogenase	NEG	NEG	NEG
+Cj1206c	ftsY	Q0P950	signal recognition particle protein	NEG	NEG	NEG
+Cj1208	-	Q0P948	5-formyltetrahydrofolate cyclo-ligase	NEG	NEG	NEG
+Cj1218c	ribA	Q0P938	riboflavin synthase subunit alpha	NEG	NEG	NEG
+Cj1220	groES	P56970	co-chaperonin GroES	NEG	NEG	NEG
+Cj1247c	-	Q0P909	hypothetical protein Cj1247c	NEG	NEG	NEG
+Cj1271c	tyrS	Q9PN27	tyrosine--tRNA ligase	EOG	EOG	EOG
+Cj1282	mrdB	Q0P8X5	rod shape-determining protein RodA	EOG	NEG	NEG
+Cj1283	ktrB	Q0P8X4	K+ uptake protein	EOG	NEG	NEG
+Cj1290c	accC	Q0P8W7	biotin carboxylase	NEG	NEG	NEG
+Cj1313	pseH	Q0P8U4	N-acetyltransferase	NEG	NEG	NEG
+Cj1346c	dxr		1-deoxy-D-xylulose 5-phosphate reductoisomerase	EOG	EOG	EOG
+Cj1354	ceuD	Q0P8Q5	enterochelin uptake ATP-binding protein	EOG	EOG	EOG
+Cj1355	ceuE	Q0P8Q4	enterochelin uptake substrate-binding protein	EOG	EOG	EOG
+Cj1382c	fldA	Q0P8M7	flavodoxin FldA	NEG	NEG	NEG
+Cj1384c	-	Q0P8M5	hypothetical protein Cj1384c	NEG	NEG	NEG
+Cj1408	fliL	Q0P8K6	flagellar basal body-associated protein FliL	NEG	NEG	NEG
+Cj1459	-	Q0P8F6	hypothetical protein Cj1459	NEG	NEG	EOG
+Cj1480c	rplM	Q0P8D7	50S ribosomal protein L13	NEG	NEG	NEG
+Cj1530	coaE	Q9PMD9	dephospho-CoA kinase	NEG	NEG	NEG
+Cj1570c	nuoJ	Q0P858	NADH-quinone oxidoreductase subunit J	EOG	EOG	EOG
+Cj1578c	nuoB	Q0P850	NADH-quinone oxidoreductase subunit B	EOG	EOG	EOG
+Cj1596	rplQ	Q0P832	50S ribosomal protein L17	NEG	NEG	NEG
+Cj1611	rpsT	Q9PM64	30S ribosomal protein S20	NEG	NEG	NEG
+Cj1637c	-	Q0P7Z1	periplasmic protein	EOG	EOG	EOG
+Cj1639	-	Q0P7Y9	NifU protein	NEG	NEG	NEG
+Cj1652c	murI	Q9PM24	glutamate racemase	EOG	EOG	NEG
+Cj1674	-	Q0P7V5	hypothetical protein Cj1674	NEG	NEG	NEG
+Cj1691c	rplR	Q9PLY7	50S ribosomal protein L18	NEG	NEG	NEG
+Cj1696c	rplX	Q9PLY2	50S ribosomal protein L24	NEG	NEG	NEG
+Cj1698c	rpsQ	Q9PLY0	30S ribosomal protein S17	NEG	NEG	NEG
+Cj1700c	rplP	Q9PLX8	50S ribosomal protein L16	NEG	NEG	NEG
+Cj1702c	rplV	Q9PLX6	50S ribosomal protein L22	NEG	NEG	NEG
+Cj1705c	rplW	Q0P7S6	50S ribosomal protein L23	NEG	NEG	NEG
+Cj1706c	rplD	Q9PLX2	50S ribosomal protein L4	EOG	EOG	EOG
+Cj1714	-	Q0P7R7	hypothetical protein Cj1714	NEG	NEG	NEG

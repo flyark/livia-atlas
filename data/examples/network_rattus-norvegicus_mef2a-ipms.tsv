@@ -1,0 +1,62 @@
+# MEF2A interactome in primary neonatal rat ventricular cardiomyocytes: anti-Flag immunoprecipitation of 3xFlag-MEF2A versus non-transfected lysates, iTRAQ quantification (three MEF2A and three control IPs)
+# Moustafa A, Hashemi S, Brar G, et al. 2023. The MEF2A transcription factor interactome in cardiomyocytes. Cell Death Dis 14(4):240. https://doi.org/10.1038/s41419-023-05665-8
+# Source: 41419_2023_5665_MOESM1_ESM.zip (Supplemental Document 1.xlsx), sheet "Table 1" (MEF2A interactome list) (https://static-content.springer.com/esm/art%3A10.1038%2Fs41419-023-05665-8/MediaObjects/41419_2023_5665_MOESM1_ESM.zip)
+# Cutoff: MEF2A/Control-3 ratio >= 2 in all three MEF2A replicates and Control/Control-3 ratio <= 2 in both controls (the paper's criteria); all 56 listed entries kept (the paper reports 56 proteins incl. the bait); gene names from the GN= field of each description; the 3xFLAG-MEF2A bait row is named Mef2a; score = "Average of MEF2A / control"
+# Licensed CC BY 4.0
+protein	accession	role	Average of MEF2A / control
+Mef2a		bait	6.926
+Kif1b	A0A0G2K7Q8	prey	9.662
+Psmb9	P28077	prey	8.828
+Trim21	D4ACF2	prey	7.284
+Mcts1	Q4G009	prey	7.056
+Psma5	Q6P9V6	prey	6.846
+Sod2	P07895	prey	6.218
+Psma1	P18420	prey	6.198
+Pkm	P11980-2	prey	5.995
+Pkm	P11980	prey	5.745
+B2m	P07151	prey	5.41
+Psmb3	P40112	prey	5.084
+Psma7	A0A0G2K0W9	prey	4.301
+Fth1	P19132	prey	4.162
+Rbpms	F2Z3S5	prey	4.066
+Got2	P00507	prey	3.754
+Hspa5	P06761	prey	3.721
+Eif3e	Q641X8	prey	3.688
+Hspb1	P42930	prey	3.651
+Psmd6	Q6PCT9	prey	3.603
+Aldoa	P05065	prey	3.523
+Sf1	F1LSC3	prey	3.512
+Arpc5l	A1L108	prey	3.497
+Psmb1	Q6PDW4	prey	3.45
+Psme1	Q63797	prey	3.376
+Btf3	Q5U3Y8	prey	3.353
+Pkn3	D3ZC07	prey	3.347
+Mfge8	P70490	prey	3.258
+Tmod1	P70567	prey	3.152
+Psma2	P17220	prey	3.065
+Eif3i	B0BNA7	prey	3.04
+Psmb4	G3V8U9	prey	3.024
+Ssbp1	A0A0G2K747	prey	3.006
+Eif3h	Q6P9U8	prey	2.94
+Suclg1	P13086	prey	2.94
+Ezr	P31977	prey	2.916
+Rdx	E9PT65	prey	2.867
+Clns1a	Q04753	prey	2.828
+Stat3	P52631	prey	2.766
+Vasp	A0A0G2K9C0	prey	2.755
+Psma4	P21670	prey	2.716
+Arpc5	A0A0G2K585	prey	2.662
+Ptrh2	Q5XI86	prey	2.563
+Eef1d	Q68FR9-2	prey	2.546
+Ppm1a	A0A0H2UHE5	prey	2.528
+Cct6a	Q3MHS9	prey	2.521
+Hspa9	P48721	prey	2.493
+Tpi1	P48500	prey	2.473
+Msn	O35763	prey	2.445
+Ppm1b	Q99ND8	prey	2.437
+Casq2	P51868	prey	2.386
+Clu	G3V836	prey	2.333
+Cct8	D4ACB8	prey	2.327
+Snd1	Q66X93	prey	2.254
+Stk38l	A4GW50	prey	2.207
+Ripor2	Q7TP54	prey	2.166

@@ -1,0 +1,128 @@
+# Transcripts co-purified with CsrA-3xFLAG from Campylobacter jejuni NCTC 11168 (RIP-seq), coding sequences only, plus the bait CsrA
+# Dugar G, Svensson SL, Bischler T, Wäldchen S, Reinhardt R, Sauer M, Sharma CM. 2016. The CsrA-FliW network controls polar localization of the dual-function flagellin mRNA in Campylobacter jejuni. Nat Commun 7:11667. https://doi.org/10.1038/ncomms11667
+# Source: Supplementary Data 1 (ncomms11667-s2.xlsx), sheet "Sheet1" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4894983/supplementaryFiles)
+# Cutoff: the table as published, which the legend defines as more than 5-fold enrichment in the CsrA coIP over the wild-type control coIP; of its 172 regions, the 120 distinct genes whose ORF was co-purified are kept (the gene's most enriched ORF entry), 5'UTR-only and sRNA entries left out
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag = Gene as published; gene = Name as published; uniprot = the accession matched to the species index; role = bait (CsrA, locus Cj1103) or target; enrichment and log2_enrichment as published
+locus_tag	gene	uniprot	role	enrichment	log2_enrichment
+Cj1103	csrA	Q0P9F1	bait		
+Cj1339c	flaA	P56963	target	111	6.795
+Cj0040	Cj0040	Q0PC86	target	110.6	6.789
+Cj1206c	ftsY	Q0P950	target	87.64	6.454
+Cj0547	flaG	Q0PAW9	target	72.36	6.177
+Cj1222c	dccS	Q0P934	target	68.99	6.108
+Cj1729c	flgE	Q0P7Q2	target	68.19	6.091
+Cj1124c	pglC	Q0P9D0	target	64.02	6.001
+Cj1462	flgI	Q9PMJ8	target	52.74	5.721
+Cj0697	flgG2	Q0PAI2	target	43.94	5.457
+Cj1431c	hddC	Q0P8I3	target	43.55	5.445
+Cj1655c	nhaA1	Q0P7X3	target	41.74	5.383
+Cj1249		Q0P907	target	34.43	5.106
+Cj0309c			target	32.99	5.044
+Cj0842		Q0PA48	target	26.65	4.736
+Cj1437c		Q0P8H7	target	25.86	4.692
+Cj0670	rpoN	Q0PAK4	target	24.94	4.64
+Cj0508	pbpA	Q0PB07	target	22.76	4.508
+Cj0172c		Q0PBW7	target	22.32	4.48
+Cj0509c	clpB	Q9PI02	target	22.27	4.477
+Cj1152c	gmhB	Q6TG07	target	22.14	4.468
+Cj0310c	Cj0310c		target	21.23	4.408
+Cj1720		Q0P7R1	target	20.29	4.342
+Cj0824	uppS	Q9PP99	target	20.12	4.331
+Cj0687c	flgH	Q9PPM0	target	20.11	4.33
+Cj0208			target	19.97	4.32
+Cj0068	pspA		target	19.66	4.297
+Cj0380c			target	19.08	4.254
+Cj1432c		Q0P8I2	target	17.73	4.148
+Cj1064			target	17.58	4.136
+Cj1555c		Q0P871	target	16.97	4.085
+Cj0769c	flgA	Q0PAC1	target	15.8	3.982
+Cj0435	fabG	Q0PB75	target	15.79	3.981
+Cj0823		Q0PA67	target	15.43	3.948
+Cj0394c		Q0PBB6	target	15.34	3.939
+Cj0951c		Q0P9U8	target	15.22	3.928
+Cj0763c	cysE	Q0PAC7	target	14.99	3.905
+Cj0464	recG		target	14.88	3.895
+Cj1599	hisB	Q9PM76	target	14.6	3.867
+Cj1338c	flaB	P56964	target	14.13	3.821
+Cj1155c		Q0P9A1	target	13.94	3.801
+Cj1394		Q0P8L8	target	13.71	3.777
+Cj0374		Q9PIC8	target	13.34	3.738
+Cj0369c		Q0PBE1	target	12.71	3.668
+Cj0818		Q0PA72	target	12.4	3.633
+Cj0238			target	12.31	3.622
+Cj0718	dnaE	Q9PPI9	target	12.21	3.61
+Cj0386	engA	Q9PIB6	target	12.12	3.599
+Cj0995c	hemB	Q0P9Q7	target	11.71	3.55
+Cj0977		Q0P9S5	target	11.55	3.53
+Cj0108	atpC	Q9PJ18	target	11.21	3.486
+Cj1406c		Q0P8K8	target	11.07	3.468
+Cj0200c		Q0PBT9	target	11.03	3.463
+Cj0952c		Q0P9U7	target	10.2	3.35
+Cj0853c	hemL		target	9.913	3.309
+Cj0499		Q0PB14	target	9.843	3.299
+Cj1218c	ribA	Q0P938	target	9.783	3.29
+Cj1071	ssb	O69302	target	9.675	3.274
+Cj1293	pseB	Q0P8W4	target	9.483	3.245
+Cj1171c	ppi	Q0P985	target	9.454	3.241
+Cj1340c		Q0P8R9	target	9.25	3.209
+Cj0173c	cfbpC	Q0PBW6	target	9.105	3.187
+Cj1275c		Q0P8Y1	target	8.891	3.152
+Cj0466	nssR	Q0PB47	target	8.787	3.135
+Cj1420c		Q0P8J4	target	8.607	3.105
+Cj0081	cydA	Q0PC54	target	8.589	3.102
+Cj0860		Q0PA30	target	8.464	3.081
+Cj1006c		Q0P9P6	target	8.386	3.068
+Cj1083c		Q0P9H1	target	8.253	3.045
+Cj1295		Q0P8W2	target	8.161	3.029
+Cj0167c		Q9PIW1	target	8.093	3.017
+Cj0122		Q0PC15	target	8.093	3.017
+Cj0975		Q0P9S7	target	8.093	3.017
+Cj0605		Q0PAR2	target	8.058	3.01
+Cj0270		Q9PIM5	target	7.911	2.984
+Cj0036		Q0PC90	target	7.772	2.958
+Cj0373		Q0PBD7	target	7.716	2.948
+Cj0109	exbB3	Q0PC28	target	7.609	2.928
+Cj0848c		Q0PA42	target	7.515	2.91
+Cj1417c		Q0P8J7	target	7.443	2.896
+Cj0317	hisC	Q9PII2	target	7.413	2.89
+Cj1317	pseI	Q0P8U0	target	7.187	2.845
+Cj0737		Q0PAE2	target	7.13	2.834
+Cj1138			target	7.12	2.832
+Cj1079		Q0P9H5	target	6.937	2.794
+Cj1248	guaA	Q9PN49	target	6.855	2.777
+Cj1347c	cdsA		target	6.838	2.774
+Cj1077	ctsT	Q0P9H7	target	6.793	2.764
+Cj0548	fliD	Q9PHW6	target	6.757	2.756
+Cj0423		Q0PB87	target	6.359	2.669
+Cj0086c	ung	Q9PJ40	target	6.255	2.645
+Cj1445c	kpsE	Q0P8G9	target	6.234	2.64
+Cj1523c		Q0P897	target	6.221	2.637
+Cj0798c	ddl	Q9PPC2	target	6.189	2.63
+Cj0318	fliF	Q0PBJ1	target	6.148	2.62
+Cj1073c	lon	O69300	target	6.02	2.59
+Cj0668		Q0PAK6	target	5.989	2.582
+Cj1337	pseE	Q0P8S2	target	5.871	2.554
+Cj0117	pfs	Q0PC20	target	5.853	2.549
+Cj0019c		Q0PCA6	target	5.823	2.542
+Cj1711c	ksgA	Q9PLW7	target	5.803	2.537
+Cj1601	hisA	Q9PM74	target	5.781	2.531
+Cj0569		Q0PAU8	target	5.781	2.531
+Cj0472	secE	Q0PB41	target	5.727	2.518
+Cj1413c	kpsS	Q0P8K1	target	5.701	2.511
+Cj0652	pbpC	Q0PAL6	target	5.692	2.509
+Cj0762c	aspB	Q0PAC8	target	5.663	2.501
+Cj1112c		Q0P9E2	target	5.637	2.495
+Cj1270c		Q0P8Y6	target	5.626	2.492
+Cj1613c		Q0P815	target	5.608	2.488
+Cj0361	lspA	Q0PBE9	target	5.593	2.484
+Cj1690c	rpsE	Q9PLY8	target	5.492	2.457
+Cj0186c			target	5.492	2.457
+Cj0375		Q0PBD5	target	5.396	2.432
+Cj1053c		Q0P9J9	target	5.286	2.402
+Cj0628		Q0PAN9	target	5.271	2.398
+Cj1156	rho	Q0P9A0	target	5.252	2.393
+Cj0739		Q0PAE0	target	5.203	2.379
+Cj1273c	rpoZ		target	5.183	2.374
+Cj1181c	tsf	Q9PNB4	target	5.169	2.37
+Cj0991c		Q0P9R1	target	5.12	2.356

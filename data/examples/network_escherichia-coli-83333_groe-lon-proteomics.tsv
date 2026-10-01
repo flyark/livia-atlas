@@ -1,0 +1,59 @@
+# Example: Proteins whose abundance change on GroEL/ES depletion differs specifically when the Lon protease is deleted (E. coli MGM100 conditional GroE strain vs MGM100Δlon; glucose vs arabinose, label-free SWATH-MS); value = GroE-depletion fold change (Glc/Ara) in Δlon.
+# Source: Niwa T, Chadani Y, Taguchi H (2022) Shotgun Proteomics Revealed Preferential Degradation of Misfolded In Vivo Obligate GroE Substrates by Lon Protease in Escherichia coli. Molecules 27(12):3772. https://doi.org/10.3390/molecules27123772
+# Source file: molecules-27-03772-s001.zip > Supplementary_Dataset_S4.xlsx ("List of proteins up- or down-regulated by the Lon deletion"), sheets "up_regulated_in_dlon_2sigma" and "down_regulated_in_dlon_2sigma" (Europe PMC PMC9228906 supplementaryFiles)
+# Cutoff: the paper's own lists of proteins with specific changes between MGM100 and MGM100Δlon, defined from the distribution of fold changes (sheet names: 2 sigma); all rows kept (36 up, 17 down)
+# Licensed CC BY 4.0; values as published (rounded to 3 decimals)
+gene	foldchange_GlcAra_dlon	foldchange_GlcAra_MGM100	direction	b_number	uniprot
+trpB	10.738	1.517	up in Δlon	b1261	P0A879
+ivy	10.887	1.615	up in Δlon	b0220	P0AD59
+ygiW	14.381	2.944	up in Δlon	b3024	P0ADU5
+trpA	8.658	1.93	up in Δlon	b1260	P0A877
+metK	1.902	0.433	up in Δlon	b2942	P0A817
+slyB	3.238	0.795	up in Δlon	b1641	P0A905
+atpB	1.825	0.463	up in Δlon	b3738	P0AB98
+metB	90.463	24.663	up in Δlon	b3939	P00935
+metC	20.688	6.56	up in Δlon	b3008	P06721
+dps	10.551	3.367	up in Δlon	b0812	P0ABT2
+sra	7.102	2.286	up in Δlon	b1480	P68191
+metL	13.18	4.262	up in Δlon	b3940	P00562
+ahpC	4.027	1.367	up in Δlon	b0605	P0AE08
+lpp	1.897	0.65	up in Δlon	b1677	P69776
+gltA	1.129	0.389	up in Δlon	b0720	P0ABH7
+folE	8.338	2.889	up in Δlon	b2153	P0A6T5
+ybiC	11.059	3.856	up in Δlon	b0801	P30178
+yeaY	2.907	1.053	up in Δlon	b1806	P0AA91
+moaB	11.977	4.437	up in Δlon	b0782	P0AEZ9
+yoaB	1.817	0.69	up in Δlon	b1809	P0AEB7
+gstA	3.124	1.214	up in Δlon	b1635	P0A9D2
+oppA	3.154	1.243	up in Δlon	b1243	P23843
+aceB	5.709	2.274	up in Δlon	b4014	P08997
+wrbA	10.924	4.428	up in Δlon	b1004	P0A8G6
+ptsH	3.315	1.345	up in Δlon	b2415	P0AA04
+fliY	1.841	0.754	up in Δlon	b1920	P0AEM9
+ydhR	2.72	1.142	up in Δlon	b1667	P0ACX3
+tabA	2.014	0.858	up in Δlon	b4252	P0AF96
+yqhD	1.828	0.782	up in Δlon	b3011	Q46856
+aceA	3.194	1.366	up in Δlon	b4015	P0A9G6
+mgtA	2.487	1.071	up in Δlon	b4242	P0ABB8
+lipA	0.41	0.177	up in Δlon	b0628	P60716
+dcp	2.499	1.092	up in Δlon	b1538	P24171
+asd	0.569	0.249	up in Δlon	b3433	P0A9Q9
+kdsA	0.328	0.145	up in Δlon	b1215	P0A715
+eco	2.474	1.099	up in Δlon	b2209	P23827
+pyrB	0.119	1.022	down in Δlon	b4245	P0A786
+ylaC	0.104	0.831	down in Δlon	b0458	P0AAS0
+glpK	0.461	2.042	down in Δlon	b3926	P0A6F3
+fdoI	0.187	0.735	down in Δlon	b3892	P0AEL0
+trmA	0.182	0.704	down in Δlon	b3965	P23003
+ybaL	0.372	1.338	down in Δlon	b0478	P39830
+yfdH	0.301	1.047	down in Δlon	b2351	P77293
+pstS	9.054	30.522	down in Δlon	b3728	P0AG82
+hsdR	0.356	1.111	down in Δlon	b4350	P08956
+phoA	61.734	188.062	down in Δlon	b0383	P00634
+yagU	0.46	1.33	down in Δlon	b0287	P0AAA1
+gcd	0.44	1.238	down in Δlon	b0124	P15877
+pdxY	0.291	0.806	down in Δlon	b1636	P77150
+gcvT	0.757	1.987	down in Δlon	b2905	P27248
+phoU	4.704	11.819	down in Δlon	b3724	P0A9K7
+gcvP	0.676	1.61	down in Δlon	b2903	P33195
+yecM	0.94	2.179	down in Δlon	b1875	P52007

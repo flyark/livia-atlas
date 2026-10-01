@@ -1,0 +1,62 @@
+# Example: PfSET10 TurboID interactors in P. falciparum schizonts that function in mRNA processing (snRNPs, splicing factors, others), plus the bait SET10 (PF3D7_1221000).
+# Source: Musabyimana J-P, Musa S, Manti J, et al. (2024) The Plasmodium falciparum histone methyltransferase SET10 participates in a chromatin modulation network crucial for intraerythrocytic development. mSphere 9(11):e0049524. https://doi.org/10.1128/msphere.00495-24
+# Table S4 (msphere.00495-24-s0005.xlsx), sheet "mRNA processing": curated SET10 interactors (TurboID log2 ratio > 23, signal-peptide proteins excluded) grouped by the paper into mRNA processing; 57 rows; log2 ratio from Table S2 (msphere.00495-24-s0003.xlsx, sheet "peptide count vs log2 ratio"). Licensed CC BY 4.0; values as published.
+protein	role	log2ratio	group
+PF3D7_1221000	bait	31.3298	
+PF3D7_0218500	prey	30.0408	snRNP
+PF3D7_0323700	prey	26.1199	snRNP
+PF3D7_0520300	prey	26.302	snRNP
+PF3D7_0812700	prey	26.6514	snRNP
+PF3D7_0819900	prey	26.4518	snRNP
+PF3D7_0822300	prey	30.0369	snRNP
+PF3D7_0822800	prey	27.8498	snRNP
+PF3D7_0909800	prey	29.6087	snRNP
+PF3D7_0935000	prey	27.7519	snRNP
+PF3D7_1003800	prey	29.2727	snRNP
+PF3D7_1125500	prey	30.1143	snRNP
+PF3D7_1126900	prey	31.0317	snRNP
+PF3D7_1209200	prey	26.3789	snRNP
+PF3D7_1306900	prey	29.2794	snRNP
+PF3D7_1309300	prey	26.174	snRNP
+PF3D7_1343900	prey	26.2208	snRNP
+PF3D7_1367100	prey	28.3299	snRNP
+PF3D7_1414800	prey	30.0533	snRNP
+PF3D7_0218700	prey	27.5782	splicing factor
+PF3D7_0302000	prey	27.5751	splicing factor
+PF3D7_0308600	prey	29.4037	splicing factor
+PF3D7_0403700	prey	28.2428	splicing factor
+PF3D7_0405400	prey	28.5794	splicing factor
+PF3D7_0422500	prey	28.0481	splicing factor
+PF3D7_0522800	prey	27.811	splicing factor
+PF3D7_0614400	prey	28.0923	splicing factor
+PF3D7_0619900	prey	26.8516	splicing factor
+PF3D7_0623600	prey	25.0148	splicing factor
+PF3D7_0722500	prey	27.0021	splicing factor
+PF3D7_0917600	prey	25.9014	splicing factor
+PF3D7_1030100	prey	27.2647	splicing factor
+PF3D7_0924700	prey	26.9682	splicing factor
+PF3D7_1033600	prey	28.4143	splicing factor
+PF3D7_1220100	prey	26.8249	splicing factor
+PF3D7_1224900	prey	25.7974	splicing factor
+PF3D7_1231600	prey	25.8104	splicing factor
+PF3D7_1234800	prey	28.2214	splicing factor
+PF3D7_1235900	prey	28.7242	splicing factor
+PF3D7_1248200	prey	27.4527	splicing factor
+PF3D7_1321700	prey	26.4368	splicing factor
+PF3D7_1355800	prey	26.9823	splicing factor
+PF3D7_1364300	prey	25.5388	splicing factor
+PF3D7_1420000	prey	26.912	splicing factor
+PF3D7_1451500	prey	26.5181	splicing factor
+PF3D7_1461600	prey	27.5395	splicing factor
+PF3D7_1472000	prey	24.7626	splicing factor
+PF3D7_1474500	prey	26.7726	splicing factor
+PF3D7_0109200	prey	27.5585	other
+PF3D7_0318600	prey	26.4914	other
+PF3D7_0513200	prey	29.2645	other
+PF3D7_0620500	prey	28.4858	other
+PF3D7_0625600	prey	24.1107	other
+PF3D7_0819000	prey	26.9181	other
+PF3D7_1009200	prey	26.5099	other
+PF3D7_1249800	prey	26.7367	other
+PF3D7_1305400	prey	28.5528	other
+PF3D7_1352700	prey	27.2784	other

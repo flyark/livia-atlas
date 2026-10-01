@@ -241,5 +241,860 @@
   "cite": "Complex Portal, EMBL-EBI",
   "doi": "10.1093/nar/gkae1085",
   "license": "CC0"
+ },
+ {
+  "file": "network_campylobacter-jejuni-subsp-jejuni-serotype-o-2_csra-coip.tsv",
+  "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+  "what": "CsrA co-IP targets (RIP-seq), NCTC 11168",
+  "type": "IP-MS",
+  "cite": "Dugar et al. 2016, Nat Commun",
+  "doi": "10.1038/ncomms11667",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_campylobacter-jejuni-subsp-jejuni-serotype-o-2_essential-genome.tsv",
+  "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+  "what": "Essential genes by Tn5 insertion sequencing, NCTC 11168",
+  "type": "Genetic screen",
+  "cite": "Mandal et al. 2017, BMC Genomics",
+  "doi": "10.1186/s12864-017-4032-8",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_campylobacter-jejuni-subsp-jejuni-serotype-o-2_pglb-proteome.tsv",
+  "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+  "what": "pglB::aphA versus wild-type proteome, NCTC 11168",
+  "type": "Proteomics",
+  "cite": "Abouelhadid et al. 2019, mBio",
+  "doi": "10.1128/mBio.00297-19",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_campylobacter-jejuni-subsp-jejuni-serotype-o-2_deoxycholate-proteome.tsv",
+  "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+  "what": "Proteome in 0.1% deoxycholate, NCTC 11168",
+  "type": "Proteomics",
+  "cite": "Man et al. 2020, Mol Cell Proteomics",
+  "doi": "10.1074/mcp.RA120.002029",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_campylobacter-jejuni-subsp-jejuni-serotype-o-2_invitro-growth-inseq.tsv",
+  "species": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
+  "what": "INSeq growth determinants in four in vitro conditions, 81-176",
+  "type": "Genetic screen",
+  "cite": "Gao et al. 2017, PLoS Biol",
+  "doi": "10.1371/journal.pbio.2001390",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_candida-albicans-237561_hsp90-cochaperone-apms.tsv",
+  "species": "candida-albicans-237561",
+  "what": "Hsp90 co-chaperone AP-MS interactors (ten baits)",
+  "type": "AP-MS",
+  "cite": "O'Meara et al. 2019, PLoS Biol",
+  "doi": "10.1371/journal.pbio.3000358",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_candida-albicans-237561_grx3-ipms.tsv",
+  "species": "candida-albicans-237561",
+  "what": "Grx3 IP-MS interactors found in all four conditions",
+  "type": "IP-MS",
+  "cite": "Alkafeef et al. 2020, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1008881",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_candida-albicans-237561_cdk8-phospho.tsv",
+  "species": "candida-albicans-237561",
+  "what": "Proteins with reduced phosphorylation on Ssn3 (Cdk8) inhibition",
+  "type": "Phosphoproteomics",
+  "cite": "Hollomon et al. 2022, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1009622",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_dictyostelium-discoideum_cora-apms.tsv",
+  "species": "dictyostelium-discoideum",
+  "what": "Coronin A AP-MS interactors (growing cells)",
+  "type": "AP-MS",
+  "cite": "Fabrice et al. 2020, Int J Mol Sci",
+  "doi": "10.3390/ijms21041469",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_dictyostelium-discoideum_calmodulin-ipms.tsv",
+  "species": "dictyostelium-discoideum",
+  "what": "Calmodulin IP-MS interactors unique to growth phase",
+  "type": "IP-MS",
+  "cite": "Kim et al. 2021, Int J Mol Sci",
+  "doi": "10.3390/ijms22041722",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_dictyostelium-discoideum_mvpa-turboid.tsv",
+  "species": "dictyostelium-discoideum",
+  "what": "Vault (MVPA) TurboID proximity proteome",
+  "type": "TurboID",
+  "cite": "Geissler et al. 2026, Nat Commun",
+  "doi": "10.1038/s41467-026-71837-7",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_dictyostelium-discoideum_francisella-vacuole.tsv",
+  "species": "dictyostelium-discoideum",
+  "what": "Francisella-containing vacuole proteome: phagocytosis and bacterial-response proteins",
+  "type": "Proteomics",
+  "cite": "Marecic et al. 2024, Microorganisms",
+  "doi": "10.3390/microorganisms12101949",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_escherichia-coli-83333_replication-apms.tsv",
+  "species": "escherichia-coli-83333",
+  "what": "Eight DNA replication proteins AP-MS (SPA tag, LB exponential growth)",
+  "type": "AP-MS",
+  "cite": "Morcinek-Orłowska et al. 2023, Sci Data",
+  "doi": "10.1038/s41597-023-02710-1",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_escherichia-coli-83333_phage186-crispri.tsv",
+  "species": "escherichia-coli-83333",
+  "what": "Phage 186 host factors (genome-wide CRISPRi screen)",
+  "type": "CRISPR screen",
+  "cite": "Rousset et al. 2018, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1007749",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_escherichia-coli-83333_recg-tnseq.tsv",
+  "species": "escherichia-coli-83333",
+  "what": "recG genetic interactions (Tn-seq in ΔrecG)",
+  "type": "Genetic screen",
+  "cite": "Bonde et al. 2023, J Bacteriol",
+  "doi": "10.1128/jb.00184-23",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_escherichia-coli-83333_rifampicin-tnseq.tsv",
+  "species": "escherichia-coli-83333",
+  "what": "Fitness genes under sub-MIC rifampicin (Tn-seq)",
+  "type": "Genetic screen",
+  "cite": "Wang et al. 2024, Microbiol Spectr",
+  "doi": "10.1128/spectrum.02895-23",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_glycine-max_nopl-pulldown.tsv",
+  "species": "glycine-max",
+  "what": "Rhizobial effector NopL pull-down (root hairs), top 100",
+  "type": "AP-MS",
+  "cite": "Ma et al. 2024, Nat Commun",
+  "doi": "10.1038/s41467-024-50228-w",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_glycine-max_aluminum-phospho.tsv",
+  "species": "glycine-max",
+  "what": "Aluminum-responsive root phosphoproteins, interaction network",
+  "type": "Phosphoproteomics",
+  "cite": "Han et al. 2020, PLoS One",
+  "doi": "10.1371/journal.pone.0237845",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_glycine-max_aba-ethylene-phospho.tsv",
+  "species": "glycine-max",
+  "what": "ABA and ethylene responsive leaf phosphoproteins",
+  "type": "Phosphoproteomics",
+  "cite": "Gupta et al. 2018, Data Brief",
+  "doi": "10.1016/j.dib.2018.08.037",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_haemophilus-influenzae_biofilm-planktonic-proteome.tsv",
+  "species": "haemophilus-influenzae",
+  "what": "Biofilm versus planktonic proteome, 86-028NP",
+  "type": "Proteomics",
+  "cite": "Post et al. 2014, BMC Microbiol",
+  "doi": "10.1186/s12866-014-0329-9",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_helicobacter-pylori_hp0018-coip.tsv",
+  "species": "helicobacter-pylori",
+  "what": "HP0018-myc co-IP interactors (strain B128)",
+  "type": "IP-MS",
+  "cite": "Rosinke et al. 2024, Cells",
+  "doi": "10.3390/cells13171438",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_helicobacter-pylori_omv-biofilm-planktonic.tsv",
+  "species": "helicobacter-pylori",
+  "what": "OMV proteins modulated in biofilm and planktonic growth (ATCC 43629)",
+  "type": "Proteomics",
+  "cite": "Puca et al. 2026, Front Microbiol",
+  "doi": "10.3389/fmicb.2026.1765988",
+  "license": "CC BY"
+ },
+ {
+  "file": "network_helicobacter-pylori_hp1021-proteome.tsv",
+  "species": "helicobacter-pylori",
+  "what": "Proteins changed in a HP1021 mutant (strain N6, microaerobic)",
+  "type": "Proteomics",
+  "cite": "Noszka et al. 2023, Nat Commun",
+  "doi": "10.1038/s41467-023-42364-6",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_helicobacter-pylori_pbt2-proteome.tsv",
+  "species": "helicobacter-pylori",
+  "what": "Proteins changed by the ionophore PBT2 at MIC, 8 h (ATCC 43526)",
+  "type": "Proteomics",
+  "cite": "Chen et al. 2026, mBio",
+  "doi": "10.1128/mbio.01229-26",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mus-musculus_zmynd10-ipms.tsv",
+  "species": "mus-musculus",
+  "what": "ZMYND10 IP-MS interactors (mouse testis)",
+  "type": "IP-MS",
+  "cite": "Mali et al. 2018, eLife",
+  "doi": "10.7554/eLife.34389",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mus-musculus_satb2-ipms.tsv",
+  "species": "mus-musculus",
+  "what": "SATB2 co-IP-MS interactors (adult mouse cortex)",
+  "type": "IP-MS",
+  "cite": "Cera et al. 2019, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1007890",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mus-musculus_tric-retina-apms.tsv",
+  "species": "mus-musculus",
+  "what": "TRiC/CCT chaperonin AP-MS interactors (mouse rod photoreceptors)",
+  "type": "AP-MS",
+  "cite": "Brooks et al. 2026, PLoS One",
+  "doi": "10.1371/journal.pone.0345843",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mus-musculus_isthmin1-phospho.tsv",
+  "species": "mus-musculus",
+  "what": "Isthmin-1 phosphoproteome (3T3-F442A cells)",
+  "type": "Phosphoproteomics",
+  "cite": "Zhao et al. 2022, eLife",
+  "doi": "10.7554/eLife.80014",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mycobacterium-tuberculosis_phosphoproteome.tsv",
+  "species": "mycobacterium-tuberculosis",
+  "what": "Phosphoproteins of a clinical Beijing isolate (top 150 by site score)",
+  "type": "Phosphoproteomics",
+  "cite": "Fortuin et al. 2015, Front Microbiol",
+  "doi": "10.3389/fmicb.2015.00006",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mycobacterium-tuberculosis_sulfenylome.tsv",
+  "species": "mycobacterium-tuberculosis",
+  "what": "Cysteine S-sulfenylation changed under H2O2 (H37Rv)",
+  "type": "Proteomics",
+  "cite": "Lu et al. 2023, Microbiol Spectr",
+  "doi": "10.1128/spectrum.03386-22",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mycobacterium-tuberculosis_carbon-starvation-oxphos.tsv",
+  "species": "mycobacterium-tuberculosis",
+  "what": "Oxidative phosphorylation proteins in carbon starvation (mc2-6020)",
+  "type": "Proteomics",
+  "cite": "Devlin et al. 2025, mSystems",
+  "doi": "10.1128/msystems.01530-24",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mycobacterium-tuberculosis_tnseq-mes-library.tsv",
+  "species": "mycobacterium-tuberculosis",
+  "what": "Middlebrook-essential genes screened in mice by Tn-seq (Erdman)",
+  "type": "Genetic screen",
+  "cite": "Block et al. 2024, PLoS Pathog",
+  "doi": "10.1371/journal.ppat.1011663",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_mycobacterium-tuberculosis_tnseq-growth-defect.tsv",
+  "species": "mycobacterium-tuberculosis",
+  "what": "Growth-defect genes in saturating Tn mutagenesis (H37Rv)",
+  "type": "Genetic screen",
+  "cite": "DeJesus et al. 2017, mBio",
+  "doi": "10.1128/mbio.02133-16",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_neisseria-gonorrhoeae_biofilm-proteome.tsv",
+  "species": "neisseria-gonorrhoeae",
+  "what": "Proteins changed in biofilm versus planktonic cells (strain 1291)",
+  "type": "Proteomics",
+  "cite": "Phillips et al. 2012, PLoS One",
+  "doi": "10.1371/journal.pone.0038303",
+  "license": "CC BY"
+ },
+ {
+  "file": "network_neisseria-gonorrhoeae_omv-iron.tsv",
+  "species": "neisseria-gonorrhoeae",
+  "what": "Proteins unique to OMVs under iron starvation or repletion (MS11)",
+  "type": "Proteomics",
+  "cite": "Placzkiewicz et al. 2023, Sci Rep",
+  "doi": "10.1038/s41598-023-45498-1",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_oryza-sativa-subsp-japonica_onac023-ipms.tsv",
+  "species": "oryza-sativa-subsp-japonica",
+  "what": "ONAC023 IP-MS interactors (drought-stressed seedlings)",
+  "type": "IP-MS",
+  "cite": "Chang et al. 2024, Nat Commun",
+  "doi": "10.1038/s41467-024-50229-9",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_oryza-sativa-subsp-japonica_br-phospho.tsv",
+  "species": "oryza-sativa-subsp-japonica",
+  "what": "Brassinosteroid phosphoproteome, interaction sub-networks (seedlings)",
+  "type": "Phosphoproteomics",
+  "cite": "Hou et al. 2017, Front Plant Sci",
+  "doi": "10.3389/fpls.2017.00514",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_oryza-sativa-subsp-japonica_msp1-ubiquitinome.tsv",
+  "species": "oryza-sativa-subsp-japonica",
+  "what": "Ubiquitinome changes in MSP1-overexpressing leaves",
+  "type": "Proteomics",
+  "cite": "Lee et al. 2023, Data Brief",
+  "doi": "10.1016/j.dib.2023.109573",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_plasmodium-falciparum-36329_nif4-turboid.tsv",
+  "species": "plasmodium-falciparum-36329",
+  "what": "NIF4 TurboID proximity interactors (schizonts)",
+  "type": "TurboID",
+  "cite": "Zhu et al. 2022, mBio",
+  "doi": "10.1128/mbio.01897-22",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_plasmodium-falciparum-36329_set10-turboid-mrna.tsv",
+  "species": "plasmodium-falciparum-36329",
+  "what": "SET10 TurboID interactors in mRNA processing (schizonts)",
+  "type": "TurboID",
+  "cite": "Musabyimana et al. 2024, mSphere",
+  "doi": "10.1128/msphere.00495-24",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_plasmodium-falciparum-36329_var-promoter-dcas9.tsv",
+  "species": "plasmodium-falciparum-36329",
+  "what": "var gene promoter proteome by dCas9 locus IP-MS",
+  "type": "IP-MS",
+  "cite": "Bryant et al. 2020, Mol Syst Biol",
+  "doi": "10.15252/msb.20209569",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_plasmodium-falciparum-36329_gexp15-gyf-pulldown.tsv",
+  "species": "plasmodium-falciparum-36329",
+  "what": "GEXP15 GYF domain pull-down interactors",
+  "type": "AP-MS",
+  "cite": "Mansour et al. 2023, Int J Mol Sci",
+  "doi": "10.3390/ijms241612647",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_plasmodium-falciparum-36329_proteasome-cofractionation.tsv",
+  "species": "plasmodium-falciparum-36329",
+  "what": "Proteasome clusters from co-fractionation interactome",
+  "type": "Complexes",
+  "cite": "Hillier et al. 2019, Cell Rep",
+  "doi": "10.1016/j.celrep.2019.07.019",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_pseudomonas-aeruginosa_pqs-probe-pulldown.tsv",
+  "species": "pseudomonas-aeruginosa",
+  "what": "PQS photoaffinity probe pull-down, PAO1",
+  "type": "Pull-down",
+  "cite": "Dandela et al. 2018, Chem Sci",
+  "doi": "10.1039/c7sc04287f",
+  "license": "CC BY 3.0"
+ },
+ {
+  "file": "network_pseudomonas-aeruginosa_bsrap-dna-pulldown.tsv",
+  "species": "pseudomonas-aeruginosa",
+  "what": "bsrA promoter DNA-affinity pull-down, PAO1161",
+  "type": "Pull-down",
+  "cite": "Modrzejewska et al. 2021, mSystems",
+  "doi": "10.1128/mSystems.00015-21",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_pseudomonas-aeruginosa_energy-limited-tnseq.tsv",
+  "species": "pseudomonas-aeruginosa",
+  "what": "Tn-seq fitness determinants in carbon or oxygen limitation, PA14",
+  "type": "Genetic screen",
+  "cite": "Basta et al. 2017, mBio",
+  "doi": "10.1128/mBio.01170-17",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_pseudomonas-aeruginosa_tolerant-biofilm-proteome.tsv",
+  "species": "pseudomonas-aeruginosa",
+  "what": "Antibiotic-tolerant versus growing biofilm subpopulation proteome, PA14",
+  "type": "Proteomics",
+  "cite": "Babin et al. 2017, mBio",
+  "doi": "10.1128/mBio.01593-17",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_pseudomonas-aeruginosa_fungal-filtrate-proteome.tsv",
+  "species": "pseudomonas-aeruginosa",
+  "what": "Proteome in Aspergillus fumigatus culture filtrate, ATCC 27853",
+  "type": "Proteomics",
+  "cite": "Margalit et al. 2020, Mol Cell Proteomics",
+  "doi": "10.1074/mcp.RA120.002059",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_rattus-norvegicus_adcy6-bioid.tsv",
+  "species": "rattus-norvegicus",
+  "what": "Adenylyl cyclase 6 BioID (neonatal rat cardiomyocytes)",
+  "type": "BioID",
+  "cite": "Park et al. 2025, J Biol Chem",
+  "doi": "10.1016/j.jbc.2025.110539",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_rattus-norvegicus_mef2a-ipms.tsv",
+  "species": "rattus-norvegicus",
+  "what": "MEF2A IP-MS interactors (neonatal rat cardiomyocytes)",
+  "type": "IP-MS",
+  "cite": "Moustafa et al. 2023, Cell Death Dis",
+  "doi": "10.1038/s41419-023-05665-8",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_rattus-norvegicus_snx27-ipms.tsv",
+  "species": "rattus-norvegicus",
+  "what": "SNX27 IP-MS interactors (rat cortical neurons)",
+  "type": "IP-MS",
+  "cite": "McMillan et al. 2021, eLife",
+  "doi": "10.7554/eLife.59432",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_rattus-norvegicus_scaling-boncat.tsv",
+  "species": "rattus-norvegicus",
+  "what": "Newly synthesized proteins regulated in homeostatic scaling (rat hippocampal neurons)",
+  "type": "Proteomics",
+  "cite": "Schanzenbächer et al. 2018, eLife",
+  "doi": "10.7554/eLife.33322",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_rattus-norvegicus_sdc2-apms.tsv",
+  "species": "rattus-norvegicus",
+  "what": "Syndecan-2 AP-MS interactome (rat left ventricle)",
+  "type": "AP-MS",
+  "cite": "Mathiesen et al. 2020, Front Cell Dev Biol",
+  "doi": "10.3389/fcell.2020.00792",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_salmonella-typhimurium_ssav-proteome.tsv",
+  "species": "salmonella-typhimurium",
+  "what": "Proteins altered in the SPI2-T3SS mutant delta-ssaV versus wild type, bacteria from macrophages",
+  "type": "Proteomics",
+  "cite": "Noster et al. 2019, PLoS Pathog",
+  "doi": "10.1371/journal.ppat.1007741",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_salmonella-typhimurium_intracellular-consensus.tsv",
+  "species": "salmonella-typhimurium",
+  "what": "Proteins altered on the shift from minimal medium to growth inside macrophages (wild type and delta-sseF)",
+  "type": "Proteomics",
+  "cite": "Noster et al. 2019, PLoS Pathog",
+  "doi": "10.1371/journal.ppat.1007741",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_salmonella-typhimurium_h2o2-tnseq-proteomics.tsv",
+  "species": "salmonella-typhimurium",
+  "what": "Hydrogen peroxide resistance determinants found by both Tn-seq and proteomics",
+  "type": "Genetic screen",
+  "cite": "Karash et al. 2017, Sci Rep",
+  "doi": "10.1038/s41598-017-17149-9",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_salmonella-typhimurium_h2o2-upregulated.tsv",
+  "species": "salmonella-typhimurium",
+  "what": "Proteins more abundant under hydrogen peroxide stress in LB culture",
+  "type": "Proteomics",
+  "cite": "Karash et al. 2017, Sci Rep",
+  "doi": "10.1038/s41598-017-17149-9",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_salmonella-typhimurium_iron-dependent-essential.tsv",
+  "species": "salmonella-typhimurium",
+  "what": "Iron-dependent essential genes from Tn-seq under iron restriction",
+  "type": "Genetic screen",
+  "cite": "Karash and Kwon 2018, BMC Genomics",
+  "doi": "10.1186/s12864-018-4986-1",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schistosoma-mansoni_smrho1-coip.tsv",
+  "species": "schistosoma-mansoni",
+  "what": "SmRho1 co-IP-MS partners (adult worms)",
+  "type": "IP-MS",
+  "cite": "Pagliazzo et al. 2021, PLoS Negl Trop Dis",
+  "doi": "10.1371/journal.pntd.0009503",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schistosoma-mansoni_rnai-essential.tsv",
+  "species": "schistosoma-mansoni",
+  "what": "RNAi screen hits with attachment phenotypes (cultured adults)",
+  "type": "RNAi screen",
+  "cite": "Stephens et al. 2025, Proc Natl Acad Sci U S A",
+  "doi": "10.1073/pnas.2505710122",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schistosoma-mansoni_male-es-proteome.tsv",
+  "species": "schistosoma-mansoni",
+  "what": "Excretory/secretory proteins higher in males than females (adult worms)",
+  "type": "Proteomics",
+  "cite": "Kenney et al. 2022, Front Parasitol",
+  "doi": "10.3389/fpara.2022.950744",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schistosoma-mansoni_egg-granuloma-core.tsv",
+  "species": "schistosoma-mansoni",
+  "what": "Core egg proteome in liver and gut granulomas (infected mice)",
+  "type": "Proteomics",
+  "cite": "Jedličková et al. 2026, Front Cell Infect Microbiol",
+  "doi": "10.3389/fcimb.2026.1807773",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schistosoma-mansoni_adult-es-fraction1.tsv",
+  "species": "schistosoma-mansoni",
+  "what": "IL-10-inducing, EV-enriched fraction of adult worm excretory/secretory products",
+  "type": "Proteomics",
+  "cite": "Kuipers et al. 2025, Parasite Immunol",
+  "doi": "10.1111/pim.70023",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schizosaccharomyces-pombe_rtf2-turboid.tsv",
+  "species": "schizosaccharomyces-pombe",
+  "what": "Rtf2 TurboID proximity interactome, S-phase cells",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Budden et al. 2023, eLife",
+  "doi": "10.7554/eLife.78554",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schizosaccharomyces-pombe_rad52-sumo-splitid.tsv",
+  "species": "schizosaccharomyces-pombe",
+  "what": "SUMO at Rad52 repair sites, split-TurboID (SUMO-ID)",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Markowska et al. 2025, Nat Commun",
+  "doi": "10.1038/s41467-025-65862-1",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schizosaccharomyces-pombe_bmc1-ipms.tsv",
+  "species": "schizosaccharomyces-pombe",
+  "what": "Bmc1 IP-MS: telomerase holoenzyme partners",
+  "type": "IP-MS",
+  "cite": "Porat et al. 2022, Nat Commun",
+  "doi": "10.1038/s41467-022-28985-3",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schizosaccharomyces-pombe_orb6-phospho.tsv",
+  "species": "schizosaccharomyces-pombe",
+  "what": "Orb6 (NDR/LATS) kinase-dependent phosphoproteins, SILAC",
+  "type": "phosphoproteomics",
+  "cite": "Tay et al. 2019, Cell Rep",
+  "doi": "10.1016/j.celrep.2019.01.027",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schizosaccharomyces-pombe_mitotic-kinase-phospho.tsv",
+  "species": "schizosaccharomyces-pombe",
+  "what": "Putative Plo1, Fin1, Ark1, Sid2, Hsk1 substrates, cell-cycle phosphoproteomics",
+  "type": "phosphoproteomics",
+  "cite": "Swaffer et al. 2018, Cell Rep",
+  "doi": "10.1016/j.celrep.2018.06.036",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_schizosaccharomyces-pombe_rdna-deletion-screen.tsv",
+  "species": "schizosaccharomyces-pombe",
+  "what": "Deletions that expand rDNA arrays, deletion-library imaging screen",
+  "type": "Genetic screen",
+  "cite": "Cockrell et al. 2024, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1011331",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_trypanosoma-cruzi_drbd2-ipms.tsv",
+  "species": "trypanosoma-cruzi",
+  "what": "DRBD2 IP-MS partners (epimastigotes)",
+  "type": "IP-MS",
+  "cite": "Wippel et al. 2019, BMC Microbiol",
+  "doi": "10.1186/s12866-019-1505-8",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_worm_daf16-turboid.tsv",
+  "species": "worm",
+  "what": "DAF-16 TurboID proximity labeling, nuclear vs cytoplasmic DAF-16 (whole animals)",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Artan et al. 2025, Nat Commun",
+  "doi": "10.1038/s41467-025-66409-0",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_worm_spd5-turboid-neurons.tsv",
+  "species": "worm",
+  "what": "SPD-5 TurboID proximity labeling (ciliated sensory neurons)",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Holzer et al. 2022, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1010150",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_worm_nrx1-turboid.tsv",
+  "species": "worm",
+  "what": "Neurexin NRX-1 TurboID proximity labeling (whole animals)",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Schaan Profes et al. 2024, PLoS Biol",
+  "doi": "10.1371/journal.pbio.3002466",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_worm_znfx1-ipms.tsv",
+  "species": "worm",
+  "what": "ZNFX-1 IP-MS interactors (young adults)",
+  "type": "IP-MS",
+  "cite": "Marnik et al. 2022, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1010245",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_worm_axon-regrowth-screen.tsv",
+  "species": "worm",
+  "what": "PLM axon regrowth genetic screen hits (mutants, laser axotomy)",
+  "type": "Genetic screen",
+  "cite": "Kim et al. 2018, eLife",
+  "doi": "10.7554/eLife.39756",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_worm_aging-ubiquitinome.tsv",
+  "species": "worm",
+  "what": "Ubiquitin-modified proteins changed with age (day 15 vs day 5 adults)",
+  "type": "Proteomics",
+  "cite": "Koyuncu et al. 2021, Nature",
+  "doi": "10.1038/s41586-021-03781-z",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_yeast_ssa1-xlms.tsv",
+  "species": "yeast",
+  "what": "Ssa1 (Hsp70) direct clients by cross-link MS (XL-MS)",
+  "type": "AP-MS",
+  "cite": "Nitika et al. 2022, PLoS Biol",
+  "doi": "10.1371/journal.pbio.3001839",
+  "license": "CC0 1.0"
+ },
+ {
+  "file": "network_yeast_zip4-turboid.tsv",
+  "species": "yeast",
+  "what": "Zip4 TurboID proximity targets (meiotic prophase)",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Voelkel-Meiman et al. 2024, PLoS Genet",
+  "doi": "10.1371/journal.pgen.1011432",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_yeast_atg9-apex2.tsv",
+  "species": "yeast",
+  "what": "Atg9 APEX2 proximity proteome (nitrogen starvation, 1 h)",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Filali-Mouncef et al. 2024, Autophagy",
+  "doi": "10.1080/15548627.2024.2366749",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_yeast_not4-turboid.tsv",
+  "species": "yeast",
+  "what": "Not4 (Ccr4-Not) TurboID proximity interactome",
+  "type": "proximity labeling (bait interactome)",
+  "cite": "Pfannenstein et al. 2024, G3",
+  "doi": "10.1093/g3journal/jkae221",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_yeast_tel1-phospho.tsv",
+  "species": "yeast",
+  "what": "Tel1-dependent phosphoproteome (tel1 deletion vs wild type, MMS)",
+  "type": "phosphoproteomics",
+  "cite": "Comstock et al. 2025, J Biol Chem",
+  "doi": "10.1016/j.jbc.2025.108194",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_yeast_tdp43-deletion-screen.tsv",
+  "species": "yeast",
+  "what": "Deletion-collection screen: deletions that raise TDP-43 levels",
+  "type": "Genetic screen",
+  "cite": "Byrd et al. 2026, J Cell Biol",
+  "doi": "10.1083/jcb.202212064",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_zebrafish_itga5-ipms.tsv",
+  "species": "zebrafish",
+  "what": "Inactive Itga5 IP-MS interactors (somite-stage embryos)",
+  "type": "IP-MS",
+  "cite": "Sun and Holley 2026, Mol Cell Proteomics",
+  "doi": "10.1016/j.mcpro.2025.101087",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_zebrafish_mbd5-coip-ms.tsv",
+  "species": "zebrafish",
+  "what": "Mbd5 co-IP-MS interactors (4 dpf larvae)",
+  "type": "IP-MS",
+  "cite": "Guo et al. 2024, Nucleic Acids Res",
+  "doi": "10.1093/nar/gkae093",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_zebrafish_bckdk-cas13d-screen.tsv",
+  "species": "zebrafish",
+  "what": "Maternal kinase/phosphatase CRISPR-RfxCas13d knockdown screen (embryos)",
+  "type": "CRISPR screen",
+  "cite": "Hernández-Huertas et al. 2025, EMBO J",
+  "doi": "10.1038/s44318-025-00617-8",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_zebrafish_mzt-proteome-cluster1.tsv",
+  "species": "zebrafish",
+  "what": "Maternal-to-zygotic transition proteome, rising cluster (embryos)",
+  "type": "Proteomics",
+  "cite": "Fang et al. 2024, iScience",
+  "doi": "10.1016/j.isci.2024.109944",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_arabidopsis-thaliana_fama-turboid.tsv",
+  "species": "arabidopsis-thaliana",
+  "what": "FAMA TurboID interaction candidates (seedlings)",
+  "type": "TurboID",
+  "cite": "Mair et al. 2019, eLife",
+  "doi": "10.7554/eLife.47864",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_arabidopsis-thaliana_hda19-ipms.tsv",
+  "species": "arabidopsis-thaliana",
+  "what": "HDA19 IP-MS nuclear binding partners (etiolated seedlings)",
+  "type": "IP-MS",
+  "cite": "Vélez-Bermúdez and Schmidt 2023, Front Plant Sci",
+  "doi": "10.3389/fpls.2023.1296767",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_arabidopsis-thaliana_da1-apms.tsv",
+  "species": "arabidopsis-thaliana",
+  "what": "DA1 AP-MS interactors (seedlings)",
+  "type": "AP-MS",
+  "cite": "Vanhaeren et al. 2020, eLife",
+  "doi": "10.7554/eLife.52276",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_arabidopsis-thaliana_osmotic-kinase-phospho.tsv",
+  "species": "arabidopsis-thaliana",
+  "what": "Osmotic stress-induced kinase phosphosites (seedlings)",
+  "type": "Phosphoproteomics",
+  "cite": "Lin et al. 2020, Nat Commun",
+  "doi": "10.1038/s41467-020-14477-9",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_dictyostelium-discoideum_ubxd9-coip.tsv",
+  "species": "dictyostelium-discoideum",
+  "what": "UBXD9-GFP co-IP-MS interactors (AX2 cells)",
+  "type": "IP-MS",
+  "cite": "Riehl et al. 2021, Front Cell Dev Biol",
+  "doi": "10.3389/fcell.2021.748860",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_escherichia-coli-83333_groe-lon-proteomics.tsv",
+  "species": "escherichia-coli-83333",
+  "what": "Lon-dependent proteome changes on GroEL/ES depletion",
+  "type": "Proteomics",
+  "cite": "Niwa et al. 2022, Molecules",
+  "doi": "10.3390/molecules27123772",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_staphylococcus-aureus-93061_rnaiii-pulldown.tsv",
+  "species": "staphylococcus-aureus-93061",
+  "what": "RNAIII pull-down proteins (NCTC 8325 lysate)",
+  "type": "Pull-down",
+  "cite": "Zhang et al. 2015, BMC Microbiol",
+  "doi": "10.1186/s12866-015-0435-3",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_staphylococcus-aureus-93061_crispri-essential.tsv",
+  "species": "staphylococcus-aureus-93061",
+  "what": "Genes essential by CRISPRi in NCTC 8325-4 and Newman",
+  "type": "CRISPR screen",
+  "cite": "Liu et al. 2024, mSystems",
+  "doi": "10.1128/msystems.01289-23",
+  "license": "CC BY 4.0"
+ },
+ {
+  "file": "network_streptococcus-pneumoniae_saliva-tnseq.tsv",
+  "species": "streptococcus-pneumoniae",
+  "what": "Tn-seq hits in human saliva (TIGR4)",
+  "type": "Genetic screen",
+  "cite": "Verhagen et al. 2014, PLoS One",
+  "doi": "10.1371/journal.pone.0089541",
+  "license": "CC BY"
  }
 ]

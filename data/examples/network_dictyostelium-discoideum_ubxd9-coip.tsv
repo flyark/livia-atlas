@@ -1,0 +1,127 @@
+# UBXD9 interactors: proteins significantly co-purified with C-terminally tagged UBXD9-GFP (GFP-trap) versus GFP alone from log-phase Dictyostelium discoideum AX2 cells (label-free mass spectrometry, four biological replicates)
+# Riehl J, Rijal R, Nitz L, et al. 2021. Domain Organization of the UBX Domain Containing Protein 9 and Analysis of Its Interactions With the Homohexameric AAA + ATPase p97 (Valosin-Containing Protein). Front Cell Dev Biol 9:748860. https://doi.org/10.3389/fcell.2021.748860
+# Source: Data_Sheet_1.PDF, Table S1 "Significantly co-purified proteins in AX2/UBXD9-GFP versus AX2/GFP" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8495200/supplementaryFiles); PRIDE PXD027160, PXD027162
+# Cutoff: FC >= 1.4 and p-value <= 0.05 (the paper's cutoff); all 120 proteins kept, including the bait UBXD9 (DDB_G0279285) and p97 (DDB_G0288065); one p-value printed with a decimal comma (2,68) read as 2.68; descriptions as published, with the British spelling of "uncharacterized" changed to US spelling, and the bait labeled UBXD9 (described as an uncharacterized protein in Table S1)
+# Licensed CC BY 4.0
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+protein	role	description	log2FC	neg_log10_pvalue	uniprot
+DDB_G0279285	bait	UBXD9	5.67	1.49	Q54X06
+DDB_G0289609	prey	CBS domain-containing protein	3.39	5.41	Q54H97
+DDB_G0272200	prey	Uncharacterized protein	3.64	5.21	Q75JS7
+DDB_G0272112	prey	Myosin-J heavy chain	3.12	4.68	
+DDB_G0270984	prey	60S ribosomal protein L36a	3.05	4.64	Q55CW5
+DDB_G0289085	prey		2.19	4.41	Q54I10
+DDB_G0279591	prey	Type-3 glutamine synthetase	3.63	4.38	Q54WR9
+DDB_G0285515	prey	Peter Pan-like protein	2.21	4.37	Q54N44
+DDB_G0289485	prey	Vacuolin-A	1.76	4.33	
+DDB_G0275679	prey	Rac guanine nucleotide exchange factor JJ	2.37	4.21	
+DDB_G0284945	prey	Putative rRNA methyltransferase	4.92	4.18	Q54NX0
+DDB_G0272867	prey	Probable arginine--tRNA ligase, cytoplasmic	3.02	4.17	Q558Z0
+DDB_G0288105	prey		1.73	4.06	
+DDB_G0288133	prey	Uncharacterized protein	1.38	3.88	Q54JD4
+DDB_G0290085	prey	Uncharacterized protein	3.21	3.86	
+DDB_G0292806	prey	Clustered mitochondria protein homolog	3.26	3.78	O15818
+DDB_G0271804	prey	Putative uncharacterized protein	3.33	3.77	
+DDB_G0292804	prey	Actin-related protein 2/3 complex subunit 3	2.18	3.66	O96624
+DDB_G0277971	prey	V-type proton ATPase subunit G	3.17	3.6	Q54Z13
+DDB_G0278025	prey	Uncharacterized protein	3.5	3.6	
+DDB_G0270992	prey	Protein transport protein SEC31	2.27	3.47	Q55CT5
+DDB_G0271678	prey	Phosphoenolpyruvate carboxykinase (ATP)	3.23	3.45	Q75JD5
+DDB_G0271736	prey	Ras-related protein RabC	2.96	3.42	P34143
+DDB_G0290963	prey	Kinesin-related protein 1	3.24	3.4	
+DDB_G0287709	prey	Uncharacterized protein	4.51	3.38	Q54K01
+DDB_G0277183	prey	Histone H4	1.66	3.36	Q76NW2
+DDB_G0291301	prey	Putative bifunctional amine oxidase	4.91	3.28	Q54EW2
+DDB_G0272560	prey	cAMP-binding protein 1	4.77	3.25	P19198
+DDB_G0273447	prey	Drebrin-like protein	1.2	3.24	Q557J6
+DDB_G0272989	prey	Uncharacterized protein	1.04	3.21	Q86IF6
+DDB_G0271816	prey	Uncharacterized protein	2.54	3.19	
+DDB_G0290181	prey	Uncharacterized protein	2.52	3.1	Q54GG4
+DDB_G0277849	prey	Dynamin-A	1.69	3.03	Q94464
+DDB_G0277221	prey	Clathrin heavy chain	1.19	3.01	
+DDB_G0287391	prey	Ran-specific GTPase-activating protein homolog	2.52	2.98	Q54KD9
+DDB_G0281437	prey	Lysine--tRNA ligase	2.47	2.93	Q54TY4
+DDB_G0278779	prey	Probable aconitate hydratase, mitochondrial	2.21	2.88	Q54XS2
+DDB_G0293702	prey	Probable replication factor C subunit 3	2.67	2.88	Q54BN3
+DDB_G0292998	prey	Ras-like protein rasB	3	2.87	P32252
+DDB_G0288613	prey	Eukaryotic peptide chain release factor subunit 1	2.36	2.83	Q9BMX0
+DDB_G0282141	prey	Hisactophilin-1	4	2.7	
+DDB_G0293226	prey	RuvB-like helicase	2.16	2.68	Q54C28
+DDB_G0290465	prey	Uncharacterized protein	1.74	2.67	
+DDB_G0288769	prey	Adenylyl cyclase-associated protein	1.22	2.67	P54654
+DDB_G0285589	prey	Formin-H	2.76	2.66	Q54N00
+DDB_G0272819	prey	32 kDa heat shock protein	1.71	2.64	P54658
+DDB_G0291229	prey	Actin-binding protein F	1.9	2.61	
+DDB_G0270026	prey	Uncharacterized protein	1.93	2.58	
+DDB_G0287587	prey	Small aggregate formation protein	1.89	2.56	
+DDB_G0292406	prey	Ras-related protein Rab-4	1.83	2.54	Q54DA7
+DDB_G0269334	prey	Uncharacterized protein	4.6	2.52	Q55E97
+DDB_G0288041	prey	Uncharacterized protein	2.25	2.51	
+DDB_G0280291	prey	Methenyl tetrahydrofolate cyclohydrolase	1.11	2.5	Q54VK0
+DDB_G0289173	prey	ADP-ribosylation factor 1	3.1	2.49	O00909
+DDB_G0280131	prey	Probable inactive serine/threonine-protein kinase	1.41	2.46	
+DDB_G0293070	prey	Uncharacterized protein	2.31	2.46	
+DDB_G0288387	prey	Acetyl-CoA carboxylase	0.52	2.43	
+DDB_G0277009	prey	Uncharacterized protein	2.66	2.4	
+DDB_G0281925	prey	Uncharacterized protein	2.76	2.34	Q54T87
+DDB_G0348940	prey	Uncharacterized protein	2.55	2.31	
+DDB_G0274655	prey	Uncharacterized protein	2.18	2.3	Q555C4
+DDB_G0290597	prey	Uncharacterized protein	2.31	2.29	
+DDB_G0283987	prey	Bifunctional purine synthesis protein purC/E	1.28	2.29	Q54QE4
+DDB_G0294292	prey	Unclassified GTPase	2.06	2.28	Q54AQ0
+DDB_G0280431	prey	Serine/threonine-protein kinase rio1	2.91	2.26	Q54VD8
+DDB_G0272632	prey	Putative glutathione S-transferase alpha-2	3.74	2.26	Q556G3
+DDB_G0280801	prey	Uncharacterized protein	2.29	2.24	
+DDB_G0284985	prey	Ras-related protein Rab-1D	2.05	2.24	Q54NU2
+DDB_G0291077	prey	Putative rho GDP-dissociation inhibitor 1	2.3	2.23	Q95UQ1
+DDB_G0267850	prey	Ribosomal protein L1 family protein	1.86	2.22	Q55G29
+DDB_G0276335	prey	Protein PYR1-3	0.6	2.21	
+DDB_G0274521	prey	Ribosome biogenesis regulatory protein homolog	2.32	2.17	Q869Q2
+DDB_G0285931	prey	Dynamin-like protein B	2.15	2.15	Q54MH8
+DDB_G0285971	prey	60S ribosomal protein L37	0.95	2.12	Q54MG6
+DDB_G0276493	prey	Eukaryotic translation initiation factor 6	1.04	2.02	Q551M2
+DDB_G0279415	prey	LIM domain-containing protein E	1.63	1.98	O60952
+DDB_G0276105	prey	Uncharacterized protein	2.41	1.98	
+DDB_G0284845	prey	Uncharacterized protein	1.4	1.95	
+DDB_G0277449	prey	Probable serine/threonine-protein kinase	2.01	1.93	Q8MYF1
+DDB_G0272825	prey	40S ribosomal protein S4	1.29	1.93	P51405
+DDB_G0291161	prey		0.88	1.91	
+DDB_G0269140	prey	Ras GTPase-activating-like protein gapA	1.83	1.86	O00899
+DDB_G0288273	prey	60S ribosomal protein L10	0.55	1.79	Q54J69
+DDB_G0293036	prey	Probable ATP-dependent RNA helicase ddx5	1.4	1.79	Q54CD6
+DDB_G0272815	prey	Cysteine proteinase 5	1.74	1.77	P54640
+DDB_G0277851	prey	Dynamin-B	1.47	1.76	Q9U1M9
+DDB_G0278345	prey	Probable ATP-citrate synthase	0.86	1.71	Q54YA0
+DDB_G0274181	prey	Probable GH family 25 lysozyme 2	1.38	1.71	Q86KC1
+DDB_G0278685	prey	Uncharacterized protein	1.82	1.66	Q54Y50
+DDB_G0277825	prey	Actin-related protein 2/3 complex subunit 1	1.09	1.65	O96622
+DDB_G0280345	prey		1.83	1.63	Q54VG4
+DDB_G0283741	prey	60S ribosomal protein L26	0.43	1.61	Q54QM8
+DDB_G0271806	prey	PH and Rap-GAP domain-containing protein	1.8	1.59	Q55AN8
+DDB_G0280805	prey		1.9	1.59	Q54UU6
+DDB_G0282243	prey	NHP2-like protein 1 homolog	2.69	1.58	Q54ST0
+DDB_G0290857	prey	Uncharacterized protein	1.14	1.58	
+DDB_G0289833	prey	Uncharacterized protein	0.96	1.57	Q54GY1
+DDB_G0280533	prey	Vegetative-specific protein V4	2.56	1.57	
+DDB_G0289563	prey		1.21	1.55	Q54HC2
+DDB_G0291858	prey		1.3	1.55	Q54E04
+DDB_G0276473	prey	Uncharacterized protein	1.44	1.53	Q86HU8
+DDB_G0277087	prey	Bifunctional purine biosynthesis protein purH	1.16	1.53	Q86L14
+DDB_G0272374	prey	Uncharacterized protein	2.34	1.52	Q55A15
+DDB_G0290745	prey	Polyadenylate-binding protein 1-B	1.06	1.48	Q1ZXC2
+DDB_G0275365	prey	Uncharacterized protein	1.57	1.47	Q553T2
+DDB_G0277957	prey	Uncharacterized protein	0.75	1.47	Q54Z21
+DDB_G0267436	prey	ABC transporter F family member 4	1.01	1.46	Q8T6B4
+DDB_G0282303	prey	Uncharacterized protein	1.13	1.41	Q54SQ5
+DDB_G0287557	prey	RNA-binding protein pno1	1.01	1.38	Q54K66
+DDB_G0291848	prey	COP9 signalosome complex subunit 3	1.35	1.38	Q54E53
+DDB_G0290333	prey	Uncharacterized protein	0.71	1.37	Q54G77
+DDB_G0287505	prey	Talin-B	1.48	1.37	
+DDB_G0281711	prey	Probable ATP-dependent RNA helicase ddx27	2.41	1.35	Q54TJ4
+DDB_G0288787	prey	Vacuolar protein sorting-associated protein 29	2.03	1.35	Q54IF7
+DDB_G0274325	prey	Probable ATP-dependent RNA helicase ddx52	1.39	1.34	Q86IZ9
+DDB_G0281471	prey	Probable serine/threonine-protein kinase pdkA	0.96	1.33	Q54TW2
+DDB_G0292052	prey	Protein SEC13 homolog	0.51	1.32	Q54DS8
+DDB_G0288299	prey		2.07	1.31	Q54J47
+DDB_G0278863	prey	Serine/threonine-protein kinase fray1	1.18	1.3	Q54XL6
+DDB_G0288065	prey	p97	2.31	1.01	

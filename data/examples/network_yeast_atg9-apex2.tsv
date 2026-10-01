@@ -1,0 +1,61 @@
+# APEX2 proximity labeling of the autophagy protein Atg9 (Atg9-FLAG-APEX2) in S. cerevisiae after 60 min of nitrogen starvation, compared with the same strain processed without H2O2 (no labeling reaction); DIA mass spectrometry
+# Filali-Mouncef Y, Leytens A, Vargas Duarte P, Zampieri M, Dengjel J, Reggiori F. 2024. An APEX2-based proximity-dependent biotinylation assay with temporal specificity to study protein interactions during autophagy in the yeast Saccharomyces cerevisiae. Autophagy 20(10):2323-2337. https://doi.org/10.1080/15548627.2024.2366749
+# Source: Table_S1.xlsx (Supplemental Table S1, in KAUP_A_2366749_SM8137.zip), sheet "20230807_supp_with_peptides_ren", columns "APEX2-Atg9 60min Exp" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11423678/supplementaryFiles)
+# Cutoff: Benjamini-Hochberg corrected p < 0.05 (the paper's FDR < 0.05) with positive enrichment over the negative control; 55 proteins pass, all kept; "mean difference" is on log2 intensities (sheet legend); the bait ATG9 is itself in the enriched set; protein groups (e.g. RPL42A;RPL42B) kept as published, uniprot from the first member
+# Licensed CC BY 4.0
+gene	uniprot	APEX2-Atg9 60min Exp - mean difference	APEX2-Atg9 60min Exp - bh corrected	role
+HSP12	P22943	8.2431	4.300e-04	prey
+DDR48	P18899	6.8816	0.003	prey
+CCP1	P00431	6.174	0.0018	prey
+MET3	P08536	6.0861	0.0224	prey
+MIA40	P36046	6.0449	7.960e-04	prey
+PAI3	P01094	4.9012	0.0191	prey
+WWM1	P43582	4.7477	0.0283	prey
+ATG23	Q06671	4.6963	0.0208	prey
+HBT1	Q07653	4.6059	0.0157	prey
+COX17	Q12287	4.4349	0.0412	prey
+ATG9	Q12142	4.3511	0.0071	bait
+GFD2	P25370	3.8901	0.0094	prey
+CMC2	Q3E7A4	3.8694	0.0103	prey
+ERV1	P27882	3.7875	0.0068	prey
+SCO2	P38072	3.7677	0.0063	prey
+OM45	P16547	3.7518	7.960e-04	prey
+BNA2	P47125	3.6285	0.003	prey
+SHP1	P34223	3.3772	0.0119	prey
+MIC60	P36112	3.3087	0.0196	prey
+ATG27	P46989	3.2881	0.0139	prey
+ENT3	P47160	3.247	0.0308	prey
+AIM36	Q03798	3.1422	0.0157	prey
+ATG21	Q02887	3.0292	0.0157	prey
+YNL208W	P40159	2.9726	0.0028	prey
+MAM3	Q12296	2.9298	0.0196	prey
+MNR2	P35724	2.6807	0.0196	prey
+SCO1	P23833	2.6225	0.0297	prey
+IGO1	P53897	2.5992	0.0208	prey
+VPS35	P34110	2.5616	0.041	prey
+SMI1	P32566	2.5111	0.0302	prey
+RAS1	P01119	2.48	0.0307	prey
+COX5A	P00424	2.415	0.0438	prey
+CSC1	Q06538	2.4079	0.0224	prey
+RPN12	P32496	2.3936	0.0174	prey
+RTC3	P38804	2.3138	0.0238	prey
+TIM11	P81449	2.2516	0.0046	prey
+UIP4	Q08926	2.2285	0.0484	prey
+SCD6	P45978	2.1743	0.0358	prey
+IGD1	P43598	2.1216	0.0425	prey
+SPE3	Q12074	2.0121	0.0035	prey
+EGD2	P38879	1.9848	0.0094	prey
+TIM50	Q02776	1.7678	0.0063	prey
+LIA1	P47120	1.744	0.0496	prey
+PEP4	P07267	1.4872	0.0224	prey
+YFR006W	P43590	1.3801	0.0208	prey
+MET17	P06106	1.3445	0.0224	prey
+GVP36	P40531	1.3084	0.032	prey
+MCA1	Q08601	1.2789	0.0224	prey
+RVS167	P39743	1.2574	0.0157	prey
+VMA5	P31412	1.1999	0.0392	prey
+FRA1	Q07825	1.1175	0.0196	prey
+HRI1	Q05905	1.0698	0.003	prey
+INO1	P11986	0.8452	0.0412	prey
+BMH1	P29311	0.6407	0.0307	prey
+GLC7	P32598	0.6177	0.0208	prey

@@ -1,0 +1,30 @@
+# Example: Middlebrook-essential (M-ES) genes of Mycobacterium tuberculosis Erdman for which transposon mutants were recovered on MtbYM rich medium and screened for fitness in mice by Tn-seq.
+# Source: Block AM, Wiegert PC, Namugenyi SB, Tischler AD. (2024) Transposon sequencing reveals metabolic pathways essential for Mycobacterium tuberculosis infection. PLoS Pathog 20(3):e1011663. https://doi.org/10.1371/journal.ppat.1011663
+# S1 Table (ppat.1011663.s001.xlsx), Tab A "Tn mutants in M-ES library": 45 listed Tn mutants collapsed to 24 unique Rv numbers (one mutant per gene kept). Licensed CC BY 4.0; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas index, mapped from the table's Rv number or gene name (unmapped rows keep the Rv number); uniprot = index accession; rv_number / name_in_table / erdman_number as given; essentiality_call = the table's Essentiality column.
+# 22 of 24 genes map to the index (92%).
+protein	uniprot	rv_number	name_in_table	erdman_number	essentiality_call	mapped
+trpG	P9WN35	Rv0013	trpG	ERDMAN_0018	ES	yes
+pstP	P9WHW5	Rv0018c	pstP	ERDMAN_0023	ESD	yes
+fhaA	P71590	Rv0020c	fhaA	ERDMAN_0025	ESD	yes
+proC	P9WHU7	Rv0500	proC	ERDMAN_0547	ES	yes
+purQ	P9WHL5	Rv0788	purQ	ERDMAN_0872	ES	yes
+purF	P9WHQ7	Rv0808	purF	ERDMAN_0892	ES	yes
+purM	I6Y4V6	Rv0809	purM	ERDMAN_0893	ES	yes
+pabB	O05591	Rv1005c	pabB	ERDMAN_1118	ES	yes
+ribD	P9WPH1	Rv1409	ribG	ERDMAN_1568	ES	yes
+ribBA	P9WHF1	Rv1415	ribA2	ERDMAN_1574	ES	yes
+ilvA	P9WG95	Rv1559	ilvA	ERDMAN_1735	ES	yes
+trpB	P9WFX9	Rv1612	trpB	ERDMAN_1772	ES	yes
+ftsQ	P9WNA1	Rv2151c	ftsQ	ERDMAN_2370	ES	yes
+obg	P9WMT1	Rv2440c		ERDMAN_2739	ES	yes
+Rv3034		Rv3034		ERDMAN_3321	ES	no
+pheA	P9WIC3	Rv3838c	pheA	ERDMAN_4205	ES	yes
+Rv3859c		Rv3859c	gltB	ERDMAN_4233	ES	no
+rpfA	P9WG31	Rv0867	rpfA	ERDMAN_0959	NE	yes
+pstB2	P9WQK9	Rv0933	pstB	ERDMAN_1034	NE	yes
+pstC1	P9WG07	Rv0935	pstC1	ERDMAN_1036	NE	yes
+rpfE	O53177	Rv2450c	rpfE	ERDMAN_2696	NE	yes
+tadA	O69719	Rv3659c	tadA	ERDMAN_4005	NE	yes
+panC	P9WIL5	Rv3602c	panC	ERDMAN_3949	ES	yes
+phoP	P71814	Rv0757	phoP-1	ERDMAN_0839	NE	yes

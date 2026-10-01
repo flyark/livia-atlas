@@ -1,0 +1,76 @@
+# SUMO-ID (split-TurboID) proximity labeling at Rad52 repair sites in S. pombe: NTurbo-SUMO with Rad52-CTurbo vs single-half controls; proteins significantly enriched in the wild-type SUMO-ID samples
+# Markowska K, Litwin I, Misiorna D, Kończak J, Bogdańska A, Tomaszewska P, Tracz M, Haenen M, Kramarz K. 2025. PolySUMOylation of PCNA and Rad52 restricts centromeric recombination in fission yeast. Nat Commun 16:10837. https://doi.org/10.1038/s41467-025-65862-1
+# Source: 41467_2025_65862_MOESM3_ESM.xlsx (Supplementary Data 1), sheet "SplitID_SUMO_WT_volc" (https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-65862-1/MediaObjects/41467_2025_65862_MOESM3_ESM.xlsx)
+# Cutoff: the paper's thresholds (two-sided t-test p < 0.05 and fold change >= 1.5; 96 significantly changed proteins, column "Significant SplitID_Controls_Filter" = +_Keep); the 70 enriched in SUMO-ID (positive t-test difference) kept, including the split-TurboID fusion partners Rad52 (rad22) and SUMO (pmt3) marked as bait; sorted by t-test difference
+# Licensed CC BY 4.0
+gene	uniprot	Student's T-test Difference SplitID_Controls	-Log Student's T-test p-value SplitID_Controls	role
+rad22	P36592	3.277	1.299	bait
+pmt3	O13351	2.733	2.816	bait
+ret3	O74891	6.605	3.173	prey
+SPCC622.02	O94592	5.927	1.507	prey
+rmt1	Q9URX7	4.752	1.495	prey
+erm1		4.227	1.38	prey
+SPAC1B2.03c	Q9UTF7	4.117	1.296	prey
+erg28	O74820	4.066	2.027	prey
+cbf5	O14007	3.336	1.391	prey
+rad25	P42657	2.452	2.164	prey
+aat2	O42652	2.094	2.152	prey
+pho4	Q01682	2.012	1.58	prey
+vcx1	O59768	1.961	1.46	prey
+met11	O74927	1.897	1.631	prey
+adh4	Q09669	1.895	2.789	prey
+urg3		1.881	1.346	prey
+pcn1	Q03392	1.871	1.602	prey
+brx1	Q9HGL6	1.753	2.505	prey
+SPAC11D3.02c	Q10081	1.725	1.801	prey
+pol3	P30316	1.674	1.39	prey
+SPBC1539.06	Q9Y7Z3	1.551	1.387	prey
+rki1	Q9UTL3	1.417	1.29	prey
+SPAC17H9.13c	O13810	1.411	1.308	prey
+rps3001	P0CT62	1.365	1.317	prey
+rps1101		1.355	1.316	prey
+rpl702	P25457	1.347	1.881	prey
+rpl1802	Q8TFH1	1.313	1.574	prey
+gdh1	P78804	1.297	1.738	prey
+anp1	O74745	1.262	1.784	prey
+rpl3201	O42935	1.195	1.794	prey
+arc2	O14241	1.169	2.268	prey
+ppn1	Q9C1W8	1.16	2.049	prey
+rad24	P42656	1.143	1.731	prey
+fas2		1.123	1.611	prey
+SPCC126.08c		1.1	1.368	prey
+rpl4302	O94686	1.084	1.272	prey
+mlo3	Q09330	1.082	1.578	prey
+SPBC1703.13c	Q9P7V8	1.078	1.603	prey
+rpl1801	Q10192	1.075	1.47	prey
+rpl39	P05767	1.071	1.406	prey
+rpl2301	P0CT60	1.041	1.402	prey
+ssa1	Q10265	1.029	1.271	prey
+arg7	P40369	1.02	1.282	prey
+lap2	O94544	0.9611	3.238	prey
+rps101	Q09781	0.9606	2.059	prey
+rpl14	O94238	0.9507	1.543	prey
+SPAC9E9.09c	O14293	0.9495	1.4	prey
+mmf1	O43003	0.931	1.828	prey
+ade10	O74928	0.928	1.312	prey
+SPBC8E4.01c	O42885	0.892	1.762	prey
+vps1	Q9URZ5	0.8862	1.503	prey
+rpl22	Q09668	0.8781	1.478	prey
+rpl6	P79071	0.8737	1.333	prey
+SPAC3A11.07	O14121	0.8696	1.286	prey
+htb1	P04913	0.8675	1.519	prey
+egd2	P87147	0.8338	1.977	prey
+rpl35b	Q9USX4	0.8258	1.493	prey
+vma2	P31411	0.8034	1.894	prey
+hcs1	O94247	0.8014	1.381	prey
+rpl1201	P0CT83	0.793	2.818	prey
+rpl31	Q9URX6	0.7921	1.483	prey
+cap1	P36621	0.7508	1.556	prey
+idi1	Q10132	0.7341	1.719	prey
+glt1		0.7271	2.159	prey
+lrs1	Q10490	0.7248	1.336	prey
+rvb2	O94692	0.6697	1.62	prey
+spi1	P28748	0.6558	1.481	prey
+SPBC947.15c	O43090	0.6455	2.03	prey
+atp1	P24487	0.6059	1.515	prey
+rpl502	O74306	0.6005	1.28	prey

@@ -1,0 +1,33 @@
+# Proteins co-purifying with FLAG-tagged Mbd5 (heat-shock-induced Tg(zhsp70l:3xFlag-mbd5 iso2-E2A-EGFP), anti-FLAG co-IP vs IgG control, LC-MS/MS) from zebrafish larvae at 4 dpf in all three rounds of co-IP/MS
+# Guo J, Zou Z, Dou X, et al. 2024. Zebrafish Mbd5 binds to RNA m5C and regulates histone deubiquitylation and gene expression in development metabolism and behavior. Nucleic Acids Res 52:4257-4275. https://doi.org/10.1093/nar/gkae093
+# Source: gkae093_supplemental_file.pdf, Table S6 "Proteins detected in three rounds of zebrafish Mbd5 co-IP and mass spec" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11077058/supplementaryFiles); PRIDE PXD048128
+# Cutoff: the paper's list of proteins with significant enrichment in all three rounds of co-IP/MS; all 27 rows kept (bait mbd5 included as published); coverage values as published; complex column from Table S5 (PR-DUB and PRC1 components)
+# Licensed CC BY 4.0
+gene	uniprot	Average Coverage(%)	1st Coverage(%)	2nd Coverage(%)	3rd Coverage(%)	role	complex	accession
+mbd5		43.33	43	39	48	bait		A2VCY3
+ywhabb	Q7T356	42.67	38	42	48	prey		F8W493
+ddx5	F1Q5L6	25	28	25	22	prey		Q6NWH7
+nme2b.2	Q7SXL4	17.33	11	11	30	prey		Q7SXL4
+hmgb2a	A0A8M1N808	17	13	19	19	prey		Q32PT3
+rps25	Q6PBI5	17	7	21	23	prey		Q6PBI5
+hdac1		14.67	20	8	16	prey	non-canonical PRC1 (Table S5)	A0A0R4IDY9
+ywhaz	B8JLJ3	12.67	11	13	14	prey		B2GTJ8
+eif2s3	F1QGW6	10.33	19	4	8	prey		E9QBU9
+psmd8	Q6IQH4	9.667	9	4	16	prey		Q6IQH4
+xpo1b	A0A8M9PPG9	8	17	4	3	prey		A0A2R8RNP8
+anxa4	Q804G7	7.667	3	8	12	prey		Q804G7
+gna15.3	A0AB32TC44	6.667	4	8	8	prey		A0A2R8QE49
+asxl1		6.333	14	2	3	prey	PR-DUB (Table S5)	Q6P6X8
+immt	Q6PFS4	6.333	11	3	5	prey		Q6PFS4
+ap2b1	Q6NYJ9	6	9	4	5	prey		F6NK19
+akap8l	A0A0H2UKW6	5.333	10	1	5	prey		A0A0H2UKW6
+anxa1b	A0AB32TWG9	5.333	3	5	8	prey		B8JLZ3
+etfb		5	7	4	4	prey		F1R9Y9
+cstf3	F1QIB2	4.667	8	5	1	prey		Q6PUS3
+adsl	F1R293	3.667	4	2	5	prey		Q6IQR1
+pip5k1bb	Q66HW3	3.667	3	5	3	prey		Q66HW3
+fubp1	Q6P2A9	3.333	4	1	5	prey		A0A2R8RQC2
+yars	Q6TGS6	3	5	2	2	prey		Q6TGS6
+naca	Q8JIU7	2.667	6	1	1	prey		A0A0R4IQN8
+tars		2.333	3	1	3	prey		A0A2R8QAT8
+cyfip2	B3DIT1	2.333	3	1	3	prey		A5A5E1

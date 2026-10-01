@@ -1,0 +1,137 @@
+# Example: Helicobacter pylori ATCC 43629 proteins modulated over time in outer membrane vesicles released by biofilm and by planktonic cultures (6 days and 10 days versus 2 days).
+# Source: Puca V, Marinacci B, Pagotto S, Krzyzek P, Di Cintio F, Pellegrini B, Pietrangelo L, Ronci M, Grande R. (2026) Characterization of Helicobacter pylori Outer Membrane Vesicles over time, in biofilm and planktonic phenotypes. Front Microbiol 17:1765988. https://doi.org/10.3389/fmicb.2026.1765988
+# Table 4, "List of proteins modulated between the Biofilm and Planktonic phenotypes identified by proteomic analysis". Cutoff as stated by the paper: identified in at least 33% of the replicates, significance >= 20 and fold change >= 1.5, giving 45 proteins in the biofilm and 123 in the planktonic phenotype; rows collapsed to 131 unique names (thousands separators in the HP numbers removed). Licensed CC BY; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas Helicobacter pylori 26695 index, mapped from the table's gene name or HP number (unmapped rows keep the name as given); uniprot = index accession; name_in_table as given; phenotype = the section of the table; ratio_6d_vs_2d and ratio_10d_vs_2d = the table's ratios.
+# 104 of 131 proteins map to the index (79%).
+protein	uniprot	name_in_table	phenotype	ratio_6d_vs_2d	ratio_10d_vs_2d	mapped
+ahpC	P21762	ahpC	Biofilm	1.71	2.56	yes
+dps	P43313	dps	Biofilm	3.57	5.58	yes
+ftnA	P52093	ftnA	Biofilm	7.07	5.87	yes
+glnA	P94845	glnA	Biofilm	7.94	7.70	yes
+gltA	P56062	gltA	Biofilm	7.32	7.96	yes
+groEL	P42383	groL	Biofilm	3.18	6.15	yes
+groES	P0A0R3	groS	Biofilm	4.57	4.32	yes
+HP_0097		HP_0097	Biofilm	3.48	2.76	no
+HP_0231	O25017	HP_0231	Biofilm	4.56	3.17	yes
+HP_0305		HP_0305	Biofilm	8.21	6.79	no
+HP_0470	O25216	HP_0470	Biofilm	5.83	2.51	yes
+HP_0486	O25230	HP_0486	Biofilm	13.82	11.57	yes
+HP_0558	O25284	HP_0558	Biofilm	12.53	10.21	yes
+HP_0596		HP_0596	Biofilm	6.43	4.85	no
+HP_0599	O25321	HP_0599	Biofilm	6.06	3.37	yes
+HP_0605	O25326	HP_0605	Biofilm	47.12	23.63	yes
+HP_0695	O25402	HP_0695	Biofilm	3.23	4.38	yes
+HP_0706	O25410	HP_0706	Biofilm	4.45	3.55	yes
+HP_0896	O25556	HP_0896	Biofilm	5.78	4.13	yes
+HP_0913	O25571	HP_0913	Biofilm	3.17	3.47	yes
+HP_1110	O25738	HP_1110	Biofilm	50.00	50.00	yes
+HP_1118	O25743	HP_1118	Biofilm	5.81	5.03	yes
+HP_1125	O25750	HP_1125	Biofilm	50.00	50.00	yes
+HP_1177	O25791	HP_1177	Biofilm	7.09	6.10	yes
+HP_1243	O25840	HP_1243	Biofilm	5.94	4.62	yes
+HP_1286	O25873	HP_1286	Biofilm	5.50	3.62	yes
+HP_1350	O25905	HP_1350	Biofilm	4.57	2.68	yes
+HP_1400	O25950	HP_1,400	Biofilm	6.01	3.41	yes
+HP_1454	O25993	HP_1454	Biofilm	4.88	4.71	yes
+HP_1501		HP_1501	Biofilm	7.65	2.54	no
+HP_1512	O26042	HP_1512	Biofilm	8.67	8.99	yes
+HP_1562	O26083	HP_1562	Biofilm	12.79	8.48	yes
+HP_1588		HP_1588	Biofilm	11.52	8.97	no
+HP_1018	O25662	hp1018/19	Biofilm	3.96	2.96	yes
+hpaA	P55969	hpaA	Biofilm	50.00	50.00	yes
+katA	P77872	katA	Biofilm	4.74	9.45	yes
+lpp20	P0A0V0	lpp20	Biofilm	6.57	7.41	yes
+ribH	O24854	ribH	Biofilm	14.53	17.70	yes
+rpoBC		rpoBC	Biofilm	0.68	0.22	no
+sodB	P43312	sodB	Biofilm	50.00	50.00	yes
+trxA	P66928	trxA	Biofilm	5.04	5.48	yes
+ureA	P14916	ureA	Biofilm	3.91	7.33	yes
+ureB	P69996	ureB	Biofilm	3.36	6.72	yes
+vacA	P55981	vacA	Biofilm	14.33	5.55	yes
+amiE	O25067	amiE	Plankton	50.00	50.00	yes
+aspA	P56149	aspA	Plankton	50.00	50.00	yes
+atpC	P56084	atpC	Plankton	1.01	0.01	yes
+C694_06140		C694_06140	Plankton	0.57	0.23	no
+cdh		cdh	Plankton	0.46	0.01	no
+fba	P56109	fba	Plankton	50.00	50.00	yes
+flaA	P0A0S1	flaA	Plankton	0.59	0.01	yes
+frdA	O06913	frdA	Plankton	0.52	0.01	yes
+fusA	P56002	fusA	Plankton	50.00	50.00	yes
+hcpA		hcpA	Plankton	1.89	0.01	no
+hcpC	O25728	hcpC	Plankton	1.65	0.01	yes
+hcpD		hcpD	Plankton	5.06	1.68	no
+HP_0018		HP_0018	Plankton	4.75	3.12	no
+HP_0087	O24914	HP_0087	Plankton	1.38	0.25	yes
+HP_0122		HP_0122	Plankton	50.00	50.00	no
+HP_0127		HP_0127	Plankton	4.89	2.42	no
+HP_0129	O24943	HP_0129	Plankton	1.64	1.29	yes
+HP_0130	O24944	HP_0130	Plankton	1.79	0.35	yes
+HP_0135		HP_0135	Plankton	11.88	7.65	no
+HP_0175	P56112	HP_0175	Plankton	2.13	1.49	yes
+HP_0204		HP_0204	Plankton	3.01	0.89	no
+HP_0227	O34523	HP_0227	Plankton	3.39	2.50	yes
+HP_0229	O25015	HP_0229	Plankton	1.96	0.37	yes
+HP_0232	O25018	HP_0232	Plankton	4.28	0.12	yes
+HP_0260	O25040	HP_0260	Plankton	2.47	0.14	yes
+HP_0275	O25052	HP_0275	Plankton	0.78	0.26	yes
+HP_0317	O25086	HP_0317	Plankton	1.69	0.70	yes
+HP_0377	O25140	HP_0377	Plankton	3.04	1.93	yes
+HP_0397	O25158	HP_0397	Plankton	50.00	50.00	yes
+HP_0408		HP_0408	Plankton	2.52	1.24	no
+HP_0410	O25166	HP_0410	Plankton	2.09	0.93	yes
+HP_0472	O25218	HP_0472	Plankton	3.60	0.25	yes
+HP_0485	O25229	HP_0485	Plankton	1.04	0.15	yes
+HP_0589	O25311	HP_0589	Plankton	4.20	11.25	yes
+HP_0590	O25312	HP_0590	Plankton	3.21	9.26	yes
+HP_0645	O25362	HP_0645	Plankton	1.17	1.88	yes
+ymxG	O25371	HP_0657	Plankton	1.04	0.01	yes
+HP_0659	O25373	HP_0659	Plankton	1.42	0.93	yes
+HP_0671		HP_0671	Plankton	4.35	1.78	no
+HP_0686	O25395	HP_0686	Plankton	4.66	1.65	yes
+HP_0694		HP_0694	Plankton	3.88	1.88	no
+HP_0696	O25403	HP_0696	Plankton	4.22	13.82	yes
+HP_0697	O25404	HP_0697	Plankton	7.07	10.46	yes
+HP_0710	O25414	HP_0710	Plankton	2.36	0.02	yes
+HP_0719		HP_0719	Plankton	1.70	0.66	no
+HP_0721	O25423	HP_0721	Plankton	2.11	1.87	yes
+HP_0746	O25442	HP_0746	Plankton	2.34	0.96	yes
+HP_0758		HP_0758	Plankton	1.22	0.01	no
+HP_0783		HP_0783	Plankton	2.58	1.69	no
+HP_0788		HP_0788	Plankton	1.81	0.54	no
+HP_0836	O25507	HP_0836	Plankton	50.00	50.00	yes
+HP_0837	O25508	HP_0837	Plankton	5.09	3.20	yes
+HP_0912	O25570	HP_0912	Plankton	2.94	2.82	yes
+pqqE	O25656	HP_1012	Plankton	1.27	0.23	yes
+HP_1037	O25681	HP_1037	Plankton	50.00	50.00	yes
+HP_1104	O25732	HP_1104	Plankton	15.98	46.61	yes
+HP_1111	O25739	HP_1,111	Plankton	2.57	4.40	yes
+HP_1167		HP_1167	Plankton	2.80	0.01	no
+HP_1172	O25786	HP_1172	Plankton	1.51	0.96	yes
+HP_1173	O25787	HP_1173	Plankton	3.31	1.94	yes
+HP_1193	O25804	HP_1193	Plankton	6.95	2.87	yes
+HP_1227	O25825	HP_1227	Plankton	3.08	0.01	yes
+HP_1285	O25872	HP_1285	Plankton	1.77	1.08	yes
+HP_1287	O25874	HP_1287	Plankton	35.63	75.66	yes
+HP_1326	O25884	HP_1326	Plankton	2.57	1.32	yes
+HP_1395		HP_1395	Plankton	2.01	0.01	no
+HP_1453	O25992	HP_1453	Plankton	2.49	0.16	yes
+HP_1455		HP_1455	Plankton	50.00	50.00	no
+HP_1457	O25995	HP_1457	Plankton	3.37	1.18	yes
+HP_1461	O25997	HP_1461	Plankton	2.91	1.49	yes
+HP_1462	O25998	HP_1,462	Plankton	2.83	0.35	yes
+HP_1469		HP_1469	Plankton	3.83	2.53	no
+HP_1489	O26022	HP_1489	Plankton	1.71	0.01	yes
+HP_1524	O26052	HP_1524	Plankton	50.00	50.00	yes
+HP_1561	O26082	HP_1561	Plankton	2.22	1.09	yes
+msrAB	O25011	msrAB	Plankton	0.93	0.20	yes
+pdxJ	O26102	pdxJ	Plankton	3.31	0.71	yes
+pepA	O25294	pepA	Plankton	2.86	0.06	yes
+pgbA	O25249	pgbA	Plankton	2.67	0.95	yes
+pgbB		pgbB	Plankton	2.10	0.11	no
+rlpA	O26091	rlpA	Plankton	4.68	1.46	yes
+rnj	P56185	rnj	Plankton	1.57	0.01	yes
+rplB	P56030	rplB	Plankton	87.82	53.63	yes
+rpsC	P56010	rpsC	Plankton	2.16	1.64	yes
+rpsG	P66609	rpsG	Plankton	7.35	6.01	yes
+tolB	O25751	tolB	Plankton	1.46	0.54	yes
+tuf	P56003	tuf	Plankton	5.46	15.28	yes

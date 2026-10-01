@@ -1,0 +1,29 @@
+# Example: proteins co-immunoprecipitated with the HP0018-myc fusion protein from Helicobacter pylori B128 cell envelope extracts, plus the bait.
+# Source: Rosinke K, Starai VJ, Hoover TR. (2024) Helicobacter pylori HP0018 Has a Potential Role in the Maintenance of the Cell Envelope. Cells 13(17):1438. https://doi.org/10.3390/cells13171438
+# Table 1, "Proteins identified from the co-IP assay with the HP0018-myc-tagged protein": the paper lists the proteins of one biological replicate, minus ribosomal and ribosomal-associated proteins, with the highest Mascot score from three wild-type negative-control replicates alongside; all 23 listed proteins are kept. Licensed CC BY 4.0; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas Helicobacter pylori 26695 index, mapped from the HP number in the table's description (unmapped rows keep the HP number); uniprot = index accession; hp_number / name_in_table / accession_in_table as given; mascot_score_HP0018_myc and peptides = the table's values for the HP0018-myc sample.
+# 17 of 23 proteins map to the index (74%).
+protein	uniprot	hp_number	name_in_table	accession_in_table	role	mascot_score_HP0018_myc	peptides	mapped
+guaB	P56088	HP0829	IMP dehydrogenase GuaB, HP0829	QDY56472.1	prey	1644	25	yes
+rhpA	O25029	HP0247	RNA helicase RhpA, HP0247	QDY56231.1	prey	1504	23	yes
+HP_1124	O25749	HP1124	hypothetical protein, HP1124	QDY55932.1	prey	923	17	yes
+HP_0415	O25170	HP0415	mechanosensitive ion channel family protein, HP0415	QDY56010.1	prey	823	19	yes
+flgS	O25026	HP0244	two-component sensor histidine kinase FlgS, HP0244	QDY56228.1	prey	748	16	yes
+HP0519		HP0519	sel1 repeat family protein, HP0519	QDY56734.1	prey	703	11	no
+HP0638		HP0638	outer inflammatory protein OipA, HP0638	QDY56639.1	prey	475	7	no
+HP_0772	O25464	HP0772	N-acetylmuramoyl-L-alanine amidase AmiA, HP0772	QDY56525.1	prey	461	13	yes
+pdxJ	O26102	HP1582	pyridoxine 5′-phosphate synthase PdxJ, HP1582	QDY56975.1	prey	437	9	yes
+ureA	P14916	HP0073	urease subunit alpha UreA, HP0073	QDY56071.1	prey	416	8	yes
+HP0018		HP0018	HP0018	QDY56955.1	bait	372	8	no
+HP_0284	O25059	HP0284	mechanosensitive ion channel family protein, HP0284	QDY56262.1	prey	356	7	yes
+murG	O25770	HP1155	undecaprenyldiphospho-muramoylpentapeptide beta-N-acetylglucosaminyltransferase MurG, HP1155	QDY55904.1	prey	288	5	yes
+HP0160		HP0160	Sel1-like repeat protein HcpD, HP0160	QDY56151.1	prey	252	9	no
+HP_1572	O26092	HP1572	lytic transglycosylase MltD, HP1572	QDY56984.1	prey	218	7	yes
+HP1588		HP1588	DUF3944 domain-containing protein, HP1588	QDY56970.1	prey	216	5	no
+groEL	P42383	HP0010	molecular chaperone GroEL, HP0010	QDY56963.1	prey	174	8	yes
+HP_0721	O25423	HP0721	DUF1104 domain-containing protein, HP0721	QDY56571.1	prey	169	2	yes
+HP1235		HP1235	hypothetical protein, HP1235	QDY55828.1	prey	169	5	no
+HP_0248	O25030	HP0248	hypothetical protein, HP0248	QDY56232.1	prey	130	3	yes
+parB	O25758	HP1138	chromosome partitioning protein ParB, HP1138	QDY55919.1	prey	121	4	yes
+hemB	P56074	HP0163	porphobilinogen synthase HemB, HP0163	QDY56153.1	prey	117	4	yes
+HP_1284	O25871	HP1284	glycosyltransferase family protein, HP1284	QDY55781.1	prey	102	5	yes

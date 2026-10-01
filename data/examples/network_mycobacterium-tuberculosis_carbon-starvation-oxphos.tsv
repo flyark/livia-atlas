@@ -1,0 +1,46 @@
+# Example: oxidative phosphorylation and electron transport chain proteins of Mycobacterium tuberculosis mc2-6020 (a lysA panCD double auxotroph derived from H37Rv) measured by proteomics after carbon starvation (CS) versus replicating (Rep) culture, grouped by complex as in the paper.
+# Source: Devlin KL, Leach DT, Stratton KG, Lamichhane G, Lin VS, Beatty KE. (2025) Proteomic characterization of Mycobacterium tuberculosis subjected to carbon starvation. mSystems 10(5):e0153024. https://doi.org/10.1128/msystems.01530-24
+# Table S3 (msystems.01530-24-s0003.xlsx), sheet "OxPhos", the protein set of Fig. 3A: all 40 listed proteins are kept, with the complex headings of the sheet as the group column. Values are the paper's log2 fold change (CS versus Rep) and its P value (ANOVA, or G-test for proteins found in only one group); an empty value means the protein was not quantified, as in the paper. Licensed CC BY 4.0; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas index, mapped from the table's locus ID or accession (unmapped rows keep the locus ID); uniprot = index accession; locus_in_table / accession_in_table / name_in_table as given; complex = the sheet's heading above the row.
+# 40 of 40 proteins map to the index (100%).
+protein	uniprot	locus_in_table	accession_in_table	complex	name_in_table	log2FC_CS_vs_Rep	P_value	test	mapped
+atpB	P9WPV7	Rv1304	P9WPV7	ATP Synthase	subunit a				yes
+atpE	P9WPS1	Rv1305	P9WPS1	ATP Synthase	subunit c	NA	4.52944730952764e-05	G-test	yes
+atpF	P9WPV5	Rv1306	P9WPV5	ATP Synthase	subunit b	0.908312223042653	0.000495927123504273	ANOVA	yes
+atpFH	P9WPV3	Rv1307	P9WPV3	ATP Synthase	subunit b-δ	0.882522324786212	1.7276661219203e-06	ANOVA	yes
+atpA	P9WPU7	Rv1308	P9WPU7	ATP Synthase	subunit α	0.382065648034952	0.0132637606879399	ANOVA	yes
+atpG	P9WPU9	Rv1309	P9WPU9	ATP Synthase	γ chain	0.492169696955919	0.029880665882346	ANOVA	yes
+atpD	P9WPU5	Rv1310	P9WPU5	ATP Synthase	subunit β	-0.115135480342871	0.435876252768292	ANOVA	yes
+atpC	P9WPV1	Rv1311	P9WPV1	ATP Synthase	ε chain	-0.597276168137934	0.321120045202676	ANOVA	yes
+nuoA	P9WIW7	Rv3145	P9WIW7	NADH dyhydrogenase type I (NDH-I)	NuoA (Rv3145)	NA	0.0228709887990503	G-test	yes
+nuoB	P9WJH1	Rv3146	P9WJH1	NADH dyhydrogenase type I (NDH-I)	NuoB (Rv3146)	0.867107406357696	0.0158307936132806	ANOVA	yes
+nuoC	P9WJH3	Rv3147	P9WJH3	NADH dyhydrogenase type I (NDH-I)	NuoC (Rv3147)	-0.41539063853046	0.0636056804847954	ANOVA	yes
+nuoD	P9WJH5	Rv3148	P9WJH5	NADH dyhydrogenase type I (NDH-I)	NuoD (Rv3148)	-0.284535931057668	0.179231520022836	ANOVA	yes
+nuoE	P9WIV5	Rv3149	P9WIV5	NADH dyhydrogenase type I (NDH-I)	NuoE (Rv3149)	0.621362683450797	0.0446788374734006	ANOVA	yes
+nuoF	P9WIV7	Rv3150	P9WIV7	NADH dyhydrogenase type I (NDH-I)	NuoF (Rv3150)	1.15890341914248	0.00501535464394149	ANOVA	yes
+nuoG	P9WIV9	Rv3151	P9WIV9	NADH dyhydrogenase type I (NDH-I)	NuoG (Rv3151)	0.158929251538328	0.358333331411734	ANOVA	yes
+nuoH	P9WIX1	Rv3152	P9WIX1	NADH dyhydrogenase type I (NDH-I)	NuoH (Rv3152)	0.570680838058315	0.0836673821528771	ANOVA	yes
+nuoI	P9WJG9	Rv3153	P9WJG9	NADH dyhydrogenase type I (NDH-I)	NuoI (Rv3153)	0.563216358675308	0.0505806286971294	ANOVA	yes
+nuoJ	P95172	Rv3154	P95172	NADH dyhydrogenase type I (NDH-I)	NuoJ (Rv3154)	-0.0369143104710403	0.957602987656091	ANOVA	yes
+nuoL	P9WIW1	Rv3156	P9WIW1	NADH dyhydrogenase type I (NDH-I)	NuoL (Rv3156)				yes
+nuoM	P9WIW5	Rv3157	P9WIW5	NADH dyhydrogenase type I (NDH-I)	NuoM (Rv3157)	NA	0.00096481266739141	G-test	yes
+nuoN	P9WIW9	Rv3158	P9WIW9	NADH dyhydrogenase type I (NDH-I)	NuoN (Rv3158)	1.85179406787882	0.00174142117909416	ANOVA	yes
+narG	P9WJQ3	Rv1161	P9WJQ3	Nitrite Reductase	narG	0.692502084100635	0.0118117926286934	ANOVA	yes
+narH	O06560	Rv1162	O06560	Nitrite Reductase	narH	NA	0.00096481266739141	G-test	yes
+narK2	P9WJY7	Rv1737c	P9WJY7	Nitrite Reductase	narK2				yes
+narX	P9WJQ1	Rv1736c	P9WJQ1	Nitrite Reductase	narX				yes
+ctaC	P9WP69	Rv2200c	P9WP69	Cytochrome bc1-aa3	CtaC (Rv2200c)	1.25286740205636	0.000164771559550122	ANOVA	yes
+ctaD	P9WP71	Rv3043c	P9WP71	Cytochrome bc1-aa3	CtaD (Rv3043c)	0.737189720783725	0.00874775631844898	ANOVA	yes
+ctaE	P9WP67	Rv2193	P9WP67	Cytochrome bc1-aa3	CtaE (Rv2193)	NA	0.0228709887990503	G-test	yes
+ctaF	P9WP45	Rv2199c	P9WP45	Cytochrome bc1-aa3	CtaF (Rv2199c)				yes
+qcrA	P9WH23	Rv2195	P9WH23	Cytochrome bc1-aa3	QcrA (Rv2195)	1.17104489429014	0.000810476538512079	ANOVA	yes
+qcrB	P9WP37	Rv2196	P9WP37	Cytochrome bc1-aa3	QcrB (Rv2196)	0.267903122657205	0.223970374032811	ANOVA	yes
+qcrC	P9WP35	Rv2194	P9WP35	Cytochrome bc1-aa3	QcrC (Rv2194)	0.915388512016051	0.0946818241426214	ANOVA	yes
+cydA	L7N662	Rv1623c	L7N662	Cytochrome bd-oxidase	CydA (Rv1623c)	-0.168163150967618	0.590053601166966	ANOVA	yes
+cydB	O06139	Rv1622c	O06139	Cytochrome bd-oxidase	CydB (Rv1622c)				yes
+ndh	P95160	Rv1854c	P95160	NADH dehydrogenase II	ndh (Rv1854c)	1.0531498825015	0.00363579546777285	ANOVA	yes
+ndhA	P95200	Rv0392c	P95200	NADH dehydrogenase II	ndhA (Rv0392c)	-0.178575275435193	0.375781421862009	ANOVA	yes
+sdhA	O53370	Rv3318	O53370	Succinate dehydrogenase	SdhA (Rv3318)	1.11501820681191	0.0394042521269301	ANOVA	yes
+sdhB	O53371	Rv3319	O53371	Succinate dehydrogenase	SdhB (Rv3319)	NA	0.00096481266739141	G-test	yes
+sdhC	O53368	Rv3316	O53368	Succinate dehydrogenase	SdhC (Rv3316)				yes
+sdhD	O53369	Rv3317	O53369	Succinate dehydrogenase	SdhD (Rv3317)	NA	0.0158263687965402	G-test	yes

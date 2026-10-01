@@ -1,0 +1,60 @@
+# Example: Helicobacter pylori ATCC 43526 proteins of changed abundance after 8 h of treatment with the ionophore PBT2 at the MIC (1.25 mg/L) versus untreated cells.
+# Source: Chen H, El-Deeb IM, Lai CH, Huang YT, Poole J, Hartley-Tassell LE, von Itzstein M, Jennings MP, Jen FE. (2026) Ionophore PBT2 as a novel approach to combat antibiotic-resistant Helicobacter pylori. mBio 17(7):e0122926. https://doi.org/10.1128/mbio.01229-26
+# Supplemental material (mbio.01229-26-s0002.docx), the sections "Increased abundance in PBT2 treated cells at T8 MIC concentration (1.25 mg/L)" and "Decreased abundance ... at T8 MIC concentration (1.25 mg/L)". Cutoff as stated by the paper: adj. P < 0.05 and log2FC > 1; 54 proteins are listed for this condition and all are kept. Licensed CC BY 4.0; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas Helicobacter pylori 26695 index, mapped from the table's UniProt accession (unmapped rows keep the accession); uniprot = index accession; accession_in_table / name_in_table as given; direction = the section of the table; log2FC, fold_change, adj_p_value = the table's values.
+# 51 of 54 proteins map to the index (94%).
+protein	uniprot	accession_in_table	name_in_table	direction	log2FC	fold_change	adj_p_value	mapped
+HP_0156	O24965	O24965	AMIN domain-containing protein	increased	2.04356819	4.12263916	0.03149616	yes
+HP_0554	O25280	O25280	Sialidase	increased	1.85278618	3.61197067	0.0179044	yes
+O25729		O25729	2-dehydro-3-deoxy-phosphogluconate aldolase (EC 4.1.2.14)	increased	1.32832668	2.51111252	3.60E-06	no
+pdxJ	O26102	O26102	Pyridoxine 5'-phosphate synthase (PNP synthase) (EC 2.6.99.2)	increased	1.20525743	2.3057841	0.01496605	yes
+lpxA	O25927	O25927	Acyl-[acyl-carrier-protein] --UDP-N-acetylglucosamine O-acyltransferase (UDP-N-acetylglucosamine acyltransferase) (EC 2.3.1.129)	increased	1.03172525	2.04446767	0.00478041	yes
+nuoN	O25863	O25863	NADH-quinone oxidoreductase subunit N (EC 7.1.1.-) (NADH dehydrogenase I subunit N) (NDH-1 subunit N)	increased	1.00191709	2.00265942	0.0003607	yes
+rpsZ	P56021	P56021	Small ribosomal subunit protein uS14 (30S ribosomal protein S14 type Z)	decreased	-1.8564798	3.62123008	0.00044343	yes
+rpsM	P56020	P56020	Small ribosomal subunit protein uS13 (30S ribosomal protein S13)	decreased	-1.747047	3.35670783	3.55E-07	yes
+rpsL	P0A0X4	P0A0X4	Small ribosomal subunit protein uS12 (30S ribosomal protein S12)	decreased	-1.7423461	3.34578819	0	yes
+HP_0138	O24950	O24950	Conserved hypothetical iron-sulfur protein	decreased	-1.7274044	3.3113153	8.89E-08	yes
+HP_0221	O25009	O25009	Nitrogen fixation protein NifU	decreased	-1.7101965	3.27205396	0	yes
+tatA	O25088	O25088	Sec-independent protein translocase protein TatA	decreased	-1.6465126	3.1307594	1.58E-14	yes
+HP_0645	O25362	O25362	Soluble lytic murein transglycosylase (Slt)	decreased	-1.5622433	2.95312689	0.00015588	yes
+rplO	P56040	P56040	Large ribosomal subunit protein uL15 (50S ribosomal protein L15)	decreased	-1.5599737	2.9484846	1.74E-13	yes
+rplX	P56049	P56049	Large ribosomal subunit protein uL24 (50S ribosomal protein L24)	decreased	-1.5282063	2.88427021	1.07E-06	yes
+rpmB	P66142	P66142	Large ribosomal subunit protein bL28 (50S ribosomal protein L28)	decreased	-1.5174806	2.86290654	0	yes
+infC	P55973	P55973	Translation initiation factor IF-3	decreased	-1.4391908	2.71168733	6.40E-05	yes
+rplT	P56045	P56045	Large ribosomal subunit protein bL20 (50S ribosomal protein L20)	decreased	-1.4192436	2.67445253	0	yes
+rplQ	P56042	P56042	Large ribosomal subunit protein bL17 (50S ribosomal protein L17)	decreased	-1.3862886	2.61405331	3.90E-13	yes
+greA	P64275	P64275	Transcription elongation factor GreA (Transcript cleavage factor GreA)	decreased	-1.3852013	2.61208398	0.00380503	yes
+iscS	O25008	O25008	Cysteine desulfurase IscS (EC 2.8.1.7)	decreased	-1.3821964	2.60664922	0	yes
+rpsS	P56026	P56026	Small ribosomal subunit protein uS19 (30S ribosomal protein S19)	decreased	-1.3599088	2.56668953	1.45E-11	yes
+nuoI	O25858	O25858	NADH-quinone oxidoreductase subunit I (EC 7.1.1.-) (NADH dehydrogenase I subunit I) (NDH-1 subunit I)	decreased	-1.321839	2.49984556	0.00217556	yes
+rplV	P56047	P56047	Large ribosomal subunit protein uL22 (50S ribosomal protein L22)	decreased	-1.3177549	2.49277884	0	yes
+gmk	P56103	P56103	Guanylate kinase (EC 2.7.4.8) (GMP kinase)	decreased	-1.2925451	2.44959812	0.01842644	yes
+HP_1524	O26052	O26052	Lipoprotein	decreased	-1.2638852	2.40141574	1.24E-07	yes
+rho	P56466	P56466	Transcription termination factor Rho (EC 3.6.4.-) (ATP-dependent helicase Rho)	decreased	-1.2612519	2.39703652	0	yes
+frdB	O06914	O06914	Fumarate reductase iron-sulfur subunit (EC 1.3.5.1) (Quinol-fumarate reductase iron-sulfur subunit) (QFR iron-sulfur subunit)	decreased	-1.25242	2.38240719	1.55E-06	yes
+rpsQ	P66449	P66449	Small ribosomal subunit protein uS17 (30S ribosomal protein S17)	decreased	-1.2472005	2.37380353	0	yes
+rplJ	P56036	P56036	Large ribosomal subunit protein uL10 (50S ribosomal protein L10)	decreased	-1.2403279	2.3625223	0	yes
+rplU	P56046	P56046	Large ribosomal subunit protein bL21 (50S ribosomal protein L21)	decreased	-1.2366234	2.35646355	5.54E-15	yes
+O24959		O24959	DUF4006 family protein	decreased	-1.235091	2.35396195	0.00916902	no
+rplF	P56034	P56034	Large ribosomal subunit protein uL6 (50S ribosomal protein L6)	decreased	-1.2329976	2.35054882	0	yes
+HP_0139	O24951	O24951	Conserved hypothetical secreted protein	decreased	-1.2298522	2.34542961	0.00065314	yes
+rpsH	P66621	P66621	Small ribosomal subunit protein uS8 (30S ribosomal protein S8)	decreased	-1.1997261	2.2969606	0	yes
+HP_0686	O25395	O25395	Iron (III) dicitrate transport protein (FecA)	decreased	-1.1935556	2.2871573	0.01276476	yes
+rplD	P56032	P56032	Large ribosomal subunit protein uL4 (50S ribosomal protein L4)	decreased	-1.1694618	2.24927776	3.65E-10	yes
+rplA	P56029	P56029	Large ribosomal subunit protein uL1 (50S ribosomal protein L1)	decreased	-1.1653277	2.24284151	0	yes
+HP_1142	O25761	O25761	Protein CR006 P-loop domain-containing protein	decreased	-1.1590214	2.23305904	7.07E-09	yes
+HP_0082	O24911	O24911	Methyl-accepting chemotaxis transducer (TlpC)	decreased	-1.1550966	2.2269923	0.00015588	yes
+rplW	P66119	P66119	Large ribosomal subunit protein uL23 (50S ribosomal protein L23)	decreased	-1.1537824	2.22496457	0	yes
+speE	O25503	O25503	Polyamine aminopropyltransferase (Putrescine aminopropyltransferase) (PAPT) (Spermidine synthase) (SPDS) (SPDSY) (EC 2.5.1.16)	decreased	-1.1521074	2.22238293	1.14E-12	yes
+ftnA	P52093	P52093	Bacterial non-heme ferritin (EC 1.16.3.2)	decreased	-1.1000092	2.14356059	0	yes
+rpsF	P56013	P56013	Small ribosomal subunit protein bS6 (30S ribosomal protein S6)	decreased	-1.0978401	2.14034022	2.63E-11	yes
+HP_0561	O25286	O25286	3-oxoacyl-[acyl-carrier-protein] reductase (EC 1.1.1.100)	decreased	-1.0850899	2.12150772	0	yes
+O26032		O26032	Copper resistance protein CopD	decreased	-1.064464	2.0913928	0.0061363	no
+glnA	P94845	P94845	Glutamine synthetase (GS) (EC 6.3.1.2) (Glutamate--ammonia ligase) (Glutamine synthetase I beta) (GSI beta)	decreased	-1.0636943	2.09027716	4.64E-06	yes
+rplS	P56044	P56044	Large ribosomal subunit protein bL19 (50S ribosomal protein L19)	decreased	-1.0523726	2.07393778	0	yes
+rplE	P56033	P56033	Large ribosomal subunit protein uL5 (50S ribosomal protein L5)	decreased	-1.0394544	2.05545016	1.54E-11	yes
+rplN	P56039	P56039	Large ribosomal subunit protein uL14 (50S ribosomal protein L14)	decreased	-1.039435	2.05542247	3.06E-09	yes
+rpsC	P56010	P56010	Small ribosomal subunit protein uS3 (30S ribosomal protein S3)	decreased	-1.0270858	2.03790358	0	yes
+rpsJ	P66328	P66328	Small ribosomal subunit protein uS10 (30S ribosomal protein S10)	decreased	-1.020916	2.02920693	1.92E-11	yes
+cheV1	O24864	O24864	Chemotaxis protein CheV1	decreased	-1.0087493	2.01216599	0.00024082	yes
+rpsI	P66637	P66637	Small ribosomal subunit protein uS9 (30S ribosomal protein S9)	decreased	-1.0055184	2.00766484	7.75E-08	yes

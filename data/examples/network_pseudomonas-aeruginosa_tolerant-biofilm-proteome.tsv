@@ -1,0 +1,46 @@
+# Proteins that differ between the antibiotic-tolerant (PrpoS) and the growing (Ptrc) subpopulation of a Pseudomonas aeruginosa PA14 biofilm, labeled in the tolerant region by cell-selective bioorthogonal noncanonical amino acid tagging and quantified by LC-MS/MS
+# Babin BM, Atangcho L, van Eldijk MB, Sweredoski MJ, Moradian A, Hess S, Tolker-Nielsen T, Newman DK, Tirrell DA. 2017. Selective proteomic analysis of antibiotic-tolerant cellular subpopulations in Pseudomonas aeruginosa biofilms. mBio 8(5):e01593-17. https://doi.org/10.1128/mBio.01593-17
+# Source: Data Set S1 (mbo005173553sd1.xlsx, sheet "sheet1"), the PrpoS versus Ptrc enrichment comparison (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5654934/supplementaryFiles)
+# Cutoff: the paper's own significance call, FDR-adjusted P < 0.05 on the median log2 ratio; 39 of the 908 quantified proteins pass (15 more abundant, 24 less abundant), the same proteins the paper lists in Tables S1 and S2; all kept
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag = PA01 Locus ID as published; gene = Gene Name as published; uniprot = the protein in the species index (by PAO1 locus tag, or by blastp best hit of the PA14 protein against the index at >= 90% identity and >= 90% coverage of both sequences); median_log2_ratio and adj_p as published; direction = sign of the ratio
+locus_tag	gene	uniprot	median_log2_ratio	adj_p	direction
+PA3764			5.495	0.00164	more abundant
+PA4243	secY	Q9HWF5	2.866	0.0226	more abundant
+PA0452		Q9I666	2.819	0.00234	more abundant
+PA0962		Q9I4Z7	2.494	0.0131	more abundant
+PA0039			2.321	0.0116	more abundant
+PA1324			2.275	0.00779	more abundant
+PA3262		Q9HYX8	2.25	0.0293	more abundant
+PA5108			2.236	0.0325	more abundant
+PA2263		Q9I1L0	2.132	0.0364	more abundant
+PA0329		Q9I6G2	1.849	0.0408	more abundant
+None			1.84	0.0374	more abundant
+PA5253	algP	P15276	1.815	0.017	more abundant
+PA1830			1.699	0.0494	more abundant
+PA4847	accB	P37799	1.452	0.0426	more abundant
+PA2071	fusA2	Q9I244	1.323	0.0477	more abundant
+PA5117	typA	Q9HU67	-1.349	0.0383	less abundant
+PA0588		Q9I5U9	-1.357	0.0484	less abundant
+PA4274	rplK	Q9HWC5	-1.443	0.0434	less abundant
+PA5239	rho	Q9HTV1	-1.606	0.0348	less abundant
+PA4696	ilvI	Q9HVA0	-1.761	0.0124	less abundant
+PA1847		Q9I2P8	-1.762	0.0187	less abundant
+PA4007	proA	Q9HX20	-1.765	0.044	less abundant
+PA4934	rpsR	Q9HUN0	-1.809	0.0481	less abundant
+PA4854	purH	Q9HUV9	-1.812	0.0402	less abundant
+PA4751	ftsH	Q9HV48	-1.841	0.0192	less abundant
+PA0456		Q9I662	-1.844	0.0166	less abundant
+PA5100	hutU		-1.849	0.0115	less abundant
+PA5339		Q9HTL9	-1.958	0.0333	less abundant
+PA4067	oprG	Q9HWW1	-2.04	0.0277	less abundant
+PA0298	spuB	Q9I6J3	-2.084	0.0236	less abundant
+None			-2.179	0.00961	less abundant
+PA1080	flgE	Q9I4P9	-2.22	0.0466	less abundant
+PA0904	lysC	O69077	-2.276	0.0266	less abundant
+PA3819			-2.323	0.0203	less abundant
+PA3525	argG	Q9HY84	-2.506	0.0116	less abundant
+PA4715		Q9HV83	-2.777	0.00831	less abundant
+PA5200	ompR	Q9HTY9	-2.925	0.00857	less abundant
+PA1742			-3.367	0.00293	less abundant
+PA4255	rpmC	Q9HWE3	-4.469	0.00071	less abundant

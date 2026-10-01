@@ -1,0 +1,118 @@
+# Putative substrates of the mitotic kinases Plo1 (Polo), Fin1 (NIMA), Ark1 (Aurora) and of Sid2 and Hsk1 in S. pombe: cell-cycle-dependent phosphosites from a SILAC time course of synchronized cells, assigned by kinase consensus; site table collapsed to one row per protein
+# Swaffer MP, Jones AW, Flynn HR, Snijders AP, Nurse P. 2018. Quantitative phosphoproteomics reveals the signaling dynamics of cell-cycle kinases in the fission yeast Schizosaccharomyces pombe. Cell Rep 24:503-514. https://doi.org/10.1016/j.celrep.2018.06.036
+# Source: mmc4.xlsx (Table S3, cell-cycle-dependent phosphorylation levels), column "Kinase substrate site" (https://ars.els-cdn.com/content/image/1-s2.0-S221112471830946X-mmc4.xlsx)
+# Cutoff: the paper's kinase substrate site annotation (Plo1, Fin1, Ark1: phosphosites in the Mitotic or M/G1 cluster that match the kinase consensus; Sid2: Sid2 consensus sites on known Sid2 substrates; Hsk1: G1/S-cluster sites on known Hsk1 targets); Cdc2 sites (a previously defined substrate set) and Orb6 sites left out; 128 sites on 112 proteins, all kept; putative substrates, not validated individually
+# Licensed CC BY 4.0
+gene	uniprot	sites	kinase	cell cycle cluster
+nup60	O74500	4	Plo1;Fin1;Ark1	M/G1;Mitotic
+dnt1	O74354	3	Plo1;Ark1	Mitotic
+SPCC23B6.04c	Q9UU99	2	Plo1;Ark1	Mitotic
+cdc11	O74473	2	Plo1	Mitotic
+hrp1	Q9US25	2	Plo1;Ark1	Mitotic
+imp2	Q10199	2	Plo1	Mitotic
+mid1	P78953	2	Plo1;Fin1	Mitotic
+nup124	Q09904	2	Plo1;Fin1	Mitotic
+trm10	O14214	2	Plo1;Fin1	M/G1;Mitotic
+SPAC1006.07	P47943	1	Plo1;Fin1	Mitotic
+SPAC23D3.12	Q09852	1	Plo1	Mitotic
+SPAC4A8.14	P41831	1	Plo1;Fin1	Mitotic
+SPAC824.09c	Q9UT34	1	Plo1	Mitotic
+SPAC9.11		1	Plo1	Mitotic
+SPAPB1A10.13	Q9HDX7	1	Plo1	Mitotic
+SPBC13E7.03c	Q9P6R7	1	Plo1	Mitotic
+SPBC16E9.02c	O14319	1	Plo1	Mitotic
+SPBC1711.05	Q9P785	1	Plo1	Mitotic
+SPBP4H10.07	Q9P7E1	1	Plo1	Mitotic
+SPCC1393.08	O94720	1	Plo1	Mitotic
+SPCC1620.12c	O94419	1	Plo1	Mitotic
+SPCC553.12c		1	Plo1	Mitotic
+SPCC970.08	O74561	1	Plo1	Mitotic
+bbc1		1	Plo1	Mitotic
+cps3	P41000	1	Plo1	Mitotic
+csi1		1	Plo1	Mitotic
+cwf15	P78794	1	Plo1	Mitotic
+cxr1		1	Plo1	M/G1
+dbp7	O60173	1	Plo1	Mitotic
+dma1	Q10322	1	Plo1	Mitotic
+egd2	P87147	1	Plo1;Fin1	M/G1
+elp4	Q9USP1	1	Plo1	Mitotic
+enp1		1	Plo1;Fin1	M/G1
+eti1		1	Plo1	Mitotic
+fes1	O43030	1	Plo1;Fin1	Mitotic
+fft2	O74842	1	Plo1	Mitotic
+hal4	O14019	1	Plo1	Mitotic
+ies4	Q9P7S9	1	Plo1	Mitotic
+klp5	O14343	1	Plo1	Mitotic
+lem2	Q10109	1	Plo1	Mitotic
+mlo3	Q09330	1	Plo1;Fin1	Mitotic
+mug147	O60057	1	Plo1	Mitotic
+myr1		1	Plo1	Mitotic
+nog2	O14236	1	Plo1	M/G1
+nop12	O13741	1	Plo1	Mitotic
+nop8		1	Plo1	Mitotic
+not3	O13870	1	Plo1	Mitotic
+nup132	Q9UTH0	1	Plo1	Mitotic
+nup189		1	Plo1	Mitotic
+peg1	O42874	1	Plo1	Mitotic
+plo1	P50528	1	Plo1	Mitotic
+pmt3	O13351	1	Plo1	Mitotic
+ppc89	Q10218	1	Plo1	Mitotic
+ppk29	Q9USS2	1	Plo1	Mitotic
+puf6	Q9UU76	1	Plo1	Mitotic
+rdi1		1	Plo1	Mitotic
+rnc1	O74919	1	Plo1	Mitotic
+rrp15	Q9UTD7	1	Plo1	Mitotic
+rsc4	Q09948	1	Plo1	M/G1
+saf2		1	Plo1	Mitotic
+sec2	O13930	1	Plo1	M/G1
+sec31	O13637	1	Plo1	Mitotic
+sec62	O13787	1	Plo1	M/G1
+sgo2	O13734	1	Plo1	Mitotic
+shf1	Q9UUI2	1	Plo1;Ark1	Mitotic
+sid2	Q09898	1	Plo1	M/G1
+snt1		1	Plo1	Mitotic
+spo15		1	Plo1	Mitotic
+tea3	O14248	1	Plo1	Mitotic
+tif6	O94476	1	Plo1	Mitotic
+ucp7	O13773	1	Plo1	Mitotic
+ucp8	O94685	1	Plo1	Mitotic
+utp14		1	Plo1	Mitotic
+vti1	P78768	1	Plo1;Fin1	Mitotic
+yap18		1	Plo1	M/G1
+zas1	Q9UTS5	1	Plo1	Mitotic
+scw1	O74452	2	Fin1;Ark1;Sid2	M/G1
+bub1	O94751	1	Fin1	Mitotic
+byr4	Q10951	1	Fin1	Mitotic
+cut12	O59755	1	Fin1	Mitotic
+cut3	P41004	1	Fin1	Mitotic
+def1	O43024	1	Fin1	Mitotic
+edc3	O94752	1	Fin1	Mitotic
+kin1	P22987	1	Fin1	Mitotic
+lnp1		1	Fin1	Mitotic
+mto1	O13670	1	Fin1	Mitotic
+nrf1	Q9UR17	1	Fin1	Mitotic
+ppn1	Q9C1W8	1	Fin1	Mitotic
+rix7		1	Fin1	Mitotic
+scs2	O60119	1	Fin1	Mitotic
+tif32	O74760	1	Fin1	Mitotic
+tif452	O74743	1	Fin1	Mitotic
+ulp2	O13769	1	Fin1	Mitotic
+vps5	Q9C0U7	1	Fin1	Mitotic
+mra1	Q10107	2	Ark1	M/G1
+pcy1	O13849	2	Ark1	M/G1
+SPCC31H12.03c	O74871	1	Ark1	Mitotic
+cdc15	Q09822	1	Ark1	M/G1
+cdk9	Q96WV9	1	Ark1	Mitotic
+cnd2	Q9Y7R3	1	Ark1	M/G1
+hmo1		1	Ark1	Mitotic
+mpp1		1	Ark1	M/G1
+nog1	O94659	1	Ark1	Mitotic
+sld3	Q09761	1	Ark1	Mitotic
+tea1	P87061	1	Ark1	Mitotic
+tif471	Q10475	1	Ark1	Mitotic
+cdc12		1	Sid2	M/G1
+clp1	Q10299	1	Sid2	M/G1
+klp2	Q9US03	1	Sid2	M/G1
+nak1	O75011	1	Sid2	M/G1
+mrc1	Q9P7T4	2	Hsk1	G1/S
+ams2	Q9URT4	1	Hsk1	G1/S

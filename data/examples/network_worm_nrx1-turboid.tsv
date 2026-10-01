@@ -1,0 +1,156 @@
+# TurboID proximity labeling of endogenous neurexin NRX-1::TurboID in C. elegans (Biotin+ condition, extra biotin); preys enriched over all three controls (wild type, pan-neuronal cytosolic TurboID, nrx-1(∆PBM)::TurboID lacking the PDZ-binding motif)
+# Schaan Profes M, Tiroumalechetty A, Patel N, et al. 2024. Characterization of the intracellular neurexin interactome by in vivo proximity ligation suggests its involvement in presynaptic actin assembly. PLoS Biol 22:e3002466. https://doi.org/10.1371/journal.pbio.3002466
+# Source: pbio.3002466.s007.xlsx (S2 Table), sheets "Biotin+_Enriched_Genes" (hits) and "Biotin+_Anova_Results" (scores) (https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3002466.s007&type=supplementary)
+# Cutoff: the paper's "log2 fold-change greater than 0 and a cutoff of 0.1 for overall p-value and 0.05 for the pairwise [comparisons]", enriched vs all three controls (intersection of the three columns of "Biotin+_Enriched_Genes"); 164 pass; top 149 by log2 fold change vs nrx-1(∆PBM)::TurboID (the column "nrx-1(∆PBM)::TurboID_Bio_log2fchange" = NRX-1::TurboID minus that control); bait added as row 1 (not in the hit list)
+# Licensed CC BY 4.0
+gene	uniprot	nrx-1(∆PBM)::TurboID_Bio_log2fchange	nrx-1(∆PBM)::TurboID_Bio_p	role
+nrx-1				bait
+F58B4.3		6.5385	0.017	prey
+clc-6	O45669	5.4707	7.479e-05	prey
+elks-1	O44490	5.4225	1.770e-05	prey
+npp-18	O45933	5.1926	0.0019	prey
+K10C3.4	O45665	5.1593	1.424e-08	prey
+C18H7.1	Q9GZF5	5.1297	3.462e-06	prey
+memb-1	P41941	4.9275	0.0398	prey
+unc-10		4.9007	2.790e-04	prey
+snt-3	Q965S5	4.8581	0.0015	prey
+mnp-1	P46557	4.8103	5.444e-05	prey
+rimb-1	Q9N415	4.6678	7.934e-09	prey
+R03H10.2	Q9GYM4	4.6559	1.711e-07	prey
+pmr-1	G5EDU1	4.5525	0.0096	prey
+grd-10	O44471	4.5198	0.0264	prey
+M01H9.3_Q95ZL3		4.4905	7.475e-10	prey
+rig-3	Q18806	4.4416	0.0027	prey
+W05H12.1		4.4252	7.030e-04	prey
+nnt-1	Q18031	4.4245	6.006e-11	prey
+dyb-1	Q9Y048	4.2574	8.628e-05	prey
+lin-14	Q21446	4.0155	1.595e-04	prey
+hda-4	O17323	3.7288	3.538e-09	prey
+ugt-18		3.683	7.122e-04	prey
+ZK287.1	Q23460	3.6763	0.0032	prey
+ptp-3		3.6714	1.253e-07	prey
+ins-34	Q9XUE8	3.644	0.0128	prey
+Y102A11A.2	Q95XK1	3.5883	1.160e-04	prey
+T27C4.1	O61906	3.5802	6.387e-04	prey
+M01H9.3	H2L0G8	3.574	0.0018	prey
+T16G1.4	Q9XUP7	3.3389	2.712e-07	prey
+tba-5	Q19490	3.2927	1.568e-04	prey
+F15B9.10	A5Z2T9	3.2869	0.0119	prey
+F52G3.1	Q9GZI0	3.1544	0.0096	prey
+fbxc-14	P91115	3.0197	0.0024	prey
+glb-1	P30627	2.97	1.166e-04	prey
+syd-1	Q86NH1	2.6359	4.798e-05	prey
+F45D11.15		2.614	4.959e-05	prey
+his-24	P10771	2.5843	3.879e-06	prey
+sodh-1	Q17334	2.5568	2.162e-07	prey
+nsy-4	Q9N419	2.4091	0.0125	prey
+mec-12	P91910	2.3839	0.0019	prey
+ncam-1	Q8MQ86	2.3726	0.0079	prey
+F13E9.11		2.332	1.417e-04	prey
+ZK1073.1	O02485	2.3138	1.468e-04	prey
+nrd-1	O01864	2.3122	0.0022	prey
+hmg-11	G5EEL9	2.2505	4.410e-05	prey
+msa-1	P91844	2.1862	0.0188	prey
+bigr-1	O17860	2.1805	0.0114	prey
+unc-84	Q20745	2.1061	0.0011	prey
+sup-26	D5MCR3	2.0952	6.264e-06	prey
+hsp-16.1; hsp-16.11	P34696	2.0827	2.610e-07	prey
+unc-60_Q07750	Q07750	1.9957	2.134e-05	prey
+ugt-31		1.8985	0.0195	prey
+unc-112	Q18685	1.8298	1.536e-05	prey
+unc-37	O02482	1.8049	1.084e-04	prey
+atgp-1	Q9XVU3	1.7347	0.0011	prey
+sax-7	Q53U87	1.6468	0.0015	prey
+pals-38	Q18826	1.6382	1.846e-04	prey
+hmg-1.1	G5EFV4	1.5695	1.853e-05	prey
+gpc-2	G5ECT6	1.5538	0.0012	prey
+ehbp-1	G5ECW3	1.5525	6.150e-04	prey
+C30F12.5	H2KZ48	1.549	3.534e-04	prey
+repo-1	Q19335	1.5452	2.245e-06	prey
+Y57A10A.26	Q9NA74	1.5364	1.184e-04	prey
+D2092.4	P91194	1.5059	4.614e-05	prey
+sup-1	Q9XWU2	1.4886	0.0207	prey
+tbc-7		1.4805	0.0074	prey
+hcf-1	G5EC23	1.4739	0.0018	prey
+pud-3	G5EEV5	1.4706	4.501e-05	prey
+K07E3.4	Q21284	1.443	0.0017	prey
+let-413	O61967	1.4339	3.364e-04	prey
+atg-3	Q9N369	1.4308	2.851e-05	prey
+cdgs-1	P53439	1.3451	8.383e-05	prey
+T09B4.5	O02155	1.3384	3.965e-04	prey
+hum-4		1.2905	0.009	prey
+unc-115	Q95QM5	1.2785	2.186e-05	prey
+ZK484.3	O44895	1.277	0.0045	prey
+pqn-89		1.2733	0.0089	prey
+arf-6	Q9U2S4	1.2428	9.941e-04	prey
+C53C9.2	Q09936	1.2209	3.687e-05	prey
+Y37D8A.2	Q9XWV2	1.2178	0.0022	prey
+sptf-3	Q9XW26	1.1972	0.0011	prey
+lact-3	Q21569	1.1821	0.0444	prey
+dpy-23	P35603	1.1779	2.915e-04	prey
+hsp-12.2	P34328	1.1727	0.0132	prey
+clp-1	P34308	1.1669	4.674e-05	prey
+lmn-1	Q21443	1.162	0.0036	prey
+cids-1	P34281	1.1615	0.0127	prey
+goa-1	P51875	1.1556	1.568e-07	prey
+fgt-1	O44827	1.15	0.0038	prey
+icl-1	Q10663	1.134	3.534e-04	prey
+cah-4	Q21614	1.1169	0.007	prey
+F07C3.2		1.096	0.0052	prey
+aat-1	Q19834	1.0851	4.150e-04	prey
+F40A3.2	O16265	1.0837	0.0467	prey
+kin-36	A0A1I6CMA1	1.0755	0.0299	prey
+inx-13	O44887	1.0707	0.0056	prey
+pes-4	Q95Y67	1.0658	9.818e-05	prey
+acs-17	Q18660	1.0567	0.0105	prey
+egrh-3		1.0521	1.914e-04	prey
+acs-2	O18693	1.0496	2.163e-04	prey
+eak-7	Q21342	1.0307	2.718e-04	prey
+rnp-2	Q21322	1.019	8.303e-04	prey
+F47B3.3		0.9733	0.018	prey
+tres-1		0.9575	4.548e-04	prey
+gln-1	Q95YD1	0.9294	0.002	prey
+asns-2	Q21463	0.928	5.909e-04	prey
+aly-1	Q17561	0.9168	8.223e-05	prey
+sup-46	Q9XVS2	0.893	0.0097	prey
+T28F4.5	Q22850	0.8838	0.0182	prey
+rho-1	Q22038	0.8717	1.008e-06	prey
+lntl-1	H2KYP1	0.8535	0.0104	prey
+gsa-1	Q7KPV0	0.8059	0.0013	prey
+nra-1	Q9XUB9	0.797	0.0028	prey
+stdh-1	Q17703	0.7881	0.0353	prey
+rab-5	P91857	0.7776	0.0011	prey
+Y25C1A.13	Q9TYL2	0.7675	0.0023	prey
+hid-1	G5EG65	0.7622	4.485e-05	prey
+rde-1	G5EEH0	0.7438	1.319e-04	prey
+gpb-1	P17343	0.7427	2.448e-04	prey
+inx-16	O61787	0.7424	8.055e-04	prey
+hel-1	Q18212	0.7377	1.186e-04	prey
+twk-18		0.7352	0.0249	prey
+arx-4	Q8WTM6	0.7227	0.0224	prey
+dyn-1	P39055	0.7217	0.0044	prey
+rpoa-1		0.7124	4.982e-04	prey
+misc-1	P90992	0.695	0.0082	prey
+exo-3	G5EBR7	0.6932	4.521e-04	prey
+ced-10	Q03206	0.6632	2.513e-04	prey
+mca-3	Q95XP5	0.647	0.0074	prey
+R12C12.9		0.646	0.0034	prey
+ZK622.4		0.6404	0.0447	prey
+acl-14	O01882	0.6325	0.0101	prey
+hxk-2	Q9XU15	0.6127	0.0305	prey
+nemp-1	Q19293	0.6096	0.0449	prey
+nova-1	A0A4V0ILI5	0.6082	2.785e-04	prey
+gck-3	G5EEN4	0.5988	0.0016	prey
+vps-36	Q19519	0.5946	0.0051	prey
+twf-2	Q20173	0.58	7.463e-04	prey
+idhb-1	Q93353	0.5775	1.617e-04	prey
+mek-2	Q10664	0.563	0.0061	prey
+Y71G12B.10	Q95XN1	0.5543	0.0472	prey
+ZK973.11	Q9N4L6	0.5452	0.0166	prey
+akt-1	Q17941	0.5321	0.0134	prey
+vha-15	Q22494	0.5201	0.0039	prey
+vha-14	P34462	0.5081	0.0012	prey
+ent-2	Q93871	0.5075	0.0149	prey
+vha-13	Q9XW92	0.5018	9.113e-05	prey
+arx-6	P58798	0.5	5.964e-04	prey
+Y82E9BR.3	Q9BKS0	0.4941	0.0126	prey

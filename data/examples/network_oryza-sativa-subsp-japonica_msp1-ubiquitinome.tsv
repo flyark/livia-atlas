@@ -1,0 +1,45 @@
+# Example: proteins with significantly changed ubiquitination in leaves of rice overexpressing the Magnaporthe oryzae PAMP MSP1 (eMSP1) vs wild type Dongjin (K-epsilon-GG peptide enrichment, LC-MS/MS).
+# Source: Lee GH, Min CW, Jang JW, Gupta R, Kim ST (2023) Dataset on post-translational modifications proteome analysis of MSP1-overexpressing rice leaf proteins. Data Brief 50:109573. https://doi.org/10.1016/j.dib.2023.109573
+# Supplementary Table S2 (mmc2.xlsx), sheet "Significant_1": 53 significantly modulated ubiquitinated peptides (Student t-test p < 0.05, fold change >= 1.5) collapsed to 41 proteins (first listed protein ID), keeping the peptide with the largest |Log2_Fold change|. Licensed CC BY 4.0; values as published; protein = UniProt accession of the matching Atlas index entry (mapped from the published ID; unmatched rows keep the published ID); paper_id = identifier as published.
+protein	log2_fold_change	direction	paper_id
+Q0J8G4	9.292	up in eMSP1	LOC_Os08g02120.1
+P35686	7.159	up in eMSP1	LOC_Os06g04290.1
+Q654B4	6.66	up in eMSP1	LOC_Os06g45120.2
+B7E390	6.352	up in eMSP1	LOC_Os10g30580.1
+Q7GCH3	5.377	up in eMSP1	LOC_Os02g11050.1
+P0C030	4.521	up in eMSP1	LOC_Os09g25320.1
+Q651D5	4.423	up in eMSP1	LOC_Os09g36930.1
+P30298	4.264	up in eMSP1	LOC_Os06g09450.8
+Q7XPY2	3.847	up in eMSP1	LOC_Os04g56160.1
+Q2QLY4	3.514	up in eMSP1	LOC_Os12g42884.3
+Q94E46	3.43	up in eMSP1	LOC_Os01g07960.3
+Q6K4P1	3.416	up in eMSP1	LOC_Os02g54700.2
+Q69V57	3.177	up in eMSP1	LOC_Os06g40640.3
+LOC_Os02g44630.2	3.144	up in eMSP1	LOC_Os02g44630.2
+Q6EUD7	3.107	up in eMSP1	LOC_Os02g14770.4
+O64937	3.044	up in eMSP1	LOC_Os03g08050.1
+Q94E96	2.902	up in eMSP1	LOC_Os03g17100.1
+LOC_Os09g31031.3	2.608	up in eMSP1	LOC_Os09g31031.3
+LOC_Os11g26850.3	2.393	up in eMSP1	LOC_Os11g26850.3
+Q7XBS0	2.289	up in eMSP1	LOC_Os10g42960.1
+LOC_Os08g01930.1	2.213	up in eMSP1	LOC_Os08g01930.1
+LOC_Os10g42724.1	2.171	up in eMSP1	LOC_Os10g42724.1
+P49027	1.959	up in eMSP1	LOC_Os01g49290.1
+Q9FWC4	1.912	up in eMSP1	LOC_Os10g37630.1
+LOC_Os10g21268.1	1.846	up in eMSP1	LOC_Os10g21268.1
+Q8LNL2	1.761	up in eMSP1	LOC_Os10g08930.1
+Q6ZH98	1.739	up in eMSP1	LOC_Os02g02890.1
+LOC_Os07g31720.1	1.728	up in eMSP1	LOC_Os07g31720.1
+LOC_Os08g43050.1	1.727	up in eMSP1	LOC_Os08g43050.1
+LOC_Os07g36465.1	1.707	up in eMSP1	LOC_Os07g36465.1
+Q6K3Z3	1.659	up in eMSP1	LOC_Os09g07830.3
+Q9XJ54	1.633	up in eMSP1	LOC_Os08g42000.1
+Q7XMK5	1.617	up in eMSP1	LOC_Os04g45070.1
+Q6H890	1.474	up in eMSP1	LOC_Os02g09060.1
+Q2R3A1	1.428	up in eMSP1	LOC_Os11g32650.1
+LOC_Os08g35480.1	1.357	up in eMSP1	LOC_Os08g35480.1
+Q0JPA6	1.297	up in eMSP1	LOC_Os01g13210.2
+Q5Z800	1.265	up in eMSP1	LOC_Os06g49800.1
+Q8H4V1	1.036	up in eMSP1	LOC_Os08g27840.2
+Q0JJN5	0.8805	up in eMSP1	LOC_Os01g52790.1
+Q10P27	0.7631	up in eMSP1	LOC_Os03g14530.1

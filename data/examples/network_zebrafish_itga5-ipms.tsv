@@ -1,0 +1,156 @@
+# Proteins co-purifying with FLAG-tagged ligand-binding-deficient (inactive) Integrin alpha5 (Itga5LBD; anti-FLAG IP, label-free MS) more than with constitutively active Itga5AA, from zebrafish embryos during somite morphogenesis
+# Sun G, Holley SA. 2026. Actn4 Links Inactive Integrin α5 With Actin in Zebrafish Somites. Mol Cell Proteomics 25:101087. https://doi.org/10.1016/j.mcpro.2025.101087
+# Source: mmc3.xlsx (Supplemental Table S3, Protein Differential Expression Analysis Results) (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12860946/supplementaryFiles)
+# Cutoff: the paper's group "LBD" (proteins above the mem-GFP-FLAG negative control, then logFC > 1 and FDR < 0.05 for Itga5LBD vs Itga5AA; 246 proteins); top 149 by FDR (ties broken by P.Value) plus the bait itga5 as row 1 (150 rows)
+# Licensed CC BY 4.0
+gene	uniprot	logFC	FDR	role
+itga5	Q5I2A9			bait
+krt18	Q7ZTS4	14.95	0.003694	prey
+cdk1	Q7T3L7	10.29	0.003694	prey
+smyhc1		9.872	0.003694	prey
+prmt3	A0A2R8QI13	9.77	0.003694	prey
+rps19	Q6PBW7	8.767	0.003694	prey
+rpl31	Q24JV3	8.684	0.003694	prey
+fbl	Q7ZTZ4	11.44	0.003694	prey
+chmp2b	Q6NXD2	9.414	0.003694	prey
+sacm1lb	A1L244	8.818	0.003694	prey
+prpf19	Q7ZV92	9.128	0.003694	prey
+eif4a3	Q7ZVA6	9.749	0.003694	prey
+actr3		8.251	0.003694	prey
+hnrnpaba	Q6NYU8	10.45	0.003694	prey
+dnaja2a	Q7ZUP5	9.004	0.003694	prey
+fxr2		8.616	0.003694	prey
+jupa		8.166	0.003694	prey
+vdac2	Q8AWD0	8.068	0.003694	prey
+fdx1	E7F7J1	8.675	0.003694	prey
+wdr1		8.285	0.003694	prey
+uqcrc1		8.559	0.003694	prey
+arpc1a	Q7ZUQ0	7.898	0.003694	prey
+dhx15	E7F3I8	9.977	0.004135	prey
+zgc:110425		14.1	0.004135	prey
+srsf11		8.12	0.004135	prey
+suclg1		9.133	0.004135	prey
+gstp1.2	Q9DDU5	7.337	0.004135	prey
+ilf2	Q6NZ06	10.33	0.004135	prey
+akap8l	A0A0H2UKW6	11.05	0.004135	prey
+syncripl	A0AB32TC38	10.1	0.004135	prey
+si:ch211-11k18.4	E7F0T8	8.203	0.004183	prey
+stau2	Q7ZW47	8.761	0.004183	prey
+hspa14	Q5RGE6	7.31	0.004183	prey
+gemin5	E9QH84	8.148	0.004183	prey
+eif3f	A0A8M1NXK7	7.26	0.004183	prey
+npm1a	E7FCU0	8.629	0.00422	prey
+ncaph		9.146	0.004317	prey
+got2a	Q7SYK7	7.239	0.004317	prey
+pygl	A0AB13A8T7	6.819	0.004317	prey
+psma5	Q6TGV6	7.715	0.004317	prey
+myo18ab		7.077	0.004317	prey
+rbm4.3	Q6NXC1	10.52	0.004317	prey
+psma1	Q6DGX8	8.258	0.004317	prey
+kpna7		9.148	0.004317	prey
+chmp4c	Q6IQ73	6.7	0.004317	prey
+eif2a	Q4QRJ7	7.779	0.004317	prey
+krt99	A0A8M1N4Z2	9.253	0.004625	prey
+capn9		6.527	0.004625	prey
+h1m		8.903	0.004625	prey
+piwil1	Q8UVX0	6.916	0.004625	prey
+eif2b4	Q5RIE1	7.234	0.004625	prey
+arpc2	Q6P2T5	6.429	0.004625	prey
+txnrd3		6.567	0.004625	prey
+krt97	Q6DHU3	12.7	0.004625	prey
+sfpq	A0A8M1PEX4	8.885	0.004625	prey
+rps6ka1		7.73	0.004625	prey
+fubp1	Q6P2A9	6.369	0.004625	prey
+abcf3		6.604	0.004625	prey
+plk1	Q4KMI8	7.547	0.004625	prey
+rbm4.2	F1Q7F8	10.74	0.004715	prey
+ddx39aa	A2AWA1	7.665	0.004814	prey
+eif2b2	Q6NXC7	6.795	0.004891	prey
+ddx1	F1R2L8	7.85	0.004891	prey
+ncdn	A0A0R4ILN3	6.563	0.004891	prey
+elavl1a	A0A8M2BIL8	9.991	0.004891	prey
+lima1a		6.273	0.004891	prey
+sec24a	A0A0R4ICL5	7.156	0.004891	prey
+arid3b	A0A0R4IZF6	10.29	0.004916	prey
+rbm39a	Q803H1	9.128	0.004916	prey
+heatr3	Q6P3I0	7.633	0.004916	prey
+wdr43		9.377	0.004916	prey
+acadm	A2CG95	7.108	0.004916	prey
+smc1al	Q6DRM9	9.294	0.004916	prey
+gmps	B8JLW8	6.184	0.004916	prey
+ppp2r2ab	A2BG80	6.476	0.005003	prey
+strap	Q7ZW92	7.96	0.005003	prey
+smarcc1a	F1Q9K1	9.345	0.00544	prey
+dspa		5.836	0.005571	prey
+ap2b1	Q6NYJ9	7.267	0.005571	prey
+hnrnpc	Q803J4	8.888	0.005571	prey
+oxct1a	Q6AZB2	7.453	0.005606	prey
+dctn2	Q7T3H1	6.439	0.00561	prey
+ssrp1a	F1QEB4	8.118	0.00561	prey
+fscn1a		5.839	0.00561	prey
+g3bp1		7.955	0.00561	prey
+mta2	A0A8M2BJH3	8.57	0.00561	prey
+si:ch73-18b11.1		6.129	0.005615	prey
+smc3		9.027	0.005732	prey
+ppm1g	F1QJE5	6.991	0.005794	prey
+tardbp	Q802C7	10.07	0.005794	prey
+xpo1a	E7F0E8	6.69	0.005984	prey
+ahsa1b		6.784	0.005984	prey
+cbx3a	F1QNF2	9.256	0.005984	prey
+dhx9		9.128	0.005984	prey
+tle2a	B3DJR5	8.355	0.005984	prey
+eppk1		6.761	0.005984	prey
+hk2		5.554	0.006213	prey
+aacs	A3QK15	7.01	0.006213	prey
+hspa4a	Q7ZU46	5.496	0.006243	prey
+ap1g1	A0AB32TXY2	5.628	0.006286	prey
+srp72		6.537	0.006418	prey
+eif3g	Q6DRC4	5.42	0.006541	prey
+chd7		8.712	0.006541	prey
+ruvbl1	Q8AWW7	8.442	0.006566	prey
+cgnl1	F1R1I5	6.49	0.006566	prey
+uqcrc2b	Q6IQ59	6.884	0.006566	prey
+vdac1	Q6NWC1	6.452	0.006566	prey
+dnm2a	A0A0R4IIR1	6.781	0.006566	prey
+xrcc5	A0A0R4IB13	9.286	0.006595	prey
+dbn1		5.597	0.006595	prey
+pan2	E9QJN4	6.895	0.006595	prey
+nol11	Q4V9P9	8.995	0.006657	prey
+sec23a	Q7SZE5	6.157	0.006657	prey
+nsfa	B7ZV62	6.756	0.006921	prey
+vta1		7.069	0.006954	prey
+eif4g1a		5.258	0.006954	prey
+nup133	F1QNV4	6.964	0.006954	prey
+myef2	A0A8M1N7L0	9.324	0.006954	prey
+pelp1	F1RE30	8.709	0.006954	prey
+casp3a		7.811	0.006983	prey
+mdh1aa	Q801E6	6.493	0.006983	prey
+cdc5l	E9QIC1	7.904	0.006983	prey
+hgh1	Q6DGR4	7.798	0.007426	prey
+mfn2	A0A8M2BJP0	5.41	0.007426	prey
+rbfox2		7.331	0.007442	prey
+rpl36a		8.409	0.007442	prey
+bzw1a	Q6PD83	5.104	0.007442	prey
+abce1	Q6TNW3	5.565	0.007821	prey
+iqgap2		5.579	0.007821	prey
+hadhab		5.106	0.007821	prey
+arhgef2		5.496	0.007876	prey
+utp4	Q6P125	7.712	0.007876	prey
+mybbp1a	Q6DRL5	8.267	0.007876	prey
+gpia	A0A8M1PDD1	5.092	0.007876	prey
+prim2	B8JIP2	7.613	0.007912	prey
+abcf1		5.259	0.00798	prey
+hyou1	Q7ZUW2	5.662	0.008165	prey
+wdr75	Q7ZVR1	7.823	0.008165	prey
+gspt1l	Q7T358	6.091	0.00828	prey
+pes	P79741	8.299	0.008366	prey
+dnm1l	Q7SXN5	5.053	0.008431	prey
+oga	E7F547	5.917	0.008739	prey
+wdhd1	A0A0R4J7S6	9.424	0.009018	prey
+coro1ca	B0R0D7	8.669	0.009018	prey
+ddx21	A0A2R9YJN8	9.222	0.009071	prey
+ubap2b	A2RUY5	6.276	0.009155	prey
+mki67		10.5	0.009203	prey
+tarbp2	Q7SXR1	6.931	0.009288	prey
+tubg1	Q7ZVM5	4.944	0.009288	prey
+sec23b	A0A8M6Z6P7	5.593	0.00932	prey

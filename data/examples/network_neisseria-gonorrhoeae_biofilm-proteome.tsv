@@ -1,0 +1,70 @@
+# Example: Neisseria gonorrhoeae 1291 proteins of changed abundance in biofilms grown over glass compared with planktonic cells, grouped by the functional roles of the paper.
+# Source: Phillips NJ, Steichen CT, Schilling B, Post DM, Niles RK, Bair TB, Falsetta ML, Apicella MA, Gibson BW. (2012) Proteomic analysis of Neisseria gonorrhoeae biofilms shows shift to anaerobic respiration and changes in nutrient transport and outermembrane proteins. PLoS One 7(6):e38303. https://doi.org/10.1371/journal.pone.0038303
+# Tables 1 and 2, the upregulated and downregulated proteins. Cutoff as stated in the table titles: biofilm over planktonic ratios of at least two-fold (|log2| >= 1.000) in at least one extract and P < 0.05; all 64 listed proteins are kept. Licensed CC BY; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas Neisseria gonorrhoeae FA1090 index, mapped from the table's NGO accession (unmapped rows keep it); uniprot = index accession; accession_in_table / name_in_table / jcvi_sub_role as given; functional_role = the heading above the row; direction = up or down; log2_ratio_extract1..3 = the table's average log2 biofilm/planktonic ratios per extract.
+# 51 of 64 proteins map to the index (80%).
+protein	uniprot	accession_in_table	name_in_table	functional_role	jcvi_sub_role	direction	log2_ratio_extract1	log2_ratio_extract2	log2_ratio_extract3	mapped
+hisB	Q5F7D6	NGO1242	HisB; imidazoleglycerol-phosphate dehydratase	Amino acid biosynthesis	Histidine family	up	1.331			yes
+NGO_0340	Q5F9Q2	NGO0340	putative cysteine synthase/cystathionine beta-synthase	Amino acid biosynthesis	Serine family	up		1.378	0.816	yes
+NGO_1513	Q5F6N6	NGO1513	OpaD	Cell envelope	Other	up	2.018	1.552	2.549	yes
+NGO_0055	Q5FAG7	NGO0055	pilus-associated protein	Cell envelope	Surface structures	up	0.806	1.324		yes
+NGO_1669	Q5F693	NGO1669	PilG; type IV pilus assembly protein PilC	Cell envelope	Surface structures	up		1.276	0.644	yes
+NGO_0233	Q5FA01	NGO0233	outer membrane protein	Cell envelope	Other	up		1.038	1.093	yes
+NGO_0070	Q5FAF4	NGO0070	outer membrane opacity protein B	Cell envelope	Other	up			2.379	yes
+NGO1949e		NGO1949e	hypothetical protein	Cell envelope	Other	up			1.739	no
+NGO0948e		NGO0948e	hypothetical protein; lipoprotein-34	Cell envelope	Other	up			1.222	no
+bamA	Q5F5W8	NGO1801	hypothetical protein	Cell envelope	Other	up			1.199	yes
+NGO0094d		NGO0094d	hypothetical protein; type IV pilus assembly protein PilQ	Cell envelope	Surface structures	up			1.098	no
+NGO1251e		NGO1251e	hypothetical protein	Cell envelope	Other	up			1.045	no
+NGO_1225	Q5F7F3	NGO1225	putative peptidyl-prolylisomerase	Cellular processes	Pathogenesis	up	1.387			yes
+NGO_1382	Q5F707	NGO1382	putative GTP pyrophosphokinase	Cellular processes	Adaptations to atypical conditions	up		1.348		yes
+ftsH	Q5F9L1	NGO0382	hypothetical protein; cell division protease FtsH	Cellular processes	Cell division	up			1.071	yes
+bamD	Q5F9W0	NGO0277	ComL; putative lipoprotein	Cellular processes	DNA transformation	up			1.031	yes
+NGO_1276	Q5F7A4	NGO1276	AniA; nitrite reductase (NO-forming)	Central intermediary metabolism	Nitrogen metabolism	up	3.485	3.175	1.742	yes
+NGO_0574	Q5F930	NGO0574	Cah; carbonic anhydrase	Central intermediary metabolism	Other	up	1.525	0.668		yes
+NGO_1769	Q5F5Z9	NGO1769	CcpR; cytochrome c peroxidase	Energy metabolism	Electron transport	up	3.271	1.547		yes
+NGO_0564	Q5F940	NGO0564	dihydrolipoamide acetyltransferase	Energy metabolism	Pyruvate dehydrogenase	up	1.724			yes
+NGO1812d		NGO1812d	major outer membrane protein porin P.IB	Energy metabolism	Electron transport	up	1.669	0.908	0.697	no
+atpF	Q5F4Z4	NGO2146	F0F1 ATP synthase subunit B; F-type H+-transporting ATPase subunit b	Energy metabolism	ATP-proton motive force interconversion	up	1.637	0.717	0.593	yes
+NGO_0906	Q5F883	NGO0906	hypothetical protein	Energy metabolism	Electron transport	up	1.073	0.614		yes
+NGO_1373	Q5F716	NGO1373	cbb3-type cytochrome c oxidase subunit II	Energy metabolism	Electron transport	up		1.479	1.930	yes
+NGO_0375	Q5F9L8	NGO0375	Pgm; phosphoglucomutase	Energy metabolism	Sugars	up		1.368		yes
+NGO0718d		NGO0718d	RpiR family transcriptional regulator	Energy metabolism	Glycolysis/gluconeogenesis	up		1.217		no
+NGO_0214	Q5FA20	NGO0214	putative phosphotransacetylase	Energy metabolism	Fermentation	up		1.177		yes
+NGO_1328	Q5F759	NGO1328	putative cytochrome	Energy metabolism	Electron transport	up		1.152		yes
+NGO1371		NGO1371	CcoP; cb-type cytochrome c oxidase subunit III	Energy metabolism	Electron transport	up			1.602	no
+NGO1985e		NGO1985e	hypothetical protein	Energy metabolism	Electron transport	up			1.351	no
+pntA	Q5F6S7	NGO1470	PntA; NAD(P) transhydrogenase subunit alpha	Energy metabolism	Electron transport	up			1.293	yes
+NGO1584e		NGO1584e	MafA3; putative adhesin	Energy metabolism	Electron transport	up			1.255	no
+NGO_2031	Q5F598	NGO2031	PetC; ubiquinol-cytochrome c reductase cytochrome c1 subunit	Energy metabolism	Electron transport	up			1.233	yes
+htpX	Q5F9J4	NGO0399	heat shock protein HtpX	Protein fate	Protein folding and stabilization	up		1.668	1.683	yes
+rpsG	Q5F5S2	NGO1844	30S ribosomal protein S7	Protein synthesis	Ribosomal proteins: synthesis and modification	up	1.219			yes
+rpsC	Q5F5T3	NGO1832	RpsC; 30S ribosomal protein S3	Protein synthesis	Ribosomal proteins: synthesis and modification	up		1.325		yes
+NGO1830e		NGO1830e	RpsQ; 30S ribosomal protein S17	Protein synthesis		up			1.120	no
+NGO_0206	Q5FA28	NGO0206	putative ABC transporter, periplasmic binding protein, polyamine	Transport and binding proteins	Amino acids, peptides and amines	up	1.217			yes
+NGO_0372	Q5F9M1	NGO0372	putative ABC transporter, periplasmic binding protein, amino acid	Transport and binding proteins	Cations and iron carrying compounds	up	1.109		0.609	yes
+NGO_0794	Q5F8H9	NGO0794	BfrA; bacterioferritin	Transport and binding proteins	Cations and iron carrying compounds	up	1.090			yes
+NGO_0455	Q5F9E3	NGO0455	hypothetical protein; type IV pilus assembly protein PilX	Transport and binding proteins	Unknown substrate	up			1.784	yes
+NGO_1205	Q5F7H3	NGO1205	putative TonB-dependent receptor protein; iron complex outermembrane receptor protein	Transport and binding proteins	Cations and iron carrying compounds	up			1.530	yes
+NGO_0236	Q5F9Z8	NGO0236	hypothetical protein	Hypothetical proteins	Conserved	up			1.344	yes
+dapA	Q5F849	NGO0947	DapA; dihydrodipicolinate synthase	Amino acid biosynthesis	Aspartate family	down		−1.901		yes
+argG	Q5F5G5	NGO1961	argininosuccinate synthase	Amino acid biosynthesis	Glutamate family	down		−1.643		yes
+hisZ	Q5F9J6	NGO0397	HisZ; ATP phosphoribosyltransferase regulatory subunit	Amino acid biosynthesis	Histidine family	down		−1.320		yes
+ribB	Q5F8Q9	NGO0704	bifunctional 3,4-dihydroxy-2-butanone 4-phosphate synthase/GTP cyclohydrolase II-like protein	Biosynthesis of cofactors, prosthetic groups, and carriers	Riboflavin, FMN, and FAD	down	−1.100			yes
+NGO1684		NGO1684	7-cyano-7-deazaguanine reductase	Biosynthesis of cofactors, prosthetic groups, and carriers	Folic acid	down		−1.210		no
+atpG	Q5F4Z1	NGO2149	F0F1 ATP synthase subunit gamma; F-type H+-transporting ATPase subunit gamma	Energy metabolism	ATP-proton motive force interconversion	down		−2.138		yes
+atpA	Q5F4Z2	NGO2148	F0F1 ATP synthase subunit alpha; F-type H+-transporting ATPase subunit alpha	Energy metabolism	ATP-proton motive force interconversion	down		−1.392	−1.621	yes
+NGO0639d		NGO0639d	putative L-lactate dehydrogenase; L-lactate dehydrogenase (cytochrome)	Energy metabolism	Anaerobic	down		−1.096	−0.849	no
+aceE	Q5F939	NGO0565	AceE; pyruvate dehydrogenase subunit E1	Energy metabolism	Pyruvate dehydrogenase	down		−0.875	−1.178	yes
+grpE	Q5F6X1	NGO1422	heat shock protein GrpE; molecular chaperone GrpE	Protein fate	Protein folding and stabilization	down		−2.206		yes
+clpB	Q5F7W9	NGO1046	putative ClpB protein; ATP-dependent Clp protease ATP-binding subunit ClpB	Protein fate	Degradation of proteins, peptides, and glycopeptides	down		−1.798		yes
+secB	Q5FAB1	NGO0116	preprotein translocase subunit SecB	Protein fate	Protein and peptide secretion and trafficking	down		−1.572		yes
+groEL	Q5F541	NGO2095	GroEL; chaperonin GroEL	Protein fate	Protein folding and stabilization	down		−1.528	−1.875	yes
+rpsP	Q5FA57	NGO0174	RpsP; 30S ribosomal protein S16	Protein synthesis	Ribosomal proteins: synthesis and modification	down		−1.579		yes
+pheT	Q5F9T6	NGO0304	PheT; phenylalanyl-tRNA synthetase subunit beta	Protein synthesis	tRNA aminoacylation	down		−1.434		yes
+fusA	Q5F5S3	NGO1843	FusA; elongation factor G	Protein synthesis	Translation factors	down		−1.381		yes
+rplC	Q5F5S7	NGO1838	RplC; 50S ribosomal protein L3	Protein synthesis	Ribosomal proteins: synthesis and modification	down		−1.297		yes
+rplM	Q5F5A5	NGO2024	RplM; 50S ribosomal protein L13	Protein synthesis	Ribosomal proteins: synthesis and modification	down		−1.123		yes
+NGO_2093	Q5F543	NGO2093	FetA; iron complex outermembrane receptor protein	Transport and binding proteins	Cations and iron carrying compounds	down	−2.447	−2.440	−2.008	yes
+NGO1496e		NGO1496e	TbpB; transferrin-binding protein B	Transport and binding proteins	Cations and iron carrying compounds	down		−2.418		no
+NGO_1495	Q5F6Q4	NGO1495	TbpA; transferrin-binding protein A	Transport and binding proteins	Cations and iron carrying compounds	down		−0.680	−1.623	yes

@@ -1,0 +1,56 @@
+# Example: proteins found only in outer membrane vesicles released by Neisseria gonorrhoeae MS11 under iron starvation or under iron repletion, among all proteins identified in the vesicles.
+# Source: Placzkiewicz J, Gieczewska K, Musialowski M, Adamczyk-Poplawska M, Bacal P, Kwiatek A. (2023) Availability of iron ions impacts physicochemical properties and proteome of outer membrane vesicles released by Neisseria gonorrhoeae. Sci Rep 13:18733. https://doi.org/10.1038/s41598-023-45498-1
+# Table 2, "Proteins unique for OMVs from iron starvation and iron repletion conditions identified among the total proteins of the OMVs": all 50 listed proteins are kept, with the condition of each section as a group column. Licensed CC BY 4.0; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas Neisseria gonorrhoeae FA1090 index, mapped from the table's UniProt accession (unmapped rows keep the accession); uniprot = index accession; accession_in_table / name_in_table / COG_category as given; condition = the section of the table.
+# 40 of 50 proteins map to the index (80%).
+protein	uniprot	accession_in_table	name_in_table	condition	COG_category	mapped
+rplO	Q5F5U6	Q5F5U6	50S ribosomal protein L15	iron starvation	J: Translation	yes
+rpmB	Q5F682	Q5F682	50S ribosomal protein L28	iron starvation	J: Translation	yes
+rsfS	Q5F555	Q5F555	Hypothetical protein	iron starvation	J: Translation	yes
+Q5F5V9		Q5F5V9	Hypothetical protein	iron starvation	M: Cell wall/membrane/envelop biogenesis	no
+NGO_2034	Q5F595	Q5F595	Putative DNA ligase	iron starvation	M: Cell wall/membrane/envelop biogenesis	yes
+dapB	Q5F5Y7	Q5F5Y7	4-hydroxy-tetrahydrodipicolinate reductase	iron starvation	E: Amino Acid metabolism and transport	yes
+carA	Q5FAG9	Q5FAG9	Carbamoylphosphate synthase small subunit	iron starvation	F: Nucleotide metabolism and transport	yes
+Q5F8Q4		Q5F8Q4	Putative khg/kdpg 4-hydroxy-2-oxoglutarate aldolase	iron starvation	G: Carbohydrate metabolism and transport	no
+ubiG	Q5F562	Q5F562	Putative 3-demethylubiquinone-9 3-methyltransferase	iron starvation	H: Coenzyme metabolism	yes
+acpP	Q5F604	Q5F604	Acyl carrier protein	iron starvation	I: Lipid metabolism	yes
+Q5FAG4		Q5FAG4	MarR-family transcriptional regulator	iron starvation	K: Transcription	no
+polA	Q5F533	Q5F533	Putative DNA polymerase I	iron starvation	L: Replication and repair	yes
+NGO_0794	Q5F8H9	Q5F8H9	Bacterioferritin	iron starvation	P: Inorganic ion transport and metabolism	yes
+Q5F713		Q5F713	Hypothetical protein	iron starvation	S: Function unknown	no
+bipA	Q5F8H0	Q5F8H0	Putative GTP-binding protein	iron starvation	T: Signal transduction	yes
+NGO_1936	Q5F5I8	Q5F5I8	Putative electron transfer flavoprotein alpha-subunit	iron repletion	C: Energy production and conversion	yes
+NGO_0388	Q5F9K5	Q5F9K5	Putative oxidoreductase, NAD(P)H-flavin	iron repletion	C: Energy production and conversion	yes
+dld	Q5F898	Q5F898	Putative D-lactate dehydrogenase	iron repletion	C: Energy production and conversion	yes
+atpC	Q5F4Y9	Q5F4Y9	ATP synthase epsilon chain	iron repletion	C: Energy production and conversion	yes
+atpH	Q5F4Z3	Q5F4Z3	ATP synthase subunit delta	iron repletion	C: Energy production and conversion	yes
+nuoD	Q5F618	Q5F618	NADH-quinone oxidoreductase subunit D	iron repletion	C: Energy production and conversion	yes
+rnr	Q5F8H2	Q5F8H2	Putative ribonuclease	iron repletion	J: Translation	yes
+rplV	Q5F5T2	Q5F5T2	50S ribosomal protein L22	iron repletion	J: Translation	yes
+fmt	Q5F5P7	Q5F5P7	Methionyl-tRNA formyltransferase	iron repletion	J: Translation	yes
+cysS	Q5F5D6	Q5F5D6	Cysteine-tRNA ligase	iron repletion	J: Translation	yes
+rpsF	Q5F925	Q5F925	30S ribosomal protein S6	iron repletion	J: Translation	yes
+prfB	Q5F5H5	Q5F5H5	Peptide chain release factor 2	iron repletion	J: Translation	yes
+ihfB	Q5F906	Q5F906	Integration host factor beta subunit	iron repletion	K: Transcription	yes
+Q5F8P9		Q5F8P9	Putative RpiR-family transcriptional regulator	iron repletion	K: Transcription	no
+rho	Q5FA35	Q5FA35	Transcription termination factor rho	iron repletion	K: Transcription	yes
+NGO_1519	Q5F6N0	Q5F6N0	Hypothetical protein	iron repletion	K: Transcription	yes
+leuC	Q5F8T1	Q5F8T1	3-isopropylmalate dehydratase large subunit	iron repletion	H: Coenzyme metabolism	yes
+Q5F6H8		Q5F6H8	Putative oxygen-independent coproporphyrinogen III oxidase	iron repletion	H: Coenzyme metabolism	no
+NGO_0089	Q5FAD7	Q5FAD7	Putative diaminohydroxyphosphoribosylaminopyrimidine deaminase	iron repletion	H: Coenzyme metabolism	yes
+NGO_1565	Q5F6I9	Q5F6I9	Putative nicotinate-nucleotide pyrophosphorylase	iron repletion	H: Coenzyme metabolism	yes
+ispH	Q5FAF2	Q5FAF2	4-hydroxy-3-methylbut-2-enyl diphosphate reductase	iron repletion	M: Cell wall/membrane/envelop biogenesis	yes
+lepA	Q5F9P9	Q5F9P9	Elongation factor 4	iron repletion	M: Cell wall/membrane/envelop biogenesis	yes
+murA	Q5F5K6	Q5F5K6	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	iron repletion	M: Cell wall/membrane/envelop biogenesis	yes
+hisZ	Q5F9J6	Q5F9J6	ATP phosphoribosyltransferase regulatory subunit	iron repletion	E: Amino Acid metabolism and transport	yes
+speB	Q5F6R3	Q5F6R3	Agmatinase	iron repletion	E : Amino Acid metabolism and transport	yes
+gpsA	Q5F5A8	Q5F5A8	Glycerol-3-phosphate dehydrogenase [NAD(P)+]	iron repletion	I: Lipid metabolism	yes
+plsX	Q5F4X3	Q5F4X3	Phosphate acyltransferase	iron repletion	I: Lipid metabolism	yes
+Q5F507		Q5F507	Hypothetical protein	iron repletion	S: Function unknown	no
+Q5F7D9		Q5F7D9	Hypothetical protein	iron repletion	S: Function unknown	no
+purD	Q5F5I6	Q5F5I6	Putative phosphoribosylamine-glycine ligase	iron repletion	F: Nucleotide metabolism and transport	yes
+NGO_2161	Q5F4Y2	Q5F4Y2	Hypothetical protein	iron repletion	G: Carbohydrate metabolism and transport	yes
+NGO_2130	Q5F510	Q5F510	Putative regulator of pilE expression	iron repletion	O: Post-translational modification, protein turnover, chaperone functions	yes
+Q5F9M2		Q5F9M2	Hypothetical protein	iron repletion	P: Inorganic ion transport and metabolism	no
+Q5F785		Q5F785	Hypothetical protein	iron repletion	T: Signal transduction	no
+secA	Q5F807	Q5F807	Protein translocase subunit SecA	iron repletion	U: Intracellular trafficking and secretion	yes

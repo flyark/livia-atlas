@@ -1,0 +1,156 @@
+# Example: Candida albicans proteins whose phosphorylation dropped when the Cdk8 kinase Ssn3 was inhibited (analog-sensitive ssn3 strain plus 3-MB-PP1) during the yeast-to-hypha transition.
+# Source: Hollomon JM, Liu Z, Rusin SF, Jenkins NP, Smith AK, Koeppen K, Kettenbach AN, Myers LC, Hogan DA (2022) The Candida albicans Cdk8-dependent phosphoproteome reveals repression of hyphal growth through a Flo8-dependent pathway. PLoS Genet 18:e1009622. https://doi.org/10.1371/journal.pgen.1009622
+# S3 Table (pgen.1009622.s005.xlsx), sheet "Summary annotated": phosphosites with decreased phosphorylation at the paper's cutoff (more than 2-fold, p < 0.05), which the paper reports for 552 proteins; this file keeps the top 150 of those proteins ranked by their strongest log2 ratio. Licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); values as published.
+# Name mapping: gene labels as published, assembly-22 feature names converted to their CAALFM_ equivalents, and, where the paper supplies one, its own gene-label-to-UniProt-accession table (S7 silac_hsp90_depletion).
+# Columns: protein = UniProt accession as given; name = gene or protein name as published; orf = orf19 identifier as published; log2_ratio = strongest (most negative) log2 as-ssn3/wild-type site ratio for that protein; pvalue = as published. 114 of the 150 listed proteins map to the species index.
+protein	name	orf	log2_ratio	pvalue
+A0A1D8PJ01	H(+)-exporting P2-type ATPase	Orf19.5383	-6.099	0.00011650658361157438
+A0A1D8PTI7	ribosomal 40S subunit protein S27B	0	-5.516	0.011036788297883526
+P0CT51	Blp1p	0	-4.943	0.000698102490358984
+A0A1D8PNM2	hypothetical protein	Orf19.4346	-4.897	1.0282215874512225e-06
+Q59MQ0	myosin 5	Orf19.738	-4.858	0.00010189447775577503
+A0A1D8PK40	ribosomal 60S subunit protein L19A	Orf19.5904	-4.717	2.123024914936173e-05
+Q5ABC6	Mob2p	Orf19.6044	-4.704	0.00016525436763619456
+A0A1D8PS81	hypothetical protein	Orf19.173	-4.496	0.0024316545353558617
+Q5A868	phosphopantothenoylcysteine decarboxylase complex subunit	Orf19.3260	-4.437	0.0008303569373003337
+Q5ANJ0	protein kinase	Orf19.5911	-4.412	1.4459093186992908e-07
+A0A1D8PJ10	hypothetical protein	Orf19.6160	-4.274	0.00020047835773370057
+Q5AK10	Pan3p	Orf19.4010	-4.27	0.0004296187754157031
+A0A1D8PP38	hypothetical protein	Orf19.3984	-4.171	0.0034198802759878373
+A0A1D8PPK3	ubiquitin-binding serine/threonine protein kinase	Orf19.130	-4.1	0.005454462328915493
+A0A1D8PS17	hypothetical protein	Orf19.2558	-4.097	0.0007391311009230073
+Q59SN0	rRNA-processing protein	Orf19.2362	-4.093	8.546405043773227e-05
+A0A1D8PTE4	flavin adenine dinucleotide transporter	Orf19.1813	-4.085	0.013619541237973919
+Q5AAU7	translation initiation factor eIF2 subunit alpha	Orf19.6213	-4.061	0.001455865101822685
+Q5A032	Hgt3p	Orf19.4356	-4.058	0.005769005554335598
+A0A1D8PPF9	exocyst subunit	Orf19.3647	-4.02	1.8537434312842308e-05
+A0A1D8PR88	Sfi1p	Orf19.5163	-3.991	0.025468347510131797
+A0A1D8PTD1	bifunctional carbamoylphosphate synthetase/aspartate transcarbamylase	Orf19.2360	-3.977	3.1788137811254956e-05
+A0A1D8PLR3	hypothetical protein	Orf19.2684	-3.96	0.0010994773246070838
+A0A1D8PHC7	Rxt3p	Orf19.3568	-3.958	0.0005201825310569788
+Q5A217	hypothetical protein	Orf19.2826	-3.904	0.0026862966448939706
+Q5ADM7	glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)	Orf19.6814	-3.87	0.0008377119557157858
+Q5A350	hypothetical protein	Orf19.6413	-3.837	0.006375361394517924
+A0A1D8PE54	Bbc1p	Orf19.2791	-3.813	0.008127095257880138
+A0A1D8PDP3	Rgd1p	Orf19.2443	-3.812	4.360970857896461e-05
+A0A1D8PRJ6	translation initiation factor eIF2 subunit beta	Orf19.7161	-3.795	0.000984657813446029
+A0A1D8PRF1	hypothetical protein	Orf19.5504	-3.787	0.0033973858226287027
+A0A1D8PH99	hypothetical protein	Orf19.4123	-3.76	0.0008458244186059242
+A0A1D8PNH2	Ifh1p	Orf19.4282	-3.75	0.00509170517873791
+Q5A2T3	Blm3p	Orf19.2182	-3.721	3.586365549351734e-05
+Q5AB80	Kel1p	Orf19.6092	-3.714	0.001585725054544968
+Q5AMQ3	Rga2p	Orf19.4593	-3.712	9.718705136203273e-05
+Q5A5S8	methylenetetrahydrofolate reductase (NAD(P)H)	Orf19.5321	-3.706	0.00010238572322095533
+A0A1D8PRN2	nicotinamide-nucleotide adenylyltransferase	Orf19.7499	-3.683	0.03331085039813248
+A0A1D8PD92	acetate--CoA ligase	Orf19.1064	-3.676	0.0006853146343770763
+A0A1D8PSC9	Hgt18p	Orf19.2425	-3.666	0.016473037846994096
+A0A1D8PNP4	hypothetical protein	Orf19.6658	-3.661	0.012797519416964082
+Q5AGC1	cleavage polyadenylation factor subunit	Orf19.4258	-3.624	2.2242730931241576e-05
+Q59SI6	choline-phosphate cytidylyltransferase	Orf19.4186	-3.581	0.00025541865403150044
+A0A1D8PF45	ribosomal 60S subunit protein L37B	0	-3.533	0.0006062885563598025
+A0A1D8PFN6	AAA family ATPase	Orf19.4994	-3.467	0.0003534383753636854
+Q5A948	homoserine O-acetyltransferase	Orf19.2618	-3.44	5.218216093249432e-06
+A0A1D8PF53	Cta3p	Orf19.1166	-3.43	0.00013926885830625792
+Q5AL00	serine/threonine protein kinase	Orf19.4979	-3.427	0.00039598612684374755
+Q59LV5	phosphatidylethanolamine N-methyltransferase	Orf19.169	-3.418	0.0006224493942959783
+Q5A879	sphingosine N-acyltransferase	Orf19.3249	-3.414	0.003352989635765972
+Q5APT8	RNA-dependent ATPase	Orf19.4870	-3.406	0.002105214295490061
+A0A1D8PKD2	phosphopantothenoylcysteine decarboxylase complex subunit	Orf19.7378	-3.402	0.023332303777687774
+A0A1D8PRZ6	Pin4p	Orf19.2534	-3.382	0.00506962886519022
+A0A1D8PHF9	hypothetical protein	Orf19.3583	-3.381	0.00028556779199836476
+Q5ANA3	ATP-binding cassette multidrug transporter	Orf19.6000	-3.375	0.02565730216686503
+A0A1D8PIC9	hypothetical protein	Orf19.3604	-3.373	2.22883489060131e-05
+A0A1D8PST7	UTP glucose-1-phosphate uridylyltransferase	Orf19.1738	-3.368	2.3085522531444356e-05
+A0A1D8PPE2	Fet31p	Orf19.4211	-3.367	0.0028858402638017675
+Q5A397	Hsp70 family ATPase	Orf19.6367	-3.353	0.0004578074160378113
+Q5A5P2	serine/threonine protein kinase	Orf19.5357	-3.349	0.005214536772023506
+Q5AK88	hypothetical protein	Orf19.3932	-3.346	0.016195887723028993
+Q9C0L9	dynamin-like GTPase	Orf19.2151	-3.326	0.000991989952116846
+Q5A4L3	hypothetical protein	Orf19.3428	-3.315	0.00011646460186189875
+A0A1D8PQ78	aminophospholipid translocase regulatory protein	Orf19.5735	-3.314	0.008693762246416718
+A0A1D8PP19	GTP cyclohydrolase I	Orf19.3957	-3.246	0.0004179060952845214
+Q5ACU9	transcription factor	Orf19.2119	-3.238	9.002876312580297e-05
+Q5ALP1	hypothetical protein	Orf19.1535	-3.227	0.01493133138972759
+A0A1D8PMD5	hypothetical protein	Orf19.1246	-3.22	6.898009190909398e-05
+A0A1D8PLY4	pyruvate carboxylase 2	Orf19.789	-3.22	1.4361779677110033e-05
+A0A1D8PF42	hypothetical protein	Orf19.2296	-3.219	0.00010319858394177976
+A0A1D8PFW9	sphingolipid transporter	Orf19.7242	-3.197	0.008310262654769902
+A0A1D8PKE2	mitogen-activated protein kinase kinase	Orf19.7388	-3.188	3.947028997391497e-05
+Q5A0H8	polyubiquitin-binding protein	Orf19.5833	-3.173	3.374718202011792e-05
+Q5ADT1	Mds3p	Orf19.6760	-3.142	0.012780963662122965
+Q59MU3	phenylpyruvate decarboxylase	Orf19.1847	-3.123	0.001590396634109855
+A0A1D8PFB2	hypothetical protein	Orf19.5258	-3.102	7.086154346591778e-06
+A0A1D8PI00	glutamate dehydrogenase (NAD(+))	Orf19.2192	-3.102	7.019281966214208e-05
+Q5A8J7	sphingolipid homeostasis protein	Orf19.5751	-3.096	0.012962395027997167
+Q5AED0	hypothetical protein	Orf19.338	-3.087	2.078586146973826e-06
+Q59TU5	Mrf1p	Orf19.1149	-3.074	0.0013857656591925959
+A0A1D8PQ51	hypothetical protein	Orf19.5617	-3.072	0.0008302576960292477
+A0A1D8PGA2	protein phosphatase regulator	Orf19.2005	-3.015	9.449356568336708e-06
+Q59UR3	Swi1p	Orf19.5657	-2.999	0.013658136258229809
+Q5AK62	mRNA-binding translational repressor	Orf19.3959	-2.997	0.00018031325535670955
+A0A1D8PU23	hypothetical protein	Orf19.7554	-2.951	0.0022215362603571153
+A0A1D8PQT9	serine/threonine-protein kinase	Orf19.6913	-2.946	0.00442086649532159
+A0A1D8PR25	Fmp45p	Orf19.6489	-2.932	0.009465269216666908
+Q59VZ4	Hsp31p	Orf19.3664	-2.916	0.00011539262851308192
+A0A1D8PTZ3	hypothetical protein	0	-2.899	0.008547231432785346
+Q5AAW5	hypothetical protein	Orf19.6195	-2.892	0.0013092489865230384
+A0A1D8PT49	serine/threonine protein kinase	Orf19.3854	-2.891	0.00035264445381260625
+A0A1D8PRW9	Boi2p	Orf19.3230	-2.89	4.5357047166508586e-05
+A0A1D8PGH2	hypothetical protein	Orf19.1479	-2.889	2.2859445673060908e-05
+Q5A1L6	Git3p	Orf19.1979	-2.887	0.02041050094414523
+A0A1D8PJF3	hypothetical protein	Orf19.1609	-2.876	0.0004204519953957675
+Q5A852	snoRNA-binding rRNA-processing protein	Orf19.3276	-2.852	0.003290141146863144
+A0A1D8PDU2	chromatin-binding protein	Orf19.6247	-2.845	2.072792725003632e-06
+Q3MNT0	chromatin-remodeling histone chaperone	Orf19.7136	-2.836	0.0015339802478675335
+Q5AB84	hypothetical protein	Orf19.6090	-2.831	0.000734484766447303
+A0A1D8PE87	CCR4-NOT core subunit	Orf19.5107	-2.819	0.017792352551568056
+Q5AQ12	hypothetical protein	Orf19.4796	-2.819	3.9209121063756666e-05
+A0A1D8PJ38	bifunctional glycerol-3-phosphate/glycerone-phosphate O-acyltransferase	Orf19.1289	-2.8	5.3217136228156945e-05
+Q5AKY0	Kis2p	Orf19.4997	-2.795	0.01619417560693767
+A0A1D8PUA3	hypothetical protein	Orf19.7670	-2.79	0.0017352460153464205
+A0A1D8PQX8	protein phosphatase regulator	Orf19.6544	-2.768	0.019669949834813273
+A0A1D8PNE5	hypothetical protein	Orf19.4246	-2.765	0.00028328566007011487
+A0A1D8PIJ4	hypothetical protein	Orf19.1381	-2.748	0.014283269593121841
+A0A1D8PND3	leucine-responsive transcriptional regulator	Orf19.4225	-2.748	0.000897683344548736
+Q5AB87	ribosomal 60S subunit protein L16A	Orf19.6085	-2.747	0.00012932886824536892
+P39827	septin	Orf19.548	-2.744	0.0004732863901313173
+Q5AGV8	hypothetical protein	Orf19.6580	-2.744	0.014491818009560795
+A0A1D8PRQ2	hypothetical protein	Orf19.7502	-2.738	0.0027380143297338886
+Q5A650	serine/threonine protein kinase	Orf19.3840	-2.736	0.0007979825916975707
+A0A1D8PQ50	hypothetical protein	Orf19.5626	-2.735	0.004914761606805127
+A0A1D8PLY8	hypothetical protein	Orf19.5311	-2.725	5.352725466660031e-05
+A0A1D8PE84	Cdr4p	Orf19.5079	-2.721	7.733160948704067e-07
+Q5AEI3	phosphatase regulator	Orf19.285	-2.72	4.6706831740236116e-05
+Q59UH8	rRNA-processing protein	Orf19.2386	-2.708	0.00016495266141454193
+Q59T43	hypothetical protein	Orf19.6874	-2.685	0.009508521310472822
+Q5A9D7	transcription factor TFIIIB subunit	Orf19.2528	-2.678	1.6661651737525227e-05
+Q9HGT6	serine--tRNA ligase	Orf19.269	-2.671	0.022836074197495483
+Q5AHB1	Pan1p	Orf19.886	-2.661	0.0061627040153797745
+A0A1D8PCG5	hypothetical protein	Orf19.3328	-2.642	0.0004518253615115732
+Q59T32	Nem1-Spo7 phosphatase regulatory subunit	Orf19.6885	-2.621	0.009536694931683581
+A0A1D8PS60	hypothetical protein	Orf19.3737	-2.62	0.0025707973316743005
+A0A1D8PK97	Chs4p	Orf19.7349	-2.614	9.533500735643566e-05
+A0A1D8PDD8	Tco89p	Orf19.761	-2.608	0.0012440861249242733
+Q5A0L2	hypothetical protein	Orf19.5799	-2.602	0.003560334204931838
+A0A1D8PII2	hypothetical protein	Orf19.1363	-2.599	0.0005985377909237499
+Q59LV8	Asg1p	Orf19.166	-2.59	0.04123636957779288
+A0A1D8PGG1	Rod1p	Orf19.1509	-2.574	0.003737079105796008
+A0A1D8PGM4	rRNA-processing protein	Orf19.1569	-2.572	0.03248675626049701
+A0A1D8PEW1	Gca2p	Orf19.999	-2.559	0.0032153614951164647
+Q59NP1	high-affinity Cu transporter	Orf19.3646	-2.553	0.0012469259136811538
+Q5APD2	malate synthase	Orf19.4833	-2.551	1.0561568846884072e-06
+A0A1D8PQG5	Sac7p	Orf19.7115	-2.532	1.583795508011404e-05
+A0A1D8PTM0	hypothetical protein	Orf19.597	-2.531	0.00038711595204510605
+Q5A7M1	ADP-ribosylation factor GTPase-activating protein	Orf19.5445	-2.517	0.0007009930364027067
+Q5AAP7	hypothetical protein	Orf19.6264	-2.517	0.0004299430526390525
+Q5AGF6	translation initiation factor eIF2 subunit gamma	Orf19.4223	-2.512	2.0033140434045102e-05
+Q59RR3	Mnl1p	Orf19.6121	-2.504	0.017792326265743078
+Q5A6Q7	Eaf7p	Orf19.497	-2.486	0.0017326567683641982
+A0A1D8PHZ3	hypothetical protein	Orf19.1876	-2.475	0.0002446125108402534
+Q5A791	Nrp1p	Orf19.5071	-2.473	0.0014202346308828553
+A0A1D8PQP3	protein kinase	Orf19.7044	-2.463	0.0003559617212778876
+A0A1D8PFG4	ribosomal 60S subunit protein L27A	0	-2.461	3.534808555075068e-07
+Q5AL52	formin	Orf19.4927	-2.46	0.004691573419214447
+A0A1D8PEZ9	hypothetical protein	Orf19.2333	-2.457	0.0001674997094142931
+A0A1D8PKQ3	Mds3p	Orf19.6760	-2.44	0.012464190403395425
+A0A1D8PMB7	oxidative DNA demethylase	Orf19.1802	-2.437	0.0009264659982486844

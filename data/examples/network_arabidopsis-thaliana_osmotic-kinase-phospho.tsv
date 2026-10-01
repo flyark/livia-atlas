@@ -1,0 +1,52 @@
+# Example: Protein kinases with phosphosites up-regulated after 30 min of osmotic stress (mannitol) in wild-type Col-0 Arabidopsis seedlings (label-free phosphoproteomics); site table collapsed to one row per protein (best site = largest t-test difference).
+# Source: Lin Z, Li Y, Zhang Z, et al. (2020) A RAF-SnRK2 kinase cascade mediates early osmotic stress signaling in higher plants. Nat Commun 11:613. https://doi.org/10.1038/s41467-020-14477-9
+# Source: 41467_2020_14477_MOESM7_ESM.xlsx (Supplementary Data 4, "The mannitol-induced kinase phosphosites from Col-0 Arabidopsis") (https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-020-14477-9/MediaObjects/41467_2020_14477_MOESM7_ESM.xlsx)
+# Cutoff: phosphosites marked significant ("+") for WT-mannitol vs WT-control in the sheet (paper: Perseus, permutation-based FDR 0.01, S0 0.2); 80 sites on 45 proteins (leading protein ID), all kept
+# Licensed CC BY 4.0
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+protein	name	log2 difference (mannitol vs control)	-log10 p-value	site	uniprot
+AT3G50500	SnRK2.2	3.475	5.220	S177	Q39192
+AT1G67580	CDKG2, CYCLIN-DEPENDENT KINASE G2	3.418	4.473	S86	Q9CAG1
+AT5G14720	Protein kinase superfamily protein	3.234	4.217	S451	
+AT1G79570	RAF20	3.021	3.616	S144	Q9SAJ2
+AT1G10940	SnRK2.4	2.856	4.498	S158	P43291
+AT4G35780	ACT-like protein tyrosine kinase family protein	2.823	4.071	T259	Q8RWL6
+AT1G53165	ATMAP4K ALPHA1	2.785	3.596	S479	F4HPR9
+AT4G38470	ACT-like protein tyrosine kinase family protein	2.719	4.171	S556	F4JTP5
+AT1G78290	SnRK2.8	2.690	3.760	T158	Q9M9E9
+AT5G66880	SnRK2.3	2.684	4.108	S176	Q39193
+AT4G33950	SnRK2.6	2.526	4.180	T176	Q940H6
+AT3G46920	RAF42	2.332	3.625	S839	A0A1I9LN82
+AT1G73660	RAF5/SIS8	2.228	3.552	S103	Q9C9U5
+AT3G14840	Leucine-rich repeat transmembrane protein kinase	2.199	3.935	S967	C0LGN2
+AT2G35050	RAF24	2.163	3.181	S555	O64768
+AT4G09570	calcium-dependent protein kinase 4	2.035	3.030	S365	Q38869
+AT3G10540	3-phosphoinositide-dependent protein kinase	1.977	3.195	S377	Q4V3C8
+AT4G33080	AGC (cAMP-dependent, cGMP-dependent and protein kinase C) kinase family protein	1.941	2.486	S300	
+AT4G26070	MAP kinase/ ERK kinase 1	1.907	3.023	S27	Q94A06
+AT2G17290	CPK6	1.828	2.799	S34	Q38872
+AT1G08720	RAF2/EDR1	1.771	2.800	S823	Q9FPR3
+AT1G16270	RAF18	1.761	2.917	S780	Q9SA26
+AT2G43790	MAP kinase 6	1.738	2.839	T221	Q39026
+AT2G17700	ACT-like protein tyrosine kinase family protein	1.724	2.160	S253	O22558
+AT1G18160	RAF4	1.679	3.720	T544	F4IAN2
+AT4G24100	Protein kinase superfamily protein	1.678	3.228	S674	A0A1P8B4A5
+AT1G14000	VH1-interacting kinase	1.653	2.977	Y321	Q9XI87
+AT4G40010	SnRK2.7	1.515	3.638	S158	Q9SMQ4
+AT5G09890	Protein kinase family protein	1.482	2.912	T466	F4KFD4
+AT1G72710	casein kinase 1-like protein 2	1.346	2.711	S347	Q9CAI5
+AT1G71410	ARM repeat superfamily protein	1.338	1.616	S901	
+AT1G60940	SnRK2.10	1.224	2.675	S354	Q9C958
+AT3G23310	AGC (cAMP-dependent, cGMP-dependent and protein kinase C) kinase family protein	1.191	2.475	T480	Q9LW66
+AT3G14350	STRUBBELIG-receptor family 7	1.135	2.304	S673	Q9LUL4
+AT5G58950	Protein kinase superfamily protein	1.001	2.509	S155	Q9FIL6
+AT4G22130	STRUBBELIG-receptor family 8	0.987	2.165	S207	Q6R2J8
+AT1G68830	STT7 homolog STN7	0.964	2.210	T539	Q9S713
+AT1G51890	Leucine-rich repeat protein kinase family protein	0.902	3.264	S816	C0LGG6
+AT4G26100	casein kinase 1	0.867	2.053	S391	P42158
+AT2G37050	Leucine-rich repeat protein kinase family protein	0.845	2.603	T570	C0LGM1
+AT2G23200	Protein kinase superfamily protein	0.786	2.181	S453	
+AT4G04720	calcium-dependent protein kinase 21	0.785	2.269	S414	Q9ZSA2
+AT1G67890	RAF11	0.770	2.091	S55	F4HVH9
+AT5G22840	Protein kinase superfamily protein	0.755	2.548	S494	
+AT5G66850	mitogen-activated protein kinase kinase kinase 5	0.735	2.222	S682	Q9C5H5

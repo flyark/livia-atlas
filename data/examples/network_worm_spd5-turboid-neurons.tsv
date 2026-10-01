@@ -1,0 +1,61 @@
+# TurboID proximity labeling with direct TurboID:GFP:SPD-5 expressed in C. elegans ciliated sensory neurons (Posm-6 promoter); preys enriched over control in streptavidin pulldowns (LFQ, lowest-of-detection imputation)
+# Holzer E, Rumpf-Kienzl C, Falk S, Dammermann A. 2022. A modified TurboID approach identifies tissue-specific centriolar components in C. elegans. PLoS Genet 18:e1010150. https://doi.org/10.1371/journal.pgen.1010150
+# Source: pgen.1010150.s005.xlsx (S1 Table), sheet "SPD-5 direct TurboID neurons" (https://journals.plos.org/plosgenetics/article/file?id=10.1371/journal.pgen.1010150.s005&type=supplementary)
+# Cutoff: "Log2 enrichment >1, p-value <0.05" (the paper's significance threshold), i.e. the rows ranked in the sheet's "Enriched" column; 55 pass (55 by the logFC/P.Value columns shown), all kept; the bait SPD-5 is among them
+# Licensed CC BY 4.0
+gene	uniprot	logFC	P.Value	role
+spd-5	P91349	6.992	0.002	bait
+rsa-2	G5EFV3	4.8982	3.180e-04	prey
+pcmd-1	O62071	4.3523	0.0024	prey
+F53G12.4	O01796	4.3159	2.926e-05	prey
+tufm-2	G5EDF5	3.4329	0.0017	prey
+C16A3.5	Q18036	3.1079	0.0161	prey
+hsp-75	Q2L6Y6	2.9361	0.0026	prey
+vit-3		2.247	7.253e-07	prey
+idhb-1	Q93353	2.2235	0.0077	prey
+vit-5		2.0673	1.748e-04	prey
+ucr-2.2	Q22370	1.9499	0.0312	prey
+nuo-4	Q21233	1.9046	0.0011	prey
+alh-9	P46562	1.8217	2.288e-05	prey
+idhg-1	Q20049	1.6887	3.917e-04	prey
+acdh-12	Q19057	1.5505	0.0146	prey
+gfm-1	Q9XV52	1.5028	1.029e-04	prey
+B0272.3	P41938	1.4786	2.229e-04	prey
+hsp-6	P11141	1.4493	2.611e-05	prey
+phb-1	Q9BKU4	1.4457	5.123e-04	prey
+got-2.2	Q17994	1.4344	0.0014	prey
+hsp-60	P50140	1.428	7.394e-05	prey
+C32F10.8	O01685	1.4219	1.584e-04	prey
+gta-1	Q21217	1.4029	0.0204	prey
+atp-5	Q17763	1.3657	2.439e-06	prey
+nuo-5	Q9N4Y8	1.3528	1.214e-05	prey
+vit-2		1.3526	4.886e-06	prey
+F48E3.9	Q9GPA4	1.3175	6.067e-05	prey
+sip-1	Q20363	1.2961	0.0053	prey
+idha-1	Q93714	1.2947	1.556e-04	prey
+ech-1.2	Q9GYT0	1.2935	4.553e-05	prey
+ZK809.5	Q86D01	1.2819	0.0041	prey
+dhs-6	Q09979	1.2421	0.0017	prey
+cpt-2	G5ECS9	1.2396	0.0039	prey
+cts-1	P34575	1.2178	3.941e-04	prey
+Y69A2AR.18	Q95XJ0	1.1962	3.779e-06	prey
+sucg-1	P53589	1.1937	0.0036	prey
+sucl-2	O02642	1.1841	0.0019	prey
+mdh-2	O02640	1.1392	1.220e-04	prey
+idh-2	O17643	1.1301	0.0047	prey
+hach-1	Q19278	1.119	0.0133	prey
+F45H10.3	O02267	1.1098	0.047	prey
+vit-6		1.1053	1.550e-05	prey
+ech-6	P34559	1.0896	0.003	prey
+let-721	Q11190	1.0785	0.0083	prey
+atp-3	Q7JNG1	1.0682	7.502e-04	prey
+alh-8	P52713	1.0672	1.374e-04	prey
+pdhb-1	O44451	1.0662	1.308e-04	prey
+atp-1	Q9XXK1	1.0404	2.469e-04	prey
+acdh-3	O44549	1.0378	0.0034	prey
+icl-1	Q10663	1.0369	6.820e-05	prey
+ivd-1	G5EEH6	1.0339	0.0011	prey
+ech-4	Q09603	1.0334	0.0027	prey
+phb-2	P50093	1.0192	0.0338	prey
+nduf-9	Q9N3H3	1.012	3.616e-04	prey
+tufm-1	G5ECM6	1.0105	3.834e-04	prey

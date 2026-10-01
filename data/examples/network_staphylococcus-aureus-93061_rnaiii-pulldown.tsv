@@ -1,0 +1,89 @@
+# Example: proteins pulled down by the small RNA RNAIII from Staphylococcus aureus NCTC 8325 lysate (tRNA-scaffold streptavidin aptamer pull-down, LC-MS/MS), with the RNA bait kept as the hub.
+# Source: Zhang X, Zhu Q, Tian T, Zhao C, Zang J, Xue T, Sun B (2015) Identification of RNAIII-binding proteins in Staphylococcus aureus using tethered RNAs and streptavidin aptamers based pull-down assay. BMC Microbiol 15:102. https://doi.org/10.1186/s12866-015-0435-3
+# Additional file 1 (12866_2015_435_MOESM1_ESM.xlsx), Sheet1: all 81 proteins identified and quantified from at least two of three biological replicates, as published; no further cutoff applied. Licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), data under the CC0 1.0 waiver stated in the article; values as published.
+# Columns: gene = locus tag as given (NCTC 8325, the index strain, so names map directly); peptides_RNAIII and peptides_control = peptide counts as published. 67 of 81 listed proteins map to the species index.
+# Note: RNAIII is the RNA bait, not a protein; it carries no index entry.
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+gene	role	peptides_RNAIII	peptides_control	uniprot
+RNAIII	bait			
+SAOUHSC_00769	prey	38		O06446
+SAOUHSC_01806	prey	31		Q2FXM9
+SAOUHSC_02927	prey	30	6.0	
+SAOUHSC_01820	prey	25		Q2FXL5
+SAOUHSC_01017	prey	23		Q2FZI6
+SAOUHSC_00878	prey	22		
+SAOUHSC_02316	prey	17		Q2FWH5
+SAOUHSC_01150	prey	15		Q2FZ89
+SAOUHSC_00472	prey	15		Q2G0S2
+SAOUHSC_02363	prey	13		Q2FWD6
+SAOUHSC_02362	prey	13		Q2FWD7
+SAOUHSC_01854	prey	11		
+SAOUHSC_01035	prey	10		Q2FZG9
+SAOUHSC_01838	prey	10		Q2FXJ6
+SAOUHSC_02123	prey	9		Q53727
+SAOUHSC_01778	prey	9		Q2FXQ7
+SAOUHSC_02574	prey	9		Q2G1W0
+SAOUHSC_00005	prey	8		Q2G274
+SAOUHSC_01278	prey	8		Q2FYZ4
+SAOUHSC_01252	prey	8	3.0	Q2FZ19
+SAOUHSC_01659	prey	8	3.0	Q2FY15
+SAOUHSC_00505	prey	7		Q2G0P5
+SAOUHSC_01039	prey	7		
+SAOUHSC_00113	prey	6		Q2G1K9
+SAOUHSC_02297	prey	6		Q2FWJ5
+SAOUHSC_02849	prey	6		Q2FV86
+SAOUHSC_00879	prey	6		Q2FZV6
+SAOUHSC_01819	prey	6		Q2FXL6
+SAOUHSC_01204	prey	5		Q2FZ49
+SAOUHSC_01170	prey	5		Q2FZ72
+SAOUHSC_02399	prey	5		Q2FWA0
+SAOUHSC_02383	prey	5		
+SAOUHSC_02354	prey	5		Q2FWE5
+SAOUHSC_00795	prey	5		Q2G032
+SAOUHSC_01490	prey	5	10.0	
+SAOUHSC_00187	prey	4		Q2G1D8
+SAOUHSC_02107	prey	4		Q2FWZ9
+SAOUHSC_00872	prey	4		Q2FZW3
+SAOUHSC_02337	prey	4		Q2FWF4
+SAOUHSC_01169	prey	4		Q2FZ73
+SAOUHSC_01163	prey	4		Q2FZ78
+SAOUHSC_01807	prey	4		Q2FXM8
+SAOUHSC_02652	prey	4		Q2FVQ0
+SAOUHSC_00847	prey	4		Q2FZY7
+SAOUHSC_01192	prey	4		
+SAOUHSC_00467	prey	4		Q2G0S7
+SAOUHSC_00001	prey	3		Q2G2H5
+SAOUHSC_02158	prey	3		Q2FWW3
+SAOUHSC_02352	prey	3		
+SAOUHSC_01682	prey	3		Q2FXZ3
+SAOUHSC_01612	prey	3		Q2FY53
+SAOUHSC_02801	prey	3		
+SAOUHSC_01225	prey	3		Q2FZ29
+SAOUHSC_00483	prey	3		
+SAOUHSC_01462	prey	3		Q2FYI5
+SAOUHSC_01668	prey	2	2.0	Q2FY06
+SAOUHSC_00780	prey	2		Q2G046
+SAOUHSC_01472	prey	2		Q2FYH5
+SAOUHSC_01145	prey	2		Q2FZ94
+SAOUHSC_01679	prey	2		
+SAOUHSC_01287	prey	2		Q2FYY6
+SAOUHSC_00507	prey	2		Q2G243
+SAOUHSC_01801	prey	2		Q2FXN4
+SAOUHSC_01041	prey	2		Q2G2A5
+SAOUHSC_01071	prey	2		
+SAOUHSC_00020	prey	2		Q2G2U6
+SAOUHSC_00694	prey	2		
+SAOUHSC_01207	prey	2		Q2FZ46
+SAOUHSC_02303	prey	2		Q2FWI8
+SAOUHSC_01263	prey	1		Q2FZ08
+SAOUHSC_02366	prey	1		Q2FWD3
+SAOUHSC_01203	prey	1		Q2FZ50
+SAOUHSC_01184	prey	1		Q2FZ67
+SAOUHSC_01492	prey	1		
+SAOUHSC_00513	prey	1		Q2G2M3
+SAOUHSC_01099	prey	1		Q2FZD3
+SAOUHSC_01351	prey	1		Q2FYS5
+SAOUHSC_01850	prey	1		Q2G295
+SAOUHSC_01576	prey	1		Q2FY88
+SAOUHSC_00464	prey	1		Q2G0T0
+SAOUHSC_01454	prey	1		Q2FYJ1

@@ -1,0 +1,92 @@
+# Orb6-dependent phosphosites in S. pombe: SILAC phosphoproteomics after inhibition of analog-sensitive Orb6 kinase with 3-BrB-PP1; site table collapsed to one row per protein (best site = most negative log2 fold change)
+# Tay YD, Leda M, Spanos C, Rappsilber J, Goryachev AB, Sawin KE. 2019. Fission yeast NDR/LATS kinase Orb6 regulates exocytosis via phosphorylation of the exocyst complex. Cell Rep 26:1654-1667.e7. https://doi.org/10.1016/j.celrep.2019.01.027
+# Source: mmc3.xlsx (Table S2), sheet "Medium Stringency" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6367570/supplementaryFiles)
+# Cutoff: the paper's Medium Stringency set (quantified in at least two of three biological replicates, mean log2 fold change < -1 after Orb6 inhibition, and no such decrease in the wild-type 3-BrB-PP1 control); 121 sites on 86 proteins, all kept
+# Licensed CC BY 4.0
+gene	uniprot	Log2(fold-change) after Orb6 inhibition	Position of phosphosite within protein	sites passing	HxR/H/KxxS/T
+osh2		-4.785	695	3	YES
+sec72		-3.95	1597	1	YES
+msy1	O74839	-3.872	19	1	
+sec5	O94598	-3.202	50	1	YES
+ppk25	O59697	-2.917	404	2	YES
+tif212	P56329	-2.769	124	1	
+eis1		-2.752	1095	1	YES
+rng10	Q9P6L9	-2.708	308	18	
+sec3		-2.512	201	1	YES
+cao2	O42890	-2.373	765	1	YES
+ppk15	Q9P6P3	-2.359	33	1	YES
+cyk3	O14302	-2.308	300	1	YES
+tps3		-2.289	163	1	YES
+lar1		-2.247	271	1	
+ptc1	P40371	-2.154	34	2	YES
+nif1	P87159	-2.115	45	1	
+pep7	O13786	-2.103	75	2	YES
+mdb1	O14079	-2.067	278	3	
+mmb1	O74779	-2.034	439	1	YES
+blt1	O74338	-1.899	691	2	
+mam301		-1.825	429	1	
+klp8	Q9UTL2	-1.764	279	1	
+SPCC297.05	Q9Y7Q7	-1.687	91	3	
+uds1		-1.653	678	2	
+scw1	O74452	-1.623	344	2	
+imp2	Q10199	-1.621	416	1	
+gea1		-1.582	411	1	
+ura1		-1.563	1881	1	
+rgf2	Q9UTR5	-1.538	151	1	
+clp1	Q10299	-1.512	396	1	
+nup40	O13838	-1.454	59	1	
+vps54	O14093	-1.442	483	2	
+ape2		-1.413	556	1	
+SPAC8C9.04	O14273	-1.391	519	2	
+dsk1	P36616	-1.363	25	1	
+SPAC11D3.18c		-1.352	16	1	
+mcs4	P87323	-1.35	152	1	
+rga2	Q10164	-1.338	155	1	
+thi9	Q9UT18	-1.323	585	1	
+SPCC330.07c	Q12519	-1.319	9	1	
+tea3	O14248	-1.317	460	1	YES
+SPBC25B2.03	O74775	-1.304	490	1	
+vgl1	O59810	-1.288	115	1	
+dna2	Q9URU2	-1.287	79	1	
+spa2	O42869	-1.268	513	1	
+par1	Q10428	-1.262	99	1	
+gaf1	Q10280	-1.254	596	1	
+syp1	O43059	-1.245	497	1	
+elf1	O14134	-1.239	1041	1	
+chs2	O74756	-1.225	15	1	
+fkh2	O60129	-1.222	319	1	
+hrp3	O14139	-1.214	1250	1	
+wtf14	O74512	-1.214	11	1	
+bir1	O14064	-1.21	518	1	
+tea5		-1.186	71	1	
+exo84	O14226	-1.184	59	1	
+cfh1	Q09897	-1.17	161	1	
+igo1	P79058	-1.166	115	1	YES
+orm1		-1.15	12	1	
+ppc89	Q10218	-1.133	58	1	
+rad60	Q9USX3	-1.129	195	1	
+mid2	Q9P7Y8	-1.129	379	1	
+lag1	P78970	-1.123	16	2	
+iss10		-1.119	265	1	
+cki1	P40233	-1.112	144	1	
+cfh4	O59732	-1.107	239	1	
+etd1	Q9UTR4	-1.105	103	2	
+pdr16		-1.096	269	2	YES
+atg11	O14261	-1.093	548	1	
+aha1		-1.093	2	2	
+rga3	O14014	-1.085	660	1	
+srp54	P21565	-1.072	12	1	
+imt3		-1.07	307	1	
+ppk1	Q9HFF4	-1.066	59	1	YES
+mug176	O74389	-1.057	395	1	
+sid4	O60187	-1.046	128	1	
+spo15		-1.041	105	1	
+abp1	P49777	-1.037	297	1	
+nat10	P87115	-1.035	1013	1	
+nce103	O94255	-1.027	134	1	
+zds1	O14100	-1.022	340	1	
+cek1	P38938	-1.021	748	1	YES
+sec31	O13637	-1.02	517	1	
+sec18	Q9P7Q4	-1.019	256	1	
+bfr1		-1.014	475	1	
+byr4	Q10951	-1.007	79	1	

@@ -1,0 +1,140 @@
+# Anti-FLAG IP-MS (label-free quantification) of endogenous 3xFLAG::GFP::ZNFX-1 from C. elegans young adults vs untagged N2; proteins enriched in the ZNFX-1 IP (the bait is listed under its sequence name ZK1067.2b)
+# Marnik EA, Almeida MV, Cipriani PG, et al. 2022. The Caenorhabditis elegans TDRD5/7-like protein, LOTR-1, interacts with the helicase ZNFX-1 to balance epigenetic signals in the germline. PLoS Genet 18:e1010245. https://doi.org/10.1371/journal.pgen.1010245
+# Source: pgen.1010245.s007.xlsx (S2 Table, "Enriched Proteins of 3xFLAG::GFP::ZNFX-1 anti-FLAG IP-qMS"), sheet "S2.4. YA_ZNFX-1vsN2" (https://journals.plos.org/plosgenetics/article/file?id=10.1371/journal.pgen.1010245.s007&type=supplementary)
+# Cutoff: the paper states no numeric threshold; the sheet lists its differentially enriched proteins (309 rows, smallest |difference| 1.06 and smallest log10.pvalue 1.34 as read from the file); the 134 rows with positive difference (enriched in ZNFX-1 IP over N2) kept, the 175 enriched in N2 dropped; no trimming
+# Licensed CC BY 4.0
+protein	uniprot	difference_znfx1_wt	log10.pvalue_znfx1_wt	role
+ZK1067.2b		7.9918	5.3289	bait
+H05L14.2c		6.4308	4.9236	prey
+plk-3	Q20845	4.2439	2.56	prey
+wago-1	Q21770	3.8313	4.01	prey
+rme-2	O44191	3.7662	5.3013	prey
+cbd-1	O45599	3.645	4.4618	prey
+puf-3	Q9U2G4	3.4925	2.7231	prey
+D1081.7	A5Z2T6	3.4295	3.8761	prey
+lin-41	Q9U489	3.3038	2.8422	prey
+Y110A7A.15a	H2KZ41	3.1993	3.4511	prey
+prg-1	P90786	3.1087	2.072	prey
+ule-3	Q18947	3.0585	1.9503	prey
+nasp-2	O17687	3.0577	1.3526	prey
+deps-1	Q9N303	2.9989	3.2534	prey
+fbp-1	G5EBJ7	2.967	3.1639	prey
+puf-11	Q8IU00	2.9401	6.2637	prey
+pqn-59	O61708	2.9368	3.8747	prey
+F40A3.6	O16266	2.8816	3.2766	prey
+dhs-12	G5EG13	2.7839	4.6998	prey
+perm-1		2.7585	3.823	prey
+F21D5.1	Q19680	2.7058	2.1333	prey
+puf-5	Q20757	2.6437	3.3378	prey
+cyp-35A4	O16220	2.6175	2.1107	prey
+F58G11.3a	P90898	2.5881	4.5644	prey
+rsp-3	Q9NEW6	2.5576	3.1006	prey
+mrps-12	Q9XTY5	2.5201	3.9173	prey
+gars-1	Q10039	2.4121	2.7204	prey
+car-1	Q9XW17	2.4072	5.8587	prey
+icd-1	Q18885	2.2789	2.8931	prey
+gpd-1	P04970	2.2657	2.5664	prey
+rsp-1	Q23121	2.1989	4.2676	prey
+C39D10.7	Q18529	2.17	2.1397	prey
+K02D10.1b	P34492	2.1132	1.3643	prey
+C18H9.3c	Q09237	2.1082	1.5951	prey
+hip-1	G5EE04	2.0464	1.6006	prey
+tnt-2	Q7Z072	2.041	2.4522	prey
+T25B9.9	Q17761	2.023	5.1658	prey
+D1054.10	Q18943	2.0113	2.8085	prey
+clik-2	Q09936	2.0066	4.1143	prey
+ppw-2	Q9N585	2.0017	2.5283	prey
+cth-2	P55216	1.9001	1.803	prey
+tag-307	Q95PW5	1.8907	1.8695	prey
+eef-1B.1	P34460	1.8802	2.0658	prey
+ttr-59		1.8701	3.4096	prey
+atx-2	G5ED29	1.8654	2.6517	prey
+F13H6.3	Q07085	1.8546	2.9415	prey
+sqv-4	Q19905	1.8508	2.9314	prey
+ldh-1	Q27888	1.8346	2.5978	prey
+gst-6	P91252	1.8323	1.7185	prey
+gldc-1	Q21962	1.8273	2.8692	prey
+C27B7.5	Q18244	1.8254	2.9758	prey
+umps-1	G5EDZ2	1.8188	3.2325	prey
+fubl-2	Q23487	1.8121	2.9519	prey
+larp-1	D5MCN2	1.7996	4.0749	prey
+wago-4	O62275	1.7977	3.6023	prey
+yars-1	G5ED95	1.7902	2.8524	prey
+F58B4.5	Q20974	1.7822	3.594	prey
+nprt-1	Q95XX1	1.7728	2.3857	prey
+sao-1	C6KRN1	1.7724	1.4181	prey
+ule-5	Q9XWT3	1.7695	3.7136	prey
+hxk-3	Q9N4A5	1.7608	2.3276	prey
+mppb-1	Q23295	1.7481	2.5859	prey
+cey-2	P91306	1.7458	2.0512	prey
+gls-1	Q8I4M5	1.7327	2.2285	prey
+fat-5	G5ED44	1.7293	3.3186	prey
+mrps-18B	Q22470	1.7229	1.8697	prey
+cyp-35C1		1.7184	6.3901	prey
+ppm-1.G	P49595	1.7146	4.9325	prey
+hpo-34		1.7094	2.4341	prey
+R09E10.6	Q21871	1.7002	2.6413	prey
+nlt-1	Q23655	1.6761	1.4206	prey
+glh-2	Q966L9	1.6661	4.0221	prey
+unc-15	P10567	1.6567	4.1191	prey
+C39B5.5	C2BR91	1.6272	1.597	prey
+pgrn-1	Q9U362	1.5943	2.831	prey
+npp-16	Q7K6X4	1.5932	2.7231	prey
+aars-2	O01541	1.5684	3.1573	prey
+alh-10	Q18822	1.5622	1.5931	prey
+gna-2	G5EC27	1.5286	1.7865	prey
+cgh-1	Q95YF3	1.5284	4.914	prey
+pqn-53	Q21793	1.5264	2.3484	prey
+dnj-7	P91189	1.5199	3.049	prey
+perm-2	O44145	1.5075	1.7528	prey
+F19C7.1	Q19591	1.5033	2.0801	prey
+F23C8.5a	Q9TXI4	1.5026	2.3548	prey
+F56F11.4a		1.4858	2.3308	prey
+cey-3	P91398	1.4843	2.0503	prey
+T08G2.2	Q22346	1.4475	2.1484	prey
+C16A3.4	Q18037	1.4351	1.5589	prey
+F54E2.1		1.4342	1.8282	prey
+hsp-6	P11141	1.4329	2.4219	prey
+mvk-1	Q65XX9	1.43	1.4466	prey
+pck-1	O44906	1.4281	2.1488	prey
+dnj-13	Q20774	1.4266	2.3625	prey
+Y71F9AL.9	Q9N4I3	1.4141	1.8818	prey
+mup-2	Q27371	1.4139	1.5366	prey
+VF13D12L.3	G5EDW8	1.4117	2.4052	prey
+T07C4.3b		1.3939	2.8215	prey
+glp-4	Q9U1Q4	1.3905	5.9567	prey
+lys-4	Q20964	1.3865	2.1519	prey
+F56F10.1		1.3775	2.449	prey
+cyp-35A3		1.3643	3.1894	prey
+eef-1B.2	Q9U2H9	1.356	2.5835	prey
+rpl-25.2	Q20647	1.343	3.3642	prey
+C29F7.2a	O17621	1.3218	2.7899	prey
+ugt-62	Q21603	1.3182	6.0415	prey
+rpl-28	Q21930	1.3156	3.0074	prey
+Y62H9A.5	Q9XWS6	1.3136	1.5966	prey
+dhs-25	Q19246	1.31	3.6079	prey
+cyp-35A5	O44649	1.3072	2.4339	prey
+pdha-1	P52899	1.2914	1.9098	prey
+lcmt-1	P46554	1.2908	1.671	prey
+gspd-1	Q27464	1.2805	2.2268	prey
+F27D4.1	Q93615	1.2513	1.8714	prey
+rmd-2	Q8MQB5	1.248	2.1266	prey
+tiar-1	Q95QV8	1.237	2.3378	prey
+rps-23	Q19877	1.2331	2.3832	prey
+coq-3	O18235	1.2325	2.3967	prey
+C38D4.4	Q18509	1.2293	1.5463	prey
+pah-1	P90925	1.2248	4.2167	prey
+ahcy-1	P27604	1.2234	1.773	prey
+hars-1	P34183	1.2176	1.9666	prey
+ubql-1	G5EFF7	1.1868	3.0114	prey
+exos-2	Q95XD0	1.1601	2.0958	prey
+pdhb-1	O44451	1.1582	1.7404	prey
+bckd-1A	O45924	1.1503	4.405	prey
+fars-1	Q9GYS8	1.1395	3.963	prey
+eef-1A.2	P53013	1.1239	1.9289	prey
+pes-4	Q95Y67	1.1183	2.2268	prey
+T21F4.1	A0A1X7RC97	1.1114	2.0073	prey
+pygl-1	Q9N5U1	1.1085	1.8411	prey
+cdr-4	G5EDZ7	1.0944	5.7443	prey
+mrpl-2	O45110	1.0929	3.3463	prey
+Y47G6A.22	Q8MXS8	1.0882	2.1757	prey

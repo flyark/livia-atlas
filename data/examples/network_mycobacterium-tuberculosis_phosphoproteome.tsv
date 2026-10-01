@@ -1,0 +1,156 @@
+# Example: high-confidence phosphoproteins of a clinical Mycobacterium tuberculosis Beijing isolate (strain family Beijing, grown in vitro), top 150 proteins by phosphosite Andromeda score.
+# Source: Fortuin S, Tomazella GG, Nagaraj N, et al. (2015) Phosphoproteomics analysis of a clinical Mycobacterium tuberculosis Beijing isolate: expanding the mycobacterial phosphoproteome catalog. Front Microbiol 6:6. https://doi.org/10.3389/fmicb.2015.00006
+# Table1.XLSX, sheet "Table S1" (Europe PMC PMC4322841). Cutoff: the paper's own acceptance criteria for high-confidence localized phosphosites, localization probability >= 0.75 and PEP <= 0.01; 330 of 464 listed sites pass, on 216 proteins; the top 150 proteins by best site score are kept. Licensed CC BY (CC BY 4.0 under Frontiers); values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas Mycobacterium tuberculosis index, mapped from the table's Rv number or UniProt accession (unmapped rows keep the table's own name); uniprot = index accession; name_in_table / rv_number as given; phospho_sites = number of high-confidence sites on that protein; best_score = highest Andromeda score among them.
+# 109 of the 150 proteins map to the index (73%).
+protein	uniprot	name_in_table	rv_number	phospho_sites	best_score	mapped
+GarA		GarA	Rv1827	4	334.45	no
+Mce		Mce	Rv0175	1	328.55	no
+mmpL3	P9WJV5	mmpL3	Rv0206c	3	312.39	yes
+pknG	P9WI73	pknG	Rv0410c	5	301.8	yes
+grpE	P9WMT5	grpE	Rv0351	4	292.88	yes
+MT3294		MT3294	Rv3200c	2	237.09	no
+Rv0479c		Rv0479c	Rv0479c	1	215.36	no
+fba	P9WQA3	fba	Rv0363c	1	206.57	yes
+ftsQ	P9WNA1	ftsQ	Rv2151c	1	203.79	yes
+pknF	P9WI75	pknF	Rv1746	2	203.78	yes
+glmM	P9WN41	glmM	Rv3441c	1	203.26	yes
+groEL2	P9WPE7	groL2	Rv0440	3	200.19	yes
+secF	P9WGN9	secF	Rv2586c	2	198.14	yes
+fhaA	P71590	TB39.8	Rv0020c	12	193.3	yes
+Rv2536		Rv2536	Rv2536	5	185.9	no
+tatA	P9WGA1	tatA	Rv2094c	2	181.87	yes
+pknB	P9WI81	pknB	Rv0014c	3	179.79	yes
+dnaK	P9WMJ9	dnaK	Rv0350	4	176.25	yes
+clpB	P9WPD1	clpB	Rv0384c	1	172.6	yes
+MT0435		MT0435	Rv0421c	2	171.39	no
+carD	P9WJG3	CarD	Rv3583c	1	170.79	yes
+pspA	P9WHP5	Rv2744c 	Rv2744c 	4	170.28	yes
+Rv3604c		Rv3604c	Rv3604c	3	168.64	no
+mkl	P9WQL5	mkl	Rv0655	1	167.93	yes
+Rv2971	P9WQA5	Rv2971	Rv2971	2	166.6	yes
+Rv1747	O65934	Rv1747	Rv1747	10	164.03	yes
+Rv0497		Rv0497	Rv0497	2	162.43	no
+adk	P9WKF5	adk	Rv0733	2	161.04	yes
+MT1758 		MT1758 	Rv1719	1	160.91	no
+Rv0910		Rv0910	Rv0910	1	159.98	no
+Rv1422	P9WMU5	Rv1422	Rv1422	1	158.67	yes
+lsr2	P9WIP7	lsr2	Rv3597c	1	158.35	yes
+Rv0204c	I6Y748	MT0214	Rv0204c	1	153.87	yes
+pgmA	I6Y2G3	pgmA	Rv3068c	1	153.12	yes
+aph		aph	Rv3817	2	149.69	no
+rpmE	P9WHA1	rpmE	Rv1298	1	149.53	yes
+esxJ	P9WNJ9	esxJ	Rv1038c	2	147.09	yes
+ansP1		ansP1	Rv2127	1	143.86	no
+purT	P95197	purT	Rv0389	2	143.52	yes
+mmaA3	P0CH91	mmaA3	Rv0643c	1	142.93	yes
+Rv0538	O06404	Rv0538	Rv0538	2	142.91	yes
+Rv2197c		Rv2197c	Rv2197c	1	142.79	no
+gltA2	P9WPD5	gltA2	Rv0896	2	140.16	yes
+Irp10 		Irp10 	Rv3269	1	139.9	no
+espR	P9WJB7	espR	Rv3849	1	138.55	yes
+accD4	O53578	AccD4	Rv3799c	1	136.81	yes
+mviN	P9WJK3	 MviN	Rv3910	1	136.34	yes
+vapB49	P9WF15	vapB45	Rv3181c	2	136.34	yes
+clpP1	P9WPC5	clpP1	Rv2461c	2	136.26	yes
+Rv0178	O07422	MT0187	Rv0178	3	134.68	yes
+mmpS3		mmpS3	RV2198c	5	131.94	no
+MT0237		MT0237	Rv0227c	1	131.16	no
+pstP	P9WHW5	pstP	Rv0018	1	130.27	yes
+serA	P9WNX3	serA	Rv2996c	1	130.27	yes
+ahcY	P9WGV3	ahcY	Rv3248c	3	128.76	yes
+nuoJ	P95172	nuoJ	Rv3154	1	128.29	yes
+mmpS3		mmpS3	Rv2198c	3	127.32	no
+Rv0474	P9WMH9	Rv0474	Rv0474	1	127.18	yes
+glpX	P9WN21	glpX	Rv1099c	1	127.16	yes
+trxB1	L7N664	trx-2	Rv1471	1	126.84	yes
+espI	P9WJC5	espI	Rv3876	7	126.34	yes
+gmk	P9WKE9	gmk	Rv1389	1	125.5	yes
+TB9.4		TB9.4	Rv3208A	1	124.62	no
+ppiA	P9WHW3	ppiA	Rv0009	1	124.62	yes
+uvrD1	P9WMQ1	pcrA	Rv0949	1	123.29	yes
+Rv2694c	O07196	Rv2694c	Rv2694c	1	122.86	yes
+mas		mas	Rv2940c	1	121.5	no
+MT3183		MT3183	Rv3099c	2	120.92	no
+sodB	P9WGE7	sodB	Rv3846	1	120.9	yes
+Rv0250c		Rv0250c	Rv0250c	1	120.86	no
+rseA	L0T905	RseA	Rv1222	1	120.84	yes
+rpmC	P9WHA7	rpmC	Rv0709	1	120.63	yes
+ponA1	P71707	ponA1	Rv0050	1	120.32	yes
+Rv2731	I6XF60	MT2802	Rv2731	1	120.23	yes
+Rv2204c		Rv2204c	Rv2204c	1	119.47	no
+ppnK	P9WHV7	ppnK	Rv1695	1	119.39	yes
+pdtaR	P9WGM3	pdtaR	Rv1626	2	118.72	yes
+esxB	P9WNK5	esxB	Rv3874	5	118.71	yes
+prpC	I6Y9Q3	gltA1	Rv1131	1	118.67	yes
+Rv0500A		Rv0500A	Rv0500A	1	117.93	no
+Rv3005c	I6YAV3	MT3085	Rv3005c	1	117.37	yes
+pknA	P9WI83	pknA	Rv0015c	6	116.96	yes
+pknD	P9WI79	pknD	Rv0931c	3	116.45	yes
+rpoB		rpoB	Rv0667	1	115.78	no
+ftsY	P9WGD9	ftsY	Rv2921c	2	115.2	yes
+ask	P9WPX3	ask	Rv3709c	1	114.15	yes
+ssb	P9WGD5	ssb	Rv0054	1	114.02	yes
+pstC2	P9WG05	pstC2	Rv0929	2	112.47	yes
+fadD5	O07411	FadD5	Rv0166	1	112.42	yes
+MT2770		MT2770	Rv2696c	1	112.42	no
+Rv0569		Rv0569	Rv0569	1	112.24	no
+ppa	P9WI55	ppa	Rv3628	2	111.64	yes
+metE	P9WK07	metE	Rv1133c	1	110.8	yes
+xseB	P9WF29	xseB	Rv1107c	1	110.55	yes
+argG	P9WPW7	argG	Rv1658	1	109.83	yes
+Rv0007	P9WMA7	Rv0007	Rv0007	2	109.44	yes
+rplX	P9WHB7	rplX	Rv0715	1	109.08	yes
+Rv3197	O53343	Rv3197	Rv3197	1	107.25	yes
+sigM	O53590	 MviN	Rv3911	1	105.9	yes
+ppx2	P96374	MT1054	Rv1026	1	105.52	yes
+Rv0312	O07239	MT0326	Rv0312	4	104.84	yes
+lgt		lgt	Rv1614	1	104.18	no
+tuf	P9WNN1	tuf	Rv0685	1	103.66	yes
+pup	P9WHN5	pup	Rv2111c	2	103.02	yes
+wag31	P9WMU1	ag84	Rv2145c	1	102.16	yes
+Rv0566c		Rv0566c	Rv0566c	1	101.42	no
+ctpA	P9WPU1	ctpA	Rv0092	1	100.04	yes
+Rv0530		Rv0530	Rv0530	2	99.844	no
+Rv3179		Rv3179	Rv3179	1	99.752	no
+fbiC	P9WP77	fbiC	Rv1173	1	99.344	yes
+MT0136		MT0136	Rv0128	1	98.543	no
+groES	P9WPE5	groS	Rv3418c	1	97.163	yes
+infA	P9WKK3	infA	Rv3462c	1	96.946	yes
+groEL1	P9WPE9	groL1	Rv3417c	2	96.464	yes
+korB	O53181	Rv2454c	Rv2454c	1	96.379	yes
+eccD3	P9WNQ3	eccD3	Rv0290	1	96.229	yes
+coaE		coaE	Rv1631	1	95.996	no
+katG	P9WIE5	katG	Rv1908c	1	95.429	yes
+prfB	P9WHG1	prfB	Rv3105c	1	94.632	yes
+pknL	P9WI63	pknL	Rv2176	2	94.487	yes
+Rv0120c	P9WNM9	Rv0120c	Rv0120c	1	94.281	yes
+ilvG	P9WG39	ilvG	Rv1820	1	93.495	yes
+rpsC	P9WH37	rpsC	Rv0707	2	91.808	yes
+Rv3920c	O53598	MT4039	Rv3920c	1	91.238	yes
+ptpB	I6WXK4	ptbB	Rv0153c	1	90.861	yes
+mihF	P71658	MihF	Rv1388	2	90.385	yes
+Rv1111c 		Rv1111c 	Rv1111c 	1	90.084	no
+MT1521 		MT1521 	Rv1474c	1	88.282	no
+Rv2219		Rv2219	Rv2219	2	87.713	no
+eccA1	P9WPH9	eccA1	Rv3868	1	87.676	yes
+secE2	Q6MX43	secE2	Rv0379	2	87.429	yes
+rplC	P9WH87	rplC	Rv0701	1	87.149	yes
+ligB	P9WNV5	lig	Rv3062	1	86.944	yes
+cspB	I6WZM9	cspB	Rv0871	1	86.548	yes
+hupB	P9WMK7	hup	Rv2986c	3	85.737	yes
+Rv3131	P9WIZ7	RV3131	RV3131	2	85.576	yes
+MT3371		MT3371	Rv3271c	1	85.493	no
+ctaD	P9WP71	ctaD	Rv3043c	1	85.355	yes
+Rv0298		Rv0298	Rv0298	1	85.28	no
+fadD32	O53580	fadD32	Rv3801c	1	85.087	yes
+rsmH	P9WJP1	rsmH	Rv2165c	1	85.062	yes
+pks15	P96284	pks15	Rv2947c	1	84.365	yes
+Rv0633c		Rv0633c	Rv0633c	1	84.297	no
+MT0627		MT0627	Rv0597c	1	83.862	no
+ctaE	P9WP67	ctaE	Rv2193	2	83.758	yes
+Rv3127	P9WL07	Rv3127	Rv3127	1	83.692	yes
+acg	P9WIZ9	acg	Rv2032	1	83.53	yes
+aroG	O53512	aroG	Rv2178c	1	83.182	yes
+Rv3669		Rv3669	Rv3669	1	82.581	no
+Rv0849		Rv0849	Rv0849	1	82.449	no

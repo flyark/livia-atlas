@@ -1,0 +1,154 @@
+# Direct (cross-linked) client proteins of the Hsp70 chaperone Ssa1: His-tagged Ssa1 expressed in an ssa1-4 deletion strain (all four SSA genes deleted), purified from DSSO cross-linked yeast cells, cross-link mass spectrometry (XL-MS)
+# Nitika, Zheng B, Ruan L, et al. 2022. Comprehensive characterization of the Hsp70 interactome reveals novel client proteins and interactions mediated by posttranslational modifications. PLoS Biol 20(10):e3001839. https://doi.org/10.1371/journal.pbio.3001839
+# Source: pbio.3001839.s005.xlsx (S1 Table), sheet "XL Ssa1-client peptides" (https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3001839.s005&type=supplementary)
+# Cutoff: the paper's direct-interactor filter (cross-linked peptide pairs in which one peptide is Ssa1); 177 Ssa1-client cross-link rows (the paper's 177 inter-protein cross-links) on 147 client genes, all kept, one row per gene; "cross-links" = number of Ssa1-client rows for the gene in that sheet; "Position on Ssa1" = cross-linked Ssa1 residues as listed; bait added as row 1; "AI5," in the file is written AI5_BETA (its Name column)
+# Licensed CC0 1.0 (public domain dedication)
+gene	uniprot	cross-links	Position on Ssa1	role
+SSA1	P10591			bait
+TDH3	P00359	8	316;322;504;185;157;248	prey
+RPL20B	P0CX24	4	157;316	prey
+RPL31A	P0C2H8	3	157;316;185	prey
+HSP42	Q12329	3	157;185;316	prey
+SPP41	P38904	3	54;243;316	prey
+CIR1	P42940	2	316;157	prey
+RRB1	Q04225	2	325;185	prey
+MTW1	P39731	2	157	prey
+RPL19B	P0CX83	2	316	prey
+SIP5	P40210	2	248	prey
+BUD23	P25627	2	248;157	prey
+PDC2	P32896	2	325	prey
+ABP140	Q08641	2	185;354	prey
+YME1	P32795	2	316	prey
+MAK3	Q03503	2	185;86	prey
+STH1	P32597	2	521;523	prey
+YJR141W	P47172	2	157	prey
+TBS1	P38114	2	185;157	prey
+YPR137C-A		2	316;243	prey
+INP52	P50942	1	157	prey
+RPN6	Q12377	1	157	prey
+RPL24A	P04449	1	316	prey
+CAF20	P12962	1	316	prey
+HHT1	P61830	1	316	prey
+SPE2	P21182	1	157	prey
+MMT1	Q03218	1	536	prey
+PRP5	P21372	1	316	prey
+RPL21A	Q02753	1	316	prey
+SAP155	P43612	1	98	prey
+YFL034W	P43564	1	86	prey
+GTF1	P53260	1	325	prey
+AUS1	Q08409	1	421	prey
+CRP1	P38845	1	316	prey
+PRP42	Q03776	1	157	prey
+NOP15	P53927	1	54	prey
+MPS3	P47069	1	448	prey
+CCT8	P47079	1	316	prey
+TRM12	Q04235	1	316	prey
+SSE1	P32589	1	316	prey
+SSE2	P32590	1	54	prey
+HCA4	P20448	1	243	prey
+RPL17B	P46990	1	316	prey
+YOX1	P34161	1	185	prey
+ORC5	P50874	1	157	prey
+SMC1	P32908	1	316	prey
+AMS1	P22855	1	316	prey
+ERT1	P38140	1	316	prey
+BNI4	P53858	1	316	prey
+RPC82	P32349	1	185	prey
+SKI3	P17883	1	497	prey
+SIR4	P11978	1	455	prey
+MLP2		1	157	prey
+PIM1	P36775	1	325	prey
+CAF130	P53280	1	497	prey
+SYT1	Q06836	1	157	prey
+RPO31	P04051	1	509	prey
+TAF2	P23255	1	325	prey
+BUR2	Q05949	1	316	prey
+SPB4	P25808	1	157	prey
+PCL7	P40186	1	497	prey
+XBP1	P40489	1	354	prey
+CCH1		1	325	prey
+RTP1	Q12751	1	354	prey
+SGO1	Q08490	1	316	prey
+AIF1	P52923	1	157	prey
+SPT1/HIR2	P32480	1	547	prey
+CDC3	P32457	1	521	prey
+MPH1	P40562	1	157	prey
+SAP1	P39955	1	54	prey
+NDC80	P40460	1	86	prey
+STE11	P23561	1	316	prey
+HOP1	P20050	1	185	prey
+RPL9A	P05738	1	316	prey
+ECM16	Q04217	1	243	prey
+DRS1	P32892	1	536	prey
+MNN4	P36044	1	497	prey
+ULA1	Q12059	1	509	prey
+YOR1	P53049	1	322	prey
+NAB2	P32505	1	316	prey
+IOC3	P43596	1	185	prey
+HIR1	P32479	1	521	prey
+SKY1	Q03656	1	536	prey
+SNT1	P25357	1	325	prey
+ASR1	Q06834	1	455	prey
+FIN1	Q03898	1	455	prey
+ENP2	P48234	1	157	prey
+SPP1	Q03012	1	157	prey
+PAM18	Q07914	1	316	prey
+MOB2	P43563	1	455	prey
+TSL1	P38427	1	185	prey
+DIC1	Q06143	1	157	prey
+KEL1	P38853	1	547	prey
+IKI3	Q06706	1	455	prey
+MSA1	Q08471	1	248	prey
+NEJ1	Q06148	1	509	prey
+CWC22	P53333	1	316	prey
+UBP14	P38237	1	325	prey
+GSC2		1	157	prey
+RSM27	P53305	1	243	prey
+MPS1	P54199	1	547	prey
+POL5	P39985	1	584	prey
+SPT7	P35177	1	562	prey
+UGO1	Q03327	1	243	prey
+PMT4	P46971	1	54	prey
+EST1	P17214	1	316	prey
+HOF1	Q05080	1	157	prey
+IRA1		1	185	prey
+THP3	Q12049	1	185	prey
+RPA135	P22138	1	604	prey
+YBL028C	P38202	1	567	prey
+YHL018W	P38744	1	523	prey
+RCF1	Q03713	1	185	prey
+HST3	P53687	1	54	prey
+PEP1		1	243	prey
+MNN1	P39106	1	243	prey
+FMS1	P50264	1	243	prey
+YHL042W	P38729	1	584	prey
+RSM22	P36056	1	185	prey
+URA8	P38627	1	54	prey
+YDR514C	Q04408	1	325	prey
+APC1		1	455	prey
+SGN1	P40561	1	567	prey
+LRP1	P38801	1	243	prey
+YNR071C	P53757	1	243	prey
+MSH5	Q12175	1	528	prey
+ADE8	P04161	1	316	prey
+YKR075C	P36155	1	157	prey
+SPT23	P35210	1	54	prey
+SNU71	P53207	1	157	prey
+PXL1	P36166	1	455	prey
+BUD3		1	185	prey
+SSB1	P11484	1	342	prey
+YPR117W		1	354	prey
+YGL138C	P53122	1	86	prey
+YJR084W	P47130	1	316	prey
+YDL085C-A	Q3E7B7	1	316	prey
+YNL040W	P53960	1	455	prey
+YDL186W	P48568	1	455	prey
+YGR153W	P48238	1	316	prey
+YDR306C	Q06640	1	185	prey
+YPL216W	Q08964	1	157	prey
+AI5_BETA	Q9ZZX0	1	273	prey
+YPL060C		1	325	prey
+SKG3	Q06315	1	185	prey
+YCL002C	P25565	1	86	prey
+YOR114W	Q12219	1	157	prey
+YLR126C	Q12288	1	497	prey

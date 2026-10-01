@@ -1,0 +1,40 @@
+# Example: soybean leaf phosphoproteins (cv. Daewon) whose phosphosite intensity changed across control, abscisic acid, ethylene and combined ABA+ethylene treatments (phosphopeptide LC-MS/MS, MaxQuant/Perseus ANOVA).
+# Source: Gupta R, Min CW, Meng Q, et al. (2018) Phosphoproteome data from abscisic acid and ethylene treated Glycine max leaves. Data Brief 20:516-520. https://doi.org/10.1016/j.dib.2018.08.037
+# Supplementary Table 1 (mmc2.xlsx, "Perseus export table"): 40 phosphosites flagged "+" in the published "ANOVA Significant" column (threshold not stated in the article), collapsed to 36 proteins (first listed protein ID); significant_sites = number of flagged sites per protein. Licensed CC BY 4.0; values as published; protein = UniProt accession of the matching Atlas index entry (mapped from the published ID; unmatched rows keep the published ID); paper_id = identifier as published.
+protein	significant_sites	paper_id
+Glyma.08G034300.2.p	1	Glyma.08G034300.2.p
+I1JJ05	1	Glyma.02G282500.1.p
+I1NGK8	1	Glyma.20G150900.1.p
+A0A0R0H3J2	1	Glyma.13G312300.2.p
+I1J9X8	1	Glyma.01G211200.2.p
+I1JFE9	1	Glyma.02G151400.6.p
+Glyma.14G018300.3.p	1	Glyma.14G018300.3.p
+I1LPL0	1	Glyma.12G028300.2.p
+I1LU69	1	Glyma.12G194800.3.p
+Glyma.16G040300.2.p	1	Glyma.16G040300.2.p
+A0A0R4J654	1	Glyma.20G111200.1.p
+I1LLN3	1	Glyma.11G169700.2.p
+I1J9V8	1	Glyma.01G209200.1.p
+I1N8U1	1	Glyma.19G132200.5.p
+K7KHW0	1	Glyma.04G033500.1.p
+Glyma.04G156200.1.p	1	Glyma.04G156200.1.p
+I1KRM9	2	Glyma.08G091000.1.p
+Glyma.06G037000.1.p	1	Glyma.06G037000.1.p
+I1KSL3	1	Glyma.08G122700.2.p
+I1N0S5	1	Glyma.18G101400.2.p
+Glyma.10G147400.3.p	1	Glyma.10G147400.3.p
+K7LLJ2	1	Glyma.10G263700.3.p
+I1LR23	1	Glyma.12G074100.6.p
+K7MGJ3	1	Glyma.16G096600.2.p
+I1MU67	1	Glyma.17G112500.2.p
+Glyma.07G086900.1.p	1	Glyma.07G086900.1.p
+I1KLM0	3	Glyma.07G198600.2.p
+C6SWL2	1	Glyma.07G019400.3.p
+Glyma.09G018600.1.p	1	Glyma.09G018600.1.p
+Glyma.20G177200.2.p	1	Glyma.20G177200.2.p
+Glyma.15G124700.1.p	1	Glyma.15G124700.1.p
+I1LBS6	1	Glyma.10G168100.1.p
+I1KV23	2	Glyma.08G201300.2.p
+I1LI79	1	Glyma.11G082700.1.p
+K7K3E3	1	Glyma.01G121400.3.p
+I1JTQ3	1	Glyma.04G044900.1.p

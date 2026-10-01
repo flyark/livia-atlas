@@ -1,0 +1,56 @@
+# Gene deletions that expand rDNA arrays in S. pombe: imaging screen of the Bioneer haploid deletion collection with the rDNA marker GapR-GFP; strains with high rDNA volume and high mean GFP intensity (above the wild-type threshold) in both the initial screen and the validation screen
+# Cockrell AJ, Lange JJ, Wood C, Mattingly M, McCroskey SM, Bradford WD, Conkright-Fincham J, Weems L, Guo MS, Gerton JL. 2024. Regulators of rDNA array morphology in fission yeast. PLoS Genet 20:e1011331. https://doi.org/10.1371/journal.pgen.1011331
+# Source: pgen.1011331.s019.csv (S3 Table, rDNA quantification ratios and hits from the validation rDNA imaging screen) (https://journals.plos.org/plosgenetics/article/file?id=10.1371/journal.pgen.1011331.s019&type=supplementary)
+# Cutoff: the paper's hit calls: rdna_volume and GFP_intensity both "high" in the initial screen (123 "high" hits, all retested) and again in the validation screen; 50 deletions pass (of 66 validation-screen strains with both calls high, which include ribosomal-protein deletions added only at validation); sorted by median rDNA volume in the validation screen
+# Licensed CC BY 4.0
+gene	uniprot	median_rdna_volume_valid	median_GFP_intensity_valid	gene_id
+pxr1	Q9URX9	0.492	1.011	SPAC890.05
+tif310		0.4906	1.015	SPAC3A12.13c
+tma23		0.4795	0.9848	SPAC1952.02
+dhm1		0.4784	1.014	SPCP1E11.10
+abz2		0.4783	1.013	SPBC19G7.02
+syo2	Q9P7W7	0.4775	0.9923	SPBC1703.03c
+ade10	O74928	0.475	1.06	SPCPB16A4.03c
+hit1		0.4727	1	SPAC4F10.19c
+rsa1		0.4711	0.9988	SPBC16C6.03c
+rpl3801	Q9USR7	0.4706	0.9861	SPBC577.02
+rrp7	O94683	0.4654	1	SPBC776.17
+nop52		0.4651	1.016	SPBC9B6.07
+ccr4	O74874	0.4649	0.9771	SPCC31H12.08c
+gly1	O13940	0.4638	1.048	SPAC23H3.09c
+vac7	O94262	0.4631	1	SPBP8B7.13
+rpl1902	O42699	0.4583	0.9801	SPCC1682.14
+rpl1202	P0CT84	0.4567	1.02	SPCC31H12.04c
+ppk26	Q9UST1	0.4564	0.9985	SPBC336.14c
+pom1	Q09690	0.4563	1.024	SPAC2F7.03c
+scd2	P40996	0.4563	1.014	SPAC22H10.07
+clp1	Q10299	0.4548	1.016	SPAC1782.09c
+gpa2	Q04665	0.4545	1.029	SPAC23H3.13c
+rpl2301	P0CT60	0.4545	1.018	SPAC3G9.03
+rpl2102	O42706	0.4539	0.9773	SPAC959.08
+efc25	Q9USU1	0.4537	1.011	SPBC336.03
+rpl2002	P0CT69	0.4521	1.002	SPAC26A3.04
+rpl1702	O59794	0.4519	1.046	SPCC364.03
+bud20	Q9P370	0.4516	1	SPAC19B12.11c
+rpl3702	P05733	0.4511	0.9957	SPCC1223.05c
+wee1	P07527	0.45	1.017	SPCC18B5.03
+meu22	O60170	0.4491	0.9865	SPBC19F8.06c
+bqt3	O74510	0.4486	0.989	SPCC594.07c
+rrp16	Q9UUI4	0.4478	0.9974	SPAC22F8.09
+SPAC8F11.08c	Q9UT29	0.4476	1	SPAC8F11.08c
+cdc73	Q9UUE7	0.4467	0.9936	SPBC17G9.02c
+pal1	Q9UU83	0.4451	0.9923	SPCP1E11.04c
+nab2	O13713	0.4432	0.9945	SPAC14C4.06c
+btf3	Q92371	0.4425	1.023	SPAC4F10.14c
+abc1	Q92337	0.4424	1.043	SPBC2D10.18
+rpp102	P17477	0.4409	1.019	SPBC3B9.13c
+rpl2401	Q92354	0.4407	1.011	SPAC6G9.09c
+rpl1601	O42991	0.4406	1.015	SPBC839.13c
+rpa34	Q9USZ4	0.4398	1.029	SPBC11G11.05
+snz1	O14027	0.4396	1.021	SPAC29B12.04
+elp5	O94495	0.4392	0.9914	SPBC18E5.05c
+met16	Q10270	0.4385	1	SPAC13G7.06
+rpp103	Q9UU78	0.438	1.017	SPCP1E11.09c
+mtq2	Q9UT94	0.4377	1.036	SPAC323.05c
+cph1		0.4375	1.009	SPAC16C9.05
+SPBC16G5.17	O60131	0.4366	0.9672	SPBC16G5.17

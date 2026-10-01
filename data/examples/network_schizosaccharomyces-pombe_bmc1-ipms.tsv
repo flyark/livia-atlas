@@ -1,0 +1,55 @@
+# Proteins co-immunoprecipitated with protein A-tagged Bmc1 (methyl phosphate capping enzyme, Bin3/MePCE homolog) from S. pombe extracts; mass spectrometry, two biological replicates vs untagged control IPs
+# Porat J, El Baidouri M, Grigull J, Deragon JM, Bayfield MA. 2022. The methyl phosphate capping enzyme Bmc1/Bin3 is a stable component of the fission yeast telomerase holoenzyme. Nat Commun 13:1277. https://doi.org/10.1038/s41467-022-28985-3
+# Source: 41467_2022_28985_MOESM5_ESM.xlsx (Supplementary Data 2), sheet "Supplementary Table 2" (https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-022-28985-3/MediaObjects/41467_2022_28985_MOESM5_ESM.xlsx)
+# Cutoff: the paper's criterion (present in both biological replicate IPs, absent from control IPs, ranked by peak intensity); the table lists 49 proteins including the bait Bmc1, all kept; "IP with benzonase?" as published (nucleic acid dependence)
+# Licensed CC BY 4.0
+gene	uniprot	Intensity	IP with benzonase?	role
+Bmc1	Q9Y7L2	15623000000	Yes	bait
+Pof8	O13795	34644000000	Yes	prey
+SPCC18B5.09c		13042000000	Yes	prey
+Lsm8	O74483	8573300000	No	prey
+Lsm7	O74499	4781900000	Yes	prey
+Lsm2	O94408	4450600000	No	prey
+Lsm6	Q9UUI1	2994600000	No	prey
+Lsm5	O42978	2450100000	Yes	prey
+Ths1	P87144	1645900000	Yes	prey
+Pop100	Q9UTA4	1443400000	No	prey
+SPBC713.04c	Q9C1X1	1377800000	No	prey
+Vgl1	O59810	1318200000	Yes	prey
+Prp24	Q9USY2	1171200000	No	prey
+Grs1	Q10179	788330000	Yes	prey
+Smb1	Q10163	780790000	No	prey
+Prp12	Q9UTT2	779920000	No	prey
+Tom70	O14217	617950000	Yes	prey
+Byr3	P36627	617170000	Yes	prey
+Trt1	O13339	531540000	No	prey
+Brx1	Q9HGL6	530210000	Yes	prey
+Erb1	O74399	515200000	No	prey
+Acl2	O13907	510340000	Yes	prey
+Elf1	O14134	466200000	Yes	prey
+Atp2	P22068	438430000	Yes	prey
+Smf1	O59734	419420000	Yes	prey
+Tuf1	Q9Y700	416640000	Yes	prey
+Def1	O43024	413550000	Yes	prey
+Nxt3	O94260	407370000	Yes	prey
+Prp19	O14011	390660000	No	prey
+Cpy1	O13849	353490000	Yes	prey
+Nop12	O13741	334980000	No	prey
+Eca39	O14370	328020000	Yes	prey
+Dip2	P87177	324050000	No	prey
+Top1	P07799	317390000	Yes	prey
+Pro2	O13810	312310000	Yes	prey
+Nop16	Q9Y7Z1	299160000	No	prey
+Tif45	P78954	291700000	Yes	prey
+Utp7	Q9P4X3	274100000	No	prey
+Cct7	P87153	272890000	Yes	prey
+Est1	O74804	264770000	No	prey
+Hob3	Q9UUM7	260060000	Yes	prey
+SPCC1827.05c	O74978	250880000	No	prey
+Spp27	O74503	244870000	No	prey
+Nop4	O74400	231150000	No	prey
+Lrs1	Q10490	229600000	Yes	prey
+Spp42		224520000	Yes	prey
+Pol5	O60094	219650000	No	prey
+Wrd74	O94698	219360000	No	prey
+Tif255	P56287	210940000	Yes	prey

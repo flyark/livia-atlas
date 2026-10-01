@@ -1,0 +1,55 @@
+# Example: FAMA interaction candidates from TurboID proximity labeling in Arabidopsis seedlings expressing FAMApro::FAMA-TbID-Venus (FAMA is a transcription factor in young guard cells), plus the bait.
+# Source: Mair A, Xu SL, Branon TC, et al. (2019) Proximity labeling of protein complexes and cell-type-specific organellar proteomes in Arabidopsis enabled by TurboID. eLife 8:e47864. https://doi.org/10.7554/eLife.47864
+# Source: elife-47864-supp2-v3.xlsx (Supplementary file 2), sheet "FAMA complex candidates" (Table 4) (https://cdn.elifesciences.org/articles/47864/elife-47864-supp2-v3.xlsx)
+# Cutoff: the paper's FAMA interaction candidates (enriched in FAMA-TbID vs. WT and vs. nuclear TbID control, Perseus t-tests, and enriched over time after biotin); all 47 candidates kept; bait FAMA (AT3G24140) added as row 1; group = the paper's curated molecular function
+# Licensed CC BY 4.0
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+protein	role	name	function	enriched_at	uniprot
+AT3G24140	bait	FAMA	bHLH transcription factor		Q56YJ8
+AT3G26744	prey	ICE1, SCRM	bHLH transcription factor	0.5h,3h	Q9LSE2
+AT2G46510	prey	AIB, JAM1	bHLH transcription factor	0.5h,3h	Q9ZPY8
+AT4G16430	prey	JAM3	bHLH transcription factor	3h	O23487
+AT5G08130	prey	BIM1	bHLH transcription factor	3h	Q9LEZ3
+AT1G75080	prey	BZR1	transcription factor	3h	Q8S307
+AT5G11060	prey	KNAT4	homeobox transcription factor	0.5h,3h	P48001
+AT2G41900	prey	OXS2,TCF7	zinc finger transcription factor	3h	P93755
+AT1G79000	prey	HAC1, PCAT2	transcriptional co-activator (histone acetyltransferase)	3h	
+AT4G04920	prey	MED16, SFR6	transcriptional co-activator (mediator complex)	3h	F4JGZ1
+AT1G43850	prey	SEU	transcriptional co-repressor adapter	3h	Q8W234
+AT4G32551	prey	LUG, RON2	transcriptional co-repressor	3h	Q9FUY2
+AT2G32700	prey	LUH, MUM1	transcriptional co-repressor	3h	O48847
+AT3G15880	prey	TPR4, WSIP2	transcriptional co-repressor	3h	Q27GK7
+AT5G27030	prey	TPR3	transcriptional co-repressor	3h	Q84JM4
+AT5G02500	prey	HSP70-1, HSC70-1	HSP70 chaperone	3h	P22953
+AT5G02490	prey	HSP70-2	HSP70 chaperone	0.5h,3h	P22954
+AT3G09440	prey	HSP70-3	HSP70 chaperone	3h	O65719
+AT3G12580	prey	HSP70-4, HSC70-4	HSP70 chaperone	3h	Q9LHA8
+AT5G22060	prey	J2	HSP70 co-chaperone	3h	P42825
+AT3G44110	prey	J3	HSP70 co-chaperone	3h	Q94AW8
+AT1G62740	prey	HOP2	HSP90/70 co-chaperone	3h	Q5XEP2
+AT3G25230	prey	FKBP62, ROF1	HSP90/70 co-chaperone	3h	Q38931
+AT4G22670	prey	HIP1, TPR11	HSP90/70 co-chaperone	3h	Q93YR3
+AT4G02450	prey	P23-1	HSP90 co-chaperone	0h,0.5h,3h	Q8L7U4
+AT5G56460	prey		putative protein kinase	0h,0.5h,3h	
+AT5G35410	prey	SOS2, CIPK24	protein kinase	3h	Q9LDI3
+AT3G54170	prey	FIP37	m6A methyltransferase complex component	3h	Q9ZSZ8
+AT1G02140	prey	HAP1, MAGO	exon-junction complex component	3h	O23676
+AT5G41880	prey	POLA3, POLA4	putative DNA polymerase alpha subunit	3h	F4JZZ1
+AT3G22380	prey	TIC	nuclear clock regulation factor	3h	
+AT2G41100	prey	TCH3, CAL12	calcium-binding protein	3h	P25071
+AT1G72390	prey	PHL	nuclear receptor/co-activator	3h	F4IDB2
+AT1G20110	prey	FREE1, FYVE1	ESCRT-I complex component	0.5h,3h	Q9ASS2
+AT1G18660	prey	IAP1	C3HC4-type RING-finger domain protein	3h	F4ICB5
+AT1G12200	prey	FMO	putative flavin monooxygenase	0h,0.5h,3h	Q9FWW9
+AT3G53260	prey	PAL2	phenylalanine ammonia-lyase	0.5h,3h	P45724
+AT3G23840	prey	CER26-LIKE	acyl‐CoA‐dependent acyltransferase	3h	Q9LIS1
+AT5G13710	prey	CPH, SMT1	C‐24 sterol methyl transferase	3h	Q9LM02
+AT1G63180	prey	UGE3	UDP-Glucose 4-Epimerase	3h	Q8LDN8
+AT5G17990	prey	PAT1, TRP1	phosphoribosylanthranilate transferase	3h	Q02166
+AT1G15980	prey	NDH48, NDF1	chloroplast NAD(P)H dehydrogenase complex subunit	3h	Q9S9N6
+AT4G30720	prey	PDE327	putative oxidoreductase/electron carrier	3h	
+AT1G50570	prey		undescribed protein	3h	Q9LPS7
+AT1G30070	prey		undescribed protein	3h	F4I4Q9
+AT5G15680	prey		undescribed protein	3h	
+AT5G53330	prey		undescribed protein	3h	
+AT4G25290	prey		undescribed protein	3h	F4JSJ6

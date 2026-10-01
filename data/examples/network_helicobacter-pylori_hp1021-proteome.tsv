@@ -1,0 +1,86 @@
+# Example: Helicobacter pylori N6 proteins whose level changes in a HP1021 deletion mutant compared with the wild type under microaerobic conditions (LC-MS/MS arm of the multi-omics HP1021 regulon study).
+# Source: Noszka M, Strzalka A, Muraszko J, Kolenda R, Meng C, Ludwig C, Stingl K, Zawilak-Pawlik A. (2023) Profiling of the Helicobacter pylori redox switch HP1021 regulon using a multi-omics approach. Nat Commun 14:6715. https://doi.org/10.1038/s41467-023-42364-6
+# Supplementary Data 2 (41467_2023_42364_MOESM5_ESM.xlsx), sheet "log2FC", LC-MS/MS column dHP1021-WT. Cutoff: a value is reported only for a significant change at FDR <= 0.05 (the sheet legend), and the paper counts a protein as differentially expressed at |log2FC| >= 1; 80 of 1506 listed genes pass and all are kept. Licensed CC BY 4.0; values as published.
+# Columns: protein = gene symbol in the LIVIA Atlas Helicobacter pylori 26695 index, mapped from the table's old locus tag or gene name (unmapped rows keep the old locus tag); uniprot = index accession; old_locus_tag / gene_in_table / product / COG as given; log2FC_dHP1021_vs_WT = the table's LC-MS/MS log2 fold change.
+# 66 of 80 proteins map to the index (82%).
+protein	uniprot	old_locus_tag	gene_in_table	product	log2FC_dHP1021_vs_WT	COG	mapped
+HP_0013	O24858	HP0013	norA	MnmA/TRMU family protein	-1.30893444048714	J	yes
+HP0018		HP0018		COG3014 family protein	-1.13720996826693	S	no
+HP_0025	O24870	HP0025	labA	Hop family adhesin LabA	-1.69960353573913	N	yes
+ureB	P69996	HP0072	ureB	urease subunit beta	1.1629042623924	E	yes
+ureA	P14916	HP0073	ureA	urease subunit alpha	1.17382926463494	E	yes
+HP_0096	O24922	HP0096		D-2-hydroxyacid dehydrogenase	-1.32371627396225	C	yes
+HP0097		HP0097		hypothetical protein	1.05000171348412		no
+HP_0119	O24938	HP0119		DUF874 family protein	1.1651218109128	S	yes
+sdaA	P56072	HP0132		L-serine ammonia-lyase	-1.23419946415357	E	yes
+HP0209		HP0209	hofA	outer membrane beta-barrel protein HofA	-1.3907138332619		no
+HP0219		HP0219		helix-turn-helix domain containing protein	2.16315180141929		no
+HP_0229	O25015	HP0229	hopA	Hop family outer membrane protein HopA	2.29196074910418	N	yes
+HP_0298	O25069	HP0298		ABC transporter substrate-binding protein	-4.08486775241817	E	yes
+HP_0300	O25071	HP0300		ABC transporter permease	-1.27628118460819	P	yes
+HP_0301	O25072	HP0301		ABC transporter ATP-binding protein	-1.17842547893948	P	yes
+HP_0302	O25073	HP0302		ATP-binding cassette domain-containing protein	-1.52047709807672	P	yes
+obg	O25074	HP0303	obgE	GTPase ObgE	-1.10747565128015	S	yes
+HP_0304	O25075	HP0304		alginate lyase family protein	-1.43891037494667	M	yes
+HP_0309	O25079	HP0309		carbon-nitrogen hydrolase family protein	-2.29619358120061	S	yes
+HP0310		HP0310		polysaccharide deacetylase	-1.49243111267381	G	no
+HP_0312	O25082	HP0312		GTP-binding protein	-1.31777484671055	S	yes
+HP_0377	O25140	HP0377		thioredoxin fold domain-containing protein	1.20311908400114	O	yes
+HP0529		HP0529	cagW	cag pathogenicity island VirB6 family T4SSprotein CagW	1.49819072256156		no
+apt	O25296	HP0572	apt	adenine phosphoribosyltransferase	1.46601283484539	F	yes
+HP0573		HP0573		hypothetical protein	1.41270097355789	-	no
+HP0574		HP0574	rpiB	ribose 5-phosphate isomerase B	1.88058163405389	G	no
+lepB	O25300	HP0576	lepB	signal peptidase I	1.42297534129853	U	yes
+folD	P56467	HP0577	folD	bifunctional methylenetetrahydrofolatedehydrogenase/methenyltetrahydrofolate cyclohydrolaseFolD	1.50163067763456	F	yes
+HP_0578	O25301	HP0578		LTA synthase family protein	2.34757459714429	M	yes
+HP_0580	O25303	HP0580		3-deoxy-d-manno-octulosonic acid hydrolasesubunit 2	1.41045009168093	G	yes
+pyrC	O25045	HP0581	pyrC	dihydroorotase	1.41187390962175	F	yes
+HP_0582	O25304	HP0582		energy transducer TonB	1.32724596866146	M	yes
+HP_0583	O25305	HP0583		hypothetical protein	1.68915001925437		yes
+nth	O25307	HP0585	nth	endonuclease III	3.1477812758264	L	yes
+HP_0586	O25308	HP0586		DUF3971 domain-containing protein	1.94937301504264	M	yes
+mltG	O25309	HP0587	mltG	endolytic transglycosylase MltG	1.98445910306069	S	yes
+HP0596		HP0596		tumor necrosis factor alpha-inducing protein	1.79842884025901		no
+HP_0597	O25319	HP0597		penicillin-binding protein	1.44811084485621	M	yes
+HP_0598	O25320	HP0598		pyridoxal phosphate-dependent aminotransferasefamily protein	2.1448046835593	E	yes
+HP_0599	O25321	HP0599		chemotaxis chemoreceptor TlpD	1.65281240910337	N	yes
+HP_0609	O25330	HP0609		vacuolating cytotoxin domain-containing protein	-1.23158590619775	D	yes
+HP_0642	G5EB01	HP0642		NAD(P)H-dependent flavin oxidoreductase FrxA	-1.28831033186767	C	yes
+ftnA	P52093	HP0653	pfr	ferritin	1.54861047493596	P	yes
+HP_0690	O25399	HP0690		acetyl-CoA C-acetyltransferase	-3.33140295452703	I	yes
+scoA	P56006	HP0691		succinyl-CoA--3-ketoacid CoA transferase subunitA	-3.50922100476434	I	yes
+scoB	P56007	HP0692		succinyl-CoA--3-ketoacid CoA transferase subunitB	-3.23393900065445	I	yes
+HP_0695	O25402	HP0695		hydantoinase/oxoprolinase family protein	-8.18732120033049	E	yes
+HP_0696	O25403	HP0696		hydantoinase B/oxoprolinase family protein	-8.2333152044771	E	yes
+HP_0697	O25404	HP0697		acetone carboxylase subunit gamma	-9.07362450574019	Q	yes
+HP0709		HP0709		S-adenosyl-l-methionine hydroxideadenosyltransferase family protein	-1.09009282452239	S	no
+HP_0710	O25414	HP0710		hypothetical protein	-1.26807666347504	S	yes
+HP_0711	O25415	HP0711		HD family hydrolase	2.70366696385304	S	yes
+HP_0745	O25441	HP0745		RluA family pseudouridine synthase	-1.47951383377469	J	yes
+HP0805		HP0805		glycosyltransferase family 25 protein	1.36892961617729	M	no
+HP_0806	O25486	HP0806		M48 family metallopeptidase	1.17386260095415	S	yes
+HP_0810	O25490	HP0810	rsmD	16S rRNA (guanine(966)-N(2))-methyltransferaseRsmD	2.72023008799923	L	yes
+thiM	O25516	HP0845	thiM	hydroxyethylthiazole kinase	1.60357660708852	H	yes
+HP_0874	O25542	HP0874	kapA	twin-arginine translocation signaldomain-containing protein kapA	-1.33551062587109	E	yes
+katA	P77872	HP0875	katA	catalase katA	-1.12892433981597	C	yes
+HP_0876	O25543	HP0876	frpb1	TonB-dependent receptor	-1.8417264277307	P	yes
+HP0941		HP0941	alr	alanine racemase	-1.14650411341146	E	no
+dadA	O25597	HP0943		FAD-binding oxidoreductase	-6.80552181368901	C	yes
+HP_0944	O25598	HP0944		RidA family protein	-5.2174789038196	J	yes
+HP_1021	O25665	HP1021		OriC activity response regulator	-3.61143666548767	T	yes
+HP1083		HP1083	hofB	outer membrane beta-barrel protein HofB	4.19365213644376		no
+HP_1104	O25732	HP1104		NAD(P)-dependent alcohol dehydrogenase	-1.12938898518787	C	yes
+HP_1177	O25791	HP1177	hopQ	Hop family adhesin HopQ	1.26355967112869	N	yes
+deoD	P56463	HP1178	deoD	purine-nucleoside phosphorylase	1.48748051169132	F	yes
+HP1179		HP1179		phosphopentomutase	1.45537591044176	F	no
+HP_1182	O25794	HP1182		tRNA 2-thiocytidine(32) synthetase TtcA	-1.73141810116407	H	yes
+HP_1186	O25798	HP1186		carbonic anhydrase	-1.61907274198225	P	yes
+HP_1187	O25799	HP1187		DUF874 family protein	1.9754205037648	M	yes
+amiF	O25836	HP1238		formamidase amiF	3.04217628457417	S	yes
+HP_1398	O25948	HP1398		alanine dehydrogenase	-4.0519822339473	C	yes
+HP_1399	O25949	HP1399	rocF	arginase	4.35337498954516	E	yes
+HP_1400	O25950	HP1400	fecA3	TonB-dependent receptor family protein	2.19152243884681	P	yes
+HP_1453	O25992	HP1453		outer membrane beta-barrel protein	1.31316675883971	S	yes
+HP_1504	O26034	HP1504		tRNA1(Val) (adenine(37)-N6)-methyltransferase	-1.47903268445564	S	yes
+HP_1564	O26084	HP1564		MetQ/NlpA family ABC transportersubstrate-binding protein	-1.44265073912991	P	yes
+HP_1580	O26100	HP1580	lpxF	lipid A 4'-phosphatase	-1.70269984646471	I	yes

@@ -1,0 +1,135 @@
+# TurboID proximity labeling of Rtf2 (rtf2-3HA-TurboID vs untagged rtf2+ control) in S. pombe cells synchronized in S phase; proteins significantly enriched over the control (positive Welch's t-test difference)
+# Budden AM, Eravci M, Watson AT, Campillo-Funollet E, Oliver AW, Naiman K, Carr AM. 2023. Schizosaccharomyces pombe Rtf2 is important for replication fork barrier activity of RTS1 via splicing of Rtf1. eLife 12:e78554. https://doi.org/10.7554/eLife.78554
+# Source: elife-78554-supp1-v2.xlsx (Supplementary file 1, List of significant Mass spec. hits), sheet "S Phase" (https://cdn.elifesciences.org/articles/78554/elife-78554-supp1-v2.xlsx)
+# Cutoff: the paper's significant hits (Perseus Welch's t-test, rtf2-TurboID vs control, LFQ intensities); the sheet lists 131 proteins; the 2 with a negative difference (depleted) are left out; 129 kept, including the bait Rtf2; sorted by Welch's t-test difference
+# Licensed CC BY 4.0
+gene	uniprot	Welch's T-test Difference	-Log Welch's T-test p-value	role
+rtf2	Q10154	8.641	2.993	bait
+cwf4	P87312	10.31	2.72	prey
+nup124	Q09904	8.212	2.696	prey
+prp22	O42643	8.11	5.505	prey
+SPAC1B3.09c	O13874	8.084	2.582	prey
+dus3		8.07	2.374	prey
+kri1	Q09799	7.858	2.471	prey
+nop14	O43051	7.698	3.01	prey
+spe1	Q9UQW9	7.605	2.765	prey
+SPCC1906.02c	O74485	7.42	3.041	prey
+ppk23	O60145	7.394	1.764	prey
+ercc3	O13768	7.338	6.176	prey
+spt5	O13936	7.233	3.172	prey
+cdc28	Q10752	6.926	2.61	prey
+leu1	P18869	6.799	3.327	prey
+nup85	Q9UUE5	6.704	2.014	prey
+pst1		6.46	3.978	prey
+cdc17	P12000	6.375	2.45	prey
+prp45	Q09882	6.286	2.473	prey
+SPCP31B10.05	Q9USG9	6.215	1.954	prey
+SPAC57A7.06	P87137	6.173	2.663	prey
+nop58	Q9P7S7	5.885	2.659	prey
+npp106	O14310	5.726	2.424	prey
+cdc5	P39964	5.667	2.928	prey
+ekc1	O74511	5.61	2.757	prey
+SPAPB24D3.08c	Q9C0Y6	5.601	3.006	prey
+cwf22	Q9P6R9	5.579	2.426	prey
+nsp1	Q10168	5.49	2.584	prey
+SPAC644.16	Q9P6P7	5.479	4.275	prey
+nop56	O94514	5.445	2.208	prey
+nup61	Q9USL4	5.395	3.613	prey
+sap1	P40847	5.277	1.835	prey
+meu14	O94756	5.271	1.978	prey
+ash2	O60070	5.261	2.954	prey
+cwf15	P78794	5.258	3.435	prey
+cct3	O74341	5.213	3.125	prey
+SPAC5H10.10		5.104	2.438	prey
+sir2	O94640	5.081	1.423	prey
+SPBC13E7.08c	Q9P6R2	4.986	2.74	prey
+SPBC409.17c		4.903	3.444	prey
+cwf2	P87126	4.851	2.504	prey
+spn2	Q09116	4.765	2.954	prey
+cwf3	Q9P7R9	4.739	2.638	prey
+yth1	Q9UTD1	4.731	2.738	prey
+rpn3	O42897	4.724	2.486	prey
+SPAC2G11.14	Q09813	4.712	2.131	prey
+sap145	Q9UUI3	4.711	3.156	prey
+esf1	O74828	4.687	3.93	prey
+spt20	O14174	4.493	1.761	prey
+tfg1	O94416	4.438	1.953	prey
+prp39	O74970	4.435	1.67	prey
+srp2	P78814	4.429	3.325	prey
+snu66	O94538	4.383	3.39	prey
+acs1	P78773	4.377	3.273	prey
+fma1	O59730	4.363	2.427	prey
+nup44	O42963	4.347	4.445	prey
+clr6	O59702	4.334	3.007	prey
+csn1	O94308	4.264	1.947	prey
+imp1	O74800	4.24	2.839	prey
+nog2	O14236	4.084	1.675	prey
+cct2	Q10147	4.075	3.908	prey
+usp107	Q8WZK0	4.075	4.19	prey
+SPBC1711.05	Q9P785	4.042	1.854	prey
+brx1	Q9HGL6	4.032	2.223	prey
+crm1	P14068	4.01	2.24	prey
+cwf21	O14161	3.985	4.094	prey
+sla1	O13736	3.981	3.263	prey
+seb1	Q9UTE3	3.979	2.002	prey
+mmi1	O74958	3.974	4.992	prey
+SPAC1071.09c		3.925	3.164	prey
+SPAC20G8.09c	P87115	3.869	1.88	prey
+SPAC3H8.07c	Q10143	3.847	2.216	prey
+cyp8	Q09928	3.763	3.386	prey
+sgd1	O13971	3.751	2.582	prey
+SPAC5H10.03	Q09676	3.74	2.39	prey
+gcd10	Q9HGL4	3.701	3.173	prey
+sid2	Q09898	3.669	1.777	prey
+SPAC26H5.04	O13986	3.501	1.771	prey
+noc3	O94288	3.461	1.48	prey
+prp19	O14011	3.457	2.683	prey
+tup12	Q9UUG8	3.415	1.767	prey
+cft2	O74740	3.408	2.445	prey
+brl2	O74563	3.374	3.128	prey
+nop16	Q9Y7Z1	3.297	3.436	prey
+cwf17	O94620	3.271	2.482	prey
+pho2	Q00472	3.256	1.535	prey
+brr2		3.22	1.973	prey
+prp16	Q9P774	3.143	1.448	prey
+fes1	O43030	3.113	2.402	prey
+SPCP25A2.03	Q9URT2	3.038	3.128	prey
+bis1	O59793	2.993	2.823	prey
+hrp1	Q9US25	2.959	4.425	prey
+pob3	O94529	2.958	1.41	prey
+cwf24	Q9P6R8	2.911	1.951	prey
+swi1	Q9UUM2	2.872	1.506	prey
+srp72	O59787	2.858	2.655	prey
+mug87	O94418	2.825	1.907	prey
+ptr3	O94609	2.756	3.617	prey
+SPAC806.02c	Q9UT57	2.593	1.779	prey
+SPAC664.03	Q9US06	2.55	2.885	prey
+irs1	O13651	2.546	3.399	prey
+gln1	Q09179	2.506	2.898	prey
+rpl1701	O14339	2.424	2.478	prey
+SPCC737.06c	O94246	2.349	1.912	prey
+nup45	Q09793	2.242	3.07	prey
+acp2	Q9HGP5	2.078	1.516	prey
+rrb1	Q9P783	2.012	2.395	prey
+SPCP1E11.10	Q9UU77	1.834	1.336	prey
+trp3	O94582	1.798	1.389	prey
+pup1	Q09841	1.773	1.72	prey
+ssr1	O13788	1.703	2.041	prey
+erg11	Q09736	1.7	2.206	prey
+pst2	O13919	1.688	2.904	prey
+cct7	P87153	1.678	1.547	prey
+eca39	O14370	1.613	2.111	prey
+mis13	Q9UUB5	1.563	1.45	prey
+trp2	O13831	1.554	2.134	prey
+his5	P40374	1.491	1.613	prey
+vas2	O75005	1.412	2.763	prey
+prs1	O60155	1.352	2.931	prey
+SPAC926.08c	Q9UUG1	1.224	1.302	prey
+tif211	P56286	1.142	1.559	prey
+SPAC9E9.09c	O14293	1.131	3.348	prey
+cct8	P78921	1.018	1.377	prey
+rps9a		0.8533	1.809	prey
+ubi2		0.8136	1.603	prey
+ssa2	O59855	0.7122	2.071	prey
+suc22	P36603	0.5766	3.201	prey
+pht1	P48003	0.4502	1.917	prey

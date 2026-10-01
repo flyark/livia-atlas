@@ -1,0 +1,67 @@
+# Example: Genes whose RNAi knockdown gave fully penetrant attachment phenotypes in cultured adult Schistosoma mansoni (focused RNAi screen of 576 candidate drug-target genes; hits validated by sequencing and a second dsRNA where possible).
+# Source: Stephens DR, Fung HYJ, Han Y, et al. (2025) A genome-scale drug discovery pipeline uncovers therapeutic targets and a unique p97 allosteric binding site in Schistosoma mansoni. Proc Natl Acad Sci U S A 122(35):e2505710122. https://doi.org/10.1073/pnas.2505710122
+# Dataset S2 (pnas.2505710122.sd02.xlsx), sheet "Sman Druggable Genome RNAi Hits": all 63 hits; category = the Dataset S2 sheet listing the gene; RNAi_severity = "RNAi Severity Score" from Dataset S3, sheet "Preliminary Scoring". Licensed CC BY 4.0; values as published; "uniprot" = current UniProt accession in the LIVIA Atlas index, added by ID mapping (blank: not in the index).
+protein	uniprot	human_ortholog	category	RNAi_severity
+Smp_022470	A0A3Q0KD97	ERCC1	DNA and RNA Regulation	3
+Smp_017070	G4VTJ6	TRIP13/PSMC6	Ubiquitin - Proteasome	3
+Smp_330620	A0A146MFR6	ATP6V0E2	ATPases	1
+Smp_025010	G4VM90	CSNK2B	Kinases and Phosphatases	3
+Smp_082810	G4VC76	RHOH	GTPase	1
+Smp_210430	A0A3Q0KV72	RAB40B	GTPase	3
+Smp_337130	A0A5K4F9R9	RAB9A	GTPase	3
+Smp_004810		PPP1CC	Kinases and Phosphatases	1
+Smp_145350	A0A3Q0KP17	UBE2H	Ubiquitin - Proteasome	1
+Smp_104670	G4LXZ3	RAB38	GTPase	3
+Smp_317130	A0A146MIG6	ATP6V0E2	ATPases	3
+Smp_046930	G4VCM2	OGT	Transferase	3
+Smp_040570	A0A3Q0KES8	RAB5B	GTPase	3
+Smp_083400	Q2MK73	UBE2N	Ubiquitin - Proteasome	1
+Smp_346380	A0A5K4FF65	FAHD2B	Other	1
+Smp_311630		FTMT	Other	2
+Smp_267000	A0A5K4F373	ATP6AP1	ATPases	3
+Smp_315750	A0A5K4F658	UBE2H	Ubiquitin - Proteasome	2
+Smp_034410	G4VBC4	CTSF	Proteases and Peptidases	3
+Smp_085520	G4M0F7	ATP6V1E1	ATPases	2
+Smp_334080	A0A5K4F8X9	EEF2	GTPase	3
+Smp_038340	G4VNU4	ZDHHC7	Transferase	1
+Smp_031730	G4VN62	SEC11A	Proteases and Peptidases	3
+Smp_002280	A0A3Q0KBJ6	KIF24	Motor Protein	1
+Smp_016630	A0A3Q0KCR4	GNAT2	Other	3
+Smp_055670	G4VHJ2	RAB4A	GTPase	3
+Smp_054310		MBTPS2	Proteases and Peptidases	2
+Smp_053020		ZDHHC4	Transferase	3
+Smp_019190	G4LUD6	SLU7	DNA and RNA Regulation	2
+Smp_039820	A0A3Q0KER0	ATG4B	Proteases and Peptidases	2
+Smp_000040	A0A3Q0KB93	KLC4	Motor Protein	1
+Smp_027370	G4VHA9	UBE2M	Ubiquitin - Proteasome	2
+Smp_024390	A0A3Q0KDE8	SPCS2	Proteases and Peptidases	2
+Smp_045430	G4LXQ2	ALG14	Transferase	3
+Smp_048260	G4V8W8	NAA20	Transferase	1
+Smp_074400	A0A3Q0KHT0	USP22	Ubiquitin - Proteasome	1
+Smp_061590	A0A3Q0KGP9	ZNFX1	DNA and RNA Regulation	2
+Smp_059540	G4VKV4	SRPRA	Other	2
+Smp_085150	A0A3Q0KIP8	PGM2	Other	1
+Smp_068920	A0A5K4EFY9	TRUB1	DNA and RNA Regulation	1
+Smp_064040	G4VIN1	STK35/CLK1	Kinases and Phosphatases	1
+Smp_094190	G4VR00	SBK2	Kinases and Phosphatases	1
+Smp_123180	G4VLH9	MAGI1	Ubiquitin - Proteasome	3
+Smp_062520	G4VJK0	NAA16	Transferase	2
+Smp_094760	G4VTU1	NEK3	Kinases and Phosphatases	1
+Smp_042790	G4VIT8	DPM1	Transferase	3
+Smp_087270	G4VJG1	DHX32	DNA and RNA Regulation	2
+Smp_160760	A0A3Q0KRA8	PKN2	Kinases and Phosphatases	1
+Smp_175340	A0A3Q0KTA8	ADAM17/TACE	Proteases and Peptidases	3
+Smp_151670	A0A3Q0KPZ7	MAP2K1/MEK1	Kinases and Phosphatases	1
+Smp_130410	A0A3Q0KLQ5	DYNC1LI1	Motor Protein	1
+Smp_152000	A0A3Q0KQ07	USP8	Ubiquitin - Proteasome	3
+Smp_151420	A0A3Q0KPY0	PLD2	Other	2
+Smp_333810	A0A5K4F8U0	PGD	Other	2
+Smp_246140	A0A5K4F3X0	ATP6V1H	ATPases	3
+Smp_330190		RHOD	GTPase	1
+Smp_305800	G4VAQ6	PSMB3	Ubiquitin - Proteasome	3
+Smp_342610	A0A5K4FET1	CTDP1/FCP1	Kinases and Phosphatases	3
+Smp_244940	A0A5K4F0B9	CDC7	Kinases and Phosphatases	3
+Smp_246800	A0A5K4F174	DNPEP	Proteases and Peptidases	1
+Smp_345520	A0A5K4FG35	TRNT1	DNA and RNA Regulation	2
+Smp_210170	A0A3Q0KV57	RPAP2	DNA and RNA Regulation	1
+Smp_340360	A0A5K4FDZ0	CNOT8	DNA and RNA Regulation	2

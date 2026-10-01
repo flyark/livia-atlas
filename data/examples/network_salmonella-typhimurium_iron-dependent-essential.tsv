@@ -1,0 +1,126 @@
+# Example: Salmonella Typhimurium iron-dependent essential genes, that is essential genes whose transposon mutants still grow slowly when iron is restricted with the chelator dipyridyl.
+# Source: Karash S, Kwon YM (2018) Iron-dependent essential genes in Salmonella Typhimurium. BMC Genomics 19:610. https://doi.org/10.1186/s12864-018-4986-1
+# Additional file 1 (12864_2018_4986_MOESM1_ESM.xlsx), sheet "Table S6": the paper's own set of iron-dependent essential genes (the paper states 121 of 336 essential genes); 121 gene rows listed, all kept, the sheet's Total and Average rows dropped. Licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); values as published.
+# Columns: gene = Gene as given; locus_tag = STM ID as given (strain 14028S); description = Description as given; ess_index_LB = essentiality index in LB-III as published; ess_index_Dip400 = essentiality index in Dip400 (iron-restricted) as published.
+gene	locus_tag	description	ess_index_LB	ess_index_Dip400
+atpF	STM14_4665	F0F1 ATP synthase subunit B	1	3
+birA	STM14_4974	biotin--protein ligase	2	3
+cmk	STM14_1109	cytidylate kinase	1	3
+coaA	STM14_4975	pantothenate kinase	0	5
+dapB	STM14_0075	dihydrodipicolinate reductase	1	3
+dfp	STM14_4492	bifunctional phosphopantothenoylcysteine decarboxylase/phosphopantothenate synthase	0	4
+dnaE	STM14_0273	DNA polymerase III subunit alpha	0	3
+dnaX	STM14_0569	DNA polymerase III subunits gamma and tau	0	3
+eno	STM14_3557	phosphopyruvate hydratase	1	1
+fabA	STM14_1211	3-hydroxydecanoyl-(acyl carrier protein) dehydratase	0	1
+fabH	STM14_1366	3-oxoacyl-(acyl carrier protein) synthase III	0	5
+fabI	STM14_2053	enoyl-(acyl carrier protein) reductase	1	3
+folE	STM14_2703	GTP cyclohydrolase I	1	1
+folP	STM14_3978	dihydropteroate synthase	0	5
+ftsI	STM14_0148	division specific transpeptidase	1	3
+ftsZ	STM14_0159	cell division protein FtsZ	1	3
+fusA	STM14_4150	elongation factor G	1	2
+gapA	STM14_1565	glyceraldehyde-3-phosphate dehydrogenase	1	0
+glmS	STM14_4656	D-fructose-6-phosphate amidotransferase	0	3
+glnK	STM14_0546	nitrogen regulatory protein P-II 2	0	1
+gltX	STM14_2969	glutamyl-tRNA synthetase	0	0
+glyQ	STM14_4407	glycyl-tRNA synthetase subunit alpha	0	3
+glyS	STM14_4406	glycyl-tRNA synthetase subunit beta	0	4
+groES	STM14_5206	co-chaperonin GroES	2	2
+hns	STM14_2116	global DNA-binding transcriptional dual regulator H-NS	0	2
+holA	STM14_0754	DNA polymerase III subunit delta	0	2
+htrB	STM14_1323	lipid A biosynthesis lauroyl acyltransferase	1	2
+infB	STM14_3969	translation initiation factor IF-2	0	5
+infC	STM14_1620	translation initiation factor IF-3	0	1
+kdsB	STM14_1117	3-deoxy-manno-octulosonate cytidylyltransferase	1	2
+kdtA	STM14_4486	3-deoxy-D-manno-octulosonic-acid transferase	1	6
+kgd	STM14_0855	alpha-ketoglutarate decarboxylase	2	3
+lysS	STM14_3672	lysyl-tRNA synthetase	2	1
+mrdB	STM14_0747	cell wall shape-determining protein	0	4
+mukB	STM14_1124	cell division protein MukB	2	2
+murA	STM14_3994	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	1	4
+murB	STM14_4973	UDP-N-acetylenolpyruvoylglucosamine reductase	0	2
+murD	STM14_0152	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase	0	2
+nadD	STM14_0753	nicotinic acid mononucleotide adenylyltransferase	1	2
+nrdA	STM14_2812	ribonucleotide-diphosphate reductase subunit alpha	0	4
+nrdB	STM14_2813	ribonucleotide-diphosphate reductase subunit beta	0	3
+nusG	STM14_4985	transcription antitermination protein NusG	0	2
+parC	STM14_3846	DNA topoisomerase IV subunit A	1	3
+parE	STM14_3854	DNA topoisomerase IV subunit B	0	3
+pdxH	STM14_1746	pyridoxamine 5'-phosphate oxidase	1	4
+pheS	STM14_1624	phenylalanyl-tRNA synthetase subunit alpha	0	3
+plsC	STM14_3845	1-acyl-sn-glycerol-3-phosphate acyltransferase	1	2
+ppnK	STM14_3288	inorganic polyphosphate/ATP-NAD kinase	1	2
+proS	STM14_0284	prolyl-tRNA synthetase	0	3
+psd	STM14_5229	phosphatidylserine decarboxylase	0	1
+pssA	STM14_3250	phosphatidylserine synthase	1	3
+purB	STM14_1410	adenylosuccinate lyase	0	2
+pyrG	STM14_3558	CTP synthetase	1	3
+rep	STM14_4710	ATP-dependent DNA helicase Rep	2	3
+ribB	STM14_3869	3,4-dihydroxy-2-butanone 4-phosphate synthase	0	3
+ribF	STM14_0054	bifunctional riboflavin kinase/FMN adenylyltransferase	1	1
+rimM	STM14_3278	16S rRNA-processing protein	0	1
+rlpB	STM14_0755	LPS-assembly lipoprotein RplB	0	2
+rnc	STM14_3161	ribonuclease III	0	0
+rnpA	STM14_4635	ribonuclease P	0	1
+rplB	STM14_4140	50S ribosomal protein L2	0	5
+rplC	STM14_4143	50S ribosomal protein L3	1	4
+rplK	STM14_4986	50S ribosomal protein L11	0	2
+rplN	STM14_4133	50S ribosomal protein L14	1	0
+rplP	STM14_4136	50S ribosomal protein L16	1	3
+rplR	STM14_4127	50S ribosomal protein L18	1	2
+rplT	STM14_1622	50S ribosomal protein L20	0	0
+rpmC	STM14_4135	50S ribosomal protein L29	0	1
+rpmH	STM14_4634	50S ribosomal protein L34	0	1
+rpoB	STM14_4990	DNA-directed RNA polymerase subunit beta	0	5
+rpoC	STM14_4991	DNA-directed RNA polymerase subunit beta'	1	3
+rpsB	STM14_0257	30S ribosomal protein S2	0	1
+rpsC	STM14_4137	30S ribosomal protein S3	0	3
+rpsD	STM14_4119	30S ribosomal protein S4	0	3
+rpsG	STM14_4151	30S ribosomal protein S7	0	2
+rpsH	STM14_4129	30S ribosomal protein S8	0	1
+rpsL	STM14_4152	30S ribosomal protein S12	1	5
+rpsQ	STM14_4134	30S ribosomal protein S17	0	1
+rrmJ	STM14_3982	23S rRNA methyltransferase J	0	1
+secY	STM14_4123	preprotein translocase subunit SecY	1	5
+STM14_0186	STM14_0186	hypothetical protein	0	1
+STM14_0256	STM14_0256	30S ribosomal protein S2	0	0
+STM14_0262	STM14_0262	hypothetical protein	0	3
+STM14_0310	STM14_0310	hypothetical protein	0	1
+STM14_0531	STM14_0531	hypothetical protein	1	1
+STM14_0573	STM14_0573	hypothetical protein	0	0
+STM14_0738	STM14_0738	hypothetical protein	1	2
+STM14_1053	STM14_1053	hypothetical protein	0	3
+STM14_1623	STM14_1623	hypothetical protein	0	2
+STM14_2117	STM14_2117	hypothetical protein	0	3
+STM14_3122	STM14_3122	hypothetical protein	0	3
+STM14_3123	STM14_3123	hypothetical protein	0	3
+STM14_3414	STM14_3414	hypothetical protein	0	1
+STM14_3415	STM14_3415	hypothetical protein	0	1
+STM14_3619	STM14_3619	hypothetical protein	2	4
+STM14_3884	STM14_3884	hypothetical protein	0	1
+tdk_1	STM14_1373	thymidylate kinase	0	2
+thrS	STM14_1619	threonyl-tRNA synthetase	2	6
+trmD	STM14_3277	tRNA (guanine-N(1)-)-methyltransferase	0	3
+trmU	STM14_1412	tRNA (5-methylaminomethyl-2-thiouridylate)-methyltransferase	0	2
+ubiG	STM14_2810	3-demethylubiquinone-9 3-methyltransferase	2	2
+uppS	STM14_0263	undecaprenyl pyrophosphate synthase	0	1
+valS	STM14_5371	valyl-tRNA synthetase	1	3
+yabB	STM14_0145	cell division protein MraZ	0	2
+yadF	STM14_0203	carbonic anhydrase	0	2
+ybeA	STM14_0749	SPOUT methyltransferase superfamily protein	1	1
+ybeY	STM14_0778	putative metalloprotease	1	2
+ybgC	STM14_0866	acyl-CoA thioester hydrolase YbgC	1	1
+ycaR	STM14_1116	hypothetical protein	0	1
+yfgM	STM14_3092	putative inner membrane protein	1	5
+yfiO	STM14_3264	outer membrane protein assembly complex subunit YfiO	1	6
+ygfZ	STM14_3681	putative global regulator	1	2
+yhbN	STM14_4006	hypothetical protein	0	3
+yidC	STM14_4637	putative inner membrane protein translocase component YidC	1	3
+yjeE	STM14_5238	putative ATPase	1	2
+yjgP	STM14_5375	putative permease	1	2
+yjgQ	STM14_5376	putative permease	1	2
+ypeC	STM14_2961	putative periplasmic protein	2	4
+yqgF	STM14_3741	Holliday junction resolvase-like protein	1	1
+yrbA	STM14_3995	putative transcriptional regulator	1	2
+yrbI	STM14_4004	3-deoxy-D-manno-octulosonate 8-phosphate phosphatase	1	0

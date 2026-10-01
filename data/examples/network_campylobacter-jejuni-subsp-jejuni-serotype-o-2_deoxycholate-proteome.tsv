@@ -1,0 +1,157 @@
+# Campylobacter jejuni NCTC 11168 proteins that change in abundance during growth in Mueller-Hinton medium with 0.1% deoxycholate compared with medium alone (TMT label-based quantitative proteomics)
+# Man L, Dale AL, Klare WP, Cain JA, Sumer-Bayraktar Z, Niewold P, Solis N, Cordwell SJ. 2020. Proteomics of Campylobacter jejuni growth in deoxycholate reveals Cj0025c as a cystine transport protein required for wild-type human infection phenotypes. Mol Cell Proteomics 19(8):1263-1280. https://doi.org/10.1074/mcp.RA120.002029
+# Source: Supplementary Data S1 (159411_1_supp_522812_q9nf8k.xlsx in mmc1.zip), sheet "Suppl. Data S1" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8015009/supplementaryFiles)
+# Cutoff: the paper's own criteria for the 0.1% deoxycholate comparison, P < 0.05 and at least a log2 fold change of 0.6 (about 1.5-fold); 542 of the 1,315 quantified proteins in this table pass (the paper reports 512 after additionally requiring DIA-SWATH-MS validation for fold changes near the cutoff); top 75 in each direction by mean label n-fold
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag = Cj number as published; gene = Gene name as published (first symbol); uniprot = the accession matched to the species index; accession = Accession as published; mean_n_fold = Mean Label n-fold as published; p_value as published; direction = side of the comparison
+locus_tag	gene	uniprot	accession	mean_n_fold	p_value	direction
+Cj0908	Cj0908	Q0P9Z1	Q0P9Z1	4.284	0.0038	increased in deoxycholate
+Cj0645	Cj0645	Q0PAM3	Q0PAM3	3.969	0.000158	increased in deoxycholate
+Cj1636c	rnhA	Q9PM39	Q9PM39	3.905	0.00488	increased in deoxycholate
+Cj0979c	Cj0979c	Q0P9S3	Q0P9S3	3.528	0.000149	increased in deoxycholate
+Cj0365c	cmeC	Q0PBE5	Q0PBE5	3.429	0.000456	increased in deoxycholate
+Cj0366c	cmeB	Q0PBE4	Q0PBE4	3.372	3.17e-05	increased in deoxycholate
+Cj0057	Cj0057		Q0PC76	3.221	0.0312	increased in deoxycholate
+Cj0367c	cmeA	Q0PBE3	Q0PBE3	3.065	2.95e-06	increased in deoxycholate
+Cj0561c	Cj0561c	Q0PAV5	Q0PAV5	3.06	0.00218	increased in deoxycholate
+Cj0782	napH	Q0PAA8	Q0PAA8	3.037	0.00729	increased in deoxycholate
+Cj0633	Cj0633	Q0PAN5	Q0PAN5	2.902	0.00123	increased in deoxycholate
+Cj1619	kgtP	Q0P809	Q0P809	2.598	0.0011	increased in deoxycholate
+Cj1204c	atpB	Q0P952	Q0P952	2.59	0.000277	increased in deoxycholate
+Cj1192	dctA	Q0P964	Q0P964	2.566	0.00856	increased in deoxycholate
+Cj0025c	Cj0025c	Q0PCA0	Q0PCA0	2.551	0.00292	increased in deoxycholate
+Cj1625c	sdaC	Q0P803	Q0P803	2.458	0.000316	increased in deoxycholate
+Cj0236c	Cj0236c	Q9PIQ8	Q9PIQ8	2.399	9.13e-06	increased in deoxycholate
+Cj0203	Cj0203	Q0PBT6	Q0PBT6	2.347	0.000377	increased in deoxycholate
+Cj1500	Cj1500		Q0P8B8	2.32	0.0326	increased in deoxycholate
+Cj1649	Cj1649	Q0P7X9	Q0P7X9	2.317	0.0229	increased in deoxycholate
+Cj1194	Cj1194	Q0P962	Q0P962	2.267	1.85e-06	increased in deoxycholate
+Cj0076c	lctP		Q0PC59	2.243	0.00268	increased in deoxycholate
+Cj1490c	ccoN	Q0P8C7	Q0P8C7	2.239	1e-05	increased in deoxycholate
+Cj1276c	Cj1276c	Q0P8Y0	Q0P8Y0	2.216	1.4e-07	increased in deoxycholate
+Cj1170c	omp50		Q0P986	2.193	2.31e-05	increased in deoxycholate
+Cj0552	Cj0552		Q0PAW4	2.169	1.42e-05	increased in deoxycholate
+Cj0527c	flgC	Q0PAY9	Q0PAY9	2.164	0.00184	increased in deoxycholate
+Cj0601c	Cj0601c	Q0PAR6	Q0PAR6	2.159	0.000631	increased in deoxycholate
+Cj1580c	Cj1580c	Q0P848	Q0P848	2.129	0.0342	increased in deoxycholate
+Cj0917c	cstA	Q0P9Y2	Q0P9Y2	2.112	1.27e-05	increased in deoxycholate
+Cj1369	Cj1369	Q0P8P0	Q0P8P0	2.082	1.16e-05	increased in deoxycholate
+Cj1568c	nuoL	Q9PMA7	Q9PMA7	2.081	0.000452	increased in deoxycholate
+Cj0832c	Cj0832c	Q0PA58	Q0PA58	2.076	0.0364	increased in deoxycholate
+Cj0164c	ubiA	Q0PBX3	Q0PBX3	2.059	4.63e-05	increased in deoxycholate
+Cj1231	kefB	Q0P925	Q0P925	2.048	0.0237	increased in deoxycholate
+Cj1259	porA	P80672	P80672	2.039	1.68e-06	increased in deoxycholate
+Cj0204	Cj0204	Q0PBT5	Q0PBT5	2.022	0.000347	increased in deoxycholate
+Cj1208	Cj1208	Q0P948	Q0P948	2.013	0.0217	increased in deoxycholate
+Cj1119c	pglG		Q0P9D5	2.008	0.0413	increased in deoxycholate
+Cj1155c	Cj1155c	Q0P9A1	Q0P9A1	1.986	0.000969	increased in deoxycholate
+Cj1026c	Cj1026c	Q0P9M6	Q0P9M6	1.975	0.000958	increased in deoxycholate
+Cj0903c	Cj0903c	Q0P9Z5	Q0P9Z5	1.972	6.79e-05	increased in deoxycholate
+Cj1530	coaE	Q9PMD9	Q9PMD9	1.97	0.00808	increased in deoxycholate
+Cj0337c	motA	Q0PBH2	Q0PBH2	1.968	0.00264	increased in deoxycholate
+Cj1611	rpsT	Q9PM64	Q9PM64	1.96	0.000742	increased in deoxycholate
+Cj0268c	Cj0268c	Q0PBN7	Q0PBN7	1.952	2.98e-07	increased in deoxycholate
+Cj1105	smpB	Q9PNI9	Q9PNI9	1.945	0.0205	increased in deoxycholate
+Cj1546	Cj1546	Q0P879	Q0P879	1.94	0.0201	increased in deoxycholate
+Cj1648	Cj1648	Q0P7Y0	Q0P7Y0	1.94	0.013	increased in deoxycholate
+Cj0723c	Cj0723c	Q0PAF6	Q0PAF6	1.935	0.000214	increased in deoxycholate
+Cj1033	cmeF	Q0P9L9	Q0P9L9	1.927	0.000119	increased in deoxycholate
+Cj1447c	kpsT	Q0P8G8	Q0P8G8	1.921	0.0136	increased in deoxycholate
+Cj0958c	yidC	Q9PNX7	Q9PNX7	1.913	0.00119	increased in deoxycholate
+Cj0092	Cj0092	Q0PC45	Q0PC45	1.911	0.000223	increased in deoxycholate
+Cj0245	rplT	Q9PIQ0	Q9PIQ0	1.895	6.32e-05	increased in deoxycholate
+Cj1005c	Cj1005c	Q0P9P7	Q0P9P7	1.891	0.00071	increased in deoxycholate
+Cj0692c	Cj0692c	Q0PAI7	Q0PAI7	1.89	0.00104	increased in deoxycholate
+Cj0528c	flgB	Q0PAY8	Q0PAY8	1.888	0.00488	increased in deoxycholate
+Cj1537c	acsA	Q9PMD2	Q9PMD2	1.88	1.58e-05	increased in deoxycholate
+Cj0068	pspA		Q0PC65	1.868	5.19e-05	increased in deoxycholate
+Cj1256c	Cj1256c	Q0P900	Q0P900	1.867	0.000429	increased in deoxycholate
+Cj1478c	cadF	Q0P8D9	Q0P8D9	1.865	0.000118	increased in deoxycholate
+Cj0267c	Cj0267c	Q0PBN8	Q0PBN8	1.864	0.00402	increased in deoxycholate
+Cj0726c	corA		Q9PPI1	1.858	0.0158	increased in deoxycholate
+Cj0820c	fliP	Q0PA70	Q0PA70	1.858	0.000426	increased in deoxycholate
+Cj0238	Cj0238		Q0PBR6	1.856	0.000659	increased in deoxycholate
+Cj1567c	nuoM	Q0P861	Q0P861	1.853	0.00144	increased in deoxycholate
+Cj1680c	Cj1680c	Q0P7V0	Q0P7V0	1.838	5.18e-06	increased in deoxycholate
+Cj0030	Cj0030		Q0PC95	1.838	0.0156	increased in deoxycholate
+Cj1222c	dccS	Q0P934	Q0P934	1.837	0.0327	increased in deoxycholate
+Cj1378	selA	Q9PMS2	Q9PMS2	1.832	0.00996	increased in deoxycholate
+Cj0033	Cj0033	Q0PC93	Q0PC93	1.824	0.00264	increased in deoxycholate
+Cj0183	Cj0183		Q0PBV6	1.82	0.00595	increased in deoxycholate
+Cj0109	exbB3	Q0PC28	Q0PC28	1.82	3.35e-05	increased in deoxycholate
+Cj1578c	nuoB	Q0P850	Q0P850	1.814	0.0201	increased in deoxycholate
+Cj0138	rimP	Q9PIY9	Q9PIY9	0.3199	0.00222	decreased in deoxycholate
+Cj0779	tpx	Q9PPE0	Q9PPE0	0.3228	0.000114	decreased in deoxycholate
+Cj0169	sodB	Q0PBW9	Q0PBW9	0.3287	0.000314	decreased in deoxycholate
+Cj0681	Cj0681	Q0PAJ8	Q0PAJ8	0.3341	0.000183	decreased in deoxycholate
+Cj0494	Cj0494	Q0PB19	Q0PB19	0.3387	0.0146	decreased in deoxycholate
+Cj0921c	peb1A	Q0P9X8	Q0P9X8	0.3425	0.00356	decreased in deoxycholate
+Cj1725	Cj1725	Q0P7Q6	Q0P7Q6	0.3502	0.000215	decreased in deoxycholate
+Cj0596	cbf2		Q0PAS1	0.3524	0.00466	decreased in deoxycholate
+Cj1153	Cj1153	Q0P9A3	Q0P9A3	0.3552	0.00289	decreased in deoxycholate
+Cj0909	Cj0909	Q0P9Z0	Q0P9Z0	0.3598	0.0288	decreased in deoxycholate
+Cj0143c	Cj0143c	Q0PBZ4	Q0PBZ4	0.3601	0.00735	decreased in deoxycholate
+Cj1020c	Cj1020c	Q0P9N2	Q0P9N2	0.3625	0.00321	decreased in deoxycholate
+Cj1287c	Cj1287c	Q0P8X0	Q0P8X0	0.3651	0.00085	decreased in deoxycholate
+Cj1380	Cj1380	Q0P8M9	Q0P8M9	0.3683	0.000946	decreased in deoxycholate
+Cj0012c	rrc	Q0PCB3	Q0PCB3	0.3697	0.0195	decreased in deoxycholate
+Cj1400c	fabI	Q0P8L4	Q0P8L4	0.3723	0.000745	decreased in deoxycholate
+Cj0420	Cj0420	Q0PB90	Q0PB90	0.3756	2.94e-05	decreased in deoxycholate
+Cj0289c	peb3	Q0PBL7	Q0PBL7	0.376	0.00282	decreased in deoxycholate
+Cj1382c	fldA	Q0P8M7	Q0P8M7	0.377	0.00477	decreased in deoxycholate
+Cj0545	hemC	Q9PHW9	Q9PHW9	0.381	0.000671	decreased in deoxycholate
+Cj0117	pfs	Q0PC20	Q0PC20	0.3841	0.00159	decreased in deoxycholate
+Cj0872	dsbA	Q0PA24	Q0PA24	0.3882	0.00292	decreased in deoxycholate
+Cj1666c	Cj1666c	Q0P7W3	Q0P7W3	0.3882	0.00988	decreased in deoxycholate
+Cj0037c	Cj0037c	Q0PC89	Q0PC89	0.3883	0.00036	decreased in deoxycholate
+Cj0912c	cysM	P71128	P71128	0.3884	0.000214	decreased in deoxycholate
+Cj1586	cgb	Q0P842	Q0P842	0.3885	0.0013	decreased in deoxycholate
+Cj0559	Cj0559	Q0PAV7	Q0PAV7	0.3898	0.00094	decreased in deoxycholate
+Cj0020c	Cj0020c	Q0PCA5	Q0PCA5	0.3937	0.00295	decreased in deoxycholate
+Cj1019c	livJ	Q0P9N3	Q0P9N3	0.3976	0.00311	decreased in deoxycholate
+Cj0953c	purH	Q9PNY2	Q9PNY2	0.3983	0.00395	decreased in deoxycholate
+Cj0364	Cj0364	Q0PBE6	Q0PBE6	0.3999	0.000697	decreased in deoxycholate
+Cj0943	lolA	Q9PNZ0	Q9PNZ0	0.4017	0.00169	decreased in deoxycholate
+Cj0638c	ppa	Q9PHM9	Q9PHM9	0.4027	0.00286	decreased in deoxycholate
+Cj1401c	tpiA	Q9PMQ6	Q9PMQ6	0.4033	0.001	decreased in deoxycholate
+Cj0700	Cj0700	Q0PAH9	Q0PAH9	0.4042	0.0036	decreased in deoxycholate
+Cj0116	fabD	Q0PC21	Q0PC21	0.4047	0.00612	decreased in deoxycholate
+Cj0234c	frr	Q9PIR0	Q9PIR0	0.4061	0.00552	decreased in deoxycholate
+Cj0780	napA	Q9PPD9	Q9PPD9	0.4073	0.00897	decreased in deoxycholate
+Cj0579c	tatB	Q9PHT7	Q9PHT7	0.4104	0.00283	decreased in deoxycholate
+Cj0513	purS	Q0PB02	Q0PB02	0.4105	0.00322	decreased in deoxycholate
+Cj0372	Cj0372	Q0PBD8	Q0PBD8	0.4112	0.00097	decreased in deoxycholate
+Cj1505c	Cj1505c	Q0P8B3	Q0P8B3	0.4118	0.00271	decreased in deoxycholate
+Cj1149c	gmhA1	Q9PNE6	Q9PNE6	0.4125	0.00222	decreased in deoxycholate
+Cj1118c	cheY	P0C635	P0C635	0.4125	0.00102	decreased in deoxycholate
+Cj0448c	Cj0448c	Q0PB65	Q0PB65	0.4126	0.00414	decreased in deoxycholate
+Cj1501	Cj1501	Q0P8B7	Q0P8B7	0.4128	0.0106	decreased in deoxycholate
+Cj0013	ilvD	Q9PJ98	Q9PJ98	0.4135	0.00378	decreased in deoxycholate
+Cj0855	folD	Q0PA35	Q0PA35	0.4148	0.00788	decreased in deoxycholate
+Cj1598	hisD	Q9PM77	Q9PM77	0.416	0.00111	decreased in deoxycholate
+Cj0440c	Cj0440c	Q0PB70	Q0PB70	0.417	8.37e-05	decreased in deoxycholate
+Cj0835c	acnB	Q0PA55	Q0PA55	0.4172	0.00476	decreased in deoxycholate
+Cj1584c	Cj1584c	Q0P844	Q0P844	0.4177	0.0028	decreased in deoxycholate
+Cj1018c	livK	Q0P9N4	Q0P9N4	0.4177	0.00647	decreased in deoxycholate
+Cj1541	Cj1541	Q9PMC8	Q9PMC8	0.4187	0.00166	decreased in deoxycholate
+Cj0239c	Cj0239c	Q0PBR5	Q0PBR5	0.4192	0.000343	decreased in deoxycholate
+Cj1041c	Cj1041c	Q0P9L1	Q0P9L1	0.4197	0.000406	decreased in deoxycholate
+Cj0376	Cj0376	Q0PBD4	Q0PBD4	0.4213	0.00468	decreased in deoxycholate
+Cj0115	slyD	Q0PC22	Q0PC22	0.422	0.000473	decreased in deoxycholate
+Cj0535	oorD	Q0PAY1	Q0PAY1	0.4226	0.0154	decreased in deoxycholate
+Cj0240c	iscS	Q0PBR4	Q0PBR4	0.4227	4.29e-05	decreased in deoxycholate
+Cj0621	Cj0621	Q0PAP6	Q0PAP6	0.424	0.000309	decreased in deoxycholate
+Cj1464	flgM	Q0P8F1	Q0P8F1	0.4245	0.0238	decreased in deoxycholate
+Cj1220	groS	P56970	P56970	0.4259	0.0118	decreased in deoxycholate
+Cj1112c	Cj1112c	Q0P9E2	Q0P9E2	0.427	0.00294	decreased in deoxycholate
+Cj0613	pstS	Q0PAQ4	Q0PAQ4	0.4303	6.09e-05	decreased in deoxycholate
+Cj0503c	hemH	Q9PI08	Q9PI08	0.4305	0.000981	decreased in deoxycholate
+Cj1639	Cj1639	Q0P7Y9	Q0P7Y9	0.4336	0.00321	decreased in deoxycholate
+Cj1645	tkt	Q0P7Y3	Q0P7Y3	0.4336	0.00287	decreased in deoxycholate
+Cj0382c	nusB	Q9PIC0	Q9PIC0	0.434	0.00122	decreased in deoxycholate
+Cj0770c	Cj0770c	Q0PAC0	Q0PAC0	0.4347	0.00525	decreased in deoxycholate
+Cj1427c	Cj1427c	Q0P8I7	Q0P8I7	0.4353	0.000494	decreased in deoxycholate
+Cj0125c	Cj0125c	Q0PC12	Q0PC12	0.4363	0.0055	decreased in deoxycholate
+Cj0453	thiC		Q9PI55	0.4392	0.000416	decreased in deoxycholate
+Cj0334	ahpC	Q0PBH5	Q0PBH5	0.4396	6.61e-05	decreased in deoxycholate
+Cj0151c	Cj0151c	Q0PBY6	Q0PBY6	0.4417	0.000154	decreased in deoxycholate

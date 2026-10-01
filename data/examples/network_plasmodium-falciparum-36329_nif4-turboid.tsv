@@ -1,0 +1,36 @@
+# Example: PfNIF4 TurboID proximity interactors in P. falciparum 3D7 schizonts (Table 2 of the paper), plus the bait NIF4 (PF3D7_1012700).
+# Source: Zhu X, Li S, Wang C, et al. (2022) The Plasmodium falciparum Nuclear Protein Phosphatase NIF4 Is Required for Efficient Merozoite Invasion and Regulates Artemisinin Sensitivity. mBio 13(4):e0189722. https://doi.org/10.1128/mbio.01897-22
+# Article Table 2 ("Significantly enriched nuclear proteins identified in the NIF4TurboID parasites"): 7 proteins with LFQ log2 fold change > 1 and P < 0.05 over 3D7 control, plus 24 proteins detected only in NIF4TurboID (log2 fold change listed as 1,000 in the paper); 31 rows. Licensed CC BY 4.0; values as published.
+protein	role	log2FoldChange	AdjustedP
+PF3D7_1012700	bait		
+PF3D7_0422400	prey	1.60	0.018
+PF3D7_1105400	prey	1.55	0.005
+PF3D7_1105000	prey	1.26	0.006
+PF3D7_0617900	prey	1.26	0.030
+PF3D7_0610400	prey	1.23	<0.001
+PF3D7_0923000	prey	1.08	0.008
+PF3D7_1302800	prey	1.03	0.011
+PF3D7_0305600	prey	1000	<0.001
+PF3D7_0413600	prey	1000	<0.001
+PF3D7_0520400	prey	1000	<0.001
+PF3D7_0527200	prey	1000	<0.001
+PF3D7_0604100	prey	1000	<0.001
+PF3D7_0703600	prey	1000	<0.001
+PF3D7_0706000	prey	1000	<0.001
+PF3D7_0722400	prey	1000	<0.001
+PF3D7_0802000	prey	1000	<0.001
+PF3D7_0823300	prey	1000	<0.001
+PF3D7_0917600	prey	1000	<0.001
+PF3D7_1019400	prey	1000	<0.001
+PF3D7_1103100	prey	1000	<0.001
+PF3D7_1220900	prey	1000	<0.001
+PF3D7_1244800	prey	1000	<0.001
+PF3D7_1312900	prey	1000	<0.001
+PF3D7_1317800	prey	1000	<0.001
+PF3D7_1319400	prey	1000	<0.001
+PF3D7_1408600	prey	1000	<0.001
+PF3D7_1422800	prey	1000	<0.001
+PF3D7_1426000	prey	1000	<0.001
+PF3D7_1434300	prey	1000	<0.001
+PF3D7_1460700	prey	1000	<0.001
+PF3D7_1474500	prey	1000	<0.001

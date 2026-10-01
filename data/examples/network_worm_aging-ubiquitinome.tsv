@@ -1,0 +1,156 @@
+# Ubiquitin-modified proteome (di-glycine (diGly) peptide enrichment) of old (day 15) vs young (day 5) wild-type C. elegans adults; site table collapsed to one row per protein (rows with the same gene/index protein merged; best site = largest absolute difference)
+# Koyuncu S, Loureiro R, Lee HJ, et al. 2021. Rewiring of the ubiquitinated proteome determines ageing in C. elegans. Nature 596:285-290. https://doi.org/10.1038/s41586-021-03781-z
+# Source: 41586_2021_3781_MOESM6_ESM.xlsx (Supplementary Table 4), sheets "Downregulated Ub-pep (FDR<0.05)" and "Upregulated Ub-pep (FDR<0.05)" (https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03781-z/MediaObjects/41586_2021_3781_MOESM6_ESM.xlsx)
+# Cutoff: two-sided t-test, FDR < 0.05 as in the paper (1813 down and 350 up sites on 1055 proteins); top 150 proteins by absolute Student's T-test Difference (log2, day 15 minus day 5) of their best site; site = position of that site in the leading protein
+# Licensed CC BY 4.0
+gene	uniprot	Student's T-test Difference N2_d15_N2_d5	Student's T-test q-value N2_d15_N2_d5	site	direction
+rps-10	O01869	-11.1266	0	45	down
+Q18773	Q18773	-10.1968	0	48	down
+pcyt-1	P49583	-9.7957	0	259	down
+rpl-28	Q21930	-9.3068	0	73	down
+uba-1	Q27481	-8.8306	0	683	down
+Q7YTN9		-8.4628	0	170	down
+pud-1.2	G5EET8	-8.3521	4.082e-04	28	down
+ned-8	Q93725	-8.3516	0	6	down
+sip-1	Q20363	-8.3489	3.077e-04	149	down
+egg-2	Q21629	-8.3039	0	23	down
+Q9N381		-8.2483	0	66	down
+pitr-1		8.1801	0	275	up
+copa-1	Q9N4H7	-8.1635	0	491	down
+chdp-1	P91027	-8.0005	0	229	down
+enol-1	Q27527	-7.995	0	132	down
+hsp-1	P09446	-7.9858	0	534	down
+skr-14	Q9N3U9	-7.9407	0	66	down
+pdi-1	Q17967	-7.8463	4.367e-04	80	down
+dnj-23	Q22751	-7.8443	0	45	down
+ifb-1	Q19289	-7.7913	0	128	down
+Q95ZW2	Q95ZW2	-7.783	0	123	down
+ubq-1	P0CG71	7.7222	0	391	up
+aqp-2	Q17571	-7.6205	0	277	down
+rps-22	O17218	-7.5894	0	71	down
+H2KYH5		-7.5851	0	393	down
+K07C11.7	Q21268	-7.5343	0	24	down
+F42H10.6	P34419	-7.466	0	93	down
+inx-3	Q19746	-7.4036	0	418	down
+tni-1	Q20334	-7.3951	0	74	down
+rpa-0	Q93572	-7.3566	0	71	down
+unc-15	P10567	7.3388	0	121	up
+Q93553	Q93553	-7.2413	0	30	down
+unc-25	G5EDB7	-7.1275	0.0252	450	down
+idh-1	H9G2T4	-7.0618	0	141	down
+rpl-7	O01802	7.0496	3.185e-04	62	up
+sodh-1	Q17334	-7.0407	2.941e-04	90	down
+pgl-1	Q9TZQ3	-7.0097	0	476	down
+unc-54		-6.9911	0.003	1818	down
+ubh-3	Q965V9	-6.9122	0	6	down
+clik-1	Q23050	-6.8435	0	160	down
+ubql-1	G5EFF7	-6.8155	0	58	down
+rack-1	Q21215	-6.8128	0	277	down
+Q17698	Q17698	-6.7664	0	84	down
+rpl-20	O44480	-6.7428	4.464e-04	152	down
+klp-6	G5EFQ4	-6.7289	0	320	down
+lem-2	Q9XTB5	-6.717	0	498	down
+hsp-17	Q20660	-6.7092	0	88	down
+pqn-89		6.6944	0	419	up
+ubh-4	Q09444	-6.6849	2.254e-04	303	down
+snb-1	O02495	-6.6823	0	39	down
+vit-6		-6.6353	3.418e-04	1523	down
+G5EBP5		-6.6318	0	457	down
+O02082		-6.6188	3.534e-04	153	down
+Q93289	Q93289	6.6144	0	467	up
+rpn-2	Q18115	-6.5949	0	444	down
+hsp-25	Q17849	-6.5884	0	142	down
+rpn-10	O61742	6.5537	5.870e-04	74	up
+hpo-34		-6.4856	4.000e-04	369	down
+gpd-2	P17329	-6.4356	3.731e-04	265	down
+ubc-7	P34477	-6.4098	3.145e-04	71	down
+O62317		-6.3707	0	159	down
+lev-11	Q22866	-6.3396	0	114	down
+rpa-2	Q95Y97	-6.2657	3.831e-04	215	down
+nlt-1	Q23655	-6.2468	4.416e-04	20	down
+Q9UAZ6		-6.2376	4.115e-04	235	down
+O16682	O16682	-6.2204	0	60	down
+vha-9	Q23680	-6.2173	4.444e-04	96	down
+chat-1	H2L0H3	-6.1134	0	25	down
+tnt-2	Q7Z072	-6.0979	3.165e-04	207	down
+epn-1	Q9BI71	-6.054	2.233e-04	11	down
+tag-184		-6.0425	0	1077	down
+G5EFZ2		6.0225	2.604e-04	17	up
+Q21763	Q21763	6.0218	0	25	up
+cyp-14a5		-5.9742	0	343	down
+H2L0R6		-5.9676	0	248	down
+wwp-1	Q9N2Z7	-5.9277	2.747e-04	243	down
+dct-16	Q9XX57	-5.9156	0	69	down
+rps-15	Q9XVP0	-5.8904	2.212e-04	83	down
+vit-2		-5.8893	4.032e-04	1352	down
+dad-1	P52872	-5.8683	2.451e-04	18	down
+gst-24	Q93694	-5.8683	3.788e-04	136	down
+elb-1	G5ECR7	-5.8614	5.149e-04	56	down
+pdi-2	Q17770	-5.8556	0	215	down
+O45083	O45083	-5.853	0	590	down
+Q965R9	Q965R9	-5.823	0	174	down
+tag-296	A0A3P6NP42	-5.7899	0	158	down
+inx-12	O01634	5.7851	0	393	up
+clec-266	H2KZ07	-5.7739	3.491e-04	127	down
+Q9XW20	Q9XW20	-5.7703	3.541e-04	95	down
+rpl-22	P52819	-5.7511	2.611e-04	82	down
+rpl-6	P47991	-5.7508	0.0087	208	down
+ret-1		-5.737	0	360	down
+rpl-15	P91374	-5.7362	0	153	down
+rps-17	O01692	-5.7166	3.937e-04	19	down
+cab-1	Q93249	-5.7028	3.472e-04	363	down
+hint-1	P53795	-5.6709	2.907e-04	14	down
+lea-1	H2FLL1	-5.6661	0	212	down
+cdc-48.1	P54811	-5.6289	8.765e-04	13	down
+Q9XWK2	Q9XWK2	-5.6281	0	108	down
+acbp-1	O01805	-5.6229	4.348e-04	13	down
+unc-87	P37806	-5.6164	0	266	down
+B3WFY5		-5.6114	0	29	down
+pab-2	Q19579	-5.5424	4.493e-04	219	down
+pas-5	Q95008	-5.5289	0.009	191	down
+hgrs-1	Q17796	-5.5038	0	229	down
+sqst-1	Q22436	-5.4752	3.876e-04	260	down
+H2KZC4		5.4752	4.523e-04	118	up
+ech-7	Q9NEZ8	-5.4631	3.247e-04	170	down
+dpy-4	O62432	-5.458	3.704e-04	8	down
+Q17569	Q17569	-5.4279	0	218	down
+F13E6.1	P55326	-5.4211	3.367e-04	123	down
+skr-12	G5EGD5	-5.4203	5.532e-04	66	down
+vit-5		-5.4078	0	861	down
+pck-2	O02286	-5.4041	0	64	down
+Q21574		5.4002	3.759e-04	714	up
+O17069	O17069	-5.3954	3.474e-04	566	down
+apl-1	Q10651	-5.3924	0	685	down
+C36C5.12	O16406	-5.3817	5.263e-04	193	down
+eps-8	A0A061ACP8	-5.376	5.350e-04	542	down
+col-119	Q18799	-5.3606	3.676e-04	59	down
+Q20022	Q20022	-5.3483	3.268e-04	284	down
+vha-6	G5EGP4	-5.3423	0	172	down
+ins-24		-5.3365	0	37	down
+ent-2	Q93871	5.3317	4.860e-04	15	up
+tfg-1	Q9U1W1	-5.3261	4.503e-04	103	down
+tni-4	O44572	-5.3141	7.628e-04	61	down
+Q564W1	Q564W1	-5.3093	4.851e-04	125	down
+lmn-1	Q21443	-5.2954	0	163	down
+unc-78	Q11176	-5.2836	4.464e-04	325	down
+dhs-29	Q19843	-5.2652	0.0011	83	down
+rps-4	Q9N3X2	-5.2221	7.005e-04	133	down
+rpl-10a	Q9N4I4	-5.2189	5.108e-04	129	down
+C56G2.7	Q09289	-5.2052	0.0011	122	down
+mdt-28	H9G301	-5.201	3.515e-04	154	down
+tac-1	G5ECG0	-5.1767	8.712e-04	227	down
+Q20310	Q20310	-5.1696	0	116	down
+haf-7	Q9U275	5.1474	0	401	up
+gad-3	Q960A1	-5.1398	0	230	down
+rps-19	O18650	-5.1323	2.985e-04	8	down
+F08G2.4	Q9XVA4	-5.1227	2.924e-04	152	down
+rpl-32	Q22716	-5.1098	5.169e-04	52	down
+rpl-13	P91128	5.0874	3.559e-04	42	up
+dnj-29	Q9U1V9	-5.0841	0	282	down
+rpl-3	P50880	-5.0811	3.289e-04	353	down
+scm-1	G5EED5	-5.0633	0	63	down
+syx-7	O62236	-5.0568	0.0021	79	down
+tct-1	Q93573	5.0564	0	173	up
+arrd-25	Q17624	5.0417	5.891e-04	343	up
+Q20034	Q20034	-5.0393	0	10	down
+clic-1	P90961	-5.0373	2.415e-04	163	down

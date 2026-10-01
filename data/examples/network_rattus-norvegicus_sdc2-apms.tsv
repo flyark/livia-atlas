@@ -1,0 +1,46 @@
+# Cardiac syndecan-2 interactome from adult rat left ventricle lysates: three affinity purification approaches (IP of endogenous syndecan-2, IP of recombinant GST-syndecan-2, pull-down with the syndecan-2 cytoplasmic peptide) followed by MS, biological triplicates
+# Mathiesen SB, Lunde M, Stensland M, et al. 2020. The Cardiac Syndecan-2 Interactome. Front Cell Dev Biol 8:792. https://doi.org/10.3389/fcell.2020.00792
+# Source: Table_1.XLSX (Supplementary Table S1), sheets "Novel MS partnes" and "Litterature partners" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7483480/supplementaryFiles)
+# Cutoff: identified in IP-SDC2 and in either IP-GST or the SDC2cyt pull-down, nuclear/ribosomal/mitochondrial proteins excluded (the paper's criteria): 30 novel partners, plus the 9 literature partners the paper found by AP-MS and includes in its cardiac interactome (Fig. 4B), plus the bait; gene symbols and UniProt IDs as given in the source (human orthologs; first symbol kept where two are given); score = IP-SDC2 vs IP-IgG t-test difference (blank where not significant or not detected)
+# Licensed CC BY 4.0
+protein	uniprot	role	partner_class	IP-SDC2 vs IP-IgG t-test difference
+SDC2		bait		1.404
+AP2A2	O94973	prey	novel MS partner	0.2163
+CAVIN1	Q6NZI2	prey	novel MS partner	0.1646
+CAVIN2	O95810	prey	novel MS partner	0.1805
+CAVIN4	A2AMM0	prey	novel MS partner	0.1997
+CDC42BPB	Q9Y5S2	prey	novel MS partner	0.3359
+DDX19A	Q9NUU7	prey	novel MS partner	0.2141
+DUSP3	P51452	prey	novel MS partner	0.07534
+EIF4E	P06730	prey	novel MS partner	0.1795
+EIF4G3	O43432	prey	novel MS partner	0.6404
+GPHN	Q9NQX3	prey	novel MS partner	1.068
+JPH2	Q9BR39	prey	novel MS partner	0.2197
+NHLRC1	Q6VVB1	prey	novel MS partner	0.5698
+NSF	P46459	prey	novel MS partner	0.3263
+MYL12A	P19105	prey	novel MS partner	0.2822
+PABPC4	Q13310	prey	novel MS partner	0.2588
+PFDN2	Q9UHV9	prey	novel MS partner	0.2424
+PHACTR2	O75167	prey	novel MS partner	0.5666
+PLEC	Q15149	prey	novel MS partner	0.393
+PPP2CA	P67775	prey	novel MS partner	0.2052
+PRPSAP2	O60256	prey	novel MS partner	1.315
+PSMC5	P62195	prey	novel MS partner	0.2846
+PSMD11	O00231	prey	novel MS partner	0.1578
+REEP5	Q00765	prey	novel MS partner	0.1911
+RRAD	P55042	prey	novel MS partner	0.223
+SNRPD2	P62316	prey	novel MS partner	0.4363
+SPHKAP	Q2M3C7	prey	novel MS partner	0.4259
+SPTBN2	O15020	prey	novel MS partner	0.3253
+TJP1	Q07157	prey	novel MS partner	0.4732
+TRIM21	P19474	prey	novel MS partner	0.953
+UBAP2L	Q14157	prey	novel MS partner	0.243
+CDC42		prey	literature partner found by AP-MS	
+CTTN		prey	literature partner found by AP-MS	0.22
+EPB41L1		prey	literature partner found by AP-MS	
+EZR		prey	literature partner found by AP-MS	
+ITGB1		prey	literature partner found by AP-MS	
+MMP2		prey	literature partner found by AP-MS	
+MMP9		prey	literature partner found by AP-MS	
+RAC1		prey	literature partner found by AP-MS	
+SDCBP		prey	literature partner found by AP-MS	0.134

@@ -1,0 +1,107 @@
+# Pseudomonas aeruginosa ATCC 27853 proteins that change in abundance when the bacterium is grown in Aspergillus fumigatus culture filtrate rather than its own culture filtrate (label-free LC-MS/MS)
+# Margalit A, Carolan JC, Sheehan D, Kavanagh K. 2020. The Aspergillus fumigatus secretome alters the proteome of Pseudomonas aeruginosa to stimulate bacterial growth: implications for co-infection. Mol Cell Proteomics 19:1346-1359. https://doi.org/10.1074/mcp.RA120.002059
+# Source: Supplemental Dataset 2B (159691_1_supp_526316_q9yjv8.xlsx in mmc1.zip), sheet "A. fum CuF v P. aer CuF" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8015003/supplementaryFiles)
+# Cutoff: the table as published, which the legend defines as t-test P < 0.05 with at least a 2-fold relative difference; 704 proteins pass, so the top 50 in each direction by the published Difference (log2) are kept
+# Licensed CC BY 4.0; values as published
+# Columns: protein = Majority protein IDs as published (UniProt accession); gene = Gene name as published; uniprot = the accession matched to the species index; difference = published log2 difference; minus_log10_p = published -log10 P value; direction = sign of the difference
+protein	gene	uniprot	difference	minus_log10_p	direction
+Q9HW45	xenB	Q9HW45	8.249	5.443	increased
+Q9HTS9	PA5271		7.248	5.829	increased
+Q9I0Y9	mexE	Q9I0Y9	7.048	4.968	increased
+Q9I1L3	PA2260		6.074	3.107	increased
+Q9I4I1	nrdA	Q9I4I1	6.065	5.557	increased
+Q9HUU8	ureA	Q9HUU8	5.481	4.832	increased
+Q9I5F7	PA0781	Q9I5F7	5.469	2.514	increased
+Q9I0L8	clpA	Q9I0L8	5.411	4.823	increased
+Q9HTZ9	PA5190	Q9HTZ9	5.278	4.669	increased
+G3XD89	oprC	G3XD89	5.271	4.472	increased
+Q9I0L4	idh	Q9I0L4	5.06	2.346	increased
+Q9I2Z1	PA1746	Q9I2Z1	5.049	6.93	increased
+Q9I6Z1	PA0141	Q9I6Z1	5.024	4.346	increased
+Q9I352	PA1673	Q9I352	4.934	6.812	increased
+G3XCX1	narG	G3XCX1	4.922	4.573	increased
+Q9HY25	rpmE2	Q9HY25	4.913	7.117	increased
+Q9I5E4	PA0794	Q9I5E4	4.714	4.981	increased
+P27726	gap	P27726	4.659	1.833	increased
+P47204	ftsZ	P47204	4.53	6.216	increased
+Q9I410	PA1334	Q9I410	4.501	5.021	increased
+Q9I078	PA2765		4.474	3.802	increased
+Q9I2T9	lon	Q9I2T9	4.449	3.344	increased
+Q9HX98	moaB1	Q9HX98	4.414	3.737	increased
+P57708	ispF	P57708	4.406	4.193	increased
+Q9HVX7	zapE	Q9HVX7	4.371	4.338	increased
+Q9HYL2	nosZ	Q9HYL2	4.361	3.389	increased
+Q9I3G1	ccoO2	Q9I3G1	4.359	5.16	increased
+Q9I6Z2	ahpF	Q9I6Z2	4.321	4.473	increased
+Q9I0Q6	PA2580	Q9I0Q6	4.273	4.158	increased
+Q9I7C2	gyrB	Q9I7C2	4.222	5.034	increased
+Q9HT40	PA5534		4.149	3.985	increased
+Q9HZQ2	cobW	Q9HZQ2	4.136	4.773	increased
+Q9HWW1	oprG	Q9HWW1	4.113	2.722	increased
+Q9HY24	PA3602	Q9HY24	4.11	4.102	increased
+O50273	cysD	O50273	4.05	6.606	increased
+Q9I1Z6	PA2119		4.043	5.044	increased
+G3XD17	dsbC	G3XD17	4.042	2.809	increased
+Q9I3G2	ccoP2	Q9I3G2	4.042	6.645	increased
+Q9HV68	panD	Q9HV68	4.029	5.626	increased
+Q9I4I2	nrdB	Q9I4I2	4.008	5.527	increased
+Q9HT76	nrdJa	Q9HT76	4.001	7.205	increased
+O50274	cysNC	O50274	3.986	3.969	increased
+Q9HVK8	PA4576		3.976	4.681	increased
+P72174	uvrB	P72174	3.922	2.198	increased
+Q51487	oprM	Q51487	3.904	2.228	increased
+P77915	hemN	P77915	3.878	4.537	increased
+Q9I4A4	PA1234	Q9I4A4	3.868	4.213	increased
+Q51576	PA3106	Q51576	3.83	4.174	increased
+Q9I5F9	lon	Q9I5F9	3.827	2.544	increased
+P14532	ccpA	P14532	3.81	3.313	increased
+Q9I1R6	PA2201		-9.18	8.077	decreased
+Q9I2C5	exaB	Q9I2C5	-8.806	7.729	decreased
+Q9I2C6	PA1981	Q9I2C6	-7.621	6.388	decreased
+Q9I1U4	PA2171	Q9I1U4	-6.207	5.515	decreased
+Q9HUC3	phaF	Q9HUC3	-6.045	4.741	decreased
+Q9I3Y8	PA1356		-5.416	5.296	decreased
+Q9I5I9	sdsA1		-5.37	4.545	decreased
+Q9HT89	PA5481		-5.068	6.082	decreased
+Q9HX60	PA3956	Q9HX60	-4.881	6.955	decreased
+Q9HVL1	PA4573		-4.878	4.176	decreased
+Q9HX02	eutC	Q9HX02	-4.853	4.639	decreased
+P29369	agmR	P29369	-4.736	5.483	decreased
+P26876	lip	P26876	-4.613	2.474	decreased
+Q9HX34	PA3986		-4.574	3.716	decreased
+Q9I673	PA0444	Q9I673	-4.492	6.313	decreased
+Q9HUL2	motB	Q9HUL2	-4.396	3.836	decreased
+Q9HU47	PA5137		-4.329	4.675	decreased
+Q9I2B2	PA1997	Q9I2B2	-4.208	5.076	decreased
+Q9HZC8	PA3080		-4.143	3.609	decreased
+Q9HYW8	PA3273		-4.044	2.611	decreased
+Q9HYI8	PA3417	Q9HYI8	-4.04	4.594	decreased
+Q9I3L8	PA1494		-4.027	2.107	decreased
+Q9I5X9	PA0557		-3.998	3.052	decreased
+Q9HUE1	PA5028	Q9HUE1	-3.927	5.583	decreased
+Q9HZC7	PA3081	Q9HZC7	-3.917	4.111	decreased
+Q9I4J6	PA1139	Q9I4J6	-3.882	5.708	decreased
+Q9I7B9	PA0007	Q9I7B9	-3.87	3.691	decreased
+Q9I3Z1	PA1353		-3.837	4.003	decreased
+Q9Z4J7	exaA	Q9Z4J7	-3.704	4.328	decreased
+Q9HZP5	PA2953	Q9HZP5	-3.687	5.675	decreased
+Q9I149	PA2433		-3.68	1.273	decreased
+Q9I118	PA2464		-3.667	4.314	decreased
+Q9I6V6	aer2	Q9I6V6	-3.659	3.166	decreased
+Q9I676	dht	Q9I676	-3.626	1.382	decreased
+Q9HV81	PA4717		-3.542	5.345	decreased
+Q9I4M3	PA1112		-3.524	2.852	decreased
+P38107	mucA	P38107	-3.488	4.398	decreased
+Q9I576	hpd	Q9I576	-3.479	6.521	decreased
+Q9I1Y1	PA2134		-3.458	5.262	decreased
+Q9HU32	PA5152	Q9HU32	-3.428	5.186	decreased
+Q9HYI7	ldh	Q9HYI7	-3.411	5.297	decreased
+Q9I013	htpX	Q9I013	-3.408	2.432	decreased
+Q9HTG8	PA5396		-3.357	3.767	decreased
+Q9HXV2	PA3688		-3.342	4.424	decreased
+Q9I4G4	napB	Q9I4G4	-3.312	4.418	decreased
+P32722	oprD	P32722	-3.284	3.087	decreased
+Q9HYR9	clpP2	Q9HYR9	-3.226	3.699	decreased
+Q9HVG6	PA4625		-3.18	2.931	decreased
+G3XCW5	PA3031		-3.12	1.148	decreased
+Q9I6B1	PA0384		-3.093	1.521	decreased

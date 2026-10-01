@@ -1,0 +1,146 @@
+# Example: Streptococcus pneumoniae TIGR4 genes whose transposon mutants changed in abundance during incubation in human saliva, from a genome-wide transposon-sequencing screen.
+# Source: Verhagen LM, de Jonge MI, Burghout P, Schraa K, Spagnuolo L, Mennens S, Eleveld MJ, van der Gaast-de Jongh CE, Zomer A, Hermans PWM, Bootsma HJ (2014) Genome-wide identification of genes essential for the survival of Streptococcus pneumoniae in human saliva. PLoS One 9:e89541. https://doi.org/10.1371/journal.pone.0089541
+# Table S1 (pone.0089541.s001.xlsx): all listed genes with a TIGR4 locus tag (140 rows), the authors' own hit list; no further cutoff applied. Licensed CC BY (Creative Commons Attribution License, as stated in the article); values as published.
+# Strain-ortholog mapping: D39 (UniProt proteome UP000001452) and TIGR4 (UP000000585) proteins were matched to the R6 index proteins by blastp best hit, keeping hits with at least 95% identity over at least 90% of both sequences; their locus tags are used as index synonyms.
+# Columns: gene = TIGR4 locus tag as given; name and product = as published; log2FC = the first log2 fold change column of the table (start versus 37 degrees C with CO2), as published. 100 of 140 listed genes map to the species index.
+gene	name	product	log2FC
+SP_0788	metG	methionyl-tRNA synthetase	-1.289
+SP_1024	glyA	serine hydroxymethyltransferase	-1.286
+SP_1306		NAD(p)-specific glutamate dehydrogenase (nad(p)h-dependent glutamate dehydrogenase)	-1.195
+SP_1370	aroK	shikimate kinase	-1.005
+SP_1374	aroC	chorismate synthase	-1.639
+SP_1375	aroB	3-dehydroquinate synthase	-0.99
+SP_1376	aroE	shikimate 5-dehydrogenase	-1.141
+SP_1377	aroD	3-dehydroquinate dehydratase, type I	-1.625
+SP_1445		GMP synthase [glutamine-hydrolyzing] (Glutamineamidotransferase) (GMP synthetase)	-2.295
+SP_1467		SNO glutamine amidotransferase family superfamily	-1.94
+SP_1544		aspartate aminotransferase (transaminase a) (aspat)	-2.601
+SP_0828	rpiA	ribose 5-phosphate isomerase A	-7.864
+SP_0330	regR	sugar binding transcriptional regulator RegR	-1.23
+SP_1068	ppc	phosphoenolpyruvate carboxylase	-5.102
+SP_1724		sucrose-6-phosphate hydrolase (Sucrase) (Invertase)	-1.66
+SP_1883	treC	alpha,alpha-phosphotrehalase	-1.189
+SP_2030	tkt	transketolase	-10.978
+SP_1247	smc	chromosome segregation protein SMC	-1.202
+SP_1875	scpB	segregation and condensation protein B	-1.133
+SP_1876	scpA	segregation and condensation protein A	-1.276
+SP_0037	plsX	fatty acid/phospholipid synthesis protein PlsX	-1.588
+SP_0107		LysM domain protein	-1.03
+SP_0199		cardiolipin synthase	-1.138
+SP_0266	glmS	glutamine-fructose-6-phosphate transaminase (isomerizing)	-1.499
+SP_0349	cpsD	tyrosine-protein kinase CpsD	-3.372
+SP_0369	pbp1A	penicillin-binding protein 1a	-1.065
+SP_0416		transcriptional regulator	-1.926
+SP_0457		undecaprenyl-diphosphatase (Undecaprenyl pyrophosphatephosphatase)	-3.032
+SP_0615	murM	serine/alanine-adding enzyme MurM	-0.874
+SP_0616	murN	alanine-adding enzyme MurN	-1.566
+SP_0676		regulatory function on capsule expression	-1.078
+SP_0872	dacA	D-alanyl-D-alanine carboxypeptidase	
+SP_1412	lgt	prolipoprotein diacylglyceryl transferase	-2.416
+SP_1479	pgdA	peptidoglycan GlcNAc deacetylase	-1.279
+SP_1893		O-antigen polymerase family	-5.695
+SP_2010	pbp2A	penicillin-binding protein 2A	-2.5
+SP_2056	nagA	N-acetylglucosamine-6-phosphate deacetylase	-1.85
+SP_2057	oatA	peptidoglycan O-acetyltransferase	-1.009
+SP_0010		beta-lactamase class A	-2.223
+SP_0928	lspA	signal peptidase II	-2.787
+SP_1112		degV family protein	-3.619
+SP_0944	pyrH	UMP kinase	-1.19
+SP_1278	pyrR	bifunctional protein PyrR	-1.812
+SP_1588		probable pyridine nucleotide-disulfide oxidoreductase YkgC	-1.386
+SP_0012	hptS	hypoxanthine phosphoribosyltransferase	-2.373
+SP_0189	spx	regulatory protein spx	-3.246
+SP_0800		conserved hypothetical protein	
+SP_0799	ciaH	sensor protein CiaH	-3.167
+SP_0400	tig	trigger factor	-1.448
+SP_0442		alkaline shock protein	-1.685
+SP_0730	spxB	pyruvate oxidase	-1.764
+SP_0766		superoxide dismutase [Mn] (General stress protein 24)(GSP24)	-2.518
+SP_0784	gor	glutathione-disulfide reductase	-6.738
+SP_0975	rnr	ribonuclease R	
+SP_0976	smpB	SsrA-binding protein	-1.524
+SP_1362	mecA	adapter protein MecA	-1.824
+SP_1563		thioredoxin reductase	-1.299
+SP_1570		conserved hypothetical protein	
+SP_2188	hslO	chaperonin HslO	-1.189
+SP_2194	clpB	ClpB protein	-1.469
+SP_2195	ctsR	transcriptional regulator CtsR	-0.928
+SP_0006	mfd	transcription-repair coupling factor	
+SP_0120	gidA	tRNA uridine 5-carboxymethylaminomethyl modification enzyme GidA	-2.108
+SP_0681	typA	GTP-binding protein TypA/BipA	-1.385
+SP_0929	rluD	ribosomal large subunit pseudouridine synthase D	
+SP_0960	rpmI	ribosomal protein L35	
+SP_1016	trmE	tRNA modification GTPase TrmE	-2.083
+SP_1944	tsaE	tRNA threonylcarbamoyl adenosine modification protein TsaE 	-1.472
+SP_2189		tRNA-dihydrouridine synthase B	
+SP_0004	ychF	GTP-binding protein YchF	-1.491
+SP_0007		S4 domain protein	-1.4
+SP_0079		potassium uptake protein, Trk family	-2.399
+SP_0148		ABC transporter substrate-binding protein - amino acid transport	-4.947
+SP_0149		lipoprotein	-0.981
+SP_1002	adcA	zinc-binding lipoprotein AdcA	-1.036
+SP_1069		ABC transporter substrate binding protein	-1.191
+SP_1070		ABC-type transporter	-1.537
+SP_1071		ABC transporter, ATP-binding protein	-1.307
+SP_1396	pstB	phosphate ABC transporter, ATP-binding protein	-1.038
+SP_1397	pstB	phosphate ABC transporter, ATP-binding protein	-1.081
+SP_1398	pstA	phosphate ABC transporter, permease protein PstA	-1.702
+SP_1399	pstC	phosphate ABC transporter, permease protein PstC	-1.257
+SP_1400	pstS	phosphate-binding protein PstS 1 (PBP 1)	-1.351
+SP_1401		conserved hypothetical protein	-1.684
+SP_1505		transport protein	-2.778
+SP_1566		P-loop ATPase family protein	
+SP_1597		conserved hypothetical protein	-1.33
+SP_1649	psaC	manganese transport system membrane protein MntB	-4.605
+SP_1650	psaA	manganese ABC transporter substrate-binding lipoprotein (Adhesin B) (Saliva-binding protein)	-7.172
+SP_1887	amiF	oligopeptide transport ATP-binding protein AmiF	-3.004
+SP_1888	amiE	oligopeptide transport ATP-binding protein OppD	-2.777
+SP_1889	amiD	oligopeptide transport system permease protein AmiD	-3.163
+SP_1890	amiC	oligopeptide transport system permease protein AmiC	-2.967
+SP_1891	amiA	AmiA protein	-0.963
+SP_2219		ABC transporter permease protein	-1.425
+SP_2220	cbiO1	cobalt import ATP-binding protein CbiO 1	-1.894
+SP_2221	cbiO2	cobalt import ATP-binding protein CbiO 2	-1.259
+SP_2230		ATPase component of ABC transporters with duplicated ATPase domains	
+SP_2231		ABC transporter, permease component	
+SP_1468		pyridoxine biosynthesis protein	-1.986
+SP_1982		thiamine pyrophosphokinase	
+SP_0160		conserved hypothetical protein	-1.098
+SP_0374		conserved hypothetical protein	
+SP_0682		conserved hypothetical protein	
+SP_0879		conserved hypothetical protein	-1.873
+SP_0989		adp-ribose pyrophosphatase (adp-ribose diphosphatase)	
+SP_1106		conserved hypothetical protein	-2.386
+SP_1127		conserved hypothetical protein	-1.054
+SP_1210		bacteriocin immunity protein	-1.145
+SP_1298		DHH subfamily 1 protein	-1.664
+SP_1393		transcriptional regulator GntR family	-3.675
+SP_1465		conserved hypothetical protein	-1.066
+SP_1466		hemolysin-3 (Hemolysin III) (Hly-III)	-4.926
+SP_1482		oxidoreductase	
+SP_1483		dead rna helicase	
+SP_1506		3-carboxymuconate cyclase	-6.351
+SP_1558		conserved hypothetical protein	-1.042
+SP_1733	stkP	protein phosphatase PrpC	-7.123
+SP_1739		conserved hypothetical protein	-4.455
+SP_1879		phosphodiesterase, family	-1.116
+SP_1922		conserved hypothetical protein	-1.717
+SP_1980		3'-5' exoribonuclease YhaM	-1.099
+SP_2020		transcriptional regulator, GntR family	-1.013
+SP_2027		morn motif family protein	-1.757
+SP_2028		phosphotyrosine protein phosphatase	-1.342
+SP_2115		conserved hypothetical protein	
+SP_2223		conserved hypothetical protein	-1.036
+SP_2224		peptidase, M16 family	-1.381
+SP_2225		peptidase, M16 family	-1.248
+SP_0502	glnA	glutamine synthetase, type I	
+SP_2186	glpK	glycerol kinase	
+SP_1026		pneumococcal vaccine antigen A	1.089
+SP_2173	dltD	D-alanine transfer from undecaprenol-phosphate to the poly	
+SP_2174	dltC	D-alanyl carrier protein	
+SP_2175	dltB	protein DltB	
+SP_2176	dltA	D-alanine-activating enzyme	
+SP_2177		conserved hypothetical protein	
+SP_1839		ABC transporter, ATP-binding protein	
+SP_1840		ABC transporter, ATP-binding protein	
+SP_0822		conserved hypothetical protein	

@@ -1,0 +1,134 @@
+# Haemophilus influenzae 86-028NP proteins that differ in abundance between biofilm and planktonic growth, from metabolic labeling (14N/15N) and mass spectrometry of three biological replicates
+# Post DMB, Held JM, Ketterer MR, Phillips NJ, Sahu A, Apicella MA, Gibson BW. 2014. Comparative analyses of proteins from Haemophilus influenzae biofilm and planktonic populations using metabolic labeling and mass spectrometry. BMC Microbiol 14:329. https://doi.org/10.1186/s12866-014-0329-9
+# Source: Additional Tables 3, 6 and 9 (12866_2014_329_MOESM3_ESM.xlsx, _MOESM6_ESM.xlsx, _MOESM9_ESM.xlsx), the per-replicate lists of differentially expressed proteins (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4302520/supplementaryFiles)
+# Cutoff: the published per-replicate lists, which the table legends define as P value for the H:L ratio <= 0.05 with EF < 2; the union of the three replicates is kept, 127 proteins (68, 24 and 64 per replicate), with the number of replicates each one passed in
+# Licensed CC BY 4.0; values as published
+# Columns: locus_tag and gene = 86-028NP locus tag and gene name for the published accession (RefSeq CDS annotation of CP000057.2); uniprot = the Rd KW20 protein in the species index, by blastp best hit of the 86-028NP protein against the index at >= 80% identity and >= 80% coverage of both sequences; accession = Accession # as published; protein_name as published; mean_biofilm_planktonic_ratio = mean of the published H:L ratios over the replicates the protein passed in; replicates = how many of the three it passed in
+locus_tag	gene	uniprot	accession	protein_name	mean_biofilm_planktonic_ratio	replicates	direction
+NTHI0001	gapA	P44304	AAX87004.1	glyceraldehyde 3-phosphate dehydrogenase	0.7358	2	higher in planktonic
+NTHI0029	citF	P44459	AAX87025.1	citrate lyase alpha chain	1.544	2	higher in biofilm
+NTHI0045	mreB	P44474	AAX87040.1	rod shape-determining protein MreB	1.414	1	higher in biofilm
+NTHI0091	cysS	P43816	AAX87080.1	cysteinyl-tRNA synthetase	0.6201	1	higher in planktonic
+NTHI0200	serS	P43833	AAX87177.1	Seryl-tRNA synthetase	1.25	1	higher in biofilm
+NTHI0208	znuA	P44526	AAX87184.1	high-affinity zinc uptake system protein ZnuA	0.7665	1	higher in planktonic
+NTHI0232		P44542	AAX87206.1	putative sialic acid transporter, TRAP-type C4-dicarboxylate transport system, periplasmic component	0.6498	2	higher in planktonic
+NTHI0237	hflC	P44545	AAX87210.1	HflC	1.217	1	higher in biofilm
+NTHI0239	hflK	P44546	AAX87211.1	HflK	1.36	1	higher in biofilm
+NTHI0254	nqrA	P43955	AAX87223.1	Na(+)-translocating NADH-quinone reductase subunit A	0.8435	1	higher in planktonic
+NTHI0269	pflB	P43753	AAX87237.1	formate acetyltransferase	0.7906	1	higher in planktonic
+NTHI0285	fldA	P44562	AAX87248.1	flavodoxin	0.6782	1	higher in planktonic
+NTHI0303	nadN		AAX87263.1	NAD nucleotidase	1.775	3	higher in biofilm
+NTHI0312	prlC		AAX87272.1	oligopeptidase A	1.325	2	higher in biofilm
+NTHI0334	pnp		AAX87290.1	polyribonucleotide nucleotidyltransferase	1.176	2	higher in biofilm
+NTHI0337	deaD	P44586	AAX87292.1	Cold-shock DEAD-box protein A homolog	0.5237	1	higher in planktonic
+NTHI0355	uvrA	P44410	AAX87308.1	UvrABC system protein A	1.279	1	higher in biofilm
+NTHI0362	dapA		AAX87314.1	dihydrodipicolinate synthase	0.6597	1	higher in planktonic
+NTHI0370	hxuB	P44601	AAX87322.1	heme/hemopexin-binding protein B	1.452	1	higher in biofilm
+NTHI0435	aspS	P43817	AAX87376.1	aspartyl-tRNA synthetase	0.8458	1	higher in planktonic
+NTHI0468	adk	P24323	AAX87406.1	adenylate kinase	0.6045	2	higher in planktonic
+NTHI0481	hfeA	Q57449	AAX87417.1	putative periplasmic chelated iron binding protein	1.309	1	higher in biofilm
+NTHI0490			AAX87425.1	conserved hypothetical protein	0.7302	1	higher in planktonic
+NTHI0510	lcfA	P46450	AAX87445.1	long-chain-fatty-acid--CoA ligase	1.597	1	higher in biofilm
+NTHI0513			AAX87448.1	predicted GTPase, probable translation factor	0.7435	1	higher in planktonic
+NTHI0517		P44683	AAX87451.1	conserved hypothetical cupin superfamily metalloenzyme	1.36	1	higher in biofilm
+NTHI0538	rne	P44443	AAX87467.1	ribonuclease E	1.139	1	higher in biofilm
+NTHI0554	hupA		AAX87482.1	DNA-binding protein HU	1.307	1	higher in biofilm
+NTHI0596	serA	P43885	AAX87519.1	D-3-phosphoglycerate dehydrogenase	0.5368	1	higher in planktonic
+NTHI0632	rbsB	P44737	AAX87555.1	Ribose-binding periplasmic protein	0.6758	1	higher in planktonic
+NTHI0641	rpoB	P43738	AAX87564.1	DNA-directed RNA polymerase beta chain	1.246	2	higher in biofilm
+NTHI0644	deoD		AAX87567.1	Purine nucleoside phosphorylase	0.6478	1	higher in planktonic
+NTHI0650	fba	P44429	AAX87573.1	fructose-bisphosphate aldolase	0.6407	2	higher in planktonic
+NTHI0651	pgk	P43726	AAX87574.1	phosphoglycerate kinase	0.7467	1	higher in planktonic
+NTHI0657	rpsU	P44386	AAX87580.1	30S ribosomal protein S21	0.494	1	higher in planktonic
+NTHI0660	aspA		AAX87583.1	aspartate ammonia-lyase	0.6962	1	higher in planktonic
+NTHI0668	groES	P43734	AAX87591.1	10 kDa chaperonin	0.4223	1	higher in planktonic
+NTHI0669	groEL	P43733	AAX87592.1	60 kDa chaperonin	1.515	1	higher in biofilm
+NTHI0670	rplI	P44349	AAX87593.1	50S ribosomal protein L9	1.31	1	higher in biofilm
+NTHI0738	pepE		AAX87652.1	peptidase E	0.5203	1	higher in planktonic
+NTHI0741	cpdB		AAX87655.1	2',3'-cyclic-nucleotide 2'-phosphodiesterase	0.6907	2	higher in planktonic
+NTHI0746	rpsG	P44376	AAX87660.1	30S ribosomal protein S7	1.813	1	higher in biofilm
+NTHI0747	fusA	P43925	AAX87661.1	elongation factor G	0.6854	2	higher in planktonic
+NTHI0748	tufB2	P43926	AAX87662.1	elongation factor Tu	0.8028	2	higher in planktonic
+NTHI0759	rplJ	P44350	AAX87670.1	50S ribosomal protein L10	0.674	1	higher in planktonic
+NTHI0797	pepD		AAX87706.1	aminoacyl-histidine dipeptidase	1.322	1	higher in biofilm
+NTHI0800	tpiA	P43727	AAX87709.1	triosephosphate isomerase	0.6402	1	higher in planktonic
+NTHI0804	ilvC	P44822	AAX87713.1	ketol-acid reductoisomerase	1.259	1	higher in biofilm
+NTHI0809	glpT	P96335	AAX87717.1	glycerol-3-phosphate transporter	1.45	1	higher in biofilm
+NTHI0811	glpQ	Q06282	AAX87718.1	glycerophosphoryl diester phosphodiesterase precursor	1.698	2	higher in biofilm
+NTHI0834	mutS	P44834	AAX87735.1	DNA mismatch repair protein MutS	2.913	1	higher in biofilm
+NTHI0843	tig	P44837	AAX87741.1	trigger factor	0.6392	1	higher in planktonic
+NTHI0849	vacJ	P44042	AAX87746.1	VacJ lipoprotein	1.576	1	higher in biofilm
+NTHI0888	proS	P43830	AAX87782.1	prolyl-tRNA synthetase	2.004	1	higher in biofilm
+NTHI0900	secB	P44853	AAX87793.1	protein-export protein SecB	1.406	1	higher in biofilm
+NTHI0904	plsB	P44857	AAX87797.1	glycerol-3-phosphate acyltransferase	1.503	1	higher in biofilm
+NTHI0929	ftsY	P44870	AAX87816.1	cell division protein FtsY	0.5591	1	higher in planktonic
+NTHI0938	rplC	P44344	AAX87825.1	50S ribosomal protein L3	1.534	1	higher in biofilm
+NTHI0951	rplN	P66067	AAX87836.1	50S ribosomal protein L14	0.7133	1	higher in planktonic
+NTHI0953	rplE	P44346	AAX87838.1	50S ribosomal protein L5	0.7387	1	higher in planktonic
+NTHI0954	rpsN	P44381	AAX87839.1	30S ribosomal protein S14	0.4659	1	higher in planktonic
+NTHI0966	rplQ	P44355	AAX87851.1	50S ribosomal protein L17	0.655	1	higher in planktonic
+NTHI0972	frr	P44307	AAX87855.1	ribosome recycling factor	0.6742	3	higher in planktonic
+NTHI0973	pckA	P43923	AAX87856.1	phosphoenolpyruvate carboxykinase	0.5743	1	higher in planktonic
+NTHI0980	pepP	P44881	AAX87863.1	Xaa-Pro aminopeptidase	1.511	1	higher in biofilm
+NTHI0987	mglB	P44883	AAX87869.1	D-galactose-binding periplasmic protein precursor	0.6121	2	higher in planktonic
+NTHI1002	frdA	P44894	AAX87882.1	fumarate reductase flavoprotein subunit	0.5389	1	higher in planktonic
+NTHI1021	hbpA	P33950	AAX87899.1	heme-binding protein A	1.727	1	higher in biofilm
+NTHI1022			AAX87900.1	putative heme iron utilization protein	0.8215	1	higher in planktonic
+NTHI1033	typA	P44910	AAX87910.1	GTP-binding protein TypA/ BipA	0.6774	1	higher in planktonic
+NTHI1036	glnA	P43794	AAX87912.1	glutamine synthetase	1.795	2	higher in biofilm
+NTHI1038	pepB		AAX87914.1	peptidase B	1.522	1	higher in biofilm
+NTHI1044	ispB		AAX87920.1	octaprenyl-diphosphate synthase	0.707	1	higher in planktonic
+NTHI1047	arcA	P44918	AAX87923.1	aerobic respiration control protein ArcA	0.3591	2	higher in planktonic
+NTHI1054	glyA	P43844	AAX87928.1	Serine hydroxymethyltransferase	0.7517	1	higher in planktonic
+NTHI1081	tsf	P43894	AAX87952.1	elongation factor Ts	0.5873	2	higher in planktonic
+NTHI1084		P44935	AAX87955.1	protective surface antigen D15	1.44	1	higher in biofilm
+NTHI1099	hktE	P44390	AAX87967.1	catalase	0.7567	1	higher in planktonic
+NTHI1103	eno		AAX87971.1	enolase	0.7933	2	higher in planktonic
+NTHI1154	pfkA	P43863	AAX88019.1	6-phosphofructokinase	0.521	1	higher in planktonic
+NTHI1166	dnaN	P43744	AAX88029.1	DNA polymerase III, beta chain	0.8091	1	higher in planktonic
+NTHI1168	tbp1	P44970	AAX88031.1	transferrin-binding protein 1	1.859	1	higher in biofilm
+NTHI1194			AAX88050.1	conserved hypothetical protein	0.7983	1	higher in planktonic
+NTHI1238	pyrG	P44341	AAX88085.1	CTP synthase	0.6166	1	higher in planktonic
+NTHI1265	ligN	P43813	AAX88107.1	DNA ligase	2.257	1	higher in biofilm
+NTHI1292	oppA		AAX88127.1	periplasmic oligopeptide-binding protein	0.6567	2	higher in planktonic
+NTHI1293	talB	P45055	AAX88128.1	transaldolase	0.5495	1	higher in planktonic
+NTHI1310	ftsA	P45068	AAX88143.1	cell division protein FtsA	0.7627	1	higher in planktonic
+NTHI1327	trxB	P43788	AAX88159.1	thioredoxin reductase	0.5641	1	higher in planktonic
+NTHI1328			AAX88160.1	thioredoxin domain-containing protein	0.7828	1	higher in planktonic
+NTHI1332	ompP5	P43840	AAX88164.1	Outer membrane protein P5	0.5774	1	higher in planktonic
+NTHI1375	ackA	P44406	AAX88202.1	acetate kinase	0.6274	2	higher in planktonic
+NTHI1381	mdh	P44427	AAX88208.1	malate dehydrogenase	0.6627	1	higher in planktonic
+NTHI1384	dsbC	P45111	AAX88211.1	thiol:disulfide interchange protein DsbC	0.5752	1	higher in planktonic
+NTHI1390	hup	P45114	AAX88215.1	heme utilization protein	1.373	1	higher in biofilm
+NTHI1391			AAX88216.1	putative L-lactate permease	1.816	2	higher in biofilm
+NTHI1432	tyrS		AAX88252.1	tyrosyl-tRNA synthetase	0.6253	1	higher in planktonic
+NTHI1433	prsA	P44328	AAX88253.1	Ribose-phosphate pyrophosphokinase	0.6884	2	higher in planktonic
+NTHI1439			AAX88259.1	conserved hypothetical phosphate transport regulator	0.6532	1	higher in planktonic
+NTHI1464	hns		AAX88280.1	DNA-binding protein H-NS homolog	1.398	1	higher in biofilm
+NTHI1470	argS	P43832	AAX88285.1	arginyl-tRNA synthetase	0.7397	1	higher in planktonic
+NTHI1479	pykA	P43924	AAX88293.1	pyruvate kinase	0.7158	1	higher in planktonic
+NTHI1625	pheT	P43820	AAX88424.1	phenylalanyl-tRNA synthetase beta chain	2.109	1	higher in biofilm
+NTHI1658	greA	P43881	AAX88453.1	transcription elongation factor GreA	1.598	1	higher in biofilm
+NTHI1749	fumC		AAX88535.1	fumarate hydratase class II	0.5908	1	higher in planktonic
+NTHI1760	valS	P43834	AAX88543.1	valyl-tRNA synthetase	0.8319	1	higher in planktonic
+NTHI1773	ftnA		AAX88551.1	ferritin like protein 1	0.766	1	higher in planktonic
+NTHI1774	pstS	P45192	AAX88552.1	phosphate-binding periplasmic protein precursor PstS	0.7067	2	higher in planktonic
+NTHI1784			AAX88561.1	cell division protein MukB	1.177	1	higher in biofilm
+NTHI1798	acpD		AAX88571.1	probable acyl carrier protein phosphodiesterase	1.495	1	higher in biofilm
+NTHI1799	topA	P43012	AAX88572.1	DNA topoisomerase I	1.384	1	higher in biofilm
+NTHI1802	pntA	P43842	AAX88575.1	NAD(P) transhydrogenase subunit alpha	1.524	2	higher in biofilm
+NTHI1809	glgB	P45177	AAX88580.1	1,4-alpha-glucan branching enzyme	0.6553	1	higher in planktonic
+NTHI1820	potA	P45171	AAX88590.1	spermidine/putrescine transport ATP-binding protein	1.343	1	higher in biofilm
+NTHI1823	potD1	P45168	AAX88593.1	spermidine/putrescine-binding periplasmic protein 1 precursor	2.041	1	higher in biofilm
+NTHI1845	nusA	P43915	AAX88611.1	transcription elongation protein NusA	1.439	1	higher in biofilm
+NTHI1891	siaB	Q57140	AAX88649.1	acylneuraminate cytidylyltransferase	0.7039	1	higher in planktonic
+NTHI1892		Q57431	AAX88650.1	putative NAD(P)H nitroreductase	1.802	1	higher in biofilm
+NTHI1894	metG	P43828	AAX88652.1	methionyl-tRNA synthetase	1.291	1	higher in biofilm
+NTHI1906	mfd	P45128	AAX88664.1	transcription-repair coupling factor	1.484	1	higher in biofilm
+NTHI1920	mao2	P43837	AAX88675.1	NADP-dependent malic enzyme	1.559	1	higher in biofilm
+NTHI1929	dnaK	P43736	AAX88683.1	chaperone protein DnaK	1.416	1	higher in biofilm
+NTHI1952	dld	P45295	AAX88704.1	D-lactate dehydrogenase	1.259	1	higher in biofilm
+NTHI1960			AAX88712.1	predicted periplasmic or secreted lipoprotein	1.566	1	higher in biofilm
+NTHI1979			AAX88729.1	predicted regulator of cell morphogenesis and NO signaling	0.5797	2	higher in planktonic
+NTHI2000	modA	P45323	AAX88749.1	molybdate-binding periplasmic protein	0.5747	2	higher in planktonic
+NTHI2013	pepA		AAX88760.1	cytosol aminopeptidase	0.7201	1	higher in planktonic
