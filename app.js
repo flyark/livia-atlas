@@ -3848,9 +3848,10 @@ async function viewNetwork(spId, q) {
 // GoatCounter counts page loads only; the atlas routes by #/…, so each view is counted by hand, on the atlas's own
 // counter (livia-atlas.goatcounter.com). A view is counted by its species only ('/human', '/virus', …; every other page as
 // '/'): the counter shows how much each species is used, never which protein, pair or virus a reader opened.
-const COUNT_SP = new Set(['human', 'fly', 'worm', 'zebrafish', 'yeast', 'virus']);
-function trackView() {
-  const sp = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0], path = COUNT_SP.has(sp) ? `/${sp}` : '/';
+// Every species of the registry counts under its own id (the list grows with the Atlas; a fixed list sent new species to '/').
+async function trackView() {
+  const reg = await registry().catch(() => null), ids = new Set(((reg && reg.species) || []).map((x) => x.id));
+  const sp = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0], path = ids.has(sp) ? `/${sp}` : '/';
   const count = () => window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path, title: path === '/' ? 'LIVIA Atlas' : `${sp} · LIVIA Atlas` });
   if (window.goatcounter && window.goatcounter.count) count(); else window.addEventListener('load', () => setTimeout(count, 0), { once: true });
 }
