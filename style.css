@@ -558,3 +558,5 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 /* network: the partner count, its unit, auto and Suggest in one evenly spaced group */
 #nw-k-wrap { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 #nw-k-wrap .ctl { gap: 4px; }
+
+.miss[hidden] { display: none !important; }   /* the not-found box keeps its own display rule; hidden must still win */
