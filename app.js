@@ -1080,7 +1080,7 @@ async function viewHome() {
       <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
         <span><b>${fmtInt(tot('proteins'))}</b> proteins</span></div>
       <div class="chips">${coreSpecies(reg).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<a class="lbl sp-link" href="#/${x.id}" title="every ${esc(x.label.toLowerCase())} protein, screen and network">${esc(x.label)}</a>` : ''}`
-        + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}${[...new Set((reg.species || []).filter((x) => x.group).map((x) => x.group))].map((g) => `<span class="chip-group"><a class="lbl sp-link" href="#/species" title="one AlphaFold Database heterodimer screen per species">${esc(g)} (${fmtInt(reg.species.filter((x) => x.group === g).length)})</a></span>`).join('')}</div>
+        + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}${[...new Set((reg.species || []).filter((x) => x.group).map((x) => x.group))].sort((a, b) => (b === 'Model organisms') - (a === 'Model organisms')).map((g) => `<span class="chip-group"><a class="lbl sp-link" href="#/species" title="one AlphaFold Database heterodimer screen per species">${esc(g === 'Model organisms' ? 'More model organisms' : g)} (${fmtInt(reg.species.filter((x) => x.group === g).length)})</a></span>`).join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
     </section>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
@@ -1238,13 +1238,16 @@ async function setCards(gen, reg) {
   }
 }
 
-async function viewSpeciesList() {   // every species: the Atlas's own first, then each group (one AlphaFold Database screen per species)
+async function viewSpeciesList() {   // every species: model organisms (the Atlas's own screens, then AFDB ones), other species, viral proteomes
   const gen = ROUTE, reg = await registry(), list = reg.species || [];
-  const groups = [['Interactome screens', coreSpecies(reg).filter((x) => !x.heading)], ['Viral proteomes', coreSpecies(reg).filter((x) => x.heading)], ...[...new Set(list.filter((x) => x.group).map((x) => x.group))].map((g) => [g, list.filter((x) => x.group === g).sort((a, b) => a.name.localeCompare(b.name))])];
-  const row = (x) => `<tr><td><a href="#/${x.id}"><i>${esc(x.name)}</i></a>${x.label !== x.name ? ` <span class="muted">${esc(x.label)}</span>` : ''}</td><td class="n" data-tx>${x.taxon || ''}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`;
+  const byName = (a, b) => a.name.localeCompare(b.name), inGroup = (g) => list.filter((x) => x.group === g).sort(byName);
+  const groups = [['Model organisms', [...coreSpecies(reg).filter((x) => !x.heading), ...inGroup('Model organisms')]], ['Other species', inGroup('Other species')], ['Viral proteomes', coreSpecies(reg).filter((x) => x.heading)]];
+  const AFDB_NOTE = 'One AlphaFold Database heterodimer screen per species, one AlphaFold-Multimer model per pair, rescored with lis.py.';
+  const row = (x) => `<tr><td><a href="#/${x.id}"><i>${esc(x.name)}</i></a>${x.label !== x.name ? ` <span class="muted">${esc(x.label)}</span>` : ''}${x.group === 'Model organisms' ? ' <span class="tag-afdb" title="' + AFDB_NOTE + '">AFDB, one model per pair</span>' : ''}</td><td class="n" data-tx>${x.taxon || ''}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`;
+  const note = (xs) => (xs.every((x) => x.group) ? AFDB_NOTE : xs.some((x) => x.group) ? 'Species marked AFDB have one AlphaFold Database heterodimer screen, one AlphaFold-Multimer model per pair, rescored with lis.py; the others are the Atlas\'s interactome screens.' : '');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Species</div>
     <div class="card"><h1 style="margin:0">Species</h1>
-    ${groups.filter(([, xs]) => xs.length).map(([g, xs]) => `<h2 style="margin:18px 0 6px">${esc(g)} <span class="muted">${fmtInt(xs.length)}</span></h2>${xs.some((x) => x.group) ? '<p class="muted" style="margin:0 0 8px">One AlphaFold Database heterodimer screen per species, one AlphaFold-Multimer model per pair, rescored with lis.py.</p>' : ''}
+    ${groups.filter(([, xs]) => xs.length).map(([g, xs]) => `<h2 style="margin:18px 0 6px">${esc(g)} <span class="muted">${fmtInt(xs.length)}</span></h2>${note(xs) ? `<p class="muted" style="margin:0 0 8px">${note(xs)}</p>` : ''}
       <div class="tbl-wrap"><table class="sets spl"><thead><tr><th>Species</th><th class="n">Taxon</th><th class="n">Proteins</th><th class="n">Protein pairs</th><th class="n">Past 10% FPR</th></tr></thead><tbody>${xs.map(row).join('')}</tbody></table></div>`).join('')}</div>`;
   const ms = await Promise.all(list.map((x) => speciesManifest(x.id).catch(() => null))); if (stale(gen)) return;
   list.forEach((x, i) => { const m = ms[i], tr = app.querySelector(`table.spl a[href="#/${x.id}"]`); if (!m || !tr) return;
