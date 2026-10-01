@@ -472,12 +472,26 @@ async function virusStruct(sp, ia, ib) {
 // An AFDB heterodimer pair (species with one AFDB screen): its model and PAE in the heterodimer release at EBI, addresses from
 // structs/<k>.tsv (pairs past 10% FPR, sharded by the lower proteins.json row // 1000); null below the cutoff.
 const HET_URL = (tar) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers/${tar}`;
+// Each row: a, b, entity, tar, cif_off, cif_len, pae_off, pae_len, then every lis.py score in VMCOL order (build/afdb_struct_scores.py).
+function hetShard(sp, k) {
+  sp.hstr = sp.hstr || new Map();
+  if (!sp.hstr.has(k)) sp.hstr.set(k, getText(sp.base + `structs/${k}.tsv`).then((t) => t.trim().split('\n').slice(1).map((l) => l.split('\t'))).catch(() => []));
+  return sp.hstr.get(k);
+}
+const hetPair = (r) => { const m = {}; VMCOL.forEach((k, n) => { if (r[8 + n] != null && r[8 + n] !== '') m[k] = +r[8 + n]; });
+  return { model: r[2], shown: false, addr: { tar: r[3], cif_off: +r[4], cif_len: +r[5], pae_off: +r[6], pae_len: +r[7] }, m }; };
 async function afdbStruct(sp, ia, ib) {
   if (ia == null || ib == null) return null;
-  const k = Math.floor(Math.min(ia, ib) / 1000); sp.hstr = sp.hstr || new Map();
-  if (!sp.hstr.has(k)) sp.hstr.set(k, getText(sp.base + `structs/${k}.tsv`).then((t) => t.trim().split('\n').slice(1).map((l) => l.split('\t'))).catch(() => []));
-  const r = (await sp.hstr.get(k)).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
-  return r ? { model: r[2], shown: false, addr: { tar: r[3], cif_off: +r[4], cif_len: +r[5], pae_off: +r[6], pae_len: +r[7] } } : null;
+  const r = (await hetShard(sp, Math.floor(Math.min(ia, ib) / 1000))).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
+  return r ? hetPair(r) : null;
+}
+// Every AFDB pair of row i the Atlas indexes (past 10% FPR): its model, archive address and scores, keyed by the partner's row.
+async function afdbPartnerRows(sp, i, partners) {
+  const ks = new Set([Math.floor(i / 1000)]);
+  for (const p of partners) { const r = sp.byKey.get(p.id); if (r) ks.add(Math.floor(Math.min(i, r.i) / 1000)); }
+  const out = new Map();
+  for (const rows of await Promise.all([...ks].map((k) => hetShard(sp, k)))) for (const r of rows) { const a = +r[0], b = +r[1]; if (a === i || b === i) out.set(a === i ? b : a, hetPair(r)); }
+  return out;
 }
 const pairStruct = (sp, ia, ib) => (sp.viruses ? virusStruct(sp, ia, ib) : sp.reg && sp.reg.structs ? afdbStruct(sp, ia, ib) : Promise.resolve(null));
 function structLink(host, x, cls) {
@@ -555,6 +569,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
           const s = (x, y) => (qi ? x : y);
           const p = { partner: key, run: rid, di: part.di, qi, qc, pc, set, tags: runs.get(rid).tags, rank: num(r, 'rank'), iLIS: num(r, 'iLIS'), iLIA: num(r, 'iLIA'), iLISA: num(r, 'iLISA'), ipTM: num(r, 'ipTM'),
             pTM: num(r, 'pTM'), LIS: num(r, 'LIS'), cLIS: num(r, 'cLIS'), LIA: num(r, 'LIA'), cLIA: num(r, 'cLIA'), ipSAE: num(r, 'ipSAE'), actifpTM: num(r, 'actifpTM'),
+            pDockQ: num(r, 'pDockQ'), LIpDockQ: num(r, 'LIpDockQ'), pDockQ2: num(r, 'pDockQ2'), LIpDockQ2: num(r, 'LIpDockQ2'),
             qPl: num(r, s('pLDDT_i', 'pLDDT_j')), pPl: num(r, s('pLDDT_j', 'pLDDT_i')), qLIR: num(r, s('LIR_i', 'LIR_j')), pLIR: num(r, s('LIR_j', 'LIR_i')),
             qcLIR: num(r, s('cLIR_i', 'cLIR_j')), pcLIR: num(r, s('cLIR_j', 'cLIR_i')), qLen: num(r, s('len_i', 'len_j')), pLen: num(r, s('len_j', 'len_i')),
             qL: own(r[H[s('LIR_indices_i', 'LIR_indices_j')]]), pL: own(r[H[s('LIR_indices_j', 'LIR_indices_i')]]),
@@ -587,7 +602,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
           const il = cs.map((p) => p.iLIS || 0), ip = cs.map((p) => p.ipTM || 0);
           const rep = !ps.some((p) => !p.rep), of = rep ? runs.get(runs.get(ps[0].run).repeatOf) : null;   // every run a repeat: same sequences as another partner
           return { id: key, row: sp.byKey.get(key) || null, preds: ps, counted: cs, rep, repOf: of ? of.key : null, runs: ids, src: ps.reduce((m, p) => m | (1 << p.di), 0), best: Math.max(...il), avg: mean(il),
-            ilisaBest: Math.max(...cs.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...cs.map((p) => p.qcLIR || 0)),
+            bm: cs.reduce((t, p) => ((p.iLIS || 0) > (t.iLIS || 0) ? p : t), cs[0]), ilisaBest: Math.max(...cs.map((p) => p.iLISA || 0)), iptmBest: Math.max(...ip), iptmAvg: mean(ip), contacts: Math.max(...cs.map((p) => p.qcLIR || 0)),
             sets: [...new Set(ps.map((p) => p.set).filter(Boolean))] };
         });
       };
@@ -2593,13 +2608,18 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (VX) { const v = sp.viruses.find((x) => (x.members || []).includes(P.i));
     if (v) virusRows(sp, v.taxid).then((rows) => { if (gone()) return; for (const x of rows) { if (x.a === P.i) VX.set(x.b, x); else if (x.b === P.i) VX.set(x.a, x); } drawTable(); }); }
   if (VX) T.sort = 'm:iLIS';
+  // every other protein: the same layout, each score from the partner's best model (highest iLIS) as lis.py wrote it, – where its screen
+  // has no such column; 3D for the AFDB pairs the Atlas indexes (past 10% FPR), read from the release archive at EBI
+  const BCOL = VMCOL.filter((k) => k !== 'iLIS'), SRC = !VX && (SETS || (sp.manifest.datasets || []).length > 1);
+  const AX = !VX && sp.reg && sp.reg.structs ? new Map() : null;
+  if (AX) afdbPartnerRows(sp, P.i, B.partners).then((m) => { if (gone()) return; for (const [j, x] of m) AX.set(j, x); drawTable(); });
   const cols = VX ? [['gene', 'Partner'], ['c', 'Cluster'], ['pair', 'Pair'], ['d3', '3D'], ...VMCOL.map((k) => ['m:' + k, k]), ['contacts', 'Contacts']]
-    : ONE ? [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS'], ['iptmBest', 'ipTM'], ['contacts', 'Contacts']]
-    : [['gene', 'Partner'], ['c', 'Cluster'], ['src', 'Source'], ['name', 'Protein'], ['best', 'iLIS best'], ['avg', 'iLIS avg'], ['iptmBest', 'ipTM best'], ['iptmAvg', 'ipTM avg'], ['contacts', 'Contacts'], ['pass', 'Models past']];
+    : [['gene', 'Partner'], ['c', 'Cluster'], ...(SRC ? [['src', 'Source']] : []), ['pair', 'Pair'], ['d3', '3D'], ['best', ONE ? 'iLIS' : 'iLIS best'], ...(ONE ? [] : [['avg', 'iLIS avg']]),
+      ...BCOL.map((k) => ['b:' + k, k]), ['contacts', 'Contacts'], ...(ONE ? [] : [['pass', 'Models past']])];
   function drawTable() {
     let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length, ...(VX ? (() => { const x = r && VX.get(r.i), o = { vx: x };
       for (const k of VMCOL) o['m:' + k] = x && Number.isFinite(x.m[k]) ? x.m[k] : NaN;
-      o['m:iLIS'] = p.best; o['m:ipTM'] = p.iptmBest; return o; })() : {}) }; });
+      o['m:iLIS'] = p.best; o['m:ipTM'] = p.iptmBest; return o; })() : { ax: r && AX ? AX.get(r.i) : null, ...Object.fromEntries(BCOL.map((k) => ['b:' + k, p.bm && Number.isFinite(p.bm[k]) ? p.bm[k] : NaN])) }) }; });
     if (T.src) list = list.filter((p) => (SETS ? p.sets.includes(T.src) : p.src & T.src));
     if (T.band) list = list.filter((p) => p.best >= CUT[T.band]);
     if (T.filter) { const f = T.filter.toLowerCase(); list = list.filter((p) => p.gene.toLowerCase().includes(f) || (p.name || '').toLowerCase().includes(f) || p.id.toLowerCase().includes(f)); }
@@ -2607,14 +2627,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const per = 40, pages = Math.max(1, Math.ceil(list.length / per)); T.page = Math.min(T.page, pages - 1);
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
     $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${KB ? ` · reported in BioGRID ${esc(KB.release)}: <span class="kb-mark kb-p">physical</span> <span class="kb-mark kb-g">genetic</span> <span class="kb-mark kb-p kb-g">both</span>` : ''}`;
-    $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${(['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) || c.startsWith('m:')) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
+    $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${(['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) || c.startsWith('m:') || c.startsWith('b:')) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
       const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
-      const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best);
+      const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best);   // one isoform of the partner: its models' best and average, ipTM best, contacts
         return `<tr class="iso-sub"><td class="g">${esc(x.label)}</td><td>${c ? `<span class="mdot" style="background:${clusterColor(c, k)}"></span>${clusterLabel(c, true)}` : '<span class="muted">—</span>'}</td>
-          <td></td><td class="nm">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND_TXT[bb]};font-weight:${BAND_W[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
-          ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td>`}<td class="n v" style="${bandSty(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>
-          ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.ipTM, x.iptmAvg)}">${x.iptmAvg.toFixed(2)}</td>`}<td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
+          ${SRC ? '<td></td>' : ''}<td class="nm" colspan="2">${fmtInt(x.n)} models</td><td class="n v" style="color:${BAND_TXT[bb]};font-weight:${BAND_W[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
+          ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.iLIS, x.avg)}">${x.avg.toFixed(3)}</td>`}${BCOL.map((kk) => (kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, x.iptmBest)}">${x.iptmBest.toFixed(2)}</td>` : '<td></td>')).join('')}
+          <td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
       if (VX) { const x = p.vx, href = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`, kb = kbOf(p.id);
         const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))} (UniProt holds this sequence under several accessions): counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
         return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${p.id}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ` title="${esc(p.name)}"`}>${esc(p.gene)}</a>${same}</td>
@@ -2627,14 +2647,18 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
             : kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, val)}">${vmfmt(kk, val)}</td>` : `<td class="n">${vmfmt(kk, val)}</td>`; }).join('')}
           <td class="n">${fmtInt(p.contacts)}</td></tr>`; }
       const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
-      return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}"${(() => { const kb = kbOf(p.id); return kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''; })()}>${esc(p.gene)}</a>${tag}${same}</td>
+      const href = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`, kb = kbOf(p.id), ax = p.ax;
+      return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${p.id}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ` title="${esc(p.name)}"`}>${esc(p.gene)}</a>${tag}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
-        <td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td><td class="nm" title="${esc(p.name)}">${esc(short(p.name))}</td>
-        <td class="n v" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</td>
+        ${SRC ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
+        <td><a href="${href}" title="interaction residues">residues</a></td>
+        <td>${ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`
+          : `<span class="muted" title="${AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'}">–</span>`}</td>
+        <td class="n v"><a href="${href}" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</a></td>
         ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.iLIS, p.avg)}" title="${bandLabel[bandIn(FPR_AVG.iLIS, p.avg)]} (average-model cutoffs)">${p.avg.toFixed(3)}</td>`}
-        <td class="n v" style="${bandSty(FPR.ipTM, p.iptmBest)}" title="${bandLabel[bandIn(FPR.ipTM, p.iptmBest)]}">${p.iptmBest.toFixed(2)}</td>
-        ${ONE ? '' : `<td class="n v" style="${bandSty(FPR_AVG.ipTM, p.iptmAvg)}" title="${bandLabel[bandIn(FPR_AVG.ipTM, p.iptmAvg)]} (average-model cutoffs)">${p.iptmAvg.toFixed(2)}</td>`}
+        ${BCOL.map((kk) => { const val = p['b:' + kk]; return kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, val)}" title="the best model's ipTM">${vmfmt(kk, val)}</td>` : `<td class="n">${vmfmt(kk, val)}</td>`; }).join('')}
         <td class="n">${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td>`}</tr>${subs}`; }).join('')}</tbody>`;
+    if (AX) $('#pt').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = [...AX.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
     if (VX) $('#pt').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = [...VX.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
     $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
     $('#pt').querySelectorAll('th').forEach((th) => th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : (c === 'gene' || c === 'name' || c === 'c'); T.sort = c; drawTable(); });
