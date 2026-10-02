@@ -1487,10 +1487,12 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
-function runClip(rows, gene, cut) {
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20260925p'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (w) { clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); } }; }
+function runClip(rows, gene, cut, progress = null) {   // progress({ n, pairs, thinned }): what the worker is about to cluster
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20261002a'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (!w) return;
+    if (e.data.stage) { if (w.progress) w.progress(e.data); return; }
+    clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); }; }
   const id = ++clipSeq;
-  return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
+  return new Promise((resolve, reject) => { clipWait.set(id, { resolve, reject, progress }); CLIPW.postMessage({ id, livia: LIVIA, rows: rows.filter((r) => +r.iLIS >= cut), gene, cut }); });
 }
 function stopClip() {   // leaving a page mid-clustering: drop its job, so the next page does not wait behind it
   if (!CLIPW || !clipWait.size) return;
@@ -2031,7 +2033,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const SETS = B.sets.length ? B.sets : null;   // a screen with categories: the Source column shows them
   const gname = (key) => { const r = sp.byKey.get(key); return r ? r.gene : key; };
   const range = (k) => Array.from({ length: k }, (_, i) => i + 1);
-  let cut = 10, M = null, ACTIVE = new Set(), NET = null, infoOpen = new Set();
+  let cut = 10, M = null, ACTIVE = new Set(), NET = null, infoOpen = new Set(), clipJob = 0;   // clipJob: the clustering run the page waits for; an older one's result is dropped
   const predCluster = new Map(), partnerCluster = new Map();
   // A partner folded as several constructs (a receptor's isoforms, its fragments): each one's scores and cluster, so a
   // partner that binds through one isoform and not another shows it. One row per gene; the constructs open under it.
@@ -2109,10 +2111,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   /* cLIP ─ clustering + everything drawn from it */
   async function cluster() {
+    const job = ++clipJob; stopClip();   // a new cutoff or construct: the run still going is dropped, not queued behind
     $('#clip-sub').textContent = 'Clustering…';
     let m = null, err = null;
-    try { m = await trackLoad(`Clustering ${P.gene}'s partners (${cut}% FPR)`, runClip(CQ.rows, B.qLabel, CUT[cut]), 'task'); } catch (e) { err = e; }
-    if (gone()) return;
+    const progress = (s) => { if (gone() || job !== clipJob) return;
+      $('#clip-sub').textContent = `Clustering ${fmtInt(s.n)} predictions past the ${cut}% FPR cutoff…${s.thinned ? ` (one model per pair, because ${fmtInt(s.thinned.from)} passed)` : ''}`; };
+    try { m = await trackLoad(`Clustering ${P.gene}'s partners (${cut}% FPR)`, runClip(CQ.rows, B.qLabel, CUT[cut], progress), 'task'); } catch (e) { err = e; }
+    if (gone() || job !== clipJob) return;
+    if (location.search.includes('debug')) window.__clip = m;   // a local test reads the fingerprints and labels
     M = m; if (err) $('#clip-sub').textContent = `Clustering failed: ${err.message}`;
     predCluster.clear(); partnerCluster.clear();
     if (M) {
@@ -2122,7 +2128,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       ACTIVE = new Set(range(M.k));
     }
     const n = M ? M.fingerprints.length : 0, k = clustered() ? M.k : 0;
-    if (M) $('#clip-sub').textContent = clustered() ? `${fmtInt(n)} predictions of ${fmtInt(partnerCluster.size)} partners past iLIS ${CUT[cut]} (${cut}% FPR) · query ${fmtInt(M.plen)} aa · cosine distance, average linkage, silhouette`
+    const thin = M && M.thinned ? (M.thinned.how === 'rank1' ? ` · one model per pair, its rank-1 model, because ${fmtInt(M.thinned.from)} predictions passed (the frequency and the sites count pairs)`
+      : ` · the ${fmtInt(M.thinned.to)} pairs with the highest iLIS, one model each, because ${fmtInt(M.thinned.from)} predictions passed`) : '';
+    if (M) $('#clip-sub').textContent = clustered() ? `${fmtInt(n)} predictions of ${fmtInt(partnerCluster.size)} partners past iLIS ${CUT[cut]} (${cut}% FPR) · query ${fmtInt(M.plen)} aa · cosine distance, average linkage, silhouette${thin}`
       : `${n ? 'Only one prediction' : 'No predictions'} past the ${cut}% FPR cutoff, so there is nothing to cluster.`;
     const want = !clustered() && V.mode === 'cluster' ? 'plddt' : clustered() && V.auto && S.mapOK ? 'cluster' : null;   // no clusters: show pLDDT until there are
     if (want) { V.auto = want === 'plddt'; V.mode = want; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === want)); }
