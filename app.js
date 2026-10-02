@@ -139,12 +139,13 @@ const regDataset = async (id) => (await registry()).datasets.find((d) => d.id ==
 const regSpecies = async (id) => ((await registry()).species || []).find((s) => s.id === id);
 const coreSpecies = (reg) => (reg.species || []).filter((s) => !s.group);   // the Atlas's own screens; grouped species (one AFDB screen each) are listed on #/species
 
-async function dataset(id) {   // one screen: its manifest; proteins.json only when a screen page needs it
-  if (DSC[id]) return DSC[id];
-  const reg = await regDataset(id);
-  if (!reg || !reg.base) throw new Error(`Unknown dataset “${id}”.`);
-  const base = new URL(DEV && reg.dev ? reg.dev : reg.base, location.href).href;   // each screen is its own Pages repo
-  DSC[id] = { id, reg, base, manifest: await getJSON(base + 'manifest.json'), raw: new Map(), rows: null };
+function dataset(id) {   // one screen: its manifest; proteins.json only when a screen page needs it. One load however many callers ask at once
+  if (!DSC[id]) DSC[id] = (async () => {
+    const reg = await regDataset(id);
+    if (!reg || !reg.base) throw new Error(`Unknown dataset “${id}”.`);
+    const base = new URL(DEV && reg.dev ? reg.dev : reg.base, location.href).href;   // each screen is its own Pages repo
+    return { id, reg, base, manifest: await getJSON(base + 'manifest.json'), raw: new Map(), rows: null };
+  })().catch((e) => { delete DSC[id]; throw e; });
   return DSC[id];
 }
 // Thematic sets of a dataset (sets.json): views over the one dataset, each a list of its prediction runs — a screen the
@@ -416,6 +417,8 @@ async function csvRows(zip, csvName) {   // a bundle's lis.py rows; merged() rea
 // round in one, keeps every model; each keeps its screen and chain order (its "run") and rank. A gene-keyed bundle
 // (FlyPredictome) holds every construct of the gene: its construct table says which construct belongs to which gene,
 // and each prediction also keeps its screen category (set) and prediction run (batch).
+// The lis.py columns cLIP clusters on (clip-pipeline.js reads nothing else): kept per prediction past the cutoff, posted to the worker
+const CLIP_COLS = ['name', 'rank', 'iLIS', 'iLIA', 'iLISA', 'ipTM', 'len_i', 'len_j', 'LIR_indices_i', 'LIR_indices_j', 'cLIR_indices_i', 'cLIR_indices_j'];
 function merged(sp, P, scope = '', whole = false) {   // scope: one screen of the species (its dataset id) or one thematic set; whole: every isoform file
   const ck = P.key + (scope ? '?' + scope : '') + (whole ? '#whole' : ''), onlyDi = scope ? sp.dsIds.indexOf(scope) : -1, setId = onlyDi >= 0 ? '' : scope;
   if (!sp.cache.has(ck)) {
@@ -598,7 +601,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         if (C) for (const [nm, c] of C) cons.set(nm, c);
         const keyOf = (nm) => { const c = C && C.get(nm); if (c) return c.key; const r = sp.byName.get(nm); return r ? r.key : nm; };
         for (const [nm, s] of part.raw.seqs) seqs.set(C ? nm : keyOf(nm), s);   // gene-keyed: the reference under the gene key, constructs by name
-        const H = part.raw.H, hdr = part.raw.header.map(own), num = (r, c) => (H[c] == null || r[H[c]] === '' ? NaN : +r[H[c]]);
+        const H = part.raw.H, hdr = CLIP_COLS.map(own), keep = CLIP_COLS.map((c) => H[c]), num = (r, c) => (H[c] == null || r[H[c]] === '' ? NaN : +r[H[c]]);
         for (const r of part.raw.rows) {
           const nm = r[H.name], at = nm.indexOf('___'), a = nm.slice(0, at), b = nm.slice(at + 3), qi = C ? keyOf(a) === P.key : a === part.name;
           if (!qi && (C ? keyOf(b) !== P.key : b !== part.name)) continue;
@@ -617,7 +620,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
             qcLIR: num(r, s('cLIR_i', 'cLIR_j')), pcLIR: num(r, s('cLIR_j', 'cLIR_i')), qLen: num(r, s('len_i', 'len_j')), pLen: num(r, s('len_j', 'len_i')),
             qL: own(r[H[s('LIR_indices_i', 'LIR_indices_j')]]), pL: own(r[H[s('LIR_indices_j', 'LIR_indices_i')]]),
             qC: own(r[H[s('cLIR_indices_i', 'cLIR_indices_j')]]), pC: own(r[H[s('cLIR_indices_j', 'cLIR_indices_i')]]), row: null, hdr: null };
-          if (p.iLIS >= CUT[10]) { p.row = r.map(own); p.hdr = hdr; }   // only rows past the lowest cutoff are ever clustered
+          if (p.iLIS >= CUT[10]) { p.row = keep.map((k) => (k == null ? '' : own(r[k]))); p.hdr = hdr; }   // only rows past the lowest cutoff are ever clustered
           if (!Number.isFinite(p.iLISA)) p.iLISA = (p.iLIS || 0) * (p.iLIA || 0);
           p.sp = pairKey(part.raw.seqs, qi ? a : b, qi ? b : a, p.qLen, p.pLen, C);
           preds.push(p);
@@ -1138,9 +1141,11 @@ const TRY = { human: ['TP53', 'MDM2', 'CTNNB1', 'MAPK3', 'SMAD4', 'KRAS'], fly: 
   virus: [['Herpes simplex virus 1', 'taxon/10299'], ['Epstein-Barr virus', 'taxon/10377'], ['Poliovirus', 'taxon/12081'], ['Mpox virus', 'taxon/619591']] };   // viruses open their network page; each shows reported complexes at the default 1% FPR
 async function viewHome() {
   // Totals come from the species manifests alone; the species indexes (search) load once the page is idle.
-  const gen = ROUTE, reg = await registry(), all = await Promise.all((reg.species || []).map((x) => speciesManifest(x.id)));
+  const gen = ROUTE, reg = await registry();
   if (stale(gen)) return;
-  const tot = (k) => all.reduce((s, m) => s + (m.counts[k] || 0), 0);
+  const tot = (k) => `<b data-tot="${k}">…</b>`;   // filled once every species manifest has arrived; the page paints first
+  const fmtInt0 = fmtInt; { const fill = (all) => { if (stale(gen)) return; for (const el of app.querySelectorAll('[data-tot]')) el.textContent = fmtInt0(all.reduce((s, m) => s + (m.counts[el.dataset.tot] || 0), 0)); };
+    Promise.all((reg.species || []).map((x) => speciesManifest(x.id).catch(() => ({ counts: {} })))).then(fill); }
   app.innerHTML = `
     <section class="hero hero-center">
       <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
@@ -1152,8 +1157,8 @@ async function viewHome() {
         (Kim &amp; Perrimon, 2026, <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">bioRxiv</a>).</p>
       <p class="dev-note">Under active development: data and pages may change daily, sometimes hourly.</p>
       <div id="home-search" class="hero-search"></div>
-      <div class="totals"><span><b>${fmtInt(tot('runs'))}</b> predictions</span><span><b>${fmtInt(tot('predictions'))}</b> models</span><span><b>${fmtInt(tot('pairs'))}</b> protein pairs</span>
-        <span><b>${fmtInt(tot('proteins'))}</b> proteins</span></div>
+      <div class="totals"><span>${tot('runs')} predictions</span><span>${tot('predictions')} models</span><span>${tot('pairs')} protein pairs</span>
+        <span>${tot('proteins')} proteins</span></div>
       <div class="chips">${coreSpecies(reg).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<a class="lbl sp-link" href="#/${x.id}" title="every ${esc(x.label.toLowerCase())} protein, screen and network">${esc(x.label)}</a>` : ''}`
         + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}${[...new Set((reg.species || []).filter((x) => x.group).map((x) => x.group))].sort((a, b) => (b === 'Model organisms') - (a === 'Model organisms')).map((g) => `<span class="chip-group"><a class="lbl sp-link" href="#/species" title="one AlphaFold Database heterodimer screen per species">${esc(g === 'Model organisms' ? 'More model organisms' : g)} (${fmtInt(reg.species.filter((x) => x.group === g).length)})</a></span>`).join('')}</div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
@@ -1183,8 +1188,10 @@ function dsCard(d) {
     <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div></div>`;
 }
 async function fillDsStats() {
-  for (const d of (await registry()).datasets.filter((x) => x.status === 'live')) {
-    let s; try { s = await dataset(d.id); } catch (e) { continue; }
+  const live = (await registry()).datasets.filter((x) => x.status === 'live');
+  const got = await Promise.all(live.map((d) => dataset(d.id).catch(() => null)));   // every manifest at once, then the cards in order
+  for (const [n, d] of live.entries()) {
+    const s = got[n]; if (!s) continue;
     const k = s.manifest.counts, box = app.querySelector(`[data-ds="${d.id}"] .stats`);
     if (box) box.innerHTML = `<div><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div><b>${fmtInt(k.pairsFpr10)}</b><span>past 10% FPR${cutNote(10)}</span></div>`;
     const TS = await setsOf(s).catch(() => null), scr = TS ? TS.list.filter((x) => x.type === 'screen') : [];   // its named screens, as thematic sets
@@ -1295,8 +1302,10 @@ async function viewDatasets() {
 // A screen kept as a set inside a larger dataset (the fly kinase–kinase and kinase–TF screens in FlyPredictome) gets its
 // own card, placed after the other screens of its kind; it cites what they cite.
 async function setCards(gen, reg) {
-  for (const d of reg.datasets.filter((x) => x.status === 'live')) {
-    let TS; try { TS = await setsOf(await dataset(d.id)); } catch (e) { continue; }
+  const live = reg.datasets.filter((x) => x.status === 'live');
+  const all = await Promise.all(live.map((d) => dataset(d.id).then(setsOf).catch(() => null)));   // every set list at once, then the cards in order
+  for (const [n, d] of live.entries()) {
+    const TS = all[n];
     if (stale(gen) || !TS) continue;
     const spx = (reg.species || []).find((s) => s.id === d.species);
     for (const s of TS.list.filter((x) => x.type === 'screen')) {
@@ -1516,6 +1525,7 @@ function stopClip() {   // leaving a page mid-clustering: drop its job, so the n
   for (const w of clipWait.values()) w.reject(new Error('The page changed.'));
   clipWait.clear();
 }
+const COLL = new Intl.Collator(undefined, { numeric: true });   // one collator for name sorts (UL2 before UL10); a fresh localeCompare per pair is 40x slower
 const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the fingerprint: dendrogram + cluster strip / y axis live in AXL
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
 // Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS on a color
@@ -2584,13 +2594,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#sc-y').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
   $('#sc-x').innerHTML = present.map((k) => `<option value="${k}">${METRICS[k]}</option>`).join('');
   $('#sc-y').value = 'iLIS'; $('#sc-x').value = present.includes('iLISA') ? 'iLISA' : 'ipTM';
+  let sugSorted = null;   // the partners in name order, sorted once per partner list (a numeric collator; the sort was the slow part on hubs)
   const suggestItems = () => {   // each partner once, by its best iLIS, in name order; the dot is its cluster's color
-    const by = new Map(); for (const p of B.partners) { const n = gname(p.id), cur = by.get(n); if (!cur || p.best > cur.best) by.set(n, p); }
-    return [...by].sort((a, b) => a[0].localeCompare(b[0], undefined, { numeric: true })).map(([n, p]) => { const c = partnerCluster.get(p.id), k = M ? M.k : 1;   // UL2 before UL10
+    if (!sugSorted || sugSorted.src !== B.partners) { const by = new Map(); for (const p of B.partners) { const n = gname(p.id), cur = by.get(n); if (!cur || p.best > cur.best) by.set(n, p); }
+      sugSorted = { src: B.partners, list: [...by].sort((a, b) => COLL.compare(a[0], b[0])) }; }   // UL2 before UL10
+    return sugSorted.list.map(([n, p]) => { const c = partnerCluster.get(p.id), k = M ? M.k : 1;
       return { name: n, best: p.best, dot: c ? clusterColor(c, k) : '#DDE3EA', sty: bandSty(FPR.iLIS, p.best), tip: `iLIS ${p.best.toFixed(3)}: ${bandLabel[bandIn(FPR.iLIS, p.best)]}${c ? ` · ${clusterLabel(c)}` : ''}` }; }); };
   ['#sc-find', '#fp-find', '#res-find'].forEach((q) => partnerSuggest($(q), suggestItems));   // all three Find partner boxes suggest partners with their iLIS
   ['#sc-x', '#sc-y', '#sc-pts'].forEach((s) => { $(s).onchange = () => drawScatter(); });
-  $('#fp-find').oninput = () => { if (clustered()) drawHeatmap(); };
+  { let t; $('#fp-find').oninput = () => { clearTimeout(t); t = setTimeout(() => { if (clustered()) drawHeatmap(); }, 120); }; }   // redraw once the typing pauses
   $('#res-q').onchange = (e) => setRes(e.target.value);
   $('#res-q').onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); setRes(e.target.value); } };
   $('#sc-find').onchange = () => drawScatter();
@@ -2766,7 +2778,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#pt-band').onchange = (e) => { T.band = +e.target.value; T.page = 0; drawTable(); };
   if (SETS) $('#pt-src').innerHTML = `<option value="">all categories</option>${SETS.map((x) => `<option>${esc(x)}</option>`).join('')}`;   // one screen: filter by its categories
   $('#pt-src').onchange = (e) => { T.src = SETS ? e.target.value : +e.target.value; T.page = 0; drawTable(); };
-  $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; drawTable(); };
+  { let t; $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; clearTimeout(t); t = setTimeout(drawTable, 120); }; }   // the table rebuilds once the typing pauses
   $('#pt-showsrc-wrap').hidden = !SRC0; $('#pt-showsrc').onchange = (e) => { T.showSrc = e.target.checked; drawTable(); };
 
   /* network: edge color = what BioGRID reports for the pair, edge width = average iLIS */
@@ -2843,7 +2855,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
   loadStructure();
   cluster();
-  let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
+  let rsz, rszW = window.innerWidth; window.onresize = () => { if (window.innerWidth === rszW) return; rszW = window.innerWidth; clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
 }
 
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
@@ -2896,7 +2908,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   const crumbs = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}${scopeQ}">${esc(P.gene)}</a> / ${O0 ? `<a href="#/${sp.id}/${O.key}">${esc(O.gene)}</a>` : esc(O.gene)}</div>`;
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
   let B;
-  try { B = await merged(sp, P, scope, true); } catch (e) { B = { partners: [] }; }   // every model of the pair: all of a split gene's files
+  try { B = await merged(sp, P, scope); if (B.split) B = await merged(sp, P, scope, true); } catch (e) { B = { partners: [] }; }   // the protein page's entry serves; a split gene reads every isoform file for every model of the pair
   if (stale(gen)) return;
   const part = B.partners.find((p) => p.id === O.key);
   if (!part) { app.innerHTML = crumbs + `<div class="empty">${esc(P.gene)} and ${esc(O.gene)} were not predicted together${scope ? ` in ${esc(label)}. <a href="#/${sp.id}/${P.key}/${O.key}">Every screen</a>` : ' in these screens'}.</div>`; return; }
@@ -3520,7 +3532,7 @@ async function viewNetwork(spId, q) {
       + `<div class="kscan-body">` + svg + `<p class="muted" style="margin:0"><b>How to read it.</b> Along the bottom are each protein’s partners in order, best first. The line shows how often those partners also pair with another protein-of-interest; the gray band shows the same for 100 random lists of proteins with as many partners. A filled dot means clearly more than random. The suggestion is the most partners per protein within that range that still draws about 250 proteins or fewer. It is a guide chosen from these data, not a statistical test.${never != null && never > 0.75 ? ` ${Math.round(100 * never)}% of pairs among these proteins were never folded, so the real sharing may be higher.` : ''}</p></div>`;
     out.querySelectorAll('button[data-k]').forEach((b) => (b.onclick = () => { S.kAuto = false; $('#nw-kauto').checked = false; $('#nw-k').value = b.dataset.k; draw(); }));
   }
-  $('#nw-kscan').onclick = () => draw().then(kScan);   // always the list in the box, drawn first
+  $('#nw-kscan').onclick = () => draw().then(async () => { if (!S.set && TPN == null) { try { TPN = await tested(sp); } catch (e) { TPN = null; } if (SCAN) SCAN.TP = TPN; } return kScan(); });   // always the list in the box, drawn first
   $('#nw-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; S.cut = f === 'c' ? 'c' : +f; [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     $('#nw-cutv').style.display = S.cut === 'c' ? '' : 'none'; redraw(); };
   { let t = 0; $('#nw-cutv').oninput = (e) => { clearTimeout(t); t = setTimeout(() => { const v = parseFloat(e.target.value); if (!Number.isFinite(v)) return;
@@ -3535,7 +3547,7 @@ async function viewNetwork(spId, q) {
   $('#nw-kauto').onchange = (e) => { S.kAuto = e.target.checked; redraw(); };
   const cutV = () => (S.cut === 'c' ? S.cutv : CUT[S.cut]), cutLab = () => (S.cut === 'c' ? 'custom' : `${S.cut}% FPR`);   // the iLIS cutoff in force and its name
   const passE = (e) => e.best >= cutV() && (!S.iptm || (Number.isFinite(e.iptm) && e.iptm >= S.iptm));   // a pair past the cutoff and, when asked, the ipTM
-  let net = null, KBN = null, EB = null, TPN = null;   // TPN: the species' tested pairs (every screen), when the file is there   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
+  let net = null, KBN = undefined, EB = null, TPN = null;   // KBN undefined: BioGRID not read yet (read when a BioGRID option is ticked); null: the species has none   // TPN: the species' tested pairs (every screen), when the file is there   // KBN: this species' BioGRID pairs; EB: its edges (homodimer rings), for the drawing
   // A reported pair that was not predicted past the cutoff is one of two things: folded and scored below the cutoff, or never
   // folded in these screens. edges.tsv holds only pairs past 10% FPR, so the answer comes from one end's own predictions
   // (its bundle lists every partner it was folded with). FOLD: scope|a,b → { st: 'low', best, iptm } | { st: 'none' } | { st: 'err' }
@@ -3617,7 +3629,8 @@ async function viewNetwork(spId, q) {
     if (toks.length > CAP) { S.ids = found.map((r) => r.key).join(','); writeURL(); }   // a long file: the link carries the proteins drawn, not every line
     const howText = `${fmtInt(nFound)} name${nFound === 1 ? '' : 's'} found, by ${[...how].sort((a, b) => b[1] - a[1]).map(([h, n]) => `${h} ${fmtInt(n)}`).join(', ')}${twice ? ` (${fmtInt(twice)} named the same protein twice)` : ''}`;
     status('Reading the edge list…');
-    let E, K, TP; try { [E, K, TP] = await Promise.all([edges(sp, S.set), reported(sp), S.set ? null : tested(sp)]); } catch (e) { status(esc(e.message)); return; }
+    const wantKB = $('#nw-kb').checked || $('#nw-unpred').checked, wantTP = $('#nw-unpred').checked;   // BioGRID (3 MB) and the tested pairs (4 MB) only when an option needs them
+    let E, K, TP; try { [E, K, TP] = await Promise.all([edges(sp, S.set), KBN === undefined && wantKB ? reported(sp) : KBN, S.set ? null : TPN || (wantTP ? tested(sp) : null)]); } catch (e) { status(esc(e.message)); return; }
     KBN = K; EB = E; TPN = TP;
     if (stale(gen)) return;
     let autoNote = '';
@@ -3672,16 +3685,17 @@ async function viewNetwork(spId, q) {
         if ((n || gg) && !has.has(a * sp.rows.length + b)) extra.push({ source: a, target: b, pubs: n, gen: gg, unpred: true }); } }
     const Qin = [...Q].filter((i) => keep.has(i)), added = keep.size - Qin.length, alone = Qin.filter((i) => !links.some((l) => l.source === i || l.target === i)).map(gname);
     status(`${fmtInt(Q.size)} proteins-of-interest${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}`
-      + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : ' · no BioGRID records for this species'}`
+      + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : K === null ? ' · no BioGRID records for this species' : ''}`
       + `${missing.length ? ` · not found: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.slice(0, 30).join(', '))}${alone.length > 30 ? ` and ${fmtInt(alone.length - 30)} more` : ''}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
       + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${lone ? ` · ${fmtInt(lone)} protein${lone === 1 ? '' : 's'} with no pair hidden` : ''}${S.add === 'link' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: fewer partners in between, a higher Min. pairs or a stricter cutoff thins it` : ''}${hopCut ? ' · the search for linking partners stopped at the nearest ones in this dense network' : ''}${autoNote ? ` · ${esc(autoNote)}` : ''}</span>`);
     $('#nw-card').hidden = false;
     if (!links.length) { $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pairs). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); return; }   // the matrix still shows the pairs below this cutoff
-    if (!K) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
+    if (K === null) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
     if (TPN) for (const d of extra) { const k = fkey(d.source, d.target); if (!FOLD.has(k)) FOLD.set(k, TPN.has(d.source, d.target) ? { st: 'low', best: TPN.score ? TPN.score(d.source, d.target) : NaN } : { st: 'none' }); }   // the index says folded or not; the score comes on hover
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed);
   }
-  let heatArgs = null;
+  let heatArgs = null, heatSeen = false;
+  new IntersectionObserver((es) => { if (!heatSeen && heatArgs && es.some((e) => e.isIntersecting)) { heatSeen = true; heatmap(...heatArgs); } }, { rootMargin: '400px' }).observe($('#nw-heat-wrap'));
   // The drawn proteins as a matrix, apart from the network's cutoff: every folded pair colored by its best iLIS on one scale
   // (below 10% FPR from the index of tested pairs); never folded white. Without the index (or with a screen filter) only the
   // edge table's pairs at >= 10% FPR are known, and the rest stay blank. Rows follow the grouping.
@@ -3692,6 +3706,7 @@ async function viewNetwork(spId, q) {
     const ord = [...nodes].sort((a, b) => (gi(a) - gi(b)) || (b.q - a.q) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || a.row.gene.localeCompare(b.row.gene));
     const M = new Map(), key = (a, b) => (a < b ? a + ',' + b : b + ',' + a);
     for (const l of links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; M.set(key(a, b), l); }
+    if (!S.set && TPN == null) { try { TPN = await tested(sp); } catch (e) { TPN = null; } if (SCAN) SCAN.TP = TPN; }   // the matrix marks folded pairs
     const TP = S.set ? null : TPN, cut = cutV(), names = ord.map((d) => d.row.gene);
     const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB;   // the matrix: every pair in the edge table (the screen's, with a filter), apart from the network's cutoff
     const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
@@ -3847,7 +3862,7 @@ async function viewNetwork(spId, q) {
       const ring = g.append('circle').attr('class', 'nw-found').attr('cx', d.x).attr('cy', d.y).attr('r', r(d) + 6).attr('fill', 'none').attr('stroke', '#E4572E').attr('stroke-width', 3).style('pointer-events', 'none');
       ring.transition().delay(550).duration(900).attr('r', r(d) + 16).attr('stroke-opacity', 0.2).transition().duration(600).attr('r', r(d) + 6).attr('stroke-opacity', 1); };
     net = { link, nodes, links, extra, restyle, recolor, focus };
-    heatmap(nodes, links, gk, groups, gname2, deg);
+    heatArgs = [nodes, links, gk, groups, gname2, deg]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
   }
   $('#nw-go').onclick = () => draw();
   $('#nw-eg').onclick = (e) => { e.preventDefault(); $('#nw-ids').value = eg; $('#nw-ids').dispatchEvent(new Event('input', { bubbles: true })); S.autoPick = true; draw(); };   // the suggested proteins, drawn
@@ -3874,7 +3889,7 @@ async function viewNetwork(spId, q) {
     const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
     b.textContent = 'Checking…'; await checkFolded(net.extra.map(e2), (n, of) => { b.textContent = `Checking ${n} of ${of} proteins…`; });
     delete b.dataset.busy; if (net && net.restyle) net.restyle(); };
-  ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if (net && net.restyle) net.restyle(); }; }); $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
+  ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if ($('#nw-kb').checked && KBN === undefined) { draw(); return; } if (net && net.restyle) net.restyle(); }; });   // the first BioGRID tick reads the species file and redraws $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
   $('#nw-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); draw(); } };
   const drawnIds = () => (net ? [...net.nodes].sort((a, b) => (b.q - a.q) || a.row.gene.localeCompare(b.row.gene)).map((d) => d.row.gene) : []);   // yours first, then the added, by name
   // Find: the proteins of the drawn network, with the iLIS of each one's strongest pair here; picking one centers it
