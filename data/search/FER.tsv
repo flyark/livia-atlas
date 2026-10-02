@@ -1,18 +1,187 @@
-FER	arabidopsis-thaliana	Q9SCZ4	FER	Q9SCZ4	2	17	Receptor-like protein kinase FERONIA
-FER	mus-musculus	P70451	Fer	P70451	0	11	Tyrosine-protein kinase Fer
-FER	rattus-norvegicus	P09760	Fer	P09760	0	6	Tyrosine-protein kinase Fer
-FER1	arabidopsis-thaliana	Q39101	FER1	Q39101	1	15	Ferritin-1, chloroplastic
-FER2	arabidopsis-thaliana	Q9SRL5	FER2	Q9SRL5	0	1	Ferritin-2, chloroplastic
-FER2	oryza-sativa-subsp-japonica	Q8L5K0	Fer2	Q8L5K0	0	1	Ferritin
-FER2	zea-mays	P29390	FER2	P29390	0	2	Ferritin-2, chloroplastic
-FER3	arabidopsis-thaliana	Q9LYN2	FER3	Q9LYN2	1	6	Ferritin-3, chloroplastic
-FER4	arabidopsis-thaliana	Q9S756	FER4	Q9S756	0	2	Ferritin-4, chloroplastic
-FERD3L	mus-musculus	Q923Z4	Ferd3l	Q923Z4	1	1	Fer3-like protein
-FERD3L	rattus-norvegicus	D4A114	Ferd3l	D4A114	1	1	Fer3-like bHLH transcription factor
-FERMT1	mus-musculus	P59113	Fermt1	P59113	4	19	Fermitin family homolog 1
-FERMT1	rattus-norvegicus	D3ZTV0	Fermt1	D3ZTV0	6	26	FERM domain containing kindlin 1
-FERMT2	mus-musculus	Q8CIB5	Fermt2	Q8CIB5	9	53	Fermitin family homolog 2
-FERMT2	rattus-norvegicus	A0A0G2JWC7	Fermt2	A0A0G2JWC7	7	39	FERM domain containing kindlin 2
-FERMT3	mus-musculus	Q8K1B8	Fermt3	Q8K1B8	10	35	Fermitin family homolog 3
-FERMT3	rattus-norvegicus	B2GVB9	Fermt3	B2GVB9	9	30	FERM domain containing kindlin 3
-FERRY3	mus-musculus	Q91YN0	Ferry3	Q91YN0	0	1	FERRY endosomal RAB5 effector complex subunit 3
+FER	arabidopsis-thaliana	Q9SCZ4	FER	Q9SCZ4	2	17	Receptor-like protein kinase FERONIA	
+FER	fly	FBgn0000723	FER	P18106	95	1154	Tyrosine-protein kinase Fer (EC 2.7.10.2)	
+FER	human	P16591	FER	P16591	46	1374	Tyrosine-protein kinase Fer (EC 2.7.10.2) (Feline encephalit	
+FER	mus-musculus	P70451	Fer	P70451	0	11	Tyrosine-protein kinase Fer	
+FER	rattus-norvegicus	P09760	Fer	P09760	0	6	Tyrosine-protein kinase Fer	
+FER	zebrafish	A0A8M3ASR9	fer	A0A8M3ASR9	1	32	Tyrosine-protein kinase (EC 2.7.10.2)	
+FER-1-LIKE	human	A0AVI2	FER1L5	A0AVI2	0	3	Fer-1-like protein 5	w
+FER-1-LIKE	human	O75923	DYSF	O75923	0	72	Dysferlin (Dystrophy-associated fer-1-like protein) (Fer-1-l	w
+FER-1-LIKE	human	Q2WGJ9	FER1L6	Q2WGJ9	1	12	Fer-1-like protein 6	w
+FER-1-LIKE	human	Q9HC10	OTOF	Q9HC10	0	17	Otoferlin (Fer-1-like protein 2)	w
+FER-1-LIKE	human	Q9NZM1	MYOF	Q9NZM1	2	89	Myoferlin (Fer-1-like protein 3)	w
+FER-RELATED	worm	Q22146	frk-1	Q22146	0	13	Fer-related kinase 1	w
+FER1	arabidopsis-thaliana	Q39101	FER1	Q39101	1	15	Ferritin-1, chloroplastic	
+FER1	fly	FBgn0037475	Fer1	A0A0B4KFD8	55	379	Pancreas transcription factor 1 subunit alpha (Pancreas-spec	
+FER1HCH	fly	FBgn0015222	Fer1HCH	A0A0B4KI27	12	328	Ferritin (EC 1.16.3.1)	
+FER1L1	human	O75923	DYSF	O75923	0	72		
+FER1L2	human	Q9HC10	OTOF	Q9HC10	0	17		
+FER1L3	human	Q9NZM1	MYOF	Q9NZM1	2	89		
+FER1L5	human	A0AVI2	FER1L5	A0AVI2	0	3	Fer-1-like protein 5	
+FER1L6	human	Q2WGJ9	FER1L6	Q2WGJ9	1	12	Fer-1-like protein 6	
+FER1L6	human	Q8NA97	FER1L6-AS1	Q8NA97	0	3	Putative uncharacterized protein FER1L6-AS1 (FER1L6 antisens	w
+FER1L6	human	Q96M78	FER1L6-AS2	Q96M78	0	3	Putative uncharacterized protein encoded by FER1L6-AS2 (FER1	w
+FER1L6-AS1	human	Q8NA97	FER1L6-AS1	Q8NA97	0	3	Putative uncharacterized protein FER1L6-AS1 (FER1L6 antisens	
+FER1L6-AS2	human	Q96M78	FER1L6-AS2	Q96M78	0	3	Putative uncharacterized protein encoded by FER1L6-AS2 (FER1	
+FER2	arabidopsis-thaliana	Q9SRL5	FER2	Q9SRL5	0	1	Ferritin-2, chloroplastic	
+FER2	fly	FBgn0038402	Fer2	A0A0B4LH78	78	387	48 related 2, isoform D	
+FER2	oryza-sativa-subsp-japonica	Q8L5K0	Fer2	Q8L5K0	0	1	Ferritin	
+FER2	zea-mays	P29390	FER2	P29390	0	2	Ferritin-2, chloroplastic	
+FER2LCH	fly	FBgn0015221	Fer2LCH	A0A0B4KHF0	16	318	Ferritin	
+FER3	arabidopsis-thaliana	Q9LYN2	FER3	Q9LYN2	1	6	Ferritin-3, chloroplastic	
+FER3	fly	FBgn0037937	Fer3	Q9VGJ5	43	378	Protein Fer3 (Basic helix-loop-helix protein N-twist) (Nephe	w
+FER3	fly	FBgn0037937	Fer3	Q9VGJ5	43	378	Protein Fer3 (Basic helix-loop-helix protein N-twist) (Nephe	w
+FER3-LIKE	human	Q96RJ6	FERD3L	Q96RJ6	68	380	Fer3-like protein (Basic helix-loop-helix protein N-twist) (	w
+FER3HCH	fly	FBgn0030449	Fer3HCH	Q9VYH1	2	22	Ferritin (EC 1.16.3.1)	
+FER3L_HUMAN	human	Q96RJ6	FERD3L	Q96RJ6	68	380		
+FER4	arabidopsis-thaliana	Q9S756	FER4	Q9S756	0	2	Ferritin-4, chloroplastic	
+FERD3L	human	Q96RJ6	FERD3L	Q96RJ6	68	380	Fer3-like protein (Basic helix-loop-helix protein N-twist) (	
+FERD3L	mus-musculus	Q923Z4	Ferd3l	Q923Z4	1	1	Fer3-like protein	
+FERD3L	rattus-norvegicus	D4A114	Ferd3l	D4A114	1	1	Fer3-like bHLH transcription factor	
+FERLIN	worm	Q22088	CELE_T01H3.2	Q22088	1	4	Peroxin/Ferlin domain-containing protein	w
+FERM	fly	FBgn0039282	Bili	Q9VBX0	1	5	FERM domain-containing protein 8	w
+FERM	human	A2A2Y4	FRMD3	A2A2Y4	15	72	FERM domain-containing protein 3 (Band 4.1-like protein 4O) 	w
+FERM	human	O94887	FARP2	O94887	25	259	FERM, ARHGEF and pleckstrin domain-containing protein 2 (FER	w
+FERM	human	Q14CM0	FRMPD4	Q14CM0	65	278	FERM and PDZ domain-containing protein 4 (PDZ domain-contain	w
+FERM	human	Q5JV73	FRMPD3	Q5JV73	14	51	FERM and PDZ domain-containing protein 3	w
+FERM	human	Q5SYB0	FRMPD1	Q5SYB0	28	87	FERM and PDZ domain-containing protein 1 (FERM domain-contai	w
+FERM	human	Q68DX3	FRMPD2	Q68DX3	9	49	FERM and PDZ domain-containing protein 2 (PDZ domain-contain	w
+FERM	human	Q6IN97	FRMPD2B	Q6IN97	2	4	Putative protein FRMPD2-like (FERM and PDZ domain-containing	w
+FERM	human	Q6ZUT3	FRMD7	Q6ZUT3	5	34	FERM domain-containing protein 7	w
+FERM	human	Q7Z6J6	FRMD5	Q7Z6J6	22	133	FERM domain-containing protein 5	w
+FERM	human	Q8N878	FRMD1	Q8N878	12	100	FERM domain-containing protein 1	w
+FERM	human	Q96NE9	FRMD6	Q96NE9	36	169	FERM domain-containing protein 6 (Willin)	w
+FERM	human	Q9BZ67	FRMD8	Q9BZ67	15	83	FERM domain-containing protein 8 (Band4.1 inhibitor LRP inte	w
+FERM	human	Q9BZ68	FRMD8P1	Q9BZ68	0	19	Putative FERM domain-containing protein FRMD8P1 (FERM domain	w
+FERM	human	Q9P2Q2	FRMD4A	Q9P2Q2	50	167	FERM domain-containing protein 4A	w
+FERM	human	Q9Y2L6	FRMD4B	Q9Y2L6	42	186	FERM domain-containing protein 4B (GRP1-binding protein GRSP	w
+FERM	human	Q9Y4F1	FARP1	Q9Y4F1	39	329	FERM, ARHGEF and pleckstrin domain-containing protein 1 (Cho	w
+FERM	worm	A0A168H5X3	CELE_H10D18.5	A0A168H5X3	0	1	FERM domain-containing protein	w
+FERM	worm	G5ECW4	CELE_F07C6.4	G5ECW4	1	15	FERM domain-containing protein	w
+FERM	worm	G5EDH0	kri-1	G5EDH0	3	6	FERM domain-containing protein	w
+FERM	worm	H2KYX3	nfm-1	H2KYX3	3	34	FERM domain-containing protein	w
+FERM	worm	H2KYZ7	frm-4	H2KYZ7	0	2	FERM domain-containing protein	w
+FERM	worm	O02254	frm-10	O02254	0	6	FERM domain-containing protein 8	w
+FERM	worm	O61923	C18G1.9	O61923	2	4	FERM domain-containing protein	w
+FERM	worm	P91065	C17H11.4	P91065	0	5	FERM domain-containing protein	w
+FERM	worm	Q8MXF0	frm-8	Q8MXF0	1	4	FERM and PDZ domain-containing protein 4	w
+FERM	worm	Q9XXK4	frm-7	Q9XXK4	2	8	FERM domain-containing protein	w
+FERM	zebrafish	A0A8M9PX64	LOC101882564	A0A8M9PX64	0	27	FERM domain-containing protein 6	w
+FERM	zebrafish	A2CGB3	frmd4a	A2CGB3	6	8	FERM domain-containing protein 4A	w
+FERM	zebrafish	E7F221	frmd8	E7F221	2	9	FERM domain-containing protein 8	w
+FERM	zebrafish	E7FE33	farp2	E7FE33	0	3	FERM, ARHGEF and pleckstrin domain-containing protein 2	w
+FERM	zebrafish	E9QBZ4	fermt1	E9QBZ4	6	23	FERM domain-containing kindlin 1	w
+FERM	zebrafish	F1QPN5	fermt3b	F1QPN5	8	24	FERM domain-containing kindlin 3b	w
+FERM-CONTAINING	human	Q9H329	EPB41L4B	Q9H329	35	137	Band 4.1-like protein 4B (Erythrocyte membrane protein band 	w
+FERM1_HUMAN	human	Q9BQL6	FERMT1	Q9BQL6	21	139		
+FERM2_HUMAN	human	Q96AC1	FERMT2	Q96AC1	27	280		
+FERMENTATION	yeast	P38157	MAL33	P38157	0	3	Maltose fermentation regulatory protein MAL33	w
+FERMENTATION	yeast	P53338	MAL13	P53338	0	3	Maltose fermentation regulatory protein MAL13	w
+FERMENTATION	yeast	Q06595	YPR196W	Q06595	0	1	Maltose fermentation regulatory protein YPR196W	w
+FERMITIN	fly	FBgn0036688	Fit2	Q9VVD2	3	19	Fermitin 2 (LD28629p)	w
+FERMITIN	human	Q86UX7	FERMT3	Q86UX7	48	480	Fermitin family homolog 3 (Kindlin-3) (MIG2-like protein) (U	w
+FERMITIN	human	Q96AC1	FERMT2	Q96AC1	27	280	Fermitin family homolog 2 (Kindlin-2) (Mitogen-inducible gen	w
+FERMITIN	human	Q9BQL6	FERMT1	Q9BQL6	21	139	Fermitin family homolog 1 (Kindlerin) (Kindlin syndrome prot	w
+FERMITIN	zebrafish	A0A8M9Q9W5	fermt3a	A0A8M9Q9W5	8	24	Fermitin family homolog 3	w
+FERMITIN	zebrafish	F1Q8X5	fermt2	F1Q8X5	6	26	Fermitin family homolog 2	w
+FERMITIN-1	fly	FBgn0035498	Fit1	Q9VZI3	3	26	Unc-112-related protein (Fermitin-1)	w
+FERMT1	human	Q9BQL6	FERMT1	Q9BQL6	21	139	Fermitin family homolog 1 (Kindlerin) (Kindlin syndrome prot	
+FERMT1	mus-musculus	P59113	Fermt1	P59113	4	19	Fermitin family homolog 1	
+FERMT1	rattus-norvegicus	D3ZTV0	Fermt1	D3ZTV0	6	26	FERM domain containing kindlin 1	
+FERMT1	zebrafish	E9QBZ4	fermt1	E9QBZ4	6	23	FERM domain-containing kindlin 1	
+FERMT2	human	Q96AC1	FERMT2	Q96AC1	27	280	Fermitin family homolog 2 (Kindlin-2) (Mitogen-inducible gen	
+FERMT2	mus-musculus	Q8CIB5	Fermt2	Q8CIB5	9	53	Fermitin family homolog 2	
+FERMT2	rattus-norvegicus	A0A0G2JWC7	Fermt2	A0A0G2JWC7	7	39	FERM domain containing kindlin 2	
+FERMT2	zebrafish	F1Q8X5	fermt2	F1Q8X5	6	26	Fermitin family homolog 2	
+FERMT3	human	Q86UX7	FERMT3	Q86UX7	48	480	Fermitin family homolog 3 (Kindlin-3) (MIG2-like protein) (U	
+FERMT3	mus-musculus	Q8K1B8	Fermt3	Q8K1B8	10	35	Fermitin family homolog 3	
+FERMT3	rattus-norvegicus	B2GVB9	Fermt3	B2GVB9	9	30	FERM domain containing kindlin 3	
+FERMT3A	zebrafish	A0A8M9Q9W5	fermt3a	A0A8M9Q9W5	8	24	Fermitin family homolog 3	
+FERMT3B	zebrafish	F1QPN5	fermt3b	F1QPN5	8	24	FERM domain-containing kindlin 3b	
+FERREDOXIN	fly	FBgn0015582	dare	Q9V3T9	2	12	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
+FERREDOXIN	human	P10109	FDX1	P10109	47	222	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	w
+FERREDOXIN	human	P22570	FDXR	P22570	9	123	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
+FERREDOXIN	zebrafish	A2BGD1	fdx1b	A2BGD1	28	129	Ferredoxin 1b	w
+FERREDOXIN--NADP	fly	FBgn0015582	dare	Q9V3T9	2	12	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
+FERREDOXIN--NADP	human	P22570	FDXR	P22570	9	123	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
+FERREDOXIN-1	fly	FBgn0011769	Fdx1	P37193	5	66	Adrenodoxin-like protein 1, mitochondrial (Ferredoxin-1)	w
+FERREDOXIN-1	human	P10109	FDX1	P10109	47	222	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	w
+FERREDOXIN-1-LIKE	human	Q6P4F2	FDX2	Q6P4F2	20	174	Ferredoxin-2, mitochondrial (Adrenodoxin-like protein) (Ferr	w
+FERREDOXIN-2	fly	FBgn0035529	Fdx2	Q8SZA8	5	74	Adrenodoxin-like protein 2, mitochondrial (Ferredoxin-2)	w
+FERREDOXIN-2	human	Q6P4F2	FDX2	Q6P4F2	20	174	Ferredoxin-2, mitochondrial (Adrenodoxin-like protein) (Ferr	w
+FERREDOXIN-2	zebrafish	Q08C57	fdx2	Q08C57	21	130	Ferredoxin-2, mitochondrial	w
+FERREDOXIN-FOLD	human	Q9BRP7	FDXACB1	Q9BRP7	0	68	Ferredoxin-fold anticodon-binding domain-containing protein 	w
+FERREDOXIN-TYPE	worm	O18111	CELE_T22H2.4	O18111	3	41	4Fe-4S ferredoxin-type domain-containing protein	w
+FERREDOXIN-TYPE	worm	Q09409	cid-1	Q09409	0	9	4Fe-4S ferredoxin-type domain-containing protein	w
+FERREDOXIN-TYPE	worm	Q9NA32	fdx-2	Q9NA32	6	54	2Fe-2S ferredoxin-type domain-containing protein	w
+FERRIC	human	Q6ZNA5	FRRS1	Q6ZNA5	2	17	Ferric reductase 1 (EC 1.-.-.-) (Ferric-chelate reductase 1)	w
+FERRIC	human	Q8WY91	THAP4	Q8WY91	7	87	Peroxynitrite isomerase THAP4 (EC 5.99.-.-) (Ferric Homo sap	w
+FERRIC	yeast	P32791	FRE1	P32791	0	8	Ferric/cupric reductase transmembrane component 1	w
+FERRIC	yeast	P36033	FRE2	P36033	0	3	Ferric/cupric reductase transmembrane component 2	w
+FERRIC	yeast	P53746	FRE4	P53746	0	5	Ferric reductase transmembrane component 4	w
+FERRIC	yeast	Q08905	FRE3	Q08905	1	5	Ferric reductase transmembrane component 3	w
+FERRIC	yeast	Q08908	FRE5	Q08908	0	3	Ferric reductase transmembrane component 5	w
+FERRIC	yeast	Q12209	FRE8	Q12209	0	1	Probable ferric reductase transmembrane component 8	w
+FERRIC	yeast	Q12333	FRE7	Q12333	0	5	Ferric/cupric reductase transmembrane component 7	w
+FERRIC	yeast	Q12473	FRE6	Q12473	0	8	Ferric reductase transmembrane component 6	w
+FERRIC-CHELATE	human	Q53TN4	CYBRD1	Q53TN4	10	110	Plasma membrane ascorbate-dependent reductase CYBRD1 (EC 7.2	w
+FERRIC-CHELATE	human	Q6ZNA5	FRRS1	Q6ZNA5	2	17	Ferric reductase 1 (EC 1.-.-.-) (Ferric-chelate reductase 1)	w
+FERRIC-CHELATE	human	Q9P0K9	FRRS1L	Q9P0K9	7	159	DOMON domain-containing protein FRRS1L (Brain protein CG-6) 	w
+FERRIC-CHELATE	zebrafish	A0AB32U0F1	LOC110440009	A0AB32U0F1	6	59	Ferric-chelate reductase 1	w
+FERRIC-CHELATE	zebrafish	A4QP81	frrs1	A4QP81	0	16	Putative ferric-chelate reductase 1	w
+FERRIREDUCTASE	fly	FBgn0029642	CG3592	Q9W4U9	0	2	ascorbate ferrireductase (transmembrane) (EC 7.2.1.3)	w
+FERRIREDUCTASE	fly	FBgn0032801	CG10165	Q9VIU6	0	18	ascorbate ferrireductase (transmembrane) (EC 7.2.1.3)	w
+FERRIREDUCTASE	fly	FBgn0032805	CG10337	Q9VIU0	0	1	ascorbate ferrireductase (transmembrane) (EC 7.2.1.3)	w
+FERRIREDUCTASE	fly	FBgn0032809	Fire	Q9VIT6	2	4	ascorbate ferrireductase (transmembrane) (EC 7.2.1.3)	w
+FERRIREDUCTASE	fly	FBgn0032810	Fire-like	Q9VIT5	0	4	ascorbate ferrireductase (transmembrane) (EC 7.2.1.3)	w
+FERRIREDUCTASE	human	Q8NBI2	CYB561A3	Q8NBI2	4	54	Lysosomal membrane ascorbate-dependent ferrireductase CYB561	w
+FERRIREDUCTASE	worm	A9Z1K9	CELE_M03A1.8	A9Z1K9	0	6	ascorbate ferrireductase (transmembrane)	w
+FERRIREDUCTASE	zebrafish	A3KPR5	cyb561a3a	A3KPR5	0	1	Lysosomal membrane ascorbate-dependent ferrireductase CYB561	w
+FERRITIN	fly	FBgn0015221	Fer2LCH	A0A0B4KHF0	16	318	Ferritin	w
+FERRITIN	fly	FBgn0015222	Fer1HCH	A0A0B4KI27	12	328	Ferritin (EC 1.16.3.1)	w
+FERRITIN	fly	FBgn0030449	Fer3HCH	Q9VYH1	2	22	Ferritin (EC 1.16.3.1)	w
+FERRITIN	human	P02792	FTL	P02792	15	494	Ferritin light chain (Ferritin L subunit)	w
+FERRITIN	human	P02794	FTH1	P02794	7	282	Ferritin heavy chain (Ferritin H subunit) (EC 1.16.3.1) (Cel	w
+FERRITIN	human	P0C7X4	FTH1P19	P0C7X4	4	7	Putative ferritin heavy polypeptide-like 19 (Ferritin heavy 	w
+FERRITIN	human	P21399	ACO1	P21399	3	214	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	w
+FERRITIN	human	Q8N4E7	FTMT	Q8N4E7	3	29	Ferritin, mitochondrial (EC 1.16.3.1)	w
+FERRITIN	human	Q9BXU8	FTHL17	Q9BXU8	6	55	Ferritin heavy polypeptide-like 17 (Cancer/testis antigen 38	w
+FERRITIN	worm	O16453	ftn-1	O16453	1	8	Ferritin	w
+FERRITIN	worm	Q19276	CELE_F09F7.6	Q19276	0	10	Ferritin	w
+FERRITIN	worm	Q9TYS3	ftn-2	Q9TYS3	2	28	Ferritin	w
+FERRITIN	zebrafish	A0A8M9PFW3	wu:fa11g10	A0A8M9PFW3	2	6	Ferritin	w
+FERRITIN	zebrafish	B1WB56	zgc:172145	B1WB56	0	5	Ferritin	w
+FERRITIN	zebrafish	B3DH93	fthl31	B3DH93	0	1	Ferritin	w
+FERRITIN	zebrafish	F1R872	fthl30	F1R872	0	1	Ferritin	w
+FERRITIN	zebrafish	Q66HX7	fth1b	Q66HX7	3	11	Ferritin	w
+FERRITIN	zebrafish	Q6DHT8	fthl27	Q6DHT8	0	6	Ferritin	w
+FERRITIN	zebrafish	Q9DDT0	fth1a	Q9DDT0	2	11	Ferritin	w
+FERRO-LYASE	fly	FBgn0266268	FeCH	Q9V9S8	3	91	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
+FERRO-LYASE	human	P22830	FECH	P22830	5	154	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
+FERROCHELATASE	fly	FBgn0266268	FeCH	Q9V9S8	3	91	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
+FERROCHELATASE	human	P22830	FECH	P22830	5	154	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
+FERROCHELATASE	yeast	P16622	HEM15	P16622	0	40	Ferrochelatase, mitochondrial	w
+FERROCHELATASE	zebrafish	A0A8M9PIE9	fech	A0A8M9PIE9	0	21	Ferrochelatase	w
+FERROCHELATASE-LIKE	worm	G5EBW5	fecl-1	G5EBW5	0	3	FErroChelatase-Like	w
+FERROPORTIN	human	Q9NP59	SLC40A1	Q9NP59	3	156	Ferroportin (Ferroportin-1) (Iron-regulated transporter 1) (	w
+FERROPORTIN-1	human	Q9NP59	SLC40A1	Q9NP59	3	156	Ferroportin (Ferroportin-1) (Iron-regulated transporter 1) (	w
+FERROPTOSIS	human	Q9BRQ8	AIFM2	Q9BRQ8	6	122	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
+FERROPTOSIS	zebrafish	E7FFC4	aifm2	E7FFC4	0	58	Ferroptosis suppressor protein 1	w
+FERROXIDASE	human	P00450	CP	P00450	11	196	Ceruloplasmin (Cuproxidase ceruloplasmin) (EC 1.16.3.4) (Fer	w
+FERROXIDASE	human	Q6MZM0	HEPHL1	Q6MZM0	7	80	Ferroxidase HEPHL1 (EC 1.16.3.1) (Hephaestin-like protein 1)	w
+FERROXIDASE	zebrafish	X1WD76	hephl1a	X1WD76	0	14	ferroxidase	w
+FERRY	human	O95825	CRYZL1	O95825	5	78	Ferry endosomal RAB5 effector complex subunit 4 (Fy-4) (Crys	w
+FERRY	human	Q6ZMI0	PPP1R21	Q6ZMI0	29	173	Protein phosphatase 1 regulatory subunit 21 (Coiled-coil dom	w
+FERRY	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+FERRY	human	Q8TEA7	TBCK	Q8TEA7	12	111	TBC domain-containing protein kinase-like protein (FERRY end	w
+FERRY	human	Q9NQ89	FERRY3	Q9NQ89	2	46	Ferry endosomal RAB5 effector complex subunit 3 (Fy-3)	w
+FERRY1	human	Q8TEA7	TBCK	Q8TEA7	12	111		
+FERRY2	human	Q6ZMI0	PPP1R21	Q6ZMI0	29	173		
+FERRY3	human	Q9NQ89	FERRY3	Q9NQ89	2	46	Ferry endosomal RAB5 effector complex subunit 3 (Fy-3)	
+FERRY3	mus-musculus	Q91YN0	Ferry3	Q91YN0	0	1	FERRY endosomal RAB5 effector complex subunit 3	
+FERRY4	human	O95825	CRYZL1	O95825	5	78		
+FERRY5	human	Q8NB37	GATD1	Q8NB37	11	106		
+FERTILIN	human	Q99965	ADAM2	Q99965	20	71	Disintegrin and metalloproteinase domain-containing protein 	w
+FERTILIZATION-INFLUENCING	human	Q96LL3	FIMP1	Q96LL3	5	39	Fertilization-influencing membrane protein 1 (Fertilization-	w
+FERULIC	yeast	Q03034	FDC1	Q03034	0	5	Ferulic acid decarboxylase 1	w
+FERY3_HUMAN	human	Q9NQ89	FERRY3	Q9NQ89	2	46		
+FER_HUMAN	human	P16591	FER	P16591	46	1374		

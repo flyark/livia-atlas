@@ -1,19 +1,43 @@
-DCL	arabidopsis-thaliana	Q9C642	DCL	Q9C642	0	2	Protein DCL homolog, chloroplastic
-DCL2	cladophialophora-carrionii	A0A1C1CHH6	DCL2	A0A1C1CHH6	0	98	Dicer-like protein 2
-DCL2A	glycine-max	I1L0G0	DCL2A	I1L0G0	1	519	Uncharacterized protein
-DCL2A	oryza-sativa-subsp-japonica	Q10HL3	DCL2A	Q10HL3	1	215	Endoribonuclease Dicer homolog 2a
-DCL2B	glycine-max	K7LBG6	DCL2B	K7LBG6	2	518	Uncharacterized protein
-DCL2B	oryza-sativa-subsp-japonica	Q69LX2	DCL2B	Q69LX2	0	215	Endoribonuclease Dicer homolog 2b
-DCLK1	mus-musculus	Q9JLM8	Dclk1	Q9JLM8	7	57	Serine/threonine-protein kinase DCLK1
-DCLK1	rattus-norvegicus	O08875	Dclk1	O08875	5	36	Serine/threonine-protein kinase DCLK1
-DCLK2	mus-musculus	Q6PGN3	Dclk2	Q6PGN3	0	6	Serine/threonine-protein kinase DCLK2
-DCLK2	rattus-norvegicus	Q5MPA9	Dclk2	Q5MPA9	0	4	Serine/threonine-protein kinase DCLK2
-DCLK3	mus-musculus	Q8BWQ5	Dclk3	Q8BWQ5	0	3	Serine/threonine-protein kinase DCLK3
-DCLK3	rattus-norvegicus	F1LWF2	Dclk3	F1LWF2	0	9	non-specific serine/threonine protein kinase
-DCLRE1	dictyostelium-discoideum	Q86KS1	dclre1	Q86KS1	2	28	DNA cross-link repair 1 protein
-DCLRE1A	mus-musculus	Q9JIC3	Dclre1a	Q9JIC3	6	45	DNA cross-link repair 1A protein
-DCLRE1A	rattus-norvegicus	D3Z924	Dclre1a	D3Z924	4	47	DNA cross-link repair 1A protein
-DCLRE1B	mus-musculus	Q8C7W7	Dclre1b	Q8C7W7	4	46	5' exonuclease Apollo
-DCLRE1B	rattus-norvegicus	Q4KLY6	Dclre1b	Q4KLY6	6	48	5' exonuclease Apollo
-DCLRE1C	mus-musculus	Q8K4J0	Dclre1c	Q8K4J0	13	84	Protein artemis
-DCLRE1C	rattus-norvegicus	Q5XIX3	Dclre1c	Q5XIX3	14	83	Protein artemis
+DCL	arabidopsis-thaliana	Q9C642	DCL	Q9C642	0	2	Protein DCL homolog, chloroplastic	
+DCL1	human	Q8IX05	CD302	Q8IX05	24	121		
+DCL2	cladophialophora-carrionii	A0A1C1CHH6	DCL2	A0A1C1CHH6	0	98	Dicer-like protein 2	
+DCL2A	glycine-max	I1L0G0	DCL2A	I1L0G0	1	519	Uncharacterized protein	
+DCL2A	oryza-sativa-subsp-japonica	Q10HL3	DCL2A	Q10HL3	1	215	Endoribonuclease Dicer homolog 2a	
+DCL2B	glycine-max	K7LBG6	DCL2B	K7LBG6	2	518	Uncharacterized protein	
+DCL2B	oryza-sativa-subsp-japonica	Q69LX2	DCL2B	Q69LX2	0	215	Endoribonuclease Dicer homolog 2b	
+DCLAMP	human	Q9UQV4	LAMP3	Q9UQV4	79	547		
+DCLC	fly	FBgn0024814	Clc	Q9VWA1	10	128	Clathrin light chain (dClc)	w
+DCLK	zebrafish	A0A8M3AQY6	dclk2a	A0A8M3AQY6	13	36		
+DCLK1	human	O15075	DCLK1	O15075	64	325	Serine/threonine-protein kinase DCLK1 (EC 2.7.11.1) (Doublec	
+DCLK1	mus-musculus	Q9JLM8	Dclk1	Q9JLM8	7	57	Serine/threonine-protein kinase DCLK1	
+DCLK1	rattus-norvegicus	O08875	Dclk1	O08875	5	36	Serine/threonine-protein kinase DCLK1	
+DCLK1A	zebrafish	E9QBD0	dclk1a	E9QBD0	1	26	Serine/threonine-protein kinase DCLK2	
+DCLK1_HUMAN	human	O15075	DCLK1	O15075	64	325		
+DCLK2	human	Q8N568	DCLK2	Q8N568	43	140	Serine/threonine-protein kinase DCLK2 (EC 2.7.11.1) (CaMK-li	
+DCLK2	mus-musculus	Q6PGN3	Dclk2	Q6PGN3	0	6	Serine/threonine-protein kinase DCLK2	
+DCLK2	rattus-norvegicus	Q5MPA9	Dclk2	Q5MPA9	0	4	Serine/threonine-protein kinase DCLK2	
+DCLK2	zebrafish	A0A8M3AQY6	dclk2a	A0A8M3AQY6	13	36		
+DCLK2	zebrafish	A2A121	dclk2a	A2A121	0	3	Serine/threonine-protein kinase DCLK2	w
+DCLK2	zebrafish	E9QBD0	dclk1a	E9QBD0	1	26	Serine/threonine-protein kinase DCLK2	w
+DCLK2A	zebrafish	A0A8M3AQY6	dclk2a	A0A8M3AQY6	13	36	Serine/threonine-protein (EC 2.7.11.1)	
+DCLK2A	zebrafish	A2A121	dclk2a	A2A121	0	3	Serine/threonine-protein kinase DCLK2	
+DCLK2_HUMAN	human	Q8N568	DCLK2	Q8N568	43	140		
+DCLK3	human	Q9C098	DCLK3	Q9C098	425	1245	Serine/threonine-protein kinase DCLK3 (EC 2.7.11.1) (Doublec	
+DCLK3	mus-musculus	Q8BWQ5	Dclk3	Q8BWQ5	0	3	Serine/threonine-protein kinase DCLK3	
+DCLK3	rattus-norvegicus	F1LWF2	Dclk3	F1LWF2	0	9	non-specific serine/threonine protein kinase	
+DCLK3_HUMAN	human	Q9C098	DCLK3	Q9C098	425	1245		
+DCLK_CAEEL	worm	Q95QC4	zyg-8	Q95QC4	6	69		
+DCLOCK	fly	FBgn0023076	Clk	O61735	23	138	Circadian locomoter output cycles protein kaput (dCLOCK) (dP	w
+DCLRE1	dictyostelium-discoideum	Q86KS1	dclre1	Q86KS1	2	28	DNA cross-link repair 1 protein	
+DCLRE1A	human	Q6PJP8	DCLRE1A	Q6PJP8	23	125	DNA cross-link repair 1A protein (Beta-lactamase DCLRE1A) (E	
+DCLRE1A	mus-musculus	Q9JIC3	Dclre1a	Q9JIC3	6	45	DNA cross-link repair 1A protein	
+DCLRE1A	rattus-norvegicus	D3Z924	Dclre1a	D3Z924	4	47	DNA cross-link repair 1A protein	
+DCLRE1A	zebrafish	E7F457	dclre1a	E7F457	8	93	DNA cross-link repair 1A protein	
+DCLRE1B	human	Q9H816	DCLRE1B	Q9H816	38	205	5' exonuclease Apollo (EC 3.1.-.-) (Beta-lactamase DCLRE1B) 	
+DCLRE1B	mus-musculus	Q8C7W7	Dclre1b	Q8C7W7	4	46	5' exonuclease Apollo	
+DCLRE1B	rattus-norvegicus	Q4KLY6	Dclre1b	Q4KLY6	6	48	5' exonuclease Apollo	
+DCLRE1B	zebrafish	B0V2S2	dclre1b	B0V2S2	8	94	5' exonuclease Apollo	
+DCLRE1C	human	Q96SD1	DCLRE1C	Q96SD1	40	169	Protein artemis (EC 3.1.-.-) (DNA cross-link repair 1C prote	
+DCLRE1C	mus-musculus	Q8K4J0	Dclre1c	Q8K4J0	13	84	Protein artemis	
+DCLRE1C	rattus-norvegicus	Q5XIX3	Dclre1c	Q5XIX3	14	83	Protein artemis	
+DCLRE1C	zebrafish	Q5RGE5	dclre1c	Q5RGE5	21	115	Protein artemis	

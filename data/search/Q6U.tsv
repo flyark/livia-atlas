@@ -1,22 +1,257 @@
-Q6U2D6	rattus-norvegicus	Q6U2D6	Ccr7	Q6U2D6	21	77	C-C motif chemokine receptor 7
-Q6U6G5	rattus-norvegicus	Q6U6G5	Zc3h15	Q6U6G5	6	154	Zinc finger CCCH domain-containing protein 15
-Q6U7H8	mus-musculus	Q6U7H8	Pip5kl1	Q6U7H8	0	13	Phosphatidylinositol 4-phosphate 5-kinase-like protein 1
-Q6U7R4	mus-musculus	Q6U7R4	Timd4	Q6U7R4	0	9	T-cell immunoglobulin and mucin domain-containing protein 4
-Q6UEH7	schistosoma-mansoni	Q6UEH7	Smad4	Q6UEH7	12	135	Mothers against decapentaplegic homolog
-Q6UK00	rattus-norvegicus	Q6UK00	Ldaf1	Q6UK00	0	1	Lipid droplet assembly factor 1
-Q6UK63	dictyostelium-discoideum	Q6UK63	pirA	Q6UK63	8	55	Protein pirA
-Q6UL01	mus-musculus	Q6UL01	Morn2	Q6UL01	1	7	MORN repeat-containing protein 2
-Q6UPE0	rattus-norvegicus	Q6UPE0	Chdh	Q6UPE0	1	19	Choline dehydrogenase, mitochondrial
-Q6UPE1	rattus-norvegicus	Q6UPE1	Etfdh	Q6UPE1	1	5	Electron transfer flavoprotein-ubiquinone oxidoreductase, mitochondrial
-Q6UPR8	rattus-norvegicus	Q6UPR8	Ermp1	Q6UPR8	0	1	Endoplasmic reticulum metallopeptidase 1
-Q6UQ17	mus-musculus	Q6UQ17	Atp8b3	Q6UQ17	3	4	Phospholipid-transporting ATPase IK
-Q6URK4	rattus-norvegicus	Q6URK4	Hnrnpa3	Q6URK4	6	69	Heterogeneous nuclear ribonucleoprotein A3
-Q6USK2	arabidopsis-thaliana	Q6USK2	CERK	Q6USK2	0	1	Ceramide kinase
-Q6UTZ2	oryza-sativa-subsp-japonica	Q6UTZ2	MGD2	Q6UTZ2	0	8	Probable monogalactosyldiacylglycerol synthase 2, chloroplastic
-Q6UU25	oryza-sativa-subsp-japonica	Q6UU25	prx118	Q6UU25	1	1	Peroxidase
-Q6UU98	oryza-sativa-subsp-japonica	Q6UU98	Os08g0307300	Q6UU98	6	80	Os08g0307300 protein
-Q6UUD9	oryza-sativa-subsp-japonica	Q6UUD9	Os08g0307400	Q6UUD9	3	78	phosphatidylinositol 3-kinase
-Q6UUH5	oryza-sativa-subsp-japonica	Q6UUH5	B1100F03.118	Q6UUH5	29	901	LSU ribosomal protein L15P
-Q6UUW2	oryza-sativa-subsp-japonica	Q6UUW2	NHX2	Q6UUW2	0	5	Na+/H+ exchanger
-Q6UUW6	dictyostelium-discoideum	Q6UUW6	crlC	Q6UUW6	0	1	Cyclic AMP receptor-like protein C
-Q6UY90	rattus-norvegicus	Q6UY90	Ptch1	Q6UY90	2	27	Patched
+Q6U1J7	zebrafish	Q6U1J7	fabp7b	Q6U1J7	3	7	Brain-type fatty acid-binding protein b	
+Q6U2D6	rattus-norvegicus	Q6U2D6	Ccr7	Q6U2D6	21	77	C-C motif chemokine receptor 7	
+Q6U6G5	rattus-norvegicus	Q6U6G5	Zc3h15	Q6U6G5	6	154	Zinc finger CCCH domain-containing protein 15	
+Q6U736	human	Q6U736	OPN5	Q6U736	12	84	Opsin-5 (G protein-coupled receptor 136) (G protein-coupled 	
+Q6U7H8	mus-musculus	Q6U7H8	Pip5kl1	Q6U7H8	0	13	Phosphatidylinositol 4-phosphate 5-kinase-like protein 1	
+Q6U7Q0	human	Q6U7Q0	ZNF322	Q6U7Q0	17	349	Zinc finger protein 322 (Zinc finger protein 322A) (Zinc fin	
+Q6U7R4	mus-musculus	Q6U7R4	Timd4	Q6U7R4	0	9	T-cell immunoglobulin and mucin domain-containing protein 4	
+Q6U841	human	Q6U841	SLC4A10	Q6U841	13	77	Sodium-driven chloride bicarbonate exchanger (Solute carrier	
+Q6U949	human	Q6U949	IGF2-AS	Q6U949	0	14	Putative insulin-like growth factor 2 antisense gene protein	
+Q6UB28	human	Q6UB28	METAP1D	Q6UB28	20	64	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	
+Q6UB35	human	Q6UB35	MTHFD1L	Q6UB35	6	163	Monofunctional C1-tetrahydrofolate synthase, mitochondrial (	
+Q6UB98	human	Q6UB98	ANKRD12	Q6UB98	27	117	Ankyrin repeat domain-containing protein 12 (Ankyrin repeat-	
+Q6UB99	human	Q6UB99	ANKRD11	Q6UB99	35	329	Ankyrin repeat domain-containing protein 11 (Ankyrin repeat-	
+Q6UBL8	virus	Q6UBL8	Segment-1	Q6UBL8	1	9	Polymerase basic protein 2	
+Q6UDF2	virus	Q6UDF2	ICP4B	Q6UDF2	0	20	Major viral transcription factor ICP4 homolog	
+Q6UDF3	virus	Q6UDF3		Q6UDF3	1	69	Uncharacterized protein sORF3/4	
+Q6UDF4	virus	Q6UDF4	US8	Q6UDF4	4	69	Envelope glycoprotein E	
+Q6UDF5	virus	Q6UDF5	gI	Q6UDF5	3	69	Envelope glycoprotein I	
+Q6UDF6	virus	Q6UDF6	US6	Q6UDF6	3	69	Envelope glycoprotein D	
+Q6UDF7	virus	Q6UDF7	sORF2	Q6UDF7	0	68	Uncharacterized protein sORF2	
+Q6UDF8	virus	Q6UDF8	gG	Q6UDF8	1	69	Glycoprotein G	
+Q6UDF9	virus	Q6UDF9	sORF1	Q6UDF9	1	69	Tegument protein UL47 homolog	
+Q6UDG0	virus	Q6UDG0	US3	Q6UDG0	6	69	Protein kinase US3 homolog	
+Q6UDG1	virus	Q6UDG1	US2	Q6UDG1	0	70	Uncharacterized protein US2	
+Q6UDG2	virus	Q6UDG2	US10	Q6UDG2	1	69	Virion protein US10 homolog	
+Q6UDG4	virus	Q6UDG4	UL-1	Q6UDG4	4	69	Uncharacterized protein UL-1	
+Q6UDG5	virus	Q6UDG5	gL	Q6UDG5	1	70	Envelope glycoprotein L	
+Q6UDG6	virus	Q6UDG6	UL2	Q6UDG6	7	69	Uracil-DNA glycosylase	
+Q6UDG7	virus	Q6UDG7	UL3	Q6UDG7	0	70	Uncharacterized protein UL3	
+Q6UDG8	virus	Q6UDG8	UL4	Q6UDG8	1	70	Nuclear protein UL4	
+Q6UDG9	virus	Q6UDG9	HELI	Q6UDG9	3	69	DNA replication helicase	
+Q6UDH0	virus	Q6UDH0	UL6	Q6UDH0	1	69	Portal protein	
+Q6UDH1	virus	Q6UDH1	UL7	Q6UDH1	2	69	Cytoplasmic envelopment protein 1	
+Q6UDH2	virus	Q6UDH2	UL8	Q6UDH2	4	70	DNA helicase/primase complex-associated protein	
+Q6UDH3	virus	Q6UDH3	UL9	Q6UDH3	5	68	Replication origin-binding protein	
+Q6UDH4	virus	Q6UDH4	gM	Q6UDH4	1	69	Envelope glycoprotein M	
+Q6UDH5	virus	Q6UDH5	UL11	Q6UDH5	0	70	Tegument protein UL11	
+Q6UDH6	virus	Q6UDH6	UL12	Q6UDH6	1	70	Alkaline nuclease	
+Q6UDH7	virus	Q6UDH7	UL13	Q6UDH7	3	70	Serine/threonine-protein kinase UL13	
+Q6UDH8	virus	Q6UDH8	UL14	Q6UDH8	0	70	Tegument protein UL14	
+Q6UDH9	virus	Q6UDH9	UL15b	Q6UDH9	4	70	Large terminase protein homolog UL15b	
+Q6UDI0	virus	Q6UDI0	UL16	Q6UDI0	4	69	Cytoplasmic envelopment protein 2	
+Q6UDI1	virus	Q6UDI1	CVC1	Q6UDI1	1	69	Capsid vertex component 1	
+Q6UDI2	virus	Q6UDI2	TRM3	Q6UDI2	2	69	Tripartite terminase subunit 3	
+Q6UDI3	virus	Q6UDI3	TRX2	Q6UDI3	2	69	Triplex capsid protein 2	
+Q6UDI4	virus	Q6UDI4	MCP	Q6UDI4	0	62	Major capsid protein	
+Q6UDI5	virus	Q6UDI5	UL20	Q6UDI5	5	69	Protein UL20	
+Q6UDI6	virus	Q6UDI6	UL21	Q6UDI6	3	70	Tegument protein UL21	
+Q6UDI7	virus	Q6UDI7	gC	Q6UDI7	1	70	Envelope glycoprotein C	
+Q6UDI8	virus	Q6UDI8	UL43	Q6UDI8	0	69	Membrane protein UL43	
+Q6UDI9	virus	Q6UDI9	UL42	Q6UDI9	2	69	DNA polymerase processivity factor	
+Q6UDJ0	virus	Q6UDJ0	UL41	Q6UDJ0	2	69	Virion host shutoff protein	
+Q6UDJ1	virus	Q6UDJ1	RIR2	Q6UDJ1	3	70	Ribonucleoside-diphosphate reductase small subunit	
+Q6UDJ2	virus	Q6UDJ2	RIR1	Q6UDJ2	4	69	Ribonucleoside-diphosphate reductase large subunit	
+Q6UDJ3	virus	Q6UDJ3	TRX1	Q6UDJ3	1	69	Triplex capsid protein 1	
+Q6UDJ4	virus	Q6UDJ4	UL37	Q6UDJ4	1	68	Inner tegument protein	
+Q6UDJ6	virus	Q6UDJ6	SCP	Q6UDJ6	0	70	Small capsomere-interacting protein	
+Q6UDJ7	virus	Q6UDJ7	NEC2	Q6UDJ7	2	69	Nuclear egress protein 2	
+Q6UDJ8	virus	Q6UDJ8	TRM2	Q6UDJ8	1	70	Tripartite terminase subunit 2	
+Q6UDJ9	virus	Q6UDJ9	UL32	Q6UDJ9	3	70	Packaging protein UL32	
+Q6UDK0	virus	Q6UDK0	NEC1	Q6UDK0	6	70	Nuclear egress protein 1	
+Q6UDK1	virus	Q6UDK1	UL30	Q6UDK1	0	68	DNA polymerase catalytic subunit	
+Q6UDK2	virus	Q6UDK2	DBP	Q6UDK2	0	67	Major DNA-binding protein	
+Q6UDK3	virus	Q6UDK3	TRM1	Q6UDK3	4	68	Tripartite terminase subunit 1	
+Q6UDK4	virus	Q6UDK4	gB	Q6UDK4	3	68	Envelope glycoprotein B	
+Q6UDK6	virus	Q6UDK6	UL26	Q6UDK6	4	70	Capsid scaffolding protein	
+Q6UDK7	virus	Q6UDK7	CVC2	Q6UDK7	2	69	Capsid vertex component 2	
+Q6UDK8	virus	Q6UDK8	UL24	Q6UDK8	6	69	Protein UL24	
+Q6UDK9	virus	Q6UDK9	TK	Q6UDK9	2	69	Thymidine kinase	
+Q6UDL0	virus	Q6UDL0	gH	Q6UDL0	0	69	Envelope glycoprotein H	
+Q6UDL1	virus	Q6UDL1	ORFE	Q6UDL1	0	69	Uncharacterized protein ORFE	
+Q6UDL2	virus	Q6UDL2	ORFD	Q6UDL2	0	69	Uncharacterized protein ORFD	
+Q6UDL3	virus	Q6UDL3	ORFC	Q6UDL3	1	69	Uncharacterized protein ORFC	
+Q6UDL4	virus	Q6UDL4	ORFB	Q6UDL4	0	69	Uncharacterized protein ORFB	
+Q6UDL5	virus	Q6UDL5	ORFA	Q6UDL5	2	69	Uncharacterized protein ORFA	
+Q6UDL6	virus	Q6UDL6	UL45	Q6UDL6	1	70	Envelope protein UL45	
+Q6UDL7	virus	Q6UDL7	UL46	Q6UDL7	2	69	Alpha trans-inducing factor	
+Q6UDL8	virus	Q6UDL8	UL49	Q6UDL8	1	69	Tegument protein VP22	
+Q6UDL9	virus	Q6UDL9	gN	Q6UDL9	2	70	Envelope glycoprotein N	
+Q6UDM0	virus	Q6UDM0	DUT	Q6UDM0	0	69	Deoxyuridine 5'-triphosphate nucleotidohydrolase	
+Q6UDM1	virus	Q6UDM1	UL51	Q6UDM1	3	69	Tegument protein UL51	
+Q6UDM2	virus	Q6UDM2	UL52	Q6UDM2	3	67	DNA primase	
+Q6UDM3	virus	Q6UDM3	gK	Q6UDM3	3	69	Envelope glycoprotein K	
+Q6UDM4	virus	Q6UDM4	UL54	Q6UDM4	2	69	mRNA export factor	
+Q6UDR6	human	Q6UDR6	SPINT4	Q6UDR6	18	71	Kunitz-type protease inhibitor 4	
+Q6UE05	human	Q6UE05	TMEM270	Q6UE05	0	30	Transmembrane protein 270 (Williams-Beuren syndrome chromoso	
+Q6UEH7	schistosoma-mansoni	Q6UEH7	Smad4	Q6UEH7	12	135	Mothers against decapentaplegic homolog	
+Q6UFS5	zebrafish	Q6UFS5	znf503	Q6UFS5	0	1	Zinc finger protein 503	
+Q6UK00	rattus-norvegicus	Q6UK00	Ldaf1	Q6UK00	0	1	Lipid droplet assembly factor 1	
+Q6UK63	dictyostelium-discoideum	Q6UK63	pirA	Q6UK63	8	55	Protein pirA	
+Q6UL01	mus-musculus	Q6UL01	Morn2	Q6UL01	1	7	MORN repeat-containing protein 2	
+Q6ULP2	human	Q6ULP2	AFTPH	Q6ULP2	16	103	Aftiphilin	
+Q6UN15	human	Q6UN15	FIP1L1	Q6UN15	68	341	Pre-mRNA 3'-end-processing factor FIP1 (hFip1) (FIP1-like 1 	
+Q6UPE0	rattus-norvegicus	Q6UPE0	Chdh	Q6UPE0	1	19	Choline dehydrogenase, mitochondrial	
+Q6UPE1	rattus-norvegicus	Q6UPE1	Etfdh	Q6UPE1	1	5	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	
+Q6UPR8	rattus-norvegicus	Q6UPR8	Ermp1	Q6UPR8	0	1	Endoplasmic reticulum metallopeptidase 1	
+Q6UQ17	mus-musculus	Q6UQ17	Atp8b3	Q6UQ17	3	4	Phospholipid-transporting ATPase IK	
+Q6UQ28	human	Q6UQ28	PLET1	Q6UQ28	0	16	Placenta-expressed transcript 1 protein	
+Q6URK4	rattus-norvegicus	Q6URK4	Hnrnpa3	Q6URK4	6	69	Heterogeneous nuclear ribonucleoprotein A3	
+Q6URK8	human	Q6URK8	SPMIP8	Q6URK8	0	15	Sperm microtubule inner protein 8 (Testis, prostate and plac	
+Q6USK2	arabidopsis-thaliana	Q6USK2	CERK	Q6USK2	0	1	Ceramide kinase	
+Q6UTZ2	oryza-sativa-subsp-japonica	Q6UTZ2	MGD2	Q6UTZ2	0	8	Probable monogalactosyldiacylglycerol synthase 2, chloroplas	
+Q6UU25	oryza-sativa-subsp-japonica	Q6UU25	prx118	Q6UU25	1	1	Peroxidase	
+Q6UU98	oryza-sativa-subsp-japonica	Q6UU98	Os08g0307300	Q6UU98	6	80	Os08g0307300 protein	
+Q6UUD9	oryza-sativa-subsp-japonica	Q6UUD9	Os08g0307400	Q6UUD9	3	78	phosphatidylinositol 3-kinase	
+Q6UUH5	oryza-sativa-subsp-japonica	Q6UUH5	B1100F03.118	Q6UUH5	29	901	LSU ribosomal protein L15P	
+Q6UUV7	human	Q6UUV7	CRTC3	Q6UUV7	28	82	CREB-regulated transcription coactivator 3 (Transducer of re	
+Q6UUV9	human	Q6UUV9	CRTC1	Q6UUV9	18	71	CREB-regulated transcription coactivator 1 (Mucoepidermoid c	
+Q6UUW2	oryza-sativa-subsp-japonica	Q6UUW2	NHX2	Q6UUW2	0	5	Na+/H+ exchanger	
+Q6UUW6	dictyostelium-discoideum	Q6UUW6	crlC	Q6UUW6	0	1	Cyclic AMP receptor-like protein C	
+Q6UVJ0	human	Q6UVJ0	SASS6	Q6UVJ0	61	312	Spindle assembly abnormal protein 6 homolog (HsSAS-6) (Spind	
+Q6UVK1	human	Q6UVK1	CSPG4	Q6UVK1	7	150	Chondroitin sulfate proteoglycan 4 (Chondroitin sulfate prot	
+Q6UVM3	human	Q6UVM3	KCNT2	Q6UVM3	3	38	Potassium channel subfamily T member 2 (KNa1.2) (Sequence li	
+Q6UVW9	human	Q6UVW9	CLEC2A	Q6UVW9	25	165	C-type lectin domain family 2 member A (Keratinocyte-associa	
+Q6UVY6	human	Q6UVY6	MOXD1	Q6UVY6	4	95	DBH-like monooxygenase protein 1 (EC 1.14.17.-) (Monooxygena	
+Q6UW01	human	Q6UW01	CBLN3	Q6UW01	15	115	Cerebellin-3	
+Q6UW02	human	Q6UW02	CYP20A1	Q6UW02	4	43	Cytochrome P450 20A1 (EC 1.14.-.-)	
+Q6UW10	human	Q6UW10	SFTA2	Q6UW10	4	47	Surfactant-associated protein 2 (Surfactant-associated prote	
+Q6UW15	human	Q6UW15	REG3G	Q6UW15	26	200	Regenerating islet-derived protein 3-gamma (REG-3-gamma) (Pa	
+Q6UW32	human	Q6UW32	IGFL1	Q6UW32	11	54	Insulin growth factor-like family member 1	
+Q6UW49	human	Q6UW49	SPESP1	Q6UW49	3	12	Sperm equatorial segment protein 1 (SP-ESP) (Equatorial segm	
+Q6UW56	human	Q6UW56	ATRAID	Q6UW56	6	36	All-trans retinoic acid-induced differentiation factor (Apop	
+Q6UW60	human	Q6UW60	PCSK4	Q6UW60	22	89	Proprotein convertase subtilisin/kexin type 4 (EC 3.4.21.-) 	
+Q6UW63	human	Q6UW63	POGLUT2	Q6UW63	3	98	Protein O-glucosyltransferase 2 (EC 2.4.1.-) (Endoplasmic re	
+Q6UW68	human	Q6UW68	TMEM205	Q6UW68	6	111	Transmembrane protein 205	
+Q6UW78	human	Q6UW78	UQCC3	Q6UW78	30	87	Ubiquinol-cytochrome-c reductase complex assembly factor 3 (	
+Q6UW88	human	Q6UW88	EPGN	Q6UW88	17	116	Epigen (Epithelial mitogen) (EPG)	
+Q6UWB1	human	Q6UWB1	IL27RA	Q6UWB1	50	284	Interleukin-27 receptor subunit alpha (IL-27 receptor subuni	
+Q6UWB4	human	Q6UWB4	PRSS55	Q6UWB4	15	48	Serine protease 55 (EC 3.4.21.-) (Testis serine protease 1) 	
+Q6UWD8	human	Q6UWD8	C16orf54	Q6UWD8	13	83	Transmembrane protein C16orf54	
+Q6UWE0	human	Q6UWE0	LRSAM1	Q6UWE0	21	125	E3 ubiquitin-protein ligase LRSAM1 (EC 2.3.2.27) (Leucine-ri	
+Q6UWE3	human	Q6UWE3	CLPSL2	Q6UWE3	2	13	Colipase-like protein 2	
+Q6UWF3	human	Q6UWF3	SCIMP	Q6UWF3	43	181	SLP adapter and CSK-interacting membrane protein (SLP65/SLP7	
+Q6UWF7	human	Q6UWF7	NXPE4	Q6UWF7	10	43	NXPE family member 4 (Protein FAM55D)	
+Q6UWF9	human	Q6UWF9	FAM180A	Q6UWF9	12	52	Protein FAM180A	
+Q6UWH4	human	Q6UWH4	GASK1B	Q6UWH4	6	40	Golgi-associated kinase 1B (Expressed in nerve and epitheliu	
+Q6UWH6	human	Q6UWH6	TEX261	Q6UWH6	3	44	Protein TEX261	
+Q6UWI2	human	Q6UWI2	PARM1	Q6UWI2	14	63	Prostate androgen-regulated mucin-like protein 1 (PARM-1)	
+Q6UWI4	human	Q6UWI4	SHISA2	Q6UWI4	13	50	Protein shisa-2 homolog (Transmembrane protein 46)	
+Q6UWJ1	human	Q6UWJ1	SLC9D1	Q6UWJ1	3	125	Solute carrier family 9 member D1 (Putative LAG1-interacting	
+Q6UWJ8	human	Q6UWJ8	CD164L2	Q6UWJ8	18	49	CD164 sialomucin-like 2 protein	
+Q6UWK7	human	Q6UWK7	GPR15LG	Q6UWK7	7	60	Protein GPR15LG (Antimicrobial peptide with 57 amino acid re	
+Q6UWL2	human	Q6UWL2	SUSD1	Q6UWL2	13	120	Sushi domain-containing protein 1	
+Q6UWL6	human	Q6UWL6	KIRREL2	Q6UWL6	26	108	Kin of IRRE-like protein 2 (Kin of irregular chiasm-like pro	
+Q6UWM5	human	Q6UWM5	GLIPR1L1	Q6UWM5	6	61	GLIPR1-like protein 1	
+Q6UWM7	human	Q6UWM7	LCTL	Q6UWM7	7	49	Lactase-like protein (Klotho/lactase-phlorizin hydrolase-rel	
+Q6UWM9	human	Q6UWM9	UGT2A3	Q6UWM9	22	55	UDP-glucuronosyltransferase 2A3 (UDPGT 2A3) (EC 2.4.1.17)	
+Q6UWN0	human	Q6UWN0	LYPD4	Q6UWN0	24	168	Ly6/PLAUR domain-containing protein 4	
+Q6UWN5	human	Q6UWN5	LYPD5	Q6UWN5	14	111	Ly6/PLAUR domain-containing protein 5	
+Q6UWN8	human	Q6UWN8	SPINK6	Q6UWN8	54	189	Serine protease inhibitor Kazal-type 6 (Kallikrein inhibitor	
+Q6UWP2	human	Q6UWP2	DHRS11	Q6UWP2	7	96	Dehydrogenase/reductase SDR family member 11 (17-beta-hydrox	
+Q6UWP7	human	Q6UWP7	LCLAT1	Q6UWP7	15	136	Lysocardiolipin acyltransferase 1 (EC 2.3.1.-) (1-acylglycer	
+Q6UWP8	human	Q6UWP8	SBSN	Q6UWP8	28	356	Suprabasin	
+Q6UWQ5	human	Q6UWQ5	LYZL1	Q6UWQ5	16	144	Lysozyme-like protein 1 (EC 3.2.1.17)	
+Q6UWQ7	human	Q6UWQ7	IGFL2	Q6UWQ7	7	47	Insulin growth factor-like family member 2	
+Q6UWR7	human	Q6UWR7	ENPP6	Q6UWR7	8	83	Glycerophosphocholine cholinephosphodiesterase ENPP6 (GPC-Cp	
+Q6UWS5	human	Q6UWS5	PET117	Q6UWS5	21	98	Protein PET117 homolog, mitochondrial	
+Q6UWT2	human	Q6UWT2	ENHO	Q6UWT2	26	127	Adropin (Energy homeostasis-associated protein)	
+Q6UWT4	human	Q6UWT4	C5orf46	Q6UWT4	6	56	Uncharacterized protein C5orf46	
+Q6UWU2	human	Q6UWU2	GLB1L	Q6UWU2	6	56	Beta-galactosidase-1-like protein (EC 3.2.1.23)	
+Q6UWU4	human	Q6UWU4	C6orf89	Q6UWU4	9	41	Bombesin receptor-activated protein C6orf89 (Amfion)	
+Q6UWV2	human	Q6UWV2	MPZL3	Q6UWV2	32	144	Myelin protein zero-like protein 3	
+Q6UWV6	human	Q6UWV6	ENPP7	Q6UWV6	3	67	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	
+Q6UWV7	human	Q6UWV7	SHISAL2A	Q6UWV7	10	34	Protein shisa-like-2A	
+Q6UWW0	human	Q6UWW0	LCN15	Q6UWW0	21	75	Lipocalin-15	
+Q6UWW8	human	Q6UWW8	CES3	Q6UWW8	3	65	Carboxylesterase 3 (EC 3.1.1.1) (Liver carboxylesterase 31 h	
+Q6UWW9	human	Q6UWW9	TMEM207	Q6UWW9	12	76	Transmembrane protein 207	
+Q6UWX4	human	Q6UWX4	HHIPL2	Q6UWX4	0	34	HHIP-like protein 2	
+Q6UWY0	human	Q6UWY0	ARSK	Q6UWY0	9	111	Arylsulfatase K (ASK) (EC 3.1.6.1) (Glucuronate-2-sulfatase)	
+Q6UWY2	human	Q6UWY2	PRSS57	Q6UWY2	16	162	Serine protease 57 (EC 3.4.21.-) (Neutrophil serine protease	
+Q6UWY5	human	Q6UWY5	OLFML1	Q6UWY5	7	29	Olfactomedin-like protein 1	
+Q6UWZ7	human	Q6UWZ7	ABRAXAS1	Q6UWZ7	19	144	BRCA1-A complex subunit Abraxas 1 (Coiled-coil domain-contai	
+Q6UX01	human	Q6UX01	LMBR1L	Q6UX01	97	975	Protein LMBR1L (Limb region 1 protein homolog-like) (Lipocal	
+Q6UX04	human	Q6UX04	CWC27	Q6UX04	52	210	Spliceosome-associated protein CWC27 homolog (Antigen NY-CO-	
+Q6UX06	human	Q6UX06	OLFM4	Q6UX06	19	220	Olfactomedin-4 (OLM4) (Antiapoptotic protein GW112) (G-CSF-s	
+Q6UX07	human	Q6UX07	DHRS13	Q6UX07	6	82	Dehydrogenase/reductase SDR family member 13 (EC 1.1.-.-) (S	
+Q6UX15	human	Q6UX15	LAYN	Q6UX15	10	47	Layilin	
+Q6UX27	human	Q6UX27	VSTM1	Q6UX27	13	101	V-set and transmembrane domain-containing protein 1 (Signal 	
+Q6UX34	human	Q6UX34	SNORC	Q6UX34	10	86	Protein SNORC (Secondary ossification center-associated regu	
+Q6UX39	human	Q6UX39	AMTN	Q6UX39	7	36	Amelotin	
+Q6UX40	human	Q6UX40	TMEM107	Q6UX40	8	87	Transmembrane protein 107	
+Q6UX41	human	Q6UX41	BTNL8	Q6UX41	30	130	Butyrophilin-like protein 8	
+Q6UX46	human	Q6UX46	ALKAL2	Q6UX46	5	29	ALK and LTK ligand 2 (Augmentor alpha) (AUG-alpha)	
+Q6UX52	human	Q6UX52	C17orf99	Q6UX52	3	10	Protein IL-40 (Interleukin-40) (IL-40)	
+Q6UX53	human	Q6UX53	TMT1B	Q6UX53	7	126	Thiol S-methyltransferase TMT1B (EC 2.1.1.9) (Methyltransfer	
+Q6UX65	human	Q6UX65	DRAM2	Q6UX65	5	27	DNA damage-regulated autophagy modulator protein 2 (Transmem	
+Q6UX68	human	Q6UX68	XKR5	Q6UX68	2	18	XK-related protein 5	
+Q6UX71	human	Q6UX71	PLXDC2	Q6UX71	30	108	Plexin domain-containing protein 2 (Tumor endothelial marker	
+Q6UX72	human	Q6UX72	B3GNT9	Q6UX72	7	25	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	
+Q6UX73	human	Q6UX73	C16orf89	Q6UX73	2	8	UPF0764 protein C16orf89	
+Q6UX82	human	Q6UX82	LYPD8	Q6UX82	5	60	Ly6/PLAUR domain-containing protein 8	
+Q6UX98	human	Q6UX98	ZDHHC24	Q6UX98	7	54	Probable palmitoyltransferase ZDHHC24 (EC 2.3.1.225) (Zinc f	
+Q6UXA7	human	Q6UXA7	C6orf15	Q6UXA7	2	131	Uncharacterized protein C6orf15 (Protein STG)	
+Q6UXB0	human	Q6UXB0	FAM131A	Q6UXB0	1	23	Protein FAM131A	
+Q6UXB1	human	Q6UXB1	IGFL3	Q6UXB1	10	94	Insulin growth factor-like family member 3	
+Q6UXB2	human	Q6UXB2	CXCL17	Q6UXB2	29	125	C-X-C motif chemokine 17 (6-Cys CXCL17) (Dendritic cell and 	
+Q6UXB3	human	Q6UXB3	LYPD2	Q6UXB3	9	105	Ly6/PLAUR domain-containing protein 2	
+Q6UXB4	human	Q6UXB4	CLEC4G	Q6UXB4	16	114	C-type lectin domain family 4 member G (Liver and lymph node	
+Q6UXB8	human	Q6UXB8	PI16	Q6UXB8	14	42	Peptidase inhibitor 16 (PI-16) (Cysteine-rich secretory prot	
+Q6UXC1	human	Q6UXC1	MAMDC4	Q6UXC1	4	35	Apical endosomal glycoprotein (MAM domain-containing protein	
+Q6UXD1	human	Q6UXD1	HRCT1	Q6UXD1	12	49	Histidine-rich carboxyl terminus protein 1	
+Q6UXD5	human	Q6UXD5	SEZ6L2	Q6UXD5	24	200	Seizure 6-like protein 2	
+Q6UXD7	human	Q6UXD7	SLC49A3	Q6UXD7	4	29	Solute carrier family 49 member A3 (Major facilitator superf	
+Q6UXE8	human	Q6UXE8	BTNL3	Q6UXE8	27	120	Butyrophilin-like protein 3 (Butyrophilin-like receptor)	
+Q6UXF1	human	Q6UXF1	TMEM108	Q6UXF1	5	45	Transmembrane protein 108 (Retrolinkin)	
+Q6UXF7	human	Q6UXF7	CLEC18B	Q6UXF7	5	39	C-type lectin domain family 18 member B (Mannose receptor-li	
+Q6UXG2	human	Q6UXG2	ELAPOR1	Q6UXG2	4	23	Endosome/lysosome-associated apoptosis and autophagy regulat	
+Q6UXG3	human	Q6UXG3	CD300LG	Q6UXG3	15	74	CMRF35-like molecule 9 (CLM-9) (CD300 antigen-like family me	
+Q6UXG8	human	Q6UXG8	BTNL9	Q6UXG8	40	277	Butyrophilin-like protein 9	
+Q6UXH0	human	Q6UXH0	ANGPTL8	Q6UXH0	15	81	Angiopoietin-like protein 8 (Betatrophin) (Lipasin) (Refeedi	
+Q6UXH1	human	Q6UXH1	CRELD2	Q6UXH1	18	106	Protein disulfide isomerase CRELD2 (EC 5.3.4.1) (Cysteine-ri	
+Q6UXH8	human	Q6UXH8	CCBE1	Q6UXH8	11	61	Collagen and calcium-binding EGF domain-containing protein 1	
+Q6UXH9	human	Q6UXH9	PAMR1	Q6UXH9	7	74	Inactive serine protease PAMR1 (Peptidase domain-containing 	
+Q6UXI7	human	Q6UXI7	VIT	Q6UXI7	4	93	Vitrin	
+Q6UXI9	human	Q6UXI9	NPNT	Q6UXI9	9	36	Nephronectin (Preosteoblast EGF-like repeat protein with MAM	
+Q6UXK2	human	Q6UXK2	ISLR2	Q6UXK2	16	88	Immunoglobulin superfamily containing leucine-rich repeat pr	
+Q6UXK5	human	Q6UXK5	LRRN1	Q6UXK5	4	81	Leucine-rich repeat neuronal protein 1 (Neuronal leucine-ric	
+Q6UXL0	human	Q6UXL0	IL20RB	Q6UXL0	57	241	Interleukin-20 receptor subunit beta (IL-20 receptor subunit	
+Q6UXM1	human	Q6UXM1	LRIG3	Q6UXM1	40	247	Leucine-rich repeats and immunoglobulin-like domains protein	
+Q6UXN2	human	Q6UXN2	TREML4	Q6UXN2	36	108	Trem-like transcript 4 protein (TLT-4) (Triggering receptor 	
+Q6UXN7	human	Q6UXN7	TOMM20L	Q6UXN7	4	51	TOMM20-like protein 1	
+Q6UXN8	human	Q6UXN8	CLEC9A	Q6UXN8	86	309	C-type lectin domain family 9 member A (CD antigen CD370)	
+Q6UXN9	human	Q6UXN9	WDR82	Q6UXN9	65	348	WD repeat-containing protein 82	
+Q6UXP3	human	Q6UXP3	TMEM14EP	Q6UXP3	0	8	Transmembrane protein 14EP	
+Q6UXP7	human	Q6UXP7	FAM151B	Q6UXP7	1	29	Protein FAM151B	
+Q6UXP9	human	Q6UXP9	YO001	Q6UXP9	0	2	Putative uncharacterized protein UNQ9370/PRO34162	
+Q6UXQ4	human	Q6UXQ4	C2orf66	Q6UXQ4	2	31	Uncharacterized protein C2orf66	
+Q6UXQ8	human	Q6UXQ8	YO002	Q6UXQ8	1	4	Putative uncharacterized protein UNQ6190/PRO20217	
+Q6UXR4	human	Q6UXR4	SERPINA13P	Q6UXR4	2	6	Putative serpin A13	
+Q6UXR6	human	Q6UXR6	YI004	Q6UXR6	0	1	Putative uncharacterized protein UNQ6494/PRO21346	
+Q6UXR8	human	Q6UXR8	YS001	Q6UXR8	0	5	Putative uncharacterized protein UNQ6493/PRO21345	
+Q6UXS0	human	Q6UXS0	CLEC19A	Q6UXS0	1	5	C-type lectin domain family 19 member A	
+Q6UXS9	human	Q6UXS9	CASP12	Q6UXS9	9	24	Inactive caspase-12 (CASP-12)	
+Q6UXT8	human	Q6UXT8	ALKAL1	Q6UXT8	3	40	ALK and LTK ligand 1 (Augmentor beta) (AUG-beta)	
+Q6UXT9	human	Q6UXT9	ABHD15	Q6UXT9	5	42	Protein ABHD15 (Alpha/beta hydrolase domain-containing prote	
+Q6UXU0	human	Q6UXU0	YS002	Q6UXU0	1	3	Putative uncharacterized protein UNQ9165/PRO28630	
+Q6UXU4	human	Q6UXU4	GSG1L	Q6UXU4	11	82	Germ cell-specific gene 1-like protein (GSG1-like protein)	
+Q6UXU6	human	Q6UXU6	TMEM92	Q6UXU6	17	60	Transmembrane protein 92	
+Q6UXV0	human	Q6UXV0	GFRAL	Q6UXV0	8	25	GDNF family receptor alpha-like	
+Q6UXV1	human	Q6UXV1	IZUMO2	Q6UXV1	4	33	Izumo sperm-egg fusion protein 2	
+Q6UXV4	human	Q6UXV4	APOOL	Q6UXV4	14	113	MICOS complex subunit MIC27 (Apolipoprotein O-like) (Protein	
+Q6UXX5	human	Q6UXX5	ITIH6	Q6UXX5	5	35	Inter-alpha-trypsin inhibitor heavy chain H6 (Inter-alpha-tr	
+Q6UXX9	human	Q6UXX9	RSPO2	Q6UXX9	27	188	R-spondin-2 (Roof plate-specific spondin-2) (hRspo2)	
+Q6UXY1	human	Q6UXY1	BAIAP2L2	Q6UXY1	19	94	BAR/IMD domain-containing adapter protein 2-like 2 (Brain-sp	
+Q6UXY8	human	Q6UXY8	TMC5	Q6UXY8	4	21	Transmembrane channel-like protein 5	
+Q6UXZ0	human	Q6UXZ0	TMIGD1	Q6UXZ0	44	198	Transmembrane and immunoglobulin domain-containing protein 1	
+Q6UXZ3	human	Q6UXZ3	CD300LD	Q6UXZ3	51	168	CMRF35-like molecule 5 (CLM-5) (CD300 antigen-like family me	
+Q6UXZ4	human	Q6UXZ4	UNC5D	Q6UXZ4	25	150	Netrin receptor UNC5D (Protein unc-5 homolog 4) (Protein unc	
+Q6UY01	human	Q6UY01	LRRC31	Q6UY01	15	227	Leucine-rich repeat-containing protein 31	
+Q6UY09	human	Q6UY09	CEACAM20	Q6UY09	5	32	Cell adhesion molecule CEACAM20 (Carcinoembryonic antigen-re	
+Q6UY11	human	Q6UY11	DLK2	Q6UY11	32	117	Protein delta homolog 2 (DLK-2) (Epidermal growth factor-lik	
+Q6UY13	human	Q6UY13	YB003	Q6UY13	0	3	Putative uncharacterized protein UNQ5830/PRO19650/PRO19816	
+Q6UY14	human	Q6UY14	ADAMTSL4	Q6UY14	42	225	ADAMTS-like protein 4 (ADAMTSL-4) (Thrombospondin repeat-con	
+Q6UY18	human	Q6UY18	LINGO4	Q6UY18	18	85	Leucine-rich repeat and immunoglobulin-like domain-containin	
+Q6UY27	human	Q6UY27	PATE2	Q6UY27	6	51	Prostate and testis expressed protein 2 (PATE-like protein M	
+Q6UY90	rattus-norvegicus	Q6UY90	Ptch1	Q6UY90	2	27	Patched	
+Q6UYE1	human	Q6UYE1	DLEU7	Q6UYE1	10	51	Leukemia-associated protein 7 (Deleted in lymphocytic leukem	

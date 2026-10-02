@@ -1,17 +1,41 @@
-MTG1	candida-albicans-237561	Q59UI0	MTG1	Q59UI0	1	39	GTPase
-MTG1	cladophialophora-carrionii	A0A1C1C817	mtg1	A0A1C1C817	0	99	Mitochondrial GTPase 1
-MTG1	mus-musculus	Q8R2R6	Mtg1	Q8R2R6	2	184	Mitochondrial ribosome-associated GTPase 1
-MTG1	rattus-norvegicus	E9PTB3	Mtg1	E9PTB3	3	238	Mitochondrial GTPase 1
-MTG1	schizosaccharomyces-pombe	O74776	mtg1	O74776	1	40	Mitochondrial GTPase 1
-MTG10.5	arabidopsis-thaliana	Q8RWW3	MTG10.5	Q8RWW3	2	14	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1
-MTG13.10	arabidopsis-thaliana	A0A1P8BDW0	MTG13.10	A0A1P8BDW0	0	2	Chaperone DnaJ-domain superfamily protein
-MTG2	candida-albicans-237561	Q59PR1	MTG2	Q59PR1	0	20	GTPase
-MTG2	mus-musculus	A2AFK4	Mtg2	A2AFK4	0	88	Mitochondrial ribosome-associated GTPase 2
-MTG2	rattus-norvegicus	A0A0G2K4Z6	Mtg2	A0A0G2K4Z6	1	104	Mitochondrial ribosome-associated GTPase 2
-MTGA	escherichia-coli-83333	P46022	mtgA	P46022	0	11	Biosynthetic peptidoglycan transglycosylase
-MTGA	haemophilus-influenzae	P44890	mtgA	P44890	0	8	Biosynthetic peptidoglycan transglycosylase
-MTGA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H3L6	mtgA	A0A0H3H3L6	0	29	Biosynthetic peptidoglycan transglycosylase
-MTGA	neisseria-gonorrhoeae	Q5F6F6	mtgA	Q5F6F6	0	13	Biosynthetic peptidoglycan transglycosylase
-MTGA	pseudomonas-aeruginosa	Q9I6B7	mtgA	Q9I6B7	0	18	Biosynthetic peptidoglycan transglycosylase
-MTGA	salmonella-typhimurium	Q8ZLR7	mtgA	Q8ZLR7	0	15	Biosynthetic peptidoglycan transglycosylase
-MTGA	shigella-dysenteriae-serotype-1	Q32BC5	mtgA	Q32BC5	0	13	Biosynthetic peptidoglycan transglycosylase
+MTG	fly	FBgn0260386	mtg	A0A0C4DHF5	101	576	Mind the gap, isoform E	
+MTG-1	worm	G4SNS6	mtg-1	G4SNS6	3	77	CP-type G domain-containing protein	
+MTG1	candida-albicans-237561	Q59UI0	MTG1	Q59UI0	1	39	GTPase	
+MTG1	cladophialophora-carrionii	A0A1C1C817	mtg1	A0A1C1C817	0	99	Mitochondrial GTPase 1	
+MTG1	human	Q9BT17	MTG1	Q9BT17	4	349	Mitochondrial ribosome-associated GTPase 1 (GTP-binding prot	
+MTG1	mus-musculus	Q8R2R6	Mtg1	Q8R2R6	2	184	Mitochondrial ribosome-associated GTPase 1	
+MTG1	rattus-norvegicus	E9PTB3	Mtg1	E9PTB3	3	238	Mitochondrial GTPase 1	
+MTG1	schizosaccharomyces-pombe	O74776	mtg1	O74776	1	40	Mitochondrial GTPase 1	
+MTG1	yeast	Q03151	MTG1	Q03151	3	94	Mitochondrial GTPase 1	
+MTG1	zebrafish	Q6IQI9	mtg1	Q6IQI9	11	237	GTP binding protein like	
+MTG10.5	arabidopsis-thaliana	Q8RWW3	MTG10.5	Q8RWW3	2	14	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1	
+MTG13.10	arabidopsis-thaliana	A0A1P8BDW0	MTG13.10	A0A1P8BDW0	0	2	Chaperone DnaJ-domain superfamily protein	
+MTG16	human	O75081	CBFA2T3	O75081	37	127		
+MTG16_HUMAN	human	O75081	CBFA2T3	O75081	37	127		
+MTG1_HUMAN	human	Q9BT17	MTG1	Q9BT17	4	349		
+MTG2	candida-albicans-237561	Q59PR1	MTG2	Q59PR1	0	20	GTPase	
+MTG2	human	Q9H4K7	MTG2	Q9H4K7	10	354	Mitochondrial ribosome-associated GTPase 2 (GTP-binding prot	
+MTG2	mus-musculus	A2AFK4	Mtg2	A2AFK4	0	88	Mitochondrial ribosome-associated GTPase 2	
+MTG2	rattus-norvegicus	A0A0G2K4Z6	Mtg2	A0A0G2K4Z6	1	104	Mitochondrial ribosome-associated GTPase 2	
+MTG2	yeast	P38860	MTG2	P38860	1	72	GTPase MTG2, mitochondrial	
+MTG2	zebrafish	E9QCB3	mtg2	E9QCB3	0	76	Mitochondrial ribosome-associated GTPase 2	
+MTG2_HUMAN	human	Q9H4K7	MTG2	Q9H4K7	10	354		
+MTG8	human	Q06455	RUNX1T1	Q06455	40	129		
+MTG8-LIKE	human	O43439	CBFA2T2	O43439	26	92	Protein CBFA2T2 (ETO homologous on chromosome 20) (MTG8-like	w
+MTG8-RELATED	human	O43439	CBFA2T2	O43439	26	92	Protein CBFA2T2 (ETO homologous on chromosome 20) (MTG8-like	w
+MTG8-RELATED	human	O75081	CBFA2T3	O75081	37	127	Transcriptional corepressor CBFA2T3 (MTG8-related protein 2)	w
+MTG8R_HUMAN	human	O43439	CBFA2T2	O43439	26	92		
+MTG8_HUMAN	human	Q06455	RUNX1T1	Q06455	40	129		
+MTGA	escherichia-coli-83333	P46022	mtgA	P46022	0	11	Biosynthetic peptidoglycan transglycosylase	
+MTGA	haemophilus-influenzae	P44890	mtgA	P44890	0	8	Biosynthetic peptidoglycan transglycosylase	
+MTGA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H3L6	mtgA	A0A0H3H3L6	0	29	Biosynthetic peptidoglycan transglycosylase	
+MTGA	neisseria-gonorrhoeae	Q5F6F6	mtgA	Q5F6F6	0	13	Biosynthetic peptidoglycan transglycosylase	
+MTGA	pseudomonas-aeruginosa	Q9I6B7	mtgA	Q9I6B7	0	18	Biosynthetic peptidoglycan transglycosylase	
+MTGA	salmonella-typhimurium	Q8ZLR7	mtgA	Q8ZLR7	0	15	Biosynthetic peptidoglycan transglycosylase	
+MTGA	shigella-dysenteriae-serotype-1	Q32BC5	mtgA	Q32BC5	0	13	Biosynthetic peptidoglycan transglycosylase	
+MTGM	human	P60602	ROMO1	P60602	19	64	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	w
+MTGO	fly	FBgn0259735	mtgo	B7YZW3	0	14	Miles to go, isoform E	
+MTGP1	human	Q969Y2	GTPBP3	Q969Y2	5	116		
+MTGPD	human	P43304	GPD2	P43304	4	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	w
+MTGR1	human	O43439	CBFA2T2	O43439	26	92		
+MTGR2	human	O75081	CBFA2T3	O75081	37	127		

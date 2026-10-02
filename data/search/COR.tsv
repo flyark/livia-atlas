@@ -1,32 +1,706 @@
-COR1	candida-albicans-237561	A0A1D8PP59	COR1	A0A1D8PP59	4	56	Cytochrome b-c1 complex reductase subunit, mitochondrial
-COR1	glycine-max	C6SWQ8	COR1	C6SWQ8	0	2	Cold-regulated protein
-COR15A	arabidopsis-thaliana	Q42512	COR15A	Q42512	0	1	Protein COLD-REGULATED 15A, chloroplastic
-COR27	arabidopsis-thaliana	Q8L8T7	COR27	Q8L8T7	6	180	Cold-regulated protein 27
-COR413PM1	arabidopsis-thaliana	Q9XIM7	COR413PM1	Q9XIM7	0	4	Cold-regulated 413 plasma membrane protein 1
-COR413PM2	arabidopsis-thaliana	Q9SVL6	COR413PM2	Q9SVL6	0	2	Cold-regulated 413 plasma membrane protein 2
-COR47	arabidopsis-thaliana	P31168	COR47	P31168	0	2	Dehydrin COR47
-CORA	dictyostelium-discoideum	P27133	corA	P27133	1	50	Coronin-A
-CORA	helicobacter-pylori	O25901	corA	O25901	0	1	Magnesium transport protein CorA
-CORA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GLM1	corA	A0A0H3GLM1	0	7	Magnesium transport protein CorA
-CORA	mycobacterium-leprae	Q9CCA0	corA	Q9CCA0	0	7	Magnesium transport protein CorA
-CORD5	arabidopsis-thaliana	O64602	CORD5	O64602	0	2	At1g70340
-CORD6	arabidopsis-thaliana	F4JCB3	CORD6	F4JCB3	2	17	Uncharacterized protein
-CORD7	arabidopsis-thaliana	Q9SKA8	CORD7	Q9SKA8	0	45	Elongation factor 1-delta, putative (DUF936)
-CORI3	arabidopsis-thaliana	Q9SUR6	CORI3	Q9SUR6	0	1	Cystine lyase CORI3
-CORIN	mus-musculus	Q9Z319	Corin	Q9Z319	0	12	Atrial natriuretic peptide-converting enzyme
-CORIN	rattus-norvegicus	Q80YN4	Corin	Q80YN4	0	6	Atrial natriuretic peptide-converting enzyme
-CORO1A	mus-musculus	O89053	Coro1a	O89053	0	29	Coronin-1A
-CORO1A	rattus-norvegicus	Q91ZN1	Coro1a	Q91ZN1	2	23	Coronin-1A
-CORO1B	mus-musculus	Q9WUM3	Coro1b	Q9WUM3	1	25	Coronin-1B
-CORO1B	rattus-norvegicus	O89046	Coro1b	O89046	3	18	Coronin-1B
-CORO1C	mus-musculus	Q9WUM4	Coro1c	Q9WUM4	2	25	Coronin-1C
-CORO1C	rattus-norvegicus	G3V624	Coro1c	G3V624	3	21	Coronin
-CORO2A	mus-musculus	Q8C0P5	Coro2a	Q8C0P5	1	10	Coronin-2A
-CORO2A	rattus-norvegicus	A0A0G2QC56	Coro2a	A0A0G2QC56	0	6	Coronin
-CORO2B	mus-musculus	Q8BH44	Coro2b	Q8BH44	0	10	Coronin-2B
-CORO2B	rattus-norvegicus	F1LMV9	Coro2b	F1LMV9	0	6	Coronin
-CORO6	mus-musculus	Q920M5	Coro6	Q920M5	0	4	Coronin-6
-CORO6	rattus-norvegicus	Q920J3	Coro6	Q920J3	2	10	Coronin-6
-CORO7	mus-musculus	Q9D2V7	Coro7	Q9D2V7	0	8	Coronin-7
-CORO7	rattus-norvegicus	O35828	Coro7	O35828	0	7	Coronin-7
-CORT	mus-musculus	P56469	Cort	P56469	9	46	Cortistatin
+COR-1	worm	Q21624	cor-1	Q21624	1	14	Coronin-like protein cor-1	w
+COR-1	worm	Q21624	cor-1	Q21624	1	14	Coronin-like protein cor-1	w
+COR1	candida-albicans-237561	A0A1D8PP59	COR1	A0A1D8PP59	4	56	Cytochrome b-c1 complex reductase subunit, mitochondrial	
+COR1	glycine-max	C6SWQ8	COR1	C6SWQ8	0	2	Cold-regulated protein	
+COR1	yeast	P07256	COR1	P07256	4	137	Cytochrome b-c1 complex subunit 1, mitochondrial	
+COR15A	arabidopsis-thaliana	Q42512	COR15A	Q42512	0	1	Protein COLD-REGULATED 15A, chloroplastic	
+COR1A_HUMAN	human	P31146	CORO1A	P31146	46	411		
+COR1B_HUMAN	human	Q9BR76	CORO1B	Q9BR76	54	322		
+COR1C_HUMAN	human	Q9ULV4	CORO1C	Q9ULV4	43	363		
+COR27	arabidopsis-thaliana	Q8L8T7	COR27	Q8L8T7	6	180	Cold-regulated protein 27	
+COR2A_HUMAN	human	Q92828	CORO2A	Q92828	18	147		
+COR2B_HUMAN	human	Q9UQ03	CORO2B	Q9UQ03	37	223		
+COR413PM1	arabidopsis-thaliana	Q9XIM7	COR413PM1	Q9XIM7	0	4	Cold-regulated 413 plasma membrane protein 1	
+COR413PM2	arabidopsis-thaliana	Q9SVL6	COR413PM2	Q9SVL6	0	2	Cold-regulated 413 plasma membrane protein 2	
+COR47	arabidopsis-thaliana	P31168	COR47	P31168	0	2	Dehydrin COR47	
+CORA	dictyostelium-discoideum	P27133	corA	P27133	1	50	Coronin-A	
+CORA	fly	FBgn0010434	cora	Q9V8R9	3	27	Protein 4.1 homolog (Protein coracle)	
+CORA	helicobacter-pylori	O25901	corA	O25901	0	1	Magnesium transport protein CorA	
+CORA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GLM1	corA	A0A0H3GLM1	0	7	Magnesium transport protein CorA	
+CORA	mycobacterium-leprae	Q9CCA0	corA	Q9CCA0	0	7	Magnesium transport protein CorA	
+CORA1_HUMAN	human	Q8IZC6	COL27A1	Q8IZC6	3	19		
+CORACLE	fly	FBgn0010434	cora	Q9V8R9	3	27	Protein 4.1 homolog (Protein coracle)	w
+CORAZONIN	fly	FBgn0013767	Crz	Q26377	49	247	Pro-corazonin (Crz) (Dm-Crz) [Cleaved into: Corazonin; Coraz	w
+CORAZONIN	fly	FBgn0036278	CrzR	M9PF00	5	12	Corazonin receptor, isoform B	w
+CORA_1504	fly	FBgn0010434	cora	Q9V8R9	3	27		
+CORA_356	fly	FBgn0010434	cora	Q9V8R9	3	27		
+CORA_358	fly	FBgn0010434	cora	Q9V8R9	3	27		
+CORA_401	fly	FBgn0010434	cora	Q9V8R9	3	27		
+CORA_76	fly	FBgn0010434	cora	Q9V8R9	3	27		
+CORD	fly	FBgn0051619	nolo	Q0E8N3	2	12	No long nerve cord, isoform C (EC 3.4.24.-) (No long nerve c	w
+CORD	human	Q7Z418	KCNK18	Q7Z418	23	85	Potassium channel subfamily K member 18 (TWIK-related indivi	w
+CORD-DERIVED	human	Q9GZP0	PDGFD	Q9GZP0	13	70	Platelet-derived growth factor D (PDGF-D) (Iris-expressed gr	w
+CORD-DERIVED	human	Q9NPE2	NGRN	Q9NPE2	77	546	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
+CORD-DERIVED	human	Q9NRA1	PDGFC	Q9NRA1	32	153	Platelet-derived growth factor C (PDGF-C) (Fallotein) (Spina	w
+CORD2	human	O43186	CRX	O43186	155	502		
+CORD5	arabidopsis-thaliana	O64602	CORD5	O64602	0	2	At1g70340	
+CORD6	arabidopsis-thaliana	F4JCB3	CORD6	F4JCB3	2	17	Uncharacterized protein	
+CORD6	human	Q02846	GUCY2D	Q02846	11	125		
+CORD7	arabidopsis-thaliana	Q9SKA8	CORD7	Q9SKA8	0	45	Elongation factor 1-delta, putative (DUF936)	
+CORDON-BLEU	human	O75128	COBL	O75128	39	130	Protein cordon-bleu	w
+CORDON-BLEU	human	Q53SF7	COBLL1	Q53SF7	28	116	Cordon-bleu protein-like 1	w
+CORDON-BLEU	zebrafish	E7F568	cobl	E7F568	0	3	Protein cordon-bleu	w
+CORE	fly	FBgn0001215	Hrb98DE	P07909	15	149	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (PEN r	w
+CORE	fly	FBgn0023167	SmD3	O44437	26	217	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core pr	w
+CORE	fly	FBgn0032078	C1GalTA	Q7K237	136	2401	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+CORE	fly	FBgn0036485	FutA	Q9VUL9	191	2375	Glycoprotein 3-alpha-L-fucosyltransferase A (EC 2.4.1.214) (	w
+CORE	fly	FBgn0038271	UQCR-C1	Q9VFF0	9	210	GH01077p (Ubiquinol-cytochrome c reductase core protein 1, i	w
+CORE	fly	FBgn0086656	shrb	Q8T0Q4	27	238	Charged multivesicular body protein 4 (CHMP4) (ESCRT-III com	w
+CORE	fly	FBgn0250814	UQCR-C2	Q9VV75	20	228	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	w
+CORE	fly	FBgn0261789	SmD2	Q9VI10	34	294	Probable small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRN	w
+CORE	fly	FBgn0261933	SmD1	Q9VU02	21	236	Probable small nuclear ribonucleoprotein Sm D1 (Sm-D1) (snRN	w
+CORE	human	F6S8H2	FAAP20	F6S8H2	2	52	FA core complex associated protein 20	w
+CORE	human	O14594	NCAN	O14594	22	123	Neurocan core protein (Chondroitin sulfate proteoglycan 3)	w
+CORE	human	O60812	HNRNPCL1	O60812	58	207	Heterogeneous nuclear ribonucleoprotein C-like 1 (hnRNP C-li	w
+CORE	human	O75367	MACROH2A1	O75367	86	563	Core histone macro-H2A.1 (Histone macroH2A1) (mH2A1) (Histon	w
+CORE	human	P09651	HNRNPA1	P09651	59	851	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (Helix	w
+CORE	human	P10124	SRGN	P10124	37	301	Serglycin (Hematopoietic proteoglycan core protein) (Platele	w
+CORE	human	P13611	VCAN	P13611	2	26	Versican core protein (Chondroitin sulfate proteoglycan core	w
+CORE	human	P16112	ACAN	P16112	27	291	Aggrecan core protein (Cartilage-specific proteoglycan core 	w
+CORE	human	P22695	UQCRC2	P22695	74	468	Cytochrome b-c1 complex subunit 2, mitochondrial (Complex II	w
+CORE	human	P31431	SDC4	P31431	42	273	Syndecan-4 (SYND4) (Amphiglycan) (Ryudocan core protein)	w
+CORE	human	P31930	UQCRC1	P31930	19	338	Cytochrome b-c1 complex subunit 1, mitochondrial (Complex II	w
+CORE	human	P34741	SDC2	P34741	36	221	Syndecan-2 (SYND2) (Fibroglycan) (Heparan sulfate proteoglyc	w
+CORE	human	P48723	HSPA13	P48723	10	176	Heat shock 70 kDa protein 13 (Heat shock protein family A me	w
+CORE	human	P62314	SNRPD1	P62314	51	577	Small nuclear ribonucleoprotein Sm D1 (Sm-D1) (Sm-D autoanti	w
+CORE	human	P62316	SNRPD2	P62316	42	613	Small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRNP core pr	w
+CORE	human	P62318	SNRPD3	P62318	48	513	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core pr	w
+CORE	human	Q02742	GCNT1	Q02742	8	110	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+CORE	human	Q04900	CD164	Q04900	25	85	Sialomucin core protein 24 (MUC-24) (Endolyn) (Multi-glycosy	w
+CORE	human	Q0VG06	FAAP100	Q0VG06	28	295	Fanconi anemia core complex-associated protein 100 (Fanconi 	w
+CORE	human	Q14508	WFDC2	Q14508	22	168	WAP four-disulfide core domain protein 2 (Epididymal secreto	w
+CORE	human	Q32P51	HNRNPA1L2	Q32P51	9	199	Heterogeneous nuclear ribonucleoprotein A1-like 2 (hnRNP A1-	w
+CORE	human	Q6NZ36	FAAP20	Q6NZ36	12	73	Fanconi anemia core complex-associated protein 20 (FANCA-ass	w
+CORE	human	Q6ZMB0	B3GNT6	Q6ZMB0	4	79	Acetylgalactosaminyl-O-glycosyl-glycoprotein beta-1,3-N-acet	w
+CORE	human	Q86SE5	RALYL	Q86SE5	29	116	RNA-binding Raly-like protein (hRALYL) (Heterogeneous nuclea	w
+CORE	human	Q8IUA0	WFDC8	Q8IUA0	3	42	WAP four-disulfide core domain protein 8 (Putative protease 	w
+CORE	human	Q8IUB2	WFDC3	Q8IUB2	4	34	WAP four-disulfide core domain protein 3 (Putative protease 	w
+CORE	human	Q8IUB5	WFDC13	Q8IUB5	27	107	WAP four-disulfide core domain protein 13	w
+CORE	human	Q8N0X7	SPART	Q8N0X7	24	114	Spartin (Spastic paraplegia 20 protein) (Trans-activated by 	w
+CORE	human	Q8TCV5	WFDC5	Q8TCV5	6	28	WAP four-disulfide core domain protein 5 (Putative protease 	w
+CORE	human	Q8WWY7	WFDC12	Q8WWY7	27	92	WAP four-disulfide core domain protein 12 (Putative protease	w
+CORE	human	Q96EU7	C1GALT1C1	Q96EU7	3	55	C1GALT1-specific chaperone 1 (C38H2-like protein 1) (C38H2-L	w
+CORE	human	Q96GW7	BCAN	Q96GW7	31	162	Brevican core protein (Brain-enriched hyaluronan-binding pro	w
+CORE	human	Q99612	KLF6	Q99612	38	478	Krueppel-like factor 6 (B-cell-derived protein 1) (Core prom	w
+CORE	human	Q9BQY6	WFDC6	Q9BQY6	15	115	WAP four-disulfide core domain protein 6 (Putative protease 	w
+CORE	human	Q9BTP7	FAAP24	Q9BTP7	16	154	Fanconi anemia core complex-associated protein 24 (Fanconi a	w
+CORE	human	Q9H1F0	WFDC10A	Q9H1F0	11	71	WAP four-disulfide core domain protein 10A (Putative proteas	w
+CORE	human	Q9HC57	WFDC1	Q9HC57	3	46	WAP four-disulfide core domain protein 1 (Prostate stromal p	w
+CORE	human	Q9NS00	C1GALT1	Q9NS00	11	127	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+CORE	human	Q9P0M6	MACROH2A2	Q9P0M6	67	393	Core histone macro-H2A.2 (Histone macroH2A2) (mH2A2)	w
+CORE	human	Q9P109	GCNT4	Q9P109	4	67	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+CORE	human	Q9UKM9	RALY	Q9UKM9	63	380	RNA-binding protein Raly (Autoantigen p542) (Heterogeneous n	w
+CORE	human	Q9Y333	LSM2	Q9Y333	29	327	U6 snRNA-associated Sm-like protein LSm2 (Protein G7b) (Smal	w
+CORE	virus	A0A068EEE5	fep_171	A0A068EEE5	8	219	Virion core protein 4b	w
+CORE	virus	A0A068EF60	pepv_188	A0A068EF60	8	240	25 kDa core protein OPG138	w
+CORE	virus	A0A068EFC1	pepv_096	A0A068EFC1	5	240	Virion core protein	w
+CORE	virus	A0A068EH02	fep_132	A0A068EH02	8	221	Core protein VP8	w
+CORE	virus	A0A068EH49	fep_180	A0A068EH49	4	221	25 kDa core protein OPG138	w
+CORE	virus	A0A068EKR9	fep_094	A0A068EKR9	4	221	Virion core protein	w
+CORE	virus	A0A068ELM3	pepv_139	A0A068ELM3	6	240	Core protein VP8	w
+CORE	virus	A0A097I4E8		A0A097I4E8	1	10	Core protein VP7	w
+CORE	virus	A0A097I4H0		A0A097I4H0	1	10	Core protein VP4	w
+CORE	virus	A0A097NZA3_pcb1d7b66f0		A0A097NZA3	0	10	Mature core protein	w
+CORE	virus	A0A097NZB6_p1fc050181d		A0A097NZB6	0	9	Mature core protein	w
+CORE	virus	A0A0A7DQC0	C	A0A0A7DQC0	1	4	External core antigen	w
+CORE	virus	A0A0A7M9S5		A0A0A7M9S5	8	130	Virion core protein 4b	w
+CORE	virus	A0A0A7MA05		A0A0A7MA05	5	130	25 kDa core protein OPG138	w
+CORE	virus	A0A0A7MAA0		A0A0A7MAA0	1	130	Virion morphogenesis core protein	w
+CORE	virus	A0A0A7MES2		A0A0A7MES2	1	130	Core protein VP8	w
+CORE	virus	A0A0B5HK21_p8cb3a68335		A0A0B5HK21	0	10	Mature core protein	w
+CORE	virus	A0A0F7JH93_p87f2b7ff99		A0A0F7JH93	1	10	Mature core protein	w
+CORE	virus	A0A0G3FXL6	RCNV-Herman-062	A0A0G3FXL6	7	195	Core protein OPG073	w
+CORE	virus	A0A0G3FXN6	RCNV-Herman-087	A0A0G3FXN6	4	195	Core protein VP8	w
+CORE	virus	A0A0G3FXS2	RCNV-Herman-127	A0A0G3FXS2	5	195	25 kDa core protein OPG138	w
+CORE	virus	A0A0G3G063	RCNV-Herman-131	A0A0G3G063	10	195	Core protein OPG142	w
+CORE	virus	A0A0G3G2L5	RCNV-Herman-119	A0A0G3G2L5	6	195	39kDa core protein OPG130	w
+CORE	virus	A0A0G3G4G4	RCNV-Herman-118	A0A0G3G4G4	5	195	Major core protein OPG129	w
+CORE	virus	A0A0H4M5E8	VP3	A0A0H4M5E8	2	12	Core protein VP4	w
+CORE	virus	A0A0H4M6N2	VP3	A0A0H4M6N2	1	12	Core protein VP4	w
+CORE	virus	A0A0H4M6N7	VP7	A0A0H4M6N7	1	12	Core protein VP7	w
+CORE	virus	A0A0H4M948	VP7	A0A0H4M948	1	12	Core protein VP7	w
+CORE	virus	A0A0H4MKA1	VP3	A0A0H4MKA1	1	12	Core protein VP4	w
+CORE	virus	A0A0H4MKD1	VP7	A0A0H4MKD1	1	12	Core protein VP7	w
+CORE	virus	A0A0H4Y145	SGPV101	A0A0H4Y145	0	199	Virion core protein 4b	w
+CORE	virus	A0A0H4YFH6	SGPV065	A0A0H4YFH6	1	199	Core protein VP8	w
+CORE	virus	A0A0M3PB61		A0A0M3PB61	4	169	Virion core protein 4b	w
+CORE	virus	A0A0M3ZCU3		A0A0M3ZCU3	7	170	25 kDa core protein OPG138	w
+CORE	virus	A0A0M3ZEM5		A0A0M3ZEM5	4	170	Core protein VP8	w
+CORE	virus	A0A1B1MRG1	PTPV-Aus-068	A0A1B1MRG1	2	143	Core protein VP8	w
+CORE	virus	A0A1B1MRG6	PTPV-Aus-097	A0A1B1MRG6	6	143	Virion core protein 4b	w
+CORE	virus	A0A1B1MRN0	PTPV-Aus-106	A0A1B1MRN0	4	143	25 kDa core protein OPG138	w
+CORE	virus	A0A1B3B677	LSDV103	A0A1B3B677	6	153	25 kDa core protein OPG138	w
+CORE	virus	A0A1C9KBL6	SKPV-WA-065	A0A1C9KBL6	7	209	Core protein OPG073	w
+CORE	virus	A0A1C9KBN9	SKPV-WA-090	A0A1C9KBN9	0	209	Core protein VP8	w
+CORE	virus	A0A1C9KBS9	SKPV-WA-134	A0A1C9KBS9	8	209	Core protein OPG142	w
+CORE	virus	A0A1C9KBT6	SKPV-WA-130	A0A1C9KBT6	9	209	25 kDa core protein OPG138	w
+CORE	virus	A0A1C9KBU4	SKPV-WA-122	A0A1C9KBU4	5	209	39kDa core protein OPG130	w
+CORE	virus	A0A1C9KBU7	SKPV-WA-121	A0A1C9KBU7	8	209	Major core protein OPG129	w
+CORE	virus	A0A1C9KC65	VPXV-CA-065	A0A1C9KC65	4	204	Core protein OPG073	w
+CORE	virus	A0A1C9KCC1	VPXV-CA-090	A0A1C9KCC1	3	204	Core protein VP8	w
+CORE	virus	A0A1C9KCC5	VPXV-CA-122	A0A1C9KCC5	5	203	39kDa core protein OPG130	w
+CORE	virus	A0A1C9KCE8	VPXV-CA-134	A0A1C9KCE8	8	204	Core protein OPG142	w
+CORE	virus	A0A1C9KCF3	VPXV-CA-121	A0A1C9KCF3	8	202	Major core protein OPG129	w
+CORE	virus	A0A1C9KCG0	VPXV-CA-130	A0A1C9KCG0	9	204	25 kDa core protein OPG138	w
+CORE	virus	A0A1Z3GCR9	SePPVgORF080	A0A1Z3GCR9	4	119	25 kDa core protein OPG138	w
+CORE	virus	A0A1Z3GCS5	SePPVgORF071	A0A1Z3GCS5	4	119	Virion core protein 4b	w
+CORE	virus	A0A1Z3GCV2	SePPVgORF040	A0A1Z3GCV2	4	119	Core protein VP8	w
+CORE	virus	A0A220T6C5	EPTV-WA-067	A0A220T6C5	5	179	Core protein VP8	w
+CORE	virus	A0A220T6F5	EPTV-WA-100	A0A220T6F5	6	179	39kDa core protein OPG130	w
+CORE	virus	A0A220T6G3	EPTV-WA-099	A0A220T6G3	5	179	Virion core protein 4b	w
+CORE	virus	A0A220T6H3	EPTV-WA-108	A0A220T6H3	4	179	25 kDa core protein OPG138	w
+CORE	virus	A0A223FMU0	Murmansk-118	A0A223FMU0	6	202	Virion core protein 4b	w
+CORE	virus	A0A223FMU1	Murmansk-087	A0A223FMU1	5	202	Core protein VP8	w
+CORE	virus	A0A223FMV4	Murmansk-119	A0A223FMV4	8	202	39kDa core protein OPG130	w
+CORE	virus	A0A223FMX9	Murmansk-127	A0A223FMX9	7	202	25 kDa core protein OPG138	w
+CORE	virus	A0A247ZNN0_pd03b4308de		A0A247ZNN0	0	10	Mature core protein	w
+CORE	virus	A0A2C9DSM5		A0A2C9DSM5	5	162	Core protein VP8	w
+CORE	virus	A0A2C9DSQ6		A0A2C9DSQ6	2	161	Virion core protein 4b	w
+CORE	virus	A0A2C9DSR5		A0A2C9DSR5	3	162	25 kDa core protein OPG138	w
+CORE	virus	A0A2C9DT39		A0A2C9DT39	5	161	Core protein VP8	w
+CORE	virus	A0A2C9DT70		A0A2C9DT70	2	160	Virion core protein 4b	w
+CORE	virus	A0A2C9DT79		A0A2C9DT79	3	162	25 kDa core protein OPG138	w
+CORE	virus	A0A2H4X2D7	fgpv_137	A0A2H4X2D7	4	256	Core protein VP8	w
+CORE	virus	A0A2H4X2I4	fgpv_189	A0A2H4X2I4	7	256	25 kDa core protein OPG138	w
+CORE	virus	A0A2H4X2J2	fgpv_180	A0A2H4X2J2	10	254	Virion core protein 4b	w
+CORE	virus	A0A2H5BVH9	C	A0A2H5BVH9	1	4	External core antigen	w
+CORE	virus	A0A2H5BVJ1	C	A0A2H5BVJ1	1	2	External core antigen	w
+CORE	virus	A0A2U8SZQ3	C	A0A2U8SZQ3	1	4	External core antigen	w
+CORE	virus	A0A2U9QHN1	SOPV-ELK-063	A0A2U9QHN1	3	130	Core protein VP8	w
+CORE	virus	A0A2U9QHT2	SOPV-ELK-101	A0A2U9QHT2	4	130	25 kDa core protein OPG138	w
+CORE	virus	A0A2U9QHT6	SOPV-ELK-092	A0A2U9QHT6	5	130	Virion core protein 4b	w
+CORE	virus	A0A346FRG5	AKMV-88-073	A0A346FRG5	5	214	Core protein OPG073	w
+CORE	virus	A0A346FRJ1	AKMV-88-099	A0A346FRJ1	2	214	Core protein VP8	w
+CORE	virus	A0A346FRM4	AKMV-88-132	A0A346FRM4	4	213	Major core protein OPG129	w
+CORE	virus	A0A346FRM5	AKMV-88-133	A0A346FRM5	8	214	39kDa core protein OPG130	w
+CORE	virus	A0A346FRN7	AKMV-88-145	A0A346FRN7	14	214	Core protein OPG142	w
+CORE	virus	A0A346FSA1	AKMV-88-139	A0A346FSA1	2	213	Major core protein OPG136 precursor	w
+CORE	virus	A0A346FSA3	AKMV-88-141	A0A346FSA3	6	214	25 kDa core protein OPG138	w
+CORE	virus	A0A3G2KXS8	OPVA068	A0A3G2KXS8	6	208	Core protein OPG073	w
+CORE	virus	A0A3G2KXV3	OPVA091	A0A3G2KXV3	6	208	Core protein VP8	w
+CORE	virus	A0A3G2KXY9	OPVA122	A0A3G2KXY9	4	207	Major core protein OPG129	w
+CORE	virus	A0A3G2KXZ1	OPVA129	A0A3G2KXZ1	3	207	Major core protein OPG136 precursor	w
+CORE	virus	A0A3G2KXZ4	OPVA123	A0A3G2KXZ4	6	208	39kDa core protein OPG130	w
+CORE	virus	A0A3G2KXZ6	OPVA134	A0A3G2KXZ6	10	208	Core protein OPG142	w
+CORE	virus	A0A3G2KXZ8	OPVA131	A0A3G2KXZ8	4	208	25 kDa core protein OPG138	w
+CORE	virus	A0A7R5WS57	P4b	A0A7R5WS57	1	187	Virion core protein 4b	w
+CORE	virus	A0A916KP59	AHEV_182	A0A916KP59	4	243	Virion core protein 4b	w
+CORE	virus	A0A916KPS7	CHBEV_194	A0A916KPS7	8	311	Virion core protein 4b	w
+CORE	virus	A0A916KQ75	MYSEV_186	A0A916KQ75	6	301	Virion core protein 4b	w
+CORE	virus	A0ABM9QKK5	CHREV_162	A0ABM9QKK5	10	286	Virion core protein 4b	w
+CORE	virus	A7XCI6	63R	A7XCI6	2	154	Core protein VP8	w
+CORE	virus	A7XCM2	94L	A7XCM2	3	154	Virion core protein 4b	w
+CORE	virus	A7XCM3	95L	A7XCM3	4	154	39kDa core protein OPG130	w
+CORE	virus	A7XCN3	103L	A7XCN3	4	154	25 kDa core protein OPG138	w
+CORE	virus	A8QPD9_p89842622b9		A8QPD9	0	10	Mature core protein	w
+CORE	virus	C3TUQ7		C3TUQ7	3	10	Core protein VP4	w
+CORE	virus	C3TUR1		C3TUR1	1	10	Core protein VP7	w
+CORE	virus	C5IJN4	pepv_179	C5IJN4	10	235	Virion core protein 4b	w
+CORE	virus	C8TE61	VP4	C8TE61	1	10	Core protein VP4	w
+CORE	virus	C8TE64	VP7	C8TE64	1	10	Core protein VP7	w
+CORE	virus	D3IZJ7		D3IZJ7	8	125	Core protein VP8	w
+CORE	virus	D3IZM7		D3IZM7	5	125	Virion core protein 4b	w
+CORE	virus	D3IZN6		D3IZN6	4	125	25 kDa core protein OPG138	w
+CORE	virus	D5FLE2	VPXV-CA-128	D5FLE2	1	202	Major core protein OPG136 precursor	w
+CORE	virus	D5FLF1	RCNV-Herman-125	D5FLF1	1	195	Major core protein OPG136 precursor	w
+CORE	virus	D5FLG0	SKPV-WA-128	D5FLG0	3	208	Major core protein OPG136 precursor	w
+CORE	virus	D6P446_pf02933dd18		D6P446	1	10	Mature core protein	w
+CORE	virus	E1AA91		E1AA91	1	11	Core protein VP4	w
+CORE	virus	E1AA95		E1AA95	1	11	Core protein VP7	w
+CORE	virus	G3EHZ6	YKV104c	G3EHZ6	7	183	Virion core protein 4b	w
+CORE	virus	G3EHZ7	YKV105c	G3EHZ7	8	184	39kDa core protein OPG130	w
+CORE	virus	G3EI07	YKV115c	G3EI07	6	184	25 kDa core protein OPG138	w
+CORE	virus	G3EIE9	YKV071	G3EIE9	6	184	Core protein VP8	w
+CORE	virus	G8DP06		G8DP06	2	10	Core protein VP4	w
+CORE	virus	G8DP09		G8DP09	1	10	Core protein VP7	w
+CORE	virus	H6TA55	COTV079	H6TA55	4	170	Core protein VP8	w
+CORE	virus	H6TA83	COTV111	H6TA83	3	170	Virion core protein 4b	w
+CORE	virus	H6TA91	COTV120	H6TA91	5	170	25 kDa core protein OPG138	w
+CORE	virus	H6TAK2	COTV112	H6TAK2	5	170	39kDa core protein OPG130	w
+CORE	virus	H9ZXR5		H9ZXR5	2	10	Core protein VP4	w
+CORE	virus	H9ZXR8		H9ZXR8	1	10	Core protein VP7	w
+CORE	virus	M4PSV1	C	M4PSV1	1	4	External core antigen	w
+CORE	virus	M9UVS3_p8691da608f		M9UVS3	0	10	Mature core protein	w
+CORE	virus	M9ZRW5_p5d57609631		M9ZRW5	0	10	Mature core protein	w
+CORE	virus	M9ZZL8_p054e167e1e		M9ZZL8	0	10	Mature core protein	w
+CORE	virus	N0A109_pb1d18b852f		N0A109	0	10	Mature core protein	w
+CORE	virus	O39927_p258b5a1b56		O39927	0	10	Mature core protein	w
+CORE	virus	O39928_pe35285a6d8		O39928	0	10	Mature core protein	w
+CORE	virus	O72903	FPV083	O72903	10	247	Core protease I7 homolog	w
+CORE	virus	P03153	C	P03153	2	5	External core antigen	w
+CORE	virus	P03295	OPG098	P03295	6	218	Core protein VP8	w
+CORE	virus	P04300	OPG114	P04300	8	218	Core protein OPG114	w
+CORE	virus	P04302	OPG115	P04302	3	218	Core protein OPG115	w
+CORE	virus	P06440	OPG129	P06440	6	218	Major core protein OPG129	w
+CORE	virus	P07132	Segment-4	P07132	1	10	Core protein VP4	w
+CORE	virus	P0C573	C	P0C573	2	7	External core antigen	w
+CORE	virus	P0C625	C	P0C625	2	5	External core antigen	w
+CORE	virus	P0C6G9	C	P0C6G9	2	5	External core antigen	w
+CORE	virus	P0C6J0	C	P0C6J0	3	5	External core antigen	w
+CORE	virus	P0C6J5	C	P0C6J5	2	5	External core antigen	w
+CORE	virus	P0DOK9	OPG138	P0DOK9	10	199	25 kDa core protein OPG138	w
+CORE	virus	P0DOL1	OPG136	P0DOL1	2	199	Major core protein OPG136 precursor	w
+CORE	virus	P0DOL3	OPG083	P0DOL3	8	199	Core protease OPG082	w
+CORE	virus	P0DOM5	OPG129	P0DOM5	4	197	Major core protein OPG129	w
+CORE	virus	P0DOO7	OPG142	P0DOO7	12	199	Core protein OPG142	w
+CORE	virus	P0DOP1	OPG130	P0DOP1	6	199	39kDa core protein OPG130	w
+CORE	virus	P0DOS2	OPG114	P0DOS2	3	199	Core protein D2	w
+CORE	virus	P0DSQ9	D3R	P0DSQ9	3	199	Core protein D3	w
+CORE	virus	P0DST9	OPG073	P0DST9	3	199	Core protein OPG073	w
+CORE	virus	P0DSW9	OPG098	P0DSW9	7	199	Core protein VP8	w
+CORE	virus	P0DTA9	FPV069	P0DTA9	6	250	27 kDa core protein	w
+CORE	virus	P12435	Segment-3	P12435	1	10	Core protein VP3	w
+CORE	virus	P12926	OPG083	P12926	10	218	Core protease OPG083	w
+CORE	virus	P13845	C	P13845	2	4	External core antigen	w
+CORE	virus	P15913	FPV131	P15913	7	250	Core protein VP8	w
+CORE	virus	P16715	OPG136	P16715	1	218	Major core protein OPG136 precursor	w
+CORE	virus	P17355	FPV167	P17355	9	248	Major core protein 4b	w
+CORE	virus	P25951	D4L	P25951	4	153	Core protein D4	w
+CORE	virus	P25952	D5R	P25952	3	153	Core protein D3 homolog	w
+CORE	virus	P26660_pc4190bdbcb		P26660	0	10	Mature core protein	w
+CORE	virus	P26661_p936d36bd83		P26661	0	10	Mature core protein	w
+CORE	virus	P26662_p716f7bc866		P26662	0	10	Mature core protein	w
+CORE	virus	P26664_pf5840586e9		P26664	0	11	Mature core protein	w
+CORE	virus	P27958_p17e3541650		P27958	0	11	Mature core protein	w
+CORE	virus	P29191	OPG130	P29191	7	218	39kDa core protein OPG130	w
+CORE	virus	P29817	AMV181	P29817	4	278	Core protease I7 homolog	w
+CORE	virus	P32509	Segment-3	P32509	1	10	Core protein VP3	w
+CORE	virus	P35986	PX	P35986	2	27	Late L2 mu core protein	w
+CORE	virus	P36325	Segment-7	P36325	1	10	Core protein VP7	w
+CORE	virus	P68448	OPG073	P68448	7	218	Core protein OPG073	w
+CORE	virus	P68718	OPG142	P68718	11	218	Core protein OPG142	w
+CORE	virus	P68975	PX	P68975	3	30	Late L2 mu core protein	w
+CORE	virus	P69361	Segment-7	P69361	1	10	Core protein VP7	w
+CORE	virus	Q070B8	CRV133	Q070B8	2	172	25 kDa core protein OPG138	w
+CORE	virus	Q070C7	CRV124	Q070C7	3	169	Virion core protein 4b	w
+CORE	virus	Q070F8	CRV093	Q070F8	1	172	Core protein VP8	w
+CORE	virus	Q08FP0	DpV83gp112	Q08FP0	6	165	25 kDa core protein OPG138	w
+CORE	virus	Q08FP8	DpV83gp104	Q08FP8	6	165	39kDa core protein OPG130	w
+CORE	virus	Q08FP9	DpV83gp103	Q08FP9	5	165	Virion core protein 4b	w
+CORE	virus	Q08FT0	DpV83gp072	Q08FT0	4	165	Core protein VP8	w
+CORE	virus	Q0NP74	TATV_DAH68_137	Q0NP74	17	220	Core protein OPG142	w
+CORE	virus	Q0NP78	TATV_DAH68_133	Q0NP78	9	220	25 kDa core protein OPG138	w
+CORE	virus	Q0NP80	TATV_DAH68_131	Q0NP80	2	219	Major core protein OPG136 precursor	w
+CORE	virus	Q0NP86	TATV_DAH68_125	Q0NP86	3	220	39kDa core protein OPG130	w
+CORE	virus	Q0NP87	TATV_DAH68_124	Q0NP87	5	219	Major core protein OPG129	w
+CORE	virus	Q0NPB7	TATV_DAH68_094	Q0NPB7	3	220	Core protein VP8	w
+CORE	virus	Q0NPE3	TATV_DAH68_068	Q0NPE3	6	220	Core protein OPG073	w
+CORE	virus	Q2Q1D8		Q2Q1D8	1	10	Core protein VP7	w
+CORE	virus	Q2Q1E1		Q2Q1E1	2	10	Core protein VP4	w
+CORE	virus	Q2YH49		Q2YH49	1	10	Core protein VP7	w
+CORE	virus	Q2YH53		Q2YH53	2	10	Core protein VP4	w
+CORE	virus	Q64756	PX	Q64756	4	38	Late L2 mu core protein	w
+CORE	virus	Q64858	PX	Q64858	3	34	Late L2 mu core protein	w
+CORE	virus	Q64929	Segment-4	Q64929	1	10	Core protein VP4	w
+CORE	virus	Q68798_pa1e465442f		Q68798	0	10	Mature core protein	w
+CORE	virus	Q68801_pd6a2bf6ed9		Q68801	0	10	Mature core protein	w
+CORE	virus	Q69422_p50df9e4552		Q69422	0	12	Core protein	w
+CORE	virus	Q6TUR6		Q6TUR6	5	140	25 kDa core protein OPG138	w
+CORE	virus	Q6TUS3		Q6TUS3	6	140	39kDa core protein OPG130	w
+CORE	virus	Q6TUS4		Q6TUS4	4	139	Virion core protein 4b	w
+CORE	virus	Q6TUV0		Q6TUV0	4	140	Core protein VP8	w
+CORE	virus	Q6TVA0		Q6TVA0	6	130	25 kDa core protein OPG138	w
+CORE	virus	Q6TVA6		Q6TVA6	2	130	Virion morphogenesis core protein	w
+CORE	virus	Q6TVA9		Q6TVA9	5	130	Virion core protein 4b	w
+CORE	virus	Q6TVD8		Q6TVD8	5	130	Core protein VP8	w
+CORE	virus	Q6TVN2		Q6TVN2	6	129	25 kDa core protein OPG138	w
+CORE	virus	Q6TVP1		Q6TVP1	5	129	Virion core protein 4b	w
+CORE	virus	Q6TVS0		Q6TVS0	6	129	Core protein VP8	w
+CORE	virus	Q6VZ98	CNPV249	Q6VZ98	8	322	25 kDa core protein OPG138	w
+CORE	virus	Q6VZA7	CNPV240	Q6VZA7	7	317	Virion core protein 4b	w
+CORE	virus	Q6VZH1	CNPV176	Q6VZH1	4	322	Core protein VP8	w
+CORE	virus	Q6VZQ4	CNPV093	Q6VZQ4	3	322	27 kDa core protein	w
+CORE	virus	Q77DS5	CPXV148 CDS	Q77DS5	8	225	Core protein OPG142	w
+CORE	virus	Q77GD3	LSDV063	Q77GD3	2	153	Core protein VP8	w
+CORE	virus	Q80HV7	OPG138	Q80HV7	11	218	25 kDa core protein OPG138	w
+CORE	virus	Q81258_pc3052977dc		Q81258	0	10	Mature core protein	w
+CORE	virus	Q89860	C	Q89860	2	4	External core antigen	w
+CORE	virus	Q8JL99	EVM118	Q8JL99	9	170	Core protein OPG142	w
+CORE	virus	Q8JLA0	EVM115	Q8JLA0	5	170	25 kDa core protein OPG138	w
+CORE	virus	Q8JLA2	EVM113	Q8JLA2	1	169	Major core protein OPG136 precursor	w
+CORE	virus	Q8JLA8	EVM107	Q8JLA8	6	170	39kDa core protein OPG130	w
+CORE	virus	Q8JLA9	EVM106	Q8JLA9	5	169	Major core protein OPG129	w
+CORE	virus	Q8JLD8	EVM075	Q8JLD8	3	170	Core protein VP8	w
+CORE	virus	Q8JLF7	EVM051	Q8JLF7	2	170	Core protein OPG073	w
+CORE	virus	Q8JN69	PX	Q8JN69	3	28	Late L2 mu core protein	w
+CORE	virus	Q8QMT8	CPXV144 CDS	Q8QMT8	6	225	25 kDa core protein OPG138	w
+CORE	virus	Q8QMU0	CPXV142 CDS	Q8QMU0	3	224	Major core protein OPG136 precursor	w
+CORE	virus	Q8QMU5	CPXV136 CDS	Q8QMU5	8	225	39kDa core protein OPG130	w
+CORE	virus	Q8QMU6	CPXV135 CDS	Q8QMU6	4	224	Major core protein OPG129	w
+CORE	virus	Q8QMX2	CPXV102 CDS	Q8QMX2	2	225	Core protein VP8	w
+CORE	virus	Q8QMZ1	CPXV077 CDS	Q8QMZ1	4	225	Core protein OPG073	w
+CORE	virus	Q8V2P0		Q8V2P0	9	208	Core protein OPG142	w
+CORE	virus	Q8V2P3		Q8V2P3	7	208	25 kDa core protein OPG138	w
+CORE	virus	Q8V2P5		Q8V2P5	2	208	Major core protein OPG136 precursor	w
+CORE	virus	Q8V2Q1		Q8V2Q1	8	208	39kDa core protein OPG130	w
+CORE	virus	Q8V2Q2		Q8V2Q2	6	207	Major core protein OPG129	w
+CORE	virus	Q8V2R6	CMLV105	Q8V2R6	4	208	27 kDa core protein	w
+CORE	virus	Q8V2T2		Q8V2T2	3	208	Core protein VP8	w
+CORE	virus	Q8V2V5		Q8V2V5	7	208	Core protein OPG073	w
+CORE	virus	Q8V3J6	SPV100	Q8V3J6	3	146	25 kDa core protein OPG138	w
+CORE	virus	Q8V3K2	SPV094	Q8V3K2	4	145	Virion core protein	w
+CORE	virus	Q8V3K4	SPV092	Q8V3K4	6	146	39kDa core protein OPG130	w
+CORE	virus	Q8V3K5	SPV091	Q8V3K5	7	145	Virion core protein 4b	w
+CORE	virus	Q8V3L7	SPV078	Q8V3L7	6	146	27 kDa core protein	w
+CORE	virus	Q8V3N4	SPV060	Q8V3N4	2	146	Core protein VP8	w
+CORE	virus	Q8V4W2	A16L	Q8V4W2	13	187	Core protein OPG142	w
+CORE	virus	Q8V4W3	A13L	Q8V4W3	10	187	25 kDa core protein OPG138	w
+CORE	virus	Q8V4W5	A11L	Q8V4W5	1	186	Major core protein OPG136 precursor	w
+CORE	virus	Q8V4X1	A5L	Q8V4X1	7	187	39kDa core protein OPG130	w
+CORE	virus	Q8V4X2	A4L	Q8V4X2	5	186	Major core protein OPG129	w
+CORE	virus	Q8V4Z9	M4R	Q8V4Z9	3	187	Core protein VP8	w
+CORE	virus	Q8V521	F10L	Q8V521	5	187	Core protein OPG073	w
+CORE	virus	Q91E12		Q91E12	0	13	Minor core structural protein	w
+CORE	virus	Q91MR6	LSDV097	Q91MR6	4	152	Virion core protein	w
+CORE	virus	Q91MR8	LSDV095	Q91MR8	8	153	39kDa core protein OPG130	w
+CORE	virus	Q91MR9	LSDV094	Q91MR9	6	153	Virion core protein 4b	w
+CORE	virus	Q98241	MC073R	Q98241	3	162	Core protein VP8	w
+CORE	virus	Q98273	MC106L	Q98273	4	161	Virion core protein 4b	w
+CORE	virus	Q98282	MC115L	Q98282	2	161	25 kDa core protein OPG138	w
+CORE	virus	Q9DHL0	103L	Q9DHL0	4	150	25 kDa core protein OPG138	w
+CORE	virus	Q9DHL8	95L	Q9DHL8	7	150	39kDa core protein OPG130	w
+CORE	virus	Q9DHL9	94L	Q9DHL9	7	149	Virion core protein 4b	w
+CORE	virus	Q9DHQ0	63R	Q9DHQ0	3	150	Core protein VP8	w
+CORE	virus	Q9DSP6		Q9DSP6	1	10	Core protein VP4	w
+CORE	virus	Q9EMQ2	AMV147	Q9EMQ2	9	278	Virion core protein 4b	w
+CORE	virus	Q9J553	FPV180	Q9J553	7	250	Core protein A15 homolog	w
+CORE	virus	Q9J557	FPV176	Q9J557	9	250	25 kDa core protein OPG138	w
+CORE	virus	Q9J559	FPV174	Q9J559	1	245	Major core protein 4a precursor	w
+CORE	virus	Q9Q8J9	m101L	Q9Q8J9	3	157	25 kDa core protein OPG138	w
+CORE	virus	Q9Q8K7	m093L	Q9Q8K7	4	157	39kDa core protein OPG130	w
+CORE	virus	Q9Q8K8	m092L	Q9Q8K8	5	156	Virion core protein 4b	w
+CORE	virus	Q9Q8N8	m058R	Q9Q8N8	2	157	Core protein VP8	w
+CORE	virus	Q9Q8X7	s101L	Q9Q8X7	5	153	25 kDa core protein OPG138	w
+CORE	virus	Q9Q8Y5	s093L	Q9Q8Y5	3	153	39kDa core protein OPG130	w
+CORE	virus	Q9Q8Y6	s092L	Q9Q8Y6	6	152	Virion core protein 4b	w
+CORE	virus	Q9Q913	s058R	Q9Q913	2	153	Core protein VP8	w
+CORE	virus	Q9WAT4	VP4	Q9WAT4	1	10	Core protein VP4	w
+CORE	virus	Q9WJE9	C	Q9WJE9	2	5	External core antigen	w
+CORE	virus	Q9YN53		Q9YN53	1	10	Core protein VP7	w
+CORE	virus	Q9YVS8	MSV164	Q9YVS8	7	261	Virion core protein 4b	w
+CORE	virus	R9QT72_pd612fd2a93		R9QT72	0	10	Mature core protein	w
+CORE	virus	R9QTE4_p1723ff4af8		R9QTE4	0	10	Mature core protein	w
+CORE	virus	R9QTQ6_p54390dc3ff		R9QTQ6	0	10	Mature core protein	w
+CORE	virus	S5E367_pc9d4cc3008		S5E367	0	10	Mature core protein	w
+CORE	virus	T1SQC4		T1SQC4	2	12	Core protein VP4	w
+CORE	virus	T1SQP1		T1SQP1	1	12	Core protein VP7	w
+CORE	virus	U3M5H3	C	U3M5H3	1	4	External core antigen	w
+CORE	virus	U3M5R9	C	U3M5R9	1	4	External core antigen	w
+CORE	virus	U3RA82		U3RA82	2	10	Core protein VP4	w
+CORE	virus	U3RCS7		U3RCS7	1	10	Core protein VP7	w
+CORE	virus	U3UBD7	A12L	U3UBD7	3	140	25 kDa core protein OPG138	w
+CORE	virus	U3UBJ3	L4R	U3UBJ3	1	140	Core protein VP8	w
+CORE	virus	U3UBJ5	P4B	U3UBJ5	4	140	Virion core protein 4b	w
+CORE	virus	U5NXR5	CGLV_VP4	U5NXR5	1	10	Core protein VP4	w
+CORE	virus	U5YL69	CGLV_VP7	U5YL69	1	10	Core protein VP7	w
+CORE	virus	W5QLW5		W5QLW5	1	11	Core protein VP4	w
+CORE	virus	W5QLX4		W5QLX4	1	11	Core protein VP7	w
+CORE	virus	W5QLY4		W5QLY4	1	11	Core protein VP4	w
+CORE	virus	W5QLZ4		W5QLZ4	1	11	Core protein VP7	w
+CORE	virus	W6JLJ1		W6JLJ1	6	241	Virion core protein 4b	w
+CORE	worm	G5EDX1	kal-1	G5EDX1	1	5	WAP-type 'four-disulfide core	w
+CORE	worm	G5EEC6	CELE_F07B7.7	G5EEC6	0	1	Core protein VP7	w
+CORE	worm	G5EF53	swsn-4	G5EF53	10	71	SWI/SNF chromatin remodeling complex core catalytic subunit 	w
+CORE	worm	H2KZS2	CELE_T23E7.2	H2KZS2	0	5	Aggrecan core protein	w
+CORE	worm	O02092	rpb-4	O02092	8	179	RNA polymerase Rpb4/RPC9 core domain-containing protein	w
+CORE	worm	Q19963	CELE_F32D8.2	Q19963	0	3	ATPase_AAA_core domain-containing protein	w
+CORE	worm	Q20617	ubc-24	Q20617	15	81	UBC core domain-containing protein	w
+CORE	worm	Q20872	uev-2	Q20872	1	39	UBC core domain-containing protein	w
+CORE	worm	Q95XN7	ubc-3	Q95XN7	4	60	UBC core domain-containing protein	w
+CORE	worm	Q9U1U4	ubc-19	Q9U1U4	3	8	UBC core domain-containing protein	w
+CORE	zebrafish	A0A2R8Q3K1	vcana	A0A2R8Q3K1	5	33	Versican core protein	w
+CORE	zebrafish	A0A8M1NCN0	bcan	A0A8M1NCN0	8	14	Brevican core protein	w
+CORE	zebrafish	A0A8M1NF77	wfdc1	A0A8M1NF77	0	1	WAP four-disulfide core domain protein 1	w
+CORE	zebrafish	A0AB32TGD0	acanb	A0AB32TGD0	7	46	Aggrecan core protein	w
+CORE	zebrafish	F1QEZ8	ncanb	F1QEZ8	5	15	Neurocan core protein	w
+CORE	zebrafish	F1QJE0	uqcrc2a	F1QJE0	9	120	Ubiquinol-cytochrome c reductase core protein 2a	w
+CORE	zebrafish	Q1RLR9	macroh2a1	Q1RLR9	22	166	Core histone macro-H2A	w
+CORE	zebrafish	Q4V914	macroh2a2	Q4V914	26	167	Core histone macro-H2A	w
+CORE	zebrafish	U3JAR8	faap100	U3JAR8	4	105	FA core complex-associated protein 100	w
+CORE-2	worm	Q9U3H9	CELE_F26D2.3	Q9U3H9	0	5	Core-2/I-Branching enzyme	w
+CORE-2	worm	Q9XXL4	CELE_ZK1225.1	Q9XXL4	1	7	Core-2/I-branching beta-1,6-N-acetylglucosaminyltransferase 	w
+CORE-BINDING	human	Q01196	RUNX1	Q01196	169	678	Runt-related transcription factor 1 (Acute myeloid leukemia 	w
+CORE-BINDING	human	Q13761	RUNX3	Q13761	127	466	Runt-related transcription factor 3 (Acute myeloid leukemia 	w
+CORE-BINDING	human	Q13950	RUNX2	Q13950	120	508	Runt-related transcription factor 2 (Acute myeloid leukemia 	w
+CORE-BINDING	human	Q13951	CBFB	Q13951	36	543	Core-binding factor subunit beta (CBF-beta) (Polyomavirus en	w
+CORE-BINDING	human	Q8TC12	RDH11	Q8TC12	4	232	Retinol dehydrogenase 11 (EC 1.1.1.300) (Androgen-regulated 	w
+CORE-BINDING	human	Q9BWH2	FUNDC2	Q9BWH2	4	108	FUN14 domain-containing protein 2 (Cervical cancer proto-onc	w
+CORE-BINDING	worm	Q95ZL9	bro-1	Q95ZL9	1	47	Core-binding factor subunit beta homolog bro-1	w
+CORE-BINDING	zebrafish	A0A140LGT1	cbfb	A0A140LGT1	8	97	Core-binding factor subunit beta	w
+CORE-CAPSID	virus	A0A097IW72	L2	A0A097IW72	3	34	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A0M3TH20	L2	A0A0M3TH20	2	34	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A0M3TH33	L2	A0A0M3TH33	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A0M4MFJ5	L2	A0A0M4MFJ5	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A0M4MQK7	L2	A0A0M4MQK7	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A0M4MTR7	L2	A0A0M4MTR7	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A1C8EG60	L2	A0A1C8EG60	0	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A1L3INX8	L2	A0A1L3INX8	2	34	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A2H4CJZ8	L2	A0A2H4CJZ8	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A2H5AI92	L2	A0A2H5AI92	0	23	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A679A8C5	L2	A0A679A8C5	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A9W3HRC0	L2	A0A9W3HRC0	2	34	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A9W3I4M9	L2	A0A9W3I4M9	2	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A9W3INM7	L2	A0A9W3INM7	2	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0A9W3N256	L2	A0A9W3N256	1	21	Core-capsid bridging protein	w
+CORE-CAPSID	virus	A0MK53	V	A0MK53	1	35	Core-capsid bridging protein	w
+CORE-CAPSID	virus	B5SNS2	L2	B5SNS2	1	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	D0Z5S9	pV	D0Z5S9	4	33	Core-capsid bridging protein	w
+CORE-CAPSID	virus	D3JIS7	L2	D3JIS7	4	35	Core-capsid bridging protein	w
+CORE-CAPSID	virus	E1U5N7	L2	E1U5N7	4	54	Core-capsid bridging protein	w
+CORE-CAPSID	virus	F2WTK7	L2	F2WTK7	1	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	F2WTN9	L2	F2WTN9	1	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	F6KSU6	L2	F6KSU6	2	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	H8PG01	L2	H8PG01	2	29	Core-capsid bridging protein	w
+CORE-CAPSID	virus	H9AA85	L2	H9AA85	2	32	Core-capsid bridging protein	w
+CORE-CAPSID	virus	M9YVB1	L2	M9YVB1	1	34	Core-capsid bridging protein	w
+CORE-CAPSID	virus	M9YVG4	L2	M9YVG4	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	M9YXZ2	L2	M9YXZ2	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	P03267	L2	P03267	1	45	Core-capsid bridging protein	w
+CORE-CAPSID	virus	P24938	L2	P24938	2	31	Core-capsid bridging protein	w
+CORE-CAPSID	virus	P36717	L2	P36717	2	27	Core-capsid bridging protein	w
+CORE-CAPSID	virus	P48753	L2	P48753	2	34	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q0PLY5	L2	Q0PLY5	2	27	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q2KSB5	L2	Q2KSB5	2	48	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q3ZKU7	L2	Q3ZKU7	2	46	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q5C8Q2	L2	Q5C8Q2	2	35	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q6QPE3	L2	Q6QPE3	4	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q6QPH9	L2	Q6QPH9	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q71BX1	pV	Q71BX1	2	36	Core-capsid bridging protein	w
+CORE-CAPSID	virus	Q96685	L2	Q96685	2	30	Core-capsid bridging protein	w
+CORE-SPECIFIC	human	Q9Y2E5	MAN2B2	Q9Y2E5	6	90	Epididymis-specific alpha-mannosidase (Epman) (EC 3.2.1.24) 	w
+CORE2-GLCNAC-TRANSFERASE	human	Q9P109	GCNT4	Q9P109	4	67	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+CORECEPTOR	fly	FBgn0037324	Orco	Q9VNB5	7	72	Odorant receptor coreceptor (Odorant receptor 83b)	w
+CORECEPTOR	human	D3W0D1	KLRF2	D3W0D1	49	93	Killer cell lectin-like receptor subfamily F member 2 (Lecti	w
+CORECEPTOR	human	P51681	CCR5	P51681	51	348	C-C chemokine receptor type 5 (C-C CKR-5) (CC-CKR-5) (CCR-5)	w
+CORECEPTOR	human	Q6ZVN8	HJV	Q6ZVN8	14	82	Hemojuvelin (Hemochromatosis type 2 protein) (Hemojuvelin BM	w
+CORECEPTOR	human	Q9NZS2	KLRF1	Q9NZS2	55	129	Killer cell lectin-like receptor subfamily F member 1 (Lecti	w
+COREGULATED	fly	FBgn0034454	CG15120	A1ZBM4	3	61	Parkin coregulated gene protein homolog	w
+COREGULATED	human	Q6UXB2	CXCL17	Q6UXB2	29	125	C-X-C motif chemokine 17 (6-Cys CXCL17) (Dendritic cell and 	w
+COREGULATED	human	Q96M98	PACRG	Q96M98	14	182	Parkin coregulated gene protein (Molecular chaperone/chapero	w
+COREGULATED	worm	Q19060	pcrg-1	Q19060	0	17	Parkin coregulated gene protein homolog	w
+COREGULATED	zebrafish	A0A8M1N3B8	pacrg	A0A8M1N3B8	13	476	Parkin coregulated gene protein	w
+COREGULATOR	human	Q6PL18	ATAD2	Q6PL18	24	354	ATPase family AAA domain-containing protein 2 (EC 3.6.1.-) (	w
+COREGULATOR	worm	Q0G825	psa-3	Q0G825	4	22	Transcriptional coregulator psa-3	w
+COREPRESSOR	fly	FBgn0263240	Coop	Q7JUZ9	56	398	Corepressor of pangolin, isoform A (Corepressor of pangolin,	w
+COREPRESSOR	human	O75081	CBFA2T3	O75081	37	127	Transcriptional corepressor CBFA2T3 (MTG8-related protein 2)	w
+COREPRESSOR	human	O75182	SIN3B	O75182	68	290	Paired amphipathic helix protein Sin3b (Histone deacetylase 	w
+COREPRESSOR	human	O75376	NCOR1	O75376	107	499	Nuclear receptor corepressor 1 (N-CoR) (N-CoR1)	w
+COREPRESSOR	human	O75446	SAP30	O75446	75	545	Histone deacetylase complex subunit SAP30 (30 kDa Sin3-assoc	w
+COREPRESSOR	human	P30044	PRDX5	P30044	21	260	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
+COREPRESSOR	human	P84550	SKOR1	P84550	2	8	SKI family transcriptional corepressor 1 (Functional Smad-su	w
+COREPRESSOR	human	Q14919	DRAP1	Q14919	60	405	Dr1-associated corepressor (Dr1-associated protein 1) (Negat	w
+COREPRESSOR	human	Q2VWA4	SKOR2	Q2VWA4	1	14	SKI family transcriptional corepressor 2 (Functional Smad-su	w
+COREPRESSOR	human	Q6W2J9	BCOR	Q6W2J9	128	365	BCL-6 corepressor (BCoR)	w
+COREPRESSOR	human	Q86X95	CIRSR	Q86X95	52	435	Corepressor of RBPJ and splicing regulator (CBF1-interacting	w
+COREPRESSOR	human	Q8IZ40	RCOR2	Q8IZ40	98	418	REST corepressor 2	w
+COREPRESSOR	human	Q8N888	BCORP1	Q8N888	1	10	Putative BCoR-like protein 2 (BCL-6 corepressor pseudogene 1	w
+COREPRESSOR	human	Q8TEE9	SAP25	Q8TEE9	3	36	Histone deacetylase complex subunit SAP25 (25 kDa Sin3-assoc	w
+COREPRESSOR	human	Q96JN0	LCOR	Q96JN0	149	531	Ligand-dependent corepressor (LCoR) (Mblk1-related protein 2	w
+COREPRESSOR	human	Q96ST3	SIN3A	Q96ST3	128	744	Paired amphipathic helix protein Sin3a (Histone deacetylase 	w
+COREPRESSOR	human	Q9BUT9	MCRIP2	Q9BUT9	15	79	MAPK regulated corepressor interacting protein 2 (Protein FA	w
+COREPRESSOR	human	Q9BZK7	TBL1XR1	Q9BZK7	60	289	F-box-like/WD repeat-containing protein TBL1XR1 (Nuclear rec	w
+COREPRESSOR	human	Q9H4R4	NCOR1P1	Q9H4R4	40	122	Putative nuclear receptor corepressor 1-like protein NCOR1P1	w
+COREPRESSOR	human	Q9H7L9	SUDS3	Q9H7L9	51	340	Sin3 histone deacetylase corepressor complex component SDS3 	w
+COREPRESSOR	human	Q9HAJ7	SAP30L	Q9HAJ7	74	442	Histone deacetylase complex subunit SAP30L (HCV non-structur	w
+COREPRESSOR	human	Q9P2K3	RCOR3	Q9P2K3	112	560	REST corepressor 3	w
+COREPRESSOR	human	Q9UKL0	RCOR1	Q9UKL0	163	866	REST corepressor 1 (Protein CoREST)	w
+COREPRESSOR	human	Q9Y618	NCOR2	Q9Y618	75	372	Nuclear receptor corepressor 2 (N-CoR2) (CTG repeat protein 	w
+COREPRESSOR	worm	Q18919	spr-1	Q18919	6	37	REST corepressor spr-1	w
+COREPRESSOR	worm	Q22532	CELE_T16G12.3	Q22532	0	15	Nuclear receptor corepressor 2	w
+COREPRESSOR	worm	Q95Y41	rcor-1	Q95Y41	6	58	REST corepressor rcor-1	w
+COREPRESSOR	yeast	P14922	CYC8	P14922	8	106	General transcriptional corepressor CYC8	w
+COREPRESSOR	yeast	P16649	TUP1	P16649	3	86	General transcriptional corepressor TUP1	w
+COREPRESSOR	yeast	P39943	MIG3	P39943	1	6	Transcription corepressor MIG3	w
+COREPRESSOR	zebrafish	A0A0G2L1F4	LOC100535468	A0A0G2L1F4	3	7	Dr1-associated corepressor	w
+COREPRESSOR	zebrafish	A0A8M9PW25	lcor	A0A8M9PW25	2	7	Ligand-dependent corepressor	w
+COREPRESSOR	zebrafish	B8JJJ1	suds3	B8JJJ1	12	54	SDS3 homolog, SIN3A corepressor complex component	w
+COREPRESSOR	zebrafish	F1R8S0	drap1	F1R8S0	4	12	Dr1-associated corepressor	w
+COREPRESSOR	zebrafish	Q1LXZ9	skor1b	Q1LXZ9	0	5	SKI family transcriptional corepressor 1 homolog-B	w
+COREPRESSOR	zebrafish	Q1MT18	rcor3	Q1MT18	7	42	REST corepressor 3	w
+COREPRESSOR	zebrafish	Q1MT54	mcrip2	Q1MT54	2	4	MAPK regulated corepressor interacting protein 2	w
+COREPRESSOR	zebrafish	Q6P116	rcor2	Q6P116	10	42	REST corepressor 2	w
+COREPRESSOR-INTERACTING	human	C9JLW8	MCRIP1	C9JLW8	12	70	Mapk-regulated corepressor-interacting protein 1 (Granulin-2	w
+COREPRESSOR-INTERACTING	zebrafish	Q0P4B9	mcrip1	Q0P4B9	0	1	Mapk-regulated corepressor-interacting protein 1	w
+COREPRESSOR-LIKE	human	Q5H9F3	BCORL1	Q5H9F3	69	193	BCL-6 corepressor-like protein 1 (BCoR-L1) (BCoR-like protei	w
+COREPRESSOR-LIKE	human	Q8N3X6	LCORL	Q8N3X6	6	31	Ligand-dependent nuclear receptor corepressor-like protein (	w
+COREPRESSOR-LIKE	human	Q8N888	BCORP1	Q8N888	1	10	Putative BCoR-like protein 2 (BCL-6 corepressor pseudogene 1	w
+COREST	fly	FBgn0261573	CoRest	C7LAG1	92	384	CoRest, isoform G (CoRest, isoform H) (CoRest, isoform I) (I	w
+COREST	fly	FBgn0261573	CoRest	C7LAG1	92	384	CoRest, isoform G (CoRest, isoform H) (CoRest, isoform I) (I	w
+COREST	human	Q9UKL0	RCOR1	Q9UKL0	163	866	REST corepressor 1 (Protein CoREST)	w
+COREST_22	fly	FBgn0261573	CoRest	C7LAG1	92	384		
+CORF	human	Q69383	ERVK-6	Q69383	0	3	Endogenous retrovirus group K member 6 Rec protein (Central 	w
+CORI3	arabidopsis-thaliana	Q9SUR6	CORI3	Q9SUR6	0	1	Cystine lyase CORI3	
+CORIN	fly	FBgn0033192	Corin	A1Z709	0	7	Corin, isoform B (EC 3.4.21.-) (Corin, isoform C)	w
+CORIN	fly	FBgn0033192	Corin	A1Z709	0	7	Corin, isoform B (EC 3.4.21.-) (Corin, isoform C)	w
+CORIN	human	Q9Y5Q5	CORIN	Q9Y5Q5	13	73	Atrial natriuretic peptide-converting enzyme (EC 3.4.21.-) (	
+CORIN	mus-musculus	Q9Z319	Corin	Q9Z319	0	12	Atrial natriuretic peptide-converting enzyme	
+CORIN	rattus-norvegicus	Q80YN4	Corin	Q80YN4	0	6	Atrial natriuretic peptide-converting enzyme	
+CORIN_HUMAN	human	Q9Y5Q5	CORIN	Q9Y5Q5	13	73		
+CORK1	human	Q96S96	PEBP4	Q96S96	14	259		
+CORL	fly	FBgn0039932	fuss	D1YSG4	3	23	CORL (Fussel, isoform B) (Fussel, isoform D)	w
+CORL1	human	P84550	SKOR1	P84550	2	8		
+CORL2	human	Q2VWA4	SKOR2	Q2VWA4	1	14		
+CORN	fly	FBgn0259173	corn	Q8IQ73	1	6	Cornetto, isoform C	
+CORNEA-DERIVED	human	O43827	ANGPTL7	O43827	12	64	Angiopoietin-related protein 7 (Angiopoietin-like factor) (A	w
+CORNEAL	human	Q8TDB4	MGARP	Q8TDB4	17	280	Protein MGARP (Corneal endothelium-specific protein 1) (CESP	w
+CORNEAL	human	Q9GZX3	CHST6	Q9GZX3	15	75	Carbohydrate sulfotransferase 6 (Corneal N-acetylglucosamine	w
+CORNEODESMOSIN	human	Q15517	CDSN	Q15517	29	242	Corneodesmosin (S protein)	w
+CORNETTO	fly	FBgn0259173	corn	Q8IQ73	1	6	Cornetto, isoform C	w
+CORNEUM	human	P49862	KLK7	P49862	96	284	Kallikrein-7 (hK7) (EC 3.4.21.117) (Serine protease 6) (Stra	w
+CORNEUM	human	Q9Y337	KLK5	Q9Y337	96	300	Kallikrein-5 (EC 3.4.21.-) (Kallikrein-like protein 2) (KLK-	w
+CORNICHON	fly	FBgn0000339	cni	P49858	9	174	Protein cornichon	w
+CORNICHON	fly	FBgn0243513	cnir	Q9VQL3	6	71	Protein cornichon homolog 4 (Cornichon family AMPA receptor 	w
+CORNICHON	human	O95406	CNIH1	O95406	11	133	Protein cornichon homolog 1 (CNIH-1) (Cornichon family AMPA 	w
+CORNICHON	human	Q6PI25	CNIH2	Q6PI25	9	125	Protein cornichon homolog 2 (CNIH-2) (Cornichon family AMPA 	w
+CORNICHON	human	Q8TBE1	CNIH3	Q8TBE1	12	158	Protein cornichon homolog 3 (CNIH-3) (Cornichon family AMPA 	w
+CORNICHON	human	Q9P003	CNIH4	Q9P003	21	163	Protein cornichon homolog 4 (CNIH-4) (Cornichon family AMPA 	w
+CORNICHON	worm	Q22361	cni-1	Q22361	1	45	Protein cornichon homolog 1	w
+CORNICHON	zebrafish	Q5BL21	cnih2	Q5BL21	4	52	Protein cornichon homolog 2	w
+CORNICHON	zebrafish	Q5RIH0	cnih3	Q5RIH0	4	51	Cornichon family AMPA receptor auxiliary protein 3	w
+CORNICHON-LIKE	human	Q6PI25	CNIH2	Q6PI25	9	125	Protein cornichon homolog 2 (CNIH-2) (Cornichon family AMPA 	w
+CORNIFELIN	human	Q9BYD5	CNFN	Q9BYD5	5	99	Cornifelin	w
+CORNIFELIN	zebrafish	Q66I68	cnfn	Q66I68	0	2	Cornifelin homolog	w
+CORNIFICATION	human	A0A2R8Y7D0	TINCR	A0A2R8Y7D0	3	15	Ubiquitin domain-containing protein TINCR (Placenta-specific	w
+CORNIFIED	human	A0A183	LCE6A	A0A183	6	50	Late cornified envelope protein 6A	w
+CORNIFIED	human	O14633	LCE2B	O14633	20	127	Late cornified envelope protein 2B (Late envelope protein 10	w
+CORNIFIED	human	O60437	PPL	O60437	69	266	Periplakin (190 kDa paraneoplastic pemphigus antigen) (195 k	w
+CORNIFIED	human	P0DV60	LCE7A	P0DV60	0	5	Late cornified envelope protein 7A	w
+CORNIFIED	human	Q5T5A8	LCE3C	Q5T5A8	26	151	Late cornified envelope protein 3C (Late envelope protein 15	w
+CORNIFIED	human	Q5T5B0	LCE3E	Q5T5B0	23	163	Late cornified envelope protein 3E (Late envelope protein 17	w
+CORNIFIED	human	Q5T751	LCE1C	Q5T751	21	118	Late cornified envelope protein 1C (Late envelope protein 3)	w
+CORNIFIED	human	Q5T752	LCE1D	Q5T752	23	109	Late cornified envelope protein 1D (Late envelope protein 4)	w
+CORNIFIED	human	Q5T753	LCE1E	Q5T753	14	85	Late cornified envelope protein 1E (Late envelope protein 5)	w
+CORNIFIED	human	Q5T754	LCE1F	Q5T754	21	123	Late cornified envelope protein 1F (Late envelope protein 6)	w
+CORNIFIED	human	Q5T7P2	LCE1A	Q5T7P2	22	114	Late cornified envelope protein 1A (Late envelope protein 1)	w
+CORNIFIED	human	Q5T7P3	LCE1B	Q5T7P3	13	94	Late cornified envelope protein 1B (Late envelope protein 2)	w
+CORNIFIED	human	Q5T871	LELP1	Q5T871	5	96	Late cornified envelope-like proline-rich protein 1 (Novel s	w
+CORNIFIED	human	Q5TA76	LCE3A	Q5TA76	18	146	Late cornified envelope protein 3A (Late envelope protein 13	w
+CORNIFIED	human	Q5TA77	LCE3B	Q5TA77	9	102	Late cornified envelope protein 3B (Late envelope protein 14	w
+CORNIFIED	human	Q5TA78	LCE4A	Q5TA78	8	108	Late cornified envelope protein 4A (Late envelope protein 8)	w
+CORNIFIED	human	Q5TA79	LCE2A	Q5TA79	20	98	Late cornified envelope protein 2A (Late envelope protein 9)	w
+CORNIFIED	human	Q5TA81	LCE2C	Q5TA81	22	136	Late cornified envelope protein 2C (Late envelope protein 11	w
+CORNIFIED	human	Q5TA82	LCE2D	Q5TA82	15	104	Late cornified envelope protein 2D (Late envelope protein 12	w
+CORNIFIED	human	Q5TCM9	LCE5A	Q5TCM9	16	112	Late cornified envelope protein 5A (Late envelope protein 18	w
+CORNIFIED	human	Q92817	EVPL	Q92817	21	233	Envoplakin (210 kDa cornified envelope precursor protein) (2	w
+CORNIFIED	human	Q9BYE3	LCE3D	Q9BYE3	22	147	Late cornified envelope protein 3D (Late envelope protein 16	w
+CORNIFIN	human	Q9UBC9	SPRR3	Q9UBC9	16	253	Small proline-rich protein 3 (22 kDa pancornulin) (Cornifin 	w
+CORNIFIN-A	human	P35321	SPRR1A	P35321	13	160	Cornifin-A (19 kDa pancornulin) (SPRK) (Small proline-rich p	w
+CORNIFIN-B	human	P22528	SPRR1B	P22528	25	228	Cornifin-B (14.9 kDa pancornulin) (Small proline-rich protei	w
+CORNULIN	human	Q9UBG3	CRNN	Q9UBG3	27	192	Cornulin (53 kDa putative calcium-binding protein) (53 kDa s	w
+CORO	fly	FBgn0265935	coro	A0A0B4KEJ7	6	71	Coronin	
+CORO1	human	P31146	CORO1A	P31146	46	411		
+CORO1A	human	P31146	CORO1A	P31146	46	411	Coronin-1A (Coronin-like protein A) (Clipin-A) (Coronin-like	
+CORO1A	mus-musculus	O89053	Coro1a	O89053	0	29	Coronin-1A	
+CORO1A	rattus-norvegicus	Q91ZN1	Coro1a	Q91ZN1	2	23	Coronin-1A	
+CORO1A	zebrafish	Q7SX58	coro1a	Q7SX58	1	8	Coronin	
+CORO1B	human	Q9BR76	CORO1B	Q9BR76	54	322	Coronin-1B (Coronin-2)	
+CORO1B	mus-musculus	Q9WUM3	Coro1b	Q9WUM3	1	25	Coronin-1B	
+CORO1B	rattus-norvegicus	O89046	Coro1b	O89046	3	18	Coronin-1B	
+CORO1C	human	Q9ULV4	CORO1C	Q9ULV4	43	363	Coronin-1C (Coronin-3) (hCRNN4)	
+CORO1C	mus-musculus	Q9WUM4	Coro1c	Q9WUM4	2	25	Coronin-1C	
+CORO1C	rattus-norvegicus	G3V624	Coro1c	G3V624	3	21	Coronin	
+CORO1CA	zebrafish	B0R0D7	coro1ca	B0R0D7	2	8	Coronin-1C-A	
+CORO1CB	zebrafish	E9QI46	coro1cb	E9QI46	1	8	Coronin	
+CORO2A	human	Q92828	CORO2A	Q92828	18	147	Coronin-2A (IR10) (WD repeat-containing protein 2)	
+CORO2A	mus-musculus	Q8C0P5	Coro2a	Q8C0P5	1	10	Coronin-2A	
+CORO2A	rattus-norvegicus	A0A0G2QC56	Coro2a	A0A0G2QC56	0	6	Coronin	
+CORO2AA	zebrafish	F1QR96	coro2aa	F1QR96	0	8	Coronin	
+CORO2AB	zebrafish	A0A8M6Z4I0	coro2ab	A0A8M6Z4I0	0	8	Coronin	
+CORO2B	human	Q9UQ03	CORO2B	Q9UQ03	37	223	Coronin-2B (Coronin-like protein C) (Clipin-C) (Protein FC96	
+CORO2B	mus-musculus	Q8BH44	Coro2b	Q8BH44	0	10	Coronin-2B	
+CORO2B	rattus-norvegicus	F1LMV9	Coro2b	F1LMV9	0	6	Coronin	
+CORO2BA	zebrafish	A0A8M9Q2I6	coro2ba	A0A8M9Q2I6	0	8	Coronin	
+CORO6	human	Q6QEF8	CORO6	Q6QEF8	18	111	Coronin-6 (Coronin-like protein E) (Clipin-E)	
+CORO6	mus-musculus	Q920M5	Coro6	Q920M5	0	4	Coronin-6	
+CORO6	rattus-norvegicus	Q920J3	Coro6	Q920J3	2	10	Coronin-6	
+CORO6	zebrafish	Q7SZ58	coro6	Q7SZ58	2	8	Coronin	
+CORO6_HUMAN	human	Q6QEF8	CORO6	Q6QEF8	18	111		
+CORO7	human	P57737	CORO7	P57737	6	100	Coronin-7 (Crn7) (70 kDa WD repeat tumor rejection antigen h	
+CORO7	mus-musculus	Q9D2V7	Coro7	Q9D2V7	0	8	Coronin-7	
+CORO7	rattus-norvegicus	O35828	Coro7	O35828	0	7	Coronin-7	
+CORO7_HUMAN	human	P57737	CORO7	P57737	6	100		
+COROLLA	fly	FBgn0267967	corolla	Q9VX37	8	32	Corolla, isoform A (LD15362p)	w
+COROLLA	fly	FBgn0267967	corolla	Q9VX37	8	32	Corolla, isoform A (LD15362p)	w
+CORONA	fly	FBgn0038612	cona	Q9VE78	1	3	Corona (IP08467p) (IP08667p) (IP08767p)	w
+CORONARY	human	Q9P266	JCAD	Q9P266	23	68	Junctional cadherin 5-associated protein (Junctional protein	w
+CORONIN	fly	FBgn0029903	pod1	D6W4T8	1	20	Coronin	w
+CORONIN	fly	FBgn0265935	coro	A0A0B4KEJ7	6	71	Coronin	w
+CORONIN	human	A0A0A6YYL4	PAM16	A0A0A6YYL4	1	16	Coronin	w
+CORONIN	zebrafish	A0A8M6Z4I0	coro2ab	A0A8M6Z4I0	0	8	Coronin	w
+CORONIN	zebrafish	A0A8M9Q2I6	coro2ba	A0A8M9Q2I6	0	8	Coronin	w
+CORONIN	zebrafish	E9QI46	coro1cb	E9QI46	1	8	Coronin	w
+CORONIN	zebrafish	F1QR96	coro2aa	F1QR96	0	8	Coronin	w
+CORONIN	zebrafish	Q7SX58	coro1a	Q7SX58	1	8	Coronin	w
+CORONIN	zebrafish	Q7SZ58	coro6	Q7SZ58	2	8	Coronin	w
+CORONIN-1A	human	P31146	CORO1A	P31146	46	411	Coronin-1A (Coronin-like protein A) (Clipin-A) (Coronin-like	w
+CORONIN-1B	human	Q9BR76	CORO1B	Q9BR76	54	322	Coronin-1B (Coronin-2)	w
+CORONIN-1C	human	Q9ULV4	CORO1C	Q9ULV4	43	363	Coronin-1C (Coronin-3) (hCRNN4)	w
+CORONIN-1C-A	zebrafish	B0R0D7	coro1ca	B0R0D7	2	8	Coronin-1C-A	w
+CORONIN-2	human	Q9BR76	CORO1B	Q9BR76	54	322	Coronin-1B (Coronin-2)	w
+CORONIN-2A	human	Q92828	CORO2A	Q92828	18	147	Coronin-2A (IR10) (WD repeat-containing protein 2)	w
+CORONIN-2B	human	Q9UQ03	CORO2B	Q9UQ03	37	223	Coronin-2B (Coronin-like protein C) (Clipin-C) (Protein FC96	w
+CORONIN-3	human	Q9ULV4	CORO1C	Q9ULV4	43	363	Coronin-1C (Coronin-3) (hCRNN4)	w
+CORONIN-6	human	Q6QEF8	CORO6	Q6QEF8	18	111	Coronin-6 (Coronin-like protein E) (Clipin-E)	w
+CORONIN-7	human	P57737	CORO7	P57737	6	100	Coronin-7 (Crn7) (70 kDa WD repeat tumor rejection antigen h	w
+CORONIN-7	worm	K8ESK9	pod-1	K8ESK9	0	9	Coronin-7	w
+CORONIN-LIKE	human	P31146	CORO1A	P31146	46	411	Coronin-1A (Coronin-like protein A) (Clipin-A) (Coronin-like	w
+CORONIN-LIKE	human	Q6QEF8	CORO6	Q6QEF8	18	111	Coronin-6 (Coronin-like protein E) (Clipin-E)	w
+CORONIN-LIKE	human	Q9UQ03	CORO2B	Q9UQ03	37	223	Coronin-2B (Coronin-like protein C) (Clipin-C) (Protein FC96	w
+CORONIN-LIKE	worm	Q21624	cor-1	Q21624	1	14	Coronin-like protein cor-1	w
+CORONIN-LIKE	yeast	Q06440	CRN1	Q06440	1	89	Coronin-like protein	w
+CORP	fly	FBgn0030028	Corp	Q9W3G9	1	7	Companion of reaper protein (Companion of reaper, isoform A)	
+CORRELATED	human	O60443	GSDME	O60443	6	100	Gasdermin-E (Inversely correlated with estrogen receptor exp	w
+CORRINOID	human	Q96EY8	MMAB	Q96EY8	2	137	Corrinoid adenosyltransferase MMAB (EC 2.5.1.-) (ATP:co(I)rr	w
+CORRINOID	worm	Q18218	mmab-1	Q18218	0	3	Corrinoid adenosyltransferase MMAB	w
+CORRINOID	zebrafish	A2BGN0	mmab	A2BGN0	0	1	Corrinoid adenosyltransferase MMAB	w
+CORS26	human	Q9BXJ4	C1QTNF3	Q9BXJ4	16	59	Complement C1q tumor necrosis factor-related protein 3 (Coll	w
+CORT	fly	FBgn0000351	cort	Q960N3	8	80	Protein cortex	
+CORT	human	O00230	CORT	O00230	54	245	Cortistatin [Cleaved into: Cortistatin-29; Cortistatin-17; C	
+CORT	mus-musculus	P56469	Cort	P56469	9	46	Cortistatin	
+CORTACTIN	fly	FBgn0025865	Cortactin	Q9VDF4	8	50	Cortactin, isoform A (Cortactin, isoform B) (Cortactin, isof	w
+CORTACTIN	fly	FBgn0025865	Cortactin	Q9VDF4	8	50	Cortactin, isoform A (Cortactin, isoform B) (Cortactin, isof	w
+CORTACTIN	human	Q14247	CTTN	Q14247	110	523	Src substrate cortactin (Amplaxin) (Oncogene EMS1)	w
+CORTACTIN-BINDING	human	A6NHU9	SHANK2	A6NHU9	26	62	Cortactin-binding protein 1	w
+CORTACTIN-BINDING	human	Q8WZ74	CTTNBP2	Q8WZ74	19	140	Cortactin-binding protein 2 (CortBP2)	w
+CORTACTIN-BINDING	human	Q9UPX8	SHANK2	Q9UPX8	40	131	SH3 and multiple ankyrin repeat domains protein 2 (Shank2) (	w
+CORTACTIN-BINDING	worm	Q95QQ9	C49H3.6	Q95QQ9	0	12	Cortactin-binding protein-2 N-terminal domain-containing pro	w
+CORTACTIN_20_559	fly	FBgn0025865	Cortactin	Q9VDF4	8	50		
+CORTBP1	human	Q9UPX8	SHANK2	Q9UPX8	40	131		
+CORTBP2	human	Q8WZ74	CTTNBP2	Q8WZ74	19	140		
+CORTEX	fly	FBgn0000351	cort	Q960N3	8	80	Protein cortex	w
+CORTEX	human	O14682	ENC1	O14682	41	176	Ectoderm-neural cortex protein 1 (ENC-1) (Kelch-like protein	w
+CORTEX	human	Q9H0H3	KLHL25	Q9H0H3	28	94	Kelch-like protein 25 (Ectoderm-neural cortex protein 2) (EN	w
+CORTEX	zebrafish	F1QKP6	enc1	F1QKP6	2	4	Ectoderm-neural cortex protein 1	w
+CORTEX	zebrafish	Q7ZT06	enc3	Q7ZT06	3	4	Ectodermal-neural cortex 3	w
+CORTEXIN	human	A0A1B0GTU2	CTXND1	A0A1B0GTU2	5	26	Cortexin domain-containing 1 protein	w
+CORTEXIN	human	A0A1B0GV90	CTXND2	A0A1B0GV90	3	13	Cortexin domain containing 2	w
+CORTEXIN	zebrafish	A0A2R8Q814	ctxn3	A0A2R8Q814	0	2	Cortexin 3	w
+CORTEXIN-1	human	P60606	CTXN1	P60606	41	148	Cortexin-1	w
+CORTEXIN-2	human	P0C2S0	CTXN2	P0C2S0	22	120	Cortexin-2	w
+CORTEXIN-3	human	Q4LDR2	CTXN3	Q4LDR2	69	269	Cortexin-3 (Kidney and brain-expressed protein)	w
+CORTI	human	P63208	SKP1	P63208	126	1119	S-phase kinase-associated protein 1 (Cyclin-A/CDK2-associate	w
+CORTI	human	Q8N3J9	ZNF664	Q8N3J9	8	410	Zinc finger protein 664 (Zinc finger protein 176) (Zinc fing	w
+CORTICAL	human	Q96IQ7	VSIG2	Q96IQ7	28	139	V-set and immunoglobulin domain-containing protein 2 (Cortic	w
+CORTICOLIBERIN	human	P06850	CRH	P06850	72	404	Corticotropin-releasing hormone (Corticoliberin) (Corticotro	w
+CORTICOSTATIN	human	P12838	DEFA4	P12838	11	93	Defensin alpha 4 (Corticostatin HP-4) (HNP-4) (HP-4) (Neutro	w
+CORTICOSTEROID	human	P28845	HSD11B1	P28845	17	128	11-beta-hydroxysteroid dehydrogenase 1 (11-DH) (11-beta-HSD1	w
+CORTICOSTEROID-BINDING	human	P08185	SERPINA6	P08185	33	283	Corticosteroid-binding globulin (CBG) (Serpin A6) (Transcort	w
+CORTICOSTEROIDS	human	A6NGB9	WIPF3	A6NGB9	13	47	WAS/WASL-interacting protein family member 3 (Corticosteroid	w
+CORTICOSTERONE	human	P19099	CYP11B2	P19099	7	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
+CORTICOTROPIN	human	P01189	POMC	P01189	29	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w
+CORTICOTROPIN	zebrafish	A8WG03	crhr2	A8WG03	2	43	Corticotropin releasing hormone receptor 2	w
+CORTICOTROPIN-LIPOTROPIN	human	P01189	POMC	P01189	29	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w
+CORTICOTROPIN-RELEASING	fly	FBgn0000715	FMRFa	P10552	16	250	FMRFamide-related peptides [Cleaved into: FMRFamide A; Corti	w
+CORTICOTROPIN-RELEASING	human	P06850	CRH	P06850	72	404	Corticotropin-releasing hormone (Corticoliberin) (Corticotro	w
+CORTICOTROPIN-RELEASING	human	P24387	CRHBP	P24387	7	46	Corticotropin-releasing hormone-binding protein (CRH-BP) (Co	w
+CORTICOTROPIN-RELEASING	human	P34998	CRHR1	P34998	59	562	Corticotropin-releasing hormone receptor 1 (CRH-R-1) (CRH-R1	w
+CORTICOTROPIN-RELEASING	human	Q13324	CRHR2	Q13324	40	355	Corticotropin-releasing hormone receptor 2 (CRH-R-2) (CRH-R2	w
+CORTICOTROPIN-RELEASING	zebrafish	Q6DG79	crhbp	Q6DG79	2	4	Corticotropin-releasing factor-binding protein	w
+CORTICOTROPIN-RELEASING	zebrafish	X1WHD4	crhr1	X1WHD4	11	50	Corticotropin-releasing factor receptor 1	w
+CORTISTATIN	human	O00230	CORT	O00230	54	245	Cortistatin [Cleaved into: Cortistatin-29; Cortistatin-17; C	w
+CORTISTATIN	zebrafish	Q0P3Y2	sst6.1	Q0P3Y2	8	64	Cortistatin	w
+CORTISTATIN-14	human	O00230	CORT	O00230	54	245	Cortistatin [Cleaved into: Cortistatin-29; Cortistatin-17; C	w
+CORTISTATIN-17	human	O00230	CORT	O00230	54	245	Cortistatin [Cleaved into: Cortistatin-29; Cortistatin-17; C	w
+CORTISTATIN-29	human	O00230	CORT	O00230	54	245	Cortistatin [Cleaved into: Cortistatin-29; Cortistatin-17; C	w
+CORTO	fly	FBgn0010313	corto	P41046	9	56	Centrosomal and chromosomal factor (CCF) (Chromocentrosomin)	
+CORT_HUMAN	human	O00230	CORT	O00230	54	245		

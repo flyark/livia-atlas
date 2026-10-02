@@ -1,15 +1,167 @@
-ECT1	arabidopsis-thaliana	Q3MK94	ECT1	Q3MK94	0	12	YTH domain-containing protein ECT1
-ECT10	arabidopsis-thaliana	F4KDJ9	ECT10	F4KDJ9	1	8	YTH domain-containing family protein
-ECT11	arabidopsis-thaliana	Q56XH8	ECT11	Q56XH8	0	10	YTH domain-containing family protein
-ECT2	arabidopsis-thaliana	Q9LJE5	ECT2	Q9LJE5	0	10	YTH domain-containing protein ECT2
-ECT2	mus-musculus	Q07139	Ect2	Q07139	4	39	Protein ECT2
-ECT2	rattus-norvegicus	D3ZUD0	Ect2	D3ZUD0	3	46	Protein ECT2
-ECT2L	mus-musculus	F7CKP4	Ect2l	F7CKP4	0	4	Epithelial cell transforming sequence 2 oncogene-like
-ECT2L	rattus-norvegicus	A0A0G2JVR2	Ect2l	A0A0G2JVR2	0	11	Epithelial cell transforming 2 like
-ECT3	arabidopsis-thaliana	F4K1Z0	ECT3	F4K1Z0	0	8	YTH domain-containing protein ECT3
-ECT4	arabidopsis-thaliana	A0A1P8AS03	ECT4	A0A1P8AS03	0	8	YTH domain-containing protein ECT4
-ECT5	arabidopsis-thaliana	Q0WR25	ECT5	Q0WR25	0	8	YTH domain-containing family protein
-ECT6	arabidopsis-thaliana	Q1JPL5	ECT6	Q1JPL5	1	9	YTH domain-containing family protein
-ECT8	arabidopsis-thaliana	Q9FPE7	ECT8	Q9FPE7	2	18	YTH domain-containing family protein
-ECT9	arabidopsis-thaliana	Q500V8	ECT9	Q500V8	0	9	YTH domain-containing family protein
-ECTC	nocardia-brasiliensis	K0F057	ectC	K0F057	0	4	L-ectoine synthase
+ECT	fly	FBgn0000451	ect	X2JAX9	40	251	Ectodermal, isoform F	
+ECT-2	worm	Q9U364	ect-2	Q9U364	2	18	Protein ECT2	
+ECT1	arabidopsis-thaliana	Q3MK94	ECT1	Q3MK94	0	12	YTH domain-containing protein ECT1	
+ECT1	yeast	P33412	ECT1	P33412	0	4	Ethanolamine-phosphate cytidylyltransferase	
+ECT10	arabidopsis-thaliana	F4KDJ9	ECT10	F4KDJ9	1	8	YTH domain-containing family protein	
+ECT11	arabidopsis-thaliana	Q56XH8	ECT11	Q56XH8	0	10	YTH domain-containing family protein	
+ECT2	arabidopsis-thaliana	Q9LJE5	ECT2	Q9LJE5	0	10	YTH domain-containing protein ECT2	
+ECT2	human	Q9H8V3	ECT2	Q9H8V3	96	1080	Protein ECT2 (Epithelial cell-transforming sequence 2 oncoge	
+ECT2	mus-musculus	Q07139	Ect2	Q07139	4	39	Protein ECT2	
+ECT2	rattus-norvegicus	D3ZUD0	Ect2	D3ZUD0	3	46	Protein ECT2	
+ECT2	worm	Q9U364	ect-2	Q9U364	2	18	Protein ECT2	w
+ECT2	zebrafish	F1QVS6	ect2	F1QVS6	3	37	Epithelial cell-transforming 2	
+ECT2-INTERACTING	human	Q9Y2M5	KLHL20	Q9Y2M5	85	363	Kelch-like protein 20 (Kelch-like ECT2-interacting protein) 	w
+ECT2L	human	Q008S8	ECT2L	Q008S8	2	83	Epithelial cell-transforming sequence 2 oncogene-like (Lung-	
+ECT2L	mus-musculus	F7CKP4	Ect2l	F7CKP4	0	4	Epithelial cell transforming sequence 2 oncogene-like	
+ECT2L	rattus-norvegicus	A0A0G2JVR2	Ect2l	A0A0G2JVR2	0	11	Epithelial cell transforming 2 like	
+ECT2L	zebrafish	F1QUJ5	ect2l	F1QUJ5	2	10	Coiled-coil domain-containing 28A	
+ECT2L_HUMAN	human	Q008S8	ECT2L	Q008S8	2	83		
+ECT2_HUMAN	human	Q9H8V3	ECT2	Q9H8V3	96	1080		
+ECT3	arabidopsis-thaliana	F4K1Z0	ECT3	F4K1Z0	0	8	YTH domain-containing protein ECT3	
+ECT3	fly	FBgn0260746	Ect3	Q9VGE7	14	254	Beta-galactosidase (EC 3.2.1.23)	
+ECT4	arabidopsis-thaliana	A0A1P8AS03	ECT4	A0A1P8AS03	0	8	YTH domain-containing protein ECT4	
+ECT5	arabidopsis-thaliana	Q0WR25	ECT5	Q0WR25	0	8	YTH domain-containing family protein	
+ECT6	arabidopsis-thaliana	Q1JPL5	ECT6	Q1JPL5	1	9	YTH domain-containing family protein	
+ECT8	arabidopsis-thaliana	Q9FPE7	ECT8	Q9FPE7	2	18	YTH domain-containing family protein	
+ECT9	arabidopsis-thaliana	Q500V8	ECT9	Q500V8	0	9	YTH domain-containing family protein	
+ECTC	nocardia-brasiliensis	K0F057	ectC	K0F057	0	4	L-ectoine synthase	
+ECTO-5	fly	FBgn0050104	NT5E-2	Q8SZY4	5	111	Ecto-5'-nucleotidase 2, isoform A (Ecto-5'-nucleotidase 2, i	w
+ECTO-5	human	P15309	ACP3	P15309	13	258	Prostatic acid phosphatase (PAP) (EC 3.1.3.2) (5'-nucleotida	w
+ECTO-5	human	P21589	NT5E	P21589	2	287	5'-nucleotidase (5'-NT) (EC 3.1.3.35) (EC 3.1.3.5) (EC 3.1.3	w
+ECTO-ADP-RIBOSYLTRANSFERASE	human	Q13508	ART3	Q13508	6	65	Ecto-ADP-ribosyltransferase 3 (EC 2.4.2.31) (ADP-ribosyltran	w
+ECTO-ADP-RIBOSYLTRANSFERASE	human	Q93070	ART4	Q93070	11	73	Ecto-ADP-ribosyltransferase 4 (EC 2.4.2.31) (ADP-ribosyltran	w
+ECTO-ADP-RIBOSYLTRANSFERASE	human	Q96L15	ART5	Q96L15	6	72	Ecto-ADP-ribosyltransferase 5 (EC 2.4.2.31) (ADP-ribosyltran	w
+ECTO-ATP	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
+ECTO-ATP	human	P49961	ENTPD1	P49961	18	203	Ectonucleoside triphosphate diphosphohydrolase 1 (EC 3.6.1.5	w
+ECTO-ATP	human	Q9Y5L3	ENTPD2	Q9Y5L3	13	167	Ectonucleoside triphosphate diphosphohydrolase 2 (E-NTPDase 	w
+ECTO-ATPDASE	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
+ECTO-ATPDASE	human	P49961	ENTPD1	P49961	18	203	Ectonucleoside triphosphate diphosphohydrolase 1 (EC 3.6.1.5	w
+ECTO-ATPDASE	human	Q9Y5L3	ENTPD2	Q9Y5L3	13	167	Ectonucleoside triphosphate diphosphohydrolase 2 (E-NTPDase 	w
+ECTO-NOX	human	Q16206	ENOX2	Q16206	16	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
+ECTO-NOX	human	Q8TC92	ENOX1	Q8TC92	5	34	Ecto-NOX disulfide-thiol exchanger 1 (Candidate growth-relat	w
+ECTO-NOX	zebrafish	E7EZB6	enox2	E7EZB6	0	1	Ecto-NOX disulfide-thiol exchanger 2	w
+ECTO-NOX	zebrafish	X1WCA2	enox1	X1WCA2	0	1	Ecto-NOX disulfide-thiol exchanger 1	w
+ECTODERM	human	O75530	EED	O75530	216	1053	Polycomb protein EED (hEED) (Embryonic ectoderm development 	w
+ECTODERM-NEURAL	human	O14682	ENC1	O14682	41	176	Ectoderm-neural cortex protein 1 (ENC-1) (Kelch-like protein	w
+ECTODERM-NEURAL	human	Q9H0H3	KLHL25	Q9H0H3	28	94	Kelch-like protein 25 (Ectoderm-neural cortex protein 2) (EN	w
+ECTODERM-NEURAL	zebrafish	F1QKP6	enc1	F1QKP6	2	4	Ectoderm-neural cortex protein 1	w
+ECTODERMAL	fly	FBgn0000451	ect	X2JAX9	40	251	Ectodermal, isoform F	w
+ECTODERMAL	fly	FBgn0001257	ImpL2	Q09024	35	297	Neural/ectodermal development factor IMP-L2	w
+ECTODERMAL	human	O43918	AIRE	O43918	38	173	Autoimmune regulator (Autoimmune polyendocrinopathy candidia	w
+ECTODERMAL	human	Q6X4U4	SOSTDC1	Q6X4U4	5	47	Sclerostin domain-containing protein 1 (Ectodermal BMP inhib	w
+ECTODERMAL	human	Q92838	EDA	Q92838	23	131	Ectodysplasin-A (Ectodermal dysplasia protein) (EDA protein)	w
+ECTODERMAL	human	Q9UNE0	EDAR	Q9UNE0	22	107	Tumor necrosis factor receptor superfamily member EDAR (Anhi	w
+ECTODERMAL-NEURAL	zebrafish	Q7ZT06	enc3	Q7ZT06	3	4	Ectodermal-neural cortex 3	w
+ECTODERMIN	human	Q9UPN9	TRIM33	Q9UPN9	96	588	E3 ubiquitin-protein ligase TRIM33 (EC 2.3.2.27) (Ectodermin	w
+ECTODIN	human	Q6X4U4	SOSTDC1	Q6X4U4	5	47	Sclerostin domain-containing protein 1 (Ectodermal BMP inhib	w
+ECTODOMAIN	human	Q6ZMI3	GLDN	Q6ZMI3	6	49	Gliomedin [Cleaved into: Gliomedin shedded ectodomain]	w
+ECTODYSPLASIN	human	Q9UNE0	EDAR	Q9UNE0	22	107	Tumor necrosis factor receptor superfamily member EDAR (Anhi	w
+ECTODYSPLASIN	zebrafish	A0A0R4IGE7	edar	A0A0R4IGE7	1	5	Ectodysplasin A receptor	w
+ECTODYSPLASIN-A	human	Q8WWZ3	EDARADD	Q8WWZ3	10	122	Ectodysplasin-A receptor-associated adapter protein (EDAR-as	w
+ECTODYSPLASIN-A	human	Q92838	EDA	Q92838	23	131	Ectodysplasin-A (Ectodermal dysplasia protein) (EDA protein)	w
+ECTODYSPLASIN-A	zebrafish	E7F388	edaradd	E7F388	1	5	Ectodysplasin-A receptor-associated adapter protein	w
+ECTODYSPLASIN-A2	human	Q9HAV5	EDA2R	Q9HAV5	9	56	Tumor necrosis factor receptor superfamily member 27 (X-link	w
+ECTOENZYME	human	Q9UKU6	TRHDE	Q9UKU6	14	46	Thyrotropin-releasing hormone-degrading ectoenzyme (TRH-DE) 	w
+ECTONUCLE	human	Q6UWR7	ENPP6	Q6UWR7	8	83	Glycerophosphocholine cholinephosphodiesterase ENPP6 (GPC-Cp	w
+ECTONUCLEOSIDE	human	O75354	ENTPD6	O75354	8	67	Ectonucleoside triphosphate diphosphohydrolase 6 (NTPDase 6)	w
+ECTONUCLEOSIDE	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
+ECTONUCLEOSIDE	human	O75356	ENTPD5	O75356	7	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	w
+ECTONUCLEOSIDE	human	P49961	ENTPD1	P49961	18	203	Ectonucleoside triphosphate diphosphohydrolase 1 (EC 3.6.1.5	w
+ECTONUCLEOSIDE	human	Q5MY95	ENTPD8	Q5MY95	4	36	Ectonucleoside triphosphate diphosphohydrolase 8 (E-NTPDase 	w
+ECTONUCLEOSIDE	human	Q9NQZ7	ENTPD7	Q9NQZ7	9	63	Ectonucleoside triphosphate diphosphohydrolase 7 (NTPDase 7)	w
+ECTONUCLEOSIDE	human	Q9Y227	ENTPD4	Q9Y227	4	47	Ectonucleoside triphosphate diphosphohydrolase 4 (NTPDase 4)	w
+ECTONUCLEOSIDE	human	Q9Y5L3	ENTPD2	Q9Y5L3	13	167	Ectonucleoside triphosphate diphosphohydrolase 2 (E-NTPDase 	w
+ECTONUCLEOSIDE	zebrafish	A0A8M3AWQ3	entpd2b	A0A8M3AWQ3	0	1	Ectonucleoside triphosphate diphosphohydrolase 2	w
+ECTONUCLEOSIDE	zebrafish	E7FG27	entpd1	E7FG27	0	17	Ectonucleoside triphosphate diphosphohydrolase 1	w
+ECTONUCLEOSIDE	zebrafish	F1QCU4	entpd8	F1QCU4	0	17	Ectonucleoside triphosphate diphosphohydrolase 8	w
+ECTONUCLEOTIDE	human	O14638	ENPP3	O14638	3	22	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	w
+ECTONUCLEOTIDE	human	P22413	ENPP1	P22413	12	94	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	w
+ECTONUCLEOTIDE	human	Q13822	ENPP2	Q13822	0	17	Autotaxin (EC 3.1.4.39) (EC 3.1.4.4) (Ectonucleotide pyropho	w
+ECTONUCLEOTIDE	human	Q6UWV6	ENPP7	Q6UWV6	3	67	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	w
+ECTONUCLEOTIDE	human	Q9UJA9	ENPP5	Q9UJA9	14	64	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	w
+ECTONUCLEOTIDE	human	Q9Y6X5	ENPP4	Q9Y6X5	19	136	Bis(5'-adenosyl)-triphosphatase ENPP4 (EC 3.6.1.29) (AP3A hy	w
+ECTONUCLEOTIDE	worm	P90754	enpp-1	P90754	0	10	Ectonucleotide pyrophosphatase/phosphodiesterase C27A7.1	w
+ECTONUCLEOTIDE	worm	P90755	C27A7.3	P90755	0	5	Ectonucleotide pyrophosphatase/phosphodiesterase C27A7.3	w
+ECTONUCLEOTIDE	yeast	P25353	NPP1	P25353	0	6	Ectonucleotide pyrophosphatase/phosphodiesterase 1	w
+ECTONUCLEOTIDE	yeast	P39997	NPP2	P39997	0	6	Ectonucleotide pyrophosphatase/phosphodiesterase 2	w
+ECTONUCLEOTIDE	zebrafish	B0JZL7	enpp1	B0JZL7	0	12	Ectonucleotide pyrophosphatase/phosphodiesterase 1	w
+ECTONUCLEOTIDE	zebrafish	F6NXI2	enpp7.1	F6NXI2	1	9	Ectonucleotide pyrophosphatase/phosphodiesterase 7, tandem d	w
+ECTONUCLEOTIDE	zebrafish	F6PAL8	enpp7.2	F6PAL8	0	9	Ectonucleotide pyrophosphatase/phosphodiesterase 7, tandem d	w
+ECTONUCLEOTIDE	zebrafish	Q6PGY9	enpp2	Q6PGY9	0	5	Ectonucleotide pyrophosphatase/phosphodiesterase 2	w
+ECTOPIC	fly	FBgn0038651	Epg5	Q9VE34	3	50	Ectopic P granules protein 5 homolog	w
+ECTOPIC	human	Q9HCE0	EPG5	Q9HCE0	4	31	Ectopic P granules protein 5 homolog	w
+ECTOPIC	worm	Q20123	epg-4	Q20123	0	1	Ectopic P granules protein 4	w
+ECTOPIC	worm	Q21502	mep-1	Q21502	1	40	MOG interacting and ectopic P-granules protein 1	w
+ECTOPIC	worm	Q86MP3	epg-6	Q86MP3	0	3	Ectopic P granules protein 6	w
+ECTOPIC	worm	Q95XR4	epg-2	Q95XR4	1	7	Ectopic P granules protein 2	w
+ECTOPIC	worm	Q9XWU8	epg-3	Q9XWU8	0	6	Ectopic P granules protein 3	w
+ECTOPLASMIC	human	B1AK53	ESPN	B1AK53	58	156	Espin (Autosomal recessive deafness type 36 protein) (Ectopl	w
+ECTVM	virus	O11455	H14-B	O11455	4	169	O11455_ECTVM	w
+ECTVM	virus	O11456	H14-E	O11456	6	170	O11456_ECTVM	w
+ECTVM	virus	Q66793	C4R	Q66793	2	170	Q66793_ECTVM	w
+ECTVM	virus	Q77ZB7	EVM003	Q77ZB7	13	170	Q77ZB7_ECTVM	w
+ECTVM	virus	Q77ZC1	EVM129	Q77ZC1	3	170	Q77ZC1_ECTVM	w
+ECTVM	virus	Q77ZC2	EVM117.5	Q77ZC2	1	170	Q77ZC2_ECTVM	w
+ECTVM	virus	Q77ZC5	EVM077	Q77ZC5	4	170	Q77ZC5_ECTVM	w
+ECTVM	virus	Q77ZD3	EVM043	Q77ZD3	28	170	Q77ZD3_ECTVM	w
+ECTVM	virus	Q77ZD5	EVM014	Q77ZD5	6	170	Q77ZD5_ECTVM	w
+ECTVM	virus	Q77ZD6	EVM013	Q77ZD6	5	170	Q77ZD6_ECTVM	w
+ECTVM	virus	Q8JJH6	EVM009	Q8JJH6	23	170	Q8JJH6_ECTVM	w
+ECTVM	virus	Q8JL65	EVM154	Q8JL65	10	169	Q8JL65_ECTVM	w
+ECTVM	virus	Q8JL66	EVM153	Q8JL66	4	169	Q8JL66_ECTVM	w
+ECTVM	virus	Q8JL74	EVM145	Q8JL74	8	170	Q8JL74_ECTVM	w
+ECTVM	virus	Q8JL77	EVM142	Q8JL77	2	170	Q8JL77_ECTVM	w
+ECTVM	virus	Q8JL79	EVM140	Q8JL79	5	170	Q8JL79_ECTVM	w
+ECTVM	virus	Q8JL82	EVM137	Q8JL82	3	170	Q8JL82_ECTVM	w
+ECTVM	virus	Q8JL83	EVM136	Q8JL83	11	170	Q8JL83_ECTVM	w
+ECTVM	virus	Q8JL89	EVM128	Q8JL89	3	168	Q8JL89_ECTVM	w
+ECTVM	virus	Q8JL92	EVM125	Q8JL92	17	170	Q8JL92_ECTVM	w
+ECTVM	virus	Q8JL93	EVM124	Q8JL93	11	170	Q8JL93_ECTVM	w
+ECTVM	virus	Q8JL94	EVM123	Q8JL94	4	170	Q8JL94_ECTVM	w
+ECTVM	virus	Q8JL98	EVM119	Q8JL98	16	170	Q8JL98_ECTVM	w
+ECTVM	virus	Q8JLB0	EVM105	Q8JLB0	5	170	Q8JLB0_ECTVM	w
+ECTVM	virus	Q8JLB6	EVM099	Q8JLB6	7	170	Q8JLB6_ECTVM	w
+ECTVM	virus	Q8JLB7	EVM098	Q8JLB7	10	170	Q8JLB7_ECTVM	w
+ECTVM	virus	Q8JLC3	EVM092	Q8JLC3	5	170	Q8JLC3_ECTVM	w
+ECTVM	virus	Q8JLC4	EVM091	Q8JLC4	6	170	Q8JLC4_ECTVM	w
+ECTVM	virus	Q8JLC6	EVM089	Q8JLC6	7	170	Q8JLC6_ECTVM	w
+ECTVM	virus	Q8JLC8	EVM087	Q8JLC8	18	170	Q8JLC8_ECTVM	w
+ECTVM	virus	Q8JLD0	EVM085	Q8JLD0	1	169	Q8JLD0_ECTVM	w
+ECTVM	virus	Q8JLD1	EVM084	Q8JLD1	5	170	Q8JLD1_ECTVM	w
+ECTVM	virus	Q8JLD2	EVM083	Q8JLD2	16	170	Q8JLD2_ECTVM	w
+ECTVM	virus	Q8JLD4	EVM081	Q8JLD4	16	170	Q8JLD4_ECTVM	w
+ECTVM	virus	Q8JLE1	EVM072	Q8JLE1	6	170	Q8JLE1_ECTVM	w
+ECTVM	virus	Q8JLE2	EVM071	Q8JLE2	6	170	Q8JLE2_ECTVM	w
+ECTVM	virus	Q8JLF0	EVM060	Q8JLF0	6	169	Q8JLF0_ECTVM	w
+ECTVM	virus	Q8JLF6	EVM052	Q8JLF6	1	170	Q8JLF6_ECTVM	w
+ECTVM	virus	Q8JLG0	EVM047	Q8JLG0	1	170	Q8JLG0_ECTVM	w
+ECTVM	virus	Q8JLG3	EVM042	Q8JLG3	3	169	Q8JLG3_ECTVM	w
+ECTVM	virus	Q8JLG5	EVM040	Q8JLG5	7	170	Q8JLG5_ECTVM	w
+ECTVM	virus	Q8JLH2	EVM032	Q8JLH2	4	170	Q8JLH2_ECTVM	w
+ECTVM	virus	Q8JLH3	EVM031	Q8JLH3	7	170	Q8JLH3_ECTVM	w
+ECTVM	virus	Q8JLH7	EVM027	Q8JLH7	11	169	Q8JLH7_ECTVM	w
+ECTVM	virus	Q8JLH9	EVM025	Q8JLH9	6	169	Q8JLH9_ECTVM	w
+ECTVM	virus	Q8JLI0	EVM022	Q8JLI0	13	170	Q8JLI0_ECTVM	w
+ECTVM	virus	Q8JLI1	EVM021	Q8JLI1	13	169	Q8JLI1_ECTVM	w
+ECTVM	virus	Q8JLI2	EVM020	Q8JLI2	2	170	Q8JLI2_ECTVM	w
+ECTVM	virus	Q8JLI3	EVM019	Q8JLI3	12	170	Q8JLI3_ECTVM	w
+ECTVM	virus	Q8JLI6	EVM016	Q8JLI6	12	170	Q8JLI6_ECTVM	w
+ECTVM	virus	Q8JLI7	EVM015	Q8JLI7	4	170	Q8JLI7_ECTVM	w
+ECTVM	virus	Q8JLI8	EVM011	Q8JLI8	5	170	Q8JLI8_ECTVM	w
+ECTVM	virus	Q8JLI9	EVM010	Q8JLI9	1	169	Q8JLI9_ECTVM	w
+ECTVM	virus	Q8JLJ0	EVM008	Q8JLJ0	4	170	Q8JLJ0_ECTVM	w
+ECTVM	virus	Q8JLJ1	EVM007	Q8JLJ1	8	170	Q8JLJ1_ECTVM	w
+ECTVM	virus	Q8JLJ2	EVM006	Q8JLJ2	7	170	Q8JLJ2_ECTVM	w
+ECTVM	virus	Q8JLJ3	EVM005	Q8JLJ3	4	169	Q8JLJ3_ECTVM	w
+ECTVM	virus	Q8JLJ4	EVM004	Q8JLJ4	10	170	Q8JLJ4_ECTVM	w
+ECTVM	virus	Q9JFS0	K2R	Q9JFS0	7	170	Q9JFS0_ECTVM	w
+ECTVM	virus	Q9JFS1	K1R	Q9JFS1	6	169	Q9JFS1_ECTVM	w
+ECTVM	virus	Q9JFS2	C15R	Q9JFS2	1	124	Q9JFS2_ECTVM	w
+ECTVM	virus	Q9JFS3	C14R	Q9JFS3	0	169	Q9JFS3_ECTVM	w
+ECTVM	virus	Q9JFS6	C11R	Q9JFS6	2	169	Q9JFS6_ECTVM	w
+ECTVM	virus	Q9JFS7	C10L	Q9JFS7	1	170	Q9JFS7_ECTVM	w
+ECTVM	virus	Q9JFS9	C8R	Q9JFS9	20	170	Q9JFS9_ECTVM	w
+ECTVM	virus	Q9JFT0	C6R	Q9JFT0	8	170	Q9JFT0_ECTVM	w
+ECTVM	virus	Q9JFT1	C5R	Q9JFT1	4	170	Q9JFT1_ECTVM	w
+ECTVM	virus	Q9JFT2	C3R	Q9JFT2	2	170	Q9JFT2_ECTVM	w
+ECTVM	virus	Q9JFT3	C2R	Q9JFT3	6	170	Q9JFT3_ECTVM	w

@@ -1,14 +1,99 @@
-NEM1	schizosaccharomyces-pombe	O59718	nem1	O59718	1	8	Nuclear envelope morphology protein 1
-NEMA	escherichia-coli-83333	P77258	nemA	P77258	0	8	N-ethylmaleimide reductase
-NEMA	salmonella-typhimurium	Q8ZPN7	nemA	Q8ZPN7	0	8	N-ethylmaleimide reductase
-NEMA	shigella-dysenteriae-serotype-1	Q32FC0	nemA	Q32FC0	1	5	N-ethylmaleimide reductase
-NEMF	cladophialophora-carrionii	A0A1C1CJ96	NEMF	A0A1C1CJ96	0	62	Ribosome quality control complex subunit 2
-NEMF	mus-musculus	Q8CCP0	Nemf	Q8CCP0	7	94	Ribosome quality control complex subunit NEMF
-NEMF	rattus-norvegicus	A0A0G2K9F2	Nemf	A0A0G2K9F2	7	170	Ribosome quality control complex subunit NEMF
-NEMP1	mus-musculus	Q6ZQE4	Nemp1	Q6ZQE4	1	2	Nuclear envelope integral membrane protein 1
-NEMP1	rattus-norvegicus	M0R7R7	Nemp1	M0R7R7	1	3	Nuclear envelope integral membrane protein 1
-NEMP2	mus-musculus	Q8CB65	Nemp2	Q8CB65	0	1	Nuclear envelope integral membrane protein 2
-NEMP2	rattus-norvegicus	P0C8N6	Nemp2	P0C8N6	0	2	Nuclear envelope integral membrane protein 2
-NEMP_B	arabidopsis-thaliana	F4K567	NEMP_B	F4K567	1	3	Transmembrane protein (DUF2215)
-NEMP_C	arabidopsis-thaliana	A0A1I9LLM0	NEMP_C	A0A1I9LLM0	1	1	Transmembrane protein (DUF2215)
-NEMR	escherichia-coli-83333	P67430	nemR	P67430	0	1	HTH-type transcriptional repressor NemR
+NEM-SENSITIVE	fly	FBgn0000346	comt	P46461	5	90	Vesicle-fusing ATPase 1 (EC 3.6.4.6) (N-ethylmaleimide-sensi	w
+NEM-SENSITIVE	human	P46459	NSF	P46459	2	331	Vesicle-fusing ATPase (EC 3.6.4.6) (N-ethylmaleimide-sensiti	w
+NEM1	schizosaccharomyces-pombe	O59718	nem1	O59718	1	8	Nuclear envelope morphology protein 1	
+NEM1	yeast	P38757	NEM1	P38757	1	16	Nuclear envelope morphology protein 1	
+NEMA	escherichia-coli-83333	P77258	nemA	P77258	0	8	N-ethylmaleimide reductase	
+NEMA	salmonella-typhimurium	Q8ZPN7	nemA	Q8ZPN7	0	8	N-ethylmaleimide reductase	
+NEMA	shigella-dysenteriae-serotype-1	Q32FC0	nemA	Q32FC0	1	5	N-ethylmaleimide reductase	
+NEMATOCIN	worm	O02300	ntr-1	O02300	1	7	Nematocin receptor 1	w
+NEMATOCIN	worm	O62169	ntr-2	O62169	1	11	Nematocin receptor 2	w
+NEMATODE	worm	A3QM98	col-138	A3QM98	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	G5ECF8	nsph-4.2	G5ECF8	0	4	Nematode Specific Peptide family	w
+NEMATODE	worm	G5EES8	nspd-5	G5EES8	0	5	Nematode Specific Peptide family, group D	w
+NEMATODE	worm	G5EF32	npa-1	G5EF32	0	27	Nematode polyprotein allergen related, post-translationnally	w
+NEMATODE	worm	O17036	col-142	O17036	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	O17038	col-143	O17038	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	O17209	sqt-2	O17209	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	O17641	col-178	O17641	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	O17642	col-179	O17642	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	O18286	col-97	O18286	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	O44902	nspd-1	O44902	0	4	Nematode Specific Peptide family, group D	w
+NEMATODE	worm	O45105	col-101	O45105	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	O62432	dpy-4	O62432	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	P91249	col-20	P91249	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	P91250	col-73	P91250	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q17417	col-149	Q17417	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q17418	col-150	Q17418	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q17458	col-144	Q17458	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q17582	col-61	Q17582	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q17633	nsph-3.2	Q17633	0	6	Nematode Specific Peptide family	w
+NEMATODE	worm	Q18302	col-125	Q18302	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q18345	dpy-8	Q18345	1	6	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q18450	col-113	Q18450	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q18799	col-119	Q18799	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q19050	col-186	Q19050	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q19079	dpy-3	Q19079	1	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q19279	nspb-12	Q19279	0	3	Nematode Specific Peptide family, group B	w
+NEMATODE	worm	Q19470	col-184	Q19470	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q19514	col-153	Q19514	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q20135	col-81	Q20135	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q20136	ram-2	Q20136	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q20282	col-139	Q20282	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q20805	col-154	Q20805	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q20921	col-160	Q20921	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q20922	col-159	Q20922	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q21528	col-76	Q21528	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q21556	col-129	Q21556	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q21562	col-77	Q21562	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q22183	col-122	Q22183	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q22260	col-146	Q22260	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q22369	col-41	Q22369	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q22379	col-167	Q22379	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q23150	col-181	Q23150	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q7Z152	col-51	Q7Z152	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q86MP1	col-95	Q86MP1	0	6	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q86MP2	col-96	Q86MP2	0	6	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q86NE4	col-169	Q86NE4	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q8I4C0	col-42	Q8I4C0	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q8MXT6	col-106	Q8MXT6	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q94399	col-63	Q94399	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q94401	nsph-2	Q94401	0	5	Nematode Specific Peptide family	w
+NEMATODE	worm	Q966K5	col-165	Q966K5	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q9NAQ4	col-83	Q9NAQ4	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q9U348	col-93	Q9U348	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q9XUE9	col-133	Q9XUE9	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q9XVY1	col-86	Q9XVY1	0	7	Nematode cuticle collagen N-terminal domain-containing prote	w
+NEMATODE	worm	Q9XW38	nsph-3.1	Q9XW38	0	5	Nematode Specific Peptide family	w
+NEMEP	human	Q4W5P6	SMIM43	Q4W5P6	1	7	Small integral membrane protein 43 (Nodal enhanced mesendode	w
+NEMF	cladophialophora-carrionii	A0A1C1CJ96	NEMF	A0A1C1CJ96	0	62	Ribosome quality control complex subunit 2	
+NEMF	fly	FBgn0259152	Clbn	Q9VBX1	7	101	Ribosome quality control complex subunit NEMF homolog (Prote	w
+NEMF	human	O60524	NEMF	O60524	20	289	Ribosome quality control complex subunit NEMF (Antigen NY-CO	
+NEMF	mus-musculus	Q8CCP0	Nemf	Q8CCP0	7	94	Ribosome quality control complex subunit NEMF	
+NEMF	rattus-norvegicus	A0A0G2K9F2	Nemf	A0A0G2K9F2	7	170	Ribosome quality control complex subunit NEMF	
+NEMF	worm	Q9BKR5	CELE_Y82E9BR.18	Q9BKR5	5	58	Nuclear export mediator factor NEMF	w
+NEMF_HUMAN	human	O60524	NEMF	O60524	20	289		
+NEMITIN	human	O94967	WDR47	O94967	14	111	WD repeat-containing protein 47 (Neuronal enriched MAP-inter	w
+NEMO	fly	FBgn0011817	nmo	Q8IQ91	519	1153	nemo	w
+NEMO	human	Q9Y6K9	IKBKG	Q9Y6K9	103	600		
+NEMO-LIKE	human	Q8WVD3	RNF138	Q8WVD3	30	327	E3 ubiquitin-protein ligase RNF138 (EC 2.3.2.27) (Nemo-like 	w
+NEMO-LIKE	human	Q9UBE8	NLK	Q9UBE8	650	1334	Serine/threonine-protein kinase NLK (EC 2.7.11.24) (Nemo-lik	w
+NEMO-LIKE	worm	Q9U9Y8	lit-1	Q9U9Y8	25	89	Serine/threonine kinase NLK (EC 2.7.11.24) (Loss of intestin	w
+NEMO_HUMAN	human	Q9Y6K9	IKBKG	Q9Y6K9	103	600		
+NEMP	fly	FBgn0030768	Nemp	Q9VXD6	3	16	Nuclear envelope integral membrane protein	
+NEMP-1	worm	Q19293	nemp-1	Q19293	1	2	Nuclear envelope integral membrane protein	
+NEMP1	human	O14524	NEMP1	O14524	7	116	Nuclear envelope integral membrane protein 1	
+NEMP1	mus-musculus	Q6ZQE4	Nemp1	Q6ZQE4	1	2	Nuclear envelope integral membrane protein 1	
+NEMP1	rattus-norvegicus	M0R7R7	Nemp1	M0R7R7	1	3	Nuclear envelope integral membrane protein 1	
+NEMP1	zebrafish	E7FE40	nemp1	E7FE40	1	8	Nuclear envelope integral membrane protein 1	
+NEMP1_HUMAN	human	O14524	NEMP1	O14524	7	116		
+NEMP2	human	A6NFY4	NEMP2	A6NFY4	5	31	Nuclear envelope integral membrane protein 2	
+NEMP2	mus-musculus	Q8CB65	Nemp2	Q8CB65	0	1	Nuclear envelope integral membrane protein 2	
+NEMP2	rattus-norvegicus	P0C8N6	Nemp2	P0C8N6	0	2	Nuclear envelope integral membrane protein 2	
+NEMP2	zebrafish	F1QYC4	nemp2	F1QYC4	0	3	Nuclear envelope integral membrane protein 2	
+NEMP2_HUMAN	human	A6NFY4	NEMP2	A6NFY4	5	31		
+NEMP_B	arabidopsis-thaliana	F4K567	NEMP_B	F4K567	1	3	Transmembrane protein (DUF2215)	
+NEMP_C	arabidopsis-thaliana	A0A1I9LLM0	NEMP_C	A0A1I9LLM0	1	1	Transmembrane protein (DUF2215)	
+NEMR	escherichia-coli-83333	P67430	nemR	P67430	0	1	HTH-type transcriptional repressor NemR	
+NEMT-1	worm	Q20587	nemt-1	Q20587	1	3	Methyltransferase type 11 domain-containing protein	
+NEMURI	fly	FBgn0051813	nur	Q8IP68	49	247	Protein nemuri	w
+NEMY	fly	FBgn0261673	nemy	Q7JR72	0	10	No extended memory, isoform A (EC 1.-.-.-, EC 1.16.1.7) (RE0	

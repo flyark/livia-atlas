@@ -1,19 +1,1181 @@
-A0A0B4J1F3	mus-musculus	A0A0B4J1F3	Lilra6	A0A0B4J1F3	0	6	Leukocyte immunoglobulin-like receptor, subfamily A (with TM domain), member 6
-A0A0B4J1F4	mus-musculus	A0A0B4J1F4	Arrdc4	A0A0B4J1F4	10	20	Arrestin domain-containing protein 4
-A0A0B4J1G0	mus-musculus	A0A0B4J1G0	Fcgr4	A0A0B4J1G0	11	83	Low affinity immunoglobulin gamma Fc region receptor III-A
-A0A0B4J1G4	mus-musculus	A0A0B4J1G4	Il17d	A0A0B4J1G4	3	6	Interleukin 17D
-A0A0B4J1N3	mus-musculus	A0A0B4J1N3	Gpr15lg	A0A0B4J1N3	0	2	Protein GPR15LG
-A0A0B4J2Z0	zea-mays	A0A0B4J2Z0	LOC100273539	A0A0B4J2Z0	0	3	non-specific serine/threonine protein kinase
-A0A0B4J303	zea-mays	A0A0B4J303	LOC542348	A0A0B4J303	14	217	RNA helicase
-A0A0B4J337	zea-mays	A0A0B4J337	Ann10	A0A0B4J337	0	11	Annexin
-A0A0B4J374	zea-mays	A0A0B4J374	LOC103645961	A0A0B4J374	0	4	protein-serine/threonine phosphatase
-A0A0B4J391	zea-mays	A0A0B4J391	LOC100281638	A0A0B4J391	3	3	Molybdopterin synthase sulfur carrier subunit
-A0A0B4J395	zea-mays	A0A0B4J395	LOC100285200	A0A0B4J395	1	5	Auxin transporter-like protein 1
-A0A0B4J3B1	zea-mays	A0A0B4J3B1	LOC103629287	A0A0B4J3B1	11	123	Ras-related protein RABD1
-A0A0B4J3D8	zea-mays	A0A0B4J3D8	LOC103633559	A0A0B4J3D8	1	19	non-specific serine/threonine protein kinase
-A0A0B5E2H5	glycine-max	A0A0B5E2H5	DHAR2	A0A0B5E2H5	0	17	DHAR class glutathione S-transferase
-A0A0B5E2M0	glycine-max	A0A0B5E2M0	GSTU49	A0A0B5E2M0	0	39	glutathione transferase
-A0A0B5E8V1	glycine-max	A0A0B5E8V1	GSTU18	A0A0B5E8V1	2	39	glutathione transferase
-A0A0B5EA67	glycine-max	A0A0B5EA67	GSTU34	A0A0B5EA67	0	39	Glutathione S-transferase
-A0A0B5EC24	glycine-max	A0A0B5EC24	GSTU15	A0A0B5EC24	5	39	glutathione transferase
-A0A0B5EC52	glycine-max	A0A0B5EC52	GSTZ1	A0A0B5EC52	2	25	Glutathione S-transferase zeta class
+A0A0B4J1A5	zebrafish	A0A0B4J1A5	ewsr1a	A0A0B4J1A5	2	47	EWS RNA-binding protein 1a	
+A0A0B4J1A8	zebrafish	A0A0B4J1A8	ubash3bb	A0A0B4J1A8	4	22	Ubiquitin-associated and SH3 domain-containing Bb	
+A0A0B4J1B0	zebrafish	A0A0B4J1B0	igf2bp2a	A0A0B4J1B0	0	12	Insulin-like growth factor 2 mRNA-binding protein 2a	
+A0A0B4J1F3	mus-musculus	A0A0B4J1F3	Lilra6	A0A0B4J1F3	0	6	Leukocyte immunoglobulin-like receptor, subfamily A (with TM	
+A0A0B4J1F4	mus-musculus	A0A0B4J1F4	Arrdc4	A0A0B4J1F4	10	20	Arrestin domain-containing protein 4	
+A0A0B4J1G0	mus-musculus	A0A0B4J1G0	Fcgr4	A0A0B4J1G0	11	83	Low affinity immunoglobulin gamma Fc region receptor III-A	
+A0A0B4J1G4	mus-musculus	A0A0B4J1G4	Il17d	A0A0B4J1G4	3	6	Interleukin 17D	
+A0A0B4J1N3	mus-musculus	A0A0B4J1N3	Gpr15lg	A0A0B4J1N3	0	2	Protein GPR15LG	
+A0A0B4J1T7	human	A0A0B4J1T7	LY6G6E	A0A0B4J1T7	0	1	Lymphocyte antigen 6 family member G6E (pseudogene)	
+A0A0B4J1U3	human	A0A0B4J1U3	IGLV1-36	A0A0B4J1U3	48	183	Immunoglobulin lambda variable 1-36	
+A0A0B4J1U4	human	A0A0B4J1U4	TRGV5	A0A0B4J1U4	75	233	T cell receptor gamma variable 5	
+A0A0B4J1U6	human	A0A0B4J1U6	TRBV9	A0A0B4J1U6	47	150	T cell receptor beta variable 9	
+A0A0B4J1U7	human	A0A0B4J1U7	IGHV6-1	A0A0B4J1U7	95	180	Immunoglobulin heavy variable 6-1	
+A0A0B4J1V0	human	A0A0B4J1V0	IGHV3-15	A0A0B4J1V0	86	175	Immunoglobulin heavy variable 3-15	
+A0A0B4J1V1	human	A0A0B4J1V1	IGHV3-21	A0A0B4J1V1	73	183	Immunoglobulin heavy variable 3-21	
+A0A0B4J1V2	human	A0A0B4J1V2	IGHV2-26	A0A0B4J1V2	111	205	Immunoglobulin heavy variable 2-26	
+A0A0B4J1V6	human	A0A0B4J1V6	IGHV3-73	A0A0B4J1V6	66	125	Immunoglobulin heavy variable 3-73	
+A0A0B4J1V7	human	A0A0B4J1V7	IGHV7-81	A0A0B4J1V7	80	118	Probable non-functional immunoglobulin heavy variable 7-81	
+A0A0B4J1V8	human	A0A0B4J1V8	PPAN-P2RY11	A0A0B4J1V8	10	106	HCG2039996	
+A0A0B4J1W7	human	A0A0B4J1W7	NPIPA9	A0A0B4J1W7	0	8	Nuclear pore complex-interacting protein family member A9	
+A0A0B4J1X5	human	A0A0B4J1X5	IGHV3-74	A0A0B4J1X5	71	160	Immunoglobulin heavy variable 3-74	
+A0A0B4J1X8	human	A0A0B4J1X8	IGHV3-43	A0A0B4J1X8	47	157	Immunoglobulin heavy variable 3-43	
+A0A0B4J1Y8	human	A0A0B4J1Y8	IGLV9-49	A0A0B4J1Y8	55	183	Immunoglobulin lambda variable 9-49	
+A0A0B4J1Y9	human	A0A0B4J1Y9	IGHV3-72	A0A0B4J1Y9	107	182	Immunoglobulin heavy variable 3-72	
+A0A0B4J1Z2	human	A0A0B4J1Z2	IGKV1D-43	A0A0B4J1Z2	47	124	Immunoglobulin kappa variable 1D-43	
+A0A0B4J200	human	A0A0B4J200	TRBJ2-3	A0A0B4J200	0	3	T cell receptor beta joining 2-3	
+A0A0B4J203	human	A0A0B4J203	?	A0A0B4J203	1	3	receptor protein-tyrosine kinase	
+A0A0B4J234	human	A0A0B4J234	TRAV2	A0A0B4J234	109	208	T cell receptor alpha variable 2	
+A0A0B4J235	human	A0A0B4J235	TRAV13-2	A0A0B4J235	83	170	T cell receptor alpha variable 13-2	
+A0A0B4J237	human	A0A0B4J237	TRAV8-2	A0A0B4J237	87	171	T cell receptor alpha variable 8-2	
+A0A0B4J238	human	A0A0B4J238	TRAV1-2	A0A0B4J238	85	253	T cell receptor alpha variable 1-2	
+A0A0B4J240	human	A0A0B4J240	TRAV10	A0A0B4J240	58	161	T cell receptor alpha variable 10	
+A0A0B4J241	human	A0A0B4J241	TRAV13-1	A0A0B4J241	67	195	T cell receptor alpha variable 13-1	
+A0A0B4J244	human	A0A0B4J244	TRAV3	A0A0B4J244	125	278	T cell receptor alpha variable 3	
+A0A0B4J245	human	A0A0B4J245	TRAV12-1	A0A0B4J245	34	115	T cell receptor alpha variable 12-1	
+A0A0B4J248	human	A0A0B4J248	TRAV1-1	A0A0B4J248	88	239	T cell receptor alpha variable 1-1	
+A0A0B4J249	human	A0A0B4J249	TRAV5	A0A0B4J249	110	182	T cell receptor alpha variable 5	
+A0A0B4J262	human	A0A0B4J262	TRAV8-6	A0A0B4J262	107	203	T cell receptor alpha variable 8-6	
+A0A0B4J263	human	A0A0B4J263	TRAV39	A0A0B4J263	64	169	T cell receptor alpha variable 39	
+A0A0B4J264	human	A0A0B4J264	TRAV38-1	A0A0B4J264	89	181	T cell receptor alpha variable 38-1	
+A0A0B4J265	human	A0A0B4J265	TRAV26-2	A0A0B4J265	38	204	T cell receptor alpha variable 26-2	
+A0A0B4J266	human	A0A0B4J266	TRAV41	A0A0B4J266	98	167	T cell receptor alpha variable 41	
+A0A0B4J268	human	A0A0B4J268	TRAV4	A0A0B4J268	73	202	T cell receptor alpha variable 4	
+A0A0B4J269	human	A0A0B4J269	?	A0A0B4J269	10	52	Melanocyte-stimulating hormone receptor	
+A0A0B4J271	human	A0A0B4J271	TRAV12-3	A0A0B4J271	62	159	T cell receptor alpha variable 12-3	
+A0A0B4J272	human	A0A0B4J272	TRAV24	A0A0B4J272	75	190	T cell receptor alpha variable 24	
+A0A0B4J273	human	A0A0B4J273	TRAV34	A0A0B4J273	105	224	T cell receptor alpha variable 34	
+A0A0B4J274	human	A0A0B4J274	TRAV20	A0A0B4J274	67	202	T cell receptor alpha variable 20	
+A0A0B4J275	human	A0A0B4J275	TRAV17	A0A0B4J275	131	239	T cell receptor alpha variable 17	
+A0A0B4J276	human	A0A0B4J276	TRAV25	A0A0B4J276	34	124	T cell receptor alpha variable 25	
+A0A0B4J277	human	A0A0B4J277	TRAV22	A0A0B4J277	86	153	T cell receptor alpha variable 22	
+A0A0B4J279	human	A0A0B4J279	TRAV21	A0A0B4J279	64	143	T cell receptor alpha variable 21	
+A0A0B4J280	human	A0A0B4J280	TRAV40	A0A0B4J280	78	139	T cell receptor alpha variable 40	
+A0A0B4J2A2	human	A0A0B4J2A2	PPIAL4C	A0A0B4J2A2	56	337	Peptidyl-prolyl cis-trans isomerase A-like 4C (PPIase A-like	
+A0A0B4J2B5	human	A0A0B4J2B5	IGHV3OR16-9	A0A0B4J2B5	2	6	Immunoglobulin heavy variable 3/OR16-9 (non-functional)	
+A0A0B4J2D5	human	A0A0B4J2D5	GAL3B	A0A0B4J2D5	1	17		
+A0A0B4J2D9	human	A0A0B4J2D9	IGKV1D-13	A0A0B4J2D9	44	112	Immunoglobulin kappa variable 1D-13	
+A0A0B4J2E0	human	A0A0B4J2E0	TRBV12-4	A0A0B4J2E0	85	187	T cell receptor beta variable 12-4	
+A0A0B4J2F0	human	A0A0B4J2F0	PIGBOS1	A0A0B4J2F0	18	32	Protein PIGBOS1 (PIGB opposite strand protein 1)	
+A0A0B4J2F2	human	A0A0B4J2F2	SIK1B	A0A0B4J2F2	4	19		
+A0A0B4J2G0	human	A0A0B4J2G0	ZNF107	A0A0B4J2G0	0	7	Zinc finger protein 107	
+A0A0B4J2H0	human	A0A0B4J2H0	IGHV1-69D	A0A0B4J2H0	59	168	Immunoglobulin heavy variable 1-69D	
+A0A0B4J2Z0	zea-mays	A0A0B4J2Z0	LOC100273539	A0A0B4J2Z0	0	3	non-specific serine/threonine protein kinase	
+A0A0B4J303	zea-mays	A0A0B4J303	LOC542348	A0A0B4J303	14	217	RNA helicase	
+A0A0B4J337	zea-mays	A0A0B4J337	Ann10	A0A0B4J337	0	11	Annexin	
+A0A0B4J374	zea-mays	A0A0B4J374	LOC103645961	A0A0B4J374	0	4	protein-serine/threonine phosphatase	
+A0A0B4J391	zea-mays	A0A0B4J391	LOC100281638	A0A0B4J391	3	3	Molybdopterin synthase sulfur carrier subunit	
+A0A0B4J395	zea-mays	A0A0B4J395	LOC100285200	A0A0B4J395	1	5	Auxin transporter-like protein 1	
+A0A0B4J3B1	zea-mays	A0A0B4J3B1	LOC103629287	A0A0B4J3B1	11	123	Ras-related protein RABD1	
+A0A0B4J3D8	zea-mays	A0A0B4J3D8	LOC103633559	A0A0B4J3D8	1	19	non-specific serine/threonine protein kinase	
+A0A0B4JCR3	fly	FBgn0261853	CG42782	A0A0B4JCR3	24	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4JCS5	fly	FBgn0050082	CG30082	A0A0B4JCS5	43	243	Peptidase S1 domain-containing protein	
+A0A0B4JCS8	fly	FBgn0261686	CG42733	A0A0B4JCS8	0	3	Uncharacterized protein, isoform D	
+A0A0B4JCT2	fly	FBgn0250842	CG17575	A0A0B4JCT2	78	245	Uncharacterized protein, isoform B	
+A0A0B4JCU2	fly	FBgn0261580	CG42690	A0A0B4JCU2	0	8	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4JCU3	fly	FBgn0261564	ReepA	A0A0B4JCU3	6	32	Receptor expression enhancing protein A, isoform I	
+A0A0B4JCU4	fly	FBgn0261612	CngA	A0A0B4JCU4	4	33	Cyclic nucleotide-gated ion channel subunit A, isoform B	
+A0A0B4JCU6	fly	FBgn0261587	CG42697	A0A0B4JCU6	0	1	Uncharacterized protein	
+A0A0B4JCV0	fly	FBgn0261807	CG42753	A0A0B4JCV0	0	0	Uncharacterized protein	
+A0A0B4JCV2	fly	FBgn0262141	CG42867	A0A0B4JCV2	0	1	Uncharacterized protein	
+A0A0B4JCV5	fly	FBgn0052834	CG32834	A0A0B4JCV5	19	243	Peptidase S1 domain-containing protein	
+A0A0B4JCV9	fly	FBgn0262098	CG42851	A0A0B4JCV9	1	5	Uncharacterized protein	
+A0A0B4JCX8	fly	FBgn0262006	CG42824	A0A0B4JCX8	0	0	Uncharacterized protein	
+A0A0B4JCY1	fly	FBgn0038721	subdued	A0A0B4JCY1	1	2	Anoctamin	
+A0A0B4JCY2	fly	FBgn0261680	CG42727	A0A0B4JCY2	1	7	Uncharacterized protein	
+A0A0B4JCY7	fly	FBgn0261841	pre-mod(mdg4)-AD	A0A0B4JCY7	0	0	Pre-mod(Mdg4)-AD, isoform A (Pre-mod(Mdg4)-AD, isoform B)	
+A0A0B4JCY9	fly	FBgn0262143	CG42869	A0A0B4JCY9	29	243	Uncharacterized protein	
+A0A0B4JCZ0	fly	FBgn0261550	Orp8	A0A0B4JCZ0	3	21	Oxysterol-binding protein	
+A0A0B4JCZ1	fly	FBgn0261838	pre-mod(mdg4)-Z	A0A0B4JCZ1	0	0	Pre-mod(Mdg4)-Z	
+A0A0B4JCZ3	fly	FBgn0261843	pre-mod(mdg4)-W	A0A0B4JCZ3	0	0	Pre-mod(Mdg4)-W, isoform A (Pre-mod(Mdg4)-W, isoform B)	
+A0A0B4JCZ4	fly	FBgn0013343	Syx1A	A0A0B4JCZ4	28	244	Syntaxin 1A, isoform B	
+A0A0B4JCZ8	fly	FBgn0053558	mim	A0A0B4JCZ8	2	3	Missing-in-metastasis, isoform F	
+A0A0B4JD04	fly	FBgn0261993	CG42811	A0A0B4JD04	0	1	Uncharacterized protein	
+A0A0B4JD30	fly	FBgn0261583	CG42693	A0A0B4JD30	0	1	Uncharacterized protein	
+A0A0B4JD40	fly	FBgn0034411	CG18605	A0A0B4JD40	0	2	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	
+A0A0B4JD55	fly	FBgn0261588	pdm3	A0A0B4JD55	22	99	Pou domain motif 3, isoform F	
+A0A0B4JD61	fly	FBgn0261538	CG42662	A0A0B4JD61	0	2	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4JD68	fly	FBgn0262026	CG42837	A0A0B4JD68	0	0	Uncharacterized protein	
+A0A0B4JD69	fly	FBgn0261502	CG42650	A0A0B4JD69	0	0	Uncharacterized protein	
+A0A0B4JD70	fly	FBgn0261501	CG42649	A0A0B4JD70	24	243	Uncharacterized protein	
+A0A0B4JD83	fly	FBgn0261817	CG42759	A0A0B4JD83	23	243	Uncharacterized protein	
+A0A0B4JD85	fly	FBgn0261581	CG42691	A0A0B4JD85	0	1	Uncharacterized protein, isoform A	
+A0A0B4JD88	fly	FBgn0262102	CG42855	A0A0B4JD88	0	0	Uncharacterized protein	
+A0A0B4JD89	fly	FBgn0261584	CG42694	A0A0B4JD89	22	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4JD97	fly	FBgn0026620	tacc	A0A0B4JD97	9	29	Transforming acidic coiled-coil protein, isoform K	
+A0A0B4JDA6	fly	FBgn0262024	CG42835	A0A0B4JDA6	28	243	Secreted protein	
+A0A0B4JDB3	fly	FBgn0261839	pre-mod(mdg4)-Y	A0A0B4JDB3	0	0	Pre-mod(Mdg4)-Y, isoform A (Pre-mod(Mdg4)-Y, isoform B)	
+A0A0B4JDB4	fly	FBgn0261845	pre-mod(mdg4)-U	A0A0B4JDB4	0	0	Pre-mod(Mdg4)-U, isoform A (Pre-mod(Mdg4)-U, isoform B) (Pre	
+A0A0B4JDC9	fly	FBgn0262483	Rbp	A0A0B4JDC9	5	9	RIM-binding protein, isoform F	
+A0A0B4JDD0	fly	FBgn0261015	Pif1A	A0A0B4JDD0	10	37	PFTAIRE-interacting factor 1A, isoform H (PFTAIRE-interactin	
+A0A0B4JDD6	fly	FBgn0261932	CG42798	A0A0B4JDD6	34	244	Uncharacterized protein, isoform A	
+A0A0B4JDD7	fly	FBgn0262104	CG42857	A0A0B4JDD7	0	1	Uncharacterized protein	
+A0A0B4JDE0	fly	FBgn0261837	pre-mod(mdg4)-T	A0A0B4JDE0	1	1	Pre-mod(Mdg4)-T	
+A0A0B4JDE2	fly	FBgn0261842	pre-mod(mdg4)-AE	A0A0B4JDE2	0	0	Pre-mod(Mdg4)-AE, isoform A (Pre-mod(Mdg4)-AE, isoform B)	
+A0A0B4JDE5	fly	FBgn0262144	CG42870	A0A0B4JDE5	32	244	Uncharacterized protein	
+A0A0B4JDE6	fly	FBgn0053483	CG33483	A0A0B4JDE6	9	243	Uncharacterized protein, isoform B	
+A0A0B4JDE7	fly	FBgn0262010	CG42828	A0A0B4JDE7	27	244	BPTI/Kunitz inhibitor domain-containing protein	
+A0A0B4JDF5	fly	FBgn0259244	CG42342	A0A0B4JDF5	718	2600	Uncharacterized protein, isoform H	
+A0A0B4JDF8	fly	FBgn0261847	CG42779	A0A0B4JDF8	39	257	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4JDG0	fly	FBgn0262023	CG42834	A0A0B4JDG0	32	244	GEO02652p1	
+A0A0B4JDG3	fly	FBgn0261840	pre-mod(mdg4)-X	A0A0B4JDG3	0	0	Pre-mod(Mdg4)-X, isoform A (Pre-mod(Mdg4)-X, isoform B)	
+A0A0B4JDG4	fly	FBgn0261844	pre-mod(mdg4)-V	A0A0B4JDG4	0	0	Pre-mod(Mdg4)-V, isoform A	
+A0A0B4K5Z8	fly	FBgn0262125	Sec23	A0A0B4K5Z8	17	127	Protein transport protein SEC23	
+A0A0B4K600	fly	FBgn0037395	CG10280	A0A0B4K600	0	3	Metalloendopeptidase (EC 3.4.24.-)	
+A0A0B4K601	fly	FBgn0037408	NPFR	A0A0B4K601	8	39	Neuropeptide F receptor, isoform D	
+A0A0B4K602	fly	FBgn0010355	Taf1	A0A0B4K602	56	612	Transcription initiation factor TFIID subunit 1	
+A0A0B4K615	fly	FBgn0263346	smash	A0A0B4K615	8	28	Smallish, isoform O	
+A0A0B4K618	fly	FBgn0028734	Fmr1	A0A0B4K618	32	228	Fmr1, isoform G	
+A0A0B4K620	fly	FBgn0013576	mtd	A0A0B4K620	3	18	Oxidation resistance protein 1	
+A0A0B4K630	fly	FBgn0004595	pros	A0A0B4K630	5	40	Prospero, isoform I	
+A0A0B4K646	fly	FBgn0262365	CG43063	A0A0B4K646	26	243	Uncharacterized protein	
+A0A0B4K650	fly	FBgn0262808	CG43179	A0A0B4K650	63	244	Serine protease gd N-terminal domain-containing protein	
+A0A0B4K651	fly	FBgn0040238	Best1	A0A0B4K651	0	8	Bestrophin 1, isoform C	
+A0A0B4K653	fly	FBgn0020379	Rfx	A0A0B4K653	59	356	Rfx, isoform H	
+A0A0B4K657	fly	FBgn0266756	btsz	A0A0B4K657	0	1	Bitesize, isoform I	
+A0A0B4K658	fly	FBgn0037885	CG17721	A0A0B4K658	0	4	Uncharacterized protein, isoform C	
+A0A0B4K675	fly	FBgn0262844	CG43208	A0A0B4K675	0	3	Uncharacterized protein	
+A0A0B4K682	fly	FBgn0263929	jvl	A0A0B4K682	4	9	Javelin-like, isoform D	
+A0A0B4K684	fly	FBgn0262846	CG43210	A0A0B4K684	0	1	Uncharacterized protein, isoform B (Uncharacterized protein,	
+A0A0B4K687	fly	FBgn0263040	CG43335	A0A0B4K687	64	243	Peptidase S1 domain-containing protein	
+A0A0B4K691	fly	FBgn0022981	rpk	A0A0B4K691	0	7	Ripped pocket, isoform B	
+A0A0B4K692	fly	FBgn0027570	Nep2	A0A0B4K692	364	2596	Neprilysin-2 (EC 3.4.24.11) [Cleaved into: Neprilysin-2, sol	
+A0A0B4K696	fly	FBgn0040682	CG14664	A0A0B4K696	21	246	GEO02671p1	
+A0A0B4K6A7	fly	FBgn0037448	CG15186	A0A0B4K6A7	0	0	Uncharacterized protein, isoform F	
+A0A0B4K6A8	fly	FBgn0262794	CG43175	A0A0B4K6A8	10	244	Uncharacterized protein, isoform A	
+A0A0B4K6B2	fly	FBgn0262982	CG43290	A0A0B4K6B2	0	0	Uncharacterized protein	
+A0A0B4K6B6	fly	FBgn0085413	CG34384	A0A0B4K6B6	0	2	Diacylglycerol kinase (DAG kinase) (EC 2.7.1.107)	
+A0A0B4K6B9	fly	FBgn0037536	CG2698	A0A0B4K6B9	0	3	Uncharacterized protein, isoform D	
+A0A0B4K6C0	fly	FBgn0263596	CG43618	A0A0B4K6C0	36	243	Uncharacterized protein	
+A0A0B4K6C3	fly	FBgn0040529	COX7A	A0A0B4K6C3	10	48	Cytochrome c oxidase subunit 7A, isoform B (EC 1.9.3.1)	
+A0A0B4K6D5	fly	FBgn0053208	Mical	A0A0B4K6D5	1	2	F-actin monooxygenase (EC 1.14.13.225)	
+A0A0B4K6E2	fly	FBgn0013995	Calx	A0A0B4K6E2	0	17	Na/Ca-exchange protein, isoform G	
+A0A0B4K6E3	fly	FBgn0261053	Cad86C	A0A0B4K6E3	189	2372	Cadherin 86C, isoform F	
+A0A0B4K6E5	fly	FBgn0085318	CG34289	A0A0B4K6E5	0	1	Uncharacterized protein, isoform C	
+A0A0B4K6E6	fly	FBgn0037890	CG17734	A0A0B4K6E6	0	5	Uncharacterized protein, isoform C	
+A0A0B4K6F9	fly	FBgn0266758	Esyt2	A0A0B4K6F9	2	30	Extended synaptotagmin-like protein 2, isoform C	
+A0A0B4K6G0	fly	FBgn0037992	CG4702	A0A0B4K6G0	3	16	Uncharacterized protein, isoform B (Uncharacterized protein,	
+A0A0B4K6G3	fly	FBgn0082831	pps	A0A0B4K6G3	2	14	Protein partner of snf, isoform B (EC 3.6.-.-)	
+A0A0B4K6G5	fly	FBgn0263390	Nha2	A0A0B4K6G5	1	18	Na[+]/H[+] hydrogen antiporter 2, isoform B	
+A0A0B4K6I6	fly	FBgn0051075	CG31075	A0A0B4K6I6	6	122	Uncharacterized protein, isoform B (EC 1.2.1.3)	
+A0A0B4K6J9	fly	FBgn0262962	CG43273	A0A0B4K6J9	0	0	Uncharacterized protein, isoform A	
+A0A0B4K6K4	fly	FBgn0265266	CG13639	A0A0B4K6K4	27	244	Uncharacterized protein	
+A0A0B4K6K5	fly	FBgn0263024	CG43319	A0A0B4K6K5	38	261	Seminal fluid protein	
+A0A0B4K6L1	fly	FBgn0015569	alpha-Est10	A0A0B4K6L1	0	1	Carboxylic ester hydrolase (EC 3.1.1.-)	
+A0A0B4K6L3	fly	FBgn0262562	CG43102	A0A0B4K6L3	0	0	Uncharacterized protein, isoform C	
+A0A0B4K6L9	fly	FBgn0262363	CG43061	A0A0B4K6L9	30	243	Seminal fluid protein	
+A0A0B4K6M2	fly	FBgn0053547	Rim	A0A0B4K6M2	1	9	Rab3 interacting molecule, isoform F (Rab3 interacting molec	
+A0A0B4K6M8	fly	FBgn0262873	Diedel2	A0A0B4K6M8	18	257	Diedel 2	
+A0A0B4K6N2	fly	FBgn0262477	FoxP	A0A0B4K6N2	73	403	Forkhead box P, isoform C	
+A0A0B4K6N4	fly	FBgn0082582	tmod	A0A0B4K6N4	4	90	Tropomodulin, isoform N	
+A0A0B4K6Q5	fly	FBgn0038763	PIG-L	A0A0B4K6Q5	1	11	N-acetylglucosaminylphosphatidylinositol deacetylase (EC 3.5	
+A0A0B4K6S3	fly	FBgn0262605	CG43131	A0A0B4K6S3	17	243	Uncharacterized protein	
+A0A0B4K6S5	fly	FBgn0263400	CG43446	A0A0B4K6S5	0	3	Uncharacterized protein, isoform B	
+A0A0B4K6S7	fly	FBgn0263046	CG43341	A0A0B4K6S7	0	2	Uncharacterized protein	
+A0A0B4K6U8	fly	FBgn0263402	CG43448	A0A0B4K6U8	32	243	GEO13462p1	
+A0A0B4K6V1	fly	FBgn0028646	Aralar	A0A0B4K6V1	0	16	Aralar1, isoform E	
+A0A0B4K6V3	fly	FBgn0262983	CG43291	A0A0B4K6V3	38	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4K6V8	fly	FBgn0261393	alpha-Est5	A0A0B4K6V8	0	3	Alpha-Esterase-5, isoform B (EC 3.1.1.-, EC 3.1.1.1)	
+A0A0B4K6W9	fly	FBgn0011224	heph	A0A0B4K6W9	8	101	Hephaestus, isoform Y	
+A0A0B4K6X0	fly	FBgn0263270	CG43396	A0A0B4K6X0	0	0	Seminal fluid protein	
+A0A0B4K6X1	fly	FBgn0262362	CG43060	A0A0B4K6X1	44	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4K6X5	fly	FBgn0262539	CG43093	A0A0B4K6X5	36	243	Uncharacterized protein	
+A0A0B4K6X8	fly	FBgn0037570	CG11693	A0A0B4K6X8	19	245	Uncharacterized protein, isoform B	
+A0A0B4K6X9	fly	FBgn0259483	Mob4	A0A0B4K6X9	10	53	MOB kinase activator 4, isoform B	
+A0A0B4K6Y3	fly	FBgn0262819	CG43190	A0A0B4K6Y3	0	1	Uncharacterized protein	
+A0A0B4K6Y7	fly	FBgn0262614	pyd	A0A0B4K6Y7	1	22	Polychaetoid, isoform O	
+A0A0B4K700	fly	FBgn0027948	msps	A0A0B4K700	4	20	Mini spindles, isoform D	
+A0A0B4K701	fly	FBgn0039068	Pex11c	A0A0B4K701	1	12	Uncharacterized protein, isoform B	
+A0A0B4K709	fly	FBgn0085384	CG34355	A0A0B4K709	162	2377	Uncharacterized protein, isoform E	
+A0A0B4K719	fly	FBgn0011286	RyR	A0A0B4K719	0	0	Ryanodine receptor, isoform I	
+A0A0B4K741	fly	FBgn0037906	PGRP-LB	A0A0B4K741	40	254	Peptidoglycan recognition protein LB, isoform D (EC 3.5.1.28	
+A0A0B4K753	fly	FBgn0262823	hemo	A0A0B4K753	0	4	Hemotin	
+A0A0B4K755	fly	FBgn0262574	CG43114	A0A0B4K755	23	243	Uncharacterized protein, isoform A	
+A0A0B4K759	fly	FBgn0037997	CG14742	A0A0B4K759	0	3	Uncharacterized protein	
+A0A0B4K760	fly	FBgn0261262	CG42613	A0A0B4K760	2	37	Uncharacterized protein, isoform E	
+A0A0B4K762	fly	FBgn0034140	Lst	A0A0B4K762	24	247	Limostatin, isoform B	
+A0A0B4K764	fly	FBgn0263621	CG43630	A0A0B4K764	0	1	Uncharacterized protein	
+A0A0B4K765	fly	FBgn0022764	Sin3A	A0A0B4K765	13	54	Sin3A, isoform G	
+A0A0B4K769	fly	FBgn0033777	CG17574	A0A0B4K769	2	17	Uncharacterized protein, isoform I	
+A0A0B4K774	fly	FBgn0020510	Abi	A0A0B4K774	29	100	Abelson interacting protein, isoform D	
+A0A0B4K776	fly	FBgn0263114	CG43371	A0A0B4K776	0	1	Secreted protein	
+A0A0B4K780	fly	FBgn0262360	CG43058	A0A0B4K780	0	2	RING-type domain-containing protein	
+A0A0B4K792	fly	FBgn0262838	BomT1	A0A0B4K792	17	244	Bomanin tailed 1	
+A0A0B4K7A1	fly	FBgn0262613	CG43139	A0A0B4K7A1	0	2	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4K7A3	fly	FBgn0015371	chn	A0A0B4K7A3	24	124	Charlatan, isoform F (Charlatan, isoform G)	
+A0A0B4K7A7	fly	FBgn0262588	CG43125	A0A0B4K7A7	28	243	Peptidase S1 domain-containing protein	
+A0A0B4K7A9	fly	FBgn0263041	CG43336	A0A0B4K7A9	35	244	Peptidase S1 domain-containing protein	
+A0A0B4K7B4	fly	FBgn0263023	CG43318	A0A0B4K7B4	0	0	Uncharacterized protein	
+A0A0B4K7B6	fly	FBgn0263047	CG43342	A0A0B4K7B6	1	4	BESS domain-containing protein	
+A0A0B4K7B8	fly	FBgn0262966	CG43277	A0A0B4K7B8	0	1	Uncharacterized protein	
+A0A0B4K7C5	fly	FBgn0010470	Fkbp14	A0A0B4K7C5	78	576	peptidylprolyl isomerase (EC 5.2.1.8)	
+A0A0B4K7C7	fly	FBgn0262540	CG43094	A0A0B4K7C7	28	243	Seminal fluid protein	
+A0A0B4K7E5	fly	FBgn0262961	CG43272	A0A0B4K7E5	0	1		
+A0A0B4K7E8	fly	FBgn0262843	CG43207	A0A0B4K7E8	0	1	Uncharacterized protein	
+A0A0B4K7H3	fly	FBgn0038665	euc	A0A0B4K7H3	1	9	Eucalyptus, isoform B	
+A0A0B4K7I1	fly	FBgn0262839	CG43203	A0A0B4K7I1	44	243	Uncharacterized protein	
+A0A0B4K7I2	fly	FBgn0003435	sm	A0A0B4K7I2	1	82	Smooth, isoform T	
+A0A0B4K7I7	fly	FBgn0038761	CG17190	A0A0B4K7I7	1	4	Uncharacterized protein	
+A0A0B4K7I9	fly	FBgn0262948	CG43267	A0A0B4K7I9	0	2	Uncharacterized protein	
+A0A0B4K7J2	fly	FBgn0039302	Nup358	A0A0B4K7J2	1	27	E3 SUMO-protein ligase RanBP2 (EC 2.3.2.-) (358 kDa nucleopo	
+A0A0B4K7J3	fly	FBgn0003317	sax	A0A0B4K7J3	551	3522	receptor protein serine/threonine kinase (EC 2.7.11.30)	
+A0A0B4K7J4	fly	FBgn0262869	Gfrl	A0A0B4K7J4	2	21	Glial cell line-derived neurotrophic family receptor-like, i	
+A0A0B4K7K5	fly	FBgn0263250	CG43393	A0A0B4K7K5	0	2	Uncharacterized protein	
+A0A0B4K7K9	fly	FBgn0259246	brp	A0A0B4K7K9	3	23	Bruchpilot, isoform J	
+A0A0B4K7L0	fly	FBgn0034728	rad50	A0A0B4K7L0	4	34	Rad50, isoform E (EC 2.7.4.3)	
+A0A0B4K7L1	fly	FBgn0003071	Pfk	A0A0B4K7L1	7	227	ATP-dependent 6-phosphofructokinase (ATP-PFK) (Phosphofructo	
+A0A0B4K7L9	fly	FBgn0263271	CG43397	A0A0B4K7L9	0	0	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4K7M5	fly	FBgn0263084	HP1Lcsd	A0A0B4K7M5	0	0	Heterochromatin protein 1L chromoshadow domain	
+A0A0B4K7M8	fly	FBgn0263020	CG43315	A0A0B4K7M8	34	243	Uncharacterized protein, isoform A	
+A0A0B4K7N1	fly	FBgn0016061	side	A0A0B4K7N1	4	11	Sidestep, isoform C	
+A0A0B4K7N3	fly	FBgn0050488	antr	A0A0B4K7N3	26	244	Antares, isoform B	
+A0A0B4K7N7	fly	FBgn0262538	CG43092	A0A0B4K7N7	31	244	Uncharacterized protein	
+A0A0B4K7P2	fly	FBgn0262821	CG43192	A0A0B4K7P2	0	1	Uncharacterized protein	
+A0A0B4K7P3	fly	FBgn0262587	CG43124	A0A0B4K7P3	33	244	Peptidase S1 domain-containing protein	
+A0A0B4K7Q6	fly	FBgn0015513	mbc	A0A0B4K7Q6	3	19	Myoblast city, isoform B	
+A0A0B4K7R8	fly	FBgn0259685	crb	A0A0B4K7R8	17	273	Crumbs, isoform C	
+A0A0B4K7S6	fly	FBgn0263490	mld	A0A0B4K7S6	1	3	Molting defective, isoform D	
+A0A0B4K7T3	fly	FBgn0034160	CG5550	A0A0B4K7T3	38	253	Uncharacterized protein, isoform B	
+A0A0B4K7U0	fly	FBgn0263077	M7BP	A0A0B4K7U0	0	0	Uncharacterized protein, isoform M	
+A0A0B4K7V4	fly	FBgn0262476	CG43066	A0A0B4K7V4	1	9	Transporter	
+A0A0B4K7V7	fly	FBgn0262480	CG43070	A0A0B4K7V7	0	1	Uncharacterized protein, isoform A	
+A0A0B4K7X0	fly	FBgn0262571	CG43111	A0A0B4K7X0	17	243	Seminal fluid protein	
+A0A0B4K7X6	fly	FBgn0262840	CG43204	A0A0B4K7X6	0	2	Uncharacterized protein	
+A0A0B4K7Y4	fly	FBgn0033844	bbc	A0A0B4K7Y4	2	31	Bb in a boxcar, isoform C (EC 2.7.8.-, EC 2.7.8.1, EC 2.7.8.	
+A0A0B4K816	fly	FBgn0262816	CG43187	A0A0B4K816	0	1	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4K823	fly	FBgn0033159	Dscam1	A0A0B4K823	2	30	Down syndrome cell adhesion molecule 1, isoform BX	
+A0A0B4K825	fly	FBgn0262566	CG43106	A0A0B4K825	0	0	Meiotic from via Salaria 332	
+A0A0B4K829	fly	FBgn0263032	CG43327	A0A0B4K829	1	14	MICOS complex subunit MIC13	
+A0A0B4K830	fly	FBgn0262583	CG43123	A0A0B4K830	18	243	Uncharacterized protein	
+A0A0B4K836	fly	FBgn0262988	CG43296	A0A0B4K836	0	1	Uncharacterized protein	
+A0A0B4K838	fly	FBgn0263029	CG43324	A0A0B4K838	5	25	Guanine nucleotide-binding protein subunit gamma	
+A0A0B4K848	fly	FBgn0262836	CG43200	A0A0B4K848	0	1	Uncharacterized protein	
+A0A0B4K857	fly	FBgn0262170	CG42878	A0A0B4K857	0	1		
+A0A0B4K859	fly	FBgn0033766	Nup188	A0A0B4K859	0	0	Nucleoporin Nup188 (Nucleoporin 188kDa)	
+A0A0B4K863	fly	FBgn0013765	cnn	A0A0B4K863	30	105	Centrosomin, isoform L	
+A0A0B4K866	fly	FBgn0261041	stj	A0A0B4K866	115	2354	Straightjacket, isoform C	
+A0A0B4K870	fly	FBgn0263031	CG43326	A0A0B4K870	0	26	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4K877	fly	FBgn0262845	CG43209	A0A0B4K877	0	0	Uncharacterized protein	
+A0A0B4K878	fly	FBgn0034031	CG12963	A0A0B4K878	4	11	Uncharacterized protein, isoform G	
+A0A0B4K885	fly	FBgn0041205	key	A0A0B4K885	126	1370	Kenny, isoform B	
+A0A0B4K890	fly	FBgn0035082	CG2811	A0A0B4K890	0	2	Gamma-glutamylcyclotransferase family protein	
+A0A0B4K894	fly	FBgn0262568	CG43108	A0A0B4K894	0	0	Uncharacterized protein	
+A0A0B4K897	fly	FBgn0034345	CG5174	A0A0B4K897	25	176	Uncharacterized protein, isoform O	
+A0A0B4K8A4	fly	FBgn0263000	CG43308	A0A0B4K8A4	0	0	Uncharacterized protein, isoform A	
+A0A0B4K8A8	fly	FBgn0034761	CG4250	A0A0B4K8A8	2	42	Uncharacterized protein, isoform B	
+A0A0B4K8B1	fly	FBgn0034928	CG13562	A0A0B4K8B1	42	390	Uncharacterized protein, isoform C (EC 3.1.1.-, EC 3.1.1.1)	
+A0A0B4KED2	fly	FBgn0264911	CG44102	A0A0B4KED2	30	243	Uncharacterized protein, isoform B	
+A0A0B4KED5	fly	FBgn0263656	CG43647	A0A0B4KED5	0	1	Uncharacterized protein	
+A0A0B4KED7	fly	FBgn0263934	esn	A0A0B4KED7	14	43	Espinas, isoform C	
+A0A0B4KEE4	fly	FBgn0265003	koi	A0A0B4KEE4	8	72	Klaroid protein	
+A0A0B4KEE7	fly	FBgn0033212	LRR	A0A0B4KEE7	2	21	Leucine-rich repeat, isoform F	
+A0A0B4KEE9	fly	FBgn0025360	Optix	A0A0B4KEE9	73	392	Optix, isoform C	
+A0A0B4KEF0	fly	FBgn0263655	CG43646	A0A0B4KEF0	0	1	Uncharacterized protein	
+A0A0B4KEF7	fly	FBgn0033372	CG13742	A0A0B4KEF7	3	8	Uncharacterized protein, isoform C	
+A0A0B4KEG0	fly	FBgn0033373	Nadk2	A0A0B4KEG0	0	5	NAD kinase 2, mitochondrial (EC 2.7.1.23) (NAD kinase domain	
+A0A0B4KEG2	fly	FBgn0010549	l(2)03659	A0A0B4KEG2	0	50	Lethal (2) 03659, isoform C (EC 3.6.1.3)	
+A0A0B4KEG9	fly	FBgn0033313	Cirl	A0A0B4KEG9	2	30	Latrophilin Cirl	
+A0A0B4KEH1	fly	FBgn0033337	CG8272	A0A0B4KEH1	3	5	Uncharacterized protein, isoform B	
+A0A0B4KEI1	fly	FBgn0033519	CG11825	A0A0B4KEI1	0	9	Uncharacterized protein, isoform C	
+A0A0B4KEI4	fly	FBgn0264817	pre-lola-G	A0A0B4KEI4	0	0	Pre-lola-G, isoform C (Pre-lola-G, isoform D)	
+A0A0B4KEI6	fly	FBgn0001291	Jra	A0A0B4KEI6	118	616	Jun-related antigen, isoform C	
+A0A0B4KEJ0	fly	FBgn0284249	Adf1	A0A0B4KEJ0	17	126	Adh transcription factor 1, isoform E	
+A0A0B4KEJ7	fly	FBgn0265935	coro	A0A0B4KEJ7	6	71	Coronin	
+A0A0B4KEL2	fly	FBgn0033582	CG9084	A0A0B4KEL2	0	0	Phospholipid scramblase	
+A0A0B4KEL4	fly	FBgn0033720	CG13160	A0A0B4KEL4	0	2	Uncharacterized protein, isoform B	
+A0A0B4KEM5	fly	FBgn0265623	Su(z)2	A0A0B4KEM5	42	151	Suppressor of zeste 2, isoform C	
+A0A0B4KEN4	fly	FBgn0015838	Vang	A0A0B4KEN4	6	54	Vang-like protein	
+A0A0B4KEP6	fly	FBgn0033802	CG17724	A0A0B4KEP6	1	3	Uncharacterized protein, isoform E	
+A0A0B4KEQ7	fly	FBgn0033971	CG10209	A0A0B4KEQ7	90	474	Regulatory protein zeste	
+A0A0B4KER0	fly	FBgn0033998	row	A0A0B4KER0	24	131	Relative of woc, isoform C	
+A0A0B4KER2	fly	FBgn0024836	stan	A0A0B4KER2	0	1	Starry night, isoform F	
+A0A0B4KES0	fly	FBgn0264089	sli	A0A0B4KES0	5	46	Slit, isoform F	
+A0A0B4KES8	fly	FBgn0264330	CG43789	A0A0B4KES8	21	243	Seminal fluid protein	
+A0A0B4KES9	fly	FBgn0033063	CG14589	A0A0B4KES9	0	22	Uncharacterized protein, isoform C	
+A0A0B4KET0	fly	FBgn0033607	Uaf1	A0A0B4KET0	17	109	WD repeat-containing protein 48 homolog	
+A0A0B4KEU2	fly	FBgn0285917	sbb	A0A0B4KEU2	2	6	Scribbler, isoform J	
+A0A0B4KEU3	fly	FBgn0034396	CG15097	A0A0B4KEU3	0	0	Uncharacterized protein, isoform E	
+A0A0B4KEU8	fly	FBgn0034439	CG10062	A0A0B4KEU8	0	2	Uncharacterized protein, isoform C	
+A0A0B4KEV6	fly	FBgn0263850	CG43711	A0A0B4KEV6	30	243	Uncharacterized protein	
+A0A0B4KEV7	fly	FBgn0263980	Stacl	A0A0B4KEV7	6	42	Stac-like, isoform J	
+A0A0B4KEW2	fly	FBgn0050389	CG30389	A0A0B4KEW2	0	3	Uncharacterized protein, isoform E	
+A0A0B4KEX2	fly	FBgn0034136	DAT	A0A0B4KEX2	0	11	Transporter	
+A0A0B4KEX7	fly	FBgn0264329	CG43788	A0A0B4KEX7	28	243	Uncharacterized protein	
+A0A0B4KEY2	fly	FBgn0263707	CG43659	A0A0B4KEY2	0	2	Uncharacterized protein	
+A0A0B4KEY4	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25	Patronin, isoform I	
+A0A0B4KEY8	fly	FBgn0250851	CG33981	A0A0B4KEY8	0	1	Anaphase-promoting complex subunit 13 (Cyclosome subunit 13)	
+A0A0B4KEZ2	fly	FBgn0005636	nvy	A0A0B4KEZ2	2	11	Nervy, isoform D	
+A0A0B4KEZ3	fly	FBgn0034317	CG14499	A0A0B4KEZ3	20	254	C-type lectin domain-containing protein	
+A0A0B4KF06	fly	FBgn0027079	ValRS	A0A0B4KF06	0	33	Valine--tRNA ligase (EC 6.1.1.9) (Valyl-tRNA synthetase)	
+A0A0B4KF09	fly	FBgn0263849	CG43710	A0A0B4KF09	0	1	Uncharacterized protein	
+A0A0B4KF12	fly	FBgn0052843	Dh31-R	A0A0B4KF12	3	14	Diuretic hormone 31 receptor, isoform C	
+A0A0B4KF15	fly	FBgn0050361	mtt	A0A0B4KF15	2	19	Mangetout, isoform G	
+A0A0B4KF19	fly	FBgn0027581	Cables1	A0A0B4KF19	5	10	Uncharacterized protein, isoform C	
+A0A0B4KF22	fly	FBgn0250839	Jhbp2	A0A0B4KF22	31	246	Uncharacterized protein, isoform E	
+A0A0B4KF25	fly	FBgn0033897	Rcd1	A0A0B4KF25	17	46	Reduction in Cnn dots 1, isoform E (EC 3.-.-.-)	
+A0A0B4KF28	fly	FBgn0020257	Ppa	A0A0B4KF28	6	25	Partner of paired, isoform B	
+A0A0B4KF31	fly	FBgn0034793	asrij	A0A0B4KF31	2	8	Asrij, isoform B	
+A0A0B4KF34	fly	FBgn0051550	CG31550	A0A0B4KF34	7	40	Uncharacterized protein, isoform D	
+A0A0B4KF39	fly	FBgn0264540	CG43919	A0A0B4KF39	0	1	Uncharacterized protein	
+A0A0B4KF40	fly	FBgn0265052	St3	A0A0B4KF40	1	11	Sulfotransferase 3, isoform C (EC 2.8.2.-)	
+A0A0B4KF52	fly	FBgn0037412	Osi4	A0A0B4KF52	0	3	Osiris 4, isoform B	
+A0A0B4KF61	fly	FBgn0261086	Syt14	A0A0B4KF61	1	6	Synaptotagmin 14, isoform D	
+A0A0B4KF65	fly	FBgn0051522	CG31522	A0A0B4KF65	3	86	Elongation of very long chain fatty acids protein (EC 2.3.1.	
+A0A0B4KF86	fly	FBgn0034110	Atg9	A0A0B4KF86	4	70	Autophagy-related protein 9	
+A0A0B4KFA6	fly	FBgn0037533	CD98hc	Q9VHX9	9	49		
+A0A0B4KFB3	fly	FBgn0050495	CG30495	A0A0B4KFB3	0	5	Uncharacterized protein, isoform B (EC 1.1.1.300)	
+A0A0B4KFB5	fly	FBgn0034304	CG5742	A0A0B4KFB5	1	8	Uncharacterized protein, isoform C	
+A0A0B4KFB6	fly	FBgn0001138	grn	A0A0B4KFB6	85	365	Grain, isoform C	
+A0A0B4KFB8	fly	FBgn0261641	CG42724	A0A0B4KFB8	37	176	Uncharacterized protein, isoform C (Uncharacterized protein,	
+A0A0B4KFC0	fly	FBgn0003396	shn	A0A0B4KFC0	59	284	Schnurri, isoform F	
+A0A0B4KFC4	fly	FBgn0003254	rib	A0A0B4KFC4	99	394	Ribbon, isoform C	
+A0A0B4KFC5	fly	FBgn0020279	lig	A0A0B4KFC5	6	30	Lingerer, isoform K	
+A0A0B4KFC9	fly	FBgn0034440	CG10073	A0A0B4KFC9	0	2	Uncharacterized protein, isoform C	
+A0A0B4KFD0	fly	FBgn0265158	CG44227	A0A0B4KFD0	0	0	Uncharacterized protein	
+A0A0B4KFD1	fly	FBgn0053087	LRP1	A0A0B4KFD1	0	22	LDL receptor protein 1, isoform F	
+A0A0B4KFD5	fly	FBgn0025720	Ate1	A0A0B4KFD5	0	2	Arginyl-tRNA--protein transferase 1 (Arginyltransferase 1) (	
+A0A0B4KFD6	fly	FBgn0015872	Drip	A0A0B4KFD6	6	48	Drip, isoform F	
+A0A0B4KFD8	fly	FBgn0037475	Fer1	A0A0B4KFD8	55	379	Pancreas transcription factor 1 subunit alpha (Pancreas-spec	
+A0A0B4KFD9	fly	FBgn0263741	CG43666	A0A0B4KFD9	30	243	Uncharacterized protein	
+A0A0B4KFE4	fly	FBgn0263120	Acsl	A0A0B4KFE4	0	64	long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)	
+A0A0B4KFE8	fly	FBgn0034643	CG10321	A0A0B4KFE8	64	360	Uncharacterized protein, isoform B	
+A0A0B4KFF2	fly	FBgn0263999	CG43742	A0A0B4KFF2	36	243	Peptidase S1 domain-containing protein	
+A0A0B4KFG0	fly	FBgn0011740	alpha-Man-IIa	A0A0B4KFG0	156	2363	Alpha-mannosidase (EC 3.2.1.-)	
+A0A0B4KFG3	fly	FBgn0034804	GrlHz	A0A0B4KFG3	0	2	Uncharacterized protein, isoform C	
+A0A0B4KFH2	fly	FBgn0264298	CG43776	A0A0B4KFH2	69	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4KFH4	fly	FBgn0002787	Rpn8	A0A0B4KFH4	16	121	Regulatory particle non-ATPase 8, isoform B	
+A0A0B4KFH8	fly	FBgn0085434	NaCP60E	A0A0B4KFH8	0	1	Sodium channel protein	
+A0A0B4KFI1	fly	FBgn0011656	Mef2	A0A0B4KFI1	113	529	Myocyte enhancer factor 2, isoform H	
+A0A0B4KFJ8	fly	FBgn0053182	Kdm4B	A0A0B4KFJ8	59	364	Lysine (K)-specific demethylase 4B, isoform E (EC 1.14.11.27	
+A0A0B4KFK4	fly	FBgn0037796	CG12814	A0A0B4KFK4	0	4	Uncharacterized protein, isoform E	
+A0A0B4KFK5	fly	FBgn0264897	CG44088	A0A0B4KFK5	34	243	Uncharacterized protein	
+A0A0B4KFK6	fly	FBgn0033809	CG4630	A0A0B4KFK6	0	5	Uncharacterized protein, isoform B	
+A0A0B4KFL3	fly	FBgn0040208	Kat60	A0A0B4KFL3	2	31	Katanin p60 ATPase-containing subunit A1 (Katanin p60 subuni	
+A0A0B4KFN3	fly	FBgn0267336	Glut4EF	A0A0B4KFN3	143	348	Glucose transporter 4 enhancer factor, isoform G	
+A0A0B4KFN6	fly	FBgn0037944	CG6923	A0A0B4KFN6	5	18	Uncharacterized protein, isoform D	
+A0A0B4KFP2	fly	FBgn0000581	E(Pc)	A0A0B4KFP2	1	18	Enhancer of polycomb-like protein	
+A0A0B4KFQ3	fly	FBgn0024732	Drep1	A0A0B4KFQ3	14	76	DNAation factor-related protein 1, isoform B	
+A0A0B4KFQ5	fly	FBgn0037848	Tsp86D	A0A0B4KFQ5	2	11	Tetraspanin 86D, isoform C	
+A0A0B4KFR5	fly	FBgn0019968	Khc-73	A0A0B4KFR5	4	24	Kinesin heavy chain 73, isoform E (EC 3.6.1.3)	
+A0A0B4KFR6	fly	FBgn0037926	Elp1	A0A0B4KFR6	7	116	Elongator complex protein 1	
+A0A0B4KFR9	fly	FBgn0262899	CG43254	A0A0B4KFR9	44	243	Uncharacterized protein, isoform B	
+A0A0B4KFS5	fly	FBgn0034075	Asph	A0A0B4KFS5	4	11	Aspartyl beta-hydroxylase, isoform L (EC 1.14.11.16)	
+A0A0B4KFT5	fly	FBgn0010226	GstS1	A0A0B4KFT5	13	184	glutathione transferase (EC 2.5.1.18)	
+A0A0B4KFT7	fly	FBgn0037976	Tk	A0A0B4KFT7	42	249	Tachykinin, isoform B	
+A0A0B4KFT9	fly	FBgn0022987	qkr54B	A0A0B4KFT9	7	27	Quaking related 54B, isoform E	
+A0A0B4KFU0	fly	FBgn0263998	Ack-like	A0A0B4KFU0	198	951	non-specific protein-tyrosine kinase (EC 2.7.10.2)	
+A0A0B4KFU1	fly	FBgn0260793	2mit	A0A0B4KFU1	0	6	2mit, isoform B	
+A0A0B4KFU4	fly	FBgn0264829	CG44037	A0A0B4KFU4	0	0	Secreted protein	
+A0A0B4KFU6	fly	FBgn0261929	5-HT2B	A0A0B4KFU6	0	6	5-hydroxytryptamine (Serotonin) receptor 2B, isoform E	
+A0A0B4KFU8	fly	FBgn0034300	CG5098	A0A0B4KFU8	1	11	Uncharacterized protein, isoform C	
+A0A0B4KFV4	fly	FBgn0041702	CG15107	A0A0B4KFV4	2	5	Regulatory protein zeste	
+A0A0B4KFW5	fly	FBgn0028372	Kpc2	A0A0B4KFW5	2	7	Isopeptidase-T-3, isoform C	
+A0A0B4KFW6	fly	FBgn0263848	CG43709	A0A0B4KFW6	29	243	Uncharacterized protein	
+A0A0B4KFW8	fly	FBgn0263760	CG43677	A0A0B4KFW8	27	243	Uncharacterized protein	
+A0A0B4KFX0	fly	FBgn0265083	CG44194	A0A0B4KFX0	0	1	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4KFX6	fly	FBgn0264714	CG43982	A0A0B4KFX6	0	0	Uncharacterized protein	
+A0A0B4KFX9	fly	FBgn0261823	Asx	A0A0B4KFX9	25	51	Additional sex combs, isoform C	
+A0A0B4KFY0	fly	FBgn0260866	dnr1	A0A0B4KFY0	0	4	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	
+A0A0B4KFY8	fly	FBgn0038143	CG9813	A0A0B4KFY8	42	245	Uncharacterized protein, isoform G	
+A0A0B4KFY9	fly	FBgn0010397	LamC	A0A0B4KFY9	4	30	Lamin C, isoform B	
+A0A0B4KFZ1	fly	FBgn0034885	Eglp4	A0A0B4KFZ1	8	80	Entomoglyceroporin 4, isoform F	
+A0A0B4KFZ3	fly	FBgn0038237	Pde6	A0A0B4KFZ3	2	81	Phosphodiesterase (EC 3.1.4.-)	
+A0A0B4KFZ4	fly	FBgn0020372	TM4SF	A0A0B4KFZ4	0	2	Transmembrane 4 superfamily, isoform C	
+A0A0B4KG01	fly	FBgn0035010	CG13579	A0A0B4KG01	0	2	Uncharacterized protein, isoform B	
+A0A0B4KG03	fly	FBgn0028487	f-cup	A0A0B4KG03	0	6	Flyers-cup, isoform F	
+A0A0B4KG11	fly	FBgn0020767	Spred	A0A0B4KG11	8	68	Sprouty-related protein with EVH-1 domain, isoform C	
+A0A0B4KG15	fly	FBgn0261854	aPKC	A0A0B4KG15	358	1187	protein kinase C (EC 2.7.11.13)	
+A0A0B4KG18	fly	FBgn0264377	CG43829	A0A0B4KG18	29	243	Seminal fluid protein	
+A0A0B4KG19	fly	FBgn0041605	cpx	A0A0B4KG19	8	60	Complexin, isoform AB	
+A0A0B4KG38	fly	FBgn0264273	Sema2b	A0A0B4KG38	28	327	Semaphorin 2b, isoform D	
+A0A0B4KG50	fly	FBgn0266717	Bruce	A0A0B4KG50	0	0	BIR repeat containing ubiquitin-conjugating enzyme, isoform 	
+A0A0B4KG53	fly	FBgn0038492	Mur89F	A0A0B4KG53	1	1	Mucin related 89F, isoform B	
+A0A0B4KG54	fly	FBgn0034215	Mtap	A0A0B4KG54	4	63	S-methyl-5'-thioadenosine phosphorylase (EC 2.4.2.28) (5'-me	
+A0A0B4KG55	fly	FBgn0264903	CG44094	A0A0B4KG55	29	243	Secreted protein	
+A0A0B4KG57	fly	FBgn0264899	CG44090	A0A0B4KG57	28	243	Uncharacterized protein	
+A0A0B4KG59	fly	FBgn0003169	put	A0A0B4KG59	644	3499	Serine/threonine-protein kinase receptor (EC 2.7.11.30)	
+A0A0B4KG66	fly	FBgn0000063	Mps1	A0A0B4KG66	197	1167	Monopolar spindle 1, isoform B (EC 2.7.11.-, EC 2.7.12.1)	
+A0A0B4KG69	fly	FBgn0026441	ear	A0A0B4KG69	80	337	ENL/AF9-related, isoform B	
+A0A0B4KG70	fly	FBgn0027951	MTA1-like	A0A0B4KG70	30	404	Metastasis associated 1-like, isoform D	
+A0A0B4KG77	fly	FBgn0264775	CG44013	A0A0B4KG77	0	1	Uncharacterized protein, isoform B (Uncharacterized protein,	
+A0A0B4KG81	fly	FBgn0034400	CG15099	A0A0B4KG81	0	4	Uncharacterized protein, isoform B	
+A0A0B4KG96	fly	FBgn0015949	hrg	A0A0B4KG96	64	356	polynucleotide adenylyltransferase (EC 2.7.7.19)	
+A0A0B4KGA3	fly	FBgn0265276	l(3)neo38	A0A0B4KGA3	49	383	Lethal (3) neo38, isoform L	
+A0A0B4KGA5	fly	FBgn0263742	CG43667	A0A0B4KGA5	33	243	Uncharacterized protein	
+A0A0B4KGB5	fly	FBgn0265046	CG44163	A0A0B4KGB5	0	0	Uncharacterized protein	
+A0A0B4KGB6	fly	FBgn0265063	CG44174	A0A0B4KGB6	0	0	Uncharacterized protein	
+A0A0B4KGD0	fly	FBgn0015903	apt	A0A0B4KGD0	108	467	Regulatory protein zeste	
+A0A0B4KGD2	fly	FBgn0264830	CG44038	A0A0B4KGD2	0	1	Uncharacterized protein	
+A0A0B4KGD3	fly	FBgn0267337	rn	A0A0B4KGD3	80	352	Rotund, isoform G	
+A0A0B4KGD7	fly	FBgn0262582	cic	A0A0B4KGD7	4	15	Capicua, isoform G	
+A0A0B4KGD9	fly	FBgn0037521	CG2993	A0A0B4KGD9	5	29	Uncharacterized protein, isoform C	
+A0A0B4KGE1	fly	FBgn0016917	Stat92E	A0A0B4KGE1	62	553	Signal transducer and activator of transcription	
+A0A0B4KGE5	fly	FBgn0023097	bon	A0A0B4KGE5	222	1229	Bonus, isoform C	
+A0A0B4KGF6	fly	FBgn0037541	Heatr5	A0A0B4KGF6	0	2	Uncharacterized protein, isoform F	
+A0A0B4KGG5	fly	FBgn0267975	vib	A0A0B4KGG5	2	8	Vibrator, isoform B	
+A0A0B4KGH5	fly	FBgn0038872	Nelf-A	A0A0B4KGH5	24	150	Negative elongation factor A, isoform B	
+A0A0B4KGH8	fly	FBgn0083971	CG34135	A0A0B4KGH8	0	1	Uncharacterized protein, isoform D	
+A0A0B4KGI0	fly	FBgn0038740	Mrp5	A0A0B4KGI0	1	5	Uncharacterized protein, isoform E (EC 3.6.1.3)	
+A0A0B4KGI4	fly	FBgn0051206	CG31206	A0A0B4KGI4	0	1	Uncharacterized protein, isoform B	
+A0A0B4KGJ7	fly	FBgn0038814	CG15923	A0A0B4KGJ7	0	4	Uncharacterized protein, isoform C	
+A0A0B4KGJ9	fly	FBgn0263117	CG34377	A0A0B4KGJ9	8	14	Uncharacterized protein, isoform C	
+A0A0B4KGK1	fly	FBgn0024944	Oamb	A0A0B4KGK1	3	10	Octopamine receptor in mushroom bodies, isoform D	
+A0A0B4KGL0	fly	FBgn0038975	Nrx-1	A0A0B4KGL0	3	18	Neurexin 1, isoform F	
+A0A0B4KGL2	fly	FBgn0261561	CG42675	A0A0B4KGL2	0	1	Uncharacterized protein, isoform G	
+A0A0B4KGL5	fly	FBgn0011672	Mvl	A0A0B4KGL5	4	45	Malvolio, isoform H	
+A0A0B4KGL7	fly	FBgn0037427	Osi17	A0A0B4KGL7	0	3	Osiris 17, isoform C (Osiris 17, isoform D)	
+A0A0B4KGM3	fly	FBgn0011766	E2f1	A0A0B4KGM3	96	444	E2F transcription factor 1, isoform D (E2F transcription fac	
+A0A0B4KGM5	fly	FBgn0037445	CG9727	A0A0B4KGM5	27	101	Uncharacterized protein, isoform B	
+A0A0B4KGN1	fly	FBgn0038197	foxo	A0A0B4KGN1	147	652	Forkhead box protein O	
+A0A0B4KGN2	fly	FBgn0019960	Mitofilin	A0A0B4KGN2	6	62	MICOS complex subunit MIC60 (Mitofilin)	
+A0A0B4KGN4	fly	FBgn0037470	Tailor	A0A0B4KGN4	5	29	Tailor, isoform C (EC 2.7.7.52)	
+A0A0B4KGN9	fly	FBgn0037766	Teh1	A0A0B4KGN9	0	7	TipE homolog 1, isoform B	
+A0A0B4KGP1	fly	FBgn0261238	Alh	A0A0B4KGP1	5	20	Alhambra, isoform P	
+A0A0B4KGP4	fly	FBgn0039089	beat-IV	A0A0B4KGP4	1	3	Beaten path IV, isoform B	
+A0A0B4KGR7	fly	FBgn0000504	dsx	A0A0B4KGR7	68	442	Doublesex, isoform E	
+A0A0B4KGR8	fly	FBgn0264836	CG44044	A0A0B4KGR8	0	0	Uncharacterized protein	
+A0A0B4KGS4	fly	FBgn0044826	Pak3	A0A0B4KGS4	237	1160	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+A0A0B4KGS5	fly	FBgn0037837	CG14693	A0A0B4KGS5	0	0	Uncharacterized protein, isoform E	
+A0A0B4KGU2	fly	FBgn0262871	lute	A0A0B4KGU2	36	350	Lute, isoform D	
+A0A0B4KGU3	fly	FBgn0000036	nAChRalpha1	A0A0B4KGU3	8	18	Nicotinic acetylcholine receptor alpha1, isoform B	
+A0A0B4KGU4	fly	FBgn0263231	bel	A0A0B4KGU4	10	171	RNA helicase (EC 3.6.4.13)	
+A0A0B4KGV7	fly	FBgn0039126	CG13601	A0A0B4KGV7	2	6	Uncharacterized protein, isoform B	
+A0A0B4KGW0	fly	FBgn0039140	Miro	A0A0B4KGW0	4	64	Mitochondrial Rho GTPase (EC 3.6.5.-)	
+A0A0B4KGW2	fly	FBgn0003499	sr	A0A0B4KGW2	29	105	Stripe, isoform D	
+A0A0B4KGW3	fly	FBgn0051100	Glug	A0A0B4KGW3	2	2	Uncharacterized protein, isoform B	
+A0A0B4KGW6	fly	FBgn0011481	Ssdp	A0A0B4KGW6	51	474	Sequence-specific single-stranded DNA-binding protein, isofo	
+A0A0B4KGX1	fly	FBgn0011225	jar	A0A0B4KGX1	11	69	Jaguar, isoform L (EC 3.6.1.3)	
+A0A0B4KGX3	fly	FBgn0004618	gl	A0A0B4KGX3	69	374	Glass, isoform C	
+A0A0B4KGX8	fly	FBgn0051102	CG31102	A0A0B4KGX8	0	1	Uncharacterized protein, isoform B	
+A0A0B4KGY6	fly	FBgn0261552	ps	A0A0B4KGY6	1	31	RNA-binding protein Pasilla	
+A0A0B4KGY8	fly	FBgn0051221	CG31221	A0A0B4KGY8	0	2	Uncharacterized protein, isoform C	
+A0A0B4KGZ0	fly	FBgn0027950	MBD-like	A0A0B4KGZ0	95	427	Methyl-CpG binding domain protein-like, isoform C	
+A0A0B4KGZ7	fly	FBgn0020496	CtBP	A0A0B4KGZ7	75	609	C-terminal binding protein, isoform H (EC 1.1.1.-)	
+A0A0B4KH03	fly	FBgn0027865	Tsp96F	A0A0B4KH03	2	48	Tetraspanin	
+A0A0B4KH11	fly	FBgn0264991	CG44142	A0A0B4KH11	13	244	Uncharacterized protein	
+A0A0B4KH14	fly	FBgn0039427	CG5447	A0A0B4KH14	8	82	Ras modification protein ERF4	
+A0A0B4KH20	fly	FBgn0041105	nerfin-2	A0A0B4KH20	124	348	Nervous fingers 2, isoform B	
+A0A0B4KH28	fly	FBgn0053094	Synd	A0A0B4KH28	4	61	Syndapin, isoform C (Syndapin, isoform D)	
+A0A0B4KH37	fly	FBgn0008651	lbl	A0A0B4KH37	105	391	Ladybird late, isoform C	
+A0A0B4KH39	fly	FBgn0013759	CASK	A0A0B4KH39	142	1356	CASK, isoform H	
+A0A0B4KH63	fly	FBgn0261860	CG42789	A0A0B4KH63	0	2		
+A0A0B4KH64	fly	FBgn0045862	btz	A0A0B4KH64	21	73	Protein CASC3	
+A0A0B4KH68	fly	FBgn0051072	Lerp	A0A0B4KH68	11	205	Lysosomal enzyme receptor protein, isoform E	
+A0A0B4KH71	fly	FBgn0264832	CG44040	A0A0B4KH71	39	243	Uncharacterized protein	
+A0A0B4KH75	fly	FBgn0051446	CG31446	A0A0B4KH75	1	3	Uncharacterized protein, isoform B	
+A0A0B4KH77	fly	FBgn0285963	CG46339	A0A0B4KH77	14	139	Uncharacterized protein, isoform D (EC 3.4.11.-)	
+A0A0B4KH80	fly	FBgn0039054	Cow	A0A0B4KH80	109	562	Carrier of wingless, isoform E	
+A0A0B4KH86	fly	FBgn0265042	Irk1	A0A0B4KH86	6	39	Inwardly rectifying potassium channel 1, isoform F (Inwardly	
+A0A0B4KHA1	fly	FBgn0005596	yem	A0A0B4KHA1	2	20	Yemanuclein, isoform B	
+A0A0B4KHA2	fly	FBgn0038504	Sur-8	A0A0B4KHA2	5	38	Leucine-rich repeat protein soc-2 homolog (Protein soc-2 hom	
+A0A0B4KHA8	fly	FBgn0038532	CG14322	A0A0B4KHA8	1	3	Uncharacterized protein, isoform B	
+A0A0B4KHC0	fly	FBgn0000659	fkh	A0A0B4KHC0	108	441	Fork head, isoform C	
+A0A0B4KHC1	fly	FBgn0265041	CG44158	A0A0B4KHC1	0	0	Uncharacterized protein	
+A0A0B4KHC3	fly	FBgn0038603	PKD	A0A0B4KHC3	139	1102	Serine/threonine-protein kinase (EC 2.7.11.13)	
+A0A0B4KHC8	fly	FBgn0039169	Spps	A0A0B4KHC8	63	352	Sp1-like factor for pairing sensitive-silencing, isoform B	
+A0A0B4KHD0	fly	FBgn0038653	Octalpha2R	A0A0B4KHD0	3	16	Alpha2-adrenergic-like octopamine receptor, isoform B	
+A0A0B4KHF0	fly	FBgn0015221	Fer2LCH	A0A0B4KHF0	16	318	Ferritin	
+A0A0B4KHF1	fly	FBgn0038735	MICU3	A0A0B4KHF1	4	16	Mitochondrial calcium uptake 3, isoform D	
+A0A0B4KHG2	fly	FBgn0039234	Nct	A0A0B4KHG2	268	2397	Nicastrin	
+A0A0B4KHG9	fly	FBgn0040601	CG13643	A0A0B4KHG9	47	251	Uncharacterized protein, isoform D	
+A0A0B4KHI2	fly	FBgn0011582	Dop1R1	A0A0B4KHI2	4	25	Dopamine 1-like receptor 1, isoform E	
+A0A0B4KHJ0	fly	FBgn0038840	Grik	A0A0B4KHJ0	12	18	Grik, isoform C	
+A0A0B4KHJ7	fly	FBgn0027378	MRG15	A0A0B4KHJ7	102	465	MORF-related gene 15, isoform B	
+A0A0B4KHK0	fly	FBgn0040212	Gnpat	A0A0B4KHK0	2	11	Dihydroxyacetone phosphate acyltransferase (EC 2.3.1.42) (Gl	
+A0A0B4KHK1	fly	FBgn0283468	slmb	A0A0B4KHK1	25	111	Supernumerary limbs, isoform B	
+A0A0B4KHK6	fly	FBgn0002941	slou	A0A0B4KHK6	94	379	Slouch, isoform B	
+A0A0B4KHK8	fly	FBgn0039844	CG1607	A0A0B4KHK8	2	16	Uncharacterized protein, isoform C (Uncharacterized protein,	
+A0A0B4KHL2	fly	FBgn0028968	gammaCOP	A0A0B4KHL2	10	69	Coatomer subunit gamma	
+A0A0B4KHL4	fly	FBgn0250823	gish	A0A0B4KHL4	203	1172	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+A0A0B4KHL5	fly	FBgn0039862	kek6	A0A0B4KHL5	2	14	Kekkon 6, isoform B	
+A0A0B4KHN8	fly	FBgn0264005	Hmx	A0A0B4KHN8	103	374	H6-like-homeobox, isoform D	
+A0A0B4KHP5	fly	FBgn0262975	cnc	A0A0B4KHP5	45	191	Cap-n-collar, isoform O	
+A0A0B4KHR1	fly	FBgn0039536	unc80	A0A0B4KHR1	0	1	Uncoordinated 80, isoform F	
+A0A0B4KHR2	fly	FBgn0038686	CG5555	A0A0B4KHR2	0	8	Uncharacterized protein, isoform B	
+A0A0B4KHR3	fly	FBgn0039137	Epp	A0A0B4KHR3	1	23	Uncharacterized protein, isoform E (EC 3.1.3.-)	
+A0A0B4KHT2	fly	FBgn0003429	slo	A0A0B4KHT2	1	22	BK channel	
+A0A0B4KHT3	fly	FBgn0038816	Lrrk	A0A0B4KHT3	7	486	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+A0A0B4KHT5	fly	FBgn0038826	Syp	A0A0B4KHT5	6	92	Syncrip, isoform J	
+A0A0B4KHV0	fly	FBgn0004509	Fur1	A0A0B4KHV0	0	19	Furin 1, isoform J (EC 3.4.21.-)	
+A0A0B4KHV5	fly	FBgn0264491	how	A0A0B4KHV5	4	44	Held out wings, isoform F	
+A0A0B4KHV7	fly	FBgn0051163	SKIP	A0A0B4KHV7	5	11	Shal K[+] channel interacting protein, isoform I	
+A0A0B4KHV8	fly	FBgn0004622	TkR99D	A0A0B4KHV8	6	28	Tachykinin-like receptor at 99D, isoform C	
+A0A0B4KHW1	fly	FBgn0038948	JMJD6	A0A0B4KHW1	10	83	Phosphatidylserine receptor, isoform B	
+A0A0B4KHX5	fly	FBgn0267435	chp	A0A0B4KHX5	0	6	Chaoptin, isoform D	
+A0A0B4KHX7	fly	FBgn0019990	Gcn2	A0A0B4KHX7	48	1058	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+A0A0B4KHY1	fly	FBgn0039876	CG2126	A0A0B4KHY1	0	2	Uncharacterized protein, isoform B	
+A0A0B4KHY4	fly	FBgn0262473	Tl	A0A0B4KHY4	112	2429	Toll, isoform C	
+A0A0B4KHY6	fly	FBgn0004510	Ets97D	A0A0B4KHY6	72	397	Ets at 97D, isoform B	
+A0A0B4KHZ4	fly	FBgn0051140	CG31140	A0A0B4KHZ4	1	21	Diacylglycerol kinase (DAG kinase) (EC 2.7.1.107)	
+A0A0B4KHZ9	fly	FBgn0039560	BOD1	A0A0B4KHZ9	1	17	Biorientation defective 1, isoform E	
+A0A0B4KI01	fly	FBgn0051051	CG31051	A0A0B4KI01	1	3	Uncharacterized protein, isoform B	
+A0A0B4KI10	fly	FBgn0028692	Rpn2	A0A0B4KI10	11	97	26S proteasome non-ATPase regulatory subunit 1	
+A0A0B4KI14	fly	FBgn0039286	dan	A0A0B4KI14	1	15	Distal antenna, isoform B	
+A0A0B4KI17	fly	FBgn0039659	CG14506	A0A0B4KI17	3	20	Uncharacterized protein, isoform B	
+A0A0B4KI18	fly	FBgn0266137	Dop1R2	A0A0B4KI18	3	12	Dopamine 1-like receptor 2, isoform C	
+A0A0B4KI19	fly	FBgn0027508	Tnks	A0A0B4KI19	3	28	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.-)	
+A0A0B4KI23	fly	FBgn0039719	vul	A0A0B4KI23	34	274	Uncharacterized protein	
+A0A0B4KI27	fly	FBgn0015222	Fer1HCH	A0A0B4KI27	12	328	Ferritin (EC 1.16.3.1)	
+A0A0B4KI34	fly	FBgn0027598	cindr	A0A0B4KI34	49	138	CIN85 and CD2AP related, isoform J	
+A0A0B4KI42	fly	FBgn0264563	CG43935	A0A0B4KI42	0	0	Uncharacterized protein	
+A0A0B4KI44	fly	FBgn0039530	Tusp	A0A0B4KI44	16	126	Tusp, isoform F	
+A0A0B4KI51	fly	FBgn0039633	Bicra	A0A0B4KI51	3	3	Uncharacterized protein, isoform B	
+A0A0B4KI55	fly	FBgn0039673	CG7568	A0A0B4KI55	0	1	WD repeat-containing protein 55 homolog	
+A0A0B4KI57	fly	FBgn0039690	Gnpnat	A0A0B4KI57	1	21	Glucosamine 6-phosphate N-acetyltransferase (EC 2.3.1.4)	
+A0A0B4KI67	fly	FBgn0039816	CG11317	A0A0B4KI67	3	23	Uncharacterized protein, isoform B	
+A0A0B4KI68	fly	FBgn0086362	spn-F	A0A0B4KI68	11	24	Spn-F, isoform B (EC 5.6.1.4)	
+A0A0B4LED6	fly	FBgn0265631	CG44438	A0A0B4LED6	0	1	Uncharacterized protein	
+A0A0B4LEE2	fly	FBgn0033140	CG12836	A0A0B4LEE2	10	23	Tctex1 domain-containing protein 2	
+A0A0B4LEE5	fly	FBgn0041243	Gr43a	A0A0B4LEE5	0	4	Gustatory receptor	
+A0A0B4LEI2	fly	FBgn0265313	CG44286	A0A0B4LEI2	0	0	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LEP6	fly	FBgn0262791	CG43172	A0A0B4LEP6	0	1	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LEQ5	fly	FBgn0266525	CG45092	A0A0B4LEQ5	0	0	Uncharacterized protein, isoform D (Uncharacterized protein,	
+A0A0B4LES9	fly	FBgn0050381	PIG-X	A0A0B4LES9	4	103	Phosphatidylinositol-glycan biosynthesis class X protein	
+A0A0B4LET0	fly	FBgn0033584	CG7737	A0A0B4LET0	7	53	Uncharacterized protein, isoform B (EC 1.-.-.-)	
+A0A0B4LEX3	fly	FBgn0265632	CG44439	A0A0B4LEX3	1	1	Uncharacterized protein	
+A0A0B4LEX9	fly	FBgn0259226	CG42326	A0A0B4LEX9	0	8	Uncharacterized protein, isoform E	
+A0A0B4LEZ1	fly	FBgn0033339	Sec31	A0A0B4LEZ1	12	83	Secretory 31, isoform D	
+A0A0B4LEZ3	fly	FBgn0085436	Not1	A0A0B4LEZ3	6	25	Not1, isoform H (EC 3.1.13.4)	
+A0A0B4LEZ9	fly	FBgn0266486	CG45085	A0A0B4LEZ9	1	1	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LF16	fly	FBgn0033474	CG1407	A0A0B4LF16	3	18	Palmitoyltransferase (EC 2.3.1.225)	
+A0A0B4LF36	fly	FBgn0265342	COX7CL	A0A0B4LF36	7	33	Uncharacterized protein	
+A0A0B4LF43	fly	FBgn0262881	Mtkl1	A0A0B4LF43	26	244	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LF44	fly	FBgn0033501	CG12911	A0A0B4LF44	53	246	Uncharacterized protein, isoform D	
+A0A0B4LF48	fly	FBgn0262807	CG43178	A0A0B4LF48	0	1	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LF50	fly	FBgn0259985	Mppe	A0A0B4LF50	0	13	Metallophosphoesterase, isoform E (EC 3.1.3.-)	
+A0A0B4LF62	fly	FBgn0265373	CG44314	A0A0B4LF62	33	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LF70	fly	FBgn0261611	CG42700	A0A0B4LF70	1	6	Uncharacterized protein, isoform I	
+A0A0B4LF84	fly	FBgn0265429	CG44341	A0A0B4LF84	0	0	Uncharacterized protein	
+A0A0B4LFA6	fly	FBgn0033886	Rpn13	A0A0B4LFA6	25	112	Regulatory particle non-ATPase 13, isoform G	
+A0A0B4LFA8	fly	FBgn0266489	CG45088	A0A0B4LFA8	0	0	Uncharacterized protein	
+A0A0B4LFF4	fly	FBgn0033955	Targ	A0A0B4LFF4	1	24	Uncharacterized protein, isoform D	
+A0A0B4LFF6	fly	FBgn0034021	CG8180	A0A0B4LFF6	2	6	Uncharacterized protein, isoform B	
+A0A0B4LFG2	fly	FBgn0050466	CG30466	A0A0B4LFG2	0	1	Uncharacterized protein, isoform B	
+A0A0B4LFG8	fly	FBgn0053467	CG33467	A0A0B4LFG8	105	1316	Uncharacterized protein, isoform B	
+A0A0B4LFN2	fly	FBgn0266488	CG45087	A0A0B4LFN2	0	0	Uncharacterized protein	
+A0A0B4LFP0	fly	FBgn0265627	CG44435	A0A0B4LFP0	0	0	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LFR0	fly	FBgn0265576	CG44403	A0A0B4LFR0	0	0	Uncharacterized protein	
+A0A0B4LFR5	fly	FBgn0265762	CG44569	A0A0B4LFR5	0	0	Uncharacterized protein	
+A0A0B4LFS0	fly	FBgn0033252	CG12769	A0A0B4LFS0	52	360	Uncharacterized protein, isoform C	
+A0A0B4LFS1	fly	FBgn0265836	CG44625	A0A0B4LFS1	15	243	Uncharacterized protein	
+A0A0B4LFU3	fly	FBgn0034408	sano	A0A0B4LFU3	0	3	Serrano, isoform F	
+A0A0B4LFV4	fly	FBgn0085419	Rgk2	A0A0B4LFV4	2	12	Rad, Gem/Kir family member 2, isoform C	
+A0A0B4LFW5	fly	FBgn0265191	Gyg	A0A0B4LFW5	2	28	glycogenin glucosyltransferase (EC 2.4.1.186)	
+A0A0B4LFW7	fly	FBgn0265835	CG44624	A0A0B4LFW7	29	243	Uncharacterized protein	
+A0A0B4LFX8	fly	FBgn0020306	dom	A0A0B4LFX8	3	33	Domino, isoform G (EC 3.6.1.3)	
+A0A0B4LFY6	fly	FBgn0050222	CG30222	A0A0B4LFY6	0	2	Uncharacterized protein, isoform G	
+A0A0B4LFY7	fly	FBgn0265833	CG44622	A0A0B4LFY7	0	0	Uncharacterized protein	
+A0A0B4LFY9	fly	FBgn0033453	Sting	A0A0B4LFY9	0	13	Stimulator of interferon genes protein homolog (dSTING) (dmS	
+A0A0B4LG03	fly	FBgn0053136	CG33136	A0A0B4LG03	0	1	Uncharacterized protein, isoform B	
+A0A0B4LG18	fly	FBgn0034566	CG9313	A0A0B4LG18	9	25	Uncharacterized protein, isoform B	
+A0A0B4LG22	fly	FBgn0262837	CG43201	A0A0B4LG22	0	1	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LG26	fly	FBgn0012051	CalpA	A0A0B4LG26	6	23	Calpain-A, isoform D	
+A0A0B4LG30	fly	FBgn0034463	CG15125	A0A0B4LG30	1	1	Uncharacterized protein, isoform B	
+A0A0B4LG35	fly	FBgn0265834	CG44623	A0A0B4LG35	0	0	Uncharacterized protein	
+A0A0B4LG43	fly	FBgn0053225	CG33225	A0A0B4LG43	46	243	Uncharacterized protein, isoform C	
+A0A0B4LG94	fly	FBgn0266432	CG45062	A0A0B4LG94	6	7	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LG97	fly	FBgn0266487	CG45086	A0A0B4LG97	0	0	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LGA2	fly	FBgn0265184	miso	A0A0B4LGA2	7	119	RRM domain-containing protein	
+A0A0B4LGC2	fly	FBgn0266433	CG45063	A0A0B4LGC2	0	1	Cation-transporting P-type ATPase N-terminal domain-containi	
+A0A0B4LGD0	fly	FBgn0263774	CG43691	A0A0B4LGD0	17	65	Uncharacterized protein, isoform C (Uncharacterized protein,	
+A0A0B4LGD3	fly	FBgn0261794	kcc	A0A0B4LGD3	2	31	Kazachoc, isoform G	
+A0A0B4LGE9	fly	FBgn0264299	CG43777	A0A0B4LGE9	44	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LGH8	fly	FBgn0034951	CG3860	A0A0B4LGH8	0	16	Oxysterol-binding protein	
+A0A0B4LGJ9	fly	FBgn0034971	Gpat4	A0A0B4LGJ9	1	60	Glycerol-3-phosphate acyltransferase 4, isoform D (EC 2.3.1.	
+A0A0B4LGL3	fly	FBgn0020280	laf	A0A0B4LGL3	0	1	Labial associated factor, isoform B	
+A0A0B4LGL5	fly	FBgn0034067	CG8399	A0A0B4LGL5	0	53	Uncharacterized protein, isoform B (EC 1.16.1.7)	
+A0A0B4LGL7	fly	FBgn0266047	CG44812	A0A0B4LGL7	0	0	Uncharacterized protein	
+A0A0B4LGM3	fly	FBgn0266439	CG45069	A0A0B4LGM3	11	243	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LGM5	fly	FBgn0037332	Hcs	A0A0B4LGM5	3	22	Holocarboxylase synthetase, isoform C (EC 6.3.4.15)	
+A0A0B4LGN7	fly	FBgn0037295	dpr16	A0A0B4LGN7	4	6	Defective proboscis extension response 16, isoform C	
+A0A0B4LGP2	fly	FBgn0266539	CG45100	A0A0B4LGP2	0	0	Uncharacterized protein	
+A0A0B4LGP6	fly	FBgn0011281	Obp83a	A0A0B4LGP6	27	244	Odorant-binding protein 83a, isoform C	
+A0A0B4LGS0	fly	A0A0B4LGS0	Amy-p	A0A0B4LGS0	0	6	alpha-amylase	
+A0A0B4LGS7	fly	FBgn0265423	lncRNA:CR44335	A0A0B4LGS7	0	0	Uncharacterized protein	
+A0A0B4LGV8	fly	FBgn0264541	Mtkl2	A0A0B4LGV8	18	243	Uncharacterized protein, isoform B (Uncharacterized protein,	
+A0A0B4LGW0	fly	FBgn0267105	CG45545	A0A0B4LGW0	0	0	Uncharacterized protein	
+A0A0B4LGZ6	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8	Hyperplastic discs, isoform B	
+A0A0B4LGZ7	fly	FBgn0266446	CG45076	C0HK92	1	47		
+A0A0B4LH08	fly	FBgn0261928	blobby	A0A0B4LH08	0	1	Uncharacterized protein, isoform G	
+A0A0B4LH09	fly	FBgn0034534	maf-S	A0A0B4LH09	56	399	Maf-S, isoform B	
+A0A0B4LH10	fly	FBgn0267236	CG45676	A0A0B4LH10	0	0	Uncharacterized protein	
+A0A0B4LH19	fly	FBgn0015524	otp	A0A0B4LH19	133	416	Orthopedia, isoform K	
+A0A0B4LH27	fly	FBgn0266261	Sgsf	A0A0B4LH27	38	245	Seminal fluid protein	
+A0A0B4LH29	fly	FBgn0265180	CG44245	A0A0B4LH29	0	12	Uncharacterized protein, isoform B	
+A0A0B4LH44	fly	FBgn0034670	CG13488	A0A0B4LH44	1	5	Uncharacterized protein, isoform C	
+A0A0B4LH46	fly	FBgn0266615	CG45122	A0A0B4LH46	0	0	Small lysine-rich protein 1	
+A0A0B4LH65	fly	FBgn0266455	CG45080	A0A0B4LH65	10	243	Secreted protein	
+A0A0B4LH68	fly	FBgn0037960	mthl5	A0A0B4LH68	1	3	Methuselah-like 5, isoform B	
+A0A0B4LH78	fly	FBgn0038402	Fer2	A0A0B4LH78	78	387	48 related 2, isoform D	
+A0A0B4LH86	fly	FBgn0034776	CG13527	A0A0B4LH86	43	246	Uncharacterized protein, isoform B	
+A0A0B4LH88	fly	FBgn0265197	CG44257	A0A0B4LH88	0	1	Uncharacterized protein	
+A0A0B4LHA8	fly	FBgn0050416	CG30416	A0A0B4LHA8	0	0	Uncharacterized protein, isoform C	
+A0A0B4LHC9	fly	FBgn0034914	CG5554	A0A0B4LHC9	3	15	Uncharacterized protein, isoform B	
+A0A0B4LHE5	fly	FBgn0266175	pre-mod(mdg4)-P	A0A0B4LHE5	0	0	Pre-mod(Mdg4)-P, isoform A (Pre-mod(Mdg4)-P, isoform B)	
+A0A0B4LHE8	fly	FBgn0266178	pre-mod(mdg4)-B	A0A0B4LHE8	0	0	Pre-mod(Mdg4)-B, isoform A (Pre-mod(Mdg4)-B, isoform B) (Pre	
+A0A0B4LHE9	fly	FBgn0266174	pre-mod(mdg4)-L	A0A0B4LHE9	0	0	Pre-mod(Mdg4)-L, isoform A (Pre-mod(Mdg4)-L, isoform B)	
+A0A0B4LHF4	fly	FBgn0266171	pre-mod(mdg4)-AB	A0A0B4LHF4	0	0	Pre-mod(Mdg4)-AB, isoform A (Pre-mod(Mdg4)-AB, isoform B)	
+A0A0B4LHG3	fly	FBgn0266745	CG45218	A0A0B4LHG3	0	0	Uncharacterized protein	
+A0A0B4LHI2	fly	FBgn0266173	pre-mod(mdg4)-K	A0A0B4LHI2	0	0	Pre-mod(Mdg4)-K, isoform A (Pre-mod(Mdg4)-K, isoform B)	
+A0A0B4LHI9	fly	FBgn0039081	Irk2	A0A0B4LHI9	2	34	Inwardly rectifying potassium channel 2, isoform D	
+A0A0B4LHJ2	fly	FBgn0266454	CG45079	A0A0B4LHJ2	23	243	Uncharacterized protein	
+A0A0B4LHK8	fly	FBgn0266409	CG45049	A0A0B4LHK8	0	5	Uncharacterized protein, isoform D (Uncharacterized protein,	
+A0A0B4LHM2	fly	FBgn0266534	CG45095	A0A0B4LHM2	44	243	Uncharacterized protein	
+A0A0B4LHM3	fly	FBgn0289745	Est17	Q8IMY6	1	13		
+A0A0B4LHM7	fly	FBgn0039294	Cad96Cb	A0A0B4LHM7	182	2375	Cadherin 96Cb, isoform D	
+A0A0B4LHP3	fly	FBgn0262858	MtnF	A0A0B4LHP3	0	1	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LHQ5	fly	FBgn0266177	pre-mod(mdg4)-I	A0A0B4LHQ5	0	4	Pre-mod(Mdg4)-I, isoform A (Pre-mod(Mdg4)-I, isoform B)	
+A0A0B4LHQ9	fly	FBgn0266172	pre-mod(mdg4)-E	A0A0B4LHQ9	0	0	Pre-mod(Mdg4)-E, isoform A (Pre-mod(Mdg4)-E, isoform B) (Pre	
+A0A0B4LHR4	fly	FBgn0027575	GABA-B-R2	A0A0B4LHR4	6	35	Metabotropic GABA-B receptor subtype 2, isoform C	
+A0A0B4LHR8	fly	FBgn0051064	CG31064	A0A0B4LHR8	5	6	Uncharacterized protein, isoform G	
+A0A0B4LHS1	fly	A0A0B4LHS1	Mlc1	A0A0B4LHS1	7	63	Myosin light chain alkali	
+A0A0B4LHT6	fly	FBgn0004842	RYa-R	A0A0B4LHT6	1	10	RYamide receptor, isoform B	
+A0A0B4LHT8	fly	FBgn0267104	CG45544	A0A0B4LHT8	0	0	Uncharacterized protein, isoform A (Uncharacterized protein,	
+A0A0B4LHU7	fly	FBgn0039710	dgt1	A0A0B4LHU7	10	41	KAT8 regulatory NSL complex subunit 2 (NSL complex protein N	
+A0A0B4LHV7	fly	FBgn0266443	CG45073	A0A0B4LHV7	0	1	Uncharacterized protein	
+A0A0B4LHW5	fly	FBgn0267106	CG45546	A0A0B4LHW5	27	243	TIL domain-containing protein	
+A0A0B4LHX0	fly	FBgn0040628	CAH16	A0A0B4LHX0	38	249	Carbonic anhydrase (EC 4.2.1.1)	
+A0A0B4LHX3	fly	FBgn0266259	CG44954	A0A0B4LHX3	0	1	Uncharacterized protein	
+A0A0B4LHX6	fly	FBgn0000150	awd	A0A0B4LHX6	24	655	Nucleoside diphosphate kinase (EC 2.7.4.6)	
+A0A0B4LHY0	fly	FBgn0261287	ymp	A0A0B4LHY0	0	2	Yellow-emperor, isoform D	
+A0A0B4LHY5	fly	FBgn0028717	Lnk	A0A0B4LHY5	1	13	Lnk, isoform D	
+A0A0B4LI00	fly	FBgn0265317	CG44290	A0A0B4LI00	0	0	Uncharacterized protein	
+A0A0B4LI09	fly	FBgn0085382	CG34353	A0A0B4LI09	8	64	Uncharacterized protein, isoform C	
+A0A0B4LIB4	fly	FBgn0265199	CG44259	A0A0B4LIB4	0	0	Uncharacterized protein	
+A0A0B4LIC4	fly	FBgn0038606	CG15803	A0A0B4LIC4	4	17	Uncharacterized protein, isoform C	
+A0A0B4LID6	fly	FBgn0024963	GluClalpha	A0A0B4LID6	8	20	GluClalpha, isoform N	
+A0A0B4LID7	fly	FBgn0038745	ClpX	A0A0B4LID7	2	29	Uncharacterized protein, isoform C (EC 3.4.21.-)	
+A0A0B4LIF8	fly	FBgn0266176	pre-mod(mdg4)-J	A0A0B4LIF8	0	0	Pre-mod(Mdg4)-J, isoform A (Pre-mod(Mdg4)-J, isoform B)	
+A0A0B4LIG1	fly	FBgn0266170	pre-mod(mdg4)-C	A0A0B4LIG1	0	0	Pre-mod(Mdg4)-C, isoform B (Pre-mod(Mdg4)-C, isoform C)	
+A0A0B4LIG4	fly	FBgn0266538	CG45099	A0A0B4LIG4	0	0	Uncharacterized protein	
+A0A0B4LIJ3	fly	FBgn0039161	CG13606	A0A0B4LIJ3	21	257	Uncharacterized protein, isoform D	
+A0A0B4LIS1	fly	FBgn0004197	Ser	A0A0B4LIS1	250	2409	Delta-like protein	
+A0A0B4LIX2	fly	FBgn0266411	sima	A0A0B4LIX2	70	548	Similar, isoform D	
+A0A0B4MZZ9	virus	A0A0B4MZZ9		A0A0B4MZZ9	0	2	A0A0B4MZZ9_9VIRU	
+A0A0B4N000	virus	A0A0B4N000		A0A0B4N000	0	2	A0A0B4N000_9VIRU	
+A0A0B4Q5G9	virus	A0A0B4Q5G9	E4	A0A0B4Q5G9	9	78	A0A0B4Q5G9_9GAMA	
+A0A0B4Q5H1	virus	A0A0B4Q5H1	E6	A0A0B4Q5H1	1	78	A0A0B4Q5H1_9GAMA	
+A0A0B4Q5H5	virus	A0A0B4Q5H5	ORF17.5	A0A0B4Q5H5	2	78	A0A0B4Q5H5_9GAMA	
+A0A0B4Q5H8	virus	A0A0B4Q5H8	ORF22	A0A0B4Q5H8	2	78	A0A0B4Q5H8_9GAMA	
+A0A0B4Q5I2	virus	A0A0B4Q5I2	ORF27	A0A0B4Q5I2	2	78	A0A0B4Q5I2_9GAMA	
+A0A0B4Q5I7	virus	A0A0B4Q5I7	ORF32	A0A0B4Q5I7	4	78	A0A0B4Q5I7_9GAMA	
+A0A0B4Q5J0	virus	A0A0B4Q5J0	ORF37	A0A0B4Q5J0	0	78	A0A0B4Q5J0_9GAMA	
+A0A0B4Q5J5	virus	A0A0B4Q5J5	ORF43	A0A0B4Q5J5	1	78	A0A0B4Q5J5_9GAMA	
+A0A0B4Q5J8	virus	A0A0B4Q5J8	ORF48	A0A0B4Q5J8	5	78	A0A0B4Q5J8_9GAMA	
+A0A0B4Q5K2	virus	A0A0B4Q5K2	ORF52	A0A0B4Q5K2	2	78	A0A0B4Q5K2_9GAMA	
+A0A0B4Q5K5	virus	A0A0B4Q5K5	ORF57	A0A0B4Q5K5	4	78	A0A0B4Q5K5_9GAMA	
+A0A0B4Q5L0	virus	A0A0B4Q5L0	ORF62	A0A0B4Q5L0	4	78	A0A0B4Q5L0_9GAMA	
+A0A0B4Q5L4	virus	A0A0B4Q5L4	ORF67	A0A0B4Q5L4	2	78	A0A0B4Q5L4_9GAMA	
+A0A0B4Q5L7	virus	A0A0B4Q5L7	ORF73	A0A0B4Q5L7	2	75	A0A0B4Q5L7_9GAMA	
+A0A0B4Q5M1	virus	A0A0B4Q5M1	E10	A0A0B4Q5M1	8	78	A0A0B4Q5M1_9GAMA	
+A0A0B4Q5M2	virus	A0A0B4Q5M2	E1	A0A0B4Q5M2	1	78	A0A0B4Q5M2_9GAMA	
+A0A0B4Q5M5	virus	A0A0B4Q5M5	ORF6	A0A0B4Q5M5	0	75	A0A0B4Q5M5_9GAMA	
+A0A0B4Q5M8	virus	A0A0B4Q5M8	ORF10	A0A0B4Q5M8	2	78	A0A0B4Q5M8_9GAMA	
+A0A0B4Q5N1	virus	A0A0B4Q5N1	ORF18	A0A0B4Q5N1	9	78	A0A0B4Q5N1_9GAMA	
+A0A0B4Q5N4	virus	A0A0B4Q5N4	ORF23	A0A0B4Q5N4	1	78	A0A0B4Q5N4_9GAMA	
+A0A0B4Q5N6	virus	A0A0B4Q5N6	ORF28	A0A0B4Q5N6	0	78	A0A0B4Q5N6_9GAMA	
+A0A0B4Q5N9	virus	A0A0B4Q5N9	ORF33	A0A0B4Q5N9	5	78	A0A0B4Q5N9_9GAMA	
+A0A0B4Q5P2	virus	A0A0B4Q5P2	ORF38	A0A0B4Q5P2	4	78	Cytoplasmic envelopment protein 3	
+A0A0B4Q5P4	virus	A0A0B4Q5P4	ORF44	A0A0B4Q5P4	2	78	A0A0B4Q5P4_9GAMA	
+A0A0B4Q5P7	virus	A0A0B4Q5P7	ORF50	A0A0B4Q5P7	4	78	A0A0B4Q5P7_9GAMA	
+A0A0B4Q5P8	virus	A0A0B4Q5P8	ORF53	A0A0B4Q5P8	2	78	A0A0B4Q5P8_9GAMA	
+A0A0B4Q5Q1	virus	A0A0B4Q5Q1	ORF58	A0A0B4Q5Q1	1	78	A0A0B4Q5Q1_9GAMA	
+A0A0B4Q5Q2	virus	A0A0B4Q5Q2	ORF63	A0A0B4Q5Q2	2	77	A0A0B4Q5Q2_9GAMA	
+A0A0B4Q5Q5	virus	A0A0B4Q5Q5	ORF67A	A0A0B4Q5Q5	2	78	A0A0B4Q5Q5_9GAMA	
+A0A0B4Q5Q6	virus	A0A0B4Q5Q6	ORF74	A0A0B4Q5Q6	1	78	A0A0B4Q5Q6_9GAMA	
+A0A0B4Q5Q8	virus	A0A0B4Q5Q8	E11	A0A0B4Q5Q8	2	78	A0A0B4Q5Q8_9GAMA	
+A0A0B4Q603	virus	A0A0B4Q603	E3	A0A0B4Q603	0	78	A0A0B4Q603_9GAMA	
+A0A0B4Q605	virus	A0A0B4Q605	ORF8	A0A0B4Q605	1	78	A0A0B4Q605_9GAMA	
+A0A0B4Q607	virus	A0A0B4Q607	E6A	A0A0B4Q607	2	78	A0A0B4Q607_9GAMA	
+A0A0B4Q609	virus	A0A0B4Q609	ORF20	A0A0B4Q609	1	78	A0A0B4Q609_9GAMA	
+A0A0B4Q611	virus	A0A0B4Q611	ORF25	A0A0B4Q611	1	73	A0A0B4Q611_9GAMA	
+A0A0B4Q614	virus	A0A0B4Q614	ORF30	A0A0B4Q614	1	78	A0A0B4Q614_9GAMA	
+A0A0B4Q616	virus	A0A0B4Q616	ORF35	A0A0B4Q616	1	78	A0A0B4Q616_9GAMA	
+A0A0B4Q621	virus	A0A0B4Q621	ORF40	A0A0B4Q621	3	78	A0A0B4Q621_9GAMA	
+A0A0B4Q626	virus	A0A0B4Q626	ORF46	A0A0B4Q626	6	78	A0A0B4Q626_9GAMA	
+A0A0B4Q629	virus	A0A0B4Q629	E7A	A0A0B4Q629	3	78	A0A0B4Q629_9GAMA	
+A0A0B4Q632	virus	A0A0B4Q632	ORF55	A0A0B4Q632	2	78	A0A0B4Q632_9GAMA	
+A0A0B4Q636	virus	A0A0B4Q636	ORF60	A0A0B4Q636	3	78	ribonucleoside-diphosphate reductase	
+A0A0B4Q640	virus	A0A0B4Q640	ORF65	A0A0B4Q640	2	78	Small capsomere-interacting protein	
+A0A0B4Q643	virus	A0A0B4Q643	ORF69	A0A0B4Q643	1	78	A0A0B4Q643_9GAMA	
+A0A0B4Q646	virus	A0A0B4Q646	ORF75	A0A0B4Q646	1	72	A0A0B4Q646_9GAMA	
+A0A0B4Q650	virus	A0A0B4Q650	E5A	A0A0B4Q650	0	78	A0A0B4Q650_9GAMA	
+A0A0B4Q699	virus	A0A0B4Q699	E2	A0A0B4Q699	2	78	A0A0B4Q699_9GAMA	
+A0A0B4Q6A1	virus	A0A0B4Q6A1	ORF7	A0A0B4Q6A1	2	78	A0A0B4Q6A1_9GAMA	
+A0A0B4Q6A3	virus	A0A0B4Q6A3	ORF11	A0A0B4Q6A3	1	78	A0A0B4Q6A3_9GAMA	
+A0A0B4Q6A6	virus	A0A0B4Q6A6	ORF19	A0A0B4Q6A6	1	78	A0A0B4Q6A6_9GAMA	
+A0A0B4Q6A8	virus	A0A0B4Q6A8	ORF24	A0A0B4Q6A8	4	78	A0A0B4Q6A8_9GAMA	
+A0A0B4Q6A9	virus	A0A0B4Q6A9	ORF29	A0A0B4Q6A9	3	78	A0A0B4Q6A9_9GAMA	
+A0A0B4Q6B2	virus	A0A0B4Q6B2	ORF34	A0A0B4Q6B2	5	78	A0A0B4Q6B2_9GAMA	
+A0A0B4Q6B4	virus	A0A0B4Q6B4	ORF39	A0A0B4Q6B4	1	78	A0A0B4Q6B4_9GAMA	
+A0A0B4Q6B7	virus	A0A0B4Q6B7	ORF45	A0A0B4Q6B7	1	78	A0A0B4Q6B7_9GAMA	
+A0A0B4Q6B9	virus	A0A0B4Q6B9	ORF49	A0A0B4Q6B9	4	78	A0A0B4Q6B9_9GAMA	
+A0A0B4Q6C2	virus	A0A0B4Q6C2	ORF54	A0A0B4Q6C2	1	78	A0A0B4Q6C2_9GAMA	
+A0A0B4Q6C6	virus	A0A0B4Q6C6	ORF59	A0A0B4Q6C6	4	78	A0A0B4Q6C6_9GAMA	
+A0A0B4Q6D1	virus	A0A0B4Q6D1	ORF68	A0A0B4Q6D1	1	78	Packaging protein UL32	
+A0A0B4Q6D4	virus	A0A0B4Q6D4	E8	A0A0B4Q6D4	2	78	A0A0B4Q6D4_9GAMA	
+A0A0B4Q6D8	virus	A0A0B4Q6D8	E7	A0A0B4Q6D8	1	78	Viral interleukin-10 homolog	
+A0A0B4Q6P6	virus	A0A0B4Q6P6	ORF3	A0A0B4Q6P6	1	71	A0A0B4Q6P6_9GAMA	
+A0A0B4Q6Q1	virus	A0A0B4Q6Q1	ORF17	A0A0B4Q6Q1	5	78	Capsid scaffolding protein	
+A0A0B4Q6Q2	virus	A0A0B4Q6Q2	ORF21	A0A0B4Q6Q2	5	78	A0A0B4Q6Q2_9GAMA	
+A0A0B4Q6Q4	virus	A0A0B4Q6Q4	ORF26	A0A0B4Q6Q4	1	78	A0A0B4Q6Q4_9GAMA	
+A0A0B4Q6Q8	virus	A0A0B4Q6Q8	ORF31	A0A0B4Q6Q8	2	78	A0A0B4Q6Q8_9GAMA	
+A0A0B4Q6R1	virus	A0A0B4Q6R1	ORF36	A0A0B4Q6R1	1	78	A0A0B4Q6R1_9GAMA	
+A0A0B4Q6R5	virus	A0A0B4Q6R5	ORF42	A0A0B4Q6R5	4	78	A0A0B4Q6R5_9GAMA	
+A0A0B4Q6R7	virus	A0A0B4Q6R7	ORF47	A0A0B4Q6R7	4	78	A0A0B4Q6R7_9GAMA	
+A0A0B4Q6S0	virus	A0A0B4Q6S0	ORF51	A0A0B4Q6S0	0	78	A0A0B4Q6S0_9GAMA	
+A0A0B4Q6S4	virus	A0A0B4Q6S4	ORF56	A0A0B4Q6S4	2	75	A0A0B4Q6S4_9GAMA	
+A0A0B4Q6S6	virus	A0A0B4Q6S6	ORF61	A0A0B4Q6S6	2	78	Ribonucleoside-diphosphate reductase large subunit	
+A0A0B4Q6S9	virus	A0A0B4Q6S9	ORF66	A0A0B4Q6S9	3	78	A0A0B4Q6S9_9GAMA	
+A0A0B4Q6T2	virus	A0A0B4Q6T2	ORF70	A0A0B4Q6T2	1	78	Thymidylate synthase	
+A0A0B4Q6T5	virus	A0A0B4Q6T5	E9	A0A0B4Q6T5	2	78	A0A0B4Q6T5_9GAMA	
+A0A0B4Q6T7	virus	A0A0B4Q6T7	E6B	A0A0B4Q6T7	1	78	A0A0B4Q6T7_9GAMA	
+A0A0B4U839	virus	A0A0B4U839		A0A0B4U839	0	2	Replication-associated protein	
+A0A0B4U9K5	virus	A0A0B4U9K5		A0A0B4U9K5	0	2	A0A0B4U9K5_9VIRU	
+A0A0B4UEH9	virus	A0A0B4UEH9_p2ae13644b2		A0A0B4UEH9	0	12	Leader protein	
+A0A0B4UEH9	virus	A0A0B4UEH9_p3c23e3b1ef		A0A0B4UEH9	3	12	Capsid protein VP3	
+A0A0B4UEH9	virus	A0A0B4UEH9_p58b83dc2dd		A0A0B4UEH9	1	12	RNA directed RNA polymerase	
+A0A0B4UEH9	virus	A0A0B4UEH9_p59574b304f		A0A0B4UEH9	0	12	Protein 2A	
+A0A0B4UEH9	virus	A0A0B4UEH9_p6008225150		A0A0B4UEH9	0	12	Protein 2C	
+A0A0B4UEH9	virus	A0A0B4UEH9_p66ec7a6fb4		A0A0B4UEH9	1	12	Capsid protein VP4	
+A0A0B4UEH9	virus	A0A0B4UEH9_p759529238b		A0A0B4UEH9	2	12	Capsid protein VP2	
+A0A0B4UEH9	virus	A0A0B4UEH9_pa7fb8f01d0		A0A0B4UEH9	0	12	Protein 3A	
+A0A0B4UEH9	virus	A0A0B4UEH9_pbcf4489a60		A0A0B4UEH9	1	12	VPg	
+A0A0B4UEH9	virus	A0A0B4UEH9_pc7b0b7b261		A0A0B4UEH9	4	12	Protease 3C	
+A0A0B4UEH9	virus	A0A0B4UEH9_pd16aef3c3d		A0A0B4UEH9	4	12	Capsid protein VP1	
+A0A0B4UEH9	virus	A0A0B4UEH9_pe87958881e		A0A0B4UEH9	1	12	Protein 2B	
+A0A0B4UEH9_P2AE13644B2	virus	A0A0B4UEH9_p2ae13644b2		A0A0B4UEH9	0	12	Leader protein	
+A0A0B4UEH9_P3C23E3B1EF	virus	A0A0B4UEH9_p3c23e3b1ef		A0A0B4UEH9	3	12	Capsid protein VP3	
+A0A0B4UEH9_P58B83DC2DD	virus	A0A0B4UEH9_p58b83dc2dd		A0A0B4UEH9	1	12	RNA directed RNA polymerase	
+A0A0B4UEH9_P59574B304F	virus	A0A0B4UEH9_p59574b304f		A0A0B4UEH9	0	12	Protein 2A	
+A0A0B4UEH9_P6008225150	virus	A0A0B4UEH9_p6008225150		A0A0B4UEH9	0	12	Protein 2C	
+A0A0B4UEH9_P66EC7A6FB4	virus	A0A0B4UEH9_p66ec7a6fb4		A0A0B4UEH9	1	12	Capsid protein VP4	
+A0A0B4UEH9_P759529238B	virus	A0A0B4UEH9_p759529238b		A0A0B4UEH9	2	12	Capsid protein VP2	
+A0A0B4UEH9_PA7FB8F01D0	virus	A0A0B4UEH9_pa7fb8f01d0		A0A0B4UEH9	0	12	Protein 3A	
+A0A0B4UEH9_PBCF4489A60	virus	A0A0B4UEH9_pbcf4489a60		A0A0B4UEH9	1	12	VPg	
+A0A0B4UEH9_PC7B0B7B261	virus	A0A0B4UEH9_pc7b0b7b261		A0A0B4UEH9	4	12	Protease 3C	
+A0A0B4UEH9_PD16AEF3C3D	virus	A0A0B4UEH9_pd16aef3c3d		A0A0B4UEH9	4	12	Capsid protein VP1	
+A0A0B4UEH9_PE87958881E	virus	A0A0B4UEH9_pe87958881e		A0A0B4UEH9	1	12	Protein 2B	
+A0A0B4UGN8	virus	A0A0B4UGN8		A0A0B4UGN8	0	2	A0A0B4UGN8_9VIRU	
+A0A0B4UGZ9	virus	A0A0B4UGZ9		A0A0B4UGZ9	0	2	A0A0B4UGZ9_9VIRU	
+A0A0B4UH04	virus	A0A0B4UH04		A0A0B4UH04	1	2	Replication-associated protein	
+A0A0B4UHX2	virus	A0A0B4UHX2		A0A0B4UHX2	0	2	A0A0B4UHX2_9VIRU	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p0052d1d1d2		A0A0B4WUQ1	5	16	Capsid protein VP3	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p25dc1c6542		A0A0B4WUQ1	0	16	VPg	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p3bcbabc332		A0A0B4WUQ1	0	16	Capsid protein VP4	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p59e68b1970		A0A0B4WUQ1	0	16	Protein 2C	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p660dbe6d97		A0A0B4WUQ1	2	16	Protein 2B	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p6b0bb92d04		A0A0B4WUQ1	3	16	Protease 3C	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p6b478efdbd		A0A0B4WUQ1	1	16	Protein 3A	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p8f3442d1af		A0A0B4WUQ1	3	16	Capsid protein VP1	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p9ab08c072c		A0A0B4WUQ1	2	16	Protein 2B	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_p9fa83d3d94		A0A0B4WUQ1	4	16	Capsid protein VP2	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_pa70d80adc0		A0A0B4WUQ1	5	16	Capsid protein VP3	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_pa7c35a92fa		A0A0B4WUQ1	4	16	Capsid protein VP1	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_pb5d6aa5ce3		A0A0B4WUQ1	0	16	RNA directed RNA polymerase	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_pb766cd5d8c		A0A0B4WUQ1	1	16	Protein 3A	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_pc2358d4315		A0A0B4WUQ1	0	16	Protein 2C	
+A0A0B4WUQ1	virus	A0A0B4WUQ1_pcbe3b12e3f		A0A0B4WUQ1	0	16	Protein 2A	
+A0A0B4WUQ1_P0052D1D1D2	virus	A0A0B4WUQ1_p0052d1d1d2		A0A0B4WUQ1	5	16	Capsid protein VP3	
+A0A0B4WUQ1_P25DC1C6542	virus	A0A0B4WUQ1_p25dc1c6542		A0A0B4WUQ1	0	16	VPg	
+A0A0B4WUQ1_P3BCBABC332	virus	A0A0B4WUQ1_p3bcbabc332		A0A0B4WUQ1	0	16	Capsid protein VP4	
+A0A0B4WUQ1_P59E68B1970	virus	A0A0B4WUQ1_p59e68b1970		A0A0B4WUQ1	0	16	Protein 2C	
+A0A0B4WUQ1_P660DBE6D97	virus	A0A0B4WUQ1_p660dbe6d97		A0A0B4WUQ1	2	16	Protein 2B	
+A0A0B4WUQ1_P6B0BB92D04	virus	A0A0B4WUQ1_p6b0bb92d04		A0A0B4WUQ1	3	16	Protease 3C	
+A0A0B4WUQ1_P6B478EFDBD	virus	A0A0B4WUQ1_p6b478efdbd		A0A0B4WUQ1	1	16	Protein 3A	
+A0A0B4WUQ1_P8F3442D1AF	virus	A0A0B4WUQ1_p8f3442d1af		A0A0B4WUQ1	3	16	Capsid protein VP1	
+A0A0B4WUQ1_P9AB08C072C	virus	A0A0B4WUQ1_p9ab08c072c		A0A0B4WUQ1	2	16	Protein 2B	
+A0A0B4WUQ1_P9FA83D3D94	virus	A0A0B4WUQ1_p9fa83d3d94		A0A0B4WUQ1	4	16	Capsid protein VP2	
+A0A0B4WUQ1_PA70D80ADC0	virus	A0A0B4WUQ1_pa70d80adc0		A0A0B4WUQ1	5	16	Capsid protein VP3	
+A0A0B4WUQ1_PA7C35A92FA	virus	A0A0B4WUQ1_pa7c35a92fa		A0A0B4WUQ1	4	16	Capsid protein VP1	
+A0A0B4WUQ1_PB5D6AA5CE3	virus	A0A0B4WUQ1_pb5d6aa5ce3		A0A0B4WUQ1	0	16	RNA directed RNA polymerase	
+A0A0B4WUQ1_PB766CD5D8C	virus	A0A0B4WUQ1_pb766cd5d8c		A0A0B4WUQ1	1	16	Protein 3A	
+A0A0B4WUQ1_PC2358D4315	virus	A0A0B4WUQ1_pc2358d4315		A0A0B4WUQ1	0	16	Protein 2C	
+A0A0B4WUQ1_PCBE3B12E3F	virus	A0A0B4WUQ1_pcbe3b12e3f		A0A0B4WUQ1	0	16	Protein 2A	
+A0A0B5CMK1	virus	A0A0B5CMK1_p0ad42119dd		A0A0B5CMK1	3	12	Capsid protein VP3	
+A0A0B5CMK1	virus	A0A0B5CMK1_p30c474f4ed		A0A0B5CMK1	3	12	Capsid protein VP2	
+A0A0B5CMK1	virus	A0A0B5CMK1_p3cbc3788dc		A0A0B5CMK1	1	12	Protein 2A	
+A0A0B5CMK1	virus	A0A0B5CMK1_p43d4bbf2a4		A0A0B5CMK1	0	12	Protein 3B	
+A0A0B5CMK1	virus	A0A0B5CMK1_p5dc3581d26		A0A0B5CMK1	3	12	Protein 2B	
+A0A0B5CMK1	virus	A0A0B5CMK1_p90b4cdcdb8		A0A0B5CMK1	0	12	Capsid protein VP4	
+A0A0B5CMK1	virus	A0A0B5CMK1_pb5f0f442b4		A0A0B5CMK1	1	12	Protein 2C	
+A0A0B5CMK1	virus	A0A0B5CMK1_pbc5707ee99		A0A0B5CMK1	5	12	Protease 3C	
+A0A0B5CMK1	virus	A0A0B5CMK1_pbf2d7a8e1d		A0A0B5CMK1	0	12	Leader protease	
+A0A0B5CMK1	virus	A0A0B5CMK1_pc573e7d3e2		A0A0B5CMK1	3	12	Protein 3A	
+A0A0B5CMK1	virus	A0A0B5CMK1_pd27a88b6fe		A0A0B5CMK1	3	12	Capsid protein VP1	
+A0A0B5CMK1	virus	A0A0B5CMK1_pe40c635970		A0A0B5CMK1	0	12	RNA directed RNA polymerase	
+A0A0B5CMK1_P0AD42119DD	virus	A0A0B5CMK1_p0ad42119dd		A0A0B5CMK1	3	12	Capsid protein VP3	
+A0A0B5CMK1_P30C474F4ED	virus	A0A0B5CMK1_p30c474f4ed		A0A0B5CMK1	3	12	Capsid protein VP2	
+A0A0B5CMK1_P3CBC3788DC	virus	A0A0B5CMK1_p3cbc3788dc		A0A0B5CMK1	1	12	Protein 2A	
+A0A0B5CMK1_P43D4BBF2A4	virus	A0A0B5CMK1_p43d4bbf2a4		A0A0B5CMK1	0	12	Protein 3B	
+A0A0B5CMK1_P5DC3581D26	virus	A0A0B5CMK1_p5dc3581d26		A0A0B5CMK1	3	12	Protein 2B	
+A0A0B5CMK1_P90B4CDCDB8	virus	A0A0B5CMK1_p90b4cdcdb8		A0A0B5CMK1	0	12	Capsid protein VP4	
+A0A0B5CMK1_PB5F0F442B4	virus	A0A0B5CMK1_pb5f0f442b4		A0A0B5CMK1	1	12	Protein 2C	
+A0A0B5CMK1_PBC5707EE99	virus	A0A0B5CMK1_pbc5707ee99		A0A0B5CMK1	5	12	Protease 3C	
+A0A0B5CMK1_PBF2D7A8E1D	virus	A0A0B5CMK1_pbf2d7a8e1d		A0A0B5CMK1	0	12	Leader protease	
+A0A0B5CMK1_PC573E7D3E2	virus	A0A0B5CMK1_pc573e7d3e2		A0A0B5CMK1	3	12	Protein 3A	
+A0A0B5CMK1_PD27A88B6FE	virus	A0A0B5CMK1_pd27a88b6fe		A0A0B5CMK1	3	12	Capsid protein VP1	
+A0A0B5CMK1_PE40C635970	virus	A0A0B5CMK1_pe40c635970		A0A0B5CMK1	0	12	RNA directed RNA polymerase	
+A0A0B5CMS5	virus	A0A0B5CMS5	VP2	A0A0B5CMS5	0	4	A0A0B5CMS5_9POLY	
+A0A0B5CSL6	virus	A0A0B5CSL6	VP1	A0A0B5CSL6	0	4	A0A0B5CSL6_9POLY	
+A0A0B5CUK9	virus	A0A0B5CUK9		A0A0B5CUK9	0	4	A0A0B5CUK9_9POLY	
+A0A0B5CVG5	virus	A0A0B5CVG5		A0A0B5CVG5	0	4	DNA 3-5 helicase	
+A0A0B5CYC1	virus	A0A0B5CYC1	ORF6	A0A0B5CYC1	2	92	A0A0B5CYC1_9GAMA	
+A0A0B5CYC6	virus	A0A0B5CYC6	ORF10	A0A0B5CYC6	0	94	A0A0B5CYC6_9GAMA	
+A0A0B5CYD1	virus	A0A0B5CYD1	N7	A0A0B5CYD1	0	94	A0A0B5CYD1_9GAMA	
+A0A0B5CYD3	virus	A0A0B5CYD3	ORF18	A0A0B5CYD3	6	94	A0A0B5CYD3_9GAMA	
+A0A0B5CYD6	virus	A0A0B5CYD6	ORF23	A0A0B5CYD6	2	94	A0A0B5CYD6_9GAMA	
+A0A0B5CYD9	virus	A0A0B5CYD9	ORF28	A0A0B5CYD9	2	94	A0A0B5CYD9_9GAMA	
+A0A0B5CYE2	virus	A0A0B5CYE2	ORF32	A0A0B5CYE2	7	94	A0A0B5CYE2_9GAMA	
+A0A0B5CYE7	virus	A0A0B5CYE7	ORF36	A0A0B5CYE7	4	94	A0A0B5CYE7_9GAMA	
+A0A0B5CYF0	virus	A0A0B5CYF0	ORF40	A0A0B5CYF0	3	94	A0A0B5CYF0_9GAMA	
+A0A0B5CYF4	virus	A0A0B5CYF4	ORF45	A0A0B5CYF4	2	94	A0A0B5CYF4_9GAMA	
+A0A0B5CYF8	virus	A0A0B5CYF8	ORF49	A0A0B5CYF8	4	94	A0A0B5CYF8_9GAMA	
+A0A0B5CYG0	virus	A0A0B5CYG0	ORF52	A0A0B5CYG0	3	95	A0A0B5CYG0_9GAMA	
+A0A0B5CYG3	virus	A0A0B5CYG3	ORF57	A0A0B5CYG3	4	94	A0A0B5CYG3_9GAMA	
+A0A0B5CYG6	virus	A0A0B5CYG6	N9-4	A0A0B5CYG6	8	94	A0A0B5CYG6_9GAMA	
+A0A0B5CYH1	virus	A0A0B5CYH1	ORF58	A0A0B5CYH1	2	94	A0A0B5CYH1_9GAMA	
+A0A0B5CYH3	virus	A0A0B5CYH3	ORF63	A0A0B5CYH3	1	92	A0A0B5CYH3_9GAMA	
+A0A0B5CYH8	virus	A0A0B5CYH8	ORF67.5	A0A0B5CYH8	1	94	A0A0B5CYH8_9GAMA	
+A0A0B5CYI2	virus	A0A0B5CYI2	ORF72	A0A0B5CYI2	9	94	A0A0B5CYI2_9GAMA	
+A0A0B5CYI7	virus	A0A0B5CYI7	N15	A0A0B5CYI7	1	94	A0A0B5CYI7_9GAMA	
+A0A0B5CYQ2	virus	A0A0B5CYQ2	N1	A0A0B5CYQ2	4	94	A0A0B5CYQ2_9GAMA	
+A0A0B5CYQ5	virus	A0A0B5CYQ5	ORF6	A0A0B5CYQ5	1	91	A0A0B5CYQ5_9GAMA	
+A0A0B5CYR0	virus	A0A0B5CYR0	ORF11	A0A0B5CYR0	1	94	A0A0B5CYR0_9GAMA	
+A0A0B5CYR6	virus	A0A0B5CYR6	ORF16	A0A0B5CYR6	8	94	A0A0B5CYR6_9GAMA	
+A0A0B5CYS0	virus	A0A0B5CYS0	ORF19	A0A0B5CYS0	5	94	A0A0B5CYS0_9GAMA	
+A0A0B5CYS5	virus	A0A0B5CYS5	ORF24	A0A0B5CYS5	7	94	A0A0B5CYS5_9GAMA	
+A0A0B5CYT2	virus	A0A0B5CYT2	ORF29	A0A0B5CYT2	3	94	A0A0B5CYT2_9GAMA	
+A0A0B5CYT5	virus	A0A0B5CYT5	ORF33	A0A0B5CYT5	4	94	A0A0B5CYT5_9GAMA	
+A0A0B5CYU1	virus	A0A0B5CYU1	ORF37	A0A0B5CYU1	3	94	A0A0B5CYU1_9GAMA	
+A0A0B5CYU4	virus	A0A0B5CYU4	ORF40	A0A0B5CYU4	4	95	A0A0B5CYU4_9GAMA	
+A0A0B5CYU9	virus	A0A0B5CYU9	ORF46	A0A0B5CYU9	10	94	A0A0B5CYU9_9GAMA	
+A0A0B5CYV2	virus	A0A0B5CYV2	N8	A0A0B5CYV2	0	95	A0A0B5CYV2_9GAMA	
+A0A0B5CYV6	virus	A0A0B5CYV6	ORF53	A0A0B5CYV6	4	94	A0A0B5CYV6_9GAMA	
+A0A0B5CYW0	virus	A0A0B5CYW0	ORF57	A0A0B5CYW0	2	94	A0A0B5CYW0_9GAMA	
+A0A0B5CYW5	virus	A0A0B5CYW5	N9-5	A0A0B5CYW5	13	94	A0A0B5CYW5_9GAMA	
+A0A0B5CYW9	virus	A0A0B5CYW9	ORF59	A0A0B5CYW9	12	94	A0A0B5CYW9_9GAMA	
+A0A0B5CYX6	virus	A0A0B5CYX6	ORF64	A0A0B5CYX6	0	14	A0A0B5CYX6_9GAMA	
+A0A0B5CYY1	virus	A0A0B5CYY1	ORF68	A0A0B5CYY1	3	94	Packaging protein UL32	
+A0A0B5CYY5	virus	A0A0B5CYY5	ORF73	A0A0B5CYY5	4	94	A0A0B5CYY5_9GAMA	
+A0A0B5D3H5	virus	A0A0B5D3H5	ORF2	A0A0B5D3H5	2	94	Viral dihydrofolate reductase	
+A0A0B5D3H9	virus	A0A0B5D3H9	ORF7	A0A0B5D3H9	5	94	A0A0B5D3H9_9GAMA	
+A0A0B5D3I3	virus	A0A0B5D3I3	N2	A0A0B5D3I3	3	95	A0A0B5D3I3_9GAMA	
+A0A0B5D3I5	virus	A0A0B5D3I5	ORF17.5	A0A0B5D3I5	8	94	A0A0B5D3I5_9GAMA	
+A0A0B5D3J0	virus	A0A0B5D3J0	ORF20	A0A0B5D3J0	5	95	A0A0B5D3J0_9GAMA	
+A0A0B5D3J3	virus	A0A0B5D3J3	ORF25	A0A0B5D3J3	1	89	A0A0B5D3J3_9GAMA	
+A0A0B5D3J8	virus	A0A0B5D3J8	ORF29	A0A0B5D3J8	4	94	A0A0B5D3J8_9GAMA	
+A0A0B5D3K2	virus	A0A0B5D3K2	ORF29	A0A0B5D3K2	5	94	A0A0B5D3K2_9GAMA	
+A0A0B5D3K5	virus	A0A0B5D3K5	ORF38	A0A0B5D3K5	2	95	Cytoplasmic envelopment protein 3	
+A0A0B5D3L0	virus	A0A0B5D3L0	ORF42	A0A0B5D3L0	6	94	A0A0B5D3L0_9GAMA	
+A0A0B5D3L3	virus	A0A0B5D3L3	ORF47	A0A0B5D3L3	6	94	A0A0B5D3L3_9GAMA	
+A0A0B5D3L7	virus	A0A0B5D3L7	N8	A0A0B5D3L7	3	95	A0A0B5D3L7_9GAMA	
+A0A0B5D3M1	virus	A0A0B5D3M1	ORF54	A0A0B5D3M1	3	94	A0A0B5D3M1_9GAMA	
+A0A0B5D3M4	virus	A0A0B5D3M4	N9-1	A0A0B5D3M4	6	94	A0A0B5D3M4_9GAMA	
+A0A0B5D3M8	virus	A0A0B5D3M8	N9-6	A0A0B5D3M8	11	94	A0A0B5D3M8_9GAMA	
+A0A0B5D3N3	virus	A0A0B5D3N3	ORF60	A0A0B5D3N3	5	94	ribonucleoside-diphosphate reductase	
+A0A0B5D3N7	virus	A0A0B5D3N7	ORF65	A0A0B5D3N7	4	94	Small capsomere-interacting protein	
+A0A0B5D3P0	virus	A0A0B5D3P0	ORF69	A0A0B5D3P0	1	94	A0A0B5D3P0_9GAMA	
+A0A0B5D3P3	virus	A0A0B5D3P3	N14	A0A0B5D3P3	3	94	A0A0B5D3P3_9GAMA	
+A0A0B5D5D3	virus	A0A0B5D5D3	ORF4	A0A0B5D5D3	6	94	A0A0B5D5D3_9GAMA	
+A0A0B5D5D5	virus	A0A0B5D5D5	ORF8	A0A0B5D5D5	1	94	A0A0B5D5D5_9GAMA	
+A0A0B5D5D7	virus	A0A0B5D5D7	ORF70	A0A0B5D5D7	4	94	Thymidylate synthase	
+A0A0B5D5E0	virus	A0A0B5D5E0	ORF17	A0A0B5D5E0	10	94	Capsid scaffolding protein	
+A0A0B5D5E2	virus	A0A0B5D5E2	ORF21	A0A0B5D5E2	2	94	A0A0B5D5E2_9GAMA	
+A0A0B5D5E5	virus	A0A0B5D5E5	ORF26	A0A0B5D5E5	1	94	A0A0B5D5E5_9GAMA	
+A0A0B5D5E9	virus	A0A0B5D5E9	ORF30	A0A0B5D5E9	4	95	A0A0B5D5E9_9GAMA	
+A0A0B5D5F1	virus	A0A0B5D5F1	ORF34	A0A0B5D5F1	6	94	A0A0B5D5F1_9GAMA	
+A0A0B5D5F3	virus	A0A0B5D5F3	ORF39	A0A0B5D5F3	2	94	A0A0B5D5F3_9GAMA	
+A0A0B5D5F7	virus	A0A0B5D5F7	ORF43	A0A0B5D5F7	3	94	A0A0B5D5F7_9GAMA	
+A0A0B5D5G0	virus	A0A0B5D5G0	ORF48	A0A0B5D5G0	5	94	A0A0B5D5G0_9GAMA	
+A0A0B5D5G3	virus	A0A0B5D5G3	N8.1	A0A0B5D5G3	0	94	A0A0B5D5G3_9GAMA	
+A0A0B5D5G7	virus	A0A0B5D5G7	ORF55	A0A0B5D5G7	8	95	A0A0B5D5G7_9GAMA	
+A0A0B5D5H1	virus	A0A0B5D5H1	N9-2	A0A0B5D5H1	7	94	A0A0B5D5H1_9GAMA	
+A0A0B5D5H6	virus	A0A0B5D5H6	N9-7	A0A0B5D5H6	5	94	A0A0B5D5H6_9GAMA	
+A0A0B5D5H9	virus	A0A0B5D5H9	ORF61	A0A0B5D5H9	2	94	Ribonucleoside-diphosphate reductase large subunit	
+A0A0B5D5I3	virus	A0A0B5D5I3	ORF66	A0A0B5D5I3	6	94	A0A0B5D5I3_9GAMA	
+A0A0B5D5I7	virus	A0A0B5D5I7	N12	A0A0B5D5I7	1	94	A0A0B5D5I7_9GAMA	
+A0A0B5D5J0	virus	A0A0B5D5J0	ORF74	A0A0B5D5J0	9	94	A0A0B5D5J0_9GAMA	
+A0A0B5D6C4	virus	A0A0B5D6C4	ORF4	A0A0B5D6C4	5	94	A0A0B5D6C4_9GAMA	
+A0A0B5D6C9	virus	A0A0B5D6C9	ORF9	A0A0B5D6C9	4	92	DNA polymerase	
+A0A0B5D6D2	virus	A0A0B5D6D2	N4	A0A0B5D6D2	5	95	A0A0B5D6D2_9GAMA	
+A0A0B5D6D6	virus	A0A0B5D6D6	ORF18	A0A0B5D6D6	9	94	A0A0B5D6D6_9GAMA	
+A0A0B5D6E0	virus	A0A0B5D6E0	ORF22	A0A0B5D6E0	5	94	A0A0B5D6E0_9GAMA	
+A0A0B5D6E5	virus	A0A0B5D6E5	ORF27	A0A0B5D6E5	4	95	A0A0B5D6E5_9GAMA	
+A0A0B5D6F1	virus	A0A0B5D6F1	ORF31	A0A0B5D6F1	11	95	A0A0B5D6F1_9GAMA	
+A0A0B5D6F4	virus	A0A0B5D6F4	ORF35	A0A0B5D6F4	0	95	A0A0B5D6F4_9GAMA	
+A0A0B5D6F7	virus	A0A0B5D6F7	ORF40	A0A0B5D6F7	6	94	A0A0B5D6F7_9GAMA	
+A0A0B5D6G1	virus	A0A0B5D6G1	ORF44	A0A0B5D6G1	4	94	A0A0B5D6G1_9GAMA	
+A0A0B5D6G5	virus	A0A0B5D6G5	ORF50	A0A0B5D6G5	2	94	A0A0B5D6G5_9GAMA	
+A0A0B5D6H0	virus	A0A0B5D6H0	N8.1	A0A0B5D6H0	4	94	A0A0B5D6H0_9GAMA	
+A0A0B5D6H5	virus	A0A0B5D6H5	ORF56	A0A0B5D6H5	3	93	A0A0B5D6H5_9GAMA	
+A0A0B5D6H8	virus	A0A0B5D6H8	N9-3	A0A0B5D6H8	3	95	A0A0B5D6H8_9GAMA	
+A0A0B5D6I2	virus	A0A0B5D6I2	N9-8	A0A0B5D6I2	4	94	A0A0B5D6I2_9GAMA	
+A0A0B5D6I7	virus	A0A0B5D6I7	ORF62	A0A0B5D6I7	2	94	A0A0B5D6I7_9GAMA	
+A0A0B5D6J2	virus	A0A0B5D6J2	ORF67	A0A0B5D6J2	7	94	A0A0B5D6J2_9GAMA	
+A0A0B5D6J7	virus	A0A0B5D6J7	ORF71	A0A0B5D6J7	6	94	A0A0B5D6J7_9GAMA	
+A0A0B5D6K2	virus	A0A0B5D6K2	ORF75	A0A0B5D6K2	4	89	A0A0B5D6K2_9GAMA	
+A0A0B5E2H5	glycine-max	A0A0B5E2H5	DHAR2	A0A0B5E2H5	0	17	DHAR class glutathione S-transferase	
+A0A0B5E2M0	glycine-max	A0A0B5E2M0	GSTU49	A0A0B5E2M0	0	39	glutathione transferase	
+A0A0B5E8V1	glycine-max	A0A0B5E8V1	GSTU18	A0A0B5E8V1	2	39	glutathione transferase	
+A0A0B5EA67	glycine-max	A0A0B5EA67	GSTU34	A0A0B5EA67	0	39	Glutathione S-transferase	
+A0A0B5EC24	glycine-max	A0A0B5EC24	GSTU15	A0A0B5EC24	5	39	glutathione transferase	
+A0A0B5EC52	glycine-max	A0A0B5EC52	GSTZ1	A0A0B5EC52	2	25	Glutathione S-transferase zeta class	
+A0A0B5GG60	virus	A0A0B5GG60_p3b9023ff8b		A0A0B5GG60	0	12	Capsid protein VP4	
+A0A0B5GG60	virus	A0A0B5GG60_p5a447c1995		A0A0B5GG60	2	12	Capsid protein VP3	
+A0A0B5GG60	virus	A0A0B5GG60_p6dcc919db8		A0A0B5GG60	2	12	Viral protein genome linked	
+A0A0B5GG60	virus	A0A0B5GG60_p77dc652563		A0A0B5GG60	3	12	Capsid protein VP1	
+A0A0B5GG60	virus	A0A0B5GG60_p8126a25f87		A0A0B5GG60	2	12	Protease 2A	
+A0A0B5GG60	virus	A0A0B5GG60_pad88238c01		A0A0B5GG60	1	12	Protein 3A	
+A0A0B5GG60	virus	A0A0B5GG60_pb0c7f01561		A0A0B5GG60	1	12	RNA directed RNA polymerase	
+A0A0B5GG60	virus	A0A0B5GG60_pb85e46277c		A0A0B5GG60	3	12	Capsid protein VP2	
+A0A0B5GG60	virus	A0A0B5GG60_pbca0d8aabb		A0A0B5GG60	1	12	Protein 2B	
+A0A0B5GG60	virus	A0A0B5GG60_pc97fe73810		A0A0B5GG60	0	12	Leader protein	
+A0A0B5GG60	virus	A0A0B5GG60_pdb6a654cfd		A0A0B5GG60	4	12	Protease 3C	
+A0A0B5GG60	virus	A0A0B5GG60_pfbdfc1fcd7		A0A0B5GG60	0	12	Protein 2C	
+A0A0B5GG60_P3B9023FF8B	virus	A0A0B5GG60_p3b9023ff8b		A0A0B5GG60	0	12	Capsid protein VP4	
+A0A0B5GG60_P5A447C1995	virus	A0A0B5GG60_p5a447c1995		A0A0B5GG60	2	12	Capsid protein VP3	
+A0A0B5GG60_P6DCC919DB8	virus	A0A0B5GG60_p6dcc919db8		A0A0B5GG60	2	12	Viral protein genome linked	
+A0A0B5GG60_P77DC652563	virus	A0A0B5GG60_p77dc652563		A0A0B5GG60	3	12	Capsid protein VP1	
+A0A0B5GG60_P8126A25F87	virus	A0A0B5GG60_p8126a25f87		A0A0B5GG60	2	12	Protease 2A	
+A0A0B5GG60_PAD88238C01	virus	A0A0B5GG60_pad88238c01		A0A0B5GG60	1	12	Protein 3A	
+A0A0B5GG60_PB0C7F01561	virus	A0A0B5GG60_pb0c7f01561		A0A0B5GG60	1	12	RNA directed RNA polymerase	
+A0A0B5GG60_PB85E46277C	virus	A0A0B5GG60_pb85e46277c		A0A0B5GG60	3	12	Capsid protein VP2	
+A0A0B5GG60_PBCA0D8AABB	virus	A0A0B5GG60_pbca0d8aabb		A0A0B5GG60	1	12	Protein 2B	
+A0A0B5GG60_PC97FE73810	virus	A0A0B5GG60_pc97fe73810		A0A0B5GG60	0	12	Leader protein	
+A0A0B5GG60_PDB6A654CFD	virus	A0A0B5GG60_pdb6a654cfd		A0A0B5GG60	4	12	Protease 3C	
+A0A0B5GG60_PFBDFC1FCD7	virus	A0A0B5GG60_pfbdfc1fcd7		A0A0B5GG60	0	12	Protein 2C	
+A0A0B5GGD3	virus	A0A0B5GGD3_p005bfc06ff		A0A0B5GGD3	3	12	Protease 3C	
+A0A0B5GGD3	virus	A0A0B5GGD3_p135c39d7f9		A0A0B5GGD3	2	12	Capsid protein VP1	
+A0A0B5GGD3	virus	A0A0B5GGD3_p2b7bebafc9		A0A0B5GGD3	1	12	Protein 3A	
+A0A0B5GGD3	virus	A0A0B5GGD3_p2eece1069e		A0A0B5GGD3	1	12	Protein 2B	
+A0A0B5GGD3	virus	A0A0B5GGD3_p74bc5a2385		A0A0B5GGD3	3	12	Capsid protein VP3	
+A0A0B5GGD3	virus	A0A0B5GGD3_p7ca3cf7d20		A0A0B5GGD3	2	12	VPg	
+A0A0B5GGD3	virus	A0A0B5GGD3_paeee1e2172		A0A0B5GGD3	0	12	Leader protein	
+A0A0B5GGD3	virus	A0A0B5GGD3_pd25c600f34		A0A0B5GGD3	2	12	Protein 2C	
+A0A0B5GGD3	virus	A0A0B5GGD3_pd61108cb7d		A0A0B5GGD3	0	12	Protein 2A	
+A0A0B5GGD3	virus	A0A0B5GGD3_pd8d535596b		A0A0B5GGD3	2	12	Capsid protein VP2	
+A0A0B5GGD3	virus	A0A0B5GGD3_pd948b88e0d		A0A0B5GGD3	0	12	RNA directed RNA polymerase	
+A0A0B5GGD3	virus	A0A0B5GGD3_pe9e925fc10		A0A0B5GGD3	1	12	Capsid protein VP4	
+A0A0B5GGD3_P005BFC06FF	virus	A0A0B5GGD3_p005bfc06ff		A0A0B5GGD3	3	12	Protease 3C	
+A0A0B5GGD3_P135C39D7F9	virus	A0A0B5GGD3_p135c39d7f9		A0A0B5GGD3	2	12	Capsid protein VP1	
+A0A0B5GGD3_P2B7BEBAFC9	virus	A0A0B5GGD3_p2b7bebafc9		A0A0B5GGD3	1	12	Protein 3A	
+A0A0B5GGD3_P2EECE1069E	virus	A0A0B5GGD3_p2eece1069e		A0A0B5GGD3	1	12	Protein 2B	
+A0A0B5GGD3_P74BC5A2385	virus	A0A0B5GGD3_p74bc5a2385		A0A0B5GGD3	3	12	Capsid protein VP3	
+A0A0B5GGD3_P7CA3CF7D20	virus	A0A0B5GGD3_p7ca3cf7d20		A0A0B5GGD3	2	12	VPg	
+A0A0B5GGD3_PAEEE1E2172	virus	A0A0B5GGD3_paeee1e2172		A0A0B5GGD3	0	12	Leader protein	
+A0A0B5GGD3_PD25C600F34	virus	A0A0B5GGD3_pd25c600f34		A0A0B5GGD3	2	12	Protein 2C	
+A0A0B5GGD3_PD61108CB7D	virus	A0A0B5GGD3_pd61108cb7d		A0A0B5GGD3	0	12	Protein 2A	
+A0A0B5GGD3_PD8D535596B	virus	A0A0B5GGD3_pd8d535596b		A0A0B5GGD3	2	12	Capsid protein VP2	
+A0A0B5GGD3_PD948B88E0D	virus	A0A0B5GGD3_pd948b88e0d		A0A0B5GGD3	0	12	RNA directed RNA polymerase	
+A0A0B5GGD3_PE9E925FC10	virus	A0A0B5GGD3_pe9e925fc10		A0A0B5GGD3	1	12	Capsid protein VP4	
+A0A0B5GND3	virus	A0A0B5GND3_p52abaa230e		A0A0B5GND3	2	12	Protein 2B	
+A0A0B5GND3	virus	A0A0B5GND3_p568f6dca05		A0A0B5GND3	2	12	Capsid protein VP2	
+A0A0B5GND3	virus	A0A0B5GND3_p5d168120bc		A0A0B5GND3	4	12	Protease 3C	
+A0A0B5GND3	virus	A0A0B5GND3_p5fc28c4487		A0A0B5GND3	1	12	Leader protein	
+A0A0B5GND3	virus	A0A0B5GND3_p668ddea3dd		A0A0B5GND3	4	12	Capsid protein VP3	
+A0A0B5GND3	virus	A0A0B5GND3_p8345cd6958		A0A0B5GND3	1	12	Protein 2C	
+A0A0B5GND3	virus	A0A0B5GND3_p9586ccb62a		A0A0B5GND3	1	12	VPg	
+A0A0B5GND3	virus	A0A0B5GND3_pa0e5021dd2		A0A0B5GND3	2	12	Capsid protein VP1	
+A0A0B5GND3	virus	A0A0B5GND3_pb4873e9548		A0A0B5GND3	0	12	Protein 2A	
+A0A0B5GND3	virus	A0A0B5GND3_pd82b7d5505		A0A0B5GND3	0	12	RNA directed RNA polymerase	
+A0A0B5GND3	virus	A0A0B5GND3_pec5f680eb6		A0A0B5GND3	0	12	Protein 3A	
+A0A0B5GND3	virus	A0A0B5GND3_pf706351d7d		A0A0B5GND3	1	12	Capsid protein VP4	
+A0A0B5GND3_P52ABAA230E	virus	A0A0B5GND3_p52abaa230e		A0A0B5GND3	2	12	Protein 2B	
+A0A0B5GND3_P568F6DCA05	virus	A0A0B5GND3_p568f6dca05		A0A0B5GND3	2	12	Capsid protein VP2	
+A0A0B5GND3_P5D168120BC	virus	A0A0B5GND3_p5d168120bc		A0A0B5GND3	4	12	Protease 3C	
+A0A0B5GND3_P5FC28C4487	virus	A0A0B5GND3_p5fc28c4487		A0A0B5GND3	1	12	Leader protein	
+A0A0B5GND3_P668DDEA3DD	virus	A0A0B5GND3_p668ddea3dd		A0A0B5GND3	4	12	Capsid protein VP3	
+A0A0B5GND3_P8345CD6958	virus	A0A0B5GND3_p8345cd6958		A0A0B5GND3	1	12	Protein 2C	
+A0A0B5GND3_P9586CCB62A	virus	A0A0B5GND3_p9586ccb62a		A0A0B5GND3	1	12	VPg	
+A0A0B5GND3_PA0E5021DD2	virus	A0A0B5GND3_pa0e5021dd2		A0A0B5GND3	2	12	Capsid protein VP1	
+A0A0B5GND3_PB4873E9548	virus	A0A0B5GND3_pb4873e9548		A0A0B5GND3	0	12	Protein 2A	
+A0A0B5GND3_PD82B7D5505	virus	A0A0B5GND3_pd82b7d5505		A0A0B5GND3	0	12	RNA directed RNA polymerase	
+A0A0B5GND3_PEC5F680EB6	virus	A0A0B5GND3_pec5f680eb6		A0A0B5GND3	0	12	Protein 3A	
+A0A0B5GND3_PF706351D7D	virus	A0A0B5GND3_pf706351d7d		A0A0B5GND3	1	12	Capsid protein VP4	
+A0A0B5GR27	virus	A0A0B5GR27	ORF73	A0A0B5GR27	3	73	A0A0B5GR27_EHV2	
+A0A0B5GUZ1	virus	A0A0B5GUZ1	E5A	A0A0B5GUZ1	0	76	A0A0B5GUZ1_EHV2	
+A0A0B5HK21	virus	A0A0B5HK21_p1dd971c366		A0A0B5HK21	1	10	Envelope glycoprotein E1	
+A0A0B5HK21	virus	A0A0B5HK21_p3a0f31ffe4		A0A0B5HK21	1	10	Envelope glycoprotein E2	
+A0A0B5HK21	virus	A0A0B5HK21_p5877609b27		A0A0B5HK21	0	10	Protease NS2	
+A0A0B5HK21	virus	A0A0B5HK21_p5b329007a2		A0A0B5HK21	1	10	Non structural protein 4B	
+A0A0B5HK21	virus	A0A0B5HK21_p8cb3a68335		A0A0B5HK21	0	10	Mature core protein	
+A0A0B5HK21	virus	A0A0B5HK21_p9420973906		A0A0B5HK21	1	10	Serine protease helicase NS3	
+A0A0B5HK21	virus	A0A0B5HK21_pbc8f817122		A0A0B5HK21	0	10	Viroporin p7	
+A0A0B5HK21	virus	A0A0B5HK21_pd446372db9		A0A0B5HK21	0	10	RNA directed RNA polymerase	
+A0A0B5HK21	virus	A0A0B5HK21_pd7c1627a00		A0A0B5HK21	0	10	Non structural protein 4A	
+A0A0B5HK21	virus	A0A0B5HK21_pf883e63069		A0A0B5HK21	0	10	Non structural protein 5A	
+A0A0B5HK21_P1DD971C366	virus	A0A0B5HK21_p1dd971c366		A0A0B5HK21	1	10	Envelope glycoprotein E1	
+A0A0B5HK21_P3A0F31FFE4	virus	A0A0B5HK21_p3a0f31ffe4		A0A0B5HK21	1	10	Envelope glycoprotein E2	
+A0A0B5HK21_P5877609B27	virus	A0A0B5HK21_p5877609b27		A0A0B5HK21	0	10	Protease NS2	
+A0A0B5HK21_P5B329007A2	virus	A0A0B5HK21_p5b329007a2		A0A0B5HK21	1	10	Non structural protein 4B	
+A0A0B5HK21_P8CB3A68335	virus	A0A0B5HK21_p8cb3a68335		A0A0B5HK21	0	10	Mature core protein	
+A0A0B5HK21_P9420973906	virus	A0A0B5HK21_p9420973906		A0A0B5HK21	1	10	Serine protease helicase NS3	
+A0A0B5HK21_PBC8F817122	virus	A0A0B5HK21_pbc8f817122		A0A0B5HK21	0	10	Viroporin p7	
+A0A0B5HK21_PD446372DB9	virus	A0A0B5HK21_pd446372db9		A0A0B5HK21	0	10	RNA directed RNA polymerase	
+A0A0B5HK21_PD7C1627A00	virus	A0A0B5HK21_pd7c1627a00		A0A0B5HK21	0	10	Non structural protein 4A	
+A0A0B5HK21_PF883E63069	virus	A0A0B5HK21_pf883e63069		A0A0B5HK21	0	10	Non structural protein 5A	
+A0A0B5HPB2	virus	A0A0B5HPB2_p08e2c86a4a		A0A0B5HPB2	1	11	Protease 2A	
+A0A0B5HPB2	virus	A0A0B5HPB2_p0985552d54		A0A0B5HPB2	1	11	Protease 3C	
+A0A0B5HPB2	virus	A0A0B5HPB2_p1ab9850100		A0A0B5HPB2	0	11	Capsid protein VP4	
+A0A0B5HPB2	virus	A0A0B5HPB2_p2ff5491f5b		A0A0B5HPB2	1	11	RNA directed RNA polymerase	
+A0A0B5HPB2	virus	A0A0B5HPB2_p32b8c862d8		A0A0B5HPB2	1	11	Protein 2C	
+A0A0B5HPB2	virus	A0A0B5HPB2_p40364443a3		A0A0B5HPB2	2	11	Capsid protein VP3	
+A0A0B5HPB2	virus	A0A0B5HPB2_p4615c281e8		A0A0B5HPB2	1	11	Protein 3A	
+A0A0B5HPB2	virus	A0A0B5HPB2_paee2c7a6d1		A0A0B5HPB2	3	11	Protein 2B	
+A0A0B5HPB2	virus	A0A0B5HPB2_pccca62f552		A0A0B5HPB2	1	11	Viral protein genome linked	
+A0A0B5HPB2	virus	A0A0B5HPB2_pd67fe8f7e1		A0A0B5HPB2	2	11	Capsid protein VP1	
+A0A0B5HPB2	virus	A0A0B5HPB2_pf0fe2a36ca		A0A0B5HPB2	2	11	Capsid protein VP2	
+A0A0B5HPB2_P08E2C86A4A	virus	A0A0B5HPB2_p08e2c86a4a		A0A0B5HPB2	1	11	Protease 2A	
+A0A0B5HPB2_P0985552D54	virus	A0A0B5HPB2_p0985552d54		A0A0B5HPB2	1	11	Protease 3C	
+A0A0B5HPB2_P1AB9850100	virus	A0A0B5HPB2_p1ab9850100		A0A0B5HPB2	0	11	Capsid protein VP4	
+A0A0B5HPB2_P2FF5491F5B	virus	A0A0B5HPB2_p2ff5491f5b		A0A0B5HPB2	1	11	RNA directed RNA polymerase	
+A0A0B5HPB2_P32B8C862D8	virus	A0A0B5HPB2_p32b8c862d8		A0A0B5HPB2	1	11	Protein 2C	
+A0A0B5HPB2_P40364443A3	virus	A0A0B5HPB2_p40364443a3		A0A0B5HPB2	2	11	Capsid protein VP3	
+A0A0B5HPB2_P4615C281E8	virus	A0A0B5HPB2_p4615c281e8		A0A0B5HPB2	1	11	Protein 3A	
+A0A0B5HPB2_PAEE2C7A6D1	virus	A0A0B5HPB2_paee2c7a6d1		A0A0B5HPB2	3	11	Protein 2B	
+A0A0B5HPB2_PCCCA62F552	virus	A0A0B5HPB2_pccca62f552		A0A0B5HPB2	1	11	Viral protein genome linked	
+A0A0B5HPB2_PD67FE8F7E1	virus	A0A0B5HPB2_pd67fe8f7e1		A0A0B5HPB2	2	11	Capsid protein VP1	
+A0A0B5HPB2_PF0FE2A36CA	virus	A0A0B5HPB2_pf0fe2a36ca		A0A0B5HPB2	2	11	Capsid protein VP2	
+A0A0B5JEY7	virus	A0A0B5JEY7	N	A0A0B5JEY7	0	9	Nucleoprotein	
+A0A0B5JEZ8	virus	A0A0B5JEZ8	G	A0A0B5JEZ8	0	9	A0A0B5JEZ8_9RHAB	
+A0A0B5JF71	virus	A0A0B5JF71	E7	A0A0B5JF71	1	6	Protein E7	
+A0A0B5JF74	virus	A0A0B5JF74	E5	A0A0B5JF74	0	6	A0A0B5JF74_9PAPI	
+A0A0B5JJQ2	virus	A0A0B5JJQ2	P	A0A0B5JJQ2	0	8	A0A0B5JJQ2_9RHAB	
+A0A0B5JJR1	virus	A0A0B5JJR1	G	A0A0B5JJR1	0	9	A0A0B5JJR1_9RHAB	
+A0A0B5JJX7	virus	A0A0B5JJX7	E1	A0A0B5JJX7	1	6	Replication protein E1	
+A0A0B5JPR2	virus	A0A0B5JPR2	M	A0A0B5JPR2	0	8	Matrix protein	
+A0A0B5JPS0	virus	A0A0B5JPS0	U3	A0A0B5JPS0	0	9	A0A0B5JPS0_9RHAB	
+A0A0B5JPY4	virus	A0A0B5JPY4	E2	A0A0B5JPY4	2	6	Regulatory protein E2	
+A0A0B5JRS2	virus	A0A0B5JRS2	U1	A0A0B5JRS2	0	8	A0A0B5JRS2_9RHAB	
+A0A0B5JRT3	virus	A0A0B5JRT3	L	A0A0B5JRT3	0	5	Replicase	
+A0A0B5JS20	virus	A0A0B5JS20	L2	A0A0B5JS20	0	6	Minor capsid protein L2	
+A0A0B5JVS2	virus	A0A0B5JVS2	U2	A0A0B5JVS2	1	9	U2 protein	
+A0A0B5JW17	virus	A0A0B5JW17	L1	A0A0B5JW17	0	6	Major capsid protein L1	
+A0A0B5KET3	virus	A0A0B5KET3	ORF2	A0A0B5KET3	0	4	A0A0B5KET3_9RHAB	
+A0A0B5KET9	virus	A0A0B5KET9	ORF2	A0A0B5KET9	1	3	A0A0B5KET9_9RHAB	
+A0A0B5KEV8	virus	A0A0B5KEV8	M	A0A0B5KEV8	1	6	Matrix protein	
+A0A0B5KEW3	virus	A0A0B5KEW3	ORF3	A0A0B5KEW3	1	4	A0A0B5KEW3_9RHAB	
+A0A0B5KEY0	virus	A0A0B5KEY0	ORF2	A0A0B5KEY0	0	5	A0A0B5KEY0_9RHAB	
+A0A0B5KEY6	virus	A0A0B5KEY6	N	A0A0B5KEY6	1	2	Nucleoprotein	
+A0A0B5KEZ9	virus	A0A0B5KEZ9	M	A0A0B5KEZ9	1	5	Matrix protein	
+A0A0B5KF04	virus	A0A0B5KF04	ORF2	A0A0B5KF04	0	5	A0A0B5KF04_9RHAB	
+A0A0B5KF10	virus	A0A0B5KF10	ORF1	A0A0B5KF10	1	4	Nucleoprotein	
+A0A0B5KF14	virus	A0A0B5KF14	N	A0A0B5KF14	1	6	Nucleoprotein	
+A0A0B5KF21	virus	A0A0B5KF21	L	A0A0B5KF21	0	3	Replicase	
+A0A0B5KF26	virus	A0A0B5KF26	G	A0A0B5KF26	1	5	A0A0B5KF26_9RHAB	
+A0A0B5KF30	virus	A0A0B5KF30	M	A0A0B5KF30	1	6	A0A0B5KF30_9RHAB	
+A0A0B5KF43	virus	A0A0B5KF43	M	A0A0B5KF43	0	5	Matrix protein	
+A0A0B5KF48	virus	A0A0B5KF48	ORF2	A0A0B5KF48	0	4	A0A0B5KF48_9RHAB	
+A0A0B5KF51	virus	A0A0B5KF51	ORF2	A0A0B5KF51	0	5	A0A0B5KF51_9RHAB	
+A0A0B5KF64	virus	A0A0B5KF64	ORF2	A0A0B5KF64	2	4	A0A0B5KF64_9RHAB	
+A0A0B5KK08	virus	A0A0B5KK08	M	A0A0B5KK08	0	5	Matrix protein	
+A0A0B5KK40	virus	A0A0B5KK40	G	A0A0B5KK40	0	5	A0A0B5KK40_9RHAB	
+A0A0B5KK44	virus	A0A0B5KK44	G	A0A0B5KK44	1	4	A0A0B5KK44_9RHAB	
+A0A0B5KK58	virus	A0A0B5KK58	ORF3	A0A0B5KK58	0	5	A0A0B5KK58_9RHAB	
+A0A0B5KK62	virus	A0A0B5KK62	ORF2	A0A0B5KK62	1	3	A0A0B5KK62_9RHAB	
+A0A0B5KK73	virus	A0A0B5KK73	G	A0A0B5KK73	0	6	A0A0B5KK73_9RHAB	
+A0A0B5KK77	virus	A0A0B5KK77	ORF3	A0A0B5KK77	1	5	A0A0B5KK77_9RHAB	
+A0A0B5KK83	virus	A0A0B5KK83	ORF2	A0A0B5KK83	4	5	A0A0B5KK83_9RHAB	
+A0A0B5KK90	virus	A0A0B5KK90	P	A0A0B5KK90	2	5	A0A0B5KK90_9RHAB	
+A0A0B5KK93	virus	A0A0B5KK93	N	A0A0B5KK93	1	5	Nucleoprotein	
+A0A0B5KK98	virus	A0A0B5KK98	L	A0A0B5KK98	0	1	Replicase	
+A0A0B5KKA3	virus	A0A0B5KKA3	G	A0A0B5KKA3	1	5	A0A0B5KKA3_9RHAB	
+A0A0B5KKB0	virus	A0A0B5KKB0	G	A0A0B5KKB0	0	5	A0A0B5KKB0_9RHAB	
+A0A0B5KKB5	virus	A0A0B5KKB5	M	A0A0B5KKB5	0	4	Matrix protein	
+A0A0B5KKC0	virus	A0A0B5KKC0	M	A0A0B5KKC0	1	4	Matrix protein	
+A0A0B5KKC9	virus	A0A0B5KKC9	N	A0A0B5KKC9	0	3	Nucleoprotein	
+A0A0B5KKD9	virus	A0A0B5KKD9	M	A0A0B5KKD9	1	4	Matrix protein	
+A0A0B5KRE4	virus	A0A0B5KRE4	G	A0A0B5KRE4	0	4	A0A0B5KRE4_9RHAB	
+A0A0B5KRE8	virus	A0A0B5KRE8	G	A0A0B5KRE8	0	3	A0A0B5KRE8_9RHAB	
+A0A0B5KRG5	virus	A0A0B5KRG5	N	A0A0B5KRG5	1	6	Nucleoprotein	
+A0A0B5KRH1	virus	A0A0B5KRH1	L	A0A0B5KRH1	0	2	Replicase	
+A0A0B5KRI0	virus	A0A0B5KRI0	L	A0A0B5KRI0	0	1	Replicase	
+A0A0B5KRJ9	virus	A0A0B5KRJ9	ORF4	A0A0B5KRJ9	0	5	RNA-directed RNA polymerase L	
+A0A0B5KRK6	virus	A0A0B5KRK6	L	A0A0B5KRK6	0	1	Replicase	
+A0A0B5KRL2	virus	A0A0B5KRL2	N	A0A0B5KRL2	1	5	Nucleoprotein	
+A0A0B5KRL8	virus	A0A0B5KRL8	L	A0A0B5KRL8	0	1	Replicase	
+A0A0B5KRM5	virus	A0A0B5KRM5	M	A0A0B5KRM5	1	5	Matrix protein	
+A0A0B5KRN2	virus	A0A0B5KRN2	ORF3	A0A0B5KRN2	1	5	A0A0B5KRN2_9RHAB	
+A0A0B5KRN7	virus	A0A0B5KRN7	4b	A0A0B5KRN7	1	5	A0A0B5KRN7_9RHAB	
+A0A0B5KRP4	virus	A0A0B5KRP4	P	A0A0B5KRP4	2	5	A0A0B5KRP4_9RHAB	
+A0A0B5KRQ0	virus	A0A0B5KRQ0	N	A0A0B5KRQ0	1	5	Nucleoprotein	
+A0A0B5KRQ6	virus	A0A0B5KRQ6	L	A0A0B5KRQ6	1	2	Replicase	
+A0A0B5KRS0	virus	A0A0B5KRS0	L	A0A0B5KRS0	0	3	RNA-directed RNA polymerase L	
+A0A0B5KRS6	virus	A0A0B5KRS6	G	A0A0B5KRS6	0	4	A0A0B5KRS6_9RHAB	
+A0A0B5KRT4	virus	A0A0B5KRT4	G	A0A0B5KRT4	1	5	A0A0B5KRT4_9RHAB	
+A0A0B5KRU7	virus	A0A0B5KRU7	ORF2	A0A0B5KRU7	0	3	A0A0B5KRU7_9RHAB	
+A0A0B5KRV5	virus	A0A0B5KRV5	G	A0A0B5KRV5	1	4	A0A0B5KRV5_9RHAB	
+A0A0B5KTD4	virus	A0A0B5KTD4	L	A0A0B5KTD4	0	1	Replicase	
+A0A0B5KTF6	virus	A0A0B5KTF6	ORF2	A0A0B5KTF6	0	5	A0A0B5KTF6_9RHAB	
+A0A0B5KTF9	virus	A0A0B5KTF9	ORF1	A0A0B5KTF9	2	4	Nucleoprotein	
+A0A0B5KTH9	virus	A0A0B5KTH9	G	A0A0B5KTH9	1	5	A0A0B5KTH9_9RHAB	
+A0A0B5KTJ1	virus	A0A0B5KTJ1	ORF2	A0A0B5KTJ1	0	5	A0A0B5KTJ1_9RHAB	
+A0A0B5KTK4	virus	A0A0B5KTK4	G	A0A0B5KTK4	1	5	A0A0B5KTK4_9RHAB	
+A0A0B5KTL0	virus	A0A0B5KTL0	G	A0A0B5KTL0	1	5	A0A0B5KTL0_9RHAB	
+A0A0B5KTL5	virus	A0A0B5KTL5	ORF4	A0A0B5KTL5	0	6	A0A0B5KTL5_9RHAB	
+A0A0B5KTM4	virus	A0A0B5KTM4	4b	A0A0B5KTM4	0	5	A0A0B5KTM4_9RHAB	
+A0A0B5KTM8	virus	A0A0B5KTM8	P	A0A0B5KTM8	3	6	A0A0B5KTM8_9RHAB	
+A0A0B5KTP0	virus	A0A0B5KTP0	N	A0A0B5KTP0	1	4	Nucleoprotein	
+A0A0B5KTQ6	virus	A0A0B5KTQ6	L	A0A0B5KTQ6	0	2	Replicase	
+A0A0B5KTS0	virus	A0A0B5KTS0	ORF3	A0A0B5KTS0	0	3	A0A0B5KTS0_9RHAB	
+A0A0B5KU24	virus	A0A0B5KU24		A0A0B5KU24	1	5	Minor capsid protein	
+A0A0B5KXC1	virus	A0A0B5KXC1	N	A0A0B5KXC1	0	4	Nucleoprotein	
+A0A0B5KXC5	virus	A0A0B5KXC5	N	A0A0B5KXC5	1	3	Nucleoprotein	
+A0A0B5KXE6	virus	A0A0B5KXE6	X	A0A0B5KXE6	0	5	A0A0B5KXE6_9RHAB	
+A0A0B5KXF0	virus	A0A0B5KXF0	ORF2	A0A0B5KXF0	2	5	A0A0B5KXF0_9RHAB	
+A0A0B5KXG4	virus	A0A0B5KXG4	ORF1	A0A0B5KXG4	0	5	Nucleoprotein	
+A0A0B5KXI3	virus	A0A0B5KXI3	X	A0A0B5KXI3	1	5	A0A0B5KXI3_9RHAB	
+A0A0B5KXJ0	virus	A0A0B5KXJ0	N	A0A0B5KXJ0	0	6	Nucleoprotein	
+A0A0B5KXL1	virus	A0A0B5KXL1	L	A0A0B5KXL1	0	1	Replicase	
+A0A0B5KXM0	virus	A0A0B5KXM0	L	A0A0B5KXM0	1	3	Replicase	
+A0A0B5KXM6	virus	A0A0B5KXM6	G	A0A0B5KXM6	0	6	A0A0B5KXM6_9RHAB	
+A0A0B5KXN2	virus	A0A0B5KXN2	M	A0A0B5KXN2	0	6	A0A0B5KXN2_9RHAB	
+A0A0B5KXN7	virus	A0A0B5KXN7	4b	A0A0B5KXN7	1	5	A0A0B5KXN7_9RHAB	
+A0A0B5KXQ1	virus	A0A0B5KXQ1	P	A0A0B5KXQ1	2	5	A0A0B5KXQ1_9RHAB	
+A0A0B5KXQ9	virus	A0A0B5KXQ9	N	A0A0B5KXQ9	0	4	Nucleoprotein	
+A0A0B5KXR7	virus	A0A0B5KXR7	N	A0A0B5KXR7	0	4	Nucleoprotein	
+A0A0B5KXT6	virus	A0A0B5KXT6	N	A0A0B5KXT6	1	4	Nucleoprotein	
+A0A0B5KYT6	virus	A0A0B5KYT6		A0A0B5KYT6	0	5	Minor capsid protein	
+A0A0B5L589	virus	A0A0B5L589		A0A0B5L589	1	5	Major capsid protein VP1	
+A0A0B5L789	virus	A0A0B5L789		A0A0B5L789	0	5	Small t antigen	
+A0A0B5LB58	virus	A0A0B5LB58		A0A0B5LB58	0	5	Large T antigen	
+A0A0B5LBJ9	virus	A0A0B5LBJ9	US8	A0A0B5LBJ9	4	71	Envelope glycoprotein E	
+A0A0B6CCI0	virus	A0A0B6CCI0_p32270dfcd6		A0A0B6CCI0	1	12	Capsid protein VP4	
+A0A0B6CCI0	virus	A0A0B6CCI0_p435e334b2a		A0A0B6CCI0	1	12	Protein 2C	
+A0A0B6CCI0	virus	A0A0B6CCI0_p4c15b16a9e		A0A0B6CCI0	0	12	RNA directed RNA polymerase	
+A0A0B6CCI0	virus	A0A0B6CCI0_p56992e7259		A0A0B6CCI0	1	12	Protein 2B	
+A0A0B6CCI0	virus	A0A0B6CCI0_p7732fb4b90		A0A0B6CCI0	0	12	Protein 2A	
+A0A0B6CCI0	virus	A0A0B6CCI0_p7ddc6e6254		A0A0B6CCI0	1	12	Protein 3A	
+A0A0B6CCI0	virus	A0A0B6CCI0_p8203dac1dc		A0A0B6CCI0	3	12	Capsid protein VP2	
+A0A0B6CCI0	virus	A0A0B6CCI0_p951ac6c9ef		A0A0B6CCI0	4	12	Protease 3C	
+A0A0B6CCI0	virus	A0A0B6CCI0_pa199ab244b		A0A0B6CCI0	1	12	Leader protein	
+A0A0B6CCI0	virus	A0A0B6CCI0_pd036c9649a		A0A0B6CCI0	3	12	Capsid protein VP3	
+A0A0B6CCI0	virus	A0A0B6CCI0_pdaae9d3f71		A0A0B6CCI0	2	12	Capsid protein VP1	
+A0A0B6CCI0	virus	A0A0B6CCI0_ped95cdeaf8		A0A0B6CCI0	1	12	VPg	
+A0A0B6CCI0_P32270DFCD6	virus	A0A0B6CCI0_p32270dfcd6		A0A0B6CCI0	1	12	Capsid protein VP4	
+A0A0B6CCI0_P435E334B2A	virus	A0A0B6CCI0_p435e334b2a		A0A0B6CCI0	1	12	Protein 2C	
+A0A0B6CCI0_P4C15B16A9E	virus	A0A0B6CCI0_p4c15b16a9e		A0A0B6CCI0	0	12	RNA directed RNA polymerase	
+A0A0B6CCI0_P56992E7259	virus	A0A0B6CCI0_p56992e7259		A0A0B6CCI0	1	12	Protein 2B	
+A0A0B6CCI0_P7732FB4B90	virus	A0A0B6CCI0_p7732fb4b90		A0A0B6CCI0	0	12	Protein 2A	
+A0A0B6CCI0_P7DDC6E6254	virus	A0A0B6CCI0_p7ddc6e6254		A0A0B6CCI0	1	12	Protein 3A	
+A0A0B6CCI0_P8203DAC1DC	virus	A0A0B6CCI0_p8203dac1dc		A0A0B6CCI0	3	12	Capsid protein VP2	
+A0A0B6CCI0_P951AC6C9EF	virus	A0A0B6CCI0_p951ac6c9ef		A0A0B6CCI0	4	12	Protease 3C	
+A0A0B6CCI0_PA199AB244B	virus	A0A0B6CCI0_pa199ab244b		A0A0B6CCI0	1	12	Leader protein	
+A0A0B6CCI0_PD036C9649A	virus	A0A0B6CCI0_pd036c9649a		A0A0B6CCI0	3	12	Capsid protein VP3	
+A0A0B6CCI0_PDAAE9D3F71	virus	A0A0B6CCI0_pdaae9d3f71		A0A0B6CCI0	2	12	Capsid protein VP1	
+A0A0B6CCI0_PED95CDEAF8	virus	A0A0B6CCI0_ped95cdeaf8		A0A0B6CCI0	1	12	VPg	
+A0A0B6VHD6	virus	A0A0B6VHD6		A0A0B6VHD6	2	11	A0A0B6VHD6_9REOV	
+A0A0B6VHD7	virus	A0A0B6VHD7		A0A0B6VHD7	0	11	A0A0B6VHD7_9REOV	
+A0A0B6VIH6	virus	A0A0B6VIH6		A0A0B6VIH6	0	9	RNA-directed RNA polymerase	
+A0A0B6VIH8	virus	A0A0B6VIH8		A0A0B6VIH8	1	11	A0A0B6VIH8_9REOV	
+A0A0B6VII0	virus	A0A0B6VII0		A0A0B6VII0	2	11	A0A0B6VII0_9REOV	
+A0A0B6VK18	virus	A0A0B6VK18		A0A0B6VK18	0	10	A0A0B6VK18_9REOV	
+A0A0B6VK21	virus	A0A0B6VK21		A0A0B6VK21	0	11	A0A0B6VK21_9REOV	
+A0A0B6VM66	virus	A0A0B6VM66		A0A0B6VM66	0	11	A0A0B6VM66_9REOV	
+A0A0B6VM68	virus	A0A0B6VM68		A0A0B6VM68	1	11	A0A0B6VM68_9REOV	
+A0A0B6VNY9	virus	A0A0B6VNY9		A0A0B6VNY9	1	11	A0A0B6VNY9_9REOV	
+A0A0B6VNZ1	virus	A0A0B6VNZ1		A0A0B6VNZ1	0	11	A0A0B6VNZ1_9REOV	
+A0A0B7H2U2	worm	A0A0B7H2U2	srh-146	A0A0B7H2U2	2	22	Serpentine Receptor, class H	
+A0A0B7P7M6	fly	FBgn0262123	l(2)41Ab	A0A0B7P7M6	2	5	Lethal (2) 41Ab, isoform A	
+A0A0B7P9G0	fly	FBgn0262124	uex	A0A0B7P9G0	5	65	Unextended protein (Putative metal transporter uex)	

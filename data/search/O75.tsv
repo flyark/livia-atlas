@@ -1,6 +1,330 @@
-O75001	schizosaccharomyces-pombe	O75001	mcm7	O75001	1	47	DNA replication licensing factor mcm7
-O75002	schizosaccharomyces-pombe	O75002	mog1	O75002	0	5	Nuclear import protein mog1
-O75004	schizosaccharomyces-pombe	O75004	cdc24	O75004	1	8	Cell division control protein 24
-O75005	schizosaccharomyces-pombe	O75005	vas2	O75005	1	10	Valine--tRNA ligase
-O75006	schizosaccharomyces-pombe	O75006	sec15	O75006	6	24	Exocyst complex component sec15
-O75011	schizosaccharomyces-pombe	O75011	nak1	O75011	2	14	Serine/threonine-protein kinase nak1
+O75001	schizosaccharomyces-pombe	O75001	mcm7	O75001	1	47	DNA replication licensing factor mcm7	
+O75002	schizosaccharomyces-pombe	O75002	mog1	O75002	0	5	Nuclear import protein mog1	
+O75004	schizosaccharomyces-pombe	O75004	cdc24	O75004	1	8	Cell division control protein 24	
+O75005	schizosaccharomyces-pombe	O75005	vas2	O75005	1	10	Valine--tRNA ligase	
+O75006	schizosaccharomyces-pombe	O75006	sec15	O75006	6	24	Exocyst complex component sec15	
+O75011	schizosaccharomyces-pombe	O75011	nak1	O75011	2	14	Serine/threonine-protein kinase nak1	
+O75012	yeast	O75012	MRP10	O75012	4	101	Small ribosomal subunit protein mS37	
+O75015	human	O75015	FCGR3B	O75015	57	361	Low affinity immunoglobulin gamma Fc region receptor III-B (	
+O75019	human	O75019	LILRA1	O75019	5	125	Leukocyte immunoglobulin-like receptor subfamily A member 1 	
+O75022	human	O75022	LILRB3	O75022	7	136	Leukocyte immunoglobulin-like receptor subfamily B member 3 	
+O75023	human	O75023	LILRB5	O75023	12	88	Leukocyte immunoglobulin-like receptor subfamily B member 5 	
+O75027	human	O75027	ABCB7	O75027	11	152	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	
+O75030	human	O75030	MITF	O75030	136	458	Microphthalmia-associated transcription factor (Class E basi	
+O75031	human	O75031	HSF2BP	O75031	146	373	Heat shock factor 2-binding protein	
+O75037	human	O75037	KIF21B	O75037	41	163	Kinesin-like protein KIF21B	
+O75038	human	O75038	PLCH2	O75038	13	114	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase et	
+O75044	human	O75044	SRGAP2	O75044	51	284	SLIT-ROBO Rho GTPase-activating protein 2 (srGAP2) (Formin-b	
+O75051	human	O75051	PLXNA2	O75051	51	373	Plexin-A2 (Semaphorin receptor OCT)	
+O75052	human	O75052	NOS1AP	O75052	48	173	Carboxyl-terminal PDZ ligand of neuronal nitric oxide syntha	
+O75054	human	O75054	IGSF3	O75054	29	151	Immunoglobulin superfamily member 3 (IgSF3) (Glu-Trp-Ile EWI	
+O75056	human	O75056	SDC3	O75056	11	111	Syndecan-3 (SYND3)	
+O75061	human	O75061	DNAJC6	O75061	12	93	Auxilin (EC 3.1.3.-) (DnaJ homolog subfamily C member 6)	
+O75063	human	O75063	FAM20B	O75063	2	75	Glycosaminoglycan xylosylkinase (EC 2.7.1.-) (Xylose kinase)	
+O75064	human	O75064	DENND4B	O75064	10	52	DENN domain-containing protein 4B	
+O75069	human	O75069	TMCC2	O75069	24	55	Transmembrane and coiled-coil domains protein 2 (Cerebral pr	
+O75071	human	O75071	EFCAB14	O75071	6	41	EF-hand calcium-binding domain-containing protein 14	
+O75072	human	O75072	FKTN	O75072	25	93	Ribitol-5-phosphate transferase FKTN (EC 2.7.8.-) (Fukutin) 	
+O75074	human	O75074	LRP3	O75074	28	101	Low-density lipoprotein receptor-related protein 3 (LRP-3) (	
+O75077	human	O75077	ADAM23	O75077	15	113	Disintegrin and metalloproteinase domain-containing protein 	
+O75078	human	O75078	ADAM11	O75078	30	160	Disintegrin and metalloproteinase domain-containing protein 	
+O75081	human	O75081	CBFA2T3	O75081	37	127	Transcriptional corepressor CBFA2T3 (MTG8-related protein 2)	
+O75083	human	O75083	WDR1	O75083	7	251	WD repeat-containing protein 1 (Actin-interacting protein 1)	
+O75084	human	O75084	FZD7	O75084	37	258	Frizzled-7 (Fz-7) (hFz7) (FzE3)	
+O75093	human	O75093	SLIT1	O75093	25	172	Slit homolog 1 protein (Slit-1) (Multiple epidermal growth f	
+O75094	human	O75094	SLIT3	O75094	23	170	Slit homolog 3 protein (Slit-3) (Multiple epidermal growth f	
+O75095	human	O75095	MEGF6	O75095	4	33	Multiple epidermal growth factor-like domains protein 6 (Mul	
+O75096	human	O75096	LRP4	O75096	7	166	Low-density lipoprotein receptor-related protein 4 (LRP-4) (	
+O75106	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.4.3.21) (Amine oxi	
+O75110	human	O75110	ATP9A	O75110	8	120	Probable phospholipid-transporting ATPase IIA (EC 7.6.2.1) (	
+O75112	human	O75112	LDB3	O75112	9	49	LIM domain-binding protein 3 (Protein cypher) (Z-band altern	
+O75113	human	O75113	N4BP1	O75113	23	97	NEDD4-binding protein 1 (N4BP1) (EC 3.1.-.-)	
+O75116	human	O75116	ROCK2	O75116	92	489	Rho-associated protein kinase 2 (EC 2.7.11.39) (Rho kinase 2	
+O75121	human	O75121	MFAP3L	O75121	3	27	Microfibrillar-associated protein 3-like (Testis development	
+O75122	human	O75122	CLASP2	O75122	27	166	CLIP-associating protein 2 (Cytoplasmic linker-associated pr	
+O75123	human	O75123	ZNF623	O75123	0	76	Zinc finger protein 623	
+O75127	human	O75127	PTCD1	O75127	21	217	Pentatricopeptide repeat-containing protein 1, mitochondrial	
+O75128	human	O75128	COBL	O75128	39	130	Protein cordon-bleu	
+O75129	human	O75129	ASTN2	O75129	15	107	Astrotactin-2	
+O75131	human	O75131	CPNE3	O75131	12	158	Copine-3 (Copine III)	
+O75132	human	O75132	ZBED4	O75132	6	69	Zinc finger BED domain-containing protein 4	
+O75140	human	O75140	DEPDC5	O75140	8	70	GATOR1 complex protein DEPDC5 (DEP domain-containing protein	
+O75143	human	O75143	ATG13	O75143	55	287	Autophagy-related protein 13	
+O75144	human	O75144	ICOSLG	O75144	70	260	ICOS ligand (B7 homolog 2) (B7-H2) (B7-like protein Gl50) (B	
+O75145	human	O75145	PPFIA3	O75145	56	191	Liprin-alpha-3 (Protein tyrosine phosphatase receptor type f	
+O75146	human	O75146	HIP1R	O75146	29	215	Huntingtin-interacting protein 1-related protein (HIP1-relat	
+O75147	human	O75147	OBSL1	O75147	55	816	Obscurin-like protein 1	
+O75150	human	O75150	RNF40	O75150	74	375	E3 ubiquitin-protein ligase BRE1B (BRE1-B) (EC 2.3.2.27) (95	
+O75151	human	O75151	PHF2	O75151	49	149	Lysine-specific demethylase PHF2 (EC 1.14.11.-) (GRC5) (PHD 	
+O75152	human	O75152	ZC3H11A	O75152	55	308	Zinc finger CCCH domain-containing protein 11A	
+O75153	human	O75153	CLUH	O75153	2	162	Clustered mitochondria protein homolog	
+O75154	human	O75154	RAB11FIP3	O75154	26	108	Rab11 family-interacting protein 3 (FIP3) (FIP3-Rab11) (Rab1	
+O75155	human	O75155	CAND2	O75155	6	122	Cullin-associated NEDD8-dissociated protein 2 (Cullin-associ	
+O75157	human	O75157	TSC22D2	O75157	32	97	TSC22 domain family protein 2 (TSC22-related-inducible leuci	
+O75159	human	O75159	SOCS5	O75159	22	121	Suppressor of cytokine signaling 5 (SOCS-5) (Cytokine-induci	
+O75161	human	O75161	NPHP4	O75161	6	94	Nephrocystin-4 (Nephroretinin)	
+O75164	human	O75164	KDM4A	O75164	37	243	Lysine-specific demethylase 4A (EC 1.14.11.66) (EC 1.14.11.6	
+O75165	human	O75165	DNAJC13	O75165	10	132	DnaJ homolog subfamily C member 13 (Required for receptor-me	
+O75167	human	O75167	PHACTR2	O75167	13	48	Phosphatase and actin regulator 2	
+O75170	human	O75170	PPP6R2	O75170	25	138	Serine/threonine-protein phosphatase 6 regulatory subunit 2 	
+O75173	human	O75173	ADAMTS4	O75173	48	229	A disintegrin and metalloproteinase with thrombospondin moti	
+O75175	human	O75175	CNOT3	O75175	66	333	CCR4-NOT transcription complex subunit 3 (CCR4-associated fa	
+O75177	human	O75177	SS18L1	O75177	10	113	Calcium-responsive transactivator (SS18-like protein 1) (SYT	
+O75179	human	O75179	ANKRD17	O75179	16	186	Ankyrin repeat domain-containing protein 17 (Gene trap ankyr	
+O75182	human	O75182	SIN3B	O75182	68	290	Paired amphipathic helix protein Sin3b (Histone deacetylase 	
+O75185	human	O75185	ATP2C2	O75185	2	44	Calcium-transporting ATPase type 2C member 2 (ATPase 2C2) (E	
+O75190	human	O75190	DNAJB6	O75190	23	394	DnaJ homolog subfamily B member 6 (HHDJ1) (Heat shock protei	
+O75191	human	O75191	XYLB	O75191	6	104	Xylulose kinase (Xylulokinase) (EC 2.7.1.17)	
+O75192	human	O75192	PEX11A	O75192	5	30	Peroxisomal membrane protein 11A (HsPEX11p) (28 kDa peroxiso	
+O75197	human	O75197	LRP5	O75197	24	199	Low-density lipoprotein receptor-related protein 5 (LRP-5) (	
+O75200	human	O75200	NPIPB7	O75200	4	10	Nuclear pore complex-interacting protein family member B7 (N	
+O75204	human	O75204	TMEM127	O75204	15	88	Transmembrane protein 127	
+O75208	human	O75208	COQ9	O75208	34	294	Ubiquinone biosynthesis protein COQ9, mitochondrial	
+O75223	human	O75223	GGCT	O75223	16	129	Gamma-glutamylcyclotransferase (EC 4.3.2.9) (Cytochrome c-re	
+O75251	human	O75251	NDUFS7	O75251	47	380	NADH dehydrogenase [ubiquinone] iron-sulfur protein 7, mitoc	
+O75264	human	O75264	SMIM24	O75264	35	278	Small integral membrane protein 24	
+O75290	human	O75290	ZNF780A	O75290	1	82	Zinc finger protein 780A	
+O75293	human	O75293	GADD45B	O75293	17	230	Growth arrest and DNA damage-inducible protein GADD45 beta (	
+O75298	human	O75298	RTN2	O75298	7	63	Reticulon-2 (Neuroendocrine-specific protein-like 1) (NSP-li	
+O75306	human	O75306	NDUFS2	O75306	29	542	NADH dehydrogenase [ubiquinone] iron-sulfur protein 2, mitoc	
+O75309	human	O75309	CDH16	O75309	11	71	Cadherin-16 (Kidney-specific cadherin) (Ksp-cadherin)	
+O75310	human	O75310	UGT2B11	O75310	22	35	UDP-glucuronosyltransferase 2B11 (UDPGT 2B11) (EC 2.4.1.17)	
+O75311	human	O75311	GLRA3	O75311	32	108	Glycine receptor subunit alpha-3	
+O75312	human	O75312	ZPR1	O75312	6	130	Zinc finger protein ZPR1 (Zinc finger protein 259)	
+O75317	human	O75317	USP12	O75317	19	122	Ubiquitin carboxyl-terminal hydrolase 12 (EC 3.4.19.12) (Deu	
+O75319	human	O75319	DUSP11	O75319	13	118	RNA/RNP complex-1-interacting phosphatase (EC 3.1.3.-) (Dual	
+O75323	human	O75323	NIPSNAP2	O75323	6	160	Protein NipSnap homolog 2 (NipSnap2) (Glioblastoma-amplified	
+O75324	human	O75324	SNN	O75324	20	73	Stannin (AG8_1)	
+O75325	human	O75325	LRRN2	O75325	26	133	Leucine-rich repeat neuronal protein 2 (Glioma amplified on 	
+O75326	human	O75326	SEMA7A	O75326	20	214	Semaphorin-7A (CDw108) (JMH blood group antigen) (John-Milto	
+O75330	human	O75330	HMMR	O75330	42	212	Hyaluronan mediated motility receptor (Intracellular hyaluro	
+O75333	human	O75333	TBX10	O75333	59	335	T-box transcription factor TBX10 (T-box protein 10)	
+O75334	human	O75334	PPFIA2	O75334	57	161	Liprin-alpha-2 (Protein tyrosine phosphatase receptor type f	
+O75335	human	O75335	PPFIA4	O75335	41	127	Liprin-alpha-4 (Protein tyrosine phosphatase receptor type f	
+O75339	human	O75339	CILP	O75339	3	9	Cartilage intermediate layer protein 1 (CILP-1) (Cartilage i	
+O75340	human	O75340	PDCD6	O75340	33	266	Programmed cell death protein 6 (Apoptosis-linked gene 2 pro	
+O75342	human	O75342	ALOX12B	O75342	8	254	Arachidonate 12-lipoxygenase, 12R-type (12R-LOX) (12R-lipoxy	
+O75343	human	O75343	GUCY1B2	O75343	1	6	Putative guanylate cyclase soluble subunit beta-2 (GCS-beta-	
+O75344	human	O75344	FKBP6	O75344	38	144	Inactive peptidyl-prolyl cis-trans isomerase FKBP6 (Inactive	
+O75346	human	O75346	ZNF253	O75346	8	97	Zinc finger protein 253 (Bone marrow zinc finger 1) (BMZF-1)	
+O75347	human	O75347	TBCA	O75347	25	167	Tubulin-specific chaperone A (TCP1-chaperonin cofactor A) (T	
+O75348	human	O75348	ATP6V1G1	O75348	7	155	V-type proton ATPase subunit G 1 (V-ATPase subunit G 1) (V-A	
+O75351	human	O75351	VPS4B	O75351	14	144	Vacuolar protein sorting-associated protein 4B (EC 3.6.4.6) 	
+O75352	human	O75352	MPDU1	O75352	1	125	Mannose-P-dolichol utilization defect 1 protein (Suppressor 	
+O75354	human	O75354	ENTPD6	O75354	8	67	Ectonucleoside triphosphate diphosphohydrolase 6 (NTPDase 6)	
+O75355	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	
+O75356	human	O75356	ENTPD5	O75356	7	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	
+O75360	human	O75360	PROP1	O75360	45	124	Homeobox protein prophet of Pit-1 (PROP-1) (Pituitary-specif	
+O75362	human	O75362	ZNF217	O75362	38	195	Zinc finger protein 217	
+O75363	human	O75363	BCAS1	O75363	10	74	Breast carcinoma-amplified sequence 1 (Amplified and overexp	
+O75364	human	O75364	PITX3	O75364	114	402	Pituitary homeobox 3 (Homeobox protein PITX3) (Paired-like h	
+O75365	human	O75365	PTP4A3	O75365	17	216	Protein tyrosine phosphatase type IVA 3 (EC 3.1.3.48) (PRL-R	
+O75366	human	O75366	AVIL	O75366	1	44	Advillin (p92)	
+O75367	human	O75367	MACROH2A1	O75367	86	563	Core histone macro-H2A.1 (Histone macroH2A1) (mH2A1) (Histon	
+O75368	human	O75368	SH3BGRL	O75368	24	271	Adapter SH3BGRL (SH3 domain-binding glutamic acid-rich-like 	
+O75369	human	O75369	FLNB	O75369	17	356	Filamin-B (FLN-B) (ABP-278) (ABP-280 homolog) (Actin-binding	
+O75373	human	O75373	ZNF737	O75373	2	72	Zinc finger protein 737 (Zinc finger protein 102)	
+O75376	human	O75376	NCOR1	O75376	107	499	Nuclear receptor corepressor 1 (N-CoR) (N-CoR1)	
+O75379	human	O75379	VAMP4	O75379	60	254	Vesicle-associated membrane protein 4 (VAMP-4)	
+O75380	human	O75380	NDUFS6	O75380	19	422	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	
+O75381	human	O75381	PEX14	O75381	42	272	Peroxisomal membrane protein PEX14 (PTS1 receptor-docking pr	
+O75382	human	O75382	TRIM3	O75382	45	190	Tripartite motif-containing protein 3 (EC 2.3.2.27) (Brain-e	
+O75385	human	O75385	ULK1	O75385	70	322	Serine/threonine-protein kinase ULK1 (EC 2.7.11.1) (Autophag	
+O75386	human	O75386	TULP3	O75386	139	653	Tubby-related protein 3 (Tubby-like protein 3)	
+O75387	human	O75387	SLC43A1	O75387	3	87	Large neutral amino acids transporter small subunit 3 (L-typ	
+O75388	human	O75388	GPR32	O75388	6	37	Probable G protein-coupled receptor 32	
+O75390	human	O75390	CS	O75390	11	605	Citrate synthase, mitochondrial (EC 2.3.3.1) (Citrate (Si)-s	
+O75391	human	O75391	SPAG7	O75391	3	58	Sperm-associated antigen 7	
+O75394	human	O75394	MRPL33	O75394	18	424	Large ribosomal subunit protein bL33m (39S ribosomal protein	
+O75396	human	O75396	SEC22B	O75396	73	481	Vesicle-trafficking protein SEC22b (ER-Golgi SNARE of 24 kDa	
+O75398	human	O75398	DEAF1	O75398	79	387	Deformed epidermal autoregulatory factor 1 homolog (Nuclear 	
+O75400	human	O75400	PRPF40A	O75400	95	569	Pre-mRNA-processing factor 40 homolog A (Fas ligand-associat	
+O75409	human	O75409	H2AP	O75409	36	205	Huntingtin-interacting protein M (Histone H2A.P) (Huntingtin	
+O75410	human	O75410	TACC1	O75410	34	214	Transforming acidic coiled-coil-containing protein 1 (Gastri	
+O75414	human	O75414	NME6	O75414	7	144	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	
+O75417	human	O75417	POLQ	O75417	2	149	DNA polymerase theta (DNA polymerase eta) [Includes: Helicas	
+O75419	human	O75419	CDC45	O75419	24	446	Cell division control protein 45 homolog (PORC-PI-1)	
+O75420	human	O75420	GIGYF1	O75420	62	207	GRB10-interacting GYF protein 1 (PERQ amino acid-rich with G	
+O75425	human	O75425	MOSPD3	O75425	19	67	Motile sperm domain-containing protein 3	
+O75426	human	O75426	FBXO24	O75426	11	79	F-box only protein 24	
+O75427	human	O75427	LRCH4	O75427	18	93	Leucine-rich repeat and calponin homology domain-containing 	
+O75431	human	O75431	MTX2	O75431	22	188	Metaxin-2 (Mitochondrial outer membrane import complex prote	
+O75436	human	O75436	VPS26A	O75436	29	231	Vacuolar protein sorting-associated protein 26A (Vesicle pro	
+O75437	human	O75437	ZNF254	O75437	5	64	Zinc finger protein 254 (Bone marrow zinc finger 5) (BMZF-5)	
+O75438	human	O75438	NDUFB1	O75438	60	237	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	
+O75439	human	O75439	PMPCB	O75439	14	405	Mitochondrial-processing peptidase subunit beta (EC 3.4.24.6	
+O75443	human	O75443	TECTA	O75443	5	66	Alpha-tectorin	
+O75444	human	O75444	MAF	O75444	107	472	Transcription factor Maf (Proto-oncogene c-Maf) (V-maf muscu	
+O75446	human	O75446	SAP30	O75446	75	545	Histone deacetylase complex subunit SAP30 (30 kDa Sin3-assoc	
+O75448	human	O75448	MED24	O75448	41	377	Mediator of RNA polymerase II transcription subunit 24 (Acti	
+O75449	human	O75449	KATNA1	O75449	23	151	Katanin p60 ATPase-containing subunit A1 (Katanin p60 subuni	
+O75452	human	O75452	RDH16	O75452	10	37	Retinol dehydrogenase 16 (EC 1.1.1.105) (EC 1.1.1.209) (EC 1	
+O75459	human	O75459	PAGE1	O75459	5	89	P antigen family member 1 (PAGE-1) (AL5) (G antigen 9) (GAGE	
+O75460	human	O75460	ERN1	O75460	20	216	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	
+O75461	human	O75461	E2F6	O75461	87	584	Transcription factor E2F6 (E2F-6)	
+O75462	human	O75462	CRLF1	O75462	32	128	Cytokine receptor-like factor 1 (Cytokine-like factor 1) (CL	
+O75467	human	O75467	ZNF324	O75467	6	77	Zinc finger protein 324A (Zinc finger protein ZF5128)	
+O75469	human	O75469	NR1I2	O75469	87	503	Nuclear receptor subfamily 1 group I member 2 (Orphan nuclea	
+O75473	human	O75473	LGR5	O75473	49	355	Leucine-rich repeat-containing G protein-coupled receptor 5 	
+O75474	human	O75474	FRAT2	O75474	16	102	GSK-3-binding protein FRAT2 (Frequently rearranged in advanc	
+O75475	human	O75475	PSIP1	O75475	48	314	PC4 and SFRS1-interacting protein (CLL-associated antigen KW	
+O75477	human	O75477	ERLIN1	O75477	16	186	Erlin-1 (Endoplasmic reticulum lipid raft-associated protein	
+O75478	human	O75478	TADA2A	O75478	110	642	Transcriptional adapter 2-alpha (Transcriptional adapter 2-l	
+O75486	human	O75486	SUPT3H	O75486	37	482	Transcription initiation protein SPT3 homolog (SPT3-like pro	
+O75487	human	O75487	GPC4	O75487	14	139	Glypican-4 (K-glypican) [Cleaved into: Secreted glypican-4]	
+O75489	human	O75489	NDUFS3	O75489	38	517	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	
+O75493	human	O75493	CA11	O75493	4	52	Carbonic anhydrase-related protein 11 (CA-RP XI) (CA-XI) (CA	
+O75494	human	O75494	SRSF10	O75494	35	282	Serine/arginine-rich splicing factor 10 (40 kDa SR-repressor	
+O75496	human	O75496	GMNN	O75496	36	215	Geminin	
+O75503	human	O75503	CLN5	O75503	14	87	Bis(monoacylglycero)phosphate synthase CLN5 (BMP synthase CL	
+O75506	human	O75506	HSBP1	O75506	26	105	Heat shock factor-binding protein 1 (Nasopharyngeal carcinom	
+O75508	human	O75508	CLDN11	O75508	15	172	Claudin-11 (Oligodendrocyte-specific protein)	
+O75509	human	O75509	TNFRSF21	O75509	37	167	Tumor necrosis factor receptor superfamily member 21 (Death 	
+O75521	human	O75521	ECI2	O75521	9	206	Enoyl-CoA delta isomerase 2 (EC 5.3.3.8) (DRS-1) (Delta(3),d	
+O75525	human	O75525	KHDRBS3	O75525	18	129	KH domain-containing, RNA-binding, signal transduction-assoc	
+O75526	human	O75526	RBMXL2	O75526	8	93	RNA-binding motif protein, X-linked-like-2 (Testis-specific 	
+O75528	human	O75528	TADA3	O75528	113	641	Transcriptional adapter 3 (ADA3 homolog) (hADA3) (STAF54) (T	
+O75529	human	O75529	TAF5L	O75529	71	513	TAF5-like RNA polymerase II p300/CBP-associated factor-assoc	
+O75530	human	O75530	EED	O75530	216	1053	Polycomb protein EED (hEED) (Embryonic ectoderm development 	
+O75531	human	O75531	BANF1	O75531	31	458	Barrier-to-autointegration factor (Breakpoint cluster region	
+O75533	human	O75533	SF3B1	O75533	70	799	Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 	
+O75534	human	O75534	CSDE1	O75534	37	355	Cold shock domain-containing protein E1 (N-ras upstream gene	
+O75541	human	O75541	ZNF821	O75541	61	341	Zinc finger protein 821	
+O75553	human	O75553	DAB1	O75553	27	102	Disabled homolog 1	
+O75554	human	O75554	WBP4	O75554	17	183	WW domain-binding protein 4 (WBP-4) (Formin-binding protein 	
+O75556	human	O75556	SCGB2A1	O75556	10	146	Mammaglobin-B (Lacryglobin) (Lipophilin-C) (Mammaglobin-2) (	
+O75558	human	O75558	STX11	O75558	43	429	Syntaxin-11	
+O75563	human	O75563	SKAP2	O75563	45	167	Src kinase-associated phosphoprotein 2 (Pyk2/RAFTK-associate	
+O75564	human	O75564	JRK	O75564	1	32	Jerky protein homolog	
+O75569	human	O75569	PRKRA	O75569	29	406	Interferon-inducible double-stranded RNA-dependent protein k	
+O75570	human	O75570	MTRF1	O75570	22	325	Peptide chain release factor 1, mitochondrial (MRF-1) (MtRF-	
+O75575	human	O75575	CRCP	O75575	42	356	DNA-directed RNA polymerase III subunit RPC9 (RNA polymerase	
+O75578	human	O75578	ITGA10	O75578	15	65	Integrin alpha-10	
+O75581	human	O75581	LRP6	O75581	40	359	Low-density lipoprotein receptor-related protein 6 (LRP-6)	
+O75582	human	O75582	RPS6KA5	O75582	39	319	Ribosomal protein S6 kinase alpha-5 (S6K-alpha-5) (EC 2.7.11	
+O75586	human	O75586	MED6	O75586	71	771	Mediator of RNA polymerase II transcription subunit 6 (Activ	
+O75593	human	O75593	FOXH1	O75593	64	457	Forkhead box protein H1 (Forkhead activin signal transducer 	
+O75594	human	O75594	PGLYRP1	O75594	62	522	Peptidoglycan recognition protein 1 (Peptidoglycan recogniti	
+O75596	human	O75596	CLEC3A	O75596	12	114	C-type lectin domain family 3 member A (C-type lectin superf	
+O75600	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	
+O75602	human	O75602	SPAG6	O75602	8	141	Sperm-associated antigen 6 (Protein PF16 homolog) (Repro-SA-	
+O75603	human	O75603	GCM2	O75603	58	371	Chorion-specific transcription factor GCMb (hGCMb) (GCM moti	
+O75604	human	O75604	USP2	O75604	29	277	Ubiquitin carboxyl-terminal hydrolase 2 (EC 3.4.19.12) (41 k	
+O75607	human	O75607	NPM3	O75607	23	268	Nucleoplasmin-3	
+O75608	human	O75608	LYPLA1	O75608	7	159	Acyl-protein thioesterase 1 (APT-1) (hAPT1) (EC 3.1.2.-) (Ly	
+O75610	human	O75610	LEFTY1	O75610	16	108	Left-right determination factor 1 (Left-right determination 	
+O75616	human	O75616	ERAL1	O75616	23	222	GTPase Era, mitochondrial (H-ERA) (hERA) (Conserved ERA-like	
+O75618	human	O75618	DEDD	O75618	63	402	Death effector domain-containing protein (DEDPro1) (Death ef	
+O75626	human	O75626	PRDM1	O75626	29	156	PR domain zinc finger protein 1 (EC 2.1.1.-) (BLIMP-1) (Beta	
+O75628	human	O75628	REM1	O75628	16	176	GTP-binding protein REM 1 (GTPase-regulating endothelial cel	
+O75629	human	O75629	CREG1	O75629	5	389	Protein CREG1 (Cellular repressor of E1A-stimulated genes 1)	
+O75631	human	O75631	UPK3A	O75631	10	97	Uroplakin-3a (UP3a) (Uroplakin III) (UPIII)	
+O75635	human	O75635	SERPINB7	O75635	16	172	Serpin B7 (Megsin) (TP55)	
+O75636	human	O75636	FCN3	O75636	44	341	Ficolin-3 (Collagen/fibrinogen domain-containing lectin 3 p3	
+O75638	human	O75638	CTAG2	O75638	3	43	Cancer/testis antigen 2 (CT2) (Autoimmunogenic cancer/testis	
+O75643	human	O75643	SNRNP200	O75643	54	933	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.	
+O75648	human	O75648	TRMU	O75648	13	136	Mitochondrial tRNA-specific 2-thiouridylase 1 (EC 2.8.1.14) 	
+O75663	human	O75663	TIPRL	O75663	22	157	TIP41-like protein (Putative MAPK-activating protein PM10) (	
+O75665	human	O75665	OFD1	O75665	99	405	Centriole and centriolar satellite protein OFD1 (Oral-facial	
+O75674	human	O75674	TOM1L1	O75674	26	101	TOM1-like protein 1 (Src-activating and signaling molecule p	
+O75676	human	O75676	RPS6KA4	O75676	17	168	Ribosomal protein S6 kinase alpha-4 (S6K-alpha-4) (EC 2.7.11	
+O75677	human	O75677	RFPL1	O75677	12	45	Ret finger protein-like 1 (RING finger protein 78)	
+O75678	human	O75678	RFPL2	O75678	12	57	Ret finger protein-like 2 (RING finger protein 79)	
+O75679	human	O75679	RFPL3	O75679	6	58	Ret finger protein-like 3	
+O75683	human	O75683	SURF6	O75683	67	472	Surfeit locus protein 6	
+O75688	human	O75688	PPM1B	O75688	43	326	Protein phosphatase 1B (EC 3.1.3.16) (Protein phosphatase 2C	
+O75689	human	O75689	ADAP1	O75689	3	92	Arf-GAP with dual PH domain-containing protein 1 (Centaurin-	
+O75690	human	O75690	KRTAP5-8	O75690	0	14	Keratin-associated protein 5-8 (Keratin, ultra high-sulfur m	
+O75691	human	O75691	UTP20	O75691	18	827	Small subunit processome component 20 homolog (Down-regulate	
+O75694	human	O75694	NUP155	O75694	39	498	Nuclear pore complex protein Nup155 (155 kDa nucleoporin) (N	
+O75695	human	O75695	RP2	O75695	13	189	Protein XRP2	
+O75711	human	O75711	SCRG1	O75711	5	83	Scrapie-responsive protein 1 (Scrapie-responsive gene 1 prot	
+O75712	human	O75712	GJB3	O75712	5	139	Gap junction beta-3 protein (Connexin-31) (Cx31)	
+O75715	human	O75715	GPX5	O75715	9	63	Epididymal secretory glutathione peroxidase (EC 1.11.1.9) (E	
+O75716	human	O75716	STK16	O75716	180	1360	Serine/threonine-protein kinase 16 (EC 2.7.11.1) (Myristoyla	
+O75717	human	O75717	WDHD1	O75717	52	334	WD repeat and HMG-box DNA-binding protein 1 (Acidic nucleopl	
+O75718	human	O75718	CRTAP	O75718	29	114	Cartilage-associated protein	
+O75746	human	O75746	SLC25A12	O75746	10	271	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	
+O75747	human	O75747	PIK3C2G	O75747	5	36	Phosphatidylinositol 3-kinase C2 domain-containing subunit g	
+O75751	human	O75751	SLC22A3	O75751	0	63	Solute carrier family 22 member 3 (Extraneuronal monoamine t	
+O75752	human	O75752	B3GALNT1	O75752	11	110	UDP-GalNAc:beta-1,3-N-acetylgalactosaminyltransferase 1 (Bet	
+O75762	human	O75762	TRPA1	O75762	7	89	Transient receptor potential cation channel subfamily A memb	
+O75764	human	O75764	TCEA3	O75764	60	430	Transcription elongation factor A protein 3 (Transcription e	
+O75771	human	O75771	RAD51D	O75771	22	221	DNA repair protein RAD51 homolog 4 (R51H3) (RAD51 homolog D)	
+O75781	human	O75781	PALM	O75781	18	100	Paralemmin-1 (Paralemmin)	
+O75783	human	O75783	RHBDL1	O75783	8	57	Rhomboid-related protein 1 (RRP) (EC 3.4.21.105) (Rhomboid-l	
+O75787	human	O75787	ATP6AP2	O75787	22	343	Renin receptor (ATPase H(+)-transporting lysosomal accessory	
+O75791	human	O75791	GRAP2	O75791	46	246	GRB2-related adapter protein 2 (Adapter protein GRID) (GRB-2	
+O75792	human	O75792	RNASEH2A	O75792	13	161	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	
+O75794	human	O75794	CDC123	O75794	2	91	Translation initiation factor eIF2 assembly protein (Cell di	
+O75795	human	O75795	UGT2B17	O75795	21	45	UDP-glucuronosyltransferase 2B17 (UDPGT 2B17) (UGT2B17) (EC 	
+O75800	human	O75800	ZMYND10	O75800	9	53	Zinc finger MYND domain-containing protein 10 (Protein BLu)	
+O75807	human	O75807	PPP1R15A	O75807	29	302	Protein phosphatase 1 regulatory subunit 15A (Growth arrest 	
+O75808	human	O75808	CAPN15	O75808	23	109	Calpain-15 (EC 3.4.22.-) (Small optic lobes homolog)	
+O75815	human	O75815	BCAR3	O75815	29	176	Breast cancer anti-estrogen resistance protein 3 (Novel SH2-	
+O75817	human	O75817	POP7	O75817	19	173	Ribonuclease P protein subunit p20 (RNaseP protein p20) (Rib	
+O75818	human	O75818	RPP40	O75818	8	115	Ribonuclease P protein subunit p40 (RNaseP protein p40) (RNa	
+O75820	human	O75820	ZNF189	O75820	5	136	Zinc finger protein 189	
+O75821	human	O75821	EIF3G	O75821	45	287	Eukaryotic translation initiation factor 3 subunit G (eIF3g)	
+O75822	human	O75822	EIF3J	O75822	23	219	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	
+O75828	human	O75828	CBR3	O75828	15	176	Carbonyl reductase [NADPH] 3 (EC 1.1.1.184) (NADPH-dependent	
+O75829	human	O75829	CNMD	O75829	18	98	Leukocyte cell-derived chemotaxin 1 (Chondromodulin) [Cleave	
+O75830	human	O75830	SERPINI2	O75830	1	57	Serpin I2 (Myoepithelium-derived serine protease inhibitor) 	
+O75832	human	O75832	PSMD10	O75832	19	327	26S proteasome non-ATPase regulatory subunit 10 (26S proteas	
+O75838	human	O75838	CIB2	O75838	16	214	Calcium and integrin-binding family member 2 (Kinase-interac	
+O75840	human	O75840	KLF7	O75840	25	346	Krueppel-like factor 7 (Ubiquitous krueppel-like factor)	
+O75841	human	O75841	UPK1B	O75841	19	158	Uroplakin-1b (UP1b) (Tetraspanin-20) (Tspan-20) (Uroplakin I	
+O75843	human	O75843	AP1G2	O75843	39	144	AP-1 complex subunit gamma-like 2 (Gamma2-adaptin) (G2ad)	
+O75844	human	O75844	ZMPSTE24	O75844	2	172	CAAX prenyl protease 1 homolog (EC 3.4.24.84) (Farnesylated 	
+O75845	human	O75845	SC5D	O75845	0	72	Lathosterol oxidase (EC 1.14.19.20) (C-5 sterol desaturase) 	
+O75864	human	O75864	PPP1R37	O75864	40	115	Protein phosphatase 1 regulatory subunit 37 (Leucine-rich re	
+O75865	human	O75865	TRAPPC6A	O75865	34	86	Trafficking protein particle complex subunit 6A (TRAPP compl	
+O75871	human	O75871	CEACAM4	O75871	73	242	Cell adhesion molecule CEACAM4 (Carcinoembryonic antigen CGM	
+O75874	human	O75874	IDH1	O75874	11	295	Isocitrate dehydrogenase [NADP] cytoplasmic (IDH) (IDH1) (EC	
+O75879	human	O75879	GATB	O75879	13	173	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
+O75880	human	O75880	SCO1	O75880	26	276	Cytochrome c oxidase assembly factor SCO1	
+O75881	human	O75881	CYP7B1	O75881	1	72	Cytochrome P450 7B1 (24-hydroxycholesterol 7-alpha-hydroxyla	
+O75882	human	O75882	ATRN	O75882	19	92	Attractin (DPPT-L) (Mahogany homolog)	
+O75884	human	O75884	RBBP9	O75884	10	124	Serine hydrolase RBBP9 (EC 3.1.-.-) (B5T-overexpressed gene 	
+O75886	human	O75886	STAM2	O75886	67	279	Signal transducing adapter molecule 2 (STAM-2) (Hrs-binding 	
+O75888	human	O75888	TNFSF13	O75888	45	191	Tumor necrosis factor ligand superfamily member 13 (A prolif	
+O75891	human	O75891	ALDH1L1	O75891	11	196	Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH	
+O75896	human	O75896	TUSC2	O75896	22	128	Tumor suppressor candidate 2 (Fusion 1 protein) (Fus-1 prote	
+O75897	human	O75897	SULT1C4	O75897	17	143	Sulfotransferase 1C4 (ST1C4) (EC 2.8.2.1) (Sulfotransferase 	
+O75899	human	O75899	GABBR2	O75899	38	290	Gamma-aminobutyric acid type B receptor subunit 2 (GABA-B re	
+O75900	human	O75900	MMP23B	O75900	11	37	Matrix metalloproteinase-23 (MMP-23) (EC 3.4.24.-) (Femalysi	
+O75901	human	O75901	RASSF9	O75901	23	73	Ras association domain-containing protein 9 (PAM COOH-termin	
+O75907	human	O75907	DGAT1	O75907	3	93	Diacylglycerol O-acyltransferase 1 (EC 2.3.1.20) (ACAT-relat	
+O75908	human	O75908	SOAT2	O75908	2	28	Sterol O-acyltransferase 2 (EC 2.3.1.26) (Acyl-coenzyme A:ch	
+O75909	human	O75909	CCNK	O75909	135	589	Cyclin-K	
+O75911	human	O75911	DHRS3	O75911	23	134	Short-chain dehydrogenase/reductase 3 (EC 1.1.1.300) (DD83.1	
+O75912	human	O75912	DGKI	O75912	13	94	Diacylglycerol kinase iota (DAG kinase iota) (DGK-iota) (EC 	
+O75914	human	O75914	PAK3	O75914	289	1295	Serine/threonine-protein kinase PAK 3 (EC 2.7.11.1) (Beta-PA	
+O75915	human	O75915	ARL6IP5	O75915	12	243	PRA1 family protein 3 (ADP-ribosylation factor-like protein 	
+O75916	human	O75916	RGS9	O75916	21	92	Regulator of G protein signaling 9 (RGS9)	
+O75920	human	O75920	SERF1A	O75920	29	90	Small EDRK-rich factor 1 (Protein 4F5) (h4F5) (SMA modifier 	
+O75923	human	O75923	DYSF	O75923	0	72	Dysferlin (Dystrophy-associated fer-1-like protein) (Fer-1-l	
+O75925	human	O75925	PIAS1	O75925	99	494	E3 SUMO-protein ligase PIAS1 (EC 2.3.2.-) (DEAD/H box-bindin	
+O75928	human	O75928	PIAS2	O75928	43	235	E3 SUMO-protein ligase PIAS2 (EC 2.3.2.-) (Androgen receptor	
+O75934	human	O75934	BCAS2	O75934	49	380	Pre-mRNA-splicing factor SPF27 (Breast carcinoma-amplified s	
+O75935	human	O75935	DCTN3	O75935	22	212	Dynactin subunit 3 (Dynactin complex subunit 22 kDa subunit)	
+O75936	human	O75936	BBOX1	O75936	3	72	Gamma-butyrobetaine dioxygenase (EC 1.14.11.1) (Gamma-butyro	
+O75937	human	O75937	DNAJC8	O75937	20	278	DnaJ homolog subfamily C member 8 (Splicing protein spf31)	
+O75940	human	O75940	SMNDC1	O75940	29	198	Survival of motor neuron-related-splicing factor 30 (30 kDa 	
+O75943	human	O75943	RAD17	O75943	30	288	Cell cycle checkpoint protein RAD17 (hRad17) (RF-C/activator	
+O75947	human	O75947	ATP5PD	O75947	11	320	ATP synthase peripheral stalk subunit d, mitochondrial (ATPa	
+O75949	human	O75949	NALF2	O75949	2	12	NALCN channel auxiliary factor 2 (Protein TED) (Transmembran	
+O75951	human	O75951	LYZL6	O75951	10	59	Lysozyme-like protein 6 (EC 3.2.1.17)	
+O75952	human	O75952	CABYR	O75952	11	58	Calcium-binding tyrosine phosphorylation-regulated protein (	
+O75953	human	O75953	DNAJB5	O75953	40	194	DnaJ homolog subfamily B member 5 (Heat shock protein Hsp40-	
+O75954	human	O75954	TSPAN9	O75954	7	164	Tetraspanin-9 (Tspan-9) (Tetraspan NET-5)	
+O75955	human	O75955	FLOT1	O75955	17	640	Flotillin-1	
+O75956	human	O75956	CDK2AP2	O75956	20	84	Cyclin-dependent kinase 2-associated protein 2 (CDK2-associa	
+O75962	human	O75962	TRIO	O75962	8	68	Triple functional domain protein (EC 2.7.11.1) (PTPRF-intera	
+O75964	human	O75964	ATP5MG	O75964	22	217	ATP synthase F(0) complex subunit g, mitochondrial (ATPase s	
+O75969	human	O75969	AKAP3	O75969	2	39	A-kinase anchor protein 3 (AKAP-3) (A-kinase anchor protein 	
+O75970	human	O75970	MPDZ	O75970	14	127	Multiple PDZ domain protein (Multi-PDZ domain protein 1)	
+O75971	human	O75971	SNAPC5	O75971	50	292	snRNA-activating protein complex subunit 5 (SNAPc subunit 5)	
+O75973	human	O75973	C1QL1	O75973	20	181	C1q-related factor (C1q and tumor necrosis factor-related pr	
+O75976	human	O75976	CPD	O75976	9	233	Carboxypeptidase D (EC 3.4.17.22) (Metallocarboxypeptidase D	
+O75995	human	O75995	SASH3	O75995	26	92	SAM and SH3 domain-containing protein 3 (SH3 protein express	

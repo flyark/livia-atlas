@@ -1,8 +1,53 @@
-NIM1K	mus-musculus	Q8BHI9	Nim1k	Q8BHI9	0	6	Serine/threonine-protein kinase NIM1
-NIM1K	rattus-norvegicus	D4A9H8	Nim1k	D4A9H8	0	5	Serine/threonine-protein kinase NIM1
-NIMA	cladophialophora-carrionii	A0A1C1CQ62	nimA	A0A1C1CQ62	0	8	non-specific serine/threonine protein kinase
-NIME	cladophialophora-carrionii	A0A1C1CTS0	nimE	A0A1C1CTS0	12	48	G2/mitotic-specific cyclin-B
-NIMIN-1	arabidopsis-thaliana	Q9FNZ5	NIMIN-1	Q9FNZ5	4	11	Protein NIM1-INTERACTING 1
-NIMIN-2	arabidopsis-thaliana	Q9LUA3	NIMIN-2	Q9LUA3	4	12	Protein NIM1-INTERACTING 2
-NIMIN-3	arabidopsis-thaliana	Q9FNZ4	NIMIN-3	Q9FNZ4	3	17	Protein NIM1-INTERACTING 3
-NIMT	cladophialophora-carrionii	A0A1C1CCU9	nimT	A0A1C1CCU9	2	13	M-phase inducer phosphatase
+NIM1	human	Q8IY84	NIM1K	Q8IY84	97	1230		
+NIM1K	human	Q8IY84	NIM1K	Q8IY84	97	1230	Serine/threonine-protein kinase NIM1 (EC 2.7.11.1) (NIM1 ser	
+NIM1K	mus-musculus	Q8BHI9	Nim1k	Q8BHI9	0	6	Serine/threonine-protein kinase NIM1	
+NIM1K	rattus-norvegicus	D4A9H8	Nim1k	D4A9H8	0	5	Serine/threonine-protein kinase NIM1	
+NIM1KB	zebrafish	A0A8M9PD81	nim1kb	A0A8M9PD81	7	26	Serine/threonine-protein (EC 2.7.11.1)	
+NIM1_HUMAN	human	Q8IY84	NIM1K	Q8IY84	97	1230		
+NIM3	human	Q9UJD0	RIMS3	Q9UJD0	8	49	Regulating synaptic membrane exocytosis protein 3 (Nim3) (RI	w
+NIMA	cladophialophora-carrionii	A0A1C1CQ62	nimA	A0A1C1CQ62	0	8	non-specific serine/threonine protein kinase	
+NIMA	fly	FBgn0261514	NimA	Q8IP58	0	4	Nimrod A, isoform E (Nimrod A, isoform F)	
+NIMA-INTERACTING	human	O15428	PIN1P1	O15428	5	21	Putative PIN1-like protein (Peptidylprolyl cis-trans isomera	w
+NIMA-INTERACTING	human	P54274	TERF1	P54274	188	571	Telomeric repeat-binding factor 1 (NIMA-interacting protein 	w
+NIMA-INTERACTING	human	Q13526	PIN1	Q13526	84	483	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 1 (EC 5	w
+NIMA-INTERACTING	human	Q9Y237	PIN4	Q9Y237	6	99	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 4 (EC 5	w
+NIMA-INTERACTING	zebrafish	Q503Y7	pin4	Q503Y7	0	24	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 4	w
+NIMA-LIKE	human	P51955	NEK2	P51955	231	1431	Serine/threonine-protein kinase Nek2 (EC 2.7.11.1) (HSPK 21)	w
+NIMA-RELATED	human	P51955	NEK2	P51955	231	1431	Serine/threonine-protein kinase Nek2 (EC 2.7.11.1) (HSPK 21)	w
+NIMA-RELATED	human	P51956	NEK3	P51956	119	1232	Serine/threonine-protein kinase Nek3 (EC 2.7.11.1) (HSPK 36)	w
+NIMA-RELATED	human	P51957	NEK4	P51957	88	595	Serine/threonine-protein kinase Nek4 (EC 2.7.11.1) (Never in	w
+NIMA-RELATED	human	Q6P3R8	NEK5	Q6P3R8	2	25	Serine/threonine-protein kinase Nek5 (EC 2.7.11.1) (Never in	w
+NIMA-RELATED	human	Q6ZWH5	NEK10	Q6ZWH5	7	56	Serine/threonine-protein kinase Nek10 (EC 2.7.11.1) (Never i	w
+NIMA-RELATED	human	Q86SG6	NEK8	Q86SG6	13	108	Serine/threonine-protein kinase Nek8 (EC 2.7.11.1) (Never in	w
+NIMA-RELATED	human	Q8NG66	NEK11	Q8NG66	119	1217	Serine/threonine-protein kinase Nek11 (EC 2.7.11.1) (Never i	w
+NIMA-RELATED	human	Q8TD19	NEK9	Q8TD19	46	231	Serine/threonine-protein kinase Nek9 (EC 2.7.11.38) (Nercc1 	w
+NIMA-RELATED	human	Q8TDX7	NEK7	Q8TDX7	200	1416	Serine/threonine-protein kinase Nek7 (EC 2.7.11.34) (Never i	w
+NIMA-RELATED	human	Q96PY6	NEK1	Q96PY6	35	129	Serine/threonine-protein kinase Nek1 (EC 2.7.11.1) (Never in	w
+NIMA-RELATED	human	Q9HC98	NEK6	Q9HC98	283	1405	Serine/threonine-protein kinase Nek6 (EC 2.7.11.34) (Never i	w
+NIMA-RELATED	zebrafish	Q90XC2	nek8	Q90XC2	8	22	Serine/threonine-protein kinase Nek8 (EC 2.7.11.1) (Never in	w
+NIMB1	fly	FBgn0027929	NimB1	M9PFV3	52	243	Nimrod B1, isoform B	
+NIMB2	fly	FBgn0028543	NimB2	Q7KTA1	36	254	HL01444p (Nimrod B2)	
+NIMB3	fly	FBgn0054003	NimB3	Q2PDU0	26	243	GEO11169p1 (Nimrod B3)	
+NIMB4	fly	FBgn0028542	NimB4	Q9VJU8	24	253	GH23407p (Nimrod B4)	
+NIMB5	fly	FBgn0028936	NimB5	Q9VJU6	25	244	IP09831p (Nimrod B5, isoform A) (Nimrod B5, isoform B) (Nimr	
+NIMC1	fly	FBgn0259896	NimC1	M9PBB4	2	95	Nimrod C1, isoform B (Nimrod C1, isoform C)	
+NIMC2	fly	FBgn0028939	NimC2	Q86BL2	0	3	Nimrod C2, isoform B (Nimrod C2, isoform C)	
+NIMC3	fly	FBgn0001967	NimC3	Q9VJU2	16	245	Nimrod C3	
+NIMC4	fly	FBgn0260011	NimC4	Q9V392	0	4	FI01909p (Nimrod C4)	
+NIME	cladophialophora-carrionii	A0A1C1CTS0	nimE	A0A1C1CTS0	12	48	G2/mitotic-specific cyclin-B	
+NIMIN-1	arabidopsis-thaliana	Q9FNZ5	NIMIN-1	Q9FNZ5	4	11	Protein NIM1-INTERACTING 1	
+NIMIN-2	arabidopsis-thaliana	Q9LUA3	NIMIN-2	Q9LUA3	4	12	Protein NIM1-INTERACTING 2	
+NIMIN-3	arabidopsis-thaliana	Q9FNZ4	NIMIN-3	Q9FNZ4	3	17	Protein NIM1-INTERACTING 3	
+NIMK-1	worm	O17879	nimk-1	O17879	4	22	Serine/threonine-protein (EC 2.7.11.1)	
+NIMP	human	Q8WWV3	RTN4IP1	Q8WWV3	5	130		
+NIMROD	fly	FBgn0001967	NimC3	Q9VJU2	16	245	Nimrod C3	w
+NIMROD	fly	FBgn0027929	NimB1	M9PFV3	52	243	Nimrod B1, isoform B	w
+NIMROD	fly	FBgn0028542	NimB4	Q9VJU8	24	253	GH23407p (Nimrod B4)	w
+NIMROD	fly	FBgn0028543	NimB2	Q7KTA1	36	254	HL01444p (Nimrod B2)	w
+NIMROD	fly	FBgn0028936	NimB5	Q9VJU6	25	244	IP09831p (Nimrod B5, isoform A) (Nimrod B5, isoform B) (Nimr	w
+NIMROD	fly	FBgn0028939	NimC2	Q86BL2	0	3	Nimrod C2, isoform B (Nimrod C2, isoform C)	w
+NIMROD	fly	FBgn0054003	NimB3	Q2PDU0	26	243	GEO11169p1 (Nimrod B3)	w
+NIMROD	fly	FBgn0259896	NimC1	M9PBB4	2	95	Nimrod C1, isoform B (Nimrod C1, isoform C)	w
+NIMROD	fly	FBgn0260011	NimC4	Q9V392	0	4	FI01909p (Nimrod C4)	w
+NIMROD	fly	FBgn0261514	NimA	Q8IP58	0	4	Nimrod A, isoform E (Nimrod A, isoform F)	w
+NIMT	cladophialophora-carrionii	A0A1C1CCU9	nimT	A0A1C1CCU9	2	13	M-phase inducer phosphatase	

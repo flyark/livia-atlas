@@ -1,25 +1,90 @@
-KDM1A	cladophialophora-carrionii	A0A1C1CJT8	KDM1A	A0A1C1CJT8	2	39	Lysine-specific histone demethylase 1A
-KDM1A	mus-musculus	Q6ZQ88	Kdm1a	Q6ZQ88	41	205	Lysine-specific histone demethylase 1A
-KDM1A	rattus-norvegicus	B3STT9	Kdm1a	B3STT9	39	213	Lysine-specific histone demethylase
-KDM1B	mus-musculus	Q8CIG3	Kdm1b	Q8CIG3	1	19	Lysine-specific histone demethylase 1B
-KDM1B	rattus-norvegicus	D3ZP89	Kdm1b	D3ZP89	2	41	Flavin-containing amine oxidase domain-containing protein 1
-KDM2A	mus-musculus	P59997	Kdm2a	P59997	2	39	Lysine-specific demethylase 2A
-KDM2A	rattus-norvegicus	A0A8I6ARD6	Kdm2a	A0A8I6ARD6	2	48	A0A8I6ARD6_RAT
-KDM2B	mus-musculus	Q6P1G2	Kdm2b	Q6P1G2	8	80	Lysine-specific demethylase 2B
-KDM2B	rattus-norvegicus	F1LLW9	Kdm2b	F1LLW9	10	71	Lysine demethylase 2B
-KDM3A	mus-musculus	Q6PCM1	Kdm3a	Q6PCM1	2	37	Lysine-specific demethylase 3A
-KDM3A	rattus-norvegicus	Q63679	Kdm3a	Q63679	1	31	Lysine-specific demethylase 3A
-KDM4A	mus-musculus	Q8BW72	Kdm4a	Q8BW72	3	45	Lysine-specific demethylase 4A
-KDM4A	rattus-norvegicus	A0A0G2K5I7	Kdm4a	A0A0G2K5I7	4	47	Lysine-specific demethylase 4A
-KDM4B	mus-musculus	Q91VY5	Kdm4b	Q91VY5	4	34	Lysine-specific demethylase 4B
-KDM4B	rattus-norvegicus	M0RB75	Kdm4b	M0RB75	6	46	Lysine-specific demethylase 4B
-KDM4C	mus-musculus	Q8VCD7	Kdm4c	Q8VCD7	1	18	Lysine-specific demethylase 4C
-KDM4C	rattus-norvegicus	F1LS62	Kdm4c	F1LS62	0	33	F1LS62_RAT
-KDM4D	mus-musculus	Q3U2K5	Kdm4d	Q3U2K5	0	6	Lysine-specific demethylase 4D
-KDM4D	rattus-norvegicus	A1A5Q5	Kdm4d	A1A5Q5	0	4	Lysine-specific demethylase 4D
-KDM6A	mus-musculus	O70546	Kdm6a	O70546	5	119	Lysine-specific demethylase 6A
-KDM6A	rattus-norvegicus	A0A0G2K6D0	Kdm6a	A0A0G2K6D0	12	195	A0A0G2K6D0_RAT
-KDM7A	mus-musculus	Q3UWM4	Kdm7a	Q3UWM4	0	1	Lysine-specific demethylase 7A
-KDM7A	rattus-norvegicus	A0A0G2K1Z1	Kdm7a	A0A0G2K1Z1	1	7	Lysine demethylase 7A
-KDM8	mus-musculus	Q9CXT6	Kdm8	Q9CXT6	1	3	Bifunctional peptidase and arginyl-hydroxylase JMJD5
-KDM8	rattus-norvegicus	Q497B8	Kdm8	Q497B8	1	7	Bifunctional peptidase and arginyl-hydroxylase JMJD5
+KDM1	human	O60341	KDM1A	O60341	208	1093		
+KDM1A	cladophialophora-carrionii	A0A1C1CJT8	KDM1A	A0A1C1CJT8	2	39	Lysine-specific histone demethylase 1A	
+KDM1A	human	O60341	KDM1A	O60341	208	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	
+KDM1A	mus-musculus	Q6ZQ88	Kdm1a	Q6ZQ88	41	205	Lysine-specific histone demethylase 1A	
+KDM1A	rattus-norvegicus	B3STT9	Kdm1a	B3STT9	39	213	Lysine-specific histone demethylase	
+KDM1A	zebrafish	F6NIA2	kdm1a	F6NIA2	26	164	Lysine-specific histone demethylase	
+KDM1A_HUMAN	human	O60341	KDM1A	O60341	208	1093		
+KDM1B	human	Q08EI0	KDM1B	Q08EI0	2	48	AOF1 protein	
+KDM1B	human	Q8NB78	KDM1B	Q8NB78	8	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	
+KDM1B	mus-musculus	Q8CIG3	Kdm1b	Q8CIG3	1	19	Lysine-specific histone demethylase 1B	
+KDM1B	rattus-norvegicus	D3ZP89	Kdm1b	D3ZP89	2	41	Flavin-containing amine oxidase domain-containing protein 1	
+KDM1B_HUMAN	human	Q8NB78	KDM1B	Q8NB78	8	152		
+KDM2	fly	FBgn0037659	Kdm2	Q9VHH9	23	169	JmjC domain-containing histone demethylation protein 1 (EC 1	
+KDM2A	human	Q9Y2K7	KDM2A	Q9Y2K7	101	649	Lysine-specific demethylase 2A (EC 1.14.11.27) (CXXC-type zi	
+KDM2A	mus-musculus	P59997	Kdm2a	P59997	2	39	Lysine-specific demethylase 2A	
+KDM2A	rattus-norvegicus	A0A8I6ARD6	Kdm2a	A0A8I6ARD6	2	48	A0A8I6ARD6_RAT	
+KDM2AA	zebrafish	A0A8M3AK71	kdm2aa	A0A8M3AK71	2	59	A0A8M3AK71_DANRE	
+KDM2AB	zebrafish	A0A8M1PZC6	kdm2ab	A0A8M1PZC6	3	59	A0A8M1PZC6_DANRE	
+KDM2A_HUMAN	human	Q9Y2K7	KDM2A	Q9Y2K7	101	649		
+KDM2B	human	Q8NHM5	KDM2B	Q8NHM5	54	362	Lysine-specific demethylase 2B (EC 1.14.11.27) (CXXC-type zi	
+KDM2B	mus-musculus	Q6P1G2	Kdm2b	Q6P1G2	8	80	Lysine-specific demethylase 2B	
+KDM2B	rattus-norvegicus	F1LLW9	Kdm2b	F1LLW9	10	71	Lysine demethylase 2B	
+KDM2BB	zebrafish	F6P9Q3	kdm2bb	F6P9Q3	4	59	Lysine-specific demethylase 2B	
+KDM2B_HUMAN	human	Q8NHM5	KDM2B	Q8NHM5	54	362		
+KDM3	fly	FBgn0037703	Kdm3	Q9VHC5	0	6	JmjC domain-containing histone demethylase 2, isoform A (Jmj	
+KDM3A	human	Q9Y4C1	KDM3A	Q9Y4C1	27	167	Lysine-specific demethylase 3A (EC 1.14.11.65) (JmjC domain-	
+KDM3A	mus-musculus	Q6PCM1	Kdm3a	Q6PCM1	2	37	Lysine-specific demethylase 3A	
+KDM3A	rattus-norvegicus	Q63679	Kdm3a	Q63679	1	31	Lysine-specific demethylase 3A	
+KDM3A_HUMAN	human	Q9Y4C1	KDM3A	Q9Y4C1	27	167		
+KDM3B	human	Q7LBC6	KDM3B	Q7LBC6	43	290	Lysine-specific demethylase 3B (EC 1.14.11.65) (JmjC domain-	
+KDM3B_HUMAN	human	Q7LBC6	KDM3B	Q7LBC6	43	290		
+KDM3C	human	Q15652	JMJD1C	Q15652	40	203		
+KDM4A	fly	FBgn0033233	Kdm4A	Q9V333	51	382	Probable lysine-specific demethylase 4A (EC 1.14.11.66) (EC 	
+KDM4A	human	O75164	KDM4A	O75164	37	243	Lysine-specific demethylase 4A (EC 1.14.11.66) (EC 1.14.11.6	
+KDM4A	mus-musculus	Q8BW72	Kdm4a	Q8BW72	3	45	Lysine-specific demethylase 4A	
+KDM4A	rattus-norvegicus	A0A0G2K5I7	Kdm4a	A0A0G2K5I7	4	47	Lysine-specific demethylase 4A	
+KDM4AB	zebrafish	F1QNG0	kdm4ab	F1QNG0	0	32	F1QNG0_DANRE	
+KDM4A_HUMAN	human	O75164	KDM4A	O75164	37	243		
+KDM4B	fly	FBgn0053182	Kdm4B	A0A0B4KFJ8	59	364	Lysine (K)-specific demethylase 4B, isoform E (EC 1.14.11.27	
+KDM4B	human	O94953	KDM4B	O94953	29	181	Lysine-specific demethylase 4B (EC 1.14.11.66) (JmjC domain-	
+KDM4B	mus-musculus	Q91VY5	Kdm4b	Q91VY5	4	34	Lysine-specific demethylase 4B	
+KDM4B	rattus-norvegicus	M0RB75	Kdm4b	M0RB75	6	46	Lysine-specific demethylase 4B	
+KDM4B	zebrafish	Q1LUQ0	kdm4b	Q1LUQ0	1	45	Lysine-specific demethylase 4B	
+KDM4B_HUMAN	human	O94953	KDM4B	O94953	29	181		
+KDM4C	human	Q9H3R0	KDM4C	Q9H3R0	35	217	Lysine-specific demethylase 4C (EC 1.14.11.66) (Gene amplifi	
+KDM4C	mus-musculus	Q8VCD7	Kdm4c	Q8VCD7	1	18	Lysine-specific demethylase 4C	
+KDM4C	rattus-norvegicus	F1LS62	Kdm4c	F1LS62	0	33	F1LS62_RAT	
+KDM4C_HUMAN	human	Q9H3R0	KDM4C	Q9H3R0	35	217		
+KDM4D	human	Q6B0I6	KDM4D	Q6B0I6	57	426	Lysine-specific demethylase 4D (EC 1.14.11.66) (JmjC domain-	
+KDM4D	mus-musculus	Q3U2K5	Kdm4d	Q3U2K5	0	6	Lysine-specific demethylase 4D	
+KDM4D	rattus-norvegicus	A1A5Q5	Kdm4d	A1A5Q5	0	4	Lysine-specific demethylase 4D	
+KDM4D-LIKE	human	B2RXH2	KDM4E	B2RXH2	53	349	Lysine-specific demethylase 4E (EC 1.14.11.-) (EC 1.14.11.66	w
+KDM4DL	human	B2RXH2	KDM4E	B2RXH2	53	349		
+KDM4D_HUMAN	human	Q6B0I6	KDM4D	Q6B0I6	57	426		
+KDM4E	human	B2RXH2	KDM4E	B2RXH2	53	349	Lysine-specific demethylase 4E (EC 1.14.11.-) (EC 1.14.11.66	
+KDM4E_HUMAN	human	B2RXH2	KDM4E	B2RXH2	53	349		
+KDM4F	human	A0A1W2PPD8	KDM4F	A0A1W2PPD8	6	11	Probable lysine-specific demethylase 4F (EC 1.14.11.66)	
+KDM4F_HUMAN	human	A0A1W2PPD8	KDM4F	A0A1W2PPD8	6	11		
+KDM5	fly	FBgn0031759	Kdm5	Q9VMJ7	15	77	Lysine-specific demethylase 5 (EC 1.14.11.67) (Histone demet	
+KDM5A	human	P29375	KDM5A	P29375	32	200	Lysine-specific demethylase 5A (EC 1.14.11.67) (Histone deme	
+KDM5A_HUMAN	human	P29375	KDM5A	P29375	32	200		
+KDM5B	human	Q9UGL1	KDM5B	Q9UGL1	30	192	Lysine-specific demethylase 5B (EC 1.14.11.67) (Cancer/testi	
+KDM5BA	zebrafish	A0A8M9Q713	kdm5ba	A0A8M9Q713	8	71	A0A8M9Q713_DANRE	
+KDM5B_HUMAN	human	Q9UGL1	KDM5B	Q9UGL1	30	192		
+KDM5C	human	P41229	KDM5C	P41229	37	196	Lysine-specific demethylase 5C (EC 1.14.11.67) (Histone deme	
+KDM5C_HUMAN	human	P41229	KDM5C	P41229	37	196		
+KDM5D	human	Q9BY66	KDM5D	Q9BY66	19	83	Lysine-specific demethylase 5D (EC 1.14.11.67) (Histocompati	
+KDM5D_HUMAN	human	Q9BY66	KDM5D	Q9BY66	19	83		
+KDM5E	human	B2RXH2	KDM4E	B2RXH2	53	349		
+KDM6A	human	O15550	KDM6A	O15550	54	460	Lysine-specific demethylase 6A (EC 1.14.11.68) (Histone deme	
+KDM6A	mus-musculus	O70546	Kdm6a	O70546	5	119	Lysine-specific demethylase 6A	
+KDM6A	rattus-norvegicus	A0A0G2K6D0	Kdm6a	A0A0G2K6D0	12	195	A0A0G2K6D0_RAT	
+KDM6AL	zebrafish	A1L1S9	kdm6al	A1L1S9	17	299	A1L1S9_DANRE	
+KDM6A_HUMAN	human	O15550	KDM6A	O15550	54	460		
+KDM6B	human	O15054	KDM6B	O15054	147	824	Lysine-specific demethylase 6B (EC 1.14.11.68) (JmjC domain-	
+KDM6B_HUMAN	human	O15054	KDM6B	O15054	147	824		
+KDM6C	human	O14607	UTY	O14607	30	287		
+KDM7	human	Q6ZMT4	KDM7A	Q6ZMT4	24	99		
+KDM7A	human	Q6ZMT4	KDM7A	Q6ZMT4	24	99	Lysine-specific demethylase 7A (JmjC domain-containing histo	
+KDM7A	mus-musculus	Q3UWM4	Kdm7a	Q3UWM4	0	1	Lysine-specific demethylase 7A	
+KDM7A	rattus-norvegicus	A0A0G2K1Z1	Kdm7a	A0A0G2K1Z1	1	7	Lysine demethylase 7A	
+KDM7A	zebrafish	Q5RHD1	kdm7a	Q5RHD1	6	22	Lysine-specific demethylase 7A	
+KDM7A_HUMAN	human	Q6ZMT4	KDM7A	Q6ZMT4	24	99		
+KDM7B	human	Q9UPP1	PHF8	Q9UPP1	80	381		
+KDM8	human	Q8N371	KDM8	Q8N371	14	231	Bifunctional peptidase and arginyl-hydroxylase JMJD5 (EC 1.1	
+KDM8	mus-musculus	Q9CXT6	Kdm8	Q9CXT6	1	3	Bifunctional peptidase and arginyl-hydroxylase JMJD5	
+KDM8	rattus-norvegicus	Q497B8	Kdm8	Q497B8	1	7	Bifunctional peptidase and arginyl-hydroxylase JMJD5	
+KDM8	zebrafish	A8E534	kdm8	A8E534	0	3	Lysine-specific demethylase 8	
+KDM8_HUMAN	human	Q8N371	KDM8	Q8N371	14	231		
+KDM9	human	Q5VWQ0	RSBN1	Q5VWQ0	24	204		

@@ -1,10 +1,194 @@
-NSP1	arabidopsis-thaliana	Q9SDM9	NSP1	Q9SDM9	0	12	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-forming) NSP1
-NSP1	candida-albicans-237561	A0A1D8PGV7	NSP1	A0A1D8PGV7	4	93	Nucleoporin NSP1
-NSP1	schizosaccharomyces-pombe	Q10168	nsp1	Q10168	6	41	Nucleoporin nsp1
-NSP2	arabidopsis-thaliana	O49326	NSP2	O49326	0	14	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-forming) NSP2
-NSP2	glycine-max	I1JZ90	NSP2	I1JZ90	1	6	Uncharacterized protein
-NSP2	oryza-sativa-subsp-japonica	Q84Q92	NSP2	Q84Q92	2	9	Protein NODULATION SIGNALING PATHWAY 2
-NSP3	arabidopsis-thaliana	O04318	NSP3	O04318	0	8	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-forming) NSP3
-NSP4	arabidopsis-thaliana	O04316	NSP4	O04316	0	10	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-forming) NSP4
-NSP5	arabidopsis-thaliana	Q93XW5	NSP5	Q93XW5	0	9	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-forming) NSP5
-NSPC	streptococcus-pneumoniae	Q8DQ69	nspC	Q8DQ69	0	1	Carboxynorspermidine decarboxylase
+NSP	human	Q16799	RTN1	Q16799	11	131		
+NSP	virus	W8REW3_p65af478782	NSP	W8REW3	0	8	mRNA capping enzyme nsP1	
+NSP	virus	W8REW3_p77ef3671d9	NSP	W8REW3	1	8	RNA directed RNA polymerase nsP4	
+NSP	virus	W8REW3_p8a0d3d2555	NSP	W8REW3	1	8	Protease nsP2	
+NSP-LIKE	human	O75298	RTN2	O75298	7	63	Reticulon-2 (Neuroendocrine-specific protein-like 1) (NSP-li	w
+NSP-LIKE	human	O95197	RTN3	O95197	26	186	Reticulon-3 (Homolog of ASY protein) (HAP) (Neuroendocrine-s	w
+NSP1	arabidopsis-thaliana	Q9SDM9	NSP1	Q9SDM9	0	12	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-form	
+NSP1	candida-albicans-237561	A0A1D8PGV7	NSP1	A0A1D8PGV7	4	93	Nucleoporin NSP1	
+NSP1	human	Q9BRG2	SH2D3A	Q9BRG2	35	267		
+NSP1	schizosaccharomyces-pombe	Q10168	nsp1	Q10168	6	41	Nucleoporin nsp1	
+NSP1	virus	A0A088FP04_p4f200cad5e		A0A088FP04	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	A0A1L6BXK6	NSP1	A0A1L6BXK6	0	13	A0A1L6BXK6_9REOV	
+NSP1	virus	A0A5B7LUG1_p73dcc4a50a		A0A5B7LUG1	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	A0MNM1_p28fc269671	nsP1234	A0MNM1	1	9	mRNA capping enzyme nsP1	w
+NSP1	virus	A1YZ45_pb2121820f2		A1YZ45	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	A8RNT3_p5f7c9c19fa		A8RNT3	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	C1KGU9_p531e71388f		C1KGU9	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	C9DZL0_p265bf5b02b		C9DZL0	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	D1KRD7_p28d671dc6f		D1KRD7	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	H6STZ2_p89549b0efd		H6STZ2	1	7	mRNA capping enzyme nsP1	w
+NSP1	virus	H6STZ4_pf3bdf909d0		H6STZ4	1	7	mRNA capping enzyme nsP1	w
+NSP1	virus	H6STZ6_p30a15e9ac0		H6STZ6	0	7	mRNA capping enzyme nsP1	w
+NSP1	virus	H6SU00_p84b337606d		H6SU00	1	7	mRNA capping enzyme nsP1	w
+NSP1	virus	H6SU02_pd30b099126		H6SU02	0	7	mRNA capping enzyme nsP1	w
+NSP1	virus	H6SU08_p225a7f703f		H6SU08	1	7	mRNA capping enzyme nsP1	w
+NSP1	virus	J9U6E6_p5e1db775c1		J9U6E6	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	O90368_p91f76518ef		O90368	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	O90370_p46d8a2a86e		O90370	1	9	mRNA capping enzyme nsP1	w
+NSP1	virus	P03317_p0f68266a16		P03317	1	9	mRNA capping enzyme nsP1	w
+NSP1	virus	P08411_pe534ab567e		P08411	2	9	mRNA capping enzyme nsP1	w
+NSP1	virus	P13886_pb4c5f66956		P13886	1	9	mRNA capping enzyme nsP1	w
+NSP1	virus	P13896_pf7169de3ba		P13896	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	P27282_p3210c6a406		P27282	0	9	mRNA capping enzyme nsP1	w
+NSP1	virus	P27283_pa786c7fe6a		P27283	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	P36327_p6a7f7fd000		P36327	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	P36328_p208d2c6f93		P36328	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	P87515_pe555ac4f40		P87515	0	7	mRNA capping enzyme nsP1	w
+NSP1	virus	Q306W8_p9a02cee61d		Q306W8	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q5Y389_p26ee5aad37		Q5Y389	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q66580_p128b367244		Q66580	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q86924_p5e6a3af8c1		Q86924	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q88978_p3c0d64c1ee		Q88978	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q8JUX6_p8b753708de		Q8JUX6	1	10	mRNA capping enzyme nsP1	w
+NSP1	virus	Q8QL53_p4a1bdb0c49		Q8QL53	0	9	mRNA capping enzyme nsP1	w
+NSP1	virus	Q8QTI7_pfa04477116		Q8QTI7	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q8QZ73_p59ad71bb6e		Q8QZ73	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9JGL0_p22fc5da876		Q9JGL0	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJC6_p9a53e75b7b		Q9WJC6	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJC8_p7cfa91751a		Q9WJC8	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJC9_p56b0445b02		Q9WJC9	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJD0_p55a32f2d0e		Q9WJD0	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJD1_p1d6ad75f3f		Q9WJD1	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJD2_p1859b21fd5		Q9WJD2	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJD3_pdd51310db8		Q9WJD3	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9WJD4_p0f8994ab32		Q9WJD4	0	8	mRNA capping enzyme nsP1	w
+NSP1	virus	Q9YJX8_p83869089ef		Q9YJX8	1	8	mRNA capping enzyme nsP1	w
+NSP1	virus	W8REW3_p65af478782	NSP	W8REW3	0	8	mRNA capping enzyme nsP1	w
+NSP1	worm	O01576	npp-11	O01576	7	150	Nsp1_C domain-containing protein	w
+NSP1	yeast	P14907	NSP1	P14907	6	108	Nucleoporin NSP1	
+NSP1-1	virus	Q6XD90	NSP1-1	Q6XD90	0	13	Q6XD90_ROTGA	
+NSP1-2	virus	Q6XD89	NSP1-2	Q6XD89	0	13	Q6XD89_ROTGA	
+NSP1-3	virus	Q6XD88	NSP1-3	Q6XD88	0	13	Q6XD88_ROTGA	
+NSP100	yeast	Q02629	NUP100	Q02629	7	88	Nucleoporin NUP100/NSP100	w
+NSP116	yeast	Q02630	NUP116	Q02630	15	119	Nucleoporin NUP116/NSP116	w
+NSP1234	virus	A0MNM1_p28fc269671	nsP1234	A0MNM1	1	9	mRNA capping enzyme nsP1	
+NSP1234	virus	A0MNM1_p685d6fee09	nsP1234	A0MNM1	3	9	Protease nsP2	
+NSP1234	virus	A0MNM1_p97e56b6b48	nsP1234	A0MNM1	1	9	RNA directed RNA polymerase nsP4	
+NSP1234	virus	A0MNM1_pdea57fcec5	nsP1234	A0MNM1	1	9	Non structural protein 3	
+NSP2	arabidopsis-thaliana	O49326	NSP2	O49326	0	14	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-form	
+NSP2	glycine-max	I1JZ90	NSP2	I1JZ90	1	6	Uncharacterized protein	
+NSP2	human	O75815	BCAR3	O75815	29	176		
+NSP2	oryza-sativa-subsp-japonica	Q84Q92	NSP2	Q84Q92	2	9	Protein NODULATION SIGNALING PATHWAY 2	
+NSP2	virus	A0A088FP04_p5879b0a783		A0A088FP04	2	8	Protease nsP2	w
+NSP2	virus	A0A1L6BXK2	NSP2	A0A1L6BXK2	0	13	A0A1L6BXK2_9REOV	
+NSP2	virus	A0A5B7LUG1_p86cc028710		A0A5B7LUG1	2	8	Protease nsP2	w
+NSP2	virus	A0MNM1_p685d6fee09	nsP1234	A0MNM1	3	9	Protease nsP2	w
+NSP2	virus	A1YZ45_pf63d27471d		A1YZ45	1	8	Protease nsP2	w
+NSP2	virus	A8RNT3_pf97129cffb		A8RNT3	2	8	Protease nsP2	w
+NSP2	virus	C1KGU9_p4a4d977d65		C1KGU9	1	8	Protease nsP2	w
+NSP2	virus	C9DZL0_pdc75533489		C9DZL0	2	8	Protease nsP2	w
+NSP2	virus	D1KRD7_p43d9dab8c0		D1KRD7	1	8	Protease nsP2	w
+NSP2	virus	H6STZ2_pb684c8eba8		H6STZ2	1	7	Protease nsP2	w
+NSP2	virus	H6STZ4_p791956cfa9		H6STZ4	1	7	Protease nsP2	w
+NSP2	virus	H6STZ6_pedcf120829		H6STZ6	0	7	Protease nsP2	w
+NSP2	virus	H6SU00_pb411cc05be		H6SU00	1	7	Protease nsP2	w
+NSP2	virus	H6SU02_p8621628a36		H6SU02	1	7	Protease nsP2	w
+NSP2	virus	H6SU08_p1d8621567f		H6SU08	1	7	Protease nsP2	w
+NSP2	virus	J9U6E6_pce97f92c28		J9U6E6	2	8	Protease nsP2	w
+NSP2	virus	O90368_p5c288a9357		O90368	2	8	Protease nsP2	w
+NSP2	virus	O90370_p683591c811		O90370	3	9	Protease nsP2	w
+NSP2	virus	P03317_p34e46e02db		P03317	2	9	Protease nsP2	w
+NSP2	virus	P08411_pdc82e9ba54		P08411	3	9	Protease nsP2	w
+NSP2	virus	P13886_p0caeb0817b		P13886	3	9	Protease nsP2	w
+NSP2	virus	P13896_pd2f7e3830f		P13896	1	8	Protease nsP2	w
+NSP2	virus	P27282_p50efc87164		P27282	1	8	Protease nsP2	w
+NSP2	virus	P27283_p71b7f472bb		P27283	2	8	Protease nsP2	w
+NSP2	virus	P36327_p92efcd05c8		P36327	2	8	Protease nsP2	w
+NSP2	virus	P36328_p412fc0831a		P36328	1	8	Protease nsP2	w
+NSP2	virus	Q306W8_p8a0d3d2555		Q306W8	1	8	Protease nsP2	w
+NSP2	virus	Q5Y389_pd201f8d59d		Q5Y389	2	8	Protease nsP2	w
+NSP2	virus	Q66580_p9275169084		Q66580	1	8	Protease nsP2	w
+NSP2	virus	Q6XD86	NSP2	Q6XD86	0	13	Non-structural protein 2	
+NSP2	virus	Q86924_p1bf4c2bc53		Q86924	2	8	Protease nsP2	w
+NSP2	virus	Q88978_p304779d24b		Q88978	1	8	Protease nsP2	w
+NSP2	virus	Q8JUX6_p9226e6a0c3		Q8JUX6	3	10	Protease nsP2	w
+NSP2	virus	Q8QL53_p7cedc20145		Q8QL53	1	9	Protease nsP2	w
+NSP2	virus	Q8QTI7_pd4d5e3aef8		Q8QTI7	2	8	Protease nsP2	w
+NSP2	virus	Q8QZ73_pcc19c67515		Q8QZ73	2	8	Protease nsP2	w
+NSP2	virus	Q9JGL0_p42fa82b9b8		Q9JGL0	2	8	Protease nsP2	w
+NSP2	virus	Q9WJC6_p791a25b5e6		Q9WJC6	1	8	Protease nsP2	w
+NSP2	virus	Q9WJC8_ped919fbc3a		Q9WJC8	1	8	Protease nsP2	w
+NSP2	virus	Q9WJC9_pb3c03f151e		Q9WJC9	1	8	Protease nsP2	w
+NSP2	virus	Q9WJD0_paf8468afab		Q9WJD0	1	8	Protease nsP2	w
+NSP2	virus	Q9WJD1_pfe989f0e31		Q9WJD1	2	8	Protease nsP2	w
+NSP2	virus	Q9WJD2_p0257462f5d		Q9WJD2	1	8	Protease nsP2	w
+NSP2	virus	Q9WJD3_p7d6b1c013d		Q9WJD3	1	8	Protease nsP2	w
+NSP2	virus	Q9WJD4_pc2f87151e6		Q9WJD4	1	8	Protease nsP2	w
+NSP2	virus	Q9YJX8_p4557edb904		Q9YJX8	2	8	Protease nsP2	w
+NSP2	virus	W8REW3_p8a0d3d2555	NSP	W8REW3	1	8	Protease nsP2	w
+NSP3	arabidopsis-thaliana	O04318	NSP3	O04318	0	8	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-form	
+NSP3	human	Q8N5H7	SH2D3C	Q8N5H7	55	325		
+NSP3	virus	A0A1L6BXK7	NSP3	A0A1L6BXK7	1	13	A0A1L6BXK7_9REOV	
+NSP3	virus	Q6XD87	NSP3	Q6XD87	1	13	Non-structural protein 3	
+NSP4	arabidopsis-thaliana	O04316	NSP4	O04316	0	10	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-form	
+NSP4	human	Q6UWY2	PRSS57	Q6UWY2	16	162	Serine protease 57 (EC 3.4.21.-) (Neutrophil serine protease	w
+NSP4	virus	A0A088FP04_p4283dbfe95		A0A088FP04	2	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	A0A1L6BXL5	NSP4	A0A1L6BXL5	0	13	A0A1L6BXL5_9REOV	
+NSP4	virus	A0A5B7LUG1_pd40a6e6eaa		A0A5B7LUG1	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	A0MNM1_p97e56b6b48	nsP1234	A0MNM1	1	9	RNA directed RNA polymerase nsP4	w
+NSP4	virus	A1YZ45_p6daa7c1420		A1YZ45	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	A8RNT3_pb04c2ba1eb		A8RNT3	2	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	C1KGU9_p16dba1d354		C1KGU9	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	C7EPG3_pa6cdc6462d		C7EPG3	0	6	RNA directed RNA polymerase nsP4	w
+NSP4	virus	C9DZL0_pf7242c4cd1		C9DZL0	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	D1KRD7_pff81821055		D1KRD7	2	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	O90368_p8ee2b57706		O90368	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	O90370_p2160ce14d2		O90370	1	9	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P03317_p286da12c79		P03317	1	9	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P08411_p6d0ea44e65		P08411	1	9	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P13886_p69fe797439		P13886	1	9	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P13887_p703fb7e948		P13887	0	2	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P13896_p86da8d9355		P13896	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P27282_p60cfb3418f		P27282	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P27283_pec4249f3f8		P27283	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P36327_p4ad678bb45		P36327	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P36328_pa748c328bb		P36328	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	P87515_pd59c1074fa		P87515	0	7	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q306W8_pbacbcaa8e0		Q306W8	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q5Y389_p5802b453c1		Q5Y389	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q6XD97	NSP4	Q6XD97	1	13	Non-structural glycoprotein 4	
+NSP4	virus	Q86924_pbe1cf1a6d3		Q86924	2	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q88978_pa0635ee3e1		Q88978	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q8JUX6_p3f7df2b149		Q8JUX6	1	10	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q8QL53_p1265fa7056		Q8QL53	2	9	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q8QTI7_p814993eb69		Q8QTI7	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q8QZ73_pfc413eeb34		Q8QZ73	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9JGL0_pc14c7b2a3a		Q9JGL0	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJC6_ped1b1c863d		Q9WJC6	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJC8_p3459446fcf		Q9WJC8	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJC9_p5eb1576bf8		Q9WJC9	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJD0_pa9d00a9c68		Q9WJD0	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJD1_p24ecb24b8e		Q9WJD1	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJD2_pda36984417		Q9WJD2	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJD3_p1c97224467		Q9WJD3	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9WJD4_p4e3e36899e		Q9WJD4	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	Q9YJX8_p63c7cd87ad		Q9YJX8	1	8	RNA directed RNA polymerase nsP4	w
+NSP4	virus	W8REW3_p77ef3671d9	NSP	W8REW3	1	8	RNA directed RNA polymerase nsP4	w
+NSP49	yeast	Q02199	NUP49	Q02199	6	68	Nucleoporin NUP49/NSP49	w
+NSP5	arabidopsis-thaliana	Q93XW5	NSP5	Q93XW5	0	9	Thiohydroximate-O-sulfate sulfur/sulfate-lyase (nitrile-form	
+NSP5	human	Q5M775	SPECC1	Q5M775	85	243		
+NSP5	virus	A0A1L6BXL0	NSP5	A0A1L6BXL0	3	13	A0A1L6BXL0_9REOV	
+NSP5	virus	Q6XD85	NSP5	Q6XD85	1	13	Non-structural protein 5	
+NSPB-11	worm	O45446	nspb-11	O45446	0	3	Secreted protein	
+NSPB-12	worm	Q19279	nspb-12	Q19279	0	3	Nematode Specific Peptide family, group B	
+NSPC	streptococcus-pneumoniae	Q8DQ69	nspC	Q8DQ69	0	1	Carboxynorspermidine decarboxylase	
+NSPC1	human	Q9BSM1	PCGF1	Q9BSM1	76	627		
+NSPD-1	worm	O44902	nspd-1	O44902	0	4	Nematode Specific Peptide family, group D	
+NSPD-5	worm	G5EES8	nspd-5	G5EES8	0	5	Nematode Specific Peptide family, group D	
+NSPG-10	worm	Q19591	nspg-10	Q19591	0	10	Secreted protein	
+NSPG-11	worm	Q20590	nspg-11	Q20590	0	1	DUF19 domain-containing protein	
+NSPG-12	worm	Q95Y27	nspg-12	Q95Y27	0	7	DUF19 domain-containing protein	
+NSPG-13	worm	Q95Y28	nspg-13	Q95Y28	0	7	DUF19 domain-containing protein	
+NSPG-14	worm	Q95Y29	nspg-14	Q95Y29	0	8	DUF19 domain-containing protein	
+NSPG-6	worm	Q20865	nspg-6	Q20865	0	1	DUF19 domain-containing protein	
+NSPG-7.1	worm	O01254	nspg-7.1	O01254	0	5	DUF19 domain-containing protein	
+NSPG-7.2	worm	Q9N3H0	nspg-7.2	Q9N3H0	0	5	DUF19 domain-containing protein	
+NSPG-9	worm	O17954	nspg-9	O17954	0	6	DUF19 domain-containing protein	
+NSPH-2	worm	Q94401	nsph-2	Q94401	0	5	Nematode Specific Peptide family	
+NSPH-3.1	worm	Q9XW38	nsph-3.1	Q9XW38	0	5	Nematode Specific Peptide family	
+NSPH-3.2	worm	Q17633	nsph-3.2	Q17633	0	6	Nematode Specific Peptide family	
+NSPH-4.2	worm	G5ECF8	nsph-4.2	G5ECF8	0	4	Nematode Specific Peptide family	
+NSPL1	human	O75298	RTN2	O75298	7	63		
+NSPL2	human	O95197	RTN3	O95197	26	186		
+NSPLI	human	O75298	RTN2	O75298	7	63	Reticulon-2 (Neuroendocrine-specific protein-like 1) (NSP-li	w

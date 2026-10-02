@@ -1,16 +1,53 @@
-HAS1	candida-albicans-237561	Q5AK59	HAS1	Q5AK59	6	99	ATP-dependent RNA helicase HAS1
-HAS1	cladophialophora-carrionii	A0A1C1CH15	HAS1	A0A1C1CH15	6	124	ATP-dependent RNA helicase
-HAS1	mus-musculus	Q61647	Has1	Q61647	5	61	Hyaluronan synthase 1
-HAS1	rattus-norvegicus	Q8CH93	Has1	Q8CH93	9	52	Hyaluronan synthase 1
-HAS1	schizosaccharomyces-pombe	Q09916	has1	Q09916	2	85	ATP-dependent RNA helicase has1
-HAS2	mus-musculus	P70312	Has2	P70312	1	66	Hyaluronan synthase 2
-HAS2	rattus-norvegicus	O35776	Has2	O35776	2	59	Hyaluronan synthase 2
-HAS3	mus-musculus	O08650	Has3	O08650	3	61	Hyaluronan synthase 3
-HASAP	pseudomonas-aeruginosa	G3XD33	hasAp	G3XD33	2	17	Heme acquisition protein HasAp
-HASD	pseudomonas-aeruginosa	Q9HYJ8	hasD	Q9HYJ8	1	2	Transport protein HasD
-HASE	pseudomonas-aeruginosa	Q9HYJ9	hasE	Q9HYJ9	0	21	Membrane fusion protein (MFP) family protein
-HASPB	leishmania-infantum	A4I0F4	HASPB	A4I0F4	1	22	Hydrophilic acylated surface protein b
-HASPIN	arabidopsis-thaliana	O80528	HASPIN	O80528	5	6	Serine/threonine-protein kinase haspin homolog
-HASPIN	mus-musculus	Q9Z0R0	Haspin	Q9Z0R0	2	4	Serine/threonine-protein kinase haspin
-HASPIN	rattus-norvegicus	M0RBT0	Haspin	M0RBT0	2	3	Serine/threonine-protein kinase haspin
-HASR	pseudomonas-aeruginosa	Q9HYJ7	hasR	Q9HYJ7	1	15	Heme uptake outer membrane receptor HasR
+HAS	human	Q92839	HAS1	Q92839	18	197		
+HAS1	candida-albicans-237561	Q5AK59	HAS1	Q5AK59	6	99	ATP-dependent RNA helicase HAS1	
+HAS1	cladophialophora-carrionii	A0A1C1CH15	HAS1	A0A1C1CH15	6	124	ATP-dependent RNA helicase	
+HAS1	human	Q92839	HAS1	Q92839	18	197	Hyaluronan synthase 1 (EC 2.4.1.212) (Hyaluronate synthase 1	
+HAS1	mus-musculus	Q61647	Has1	Q61647	5	61	Hyaluronan synthase 1	
+HAS1	rattus-norvegicus	Q8CH93	Has1	Q8CH93	9	52	Hyaluronan synthase 1	
+HAS1	schizosaccharomyces-pombe	Q09916	has1	Q09916	2	85	ATP-dependent RNA helicase has1	
+HAS1	yeast	Q03532	HAS1	Q03532	12	291	ATP-dependent RNA helicase HAS1	
+HAS1	zebrafish	X1WCR3	has1	X1WCR3	7	50	Hyaluronan synthase 1	
+HAS2	human	Q92819	HAS2	Q92819	31	275	Hyaluronan synthase 2 (EC 2.4.1.212) (Hyaluronate synthase 2	
+HAS2	mus-musculus	P70312	Has2	P70312	1	66	Hyaluronan synthase 2	
+HAS2	rattus-norvegicus	O35776	Has2	O35776	2	59	Hyaluronan synthase 2	
+HAS2	zebrafish	Q9DG41	has2	Q9DG41	1	50	Hyaluronan synthase 2	
+HAS3	human	O00219	HAS3	O00219	14	189	Hyaluronan synthase 3 (EC 2.4.1.212) (Hyaluronate synthase 3	
+HAS3	mus-musculus	O08650	Has3	O08650	3	61	Hyaluronan synthase 3	
+HAS3	zebrafish	Q1LUE8	has3	Q1LUE8	2	50	Hyaluronan synthase 3	
+HAS3P_HUMAN	human	C0HLZ6	HOXB-AS3	C0HLZ6	0	2		
+HASAP	pseudomonas-aeruginosa	G3XD33	hasAp	G3XD33	2	17	Heme acquisition protein HasAp	
+HASC	human	Q9ULZ3	PYCARD	Q9ULZ3	13	296	Apoptosis-associated speck-like protein containing a CARD (h	w
+HASD	pseudomonas-aeruginosa	Q9HYJ8	hasD	Q9HYJ8	1	2	Transport protein HasD	
+HASE	fly	FBgn0033968	hui	Q7JVV8	18	245	CG10200 (Hase und igel, isoform A) (Hase und igel, isoform B	w
+HASE	pseudomonas-aeruginosa	Q9HYJ9	hasE	Q9HYJ9	0	21	Membrane fusion protein (MFP) family protein	
+HASF	human	Q8NDZ4	DIPK2A	Q8NDZ4	16	131	Divergent protein kinase domain 2A (Deleted in autism protei	w
+HASF1	human	Q9NVP2	ASF1B	Q9NVP2	45	150	Histone chaperone ASF1B (Anti-silencing function protein 1 h	w
+HASF1	human	Q9Y294	ASF1A	Q9Y294	83	257	Histone chaperone ASF1A (Anti-silencing function protein 1 h	w
+HASF1A	human	Q9Y294	ASF1A	Q9Y294	83	257	Histone chaperone ASF1A (Anti-silencing function protein 1 h	w
+HASF1B	human	Q9NVP2	ASF1B	Q9NVP2	45	150	Histone chaperone ASF1B (Anti-silencing function protein 1 h	w
+HASH1	human	P50553	ASCL1	P50553	91	409		
+HASH2	human	Q99929	ASCL2	Q99929	101	401		
+HASH3	human	Q9NQ33	ASCL3	Q9NQ33	96	363		
+HASH4	human	Q6XD76	ASCL4	Q6XD76	81	368		
+HASH5	human	Q7RTU5	ASCL5	Q7RTU5	96	347	Achaete-scute homolog 5 (ASH-5) (hASH5) (Class A basic helix	w
+HASIC3	human	Q9UHC3	ASIC3	Q9UHC3	9	80	Acid-sensing ion channel 3 (ASIC3) (hASIC3) (Amiloride-sensi	w
+HASP	fly	FBgn0032797	Hasp	B7YZX0	2	7	Hig-anchoring scaffold protein, isoform G (Hig-anchoring sca	
+HASP-1	worm	G5EE25	hasp-1	G5EE25	1	9	non-specific serine/threonine protein kinase	
+HASP-2	worm	Q9BL96	hasp-2	Q9BL96	4	24	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+HASPB	leishmania-infantum	A4I0F4	HASPB	A4I0F4	1	22	Hydrophilic acylated surface protein b	
+HASPIN	arabidopsis-thaliana	O80528	HASPIN	O80528	5	6	Serine/threonine-protein kinase haspin homolog	
+HASPIN	fly	FBgn0046706	Haspin	P83103	104	1153	Serine/threonine-protein kinase haspin homolog (EC 2.7.11.1)	w
+HASPIN	fly	FBgn0046706	Haspin	P83103	104	1153	Serine/threonine-protein kinase haspin homolog (EC 2.7.11.1)	w
+HASPIN	human	Q8TF76	HASPIN	Q8TF76	33	216	Serine/threonine-protein kinase haspin (EC 2.7.11.1) (Germ c	
+HASPIN	mus-musculus	Q9Z0R0	Haspin	Q9Z0R0	2	4	Serine/threonine-protein kinase haspin	
+HASPIN	rattus-norvegicus	M0RBT0	Haspin	M0RBT0	2	3	Serine/threonine-protein kinase haspin	
+HASPIN	yeast	P32789	ALK2	P32789	2	25	Serine/threonine-protein kinase Haspin homolog ALK2 (EC 2.7.	w
+HASPIN	yeast	P43633	ALK1	P43633	0	7	Serine/threonine-protein kinase Haspin homolog ALK1	w
+HASPIN	zebrafish	A0A8M9PJE9	haspin	A0A8M9PJE9	0	3	Serine/threonine-protein kinase haspin	w
+HASPIN	zebrafish	A0A8M9PJE9	haspin	A0A8M9PJE9	0	3	Serine/threonine-protein kinase haspin	w
+HASPP28	human	Q13442	PDAP1	Q13442	21	252		
+HASP_HUMAN	human	Q8TF76	HASPIN	Q8TF76	33	216		
+HASR	pseudomonas-aeruginosa	Q9HYJ7	hasR	Q9HYJ7	1	15	Heme uptake outer membrane receptor HasR	
+HAST1	human	P50225	SULT1A1	P50225	30	123	Sulfotransferase 1A1 (ST1A1) (EC 2.8.2.1) (Aryl sulfotransfe	w
+HAST2	human	P50225	SULT1A1	P50225	30	123	Sulfotransferase 1A1 (ST1A1) (EC 2.8.2.1) (Aryl sulfotransfe	w
+HAST3	human	P0DMM9	SULT1A3	P0DMM9	5	30	Sulfotransferase 1A3 (ST1A3) (EC 2.8.2.1) (Aryl sulfotransfe	w

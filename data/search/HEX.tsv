@@ -1,24 +1,396 @@
-HEX1	candida-albicans-237561	A0A1D8PNR7	HEX1	A0A1D8PNR7	0	1	Beta-hexosaminidase
-HEX1	cladophialophora-carrionii	A0A1C1CZQ5	HEX1	A0A1C1CZQ5	0	1	Beta-hexosaminidase
-HEX3	candida-albicans-237561	Q5ALN5	HEX3	Q5ALN5	1	20	SUMO-targeted ubiquitin ligase complex subunit
-HEXA	mus-musculus	P29416	Hexa	P29416	1	36	Beta-hexosaminidase subunit alpha
-HEXA	rattus-norvegicus	Q641X3	Hexa	Q641X3	1	5	Beta-hexosaminidase subunit alpha
-HEXA	streptococcus-pneumoniae	P0A3R4	hexA	P0A3R4	2	12	DNA mismatch repair protein HexA
-HEXA1	dictyostelium-discoideum	P13723	hexa1	P13723	3	4	Beta-hexosaminidase subunit A1
-HEXA2	dictyostelium-discoideum	Q54SC9	hexa2	Q54SC9	4	4	Beta-hexosaminidase subunit A2
-HEXB	mus-musculus	P20060	Hexb	P20060	1	17	Beta-hexosaminidase subunit beta
-HEXB	rattus-norvegicus	Q6AXR4	Hexb	Q6AXR4	1	1	Beta-hexosaminidase subunit beta
-HEXB	streptococcus-pneumoniae	P0A3R2	hexB	P0A3R2	3	18	DNA mismatch repair protein HexB
-HEXB1	dictyostelium-discoideum	Q54K55	hexb1	Q54K55	3	4	Beta-hexosaminidase subunit B1
-HEXB2	dictyostelium-discoideum	Q54K56	hexb2	Q54K56	3	4	Beta-hexosaminidase subunit B2
-HEXBP	leishmania-infantum	A4IDD5	HEXBP	A4IDD5	0	9	Putative universal minicircle sequence binding protein (UMSBP)
-HEXD	mus-musculus	Q3U4H6	Hexd	Q3U4H6	0	10	Hexosaminidase D
-HEXD	rattus-norvegicus	F1LR76	Hexd	F1LR76	1	30	Hexosaminidase D
-HEXIM1	mus-musculus	Q8R409	Hexim1	Q8R409	8	38	Protein HEXIM1
-HEXIM1	rattus-norvegicus	Q5M9G1	Hexim1	Q5M9G1	5	23	Protein HEXIM1
-HEXIM2	mus-musculus	Q3TVI4	Hexim2	Q3TVI4	3	16	Protein HEXIM2
-HEXIM2	rattus-norvegicus	A6HJQ2	Hexim2	A6HJQ2	5	17	HEXIM P-TEFb complex subunit 2
-HEXO1	arabidopsis-thaliana	A7WM73	HEXO1	A7WM73	2	8	Beta-hexosaminidase 1
-HEXO2	arabidopsis-thaliana	Q9SYK0	HEXO2	Q9SYK0	1	6	Beta-hexosaminidase 2
-HEXO2	cladophialophora-carrionii	A0A1C1CYN3	HEXO2	A0A1C1CYN3	0	1	Beta-hexosaminidase
-HEXO3	arabidopsis-thaliana	Q8L7S6	HEXO3	Q8L7S6	1	5	Beta-hexosaminidase 3
+HEX	human	Q03014	HHEX	Q03014	140	471		
+HEX-1	worm	Q22492	hex-1	Q22492	0	2	Beta-hexosaminidase A	
+HEX-2	worm	G5EFL1	hex-2	G5EFL1	0	6	beta-N-acetylhexosaminidase	
+HEX-3	worm	G5EDG9	hex-3	G5EDG9	0	6	beta-N-acetylhexosaminidase	
+HEX-4	worm	Q8WTK2	hex-4	Q8WTK2	0	6	beta-N-acetylhexosaminidase	
+HEX-5	worm	G5EEC8	hex-5	G5EEC8	1	7	beta-N-acetylhexosaminidase	
+HEX-A	fly	FBgn0001186	Hex-A	Q9W330	29	256	Phosphotransferase (EC 2.7.1.-)	
+HEX-C	fly	FBgn0001187	Hex-C	Q7JYW9	7	108	Phosphotransferase (EC 2.7.1.-)	
+HEX-T	fly	FBgn0042710	Hex-T	Q9NFT7	6	100	Hexokinase type 2 (EC 2.7.1.1)	
+HEX-T1	fly	FBgn0042711	Hexl	Q9NFT9	3	101		
+HEX-T2	fly	FBgn0042710	Hex-T	Q9NFT7	6	100		
+HEX1	candida-albicans-237561	A0A1D8PNR7	HEX1	A0A1D8PNR7	0	1	Beta-hexosaminidase	
+HEX1	cladophialophora-carrionii	A0A1C1CZQ5	HEX1	A0A1C1CZQ5	0	1	Beta-hexosaminidase	
+HEX1	human	Q9UQ84	EXO1	Q9UQ84	30	193		
+HEX3	candida-albicans-237561	Q5ALN5	HEX3	Q5ALN5	1	20	SUMO-targeted ubiquitin ligase complex subunit	
+HEXA	human	P06865	HEXA	P06865	6	113	Beta-hexosaminidase subunit alpha (EC 3.2.1.52) (Beta-N-acet	
+HEXA	human	Q9H8Q6	HEXA-AS1	Q9H8Q6	0	1	Putative uncharacterized protein encoded by HEXA-AS1 (HEXA a	w
+HEXA	mus-musculus	P29416	Hexa	P29416	1	36	Beta-hexosaminidase subunit alpha	
+HEXA	rattus-norvegicus	Q641X3	Hexa	Q641X3	1	5	Beta-hexosaminidase subunit alpha	
+HEXA	streptococcus-pneumoniae	P0A3R4	hexA	P0A3R4	2	12	DNA mismatch repair protein HexA	
+HEXA-AS1	human	Q9H8Q6	HEXA-AS1	Q9H8Q6	0	1	Putative uncharacterized protein encoded by HEXA-AS1 (HEXA a	
+HEXA1	dictyostelium-discoideum	P13723	hexa1	P13723	3	4	Beta-hexosaminidase subunit A1	
+HEXA2	dictyostelium-discoideum	Q54SC9	hexa2	Q54SC9	4	4	Beta-hexosaminidase subunit A2	
+HEXABRACHION	human	P24821	TNC	P24821	22	158	Tenascin (TN) (Cytotactin) (GMEM) (GP 150-225) (Glioma-assoc	w
+HEXAGON	fly	FBgn0015926	dah	Q24175	3	24	Discontinuous actin hexagon (LD05408p)	w
+HEXAKISPHOSPHATE	human	O43314	PPIP5K2	O43314	11	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+HEXAKISPHOSPHATE	human	Q6PFW1	PPIP5K1	Q6PFW1	3	58	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+HEXAKISPHOSPHATE	human	Q92551	IP6K1	Q92551	3	121	Inositol hexakisphosphate kinase 1 (InsP6 kinase 1) (EC 2.7.	w
+HEXAKISPHOSPHATE	human	Q96PC2	IP6K3	Q96PC2	2	74	Inositol hexakisphosphate kinase 3 (InsP6 kinase 3) (EC 2.7.	w
+HEXAKISPHOSPHATE	human	Q9UHH9	IP6K2	Q9UHH9	1	49	Inositol hexakisphosphate kinase 2 (InsP6 kinase 2) (InsP6K2	w
+HEXAKISPHOSPHATE	worm	P91309	F46F11.1	P91309	0	5	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+HEXAKISPHOSPHATE	yeast	Q06685	VIP1	Q06685	0	67	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+HEXAKISPHOSPHATE	yeast	Q12494	KCS1	Q12494	1	15	Inositol hexakisphosphate kinase 1	w
+HEXAKISPHOSPHATE	zebrafish	E7F4I8	ppip5k1b	E7F4I8	0	6	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+HEXAKISPHOSPHATE	zebrafish	E7FFN5	ppip5k1a	E7FFN5	1	6	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+HEXAMERIN-1-ALPHA	fly	FBgn0002562	Lsp1alpha	P11995	5	250	Larval serum protein 1 alpha chain (Hexamerin-1-alpha)	w
+HEXAMERIN-1-BETA	fly	FBgn0002563	Lsp1beta	P11996	7	253	Larval serum protein 1 beta chain (Hexamerin-1-beta)	w
+HEXAMERIN-1-GAMMA	fly	FBgn0002564	Lsp1gamma	P11997	2	252	Larval serum protein 1 gamma chain (Hexamerin-1-gamma)	w
+HEXAMERIN-2	fly	FBgn0002565	Lsp2	Q24388	5	287	Larval serum protein 2 (LSP-2) (Hexamerin-2)	w
+HEXAMETHYLENE	fly	FBgn0038251	Hexim	Q8INF6	10	47	Hexamethylene bisacetamide inducible, isoform B	w
+HEXAMETHYLENE	human	O94992	HEXIM1	O94992	129	968	Protein HEXIM1 (Cardiac lineage protein 1) (Estrogen down-re	w
+HEXAMETHYLENE	human	Q96MH2	HEXIM2	Q96MH2	13	124	Protein HEXIM2 (Hexamethylene bis-acetamide-inducible protei	w
+HEXAPHOSPHATE	human	O95989	NUDT3	O95989	9	136	Diphosphoinositol polyphosphate phosphohydrolase 1 (DIPP-1) 	w
+HEXAPHOSPHATE	human	Q92551	IP6K1	Q92551	3	121	Inositol hexakisphosphate kinase 1 (InsP6 kinase 1) (EC 2.7.	w
+HEXAPHOSPHATE	human	Q96PC2	IP6K3	Q96PC2	2	74	Inositol hexakisphosphate kinase 3 (InsP6 kinase 3) (EC 2.7.	w
+HEXAPRENYL	yeast	P18900	COQ1	P18900	0	12	Hexaprenyl pyrophosphate synthase, mitochondrial	w
+HEXARIBONUCLEOTIDE-BINDING	human	O43251	RBFOX2	O43251	22	224	RNA binding protein fox-1 homolog 2 (Fox-1 homolog B) (Hexar	w
+HEXARIBONUCLEOTIDE-BINDING	human	Q9NWB1	RBFOX1	Q9NWB1	13	107	RNA binding protein fox-1 homolog 1 (Ataxin-2-binding protei	w
+HEXA_HUMAN	human	P06865	HEXA	P06865	6	113		
+HEXA_MOUSE	fly	HEXA_MOUSE	HEXA_MOUSE		0	1		
+HEXB	human	P07686	HEXB	P07686	7	122	Beta-hexosaminidase subunit beta (EC 3.2.1.52) (Beta-N-acety	
+HEXB	mus-musculus	P20060	Hexb	P20060	1	17	Beta-hexosaminidase subunit beta	
+HEXB	rattus-norvegicus	Q6AXR4	Hexb	Q6AXR4	1	1	Beta-hexosaminidase subunit beta	
+HEXB	streptococcus-pneumoniae	P0A3R2	hexB	P0A3R2	3	18	DNA mismatch repair protein HexB	
+HEXB	zebrafish	A2BHD8	hexb	A2BHD8	1	4	Beta-hexosaminidase	
+HEXB1	dictyostelium-discoideum	Q54K55	hexb1	Q54K55	3	4	Beta-hexosaminidase subunit B1	
+HEXB2	dictyostelium-discoideum	Q54K56	hexb2	Q54K56	3	4	Beta-hexosaminidase subunit B2	
+HEXBP	leishmania-infantum	A4IDD5	HEXBP	A4IDD5	0	9	Putative universal minicircle sequence binding protein (UMSB	
+HEXB_HUMAN	human	P07686	HEXB	P07686	7	122		
+HEXB_MOUSE	fly	HEXB_MOUSE	HEXB_MOUSE		0	1		
+HEXC	human	O60502	OGA	O60502	9	158		
+HEXD	human	Q8WVB3	HEXD	Q8WVB3	5	56	Hexosaminidase D (EC 3.2.1.52) (Beta-N-acetylhexosaminidase)	
+HEXD	mus-musculus	Q3U4H6	Hexd	Q3U4H6	0	10	Hexosaminidase D	
+HEXD	rattus-norvegicus	F1LR76	Hexd	F1LR76	1	30	Hexosaminidase D	
+HEXD	zebrafish	F1R118	hexd	F1R118	0	72	beta-N-acetylhexosaminidase	
+HEXDC	human	Q8WVB3	HEXD	Q8WVB3	5	56		
+HEXD_HUMAN	human	Q8WVB3	HEXD	Q8WVB3	5	56		
+HEXI1_HUMAN	human	O94992	HEXIM1	O94992	129	968		
+HEXI2_HUMAN	human	Q96MH2	HEXIM2	Q96MH2	13	124		
+HEXIM	fly	FBgn0038251	Hexim	Q8INF6	10	47	Hexamethylene bisacetamide inducible, isoform B	
+HEXIM1	human	O94992	HEXIM1	O94992	129	968	Protein HEXIM1 (Cardiac lineage protein 1) (Estrogen down-re	
+HEXIM1	mus-musculus	Q8R409	Hexim1	Q8R409	8	38	Protein HEXIM1	
+HEXIM1	rattus-norvegicus	Q5M9G1	Hexim1	Q5M9G1	5	23	Protein HEXIM1	
+HEXIM1	zebrafish	A5D8S8	hexim1	A5D8S8	3	46	Protein HEXIM1	w
+HEXIM1	zebrafish	A5D8S8	hexim1	A5D8S8	3	46	Protein HEXIM1	w
+HEXIM2	human	Q96MH2	HEXIM2	Q96MH2	13	124	Protein HEXIM2 (Hexamethylene bis-acetamide-inducible protei	
+HEXIM2	mus-musculus	Q3TVI4	Hexim2	Q3TVI4	3	16	Protein HEXIM2	
+HEXIM2	rattus-norvegicus	A6HJQ2	Hexim2	A6HJQ2	5	17	HEXIM P-TEFb complex subunit 2	
+HEXL	fly	FBgn0042711	Hexl	Q9NFT9	3	101	Hexokinase type 1 (EC 2.7.1.1)	
+HEXO1	arabidopsis-thaliana	A7WM73	HEXO1	A7WM73	2	8	Beta-hexosaminidase 1	
+HEXO1	fly	FBgn0041630	Hexo1	Q0E8H9	2	12	beta-N-acetylhexosaminidase (EC 3.2.1.52)	
+HEXO1	human	Q9UQ84	EXO1	Q9UQ84	30	193	Exonuclease 1 (hExo1) (EC 3.1.-.-) (Exonuclease I) (hExoI)	w
+HEXO2	arabidopsis-thaliana	Q9SYK0	HEXO2	Q9SYK0	1	6	Beta-hexosaminidase 2	
+HEXO2	cladophialophora-carrionii	A0A1C1CYN3	HEXO2	A0A1C1CYN3	0	1	Beta-hexosaminidase	
+HEXO2	fly	FBgn0041629	Hexo2	Q9W3C4	25	257	beta-N-acetylhexosaminidase (EC 3.2.1.52)	
+HEXO3	arabidopsis-thaliana	Q8L7S6	HEXO3	Q8L7S6	1	5	Beta-hexosaminidase 3	
+HEXO5	human	Q9H790	EXO5	Q9H790	11	40	Exonuclease V (Exo V) (hExo5) (EC 3.1.-.-) (Defects in morph	w
+HEXOI	human	Q9UQ84	EXO1	Q9UQ84	30	193	Exonuclease 1 (hExo1) (EC 3.1.-.-) (Exonuclease I) (hExoI)	w
+HEXOKINASE	fly	FBgn0042710	Hex-T	Q9NFT7	6	100	Hexokinase type 2 (EC 2.7.1.1)	w
+HEXOKINASE	fly	FBgn0042711	Hexl	Q9NFT9	3	101	Hexokinase type 1 (EC 2.7.1.1)	w
+HEXOKINASE	human	P19367	HK1	P19367	9	258	Hexokinase-1 (EC 2.7.1.1) (Brain form hexokinase) (Hexokinas	w
+HEXOKINASE	human	P35557	GCK	P35557	3	97	Hexokinase-4 (HK4) (EC 2.7.1.1) (Glucokinase) (Hexokinase ty	w
+HEXOKINASE	human	P52789	HK2	P52789	2	147	Hexokinase-2 (EC 2.7.1.1) (Hexokinase type II) (HK II) (Hexo	w
+HEXOKINASE	human	P52790	HK3	P52790	1	56	Hexokinase-3 (EC 2.7.1.1) (Hexokinase type III) (HK III) (He	w
+HEXOKINASE	human	Q2TB90	HKDC1	Q2TB90	3	78	Hexokinase HKDC1 (EC 2.7.1.1) (Hexokinase domain-containing 	w
+HEXOKINASE-1	human	P19367	HK1	P19367	9	258	Hexokinase-1 (EC 2.7.1.1) (Brain form hexokinase) (Hexokinas	w
+HEXOKINASE-1	yeast	P04806	HXK1	P04806	2	33	Hexokinase-1	w
+HEXOKINASE-2	human	P52789	HK2	P52789	2	147	Hexokinase-2 (EC 2.7.1.1) (Hexokinase type II) (HK II) (Hexo	w
+HEXOKINASE-2	yeast	P04807	HXK2	P04807	2	46	Hexokinase-2	w
+HEXOKINASE-2	zebrafish	B8A5H6	hkdc1	B8A5H6	1	47	Hexokinase-2	w
+HEXOKINASE-3	human	P52790	HK3	P52790	1	56	Hexokinase-3 (EC 2.7.1.1) (Hexokinase type III) (HK III) (He	w
+HEXOKINASE-4	human	P35557	GCK	P35557	3	97	Hexokinase-4 (HK4) (EC 2.7.1.1) (Glucokinase) (Hexokinase ty	w
+HEXOKINASE-A	human	P19367	HK1	P19367	9	258	Hexokinase-1 (EC 2.7.1.1) (Brain form hexokinase) (Hexokinas	w
+HEXOKINASE-B	human	P52789	HK2	P52789	2	147	Hexokinase-2 (EC 2.7.1.1) (Hexokinase type II) (HK II) (Hexo	w
+HEXOKINASE-C	human	P52790	HK3	P52790	1	56	Hexokinase-3 (EC 2.7.1.1) (Hexokinase type III) (HK III) (He	w
+HEXOKINASE-D	human	P35557	GCK	P35557	3	97	Hexokinase-4 (HK4) (EC 2.7.1.1) (Glucokinase) (Hexokinase ty	w
+HEXON	virus	A0A059XN69	L3	A0A059XN69	0	30	Hexon protein	w
+HEXON	virus	A0A075FBK8		A0A075FBK8	1	35	Hexon protein	w
+HEXON	virus	A0A076FYV7		A0A076FYV7	0	34	Hexon protein	w
+HEXON	virus	A0A097IWC4	L3	A0A097IWC4	1	34	Hexon protein	w
+HEXON	virus	A0A0A1ERN2	L3	A0A0A1ERN2	1	15	Hexon protein	w
+HEXON	virus	A0A0A1ERP5	L3	A0A0A1ERP5	1	15	Hexon protein	w
+HEXON	virus	A0A0A1ERR0	L3	A0A0A1ERR0	1	15	Hexon protein	w
+HEXON	virus	A0A0A7JT11	PAV19gp12	A0A0A7JT11	0	29	Hexon protein	w
+HEXON	virus	A0A0K0MGH1	15	A0A0K0MGH1	0	30	Hexon protein	w
+HEXON	virus	A0A0K1DCH6	L3	A0A0K1DCH6	1	34	Hexon protein	w
+HEXON	virus	A0A0M4LS51	hexon	A0A0M4LS51	0	28	Hexon protein	w
+HEXON	virus	A0A0M4LS51	hexon	A0A0M4LS51	0	28	Hexon protein	w
+HEXON	virus	A0A0M4MF02	L3	A0A0M4MF02	1	36	Hexon protein	w
+HEXON	virus	A0A0M4MFL5	L3	A0A0M4MFL5	1	34	Hexon protein	w
+HEXON	virus	A0A0M4N3Z8	L3	A0A0M4N3Z8	1	36	Hexon protein	w
+HEXON	virus	A0A0M4NHE8	L3	A0A0M4NHE8	1	36	Hexon protein	w
+HEXON	virus	A0A0M5L3Y8	L3	A0A0M5L3Y8	1	36	Hexon protein	w
+HEXON	virus	A0A161CB96	CSPAdV-2_gp11	A0A161CB96	1	22	Hexon protein	w
+HEXON	virus	A0A161DIK7	L3	A0A161DIK7	1	32	Hexon protein	w
+HEXON	virus	A0A191ULJ1		A0A191ULJ1	0	37	Hexon protein	w
+HEXON	virus	A0A191ULM2		A0A191ULM2	1	37	Hexon protein	w
+HEXON	virus	A0A191ULR3		A0A191ULR3	0	37	Hexon protein	w
+HEXON	virus	A0A191ULW0		A0A191ULW0	1	37	Hexon protein	w
+HEXON	virus	A0A191ULY5		A0A191ULY5	0	37	Hexon protein	w
+HEXON	virus	A0A191UM33		A0A191UM33	1	36	Hexon protein	w
+HEXON	virus	A0A191UM61		A0A191UM61	1	36	Hexon protein	w
+HEXON	virus	A0A1B0UHW9	L3	A0A1B0UHW9	1	27	Hexon protein	w
+HEXON	virus	A0A1B0UI01	L3	A0A1B0UI01	1	28	Hexon protein	w
+HEXON	virus	A0A1C8EG59	L3	A0A1C8EG59	1	32	Hexon protein	w
+HEXON	virus	A0A1D8QM84	hexon	A0A1D8QM84	0	34	Hexon protein	w
+HEXON	virus	A0A1D8QM84	hexon	A0A1D8QM84	0	34	Hexon protein	w
+HEXON	virus	A0A1J0FAP8	L3	A0A1J0FAP8	1	32	Hexon protein	w
+HEXON	virus	A0A1L3INX4	L3	A0A1L3INX4	1	34	Hexon protein	w
+HEXON	virus	A0A1P8SW72		A0A1P8SW72	1	42	Hexon protein	w
+HEXON	virus	A0A1X7MPJ1	L3	A0A1X7MPJ1	1	29	Hexon protein	w
+HEXON	virus	A0A1X9RIR7	L3	A0A1X9RIR7	1	29	Hexon protein	w
+HEXON	virus	A0A1X9RIV4	L3	A0A1X9RIV4	1	30	Hexon protein	w
+HEXON	virus	A0A1Y0B6H0	L3	A0A1Y0B6H0	1	28	Hexon protein	w
+HEXON	virus	A0A223PYS4		A0A223PYS4	1	25	Hexon protein	w
+HEXON	virus	A0A240FBG4	L3	A0A240FBG4	1	29	Hexon protein	w
+HEXON	virus	A0A2H4CJW5	L3	A0A2H4CJW5	1	36	Hexon protein	w
+HEXON	virus	A0A2H5AI85	L3	A0A2H5AI85	1	23	Hexon protein	w
+HEXON	virus	A0A2Z5E033		A0A2Z5E033	0	55	Hexon protein	w
+HEXON	virus	A0A344X9V1	L3	A0A344X9V1	1	25	Hexon protein	w
+HEXON	virus	A0A345S506	L3	A0A345S506	1	27	Hexon protein	w
+HEXON	virus	A0A348FKG8	L3	A0A348FKG8	1	30	Hexon protein	w
+HEXON	virus	A0A3G9ED66	L3	A0A3G9ED66	1	30	Hexon protein	w
+HEXON	virus	A0A3G9ED82	L3	A0A3G9ED82	1	30	Hexon protein	w
+HEXON	virus	A0A4P8PIP6		A0A4P8PIP6	0	48	Hexon protein	w
+HEXON	virus	A0A5B8MAI9	L3	A0A5B8MAI9	1	29	Hexon protein	w
+HEXON	virus	A0A5F2P0D4		A0A5F2P0D4	1	26	Hexon protein	w
+HEXON	virus	A0A5H2WT58	hexon	A0A5H2WT58	1	23	Hexon protein	w
+HEXON	virus	A0A5H2WT58	hexon	A0A5H2WT58	1	23	Hexon protein	w
+HEXON	virus	A0A5J6DDC0		A0A5J6DDC0	1	22	Hexon protein	w
+HEXON	virus	A0A5P9VJ24	L3	A0A5P9VJ24	1	31	Hexon protein	w
+HEXON	virus	A0A650BYH1		A0A650BYH1	1	53	Hexon protein	w
+HEXON	virus	A0A679A8G3	L3	A0A679A8G3	1	36	Hexon protein	w
+HEXON	virus	A0A6B9LJ79		A0A6B9LJ79	1	24	Hexon protein	w
+HEXON	virus	A0A6M3ZA61		A0A6M3ZA61	1	39	Hexon protein	w
+HEXON	virus	A0A6N3IR67		A0A6N3IR67	1	32	Hexon protein	w
+HEXON	virus	A0A7L9DIR7		A0A7L9DIR7	1	41	Hexon protein	w
+HEXON	virus	A0A7R7FRK6		A0A7R7FRK6	1	30	Hexon protein	w
+HEXON	virus	A0A9E7U5Z5		A0A9E7U5Z5	0	25	Hexon protein	w
+HEXON	virus	A0A9W3HRD5	L3	A0A9W3HRD5	1	34	Hexon protein	w
+HEXON	virus	A0A9W3NBC3	L3	A0A9W3NBC3	1	32	Hexon protein	w
+HEXON	virus	A0A9W3NKS1	L3	A0A9W3NKS1	1	32	Hexon protein	w
+HEXON	virus	A0A9X9KQ68	L3	A0A9X9KQ68	1	27	Hexon protein	w
+HEXON	virus	A0AAE6M5T1	SPLgp14	A0AAE6M5T1	1	25	Hexon protein	w
+HEXON	virus	A0AAE7C1R1		A0AAE7C1R1	1	21	Hexon protein	w
+HEXON	virus	A0AAE8Y3Q5	L3	A0AAE8Y3Q5	1	30	Hexon protein	w
+HEXON	virus	A0ABX8SN88		A0ABX8SN88	1	25	Hexon protein	w
+HEXON	virus	A0ABZ0T7G8		A0ABZ0T7G8	2	28	Hexon protein	w
+HEXON	virus	A0AC61M071	L3	A0AC61M071	0	32	Hexon protein	w
+HEXON	virus	A0MK56	L3	A0MK56	1	35	Hexon protein	w
+HEXON	virus	A4ZKK1	L3	A4ZKK1	1	15	Hexon protein	w
+HEXON	virus	A4ZKL6	L3	A4ZKL6	1	15	Hexon protein	w
+HEXON	virus	B2VQF6	L3	B2VQF6	1	35	Hexon protein	w
+HEXON	virus	B2ZX21	L3	B2ZX21	1	36	Hexon protein	w
+HEXON	virus	B6DUA3	L2	B6DUA3	1	37	Hexon protein	w
+HEXON	virus	B6SBN0		B6SBN0	1	23	Hexon protein	w
+HEXON	virus	C3SAU7	L3	C3SAU7	1	28	Hexon protein	w
+HEXON	virus	D0Z5T2	Hexon	D0Z5T2	1	33	D0Z5T2_ADE31	
+HEXON	virus	D3X7C2	L3	D3X7C2	0	30	Hexon protein	w
+HEXON	virus	D4N3J0	L3	D4N3J0	1	40	Hexon protein	w
+HEXON	virus	D6CJE4	hexon	D6CJE4	0	36	Hexon protein	w
+HEXON	virus	D6CJE4	hexon	D6CJE4	0	36	Hexon protein	w
+HEXON	virus	E0YC68		E0YC68	1	37	Hexon protein	w
+HEXON	virus	E1AI23	L3	E1AI23	1	36	Hexon protein	w
+HEXON	virus	E1U5P0	L3	E1U5P0	1	54	Hexon protein	w
+HEXON	virus	E7CH42		E7CH42	1	27	Hexon protein	w
+HEXON	virus	F2WTL0	L3	F2WTL0	0	32	Hexon protein	w
+HEXON	virus	F2WTP2	L3	F2WTP2	1	32	Hexon protein	w
+HEXON	virus	F6KSU9	L3	F6KSU9	1	32	Hexon protein	w
+HEXON	virus	G0ZAH0	L3	G0ZAH0	1	35	Hexon protein	w
+HEXON	virus	G1FQM8	L3	G1FQM8	1	30	Hexon protein	w
+HEXON	virus	G5CZ86	hexon	G5CZ86	1	31	Hexon protein	w
+HEXON	virus	G5CZ86	hexon	G5CZ86	1	31	Hexon protein	w
+HEXON	virus	G9B6K6		G9B6K6	0	23	Hexon protein	w
+HEXON	virus	G9G854	L3	G9G854	1	31	Hexon protein	w
+HEXON	virus	H6WWL4	L3	H6WWL4	1	38	Hexon protein	w
+HEXON	virus	H8PG04	L3	H8PG04	1	29	Hexon protein	w
+HEXON	virus	H8WQV9	hexon	H8WQV9	1	49	Hexon protein	w
+HEXON	virus	H8WQV9	hexon	H8WQV9	1	49	Hexon protein	w
+HEXON	virus	H9AA88	L3	H9AA88	1	32	Hexon protein	w
+HEXON	virus	I3PMN4	GoAdV4_hexon	I3PMN4	1	34	Hexon protein	w
+HEXON	virus	K9MNK4		K9MNK4	1	30	Hexon protein	w
+HEXON	virus	M0QTT7	L3	M0QTT7	1	39	Hexon protein	w
+HEXON	virus	M0QTX6	L3	M0QTX6	1	40	Hexon protein	w
+HEXON	virus	M0QU14	L3	M0QU14	0	40	Hexon protein	w
+HEXON	virus	M0QU88	L3	M0QU88	0	40	Hexon protein	w
+HEXON	virus	M0QUC7	L3	M0QUC7	1	39	Hexon protein	w
+HEXON	virus	M0QUG6	L3	M0QUG6	1	40	Hexon protein	w
+HEXON	virus	M0QUK5	L3	M0QUK5	1	40	Hexon protein	w
+HEXON	virus	M0QUP4	L3	M0QUP4	2	40	Hexon protein	w
+HEXON	virus	M0QUU1	L3	M0QUU1	1	40	Hexon protein	w
+HEXON	virus	M0QUY1	L3	M0QUY1	1	40	Hexon protein	w
+HEXON	virus	M0QV20	L3	M0QV20	1	40	Hexon protein	w
+HEXON	virus	M0QV60	L3	M0QV60	1	40	Hexon protein	w
+HEXON	virus	M0QVA0	L3	M0QVA0	1	40	Hexon protein	w
+HEXON	virus	M0QVD9	L3	M0QVD9	1	40	Hexon protein	w
+HEXON	virus	M0QVH9	L3	M0QVH9	1	40	Hexon protein	w
+HEXON	virus	M0QVL8	L3	M0QVL8	1	40	Hexon protein	w
+HEXON	virus	M0QVQ8	L3	M0QVQ8	1	40	Hexon protein	w
+HEXON	virus	M0QVU7	L3	M0QVU7	0	40	Hexon protein	w
+HEXON	virus	M9YYY2	L3	M9YYY2	1	34	Hexon protein	w
+HEXON	virus	M9YZ45	L3	M9YZ45	1	35	Hexon protein	w
+HEXON	virus	M9Z2K7	L3	M9Z2K7	1	36	Hexon protein	w
+HEXON	virus	O11421		O11421	0	29	Hexon protein	w
+HEXON	virus	O39619	L3	O39619	1	30	Hexon protein	w
+HEXON	virus	O71149		O71149	1	36	Hexon protein	w
+HEXON	virus	P03277	L3	P03277	1	45	Hexon protein	w
+HEXON	virus	P03278	L3	P03278	1	29	Hexon protein	w
+HEXON	virus	P04133	L3	P04133	0	31	Hexon protein	w
+HEXON	virus	P11819	L3	P11819	1	34	Hexon protein	w
+HEXON	virus	P19900	L3	P19900	1	27	Hexon protein	w
+HEXON	virus	P36853	L3	P36853	1	39	Hexon protein	w
+HEXON	virus	P42671	L3	P42671	1	38	Hexon protein	w
+HEXON	virus	P87562	L3	P87562	1	29	Hexon protein	w
+HEXON	virus	Q09TY4	L3	Q09TY4	1	16	Hexon protein	w
+HEXON	virus	Q0PLY2	L3	Q0PLY2	1	27	Hexon protein	w
+HEXON	virus	Q2KRX0	L3	Q2KRX0	1	44	Hexon protein	w
+HEXON	virus	Q2Y0H4	L3	Q2Y0H4	1	46	Hexon protein	w
+HEXON	virus	Q32UH3	L3	Q32UH3	0	39	Hexon protein	w
+HEXON	virus	Q3ZKU4	L3	Q3ZKU4	0	46	Hexon protein	w
+HEXON	virus	Q3ZKY9	L3	Q3ZKY9	1	41	Hexon protein	w
+HEXON	virus	Q4KSJ8	L3	Q4KSJ8	1	32	Hexon protein	w
+HEXON	virus	Q5C8P9	L3	Q5C8P9	1	35	Hexon protein	w
+HEXON	virus	Q6H1C4	L3	Q6H1C4	1	37	Hexon protein	w
+HEXON	virus	Q6QPA4	L3	Q6QPA4	1	36	Hexon protein	w
+HEXON	virus	Q6QPE0	L3	Q6QPE0	1	36	Hexon protein	w
+HEXON	virus	Q6QPH6	L3	Q6QPH6	0	36	Hexon protein	w
+HEXON	virus	Q6RK87	L3	Q6RK87	1	28	Hexon protein	w
+HEXON	virus	Q71BW8	L4	Q71BW8	1	36	Hexon protein	w
+HEXON	virus	Q83905		Q83905	1	30	Hexon protein	w
+HEXON	virus	Q8B661	L3	Q8B661	1	6	Hexon protein	w
+HEXON	virus	Q8B8T3	L3	Q8B8T3	1	38	Hexon protein	w
+HEXON	virus	Q8JN67	L3	Q8JN67	0	28	Hexon protein	w
+HEXON	virus	Q994D9	L3	Q994D9	1	27	Hexon protein	w
+HEXON	virus	Q9IIH5		Q9IIH5	1	23	Hexon protein	w
+HEXON	virus	Q9QM73		Q9QM73	1	15	Hexon protein	w
+HEXON	virus	Q9YTR8	L3	Q9YTR8	1	11	Hexon protein	w
+HEXON	virus	Q9YUR1	hexon	Q9YUR1	1	24	Hexon protein	w
+HEXON	virus	Q9YUR1	hexon	Q9YUR1	1	24	Hexon protein	w
+HEXON	virus	R4MU06		R4MU06	1	39	Hexon protein	w
+HEXON	virus	U5NDX6		U5NDX6	2	33	Hexon protein	w
+HEXON	virus	U5NHM4		U5NHM4	1	37	Hexon protein	w
+HEXON-INTERLACING	virus	A0A097IWB5	IX	A0A097IWB5	0	34	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0A1ES45	IX	A0A0A1ES45	0	15	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0A1ES58	IX	A0A0A1ES58	0	15	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0A1ES75	IX	A0A0A1ES75	0	15	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0M3TH09	IX	A0A0M3TH09	1	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0M4MTV0	IX	A0A0M4MTV0	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0M4MTV3	IX	A0A0M4MTV3	0	34	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0M4N415	IX	A0A0M4N415	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A0M4NHG3	IX	A0A0M4NHG3	1	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A1C8EG48	IX	A0A1C8EG48	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A2H4CK18	IX	A0A2H4CK18	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A2H5AID1	IX	A0A2H5AID1	0	23	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A679A5J3	IX	A0A679A5J3	1	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A9W3INM2	IX	A0A9W3INM2	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A9W3N4S0	IX	A0A9W3N4S0	0	34	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0A9W3NB56	IX	A0A9W3NB56	1	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A0MK45	IX	A0MK45	0	35	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A4ZKJ2	IX	A4ZKJ2	1	15	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A4ZKK7	IX	A4ZKK7	0	15	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	A9CB85		A9CB85	2	28	Hexon-interlacing protein LH3	w
+HEXON-INTERLACING	virus	B2VQE5	pIX	B2VQE5	0	35	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	B5SNR3	IX	B5SNR3	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	B6DU92	pIX	B6DU92	0	37	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	B9A5A9	pIX	B9A5A9	1	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	B9A5Q3	pIX	B9A5Q3	0	38	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	C4P209	IX	C4P209	0	30	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	C5HDR4	IX	C5HDR4	0	37	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	C7SRS9	IX	C7SRS9	1	37	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	D0Z5S1	IX	D0Z5S1	0	33	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	E1AI12	IX	E1AI12	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	E1CIJ2	pIX	E1CIJ2	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	F2WTJ9	IX	F2WTJ9	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	F2WTN1	IX	F2WTN1	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	F6KST8	IX	F6KST8	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	G9G843	IX	G9G843	0	31	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	H8PFZ3	IX	H8PFZ3	0	29	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	H9AA78	IX	H9AA78	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QUB6	IX	M0QUB6	0	39	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QUF5	IX	M0QUF5	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QUX0	IX	M0QUX0	1	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QV49	IX	M0QV49	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QV89	IX	M0QV89	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QVG8	IX	M0QVG8	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QVP7	IX	M0QVP7	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M0QVT6	IX	M0QVT6	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M9Z2G3	IX	M9Z2G3	0	34	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M9Z2M8	IX	M9Z2M8	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	M9Z4I6	IX	M9Z4I6	2	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	P03281	IX	P03281	0	31	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	P03282	IX	P03282	0	45	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	P03284	IX	P03284	0	27	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	P14268	IX	P14268	1	29	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	P48312	IX	P48312	0	34	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	P68969	IX	P68969	0	30	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q09TZ4	IX	Q09TZ4	0	16	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q0PLZ4	IX	Q0PLZ4	0	27	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2KRY4	IX	Q2KRY4	0	44	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQX2	IX	Q2TQX2	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQX3	IX	Q2TQX3	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQX4	IX	Q2TQX4	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQX6	IX	Q2TQX6	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQX8	IX	Q2TQX8	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQY0	IX	Q2TQY0	1	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQY1	IX	Q2TQY1	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQY4	pIX	Q2TQY4	2	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2TQY5	IX	Q2TQY5	0	40	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q2Y0J1	IX	Q2Y0J1	0	46	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q3ZKW0	IX	Q3ZKW0	0	46	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q3ZL00	IX	Q3ZL00	1	41	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q4KSK8	IX	Q4KSK8	0	32	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q5C8R0	IX	Q5C8R0	0	35	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q5TJ15	pIX	Q5TJ15	0	39	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q64845	IX	Q64845	1	29	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q6H1D5	IX	Q6H1D5	0	37	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q6QPB5	IX	Q6QPB5	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q6QPF1	IX	Q6QPF1	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q6QPI7	IX	Q6QPI7	1	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q6RK96	E1B	Q6RK96	0	28	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q71BY1	IX	Q71BY1	0	36	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q83924		Q83924	1	30	Hexon-interlacing protein LH3	w
+HEXON-INTERLACING	virus	Q8B663	IX	Q8B663	1	6	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q8B8U4	IX	Q8B8U4	0	38	Hexon-interlacing protein IX	w
+HEXON-INTERLACING	virus	Q8UY87	IX	Q8UY87	0	22	Hexon-interlacing protein IX	w
+HEXOSAMINIDASE	human	P06865	HEXA	P06865	6	113	Beta-hexosaminidase subunit alpha (EC 3.2.1.52) (Beta-N-acet	w
+HEXOSAMINIDASE	human	P07686	HEXB	P07686	7	122	Beta-hexosaminidase subunit beta (EC 3.2.1.52) (Beta-N-acety	w
+HEXOSAMINIDASE	human	Q8WVB3	HEXD	Q8WVB3	5	56	Hexosaminidase D (EC 3.2.1.52) (Beta-N-acetylhexosaminidase)	w
+HEXOSE	yeast	P39003	HXT6	P39003	1	18	High-affinity hexose transporter HXT6	w
+HEXOSE	yeast	P39004	HXT7	P39004	0	37	High-affinity hexose transporter HXT7	w
+HEXOSE	yeast	P39924	HXT13	P39924	0	4	Hexose transporter HXT13	w
+HEXOSE	yeast	P40885	HXT9	P40885	0	2	Hexose transporter HXT9	w
+HEXOSE	yeast	P40886	HXT8	P40886	0	2	Hexose transporter HXT8	w
+HEXOSE	yeast	P42833	HXT14	P42833	0	1	Hexose transporter HXT14	w
+HEXOSE	yeast	P43581	HXT10	P43581	0	1	Hexose transporter HXT10	w
+HEXOSE	yeast	P47185	HXT16	P47185	0	2	Hexose transporter HXT16	w
+HEXOSE	yeast	P53631	HXT17	P53631	0	4	Hexose transporter HXT17	w
+HEXOSE	yeast	P54854	HXT15	P54854	0	3	Hexose transporter HXT15	w
+HEXOSE	yeast	P54862	HXT11	P54862	0	3	Hexose transporter HXT11	w
+HEXOSE-6-PHOSPHATE	human	O95479	H6PD	O95479	10	255	GDH/6PGL endoplasmic bifunctional protein [Includes: Hexose-	w
+HEXOSE-BINDING	zebrafish	E9QFM3	hbl2	E9QFM3	1	9	Hexose-binding lectin 2	w
+HEXOSYLTRANSFERASE	fly	FBgn0030662	Chsy	Q7KUZ9	131	2369	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0031986	CG8673	Q9VLT0	287	2383	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0033315	beta3GalTII	A1Z7G9	158	2375	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0033500	Csgalnact	A1Z863	91	2373	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0035558	CG11357	Q9VZA6	280	2600	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0040373	CG3038	Q95RP8	589	2376	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0050036	CG30036	A1Z8R4	116	2374	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0050037	CG30037	A1Z8R5	119	2374	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0053145	GalT1	A1Z8R6	412	2378	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0263005	Chpf	Q9VYH2	277	2369	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	worm	O17750	CELE_E03H4.11	O17750	1	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	worm	O62163	CELE_F14B6.4	O62163	0	22	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	worm	O62165	CELE_F14B6.6	O62165	0	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	A0A8M1NHC5	csgalnact2	A0A8M1NHC5	2	2	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	A8KB44	b3gnt3.4	A8KB44	0	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	B0UXE0	b3gnt3.3	B0UXE0	0	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	B0UXE8	b3gnt3.2	B0UXE8	0	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	E7F6G2	csgalnact1a	E7F6G2	2	2	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	E7F9K2	chpfb	E7F9K2	1	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	F1Q679	chpf2	F1Q679	1	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	F1R7L6	chpfa	F1R7L6	1	1	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	F1RD96	csgalnact1b	F1RD96	2	2	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	Q256Z7	b3galt6	Q256Z7	0	2	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	Q6P296	chsy1	Q6P296	3	3	Hexosyltransferase	w
+HEXOSYLTRANSFERASE	zebrafish	Q8UWM1	b3gnt3.1	Q8UWM1	0	1	Hexosyltransferase	w

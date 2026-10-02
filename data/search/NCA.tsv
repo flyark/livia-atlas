@@ -1,22 +1,61 @@
-NCA1	arabidopsis-thaliana	Q9M2V1	NCA1	Q9M2V1	0	2	Protein NCA1
-NCA2	dictyostelium-discoideum	Q55GJ3	nca2	Q55GJ3	0	3	Nuclear control of ATPase protein 2
-NCA2	schizosaccharomyces-pombe	O74963	nca2	O74963	0	15	Nuclear control of ATPase protein 2
-NCALD	mus-musculus	Q91X97	Ncald	Q91X97	1	19	Neurocalcin-delta
-NCALD	rattus-norvegicus	Q5PQN0	Ncald	Q5PQN0	4	23	Neurocalcin-delta
-NCAM1	mus-musculus	P13595	Ncam1	P13595	8	102	Neural cell adhesion molecule 1
-NCAM1	rattus-norvegicus	P13596	Ncam1	P13596	7	95	Neural cell adhesion molecule 1
-NCAM2	mus-musculus	O35136	Ncam2	O35136	2	19	Neural cell adhesion molecule 2
-NCAM2	rattus-norvegicus	A0A0G2K7P9	Ncam2	A0A0G2K7P9	1	14	Neural cell adhesion molecule 2
-NCAN	mus-musculus	P55066	Ncan	P55066	3	35	Neurocan core protein
-NCAN	rattus-norvegicus	P55067	Ncan	P55067	3	22	Neurocan core protein
-NCAPD2	mus-musculus	Q8K2Z4	Ncapd2	Q8K2Z4	4	17	Condensin complex subunit 1
-NCAPD2	rattus-norvegicus	A0A0G2JWH3	Ncapd2	A0A0G2JWH3	3	14	Condensin complex subunit 1
-NCAPD3	rattus-norvegicus	A0A140UHX3	Ncapd3	A0A140UHX3	4	30	Condensin-2 complex subunit D3
-NCAPG	mus-musculus	E9PWG6	Ncapg	E9PWG6	12	31	Non-SMC condensin I complex, subunit G
-NCAPG	rattus-norvegicus	D3ZD72	Ncapg	D3ZD72	7	29	Non-SMC condensin I complex, subunit G
-NCAPG2	mus-musculus	Q6DFV1	Ncapg2	Q6DFV1	6	44	Condensin-2 complex subunit G2
-NCAPG2	rattus-norvegicus	D4AAL2	Ncapg2	D4AAL2	5	44	Condensin-2 complex subunit G2
-NCAPH	mus-musculus	Q8C156	Ncaph	Q8C156	8	25	Condensin complex subunit 2
-NCAPH	rattus-norvegicus	D4A8M7	Ncaph	D4A8M7	8	20	Condensin complex subunit 2
-NCAPH2	mus-musculus	Q8BSP2	Ncaph2	Q8BSP2	9	39	Condensin-2 complex subunit H2
-NCAPH2	rattus-norvegicus	Q4V8I2	Ncaph2	Q4V8I2	8	36	Condensin-2 complex subunit H2
+NCA	fly	FBgn0013303	Nca	P42325	35	81	Neurocalcin homolog (DrosNCa)	
+NCA	human	P40199	CEACAM6	P40199	99	320		
+NCA1	arabidopsis-thaliana	Q9M2V1	NCA1	Q9M2V1	0	2	Protein NCA1	
+NCA2	dictyostelium-discoideum	Q55GJ3	nca2	Q55GJ3	0	3	Nuclear control of ATPase protein 2	
+NCA2	schizosaccharomyces-pombe	O74963	nca2	O74963	0	15	Nuclear control of ATPase protein 2	
+NCA2	yeast	Q12374	NCA2	Q12374	0	28	Nuclear control of ATPase protein 2	
+NCA3	yeast	P46955	NCA3	P46955	0	4	Beta-glucosidase-like protein NCA3, mitochondrial	
+NCAD	human	P19022	CDH2	P19022	68	460		
+NCAG1	human	Q8IZU8	DSEL	Q8IZU8	0	9		
+NCALD	human	P61601	NCALD	P61601	54	265	Neurocalcin-delta	
+NCALD	mus-musculus	Q91X97	Ncald	Q91X97	1	19	Neurocalcin-delta	
+NCALD	rattus-norvegicus	Q5PQN0	Ncald	Q5PQN0	4	23	Neurocalcin-delta	
+NCALDA	zebrafish	A9JTH1	ncalda	A9JTH1	5	31	Neurocalcin-delta A	
+NCALDB	zebrafish	Q6AXL4	ncaldb	Q6AXL4	4	24	Neurocalcin-delta B	
+NCALD_HUMAN	human	P61601	NCALD	P61601	54	265		
+NCAM	human	P13591	NCAM1	P13591	39	317		
+NCAM	worm	Q8MQ86	ncam-1	Q8MQ86	0	4	NCAM (Neural cell adhesion molecule) homolog	w
+NCAM-1	human	P13591	NCAM1	P13591	39	317	Neural cell adhesion molecule 1 (N-CAM-1) (NCAM-1) (CD antig	w
+NCAM-1	worm	Q8MQ86	ncam-1	Q8MQ86	0	4	NCAM (Neural cell adhesion molecule) homolog	
+NCAM-2	human	O15394	NCAM2	O15394	27	136	Neural cell adhesion molecule 2 (N-CAM-2) (NCAM-2)	w
+NCAM-L1	human	P32004	L1CAM	P32004	50	282	Neural cell adhesion molecule L1 (N-CAM-L1) (NCAM-L1) (CD an	w
+NCAM1	human	A0A087WWD4	NCAM1	A0A087WWD4	14	141	Neural cell adhesion molecule 1	
+NCAM1	human	P13591	NCAM1	P13591	39	317	Neural cell adhesion molecule 1 (N-CAM-1) (NCAM-1) (CD antig	
+NCAM1	mus-musculus	P13595	Ncam1	P13595	8	102	Neural cell adhesion molecule 1	
+NCAM1	rattus-norvegicus	P13596	Ncam1	P13596	7	95	Neural cell adhesion molecule 1	
+NCAM1_HUMAN	human	P13591	NCAM1	P13591	39	317		
+NCAM2	human	O15394	NCAM2	O15394	27	136	Neural cell adhesion molecule 2 (N-CAM-2) (NCAM-2)	
+NCAM2	mus-musculus	O35136	Ncam2	O35136	2	19	Neural cell adhesion molecule 2	
+NCAM2	rattus-norvegicus	A0A0G2K7P9	Ncam2	A0A0G2K7P9	1	14	Neural cell adhesion molecule 2	
+NCAM2	zebrafish	Q90YM0	ncam2	Q90YM0	1	14	Neural cell adhesion molecule 2	
+NCAM21	human	O15394	NCAM2	O15394	27	136		
+NCAM2_HUMAN	human	O15394	NCAM2	O15394	27	136		
+NCAM3	zebrafish	X1WF51	ncam3	X1WF51	0	14	Neural cell adhesion molecule 1 isoform X1	
+NCAN	human	O14594	NCAN	O14594	22	123	Neurocan core protein (Chondroitin sulfate proteoglycan 3)	
+NCAN	mus-musculus	P55066	Ncan	P55066	3	35	Neurocan core protein	
+NCAN	rattus-norvegicus	P55067	Ncan	P55067	3	22	Neurocan core protein	
+NCANB	zebrafish	F1QEZ8	ncanb	F1QEZ8	5	15	Neurocan core protein	
+NCAN_HUMAN	human	O14594	NCAN	O14594	22	123		
+NCAP-1	worm	Q9N489	ncap-1	Q9N489	5	67	NECAP PHear domain-containing protein	
+NCAPD2	human	Q15021	NCAPD2	Q15021	50	347	Condensin complex subunit 1 (Chromosome condensation-related	
+NCAPD2	mus-musculus	Q8K2Z4	Ncapd2	Q8K2Z4	4	17	Condensin complex subunit 1	
+NCAPD2	rattus-norvegicus	A0A0G2JWH3	Ncapd2	A0A0G2JWH3	3	14	Condensin complex subunit 1	
+NCAPD2	zebrafish	A0A8M1NUS6	ncapd2	A0A8M1NUS6	4	15	Condensin complex subunit 1	
+NCAPD3	human	P42695	NCAPD3	P42695	90	538	Condensin-2 complex subunit D3 (Non-SMC condensin II complex	
+NCAPD3	rattus-norvegicus	A0A140UHX3	Ncapd3	A0A140UHX3	4	30	Condensin-2 complex subunit D3	
+NCAPG	human	Q9BPX3	NCAPG	Q9BPX3	74	317	Condensin complex subunit 3 (Chromosome-associated protein G	
+NCAPG	mus-musculus	E9PWG6	Ncapg	E9PWG6	12	31	Non-SMC condensin I complex, subunit G	
+NCAPG	rattus-norvegicus	D3ZD72	Ncapg	D3ZD72	7	29	Non-SMC condensin I complex, subunit G	
+NCAPG	zebrafish	F1QJY8	ncapg	F1QJY8	9	27	Condensin complex subunit 3	
+NCAPG2	human	Q86XI2	NCAPG2	Q86XI2	109	520	Condensin-2 complex subunit G2 (Chromosome-associated protei	
+NCAPG2	mus-musculus	Q6DFV1	Ncapg2	Q6DFV1	6	44	Condensin-2 complex subunit G2	
+NCAPG2	rattus-norvegicus	D4AAL2	Ncapg2	D4AAL2	5	44	Condensin-2 complex subunit G2	
+NCAPG2	zebrafish	E7FH61	ncapg2	E7FH61	5	40	Condensin-2 complex subunit G2	
+NCAPH	human	Q15003	NCAPH	Q15003	69	374	Condensin complex subunit 2 (Barren homolog protein 1) (Chro	
+NCAPH	mus-musculus	Q8C156	Ncaph	Q8C156	8	25	Condensin complex subunit 2	
+NCAPH	rattus-norvegicus	D4A8M7	Ncaph	D4A8M7	8	20	Condensin complex subunit 2	
+NCAPH2	human	Q6IBW4	NCAPH2	Q6IBW4	30	272	Condensin-2 complex subunit H2 (Chromosome-associated protei	
+NCAPH2	mus-musculus	Q8BSP2	Ncaph2	Q8BSP2	9	39	Condensin-2 complex subunit H2	
+NCAPH2	rattus-norvegicus	Q4V8I2	Ncaph2	Q4V8I2	8	36	Condensin-2 complex subunit H2	
+NCAPH2	zebrafish	Q5RH01	ncaph2	Q5RH01	6	30	Condensin-2 complex subunit H2	
+NCAS2_HUMAN	human	Q69YL0	NCBP2AS2	Q69YL0	4	39		

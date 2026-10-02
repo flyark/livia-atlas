@@ -1,36 +1,251 @@
-FLA10	arabidopsis-thaliana	Q9LZX4	FLA10	Q9LZX4	1	10	Fasciclin-like arabinogalactan protein 10
-FLA11	arabidopsis-thaliana	Q8LEJ6	FLA11	Q8LEJ6	0	11	Fasciclin-like arabinogalactan protein 11
-FLA12	arabidopsis-thaliana	Q8LEE9	FLA12	Q8LEE9	0	11	Fasciclin-like arabinogalactan protein 12
-FLA13	arabidopsis-thaliana	Q9FFH6	FLA13	Q9FFH6	0	12	Fasciclin-like arabinogalactan protein 13
-FLA14	arabidopsis-thaliana	Q9LTW9	FLA14	Q9LTW9	3	17	Fasciclin-like arabinogalactan protein 14
-FLA15	arabidopsis-thaliana	Q9FT45	FLA15	Q9FT45	0	5	Fasciclin-like arabinogalactan protein 15
-FLA16	arabidopsis-thaliana	Q8RWC5	FLA16	Q8RWC5	1	6	Fasciclin-like arabinogalactan protein 16
-FLA17	arabidopsis-thaliana	Q66GR0	FLA17	Q66GR0	0	6	Fasciclin-like arabinogalactan protein 17
-FLA18	arabidopsis-thaliana	Q93W32	FLA18	Q93W32	0	5	Fasciclin-like arabinogalactan protein 18
-FLA2	arabidopsis-thaliana	Q9SU13	FLA2	Q9SU13	0	5	Fasciclin-like arabinogalactan protein 2
-FLA21	arabidopsis-thaliana	Q9FL53	FLA21	Q9FL53	0	2	Fasciclin-like arabinogalactan protein 21
-FLA3	arabidopsis-thaliana	Q9ZQ23	FLA3	Q9ZQ23	0	16	Fasciclin-like arabinogalactan protein 3
-FLA4	arabidopsis-thaliana	Q9SNC3	FLA4	Q9SNC3	2	2	Fasciclin-like arabinogalactan protein 4
-FLA5	arabidopsis-thaliana	O49586	FLA5	O49586	0	17	Fasciclin-like arabinogalactan protein 5
-FLA6	arabidopsis-thaliana	Q9SIL7	FLA6	Q9SIL7	0	12	Fasciclin-like arabinogalactan protein 6
-FLA7	arabidopsis-thaliana	Q9SJ81	FLA7	Q9SJ81	0	2	Fasciclin-like arabinogalactan protein 7
-FLA8	arabidopsis-thaliana	O22126	FLA8	O22126	0	12	Fasciclin-like arabinogalactan protein 8
-FLA9	arabidopsis-thaliana	Q9ZWA8	FLA9	Q9ZWA8	0	14	Fasciclin-like arabinogalactan protein 9
-FLAA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P56963	flaA	P56963	1	16	Flagellin A
-FLAA	helicobacter-pylori	P0A0S1	flaA	P0A0S1	2	11	Flagellin A
-FLAB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P56964	flaB	P56964	1	15	Flagellin B
-FLAB	helicobacter-pylori	Q07911	flaB	Q07911	2	13	Flagellin B
-FLAB1	methanocaldococcus-jannaschii	Q58301	flaB1	Q58301	0	1	Flagellin B1
-FLAB2	methanocaldococcus-jannaschii	Q58302	flaB2	Q58302	0	1	Flagellin B2
-FLAC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P96747	flaC	P96747	2	155	Secreted flagellin C
-FLACC1	mus-musculus	Q8BVM7	Flacc1	Q8BVM7	0	1	Flagellum-associated coiled-coil domain-containing protein 1
-FLAD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA11	flaD	Q0PA11	5	21	Flagellin
-FLAD1	mus-musculus	Q8R123	Flad1	Q8R123	0	9	FAD synthase
-FLAD1	rattus-norvegicus	D4A4P4	Flad1	D4A4P4	0	4	FAD synthase
-FLAF	methanocaldococcus-jannaschii	Q58307	flaF	Q58307	1	4	Putative flagella-related protein F
-FLAG	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAW9	flaG	Q0PAW9	0	51	Flagellar protein
-FLAH	methanocaldococcus-jannaschii	Q58309	flaH	Q58309	0	5	Archaeal flagellar ATP-binding protein FlaH
-FLAJ	methanocaldococcus-jannaschii	Q58311	flaJ	Q58311	1	5	Flagella accessory protein J
-FLAP1	arabidopsis-thaliana	Q8RWI0	FLAP1	Q8RWI0	0	16	FLUCTUATING-LIGHT-ACCLIMATION protein 1, chloroplastic
-FLAR	streptococcus-pneumoniae	Q8DQC8	flaR	Q8DQC8	0	7	Modulates DNA topology
-FLAV	streptococcus-pneumoniae	Q8DPG4	flaV	Q8DPG4	0	1	Flavodoxin
+FLA10	arabidopsis-thaliana	Q9LZX4	FLA10	Q9LZX4	1	10	Fasciclin-like arabinogalactan protein 10	
+FLA11	arabidopsis-thaliana	Q8LEJ6	FLA11	Q8LEJ6	0	11	Fasciclin-like arabinogalactan protein 11	
+FLA12	arabidopsis-thaliana	Q8LEE9	FLA12	Q8LEE9	0	11	Fasciclin-like arabinogalactan protein 12	
+FLA13	arabidopsis-thaliana	Q9FFH6	FLA13	Q9FFH6	0	12	Fasciclin-like arabinogalactan protein 13	
+FLA14	arabidopsis-thaliana	Q9LTW9	FLA14	Q9LTW9	3	17	Fasciclin-like arabinogalactan protein 14	
+FLA15	arabidopsis-thaliana	Q9FT45	FLA15	Q9FT45	0	5	Fasciclin-like arabinogalactan protein 15	
+FLA16	arabidopsis-thaliana	Q8RWC5	FLA16	Q8RWC5	1	6	Fasciclin-like arabinogalactan protein 16	
+FLA17	arabidopsis-thaliana	Q66GR0	FLA17	Q66GR0	0	6	Fasciclin-like arabinogalactan protein 17	
+FLA18	arabidopsis-thaliana	Q93W32	FLA18	Q93W32	0	5	Fasciclin-like arabinogalactan protein 18	
+FLA2	arabidopsis-thaliana	Q9SU13	FLA2	Q9SU13	0	5	Fasciclin-like arabinogalactan protein 2	
+FLA21	arabidopsis-thaliana	Q9FL53	FLA21	Q9FL53	0	2	Fasciclin-like arabinogalactan protein 21	
+FLA3	arabidopsis-thaliana	Q9ZQ23	FLA3	Q9ZQ23	0	16	Fasciclin-like arabinogalactan protein 3	
+FLA4	arabidopsis-thaliana	Q9SNC3	FLA4	Q9SNC3	2	2	Fasciclin-like arabinogalactan protein 4	
+FLA5	arabidopsis-thaliana	O49586	FLA5	O49586	0	17	Fasciclin-like arabinogalactan protein 5	
+FLA6	arabidopsis-thaliana	Q9SIL7	FLA6	Q9SIL7	0	12	Fasciclin-like arabinogalactan protein 6	
+FLA7	arabidopsis-thaliana	Q9SJ81	FLA7	Q9SJ81	0	2	Fasciclin-like arabinogalactan protein 7	
+FLA8	arabidopsis-thaliana	O22126	FLA8	O22126	0	12	Fasciclin-like arabinogalactan protein 8	
+FLA9	arabidopsis-thaliana	Q9ZWA8	FLA9	Q9ZWA8	0	14	Fasciclin-like arabinogalactan protein 9	
+FLAA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P56963	flaA	P56963	1	16	Flagellin A	
+FLAA	helicobacter-pylori	P0A0S1	flaA	P0A0S1	2	11	Flagellin A	
+FLAB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P56964	flaB	P56964	1	15	Flagellin B	
+FLAB	helicobacter-pylori	Q07911	flaB	Q07911	2	13	Flagellin B	
+FLAB1	methanocaldococcus-jannaschii	Q58301	flaB1	Q58301	0	1	Flagellin B1	
+FLAB2	methanocaldococcus-jannaschii	Q58302	flaB2	Q58302	0	1	Flagellin B2	
+FLAC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P96747	flaC	P96747	2	155	Secreted flagellin C	
+FLACC	fly	FBgn0030974	Flacc	Q9VWN4	18	108	Fl(2)d-associated complex component (Protein Xiong)	
+FLACC1	human	Q96Q35	FLACC1	Q96Q35	6	49	Flagellum-associated coiled-coil domain-containing protein 1	
+FLACC1	mus-musculus	Q8BVM7	Flacc1	Q8BVM7	0	1	Flagellum-associated coiled-coil domain-containing protein 1	
+FLAD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA11	flaD	Q0PA11	5	21	Flagellin	
+FLAD-1	worm	Q22017	flad-1	Q22017	0	2	Probable FAD synthase	
+FLAD1	fly	FBgn0030431	Flad1	Q9VYI5	5	34	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	
+FLAD1	human	Q8NFF5	FLAD1	Q8NFF5	12	148	Bifunctional FAD diphosphatase/FAD synthase [Includes: FAD d	
+FLAD1	mus-musculus	Q8R123	Flad1	Q8R123	0	9	FAD synthase	
+FLAD1	rattus-norvegicus	D4A4P4	Flad1	D4A4P4	0	4	FAD synthase	
+FLAD1	zebrafish	Q68EH8	flad1	Q68EH8	0	5	FAD synthase	
+FLAD2	fly	FBgn0032522	Flad2	Q9VJY1	1	3	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	
+FLAF	methanocaldococcus-jannaschii	Q58307	flaF	Q58307	1	4	Putative flagella-related protein F	
+FLAF1	human	O75400	PRPF40A	O75400	95	569		
+FLAG	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAW9	flaG	Q0PAW9	0	51	Flagellar protein	
+FLAG-TAG	fly	FLAG-tag	FLAG-tag		3	40		
+FLAGELLA	human	Q6TDU7	DNAI7	Q6TDU7	2	37	Dynein axonemal intermediate chain 7 (Cancer susceptibility 	w
+FLAGELLA	human	Q9C093	SPEF2	Q9C093	8	51	Sperm flagella and cilia-associated protein 2 (Protein KPL2)	w
+FLAGELLA	human	Q9ULG3	CFAP92	Q9ULG3	10	61	Uncharacterized protein CFAP92 (Putative cilia and flagella 	w
+FLAGELLA	human	Q9Y4P9	SPEF1	Q9Y4P9	9	47	Sperm flagella and cilia-associated protein 1	w
+FLAGELLA-	human	Q0VFZ6	CFAP210	Q0VFZ6	11	85	Cilia- and flagella- associated protein 210 (Coiled-coil dom	w
+FLAGELLA-	zebrafish	E7F133	cfap210	E7F133	2	71	Cilia- and flagella- associated protein 210 isoform X1	w
+FLAGELLA-ASSOCIATED	fly	FBgn0025612	CG3062	Q9W4I5	0	23	Protein Flattop homolog (Cilia- and flagella-associated prot	w
+FLAGELLA-ASSOCIATED	fly	FBgn0029747	CG5062	Q9W4E4	1	14	Cilia- and flagella-associated protein 45	w
+FLAGELLA-ASSOCIATED	fly	FBgn0031430	CG3528	Q9VQD0	2	13	Cilia- and flagella-associated protein 299	w
+FLAGELLA-ASSOCIATED	fly	FBgn0031720	CG14013	Q9VMP6	0	0	Cilia- and flagella-associated protein 299	w
+FLAGELLA-ASSOCIATED	fly	FBgn0031721	CG14017	Q9VMP5	0	1	Cilia- and flagella-associated protein 299	w
+FLAGELLA-ASSOCIATED	fly	FBgn0032248	Bug22	Q9VKV8	94	426	Cilia- and flagella-associated protein 20 (Basal body up-reg	w
+FLAGELLA-ASSOCIATED	fly	FBgn0032291	CG17118	Q9VKR1	7	49	Cilia- and flagella-associated protein 20	w
+FLAGELLA-ASSOCIATED	fly	FBgn0032647	CG15143	Q9VJC5	0	3	Cilia- and flagella-associated protein 91	w
+FLAGELLA-ASSOCIATED	fly	FBgn0032648	CG15144	Q9VJC4	0	1	Cilia- and flagella-associated protein 91	w
+FLAGELLA-ASSOCIATED	fly	FBgn0032649	CG15145	Q9VJC3	0	2	Cilia- and flagella-associated protein 91	w
+FLAGELLA-ASSOCIATED	fly	FBgn0034532	CG13436	A1ZBX0	1	3	Cilia- and flagella-associated protein 206	w
+FLAGELLA-ASSOCIATED	fly	FBgn0034869	CG13558	Q9W1P1	0	7	Cilia- and flagella-associated protein 61 N-terminal domain-	w
+FLAGELLA-ASSOCIATED	fly	FBgn0035724	CG10064	Q9VS00	2	55	Cilia- and flagella-associated protein 52	w
+FLAGELLA-ASSOCIATED	fly	FBgn0036962	CG17122	Q9VWA6	1	7	Cilia- and flagella-associated protein 157	w
+FLAGELLA-ASSOCIATED	fly	FBgn0037162	CG11449	Q9VNU3	2	48	Cilia- and flagella-associated protein 45	w
+FLAGELLA-ASSOCIATED	fly	FBgn0038122	Cfap299	Q9VFY6	0	0	Cilia- and flagella-associated protein 299	w
+FLAGELLA-ASSOCIATED	fly	FBgn0038170	CG14367	Q9VFS4	0	5	Cilia- and flagella-associated protein 36 (Coiled-coil domai	w
+FLAGELLA-ASSOCIATED	fly	FBgn0039490	CG5882	Q9VB72	0	1	Cilia- and flagella-associated protein 58 central coiled coi	w
+FLAGELLA-ASSOCIATED	fly	FBgn0039491	CG6059	Q9VB71	1	1	Cilia- and flagella-associated protein 58 central coiled coi	w
+FLAGELLA-ASSOCIATED	fly	FBgn0040696	CG18675	Q9VZH1	0	4	Cilia- and flagella-associated protein 298	w
+FLAGELLA-ASSOCIATED	fly	FBgn0050268	CG30268	Q9W206	0	0	Cilia- and flagella-associated protein 61 N-terminal domain-	w
+FLAGELLA-ASSOCIATED	human	A1A4V9	CFAP119	A1A4V9	16	108	Cilia- and flagella-associated protein 119 (Coiled-coil doma	w
+FLAGELLA-ASSOCIATED	human	A4QMS7	CFAP90	A4QMS7	6	62	Cilia- and flagella-associated protein 90	w
+FLAGELLA-ASSOCIATED	human	A5D8W1	CFAP69	A5D8W1	5	39	Cilia- and flagella-associated protein 69	w
+FLAGELLA-ASSOCIATED	human	A6NFT4	CFAP73	A6NFT4	10	30	Cilia- and flagella-associated protein 73 (Coiled-coil domai	w
+FLAGELLA-ASSOCIATED	human	A6NL82	CFAP144	A6NL82	5	57	Cilia- and flagella-associated protein 144 (Protein FAM183A)	w
+FLAGELLA-ASSOCIATED	human	A7E2U8	CFAP96	A7E2U8	1	23	Cilia-and flagella-associated protein 96	w
+FLAGELLA-ASSOCIATED	human	D6REC4	CFAP99	D6REC4	3	8	Cilia- and flagella-associated protein 99	w
+FLAGELLA-ASSOCIATED	human	O43822	CFAP410	O43822	7	66	Cilia- and flagella-associated protein 410 (C21orf-HUMF09G8.	w
+FLAGELLA-ASSOCIATED	human	P57076	CFAP298	P57076	15	155	Cilia- and flagella-associated protein 298 (Protein kurly ho	w
+FLAGELLA-ASSOCIATED	human	Q2M329	CFAP184	Q2M329	54	177	Cilia- and flagella-associated protein 184	w
+FLAGELLA-ASSOCIATED	human	Q494V2	CFAP100	Q494V2	9	25	Cilia- and flagella-associated protein 100 (Coiled-coil doma	w
+FLAGELLA-ASSOCIATED	human	Q4G0U5	CFAP221	Q4G0U5	17	108	Cilia- and flagella-associated protein 221 (Primary ciliary 	w
+FLAGELLA-ASSOCIATED	human	Q5JU67	CFAP157	Q5JU67	5	29	Cilia- and flagella-associated protein 157	w
+FLAGELLA-ASSOCIATED	human	Q5T0N1	CFAP70	Q5T0N1	11	120	Cilia- and flagella-associated protein 70 (Tetratricopeptide	w
+FLAGELLA-ASSOCIATED	human	Q5T5A4	CFAP276	Q5T5A4	5	68	Cilia- and flagella-associated protein 276	w
+FLAGELLA-ASSOCIATED	human	Q5T655	CFAP58	Q5T655	12	36	Cilia- and flagella-associated protein 58 (Coiled-coil domai	w
+FLAGELLA-ASSOCIATED	human	Q5VTH2	CFAP126	Q5VTH2	7	81	Protein Flattop (Cilia- and flagella-associated protein 126)	w
+FLAGELLA-ASSOCIATED	human	Q5VTT2	CFAP95	Q5VTT2	1	110	Cilia- and flagella-associated protein 95	w
+FLAGELLA-ASSOCIATED	human	Q5VU69	CFAP141	Q5VU69	7	134	Cilia- and flagella-associated protein 141	w
+FLAGELLA-ASSOCIATED	human	Q6P656	CFAP161	Q6P656	7	65	Cilia- and flagella-associated protein 161	w
+FLAGELLA-ASSOCIATED	human	Q6PI97	HOATZ	Q6PI97	5	110	Cilia- and flagella-associated protein HOATZ	w
+FLAGELLA-ASSOCIATED	human	Q6V702	CFAP299	Q6V702	5	26	Cilia- and flagella-associated protein 299	w
+FLAGELLA-ASSOCIATED	human	Q6ZQR2	CFAP77	Q6ZQR2	3	50	Cilia- and flagella-associated protein 77	w
+FLAGELLA-ASSOCIATED	human	Q6ZTR5	CFAP47	Q6ZTR5	0	9	Cilia- and flagella-associated protein 47	w
+FLAGELLA-ASSOCIATED	human	Q6ZU64	CFAP65	Q6ZU64	6	84	Cilia- and flagella-associated protein 65 (Coiled-coil domai	w
+FLAGELLA-ASSOCIATED	human	Q7Z4T9	CFAP91	Q7Z4T9	8	32	Cilia- and flagella-associated protein 91 (CFAP91) (AMY-1-as	w
+FLAGELLA-ASSOCIATED	human	Q8IV35	CFAP337	Q8IV35	0	2	Cilia- and flagella-associated protein 337	w
+FLAGELLA-ASSOCIATED	human	Q8IYR0	CFAP206	Q8IYR0	15	93	Cilia- and flagella-associated protein 206	w
+FLAGELLA-ASSOCIATED	human	Q8IYW2	CFAP46	Q8IYW2	2	13	Cilia- and flagella-associated protein 46 (Tetratricopeptide	w
+FLAGELLA-ASSOCIATED	human	Q8N1D5	CFAP107	Q8N1D5	3	104	Cilia- and flagella-associated protein 107	w
+FLAGELLA-ASSOCIATED	human	Q8N1V2	CFAP52	Q8N1V2	11	99	Cilia- and flagella-associated protein 52 (WD repeat-contain	w
+FLAGELLA-ASSOCIATED	human	Q8N7U6	EFHB	Q8N7U6	13	135	EF-hand domain-containing family member B (Cilia- and flagel	w
+FLAGELLA-ASSOCIATED	human	Q8NDM7	CFAP43	Q8NDM7	11	91	Cilia- and flagella-associated protein 43 (WD repeat-contain	w
+FLAGELLA-ASSOCIATED	human	Q8NHU2	CFAP61	Q8NHU2	1	5	Cilia- and flagella-associated protein 61	w
+FLAGELLA-ASSOCIATED	human	Q8TBY9	CFAP251	Q8TBY9	1	19	Cilia- and flagella-associated protein 251 (WD repeat-contai	w
+FLAGELLA-ASSOCIATED	human	Q96G28	CFAP36	Q96G28	9	35	Cilia- and flagella-associated protein 36 (Coiled-coil domai	w
+FLAGELLA-ASSOCIATED	human	Q96M91	CFAP53	Q96M91	10	135	Cilia- and flagella-associated protein 53 (Coiled-coil domai	w
+FLAGELLA-ASSOCIATED	human	Q96MR6	CFAP57	Q96MR6	6	45	Cilia- and flagella-associated protein 57 (WD repeat-contain	w
+FLAGELLA-ASSOCIATED	human	Q96MT7	CFAP44	Q96MT7	3	21	Cilia- and flagella-associated protein 44 (WD repeat-contain	w
+FLAGELLA-ASSOCIATED	human	Q96N23	CFAP54	Q96N23	1	6	Cilia- and flagella-associated protein 54	w
+FLAGELLA-ASSOCIATED	human	Q96NL8	CFAP418	Q96NL8	5	33	Cilia- and flagella-associated protein 418	w
+FLAGELLA-ASSOCIATED	human	Q9BRQ4	CFAP300	Q9BRQ4	5	52	Cilia- and flagella-associated protein 300	w
+FLAGELLA-ASSOCIATED	human	Q9C0B2	CFAP74	Q9C0B2	5	51	Cilia- and flagella-associated protein 74	w
+FLAGELLA-ASSOCIATED	human	Q9H0I3	CFAP263	Q9H0I3	14	45	Cilia- and flagella-associated protein 263	w
+FLAGELLA-ASSOCIATED	human	Q9H5F2	CFAP68	Q9H5F2	3	115	Cilia- and flagella-associated protein 68	w
+FLAGELLA-ASSOCIATED	human	Q9P2B7	CFAP97	Q9P2B7	13	115	Cilia- and flagella-associated protein 97	w
+FLAGELLA-ASSOCIATED	human	Q9UL16	CFAP45	Q9UL16	13	115	Cilia- and flagella-associated protein 45 (Coiled-coil domai	w
+FLAGELLA-ASSOCIATED	human	Q9Y6A4	CFAP20	Q9Y6A4	110	615	Cilia- and flagella-associated protein 20 (Basal body up-reg	w
+FLAGELLA-ASSOCIATED	worm	G5EG60	CELE_K02E2.7	G5EG60	0	5	Cilia- and flagella-associated protein 251-like	w
+FLAGELLA-ASSOCIATED	worm	O16626	cank-26	O16626	0	10	Cilia- and flagella-associated protein 157	w
+FLAGELLA-ASSOCIATED	worm	Q86D01	CELE_ZK809.5	Q86D01	0	2	Cilia- and flagella-associated protein 157	w
+FLAGELLA-ASSOCIATED	worm	Q86D25	cfap-20	Q86D25	1	20	Cilia- and flagella-associated protein 20	w
+FLAGELLA-ASSOCIATED	worm	Q93228	C17E4.2	Q93228	0	4	Cilia- and flagella-associated protein 157	w
+FLAGELLA-ASSOCIATED	worm	Q95XJ5	CELE_Y45G5AM.7	Q95XJ5	0	2	Cilia- and flagella-associated protein 157	w
+FLAGELLA-ASSOCIATED	worm	Q95Y36	cfap-36	Q95Y36	0	2	Cilia- and flagella-associated protein 36	w
+FLAGELLA-ASSOCIATED	zebrafish	A0A0R4IFG5	cfap53	A0A0R4IFG5	12	72	Cilia- and flagella-associated protein 53	w
+FLAGELLA-ASSOCIATED	zebrafish	A0A2R8RPL3	cfap90	A0A2R8RPL3	0	26	Cilia- and flagella-associated protein 90	w
+FLAGELLA-ASSOCIATED	zebrafish	A2AVJ0	cfap299	A2AVJ0	0	3	Cilia- and flagella-associated protein 299	w
+FLAGELLA-ASSOCIATED	zebrafish	A2BDR7	cfap157	A2BDR7	0	7	Cilia- and flagella-associated protein 157	w
+FLAGELLA-ASSOCIATED	zebrafish	A2BFC9	cfap77	A2BFC9	0	18	Cilia- and flagella-associated protein 77	w
+FLAGELLA-ASSOCIATED	zebrafish	A2RV06	cfap206	A2RV06	0	3	Cilia- and flagella-associated protein 206	w
+FLAGELLA-ASSOCIATED	zebrafish	B8JIG1	cfap97	B8JIG1	2	66	Cilia- and flagella-associated protein 97	w
+FLAGELLA-ASSOCIATED	zebrafish	F1Q5Z7	cfap91	F1Q5Z7	1	7	Cilia- and flagella-associated protein 91	w
+FLAGELLA-ASSOCIATED	zebrafish	F1Q8Y1	cfap251	F1Q8Y1	1	7	Cilia- and flagella-associated protein 251	w
+FLAGELLA-ASSOCIATED	zebrafish	F1QPL6	cfap70	F1QPL6	3	46	Cilia and flagella-associated protein 70	w
+FLAGELLA-ASSOCIATED	zebrafish	I3ITQ2	cfap300	I3ITQ2	2	34	Cilia- and flagella-associated protein 300	w
+FLAGELLA-ASSOCIATED	zebrafish	Q1RM35	cfap36	Q1RM35	4	4	Cilia- and flagella-associated protein 36	w
+FLAGELLA-ASSOCIATED	zebrafish	Q568D2	cfap161	Q568D2	0	27	Cilia- and flagella-associated protein 161	w
+FLAGELLA-ASSOCIATED	zebrafish	Q6DRC3	cfap298	Q6DRC3	0	1	Cilia- and flagella-associated protein 298	w
+FLAGELLA-ASSOCIATED	zebrafish	Q6PBJ2	cfap20	Q6PBJ2	19	252	Cilia- and flagella-associated protein 20	w
+FLAGELLA-ASSOCIATED	zebrafish	X1WCN7	cfap99	X1WCN7	2	7	Cilia and flagella-associated protein 99	w
+FLAGELLAR	human	O75602	SPAG6	O75602	8	141	Sperm-associated antigen 6 (Protein PF16 homolog) (Repro-SA-	w
+FLAGELLAR	human	Q9C093	SPEF2	Q9C093	8	51	Sperm flagella and cilia-associated protein 2 (Protein KPL2)	w
+FLAGELLAR	human	Q9H0C2	SLC25A31	Q9H0C2	2	132	ADP/ATP translocase 4 (ADP,ATP carrier protein 4) (Adenine n	w
+FLAGELLUM-ASSOCIATED	human	Q96Q35	FLACC1	Q96Q35	6	49	Flagellum-associated coiled-coil domain-containing protein 1	w
+FLAGRANTE	fly	D2A6L8	FDY	D2A6L8	5	118	Flagrante delicto Y, isoform D	w
+FLAGRANTE	fly	FBgn0265047	FDY		2	23	flagrante delicto Y	w
+FLAH	methanocaldococcus-jannaschii	Q58309	flaH	Q58309	0	5	Archaeal flagellar ATP-binding protein FlaH	
+FLAJ	methanocaldococcus-jannaschii	Q58311	flaJ	Q58311	1	5	Flagella accessory protein J	
+FLAME-3	human	Q8WXF8	DEDD2	Q8WXF8	57	365	DNA-binding death effector domain-containing protein 2 (DED-	w
+FLAME3	human	Q8WXF8	DEDD2	Q8WXF8	57	365		
+FLAMINGO	human	Q9HCU4	CELSR2	Q9HCU4	7	113	Cadherin EGF LAG seven-pass G-type receptor 2 (Cadherin fami	w
+FLAMINGO	human	Q9NYQ6	CELSR1	Q9NYQ6	2	70	Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin fami	w
+FLAMINGO	human	Q9NYQ7	CELSR3	Q9NYQ7	0	10	Cadherin EGF LAG seven-pass G-type receptor 3 (Cadherin fami	w
+FLANA	human	Q9GZP9	DERL2	Q9GZP9	20	234		
+FLAP	fly	FBgn0025832	Fen1	Q7K7A9	9	144	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (Flap structure-spe	w
+FLAP	fly	FBgn0034693	flap	Q9W294	40	232	Uncharacterized protein, isoform A	
+FLAP	fly	FBgn0263831	Gen	Q9VRJ0	3	63	Flap endonuclease GEN (EC 3.1.-.-) (Flap structure-specific 	w
+FLAP	human	P20292	ALOX5AP	P20292	2	27		
+FLAP	human	P39748	FEN1	P39748	13	278	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (DNase IV) (Flap st	w
+FLAP	human	Q17RS7	GEN1	Q17RS7	12	146	Flap endonuclease GEN homolog 1 (EC 3.1.-.-)	w
+FLAP	worm	Q9N3T2	crn-1	Q9N3T2	1	71	Flap endonuclease 1	w
+FLAP	yeast	P26793	RAD27	P26793	4	56	Flap endonuclease 1	w
+FLAP	zebrafish	B0UXL7	si:dkeyp-13a3.3	B0UXL7	4	69	Probable flap endonuclease 1 homolog	w
+FLAP	zebrafish	Q6TNU4	fen1	Q6TNU4	7	77	Flap endonuclease 1	w
+FLAP-1	worm	Q8MQ17	flap-1	Q8MQ17	1	4	Leucine-rich repeat flightless-interacting protein 2	
+FLAP1	arabidopsis-thaliana	Q8RWI0	FLAP1	Q8RWI0	0	16	FLUCTUATING-LIGHT-ACCLIMATION protein 1, chloroplastic	
+FLAR	streptococcus-pneumoniae	Q8DQC8	flaR	Q8DQC8	0	7	Modulates DNA topology	
+FLARA3	human	Q9Y6Y0	IVNS1ABP	Q9Y6Y0	12	174		
+FLARE	fly	FBgn0260049	flr	Q9VU68	7	89	Actin-interacting protein 1 (AIP1) (Protein flare)	w
+FLASH	fly	FBgn0033806	FLASH	Q7K0L8	19	92	FLICE-associated huge protein, isoform A (FLICE-associated h	
+FLASH	human	Q9UKL3	CASP8AP2	Q9UKL3	21	136		
+FLATTOP	fly	FBgn0025612	CG3062	Q9W4I5	0	23	Protein Flattop homolog (Cilia- and flagella-associated prot	w
+FLATTOP	human	Q5VTH2	CFAP126	Q5VTH2	7	81	Protein Flattop (Cilia- and flagella-associated protein 126)	w
+FLATTOP	zebrafish	Q0P4F6	cfap126	Q0P4F6	10	210	Protein Flattop	w
+FLAV	streptococcus-pneumoniae	Q8DPG4	flaV	Q8DPG4	0	1	Flavodoxin	
+FLAVIN	human	P30043	BLVRB	P30043	8	230	Flavin reductase (NADPH) (FR) (EC 1.5.1.30) (Biliverdin redu	w
+FLAVIN	human	Q96A73	KIAA1191	Q96A73	22	68	Putative monooxygenase p33MONOX (EC 1.-.-.-) (Brain-derived 	w
+FLAVIN	worm	O16214	CELE_F17A9.4	O16214	0	16	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	w
+FLAVIN	worm	O16215	CELE_F17A9.5	O16215	0	12	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	w
+FLAVIN	worm	Q23090	CELE_ZK742.3	Q23090	0	4	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	w
+FLAVIN	worm	Q23091	CELE_ZK742.4	Q23091	0	2	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	w
+FLAVIN	worm	Q9TXX0	CELE_Y73C8C.10	Q9TXX0	0	1	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	w
+FLAVIN	yeast	P33751	PAD1	P33751	0	28	Flavin prenyltransferase PAD1, mitochondrial	w
+FLAVIN	yeast	P38913	FAD1	P38913	0	4	Flavin adenine dinucleotide synthase	w
+FLAVIN	yeast	P39719	FLC2	P39719	1	26	Flavin carrier protein 2	w
+FLAVIN	yeast	P53121	FLC3	P53121	0	5	Putative flavin carrier protein 3	w
+FLAVIN	yeast	Q08967	FLC1	Q08967	1	30	Flavin carrier protein 1	w
+FLAVIN	zebrafish	A0A8M1N0W6	blvrb	A0A8M1N0W6	0	145	Flavin reductase (NADPH)	w
+FLAVIN-CONTAINING	fly	FBgn0033079	Fmo2	Q7K3U4	3	51	Flavin-containing monooxygenase (EC 1.-.-.-)	w
+FLAVIN-CONTAINING	fly	FBgn0034943	Fmo1	Q9W1E9	2	57	Flavin-containing monooxygenase (EC 1.-.-.-)	w
+FLAVIN-CONTAINING	human	O60341	KDM1A	O60341	208	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	w
+FLAVIN-CONTAINING	human	O60774	FMO6P	O60774	5	13	Putative dimethylaniline monooxygenase [N-oxide-forming] 6 (	w
+FLAVIN-CONTAINING	human	P21397	MAOA	P21397	7	107	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	w
+FLAVIN-CONTAINING	human	P27338	MAOB	P27338	6	148	Amine oxidase [flavin-containing] B (EC 1.4.3.21) (EC 1.4.3.	w
+FLAVIN-CONTAINING	human	P31512	FMO4	P31512	7	57	Flavin-containing monooxygenase 4 (EC 1.14.13.-) (Hepatic fl	w
+FLAVIN-CONTAINING	human	P31513	FMO3	P31513	7	94	Flavin-containing monooxygenase 3 (EC 1.14.13.148) (EC 1.14.	w
+FLAVIN-CONTAINING	human	P49326	FMO5	P49326	5	83	Flavin-containing monooxygenase 5 (FMO 5) (Baeyer-Villiger m	w
+FLAVIN-CONTAINING	human	Q01740	FMO1	Q01740	6	78	Flavin-containing monooxygenase 1 (EC 1.14.13.148) (EC 1.14.	w
+FLAVIN-CONTAINING	human	Q8NB78	KDM1B	Q8NB78	8	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	w
+FLAVIN-CONTAINING	human	Q99518	FMO2	Q99518	5	74	Flavin-containing monooxygenase 2 (EC 1.14.13.-) (Dimethylan	w
+FLAVIN-CONTAINING	worm	G5EBJ9	fmo-2	G5EBJ9	0	1	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	worm	G5ECJ8	fmo-3	G5ECJ8	0	1	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	worm	G5ED43	fmo-5	G5ED43	0	1	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	worm	G5EDG8	fmo-4	G5EDG8	0	4	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	worm	G5EDP6	fmo-1	G5EDP6	0	2	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	worm	Q17585	C01H6.4	Q17585	1	8	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	worm	Q9GYJ1	C46H11.2	Q9GYJ1	0	8	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	zebrafish	E7F2R0	LOC793236	E7F2R0	3	90	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	zebrafish	Q5TZD0	si:dkey-239i20.4	Q5TZD0	2	92	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	zebrafish	Q5TZD3	si:dkey-239i20.2	Q5TZD3	2	92	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	zebrafish	Q6NZ32	wu:fl33b06	Q6NZ32	5	90	Flavin-containing monooxygenase	w
+FLAVIN-CONTAINING	zebrafish	Q7T1D7	fmo5	Q7T1D7	2	92	Flavin-containing monooxygenase	w
+FLAVODOXIN	human	Q6NUM6	TYW1B	Q6NUM6	4	42	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
+FLAVODOXIN	human	Q9NV66	TYW1	Q9NV66	6	142	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
+FLAVODOXIN-LIKE	worm	Q9N535	CELE_Y32H12A.6	Q9N535	1	4	Flavodoxin-like domain-containing protein	w
+FLAVOHEMOPROTEIN	human	Q7L1T6	CYB5R4	Q7L1T6	6	76	Cytochrome b5 reductase 4 (EC 1.6.2.2) (Flavohemoprotein b5/	w
+FLAVOHEMOPROTEIN	yeast	P39676	YHB1	P39676	2	79	Flavohemoprotein	w
+FLAVOKINASE	fly	FBgn0014930	Rfk	O76206	1	12	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
+FLAVOKINASE	human	Q969G6	RFK	Q969G6	14	105	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
+FLAVOPROTEIN	fly	FBgn0010516	wal	Q7KN94	9	153	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
+FLAVOPROTEIN	fly	FBgn0031771	ND-51	Q9VMI3	5	98	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOPROTEIN	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOPROTEIN	fly	FBgn0036222	SdhAL	Q8SX97	6	67	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+FLAVOPROTEIN	fly	FBgn0039697	Etfb	Q0KHZ6	18	136	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
+FLAVOPROTEIN	fly	FBgn0261439	SdhA	Q94523	13	95	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+FLAVOPROTEIN	human	P13804	ETFA	P13804	35	342	Electron transfer flavoprotein subunit alpha, mitochondrial 	w
+FLAVOPROTEIN	human	P19404	NDUFV2	P19404	31	376	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondria	w
+FLAVOPROTEIN	human	P31040	SDHA	P31040	49	432	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+FLAVOPROTEIN	human	P38117	ETFB	P38117	26	187	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
+FLAVOPROTEIN	human	P49821	NDUFV1	P49821	33	470	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOPROTEIN	human	P56181	NDUFV3	P56181	20	253	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	w
+FLAVOPROTEIN	human	Q6IPR1	ETFRF1	Q6IPR1	20	113	Electron transfer flavoprotein regulatory factor 1 (LYR moti	w
+FLAVOPROTEIN	human	Q8IWF2	FOXRED2	Q8IWF2	8	254	FAD-dependent oxidoreductase domain-containing protein 2 (En	w
+FLAVOPROTEIN	human	Q8IXQ9	ETFBKMT	Q8IXQ9	12	109	Electron transfer flavoprotein beta subunit lysine methyltra	w
+FLAVOPROTEIN	virus	A0A068EGV2	fep_072	A0A068EGV2	3	221	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
+FLAVOPROTEIN	virus	A0A068ELF1	pepv_075	A0A068ELF1	5	240	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
+FLAVOPROTEIN	virus	A0A0M3PB94		A0A0M3PB94	1	170	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
+FLAVOPROTEIN	virus	A0A2H4X274	fgpv_072	A0A2H4X274	6	256	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
+FLAVOPROTEIN	virus	Q9J5E0	FPV071	Q9J5E0	2	250	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
+FLAVOPROTEIN	worm	P91988	CELE_F25H9.6	P91988	0	6	Flavoprotein domain-containing protein	w
+FLAVOPROTEIN	worm	Q93615	F27D4.1	Q93615	3	50	Probable electron transfer flavoprotein subunit alpha, mitoc	w
+FLAVOPROTEIN	worm	Q9BL36	CELE_Y71H2AM.6	Q9BL36	0	2	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
+FLAVOPROTEIN	worm	Q9TXI4	etfb-1	Q9TXI4	16	56	Electron transfer flavoprotein subunit beta	w
+FLAVOPROTEIN	yeast	P42940	CIR1	P42940	2	40	Probable electron transfer flavoprotein subunit beta	w
+FLAVOPROTEIN	yeast	Q12480	AIM45	Q12480	2	45	Probable electron transfer flavoprotein subunit alpha, mitoc	w
+FLAVOPROTEIN	zebrafish	A3KP85	etfbkmt	A3KP85	1	4	Electron transfer flavoprotein beta subunit lysine methyltra	w
+FLAVOPROTEIN	zebrafish	Q7ZUS9	etfa	Q7ZUS9	0	32	Electron transfer flavoprotein subunit alpha	w
+FLAVOPROTEIN-LIKE	yeast	P25349	YCP4	P25349	0	25	Flavoprotein-like protein YCP4	w
+FLAVOPROTEIN-UBIQUINONE	fly	FBgn0286783	Etf-QO	Q7JWF1	2	19	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
+FLAVOPROTEIN-UBIQUINONE	human	Q16134	ETFDH	Q16134	5	120	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
+FLAVOPROTEIN-UBIQUINONE	worm	Q11190	let-721	Q11190	1	11	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
+FLAVOPROTEIN-UBIQUINONE	yeast	Q08822	CIR2	Q08822	1	11	Probable electron transfer flavoprotein-ubiquinone oxidoredu	w
+FLAVOPROTEIN-UBIQUINONE	zebrafish	Q66I16	etfdh	Q66I16	0	12	Electron transfer flavoprotein-ubiquinone oxidoreductase	w

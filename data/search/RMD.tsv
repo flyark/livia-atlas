@@ -1,10 +1,32 @@
-RMD	pseudomonas-aeruginosa	Q9HTB6	rmd	Q9HTB6	1	100	GDP-6-deoxy-D-mannose reductase
-RMD1	cladophialophora-carrionii	A0A1C1CYR5	RMD1	A0A1C1CYR5	0	1	Sporulation protein RMD1
-RMD5	arabidopsis-thaliana	Q9T075	RMD5	Q9T075	14	18	Protein RMD5 homolog
-RMD9	candida-albicans-237561	Q5A2V2	RMD9	Q5A2V2	0	3	RNA-binding protein RMD9, mitochondrial
-RMDN1	mus-musculus	Q9DCV4	Rmdn1	Q9DCV4	0	1	Regulator of microtubule dynamics protein 1
-RMDN2	mus-musculus	Q8BSE0	Rmdn2	Q8BSE0	1	5	Regulator of microtubule dynamics protein 2
-RMDN2	rattus-norvegicus	Q498D5	Rmdn2	Q498D5	3	10	Regulator of microtubule dynamics protein 2
-RMDN3	mus-musculus	Q3UJU9	Rmdn3	Q3UJU9	10	23	Regulator of microtubule dynamics protein 3
-RMDN3	rattus-norvegicus	M0R718	Rmdn3	M0R718	6	14	Regulator of microtubule dynamics protein 3
-RMDN3	rattus-norvegicus	Q66H15	Rmdn3	Q66H15	7	17	Regulator of microtubule dynamics protein 3
+RMD	pseudomonas-aeruginosa	Q9HTB6	rmd	Q9HTB6	1	100	GDP-6-deoxy-D-mannose reductase	
+RMD-1	human	Q96DB5	RMDN1	Q96DB5	12	100	Regulator of microtubule dynamics protein 1 (RMD-1) (hRMD-1)	w
+RMD-1	worm	P34560	rmd-1	P34560	0	16	Regulator of microtubule dynamics protein 1	
+RMD-2	human	Q96LZ7	RMDN2	Q96LZ7	10	40	Regulator of microtubule dynamics protein 2 (RMD-2) (hRMD-2)	w
+RMD-2	worm	Q8MQB5	rmd-2	Q8MQB5	0	2	TPR_REGION domain-containing protein	
+RMD-3	human	Q96TC7	RMDN3	Q96TC7	51	338	Regulator of microtubule dynamics protein 3 (RMD-3) (hRMD-3)	w
+RMD-3	worm	Q17510	rmd-3	Q17510	0	1	Regulator of microtubule dynamics protein 1	
+RMD1	cladophialophora-carrionii	A0A1C1CYR5	RMD1	A0A1C1CYR5	0	1	Sporulation protein RMD1	
+RMD1	yeast	Q03441	RMD1	Q03441	0	9	Sporulation protein RMD1	
+RMD1_HUMAN	human	Q96DB5	RMDN1	Q96DB5	12	100		
+RMD2_HUMAN	human	Q96LZ7	RMDN2	Q96LZ7	10	40		
+RMD3_HUMAN	human	Q96TC7	RMDN3	Q96TC7	51	338		
+RMD5	arabidopsis-thaliana	Q9T075	RMD5	Q9T075	14	18	Protein RMD5 homolog	
+RMD5	human	Q96G75	RMND5B	Q96G75	17	72	E3 ubiquitin-protein transferase RMND5B (EC 2.3.2.27) (Prote	w
+RMD5	human	Q9H871	RMND5A	Q9H871	22	210	E3 ubiquitin-protein transferase RMND5A (EC 2.3.2.27) (P44CT	w
+RMD5	yeast	Q12508	RMD5	Q12508	3	17	E3 ubiquitin-protein ligase RMD5	
+RMD5A_HUMAN	human	Q9H871	RMND5A	Q9H871	22	210		
+RMD5B_HUMAN	human	Q96G75	RMND5B	Q96G75	17	72		
+RMD6	yeast	P39975	RMD6	P39975	0	2	Sporulation protein RMD6	
+RMD8	yeast	P43620	RMD8	P43620	1	8	Sporulation protein RMD8	
+RMD9	candida-albicans-237561	Q5A2V2	RMD9	Q5A2V2	0	3	RNA-binding protein RMD9, mitochondrial	
+RMD9	yeast	P53140	RMD9	P53140	1	23	RNA-binding protein RMD9, mitochondrial	
+RMD9-LIKE	yeast	P38330	YBR238C	P38330	2	36	RNA-binding protein RMD9-like, mitochondrial	w
+RMDN1	human	Q96DB5	RMDN1	Q96DB5	12	100	Regulator of microtubule dynamics protein 1 (RMD-1) (hRMD-1)	
+RMDN1	mus-musculus	Q9DCV4	Rmdn1	Q9DCV4	0	1	Regulator of microtubule dynamics protein 1	
+RMDN2	human	Q96LZ7	RMDN2	Q96LZ7	10	40	Regulator of microtubule dynamics protein 2 (RMD-2) (hRMD-2)	
+RMDN2	mus-musculus	Q8BSE0	Rmdn2	Q8BSE0	1	5	Regulator of microtubule dynamics protein 2	
+RMDN2	rattus-norvegicus	Q498D5	Rmdn2	Q498D5	3	10	Regulator of microtubule dynamics protein 2	
+RMDN3	human	Q96TC7	RMDN3	Q96TC7	51	338	Regulator of microtubule dynamics protein 3 (RMD-3) (hRMD-3)	
+RMDN3	mus-musculus	Q3UJU9	Rmdn3	Q3UJU9	10	23	Regulator of microtubule dynamics protein 3	
+RMDN3	rattus-norvegicus	M0R718	Rmdn3	M0R718	6	14	Regulator of microtubule dynamics protein 3	
+RMDN3	rattus-norvegicus	Q66H15	Rmdn3	Q66H15	7	17	Regulator of microtubule dynamics protein 3	

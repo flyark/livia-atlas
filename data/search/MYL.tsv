@@ -1,31 +1,96 @@
-MYL1	mus-musculus	P05977	Myl1	P05977	3	58	Myosin light chain 1/3, skeletal muscle isoform
-MYL1	rattus-norvegicus	P02600	Myl1	P02600	4	69	Myosin light chain 1/3, skeletal muscle isoform
-MYL10	mus-musculus	Q62082	Myl10	Q62082	0	23	Myosin regulatory light chain 10
-MYL10	rattus-norvegicus	D3ZCI9	Myl10	D3ZCI9	0	24	Myosin light chain 10
-MYL11	mus-musculus	P97457	Myl11	P97457	1	36	Myosin regulatory light chain 11
-MYL11	rattus-norvegicus	P04466	Myl11	P04466	1	37	Myosin regulatory light chain 11
-MYL12A	mus-musculus	Q6ZWQ9	Myl12a	Q6ZWQ9	0	20	Myosin, light chain 12A, regulatory, non-sarcomeric
-MYL12B	mus-musculus	Q3THE2	Myl12b	Q3THE2	0	36	Myosin regulatory light chain 12B
-MYL12B	rattus-norvegicus	P18666	Myl12b	P18666	0	28	Myosin regulatory light chain 12B
-MYL2	mus-musculus	P51667	Myl2	P51667	1	42	Myosin regulatory light chain 2, ventricular/cardiac muscle isoform
-MYL2	rattus-norvegicus	P08733	Myl2	P08733	1	44	Myosin regulatory light chain 2, ventricular/cardiac muscle isoform
-MYL3	mus-musculus	P09542	Myl3	P09542	3	46	Myosin light chain 3
-MYL3	rattus-norvegicus	P16409	Myl3	P16409	3	46	Myosin light chain 3
-MYL4	mus-musculus	P09541	Myl4	P09541	3	50	Myosin light chain 4
-MYL4	rattus-norvegicus	P17209	Myl4	P17209	4	46	Myosin light chain 4
-MYL6	mus-musculus	Q60605	Myl6	Q60605	4	45	Myosin light polypeptide 6
-MYL6	rattus-norvegicus	Q64119	Myl6	Q64119	3	38	Myosin light polypeptide 6
-MYL6B	mus-musculus	Q8CI43	Myl6b	Q8CI43	5	44	Myosin light chain 6B
-MYL6BL1	rattus-norvegicus	D3ZHA7	Myl6bl1	D3ZHA7	4	23	Myosin light chain 6B like 1
-MYL6BL1	rattus-norvegicus	M0RDP3	Myl6bl1	M0RDP3	3	22	Myosin light chain 6B like 1
-MYL7	mus-musculus	Q9QVP4	Myl7	Q9QVP4	1	28	Myosin regulatory light chain 2, atrial isoform
-MYL7	rattus-norvegicus	F1M7K3	Myl7	F1M7K3	1	27	Myosin light chain 7
-MYL9	mus-musculus	Q9CQ19	Myl9	Q9CQ19	0	39	Myosin regulatory light polypeptide 9
-MYLIP	mus-musculus	Q8BM54	Mylip	Q8BM54	12	19	E3 ubiquitin-protein ligase MYLIP
-MYLIP	rattus-norvegicus	D3ZDI6	Mylip	D3ZDI6	5	17	E3 ubiquitin-protein ligase MYLIP
-MYLK2	mus-musculus	Q8VCR8	Mylk2	Q8VCR8	0	13	Myosin light chain kinase 2, skeletal/cardiac muscle
-MYLK2	rattus-norvegicus	P20689	Mylk2	P20689	1	8	Myosin light chain kinase 2, skeletal/cardiac muscle
-MYLK3	mus-musculus	Q3UIZ8	Mylk3	Q3UIZ8	0	5	Myosin light chain kinase 3
-MYLK3	rattus-norvegicus	E9PT87	Mylk3	E9PT87	0	2	Myosin light chain kinase 3
-MYLK4	mus-musculus	Q5SUV5	Mylk4	Q5SUV5	0	3	Myosin light chain kinase family member 4
-MYLK4	rattus-norvegicus	M0R632	Mylk4	M0R632	0	1	Myosin light chain kinase family, member 4
+MYL	human	P29590	PML	P29590	92	985		
+MYL1	human	P05976	MYL1	P05976	38	193	Myosin light chain 1/3, skeletal muscle isoform (MLC1/MLC3) 	
+MYL1	mus-musculus	P05977	Myl1	P05977	3	58	Myosin light chain 1/3, skeletal muscle isoform	
+MYL1	rattus-norvegicus	P02600	Myl1	P02600	4	69	Myosin light chain 1/3, skeletal muscle isoform	
+MYL1	zebrafish	Q6P0G6	myl1	Q6P0G6	4	61	Myosin, light chain 1, alkali	
+MYL10	human	Q9BUA6	MYL10	Q9BUA6	6	92	Myosin regulatory light chain 10 (Myosin light chain 2, lymp	
+MYL10	mus-musculus	Q62082	Myl10	Q62082	0	23	Myosin regulatory light chain 10	
+MYL10	rattus-norvegicus	D3ZCI9	Myl10	D3ZCI9	0	24	Myosin light chain 10	
+MYL10_HUMAN	human	Q9BUA6	MYL10	Q9BUA6	6	92		
+MYL11	human	Q96A32	MYL11	Q96A32	15	126	Myosin regulatory light chain 11 (Fast skeletal myosin light	
+MYL11	mus-musculus	P97457	Myl11	P97457	1	36	Myosin regulatory light chain 11	
+MYL11	rattus-norvegicus	P04466	Myl11	P04466	1	37	Myosin regulatory light chain 11	
+MYL11_HUMAN	human	Q96A32	MYL11	Q96A32	15	126		
+MYL12.1	zebrafish	Q6PHJ8	myl12.1	Q6PHJ8	1	41	Myosin, light chain 12, genome duplicate 1	
+MYL12.2	zebrafish	B3DKC6	myl12.2	B3DKC6	1	41	Myosin, light chain 12, genome duplicate 2	
+MYL12A	human	P19105	MYL12A	P19105	40	468	Myosin regulatory light chain 12A (Epididymis secretory prot	
+MYL12A	mus-musculus	Q6ZWQ9	Myl12a	Q6ZWQ9	0	20	Myosin, light chain 12A, regulatory, non-sarcomeric	
+MYL12B	human	O14950	MYL12B	O14950	45	386	Myosin regulatory light chain 12B (MLC-2A) (MLC-2) (Myosin r	
+MYL12B	mus-musculus	Q3THE2	Myl12b	Q3THE2	0	36	Myosin regulatory light chain 12B	
+MYL12B	rattus-norvegicus	P18666	Myl12b	P18666	0	28	Myosin regulatory light chain 12B	
+MYL13	zebrafish	Q7ZUB0	myl13	Q7ZUB0	5	53	Atrial myosin light chain	
+MYL1_HUMAN	human	P05976	MYL1	P05976	38	193		
+MYL2	human	P10916	MYL2	P10916	21	178	Myosin regulatory light chain 2, ventricular/cardiac muscle 	
+MYL2	mus-musculus	P51667	Myl2	P51667	1	42	Myosin regulatory light chain 2, ventricular/cardiac muscle 	
+MYL2	rattus-norvegicus	P08733	Myl2	P08733	1	44	Myosin regulatory light chain 2, ventricular/cardiac muscle 	
+MYL2A	human	Q01449	MYL7	Q01449	8	112		
+MYL2A	zebrafish	E7FG54	myl2a	E7FG54	1	33	Myosin regulatory light chain 2a	
+MYL2B	zebrafish	Q24JV6	myl2b	Q24JV6	0	33	Myosin regulatory light chain 2b	
+MYL3	human	P08590	MYL3	P08590	20	121	Myosin light chain 3 (Cardiac myosin light chain 1) (CMLC1) 	
+MYL3	mus-musculus	P09542	Myl3	P09542	3	46	Myosin light chain 3	
+MYL3	rattus-norvegicus	P16409	Myl3	P16409	3	46	Myosin light chain 3	
+MYL3_HUMAN	human	P08590	MYL3	P08590	20	121		
+MYL4	human	P12829	MYL4	P12829	32	220	Myosin light chain 4 (Myosin light chain 1, embryonic muscle	
+MYL4	mus-musculus	P09541	Myl4	P09541	3	50	Myosin light chain 4	
+MYL4	rattus-norvegicus	P17209	Myl4	P17209	4	46	Myosin light chain 4	
+MYL4_HUMAN	human	P12829	MYL4	P12829	32	220		
+MYL5	human	Q02045	MYL5	Q02045	14	128	Myosin light chain 5 (Myosin regulatory light chain 5) (Supe	
+MYL5	human	Q6UXD7	SLC49A3	Q6UXD7	4	29	Solute carrier family 49 member A3 (Major facilitator superf	w
+MYL5_HUMAN	human	Q02045	MYL5	Q02045	14	128		
+MYL6	human	P60660	MYL6	P60660	66	640	Myosin light polypeptide 6 (17 kDa myosin light chain) (LC17	
+MYL6	mus-musculus	Q60605	Myl6	Q60605	4	45	Myosin light polypeptide 6	
+MYL6	rattus-norvegicus	Q64119	Myl6	Q64119	3	38	Myosin light polypeptide 6	
+MYL6	zebrafish	F1QWU4	myl6	F1QWU4	3	47	Myosin light polypeptide 6 isoform X1	
+MYL6B	human	P14649	MYL6B	P14649	51	288	Myosin light chain 6B (Myosin light chain 1 slow-twitch musc	
+MYL6B	mus-musculus	Q8CI43	Myl6b	Q8CI43	5	44	Myosin light chain 6B	
+MYL6BL1	rattus-norvegicus	D3ZHA7	Myl6bl1	D3ZHA7	4	23	Myosin light chain 6B like 1	
+MYL6BL1	rattus-norvegicus	M0RDP3	Myl6bl1	M0RDP3	3	22	Myosin light chain 6B like 1	
+MYL6B_HUMAN	human	P14649	MYL6B	P14649	51	288		
+MYL6_HUMAN	human	P60660	MYL6	P60660	66	640		
+MYL7	human	Q01449	MYL7	Q01449	8	112	Myosin regulatory light chain 2, atrial isoform (MLC-2a) (ML	
+MYL7	mus-musculus	Q9QVP4	Myl7	Q9QVP4	1	28	Myosin regulatory light chain 2, atrial isoform	
+MYL7	rattus-norvegicus	F1M7K3	Myl7	F1M7K3	1	27	Myosin light chain 7	
+MYL7	zebrafish	Q801M3	myl7	Q801M3	3	48	Myosin light chain 2 Mlc2a	
+MYL9	human	P24844	MYL9	P24844	61	499	Myosin regulatory light polypeptide 9 (20 kDa myosin light c	
+MYL9	mus-musculus	Q9CQ19	Myl9	Q9CQ19	0	39	Myosin regulatory light polypeptide 9	
+MYL9B	zebrafish	Q6NVA6	myl9b	Q6NVA6	1	41	Myosin regulatory light polypeptide 9b	
+MYL9_HUMAN	human	P24844	MYL9	P24844	61	499		
+MYLC-2	human	Q02045	MYL5	Q02045	14	128	Myosin light chain 5 (Myosin regulatory light chain 5) (Supe	w
+MYLC2	human	Q02045	MYL5	Q02045	14	128	Myosin light chain 5 (Myosin regulatory light chain 5) (Supe	w
+MYLC2A	human	Q01449	MYL7	Q01449	8	112		
+MYLC2B	human	O14950	MYL12B	O14950	45	386		
+MYLC2PL	human	Q9BUA6	MYL10	Q9BUA6	6	92		
+MYLE	human	O95424	DEXI	O95424	18	98		
+MYLIP	human	Q8WY64	MYLIP	Q8WY64	20	135	E3 ubiquitin-protein ligase MYLIP (EC 2.3.2.27) (Inducible d	
+MYLIP	mus-musculus	Q8BM54	Mylip	Q8BM54	12	19	E3 ubiquitin-protein ligase MYLIP	
+MYLIP	rattus-norvegicus	D3ZDI6	Mylip	D3ZDI6	5	17	E3 ubiquitin-protein ligase MYLIP	
+MYLIP-A	zebrafish	Q6TEM9	mylipa	Q6TEM9	9	41	E3 ubiquitin-protein ligase MYLIP-A	w
+MYLIP-B	zebrafish	Q05AK5	mylipb	Q05AK5	9	41	E3 ubiquitin-protein ligase MYLIP-B	w
+MYLIPA	zebrafish	Q6TEM9	mylipa	Q6TEM9	9	41	E3 ubiquitin-protein ligase MYLIP-A	
+MYLIPB	zebrafish	Q05AK5	mylipb	Q05AK5	9	41	E3 ubiquitin-protein ligase MYLIP-B	
+MYLIP_HUMAN	human	Q8WY64	MYLIP	Q8WY64	20	135		
+MYLK	human	Q15746	MYLK	Q15746	19	167	Myosin light chain kinase, smooth muscle (MLCK) (smMLCK) (EC	
+MYLK1	human	Q15746	MYLK	Q15746	19	167		
+MYLK2	human	Q9H1R3	MYLK2	Q9H1R3	454	1305	Myosin light chain kinase 2, skeletal/cardiac muscle (MLCK2)	
+MYLK2	mus-musculus	Q8VCR8	Mylk2	Q8VCR8	0	13	Myosin light chain kinase 2, skeletal/cardiac muscle	
+MYLK2	rattus-norvegicus	P20689	Mylk2	P20689	1	8	Myosin light chain kinase 2, skeletal/cardiac muscle	
+MYLK2	zebrafish	A0AB13A9N0	mylk2	A0AB13A9N0	1	6	Myosin light chain kinase 2, skeletal/cardiac muscle	
+MYLK2_HUMAN	human	Q9H1R3	MYLK2	Q9H1R3	454	1305		
+MYLK3	human	Q32MK0	MYLK3	Q32MK0	19	115	Myosin light chain kinase 3 (EC 2.7.11.18) (Cardiac-MyBP-C-a	
+MYLK3	mus-musculus	Q3UIZ8	Mylk3	Q3UIZ8	0	5	Myosin light chain kinase 3	
+MYLK3	rattus-norvegicus	E9PT87	Mylk3	E9PT87	0	2	Myosin light chain kinase 3	
+MYLK3	zebrafish	A8C984	mylk3	A8C984	19	71	Myosin light chain kinase 3 (EC 2.7.11.18) (Cardiac-MyBP-C-a	
+MYLK3_DANRE	zebrafish	A8C984	mylk3	A8C984	19	71		
+MYLK3_HUMAN	human	Q32MK0	MYLK3	Q32MK0	19	115		
+MYLK4	human	Q86YV6	MYLK4	Q86YV6	613	1295	Myosin light chain kinase family member 4 (EC 2.7.11.1) (Sug	
+MYLK4	mus-musculus	Q5SUV5	Mylk4	Q5SUV5	0	3	Myosin light chain kinase family member 4	
+MYLK4	rattus-norvegicus	M0R632	Mylk4	M0R632	0	1	Myosin light chain kinase family, member 4	
+MYLK4B	zebrafish	A0A8M9PPX4	mylk4b	A0A8M9PPX4	0	6	Myosin light chain kinase 2, skeletal/cardiac muscle isoform	
+MYLK4_HUMAN	human	Q86YV6	MYLK4	Q86YV6	613	1295		
+MYLK5	zebrafish	F1QPV1	mylk5	F1QPV1	1	15	Myosin light chain kinase, smooth muscle isoform X1	
+MYLKB	zebrafish	E7FDK2	mylkb	E7FDK2	1	15	Myosin light chain kinase, smooth muscle	
+MYLK_HUMAN	human	Q15746	MYLK	Q15746	19	167		
+MYLPF	human	Q96A32	MYL11	Q96A32	15	126		
+MYLPFA	zebrafish	O93409	mylpfa	O93409	0	31	Myosin regulatory light chain 2, skeletal muscle isoform A	
+MYLPFB	zebrafish	Q66I73	mylpfb	Q66I73	2	25	Myosin regulatory light chain 2, skeletal muscle isoform B	
+MYLZ3	zebrafish	Q9I8U7	mylz3	Q9I8U7	3	43	Fast skeletal muscle myosin light polypeptide 3	

@@ -1,31 +1,186 @@
-SEN1	arabidopsis-thaliana	Q9M1E8	SEN1	Q9M1E8	2	13	tRNA-splicing endonuclease subunit Sen2-1
-SEN15	candida-albicans-237561	A0A1D8PD63	SEN15	A0A1D8PD63	1	15	Sen15p
-SEN15	schizosaccharomyces-pombe	Q7LKV3	sen15	Q7LKV3	2	22	Probable tRNA-splicing endonuclease subunit sen15
-SEN2	arabidopsis-thaliana	Q9LSS3	SEN2	Q9LSS3	3	13	tRNA-splicing endonuclease subunit Sen2-2
-SEN2	candida-albicans-237561	Q5AF73	SEN2	Q5AF73	1	16	tRNA-splicing endonuclease subunit Sen2
-SEN2	schizosaccharomyces-pombe	Q8TFH7	sen2	Q8TFH7	3	27	Probable tRNA-splicing endonuclease subunit sen2
-SEN34	schizosaccharomyces-pombe	O60156	sen34	O60156	4	20	Probable tRNA-splicing endonuclease subunit sen34
-SEN54	schizosaccharomyces-pombe	O74908	sen54	O74908	3	20	Probable tRNA-splicing endonuclease subunit sen54
-SENC	pseudomonas-aeruginosa	Q9I718	senC	Q9I718	1	10	SenC
-SEND1	arabidopsis-thaliana	Q9M2Z3	SEND1	Q9M2Z3	7	122	Single-strand DNA endonuclease 1
-SEND1	oryza-sativa-subsp-japonica	Q8W5R1	SEND1	Q8W5R1	13	130	Single-strand DNA endonuclease 1
-SENP1	mus-musculus	P59110	Senp1	P59110	5	18	Sentrin-specific protease 1
-SENP1	rattus-norvegicus	A0A0G2K1R8	Senp1	A0A0G2K1R8	10	15	SUMO specific peptidase 1
-SENP1	rattus-norvegicus	F1LVT6	Senp1	F1LVT6	6	16	SUMO specific peptidase 1
-SENP18	rattus-norvegicus	Q6IE22	Senp18	Q6IE22	9	17	Sentrin/SUMO-specific protease 18
-SENP2	mus-musculus	Q91ZX6	Senp2	Q91ZX6	11	19	Sentrin-specific protease 2
-SENP2	rattus-norvegicus	Q9EQE1	Senp2	Q9EQE1	8	17	Sentrin-specific protease 2
-SENP3	mus-musculus	Q9EP97	Senp3	Q9EP97	12	47	Sentrin-specific protease 3
-SENP3	rattus-norvegicus	G3V7S5	Senp3	G3V7S5	5	46	SUMO specific peptidase 3
-SENP5	mus-musculus	Q6NXL6	Senp5	Q6NXL6	4	13	Sentrin-specific protease 5
-SENP5	rattus-norvegicus	D4A2S8	Senp5	D4A2S8	4	14	SUMO specific peptidase 5
-SENP5L1	rattus-norvegicus	A0A0G2JZW2	Senp5l1	A0A0G2JZW2	4	12	SUMO specific peptidase 5 like 1
-SENP6	mus-musculus	Q6P7W0	Senp6	Q6P7W0	4	12	Sentrin-specific protease 6
-SENP6	rattus-norvegicus	F1LU78	Senp6	F1LU78	5	17	Sentrin-specific protease 6
-SENP7	mus-musculus	Q8BUH8	Senp7	Q8BUH8	3	18	Sentrin-specific protease 7
-SENP7	rattus-norvegicus	D3ZF42	Senp7	D3ZF42	7	22	Sentrin-specific protease 7
-SENP8	dictyostelium-discoideum	Q54XR2	senp8	Q54XR2	2	17	Probable sentrin-specific protease 8
-SENP8	mus-musculus	Q9D2Z4	Senp8	Q9D2Z4	1	1	Sentrin-specific protease 8
-SENP8	rattus-norvegicus	Q5FVJ8	Senp8	Q5FVJ8	8	23	Sentrin-specific protease 8
-SENX3	mycobacterium-leprae	P54883	senX3	P54883	2	13	Sensor-like histidine kinase SenX3
-SENX3	mycobacterium-tuberculosis	P9WGK5	senX3	P9WGK5	5	16	Sensor-like histidine kinase SenX3
+SEN1	arabidopsis-thaliana	Q9M1E8	SEN1	Q9M1E8	2	13	tRNA-splicing endonuclease subunit Sen2-1	
+SEN1	human	Q7Z333	SETX	Q7Z333	12	158	Helicase senataxin (EC 5.6.2.3) (Amyotrophic lateral scleros	w
+SEN15	candida-albicans-237561	A0A1D8PD63	SEN15	A0A1D8PD63	1	15	Sen15p	
+SEN15	human	Q8WW01	TSEN15	Q8WW01	17	107		
+SEN15	schizosaccharomyces-pombe	Q7LKV3	sen15	Q7LKV3	2	22	Probable tRNA-splicing endonuclease subunit sen15	
+SEN15	yeast	Q04675	SEN15	Q04675	2	48	tRNA-splicing endonuclease subunit SEN15	
+SEN15_HUMAN	human	Q8WW01	TSEN15	Q8WW01	17	107		
+SEN2	arabidopsis-thaliana	Q9LSS3	SEN2	Q9LSS3	3	13	tRNA-splicing endonuclease subunit Sen2-2	
+SEN2	candida-albicans-237561	Q5AF73	SEN2	Q5AF73	1	16	tRNA-splicing endonuclease subunit Sen2	
+SEN2	human	Q8NCE0	TSEN2	Q8NCE0	38	267		
+SEN2	schizosaccharomyces-pombe	Q8TFH7	sen2	Q8TFH7	3	27	Probable tRNA-splicing endonuclease subunit sen2	
+SEN2	yeast	P16658	SEN2	P16658	2	24	tRNA-splicing endonuclease subunit SEN2	
+SEN2_HUMAN	human	Q8NCE0	TSEN2	Q8NCE0	38	267		
+SEN34	fly	FBgn0053260	Tsen34	Q0E8E7	33	393	tRNA-splicing endonuclease subunit Sen34 (EC 4.6.1.16)	w
+SEN34	human	Q9BSV6	TSEN34	Q9BSV6	39	411		
+SEN34	schizosaccharomyces-pombe	O60156	sen34	O60156	4	20	Probable tRNA-splicing endonuclease subunit sen34	
+SEN34	yeast	P39707	SEN34	P39707	5	19	tRNA-splicing endonuclease subunit SEN34	
+SEN34	zebrafish	A2BIL9	tsen34	A2BIL9	2	15	tRNA-splicing endonuclease subunit Sen34	w
+SEN34_HUMAN	human	Q9BSV6	TSEN34	Q9BSV6	39	411		
+SEN54	human	Q7Z6J9	TSEN54	Q7Z6J9	23	219		
+SEN54	schizosaccharomyces-pombe	O74908	sen54	O74908	3	20	Probable tRNA-splicing endonuclease subunit sen54	
+SEN54	worm	Q9TXV5	tsen-54	Q9TXV5	3	14	tRNA-splicing endonuclease subunit Sen54 N-terminal domain-c	w
+SEN54	yeast	Q02825	SEN54	Q02825	3	20	tRNA-splicing endonuclease subunit SEN54	
+SEN54_HUMAN	human	Q7Z6J9	TSEN54	Q7Z6J9	23	219		
+SENATAXIN	fly	FBgn0035842	Setx	B7Z0D7	2	9	Senataxin, isoform B	w
+SENATAXIN	human	Q7Z333	SETX	Q7Z333	12	158	Helicase senataxin (EC 5.6.2.3) (Amyotrophic lateral scleros	w
+SENC	pseudomonas-aeruginosa	Q9I718	senC	Q9I718	1	10	SenC	
+SEND1	arabidopsis-thaliana	Q9M2Z3	SEND1	Q9M2Z3	7	122	Single-strand DNA endonuclease 1	
+SEND1	fly	FBgn0031406	Send1	Q9VQA0	14	243	GH26248p (Spermathecal endopeptidase 1 (EC 3.4.21.-))	
+SEND1	oryza-sativa-subsp-japonica	Q8W5R1	SEND1	Q8W5R1	13	130	Single-strand DNA endonuclease 1	
+SEND2	fly	FBgn0264253	Send2	Q7KT95	35	245	Serine protease (Spermathecal endopeptidase 2 (EC 3.4.21.-))	
+SENESCENCE	fly	FBgn0038257	smp-30	H8F4T3	0	4	MIP34848p1 (Senescence marker protein-30, isoform C (EC 3.1.	w
+SENESCENCE	human	Q15493	RGN	Q15493	2	56	Regucalcin (RC) (Gluconolactonase) (GNL) (EC 3.1.1.17) (Sene	w
+SENESCENCE	human	Q8WVC0	LEO1	Q8WVC0	85	416	RNA polymerase-associated protein LEO1 (Replicative senescen	w
+SENESCENCE	human	Q8WZ71	TMEM158	Q8WZ71	8	31	Transmembrane protein 158 (40 kDa BINP-binding protein) (p40	w
+SENESCENCE	human	Q9H7F0	ATP13A3	Q9H7F0	11	203	Polyamine-transporting ATPase 13A3 (ATPase family homolog up	w
+SENESCENCE	human	Q9UMS4	PRPF19	Q9UMS4	88	658	Pre-mRNA-processing factor 19 (EC 2.3.2.27) (Nuclear matrix 	w
+SENESCENCE-ASSOCIATED	human	O95832	CLDN1	O95832	29	421	Claudin-1 (Senescence-associated epithelial membrane protein	w
+SENESCENCE-INHIBITED	human	O76021	RSL1D1	O76021	67	662	Ribosomal L1 domain-containing protein 1 (CATX-11) (Cellular	w
+SENESCENT	human	P0CW19	LIMS3	P0CW19	2	27	LIM and senescent cell antigen-like-containing domain protei	w
+SENESCENT	human	P0CW20	LIMS4	P0CW20	6	48	LIM and senescent cell antigen-like-containing domain protei	w
+SENESCENT	human	P48059	LIMS1	P48059	15	152	LIM and senescent cell antigen-like-containing domain protei	w
+SENESCENT	human	Q7Z4I7	LIMS2	Q7Z4I7	5	55	LIM and senescent cell antigen-like-containing domain protei	w
+SENJU	fly	FBgn0031676	senju	Q9VMU8	0	3	UDP-galactose transporter senju	w
+SENJU	fly	FBgn0031676	senju	Q9VMU8	0	3	UDP-galactose transporter senju	w
+SENP1	human	Q9P0U3	SENP1	Q9P0U3	38	213	Sentrin-specific protease 1 (EC 3.4.22.-) (Sentrin/SUMO-spec	
+SENP1	mus-musculus	P59110	Senp1	P59110	5	18	Sentrin-specific protease 1	
+SENP1	rattus-norvegicus	A0A0G2K1R8	Senp1	A0A0G2K1R8	10	15	SUMO specific peptidase 1	
+SENP1	rattus-norvegicus	F1LVT6	Senp1	F1LVT6	6	16	SUMO specific peptidase 1	
+SENP1	zebrafish	E7F9B8	senp1	E7F9B8	11	19	Sentrin-specific protease 1	
+SENP18	rattus-norvegicus	Q6IE22	Senp18	Q6IE22	9	17	Sentrin/SUMO-specific protease 18	
+SENP1_HUMAN	human	Q9P0U3	SENP1	Q9P0U3	38	213		
+SENP2	human	Q9HC62	SENP2	Q9HC62	56	209	Sentrin-specific protease 2 (EC 3.4.22.-) (Axam2) (SMT3-spec	
+SENP2	mus-musculus	Q91ZX6	Senp2	Q91ZX6	11	19	Sentrin-specific protease 2	
+SENP2	rattus-norvegicus	Q9EQE1	Senp2	Q9EQE1	8	17	Sentrin-specific protease 2	
+SENP2	zebrafish	E7F9K9	senp2	E7F9K9	10	19	SUMO-specific peptidase 2	
+SENP2_HUMAN	human	Q9HC62	SENP2	Q9HC62	56	209		
+SENP3	human	Q9H4L4	SENP3	Q9H4L4	119	373	Sentrin-specific protease 3 (EC 3.4.22.-) (SUMO-1-specific p	
+SENP3	mus-musculus	Q9EP97	Senp3	Q9EP97	12	47	Sentrin-specific protease 3	
+SENP3	rattus-norvegicus	G3V7S5	Senp3	G3V7S5	5	46	SUMO specific peptidase 3	
+SENP3A	zebrafish	A2BEN4	senp3a	A2BEN4	9	31	SUMO-specific peptidase 3a	
+SENP3B	zebrafish	A0A8M1NCS7	senp3b	A0A8M1NCS7	10	35	Sentrin-specific protease 3b	
+SENP3_HUMAN	human	Q9H4L4	SENP3	Q9H4L4	119	373		
+SENP5	human	Q96HI0	SENP5	Q96HI0	24	108	Sentrin-specific protease 5 (EC 3.4.22.-) (Sentrin/SUMO-spec	
+SENP5	mus-musculus	Q6NXL6	Senp5	Q6NXL6	4	13	Sentrin-specific protease 5	
+SENP5	rattus-norvegicus	D4A2S8	Senp5	D4A2S8	4	14	SUMO specific peptidase 5	
+SENP5	zebrafish	F1Q8C1	senp5	F1Q8C1	8	20	SUMO-specific peptidase 5	
+SENP5L1	rattus-norvegicus	A0A0G2JZW2	Senp5l1	A0A0G2JZW2	4	12	SUMO specific peptidase 5 like 1	
+SENP5_HUMAN	human	Q96HI0	SENP5	Q96HI0	24	108		
+SENP6	human	Q9GZR1	SENP6	Q9GZR1	59	380	Sentrin-specific protease 6 (EC 3.4.22.-) (SUMO-1-specific p	
+SENP6	mus-musculus	Q6P7W0	Senp6	Q6P7W0	4	12	Sentrin-specific protease 6	
+SENP6	rattus-norvegicus	F1LU78	Senp6	F1LU78	5	17	Sentrin-specific protease 6	
+SENP6B	zebrafish	A0A8M9PPW0	senp6b	A0A8M9PPW0	5	27	Sentrin-specific protease 6	
+SENP6_HUMAN	human	Q9GZR1	SENP6	Q9GZR1	59	380		
+SENP7	human	Q9BQF6	SENP7	Q9BQF6	12	65	Sentrin-specific protease 7 (EC 3.4.22.-) (SUMO-1-specific p	
+SENP7	mus-musculus	Q8BUH8	Senp7	Q8BUH8	3	18	Sentrin-specific protease 7	
+SENP7	rattus-norvegicus	D3ZF42	Senp7	D3ZF42	7	22	Sentrin-specific protease 7	
+SENP7B	zebrafish	Q1L9B2	senp7b	Q1L9B2	6	28	SUMO-specific peptidase 7b	
+SENP7_HUMAN	human	Q9BQF6	SENP7	Q9BQF6	12	65		
+SENP8	dictyostelium-discoideum	Q54XR2	senp8	Q54XR2	2	17	Probable sentrin-specific protease 8	
+SENP8	human	Q96LD8	SENP8	Q96LD8	8	82	Sentrin-specific protease 8 (EC 3.4.22.-) (Deneddylase-1) (N	
+SENP8	mus-musculus	Q9D2Z4	Senp8	Q9D2Z4	1	1	Sentrin-specific protease 8	
+SENP8	rattus-norvegicus	Q5FVJ8	Senp8	Q5FVJ8	8	23	Sentrin-specific protease 8	
+SENP8	zebrafish	Q08CI6	senp8	Q08CI6	8	16	SUMO peptidase family member, NEDD8-specific	
+SENP8_HUMAN	human	Q96LD8	SENP8	Q96LD8	8	82		
+SENS	fly	FBgn0002573	sens	Q9N658	95	393	Zinc finger protein sens (Protein senseless)	w
+SENS	fly	FBgn0002573	sens	Q9N658	95	393	Zinc finger protein sens (Protein senseless)	w
+SENS	human	O95786	RIGI	O95786	63	1617	Antiviral innate immune response receptor RIG-I (ATP-depende	w
+SENS-2	fly	FBgn0051632	sens-2	Q9VM77	63	355	FI20031p1 (Senseless-2, isoform A) (Senseless-2, isoform B)	
+SENSELESS	fly	FBgn0002573	sens	Q9N658	95	393	Zinc finger protein sens (Protein senseless)	w
+SENSELESS-2	fly	FBgn0051632	sens-2	Q9VM77	63	355	FI20031p1 (Senseless-2, isoform A) (Senseless-2, isoform B)	w
+SENSILLA	fly	FBgn0003270	amos	Q9Y0A7	65	392	Basic helix-loop-helix transcription factor amos (Absent MD 	w
+SENSING	fly	FBgn0020907	Scp2	O16158	0	19	Calcium-binding protein (Cex Ca2+-sensing low molecular weig	w
+SENSITIVE	fly	FBgn0037358	elm	Q9VNF9	4	11	Ethanol sensitive with low memory, isoform A (Ethanol sensit	w
+SENSITIVE	fly	FBgn0261243	Psa	Q8IRH1	32	282	FI19310p1 (Puromycin sensitive aminopeptidase, isoform C)	w
+SENSITIVE	human	P54105	CLNS1A	P54105	50	206	Methylosome subunit pICln (Chloride channel, nucleotide sens	w
+SENSITIVE	human	Q9UBF6	RNF7	Q9UBF6	44	626	RING-box protein 2 (Rbx2) (EC 2.3.2.27) (EC 2.3.2.32) (CKII 	w
+SENSITIVE	yeast	P53830	CUS2	P53830	0	31	Cold sensitive U2 snRNA suppressor 2	w
+SENSITIVE	yeast	Q02554	CUS1	Q02554	16	99	Cold sensitive U2 snRNA suppressor 1	w
+SENSITIVE	yeast	Q04172	SHE9	Q04172	0	31	Sensitive to high expression protein 9, mitochondrial	w
+SENSITIVE	yeast	Q08977	CUB1	Q08977	3	35	Cu(2+) suppressing and bleomycin sensitive protein 1	w
+SENSITIVE	zebrafish	Q7T2F5	napab	Q7T2F5	28	79	N-ethylmaleimide sensitive fusion protein attachment protein	w
+SENSITIVE-SILENCING	fly	FBgn0039169	Spps	A0A0B4KHC8	63	352	Sp1-like factor for pairing sensitive-silencing, isoform B	w
+SENSITIVITY	fly	FBgn0016691	ATPsynO	Q24439	9	163	ATP synthase subunit O, mitochondrial (Oligomycin sensitivit	w
+SENSITIVITY	fly	FBgn0033549	mms4	A1Z8C0	3	12	Methyl methanesulfonate sensitivity 4	w
+SENSITIVITY	fly	FBgn0035470	Ccz1	Q9VZL5	3	8	Vacuolar fusion protein CCZ1 homolog (Caffeine-calcium-zinc 	w
+SENSITIVITY	human	P48047	ATP5PO	P48047	32	412	ATP synthase peripheral stalk subunit OSCP, mitochondrial (A	w
+SENSITIVITY	human	Q9NS86	LANCL2	Q9NS86	3	109	LanC-like protein 2 (Testis-specific adriamycin sensitivity 	w
+SENSITIVITY	virus	Q08FZ1	DpV83gp009	Q08FZ1	5	165	Alpha amanitin sensitivity protein	w
+SENSITIVITY	worm	Q7JNG1	atp-3	Q7JNG1	3	62	Oligomycin sensitivity conferral protein	w
+SENSITIVITY	yeast	P08018	PBS2	P08018	16	57	MAP kinase kinase PBS2 (EC 2.7.12.2) (Polymyxin B resistance	w
+SENSITIVITY	yeast	P19541	RDS2	P19541	1	9	Regulator of drug sensitivity 2	w
+SENSITIVITY	yeast	P25611	RDS1	P25611	0	24	Regulator of drug sensitivity 1	w
+SENSITIVITY	yeast	P38284	ICS2	P38284	1	11	Increased copper sensitivity protein 2	w
+SENSITIVITY	yeast	P38751	SHU1	P38751	2	37	Suppressor of HU sensitivity involved in recombination prote	w
+SENSITIVITY	yeast	P38957	SHU2	P38957	3	36	Suppressor of hydroxyurea sensitivity protein 2	w
+SENSITIVITY	yeast	P47034	ICS3	P47034	0	1	Increased copper sensitivity protein 3	w
+SENSITIVITY	yeast	Q12318	PSY3	Q12318	3	40	Platinum sensitivity protein 3	w
+SENSITIVITY-INDUCING	fly	FBgn0028683	spt4	Q9TVQ5	17	460	Transcription elongation factor SPT4 (DRB sensitivity-induci	w
+SENSITIVITY-INDUCING	fly	FBgn0040273	Spt5	Q9V460	40	232	Transcription elongation factor SPT5 (DRB sensitivity-induci	w
+SENSITIVITY-INDUCING	human	O00267	SUPT5H	O00267	68	598	Transcription elongation factor SPT5 (hSPT5) (DRB sensitivit	w
+SENSITIVITY-INDUCING	human	P63272	SUPT4H1	P63272	26	566	Transcription elongation factor SPT4 (hSPT4) (DRB sensitivit	w
+SENSITIZATION-ASSOCIATED	human	Q6X4U4	SOSTDC1	Q6X4U4	5	47	Sclerostin domain-containing protein 1 (Ectodermal BMP inhib	w
+SENSITIZED	fly	FBgn0032929	Mcm10	Q9VIE6	4	70	Protein MCM10 homolog (Sensitized chromosome inheritance mod	w
+SENSOR	fly	FBgn0035035	CG3570	Q9W138	0	1	S-adenosylmethionine sensor upstream of mTORC1 (dSamtor) (Pr	w
+SENSOR	human	A6NHX0	CASTOR2	A6NHX0	11	80	Cytosolic arginine sensor for mTORC1 subunit 2 (Cellular arg	w
+SENSOR	human	H7C1Q1	?	H7C1Q1	0	2	Cytosolic arginine sensor for mTORC1 subunit 1	w
+SENSOR	human	P62166	NCS1	P62166	59	337	Neuronal calcium sensor 1 (NCS-1) (Frequenin homolog) (Frequ	w
+SENSOR	human	Q14494	NFE2L1	Q14494	33	78	Endoplasmic reticulum membrane sensor NFE2L1 (Locus control 	w
+SENSOR	human	Q1RMZ1	SAMTOR	Q1RMZ1	7	61	S-adenosylmethionine sensor upstream of mTORC1 (Probable met	w
+SENSOR	human	Q68E01	INTS3	Q68E01	32	364	Integrator complex subunit 3 (Int3) (SOSS complex subunit A)	w
+SENSOR	human	Q8WTX7	CASTOR1	Q8WTX7	13	77	Cytosolic arginine sensor for mTORC1 subunit 1 (Cellular arg	w
+SENSOR	human	Q92616	GCN1	Q92616	14	504	Stalled ribosome sensor GCN1 (GCN1 eIF-2-alpha kinase activa	w
+SENSOR	human	Q96AH0	NABP1	Q96AH0	12	67	SOSS complex subunit B2 (Nucleic acid-binding protein 1) (Ol	w
+SENSOR	human	Q96D96	HVCN1	Q96D96	15	102	Voltage-gated hydrogen channel 1 (Hydrogen voltage-gated cha	w
+SENSOR	human	Q9BQ15	NABP2	Q9BQ15	18	111	SOSS complex subunit B1 (Nucleic acid-binding protein 2) (Ol	w
+SENSOR	human	Q9NRY2	INIP	Q9NRY2	7	59	SOSS complex subunit C (INTS3- and NABP-interacting protein)	w
+SENSOR	human	Q9NY91	SLC5A4	Q9NY91	4	61	Probable glucose sensor protein SLC5A4 (Solute carrier famil	w
+SENSOR	worm	O17897	CELE_F57A10.4	O17897	0	23	Sensor histidine kinase	w
+SENSOR	worm	P36608	ncs-1	P36608	1	10	Neuronal calcium sensor 1	w
+SENSOR	worm	P36609	ncs-2	P36609	1	19	Neuronal calcium sensor 2	w
+SENSOR	yeast	P10870	SNF3	P10870	4	10	Low glucose sensor SNF3	w
+SENSOR	yeast	P25390	SSK22	P25390	3	37	Serine/threonine-protein kinase SSK22 (EC 2.7.11.1) (MAP kin	w
+SENSOR	yeast	P36027	MID2	P36027	1	81	Cell wall integrity sensor MID2	w
+SENSOR	yeast	P53191	PIB2	P53191	3	25	Glutamine sensor PIB2	w
+SENSOR	yeast	Q12300	RGT2	Q12300	2	23	High glucose sensor RGT2	w
+SENSOR	zebrafish	B3DGS0	nfe2l1a	B3DGS0	18	34	Endoplasmic reticulum membrane sensor NFE2L1	w
+SENSOR	zebrafish	L0ANA2	nfe2l1b	L0ANA2	20	34	Endoplasmic reticulum membrane sensor NFE2L1	w
+SENSOR	zebrafish	Q0P410	samtor	Q0P410	0	12	S-adenosylmethionine sensor upstream of mTORC1	w
+SENSOR	zebrafish	Q7ZVS6	castor2	Q7ZVS6	1	9	Cytosolic arginine sensor for mTORC1 subunit 2	w
+SENSOR	zebrafish	Q804C0	ncs1a	Q804C0	4	44	Neuronal calcium sensor 1	w
+SENSORY	fly	FBgn0035815	Snmp2	E1JI63	1	22	Sensory neuron membrane protein 2 (SNMP2Dmel)	w
+SENSORY	fly	FBgn0051721	Trim9	M9MRI4	4	34	E3 ubiquitin-protein ligase TRIM9 (EC 2.3.2.27) (Anomalies i	w
+SENSORY	fly	FBgn0260004	Snmp1	Q9VDD3	1	22	Sensory neuron membrane protein 1 (SNMP1Dmel)	w
+SENSORY	fly	FBgn0261954	east	O46048	4	8	EG:133E12.4 protein (Enhanced adult sensory threshold, isofo	w
+SENSORY	human	Q96KN4	LRATD1	Q96KN4	3	38	Protein LRATD1 (LRAT domain-containing 1) (Neurologic sensor	w
+SENSORY	human	Q96LA9	MRGPRX4	Q96LA9	7	87	Mas-related G protein-coupled receptor member X4 (Sensory ne	w
+SENSORY	human	Q96LB0	MRGPRX3	Q96LB0	5	65	Mas-related G protein-coupled receptor member X3 (Sensory ne	w
+SENSORY	human	Q96LB2	MRGPRX1	Q96LB2	10	84	Mas-related G protein-coupled receptor member X1 (Sensory ne	w
+SENSORY	human	Q9UI33	SCN11A	Q9UI33	1	10	Sodium channel protein type 11 subunit alpha (Peripheral ner	w
+SENSORY	worm	Q2L6W9	sax-1	Q2L6W9	4	23	Serine/threonine-protein kinase sax-1 (EC 2.7.11.1) (NDR pro	w
+SENSORY	worm	Q9XTT3	scav-3	Q9XTT3	0	32	Sensory neuron membrane protein 2	w
+SENTAN	human	A6NMZ2	SNTN	A6NMZ2	8	62	Sentan (Protein S100-A1-like) (S100 calcium-binding protein 	w
+SENTRIN	human	P63165	SUMO1	P63165	121	449	Small ubiquitin-related modifier 1 (SUMO-1) (GAP-modifying p	w
+SENTRIN	human	Q96HI0	SENP5	Q96HI0	24	108	Sentrin-specific protease 5 (EC 3.4.22.-) (Sentrin/SUMO-spec	w
+SENTRIN	human	Q96LD8	SENP8	Q96LD8	8	82	Sentrin-specific protease 8 (EC 3.4.22.-) (Deneddylase-1) (N	w
+SENTRIN	human	Q9BQF6	SENP7	Q9BQF6	12	65	Sentrin-specific protease 7 (EC 3.4.22.-) (SUMO-1-specific p	w
+SENTRIN	human	Q9GZR1	SENP6	Q9GZR1	59	380	Sentrin-specific protease 6 (EC 3.4.22.-) (SUMO-1-specific p	w
+SENTRIN	human	Q9H4L4	SENP3	Q9H4L4	119	373	Sentrin-specific protease 3 (EC 3.4.22.-) (SUMO-1-specific p	w
+SENTRIN	human	Q9HC62	SENP2	Q9HC62	56	209	Sentrin-specific protease 2 (EC 3.4.22.-) (Axam2) (SMT3-spec	w
+SENTRIN	human	Q9P0U3	SENP1	Q9P0U3	38	213	Sentrin-specific protease 1 (EC 3.4.22.-) (Sentrin/SUMO-spec	w
+SENTRIN-2	human	P61956	SUMO2	P61956	155	715	Small ubiquitin-related modifier 2 (SUMO-2) (HSMT3) (SMT3 ho	w
+SENTRIN-SPECIFIC	human	Q96HI0	SENP5	Q96HI0	24	108	Sentrin-specific protease 5 (EC 3.4.22.-) (Sentrin/SUMO-spec	w
+SENTRIN-SPECIFIC	human	Q96LD8	SENP8	Q96LD8	8	82	Sentrin-specific protease 8 (EC 3.4.22.-) (Deneddylase-1) (N	w
+SENTRIN-SPECIFIC	human	Q9BQF6	SENP7	Q9BQF6	12	65	Sentrin-specific protease 7 (EC 3.4.22.-) (SUMO-1-specific p	w
+SENTRIN-SPECIFIC	human	Q9GZR1	SENP6	Q9GZR1	59	380	Sentrin-specific protease 6 (EC 3.4.22.-) (SUMO-1-specific p	w
+SENTRIN-SPECIFIC	human	Q9H4L4	SENP3	Q9H4L4	119	373	Sentrin-specific protease 3 (EC 3.4.22.-) (SUMO-1-specific p	w
+SENTRIN-SPECIFIC	human	Q9HC62	SENP2	Q9HC62	56	209	Sentrin-specific protease 2 (EC 3.4.22.-) (Axam2) (SMT3-spec	w
+SENTRIN-SPECIFIC	human	Q9P0U3	SENP1	Q9P0U3	38	213	Sentrin-specific protease 1 (EC 3.4.22.-) (Sentrin/SUMO-spec	w
+SENTRIN-SPECIFIC	worm	Q09353	ulp-1	Q09353	2	22	Sentrin-specific protease	w
+SENTRIN-SPECIFIC	zebrafish	A0A8M1NCS7	senp3b	A0A8M1NCS7	10	35	Sentrin-specific protease 3b	w
+SENTRIN-SPECIFIC	zebrafish	A0A8M9PPW0	senp6b	A0A8M9PPW0	5	27	Sentrin-specific protease 6	w
+SENTRIN-SPECIFIC	zebrafish	A0A8M9QBG7	si:dkey-100n23.3	A0A8M9QBG7	6	28	Sentrin-specific protease 7 isoform X1	w
+SENTRIN-SPECIFIC	zebrafish	E7F9B8	senp1	E7F9B8	11	19	Sentrin-specific protease 1	w
+SENX3	mycobacterium-leprae	P54883	senX3	P54883	2	13	Sensor-like histidine kinase SenX3	
+SENX3	mycobacterium-tuberculosis	P9WGK5	senX3	P9WGK5	5	16	Sensor-like histidine kinase SenX3	

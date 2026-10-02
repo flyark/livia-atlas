@@ -1,16 +1,312 @@
-Q23858	dictyostelium-discoideum	Q23858	crtA	Q23858	8	38	Calreticulin
-Q23862	dictyostelium-discoideum	Q23862	racE	Q23862	7	34	Rho-related protein racE
-Q23883	dictyostelium-discoideum	Q23883	nad7	Q23883	5	79	NADH-ubiquinone oxidoreductase 49 kDa subunit
-Q23884	dictyostelium-discoideum	Q23884	mrpl11	Q23884	7	208	Large ribosomal subunit protein uL11m
-Q23886	dictyostelium-discoideum	Q23886	mrps12	Q23886	30	270	Small ribosomal subunit protein uS12m
-Q23887	dictyostelium-discoideum	Q23887	mrps7	Q23887	1	10	Small ribosomal subunit protein uS7m
-Q23888	dictyostelium-discoideum	Q23888	mrpl2	Q23888	9	244	Large ribosomal subunit protein uL2m
-Q23889	dictyostelium-discoideum	Q23889	mrps19	Q23889	10	93	Small ribosomal subunit protein uS19m
-Q23892	dictyostelium-discoideum	Q23892	gluA	Q23892	0	9	Lysosomal beta glucosidase
-Q23894	dictyostelium-discoideum	Q23894	cprC	Q23894	0	10	Cysteine proteinase 3
-Q23915	dictyostelium-discoideum	Q23915	kinX	Q23915	3	12	Probable serine/threonine-protein kinase kinX
-Q23917	dictyostelium-discoideum	Q23917	regA	Q23917	1	2	3,5-cyclic-nucleotide phosphodiesterase regA
-Q23919	dictyostelium-discoideum	Q23919	pgmA	Q23919	0	2	Phosphoglucomutase-1
-Q23921	dictyostelium-discoideum	Q23921	pkiA	Q23921	0	1	Protein pkiA
-Q23924	dictyostelium-discoideum	Q23924	copb	Q23924	17	55	Coatomer subunit beta
-Q23925	dictyostelium-discoideum	Q23925	yelA	Q23925	3	33	Yellow mounds protein A
+Q23008	worm	Q23008	cest-28	Q23008	0	7	Carboxylic ester hydrolase	
+Q23009	worm	Q23009	cest-31	Q23009	0	9	Carboxylic ester hydrolase	
+Q23010	worm	Q23010	cest-34	Q23010	0	1	Carboxylic ester hydrolase	
+Q23012	worm	Q23012	CELE_K11G9.5	Q23012	0	2	Major facilitator superfamily (MFS) profile domain-containin	
+Q23015	worm	Q23015	CELE_M03F4.6	Q23015	0	6	EB domain-containing protein	
+Q23022	worm	Q23022	unc-38	Q23022	11	16	Acetylcholine receptor subunit alpha-type unc-38	
+Q23023	worm	Q23023	unc-51	Q23023	10	70	Serine/threonine-protein kinase unc-51 (EC 2.7.11.1) (Uncoor	
+Q23026	worm	Q23026	CELE_R09F10.3	Q23026	4	26	Mediator of RNA polymerase II transcription subunit 27	
+Q23027	worm	Q23027	inx-5	Q23027	0	1	Innexin-5	
+Q23031	worm	Q23031	CELE_R09F10.8	Q23031	0	2	DOMON domain-containing protein	
+Q23033	worm	Q23033	npr-24	Q23033	3	43	G-protein coupled receptors family 1 profile domain-containi	
+Q23036	worm	Q23036	CELE_T09D3.3	Q23036	1	3	EB domain-containing protein	
+Q23038	worm	Q23038	nhr-216	Q23038	0	15	Nuclear Hormone Receptor family	
+Q23039	worm	Q23039	CELE_T22B7.4	Q23039	1	22	SGF29 C-terminal domain-containing protein	
+Q23042	worm	Q23042	CELE_T22B7.3	Q23042	0	2	Amidinotransferase	
+Q23044	worm	Q23044	CELE_T22B7.7	Q23044	0	1	HotDog ACOT-type domain-containing protein	
+Q23045	worm	Q23045	egl-13	Q23045	6	91	Transcription factor egl-13	
+Q23046	worm	Q23046	CELE_T25F10.3	Q23046	0	2	EGF-like domain-containing protein	
+Q23049	worm	Q23049	bbs-8	Q23049	18	66	Tetratricopeptide repeat protein 8	
+Q23050	worm	Q23050	clik-1	Q23050	0	4	Calponin-like protein OV9M	
+Q23052	worm	Q23052	fip-2	Q23052	0	6	Fungus-Induced Protein	
+Q23056	worm	Q23056	CELE_T27E4.1	Q23056	0	14	C2 domain-containing protein	
+Q23058	worm	Q23058	ssp-9	Q23058	0	3	Sperm-specific class P protein 9/11	
+Q23059	worm	Q23059	srm-2	Q23059	0	1	Serpentine Receptor, class T	
+Q23062	worm	Q23062	ssq-4	Q23062	0	1	Sperm-Specific family, class Q	
+Q23064	worm	Q23064	unc-83	Q23064	3	34	Nuclear migration protein unc-83	
+Q23066	worm	Q23066	cpt-6	Q23066	0	26	Choline/carnitine acyltransferase domain-containing protein	
+Q23067	worm	Q23067	dgtr-1	Q23067	0	9	Acyltransferase	
+Q23068	worm	Q23068	CELE_W01A11.1	Q23068	0	3	Epoxide hydrolase	
+Q23069	worm	Q23069	moc-2	Q23069	0	8	molybdopterin molybdotransferase	
+Q23070	worm	Q23070	CELE_W01A11.7	Q23070	2	8	DUF2382 domain-containing protein	
+Q23072	worm	Q23072	srt-13	Q23072	0	3	Serpentine Receptor, class T	
+Q23073	worm	Q23073	srt-14	Q23073	0	4	Serpentine Receptor, class T	
+Q23079	worm	Q23079	CELE_ZC317.7	Q23079	0	2	YDG domain-containing protein	
+Q23083	worm	Q23083	CELE_ZC8.6	Q23083	0	7	Phosphatidylinositol 4-kinase type 2	
+Q23084	worm	Q23084	set-30	Q23084	2	8	MYND-type domain-containing protein	
+Q23086	worm	Q23086	hsd-2	Q23086	0	10	3-beta hydroxysteroid dehydrogenase/isomerase domain-contain	
+Q23087	worm	Q23087	acl-9	Q23087	1	11	Phospholipid/glycerol acyltransferase domain-containing prot	
+Q23088	worm	Q23088	uvs-1	Q23088	1	9	UV-stimulated scaffold protein A homolog	
+Q23089	worm	Q23089	xpo-1	Q23089	6	100	Importin N-terminal domain-containing protein	
+Q23090	worm	Q23090	CELE_ZK742.3	Q23090	0	4	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	
+Q23091	worm	Q23091	CELE_ZK742.4	Q23091	0	2	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	
+Q23092	worm	Q23092	lbp-4	Q23092	0	6	Fatty acid-binding protein homolog 4	
+Q23096	worm	Q23096	tofu-5	Q23096	1	11	Twenty One u-rna (21U-RNA) biogenesis Fouled Up	
+Q23098	worm	Q23098	nuo-6	Q23098	4	98	NADH dehydrogenase	
+Q23100	worm	Q23100	CELE_W01B6.8	Q23100	0	1	Uncharacterized protein	
+Q23116	worm	Q23116	decr-1.2	Q23116	0	1	Probable 2,4-dienoyl-CoA reductase decr-1.2	
+Q23120	worm	Q23120	rsp-2	Q23120	3	91	Probable splicing factor, arginine/serine-rich 2	
+Q23121	worm	Q23121	rsp-1	Q23121	1	44	Probable splicing factor, arginine/serine-rich 1	
+Q23122	worm	Q23122	aars-1	Q23122	0	23	Alanine--tRNA ligase, mitochondrial	
+Q23124	worm	Q23124	klp-17	Q23124	2	16	Kinesin motor domain-containing protein	
+Q23125	worm	Q23125	mfn-1	Q23125	0	2	Mitoferrin	
+Q23126	worm	Q23126	metl-1	Q23126	2	13	tRNA (guanine-N(7)-)-methyltransferase	
+Q23128	worm	Q23128	Q23128_CAEEL	Q23128	15	39	Serine/threonine-protein (EC 2.7.11.1)	
+Q23128_CAEEL	worm	Q23128	Q23128_CAEEL	Q23128	15	39	Serine/threonine-protein (EC 2.7.11.1)	
+Q23130	worm	Q23130	rga-1	Q23130	6	18	Rho GTPase-activating protein 68F	
+Q23136	worm	Q23136	CELE_W03A5.1	Q23136	0	42	Protein kinase domain-containing protein	
+Q23144	worm	Q23144	CELE_W03C9.2	Q23144	0	2	Uncharacterized protein	
+Q23145	worm	Q23145	CELE_W03C9.5	Q23145	0	2	PTK2	
+Q23146	worm	Q23146	rab-7	Q23146	5	61	Ras-related protein Rab-7a	
+Q23147	worm	Q23147	CELE_W03C9.1	Q23147	0	1	Uncharacterized protein	
+Q23149	worm	Q23149	CELE_W03C9.6	Q23149	0	1	MFS domain-containing protein	
+Q23150	worm	Q23150	col-181	Q23150	0	2	Nematode cuticle collagen N-terminal domain-containing prote	
+Q23151	worm	Q23151	CELE_W03G11.2	Q23151	3	18	Uncharacterized protein	
+Q23153	worm	Q23153	elc-2	Q23153	10	51	Elongin-C	
+Q23155	worm	Q23155	mrps-11	Q23155	18	260	Ribosomal protein S11	
+Q23156	worm	Q23156	srt-39	Q23156	0	3	Serpentine Receptor, class T	
+Q23158	worm	Q23158	atn-1	Q23158	1	107	Alpha-actinin, sarcomeric	
+Q23159	worm	Q23159	CELE_W04D2.4	Q23159	8	250	C2H2-type domain-containing protein	
+Q23162	worm	Q23162	lpr-6	Q23162	0	2	LiPocalin-Related protein	
+Q23163	worm	Q23163	lpr-5	Q23163	0	6	LiPocalin-Related protein	
+Q23164	worm	Q23164	lpr-4	Q23164	0	4	LiPocalin-Related protein	
+Q23165	worm	Q23165	apt-9	Q23165	2	12	ADP-ribosylation factor-binding protein GGA1	
+Q23166	worm	Q23166	CELE_W04G3.5	Q23166	1	12	Ribose-phosphate pyrophosphokinase N-terminal domain-contain	
+Q23170	worm	Q23170	ccch-3	Q23170	1	2	C3H1-type domain-containing protein	
+Q23174	worm	Q23174	CELE_W05E10.2	Q23174	0	1	Uncharacterized protein	
+Q23175	worm	Q23175	ceh-32	Q23175	2	24	Homeobox protein ceh-32	
+Q23179	worm	Q23179	lro-1	Q23179	1	13	Lysosome-Related Organelle protein	
+Q23181	worm	Q23181	gadr-4	Q23181	1	25	Uncharacterized protein	
+Q23190	worm	Q23190	dct-11	Q23190	0	11	DAF-16/FOXO Controlled, germline Tumor affecting	
+Q23191	worm	Q23191	puf-9	Q23191	0	13	PUM-HD domain-containing protein	
+Q23192	worm	Q23192	atat-2	Q23192	0	2	Alpha-tubulin N-acetyltransferase 2	
+Q23194	worm	Q23194	vps-18	Q23194	6	22	Vacuolar protein sorting-associated protein 18 homolog	
+Q23195	worm	Q23195	CELE_W06B4.2	Q23195	1	4	N-acetyl-D-glucosamine kinase	
+Q23196	worm	Q23196	CELE_W06B4.1	Q23196	0	4	Lipase_3 domain-containing protein	
+Q23198	worm	Q23198	CELE_W06D11.3	Q23198	1	10	Uncharacterized protein	
+Q23200	worm	Q23200	dot-1.3	Q23200	1	11	Histone-lysine N-methyltransferase, H3 lysine-79 specific	
+Q23202	worm	Q23202	sbds-1	Q23202	1	19	Ribosome maturation protein SBDS	
+Q23205	worm	Q23205	tag-267	Q23205	1	3	Major sperm protein	
+Q23206	worm	Q23206	CELE_W06E11.1	Q23206	4	26	RNB domain-containing protein	
+Q23212	worm	Q23212	flp-3	Q23212	0	8	FMRFamide-like neuropeptides 3	
+Q23215	worm	Q23215	scyl-1	Q23215	1	9	Protein kinase domain-containing protein	
+Q23217	worm	Q23217	CELE_W07G4.2	Q23217	0	2	L-Fucosyltransferase	
+Q23220	worm	Q23220	dct-15	Q23220	0	1	RGS domain-containing protein	
+Q23221	worm	Q23221	fat-3	Q23221	0	1	Delta(6)-fatty-acid desaturase fat-3	
+Q23223	worm	Q23223	mtr-4	Q23223	10	119	mRNA transport homolog 4	
+Q23227	worm	Q23227	zmp-4	Q23227	0	12	Peptidase metallopeptidase domain-containing protein	
+Q23229	worm	Q23229	xol-1	Q23229	0	10	XO lethal protein 1	
+Q23232	worm	Q23232	wdr-4	Q23232	1	7	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	
+Q23236	worm	Q23236	ndx-3	Q23236	0	8	Nudix hydrolase 3	
+Q23237	worm	Q23237	pbs-3	Q23237	2	60	Proteasome subunit beta type-3	
+Q23238	worm	Q23238	ulp-2	Q23238	1	10	Ubiquitin-like protease 2	
+Q23240	worm	Q23240	cyc-2.2	Q23240	5	81	Probable cytochrome c 2.2	
+Q23243	worm	Q23243	morc-1	Q23243	0	6	ATPase morc-1	
+Q23244	worm	Q23244	CELE_ZC155.4	Q23244	0	1	GP-PDE domain-containing protein	
+Q23245	worm	Q23245	CELE_ZC155.2	Q23245	0	5	Histone H2A/H2B/H3 domain-containing protein	
+Q23246	worm	Q23246	ssp-34	Q23246	6	14	Sperm-specific class P protein 34	
+Q23248	worm	Q23248	grl-21	Q23248	0	7	Ground-like domain-containing protein	
+Q23249	worm	Q23249	orc-5	Q23249	1	24	Origin recognition complex subunit 5 C-terminal domain-conta	
+Q23254	worm	Q23254	CELE_ZC266.1	Q23254	1	24	G-protein coupled receptors family 1 profile domain-containi	
+Q23255	worm	Q23255	mre-11	Q23255	2	32	Double-strand break repair protein mre-11	
+Q23256	worm	Q23256	wdr-5.3	Q23256	9	52	WD repeat-containing protein wdr-5.3	
+Q23259	worm	Q23259	CELE_ZC373.3	Q23259	0	7	non-specific serine/threonine protein kinase	
+Q23260	worm	Q23260	mlck-1	Q23260	10	62	Serine/threonine-protein (EC 2.7.11.1)	
+Q23260_CAEEL	worm	Q23260	mlck-1	Q23260	10	62		
+Q23261	worm	Q23261	ZC373.5	Q23261	0	5	Probable methylthioribulose-1-phosphate dehydratase	
+Q23268	worm	Q23268	cest-2.3	Q23268	0	14	Carboxylesterase type B domain-containing protein	
+Q23269	worm	Q23269	ceh-74	Q23269	0	3	Homeobox domain-containing protein	
+Q23270	worm	Q23270	trm-1	Q23270	0	19	tRNA (guanine(26)-N(2))-dimethyltransferase	
+Q23272	worm	Q23272	atfs-1	Q23272	3	19	Stress activated transcription factor atfs-1	
+Q23280	worm	Q23280	daf-41	Q23280	5	23	Co-chaperone protein daf-41	
+Q23288	worm	Q23288	spe-39	Q23288	2	17	Spermatogenesis-defective protein 39	
+Q23290	worm	Q23290	gck-2	Q23290	8	26	Mitogen-activated protein kinase kinase kinase kinase (EC 2.	
+Q23290_CAEEL	worm	Q23290	gck-2	Q23290	8	26		
+Q23294	worm	Q23294	nhr-11	Q23294	1	8	Nuclear hormone receptor family member nhr-11	
+Q23295	worm	Q23295	mppb-1	Q23295	5	86	Mitochondrial-processing peptidase subunit beta	
+Q23296	worm	Q23296	mans-4	Q23296	1	20	alpha-1,2-Mannosidase	
+Q23305	worm	Q23305	npr-13	Q23305	0	2	G-protein coupled receptors family 1 profile domain-containi	
+Q23307	worm	Q23307	ZC412.3	Q23307	0	2	Uncharacterized protein ZC412.3	
+Q23309	worm	Q23309	CELE_ZC412.5	Q23309	0	6	UDENN domain-containing protein	
+Q23312	worm	Q23312	rps-7	Q23312	14	320	Small ribosomal subunit protein eS7	
+Q23313	worm	Q23313	CELE_ZC434.3	Q23313	0	1	DUF3421 domain-containing protein	
+Q23314	worm	Q23314	ZC434.4	Q23314	8	96	Ribosomal RNA-processing protein 7 homolog	
+Q23315	worm	Q23315	ears-1	Q23315	3	136	glutamate--tRNA ligase	
+Q23316	worm	Q23316	aph-2	Q23316	3	31	Nicastrin	
+Q23317	worm	Q23317	coa-6	Q23317	0	34	PRORP domain-containing protein	
+Q23319	worm	Q23319	CELE_ZC443.4	Q23319	2	17	DUF659 domain-containing protein	
+Q23320	worm	Q23320	CELE_ZC443.1	Q23320	0	3	NADP-dependent oxidoreductase domain-containing protein	
+Q23321	worm	Q23321	CELE_ZC443.3	Q23321	2	15	Glutamic acid-rich protein-like	
+Q23322	worm	Q23322	CELE_ZC443.2	Q23322	0	36	Uncharacterized protein	
+Q23328	worm	Q23328	CELE_ZC449.1	Q23328	3	46	Apple domain-containing protein	
+Q23330	worm	Q23330	CELE_ZC449.5	Q23330	0	2	Proteoglycan 4	
+Q23331	worm	Q23331	srbc-45	Q23331	0	1	Serpentine Receptor, class BC (Class B-like)	
+Q23333	worm	Q23333	ugt-3	Q23333	0	3	glucuronosyltransferase	
+Q23336	worm	Q23336	ugt-5	Q23336	0	7	UDP-glucuronosyltransferase	
+Q23338	worm	Q23338	fkb-4	Q23338	0	10	peptidylprolyl isomerase	
+Q23342	worm	Q23342	rde-8	Q23342	0	5	RNase NYN domain-containing protein	
+Q23345	worm	Q23345	CELE_ZC477.2	Q23345	1	13	Serine/threonine specific protein phosphatases domain-contai	
+Q23355	worm	Q23355	acr-8	Q23355	9	13	AcetylCholine Receptor	
+Q23356	worm	Q23356	mig-15	Q23356	9	46	Serine/threonine-protein kinase mig-15 (EC 2.7.11.1) (Abnorm	
+Q23357	worm	Q23357	cdk-11.2	Q23357	1	2	Cyclin-dependent kinase 11.2	
+Q23359	worm	Q23359	oma-2	Q23359	1	51	CCCH-type zinc finger protein oma-2	
+Q23360	worm	Q23360	vars-1	Q23360	0	15	valine--tRNA ligase	
+Q23363	worm	Q23363	CELE_ZC513.3	Q23363	0	4	Protein kinase domain-containing protein	
+Q23368	worm	Q23368	sec-24.2	Q23368	4	64	Yeast SEC homolog	
+Q23375	worm	Q23375	dot-1.5	Q23375	0	10	Histone-lysine N-methyltransferase, H3 lysine-79 specific	
+Q23376	worm	Q23376	rgs-9	Q23376	1	8	Regulator of G-protein signaling rgs-9	
+Q23378	worm	Q23378	ttr-48	Q23378	1	10	Transthyretin-like family protein	
+Q23381	worm	Q23381	mmcm-1	Q23381	1	4	Probable methylmalonyl-CoA mutase, mitochondrial	
+Q23382	worm	Q23382	ccdc-47	Q23382	7	60	PAT complex subunit CCDC47	
+Q23383	worm	Q23383	metl-6	Q23383	0	6	tRNA N(3)-methylcytidine methyltransferase	
+Q23384	worm	Q23384	nit-1	Q23384	0	6	CN hydrolase domain-containing protein	
+Q23386	worm	Q23386	twk-4	Q23386	27	27	Potassium channel domain-containing protein	
+Q23389	worm	Q23389	CELE_ZK1067.3	Q23389	0	2	Uncharacterized protein	
+Q23390	worm	Q23390	abu-14	Q23390	0	7	Activated in Blocked Unfolded protein response	
+Q23400	worm	Q23400	ZK1127.5	Q23400	8	88	Probable RNA 3'-terminal phosphate cyclase-like protein	
+Q23402	worm	Q23402	ZK1127.4	Q23402	0	25	Protein BCCIP homolog	
+Q23403	worm	Q23403	CELE_ZK1127.3	Q23403	4	31	Uncharacterized protein	
+Q23404	worm	Q23404	acs-6	Q23404	1	10	Fatty Acid CoA Synthetase family	
+Q23405	worm	Q23405	him-14	Q23405	2	23	MutS protein homolog him-14	
+Q23406	worm	Q23406	nos-2	Q23406	0	1	Nanos-type domain-containing protein	
+Q23419	worm	Q23419	tbc-2	Q23419	5	9	PH domain-containing protein	
+Q23420	worm	Q23420	CELE_ZK1248.11	Q23420	2	27	E3 SUMO-protein ligase NSE2	
+Q23421	worm	Q23421	gtap-1	Q23421	0	5	Dynein heavy chain 7, axonemal	
+Q23424	worm	Q23424	fzo-1	Q23424	1	43	Transmembrane GTPase fzo-1	
+Q23429	worm	Q23429	htas-1	Q23429	0	6	Histone H2A	
+Q23435	worm	Q23435	twk-9	Q23435	27	27	TWiK family of potassium channels protein 9	
+Q23445	worm	Q23445	sar-1	Q23445	3	47	Small COPII coat GTPase SAR1	
+Q23449	worm	Q23449	rpn-12	Q23449	3	78	26S proteasome non-ATPase regulatory subunit 8	
+Q23450	worm	Q23450	coa-7	Q23450	0	17	Cytochrome c oxidase assembly factor 7 homolog	
+Q23451	worm	Q23451	rad-23	Q23451	12	80	UV excision repair protein RAD23	
+Q23455	worm	Q23455	ctdh-1	Q23455	0	3	Uncharacterized protein	
+Q23456	worm	Q23456	CELE_ZK287.4	Q23456	0	2	BPTI/Kunitz inhibitor domain-containing protein	
+Q23457	worm	Q23457	rbx-1	Q23457	14	255	RING-box protein 1	
+Q23458	worm	Q23458	ztf-9	Q23458	2	22	C2H2-type domain-containing protein	
+Q23459	worm	Q23459	CELE_ZK287.7	Q23459	0	1	RNA_ligase domain-containing protein	
+Q23460	worm	Q23460	CELE_ZK287.1	Q23460	0	1	CRC domain-containing protein	
+Q23462	worm	Q23462	gcna-1	Q23462	0	6	Germ cell nuclear acidic-1 protein	
+Q23463	worm	Q23463	eftu-2	Q23463	15	221	Tr-type G domain-containing protein	
+Q23469	worm	Q23469	ZK381.2	Q23469	0	1	Glycosyltransferase family 92 protein ZK381.2	
+Q23477	worm	Q23477	CELE_ZK402.5	Q23477	0	7	SPK domain-containing protein	
+Q23480	worm	Q23480	CELE_ZK402.1	Q23480	0	1	Protein FAR1-RELATED SEQUENCE	
+Q23481	worm	Q23481	tmem-17	Q23481	1	7	TMEM (Human TransMEMbrane protein) homolog	
+Q23482	worm	Q23482	lin-37	Q23482	5	69	Uncharacterized protein	
+Q23483	worm	Q23483	CELE_ZK418.5	Q23483	1	38	BOS complex subunit TMEM147	
+Q23486	worm	Q23486	tofu-7	Q23486	1	7	K Homology domain-containing protein	
+Q23487	worm	Q23487	fubl-2	Q23487	0	10	K Homology domain-containing protein	
+Q23490	worm	Q23490	mlt-7	Q23490	0	27	Peroxidase mlt-7	
+Q23491	worm	Q23491	CELE_ZK430.5	Q23491	1	10	separase	
+Q23493	worm	Q23493	bpnt-1	Q23493	0	7	3(2),5'-bisphosphate nucleotidase 1	
+Q23494	worm	Q23494	dcaf-13	Q23494	4	109	DDB1- and CUL4-associated factor 13	
+Q23497	worm	Q23497	npr-9	Q23497	0	9	Galanin-like G-protein coupled receptor npr-9	
+Q23498	worm	Q23498	asm-2	Q23498	0	7	Sphingomyelin phosphodiesterase 2	
+Q23500	worm	Q23500	aco-1	Q23500	0	75	Cytoplasmic aconitate hydratase	
+Q23508	worm	Q23508	CELE_ZK470.1	Q23508	0	1	Mpv17-like protein 2	
+Q23509	worm	Q23509	CELE_ZK470.6	Q23509	2	32	MD-2-related lipid-recognition domain-containing protein	
+Q23511	worm	Q23511	lars-2	Q23511	1	33	leucine--tRNA ligase	
+Q23520	worm	Q23520	gst-30	Q23520	2	5	glutathione transferase	
+Q23521	worm	Q23521	CELE_ZK546.5	Q23521	2	22	C2H2-type domain-containing protein	
+Q23522	worm	Q23522	CELE_ZK546.4	Q23522	0	3	Energy transducer TonB	
+Q23523	worm	Q23523	mdt-4	Q23523	7	65	Mediator of RNA polymerase II transcription subunit 4	
+Q23525	worm	Q23525	gldi-11	Q23525	2	17	SURF6 homolog gldi-11	
+Q23526	worm	Q23526	CELE_ZK546.2	Q23526	0	3	Leucine-rich repeat-containing protein 57	
+Q23528	worm	Q23528	try-1	Q23528	0	3	Peptidase S1 domain-containing protein	
+Q23529	worm	Q23529	zyg-12	Q23529	3	13	Zygote defective protein 12	
+Q23532	worm	Q23532	clc-3	Q23532	0	2	CLaudin-like in Caenorhabditis	
+Q23533	worm	Q23533	sorf-1	Q23533	1	2	Suppressor of organelle fusion 1	
+Q23534	worm	Q23534	acp-1	Q23534	0	1	Putative acid phosphatase 1	
+Q23535	worm	Q23535	slcf-2	Q23535	1	21	Major facilitator superfamily (MFS) profile domain-containin	
+Q23536	worm	Q23536	lgg-2	Q23536	13	87	Protein lgg-2	
+Q23537	worm	Q23537	CELE_ZK593.3	Q23537	0	1	High-affinity choline transporter 1-like	
+Q23539	worm	Q23539	pyk-2	Q23539	1	110	Pyruvate kinase	
+Q23541	worm	Q23541	rbr-2	Q23541	0	61	Lysine-specific demethylase rbr-2	
+Q23543	worm	Q23543	lsm-7	Q23543	18	68	U6 snRNA-associated Sm-like protein LSm7	
+Q23544	worm	Q23544	fic-1	Q23544	3	7	Protein adenylyltransferase fic-1	
+Q23546	worm	Q23546	CELE_ZK596.2	Q23546	1	40	non-specific serine/threonine protein kinase	
+Q23552	worm	Q23552	pmt-1	Q23552	2	8	Phosphoethanolamine N-methyltransferase 1	
+Q23560	worm	Q23560	CELE_ZK666.2	Q23560	0	11	Spore coat protein	
+Q23563	worm	Q23563	clec-59	Q23563	0	5	VWFA domain-containing protein	
+Q23566	worm	Q23566	CELE_ZK666.8	Q23566	0	1	non-specific serine/threonine protein kinase	
+Q23569	worm	Q23569	CELE_ZK669.2	Q23569	0	3	Gamma-interferon-inducible lysosomal thiol reductase	
+Q23570	worm	Q23570	ZK669.3	Q23570	0	3	GILT-like protein ZK669.3	
+Q23571	worm	Q23571	dbt-1	Q23571	2	25	Lipoamide acyltransferase component of branched-chain alpha-	
+Q23579	worm	Q23579	hlh-10	Q23579	1	6	Helix-loop-helix protein 10	
+Q23580	worm	Q23580	lron-2	Q23580	0	2	Leucine-rich repeat-containing protein 15-like	
+Q23581	worm	Q23581	CELE_ZK682.7	Q23581	0	2	Uncharacterized protein	
+Q23588	worm	Q23588	upp-1	Q23588	0	29	Uridine and thymidine phosphorylase	
+Q23590	worm	Q23590	baz-2	Q23590	1	13	Bromodomain adjacent to zinc finger domain protein 2	
+Q23591	worm	Q23591	CELE_ZK792.5	Q23591	1	34	Nucleolar protein 9	
+Q23592	worm	Q23592	CELE_ZK792.7	Q23592	0	2	Calcineurin-like phosphoesterase domain-containing protein	
+Q23593	worm	Q23593	inx-8	Q23593	1	4	Innexin-8	
+Q23594	worm	Q23594	inx-9	Q23594	1	1	Innexin	
+Q23595	worm	Q23595	CELE_ZK792.4	Q23595	1	25	ANK_REP_REGION domain-containing protein	
+Q23597	worm	Q23597	ndub-6	Q23597	6	82	NADH dehydrogenase	
+Q23598	worm	Q23598	acl-3	Q23598	0	8	Tafazzin family protein	
+Q23601	worm	Q23601	prx-2	Q23601	1	4	RING-type E3 ubiquitin transferase (cysteine targeting)	
+Q23605	worm	Q23605	CELE_ZK813.2	Q23605	0	12	Neuropeptide-Like Protein	
+Q23613	worm	Q23613	CELE_ZK822.1	Q23613	0	2	Coiled-coil domain-containing protein	
+Q23614	worm	Q23614	srlf-31	Q23614	0	3	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	
+Q23615	worm	Q23615	srlf-32	Q23615	0	5	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	
+Q23621	worm	Q23621	gdh-1	Q23621	0	19	Glutamate dehydrogenase	
+Q23622	worm	Q23622	tbx-36	Q23622	0	23	Putative T-box protein 36	
+Q23623	worm	Q23623	tgt-1	Q23623	1	2	Queuine tRNA-ribosyltransferase catalytic subunit	
+Q23624	worm	Q23624	CELE_ZK829.7	Q23624	1	10	Enoyl reductase (ER) domain-containing protein	
+Q23626	worm	Q23626	CELE_ZK829.9	Q23626	0	21	Major facilitator superfamily (MFS) profile domain-containin	
+Q23628	worm	Q23628	lon-3	Q23628	0	1	Cuticle collagen lon-3	
+Q23629	worm	Q23629	ogdh-2	Q23629	1	17	Probable 2-oxoadipate dehydrogenase complex component E1 hom	
+Q23633	worm	Q23633	CELE_ZK84.2	Q23633	0	3	EXPERA domain-containing protein	
+Q23639	worm	Q23639	cul-5	Q23639	11	57	Cullin-5	
+Q23642	worm	Q23642	CELE_ZK856.7	Q23642	3	20	Secreted protein	
+Q23643	worm	Q23643	chpf-1	Q23643	2	8	EF-hand domain-containing protein	
+Q23644	worm	Q23644	zhit-3	Q23644	0	4	Box C/D snoRNA protein 1	
+Q23645	worm	Q23645	rpc-25	Q23645	6	27	DNA-directed RNA polymerase III subunit RPC8	
+Q23646	worm	Q23646	ZK856.11	Q23646	0	11	Probable RNA-binding protein EIF1AD	
+Q23647	worm	Q23647	hpo-40	Q23647	0	19	Hypersensitive to pore-forming toxin protein 40	
+Q23651	worm	Q23651	elpc-3	Q23651	2	14	Elongator complex protein 3	
+Q23652	worm	Q23652	usip-1	Q23652	4	42	U6 snRNA-specific terminal uridylyltransferase	
+Q23655	worm	Q23655	nlt-1	Q23655	1	2	Non-specific lipid-transfer protein-like 1	
+Q23658	worm	Q23658	unc-31	Q23658	0	1	Calcium-dependent secretion activator	
+Q23661	worm	Q23661	CELE_ZK899.5	Q23661	0	1	C2H2-type domain-containing protein	
+Q23662	worm	Q23662	CELE_ZK899.6	Q23662	0	1	C2H2-type domain-containing protein	
+Q23663	worm	Q23663	CELE_ZK899.3	Q23663	1	12	Uncharacterized protein	
+Q23664	worm	Q23664	vab-23	Q23664	0	3	C4H2-type domain-containing protein	
+Q23665	worm	Q23665	CELE_ZK930.2	Q23665	0	1	C4H2-type domain-containing protein	
+Q23666	worm	Q23666	CELE_ZK930.4	Q23666	0	5	Uncharacterized protein	
+Q23669	worm	Q23669	vps-15	Q23669	6	43	non-specific serine/threonine protein kinase	
+Q23672	worm	Q23672	arrd-4	Q23672	0	1	Arrestin C-terminal-like domain-containing protein	
+Q23673	worm	Q23673	CELE_ZK938.3	Q23673	0	11	Gluconokinase	
+Q23677	worm	Q23677	old-2	Q23677	1	43	receptor protein-tyrosine kinase	
+Q23679	worm	Q23679	mdt-22	Q23679	3	72	Mediator of RNA polymerase II transcription subunit 22	
+Q23680	worm	Q23680	vha-9	Q23680	2	52	Probable V-type proton ATPase subunit F	
+Q23681	worm	Q23681	gcy-4	Q23681	2	13	Receptor-type guanylate cyclase gcy-4 (EC 4.6.1.2)	
+Q23683	worm	Q23683	srlf-34	Q23683	0	2	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	
+Q23858	dictyostelium-discoideum	Q23858	crtA	Q23858	8	38	Calreticulin	
+Q23862	dictyostelium-discoideum	Q23862	racE	Q23862	7	34	Rho-related protein racE	
+Q23883	dictyostelium-discoideum	Q23883	nad7	Q23883	5	79	NADH-ubiquinone oxidoreductase 49 kDa subunit	
+Q23884	dictyostelium-discoideum	Q23884	mrpl11	Q23884	7	208	Large ribosomal subunit protein uL11m	
+Q23886	dictyostelium-discoideum	Q23886	mrps12	Q23886	30	270	Small ribosomal subunit protein uS12m	
+Q23887	dictyostelium-discoideum	Q23887	mrps7	Q23887	1	10	Small ribosomal subunit protein uS7m	
+Q23888	dictyostelium-discoideum	Q23888	mrpl2	Q23888	9	244	Large ribosomal subunit protein uL2m	
+Q23889	dictyostelium-discoideum	Q23889	mrps19	Q23889	10	93	Small ribosomal subunit protein uS19m	
+Q23892	dictyostelium-discoideum	Q23892	gluA	Q23892	0	9	Lysosomal beta glucosidase	
+Q23894	dictyostelium-discoideum	Q23894	cprC	Q23894	0	10	Cysteine proteinase 3	
+Q23915	dictyostelium-discoideum	Q23915	kinX	Q23915	3	12	Probable serine/threonine-protein kinase kinX	
+Q23917	dictyostelium-discoideum	Q23917	regA	Q23917	1	2	3,5-cyclic-nucleotide phosphodiesterase regA	
+Q23919	dictyostelium-discoideum	Q23919	pgmA	Q23919	0	2	Phosphoglucomutase-1	
+Q23921	dictyostelium-discoideum	Q23921	pkiA	Q23921	0	1	Protein pkiA	
+Q23924	dictyostelium-discoideum	Q23924	copb	Q23924	17	55	Coatomer subunit beta	
+Q23925	dictyostelium-discoideum	Q23925	yelA	Q23925	3	33	Yellow mounds protein A	
+Q23970	fly	FBgn0010403	Obp83b	Q23970	14	237	Pheromone-binding protein-related protein 6 (PBPRP-6) (Odora	
+Q23971	fly	FBgn0010401	Os-C	E1JJ83	33	246		
+Q23972	fly	FBgn0016070	smg	Q23972	11	57	smaug	
+Q23973	fly	FBgn0010431	mtrm	Q23973	3	9	Protein matrimony (Cell cycle arrest protein D52)	
+Q23976	fly	FBgn0011774	Irbp	Q23976	145	1181	ATP-dependent DNA helicase 2 subunit 1 (EC 3.6.4.12) (ATP-de	
+Q23977	fly	FBgn0010303	hep	Q23977	220	1167	hemipterous	
+Q23978	fly	FBgn0086347	Myo31DF	Q23978	22	231	Unconventional myosin ID (MyoID) (Brush border myosin IA) (B	
+Q23979	fly	FBgn0010246	Myo61F	Q23979	15	220	Myosin 61F	
+Q23982	fly	FBgn0011694	EbpII	Q23982	23	260	Ejaculatory bulb-specific protein 2 (Ejaculatory bulb-specif	
+Q23983	fly	FBgn0250791	alphaSnap	Q23983	24	123	Alpha-soluble NSF attachment protein (SNAP-alpha) (N-ethylma	
+Q23985	fly	FBgn0000524	dx	Q23985	6	77	Protein deltex (Probable E3 ubiquitin-protein ligase deltex)	
+Q23989	fly	FBgn0003187	qua	M9NF69	0	33		
+Q23997	fly	FBgn0013763	Idgf6	Q23997	21	246	Imaginal disk growth factor 6	

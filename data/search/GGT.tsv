@@ -1,18 +1,59 @@
-GGT	escherichia-coli-83333	P18956	ggt	P18956	0	4	Glutathione hydrolase proenzyme
-GGT	pseudomonas-aeruginosa	Q9I406	ggt	Q9I406	0	3	Glutathione hydrolase proenzyme
-GGT	salmonella-typhimurium	Q8ZLF7	ggt	Q8ZLF7	0	3	Glutathione hydrolase proenzyme
-GGT	shigella-dysenteriae-serotype-1	Q32AT7	ggt	Q32AT7	0	2	Glutathione hydrolase proenzyme
-GGT1	mus-musculus	Q60928	Ggt1	Q60928	0	5	Glutathione hydrolase 1 proenzyme
-GGT1	rattus-norvegicus	P07314	Ggt1	P07314	0	5	Glutathione hydrolase 1 proenzyme
-GGT1	schizosaccharomyces-pombe	Q9US04	ggt1	Q9US04	0	4	Glutathione hydrolase proenzyme 1
-GGT2	schizosaccharomyces-pombe	O14194	ggt2	O14194	0	2	Glutathione hydrolase proenzyme 2
-GGT5	mus-musculus	Q9Z2A9	Ggt5	Q9Z2A9	0	6	Glutathione hydrolase 5 proenzyme
-GGT5	rattus-norvegicus	Q9QWE9	Ggt5	Q9QWE9	0	6	Glutathione hydrolase 5 proenzyme
-GGT6	mus-musculus	Q6PDE7	Ggt6	Q6PDE7	0	3	Glutathione hydrolase 6
-GGT6	rattus-norvegicus	Q6IE08	Ggt6	Q6IE08	0	3	Glutathione hydrolase 6
-GGT7	mus-musculus	Q99JP7	Ggt7	Q99JP7	0	3	Glutathione hydrolase 7
-GGT7	rattus-norvegicus	Q99MZ4	Ggt7	Q99MZ4	0	3	Glutathione hydrolase 7
-GGTA	mycobacterium-tuberculosis	I6X9S5	ggtA	I6X9S5	0	2	Glutathione hydrolase proenzyme
-GGTA1	mus-musculus	P23336	Ggta1	P23336	0	5	N-acetyllactosaminide alpha-1,3-galactosyltransferase
-GGTA1	rattus-norvegicus	Q3L7M0	Ggta1	Q3L7M0	0	4	N-acetyllactosaminide alpha-1,3-galactosyltransferase
-GGTB	mycobacterium-tuberculosis	P71750	ggtB	P71750	0	2	Probable gamma-glutamyltranspeptidase GgtB (Gamma-glutamyltransferase) (Glutamyl
+GGT	escherichia-coli-83333	P18956	ggt	P18956	0	4	Glutathione hydrolase proenzyme	
+GGT	human	P19440	GGT1	P19440	3	52		
+GGT	pseudomonas-aeruginosa	Q9I406	ggt	Q9I406	0	3	Glutathione hydrolase proenzyme	
+GGT	salmonella-typhimurium	Q8ZLF7	ggt	Q8ZLF7	0	3	Glutathione hydrolase proenzyme	
+GGT	shigella-dysenteriae-serotype-1	Q32AT7	ggt	Q32AT7	0	2	Glutathione hydrolase proenzyme	
+GGT	virus	A0A7R5WRU6	GGT	A0A7R5WRU6	11	187	A0A7R5WRU6_9POXV	
+GGT-1	fly	FBgn0030932	Ggt1	Q9VWT3	17	326		
+GGT-REL	human	P36269	GGT5	P36269	4	66	Glutathione hydrolase 5 proenzyme (EC 3.4.19.13) (Gamma-glut	w
+GGT1	fly	FBgn0030932	Ggt1	Q9VWT3	17	326	Gamma-glutamyl transpeptidase, isoform A (Gamma-glutamyl tra	
+GGT1	human	P19440	GGT1	P19440	3	52	Glutathione hydrolase 1 proenzyme (EC 3.4.19.13) (Gamma-glut	
+GGT1	mus-musculus	Q60928	Ggt1	Q60928	0	5	Glutathione hydrolase 1 proenzyme	
+GGT1	rattus-norvegicus	P07314	Ggt1	P07314	0	5	Glutathione hydrolase 1 proenzyme	
+GGT1	schizosaccharomyces-pombe	Q9US04	ggt1	Q9US04	0	4	Glutathione hydrolase proenzyme 1	
+GGT1B	zebrafish	F8W5P0	ggt1b	F8W5P0	0	1	Glutathione hydrolase	
+GGT1_HUMAN	human	P19440	GGT1	P19440	3	52		
+GGT2	human	P36268	GGT2P	P36268	0	22		
+GGT2	schizosaccharomyces-pombe	O14194	ggt2	O14194	0	2	Glutathione hydrolase proenzyme 2	
+GGT2P	human	P36268	GGT2P	P36268	0	22	Inactive glutathione hydrolase 2 (Gamma-glutamyltransferase 	
+GGT2_HUMAN	human	P36268	GGT2P	P36268	0	22		
+GGT3	human	A6NGU5	GGT3P	A6NGU5	1	42		
+GGT3P	human	A6NGU5	GGT3P	A6NGU5	1	42	Putative glutathione hydrolase 3 proenzyme (EC 3.4.19.13) (G	
+GGT3_HUMAN	human	A6NGU5	GGT3P	A6NGU5	1	42		
+GGT5	human	P36269	GGT5	P36269	4	66	Glutathione hydrolase 5 proenzyme (EC 3.4.19.13) (Gamma-glut	
+GGT5	mus-musculus	Q9Z2A9	Ggt5	Q9Z2A9	0	6	Glutathione hydrolase 5 proenzyme	
+GGT5	rattus-norvegicus	Q9QWE9	Ggt5	Q9QWE9	0	6	Glutathione hydrolase 5 proenzyme	
+GGT5A	zebrafish	B0UXV4	ggt5a	B0UXV4	0	4	Gamma-glutamyltransferase 5a	
+GGT5B	zebrafish	E7FFJ7	ggt5b	E7FFJ7	0	3	Glutathione hydrolase	
+GGT5_HUMAN	human	P36269	GGT5	P36269	4	66		
+GGT6	human	Q6P531	GGT6	Q6P531	3	24	Glutathione hydrolase 6 (EC 3.4.19.13) (Gamma-glutamyltransf	
+GGT6	mus-musculus	Q6PDE7	Ggt6	Q6PDE7	0	3	Glutathione hydrolase 6	
+GGT6	rattus-norvegicus	Q6IE08	Ggt6	Q6IE08	0	3	Glutathione hydrolase 6	
+GGT6_HUMAN	human	Q6P531	GGT6	Q6P531	3	24		
+GGT7	human	Q9UJ14	GGT7	Q9UJ14	22	135	Glutathione hydrolase 7 (EC 3.4.19.13) (Gamma-glutamyltransf	
+GGT7	mus-musculus	Q99JP7	Ggt7	Q99JP7	0	3	Glutathione hydrolase 7	
+GGT7	rattus-norvegicus	Q99MZ4	Ggt7	Q99MZ4	0	3	Glutathione hydrolase 7	
+GGT7_HUMAN	human	Q9UJ14	GGT7	Q9UJ14	22	135		
+GGTA	mycobacterium-tuberculosis	I6X9S5	ggtA	I6X9S5	0	2	Glutathione hydrolase proenzyme	
+GGTA1	human	Q4G0N0	GGTA1	Q4G0N0	1	15	Inactive N-acetyllactosaminide alpha-1,3-galactosyltransfera	
+GGTA1	mus-musculus	P23336	Ggta1	P23336	0	5	N-acetyllactosaminide alpha-1,3-galactosyltransferase	
+GGTA1	rattus-norvegicus	Q3L7M0	Ggta1	Q3L7M0	0	4	N-acetyllactosaminide alpha-1,3-galactosyltransferase	
+GGTA1P	human	Q4G0N0	GGTA1	Q4G0N0	1	15		
+GGTA1_HUMAN	human	Q4G0N0	GGTA1	Q4G0N0	1	15		
+GGTASE-I-BETA	human	P53609	PGGT1B	P53609	16	113	Geranylgeranyl transferase type-1 subunit beta (EC 2.5.1.59)	w
+GGTASE-II-BETA	human	P53611	RABGGTB	P53611	24	254	Geranylgeranyl transferase type-2 subunit beta (EC 2.5.1.60)	w
+GGTB	human	P53611	RABGGTB	P53611	24	254		
+GGTB	mycobacterium-tuberculosis	P71750	ggtB	P71750	0	2	Probable gamma-glutamyltranspeptidase GgtB (Gamma-glutamyltr	
+GGTB-1	worm	P41992	ggtb-1	P41992	1	35	Probable geranylgeranyl transferase type-2 subunit beta	
+GGTB2	human	P15291	B4GALT1	P15291	27	172		
+GGTL1_HUMAN	human	Q9BX51	GGTLC1	Q9BX51	2	16		
+GGTL2_HUMAN	human	Q14390	GGTLC2	Q14390	3	22		
+GGTL3	human	Q9UJ14	GGT7	Q9UJ14	22	135		
+GGTL3_HUMAN	human	B5MD39	GGTLC3	B5MD39	2	11		
+GGTL4	human	Q14390	GGTLC2	Q14390	3	22		
+GGTL5	human	Q9UJ14	GGT7	Q9UJ14	22	135		
+GGTLA1	human	P36269	GGT5	P36269	4	66		
+GGTLA4	human	Q9BX51	GGTLC1	Q9BX51	2	16		
+GGTLC1	human	Q9BX51	GGTLC1	Q9BX51	2	16	Glutathione hydrolase light chain 1 (Gamma-glutamyltransfera	
+GGTLC2	human	Q14390	GGTLC2	Q14390	3	22	Glutathione hydrolase light chain 2 (Gamma-glutamyltransfera	
+GGTLC3	human	B5MD39	GGTLC3	B5MD39	2	11	Glutathione hydrolase light chain 3 (Gamma-glutamyltransfera	

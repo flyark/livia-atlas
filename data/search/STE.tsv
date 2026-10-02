@@ -1,27 +1,318 @@
-STE1	arabidopsis-thaliana	Q39208	STE1	Q39208	0	22	Delta(7)-sterol-C5(6)-desaturase 1
-STE11	candida-albicans-237561	A0A1D8PGY4	STE11	A0A1D8PGY4	5	21	mitogen-activated protein kinase kinase kinase
-STE11	schizosaccharomyces-pombe	P36631	ste11	P36631	0	15	Transcription factor ste11
-STE13	candida-albicans-237561	Q59M48	STE13	Q59M48	1	2	Ste13p
-STE13	schizosaccharomyces-pombe	Q09181	ste13	Q09181	5	52	Putative ATP-dependent RNA helicase ste13
-STE16	cladophialophora-carrionii	A0A1C1CRU4	ste16	A0A1C1CRU4	4	35	Protein ste16
-STE18	candida-albicans-237561	A0A1D8PQX7	STE18	A0A1D8PQX7	3	9	Guanine nucleotide-binding protein subunit gamma
-STE2	candida-albicans-237561	A0A1D8PTB4	STE2	A0A1D8PTB4	2	10	Alpha-factor pheromone receptor
-STE20	cladophialophora-carrionii	A0A1C1CYY9	ste20	A0A1C1CYY9	11	49	non-specific serine/threonine protein kinase
-STE20	schizosaccharomyces-pombe	Q09743	ste20	Q09743	4	26	Target of rapamycin complex 2 subunit ste20
-STE23	candida-albicans-237561	A0A1D8PQ06	STE23	A0A1D8PQ06	0	2	Metalloendopeptidase
-STE24	candida-albicans-237561	A0A1D8PL01	STE24	A0A1D8PL01	0	1	CAAX prenyl protease
-STE4	candida-albicans-237561	A0A1D8PH43	STE4	A0A1D8PH43	3	29	G protein subunit beta
-STE4	schizosaccharomyces-pombe	P36622	ste4	P36622	1	3	Sexual differentiation protein ste4
-STE50	candida-albicans-237561	A0A1D8PJE4	STE50	A0A1D8PJE4	3	10	Ste50p
-STE6	schizosaccharomyces-pombe	P26674	ste6	P26674	1	10	Protein ste6
-STE7	schizosaccharomyces-pombe	Q10136	ste7	Q10136	1	3	Protein ste7
-STEA	cladophialophora-carrionii	A0A1C1D1H3	steA	A0A1C1D1H3	2	12	Transcription factor steA
-STEAP1	mus-musculus	Q9CWR7	Steap1	Q9CWR7	1	2	STEAP1 protein
-STEAP1	rattus-norvegicus	D3ZEK7	Steap1	D3ZEK7	1	1	STEAP family member 1
-STEAP2	mus-musculus	Q8BWB6	Steap2	Q8BWB6	1	3	Metalloreductase STEAP2
-STEAP2	rattus-norvegicus	D4A6H3	Steap2	D4A6H3	1	1	STEAP2 metalloreductase
-STEAP3	mus-musculus	Q8CI59	Steap3	Q8CI59	0	6	Metalloreductase STEAP3
-STEAP3	rattus-norvegicus	Q5RKL5	Steap3	Q5RKL5	1	5	Metalloreductase STEAP3
-STEC	salmonella-typhimurium	Q8ZP57	steC	Q8ZP57	0	1	Secreted effector kinase SteC
-STEEP1	mus-musculus	Q8VDP2	Steep1	Q8VDP2	1	36	STING ER exit protein
-STEEP1	rattus-norvegicus	D4A067	Steep1	D4A067	4	44	STING ER exit protein
+STE	human	P49888	SULT1E1	P49888	14	47		
+STE-20-RELATED	human	Q9UEW8	STK39	Q9UEW8	189	1402	STE20/SPS1-related proline-alanine-rich protein kinase (Ste-	w
+STE1	arabidopsis-thaliana	Q39208	STE1	Q39208	0	22	Delta(7)-sterol-C5(6)-desaturase 1	
+STE11	candida-albicans-237561	A0A1D8PGY4	STE11	A0A1D8PGY4	5	21	mitogen-activated protein kinase kinase kinase	
+STE11	schizosaccharomyces-pombe	P36631	ste11	P36631	0	15	Transcription factor ste11	
+STE11	yeast	P23561	STE11	P23561	4	65	Serine/threonine-protein kinase STE11 (EC 2.7.11.25)	
+STE11_YEAST	yeast	P23561	STE11	P23561	4	65		
+STE12	yeast	P13574	STE12	P13574	5	62	Protein STE12	
+STE12DOR	fly	FBgn0044817	Ste12DOR	Q9NIV2	11	15	Stellate orphon protein at 12D	
+STE13	candida-albicans-237561	Q59M48	STE13	Q59M48	1	2	Ste13p	
+STE13	schizosaccharomyces-pombe	Q09181	ste13	Q09181	5	52	Putative ATP-dependent RNA helicase ste13	
+STE13	yeast	P33894	STE13	P33894	2	10	Dipeptidyl aminopeptidase A	
+STE14	fly	FBgn0036336	Icmt	Q9VU37	5	27		
+STE14	yeast	P32584	STE14	P32584	0	5	Protein-S-isoprenylcysteine O-methyltransferase	
+STE16	cladophialophora-carrionii	A0A1C1CRU4	ste16	A0A1C1CRU4	4	35	Protein ste16	
+STE18	candida-albicans-237561	A0A1D8PQX7	STE18	A0A1D8PQX7	3	9	Guanine nucleotide-binding protein subunit gamma	
+STE18	yeast	P18852	STE18	P18852	4	24	Guanine nucleotide-binding protein subunit gamma	
+STE2	candida-albicans-237561	A0A1D8PTB4	STE2	A0A1D8PTB4	2	10	Alpha-factor pheromone receptor	
+STE2	yeast	P0CI39	STE2	P0CI39	3	44	Pheromone alpha factor receptor	
+STE20	cladophialophora-carrionii	A0A1C1CYY9	ste20	A0A1C1CYY9	11	49	non-specific serine/threonine protein kinase	
+STE20	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
+STE20	human	Q9UEW8	STK39	Q9UEW8	189	1402	STE20/SPS1-related proline-alanine-rich protein kinase (Ste-	w
+STE20	human	Q9Y4K4	MAP4K5	Q9Y4K4	122	1387	Mitogen-activated protein kinase kinase kinase kinase 5 (EC 	w
+STE20	schizosaccharomyces-pombe	Q09743	ste20	Q09743	4	26	Target of rapamycin complex 2 subunit ste20	
+STE20	yeast	Q03497	STE20	Q03497	17	140	Serine/threonine-protein kinase STE20 (EC 2.7.11.1)	
+STE20-LIKE	fly	FBgn0046692	Stlk	P83098	78	1116	Putative serine/threonine-protein kinase STE20-like (EC 2.7.	w
+STE20-LIKE	fly	FBgn0261456	hpo	Q8T0S6	187	1211	Serine/threonine-protein kinase hippo (EC 2.7.11.1) (Drosoph	w
+STE20-LIKE	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
+STE20-LIKE	human	Q13043	STK4	Q13043	166	1434	Serine/threonine-protein kinase 4 (EC 2.7.11.1) (Mammalian S	w
+STE20-LIKE	human	Q13188	STK3	Q13188	175	1466	Serine/threonine-protein kinase 3 (EC 2.7.11.1) (Mammalian S	w
+STE20-LIKE	human	Q9H2G2	SLK	Q9H2G2	16	181	STE20-like serine/threonine-protein kinase (STE20-like kinas	w
+STE20-LIKE	human	Q9P289	STK26	Q9P289	172	1440	Serine/threonine-protein kinase 26 (EC 2.7.11.1) (MST3 and S	w
+STE20-LIKE	human	Q9Y6E0	STK24	Q9Y6E0	217	1453	Serine/threonine-protein kinase 24 (EC 2.7.11.1) (Mammalian 	w
+STE20-LIKE	worm	G5EEN4	gck-3	G5EEN4	12	64	Germinal center kinase 3 (EC 2.7.11.1) (STE20-like serine/th	w
+STE20-RELATED	human	Q56UN5	MAP3K19	Q56UN5	15	95	Mitogen-activated protein kinase kinase kinase 19 (EC 2.7.11	w
+STE20-RELATED	human	Q7RTN6	STRADA	Q7RTN6	7	89	STE20-related kinase adapter protein alpha (STRAD alpha) (ST	w
+STE20-RELATED	human	Q9C0K7	STRADB	Q9C0K7	14	93	STE20-related kinase adapter protein beta (STRAD beta) (Amyo	w
+STE20-RELATED	human	Q9H2G2	SLK	Q9H2G2	16	181	STE20-like serine/threonine-protein kinase (STE20-like kinas	w
+STE20-RELATED	worm	G5ECN5	strd-1	G5ECN5	5	32	STE20-related kinase adapter protein strd-1 (STRAD STE20-rel	w
+STE20-RELATED	zebrafish	F1Q5T1	strada	F1Q5T1	4	25	STE20-related kinase adapter protein alpha (STE20-related ad	w
+STE20-RELATED	zebrafish	F1QQD8	stradb	F1QQD8	2	15	STE20-related kinase adapter protein beta	w
+STE20_YEAST	yeast	Q03497	STE20	Q03497	17	140		
+STE23	candida-albicans-237561	A0A1D8PQ06	STE23	A0A1D8PQ06	0	2	Metalloendopeptidase	
+STE23	yeast	Q06010	STE23	Q06010	1	24	A-factor-processing enzyme	
+STE24	candida-albicans-237561	A0A1D8PL01	STE24	A0A1D8PL01	0	1	CAAX prenyl protease	
+STE24	human	O75844	ZMPSTE24	O75844	2	172		
+STE24	yeast	P47154	STE24	P47154	0	19	CAAX prenyl protease 1	
+STE24A	fly	FBgn0034176	ste24a	Q7K172	0	12	CAAX prenyl protease (EC 3.4.24.84)	
+STE24B	fly	FBgn0034175	ste24b	A1ZAM7	0	2	CAAX prenyl protease (EC 3.4.24.84)	
+STE24C	fly	FBgn0050462	ste24c	Q7JV41	0	2	CAAX prenyl protease (EC 3.4.24.84)	
+STE3	yeast	P06783	STE3	P06783	3	16	Pheromone a factor receptor	
+STE4	candida-albicans-237561	A0A1D8PH43	STE4	A0A1D8PH43	3	29	G protein subunit beta	
+STE4	schizosaccharomyces-pombe	P36622	ste4	P36622	1	3	Sexual differentiation protein ste4	
+STE4	yeast	P18851	STE4	P18851	14	141	Guanine nucleotide-binding protein subunit beta	
+STE5	yeast	P32917	STE5	P32917	8	37	Protein STE5	
+STE50	candida-albicans-237561	A0A1D8PJE4	STE50	A0A1D8PJE4	3	10	Ste50p	
+STE50	yeast	P25344	STE50	P25344	11	76	Protein STE50	
+STE6	schizosaccharomyces-pombe	P26674	ste6	P26674	1	10	Protein ste6	
+STE6	yeast	P12866	STE6	P12866	0	22	Alpha-factor-transporting ATPase	
+STE7	schizosaccharomyces-pombe	Q10136	ste7	Q10136	1	3	Protein ste7	
+STE7	yeast	P06784	STE7	P06784	8	51	Serine/threonine-protein kinase STE7	
+STE:CG33236	fly	FBgn0053236	Ste:CG33236	Q7KV12	11	14	Stellate protein CG33236/CG33240/CG33244/CG33245	
+STE:CG33237	fly	FBgn0053237	Ste:CG33237	Q7KV13	11	14	Stellate protein CG33237	
+STE:CG33238	fly	FBgn0053238	Ste:CG33238	Q7KV14	11	14	Stellate protein CG33238	
+STE:CG33239	fly	FBgn0053239	Ste:CG33239	Q7KV15	11	14	Stellate protein CG33239/CG33241	
+STE:CG33240	fly	FBgn0053240	Ste:CG33240	Q7KV12	0	0	Stellate protein CG33236/CG33240/CG33244/CG33245	
+STE:CG33241	fly	FBgn0053241	Ste:CG33241	Q7KV15	0	0	Stellate protein CG33239/CG33241	
+STE:CG33242	fly	FBgn0053242	Ste:CG33242	Q7KV18	11	14	Ste:CG33242	
+STE:CG33243	fly	FBgn0053243	Ste:CG33243	Q7KV19	11	14	Stellate protein CG33243	
+STE:CG33244	fly	FBgn0053244	Ste:CG33244	Q7KV12	0	0	Stellate protein CG33236/CG33240/CG33244/CG33245	
+STE:CG33245	fly	FBgn0053245	Ste:CG33245	Q7KV12	0	0	Stellate protein CG33236/CG33240/CG33244/CG33245	
+STE:CG33246	fly	FBgn0053246	Ste:CG33246	Q7KV22	11	14	Stellate protein CG33246	
+STE:CG33247	fly	FBgn0053247	Ste:CG33247	Q7KV23	11	14	Stellate protein CG33247	
+STEA	cladophialophora-carrionii	A0A1C1D1H3	steA	A0A1C1D1H3	2	12	Transcription factor steA	
+STEA1_HUMAN	human	Q9UHE8	STEAP1	Q9UHE8	11	94		
+STEA2_HUMAN	human	Q8NFT2	STEAP2	Q8NFT2	7	60		
+STEA3_HUMAN	human	Q658P3	STEAP3	Q658P3	7	259		
+STEA4_HUMAN	human	Q687X5	STEAP4	Q687X5	9	111		
+STEALTH	human	Q3T906	GNPTAB	Q3T906	17	79	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta	w
+STEAL_HUMAN	human	Q6NZ63	STEAP1B	Q6NZ63	3	15		
+STEAP	human	C9JE84	STEAP1B	C9JE84	1	3	STEAP family member 1B	w
+STEAP	human	Q6NZ63	STEAP1B	Q6NZ63	3	15	STEAP family member 1B	w
+STEAP	human	Q9UHE8	STEAP1	Q9UHE8	11	94		
+STEAP1	human	Q9UHE8	STEAP1	Q9UHE8	11	94	STEAP1 protein (Six-transmembrane epithelial antigen of pros	
+STEAP1	mus-musculus	Q9CWR7	Steap1	Q9CWR7	1	2	STEAP1 protein	
+STEAP1	rattus-norvegicus	D3ZEK7	Steap1	D3ZEK7	1	1	STEAP family member 1	
+STEAP1B	human	C9JE84	STEAP1B	C9JE84	1	3	STEAP family member 1B	
+STEAP1B	human	Q6NZ63	STEAP1B	Q6NZ63	3	15	STEAP family member 1B	
+STEAP2	human	Q8NFT2	STEAP2	Q8NFT2	7	60	Metalloreductase STEAP2 (EC 1.16.1.-) (Prostate cancer-assoc	
+STEAP2	mus-musculus	Q8BWB6	Steap2	Q8BWB6	1	3	Metalloreductase STEAP2	
+STEAP2	rattus-norvegicus	D4A6H3	Steap2	D4A6H3	1	1	STEAP2 metalloreductase	
+STEAP2	zebrafish	E7FFL9	steap2	E7FFL9	0	1	Metalloreductase STEAP2 isoform X2	w
+STEAP2	zebrafish	E7FFL9	steap2	E7FFL9	0	1	Metalloreductase STEAP2 isoform X2	w
+STEAP3	human	Q658P3	STEAP3	Q658P3	7	259	Metalloreductase STEAP3 (EC 1.16.1.-) (Dudulin-2) (Six-trans	
+STEAP3	mus-musculus	Q8CI59	Steap3	Q8CI59	0	6	Metalloreductase STEAP3	
+STEAP3	rattus-norvegicus	Q5RKL5	Steap3	Q5RKL5	1	5	Metalloreductase STEAP3	
+STEAP3	zebrafish	A0A8M1RHF3	steap3	A0A8M1RHF3	1	3	Metalloreductase STEAP3 isoform X1	w
+STEAP3	zebrafish	A0A8M1RHF3	steap3	A0A8M1RHF3	1	3	Metalloreductase STEAP3 isoform X1	w
+STEAP4	human	Q687X5	STEAP4	Q687X5	9	111	Metalloreductase STEAP4 (EC 1.16.1.-) (Six-transmembrane epi	
+STEAROYL-COA	human	O00767	SCD	O00767	22	179	Stearoyl-CoA desaturase (hSCD1) (EC 1.14.19.1) (Acyl-CoA des	w
+STEAROYL-COA	human	Q86SK9	SCD5	Q86SK9	9	104	Stearoyl-CoA desaturase 5 (EC 1.14.19.1) (Acyl-CoA-desaturas	w
+STEAROYL-COA	zebrafish	F1QG70	scd	F1QG70	0	22	stearoyl-CoA 9-desaturase	w
+STEAROYL-COA	zebrafish	Q501V8	scdb	Q501V8	1	22	stearoyl-CoA 9-desaturase	w
+STEAROYLTRANSFERASE	human	Q9H6R6	ZDHHC6	Q9H6R6	13	79	Palmitoyltransferase ZDHHC6 (EC 2.3.1.225) (Stearoyltransfer	w
+STEC	salmonella-typhimurium	Q8ZP57	steC	Q8ZP57	0	1	Secreted effector kinase SteC	
+STEEP	fly	FBgn0028919	CG16865	Q9V412	3	15	STING ER exit protein (STEEP)	w
+STEEP	human	Q9H5V9	STEEP1	Q9H5V9	31	202	STING ER exit protein (STEEP)	w
+STEEP1	human	Q9H5V9	STEEP1	Q9H5V9	31	202	STING ER exit protein (STEEP)	
+STEEP1	mus-musculus	Q8VDP2	Steep1	Q8VDP2	1	36	STING ER exit protein	
+STEEP1	rattus-norvegicus	D4A067	Steep1	D4A067	4	44	STING ER exit protein	
+STEEP1	zebrafish	Q66I61	steep1	Q66I61	6	85	STING ER exit protein	
+STEEP_HUMAN	human	Q9H5V9	STEEP1	Q9H5V9	31	202		
+STEERIN-1	human	Q8NEY1	NAV1	Q8NEY1	81	307	Neuron navigator 1 (Pore membrane and/or filament-interactin	w
+STEERIN-3	human	Q8IVL0	NAV3	Q8IVL0	33	165	Neuron navigator 3 (Pore membrane and/or filament-interactin	w
+STEERIN1	human	Q8NEY1	NAV1	Q8NEY1	81	307		
+STEERIN2	human	Q8IVL1	NAV2	Q8IVL1	51	253		
+STEERIN3	human	Q8IVL0	NAV3	Q8IVL0	33	165		
+STEF	human	Q8IVF5	TIAM2	Q8IVF5	72	259		
+STEFIN-A	human	P01040	CSTA	P01040	29	434	Cystatin-A (Cystatin-AS) (Stefin-A) [Cleaved into: Cystatin-	w
+STEFIN-B	human	P04080	CSTB	P04080	35	359	Cystatin-B (CPI-B) (Liver thiol proteinase inhibitor) (Stefi	w
+STELLA-RELATED	human	Q6W0C5	DPPA3	Q6W0C5	34	132	Developmental pluripotency-associated protein 3 (Stella-rela	w
+STELLAR	human	Q6W0C5	DPPA3	Q6W0C5	34	132		
+STELLATE	fly	FBgn0044817	Ste12DOR	Q9NIV2	11	15	Stellate orphon protein at 12D	w
+STELLATE	fly	FBgn0053236	Ste:CG33236	Q7KV12	11	14	Stellate protein CG33236/CG33240/CG33244/CG33245	w
+STELLATE	fly	FBgn0053237	Ste:CG33237	Q7KV13	11	14	Stellate protein CG33237	w
+STELLATE	fly	FBgn0053238	Ste:CG33238	Q7KV14	11	14	Stellate protein CG33238	w
+STELLATE	fly	FBgn0053239	Ste:CG33239	Q7KV15	11	14	Stellate protein CG33239/CG33241	w
+STELLATE	fly	FBgn0053240	Ste:CG33240	Q7KV12	0	0	Stellate protein CG33236/CG33240/CG33244/CG33245	w
+STELLATE	fly	FBgn0053241	Ste:CG33241	Q7KV15	0	0	Stellate protein CG33239/CG33241	w
+STELLATE	fly	FBgn0053243	Ste:CG33243	Q7KV19	11	14	Stellate protein CG33243	w
+STELLATE	fly	FBgn0053244	Ste:CG33244	Q7KV12	0	0	Stellate protein CG33236/CG33240/CG33244/CG33245	w
+STELLATE	fly	FBgn0053245	Ste:CG33245	Q7KV12	0	0	Stellate protein CG33236/CG33240/CG33244/CG33245	w
+STELLATE	fly	FBgn0053246	Ste:CG33246	Q7KV22	11	14	Stellate protein CG33246	w
+STELLATE	fly	FBgn0053247	Ste:CG33247	Q7KV23	11	14	Stellate protein CG33247	w
+STEM	fly	FBgn0020248	stet	Q9W0E9	2	18	Stem cell tumor, isoform B (EC 3.4.21.-)	w
+STEM	fly	FBgn0037656	CG11986	Q9VHI3	0	2	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
+STEM	fly	FBgn0061198	HSPC300	Q8MLQ0	18	46	FI14118p (GEO02618p1) (Haematopoietic stem/progenitor cell p	w
+STEM	human	A6NC42	DPPA5	A6NC42	13	67	Developmental pluripotency-associated 5 protein (hDPPA5) (Em	w
+STEM	human	O43653	PSCA	O43653	29	189	Prostate stem cell antigen	w
+STEM	human	P10721	KIT	P10721	134	1595	Mast/stem cell growth factor receptor Kit (SCFR) (EC 2.7.10.	w
+STEM	human	P17542	TAL1	P17542	113	512	T-cell acute lymphocytic leukemia protein 1 (TAL-1) (Class A	w
+STEM	human	P21583	KITLG	P21583	135	819	Kit ligand (Mast cell growth factor) (MGF) (Stem cell factor	w
+STEM	human	P36888	FLT3	P36888	134	1675	Receptor-type tyrosine-protein kinase FLT3 (EC 2.7.10.1) (FL	w
+STEM	human	Q16553	LY6E	Q16553	23	139	Lymphocyte antigen 6E (Ly-6E) (Retinoic acid-induced gene E 	w
+STEM	human	Q1W209	ESRG	Q1W209	0	2	Embryonic stem cell-related gene protein (hES cell-related g	w
+STEM	human	Q53HL2	CDCA8	Q53HL2	62	476	Borealin (Cell division cycle-associated protein 8) (Dasra-B	w
+STEM	human	Q569H4	PRR16	Q569H4	16	49	Protein Largen (Mesenchymal stem cell protein DSC54) (Prolin	w
+STEM	human	Q5T7N2	L1TD1	Q5T7N2	50	587	LINE-1 type transposase domain-containing protein 1 (Embryon	w
+STEM	human	Q7L3S4	ZNF771	Q7L3S4	32	405	Zinc finger protein 771 (Mesenchymal stem cell protein DSC43	w
+STEM	human	Q7Z444	ERAS	Q7Z444	19	102	GTPase ERas (E-Ras) (EC 3.6.5.2) (Embryonic stem cell-expres	w
+STEM	human	Q7Z7J5	DPPA2	Q7Z7J5	18	86	Developmental pluripotency-associated protein 2 (Pluripotent	w
+STEM	human	Q86UQ0	ZNF589	Q86UQ0	1	34	Zinc finger protein 589 (Stem cell zinc finger protein 1)	w
+STEM	human	Q8NDZ4	DIPK2A	Q8NDZ4	16	131	Divergent protein kinase domain 2A (Deleted in autism protei	w
+STEM	human	Q8NI22	MCFD2	Q8NI22	12	169	Multiple coagulation factor deficiency protein 2 (Neural ste	w
+STEM	human	Q8WUY1	THEM6	Q8WUY1	5	153	Protein THEM6 (Mesenchymal stem cell protein DSCD75) (Thioes	w
+STEM	human	Q96FZ2	HMCES	Q96FZ2	3	55	Abasic site processing protein HMCES (EC 4.-.-.-) (Embryonic	w
+STEM	human	Q9NPE2	NGRN	Q9NPE2	77	546	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
+STEM	human	Q9ULZ2	STAP1	Q9ULZ2	21	120	Signal-transducing adaptor protein 1 (STAP-1) (BCR downstrea	w
+STEM	human	Q9Y240	CLEC11A	Q9Y240	22	166	C-type lectin domain family 11 member A (C-type lectin super	w
+STEM	human	Q9Y296	TRAPPC4	Q9Y296	9	111	Trafficking protein particle complex subunit 4 (Hematopoieti	w
+STEM	human	Q9Y4D2	DAGLA	Q9Y4D2	3	53	Diacylglycerol lipase-alpha (DAGL-alpha) (DGL-alpha) (EC 3.1	w
+STEM	zebrafish	B8A5K6	kitb	B8A5K6	3	15	Mast/stem cell growth factor receptor	w
+STEM	zebrafish	F1QUD8	tal2	F1QUD8	1	2	Stem cell protein	w
+STEM	zebrafish	Q8JFR5	kita	Q8JFR5	3	35	Mast/stem cell growth factor receptor kita	w
+STEM-LOOP	fly	FBgn0037602	SLIRP2	Q9VHP3	3	13	GEO11133p1 (IP20249p) (IP20549p) (SRA stem-loop interacting 	w
+STEM-LOOP	fly	FBgn0064117	SLIRP1	Q0KHQ1	0	10	GEO13361p1 (SRA stem-loop interacting RNA binding protein 1,	w
+STEM-LOOP-BINDING	fly	FBgn0041186	Slbp	Q9VAN6	8	56	Histone RNA hairpin-binding protein (Histone stem-loop-bindi	w
+STEM-LOOP-BINDING	human	Q14493	SLBP	Q14493	35	173	Histone RNA hairpin-binding protein (Histone stem-loop-bindi	w
+STEM-LOOP-BINDING	zebrafish	A1L2F4	slbp2	A1L2F4	1	17	Stem-loop-binding protein 2	w
+STEM-LOOP-INTERACTING	human	Q9GZT3	SLIRP	Q9GZT3	32	342	SRA stem-loop-interacting RNA-binding protein, mitochondrial	w
+STEM-LOOP-INTERACTING	zebrafish	X1WCD3	slirp	X1WCD3	6	114	SRA stem-loop-interacting RNA-binding protein	w
+STEP	fly	FBgn0086779	step	Q0E8N2	7	31	MIP16918p (Steppke, isoform C) (Steppke, isoform D) (Steppke	
+STEPP	human	Q8NFP0	PXT1	Q8NFP0	2	42		
+STEPPING	fly	FBgn0036476	sstn	Q9VUK7	18	72	RE36140p (Stepping stone)	w
+STEPPKE	fly	FBgn0086779	step	Q0E8N2	7	31	MIP16918p (Steppke, isoform C) (Steppke, isoform D) (Steppke	w
+STEREOCILIA	fly	FBgn0262624	Tmhs	Q9W068	0	7	LP10272p (Tetraspan membrane protein in hair cell stereocili	w
+STEREOCILIA	human	Q8TAF8	LHFPL5	Q8TAF8	13	203	LHFPL tetraspan subfamily member 5 protein (Lipoma HMGIC fus	w
+STEREOCILIN	human	A6NGW2	STRCP1	A6NGW2	7	42	Putative stereocilin-like protein (Stereocilin pseudogene 1)	w
+STEREOCILIN	human	Q7RTU9	STRC	Q7RTU9	1	42	Stereocilin	w
+STEREOCILIN-LIKE	human	A6NGW2	STRCP1	A6NGW2	7	42	Putative stereocilin-like protein (Stereocilin pseudogene 1)	w
+STERILE	fly	FBgn0000810	fs(1)K10	P13468	7	61	DNA-binding protein K10 (Female sterile protein K10)	w
+STERILE	fly	FBgn0002838	ms(3)K81	Q9VBA8	1	3	IP06580p (Male sterile (3) K81)	w
+STERILE	fly	FBgn0004650	fs(1)N	O76904	0	3	EG:8D8.1 protein (Female sterile (1) nasrat) (RE10379p)	w
+STERILE	fly	FBgn0004656	fs(1)h	M9PJC7	217	721	Female sterile (1) homeotic, isoform G	w
+STERILE	fly	FBgn0005390	fs(1)M3	Q9W451	0	5	Female sterile (1) M3	w
+STERILE	fly	FBgn0011239	ms(2)35Ci	Q8MZ67	3	18	AT28918p (GEO08806p1) (Male sterile (2) 35Ci, isoform A) (Ma	w
+STERILE	fly	FBgn0016041	Tom40	Q9U4L6	5	37	Mitochondrial import receptor subunit TOM40 homolog 1 (dtom4	w
+STERILE	fly	FBgn0036868	ms(3)76Ba	Q9VVZ0	0	0	Male sterile (3) 76Ba	w
+STERILE	fly	FBgn0036895	ms(3)76Cc	Q9VW23	4	16	Male sterile (3) 76Cc	w
+STERILE	fly	FBgn0036905	Vtld	Q9VW36	5	7	Male sterile (3) 76Ca	w
+STERILE	fly	FBgn0039559	NSD	Q8MT36	19	159	Nuclear receptor binding SET domain protein (EC 2.1.1.357) (	w
+STERILE	fly	FBgn0260434	CG42529	Q9VW36	0	3	Male sterile (3) 76Ca	w
+STERILE	fly	FBgn0261529	ms(2)34Fe	Q9VJT4	0	0	Male sterile (2) 34Fe	w
+STERILE	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
+STERILE	human	Q5K651	SAMD9	Q5K651	2	54	Sterile alpha motif domain-containing protein 9 (SAM domain-	w
+STERILE	human	Q5PRF9	SAMD4B	Q5PRF9	37	173	Protein Smaug homolog 2 (Smaug 2) (hSmaug2) (Sterile alpha m	w
+STERILE	human	Q5TGI4	SAMD5	Q5TGI4	33	96	Sterile alpha motif domain-containing protein 5 (SAM domain-	w
+STERILE	human	Q5VXD3	SAMD13	Q5VXD3	17	142	Sterile alpha motif domain-containing protein 13 (SAM domain	w
+STERILE	human	Q68DC2	ANKS6	Q68DC2	10	93	Ankyrin repeat and SAM domain-containing protein 6 (Ankyrin 	w
+STERILE	human	Q6SPF0	SAMD1	Q6SPF0	38	176	Sterile alpha motif domain-containing protein 1 (SAM domain-	w
+STERILE	human	Q6SZW1	SARM1	Q6SZW1	8	143	NAD(+) hydrolase SARM1 (NADase SARM1) (hSARM1) (EC 3.2.2.6) 	w
+STERILE	human	Q6UWE0	LRSAM1	Q6UWE0	21	125	E3 ubiquitin-protein ligase LRSAM1 (EC 2.3.2.27) (Leucine-ri	w
+STERILE	human	Q7L7X3	TAOK1	Q7L7X3	30	184	Serine/threonine-protein kinase TAO1 (EC 2.7.11.1) (Kinase f	w
+STERILE	human	Q7Z3H4	SAMD7	Q7Z3H4	2	17	Sterile alpha motif domain-containing protein 7 (SAM domain-	w
+STERILE	human	Q7Z6G8	ANKS1B	Q7Z6G8	26	77	Ankyrin repeat and sterile alpha motif domain-containing pro	w
+STERILE	human	Q8IVG5	SAMD9L	Q8IVG5	3	51	Sterile alpha motif domain-containing protein 9-like (SAM do	w
+STERILE	human	Q8IZD0	SAMD14	Q8IZD0	3	14	Sterile alpha motif domain-containing protein 14 (SAM domain	w
+STERILE	human	Q8N6K7	SAMD3	Q8N6K7	6	61	Sterile alpha motif domain-containing protein 3 (SAM domain-	w
+STERILE	human	Q8N8I0	SAMD12	Q8N8I0	11	52	Sterile alpha motif domain-containing protein 12 (SAM domain	w
+STERILE	human	Q96NU1	SAMD11	Q96NU1	19	52	Sterile alpha motif domain-containing protein 11 (SAM domain	w
+STERILE	human	Q9BYL1	SAMD10	Q9BYL1	8	38	Sterile alpha motif domain-containing protein 10 (SAM domain	w
+STERILE	human	Q9NYL2	MAP3K20	Q9NYL2	18	146	Mitogen-activated protein kinase kinase kinase 20 (EC 2.7.11	w
+STERILE	human	Q9P1V8	SAMD15	Q9P1V8	4	40	Sterile alpha motif domain-containing protein 15 (SAM domain	w
+STERILE	human	Q9UL54	TAOK2	Q9UL54	26	123	Serine/threonine-protein kinase TAO2 (EC 2.7.11.1) (Kinase f	w
+STERILE	human	Q9UPU9	SAMD4A	Q9UPU9	35	175	Protein Smaug homolog 1 (Smaug 1) (hSmaug1) (Sterile alpha m	w
+STERILE	zebrafish	A0A0R4IFY9	samd1a	A0A0R4IFY9	3	43	Sterile alpha motif domain-containing 1a	w
+STERILE	zebrafish	A0A8M2BB29	samd1b	A0A8M2BB29	2	43	Sterile alpha motif domain-containing protein 1	w
+STERILE	zebrafish	A0A8M3B7T1	samd7	A0A8M3B7T1	0	1	Sterile alpha motif domain-containing 7	w
+STERILE	zebrafish	A0A8M6Z1Y1	sb:cb1081	A0A8M6Z1Y1	0	10	Sterile alpha motif domain-containing protein 9	w
+STERILE	zebrafish	A5PMU4	anks1b	A5PMU4	1	2	Ankyrin repeat and sterile alpha motif domain-containing pro	w
+STERILE	zebrafish	Q08C88	samd13	Q08C88	0	43	Sterile alpha motif domain-containing 13	w
+STERILE20-LIKE	fly	FBgn0035001	Slik	Q9W179	115	1003	Sterile20-like kinase, isoform B (Sterile20-like kinase, iso	w
+STERILITY	fly	FBgn0004465	mPges2	Q9V420	0	14	FI02878p (Suppressor of ref(2)P sterility (EC 1.8.1.7, EC 5.	w
+STERILITY	human	Q8WVX9	FAR1	Q8WVX9	11	121	Fatty acyl-CoA reductase 1 (FAR1) (EC 1.2.1.84) (Male steril	w
+STERILITY	human	Q96K12	FAR2	Q96K12	3	66	Fatty acyl-CoA reductase 2 (FAR2) (EC 1.2.1.84) (Male steril	w
+STERO	human	Q13285	NR5A1	Q13285	169	562	Steroidogenic factor 1 (SF-1) (STF-1) (hSF-1) (Adrenal 4-bin	w
+STEROID	fly	FBgn0030703	MSBP	Q9VXM4	0	17	LD12946p (Membrane steroid binding protein, isoform A) (Memb	w
+STEROID	human	O15173	PGRMC2	O15173	28	326	Membrane-associated progesterone receptor component 2 (Proge	w
+STEROID	human	O75469	NR1I2	O75469	87	503	Nuclear receptor subfamily 1 group I member 2 (Orphan nuclea	w
+STEROID	human	O95718	ESRRB	O95718	179	491	Steroid hormone receptor ERR2 (ERR beta-2) (Estrogen recepto	w
+STEROID	human	P05093	CYP17A1	P05093	2	63	Steroid 17-alpha-hydroxylase/17,20 lyase (EC 1.14.14.19) (17	w
+STEROID	human	P08686	CYP21A2	P08686	3	88	Steroid 21-hydroxylase (EC 1.14.14.16) (21-OHase) (Cytochrom	w
+STEROID	human	P08842	STS	P08842	3	110	Steryl-sulfatase (EC 3.1.6.2) (Arylsulfatase C) (ASC) (Estro	w
+STEROID	human	P11474	ESRRA	P11474	214	515	Steroid hormone receptor ERR1 (Estrogen receptor-like 1) (Es	w
+STEROID	human	P15538	CYP11B1	P15538	7	31	Cytochrome P450 11B1, mitochondrial (CYP11B1) (CYPXIB1) (Cyt	w
+STEROID	human	P18405	SRD5A1	P18405	3	47	3-oxo-5-alpha-steroid 4-dehydrogenase 1 (EC 1.3.1.22) (SR ty	w
+STEROID	human	P31213	SRD5A2	P31213	1	12	3-oxo-5-alpha-steroid 4-dehydrogenase 2 (EC 1.3.1.22) (5 alp	w
+STEROID	human	Q5HYJ1	TECRL	Q5HYJ1	6	39	Trans-2,3-enoyl-CoA reductase-like (EC 1.3.1.-) (Steroid 5-a	w
+STEROID	human	Q7Z3Q1	SLC46A3	Q7Z3Q1	0	29	Lysosomal proton-coupled steroid conjugate and bile acid sym	w
+STEROID	human	Q8N4F4	SLC22A24	Q8N4F4	0	25	Steroid transmembrane transporter SLC22A24 (Solute carrier f	w
+STEROID	human	Q8NEQ6	SRARP	Q8NEQ6	2	20	Steroid receptor-associated and regulated protein (Estrogen 	w
+STEROID	human	Q9H2F3	HSD3B7	Q9H2F3	24	642	3 beta-hydroxysteroid dehydrogenase type 7 (3 beta-hydroxyst	w
+STEROID	human	Q9H8P0	SRD5A3	Q9H8P0	3	39	Polyprenal reductase (EC 1.3.1.94) (3-oxo-5-alpha-steroid 4-	w
+STEROID	human	Q9HD15	SRA1	Q9HD15	21	156	Steroid receptor RNA activator 1 (Steroid receptor RNA activ	w
+STEROID	human	Q9Y4E5	ZNF451	Q9Y4E5	21	150	E3 SUMO-protein ligase ZNF451 (EC 2.3.2.-) (Coactivator for 	w
+STEROID	virus	P33794	A50L	P33794	11	199	Truncated 3-beta hydroxy-5-ene steroid dehydrogenase homolog	w
+STEROID	worm	O16925	stdh-4	O16925	4	7	Putative steroid dehydrogenase 4	w
+STEROID	worm	O17795	stdh-2	O17795	4	12	Putative steroid dehydrogenase 2	w
+STEROID	worm	P41830	sex-1	P41830	10	58	Steroid hormone receptor family member cnr14	w
+STEROID	worm	Q17703	stdh-1	Q17703	4	7	Putative steroid dehydrogenase 1	w
+STEROID	worm	Q17704	stdh-3	Q17704	4	7	Putative steroid dehydrogenase 3	w
+STEROID	zebrafish	F1QB82	sts	F1QB82	0	32	Steroid sulfatase (microsomal), isozyme S	w
+STEROID	zebrafish	F1QSA2	hsd3b1	F1QSA2	1	208	Hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid d	w
+STEROID-BINDING	human	P04278	SHBG	P04278	39	342	Sex hormone-binding globulin (SHBG) (Sex steroid-binding pro	w
+STEROID-PHOSPHATE	worm	Q22323	T07F12.1	Q22323	0	7	Steroid-phosphate phosphatase	w
+STEROIDOGENIC	fly	FBgn0035028	Start1	Q9W145	1	13	Steroidogenic acute regulatory protein-like	w
+STEROIDOGENIC	human	P49675	STAR	P49675	10	70	Steroidogenic acute regulatory protein, mitochondrial (StAR)	w
+STEROIDOGENIC	human	Q13285	NR5A1	Q13285	169	562	Steroidogenic factor 1 (SF-1) (STF-1) (hSF-1) (Adrenal 4-bin	w
+STEROIDOGENIC	worm	O17883	strl-1	O17883	1	12	Steroidogenic acute regulatory-like protein 1	w
+STEROIDOGENIC	zebrafish	Q9DG10	star	Q9DG10	0	16	Steroidogenic acute regulatory protein, mitochondrial	w
+STEROL	fly	FBgn0015808	ScpX	Q9VJ43	2	40	Sterol carrier protein 2 (EC 2.3.1.155) (EC 2.3.1.16) (EC 2.	w
+STEROL	fly	FBgn0033052	SCAP	A1Z6J2	1	44	Sterol regulatory element-binding protein cleavage-activatin	w
+STEROL	fly	FBgn0261283	SREBP	Q9VW37	58	457	LP12374p (Sterol regulatory element binding protein, isoform	w
+STEROL	human	O43462	MBTPS2	O43462	13	94	Membrane-bound transcription factor site-2 protease (EC 3.4.	w
+STEROL	human	O75845	SC5D	O75845	0	72	Lathosterol oxidase (EC 1.14.19.20) (C-5 sterol desaturase) 	w
+STEROL	human	O75908	SOAT2	O75908	2	28	Sterol O-acyltransferase 2 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
+STEROL	human	O76062	TM7SF2	O76062	3	82	Delta(14)-sterol reductase TM7SF2 (Delta-14-SR) (EC 1.3.1.70	w
+STEROL	human	P22307	SCP2	P22307	4	109	Sterol carrier protein 2 (SCP-2) (Acetyl-CoA C-myristoyltran	w
+STEROL	human	P35610	SOAT1	P35610	7	254	Sterol O-acyltransferase 1 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
+STEROL	human	P36956	SREBF1	P36956	35	227	Sterol regulatory element-binding protein 1 (SREBP-1) (Class	w
+STEROL	human	Q02318	CYP27A1	Q02318	7	103	Sterol 26-hydroxylase, mitochondrial (EC 1.14.15.15) (5-beta	w
+STEROL	human	Q12770	SCAP	Q12770	25	176	Sterol regulatory element-binding protein cleavage-activatin	w
+STEROL	human	Q12772	SREBF2	Q12772	55	363	Sterol regulatory element-binding protein 2 (SREBP-2) (Class	w
+STEROL	human	Q14739	LBR	Q14739	39	324	Delta(14)-sterol reductase LBR (Delta-14-SR) (EC 1.3.1.70) (	w
+STEROL	human	Q15392	DHCR24	Q15392	7	237	Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholeste	w
+STEROL	human	Q9UBM7	DHCR7	Q9UBM7	14	232	7-dehydrocholesterol reductase (7-DHC reductase) (EC 1.3.1.2	w
+STEROL	worm	O17397	dhcr-24	O17397	1	18	Delta(24)-sterol reductase homolog dhcr-24	w
+STEROL	worm	Q18968	scp-1	Q18968	2	7	Sterol regulatory element-binding protein cleavage-activatin	w
+STEROL	worm	Q9TYP1	strm-1	Q9TYP1	0	7	Sterol 4-C-methyltransferase strm-1	w
+STEROL	worm	Q9XVZ2	CELE_Y7A5A.1	Q9XVZ2	0	2	Delta(24)-sterol reductase	w
+STEROL	worm	Q9XX00	sbp-1	Q9XX00	7	26	Sterol regulatory element binding protein sbp-1	w
+STEROL	yeast	P25087	ERG6	P25087	2	82	Sterol 24-C-methyltransferase ERG6	w
+STEROL	yeast	P25340	ERG4	P25340	0	21	Delta(24(24(1)))-sterol reductase ERG4	w
+STEROL	yeast	P25628	ARE1	P25628	1	20	Sterol O-acyltransferase 1	w
+STEROL	yeast	P32352	ERG2	P32352	0	28	C-8 sterol isomerase ERG2	w
+STEROL	yeast	P32353	ERG3	P32353	0	26	Delta(7)-sterol 5(6)-desaturase ERG3	w
+STEROL	yeast	P32462	ERG24	P32462	1	25	Delta(14)-sterol reductase ERG24	w
+STEROL	yeast	P34163	TGL1	P34163	1	19	Sterol esterase TGL1	w
+STEROL	yeast	P53032	SUT1	P53032	2	14	Sterol uptake protein 1	w
+STEROL	yeast	P53629	ARE2	P53629	1	22	Sterol O-acyltransferase 2	w
+STEROL	yeast	P54781	ERG5	P54781	1	23	C-22 sterol desaturase ERG5	w
+STEROL	yeast	Q05958	ECM22	Q05958	1	16	Sterol regulatory element-binding protein ECM22	w
+STEROL	yeast	Q06321	ATG26	Q06321	0	10	Sterol 3-beta-glucosyltransferase	w
+STEROL	yeast	Q07804	YEH1	Q07804	0	21	Sterol esterase 1	w
+STEROL	yeast	Q07950	YEH2	Q07950	0	3	Sterol esterase 2	w
+STEROL	yeast	Q12151	UPC2	Q12151	3	15	Sterol uptake control protein 2	w
+STEROL	yeast	Q12200	NCR1	Q12200	0	17	NPC intracellular sterol transporter 1-related protein 1	w
+STEROL	yeast	Q12286	SUT2	Q12286	0	1	Sterol uptake protein 2	w
+STEROL	zebrafish	A0A8M9PP65	lbr	A0A8M9PP65	0	37	Delta(14)-sterol reductase LBR	w
+STEROL	zebrafish	A3KNA7	srebf2	A3KNA7	16	43	Sterol regulatory element-binding protein 2	w
+STEROL	zebrafish	E9QEH6	scap	E9QEH6	3	16	Sterol regulatory element-binding protein cleavage-activatin	w
+STEROL	zebrafish	I3IRZ4	si:ch1073-429i10.1	I3IRZ4	2	22	Delta(14)-sterol reductase TM7SF2	w
+STEROL	zebrafish	Q5XJS3	scp2b	Q5XJS3	0	10	Sterol carrier protein 2b	w
+STEROL	zebrafish	Q6P4V5	scp2a	Q6P4V5	0	20	Sterol carrier protein 2	w
+STEROL-4-ALPHA-CARBOXYLATE	human	Q15738	NSDHL	Q15738	10	448	Sterol-4-alpha-carboxylate 3-dehydrogenase, decarboxylating 	w
+STEROL-4-ALPHA-CARBOXYLATE	yeast	P53199	ERG26	P53199	3	118	Sterol-4-alpha-carboxylate 3-dehydrogenase ERG26, decarboxyl	w
+STEROL-BINDING	human	Q9UJQ7	SCP2D1	Q9UJQ7	4	14	SCP2 sterol-binding domain-containing protein 1	w
+STEROL-C4-METHYL	human	Q15800	MSMO1	Q15800	12	139	Methylsterol monooxygenase 1 (EC 1.14.18.9) (C-4 methylstero	w
+STEROLIN-1	human	Q9H222	ABCG5	Q9H222	5	142	ATP-binding cassette sub-family G member 5 (EC 7.6.2.-) (Ste	w
+STEROLIN-2	human	Q9H221	ABCG8	Q9H221	5	118	ATP-binding cassette sub-family G member 8 (EC 7.6.2.-) (Ste	w
+STERYL	yeast	P53324	SAY1	P53324	0	21	Steryl acetyl hydrolase 1	w
+STERYL-SULFATASE	human	P08842	STS	P08842	3	110	Steryl-sulfatase (EC 3.1.6.2) (Arylsulfatase C) (ASC) (Estro	w
+STERYL-SULFATE	human	P08842	STS	P08842	3	110	Steryl-sulfatase (EC 3.1.6.2) (Arylsulfatase C) (ASC) (Estro	w
+STET	fly	FBgn0020248	stet	Q9W0E9	2	18	Stem cell tumor, isoform B (EC 3.4.21.-)	
+STET-PB	fly	FBgn0020248	stet	Q9W0E9	2	18		
+STET-PB_311_424	fly	FBgn0020248	stet	Q9W0E9	2	18		
+STEXH	fly	FBgn0259817	SteXh:CG42398	B8K3A5	0	0	SteXh:CG42398	w
+STEXH:CG42398	fly	FBgn0259817	SteXh:CG42398	B8K3A5	0	0	SteXh:CG42398	

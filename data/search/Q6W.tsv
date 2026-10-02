@@ -1,20 +1,530 @@
-Q6W3B0	rattus-norvegicus	Q6W3B0	Dsg4	Q6W3B0	4	13	Desmoglein-4
-Q6W3E0	mus-musculus	Q6W3E0	Calm5	Q6W3E0	10	252	Calmodulin 5
-Q6W3E9	rattus-norvegicus	Q6W3E9	P4ha3	Q6W3E9	5	20	Prolyl 4-hydroxylase subunit alpha-3
-Q6W3F0	mus-musculus	Q6W3F0	P4ha3	Q6W3F0	3	7	Prolyl 4-hydroxylase subunit alpha-3
-Q6W5C0	mus-musculus	Q6W5C0	Cxcl3	Q6W5C0	14	27	C-X-C motif chemokine 3
-Q6W5G4	rattus-norvegicus	Q6W5G4	Plppr2	Q6W5G4	1	43	Phospholipid phosphatase-related protein type 2
-Q6W8Q3	mus-musculus	Q6W8Q3	Pcp4l1	Q6W8Q3	1	23	Purkinje cell protein 4-like protein 1
-Q6W9J5	rattus-norvegicus	Q6W9J5	RT1-M2	Q6W9J5	3	41	MHC class Ib antigen
-Q6W9L1	mus-musculus	Q6W9L1	H2-M2	Q6W9L1	6	67	Histocompatibility 2, M region locus 2
-Q6WAY2	rattus-norvegicus	Q6WAY2	Plppr1	Q6WAY2	2	44	Phospholipid phosphatase-related protein type 1
-Q6WBX7	mus-musculus	Q6WBX7	Rad9b	Q6WBX7	16	49	Cell cycle checkpoint control protein RAD9B
-Q6WIZ7	mus-musculus	Q6WIZ7	Aoc1l3	Q6WIZ7	2	5	Amine oxidase
-Q6WKZ7	mus-musculus	Q6WKZ7	Nostrin	Q6WKZ7	2	40	Nostrin
-Q6WLH3	zea-mays	Q6WLH3	SMH5	Q6WLH3	30	352	Single myb histone 5
-Q6WLH4	zea-mays	Q6WLH4	SMH3	Q6WLH4	11	352	Single myb histone 3
-Q6WN19	rattus-norvegicus	Q6WN19	Rtn2	Q6WN19	1	11	Reticulon-2
-Q6WQJ1	mus-musculus	Q6WQJ1	Dagla	Q6WQJ1	0	4	Diacylglycerol lipase-alpha
-Q6WS85	zea-mays	Q6WS85	SMH1	Q6WS85	27	352	Single myb histone 1
-Q6WVG3	mus-musculus	Q6WVG3	Kctd12	Q6WVG3	0	15	BTB/POZ domain-containing protein KCTD12
-Q6WVP6	schistosoma-mansoni	Q6WVP6	?	Q6WVP6	0	16	Arginase
+Q6W0C5	human	Q6W0C5	DPPA3	Q6W0C5	34	132	Developmental pluripotency-associated protein 3 (Stella-rela	
+Q6W2J9	human	Q6W2J9	BCOR	Q6W2J9	128	365	BCL-6 corepressor (BCoR)	
+Q6W349	human	Q6W349	LINC00575	Q6W349	1	4	Putative uncharacterized protein encoded by LINC00575	
+Q6W3B0	rattus-norvegicus	Q6W3B0	Dsg4	Q6W3B0	4	13	Desmoglein-4	
+Q6W3E0	mus-musculus	Q6W3E0	Calm5	Q6W3E0	10	252	Calmodulin 5	
+Q6W3E5	human	Q6W3E5	GDPD4	Q6W3E5	4	9	Glycerophosphodiester phosphodiesterase 6 (EC 3.1.4.-) (Glyc	
+Q6W3E9	rattus-norvegicus	Q6W3E9	P4ha3	Q6W3E9	5	20	Prolyl 4-hydroxylase subunit alpha-3	
+Q6W3F0	mus-musculus	Q6W3F0	P4ha3	Q6W3F0	3	7	Prolyl 4-hydroxylase subunit alpha-3	
+Q6W4X9	human	Q6W4X9	MUC6	Q6W4X9	0	4	Mucin-6 (MUC-6) (Gastric mucin-6)	
+Q6W5C0	mus-musculus	Q6W5C0	Cxcl3	Q6W5C0	14	27	C-X-C motif chemokine 3	
+Q6W5G4	rattus-norvegicus	Q6W5G4	Plppr2	Q6W5G4	1	43	Phospholipid phosphatase-related protein type 2	
+Q6W5P4	human	Q6W5P4	NPSR1	Q6W5P4	5	56	Neuropeptide S receptor (G protein-coupled receptor 154) (G 	
+Q6W8Q3	mus-musculus	Q6W8Q3	Pcp4l1	Q6W8Q3	1	23	Purkinje cell protein 4-like protein 1	
+Q6W990	zebrafish	Q6W990	hoxa13a	Q6W990	0	6	Homeobox protein Hox-A13a	
+Q6W9E4	virus	Q6W9E4_p1ba06bfa40		Q6W9E4	1	11	Viral protein genome linked	
+Q6W9E4	virus	Q6W9E4_p2f935ab439		Q6W9E4	3	11	Capsid protein VP1	
+Q6W9E4	virus	Q6W9E4_p589ad46606		Q6W9E4	0	11	RNA directed RNA polymerase	
+Q6W9E4	virus	Q6W9E4_p5fb6369f75		Q6W9E4	2	11	Capsid protein VP2	
+Q6W9E4	virus	Q6W9E4_p70ba4d3264		Q6W9E4	2	11	Protease 2A	
+Q6W9E4	virus	Q6W9E4_p9c7cbec98c		Q6W9E4	1	11	Capsid protein VP4	
+Q6W9E4	virus	Q6W9E4_pab6cac7ce5		Q6W9E4	1	11	Protein 2B	
+Q6W9E4	virus	Q6W9E4_pad0787ba9d		Q6W9E4	2	11	Capsid protein VP3	
+Q6W9E4	virus	Q6W9E4_pb893e40505		Q6W9E4	0	11	Protein 2C	
+Q6W9E4	virus	Q6W9E4_pe8933a1ef3		Q6W9E4	1	11	Protein 3A	
+Q6W9E4	virus	Q6W9E4_pfe09bf7dd6		Q6W9E4	4	11	Protease 3C	
+Q6W9E4_P1BA06BFA40	virus	Q6W9E4_p1ba06bfa40		Q6W9E4	1	11	Viral protein genome linked	
+Q6W9E4_P2F935AB439	virus	Q6W9E4_p2f935ab439		Q6W9E4	3	11	Capsid protein VP1	
+Q6W9E4_P589AD46606	virus	Q6W9E4_p589ad46606		Q6W9E4	0	11	RNA directed RNA polymerase	
+Q6W9E4_P5FB6369F75	virus	Q6W9E4_p5fb6369f75		Q6W9E4	2	11	Capsid protein VP2	
+Q6W9E4_P70BA4D3264	virus	Q6W9E4_p70ba4d3264		Q6W9E4	2	11	Protease 2A	
+Q6W9E4_P9C7CBEC98C	virus	Q6W9E4_p9c7cbec98c		Q6W9E4	1	11	Capsid protein VP4	
+Q6W9E4_PAB6CAC7CE5	virus	Q6W9E4_pab6cac7ce5		Q6W9E4	1	11	Protein 2B	
+Q6W9E4_PAD0787BA9D	virus	Q6W9E4_pad0787ba9d		Q6W9E4	2	11	Capsid protein VP3	
+Q6W9E4_PB893E40505	virus	Q6W9E4_pb893e40505		Q6W9E4	0	11	Protein 2C	
+Q6W9E4_PE8933A1EF3	virus	Q6W9E4_pe8933a1ef3		Q6W9E4	1	11	Protein 3A	
+Q6W9E4_PFE09BF7DD6	virus	Q6W9E4_pfe09bf7dd6		Q6W9E4	4	11	Protease 3C	
+Q6W9E5	virus	Q6W9E5_p02ebf0f567		Q6W9E5	2	11	Capsid protein VP2	
+Q6W9E5	virus	Q6W9E5_p0a9e448417		Q6W9E5	0	11	RNA directed RNA polymerase	
+Q6W9E5	virus	Q6W9E5_p0f5103421d		Q6W9E5	2	11	Viral protein genome linked	
+Q6W9E5	virus	Q6W9E5_p1bdc3cd5de		Q6W9E5	3	11	Capsid protein VP3	
+Q6W9E5	virus	Q6W9E5_p47b1c2d93a		Q6W9E5	1	11	Capsid protein VP4	
+Q6W9E5	virus	Q6W9E5_p5d108c80cf		Q6W9E5	5	11	Protease 3C	
+Q6W9E5	virus	Q6W9E5_p63ec443783		Q6W9E5	0	11	Protein 2C	
+Q6W9E5	virus	Q6W9E5_p7d17eb2fde		Q6W9E5	3	11	Capsid protein VP1	
+Q6W9E5	virus	Q6W9E5_p822e8d09b5		Q6W9E5	1	11	Protein 2B	
+Q6W9E5	virus	Q6W9E5_pae21bd2817		Q6W9E5	4	11	Protease 2A	
+Q6W9E5	virus	Q6W9E5_pf471feb801		Q6W9E5	1	11	Protein 3A	
+Q6W9E5_P02EBF0F567	virus	Q6W9E5_p02ebf0f567		Q6W9E5	2	11	Capsid protein VP2	
+Q6W9E5_P0A9E448417	virus	Q6W9E5_p0a9e448417		Q6W9E5	0	11	RNA directed RNA polymerase	
+Q6W9E5_P0F5103421D	virus	Q6W9E5_p0f5103421d		Q6W9E5	2	11	Viral protein genome linked	
+Q6W9E5_P1BDC3CD5DE	virus	Q6W9E5_p1bdc3cd5de		Q6W9E5	3	11	Capsid protein VP3	
+Q6W9E5_P47B1C2D93A	virus	Q6W9E5_p47b1c2d93a		Q6W9E5	1	11	Capsid protein VP4	
+Q6W9E5_P5D108C80CF	virus	Q6W9E5_p5d108c80cf		Q6W9E5	5	11	Protease 3C	
+Q6W9E5_P63EC443783	virus	Q6W9E5_p63ec443783		Q6W9E5	0	11	Protein 2C	
+Q6W9E5_P7D17EB2FDE	virus	Q6W9E5_p7d17eb2fde		Q6W9E5	3	11	Capsid protein VP1	
+Q6W9E5_P822E8D09B5	virus	Q6W9E5_p822e8d09b5		Q6W9E5	1	11	Protein 2B	
+Q6W9E5_PAE21BD2817	virus	Q6W9E5_pae21bd2817		Q6W9E5	4	11	Protease 2A	
+Q6W9E5_PF471FEB801	virus	Q6W9E5_pf471feb801		Q6W9E5	1	11	Protein 3A	
+Q6W9E6	virus	Q6W9E6_p11dd44cad5		Q6W9E6	1	11	Protein 3A	
+Q6W9E6	virus	Q6W9E6_p1fcb2f370a		Q6W9E6	3	11	Capsid protein VP3	
+Q6W9E6	virus	Q6W9E6_p3304f42e4f		Q6W9E6	2	11	Capsid protein VP4	
+Q6W9E6	virus	Q6W9E6_p63e1b1aa71		Q6W9E6	1	11	Protein 2C	
+Q6W9E6	virus	Q6W9E6_p64331319d0		Q6W9E6	2	11	Protein 2B	
+Q6W9E6	virus	Q6W9E6_p6b5c26776a		Q6W9E6	0	11	RNA directed RNA polymerase	
+Q6W9E6	virus	Q6W9E6_p742c7bd452		Q6W9E6	2	11	Capsid protein VP1	
+Q6W9E6	virus	Q6W9E6_p7f979128f6		Q6W9E6	2	11	Viral protein genome linked	
+Q6W9E6	virus	Q6W9E6_p9a4cac1e26		Q6W9E6	3	11	Protease 2A	
+Q6W9E6	virus	Q6W9E6_pe03a767274		Q6W9E6	4	11	Protease 3C	
+Q6W9E6	virus	Q6W9E6_pee182ada30		Q6W9E6	2	11	Capsid protein VP2	
+Q6W9E6_P11DD44CAD5	virus	Q6W9E6_p11dd44cad5		Q6W9E6	1	11	Protein 3A	
+Q6W9E6_P1FCB2F370A	virus	Q6W9E6_p1fcb2f370a		Q6W9E6	3	11	Capsid protein VP3	
+Q6W9E6_P3304F42E4F	virus	Q6W9E6_p3304f42e4f		Q6W9E6	2	11	Capsid protein VP4	
+Q6W9E6_P63E1B1AA71	virus	Q6W9E6_p63e1b1aa71		Q6W9E6	1	11	Protein 2C	
+Q6W9E6_P64331319D0	virus	Q6W9E6_p64331319d0		Q6W9E6	2	11	Protein 2B	
+Q6W9E6_P6B5C26776A	virus	Q6W9E6_p6b5c26776a		Q6W9E6	0	11	RNA directed RNA polymerase	
+Q6W9E6_P742C7BD452	virus	Q6W9E6_p742c7bd452		Q6W9E6	2	11	Capsid protein VP1	
+Q6W9E6_P7F979128F6	virus	Q6W9E6_p7f979128f6		Q6W9E6	2	11	Viral protein genome linked	
+Q6W9E6_P9A4CAC1E26	virus	Q6W9E6_p9a4cac1e26		Q6W9E6	3	11	Protease 2A	
+Q6W9E6_PE03A767274	virus	Q6W9E6_pe03a767274		Q6W9E6	4	11	Protease 3C	
+Q6W9E6_PEE182ADA30	virus	Q6W9E6_pee182ada30		Q6W9E6	2	11	Capsid protein VP2	
+Q6W9E7	virus	Q6W9E7_p0267ac640e		Q6W9E7	2	11	Capsid protein VP2	
+Q6W9E7	virus	Q6W9E7_p1e5ddc6530		Q6W9E7	0	11	RNA directed RNA polymerase	
+Q6W9E7	virus	Q6W9E7_p3683d85911		Q6W9E7	2	11	Capsid protein VP1	
+Q6W9E7	virus	Q6W9E7_p635a14647f		Q6W9E7	2	11	Protein 2B	
+Q6W9E7	virus	Q6W9E7_p68e3c96e7f		Q6W9E7	3	11	Protease 3C	
+Q6W9E7	virus	Q6W9E7_p6bdce8a77f		Q6W9E7	0	11	Capsid protein VP4	
+Q6W9E7	virus	Q6W9E7_p7c51e4c091		Q6W9E7	1	11	Protease 2A	
+Q6W9E7	virus	Q6W9E7_p9baa88fc5d		Q6W9E7	1	11	Viral protein genome linked	
+Q6W9E7	virus	Q6W9E7_pb6092ecf08		Q6W9E7	1	11	Protein 2C	
+Q6W9E7	virus	Q6W9E7_pc205958e4c		Q6W9E7	1	11	Protein 3A	
+Q6W9E7	virus	Q6W9E7_pd88268bae9		Q6W9E7	2	11	Capsid protein VP3	
+Q6W9E7_P0267AC640E	virus	Q6W9E7_p0267ac640e		Q6W9E7	2	11	Capsid protein VP2	
+Q6W9E7_P1E5DDC6530	virus	Q6W9E7_p1e5ddc6530		Q6W9E7	0	11	RNA directed RNA polymerase	
+Q6W9E7_P3683D85911	virus	Q6W9E7_p3683d85911		Q6W9E7	2	11	Capsid protein VP1	
+Q6W9E7_P635A14647F	virus	Q6W9E7_p635a14647f		Q6W9E7	2	11	Protein 2B	
+Q6W9E7_P68E3C96E7F	virus	Q6W9E7_p68e3c96e7f		Q6W9E7	3	11	Protease 3C	
+Q6W9E7_P6BDCE8A77F	virus	Q6W9E7_p6bdce8a77f		Q6W9E7	0	11	Capsid protein VP4	
+Q6W9E7_P7C51E4C091	virus	Q6W9E7_p7c51e4c091		Q6W9E7	1	11	Protease 2A	
+Q6W9E7_P9BAA88FC5D	virus	Q6W9E7_p9baa88fc5d		Q6W9E7	1	11	Viral protein genome linked	
+Q6W9E7_PB6092ECF08	virus	Q6W9E7_pb6092ecf08		Q6W9E7	1	11	Protein 2C	
+Q6W9E7_PC205958E4C	virus	Q6W9E7_pc205958e4c		Q6W9E7	1	11	Protein 3A	
+Q6W9E7_PD88268BAE9	virus	Q6W9E7_pd88268bae9		Q6W9E7	2	11	Capsid protein VP3	
+Q6W9E8	virus	Q6W9E8_p236761ef73		Q6W9E8	1	11	Protein 2B	
+Q6W9E8	virus	Q6W9E8_p318755aeb8		Q6W9E8	1	11	Protease 2A	
+Q6W9E8	virus	Q6W9E8_p41199c4b1a		Q6W9E8	0	11	Capsid protein VP4	
+Q6W9E8	virus	Q6W9E8_p486cd0d216		Q6W9E8	1	11	Viral protein genome linked	
+Q6W9E8	virus	Q6W9E8_p508163f9ba		Q6W9E8	3	11	Capsid protein VP3	
+Q6W9E8	virus	Q6W9E8_p5d108c80cf		Q6W9E8	3	11	Protease 3C	
+Q6W9E8	virus	Q6W9E8_p684e702781		Q6W9E8	1	11	Protein 3A	
+Q6W9E8	virus	Q6W9E8_p9bcd8a6924		Q6W9E8	0	11	Protein 2C	
+Q6W9E8	virus	Q6W9E8_pc01e43f381		Q6W9E8	0	11	RNA directed RNA polymerase	
+Q6W9E8	virus	Q6W9E8_pd7ce66d2b1		Q6W9E8	2	11	Capsid protein VP1	
+Q6W9E8	virus	Q6W9E8_pf0d0e79e41		Q6W9E8	2	11	Capsid protein VP2	
+Q6W9E8_P236761EF73	virus	Q6W9E8_p236761ef73		Q6W9E8	1	11	Protein 2B	
+Q6W9E8_P318755AEB8	virus	Q6W9E8_p318755aeb8		Q6W9E8	1	11	Protease 2A	
+Q6W9E8_P41199C4B1A	virus	Q6W9E8_p41199c4b1a		Q6W9E8	0	11	Capsid protein VP4	
+Q6W9E8_P486CD0D216	virus	Q6W9E8_p486cd0d216		Q6W9E8	1	11	Viral protein genome linked	
+Q6W9E8_P508163F9BA	virus	Q6W9E8_p508163f9ba		Q6W9E8	3	11	Capsid protein VP3	
+Q6W9E8_P5D108C80CF	virus	Q6W9E8_p5d108c80cf		Q6W9E8	3	11	Protease 3C	
+Q6W9E8_P684E702781	virus	Q6W9E8_p684e702781		Q6W9E8	1	11	Protein 3A	
+Q6W9E8_P9BCD8A6924	virus	Q6W9E8_p9bcd8a6924		Q6W9E8	0	11	Protein 2C	
+Q6W9E8_PC01E43F381	virus	Q6W9E8_pc01e43f381		Q6W9E8	0	11	RNA directed RNA polymerase	
+Q6W9E8_PD7CE66D2B1	virus	Q6W9E8_pd7ce66d2b1		Q6W9E8	2	11	Capsid protein VP1	
+Q6W9E8_PF0D0E79E41	virus	Q6W9E8_pf0d0e79e41		Q6W9E8	2	11	Capsid protein VP2	
+Q6W9E9	virus	Q6W9E9_p15e831998e		Q6W9E9	0	11	RNA directed RNA polymerase	
+Q6W9E9	virus	Q6W9E9_p1e28cfb9fc		Q6W9E9	1	11	Protein 2B	
+Q6W9E9	virus	Q6W9E9_p2b0b310ea6		Q6W9E9	0	11	Capsid protein VP4	
+Q6W9E9	virus	Q6W9E9_p2e98af193e		Q6W9E9	3	11	Capsid protein VP3	
+Q6W9E9	virus	Q6W9E9_p505372c4ee		Q6W9E9	1	11	Protein 3A	
+Q6W9E9	virus	Q6W9E9_p68e3c96e7f		Q6W9E9	3	11	Protease 3C	
+Q6W9E9	virus	Q6W9E9_p71b80c4b16		Q6W9E9	3	11	Protease 2A	
+Q6W9E9	virus	Q6W9E9_p80f6981f8b		Q6W9E9	2	11	Capsid protein VP2	
+Q6W9E9	virus	Q6W9E9_p9baa88fc5d		Q6W9E9	2	11	Viral protein genome linked	
+Q6W9E9	virus	Q6W9E9_pcb0068a831		Q6W9E9	3	11	Capsid protein VP1	
+Q6W9E9	virus	Q6W9E9_pd9a12e0511		Q6W9E9	0	11	Protein 2C	
+Q6W9E9_P15E831998E	virus	Q6W9E9_p15e831998e		Q6W9E9	0	11	RNA directed RNA polymerase	
+Q6W9E9_P1E28CFB9FC	virus	Q6W9E9_p1e28cfb9fc		Q6W9E9	1	11	Protein 2B	
+Q6W9E9_P2B0B310EA6	virus	Q6W9E9_p2b0b310ea6		Q6W9E9	0	11	Capsid protein VP4	
+Q6W9E9_P2E98AF193E	virus	Q6W9E9_p2e98af193e		Q6W9E9	3	11	Capsid protein VP3	
+Q6W9E9_P505372C4EE	virus	Q6W9E9_p505372c4ee		Q6W9E9	1	11	Protein 3A	
+Q6W9E9_P68E3C96E7F	virus	Q6W9E9_p68e3c96e7f		Q6W9E9	3	11	Protease 3C	
+Q6W9E9_P71B80C4B16	virus	Q6W9E9_p71b80c4b16		Q6W9E9	3	11	Protease 2A	
+Q6W9E9_P80F6981F8B	virus	Q6W9E9_p80f6981f8b		Q6W9E9	2	11	Capsid protein VP2	
+Q6W9E9_P9BAA88FC5D	virus	Q6W9E9_p9baa88fc5d		Q6W9E9	2	11	Viral protein genome linked	
+Q6W9E9_PCB0068A831	virus	Q6W9E9_pcb0068a831		Q6W9E9	3	11	Capsid protein VP1	
+Q6W9E9_PD9A12E0511	virus	Q6W9E9_pd9a12e0511		Q6W9E9	0	11	Protein 2C	
+Q6W9F0	virus	Q6W9F0_p3c7acfeff3		Q6W9F0	1	11	Capsid protein VP4	
+Q6W9F0	virus	Q6W9F0_p4811eb477b		Q6W9F0	2	11	Capsid protein VP2	
+Q6W9F0	virus	Q6W9F0_p68e3c96e7f		Q6W9F0	4	11	Protease 3C	
+Q6W9F0	virus	Q6W9F0_p7aebaeab97		Q6W9F0	1	11	Protein 3A	
+Q6W9F0	virus	Q6W9F0_p9baa88fc5d		Q6W9F0	1	11	Viral protein genome linked	
+Q6W9F0	virus	Q6W9F0_pa44140b18e		Q6W9F0	3	11	Capsid protein VP1	
+Q6W9F0	virus	Q6W9F0_pc197834a8a		Q6W9F0	1	11	Protein 2B	
+Q6W9F0	virus	Q6W9F0_pc50cf40a15		Q6W9F0	3	11	Capsid protein VP3	
+Q6W9F0	virus	Q6W9F0_pc5db2ee7de		Q6W9F0	0	11	Protein 2C	
+Q6W9F0	virus	Q6W9F0_pc5fe347f54		Q6W9F0	0	11	RNA directed RNA polymerase	
+Q6W9F0	virus	Q6W9F0_pe53ac9d41b		Q6W9F0	2	11	Protease 2A	
+Q6W9F0_P3C7ACFEFF3	virus	Q6W9F0_p3c7acfeff3		Q6W9F0	1	11	Capsid protein VP4	
+Q6W9F0_P4811EB477B	virus	Q6W9F0_p4811eb477b		Q6W9F0	2	11	Capsid protein VP2	
+Q6W9F0_P68E3C96E7F	virus	Q6W9F0_p68e3c96e7f		Q6W9F0	4	11	Protease 3C	
+Q6W9F0_P7AEBAEAB97	virus	Q6W9F0_p7aebaeab97		Q6W9F0	1	11	Protein 3A	
+Q6W9F0_P9BAA88FC5D	virus	Q6W9F0_p9baa88fc5d		Q6W9F0	1	11	Viral protein genome linked	
+Q6W9F0_PA44140B18E	virus	Q6W9F0_pa44140b18e		Q6W9F0	3	11	Capsid protein VP1	
+Q6W9F0_PC197834A8A	virus	Q6W9F0_pc197834a8a		Q6W9F0	1	11	Protein 2B	
+Q6W9F0_PC50CF40A15	virus	Q6W9F0_pc50cf40a15		Q6W9F0	3	11	Capsid protein VP3	
+Q6W9F0_PC5DB2EE7DE	virus	Q6W9F0_pc5db2ee7de		Q6W9F0	0	11	Protein 2C	
+Q6W9F0_PC5FE347F54	virus	Q6W9F0_pc5fe347f54		Q6W9F0	0	11	RNA directed RNA polymerase	
+Q6W9F0_PE53AC9D41B	virus	Q6W9F0_pe53ac9d41b		Q6W9F0	2	11	Protease 2A	
+Q6W9F1	virus	Q6W9F1_p102a8ec153		Q6W9F1	1	10	Protein 2B	
+Q6W9F1	virus	Q6W9F1_p11e4ebc2de		Q6W9F1	2	10	Capsid protein VP2	
+Q6W9F1	virus	Q6W9F1_p48d53b0c90		Q6W9F1	0	10	Capsid protein VP4	
+Q6W9F1	virus	Q6W9F1_p56ff8990bf		Q6W9F1	3	10	Protease 2A	
+Q6W9F1	virus	Q6W9F1_p89b6ee1a4e		Q6W9F1	3	10	Capsid protein VP3	
+Q6W9F1	virus	Q6W9F1_p9baa88fc5d		Q6W9F1	2	10	Viral protein genome linked	
+Q6W9F1	virus	Q6W9F1_pa4d017cc95		Q6W9F1	1	10	Protein 3A	
+Q6W9F1	virus	Q6W9F1_paa7e92d420		Q6W9F1	0	10	RNA directed RNA polymerase	
+Q6W9F1	virus	Q6W9F1_pbd9391b0d5		Q6W9F1	2	10	Protease 3C	
+Q6W9F1	virus	Q6W9F1_pc94fd79a12		Q6W9F1	3	10	Capsid protein VP1	
+Q6W9F1_P102A8EC153	virus	Q6W9F1_p102a8ec153		Q6W9F1	1	10	Protein 2B	
+Q6W9F1_P11E4EBC2DE	virus	Q6W9F1_p11e4ebc2de		Q6W9F1	2	10	Capsid protein VP2	
+Q6W9F1_P48D53B0C90	virus	Q6W9F1_p48d53b0c90		Q6W9F1	0	10	Capsid protein VP4	
+Q6W9F1_P56FF8990BF	virus	Q6W9F1_p56ff8990bf		Q6W9F1	3	10	Protease 2A	
+Q6W9F1_P89B6EE1A4E	virus	Q6W9F1_p89b6ee1a4e		Q6W9F1	3	10	Capsid protein VP3	
+Q6W9F1_P9BAA88FC5D	virus	Q6W9F1_p9baa88fc5d		Q6W9F1	2	10	Viral protein genome linked	
+Q6W9F1_PA4D017CC95	virus	Q6W9F1_pa4d017cc95		Q6W9F1	1	10	Protein 3A	
+Q6W9F1_PAA7E92D420	virus	Q6W9F1_paa7e92d420		Q6W9F1	0	10	RNA directed RNA polymerase	
+Q6W9F1_PBD9391B0D5	virus	Q6W9F1_pbd9391b0d5		Q6W9F1	2	10	Protease 3C	
+Q6W9F1_PC94FD79A12	virus	Q6W9F1_pc94fd79a12		Q6W9F1	3	10	Capsid protein VP1	
+Q6W9F2	virus	Q6W9F2_p0b8c00c9d3		Q6W9F2	1	10	Capsid protein VP1	
+Q6W9F2	virus	Q6W9F2_p0d572c6e71		Q6W9F2	0	10	RNA directed RNA polymerase	
+Q6W9F2	virus	Q6W9F2_p10783e8ad3		Q6W9F2	1	10	Capsid protein VP4	
+Q6W9F2	virus	Q6W9F2_p1e28cfb9fc		Q6W9F2	1	10	Protein 2B	
+Q6W9F2	virus	Q6W9F2_p2b48acf1eb		Q6W9F2	0	10	Protein 2C	
+Q6W9F2	virus	Q6W9F2_p37dfb06b2c		Q6W9F2	2	10	Protease 2A	
+Q6W9F2	virus	Q6W9F2_p68e3c96e7f		Q6W9F2	4	10	Protease 3C	
+Q6W9F2	virus	Q6W9F2_p830ecd61fd		Q6W9F2	2	10	Capsid protein VP3	
+Q6W9F2	virus	Q6W9F2_p9baa88fc5d		Q6W9F2	2	10	Viral protein genome linked	
+Q6W9F2	virus	Q6W9F2_pdcf2697bd0		Q6W9F2	1	10	Protein 3A	
+Q6W9F2_P0B8C00C9D3	virus	Q6W9F2_p0b8c00c9d3		Q6W9F2	1	10	Capsid protein VP1	
+Q6W9F2_P0D572C6E71	virus	Q6W9F2_p0d572c6e71		Q6W9F2	0	10	RNA directed RNA polymerase	
+Q6W9F2_P10783E8AD3	virus	Q6W9F2_p10783e8ad3		Q6W9F2	1	10	Capsid protein VP4	
+Q6W9F2_P1E28CFB9FC	virus	Q6W9F2_p1e28cfb9fc		Q6W9F2	1	10	Protein 2B	
+Q6W9F2_P2B48ACF1EB	virus	Q6W9F2_p2b48acf1eb		Q6W9F2	0	10	Protein 2C	
+Q6W9F2_P37DFB06B2C	virus	Q6W9F2_p37dfb06b2c		Q6W9F2	2	10	Protease 2A	
+Q6W9F2_P68E3C96E7F	virus	Q6W9F2_p68e3c96e7f		Q6W9F2	4	10	Protease 3C	
+Q6W9F2_P830ECD61FD	virus	Q6W9F2_p830ecd61fd		Q6W9F2	2	10	Capsid protein VP3	
+Q6W9F2_P9BAA88FC5D	virus	Q6W9F2_p9baa88fc5d		Q6W9F2	2	10	Viral protein genome linked	
+Q6W9F2_PDCF2697BD0	virus	Q6W9F2_pdcf2697bd0		Q6W9F2	1	10	Protein 3A	
+Q6W9F3	virus	Q6W9F3_p09bb570fe5		Q6W9F3	2	11	Capsid protein VP2	
+Q6W9F3	virus	Q6W9F3_p1aef0f8bbf		Q6W9F3	0	11	RNA directed RNA polymerase	
+Q6W9F3	virus	Q6W9F3_p282aa43311		Q6W9F3	3	11	Capsid protein VP3	
+Q6W9F3	virus	Q6W9F3_p39772be6f0		Q6W9F3	3	11	Protease 3C	
+Q6W9F3	virus	Q6W9F3_p535c01214c		Q6W9F3	2	11	Protease 2A	
+Q6W9F3	virus	Q6W9F3_p5c7e8ef86a		Q6W9F3	1	11	Protein 3A	
+Q6W9F3	virus	Q6W9F3_p6305ae8d9b		Q6W9F3	3	11	Capsid protein VP1	
+Q6W9F3	virus	Q6W9F3_p64a8604fcb		Q6W9F3	0	11	Protein 2C	
+Q6W9F3	virus	Q6W9F3_p9baa88fc5d		Q6W9F3	1	11	Viral protein genome linked	
+Q6W9F3	virus	Q6W9F3_pa4808f5bd9		Q6W9F3	1	11	Protein 2B	
+Q6W9F3	virus	Q6W9F3_pcd1a6d6a87		Q6W9F3	1	11	Capsid protein VP4	
+Q6W9F3_P09BB570FE5	virus	Q6W9F3_p09bb570fe5		Q6W9F3	2	11	Capsid protein VP2	
+Q6W9F3_P1AEF0F8BBF	virus	Q6W9F3_p1aef0f8bbf		Q6W9F3	0	11	RNA directed RNA polymerase	
+Q6W9F3_P282AA43311	virus	Q6W9F3_p282aa43311		Q6W9F3	3	11	Capsid protein VP3	
+Q6W9F3_P39772BE6F0	virus	Q6W9F3_p39772be6f0		Q6W9F3	3	11	Protease 3C	
+Q6W9F3_P535C01214C	virus	Q6W9F3_p535c01214c		Q6W9F3	2	11	Protease 2A	
+Q6W9F3_P5C7E8EF86A	virus	Q6W9F3_p5c7e8ef86a		Q6W9F3	1	11	Protein 3A	
+Q6W9F3_P6305AE8D9B	virus	Q6W9F3_p6305ae8d9b		Q6W9F3	3	11	Capsid protein VP1	
+Q6W9F3_P64A8604FCB	virus	Q6W9F3_p64a8604fcb		Q6W9F3	0	11	Protein 2C	
+Q6W9F3_P9BAA88FC5D	virus	Q6W9F3_p9baa88fc5d		Q6W9F3	1	11	Viral protein genome linked	
+Q6W9F3_PA4808F5BD9	virus	Q6W9F3_pa4808f5bd9		Q6W9F3	1	11	Protein 2B	
+Q6W9F3_PCD1A6D6A87	virus	Q6W9F3_pcd1a6d6a87		Q6W9F3	1	11	Capsid protein VP4	
+Q6W9F4	virus	Q6W9F4_p01ffe31e20		Q6W9F4	0	11	RNA directed RNA polymerase	
+Q6W9F4	virus	Q6W9F4_p0fc3166573		Q6W9F4	1	11	Protein 2B	
+Q6W9F4	virus	Q6W9F4_p2902f30437		Q6W9F4	2	11	Capsid protein VP2	
+Q6W9F4	virus	Q6W9F4_p525bc11802		Q6W9F4	3	11	Capsid protein VP1	
+Q6W9F4	virus	Q6W9F4_p68e3c96e7f		Q6W9F4	3	11	Protease 3C	
+Q6W9F4	virus	Q6W9F4_p983bdc60d3		Q6W9F4	0	11	Protein 2C	
+Q6W9F4	virus	Q6W9F4_p9baa88fc5d		Q6W9F4	1	11	Viral protein genome linked	
+Q6W9F4	virus	Q6W9F4_pa54e39d9a9		Q6W9F4	2	11	Protease 2A	
+Q6W9F4	virus	Q6W9F4_pac446ba7a2		Q6W9F4	3	11	Capsid protein VP3	
+Q6W9F4	virus	Q6W9F4_pd425062d90		Q6W9F4	0	11	Capsid protein VP4	
+Q6W9F4	virus	Q6W9F4_pe5466c2914		Q6W9F4	1	11	Protein 3A	
+Q6W9F4_P01FFE31E20	virus	Q6W9F4_p01ffe31e20		Q6W9F4	0	11	RNA directed RNA polymerase	
+Q6W9F4_P0FC3166573	virus	Q6W9F4_p0fc3166573		Q6W9F4	1	11	Protein 2B	
+Q6W9F4_P2902F30437	virus	Q6W9F4_p2902f30437		Q6W9F4	2	11	Capsid protein VP2	
+Q6W9F4_P525BC11802	virus	Q6W9F4_p525bc11802		Q6W9F4	3	11	Capsid protein VP1	
+Q6W9F4_P68E3C96E7F	virus	Q6W9F4_p68e3c96e7f		Q6W9F4	3	11	Protease 3C	
+Q6W9F4_P983BDC60D3	virus	Q6W9F4_p983bdc60d3		Q6W9F4	0	11	Protein 2C	
+Q6W9F4_P9BAA88FC5D	virus	Q6W9F4_p9baa88fc5d		Q6W9F4	1	11	Viral protein genome linked	
+Q6W9F4_PA54E39D9A9	virus	Q6W9F4_pa54e39d9a9		Q6W9F4	2	11	Protease 2A	
+Q6W9F4_PAC446BA7A2	virus	Q6W9F4_pac446ba7a2		Q6W9F4	3	11	Capsid protein VP3	
+Q6W9F4_PD425062D90	virus	Q6W9F4_pd425062d90		Q6W9F4	0	11	Capsid protein VP4	
+Q6W9F4_PE5466C2914	virus	Q6W9F4_pe5466c2914		Q6W9F4	1	11	Protein 3A	
+Q6W9F5	virus	Q6W9F5_p0fd35a2f9e		Q6W9F5	2	11	Protease 2A	
+Q6W9F5	virus	Q6W9F5_p19b8a0b19d		Q6W9F5	1	11	Protein 3A	
+Q6W9F5	virus	Q6W9F5_p1e28cfb9fc		Q6W9F5	1	11	Protein 2B	
+Q6W9F5	virus	Q6W9F5_p21d9ba7062		Q6W9F5	0	11	Protein 2C	
+Q6W9F5	virus	Q6W9F5_p321f94df2b		Q6W9F5	0	11	RNA directed RNA polymerase	
+Q6W9F5	virus	Q6W9F5_p68e3c96e7f		Q6W9F5	4	11	Protease 3C	
+Q6W9F5	virus	Q6W9F5_p80961422e5		Q6W9F5	2	11	Capsid protein VP3	
+Q6W9F5	virus	Q6W9F5_p9baa88fc5d		Q6W9F5	1	11	Viral protein genome linked	
+Q6W9F5	virus	Q6W9F5_pd7f0d42437		Q6W9F5	1	11	Capsid protein VP4	
+Q6W9F5	virus	Q6W9F5_peb8ae68bb5		Q6W9F5	3	11	Capsid protein VP1	
+Q6W9F5	virus	Q6W9F5_ped60e954fb		Q6W9F5	2	11	Capsid protein VP2	
+Q6W9F5_P0FD35A2F9E	virus	Q6W9F5_p0fd35a2f9e		Q6W9F5	2	11	Protease 2A	
+Q6W9F5_P19B8A0B19D	virus	Q6W9F5_p19b8a0b19d		Q6W9F5	1	11	Protein 3A	
+Q6W9F5_P1E28CFB9FC	virus	Q6W9F5_p1e28cfb9fc		Q6W9F5	1	11	Protein 2B	
+Q6W9F5_P21D9BA7062	virus	Q6W9F5_p21d9ba7062		Q6W9F5	0	11	Protein 2C	
+Q6W9F5_P321F94DF2B	virus	Q6W9F5_p321f94df2b		Q6W9F5	0	11	RNA directed RNA polymerase	
+Q6W9F5_P68E3C96E7F	virus	Q6W9F5_p68e3c96e7f		Q6W9F5	4	11	Protease 3C	
+Q6W9F5_P80961422E5	virus	Q6W9F5_p80961422e5		Q6W9F5	2	11	Capsid protein VP3	
+Q6W9F5_P9BAA88FC5D	virus	Q6W9F5_p9baa88fc5d		Q6W9F5	1	11	Viral protein genome linked	
+Q6W9F5_PD7F0D42437	virus	Q6W9F5_pd7f0d42437		Q6W9F5	1	11	Capsid protein VP4	
+Q6W9F5_PEB8AE68BB5	virus	Q6W9F5_peb8ae68bb5		Q6W9F5	3	11	Capsid protein VP1	
+Q6W9F5_PED60E954FB	virus	Q6W9F5_ped60e954fb		Q6W9F5	2	11	Capsid protein VP2	
+Q6W9F6	virus	Q6W9F6_p0a70fa1b4b		Q6W9F6	0	11	RNA directed RNA polymerase	
+Q6W9F6	virus	Q6W9F6_p1a84dc7537		Q6W9F6	2	11	Capsid protein VP2	
+Q6W9F6	virus	Q6W9F6_p374730e73e		Q6W9F6	2	11	Protease 2A	
+Q6W9F6	virus	Q6W9F6_p4600d8388a		Q6W9F6	3	11	Capsid protein VP3	
+Q6W9F6	virus	Q6W9F6_p68e3c96e7f		Q6W9F6	3	11	Protease 3C	
+Q6W9F6	virus	Q6W9F6_p6da31cf266		Q6W9F6	1	11	Capsid protein VP4	
+Q6W9F6	virus	Q6W9F6_p8421d0b4f8		Q6W9F6	0	11	Protein 2C	
+Q6W9F6	virus	Q6W9F6_p88867663a2		Q6W9F6	3	11	Capsid protein VP1	
+Q6W9F6	virus	Q6W9F6_p9baa88fc5d		Q6W9F6	1	11	Viral protein genome linked	
+Q6W9F6	virus	Q6W9F6_pa282160336		Q6W9F6	1	11	Protein 2B	
+Q6W9F6	virus	Q6W9F6_pdc3ff1a704		Q6W9F6	1	11	Protein 3A	
+Q6W9F6_P0A70FA1B4B	virus	Q6W9F6_p0a70fa1b4b		Q6W9F6	0	11	RNA directed RNA polymerase	
+Q6W9F6_P1A84DC7537	virus	Q6W9F6_p1a84dc7537		Q6W9F6	2	11	Capsid protein VP2	
+Q6W9F6_P374730E73E	virus	Q6W9F6_p374730e73e		Q6W9F6	2	11	Protease 2A	
+Q6W9F6_P4600D8388A	virus	Q6W9F6_p4600d8388a		Q6W9F6	3	11	Capsid protein VP3	
+Q6W9F6_P68E3C96E7F	virus	Q6W9F6_p68e3c96e7f		Q6W9F6	3	11	Protease 3C	
+Q6W9F6_P6DA31CF266	virus	Q6W9F6_p6da31cf266		Q6W9F6	1	11	Capsid protein VP4	
+Q6W9F6_P8421D0B4F8	virus	Q6W9F6_p8421d0b4f8		Q6W9F6	0	11	Protein 2C	
+Q6W9F6_P88867663A2	virus	Q6W9F6_p88867663a2		Q6W9F6	3	11	Capsid protein VP1	
+Q6W9F6_P9BAA88FC5D	virus	Q6W9F6_p9baa88fc5d		Q6W9F6	1	11	Viral protein genome linked	
+Q6W9F6_PA282160336	virus	Q6W9F6_pa282160336		Q6W9F6	1	11	Protein 2B	
+Q6W9F6_PDC3FF1A704	virus	Q6W9F6_pdc3ff1a704		Q6W9F6	1	11	Protein 3A	
+Q6W9F7	virus	Q6W9F7_p0d8924e04d		Q6W9F7	0	11	Protein 2C	
+Q6W9F7	virus	Q6W9F7_p1e28cfb9fc		Q6W9F7	1	11	Protein 2B	
+Q6W9F7	virus	Q6W9F7_p2d50034c04		Q6W9F7	3	11	Capsid protein VP1	
+Q6W9F7	virus	Q6W9F7_p500b4e9105		Q6W9F7	3	11	Capsid protein VP3	
+Q6W9F7	virus	Q6W9F7_p68e3c96e7f		Q6W9F7	3	11	Protease 3C	
+Q6W9F7	virus	Q6W9F7_p75439c1162		Q6W9F7	0	11	RNA directed RNA polymerase	
+Q6W9F7	virus	Q6W9F7_p7aebaeab97		Q6W9F7	1	11	Protein 3A	
+Q6W9F7	virus	Q6W9F7_p9baa88fc5d		Q6W9F7	1	11	Viral protein genome linked	
+Q6W9F7	virus	Q6W9F7_pda53fd182f		Q6W9F7	2	11	Protease 2A	
+Q6W9F7	virus	Q6W9F7_pe54e8b4ea2		Q6W9F7	2	11	Capsid protein VP2	
+Q6W9F7	virus	Q6W9F7_pfb86f2a969		Q6W9F7	0	11	Capsid protein VP4	
+Q6W9F7_P0D8924E04D	virus	Q6W9F7_p0d8924e04d		Q6W9F7	0	11	Protein 2C	
+Q6W9F7_P1E28CFB9FC	virus	Q6W9F7_p1e28cfb9fc		Q6W9F7	1	11	Protein 2B	
+Q6W9F7_P2D50034C04	virus	Q6W9F7_p2d50034c04		Q6W9F7	3	11	Capsid protein VP1	
+Q6W9F7_P500B4E9105	virus	Q6W9F7_p500b4e9105		Q6W9F7	3	11	Capsid protein VP3	
+Q6W9F7_P68E3C96E7F	virus	Q6W9F7_p68e3c96e7f		Q6W9F7	3	11	Protease 3C	
+Q6W9F7_P75439C1162	virus	Q6W9F7_p75439c1162		Q6W9F7	0	11	RNA directed RNA polymerase	
+Q6W9F7_P7AEBAEAB97	virus	Q6W9F7_p7aebaeab97		Q6W9F7	1	11	Protein 3A	
+Q6W9F7_P9BAA88FC5D	virus	Q6W9F7_p9baa88fc5d		Q6W9F7	1	11	Viral protein genome linked	
+Q6W9F7_PDA53FD182F	virus	Q6W9F7_pda53fd182f		Q6W9F7	2	11	Protease 2A	
+Q6W9F7_PE54E8B4EA2	virus	Q6W9F7_pe54e8b4ea2		Q6W9F7	2	11	Capsid protein VP2	
+Q6W9F7_PFB86F2A969	virus	Q6W9F7_pfb86f2a969		Q6W9F7	0	11	Capsid protein VP4	
+Q6W9F8	virus	Q6W9F8_p29f60106cf		Q6W9F8	2	11	Capsid protein VP2	
+Q6W9F8	virus	Q6W9F8_p400d68fcb5		Q6W9F8	1	11	Protein 2B	
+Q6W9F8	virus	Q6W9F8_p5c52100206		Q6W9F8	0	11	RNA directed RNA polymerase	
+Q6W9F8	virus	Q6W9F8_p674609c945		Q6W9F8	3	11	Capsid protein VP3	
+Q6W9F8	virus	Q6W9F8_p681802b680		Q6W9F8	2	11	Protease 2A	
+Q6W9F8	virus	Q6W9F8_p7aebaeab97		Q6W9F8	1	11	Protein 3A	
+Q6W9F8	virus	Q6W9F8_p9095e775b8		Q6W9F8	2	11	Capsid protein VP1	
+Q6W9F8	virus	Q6W9F8_p9baa88fc5d		Q6W9F8	2	11	Viral protein genome linked	
+Q6W9F8	virus	Q6W9F8_pbf7ec52aea		Q6W9F8	2	11	Protease 3C	
+Q6W9F8	virus	Q6W9F8_pda009e2b88		Q6W9F8	0	11	Capsid protein VP4	
+Q6W9F8	virus	Q6W9F8_pf04a2b5514		Q6W9F8	0	11	Protein 2C	
+Q6W9F8_P29F60106CF	virus	Q6W9F8_p29f60106cf		Q6W9F8	2	11	Capsid protein VP2	
+Q6W9F8_P400D68FCB5	virus	Q6W9F8_p400d68fcb5		Q6W9F8	1	11	Protein 2B	
+Q6W9F8_P5C52100206	virus	Q6W9F8_p5c52100206		Q6W9F8	0	11	RNA directed RNA polymerase	
+Q6W9F8_P674609C945	virus	Q6W9F8_p674609c945		Q6W9F8	3	11	Capsid protein VP3	
+Q6W9F8_P681802B680	virus	Q6W9F8_p681802b680		Q6W9F8	2	11	Protease 2A	
+Q6W9F8_P7AEBAEAB97	virus	Q6W9F8_p7aebaeab97		Q6W9F8	1	11	Protein 3A	
+Q6W9F8_P9095E775B8	virus	Q6W9F8_p9095e775b8		Q6W9F8	2	11	Capsid protein VP1	
+Q6W9F8_P9BAA88FC5D	virus	Q6W9F8_p9baa88fc5d		Q6W9F8	2	11	Viral protein genome linked	
+Q6W9F8_PBF7EC52AEA	virus	Q6W9F8_pbf7ec52aea		Q6W9F8	2	11	Protease 3C	
+Q6W9F8_PDA009E2B88	virus	Q6W9F8_pda009e2b88		Q6W9F8	0	11	Capsid protein VP4	
+Q6W9F8_PF04A2B5514	virus	Q6W9F8_pf04a2b5514		Q6W9F8	0	11	Protein 2C	
+Q6W9F9	virus	Q6W9F9_p18a7dc10ff		Q6W9F9	3	11	Capsid protein VP3	
+Q6W9F9	virus	Q6W9F9_p39da3b9ab0		Q6W9F9	0	11	Capsid protein VP4	
+Q6W9F9	virus	Q6W9F9_p3d49a0fcc9		Q6W9F9	2	11	Capsid protein VP1	
+Q6W9F9	virus	Q6W9F9_p5b20594eaf		Q6W9F9	1	11	Protease 2A	
+Q6W9F9	virus	Q6W9F9_p7aebaeab97		Q6W9F9	1	11	Protein 3A	
+Q6W9F9	virus	Q6W9F9_p9baa88fc5d		Q6W9F9	1	11	Viral protein genome linked	
+Q6W9F9	virus	Q6W9F9_p9c8bf92701		Q6W9F9	0	11	RNA directed RNA polymerase	
+Q6W9F9	virus	Q6W9F9_pbb9f10ad2e		Q6W9F9	0	11	Protein 2C	
+Q6W9F9	virus	Q6W9F9_pc6aa6773bb		Q6W9F9	3	11	Protease 3C	
+Q6W9F9	virus	Q6W9F9_pd3b4d6b5e9		Q6W9F9	1	11	Protein 2B	
+Q6W9F9	virus	Q6W9F9_pe1048c884d		Q6W9F9	2	11	Capsid protein VP2	
+Q6W9F9_P18A7DC10FF	virus	Q6W9F9_p18a7dc10ff		Q6W9F9	3	11	Capsid protein VP3	
+Q6W9F9_P39DA3B9AB0	virus	Q6W9F9_p39da3b9ab0		Q6W9F9	0	11	Capsid protein VP4	
+Q6W9F9_P3D49A0FCC9	virus	Q6W9F9_p3d49a0fcc9		Q6W9F9	2	11	Capsid protein VP1	
+Q6W9F9_P5B20594EAF	virus	Q6W9F9_p5b20594eaf		Q6W9F9	1	11	Protease 2A	
+Q6W9F9_P7AEBAEAB97	virus	Q6W9F9_p7aebaeab97		Q6W9F9	1	11	Protein 3A	
+Q6W9F9_P9BAA88FC5D	virus	Q6W9F9_p9baa88fc5d		Q6W9F9	1	11	Viral protein genome linked	
+Q6W9F9_P9C8BF92701	virus	Q6W9F9_p9c8bf92701		Q6W9F9	0	11	RNA directed RNA polymerase	
+Q6W9F9_PBB9F10AD2E	virus	Q6W9F9_pbb9f10ad2e		Q6W9F9	0	11	Protein 2C	
+Q6W9F9_PC6AA6773BB	virus	Q6W9F9_pc6aa6773bb		Q6W9F9	3	11	Protease 3C	
+Q6W9F9_PD3B4D6B5E9	virus	Q6W9F9_pd3b4d6b5e9		Q6W9F9	1	11	Protein 2B	
+Q6W9F9_PE1048C884D	virus	Q6W9F9_pe1048c884d		Q6W9F9	2	11	Capsid protein VP2	
+Q6W9G0	virus	Q6W9G0_p134728a995		Q6W9G0	0	11	Protein 2C	
+Q6W9G0	virus	Q6W9G0_p2c66086a0d		Q6W9G0	0	11	RNA directed RNA polymerase	
+Q6W9G0	virus	Q6W9G0_p44b82db331		Q6W9G0	2	11	Capsid protein VP1	
+Q6W9G0	virus	Q6W9G0_p51ec5954d6		Q6W9G0	1	11	Protein 3A	
+Q6W9G0	virus	Q6W9G0_p600c8cb831		Q6W9G0	2	11	Capsid protein VP3	
+Q6W9G0	virus	Q6W9G0_p68e3c96e7f		Q6W9G0	4	11	Protease 3C	
+Q6W9G0	virus	Q6W9G0_p6e12acd779		Q6W9G0	2	11	Capsid protein VP4	
+Q6W9G0	virus	Q6W9G0_p9baa88fc5d		Q6W9G0	1	11	Viral protein genome linked	
+Q6W9G0	virus	Q6W9G0_pc2695c0675		Q6W9G0	2	11	Capsid protein VP2	
+Q6W9G0	virus	Q6W9G0_pcabe8d6d1b		Q6W9G0	1	11	Protein 2B	
+Q6W9G0	virus	Q6W9G0_pd22ad15abb		Q6W9G0	2	11	Protease 2A	
+Q6W9G0_P134728A995	virus	Q6W9G0_p134728a995		Q6W9G0	0	11	Protein 2C	
+Q6W9G0_P2C66086A0D	virus	Q6W9G0_p2c66086a0d		Q6W9G0	0	11	RNA directed RNA polymerase	
+Q6W9G0_P44B82DB331	virus	Q6W9G0_p44b82db331		Q6W9G0	2	11	Capsid protein VP1	
+Q6W9G0_P51EC5954D6	virus	Q6W9G0_p51ec5954d6		Q6W9G0	1	11	Protein 3A	
+Q6W9G0_P600C8CB831	virus	Q6W9G0_p600c8cb831		Q6W9G0	2	11	Capsid protein VP3	
+Q6W9G0_P68E3C96E7F	virus	Q6W9G0_p68e3c96e7f		Q6W9G0	4	11	Protease 3C	
+Q6W9G0_P6E12ACD779	virus	Q6W9G0_p6e12acd779		Q6W9G0	2	11	Capsid protein VP4	
+Q6W9G0_P9BAA88FC5D	virus	Q6W9G0_p9baa88fc5d		Q6W9G0	1	11	Viral protein genome linked	
+Q6W9G0_PC2695C0675	virus	Q6W9G0_pc2695c0675		Q6W9G0	2	11	Capsid protein VP2	
+Q6W9G0_PCABE8D6D1B	virus	Q6W9G0_pcabe8d6d1b		Q6W9G0	1	11	Protein 2B	
+Q6W9G0_PD22AD15ABB	virus	Q6W9G0_pd22ad15abb		Q6W9G0	2	11	Protease 2A	
+Q6W9G1	virus	Q6W9G1_p1e28cfb9fc		Q6W9G1	1	11	Protein 2B	
+Q6W9G1	virus	Q6W9G1_p27ed22f257		Q6W9G1	0	11	Capsid protein VP4	
+Q6W9G1	virus	Q6W9G1_p29af62174c		Q6W9G1	0	11	RNA directed RNA polymerase	
+Q6W9G1	virus	Q6W9G1_p3a45bb34c1		Q6W9G1	2	11	Capsid protein VP2	
+Q6W9G1	virus	Q6W9G1_p6797534259		Q6W9G1	0	11	Protein 2C	
+Q6W9G1	virus	Q6W9G1_p9baa88fc5d		Q6W9G1	1	11	Viral protein genome linked	
+Q6W9G1	virus	Q6W9G1_p9f6ecafbc3		Q6W9G1	1	11	Protein 3A	
+Q6W9G1	virus	Q6W9G1_pa271744778		Q6W9G1	2	11	Protease 2A	
+Q6W9G1	virus	Q6W9G1_pc9e83a57f3		Q6W9G1	4	11	Protease 3C	
+Q6W9G1	virus	Q6W9G1_pd6048eb8ba		Q6W9G1	2	11	Capsid protein VP1	
+Q6W9G1	virus	Q6W9G1_pfed6d7146e		Q6W9G1	3	11	Capsid protein VP3	
+Q6W9G1_P1E28CFB9FC	virus	Q6W9G1_p1e28cfb9fc		Q6W9G1	1	11	Protein 2B	
+Q6W9G1_P27ED22F257	virus	Q6W9G1_p27ed22f257		Q6W9G1	0	11	Capsid protein VP4	
+Q6W9G1_P29AF62174C	virus	Q6W9G1_p29af62174c		Q6W9G1	0	11	RNA directed RNA polymerase	
+Q6W9G1_P3A45BB34C1	virus	Q6W9G1_p3a45bb34c1		Q6W9G1	2	11	Capsid protein VP2	
+Q6W9G1_P6797534259	virus	Q6W9G1_p6797534259		Q6W9G1	0	11	Protein 2C	
+Q6W9G1_P9BAA88FC5D	virus	Q6W9G1_p9baa88fc5d		Q6W9G1	1	11	Viral protein genome linked	
+Q6W9G1_P9F6ECAFBC3	virus	Q6W9G1_p9f6ecafbc3		Q6W9G1	1	11	Protein 3A	
+Q6W9G1_PA271744778	virus	Q6W9G1_pa271744778		Q6W9G1	2	11	Protease 2A	
+Q6W9G1_PC9E83A57F3	virus	Q6W9G1_pc9e83a57f3		Q6W9G1	4	11	Protease 3C	
+Q6W9G1_PD6048EB8BA	virus	Q6W9G1_pd6048eb8ba		Q6W9G1	2	11	Capsid protein VP1	
+Q6W9G1_PFED6D7146E	virus	Q6W9G1_pfed6d7146e		Q6W9G1	3	11	Capsid protein VP3	
+Q6W9G2	virus	Q6W9G2_p0a9d4695a7		Q6W9G2	3	11	Protease 2A	
+Q6W9G2	virus	Q6W9G2_p5d108c80cf		Q6W9G2	2	11	Protease 3C	
+Q6W9G2	virus	Q6W9G2_p66d813df94		Q6W9G2	1	11	Protein 2B	
+Q6W9G2	virus	Q6W9G2_p6ad523129d		Q6W9G2	1	11	Protein 3A	
+Q6W9G2	virus	Q6W9G2_p86816f7c82		Q6W9G2	3	11	Capsid protein VP3	
+Q6W9G2	virus	Q6W9G2_p8ffbacbaa2		Q6W9G2	0	11	Capsid protein VP4	
+Q6W9G2	virus	Q6W9G2_p9baa88fc5d		Q6W9G2	2	11	Viral protein genome linked	
+Q6W9G2	virus	Q6W9G2_p9e174cf809		Q6W9G2	0	11	RNA directed RNA polymerase	
+Q6W9G2	virus	Q6W9G2_pb43d959be3		Q6W9G2	0	11	Protein 2C	
+Q6W9G2	virus	Q6W9G2_pb48c99cee4		Q6W9G2	3	11	Capsid protein VP1	
+Q6W9G2	virus	Q6W9G2_pe171b77449		Q6W9G2	2	11	Capsid protein VP2	
+Q6W9G2_P0A9D4695A7	virus	Q6W9G2_p0a9d4695a7		Q6W9G2	3	11	Protease 2A	
+Q6W9G2_P5D108C80CF	virus	Q6W9G2_p5d108c80cf		Q6W9G2	2	11	Protease 3C	
+Q6W9G2_P66D813DF94	virus	Q6W9G2_p66d813df94		Q6W9G2	1	11	Protein 2B	
+Q6W9G2_P6AD523129D	virus	Q6W9G2_p6ad523129d		Q6W9G2	1	11	Protein 3A	
+Q6W9G2_P86816F7C82	virus	Q6W9G2_p86816f7c82		Q6W9G2	3	11	Capsid protein VP3	
+Q6W9G2_P8FFBACBAA2	virus	Q6W9G2_p8ffbacbaa2		Q6W9G2	0	11	Capsid protein VP4	
+Q6W9G2_P9BAA88FC5D	virus	Q6W9G2_p9baa88fc5d		Q6W9G2	2	11	Viral protein genome linked	
+Q6W9G2_P9E174CF809	virus	Q6W9G2_p9e174cf809		Q6W9G2	0	11	RNA directed RNA polymerase	
+Q6W9G2_PB43D959BE3	virus	Q6W9G2_pb43d959be3		Q6W9G2	0	11	Protein 2C	
+Q6W9G2_PB48C99CEE4	virus	Q6W9G2_pb48c99cee4		Q6W9G2	3	11	Capsid protein VP1	
+Q6W9G2_PE171B77449	virus	Q6W9G2_pe171b77449		Q6W9G2	2	11	Capsid protein VP2	
+Q6W9G3	virus	Q6W9G3_p249ed0efbe		Q6W9G3	1	11	Protease 2A	
+Q6W9G3	virus	Q6W9G3_p27d04564a0		Q6W9G3	2	11	Capsid protein VP2	
+Q6W9G3	virus	Q6W9G3_p5d91964cec		Q6W9G3	2	11	Capsid protein VP1	
+Q6W9G3	virus	Q6W9G3_p6ffab2673d		Q6W9G3	0	11	RNA directed RNA polymerase	
+Q6W9G3	virus	Q6W9G3_p8c8bbca3ce		Q6W9G3	0	11	Capsid protein VP4	
+Q6W9G3	virus	Q6W9G3_p9baa88fc5d		Q6W9G3	1	11	Viral protein genome linked	
+Q6W9G3	virus	Q6W9G3_pa3d2991b05		Q6W9G3	0	11	Protein 2C	
+Q6W9G3	virus	Q6W9G3_pa796c02bd8		Q6W9G3	1	11	Protein 2B	
+Q6W9G3	virus	Q6W9G3_pb1e1976c13		Q6W9G3	3	11	Capsid protein VP3	
+Q6W9G3	virus	Q6W9G3_pbb9d9c78a4		Q6W9G3	2	11	Protease 3C	
+Q6W9G3	virus	Q6W9G3_pf471feb801		Q6W9G3	1	11	Protein 3A	
+Q6W9G3_P249ED0EFBE	virus	Q6W9G3_p249ed0efbe		Q6W9G3	1	11	Protease 2A	
+Q6W9G3_P27D04564A0	virus	Q6W9G3_p27d04564a0		Q6W9G3	2	11	Capsid protein VP2	
+Q6W9G3_P5D91964CEC	virus	Q6W9G3_p5d91964cec		Q6W9G3	2	11	Capsid protein VP1	
+Q6W9G3_P6FFAB2673D	virus	Q6W9G3_p6ffab2673d		Q6W9G3	0	11	RNA directed RNA polymerase	
+Q6W9G3_P8C8BBCA3CE	virus	Q6W9G3_p8c8bbca3ce		Q6W9G3	0	11	Capsid protein VP4	
+Q6W9G3_P9BAA88FC5D	virus	Q6W9G3_p9baa88fc5d		Q6W9G3	1	11	Viral protein genome linked	
+Q6W9G3_PA3D2991B05	virus	Q6W9G3_pa3d2991b05		Q6W9G3	0	11	Protein 2C	
+Q6W9G3_PA796C02BD8	virus	Q6W9G3_pa796c02bd8		Q6W9G3	1	11	Protein 2B	
+Q6W9G3_PB1E1976C13	virus	Q6W9G3_pb1e1976c13		Q6W9G3	3	11	Capsid protein VP3	
+Q6W9G3_PBB9D9C78A4	virus	Q6W9G3_pbb9d9c78a4		Q6W9G3	2	11	Protease 3C	
+Q6W9G3_PF471FEB801	virus	Q6W9G3_pf471feb801		Q6W9G3	1	11	Protein 3A	
+Q6W9G4	virus	Q6W9G4_p10296d190f		Q6W9G4	3	11	Protease 3C	
+Q6W9G4	virus	Q6W9G4_p1bbb050e20		Q6W9G4	3	11	Capsid protein VP3	
+Q6W9G4	virus	Q6W9G4_p37334482e2		Q6W9G4	3	11	Capsid protein VP1	
+Q6W9G4	virus	Q6W9G4_p394ac934d1		Q6W9G4	0	11	RNA directed RNA polymerase	
+Q6W9G4	virus	Q6W9G4_p45e42e1ac9		Q6W9G4	2	11	Capsid protein VP2	
+Q6W9G4	virus	Q6W9G4_p6ab381b92a		Q6W9G4	1	11	Capsid protein VP4	
+Q6W9G4	virus	Q6W9G4_p9baa88fc5d		Q6W9G4	2	11	Viral protein genome linked	
+Q6W9G4	virus	Q6W9G4_pa56b2adcae		Q6W9G4	3	11	Protease 2A	
+Q6W9G4	virus	Q6W9G4_pb8d4135d67		Q6W9G4	1	11	Protein 3A	
+Q6W9G4	virus	Q6W9G4_pbe8fbbb9e2		Q6W9G4	0	11	Protein 2C	
+Q6W9G4	virus	Q6W9G4_pf5058a0311		Q6W9G4	1	11	Protein 2B	
+Q6W9G4_P10296D190F	virus	Q6W9G4_p10296d190f		Q6W9G4	3	11	Protease 3C	
+Q6W9G4_P1BBB050E20	virus	Q6W9G4_p1bbb050e20		Q6W9G4	3	11	Capsid protein VP3	
+Q6W9G4_P37334482E2	virus	Q6W9G4_p37334482e2		Q6W9G4	3	11	Capsid protein VP1	
+Q6W9G4_P394AC934D1	virus	Q6W9G4_p394ac934d1		Q6W9G4	0	11	RNA directed RNA polymerase	
+Q6W9G4_P45E42E1AC9	virus	Q6W9G4_p45e42e1ac9		Q6W9G4	2	11	Capsid protein VP2	
+Q6W9G4_P6AB381B92A	virus	Q6W9G4_p6ab381b92a		Q6W9G4	1	11	Capsid protein VP4	
+Q6W9G4_P9BAA88FC5D	virus	Q6W9G4_p9baa88fc5d		Q6W9G4	2	11	Viral protein genome linked	
+Q6W9G4_PA56B2ADCAE	virus	Q6W9G4_pa56b2adcae		Q6W9G4	3	11	Protease 2A	
+Q6W9G4_PB8D4135D67	virus	Q6W9G4_pb8d4135d67		Q6W9G4	1	11	Protein 3A	
+Q6W9G4_PBE8FBBB9E2	virus	Q6W9G4_pbe8fbbb9e2		Q6W9G4	0	11	Protein 2C	
+Q6W9G4_PF5058A0311	virus	Q6W9G4_pf5058a0311		Q6W9G4	1	11	Protein 2B	
+Q6W9G5	virus	Q6W9G5_p0e8129fe55		Q6W9G5	2	11	Protease 2A	
+Q6W9G5	virus	Q6W9G5_p160dc7d6e0		Q6W9G5	2	11	Capsid protein VP2	
+Q6W9G5	virus	Q6W9G5_p3008906080		Q6W9G5	2	11	Capsid protein VP3	
+Q6W9G5	virus	Q6W9G5_p4156e6fc1f		Q6W9G5	3	11	Capsid protein VP1	
+Q6W9G5	virus	Q6W9G5_p438bfc0ea5		Q6W9G5	1	11	Protein 3A	
+Q6W9G5	virus	Q6W9G5_p584f25c33b		Q6W9G5	0	11	Protein 2C	
+Q6W9G5	virus	Q6W9G5_p9baa88fc5d		Q6W9G5	1	11	Viral protein genome linked	
+Q6W9G5	virus	Q6W9G5_p9f000ee2ac		Q6W9G5	2	11	Protease 3C	
+Q6W9G5	virus	Q6W9G5_pa14aeaea6d		Q6W9G5	0	11	RNA directed RNA polymerase	
+Q6W9G5	virus	Q6W9G5_pa7f297c7a6		Q6W9G5	1	11	Protein 2B	
+Q6W9G5	virus	Q6W9G5_pe5d174a562		Q6W9G5	0	11	Capsid protein VP4	
+Q6W9G5_P0E8129FE55	virus	Q6W9G5_p0e8129fe55		Q6W9G5	2	11	Protease 2A	
+Q6W9G5_P160DC7D6E0	virus	Q6W9G5_p160dc7d6e0		Q6W9G5	2	11	Capsid protein VP2	
+Q6W9G5_P3008906080	virus	Q6W9G5_p3008906080		Q6W9G5	2	11	Capsid protein VP3	
+Q6W9G5_P4156E6FC1F	virus	Q6W9G5_p4156e6fc1f		Q6W9G5	3	11	Capsid protein VP1	
+Q6W9G5_P438BFC0EA5	virus	Q6W9G5_p438bfc0ea5		Q6W9G5	1	11	Protein 3A	
+Q6W9G5_P584F25C33B	virus	Q6W9G5_p584f25c33b		Q6W9G5	0	11	Protein 2C	
+Q6W9G5_P9BAA88FC5D	virus	Q6W9G5_p9baa88fc5d		Q6W9G5	1	11	Viral protein genome linked	
+Q6W9G5_P9F000EE2AC	virus	Q6W9G5_p9f000ee2ac		Q6W9G5	2	11	Protease 3C	
+Q6W9G5_PA14AEAEA6D	virus	Q6W9G5_pa14aeaea6d		Q6W9G5	0	11	RNA directed RNA polymerase	
+Q6W9G5_PA7F297C7A6	virus	Q6W9G5_pa7f297c7a6		Q6W9G5	1	11	Protein 2B	
+Q6W9G5_PE5D174A562	virus	Q6W9G5_pe5d174a562		Q6W9G5	0	11	Capsid protein VP4	
+Q6W9J5	rattus-norvegicus	Q6W9J5	RT1-M2	Q6W9J5	3	41	MHC class Ib antigen	
+Q6W9L1	mus-musculus	Q6W9L1	H2-M2	Q6W9L1	6	67	Histocompatibility 2, M region locus 2	
+Q6WAY2	rattus-norvegicus	Q6WAY2	Plppr1	Q6WAY2	2	44	Phospholipid phosphatase-related protein type 1	
+Q6WBX7	mus-musculus	Q6WBX7	Rad9b	Q6WBX7	16	49	Cell cycle checkpoint control protein RAD9B	
+Q6WBX8	human	Q6WBX8	RAD9B	Q6WBX8	10	49	Cell cycle checkpoint control protein RAD9B (DNA repair exon	
+Q6WCQ1	human	Q6WCQ1	MPRIP	Q6WCQ1	117	331	Myosin phosphatase Rho-interacting protein (M-RIP) (Rho-inte	
+Q6WFZ4	zebrafish	Q6WFZ4	mtx2	Q6WFZ4	7	23	Metaxin-2	
+Q6WGL9	virus	Q6WGL9	L	Q6WGL9	0	1	RNA-directed RNA polymerase L	
+Q6WGM0	virus	Q6WGM0	G	Q6WGM0	1	7	Q6WGM0_9PARA	
+Q6WGM1	virus	Q6WGM1	F	Q6WGM1	1	8	Fusion glycoprotein F0	
+Q6WGM2	virus	Q6WGM2	M	Q6WGM2	2	7	Matrix protein	
+Q6WGM3	virus	Q6WGM3	C	Q6WGM3	1	7	Q6WGM3_9PARA	
+Q6WGM4	virus	Q6WGM4	C	Q6WGM4	1	7	Non-structural protein V	
+Q6WGM5	virus	Q6WGM5	C	Q6WGM5	2	7	Phosphoprotein	
+Q6WGM6	virus	Q6WGM6	N	Q6WGM6	3	7	Nucleocapsid	
+Q6WIZ7	mus-musculus	Q6WIZ7	Aoc1l3	Q6WIZ7	2	5	Amine oxidase	
+Q6WKZ4	human	Q6WKZ4	RAB11FIP1	Q6WKZ4	77	262	Rab11 family-interacting protein 1 (Rab11-FIP1) (Rab-couplin	
+Q6WKZ7	mus-musculus	Q6WKZ7	Nostrin	Q6WKZ7	2	40	Nostrin	
+Q6WLH3	zea-mays	Q6WLH3	SMH5	Q6WLH3	30	352	Single myb histone 5	
+Q6WLH4	zea-mays	Q6WLH4	SMH3	Q6WLH4	11	352	Single myb histone 3	
+Q6WN19	rattus-norvegicus	Q6WN19	Rtn2	Q6WN19	1	11	Reticulon-2	
+Q6WN34	human	Q6WN34	CHRDL2	Q6WN34	8	40	Chordin-like protein 2 (Breast tumor novel factor 1) (BNF-1)	
+Q6WNK7	yeast	Q6WNK7	SUS1	Q6WNK7	6	124	SAGA complex subunit SUS1	
+Q6WQ24	zebrafish	Q6WQ24	pth1b	Q6WQ24	1	2	Parathyroid hormone	
+Q6WQI6	human	Q6WQI6	HEPN1	Q6WQI6	4	50	Protein HEPN1 (Cancer susceptibility gene HEPN1 protein)	
+Q6WQJ1	mus-musculus	Q6WQJ1	Dagla	Q6WQJ1	0	4	Diacylglycerol lipase-alpha	
+Q6WRI0	human	Q6WRI0	IGSF10	Q6WRI0	2	46	Immunoglobulin superfamily member 10 (IgSF10) (Calvaria mech	
+Q6WRX3	human	Q6WRX3	ZYG11A	Q6WRX3	8	89	Protein zyg-11 homolog A	
+Q6WS85	zea-mays	Q6WS85	SMH1	Q6WS85	27	352	Single myb histone 1	
+Q6WV16	fly	FBgn0035375	Pgant6	Q6WV16	104	2382	N-acetylgalactosaminyltransferase 6 (EC 2.4.1.41) (Protein-U	
+Q6WV17	fly	FBgn0031681	Pgant5	Q6WV17	199	2392	Polypeptide N-acetylgalactosaminyltransferase 5 (pp-GaNTase 	
+Q6WV19	fly	FBgn0031530	Pgant2	Q6WV19	171	2387	Polypeptide N-acetylgalactosaminyltransferase 2 (pp-GaNTase 	
+Q6WV20	fly	FBgn0034025	Pgant1	Q6WV20	264	2376	Polypeptide N-acetylgalactosaminyltransferase 1 (pp-GaNTase 	
+Q6WVG3	mus-musculus	Q6WVG3	Kctd12	Q6WVG3	0	15	BTB/POZ domain-containing protein KCTD12	
+Q6WVP6	schistosoma-mansoni	Q6WVP6	?	Q6WVP6	0	16	Arginase	
+Q6WZD2	zebrafish	Q6WZD2	rtn4rl1b	Q6WZD2	4	31	Nogo receptor homolog 2a	

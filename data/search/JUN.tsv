@@ -1,6 +1,154 @@
-JUN	mus-musculus	P05627	Jun	P05627	62	291	Transcription factor Jun
-JUN	rattus-norvegicus	P17325	Jun	P17325	62	357	Transcription factor Jun
-JUNB	mus-musculus	P09450	Junb	P09450	23	44	Transcription factor JunB
-JUNB	rattus-norvegicus	P24898	Junb	P24898	24	66	Transcription factor JunB
-JUND	mus-musculus	P15066	Jund	P15066	25	65	Transcription factor JunD
-JUND	rattus-norvegicus	P52909	Jund	P52909	28	82	Transcription factor JunD
+JUN	human	P05412	JUN	P05412	253	1096	Transcription factor Jun (Activator protein 1) (AP1) (Proto-	
+JUN	mus-musculus	P05627	Jun	P05627	62	291	Transcription factor Jun	
+JUN	rattus-norvegicus	P17325	Jun	P17325	62	357	Transcription factor Jun	
+JUN	zebrafish	Q6NZT5	jun	Q6NZT5	60	270	Transcription factor Jun	
+JUN-1	worm	G5ECU7	jun-1	G5ECU7	14	108	Transcription factor jun-1	w
+JUN-1	worm	G5ECU7	jun-1	G5ECU7	14	108	Transcription factor jun-1	w
+JUN-RELATED	fly	FBgn0001291	Jra	A0A0B4KEI6	118	616	Jun-related antigen, isoform C	w
+JUNB	human	P17275	JUNB	P17275	133	506	Transcription factor JunB (Transcription factor AP-1 subunit	
+JUNB	mus-musculus	P09450	Junb	P09450	23	44	Transcription factor JunB	
+JUNB	rattus-norvegicus	P24898	Junb	P24898	24	66	Transcription factor JunB	
+JUNB_HUMAN	human	P17275	JUNB	P17275	133	506		
+JUNCTION	fly	FBgn0027106	Inx7	Q9V3W6	0	17	Innexin inx7 (Innexin-7) (Gap junction protein prp7) (Pas-re	w
+JUNCTION	fly	FBgn0027107	Inx6	Q9VR82	0	6	Innexin inx6 (Innexin-6) (Gap junction protein prp6) (Pas-re	w
+JUNCTION	fly	FBgn0027108	Inx2	Q9V427	0	19	Innexin inx2 (Innexin-2) (Gap junction protein prp33) (Pas-r	w
+JUNCTION	fly	FBgn0033309	Lnpk	Q7K2N0	0	3	Endoplasmic reticulum junction formation protein lunapark	w
+JUNCTION	fly	FBgn0040347	mus81	Q9V3T1	6	54	Crossover junction endonuclease MUS81 (EC 3.1.22.-)	w
+JUNCTION	fly	FBgn0260799	p120ctn	Q7PLI0	41	129	Adherens junction protein p120	w
+JUNCTION	human	A0A2R8YDH4	?	A0A2R8YDH4	0	7	Tight junction protein 2	w
+JUNCTION	human	A6NN92	GJE1	A6NN92	9	34	Gap junction epsilon-1 protein (Connexin-23) (Cx23)	w
+JUNCTION	human	C9J069	AJM1	C9J069	4	25	Apical junction component 1 homolog	w
+JUNCTION	human	O75712	GJB3	O75712	5	139	Gap junction beta-3 protein (Connexin-31) (Cx31)	w
+JUNCTION	human	O95049	TJP3	O95049	27	138	Tight junction protein ZO-3 (Tight junction protein 3) (Zona	w
+JUNCTION	human	O95377	GJB5	O95377	4	149	Gap junction beta-5 protein (Connexin-31.1) (Cx31.1)	w
+JUNCTION	human	O95452	GJB6	O95452	10	315	Gap junction beta-6 protein (Connexin-30) (Cx30)	w
+JUNCTION	human	P08034	GJB1	P08034	15	418	Gap junction beta-1 protein (Connexin-32) (Cx32) (GAP juncti	w
+JUNCTION	human	P14923	JUP	P14923	104	963	Junction plakoglobin (Catenin gamma) (Desmoplakin III) (Desm	w
+JUNCTION	human	P17302	GJA1	P17302	90	954	Gap junction alpha-1 protein (Connexin-43) (Cx43) (Gap junct	w
+JUNCTION	human	P29033	GJB2	P29033	13	204	Gap junction beta-2 protein (Connexin-26) (Cx26)	w
+JUNCTION	human	P35212	GJA4	P35212	15	163	Gap junction alpha-4 protein (Connexin-37) (Cx37)	w
+JUNCTION	human	P36382	GJA5	P36382	8	148	Gap junction alpha-5 protein (Connexin-40) (Cx40)	w
+JUNCTION	human	P36383	GJC1	P36383	8	139	Gap junction gamma-1 protein (Connexin-45) (Cx45) (Gap junct	w
+JUNCTION	human	P48165	GJA8	P48165	10	190	Gap junction alpha-8 protein (Connexin-50) (Cx50) (Lens fibe	w
+JUNCTION	human	P55196	AFDN	P55196	84	452	Afadin (ALL1-fused gene from chromosome 6 protein) (Protein 	w
+JUNCTION	human	P57773	GJA9	P57773	1	27	Gap junction alpha-9 protein (Connexin-58) (Cx58) (Connexin-	w
+JUNCTION	human	Q07157	TJP1	Q07157	101	668	Tight junction protein 1 (Tight junction protein ZO-1) (Zona	w
+JUNCTION	human	Q3KP22	MAJIN	Q3KP22	1	25	Membrane-anchored junction protein	w
+JUNCTION	human	Q5JTD0	TJAP1	Q5JTD0	46	123	Tight junction-associated protein 1 (Protein incorporated la	w
+JUNCTION	human	Q5T442	GJC2	Q5T442	5	53	Gap junction gamma-2 protein (Connexin-46.6) (Cx46.6) (Conne	w
+JUNCTION	human	Q6PEY0	GJB7	Q6PEY0	7	95	Gap junction beta-7 protein (Connexin-25) (Cx25)	w
+JUNCTION	human	Q8N144	GJD3	Q8N144	20	488	Gap junction delta-3 protein (Connexin-31.9) (Cx31.9) (Gap j	w
+JUNCTION	human	Q8NCD3	HJURP	Q8NCD3	77	604	Holliday junction recognition protein (14-3-3-associated AKT	w
+JUNCTION	human	Q8NFK1	GJC3	Q8NFK1	4	53	Gap junction gamma-3 protein (Connexin-30.2) (Cx30.2) (Conne	w
+JUNCTION	human	Q8NI35	PATJ	Q8NI35	22	110	InaD-like protein (Inadl protein) (hINADL) (Channel-interact	w
+JUNCTION	human	Q969M2	GJA10	Q969M2	1	34	Gap junction alpha-10 protein (Connexin-62) (Cx62)	w
+JUNCTION	human	Q96AY2	EME1	Q96AY2	24	158	Structure-specific endonuclease subunit EME1 (Crossover junc	w
+JUNCTION	human	Q96KN9	GJD4	Q96KN9	5	38	Gap junction delta-4 protein (Connexin-40.1) (Cx40.1)	w
+JUNCTION	human	Q96NY9	MUS81	Q96NY9	25	222	Structure-specific endonuclease subunit MUS81 (EC 3.1.22.-) 	w
+JUNCTION	human	Q9BRP8	PYM1	Q9BRP8	17	218	Partner of Y14 and mago (PYM homolog 1 exon junction complex	w
+JUNCTION	human	Q9C0E8	LNPK	Q9C0E8	38	297	Endoplasmic reticulum junction formation protein lunapark (E	w
+JUNCTION	human	Q9NTQ9	GJB4	Q9NTQ9	4	133	Gap junction beta-4 protein (Connexin-30.3) (Cx30.3)	w
+JUNCTION	human	Q9UDY2	TJP2	Q9UDY2	115	462	Tight junction protein 2 (Tight junction protein ZO-2) (Zona	w
+JUNCTION	human	Q9UKL4	GJD2	Q9UKL4	6	113	Gap junction delta-2 protein (Connexin-36) (Cx36) (Gap junct	w
+JUNCTION	human	Q9Y6H8	GJA3	Q9Y6H8	5	57	Gap junction alpha-3 protein (Connexin-46) (Cx46)	w
+JUNCTION	virus	A0A068EEG4	fep_192	A0A068EEG4	5	221	Holliday junction resolvase	w
+JUNCTION	virus	A0A068EFI2	pepv_200	A0A068EFI2	5	240	Holliday junction resolvase	w
+JUNCTION	virus	A0A0M3ZHM7		A0A0M3ZHM7	6	170	Holliday junction resolvase	w
+JUNCTION	virus	Q91MP9	LSDV114	Q91MP9	9	153	Holliday junction endonuclease	w
+JUNCTION	virus	Q9J546	FPV187	Q9J546	4	250	Holliday junction resolvase	w
+JUNCTION	worm	G5ED30	vab-9	G5ED30	0	1	Cell junction protein VAB-9	w
+JUNCTION	worm	P91153	mus-81	P91153	5	86	Crossover junction endonuclease MUS81	w
+JUNCTION	worm	Q22418	gen-1	Q22418	2	32	GEN1 Holliday junction resolvase homolog	w
+JUNCTION	worm	Q8I103	zoo-1	Q8I103	2	69	Tight junction protein ZO-1	w
+JUNCTION	yeast	P38257	MMS4	P38257	2	31	Crossover junction endonuclease MMS4	w
+JUNCTION	yeast	P38878	LNP1	P38878	0	22	Endoplasmic reticulum junction formation protein lunapark	w
+JUNCTION	yeast	P38881	NVJ1	P38881	2	9	Nucleus-vacuole junction protein 1	w
+JUNCTION	yeast	P40028	YEN1	P40028	2	30	Holliday junction resolvase YEN1	w
+JUNCTION	yeast	Q04149	MUS81	Q04149	3	79	Crossover junction endonuclease MUS81	w
+JUNCTION	yeast	Q06833	NVJ2	Q06833	0	16	Nucleus-vacuole junction protein 2	w
+JUNCTION	zebrafish	A0A8M2B7L5	gja10b	A0A8M2B7L5	0	31	Gap junction protein	w
+JUNCTION	zebrafish	A0A8M2BHQ8	tjp3	A0A8M2BHQ8	7	66	Tight junction protein 3	w
+JUNCTION	zebrafish	A0A8M6Z9E1	gjz1	A0A8M6Z9E1	1	41	Gap junction beta-5 protein	w
+JUNCTION	zebrafish	A0A8M9P085	gja10a	A0A8M9P085	0	31	Gap junction protein	w
+JUNCTION	zebrafish	A0A8M9P9X4	unm_hu7912	A0A8M9P9X4	1	6	Apical junction component 1 homolog isoform X2	w
+JUNCTION	zebrafish	A0A8M9PXR7	gjd4	A0A8M9PXR7	1	41	Gap junction protein	w
+JUNCTION	zebrafish	A0A8N1Z0D3	gja8a	A0A8N1Z0D3	0	32	Gap junction protein	w
+JUNCTION	zebrafish	A0AB32TWN5	tjp2b	A0AB32TWN5	10	54	Tight junction protein ZO-2b isoform X6	w
+JUNCTION	zebrafish	B0R0X0	gja2	B0R0X0	1	32	Gap junction protein	w
+JUNCTION	zebrafish	B3DHR0	gjd1a	B3DHR0	0	31	Gap junction protein	w
+JUNCTION	zebrafish	B3DIR8	gjb10	B3DIR8	0	31	Gap junction protein	w
+JUNCTION	zebrafish	E7F6N8	eme1	E7F6N8	7	53	Crossover junction endonuclease EME1	w
+JUNCTION	zebrafish	E7FBB9	tjp2a	E7FBB9	6	57	Tight junction protein 2a (zona occludens 2)	w
+JUNCTION	zebrafish	E7FBZ4	gja1a	E7FBZ4	0	45	Gap junction protein	w
+JUNCTION	zebrafish	E7FF16	gjb1b	E7FF16	0	40	Gap junction protein	w
+JUNCTION	zebrafish	F1QL21	gja5a	F1QL21	0	36	Gap junction protein	w
+JUNCTION	zebrafish	F1QZN0	gjb9a	F1QZN0	0	31	Gap junction protein	w
+JUNCTION	zebrafish	F6P2X6	gjd6	F6P2X6	0	31	Gap junction protein	w
+JUNCTION	zebrafish	I3ITL1	gjc4a.2	I3ITL1	0	31	Gap junction protein	w
+JUNCTION	zebrafish	O57474	gja1	O57474	2	94	Gap junction alpha-1 protein	w
+JUNCTION	zebrafish	Q1LWG0	gja4	Q1LWG0	0	31	Gap junction protein	w
+JUNCTION	zebrafish	Q2VJ87	gjb1a	Q2VJ87	0	40	Gap junction protein	w
+JUNCTION	zebrafish	Q503F4	gjb8	Q503F4	0	36	Gap junction protein	w
+JUNCTION	zebrafish	Q503J6	gja8b	Q503J6	0	32	Gap junction protein	w
+JUNCTION	zebrafish	Q5TYN9	gja12.1	Q5TYN9	0	31	Gap junction protein	w
+JUNCTION	zebrafish	Q5TYP1	gja11	Q5TYP1	0	31	Gap junction protein	w
+JUNCTION	zebrafish	Q66HV7	gjc2	Q66HV7	0	35	Gap junction protein	w
+JUNCTION	zebrafish	Q6DEG1	gjb9b	Q6DEG1	0	31	Gap junction protein	w
+JUNCTION	zebrafish	Q6NYU5	gja9b	Q6NYU5	0	38	Gap junction protein	w
+JUNCTION	zebrafish	Q7T047	cx32.2	Q7T047	1	31	Gap junction Cx32.2 protein	w
+JUNCTION	zebrafish	Q7T2D7	gja13.1	Q7T2D7	0	31	Gap junction protein	w
+JUNCTION	zebrafish	Q8JFD2	gja3	Q8JFD2	1	32	Gap junction protein	w
+JUNCTION	zebrafish	Q8JFD6	gjd2b	Q8JFD6	0	33	Gap junction protein	w
+JUNCTION	zebrafish	Q92052	gjc1	Q92052	0	31	Gap junction gamma-1 protein	w
+JUNCTION	zebrafish	U3JA75	cx23	U3JA75	0	33	Gap junction epsilon-1 protein	w
+JUNCTION-ASSOCIATED	human	P57087	JAM2	P57087	44	196	Junctional adhesion molecule B (JAM-B) (Junctional adhesion 	w
+JUNCTION-ASSOCIATED	human	Q0VF96	CGNL1	Q0VF96	33	160	Cingulin-like protein 1 (Junction-associated coiled-coil pro	w
+JUNCTION-ASSOCIATED	human	Q5JTD0	TJAP1	Q5JTD0	46	123	Tight junction-associated protein 1 (Protein incorporated la	w
+JUNCTION-ASSOCIATED	human	Q9UKB5	AJAP1	Q9UKB5	15	48	Adherens junction-associated protein 1 (Membrane protein shr	w
+JUNCTION-ASSOCIATED	zebrafish	A0A8M2BEF5	ajap1	A0A8M2BEF5	0	3	Adherens junction-associated protein 1	w
+JUNCTION-ASSOCIATED	zebrafish	A0AB13A9T8	tjap1	A0AB13A9T8	0	4	Tight junction-associated protein 1	w
+JUNCTION-MEDIATING	human	Q8N9B5	JMY	Q8N9B5	27	141	Junction-mediating and -regulatory protein	w
+JUNCTIONAL	human	P57087	JAM2	P57087	44	196	Junctional adhesion molecule B (JAM-B) (Junctional adhesion 	w
+JUNCTIONAL	human	Q86YT9	JAML	Q86YT9	50	185	Junctional adhesion molecule-like (Adhesion molecule interac	w
+JUNCTIONAL	human	Q8IY33	MICALL2	Q8IY33	37	168	MICAL-like protein 2 (Junctional Rab13-binding protein) (Mol	w
+JUNCTIONAL	human	Q96MG2	JSRP1	Q96MG2	6	40	Junctional sarcoplasmic reticulum protein 1 (Junctional-face	w
+JUNCTIONAL	human	Q9BX67	JAM3	Q9BX67	48	280	Junctional adhesion molecule C (JAM-C) (JAM-2) (Junctional a	w
+JUNCTIONAL	human	Q9NSI5	IGSF5	Q9NSI5	3	42	Immunoglobulin superfamily member 5 (IgSF5) (Junctional adhe	w
+JUNCTIONAL	human	Q9P266	JCAD	Q9P266	23	68	Junctional cadherin 5-associated protein (Junctional protein	w
+JUNCTIONAL	human	Q9Y624	F11R	Q9Y624	66	442	Junctional adhesion molecule A (JAM-A) (Junctional adhesion 	w
+JUNCTIONAL	zebrafish	A0A0R4IGV4	jam2a	A0A0R4IGV4	9	20	Junctional adhesion molecule 2A	w
+JUNCTIONAL	zebrafish	A3KNL2	f11r.2	A3KNL2	6	50	Junctional adhesion molecule A	w
+JUNCTIONAL	zebrafish	A3KPA0	jam3b	A3KPA0	7	15	Junctional adhesion molecule 3B	w
+JUNCTIONAL	zebrafish	B0V233	jam2b	B0V233	5	15	Junctional adhesion molecule 2b	w
+JUNCTIONAL	zebrafish	E7FAR1	jcada	E7FAR1	0	2	Junctional cadherin 5-associated a	w
+JUNCTIONAL	zebrafish	F1QYW3	jam3a	F1QYW3	5	14	Junctional adhesion molecule 3a	w
+JUNCTIONAL	zebrafish	Q66I72	f11r.1	Q66I72	7	37	Junctional adhesion molecule A	w
+JUNCTIONAL-FACE	human	Q96MG2	JSRP1	Q96MG2	6	40	Junctional sarcoplasmic reticulum protein 1 (Junctional-face	w
+JUNCTIONS	human	Q5JTD0	TJAP1	Q5JTD0	46	123	Tight junction-associated protein 1 (Protein incorporated la	w
+JUNCTOPHILIN	fly	FBgn0032129	jp	Q7JV09	3	27	GH28348p (Junctophilin, isoform A) (Junctophilin, isoform B)	w
+JUNCTOPHILIN	human	Q8WXH2	JPH3	Q8WXH2	12	95	Junctophilin-3 (JP-3) (Junctophilin type 3) (Trinucleotide r	w
+JUNCTOPHILIN	human	Q9BR39	JPH2	Q9BR39	4	49	Junctophilin-2 (JP-2) (Junctophilin type 2) [Cleaved into: J	w
+JUNCTOPHILIN	human	Q9HDC5	JPH1	Q9HDC5	49	257	Junctophilin-1 (JP-1) (Junctophilin type 1)	w
+JUNCTOPHILIN	zebrafish	A0A0R4IT36	jph3b	A0A0R4IT36	0	16	Junctophilin	w
+JUNCTOPHILIN	zebrafish	A4QNV2	jph2	A4QNV2	0	17	Junctophilin	w
+JUNCTOPHILIN	zebrafish	F1R2C3	jph1a	F1R2C3	2	16	Junctophilin	w
+JUNCTOPHILIN	zebrafish	Q1ECU7	jph1b	Q1ECU7	2	16	Junctophilin	w
+JUNCTOPHILIN-1	human	Q9HDC5	JPH1	Q9HDC5	49	257	Junctophilin-1 (JP-1) (Junctophilin type 1)	w
+JUNCTOPHILIN-1	worm	Q22667	jph-1	Q22667	0	13	Junctophilin-1	w
+JUNCTOPHILIN-2	human	Q9BR39	JPH2	Q9BR39	4	49	Junctophilin-2 (JP-2) (Junctophilin type 2) [Cleaved into: J	w
+JUNCTOPHILIN-3	human	Q8WXH2	JPH3	Q8WXH2	12	95	Junctophilin-3 (JP-3) (Junctophilin type 3) (Trinucleotide r	w
+JUNCTOPHILIN-3	zebrafish	E7F2R3	jph3a	E7F2R3	0	16	Junctophilin-3	w
+JUNCTOPHILIN-4	human	Q96JJ6	JPH4	Q96JJ6	18	94	Junctophilin-4 (JP-4) (Junctophilin-like 1 protein)	w
+JUNCTOPHILIN-LIKE	human	Q96JJ6	JPH4	Q96JJ6	18	94	Junctophilin-4 (JP-4) (Junctophilin-like 1 protein)	w
+JUND	human	P17535	JUND	P17535	128	487	Transcription factor JunD (Transcription factor AP-1 subunit	
+JUND	mus-musculus	P15066	Jund	P15066	25	65	Transcription factor JunD	
+JUND	rattus-norvegicus	P52909	Jund	P52909	28	82	Transcription factor JunD	
+JUND	zebrafish	B0V1Q6	jund	B0V1Q6	36	102	Transcription factor JunD	w
+JUND	zebrafish	B0V1Q6	jund	B0V1Q6	36	102	Transcription factor JunD	w
+JUND_HUMAN	human	P17535	JUND	P17535	128	487		
+JUNE	zebrafish	A0AB13ABU6	june	A0AB13ABU6	46	238	JunE proto-oncogene, AP-1 transcription factor subunit isofo	w
+JUNE	zebrafish	A0AB13ABU6	june	A0AB13ABU6	46	238	JunE proto-oncogene, AP-1 transcription factor subunit isofo	w
+JUNE-1	human	Q9BUL5	PHF23	Q9BUL5	40	168	PHD finger protein 23 (PDH-containing protein JUNE-1)	w
+JUNO	human	A6ND01	IZUMO1R	A6ND01	10	64		
+JUNO_HUMAN	human	A6ND01	IZUMO1R	A6ND01	10	64		
+JUN_HUMAN	human	P05412	JUN	P05412	253	1096		

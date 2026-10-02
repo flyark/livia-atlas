@@ -1,32 +1,141 @@
-IGF1	mus-musculus	P05017	Igf1	P05017	9	124	Insulin-like growth factor 1
-IGF1	rattus-norvegicus	P08025	Igf1	P08025	12	121	Insulin-like growth factor 1
-IGF1R	mus-musculus	Q60751	Igf1r	Q60751	8	131	Insulin-like growth factor 1 receptor
-IGF1R	rattus-norvegicus	P24062	Igf1r	P24062	10	131	Insulin-like growth factor 1 receptor
-IGF2	mus-musculus	P09535	Igf2	P09535	12	62	Insulin-like growth factor 2
-IGF2	rattus-norvegicus	P01346	Igf2	P01346	13	73	Insulin-like growth factor 2
-IGF2BP1	mus-musculus	O88477	Igf2bp1	O88477	1	43	Insulin-like growth factor 2 mRNA-binding protein 1
-IGF2BP1	rattus-norvegicus	Q8CGX0	Igf2bp1	Q8CGX0	2	41	Insulin-like growth factor 2 mRNA-binding protein 1
-IGF2BP2	mus-musculus	Q5SF07	Igf2bp2	Q5SF07	3	30	Insulin-like growth factor 2 mRNA-binding protein 2
-IGF2BP2	rattus-norvegicus	D3ZWZ6	Igf2bp2	D3ZWZ6	0	34	Insulin-like growth factor 2 mRNA-binding protein 2
-IGF2BP3	mus-musculus	Q9CPN8	Igf2bp3	Q9CPN8	1	29	Insulin-like growth factor 2 mRNA-binding protein 3
-IGF2BP3	rattus-norvegicus	A0A0G2K0Y2	Igf2bp3	A0A0G2K0Y2	0	34	Insulin-like growth factor 2 mRNA binding protein 3
-IGFALS	mus-musculus	P70389	Igfals	P70389	0	14	Insulin-like growth factor-binding protein complex acid labile subunit
-IGFALS	rattus-norvegicus	P35859	Igfals	P35859	0	12	Insulin-like growth factor-binding protein complex acid labile subunit
-IGFBP1	mus-musculus	P47876	Igfbp1	P47876	3	19	Insulin-like growth factor-binding protein 1
-IGFBP1	rattus-norvegicus	P21743	Igfbp1	P21743	3	16	Insulin-like growth factor-binding protein 1
-IGFBP2	mus-musculus	P47877	Igfbp2	P47877	5	25	Insulin-like growth factor-binding protein 2
-IGFBP2	rattus-norvegicus	P12843	Igfbp2	P12843	6	23	Insulin-like growth factor-binding protein 2
-IGFBP3	mus-musculus	P47878	Igfbp3	P47878	9	51	Insulin-like growth factor-binding protein 3
-IGFBP3	rattus-norvegicus	P15473	Igfbp3	P15473	6	50	Insulin-like growth factor-binding protein 3
-IGFBP4	mus-musculus	P47879	Igfbp4	P47879	3	10	Insulin-like growth factor-binding protein 4
-IGFBP4	rattus-norvegicus	P21744	Igfbp4	P21744	2	18	Insulin-like growth factor-binding protein 4
-IGFBP5	mus-musculus	Q07079	Igfbp5	Q07079	5	30	Insulin-like growth factor-binding protein 5
-IGFBP5	rattus-norvegicus	P24594	Igfbp5	P24594	5	25	Insulin-like growth factor-binding protein 5
-IGFBP6	mus-musculus	P47880	Igfbp6	P47880	3	14	Insulin-like growth factor-binding protein 6
-IGFBP6	rattus-norvegicus	P35572	Igfbp6	P35572	2	13	Insulin-like growth factor-binding protein 6
-IGFBP7	mus-musculus	Q61581	Igfbp7	Q61581	0	15	Insulin-like growth factor-binding protein 7
-IGFBP7	rattus-norvegicus	F1M9B2	Igfbp7	F1M9B2	1	19	Insulin-like growth factor-binding protein 7
-IGFBPL1	mus-musculus	Q80W15	Igfbpl1	Q80W15	0	7	Insulin-like growth factor-binding protein-like 1
-IGFL	mus-musculus	Q6B9Z0	Igfl	Q6B9Z0	0	2	Insulin growth factor-like family member
-IGFLR1	mus-musculus	Q3U4N7	Igflr1	Q3U4N7	2	16	IGF-like family receptor 1
-IGFLR1	rattus-norvegicus	D4A4X3	Igflr1	D4A4X3	2	27	IGF-like family receptor 1
+IGF-1	human	P05019	IGF1	P05019	20	178		
+IGF-2	human	P01344	IGF2	P01344	14	62		
+IGF-BINDING	human	P08833	IGFBP1	P08833	14	198	Insulin-like growth factor-binding protein 1 (IBP-1) (IGF-bi	w
+IGF-BINDING	human	P17936	IGFBP3	P17936	65	331	Insulin-like growth factor-binding protein 3 (IBP-3) (IGF-bi	w
+IGF-BINDING	human	P18065	IGFBP2	P18065	37	211	Insulin-like growth factor-binding protein 2 (IBP-2) (IGF-bi	w
+IGF-BINDING	human	P22692	IGFBP4	P22692	34	231	Insulin-like growth factor-binding protein 4 (IBP-4) (IGF-bi	w
+IGF-BINDING	human	P24592	IGFBP6	P24592	22	191	Insulin-like growth factor-binding protein 6 (IBP-6) (IGF-bi	w
+IGF-BINDING	human	P24593	IGFBP5	P24593	57	397	Insulin-like growth factor-binding protein 5 (IBP-5) (IGF-bi	w
+IGF-BINDING	human	P48745	CCN3	P48745	11	137	CCN family member 3 (Cellular communication network factor 3	w
+IGF-BINDING	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	w
+IGF-BINDING	human	Q16270	IGFBP7	Q16270	21	275	Insulin-like growth factor-binding protein 7 (IBP-7) (IGF-bi	w
+IGF-DEPENDENT	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	w
+IGF-I	human	P05019	IGF1	P05019	20	178	Insulin-like growth factor 1 (Insulin-like growth factor I) 	w
+IGF-I	human	P08069	IGF1R	P08069	91	1895	Insulin-like growth factor 1 receptor (EC 2.7.10.1) (Insulin	w
+IGF-II	fly	FBgn0285926	Imp	M9NF14	4	139	IGF-II mRNA-binding protein, isoform L (IGF-II mRNA-binding 	w
+IGF-II	human	O00425	IGF2BP3	O00425	29	509	Insulin-like growth factor 2 mRNA-binding protein 3 (IGF2 mR	w
+IGF-II	human	P01344	IGF2	P01344	14	62	Insulin-like growth factor 2 (Insulin-like growth factor II)	w
+IGF-II	human	Q9NZI8	IGF2BP1	Q9NZI8	25	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	w
+IGF-II	human	Q9Y6M1	IGF2BP2	Q9Y6M1	30	370	Insulin-like growth factor 2 mRNA-binding protein 2 (IGF2 mR	w
+IGF-IR	zebrafish	A0A8M1PBN6	igf1rb	A0A8M1PBN6	2	10		
+IGF-IRB	zebrafish	A0A8M1PBN6	igf1rb	A0A8M1PBN6	2	10		
+IGF-LIKE	human	Q9H665	IGFLR1	Q9H665	11	130	IGF-like family receptor 1 (Transmembrane protein 149) (U2 s	w
+IGF-LIKE	zebrafish	E7EXT5	igflr1	E7EXT5	0	65	IGF-like family receptor 1	w
+IGF1	human	P05019	IGF1	P05019	20	178	Insulin-like growth factor 1 (Insulin-like growth factor I) 	
+IGF1	mus-musculus	P05017	Igf1	P05017	9	124	Insulin-like growth factor 1	
+IGF1	rattus-norvegicus	P08025	Igf1	P08025	12	121	Insulin-like growth factor 1	
+IGF1	zebrafish	Q90VV9	igf1	Q90VV9	7	13	Insulin-like growth factor 1	
+IGF1R	human	P08069	IGF1R	P08069	91	1895	Insulin-like growth factor 1 receptor (EC 2.7.10.1) (Insulin	
+IGF1R	mus-musculus	Q60751	Igf1r	Q60751	8	131	Insulin-like growth factor 1 receptor	
+IGF1R	rattus-norvegicus	P24062	Igf1r	P24062	10	131	Insulin-like growth factor 1 receptor	
+IGF1RB	zebrafish	A0A8M1PBN6	igf1rb	A0A8M1PBN6	2	10	Tyrosine-protein kinase receptor (EC 2.7.10.1)	
+IGF1R_HUMAN	human	P08069	IGF1R	P08069	91	1895		
+IGF1_HUMAN	human	P05019	IGF1	P05019	20	178		
+IGF2	human	O00425	IGF2BP3	O00425	29	509	Insulin-like growth factor 2 mRNA-binding protein 3 (IGF2 mR	w
+IGF2	human	P01344	IGF2	P01344	14	62	Insulin-like growth factor 2 (Insulin-like growth factor II)	
+IGF2	human	Q6U949	IGF2-AS	Q6U949	0	14	Putative insulin-like growth factor 2 antisense gene protein	w
+IGF2	human	Q9NZI8	IGF2BP1	Q9NZI8	25	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	w
+IGF2	human	Q9Y6M1	IGF2BP2	Q9Y6M1	30	370	Insulin-like growth factor 2 mRNA-binding protein 2 (IGF2 mR	w
+IGF2	mus-musculus	P09535	Igf2	P09535	12	62	Insulin-like growth factor 2	
+IGF2	rattus-norvegicus	P01346	Igf2	P01346	13	73	Insulin-like growth factor 2	
+IGF2-AS	human	Q6U949	IGF2-AS	Q6U949	0	14	Putative insulin-like growth factor 2 antisense gene protein	
+IGF2-AS1	human	Q6U949	IGF2-AS	Q6U949	0	14		
+IGF2AS	human	Q6U949	IGF2-AS	Q6U949	0	14		
+IGF2B	zebrafish	Q8JIE4	igf2b	Q8JIE4	20	72	Insulin-like growth factor 2	
+IGF2BP1	human	Q9NZI8	IGF2BP1	Q9NZI8	25	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	
+IGF2BP1	mus-musculus	O88477	Igf2bp1	O88477	1	43	Insulin-like growth factor 2 mRNA-binding protein 1	
+IGF2BP1	rattus-norvegicus	Q8CGX0	Igf2bp1	Q8CGX0	2	41	Insulin-like growth factor 2 mRNA-binding protein 1	
+IGF2BP1	zebrafish	Q08CK7	igf2bp1	Q08CK7	0	16	Insulin-like growth factor 2 mRNA-binding protein 1	
+IGF2BP2	human	Q96M15	IGF2BP2-AS1	Q96M15	0	1	Putative uncharacterized protein IGF2BP2-AS1 (IGF2BP2 antise	w
+IGF2BP2	human	Q9Y6M1	IGF2BP2	Q9Y6M1	30	370	Insulin-like growth factor 2 mRNA-binding protein 2 (IGF2 mR	
+IGF2BP2	mus-musculus	Q5SF07	Igf2bp2	Q5SF07	3	30	Insulin-like growth factor 2 mRNA-binding protein 2	
+IGF2BP2	rattus-norvegicus	D3ZWZ6	Igf2bp2	D3ZWZ6	0	34	Insulin-like growth factor 2 mRNA-binding protein 2	
+IGF2BP2-AS1	human	Q96M15	IGF2BP2-AS1	Q96M15	0	1	Putative uncharacterized protein IGF2BP2-AS1 (IGF2BP2 antise	
+IGF2BP2A	zebrafish	A0A0B4J1B0	igf2bp2a	A0A0B4J1B0	0	12	Insulin-like growth factor 2 mRNA-binding protein 2a	
+IGF2BP2B	zebrafish	A0A0R4IVY2	igf2bp2b	A0A0R4IVY2	0	11	Insulin-like growth factor 2 mRNA-binding protein 2b	
+IGF2BP3	human	O00425	IGF2BP3	O00425	29	509	Insulin-like growth factor 2 mRNA-binding protein 3 (IGF2 mR	
+IGF2BP3	mus-musculus	Q9CPN8	Igf2bp3	Q9CPN8	1	29	Insulin-like growth factor 2 mRNA-binding protein 3	
+IGF2BP3	rattus-norvegicus	A0A0G2K0Y2	Igf2bp3	A0A0G2K0Y2	0	34	Insulin-like growth factor 2 mRNA binding protein 3	
+IGF2BP3	zebrafish	Q9PW80	igf2bp3	Q9PW80	0	12	Insulin-like growth factor 2 mRNA-binding protein 3	
+IGF2R	human	P11717	IGF2R	P11717	16	264	Cation-independent mannose-6-phosphate receptor (CI Man-6-P 	
+IGF2_HUMAN	human	P01344	IGF2	P01344	14	62		
+IGF3	zebrafish	A0A8M1NGE8	igf3	A0A8M1NGE8	0	3	Insulin-like growth factor 3	
+IGFALS	human	P35858	IGFALS	P35858	17	252	Insulin-like growth factor-binding protein complex acid labi	
+IGFALS	mus-musculus	P70389	Igfals	P70389	0	14	Insulin-like growth factor-binding protein complex acid labi	
+IGFALS	rattus-norvegicus	P35859	Igfals	P35859	0	12	Insulin-like growth factor-binding protein complex acid labi	
+IGFALS	zebrafish	E9QJJ1	igfals	E9QJJ1	1	31	Insulin-like growth factor-binding protein complex acid labi	
+IGFBP	zebrafish	X1WGX6	si:ch73-330k17.3	X1WGX6	0	98	IGFBP domain-containing protein precursor	w
+IGFBP-1	human	P08833	IGFBP1	P08833	14	198	Insulin-like growth factor-binding protein 1 (IBP-1) (IGF-bi	w
+IGFBP-2	human	P18065	IGFBP2	P18065	37	211	Insulin-like growth factor-binding protein 2 (IBP-2) (IGF-bi	w
+IGFBP-3	human	P17936	IGFBP3	P17936	65	331	Insulin-like growth factor-binding protein 3 (IBP-3) (IGF-bi	w
+IGFBP-3R	human	Q86XT9	TMEM219	Q86XT9	1	61	Insulin-like growth factor-binding protein 3 receptor (IGFBP	w
+IGFBP-4	human	P22692	IGFBP4	P22692	34	231	Insulin-like growth factor-binding protein 4 (IBP-4) (IGF-bi	w
+IGFBP-4	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	w
+IGFBP-4ASE	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	w
+IGFBP-5	human	P24593	IGFBP5	P24593	57	397	Insulin-like growth factor-binding protein 5 (IBP-5) (IGF-bi	w
+IGFBP-6	human	P24592	IGFBP6	P24592	22	191	Insulin-like growth factor-binding protein 6 (IBP-6) (IGF-bi	w
+IGFBP-7	human	Q16270	IGFBP7	Q16270	21	275	Insulin-like growth factor-binding protein 7 (IBP-7) (IGF-bi	w
+IGFBP-9	human	P48745	CCN3	P48745	11	137	CCN family member 3 (Cellular communication network factor 3	w
+IGFBP-RELATED	human	Q8WX77	IGFBPL1	Q8WX77	7	58	Insulin-like growth factor-binding protein-like 1 (IGFBP-rel	w
+IGFBP-RP1	human	Q16270	IGFBP7	Q16270	21	275	Insulin-like growth factor-binding protein 7 (IBP-7) (IGF-bi	w
+IGFBP-RP4	human	Q8WX77	IGFBPL1	Q8WX77	7	58	Insulin-like growth factor-binding protein-like 1 (IGFBP-rel	w
+IGFBP1	human	P08833	IGFBP1	P08833	14	198	Insulin-like growth factor-binding protein 1 (IBP-1) (IGF-bi	
+IGFBP1	mus-musculus	P47876	Igfbp1	P47876	3	19	Insulin-like growth factor-binding protein 1	
+IGFBP1	rattus-norvegicus	P21743	Igfbp1	P21743	3	16	Insulin-like growth factor-binding protein 1	
+IGFBP10	human	O00622	CCN1	O00622	28	229		
+IGFBP1A	zebrafish	Q8JHX6	igfbp1a	Q8JHX6	3	6	Insulin-like growth factor-binding protein 1	
+IGFBP1B	zebrafish	A4K8J2	igfbp1b	A4K8J2	2	19	Insulin-like growth factor-binding protein 1	
+IGFBP2	human	P18065	IGFBP2	P18065	37	211	Insulin-like growth factor-binding protein 2 (IBP-2) (IGF-bi	
+IGFBP2	mus-musculus	P47877	Igfbp2	P47877	5	25	Insulin-like growth factor-binding protein 2	
+IGFBP2	rattus-norvegicus	P12843	Igfbp2	P12843	6	23	Insulin-like growth factor-binding protein 2	
+IGFBP2-BINDING	human	Q5JXC2	MIIP	Q5JXC2	16	65	Migration and invasion-inhibitory protein (IGFBP2-binding pr	w
+IGFBP2A	zebrafish	Q9PTH3	igfbp2a	Q9PTH3	5	19	Insulin-like growth factor-binding protein 2-A	
+IGFBP3	human	P17936	IGFBP3	P17936	65	331	Insulin-like growth factor-binding protein 3 (IBP-3) (IGF-bi	
+IGFBP3	mus-musculus	P47878	Igfbp3	P47878	9	51	Insulin-like growth factor-binding protein 3	
+IGFBP3	rattus-norvegicus	P15473	Igfbp3	P15473	6	50	Insulin-like growth factor-binding protein 3	
+IGFBP3	zebrafish	Q66I28	igfbp3	Q66I28	8	46	Insulin-like growth factor-binding protein 3	
+IGFBP4	human	P22692	IGFBP4	P22692	34	231	Insulin-like growth factor-binding protein 4 (IBP-4) (IGF-bi	
+IGFBP4	mus-musculus	P47879	Igfbp4	P47879	3	10	Insulin-like growth factor-binding protein 4	
+IGFBP4	rattus-norvegicus	P21744	Igfbp4	P21744	2	18	Insulin-like growth factor-binding protein 4	
+IGFBP5	human	P24593	IGFBP5	P24593	57	397	Insulin-like growth factor-binding protein 5 (IBP-5) (IGF-bi	
+IGFBP5	mus-musculus	Q07079	Igfbp5	Q07079	5	30	Insulin-like growth factor-binding protein 5	
+IGFBP5	rattus-norvegicus	P24594	Igfbp5	P24594	5	25	Insulin-like growth factor-binding protein 5	
+IGFBP5A	zebrafish	A5PLA3	igfbp5a	A5PLA3	2	15	Insulin-like growth factor-binding protein 5	
+IGFBP5B	zebrafish	B0S525	igfbp5b	B0S525	3	4	Insulin-like growth factor-binding protein 5	
+IGFBP6	human	P24592	IGFBP6	P24592	22	191	Insulin-like growth factor-binding protein 6 (IBP-6) (IGF-bi	
+IGFBP6	mus-musculus	P47880	Igfbp6	P47880	3	14	Insulin-like growth factor-binding protein 6	
+IGFBP6	rattus-norvegicus	P35572	Igfbp6	P35572	2	13	Insulin-like growth factor-binding protein 6	
+IGFBP6A	zebrafish	A0AB40E5I1	igfbp6a	A0AB40E5I1	2	6	Insulin-like growth factor-binding protein 6a precursor	
+IGFBP6B	zebrafish	F6N9E8	igfbp6b	F6N9E8	2	6	Insulin-like growth factor-binding protein 6	
+IGFBP7	human	Q16270	IGFBP7	Q16270	21	275	Insulin-like growth factor-binding protein 7 (IBP-7) (IGF-bi	
+IGFBP7	mus-musculus	Q61581	Igfbp7	Q61581	0	15	Insulin-like growth factor-binding protein 7	
+IGFBP7	rattus-norvegicus	F1M9B2	Igfbp7	F1M9B2	1	19	Insulin-like growth factor-binding protein 7	
+IGFBP7	zebrafish	A0A8M1PIC1	igfbp7	A0A8M1PIC1	0	21	Insulin-like growth factor-binding protein 7 precursor	
+IGFBP8	human	P29279	CCN2	P29279	55	487		
+IGFBP9	human	P48745	CCN3	P48745	11	137		
+IGFBPL1	human	Q8WX77	IGFBPL1	Q8WX77	7	58	Insulin-like growth factor-binding protein-like 1 (IGFBP-rel	
+IGFBPL1	mus-musculus	Q80W15	Igfbpl1	Q80W15	0	7	Insulin-like growth factor-binding protein-like 1	
+IGFBPRP4	human	Q8WX77	IGFBPL1	Q8WX77	7	58		
+IGFL	mus-musculus	Q6B9Z0	Igfl	Q6B9Z0	0	2	Insulin growth factor-like family member	
+IGFL1	human	Q6UW32	IGFL1	Q6UW32	11	54	Insulin growth factor-like family member 1	
+IGFL1_HUMAN	human	Q6UW32	IGFL1	Q6UW32	11	54		
+IGFL2	human	Q6UWQ7	IGFL2	Q6UWQ7	7	47	Insulin growth factor-like family member 2	
+IGFL2_HUMAN	human	Q6UWQ7	IGFL2	Q6UWQ7	7	47		
+IGFL3	human	Q6UXB1	IGFL3	Q6UXB1	10	94	Insulin growth factor-like family member 3	
+IGFL3_HUMAN	human	Q6UXB1	IGFL3	Q6UXB1	10	94		
+IGFL4	human	Q6B9Z1	IGFL4	Q6B9Z1	5	41	Insulin growth factor-like family member 4	
+IGFL4_HUMAN	human	Q6B9Z1	IGFL4	Q6B9Z1	5	41		
+IGFLR1	human	Q9H665	IGFLR1	Q9H665	11	130	IGF-like family receptor 1 (Transmembrane protein 149) (U2 s	
+IGFLR1	mus-musculus	Q3U4N7	Igflr1	Q3U4N7	2	16	IGF-like family receptor 1	
+IGFLR1	rattus-norvegicus	D4A4X3	Igflr1	D4A4X3	2	27	IGF-like family receptor 1	
+IGFLR1	zebrafish	E7EXT5	igflr1	E7EXT5	0	65	IGF-like family receptor 1	
+IGFN1	human	Q86VF2	IGFN1	Q86VF2	6	81	Immunoglobulin-like and fibronectin type III domain-containi	
+IGFN1_HUMAN	human	Q86VF2	IGFN1	Q86VF2	6	81		
+IGFR1	human	P12314	FCGR1A	P12314	81	546		
+IGFR1_HUMAN	human	Q9H665	IGFLR1	Q9H665	11	130		
+IGFR2	human	P12318	FCGR2A	P12318	81	438		
+IGFR2	human	P31994	FCGR2B	P31994	78	345		
+IGFR2	human	P31995	FCGR2C	P31995	26	107		
+IGFR3	human	O75015	FCGR3B	O75015	57	361		
+IGFR3	human	P08637	FCGR3A	P08637	42	311		
+IGFRB	human	Q92637	FCGR1BP	Q92637	35	173		

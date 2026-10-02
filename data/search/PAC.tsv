@@ -1,32 +1,478 @@
-PAC	arabidopsis-thaliana	Q39089	PAC	Q39089	0	1	Protein PALE CRESS, chloroplastic
-PAC1	ajellomyces-capsulatus	C0NRC6	PAC1	C0NRC6	3	14	Nuclear distribution protein PAC1
-PAC1	arabidopsis-thaliana	O81148	PAC1	O81148	5	135	Proteasome subunit alpha type-4-A
-PAC1	candida-albicans-237561	Q5A7Q6	PAC1	Q5A7Q6	1	13	Nuclear distribution protein PAC1
-PAC1	cladophialophora-carrionii	A0A1C1CFI4	pac1	A0A1C1CFI4	3	88	Double-strand-specific pac1 ribonuclease
-PAC1	cladophialophora-carrionii	A0A1C1CXT4	PAC1	A0A1C1CXT4	1	16	Nuclear distribution protein PAC1
-PAC1	fonsecaea-pedrosoi-cbs-271-37	A0A0D2EXJ4	PAC1	A0A0D2EXJ4	2	14	Nuclear distribution protein PAC1
-PAC1	madurella-mycetomatis	A0A175WE61	PAC1	A0A175WE61	1	16	Nuclear distribution protein PAC1
-PAC1	madurella-mycetomatis	A0A175WHD5	PAC1	A0A175WHD5	2	16	Nuclear distribution protein PAC1
-PAC1	paracoccidioides-lutzii	A0A0A2V1C8	PAC1	A0A0A2V1C8	1	19	Nuclear distribution protein PAC1
-PAC1	schizosaccharomyces-pombe	P22192	pac1	P22192	3	49	Double-strand-specific pac1 ribonuclease
-PAC1	sporothrix-schenckii	U7PZG1	PAC1	U7PZG1	1	18	Nuclear distribution protein PAC1
-PAC1	zea-mays	Q3V810	pac1	Q3V810	7	31	Anthocyanin biosynthetic gene regulator PAC1
-PAC2	arabidopsis-thaliana	F4JJE5	PAC2	F4JJE5	2	125	Putative proteasome subunit alpha type-4-B
-PAC2	schizosaccharomyces-pombe	Q10294	pac2	Q10294	0	3	cAMP-independent regulatory protein pac2
-PACC	cladophialophora-carrionii	A0A1C1CXC6	pacC	A0A1C1CXC6	2	6	pH-response transcription factor pacC/RIM101
-PACC1	mus-musculus	Q9D771	Pacc1	Q9D771	0	2	Proton-activated chloride channel
-PACC1	rattus-norvegicus	Q66H28	Pacc1	Q66H28	0	3	Proton-activated chloride channel
-PACL	streptococcus-pneumoniae	Q8DP20	pacL	Q8DP20	0	1	P-type Ca(2+) transporter
-PACRG	mus-musculus	Q9DAK2	Pacrg	Q9DAK2	2	102	Parkin coregulated gene protein homolog
-PACRGL	mus-musculus	Q9D3X5	Pacrgl	Q9D3X5	4	99	PACRG-like protein
-PACRGL	rattus-norvegicus	D3ZE96	Pacrgl	D3ZE96	16	183	Parkin coregulated like
-PACS1	mus-musculus	Q8K212	Pacs1	Q8K212	1	20	Phosphofurin acidic cluster sorting protein 1
-PACS1	rattus-norvegicus	O88588	Pacs1	O88588	1	11	Phosphofurin acidic cluster sorting protein 1
-PACS2	mus-musculus	Q3V3Q7	Pacs2	Q3V3Q7	2	17	Phosphofurin acidic cluster sorting protein 2
-PACS2	rattus-norvegicus	D3ZJG4	Pacs2	D3ZJG4	2	19	Phosphofurin acidic cluster sorting protein 2
-PACSIN1	mus-musculus	Q61644	Pacsin1	Q61644	5	39	Protein kinase C and casein kinase substrate in neurons protein 1
-PACSIN1	rattus-norvegicus	Q9Z0W5	Pacsin1	Q9Z0W5	5	20	Protein kinase C and casein kinase substrate in neurons protein 1
-PACSIN2	mus-musculus	Q9WVE8	Pacsin2	Q9WVE8	3	28	Protein kinase C and casein kinase substrate in neurons protein 2
-PACSIN2	rattus-norvegicus	Q9QY17	Pacsin2	Q9QY17	4	18	Protein kinase C and casein kinase substrate in neurons 2 protein
-PACSIN3	mus-musculus	Q99JB8	Pacsin3	Q99JB8	5	15	Protein kinase C and casein kinase II substrate protein 3
-PACSIN3	rattus-norvegicus	G3V9N7	Pacsin3	G3V9N7	3	8	Protein kinase C and casein kinase substrate in neurons 3
+PAC	arabidopsis-thaliana	Q39089	PAC	Q39089	0	1	Protein PALE CRESS, chloroplastic	
+PAC-1	human	O95456	PSMG1	O95456	34	379	Proteasome assembly chaperone 1 (PAC-1) (Chromosome 21 leuci	w
+PAC-1	human	Q05923	DUSP2	Q05923	16	144	Dual specificity protein phosphatase 2 (EC 3.1.3.16) (EC 3.1	w
+PAC-1	worm	H2KYP0	picc-1	H2KYP0	0	2	PAC-1 interacting and coiled-coil domain-containing protein 	w
+PAC-2	human	Q969U7	PSMG2	Q969U7	10	135	Proteasome assembly chaperone 2 (PAC-2) (Hepatocellular carc	w
+PAC-3	human	Q9BT73	PSMG3	Q9BT73	12	192	Proteasome assembly chaperone 3 (PAC-3) (hPAC3) (Proteasome 	w
+PAC-4	human	Q5JS54	PSMG4	Q5JS54	2	85	Proteasome assembly chaperone 4 (PAC-4) (hPAC4) (Proteasome 	w
+PAC1	ajellomyces-capsulatus	C0NRC6	PAC1	C0NRC6	3	14	Nuclear distribution protein PAC1	
+PAC1	arabidopsis-thaliana	O81148	PAC1	O81148	5	135	Proteasome subunit alpha type-4-A	
+PAC1	candida-albicans-237561	Q5A7Q6	PAC1	Q5A7Q6	1	13	Nuclear distribution protein PAC1	
+PAC1	cladophialophora-carrionii	A0A1C1CFI4	pac1	A0A1C1CFI4	3	88	Double-strand-specific pac1 ribonuclease	
+PAC1	cladophialophora-carrionii	A0A1C1CXT4	PAC1	A0A1C1CXT4	1	16	Nuclear distribution protein PAC1	
+PAC1	fonsecaea-pedrosoi-cbs-271-37	A0A0D2EXJ4	PAC1	A0A0D2EXJ4	2	14	Nuclear distribution protein PAC1	
+PAC1	human	O95456	PSMG1	O95456	34	379		
+PAC1	human	P41586	ADCYAP1R1	P41586	27	165	Pituitary adenylate cyclase-activating polypeptide type I re	w
+PAC1	human	Q05923	DUSP2	Q05923	16	144		
+PAC1	madurella-mycetomatis	A0A175WE61	PAC1	A0A175WE61	1	16	Nuclear distribution protein PAC1	
+PAC1	madurella-mycetomatis	A0A175WHD5	PAC1	A0A175WHD5	2	16	Nuclear distribution protein PAC1	
+PAC1	paracoccidioides-lutzii	A0A0A2V1C8	PAC1	A0A0A2V1C8	1	19	Nuclear distribution protein PAC1	
+PAC1	schizosaccharomyces-pombe	P22192	pac1	P22192	3	49	Double-strand-specific pac1 ribonuclease	
+PAC1	sporothrix-schenckii	U7PZG1	PAC1	U7PZG1	1	18	Nuclear distribution protein PAC1	
+PAC1	yeast	P39946	PAC1	P39946	1	56	Nuclear distribution protein PAC1	
+PAC1	zea-mays	Q3V810	pac1	Q3V810	7	31	Anthocyanin biosynthetic gene regulator PAC1	
+PAC10	yeast	P48363	PAC10	P48363	5	25	Prefoldin subunit 3	
+PAC11	yeast	P40960	PAC11	P40960	0	32	WD repeat-containing protein PAC11	
+PAC1R	human	P41586	ADCYAP1R1	P41586	27	165	Pituitary adenylate cyclase-activating polypeptide type I re	w
+PAC2	arabidopsis-thaliana	F4JJE5	PAC2	F4JJE5	2	125	Putative proteasome subunit alpha type-4-B	
+PAC2	human	Q969U7	PSMG2	Q969U7	10	135		
+PAC2	schizosaccharomyces-pombe	Q10294	pac2	Q10294	0	3	cAMP-independent regulatory protein pac2	
+PAC2	yeast	P39937	PAC2	P39937	1	18	Protein PAC2	
+PAC3	human	Q9BT73	PSMG3	Q9BT73	12	192		
+PAC4	human	Q5JS54	PSMG4	Q5JS54	2	85		
+PACAP	human	P18509	ADCYAP1	P18509	54	407	Pituitary adenylate cyclase-activating polypeptide (PACAP) [	w
+PACAP	human	P32241	VIPR1	P32241	37	325	Vasoactive intestinal polypeptide receptor 1 (VIP-R-1) (Pitu	w
+PACAP	human	P41586	ADCYAP1R1	P41586	27	165	Pituitary adenylate cyclase-activating polypeptide type I re	w
+PACAP	human	Q8WU39	MZB1	Q8WU39	28	176		
+PACAP-R-1	human	P41586	ADCYAP1R1	P41586	27	165	Pituitary adenylate cyclase-activating polypeptide type I re	w
+PACAP-R-2	human	P32241	VIPR1	P32241	37	325	Vasoactive intestinal polypeptide receptor 1 (VIP-R-1) (Pitu	w
+PACAP-R1	human	P41586	ADCYAP1R1	P41586	27	165	Pituitary adenylate cyclase-activating polypeptide type I re	w
+PACAP-RELATED	human	P18509	ADCYAP1	P18509	54	407	Pituitary adenylate cyclase-activating polypeptide (PACAP) [	w
+PACA_HUMAN	human	P18509	ADCYAP1	P18509	54	407		
+PACC	cladophialophora-carrionii	A0A1C1CXC6	pacC	A0A1C1CXC6	2	6	pH-response transcription factor pacC/RIM101	
+PACC	yeast	P33400	RIM101	P33400	0	21	pH-response transcription factor pacC/RIM101	w
+PACC1	human	Q9H813	PACC1	Q9H813	6	136	Proton-activated chloride channel (PAC) (hPAC) (Acid-sensiti	
+PACC1	mus-musculus	Q9D771	Pacc1	Q9D771	0	2	Proton-activated chloride channel	
+PACC1	rattus-norvegicus	Q66H28	Pacc1	Q66H28	0	3	Proton-activated chloride channel	
+PACC1	zebrafish	Q7SY31	pacc1	Q7SY31	0	2	Proton-activated chloride channel	
+PACC1_HUMAN	human	Q9H813	PACC1	Q9H813	6	136		
+PACE	human	P09958	FURIN	P09958	87	481		
+PACE-1	human	Q8IZE3	SCYL3	Q8IZE3	18	127	Protein-associating with the carboxyl-terminal domain of ezr	w
+PACE1	human	Q8IZE3	SCYL3	Q8IZE3	18	127		
+PACE1_HUMAN	human	Q8IZE3	SCYL3	Q8IZE3	18	127		
+PACE4	human	P29122	PCSK6	P29122	31	197		
+PACEMAKER	human	O15534	PER1	O15534	50	190	Period circadian protein homolog 1 (hPER1) (Circadian clock 	w
+PACEMAKER	human	Q9C0C6	CIPC	Q9C0C6	12	37	CLOCK-interacting pacemaker (CLOCK-interacting circadian pro	w
+PACEMAKER	zebrafish	E7FAN7	cipca	E7FAN7	3	10	CLOCK-interacting pacemaker a	w
+PACER	human	Q9H714	RUBCNL	Q9H714	9	49	Protein associated with UVRAG as autophagy enhancer (Pacer) 	w
+PACER_HUMAN	human	Q9H714	RUBCNL	Q9H714	9	49		
+PACHYTENE	fly	FBgn0051453	pch2	Q8SX76	0	46	LD24646p (Pachytene checkpoint 2, isoform A) (Pachytene chec	w
+PACHYTENE	human	Q15645	TRIP13	Q15645	9	331	Pachytene checkpoint protein 2 homolog (Human papillomavirus	w
+PACHYTENE	worm	Q09535	pch-2	Q09535	1	24	Putative pachytene checkpoint protein 2	w
+PACHYTENE	yeast	P38126	PCH2	P38126	0	27	Pachytene checkpoint protein 2	w
+PACHYTENE	yeast	P89114	SAE3	P89114	1	10	Pachytene arrest protein SAE3	w
+PACHYTENE	zebrafish	Q6PH52	trip13	Q6PH52	1	55	Pachytene checkpoint protein 2 homolog	w
+PACKAGING	virus	A0A059XN63	IVa2	A0A059XN63	2	30	Packaging protein 1	w
+PACKAGING	virus	A0A060D355	BoHV6ORF68	A0A060D355	1	78	Packaging protein UL32	w
+PACKAGING	virus	A0A060Q599	UL32	A0A060Q599	7	68	Packaging protein UL32	w
+PACKAGING	virus	A0A068AAM7	ALHV2gp66	A0A068AAM7	2	69	Packaging protein UL32	w
+PACKAGING	virus	A0A068EGG3	fep_203	A0A068EGG3	8	220	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A068ELS1	pepv_211	A0A068ELS1	11	240	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A075CXQ8	U36	A0A075CXQ8	1	114	Packaging protein UL32	w
+PACKAGING	virus	A0A077B5Y4	ORF28	A0A077B5Y4	5	76	Packaging protein UL32	w
+PACKAGING	virus	A0A097IW89	L1	A0A097IW89	4	34	Packaging protein 3	w
+PACKAGING	virus	A0A097IWB6	IVa2	A0A097IWB6	2	34	Packaging protein 1	w
+PACKAGING	virus	A0A0A1EU33	L1	A0A0A1EU33	2	15	Packaging protein 3	w
+PACKAGING	virus	A0A0A1EU49	L1	A0A0A1EU49	1	15	Packaging protein 3	w
+PACKAGING	virus	A0A0A1EU63	L1	A0A0A1EU63	1	15	Packaging protein 3	w
+PACKAGING	virus	A0A0A1EWV7	IVa2	A0A0A1EWV7	2	15	Packaging protein 1	w
+PACKAGING	virus	A0A0A1EWX2	IVa2	A0A0A1EWX2	2	15	Packaging protein 1	w
+PACKAGING	virus	A0A0A7M9U1		A0A0A7M9U1	3	130	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A0B4Q6D1	ORF68	A0A0B4Q6D1	1	78	Packaging protein UL32	w
+PACKAGING	virus	A0A0B5CYY1	ORF68	A0A0B5CYY1	3	94	Packaging protein UL32	w
+PACKAGING	virus	A0A0F7G9C5		A0A0F7G9C5	2	84	Packaging protein UL32	w
+PACKAGING	virus	A0A0G2UGK7	UL52	A0A0G2UGK7	1	81	Packaging protein UL32	w
+PACKAGING	virus	A0A0G3G2P3	RCNV-Herman-149	A0A0G3G2P3	9	195	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A0H4Y1A8	SGPV068	A0A0H4Y1A8	6	199	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A0K0MGF1	05	A0A0K0MGF1	2	30	Packaging protein 1	w
+PACKAGING	virus	A0A0K0MGG1	08	A0A0K0MGG1	3	30	Packaging protein 3	w
+PACKAGING	virus	A0A0K1R1B6	UL32	A0A0K1R1B6	2	106	Packaging protein UL32	w
+PACKAGING	virus	A0A0M3TH03	L1	A0A0M3TH03	3	34	Packaging protein 3	w
+PACKAGING	virus	A0A0M3TH17	L1	A0A0M3TH17	4	36	Packaging protein 3	w
+PACKAGING	virus	A0A0M3TH26	L1	A0A0M3TH26	3	36	Packaging protein 3	w
+PACKAGING	virus	A0A0M3ZK54		A0A0M3ZK54	9	170	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A0M4M493		A0A0M4M493	1	87	Packaging protein UL32	w
+PACKAGING	virus	A0A0M4MET7	L1	A0A0M4MET7	4	36	Packaging protein 3	w
+PACKAGING	virus	A0A0M4MQE4	IVa2	A0A0M4MQE4	2	36	Packaging protein 1	w
+PACKAGING	virus	A0A0M4MTW9	IVa2	A0A0M4MTW9	2	36	Packaging protein 1	w
+PACKAGING	virus	A0A0M4NFN7	IVa2	A0A0M4NFN7	2	36	Packaging protein 1	w
+PACKAGING	virus	A0A0M5KZS2	IVa2	A0A0M5KZS2	4	28	Packaging protein 1	w
+PACKAGING	virus	A0A0M5L3X4	L1	A0A0M5L3X4	3	36	Packaging protein 3	w
+PACKAGING	virus	A0A0M5L4M6	IVa2	A0A0M5L4M6	3	34	Packaging protein 1	w
+PACKAGING	virus	A0A0M5L5N6	IVa2	A0A0M5L5N6	3	36	Packaging protein 1	w
+PACKAGING	virus	A0A0S0DIH9	BFLF1	A0A0S0DIH9	1	73	Packaging protein UL32	w
+PACKAGING	virus	A0A0S1TQ97	U36	A0A0S1TQ97	1	118	Packaging protein UL32	w
+PACKAGING	virus	A0A0X9XD73	ORF68	A0A0X9XD73	1	76	Packaging protein UL32	w
+PACKAGING	virus	A0A109ZR20	UL32	A0A109ZR20	5	70	Packaging protein UL32	w
+PACKAGING	virus	A0A161DIA2	IVa2	A0A161DIA2	4	33	Packaging protein 1	w
+PACKAGING	virus	A0A163HI15	L1	A0A163HI15	2	33	Packaging protein 3	w
+PACKAGING	virus	A0A172ESJ0	UL32	A0A172ESJ0	4	71	Packaging protein UL32	w
+PACKAGING	virus	A0A191S3T7	U36	A0A191S3T7	4	82	Packaging protein UL32	w
+PACKAGING	virus	A0A1B1MRJ1	PTPV-Aus-127	A0A1B1MRJ1	2	143	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A1C8EG68	IVa2	A0A1C8EG68	1	32	Packaging protein 1	w
+PACKAGING	virus	A0A1C8EGM3	L1	A0A1C8EGM3	2	32	Packaging protein 3	w
+PACKAGING	virus	A0A1C9KBX4	SKPV-WA-152	A0A1C9KBX4	7	209	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A1C9KCF4	VPXV-CA-152	A0A1C9KCF4	6	204	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A1J0FAN6	IVa2	A0A1J0FAN6	2	32	Packaging protein 1	w
+PACKAGING	virus	A0A1J0FAP2	L1	A0A1J0FAP2	4	32	Packaging protein 3	w
+PACKAGING	virus	A0A1L3INW4	IVa2	A0A1L3INW4	2	34	Packaging protein 1	w
+PACKAGING	virus	A0A1L3INX1	L1	A0A1L3INX1	3	34	Packaging protein 3	w
+PACKAGING	virus	A0A1L5JKG4	UL32	A0A1L5JKG4	7	68	Packaging protein UL32	w
+PACKAGING	virus	A0A1P8VIT6	ORF48	A0A1P8VIT6	3	127	Packaging protein UL32	w
+PACKAGING	virus	A0A1R3T436	UL32	A0A1R3T436	5	81	Packaging protein UL32	w
+PACKAGING	virus	A0A1S6JLN0	UL32	A0A1S6JLN0	4	66	Packaging protein UL32	w
+PACKAGING	virus	A0A1V0M8H1	CoHVHLJ_046	A0A1V0M8H1	6	106	Packaging protein UL32	w
+PACKAGING	virus	A0A1X7MPI1	IVa2	A0A1X7MPI1	3	29	Packaging protein 1	w
+PACKAGING	virus	A0A1X9RIR0	IVa2	A0A1X9RIR0	1	29	Packaging protein 1	w
+PACKAGING	virus	A0A1X9RIU3	IVa2	A0A1X9RIU3	2	30	Packaging protein 1	w
+PACKAGING	virus	A0A1X9WF39	UL32	A0A1X9WF39	7	71	Packaging protein UL32	w
+PACKAGING	virus	A0A1X9WFC9	UL32	A0A1X9WFC9	6	72	Packaging protein UL32	w
+PACKAGING	virus	A0A1Y0B6F7	L1	A0A1Y0B6F7	3	28	Packaging protein 3	w
+PACKAGING	virus	A0A1Z1NE95	ORF68	A0A1Z1NE95	1	71	Packaging protein UL32	w
+PACKAGING	virus	A0A1Z3GCQ8	SePPVgORF097	A0A1Z3GCQ8	5	119	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A220A482	IVa2	A0A220A482	2	29	Packaging protein 1	w
+PACKAGING	virus	A0A220T6I8	EPTV-WA-129	A0A220T6I8	8	179	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A223FMY3	Murmansk-149	A0A223FMY3	8	202	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A286MM48	UL32	A0A286MM48	8	79	Packaging protein UL32	w
+PACKAGING	virus	A0A2C9DSU0		A0A2C9DSU0	5	161	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A2C9DTA4		A0A2C9DTA4	5	160	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A2D1A3L4		A0A2D1A3L4	2	74	Packaging protein UL32	w
+PACKAGING	virus	A0A2H4CJP5	IVa2	A0A2H4CJP5	2	36	Packaging protein 1	w
+PACKAGING	virus	A0A2H4CJQ4	L1	A0A2H4CJQ4	4	36	Packaging protein 3	w
+PACKAGING	virus	A0A2H4X2L7	fgpv_212	A0A2H4X2L7	17	256	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A2H5AIA1	IVa2	A0A2H5AIA1	3	23	Packaging protein 1	w
+PACKAGING	virus	A0A2N9QVH0	ORF28	A0A2N9QVH0	6	75	Packaging protein UL32	w
+PACKAGING	virus	A0A2U9QHV9	SOPV-ELK-122	A0A2U9QHV9	2	130	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A2Z5UI01	ORF76	A0A2Z5UI01	1	83	Packaging protein UL32	w
+PACKAGING	virus	A0A345S4Z6	IVa2	A0A345S4Z6	2	27	Packaging protein 1	w
+PACKAGING	virus	A0A346FSC5	AKMV-88-163	A0A346FSC5	12	214	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A348FKF8	IVa2	A0A348FKF8	2	30	Packaging protein 1	w
+PACKAGING	virus	A0A3G1T4D1	BFLF1	A0A3G1T4D1	2	81	Packaging protein UL32	w
+PACKAGING	virus	A0A3G2KY22	OPVA153	A0A3G2KY22	7	208	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A3G9ED61	IVa2	A0A3G9ED61	3	30	Packaging protein 1	w
+PACKAGING	virus	A0A3G9ED78	IVa2	A0A3G9ED78	2	30	Packaging protein 1	w
+PACKAGING	virus	A0A3G9F1D2	L1	A0A3G9F1D2	3	30	Packaging protein 3	w
+PACKAGING	virus	A0A3G9F1E5	L1	A0A3G9F1E5	4	30	Packaging protein 3	w
+PACKAGING	virus	A0A3Q8J760	ORF68	A0A3Q8J760	0	69	Packaging protein UL32	w
+PACKAGING	virus	A0A3S8D7R0	ORF68	A0A3S8D7R0	2	75	Packaging protein UL32	w
+PACKAGING	virus	A0A455JPX9	UL32	A0A455JPX9	8	67	Packaging protein UL32	w
+PACKAGING	virus	A0A455JQ47	UL32	A0A455JQ47	6	67	Packaging protein UL32	w
+PACKAGING	virus	A0A510J7C8	UL32	A0A510J7C8	3	68	Packaging protein UL32	w
+PACKAGING	virus	A0A5B8G5G6	ORF68	A0A5B8G5G6	1	77	Packaging protein UL32	w
+PACKAGING	virus	A0A5B8MAG6	IVa2	A0A5B8MAG6	5	29	Packaging protein 1	w
+PACKAGING	virus	A0A5B8MBI4	L1	A0A5B8MBI4	2	29	Packaging protein 3	w
+PACKAGING	virus	A0A5B9RBR5		A0A5B9RBR5	3	78	Packaging protein UL32	w
+PACKAGING	virus	A0A5P9JR12	DNA packaging protein	A0A5P9JR12	4	81	Packaging protein UL32	w
+PACKAGING	virus	A0A5P9VJB4	IVa2	A0A5P9VJB4	5	31	Packaging protein 1	w
+PACKAGING	virus	A0A679A5D5	L1	A0A679A5D5	4	36	Packaging protein 3	w
+PACKAGING	virus	A0A679A8G0	IVa2	A0A679A8G0	2	36	Packaging protein 1	w
+PACKAGING	virus	A0A7L7YUB9	UL32	A0A7L7YUB9	5	67	Packaging protein UL32	w
+PACKAGING	virus	A0A7R5WNN1	DLEV_045	A0A7R5WNN1	6	187	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A7S9VM69		A0A7S9VM69	6	77	Packaging protein UL32	w
+PACKAGING	virus	A0A866VSK1	U36	A0A866VSK1	2	117	Packaging protein UL32	w
+PACKAGING	virus	A0A916KPN1	CHBEV_196	A0A916KPN1	14	311	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A916KQD5	MYSEV_190	A0A916KQD5	6	301	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A916P0N2	AHEV_180	A0A916P0N2	5	243	DNA packaging protein OPG160	w
+PACKAGING	virus	A0A9W3HR36	IVa2	A0A9W3HR36	1	24	Packaging protein 1	w
+PACKAGING	virus	A0A9W3HR61	L4	A0A9W3HR61	4	29	Packaging protein 2	w
+PACKAGING	virus	A0A9W3HRG5	IVa2	A0A9W3HRG5	2	34	Packaging protein 1	w
+PACKAGING	virus	A0A9W3HRK6	L1	A0A9W3HRK6	3	34	Packaging protein 3	w
+PACKAGING	virus	A0A9W3I4P8	L1	A0A9W3I4P8	3	32	Packaging protein 3	w
+PACKAGING	virus	A0A9W3INM0	L1	A0A9W3INM0	4	32	Packaging protein 3	w
+PACKAGING	virus	A0A9W3INM1	IVa2	A0A9W3INM1	2	32	Packaging protein 1	w
+PACKAGING	virus	A0A9W3N2X3	L1	A0A9W3N2X3	2	23	Packaging protein 3	w
+PACKAGING	virus	A0A9W3NB32	IVa2	A0A9W3NB32	2	32	Packaging protein 1	w
+PACKAGING	virus	A0A9X9PGR7	IVa2	A0A9X9PGR7	5	27	Packaging protein 1	w
+PACKAGING	virus	A0AAE7SXU5	UL32	A0AAE7SXU5	4	67	Packaging protein UL32	w
+PACKAGING	virus	A0AAE8Y3P5	IVa2	A0AAE8Y3P5	4	30	Packaging protein 1	w
+PACKAGING	virus	A0AAE9C0M3	L1	A0AAE9C0M3	3	30	Packaging protein 3	w
+PACKAGING	virus	A0AAF1D200	UL32	A0AAF1D200	6	66	Packaging protein UL32	w
+PACKAGING	virus	A0ABM9QKM2	CHREV_164	A0ABM9QKM2	14	286	DNA packaging protein OPG160	w
+PACKAGING	virus	A0ABX6WLZ5	UL32	A0ABX6WLZ5	5	71	Packaging protein UL32	w
+PACKAGING	virus	A0MK46	IVa2	A0MK46	1	35	Packaging protein 1	w
+PACKAGING	virus	A0MK49	52k	A0MK49	4	35	Packaging protein 3	w
+PACKAGING	virus	A4GRK3	UL32	A4GRK3	6	73	Packaging protein UL32	w
+PACKAGING	virus	A4ZKJ5	L1	A4ZKJ5	1	15	Packaging protein 3	w
+PACKAGING	virus	A4ZKL0	L1	A4ZKL0	2	15	Packaging protein 3	w
+PACKAGING	virus	A7XCQ5	121L	A7XCQ5	1	154	DNA packaging protein OPG160	w
+PACKAGING	virus	A9CB86	IVa2	A9CB86	3	28	Packaging protein 1	w
+PACKAGING	virus	A9CB88	L1	A9CB88	2	28	Packaging protein 3	w
+PACKAGING	virus	A9Y5Q7	UL32	A9Y5Q7	4	75	Packaging protein UL32	w
+PACKAGING	virus	B2VQE6	pIVa2	B2VQE6	4	35	Packaging protein 1	w
+PACKAGING	virus	B2VQE9	L1	B2VQE9	3	35	Packaging protein 3	w
+PACKAGING	virus	B5SNR4	IVa2	B5SNR4	3	32	Packaging protein 1	w
+PACKAGING	virus	B5SNR8	L1	B5SNR8	4	32	Packaging protein 3	w
+PACKAGING	virus	B6DU93	pIVa2	B6DU93	3	37	Packaging protein 1	w
+PACKAGING	virus	B7FEH0		B7FEH0	6	77	Packaging protein UL32	w
+PACKAGING	virus	B7TPX0	GP52	B7TPX0	2	109	Packaging protein UL32	w
+PACKAGING	virus	B9A5B0	pIVa2	B9A5B0	2	36	Packaging protein 1	w
+PACKAGING	virus	B9A5B3	L1	B9A5B3	2	36	Packaging protein 3	w
+PACKAGING	virus	B9A5Q7	L1	B9A5Q7	2	38	Packaging protein 3	w
+PACKAGING	virus	C4P212	L1	C4P212	2	30	Packaging protein 3	w
+PACKAGING	virus	C5HDR5	IVa2	C5HDR5	3	37	Packaging protein 1	w
+PACKAGING	virus	C5HDR6	L1	C5HDR6	2	37	Packaging protein 3	w
+PACKAGING	virus	C7SRT0	IVa2	C7SRT0	2	37	Packaging protein 1	w
+PACKAGING	virus	C7SRT3	L1	C7SRT3	3	37	Packaging protein 3	w
+PACKAGING	virus	D0U1Q8	ORF68	D0U1Q8	1	73	Packaging protein UL32	w
+PACKAGING	virus	D0Z5S2	IVa2	D0Z5S2	3	33	Packaging protein 1	w
+PACKAGING	virus	D0Z5S5	52K	D0Z5S5	4	33	Packaging protein 3	w
+PACKAGING	virus	D1FXV0	UL32	D1FXV0	4	73	Packaging protein UL32	w
+PACKAGING	virus	D3IZQ7		D3IZQ7	4	125	DNA packaging protein OPG160	w
+PACKAGING	virus	D3JIS0	IVa2	D3JIS0	2	35	Packaging protein 1	w
+PACKAGING	virus	D3JIS3	L1	D3JIS3	3	35	Packaging protein 3	w
+PACKAGING	virus	D3X7B2	IVa2	D3X7B2	1	30	Packaging protein 1	w
+PACKAGING	virus	D3X7B5	L1	D3X7B5	2	30	Packaging protein 3	w
+PACKAGING	virus	D3XDP0	M52	D3XDP0	2	158	Packaging protein UL32	w
+PACKAGING	virus	D4N3H9	IVa2	D4N3H9	3	40	Packaging protein 1	w
+PACKAGING	virus	D4N3I3	L1	D4N3I3	3	40	Packaging protein 3	w
+PACKAGING	virus	E1AI13	IVa2	E1AI13	3	36	Packaging protein 1	w
+PACKAGING	virus	E1AI16	L1	E1AI16	3	36	Packaging protein 3	w
+PACKAGING	virus	E1CIJ3	pIVa2	E1CIJ3	2	36	Packaging protein 1	w
+PACKAGING	virus	E1CIJ6	L1	E1CIJ6	3	36	Packaging protein 3	w
+PACKAGING	virus	E1CIM9	pIVa2	E1CIM9	3	40	Packaging protein 1	w
+PACKAGING	virus	E1U5M2	pIVa2	E1U5M2	3	54	Packaging protein 1	w
+PACKAGING	virus	E1U5N3	L1	E1U5N3	3	54	Packaging protein 3	w
+PACKAGING	virus	E2IUD7	UL32	E2IUD7	6	68	Packaging protein UL32	w
+PACKAGING	virus	E7CH32	IVa2	E7CH32	5	27	Packaging protein 1	w
+PACKAGING	virus	E9M5Q2	RHVP.68	E9M5Q2	0	81	Packaging protein UL32	w
+PACKAGING	virus	F2WTK0	IVa2	F2WTK0	2	32	Packaging protein 1	w
+PACKAGING	virus	F2WTK3	L1	F2WTK3	3	32	Packaging protein 3	w
+PACKAGING	virus	F2WTN2	IVa2	F2WTN2	2	32	Packaging protein 1	w
+PACKAGING	virus	F2WTN5	L1	F2WTN5	2	32	Packaging protein 3	w
+PACKAGING	virus	F5HF47	ORF68	F5HF47	1	84	Packaging protein UL32 homolog	w
+PACKAGING	virus	F6KST9	IVa2	F6KST9	3	32	Packaging protein 1	w
+PACKAGING	virus	F6KSU2	L1	F6KSU2	4	32	Packaging protein 3	w
+PACKAGING	virus	F8TC27	UL32	F8TC27	9	107	Packaging protein UL32	w
+PACKAGING	virus	G0ZAH5	IVa2	G0ZAH5	2	35	Packaging protein 1	w
+PACKAGING	virus	G0ZAH8	L1	G0ZAH8	2	35	Packaging protein 3	w
+PACKAGING	virus	G1FQL9	IVa2	G1FQL9	2	30	Packaging protein 1	w
+PACKAGING	virus	G1FQM1	L1	G1FQM1	3	30	Packaging protein 3	w
+PACKAGING	virus	G3EI29	YKV137c	G3EI29	7	184	DNA packaging protein OPG160	w
+PACKAGING	virus	G3G8X6	UL32	G3G8X6	6	66	Packaging protein UL32	w
+PACKAGING	virus	G5CZ80	52K	G5CZ80	3	31	Packaging protein 3	w
+PACKAGING	virus	G8H187	cyUL52	G8H187	5	274	Packaging protein UL32	w
+PACKAGING	virus	G8HBE6	UL32	G8HBE6	6	73	Packaging protein UL32	w
+PACKAGING	virus	G8XSW7	UL52	G8XSW7	4	140	Packaging protein UL32	w
+PACKAGING	virus	G8XTC4	UL52	G8XTC4	3	177	Packaging protein UL32	w
+PACKAGING	virus	G8XUC8	UL52	G8XUC8	6	146	Packaging protein UL32	w
+PACKAGING	virus	G9G844	IVa2	G9G844	3	31	Packaging protein 1	w
+PACKAGING	virus	G9G847	L1	G9G847	3	31	Packaging protein 3	w
+PACKAGING	virus	G9I254	UL32	G9I254	5	74	Packaging protein UL32	w
+PACKAGING	virus	H6TAA7	COTV139	H6TAA7	5	170	DNA packaging protein OPG160	w
+PACKAGING	virus	H6WWK4	IVa2	H6WWK4	3	38	Packaging protein 1	w
+PACKAGING	virus	H8PFZ4	IVa2	H8PFZ4	3	29	Packaging protein 1	w
+PACKAGING	virus	H8PFZ7	L1	H8PFZ7	4	29	Packaging protein 3	w
+PACKAGING	virus	H9AA79	IVa2	H9AA79	3	32	Packaging protein 1	w
+PACKAGING	virus	H9AA82	L1	H9AA82	3	32	Packaging protein 3	w
+PACKAGING	virus	I1SB59	L1	I1SB59	3	37	Packaging protein 3	w
+PACKAGING	virus	I3VQ39		I3VQ39	2	189	Packaging protein UL32	w
+PACKAGING	virus	J9QYN5	UL32	J9QYN5	3	73	Packaging protein UL32	w
+PACKAGING	virus	K4P1H9	UL32	K4P1H9	7	71	Packaging protein UL32	w
+PACKAGING	virus	K7XQY3	E52	K7XQY3	3	136	Packaging protein UL32	w
+PACKAGING	virus	K7ZQ22	pIVa2	K7ZQ22	3	40	Packaging protein 1	w
+PACKAGING	virus	K7ZRS3	L1	K7ZRS3	2	40	Packaging protein 3	w
+PACKAGING	virus	K9MEW8	UL32	K9MEW8	4	73	Packaging protein UL32	w
+PACKAGING	virus	M0QTS7	pIVa2	M0QTS7	2	39	Packaging protein 1	w
+PACKAGING	virus	M0QTT0	L1	M0QTT0	3	39	Packaging protein 3	w
+PACKAGING	virus	M0QU04	pIVa2	M0QU04	3	40	Packaging protein 1	w
+PACKAGING	virus	M0QU07	L1	M0QU07	4	40	Packaging protein 3	w
+PACKAGING	virus	M0QU78	pIVa2	M0QU78	2	40	Packaging protein 1	w
+PACKAGING	virus	M0QU81	L1	M0QU81	3	40	Packaging protein 3	w
+PACKAGING	virus	M0QUB7	pIVa2	M0QUB7	3	39	Packaging protein 1	w
+PACKAGING	virus	M0QUC0	L1	M0QUC0	3	39	Packaging protein 3	w
+PACKAGING	virus	M0QUF6	pIVa2	M0QUF6	2	40	Packaging protein 1	w
+PACKAGING	virus	M0QUF9	L1	M0QUF9	2	40	Packaging protein 3	w
+PACKAGING	virus	M0QUJ5	pIVa2	M0QUJ5	4	40	Packaging protein 1	w
+PACKAGING	virus	M0QUJ8	L1	M0QUJ8	2	40	Packaging protein 3	w
+PACKAGING	virus	M0QUN4	pIVa2	M0QUN4	2	40	Packaging protein 1	w
+PACKAGING	virus	M0QUN7	L1	M0QUN7	2	40	Packaging protein 3	w
+PACKAGING	virus	M0QUS1	L1	M0QUS1	3	40	Packaging protein 3	w
+PACKAGING	virus	M0QUT1	pIVa2	M0QUT1	3	40	Packaging protein 1	w
+PACKAGING	virus	M0QUT4	L1	M0QUT4	2	40	Packaging protein 3	w
+PACKAGING	virus	M0QUX1	pIVa2	M0QUX1	3	40	Packaging protein 1	w
+PACKAGING	virus	M0QUX4	L1	M0QUX4	3	40	Packaging protein 3	w
+PACKAGING	virus	M0QV10	pIVa2	M0QV10	3	40	Packaging protein 1	w
+PACKAGING	virus	M0QV13	L1	M0QV13	3	40	Packaging protein 3	w
+PACKAGING	virus	M0QV50	pIVa2	M0QV50	3	40	Packaging protein 1	w
+PACKAGING	virus	M0QV53	L1	M0QV53	3	40	Packaging protein 3	w
+PACKAGING	virus	M0QV90	pIVa2	M0QV90	2	40	Packaging protein 1	w
+PACKAGING	virus	M0QV93	L1	M0QV93	1	40	Packaging protein 3	w
+PACKAGING	virus	M0QVC9	pIVa2	M0QVC9	2	40	Packaging protein 1	w
+PACKAGING	virus	M0QVD2	L1	M0QVD2	3	40	Packaging protein 3	w
+PACKAGING	virus	M0QVG9	pIVa2	M0QVG9	2	40	Packaging protein 1	w
+PACKAGING	virus	M0QVH2	L1	M0QVH2	2	40	Packaging protein 3	w
+PACKAGING	virus	M0QVK8	pIVa2	M0QVK8	4	40	Packaging protein 1	w
+PACKAGING	virus	M0QVL1	L1	M0QVL1	2	40	Packaging protein 3	w
+PACKAGING	virus	M0QVP8	pIVa2	M0QVP8	2	40	Packaging protein 1	w
+PACKAGING	virus	M0QVQ1	L1	M0QVQ1	2	40	Packaging protein 3	w
+PACKAGING	virus	M0QVT7	pIVa2	M0QVT7	3	40	Packaging protein 1	w
+PACKAGING	virus	M0QVU0	L1	M0QVU0	4	40	Packaging protein 3	w
+PACKAGING	virus	M4JUE2	U36	M4JUE2	2	112	Packaging protein UL32	w
+PACKAGING	virus	M9YVD4	L1	M9YVD4	4	36	Packaging protein 3	w
+PACKAGING	virus	M9YYX3	IVa2	M9YYX3	2	34	Packaging protein 1	w
+PACKAGING	virus	M9YZ36	IVa2	M9YZ36	2	35	Packaging protein 1	w
+PACKAGING	virus	M9Z2J5	IVa2	M9Z2J5	3	36	Packaging protein 1	w
+PACKAGING	virus	M9Z4G2	L1	M9Z4G2	3	34	Packaging protein 3	w
+PACKAGING	virus	M9Z4M3	L1	M9Z4M3	4	36	Packaging protein 3	w
+PACKAGING	virus	O36419	68	O36419	1	69	Packaging protein UL32 homolog	w
+PACKAGING	virus	O39270	28	O39270	3	75	Packaging protein UL32	w
+PACKAGING	virus	O41969	GAMMAHV.ORF68	O41969	2	79	Packaging protein UL32	w
+PACKAGING	virus	P03184	BFLF1	P03184	2	91	Packaging protein UL32 homolog	w
+PACKAGING	virus	P03262	L1	P03262	2	45	Packaging protein 3	w
+PACKAGING	virus	P03271	IVa2	P03271	2	31	Packaging protein 1	w
+PACKAGING	virus	P03272	IVa2	P03272	2	45	Packaging protein 1	w
+PACKAGING	virus	P04496	L1	P04496	2	31	Packaging protein 3	w
+PACKAGING	virus	P09282	26	P09282	6	68	Packaging protein UL32	w
+PACKAGING	virus	P0DJX1	L4	P0DJX1	2	45	Packaging protein 2	w
+PACKAGING	virus	P0DTA0	OPG160	P0DTA0	8	199	DNA packaging protein OPG160	w
+PACKAGING	virus	P12540	IVa2	P12540	2	27	Packaging protein 1	w
+PACKAGING	virus	P36715	L1	P36715	3	27	Packaging protein 3	w
+PACKAGING	virus	P48752	IVa2	P48752	4	34	Packaging protein 1	w
+PACKAGING	virus	P52463	U36	P52463	3	98	Packaging protein UL32	w
+PACKAGING	virus	P68615	OPG160	P68615	13	218	DNA packaging protein OPG160	w
+PACKAGING	virus	P68973	L1	P68973	3	30	Packaging protein 3	w
+PACKAGING	virus	P69329	28	P69329	5	74	Packaging protein UL32 homolog	w
+PACKAGING	virus	P87552	IVa2	P87552	3	29	Packaging protein 1	w
+PACKAGING	virus	P87555	L1	P87555	3	29	Packaging protein 3	w
+PACKAGING	virus	Q01040	68	Q01040	1	74	Packaging protein UL32	w
+PACKAGING	virus	Q06ZZ7	CRV154	Q06ZZ7	4	172	DNA packaging protein OPG160	w
+PACKAGING	virus	Q08FM1	DpV83gp131	Q08FM1	4	165	DNA packaging protein OPG160	w
+PACKAGING	virus	Q09TZ0	L1	Q09TZ0	3	16	Packaging protein 3	w
+PACKAGING	virus	Q09TZ3	IVa2	Q09TZ3	3	16	Packaging protein 1	w
+PACKAGING	virus	Q0NP55	TATV_DAH68_156	Q0NP55	8	220	DNA packaging protein OPG160	w
+PACKAGING	virus	Q0PLY9	L1	Q0PLY9	3	27	Packaging protein 3	w
+PACKAGING	virus	Q0PLZ3	IVa2	Q0PLZ3	3	27	Packaging protein 1	w
+PACKAGING	virus	Q1HTR4	A32L	Q1HTR4	4	140	DNA packaging protein OPG160	w
+PACKAGING	virus	Q2KRX7	L1	Q2KRX7	2	44	Packaging protein 3	w
+PACKAGING	virus	Q2KRY3	IVa2	Q2KRY3	3	44	Packaging protein 1	w
+PACKAGING	virus	Q2KS03	L4	Q2KS03	0	31	Packaging protein 2	w
+PACKAGING	virus	Q2KS82	IVa2	Q2KS82	4	48	Packaging protein 1	w
+PACKAGING	virus	Q2KSB9	L1	Q2KSB9	3	48	Packaging protein 3	w
+PACKAGING	virus	Q2QBE4	UL32	Q2QBE4	5	73	Packaging protein UL32	w
+PACKAGING	virus	Q2VSH2		Q2VSH2	1	72	Packaging protein UL32	w
+PACKAGING	virus	Q2Y0I1	L1	Q2Y0I1	2	46	Packaging protein 3	w
+PACKAGING	virus	Q2Y0J0	IVa2	Q2Y0J0	3	46	Packaging protein 1	w
+PACKAGING	virus	Q32UI0	L1	Q32UI0	3	39	Packaging protein 3	w
+PACKAGING	virus	Q32UI3	IVa2	Q32UI3	2	39	Packaging protein 1	w
+PACKAGING	virus	Q3ZKV1	L1	Q3ZKV1	3	46	Packaging protein 3	w
+PACKAGING	virus	Q3ZKV9	IVa2	Q3ZKV9	3	46	Packaging protein 1	w
+PACKAGING	virus	Q3ZKZ5	L1	Q3ZKZ5	3	41	Packaging protein 3	w
+PACKAGING	virus	Q3ZKZ9	IVa2	Q3ZKZ9	5	41	Packaging protein 1	w
+PACKAGING	virus	Q4KSK5	L1	Q4KSK5	2	32	Packaging protein 3	w
+PACKAGING	virus	Q4KSK7	IVa2	Q4KSK7	3	32	Packaging protein 1	w
+PACKAGING	virus	Q53CT0	JM140	Q53CT0	1	171	Packaging protein UL32	w
+PACKAGING	virus	Q5C8Q6	L1	Q5C8Q6	4	35	Packaging protein 3	w
+PACKAGING	virus	Q5C8Q9	IVa2	Q5C8Q9	3	35	Packaging protein 1	w
+PACKAGING	virus	Q5TJ11	L1 52/55k	Q5TJ11	2	39	Packaging protein 3	w
+PACKAGING	virus	Q5TJ14	pIVa2	Q5TJ14	3	39	Packaging protein 1	w
+PACKAGING	virus	Q5Y0S0	UL32	Q5Y0S0	5	72	Packaging protein UL32	w
+PACKAGING	virus	Q64749	IVa2	Q64749	3	38	Packaging protein 1	w
+PACKAGING	virus	Q64753	L1	Q64753	3	38	Packaging protein 3	w
+PACKAGING	virus	Q66671	68	Q66671	1	76	Packaging protein UL32 homolog	w
+PACKAGING	virus	Q6H1D1	L1	Q6H1D1	4	37	Packaging protein 3	w
+PACKAGING	virus	Q6H1D4	IVa2	Q6H1D4	4	37	Packaging protein 1	w
+PACKAGING	virus	Q6QPB1	L1	Q6QPB1	2	36	Packaging protein 3	w
+PACKAGING	virus	Q6QPB4	IVa2	Q6QPB4	4	36	Packaging protein 1	w
+PACKAGING	virus	Q6QPE7	L1	Q6QPE7	3	36	Packaging protein 3	w
+PACKAGING	virus	Q6QPF0	IVa2	Q6QPF0	3	36	Packaging protein 1	w
+PACKAGING	virus	Q6QPI3	L1	Q6QPI3	2	36	Packaging protein 3	w
+PACKAGING	virus	Q6QPI6	IVa2	Q6QPI6	2	36	Packaging protein 1	w
+PACKAGING	virus	Q6RK95	E2B	Q6RK95	1	28	Packaging protein 1	w
+PACKAGING	virus	Q6SW79	UL52	Q6SW79	2	167	Packaging protein UL32 homolog	w
+PACKAGING	virus	Q6TUP8		Q6TUP8	4	140	DNA packaging protein OPG160	w
+PACKAGING	virus	Q6TV80		Q6TV80	7	130	DNA packaging protein OPG160	w
+PACKAGING	virus	Q6TVL2		Q6TVL2	4	129	DNA packaging protein OPG160	w
+PACKAGING	virus	Q6UDJ9	UL32	Q6UDJ9	3	70	Packaging protein UL32	w
+PACKAGING	virus	Q6VZ76	CNPV271	Q6VZ76	16	322	DNA packaging protein OPG160	w
+PACKAGING	virus	Q6X244	BHV5-24	Q6X244	6	70	Packaging protein UL32	w
+PACKAGING	virus	Q6YL77	L1	Q6YL77	2	32	Packaging protein 3	w
+PACKAGING	virus	Q71BX5	L1	Q71BX5	3	36	Packaging protein 3	w
+PACKAGING	virus	Q71BY0	IVa2	Q71BY0	3	36	Packaging protein 1	w
+PACKAGING	virus	Q77CS2	UL32	Q77CS2	9	72	Packaging protein UL32	w
+PACKAGING	virus	Q77GB2	LSDV121	Q77GB2	5	152	DNA packaging protein OPG160	w
+PACKAGING	virus	Q77Y72	U36	Q77Y72	4	83	Packaging protein UL32	w
+PACKAGING	virus	Q7TFP9		Q7TFP9	2	222	Packaging protein UL32	w
+PACKAGING	virus	Q89727	L1	Q89727	2	34	Packaging protein 3	w
+PACKAGING	virus	Q8B8U0	L1	Q8B8U0	2	38	Packaging protein 3	w
+PACKAGING	virus	Q8B8U3	IVa2	Q8B8U3	2	38	Packaging protein 1	w
+PACKAGING	virus	Q8BEN4		Q8BEN4	1	71	Packaging protein UL32	w
+PACKAGING	virus	Q8JL84	EVM134	Q8JL84	6	170	DNA packaging protein OPG160	w
+PACKAGING	virus	Q8QMS1	CPXV167 CDS	Q8QMS1	8	225	DNA packaging protein OPG160	w
+PACKAGING	virus	Q8QS36	UL52	Q8QS36	2	168	Packaging protein UL32	w
+PACKAGING	virus	Q8UY84	L1	Q8UY84	1	22	Packaging protein 3	w
+PACKAGING	virus	Q8UY86	IVa2	Q8UY86	1	22	Packaging protein 1	w
+PACKAGING	virus	Q8UZJ2		Q8UZJ2	1	79	Packaging protein UL32	w
+PACKAGING	virus	Q8V2M4		Q8V2M4	7	208	DNA packaging protein OPG160	w
+PACKAGING	virus	Q8V3H8	SPV118	Q8V3H8	2	146	DNA packaging protein OPG160	w
+PACKAGING	virus	Q8V4U5	A34L	Q8V4U5	9	187	DNA packaging protein OPG160	w
+PACKAGING	virus	Q91TN6		Q91TN6	2	155	Packaging protein UL32	w
+PACKAGING	virus	Q96680	IVa2	Q96680	3	30	Packaging protein 1	w
+PACKAGING	virus	Q98306	MC140L	Q98306	4	161	DNA packaging protein OPG160	w
+PACKAGING	virus	Q994E6	L1	Q994E6	2	27	Packaging protein 3	w
+PACKAGING	virus	Q99CX3		Q99CX3	0	78	Packaging protein UL32	w
+PACKAGING	virus	Q9DHA1	HVT041	Q9DHA1	5	86	Packaging protein UL32	w
+PACKAGING	virus	Q9DHJ2	121L	Q9DHJ2	1	150	DNA packaging protein OPG160	w
+PACKAGING	virus	Q9DWD8	R52	Q9DWD8	5	167	Packaging protein UL32	w
+PACKAGING	virus	Q9E1Z0		Q9E1Z0	7	68	Packaging protein UL32	w
+PACKAGING	virus	Q9E6N7	MDV046	Q9E6N7	5	87	Packaging protein UL32 homolog	w
+PACKAGING	virus	Q9EMP9	AMV150	Q9EMP9	11	278	DNA packaging protein OPG160	w
+PACKAGING	virus	Q9J536	FPV197	Q9J536	17	250	DNA packaging protein OPG160	w
+PACKAGING	virus	Q9Q8I1	m120L	Q9Q8I1	5	157	DNA packaging protein OPG160	w
+PACKAGING	virus	Q9Q8V8	s120L	Q9Q8V8	3	153	DNA packaging protein OPG160	w
+PACKAGING	virus	Q9QJ33	U36	Q9QJ33	2	95	Packaging protein UL32 homolog	w
+PACKAGING	virus	Q9WF15	L1	Q9WF15	1	8	Packaging protein 3	w
+PACKAGING	virus	Q9WRM6		Q9WRM6	1	79	Packaging protein UL32	w
+PACKAGING	virus	Q9YTJ8		Q9YTJ8	2	70	Packaging protein UL32	w
+PACKAGING	virus	Q9YVS1	MSV171	Q9YVS1	9	261	DNA packaging protein OPG160	w
+PACKAGING	virus	U3GQ13	U36	U3GQ13	2	79	Packaging protein UL32	w
+PACKAGING	virus	U5NEE5	L1	U5NEE5	3	37	Packaging protein 3	w
+PACKAGING	virus	U5NIH5		U5NIH5	1	81	Packaging protein UL32	w
+PACKAGING	virus	W6JL06		W6JL06	4	241	DNA packaging protein OPG160	w
+PACKING	virus	A0A1P8VIX2	ORF76	A0A1P8VIX2	1	127	Probable DNA packing protein C-terminal domain-containing pr	w
+PACKING	virus	Q9WRR8		Q9WRR8	4	79	Probable DNA packing protein N-terminal domain-containing pr	w
+PACKING	virus	Q9WRS3		Q9WRS3	2	79	Probable DNA packing protein C-terminal domain-containing pr	w
+PACL	streptococcus-pneumoniae	Q8DP20	pacL	Q8DP20	0	1	P-type Ca(2+) transporter	
+PACN1_HUMAN	human	Q9BY11	PACSIN1	Q9BY11	37	156		
+PACN2_HUMAN	human	Q9UNF0	PACSIN2	Q9UNF0	43	232		
+PACN3_HUMAN	human	Q9UKS6	PACSIN3	Q9UKS6	40	169		
+PACPL1	human	Q9NPH0	ACP6	Q9NPH0	11	55	Lysophosphatidic acid phosphatase type 6 (EC 3.1.3.106) (Aci	w
+PACRG	human	Q96M98	PACRG	Q96M98	14	182	Parkin coregulated gene protein (Molecular chaperone/chapero	
+PACRG	mus-musculus	Q9DAK2	Pacrg	Q9DAK2	2	102	Parkin coregulated gene protein homolog	
+PACRG	zebrafish	A0A8M1N3B8	pacrg	A0A8M1N3B8	13	476	Parkin coregulated gene protein	
+PACRG-LIKE	human	Q8N7B6	PACRGL	Q8N7B6	16	203	PACRG-like protein	w
+PACRGL	human	Q8N7B6	PACRGL	Q8N7B6	16	203	PACRG-like protein	
+PACRGL	mus-musculus	Q9D3X5	Pacrgl	Q9D3X5	4	99	PACRG-like protein	
+PACRGL	rattus-norvegicus	D3ZE96	Pacrgl	D3ZE96	16	183	Parkin coregulated like	
+PACRG_HUMAN	human	Q96M98	PACRG	Q96M98	14	182		
+PACRL_HUMAN	human	Q8N7B6	PACRGL	Q8N7B6	16	203		
+PACR_HUMAN	human	P41586	ADCYAP1R1	P41586	27	165		
+PACS	fly	FBgn0020647	Pacs	Q9VCE7	2	18	Krueppel target at 95D, isoform A (Krueppel target at 95D, i	
+PACS-1	human	Q6VY07	PACS1	Q6VY07	15	98	Phosphofurin acidic cluster sorting protein 1 (PACS-1)	w
+PACS-1	worm	Q95QA3	pacs-1	Q95QA3	1	8	Phosphofurin acidic cluster sorting protein 2	
+PACS-2	human	Q86VP3	PACS2	Q86VP3	10	68	Phosphofurin acidic cluster sorting protein 2 (PACS-2) (PACS	w
+PACS1	human	Q6VY07	PACS1	Q6VY07	15	98	Phosphofurin acidic cluster sorting protein 1 (PACS-1)	
+PACS1	mus-musculus	Q8K212	Pacs1	Q8K212	1	20	Phosphofurin acidic cluster sorting protein 1	
+PACS1	rattus-norvegicus	O88588	Pacs1	O88588	1	11	Phosphofurin acidic cluster sorting protein 1	
+PACS1-LIKE	human	Q86VP3	PACS2	Q86VP3	10	68	Phosphofurin acidic cluster sorting protein 2 (PACS-2) (PACS	w
+PACS1L	human	Q86VP3	PACS2	Q86VP3	10	68		
+PACS1_HUMAN	human	Q6VY07	PACS1	Q6VY07	15	98		
+PACS2	human	Q86VP3	PACS2	Q86VP3	10	68	Phosphofurin acidic cluster sorting protein 2 (PACS-2) (PACS	
+PACS2	mus-musculus	Q3V3Q7	Pacs2	Q3V3Q7	2	17	Phosphofurin acidic cluster sorting protein 2	
+PACS2	rattus-norvegicus	D3ZJG4	Pacs2	D3ZJG4	2	19	Phosphofurin acidic cluster sorting protein 2	
+PACS2_HUMAN	human	Q86VP3	PACS2	Q86VP3	10	68		
+PACSIN1	human	Q9BY11	PACSIN1	Q9BY11	37	156	Protein kinase C and casein kinase substrate in neurons prot	
+PACSIN1	mus-musculus	Q61644	Pacsin1	Q61644	5	39	Protein kinase C and casein kinase substrate in neurons prot	
+PACSIN1	rattus-norvegicus	Q9Z0W5	Pacsin1	Q9Z0W5	5	20	Protein kinase C and casein kinase substrate in neurons prot	
+PACSIN1A	zebrafish	A0A2R9YJM4	pacsin1a	A0A2R9YJM4	0	9	Protein kinase C and casein kinase substrate in neurons 1a	
+PACSIN1B	zebrafish	Q4V920	pacsin1b	Q4V920	2	11	Protein kinase C and casein kinase substrate in neurons prot	
+PACSIN2	human	Q9UNF0	PACSIN2	Q9UNF0	43	232	Protein kinase C and casein kinase substrate in neurons prot	
+PACSIN2	mus-musculus	Q9WVE8	Pacsin2	Q9WVE8	3	28	Protein kinase C and casein kinase substrate in neurons prot	
+PACSIN2	rattus-norvegicus	Q9QY17	Pacsin2	Q9QY17	4	18	Protein kinase C and casein kinase substrate in neurons 2 pr	
+PACSIN2	zebrafish	F1QC13	pacsin2	F1QC13	2	11	Protein kinase C and casein kinase substrate in neurons 2	
+PACSIN3	human	Q9UKS6	PACSIN3	Q9UKS6	40	169	Protein kinase C and casein kinase substrate in neurons prot	
+PACSIN3	mus-musculus	Q99JB8	Pacsin3	Q99JB8	5	15	Protein kinase C and casein kinase II substrate protein 3	
+PACSIN3	rattus-norvegicus	G3V9N7	Pacsin3	G3V9N7	3	8	Protein kinase C and casein kinase substrate in neurons 3	
+PACSIN3	zebrafish	Q7ZUY8	pacsin3	Q7ZUY8	2	12	Protein kinase C and casein kinase substrate in neurons 3	
+PACT	human	O75569	PRKRA	O75569	29	406		
+PACT	human	Q7Z6E9	RBBP6	Q7Z6E9	106	457		
+PACT	worm	Q19636	CELE_F20C5.5	Q19636	0	1	PACT_coil_coil domain-containing protein	w

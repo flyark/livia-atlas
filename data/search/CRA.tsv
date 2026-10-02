@@ -1,19 +1,92 @@
-CRA	salmonella-typhimurium	P0A2P8	cra	P0A2P8	0	15	Catabolite repressor/activator
-CRA1	arabidopsis-thaliana	P15455	CRA1	P15455	0	53	12S seed storage protein CRA1
-CRABP1	mus-musculus	P62965	Crabp1	P62965	0	9	Cellular retinoic acid-binding protein 1
-CRABP1	rattus-norvegicus	P62966	Crabp1	P62966	0	9	Cellular retinoic acid-binding protein 1
-CRABP2	mus-musculus	P22935	Crabp2	P22935	3	16	Cellular retinoic acid-binding protein 2
-CRABP2	rattus-norvegicus	P51673	Crabp2	P51673	2	17	Cellular retinoic acid-binding protein 2
-CRACD	mus-musculus	Q5PR69	Cracd	Q5PR69	0	1	Capping protein-inhibiting regulator of actin dynamics
-CRACD	rattus-norvegicus	D4A5F4	Cracd	D4A5F4	0	1	Capping protein inhibiting regulator of actin dynamics
-CRACDL	mus-musculus	E9Q3M9	Cracdl	E9Q3M9	0	1	Capping protein inhibiting regulator of actin like
-CRACDL	rattus-norvegicus	D3ZBU7	Cracdl	D3ZBU7	0	1	CRACD like
-CRACR2A	mus-musculus	Q3UP38	Cracr2a	Q3UP38	3	5	EF-hand calcium-binding domain-containing protein 4B
-CRACR2A	rattus-norvegicus	D3ZAG1	Cracr2a	D3ZAG1	5	12	Calcium release activated channel regulator 2A
-CRACR2B	mus-musculus	Q80ZJ8	Cracr2b	Q80ZJ8	4	5	EF-hand calcium-binding domain-containing protein 4A
-CRACR2B	rattus-norvegicus	B0BNK9	Cracr2b	B0BNK9	4	12	EF-hand calcium-binding domain-containing protein 4A
-CRADD	mus-musculus	O88843	Cradd	O88843	2	9	Death domain-containing protein CRADD
-CRADD	rattus-norvegicus	A0ABK0L585	Cradd	A0ABK0L585	1	9	CASP2 and RIPK1 domain containing adaptor with death domain
-CRAMP1	rattus-norvegicus	D3ZNU3	Cramp1	D3ZNU3	1	5	Protein cramped-like
-CRAT	mus-musculus	P47934	Crat	P47934	1	26	Carnitine O-acetyltransferase
-CRAT	rattus-norvegicus	Q704S8	Crat	Q704S8	1	7	Carnitine O-acetyltransferase
+CRA	salmonella-typhimurium	P0A2P8	cra	P0A2P8	0	15	Catabolite repressor/activator	
+CRA-1	worm	Q21986	cra-1	Q21986	4	43	N-terminal acetyltransferase B complex subunit NAA25 homolog	
+CRA1	arabidopsis-thaliana	P15455	CRA1	P15455	0	53	12S seed storage protein CRA1	
+CRABP-I	human	P29762	CRABP1	P29762	15	132	Cellular retinoic acid-binding protein 1 (Cellular retinoic 	w
+CRABP-II	human	P29373	CRABP2	P29373	21	209	Cellular retinoic acid-binding protein 2 (Cellular retinoic 	w
+CRABP-IV	human	Q96R05	RBP7	Q96R05	12	68	Retinoid-binding protein 7 (Cellular retinoic acid-binding p	w
+CRABP1	human	P29762	CRABP1	P29762	15	132	Cellular retinoic acid-binding protein 1 (Cellular retinoic 	
+CRABP1	mus-musculus	P62965	Crabp1	P62965	0	9	Cellular retinoic acid-binding protein 1	
+CRABP1	rattus-norvegicus	P62966	Crabp1	P62966	0	9	Cellular retinoic acid-binding protein 1	
+CRABP1A	zebrafish	Q7T0F4	crabp1a	Q7T0F4	1	5	Cellular retinoic acid-binding protein	
+CRABP1B	zebrafish	Q6IWJ1	crabp1b	Q6IWJ1	1	4	Cellular retinoic acid-binding protein 1b	
+CRABP2	human	P29373	CRABP2	P29373	21	209	Cellular retinoic acid-binding protein 2 (Cellular retinoic 	
+CRABP2	mus-musculus	P22935	Crabp2	P22935	3	16	Cellular retinoic acid-binding protein 2	
+CRABP2	rattus-norvegicus	P51673	Crabp2	P51673	2	17	Cellular retinoic acid-binding protein 2	
+CRABP2A	zebrafish	Q801Y4	crabp2a	Q801Y4	2	11	Cellular retinoic acid binding protein type II	
+CRABP2B	zebrafish	Q5G9L7	crabp2b	Q5G9L7	1	4	Cellular retinoic acid-binding protein 2, b	
+CRABP4	human	Q96R05	RBP7	Q96R05	12	68	Retinoid-binding protein 7 (Cellular retinoic acid-binding p	w
+CRAC	human	Q8N4Y2	CRACR2B	Q8N4Y2	15	79	EF-hand calcium-binding domain-containing protein 4A (Calciu	w
+CRAC	human	Q9BSW2	CRACR2A	Q9BSW2	34	120	EF-hand calcium-binding domain-containing protein 4B (Calciu	w
+CRAC1_HUMAN	human	Q9NQ79	CRTAC1	Q9NQ79	11	128		
+CRACC	human	Q9NQ25	SLAMF7	Q9NQ25	57	333	SLAM family member 7 (CD2 subset 1) (CD2-like receptor-activ	w
+CRACD	human	Q6ZU35	CRACD	Q6ZU35	17	65	Capping protein-inhibiting regulator of actin dynamics (Canc	
+CRACD	mus-musculus	Q5PR69	Cracd	Q5PR69	0	1	Capping protein-inhibiting regulator of actin dynamics	
+CRACD	rattus-norvegicus	D4A5F4	Cracd	D4A5F4	0	1	Capping protein inhibiting regulator of actin dynamics	
+CRACD-LIKE	human	Q6NV74	CRACDL	Q6NV74	6	28	CRACD-like protein	w
+CRACDL	human	Q6NV74	CRACDL	Q6NV74	6	28	CRACD-like protein	
+CRACDL	mus-musculus	E9Q3M9	Cracdl	E9Q3M9	0	1	Capping protein inhibiting regulator of actin like	
+CRACDL	rattus-norvegicus	D3ZBU7	Cracdl	D3ZBU7	0	1	CRACD like	
+CRACD_HUMAN	human	Q6ZU35	CRACD	Q6ZU35	17	65		
+CRACKED	fly	FBgn0035427	ckd	Q7KV71	30	246	Cracked, isoform C (Cracked, isoform D) (Cracked, isoform E)	w
+CRACM1	human	Q96D31	ORAI1	Q96D31	4	178		
+CRACR2A	human	Q9BSW2	CRACR2A	Q9BSW2	34	120	EF-hand calcium-binding domain-containing protein 4B (Calciu	
+CRACR2A	mus-musculus	Q3UP38	Cracr2a	Q3UP38	3	5	EF-hand calcium-binding domain-containing protein 4B	
+CRACR2A	rattus-norvegicus	D3ZAG1	Cracr2a	D3ZAG1	5	12	Calcium release activated channel regulator 2A	
+CRACR2AA	zebrafish	A0A8M1RS74	cracr2aa	A0A8M1RS74	7	13	EF-hand calcium-binding domain-containing protein 4B	
+CRACR2AB	zebrafish	F6NU44	cracr2ab	F6NU44	6	13	Calcium release-activated channel regulator 2Ab	
+CRACR2B	human	Q8N4Y2	CRACR2B	Q8N4Y2	15	79	EF-hand calcium-binding domain-containing protein 4A (Calciu	
+CRACR2B	mus-musculus	Q80ZJ8	Cracr2b	Q80ZJ8	4	5	EF-hand calcium-binding domain-containing protein 4A	
+CRACR2B	rattus-norvegicus	B0BNK9	Cracr2b	B0BNK9	4	12	EF-hand calcium-binding domain-containing protein 4A	
+CRAD	human	Q6ZU35	CRACD	Q6ZU35	17	65		
+CRAD	zebrafish	Q5RG44	crad	Q5RG44	1	32	Capping protein inhibiting regulator of actin dynamics	
+CRADD	human	P78560	CRADD	P78560	8	107	Death domain-containing protein CRADD (Caspase and RIP adapt	
+CRADD	mus-musculus	O88843	Cradd	O88843	2	9	Death domain-containing protein CRADD	
+CRADD	rattus-norvegicus	A0ABK0L585	Cradd	A0ABK0L585	1	9	CASP2 and RIPK1 domain containing adaptor with death domain	
+CRADD	zebrafish	Q5XJP2	cradd	Q5XJP2	1	2	CASP2 and RIPK1 domain-containing adaptor with death domain	
+CRADD_HUMAN	human	P78560	CRADD	P78560	8	107		
+CRAF	human	P04049	RAF1	P04049	267	2779	RAF proto-oncogene serine/threonine-protein kinase (EC 2.7.1	w
+CRAF1	human	Q13114	TRAF3	Q13114	93	432		
+CRAFT	fly	FBgn0001978	stc	P40798	27	183	Protein shuttle craft	w
+CRAG	fly	FBgn0025864	Crag	Q9W3D3	3	4	DENN domain-containing protein Crag (Calmodulin-binding prot	w
+CRAG	fly	FBgn0025864	Crag	Q9W3D3	3	4	DENN domain-containing protein Crag (Calmodulin-binding prot	w
+CRAG	human	Q96P47	AGAP3	Q96P47	27	156	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CRAL-TRIO	fly	FBgn0039107	CG10300	Q9VCJ2	0	2	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	fly	FBgn0039864	CG11550	Q9V9V4	0	0	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	fly	FBgn0053966	CG33966	Q2MGL8	0	0	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	human	H7C417	?	H7C417	0	1	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	worm	O01324	CELE_F18A11.2	O01324	0	1	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	worm	Q03606	T23G5.2	Q03606	0	2	CRAL-TRIO domain-containing protein T23G5.2	w
+CRAL-TRIO	worm	Q09270	C34C12.6	Q09270	0	2	CRAL-TRIO domain-containing protein C34C12.6	w
+CRAL-TRIO	worm	Q19895	F28H7.8	Q19895	0	1	CRAL-TRIO domain-containing protein F28H7.8	w
+CRAL-TRIO	worm	Q20833	CELE_F55D12.2	Q20833	0	7	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	worm	Q21660	CELE_R03A10.5	Q21660	0	4	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	worm	Q22824	cgr-1	Q22824	0	2	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	worm	Q8I4G3	CELE_T03F7.7	Q8I4G3	0	3	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	worm	Q93546	CELE_F20G2.3	Q93546	0	12	CRAL-TRIO domain-containing protein	w
+CRAL-TRIO	yeast	P33324	YKL091C	P33324	0	7	CRAL-TRIO domain-containing protein YKL091C	w
+CRALBP	fly	FBgn0035636	Cralbp	Q9VRP8	0	5	Cellular retinaldehyde binding protein	
+CRALBP	human	P12271	RLBP1	P12271	3	49		
+CRALBPL	human	Q8IUQ0	CLVS1	Q8IUQ0	3	48		
+CRAM	human	O00421	CCRL2	O00421	23	259		
+CRAM	human	Q9BPU6	DPYSL5	Q9BPU6	11	119	Dihydropyrimidinase-related protein 5 (DRP-5) (CRMP3-associa	w
+CRAM-ASSOCIATED	human	Q96P47	AGAP3	Q96P47	27	156	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CRAMMER	fly	FBgn0034443	cer	A1ZBK7	1	8	Crammer (GEO13161p1) (LP06209p)	w
+CRAMP1	human	Q96RY5	CRAMP1	Q96RY5	22	95	Protein cramped-like (Cramped chromatin regulator homolog 1)	
+CRAMP1	rattus-norvegicus	D3ZNU3	Cramp1	D3ZNU3	1	5	Protein cramped-like	
+CRAMP1L	human	Q96RY5	CRAMP1	Q96RY5	22	95		
+CRAMPED	fly	FBgn0000376	crm	O76906	2	9	Protein cramped	w
+CRAMPED	human	Q96RY5	CRAMP1	Q96RY5	22	95	Protein cramped-like (Cramped chromatin regulator homolog 1)	w
+CRAMPED-LIKE	human	Q96RY5	CRAMP1	Q96RY5	22	95	Protein cramped-like (Cramped chromatin regulator homolog 1)	w
+CRANIOFACIAL	fly	FBgn0267398	Yeti	Q8SXI2	4	42	Craniofacial development protein 1 (Bucentaur)	w
+CRANIOFACIAL	human	Q9UEE9	CFDP1	Q9UEE9	27	116	Heterochromatin-stabilizing protein CFDP1 (Bucentaur) (Crani	w
+CRANIOFACIAL	worm	P90867	CELE_F39H11.1	P90867	1	21	Craniofacial development protein 1	w
+CRANIOFACIAL	zebrafish	A3KPL8	cfdp1	A3KPL8	5	28	Craniofacial development protein 1	w
+CRARF	human	P48740	MASP1	P48740	16	102		
+CRARF1	human	P48740	MASP1	P48740	16	102		
+CRASH	human	Q7L266	ASRGL1	Q7L266	4	53		
+CRAT	fly	FBgn0037440	CRAT	Q9VI16	4	31	Carnitine O-Acetyl-Transferase, isoform A (Carnitine O-Acety	
+CRAT	human	P43155	CRAT	P43155	4	59	Carnitine O-acetyltransferase (Carnitine acetylase) (EC 2.3.	
+CRAT	mus-musculus	P47934	Crat	P47934	1	26	Carnitine O-acetyltransferase	
+CRAT	rattus-norvegicus	Q704S8	Crat	Q704S8	1	7	Carnitine O-acetyltransferase	
+CRATA	zebrafish	Q642H6	crata	Q642H6	0	6	Carnitine O-acetyltransferase	
+CRATB	zebrafish	A3KPZ2	cratb	A3KPZ2	0	3	Carnitine O-acetyltransferase b	

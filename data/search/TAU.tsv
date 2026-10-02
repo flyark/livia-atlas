@@ -1,8 +1,34 @@
-TAUA	escherichia-coli-83333	Q47537	tauA	Q47537	7	173	Taurine-binding periplasmic protein
-TAUA	shigella-dysenteriae-serotype-1	Q32IZ5	tauA	Q32IZ5	1	36	Taurine transport system periplasmic protein
-TAUB	escherichia-coli-83333	Q47538	tauB	Q47538	52	173	Taurine import ATP-binding protein TauB
-TAUB	pseudomonas-aeruginosa	Q9HX79	tauB	Q9HX79	1	2	Taurine import ATP-binding protein TauB
-TAUB	shigella-dysenteriae-serotype-1	Q32IZ6	tauB	Q32IZ6	1	2	Taurine import ATP-binding protein TauB
-TAUC	escherichia-coli-83333	Q47539	tauC	Q47539	67	173	Taurine transport system permease protein TauC
-TAUC	shigella-dysenteriae-serotype-1	Q32IZ7	tauC	Q32IZ7	3	4	Taurine transport system permease protein
-TAUD	pseudomonas-aeruginosa	Q9HX81	tauD	Q9HX81	1	1	Taurine dioxygenase
+TAU	fly	FBgn0266579	tau	Q9VB15	4	40	Microtubule-associated protein	
+TAU	human	P10636	MAPT	P10636	98	506		
+TAU-PROTEIN	human	P48730	CSNK1D	P48730	213	1504	Casein kinase I isoform delta (CKI-delta) (CKId) (EC 2.7.11.	w
+TAU-TUBULIN	human	Q5TCY1	TTBK1	Q5TCY1	50	202	Tau-tubulin kinase 1 (EC 2.7.11.1) (Brain-derived tau kinase	w
+TAU-TUBULIN	human	Q6IQ55	TTBK2	Q6IQ55	50	185	Tau-tubulin kinase 2 (EC 2.7.11.1)	w
+TAUA	escherichia-coli-83333	Q47537	tauA	Q47537	7	173	Taurine-binding periplasmic protein	
+TAUA	shigella-dysenteriae-serotype-1	Q32IZ5	tauA	Q32IZ5	1	36	Taurine transport system periplasmic protein	
+TAUB	escherichia-coli-83333	Q47538	tauB	Q47538	52	173	Taurine import ATP-binding protein TauB	
+TAUB	pseudomonas-aeruginosa	Q9HX79	tauB	Q9HX79	1	2	Taurine import ATP-binding protein TauB	
+TAUB	shigella-dysenteriae-serotype-1	Q32IZ6	tauB	Q32IZ6	1	2	Taurine import ATP-binding protein TauB	
+TAUBE	human	Q7Z7C8	TAF8	Q7Z7C8	90	649	Transcription initiation factor TFIID subunit 8 (Protein tau	w
+TAUC	escherichia-coli-83333	Q47539	tauC	Q47539	67	173	Taurine transport system permease protein TauC	
+TAUC	shigella-dysenteriae-serotype-1	Q32IZ7	tauC	Q32IZ7	3	4	Taurine transport system permease protein	
+TAUD	pseudomonas-aeruginosa	Q9HX81	tauD	Q9HX81	1	1	Taurine dioxygenase	
+TAURINE	human	A0A6I8PU40	TUG1	A0A6I8PU40	1	8	Taurine up-regulated 1 protein	w
+TAURINE	human	P31641	SLC6A6	P31641	2	92	Sodium- and chloride-dependent taurine transporter (Solute c	w
+TAURINOMETHYLURIDINE-	human	Q969Y2	GTPBP3	Q969Y2	5	116	5-taurinomethyluridine-[tRNA] synthase subunit GTPB3, mitoch	w
+TAURINOMETHYLURIDINE-	human	Q9Y2Z2	MTO1	Q9Y2Z2	4	118	5-taurinomethyluridine-[tRNA] synthase subunit MTO1, mitocho	w
+TAURINOMETHYLURIDINE-	zebrafish	Q501Z5	gtpbp3	Q501Z5	3	130	5-taurinomethyluridine-	w
+TAUROCHOLATE	human	Q14973	SLC10A1	Q14973	4	155	Hepatic sodium/bile acid cotransporter (Cell growth-inhibiti	w
+TAUT	human	P31641	SLC6A6	P31641	2	92	Sodium- and chloride-dependent taurine transporter (Solute c	w
+TAUTOMERASE	fly	FBgn0038105	yellow-f2	Q9VG08	41	244	L-dopachrome tautomerase yellow-f2 (EC 5.3.3.12)	w
+TAUTOMERASE	fly	FBgn0039896	yellow-h	Q9V4C0	29	244	Dopaminechrome tautomerase (DPT) (EC 5.3.3.-) (Protein yello	w
+TAUTOMERASE	fly	FBgn0041710	yellow-f	Q9VG09	48	250	L-dopachrome tautomerase yellow-f (EC 5.3.3.12)	w
+TAUTOMERASE	human	P14174	MIF	P14174	10	398	Macrophage migration inhibitory factor (MIF) (EC 5.3.2.1) (G	w
+TAUTOMERASE	human	P30046	DDT	P30046	3	87	D-dopachrome decarboxylase (EC 4.1.1.84) (D-dopachrome tauto	w
+TAUTOMERASE	human	P40126	DCT	P40126	28	238	L-dopachrome tautomerase (DCT) (DT) (EC 5.3.3.12) (L-dopachr	w
+TAUTOMERASE	human	Q6P2I3	FAHD2B	Q6P2I3	2	43	Oxaloacetate tautomerase FAHD2B, mitochondrial (EC 5.3.2.2) 	w
+TAUTOMERASE	human	Q6P587	FAHD1	Q6P587	4	231	Oxaloacetate tautomerase FAHD1, mitochondrial (EC 5.3.2.2) (	w
+TAUTOMERASE	human	Q96GK7	FAHD2A	Q96GK7	4	80	Oxaloacetate tautomerase FAHD2A, mitochondrial (EC 5.3.2.2) 	w
+TAUTOMERASE	worm	P34673	fahd-1	P34673	1	37	Oxaloacetate tautomerase fahd-1, mitochondrial	w
+TAUTOMERASE	yeast	P53889	FMP41	P53889	0	13	Oxaloacetate tautomerase FMP41, mitochondrial	w
+TAUTOMERASE-LIKE	human	A6NHG4	DDTL	A6NHG4	5	37	Putative D-dopachrome decarboxylase-like protein (EC 4.1.1.-	w
+TAU_HUMAN	human	P10636	MAPT	P10636	98	506		

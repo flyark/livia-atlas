@@ -1,5 +1,206 @@
-SHU1	schizosaccharomyces-pombe	Q92340	shu1	Q92340	0	1	High affinity heme transporter
-SHUA	shigella-dysenteriae-serotype-1	Q32AX7	shuA	Q32AX7	1	19	Outer membrane heme/hemoglobin receptor
-SHUT	shigella-dysenteriae-serotype-1	Q32AX9	shuT	Q32AX9	2	16	Periplasmic binding protein
-SHUU	shigella-dysenteriae-serotype-1	Q32AY2	shuU	Q32AY2	7	10	Permease of iron compound ABC transport system
-SHUY	shigella-dysenteriae-serotype-1	Q32AY1	shuY	Q32AY1	0	35	NAD(P)-binding domain-containing protein
+SHU	fly	FBgn0003401	shu	Q9W1I9	6	24	Inactive peptidyl-prolyl cis-trans isomerase shutdown	
+SHU1	schizosaccharomyces-pombe	Q92340	shu1	Q92340	0	1	High affinity heme transporter	
+SHU1	yeast	P38751	SHU1	P38751	2	37	Suppressor of HU sensitivity involved in recombination prote	
+SHU2	yeast	P38957	SHU2	P38957	3	36	Suppressor of hydroxyurea sensitivity protein 2	
+SHUA	shigella-dysenteriae-serotype-1	Q32AX7	shuA	Q32AX7	1	19	Outer membrane heme/hemoglobin receptor	
+SHUGOSHIN	fly	FBgn0002715	mei-S332	Q24141	8	46	Shugoshin (Meiotic protein S332)	w
+SHUGOSHIN	human	Q562F6	SGO2	Q562F6	26	160	Shugoshin 2 (Shugoshin-2) (Shugoshin-like 2) (Tripin)	w
+SHUGOSHIN	human	Q5FBB7	SGO1	Q5FBB7	119	469	Shugoshin 1 (Serologically defined breast cancer antigen NY-	w
+SHUGOSHIN	worm	Q18412	sgo-1	Q18412	0	2	Shugoshin	w
+SHUGOSHIN	yeast	Q08490	SGO1	Q08490	6	30	Shugoshin	w
+SHUGOSHIN-2	human	Q562F6	SGO2	Q562F6	26	160	Shugoshin 2 (Shugoshin-2) (Shugoshin-like 2) (Tripin)	w
+SHUGOSHIN-LIKE	human	Q562F6	SGO2	Q562F6	26	160	Shugoshin 2 (Shugoshin-2) (Shugoshin-like 2) (Tripin)	w
+SHUGOSHIN-LIKE	human	Q5FBB7	SGO1	Q5FBB7	119	469	Shugoshin 1 (Serologically defined breast cancer antigen NY-	w
+SHULIN	human	Q5TEA3	DNAAF9	Q5TEA3	5	34	Dynein axonemal assembly factor 9 (DNAAF9) (Shulin)	w
+SHUT	fly	FBgn0031414	eys	A0A1F4	1	33	Protein eyes shut (Protein spacemaker)	w
+SHUT	human	Q5T1H1	EYS	Q5T1H1	1	4	Protein eyes shut homolog (Epidermal growth factor-like prot	w
+SHUT	shigella-dysenteriae-serotype-1	Q32AX9	shuT	Q32AX9	2	16	Periplasmic binding protein	
+SHUTDOWN	fly	FBgn0003401	shu	Q9W1I9	6	24	Inactive peptidyl-prolyl cis-trans isomerase shutdown	w
+SHUTOFF	virus	A0A059XDH4	L4	A0A059XDH4	4	30	Shutoff protein	w
+SHUTOFF	virus	A0A060Q4Z6	UL41	A0A060Q4Z6	6	68	Virion host shutoff protein	w
+SHUTOFF	virus	A0A077B9P1	ORF19	A0A077B9P1	7	76	Virion host shutoff protein	w
+SHUTOFF	virus	A0A097IWA2	L4	A0A097IWA2	3	34	Shutoff protein	w
+SHUTOFF	virus	A0A0A1EU38	L4	A0A0A1EU38	1	15	Shutoff protein	w
+SHUTOFF	virus	A0A0A1EU54	L4	A0A0A1EU54	1	15	Shutoff protein	w
+SHUTOFF	virus	A0A0A1EU68	L4	A0A0A1EU68	1	15	Shutoff protein	w
+SHUTOFF	virus	A0A0K0MGG6	18	A0A0K0MGG6	2	30	Shutoff protein	w
+SHUTOFF	virus	A0A0K1R1E2	UL41	A0A0K1R1E2	0	106	Virion host shutoff protein	w
+SHUTOFF	virus	A0A0M3TGZ3	L4	A0A0M3TGZ3	2	36	Shutoff protein	w
+SHUTOFF	virus	A0A0M4MFN8	L4	A0A0M4MFN8	1	36	Shutoff protein	w
+SHUTOFF	virus	A0A0M4MTX6	L4	A0A0M4MTX6	3	36	Shutoff protein	w
+SHUTOFF	virus	A0A0M4NFR8	L4	A0A0M4NFR8	1	36	Shutoff protein	w
+SHUTOFF	virus	A0A0M4NHJ5	L4	A0A0M4NHJ5	2	34	Shutoff protein	w
+SHUTOFF	virus	A0A0M5L6C2	p100K	A0A0M5L6C2	1	28	Shutoff protein	w
+SHUTOFF	virus	A0A120HUI3	UL41	A0A120HUI3	9	70	Virion host shutoff protein	w
+SHUTOFF	virus	A0A163HII0	L4	A0A163HII0	2	33	Shutoff protein	w
+SHUTOFF	virus	A0A172DSI1	UL41	A0A172DSI1	3	71	Virion host shutoff protein	w
+SHUTOFF	virus	A0A191ULJ9	L4	A0A191ULJ9	1	36	Shutoff protein	w
+SHUTOFF	virus	A0A191ULN8	L4	A0A191ULN8	2	37	Shutoff protein	w
+SHUTOFF	virus	A0A191ULR2	L4	A0A191ULR2	2	36	Shutoff protein	w
+SHUTOFF	virus	A0A191ULV3	L4	A0A191ULV3	1	36	Shutoff protein	w
+SHUTOFF	virus	A0A191ULZ2	L4	A0A191ULZ2	1	36	Shutoff protein	w
+SHUTOFF	virus	A0A191UM34	L4	A0A191UM34	1	36	Shutoff protein	w
+SHUTOFF	virus	A0A191UM66	L4	A0A191UM66	2	37	Shutoff protein	w
+SHUTOFF	virus	A0A1B0UHY0	L4	A0A1B0UHY0	1	27	Shutoff protein	w
+SHUTOFF	virus	A0A1B0UHZ9	L4	A0A1B0UHZ9	1	28	Shutoff protein	w
+SHUTOFF	virus	A0A1C8EG63	L4	A0A1C8EG63	2	32	Shutoff protein	w
+SHUTOFF	virus	A0A1J0FAQ7	L4	A0A1J0FAQ7	1	32	Shutoff protein	w
+SHUTOFF	virus	A0A1L3INX3	L4	A0A1L3INX3	2	34	Shutoff protein	w
+SHUTOFF	virus	A0A1L5JKF0	UL41	A0A1L5JKF0	4	68	Virion host shutoff protein	w
+SHUTOFF	virus	A0A1R3TFL0	UL41	A0A1R3TFL0	7	81	Virion host shutoff protein	w
+SHUTOFF	virus	A0A1S6JLM4	UL41	A0A1S6JLM4	4	66	Virion host shutoff protein	w
+SHUTOFF	virus	A0A1V0M8H8	CoHVHLJ_055	A0A1V0M8H8	8	106	Virion host shutoff protein	w
+SHUTOFF	virus	A0A1X7MMK8	L4	A0A1X7MMK8	1	29	Shutoff protein	w
+SHUTOFF	virus	A0A1X9RIU5	L4	A0A1X9RIU5	2	29	Shutoff protein	w
+SHUTOFF	virus	A0A1X9RIW7	L4	A0A1X9RIW7	2	30	Shutoff protein	w
+SHUTOFF	virus	A0A1X9WF42	UL41	A0A1X9WF42	8	71	Virion host shutoff protein	w
+SHUTOFF	virus	A0A1X9WFC8	UL41	A0A1X9WFC8	6	72	Virion host shutoff protein	w
+SHUTOFF	virus	A0A1Y0B6H4	L4	A0A1Y0B6H4	2	28	Shutoff protein	w
+SHUTOFF	virus	A0A240FBG6	L4	A0A240FBG6	2	29	Shutoff protein	w
+SHUTOFF	virus	A0A286RUI6	UL41	A0A286RUI6	3	79	Virion host shutoff protein	w
+SHUTOFF	virus	A0A288CG08	19	A0A288CG08	5	75	Virion host shutoff protein	w
+SHUTOFF	virus	A0A2H4CJW4	L4	A0A2H4CJW4	2	36	Shutoff protein	w
+SHUTOFF	virus	A0A2K9QRF5	ORF19	A0A2K9QRF5	4	75	Virion host shutoff protein	w
+SHUTOFF	virus	A0A344X9V4	L4	A0A344X9V4	2	25	Shutoff protein	w
+SHUTOFF	virus	A0A345S509	L4	A0A345S509	3	27	Shutoff protein	w
+SHUTOFF	virus	A0A348FKH1	L4	A0A348FKH1	1	30	Shutoff protein	w
+SHUTOFF	virus	A0A3G9F1D7	L4	A0A3G9F1D7	2	30	Shutoff protein	w
+SHUTOFF	virus	A0A3G9F1E9	L4	A0A3G9F1E9	1	30	Shutoff protein	w
+SHUTOFF	virus	A0A455JKZ7	UL41	A0A455JKZ7	4	67	Virion host shutoff protein	w
+SHUTOFF	virus	A0A455JL60	UL41	A0A455JL60	6	67	Virion host shutoff protein	w
+SHUTOFF	virus	A0A510J9U2	UL41	A0A510J9U2	5	68	Virion host shutoff protein	w
+SHUTOFF	virus	A0A5B8MBJ5	L4	A0A5B8MBJ5	1	29	Shutoff protein	w
+SHUTOFF	virus	A0A5B9R4Q4		A0A5B9R4Q4	3	78	Virion host shutoff protein	w
+SHUTOFF	virus	A0A5P9VI61	L4	A0A5P9VI61	2	31	Shutoff protein	w
+SHUTOFF	virus	A0A650BYJ9	L4	A0A650BYJ9	2	53	Shutoff protein	w
+SHUTOFF	virus	A0A679A5X9	L4	A0A679A5X9	2	36	Shutoff protein	w
+SHUTOFF	virus	A0A6M3Z4Z1	L4	A0A6M3Z4Z1	1	38	Shutoff protein	w
+SHUTOFF	virus	A0A7L7YSD5	UL41	A0A7L7YSD5	7	67	Virion host shutoff protein	w
+SHUTOFF	virus	A0A7S9YTF6		A0A7S9YTF6	3	77	Virion host shutoff protein	w
+SHUTOFF	virus	A0A9W3I4Q8	L4	A0A9W3I4Q8	3	32	Shutoff protein	w
+SHUTOFF	virus	A0A9W3INN9	L4	A0A9W3INN9	2	32	Shutoff protein	w
+SHUTOFF	virus	A0A9W3N355	L4	A0A9W3N355	4	34	Shutoff protein	w
+SHUTOFF	virus	A0A9W3N3B2	L4	A0A9W3N3B2	1	29	Shutoff protein	w
+SHUTOFF	virus	A0AAE6D010	UL41	A0AAE6D010	3	66	Virion host shutoff protein	w
+SHUTOFF	virus	A0AAE7MLK4	UL41	A0AAE7MLK4	9	67	Virion host shutoff protein	w
+SHUTOFF	virus	A0AAE8Y4S7	L4	A0AAE8Y4S7	2	30	Shutoff protein	w
+SHUTOFF	virus	A0ABX6WLU0	UL41	A0ABX6WLU0	7	71	Virion host shutoff protein	w
+SHUTOFF	virus	A0ABZ0T2N8	L4	A0ABZ0T2N8	1	27	Shutoff protein	w
+SHUTOFF	virus	A0MK59	100K	A0MK59	0	35	Shutoff protein	w
+SHUTOFF	virus	A4ZKK4	L4	A4ZKK4	4	15	Shutoff protein	w
+SHUTOFF	virus	A4ZKL9	L4	A4ZKL9	4	15	Shutoff protein	w
+SHUTOFF	virus	A9CB91	L4	A9CB91	2	28	Shutoff protein	w
+SHUTOFF	virus	B2VQF9	L4	B2VQF9	3	35	Shutoff protein	w
+SHUTOFF	virus	B5SNS8	L4	B5SNS8	3	32	Shutoff protein	w
+SHUTOFF	virus	B6DUA6	L4	B6DUA6	3	37	Shutoff protein	w
+SHUTOFF	virus	B7FEG1		B7FEG1	4	77	Virion host shutoff protein	w
+SHUTOFF	virus	B8XLH5	L4	B8XLH5	4	37	Shutoff protein	w
+SHUTOFF	virus	B9A5C3	L4	B9A5C3	2	36	Shutoff protein	w
+SHUTOFF	virus	C4P221	100K	C4P221	4	30	Shutoff protein	w
+SHUTOFF	virus	C7SRU3	L4	C7SRU3	3	36	Shutoff protein	w
+SHUTOFF	virus	D1FXU1	UL41	D1FXU1	4	73	Virion host shutoff protein	w
+SHUTOFF	virus	D3JIT3	L4	D3JIT3	2	35	Shutoff protein	w
+SHUTOFF	virus	D3X7C5	L4	D3X7C5	2	30	Shutoff protein	w
+SHUTOFF	virus	D4N3J3	L4	D4N3J3	4	40	Shutoff protein	w
+SHUTOFF	virus	E0YC71	L4	E0YC71	1	37	Shutoff protein	w
+SHUTOFF	virus	E1AI26	L4	E1AI26	3	36	Shutoff protein	w
+SHUTOFF	virus	E1CIK6	L4	E1CIK6	1	36	Shutoff protein	w
+SHUTOFF	virus	E1CIP2	L4	E1CIP2	3	40	Shutoff protein	w
+SHUTOFF	virus	E1U5P3	L4	E1U5P3	1	54	Shutoff protein	w
+SHUTOFF	virus	E2IUC8	UL41	E2IUC8	5	68	Virion host shutoff protein	w
+SHUTOFF	virus	E7CH45	L4	E7CH45	1	27	Shutoff protein	w
+SHUTOFF	virus	F2WTL3	L4	F2WTL3	3	32	Shutoff protein	w
+SHUTOFF	virus	F2WTP5	L4	F2WTP5	4	32	Shutoff protein	w
+SHUTOFF	virus	F6KSV2	L4	F6KSV2	2	32	Shutoff protein	w
+SHUTOFF	virus	F8TC38	UL41	F8TC38	13	107	Virion host shutoff protein	w
+SHUTOFF	virus	G0ZAI7	L4	G0ZAI7	1	35	Shutoff protein	w
+SHUTOFF	virus	G1FQN1	L4	G1FQN1	1	30	Shutoff protein	w
+SHUTOFF	virus	G3G8Y5	UL41	G3G8Y5	5	66	Virion host shutoff protein	w
+SHUTOFF	virus	G3GQZ9	UL41	G3GQZ9	3	74	Virion host shutoff protein	w
+SHUTOFF	virus	G5CZ89	100K	G5CZ89	1	31	Shutoff protein	w
+SHUTOFF	virus	G8HKL8	UL41	G8HKL8	6	75	Virion host shutoff protein	w
+SHUTOFF	virus	G9G857	L4	G9G857	4	31	Shutoff protein	w
+SHUTOFF	virus	G9I263	UL41	G9I263	7	74	Virion host shutoff protein	w
+SHUTOFF	virus	H6WWL7	L4	H6WWL7	4	38	Shutoff protein	w
+SHUTOFF	virus	H8PG07	L4	H8PG07	2	29	Shutoff protein	w
+SHUTOFF	virus	H8WQW3	100KDa	H8WQW3	2	48	Shutoff protein	w
+SHUTOFF	virus	H9AA91	L4	H9AA91	3	32	Shutoff protein	w
+SHUTOFF	virus	J9R077	UL41	J9R077	6	73	Virion host shutoff protein	w
+SHUTOFF	virus	K4PEM5	UL41	K4PEM5	3	71	Virion host shutoff protein	w
+SHUTOFF	virus	K7ZJW7	L4	K7ZJW7	3	40	Shutoff protein	w
+SHUTOFF	virus	K9MHU9	UL41	K9MHU9	8	73	Virion host shutoff protein	w
+SHUTOFF	virus	M0QTU0	L4	M0QTU0	4	39	Shutoff protein	w
+SHUTOFF	virus	M0QU17	L4	M0QU17	4	40	Shutoff protein	w
+SHUTOFF	virus	M0QU91	L4	M0QU91	4	40	Shutoff protein	w
+SHUTOFF	virus	M0QUD0	L4	M0QUD0	5	39	Shutoff protein	w
+SHUTOFF	virus	M0QUG9	L4	M0QUG9	5	40	Shutoff protein	w
+SHUTOFF	virus	M0QUK8	L4	M0QUK8	3	40	Shutoff protein	w
+SHUTOFF	virus	M0QUP7	L4	M0QUP7	5	40	Shutoff protein	w
+SHUTOFF	virus	M0QUU4	L4	M0QUU4	3	40	Shutoff protein	w
+SHUTOFF	virus	M0QUY4	L4	M0QUY4	4	40	Shutoff protein	w
+SHUTOFF	virus	M0QV23	L4	M0QV23	3	40	Shutoff protein	w
+SHUTOFF	virus	M0QV63	L4	M0QV63	4	40	Shutoff protein	w
+SHUTOFF	virus	M0QVA3	L4	M0QVA3	4	40	Shutoff protein	w
+SHUTOFF	virus	M0QVE2	L4	M0QVE2	4	40	Shutoff protein	w
+SHUTOFF	virus	M0QVI2	L4	M0QVI2	3	40	Shutoff protein	w
+SHUTOFF	virus	M0QVM1	L4	M0QVM1	4	40	Shutoff protein	w
+SHUTOFF	virus	M0QVR1	L4	M0QVR1	2	40	Shutoff protein	w
+SHUTOFF	virus	M0QVV0	L4	M0QVV0	4	40	Shutoff protein	w
+SHUTOFF	virus	M9YVE2	L4	M9YVE2	2	36	Shutoff protein	w
+SHUTOFF	virus	M9Z4H0	L4	M9Z4H0	2	34	Shutoff protein	w
+SHUTOFF	virus	M9Z4N2	L4	M9Z4N2	1	36	Shutoff protein	w
+SHUTOFF	virus	O36386	37	O36386	1	69	Shutoff alkaline exonuclease	w
+SHUTOFF	virus	P03217	BGLF5	P03217	0	91	Shutoff alkaline exonuclease	w
+SHUTOFF	virus	P09275	17	P09275	4	68	Virion host shutoff protein	w
+SHUTOFF	virus	P11823	L4	P11823	2	34	Shutoff protein	w
+SHUTOFF	virus	P24932	L4	P24932	2	45	Shutoff protein	w
+SHUTOFF	virus	P24933	L4	P24933	3	31	Shutoff protein	w
+SHUTOFF	virus	P28957	19	P28957	6	74	Virion host shutoff protein	w
+SHUTOFF	virus	P36714	L4	P36714	3	27	Shutoff protein	w
+SHUTOFF	virus	P68967	L4	P68967	2	30	Shutoff protein	w
+SHUTOFF	virus	P87565	L4	P87565	1	29	Shutoff protein	w
+SHUTOFF	virus	Q01013	37	Q01013	1	74	Shutoff alkaline exonuclease	w
+SHUTOFF	virus	Q09TY1	L4	Q09TY1	3	16	Shutoff protein	w
+SHUTOFF	virus	Q0PLX9	L4	Q0PLX9	3	27	Shutoff protein	w
+SHUTOFF	virus	Q2HR95	ORF37	Q2HR95	1	84	Shutoff alkaline exonuclease	w
+SHUTOFF	virus	Q2KRW7	L4	Q2KRW7	2	44	Shutoff protein	w
+SHUTOFF	virus	Q2KSA9	L4	Q2KSA9	3	48	Shutoff protein	w
+SHUTOFF	virus	Q2Y0H1	L4	Q2Y0H1	3	46	Shutoff protein	w
+SHUTOFF	virus	Q32UH0	L4	Q32UH0	1	39	Shutoff protein	w
+SHUTOFF	virus	Q3ZKU1	L4	Q3ZKU1	2	46	Shutoff protein	w
+SHUTOFF	virus	Q3ZKY6	L4	Q3ZKY6	1	41	Shutoff protein	w
+SHUTOFF	virus	Q4KSJ5	L4	Q4KSJ5	4	32	Shutoff protein	w
+SHUTOFF	virus	Q5C8P6	L4	Q5C8P6	2	35	Shutoff protein	w
+SHUTOFF	virus	Q5TJ01	L4 100k	Q5TJ01	4	39	Shutoff protein	w
+SHUTOFF	virus	Q5Y0R1	UL41	Q5Y0R1	6	72	Virion host shutoff protein	w
+SHUTOFF	virus	Q64760	L4	Q64760	2	38	Shutoff protein	w
+SHUTOFF	virus	Q66641	37	Q66641	1	76	Shutoff alkaline exonuclease	w
+SHUTOFF	virus	Q6H1C1	L4	Q6H1C1	5	37	Shutoff protein	w
+SHUTOFF	virus	Q6QPA1	L4	Q6QPA1	6	36	Shutoff protein	w
+SHUTOFF	virus	Q6QPD7	L4	Q6QPD7	3	36	Shutoff protein	w
+SHUTOFF	virus	Q6QPH3	L4	Q6QPH3	3	36	Shutoff protein	w
+SHUTOFF	virus	Q6RK84	L4	Q6RK84	2	28	Shutoff protein	w
+SHUTOFF	virus	Q6UDJ0	UL41	Q6UDJ0	2	69	Virion host shutoff protein	w
+SHUTOFF	virus	Q6X253	BHV5-15	Q6X253	4	70	Virion host shutoff protein	w
+SHUTOFF	virus	Q71BW5	L5	Q71BW5	3	36	Shutoff protein	w
+SHUTOFF	virus	Q7T5D6	UL41	Q7T5D6	7	72	Virion host shutoff protein	w
+SHUTOFF	virus	Q8B8T0	L4	Q8B8T0	5	38	Shutoff protein	w
+SHUTOFF	virus	Q8QVG8	L4	Q8QVG8	4	27	Shutoff protein	w
+SHUTOFF	virus	Q994D6	L4	Q994D6	1	27	Shutoff protein	w
+SHUTOFF	virus	Q9DGT2	HVT049	Q9DGT2	9	85	Virion host shutoff protein	w
+SHUTOFF	virus	Q9E1Z8		Q9E1Z8	4	68	Virion host shutoff protein	w
+SHUTOFF	virus	Q9E6N0	MDV054	Q9E6N0	5	87	Virion host shutoff protein	w
+SHUTOFF	virus	Q9ELS3	UL41	Q9ELS3	4	73	Virion host shutoff protein	w
+SHUTOFF	virus	Q9YTR7	L4	Q9YTR7	2	11	Shutoff protein	w
+SHUTOFF	virus	R4N0P4	L4	R4N0P4	2	38	Shutoff protein	w
+SHUTOFF	virus	U5NE11	L4	U5NE11	2	37	Shutoff protein	w
+SHUTOFF	virus	U5NHP3	L4	U5NHP3	1	32	Shutoff protein	w
+SHUTOFF-ASSOCIATED	human	Q9NTI5	PDS5B	Q9NTI5	48	325	Sister chromatid cohesion protein PDS5 homolog B (Androgen-i	w
+SHUTTLE	fly	FBgn0001978	stc	P40798	27	183	Protein shuttle craft	w
+SHUTTLING	human	Q9BVT8	TMUB1	Q9BVT8	19	109	Transmembrane and ubiquitin-like domain-containing protein 1	w
+SHUTTLING	yeast	P25555	GBP2	P25555	1	113	Serine/arginine (SR)-type shuttling mRNA binding protein GBP	w
+SHUTTLING	yeast	P38922	HRB1	P38922	3	88	Serine/arginine (SR)-type shuttling mRNA binding protein HRB	w
+SHUTTLING	yeast	P39715	ECM1	P39715	6	97	Shuttling pre-60S factor ECM1	w
+SHUTTLING	yeast	Q01560	NPL3	Q01560	19	158	Serine/arginine (SR)-type shuttling mRNA binding protein NPL	w
+SHUU	shigella-dysenteriae-serotype-1	Q32AY2	shuU	Q32AY2	7	10	Permease of iron compound ABC transport system	
+SHUY	shigella-dysenteriae-serotype-1	Q32AY1	shuY	Q32AY1	0	35	NAD(P)-binding domain-containing protein	

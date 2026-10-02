@@ -1,8 +1,79 @@
-AFF1	mus-musculus	O88573	Aff1	O88573	17	58	AF4/FMR2 family member 1
-AFF1	rattus-norvegicus	A0A0G2K0C8	Aff1	A0A0G2K0C8	20	60	ALF transcription elongation factor 1
-AFF2	mus-musculus	O55112	Aff2	O55112	4	7	AF4/FMR2 family member 2
-AFF2	rattus-norvegicus	A0A0G2K1Y9	Aff2	A0A0G2K1Y9	4	9	ALF transcription elongation factor 2
-AFF3	mus-musculus	P51827	Aff3	P51827	21	46	AF4/FMR2 family member 3
-AFF3	rattus-norvegicus	A0A0G2K1Y7	Aff3	A0A0G2K1Y7	17	53	ALF transcription elongation factor 3
-AFF4	mus-musculus	Q9ESC8	Aff4	Q9ESC8	24	72	AF4/FMR2 family member 4
-AFF4	rattus-norvegicus	D3ZSX2	Aff4	D3ZSX2	17	68	ALF transcription elongation factor 4
+AFF-1	worm	G5EGL9	aff-1	G5EGL9	0	2	Cell fusion protein aff-1	w
+AFF-1	worm	G5EGL9	aff-1	G5EGL9	0	2	Cell fusion protein aff-1	w
+AFF1	human	P51825	AFF1	P51825	67	199	AF4/FMR2 family member 1 (ALL1-fused gene from chromosome 4 	
+AFF1	mus-musculus	O88573	Aff1	O88573	17	58	AF4/FMR2 family member 1	
+AFF1	rattus-norvegicus	A0A0G2K0C8	Aff1	A0A0G2K0C8	20	60	ALF transcription elongation factor 1	
+AFF1_HUMAN	human	P51825	AFF1	P51825	67	199		
+AFF2	human	P51816	AFF2	P51816	52	134	AF4/FMR2 family member 2 (Protein FMR-2) (FMR2P) (Protein Ox	
+AFF2	mus-musculus	O55112	Aff2	O55112	4	7	AF4/FMR2 family member 2	
+AFF2	rattus-norvegicus	A0A0G2K1Y9	Aff2	A0A0G2K1Y9	4	9	ALF transcription elongation factor 2	
+AFF2	zebrafish	E7F2E1	aff2	E7F2E1	3	12	AF4/FMR2 family member 2	
+AFF2_HUMAN	human	P51816	AFF2	P51816	52	134		
+AFF3	human	P51826	AFF3	P51826	20	72	AF4/FMR2 family member 3 (Lymphoid nuclear protein related t	
+AFF3	mus-musculus	P51827	Aff3	P51827	21	46	AF4/FMR2 family member 3	
+AFF3	rattus-norvegicus	A0A0G2K1Y7	Aff3	A0A0G2K1Y7	17	53	ALF transcription elongation factor 3	
+AFF3	zebrafish	A0A8M3AW05	aff3	A0A8M3AW05	5	43	AF4/FMR2 family member 3	
+AFF3_HUMAN	human	P51826	AFF3	P51826	20	72		
+AFF4	human	Q9UHB7	AFF4	Q9UHB7	81	248	AF4/FMR2 family member 4 (ALL1-fused gene from chromosome 5q	
+AFF4	mus-musculus	Q9ESC8	Aff4	Q9ESC8	24	72	AF4/FMR2 family member 4	
+AFF4	rattus-norvegicus	D3ZSX2	Aff4	D3ZSX2	17	68	ALF transcription elongation factor 4	
+AFF4	zebrafish	I3ISK1	aff4	I3ISK1	17	64	AF4/FMR2 family member 4 isoform X2	
+AFF4_HUMAN	human	Q9UHB7	AFF4	Q9UHB7	81	248		
+AFFECTED	human	A1YPR0	ZBTB7C	A1YPR0	12	35	Zinc finger and BTB domain-containing protein 7C (Affected b	w
+AFFECTED	yeast	P38854	TDA11	P38854	0	7	Topoisomerase I damage affected protein 11	w
+AFFECTED	yeast	P40045	TDA2	P40045	2	16	Topoisomerase I damage affected protein 2	w
+AFFECTED	yeast	P47153	TDA4	P47153	0	10	Topoisomerase I damage affected protein 4	w
+AFFECTED	yeast	P53882	TDA7	P53882	2	22	Topoisomerase I damage affected protein 7	w
+AFFECTED	yeast	Q03533	TDA1	Q03533	3	42	Serine/threonine-protein kinase TDA1 (Topoisomerase I damage	w
+AFFECTED	yeast	Q6B2U8	TDA8	Q6B2U8	0	2	Topoisomerase I damage affected protein 8	w
+AFFECTING	human	Q8WXD0	RXFP2	Q8WXD0	13	101	Relaxin receptor 2 (G protein-coupled receptor 106) (G prote	w
+AFFECTING	worm	O62277	dct-18	O62277	0	6	DAF-16/FOXO Controlled, germline Tumor affecting	w
+AFFECTING	worm	Q23190	dct-11	Q23190	0	11	DAF-16/FOXO Controlled, germline Tumor affecting	w
+AFFECTING	worm	Q9XX55	dct-14	Q9XX55	1	8	DAF-16/FOXO Controlled, germline Tumor affecting	w
+AFFECTING	worm	Q9XX57	dct-16	Q9XX57	3	46	DAF-16/FOXO Controlled, germline Tumor affecting	w
+AFFECTING	yeast	Q03322	TLG1	Q03322	11	62	t-SNARE affecting a late Golgi compartment protein 1	w
+AFFECTING	yeast	Q08144	TLG2	Q08144	15	52	t-SNARE affecting a late Golgi compartment protein 2	w
+AFFINITY	human	O15431	SLC31A1	O15431	14	211	High affinity copper uptake protein 1 (Copper transporter 1)	w
+AFFINITY	human	O60658	PDE8A	O60658	7	60	High affinity cAMP-specific and IBMX-insensitive 3',5'-cycli	w
+AFFINITY	human	O75015	FCGR3B	O75015	57	361	Low affinity immunoglobulin gamma Fc region receptor III-B (	w
+AFFINITY	human	O76083	PDE9A	O76083	19	109	High affinity cGMP-specific 3',5'-cyclic phosphodiesterase 9	w
+AFFINITY	human	O95263	PDE8B	O95263	8	71	High affinity cAMP-specific and IBMX-insensitive 3',5'-cycli	w
+AFFINITY	human	P04629	NTRK1	P04629	273	3619	High affinity nerve growth factor receptor (EC 2.7.10.1) (Ne	w
+AFFINITY	human	P06734	FCER2	P06734	32	202	Low affinity immunoglobulin epsilon Fc receptor (BLAST-2) (C	w
+AFFINITY	human	P08138	NGFR	P08138	68	384	Tumor necrosis factor receptor superfamily member 16 (Gp80-L	w
+AFFINITY	human	P08637	FCGR3A	P08637	42	311	Low affinity immunoglobulin gamma Fc region receptor III-A (	w
+AFFINITY	human	P12314	FCGR1A	P12314	81	546	High affinity immunoglobulin gamma Fc receptor I (IgG Fc rec	w
+AFFINITY	human	P12318	FCGR2A	P12318	81	438	Low affinity immunoglobulin gamma Fc region receptor II-a (I	w
+AFFINITY	human	P12319	FCER1A	P12319	93	375	High affinity immunoglobulin epsilon receptor subunit alpha 	w
+AFFINITY	human	P13866	SLC5A1	P13866	8	89	Sodium/glucose cotransporter 1 (Na(+)/glucose cotransporter 	w
+AFFINITY	human	P14784	IL2RB	P14784	85	415	Interleukin-2 receptor subunit beta (IL-2 receptor subunit b	w
+AFFINITY	human	P25024	CXCR1	P25024	54	208	C-X-C chemokine receptor type 1 (CXC-R1) (CXCR-1) (CDw128a) 	w
+AFFINITY	human	P25025	CXCR2	P25025	57	364	C-X-C chemokine receptor type 2 (CXC-R2) (CXCR-2) (CDw128b) 	w
+AFFINITY	human	P30273	FCER1G	P30273	107	637	High affinity immunoglobulin epsilon receptor subunit gamma 	w
+AFFINITY	human	P30825	SLC7A1	P30825	12	260	High affinity cationic amino acid transporter 1 (CAT-1) (CAT	w
+AFFINITY	human	P31639	SLC5A2	P31639	17	103	Sodium/glucose cotransporter 2 (Na(+)/glucose cotransporter 	w
+AFFINITY	human	P31994	FCGR2B	P31994	78	345	Low affinity immunoglobulin gamma Fc region receptor II-b (I	w
+AFFINITY	human	P31995	FCGR2C	P31995	26	107	Low affinity immunoglobulin gamma Fc region receptor II-c (I	w
+AFFINITY	human	P52569	SLC7A2	P52569	5	166	Cationic amino acid transporter 2 (CAT-2) (CAT2) (Low affini	w
+AFFINITY	human	Q01362	MS4A2	Q01362	46	212	High affinity immunoglobulin epsilon receptor subunit beta (	w
+AFFINITY	human	Q13946	PDE7A	Q13946	11	67	High affinity 3',5'-cyclic-AMP phosphodiesterase 7A (EC 3.1.	w
+AFFINITY	human	Q8WWV6	FCAMR	Q8WWV6	7	29	High affinity immunoglobulin alpha and immunoglobulin mu Fc 	w
+AFFINITY	human	Q92637	FCGR1BP	Q92637	35	173	Putative high affinity immunoglobulin gamma Fc receptor IB (	w
+AFFINITY	human	Q9GZV3	SLC5A7	Q9GZV3	2	62	High affinity choline transporter 1 (hCHT1) (Hemicholinium-3	w
+AFFINITY	worm	Q9TW45	par-1	Q9TW45	33	71	Serine/threonine-protein kinase par-1 (EC 2.7.11.1) (Microtu	w
+AFFINITY	yeast	P32807	YKU70	P32807	7	59	ATP-dependent DNA helicase II subunit 1 (EC 3.6.4.12) (ATP-d	w
+AFFINITY	yeast	P42839	VNX1	P42839	0	13	Low affinity vacuolar monovalent cation/H(+) antiporter	w
+AFFINITY	yeast	P47114	KCH1	P47114	0	3	Low affinity K(+) transporter 1	w
+AFFINITY	yeast	Q08902	AMF1	Q08902	0	2	Low affinity ammonium transporter	w
+AFFINITY	yeast	Q12235	YCT1	Q12235	0	4	High affinity cysteine transporter	w
+AFFINITY	zebrafish	A0A8M6Z2B2	slc7a1b	A0A8M6Z2B2	0	22	High affinity cationic amino acid transporter 1b	w
+AFFINITY	zebrafish	E7EZ19	ntsr1	E7EZ19	13	33	Neurotensin receptor 1 (high affinity)	w
+AFFINITY-BINDING	human	P24588	AKAP5	P24588	28	151	A-kinase anchor protein 5 (AKAP-5) (A-kinase anchor protein 	w
+AFFINITY-REGULATING	human	P27448	MARK3	P27448	372	1515	MAP/microtubule affinity-regulating kinase 3 (EC 2.7.11.1) (	w
+AFFINITY-REGULATING	human	Q7KZI7	MARK2	Q7KZI7	337	1490	Serine/threonine-protein kinase MARK2 (EC 2.7.11.1) (EC 2.7.	w
+AFFINITY-REGULATING	human	Q96L34	MARK4	Q96L34	311	1289	MAP/microtubule affinity-regulating kinase 4 (EC 2.7.11.1) (	w
+AFFINITY-REGULATING	human	Q9P0L2	MARK1	Q9P0L2	308	1286	Serine/threonine-protein kinase MARK1 (EC 2.7.11.1) (EC 2.7.	w
+AFFINITY-REGULATING	zebrafish	A2CEF7	mark3b	A2CEF7	3	20	MAP/microtubule affinity-regulating kinase 3	w
+AFFINITY-REGULATING	zebrafish	R4GEN1	mark4b	R4GEN1	1	2	MAP/microtubule affinity-regulating kinase 3	w
+AFFIXIN	human	Q9HBI1	PARVB	Q9HBI1	7	62	Beta-parvin (Affixin)	w
+AFFL-2	worm	Q95XW7	affl-2	Q95XW7	1	3	AF4/FMR2 C-terminal homology domain-containing protein	

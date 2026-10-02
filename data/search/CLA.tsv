@@ -1,10 +1,781 @@
-CLA1	oryza-sativa-subsp-japonica	O22567	CLA1	O22567	0	5	1-deoxy-D-xylulose-5-phosphate synthase 1, chloroplastic
-CLA4	candida-albicans-237561	Q5APR8	CLA4	Q5APR8	6	16	Serine/threonine-protein kinase CLA4
-CLAG3.1	plasmodium-falciparum-36329	O77310	CLAG3.1	O77310	0	8	Cytoadherence-linked asexual protein 3.1
-CLASP	arabidopsis-thaliana	Q8RWY6	CLASP	Q8RWY6	0	13	CLIP-associated protein
-CLASP	dictyostelium-discoideum	Q55BD8	clasp	Q55BD8	0	1	CLIP-associating protein
-CLASP1	mus-musculus	A0A087WQF1	Clasp1	A0A087WQF1	2	30	CLIP-associating protein 1
-CLASP2	mus-musculus	Q8BRT1	Clasp2	Q8BRT1	2	24	CLIP-associating protein 2
-CLASP2	rattus-norvegicus	Q99JD4	Clasp2	Q99JD4	2	15	CLIP-associating protein 2
-CLASRP	mus-musculus	Q8CFC7	Clasrp	Q8CFC7	0	12	CLK4-associating serine/arginine rich protein
-CLASRP	rattus-norvegicus	Q5HZB6	Clasrp	Q5HZB6	0	19	CLK4-associating serine/arginine rich protein
+CLA-1	human	Q8WTV0	SCARB1	Q8WTV0	13	278	Scavenger receptor class B member 1 (SRB1) (CD36 and LIMPII 	w
+CLA1	human	Q8WTV0	SCARB1	Q8WTV0	13	278		
+CLA1	oryza-sativa-subsp-japonica	O22567	CLA1	O22567	0	5	1-deoxy-D-xylulose-5-phosphate synthase 1, chloroplastic	
+CLA2	yeast	P33314	BUD2	P33314	9	49	Inhibitory regulator protein BUD2/CLA2	w
+CLA4	candida-albicans-237561	Q5APR8	CLA4	Q5APR8	6	16	Serine/threonine-protein kinase CLA4	
+CLA4	yeast	P48562	CLA4	P48562	14	69	Serine/threonine-protein kinase CLA4	
+CLAC	fly	FBgn0032746	CG10470	Q9VJ11	1	84	Calcium load-activated calcium channel (CLAC channel)	w
+CLAC	human	Q9BXS0	COL25A1	Q9BXS0	7	39	Collagen alpha-1(XXV) chain (Alzheimer disease amyloid-assoc	w
+CLAC	human	Q9UM00	TMCO1	Q9UM00	11	209	Calcium load-activated calcium channel (CLAC channel) (GEL c	w
+CLAC-P	human	Q9BXS0	COL25A1	Q9BXS0	7	39	Collagen alpha-1(XXV) chain (Alzheimer disease amyloid-assoc	w
+CLADE	zebrafish	A0A8N7V0N1	serpina1l	A0A8N7V0N1	0	38	Serine (Or cysteine) proteinase inhibitor, clade A (Alpha-1 	w
+CLADE	zebrafish	Q5RIK7	serpinb1l2	Q5RIK7	0	9	Serpin peptidase inhibitor, clade B (Ovalbumin), member 1, l	w
+CLAG3.1	plasmodium-falciparum-36329	O77310	CLAG3.1	O77310	0	8	Cytoadherence-linked asexual protein 3.1	
+CLAMP	fly	FBgn0032979	Clamp	Q9V9N4	36	417	Chromatin-linked adaptor for MSL proteins	
+CLAMP	human	P12004	PCNA	P12004	187	767	DNA sliding clamp PCNA (Cyclin) (Proliferating cell nuclear 	w
+CLAMP	virus	B2BNE7	S8	B2BNE7	0	12	Clamp protein VP6	w
+CLAMP	virus	Q8JU54	S8	Q8JU54	0	12	Clamp protein VP6	w
+CLAN	human	Q9NPP4	NLRC4	Q9NPP4	4	78		
+CLAN1	human	Q9NPP4	NLRC4	Q9NPP4	4	78		
+CLAP	human	O95999	BCL10	O95999	31	252		
+CLAP1_HUMAN	human	Q7Z460	CLASP1	Q7Z460	30	177		
+CLAP2_HUMAN	human	O75122	CLASP2	O75122	27	166		
+CLAPA1	human	O95782	AP2A1	O95782	50	484		
+CLAPA2	human	O94973	AP2A2	O94973	54	415		
+CLAPB1	human	P63010	AP2B1	P63010	92	578		
+CLAPB2	human	Q10567	AP1B1	Q10567	74	395		
+CLAPG1	human	O43747	AP1G1	O43747	49	268		
+CLAPM1	human	Q96CW1	AP2M1	Q96CW1	97	709		
+CLAPS1	human	P61966	AP1S1	P61966	9	102		
+CLAPS2	human	P53680	AP2S1	P53680	28	252		
+CLAPS3	human	Q92572	AP3S1	Q92572	31	183		
+CLARET	fly	FBgn0000247	ca	Q9VAG5	1	3	Claret, isoform A (Claret, isoform C) (FI02178p)	w
+CLARET	fly	FBgn0002924	ncd	P20480	11	130	Protein claret segregational (EC 3.6.4.-) (Kinesin-14)	w
+CLARIN	zebrafish	Q6DGA8	clrn1	Q6DGA8	0	2	Clarin 1	w
+CLARIN-1	human	P58418	CLRN1	P58418	6	100	Clarin-1 (Usher syndrome type-3 protein)	w
+CLARIN-2	human	A0PK11	CLRN2	A0PK11	16	185	Clarin-2	w
+CLARIN-3	human	Q8NCR9	CLRN3	Q8NCR9	7	89	Clarin-3 (Transmembrane protein 12) (Usher syndrome type-3A-	w
+CLARIN-3	zebrafish	A0A0G2KJ86	clrn3	A0A0G2KJ86	0	16	Clarin-3	w
+CLARP	human	O15519	CFLAR	O15519	34	264		
+CLASP	arabidopsis-thaliana	Q8RWY6	CLASP	Q8RWY6	0	13	CLIP-associated protein	
+CLASP	dictyostelium-discoideum	Q55BD8	clasp	Q55BD8	0	1	CLIP-associating protein	
+CLASP	worm	Q20712	CELE_F53B3.3	Q20712	0	8	CLASP_N domain-containing protein	w
+CLASP-1	worm	Q95YF0	cls-1	Q95YF0	0	3	Protein CLASP-1	w
+CLASP-2	worm	P32744	cls-2	P32744	4	12	Protein CLASP-2	w
+CLASP-3	worm	Q03609	cls-3	Q03609	0	7	Protein CLASP-3	w
+CLASP1	human	Q7Z460	CLASP1	Q7Z460	30	177	CLIP-associating protein 1 (Cytoplasmic linker-associated pr	
+CLASP1	mus-musculus	A0A087WQF1	Clasp1	A0A087WQF1	2	30	CLIP-associating protein 1	
+CLASP2	human	O75122	CLASP2	O75122	27	166	CLIP-associating protein 2 (Cytoplasmic linker-associated pr	
+CLASP2	mus-musculus	Q8BRT1	Clasp2	Q8BRT1	2	24	CLIP-associating protein 2	
+CLASP2	rattus-norvegicus	Q99JD4	Clasp2	Q99JD4	2	15	CLIP-associating protein 2	
+CLASP2	zebrafish	Q6NYW6	clasp2	Q6NYW6	1	11	CLIP-associating protein 2	
+CLASPIN	fly	FBgn0052251	Claspin	Q8IRB5	5	42	Claspin	w
+CLASPIN	fly	FBgn0052251	Claspin	Q8IRB5	5	42	Claspin	w
+CLASPIN	human	Q9HAW4	CLSPN	Q9HAW4	68	352	Claspin (hClaspin)	w
+CLASPIN	worm	O17838	clsp-1	O17838	4	23	Claspin	w
+CLASRP	human	Q8N2M8	CLASRP	Q8N2M8	37	261	CLK4-associating serine/arginine rich protein (Splicing fact	
+CLASRP	mus-musculus	Q8CFC7	Clasrp	Q8CFC7	0	12	CLK4-associating serine/arginine rich protein	
+CLASRP	rattus-norvegicus	Q5HZB6	Clasrp	Q5HZB6	0	19	CLK4-associating serine/arginine rich protein	
+CLASRP	zebrafish	Q1LUX7	clasrp	Q1LUX7	0	18	CLK4-associating serine/arginine rich protein	
+CLASR_HUMAN	human	Q8N2M8	CLASRP	Q8N2M8	37	261		
+CLASS	fly	FBgn0011566	Smyd3	Q9W4X8	9	18	EG:BACR7C10.4 protein (MIP05435p) (SET and MYND domain conta	w
+CLASS	fly	FBgn0014033	Sr-CI	Q9V3H7	0	9	SR-CI (Scavenger receptor class C, type I, isoform A) (Scave	w
+CLASS	fly	FBgn0020376	Sr-CIII	Q9N2Q3	14	246	Scavenger receptor class C, type III (Scavenger receptor-lik	w
+CLASS	fly	FBgn0020377	Sr-CII	A1Z8V0	0	9	Scavenger receptor class C, type II, isoform A (Scavenger re	w
+CLASS	fly	FBgn0023545	PIG-K	Q8T4E1	13	69	Putative GPI-anchor transamidase (GPI transamidase) (EC 3.-.	w
+CLASS	fly	FBgn0030035	PIG-T	Q9W3G0	5	18	Phosphatidylinositol glycan anchor biosynthesis class T (RE5	w
+CLASS	fly	FBgn0031422	PIG-Wa	Q9VQB8	1	15	Phosphatidylinositol-glycan biosynthesis class W protein (EC	w
+CLASS	fly	FBgn0031547	Sr-CIV	Q9VQS2	11	258	RT07201p (Scavenger receptor class C, type IV)	w
+CLASS	fly	FBgn0032052	PIG-U	Q9VLK0	3	20	LD37974p (Phosphatidylinositol glycan anchor biosynthesis cl	w
+CLASS	fly	FBgn0033427	Smyd4-1	A1Z7W1	0	10	SET and MYND domain containing, class 4, member 1, isoform B	w
+CLASS	fly	FBgn0033633	Smyd4-3	A1Z8L3	1	7	SET and MYND domain containing, class 4, member 3	w
+CLASS	fly	FBgn0035265	PIG-Wb	Q9W096	1	11	Phosphatidylinositol-glycan biosynthesis class W protein (EC	w
+CLASS	fly	FBgn0035435	PIG-C	Q9VZR1	6	127	Phosphatidylinositol glycan anchor biosynthesis class C	w
+CLASS	fly	FBgn0035464	PIG-B	Q9VZM5	2	14	GPI mannosyltransferase 3 (EC 2.4.1.-) (GPI mannosyltransfer	w
+CLASS	fly	FBgn0035904	GstO3	Q9VSL2	51	227	Glutathione S transferase O3 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
+CLASS	fly	FBgn0035906	GstO2	Q9VSL5	27	110	Glutathione S transferase O2, isoform A (EC 1.8.5.1, EC 2.5.	w
+CLASS	fly	FBgn0035907	GstO1	Q9VSL6	22	103	Glutathione S transferase O1 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
+CLASS	fly	FBgn0036282	Smyd4-2	Q9VTX2	3	16	RE32936p (SET and MYND domain containing, class 4, member 2)	w
+CLASS	fly	FBgn0036893	PIG-F	Q9VW21	2	20	Phosphatidylinositol glycan anchor biosynthesis class F	w
+CLASS	fly	FBgn0037535	PIG-H	Q9VHX6	8	65	IP07787p (Phosphatidylinositol glycan anchor biosynthesis cl	w
+CLASS	fly	FBgn0039405	PIG-P	Q8MSE4	4	17	GM30016p2 (Phosphatidylinositol glycan anchor biosynthesis c	w
+CLASS	fly	FBgn0050381	PIG-X	A0A0B4LES9	4	103	Phosphatidylinositol-glycan biosynthesis class X protein	w
+CLASS	fly	FBgn0086448	PIG-Q	Q8IR17	1	16	Phosphatidylinositol glycan anchor biosynthesis class Q, iso	w
+CLASS	fly	FBgn0259176	bun	Q24523	28	112	Protein bunched, class 2/F/G isoform (Protein shortsighted)	w
+CLASS	fly	FBgn0261397	didum	A1Z6Z8	13	86	Dilute class unconventional myosin, isoform C	w
+CLASS	fly	FBgn0265190	PIG-S	Q9VC10	5	24	Phosphatidylinositol glycan anchor biosynthesis class S (SD1	w
+CLASS	fly	FBgn0266438	PIG-Z	Q8MT80	0	7	GPI mannosyltransferase 4 (EC 2.4.1.-) (GPI mannosyltransfer	w
+CLASS	human	A8K830	POU2AF3	A8K830	4	7	POU class 2 homeobox associating factor 3 (Cancer susceptibi	w
+CLASS	human	A9YTQ3	AHRR	A9YTQ3	16	35	Aryl hydrocarbon receptor repressor (AhR repressor) (AhRR) (	w
+CLASS	human	F6UB75	?	F6UB75	13	22	MHC class II beta chain N-terminal domain-containing protein	w
+CLASS	human	O00754	MAN2B1	O00754	2	72	Lysosomal alpha-mannosidase (Laman) (EC 3.2.1.24) (Lysosomal	w
+CLASS	human	O14503	BHLHE40	O14503	161	549	Class E basic helix-loop-helix protein 40 (bHLHe40) (Class B	w
+CLASS	human	O14948	TFEC	O14948	106	419	Transcription factor EC (TFE-C) (Class E basic helix-loop-he	w
+CLASS	human	O15165	LDLRAD4	O15165	31	128	Low-density lipoprotein receptor class A domain-containing p	w
+CLASS	human	O15516	CLOCK	O15516	51	195	Circadian locomoter output cycles protein kaput (hCLOCK) (EC	w
+CLASS	human	O43520	ATP8B1	O43520	11	86	Phospholipid-transporting ATPase IC (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	O43680	TCF21	O43680	48	387	Transcription factor 21 (TCF-21) (Capsulin) (Class A basic h	w
+CLASS	human	O43861	ATP9B	O43861	3	52	Probable phospholipid-transporting ATPase IIB (EC 7.6.2.1) (	w
+CLASS	human	O60312	ATP10A	O60312	3	43	Phospholipid-transporting ATPase VA (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	O60423	ATP8B3	O60423	9	42	Phospholipid-transporting ATPase IK (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	O60476	MAN1A2	O60476	8	111	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IB (EC 3.2.1.	w
+CLASS	human	O60682	MSC	O60682	69	380	Musculin (Activated B-cell factor 1) (ABF-1) (Class A basic 	w
+CLASS	human	O75030	MITF	O75030	136	458	Microphthalmia-associated transcription factor (Class E basi	w
+CLASS	human	O75110	ATP9A	O75110	8	120	Probable phospholipid-transporting ATPase IIA (EC 7.6.2.1) (	w
+CLASS	human	O94823	ATP10B	O94823	3	36	Phospholipid-transporting ATPase VB (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	O95427	PIGN	O95427	5	96	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-) (GPI-e	w
+CLASS	human	O96004	HAND1	O96004	63	358	Heart- and neural crest derivatives-expressed protein 1 (Cla	w
+CLASS	human	P01106	MYC	P01106	1020	3715	Myc proto-oncogene protein (Class E basic helix-loop-helix p	w
+CLASS	human	P01889	HLA-B	P01889	623	1802	HLA class I histocompatibility antigen, B alpha chain (Human	w
+CLASS	human	P01893	HLA-H	P01893	69	356	Putative HLA class I histocompatibility antigen, alpha chain	w
+CLASS	human	P01903	HLA-DRA	P01903	259	1187	HLA class II histocompatibility antigen, DR alpha chain (MHC	w
+CLASS	human	P01906	HLA-DQA2	P01906	67	404	HLA class II histocompatibility antigen, DQ alpha 2 chain (D	w
+CLASS	human	P01909	HLA-DQA1	P01909	33	195	HLA class II histocompatibility antigen, DQ alpha 1 chain (D	w
+CLASS	human	P01911	HLA-DRB1	P01911	116	1148	HLA class II histocompatibility antigen, DRB1 beta chain (Hu	w
+CLASS	human	P01920	HLA-DQB1	P01920	20	180	HLA class II histocompatibility antigen, DQ beta 1 chain (MH	w
+CLASS	human	P04198	MYCN	P04198	429	1440	N-myc proto-oncogene protein (Class E basic helix-loop-helix	w
+CLASS	human	P04233	CD74	P04233	90	1271	HLA class II histocompatibility antigen gamma chain (HLA-DR 	w
+CLASS	human	P04439	HLA-A	P04439	793	1948	HLA class I histocompatibility antigen, A alpha chain (Human	w
+CLASS	human	P04440	HLA-DPB1	P04440	49	460	HLA class II histocompatibility antigen, DP beta 1 chain (HL	w
+CLASS	human	P05091	ALDH2	P05091	18	209	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
+CLASS	human	P05538	HLA-DQB2	P05538	43	258	HLA class II histocompatibility antigen, DQ beta 2 chain (HL	w
+CLASS	human	P06340	HLA-DOA	P06340	50	259	HLA class II histocompatibility antigen, DO alpha chain (MHC	w
+CLASS	human	P08319	ADH4	P08319	10	107	All-trans-retinol dehydrogenase [NAD(+)] ADH4 (EC 1.1.1.105)	w
+CLASS	human	P09086	POU2F2	P09086	141	403	POU domain, class 2, transcription factor 2 (Lymphoid-restri	w
+CLASS	human	P0DPI2	GATD3	P0DPI2	3	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+CLASS	human	P10321	HLA-C	P10321	527	1517	HLA class I histocompatibility antigen, C alpha chain (HLA-C	w
+CLASS	human	P11766	ADH5	P11766	10	154	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
+CLASS	human	P12524	MYCL	P12524	38	90	Protein L-Myc (Class E basic helix-loop-helix protein 38) (b	w
+CLASS	human	P12980	LYL1	P12980	85	379	Protein lyl-1 (Class A basic helix-loop-helix protein 18) (b	w
+CLASS	human	P13349	MYF5	P13349	119	441	Myogenic factor 5 (Myf-5) (Class C basic helix-loop-helix pr	w
+CLASS	human	P13747	HLA-E	P13747	369	741	HLA class I histocompatibility antigen, alpha chain E (MHC c	w
+CLASS	human	P13762	HLA-DRB4	P13762	47	224	HLA class II histocompatibility antigen, DR beta 4 chain (MH	w
+CLASS	human	P13765	HLA-DOB	P13765	43	321	HLA class II histocompatibility antigen, DO beta chain (MHC 	w
+CLASS	human	P14859	POU2F1	P14859	57	255	POU domain, class 2, transcription factor 1 (NF-A1) (Octamer	w
+CLASS	human	P15172	MYOD1	P15172	196	630	Myoblast determination protein 1 (Class C basic helix-loop-h	w
+CLASS	human	P15173	MYOG	P15173	145	528	Myogenin (Class C basic helix-loop-helix protein 3) (bHLHc3)	w
+CLASS	human	P15884	TCF4	P15884	118	306	Transcription factor 4 (TCF-4) (Class B basic helix-loop-hel	w
+CLASS	human	P15923	TCF3	P15923	130	329	Transcription factor E2-alpha (Class B basic helix-loop-heli	w
+CLASS	human	P17542	TAL1	P17542	113	512	T-cell acute lymphocytic leukemia protein 1 (TAL-1) (Class A	w
+CLASS	human	P17693	HLA-G	P17693	447	1007	HLA class I histocompatibility antigen, alpha chain G (HLA G	w
+CLASS	human	P19484	TFEB	P19484	134	443	Transcription factor EB (Class E basic helix-loop-helix prot	w
+CLASS	human	P19532	TFE3	P19532	123	434	Transcription factor E3 (Class E basic helix-loop-helix prot	w
+CLASS	human	P20036	HLA-DPA1	P20036	120	563	HLA class II histocompatibility antigen, DP alpha 1 chain (D	w
+CLASS	human	P20264	POU3F3	P20264	137	391	POU domain, class 3, transcription factor 3 (Brain-specific 	w
+CLASS	human	P20265	POU3F2	P20265	119	378	POU domain, class 3, transcription factor 2 (Brain-specific 	w
+CLASS	human	P21757	MSR1	P21757	61	322	Macrophage scavenger receptor types I and II (Macrophage ace	w
+CLASS	human	P22415	USF1	P22415	73	489	Upstream stimulatory factor 1 (Class B basic helix-loop-heli	w
+CLASS	human	P22670	RFX1	P22670	17	168	MHC class II regulatory factor RFX1 (Enhancer factor C) (EF-	w
+CLASS	human	P23409	MYF6	P23409	106	406	Myogenic factor 6 (Myf-6) (Class C basic helix-loop-helix pr	w
+CLASS	human	P27540	ARNT	P27540	55	302	Aryl hydrocarbon receptor nuclear translocator (ARNT protein	w
+CLASS	human	P27824	CANX	P27824	134	1250	Calnexin (IP90) (Major histocompatibility complex class I an	w
+CLASS	human	P28067	HLA-DMA	P28067	86	369	HLA class II histocompatibility antigen, DM alpha chain (MHC	w
+CLASS	human	P28068	HLA-DMB	P28068	54	385	HLA class II histocompatibility antigen, DM beta chain (MHC 	w
+CLASS	human	P30511	HLA-F	P30511	40	404	HLA class I histocompatibility antigen, alpha chain F (CDA12	w
+CLASS	human	P33076	CIITA	P33076	4	58	MHC class II transactivator (CIITA) (EC 2.3.1.-) (EC 2.7.11.	w
+CLASS	human	P33908	MAN1A1	P33908	19	149	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA (EC 3.2.1.	w
+CLASS	human	P35869	AHR	P35869	36	161	Aryl hydrocarbon receptor (Ah receptor) (AhR) (Class E basic	w
+CLASS	human	P36956	SREBF1	P36956	35	227	Sterol regulatory element-binding protein 1 (SREBP-1) (Class	w
+CLASS	human	P37287	PIGA	P37287	13	110	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
+CLASS	human	P40394	ADH7	P40394	10	99	All-trans-retinol dehydrogenase [NAD(+)] ADH7 (EC 1.1.1.105)	w
+CLASS	human	P41134	ID1	P41134	77	489	DNA-binding protein inhibitor ID-1 (Class B basic helix-loop	w
+CLASS	human	P47928	ID4	P47928	88	417	DNA-binding protein inhibitor ID-4 (Class B basic helix-loop	w
+CLASS	human	P49335	POU3F4	P49335	127	351	POU domain, class 3, transcription factor 4 (Brain-specific 	w
+CLASS	human	P49641	MAN2A2	P49641	4	110	Alpha-mannosidase 2x (EC 3.2.1.114) (Alpha-mannosidase IIx) 	w
+CLASS	human	P50539	MXI1	P50539	107	400	Max-interacting protein 1 (Max interactor 1) (Class C basic 	w
+CLASS	human	P50553	ASCL1	P50553	91	409	Achaete-scute homolog 1 (ASH-1) (hASH1) (Class A basic helix	w
+CLASS	human	P61244	MAX	P61244	130	644	Protein max (Class D basic helix-loop-helix protein 4) (bHLH	w
+CLASS	human	P61296	HAND2	P61296	83	410	Heart- and neural crest derivatives-expressed protein 2 (Cla	w
+CLASS	human	P78424	POU6F2	P78424	28	143	POU domain, class 6, transcription factor 2 (Retina-derived 	w
+CLASS	human	P79483	HLA-DRB3	P79483	47	314	HLA class II histocompatibility antigen, DR beta 3 chain (MH	w
+CLASS	human	P79522	PRR3	P79522	19	344	Proline-rich protein 3 (MHC class I region proline-rich prot	w
+CLASS	human	P81133	SIM1	P81133	17	49	Single-minded homolog 1 (Class E basic helix-loop-helix prot	w
+CLASS	human	P98196	ATP11A	P98196	19	108	Phospholipid-transporting ATPase IH (EC 7.6.2.1) (ATPase IS)	w
+CLASS	human	P98198	ATP8B2	P98198	11	104	Phospholipid-transporting ATPase ID (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	Q01664	TFAP4	Q01664	143	559	Transcription factor AP-4 (Activating enhancer-binding prote	w
+CLASS	human	Q01851	POU4F1	Q01851	98	356	POU domain, class 4, transcription factor 1 (Brain-specific 	w
+CLASS	human	Q01860	POU5F1	Q01860	157	759	POU domain, class 5, transcription factor 1 (Octamer-binding	w
+CLASS	human	Q02363	ID2	Q02363	102	538	DNA-binding protein inhibitor ID-2 (Class B basic helix-loop	w
+CLASS	human	Q02535	ID3	Q02535	86	486	DNA-binding protein inhibitor ID-3 (Class B basic helix-loop	w
+CLASS	human	Q02575	NHLH1	Q02575	98	498	Helix-loop-helix protein 1 (HEN-1) (Class A basic helix-loop	w
+CLASS	human	Q02577	NHLH2	Q02577	90	431	Helix-loop-helix protein 2 (HEN-2) (Class A basic helix-loop	w
+CLASS	human	Q03052	POU3F1	Q03052	133	369	POU domain, class 3, transcription factor 1 (Octamer-binding	w
+CLASS	human	Q06416	POU5F1B	Q06416	81	535	POU domain, class 5, transcription factor 1B (Oct4-pg1) (Oct	w
+CLASS	human	Q0VG99	MESP2	Q0VG99	130	363	Mesoderm posterior protein 2 (Class C basic helix-loop-helix	w
+CLASS	human	Q12772	SREBF2	Q12772	55	363	Sterol regulatory element-binding protein 2 (SREBP-2) (Class	w
+CLASS	human	Q12837	POU4F2	Q12837	103	433	POU domain, class 4, transcription factor 2 (Brain-specific 	w
+CLASS	human	Q12870	TCF15	Q12870	78	370	Transcription factor 15 (TCF-15) (Class A basic helix-loop-h	w
+CLASS	human	Q13516	OLIG2	Q13516	84	405	Oligodendrocyte transcription factor 2 (Oligo2) (Class B bas	w
+CLASS	human	Q13562	NEUROD1	Q13562	90	406	Neurogenic differentiation factor 1 (NeuroD) (NeuroD1) (Clas	w
+CLASS	human	Q13885	TUBB2A	Q13885	122	1941	Tubulin beta-2A chain (Tubulin beta class IIa)	w
+CLASS	human	Q14162	SCARF1	Q14162	14	80	Scavenger receptor class F member 1 (Acetyl LDL receptor) (S	w
+CLASS	human	Q14190	SIM2	Q14190	7	44	Single-minded homolog 2 (Class E basic helix-loop-helix prot	w
+CLASS	human	Q14442	PIGH	Q14442	17	201	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
+CLASS	human	Q14469	HES1	Q14469	42	404	Transcription factor HES-1 (Class B basic helix-loop-helix p	w
+CLASS	human	Q14582	MXD4	Q14582	119	384	Max dimerization protein 4 (Max dimerizer 4) (Class C basic 	w
+CLASS	human	Q14863	POU6F1	Q14863	96	336	POU domain, class 6, transcription factor 1 (Brain-specific 	w
+CLASS	human	Q14954	KIR2DS1	Q14954	7	34	Killer cell immunoglobulin-like receptor 2DS1 (CD158 antigen	w
+CLASS	human	Q15319	POU4F3	Q15319	118	408	POU domain, class 4, transcription factor 3 (Brain-specific 	w
+CLASS	human	Q15596	NCOA2	Q15596	138	398	Nuclear receptor coactivator 2 (NCoA-2) (Class E basic helix	w
+CLASS	human	Q15672	TWIST1	Q15672	59	475	Twist-related protein 1 (Class A basic helix-loop-helix prot	w
+CLASS	human	Q15784	NEUROD2	Q15784	77	356	Neurogenic differentiation factor 2 (NeuroD2) (Class A basic	w
+CLASS	human	Q15788	NCOA1	Q15788	134	383	Nuclear receptor coactivator 1 (NCoA-1) (EC 2.3.1.48) (Class	w
+CLASS	human	Q15853	USF2	Q15853	85	450	Upstream stimulatory factor 2 (Class B basic helix-loop-heli	w
+CLASS	human	Q16559	TAL2	Q16559	73	379	T-cell acute lymphocytic leukemia protein 2 (TAL-2) (Class A	w
+CLASS	human	Q16633	POU2AF1	Q16633	17	117	POU domain class 2-associating factor 1 (B-cell-specific coa	w
+CLASS	human	Q16665	HIF1A	Q16665	117	641	Hypoxia-inducible factor 1-alpha (HIF-1-alpha) (HIF1-alpha) 	w
+CLASS	human	Q16706	MAN2A1	Q16706	7	95	Alpha-mannosidase 2 (EC 3.2.1.114) (Golgi alpha-mannosidase 	w
+CLASS	human	Q29980	MICB	Q29980	43	316	MHC class I polypeptide-related sequence B (MIC-B)	w
+CLASS	human	Q29983	MICA	Q29983	14	116	MHC class I polypeptide-related sequence A (MIC-A)	w
+CLASS	human	Q30154	HLA-DRB5	Q30154	77	621	HLA class II histocompatibility antigen, DR beta 5 chain (DR	w
+CLASS	human	Q3MUY2	PIGY	Q3MUY2	13	67	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
+CLASS	human	Q3ZCM7	TUBB8	Q3ZCM7	76	751	Tubulin beta-8 chain (Tubulin beta 8 class VIII)	w
+CLASS	human	Q5H8A4	PIGG	Q5H8A4	19	85	GPI ethanolamine phosphate transferase 2, catalytic subunit 	w
+CLASS	human	Q5KU26	COLEC12	Q5KU26	25	181	Collectin-12 (Collectin placenta protein 1) (CL-P1) (hCL-P1)	w
+CLASS	human	Q5SU54	HLA-DQB1	Q5SU54	14	99	MHC class II antigen	w
+CLASS	human	Q5SZI1	LDLRAD2	Q5SZI1	6	28	Low-density lipoprotein receptor class A domain-containing p	w
+CLASS	human	Q5T700	LDLRAD1	Q5T700	29	282	Low-density lipoprotein receptor class A domain-containing p	w
+CLASS	human	Q5TA89	HES5	Q5TA89	74	410	Transcription factor HES-5 (Class B basic helix-loop-helix p	w
+CLASS	human	Q5TGS1	HES3	Q5TGS1	81	383	Transcription factor HES-3 (Class B basic helix-loop-helix p	w
+CLASS	human	Q5VYJ5	MALRD1	Q5VYJ5	1	47	MAM and LDL-receptor class A domain-containing protein 1	w
+CLASS	human	Q5Y7H0	HLA-DQA1	Q5Y7H0	18	94	HLA class II histocompatibility antigen DQ alpha chain	w
+CLASS	human	Q6AZY7	SCARA3	Q6AZY7	24	180	Scavenger receptor class A member 3 (Cellular stress respons	w
+CLASS	human	Q6NSI8	SANBR	Q6NSI8	9	26	SANT and BTB domain regulator of class switch recombination 	w
+CLASS	human	Q6QHK4	FIGLA	Q6QHK4	66	376	Factor in the germline alpha (FIGalpha) (Class C basic helix	w
+CLASS	human	Q6XD76	ASCL4	Q6XD76	81	368	Achaete-scute homolog 4 (ASH-4) (hASH4) (Achaete-scute-like 	w
+CLASS	human	Q6ZMJ2	SCARA5	Q6ZMJ2	23	108	Scavenger receptor class A member 5 (Scavenger receptor hlg)	w
+CLASS	human	Q6ZSS7	MFSD6	Q6ZSS7	5	60	Major facilitator superfamily domain-containing protein 6 (M	w
+CLASS	human	Q7RTS1	BHLHA15	Q7RTS1	117	470	Class A basic helix-loop-helix protein 15 (bHLHa15) (Class B	w
+CLASS	human	Q7RTS3	PTF1A	Q7RTS3	76	369	Pancreas transcription factor 1 subunit alpha (Class A basic	w
+CLASS	human	Q7RTU1	TCF23	Q7RTU1	17	31	Transcription factor 23 (TCF-23) (Class A basic helix-loop-h	w
+CLASS	human	Q7RTU3	OLIG3	Q7RTU3	69	372	Oligodendrocyte transcription factor 3 (Oligo3) (Class B bas	w
+CLASS	human	Q7RTU4	BHLHA9	Q7RTU4	108	372	Class A basic helix-loop-helix protein 9 (bHLHa9) (Class F b	w
+CLASS	human	Q7RTU5	ASCL5	Q7RTU5	96	347	Achaete-scute homolog 5 (ASH-5) (hASH5) (Class A basic helix	w
+CLASS	human	Q7RTU7	SCX	Q7RTU7	88	354	Basic helix-loop-helix transcription factor scleraxis (Class	w
+CLASS	human	Q7Z7B1	PIGW	Q7Z7B1	2	43	Glucosaminyl-phosphatidylinositol-acyltransferase PIGW (GlcN	w
+CLASS	human	Q86VD9	PIGZ	Q86VD9	0	23	GPI alpha-1,2-mannosyltransferase 4 (EC 2.4.1.-) (GPI mannos	w
+CLASS	human	Q86WS4	REDIC1	Q86WS4	4	15	Regulator of DNA class I crossover intermediates 1	w
+CLASS	human	Q86YD5	LDLRAD3	Q86YD5	6	51	Low-density lipoprotein receptor class A domain-containing p	w
+CLASS	human	Q8IUM7	NPAS4	Q8IUM7	16	68	Neuronal PAS domain-containing protein 4 (Neuronal PAS4) (Cl	w
+CLASS	human	Q8IXF0	NPAS3	Q8IXF0	16	45	Neuronal PAS domain-containing protein 3 (Neuronal PAS3) (Ba	w
+CLASS	human	Q8IXP5	POU2AF2	Q8IXP5	2	16	POU domain class 2-associating factor 2 (Oct coactivator fro	w
+CLASS	human	Q8N100	ATOH7	Q8N100	75	413	Transcription factor ATOH7 (Atonal bHLH transcription factor	w
+CLASS	human	Q8N7G0	POU5F2	Q8N7G0	80	332	POU domain, class 5, transcription factor 2 (Sperm 1 POU dom	w
+CLASS	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+CLASS	human	Q8NB49	ATP11C	Q8NB49	15	155	Phospholipid-transporting ATPase IG (EC 7.6.2.1) (ATPase IQ)	w
+CLASS	human	Q8NC67	NETO2	Q8NC67	10	98	Neuropilin and tolloid-like protein 2 (Brain-specific transm	w
+CLASS	human	Q8NDY6	BHLHE23	Q8NDY6	102	408	Class E basic helix-loop-helix protein 23 (bHLHe23) (Class B	w
+CLASS	human	Q8NFJ8	BHLHE22	Q8NFJ8	118	363	Class E basic helix-loop-helix protein 22 (bHLHe22) (Class B	w
+CLASS	human	Q8TAK6	OLIG1	Q8TAK6	109	398	Oligodendrocyte transcription factor 1 (Oligo1) (Class B bas	w
+CLASS	human	Q8TBF5	PIGX	Q8TBF5	5	82	GPI alpha-1,4-mannosyltransferase I, stabilizing subunit (Ph	w
+CLASS	human	Q8TDF5	NETO1	Q8TDF5	13	50	Neuropilin and tolloid-like protein 1 (Brain-specific transm	w
+CLASS	human	Q8TEQ8	PIGO	Q8TEQ8	6	111	GPI ethanolamine phosphate transferase 3, catalytic subunit 	w
+CLASS	human	Q8TF62	ATP8B4	Q8TF62	8	50	Probable phospholipid-transporting ATPase IM (EC 7.6.2.1) (A	w
+CLASS	human	Q8WTV0	SCARB1	Q8WTV0	13	278	Scavenger receptor class B member 1 (SRB1) (CD36 and LIMPII 	w
+CLASS	human	Q8WVJ9	TWIST2	Q8WVJ9	59	392	Twist-related protein 2 (Class A basic helix-loop-helix prot	w
+CLASS	human	Q92521	PIGB	Q92521	4	52	GPI alpha-1,2-mannosyltransferase 3 (EC 2.4.1.-) (GPI mannos	w
+CLASS	human	Q92535	PIGC	Q92535	5	42	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
+CLASS	human	Q92858	ATOH1	Q92858	121	429	Transcription factor ATOH1 (Atonal bHLH transcription factor	w
+CLASS	human	Q92886	NEUROG1	Q92886	121	433	Neurogenin-1 (NGN-1) (Class A basic helix-loop-helix protein	w
+CLASS	human	Q95460	MR1	Q95460	60	388	Major histocompatibility complex class I-related protein 1 (	w
+CLASS	human	Q969N2	PIGT	Q969N2	25	225	GPI-anchor transamidase component PIGT (Phosphatidylinositol	w
+CLASS	human	Q96GP6	SCARF2	Q96GP6	7	30	Scavenger receptor class F member 2 (SRECRP-1) (Scavenger re	w
+CLASS	human	Q96HZ4	HES6	Q96HZ4	67	417	Transcription cofactor HES-6 (C-HAIRY1) (Class B basic helix	w
+CLASS	human	Q96NK8	NEUROD6	Q96NK8	89	370	Neurogenic differentiation factor 6 (NeuroD6) (Class A basic	w
+CLASS	human	Q96QC0	PPP1R10	Q96QC0	75	294	Serine/threonine-protein phosphatase 1 regulatory subunit 10	w
+CLASS	human	Q96QC4	MICA	Q96QC4	3	52	MHC class I chain-related protein A	w
+CLASS	human	Q96RJ6	FERD3L	Q96RJ6	68	380	Fer3-like protein (Basic helix-loop-helix protein N-twist) (	w
+CLASS	human	Q96S52	PIGS	Q96S52	19	174	GPI-anchor transamidase component PIGS (Phosphatidylinositol	w
+CLASS	human	Q96SQ7	ATOH8	Q96SQ7	88	365	Transcription factor ATOH8 (Class A basic helix-loop-helix p	w
+CLASS	human	Q99081	TCF12	Q99081	85	242	Transcription factor 12 (TCF-12) (Class B basic helix-loop-h	w
+CLASS	human	Q99583	MNT	Q99583	129	380	Max-binding protein MNT (Class D basic helix-loop-helix prot	w
+CLASS	human	Q99706	KIR2DL4	Q99706	30	161	Killer cell immunoglobulin-like receptor 2DL4 (CD158 antigen	w
+CLASS	human	Q99742	NPAS1	Q99742	75	589	Neuronal PAS domain-containing protein 1 (Neuronal PAS1) (Ba	w
+CLASS	human	Q99743	NPAS2	Q99743	43	104	Neuronal PAS domain-containing protein 2 (Neuronal PAS2) (Ba	w
+CLASS	human	Q99814	EPAS1	Q99814	66	335	Endothelial PAS domain-containing protein 1 (EPAS-1) (Basic-	w
+CLASS	human	Q99929	ASCL2	Q99929	101	401	Achaete-scute homolog 2 (ASH-2) (hASH2) (Class A basic helix	w
+CLASS	human	Q9BRB3	PIGQ	Q9BRB3	6	62	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
+CLASS	human	Q9BRJ9	MESP1	Q9BRJ9	102	363	Mesoderm posterior protein 1 (Class C basic helix-loop-helix	w
+CLASS	human	Q9BUF5	TUBB6	Q9BUF5	84	1046	Tubulin beta-6 chain (Tubulin beta class V)	w
+CLASS	human	Q9BW11	MXD3	Q9BW11	94	402	Max dimerization protein 3 (Max dimerizer 3) (Class C basic 	w
+CLASS	human	Q9BYE0	HES7	Q9BYE0	69	357	Transcription factor HES-7 (hHes7) (Class B basic helix-loop	w
+CLASS	human	Q9C0J9	BHLHE41	Q9C0J9	30	81	Class E basic helix-loop-helix protein 41 (bHLHe41) (Class B	w
+CLASS	human	Q9H2A3	NEUROG2	Q9H2A3	100	395	Neurogenin-2 (NGN-2) (Class A basic helix-loop-helix protein	w
+CLASS	human	Q9H3S5	PIGM	Q9H3S5	11	85	GPI alpha-1,4-mannosyltransferase I, catalytic subunit (EC 2	w
+CLASS	human	Q9HAP2	MLXIP	Q9HAP2	13	52	MLX-interacting protein (Class E basic helix-loop-helix prot	w
+CLASS	human	Q9HBZ2	ARNT2	Q9HBZ2	35	142	Aryl hydrocarbon receptor nuclear translocator 2 (ARNT prote	w
+CLASS	human	Q9HCC6	HES4	Q9HCC6	53	396	Transcription factor HES-4 (hHES4) (Class B basic helix-loop	w
+CLASS	human	Q9HD90	NEUROD4	Q9HD90	95	359	Neurogenic differentiation factor 4 (NeuroD4) (Class A basic	w
+CLASS	human	Q9NP71	MLXIPL	Q9NP71	26	112	Carbohydrate-responsive element-binding protein (ChREBP) (Cl	w
+CLASS	human	Q9NQ33	ASCL3	Q9NQ33	96	363	Achaete-scute homolog 3 (ASH-3) (hASH3) (Class A basic helix	w
+CLASS	human	Q9NQ87	HEYL	Q9NQ87	76	390	Hairy/enhancer-of-split related with YRPW motif-like protein	w
+CLASS	human	Q9NR34	MAN1C1	Q9NR34	4	40	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IC (EC 3.2.1.	w
+CLASS	human	Q9NTI2	ATP8A2	Q9NTI2	9	69	Phospholipid-transporting ATPase IB (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	Q9NTJ4	MAN2C1	Q9NTJ4	2	54	Alpha-mannosidase 2C1 (EC 3.2.1.24) (Alpha mannosidase 6A8B)	w
+CLASS	human	Q9NUD9	PIGV	Q9NUD9	2	19	GPI alpha-1,6-mannosyltransferase 2 (EC 2.4.1.-) (GPI mannos	w
+CLASS	human	Q9P241	ATP10D	Q9P241	4	59	Phospholipid-transporting ATPase VD (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	Q9UBP5	HEY2	Q9UBP5	85	418	Hairy/enhancer-of-split related with YRPW motif protein 2 (C	w
+CLASS	human	Q9UEW3	MARCO	Q9UEW3	4	23	Macrophage receptor MARCO (Macrophage receptor with collagen	w
+CLASS	human	Q9UH92	MLX	Q9UH92	84	419	Max-like protein X (Class D basic helix-loop-helix protein 1	w
+CLASS	human	Q9UKI9	POU2F3	Q9UKI9	132	364	POU domain, class 2, transcription factor 3 (Octamer-binding	w
+CLASS	human	Q9Y2B2	PIGL	Q9Y2B2	3	61	N-acetylglucosaminyl-phosphatidylinositol de-N-acetylase (EC	w
+CLASS	human	Q9Y2E5	MAN2B2	Q9Y2E5	6	90	Epididymis-specific alpha-mannosidase (Epman) (EC 3.2.1.24) 	w
+CLASS	human	Q9Y2G3	ATP11B	Q9Y2G3	4	87	Phospholipid-transporting ATPase IF (EC 7.6.2.1) (ATPase IR)	w
+CLASS	human	Q9Y2N7	HIF3A	Q9Y2N7	23	98	Hypoxia-inducible factor 3-alpha (HIF-3-alpha) (HIF3-alpha) 	w
+CLASS	human	Q9Y2Q0	ATP8A1	Q9Y2Q0	12	80	Phospholipid-transporting ATPase IA (EC 7.6.2.1) (ATPase cla	w
+CLASS	human	Q9Y3A3	MOB4	Q9Y3A3	19	187	MOB-like protein phocein (2C4D) (Class II mMOB1) (Mob1 homol	w
+CLASS	human	Q9Y4Z2	NEUROG3	Q9Y4Z2	127	500	Neurogenin-3 (NGN-3) (Class A basic helix-loop-helix protein	w
+CLASS	human	Q9Y543	HES2	Q9Y543	58	371	Transcription factor HES-2 (Class B basic helix-loop-helix p	w
+CLASS	human	Q9Y5J3	HEY1	Q9Y5J3	100	554	Hairy/enhancer-of-split related with YRPW motif protein 1 (C	w
+CLASS	human	Q9Y6Q9	NCOA3	Q9Y6Q9	136	509	Nuclear receptor coactivator 3 (NCoA-3) (EC 2.3.1.48) (ACTR)	w
+CLASS	virus	E9M5I1	RHVP.R2	E9M5I1	3	82	MHC class I-like antigen recognition-like domain-containing 	w
+CLASS	virus	E9M5I2	RHVP.R3	E9M5I2	3	81	MHC class I-like antigen recognition-like domain-containing 	w
+CLASS	virus	Q08FL8	DpV83gp134	Q08FL8	4	165	MHC class II presentation inhibitor	w
+CLASS	virus	Q77GB1	LSDV124	Q77GB1	3	153	MHC class II presentation inhibitor	w
+CLASS	virus	Q8V2M2		Q8V2M2	5	208	MHC class II antigen presentation inhibitor	w
+CLASS	worm	A0A060Q608	CELE_Y57G11C.28	A0A060Q608	0	3	Serpentine Receptor, class T	w
+CLASS	worm	A0A0B7H2U2	srh-146	A0A0B7H2U2	2	22	Serpentine Receptor, class H	w
+CLASS	worm	A0A0K3AXT4	srt-17	A0A0K3AXT4	0	3	Serpentine Receptor, class T	w
+CLASS	worm	A0A0M9JJ79	srj-18	A0A0M9JJ79	0	9	Serpentine Receptor, class J	w
+CLASS	worm	A0A163VUD3	CELE_ZC132.11	A0A163VUD3	0	2	Serpentine Receptor, class Z	w
+CLASS	worm	A0A1I6CM92	CELE_F49E8.8	A0A1I6CM92	3	9	Phosphatidylinositol-glycan biosynthesis class F protein	w
+CLASS	worm	A0A3B1E639	C04F5.2	A0A3B1E639	0	3	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	E4MVC7	C03H5.9	E4MVC7	0	3	Serpentine Receptor, class T	w
+CLASS	worm	E5QCJ3	CELE_T23B5.4	E5QCJ3	0	79	Prokaryotic-type class I peptide chain release factors domai	w
+CLASS	worm	G3MU03	srg-37	G3MU03	0	1	Serpentine receptor class gamma	w
+CLASS	worm	G5EBI9	CELE_D2023.1	G5EBI9	0	8	Serpentine Receptor, class T	w
+CLASS	worm	G5ECI0	str-115	G5ECI0	0	3	Serpentine receptor class r-10	w
+CLASS	worm	G5ECX6	str-267	G5ECX6	0	3	Serpentine receptor class r-10	w
+CLASS	worm	G5EDM6	srh-57	G5EDM6	0	3	Serpentine Receptor, class H	w
+CLASS	worm	G5EEF5	srg-36	G5EEF5	1	7	Serpentine receptor class gamma	w
+CLASS	worm	G5EF36	srt-1	G5EF36	0	9	Serpentine Receptor, class T	w
+CLASS	worm	G5EF74	srd-73	G5EF74	0	1	Serpentine Receptor, class D (Delta)	w
+CLASS	worm	G5EG08	srd-72	G5EG08	0	9	Serpentine Receptor, class D (Delta)	w
+CLASS	worm	G5EGE5	str-171	G5EGE5	0	27	Serpentine receptor class r-10	w
+CLASS	worm	H2KZ03	srt-28	H2KZ03	0	3	Serpentine Receptor, class T	w
+CLASS	worm	H2KZM1	srj-23	H2KZM1	0	3	Serpentine Receptor, class J	w
+CLASS	worm	H2KZZ8	srt-42	H2KZZ8	0	3	Serpentine Receptor, class T	w
+CLASS	worm	H2L036	str-180	H2L036	0	9	Serpentine receptor class r-10	w
+CLASS	worm	H2L2K4	srt-50	H2L2K4	0	3	Serpentine Receptor, class T	w
+CLASS	worm	I2HAH7	CELE_Y57G11C.30	I2HAH7	0	3	Serpentine Receptor, class T	w
+CLASS	worm	J7SA46	srh-237	J7SA46	0	4	Serpentine Receptor, class H	w
+CLASS	worm	O01447	srh-244	O01447	0	12	Serpentine Receptor, class H	w
+CLASS	worm	O01456	srj-14	O01456	0	1	Serpentine Receptor, class J	w
+CLASS	worm	O01509	srb-15	O01509	0	7	Serpentine receptor class beta-15	w
+CLASS	worm	O01829	ssp-19	O01829	0	1	Sperm-specific class P protein 19	w
+CLASS	worm	O01890	srt-30	O01890	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O02139	ssr-2	O02139	5	30	Sperm-Specific family, class R	w
+CLASS	worm	O16323	str-225	O16323	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O16324	str-228	O16324	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O16325	str-226	O16325	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O16326	str-227	O16326	0	13	Serpentine receptor class r-10	w
+CLASS	worm	O16336	str-130	O16336	0	2	Serpentine receptor class r-10	w
+CLASS	worm	O16432	srh-20	O16432	0	3	Serpentine Receptor, class H	w
+CLASS	worm	O16439	str-211	O16439	0	5	Serpentine receptor class r-10	w
+CLASS	worm	O16463	idpc-2	O16463	0	2	Intrinsically Disordered Protein, class C	w
+CLASS	worm	O16470	srt-15	O16470	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O16471	srt-16	O16471	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O16477	srt-5	O16477	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O16478	srt-7	O16478	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O16480	srt-8	O16480	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O16885	srt-4	O16885	0	4	Serpentine Receptor, class T	w
+CLASS	worm	O16913	str-112	O16913	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O16978	srh-36	O16978	0	23	Serpentine Receptor, class H	w
+CLASS	worm	O17077	sru-27	O17077	1	14	Serpentine Receptor, class U	w
+CLASS	worm	O17096	srx-108	O17096	0	3	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	O17126	srh-245	O17126	0	12	Serpentine Receptor, class H	w
+CLASS	worm	O17130	srh-266	O17130	0	10	Serpentine Receptor, class H	w
+CLASS	worm	O17138	srx-23	O17138	2	26	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	O17292	srh-195	O17292	0	9	Serpentine Receptor, class H	w
+CLASS	worm	O17515	CELE_ZC132.3	O17515	0	5	Serpentine Receptor, class Z	w
+CLASS	worm	O17701	srt-32	O17701	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O17786	srh-281	O17786	0	2	Serpentine Receptor, class H	w
+CLASS	worm	O17787	srh-279	O17787	0	1	Serpentine Receptor, class H	w
+CLASS	worm	O17821	srd-41	O17821	0	1	Serpentine receptor class delta-41	w
+CLASS	worm	O17830	srj-29	O17830	0	3	Serpentine Receptor, class J	w
+CLASS	worm	O17872	str-103	O17872	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O17926	srz-14	O17926	0	4	Serpentine Receptor, class Z	w
+CLASS	worm	O17956	srd-28	O17956	0	1	Serpentine receptor class delta-28	w
+CLASS	worm	O18010	srj-27	O18010	0	3	Serpentine Receptor, class J	w
+CLASS	worm	O18027	str-125	O18027	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O18083	str-96	O18083	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O18098	srz-6	O18098	0	1	Serpentine Receptor, class T	w
+CLASS	worm	O18102	srh-69	O18102	0	5	Serpentine Receptor, class H	w
+CLASS	worm	O18114	str-124	O18114	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O18115	str-123	O18115	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O18175	sre-33	O18175	0	6	Serpentine receptor class epsilon-33	w
+CLASS	worm	O18689	sra-18	O18689	0	1	Serpentine receptor class alpha-18	w
+CLASS	worm	O18690	sra-21	O18690	0	19	Serpentine receptor class alpha-21	w
+CLASS	worm	O44454	srz-60	O44454	0	1	Serpentine Receptor, class Z	w
+CLASS	worm	O44492	srv-4	O44492	0	1	Serpentine Receptor, class T	w
+CLASS	worm	O44532	str-166	O44532	1	63	Serpentine receptor class r-10	w
+CLASS	worm	O44542	srt-12	O44542	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O44579	srh-199	O44579	1	28	Serpentine Receptor, class H	w
+CLASS	worm	O44674	srx-7	O44674	0	2	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	O44676	sri-73	O44676	0	2	Serpentine Receptor, class I	w
+CLASS	worm	O44700	srbc-19	O44700	0	22	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	O44705	srbc-16	O44705	0	1	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	O44877	srx-111	O44877	0	1	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	O44908	srh-60	O44908	0	3	Serpentine Receptor, class H	w
+CLASS	worm	O44909	srh-59	O44909	0	3	Serpentine Receptor, class H	w
+CLASS	worm	O45150	srg-30	O45150	1	36	Serpentine receptor class gamma-30	w
+CLASS	worm	O45164	srh-241	O45164	0	12	Serpentine Receptor, class H	w
+CLASS	worm	O45165	srh-243	O45165	2	12	Serpentine Receptor, class H	w
+CLASS	worm	O45169	sre-24	O45169	0	1	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	O45300	sre-13	O45300	1	21	Serpentine receptor class epsilon-13	w
+CLASS	worm	O45308	srab-12	O45308	0	3	Serpentine Receptor, class AB (Class A-like)	w
+CLASS	worm	O45337	str-97	O45337	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O45339	str-99	O45339	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O45461	srh-136	O45461	1	27	Serpentine Receptor, class H	w
+CLASS	worm	O45473	srh-186	O45473	0	12	Serpentine Receptor, class H	w
+CLASS	worm	O45565	srbc-51	O45565	0	4	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	O45695	srx-1	O45695	0	2	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	O45710	str-102	O45710	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O45735	str-151	O45735	0	2	Serpentine receptor class r-10	w
+CLASS	worm	O45760	srh-257	O45760	1	9	Serpentine Receptor, class H	w
+CLASS	worm	O45761	srh-258	O45761	1	9	Serpentine Receptor, class H	w
+CLASS	worm	O45762	srh-264	O45762	0	9	Serpentine Receptor, class H	w
+CLASS	worm	O45763	srh-265	O45763	0	9	Serpentine Receptor, class H	w
+CLASS	worm	O45767	srx-43	O45767	0	3	Serpentine receptor class X-43	w
+CLASS	worm	O45789	srbc-62	O45789	0	10	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	O45972	str-101	O45972	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O45973	srh-140	O45973	0	8	Serpentine Receptor, class H	w
+CLASS	worm	O45985	srt-22	O45985	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O46012	srh-179	O46012	0	1	Serpentine Receptor, class H	w
+CLASS	worm	O61200	srab-25	O61200	0	14	Serpentine Receptor, class AB (Class A-like)	w
+CLASS	worm	O61757	CELE_F56C3.7	O61757	0	1	MHC class II antigen K	w
+CLASS	worm	O61881	srx-41	O61881	0	35	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	O61938	srbc-66	O61938	0	1	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	O61941	srbc-67	O61941	0	4	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	O61946	sri-21	O61946	0	7	Serpentine Receptor, class I	w
+CLASS	worm	O61969	srh-248	O61969	0	1	Serpentine Receptor, class H	w
+CLASS	worm	O62148	str-111	O62148	0	8	Serpentine receptor class r-10	w
+CLASS	worm	O62266	sre-31	O62266	1	21	Serpentine receptor class epsilon-31	w
+CLASS	worm	O62269	sre-29	O62269	0	1	Serpentine receptor class epsilon-29	w
+CLASS	worm	O62279	str-92	O62279	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O62280	str-89	O62280	0	3	Serpentine receptor class r-10	w
+CLASS	worm	O62384	srh-239	O62384	0	1	Serpentine Receptor, class H	w
+CLASS	worm	O62413	sri-18	O62413	2	44	Serpentine Receptor, class T	w
+CLASS	worm	O62470	sru-12	O62470	1	18	Serpentine Receptor, class U	w
+CLASS	worm	O62517	srg-64	O62517	0	1	Serpentine receptor class gamma	w
+CLASS	worm	O76433	srt-29	O76433	0	8	Serpentine Receptor, class T	w
+CLASS	worm	O76434	srt-27	O76434	0	3	Serpentine Receptor, class T	w
+CLASS	worm	O76662	srh-229	O76662	0	3	Serpentine Receptor, class H	w
+CLASS	worm	O76829	srh-222	O76829	1	20	Serpentine Receptor, class H	w
+CLASS	worm	P34571	srt-55	P34571	0	3	Serpentine receptor class T-55	w
+CLASS	worm	P46566	srg-9	P46566	0	1	Serpentine receptor class gamma-9	w
+CLASS	worm	P90760	srj-4	P90760	1	23	Serpentine Receptor, class J	w
+CLASS	worm	P90823	srx-136	P90823	0	1	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	P90824	srx-135	P90824	0	1	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	P90825	srx-137	P90825	0	1	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	P90837	sre-32	P90837	0	9	Serpentine receptor class epsilon-32	w
+CLASS	worm	P91473	srab-21	P91473	0	10	Serpentine Receptor, class AB (Class A-like)	w
+CLASS	worm	P91499	ssp-16	P91499	0	1	Sperm-specific class P protein 16	w
+CLASS	worm	P91981	srh-15	P91981	0	5	Serpentine Receptor, class H	w
+CLASS	worm	Q09203	sra-1	Q09203	0	11	Serpentine receptor class alpha-1	w
+CLASS	worm	Q09205	sra-3	Q09205	0	1	Serpentine receptor class alpha-3	w
+CLASS	worm	Q10934	sra-32	Q10934	0	8	Serpentine receptor class alpha-32	w
+CLASS	worm	Q17760	srd-7	Q17760	0	1	Serpentine receptor class delta-7	w
+CLASS	worm	Q18238	idpb-2	Q18238	0	5	Intrinsically Disordered Protein, class B	w
+CLASS	worm	Q18364	sru-4	Q18364	0	5	Serpentine Receptor, class U	w
+CLASS	worm	Q18366	sru-3	Q18366	0	18	Serpentine Receptor, class U	w
+CLASS	worm	Q18568	str-220	Q18568	0	3	Serpentine receptor class r-10	w
+CLASS	worm	Q18807	odr-10	Q18807	0	4	Serpentine receptor class r-10	w
+CLASS	worm	Q18818	C54C6.4	Q18818	0	12	Serpentine receptor class gamma	w
+CLASS	worm	Q18952	srh-184	Q18952	0	8	Serpentine Receptor, class H	w
+CLASS	worm	Q19145	str-116	Q19145	0	12	Serpentine receptor class r-10	w
+CLASS	worm	Q19518	pigt-1	Q19518	4	6	Phosphatidylinositol glycan, class T	w
+CLASS	worm	Q19556	srt-43	Q19556	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q19897	sre-6	Q19897	1	21	Serpentine receptor class epsilon-6	w
+CLASS	worm	Q19993	CELE_F34D10.3	Q19993	0	11	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	Q20244	srt-33	Q20244	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q20249	sre-8	Q20249	1	21	Serpentine receptor class epsilon-8	w
+CLASS	worm	Q20452	sru-39	Q20452	0	2	Serpentine Receptor, class T	w
+CLASS	worm	Q20503	CELE_F47B10.3	Q20503	0	2	Serpentine Receptor, class T	w
+CLASS	worm	Q20618	sra-13	Q20618	0	2	Serpentine receptor class alpha-13	w
+CLASS	worm	Q20717	CELE_F53B7.4	Q20717	0	10	Low-density lipoprotein receptor domain class A	w
+CLASS	worm	Q20814	srh-16	Q20814	0	1	Serpentine Receptor, class H	w
+CLASS	worm	Q21142	sre-7	Q21142	1	21	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	Q21289	ssp-10	Q21289	0	1	Sperm-specific class P protein 10	w
+CLASS	worm	Q21294	ssq-1	Q21294	0	1	Sperm-Specific family, class Q	w
+CLASS	worm	Q21685	srx-2	Q21685	0	1	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	Q21686	srt-18	Q21686	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q21714	srd-36	Q21714	0	3	Serpentine Receptor, class D (Delta)	w
+CLASS	worm	Q21991	srx-20	Q21991	2	26	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	Q22048	idpb-4	Q22048	0	1	Intrinsically Disordered Protein, class B	w
+CLASS	worm	Q22117	CELE_T03F7.5	Q22117	0	1	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	Q22264	idpc-7	Q22264	0	1	Intrinsically Disordered Protein, class C	w
+CLASS	worm	Q22283	srj-33	Q22283	0	3	Serpentine Receptor, class J	w
+CLASS	worm	Q22284	sre-28	Q22284	0	3	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	Q22382	srab-17	Q22382	0	19	Serpentine Receptor, class AB (Class A-like)	w
+CLASS	worm	Q22642	srg-32	Q22642	0	1	Serpentine receptor class gamma	w
+CLASS	worm	Q22768	CELE_T25B9.1	Q22768	0	16	Aminotransferase class I/classII large domain-containing pro	w
+CLASS	worm	Q22981	srt-3	Q22981	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q22982	srt-35	Q22982	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q22983	srt-36	Q22983	0	4	Serpentine Receptor, class T	w
+CLASS	worm	Q22984	srt-38	Q22984	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q22986	srt-20	Q22986	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q22987	srt-37	Q22987	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q22988	srt-19	Q22988	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q23058	ssp-9	Q23058	0	3	Sperm-specific class P protein 9/11	w
+CLASS	worm	Q23059	srm-2	Q23059	0	1	Serpentine Receptor, class T	w
+CLASS	worm	Q23062	ssq-4	Q23062	0	1	Sperm-Specific family, class Q	w
+CLASS	worm	Q23072	srt-13	Q23072	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q23073	srt-14	Q23073	0	4	Serpentine Receptor, class T	w
+CLASS	worm	Q23156	srt-39	Q23156	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q23246	ssp-34	Q23246	6	14	Sperm-specific class P protein 34	w
+CLASS	worm	Q23331	srbc-45	Q23331	0	1	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	Q400M3	srt-41	Q400M3	0	4	Serpentine Receptor, class T	w
+CLASS	worm	Q4R157	CELE_Y55F3C.10	Q4R157	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q5CCI4	sre-5	Q5CCI4	1	22	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	Q5DX30	srbc-8	Q5DX30	0	7	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	Q5DX32	srv-5	Q5DX32	0	1	Serpentine receptor class gamma	w
+CLASS	worm	Q5F4W1	srz-24	Q5F4W1	0	22	Serpentine Receptor, class Z	w
+CLASS	worm	Q5FC50	srt-74	Q5FC50	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q5KQP7	srt-23	Q5KQP7	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q5TEB3	CELE_Y79H2A.12	Q5TEB3	0	10	Serpentine Receptor, class BC (Class B-like)	w
+CLASS	worm	Q7KNQ6	srab-2	Q7KNQ6	0	1	Serpentine Receptor, class AB (Class A-like)	w
+CLASS	worm	Q7YXB0	srh-255	Q7YXB0	0	9	Serpentine Receptor, class H	w
+CLASS	worm	Q86DA3	str-93	Q86DA3	0	3	Serpentine receptor class r-10	w
+CLASS	worm	Q8IFZ2	srr-10	Q8IFZ2	0	1	Serpentine Receptor, class R	w
+CLASS	worm	Q94303	srh-212	Q94303	0	3	Serpentine Receptor, class H	w
+CLASS	worm	Q95QH2	CELE_F32E10.8	Q95QH2	0	1	Low-density lipoprotein receptor domain class A	w
+CLASS	worm	Q95QY1	idpb-1	Q95QY1	0	1	Intrinsically Disordered Protein, class B	w
+CLASS	worm	Q95XW0	srt-24	Q95XW0	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q95ZY1	srb-2	Q95ZY1	0	2	Serpentine receptor class beta-2	w
+CLASS	worm	Q965R2	srt-53	Q965R2	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q966A1	srt-40	Q966A1	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q966B4	str-222	Q966B4	0	1	Serpentine receptor class r-10	w
+CLASS	worm	Q966G5	srt-6	Q966G5	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q966G9	srx-9	Q966G9	0	1	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	Q966H5	srt-31	Q966H5	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9GRU8	srh-301	Q9GRU8	0	1	Serpentine Receptor, class H	w
+CLASS	worm	Q9GS08	str-90	Q9GS08	0	3	Serpentine receptor class r-10	w
+CLASS	worm	Q9GS11	str-129	Q9GS11	0	7	Serpentine receptor class r-10	w
+CLASS	worm	Q9GUB8	srh-87	Q9GUB8	0	2	Serpentine Receptor, class H	w
+CLASS	worm	Q9GYI7	CELE_F29B9.8	Q9GYI7	0	35	Serpentine Receptor, class T	w
+CLASS	worm	Q9GZF9	srt-59	Q9GZF9	0	4	Serpentine Receptor, class T	w
+CLASS	worm	Q9N2S8	str-169	Q9N2S8	1	23	Serpentine receptor class r-10	w
+CLASS	worm	Q9N2T6	str-156	Q9N2T6	0	1	Serpentine receptor class r-10	w
+CLASS	worm	Q9N482	str-172	Q9N482	0	3	Serpentine receptor class r-10	w
+CLASS	worm	Q9N483	str-173	Q9N483	0	3	Serpentine receptor class r-10	w
+CLASS	worm	Q9N4X6	srj-19	Q9N4X6	0	1	Serpentine Receptor, class J	w
+CLASS	worm	Q9N526	srt-52	Q9N526	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9N5G0	srh-56	Q9N5G0	1	46	Serpentine Receptor, class H	w
+CLASS	worm	Q9N5G5	srg-58	Q9N5G5	1	6	Serpentine receptor class gamma	w
+CLASS	worm	Q9N5G6	srx-28	Q9N5G6	5	26	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	Q9NAI0	srt-49	Q9NAI0	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9NAN9	srt-44	Q9NAN9	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9TXJ9	srt-34	Q9TXJ9	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9TXW8	srt-56	Q9TXW8	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9U1Z9	srh-171	Q9U1Z9	0	1	Serpentine Receptor, class H	w
+CLASS	worm	Q9U2H5	srt-48	Q9U2H5	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9U2H7	srt-47	Q9U2H7	0	4	Serpentine Receptor, class T	w
+CLASS	worm	Q9U2K8	abce-1	Q9U2K8	5	119	ABC transporter, class E	w
+CLASS	worm	Q9U2L3	sre-15	Q9U2L3	0	1	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	Q9U2P4	srd-17	Q9U2P4	0	1	Serpentine Receptor, class D (Delta)	w
+CLASS	worm	Q9UAU7	str-119	Q9UAU7	0	1	Serpentine receptor class r-10	w
+CLASS	worm	Q9UAX4	str-113	Q9UAX4	0	3	Serpentine receptor class r-10	w
+CLASS	worm	Q9XTR3	srj-26	Q9XTR3	0	3	Serpentine Receptor, class J	w
+CLASS	worm	Q9XTV0	srh-32	Q9XTV0	0	1	Serpentine Receptor, class H	w
+CLASS	worm	Q9XTV9	CELE_F21H7.3	Q9XTV9	0	2	Serpentine Receptor, class E (Epsilon)	w
+CLASS	worm	Q9XU64	srt-11	Q9XU64	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9XU91	srh-180	Q9XU91	0	5	Serpentine Receptor, class H	w
+CLASS	worm	Q9XUC8	srt-45	Q9XUC8	0	3	Serpentine Receptor, class T	w
+CLASS	worm	Q9XUN5	srh-215	Q9XUN5	0	23	Serpentine Receptor, class H	w
+CLASS	worm	Q9XV29	srh-174	Q9XV29	0	5	Serpentine Receptor, class H	w
+CLASS	worm	Q9XV42	sru-47	Q9XV42	0	5	Serpentine Receptor, class U	w
+CLASS	worm	Q9XVK3	srx-10	Q9XVK3	0	1	7TM GPCR serpentine receptor class x (Srx) domain-containing	w
+CLASS	worm	Q9XVP7	sss-1	Q9XVP7	0	1	Sperm-Specific family, class S	w
+CLASS	worm	Q9XX38	srh-166	Q9XX38	0	1	Serpentine Receptor, class H	w
+CLASS	worm	Q9XXB1	srh-291	Q9XXB1	0	1	Serpentine Receptor, class H	w
+CLASS	worm	Q9XXL3	ssp-31	Q9XXL3	0	6	Sperm-specific class P protein 31	w
+CLASS	worm	Q9XXN9	srh-111	Q9XXN9	0	1	Serpentine Receptor, class T	w
+CLASS	worm	Q9XXP7	srz-96	Q9XXP7	0	2	Serpentine Receptor, class Z	w
+CLASS	yeast	P38753	HSE1	P38753	12	108	Class E vacuolar protein-sorting machinery protein HSE1	w
+CLASS	zebrafish	A0A0G2KIH5	mhc1lla	A0A0G2KIH5	8	54	Major histocompatibility complex class I LLA	w
+CLASS	zebrafish	A0A0G2KL77	LOC108181672	A0A0G2KL77	2	7	Major histocompatibility complex class I-related gene protei	w
+CLASS	zebrafish	A0A0R4IM31	ora1	A0A0R4IM31	0	1	Olfactory receptor class A-like protein 1	w
+CLASS	zebrafish	A0A0R4IP11	ora4	A0A0R4IP11	0	3	Olfactory receptor class A-like protein 4	w
+CLASS	zebrafish	A0A0R4IRL8	scarb1	A0A0R4IRL8	1	100	Scavenger receptor class B member 1	w
+CLASS	zebrafish	A0A0R4ISW2	mhc2d8.37b2	A0A0R4ISW2	16	54	Rano class II histocompatibility antigen, A beta chain	w
+CLASS	zebrafish	A0A0R4IZK4	mhc1lca	A0A0R4IZK4	4	21	Major histocompatibility complex class I-related gene protei	w
+CLASS	zebrafish	A0A140LFX8	si:ch211-146l10.8	A0A140LFX8	1	1	POU domain, class 6, transcription factor 2 isoform X1	w
+CLASS	zebrafish	A0A1L1QZR0	mhc2d4b	A0A1L1QZR0	17	54	H-2 class II histocompatibility antigen, E-S beta chain isof	w
+CLASS	zebrafish	A0A2R8QFS1	mhc2d8.35a1	A0A2R8QFS1	13	40	H-2 class II histocompatibility antigen, A-Q alpha chain	w
+CLASS	zebrafish	A0A8M1P8R0	ldlrad4b	A0A8M1P8R0	1	23	Low-density lipoprotein receptor class A domain-containing p	w
+CLASS	zebrafish	A0A8M9PC97	pou2af1	A0A8M9PC97	4	14	POU class 2 associating factor 1	w
+CLASS	zebrafish	A0A8M9Q7I5	rfx1b	A0A8M9Q7I5	0	6	MHC class II regulatory factor RFX1 isoform X2	w
+CLASS	zebrafish	A0FH50	bhlha15	A0FH50	7	8	Class A basic helix-loop-helix protein 15	w
+CLASS	zebrafish	A3QK10	fzd9a	A3QK10	17	29	Frizzled class receptor 9a	w
+CLASS	zebrafish	A4FUM4	mhc1zca	A4FUM4	3	20	MHC class I antigen ZCA transcript variant 1	w
+CLASS	zebrafish	A5WVS5	pigx	A5WVS5	7	118	Phosphatidylinositol-glycan biosynthesis class X protein	w
+CLASS	zebrafish	A8E7F2	mhc1zea	A8E7F2	5	20	MHC class I antigen ZEA transcript variant 1	w
+CLASS	zebrafish	A8E7F4	mhc1zba	A8E7F4	7	23	MHC class I antigen ZBA transcript variant 1	w
+CLASS	zebrafish	B3DJ30	ldlrad3	B3DJ30	0	5	Low-density lipoprotein receptor class A domain-containing p	w
+CLASS	zebrafish	B3DJ49	fzd1	B3DJ49	4	33	Frizzled class receptor 1	w
+CLASS	zebrafish	B8A4H2	gprc5bb	B8A4H2	0	1	G protein-coupled receptor, class C, group 5, member Bb	w
+CLASS	zebrafish	E7EXN1	sanbr	E7EXN1	0	5	SANT and BTB domain regulator of class switch recombination	w
+CLASS	zebrafish	E7F3F4	ciita	E7F3F4	2	21	Class II, major histocompatibility complex, transactivator	w
+CLASS	zebrafish	E7FAH6	mhc1uma	E7FAH6	25	85	MHC class I antigen transcript variant 1	w
+CLASS	zebrafish	E7FBT2	scarf1	E7FBT2	2	19	Scavenger receptor class F member 1	w
+CLASS	zebrafish	E9QDK3	scara3	E9QDK3	2	22	Scavenger receptor class A member 3 isoform X1	w
+CLASS	zebrafish	F1QAR3	pigw	F1QAR3	0	26	Phosphatidylinositol-glycan biosynthesis class W protein	w
+CLASS	zebrafish	F1QCN0	gatd3	F1QCN0	0	1	Glutamine amidotransferase-like class 1 domain-containing pr	w
+CLASS	zebrafish	F1QNN0	mhc2d8.37a1	F1QNN0	16	70	Mamu class II histocompatibility antigen, DR alpha chain	w
+CLASS	zebrafish	F1QVI4	mhc2bl	F1QVI4	15	55	H-2 class II histocompatibility antigen, E-S beta chain	w
+CLASS	zebrafish	F1QYX0	ldlrad4a	F1QYX0	3	23	Low density lipoprotein receptor class A domain-containing 4	w
+CLASS	zebrafish	F1R9F5	bhlhe22	F1R9F5	0	2	Class E basic helix-loop-helix protein 22	w
+CLASS	zebrafish	F1RAH2	mhc1lga	F1RAH2	4	54	Major histocompatibility complex class I LGA	w
+CLASS	zebrafish	F1RAH3	mhc1lda	F1RAH3	3	21	Major histocompatibility complex class I LDA	w
+CLASS	zebrafish	M9MM93	mhc2d8.46a	M9MM93	15	70	H-2 class II histocompatibility antigen, A-U alpha chain	w
+CLASS	zebrafish	P31367	pou6f1	P31367	0	2	POU domain, class 6, transcription factor 1	w
+CLASS	zebrafish	P79745	pou3f3b	P79745	0	10	POU domain, class 3, transcription factor 3-B	w
+CLASS	zebrafish	P79746	pou3f2	P79746	0	10	POU domain, class 3, transcription factor 2	w
+CLASS	zebrafish	Q1LW07	gna15.4	Q1LW07	8	53	Guanine nucleotide-binding protein (G protein), alpha 15 (Gq	w
+CLASS	zebrafish	Q1MTC7	mhc2daa	Q1MTC7	12	19	Major histocompatibility complex class II DAA precursor	w
+CLASS	zebrafish	Q1MTC8	mhc2dab	Q1MTC8	15	54	Major histocompatibility complex class II DAB gene	w
+CLASS	zebrafish	Q3B7H1	gatd1	Q3B7H1	1	21	Glutamine amidotransferase-like class 1 domain-containing pr	w
+CLASS	zebrafish	Q5RFW0	scara5	Q5RFW0	0	3	Scavenger receptor class A member 5	w
+CLASS	zebrafish	Q5RG12	hsp90aa1.2	Q5RG12	26	348	Heat shock protein 90, alpha (cytosolic), class A member 1, 	w
+CLASS	zebrafish	Q6NV44	fzd7a	Q6NV44	8	30	Frizzled class receptor 7a	w
+CLASS	zebrafish	Q6P0J9	pigf	Q6P0J9	2	10	Phosphatidylinositol glycan anchor biosynthesis, class F	w
+CLASS	zebrafish	Q8WM94	mhc2dga	Q8WM94	13	19	Novel protein similar to MHC class II alpha chain	w
+CLASS	zebrafish	Q90270	pou5f1	Q90270	17	64	POU domain, class 5, transcription factor 1	w
+CLASS	zebrafish	Q90482	pou3f1	Q90482	0	10	POU domain, class 3, transcription factor 1	w
+CLASS	zebrafish	Q9PUT2	cd74a	Q9PUT2	13	661	CD74 molecule, major histocompatibility complex, class II in	w
+CLASS	zebrafish	Q9W6E3	fzd10	Q9W6E3	18	31	Frizzled class receptor 10	w
+CLASS	zebrafish	U3JAF4	si:ch211-196c10.13	U3JAF4	0	2	Class E basic helix-loop-helix protein 22	w
+CLASS	zebrafish	U6BNE9	mhc1zka	U6BNE9	4	8	MHC class I antigen ZKA transcript variant 1	w
+CLASS	zebrafish	X1WDE6	mhc1lia	X1WDE6	1	40	Major histocompatibility complex class I LIA	w
+CLASS	zebrafish	X1WEL2	gprc5ba	X1WEL2	0	1	G protein-coupled receptor, class C, group 5, member Ba	w
+CLASS	zebrafish	X1WF83	mhc1lja	X1WF83	5	54	Major histocompatibility complex class I LJA	w
+CLASS-3	fly	FBgn0011768	Fdh	P46415	1	71	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
+CLASS-3	human	P11766	ADH5	P11766	10	154	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
+CLASS-3	worm	Q17335	adh-5	Q17335	3	34	Alcohol dehydrogenase class-3	w
+CLASS-ALPHA	human	O15217	GSTA4	O15217	16	55	Glutathione S-transferase A4 (EC 2.5.1.18) (GST class-alpha 	w
+CLASS-ALPHA	human	P09210	GSTA2	P09210	17	59	Glutathione S-transferase A2 (EC 2.5.1.18) (GST HA subunit 2	w
+CLASS-ALPHA	human	Q16772	GSTA3	Q16772	15	27	Glutathione S-transferase A3 (EC 2.5.1.18) (GST class-alpha 	w
+CLASS-ALPHA	human	Q7RTV2	GSTA5	Q7RTV2	14	30	Glutathione S-transferase A5 (EC 2.5.1.18) (GST class-alpha 	w
+CLASS-I	human	O95727	CRTAM	O95727	35	95	Cytotoxic and regulatory T-cell molecule (Class-I MHC-restri	w
+CLASS-II	human	P17181	IFNAR1	P17181	70	378	Interferon alpha/beta receptor 1 (IFN-R-1) (IFN-alpha/beta r	w
+CLASS-II	human	Q08334	IL10RB	Q08334	51	417	Interleukin-10 receptor subunit beta (IL-10 receptor subunit	w
+CLASS-II	human	Q8IU57	IFNLR1	Q8IU57	65	226	Interferon lambda receptor 1 (IFN-lambda receptor 1) (IFN-la	w
+CLASS-II	human	Q8N6P7	IL22RA1	Q8N6P7	46	198	Interleukin-22 receptor subunit alpha-1 (IL-22 receptor subu	w
+CLASS-II	human	Q969J5	IL22RA2	Q969J5	22	161	Interleukin-22 receptor subunit alpha-2 (IL-22 receptor subu	w
+CLASS-II	human	Q9UHF4	IL20RA	Q9UHF4	25	199	Interleukin-20 receptor subunit alpha (IL-20 receptor subuni	w
+CLASS-II	worm	P90831	dars-2	P90831	1	13	Aminoacyl-transfer RNA synthetases class-II family profile d	w
+CLASS-II	worm	Q95PZ8	nars-2	Q95PZ8	2	19	Aminoacyl-transfer RNA synthetases class-II family profile d	w
+CLASS-III	fly	FBgn0011768	Fdh	P46415	1	71	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
+CLASS-III	human	P11766	ADH5	P11766	10	154	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
+CLASS-KAPPA	human	Q9Y2Q3	GSTK1	Q9Y2Q3	11	126	Glutathione S-transferase kappa 1 (EC 2.5.1.18) (GST 13-13) 	w
+CLASS-MU	human	P09488	GSTM1	P09488	23	126	Glutathione S-transferase Mu 1 (EC 2.5.1.18) (GST HB subunit	w
+CLASS-MU	human	P21266	GSTM3	P21266	21	262	Glutathione S-transferase Mu 3 (EC 2.5.1.18) (GST class-mu 3	w
+CLASS-MU	human	P28161	GSTM2	P28161	27	105	Glutathione S-transferase Mu 2 (EC 2.5.1.18) (GST class-mu 2	w
+CLASS-MU	human	P46439	GSTM5	P46439	14	65	Glutathione S-transferase Mu 5 (EC 2.5.1.18) (GST class-mu 5	w
+CLASS-MU	human	Q03013	GSTM4	Q03013	20	69	Glutathione S-transferase Mu 4 (EC 2.5.1.18) (GST class-mu 4	w
+CLASS-PI	human	P09211	GSTP1	P09211	65	517	Glutathione S-transferase P (EC 2.5.1.18) (GST class-pi) (GS	w
+CLASS-SIGMA	human	O60760	HPGDS	O60760	16	50	Hematopoietic prostaglandin D synthase (H-PGDS) (EC 5.3.99.2	w
+CLASS-THETA-1	human	P30711	GSTT1	P30711	10	120	Glutathione S-transferase theta-1 (EC 2.5.1.18) (GST class-t	w
+CLASS-THETA-2	human	P0CG29	GSTT2	P0CG29	9	77	Glutathione S-transferase theta-2 (EC 2.5.1.18) (GST class-t	w
+CLASS-THETA-2	human	P0CG30	GSTT2B	P0CG30	11	63	Glutathione S-transferase theta-2B (EC 2.5.1.18) (Glutathion	w
+CLASS-THETA-4	human	A0A1W2PR19	GSTT4	A0A1W2PR19	5	36	Glutathione S-transferase theta-4 (EC 2.5.1.18) (GST class-t	w
+CLASSES	fly	FBgn0004611	Plc21C	P25455	3	17	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase cl	w
+CLASSII	worm	Q22768	CELE_T25B9.1	Q22768	0	16	Aminotransferase class I/classII large domain-containing pro	w
+CLATHRI	human	Q9BXS5	AP1M1	Q9BXS5	63	429	AP-1 complex subunit mu-1 (AP-mu chain family member mu1A) (	w
+CLATHRI	human	Q9Y6Q5	AP1M2	Q9Y6Q5	34	273	AP-1 complex subunit mu-2 (AP-mu chain family member mu1B) (	w
+CLATHRIN	fly	FBgn0000319	Chc	P29742	7	139	Clathrin heavy chain	w
+CLATHRIN	fly	FBgn0024814	Clc	Q9VWA1	10	128	Clathrin light chain (dClc)	w
+CLATHRIN	fly	FBgn0263351	AP-2mu	O62530	29	275	Adaptor protein complex 2, mu subunit, isoform A (Adaptor pr	w
+CLATHRIN	human	O00203	AP3B1	O00203	45	303	AP-3 complex subunit beta-1 (Adaptor protein complex AP-3 su	w
+CLATHRIN	human	O43747	AP1G1	O43747	49	268	AP-1 complex subunit gamma-1 (Adaptor protein complex AP-1 s	w
+CLATHRIN	human	O60641	SNAP91	O60641	28	98	Clathrin coat assembly protein AP180 (91 kDa synaptosomal-as	w
+CLATHRIN	human	P09496	CLTA	P09496	43	493	Clathrin light chain A (Lca)	w
+CLATHRIN	human	P09497	CLTB	P09497	18	247	Clathrin light chain B (Lcb)	w
+CLATHRIN	human	P53675	CLTCL1	P53675	15	299	Clathrin heavy chain 2 (Clathrin heavy chain on chromosome 2	w
+CLATHRIN	human	P53677	AP3M2	P53677	14	87	AP-3 complex subunit mu-2 (Adaptor-related protein complex 3	w
+CLATHRIN	human	P53680	AP2S1	P53680	28	252	AP-2 complex subunit sigma (Adaptor protein complex AP-2 sub	w
+CLATHRIN	human	P56377	AP1S2	P56377	31	188	AP-1 complex subunit sigma-2 (Adaptor protein complex AP-1 s	w
+CLATHRIN	human	P61966	AP1S1	P61966	9	102	AP-1 complex subunit sigma-1A (Adaptor protein complex AP-1 	w
+CLATHRIN	human	Q00610	CLTC	Q00610	38	530	Clathrin heavy chain 1 (Clathrin heavy chain on chromosome 1	w
+CLATHRIN	human	Q13367	AP3B2	Q13367	26	113	AP-3 complex subunit beta-2 (Adaptor protein complex AP-3 su	w
+CLATHRIN	human	Q13492	PICALM	Q13492	58	355	Phosphatidylinositol-binding clathrin assembly protein (Clat	w
+CLATHRIN	human	Q14677	CLINT1	Q14677	40	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
+CLATHRIN	human	Q5SYC1	CLVS2	Q5SYC1	10	105	Clavesin-2 (Retinaldehyde-binding protein 1-like 2) (clathri	w
+CLATHRIN	human	Q8IUQ0	CLVS1	Q8IUQ0	3	48	Clavesin-1 (Cellular retinaldehyde-binding protein-like) (Re	w
+CLATHRIN	human	Q8NHS4	CLHC1	Q8NHS4	25	171	Clathrin heavy chain linker domain-containing protein 1	w
+CLATHRIN	human	Q96CW1	AP2M1	Q96CW1	97	709	AP-2 complex subunit mu (AP-2 mu chain) (Adaptin-mu2) (Adapt	w
+CLATHRIN	human	Q96NL6	SCLT1	Q96NL6	54	275	Sodium channel and clathrin linker 1 (Sodium channel-associa	w
+CLATHRIN	human	Q96PC3	AP1S3	Q96PC3	21	151	AP-1 complex subunit sigma-3 (Adaptor protein complex AP-1 s	w
+CLATHRIN	worm	A0A4V0IMR4	CELE_Y71F9AL.25	A0A4V0IMR4	0	1	Clathrin light chain	w
+CLATHRIN	worm	B2FDA5	CELE_Y75B8A.18	B2FDA5	0	1	Clathrin light chain	w
+CLATHRIN	worm	P90961	clic-1	P90961	3	95	Clathrin light chain	w
+CLATHRIN	yeast	P17891	CLC1	P17891	5	60	Clathrin light chain	w
+CLATHRIN	yeast	P32788	LAA2	P32788	1	9	Clathrin adapter accessory protein LAA2	w
+CLATHRIN	yeast	P38856	YAP1801	P38856	6	35	Clathrin coat assembly protein AP180A	w
+CLATHRIN	yeast	P53309	YAP1802	P53309	2	37	Clathrin coat assembly protein AP180B	w
+CLATHRIN	yeast	Q06677	SWA2	Q06677	25	92	Auxilin-like clathrin uncoating factor SWA2 (Bud site select	w
+CLATHRIN	zebrafish	A0A286Y9F1	cltb	A0A286Y9F1	5	61	Clathrin light chain	w
+CLATHRIN	zebrafish	A0AB32T8L7	picalmb	A0AB32T8L7	5	19	Phosphatidylinositol-binding clathrin assembly protein	w
+CLATHRIN	zebrafish	B7ZDD1	si:ch211-200p22.4	B7ZDD1	5	19	Phosphatidylinositol-binding clathrin assembly protein	w
+CLATHRIN	zebrafish	E7EZ46	sclt1	E7EZ46	2	5	Sodium channel and clathrin linker 1	w
+CLATHRIN	zebrafish	F1QHJ5	clint1b	F1QHJ5	1	45	Clathrin interactor 1 isoform X1	w
+CLATHRIN	zebrafish	F1QKW9	picalma	F1QKW9	4	19	Phosphatidylinositol-binding clathrin assembly protein	w
+CLATHRIN	zebrafish	Q6P937	clta	Q6P937	3	110	Clathrin light chain	w
+CLATHRIN-ASSOCIATED	fly	FBgn0024833	AP-1mu	O62531	9	96	Adaptor protein complex 1, mu subunit (Clathrin-associated a	w
+CLATHRIN-ASSOCIATED	human	Q92572	AP3S1	Q92572	31	183	AP-3 complex subunit sigma-1 (AP-3 complex subunit sigma-3A)	w
+CLATHRIN-BINDING	human	Q96F83	CLBA1	Q96F83	5	62	Uncharacterized protein CLBA1 (Clathrin-binding box of aftip	w
+CLATHRIN-BINDING	worm	Q9GUI5	CELE_Y45G5AM.9	Q9GUI5	2	21	Aftiphilin clathrin-binding box domain-containing protein	w
+CLATHRIN-COATED	human	Q93050	ATP6V0A1	Q93050	19	265	V-type proton ATPase 116 kDa subunit a 1 (V-ATPase 116 kDa s	w
+CLATHRIN-ENDOCYTOSIS	human	Q5XKL5	BTBD8	Q5XKL5	8	33	BTB/POZ domain-containing protein 8 (AP2-interacting clathri	w
+CLATHRIN-INTERACTING	human	Q14677	CLINT1	Q14677	40	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
+CLAT_HUMAN	human	P28329	CHAT	P28329	5	99		
+CLAUDIN	human	B4DFI2	?	B4DFI2	0	1	Claudin	w
+CLAUDIN	human	Q8NHS1	CLDND2	Q8NHS1	5	70	Claudin domain-containing protein 2	w
+CLAUDIN	human	Q9NY35	CLDND1	Q9NY35	17	120	Claudin domain-containing protein 1 (Claudin-25) (Membrane p	w
+CLAUDIN	zebrafish	A0A0R4IHD8	cldn23.2	A0A0R4IHD8	0	29	Claudin 23b	w
+CLAUDIN	zebrafish	A0A2R8Q922	cldn15lb	A0A2R8Q922	0	43	Claudin	w
+CLAUDIN	zebrafish	A0A8N7UZN0	cldnj	A0A8N7UZN0	10	29	Claudin	w
+CLAUDIN	zebrafish	B0V349	cldn26	B0V349	0	29	Claudin	w
+CLAUDIN	zebrafish	B8JLG4	cldn15la	B8JLG4	0	61	Claudin	w
+CLAUDIN	zebrafish	E7FDA9	cldn34a	E7FDA9	0	29	Claudin 34a	w
+CLAUDIN	zebrafish	F1Q6Q0	cldn23.1	F1Q6Q0	0	1	Claudin 23a	w
+CLAUDIN	zebrafish	F1QB03	cldnf	F1QB03	10	29	Claudin	w
+CLAUDIN	zebrafish	F1QH81	cldn10b	F1QH81	3	43	Claudin	w
+CLAUDIN	zebrafish	F1R5J2	cldn5b	F1R5J2	18	53	Claudin	w
+CLAUDIN	zebrafish	Q0P479	cldn33b	Q0P479	2	74	Claudin	w
+CLAUDIN	zebrafish	Q1RLW4	cldn15b	Q1RLW4	2	62	Claudin	w
+CLAUDIN	zebrafish	Q561T6	cldn29	Q561T6	11	39	Claudin	w
+CLAUDIN	zebrafish	Q567D5	cldn19	Q567D5	6	38	Claudin	w
+CLAUDIN	zebrafish	Q6DBT9	cldnk	Q6DBT9	17	39	Claudin	w
+CLAUDIN	zebrafish	Q6DHL0	cldn11a	Q6DHL0	3	34	Claudin	w
+CLAUDIN	zebrafish	Q6NUZ6	cldn5a	Q6NUZ6	14	53	Claudin	w
+CLAUDIN	zebrafish	Q7T2E7	cldn15a	Q7T2E7	1	63	Claudin	w
+CLAUDIN	zebrafish	Q8QHA3	cldn10a	Q8QHA3	3	43	Claudin	w
+CLAUDIN	zebrafish	Q90XR1	cldn12	Q90XR1	5	85	Claudin 12 isoform fc43a12	w
+CLAUDIN	zebrafish	Q90XR6	cldni	Q90XR6	11	29	Claudin	w
+CLAUDIN	zebrafish	Q90XR8	cldnb	Q90XR8	9	39	Claudin b	w
+CLAUDIN	zebrafish	Q90XR9	cldne	Q90XR9	7	39	Claudin	w
+CLAUDIN-1	human	O95832	CLDN1	O95832	29	421	Claudin-1 (Senescence-associated epithelial membrane protein	w
+CLAUDIN-1	zebrafish	A0AB32TDF6	LOC101883865	A0AB32TDF6	0	4	Claudin-1	w
+CLAUDIN-10	human	P78369	CLDN10	P78369	15	131	Claudin-10 (Oligodendrocyte-specific protein-like) (OSP-like	w
+CLAUDIN-11	human	O75508	CLDN11	O75508	15	172	Claudin-11 (Oligodendrocyte-specific protein)	w
+CLAUDIN-11B	zebrafish	A4QNU3	cldn11b	A4QNU3	4	34	Claudin-11b	w
+CLAUDIN-12	human	P56749	CLDN12	P56749	19	170	Claudin-12	w
+CLAUDIN-14	human	O95500	CLDN14	O95500	26	120	Claudin-14	w
+CLAUDIN-15	human	P56746	CLDN15	P56746	4	114	Claudin-15	w
+CLAUDIN-16	human	Q9Y5I7	CLDN16	Q9Y5I7	24	82	Claudin-16 (Paracellin-1) (PCLN-1)	w
+CLAUDIN-17	human	P56750	CLDN17	P56750	9	129	Claudin-17	w
+CLAUDIN-18	human	P56856	CLDN18	P56856	2	39	Claudin-18	w
+CLAUDIN-19	human	Q8N6F1	CLDN19	Q8N6F1	28	215	Claudin-19	w
+CLAUDIN-2	human	P57739	CLDN2	P57739	28	193	Claudin-2 (SP82)	w
+CLAUDIN-2	zebrafish	A0A8M2BHN3	cldn2	A0A8M2BHN3	16	33	Claudin-2	w
+CLAUDIN-20	human	P56880	CLDN20	P56880	20	70	Claudin-20	w
+CLAUDIN-21	human	A6NM45	CLDN24	A6NM45	2	62	Claudin-24 (Claudin-21)	w
+CLAUDIN-22	human	Q8N7P3	CLDN22	Q8N7P3	2	67	Claudin-22	w
+CLAUDIN-23	human	Q96B33	CLDN23	Q96B33	3	68	Claudin-23	w
+CLAUDIN-24	human	A6NM45	CLDN24	A6NM45	2	62	Claudin-24 (Claudin-21)	w
+CLAUDIN-25	human	C9JDP6	CLDN25	C9JDP6	2	145	Claudin-25	w
+CLAUDIN-25	human	Q9NY35	CLDND1	Q9NY35	17	120	Claudin domain-containing protein 1 (Claudin-25) (Membrane p	w
+CLAUDIN-26	human	B3SHH9	TMEM114	B3SHH9	2	54	Transmembrane protein 114 (Claudin-26)	w
+CLAUDIN-27	human	A6NFC5	TMEM235	A6NFC5	12	146	Transmembrane protein 235 (Claudin-27)	w
+CLAUDIN-3	human	O15551	CLDN3	O15551	28	228	Claudin-3 (Clostridium perfringens enterotoxin receptor 2) (	w
+CLAUDIN-3	zebrafish	Q90XR2	cldn3d	Q90XR2	16	36	Claudin-3	w
+CLAUDIN-34	human	H7C241	CLDN34	H7C241	4	38	Claudin-34	w
+CLAUDIN-4	human	O14493	CLDN4	O14493	31	282	Claudin-4 (Clostridium perfringens enterotoxin receptor) (CP	w
+CLAUDIN-5	human	O00501	CLDN5	O00501	26	126	Claudin-5 (Transmembrane protein deleted in VCFS) (TMDVCF)	w
+CLAUDIN-6	human	P56747	CLDN6	P56747	17	113	Claudin-6 (Skullin)	w
+CLAUDIN-7	human	O95471	CLDN7	O95471	29	445	Claudin-7 (CLDN-7)	w
+CLAUDIN-7-A	zebrafish	Q6DHP1	cldn7a	Q6DHP1	9	83	Claudin-7-A	w
+CLAUDIN-7-B	zebrafish	Q9YH92	cldn7b	Q9YH92	10	36	Claudin-7-B	w
+CLAUDIN-8	human	P56748	CLDN8	P56748	21	146	Claudin-8	w
+CLAUDIN-9	human	O95484	CLDN9	O95484	20	100	Claudin-9	w
+CLAUDIN-LIKE	human	Q9BSN7	TMEM204	Q9BSN7	18	69	Transmembrane protein 204 (Claudin-like protein 24)	w
+CLAUDIN-LIKE	worm	B3GWC2	clc-9	B3GWC2	0	4	CLaudin-like in Caenorhabditis	w
+CLAUDIN-LIKE	worm	Q23532	clc-3	Q23532	0	2	CLaudin-like in Caenorhabditis	w
+CLAUDIN-LIKE	zebrafish	Q9YH90	cldng	Q9YH90	17	29	Claudin-like protein ZF-A9	w
+CLAUDIN-LIKE	zebrafish	Q9YH91	cldnd	Q9YH91	6	40	Claudin-like protein ZF-A89	w
+CLAVESIN-1	human	Q8IUQ0	CLVS1	Q8IUQ0	3	48	Clavesin-1 (Cellular retinaldehyde-binding protein-like) (Re	w
+CLAVESIN-2	human	Q5SYC1	CLVS2	Q5SYC1	10	105	Clavesin-2 (Retinaldehyde-binding protein 1-like 2) (clathri	w
+CLAVESIN-2	zebrafish	Q5SPP0	clvs2	Q5SPP0	0	7	Clavesin-2	w
+CLAX	human	Q9UHP7	CLEC2D	Q9UHP7	58	409		

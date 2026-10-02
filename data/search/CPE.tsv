@@ -1,12 +1,52 @@
-CPE	mus-musculus	Q00493	Cpe	Q00493	0	13	Carboxypeptidase E
-CPE	rattus-norvegicus	P15087	Cpe	P15087	0	8	Carboxypeptidase E
-CPEB1	mus-musculus	P70166	Cpeb1	P70166	9	53	Cytoplasmic polyadenylation element-binding protein 1
-CPEB1	rattus-norvegicus	P0C279	Cpeb1	P0C279	7	55	Cytoplasmic polyadenylation element-binding protein 1
-CPEB2	mus-musculus	Q812E0	Cpeb2	Q812E0	2	32	Cytoplasmic polyadenylation element-binding protein 2
-CPEB2	rattus-norvegicus	A0A0G2K520	Cpeb2	A0A0G2K520	1	31	Cytoplasmic polyadenylation element binding protein 2
-CPEB3	mus-musculus	Q7TN99	Cpeb3	Q7TN99	6	42	Cytoplasmic polyadenylation element-binding protein 3
-CPEB3	rattus-norvegicus	D4AD99	Cpeb3	D4AD99	5	40	Cytoplasmic polyadenylation element binding protein 3
-CPEB4	mus-musculus	Q7TN98	Cpeb4	Q7TN98	2	30	Cytoplasmic polyadenylation element-binding protein 4
-CPEB4	rattus-norvegicus	A0A0G2K3Y6	Cpeb4	A0A0G2K3Y6	1	29	Cytoplasmic polyadenylation element binding protein 4
-CPED1	mus-musculus	B2RX70	Cped1	B2RX70	0	1	Cadherin-like and PC-esterase domain containing 1
-CPEFG	arabidopsis-thaliana	Q9SI75	CPEFG	Q9SI75	4	487	Elongation factor G, chloroplastic
+CPE	human	P16870	CPE	P16870	4	124	Carboxypeptidase E (CPE) (EC 3.4.17.10) (Carboxypeptidase H)	
+CPE	mus-musculus	Q00493	Cpe	Q00493	0	13	Carboxypeptidase E	
+CPE	rattus-norvegicus	P15087	Cpe	P15087	0	8	Carboxypeptidase E	
+CPE	zebrafish	Q6NSM5	cpe	Q6NSM5	0	12	Carboxypeptidase E	
+CPE-BINDING	human	Q17RY0	CPEB4	Q17RY0	39	198	Cytoplasmic polyadenylation element-binding protein 4 (CPE-B	w
+CPE-BINDING	human	Q7Z5Q1	CPEB2	Q7Z5Q1	10	61	Cytoplasmic polyadenylation element-binding protein 2 (CPE-B	w
+CPE-BINDING	human	Q8NE35	CPEB3	Q8NE35	10	75	Cytoplasmic polyadenylation element-binding protein 3 (CPE-B	w
+CPE-BINDING	human	Q9BZB8	CPEB1	Q9BZB8	34	203	Cytoplasmic polyadenylation element-binding protein 1 (CPE-B	w
+CPE-BP1	human	Q9BZB8	CPEB1	Q9BZB8	34	203	Cytoplasmic polyadenylation element-binding protein 1 (CPE-B	w
+CPE-BP2	human	Q7Z5Q1	CPEB2	Q7Z5Q1	10	61	Cytoplasmic polyadenylation element-binding protein 2 (CPE-B	w
+CPE-BP3	human	Q8NE35	CPEB3	Q8NE35	10	75	Cytoplasmic polyadenylation element-binding protein 3 (CPE-B	w
+CPE-BP4	human	Q17RY0	CPEB4	Q17RY0	39	198	Cytoplasmic polyadenylation element-binding protein 4 (CPE-B	w
+CPE-R	human	O14493	CLDN4	O14493	31	282	Claudin-4 (Clostridium perfringens enterotoxin receptor) (CP	w
+CPE-R	human	O15551	CLDN3	O15551	28	228	Claudin-3 (Clostridium perfringens enterotoxin receptor 2) (	w
+CPE-RECEPTOR	human	O14493	CLDN4	O14493	31	282	Claudin-4 (Clostridium perfringens enterotoxin receptor) (CP	w
+CPE-RECEPTOR	human	O15551	CLDN3	O15551	28	228	Claudin-3 (Clostridium perfringens enterotoxin receptor 2) (	w
+CPEB	human	Q9BZB8	CPEB1	Q9BZB8	34	203		
+CPEB1	human	Q9BZB8	CPEB1	Q9BZB8	34	203	Cytoplasmic polyadenylation element-binding protein 1 (CPE-B	
+CPEB1	mus-musculus	P70166	Cpeb1	P70166	9	53	Cytoplasmic polyadenylation element-binding protein 1	
+CPEB1	rattus-norvegicus	P0C279	Cpeb1	P0C279	7	55	Cytoplasmic polyadenylation element-binding protein 1	
+CPEB1	zebrafish	Q9YGX5	cpeb1	Q9YGX5	2	25	Cytoplasmic polyadenylation element-binding protein 1	
+CPEB1_HUMAN	human	Q9BZB8	CPEB1	Q9BZB8	34	203		
+CPEB2	human	Q7Z5Q1	CPEB2	Q7Z5Q1	10	61	Cytoplasmic polyadenylation element-binding protein 2 (CPE-B	
+CPEB2	mus-musculus	Q812E0	Cpeb2	Q812E0	2	32	Cytoplasmic polyadenylation element-binding protein 2	
+CPEB2	rattus-norvegicus	A0A0G2K520	Cpeb2	A0A0G2K520	1	31	Cytoplasmic polyadenylation element binding protein 2	
+CPEB2_HUMAN	human	Q7Z5Q1	CPEB2	Q7Z5Q1	10	61		
+CPEB3	human	Q8NE35	CPEB3	Q8NE35	10	75	Cytoplasmic polyadenylation element-binding protein 3 (CPE-B	
+CPEB3	mus-musculus	Q7TN99	Cpeb3	Q7TN99	6	42	Cytoplasmic polyadenylation element-binding protein 3	
+CPEB3	rattus-norvegicus	D4AD99	Cpeb3	D4AD99	5	40	Cytoplasmic polyadenylation element binding protein 3	
+CPEB3_HUMAN	human	Q8NE35	CPEB3	Q8NE35	10	75		
+CPEB4	human	Q17RY0	CPEB4	Q17RY0	39	198	Cytoplasmic polyadenylation element-binding protein 4 (CPE-B	
+CPEB4	mus-musculus	Q7TN98	Cpeb4	Q7TN98	2	30	Cytoplasmic polyadenylation element-binding protein 4	
+CPEB4	rattus-norvegicus	A0A0G2K3Y6	Cpeb4	A0A0G2K3Y6	1	29	Cytoplasmic polyadenylation element binding protein 4	
+CPEB4	zebrafish	Q7SXN4	cpeb4	Q7SXN4	3	21	Cytoplasmic polyadenylation element-binding protein 4	
+CPEB4B	zebrafish	A0A0G2KYC0	cpeb4b	A0A0G2KYC0	3	22	Cytoplasmic polyadenylation element-binding protein 4b	
+CPEB4_HUMAN	human	Q17RY0	CPEB4	Q17RY0	39	198		
+CPED1	human	A4D0V7	CPED1	A4D0V7	1	5	Cadherin-like and PC-esterase domain-containing protein 1	
+CPED1	mus-musculus	B2RX70	Cped1	B2RX70	0	1	Cadherin-like and PC-esterase domain containing 1	
+CPED1_HUMAN	human	A4D0V7	CPED1	A4D0V7	1	5		
+CPEFG	arabidopsis-thaliana	Q9SI75	CPEFG	Q9SI75	4	487	Elongation factor G, chloroplastic	
+CPER	human	O14493	CLDN4	O14493	31	282		
+CPERP-A	human	Q8NDD1	FSAF1	Q8NDD1	52	360		
+CPERP-B	human	Q6PK04	CCDC137	Q6PK04	39	254		
+CPERP-C	human	Q15397	PUM3	Q15397	23	285		
+CPERP-D	human	Q9NVP1	DDX18	Q9NVP1	60	577		
+CPERP-E	human	Q969X6	UTP4	Q969X6	41	437		
+CPERP-F	human	Q96GQ7	DDX27	Q96GQ7	48	442		
+CPERP-G	human	Q9BRT6	LLPH	Q9BRT6	20	219		
+CPES	fly	FBgn0025335	Cpes	O77475	3	120	Ceramide phosphoethanolamine synthase (CPE synthase) (EC 2.7	
+CPETR1	human	O14493	CLDN4	O14493	31	282		
+CPETR2	human	O15551	CLDN3	O15551	28	228		
+CPETRL2	human	O95471	CLDN7	O95471	29	445		

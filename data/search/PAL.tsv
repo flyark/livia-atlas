@@ -1,40 +1,282 @@
-PAL	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PC24	pal	Q0PC24	6	79	Peptidoglycan-associated lipoprotein
-PAL	escherichia-coli-83333	P0A912	pal	P0A912	1	14	Peptidoglycan-associated lipoprotein
-PAL	haemophilus-influenzae	P10324	pal	P10324	2	52	Peptidoglycan-associated lipoprotein
-PAL	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQC1	pal	A0A0H3GQC1	3	97	Peptidoglycan-associated lipoprotein
-PAL	pseudomonas-aeruginosa	Q9I4Z4	pal	Q9I4Z4	4	66	Peptidoglycan-associated lipoprotein
-PAL	salmonella-typhimurium	Q7CQW9	pal	Q7CQW9	3	65	Peptidoglycan-associated lipoprotein
-PAL	shigella-dysenteriae-serotype-1	Q32II0	pal	Q32II0	3	80	Peptidoglycan-associated lipoprotein
-PAL1	arabidopsis-thaliana	P35510	PAL1	P35510	4	9	Phenylalanine ammonia-lyase 1
-PAL1	candida-albicans-237561	A0A1D8PJA9	PAL1	A0A1D8PJA9	0	1	Uncharacterized protein
-PAL1	glycine-max	P27991	PAL1	P27991	0	5	Phenylalanine ammonia-lyase 1
-PAL1	schizosaccharomyces-pombe	Q9UU83	pal1	Q9UU83	0	4	Protein pal1
-PAL1.1	glycine-max	I1NA96	PAL1.1	I1NA96	0	5	Phenylalanine ammonia-lyase
-PAL1.2	glycine-max	I1JPN0	PAL1.2	I1JPN0	0	5	Phenylalanine ammonia-lyase
-PAL1.3	glycine-max	A0A0R0KUR1	PAL1.3	A0A0R0KUR1	0	5	Phenylalanine ammonia-lyase
-PAL2	arabidopsis-thaliana	P45724	PAL2	P45724	5	9	Phenylalanine ammonia-lyase 2
-PAL2.1	glycine-max	I1L905	PAL2.1	I1L905	0	5	Phenylalanine ammonia-lyase
-PAL2.2	glycine-max	K7N485	PAL2.2	K7N485	0	5	Phenylalanine ammonia-lyase
-PAL2.3	glycine-max	I1LZ94	PAL2.3	I1LZ94	0	5	Phenylalanine ammonia-lyase
-PAL3	arabidopsis-thaliana	P45725	PAL3	P45725	0	3	Phenylalanine ammonia-lyase 3
-PAL3.1	glycine-max	A0A0R4J2S3	PAL3.1	A0A0R4J2S3	0	5	Phenylalanine ammonia-lyase
-PAL4	arabidopsis-thaliana	Q9SS45	PAL4	Q9SS45	4	7	Phenylalanine ammonia-lyase 4
-PALA	cladophialophora-carrionii	A0A1C1C6L1	palA	A0A1C1C6L1	3	16	pH-response regulator protein palA/RIM20
-PALB	cladophialophora-carrionii	A0A1C1CJV7	palB	A0A1C1CJV7	3	8	Calpain-like protease palB/RIM13
-PALB2	mus-musculus	Q3U0P1	Palb2	Q3U0P1	45	311	Partner and localizer of BRCA2
-PALB2	rattus-norvegicus	D3ZM14	Palb2	D3ZM14	48	509	Partner and localizer of BRCA2
-PALD1	mus-musculus	P70261	Pald1	P70261	1	3	Paladin
-PALD1	rattus-norvegicus	D3ZCT5	Pald1	D3ZCT5	0	3	Paladin
-PALF	cladophialophora-carrionii	A0A1C1CC22	palF	A0A1C1CC22	2	6	pH-response regulator protein palF/RIM8
-PALH	cladophialophora-carrionii	A0A1C1CA66	palH	A0A1C1CA66	3	3	pH-response regulator protein palH/RIM21
-PALLD	mus-musculus	Q9ET54	Palld	Q9ET54	5	22	Palladin
-PALM	mus-musculus	Q9Z0P4	Palm	Q9Z0P4	1	9	Paralemmin-1
-PALM	rattus-norvegicus	Q920Q0	Palm	Q920Q0	2	5	Paralemmin-1
-PALM3	mus-musculus	A2TJV2	Palm3	A2TJV2	0	4	Paralemmin-3
-PALM3	rattus-norvegicus	A0A0G2JW79	Palm3	A0A0G2JW79	4	28	Paralemmin 3
-PALM3	rattus-norvegicus	D4A1J3	Palm3	D4A1J3	1	9	Paralemmin 3
-PALMD	mus-musculus	Q9JHU2	Palmd	Q9JHU2	0	1	Palmdelphin
-PALS1	mus-musculus	Q9JLB2	Pals1	Q9JLB2	10	36	Protein PALS1
-PALS1	rattus-norvegicus	B4F7E7	Pals1	B4F7E7	11	34	Protein PALS1
-PALS2	mus-musculus	Q9JLB0	Pals2	Q9JLB0	6	21	Protein PALS2
-PALS2	rattus-norvegicus	A0A0G2K4N7	Pals2	A0A0G2K4N7	5	11	MAGUK p55 subfamily member 2
+PAL	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PC24	pal	Q0PC24	6	79	Peptidoglycan-associated lipoprotein	
+PAL	escherichia-coli-83333	P0A912	pal	P0A912	1	14	Peptidoglycan-associated lipoprotein	
+PAL	fly	FBgn0289678	pal	Q8IPE5	0	1	paternal loss	
+PAL	haemophilus-influenzae	P10324	pal	P10324	2	52	Peptidoglycan-associated lipoprotein	
+PAL	human	Q9P2V4	LRIT1	Q9P2V4	47	161		
+PAL	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQC1	pal	A0A0H3GQC1	3	97	Peptidoglycan-associated lipoprotein	
+PAL	pseudomonas-aeruginosa	Q9I4Z4	pal	Q9I4Z4	4	66	Peptidoglycan-associated lipoprotein	
+PAL	salmonella-typhimurium	Q7CQW9	pal	Q7CQW9	3	65	Peptidoglycan-associated lipoprotein	
+PAL	shigella-dysenteriae-serotype-1	Q32II0	pal	Q32II0	3	80	Peptidoglycan-associated lipoprotein	
+PAL-1	worm	P34766	pal-1	P34766	5	136	Homeobox protein pal-1	w
+PAL-1	worm	P34766	pal-1	P34766	5	136	Homeobox protein pal-1	w
+PAL1	arabidopsis-thaliana	P35510	PAL1	P35510	4	9	Phenylalanine ammonia-lyase 1	
+PAL1	candida-albicans-237561	A0A1D8PJA9	PAL1	A0A1D8PJA9	0	1	Uncharacterized protein	
+PAL1	fly	FBgn0283510	Pal1	Q9V5E1	477	2382	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 1 (EC 4.	
+PAL1	glycine-max	P27991	PAL1	P27991	0	5	Phenylalanine ammonia-lyase 1	
+PAL1	schizosaccharomyces-pombe	Q9UU83	pal1	Q9UU83	0	4	Protein pal1	
+PAL1	yeast	Q05518	PAL1	Q05518	2	23	Protein PAL1	
+PAL1.1	glycine-max	I1NA96	PAL1.1	I1NA96	0	5	Phenylalanine ammonia-lyase	
+PAL1.2	glycine-max	I1JPN0	PAL1.2	I1JPN0	0	5	Phenylalanine ammonia-lyase	
+PAL1.3	glycine-max	A0A0R0KUR1	PAL1.3	A0A0R0KUR1	0	5	Phenylalanine ammonia-lyase	
+PAL2	arabidopsis-thaliana	P45724	PAL2	P45724	5	9	Phenylalanine ammonia-lyase 2	
+PAL2	fly	FBgn0262728	Pal2	Q9W1L5	54	247	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 2 (EC 4.	
+PAL2.1	glycine-max	I1L905	PAL2.1	I1L905	0	5	Phenylalanine ammonia-lyase	
+PAL2.2	glycine-max	K7N485	PAL2.2	K7N485	0	5	Phenylalanine ammonia-lyase	
+PAL2.3	glycine-max	I1LZ94	PAL2.3	I1LZ94	0	5	Phenylalanine ammonia-lyase	
+PAL3	arabidopsis-thaliana	P45725	PAL3	P45725	0	3	Phenylalanine ammonia-lyase 3	
+PAL3.1	glycine-max	A0A0R4J2S3	PAL3.1	A0A0R4J2S3	0	5	Phenylalanine ammonia-lyase	
+PAL4	arabidopsis-thaliana	Q9SS45	PAL4	Q9SS45	4	7	Phenylalanine ammonia-lyase 4	
+PAL4A_HUMAN	human	Q9Y536	PPIAL4A	Q9Y536	78	449		
+PAL4C_HUMAN	human	A0A0B4J2A2	PPIAL4C	A0A0B4J2A2	56	337		
+PAL4D_HUMAN	human	F5H284	PPIAL4D	F5H284	68	380		
+PAL4E_HUMAN	human	A0A075B759	PPIAL4E	A0A075B759	52	378		
+PAL4F_HUMAN	human	P0DN26	PPIAL4F	P0DN26	48	370		
+PAL4G_HUMAN	human	P0DN37	PPIAL4G	P0DN37	62	397		
+PAL4H_HUMAN	human	A0A075B767	PPIAL4H	A0A075B767	70	416		
+PALA	cladophialophora-carrionii	A0A1C1C6L1	palA	A0A1C1C6L1	3	16	pH-response regulator protein palA/RIM20	
+PALA	yeast	Q12033	RIM20	Q12033	5	32	pH-response regulator protein palA/RIM20	w
+PALADIN	human	Q9ULE6	PALD1	Q9ULE6	2	91	Paladin	w
+PALATE	fly	FBgn0030456	CG4332	Q9VYG3	16	58	Lipid scramblase CLPTM1L (Cisplatin resistance-related prote	w
+PALATE	human	O96005	CLPTM1	O96005	9	148	Putative lipid scramblase CLPTM1 (Cleft lip and palate trans	w
+PALATE	human	P59826	BPIFB3	P59826	2	33	BPI fold-containing family B member 3 (Ligand-binding protei	w
+PALATE	human	P59827	BPIFB4	P59827	0	19	BPI fold-containing family B member 4 (Ligand-binding protei	w
+PALATE	human	Q8N4F0	BPIFB2	Q8N4F0	10	94	BPI fold-containing family B member 2 (Bactericidal/permeabi	w
+PALATE	human	Q8TDL5	BPIFB1	Q8TDL5	15	204	BPI fold-containing family B member 1 (Long palate, lung and	w
+PALATE	human	Q96DR5	BPIFA2	Q96DR5	6	70	BPI fold-containing family A member 2 (Parotid secretory pro	w
+PALATE	human	Q96KA5	CLPTM1L	Q96KA5	10	154	Lipid scramblase CLPTM1L (Cisplatin resistance-related prote	w
+PALATE	human	Q9BQP9	BPIFA3	Q9BQP9	9	30	BPI fold-containing family A member 3 (Short palate, lung an	w
+PALATE	human	Q9NP55	BPIFA1	Q9NP55	11	177	BPI fold-containing family A member 1 (Lung-specific protein	w
+PALATE	worm	Q22003	CELE_R166.2	Q22003	0	6	Cleft lip and palate transmembrane protein 1 homolog	w
+PALATE	worm	Q966P8	C36B7.6	Q966P8	0	1	Cleft lip and palate transmembrane protein 1 homolog	w
+PALB	cladophialophora-carrionii	A0A1C1CJV7	palB	A0A1C1CJV7	3	8	Calpain-like protease palB/RIM13	
+PALB	human	P02766	TTR	P02766	27	875		
+PALB	human	Q9Y6W3	CAPN7	Q9Y6W3	13	65	Calpain-7 (EC 3.4.22.-) (PalB homolog) (PalBH)	w
+PALB2	human	Q86YC2	PALB2	Q86YC2	194	1087	Partner and localizer of BRCA2	
+PALB2	mus-musculus	Q3U0P1	Palb2	Q3U0P1	45	311	Partner and localizer of BRCA2	
+PALB2	rattus-norvegicus	D3ZM14	Palb2	D3ZM14	48	509	Partner and localizer of BRCA2	
+PALB2_HUMAN	human	Q86YC2	PALB2	Q86YC2	194	1087		
+PALBH	human	Q9Y6W3	CAPN7	Q9Y6W3	13	65		
+PALD	human	Q9ULE6	PALD1	Q9ULE6	2	91		
+PALD1	human	Q9ULE6	PALD1	Q9ULE6	2	91	Paladin	
+PALD1	mus-musculus	P70261	Pald1	P70261	1	3	Paladin	
+PALD1	rattus-norvegicus	D3ZCT5	Pald1	D3ZCT5	0	3	Paladin	
+PALD_HUMAN	human	Q9ULE6	PALD1	Q9ULE6	2	91		
+PALE	fly	FBgn0005626	ple	P18459	5	38	Tyrosine 3-monooxygenase (EC 1.14.16.2) (Protein Pale) (Tyro	w
+PALF	cladophialophora-carrionii	A0A1C1CC22	palF	A0A1C1CC22	2	6	pH-response regulator protein palF/RIM8	
+PALF	human	Q8IW19	APLF	Q8IW19	20	85		
+PALF	yeast	P53179	RIM8	P53179	3	24	pH-response regulator protein palF/RIM8	w
+PALH	cladophialophora-carrionii	A0A1C1CA66	palH	A0A1C1CA66	3	3	pH-response regulator protein palH/RIM21	
+PALH	yeast	P48565	RIM21	P48565	3	13	pH-response regulator protein palH/RIM21	w
+PALI	yeast	Q04734	RIM9	Q04734	2	5	pH-response regulator protein palI/RIM9	w
+PALINDROMIC-BINDING	human	Q16656	NRF1	Q16656	38	492	Nuclear respiratory factor 1 (NRF-1) (Alpha palindromic-bind	w
+PALISADE	fly	FBgn0086265	psd	Q9VMK3	51	245	Palisade, isoform A (Palisade, isoform B)	w
+PALL	fly	FBgn0036005	pall	Q9VT01	2	14	FI06792p (Pallbearer) (RE55455p)	
+PALLADIN	human	Q8WX93	PALLD	Q8WX93	58	213	Palladin (SIH002) (Sarcoma antigen NY-SAR-77)	w
+PALLADIN	zebrafish	F8W315	palld	F8W315	2	15	Palladin	w
+PALLBEARER	fly	FBgn0036005	pall	Q9VT01	2	14	FI06792p (Pallbearer) (RE55455p)	w
+PALLD	human	Q8WX93	PALLD	Q8WX93	58	213	Palladin (SIH002) (Sarcoma antigen NY-SAR-77)	
+PALLD	mus-musculus	Q9ET54	Palld	Q9ET54	5	22	Palladin	
+PALLD	zebrafish	F8W315	palld	F8W315	2	15	Palladin	
+PALLD_HUMAN	human	Q8WX93	PALLD	Q8WX93	58	213		
+PALLID	fly	FBgn0036192	Pldn	Q9VTM0	13	33	Biogenesis of lysosome-related organelles complex 1 subunit 	w
+PALLID	human	Q9UL45	BLOC1S6	Q9UL45	40	171	Biogenesis of lysosome-related organelles complex 1 subunit 	w
+PALLIDIN	human	Q9UL45	BLOC1S6	Q9UL45	40	171	Biogenesis of lysosome-related organelles complex 1 subunit 	w
+PALM	human	O75781	PALM	O75781	18	100	Paralemmin-1 (Paralemmin)	
+PALM	mus-musculus	Q9Z0P4	Palm	Q9Z0P4	1	9	Paralemmin-1	
+PALM	rattus-norvegicus	Q920Q0	Palm	Q920Q0	2	5	Paralemmin-1	
+PALM1A	zebrafish	E9QIM7	palm1a	E9QIM7	0	3	Paralemmin-1	
+PALM1B	zebrafish	A0A2R8RTM3	palm1b	A0A2R8RTM3	1	3	Paralemmin-1	
+PALM2	human	Q9Y2D5	PALM2AKAP2	Q9Y2D5	36	137		
+PALM2	zebrafish	A0A0R4ISM7	palm2akap2	A0A0R4ISM7	1	7	Palm2 and akap2 fusion	w
+PALM2-AKAP2	human	Q9Y2D5	PALM2AKAP2	Q9Y2D5	36	137	PALM2-AKAP2 fusion protein (A-kinase anchor protein 2) (AKAP	w
+PALM2AKAP2	human	Q9Y2D5	PALM2AKAP2	Q9Y2D5	36	137	PALM2-AKAP2 fusion protein (A-kinase anchor protein 2) (AKAP	
+PALM2AKAP2	zebrafish	A0A0R4ISM7	palm2akap2	A0A0R4ISM7	1	7	Palm2 and akap2 fusion	
+PALM3	human	A6NDB9	PALM3	A6NDB9	5	38	Paralemmin-3	
+PALM3	mus-musculus	A2TJV2	Palm3	A2TJV2	0	4	Paralemmin-3	
+PALM3	rattus-norvegicus	A0A0G2JW79	Palm3	A0A0G2JW79	4	28	Paralemmin 3	
+PALM3	rattus-norvegicus	D4A1J3	Palm3	D4A1J3	1	9	Paralemmin 3	
+PALM3_HUMAN	human	A6NDB9	PALM3	A6NDB9	5	38		
+PALMD	human	Q9NP74	PALMD	Q9NP74	5	38	Palmdelphin (Paralemmin-like protein)	
+PALMD	mus-musculus	Q9JHU2	Palmd	Q9JHU2	0	1	Palmdelphin	
+PALMDELPHIN	human	Q9NP74	PALMD	Q9NP74	5	38	Palmdelphin (Paralemmin-like protein)	w
+PALMD_HUMAN	human	Q9NP74	PALMD	Q9NP74	5	38		
+PALMI	human	Q92523	CPT1B	Q92523	2	24	Carnitine O-palmitoyltransferase 1, muscle isoform (CPT1-M) 	w
+PALMITO	human	P50416	CPT1A	P50416	10	167	Carnitine O-palmitoyltransferase 1, liver isoform (CPT1-L) (	w
+PALMITOLEOYL-PROTEIN	fly	FBgn0044028	Notum	Q9VUX3	14	249	Palmitoleoyl-protein carboxylesterase NOTUM (EC 3.1.1.98) (P	w
+PALMITOLEOYL-PROTEIN	human	Q6P988	NOTUM	Q6P988	3	64	Palmitoleoyl-protein carboxylesterase NOTUM (EC 3.1.1.98) (h	w
+PALMITOLEOYL-PROTEIN	zebrafish	C5H5C4	notum1a	C5H5C4	0	2	Palmitoleoyl-protein carboxylesterase notum1a	w
+PALMITOYL	human	O75503	CLN5	O75503	14	87	Bis(monoacylglycero)phosphate synthase CLN5 (BMP synthase CL	w
+PALMITOYL	human	Q6ICB0	DESI1	Q6ICB0	32	141	Desumoylating isopeptidase 1 (DeSI-1) (EC 3.4.-.-) (PPPDE pe	w
+PALMITOYL	human	Q8TCG5	CPT1C	Q8TCG5	7	99	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	w
+PALMITOYL	human	Q9BSY9	DESI2	Q9BSY9	4	23	Deubiquitinase DESI2 (EC 3.4.19.12) (Desumoylating isopeptid	w
+PALMITOYL-COA	human	Q15067	ACOX1	Q15067	9	105	Peroxisomal acyl-coenzyme A oxidase 1 (AOX) (EC 1.3.3.6) (Pa	w
+PALMITOYL-COA	human	Q9NPJ3	ACOT13	Q9NPJ3	4	71	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	w
+PALMITOYL-COA	zebrafish	A0AB32T1Z2	LOC137487223	A0AB32T1Z2	1	25	palmitoyl-CoA hydrolase	w
+PALMITOYL-COA	zebrafish	A3KPZ6	ppt2b	A3KPZ6	0	25	palmitoyl-CoA hydrolase	w
+PALMITOYL-COA	zebrafish	F1RD68	ppt2a.1	F1RD68	2	25	palmitoyl-CoA hydrolase	w
+PALMITOYL-COA	zebrafish	X1WG38	ppt2a.2	X1WG38	2	25	palmitoyl-CoA hydrolase	w
+PALMITOYL-PROTEIN	fly	FBgn0030057	Ppt1	Q9W3C7	12	125	Palmitoyl-protein thioesterase 1 (PPT-1) (EC 3.1.2.22) (Palm	w
+PALMITOYL-PROTEIN	fly	FBgn0037842	CG6567	Q9VGV9	0	7	palmitoyl-protein hydrolase (EC 3.1.2.22)	w
+PALMITOYL-PROTEIN	fly	FBgn0042138	Apt1	M9PEW1	0	8	palmitoyl-protein hydrolase (EC 3.1.2.22)	w
+PALMITOYL-PROTEIN	human	O75608	LYPLA1	O75608	7	159	Acyl-protein thioesterase 1 (APT-1) (hAPT1) (EC 3.1.2.-) (Ly	w
+PALMITOYL-PROTEIN	human	O95372	LYPLA2	O95372	14	139	Acyl-protein thioesterase 2 (APT-2) (EC 3.1.2.-) (Lysophosph	w
+PALMITOYL-PROTEIN	human	P50897	PPT1	P50897	21	234	Palmitoyl-protein thioesterase 1 (PPT-1) (EC 3.1.2.2) (EC 3.	w
+PALMITOYL-PROTEIN	human	Q9NUJ1	ABHD10	Q9NUJ1	10	187	Palmitoyl-protein thioesterase ABHD10, mitochondrial (EC 3.1	w
+PALMITOYL-PROTEIN	human	Q9UMR5	PPT2	Q9UMR5	3	105	Lysosomal thioesterase PPT2 (PPT-2) (EC 3.1.2.2) (Palmitoyl-	w
+PALMITOYL-PROTEIN	worm	A0A061ACY0	ath-1	A0A061ACY0	0	11	palmitoyl-protein hydrolase	w
+PALMITOYL-PROTEIN	worm	Q20390	ppt-1	Q20390	0	5	Palmitoyl-protein thioesterase 1	w
+PALMITOYL-PROTEIN	zebrafish	A0A0R4ILM1	abhd10a	A0A0R4ILM1	1	8	Palmitoyl-protein thioesterase ABHD10, mitochondrial	w
+PALMITOYL-PROTEIN	zebrafish	E7F9Y7	abhd10b	E7F9Y7	0	8	Palmitoyl-protein thioesterase ABHD10, mitochondrial	w
+PALMITOYL-PROTEIN	zebrafish	E7FGL4	abhd17ab	E7FGL4	0	6	palmitoyl-protein hydrolase	w
+PALMITOYL-PROTEIN	zebrafish	F1R8J6	ppt1	F1R8J6	0	34	Palmitoyl-protein thioesterase 1	w
+PALMITOYL-PROTEIN	zebrafish	Q6DGB0	abhd17b	Q6DGB0	0	5	palmitoyl-protein hydrolase	w
+PALMITOYL-PROTEIN	zebrafish	Q6PBW8	lypla2	Q6PBW8	0	3	palmitoyl-protein hydrolase	w
+PALMITOYL-PROTEIN	zebrafish	Q6PC81	desi1a	Q6PC81	2	31	palmitoyl-protein hydrolase	w
+PALMITOYLATED	human	O75716	STK16	O75716	180	1360	Serine/threonine-protein kinase 16 (EC 2.7.11.1) (Myristoyla	w
+PALMITOYLATED	human	Q00013	MPP1	Q00013	38	346	55 kDa erythrocyte membrane protein (p55) (Membrane protein,	w
+PALMITOYLATED	human	Q8N3R9	PALS1	Q8N3R9	57	204	Protein PALS1 (MAGUK p55 subfamily member 5) (Membrane prote	w
+PALMITOYLATED	human	Q9NZW5	PALS2	Q9NZW5	24	121	Protein PALS2 (MAGUK p55 subfamily member 6) (Membrane prote	w
+PALMITOYLTRANSFERASE	fly	FBgn0027453	Dnz1	Q9VKN8	1	16	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0031495	GABPI	Q9VQK9	40	381	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0033474	CG1407	A0A0B4LF16	3	18	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0033815	CG4676	Q0IGS7	2	33	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0034057	CG8314	Q7K3T4	2	15	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0034202	CG17287	A1ZAR2	1	14	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0034729	CG10344	Q9W251	1	12	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0035383	Cpt2	Q9VZW7	1	36	Carnitine palmitoyltransferase 2 (EC 2.3.1.21)	w
+PALMITOYLTRANSFERASE	fly	FBgn0035970	CG4483	Q9VSV3	3	18	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0036670	CG13029	Q8IQN9	1	10	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0038039	CG5196	Q9VG80	0	18	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0039366	CG17198	Q9VBM8	0	17	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0039367	CG17197	Q9VBM7	0	9	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0039368	CG17196	Q9VBM6	7	64	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0039369	CG17195	Q9VBM5	1	13	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0039370	CG4956	Q9VBM4	2	15	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0039489	CG5880	Q9VB73	6	63	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0042133	CG18810	Q9I7L7	0	18	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0085223	CG34194	A8DYH6	2	7	Serine palmitoyltransferase small subunit B (Protein ADMP) (	w
+PALMITOYLTRANSFERASE	fly	FBgn0085322	CG34293	A8JRE2	4	12	Serine palmitoyltransferase small subunit B (Protein ADMP) (	w
+PALMITOYLTRANSFERASE	fly	FBgn0086532	Spt-I	Q6NR46	6	116	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
+PALMITOYLTRANSFERASE	fly	FBgn0259824	Hip14	M9PFE4	13	174	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0260941	app	Q9VTV6	12	103	Palmitoyltransferase (EC 2.3.1.225)	w
+PALMITOYLTRANSFERASE	fly	FBgn0261862	whd	Q9V3K9	1	38	Carnitine palmitoyltransferase I (MIP15836p) (Withered, isof	w
+PALMITOYLTRANSFERASE	human	O15269	SPTLC1	O15269	25	192	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
+PALMITOYLTRANSFERASE	human	O15270	SPTLC2	O15270	15	146	Serine palmitoyltransferase 2 (EC 2.3.1.50) (Long chain base	w
+PALMITOYLTRANSFERASE	human	P0C7U3	ZDHHC11B	P0C7U3	4	12	Probable palmitoyltransferase ZDHHC11B (EC 2.3.1.225) (Zinc 	w
+PALMITOYLTRANSFERASE	human	P15104	GLUL	P15104	8	354	Glutamine synthetase (GS) (EC 6.3.1.2) (Glutamate--ammonia l	w
+PALMITOYLTRANSFERASE	human	P23786	CPT2	P23786	6	116	Carnitine O-palmitoyltransferase 2, mitochondrial (EC 2.3.1.	w
+PALMITOYLTRANSFERASE	human	Q5W0Z9	ZDHHC20	Q5W0Z9	20	76	Palmitoyltransferase ZDHHC20 (EC 2.3.1.225) (Acyltransferase	w
+PALMITOYLTRANSFERASE	human	Q6UX98	ZDHHC24	Q6UX98	7	54	Probable palmitoyltransferase ZDHHC24 (EC 2.3.1.225) (Zinc f	w
+PALMITOYLTRANSFERASE	human	Q8IUH4	ZDHHC13	Q8IUH4	16	76	Palmitoyltransferase ZDHHC13 (EC 2.3.1.225) (Huntingtin-inte	w
+PALMITOYLTRANSFERASE	human	Q8IUH5	ZDHHC17	Q8IUH5	61	319	Palmitoyltransferase ZDHHC17 (EC 2.3.1.225) (Acyltransferase	w
+PALMITOYLTRANSFERASE	human	Q8IVQ6	ZDHHC21	Q8IVQ6	3	52	Palmitoyltransferase ZDHHC21 (EC 2.3.1.225) (DHHC domain-con	w
+PALMITOYLTRANSFERASE	human	Q8IYP9	ZDHHC23	Q8IYP9	19	406	Palmitoyltransferase ZDHHC23 (EC 2.3.1.225) (Zinc finger DHH	w
+PALMITOYLTRANSFERASE	human	Q8IZN3	ZDHHC14	Q8IZN3	8	44	Palmitoyltransferase ZDHHC14 (EC 2.3.1.225) (DHHC domain-con	w
+PALMITOYLTRANSFERASE	human	Q8N966	ZDHHC22	Q8N966	14	46	Palmitoyltransferase ZDHHC22 (EC 2.3.1.225) (Zinc finger DHH	w
+PALMITOYLTRANSFERASE	human	Q8NFR3	SPTSSB	Q8NFR3	18	113	Serine palmitoyltransferase small subunit B (Protein ADMP) (	w
+PALMITOYLTRANSFERASE	human	Q8TCG5	CPT1C	Q8TCG5	7	99	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	w
+PALMITOYLTRANSFERASE	human	Q8WTX9	ZDHHC1	Q8WTX9	3	27	Palmitoyltransferase ZDHHC1 (EC 2.3.1.225) (DHHC domain-cont	w
+PALMITOYLTRANSFERASE	human	Q8WVZ1	ZDHHC19	Q8WVZ1	5	78	Palmitoyltransferase ZDHHC19 (EC 2.3.1.225) (Zinc finger DHH	w
+PALMITOYLTRANSFERASE	human	Q969W0	SPTSSA	Q969W0	9	79	Serine palmitoyltransferase small subunit A (Small subunit o	w
+PALMITOYLTRANSFERASE	human	Q969W1	ZDHHC16	Q969W1	3	31	Palmitoyltransferase ZDHHC16 (EC 2.3.1.225) (Abl-philin 2) (	w
+PALMITOYLTRANSFERASE	human	Q96GR4	ZDHHC12	Q96GR4	14	147	Palmitoyltransferase ZDHHC12 (EC 2.3.1.225) (DHHC domain-con	w
+PALMITOYLTRANSFERASE	human	Q96MV8	ZDHHC15	Q96MV8	16	145	Palmitoyltransferase ZDHHC15 (EC 2.3.1.225) (Acyltransferase	w
+PALMITOYLTRANSFERASE	human	Q9C0B5	ZDHHC5	Q9C0B5	48	545	Palmitoyltransferase ZDHHC5 (EC 2.3.1.225) (Zinc finger DHHC	w
+PALMITOYLTRANSFERASE	human	Q9H6R6	ZDHHC6	Q9H6R6	13	79	Palmitoyltransferase ZDHHC6 (EC 2.3.1.225) (Stearoyltransfer	w
+PALMITOYLTRANSFERASE	human	Q9H8X9	ZDHHC11	Q9H8X9	5	29	Palmitoyltransferase ZDHHC11 (EC 2.3.1.225) (Zinc finger DHH	w
+PALMITOYLTRANSFERASE	human	Q9NPG8	ZDHHC4	Q9NPG8	7	35	Palmitoyltransferase ZDHHC4 (EC 2.3.1.225) (Zinc finger DHHC	w
+PALMITOYLTRANSFERASE	human	Q9NUE0	ZDHHC18	Q9NUE0	15	119	Palmitoyltransferase ZDHHC18 (EC 2.3.1.225) (DHHC domain-con	w
+PALMITOYLTRANSFERASE	human	Q9NUV7	SPTLC3	Q9NUV7	12	56	Serine palmitoyltransferase 3 (EC 2.3.1.50) (Long chain base	w
+PALMITOYLTRANSFERASE	human	Q9NXF8	ZDHHC7	Q9NXF8	15	87	Palmitoyltransferase ZDHHC7 (EC 2.3.1.225) (Acyltransferase 	w
+PALMITOYLTRANSFERASE	human	Q9NYG2	ZDHHC3	Q9NYG2	25	70	Palmitoyltransferase ZDHHC3 (EC 2.3.1.225) (Acyltransferase 	w
+PALMITOYLTRANSFERASE	human	Q9UIJ5	ZDHHC2	Q9UIJ5	7	64	Palmitoyltransferase ZDHHC2 (EC 2.3.1.225) (Acyltransferase 	w
+PALMITOYLTRANSFERASE	human	Q9ULC8	ZDHHC8	Q9ULC8	7	59	Palmitoyltransferase ZDHHC8 (EC 2.3.1.225) (Zinc finger DHHC	w
+PALMITOYLTRANSFERASE	human	Q9Y397	ZDHHC9	Q9Y397	13	106	Palmitoyltransferase ZDHHC9 (EC 2.3.1.225) (Zinc finger DHHC	w
+PALMITOYLTRANSFERASE	worm	G5EFD8	dhhc-6	G5EFD8	0	5	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	H2KYE9	dhhc-14	H2KYE9	1	7	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	O62144	dhhc-1	O62144	0	2	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	P91079	sptl-1	P91079	2	14	Serine palmitoyltransferase 1	w
+PALMITOYLTRANSFERASE	worm	Q20375	sptl-2	Q20375	2	7	Serine palmitoyltransferase 2	w
+PALMITOYLTRANSFERASE	worm	Q21161	dhhc-10	Q21161	0	6	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q21981	dhhc-5	Q21981	0	2	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q5FC64	spe-10	Q5FC64	0	8	Palmitoyltransferase spe-10	w
+PALMITOYLTRANSFERASE	worm	Q93828	dhhc-12	Q93828	0	5	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q95X59	dhhc-3	Q95X59	0	3	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q9N5D8	dhhc-11	Q9N5D8	0	8	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q9TYQ6	dhhc-13	Q9TYQ6	1	6	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q9U2K0	dhhc-8	Q9U2K0	1	4	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q9U3P7	dhhc-7	Q9U3P7	0	19	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	worm	Q9XVI6	sptl-3	Q9XVI6	2	11	Serine palmitoyltransferase 3	w
+PALMITOYLTRANSFERASE	worm	Q9XWD7	dhhc-2	Q9XWD7	1	3	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	yeast	P25045	LCB1	P25045	4	16	Serine palmitoyltransferase 1	w
+PALMITOYLTRANSFERASE	yeast	P39010	AKR1	P39010	7	60	Palmitoyltransferase AKR1	w
+PALMITOYLTRANSFERASE	yeast	P40970	LCB2	P40970	5	32	Serine palmitoyltransferase 2	w
+PALMITOYLTRANSFERASE	yeast	P42836	PFA3	P42836	2	6	Palmitoyltransferase PFA3	w
+PALMITOYLTRANSFERASE	yeast	Q03289	PFA5	Q03289	0	4	Palmitoyltransferase PFA5	w
+PALMITOYLTRANSFERASE	yeast	Q04629	SWF1	Q04629	0	5	Palmitoyltransferase SWF1	w
+PALMITOYLTRANSFERASE	yeast	Q06551	ERF2	Q06551	1	17	Palmitoyltransferase ERF2	w
+PALMITOYLTRANSFERASE	yeast	Q12006	PFA4	Q12006	1	9	Palmitoyltransferase PFA4	w
+PALMITOYLTRANSFERASE	yeast	Q12013	AKR2	Q12013	0	12	Probable palmitoyltransferase AKR2	w
+PALMITOYLTRANSFERASE	zebrafish	A0A0R4IDP3	zdhhc15a	A0A0R4IDP3	0	4	Palmitoyltransferase ZDHHC15A	w
+PALMITOYLTRANSFERASE	zebrafish	A0A0R4IF99	zdhhc16b	A0A0R4IF99	0	6	Palmitoyltransferase ZDHHC16B	w
+PALMITOYLTRANSFERASE	zebrafish	A0A0R4IQZ2	zdhhc13	A0A0R4IQZ2	4	10	Putative palmitoyltransferase ZDHHC13	w
+PALMITOYLTRANSFERASE	zebrafish	A0JPF8	zdhhc3b	A0JPF8	0	2	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	zebrafish	A2CEX1	zdhhc8b	A2CEX1	1	4	Palmitoyltransferase ZDHHC8B	w
+PALMITOYLTRANSFERASE	zebrafish	A5WVX9	zdhhc17	A5WVX9	4	7	Palmitoyltransferase ZDHHC17	w
+PALMITOYLTRANSFERASE	zebrafish	B0S5D5	zdhhc12a	B0S5D5	0	2	Palmitoyltransferase ZDHHC12-A	w
+PALMITOYLTRANSFERASE	zebrafish	B1H1H3	zdhhc21	B1H1H3	0	3	Palmitoyltransferase ZDHHC21	w
+PALMITOYLTRANSFERASE	zebrafish	B8A4F0	zdhhc16a	B8A4F0	1	6	Palmitoyltransferase ZDHHC16A	w
+PALMITOYLTRANSFERASE	zebrafish	E7EZI4	zdhhc11	E7EZI4	0	2	Palmitoyltransferase ZDHHC11	w
+PALMITOYLTRANSFERASE	zebrafish	E7F4Z4	zdhhc1	E7F4Z4	1	2	Palmitoyltransferase ZDHHC1	w
+PALMITOYLTRANSFERASE	zebrafish	E7F6D7	zdhhc6	E7F6D7	0	1	Palmitoyltransferase ZDHHC6	w
+PALMITOYLTRANSFERASE	zebrafish	E7FBS9	zdhhc5b	E7FBS9	1	4	Palmitoyltransferase ZDHHC5-B	w
+PALMITOYLTRANSFERASE	zebrafish	E7FH11	zdhhc18a	E7FH11	0	2	Palmitoyltransferase ZDHHC18-A	w
+PALMITOYLTRANSFERASE	zebrafish	E9QCD3	zdhhc14	E9QCD3	0	2	Palmitoyltransferase ZDHHC14	w
+PALMITOYLTRANSFERASE	zebrafish	F1Q7H8	zdhhc20a	F1Q7H8	0	4	Palmitoyltransferase ZDHHC20-A	w
+PALMITOYLTRANSFERASE	zebrafish	F1QGD2	zdhhc24	F1QGD2	0	2	Probable palmitoyltransferase ZDHHC24	w
+PALMITOYLTRANSFERASE	zebrafish	F1QHM7	zdhhc23a	F1QHM7	0	2	Palmitoyltransferase ZDHHC23-A	w
+PALMITOYLTRANSFERASE	zebrafish	F1QHU6	si:ch211-223a10.1	F1QHU6	3	7	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	zebrafish	F1QX91	zdhhc23b	F1QX91	0	2	Palmitoyltransferase ZDHHC23-B	w
+PALMITOYLTRANSFERASE	zebrafish	F1QXD3	zdhhc15b	F1QXD3	0	4	Palmitoyltransferase ZDHHC15B	w
+PALMITOYLTRANSFERASE	zebrafish	F1R013	zdhhc9	F1R013	1	3	Palmitoyltransferase ZDHHC9	w
+PALMITOYLTRANSFERASE	zebrafish	F1RE57	zdhhc3a	F1RE57	0	3	Palmitoyltransferase ZDHHC3-A	w
+PALMITOYLTRANSFERASE	zebrafish	Q1RLT2	sptssb	Q1RLT2	2	9	Serine palmitoyltransferase small subunit B	w
+PALMITOYLTRANSFERASE	zebrafish	Q2THW0	zdhhc5a	Q2THW0	0	4	Palmitoyltransferase ZDHHC5-A	w
+PALMITOYLTRANSFERASE	zebrafish	Q502G6	sptlc1	Q502G6	5	26	Serine palmitoyltransferase 1	w
+PALMITOYLTRANSFERASE	zebrafish	Q5BJC1	sptssa	Q5BJC1	2	13	Serine palmitoyltransferase small subunit A	w
+PALMITOYLTRANSFERASE	zebrafish	Q5BLG4	zdhhc2	Q5BLG4	0	4	Palmitoyltransferase ZDHHC2	w
+PALMITOYLTRANSFERASE	zebrafish	Q6DHI1	zdhhc7	Q6DHI1	1	2	Palmitoyltransferase ZDHHC7	w
+PALMITOYLTRANSFERASE	zebrafish	Q6P3H1	zgc:77880	Q6P3H1	0	2	Palmitoyltransferase	w
+PALMITOYLTRANSFERASE	zebrafish	Q7ZVN4	zdhhc18b	Q7ZVN4	0	2	Palmitoyltransferase ZDHHC18-B	w
+PALMITOYLTRANSFERASE	zebrafish	X1WBB5	zdhhc22	X1WBB5	1	2	Palmitoyltransferase ZDHHC22	w
+PALMITOYLTRANSFERASE-REGULATING	yeast	Q3E790	TSC3	Q3E790	1	9	Serine palmitoyltransferase-regulating protein TSC3	w
+PALML	human	Q9NP74	PALMD	Q9NP74	5	38		
+PALM_HUMAN	human	O75781	PALM	O75781	18	100		
+PALP	worm	Q965I8	CELE_T25D3.3	Q965I8	1	14	Tryptophan synthase beta chain-like PALP domain-containing p	w
+PALS-11	worm	A0A078BQI6	pals-11	A0A078BQI6	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-12	worm	Q2L6U3	pals-12	Q2L6U3	0	17	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-14	worm	G5ED04	pals-14	G5ED04	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-15	worm	Q2L6U1	pals-15	Q2L6U1	0	1	DUF4200 domain-containing protein	
+PALS-17	worm	Q9BKS4	pals-17	Q9BKS4	0	2	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-26	worm	Q17466	pals-26	Q17466	0	20	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-30	worm	G5EF79	pals-30	G5EF79	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-33	worm	O01622	pals-33	O01622	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-38	worm	Q18826	pals-38	Q18826	0	3	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-4	worm	O45256	pals-4	O45256	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-5	worm	O45257	pals-5	O45257	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS-8	worm	Q7YX94	pals-8	Q7YX94	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+PALS1	human	Q8N3R9	PALS1	Q8N3R9	57	204	Protein PALS1 (MAGUK p55 subfamily member 5) (Membrane prote	
+PALS1	mus-musculus	Q9JLB2	Pals1	Q9JLB2	10	36	Protein PALS1	
+PALS1	rattus-norvegicus	B4F7E7	Pals1	B4F7E7	11	34	Protein PALS1	
+PALS1	zebrafish	A0A8M1NWX5	pals1b	A0A8M1NWX5	8	22	Protein PALS1	w
+PALS1	zebrafish	Q8JHF4	pals1a	Q8JHF4	9	29	Protein PALS1	w
+PALS1-ASSOCIATED	human	Q8NI35	PATJ	Q8NI35	22	110	InaD-like protein (Inadl protein) (hINADL) (Channel-interact	w
+PALS1A	zebrafish	Q8JHF4	pals1a	Q8JHF4	9	29	Protein PALS1	
+PALS1B	zebrafish	A0A8M1NWX5	pals1b	A0A8M1NWX5	8	22	Protein PALS1	
+PALS1_HUMAN	human	Q8N3R9	PALS1	Q8N3R9	57	204		
+PALS2	human	Q9NZW5	PALS2	Q9NZW5	24	121	Protein PALS2 (MAGUK p55 subfamily member 6) (Membrane prote	
+PALS2	mus-musculus	Q9JLB0	Pals2	Q9JLB0	6	21	Protein PALS2	
+PALS2	rattus-norvegicus	A0A0G2K4N7	Pals2	A0A0G2K4N7	5	11	MAGUK p55 subfamily member 2	
+PALS2A	zebrafish	F1QKE3	pals2a	F1QKE3	5	28	MAGUK p55 subfamily member 6a	
+PALS2B	zebrafish	Q1LW94	pals2b	Q1LW94	8	28	MAGUK p55 subfamily member 6b	
+PALS2_HUMAN	human	Q9NZW5	PALS2	Q9NZW5	24	121		

@@ -1,45 +1,149 @@
-CRY1	arabidopsis-thaliana	Q43125	CRY1	Q43125	7	30	Cryptochrome-1
-CRY1	cladophialophora-carrionii	A0A1C1CZE3	CRY1	A0A1C1CZE3	0	3	Cryptochrome-1
-CRY1	mus-musculus	P97784	Cry1	P97784	5	85	Cryptochrome-1
-CRY1	rattus-norvegicus	Q32Q86	Cry1	Q32Q86	6	80	Cryptochrome-1
-CRY1A	glycine-max	B8K2A4	CRY1a	B8K2A4	18	75	Cryptochrome 1
-CRY2	arabidopsis-thaliana	Q96524	CRY2	Q96524	6	41	Cryptochrome-2
-CRY2	mus-musculus	Q9R194	Cry2	Q9R194	10	72	Cryptochrome-2
-CRY2	rattus-norvegicus	Q923I8	Cry2	Q923I8	9	73	Cryptochrome-2
-CRYAA	mus-musculus	P24622	Cryaa	P24622	2	8	Alpha-crystallin A chain
-CRYAB	mus-musculus	P23927	Cryab	P23927	5	69	Alpha-crystallin B chain
-CRYAB	rattus-norvegicus	P23928	Cryab	P23928	5	55	Alpha-crystallin B chain
-CRYBA1	mus-musculus	P02525	Cryba1	P02525	1	2	Beta-crystallin A1
-CRYBA1	rattus-norvegicus	P14881	Cryba1	P14881	2	3	Beta-crystallin A3
-CRYBA2	mus-musculus	Q9JJV1	Cryba2	Q9JJV1	0	3	Beta-crystallin A2
-CRYBA4	mus-musculus	Q9JJV0	Cryba4	Q9JJV0	2	3	Beta-crystallin A4
-CRYBA4	rattus-norvegicus	P56374	Cryba4	P56374	1	2	Beta-crystallin A4
-CRYBB1	mus-musculus	Q9WVJ5	Crybb1	Q9WVJ5	1	4	Beta-crystallin B1
-CRYBB1	rattus-norvegicus	P02523	Crybb1	P02523	1	6	Beta-crystallin B1
-CRYBB3	mus-musculus	Q9JJU9	Crybb3	Q9JJU9	2	7	Beta-crystallin B3
-CRYBB3	rattus-norvegicus	P02524	Crybb3	P02524	2	13	Beta-crystallin B3
-CRYBG3	mus-musculus	Q80W49	Crybg3	Q80W49	0	1	Beta/gamma crystallin domain-containing protein 3
-CRYBG3	rattus-norvegicus	F1M8T4	Crybg3	F1M8T4	0	1	Crystallin beta-gamma domain containing 3
-CRYD	arabidopsis-thaliana	Q84KJ5	CRYD	Q84KJ5	0	9	Cryptochrome DASH, chloroplastic/mitochondrial
-CRYD	oryza-sativa-subsp-japonica	Q651U1	CRYD	Q651U1	0	39	Cryptochrome DASH, chloroplastic/mitochondrial
-CRYGA	mus-musculus	P04345	Cryga	P04345	0	1	Gamma-crystallin A
-CRYGA	rattus-norvegicus	P10065	Cryga	P10065	0	3	Gamma-crystallin A
-CRYGB	rattus-norvegicus	P10066	Crygb	P10066	0	2	Gamma-crystallin B
-CRYGD	mus-musculus	P04342	Crygd	P04342	0	1	Gamma-crystallin D
-CRYGD	rattus-norvegicus	P10067	Crygd	P10067	0	2	Gamma-crystallin D
-CRYGE	mus-musculus	Q03740	Cryge	Q03740	0	1	Gamma-crystallin E
-CRYGF	rattus-norvegicus	P10068	Crygf	P10068	0	2	Gamma-crystallin F
-CRYGN	mus-musculus	Q8VHL5	Crygn	Q8VHL5	0	5	Gamma-crystallin N
-CRYGN	rattus-norvegicus	D3ZEG1	Crygn	D3ZEG1	0	11	Gamma-crystallin N
-CRYGS	mus-musculus	O35486	Crygs	O35486	1	2	Gamma-crystallin S
-CRYGS	rattus-norvegicus	P0C5E9	Crygs	P0C5E9	1	1	Gamma-crystallin S
-CRYL1	mus-musculus	Q99KP3	Cryl1	Q99KP3	0	13	Lambda-crystallin homolog
-CRYL1	rattus-norvegicus	Q811X6	Cryl1	Q811X6	0	14	Lambda-crystallin homolog
-CRYM	mus-musculus	O54983	Crym	O54983	0	5	Ketimine reductase mu-crystallin
-CRYM	rattus-norvegicus	Q9QYU4	Crym	Q9QYU4	0	3	Ketimine reductase mu-crystallin
-CRYS	dictyostelium-discoideum	P21837	cryS	P21837	0	5	Crystal protein
-CRYZ	mus-musculus	P47199	Cryz	P47199	0	5	Quinone oxidoreductase
-CRYZ	rattus-norvegicus	Q6AYT0	Cryz	Q6AYT0	0	4	Quinone oxidoreductase
-CRYZL1	mus-musculus	Q921W4	Cryzl1	Q921W4	1	4	Quinone oxidoreductase-like protein 1
-CRYZL1	rattus-norvegicus	Q5XI39	Cryzl1	Q5XI39	1	1	Crystallin zeta like 1
-CRYZL2	mus-musculus	Q3UNZ8	Cryzl2	Q3UNZ8	0	1	Quinone oxidoreductase-like protein 2
+CRY	fly	FBgn0025680	cry	O77059	7	161	Cryptochrome-1 (DmCRY1) (dcry) (Blue light photoreceptor)	
+CRY	human	Q9Y2S2	CRYL1	Q9Y2S2	1	110		
+CRY-DASH	zebrafish	Q4KML2	cry-dash	Q4KML2	3	33	Cryptochrome DASH	
+CRY1	arabidopsis-thaliana	Q43125	CRY1	Q43125	7	30	Cryptochrome-1	
+CRY1	cladophialophora-carrionii	A0A1C1CZE3	CRY1	A0A1C1CZE3	0	3	Cryptochrome-1	
+CRY1	human	Q16526	CRY1	Q16526	21	341	Cryptochrome-1	
+CRY1	mus-musculus	P97784	Cry1	P97784	5	85	Cryptochrome-1	
+CRY1	rattus-norvegicus	Q32Q86	Cry1	Q32Q86	6	80	Cryptochrome-1	
+CRY1A	glycine-max	B8K2A4	CRY1a	B8K2A4	18	75	Cryptochrome 1	
+CRY1A	zebrafish	A4QN37	cry1a	A4QN37	5	33	Cryptochrome-1	
+CRY1B	zebrafish	A0A8N1TWC6	cry1b	A0A8N1TWC6	4	33	Cryptochrome-1	
+CRY1_HUMAN	human	Q16526	CRY1	Q16526	21	341		
+CRY2	arabidopsis-thaliana	Q96524	CRY2	Q96524	6	41	Cryptochrome-2	
+CRY2	human	Q49AN0	CRY2	Q49AN0	19	338	Cryptochrome-2	
+CRY2	mus-musculus	Q9R194	Cry2	Q9R194	10	72	Cryptochrome-2	
+CRY2	rattus-norvegicus	Q923I8	Cry2	Q923I8	9	73	Cryptochrome-2	
+CRY2	zebrafish	Q7ZU53	cry2	Q7ZU53	2	33	Cryptochrome 3	
+CRY2_HUMAN	human	Q49AN0	CRY2	Q49AN0	19	338		
+CRY3A	zebrafish	A0A8M1P943	cry3a	A0A8M1P943	3	33	Cryptochrome circadian regulator 3a	
+CRY4	zebrafish	F1R2R7	cry4	F1R2R7	0	33	Cryptochrome circadian regulator 4	
+CRY5	zebrafish	F1QHM9	cry5	F1QHM9	0	32	Cryptochrome circadian regulator 5	
+CRYA1	human	P02489	CRYAA	P02489	15	256		
+CRYA2	human	P02511	CRYAB	P02511	29	476		
+CRYAA	human	P02489	CRYAA	P02489	15	256	Alpha-crystallin A chain (Heat shock protein beta-4) (HspB4)	
+CRYAA	mus-musculus	P24622	Cryaa	P24622	2	8	Alpha-crystallin A chain	
+CRYAA	zebrafish	Q8UUZ6	cryaa	Q8UUZ6	1	19	Alpha-crystallin A chain	
+CRYAA_HUMAN	human	P02489	CRYAA	P02489	15	256		
+CRYAB	human	P02511	CRYAB	P02511	29	476	Alpha-crystallin B chain (Alpha(B)-crystallin) (Heat shock p	
+CRYAB	mus-musculus	P23927	Cryab	P23927	5	69	Alpha-crystallin B chain	
+CRYAB	rattus-norvegicus	P23928	Cryab	P23928	5	55	Alpha-crystallin B chain	
+CRYABA	zebrafish	Q9PUR2	cryaba	Q9PUR2	7	44	Alpha-crystallin B chain	
+CRYAB_HUMAN	human	P02511	CRYAB	P02511	29	476		
+CRYAC	human	Q9UJY1	HSPB8	Q9UJY1	29	256		
+CRYB1	human	P05813	CRYBA1	P05813	21	89		
+CRYB2	human	P43320	CRYBB2	P43320	18	54		
+CRYB2A	human	P43320	CRYBB2	P43320	18	54		
+CRYB3	human	P26998	CRYBB3	P26998	75	336		
+CRYBA1	human	P05813	CRYBA1	P05813	21	89	Beta-crystallin A3 [Cleaved into: Beta-crystallin A3, isofor	
+CRYBA1	mus-musculus	P02525	Cryba1	P02525	1	2	Beta-crystallin A1	
+CRYBA1	rattus-norvegicus	P14881	Cryba1	P14881	2	3	Beta-crystallin A3	
+CRYBA1A	zebrafish	Q6DH14	cryba1a	Q6DH14	0	1	Beta A1-crystallin	
+CRYBA2	human	P53672	CRYBA2	P53672	16	80	Beta-crystallin A2 (Beta-A2 crystallin)	
+CRYBA2	mus-musculus	Q9JJV1	Cryba2	Q9JJV1	0	3	Beta-crystallin A2	
+CRYBA2A	zebrafish	Q6IQU2	cryba2a	Q6IQU2	0	1	Beta-crystallin A2	
+CRYBA2B	zebrafish	Q45FX9	cryba2b	Q45FX9	0	1	Beta-crystallin A2	
+CRYBA4	human	P53673	CRYBA4	P53673	16	91	Beta-crystallin A4 (Beta-A4 crystallin)	
+CRYBA4	mus-musculus	Q9JJV0	Cryba4	Q9JJV0	2	3	Beta-crystallin A4	
+CRYBA4	rattus-norvegicus	P56374	Cryba4	P56374	1	2	Beta-crystallin A4	
+CRYBA4	zebrafish	Q52JI7	cryba4	Q52JI7	0	1	Beta-crystallin A4	
+CRYBB1	human	P53674	CRYBB1	P53674	75	320	Beta-crystallin B1 (Beta-B1 crystallin)	
+CRYBB1	mus-musculus	Q9WVJ5	Crybb1	Q9WVJ5	1	4	Beta-crystallin B1	
+CRYBB1	rattus-norvegicus	P02523	Crybb1	P02523	1	6	Beta-crystallin B1	
+CRYBB2	human	P43320	CRYBB2	P43320	18	54	Beta-crystallin B2 (Beta-B2 crystallin) (Beta-crystallin Bp)	
+CRYBB3	human	P26998	CRYBB3	P26998	75	336	Beta-crystallin B3 (Beta-B3 crystallin) [Cleaved into: Beta-	
+CRYBB3	mus-musculus	Q9JJU9	Crybb3	Q9JJU9	2	7	Beta-crystallin B3	
+CRYBB3	rattus-norvegicus	P02524	Crybb3	P02524	2	13	Beta-crystallin B3	
+CRYBB3	zebrafish	Q52JI3	crybb3	Q52JI3	2	25	Beta-crystallin B3	
+CRYBG2	human	Q8N1P7	CRYBG2	Q8N1P7	2	37	Beta/gamma crystallin domain-containing protein 2 (Absent in	
+CRYBG3	human	Q68DQ2	CRYBG3	Q68DQ2	10	184	Very large A-kinase anchor protein (vlAKAP) (Beta/gamma crys	
+CRYBG3	mus-musculus	Q80W49	Crybg3	Q80W49	0	1	Beta/gamma crystallin domain-containing protein 3	
+CRYBG3	rattus-norvegicus	F1M8T4	Crybg3	F1M8T4	0	1	Crystallin beta-gamma domain containing 3	
+CRYD	arabidopsis-thaliana	Q84KJ5	CRYD	Q84KJ5	0	9	Cryptochrome DASH, chloroplastic/mitochondrial	
+CRYD	oryza-sativa-subsp-japonica	Q651U1	CRYD	Q651U1	0	39	Cryptochrome DASH, chloroplastic/mitochondrial	
+CRYG1	human	P11844	CRYGA	P11844	5	34		
+CRYG2	human	P07316	CRYGB	P07316	7	40		
+CRYG3	human	P07315	CRYGC	P07315	17	248		
+CRYG4	human	P07320	CRYGD	P07320	10	67		
+CRYG8	human	P22914	CRYGS	P22914	9	89		
+CRYGA	human	P11844	CRYGA	P11844	5	34	Gamma-crystallin A (Gamma-A-crystallin) (Gamma-crystallin 5)	
+CRYGA	mus-musculus	P04345	Cryga	P04345	0	1	Gamma-crystallin A	
+CRYGA	rattus-norvegicus	P10065	Cryga	P10065	0	3	Gamma-crystallin A	
+CRYGB	human	P07316	CRYGB	P07316	7	40	Gamma-crystallin B (Gamma-B-crystallin) (Gamma-crystallin 1-	
+CRYGB	rattus-norvegicus	P10066	Crygb	P10066	0	2	Gamma-crystallin B	
+CRYGC	human	P07315	CRYGC	P07315	17	248	Gamma-crystallin C (Gamma-C-crystallin) (Gamma-crystallin 2-	
+CRYGD	human	P07320	CRYGD	P07320	10	67	Gamma-crystallin D (Gamma-D-crystallin) (Gamma-crystallin 4)	
+CRYGD	mus-musculus	P04342	Crygd	P04342	0	1	Gamma-crystallin D	
+CRYGD	rattus-norvegicus	P10067	Crygd	P10067	0	2	Gamma-crystallin D	
+CRYGE	mus-musculus	Q03740	Cryge	Q03740	0	1	Gamma-crystallin E	
+CRYGF	rattus-norvegicus	P10068	Crygf	P10068	0	2	Gamma-crystallin F	
+CRYGM7	zebrafish	Q5XTN3	crygm7	Q5XTN3	0	1	Crystallin, gamma M7	
+CRYGMX	zebrafish	Q5XTN0	crygmx	Q5XTN0	0	1	Crygmx protein	w
+CRYGMX	zebrafish	Q5XTN0	crygmx	Q5XTN0	0	1	Crygmx protein	w
+CRYGMXL1	zebrafish	Q4VBU1	crygmxl1	Q4VBU1	0	1	Crystallin, gamma MX,-like 1	
+CRYGMXL2	zebrafish	Q4VBU2	crygmxl2	Q4VBU2	0	1	Crystallin, gamma MX,-like 2	
+CRYGN	human	Q8WXF5	CRYGN	Q8WXF5	2	160	Gamma-crystallin N (Gamma-N-crystallin)	
+CRYGN	mus-musculus	Q8VHL5	Crygn	Q8VHL5	0	5	Gamma-crystallin N	
+CRYGN	rattus-norvegicus	D3ZEG1	Crygn	D3ZEG1	0	11	Gamma-crystallin N	
+CRYGNA	zebrafish	Q5XTN8	crygna	Q5XTN8	0	25	Gamma-crystallin N-A	
+CRYGNB	zebrafish	Q6DGY7	crygnb	Q6DGY7	0	25	Gamma-crystallin N-B	
+CRYGS	human	P22914	CRYGS	P22914	9	89	Gamma-crystallin S (Beta-crystallin S) (Gamma-S-crystallin)	
+CRYGS	mus-musculus	O35486	Crygs	O35486	1	2	Gamma-crystallin S	
+CRYGS	rattus-norvegicus	P0C5E9	Crygs	P0C5E9	1	1	Gamma-crystallin S	
+CRYGS1	zebrafish	E9QE97	crygs1	E9QE97	0	2	Crystallin, gamma S1	
+CRYGS3	zebrafish	Q5XTN7	crygs3	Q5XTN7	0	1	Crystallin, gamma S3	
+CRYGS_HUMAN	human	P22914	CRYGS	P22914	9	89		
+CRYL1	human	Q9Y2S2	CRYL1	Q9Y2S2	1	110	Lambda-crystallin homolog (EC 1.1.1.45) (L-gulonate 3-dehydr	
+CRYL1	mus-musculus	Q99KP3	Cryl1	Q99KP3	0	13	Lambda-crystallin homolog	
+CRYL1	rattus-norvegicus	Q811X6	Cryl1	Q811X6	0	14	Lambda-crystallin homolog	
+CRYL1_HUMAN	human	Q9Y2S2	CRYL1	Q9Y2S2	1	110		
+CRYM	human	Q14894	CRYM	Q14894	4	53	Ketimine reductase mu-crystallin (EC 1.5.1.25) (1-piperidein	
+CRYM	mus-musculus	O54983	Crym	O54983	0	5	Ketimine reductase mu-crystallin	
+CRYM	rattus-norvegicus	Q9QYU4	Crym	Q9QYU4	0	3	Ketimine reductase mu-crystallin	
+CRYM_HUMAN	human	Q14894	CRYM	Q14894	4	53		
+CRYPTIC	human	P0CG36	CFC1B	P0CG36	8	43	Cryptic family protein 1B	w
+CRYPTIC	human	P0CG37	CFC1	P0CG37	11	151	Cryptic protein (Cryptic family protein 1)	w
+CRYPTOCEPHAL	fly	FBgn0000370	crc	Q9VID3	91	413	Cryptocephal, isoform A (Cryptocephal, isoform E) (RH01327p)	w
+CRYPTOCHROME	virus	A0A0H4XWU2	SGPV177	A0A0H4XWU2	1	199	Photolyase/cryptochrome alpha/beta domain-containing protein	w
+CRYPTOCHROME	zebrafish	A0A8M1P943	cry3a	A0A8M1P943	3	33	Cryptochrome circadian regulator 3a	w
+CRYPTOCHROME	zebrafish	F1QHM9	cry5	F1QHM9	0	32	Cryptochrome circadian regulator 5	w
+CRYPTOCHROME	zebrafish	F1R2R7	cry4	F1R2R7	0	33	Cryptochrome circadian regulator 4	w
+CRYPTOCHROME	zebrafish	Q4KML2	cry-dash	Q4KML2	3	33	Cryptochrome DASH	w
+CRYPTOCHROME	zebrafish	Q7ZU53	cry2	Q7ZU53	2	33	Cryptochrome 3	w
+CRYPTOCHROME-1	fly	FBgn0025680	cry	O77059	7	161	Cryptochrome-1 (DmCRY1) (dcry) (Blue light photoreceptor)	w
+CRYPTOCHROME-1	human	Q16526	CRY1	Q16526	21	341	Cryptochrome-1	w
+CRYPTOCHROME-1	zebrafish	A0A8N1TWC6	cry1b	A0A8N1TWC6	4	33	Cryptochrome-1	w
+CRYPTOCHROME-1	zebrafish	A4QN37	cry1a	A4QN37	5	33	Cryptochrome-1	w
+CRYPTOCHROME-2	human	Q49AN0	CRY2	Q49AN0	19	338	Cryptochrome-2	w
+CRYPTOGENIC	human	Q9NPI7	KRCC1	Q9NPI7	6	31	Lysine-rich coiled-coil protein 1 (Cryptogenic hepatitis-bin	w
+CRYS	dictyostelium-discoideum	P21837	cryS	P21837	0	5	Crystal protein	
+CRYS	fly	FBgn0005664	Crys	Q9VKE2	25	330	Crystallin, isoform A (Crystallin, isoform B) (RH66281p)	
+CRYSTAL	human	Q05315	CLC	Q05315	17	71	Galectin-10 (Gal-10) (Charcot-Leyden crystal protein) (CLC) 	w
+CRYSTAL	human	Q8TCE9	LGALS14	Q8TCE9	6	63	Placental protein 13-like (Charcot-Leyden crystal protein 2)	w
+CRYSTALLIN	fly	FBgn0005664	Crys	Q9VKE2	25	330	Crystallin, isoform A (Crystallin, isoform B) (RH66281p)	w
+CRYSTALLIN	human	O95825	CRYZL1	O95825	5	78	Ferry endosomal RAB5 effector complex subunit 4 (Fy-4) (Crys	w
+CRYSTALLIN	human	P02511	CRYAB	P02511	29	476	Alpha-crystallin B chain (Alpha(B)-crystallin) (Heat shock p	w
+CRYSTALLIN	human	P26998	CRYBB3	P26998	75	336	Beta-crystallin B3 (Beta-B3 crystallin) [Cleaved into: Beta-	w
+CRYSTALLIN	human	P43320	CRYBB2	P43320	18	54	Beta-crystallin B2 (Beta-B2 crystallin) (Beta-crystallin Bp)	w
+CRYSTALLIN	human	P53672	CRYBA2	P53672	16	80	Beta-crystallin A2 (Beta-A2 crystallin)	w
+CRYSTALLIN	human	P53673	CRYBA4	P53673	16	91	Beta-crystallin A4 (Beta-A4 crystallin)	w
+CRYSTALLIN	human	P53674	CRYBB1	P53674	75	320	Beta-crystallin B1 (Beta-B1 crystallin)	w
+CRYSTALLIN	human	Q68DQ2	CRYBG3	Q68DQ2	10	184	Very large A-kinase anchor protein (vlAKAP) (Beta/gamma crys	w
+CRYSTALLIN	human	Q8N1P7	CRYBG2	Q8N1P7	2	37	Beta/gamma crystallin domain-containing protein 2 (Absent in	w
+CRYSTALLIN	worm	Q9XVU5	CELE_F15B9.8	Q9XVU5	0	3	Beta/gamma crystallin 'Greek key' domain-containing protein	w
+CRYSTALLIN	zebrafish	A5PN39	cryz	A5PN39	0	5	Crystallin, zeta (quinone reductase)	w
+CRYSTALLIN	zebrafish	E9QE97	crygs1	E9QE97	0	2	Crystallin, gamma S1	w
+CRYSTALLIN	zebrafish	Q4VBU1	crygmxl1	Q4VBU1	0	1	Crystallin, gamma MX,-like 1	w
+CRYSTALLIN	zebrafish	Q4VBU2	crygmxl2	Q4VBU2	0	1	Crystallin, gamma MX,-like 2	w
+CRYSTALLIN	zebrafish	Q5XTN3	crygm7	Q5XTN3	0	1	Crystallin, gamma M7	w
+CRYSTALLIN	zebrafish	Q5XTN7	crygs3	Q5XTN7	0	1	Crystallin, gamma S3	w
+CRYSTALLIN	zebrafish	Q6DHM3	cryzl1	Q6DHM3	1	6	Crystallin, zeta (Quinone reductase)-like 1	w
+CRYZ	human	Q08257	CRYZ	Q08257	13	202	Zeta-crystallin (NADPH:quinone reductase) (Quinone oxidoredu	
+CRYZ	mus-musculus	P47199	Cryz	P47199	0	5	Quinone oxidoreductase	
+CRYZ	rattus-norvegicus	Q6AYT0	Cryz	Q6AYT0	0	4	Quinone oxidoreductase	
+CRYZ	zebrafish	A5PN39	cryz	A5PN39	0	5	Crystallin, zeta (quinone reductase)	
+CRYZL1	human	O95825	CRYZL1	O95825	5	78	Ferry endosomal RAB5 effector complex subunit 4 (Fy-4) (Crys	
+CRYZL1	mus-musculus	Q921W4	Cryzl1	Q921W4	1	4	Quinone oxidoreductase-like protein 1	
+CRYZL1	rattus-norvegicus	Q5XI39	Cryzl1	Q5XI39	1	1	Crystallin zeta like 1	
+CRYZL1	zebrafish	Q6DHM3	cryzl1	Q6DHM3	1	6	Crystallin, zeta (Quinone reductase)-like 1	
+CRYZL2	mus-musculus	Q3UNZ8	Cryzl2	Q3UNZ8	0	1	Quinone oxidoreductase-like protein 2	

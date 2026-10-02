@@ -1,13 +1,40 @@
-MCR	mycobacterium-tuberculosis	O06543	mcr	O06543	1	1	Alpha-methylacyl-CoA racemase
-MCR1	candida-albicans-237561	Q59M70	MCR1	Q59M70	0	11	NADH-cytochrome b5 reductase 2
-MCR1	cladophialophora-carrionii	A0A1C1CGV3	mcr1	A0A1C1CGV3	1	8	NADH-cytochrome b5 reductase
-MCRA	methanocaldococcus-jannaschii	Q58256	mcrA	Q58256	4	5	Methyl-coenzyme M reductase I subunit alpha
-MCRB	escherichia-coli-83333	P15005	mcrB	P15005	0	4	Type IV methyl-directed restriction enzyme EcoKMcrB subunit
-MCRB	methanocaldococcus-jannaschii	Q58252	mcrB	Q58252	3	5	Methyl-coenzyme M reductase I subunit beta
-MCRC	escherichia-coli-83333	P15006	mcrC	P15006	0	3	Type IV methyl-directed restriction enzyme EcoKMcrBC
-MCRG	methanocaldococcus-jannaschii	Q58255	mcrG	Q58255	3	5	Methyl-coenzyme M reductase I subunit gamma
-MCRIP1	mus-musculus	Q3UGS4	Mcrip1	Q3UGS4	1	9	Mapk-regulated corepressor-interacting protein 1
-MCRIP2	mus-musculus	Q9CQB2	Mcrip2	Q9CQB2	0	1	MAPK regulated corepressor interacting protein 2
-MCRIP2	rattus-norvegicus	D3ZM07	Mcrip2	D3ZM07	1	1	MAPK regulated co-repressor interacting protein 2
-MCRS1	mus-musculus	Q99L90	Mcrs1	Q99L90	21	89	Microspherule protein 1
-MCRS1	rattus-norvegicus	G3V9E0	Mcrs1	G3V9E0	17	86	Microspherule protein 1
+MCR	fly	FBgn0267488	Mcr	Q9VLT3	0	12	LD23292p (Macroglobulin complement-related)	
+MCR	human	P08235	NR3C2	P08235	75	257		
+MCR	mycobacterium-tuberculosis	O06543	mcr	O06543	1	1	Alpha-methylacyl-CoA racemase	
+MCR1	candida-albicans-237561	Q59M70	MCR1	Q59M70	0	11	NADH-cytochrome b5 reductase 2	
+MCR1	cladophialophora-carrionii	A0A1C1CGV3	mcr1	A0A1C1CGV3	1	8	NADH-cytochrome b5 reductase	
+MCR1	yeast	P36060	MCR1	P36060	1	31	NADH-cytochrome b5 reductase 2	
+MCRA	methanocaldococcus-jannaschii	Q58256	mcrA	Q58256	4	5	Methyl-coenzyme M reductase I subunit alpha	
+MCRB	escherichia-coli-83333	P15005	mcrB	P15005	0	4	Type IV methyl-directed restriction enzyme EcoKMcrB subunit	
+MCRB	methanocaldococcus-jannaschii	Q58252	mcrB	Q58252	3	5	Methyl-coenzyme M reductase I subunit beta	
+MCRC	escherichia-coli-83333	P15006	mcrC	P15006	0	3	Type IV methyl-directed restriction enzyme EcoKMcrBC	
+MCRG	methanocaldococcus-jannaschii	Q58255	mcrG	Q58255	3	5	Methyl-coenzyme M reductase I subunit gamma	
+MCRI1_HUMAN	human	C9JLW8	MCRIP1	C9JLW8	12	70		
+MCRI2_HUMAN	human	Q9BUT9	MCRIP2	Q9BUT9	15	79		
+MCRIP1	human	C9JLW8	MCRIP1	C9JLW8	12	70	Mapk-regulated corepressor-interacting protein 1 (Granulin-2	
+MCRIP1	mus-musculus	Q3UGS4	Mcrip1	Q3UGS4	1	9	Mapk-regulated corepressor-interacting protein 1	
+MCRIP1	zebrafish	Q0P4B9	mcrip1	Q0P4B9	0	1	Mapk-regulated corepressor-interacting protein 1	
+MCRIP2	human	Q9BUT9	MCRIP2	Q9BUT9	15	79	MAPK regulated corepressor interacting protein 2 (Protein FA	
+MCRIP2	mus-musculus	Q9CQB2	Mcrip2	Q9CQB2	0	1	MAPK regulated corepressor interacting protein 2	
+MCRIP2	rattus-norvegicus	D3ZM07	Mcrip2	D3ZM07	1	1	MAPK regulated co-repressor interacting protein 2	
+MCRIP2	zebrafish	Q1MT54	mcrip2	Q1MT54	2	4	MAPK regulated corepressor interacting protein 2	
+MCRS-1	worm	G5ED60	mcrs-1	G5ED60	4	37	FHA domain-containing protein	
+MCRS1	human	Q96EZ8	MCRS1	Q96EZ8	110	456	Microspherule protein 1 (58 kDa microspherule protein) (Cell	
+MCRS1	mus-musculus	Q99L90	Mcrs1	Q99L90	21	89	Microspherule protein 1	
+MCRS1	rattus-norvegicus	G3V9E0	Mcrs1	G3V9E0	17	86	Microspherule protein 1	
+MCRS1	zebrafish	Q6P0E3	mcrs1	Q6P0E3	12	69	Microspherule protein 1	
+MCRS1_HUMAN	human	Q96EZ8	MCRS1	Q96EZ8	110	456		
+MCRS2	human	Q96EZ8	MCRS1	Q96EZ8	110	456	Microspherule protein 1 (58 kDa microspherule protein) (Cell	w
+MCRV_S10GP1	virus	G9BDA6	MCRV_s10gp1	G9BDA6	0	12	G9BDA6_9REOV	
+MCRV_S11GP1	virus	G9BDA7	MCRV_s11gp1	G9BDA7	0	12	G9BDA7_9REOV	
+MCRV_S12GP1	virus	G9BDA8	MCRV_s12gp1	G9BDA8	0	12	G9BDA8_9REOV	
+MCRV_S1GP1	virus	G9BD97	MCRV_s1gp1	G9BD97	0	9	G9BD97_9REOV	
+MCRV_S2GP1	virus	G9BD98	MCRV_s2gp1	G9BD98	0	11	G9BD98_9REOV	
+MCRV_S3GP1	virus	G9BD99	MCRV_s3gp1	G9BD99	0	11	G9BD99_9REOV	
+MCRV_S4GP1	virus	G9BDA0	MCRV_s4gp1	G9BDA0	0	12	G9BDA0_9REOV	
+MCRV_S5P1	virus	G9BDA1	MCRV_s5p1	G9BDA1	0	12	G9BDA1_9REOV	
+MCRV_S6GP1	virus	G9BDA2	MCRV_s6gp1	G9BDA2	0	12	G9BDA2_9REOV	
+MCRV_S7GP1	virus	G9BDA3	MCRV_s7gp1	G9BDA3	0	12	G9BDA3_9REOV	
+MCRV_S8GP1	virus	G9BDA4	MCRV_s8gp1	G9BDA4	0	12	G9BDA4_9REOV	
+MCRV_S9GP1	virus	G9BDA5	MCRV_s9gp1	G9BDA5	0	12	G9BDA5_9REOV	
+MCR_HUMAN	human	P08235	NR3C2	P08235	75	257		

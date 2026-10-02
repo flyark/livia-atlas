@@ -1,16 +1,31 @@
-P4H12	arabidopsis-thaliana	Q8GXT7	P4H12	Q8GXT7	0	1	Probable prolyl 4-hydroxylase 12
-P4H13	arabidopsis-thaliana	F4ILF8	P4H13	F4ILF8	1	1	Prolyl 4-hydroxylase 13
-P4H4	zea-mays	G4XT43	P4H4	G4XT43	2	13	procollagen-proline 4-dioxygenase
-P4H5	arabidopsis-thaliana	Q24JN5	P4H5	Q24JN5	1	1	Prolyl 4-hydroxylase 5
-P4H7	zea-mays	B4FGT5	P4H7	B4FGT5	2	13	procollagen-proline 4-dioxygenase
-P4H9	arabidopsis-thaliana	Q8VZJ7	P4H9	Q8VZJ7	0	1	Probable prolyl 4-hydroxylase 9
-P4HA1	mus-musculus	Q60715	P4ha1	Q60715	5	14	Prolyl 4-hydroxylase subunit alpha-1
-P4HA1	rattus-norvegicus	P54001	P4ha1	P54001	4	24	Prolyl 4-hydroxylase subunit alpha-1
-P4HA2	mus-musculus	Q60716	P4ha2	Q60716	5	15	Prolyl 4-hydroxylase subunit alpha-2
-P4HA2	rattus-norvegicus	A0A8I6ASK1	P4ha2	A0A8I6ASK1	6	27	procollagen-proline 4-dioxygenase
-P4HA3	mus-musculus	Q6W3F0	P4ha3	Q6W3F0	3	7	Prolyl 4-hydroxylase subunit alpha-3
-P4HA3	rattus-norvegicus	Q6W3E9	P4ha3	Q6W3E9	5	20	Prolyl 4-hydroxylase subunit alpha-3
-P4HB	mus-musculus	P09103	P4hb	P09103	12	91	Protein disulfide-isomerase
-P4HB	rattus-norvegicus	P04785	P4hb	P04785	11	87	Protein disulfide-isomerase
-P4HTM	mus-musculus	Q8BG58	P4htm	Q8BG58	0	17	Transmembrane prolyl 4-hydroxylase
-P4HTM	rattus-norvegicus	D3ZJG3	P4htm	D3ZJG3	0	17	Transmembrane prolyl 4-hydroxylase
+P4H-TM	human	Q9NXG6	P4HTM	Q9NXG6	5	47	Transmembrane prolyl 4-hydroxylase (P4H-TM) (EC 1.14.11.29) 	w
+P4H12	arabidopsis-thaliana	Q8GXT7	P4H12	Q8GXT7	0	1	Probable prolyl 4-hydroxylase 12	
+P4H13	arabidopsis-thaliana	F4ILF8	P4H13	F4ILF8	1	1	Prolyl 4-hydroxylase 13	
+P4H4	zea-mays	G4XT43	P4H4	G4XT43	2	13	procollagen-proline 4-dioxygenase	
+P4H5	arabidopsis-thaliana	Q24JN5	P4H5	Q24JN5	1	1	Prolyl 4-hydroxylase 5	
+P4H7	zea-mays	B4FGT5	P4H7	B4FGT5	2	13	procollagen-proline 4-dioxygenase	
+P4H9	arabidopsis-thaliana	Q8VZJ7	P4H9	Q8VZJ7	0	1	Probable prolyl 4-hydroxylase 9	
+P4HA	human	P13674	P4HA1	P13674	55	387		
+P4HA1	human	P13674	P4HA1	P13674	55	387	Prolyl 4-hydroxylase subunit alpha-1 (4-PH alpha-1) (EC 1.14	
+P4HA1	mus-musculus	Q60715	P4ha1	Q60715	5	14	Prolyl 4-hydroxylase subunit alpha-1	
+P4HA1	rattus-norvegicus	P54001	P4ha1	P54001	4	24	Prolyl 4-hydroxylase subunit alpha-1	
+P4HA1B	zebrafish	Q7ZVE9	p4ha1b	Q7ZVE9	4	12	procollagen-proline 4-dioxygenase	
+P4HA1_HUMAN	human	P13674	P4HA1	P13674	55	387		
+P4HA2	human	O15460	P4HA2	O15460	41	199	Prolyl 4-hydroxylase subunit alpha-2 (4-PH alpha-2) (EC 1.14	
+P4HA2	mus-musculus	Q60716	P4ha2	Q60716	5	15	Prolyl 4-hydroxylase subunit alpha-2	
+P4HA2	rattus-norvegicus	A0A8I6ASK1	P4ha2	A0A8I6ASK1	6	27	procollagen-proline 4-dioxygenase	
+P4HA2	zebrafish	A0A286Y8C8	p4ha2	A0A286Y8C8	4	12	procollagen-proline 4-dioxygenase	
+P4HA2_HUMAN	human	O15460	P4HA2	O15460	41	199		
+P4HA3	human	Q7Z4N8	P4HA3	Q7Z4N8	46	141	Prolyl 4-hydroxylase subunit alpha-3 (4-PH alpha-3) (EC 1.14	
+P4HA3	mus-musculus	Q6W3F0	P4ha3	Q6W3F0	3	7	Prolyl 4-hydroxylase subunit alpha-3	
+P4HA3	rattus-norvegicus	Q6W3E9	P4ha3	Q6W3E9	5	20	Prolyl 4-hydroxylase subunit alpha-3	
+P4HA3_HUMAN	human	Q7Z4N8	P4HA3	Q7Z4N8	46	141		
+P4HB	human	P07237	P4HB	P07237	56	496	Protein disulfide-isomerase (PDI) (EC 5.3.4.1) (Cellular thy	
+P4HB	mus-musculus	P09103	P4hb	P09103	12	91	Protein disulfide-isomerase	
+P4HB	rattus-norvegicus	P04785	P4hb	P04785	11	87	Protein disulfide-isomerase	
+P4HB	zebrafish	A0A0R4IPV5	p4hb	A0A0R4IPV5	8	66	Protein disulfide-isomerase	
+P4HTM	human	Q9NXG6	P4HTM	Q9NXG6	5	47	Transmembrane prolyl 4-hydroxylase (P4H-TM) (EC 1.14.11.29) 	
+P4HTM	mus-musculus	Q8BG58	P4htm	Q8BG58	0	17	Transmembrane prolyl 4-hydroxylase	
+P4HTM	rattus-norvegicus	D3ZJG3	P4htm	D3ZJG3	0	17	Transmembrane prolyl 4-hydroxylase	
+P4HTMB	zebrafish	X1WG80	p4htmb	X1WG80	0	9	Transmembrane prolyl 4-hydroxylase	
+P4HTM_HUMAN	human	Q9NXG6	P4HTM	Q9NXG6	5	47		

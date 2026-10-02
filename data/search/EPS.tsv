@@ -1,20 +1,217 @@
-EPS15	dictyostelium-discoideum	Q54KI4	eps15	Q54KI4	0	35	Epidermal growth factor receptor substrate 15 homolog
-EPS15	mus-musculus	P42567	Eps15	P42567	27	154	Epidermal growth factor receptor substrate 15
-EPS15	rattus-norvegicus	E9PSY8	Eps15	E9PSY8	24	152	Epidermal growth factor receptor pathway substrate 15
-EPS15L1	mus-musculus	Q60902	Eps15l1	Q60902	17	98	Epidermal growth factor receptor substrate 15-like 1
-EPS15L1	rattus-norvegicus	D3ZJR1	Eps15l1	D3ZJR1	15	95	Epidermal growth factor receptor substrate 15-like 1
-EPS8	mus-musculus	Q08509	Eps8	Q08509	13	117	Epidermal growth factor receptor kinase substrate 8
-EPS8	rattus-norvegicus	F1M3L7	Eps8	F1M3L7	7	78	Epidermal growth factor receptor kinase substrate 8
-EPS8L1	mus-musculus	Q8R5F8	Eps8l1	Q8R5F8	1	4	Epidermal growth factor receptor kinase substrate 8-like protein 1
-EPS8L1	rattus-norvegicus	D3ZDV2	Eps8l1	D3ZDV2	4	19	Epidermal growth factor receptor kinase substrate 8-like protein 1
-EPS8L2	mus-musculus	Q99K30	Eps8l2	Q99K30	5	32	Epidermal growth factor receptor kinase substrate 8-like protein 2
-EPS8L2	rattus-norvegicus	F7DLY1	Eps8l2	F7DLY1	2	18	Epidermal growth factor receptor kinase substrate 8-like protein 2
-EPS8L3	mus-musculus	Q91WL0	Eps8l3	Q91WL0	0	1	Epidermal growth factor receptor kinase substrate 8-like protein 3
-EPS8L3	rattus-norvegicus	D4A015	Eps8l3	D4A015	0	5	Epidermal growth factor receptor kinase substrate 8-like protein 3
-EPSG	streptococcus-pneumoniae	Q8DRG8	epsG	Q8DRG8	1	3	Glycosyltransferase involved exopolysaccharide (EPS) synthesis
-EPSIN1	arabidopsis-thaliana	Q8VY07	EPSIN1	Q8VY07	11	46	Clathrin interactor EPSIN 1
-EPSIN2	arabidopsis-thaliana	Q67YI9	EPSIN2	Q67YI9	8	45	Clathrin interactor EPSIN 2
-EPSIN3	arabidopsis-thaliana	Q93YP4	EPSIN3	Q93YP4	6	41	Clathrin interactor EPSIN 3
-EPSPS	arabidopsis-thaliana	Q9FVP6	EPSPS	Q9FVP6	0	13	3-phosphoshikimate 1-carboxyvinyltransferase
-EPSTI1	mus-musculus	Q8VDI1	Epsti1	Q8VDI1	0	1	Epithelial-stromal interaction protein 1
-EPSTI1	rattus-norvegicus	Q5BK43	Epsti1	Q5BK43	0	1	Epithelial-stromal interaction protein 1
+EPS-15	fly	FBgn0035060	Eps-15	Q9W111	61	368	Epidermal growth factor receptor pathway substrate clone 15,	
+EPS-15-INTERACTING	human	O95208	EPN2	O95208	38	185	Epsin-2 (EPS-15-interacting protein 2)	w
+EPS-15-INTERACTING	human	Q9H201	EPN3	Q9H201	19	141	Epsin-3 (EPS-15-interacting protein 3)	w
+EPS-15-INTERACTING	human	Q9Y6I3	EPN1	Q9Y6I3	33	178	Epsin-1 (EH domain-binding mitotic phosphoprotein) (EPS-15-i	w
+EPS-15_423_1252	fly	FBgn0035060	Eps-15	Q9W111	61	368		
+EPS-8	worm	A0A061ACP8	eps-8	A0A061ACP8	3	29	SH3 domain-containing protein	
+EPS1	yeast	P40557	EPS1	P40557	0	15	ER-retained PMA1-suppressing protein 1	
+EPS15	dictyostelium-discoideum	Q54KI4	eps15	Q54KI4	0	35	Epidermal growth factor receptor substrate 15 homolog	
+EPS15	fly	FBgn0034180	Ehbp1	A4UZL3	3	31	Eps15 homology domain containing protein-binding protein 1, 	w
+EPS15	human	P42566	EPS15	P42566	96	332	Epidermal growth factor receptor substrate 15 (Protein Eps15	
+EPS15	mus-musculus	P42567	Eps15	P42567	27	154	Epidermal growth factor receptor substrate 15	
+EPS15	rattus-norvegicus	E9PSY8	Eps15	E9PSY8	24	152	Epidermal growth factor receptor pathway substrate 15	
+EPS15	zebrafish	F1QIJ6	eps15	F1QIJ6	14	111	Epidermal growth factor receptor pathway substrate 15	
+EPS15-RELATED	human	Q9UBC2	EPS15L1	Q9UBC2	44	188	Epidermal growth factor receptor substrate 15-like 1 (Eps15-	w
+EPS15L1	human	Q9UBC2	EPS15L1	Q9UBC2	44	188	Epidermal growth factor receptor substrate 15-like 1 (Eps15-	
+EPS15L1	mus-musculus	Q60902	Eps15l1	Q60902	17	98	Epidermal growth factor receptor substrate 15-like 1	
+EPS15L1	rattus-norvegicus	D3ZJR1	Eps15l1	D3ZJR1	15	95	Epidermal growth factor receptor substrate 15-like 1	
+EPS15R	human	Q9UBC2	EPS15L1	Q9UBC2	44	188		
+EPS15_HUMAN	human	P42566	EPS15	P42566	96	332		
+EPS8	human	Q12929	EPS8	Q12929	59	247	Epidermal growth factor receptor kinase substrate 8	
+EPS8	human	Q8IZP0	ABI1	Q8IZP0	71	244	Abl interactor 1 (Abelson interactor 1) (Abi-1) (Abl-binding	w
+EPS8	mus-musculus	Q08509	Eps8	Q08509	13	117	Epidermal growth factor receptor kinase substrate 8	
+EPS8	rattus-norvegicus	F1M3L7	Eps8	F1M3L7	7	78	Epidermal growth factor receptor kinase substrate 8	
+EPS8-BINDING	human	Q8IZP0	ABI1	Q8IZP0	71	244	Abl interactor 1 (Abelson interactor 1) (Abi-1) (Abl-binding	w
+EPS8-LIKE	human	Q8TE67	EPS8L3	Q8TE67	6	52	Epidermal growth factor receptor kinase substrate 8-like pro	w
+EPS8-LIKE	human	Q8TE68	EPS8L1	Q8TE68	23	94	Epidermal growth factor receptor kinase substrate 8-like pro	w
+EPS8-LIKE	human	Q9H6S3	EPS8L2	Q9H6S3	42	182	Epidermal growth factor receptor kinase substrate 8-like pro	w
+EPS8-LIKE	zebrafish	B8JIS3	eps8l3b	B8JIS3	0	3	EPS8-like 3b	w
+EPS8-LIKE	zebrafish	E7F362	eps8l3a	E7F362	0	3	EPS8-like 3a	w
+EPS8A	zebrafish	A0A0R4IID9	eps8a	A0A0R4IID9	8	22	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8B	zebrafish	A0A8M9PAD2	eps8b	A0A8M9PAD2	2	19	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L1	human	Q8TE68	EPS8L1	Q8TE68	23	94	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L1	mus-musculus	Q8R5F8	Eps8l1	Q8R5F8	1	4	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L1	rattus-norvegicus	D3ZDV2	Eps8l1	D3ZDV2	4	19	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L1B	zebrafish	E7F1L9	eps8l1b	E7F1L9	5	19	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L2	human	Q9H6S3	EPS8L2	Q9H6S3	42	182	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L2	mus-musculus	Q99K30	Eps8l2	Q99K30	5	32	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L2	rattus-norvegicus	F7DLY1	Eps8l2	F7DLY1	2	18	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L2	zebrafish	X1WFM8	eps8l2	X1WFM8	3	19	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L3	human	Q8TE67	EPS8L3	Q8TE67	6	52	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L3	mus-musculus	Q91WL0	Eps8l3	Q91WL0	0	1	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L3	rattus-norvegicus	D4A015	Eps8l3	D4A015	0	5	Epidermal growth factor receptor kinase substrate 8-like pro	
+EPS8L3A	zebrafish	E7F362	eps8l3a	E7F362	0	3	EPS8-like 3a	
+EPS8L3B	zebrafish	B8JIS3	eps8l3b	B8JIS3	0	3	EPS8-like 3b	
+EPS8R1	human	Q8TE68	EPS8L1	Q8TE68	23	94		
+EPS8R2	human	Q9H6S3	EPS8L2	Q9H6S3	42	182		
+EPS8R3	human	Q8TE67	EPS8L3	Q8TE67	6	52		
+EPS8_HUMAN	human	Q12929	EPS8	Q12929	59	247		
+EPSG	streptococcus-pneumoniae	Q8DRG8	epsG	Q8DRG8	1	3	Glycosyltransferase involved exopolysaccharide (EPS) synthes	
+EPSILO	fly	FBgn0264326	PolE1	Q9VCN1	2	9	DNA polymerase epsilon catalytic subunit 1 (EC 2.7.7.7) (3'-	w
+EPSILON	fly	FBgn0010425	epsilonTry	P35005	31	246	Trypsin epsilon (EC 3.4.21.4)	w
+EPSILON	fly	FBgn0010621	CCT5	Q7KKI0	9	155	T-complex protein 1 subunit epsilon (CCT-epsilon)	w
+EPSILON	fly	FBgn0020238	14-3-3epsilon	P92177	109	299	14-3-3 protein epsilon (Suppressor of Ras1 3-9)	w
+EPSILON	fly	FBgn0023512	eIF2Bepsilon	Q9W541	3	17	Translation initiation factor eIF2B subunit epsilon (eIF2B G	w
+EPSILON	fly	FBgn0027496	epsilonCOP	Q9Y0Y5	12	146	Coatomer subunit epsilon	w
+EPSILON	fly	FBgn0034726	PolE4	Q9W256	10	66	DNA polymerase epsilon subunit 4 (DNA polymerase II subunit 	w
+EPSILON	fly	FBgn0035644	PolE2	Q9VRQ7	10	80	DNA polymerase epsilon subunit 2 (DNA polymerase II subunit 	w
+EPSILON	fly	FBgn0043002	Chrac-14	Q9V444	20	93	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	w
+EPSILON	fly	FBgn0051477	ATPsynepsilonL	Q9VH24	4	47	ATP synthase, epsilon subunit-like, isoform A (ATP synthase,	w
+EPSILON	fly	FBgn0063923	Kaz1-ORFB	O97042	38	256	KAZ1-type serine protease inhibitor-like protein type epsilo	w
+EPSILON	fly	FBgn0086657	IKKepsilon	Q9V3Y8	74	1151	FI05319p (I-kappaB kinase epsilon, isoform B) (I-kappaB kina	w
+EPSILON	fly	FBgn0259714	DIP-epsilon	A4IJ70	9	15	Dpr-interacting protein epsilon (IP17937p)	w
+EPSILON	fly	FBgn0264326	PolE1	Q9VCN1	2	9	DNA polymerase epsilon catalytic subunit 1 (EC 2.7.7.7) (3'-	w
+EPSILON	human	O00221	NFKBIE	O00221	21	86	NF-kappa-B inhibitor epsilon (NF-kappa-BIE) (I-kappa-B-epsil	w
+EPSILON	human	O14579	COPE	O14579	20	321	Coatomer subunit epsilon (Epsilon-coat protein) (Epsilon-COP	w
+EPSILON	human	P01854	IGHE	P01854	14	47	Immunoglobulin heavy constant epsilon (Ig epsilon chain C re	w
+EPSILON	human	P02100	HBE1	P02100	15	239	Hemoglobin subunit epsilon (Epsilon-globin) (Hemoglobin epsi	w
+EPSILON	human	P06734	FCER2	P06734	32	202	Low affinity immunoglobulin epsilon Fc receptor (BLAST-2) (C	w
+EPSILON	human	P07766	CD3E	P07766	82	319	T-cell surface glycoprotein CD3 epsilon chain (T-cell surfac	w
+EPSILON	human	P12319	FCER1A	P12319	93	375	High affinity immunoglobulin epsilon receptor subunit alpha 	w
+EPSILON	human	P23469	PTPRE	P23469	17	187	Receptor-type tyrosine-protein phosphatase epsilon (Protein-	w
+EPSILON	human	P28074	PSMB5	P28074	27	342	Proteasome subunit beta type-5 (EC 3.4.25.1) (Macropain epsi	w
+EPSILON	human	P30273	FCER1G	P30273	107	637	High affinity immunoglobulin epsilon receptor subunit gamma 	w
+EPSILON	human	P48643	CCT5	P48643	17	604	T-complex protein 1 subunit epsilon (TCP-1-epsilon) (EC 3.6.	w
+EPSILON	human	P49674	CSNK1E	P49674	221	1566	Casein kinase I isoform epsilon (CKI-epsilon) (CKIe) (EC 2.7	w
+EPSILON	human	P52429	DGKE	P52429	6	105	Diacylglycerol kinase epsilon (DAG kinase epsilon) (EC 2.7.1	w
+EPSILON	human	P56282	POLE2	P56282	34	344	DNA polymerase epsilon subunit 2 (DNA polymerase II subunit 	w
+EPSILON	human	P56381	ATP5F1E	P56381	24	203	ATP synthase F(1) complex subunit epsilon, mitochondrial (AT	w
+EPSILON	human	P62258	YWHAE	P62258	672	1880	14-3-3 protein epsilon (14-3-3E)	w
+EPSILON	human	P78334	GABRE	P78334	30	118	Gamma-aminobutyric acid receptor subunit epsilon (GABA(A) re	w
+EPSILON	human	Q01362	MS4A2	Q01362	46	212	High affinity immunoglobulin epsilon receptor subunit beta (	w
+EPSILON	human	Q02156	PRKCE	Q02156	54	350	Protein kinase C epsilon type (EC 2.7.11.13) (nPKC-epsilon)	w
+EPSILON	human	Q04844	CHRNE	Q04844	32	144	Acetylcholine receptor subunit epsilon	w
+EPSILON	human	Q07864	POLE	Q07864	27	650	DNA polymerase epsilon catalytic subunit A (EC 2.7.7.7) (3'-	w
+EPSILON	human	Q13144	EIF2B5	Q13144	48	687	Translation initiation factor eIF2B subunit epsilon (eIF2B G	w
+EPSILON	human	Q14164	IKBKE	Q14164	15	404	Inhibitor of nuclear factor kappa-B kinase subunit epsilon (	w
+EPSILON	human	Q15744	CEBPE	Q15744	126	490	CCAAT/enhancer-binding protein epsilon (C/EBP epsilon)	w
+EPSILON	human	Q16537	PPP2R5E	Q16537	32	194	Serine/threonine-protein phosphatase 2A 56 kDa regulatory su	w
+EPSILON	human	Q3MJ16	PLA2G4E	Q3MJ16	1	29	Cytosolic phospholipase A2 epsilon (cPLA2-epsilon) (EC 3.1.1	w
+EPSILON	human	Q5SGD2	PPM1L	Q5SGD2	2	38	Protein phosphatase 1L (EC 3.1.3.16) (Protein phosphatase 1-	w
+EPSILON	human	Q5SY80	CATSPERE	Q5SY80	7	79	Cation channel sperm-associated auxiliary subunit epsilon (C	w
+EPSILON	human	Q5VTU8	ATP5F1EP2	Q5VTU8	7	26	ATP synthase subunit epsilon-like protein, mitochondrial (AT	w
+EPSILON	human	Q6VUC0	TFAP2E	Q6VUC0	35	339	Transcription factor AP-2-epsilon (AP2-epsilon) (Activating 	w
+EPSILON	human	Q6ZVX9	PAQR9	Q6ZVX9	6	48	Membrane progestin receptor epsilon (mPR epsilon) (Membrane 	w
+EPSILON	human	Q7L2K0	TEDC2	Q7L2K0	14	65	Tubulin epsilon and delta complex protein 2	w
+EPSILON	human	Q86SX3	TEDC1	Q86SX3	17	72	Tubulin epsilon and delta complex protein 1	w
+EPSILON	human	Q86WN2	IFNE	Q86WN2	15	140	Interferon epsilon (IFN-epsilon) (Interferon epsilon-1)	w
+EPSILON	human	Q9GZN4	PRSS22	Q9GZN4	12	79	Brain-specific serine protease 4 (BSSP-4) (EC 3.4.21.-) (Ser	w
+EPSILON	human	Q9NR33	POLE4	Q9NR33	35	140	DNA polymerase epsilon subunit 4 (DNA polymerase II subunit 	w
+EPSILON	human	Q9NRF9	POLE3	Q9NRF9	34	176	DNA polymerase epsilon subunit 3 (Arsenic-transactivated pro	w
+EPSILON	human	Q9NRG0	CHRAC1	Q9NRG0	20	118	Chromatin accessibility complex protein 1 (CHRAC-1) (Chromat	w
+EPSILON	human	Q9NUQ2	AGPAT5	Q9NUQ2	6	109	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	w
+EPSILON	human	Q9NZH8	IL36G	Q9NZH8	12	173	Interleukin-36 gamma (IL-1-related protein 2) (IL-1RP2) (Int	w
+EPSILON	human	Q9UHA7	IL36A	Q9UHA7	26	180	Interleukin-36 alpha (FIL1 epsilon) (Interleukin-1 epsilon) 	w
+EPSILON	human	Q9UII2	ATP5IF1	Q9UII2	24	296	ATPase inhibitor, mitochondrial (ATP synthase F1 subunit eps	w
+EPSILON	human	Q9UJT0	TUBE1	Q9UJT0	19	116	Tubulin epsilon chain (Epsilon-tubulin)	w
+EPSILON	human	Q9UPM8	AP4E1	Q9UPM8	51	180	AP-4 complex subunit epsilon-1 (AP-4 adaptor complex subunit	w
+EPSILON	worm	A0A3B1E639	C04F5.2	A0A3B1E639	0	3	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	O16298	hpo-18	O16298	3	37	ATP synthase subunit epsilon, mitochondrial	w
+EPSILON	worm	O45169	sre-24	O45169	0	1	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	O62246	cope-1	O62246	3	71	Coatomer subunit epsilon	w
+EPSILON	worm	P32742	ikke-1	P32742	1	32	Inhibitor of nuclear factor kappa-B kinase epsilon subunit h	w
+EPSILON	worm	P34539	R05D3.6	P34539	5	38	Putative ATP synthase subunit epsilon, mitochondrial	w
+EPSILON	worm	P47209	cct-5	P47209	4	62	T-complex protein 1 subunit epsilon	w
+EPSILON	worm	Q18994	eif-2bepsilon	Q18994	3	15	Translation initiation factor eIF2B subunit epsilon	w
+EPSILON	worm	Q19196	pole-2	Q19196	9	57	Probable DNA polymerase epsilon subunit 2	w
+EPSILON	worm	Q19993	CELE_F34D10.3	Q19993	0	11	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	Q21142	sre-7	Q21142	1	21	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	Q22117	CELE_T03F7.5	Q22117	0	1	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	Q22284	sre-28	Q22284	0	3	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	Q22798	CELE_T26A5.8	Q22798	4	48	DNA polymerase epsilon subunit 3	w
+EPSILON	worm	Q5CCI4	sre-5	Q5CCI4	1	22	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	Q9U2L3	sre-15	Q9U2L3	0	1	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	worm	Q9XTV9	CELE_F21H7.3	Q9XTV9	0	2	Serpentine Receptor, class E (Epsilon)	w
+EPSILON	yeast	P21306	ATP15	P21306	2	51	ATP synthase subunit epsilon, mitochondrial	w
+EPSILON	yeast	P24482	DPB2	P24482	7	101	DNA polymerase epsilon subunit B	w
+EPSILON	yeast	P27344	DPB3	P27344	6	46	DNA polymerase epsilon subunit C	w
+EPSILON	yeast	P32501	GCD6	P32501	6	71	Translation initiation factor eIF2B subunit epsilon	w
+EPSILON	yeast	P40413	CCT5	P40413	3	71	T-complex protein 1 subunit epsilon	w
+EPSILON	yeast	P40509	SEC28	P40509	8	89	Coatomer subunit epsilon	w
+EPSILON	yeast	Q04603	DPB4	Q04603	9	50	DNA polymerase epsilon subunit D	w
+EPSILON	zebrafish	A0A0R4IQI7	ap4e1	A0A0R4IQI7	38	77	AP-4 complex subunit epsilon	w
+EPSILON	zebrafish	A0A1L1QZK3	paqr9	A0A1L1QZK3	0	12	Membrane progestin receptor epsilon	w
+EPSILON	zebrafish	A2BG85	chrne	A2BG85	10	10	Acetylcholine receptor subunit epsilon precursor	w
+EPSILON	zebrafish	F1QBC9	ikbke	F1QBC9	1	60	Inhibitor of nuclear factor kappa B kinase subunit epsilon	w
+EPSILON	zebrafish	F1QDN6	agpat5	F1QDN6	1	9	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon	w
+EPSILON	zebrafish	F1RCI6	pole4	F1RCI6	3	30	DNA polymerase epsilon subunit 4	w
+EPSILON	zebrafish	F8W3H2	atp5f1e	F8W3H2	4	89	ATP synthase F1 subunit epsilon	w
+EPSILON	zebrafish	Q5CZQ1	ywhae2	Q5CZQ1	28	99	14-3-3 protein epsilon	w
+EPSILON	zebrafish	Q5SNS3	tube1	Q5SNS3	21	152	Tubulin epsilon chain	w
+EPSILON	zebrafish	Q6NVI6	cct5	Q6NVI6	2	136	T-complex protein 1 subunit epsilon	w
+EPSILON	zebrafish	Q6PBL4	pole3	Q6PBL4	7	61	DNA polymerase epsilon subunit 3	w
+EPSILON	zebrafish	Q7ZW20	ywhae1	Q7ZW20	28	103	14-3-3 protein epsilon	w
+EPSILON	zebrafish	X1WGE9	polr1g	X1WGE9	2	32	CD3e molecule, epsilon associated protein	w
+EPSILON-1	human	A6NN92	GJE1	A6NN92	9	34	Gap junction epsilon-1 protein (Connexin-23) (Cx23)	w
+EPSILON-1	human	O43324	EEF1E1	O43324	23	201	Eukaryotic translation elongation factor 1 epsilon-1 (Aminoa	w
+EPSILON-1	human	Q12879	GRIN2A	Q12879	29	184	Glutamate receptor ionotropic, NMDA 2A (GluN2A) (Glutamate [	w
+EPSILON-1	human	Q86WN2	IFNE	Q86WN2	15	140	Interferon epsilon (IFN-epsilon) (Interferon epsilon-1)	w
+EPSILON-1	human	Q8NFK1	GJC3	Q8NFK1	4	53	Gap junction gamma-3 protein (Connexin-30.2) (Cx30.2) (Conne	w
+EPSILON-1	human	Q9P212	PLCE1	Q9P212	8	108	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase ep	w
+EPSILON-1	human	Q9UPM8	AP4E1	Q9UPM8	51	180	AP-4 complex subunit epsilon-1 (AP-4 adaptor complex subunit	w
+EPSILON-1	zebrafish	F1QVE4	eef1e1	F1QVE4	2	21	Eukaryotic translation elongation factor 1 epsilon-1	w
+EPSILON-1	zebrafish	U3JA75	cx23	U3JA75	0	33	Gap junction epsilon-1 protein	w
+EPSILON-13	worm	O45300	sre-13	O45300	1	21	Serpentine receptor class epsilon-13	w
+EPSILON-2	human	Q13224	GRIN2B	Q13224	33	174	Glutamate receptor ionotropic, NMDA 2B (GluN2B) (Glutamate [	w
+EPSILON-29	worm	O62269	sre-29	O62269	0	1	Serpentine receptor class epsilon-29	w
+EPSILON-3	human	Q14957	GRIN2C	Q14957	38	209	Glutamate receptor ionotropic, NMDA 2C (GluN2C) (Glutamate [	w
+EPSILON-31	worm	O62266	sre-31	O62266	1	21	Serpentine receptor class epsilon-31	w
+EPSILON-32	worm	P90837	sre-32	P90837	0	9	Serpentine receptor class epsilon-32	w
+EPSILON-33	worm	O18175	sre-33	O18175	0	6	Serpentine receptor class epsilon-33	w
+EPSILON-4	human	O15399	GRIN2D	O15399	34	187	Glutamate receptor ionotropic, NMDA 2D (GluN2D) (EB11) (Glut	w
+EPSILON-6	worm	Q19897	sre-6	Q19897	1	21	Serpentine receptor class epsilon-6	w
+EPSILON-8	worm	Q20249	sre-8	Q20249	1	21	Serpentine receptor class epsilon-8	w
+EPSILON-A	human	Q9UPM8	AP4E1	Q9UPM8	51	180	AP-4 complex subunit epsilon-1 (AP-4 adaptor complex subunit	w
+EPSILON-COAT	human	O14579	COPE	O14579	20	321	Coatomer subunit epsilon (Epsilon-coat protein) (Epsilon-COP	w
+EPSILON-COP	human	O14579	COPE	O14579	20	321	Coatomer subunit epsilon (Epsilon-coat protein) (Epsilon-COP	w
+EPSILON-GLOBIN	human	P02100	HBE1	P02100	15	239	Hemoglobin subunit epsilon (Epsilon-globin) (Hemoglobin epsi	w
+EPSILON-LIKE	human	Q5VTU8	ATP5F1EP2	Q5VTU8	7	26	ATP synthase subunit epsilon-like protein, mitochondrial (AT	w
+EPSILON-SARCOGLYCAN	human	O43556	SGCE	O43556	8	77	Epsilon-sarcoglycan (Epsilon-SG)	w
+EPSILON-SARCOGLYCAN	zebrafish	Q6DHH1	sgce	Q6DHH1	1	15	Epsilon-sarcoglycan	w
+EPSILON-SG	human	O43556	SGCE	O43556	8	77	Epsilon-sarcoglycan (Epsilon-SG)	w
+EPSILON-TRIMETHYLLYSINE	fly	FBgn0038795	Tmlh	Q9VDM7	3	17	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
+EPSILON-TRIMETHYLLYSINE	human	Q9NVH6	TMLHE	Q9NVH6	2	89	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
+EPSILON-TUBULIN	human	Q9UJT0	TUBE1	Q9UJT0	19	116	Tubulin epsilon chain (Epsilon-tubulin)	w
+EPSILONCOP	fly	FBgn0027496	epsilonCOP	Q9Y0Y5	12	146	Coatomer subunit epsilon	
+EPSILONTRY	fly	FBgn0010425	epsilonTry	P35005	31	246	Trypsin epsilon (EC 3.4.21.4)	
+EPSIN	human	O60320	ENTREP2	O60320	3	37	Protein ENTREP2 (Endosomal transmembrane epsin interactor 2)	w
+EPSIN	human	P81408	ENTREP3	P81408	20	141	Protein ENTREP3 (Endosomal transmembrane epsin interactor 3)	w
+EPSIN	human	Q15884	ENTREP1	Q15884	25	117	Endosomal transmembrane epsin interactor 1 (Endosomal transm	w
+EPSIN	human	Q96N21	TEPSIN	Q96N21	38	184	AP-4 complex accessory subunit Tepsin (ENTH domain-containin	w
+EPSIN	zebrafish	E7EYW2	epn2	E7EYW2	4	55	Epsin 2	w
+EPSIN	zebrafish	E7F2A4	epn3a	E7F2A4	3	46	Epsin 3a	w
+EPSIN-1	human	Q9Y6I3	EPN1	Q9Y6I3	33	178	Epsin-1 (EH domain-binding mitotic phosphoprotein) (EPS-15-i	w
+EPSIN-1	yeast	Q12518	ENT1	Q12518	2	37	Epsin-1	w
+EPSIN-1	zebrafish	A0A0R4IUB6	epn1a	A0A0R4IUB6	4	58	Epsin-1	w
+EPSIN-2	human	O95208	EPN2	O95208	38	185	Epsin-2 (EPS-15-interacting protein 2)	w
+EPSIN-2	yeast	Q05785	ENT2	Q05785	1	46	Epsin-2	w
+EPSIN-2B	human	Q8IYW4	ENTHD1	Q8IYW4	9	75	ENTH domain-containing protein 1 (Epsin-2B)	w
+EPSIN-3	human	Q9H201	EPN3	Q9H201	19	141	Epsin-3 (EPS-15-interacting protein 3)	w
+EPSIN-3	yeast	P47160	ENT3	P47160	8	78	Epsin-3	w
+EPSIN-4	human	Q14677	CLINT1	Q14677	40	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
+EPSIN-4	yeast	Q07872	ENT4	Q07872	1	11	Epsin-4	w
+EPSIN-5	yeast	Q03769	ENT5	Q03769	4	73	Epsin-5	w
+EPSIN-RELATED	human	Q14677	CLINT1	Q14677	40	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
+EPSIN1	arabidopsis-thaliana	Q8VY07	EPSIN1	Q8VY07	11	46	Clathrin interactor EPSIN 1	
+EPSIN2	arabidopsis-thaliana	Q67YI9	EPSIN2	Q67YI9	8	45	Clathrin interactor EPSIN 2	
+EPSIN3	arabidopsis-thaliana	Q93YP4	EPSIN3	Q93YP4	6	41	Clathrin interactor EPSIN 3	
+EPSINR	human	Q14677	CLINT1	Q14677	40	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
+EPSPS	arabidopsis-thaliana	Q9FVP6	EPSPS	Q9FVP6	0	13	3-phosphoshikimate 1-carboxyvinyltransferase	
+EPSTEIN	virus	A0A3G1T4G2	EBNA-1	A0A3G1T4G2	3	81	Epstein Barr virus nuclear antigen-1 DNA-binding domain-cont	w
+EPSTEIN-BARR	human	P20023	CR2	P20023	18	135	Complement receptor type 2 (Cr2) (Complement C3d receptor) (	w
+EPSTEIN-BARR	human	P32248	CCR7	P32248	52	362	C-C chemokine receptor type 7 (C-C CKR-7) (CC-CKR-7) (CCR-7)	w
+EPSTEIN-BARR	human	P32249	GPR183	P32249	19	237	G protein-coupled receptor 183 (Epstein-Barr virus-induced G	w
+EPSTEIN-BARR	human	P35268	RPL22	P35268	70	718	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
+EPSTEIN-BARR	human	Q13077	TRAF1	Q13077	94	490	TNF receptor-associated factor 1 (Epstein-Barr virus-induced	w
+EPSTEIN-BARR	human	Q14213	EBI3	Q14213	32	129	Interleukin-27 subunit beta (IL-27 subunit beta) (IL-27B) (E	w
+EPSTEIN-BARR	human	Q99731	CCL19	Q99731	82	585	C-C motif chemokine 19 (Beta-chemokine exodus-3) (CK beta-11	w
+EPSTEIN-BARR	virus	P03203	EBNA4	P03203	4	91	Epstein-Barr nuclear antigen 4	w
+EPSTEIN-BARR	virus	P03204	EBNA6	P03204	1	88	Epstein-Barr nuclear antigen 6	w
+EPSTEIN-BARR	virus	P03211	EBNA1	P03211	3	91	Epstein-Barr nuclear antigen 1	w
+EPSTEIN-BARR	virus	P12977	EBNA3	P12977	1	90	Epstein-Barr nuclear antigen 3	w
+EPSTEIN-BARR	virus	P12978	EBNA2	P12978	2	91	Epstein-Barr nuclear antigen 2	w
+EPSTEIN-BARR	virus	Q8AZK7	EBNA-LP	Q8AZK7	0	91	Epstein-Barr nuclear antigen leader protein	w
+EPSTI1	human	Q96J88	EPSTI1	Q96J88	2	39	Epithelial-stromal interaction protein 1	
+EPSTI1	mus-musculus	Q8VDI1	Epsti1	Q8VDI1	0	1	Epithelial-stromal interaction protein 1	
+EPSTI1	rattus-norvegicus	Q5BK43	Epsti1	Q5BK43	0	1	Epithelial-stromal interaction protein 1	
+EPSTI1	zebrafish	F1QAT8	epsti1	F1QAT8	0	2	Epithelial stromal interaction 1	

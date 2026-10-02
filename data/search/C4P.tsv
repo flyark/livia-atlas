@@ -1,7 +1,82 @@
-C4PXA6	schistosoma-mansoni	C4PXA6	?	C4PXA6	1	10	dTMP kinase
-C4PY91	schistosoma-mansoni	C4PY91	?	C4PY91	6	30	Ras-related protein Rab-14
-C4PYC2	schistosoma-mansoni	C4PYC2	?	C4PYC2	0	2	DUF4806 domain-containing protein
-C4PYI6	schistosoma-mansoni	C4PYI6	AQP1	C4PYI6	0	4	Aquaporin
-C4PYP8	schistosoma-mansoni	C4PYP8	Smp_207000	C4PYP8	2	17	Anamorsin homolog
-C4PZQ3	schistosoma-mansoni	C4PZQ3	Smp_010100	C4PZQ3	0	1	Lipoyl synthase, mitochondrial
-C4PZS5	schistosoma-mansoni	C4PZS5	?	C4PZS5	14	252	60S acidic ribosomal protein P0
+C4P0S0	virus	C4P0S0	NS-3	C4P0S0	0	4	C4P0S0_9VIRU	
+C4P0S1	virus	C4P0S1	NS-1	C4P0S1	1	4	C4P0S1_9VIRU	
+C4P0S2	virus	C4P0S2	NS-2	C4P0S2	2	4	C4P0S2_9VIRU	
+C4P0S3	virus	C4P0S3	VP1	C4P0S3	0	4	C4P0S3_9VIRU	
+C4P206	virus	C4P206	E1A	C4P206	3	30	C4P206_9ADEN	
+C4P207	virus	C4P207	E1B	C4P207	3	30	E1B protein, small T-antigen	
+C4P208	virus	C4P208	E1B	C4P208	1	30	E1B 55 kDa protein	
+C4P209	virus	C4P209	IX	C4P209	0	30	Hexon-interlacing protein IX	
+C4P210	virus	C4P210	E2B	C4P210	3	30	DNA polymerase	
+C4P211	virus	C4P211	E2B	C4P211	2	30	Preterminal protein	
+C4P212	virus	C4P212	L1	C4P212	2	30	Packaging protein 3	
+C4P213	virus	C4P213	L1	C4P213	2	30	Pre-hexon-linking protein IIIa	
+C4P214	virus	C4P214	L2	C4P214	0	30	Penton protein	
+C4P215	virus	C4P215	pVll	C4P215	1	30	Pre-histone-like nucleoprotein	
+C4P216	virus	C4P216	V	C4P216	1	30	C4P216_9ADEN	
+C4P217	virus	C4P217	VI	C4P217	4	30	Pre-protein VI	
+C4P218	virus	C4P218		C4P218	1	30	C4P218_9ADEN	
+C4P219	virus	C4P219	L3	C4P219	4	30	Protease	
+C4P220	virus	C4P220	E2A	C4P220	1	30	DNA-binding protein	
+C4P221	virus	C4P221	100K	C4P221	4	30	Shutoff protein	
+C4P222	virus	C4P222	pVIII	C4P222	3	30	Pre-hexon-linking protein VIII	
+C4P223	virus	C4P223	E3	C4P223	3	30	C4P223_9ADEN	
+C4P224	virus	C4P224	E3	C4P224	2	30	C4P224_9ADEN	
+C4P225	virus	C4P225	E3	C4P225	0	30	Early E3 18.5 kDa glycoprotein	
+C4P226	virus	C4P226	E3	C4P226	1	30	C4P226_9ADEN	
+C4P227	virus	C4P227	E3	C4P227	1	30	C4P227_9ADEN	
+C4P228	virus	C4P228	E3	C4P228	0	30	C4P228_9ADEN	
+C4P229	virus	C4P229	E3	C4P229	0	30	C4P229_9ADEN	
+C4P230	virus	C4P230	E3	C4P230	2	30	C4P230_9ADEN	
+C4P231	virus	C4P231		C4P231	1	30	C4P231_9ADEN	
+C4P232	virus	C4P232	E4	C4P232	0	30	C4P232_9ADEN	
+C4P233	virus	C4P233	E4	C4P233	0	30	C4P233_9ADEN	
+C4P234	virus	C4P234	E4	C4P234	2	30	C4P234_9ADEN	
+C4P235	virus	C4P235	E4	C4P235	2	30	C4P235_9ADEN	
+C4P342	zebrafish	C4P342	pcdh17	C4P342	2	2	Protocadherin-17	
+C4PUC0	virus	C4PUC0	E6	C4PUC0	2	7	Protein E6	
+C4PUC1	virus	C4PUC1	E7	C4PUC1	1	7	Protein E7	
+C4PUC2	virus	C4PUC2	E1	C4PUC2	2	7	Replication protein E1	
+C4PUC3	virus	C4PUC3	E2	C4PUC3	3	7	Regulatory protein E2	
+C4PUC4	virus	C4PUC4	E4	C4PUC4	0	7	C4PUC4_HPV98	
+C4PUC5	virus	C4PUC5	L2	C4PUC5	0	7	Minor capsid protein L2	
+C4PUC6	virus	C4PUC6	L1	C4PUC6	0	7	Major capsid protein L1	
+C4PUC7	virus	C4PUC7	L1	C4PUC7	0	6	Major capsid protein L1	
+C4PUC8	virus	C4PUC8	E6	C4PUC8	2	6	Protein E6	
+C4PUC9	virus	C4PUC9	E7	C4PUC9	2	6	Protein E7	
+C4PUD0	virus	C4PUD0	E1	C4PUD0	2	6	Replication protein E1	
+C4PUD1	virus	C4PUD1	E2	C4PUD1	2	6	Regulatory protein E2	
+C4PUD2	virus	C4PUD2	L2	C4PUD2	0	6	Minor capsid protein L2	
+C4PUD3	virus	C4PUD3	E6	C4PUD3	1	7	Protein E6	
+C4PUD4	virus	C4PUD4	E7	C4PUD4	2	7	Protein E7	
+C4PUD5	virus	C4PUD5	E1	C4PUD5	2	7	Replication protein E1	
+C4PUD6	virus	C4PUD6	E2	C4PUD6	2	7	Regulatory protein E2	
+C4PUD7	virus	C4PUD7	E4	C4PUD7	0	7	C4PUD7_9PAPI	
+C4PUD8	virus	C4PUD8	L2	C4PUD8	1	7	Minor capsid protein L2	
+C4PUD9	virus	C4PUD9	L1	C4PUD9	0	7	Major capsid protein L1	
+C4PUE0	virus	C4PUE0	E6	C4PUE0	1	7	Protein E6	
+C4PUE1	virus	C4PUE1	E7	C4PUE1	1	7	Protein E7	
+C4PUE2	virus	C4PUE2	E1	C4PUE2	2	7	Replication protein E1	
+C4PUE3	virus	C4PUE3	E2	C4PUE3	2	7	Regulatory protein E2	
+C4PUE4	virus	C4PUE4	E4	C4PUE4	0	7	C4PUE4_9PAPI	
+C4PUE5	virus	C4PUE5	L2	C4PUE5	0	7	Minor capsid protein L2	
+C4PUE6	virus	C4PUE6	L1	C4PUE6	0	7	Major capsid protein L1	
+C4PUE7	virus	C4PUE7	E6	C4PUE7	1	6	Protein E6	
+C4PUE8	virus	C4PUE8	E7	C4PUE8	1	6	Protein E7	
+C4PUE9	virus	C4PUE9	E1	C4PUE9	2	6	Replication protein E1	
+C4PUF0	virus	C4PUF0	E2	C4PUF0	2	6	Regulatory protein E2	
+C4PUF1	virus	C4PUF1	L2	C4PUF1	0	6	Minor capsid protein L2	
+C4PUF2	virus	C4PUF2	L1	C4PUF2	0	6	Major capsid protein L1	
+C4PUF3	virus	C4PUF3	E6	C4PUF3	1	7	Protein E6	
+C4PUF4	virus	C4PUF4	E7	C4PUF4	1	7	Protein E7	
+C4PUF5	virus	C4PUF5	E1	C4PUF5	2	7	Replication protein E1	
+C4PUF6	virus	C4PUF6	E2	C4PUF6	2	7	Regulatory protein E2	
+C4PUF7	virus	C4PUF7	E4	C4PUF7	1	7	C4PUF7_9PAPI	
+C4PUF8	virus	C4PUF8	L2	C4PUF8	0	7	Minor capsid protein L2	
+C4PUF9	virus	C4PUF9	L1	C4PUF9	0	7	Major capsid protein L1	
+C4PXA6	schistosoma-mansoni	C4PXA6	?	C4PXA6	1	10	dTMP kinase	
+C4PY91	schistosoma-mansoni	C4PY91	?	C4PY91	6	30	Ras-related protein Rab-14	
+C4PYC2	schistosoma-mansoni	C4PYC2	?	C4PYC2	0	2	DUF4806 domain-containing protein	
+C4PYI6	schistosoma-mansoni	C4PYI6	AQP1	C4PYI6	0	4	Aquaporin	
+C4PYP8	schistosoma-mansoni	C4PYP8	Smp_207000	C4PYP8	2	17	Anamorsin homolog	
+C4PZQ3	schistosoma-mansoni	C4PZQ3	Smp_010100	C4PZQ3	0	1	Lipoyl synthase, mitochondrial	
+C4PZS5	schistosoma-mansoni	C4PZS5	?	C4PZS5	14	252	60S acidic ribosomal protein P0	

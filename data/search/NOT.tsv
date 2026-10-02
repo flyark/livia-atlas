@@ -1,16 +1,103 @@
-NOT10	arabidopsis-thaliana	Q93ZI7	NOT10	Q93ZI7	12	46	AT5g35440/MOK9_2
-NOT11	arabidopsis-thaliana	B4F7N8	NOT11	B4F7N8	2	54	CCR4-NOT transcription complex subunit 11
-NOT2	schizosaccharomyces-pombe	P87240	not2	P87240	2	17	General negative regulator of transcription subunit 2
-NOT2A	arabidopsis-thaliana	A8MR45	NOT2A	A8MR45	5	57	NOT2 / NOT3 / NOT5 family
-NOT3	arabidopsis-thaliana	A0A1P8B9R0	NOT3	A0A1P8B9R0	9	102	Transcription regulator NOT2/NOT3/NOT5 family protein
-NOT3	candida-albicans-237561	Q5AD56	NOT3	Q5AD56	0	12	General negative regulator of transcription subunit 3
-NOT3	schizosaccharomyces-pombe	O13870	not3	O13870	1	18	General negative regulator of transcription subunit 3
-NOT4	candida-albicans-237561	A0A1D8PSH4	NOT4	A0A1D8PSH4	7	19	CCR4-NOT core ubiquitin-protein ligase subunit
-NOT5	candida-albicans-237561	A0A1D8PE87	NOT5	A0A1D8PE87	1	12	General negative regulator of transcription subunit
-NOT9A	arabidopsis-thaliana	Q8RWV5	NOT9A	Q8RWV5	5	50	Cell differentiation, Rcd1-like protein
-NOT9B	arabidopsis-thaliana	Q9LXU1	NOT9B	Q9LXU1	16	220	Cell differentiation, Rcd1-like protein
-NOT9C	arabidopsis-thaliana	Q58FZ9	NOT9C	Q58FZ9	3	51	Cell differentiation, Rcd1-like protein
-NOTO	mus-musculus	Q5TIS6	Noto	Q5TIS6	0	2	Homeobox protein notochord
-NOTO	rattus-norvegicus	F1M4Z8	Noto	F1M4Z8	0	2	Notochord homeobox
-NOTUM	mus-musculus	Q8R116	Notum	Q8R116	0	1	Palmitoleoyl-protein carboxylesterase NOTUM
-NOTUM	rattus-norvegicus	D3ZXI3	Notum	D3ZXI3	0	1	NOTUM, palmitoleoyl-protein carboxylesterase
+NOT	fly	FBgn0013717	not	Q9VVR1	13	70	Ubiquitin carboxyl-terminal hydrolase nonstop (EC 3.4.19.12)	
+NOT	human	P43354	NR4A2	P43354	125	474		
+NOT	human	Q92685	ALG3	Q92685	3	94		
+NOT1	fly	FBgn0085436	Not1	A0A0B4LEZ3	6	25	Not1, isoform H (EC 3.1.13.4)	w
+NOT1	fly	FBgn0085436	Not1	A0A0B4LEZ3	6	25	Not1, isoform H (EC 3.1.13.4)	w
+NOT1	human	A5YKK6	CNOT1	A5YKK6	51	476		
+NOT10	arabidopsis-thaliana	Q93ZI7	NOT10	Q93ZI7	12	46	AT5g35440/MOK9_2	
+NOT10	fly	FBgn0260444	Not10	Q9V3G6	180	384	CCR4-NOT transcription complex subunit 10 (CNOT10)	
+NOT11	arabidopsis-thaliana	B4F7N8	NOT11	B4F7N8	2	54	CCR4-NOT transcription complex subunit 11	
+NOT11	fly	FBgn0034963	Not11	Q8MLP8	2	19	CCR4-NOT transcription complex subunit 11	
+NOT1H	human	A5YKK6	CNOT1	A5YKK6	51	476	CCR4-NOT transcription complex subunit 1 (CCR4-associated fa	w
+NOT2	fly	FBgn0017550	Rga	Q94547	54	482	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
+NOT2	human	Q9NZN8	CNOT2	Q9NZN8	77	538		
+NOT2	schizosaccharomyces-pombe	P87240	not2	P87240	2	17	General negative regulator of transcription subunit 2	
+NOT2	worm	H2L031	tag-153	H2L031	3	20	NOT2/NOT3/NOT5 C-terminal domain-containing protein	w
+NOT2	worm	Q10923	ntl-2	Q10923	3	27	NOT2/NOT3/NOT5 C-terminal domain-containing protein	w
+NOT2A	arabidopsis-thaliana	A8MR45	NOT2A	A8MR45	5	57	NOT2 / NOT3 / NOT5 family	
+NOT3	arabidopsis-thaliana	A0A1P8B9R0	NOT3	A0A1P8B9R0	9	102	Transcription regulator NOT2/NOT3/NOT5 family protein	
+NOT3	candida-albicans-237561	Q5AD56	NOT3	Q5AD56	0	12	General negative regulator of transcription subunit 3	
+NOT3	fly	FBgn0033029	Not3	Q7K126	83	420	CCR4-NOT transcription complex subunit 3, isoform A (CCR4-NO	
+NOT3	human	O75175	CNOT3	O75175	66	333		
+NOT3	schizosaccharomyces-pombe	O13870	not3	O13870	1	18	General negative regulator of transcription subunit 3	
+NOT3	worm	G5EFX8	ntl-3	G5EFX8	2	27	Not3 domain-containing protein	w
+NOT3	worm	H2L031	tag-153	H2L031	3	20	NOT2/NOT3/NOT5 C-terminal domain-containing protein	w
+NOT3	worm	Q10923	ntl-2	Q10923	3	27	NOT2/NOT3/NOT5 C-terminal domain-containing protein	w
+NOT3	yeast	P06102	NOT3	P06102	6	88	General negative regulator of transcription subunit 3	
+NOT4	candida-albicans-237561	A0A1D8PSH4	NOT4	A0A1D8PSH4	7	19	CCR4-NOT core ubiquitin-protein ligase subunit	
+NOT4	human	O95628	CNOT4	O95628	73	405		
+NOT45	fly	FBgn0011297	Alg3	Q27333	3	13	Lethal(2)neighbour of tid protein (NOT45) (NOT56)	w
+NOT4H	human	O95628	CNOT4	O95628	73	405	CCR4-NOT transcription complex subunit 4 (EC 2.3.2.27) (CCR4	w
+NOT5	candida-albicans-237561	A0A1D8PE87	NOT5	A0A1D8PE87	1	12	General negative regulator of transcription subunit	
+NOT5	worm	H2L031	tag-153	H2L031	3	20	NOT2/NOT3/NOT5 C-terminal domain-containing protein	w
+NOT5	worm	Q10923	ntl-2	Q10923	3	27	NOT2/NOT3/NOT5 C-terminal domain-containing protein	w
+NOT5	yeast	Q12514	NOT5	Q12514	18	135	General negative regulator of transcription subunit 5	
+NOT56	fly	FBgn0011297	Alg3	Q27333	3	13	Lethal(2)neighbour of tid protein (NOT45) (NOT56)	w
+NOT56L	human	Q92685	ALG3	Q92685	3	94		
+NOT9A	arabidopsis-thaliana	Q8RWV5	NOT9A	Q8RWV5	5	50	Cell differentiation, Rcd1-like protein	
+NOT9B	arabidopsis-thaliana	Q9LXU1	NOT9B	Q9LXU1	16	220	Cell differentiation, Rcd1-like protein	
+NOT9C	arabidopsis-thaliana	Q58FZ9	NOT9C	Q58FZ9	3	51	Cell differentiation, Rcd1-like protein	
+NOTC1_HUMAN	human	P46531	NOTCH1	P46531	45	527		
+NOTC2_HUMAN	human	Q04721	NOTCH2	Q04721	39	483		
+NOTC3_HUMAN	human	Q9UM47	NOTCH3	Q9UM47	24	271		
+NOTC4_HUMAN	human	Q99466	NOTCH4	Q99466	7	72		
+NOTCH	fly	FBgn0004647	N	P07207	32	564	Neurogenic locus Notch protein [Cleaved into: Processed neur	w
+NOTCH	fly	FBgn0028887	CG3491	Q9V453	0	5	Protein strawberry notch homolog 1	w
+NOTCH	fly	FBgn0265630	sno	A8JUV0	1	8	Protein strawberry notch	w
+NOTCH	human	A0A096LNW5	NOTCH2NLR	A0A096LNW5	0	17	Notch homolog 2 N-terminal-like protein R (NOTCH2NL-related)	w
+NOTCH	human	A3KN83	SBNO1	A3KN83	29	303	Protein strawberry notch homolog 1 (Monocyte protein 3) (MOP	w
+NOTCH	human	P0DPK3	NOTCH2NLB	P0DPK3	4	30	Notch homolog 2 N-terminal-like protein B	w
+NOTCH	human	P0DPK4	NOTCH2NLC	P0DPK4	5	35	Notch homolog 2 N-terminal-like protein C	w
+NOTCH	human	P46531	NOTCH1	P46531	45	527	Neurogenic locus notch homolog protein 1 (Notch 1) (hN1) (Tr	w
+NOTCH	human	Q04721	NOTCH2	Q04721	39	483	Neurogenic locus notch homolog protein 2 (Notch 2) (hN2) [Cl	w
+NOTCH	human	Q7Z3S9	NOTCH2NLA	Q7Z3S9	22	395	Notch homolog 2 N-terminal-like protein A (Notch homolog 2 N	w
+NOTCH	human	Q99466	NOTCH4	Q99466	7	72	Neurogenic locus notch homolog protein 4 (Notch 4) (hNotch4)	w
+NOTCH	human	Q9BUX1	CHAC1	Q9BUX1	21	82	Glutathione-specific gamma-glutamylcyclotransferase 1 (Gamma	w
+NOTCH	human	Q9UM47	NOTCH3	Q9UM47	24	271	Neurogenic locus notch homolog protein 3 (Notch 3) [Cleaved 	w
+NOTCH	human	Q9Y2G9	SBNO2	Q9Y2G9	0	18	Protein strawberry notch homolog 2	w
+NOTCH	worm	O45346	osm-11	O45346	0	10	Notch ligand osm-11	w
+NOTCH	zebrafish	A0A0R4IN59	si:ch73-281k2.5	A0A0R4IN59	3	16	Neurogenic locus notch homolog protein 2	w
+NOTCH	zebrafish	X1WEZ2	notchl	X1WEZ2	1	7	Neurogenic locus notch homolog protein 1	w
+NOTCH-LIKE	human	Q8NFT8	DNER	Q8NFT8	9	92	Delta and Notch-like epidermal growth factor-related recepto	w
+NOTCH-REGULATED	human	Q7Z6K4	NRARP	Q7Z6K4	5	82	Notch-regulated ankyrin repeat-containing protein	w
+NOTCH-REGULATED	zebrafish	Q7T3X9	nrarpb	Q7T3X9	0	6	Notch-regulated ankyrin repeat-containing protein B	w
+NOTCH-REGULATED	zebrafish	Q7T3Y0	nrarpa	Q7T3Y0	0	6	Notch-regulated ankyrin repeat-containing protein A	w
+NOTCH1	human	P46531	NOTCH1	P46531	45	527	Neurogenic locus notch homolog protein 1 (Notch 1) (hN1) (Tr	
+NOTCH2	human	Q04721	NOTCH2	Q04721	39	483	Neurogenic locus notch homolog protein 2 (Notch 2) (hN2) [Cl	
+NOTCH2-ASSOCIATED	human	P59773	MINAR2	P59773	0	13	Major intrinsically disordered NOTCH2-binding receptor 1-lik	w
+NOTCH2-ASSOCIATED	human	Q9UPX6	MINAR1	Q9UPX6	3	20	Major intrinsically disordered Notch2-binding receptor 1 (Me	w
+NOTCH2-BINDING	human	P59773	MINAR2	P59773	0	13	Major intrinsically disordered NOTCH2-binding receptor 1-lik	w
+NOTCH2-BINDING	human	Q9UPX6	MINAR1	Q9UPX6	3	20	Major intrinsically disordered Notch2-binding receptor 1 (Me	w
+NOTCH2NL	human	Q7Z3S9	NOTCH2NLA	Q7Z3S9	22	395		
+NOTCH2NL-RELATED	human	A0A096LNW5	NOTCH2NLR	A0A096LNW5	0	17	Notch homolog 2 N-terminal-like protein R (NOTCH2NL-related)	w
+NOTCH2NLA	human	Q7Z3S9	NOTCH2NLA	Q7Z3S9	22	395	Notch homolog 2 N-terminal-like protein A (Notch homolog 2 N	
+NOTCH2NLB	human	P0DPK3	NOTCH2NLB	P0DPK3	4	30	Notch homolog 2 N-terminal-like protein B	
+NOTCH2NLC	human	P0DPK4	NOTCH2NLC	P0DPK4	5	35	Notch homolog 2 N-terminal-like protein C	
+NOTCH2NLR	human	A0A096LNW5	NOTCH2NLR	A0A096LNW5	0	17	Notch homolog 2 N-terminal-like protein R (NOTCH2NL-related)	
+NOTCH3	human	Q9UM47	NOTCH3	Q9UM47	24	271	Neurogenic locus notch homolog protein 3 (Notch 3) [Cleaved 	
+NOTCH4	human	Q99466	NOTCH4	Q99466	7	72	Neurogenic locus notch homolog protein 4 (Notch 4) (hNotch4)	
+NOTCHL	zebrafish	X1WEZ2	notchl	X1WEZ2	1	7	Neurogenic locus notch homolog protein 1	
+NOTCHLESS	fly	FBgn0021874	Nle	Q9VPR4	3	73	Protein Notchless	w
+NOTCHLESS	human	Q9NVX2	NLE1	Q9NVX2	50	430	Notchless protein homolog 1	w
+NOTCHLESS	zebrafish	F1QDT3	nle1	F1QDT3	8	106	Notchless protein homolog 1	w
+NOTHING	fly	FBgn0003545	sub	Q9V877	4	113	Kinesin-like protein subito (Protein double or nothing)	w
+NOTO	human	A8MTQ0	NOTO	A8MTQ0	60	370	Homeobox protein notochord	
+NOTO	mus-musculus	Q5TIS6	Noto	Q5TIS6	0	2	Homeobox protein notochord	
+NOTO	rattus-norvegicus	F1M4Z8	Noto	F1M4Z8	0	2	Notochord homeobox	
+NOTOCHORD	human	A8MTQ0	NOTO	A8MTQ0	60	370	Homeobox protein notochord	w
+NOTOCHORD	zebrafish	B3DI58	ngs	B3DI58	3	21	Notochord granular surface	w
+NOTOCHORD-RELATED	zebrafish	Q5BLD0	znrg	Q5BLD0	2	22	Notochord-related protein	w
+NOTOPLEURAL	fly	FBgn0265011	Np	A1Z7M3	10	47	Notopleural, isoform A (Notopleural, isoform B (EC 3.4.21.-)	w
+NOTO_HUMAN	human	A8MTQ0	NOTO	A8MTQ0	60	370		
+NOTUM	fly	FBgn0044028	Notum	Q9VUX3	14	249	Palmitoleoyl-protein carboxylesterase NOTUM (EC 3.1.1.98) (P	w
+NOTUM	fly	FBgn0044028	Notum	Q9VUX3	14	249	Palmitoleoyl-protein carboxylesterase NOTUM (EC 3.1.1.98) (P	w
+NOTUM	human	Q6P988	NOTUM	Q6P988	3	64	Palmitoleoyl-protein carboxylesterase NOTUM (EC 3.1.1.98) (h	
+NOTUM	mus-musculus	Q8R116	Notum	Q8R116	0	1	Palmitoleoyl-protein carboxylesterase NOTUM	
+NOTUM	rattus-norvegicus	D3ZXI3	Notum	D3ZXI3	0	1	NOTUM, palmitoleoyl-protein carboxylesterase	
+NOTUM1A	zebrafish	C5H5C4	notum1a	C5H5C4	0	2	Palmitoleoyl-protein carboxylesterase notum1a	w
+NOTUM1A	zebrafish	C5H5C4	notum1a	C5H5C4	0	2	Palmitoleoyl-protein carboxylesterase notum1a	w
+NOTUM2	zebrafish	E7F0Z8	notum2	E7F0Z8	0	1	Carboxylesterase notum2	w
+NOTUM2	zebrafish	E7F0Z8	notum2	E7F0Z8	0	1	Carboxylesterase notum2	w
+NOTUM_82_671	fly	FBgn0044028	Notum	Q9VUX3	14	249		
+NOTUM_87_671	fly	FBgn0044028	Notum	Q9VUX3	14	249		
+NOTUM_HUMAN	human	Q6P988	NOTUM	Q6P988	3	64		

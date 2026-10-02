@@ -1,22 +1,67 @@
-UQCC1	mus-musculus	Q9CWU6	Uqcc1	Q9CWU6	2	5	Ubiquinol-cytochrome c reductase complex assembly factor 1
-UQCC1	rattus-norvegicus	Q32Q54	Uqcc1	Q32Q54	1	4	Ubiquinol-cytochrome c reductase complex assembly factor 1
-UQCC2	mus-musculus	Q9CQY6	Uqcc2	Q9CQY6	1	15	Ubiquinol-cytochrome c reductase complex assembly factor 2
-UQCC3	mus-musculus	Q8K2T4	Uqcc3	Q8K2T4	9	39	Ubiquinol-cytochrome-c reductase complex assembly factor 3
-UQCR10	mus-musculus	Q8R1I1	Uqcr10	Q8R1I1	13	155	Cytochrome b-c1 complex subunit 9
-UQCR10	rattus-norvegicus	B2RYX1	Uqcr10	B2RYX1	11	158	Complex III subunit 9
-UQCR11	mus-musculus	Q9CPX8	Uqcr11	Q9CPX8	10	112	Cytochrome b-c1 complex subunit 10
-UQCR11	rattus-norvegicus	A0ABK0LBZ9	Uqcr11	A0ABK0LBZ9	13	116	Ubiquinol-cytochrome c reductase, complex III subunit XI
-UQCR11L1	rattus-norvegicus	D3ZC68	Uqcr11l1	D3ZC68	9	114	Cytochrome b-c1 complex subunit 10
-UQCRB	mus-musculus	Q9D855	Uqcrb	Q9D855	5	144	Cytochrome b-c1 complex subunit 7
-UQCRB	rattus-norvegicus	B2RYS2	Uqcrb	B2RYS2	3	138	Cytochrome b-c1 complex subunit 7
-UQCRC1	mus-musculus	Q9CZ13	Uqcrc1	Q9CZ13	5	170	Cytochrome b-c1 complex subunit 1, mitochondrial
-UQCRC1	rattus-norvegicus	Q68FY0	Uqcrc1	Q68FY0	5	177	Cytochrome b-c1 complex subunit 1, mitochondrial
-UQCRC2	mus-musculus	Q9DB77	Uqcrc2	Q9DB77	10	162	Cytochrome b-c1 complex subunit 2, mitochondrial
-UQCRC2	rattus-norvegicus	P32551	Uqcrc2	P32551	7	140	Cytochrome b-c1 complex subunit 2, mitochondrial
-UQCRFS1	mus-musculus	Q9CR68	Uqcrfs1	Q9CR68	24	207	Cytochrome b-c1 complex subunit Rieske, mitochondrial
-UQCRFS1	rattus-norvegicus	P20788	Uqcrfs1	P20788	17	182	Cytochrome b-c1 complex subunit Rieske, mitochondrial
-UQCRH	dictyostelium-discoideum	Q1ZXP3	uqcrh	Q1ZXP3	1	46	Probable cytochrome b-c1 complex subunit 6
-UQCRH	mus-musculus	P99028	Uqcrh	P99028	4	151	Cytochrome b-c1 complex subunit 6, mitochondrial
-UQCRH	rattus-norvegicus	Q5M9I5	Uqcrh	Q5M9I5	1	135	Cytochrome b-c1 complex subunit 6, mitochondrial
-UQCRQ	mus-musculus	Q9CQ69	Uqcrq	Q9CQ69	7	130	Cytochrome b-c1 complex subunit 8
-UQCRQ	rattus-norvegicus	Q7TQ16	Uqcrq	Q7TQ16	8	124	Cytochrome b-c1 complex subunit 8
+UQCC	human	Q9NVA1	UQCC1	Q9NVA1	15	123		
+UQCC1	fly	FBgn0035722	Uqcc1	Q9VRZ7	6	20	RE68357p	
+UQCC1	human	Q9NVA1	UQCC1	Q9NVA1	15	123	Ubiquinol-cytochrome c reductase complex assembly factor 1 (	
+UQCC1	mus-musculus	Q9CWU6	Uqcc1	Q9CWU6	2	5	Ubiquinol-cytochrome c reductase complex assembly factor 1	
+UQCC1	rattus-norvegicus	Q32Q54	Uqcc1	Q32Q54	1	4	Ubiquinol-cytochrome c reductase complex assembly factor 1	
+UQCC1_HUMAN	human	Q9NVA1	UQCC1	Q9NVA1	15	123		
+UQCC2	human	Q9BRT2	UQCC2	Q9BRT2	11	92	Ubiquinol-cytochrome c reductase complex assembly factor 2 (	
+UQCC2	mus-musculus	Q9CQY6	Uqcc2	Q9CQY6	1	15	Ubiquinol-cytochrome c reductase complex assembly factor 2	
+UQCC2	zebrafish	Q6PBU7	uqcc2	Q6PBU7	0	9	Ubiquinol-cytochrome-c reductase complex assembly factor 2	
+UQCC2_HUMAN	human	Q9BRT2	UQCC2	Q9BRT2	11	92		
+UQCC3	human	Q6UW78	UQCC3	Q6UW78	30	87	Ubiquinol-cytochrome-c reductase complex assembly factor 3 (	
+UQCC3	mus-musculus	Q8K2T4	Uqcc3	Q8K2T4	9	39	Ubiquinol-cytochrome-c reductase complex assembly factor 3	
+UQCC3_HUMAN	human	Q6UW78	UQCC3	Q6UW78	30	87		
+UQCC4	human	Q4G0I0	UQCC4	Q4G0I0	46	127	Ubiquinol-cytochrome c reductase complex assembly factor 4 (	
+UQCC4	zebrafish	A0A0R4II42	uqcc4	A0A0R4II42	0	1	Protein CCSMST1-like	
+UQCC4_HUMAN	human	Q4G0I0	UQCC4	Q4G0I0	46	127		
+UQCC5	human	Q8WVI0	UQCC5	Q8WVI0	36	81	Ubiquinol-cytochrome c reductase complex assembly factor 5 (	
+UQCC5	zebrafish	E7FFR8	uqcc5	E7FFR8	0	1	Small integral membrane protein 4	
+UQCC5_HUMAN	human	Q8WVI0	UQCC5	Q8WVI0	36	81		
+UQCC6	human	Q69YU5	UQCC6	Q69YU5	26	48	Ubiquinol-cytochrome c reductase complex assembly factor 6 (	
+UQCC6_HUMAN	human	Q69YU5	UQCC6	Q69YU5	26	48		
+UQCR	human	O14957	UQCR11	O14957	49	223		
+UQCR-11	fly	FBgn0260008	UQCR-11	A8Y535	2	88	Cytochrome b-c1 complex subunit 6	
+UQCR-11L	fly	FBgn0050354	UQCR-11L	Q4QPY6	2	88	Cytochrome b-c1 complex subunit 6	
+UQCR-14	fly	FBgn0030733	UQCR-14	Q9VXI6	7	96	Cytochrome b-c1 complex subunit 7	
+UQCR-14L	fly	FBgn0039576	UQCR-14L	Q9VAW7	3	93	Cytochrome b-c1 complex subunit 7	
+UQCR-6.4	fly	FBgn0034245	UQCR-6.4	Q500Y7	10	141	GEO11443p1 (RH56961p) (Ubiquinol-cytochrome c reductase 6.4 	
+UQCR-6.4L	fly	FBgn0262842	UQCR-6.4L	M9NFG6	8	34	Ubiquinol-cytochrome c reductase 6.4 kDa subunit-like	
+UQCR-C1	fly	FBgn0038271	UQCR-C1	Q9VFF0	9	210	GH01077p (Ubiquinol-cytochrome c reductase core protein 1, i	
+UQCR-C2	fly	FBgn0250814	UQCR-C2	Q9VV75	20	228	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	
+UQCR-Q	fly	FBgn0036728	UQCR-Q	Q9VVH5	5	100	Cytochrome b-c1 complex subunit 8 (Complex III subunit 8)	
+UQCR10	human	Q9UDW1	UQCR10	Q9UDW1	66	271	Cytochrome b-c1 complex subunit 9 (Complex III subunit 9) (C	
+UQCR10	mus-musculus	Q8R1I1	Uqcr10	Q8R1I1	13	155	Cytochrome b-c1 complex subunit 9	
+UQCR10	rattus-norvegicus	B2RYX1	Uqcr10	B2RYX1	11	158	Complex III subunit 9	
+UQCR10	zebrafish	A0A0G2L2Q2	uqcr10	A0A0G2L2Q2	7	152	Complex III subunit 9	
+UQCR11	human	O14957	UQCR11	O14957	49	223	Cytochrome b-c1 complex subunit 10 (Complex III subunit 10) 	
+UQCR11	mus-musculus	Q9CPX8	Uqcr11	Q9CPX8	10	112	Cytochrome b-c1 complex subunit 10	
+UQCR11	rattus-norvegicus	A0ABK0LBZ9	Uqcr11	A0ABK0LBZ9	13	116	Ubiquinol-cytochrome c reductase, complex III subunit XI	
+UQCR11L1	rattus-norvegicus	D3ZC68	Uqcr11l1	D3ZC68	9	114	Cytochrome b-c1 complex subunit 10	
+UQCRB	human	P14927	UQCRB	P14927	20	232	Cytochrome b-c1 complex subunit 7 (Complex III subunit 7) (C	
+UQCRB	mus-musculus	Q9D855	Uqcrb	Q9D855	5	144	Cytochrome b-c1 complex subunit 7	
+UQCRB	rattus-norvegicus	B2RYS2	Uqcrb	B2RYS2	3	138	Cytochrome b-c1 complex subunit 7	
+UQCRB	zebrafish	Q4VBV1	uqcrb	Q4VBV1	9	151	Cytochrome b-c1 complex subunit 7	
+UQCRC1	human	P31930	UQCRC1	P31930	19	338	Cytochrome b-c1 complex subunit 1, mitochondrial (Complex II	
+UQCRC1	mus-musculus	Q9CZ13	Uqcrc1	Q9CZ13	5	170	Cytochrome b-c1 complex subunit 1, mitochondrial	
+UQCRC1	rattus-norvegicus	Q68FY0	Uqcrc1	Q68FY0	5	177	Cytochrome b-c1 complex subunit 1, mitochondrial	
+UQCRC2	human	P22695	UQCRC2	P22695	74	468	Cytochrome b-c1 complex subunit 2, mitochondrial (Complex II	
+UQCRC2	mus-musculus	Q9DB77	Uqcrc2	Q9DB77	10	162	Cytochrome b-c1 complex subunit 2, mitochondrial	
+UQCRC2	rattus-norvegicus	P32551	Uqcrc2	P32551	7	140	Cytochrome b-c1 complex subunit 2, mitochondrial	
+UQCRC2A	zebrafish	F1QJE0	uqcrc2a	F1QJE0	9	120	Ubiquinol-cytochrome c reductase core protein 2a	
+UQCRC2B	zebrafish	Q6IQ59	uqcrc2b	Q6IQ59	9	120	Cytochrome b-c1 complex subunit 2, mitochondrial	
+UQCRFS1	human	P47985	UQCRFS1	P47985	38	351	Cytochrome b-c1 complex subunit Rieske, mitochondrial (EC 7.	
+UQCRFS1	mus-musculus	Q9CR68	Uqcrfs1	Q9CR68	24	207	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+UQCRFS1	rattus-norvegicus	P20788	Uqcrfs1	P20788	17	182	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+UQCRFS1	zebrafish	A7MCR1	uqcrfs1	A7MCR1	20	207	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+UQCRFS1P1	human	P0C7P4	UQCRFS1P1	P0C7P4	7	49	Putative cytochrome b-c1 complex subunit Rieske-like protein	
+UQCRFSL1	human	P0C7P4	UQCRFS1P1	P0C7P4	7	49		
+UQCRH	dictyostelium-discoideum	Q1ZXP3	uqcrh	Q1ZXP3	1	46	Probable cytochrome b-c1 complex subunit 6	
+UQCRH	human	P07919	UQCRH	P07919	14	272	Cytochrome b-c1 complex subunit 6, mitochondrial (Complex II	
+UQCRH	mus-musculus	P99028	Uqcrh	P99028	4	151	Cytochrome b-c1 complex subunit 6, mitochondrial	
+UQCRH	rattus-norvegicus	Q5M9I5	Uqcrh	Q5M9I5	1	135	Cytochrome b-c1 complex subunit 6, mitochondrial	
+UQCRH	zebrafish	Q3B750	uqcrh	Q3B750	2	132	Cytochrome b-c1 complex subunit 6	
+UQCRHL	human	A0A096LP55	UQCRHL	A0A096LP55	6	157	Cytochrome b-c1 complex subunit 6-like, mitochondrial	
+UQCRQ	human	O14949	UQCRQ	O14949	29	295	Cytochrome b-c1 complex subunit 8 (Complex III subunit 8) (C	
+UQCRQ	mus-musculus	Q9CQ69	Uqcrq	Q9CQ69	7	130	Cytochrome b-c1 complex subunit 8	
+UQCRQ	rattus-norvegicus	Q7TQ16	Uqcrq	Q7TQ16	8	124	Cytochrome b-c1 complex subunit 8	
+UQCRQ	zebrafish	F1QEJ5	uqcrq	F1QEJ5	7	110	Cytochrome b-c1 complex subunit 8	

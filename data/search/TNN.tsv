@@ -1,18 +1,59 @@
-TNNC1	mus-musculus	P19123	Tnnc1	P19123	4	37	Troponin C, slow skeletal and cardiac muscles
-TNNC1	rattus-norvegicus	Q4PP99	Tnnc1	Q4PP99	5	46	Troponin C, slow skeletal and cardiac muscles
-TNNC2	mus-musculus	P20801	Tnnc2	P20801	3	36	Troponin C, skeletal muscle
-TNNC2	rattus-norvegicus	Q304F3	Tnnc2	Q304F3	5	48	Troponin C, skeletal muscle
-TNNI1	mus-musculus	Q9WUZ5	Tnni1	Q9WUZ5	7	32	Troponin I, slow skeletal muscle
-TNNI1	rattus-norvegicus	P13413	Tnni1	P13413	15	52	Troponin I, slow skeletal muscle
-TNNI2	mus-musculus	P13412	Tnni2	P13412	10	40	Troponin I, fast skeletal muscle
-TNNI2	rattus-norvegicus	P27768	Tnni2	P27768	14	52	Troponin I, fast skeletal muscle
-TNNI3	mus-musculus	P48787	Tnni3	P48787	8	42	Troponin I, cardiac muscle
-TNNI3	rattus-norvegicus	P23693	Tnni3	P23693	17	62	Troponin I, cardiac muscle
-TNNI3K	mus-musculus	Q5GIG6	Tnni3k	Q5GIG6	0	1	Serine/threonine-protein kinase TNNI3K
-TNNI3K	rattus-norvegicus	Q7TQP6	Tnni3k	Q7TQP6	0	3	Serine/threonine-protein kinase TNNI3K
-TNNT1	mus-musculus	O88346	Tnnt1	O88346	8	30	Troponin T, slow skeletal muscle
-TNNT1	rattus-norvegicus	Q7TNB2	Tnnt1	Q7TNB2	9	32	Troponin T, slow skeletal muscle
-TNNT2	mus-musculus	P50752	Tnnt2	P50752	9	34	Troponin T, cardiac muscle
-TNNT2	rattus-norvegicus	P50753	Tnnt2	P50753	9	40	Troponin T, cardiac muscle
-TNNT3	mus-musculus	Q9QZ47	Tnnt3	Q9QZ47	7	28	Troponin T, fast skeletal muscle
-TNNT3	rattus-norvegicus	P09739	Tnnt3	P09739	10	30	Troponin T, fast skeletal muscle
+TNN	human	Q9UQP3	TNN	Q9UQP3	2	33	Tenascin-N (TN-N) (Tenascin-W) (TN-W)	
+TNN	zebrafish	B0S6K5	tnn	B0S6K5	0	7	Tenascin N	
+TNNC	human	P63316	TNNC1	P63316	10	125		
+TNNC1	human	P19429	TNNI3	P19429	22	133		
+TNNC1	human	P63316	TNNC1	P63316	10	125	Troponin C, slow skeletal and cardiac muscles (TN-C)	
+TNNC1	mus-musculus	P19123	Tnnc1	P19123	4	37	Troponin C, slow skeletal and cardiac muscles	
+TNNC1	rattus-norvegicus	Q4PP99	Tnnc1	Q4PP99	5	46	Troponin C, slow skeletal and cardiac muscles	
+TNNC1A	zebrafish	Q800V7	tnnc1a	Q800V7	13	56	Troponin C, slow skeletal and cardiac muscles	
+TNNC1B	zebrafish	Q6IQ64	tnnc1b	Q6IQ64	14	59	Troponin C, slow skeletal and cardiac muscles	
+TNNC1_HUMAN	human	P63316	TNNC1	P63316	10	125		
+TNNC2	human	P02585	TNNC2	P02585	25	189	Troponin C, skeletal muscle	
+TNNC2	mus-musculus	P20801	Tnnc2	P20801	3	36	Troponin C, skeletal muscle	
+TNNC2	rattus-norvegicus	Q304F3	Tnnc2	Q304F3	5	48	Troponin C, skeletal muscle	
+TNNC2.1	zebrafish	A0A8M9Q7U4	tnnc2.1	A0A8M9Q7U4	12	74	Troponin C, skeletal muscle	
+TNNC2.2	zebrafish	Q9I8U8	tnnc2.2	Q9I8U8	16	71	Troponin C, skeletal muscle	
+TNNC2_HUMAN	human	P02585	TNNC2	P02585	25	189		
+TNNI1	human	P19237	TNNI1	P19237	23	148	Troponin I, slow skeletal muscle (Troponin I, slow-twitch is	
+TNNI1	mus-musculus	Q9WUZ5	Tnni1	Q9WUZ5	7	32	Troponin I, slow skeletal muscle	
+TNNI1	rattus-norvegicus	P13413	Tnni1	P13413	15	52	Troponin I, slow skeletal muscle	
+TNNI1C	zebrafish	Q0P3Z4	tnni1c	Q0P3Z4	14	27	Troponin I, skeletal, slow c	
+TNNI1_HUMAN	human	P19237	TNNI1	P19237	23	148		
+TNNI2	human	P48788	TNNI2	P48788	22	153	Troponin I, fast skeletal muscle (Troponin I, fast-twitch is	
+TNNI2	mus-musculus	P13412	Tnni2	P13412	10	40	Troponin I, fast skeletal muscle	
+TNNI2	rattus-norvegicus	P27768	Tnni2	P27768	14	52	Troponin I, fast skeletal muscle	
+TNNI2A.1	zebrafish	Q5U3E9	tnni2a.1	Q5U3E9	15	33	Troponin I, fast skeletal muscle	
+TNNI2A.2	zebrafish	A0AB32THC7	tnni2a.2	A0AB32THC7	14	22	Troponin I type 2a (Skeletal, fast), tandem duplicate 2	
+TNNI2A.3	zebrafish	Q6DHU6	tnni2a.3	Q6DHU6	15	22	Troponin I, fast skeletal muscle	
+TNNI2A.4	zebrafish	Q0D2W2	tnni2a.4	Q0D2W2	15	33	Fast muscle troponin I	
+TNNI2B.1	zebrafish	F1QCC0	tnni2b.1	F1QCC0	14	33	Troponin I type 2b (skeletal, fast), tandem duplicate 1	
+TNNI2B.2	zebrafish	Q6DHP2	tnni2b.2	Q6DHP2	16	30	Troponin I type 2B (skeletal, fast), Tandem duplicate 2	
+TNNI2_HUMAN	human	P48788	TNNI2	P48788	22	153		
+TNNI3	human	P19429	TNNI3	P19429	22	133	Troponin I, cardiac muscle (Cardiac troponin I)	
+TNNI3	mus-musculus	P48787	Tnni3	P48787	8	42	Troponin I, cardiac muscle	
+TNNI3	rattus-norvegicus	P23693	Tnni3	P23693	17	62	Troponin I, cardiac muscle	
+TNNI3-INTERACTING	human	Q59H18	TNNI3K	Q59H18	6	85	Serine/threonine-protein kinase TNNI3K (EC 2.7.11.1) (Cardia	w
+TNNI3K	human	Q59H18	TNNI3K	Q59H18	6	85	Serine/threonine-protein kinase TNNI3K (EC 2.7.11.1) (Cardia	
+TNNI3K	human	V9GXZ4	FPGT-TNNI3K	V9GXZ4	0	2	Serine/threonine-protein kinase TNNI3K	w
+TNNI3K	mus-musculus	Q5GIG6	Tnni3k	Q5GIG6	0	1	Serine/threonine-protein kinase TNNI3K	
+TNNI3K	rattus-norvegicus	Q7TQP6	Tnni3k	Q7TQP6	0	3	Serine/threonine-protein kinase TNNI3K	
+TNNI3K	zebrafish	E7EXS2	tnni3k	E7EXS2	1	14	Serine/threonine-protein kinase TNNI3K	w
+TNNI3K	zebrafish	E7EXS2	tnni3k	E7EXS2	1	14	Serine/threonine-protein kinase TNNI3K	w
+TNNI3_HUMAN	human	P19429	TNNI3	P19429	22	133		
+TNNI4B.1	zebrafish	A0AB40E574	tnni4b.1	A0AB40E574	15	29	Troponin I, slow skeletal muscle	
+TNNT1	human	P13805	TNNT1	P13805	24	160	Troponin T, slow skeletal muscle (TnTs) (Slow skeletal muscl	
+TNNT1	mus-musculus	O88346	Tnnt1	O88346	8	30	Troponin T, slow skeletal muscle	
+TNNT1	rattus-norvegicus	Q7TNB2	Tnnt1	Q7TNB2	9	32	Troponin T, slow skeletal muscle	
+TNNT1_HUMAN	human	P13805	TNNT1	P13805	24	160		
+TNNT2	human	P45379	TNNT2	P45379	21	91	Troponin T, cardiac muscle (TnTc) (Cardiac muscle troponin T	
+TNNT2	mus-musculus	P50752	Tnnt2	P50752	9	34	Troponin T, cardiac muscle	
+TNNT2	rattus-norvegicus	P50753	Tnnt2	P50753	9	40	Troponin T, cardiac muscle	
+TNNT2C	zebrafish	Q8AVB1	tnnt2c	Q8AVB1	15	25	Slow troponin T	
+TNNT2_HUMAN	human	P45379	TNNT2	P45379	21	91		
+TNNT3	human	P45378	TNNT3	P45378	21	98	Troponin T, fast skeletal muscle (TnTf) (Beta-TnTF) (Fast sk	
+TNNT3	mus-musculus	Q9QZ47	Tnnt3	Q9QZ47	7	28	Troponin T, fast skeletal muscle	
+TNNT3	rattus-norvegicus	P09739	Tnnt3	P09739	10	30	Troponin T, fast skeletal muscle	
+TNNT3A	zebrafish	Q9I8U9	tnnt3a	Q9I8U9	13	26	Fast skeletal muscle troponin T	
+TNNT3B	zebrafish	A8WGA6	tnnt3b	A8WGA6	11	29	Tnnt3b protein	w
+TNNT3B	zebrafish	A8WGA6	tnnt3b	A8WGA6	11	29	Tnnt3b protein	w
+TNNT3_HUMAN	human	P45378	TNNT3	P45378	21	98		

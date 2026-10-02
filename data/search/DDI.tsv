@@ -1,12 +1,38 @@
-DDI1	arabidopsis-thaliana	Q1EBV4	DDI1	Q1EBV4	4	38	Protein DNA-DAMAGE INDUCIBLE 1
-DDI1	candida-albicans-237561	A0A1D8PFX6	DDI1	A0A1D8PFX6	1	5	DNA damage-inducible protein 1
-DDI1	cladophialophora-carrionii	A0A1C1CQS5	ddi1	A0A1C1CQS5	2	10	DNA damage-inducible protein 1
-DDI1	dictyostelium-discoideum	Q54JB0	ddi1	Q54JB0	0	4	Protein DDI1 homolog
-DDI1	mus-musculus	Q9DAF3	Ddi1	Q9DAF3	0	11	Protein DDI1 homolog 1
-DDI2	rattus-norvegicus	A0A8I5Y0Y2	Ddi2	A0A8I5Y0Y2	5	17	DNA damage inducible 1 homolog 2
-DDIT3	mus-musculus	A0A2R8VHR8	Ddit3	A0A2R8VHR8	0	5	DDIT3 upstream open reading frame protein
-DDIT3	mus-musculus	P35639	Ddit3	P35639	8	12	DNA damage-inducible transcript 3 protein
-DDIT3	rattus-norvegicus	Q62857	Ddit3	Q62857	11	37	DNA damage-inducible transcript 3 protein
-DDIT4	mus-musculus	Q9D3F7	Ddit4	Q9D3F7	3	21	DNA damage-inducible transcript 4 protein
-DDIT4	rattus-norvegicus	Q8VHZ9	Ddit4	Q8VHZ9	4	22	DNA damage-inducible transcript 4 protein
-DDIT4L	mus-musculus	Q8VHZ5	Ddit4l	Q8VHZ5	0	1	DNA damage-inducible transcript 4-like protein
+DDI-1	worm	Q17569	ddi-1	Q17569	2	22	Protein DDI1 homolog 1	
+DDI1	arabidopsis-thaliana	Q1EBV4	DDI1	Q1EBV4	4	38	Protein DNA-DAMAGE INDUCIBLE 1	
+DDI1	candida-albicans-237561	A0A1D8PFX6	DDI1	A0A1D8PFX6	1	5	DNA damage-inducible protein 1	
+DDI1	cladophialophora-carrionii	A0A1C1CQS5	ddi1	A0A1C1CQS5	2	10	DNA damage-inducible protein 1	
+DDI1	dictyostelium-discoideum	Q54JB0	ddi1	Q54JB0	0	4	Protein DDI1 homolog	
+DDI1	human	Q5TDH0	DDI2	Q5TDH0	12	121	Protein DDI1 homolog 2 (EC 3.4.23.-)	w
+DDI1	human	Q8WTU0	DDI1	Q8WTU0	8	91	Protein DDI1 homolog 1 (EC 3.4.23.-)	
+DDI1	mus-musculus	Q9DAF3	Ddi1	Q9DAF3	0	11	Protein DDI1 homolog 1	
+DDI1	worm	Q17569	ddi-1	Q17569	2	22	Protein DDI1 homolog 1	w
+DDI1	yeast	P40087	DDI1	P40087	2	33	DNA damage-inducible protein 1	
+DDI1	zebrafish	Q6TH22	ddi2	Q6TH22	9	20	Protein DDI1 homolog 2	w
+DDI1_HUMAN	human	Q8WTU0	DDI1	Q8WTU0	8	91		
+DDI2	human	Q5TDH0	DDI2	Q5TDH0	12	121	Protein DDI1 homolog 2 (EC 3.4.23.-)	
+DDI2	rattus-norvegicus	A0A8I5Y0Y2	Ddi2	A0A8I5Y0Y2	5	17	DNA damage inducible 1 homolog 2	
+DDI2	zebrafish	Q6TH22	ddi2	Q6TH22	9	20	Protein DDI1 homolog 2	
+DDI2_HUMAN	human	Q5TDH0	DDI2	Q5TDH0	12	121		
+DDI3	yeast	P0CH64	DDI3	P0CH64	0	2	Cyanamide hydratase DDI3	
+DDIAS	human	Q8IXT1	DDIAS	Q8IXT1	13	96	DNA damage-induced apoptosis suppressor protein (Nitric oxid	
+DDIAS_HUMAN	human	Q8IXT1	DDIAS	Q8IXT1	13	96		
+DDIT-1	human	P24522	GADD45A	P24522	31	306	Growth arrest and DNA damage-inducible protein GADD45 alpha 	w
+DDIT-2	human	O95257	GADD45G	O95257	27	214	Growth arrest and DNA damage-inducible protein GADD45 gamma 	w
+DDIT-3	human	P35638	DDIT3	P35638	102	465	DNA damage-inducible transcript 3 protein (DDIT-3) (C/EBP ze	w
+DDIT1	human	P24522	GADD45A	P24522	31	306		
+DDIT2	human	O95257	GADD45G	O95257	27	214		
+DDIT3	human	P0DPQ6	DDIT3	P0DPQ6	2	23	DDIT3 upstream open reading frame protein (Alternative DDIT3	
+DDIT3	human	P35638	DDIT3	P35638	102	465	DNA damage-inducible transcript 3 protein (DDIT-3) (C/EBP ze	
+DDIT3	mus-musculus	A0A2R8VHR8	Ddit3	A0A2R8VHR8	0	5	DDIT3 upstream open reading frame protein	
+DDIT3	mus-musculus	P35639	Ddit3	P35639	8	12	DNA damage-inducible transcript 3 protein	
+DDIT3	rattus-norvegicus	Q62857	Ddit3	Q62857	11	37	DNA damage-inducible transcript 3 protein	
+DDIT3	zebrafish	F1Q964	ddit3	F1Q964	11	32	DNA damage-inducible transcript 3 protein	
+DDIT3_HUMAN	human	P35638	DDIT3	P35638	102	465		
+DDIT4	human	Q9NX09	DDIT4	Q9NX09	13	118	DNA damage-inducible transcript 4 protein (HIF-1 responsive 	
+DDIT4	mus-musculus	Q9D3F7	Ddit4	Q9D3F7	3	21	DNA damage-inducible transcript 4 protein	
+DDIT4	rattus-norvegicus	Q8VHZ9	Ddit4	Q8VHZ9	4	22	DNA damage-inducible transcript 4 protein	
+DDIT4	zebrafish	Q7T346	ddit4	Q7T346	0	14	DNA damage-inducible transcript 4 protein	
+DDIT4L	human	Q96D03	DDIT4L	Q96D03	41	191	DNA damage-inducible transcript 4-like protein (HIF-1 respon	
+DDIT4L	mus-musculus	Q8VHZ5	Ddit4l	Q8VHZ5	0	1	DNA damage-inducible transcript 4-like protein	
+DDIT4_HUMAN	human	Q9NX09	DDIT4	Q9NX09	13	118		

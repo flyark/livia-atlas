@@ -1,8 +1,65 @@
-SRT1	arabidopsis-thaliana	Q9FE17	SRT1	Q9FE17	6	227	NAD-dependent protein deacetylase SRT1
-SRT1	candida-albicans-237561	A0A1D8PFD1	SRT1	A0A1D8PFD1	2	2	Alkyl transferase
-SRT1	glycine-max	I1JXZ2	SRT1	I1JXZ2	31	368	NAD-dependent protein deacylase
-SRT1	oryza-sativa-subsp-japonica	Q7XWV4	SRT1	Q7XWV4	15	277	NAD-dependent protein deacetylase SRT1
-SRT2	arabidopsis-thaliana	Q94AQ6	SRT2	Q94AQ6	16	236	NAD-dependent protein deacylase SRT2
-SRT2	glycine-max	I1KBM6	SRT2	I1KBM6	21	368	NAD-dependent protein deacylase
-SRT4	glycine-max	A0A0R0EXJ4	SRT4	A0A0R0EXJ4	8	403	NAD-dependent protein deacetylase SRT1
-SRTA	staphylococcus-aureus-93061	Q2FV99	srtA	Q2FV99	2	4	Sortase A
+SRT-1	worm	G5EF36	srt-1	G5EF36	0	9	Serpentine Receptor, class T	
+SRT-11	worm	Q9XU64	srt-11	Q9XU64	0	3	Serpentine Receptor, class T	
+SRT-12	worm	O44542	srt-12	O44542	0	3	Serpentine Receptor, class T	
+SRT-13	worm	Q23072	srt-13	Q23072	0	3	Serpentine Receptor, class T	
+SRT-14	worm	Q23073	srt-14	Q23073	0	4	Serpentine Receptor, class T	
+SRT-15	worm	O16470	srt-15	O16470	0	3	Serpentine Receptor, class T	
+SRT-16	worm	O16471	srt-16	O16471	0	3	Serpentine Receptor, class T	
+SRT-17	worm	A0A0K3AXT4	srt-17	A0A0K3AXT4	0	3	Serpentine Receptor, class T	
+SRT-18	worm	Q21686	srt-18	Q21686	0	3	Serpentine Receptor, class T	
+SRT-19	worm	Q22988	srt-19	Q22988	0	3	Serpentine Receptor, class T	
+SRT-20	worm	Q22986	srt-20	Q22986	0	3	Serpentine Receptor, class T	
+SRT-22	worm	O45985	srt-22	O45985	0	3	Serpentine Receptor, class T	
+SRT-23	worm	Q5KQP7	srt-23	Q5KQP7	0	3	Serpentine Receptor, class T	
+SRT-24	worm	Q95XW0	srt-24	Q95XW0	0	3	Serpentine Receptor, class T	
+SRT-27	worm	O76434	srt-27	O76434	0	3	Serpentine Receptor, class T	
+SRT-28	worm	H2KZ03	srt-28	H2KZ03	0	3	Serpentine Receptor, class T	
+SRT-29	worm	O76433	srt-29	O76433	0	8	Serpentine Receptor, class T	
+SRT-3	worm	Q22981	srt-3	Q22981	0	3	Serpentine Receptor, class T	
+SRT-30	worm	O01890	srt-30	O01890	0	3	Serpentine Receptor, class T	
+SRT-31	worm	Q966H5	srt-31	Q966H5	0	3	Serpentine Receptor, class T	
+SRT-32	worm	O17701	srt-32	O17701	0	3	Serpentine Receptor, class T	
+SRT-33	worm	Q20244	srt-33	Q20244	0	3	Serpentine Receptor, class T	
+SRT-34	worm	Q9TXJ9	srt-34	Q9TXJ9	0	3	Serpentine Receptor, class T	
+SRT-35	worm	Q22982	srt-35	Q22982	0	3	Serpentine Receptor, class T	
+SRT-36	worm	Q22983	srt-36	Q22983	0	4	Serpentine Receptor, class T	
+SRT-37	worm	Q22987	srt-37	Q22987	0	3	Serpentine Receptor, class T	
+SRT-38	worm	Q22984	srt-38	Q22984	0	3	Serpentine Receptor, class T	
+SRT-39	worm	Q23156	srt-39	Q23156	0	3	Serpentine Receptor, class T	
+SRT-4	worm	O16885	srt-4	O16885	0	4	Serpentine Receptor, class T	
+SRT-40	worm	Q966A1	srt-40	Q966A1	0	3	Serpentine Receptor, class T	
+SRT-41	worm	Q400M3	srt-41	Q400M3	0	4	Serpentine Receptor, class T	
+SRT-42	worm	H2KZZ8	srt-42	H2KZZ8	0	3	Serpentine Receptor, class T	
+SRT-43	worm	Q19556	srt-43	Q19556	0	3	Serpentine Receptor, class T	
+SRT-44	worm	Q9NAN9	srt-44	Q9NAN9	0	3	Serpentine Receptor, class T	
+SRT-45	worm	Q9XUC8	srt-45	Q9XUC8	0	3	Serpentine Receptor, class T	
+SRT-47	worm	Q9U2H7	srt-47	Q9U2H7	0	4	Serpentine Receptor, class T	
+SRT-48	worm	Q9U2H5	srt-48	Q9U2H5	0	3	Serpentine Receptor, class T	
+SRT-49	worm	Q9NAI0	srt-49	Q9NAI0	0	3	Serpentine Receptor, class T	
+SRT-5	worm	O16477	srt-5	O16477	0	3	Serpentine Receptor, class T	
+SRT-50	worm	H2L2K4	srt-50	H2L2K4	0	3	Serpentine Receptor, class T	
+SRT-52	worm	Q9N526	srt-52	Q9N526	0	3	Serpentine Receptor, class T	
+SRT-53	worm	Q965R2	srt-53	Q965R2	0	3	Serpentine Receptor, class T	
+SRT-54	worm	O17238	srt-54	O17238	0	3	G_PROTEIN_RECEP_F1_2 domain-containing protein	
+SRT-55	worm	P34571	srt-55	P34571	0	3	Serpentine receptor class T-55	
+SRT-56	worm	Q9TXW8	srt-56	Q9TXW8	0	3	Serpentine Receptor, class T	
+SRT-59	worm	Q9GZF9	srt-59	Q9GZF9	0	4	Serpentine Receptor, class T	
+SRT-6	worm	Q966G5	srt-6	Q966G5	0	3	Serpentine Receptor, class T	
+SRT-7	worm	O16478	srt-7	O16478	0	3	Serpentine Receptor, class T	
+SRT-74	worm	Q5FC50	srt-74	Q5FC50	0	3	Serpentine Receptor, class T	
+SRT-8	worm	O16480	srt-8	O16480	0	3	Serpentine Receptor, class T	
+SRT1	arabidopsis-thaliana	Q9FE17	SRT1	Q9FE17	6	227	NAD-dependent protein deacetylase SRT1	
+SRT1	candida-albicans-237561	A0A1D8PFD1	SRT1	A0A1D8PFD1	2	2	Alkyl transferase	
+SRT1	glycine-max	I1JXZ2	SRT1	I1JXZ2	31	368	NAD-dependent protein deacylase	
+SRT1	oryza-sativa-subsp-japonica	Q7XWV4	SRT1	Q7XWV4	15	277	NAD-dependent protein deacetylase SRT1	
+SRT1	yeast	Q03175	SRT1	Q03175	2	4	Dehydrodolichyl diphosphate synthase complex subunit SRT1	
+SRT2	arabidopsis-thaliana	Q94AQ6	SRT2	Q94AQ6	16	236	NAD-dependent protein deacylase SRT2	
+SRT2	glycine-max	I1KBM6	SRT2	I1KBM6	21	368	NAD-dependent protein deacylase	
+SRT4	glycine-max	A0A0R0EXJ4	SRT4	A0A0R0EXJ4	8	403	NAD-dependent protein deacetylase SRT1	
+SRTA	staphylococcus-aureus-93061	Q2FV99	srtA	Q2FV99	2	4	Sortase A	
+SRTD1_HUMAN	human	Q9UHV2	SERTAD1	Q9UHV2	34	137		
+SRTD2_HUMAN	human	Q14140	SERTAD2	Q14140	16	52		
+SRTD3_HUMAN	human	Q9UJW9	SERTAD3	Q9UJW9	12	91		
+SRTD4_HUMAN	human	Q9NUC0	SERTAD4	Q9NUC0	8	32		
+SRTM1_HUMAN	human	A2A2V5	SERTM1	A2A2V5	23	147		
+SRTM2_HUMAN	human	A0A1B0GWG4	SERTM2	A0A1B0GWG4	5	18		

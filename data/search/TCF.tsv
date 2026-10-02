@@ -1,26 +1,109 @@
-TCF1	arabidopsis-thaliana	Q9M2S1	TCF1	Q9M2S1	3	32	Regulator of chromosome condensation (RCC1) family protein
-TCF12	mus-musculus	Q61286	Tcf12	Q61286	30	66	Transcription factor 12
-TCF12	rattus-norvegicus	P51514	Tcf12	P51514	30	63	Transcription factor 12
-TCF15	mus-musculus	Q60756	Tcf15	Q60756	1	4	Transcription factor 15
-TCF15	rattus-norvegicus	D3ZEK9	Tcf15	D3ZEK9	1	4	Transcription factor 15
-TCF19	mus-musculus	Q99KJ5	Tcf19	Q99KJ5	0	6	Transcription factor 19-like protein
-TCF19	rattus-norvegicus	Q566R6	Tcf19	Q566R6	1	3	Transcription factor 19
-TCF21	mus-musculus	O35437	Tcf21	O35437	2	5	Transcription factor 21
-TCF21	rattus-norvegicus	Q498R2	Tcf21	Q498R2	3	3	Transcription factor 21
-TCF23	mus-musculus	Q9JLR5	Tcf23	Q9JLR5	1	1	Transcription factor 23
-TCF25	dictyostelium-discoideum	Q8T2A4	tcf25	Q8T2A4	0	10	Ribosome quality control complex subunit TCF25
-TCF25	mus-musculus	Q8R3L2	Tcf25	Q8R3L2	0	17	Ribosome quality control complex subunit TCF25
-TCF25	rattus-norvegicus	D3ZC46	Tcf25	D3ZC46	2	22	Transcription factor 25
-TCF3	mus-musculus	P15806	Tcf3	P15806	38	121	Transcription factor E2-alpha
-TCF3	rattus-norvegicus	P21677	Tcf3	P21677	37	80	Transcription factor E2-alpha
-TCF4	mus-musculus	Q60722	Tcf4	Q60722	19	68	Transcription factor 4
-TCF4	rattus-norvegicus	Q62655	Tcf4	Q62655	29	70	Transcription factor 4
-TCF7	mus-musculus	Q00417	Tcf7	Q00417	9	58	Transcription factor 7
-TCF7	rattus-norvegicus	D3ZLD0	Tcf7	D3ZLD0	10	57	Transcription factor 7
-TCF7L1	mus-musculus	Q9Z1J1	Tcf7l1	Q9Z1J1	4	54	Transcription factor 7-like 1
-TCF7L1	rattus-norvegicus	F1M1R9	Tcf7l1	F1M1R9	6	53	Transcription factor 7 like 1
-TCF7L2	mus-musculus	Q924A0	Tcf7l2	Q924A0	8	91	Transcription factor 7-like 2
-TCF7L2	rattus-norvegicus	D3Z9D1	Tcf7l2	D3Z9D1	6	37	Transcription factor 7 like 2
-TCF7L2	rattus-norvegicus	D4A8X6	Tcf7l2	D4A8X6	11	70	Transcription factor 7 like 2
-TCFL5	mus-musculus	Q32NY8	Tcfl5	Q32NY8	0	2	Tcfl5 protein
-TCFL5	rattus-norvegicus	A0A0G2JYQ8	Tcfl5	A0A0G2JYQ8	0	2	Transcription factor like 5
+TCF-1	human	P20823	HNF1A	P20823	24	214	Hepatocyte nuclear factor 1-alpha (HNF-1-alpha) (HNF-1A) (Li	w
+TCF-1	human	P36402	TCF7	P36402	87	438	Transcription factor 7 (TCF-7) (T-cell-specific transcriptio	w
+TCF-12	human	Q99081	TCF12	Q99081	85	242	Transcription factor 12 (TCF-12) (Class B basic helix-loop-h	w
+TCF-13	human	P28347	TEAD1	P28347	144	684	Transcriptional enhancer factor TEF-1 (NTEF-1) (Protein GT-I	w
+TCF-14	human	P41235	HNF4A	P41235	278	956	Hepatocyte nuclear factor 4-alpha (HNF-4-alpha) (Nuclear rec	w
+TCF-15	human	Q12870	TCF15	Q12870	78	370	Transcription factor 15 (TCF-15) (Class A basic helix-loop-h	w
+TCF-17	human	O60765	ZNF354A	O60765	1	77	Zinc finger protein 354A (Transcription factor 17) (TCF-17) 	w
+TCF-19	human	Q9Y242	TCF19	Q9Y242	33	162	Transcription factor 19 (TCF-19) (Transcription factor SC1)	w
+TCF-2	human	P35680	HNF1B	P35680	49	253	Hepatocyte nuclear factor 1-beta (HNF-1-beta) (HNF-1B) (Home	w
+TCF-20	human	Q9UGU0	TCF20	Q9UGU0	85	361	Transcription factor 20 (TCF-20) (Nuclear factor SPBP) (Prot	w
+TCF-21	human	O43680	TCF21	O43680	48	387	Transcription factor 21 (TCF-21) (Capsulin) (Class A basic h	w
+TCF-23	human	Q7RTU1	TCF23	Q7RTU1	17	31	Transcription factor 23 (TCF-23) (Class A basic helix-loop-h	w
+TCF-24	human	Q7RTU0	TCF24	Q7RTU0	44	362	Transcription factor 24 (TCF-24)	w
+TCF-25	human	Q9BQ70	TCF25	Q9BQ70	18	129	Ribosome quality control complex subunit TCF25 (Nuclear loca	w
+TCF-3	human	Q9HCS4	TCF7L1	Q9HCS4	95	431	Transcription factor 7-like 1 (HMG box transcription factor 	w
+TCF-3A	human	P55317	FOXA1	P55317	144	996	Hepatocyte nuclear factor 3-alpha (HNF-3-alpha) (HNF-3A) (Fo	w
+TCF-3B	human	Q9Y261	FOXA2	Q9Y261	92	485	Hepatocyte nuclear factor 3-beta (HNF-3-beta) (HNF-3B) (Fork	w
+TCF-3G	human	P55318	FOXA3	P55318	101	479	Hepatocyte nuclear factor 3-gamma (HNF-3-gamma) (HNF-3G) (Fo	w
+TCF-4	human	P15884	TCF4	P15884	118	306	Transcription factor 4 (TCF-4) (Class B basic helix-loop-hel	w
+TCF-4	human	Q9NQB0	TCF7L2	Q9NQB0	48	320	Transcription factor 7-like 2 (HMG box transcription factor 	w
+TCF-4	human	Q9NSA3	CTNNBIP1	Q9NSA3	47	190	Beta-catenin-interacting protein 1 (Inhibitor of beta-cateni	w
+TCF-6	human	Q00059	TFAM	Q00059	53	727	Transcription factor A, mitochondrial (mtTFA) (Mitochondrial	w
+TCF-7	human	P36402	TCF7	P36402	87	438	Transcription factor 7 (TCF-7) (T-cell-specific transcriptio	w
+TCF-8	human	P37275	ZEB1	P37275	49	286	Zinc finger E-box-binding homeobox 1 (NIL-2-A zinc finger pr	w
+TCF-9	human	P16383	GCFC2	P16383	34	91	Intron Large complex component GCFC2 (GC-rich sequence DNA-b	w
+TCF1	arabidopsis-thaliana	Q9M2S1	TCF1	Q9M2S1	3	32	Regulator of chromosome condensation (RCC1) family protein	
+TCF1	human	P20823	HNF1A	P20823	24	214		
+TCF1	human	P36402	TCF7	P36402	87	438		
+TCF1-ALPHA	human	Q9UJU2	LEF1	Q9UJU2	85	488	Lymphoid enhancer-binding factor 1 (LEF-1) (T cell-specific 	w
+TCF11	human	Q14494	NFE2L1	Q14494	33	78		
+TCF12	human	Q99081	TCF12	Q99081	85	242	Transcription factor 12 (TCF-12) (Class B basic helix-loop-h	
+TCF12	mus-musculus	Q61286	Tcf12	Q61286	30	66	Transcription factor 12	
+TCF12	rattus-norvegicus	P51514	Tcf12	P51514	30	63	Transcription factor 12	
+TCF13	human	P28347	TEAD1	P28347	144	684		
+TCF13L1	human	Q15561	TEAD4	Q15561	110	658		
+TCF14	human	P41235	HNF4A	P41235	278	956		
+TCF15	human	Q12870	TCF15	Q12870	78	370	Transcription factor 15 (TCF-15) (Class A basic helix-loop-h	
+TCF15	mus-musculus	Q60756	Tcf15	Q60756	1	4	Transcription factor 15	
+TCF15	rattus-norvegicus	D3ZEK9	Tcf15	D3ZEK9	1	4	Transcription factor 15	
+TCF15_HUMAN	human	Q12870	TCF15	Q12870	78	370		
+TCF16	human	O15111	CHUK	O15111	141	1577		
+TCF17	human	O60765	ZNF354A	O60765	1	77		
+TCF19	human	Q9Y242	TCF19	Q9Y242	33	162	Transcription factor 19 (TCF-19) (Transcription factor SC1)	
+TCF19	mus-musculus	Q99KJ5	Tcf19	Q99KJ5	0	6	Transcription factor 19-like protein	
+TCF19	rattus-norvegicus	Q566R6	Tcf19	Q566R6	1	3	Transcription factor 19	
+TCF19L	zebrafish	A0A8N7T6P4	tcf19l	A0A8N7T6P4	0	1	Transcription factor 19	
+TCF19_HUMAN	human	Q9Y242	TCF19	Q9Y242	33	162		
+TCF2	human	P35680	HNF1B	P35680	49	253		
+TCF20	human	Q9UGU0	TCF20	Q9UGU0	85	361	Transcription factor 20 (TCF-20) (Nuclear factor SPBP) (Prot	
+TCF20_HUMAN	human	Q9UGU0	TCF20	Q9UGU0	85	361		
+TCF21	human	O43680	TCF21	O43680	48	387	Transcription factor 21 (TCF-21) (Capsulin) (Class A basic h	
+TCF21	mus-musculus	O35437	Tcf21	O35437	2	5	Transcription factor 21	
+TCF21	rattus-norvegicus	Q498R2	Tcf21	Q498R2	3	3	Transcription factor 21	
+TCF21	zebrafish	Q32PV5	tcf21	Q32PV5	1	1	Transcription factor 21	
+TCF21_HUMAN	human	O43680	TCF21	O43680	48	387		
+TCF23	human	Q7RTU1	TCF23	Q7RTU1	17	31	Transcription factor 23 (TCF-23) (Class A basic helix-loop-h	
+TCF23	mus-musculus	Q9JLR5	Tcf23	Q9JLR5	1	1	Transcription factor 23	
+TCF23_HUMAN	human	Q7RTU1	TCF23	Q7RTU1	17	31		
+TCF24	human	Q7RTU0	TCF24	Q7RTU0	44	362	Transcription factor 24 (TCF-24)	
+TCF24_HUMAN	human	Q7RTU0	TCF24	Q7RTU0	44	362		
+TCF25	dictyostelium-discoideum	Q8T2A4	tcf25	Q8T2A4	0	10	Ribosome quality control complex subunit TCF25	
+TCF25	human	Q9BQ70	TCF25	Q9BQ70	18	129	Ribosome quality control complex subunit TCF25 (Nuclear loca	
+TCF25	mus-musculus	Q8R3L2	Tcf25	Q8R3L2	0	17	Ribosome quality control complex subunit TCF25	
+TCF25	rattus-norvegicus	D3ZC46	Tcf25	D3ZC46	2	22	Transcription factor 25	
+TCF25_HUMAN	human	Q9BQ70	TCF25	Q9BQ70	18	129		
+TCF3	human	P0C1Z6	TFPT	P0C1Z6	44	264	TCF3 fusion partner (INO80 complex subunit F) (Protein FB1)	w
+TCF3	human	P15923	TCF3	P15923	130	329	Transcription factor E2-alpha (Class B basic helix-loop-heli	
+TCF3	human	Q9HCS4	TCF7L1	Q9HCS4	95	431		
+TCF3	mus-musculus	P15806	Tcf3	P15806	38	121	Transcription factor E2-alpha	
+TCF3	rattus-norvegicus	P21677	Tcf3	P21677	37	80	Transcription factor E2-alpha	
+TCF3	zebrafish	E7F3N6	tfpt	E7F3N6	7	78	TCF3 (E2A) fusion partner	w
+TCF3A	human	P55317	FOXA1	P55317	144	996		
+TCF3B	human	Q9Y261	FOXA2	Q9Y261	92	485		
+TCF3B	zebrafish	B1H1L4	tcf3b	B1H1L4	38	51	Transcription factor E2-alpha	
+TCF3G	human	P55318	FOXA3	P55318	101	479		
+TCF4	human	E9PH57	TCF4	E9PH57	48	163	Transcription factor 4	
+TCF4	human	P15884	TCF4	P15884	118	306	Transcription factor 4 (TCF-4) (Class B basic helix-loop-hel	
+TCF4	human	Q9NQB0	TCF7L2	Q9NQB0	48	320		
+TCF4	mus-musculus	Q60722	Tcf4	Q60722	19	68	Transcription factor 4	
+TCF4	rattus-norvegicus	Q62655	Tcf4	Q62655	29	70	Transcription factor 4	
+TCF5	human	P17676	CEBPB	P17676	189	664		
+TCF6	human	Q00059	TFAM	Q00059	53	727		
+TCF6L2	human	Q00059	TFAM	Q00059	53	727		
+TCF7	human	P36402	TCF7	P36402	87	438	Transcription factor 7 (TCF-7) (T-cell-specific transcriptio	
+TCF7	mus-musculus	Q00417	Tcf7	Q00417	9	58	Transcription factor 7	
+TCF7	rattus-norvegicus	D3ZLD0	Tcf7	D3ZLD0	10	57	Transcription factor 7	
+TCF7	zebrafish	A0AB32TAM6	tcf7	A0AB32TAM6	5	54	Transcription factor 7 isoform X12	
+TCF7L1	human	Q9HCS4	TCF7L1	Q9HCS4	95	431	Transcription factor 7-like 1 (HMG box transcription factor 	
+TCF7L1	mus-musculus	Q9Z1J1	Tcf7l1	Q9Z1J1	4	54	Transcription factor 7-like 1	
+TCF7L1	rattus-norvegicus	F1M1R9	Tcf7l1	F1M1R9	6	53	Transcription factor 7 like 1	
+TCF7L1A	zebrafish	Q9YHE8	tcf7l1a	Q9YHE8	6	49	Transcription factor 7-like 1-A	
+TCF7L1B	zebrafish	Q800Q5	tcf7l1b	Q800Q5	6	37	Transcription factor 7-like 1-B	
+TCF7L2	human	Q9NQB0	TCF7L2	Q9NQB0	48	320	Transcription factor 7-like 2 (HMG box transcription factor 	
+TCF7L2	mus-musculus	Q924A0	Tcf7l2	Q924A0	8	91	Transcription factor 7-like 2	
+TCF7L2	rattus-norvegicus	D3Z9D1	Tcf7l2	D3Z9D1	6	37	Transcription factor 7 like 2	
+TCF7L2	rattus-norvegicus	D4A8X6	Tcf7l2	D4A8X6	11	70	Transcription factor 7 like 2	
+TCF7L2	zebrafish	A0A8M1P7C7	tcf7l2	A0A8M1P7C7	7	47	Transcription factor 7-like 2	
+TCF7_HUMAN	human	P36402	TCF7	P36402	87	438		
+TCF8	human	P37275	ZEB1	P37275	49	286		
+TCF9	human	P16383	GCFC2	P16383	34	91		
+TCFB1	human	Q14863	POU6F1	Q14863	96	336		
+TCFEC	human	O14948	TFEC	O14948	106	419		
+TCFL1	human	Q15906	VPS72	Q15906	132	571		
+TCFL2	human	Q8N653	LZTR1	Q8N653	29	289		
+TCFL4	human	Q9UH92	MLX	Q9UH92	84	419		
+TCFL5	human	Q9UL49	TCFL5	Q9UL49	4	22	Transcription factor-like 5 protein (Cha transcription facto	
+TCFL5	mus-musculus	Q32NY8	Tcfl5	Q32NY8	0	2	Tcfl5 protein	
+TCFL5	rattus-norvegicus	A0A0G2JYQ8	Tcfl5	A0A0G2JYQ8	0	2	Transcription factor like 5	
+TCFL5_HUMAN	human	Q9UL49	TCFL5	Q9UL49	4	22		

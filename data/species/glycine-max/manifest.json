@@ -37,7 +37,8 @@
  "files": {
   "proteins": "proteins.json",
   "edges": "edges.tsv",
-  "biogridShards": 256
+  "biogridShards": 256,
+  "structsBoth": true
  },
  "ownTaxonOnly": true
 }

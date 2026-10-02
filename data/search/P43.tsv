@@ -1,308 +1,473 @@
-P43006	mus-musculus	P43006	Slc1a2	P43006	4	52	Excitatory amino acid transporter 2
-P43008	haemophilus-influenzae	P43008	exbB	P43008	3	4	Biopolymer transport protein ExbB
-P43009	haemophilus-influenzae	P43009	exbD	P43009	2	3	Biopolymer transport protein ExbD
-P43010	haemophilus-influenzae	P43010	pntB	P43010	1	1	NAD(P) transhydrogenase subunit beta
-P43012	haemophilus-influenzae	P43012	topA	P43012	0	24	DNA topoisomerase 1
-P43014	haemophilus-influenzae	P43014	thrS	P43014	3	58	Threonine--tRNA ligase
-P43015	salmonella-typhimurium	P43015	hilA	P43015	0	1	Transcriptional regulator HilA
-P43019	salmonella-typhimurium	P43019	sodA	P43019	1	90	Superoxide dismutase
-P43020	salmonella-typhimurium	P43020	yiiZ	P43020	0	1	Uncharacterized protein YiiZ
-P43021	mus-musculus	P43021	Nodal	P43021	9	20	Nodal
-P43023	mus-musculus	P43023	Cox6a2	P43023	13	117	Cytochrome c oxidase subunit 6A2, mitochondrial
-P43024	mus-musculus	P43024	Cox6a1	P43024	13	131	Cytochrome c oxidase subunit 6A1, mitochondrial
-P43025	mus-musculus	P43025	Clec3b	P43025	0	11	Tetranectin
-P43027	mus-musculus	P43027	Gdf5	P43027	14	35	Growth/differentiation factor 5
-P43028	mus-musculus	P43028	Gdf6	P43028	4	9	Growth/differentiation factor 6
-P43029	mus-musculus	P43029	Gdf7	P43029	6	15	Growth/differentiation factor 7
-P43063	candida-albicans-237561	P43063	CDC28	P43063	17	87	Cyclin-dependent kinase 1
-P43065	candida-albicans-237561	P43065	LYS1	P43065	0	2	Saccharopine dehydrogenase
-P43069	candida-albicans-237561	P43069	CDC25	P43069	2	8	Cell division control protein 25
-P43072	candida-albicans-237561	P43072	TDS4	P43072	7	32	Transcription factor IIIB 70 kDa subunit
-P43073	candida-albicans-237561	P43073	TRP1	P43073	0	3	N-(5'-phosphoribosyl)anthranilate isomerase
-P43076	candida-albicans-237561	P43076	PHR1	P43076	0	2	pH-responsive protein 1
-P43079	candida-albicans-237561	P43079	CPH1	P43079	2	12	Transcription factor CPH1
-P43081	mus-musculus	P43081	Guca1a	P43081	0	9	Guanylyl cyclase-activating protein 1
-P43082	arabidopsis-thaliana	P43082	HEL	P43082	0	2	Hevein-like preproprotein
-P43114	rattus-norvegicus	P43114	Ptger4	P43114	3	15	Prostaglandin E2 receptor EP4 subtype
-P43117	mus-musculus	P43117	Ptgfr	P43117	0	2	Prostaglandin F2-alpha receptor
-P43118	rattus-norvegicus	P43118	Ptgfr	P43118	0	2	Prostaglandin F2-alpha receptor
-P43120	mus-musculus	P43120	Hhex	P43120	3	12	Hematopoietically-expressed homeobox protein Hhex
-P43135	mus-musculus	P43135	Nr2f2	P43135	4	23	COUP transcription factor 2
-P43136	mus-musculus	P43136	Nr2f6	P43136	1	12	Nuclear receptor subfamily 2 group F member 6
-P43137	mus-musculus	P43137	Reg1	P43137	0	5	Lithostathine-1
-P43138	rattus-norvegicus	P43138	Apex1	P43138	2	96	DNA repair nuclease/redox regulator APEX1
-P43140	rattus-norvegicus	P43140	Adra1a	P43140	4	22	Alpha-1A adrenergic receptor
-P43142	mus-musculus	P43142	Gpr182	P43142	0	4	G-protein coupled receptor 182
-P43143	rattus-norvegicus	P43143	Chrna6	P43143	14	17	Neuronal acetylcholine receptor subunit alpha-6
-P43144	rattus-norvegicus	P43144	Chrna9	P43144	14	18	Neuronal acetylcholine receptor subunit alpha-9
-P43145	rattus-norvegicus	P43145	Adm	P43145	2	28	Pro-adrenomedullin
-P43165	rattus-norvegicus	P43165	Ca5a	P43165	0	5	Carbonic anhydrase 5A, mitochondrial
-P43188	zea-mays	P43188	ADK1	P43188	0	7	Adenylate kinase, chloroplastic
-P43219	rattus-norvegicus	P43219	Gipr	P43219	4	29	Gastric inhibitory polypeptide receptor
-P43241	mus-musculus	P43241	Cdx2	P43241	4	69	Homeobox protein CDX-2
-P43244	rattus-norvegicus	P43244	Matr3	P43244	5	63	Matrin-3
-P43247	mus-musculus	P43247	Msh2	P43247	14	71	DNA mismatch repair protein Msh2
-P43252	mus-musculus	P43252	Ptgir	P43252	2	23	Prostacyclin receptor
-P43253	rattus-norvegicus	P43253	Ptgir	P43253	2	6	Prostacyclin receptor
-P43254	arabidopsis-thaliana	P43254	COP1	P43254	49	387	E3 ubiquitin-protein ligase COP1
-P43255	arabidopsis-thaliana	P43255	CSN8	P43255	8	50	COP9 signalosome complex subunit 8
-P43256	arabidopsis-thaliana	P43256	HMG2	P43256	1	9	3-hydroxy-3-methylglutaryl-coenzyme A reductase 2
-P43267	mus-musculus	P43267	Sox15	P43267	1	13	Transcription factor SOX-15
-P43273	arabidopsis-thaliana	P43273	TGA2	P43273	13	259	Transcription factor TGA2
-P43274	mus-musculus	P43274	H1-4	P43274	2	45	Histone H1.4
-P43275	mus-musculus	P43275	H1-1	P43275	1	36	Histone H1.1
-P43276	mus-musculus	P43276	H1-5	P43276	0	19	Histone H1.5
-P43277	mus-musculus	P43277	H1-3	P43277	0	20	Histone H1.3
-P43279	oryza-sativa-subsp-japonica	P43279	ME6	P43279	0	5	NADP-dependent malic enzyme, chloroplastic
-P43283	zea-mays	P43283	TSB1	P43283	5	11	Tryptophan synthase beta chain 1
-P43284	zea-mays	P43284	TSB2	P43284	5	11	Tryptophan synthase beta chain 2, chloroplastic
-P43286	arabidopsis-thaliana	P43286	PIP2-1	P43286	19	293	Aquaporin PIP2-1
-P43287	arabidopsis-thaliana	P43287	PIP2-2	P43287	6	14	Aquaporin PIP2-2
-P43288	arabidopsis-thaliana	P43288	ASK1	P43288	0	37	Shaggy-related protein kinase alpha
-P43289	arabidopsis-thaliana	P43289	ASK3	P43289	0	37	Shaggy-related protein kinase gamma
-P43291	arabidopsis-thaliana	P43291	SRK2A	P43291	0	43	Serine/threonine-protein kinase SRK2A
-P43292	arabidopsis-thaliana	P43292	SRK2G	P43292	1	29	Serine/threonine-protein kinase SRK2G
-P43294	arabidopsis-thaliana	P43294	MHK	P43294	0	15	Serine/threonine-protein kinase MHK
-P43295	arabidopsis-thaliana	P43295	RD19B	P43295	0	1	Probable cysteine protease RD19B
-P43296	arabidopsis-thaliana	P43296	RD19A	P43296	0	1	Cysteine protease RD19A
-P43297	arabidopsis-thaliana	P43297	RD21A	P43297	7	119	Cysteine proteinase RD21A
-P43298	arabidopsis-thaliana	P43298	TMK1	P43298	1	57	Receptor protein kinase TMK1
-P43299	arabidopsis-thaliana	P43299	MCM7	P43299	1	112	DNA replication licensing factor MCM7
-P43300	mus-musculus	P43300	Egr3	P43300	1	10	Early growth response protein 3
-P43301	rattus-norvegicus	P43301	Egr3	P43301	1	13	Early growth response protein 3
-P43303	rattus-norvegicus	P43303	Il1r2	P43303	8	27	Interleukin-1 receptor type 2
-P43312	helicobacter-pylori	P43312	sodB	P43312	0	59	Superoxide dismutase
-P43313	helicobacter-pylori	P43313	dps	P43313	0	8	DNA protection during starvation protein
-P43315	mycobacterium-leprae	P43315	bfr	P43315	0	2	Bacterioferritin
-P43322	rattus-norvegicus	P43322	Nrg1	P43322	6	30	Pro-neuregulin-1, membrane-bound isoform
-P43329	escherichia-coli-83333	P43329	hrpA	P43329	0	51	ATP-dependent RNA helicase HrpA
-P43333	arabidopsis-thaliana	P43333	U2A	P43333	25	240	U2 small nuclear ribonucleoprotein A
-P43335	pseudomonas-aeruginosa	P43335	phhB	P43335	0	3	Pterin-4-alpha-carbinolamine dehydratase
-P43336	pseudomonas-aeruginosa	P43336	phhC	P43336	1	19	Aromatic-amino-acid aminotransferase
-P43345	mus-musculus	P43345	Tlx1	P43345	6	14	T-cell leukemia homeobox protein 1
-P43346	mus-musculus	P43346	Dck	P43346	0	57	Deoxycytidine kinase
-P43352	mus-musculus	P43352	Rad52	P43352	3	63	DNA repair protein RAD52 homolog
-P43404	mus-musculus	P43404	Zap70	P43404	10	113	Tyrosine-protein kinase ZAP-70
-P43406	mus-musculus	P43406	Itgav	P43406	15	117	Integrin alpha-V
-P43407	mus-musculus	P43407	Sdc2	P43407	3	27	Syndecan-2
-P43409	methanocaldococcus-jannaschii	P43409	adkA	P43409	0	1	Adenylate kinase
-P43424	rattus-norvegicus	P43424	Galt	P43424	0	5	Galactose-1-phosphate uridylyltransferase
-P43425	rattus-norvegicus	P43425	Gng7	P43425	12	91	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit gamma-7
-P43428	rattus-norvegicus	P43428	G6pc1	P43428	0	8	Glucose-6-phosphatase catalytic subunit 1
-P43429	rattus-norvegicus	P43429	Gata1	P43429	6	85	Erythroid transcription factor
-P43431	mus-musculus	P43431	Il12a	P43431	4	9	Interleukin-12 subunit alpha
-P43432	mus-musculus	P43432	Il12b	P43432	6	23	Interleukin-12 subunit beta
-P43488	mus-musculus	P43488	Tnfsf4	P43488	9	31	Tumor necrosis factor ligand superfamily member 4
-P43501	pseudomonas-aeruginosa	P43501	pilH	P43501	0	81	Protein PilH
-P43502	pseudomonas-aeruginosa	P43502	pilI	P43502	23	48	Protein PilI
-P43527	rattus-norvegicus	P43527	Casp1	P43527	14	90	Caspase-1
-P43533	escherichia-coli-83333	P43533	flgN	P43533	2	9	Flagella synthesis protein FlgN
-P43660	salmonella-typhimurium	P43660	lpfA	P43660	10	24	Long polar fimbria protein A
-P43661	salmonella-typhimurium	P43661	lpfB	P43661	36	39	Chaperone protein LpfB
-P43662	salmonella-typhimurium	P43662	lpfC	P43662	13	26	Outer membrane usher protein LpfC
-P43663	salmonella-typhimurium	P43663	lpfD	P43663	13	13	Protein LpfD
-P43664	salmonella-typhimurium	P43664	lpfE	P43664	13	24	Protein LpfE
-P43667	escherichia-coli-83333	P43667	ygaH	P43667	1	1	Uncharacterized protein YgaH
-P43669	salmonella-typhimurium	P43669	prc	P43669	1	7	Tail-specific protease
-P43672	escherichia-coli-83333	P43672	uup	P43672	2	52	ATP-binding protein Uup
-P43674	escherichia-coli-83333	P43674	ycaL	P43674	0	2	Metalloprotease YcaL
-P43676	escherichia-coli-83333	P43676	pitB	P43676	0	1	Low-affinity inorganic phosphate transporter PitB
-P43680	mus-musculus	P43680	Sox18	P43680	0	7	Transcription factor SOX-18
-P43687	mus-musculus	P43687	Hmx2	P43687	1	12	Homeobox protein HMX2
-P43700	haemophilus-influenzae	P43700	gyrA	P43700	3	6	DNA gyrase subunit A
-P43701	haemophilus-influenzae	P43701	gyrB	P43701	2	7	DNA gyrase subunit B
-P43702	haemophilus-influenzae	P43702	parC	P43702	3	6	DNA topoisomerase 4 subunit A
-P43703	haemophilus-influenzae	P43703	parE	P43703	2	7	DNA topoisomerase 4 subunit B
-P43704	haemophilus-influenzae	P43704	topB	P43704	0	8	DNA topoisomerase 3
-P43705	haemophilus-influenzae	P43705	recA	P43705	0	40	Protein RecA
-P43706	haemophilus-influenzae	P43706	recX	P43706	0	5	Regulatory protein RecX
-P43709	haemophilus-influenzae	P43709	acpP	P43709	22	91	Acyl carrier protein
-P43710	haemophilus-influenzae	P43710	fabB	P43710	1	8	3-oxoacyl-
-P43711	haemophilus-influenzae	P43711	fabH	P43711	0	5	Beta-ketoacyl-
-P43712	haemophilus-influenzae	P43712	fabD	P43712	3	28	Malonyl CoA-acyl carrier protein transacylase
-P43713	haemophilus-influenzae	P43713	fabG	P43713	1	29	3-oxoacyl-
-P43714	haemophilus-influenzae	P43714	atpA	P43714	1	25	ATP synthase subunit alpha
-P43715	haemophilus-influenzae	P43715	atpD	P43715	1	22	ATP synthase subunit beta
-P43716	haemophilus-influenzae	P43716	atpG	P43716	1	15	ATP synthase gamma chain
-P43717	haemophilus-influenzae	P43717	atpH	P43717	0	16	ATP synthase subunit delta
-P43718	haemophilus-influenzae	P43718	atpC	P43718	1	14	ATP synthase epsilon chain
-P43719	haemophilus-influenzae	P43719	atpB	P43719	2	11	ATP synthase subunit a
-P43720	haemophilus-influenzae	P43720	atpF	P43720	1	9	ATP synthase subunit b
-P43721	haemophilus-influenzae	P43721	atpE	P43721	2	15	ATP synthase subunit c
-P43722	haemophilus-influenzae	P43722	hup	P43722	1	2	DNA-binding protein HU
-P43723	haemophilus-influenzae	P43723	ihfA	P43723	2	3	Integration host factor subunit alpha
-P43724	haemophilus-influenzae	P43724	ihfB	P43724	1	2	Integration host factor subunit beta
-P43725	haemophilus-influenzae	P43725	sodA	P43725	1	54	Superoxide dismutase
-P43726	haemophilus-influenzae	P43726	pgk	P43726	0	13	Phosphoglycerate kinase
-P43727	haemophilus-influenzae	P43727	tpiA	P43727	0	7	Triosephosphate isomerase
-P43728	haemophilus-influenzae	P43728	era	P43728	0	14	GTPase Era
-P43729	haemophilus-influenzae	P43729	lepA	P43729	0	54	Elongation factor 4
-P43730	haemophilus-influenzae	P43730	mnmE	P43730	1	29	tRNA modification GTPase MnmE
-P43731	haemophilus-influenzae	P43731	ung	P43731	0	3	Uracil-DNA glycosylase
-P43732	haemophilus-influenzae	P43732	grpE	P43732	1	11	Protein GrpE
-P43733	haemophilus-influenzae	P43733	groEL	P43733	1	37	Chaperonin GroEL
-P43734	haemophilus-influenzae	P43734	groES	P43734	1	11	Co-chaperonin GroES
-P43735	haemophilus-influenzae	P43735	dnaJ	P43735	2	101	Chaperone protein DnaJ
-P43736	haemophilus-influenzae	P43736	dnaK	P43736	6	64	Chaperone protein DnaK
-P43738	haemophilus-influenzae	P43738	rpoB	P43738	4	106	DNA-directed RNA polymerase subunit beta
-P43739	haemophilus-influenzae	P43739	rpoC	P43739	8	89	DNA-directed RNA polymerase subunit beta
-P43740	haemophilus-influenzae	P43740	rpoZ	P43740	5	87	DNA-directed RNA polymerase subunit omega
-P43741	haemophilus-influenzae	P43741	polA	P43741	1	33	DNA polymerase I
-P43742	haemophilus-influenzae	P43742	dnaA	P43742	1	9	Chromosomal replication initiator protein DnaA
-P43743	haemophilus-influenzae	P43743	dnaE	P43743	2	10	DNA polymerase III subunit alpha
-P43744	haemophilus-influenzae	P43744	dnaN	P43744	8	29	Beta sliding clamp
-P43746	haemophilus-influenzae	P43746	dnaX	P43746	6	16	DNA polymerase III subunit tau/gamma
-P43747	haemophilus-influenzae	P43747	holA	P43747	3	7	DNA polymerase III subunit delta
-P43748	haemophilus-influenzae	P43748	holB	P43748	4	16	DNA polymerase III subunit delta
-P43749	haemophilus-influenzae	P43749	holC	P43749	2	9	DNA polymerase III subunit chi
-P43750	haemophilus-influenzae	P43750	holD	P43750	1	7	DNA polymerase III subunit psi
-P43752	haemophilus-influenzae	P43752	nrdD	P43752	1	7	Anaerobic ribonucleoside-triphosphate reductase
-P43753	haemophilus-influenzae	P43753	pflB	P43753	1	1	Formate acetyltransferase
-P43754	haemophilus-influenzae	P43754	nrdA	P43754	1	4	Ribonucleoside-diphosphate reductase subunit alpha
-P43755	haemophilus-influenzae	P43755	nrdB	P43755	1	2	Ribonucleoside-diphosphate reductase subunit beta
-P43757	haemophilus-influenzae	P43757	tktA	P43757	0	9	Transketolase
-P43758	haemophilus-influenzae	P43758	dksA	P43758	0	6	RNA polymerase-binding transcription factor DksA
-P43759	haemophilus-influenzae	P43759	trpA	P43759	1	2	Tryptophan synthase alpha chain
-P43760	haemophilus-influenzae	P43760	trpB	P43760	1	3	Tryptophan synthase beta chain
-P43761	haemophilus-influenzae	P43761	trpE	P43761	2	5	Anthranilate synthase component 1
-P43762	haemophilus-influenzae	P43762	metK	P43762	0	7	S-adenosylmethionine synthase
-P43764	haemophilus-influenzae	P43764	tsaD	P43764	2	4	tRNA N6-adenosine threonylcarbamoyltransferase
-P43766	haemophilus-influenzae	P43766	rpoD	P43766	2	25	RNA polymerase sigma factor RpoD
-P43767	haemophilus-influenzae	P43767	recF	P43767	1	6	DNA replication and repair protein RecF
-P43768	haemophilus-influenzae	P43768	tolQ	P43768	3	5	Tol-Pal system protein TolQ
-P43769	haemophilus-influenzae	P43769	tolR	P43769	2	4	Tol-Pal system protein TolR
-P43771	haemophilus-influenzae	P43771	efp	P43771	5	63	Elongation factor P
-P43772	haemophilus-influenzae	P43772	hslV	P43772	0	5	ATP-dependent protease subunit HslV
-P43773	haemophilus-influenzae	P43773	hslU	P43773	0	5	ATP-dependent protease ATPase subunit HslU
-P43774	haemophilus-influenzae	P43774	gnd	P43774	0	1	6-phosphogluconate dehydrogenase, decarboxylating
-P43778	haemophilus-influenzae	P43778	accD	P43778	1	5	Acetyl-coenzyme A carboxylase carboxyl transferase subunit beta
-P43780	haemophilus-influenzae	P43780	bolA	P43780	2	2	DNA-binding transcriptional regulator BolA
-P43783	haemophilus-influenzae	P43783	gor	P43783	0	18	Glutathione reductase
-P43784	haemophilus-influenzae	P43784	lpdA	P43784	1	18	Dihydrolipoyl dehydrogenase
-P43785	haemophilus-influenzae	P43785	trxA	P43785	1	13	Thioredoxin
-P43786	haemophilus-influenzae	P43786	HI_1159	P43786	0	10	Uncharacterized protein HI_1159
-P43787	haemophilus-influenzae	P43787	HI_1115	P43787	2	35	Thioredoxin-like protein HI_1115
-P43788	haemophilus-influenzae	P43788	trxB	P43788	0	15	Thioredoxin reductase
-P43790	haemophilus-influenzae	P43790	yceD	P43790	1	1	Large ribosomal RNA subunit accumulation protein YceD
-P43791	haemophilus-influenzae	P43791	folA	P43791	0	4	Dihydrofolate reductase
-P43792	haemophilus-influenzae	P43792	dut	P43792	0	2	Deoxyuridine 5'-triphosphate nucleotidohydrolase
-P43793	haemophilus-influenzae	P43793	gdhA	P43793	0	2	NADP-specific glutamate dehydrogenase
-P43794	haemophilus-influenzae	P43794	glnA	P43794	0	13	Glutamine synthetase
-P43795	haemophilus-influenzae	P43795	glnB	P43795	0	1	Nitrogen regulatory protein P-II
-P43796	haemophilus-influenzae	P43796	glgC	P43796	0	1	Glucose-1-phosphate adenylyltransferase
-P43798	haemophilus-influenzae	P43798	gpsA	P43798	0	3	Glycerol-3-phosphate dehydrogenase
-P43799	haemophilus-influenzae	P43799	glpA	P43799	2	4	Anaerobic glycerol-3-phosphate dehydrogenase subunit A
-P43800	haemophilus-influenzae	P43800	glpB	P43800	2	2	Anaerobic glycerol-3-phosphate dehydrogenase subunit B
-P43801	haemophilus-influenzae	P43801	glpC	P43801	2	5	Anaerobic glycerol-3-phosphate dehydrogenase subunit C
-P43802	haemophilus-influenzae	P43802	ndk	P43802	3	55	Nucleoside diphosphate kinase
-P43803	haemophilus-influenzae	P43803	secA	P43803	2	44	Protein translocase subunit SecA
-P43804	haemophilus-influenzae	P43804	secY	P43804	3	70	Protein translocase subunit SecY
-P43805	haemophilus-influenzae	P43805	secE	P43805	1	58	Protein translocase subunit SecE
-P43807	haemophilus-influenzae	P43807	rnhA	P43807	1	5	Ribonuclease HI
-P43808	haemophilus-influenzae	P43808	rnhB	P43808	0	14	Ribonuclease HII
-P43809	haemophilus-influenzae	P43809	recG	P43809	0	1	ATP-dependent DNA helicase RecG
-P43811	haemophilus-influenzae	P43811	spoT	P43811	0	51	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase
-P43812	haemophilus-influenzae	P43812	pyrF	P43812	0	2	Orotidine 5'-phosphate decarboxylase
-P43813	haemophilus-influenzae	P43813	ligA	P43813	0	6	DNA ligase
-P43814	haemophilus-influenzae	P43814	infC	P43814	2	19	Translation initiation factor IF-3
-P43815	haemophilus-influenzae	P43815	alaS	P43815	0	7	Alanine--tRNA ligase
-P43816	haemophilus-influenzae	P43816	cysS	P43816	0	7	Cysteine--tRNA ligase
-P43817	haemophilus-influenzae	P43817	aspS	P43817	0	6	Aspartate--tRNA ligase
-P43818	haemophilus-influenzae	P43818	gltX	P43818	1	63	Glutamate--tRNA ligase
-P43819	haemophilus-influenzae	P43819	pheS	P43819	1	3	Phenylalanine--tRNA ligase alpha subunit
-P43820	haemophilus-influenzae	P43820	pheT	P43820	3	41	Phenylalanine--tRNA ligase beta subunit
-P43821	haemophilus-influenzae	P43821	glyQ	P43821	1	3	Glycine--tRNA ligase alpha subunit
-P43822	haemophilus-influenzae	P43822	glyS	P43822	1	1	Glycine--tRNA ligase beta subunit
-P43823	haemophilus-influenzae	P43823	hisS	P43823	0	11	Histidine--tRNA ligase
-P43825	haemophilus-influenzae	P43825	lysS	P43825	1	18	Lysine--tRNA ligase
-P43826	haemophilus-influenzae	P43826	epmA	P43826	1	1	Elongation factor P--(R)-beta-lysine ligase
-P43827	haemophilus-influenzae	P43827	leuS	P43827	0	21	Leucine--tRNA ligase
-P43828	haemophilus-influenzae	P43828	metG	P43828	0	31	Methionine--tRNA ligase
-P43829	haemophilus-influenzae	P43829	asnS	P43829	1	10	Asparagine--tRNA ligase
-P43830	haemophilus-influenzae	P43830	proS	P43830	0	14	Proline--tRNA ligase
-P43831	haemophilus-influenzae	P43831	glnS	P43831	0	62	Glutamine--tRNA ligase
-P43832	haemophilus-influenzae	P43832	argS	P43832	0	15	Arginine--tRNA ligase
-P43833	haemophilus-influenzae	P43833	serS	P43833	0	7	Serine--tRNA ligase
-P43834	haemophilus-influenzae	P43834	valS	P43834	0	9	Valine--tRNA ligase
-P43835	haemophilus-influenzae	P43835	trpS	P43835	0	6	Tryptophan--tRNA ligase
-P43837	haemophilus-influenzae	P43837	maeB	P43837	0	6	NADP-dependent malic enzyme
-P43839	haemophilus-influenzae	P43839	ompP2	P43839	1	12	Outer membrane protein P2
-P43840	haemophilus-influenzae	P43840	ompA	P43840	1	77	Outer membrane protein P5
-P43842	haemophilus-influenzae	P43842	pntA	P43842	1	1	NAD(P) transhydrogenase subunit alpha
-P43844	haemophilus-influenzae	P43844	glyA	P43844	0	14	Serine hydroxymethyltransferase
-P43845	haemophilus-influenzae	P43845	purD	P43845	0	4	Phosphoribosylamine--glycine ligase
-P43846	haemophilus-influenzae	P43846	purN	P43846	0	4	Phosphoribosylglycinamide formyltransferase
-P43848	haemophilus-influenzae	P43848	purM	P43848	0	1	Phosphoribosylformylglycinamidine cyclo-ligase
-P43851	haemophilus-influenzae	P43851	purC	P43851	0	4	Phosphoribosylaminoimidazole-succinocarboxamide synthase
-P43852	haemophilus-influenzae	P43852	purH	P43852	0	6	Bifunctional purine biosynthesis protein PurH
-P43853	haemophilus-influenzae	P43853	hisG	P43853	0	1	ATP phosphoribosyltransferase
-P43854	haemophilus-influenzae	P43854	purF	P43854	0	3	Amidophosphoribosyltransferase
-P43855	haemophilus-influenzae	P43855	pyrE	P43855	0	2	Orotate phosphoribosyltransferase
-P43856	haemophilus-influenzae	P43856	apt	P43856	0	2	Adenine phosphoribosyltransferase
-P43857	haemophilus-influenzae	P43857	upp	P43857	0	1	Uracil phosphoribosyltransferase
-P43858	haemophilus-influenzae	P43858	trpD	P43858	0	4	Anthranilate phosphoribosyltransferase
-P43859	haemophilus-influenzae	P43859	gpt1	P43859	0	2	Xanthine-guanine phosphoribosyltransferase
-P43860	haemophilus-influenzae	P43860	leuB	P43860	0	7	3-isopropylmalate dehydrogenase
-P43861	haemophilus-influenzae	P43861	leuA	P43861	0	6	2-isopropylmalate synthase
-P43862	haemophilus-influenzae	P43862	dprA	P43862	0	2	DNA-processing protein A
-P43863	haemophilus-influenzae	P43863	pfkA	P43863	0	4	ATP-dependent 6-phosphofructokinase
-P43864	haemophilus-influenzae	P43864	lon	P43864	0	4	Lon protease
-P43867	haemophilus-influenzae	P43867	clpP	P43867	0	8	ATP-dependent Clp protease proteolytic subunit
-P43868	haemophilus-influenzae	P43868	hemH	P43868	0	3	Ferrochelatase
-P43869	haemophilus-influenzae	P43869	proC	P43869	0	3	Pyrroline-5-carboxylate reductase
-P43872	haemophilus-influenzae	P43872	accA	P43872	1	4	Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha
-P43873	haemophilus-influenzae	P43873	accC	P43873	0	7	Biotin carboxylase
-P43874	haemophilus-influenzae	P43874	accB	P43874	0	8	Biotin carboxyl carrier protein of acetyl-CoA carboxylase
-P43875	haemophilus-influenzae	P43875	aroC	P43875	0	3	Chorismate synthase
-P43876	haemophilus-influenzae	P43876	aroE	P43876	0	2	Shikimate dehydrogenase (NADP(+))
-P43879	haemophilus-influenzae	P43879	aroB	P43879	0	3	3-dehydroquinate synthase
-P43881	haemophilus-influenzae	P43881	greA	P43881	1	3	Transcription elongation factor GreA
-P43882	haemophilus-influenzae	P43882	greB	P43882	0	3	Transcription elongation factor GreB
-P43883	mus-musculus	P43883	Plin2	P43883	2	32	Perilipin-2
-P43884	rattus-norvegicus	P43884	Plin1	P43884	1	15	Perilipin-1
-P43885	haemophilus-influenzae	P43885	serA	P43885	0	20	D-3-phosphoglycerate dehydrogenase
-P43886	haemophilus-influenzae	P43886	cysE	P43886	0	1	Serine acetyltransferase
-P43887	haemophilus-influenzae	P43887	lpxA	P43887	0	3	Acyl-
-P43888	haemophilus-influenzae	P43888	lpxD	P43888	0	2	UDP-3-O-acylglucosamine N-acyltransferase
-P43889	haemophilus-influenzae	P43889	glmU	P43889	0	2	Bifunctional protein GlmU
-P43890	haemophilus-influenzae	P43890	pyrH	P43890	0	1	Uridylate kinase
-P43894	haemophilus-influenzae	P43894	tsf	P43894	1	7	Elongation factor Ts
-P43898	pseudomonas-aeruginosa	P43898	hemF	P43898	0	2	Oxygen-dependent coproporphyrinogen-III oxidase
-P43900	haemophilus-influenzae	P43900	pheA	P43900	1	16	Bifunctional chorismate mutase/prephenate dehydratase
-P43902	haemophilus-influenzae	P43902	tyrA	P43902	1	14	T-protein
-P43904	pseudomonas-aeruginosa	P43904	aroE	P43904	0	10	Shikimate dehydrogenase (NADP(+))
-P43910	haemophilus-influenzae	P43910	selA	P43910	0	1	L-seryl-tRNA(Sec) selenium transferase
-P43912	haemophilus-influenzae	P43912	trmD	P43912	0	2	tRNA (guanine-N(1)-)-methyltransferase
-P43913	haemophilus-influenzae	P43913	xseA	P43913	0	2	Exodeoxyribonuclease 7 large subunit
-P43914	haemophilus-influenzae	P43914	xseB	P43914	0	1	Exodeoxyribonuclease 7 small subunit
-P43915	haemophilus-influenzae	P43915	nusA	P43915	7	62	Transcription termination/antitermination protein NusA
-P43916	haemophilus-influenzae	P43916	nusG	P43916	5	56	Transcription termination/antitermination protein NusG
-P43917	haemophilus-influenzae	P43917	prfA	P43917	1	59	Peptide chain release factor 1
-P43921	haemophilus-influenzae	P43921	ptsH	P43921	2	11	Phosphocarrier protein HPr
-P43922	haemophilus-influenzae	P43922	ptsI	P43922	1	5	Phosphoenolpyruvate-protein phosphotransferase
-P43923	haemophilus-influenzae	P43923	pckA	P43923	0	1	Phosphoenolpyruvate carboxykinase (ATP)
-P43924	haemophilus-influenzae	P43924	pykA	P43924	0	50	Pyruvate kinase
-P43925	haemophilus-influenzae	P43925	fusA	P43925	0	89	Elongation factor G
-P43926	haemophilus-influenzae	P43926	tufA	P43926	1	68	Elongation factor Tu
-P43927	haemophilus-influenzae	P43927	selB	P43927	0	67	Selenocysteine-specific elongation factor
-P43928	haemophilus-influenzae	P43928	prfC	P43928	1	53	Peptide chain release factor 3
-P43930	haemophilus-influenzae	P43930	HI_0042	P43930	2	41	Uncharacterized RNA pseudouridine synthase HI_0042
-P43937	haemophilus-influenzae	P43937	HI_0082	P43937	0	8	Uncharacterized protein HI_0082
-P43939	haemophilus-influenzae	P43939	HI_0094	P43939	2	58	Uncharacterized protein HI_0094
-P43940	haemophilus-influenzae	P43940	HI_0096	P43940	0	4	Uncharacterized protein HI_0096
-P43948	haemophilus-influenzae	P43948	mpl	P43948	0	1	UDP-N-acetylmuramate--L-alanyl-gamma-D-glutamyl-meso-2,6-diaminoheptandioate lig
-P43951	haemophilus-influenzae	P43951	HI_0131	P43951	1	6	Uncharacterized protein HI_0131
-P43954	haemophilus-influenzae	P43954	HI_0152	P43954	1	1	Putative 4'-phosphopantetheinyl transferase HI_0152
-P43955	haemophilus-influenzae	P43955	nqrA	P43955	2	5	Na(+)-translocating NADH-quinone reductase subunit A
-P43957	haemophilus-influenzae	P43957	nqrC	P43957	1	5	Na(+)-translocating NADH-quinone reductase subunit C
-P43958	haemophilus-influenzae	P43958	nqrD	P43958	2	5	Na(+)-translocating NADH-quinone reductase subunit D
-P43972	haemophilus-influenzae	P43972	HI_0246	P43972	0	1	Uncharacterized protein HI_0246
-P43973	haemophilus-influenzae	P43973	HI_0256	P43973	1	3	Outer membrane protein assembly factor BamC homolog
-P43979	haemophilus-influenzae	P43979	HI_0291	P43979	0	1	Uncharacterized protein HI_0291
-P43980	haemophilus-influenzae	P43980	HI_0304	P43980	0	1	UPF0301 protein HI_0304
-P43987	haemophilus-influenzae	P43987	priC	P43987	0	2	Replication restart protein PriC
-P43988	haemophilus-influenzae	P43988	HI_0366	P43988	1	3	Uncharacterized protein HI_0366
-P43990	haemophilus-influenzae	P43990	tsaB	P43990	2	2	tRNA threonylcarbamoyladenosine biosynthesis protein TsaB
-P43995	haemophilus-influenzae	P43995	tacA	P43995	0	2	Orphan antixoxin protein TacA
-P43998	haemophilus-influenzae	P43998	HI_0451	P43998	1	1	Uncharacterized protein HI_0451
-P43999	haemophilus-influenzae	P43999	HI_0453	P43999	0	2	Uncharacterized protein HI_0453
+P43003	human	P43003	SLC1A3	P43003	10	184	Excitatory amino acid transporter 1 (Sodium-dependent glutam	
+P43004	human	P43004	SLC1A2	P43004	8	124	Excitatory amino acid transporter 2 (Glutamate/aspartate tra	
+P43005	human	P43005	SLC1A1	P43005	16	236	Excitatory amino acid transporter 3 (Excitatory amino-acid c	
+P43006	mus-musculus	P43006	Slc1a2	P43006	4	52	Excitatory amino acid transporter 2	
+P43007	human	P43007	SLC1A4	P43007	8	83	Neutral amino acid transporter A (Alanine/serine/cysteine/th	
+P43008	haemophilus-influenzae	P43008	exbB	P43008	3	4	Biopolymer transport protein ExbB	
+P43009	haemophilus-influenzae	P43009	exbD	P43009	2	3	Biopolymer transport protein ExbD	
+P43010	haemophilus-influenzae	P43010	pntB	P43010	1	1	NAD(P) transhydrogenase subunit beta	
+P43012	haemophilus-influenzae	P43012	topA	P43012	0	24	DNA topoisomerase 1	
+P43014	haemophilus-influenzae	P43014	thrS	P43014	3	58	Threonine--tRNA ligase	
+P43015	salmonella-typhimurium	P43015	hilA	P43015	0	1	Transcriptional regulator HilA	
+P43019	salmonella-typhimurium	P43019	sodA	P43019	1	90	Superoxide dismutase	
+P43020	salmonella-typhimurium	P43020	yiiZ	P43020	0	1	Uncharacterized protein YiiZ	
+P43021	mus-musculus	P43021	Nodal	P43021	9	20	Nodal	
+P43023	mus-musculus	P43023	Cox6a2	P43023	13	117	Cytochrome c oxidase subunit 6A2, mitochondrial	
+P43024	mus-musculus	P43024	Cox6a1	P43024	13	131	Cytochrome c oxidase subunit 6A1, mitochondrial	
+P43025	mus-musculus	P43025	Clec3b	P43025	0	11	Tetranectin	
+P43026	human	P43026	GDF5	P43026	26	94	Growth/differentiation factor 5 (GDF-5) (Bone morphogenetic 	
+P43027	mus-musculus	P43027	Gdf5	P43027	14	35	Growth/differentiation factor 5	
+P43028	mus-musculus	P43028	Gdf6	P43028	4	9	Growth/differentiation factor 6	
+P43029	mus-musculus	P43029	Gdf7	P43029	6	15	Growth/differentiation factor 7	
+P43034	human	P43034	PAFAH1B1	P43034	29	313	Platelet-activating factor acetylhydrolase IB subunit beta (	
+P43063	candida-albicans-237561	P43063	CDC28	P43063	17	87	Cyclin-dependent kinase 1	
+P43065	candida-albicans-237561	P43065	LYS1	P43065	0	2	Saccharopine dehydrogenase	
+P43069	candida-albicans-237561	P43069	CDC25	P43069	2	8	Cell division control protein 25	
+P43072	candida-albicans-237561	P43072	TDS4	P43072	7	32	Transcription factor IIIB 70 kDa subunit	
+P43073	candida-albicans-237561	P43073	TRP1	P43073	0	3	N-(5'-phosphoribosyl)anthranilate isomerase	
+P43076	candida-albicans-237561	P43076	PHR1	P43076	0	2	pH-responsive protein 1	
+P43079	candida-albicans-237561	P43079	CPH1	P43079	2	12	Transcription factor CPH1	
+P43080	human	P43080	GUCA1A	P43080	5	145	Guanylyl cyclase-activating protein 1 (GCAP 1) (Guanylate cy	
+P43081	mus-musculus	P43081	Guca1a	P43081	0	9	Guanylyl cyclase-activating protein 1	
+P43082	arabidopsis-thaliana	P43082	HEL	P43082	0	2	Hevein-like preproprotein	
+P43088	human	P43088	PTGFR	P43088	14	89	Prostaglandin F2-alpha receptor (PGF receptor) (PGF2-alpha r	
+P43114	rattus-norvegicus	P43114	Ptger4	P43114	3	15	Prostaglandin E2 receptor EP4 subtype	
+P43115	human	P43115	PTGER3	P43115	11	145	Prostaglandin E2 receptor EP3 subtype (PGE receptor EP3 subt	
+P43116	human	P43116	PTGER2	P43116	14	104	Prostaglandin E2 receptor EP2 subtype (PGE receptor EP2 subt	
+P43117	mus-musculus	P43117	Ptgfr	P43117	0	2	Prostaglandin F2-alpha receptor	
+P43118	rattus-norvegicus	P43118	Ptgfr	P43118	0	2	Prostaglandin F2-alpha receptor	
+P43119	human	P43119	PTGIR	P43119	14	152	Prostacyclin receptor (Prostaglandin I2 receptor) (PGI recep	
+P43120	mus-musculus	P43120	Hhex	P43120	3	12	Hematopoietically-expressed homeobox protein Hhex	
+P43121	human	P43121	MCAM	P43121	132	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	
+P43122	yeast	P43122	QRI7	P43122	0	11	tRNA N6-adenosine threonylcarbamoyltransferase, mitochondria	
+P43123	yeast	P43123	QRI1	P43123	0	9	UDP-N-acetylglucosamine pyrophosphorylase	
+P43124	yeast	P43124	NSE4	P43124	5	28	Non-structural maintenance of chromosome element 4	
+P43125	fly	FBgn0003218	rdgB	M9PEJ5	5	34		
+P43132	yeast	P43132	BRE2	P43132	3	79	COMPASS component BRE2	
+P43135	mus-musculus	P43135	Nr2f2	P43135	4	23	COUP transcription factor 2	
+P43136	mus-musculus	P43136	Nr2f6	P43136	1	12	Nuclear receptor subfamily 2 group F member 6	
+P43137	mus-musculus	P43137	Reg1	P43137	0	5	Lithostathine-1	
+P43138	rattus-norvegicus	P43138	Apex1	P43138	2	96	DNA repair nuclease/redox regulator APEX1	
+P43140	rattus-norvegicus	P43140	Adra1a	P43140	4	22	Alpha-1A adrenergic receptor	
+P43142	mus-musculus	P43142	Gpr182	P43142	0	4	G-protein coupled receptor 182	
+P43143	rattus-norvegicus	P43143	Chrna6	P43143	14	17	Neuronal acetylcholine receptor subunit alpha-6	
+P43144	rattus-norvegicus	P43144	Chrna9	P43144	14	18	Neuronal acetylcholine receptor subunit alpha-9	
+P43145	rattus-norvegicus	P43145	Adm	P43145	2	28	Pro-adrenomedullin	
+P43146	human	P43146	DCC	P43146	48	205	Netrin receptor DCC (Colorectal cancer suppressor) (Immunogl	
+P43155	human	P43155	CRAT	P43155	4	59	Carnitine O-acetyltransferase (Carnitine acetylase) (EC 2.3.	
+P43165	rattus-norvegicus	P43165	Ca5a	P43165	0	5	Carbonic anhydrase 5A, mitochondrial	
+P43166	human	P43166	CA7	P43166	4	29	Carbonic anhydrase 7 (EC 4.2.1.1) (Carbonate dehydratase VII	
+P43188	zea-mays	P43188	ADK1	P43188	0	7	Adenylate kinase, chloroplastic	
+P43219	rattus-norvegicus	P43219	Gipr	P43219	4	29	Gastric inhibitory polypeptide receptor	
+P43220	fly	GLP1R_HUMAN	GLP1R_HUMAN	P43220	0	4		
+P43220	human	P43220	GLP1R	P43220	25	342	Glucagon-like peptide 1 receptor (GLP-1 receptor) (GLP-1-R) 	
+P43234	human	P43234	CTSO	P43234	4	48	Cathepsin O (EC 3.4.22.42)	
+P43235	human	P43235	CTSK	P43235	3	77	Cathepsin K (EC 3.4.22.38) (Cathepsin O) (Cathepsin O2) (Cat	
+P43241	mus-musculus	P43241	Cdx2	P43241	4	69	Homeobox protein CDX-2	
+P43243	human	P43243	MATR3	P43243	86	689	Matrin-3	
+P43244	rattus-norvegicus	P43244	Matr3	P43244	5	63	Matrin-3	
+P43246	human	P43246	MSH2	P43246	31	402	DNA mismatch repair protein Msh2 (hMSH2) (MutS protein homol	
+P43247	mus-musculus	P43247	Msh2	P43247	14	71	DNA mismatch repair protein Msh2	
+P43248	fly	FBgn0015546	spel1	P43248	6	71	DNA mismatch repair protein spellchecker 1	
+P43250	human	P43250	GRK6	P43250	74	1447	G protein-coupled receptor kinase 6 (EC 2.7.11.16) (G protei	
+P43251	human	P43251	BTD	P43251	13	107	Biotinidase (Biotinase) (EC 3.5.1.12)	
+P43252	mus-musculus	P43252	Ptgir	P43252	2	23	Prostacyclin receptor	
+P43253	rattus-norvegicus	P43253	Ptgir	P43253	2	6	Prostacyclin receptor	
+P43254	arabidopsis-thaliana	P43254	COP1	P43254	49	387	E3 ubiquitin-protein ligase COP1	
+P43255	arabidopsis-thaliana	P43255	CSN8	P43255	8	50	COP9 signalosome complex subunit 8	
+P43256	arabidopsis-thaliana	P43256	HMG2	P43256	1	9	3-hydroxy-3-methylglutaryl-coenzyme A reductase 2	
+P43267	mus-musculus	P43267	Sox15	P43267	1	13	Transcription factor SOX-15	
+P43268	human	P43268	ETV4	P43268	53	457	ETS translocation variant 4 (Adenovirus E1A enhancer-binding	
+P43273	arabidopsis-thaliana	P43273	TGA2	P43273	13	259	Transcription factor TGA2	
+P43274	mus-musculus	P43274	H1-4	P43274	2	45	Histone H1.4	
+P43275	mus-musculus	P43275	H1-1	P43275	1	36	Histone H1.1	
+P43276	mus-musculus	P43276	H1-5	P43276	0	19	Histone H1.5	
+P43277	mus-musculus	P43277	H1-3	P43277	0	20	Histone H1.3	
+P43279	oryza-sativa-subsp-japonica	P43279	ME6	P43279	0	5	NADP-dependent malic enzyme, chloroplastic	
+P43283	zea-mays	P43283	TSB1	P43283	5	11	Tryptophan synthase beta chain 1	
+P43284	zea-mays	P43284	TSB2	P43284	5	11	Tryptophan synthase beta chain 2, chloroplastic	
+P43286	arabidopsis-thaliana	P43286	PIP2-1	P43286	19	293	Aquaporin PIP2-1	
+P43287	arabidopsis-thaliana	P43287	PIP2-2	P43287	6	14	Aquaporin PIP2-2	
+P43288	arabidopsis-thaliana	P43288	ASK1	P43288	0	37	Shaggy-related protein kinase alpha	
+P43289	arabidopsis-thaliana	P43289	ASK3	P43289	0	37	Shaggy-related protein kinase gamma	
+P43291	arabidopsis-thaliana	P43291	SRK2A	P43291	0	43	Serine/threonine-protein kinase SRK2A	
+P43292	arabidopsis-thaliana	P43292	SRK2G	P43292	1	29	Serine/threonine-protein kinase SRK2G	
+P43294	arabidopsis-thaliana	P43294	MHK	P43294	0	15	Serine/threonine-protein kinase MHK	
+P43295	arabidopsis-thaliana	P43295	RD19B	P43295	0	1	Probable cysteine protease RD19B	
+P43296	arabidopsis-thaliana	P43296	RD19A	P43296	0	1	Cysteine protease RD19A	
+P43297	arabidopsis-thaliana	P43297	RD21A	P43297	7	119	Cysteine proteinase RD21A	
+P43298	arabidopsis-thaliana	P43298	TMK1	P43298	1	57	Receptor protein kinase TMK1	
+P43299	arabidopsis-thaliana	P43299	MCM7	P43299	1	112	DNA replication licensing factor MCM7	
+P43300	mus-musculus	P43300	Egr3	P43300	1	10	Early growth response protein 3	
+P43301	rattus-norvegicus	P43301	Egr3	P43301	1	13	Early growth response protein 3	
+P43303	rattus-norvegicus	P43303	Il1r2	P43303	8	27	Interleukin-1 receptor type 2	
+P43304	human	P43304	GPD2	P43304	4	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	
+P43307	human	P43307	SSR1	P43307	48	399	Translocon-associated protein subunit alpha (TRAP-alpha) (Si	
+P43308	human	P43308	SSR2	P43308	9	95	Translocon-associated protein subunit beta (TRAP-beta) (Sign	
+P43312	helicobacter-pylori	P43312	sodB	P43312	0	59	Superoxide dismutase	
+P43313	helicobacter-pylori	P43313	dps	P43313	0	8	DNA protection during starvation protein	
+P43315	mycobacterium-leprae	P43315	bfr	P43315	0	2	Bacterioferritin	
+P43320	human	P43320	CRYBB2	P43320	18	54	Beta-crystallin B2 (Beta-B2 crystallin) (Beta-crystallin Bp)	
+P43321	yeast	P43321	SMD3	P43321	19	148	Small nuclear ribonucleoprotein Sm D3	
+P43322	rattus-norvegicus	P43322	Nrg1	P43322	6	30	Pro-neuregulin-1, membrane-bound isoform	
+P43329	escherichia-coli-83333	P43329	hrpA	P43329	0	51	ATP-dependent RNA helicase HrpA	
+P43332	fly	FBgn0003449	snf	P43332	19	264	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1	
+P43333	arabidopsis-thaliana	P43333	U2A	P43333	25	240	U2 small nuclear ribonucleoprotein A	
+P43335	pseudomonas-aeruginosa	P43335	phhB	P43335	0	3	Pterin-4-alpha-carbinolamine dehydratase	
+P43336	pseudomonas-aeruginosa	P43336	phhC	P43336	1	19	Aromatic-amino-acid aminotransferase	
+P43345	mus-musculus	P43345	Tlx1	P43345	6	14	T-cell leukemia homeobox protein 1	
+P43346	mus-musculus	P43346	Dck	P43346	0	57	Deoxycytidine kinase	
+P43351	human	P43351	RAD52	P43351	21	173	DNA repair protein RAD52 homolog	
+P43352	mus-musculus	P43352	Rad52	P43352	3	63	DNA repair protein RAD52 homolog	
+P43353	human	P43353	ALDH3B1	P43353	8	150	Aldehyde dehydrogenase family 3 member B1 (EC 1.2.1.28) (EC 	
+P43354	human	P43354	NR4A2	P43354	125	474	Nuclear receptor subfamily 4 group A member 2 (Immediate-ear	
+P43355	human	P43355	MAGEA1	P43355	73	256	Melanoma-associated antigen 1 (Antigen MZ2-E) (Cancer/testis	
+P43356	human	P43356	MAGEA2	P43356	39	118	Melanoma-associated antigen 2 (Cancer/testis antigen 1.2) (C	
+P43357	human	P43357	MAGEA3	P43357	66	237	Melanoma-associated antigen 3 (Antigen MZ2-D) (Cancer/testis	
+P43358	human	P43358	MAGEA4	P43358	65	233	Melanoma-associated antigen 4 (Cancer/testis antigen 1.4) (C	
+P43359	human	P43359	MAGEA5P	P43359	2	8	Putative melanoma-associated antigen 5P (Cancer/testis antig	
+P43360	human	P43360	MAGEA6	P43360	75	202	Melanoma-associated antigen 6 (Cancer/testis antigen 1.6) (C	
+P43361	human	P43361	MAGEA8	P43361	69	180	Melanoma-associated antigen 8 (Cancer/testis antigen 1.8) (C	
+P43362	human	P43362	MAGEA9	P43362	87	249	Melanoma-associated antigen 9 (Cancer/testis antigen 1.9) (C	
+P43363	human	P43363	MAGEA10	P43363	54	113	Melanoma-associated antigen 10 (Cancer/testis antigen 1.10) 	
+P43364	human	P43364	MAGEA11	P43364	94	234	Melanoma-associated antigen 11 (Cancer/testis antigen 1.11) 	
+P43365	human	P43365	MAGEA12	P43365	36	105	Melanoma-associated antigen 12 (Cancer/testis antigen 1.12) 	
+P43366	human	P43366	MAGEB1	P43366	8	41	Melanoma-associated antigen B1 (Cancer/testis antigen 3.1) (	
+P43378	human	P43378	PTPN9	P43378	24	224	Tyrosine-protein phosphatase non-receptor type 9 (EC 3.1.3.4	
+P43403	human	P43403	ZAP70	P43403	121	1507	Tyrosine-protein kinase ZAP-70 (EC 2.7.10.2) (70 kDa zeta-ch	
+P43404	mus-musculus	P43404	Zap70	P43404	10	113	Tyrosine-protein kinase ZAP-70	
+P43405	human	P43405	SYK	P43405	217	1792	Tyrosine-protein kinase SYK (EC 2.7.10.2) (Spleen tyrosine k	
+P43406	mus-musculus	P43406	Itgav	P43406	15	117	Integrin alpha-V	
+P43407	mus-musculus	P43407	Sdc2	P43407	3	27	Syndecan-2	
+P43409	methanocaldococcus-jannaschii	P43409	adkA	P43409	0	1	Adenylate kinase	
+P43424	rattus-norvegicus	P43424	Galt	P43424	0	5	Galactose-1-phosphate uridylyltransferase	
+P43425	rattus-norvegicus	P43425	Gng7	P43425	12	91	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	
+P43428	rattus-norvegicus	P43428	G6pc1	P43428	0	8	Glucose-6-phosphatase catalytic subunit 1	
+P43429	rattus-norvegicus	P43429	Gata1	P43429	6	85	Erythroid transcription factor	
+P43431	mus-musculus	P43431	Il12a	P43431	4	9	Interleukin-12 subunit alpha	
+P43432	mus-musculus	P43432	Il12b	P43432	6	23	Interleukin-12 subunit beta	
+P43446	zebrafish	P43446	wnt10a	P43446	1	4	Protein Wnt-10a	
+P43487	human	P43487	RANBP1	P43487	13	228	Ran-specific GTPase-activating protein (Ran-binding protein 	
+P43488	mus-musculus	P43488	Tnfsf4	P43488	9	31	Tumor necrosis factor ligand superfamily member 4	
+P43489	human	P43489	TNFRSF4	P43489	43	230	Tumor necrosis factor receptor superfamily member 4 (ACT35 a	
+P43490	human	P43490	NAMPT	P43490	6	457	Nicotinamide phosphoribosyltransferase (NAmPRTase) (Nampt) (	
+P43497	yeast	P43497	CWP2	P43497	0	12	Cell wall protein CWP2	
+P43501	pseudomonas-aeruginosa	P43501	pilH	P43501	0	81	Protein PilH	
+P43502	pseudomonas-aeruginosa	P43502	pilI	P43502	23	48	Protein PilI	
+P43508	worm	P43508	cpr-4	P43508	0	11	Cathepsin B-like cysteine proteinase 4	
+P43509	worm	P43509	cpr-5	P43509	1	22	Cathepsin B-like cysteine proteinase 5	
+P43510	worm	P43510	cpr-6	P43510	1	5	Cathepsin B-like cysteine proteinase 6	
+P43527	rattus-norvegicus	P43527	Casp1	P43527	14	90	Caspase-1	
+P43533	escherichia-coli-83333	P43533	flgN	P43533	2	9	Flagella synthesis protein FlgN	
+P43534	yeast	P43534	THI5	P43534	0	1	4-amino-5-hydroxymethyl-2-methylpyrimidine phosphate synthas	
+P43535	yeast	P43535	GCN20	P43535	3	133	Protein GCN20	
+P43537	yeast	P43537	YFL067W	P43537	0	3	Uncharacterized membrane protein YFL067W	
+P43538	yeast	P43538	YFL066C	P43538	0	4	Y' element ATP-dependent helicase YFL066C	
+P43539	yeast	P43539	YFL065C	P43539	0	3	Uncharacterized protein YFL065C	
+P43540	yeast	P43540	YFL064C	P43540	0	3	Uncharacterized protein YFL064C	
+P43541	yeast	P43541	YFL063W	P43541	0	1	Putative UPF0320 protein YFL063W	
+P43542	yeast	P43542	COS4	P43542	0	7	Protein COS4	
+P43544	yeast	P43544	SNO3	P43544	4	6	Probable pyridoxal 5'-phosphate synthase subunit SNO3	
+P43545	yeast	P43545	SNZ3	P43545	3	10	Probable pyridoxal 5'-phosphate synthase subunit SNZ3	
+P43548	yeast	P43548	AGP3	P43548	0	3	General amino acid permease AGP3	
+P43549	yeast	P43549	AQY3	P43549	0	18	Aquaglycerol porin AQY3	
+P43550	yeast	P43550	DAK2	P43550	1	3	Dihydroxyacetone kinase 2	
+P43551	yeast	P43551	ZNF1	P43551	0	6	Respiratory transcription factor ZNF1	
+P43552	yeast	P43552	YFL051C	P43552	0	2	Uncharacterized membrane protein YFL051C	
+P43553	yeast	P43553	ALR2	P43553	0	1	Magnesium transporter ALR2	
+P43554	yeast	P43554	SWP82	P43554	1	35	SWI/SNF global transcription activator complex subunit SWP82	
+P43555	yeast	P43555	EMP47	P43555	3	49	Protein EMP47	
+P43556	yeast	P43556	RGD2	P43556	2	29	Rho-GTPase-activating protein RGD2	
+P43557	yeast	P43557	FMP32	P43557	1	26	Protein FMP32, mitochondrial	
+P43558	yeast	P43558	OTU1	P43558	1	69	Ubiquitin thioesterase OTU1	
+P43560	yeast	P43560	LAM5	P43560	0	8	Membrane-anchored lipid-binding protein LAM5	
+P43561	yeast	P43561	FET5	P43561	2	15	Iron transport multicopper oxidase FET5	
+P43562	yeast	P43562	YFL040W	P43562	0	5	Probable metabolite transport protein YFL040W	
+P43563	yeast	P43563	MOB2	P43563	6	24	CBK1 kinase activator protein MOB2	
+P43564	yeast	P43564	MIL1	P43564	2	9	Probable lipase MIL1	
+P43565	yeast	P43565	RIM15	P43565	2	15	Serine/threonine-protein kinase RIM15 (EC 2.7.11.1)	
+P43567	yeast	P43567	AGX1	P43567	0	13	Alanine--glyoxylate aminotransferase 1	
+P43568	yeast	P43568	CAK1	P43568	5	105	Serine/threonine-protein kinase CAK1 (EC 2.7.11.22) (CDK-act	
+P43569	yeast	P43569	CAF16	P43569	1	17	CCR4-associated factor 16	
+P43570	yeast	P43570	GYP8	P43570	3	10	GTPase-activating protein GYP8	
+P43571	yeast	P43571	BST1	P43571	0	4	GPI inositol-deacylase	
+P43572	yeast	P43572	EPL1	P43572	9	54	Enhancer of polycomb-like protein 1	
+P43573	yeast	P43573	BUD27	P43573	9	78	Bud site selection protein 27	
+P43574	yeast	P43574	GAT1	P43574	2	36	Transcriptional regulatory protein GAT1	
+P43575	yeast	P43575	PAU5	P43575	0	4	Seripauperin-5	
+P43577	yeast	P43577	GNA1	P43577	0	12	Glucosamine 6-phosphate N-acetyltransferase	
+P43579	yeast	P43579	IES1	P43579	0	60	Ino eighty subunit 1	
+P43580	yeast	P43580	YFL012W	P43580	0	2	Uncharacterized protein YFL012W	
+P43581	yeast	P43581	HXT10	P43581	0	1	Hexose transporter HXT10	
+P43582	yeast	P43582	WWM1	P43582	0	25	WW domain-containing protein WWM1	
+P43585	yeast	P43585	VTC2	P43585	2	29	Vacuolar transporter chaperone complex subunit 2	
+P43586	yeast	P43586	LOC1	P43586	13	174	60S ribosomal subunit assembly/export protein LOC1	
+P43587	yeast	P43587	YPI1	P43587	7	18	Type 1 phosphatases regulator YPI1	
+P43588	yeast	P43588	RPN11	P43588	13	737	Ubiquitin carboxyl-terminal hydrolase RPN11	
+P43589	yeast	P43589	SAD1	P43589	3	42	Pre-mRNA-splicing factor SAD1	
+P43590	yeast	P43590	YFR006W	P43590	0	12	Uncharacterized peptidase YFR006W	
+P43591	yeast	P43591	YFH7	P43591	0	3	ATP-dependent kinase YFH7	
+P43592	yeast	P43592	FAR7	P43592	1	18	Factor arrest protein 7	
+P43593	yeast	P43593	UBP6	P43593	4	68	Ubiquitin carboxyl-terminal hydrolase 6	
+P43594	yeast	P43594	MIC19	P43594	1	22	MICOS complex subunit MIC19	
+P43595	yeast	P43595	DCV1	P43595	0	4	Protein DCV1	
+P43596	yeast	P43596	IOC3	P43596	2	40	ISWI one complex protein 3	
+P43597	yeast	P43597	YFR016C	P43597	0	18	Uncharacterized protein YFR016C	
+P43598	yeast	P43598	IGD1	P43598	1	9	Inhibitor of glycogen debranching 1	
+P43599	yeast	P43599	YFR018C	P43599	0	2	Uncharacterized protein YFR018C	
+P43601	yeast	P43601	ATG18	P43601	6	58	Autophagy-related protein 18	
+P43602	yeast	P43602	ROG3	P43602	0	14	Protein ROG3	
+P43603	yeast	P43603	LSB3	P43603	19	146	LAS seventeen-binding protein 3	
+P43604	yeast	P43604	ULI1	P43604	0	1	Unfolded protein response-inducible protein 1	
+P43605	yeast	P43605	ECO1	P43605	1	31	N-acetyltransferase ECO1	
+P43606	yeast	P43606	PTR3	P43606	2	11	SPS-sensor component PTR3	
+P43607	yeast	P43607	RRT5	P43607	0	4	Regulator of rDNA transcription protein 5	
+P43608	yeast	P43608	YFR035C	P43608	0	1	Uncharacterized protein YFR035C	
+P43609	yeast	P43609	RSC8	P43609	20	156	Chromatin structure-remodeling complex protein RSC8	
+P43610	yeast	P43610	IRC5	P43610	1	26	Uncharacterized ATP-dependent helicase IRC5	
+P43611	yeast	P43611	OSW7	P43611	0	3	Outer spore wall protein 7	
+P43612	yeast	P43612	SAP155	P43612	5	43	SIT4-associating protein SAP155	
+P43613	yeast	P43613	ERJ5	P43613	10	27	ER-localized J domain-containing protein 5	
+P43614	yeast	P43614	KEG1	P43614	0	13	Beta-1,6-glucan synthesis-associated protein KEG1	
+P43615	yeast	P43615	IRC6	P43615	9	111	Increased recombination centers protein 6	
+P43616	yeast	P43616	DUG1	P43616	1	10	Cys-Gly metallodipeptidase DUG1	
+P43617	yeast	P43617	YFR045W	P43617	0	13	Uncharacterized mitochondrial carrier YFR045W	
+P43618	yeast	P43618	CNN1	P43618	2	39	Inner kinetochore subunit CNN1	
+P43619	yeast	P43619	BNA6	P43619	0	5	Nicotinate-nucleotide pyrophosphorylase	
+P43620	yeast	P43620	RMD8	P43620	1	8	Sporulation protein RMD8	
+P43621	yeast	P43621	RET2	P43621	6	89	Coatomer subunit delta	
+P43622	yeast	P43622	YFR054C	P43622	0	1	Uncharacterized protein YFR054C	
+P43623	yeast	P43623	IRC7	P43623	0	7	Putative cystathionine beta-lyase	
+P43625	yeast	P43625	YFR057W	P43625	0	1	Uncharacterized protein YFR057W	
+P43626	human	P43626	KIR2DL1	P43626	12	87	Killer cell immunoglobulin-like receptor 2DL1 (CD158 antigen	
+P43627	human	P43627	KIR2DL2	P43627	29	172	Killer cell immunoglobulin-like receptor 2DL2 (CD158 antigen	
+P43628	human	P43628	KIR2DL3	P43628	13	131	Killer cell immunoglobulin-like receptor 2DL3 (CD158 antigen	
+P43629	human	P43629	KIR3DL1	P43629	18	170	Killer cell immunoglobulin-like receptor 3DL1 (CD158 antigen	
+P43630	human	P43630	KIR3DL2	P43630	27	139	Killer cell immunoglobulin-like receptor 3DL2 (CD158 antigen	
+P43631	human	P43631	KIR2DS2	P43631	13	144	Killer cell immunoglobulin-like receptor 2DS2 (CD158 antigen	
+P43632	human	P43632	KIR2DS4	P43632	9	41	Killer cell immunoglobulin-like receptor 2DS4 (CD158 antigen	
+P43633	yeast	P43633	ALK1	P43633	0	7	Serine/threonine-protein kinase Haspin homolog ALK1	
+P43634	yeast	P43634	CHA4	P43634	1	18	Activatory protein CHA4	
+P43635	yeast	P43635	CIT3	P43635	2	33	Citrate synthase 3, mitochondrial	
+P43636	yeast	P43636	ALG2	P43636	0	11	Alpha-1,3/1,6-mannosyltransferase ALG2	
+P43637	yeast	P43637	TOS3	P43637	3	35	Serine/threonine-protein kinase TOS3 (EC 2.7.11.1) (Target o	
+P43638	yeast	P43638	MHP1	P43638	0	17	MAP-homologous protein 1	
+P43639	yeast	P43639	CKB1	P43639	8	183	Casein kinase II subunit beta	
+P43652	human	P43652	AFM	P43652	48	337	Afamin (Alpha-albumin) (Alpha-Alb)	
+P43657	human	P43657	LPAR6	P43657	13	158	Lysophosphatidic acid receptor 6 (LPA receptor 6) (LPA-6) (O	
+P43660	salmonella-typhimurium	P43660	lpfA	P43660	10	24	Long polar fimbria protein A	
+P43661	salmonella-typhimurium	P43661	lpfB	P43661	36	39	Chaperone protein LpfB	
+P43662	salmonella-typhimurium	P43662	lpfC	P43662	13	26	Outer membrane usher protein LpfC	
+P43663	salmonella-typhimurium	P43663	lpfD	P43663	13	13	Protein LpfD	
+P43664	salmonella-typhimurium	P43664	lpfE	P43664	13	24	Protein LpfE	
+P43667	escherichia-coli-83333	P43667	ygaH	P43667	1	1	Uncharacterized protein YgaH	
+P43669	salmonella-typhimurium	P43669	prc	P43669	1	7	Tail-specific protease	
+P43672	escherichia-coli-83333	P43672	uup	P43672	2	52	ATP-binding protein Uup	
+P43674	escherichia-coli-83333	P43674	ycaL	P43674	0	2	Metalloprotease YcaL	
+P43676	escherichia-coli-83333	P43676	pitB	P43676	0	1	Low-affinity inorganic phosphate transporter PitB	
+P43680	mus-musculus	P43680	Sox18	P43680	0	7	Transcription factor SOX-18	
+P43681	human	P43681	CHRNA4	P43681	50	279	Neuronal acetylcholine receptor subunit alpha-4	
+P43682	yeast	P43682	SFT1	P43682	4	50	Protein transport protein SFT1	
+P43686	human	P43686	PSMC4	P43686	35	418	26S proteasome regulatory subunit 6B (26S proteasome AAA-ATP	
+P43687	mus-musculus	P43687	Hmx2	P43687	1	12	Homeobox protein HMX2	
+P43694	human	P43694	GATA4	P43694	96	799	Transcription factor GATA-4 (GATA-binding factor 4)	
+P43699	human	P43699	NKX2-1	P43699	165	576	Homeobox protein Nkx-2.1 (Homeobox protein NK-2 homolog A) (	
+P43700	haemophilus-influenzae	P43700	gyrA	P43700	3	6	DNA gyrase subunit A	
+P43701	haemophilus-influenzae	P43701	gyrB	P43701	2	7	DNA gyrase subunit B	
+P43702	haemophilus-influenzae	P43702	parC	P43702	3	6	DNA topoisomerase 4 subunit A	
+P43703	haemophilus-influenzae	P43703	parE	P43703	2	7	DNA topoisomerase 4 subunit B	
+P43704	haemophilus-influenzae	P43704	topB	P43704	0	8	DNA topoisomerase 3	
+P43705	haemophilus-influenzae	P43705	recA	P43705	0	40	Protein RecA	
+P43706	haemophilus-influenzae	P43706	recX	P43706	0	5	Regulatory protein RecX	
+P43709	haemophilus-influenzae	P43709	acpP	P43709	22	91	Acyl carrier protein	
+P43710	haemophilus-influenzae	P43710	fabB	P43710	1	8	3-oxoacyl-	
+P43711	haemophilus-influenzae	P43711	fabH	P43711	0	5	Beta-ketoacyl-	
+P43712	haemophilus-influenzae	P43712	fabD	P43712	3	28	Malonyl CoA-acyl carrier protein transacylase	
+P43713	haemophilus-influenzae	P43713	fabG	P43713	1	29	3-oxoacyl-	
+P43714	haemophilus-influenzae	P43714	atpA	P43714	1	25	ATP synthase subunit alpha	
+P43715	haemophilus-influenzae	P43715	atpD	P43715	1	22	ATP synthase subunit beta	
+P43716	haemophilus-influenzae	P43716	atpG	P43716	1	15	ATP synthase gamma chain	
+P43717	haemophilus-influenzae	P43717	atpH	P43717	0	16	ATP synthase subunit delta	
+P43718	haemophilus-influenzae	P43718	atpC	P43718	1	14	ATP synthase epsilon chain	
+P43719	haemophilus-influenzae	P43719	atpB	P43719	2	11	ATP synthase subunit a	
+P43720	haemophilus-influenzae	P43720	atpF	P43720	1	9	ATP synthase subunit b	
+P43721	haemophilus-influenzae	P43721	atpE	P43721	2	15	ATP synthase subunit c	
+P43722	haemophilus-influenzae	P43722	hup	P43722	1	2	DNA-binding protein HU	
+P43723	haemophilus-influenzae	P43723	ihfA	P43723	2	3	Integration host factor subunit alpha	
+P43724	haemophilus-influenzae	P43724	ihfB	P43724	1	2	Integration host factor subunit beta	
+P43725	haemophilus-influenzae	P43725	sodA	P43725	1	54	Superoxide dismutase	
+P43726	haemophilus-influenzae	P43726	pgk	P43726	0	13	Phosphoglycerate kinase	
+P43727	haemophilus-influenzae	P43727	tpiA	P43727	0	7	Triosephosphate isomerase	
+P43728	haemophilus-influenzae	P43728	era	P43728	0	14	GTPase Era	
+P43729	haemophilus-influenzae	P43729	lepA	P43729	0	54	Elongation factor 4	
+P43730	haemophilus-influenzae	P43730	mnmE	P43730	1	29	tRNA modification GTPase MnmE	
+P43731	haemophilus-influenzae	P43731	ung	P43731	0	3	Uracil-DNA glycosylase	
+P43732	haemophilus-influenzae	P43732	grpE	P43732	1	11	Protein GrpE	
+P43733	haemophilus-influenzae	P43733	groEL	P43733	1	37	Chaperonin GroEL	
+P43734	haemophilus-influenzae	P43734	groES	P43734	1	11	Co-chaperonin GroES	
+P43735	haemophilus-influenzae	P43735	dnaJ	P43735	2	101	Chaperone protein DnaJ	
+P43736	haemophilus-influenzae	P43736	dnaK	P43736	6	64	Chaperone protein DnaK	
+P43738	haemophilus-influenzae	P43738	rpoB	P43738	4	106	DNA-directed RNA polymerase subunit beta	
+P43739	haemophilus-influenzae	P43739	rpoC	P43739	8	89	DNA-directed RNA polymerase subunit beta	
+P43740	haemophilus-influenzae	P43740	rpoZ	P43740	5	87	DNA-directed RNA polymerase subunit omega	
+P43741	haemophilus-influenzae	P43741	polA	P43741	1	33	DNA polymerase I	
+P43742	haemophilus-influenzae	P43742	dnaA	P43742	1	9	Chromosomal replication initiator protein DnaA	
+P43743	haemophilus-influenzae	P43743	dnaE	P43743	2	10	DNA polymerase III subunit alpha	
+P43744	haemophilus-influenzae	P43744	dnaN	P43744	8	29	Beta sliding clamp	
+P43746	haemophilus-influenzae	P43746	dnaX	P43746	6	16	DNA polymerase III subunit tau/gamma	
+P43747	haemophilus-influenzae	P43747	holA	P43747	3	7	DNA polymerase III subunit delta	
+P43748	haemophilus-influenzae	P43748	holB	P43748	4	16	DNA polymerase III subunit delta	
+P43749	haemophilus-influenzae	P43749	holC	P43749	2	9	DNA polymerase III subunit chi	
+P43750	haemophilus-influenzae	P43750	holD	P43750	1	7	DNA polymerase III subunit psi	
+P43752	haemophilus-influenzae	P43752	nrdD	P43752	1	7	Anaerobic ribonucleoside-triphosphate reductase	
+P43753	haemophilus-influenzae	P43753	pflB	P43753	1	1	Formate acetyltransferase	
+P43754	haemophilus-influenzae	P43754	nrdA	P43754	1	4	Ribonucleoside-diphosphate reductase subunit alpha	
+P43755	haemophilus-influenzae	P43755	nrdB	P43755	1	2	Ribonucleoside-diphosphate reductase subunit beta	
+P43757	haemophilus-influenzae	P43757	tktA	P43757	0	9	Transketolase	
+P43758	haemophilus-influenzae	P43758	dksA	P43758	0	6	RNA polymerase-binding transcription factor DksA	
+P43759	haemophilus-influenzae	P43759	trpA	P43759	1	2	Tryptophan synthase alpha chain	
+P43760	haemophilus-influenzae	P43760	trpB	P43760	1	3	Tryptophan synthase beta chain	
+P43761	haemophilus-influenzae	P43761	trpE	P43761	2	5	Anthranilate synthase component 1	
+P43762	haemophilus-influenzae	P43762	metK	P43762	0	7	S-adenosylmethionine synthase	
+P43764	haemophilus-influenzae	P43764	tsaD	P43764	2	4	tRNA N6-adenosine threonylcarbamoyltransferase	
+P43766	haemophilus-influenzae	P43766	rpoD	P43766	2	25	RNA polymerase sigma factor RpoD	
+P43767	haemophilus-influenzae	P43767	recF	P43767	1	6	DNA replication and repair protein RecF	
+P43768	haemophilus-influenzae	P43768	tolQ	P43768	3	5	Tol-Pal system protein TolQ	
+P43769	haemophilus-influenzae	P43769	tolR	P43769	2	4	Tol-Pal system protein TolR	
+P43771	haemophilus-influenzae	P43771	efp	P43771	5	63	Elongation factor P	
+P43772	haemophilus-influenzae	P43772	hslV	P43772	0	5	ATP-dependent protease subunit HslV	
+P43773	haemophilus-influenzae	P43773	hslU	P43773	0	5	ATP-dependent protease ATPase subunit HslU	
+P43774	haemophilus-influenzae	P43774	gnd	P43774	0	1	6-phosphogluconate dehydrogenase, decarboxylating	
+P43778	haemophilus-influenzae	P43778	accD	P43778	1	5	Acetyl-coenzyme A carboxylase carboxyl transferase subunit b	
+P43780	haemophilus-influenzae	P43780	bolA	P43780	2	2	DNA-binding transcriptional regulator BolA	
+P43783	haemophilus-influenzae	P43783	gor	P43783	0	18	Glutathione reductase	
+P43784	haemophilus-influenzae	P43784	lpdA	P43784	1	18	Dihydrolipoyl dehydrogenase	
+P43785	haemophilus-influenzae	P43785	trxA	P43785	1	13	Thioredoxin	
+P43786	haemophilus-influenzae	P43786	HI_1159	P43786	0	10	Uncharacterized protein HI_1159	
+P43787	haemophilus-influenzae	P43787	HI_1115	P43787	2	35	Thioredoxin-like protein HI_1115	
+P43788	haemophilus-influenzae	P43788	trxB	P43788	0	15	Thioredoxin reductase	
+P43790	haemophilus-influenzae	P43790	yceD	P43790	1	1	Large ribosomal RNA subunit accumulation protein YceD	
+P43791	haemophilus-influenzae	P43791	folA	P43791	0	4	Dihydrofolate reductase	
+P43792	haemophilus-influenzae	P43792	dut	P43792	0	2	Deoxyuridine 5'-triphosphate nucleotidohydrolase	
+P43793	haemophilus-influenzae	P43793	gdhA	P43793	0	2	NADP-specific glutamate dehydrogenase	
+P43794	haemophilus-influenzae	P43794	glnA	P43794	0	13	Glutamine synthetase	
+P43795	haemophilus-influenzae	P43795	glnB	P43795	0	1	Nitrogen regulatory protein P-II	
+P43796	haemophilus-influenzae	P43796	glgC	P43796	0	1	Glucose-1-phosphate adenylyltransferase	
+P43798	haemophilus-influenzae	P43798	gpsA	P43798	0	3	Glycerol-3-phosphate dehydrogenase	
+P43799	haemophilus-influenzae	P43799	glpA	P43799	2	4	Anaerobic glycerol-3-phosphate dehydrogenase subunit A	
+P43800	haemophilus-influenzae	P43800	glpB	P43800	2	2	Anaerobic glycerol-3-phosphate dehydrogenase subunit B	
+P43801	haemophilus-influenzae	P43801	glpC	P43801	2	5	Anaerobic glycerol-3-phosphate dehydrogenase subunit C	
+P43802	haemophilus-influenzae	P43802	ndk	P43802	3	55	Nucleoside diphosphate kinase	
+P43803	haemophilus-influenzae	P43803	secA	P43803	2	44	Protein translocase subunit SecA	
+P43804	haemophilus-influenzae	P43804	secY	P43804	3	70	Protein translocase subunit SecY	
+P43805	haemophilus-influenzae	P43805	secE	P43805	1	58	Protein translocase subunit SecE	
+P43807	haemophilus-influenzae	P43807	rnhA	P43807	1	5	Ribonuclease HI	
+P43808	haemophilus-influenzae	P43808	rnhB	P43808	0	14	Ribonuclease HII	
+P43809	haemophilus-influenzae	P43809	recG	P43809	0	1	ATP-dependent DNA helicase RecG	
+P43811	haemophilus-influenzae	P43811	spoT	P43811	0	51	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase	
+P43812	haemophilus-influenzae	P43812	pyrF	P43812	0	2	Orotidine 5'-phosphate decarboxylase	
+P43813	haemophilus-influenzae	P43813	ligA	P43813	0	6	DNA ligase	
+P43814	haemophilus-influenzae	P43814	infC	P43814	2	19	Translation initiation factor IF-3	
+P43815	haemophilus-influenzae	P43815	alaS	P43815	0	7	Alanine--tRNA ligase	
+P43816	haemophilus-influenzae	P43816	cysS	P43816	0	7	Cysteine--tRNA ligase	
+P43817	haemophilus-influenzae	P43817	aspS	P43817	0	6	Aspartate--tRNA ligase	
+P43818	haemophilus-influenzae	P43818	gltX	P43818	1	63	Glutamate--tRNA ligase	
+P43819	haemophilus-influenzae	P43819	pheS	P43819	1	3	Phenylalanine--tRNA ligase alpha subunit	
+P43820	haemophilus-influenzae	P43820	pheT	P43820	3	41	Phenylalanine--tRNA ligase beta subunit	
+P43821	haemophilus-influenzae	P43821	glyQ	P43821	1	3	Glycine--tRNA ligase alpha subunit	
+P43822	haemophilus-influenzae	P43822	glyS	P43822	1	1	Glycine--tRNA ligase beta subunit	
+P43823	haemophilus-influenzae	P43823	hisS	P43823	0	11	Histidine--tRNA ligase	
+P43825	haemophilus-influenzae	P43825	lysS	P43825	1	18	Lysine--tRNA ligase	
+P43826	haemophilus-influenzae	P43826	epmA	P43826	1	1	Elongation factor P--(R)-beta-lysine ligase	
+P43827	haemophilus-influenzae	P43827	leuS	P43827	0	21	Leucine--tRNA ligase	
+P43828	haemophilus-influenzae	P43828	metG	P43828	0	31	Methionine--tRNA ligase	
+P43829	haemophilus-influenzae	P43829	asnS	P43829	1	10	Asparagine--tRNA ligase	
+P43830	haemophilus-influenzae	P43830	proS	P43830	0	14	Proline--tRNA ligase	
+P43831	haemophilus-influenzae	P43831	glnS	P43831	0	62	Glutamine--tRNA ligase	
+P43832	haemophilus-influenzae	P43832	argS	P43832	0	15	Arginine--tRNA ligase	
+P43833	haemophilus-influenzae	P43833	serS	P43833	0	7	Serine--tRNA ligase	
+P43834	haemophilus-influenzae	P43834	valS	P43834	0	9	Valine--tRNA ligase	
+P43835	haemophilus-influenzae	P43835	trpS	P43835	0	6	Tryptophan--tRNA ligase	
+P43837	haemophilus-influenzae	P43837	maeB	P43837	0	6	NADP-dependent malic enzyme	
+P43839	haemophilus-influenzae	P43839	ompP2	P43839	1	12	Outer membrane protein P2	
+P43840	haemophilus-influenzae	P43840	ompA	P43840	1	77	Outer membrane protein P5	
+P43842	haemophilus-influenzae	P43842	pntA	P43842	1	1	NAD(P) transhydrogenase subunit alpha	
+P43844	haemophilus-influenzae	P43844	glyA	P43844	0	14	Serine hydroxymethyltransferase	
+P43845	haemophilus-influenzae	P43845	purD	P43845	0	4	Phosphoribosylamine--glycine ligase	
+P43846	haemophilus-influenzae	P43846	purN	P43846	0	4	Phosphoribosylglycinamide formyltransferase	
+P43848	haemophilus-influenzae	P43848	purM	P43848	0	1	Phosphoribosylformylglycinamidine cyclo-ligase	
+P43851	haemophilus-influenzae	P43851	purC	P43851	0	4	Phosphoribosylaminoimidazole-succinocarboxamide synthase	
+P43852	haemophilus-influenzae	P43852	purH	P43852	0	6	Bifunctional purine biosynthesis protein PurH	
+P43853	haemophilus-influenzae	P43853	hisG	P43853	0	1	ATP phosphoribosyltransferase	
+P43854	haemophilus-influenzae	P43854	purF	P43854	0	3	Amidophosphoribosyltransferase	
+P43855	haemophilus-influenzae	P43855	pyrE	P43855	0	2	Orotate phosphoribosyltransferase	
+P43856	haemophilus-influenzae	P43856	apt	P43856	0	2	Adenine phosphoribosyltransferase	
+P43857	haemophilus-influenzae	P43857	upp	P43857	0	1	Uracil phosphoribosyltransferase	
+P43858	haemophilus-influenzae	P43858	trpD	P43858	0	4	Anthranilate phosphoribosyltransferase	
+P43859	haemophilus-influenzae	P43859	gpt1	P43859	0	2	Xanthine-guanine phosphoribosyltransferase	
+P43860	haemophilus-influenzae	P43860	leuB	P43860	0	7	3-isopropylmalate dehydrogenase	
+P43861	haemophilus-influenzae	P43861	leuA	P43861	0	6	2-isopropylmalate synthase	
+P43862	haemophilus-influenzae	P43862	dprA	P43862	0	2	DNA-processing protein A	
+P43863	haemophilus-influenzae	P43863	pfkA	P43863	0	4	ATP-dependent 6-phosphofructokinase	
+P43864	haemophilus-influenzae	P43864	lon	P43864	0	4	Lon protease	
+P43867	haemophilus-influenzae	P43867	clpP	P43867	0	8	ATP-dependent Clp protease proteolytic subunit	
+P43868	haemophilus-influenzae	P43868	hemH	P43868	0	3	Ferrochelatase	
+P43869	haemophilus-influenzae	P43869	proC	P43869	0	3	Pyrroline-5-carboxylate reductase	
+P43872	haemophilus-influenzae	P43872	accA	P43872	1	4	Acetyl-coenzyme A carboxylase carboxyl transferase subunit a	
+P43873	haemophilus-influenzae	P43873	accC	P43873	0	7	Biotin carboxylase	
+P43874	haemophilus-influenzae	P43874	accB	P43874	0	8	Biotin carboxyl carrier protein of acetyl-CoA carboxylase	
+P43875	haemophilus-influenzae	P43875	aroC	P43875	0	3	Chorismate synthase	
+P43876	haemophilus-influenzae	P43876	aroE	P43876	0	2	Shikimate dehydrogenase (NADP(+))	
+P43879	haemophilus-influenzae	P43879	aroB	P43879	0	3	3-dehydroquinate synthase	
+P43881	haemophilus-influenzae	P43881	greA	P43881	1	3	Transcription elongation factor GreA	
+P43882	haemophilus-influenzae	P43882	greB	P43882	0	3	Transcription elongation factor GreB	
+P43883	mus-musculus	P43883	Plin2	P43883	2	32	Perilipin-2	
+P43884	rattus-norvegicus	P43884	Plin1	P43884	1	15	Perilipin-1	
+P43885	haemophilus-influenzae	P43885	serA	P43885	0	20	D-3-phosphoglycerate dehydrogenase	
+P43886	haemophilus-influenzae	P43886	cysE	P43886	0	1	Serine acetyltransferase	
+P43887	haemophilus-influenzae	P43887	lpxA	P43887	0	3	Acyl-	
+P43888	haemophilus-influenzae	P43888	lpxD	P43888	0	2	UDP-3-O-acylglucosamine N-acyltransferase	
+P43889	haemophilus-influenzae	P43889	glmU	P43889	0	2	Bifunctional protein GlmU	
+P43890	haemophilus-influenzae	P43890	pyrH	P43890	0	1	Uridylate kinase	
+P43894	haemophilus-influenzae	P43894	tsf	P43894	1	7	Elongation factor Ts	
+P43897	human	P43897	TSFM	P43897	40	257	Elongation factor Ts, mitochondrial (EF-Ts) (EF-TsMt)	
+P43898	pseudomonas-aeruginosa	P43898	hemF	P43898	0	2	Oxygen-dependent coproporphyrinogen-III oxidase	
+P43900	haemophilus-influenzae	P43900	pheA	P43900	1	16	Bifunctional chorismate mutase/prephenate dehydratase	
+P43902	haemophilus-influenzae	P43902	tyrA	P43902	1	14	T-protein	
+P43904	pseudomonas-aeruginosa	P43904	aroE	P43904	0	10	Shikimate dehydrogenase (NADP(+))	
+P43910	haemophilus-influenzae	P43910	selA	P43910	0	1	L-seryl-tRNA(Sec) selenium transferase	
+P43912	haemophilus-influenzae	P43912	trmD	P43912	0	2	tRNA (guanine-N(1)-)-methyltransferase	
+P43913	haemophilus-influenzae	P43913	xseA	P43913	0	2	Exodeoxyribonuclease 7 large subunit	
+P43914	haemophilus-influenzae	P43914	xseB	P43914	0	1	Exodeoxyribonuclease 7 small subunit	
+P43915	haemophilus-influenzae	P43915	nusA	P43915	7	62	Transcription termination/antitermination protein NusA	
+P43916	haemophilus-influenzae	P43916	nusG	P43916	5	56	Transcription termination/antitermination protein NusG	
+P43917	haemophilus-influenzae	P43917	prfA	P43917	1	59	Peptide chain release factor 1	
+P43921	haemophilus-influenzae	P43921	ptsH	P43921	2	11	Phosphocarrier protein HPr	
+P43922	haemophilus-influenzae	P43922	ptsI	P43922	1	5	Phosphoenolpyruvate-protein phosphotransferase	
+P43923	haemophilus-influenzae	P43923	pckA	P43923	0	1	Phosphoenolpyruvate carboxykinase (ATP)	
+P43924	haemophilus-influenzae	P43924	pykA	P43924	0	50	Pyruvate kinase	
+P43925	haemophilus-influenzae	P43925	fusA	P43925	0	89	Elongation factor G	
+P43926	haemophilus-influenzae	P43926	tufA	P43926	1	68	Elongation factor Tu	
+P43927	haemophilus-influenzae	P43927	selB	P43927	0	67	Selenocysteine-specific elongation factor	
+P43928	haemophilus-influenzae	P43928	prfC	P43928	1	53	Peptide chain release factor 3	
+P43930	haemophilus-influenzae	P43930	HI_0042	P43930	2	41	Uncharacterized RNA pseudouridine synthase HI_0042	
+P43937	haemophilus-influenzae	P43937	HI_0082	P43937	0	8	Uncharacterized protein HI_0082	
+P43939	haemophilus-influenzae	P43939	HI_0094	P43939	2	58	Uncharacterized protein HI_0094	
+P43940	haemophilus-influenzae	P43940	HI_0096	P43940	0	4	Uncharacterized protein HI_0096	
+P43948	haemophilus-influenzae	P43948	mpl	P43948	0	1	UDP-N-acetylmuramate--L-alanyl-gamma-D-glutamyl-meso-2,6-dia	
+P43951	haemophilus-influenzae	P43951	HI_0131	P43951	1	6	Uncharacterized protein HI_0131	
+P43954	haemophilus-influenzae	P43954	HI_0152	P43954	1	1	Putative 4'-phosphopantetheinyl transferase HI_0152	
+P43955	haemophilus-influenzae	P43955	nqrA	P43955	2	5	Na(+)-translocating NADH-quinone reductase subunit A	
+P43957	haemophilus-influenzae	P43957	nqrC	P43957	1	5	Na(+)-translocating NADH-quinone reductase subunit C	
+P43958	haemophilus-influenzae	P43958	nqrD	P43958	2	5	Na(+)-translocating NADH-quinone reductase subunit D	
+P43972	haemophilus-influenzae	P43972	HI_0246	P43972	0	1	Uncharacterized protein HI_0246	
+P43973	haemophilus-influenzae	P43973	HI_0256	P43973	1	3	Outer membrane protein assembly factor BamC homolog	
+P43979	haemophilus-influenzae	P43979	HI_0291	P43979	0	1	Uncharacterized protein HI_0291	
+P43980	haemophilus-influenzae	P43980	HI_0304	P43980	0	1	UPF0301 protein HI_0304	
+P43987	haemophilus-influenzae	P43987	priC	P43987	0	2	Replication restart protein PriC	
+P43988	haemophilus-influenzae	P43988	HI_0366	P43988	1	3	Uncharacterized protein HI_0366	
+P43990	haemophilus-influenzae	P43990	tsaB	P43990	2	2	tRNA threonylcarbamoyladenosine biosynthesis protein TsaB	
+P43995	haemophilus-influenzae	P43995	tacA	P43995	0	2	Orphan antixoxin protein TacA	
+P43998	haemophilus-influenzae	P43998	HI_0451	P43998	1	1	Uncharacterized protein HI_0451	
+P43999	haemophilus-influenzae	P43999	HI_0453	P43999	0	2	Uncharacterized protein HI_0453	
+P43K	virus	P26579	P43K	P26579	6	162	Envelope protein F13 homolog	

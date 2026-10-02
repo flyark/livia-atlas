@@ -1,19 +1,58 @@
-RIO1	cladophialophora-carrionii	A0A1C1CII8	rio1	A0A1C1CII8	0	64	Serine/threonine-protein kinase RIO1
-RIO1	dictyostelium-discoideum	Q54VD8	rio1	Q54VD8	1	64	Serine/threonine-protein kinase rio1
-RIO1	methanocaldococcus-jannaschii	Q57886	rio1	Q57886	0	6	RIO-type serine/threonine-protein kinase Rio1
-RIO1	schizosaccharomyces-pombe	O42650	rio1	O42650	1	52	Serine/threonine-protein kinase rio1
-RIO2	candida-albicans-237561	Q5A396	RIO2	Q5A396	4	78	Serine/threonine-protein kinase RIO2
-RIO2	cladophialophora-carrionii	A0A1C1C903	rio2	A0A1C1C903	4	73	Serine/threonine-protein kinase RIO2
-RIO2	dictyostelium-discoideum	Q54T05	rio2	Q54T05	10	85	Serine/threonine-protein kinase rio2
-RIO2	methanocaldococcus-jannaschii	Q58473	rio2	Q58473	0	23	RIO-type serine/threonine-protein kinase Rio2
-RIO2	schizosaccharomyces-pombe	Q9P7W5	rio2	Q9P7W5	4	89	Serine/threonine-protein kinase rio2
-RIOK1	mus-musculus	Q922Q2	Riok1	Q922Q2	3	80	Serine/threonine-protein kinase RIO1
-RIOK1	rattus-norvegicus	A0A0G2K5L3	Riok1	A0A0G2K5L3	1	139	Serine/threonine-protein kinase RIO1
-RIOK2	mus-musculus	Q9CQS5	Riok2	Q9CQS5	12	89	Serine/threonine-protein kinase RIO2
-RIOK2	rattus-norvegicus	A6KB61	Riok2	A6KB61	23	179	Serine/threonine-protein kinase RIO2
-RIOK3	mus-musculus	Q9DBU3	Riok3	Q9DBU3	3	40	Serine/threonine-protein kinase RIO3
-RIOK3	rattus-norvegicus	D3ZND9	Riok3	D3ZND9	4	66	Serine/threonine-protein kinase RIO3
-RIOX1	mus-musculus	Q9JJF3	Riox1	Q9JJF3	1	10	Ribosomal oxygenase 1
-RIOX1	rattus-norvegicus	D3ZU57	Riox1	D3ZU57	0	13	Ribosomal oxygenase 1
-RIOX2	mus-musculus	Q8CD15	Riox2	Q8CD15	0	1	Ribosomal oxygenase 2
-RIOX2	rattus-norvegicus	Q8CFC1	Riox2	Q8CFC1	0	8	Ribosomal oxygenase 2
+RIO1	cladophialophora-carrionii	A0A1C1CII8	rio1	A0A1C1CII8	0	64	Serine/threonine-protein kinase RIO1	
+RIO1	dictyostelium-discoideum	Q54VD8	rio1	Q54VD8	1	64	Serine/threonine-protein kinase rio1	
+RIO1	fly	FBgn0036187	RIOK1	Q9VTL5	89	1166	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1)	w
+RIO1	human	Q9BRS2	RIOK1	Q9BRS2	105	1670		
+RIO1	methanocaldococcus-jannaschii	Q57886	rio1	Q57886	0	6	RIO-type serine/threonine-protein kinase Rio1	
+RIO1	schizosaccharomyces-pombe	O42650	rio1	O42650	1	52	Serine/threonine-protein kinase rio1	
+RIO1	worm	O44959	riok-1	O44959	7	58	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1)	w
+RIO1	yeast	Q12196	RIO1	Q12196	6	158	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1) (EC 3.6.1	
+RIO1	zebrafish	Q7ZV65	riok1	Q7ZV65	2	18	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1)	w
+RIO1_YEAST	yeast	Q12196	RIO1	Q12196	6	158		
+RIO2	candida-albicans-237561	Q5A396	RIO2	Q5A396	4	78	Serine/threonine-protein kinase RIO2	
+RIO2	cladophialophora-carrionii	A0A1C1C903	rio2	A0A1C1C903	4	73	Serine/threonine-protein kinase RIO2	
+RIO2	dictyostelium-discoideum	Q54T05	rio2	Q54T05	10	85	Serine/threonine-protein kinase rio2	
+RIO2	human	Q9BVS4	RIOK2	Q9BVS4	259	1496		
+RIO2	methanocaldococcus-jannaschii	Q58473	rio2	Q58473	0	23	RIO-type serine/threonine-protein kinase Rio2	
+RIO2	schizosaccharomyces-pombe	Q9P7W5	rio2	Q9P7W5	4	89	Serine/threonine-protein kinase rio2	
+RIO2	worm	Q95Q34	riok-2	Q95Q34	15	97	Serine/threonine-protein kinase RIO2 (EC 2.7.11.1)	w
+RIO2	yeast	P40160	RIO2	P40160	9	148	Serine/threonine-protein kinase RIO2 (EC 2.7.11.1)	
+RIO2	zebrafish	A5WUT7	riok2	A5WUT7	22	132	Serine/threonine-protein kinase RIO2 (EC 2.7.11.1) (RIO kina	w
+RIO2_YEAST	yeast	P40160	RIO2	P40160	9	148		
+RIO3	fly	FBgn0031643	CG3008	Q9VR42	75	1190	Serine/threonine-protein kinase RIO3 (EC 2.7.11.1)	w
+RIO3	human	O14730	RIOK3	O14730	81	1274	Serine/threonine-protein kinase RIO3 (EC 2.7.11.1) (RIO kina	w
+RIO3	worm	P34649	riok-3	P34649	4	28	Serine/threonine-protein kinase RIO3 (EC 2.7.11.1)	w
+RIO3	zebrafish	Q6DEK0	riok3	Q6DEK0	3	15	Serine/threonine-protein kinase RIO3 (EC 2.7.11.1)	w
+RIOK-1	worm	O44959	riok-1	O44959	7	58	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1)	
+RIOK-2	worm	Q95Q34	riok-2	Q95Q34	15	97	Serine/threonine-protein kinase RIO2 (EC 2.7.11.1)	
+RIOK-3	worm	P34649	riok-3	P34649	4	28	Serine/threonine-protein kinase RIO3 (EC 2.7.11.1)	
+RIOK1	fly	FBgn0036187	RIOK1	Q9VTL5	89	1166	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1)	
+RIOK1	human	Q9BRS2	RIOK1	Q9BRS2	105	1670	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1) (EC 3.6.1	
+RIOK1	mus-musculus	Q922Q2	Riok1	Q922Q2	3	80	Serine/threonine-protein kinase RIO1	
+RIOK1	rattus-norvegicus	A0A0G2K5L3	Riok1	A0A0G2K5L3	1	139	Serine/threonine-protein kinase RIO1	
+RIOK1	zebrafish	Q7ZV65	riok1	Q7ZV65	2	18	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1)	
+RIOK1_546	fly	FBgn0036187	RIOK1	Q9VTL5	89	1166		
+RIOK1_CAEEL	worm	O44959	riok-1	O44959	7	58		
+RIOK1_HUMAN	human	Q9BRS2	RIOK1	Q9BRS2	105	1670		
+RIOK2	fly	FBgn0039306	RIOK2	Q9VBU2	201	1186	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+RIOK2	human	Q9BVS4	RIOK2	Q9BVS4	259	1496	Serine/threonine-protein kinase RIO2 (EC 2.7.11.1) (RIO kina	
+RIOK2	mus-musculus	Q9CQS5	Riok2	Q9CQS5	12	89	Serine/threonine-protein kinase RIO2	
+RIOK2	rattus-norvegicus	A6KB61	Riok2	A6KB61	23	179	Serine/threonine-protein kinase RIO2	
+RIOK2	zebrafish	A5WUT7	riok2	A5WUT7	22	132	Serine/threonine-protein kinase RIO2 (EC 2.7.11.1) (RIO kina	
+RIOK2_CAEEL	worm	Q95Q34	riok-2	Q95Q34	15	97		
+RIOK2_HUMAN	human	Q9BVS4	RIOK2	Q9BVS4	259	1496		
+RIOK3	human	O14730	RIOK3	O14730	81	1274	Serine/threonine-protein kinase RIO3 (EC 2.7.11.1) (RIO kina	
+RIOK3	mus-musculus	Q9DBU3	Riok3	Q9DBU3	3	40	Serine/threonine-protein kinase RIO3	
+RIOK3	rattus-norvegicus	D3ZND9	Riok3	D3ZND9	4	66	Serine/threonine-protein kinase RIO3	
+RIOK3	zebrafish	Q6DEK0	riok3	Q6DEK0	3	15	Serine/threonine-protein kinase RIO3 (EC 2.7.11.1)	
+RIOK3_CAEEL	worm	P34649	riok-3	P34649	4	28		
+RIOK3_HUMAN	human	O14730	RIOK3	O14730	81	1274		
+RIOX1	human	Q9H6W3	RIOX1	Q9H6W3	10	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	
+RIOX1	mus-musculus	Q9JJF3	Riox1	Q9JJF3	1	10	Ribosomal oxygenase 1	
+RIOX1	rattus-norvegicus	D3ZU57	Riox1	D3ZU57	0	13	Ribosomal oxygenase 1	
+RIOX1	zebrafish	A3KP59	riox1	A3KP59	0	6	Ribosomal oxygenase 1	
+RIOX1_HUMAN	human	Q9H6W3	RIOX1	Q9H6W3	10	112		
+RIOX2	human	Q8IUF8	RIOX2	Q8IUF8	14	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	
+RIOX2	mus-musculus	Q8CD15	Riox2	Q8CD15	0	1	Ribosomal oxygenase 2	
+RIOX2	rattus-norvegicus	Q8CFC1	Riox2	Q8CFC1	0	8	Ribosomal oxygenase 2	
+RIOX2	zebrafish	A0AB32TXY1	riox2	A0AB32TXY1	0	5	Bifunctional lysine-specific demethylase and histidyl-hydrox	
+RIOX2_HUMAN	human	Q8IUF8	RIOX2	Q8IUF8	14	130		

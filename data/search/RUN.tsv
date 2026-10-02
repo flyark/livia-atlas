@@ -1,11 +1,54 @@
-RUNDC3A	mus-musculus	O08576	Rundc3a	O08576	0	2	RUN domain-containing protein 3A
-RUNDC3A	rattus-norvegicus	F1LRZ9	Rundc3a	F1LRZ9	2	8	RUN domain-containing protein 3A
-RUNDC3B	mus-musculus	Q6PDC0	Rundc3b	Q6PDC0	2	2	RUN domain-containing protein 3B
-RUNDC3B	rattus-norvegicus	Q3B7K9	Rundc3b	Q3B7K9	2	8	RUN domain-containing protein 3B
-RUNX1	mus-musculus	Q03347	Runx1	Q03347	9	173	Runt-related transcription factor 1
-RUNX1	rattus-norvegicus	Q63046	Runx1	Q63046	18	161	Runt-related transcription factor 1
-RUNX1T1	mus-musculus	Q61909	Runx1t1	Q61909	8	25	Protein CBFA2T1
-RUNX1T1	rattus-norvegicus	A0A0G2K0G0	Runx1t1	A0A0G2K0G0	4	51	RUNX1 partner transcriptional co-repressor 1
-RUNX2	mus-musculus	Q08775	Runx2	Q08775	9	133	Runt-related transcription factor 2
-RUNX2	rattus-norvegicus	Q9Z2J9	Runx2	Q9Z2J9	4	144	Runt-related transcription factor 2
-RUNX3	mus-musculus	Q64131	Runx3	Q64131	5	68	Runt-related transcription factor 3
+RUN	fly	FBgn0003300	run	P22814	83	459	Segmentation protein Runt	
+RUN3A_HUMAN	human	Q59EK9	RUNDC3A	Q59EK9	40	140		
+RUN3B_HUMAN	human	Q96NL0	RUNDC3B	Q96NL0	8	64		
+RUND-1	worm	Q22585	rund-1	Q22585	0	5	RUN domain-containing protein	
+RUND1_HUMAN	human	Q96C34	RUNDC1	Q96C34	5	27		
+RUNDC1	human	Q96C34	RUNDC1	Q96C34	5	27	RUN domain-containing protein 1	
+RUNDC2A	human	Q8TEQ0	SNX29	Q8TEQ0	18	105		
+RUNDC2C	human	Q8IUI4	SNX29P2	Q8IUI4	0	1		
+RUNDC3A	human	Q59EK9	RUNDC3A	Q59EK9	40	140	RUN domain-containing protein 3A (Rap2-interacting protein 8	
+RUNDC3A	mus-musculus	O08576	Rundc3a	O08576	0	2	RUN domain-containing protein 3A	
+RUNDC3A	rattus-norvegicus	F1LRZ9	Rundc3a	F1LRZ9	2	8	RUN domain-containing protein 3A	
+RUNDC3A	zebrafish	A7YDW0	rundc3a	A7YDW0	0	11	RUN domain-containing protein 3A	
+RUNDC3AA	zebrafish	F1QCE8	rundc3aa	F1QCE8	0	11	RUN domain-containing protein 3A	
+RUNDC3B	human	Q96NL0	RUNDC3B	Q96NL0	8	64	RUN domain-containing protein 3B (Rap2-binding protein 9) (R	
+RUNDC3B	mus-musculus	Q6PDC0	Rundc3b	Q6PDC0	2	2	RUN domain-containing protein 3B	
+RUNDC3B	rattus-norvegicus	Q3B7K9	Rundc3b	Q3B7K9	2	8	RUN domain-containing protein 3B	
+RUNDC3B	zebrafish	Q5U3W3	rundc3b	Q5U3W3	0	6	RUN domain-containing protein 3B	
+RUNT	fly	FBgn0003300	run	P22814	83	459	Segmentation protein Runt	w
+RUNT	fly	FBgn0083981	RunxA	M9PI08	57	351	Runt related A, isoform D	w
+RUNT	fly	FBgn0259162	RunxB	Q9VRA9	95	409	Runt related B	w
+RUNT-RELATED	human	Q01196	RUNX1	Q01196	169	678	Runt-related transcription factor 1 (Acute myeloid leukemia 	w
+RUNT-RELATED	human	Q13761	RUNX3	Q13761	127	466	Runt-related transcription factor 3 (Acute myeloid leukemia 	w
+RUNT-RELATED	human	Q13950	RUNX2	Q13950	120	508	Runt-related transcription factor 2 (Acute myeloid leukemia 	w
+RUNT-RELATED	human	Q92794	KAT6A	Q92794	104	588	Histone acetyltransferase KAT6A (EC 2.3.1.48) (MOZ, YBF2/SAS	w
+RUNT-RELATED	worm	G5EFQ5	rnt-1	G5EFQ5	6	94	Runt-related transcription factor rnt-1	w
+RUNT-RELATED	zebrafish	A0AB32T1U3	runx3	A0AB32T1U3	6	59	Runt-related transcription factor	w
+RUNT-RELATED	zebrafish	A0AB32T797	runx2a	A0AB32T797	5	56	Runt-related transcription factor	w
+RUNT-RELATED	zebrafish	A0AB32TDW2	runx2b	A0AB32TDW2	4	45	Runt-related transcription factor	w
+RUNT-RELATED	zebrafish	Q9DGB8	runx1	Q9DGB8	8	113	Runt-related transcription factor	w
+RUNX1	human	A0A0A0MSU1	RUNX1T1	A0A0A0MSU1	8	59	RUNX1 partner transcriptional co-repressor 1	w
+RUNX1	human	Q01196	RUNX1	Q01196	169	678	Runt-related transcription factor 1 (Acute myeloid leukemia 	
+RUNX1	mus-musculus	Q03347	Runx1	Q03347	9	173	Runt-related transcription factor 1	
+RUNX1	rattus-norvegicus	Q63046	Runx1	Q63046	18	161	Runt-related transcription factor 1	
+RUNX1	zebrafish	A0A8M3BBB7	cbfa2t3	A0A8M3BBB7	4	60	CBFA2/RUNX1 partner transcriptional co-repressor 3	w
+RUNX1	zebrafish	Q9DGB8	runx1	Q9DGB8	8	113	Runt-related transcription factor	
+RUNX1T1	human	A0A0A0MSU1	RUNX1T1	A0A0A0MSU1	8	59	RUNX1 partner transcriptional co-repressor 1	
+RUNX1T1	human	Q06455	RUNX1T1	Q06455	40	129	Protein CBFA2T1 (Cyclin-D-related protein) (Eight twenty one	
+RUNX1T1	mus-musculus	Q61909	Runx1t1	Q61909	8	25	Protein CBFA2T1	
+RUNX1T1	rattus-norvegicus	A0A0G2K0G0	Runx1t1	A0A0G2K0G0	4	51	RUNX1 partner transcriptional co-repressor 1	
+RUNX1T1	zebrafish	Q1L8K2	runx1t1	Q1L8K2	5	56	Protein CBFA2T1	
+RUNX1_HUMAN	human	Q01196	RUNX1	Q01196	169	678		
+RUNX2	human	Q13950	RUNX2	Q13950	120	508	Runt-related transcription factor 2 (Acute myeloid leukemia 	
+RUNX2	mus-musculus	Q08775	Runx2	Q08775	9	133	Runt-related transcription factor 2	
+RUNX2	rattus-norvegicus	Q9Z2J9	Runx2	Q9Z2J9	4	144	Runt-related transcription factor 2	
+RUNX2A	zebrafish	A0AB32T797	runx2a	A0AB32T797	5	56	Runt-related transcription factor	
+RUNX2B	zebrafish	A0AB32TDW2	runx2b	A0AB32TDW2	4	45	Runt-related transcription factor	
+RUNX2_HUMAN	human	Q13950	RUNX2	Q13950	120	508		
+RUNX3	human	Q13761	RUNX3	Q13761	127	466	Runt-related transcription factor 3 (Acute myeloid leukemia 	
+RUNX3	mus-musculus	Q64131	Runx3	Q64131	5	68	Runt-related transcription factor 3	
+RUNX3	zebrafish	A0AB32T1U3	runx3	A0AB32T1U3	6	59	Runt-related transcription factor	
+RUNX3_HUMAN	human	Q13761	RUNX3	Q13761	127	466		
+RUNXA	fly	FBgn0083981	RunxA	M9PI08	57	351	Runt related A, isoform D	
+RUNXB	fly	FBgn0259162	RunxB	Q9VRA9	95	409	Runt related B	
+RUNXBP2	human	Q92794	KAT6A	Q92794	104	588		

@@ -1,23 +1,119 @@
-MIS1	cladophialophora-carrionii	A0A1C1CFY2	MIS1	A0A1C1CFY2	0	12	C-1-tetrahydrofolate synthase, cytoplasmic
-MIS11	candida-albicans-237561	Q59SM8	MIS11	Q59SM8	1	5	C-1-tetrahydrofolate synthase, cytoplasmic
-MIS12	arabidopsis-thaliana	Q2V0Z5	MIS12	Q2V0Z5	1	1	Protein MIS12 homolog
-MIS12	candida-albicans-237561	A0A1D8PRL4	MIS12	A0A1D8PRL4	1	5	Mis12p
-MIS12	mus-musculus	Q9CY25	Mis12	Q9CY25	9	21	Protein MIS12 homolog
-MIS12	rattus-norvegicus	Q7TQ72	Mis12	Q7TQ72	8	23	Protein MIS12 homolog
-MIS12	schizosaccharomyces-pombe	Q9Y738	mis12	Q9Y738	8	33	Centromere protein mis12
-MIS13	schizosaccharomyces-pombe	Q9UUB5	mis13	Q9UUB5	8	25	Kinetochore protein mis13
-MIS14	schizosaccharomyces-pombe	Q9P6M3	mis14	Q9P6M3	7	36	Kinetochore protein mis14
-MIS15	schizosaccharomyces-pombe	Q9C0W0	mis15	Q9C0W0	2	21	Inner kinetochore subunit mis15
-MIS16	schizosaccharomyces-pombe	O94244	mis16	O94244	4	38	Histone acetyltransferase type B subunit 2
-MIS17	schizosaccharomyces-pombe	O94643	mis17	O94643	7	23	Inner kinetochore subunit mis17
-MIS18	schizosaccharomyces-pombe	Q9P802	mis18	Q9P802	0	4	Kinetochore protein mis18
-MIS18A	mus-musculus	Q9CZJ6	Mis18a	Q9CZJ6	3	27	Protein Mis18-alpha
-MIS18A	rattus-norvegicus	B2RZC4	Mis18a	B2RZC4	6	24	Protein Mis18-alpha
-MIS18BP1	mus-musculus	Q80WQ8	Mis18bp1	Q80WQ8	7	40	Mis18-binding protein 1
-MIS18BP1	rattus-norvegicus	D3ZKM9	Mis18bp1	D3ZKM9	3	22	Mis18-binding protein 1
-MIS19	schizosaccharomyces-pombe	O42995	mis19	O42995	0	6	CENP-A recruiting complex protein mis19
-MIS20	schizosaccharomyces-pombe	O94682	mis20	O94682	0	3	CENP-A recruiting complex protein mis20
-MIS3	schizosaccharomyces-pombe	O74777	mis3	O74777	15	116	KRR1 small subunit processome component homolog
-MIS6	schizosaccharomyces-pombe	P87227	mis6	P87227	8	49	Inner kinetochore subunit mis6
-MISP	mus-musculus	Q9D279	Misp	Q9D279	0	1	Mitotic interactor and substrate of PLK1
-MISP3	mus-musculus	A0A087WQ89	Misp3	A0A087WQ89	0	1	MISP family member 3
+MIS-12	worm	Q9N3R7	mis-12	Q9N3R7	3	27	Human/fission yeast MIS (MInichromosome Stability) homolog	
+MIS1	cladophialophora-carrionii	A0A1C1CFY2	MIS1	A0A1C1CFY2	0	12	C-1-tetrahydrofolate synthase, cytoplasmic	
+MIS1	yeast	P09440	MIS1	P09440	2	88	C-1-tetrahydrofolate synthase, mitochondrial	
+MIS11	candida-albicans-237561	Q59SM8	MIS11	Q59SM8	1	5	C-1-tetrahydrofolate synthase, cytoplasmic	
+MIS12	arabidopsis-thaliana	Q2V0Z5	MIS12	Q2V0Z5	1	1	Protein MIS12 homolog	
+MIS12	candida-albicans-237561	A0A1D8PRL4	MIS12	A0A1D8PRL4	1	5	Mis12p	
+MIS12	fly	FBgn0035725	Mis12	Q9VS01	6	20	Mis12 (RE19545p)	w
+MIS12	fly	FBgn0035725	Mis12	Q9VS01	6	20	Mis12 (RE19545p)	w
+MIS12	human	Q9H081	MIS12	Q9H081	36	254	Protein MIS12 homolog	
+MIS12	mus-musculus	Q9CY25	Mis12	Q9CY25	9	21	Protein MIS12 homolog	
+MIS12	rattus-norvegicus	Q7TQ72	Mis12	Q7TQ72	8	23	Protein MIS12 homolog	
+MIS12	schizosaccharomyces-pombe	Q9Y738	mis12	Q9Y738	8	33	Centromere protein mis12	
+MIS12	zebrafish	E7FD92	dsn1	E7FD92	5	42	DSN1 component of MIS12 kinetochore complex	w
+MIS12-NDC80	fly	FBgn0027259	Kmn1	Q9VYX4	6	11	CG1558-RA protein (Kinetochore Mis12-Ndc80 network component	w
+MIS12-NDC80	fly	FBgn0266598	Kmn2	Q6IKI1	0	7	HDC12388 (Kinetochore Mis12-Ndc80 network component 2, isofo	w
+MIS12_HUMAN	human	Q9H081	MIS12	Q9H081	36	254		
+MIS13	human	Q9H410	DSN1	Q9H410	33	259		
+MIS13	schizosaccharomyces-pombe	Q9UUB5	mis13	Q9UUB5	8	25	Kinetochore protein mis13	
+MIS14	schizosaccharomyces-pombe	Q9P6M3	mis14	Q9P6M3	7	36	Kinetochore protein mis14	
+MIS15	schizosaccharomyces-pombe	Q9C0W0	mis15	Q9C0W0	2	21	Inner kinetochore subunit mis15	
+MIS16	schizosaccharomyces-pombe	O94244	mis16	O94244	4	38	Histone acetyltransferase type B subunit 2	
+MIS17	schizosaccharomyces-pombe	O94643	mis17	O94643	7	23	Inner kinetochore subunit mis17	
+MIS18	schizosaccharomyces-pombe	Q9P802	mis18	Q9P802	0	4	Kinetochore protein mis18	
+MIS18-ALPHA	human	Q9NYP9	MIS18A	Q9NYP9	37	249	Protein Mis18-alpha (FAPP1-associated protein 1)	w
+MIS18-ALPHA	zebrafish	A0A8M9PYB8	mis18a	A0A8M9PYB8	3	27	Protein Mis18-alpha	w
+MIS18-BETA	human	O43482	OIP5	O43482	85	428	Protein Mis18-beta (Cancer/testis antigen 86) (CT86) (Opa-in	w
+MIS18-BINDING	human	Q6P0N0	MIS18BP1	Q6P0N0	72	321	Mis18-binding protein 1 (Kinetochore-associated protein KNL-	w
+MIS18-BINDING	zebrafish	F1RAN4	mis18bp1	F1RAN4	4	28	Mis18-binding protein 1	w
+MIS18A	human	Q9NYP9	MIS18A	Q9NYP9	37	249	Protein Mis18-alpha (FAPP1-associated protein 1)	
+MIS18A	mus-musculus	Q9CZJ6	Mis18a	Q9CZJ6	3	27	Protein Mis18-alpha	
+MIS18A	rattus-norvegicus	B2RZC4	Mis18a	B2RZC4	6	24	Protein Mis18-alpha	
+MIS18A	zebrafish	A0A8M9PYB8	mis18a	A0A8M9PYB8	3	27	Protein Mis18-alpha	
+MIS18B	human	O43482	OIP5	O43482	85	428		
+MIS18BP1	human	Q6P0N0	MIS18BP1	Q6P0N0	72	321	Mis18-binding protein 1 (Kinetochore-associated protein KNL-	
+MIS18BP1	mus-musculus	Q80WQ8	Mis18bp1	Q80WQ8	7	40	Mis18-binding protein 1	
+MIS18BP1	rattus-norvegicus	D3ZKM9	Mis18bp1	D3ZKM9	3	22	Mis18-binding protein 1	
+MIS18BP1	zebrafish	F1RAN4	mis18bp1	F1RAN4	4	28	Mis18-binding protein 1	
+MIS19	schizosaccharomyces-pombe	O42995	mis19	O42995	0	6	CENP-A recruiting complex protein mis19	
+MIS20	schizosaccharomyces-pombe	O94682	mis20	O94682	0	3	CENP-A recruiting complex protein mis20	
+MIS3	schizosaccharomyces-pombe	O74777	mis3	O74777	15	116	KRR1 small subunit processome component homolog	
+MIS6	schizosaccharomyces-pombe	P87227	mis6	P87227	8	49	Inner kinetochore subunit mis6	
+MISATO	fly	FBgn0020272	mst	O01939	4	22	Protein misato	w
+MISATO	human	Q9BUK6	MSTO1	Q9BUK6	3	75	Protein misato homolog 1	w
+MISATO	zebrafish	Q1L908	msto1	Q1L908	0	2	Protein misato homolog 1	w
+MISC-1	worm	P90992	misc-1	P90992	0	15	Mitochondrial 2-oxoglutarate/malate carrier protein	
+MISEXPRESSION	fly	FBgn0021760	chb	Q9NBD7	5	38	CLIP-associating protein (Misexpression suppressor of ras 7)	w
+MISEXPRESSION	fly	FBgn0032694	MESR3	M9PDC4	1	5	Misexpression suppressor of ras 3, isoform B	w
+MISEXPRESSION	fly	FBgn0034240	MESR4	A1ZAV3	3	12	Misexpression suppressor of ras 4, isoform A (Misexpression 	w
+MISEXPRESSION	fly	FBgn0036846	MESR6	M9PI97	2	4	Misexpression suppressor of ras 6, isoform B	w
+MISEXPRESSION	fly	FBgn0043069	MESK4	Q9GU54	0	1	LD15753p (Misexpression suppressor of KSR) (Misexpression su	w
+MISEXPRESSION	fly	FBgn0043070	MESK2	Q9GU50	5	43	GH09802p (Misexpression suppressor of KSR)	w
+MISEXPRESSION	fly	FBgn0051274	CG31274	Q9GU54	4	88	LD15753p (Misexpression suppressor of KSR) (Misexpression su	w
+MISFA	human	A0A0U1RRN3	MISFA	A0A0U1RRN3	4	15	Mitochondrial sheath formation-associated protein (Putative 	
+MISFA_HUMAN	human	A0A0U1RRN3	MISFA	A0A0U1RRN3	4	15		
+MISFIRE	fly	FBgn0266757	mfr	B7Z0E5	0	8	Misfire, isoform F	w
+MISMATCH	fly	FBgn0015546	spel1	P43248	6	71	DNA mismatch repair protein spellchecker 1	w
+MISMATCH	fly	FBgn0026869	Tdg	Q9V4D8	16	67	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
+MISMATCH	fly	FBgn0036486	Msh6	Q9VUM0	4	49	Probable DNA mismatch repair protein Msh6	w
+MISMATCH	human	P20585	MSH3	P20585	15	155	DNA mismatch repair protein Msh3 (hMSH3) (Divergent upstream	w
+MISMATCH	human	P40692	MLH1	P40692	50	342	DNA mismatch repair protein Mlh1 (MutL protein homolog 1)	w
+MISMATCH	human	P43246	MSH2	P43246	31	402	DNA mismatch repair protein Msh2 (hMSH2) (MutS protein homol	w
+MISMATCH	human	P52701	MSH6	P52701	24	343	DNA mismatch repair protein Msh6 (hMSH6) (G/T mismatch-bindi	w
+MISMATCH	human	P54277	PMS1	P54277	32	200	PMS1 protein homolog 1 (DNA mismatch repair protein PMS1)	w
+MISMATCH	human	P54278	PMS2	P54278	24	194	Mismatch repair endonuclease PMS2 (EC 3.1.-.-) (DNA mismatch	w
+MISMATCH	human	Q9UHC1	MLH3	Q9UHC1	17	153	DNA mismatch repair protein Mlh3 (MutL protein homolog 3)	w
+MISMATCH	virus	Q91MW0	LSDV047	Q91MW0	2	153	Telomere mismatch binding protein	w
+MISMATCH	worm	G5EFG5	pms-2	G5EFG5	4	39	Mismatch repair endonuclease PMS2	w
+MISMATCH	worm	Q9N3T8	msh-6	Q9N3T8	5	42	DNA mismatch repair protein	w
+MISMATCH	worm	Q9TXR4	msh-2	Q9TXR4	7	69	DNA mismatch repair proteins mutS family domain-containing p	w
+MISMATCH	worm	Q9XU10	mlh-1	Q9XU10	6	42	DNA mismatch repair protein S5 domain-containing protein	w
+MISMATCH	yeast	P14242	PMS1	P14242	7	51	DNA mismatch repair protein PMS1	w
+MISMATCH	yeast	P25336	MSH3	P25336	9	72	DNA mismatch repair protein MSH3	w
+MISMATCH	yeast	P25846	MSH1	P25846	5	36	DNA mismatch repair protein MSH1, mitochondrial	w
+MISMATCH	yeast	P25847	MSH2	P25847	12	86	DNA mismatch repair protein MSH2	w
+MISMATCH	yeast	P38348	HSM3	P38348	1	47	DNA mismatch repair protein HSM3	w
+MISMATCH	yeast	P38920	MLH1	P38920	18	58	DNA mismatch repair protein MLH1	w
+MISMATCH	yeast	Q03834	MSH6	Q03834	10	84	DNA mismatch repair protein MSH6	w
+MISMATCH	yeast	Q07980	MLH2	Q07980	4	55	DNA mismatch repair protein MLH2	w
+MISMATCH	yeast	Q12083	MLH3	Q12083	4	47	DNA mismatch repair protein MLH3	w
+MISMATCH	zebrafish	A0A288CFS8	msh3	A0A288CFS8	4	47	DNA mismatch repair protein MSH3	w
+MISMATCH	zebrafish	A0AB13AAI6	mlh1	A0AB13AAI6	11	45	DNA mismatch repair protein MLH1	w
+MISMATCH	zebrafish	E7F558	pms2	E7F558	3	49	Mismatch repair endonuclease PMS2	w
+MISMATCH-BINDING	human	P52701	MSH6	P52701	24	343	DNA mismatch repair protein Msh6 (hMSH6) (G/T mismatch-bindi	w
+MISMATCH-SPECIFIC	human	O95243	MBD4	O95243	15	108	Methyl-CpG-binding domain protein 4 (EC 3.2.2.-) (Methyl-CpG	w
+MISMATCH-SPECIFIC	human	Q13569	TDG	Q13569	53	448	G/T mismatch-specific thymine DNA glycosylase (EC 3.2.2.29) 	w
+MISMATCH-SPECIFIC	zebrafish	Q503G3	tdg.1	Q503G3	4	18	G/T mismatch-specific thymine DNA glycosylase	w
+MISMATCH-SPECIFIC	zebrafish	X1WBY3	tdg.2	X1WBY3	4	18	G/T mismatch-specific thymine DNA glycosylase	w
+MISO	fly	FBgn0265184	miso	A0A0B4LGA2	7	119	RRM domain-containing protein	
+MISO	human	Q6P1S2	MISO1	Q6P1S2	2	33		
+MISO1	fly	FBgn0050159	Miso1	Q7K332	41	248	GH17623p	
+MISO1	human	Q6P1S2	MISO1	Q6P1S2	2	33	Mitochondrial inner membrane subdomain organizer 1 (Protein 	
+MISP	human	Q8IVT2	MISP	Q8IVT2	38	188	Mitotic interactor and substrate of PLK1 (Mitotic spindle po	
+MISP	human	Q96FF7	MISP3	Q96FF7	1	19	Uncharacterized protein MISP3 (MISP family member 3)	w
+MISP	mus-musculus	Q9D279	Misp	Q9D279	0	1	Mitotic interactor and substrate of PLK1	
+MISP3	human	Q96FF7	MISP3	Q96FF7	1	19	Uncharacterized protein MISP3 (MISP family member 3)	
+MISP3	mus-musculus	A0A087WQ89	Misp3	A0A087WQ89	0	1	MISP family member 3	
+MISP3_HUMAN	human	Q96FF7	MISP3	Q96FF7	1	19		
+MISP_HUMAN	human	Q8IVT2	MISP	Q8IVT2	38	188		
+MISR2	human	Q16671	AMHR2	Q16671	356	1284		
+MISRII	human	Q16671	AMHR2	Q16671	356	1284	Anti-Muellerian hormone type-2 receptor (EC 2.7.11.30) (Anti	w
+MISSHAPEN	human	Q8N4C8	MINK1	Q8N4C8	70	305	Misshapen-like kinase 1 (EC 2.7.11.1) (GCK family kinase MiN	w
+MISSHAPEN-LIKE	human	Q8N4C8	MINK1	Q8N4C8	70	305	Misshapen-like kinase 1 (EC 2.7.11.1) (GCK family kinase MiN	w
+MISSING	fly	FBgn0002044	swm	M9PDF2	7	12	Second mitotic wave missing, isoform C (Second mitotic wave 	w
+MISSING	fly	FBgn0014179	gcm	Q27403	82	410	Transcription factor glial cells missing (Protein glide)	w
+MISSING	fly	FBgn0019809	gcm2	Q9VLA2	79	385	Transcription factor glial cells missing 2 (Protein glide-2)	w
+MISSING	fly	FBgn0024194	rasp	Q9VZU2	6	31	Protein-cysteine N-palmitoyltransferase Rasp (EC 2.3.1.-) (P	w
+MISSING	fly	FBgn0031399	mio	Q9VQ89	7	72	GATOR2 complex protein MIOS (Missing oocyte protein)	w
+MISSING	fly	FBgn0035799	mmm	Q9VS90	5	18	Missing minor mitochondria	w
+MISSING	human	O43312	MTSS1	O43312	27	171	Protein MTSS 1 (Metastasis suppressor YGL-1) (Metastasis sup	w
+MISSING	human	O75603	GCM2	O75603	58	371	Chorion-specific transcription factor GCMb (hGCMb) (GCM moti	w
+MISSING	human	Q9NP62	GCM1	Q9NP62	78	405	Chorion-specific transcription factor GCMa (hGCMa) (GCM moti	w
+MISSING	human	Q9NXC5	MIOS	Q9NXC5	8	101	GATOR2 complex protein MIOS (Missing oocyte meiosis regulato	w
+MISSING-IN-METASTASIS	fly	FBgn0053558	mim	A0A0B4JCZ8	2	3	Missing-in-metastasis, isoform F	w
+MISSL_HUMAN	human	Q8NDC0	MAPK1IP1L	Q8NDC0	15	186		
+MIST	human	Q7Z7G1	CLNK	Q7Z7G1	16	53		
+MIST-1	human	Q7RTS1	BHLHA15	Q7RTS1	117	470	Class A basic helix-loop-helix protein 15 (bHLHa15) (Class B	w
+MIST1	human	Q7RTS1	BHLHA15	Q7RTS1	117	470		
+MISU	human	Q08J23	NSUN2	Q08J23	33	411	RNA cytosine C(5)-methyltransferase NSUN2 (EC 2.1.1.-) (Myc-	w
+MIS_HUMAN	human	P03971	AMH	P03971	25	102		

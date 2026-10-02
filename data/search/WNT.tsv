@@ -1,37 +1,226 @@
-WNT1	mus-musculus	P04426	Wnt1	P04426	13	47	Proto-oncogene Wnt-1
-WNT1	rattus-norvegicus	D4A9J2	Wnt1	D4A9J2	13	41	Protein Wnt
-WNT10A	mus-musculus	P70701	Wnt10a	P70701	4	9	Protein Wnt-10a
-WNT10A	rattus-norvegicus	D3ZRW5	Wnt10a	D3ZRW5	3	9	Protein Wnt
-WNT10B	mus-musculus	P48614	Wnt10b	P48614	5	15	Protein Wnt-10b
-WNT10B	rattus-norvegicus	A0A0G2K6Q8	Wnt10b	A0A0G2K6Q8	3	12	Protein Wnt
-WNT11	mus-musculus	P48615	Wnt11	P48615	11	48	Protein Wnt-11
-WNT11	rattus-norvegicus	G3V819	Wnt11	G3V819	9	46	Protein Wnt
-WNT16	mus-musculus	Q9QYS1	Wnt16	Q9QYS1	10	17	Protein Wnt-16
-WNT16	rattus-norvegicus	D4A3K6	Wnt16	D4A3K6	10	21	Protein Wnt
-WNT2	mus-musculus	P21552	Wnt2	P21552	14	83	Protein Wnt-2
-WNT2	rattus-norvegicus	A6IE38	Wnt2	A6IE38	14	68	Protein Wnt
-WNT2B	mus-musculus	O70283	Wnt2b	O70283	10	20	Protein Wnt-2b
-WNT2B	rattus-norvegicus	G3V7U3	Wnt2b	G3V7U3	6	12	Protein Wnt
-WNT3	mus-musculus	P17553	Wnt3	P17553	5	22	Proto-oncogene Wnt-3
-WNT3A	mus-musculus	P27467	Wnt3a	P27467	14	72	Protein Wnt-3a
-WNT3A	rattus-norvegicus	F1M077	Wnt3a	F1M077	9	58	Protein Wnt
-WNT4	mus-musculus	P22724	Wnt4	P22724	15	43	Protein Wnt-4
-WNT4	rattus-norvegicus	Q9QXQ5	Wnt4	Q9QXQ5	9	43	Protein Wnt-4
-WNT5A	mus-musculus	P22725	Wnt5a	P22725	15	102	Protein Wnt-5a
-WNT5A	rattus-norvegicus	Q9QXQ7	Wnt5a	Q9QXQ7	9	93	Protein Wnt-5a
-WNT5B	mus-musculus	P22726	Wnt5b	P22726	10	28	Protein Wnt-5b
-WNT5B	rattus-norvegicus	B1WBR9	Wnt5b	B1WBR9	9	31	Protein Wnt
-WNT6	mus-musculus	P22727	Wnt6	P22727	6	14	Protein Wnt-6
-WNT6	rattus-norvegicus	D4A3W9	Wnt6	D4A3W9	6	13	Protein Wnt
-WNT7A	mus-musculus	P24383	Wnt7a	P24383	9	27	Protein Wnt-7a
-WNT7A	rattus-norvegicus	M0R9D3	Wnt7a	M0R9D3	6	21	Protein Wnt
-WNT7B	mus-musculus	P28047	Wnt7b	P28047	10	24	Protein Wnt-7b
-WNT7B	rattus-norvegicus	A0A0G2K3B7	Wnt7b	A0A0G2K3B7	8	20	Protein Wnt
-WNT8A	mus-musculus	Q64527	Wnt8a	Q64527	5	19	Protein Wnt-8a
-WNT8A	rattus-norvegicus	D4A9D7	Wnt8a	D4A9D7	8	16	Protein Wnt
-WNT8B	mus-musculus	Q9WUD6	Wnt8b	Q9WUD6	3	15	Protein Wnt-8b
-WNT8B	rattus-norvegicus	D3ZND6	Wnt8b	D3ZND6	3	11	Protein Wnt
-WNT9A	mus-musculus	Q8R5M2	Wnt9a	Q8R5M2	3	10	Protein Wnt-9a
-WNT9A	rattus-norvegicus	D3ZF63	Wnt9a	D3ZF63	2	3	Protein Wnt
-WNT9B	mus-musculus	O35468	Wnt9b	O35468	5	9	Protein Wnt-9b
-WNT9B	rattus-norvegicus	D3ZFS0	Wnt9b	D3ZFS0	6	11	Protein Wnt
+WNT-1	fly	FBgn0284084	wg	P09615	89	583	Protein wingless (Protein Wnt-1) (Protein int-1) (dInt-1) (d	w
+WNT-1	human	P04628	WNT1	P04628	20	125	Proto-oncogene Wnt-1 (Proto-oncogene Int-1 homolog)	w
+WNT-1	human	Q7L0Q8	RHOU	Q7L0Q8	121	610	Rho-related GTP-binding protein RhoU (EC 3.6.5.2) (CDC42-lik	w
+WNT-1	human	Q96L33	RHOV	Q96L33	122	398	Rho-related GTP-binding protein RhoV (EC 3.6.5.2) (CDC42-lik	w
+WNT-1	worm	P34888	cwn-1	P34888	8	15	Protein Wnt-1	w
+WNT-1	zebrafish	P24257	wnt1	P24257	11	38	Protein Wnt-1	w
+WNT-1-INDUCED	human	O95388	CCN4	O95388	21	195	CCN family member 4 (WNT1-inducible-signaling pathway protei	w
+WNT-10A	human	Q9GZT5	WNT10A	Q9GZT5	18	92	Protein Wnt-10a	w
+WNT-10A	zebrafish	P43446	wnt10a	P43446	1	4	Protein Wnt-10a	w
+WNT-10B	human	O00744	WNT10B	O00744	19	84	Protein Wnt-10b (Protein Wnt-12)	w
+WNT-10B	zebrafish	Q801F7	wnt10b	Q801F7	1	4	Protein Wnt-10b	w
+WNT-11	human	O96014	WNT11	O96014	28	146	Protein Wnt-11	w
+WNT-11	zebrafish	O73864	wnt11	O73864	11	26	Protein Wnt-11	w
+WNT-12	human	O00744	WNT10B	O00744	19	84	Protein Wnt-10b (Protein Wnt-12)	w
+WNT-13	human	Q93097	WNT2B	Q93097	23	90	Protein Wnt-2b (Protein Wnt-13)	w
+WNT-14	human	O14904	WNT9A	O14904	18	55	Protein Wnt-9a (Protein Wnt-14)	w
+WNT-14B	human	O14905	WNT9B	O14905	16	55	Protein Wnt-9b (Protein Wnt-14b) (Protein Wnt-15)	w
+WNT-15	human	O14905	WNT9B	O14905	16	55	Protein Wnt-9b (Protein Wnt-14b) (Protein Wnt-15)	w
+WNT-16	human	Q9UBV4	WNT16	Q9UBV4	17	68	Protein Wnt-16	w
+WNT-2	fly	FBgn0004360	Wnt2	P28465	78	303	Protein Wnt-2 (dWnt-2)	w
+WNT-2	human	P09544	WNT2	P09544	29	170	Protein Wnt-2 (Int-1-like protein 1) (Int-1-related protein)	w
+WNT-2	worm	P34889	cwn-2	P34889	9	36	Protein Wnt-2	w
+WNT-2	zebrafish	Q92048	wnt2	Q92048	10	29	Protein Wnt-2	w
+WNT-2B	human	Q93097	WNT2B	Q93097	23	90	Protein Wnt-2b (Protein Wnt-13)	w
+WNT-3	human	P56703	WNT3	P56703	15	104	Proto-oncogene Wnt-3 (Proto-oncogene Int-4 homolog)	w
+WNT-3A	human	P56704	WNT3A	P56704	36	212	Protein Wnt-3a	w
+WNT-4	fly	FBgn0010453	Wnt4	P40589	70	303	Protein Wnt-4 (dWnt-4)	w
+WNT-4	human	P56705	WNT4	P56705	34	206	Protein Wnt-4	w
+WNT-4A	zebrafish	P47793	wnt4a	P47793	11	31	Protein Wnt-4a	w
+WNT-5	fly	FBgn0010194	Wnt5	P28466	67	290	Protein Wnt-5 (dWnt-3) (dWnt-5)	w
+WNT-5A	human	P41221	WNT5A	P41221	45	265	Protein Wnt-5a	w
+WNT-5B	human	Q9H1J7	WNT5B	Q9H1J7	22	114	Protein Wnt-5b	w
+WNT-5B	zebrafish	Q92050	wnt5b	Q92050	12	34	Protein Wnt-5b	w
+WNT-6	human	Q9Y6F9	WNT6	Q9Y6F9	21	78	Protein Wnt-6	w
+WNT-7A	human	O00755	WNT7A	O00755	26	121	Protein Wnt-7a	w
+WNT-7B	human	P56706	WNT7B	P56706	22	102	Protein Wnt-7b	w
+WNT-8	fly	FBgn0038134	wntD	Q9VFX1	61	288	Wnt inhibitor of Dorsal protein (Protein Wnt-8) (dWnt-8)	w
+WNT-8A	human	Q9H1J5	WNT8A	Q9H1J5	11	60	Protein Wnt-8a (Protein Wnt-8d)	w
+WNT-8A	zebrafish	P51028	wnt8a	P51028	11	23	Protein Wnt-8a	w
+WNT-8B	human	Q93098	WNT8B	Q93098	11	52	Protein Wnt-8b	w
+WNT-8B	zebrafish	P51029	wnt8b	P51029	11	23	Protein Wnt-8b	w
+WNT-8D	human	Q9H1J5	WNT8A	Q9H1J5	11	60	Protein Wnt-8a (Protein Wnt-8d)	w
+WNT-9A	human	O14904	WNT9A	O14904	18	55	Protein Wnt-9a (Protein Wnt-14)	w
+WNT-9B	human	O14905	WNT9B	O14905	16	55	Protein Wnt-9b (Protein Wnt-14b) (Protein Wnt-15)	w
+WNT-ACTIVATED	human	Q13641	TPBG	Q13641	26	166	Trophoblast glycoprotein (5T4 oncofetal antigen) (5T4 oncofe	w
+WNT-SIGNALING	human	Q8NG48	LINS1	Q8NG48	3	34	Protein Lines homolog 1 (Wnt-signaling molecule Lines homolo	w
+WNT-SIGNALING	zebrafish	A2CEU2	dkk3b	A2CEU2	0	9	Dickkopf WNT-signaling pathway inhibitor 3b	w
+WNT1	human	P04628	WNT1	P04628	20	125	Proto-oncogene Wnt-1 (Proto-oncogene Int-1 homolog)	
+WNT1	mus-musculus	P04426	Wnt1	P04426	13	47	Proto-oncogene Wnt-1	
+WNT1	rattus-norvegicus	D4A9J2	Wnt1	D4A9J2	13	41	Protein Wnt	
+WNT1	zebrafish	P24257	wnt1	P24257	11	38	Protein Wnt-1	
+WNT1-INDUCIBLE-SIGNALING	human	O76076	CCN5	O76076	17	101	CCN family member 5 (Connective tissue growth factor-like pr	w
+WNT1-INDUCIBLE-SIGNALING	human	O95388	CCN4	O95388	21	195	CCN family member 4 (WNT1-inducible-signaling pathway protei	w
+WNT1-INDUCIBLE-SIGNALING	human	O95389	CCN6	O95389	6	46	Cellular communication network factor 6 (CCN family member 6	w
+WNT10	fly	FBgn0031903	Wnt10	Q9VM25	42	253	Wnt oncogene analog 10	
+WNT10-PC	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_57_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_60_492	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_60_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_78_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_83_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_85_492	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_85_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_86_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_89_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10-PC_94_414	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10A	human	Q9GZT5	WNT10A	Q9GZT5	18	92	Protein Wnt-10a	
+WNT10A	mus-musculus	P70701	Wnt10a	P70701	4	9	Protein Wnt-10a	
+WNT10A	rattus-norvegicus	D3ZRW5	Wnt10a	D3ZRW5	3	9	Protein Wnt	
+WNT10A	zebrafish	P43446	wnt10a	P43446	1	4	Protein Wnt-10a	
+WNT10B	human	O00744	WNT10B	O00744	19	84	Protein Wnt-10b (Protein Wnt-12)	
+WNT10B	mus-musculus	P48614	Wnt10b	P48614	5	15	Protein Wnt-10b	
+WNT10B	rattus-norvegicus	A0A0G2K6Q8	Wnt10b	A0A0G2K6Q8	3	12	Protein Wnt	
+WNT10B	zebrafish	Q801F7	wnt10b	Q801F7	1	4	Protein Wnt-10b	
+WNT10_83_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT10_86_493	fly	FBgn0031903	Wnt10	Q9VM25	42	253		
+WNT11	human	O96014	WNT11	O96014	28	146	Protein Wnt-11	
+WNT11	mus-musculus	P48615	Wnt11	P48615	11	48	Protein Wnt-11	
+WNT11	rattus-norvegicus	G3V819	Wnt11	G3V819	9	46	Protein Wnt	
+WNT11	zebrafish	O73864	wnt11	O73864	11	26	Protein Wnt-11	
+WNT11	zebrafish	Q9I9I2	wnt11	Q9I9I2	11	46	Protein Wnt	
+WNT11_HUMAN	human	O96014	WNT11	O96014	28	146		
+WNT12	human	O00744	WNT10B	O00744	19	84		
+WNT13	human	Q93097	WNT2B	Q93097	23	90		
+WNT14	human	O14904	WNT9A	O14904	18	55		
+WNT14B	human	O14905	WNT9B	O14905	16	55		
+WNT15	human	O14905	WNT9B	O14905	16	55		
+WNT16	human	Q9UBV4	WNT16	Q9UBV4	17	68	Protein Wnt-16	
+WNT16	mus-musculus	Q9QYS1	Wnt16	Q9QYS1	10	17	Protein Wnt-16	
+WNT16	rattus-norvegicus	D4A3K6	Wnt16	D4A3K6	10	21	Protein Wnt	
+WNT16	zebrafish	A5WVL3	wnt16	A5WVL3	14	27	Protein Wnt	
+WNT16_HUMAN	human	Q9UBV4	WNT16	Q9UBV4	17	68		
+WNT1_HUMAN	human	P04628	WNT1	P04628	20	125		
+WNT2	fly	FBgn0004360	Wnt2	P28465	78	303	Protein Wnt-2 (dWnt-2)	
+WNT2	human	P09544	WNT2	P09544	29	170	Protein Wnt-2 (Int-1-like protein 1) (Int-1-related protein)	
+WNT2	mus-musculus	P21552	Wnt2	P21552	14	83	Protein Wnt-2	
+WNT2	rattus-norvegicus	A6IE38	Wnt2	A6IE38	14	68	Protein Wnt	
+WNT2	zebrafish	Q92048	wnt2	Q92048	10	29	Protein Wnt-2	
+WNT2-PA	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_20_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_25_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_29_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_30_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_33_351	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_33_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_36_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_37_277	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_37_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2-PA_63_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2B	human	Q93097	WNT2B	Q93097	23	90	Protein Wnt-2b (Protein Wnt-13)	
+WNT2B	mus-musculus	O70283	Wnt2b	O70283	10	20	Protein Wnt-2b	
+WNT2B	rattus-norvegicus	G3V7U3	Wnt2b	G3V7U3	6	12	Protein Wnt	
+WNT2B_HUMAN	human	Q93097	WNT2B	Q93097	23	90		
+WNT2_27_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2_30_352	fly	FBgn0004360	Wnt2	P28465	78	303		
+WNT2_HUMAN	human	P09544	WNT2	P09544	29	170		
+WNT3	human	P56703	WNT3	P56703	15	104	Proto-oncogene Wnt-3 (Proto-oncogene Int-4 homolog)	
+WNT3	mus-musculus	P17553	Wnt3	P17553	5	22	Proto-oncogene Wnt-3	
+WNT3	zebrafish	B0LK22	wnt3	B0LK22	11	23	Protein Wnt	
+WNT3A	human	P56704	WNT3A	P56704	36	212	Protein Wnt-3a	
+WNT3A	mus-musculus	P27467	Wnt3a	P27467	14	72	Protein Wnt-3a	
+WNT3A	rattus-norvegicus	F1M077	Wnt3a	F1M077	9	58	Protein Wnt	
+WNT3A_HUMAN	human	P56704	WNT3A	P56704	36	212		
+WNT3_HUMAN	human	P56703	WNT3	P56703	15	104		
+WNT4	fly	FBgn0010453	Wnt4	P40589	70	303	Protein Wnt-4 (dWnt-4)	
+WNT4	human	P56705	WNT4	P56705	34	206	Protein Wnt-4	
+WNT4	mus-musculus	P22724	Wnt4	P22724	15	43	Protein Wnt-4	
+WNT4	rattus-norvegicus	Q9QXQ5	Wnt4	Q9QXQ5	9	43	Protein Wnt-4	
+WNT4-PA	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_215_539	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_220_474	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_220_539	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_221_538	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_221_539	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_222_539	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_224_538	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4-PA_252_470	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4A	zebrafish	P47793	wnt4a	P47793	11	31	Protein Wnt-4a	
+WNT4B	zebrafish	A0A8M1P855	wnt4b	A0A8M1P855	15	23	Protein Wnt	
+WNT4_157_172	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4_221_539	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4_223_539	fly	FBgn0010453	Wnt4	P40589	70	303		
+WNT4_HUMAN	human	P56705	WNT4	P56705	34	206		
+WNT5	fly	FBgn0010194	Wnt5	P28466	67	290	Protein Wnt-5 (dWnt-3) (dWnt-5)	
+WNT5-PA	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5-PA_151_260	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5-PA_207_892	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5-PA_227_238	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5-PA_34_1004	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5-PA_35_1004	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5-PA_36_1004	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5-PA_559_1004	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5A	human	P41221	WNT5A	P41221	45	265	Protein Wnt-5a	
+WNT5A	mus-musculus	P22725	Wnt5a	P22725	15	102	Protein Wnt-5a	
+WNT5A	rattus-norvegicus	Q9QXQ7	Wnt5a	Q9QXQ7	9	93	Protein Wnt-5a	
+WNT5A	zebrafish	A0AB32U0B6	wnt5a	A0AB32U0B6	12	67	Protein Wnt	
+WNT5A_HUMAN	human	P41221	WNT5A	P41221	45	265		
+WNT5B	human	Q9H1J7	WNT5B	Q9H1J7	22	114	Protein Wnt-5b	
+WNT5B	mus-musculus	P22726	Wnt5b	P22726	10	28	Protein Wnt-5b	
+WNT5B	rattus-norvegicus	B1WBR9	Wnt5b	B1WBR9	9	31	Protein Wnt	
+WNT5B	zebrafish	Q92050	wnt5b	Q92050	12	34	Protein Wnt-5b	
+WNT5B_HUMAN	human	Q9H1J7	WNT5B	Q9H1J7	22	114		
+WNT5_152_165	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5_35_1004	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT5_36_1004	fly	FBgn0010194	Wnt5	P28466	67	290		
+WNT6	fly	FBgn0031902	Wnt6	Q9VM26	36	268	Protein Wnt	
+WNT6	human	Q9Y6F9	WNT6	Q9Y6F9	21	78	Protein Wnt-6	
+WNT6	mus-musculus	P22727	Wnt6	P22727	6	14	Protein Wnt-6	
+WNT6	rattus-norvegicus	D4A3W9	Wnt6	D4A3W9	6	13	Protein Wnt	
+WNT6-PB	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_20_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_25_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_26_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_27_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_29_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_56_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_58_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6-PB_5_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6B	zebrafish	F1R205	wnt6b	F1R205	11	25	Protein Wnt	
+WNT6_118_301	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6_27_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6_29_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6_55_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6_58_420	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6_65_379	fly	FBgn0031902	Wnt6	Q9VM26	36	268		
+WNT6_HUMAN	human	Q9Y6F9	WNT6	Q9Y6F9	21	78		
+WNT7A	human	O00755	WNT7A	O00755	26	121	Protein Wnt-7a	
+WNT7A	mus-musculus	P24383	Wnt7a	P24383	9	27	Protein Wnt-7a	
+WNT7A	rattus-norvegicus	M0R9D3	Wnt7a	M0R9D3	6	21	Protein Wnt	
+WNT7AA	zebrafish	Q4JLT0	wnt7aa	Q4JLT0	11	21	Protein Wnt	
+WNT7AB	zebrafish	E7FBM9	wnt7ab	E7FBM9	11	21	Protein Wnt	
+WNT7A_HUMAN	human	O00755	WNT7A	O00755	26	121		
+WNT7B	human	P56706	WNT7B	P56706	22	102	Protein Wnt-7b	
+WNT7B	mus-musculus	P28047	Wnt7b	P28047	10	24	Protein Wnt-7b	
+WNT7B	rattus-norvegicus	A0A0G2K3B7	Wnt7b	A0A0G2K3B7	8	20	Protein Wnt	
+WNT7BA	zebrafish	F1Q5B7	wnt7ba	F1Q5B7	9	21	Protein Wnt	
+WNT7B_HUMAN	human	P56706	WNT7B	P56706	22	102		
+WNT8A	human	Q9H1J5	WNT8A	Q9H1J5	11	60	Protein Wnt-8a (Protein Wnt-8d)	
+WNT8A	mus-musculus	Q64527	Wnt8a	Q64527	5	19	Protein Wnt-8a	
+WNT8A	rattus-norvegicus	D4A9D7	Wnt8a	D4A9D7	8	16	Protein Wnt	
+WNT8A	zebrafish	P51028	wnt8a	P51028	11	23	Protein Wnt-8a	
+WNT8A_HUMAN	human	Q9H1J5	WNT8A	Q9H1J5	11	60		
+WNT8B	human	Q93098	WNT8B	Q93098	11	52	Protein Wnt-8b	
+WNT8B	mus-musculus	Q9WUD6	Wnt8b	Q9WUD6	3	15	Protein Wnt-8b	
+WNT8B	rattus-norvegicus	D3ZND6	Wnt8b	D3ZND6	3	11	Protein Wnt	
+WNT8B	zebrafish	P51029	wnt8b	P51029	11	23	Protein Wnt-8b	
+WNT8B_HUMAN	human	Q93098	WNT8B	Q93098	11	52		
+WNT8D	human	Q9H1J5	WNT8A	Q9H1J5	11	60		
+WNT9A	human	O14904	WNT9A	O14904	18	55	Protein Wnt-9a (Protein Wnt-14)	
+WNT9A	mus-musculus	Q8R5M2	Wnt9a	Q8R5M2	3	10	Protein Wnt-9a	
+WNT9A	rattus-norvegicus	D3ZF63	Wnt9a	D3ZF63	2	3	Protein Wnt	
+WNT9A	zebrafish	B6V3E1	wnt9a	B6V3E1	13	20	Protein Wnt	
+WNT9A_HUMAN	human	O14904	WNT9A	O14904	18	55		
+WNT9B	human	O14905	WNT9B	O14905	16	55	Protein Wnt-9b (Protein Wnt-14b) (Protein Wnt-15)	
+WNT9B	mus-musculus	O35468	Wnt9b	O35468	5	9	Protein Wnt-9b	
+WNT9B	rattus-norvegicus	D3ZFS0	Wnt9b	D3ZFS0	6	11	Protein Wnt	
+WNT9B	zebrafish	B6V3E2	wnt9b	B6V3E2	10	21	Protein Wnt	
+WNT9B_HUMAN	human	O14905	WNT9B	O14905	16	55		
+WNTD	fly	FBgn0038134	wntD	Q9VFX1	61	288	Wnt inhibitor of Dorsal protein (Protein Wnt-8) (dWnt-8)	
+WNTD-PA	fly	FBgn0038134	wntD	Q9VFX1	61	288		
+WNTD-PA_32_309	fly	FBgn0038134	wntD	Q9VFX1	61	288		
+WNTD-PA_34_308	fly	FBgn0038134	wntD	Q9VFX1	61	288		
+WNTLESS	fly	FBgn0036141	wls	Q95ST2	27	377	Protein wntless (Evenness interrupted) (Sprinter)	w
+WNTLESS	human	Q5T9L3	WLS	Q5T9L3	25	186	Protein wntless homolog (Integral membrane protein GPR177) (	w
+WNTLESS	worm	Q7YWX7	mig-14	Q7YWX7	4	11	Protein wntless homolog	w
+WNTLESS	zebrafish	F2Z4U3	wls	F2Z4U3	13	31	Protein wntless homolog	w

@@ -1,19 +1,707 @@
-DIR1	arabidopsis-thaliana	Q8W453	DIR1	Q8W453	0	1	Putative lipid-transfer protein DIR1
-DIR1	arabidopsis-thaliana	Q9FIG6	DIR1	Q9FIG6	0	2	Dirigent protein 1
-DIR11	arabidopsis-thaliana	Q67YM6	DIR11	Q67YM6	0	2	Dirigent protein 11
-DIR16	arabidopsis-thaliana	Q7Y225	DIR16	Q7Y225	0	28	Dirigent protein 16
-DIR18	arabidopsis-thaliana	Q9T0H8	DIR18	Q9T0H8	0	28	Dirigent protein 18
-DIR19	arabidopsis-thaliana	Q9C523	DIR19	Q9C523	0	2	Dirigent protein 19
-DIR2	arabidopsis-thaliana	Q9FIG7	DIR2	Q9FIG7	0	2	Dirigent protein 2
-DIR20	arabidopsis-thaliana	Q9C891	DIR20	Q9C891	0	2	Dirigent protein 20
-DIR21	arabidopsis-thaliana	Q9SS03	DIR21	Q9SS03	0	2	Dirigent protein 21
-DIR22	arabidopsis-thaliana	Q66GI2	DIR22	Q66GI2	0	2	Dirigent protein 22
-DIR22	glycine-max	I1J7J5	DIR22	I1J7J5	0	9	Dirigent protein
-DIR23	arabidopsis-thaliana	Q84TH6	DIR23	Q84TH6	0	2	Dirigent protein 23
-DIR7	arabidopsis-thaliana	Q9LID5	DIR7	Q9LID5	0	2	Dirigent protein 7
-DIR8	arabidopsis-thaliana	F4JDF3	DIR8	F4JDF3	0	2	Dirigent protein 8
-DIRAS1	mus-musculus	Q91Z61	Diras1	Q91Z61	4	8	GTP-binding protein Di-Ras1
-DIRAS1	rattus-norvegicus	D4A304	Diras1	D4A304	6	21	DIRAS family GTPase 1
-DIRAS2	mus-musculus	Q5PR73	Diras2	Q5PR73	5	14	GTP-binding protein Di-Ras2
-DIRAS2	rattus-norvegicus	A0A8I5ZKR8	Diras2	A0A8I5ZKR8	8	23	DIRAS family GTPase 2
-DIRAS3	rattus-norvegicus	A0A8I6GGJ6	Diras3	A0A8I6GGJ6	4	23	DIRAS family GTPase 3
+DIR	human	P30518	AVPR2	P30518	32	296		
+DIR1	arabidopsis-thaliana	Q8W453	DIR1	Q8W453	0	1	Putative lipid-transfer protein DIR1	
+DIR1	arabidopsis-thaliana	Q9FIG6	DIR1	Q9FIG6	0	2	Dirigent protein 1	
+DIR1	human	Q9UIM3	FKBPL	Q9UIM3	38	118		
+DIR11	arabidopsis-thaliana	Q67YM6	DIR11	Q67YM6	0	2	Dirigent protein 11	
+DIR16	arabidopsis-thaliana	Q7Y225	DIR16	Q7Y225	0	28	Dirigent protein 16	
+DIR18	arabidopsis-thaliana	Q9T0H8	DIR18	Q9T0H8	0	28	Dirigent protein 18	
+DIR19	arabidopsis-thaliana	Q9C523	DIR19	Q9C523	0	2	Dirigent protein 19	
+DIR2	arabidopsis-thaliana	Q9FIG7	DIR2	Q9FIG7	0	2	Dirigent protein 2	
+DIR20	arabidopsis-thaliana	Q9C891	DIR20	Q9C891	0	2	Dirigent protein 20	
+DIR21	arabidopsis-thaliana	Q9SS03	DIR21	Q9SS03	0	2	Dirigent protein 21	
+DIR22	arabidopsis-thaliana	Q66GI2	DIR22	Q66GI2	0	2	Dirigent protein 22	
+DIR22	glycine-max	I1J7J5	DIR22	I1J7J5	0	9	Dirigent protein	
+DIR23	arabidopsis-thaliana	Q84TH6	DIR23	Q84TH6	0	2	Dirigent protein 23	
+DIR3	human	P30518	AVPR2	P30518	32	296		
+DIR7	arabidopsis-thaliana	Q9LID5	DIR7	Q9LID5	0	2	Dirigent protein 7	
+DIR8	arabidopsis-thaliana	F4JDF3	DIR8	F4JDF3	0	2	Dirigent protein 8	
+DIRA1_HUMAN	human	O95057	DIRAS1	O95057	52	320		
+DIRA2_HUMAN	human	Q96HU8	DIRAS2	Q96HU8	27	215		
+DIRA3_HUMAN	human	O95661	DIRAS3	O95661	26	340		
+DIRAS	zebrafish	A0A8N7UYZ0	diras1b	A0A8N7UYZ0	5	27	DIRAS family, GTP-binding RAS-like 1b	w
+DIRAS1	human	O95057	DIRAS1	O95057	52	320	GTP-binding protein Di-Ras1 (Distinct subgroup of the Ras fa	
+DIRAS1	mus-musculus	Q91Z61	Diras1	Q91Z61	4	8	GTP-binding protein Di-Ras1	
+DIRAS1	rattus-norvegicus	D4A304	Diras1	D4A304	6	21	DIRAS family GTPase 1	
+DIRAS1B	zebrafish	A0A8N7UYZ0	diras1b	A0A8N7UYZ0	5	27	DIRAS family, GTP-binding RAS-like 1b	
+DIRAS2	human	Q96HU8	DIRAS2	Q96HU8	27	215	GTP-binding protein Di-Ras2 (EC 3.6.5.-) (Distinct subgroup 	
+DIRAS2	mus-musculus	Q5PR73	Diras2	Q5PR73	5	14	GTP-binding protein Di-Ras2	
+DIRAS2	rattus-norvegicus	A0A8I5ZKR8	Diras2	A0A8I5ZKR8	8	23	DIRAS family GTPase 2	
+DIRAS3	human	O95661	DIRAS3	O95661	26	340	GTP-binding protein Di-Ras3 (Distinct subgroup of the Ras fa	
+DIRAS3	rattus-norvegicus	A0A8I6GGJ6	Diras3	A0A8I6GGJ6	4	23	DIRAS family GTPase 3	
+DIRC1	human	Q969H9	DIRC1	Q969H9	6	38	Disrupted in renal carcinoma protein 1 (Disrupted in renal c	
+DIRC1_HUMAN	human	Q969H9	DIRC1	Q969H9	6	38		
+DIRC2	human	Q96SL1	SLC49A4	Q96SL1	4	102		
+DIRC2_HUMAN	human	Q96SL1	SLC49A4	Q96SL1	4	102		
+DIRECT	human	Q9NR28	DIABLO	Q9NR28	28	358	Diablo IAP-binding mitochondrial protein (Diablo homolog, mi	w
+DIRECTED	virus	A0A023IN45_p7b7c720876		A0A023IN45	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A023PJE6_p0db71d7b75		A0A023PJE6	1	8	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A023T7J3_pdccdbc1edf		A0A023T7J3	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A024B7W1_p8147dc5eb9		A0A024B7W1	1	15	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0A059PX37_p771845b1e5		A0A059PX37	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A060VG16_pcfc83e7a9e		A0A060VG16	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A076JAH1_p861b4d77f6		A0A076JAH1	1	8	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A076V7N1_pad5ed8391d		A0A076V7N1	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A076V8N6_p4c0bd12163		A0A076V8N6	0	13	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A076VAH7_pf6c02fcd75		A0A076VAH7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A076VCM4_p9275c3c3ad		A0A076VCM4	1	12	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A076YJH3_pd6ab359bd6		A0A076YJH3	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A088FP04_p4283dbfe95		A0A088FP04	2	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	A0A089FY58_p14762bc85d		A0A089FY58	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A097NZ77_pc7a77e4459		A0A097NZ77	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A097NZA3_p5011467701		A0A097NZA3	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A097NZB6_p81af2f998f		A0A097NZB6	0	9	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A097ZPI0_p78b7356e5c		A0A097ZPI0	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A0A0R237_p69cd013c89		A0A0A0R237	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A0A0R971_p6dc96853d3		A0A0A0R971	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A0A7EQ87_p242486fb50		A0A0A7EQ87	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B4UEH9_p58b83dc2dd		A0A0B4UEH9	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B4WUQ1_pb5d6aa5ce3		A0A0B4WUQ1	0	16	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B5CMK1_pe40c635970		A0A0B5CMK1	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B5GG60_pb0c7f01561		A0A0B5GG60	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B5GGD3_pd948b88e0d		A0A0B5GGD3	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B5GND3_pd82b7d5505		A0A0B5GND3	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B5HK21_pd446372db9		A0A0B5HK21	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B5HPB2_p2ff5491f5b		A0A0B5HPB2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0B6CCI0_p4c15b16a9e		A0A0B6CCI0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0C4PNF2_p23d6cee49d		A0A0C4PNF2	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0A0C4W3V9_pe36a4f8e8b		A0A0C4W3V9	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0A0D3MCC7_pf5bc64c204		A0A0D3MCC7	1	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A0D3MDA4_p378a86f295		A0A0D3MDA4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0D3MDN0_pd6f5a5e782		A0A0D3MDN0	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0D5XR02_pd52a093172		A0A0D5XR02	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0E3GP40_ped20786f05		A0A0E3GP40	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0E3JW61_p37d1f322ea		A0A0E3JW61	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0F7JH93_pe0a290eb49		A0A0F7JH93	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0K0WRN6_p0ca7b5e810		A0A0K0WRN6	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0M3R836_pea43076b93		A0A0M3R836	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0M3VGG2_pbedda1630f		A0A0M3VGG2	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0M4NCP8_p0bf7907749		A0A0M4NCP8	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0M4TZ36_pa6d23805d2		A0A0M4TZ36	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0M4UP75_p3287c500e5		A0A0M4UP75	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0M4V8J2_pac4f37ae99		A0A0M4V8J2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0M5N6H6_p78aea18f08		A0A0M5N6H6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0N9HRV4_p1dcc0521d9		A0A0N9HRV4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0N9HSR5_p1e067c1c98		A0A0N9HSR5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0P0QLC4_p9743738178		A0A0P0QLC4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M389_p290cc69477		A0A0S1M389	3	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3B2_pd4467273e6		A0A0S1M3B2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3B3_p73c2d8eb25		A0A0S1M3B3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3B6_p807b3880dd		A0A0S1M3B6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3B7_p7c6b120f3c		A0A0S1M3B7	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3B8_p4212565e82		A0A0S1M3B8	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3C1_pf7b1ef5162		A0A0S1M3C1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3C3_pac801a771b		A0A0S1M3C3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3C5_p40ab90a56b		A0A0S1M3C5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S1M3C6_p0f690669c1		A0A0S1M3C6	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0S2LUK8_p3780d42531		A0A0S2LUK8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0U1Y1G0_pbfce56ea63		A0A0U1Y1G0	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0U1YYL5_padd00f5fe6		A0A0U1YYL5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0U1Z254_pdb8cc2f837		A0A0U1Z254	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0U1Z270_p9c90e677a1		A0A0U1Z270	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0U2LPY7_pba10b6a136		A0A0U2LPY7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0U2SQ69_pcfe50e7762		A0A0U2SQ69	1	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A0U2U7C6_pb0b6462d0f		A0A0U2U7C6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0U2UT22_pa16ee4ba0b		A0A0U2UT22	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A0Y0DH04_p9f5ec0e6fb		A0A0Y0DH04	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A142DDH1_p93a6bde28b		A0A142DDH1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A144KVR0_p58371d8525		A0A144KVR0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A145Y3F3_pf693eb0b1d		A0A145Y3F3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A167QQ30_p7fa45b93fb		A0A167QQ30	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A172GFP5_p52832f0cb8		A0A172GFP5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A193AUD9_pc45e14ec3b		A0A193AUD9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A193AUM2_pf97bdfd44b		A0A193AUM2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A193DXD7_pc8ac36bd9d		A0A193DXD7	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A193DXE3_pebe7867581		A0A193DXE3	1	9	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1B0Z5J8_p454c4787ce		A0A1B0Z5J8	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1B1H1K2_p332c1906d6		A0A1B1H1K2	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1B4Z1H7_p24fdd4f8fb		A0A1B4Z1H7	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A1C9LUL5_ped4f40bfe6		A0A1C9LUL5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1C9LUM1_p4d4c9433aa		A0A1C9LUM1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1C9LUN5_pd54f60c2e5		A0A1C9LUN5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1C9LUU7_p84a7f20016		A0A1C9LUU7	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1I9WAL8_p5b2b93556d		A0A1I9WAL8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1I9WAM0_pfe7e205d71		A0A1I9WAM0	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1I9WAM1_pac76a7a563		A0A1I9WAM1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1I9WAM2_p8593db771f		A0A1I9WAM2	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1L5J1E8_pe1c1ae48ff		A0A1L5J1E8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1L6KW43_p2cf212050d		A0A1L6KW43	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1L6KW60_p2cf212050d		A0A1L6KW60	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1P8SNT4_pd805494d6a		A0A1P8SNT4	3	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1S5VYQ4_p041db0ca23		A0A1S5VYQ4	1	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A1S5VYQ5_pdbb3e5a47b		A0A1S5VYQ5	3	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A1S6GNC9_pa9488fd9a4		A0A1S6GNC9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1S6GND2_p3530c227fd		A0A1S6GND2	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1S6WM53_p95c71930f2		A0A1S6WM53	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1S6ZGH7_p6a4db1a66a		A0A1S6ZGH7	3	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A1X9VLI8_p44ff52fbc6		A0A1X9VLI8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A1Z3MI02_pb8d22ef996		A0A1Z3MI02	2	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A220IGD2_p724cc642c0		A0A220IGD2	4	15	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A238TMC8_p10877c498a	polyprotein	A0A238TMC8	1	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A240F7S2_p0672e33777		A0A240F7S2	0	8	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A247ZNN0_pbcff8ad7b0		A0A247ZNN0	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A248AAI2_p0112ce3831		A0A248AAI2	0	12	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A291FH43_pf068330757		A0A291FH43	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4GY08_p8147dc5eb9		A0A2H4GY08	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0A2H4MX92_p7d9cd6f4e0		A0A2H4MX92	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4N061_p04e6c80a7d		A0A2H4N061	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDT0_pd2c6bd4956		A0A2H4RDT0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDT2_p4d2f2c54ea		A0A2H4RDT2	2	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDT4_pc92da2a836		A0A2H4RDT4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDT5_p51fc31570b		A0A2H4RDT5	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A2H4RDT6_pd35debdc8d		A0A2H4RDT6	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDT9_pfade860a73		A0A2H4RDT9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDU0_p91d3b26070		A0A2H4RDU0	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDU1_pabffa689f3		A0A2H4RDU1	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDU9_pd172647aa0		A0A2H4RDU9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4RDW5_p796a8dc063		A0A2H4RDW5	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H4UZA4_p06672c0f37		A0A2H4UZA4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H5AJN4_pff36be3d35		A0A2H5AJN4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2H5BV49_p151e96d801		A0A2H5BV49	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2K9VQ60_pba7825c7bb		A0A2K9VQ60	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2K9YN85_p6f279631bf		A0A2K9YN85	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2K9YRJ1_pf3cf310783		A0A2K9YRJ1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1C6L6_pdeed0d53b0		A0A2P1C6L6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN28_pd3f907c329		A0A2P1GN28	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN30_pac116a8e8d		A0A2P1GN30	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN36_p04408968e5		A0A2P1GN36	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN41_p7652f42422		A0A2P1GN41	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN42_pcf96dd3d5b		A0A2P1GN42	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN45_p11896079cc		A0A2P1GN45	1	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A2P1GN47_p8b81594258		A0A2P1GN47	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN56_p7c1fa7bc43		A0A2P1GN56	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN58_p0311a31472		A0A2P1GN58	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN62_p5f24cd1396		A0A2P1GN62	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN66_p0439c8ed98		A0A2P1GN66	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN77_p3e962783a4		A0A2P1GN77	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN81_pf69d0d8648		A0A2P1GN81	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN85_p20f0c683f1		A0A2P1GN85	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GN97_pc513c8f43d		A0A2P1GN97	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1GNA3_p9ccade2ecb		A0A2P1GNA3	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A2P1IP88_p2c92f48b4c		A0A2P1IP88	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1IP98_pe8d1da2f5c		A0A2P1IP98	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1IPA4_pacc12e95ad		A0A2P1IPA4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2P1IPB1_pbf737a6977		A0A2P1IPB1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2R4N9G3_pb335e05022		A0A2R4N9G3	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2R4N9G9_p8d8b8ddd4f		A0A2R4N9G9	1	13	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S0SYS6_paaea389bde		A0A2S0SYS6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S0SYW5_pe9ff96d451		A0A2S0SYW5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S0SZ54_p73885ec79f		A0A2S0SZ54	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF40_p8f5c8ae2f1		A0A2S1YF40	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF43_p9d1c91afef		A0A2S1YF43	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF50_pcfaa1d3eb0		A0A2S1YF50	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF57_p05361a08fa		A0A2S1YF57	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF58_p7d5f16549c		A0A2S1YF58	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF60_p18f36640fb		A0A2S1YF60	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF64_p611ae1cea0		A0A2S1YF64	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2S1YF76_p2b4ed06ee0		A0A2S1YF76	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A2U9K4X3_pf3b19f4a6c		A0A2U9K4X3	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A386JUY0_p31e2679079		A0A386JUY0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A3G5BHF3_p4938dd5693		A0A3G5BHF3	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A3S5HUR1_pf6823966f4		A0A3S5HUR1	5	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A411EW42_paa8f9e5531		A0A411EW42	2	12	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0A484HNJ6_p74e6166363		A0A484HNJ6	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A514TR60_p65c2359c0e		A0A514TR60	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A5B7LUG1_pd40a6e6eaa		A0A5B7LUG1	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	A0A5J6D4G7_pab8bec69e4		A0A5J6D4G7	4	14	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A5P8HZL6_p5cd739315a		A0A5P8HZL6	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A6G6CUL0_p5e4b2c94ee		A0A6G6CUL0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0A8G1H4Y3_pd21362d865		A0A8G1H4Y3	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0AA97PZD4_p909e76370f		A0AA97PZD4	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0AC59EWD6_p31527e6506		A0AC59EWD6	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0AC59HC16_p9ceaf2d704		A0AC59HC16	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0AC59HC26_pfc25f6420a		A0AC59HC26	0	13	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0AC59HC36_p195c7a4bb3		A0AC59HC36	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0AC61LP38_pc5574336d1		A0AC61LP38	0	13	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A0ACM8DFZ3_p190b7c47ac		A0ACM8DFZ3	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0ACM8DG06_p8f3191f4b0		A0ACM8DG06	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0ACM8DG08_pbcc3b87a34		A0ACM8DG08	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A0EKU1_p3c14db4128		A0EKU1	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0EKU2_p51448ec0f0		A0EKU2	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0EKU3_pf79c4ab4e7		A0EKU3	0	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0EKU6_p7536ee6453		A0EKU6	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0EKU7_pc09c6fea39		A0EKU7	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0EKU8_pd337852fd6		A0EKU8	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A0MHB7_pf6505cebbd		A0MHB7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A0MNM1_p97e56b6b48	nsP1234	A0MNM1	1	9	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	A1BQD2_p3076c90f6f		A1BQD2	0	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A1Y2M8_pf719ea9384		A1Y2M8	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	A1YZ45_p6daa7c1420		A1YZ45	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	A3QWZ2_p6f92b4148a		A3QWZ2	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A4UHT9_p92b7e27e72		A4UHT9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A4ZKN2_p6f31907602		A4ZKN2	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZD5_pe187731e8f		A5GZD5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZD6_p32ac30804f		A5GZD6	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZD7_p762def1508		A5GZD7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZD8_pfe4d091c76		A5GZD8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZD9_p5c542bf99f		A5GZD9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE0_pf373eecf68		A5GZE0	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE1_pbe20a3c4e2		A5GZE1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE2_p1ce39d09f6		A5GZE2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE3_pd15f26c5c3		A5GZE3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE4_p4ae66f0f56		A5GZE4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE5_p531b2f6d81		A5GZE5	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE6_p7df8e38e97		A5GZE6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE7_p994a181e0c		A5GZE7	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZE9_p98feaa4149		A5GZE9	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF0_pe6ef0d23d7		A5GZF0	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF1_pe11f6c9aa0		A5GZF1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF2_pfd03757813		A5GZF2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF3_pad735fa017		A5GZF3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF4_p5d9b280f79		A5GZF4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF5_pf2a939273c		A5GZF5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF6_pa44ef8b05e		A5GZF6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF7_pd50b07b714		A5GZF7	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF8_p72f6db2edf		A5GZF8	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZF9_p7988281743		A5GZF9	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZG0_pd8eae35bfd		A5GZG0	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5GZG1_pe12ca3b973		A5GZG1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A5LGG1_p50e05065b5		A5LGG1	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A5Y0T1_p092ab67516		A5Y0T1	1	12	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A6XB61_pbb4b2e8b1c		A6XB61	1	12	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A7KC06_pd897e6fd92		A7KC06	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC07_p34babd9a06		A7KC07	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC08_p62921a5915		A7KC08	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC09_pd9d0ee35bd		A7KC09	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC10_pfd2566289a		A7KC10	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC11_p8e2bd0c324		A7KC11	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC12_p73ced65969		A7KC12	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC15_p35935cdef3		A7KC15	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7KC17_pd8e86b0b76		A7KC17	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7TUB1_p6eb0f2cef0		A7TUB1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7TUB2_p34ed0b2523		A7TUB2	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7YF31_pfaaddb7efb		A7YF31	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A7YF37_p49e9be6fc0		A7YF37	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A8D7N3_p10c1d48c33	SPV1gp1	A8D7N3	3	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	A8QPD9_p859752379e		A8QPD9	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	A8RNT3_pb04c2ba1eb		A8RNT3	2	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	A8S322_pd33ea81ce6		A8S322	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A8S330_p5218828ea7		A8S330	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	A8S334_p956394d5f1		A8S334	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B0Z3W9_p159559baa2		B0Z3W9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	B2Y6C9_pcf5cabf959		B2Y6C9	1	8	RNA directed RNA polymerase	w
+DIRECTED	virus	B3FRR2_pc2e69da26c		B3FRR2	2	12	RNA directed RNA polymerase	w
+DIRECTED	virus	B3SRP1_p53b7e55234		B3SRP1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B5A1N0_p873284b350		B5A1N0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	B5BSU4_pafc6e11b20		B5BSU4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B5BSU5_p20878b44f1		B5BSU5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B7T8D2_p037721d198		B7T8D2	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B8R1T8_p242de23f09		B8R1T8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B8XTP8_p67bb2be3d4		B8XTP8	0	13	RNA directed RNA polymerase	w
+DIRECTED	virus	B8XTP9_p07230ec07f		B8XTP9	0	15	RNA directed RNA polymerase	w
+DIRECTED	virus	B8XTQ3_p4c57e3f54d		B8XTQ3	2	13	RNA directed RNA polymerase	w
+DIRECTED	virus	B8XTQ4_p70312a8db0		B8XTQ4	0	14	RNA directed RNA polymerase	w
+DIRECTED	virus	B9UD49_pc434c70735		B9UD49	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	B9UK62_p75e3770661		B9UK62	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	B9V433_p11ca09a1d4		B9V433	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V434_pa45ee19fb3		B9V434	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V437_p0e72848520		B9V437	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V439_pae708c04e3		B9V439	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V440_p97de3a9515		B9V440	1	9	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V441_pc9f7a34974		B9V441	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V442_p93d3fc5a31		B9V442	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V443_pd14da19f94		B9V443	1	7	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V444_p4a6ef23b1b		B9V444	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V445_p2396ddb090		B9V445	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V447_p4dd9246a67		B9V447	1	9	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V448_p47e9a9a85c		B9V448	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V449_p49614b4b39		B9V449	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V450_p129a9267f6		B9V450	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V451_pc1707b4fa1		B9V451	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V452_p2528b228ff		B9V452	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V453_p66bec03d00		B9V453	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V454_p2356471a2e		B9V454	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V456_p39efa9cbb7		B9V456	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V458_p12082840cd		B9V458	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V459_pc6b625f03b		B9V459	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V461_p21540f27e4		B9V461	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V462_pf51d433aca		B9V462	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V463_p2c90fc8e4a		B9V463	2	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V464_p9b014c4446		B9V464	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V465_pbb43a2a82c		B9V465	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V466_p2384e1b50a		B9V466	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V467_pbc26523a3c		B9V467	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V468_p4946575cac		B9V468	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V469_p08ed17e5a5		B9V469	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V470_p9c59af318b		B9V470	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V471_p4847f0a782		B9V471	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V472_p6356e51527		B9V472	0	9	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V473_p8d8f4124b0		B9V473	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V474_p71a45899d3		B9V474	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V476_p3505c973ac		B9V476	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V478_p6e4392045d		B9V478	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V482_pc8ff7d53fc		B9V482	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V483_pd2819b2273		B9V483	0	9	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V484_p9c70f37474		B9V484	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V488_pfe10bf1a48		B9V488	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V489_p038671f48d		B9V489	0	9	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V490_p09d0e3459e		B9V490	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V492_p3a91c36b43		B9V492	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V493_p7d9bc9c6fe		B9V493	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V495_p2d3b2d76c5		B9V495	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V496_pdb0422720b		B9V496	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V498_p713fbc99a5		B9V498	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	B9V4A9_p4b86100b8b		B9V4A9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	B9VIN1_p164373049b		B9VIN1	0	13	RNA directed RNA polymerase	w
+DIRECTED	virus	C1KGU9_p16dba1d354		C1KGU9	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	C4N5E9_pe2626c15df		C4N5E9	0	8	RNA directed RNA polymerase	w
+DIRECTED	virus	C4NF75_p48eaabae3e		C4NF75	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	C5H431_p13707b7be3		C5H431	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C5H8E4_pb900f9b7c4		C5H8E4	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	C5HDF8_pc85f5d7876		C5HDF8	2	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C5MSH2_p66d9652af4		C5MSH2	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C6EN53_pbbe665e335		C6EN53	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C6EN54_pc1136e9f29		C6EN54	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C6ENF3_pd18a300d56		C6ENF3	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C6ENF4_p1211321e38		C6ENF4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C7DUC6_p95891e2c2d		C7DUC6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C7DUC7_p3cb64f0f70		C7DUC7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C7EPG3_pa6cdc6462d		C7EPG3	0	6	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	C8XPA8_p49fa38c683		C8XPA8	3	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C8XPA9_p99e834471c		C8XPA9	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C8XPB2_pd318128079		C8XPB2	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C8XPB4_pc18067f772		C8XPB4	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C8XPB7_p88ddb2c05b		C8XPB7	3	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C8XPB8_p1f8f31b0fa		C8XPB8	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C8XPB9_p40766dfdba		C8XPB9	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	C9DDK2_p3c6a581c72		C9DDK2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	C9DZL0_pf7242c4cd1		C9DZL0	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	D1KRD7_pff81821055		D1KRD7	2	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	D2CGF5_pf8b4ddd276		D2CGF5	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	D2IW00_p6c14c216d5		D2IW00	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	D6N367_p5ef45d3da2		D6N367	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	D6P446_p0a8ccdbb2b		D6P446	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	D7RF80_p7947a9c69f		D7RF80	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	D8VCT6_p600d52623c		D8VCT6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	D8X148_p3ce13009f8		D8X148	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	D9YV24_p9a15744f37		D9YV24	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	D9YV26_p69c38b36b6		D9YV26	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	D9YV28_pc10e4f0a7a		D9YV28	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	D9ZYS1_p9466d74ed2		D9ZYS1	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	E1U266_pdcae0b0ec1		E1U266	2	9	RNA directed RNA polymerase	w
+DIRECTED	virus	E2J7X9_p8f142c1032		E2J7X9	2	8	RNA directed RNA polymerase	w
+DIRECTED	virus	E5D8F2_p9238fda449		E5D8F2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	E9L812_pffd1be4128		E9L812	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	E9LS24_p1a2af4b35a		E9LS24	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	F4YYF3_p96d68cf1dc		F4YYF3	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	F5B9S5_p2ab6d1099c		F5B9S5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	F6M9Y0_pac5744f35b		F6M9Y0	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	F6N707_p5a9def82c9		F6N707	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	G0ZNT5_p7e74e72e62		G0ZNT5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	G1C9J8_pcd88191a87		G1C9J8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	G1CRV4_p8b49db7eda		G1CRV4	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	G1DFA3_p6c653882b8		G1DFA3	2	10	RNA directed RNA polymerase	w
+DIRECTED	virus	G1DFA4_p01618c341f		G1DFA4	0	13	RNA directed RNA polymerase	w
+DIRECTED	virus	G1JSF8_p01d8154f22		G1JSF8	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	G5D5E3_pa3d88a533c		G5D5E3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	G5DBU6_p340b989511		G5DBU6	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	H2E685_p95b47bda34		H2E685	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	H6VBU5_pd6fe11faf9		H6VBU5	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	H8Y6P9_p2e6b2091d8		H8Y6P9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	H9AY35_p9a3bc3d716		H9AY35	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	H9U0H0_p7247878afc		H9U0H0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	I0DHL5_pdafbbe786b		I0DHL5	1	8	RNA directed RNA polymerase	w
+DIRECTED	virus	I1YLT4_pe7bb0ff715		I1YLT4	0	15	RNA directed RNA polymerase	w
+DIRECTED	virus	I1YLT6_pe10e888cf0		I1YLT6	0	15	RNA directed RNA polymerase	w
+DIRECTED	virus	I1YLT7_p3fa65dcc1a		I1YLT7	0	13	RNA directed RNA polymerase	w
+DIRECTED	virus	I3UMN1_p78037799c5		I3UMN1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	I3VR62_ped1e603edb		I3VR62	2	12	RNA directed RNA polymerase	w
+DIRECTED	virus	I6QFL7_p71149367c5		I6QFL7	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	I6YQK4_p8196dcc254		I6YQK4	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	I7C489_p9df69d4f99		I7C489	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	I7D1R9_p2839a1d4aa		I7D1R9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	J7EH30_p1d0dbc96ec		J7EH30	0	8	RNA directed RNA polymerase	w
+DIRECTED	virus	J7HCF4_p757b623f7d		J7HCF4	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	J7JID0_p06ca1e312d		J7JID0	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	J7K0G7_p675159e280		J7K0G7	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	J9S4C0_pe571444ca2		J9S4C0	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	J9Y0I9_p7a91cfb553		J9Y0I9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	J9ZZK6_p26fed7255f		J9ZZK6	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K0BRZ6_pd11c4f1fd0		K0BRZ6	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	K0IRN5_p08a1432193		K0IRN5	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K0IRN8_p8416603446		K0IRN8	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K0IRU9_p2f9b3fba2b		K0IRU9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K0IUN3_p17bc9f24cb		K0IUN3	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K0IWN0_pd47fad553b		K0IWN0	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K0J1H6_p2e6059ab03		K0J1H6	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K4HMH3_p63e5675cba		K4HMH3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	K4MT64_p53fafb63d7		K4MT64	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	K4NWE0_p73f4d22a53		K4NWE0	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	K7RX76_p0d434fec05		K7RX76	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	M4JGH6_pfb10d925bc		M4JGH6	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	M4PJD6_pfa5a692ae7		M4PJD6	1	12	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	M4T930_pa1b8e95cf7		M4T930	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	M4TAM3_p247493c3b4		M4TAM3	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	M9UVS3_p7ad6c1c5c8		M9UVS3	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	M9V357_p6ffdcc8383		M9V357	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	M9ZRW5_p6d50392e66		M9ZRW5	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	M9ZU32_p2aa7fee9f9		M9ZU32	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	M9ZVI1_p985776ae6c		M9ZVI1	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	M9ZZL8_p1758d97696		M9ZZL8	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	N0A109_pc62c3f6753		N0A109	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	N0A118_p5fc18ec613		N0A118	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	O09234_pa624e410fb		O09234	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	O36177_pfdfcdd4d63		O36177	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	O36180_pdbbb8ad605		O36180	0	9	RNA directed RNA polymerase	w
+DIRECTED	virus	O39927_pfa658ba060		O39927	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	O39928_p52d154fcb7		O39928	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	O73556_p10964b7172		O73556	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	O90368_p8ee2b57706		O90368	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	O90370_p2160ce14d2		O90370	1	9	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	O91464_pd805525d0b		O91464	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	O91734_p3b898dddb3		O91734	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P03300_p8b0dbcf9e4		P03300	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	P03301_p692f3341d9		P03301	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P03302_p5057e20ce1		P03302	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P03303_p5eed5fb5e0		P03303	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P03308_p38533a4ff8		P03308	0	14	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	P03314_p21348fb09a		P03314	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P03317_p286da12c79		P03317	1	9	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P04936_p736d306b59		P04936	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P05769_p404dea78c8		P05769	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P06210_pd210f11855		P06210	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P06935_pafb24886b8		P06935	0	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P07210_p1091182b5c		P07210	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P08291_p184e0e3ff5		P08291	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P08292_pbe00a7b92a		P08292	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P08411_p6d0ea44e65		P08411	1	9	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P08544_paff7b3c690		P08544	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	P08545_p1aefaa4e1f		P08545	2	12	RNA directed RNA polymerase	w
+DIRECTED	virus	P08617_p7148b3f8be		P08617	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P09866_p023a394097		P09866	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P12915_pf8cef77f41		P12915	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P12916_pda7237515a		P12916	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P13886_p69fe797439		P13886	1	9	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P13887_p703fb7e948		P13887	0	2	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P13896_p86da8d9355		P13896	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P13899_pf7fd7d1ed1		P13899	0	13	RNA directed RNA polymerase	w
+DIRECTED	virus	P14335_p081cbb7612		P14335	0	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P14336_pfbcbabc09c		P14336	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P15072_p8ec4c2a55e		P15072	0	14	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	P17763_p8d295868b8		P17763	0	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P19711_p31f9360c25		P19711	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	P21404_p708c7693b8		P21404	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P22338_p7dc07df79b		P22338	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P23008_p5a1b29bba0		P23008	1	9	RNA directed RNA polymerase	w
+DIRECTED	virus	P26660_pb5441cacec		P26660	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	P26661_p45991ca073		P26661	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	P26662_p40ae2bf6d0		P26662	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	P26664_p79e357eb5e		P26664	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P27282_p60cfb3418f		P27282	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P27283_pec4249f3f8		P27283	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P27410_pb5792099e9	ORF1	P27410	0	9	RNA directed RNA polymerase	w
+DIRECTED	virus	P27915_p2bbb6817aa		P27915	0	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P27958_p29871fdbc3		P27958	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P29813_pe63dbfbf90		P29813	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	P32886_pd666077143		P32886	0	14	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	P36327_p4ad678bb45		P36327	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P36328_pa748c328bb		P36328	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	P54634_pada141feb1	ORF1	P54634	2	8	RNA directed RNA polymerase	w
+DIRECTED	virus	P87515_pd59c1074fa		P87515	0	7	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q00MX7_p5fb29a2d0e		Q00MX7	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	Q01499_pc14ea46541		Q01499	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q04538_p2fc8bd5f8d		Q04538	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q05ED5_p0a076dcf91		Q05ED5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05ED6_p5ce0e7029c		Q05ED6	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05ED7_p82123af92f		Q05ED7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05ED8_p91609647ff		Q05ED8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05ED9_pcdf8fba577		Q05ED9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05EE1_pde83d6783b		Q05EE1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05EE2_pe8aed44a8a		Q05EE2	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05EE3_p8d780bad5d		Q05EE3	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05EE4_pe5e0609802		Q05EE4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q05EE5_pa3f5be51b1		Q05EE5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q076B4_p95fc3afc8b		Q076B4	1	12	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	Q19AF3_pec7ed8ab53		Q19AF3	1	14	RNA directed RNA polymerase	w
+DIRECTED	virus	Q288N7_pcb8ad9f149	ORF1	Q288N7	1	8	RNA directed RNA polymerase	w
+DIRECTED	virus	Q2LKY9_p409317f718		Q2LKY9	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q2LKZ0_p467ebfae7a		Q2LKZ0	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q2LKZ2_p4a42c66237		Q2LKZ2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q2LL14_pa7d1fde583		Q2LL14	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q2XP17_p9bacca3cbe		Q2XP17	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q306W8_pbacbcaa8e0		Q306W8	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q32ZD1_p9e41654e11		Q32ZD1	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q32ZD5_pafa5cc68a7		Q32ZD5	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q32ZD6_p4caf17557c		Q32ZD6	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q32ZD7_pf3f5482f4c		Q32ZD7	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q32ZE0_pf0e3a74c84		Q32ZE0	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q32ZE1_p0b0809ddbe		Q32ZE1	1	14	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q533M7_pe5bd4e906b		Q533M7	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q56IH8_pfe8cf560c3		Q56IH8	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5GA06_pd7cffa127d		Q5GA06	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5GA07_p2f3a8ef798		Q5GA07	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5GA08_p4aec0503cd		Q5GA08	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5GA09_p89b0a86d45		Q5GA09	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5VAK7_pb4b1b845d0		Q5VAK7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5VAM0_pfc6e335374		Q5VAM0	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5WPU5_p5194071f2f		Q5WPU5	0	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q5XLP5_pa92e9614b0		Q5XLP5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q5Y389_p5802b453c1		Q5Y389	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q65464_p01a0fccd1f		Q65464	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q65786_p8926375bed		Q65786	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q65900_p35865c3a80		Q65900	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q66338_p312d437b77		Q66338	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q66478_p1dc950623e		Q66478	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q66575_p63855ee13a		Q66575	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q66578_p6ce195f8d6		Q66578	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	Q66765_pae70c11425		Q66765	1	13	RNA directed RNA polymerase	w
+DIRECTED	virus	Q66849_p70ca4d9508		Q66849	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q672R3_pca0ddfb34e		Q672R3	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q68798_pf5816379fa		Q68798	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q68801_pf76dbe1ed7		Q68801	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q68871_p730e12151f		Q68871	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q68T42_p4aabf9f3bb		Q68T42	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q69422_p7ae921c79d		Q69422	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q69431_p71d49b97c1		Q69431	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q69433_p3292b320ad		Q69433	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKR7_pbaeb52bc8a		Q6JKR7	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKR8_p3bff24f6b8		Q6JKR8	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKR9_pe85f60be47		Q6JKR9	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKS0_p1aa16b7c87		Q6JKS0	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKS1_pcccc01470c		Q6JKS1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKS2_p312f0f918e		Q6JKS2	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKS3_p1289bb292c		Q6JKS3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKS4_pab677f0785		Q6JKS4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6JKS6_p7b48d03d09		Q6JKS6	1	9	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6PMT6_p7ab5bad2cd		Q6PMT6	1	14	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6PMT7_p23535a7b6f		Q6PMT7	0	14	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6PMU6_p9ba8061ab4		Q6PMU6	2	14	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6PMV7_p57c1fc1c54		Q6PMV7	1	14	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9E4_p589ad46606		Q6W9E4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9E5_p0a9e448417		Q6W9E5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9E6_p6b5c26776a		Q6W9E6	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9E7_p1e5ddc6530		Q6W9E7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9E8_pc01e43f381		Q6W9E8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9E9_p15e831998e		Q6W9E9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F0_pc5fe347f54		Q6W9F0	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F1_paa7e92d420		Q6W9F1	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F2_p0d572c6e71		Q6W9F2	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F3_p1aef0f8bbf		Q6W9F3	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F4_p01ffe31e20		Q6W9F4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F5_p321f94df2b		Q6W9F5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F6_p0a70fa1b4b		Q6W9F6	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F7_p75439c1162		Q6W9F7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F8_p5c52100206		Q6W9F8	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9F9_p9c8bf92701		Q6W9F9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9G0_p2c66086a0d		Q6W9G0	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9G1_p29af62174c		Q6W9G1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9G2_p9e174cf809		Q6W9G2	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9G3_p6ffab2673d		Q6W9G3	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9G4_p394ac934d1		Q6W9G4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q6W9G5_pa14aeaea6d		Q6W9G5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T6D2_p69219407f1		Q7T6D2	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q7T7N6_pfb8da03ca6		Q7T7N6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T7N7_p87d7f0d2d3		Q7T7N7	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T7N8_pa154b5e002		Q7T7N8	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T7N9_pd421fe0edd		Q7T7N9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T7P1_p6a366c7ca0		Q7T7P1	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T7P3_pb10f4c4461		Q7T7P3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T7P4_pa227a29aa9		Q7T7P4	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T7P5_p3eaba04068		Q7T7P5	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q7T918_p00c150a705		Q7T918	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q80IV2_p379bfcd9ab	L	Q80IV2	0	13	RNA directed RNA polymerase	w
+DIRECTED	virus	Q80J95_p8a229fb35f	ORF1	Q80J95	1	9	RNA directed RNA polymerase	w
+DIRECTED	virus	Q80N16_p49139d8c5f		Q80N16	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	Q80PW6_pd3956a1a19		Q80PW6	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q81258_p8f56f520a2		Q81258	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q82081_p0050dbfbaf		Q82081	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q82122_p1dba829fb4		Q82122	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q83883_p5bc1008929	ORF1	Q83883	0	8	RNA directed RNA polymerase	w
+DIRECTED	virus	Q86924_pbe1cf1a6d3		Q86924	2	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q88978_pa0635ee3e1		Q88978	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q8B552_p87f81108f7		Q8B552	3	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8B8M7_p56cd146671		Q8B8M7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8BES5_p8dc8165fd3		Q8BES5	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	Q8BES6_p2f4782b574		Q8BES6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8JJT0_pa358cc688f		Q8JJT0	1	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8JJZ3_p2e61a1b0b1		Q8JJZ3	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q8JN60_p55fed57f4b	ORF1	Q8JN60	1	8	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8JUX6_p3f7df2b149		Q8JUX6	1	10	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q8JV21_p86e4f1f540		Q8JV21	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	Q8QL53_p1265fa7056		Q8QL53	2	9	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q8QL64_p1104eb3725		Q8QL64	3	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q8QTI7_p814993eb69		Q8QTI7	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q8QUZ6_p08a4585aa2		Q8QUZ6	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8QZ73_pfc413eeb34		Q8QZ73	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q8UY33_pc43f7facbb		Q8UY33	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V0P3_pc9be0b5419		Q8V0P3	1	8	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V398_pf80199510a		Q8V398	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V5Z9_p7a26f302cd		Q8V5Z9	1	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V601_pedfe00c757		Q8V601	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V604_p906fae45f5		Q8V604	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V606_p8c283621a4		Q8V606	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V613_p948d314fd6		Q8V613	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V614_pb86b64196f		Q8V614	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8V635_p1b4cc35e7f		Q8V635	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q8VBK7_p44d1b337a7		Q8VBK7	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q91B85_p940b79d128		Q91B85	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q96725_p162eb5d3dd	ORF1	Q96725	0	9	RNA directed RNA polymerase	w
+DIRECTED	virus	Q96898_p5370d7aa1e		Q96898	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q98595_p29b0f1bb5d		Q98595	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q999Y5_pe8fcb0e154	pol	Q999Y5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL0_pd06bc61ce4		Q99FL0	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL1_p756e913bdb		Q99FL1	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL2_pe8bb48ac2f		Q99FL2	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL3_pe33c4aae67		Q99FL3	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL4_p046e7cb5f6		Q99FL4	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL5_pedd175e9d4		Q99FL5	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL6_pb2e657a79c		Q99FL6	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL7_pb11f36b369		Q99FL7	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL8_pda2e24b61d		Q99FL8	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q99FL9_p65aed77f97		Q99FL9	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9DUT7_p5149f7a15a		Q9DUT7	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q9IG40_p13f3851b85		Q9IG40	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q9J9C2_p2384d4b765		Q9J9C2	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q9JAD5_p49af8a1fd6		Q9JAD5	1	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	Q9JGL0_pc14c7b2a3a		Q9JGL0	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9PYB2_pfe2505e67e		Q9PYB2	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9PYF2_pb1892afea1		Q9PYF2	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9QL88_pc365b5d850		Q9QL88	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9WBT6_pdcf4647f35		Q9WBT6	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9WJ28_p8b29e2b0f8		Q9WJ28	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9WJC6_ped1b1c863d		Q9WJC6	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WJC8_p3459446fcf		Q9WJC8	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WJC9_p5eb1576bf8		Q9WJC9	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WJD0_pa9d00a9c68		Q9WJD0	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WJD1_p24ecb24b8e		Q9WJD1	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WJD2_pda36984417		Q9WJD2	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WJD3_p1c97224467		Q9WJD3	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WJD4_p4e3e36899e		Q9WJD4	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9WM98_pe2faff96f3		Q9WM98	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9WN78_pbece585224		Q9WN78	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9YID8_p4e6284e03b		Q9YID8	0	10	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	Q9YJX8_p63c7cd87ad		Q9YJX8	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	Q9YLG5_p3e3d5511ca		Q9YLG5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9YLJ1_p4184b6bb20		Q9YLJ1	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9YLS4_pcc64b4aeb8		Q9YLS4	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	Q9YQ23_pd18132e113		Q9YQ23	0	8	RNA directed RNA polymerase	w
+DIRECTED	virus	R9QT72_p1008f54333		R9QT72	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	R9QTE4_pcebc6be42b		R9QTE4	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	R9QTQ6_p92af3c3696		R9QTQ6	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	S4VD62_p04af4bcee4		S4VD62	2	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	S5E367_pbc259f5b0b		S5E367	0	10	RNA directed RNA polymerase	w
+DIRECTED	virus	T1SC31_p47503f87ac		T1SC31	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	T1YCD6_p013f5de04a		T1YCD6	0	7	RNA directed RNA polymerase	w
+DIRECTED	virus	T1YD22_pc6147b9cc8		T1YD22	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	T2BA54_p5b6e5f2778		T2BA54	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	U3R078_p6a9993f21c		U3R078	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	U5XL86_pbf92205691	SakoVgp1	U5XL86	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	U6BN37_p716c6442a8		U6BN37	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	V9VMS8_pdbd6bdd4dd		V9VMS8	0	11	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	W5S7X3_p30bbb0f8c0		W5S7X3	1	11	RNA directed RNA polymerase	w
+DIRECTED	virus	W5VK97_p0d06298bfb		W5VK97	2	13	RNA directed RNA polymerase Methyltransferase NS5	w
+DIRECTED	virus	W8GPM9_p48e198c111		W8GPM9	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	W8P9I7_p7276b44cc0		W8P9I7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	W8REW3_p77ef3671d9	NSP	W8REW3	1	8	RNA directed RNA polymerase nsP4	w
+DIRECTED	virus	X2CZS5_pfaeba3f334		X2CZS5	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	X2DF31_p271283f2a0		X2DF31	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	X2FKI7_pecade979f0		X2FKI7	0	11	RNA directed RNA polymerase	w
+DIRECTED	virus	X2FZ72_p314d0e8817		X2FZ72	0	12	RNA directed RNA polymerase	w
+DIRECTED	virus	X2L6K2_p8cbf5b3225		X2L6K2	1	13	RNA directed RNA polymerase	w
+DIRECTED	virus	X4YD30_pff96d7802a		X4YD30	0	15	RNA directed RNA polymerase 3D POL	w
+DIRECTED	virus	X4ZGA1_p18e7c08730		X4ZGA1	1	11	RNA directed RNA polymerase	w
+DIRECTLY	fly	FBgn0085421	Epac	A1Z6P8	5	59	Exchange protein directly activated by cAMP, isoform E	w
+DIRECTLY	human	O95398	RAPGEF3	O95398	28	198	Rap guanine nucleotide exchange factor 3 (Exchange factor di	w
+DIRECTLY	human	Q8WZA2	RAPGEF4	Q8WZA2	11	158	Rap guanine nucleotide exchange factor 4 (Exchange factor di	w
+DIRH	fly	FBgn0283499	InR	P09208	140	3287	Insulin-like receptor (dIR) (dInr) (EC 2.7.10.1) (Insulin re	w
+DIRS	fly	FBgn0024248	chico	Q9XTN2	15	88	Insulin receptor substrate 1 (dIRS) (Protein chico)	w
+DIRS1	human	Q6UXL0	IL20RB	Q6UXL0	57	241		

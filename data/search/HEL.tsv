@@ -1,23 +1,805 @@
-HEL	arabidopsis-thaliana	P43082	HEL	P43082	0	2	Hevein-like preproprotein
-HEL308	methanocaldococcus-jannaschii	Q58524	hel308	Q58524	0	7	ATP-dependent DNA helicase Hel308
-HELA	dictyostelium-discoideum	Q54CD8	helA	Q54CD8	0	9	ATP-dependent RNA helicase ddx54
-HELB	mus-musculus	Q6NVF4	Helb	Q6NVF4	1	23	DNA helicase B
-HELB	rattus-norvegicus	D4AAN8	Helb	D4AAN8	2	18	DNA helicase B
-HELB1	dictyostelium-discoideum	Q553B1	helB1	Q553B1	7	48	ATP-dependent RNA helicase ddx46
-HELB2	dictyostelium-discoideum	Q54Y81	helB2	Q54Y81	4	39	ATP-dependent RNA helicase ddx23
-HELC	dictyostelium-discoideum	Q54TF8	helC	Q54TF8	1	3	ATP-dependent RNA helicase ddx19
-HELD	dictyostelium-discoideum	Q54MH4	helD	Q54MH4	7	54	RNA helicase
-HELD	escherichia-coli-83333	P15038	helD	P15038	0	2	DNA helicase IV
-HELD	salmonella-typhimurium	Q8ZQ65	helD	Q8ZQ65	0	2	DNA 3-5 helicase
-HELD	shigella-dysenteriae-serotype-1	Q32HU4	helD	Q32HU4	0	5	DNA 3-5 helicase
-HELF	dictyostelium-discoideum	Q86L44	helF	Q86L44	2	121	RNA helicase
-HELLS	cladophialophora-carrionii	A0A1C1CY07	Hells	A0A1C1CY07	2	71	Lymphocyte-specific helicase
-HELLS	mus-musculus	Q60848	Hells	Q60848	1	34	Lymphocyte-specific helicase
-HELLS	rattus-norvegicus	A0A0G2K7M6	Hells	A0A0G2K7M6	0	33	Proliferation-associated SNF2-like protein
-HELQ	mus-musculus	Q2VPA6	Helq	Q2VPA6	0	15	Helicase POLQ-like
-HELQ	rattus-norvegicus	E9PT19	Helq	E9PT19	0	14	Helicase POLQ-like
-HELT	mus-musculus	Q7TS99	Helt	Q7TS99	3	3	Hairy and enhancer of split-related protein HELT
-HELT	rattus-norvegicus	D4ADJ5	Helt	D4ADJ5	1	1	Hairy and enhancer of split-related protein HELT
-HELY	mycobacterium-leprae	Q9ZBD8	helY	Q9ZBD8	1	3	Probable helicase HelY
-HELY	mycobacterium-tuberculosis	P9WMR1	helY	P9WMR1	0	1	Probable helicase HelY
-HELZ	mycobacterium-tuberculosis	I6YCF3	helZ	I6YCF3	3	60	Probable helicase HelZ
+HEL	arabidopsis-thaliana	P43082	HEL	P43082	0	2	Hevein-like preproprotein	
+HEL-1	worm	Q18212	hel-1	Q18212	12	102	Spliceosome RNA helicase DDX39B homolog	
+HEL-127	human	B3GLJ2	PATE3	B3GLJ2	13	48	Prostate and testis expressed protein 3 (Acrosomal vesicle p	w
+HEL-141	human	P21291	CSRP1	P21291	6	153	Cysteine and glycine-rich protein 1 (Cysteine-rich protein 1	w
+HEL-220	human	P55072	VCP	P55072	54	1338		
+HEL-75	human	Q7Z7B7	DEFB132	Q7Z7B7	18	61	Beta-defensin 132 (Beta-defensin 32) (BD-32) (DEFB-32) (Defe	w
+HEL-N1	human	Q12926	ELAVL2	Q12926	29	223	ELAV-like protein 2 (ELAV-like neuronal protein 1) (Hu-antig	w
+HEL-S-13	human	Q96KP4	CNDP2	Q96KP4	2	192		
+HEL-S-24	human	P19105	MYL12A	P19105	40	468	Myosin regulatory light chain 12A (Epididymis secretory prot	w
+HEL-S-70	human	P55072	VCP	P55072	54	1338		
+HEL1	yeast	P36113	HEL1	P36113	10	41	E3 ubiquitin-protein ligase HEL1	
+HEL124	human	Q8TE99	PXYLP1	Q8TE99	6	37		
+HEL170	human	Q5SQN1	SNAP47	Q5SQN1	54	244		
+HEL185	human	Q5SXH7	PLEKHS1	Q5SXH7	5	36	Pleckstrin homology domain-containing family S member 1 (PH 	w
+HEL2	yeast	Q05580	HEL2	Q05580	5	32	E3 ubiquitin-protein ligase HEL2	
+HEL25E	fly	FBgn0014189	Hel25E	Q27268	19	146	ATP-dependent RNA helicase WM6 (DEAD box protein UAP56) (Dmr	
+HEL25E_341	fly	FBgn0014189	Hel25E	Q27268	19	146		
+HEL25E_37	fly	FBgn0014189	Hel25E	Q27268	19	146		
+HEL308	human	Q8TDG4	HELQ	Q8TDG4	4	41		
+HEL308	methanocaldococcus-jannaschii	Q58524	hel308	Q58524	0	7	ATP-dependent DNA helicase Hel308	
+HEL89B	fly	FBgn0022787	Hel89B	Q9VF02	1	8	Helicase 89B, isoform B (Helicase 89B, isoform C (EC 3.6.4.1	
+HELA	dictyostelium-discoideum	Q54CD8	helA	Q54CD8	0	9	ATP-dependent RNA helicase ddx54	
+HELA	human	P78524	DENND2B	P78524	12	56	DENN domain-containing protein 2B (HeLa tumor suppression 1)	w
+HELA	human	Q8N2G4	LYPD1	Q8N2G4	15	168	Ly6/PLAUR domain-containing protein 1 (Putative HeLa tumor s	w
+HELAD1	human	Q8IVL1	NAV2	Q8IVL1	51	253		
+HELB	human	Q8NG08	HELB	Q8NG08	5	39	DNA helicase B (hDHB) (EC 5.6.2.3) (DNA 5'-3' helicase B)	
+HELB	mus-musculus	Q6NVF4	Helb	Q6NVF4	1	23	DNA helicase B	
+HELB	rattus-norvegicus	D4AAN8	Helb	D4AAN8	2	18	DNA helicase B	
+HELB	zebrafish	B0UYS3	helb	B0UYS3	0	2	DNA helicase B	
+HELB1	dictyostelium-discoideum	Q553B1	helB1	Q553B1	7	48	ATP-dependent RNA helicase ddx46	
+HELB2	dictyostelium-discoideum	Q54Y81	helB2	Q54Y81	4	39	ATP-dependent RNA helicase ddx23	
+HELB_HUMAN	human	Q8NG08	HELB	Q8NG08	5	39		
+HELC	dictyostelium-discoideum	Q54TF8	helC	Q54TF8	1	3	ATP-dependent RNA helicase ddx19	
+HELD	dictyostelium-discoideum	Q54MH4	helD	Q54MH4	7	54	RNA helicase	
+HELD	escherichia-coli-83333	P15038	helD	P15038	0	2	DNA helicase IV	
+HELD	fly	FBgn0264491	how	A0A0B4KHV5	4	44	Held out wings, isoform F	w
+HELD	human	Q8NFD5	ARID1B	Q8NFD5	24	180	AT-rich interactive domain-containing protein 1B (ARID domai	w
+HELD	salmonella-typhimurium	Q8ZQ65	helD	Q8ZQ65	0	2	DNA 3-5 helicase	
+HELD	shigella-dysenteriae-serotype-1	Q32HU4	helD	Q32HU4	0	5	DNA 3-5 helicase	
+HELDUP	fly	FBgn0283471	wupA	P36188	31	130	Troponin I (Tn I) (Protein heldup) (Protein wings apart-A)	w
+HELF	dictyostelium-discoideum	Q86L44	helF	Q86L44	2	121	RNA helicase	
+HELG	human	Q9NRC1	ST7	Q9NRC1	47	381		
+HELI	human	Q9BYX4	IFIH1	Q9BYX4	11	158	Interferon-induced helicase C domain-containing protein 1 (E	w
+HELI	human	Q9Y6Q9	NCOA3	Q9Y6Q9	136	509	Nuclear receptor coactivator 3 (NCoA-3) (EC 2.3.1.48) (ACTR)	w
+HELI	virus	F5HEN8	HELI	F5HEN8	3	166	DNA replication helicase	
+HELI	virus	O36393	HELI	O36393	3	69	DNA replication helicase	
+HELI	virus	P03214	HELI	P03214	5	91	DNA replication helicase	
+HELI	virus	P09303	HELI	P09303	3	68	DNA replication helicase	
+HELI	virus	P28934	HELI	P28934	3	73	DNA replication helicase	
+HELI	virus	P52356	HELI	P52356	2	98	DNA replication helicase	
+HELI	virus	P52450	HELI	P52450	3	94	DNA replication helicase	
+HELI	virus	Q01014	HELI	Q01014	2	74	DNA replication helicase	
+HELI	virus	Q2HR89	HELI	Q2HR89	5	84	DNA replication helicase	
+HELI	virus	Q66647	HELI	Q66647	3	76	DNA replication helicase	
+HELI	virus	Q6UDG9	HELI	Q6UDG9	3	69	DNA replication helicase	
+HELI	virus	Q9E6R1	HELI	Q9E6R1	4	87	DNA replication helicase	
+HELIC	human	Q5FWF4	ZRANB3	Q5FWF4	9	92	DNA annealing helicase and endonuclease ZRANB3 (Annealing he	w
+HELIC1	human	Q8N3C0	ASCC3	Q8N3C0	19	190		
+HELIC2	human	O75643	SNRNP200	O75643	54	933		
+HELICAIN	human	Q9H8H2	DDX31	Q9H8H2	26	384	ATP-dependent DNA helicase DDX31 (EC 5.6.2.-) (DEAD box prot	w
+HELICAL	fly	FBgn0014000	Hf	Q9VIQ4	2	4	GH03980p (Helical factor) (Olfactory-specific protein Os9)	w
+HELICAL	human	H3BNL8	ARMH2	H3BNL8	0	16	Armadillo-like helical domain-containing protein 2	w
+HELICAL	human	P10636	MAPT	P10636	98	506	Microtubule-associated protein tau (Neurofibrillary tangle p	w
+HELICAL	human	Q5T2E6	ARMH3	Q5T2E6	4	84	Armadillo-like helical domain-containing protein 3	w
+HELICAL	human	Q6PIY5	ARMH1	Q6PIY5	4	29	Armadillo-like helical domain containing protein 1 (p40)	w
+HELICAL	human	Q86TY3	ARMH4	Q86TY3	2	25	Armadillo-like helical domain-containing protein 4 (Upstream	w
+HELICAL	human	Q86WR6	CHCT1	Q86WR6	13	85	CHD1 helical C-terminal domain containing protein 1	w
+HELICAL	human	Q9NXZ2	DDX43	Q9NXZ2	0	95	Probable ATP-dependent RNA helicase DDX43 (EC 3.6.4.13) (Can	w
+HELICAL	worm	Q7Z151	fnci-1	Q7Z151	0	37	FANCI helical domain-containing protein	w
+HELICAL	zebrafish	Q6PGW3	armh3	Q6PGW3	1	3	Armadillo-like helical domain-containing protein 3	w
+HELICASE	fly	FBgn0000928	fs(1)Yb	Q9W4W2	1	46	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0001179	hay	Q02870	23	493	General transcription and DNA repair factor IIH helicase/tra	w
+HELICASE	fly	FBgn0001330	kz	O46072	11	91	Probable ATP-dependent RNA helicase kurz (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0001565	Ddx56	Q9VRI0	7	79	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0001942	eIF4A	Q02748	14	204	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
+HELICASE	fly	FBgn0001986	Mtr4	Q9Y134	23	282	L.2.35Df (Mtr4 helicase (EC 3.6.4.13))	w
+HELICASE	fly	FBgn0002899	mus301	Q9VSE2	1	20	Helicase POLQ-like (EC 3.6.4.12) (Mutagen-sensitive protein 	w
+HELICASE	fly	FBgn0002906	Blm	Q9VGI8	5	69	RecQ-like DNA helicase Blm (EC 5.6.2.4) (Bloom syndrome heli	w
+HELICASE	fly	FBgn0003261	Rm62	P19109	12	152	ATP-dependent RNA helicase p62 (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0003483	spn-E	Q9VF26	5	29	Probable ATP-dependent RNA helicase spindle-E (EC 3.6.4.13) 	w
+HELICASE	fly	FBgn0004419	me31B	P23128	26	444	ATP-dependent RNA helicase me31b (EC 3.6.4.13) (Maternal exp	w
+HELICASE	fly	FBgn0004556	Dbp73D	P26802	5	50	Probable ATP-dependent RNA helicase Dbp73D (DEAD box protein	w
+HELICASE	fly	FBgn0010220	Dbp45A	Q07886	2	57	Probable ATP-dependent RNA helicase Dbp45A (DEAD box protein	w
+HELICASE	fly	FBgn0011774	Irbp	Q23976	145	1181	ATP-dependent DNA helicase 2 subunit 1 (EC 3.6.4.12) (ATP-de	w
+HELICASE	fly	FBgn0011802	Gem3	Q9V3C4	6	45	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0014189	Hel25E	Q27268	19	146	ATP-dependent RNA helicase WM6 (DEAD box protein UAP56) (Dmr	w
+HELICASE	fly	FBgn0015075	Ddx1	Q9VNV3	3	38	ATP-dependent RNA helicase Ddx1 (DEAD box protein 1) (EC 3.6	w
+HELICASE	fly	FBgn0015331	abs	Q9V3C0	1	26	ATP-dependent RNA helicase abstrakt (DEAD box protein abstra	w
+HELICASE	fly	FBgn0021995	Rs1	Q7JQN4	9	86	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0022787	Hel89B	Q9VF02	1	8	Helicase 89B, isoform B (Helicase 89B, isoform C (EC 3.6.4.1	w
+HELICASE	fly	FBgn0023395	Chd3	O16102	14	383	Chromodomain-helicase-DNA-binding protein 3 (EC 3.6.4.12) (A	w
+HELICASE	fly	FBgn0024804	Dbp80	L7EEU0	1	22	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0026713	Prp16	Q9VY54	7	90	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0027375	RecQ5	Q9V433	5	39	DNA 3'-5' helicase (EC 5.6.2.4)	w
+HELICASE	fly	FBgn0027602	CG8611	Q86B47	4	71	Probable ATP-dependent RNA helicase CG8611 (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0029798	Rtel1	Q9W484	5	74	Regulator of telomere elongation helicase 1 homolog (EC 3.6.	w
+HELICASE	fly	FBgn0029880	CG14443	Q9W3Y5	3	22	Putative ATP-dependent RNA helicase CG14443 (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0029979	mahe	Q9W3M7	0	31	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0030631	Prp5	Q9VXW2	10	65	ATP-dependent RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0030855	CG5800	Q9VX34	6	68	ATP-dependent RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0031540	Pif1	Q9VQR3	1	22	ATP-dependent DNA helicase PIF1 (EC 3.6.4.12) (DNA repair an	w
+HELICASE	fly	FBgn0031631	CG3225	Q9VR29	12	115	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0032154	mtDNA-helicase	Q9VL76	0	25	Mitochondrial DNA helicase (EC 5.6.2.3) (Twinkle mtDNA helic	w
+HELICASE	fly	FBgn0032194	ath	Q9VL25	6	63	ATP-dependent RNA helicase DHX33 (EC 3.6.4.13) (DEAH box pro	w
+HELICASE	fly	FBgn0032690	CG10333	Q9VJ74	4	78	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0032883	Rhau	Q8SWT2	0	46	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0032919	pths	Q9VIF6	9	120	ATP-dependent RNA helicase DDX47 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	fly	FBgn0033160	Dhx15	Q7K3M5	23	166	ATP-dependent RNA helicase DHX15 homolog (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0034976	CG4049	Q9W1A8	1	2	Helicase ARIP4	w
+HELICASE	fly	FBgn0035720	CG10077	Q8MZI3	4	86	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0036104	CG6418	Q9VTC1	8	47	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0036451	Helz	Q9VUH9	0	6	Helicase with zinc finger, isoform B (Helicase with zinc fin	w
+HELICASE	fly	FBgn0036754	ais	Q9VVK8	1	29	Probable ATP-dependent RNA helicase DDX52 (EC 3.6.4.13) (DEA	w
+HELICASE	fly	FBgn0037205	BoYb	Q9VNP5	1	37	Putative ATP-dependent RNA helicase BoYb (EC 3.6.4.13) (Brot	w
+HELICASE	fly	FBgn0037232	Suv3	Q9VN03	0	42	ATP-dependent RNA helicase SUV3 homolog, mitochondrial (EC 3	w
+HELICASE	fly	FBgn0037549	CG7878	Q7K4L8	5	60	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0037561	CG9630	Q9VHU1	7	122	Probable ATP-dependent RNA helicase DDX55 homolog (DEAD box 	w
+HELICASE	fly	FBgn0038889	Fancm	Q9VDA0	3	64	DEAD-box ATP-dependent DNA helicase Fancm (EC 5.6.2.4) (Fanc	w
+HELICASE	fly	FBgn0039338	XNP	Q9GQN5	12	172	Transcriptional regulator ATRX homolog (EC 3.6.4.12) (ATP-de	w
+HELICASE	fly	FBgn0040075	rept	Q9V3K3	6	223	RuvB-like helicase 2 (EC 3.6.4.12) (Dreptin) (Drep) (Reptin)	w
+HELICASE	fly	FBgn0040078	pont	Q9VH07	6	233	RuvB-like helicase 1 (EC 3.6.4.12) (Dpontin) (Dpon) (Pontin)	w
+HELICASE	fly	FBgn0040290	RecQ4	Q9VSE6	2	31	DNA 3'-5' helicase (EC 5.6.2.4)	w
+HELICASE	fly	FBgn0041164	armi	Q6J5K9	4	23	Probable RNA helicase armi (EC 3.6.4.13) (Protein armitage)	w
+HELICASE	fly	FBgn0041627	Ku80	Q9I7M8	9	109	ATP-dependent DNA helicase II subunit 2 (EC 3.6.4.12)	w
+HELICASE	fly	FBgn0051755	SoYb	Q9VL52	6	51	Putative ATP-dependent RNA helicase SoYb (EC 3.6.4.13) (Sist	w
+HELICASE	fly	FBgn0052344	CG32344	Q8SY39	8	99	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0086444	l(2)37Cb	Q9VIZ3	9	114	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0086895	pea	A1Z9L3	7	86	ATP-dependent RNA helicase DHX8 (EC 3.6.4.13) (Peanuts)	w
+HELICASE	fly	FBgn0250786	Chd1	M9ND16	3	51	DNA helicase (EC 3.6.4.12)	w
+HELICASE	fly	FBgn0261850	Xpd	Q7KVP9	21	504	General transcription and DNA repair factor IIH helicase sub	w
+HELICASE	fly	FBgn0263231	bel	A0A0B4KGU4	10	171	RNA helicase (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0263599	Brr2	Q9VUV9	3	22	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.	w
+HELICASE	fly	FBgn0266581	pit	Q9VD51	22	173	Probable ATP-dependent RNA helicase pitchoune (EC 3.6.4.13)	w
+HELICASE	fly	FBgn0283442	vas	P09052	5	67	ATP-dependent RNA helicase vasa (EC 3.6.4.13) (Antigen Mab46	w
+HELICASE	fly	FBgn0288690	Dna2	Q8IRL9	3	81	DNA replication helicase/nuclease 2	w
+HELICASE	human	A2PYH4	HFM1	A2PYH4	9	150	Probable ATP-dependent DNA helicase HFM1 (EC 5.6.2.4) (DNA 3	w
+HELICASE	human	A8MPP1	DDX11L8	A8MPP1	5	74	Putative ATP-dependent DNA helicase DDX11-like protein 8 (EC	w
+HELICASE	human	H3BQK0	DDX19B	H3BQK0	2	108	RNA helicase	w
+HELICASE	human	O00148	DDX39A	O00148	114	1274	ATP-dependent RNA helicase DDX39A (EC 3.6.4.13) (DEAD box pr	w
+HELICASE	human	O00571	DDX3X	O00571	56	628	ATP-dependent RNA helicase DDX3X (EC 3.6.4.13) (CAP-Rf) (DEA	w
+HELICASE	human	O14981	BTAF1	O14981	10	279	TATA-binding protein-associated factor 172 (EC 3.6.4.-) (ATP	w
+HELICASE	human	O15523	DDX3Y	O15523	9	176	ATP-dependent RNA helicase DDX3Y (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	O43143	DHX15	O43143	86	681	ATP-dependent RNA helicase DHX15 (EC 3.6.4.13) (ATP-dependen	w
+HELICASE	human	O60231	DHX16	O60231	51	596	Pre-mRNA-splicing factor ATP-dependent RNA helicase DHX16 (E	w
+HELICASE	human	O60306	AQR	O60306	20	592	RNA helicase aquarius (EC 3.6.4.13) (Intron-binding protein 	w
+HELICASE	human	O75417	POLQ	O75417	2	149	DNA polymerase theta (DNA polymerase eta) [Includes: Helicas	w
+HELICASE	human	O75643	SNRNP200	O75643	54	933	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.	w
+HELICASE	human	O94761	RECQL4	O94761	207	1548	ATP-dependent DNA helicase Q4 (EC 5.6.2.4) (DNA 3'-5' helica	w
+HELICASE	human	O94762	RECQL5	O94762	30	200	ATP-dependent DNA helicase Q5 (EC 5.6.2.4) (DNA 3'-5' helica	w
+HELICASE	human	O95786	RIGI	O95786	63	1617	Antiviral innate immune response receptor RIG-I (ATP-depende	w
+HELICASE	human	P13010	XRCC5	P13010	72	641	DNA repair protein Ku80 (EC 4.2.99.18) (EC 5.6.2.4) (86 kDa 	w
+HELICASE	human	P17844	DDX5	P17844	32	766	Probable ATP-dependent RNA helicase DDX5 (EC 3.6.4.13) (DEAD	w
+HELICASE	human	P18074	ERCC2	P18074	22	388	General transcription and DNA repair factor IIH helicase sub	w
+HELICASE	human	P19447	ERCC3	P19447	55	561	General transcription and DNA repair factor IIH helicase/tra	w
+HELICASE	human	P26196	DDX6	P26196	71	702	Probable ATP-dependent RNA helicase DDX6 (EC 3.6.4.13) (ATP-	w
+HELICASE	human	P38919	EIF4A3	P38919	78	853	Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III)	w
+HELICASE	human	P38935	IGHMBP2	P38935	11	126	DNA-binding protein SMUBP-2 (EC 5.6.2.3) (EC 5.6.2.5) (ATP-d	w
+HELICASE	human	P42285	MTREX	P42285	62	758	Exosome RNA helicase MTR4 (EC 3.6.4.13) (ATP-dependent RNA h	w
+HELICASE	human	P42694	HELZ	P42694	0	16	ATP-dependent RNA helicase with zinc finger domain (EC 3.6.4	w
+HELICASE	human	P46063	RECQL	P46063	13	275	ATP-dependent DNA helicase Q1 (EC 5.6.2.4) (DNA 3'-5' helica	w
+HELICASE	human	P46100	ATRX	P46100	50	319	Chromatin remodeler ATRX (EC 3.6.4.-) (Transcriptional regul	w
+HELICASE	human	P51530	DNA2	P51530	15	194	DNA replication ATP-dependent helicase/nuclease DNA2 (hDNA2)	w
+HELICASE	human	P54132	BLM	P54132	44	349	RecQ-like DNA helicase BLM (EC 5.6.2.4) (Bloom syndrome prot	w
+HELICASE	human	P60842	EIF4A1	P60842	39	466	Eukaryotic initiation factor 4A-I (eIF-4A-I) (eIF4A-I) (EC 3	w
+HELICASE	human	Q03468	ERCC6	Q03468	22	357	DNA excision repair protein ERCC-6 (EC 3.6.4.-) (ATP-depende	w
+HELICASE	human	Q08211	DHX9	Q08211	32	790	ATP-dependent RNA helicase A (EC 3.6.4.13) (DEAH box protein	w
+HELICASE	human	Q13206	DDX10	Q13206	68	528	Probable ATP-dependent RNA helicase DDX10 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q13283	G3BP1	Q13283	134	830	Ras GTPase-activating protein-binding protein 1 (G3BP-1) (EC	w
+HELICASE	human	Q13838	DDX39B	Q13838	55	653	Spliceosome RNA helicase DDX39B (EC 3.6.4.13) (56 kDa U2AF65	w
+HELICASE	human	Q14147	DHX34	Q14147	7	102	Probable ATP-dependent RNA helicase DHX34 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q14191	WRN	Q14191	23	222	Bifunctional 3'-5' exonuclease/ATP-dependent helicase WRN (D	w
+HELICASE	human	Q14240	EIF4A2	Q14240	40	544	Eukaryotic initiation factor 4A-II (eIF-4A-II) (eIF4A-II) (E	w
+HELICASE	human	Q14562	DHX8	Q14562	115	726	ATP-dependent RNA helicase DHX8 (EC 3.6.4.13) (DEAH box prot	w
+HELICASE	human	Q2NKX8	ERCC6L	Q2NKX8	15	237	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-d	w
+HELICASE	human	Q587J7	TDRD12	Q587J7	9	52	Putative ATP-dependent RNA helicase TDRD12 (EC 3.6.4.13) (ES	w
+HELICASE	human	Q5FWF4	ZRANB3	Q5FWF4	9	92	DNA annealing helicase and endonuclease ZRANB3 (Annealing he	w
+HELICASE	human	Q5H9U9	DDX60L	Q5H9U9	0	57	Probable ATP-dependent RNA helicase DDX60-like (EC 3.6.4.13)	w
+HELICASE	human	Q5T1V6	DDX59	Q5T1V6	14	162	Probable ATP-dependent RNA helicase DDX59 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q6P158	DHX57	Q6P158	9	291	Putative ATP-dependent RNA helicase DHX57 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q7L014	DDX46	Q7L014	70	503	Probable ATP-dependent RNA helicase DDX46 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q7L2E3	DHX30	Q7L2E3	24	570	ATP-dependent RNA helicase DHX30 (EC 3.6.4.13) (DEAH box pro	w
+HELICASE	human	Q7L7V1	DHX32	Q7L7V1	18	156	Putative pre-mRNA-splicing factor ATP-dependent RNA helicase	w
+HELICASE	human	Q7Z333	SETX	Q7Z333	12	158	Helicase senataxin (EC 5.6.2.3) (Amyotrophic lateral scleros	w
+HELICASE	human	Q7Z478	DHX29	Q7Z478	13	248	ATP-dependent RNA helicase DHX29 (EC 3.6.4.13) (DEAH box pro	w
+HELICASE	human	Q86TM3	DDX53	Q86TM3	3	110	Probable ATP-dependent RNA helicase DDX53 (EC 3.6.4.13) (Can	w
+HELICASE	human	Q86XP3	DDX42	Q86XP3	44	330	ATP-dependent RNA helicase DDX42 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	Q86YA3	ZGRF1	Q86YA3	10	87	5'-3' DNA helicase ZGRF1 (EC 5.6.2.3) (GRF-type zinc finger 	w
+HELICASE	human	Q8IVL1	NAV2	Q8IVL1	51	253	Neuron navigator 2 (EC 3.6.4.12) (Helicase APC down-regulate	w
+HELICASE	human	Q8IX18	DHX40	Q8IX18	32	297	Probable ATP-dependent RNA helicase DHX40 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q8IY21	DDX60	Q8IY21	0	119	Probable ATP-dependent RNA helicase DDX60 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q8IY37	DHX37	Q8IY37	85	590	Probable ATP-dependent RNA helicase DHX37 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q8IYB8	SUPV3L1	Q8IYB8	13	197	ATP-dependent RNA helicase SUPV3L1, mitochondrial (EC 3.6.4.	w
+HELICASE	human	Q8IYD8	FANCM	Q8IYD8	22	212	Fanconi anemia group M protein (Protein FACM) (EC 3.6.4.13) 	w
+HELICASE	human	Q8N3C0	ASCC3	Q8N3C0	19	190	Activating signal cointegrator 1 complex subunit 3 (EC 5.6.2	w
+HELICASE	human	Q8N8A6	DDX51	Q8N8A6	42	352	ATP-dependent RNA helicase DDX51 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	Q8NDG6	TDRD9	Q8NDG6	3	45	ATP-dependent RNA helicase TDRD9 (EC 3.6.4.13) (Tudor domain	w
+HELICASE	human	Q8NFZ0	FBH1	Q8NFZ0	2	51	F-box DNA helicase 1 (hFBH1) (EC 5.6.2.4) (DNA 3'-5' helicas	w
+HELICASE	human	Q8NG08	HELB	Q8NG08	5	39	DNA helicase B (hDHB) (EC 5.6.2.3) (DNA 5'-3' helicase B)	w
+HELICASE	human	Q8NHQ9	DDX55	Q8NHQ9	32	473	ATP-dependent RNA helicase DDX55 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	Q8TDD1	DDX54	Q8TDD1	36	572	ATP-dependent RNA helicase DDX54 (EC 3.6.4.13) (ATP-dependen	w
+HELICASE	human	Q8TDG4	HELQ	Q8TDG4	4	41	Helicase POLQ-like (EC 5.6.2.4) (Mus308-like helicase) (POLQ	w
+HELICASE	human	Q8TE96	DQX1	Q8TE96	9	125	ATP-dependent RNA helicase homolog DQX1 (DEAQ box polypeptid	w
+HELICASE	human	Q92499	DDX1	Q92499	19	465	ATP-dependent RNA helicase DDX1 (EC 3.6.4.13) (DEAD box prot	w
+HELICASE	human	Q92620	DHX38	Q92620	37	389	Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP16 (E	w
+HELICASE	human	Q92771	DDX12P	Q92771	7	96	Putative ATP-dependent DNA helicase DDX12 (EC 5.6.2.-) (CHL1	w
+HELICASE	human	Q92841	DDX17	Q92841	37	497	Probable ATP-dependent RNA helicase DDX17 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q92900	UPF1	Q92900	38	740	Regulator of nonsense transcripts 1 (EC 5.6.2.3) (EC 5.6.2.5	w
+HELICASE	human	Q96AE4	FUBP1	Q96AE4	19	212	Far upstream element-binding protein 1 (FBP) (FUSE-binding p	w
+HELICASE	human	Q96C10	DHX58	Q96C10	5	175	ATP-dependent RNA helicase DHX58 (EC 3.6.4.13) (ATP-dependen	w
+HELICASE	human	Q96FC9	DDX11	Q96FC9	18	393	ATP-dependent DNA helicase DDX11 (EC 5.6.2.3) (CHL1-related 	w
+HELICASE	human	Q96GQ7	DDX27	Q96GQ7	48	442	Probable ATP-dependent RNA helicase DDX27 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q96RR1	TWNK	Q96RR1	4	193	Twinkle mtDNA helicase (EC 5.6.2.3) (Progressive external op	w
+HELICASE	human	Q9BQ39	DDX50	Q9BQ39	25	351	ATP-dependent RNA helicase DDX50 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	Q9BUQ8	DDX23	Q9BUQ8	29	533	Probable ATP-dependent RNA helicase DDX23 (EC 3.6.4.13) (100	w
+HELICASE	human	Q9BX63	BRIP1	Q9BX63	33	248	Fanconi anemia group J protein (EC 5.6.2.3) (BRCA1-associate	w
+HELICASE	human	Q9BXT6	MOV10L1	Q9BXT6	7	72	RNA helicase Mov10l1 (EC 5.6.2.5) (Moloney leukemia virus 10	w
+HELICASE	human	Q9BYK8	HELZ2	Q9BYK8	3	64	3'-5' exoribonuclease HELZ2 (EC 3.1.13.1) (ATP-dependent RNA	w
+HELICASE	human	Q9BYX4	IFIH1	Q9BYX4	11	158	Interferon-induced helicase C domain-containing protein 1 (E	w
+HELICASE	human	Q9GZR7	DDX24	Q9GZR7	55	633	ATP-dependent RNA helicase DDX24 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	Q9H0S4	DDX47	Q9H0S4	42	425	Probable ATP-dependent RNA helicase DDX47 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q9H2U1	DHX36	Q9H2U1	3	323	ATP-dependent DNA/RNA helicase DHX36 (EC 3.6.4.12) (EC 3.6.4	w
+HELICASE	human	Q9H5Z1	DHX35	Q9H5Z1	19	146	Probable ATP-dependent RNA helicase DHX35 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q9H611	PIF1	Q9H611	3	38	ATP-dependent DNA helicase PIF1 (EC 5.6.2.3) (DNA 5'-3' heli	w
+HELICASE	human	Q9H6R0	DHX33	Q9H6R0	24	274	ATP-dependent RNA helicase DHX33 (EC 3.6.4.13) (DEAH box pro	w
+HELICASE	human	Q9H6S0	YTHDC2	Q9H6S0	5	274	3'-5' RNA helicase YTHDC2 (EC 3.6.4.13) (YTH domain-containi	w
+HELICASE	human	Q9H8H2	DDX31	Q9H8H2	26	384	ATP-dependent DNA helicase DDX31 (EC 5.6.2.-) (DEAD box prot	w
+HELICASE	human	Q9HCE1	MOV10	Q9HCE1	55	1173	RNA helicase MOV-10 (EC 5.6.2.5) (Armitage homolog) (Moloney	w
+HELICASE	human	Q9NQI0	DDX4	Q9NQI0	10	111	Probable ATP-dependent RNA helicase DDX4 (EC 3.6.4.13) (DEAD	w
+HELICASE	human	Q9NR30	DDX21	Q9NR30	41	677	Nucleolar RNA helicase 2 (EC 3.6.4.13) (DEAD box protein 21)	w
+HELICASE	human	Q9NRZ9	HELLS	Q9NRZ9	7	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	w
+HELICASE	human	Q9NUL7	DDX28	Q9NUL7	18	281	Probable ATP-dependent RNA helicase DDX28 (EC 3.6.4.13) (Mit	w
+HELICASE	human	Q9NUU7	DDX19A	Q9NUU7	14	164	ATP-dependent RNA helicase DDX19A (EC 3.6.4.13) (DDX19-like 	w
+HELICASE	human	Q9NVP1	DDX18	Q9NVP1	60	577	ATP-dependent RNA helicase DDX18 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	Q9NXL9	MCM9	Q9NXL9	10	131	DNA helicase MCM9 (hMCM9) (EC 5.6.2.4) (DNA 3'-5' helicase M	w
+HELICASE	human	Q9NXZ2	DDX43	Q9NXZ2	0	95	Probable ATP-dependent RNA helicase DDX43 (EC 3.6.4.13) (Can	w
+HELICASE	human	Q9NY93	DDX56	Q9NY93	49	626	Probable ATP-dependent RNA helicase DDX56 (EC 3.6.4.13) (ATP	w
+HELICASE	human	Q9NZ71	RTEL1	Q9NZ71	51	292	Regulator of telomere elongation helicase 1 (EC 5.6.2.-) (No	w
+HELICASE	human	Q9NZC9	SMARCAL1	Q9NZC9	12	129	SNF2 related chromatin remodeling annealing helicase 1 (EC 3	w
+HELICASE	human	Q9UHI6	DDX20	Q9UHI6	51	485	Probable ATP-dependent RNA helicase DDX20 (EC 3.6.1.15) (EC 	w
+HELICASE	human	Q9UHL0	DDX25	Q9UHL0	8	76	ATP-dependent RNA helicase DDX25 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE	human	Q9UJA3	MCM8	Q9UJA3	8	131	DNA helicase MCM8 (EC 5.6.2.4) (DNA 3'-5' helicase MCM8) (Mi	w
+HELICASE	human	Q9UJV9	DDX41	Q9UJV9	85	744	Probable ATP-dependent RNA helicase DDX41 (EC 3.6.4.13) (DEA	w
+HELICASE	human	Q9ULX6	AKAP8L	Q9ULX6	30	302	A-kinase anchor protein 8-like (AKAP8-like protein) (Helicas	w
+HELICASE	human	Q9UMR2	DDX19B	Q9UMR2	17	317	ATP-dependent RNA helicase DDX19B (EC 3.6.4.13) (DEAD box RN	w
+HELICASE	human	Q9UPY3	DICER1	Q9UPY3	9	224	Endoribonuclease Dicer (EC 3.1.26.3) (Helicase with RNase mo	w
+HELICASE	human	Q9Y2R4	DDX52	Q9Y2R4	29	362	Probable ATP-dependent RNA helicase DDX52 (EC 3.6.4.13) (ATP	w
+HELICASE	human	Q9Y4B4	RAD54L2	Q9Y4B4	20	174	Helicase ARIP4 (EC 5.6.2.-) (Androgen receptor-interacting p	w
+HELICASE	human	Q9Y6V7	DDX49	Q9Y6V7	39	405	Probable ATP-dependent RNA helicase DDX49 (EC 3.6.4.13) (DEA	w
+HELICASE	virus	A0A068EEI0	fep_083	A0A068EEI0	1	218	RNA helicase NPH-II	w
+HELICASE	virus	A0A068EGU7	pepv_085	A0A068EGU7	0	235	RNA helicase NPH-II	w
+HELICASE	virus	A0A097NZA3_pc39ffc9e8d		A0A097NZA3	1	10	Serine protease helicase NS3	w
+HELICASE	virus	A0A097NZB6_pf7b96fbdc7		A0A097NZB6	0	9	Serine protease helicase NS3	w
+HELICASE	virus	A0A0A1C4T1		A0A0A1C4T1	0	5	DNA 3-5 helicase	w
+HELICASE	virus	A0A0A1C723		A0A0A1C723	0	5	DNA 3-5 helicase	w
+HELICASE	virus	A0A0A7MC30		A0A0A7MC30	17	130	RNA helicase NPH-II	w
+HELICASE	virus	A0A0B5CVG5		A0A0B5CVG5	0	4	DNA 3-5 helicase	w
+HELICASE	virus	A0A0B5HK21_p9420973906		A0A0B5HK21	1	10	Serine protease helicase NS3	w
+HELICASE	virus	A0A0D5ZYR9		A0A0D5ZYR9	0	4	DNA 3-5 helicase	w
+HELICASE	virus	A0A0D5ZZ24		A0A0D5ZZ24	0	4	DNA 3-5 helicase	w
+HELICASE	virus	A0A0D5ZZ40		A0A0D5ZZ40	0	4	DNA 3-5 helicase	w
+HELICASE	virus	A0A0E3JRJ3		A0A0E3JRJ3	0	4	DNA 3-5 helicase	w
+HELICASE	virus	A0A0F7JH93_p6ca50a0577		A0A0F7JH93	1	10	Serine protease helicase NS3	w
+HELICASE	virus	A0A0G3G4D0	RCNV-Herman-073	A0A0G3G4D0	2	194	RNA helicase NPH-II	w
+HELICASE	virus	A0A0H4PP28	LTAg	A0A0H4PP28	0	8	DNA 3-5 helicase	w
+HELICASE	virus	A0A0M3ZCP5		A0A0M3ZCP5	4	169	RNA helicase NPH-II	w
+HELICASE	virus	A0A1B1MRC5	PTPV-Aus-054	A0A1B1MRC5	3	143	RNA helicase NPH-II	w
+HELICASE	virus	A0A1B2RW84		A0A1B2RW84	0	5	DNA 3-5 helicase	w
+HELICASE	virus	A0A1B2RWB0		A0A1B2RWB0	0	9	DNA 3-5 helicase	w
+HELICASE	virus	A0A1C9KBM9	SKPV-WA-076	A0A1C9KBM9	3	208	RNA helicase NPH-II	w
+HELICASE	virus	A0A1C9KCB8	VPXV-CA-076	A0A1C9KCB8	3	202	RNA helicase NPH-II	w
+HELICASE	virus	A0A1P8SW63		A0A1P8SW63	2	42	Parvovirus non-structural protein 1 helicase domain-containi	w
+HELICASE	virus	A0A1S7J005		A0A1S7J005	0	6	DNA 3-5 helicase	w
+HELICASE	virus	A0A1S7J022		A0A1S7J022	0	6	DNA 3-5 helicase	w
+HELICASE	virus	A0A1S7J028		A0A1S7J028	0	6	DNA 3-5 helicase	w
+HELICASE	virus	A0A1U9VWR9	T	A0A1U9VWR9	0	5	DNA 3-5 helicase	w
+HELICASE	virus	A0A1Z3GCW0	SePPVgORF027	A0A1Z3GCW0	20	119	RNA helicase NPH-II	w
+HELICASE	virus	A0A220T6B4	EPTV-WA-053	A0A220T6B4	5	179	RNA helicase NPH-II	w
+HELICASE	virus	A0A223FMR1	Murmansk-073	A0A223FMR1	2	202	RNA helicase NPH-II	w
+HELICASE	virus	A0A223PYK8	LTAg	A0A223PYK8	0	5	DNA 3-5 helicase	w
+HELICASE	virus	A0A247ZNN0_p20c6366815		A0A247ZNN0	2	10	Serine protease helicase NS3	w
+HELICASE	virus	A0A291PWK7	E1	A0A291PWK7	1	7	DNA 3-5 helicase	w
+HELICASE	virus	A0A2C9DSL0		A0A2C9DSL0	1	160	RNA helicase NPH-II	w
+HELICASE	virus	A0A2C9DT24		A0A2C9DT24	4	160	RNA helicase NPH-II	w
+HELICASE	virus	A0A2H4X288	fgpv_083	A0A2H4X288	1	253	RNA helicase NPH-II	w
+HELICASE	virus	A0A2S0SYY6		A0A2S0SYY6	0	5	DNA 3-5 helicase	w
+HELICASE	virus	A0A2S1CJI3	776T	A0A2S1CJI3	0	9	DNA 3-5 helicase	w
+HELICASE	virus	A0A2U9K628		A0A2U9K628	0	3	DNA 3-5 helicase	w
+HELICASE	virus	A0A2U9QHL7	SOPV-ELK-049	A0A2U9QHL7	5	130	RNA helicase NPH-II	w
+HELICASE	virus	A0A2Z5E052		A0A2Z5E052	0	55	Parvovirus non-structural protein 1 helicase domain-containi	w
+HELICASE	virus	A0A346FRH6	AKMV-88-084	A0A346FRH6	3	214	RNA helicase NPH-II	w
+HELICASE	virus	A0A3G1T4F6	BBLF4	A0A3G1T4F6	3	81	DNA replication helicase domain-containing protein	w
+HELICASE	virus	A0A3G1T4G4	BBLF2/BBLF3	A0A3G1T4G4	3	81	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	A0A3G2KXT7	OPVA078	A0A3G2KXT7	7	207	RNA helicase NPH-II	w
+HELICASE	virus	A0A5B9R2D2		A0A5B9R2D2	5	77	DNA replication helicase domain-containing protein	w
+HELICASE	virus	A0A5H2X3B6		A0A5H2X3B6	0	23	Parvovirus non-structural protein 1 helicase domain-containi	w
+HELICASE	virus	A0A6G9LUG9	LTAg	A0A6G9LUG9	0	4	DNA 3-5 helicase	w
+HELICASE	virus	A0A7G8YXA6		A0A7G8YXA6	0	5	SF3 helicase domain-containing protein	w
+HELICASE	virus	A0A7R5WKA1	NPH2	A0A7R5WKA1	0	187	RNA helicase NPH-II	w
+HELICASE	virus	A0A916KP01	AHEV_079	A0A916KP01	1	243	RNA helicase NPH-II	w
+HELICASE	virus	A0A916KPJ5	CHBEV_138	A0A916KPJ5	2	311	RNA helicase NPH-II	w
+HELICASE	virus	A0A916KQ61	MYSEV_104	A0A916KQ61	3	301	RNA helicase NPH-II	w
+HELICASE	virus	A0A916KQ73	CHBEV_257	A0A916KQ73	1	311	DNA helicase Pif1-like DEAD-box helicase domain-containing p	w
+HELICASE	virus	A0AAE9P905	LTAg	A0AAE9P905	0	5	DNA 3-5 helicase	w
+HELICASE	virus	A0ABM9QKD3	CHREV_106	A0ABM9QKD3	0	286	RNA helicase NPH-II	w
+HELICASE	virus	A0ABM9QKS2	CHREV_223	A0ABM9QKS2	1	286	DNA helicase Pif1-like DEAD-box helicase domain-containing p	w
+HELICASE	virus	A7XCG8	49R	A7XCG8	3	154	RNA helicase NPH-II	w
+HELICASE	virus	A8QPD9_pa3fec0ea40		A8QPD9	1	10	Serine protease helicase NS3	w
+HELICASE	virus	B6RUP3	E1	B6RUP3	0	7	DNA 3-5 helicase	w
+HELICASE	virus	B6RUQ0	E1	B6RUQ0	0	7	DNA 3-5 helicase	w
+HELICASE	virus	C0ITA7		C0ITA7	1	6	DNA 3-5 helicase	w
+HELICASE	virus	C6ZDA0	E1	C6ZDA0	2	8	DNA 3-5 helicase	w
+HELICASE	virus	D3IZI3		D3IZI3	14	125	RNA helicase NPH-II	w
+HELICASE	virus	D6P446_p5b91ef6cda		D6P446	1	10	Serine protease helicase NS3	w
+HELICASE	virus	D6QWG6		D6QWG6	0	5	DNA 3-5 helicase	w
+HELICASE	virus	D6QWJ6		D6QWJ6	0	5	DNA 3-5 helicase	w
+HELICASE	virus	D7RF80_pe8ef0e866b		D7RF80	2	13	Serine protease helicase NS3	w
+HELICASE	virus	E5LA35		E5LA35	0	5	DNA 3-5 helicase	w
+HELICASE	virus	E5LA45		E5LA45	0	5	DNA 3-5 helicase	w
+HELICASE	virus	E5LA65		E5LA65	0	5	DNA 3-5 helicase	w
+HELICASE	virus	E5RUP4		E5RUP4	0	6	DNA 3-5 helicase	w
+HELICASE	virus	F5HEN8	HELI	F5HEN8	3	166	DNA replication helicase	w
+HELICASE	virus	F5HIG1	UL102	F5HIG1	5	167	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	G3EID4	YKV056	G3EID4	3	184	RNA helicase NPH-II	w
+HELICASE	virus	H6TA41	COTV065	H6TA41	1	170	RNA helicase NPH-II	w
+HELICASE	virus	I6UY22		I6UY22	0	5	DNA 3-5 helicase	w
+HELICASE	virus	J3ZGP5		J3ZGP5	0	3	DNA 3-5 helicase	w
+HELICASE	virus	J7FZP3		J7FZP3	0	5	DNA 3-5 helicase	w
+HELICASE	virus	J7G6M5		J7G6M5	0	5	DNA 3-5 helicase	w
+HELICASE	virus	J7HD82		J7HD82	0	4	DNA 3-5 helicase	w
+HELICASE	virus	L0GAL1		L0GAL1	0	5	DNA 3-5 helicase	w
+HELICASE	virus	L0GBB5		L0GBB5	0	5	DNA 3-5 helicase	w
+HELICASE	virus	M9UVS3_p2bbbcdf7cf		M9UVS3	0	10	Serine protease helicase NS3	w
+HELICASE	virus	M9ZRW5_p5b267bd328		M9ZRW5	0	10	Serine protease helicase NS3	w
+HELICASE	virus	M9ZZL8_p03d3e8cd97		M9ZZL8	1	10	Serine protease helicase NS3	w
+HELICASE	virus	N0A109_pb2b3ff8cf4		N0A109	0	10	Serine protease helicase NS3	w
+HELICASE	virus	O36393	HELI	O36393	3	69	DNA replication helicase	w
+HELICASE	virus	O39927_pcd6ed4bea2		O39927	0	10	Serine protease helicase NS3	w
+HELICASE	virus	O39928_p8a9316d4cf		O39928	2	10	Serine protease helicase NS3	w
+HELICASE	virus	O72904	NPH2	O72904	0	248	RNA helicase NPH-II	w
+HELICASE	virus	P03214	HELI	P03214	5	91	DNA replication helicase	w
+HELICASE	virus	P06935_p49f40de6e0		P06935	1	13	Serine protease Helicase NS3	w
+HELICASE	virus	P09300	ORF52	P09300	5	68	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	P09303	HELI	P09303	3	68	DNA replication helicase	w
+HELICASE	virus	P0DSU5	OPG084	P0DSU5	3	199	RNA helicase NPH-II	w
+HELICASE	virus	P12927	OPG084	P12927	2	218	RNA helicase NPH-II	w
+HELICASE	virus	P14335_p741d0f413a		P14335	1	13	Serine protease Helicase NS3	w
+HELICASE	virus	P14336_pd0b5482562		P14336	2	13	Serine protease helicase NS3	w
+HELICASE	virus	P22338_p6060b207e7		P22338	3	13	Serine protease helicase NS3	w
+HELICASE	virus	P26660_pdeaf8ddae7		P26660	1	10	Serine protease helicase NS3	w
+HELICASE	virus	P26661_p4685af0e04		P26661	1	10	Serine protease helicase NS3	w
+HELICASE	virus	P26662_pa19f657f11		P26662	0	10	Serine protease helicase NS3	w
+HELICASE	virus	P26664_p4fc39b2159		P26664	0	11	Serine protease helicase NS3	w
+HELICASE	virus	P27958_p574d58d154		P27958	1	11	Serine protease helicase NS3	w
+HELICASE	virus	P28934	HELI	P28934	3	73	DNA replication helicase	w
+HELICASE	virus	P28946	54	P28946	7	74	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	P30118	BBLF2/BBLF3	P30118	1	91	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	P52356	HELI	P52356	2	98	DNA replication helicase	w
+HELICASE	virus	P52375	U74	P52375	2	98	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	P52450	HELI	P52450	3	94	DNA replication helicase	w
+HELICASE	virus	P52451	U74	P52451	1	95	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	Q01014	HELI	Q01014	2	74	DNA replication helicase	w
+HELICASE	virus	Q04538_pb5eb4edb7b		Q04538	3	13	Serine protease helicase NS3	w
+HELICASE	virus	Q070I0	CRV071	Q070I0	2	171	RNA helicase NPH-II	w
+HELICASE	virus	Q08FU4	DpV83gp058	Q08FU4	9	165	RNA helicase NPH-II	w
+HELICASE	virus	Q0NPD1	TATV_DAH68_080	Q0NPD1	2	219	RNA helicase NPH-II	w
+HELICASE	virus	Q2HR89	HELI	Q2HR89	5	84	DNA replication helicase	w
+HELICASE	virus	Q2HR92	ORF40	Q2HR92	2	84	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	Q5GF26	DLEV_058	Q5GF26	3	187	RNA helicase	w
+HELICASE	virus	Q66643	40	Q66643	6	76	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	Q66647	HELI	Q66647	3	76	DNA replication helicase	w
+HELICASE	virus	Q68798_pe86c14572f		Q68798	0	10	Serine protease helicase NS3	w
+HELICASE	virus	Q68801_p4fa26c10b7		Q68801	1	10	Serine protease helicase NS3	w
+HELICASE	virus	Q69422_p48fbd7527c		Q69422	0	12	Serine protease helicase NS3	w
+HELICASE	virus	Q6TUW4		Q6TUW4	5	139	RNA helicase NPH-II	w
+HELICASE	virus	Q6TVF2		Q6TVF2	18	130	RNA helicase NPH-II	w
+HELICASE	virus	Q6TVT4		Q6TVT4	20	129	RNA helicase NPH-II	w
+HELICASE	virus	Q6UDG9	HELI	Q6UDG9	3	69	DNA replication helicase	w
+HELICASE	virus	Q6UDH2	UL8	Q6UDH2	4	70	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	Q6VZJ4	CNPV153	Q6VZJ4	5	322	ATP-dependent helicase Rep	w
+HELICASE	virus	Q6VZN8	CNPV109	Q6VZN8	6	318	RNA helicase NPH-II	w
+HELICASE	virus	Q7T6D2_p07ba5cbd14		Q7T6D2	3	13	Serine protease helicase NS3	w
+HELICASE	virus	Q81258_pced07a0c8d		Q81258	0	10	Serine protease helicase NS3	w
+HELICASE	virus	Q8JLE9	EVM061	Q8JLE9	6	169	RNA helicase NPH-II	w
+HELICASE	virus	Q8JNA6	E1	Q8JNA6	1	6	DNA 3-5 helicase	w
+HELICASE	virus	Q8QMY3	CPXV087 CDS	Q8QMY3	6	225	RNA helicase NPH-II	w
+HELICASE	virus	Q8V2U3		Q8V2U3	2	207	RNA helicase NPH-II	w
+HELICASE	virus	Q8V3P8	SPV046	Q8V3P8	2	145	RNA helicase NPH-II	w
+HELICASE	virus	Q8V511	I8R	Q8V511	4	186	RNA helicase NPH-II	w
+HELICASE	virus	Q91B85_p6032bf2843		Q91B85	2	13	Serine protease helicase NS3	w
+HELICASE	virus	Q91MV8	LSDV049	Q91MV8	4	152	RNA helicase NPH-II	w
+HELICASE	virus	Q98218	NPH2	Q98218	2	161	RNA helicase NPH-II	w
+HELICASE	virus	Q98829	Segment-9	Q98829	0	10	Helicase VP6-A	w
+HELICASE	virus	Q9DHR3	49R	Q9DHR3	1	150	RNA helicase NPH-II	w
+HELICASE	virus	Q9E6Q8	MDV020	Q9E6Q8	5	87	DNA helicase/primase complex-associated protein	w
+HELICASE	virus	Q9E6R1	HELI	Q9E6R1	4	87	DNA replication helicase	w
+HELICASE	virus	Q9EMW8	AMV081	Q9EMW8	1	278	RNA helicase NPH-II	w
+HELICASE	virus	Q9Q8Q2	OPG084	Q9Q8Q2	2	157	RNA helicase NPH-II	w
+HELICASE	virus	Q9Q927	OPG084	Q9Q927	7	152	RNA helicase NPH-II	w
+HELICASE	virus	Q9YW06	NPH2	Q9YW06	4	261	RNA helicase NPH-II	w
+HELICASE	virus	R9QT72_p251788911f		R9QT72	0	10	Serine protease helicase NS3	w
+HELICASE	virus	R9QTE4_pa98aae7680		R9QTE4	0	10	Serine protease helicase NS3	w
+HELICASE	virus	R9QTQ6_pd3ce437286		R9QTQ6	0	10	Serine protease helicase NS3	w
+HELICASE	virus	S5E367_p9cf74c7f7e		S5E367	0	10	Serine protease helicase NS3	w
+HELICASE	virus	T2FG67	AelPyV_gp4	T2FG67	0	5	DNA 3-5 helicase	w
+HELICASE	virus	U3UBH1	I8R	U3UBH1	1	140	RNA helicase NPH-II	w
+HELICASE	virus	W6JL25		W6JL25	3	241	RNA helicase NPH-II	w
+HELICASE	worm	A0A0K2WNK1	CELE_Y106G6D.5	A0A0K2WNK1	0	2	Helicase ATP-binding domain-containing protein	w
+HELICASE	worm	A0A3P6N6A0	twnk-1	A0A3P6N6A0	1	18	SF4 helicase domain-containing protein	w
+HELICASE	worm	A5Z2S5	B0491.6	A5Z2S5	1	10	DNA helicase	w
+HELICASE	worm	D0PV95	laf-1	D0PV95	2	46	ATP-dependent RNA helicase laf-1	w
+HELICASE	worm	G5ED26	mel-46	G5ED26	3	51	ATP-dependent RNA helicase	w
+HELICASE	worm	G5EDI8	drh-1	G5EDI8	0	31	Dicer-related helicase	w
+HELICASE	worm	G5EFV7	pif-1	G5EFV7	0	35	ATP-dependent DNA helicase PIF1	w
+HELICASE	worm	H2KY86	helq-1	H2KY86	1	11	Helicase POLQ-like	w
+HELICASE	worm	K8F7X9	CELE_Y69H2.7	K8F7X9	0	1	ATP-dependent DNA helicase	w
+HELICASE	worm	O01598	let-355	O01598	7	40	RNA helicase	w
+HELICASE	worm	O01836	glh-3	O01836	0	20	ATP-dependent RNA helicase glh-3	w
+HELICASE	worm	O01978	sosi-1	O01978	0	4	DNA2/NAM7 helicase helicase domain-containing protein	w
+HELICASE	worm	O17157	C24H12.4	O17157	0	21	RNA helicase	w
+HELICASE	worm	O18017	him-6	O18017	5	58	RecQ-like DNA helicase blm-1	w
+HELICASE	worm	O44781	CELE_F33D11.10	O44781	5	100	RNA helicase	w
+HELICASE	worm	O45244	mog-4	O45244	9	72	Probable pre-mRNA-splicing factor ATP-dependent RNA helicase	w
+HELICASE	worm	O61815	B0511.6	O61815	2	121	ATP-dependent RNA helicase	w
+HELICASE	worm	O62217	dog-1	O62217	1	45	Helicase ATP-binding domain-containing protein	w
+HELICASE	worm	O76743	glh-4	O76743	1	22	ATP-dependent RNA helicase glh-4	w
+HELICASE	worm	P34305	rha-2	P34305	4	83	Putative ATP-dependent RNA helicase rha-2	w
+HELICASE	worm	P34498	mog-1	P34498	7	96	Probable pre-mRNA-splicing factor ATP-dependent RNA helicase	w
+HELICASE	worm	P34580	T26G10.1	P34580	1	35	Putative ATP-dependent RNA helicase T26G10.1	w
+HELICASE	worm	P34640	ZK512.2	P34640	1	38	Probable ATP-dependent RNA helicase DDX55 homolog	w
+HELICASE	worm	P34668	ZK686.2	P34668	0	8	Putative ATP-dependent RNA helicase ZK686.2	w
+HELICASE	worm	P34689	glh-1	P34689	12	413	ATP-dependent RNA helicase glh-1	w
+HELICASE	worm	P90897	rde-12	P90897	3	46	DEAD-box ATP-dependent RNA helicase rde-12	w
+HELICASE	worm	P91340	CELE_F55F8.2	P91340	0	22	ATP-dependent RNA helicase	w
+HELICASE	worm	Q09530	mog-5	Q09530	12	75	Probable pre-mRNA-splicing factor ATP-dependent RNA helicase	w
+HELICASE	worm	Q17828	C08F8.2	Q17828	2	25	ATP-dependent RNA helicase SUV3 homolog, mitochondrial	w
+HELICASE	worm	Q17908	C11G6.2	Q17908	0	1	ATP-dependent DNA helicase	w
+HELICASE	worm	Q17978	mut-14	Q17978	1	13	RNA helicase	w
+HELICASE	worm	Q18212	hel-1	Q18212	12	102	Spliceosome RNA helicase DDX39B homolog	w
+HELICASE	worm	Q18241	rad-54.l2	Q18241	2	50	Helicase ARIP4	w
+HELICASE	worm	Q19046	rcq-5	Q19046	4	37	ATP-dependent DNA helicase	w
+HELICASE	worm	Q19103	skih-2	Q19103	3	60	Helicase SKI2W	w
+HELICASE	worm	Q19546	wrn-1	Q19546	0	59	ATP-dependent helicase wrn-1	w
+HELICASE	worm	Q20644	ythc-2	Q20644	0	31	Probable ATP-dependent RNA helicase spindle-E	w
+HELICASE	worm	Q20875	ddx-15	Q20875	10	101	Pre-mRNA-splicing factor ATP-dependent RNA helicase ddx-15	w
+HELICASE	worm	Q20935	CELE_F57B9.3	Q20935	5	63	RNA helicase	w
+HELICASE	worm	Q21489	chl-1	Q21489	0	49	ATP-dependent DNA helicase chl-1	w
+HELICASE	worm	Q21736	ddx-52	Q21736	1	24	Probable ATP-dependent RNA helicase DDX52	w
+HELICASE	worm	Q21829	cku-80	Q21829	2	52	ATP-dependent DNA helicase II subunit 2	w
+HELICASE	worm	Q22307	rha-1	Q22307	0	45	ATP-dependent RNA helicase A	w
+HELICASE	worm	Q22308	ddx-19	Q22308	1	7	RNA helicase	w
+HELICASE	worm	Q2WF63	CELE_H20J04.4	Q2WF63	1	35	RNA helicase	w
+HELICASE	worm	Q65XX1	vbh-1	Q65XX1	0	43	RNA helicase	w
+HELICASE	worm	Q688Z3	CELE_Y94H6A.5	Q688Z3	1	19	RNA helicase	w
+HELICASE	worm	Q8MXK2	CELE_Y108F1.5	Q8MXK2	0	40	RNA helicase	w
+HELICASE	worm	Q93382	C46F11.4	Q93382	2	41	RNA helicase	w
+HELICASE	worm	Q93413	drh-3	Q93413	1	52	Helicase ATP-binding domain-containing protein	w
+HELICASE	worm	Q93575	rtel-1	Q93575	1	47	Regulator of telomere elongation helicase 1 homolog	w
+HELICASE	worm	Q95PZ4	xpb-1	Q95PZ4	7	113	General transcription and DNA repair factor IIH helicase/tra	w
+HELICASE	worm	Q95QN2	ddx-23	Q95QN2	0	54	Probable ATP-dependent RNA helicase DDX23	w
+HELICASE	worm	Q95XM9	ddx-27	Q95XM9	1	18	RNA helicase	w
+HELICASE	worm	Q95YF3	cgh-1	Q95YF3	10	109	ATP-dependent RNA helicase cgh-1	w
+HELICASE	worm	Q965K2	ddx-46	Q965K2	7	49	RNA helicase	w
+HELICASE	worm	Q966L9	glh-2	Q966L9	0	23	ATP-dependent RNA helicase glh-2	w
+HELICASE	worm	Q9BKQ8	ddx-35	Q9BKQ8	3	60	Probable ATP-dependent RNA helicase DHX35 homolog	w
+HELICASE	worm	Q9BL61	eif-4a3	Q9BL61	1	61	RNA helicase	w
+HELICASE	worm	Q9N341	CELE_Y55F3BR.1	Q9N341	3	25	ATP-dependent RNA helicase DDX1	w
+HELICASE	worm	Q9N3H5	CELE_Y52E8A.1	Q9N3H5	0	19	RNA helicase	w
+HELICASE	worm	Q9N3L2	xpd-1	Q9N3L2	6	102	General transcription and DNA repair factor IIH helicase sub	w
+HELICASE	worm	Q9N478	ddx-10	Q9N478	1	37	ATP-dependent RNA helicase	w
+HELICASE	worm	Q9N5K1	sacy-1	Q9N5K1	4	28	RNA helicase	w
+HELICASE	worm	Q9TXJ8	K02F3.12	Q9TXJ8	0	11	Putative ATP-dependent DNA helicase Q1	w
+HELICASE	worm	Q9U3F2	dna-2	Q9U3F2	2	41	DNA replication ATP-dependent helicase/nuclease DNA2	w
+HELICASE	worm	Q9U3T4	CELE_Y116F11A.1	Q9U3T4	0	1	ATP-dependent DNA helicase	w
+HELICASE	worm	Q9XUW5	ddx-17	Q9XUW5	3	109	RNA helicase	w
+HELICASE	worm	Q9XVZ6	CELE_Y54G11A.3	Q9XVZ6	0	5	RNA helicase	w
+HELICASE	worm	U4PRA5	smgl-2	U4PRA5	0	40	ATP-dependent RNA helicase DHX34	w
+HELICASE	yeast	O13559	YRF1-4	O13559	0	5	Y' element ATP-dependent helicase protein 1 copy 4	w
+HELICASE	yeast	P06634	DED1	P06634	9	231	ATP-dependent RNA helicase DED1	w
+HELICASE	yeast	P06839	RAD3	P06839	6	148	General transcription and DNA repair factor IIH helicase sub	w
+HELICASE	yeast	P07271	PIF1	P07271	1	26	ATP-dependent DNA helicase PIF1	w
+HELICASE	yeast	P10081	TIF1	P10081	10	159	ATP-dependent RNA helicase eIF4A	w
+HELICASE	yeast	P12954	SRS2	P12954	4	113	ATP-dependent DNA helicase SRS2	w
+HELICASE	yeast	P15424	MSS116	P15424	1	98	ATP-dependent RNA helicase MSS116, mitochondrial	w
+HELICASE	yeast	P15938	PRP16	P15938	1	81	Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP16	w
+HELICASE	yeast	P20447	DBP3	P20447	3	141	ATP-dependent RNA helicase DBP3	w
+HELICASE	yeast	P20448	HCA4	P20448	7	162	ATP-dependent RNA helicase HCA4	w
+HELICASE	yeast	P20449	DBP5	P20449	5	58	ATP-dependent RNA helicase DBP5	w
+HELICASE	yeast	P21372	PRP5	P21372	4	52	Pre-mRNA-processing ATP-dependent RNA helicase PRP5	w
+HELICASE	yeast	P22516	CHL1	P22516	2	65	ATP-dependent DNA helicase CHL1	w
+HELICASE	yeast	P23394	PRP28	P23394	2	74	Pre-mRNA-splicing ATP-dependent RNA helicase PRP28	w
+HELICASE	yeast	P24384	PRP22	P24384	6	89	Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP22	w
+HELICASE	yeast	P24783	DBP2	P24783	5	138	ATP-dependent RNA helicase DBP2	w
+HELICASE	yeast	P24784	DBP1	P24784	3	38	ATP-dependent RNA helicase DBP1	w
+HELICASE	yeast	P25808	SPB4	P25808	4	453	ATP-dependent rRNA helicase SPB4	w
+HELICASE	yeast	P30771	NAM7	P30771	4	123	ATP-dependent helicase NAM7	w
+HELICASE	yeast	P31380	FUN30	P31380	1	32	ATP-dependent helicase FUN30	w
+HELICASE	yeast	P32580	SUV3	P32580	1	42	ATP-dependent RNA helicase SUV3, mitochondrial	w
+HELICASE	yeast	P32644	ECM32	P32644	3	45	Putative ATP-dependent RNA helicase ECM32	w
+HELICASE	yeast	P32807	YKU70	P32807	7	59	ATP-dependent DNA helicase II subunit 1 (EC 3.6.4.12) (ATP-d	w
+HELICASE	yeast	P32892	DRS1	P32892	7	113	ATP-dependent RNA helicase DRS1	w
+HELICASE	yeast	P34243	HCS1	P34243	0	17	DNA polymerase alpha-associated DNA helicase A	w
+HELICASE	yeast	P35187	SGS1	P35187	2	68	ATP-dependent helicase SGS1	w
+HELICASE	yeast	P35207	SKI2	P35207	7	131	Antiviral helicase SKI2	w
+HELICASE	yeast	P36009	DHR2	P36009	10	94	Probable ATP-dependent RNA helicase DHR2	w
+HELICASE	yeast	P36120	DBP7	P36120	3	72	ATP-dependent RNA helicase DBP7	w
+HELICASE	yeast	P38112	MAK5	P38112	7	130	ATP-dependent RNA helicase MAK5	w
+HELICASE	yeast	P38712	RRP3	P38712	8	83	ATP-dependent rRNA helicase RRP3	w
+HELICASE	yeast	P38719	DBP8	P38719	8	164	ATP-dependent RNA helicase DBP8	w
+HELICASE	yeast	P38766	RRM3	P38766	0	13	ATP-dependent DNA helicase RRM3	w
+HELICASE	yeast	P39517	DHH1	P39517	10	165	ATP-dependent RNA helicase DHH1	w
+HELICASE	yeast	P40562	MPH1	P40562	2	71	ATP-dependent DNA helicase MPH1	w
+HELICASE	yeast	P43538	YFL066C	P43538	0	4	Y' element ATP-dependent helicase YFL066C	w
+HELICASE	yeast	P43610	IRC5	P43610	1	26	Uncharacterized ATP-dependent helicase IRC5	w
+HELICASE	yeast	P45818	ROK1	P45818	3	118	ATP-dependent RNA helicase ROK1	w
+HELICASE	yeast	P47047	MTR4	P47047	12	206	ATP-dependent RNA helicase DOB1	w
+HELICASE	yeast	P51979	HFM1	P51979	3	66	ATP-dependent DNA helicase MER3	w
+HELICASE	yeast	P53131	PRP43	P53131	11	278	Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP43	w
+HELICASE	yeast	P53166	MRH4	P53166	2	62	ATP-dependent RNA helicase MRH4, mitochondrial	w
+HELICASE	yeast	P53734	DBP6	P53734	5	102	ATP-dependent RNA helicase DBP6	w
+HELICASE	yeast	Q00578	SSL2	Q00578	16	151	General transcription and DNA repair factor IIH helicase/tra	w
+HELICASE	yeast	Q03099	YML133C	Q03099	0	5	Y' element ATP-dependent helicase YML133C	w
+HELICASE	yeast	Q03532	HAS1	Q03532	12	291	ATP-dependent RNA helicase HAS1	w
+HELICASE	yeast	Q04217	ECM16	Q04217	14	495	Probable ATP-dependent RNA helicase DHR1	w
+HELICASE	yeast	Q04437	YKU80	Q04437	7	85	ATP-dependent DNA helicase II subunit 2	w
+HELICASE	yeast	Q05549	HRQ1	Q05549	1	82	ATP-dependent helicase HRQ1	w
+HELICASE	yeast	Q06218	DBP9	Q06218	7	78	ATP-dependent RNA helicase DBP9	w
+HELICASE	yeast	Q06683	IRC3	Q06683	0	19	Putative ATP-dependent helicase IRC3	w
+HELICASE	yeast	Q06698	YLR419W	Q06698	2	75	Putative ATP-dependent RNA helicase YLR419W	w
+HELICASE	yeast	Q07478	SUB2	Q07478	3	80	ATP-dependent RNA helicase SUB2	w
+HELICASE	yeast	Q08995	YPR204W	Q08995	0	5	Y' element ATP-dependent helicase YPR204W	w
+HELICASE	yeast	Q12039	HMI1	Q12039	0	14	ATP-dependent DNA helicase HMI1, mitochondrial	w
+HELICASE	yeast	Q12099	FAL1	Q12099	5	112	ATP-dependent RNA helicase FAL1	w
+HELICASE	yeast	Q12389	DBP10	Q12389	6	131	ATP-dependent RNA helicase DBP10	w
+HELICASE	yeast	Q3E7X8	YEL077C	Q3E7X8	0	7	Y' element ATP-dependent helicase YEL077C	w
+HELICASE	zebrafish	A0A0R4ICC1	twnk	A0A0R4ICC1	0	12	Twinkle mtDNA helicase	w
+HELICASE	zebrafish	A0A0R4IJV5	ddx52	A0A0R4IJV5	1	19	ATP-dependent RNA helicase	w
+HELICASE	zebrafish	A0A2R9YJN8	ddx21	A0A2R9YJN8	6	230	RNA helicase	w
+HELICASE	zebrafish	A0A8M1NHJ3	dhx36	A0A8M1NHJ3	2	148	ATP-dependent DNA/RNA helicase DHX36	w
+HELICASE	zebrafish	A0A8M1NYY8	dhx32a	A0A8M1NYY8	10	165	Putative pre-mRNA-splicing factor ATP-dependent RNA helicase	w
+HELICASE	zebrafish	A0A8M1RMN7	ddx24	A0A8M1RMN7	10	172	ATP-dependent RNA helicase	w
+HELICASE	zebrafish	A0A8M6YW51	blm	A0A8M6YW51	4	83	RecQ-like DNA helicase BLM	w
+HELICASE	zebrafish	A0A8M6Z5E0	fbxo18	A0A8M6Z5E0	2	22	F-box DNA helicase 1	w
+HELICASE	zebrafish	A0A8M9PIH1	dhx40	A0A8M9PIH1	5	147	Probable ATP-dependent RNA helicase DHX40	w
+HELICASE	zebrafish	A0A8M9PSF9	dna2	A0A8M9PSF9	11	114	DNA replication ATP-dependent helicase/nuclease	w
+HELICASE	zebrafish	A0A8M9Q925	dhx8	A0A8M9Q925	17	167	ATP-dependent RNA helicase DHX8	w
+HELICASE	zebrafish	A0A8N7TAQ7	rad54l2	A0A8N7TAQ7	4	62	Helicase ARIP4 isoform X2	w
+HELICASE	zebrafish	A0A8N7TE51	dhx30	A0A8N7TE51	5	138	ATP-dependent RNA helicase DHX30	w
+HELICASE	zebrafish	A2AWA1	ddx39aa	A2AWA1	15	183	RNA helicase	w
+HELICASE	zebrafish	A2BFD2	ddx31	A2BFD2	6	177	ATP-dependent RNA helicase	w
+HELICASE	zebrafish	A4IG62	supv3l1	A4IG62	1	51	ATP-dependent RNA helicase SUPV3L1, mitochondrial	w
+HELICASE	zebrafish	B0S6P6	ddx3xa	B0S6P6	12	191	RNA helicase	w
+HELICASE	zebrafish	B0UYS3	helb	B0UYS3	0	2	DNA helicase B	w
+HELICASE	zebrafish	B7ZDD5	brip1	B7ZDD5	9	121	DNA 5-3 helicase	w
+HELICASE	zebrafish	B8A4F4	tdrd9	B8A4F4	4	138	ATP-dependent RNA helicase TDRD9	w
+HELICASE	zebrafish	B8A609	ddx43	B8A609	3	145	RNA helicase	w
+HELICASE	zebrafish	E7EXE0	zranb3	E7EXE0	5	61	DNA annealing helicase and endonuclease ZRANB3	w
+HELICASE	zebrafish	E7F1G8	ddx61	E7F1G8	20	242	RNA helicase	w
+HELICASE	zebrafish	E7F2M7	recql4	E7F2M7	7	71	ATP-dependent DNA helicase Q4	w
+HELICASE	zebrafish	E7F3I8	dhx15	E7F3I8	17	199	ATP-dependent RNA helicase DHX15	w
+HELICASE	zebrafish	E7F643	mcm8	E7F643	0	35	DNA helicase MCM8	w
+HELICASE	zebrafish	E7FAV9	mov10a	E7FAV9	0	13	RNA helicase	w
+HELICASE	zebrafish	E7FD91	ddx6	E7FD91	22	243	RNA helicase	w
+HELICASE	zebrafish	F1Q4P2	helq	F1Q4P2	0	21	Helicase POLQ-like	w
+HELICASE	zebrafish	F1Q5E7	ercc2	F1Q5E7	8	211	General transcription and DNA repair factor IIH helicase sub	w
+HELICASE	zebrafish	F1Q5L6	ddx5	F1Q5L6	2	250	RNA helicase	w
+HELICASE	zebrafish	F1QBS1	ddx17	F1QBS1	4	229	RNA helicase	w
+HELICASE	zebrafish	F1QCB1	dhx57	F1QCB1	2	140	Putative ATP-dependent RNA helicase DHX57	w
+HELICASE	zebrafish	F1QDI9	mcm9	F1QDI9	1	50	DNA helicase MCM9	w
+HELICASE	zebrafish	F1QSB8	ddx42	F1QSB8	7	157	ATP-dependent RNA helicase DDX42	w
+HELICASE	zebrafish	F1QUY3	dhx58	F1QUY3	5	107	RNA helicase	w
+HELICASE	zebrafish	F1R166	eif4a2	F1R166	10	272	RNA helicase	w
+HELICASE	zebrafish	F1R2L8	ddx1	F1R2L8	6	179	ATP-dependent RNA helicase	w
+HELICASE	zebrafish	F1R345	ddx11	F1R345	5	100	ATP-dependent DNA helicase DDX11	w
+HELICASE	zebrafish	F8W3D4	ddx10	F8W3D4	14	217	ATP-dependent RNA helicase	w
+HELICASE	zebrafish	P0C218	ddx20	P0C218	11	201	Probable ATP-dependent RNA helicase DDX20	w
+HELICASE	zebrafish	P0C928	rtel1	P0C928	4	109	Regulator of telomere elongation helicase 1	w
+HELICASE	zebrafish	Q1LXK4	mov10b.1	Q1LXK4	0	13	Putative helicase mov-10-B.1	w
+HELICASE	zebrafish	Q1LXK5	mov10b.2	Q1LXK5	0	13	Putative helicase mov-10-B.2	w
+HELICASE	zebrafish	Q4TVV3	ddx46	Q4TVV3	16	204	Probable ATP-dependent RNA helicase DDX46	w
+HELICASE	zebrafish	Q6DRE7	ddx56	Q6DRE7	6	172	Probable ATP-dependent RNA helicase DDX56	w
+HELICASE	zebrafish	Q6DRI7	ddx51	Q6DRI7	7	178	ATP-dependent RNA helicase DDX51	w
+HELICASE	zebrafish	Q6P9Z2	ddx23	Q6P9Z2	7	185	Probable ATP-dependent RNA helicase DDX23	w
+HELICASE	zebrafish	Q7SXU7	ddx39b	Q7SXU7	13	193	RNA helicase	w
+HELICASE	zebrafish	Q7ZU67	eif4a1b	Q7ZU67	9	272	RNA helicase	w
+HELICASE	zebrafish	Q7ZV90	pif1	Q7ZV90	1	14	ATP-dependent DNA helicase PIF1	w
+HELICASE	zebrafish	Q7ZVV1	ercc3	Q7ZVV1	7	230	General transcription and DNA repair factor IIH helicase/tra	w
+HELICASE	zebrafish	Q802C9	eif4a1a	Q802C9	12	272	RNA helicase	w
+HELICASE	zebrafish	Q803W0	ddx39ab	Q803W0	13	182	RNA helicase	w
+HELICASE	zebrafish	Q8JGR2	ddx54	Q8JGR2	5	171	ATP-dependent RNA helicase DDX54	w
+HELICASE	zebrafish	Q8JHJ2	ddx55	Q8JHJ2	10	183	ATP-dependent RNA helicase DDX55	w
+HELICASE	zebrafish	X1WCM8	recql5	X1WCM8	2	60	ATP-dependent DNA helicase	w
+HELICASE	zebrafish	X1WET4	dhx33	X1WET4	13	157	ATP-dependent RNA helicase DHX33	w
+HELICASE	zebrafish	X1WHV8	dhx32b	X1WHV8	15	165	Putative pre-mRNA-splicing factor ATP-dependent RNA helicase	w
+HELICASE PRIMASE SUBUNIT	virus	A0A5P9JX44	helicase primase subunit	A0A5P9JX44	1	81	A0A5P9JX44_9ALPH	
+HELICASE-INTERACTING	human	Q96S55	WRNIP1	Q96S55	16	137	ATPase WRNIP1 (EC 3.6.1.-) (Werner helicase-interacting prot	w
+HELICASE-LIKE	human	O00571	DDX3X	O00571	56	628	ATP-dependent RNA helicase DDX3X (EC 3.6.4.13) (CAP-Rf) (DEA	w
+HELICASE-LIKE	human	P51530	DNA2	P51530	15	194	DNA replication ATP-dependent helicase/nuclease DNA2 (hDNA2)	w
+HELICASE-LIKE	human	Q15477	SKIC2	Q15477	16	268	Superkiller complex protein 2 (Ski2) (EC 3.6.4.13) (Helicase	w
+HELICASE-LIKE	human	Q7L7V1	DHX32	Q7L7V1	18	156	Putative pre-mRNA-splicing factor ATP-dependent RNA helicase	w
+HELICASE-LIKE	human	Q86XP3	DDX42	Q86XP3	44	330	ATP-dependent RNA helicase DDX42 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE-LIKE	human	Q9H611	PIF1	Q9H611	3	38	ATP-dependent DNA helicase PIF1 (EC 5.6.2.3) (DNA 5'-3' heli	w
+HELICASE-LIKE	human	Q9NZ71	RTEL1	Q9NZ71	51	292	Regulator of telomere elongation helicase 1 (EC 5.6.2.-) (No	w
+HELICASE-LIKE	worm	Q09594	CELE_R03D7.2	Q09594	0	3	DNA2/NAM7 helicase-like C-terminal domain-containing protein	w
+HELICASE-LIKE	worm	Q18633	hzl-1	Q18633	0	14	DNA2/NAM7 helicase-like C-terminal domain-containing protein	w
+HELICASE-LIKE	yeast	P20095	PRP2	P20095	4	82	Pre-mRNA-splicing factor ATP-dependent RNA helicase-like pro	w
+HELICASE-LIKE	yeast	Q3E7Y4	YBL112C	Q3E7Y4	0	4	Putative uncharacterized helicase-like protein YBL112C	w
+HELICASE-LIKE	yeast	Q3E7Y5	YBL111C	Q3E7Y5	1	9	Uncharacterized helicase-like protein YBL111C	w
+HELICASE-LIKE	zebrafish	A0A8M2BAK6	hltf	A0A8M2BAK6	3	134	Helicase-like transcription factor	w
+HELICASE-RELATED	human	Q86XP3	DDX42	Q86XP3	44	330	ATP-dependent RNA helicase DDX42 (EC 3.6.4.13) (DEAD box pro	w
+HELICASE-RELATED	human	Q9ULG1	INO80	Q9ULG1	24	301	Chromatin-remodeling ATPase INO80 (hINO80) (EC 3.6.4.-) (DNA	w
+HELIOS	human	Q9UKS7	IKZF2	Q9UKS7	13	70		
+HELIX	fly	FBgn0011276	HLH3B	Q9W4X2	95	401	Helix loop helix protein 3B (IP01280p)	w
+HELIX	fly	FBgn0011277	HLH4C	M9PH26	77	473	Helix loop helix protein 4C, isoform B	w
+HELIX	human	O75182	SIN3B	O75182	68	290	Paired amphipathic helix protein Sin3b (Histone deacetylase 	w
+HELIX	human	P49842	WHR1	P49842	125	1243	Winged helix repair factor 1 (Inactive serine/threonine-prot	w
+HELIX	human	Q02575	NHLH1	Q02575	98	498	Helix-loop-helix protein 1 (HEN-1) (Class A basic helix-loop	w
+HELIX	human	Q02577	NHLH2	Q02577	90	431	Helix-loop-helix protein 2 (HEN-2) (Class A basic helix-loop	w
+HELIX	human	Q58A44	PCOTH	Q58A44	0	4	Prostate collagen triple helix protein (C1QTNF9B antisense R	w
+HELIX	human	Q8NBU5	ATAD1	Q8NBU5	5	137	Outer mitochondrial transmembrane helix translocase (EC 7.4.	w
+HELIX	human	Q96CG8	CTHRC1	Q96CG8	5	207	Collagen triple helix repeat-containing protein 1	w
+HELIX	human	Q96ST3	SIN3A	Q96ST3	128	744	Paired amphipathic helix protein Sin3a (Histone deacetylase 	w
+HELIX	human	Q9HD20	ATP13A1	Q9HD20	13	274	Endoplasmic reticulum transmembrane helix translocase (EC 7.	w
+HELIX	worm	Q9TYN4	blos-7	Q9TYN4	8	10	BLOC-1-related complex subunit 6 C-terminal helix domain-con	w
+HELIX	yeast	P28737	MSP1	P28737	0	38	Outer mitochondrial transmembrane helix translocase	w
+HELIX	yeast	P39986	SPF1	P39986	0	33	Endoplasmic reticulum transmembrane helix translocase	w
+HELIX	zebrafish	A5D6S0	sin3aa	A5D6S0	35	142	Paired amphipathic helix protein Sin3a	w
+HELIX	zebrafish	E7F0R9	sin3ab	E7F0R9	31	150	Paired amphipathic helix protein Sin3a	w
+HELIX	zebrafish	F1R1X4	atp13a1	F1R1X4	0	13	Endoplasmic reticulum transmembrane helix translocase	w
+HELIX	zebrafish	F6P0H3	cthrc1b	F6P0H3	1	22	Collagen triple helix repeat-containing 1b	w
+HELIX	zebrafish	Q1LYM8	sin3b	Q1LYM8	27	149	Paired amphipathic helix protein Sin3b	w
+HELIX	zebrafish	Q503W7	atad1b	Q503W7	0	47	Outer mitochondrial transmembrane helix translocase	w
+HELIX	zebrafish	Q6AXL0	cthrc1a	Q6AXL0	1	22	Collagen triple helix repeat containing 1a	w
+HELIX	zebrafish	Q7ZZ25	atad1a	Q7ZZ25	0	47	Outer mitochondrial transmembrane helix translocase	w
+HELIX-DESTABILIZING	human	P09651	HNRNPA1	P09651	59	851	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (Helix	w
+HELIX-L	human	O15111	CHUK	O15111	141	1577	Inhibitor of nuclear factor kappa-B kinase subunit alpha (I-	w
+HELIX-L	zebrafish	Q4G3H4	chuk	Q4G3H4	14	105	Inhibitor of nuclear factor kappa-B kinase subunit alpha (I 	w
+HELIX-LOOP-HELIX	fly	FBgn0003270	amos	Q9Y0A7	65	392	Basic helix-loop-helix transcription factor amos (Absent MD 	w
+HELIX-LOOP-HELIX	fly	FBgn0015550	tap	O16867	78	404	Basic helix-loop-helix neural transcription factor TAP (Prot	w
+HELIX-LOOP-HELIX	fly	FBgn0037937	Fer3	Q9VGJ5	43	378	Protein Fer3 (Basic helix-loop-helix protein N-twist) (Nephe	w
+HELIX-LOOP-HELIX	human	A9YTQ3	AHRR	A9YTQ3	16	35	Aryl hydrocarbon receptor repressor (AhR repressor) (AhRR) (	w
+HELIX-LOOP-HELIX	human	C9JSJ3	MEIOSIN	C9JSJ3	2	6	Meiosis initiator protein (Basic helix-loop-helix and HMG bo	w
+HELIX-LOOP-HELIX	human	O00327	BMAL1	O00327	46	193	Basic helix-loop-helix ARNT-like protein 1 (Aryl hydrocarbon	w
+HELIX-LOOP-HELIX	human	O14503	BHLHE40	O14503	161	549	Class E basic helix-loop-helix protein 40 (bHLHe40) (Class B	w
+HELIX-LOOP-HELIX	human	O14948	TFEC	O14948	106	419	Transcription factor EC (TFE-C) (Class E basic helix-loop-he	w
+HELIX-LOOP-HELIX	human	O15516	CLOCK	O15516	51	195	Circadian locomoter output cycles protein kaput (hCLOCK) (EC	w
+HELIX-LOOP-HELIX	human	O43680	TCF21	O43680	48	387	Transcription factor 21 (TCF-21) (Capsulin) (Class A basic h	w
+HELIX-LOOP-HELIX	human	O60682	MSC	O60682	69	380	Musculin (Activated B-cell factor 1) (ABF-1) (Class A basic 	w
+HELIX-LOOP-HELIX	human	O75030	MITF	O75030	136	458	Microphthalmia-associated transcription factor (Class E basi	w
+HELIX-LOOP-HELIX	human	O96004	HAND1	O96004	63	358	Heart- and neural crest derivatives-expressed protein 1 (Cla	w
+HELIX-LOOP-HELIX	human	P01106	MYC	P01106	1020	3715	Myc proto-oncogene protein (Class E basic helix-loop-helix p	w
+HELIX-LOOP-HELIX	human	P04198	MYCN	P04198	429	1440	N-myc proto-oncogene protein (Class E basic helix-loop-helix	w
+HELIX-LOOP-HELIX	human	P12524	MYCL	P12524	38	90	Protein L-Myc (Class E basic helix-loop-helix protein 38) (b	w
+HELIX-LOOP-HELIX	human	P12980	LYL1	P12980	85	379	Protein lyl-1 (Class A basic helix-loop-helix protein 18) (b	w
+HELIX-LOOP-HELIX	human	P13349	MYF5	P13349	119	441	Myogenic factor 5 (Myf-5) (Class C basic helix-loop-helix pr	w
+HELIX-LOOP-HELIX	human	P15172	MYOD1	P15172	196	630	Myoblast determination protein 1 (Class C basic helix-loop-h	w
+HELIX-LOOP-HELIX	human	P15173	MYOG	P15173	145	528	Myogenin (Class C basic helix-loop-helix protein 3) (bHLHc3)	w
+HELIX-LOOP-HELIX	human	P15884	TCF4	P15884	118	306	Transcription factor 4 (TCF-4) (Class B basic helix-loop-hel	w
+HELIX-LOOP-HELIX	human	P15923	TCF3	P15923	130	329	Transcription factor E2-alpha (Class B basic helix-loop-heli	w
+HELIX-LOOP-HELIX	human	P17542	TAL1	P17542	113	512	T-cell acute lymphocytic leukemia protein 1 (TAL-1) (Class A	w
+HELIX-LOOP-HELIX	human	P19484	TFEB	P19484	134	443	Transcription factor EB (Class E basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	P19532	TFE3	P19532	123	434	Transcription factor E3 (Class E basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	P22415	USF1	P22415	73	489	Upstream stimulatory factor 1 (Class B basic helix-loop-heli	w
+HELIX-LOOP-HELIX	human	P23409	MYF6	P23409	106	406	Myogenic factor 6 (Myf-6) (Class C basic helix-loop-helix pr	w
+HELIX-LOOP-HELIX	human	P27540	ARNT	P27540	55	302	Aryl hydrocarbon receptor nuclear translocator (ARNT protein	w
+HELIX-LOOP-HELIX	human	P35869	AHR	P35869	36	161	Aryl hydrocarbon receptor (Ah receptor) (AhR) (Class E basic	w
+HELIX-LOOP-HELIX	human	P36956	SREBF1	P36956	35	227	Sterol regulatory element-binding protein 1 (SREBP-1) (Class	w
+HELIX-LOOP-HELIX	human	P41134	ID1	P41134	77	489	DNA-binding protein inhibitor ID-1 (Class B basic helix-loop	w
+HELIX-LOOP-HELIX	human	P47928	ID4	P47928	88	417	DNA-binding protein inhibitor ID-4 (Class B basic helix-loop	w
+HELIX-LOOP-HELIX	human	P50539	MXI1	P50539	107	400	Max-interacting protein 1 (Max interactor 1) (Class C basic 	w
+HELIX-LOOP-HELIX	human	P50553	ASCL1	P50553	91	409	Achaete-scute homolog 1 (ASH-1) (hASH1) (Class A basic helix	w
+HELIX-LOOP-HELIX	human	P61244	MAX	P61244	130	644	Protein max (Class D basic helix-loop-helix protein 4) (bHLH	w
+HELIX-LOOP-HELIX	human	P61296	HAND2	P61296	83	410	Heart- and neural crest derivatives-expressed protein 2 (Cla	w
+HELIX-LOOP-HELIX	human	P81133	SIM1	P81133	17	49	Single-minded homolog 1 (Class E basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	Q01664	TFAP4	Q01664	143	559	Transcription factor AP-4 (Activating enhancer-binding prote	w
+HELIX-LOOP-HELIX	human	Q02363	ID2	Q02363	102	538	DNA-binding protein inhibitor ID-2 (Class B basic helix-loop	w
+HELIX-LOOP-HELIX	human	Q02535	ID3	Q02535	86	486	DNA-binding protein inhibitor ID-3 (Class B basic helix-loop	w
+HELIX-LOOP-HELIX	human	Q02575	NHLH1	Q02575	98	498	Helix-loop-helix protein 1 (HEN-1) (Class A basic helix-loop	w
+HELIX-LOOP-HELIX	human	Q02577	NHLH2	Q02577	90	431	Helix-loop-helix protein 2 (HEN-2) (Class A basic helix-loop	w
+HELIX-LOOP-HELIX	human	Q0VG99	MESP2	Q0VG99	130	363	Mesoderm posterior protein 2 (Class C basic helix-loop-helix	w
+HELIX-LOOP-HELIX	human	Q12772	SREBF2	Q12772	55	363	Sterol regulatory element-binding protein 2 (SREBP-2) (Class	w
+HELIX-LOOP-HELIX	human	Q12870	TCF15	Q12870	78	370	Transcription factor 15 (TCF-15) (Class A basic helix-loop-h	w
+HELIX-LOOP-HELIX	human	Q13516	OLIG2	Q13516	84	405	Oligodendrocyte transcription factor 2 (Oligo2) (Class B bas	w
+HELIX-LOOP-HELIX	human	Q13562	NEUROD1	Q13562	90	406	Neurogenic differentiation factor 1 (NeuroD) (NeuroD1) (Clas	w
+HELIX-LOOP-HELIX	human	Q14190	SIM2	Q14190	7	44	Single-minded homolog 2 (Class E basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	Q14469	HES1	Q14469	42	404	Transcription factor HES-1 (Class B basic helix-loop-helix p	w
+HELIX-LOOP-HELIX	human	Q14582	MXD4	Q14582	119	384	Max dimerization protein 4 (Max dimerizer 4) (Class C basic 	w
+HELIX-LOOP-HELIX	human	Q15596	NCOA2	Q15596	138	398	Nuclear receptor coactivator 2 (NCoA-2) (Class E basic helix	w
+HELIX-LOOP-HELIX	human	Q15672	TWIST1	Q15672	59	475	Twist-related protein 1 (Class A basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	Q15784	NEUROD2	Q15784	77	356	Neurogenic differentiation factor 2 (NeuroD2) (Class A basic	w
+HELIX-LOOP-HELIX	human	Q15788	NCOA1	Q15788	134	383	Nuclear receptor coactivator 1 (NCoA-1) (EC 2.3.1.48) (Class	w
+HELIX-LOOP-HELIX	human	Q15853	USF2	Q15853	85	450	Upstream stimulatory factor 2 (Class B basic helix-loop-heli	w
+HELIX-LOOP-HELIX	human	Q16559	TAL2	Q16559	73	379	T-cell acute lymphocytic leukemia protein 2 (TAL-2) (Class A	w
+HELIX-LOOP-HELIX	human	Q16665	HIF1A	Q16665	117	641	Hypoxia-inducible factor 1-alpha (HIF-1-alpha) (HIF1-alpha) 	w
+HELIX-LOOP-HELIX	human	Q5TA89	HES5	Q5TA89	74	410	Transcription factor HES-5 (Class B basic helix-loop-helix p	w
+HELIX-LOOP-HELIX	human	Q5TGS1	HES3	Q5TGS1	81	383	Transcription factor HES-3 (Class B basic helix-loop-helix p	w
+HELIX-LOOP-HELIX	human	Q68DE3	USF3	Q68DE3	9	113	Basic helix-loop-helix domain-containing protein USF3 (Upstr	w
+HELIX-LOOP-HELIX	human	Q6QHK4	FIGLA	Q6QHK4	66	376	Factor in the germline alpha (FIGalpha) (Class C basic helix	w
+HELIX-LOOP-HELIX	human	Q6XD76	ASCL4	Q6XD76	81	368	Achaete-scute homolog 4 (ASH-4) (hASH4) (Achaete-scute-like 	w
+HELIX-LOOP-HELIX	human	Q7RTS1	BHLHA15	Q7RTS1	117	470	Class A basic helix-loop-helix protein 15 (bHLHa15) (Class B	w
+HELIX-LOOP-HELIX	human	Q7RTS3	PTF1A	Q7RTS3	76	369	Pancreas transcription factor 1 subunit alpha (Class A basic	w
+HELIX-LOOP-HELIX	human	Q7RTU1	TCF23	Q7RTU1	17	31	Transcription factor 23 (TCF-23) (Class A basic helix-loop-h	w
+HELIX-LOOP-HELIX	human	Q7RTU3	OLIG3	Q7RTU3	69	372	Oligodendrocyte transcription factor 3 (Oligo3) (Class B bas	w
+HELIX-LOOP-HELIX	human	Q7RTU4	BHLHA9	Q7RTU4	108	372	Class A basic helix-loop-helix protein 9 (bHLHa9) (Class F b	w
+HELIX-LOOP-HELIX	human	Q7RTU5	ASCL5	Q7RTU5	96	347	Achaete-scute homolog 5 (ASH-5) (hASH5) (Class A basic helix	w
+HELIX-LOOP-HELIX	human	Q7RTU7	SCX	Q7RTU7	88	354	Basic helix-loop-helix transcription factor scleraxis (Class	w
+HELIX-LOOP-HELIX	human	Q8IUM7	NPAS4	Q8IUM7	16	68	Neuronal PAS domain-containing protein 4 (Neuronal PAS4) (Cl	w
+HELIX-LOOP-HELIX	human	Q8IXF0	NPAS3	Q8IXF0	16	45	Neuronal PAS domain-containing protein 3 (Neuronal PAS3) (Ba	w
+HELIX-LOOP-HELIX	human	Q8N100	ATOH7	Q8N100	75	413	Transcription factor ATOH7 (Atonal bHLH transcription factor	w
+HELIX-LOOP-HELIX	human	Q8NDY6	BHLHE23	Q8NDY6	102	408	Class E basic helix-loop-helix protein 23 (bHLHe23) (Class B	w
+HELIX-LOOP-HELIX	human	Q8NFJ8	BHLHE22	Q8NFJ8	118	363	Class E basic helix-loop-helix protein 22 (bHLHe22) (Class B	w
+HELIX-LOOP-HELIX	human	Q8TAK6	OLIG1	Q8TAK6	109	398	Oligodendrocyte transcription factor 1 (Oligo1) (Class B bas	w
+HELIX-LOOP-HELIX	human	Q8WVJ9	TWIST2	Q8WVJ9	59	392	Twist-related protein 2 (Class A basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	Q8WYA1	BMAL2	Q8WYA1	27	63	Basic helix-loop-helix ARNT-like protein 2 (Aryl hydrocarbon	w
+HELIX-LOOP-HELIX	human	Q92858	ATOH1	Q92858	121	429	Transcription factor ATOH1 (Atonal bHLH transcription factor	w
+HELIX-LOOP-HELIX	human	Q92886	NEUROG1	Q92886	121	433	Neurogenin-1 (NGN-1) (Class A basic helix-loop-helix protein	w
+HELIX-LOOP-HELIX	human	Q96HZ4	HES6	Q96HZ4	67	417	Transcription cofactor HES-6 (C-HAIRY1) (Class B basic helix	w
+HELIX-LOOP-HELIX	human	Q96NK8	NEUROD6	Q96NK8	89	370	Neurogenic differentiation factor 6 (NeuroD6) (Class A basic	w
+HELIX-LOOP-HELIX	human	Q96RJ6	FERD3L	Q96RJ6	68	380	Fer3-like protein (Basic helix-loop-helix protein N-twist) (	w
+HELIX-LOOP-HELIX	human	Q96SQ7	ATOH8	Q96SQ7	88	365	Transcription factor ATOH8 (Class A basic helix-loop-helix p	w
+HELIX-LOOP-HELIX	human	Q99081	TCF12	Q99081	85	242	Transcription factor 12 (TCF-12) (Class B basic helix-loop-h	w
+HELIX-LOOP-HELIX	human	Q99583	MNT	Q99583	129	380	Max-binding protein MNT (Class D basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	Q99742	NPAS1	Q99742	75	589	Neuronal PAS domain-containing protein 1 (Neuronal PAS1) (Ba	w
+HELIX-LOOP-HELIX	human	Q99743	NPAS2	Q99743	43	104	Neuronal PAS domain-containing protein 2 (Neuronal PAS2) (Ba	w
+HELIX-LOOP-HELIX	human	Q99814	EPAS1	Q99814	66	335	Endothelial PAS domain-containing protein 1 (EPAS-1) (Basic-	w
+HELIX-LOOP-HELIX	human	Q99929	ASCL2	Q99929	101	401	Achaete-scute homolog 2 (ASH-2) (hASH2) (Class A basic helix	w
+HELIX-LOOP-HELIX	human	Q9BRJ9	MESP1	Q9BRJ9	102	363	Mesoderm posterior protein 1 (Class C basic helix-loop-helix	w
+HELIX-LOOP-HELIX	human	Q9BW11	MXD3	Q9BW11	94	402	Max dimerization protein 3 (Max dimerizer 3) (Class C basic 	w
+HELIX-LOOP-HELIX	human	Q9BYE0	HES7	Q9BYE0	69	357	Transcription factor HES-7 (hHes7) (Class B basic helix-loop	w
+HELIX-LOOP-HELIX	human	Q9C0J9	BHLHE41	Q9C0J9	30	81	Class E basic helix-loop-helix protein 41 (bHLHe41) (Class B	w
+HELIX-LOOP-HELIX	human	Q9H2A3	NEUROG2	Q9H2A3	100	395	Neurogenin-2 (NGN-2) (Class A basic helix-loop-helix protein	w
+HELIX-LOOP-HELIX	human	Q9HAP2	MLXIP	Q9HAP2	13	52	MLX-interacting protein (Class E basic helix-loop-helix prot	w
+HELIX-LOOP-HELIX	human	Q9HBZ2	ARNT2	Q9HBZ2	35	142	Aryl hydrocarbon receptor nuclear translocator 2 (ARNT prote	w
+HELIX-LOOP-HELIX	human	Q9HCC6	HES4	Q9HCC6	53	396	Transcription factor HES-4 (hHES4) (Class B basic helix-loop	w
+HELIX-LOOP-HELIX	human	Q9HD90	NEUROD4	Q9HD90	95	359	Neurogenic differentiation factor 4 (NeuroD4) (Class A basic	w
+HELIX-LOOP-HELIX	human	Q9NP71	MLXIPL	Q9NP71	26	112	Carbohydrate-responsive element-binding protein (ChREBP) (Cl	w
+HELIX-LOOP-HELIX	human	Q9NQ33	ASCL3	Q9NQ33	96	363	Achaete-scute homolog 3 (ASH-3) (hASH3) (Class A basic helix	w
+HELIX-LOOP-HELIX	human	Q9NQ87	HEYL	Q9NQ87	76	390	Hairy/enhancer-of-split related with YRPW motif-like protein	w
+HELIX-LOOP-HELIX	human	Q9UBP5	HEY2	Q9UBP5	85	418	Hairy/enhancer-of-split related with YRPW motif protein 2 (C	w
+HELIX-LOOP-HELIX	human	Q9UH92	MLX	Q9UH92	84	419	Max-like protein X (Class D basic helix-loop-helix protein 1	w
+HELIX-LOOP-HELIX	human	Q9Y2N7	HIF3A	Q9Y2N7	23	98	Hypoxia-inducible factor 3-alpha (HIF-3-alpha) (HIF3-alpha) 	w
+HELIX-LOOP-HELIX	human	Q9Y4Z2	NEUROG3	Q9Y4Z2	127	500	Neurogenin-3 (NGN-3) (Class A basic helix-loop-helix protein	w
+HELIX-LOOP-HELIX	human	Q9Y543	HES2	Q9Y543	58	371	Transcription factor HES-2 (Class B basic helix-loop-helix p	w
+HELIX-LOOP-HELIX	human	Q9Y5J3	HEY1	Q9Y5J3	100	554	Hairy/enhancer-of-split related with YRPW motif protein 1 (C	w
+HELIX-LOOP-HELIX	worm	G5EEG9	hlh-2	G5EEG9	16	30	Helix-loop-helix protein hlh-2	w
+HELIX-LOOP-HELIX	worm	G5EF76	lin-22	G5EF76	1	15	Helix-loop-helix protein lin-22	w
+HELIX-LOOP-HELIX	worm	H2KZZ2	hlh-30	H2KZZ2	3	54	Helix-loop-helix protein 30	w
+HELIX-LOOP-HELIX	worm	O45489	hlh-17	O45489	0	5	Helix-loop-helix protein 17	w
+HELIX-LOOP-HELIX	worm	P34474	hlh-11	P34474	2	19	Helix-loop-helix protein 11	w
+HELIX-LOOP-HELIX	worm	P34555	hlh-4	P34555	1	5	Helix-loop-helix protein 4	w
+HELIX-LOOP-HELIX	worm	P90953	hlh-34	P90953	1	7	Helix-loop-helix 34	w
+HELIX-LOOP-HELIX	worm	Q09961	hlh-14	Q09961	3	6	Helix-loop-helix protein 14	w
+HELIX-LOOP-HELIX	worm	Q10007	hlh-6	Q10007	2	16	Helix-loop-helix protein 6	w
+HELIX-LOOP-HELIX	worm	Q18053	hlh-26	Q18053	0	32	Helix-loop-helix protein 26	w
+HELIX-LOOP-HELIX	worm	Q18054	hlh-25	Q18054	0	25	Helix-loop-helix protein 25	w
+HELIX-LOOP-HELIX	worm	Q18277	hlh-12	Q18277	1	4	Helix-loop-helix protein hlh-12	w
+HELIX-LOOP-HELIX	worm	Q18590	hlh-15	Q18590	3	13	Helix-loop-helix protein 15	w
+HELIX-LOOP-HELIX	worm	Q20561	hlh-13	Q20561	1	4	Helix-loop-helix protein 13	w
+HELIX-LOOP-HELIX	worm	Q22717	hlh-3	Q22717	2	22	Helix-loop-helix protein 3	w
+HELIX-LOOP-HELIX	worm	Q23579	hlh-10	Q23579	1	6	Helix-loop-helix protein 10	w
+HELIX-LOOP-HELIX	worm	Q95XG7	ngn-1	Q95XG7	3	9	Helix-loop-helix protein ngn-1	w
+HELIX-LOOP-HELIX	zebrafish	A0A8M1NCA2	scxa	A0A8M1NCA2	1	3	Basic helix-loop-helix transcription factor scleraxis	w
+HELIX-LOOP-HELIX	zebrafish	A0A8M2BE61	bmal1b	A0A8M2BE61	32	58	Basic helix-loop-helix ARNT like 1b isoform X1	w
+HELIX-LOOP-HELIX	zebrafish	A0A8N7T827	scxb	A0A8N7T827	1	3	Basic helix-loop-helix transcription factor scleraxis	w
+HELIX-LOOP-HELIX	zebrafish	A0FH50	bhlha15	A0FH50	7	8	Class A basic helix-loop-helix protein 15	w
+HELIX-LOOP-HELIX	zebrafish	F1R9F5	bhlhe22	F1R9F5	0	2	Class E basic helix-loop-helix protein 22	w
+HELIX-LOOP-HELIX	zebrafish	Q4V9J8	bhlhe23	Q4V9J8	4	22	Basic helix-loop-helix family, member e23	w
+HELIX-LOOP-HELIX	zebrafish	Q6P0A8	nhlh2	Q6P0A8	2	5	Helix-loop-helix protein 2	w
+HELIX-LOOP-HELIX	zebrafish	U3JAF4	si:ch211-196c10.13	U3JAF4	0	2	Class E basic helix-loop-helix protein 22	w
+HELIX-LOOP-HELIX-CONTAINING	human	Q5JUK2	SOHLH1	Q5JUK2	73	432	Spermatogenesis- and oogenesis-specific basic helix-loop-hel	w
+HELIX-LOOP-HELIX-CONTAINING	human	Q9NX45	SOHLH2	Q9NX45	34	376	Spermatogenesis- and oogenesis-specific basic helix-loop-hel	w
+HELIX-TURN-HELIX	worm	H2L0A6	CELE_H14E04.2	H2L0A6	0	38	Winged helix-turn-helix domain-containing protein	w
+HELK-1	human	Q96L42	KCNH8	Q96L42	38	164	Voltage-gated delayed rectifier potassium channel KCNH8 (ELK	w
+HELLS	cladophialophora-carrionii	A0A1C1CY07	Hells	A0A1C1CY07	2	71	Lymphocyte-specific helicase	
+HELLS	human	Q9NRZ9	HELLS	Q9NRZ9	7	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	
+HELLS	mus-musculus	Q60848	Hells	Q60848	1	34	Lymphocyte-specific helicase	
+HELLS	rattus-norvegicus	A0A0G2K7M6	Hells	A0A0G2K7M6	0	33	Proliferation-associated SNF2-like protein	
+HELLS_HUMAN	human	Q9NRZ9	HELLS	Q9NRZ9	7	243		
+HELODERMIN-PREFERRING	human	P41587	VIPR2	P41587	25	316	Vasoactive intestinal polypeptide receptor 2 (VIP-R-2) (Helo	w
+HELP3	human	Q9H9T3	ELP3	Q9H9T3	35	517	Elongator complex protein 3 (hELP3) (EC 2.3.1.311) (tRNA uri	w
+HELP4	human	Q96EB1	ELP4	Q96EB1	32	507	Elongator complex protein 4 (hELP4) (PAX6 neighbor gene prot	w
+HELPER	human	P10070	GLI2	P10070	39	196	Transcription activator GLI2 (GLI family zinc finger protein	w
+HELPER	human	Q8N157	AHI1	Q8N157	15	137	Jouberin (Abelson helper integration site 1 protein homolog)	w
+HELPER	yeast	P36078	HOT13	P36078	0	5	Helper of Tim protein 13	w
+HELQ	human	Q8TDG4	HELQ	Q8TDG4	4	41	Helicase POLQ-like (EC 5.6.2.4) (Mus308-like helicase) (POLQ	
+HELQ	mus-musculus	Q2VPA6	Helq	Q2VPA6	0	15	Helicase POLQ-like	
+HELQ	rattus-norvegicus	E9PT19	Helq	E9PT19	0	14	Helicase POLQ-like	
+HELQ	zebrafish	F1Q4P2	helq	F1Q4P2	0	21	Helicase POLQ-like	
+HELQ-1	worm	H2KY86	helq-1	H2KY86	1	11	Helicase POLQ-like	
+HELQ_HUMAN	human	Q8TDG4	HELQ	Q8TDG4	4	41		
+HELR	human	P17844	DDX5	P17844	32	766		
+HELSNF1	human	Q9HCK8	CHD8	Q9HCK8	29	400		
+HELT	human	A6NFD8	HELT	A6NFD8	47	352	Hairy and enhancer of split-related protein HELT (HES/HEY-li	
+HELT	mus-musculus	Q7TS99	Helt	Q7TS99	3	3	Hairy and enhancer of split-related protein HELT	
+HELT	rattus-norvegicus	D4ADJ5	Helt	D4ADJ5	1	1	Hairy and enhancer of split-related protein HELT	
+HELT	zebrafish	Q6QB00	helt	Q6QB00	2	2	Hairy and enhancer of split-related protein helt	w
+HELT	zebrafish	Q6QB00	helt	Q6QB00	2	2	Hairy and enhancer of split-related protein helt	w
+HELT_HUMAN	human	A6NFD8	HELT	A6NFD8	47	352		
+HELY	mycobacterium-leprae	Q9ZBD8	helY	Q9ZBD8	1	3	Probable helicase HelY	
+HELY	mycobacterium-tuberculosis	P9WMR1	helY	P9WMR1	0	1	Probable helicase HelY	
+HELZ	fly	FBgn0036451	Helz	Q9VUH9	0	6	Helicase with zinc finger, isoform B (Helicase with zinc fin	
+HELZ	human	P42694	HELZ	P42694	0	16	ATP-dependent RNA helicase with zinc finger domain (EC 3.6.4	
+HELZ	mycobacterium-tuberculosis	I6YCF3	helZ	I6YCF3	3	60	Probable helicase HelZ	
+HELZ2	human	Q9BYK8	HELZ2	Q9BYK8	3	64	3'-5' exoribonuclease HELZ2 (EC 3.1.13.1) (ATP-dependent RNA	
+HELZ2_HUMAN	human	Q9BYK8	HELZ2	Q9BYK8	3	64		
+HELZ_HUMAN	human	P42694	HELZ	P42694	0	16		

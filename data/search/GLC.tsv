@@ -1,27 +1,116 @@
-GLC3	candida-albicans-237561	A0A1D8PQ59	GLC3	A0A1D8PQ59	0	5	1,4-alpha-glucan-branching enzyme
-GLC7	candida-albicans-237561	Q59N42	GLC7	Q59N42	10	54	Serine/threonine-protein phosphatase
-GLCA	escherichia-coli-83333	Q46839	glcA	Q46839	0	2	Glycolate permease GlcA
-GLCAK1	arabidopsis-thaliana	Q93ZC9	GLCAK1	Q93ZC9	1	1	Glucuronokinase 1
-GLCAK2	arabidopsis-thaliana	Q9LY82	GLCAK2	Q9LY82	1	1	Probable glucuronokinase 2
-GLCAT14A	arabidopsis-thaliana	Q9FLD7	GLCAT14A	Q9FLD7	0	1	Beta-glucuronosyltransferase GlcAT14A
-GLCB	escherichia-coli-83333	P37330	glcB	P37330	0	4	Malate synthase G
-GLCB	mycobacterium-leprae	O32913	glcB	O32913	0	4	Malate synthase G
-GLCB	mycobacterium-tuberculosis	P9WK17	glcB	P9WK17	0	3	Malate synthase G
-GLCB	nocardia-brasiliensis	K0EVC8	glcB	K0EVC8	0	7	Malate synthase G
-GLCB	pseudomonas-aeruginosa	Q9I636	glcB	Q9I636	0	3	Malate synthase G
-GLCB	staphylococcus-aureus-93061	Q2FV87	glcB	Q2FV87	6	30	PTS system glucoside-specific EIICBA component
-GLCC	pseudomonas-aeruginosa	Q9HTK2	glcC	Q9HTK2	0	4	Transcriptional regulator GlcC
-GLCD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P943	glcD	Q0P943	1	70	Glycolate oxidase subunit D
-GLCD	escherichia-coli-83333	P0AEP9	glcD	P0AEP9	2	21	Glycolate oxidase subunit GlcD
-GLCD	pseudomonas-aeruginosa	Q9HTK3	glcD	Q9HTK3	3	45	Glycolate oxidase subunit GlcD
-GLCE	escherichia-coli-83333	P52073	glcE	P52073	1	20	Glycolate oxidase subunit GlcE
-GLCE	mus-musculus	Q9EPS3	Glce	Q9EPS3	0	4	D-glucuronyl C5-epimerase
-GLCE	pseudomonas-aeruginosa	Q9HTK4	glcE	Q9HTK4	1	45	Glycolate oxidase subunit GlcE
-GLCE	rattus-norvegicus	D3ZIK0	Glce	D3ZIK0	0	4	heparosan-N-sulfate-glucuronate 5-epimerase
-GLCF	escherichia-coli-83333	P52074	glcF	P52074	2	6	Glycolate oxidase iron-sulfur subunit
-GLCF	pseudomonas-aeruginosa	Q9HTK5	glcF	Q9HTK5	1	9	Glycolate oxidase iron-sulfur subunit
-GLCK	streptococcus-pneumoniae	Q8DQN3	glcK	Q8DQN3	0	5	Glucokinase
-GLCNAC1PUT1	arabidopsis-thaliana	Q940S3	GLCNAC1PUT1	Q940S3	0	1	UDP-N-acetylglucosamine diphosphorylase 1
-GLCNAC1PUT2	arabidopsis-thaliana	O64765	GLCNAC1PUT2	O64765	0	1	UDP-N-acetylglucosamine diphosphorylase 2
-GLCS	dictyostelium-discoideum	Q55GH4	glcS	Q55GH4	0	8	Glycogen
-GLCT	staphylococcus-aureus-93061	Q2G2N4	glcT	Q2G2N4	1	3	Protein GlcT
+GLC-2	worm	Q17328	glc-2	Q17328	0	5	Glutamate-gated chloride channel subunit beta	
+GLC-3	worm	G5EEZ3	glc-3	G5EEZ3	0	1	Glutamate-gated chloride channel subunit	
+GLC1A	human	Q99972	MYOC	Q99972	29	156		
+GLC1E	human	Q96CV9	OPTN	Q96CV9	132	546		
+GLC1MAN9GLCNAC2	fly	FBgn0029906	xit	Q9W3V8	1	7	Probable dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-gl	w
+GLC1MAN9GLCNAC2	human	Q9BVK2	ALG8	Q9BVK2	9	98	Dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-glucosyltra	w
+GLC1MAN9GLCNAC2	worm	P52887	algn-8	P52887	1	1	Dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-glucosyltra	w
+GLC1MAN9GLCNAC2	yeast	P40351	ALG8	P40351	1	2	Dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-glucosyltra	w
+GLC1MAN9GLCNAC2-PP-DOLICHYL	fly	FBgn0029906	xit	Q9W3V8	1	7	Probable dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-gl	w
+GLC2	yeast	P06782	SNF1	P06782	11	117		
+GLC3	candida-albicans-237561	A0A1D8PQ59	GLC3	A0A1D8PQ59	0	5	1,4-alpha-glucan-branching enzyme	
+GLC3	yeast	P32775	GLC3	P32775	1	17	1,4-alpha-glucan-branching enzyme	
+GLC7	candida-albicans-237561	Q59N42	GLC7	Q59N42	10	54	Serine/threonine-protein phosphatase	
+GLC7	yeast	P32598	GLC7	P32598	39	211	Serine/threonine-protein phosphatase PP1-2	
+GLC7-INTERACTING	yeast	P38229	GIP1	P38229	1	16	GLC7-interacting protein 1	w
+GLC7-INTERACTING	yeast	P39732	GIP4	P39732	1	28	GLC7-interacting protein 4	w
+GLC7-INTERACTING	yeast	P40036	GIP2	P40036	4	40	GLC7-interacting protein 2	w
+GLC7-INTERACTING	yeast	Q03016	GIP3	Q03016	2	11	GLC7-interacting protein 3	w
+GLC8	yeast	P41818	GLC8	P41818	5	11	Protein GLC8	
+GLCA	escherichia-coli-83333	Q46839	glcA	Q46839	0	2	Glycolate permease GlcA	
+GLCAK1	arabidopsis-thaliana	Q93ZC9	GLCAK1	Q93ZC9	1	1	Glucuronokinase 1	
+GLCAK2	arabidopsis-thaliana	Q9LY82	GLCAK2	Q9LY82	1	1	Probable glucuronokinase 2	
+GLCAT-D	human	Q9NPZ5	B3GAT2	Q9NPZ5	7	58	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+GLCAT-I	fly	FBgn0066114	GlcAT-I	O97422	58	2375	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCAT-I	human	O94766	B3GAT3	O94766	10	144	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+GLCAT-P	fly	FBgn0036144	GlcAT-P	Q9VTG7	281	2381	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+GLCAT-P	fly	FBgn0036144	GlcAT-P	Q9VTG7	281	2381	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+GLCAT-P	human	Q9P2W7	B3GAT1	Q9P2W7	28	440	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+GLCAT-S	fly	FBgn0032135	GlcAT-S	E1JHC8	183	2377	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCAT14A	arabidopsis-thaliana	Q9FLD7	GLCAT14A	Q9FLD7	0	1	Beta-glucuronosyltransferase GlcAT14A	
+GLCATP	human	Q9P2W7	B3GAT1	Q9P2W7	28	440		
+GLCATS	human	Q9NPZ5	B3GAT2	Q9NPZ5	7	58		
+GLCB	escherichia-coli-83333	P37330	glcB	P37330	0	4	Malate synthase G	
+GLCB	mycobacterium-leprae	O32913	glcB	O32913	0	4	Malate synthase G	
+GLCB	mycobacterium-tuberculosis	P9WK17	glcB	P9WK17	0	3	Malate synthase G	
+GLCB	nocardia-brasiliensis	K0EVC8	glcB	K0EVC8	0	7	Malate synthase G	
+GLCB	pseudomonas-aeruginosa	Q9I636	glcB	Q9I636	0	3	Malate synthase G	
+GLCB	staphylococcus-aureus-93061	Q2FV87	glcB	Q2FV87	6	30	PTS system glucoside-specific EIICBA component	
+GLCC	pseudomonas-aeruginosa	Q9HTK2	glcC	Q9HTK2	0	4	Transcriptional regulator GlcC	
+GLCCI1	human	Q86VQ1	GLCCI1	Q86VQ1	19	42	Glucocorticoid-induced transcript 1 protein	
+GLCD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P943	glcD	Q0P943	1	70	Glycolate oxidase subunit D	
+GLCD	escherichia-coli-83333	P0AEP9	glcD	P0AEP9	2	21	Glycolate oxidase subunit GlcD	
+GLCD	pseudomonas-aeruginosa	Q9HTK3	glcD	Q9HTK3	3	45	Glycolate oxidase subunit GlcD	
+GLCE	escherichia-coli-83333	P52073	glcE	P52073	1	20	Glycolate oxidase subunit GlcE	
+GLCE	human	O94923	GLCE	O94923	12	76	D-glucuronyl C5-epimerase (EC 5.1.3.17) (Heparan sulfate C5-	
+GLCE	mus-musculus	Q9EPS3	Glce	Q9EPS3	0	4	D-glucuronyl C5-epimerase	
+GLCE	pseudomonas-aeruginosa	Q9HTK4	glcE	Q9HTK4	1	45	Glycolate oxidase subunit GlcE	
+GLCE	rattus-norvegicus	D3ZIK0	Glce	D3ZIK0	0	4	heparosan-N-sulfate-glucuronate 5-epimerase	
+GLCEA	zebrafish	Q29RD8	glcea	Q29RD8	1	13	heparosan-N-sulfate-glucuronate 5-epimerase	
+GLCEB	zebrafish	F1QR43	glceb	F1QR43	1	13	D-glucuronyl C5-epimerase B	
+GLCE_HUMAN	human	O94923	GLCE	O94923	12	76		
+GLCF	escherichia-coli-83333	P52074	glcF	P52074	2	6	Glycolate oxidase iron-sulfur subunit	
+GLCF	pseudomonas-aeruginosa	Q9HTK5	glcF	Q9HTK5	1	9	Glycolate oxidase iron-sulfur subunit	
+GLCI1_HUMAN	human	Q86VQ1	GLCCI1	Q86VQ1	19	42		
+GLCK	streptococcus-pneumoniae	Q8DQN3	glcK	Q8DQN3	0	5	Glucokinase	
+GLCL	human	P48506	GCLC	P48506	18	229		
+GLCLC	human	P48506	GCLC	P48506	18	229		
+GLCLR	human	P48507	GCLM	P48507	6	97		
+GLCM1_HUMAN	human	Q8IVK1	GLYCAM1	Q8IVK1	0	6		
+GLCN-PI-ACYLTRANSFERASE	human	Q7Z7B1	PIGW	Q7Z7B1	2	43	Glucosaminyl-phosphatidylinositol-acyltransferase PIGW (GlcN	w
+GLCN6P	fly	FBgn0031717	Gnpda	Q9VMP9	1	77	Glucosamine-6-phosphate isomerase (EC 3.5.99.6) (Glucosamine	w
+GLCN6P	human	P46926	GNPDA1	P46926	4	119	Glucosamine-6-phosphate deaminase 1 (GlcN6P deaminase 1) (EC	w
+GLCN6P	human	Q8TDQ7	GNPDA2	Q8TDQ7	6	114	Glucosamine-6-phosphate deaminase 2 (GlcN6P deaminase 2) (EC	w
+GLCNAC	fly	FBgn0027564	CG3149	Q9Y123	1	15	Man(5)GlcNAc(2)-PP-dolichol translocation protein RFT1 (Prot	w
+GLCNAC	fly	FBgn0035401	Alg2	Q9VZU8	3	40	Alpha-1,3/1,6-mannosyltransferase ALG2 (EC 2.4.1.132) (EC 2.	w
+GLCNAC	fly	FBgn0037108	Alg11	Q9VP06	0	17	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+GLCNAC	fly	FBgn0037743	Alg12	Q9VH78	12	60	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
+GLCNAC	fly	FBgn0038321	Nagk	Q9VF86	0	18	N-acetyl-D-glucosamine kinase (EC 2.7.1.59) (GlcNAc kinase)	w
+GLCNAC	fly	FBgn0052076	Alg10	Q8T8L8	4	10	Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltra	w
+GLCNAC	human	P51606	RENBP	P51606	11	115	N-acylglucosamine 2-epimerase (AGE) (EC 5.1.3.8) (GlcNAc 2-e	w
+GLCNAC	human	Q2TAA5	ALG11	Q2TAA5	3	149	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+GLCNAC	human	Q5BKT4	ALG10	Q5BKT4	8	120	Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltra	w
+GLCNAC	human	Q5I7T1	ALG10B	Q5I7T1	1	57	Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltra	w
+GLCNAC	human	Q92685	ALG3	Q92685	3	94	Dol-P-Man:Man(5)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransfera	w
+GLCNAC	human	Q96AA3	RFT1	Q96AA3	8	96	Man(5)GlcNAc(2)-PP-dolichol translocation protein RFT1 (Prot	w
+GLCNAC	human	Q9BV10	ALG12	Q9BV10	4	87	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
+GLCNAC	human	Q9H553	ALG2	Q9H553	4	142	Alpha-1,3/1,6-mannosyltransferase ALG2 (EC 2.4.1.132) (EC 2.	w
+GLCNAC	human	Q9UJ70	NAGK	Q9UJ70	1	208	N-acetyl-D-glucosamine kinase (N-acetylglucosamine kinase) (	w
+GLCNAC	human	Q9Y303	AMDHD2	Q9Y303	5	62	N-acetylglucosamine-6-phosphate deacetylase (GlcNAc 6-P deac	w
+GLCNAC	human	Q9Y672	ALG6	Q9Y672	7	82	Dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucosyltransfe	w
+GLCNAC	worm	O02332	algn-10	O02332	0	19	Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltra	w
+GLCNAC	worm	P53993	algn-11	P53993	0	4	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+GLCNAC	yeast	P38179	ALG3	P38179	0	6	Dol-P-Man:Man(5)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransfera	w
+GLCNAC	yeast	P38206	RFT1	P38206	0	5	Man(5)GlcNAc(2)-PP-dolichol translocation protein RFT1	w
+GLCNAC	yeast	P50076	DIE2	P50076	0	17	Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltra	w
+GLCNAC	yeast	P53730	ALG12	P53730	0	22	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
+GLCNAC	yeast	P53954	ALG11	P53954	0	11	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+GLCNAC	zebrafish	E7FEB7	alg10	E7FEB7	0	7	Dol-P-Glc:Glc(2)Man(9)GlcNAc(2)-PP-Dol alpha-1,2-glucosyltra	w
+GLCNAC	zebrafish	Q7ZW24	alg11	Q7ZW24	0	23	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+GLCNAC-1-P	fly	FBgn0032477	Alg7	Q9VK30	0	6	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosam	w
+GLCNAC-1-P	human	Q9H3H5	DPAGT1	Q9H3H5	3	96	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosam	w
+GLCNAC-1-PHOSPHOTRANSFERASE	human	Q3T906	GNPTAB	Q3T906	17	79	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta	w
+GLCNAC-1-PHOSPHOTRANSFERASE	human	Q9UJJ9	GNPTG	Q9UJJ9	12	87	N-acetylglucosamine-1-phosphotransferase subunit gamma (GlcN	w
+GLCNAC-PI	fly	FBgn0034270	PIG-A	Q7JUM3	3	15	phosphatidylinositol N-acetylglucosaminyltransferase (EC 2.4	w
+GLCNAC-PI	human	P37287	PIGA	P37287	13	110	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
+GLCNAC-T	fly	FBgn0034521	Mgat1	Q60GL7	233	2378	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+GLCNAC-T	fly	FBgn0039738	Mgat2	Q961U0	373	2377	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+GLCNAC-T	human	Q09328	MGAT5	Q09328	22	321	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	w
+GLCNAC-T	human	Q10469	MGAT2	Q10469	8	71	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+GLCNAC1PUT1	arabidopsis-thaliana	Q940S3	GLCNAC1PUT1	Q940S3	0	1	UDP-N-acetylglucosamine diphosphorylase 1	
+GLCNAC1PUT2	arabidopsis-thaliana	O64765	GLCNAC1PUT2	O64765	0	1	UDP-N-acetylglucosamine diphosphorylase 2	
+GLCNACT-I	human	A6NG13	MGAT4D	A6NG13	4	17	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+GLCNE	human	Q9Y223	GNE	Q9Y223	23	341		
+GLCNE_HUMAN	human	Q9Y223	GNE	Q9Y223	23	341		
+GLCS	dictyostelium-discoideum	Q55GH4	glcS	Q55GH4	0	8	Glycogen	
+GLCT	fly	FBgn0067102	GlcT	Q9W297	0	9	ceramide glucosyltransferase (EC 2.4.1.80)	
+GLCT	staphylococcus-aureus-93061	Q2G2N4	glcT	Q2G2N4	1	3	Protein GlcT	
+GLCT-1	human	Q16739	UGCG	Q16739	5	75	Ceramide glucosyltransferase (EC 2.4.1.80) (GLCT-1) (Glucosy	w
+GLCT-1	worm	O02304	glct-1	O02304	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCT-2	worm	O17751	glct-2	O17751	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCT-3	worm	Q9XU73	glct-3	Q9XU73	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCT-4	worm	O62113	glct-4	O62113	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCT-5	worm	O17708	glct-5	O17708	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCT-6	worm	A0A0K3AUF6	glct-6	A0A0K3AUF6	0	3	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	
+GLCT1	human	P26572	MGAT1	P26572	6	107		
+GLCTK_HUMAN	human	Q8IVS8	GLYCTK	Q8IVS8	4	66		

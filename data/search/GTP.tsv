@@ -1,22 +1,655 @@
-GTP1	schistosoma-mansoni	Q26579	GTP1	Q26579	0	2	Glucose transport protein
-GTP1	schizosaccharomyces-pombe	P32235	gtp1	P32235	3	12	GTP-binding protein 1
-GTPA	dictyostelium-discoideum	Q552Z6	gtpA	Q552Z6	0	4	GTP-binding protein A
-GTPBP	oryza-sativa-subsp-japonica	Q84TA8	GTPBP	Q84TA8	5	23	Os03g0819900 protein
-GTPBP1	cladophialophora-carrionii	A0A1C1C933	Gtpbp1	A0A1C1C933	0	2	GTP-binding protein 1
-GTPBP1	dictyostelium-discoideum	Q54D77	gtpbp1	Q54D77	0	3	GTP-binding protein 1
-GTPBP1	mus-musculus	O08582	Gtpbp1	O08582	0	39	GTP-binding protein 1
-GTPBP1	rattus-norvegicus	D2XV59	Gtpbp1	D2XV59	1	52	GTP-binding protein 1
-GTPBP10	mus-musculus	Q8K013	Gtpbp10	Q8K013	1	82	GTP-binding protein 10
-GTPBP10	rattus-norvegicus	D4A3U1	Gtpbp10	D4A3U1	0	103	GTP-binding protein 10
-GTPBP2	mus-musculus	Q3UJK4	Gtpbp2	Q3UJK4	0	3	GTP-binding protein 2
-GTPBP2	rattus-norvegicus	D4ABV1	Gtpbp2	D4ABV1	0	3	GTP-binding protein 2
-GTPBP3	dictyostelium-discoideum	Q55C52	gtpbp3	Q55C52	2	25	tRNA modification GTPase gtpbp3, mitochondrial
-GTPBP3	mus-musculus	Q923K4	Gtpbp3	Q923K4	4	96	5-taurinomethyluridine-
-GTPBP3	rattus-norvegicus	Q5PQQ1	Gtpbp3	Q5PQQ1	5	142	5-taurinomethyluridine-
-GTPBP4	mus-musculus	Q99ME9	Gtpbp4	Q99ME9	13	212	GTP-binding protein 4
-GTPBP4	rattus-norvegicus	Q99P77	Gtpbp4	Q99P77	29	344	GTP-binding protein 4
-GTPBP5	dictyostelium-discoideum	Q54Z70	gtpbp5	Q54Z70	3	35	GTP1/OBG family protein
-GTPBP6	mus-musculus	Q3U6U5	Gtpbp6	Q3U6U5	2	116	Putative GTP-binding protein 6
-GTPBP6	rattus-norvegicus	A0A8I5ZU18	Gtpbp6	A0A8I5ZU18	3	121	Putative GTP-binding protein 6
-GTPBP8	mus-musculus	Q9CY28	Gtpbp8	Q9CY28	4	55	GTP-binding protein 8
-GTPBP8	rattus-norvegicus	Q5BK22	Gtpbp8	Q5BK22	9	123	GTP-binding protein 8
+GTP--RNA	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	w
+GTP-BINDING	fly	FBgn0010339	128up	P32234	11	207	GTP-binding protein 128up	w
+GTP-BINDING	fly	FBgn0010391	SrpRalpha	Q9U5L1	32	310	Signal recognition particle receptor subunit alpha homolog (	w
+GTP-BINDING	fly	FBgn0014020	Rho1	P48148	88	578	Ras-like GTP-binding protein Rho1	w
+GTP-BINDING	fly	FBgn0015372	RabX1	Q9V3C2	9	39	LD47384p (Rab-related GTP-binding protein Chrowded) (RabX1)	w
+GTP-BINDING	fly	FBgn0020255	Ran	Q9VZ23	20	104	GTP-binding nuclear protein Ran (Ras-related nuclear protein	w
+GTP-BINDING	fly	FBgn0020443	eRF3	Q9VK85	16	145	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+GTP-BINDING	fly	FBgn0028473	Non1	Q9V411	23	227	Nucleolar GTP-binding protein 1 (Novel nucleolar protein 1)	w
+GTP-BINDING	fly	FBgn0032818	CG10628	Q9I7M2	4	78	GTP-binding protein 10 homolog	w
+GTP-BINDING	fly	FBgn0034243	Ns2	Q7JXU4	16	173	Nucleolar GTP-binding protein 2	w
+GTP-BINDING	fly	FBgn0036497	Ran-like	Q9VUN3	19	81	GTP-binding nuclear protein Ran-like	w
+GTP-BINDING	fly	FBgn0041191	Rheb	Q9VND8	13	185	GTP-binding protein Rheb homolog	w
+GTP-BINDING	human	A4D1E9	GTPBP10	A4D1E9	3	222	GTP-binding protein 10 (Protein obg homolog 2) (ObgH2)	w
+GTP-BINDING	human	O00178	GTPBP1	O00178	9	192	GTP-binding protein 1 (G protein 1) (GP-1) (GP1) (EC 3.6.5.3	w
+GTP-BINDING	human	O00212	RHOD	O00212	143	779	Rho-related GTP-binding protein RhoD (EC 3.6.5.2) (Rho-relat	w
+GTP-BINDING	human	O43824	GTPBP6	O43824	7	214	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	w
+GTP-BINDING	human	O75628	REM1	O75628	16	176	GTP-binding protein REM 1 (GTPase-regulating endothelial cel	w
+GTP-BINDING	human	O95057	DIRAS1	O95057	52	320	GTP-binding protein Di-Ras1 (Distinct subgroup of the Ras fa	w
+GTP-BINDING	human	O95661	DIRAS3	O95661	26	340	GTP-binding protein Di-Ras3 (Distinct subgroup of the Ras fa	w
+GTP-BINDING	human	P08134	RHOC	P08134	176	1027	Rho-related GTP-binding protein RhoC (EC 3.6.5.2) (Rho cDNA 	w
+GTP-BINDING	human	P15170	GSPT1	P15170	31	327	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+GTP-BINDING	human	P17081	RHOQ	P17081	132	630	Rho-related GTP-binding protein RhoQ (EC 3.6.5.2) (Ras-like 	w
+GTP-BINDING	human	P20591	MX1	P20591	11	286	Interferon-induced GTP-binding protein Mx1 (Interferon-induc	w
+GTP-BINDING	human	P20592	MX2	P20592	2	128	Interferon-induced GTP-binding protein Mx2 (Interferon-regul	w
+GTP-BINDING	human	P32455	GBP1	P32455	22	280	Guanylate-binding protein 1 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	w
+GTP-BINDING	human	P32456	GBP2	P32456	20	231	Guanylate-binding protein 2 (EC 3.6.5.-) (GTP-binding protei	w
+GTP-BINDING	human	P36406	TRIM23	P36406	74	635	E3 ubiquitin-protein ligase TRIM23 (EC 2.3.2.27) (ADP-ribosy	w
+GTP-BINDING	human	P36915	GNL1	P36915	4	203	Guanine nucleotide-binding protein-like 1 (GTP-binding prote	w
+GTP-BINDING	human	P51159	RAB27A	P51159	37	272	Ras-related protein Rab-27A (Rab-27) (EC 3.6.5.2) (GTP-bindi	w
+GTP-BINDING	human	P52198	RND2	P52198	94	559	Rho-related GTP-binding protein RhoN (EC 3.6.5.2) (Rho famil	w
+GTP-BINDING	human	P55039	DRG2	P55039	11	255	Developmentally-regulated GTP-binding protein 2 (DRG-2) (Tra	w
+GTP-BINDING	human	P55040	GEM	P55040	22	194	GTP-binding protein GEM (GTP-binding mitogen-induced T-cell 	w
+GTP-BINDING	human	P55042	RRAD	P55042	18	90	GTP-binding protein RAD (RAD1) (Ras associated with diabetes	w
+GTP-BINDING	human	P60953	CDC42	P60953	342	1950	Cell division control protein 42 homolog (EC 3.6.5.2) (G25K 	w
+GTP-BINDING	human	P61224	RAP1B	P61224	159	816	Ras-related protein Rap-1b (EC 3.6.5.2) (GTP-binding protein	w
+GTP-BINDING	human	P61587	RND3	P61587	87	546	Rho-related GTP-binding protein RhoE (EC 3.6.5.2) (Protein M	w
+GTP-BINDING	human	P62745	RHOB	P62745	245	1308	Rho-related GTP-binding protein RhoB (EC 3.6.5.2) (Rho cDNA 	w
+GTP-BINDING	human	P62826	RAN	P62826	97	702	GTP-binding nuclear protein Ran (EC 3.6.5.-) (Androgen recep	w
+GTP-BINDING	human	P62834	RAP1A	P62834	125	633	Ras-related protein Rap-1A (EC 3.6.5.2) (C21KG) (G-22K) (GTP	w
+GTP-BINDING	human	P84095	RHOG	P84095	191	1108	Rho-related GTP-binding protein RhoG (EC 3.6.5.2)	w
+GTP-BINDING	human	Q13823	GNL2	Q13823	68	603	Nucleolar GTP-binding protein 2 (Autoantigen NGP-1)	w
+GTP-BINDING	human	Q14088	RAB33A	Q14088	74	213	Ras-related protein Rab-33A (EC 3.6.5.2) (Small GTP-binding 	w
+GTP-BINDING	human	Q15029	EFTUD2	Q15029	95	1648	116 kDa U5 small nuclear ribonucleoprotein component (Elonga	w
+GTP-BINDING	human	Q15286	RAB35	Q15286	180	761	Ras-related protein Rab-35 (EC 3.6.5.2) (GTP-binding protein	w
+GTP-BINDING	human	Q15382	RHEB	Q15382	16	312	GTP-binding protein Rheb (EC 3.6.5.-) (Ras homolog enriched 	w
+GTP-BINDING	human	Q15669	RHOH	Q15669	188	696	Rho-related GTP-binding protein RhoH (EC 3.6.5.2) (GTP-bindi	w
+GTP-BINDING	human	Q15907	RAB11B	Q15907	113	452	Ras-related protein Rab-11B (EC 3.6.5.2) (GTP-binding protei	w
+GTP-BINDING	human	Q3YEC7	RABL6	Q3YEC7	28	151	Rab-like protein 6 (EC 3.6.5.2) (GTP-binding protein Parf) (	w
+GTP-BINDING	human	Q5U5Z8	AGBL2	Q5U5Z8	5	42	Cytosolic carboxypeptidase 2 (EC 3.4.17.-) (ATP/GTP-binding 	w
+GTP-BINDING	human	Q5VU57	AGBL4	Q5VU57	18	94	Cytosolic carboxypeptidase 6 (EC 3.4.17.24) (ATP/GTP-binding	w
+GTP-BINDING	human	Q5VZM2	RRAGB	Q5VZM2	17	105	Ras-related GTP-binding protein B (Rag B) (RagB) (EC 3.6.5.-	w
+GTP-BINDING	human	Q6ZN66	GBP6	Q6ZN66	8	95	Guanylate-binding protein 6 (EC 3.6.5.-) (GTP-binding protei	w
+GTP-BINDING	human	Q7L0Q8	RHOU	Q7L0Q8	121	610	Rho-related GTP-binding protein RhoU (EC 3.6.5.2) (CDC42-lik	w
+GTP-BINDING	human	Q7L523	RRAGA	Q7L523	27	134	Ras-related GTP-binding protein A (Rag A) (RagA) (EC 3.6.5.-	w
+GTP-BINDING	human	Q7Z2Z2	EFL1	Q7Z2Z2	10	360	Elongation factor-like GTPase 1 (EC 3.6.5.-) (Elongation fac	w
+GTP-BINDING	human	Q8IYD1	GSPT2	Q8IYD1	25	155	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+GTP-BINDING	human	Q8IYK8	REM2	Q8IYK8	8	40	GTP-binding protein REM 2 (Rad and Gem-like GTP-binding prot	w
+GTP-BINDING	human	Q8N3Z3	GTPBP8	Q8N3Z3	18	192	GTP-binding protein 8	w
+GTP-BINDING	human	Q8N8V2	GBP7	Q8N8V2	7	45	Guanylate-binding protein 7 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	w
+GTP-BINDING	human	Q8NDL9	AGBL5	Q8NDL9	7	63	Cytosolic carboxypeptidase-like protein 5 (EC 3.4.17.-) (EC 	w
+GTP-BINDING	human	Q8NEM8	AGBL3	Q8NEM8	11	62	Cytosolic carboxypeptidase 3 (EC 3.4.17.-) (ATP/GTP-binding 	w
+GTP-BINDING	human	Q8WXF7	ATL1	Q8WXF7	7	126	Atlastin-1 (ATL-1) (EC 3.6.5.-) (Brain-specific GTP-binding 	w
+GTP-BINDING	human	Q92730	RND1	Q92730	89	498	Rho-related GTP-binding protein Rho6 (EC 3.6.5.2) (Rho famil	w
+GTP-BINDING	human	Q92963	RIT1	Q92963	147	1356	GTP-binding protein Rit1 (EC 3.6.5.2) (Ras-like protein expr	w
+GTP-BINDING	human	Q969Y2	GTPBP3	Q969Y2	5	116	5-taurinomethyluridine-[tRNA] synthase subunit GTPB3, mitoch	w
+GTP-BINDING	human	Q96D21	RASD2	Q96D21	20	138	GTP-binding protein Rhes (Ras homolog enriched in striatum) 	w
+GTP-BINDING	human	Q96HU8	DIRAS2	Q96HU8	27	215	GTP-binding protein Di-Ras2 (EC 3.6.5.-) (Distinct subgroup 	w
+GTP-BINDING	human	Q96L33	RHOV	Q96L33	122	398	Rho-related GTP-binding protein RhoV (EC 3.6.5.2) (CDC42-lik	w
+GTP-BINDING	human	Q96MI9	AGBL1	Q96MI9	2	11	Cytosolic carboxypeptidase 4 (EC 3.4.17.-) (EC 3.4.17.24) (A	w
+GTP-BINDING	human	Q96PP8	GBP5	Q96PP8	14	141	Guanylate-binding protein 5 (EC 3.6.5.-) (GBP-TA antigen) (G	w
+GTP-BINDING	human	Q96PP9	GBP4	Q96PP9	8	102	Guanylate-binding protein 4 (EC 3.6.5.-) (GTP-binding protei	w
+GTP-BINDING	human	Q99490	AGAP2	Q99490	28	114	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTP-BINDING	human	Q99578	RIT2	Q99578	46	190	GTP-binding protein Rit2 (EC 3.6.5.2) (Ras-like protein expr	w
+GTP-BINDING	human	Q9BT17	MTG1	Q9BT17	4	349	Mitochondrial ribosome-associated GTPase 1 (GTP-binding prot	w
+GTP-BINDING	human	Q9BVP2	GNL3	Q9BVP2	65	597	Guanine nucleotide-binding protein-like 3 (E2-induced gene 3	w
+GTP-BINDING	human	Q9BW83	IFT27	Q9BW83	13	150	Intraflagellar transport protein 27 homolog (Putative GTP-bi	w
+GTP-BINDING	human	Q9BX10	GTPBP2	Q9BX10	3	94	GTP-binding protein 2	w
+GTP-BINDING	human	Q9BZE4	GTPBP4	Q9BZE4	32	759	GTP-binding protein 4 (Chronic renal failure gene protein) (	w
+GTP-BINDING	human	Q9H0R5	GBP3	Q9H0R5	9	68	Guanylate-binding protein 3 (EC 3.6.5.-) (GTP-binding protei	w
+GTP-BINDING	human	Q9H4E5	RHOJ	Q9H4E5	165	802	Rho-related GTP-binding protein RhoJ (EC 3.6.5.2) (Ras-like 	w
+GTP-BINDING	human	Q9H4K7	MTG2	Q9H4K7	10	354	Mitochondrial ribosome-associated GTPase 2 (GTP-binding prot	w
+GTP-BINDING	human	Q9HB90	RRAGC	Q9HB90	23	125	Ras-related GTP-binding protein C (Rag C) (RagC) (EC 3.6.5.-	w
+GTP-BINDING	human	Q9HBH0	RHOF	Q9HBH0	122	850	Rho-related GTP-binding protein RhoF (EC 3.6.5.2) (Rho famil	w
+GTP-BINDING	human	Q9NQL2	RRAGD	Q9NQL2	13	90	Ras-related GTP-binding protein D (Rag D) (RagD) (EC 3.6.5.-	w
+GTP-BINDING	human	Q9NTK5	OLA1	Q9NTK5	14	205	Obg-like ATPase 1 (DNA damage-regulated overexpressed in can	w
+GTP-BINDING	human	Q9UPQ3	AGAP1	Q9UPQ3	27	197	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTP-BINDING	human	Q9UPW5	AGTPBP1	Q9UPW5	14	97	Cytosolic carboxypeptidase 1 (EC 3.4.17.-) (EC 3.4.17.24) (A	w
+GTP-BINDING	human	Q9Y295	DRG1	Q9Y295	21	495	Developmentally-regulated GTP-binding protein 1 (DRG-1) (Neu	w
+GTP-BINDING	human	Q9Y6B6	SAR1B	Q9Y6B6	43	490	Small COPII coat GTPase SAR1B (EC 3.6.5.2) (GTP-binding prot	w
+GTP-BINDING	worm	G4RYA5	CELE_F38A1.8	G4RYA5	10	86	SRP54-type proteins GTP-binding domain-containing protein	w
+GTP-BINDING	worm	G5EGB3	ragc-1	G5EGB3	10	60	Ras-related GTP-binding protein C	w
+GTP-BINDING	worm	G5EGL2	CELE_T28D6.6	G5EGL2	3	56	Developmentally-regulated GTP-binding protein 1	w
+GTP-BINDING	worm	O17915	ran-1	O17915	21	97	GTP-binding nuclear protein ran-1	w
+GTP-BINDING	worm	O44411	nog-1	O44411	11	121	Nucleolar GTP-binding protein 1	w
+GTP-BINDING	worm	O45622	erfa-3	O45622	5	62	Eukaryotic peptide chain release factor GTP-binding subunit	w
+GTP-BINDING	worm	P34280	C02F5.3	P34280	3	19	Uncharacterized GTP-binding protein C02F5.3	w
+GTP-BINDING	worm	P34443	rheb-1	P34443	2	58	GTP-binding protein Rheb homolog 1	w
+GTP-BINDING	worm	P90840	CELE_F20D6.8	P90840	1	26	GTP-binding protein Rheb	w
+GTP-BINDING	worm	Q09930	drn-1	Q09930	3	23	GTP-binding protein drn-1	w
+GTP-BINDING	worm	Q18905	cgp-1	Q18905	0	13	GTP-binding protein cgp-1	w
+GTP-BINDING	worm	Q18957	CELE_D1081.4	Q18957	4	12	GTP-binding protein	w
+GTP-BINDING	worm	Q1ZXV0	CELE_ZK669.5	Q1ZXV0	0	1	GTP-binding protein Rhes	w
+GTP-BINDING	worm	Q22038	rho-1	Q22038	29	171	Ras-like GTP-binding protein rhoA	w
+GTP-BINDING	worm	Q22743	raga-1	Q22743	5	52	GTP-binding protein	w
+GTP-BINDING	worm	Q9TZE3	CELE_W04C9.5	Q9TZE3	0	16	GTP-binding protein	w
+GTP-BINDING	worm	Q9U254	CELE_Y52B11A.4	Q9U254	0	17	GTP-binding protein GEM	w
+GTP-BINDING	worm	Q9XXN4	ngp-1	Q9XXN4	7	82	Nucleolar GTP-binding protein 2	w
+GTP-BINDING	yeast	P01123	YPT1	P01123	12	169	GTP-binding protein YPT1	w
+GTP-BINDING	yeast	P05453	SUP35	P05453	6	146	Eukaryotic peptide chain release factor GTP-binding subunit	w
+GTP-BINDING	yeast	P06780	RHO1	P06780	14	98	GTP-binding protein RHO1	w
+GTP-BINDING	yeast	P06781	RHO2	P06781	14	44	GTP-binding protein RHO2	w
+GTP-BINDING	yeast	P25378	RHB1	P25378	0	43	GTP-binding protein RHB1	w
+GTP-BINDING	yeast	P32835	GSP1	P32835	18	116	GTP-binding nuclear protein GSP1/CNR1	w
+GTP-BINDING	yeast	P32836	GSP2	P32836	17	66	GTP-binding nuclear protein GSP2/CNR2	w
+GTP-BINDING	yeast	P36018	YPT52	P36018	12	49	GTP-binding protein YPT52	w
+GTP-BINDING	yeast	P36019	YPT53	P36019	8	36	GTP-binding protein YPT53	w
+GTP-BINDING	yeast	P38146	YPT10	P38146	6	23	GTP-binding protein YPT10	w
+GTP-BINDING	yeast	P38555	YPT31	P38555	9	79	GTP-binding protein YPT31/YPT8	w
+GTP-BINDING	yeast	P39110	CIN4	P39110	2	18	GTP-binding protein CIN4	w
+GTP-BINDING	yeast	P40010	NUG1	P40010	6	217	Nuclear GTP-binding protein NUG1	w
+GTP-BINDING	yeast	P42942	YGR210C	P42942	1	8	Uncharacterized GTP-binding protein YGR210C	w
+GTP-BINDING	yeast	P48559	YPT11	P48559	4	30	GTP-binding protein YPT11	w
+GTP-BINDING	yeast	P51996	YPT32	P51996	8	57	GTP-binding protein YPT32/YPT11	w
+GTP-BINDING	yeast	P53290	GTR2	P53290	2	64	GTP-binding protein GTR2	w
+GTP-BINDING	yeast	P53742	NOG2	P53742	7	201	Nucleolar GTP-binding protein 2	w
+GTP-BINDING	yeast	P53879	RHO5	P53879	9	88	GTP-binding protein RHO5	w
+GTP-BINDING	yeast	Q00245	RHO3	Q00245	8	57	GTP-binding protein RHO3	w
+GTP-BINDING	yeast	Q00246	RHO4	Q00246	12	43	GTP-binding protein RHO4	w
+GTP-BINDING	yeast	Q00582	GTR1	Q00582	5	80	GTP-binding protein GTR1	w
+GTP-BINDING	yeast	Q02892	NOG1	Q02892	23	258	Nucleolar GTP-binding protein 1	w
+GTP-BINDING	yeast	Q99260	YPT6	Q99260	11	56	GTP-binding protein YPT6	w
+GTP-BINDING	zebrafish	A0A0R4IZL6	rragcb	A0A0R4IZL6	8	34	Ras-related GTP-binding protein	w
+GTP-BINDING	zebrafish	A0A8M1N7P6	rasd2a	A0A8M1N7P6	0	14	GTP-binding protein Rhes	w
+GTP-BINDING	zebrafish	A0A8M1NAL2	rnd2	A0A8M1NAL2	8	52	Rho-related GTP-binding protein RhoN	w
+GTP-BINDING	zebrafish	A0A8M1PAI6	gtpbp2b	A0A8M1PAI6	0	2	GTP-binding protein 2b	w
+GTP-BINDING	zebrafish	A0A8M1Q2A6	rasd2b	A0A8M1Q2A6	1	13	GTP-binding protein Rhes	w
+GTP-BINDING	zebrafish	A0A8N7UYZ0	diras1b	A0A8N7UYZ0	5	27	DIRAS family, GTP-binding RAS-like 1b	w
+GTP-BINDING	zebrafish	A0AB13ABQ3	gtpbp1l	A0AB13ABQ3	1	21	GTP-binding protein 1	w
+GTP-BINDING	zebrafish	A0AB32TL74	mxh	A0AB32TL74	0	14	Interferon-induced GTP-binding protein Mx3	w
+GTP-BINDING	zebrafish	B0R168	rem2	B0R168	0	13	GTP-binding protein REM 2	w
+GTP-BINDING	zebrafish	B0S8I0	gtpbp8	B0S8I0	7	109	GTP-binding protein 8	w
+GTP-BINDING	zebrafish	E7F7Z2	si:ch211-133l11.10	E7F7Z2	7	22	Rho-related GTP-binding protein RhoU isoform X3	w
+GTP-BINDING	zebrafish	E7FFK6	guf1	E7FFK6	2	71	GTP-binding elongation factor GUF1	w
+GTP-BINDING	zebrafish	F1QIB5	rragd	F1QIB5	11	52	Ras-related GTP-binding protein	w
+GTP-BINDING	zebrafish	F1QXF9	mxd	F1QXF9	0	14	Interferon-induced GTP-binding protein Mx3	w
+GTP-BINDING	zebrafish	F1R1D2	rhoh	F1R1D2	16	66	Rho-related GTP-binding protein RhoH	w
+GTP-BINDING	zebrafish	F1R785	mxf	F1R785	0	14	Interferon-induced GTP-binding protein Mx	w
+GTP-BINDING	zebrafish	P79735	ran	P79735	24	96	GTP-binding nuclear protein Ran	w
+GTP-BINDING	zebrafish	Q08CD8	rhebl1	Q08CD8	0	54	GTP-binding protein Rheb	w
+GTP-BINDING	zebrafish	Q0P4E7	gem	Q0P4E7	2	44	GTP-binding protein	w
+GTP-BINDING	zebrafish	Q1LY89	rhoga	Q1LY89	12	49	Rho-related GTP-binding protein RhoG	w
+GTP-BINDING	zebrafish	Q52WX7	rnd1b	Q52WX7	16	91	Rho-related GTP-binding protein Rho6	w
+GTP-BINDING	zebrafish	Q68EH0	gspt1	Q68EH0	10	133	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+GTP-BINDING	zebrafish	Q6DHE8	rhoad	Q6DHE8	30	99	Rho-related GTP-binding protein RhoA-D	w
+GTP-BINDING	zebrafish	Q6DHF7	gtpbp10	Q6DHF7	0	82	GTP-binding protein 10	w
+GTP-BINDING	zebrafish	Q6DHM9	rhoab	Q6DHM9	25	76	Rho-related GTP-binding protein RhoA-B	w
+GTP-BINDING	zebrafish	Q6DKF0	mxc	Q6DKF0	0	18	Interferon-induced GTP-binding protein MxC	w
+GTP-BINDING	zebrafish	Q6NUX8	rhoaa	Q6NUX8	28	92	Rho-related GTP-binding protein RhoA-A	w
+GTP-BINDING	zebrafish	Q6PC71	rnd3a	Q6PC71	19	86	Rho-related GTP-binding protein RhoE	w
+GTP-BINDING	zebrafish	Q6PE28	rhogd	Q6PE28	18	49	Rho-related GTP-binding protein RhoG	w
+GTP-BINDING	zebrafish	Q6TEM4	rnd1a	Q6TEM4	14	62	Rho-related GTP-binding protein Rho6	w
+GTP-BINDING	zebrafish	Q6TH20	drg2	Q6TH20	8	155	Developmentally-regulated GTP-binding protein 2	w
+GTP-BINDING	zebrafish	Q7SY56	rrad	Q7SY56	2	44	GTP-binding protein	w
+GTP-BINDING	zebrafish	Q7T2E8	rhoac	Q7T2E8	30	131	Rho-related GTP-binding protein RhoA-C	w
+GTP-BINDING	zebrafish	Q7T340	drg1	Q7T340	7	182	Developmentally-regulated GTP-binding protein 1	w
+GTP-BINDING	zebrafish	Q7ZVA2	rem1	Q7ZVA2	4	47	GTP-binding protein	w
+GTP-BINDING	zebrafish	Q800G5	mxe	Q800G5	0	18	Interferon-induced GTP-binding protein MxE	w
+GTP-BINDING	zebrafish	Q800G8	mxb	Q800G8	0	18	Interferon-induced GTP-binding protein MxB	w
+GTP-BINDING	zebrafish	Q803F2	rhogb	Q803F2	19	86	Rho-related GTP-binding protein RhoG	w
+GTP-BINDING	zebrafish	Q803L7	rhogc	Q803L7	17	49	Rho-related GTP-binding protein RhoG	w
+GTP-BINDING	zebrafish	Q8JH68	mxa	Q8JH68	1	20	Interferon-induced GTP-binding protein MxA	w
+GTP-CH-I	fly	FBgn0003162	Pu	P48596	0	26	GTP cyclohydrolase 1 (EC 3.5.4.16) (GTP cyclohydrolase I) (G	w
+GTP-CH-I	human	P30793	GCH1	P30793	4	93	GTP cyclohydrolase 1 (EC 3.5.4.16) (GTP cyclohydrolase I) (G	w
+GTP-MANNOSE-1-PHOSPHATE	fly	FBgn0037279	Gmppb	Q7JZB4	2	62	Mannose-1-phosphate guanyltransferase beta (EC 2.7.7.13) (GD	w
+GTP-MANNOSE-1-PHOSPHATE	human	Q96IJ6	GMPPA	Q96IJ6	7	94	Mannose-1-phosphate guanylyltransferase regulatory subunit a	w
+GTP-MANNOSE-1-PHOSPHATE	human	Q9Y5P6	GMPPB	Q9Y5P6	7	159	Mannose-1-phosphate guanylyltransferase catalytic subunit be	w
+GTP-RHO-BINDING	human	Q8IUC4	RHPN2	Q8IUC4	14	84	Rhophilin-2 (76 kDa RhoB effector protein) (GTP-Rho-binding 	w
+GTP-RHO-BINDING	human	Q8TCX5	RHPN1	Q8TCX5	18	111	Rhophilin-1 (GTP-Rho-binding protein 1)	w
+GTP-SPECIFIC	fly	FBgn0029118	ScsbetaG	Q9V470	9	175	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+GTP-SPECIFIC	human	Q96I99	SUCLG2	Q96I99	13	235	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+GTP1	schistosoma-mansoni	Q26579	GTP1	Q26579	0	2	Glucose transport protein	
+GTP1	schizosaccharomyces-pombe	P32235	gtp1	P32235	3	12	GTP-binding protein 1	
+GTPA	dictyostelium-discoideum	Q552Z6	gtpA	Q552Z6	0	4	GTP-binding protein A	
+GTPA	human	Q07960	ARHGAP1	Q07960	23	236	Rho GTPase-activating protein 1 (CDC42 GTPase-activating pro	w
+GTPA	human	Q8N264	ARHGAP24	Q8N264	78	517	Rho GTPase-activating protein 24 (Filamin-A-associated RhoGA	w
+GTPASE	fly	FBgn0003392	shi	M9PHQ0	5	252	dynamin GTPase (EC 3.6.5.5)	w
+GTPASE	fly	FBgn0004390	RasGAP1	M9PF62	23	151	Ras GTPase activating protein 1, isoform C	w
+GTPASE	fly	FBgn0004636	Rap1	P08645	27	151	Ras-related protein Rap1 (EC 3.6.5.2) (Rap1 GTPase) (Ras-lik	w
+GTPASE	fly	FBgn0011596	fzo	O18412	3	71	Transmembrane GTPase fzo (EC 3.6.5.-) (Protein fuzzy onions)	w
+GTPASE	fly	FBgn0014010	Rab5	Q9V3I2	81	339	Ras-related protein Rab5 (Drab5) (EC 3.6.5.2) (Small monomer	w
+GTPASE	fly	FBgn0015795	Rab7	O76742	27	204	Ras-related protein Rab7 (DRab7) (EC 3.6.5.2) (Small monomer	w
+GTPASE	fly	FBgn0020655	ArfGAP1	Q9VTX5	11	95	ADP-ribosylation factor GTPase activating protein 1, isoform	w
+GTPASE	fly	FBgn0020907	Scp2	O16158	0	19	Calcium-binding protein (Cex Ca2+-sensing low molecular weig	w
+GTPASE	fly	FBgn0024182	waw	Q9VRH6	22	445	Translation factor waclaw, mitochondrial (EC 3.6.5.-) (Elong	w
+GTPASE	fly	FBgn0025836	RhoGAP1A	X2JC00	0	7	Rho GTPase activating protein at 1A, isoform E	w
+GTPASE	fly	FBgn0026375	RhoGAPp190	M9PHV3	4	24	Rho GTPase activating protein p190, isoform F	w
+GTPASE	fly	FBgn0029778	RhoGAP5A	Q9W4A9	1	33	Rho GTPase activating protein at 5A, isoform A	w
+GTPASE	fly	FBgn0030685	Graf	X2JDY8	2	49	Rho GTPase-activating protein Graf (GTPase regulator associa	w
+GTPASE	fly	FBgn0030808	RhoGAP15B	Q9VX92	1	5	Rho GTPase activating protein at 15B, isoform C	w
+GTPASE	fly	FBgn0030893	RhoGAP16F	X2JCF3	2	4	Rho GTPase activating protein at 16F, isoform E	w
+GTPASE	fly	FBgn0031118	RhoGAP19D	X2JEI9	1	6	Rho GTPase activating protein at 19D, isoform D	w
+GTPASE	fly	FBgn0031906	CG5160	Q9VM20	1	5	small monomeric GTPase (EC 3.6.5.2)	w
+GTPASE	fly	FBgn0032031	CG13390	Q9VLN0	4	100	Mitochondrial ribosome-associated GTPase 2	w
+GTPASE	fly	FBgn0034249	RhoGAP54D	A1ZAW3	1	13	FI17823p1 (Rho GTPase activating protein at 54D, isoform A) 	w
+GTPASE	fly	FBgn0035711	CG8519	Q9VRY2	0	4	small monomeric GTPase (EC 3.6.5.2)	w
+GTPASE	fly	FBgn0035879	GAPcenA	A8JNN5	4	20	GTPase activating protein and centrosome-associated, isoform	w
+GTPASE	fly	FBgn0035916	GAPsec	Q9VSM8	0	1	FI07835p (GTPase activating protein, SECIS-dependent read-th	w
+GTPASE	fly	FBgn0036356	CG10222	Q9VU67	3	14	GPN-loop GTPase 2	w
+GTPASE	fly	FBgn0036518	RhoGAP71E	B7Z058	0	1	Rho GTPase activating protein at 71E, isoform D	w
+GTPASE	fly	FBgn0037182	ArfGAP3	A8JNX0	16	62	ADP-ribosylation factor GTPase activating protein 3, isoform	w
+GTPASE	fly	FBgn0037478	CG2656	Q9VI70	2	10	GPN-loop GTPase 3	w
+GTPASE	fly	FBgn0038106	CG7488	Q9VG07	3	51	GTPase Era, mitochondrial (ERA-like protein 1)	w
+GTPASE	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28	FI04035p (Rho GTPase activating protein at 93B)	w
+GTPASE	fly	FBgn0039020	CG17141	Q9VCU5	1	142	Mitochondrial ribosome-associated GTPase 1 (Mitochondrial GT	w
+GTPASE	fly	FBgn0039140	Miro	A0A0B4KGW0	4	64	Mitochondrial Rho GTPase (EC 3.6.5.-)	w
+GTPASE	fly	FBgn0039532	Mtl	Q7JWS8	18	98	AT17867p (Mig-2-like GTPase Mtl) (Mig-2-like, isoform A) (Mi	w
+GTPASE	fly	FBgn0040346	CG3704	Q9V3R3	3	21	GPN-loop GTPase (EC 3.6.5.-)	w
+GTPASE	fly	FBgn0259216	RhoGAP102A	H9XVN1	0	0	Rho GTPase activating protein at 102A, isoform D	w
+GTPASE	fly	FBgn0261461	RhoGAP18B	Q9VWL7	14	53	Rho GTPase activating protein at 18B, isoform C	w
+GTPASE	fly	FBgn0264895	RapGAP1	A8DYW8	10	22	Rap GTPase activating protein 1, isoform H	w
+GTPASE	fly	FBgn0266284	Ns3	Q9W590	5	169	Large subunit GTPase 1 homolog (EC 3.6.1.-) (Nucleostemin-3)	w
+GTPASE	human	A1A4S6	ARHGAP10	A1A4S6	46	178	Rho GTPase-activating protein 10 (GTPase regulator associate	w
+GTPASE	human	A1A4Y4	IRGM	A1A4Y4	14	196	Immunity-related GTPase family M protein (EC 3.6.5.-) (Immun	w
+GTPASE	human	A6NIR3	AGAP5	A6NIR3	3	22	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	A7KAX9	ARHGAP32	A7KAX9	46	236	Rho GTPase-activating protein 32 (Brain-specific Rho GTPase-	w
+GTPASE	human	I3L3L1	ARL17B	I3L3L1	2	10	ADP ribosylation factor like GTPase 17A	w
+GTPASE	human	O60313	OPA1	O60313	20	246	Dynamin-like GTPase OPA1, mitochondrial (EC 3.6.5.5) (Optic 	w
+GTPASE	human	O75616	ERAL1	O75616	23	222	GTPase Era, mitochondrial (H-ERA) (hERA) (Conserved ERA-like	w
+GTPASE	human	O95140	MFN2	O95140	12	206	Mitofusin-2 (EC 3.6.5.-) (Transmembrane GTPase MFN2)	w
+GTPASE	human	P01111	NRAS	P01111	189	1082	GTPase NRas (EC 3.6.5.2) (Transforming protein N-Ras)	w
+GTPASE	human	P01112	HRAS	P01112	214	1190	GTPase HRas (EC 3.6.5.2) (H-Ras-1) (Ha-Ras) (Transforming pr	w
+GTPASE	human	P01116	KRAS	P01116	510	3461	GTPase KRas (EC 3.6.5.2) (K-Ras 2) (Ki-Ras) (c-K-ras) (c-Ki-	w
+GTPASE	human	P0C0E4	RAB40AL	P0C0E4	6	68	Ras-related protein Rab-40A-like (EC 3.6.5.2) (Ras-like GTPa	w
+GTPASE	human	P0DJJ0	SRGAP2C	P0DJJ0	9	25	SLIT-ROBO Rho GTPase-activating protein 2C (SLIT-ROBO Rho GT	w
+GTPASE	human	P0DJR0	GIMD1	P0DJR0	2	25	GTPase IMAP family member GIMD1 (GIMAP family P-loop NTPase 	w
+GTPASE	human	P0DMP2	SRGAP2B	P0DMP2	13	40	SLIT-ROBO Rho GTPase-activating protein 2B (SLIT-ROBO Rho GT	w
+GTPASE	human	P52198	RND2	P52198	94	559	Rho-related GTP-binding protein RhoN (EC 3.6.5.2) (Rho famil	w
+GTPASE	human	P55039	DRG2	P55039	11	255	Developmentally-regulated GTP-binding protein 2 (DRG-2) (Tra	w
+GTPASE	human	P61587	RND3	P61587	87	546	Rho-related GTP-binding protein RhoE (EC 3.6.5.2) (Protein M	w
+GTPASE	human	P62826	RAN	P62826	97	702	GTP-binding nuclear protein Ran (EC 3.6.5.-) (Androgen recep	w
+GTPASE	human	Q07960	ARHGAP1	Q07960	23	236	Rho GTPase-activating protein 1 (CDC42 GTPase-activating pro	w
+GTPASE	human	Q4V339	ZNG1F	Q4V339	3	36	Zinc-regulated GTPase metalloprotein activator 1F (EC 3.6.5.	w
+GTPASE	human	Q5H913	ARL13A	Q5H913	10	30	ADP-ribosylation factor-like protein 13A (ARF-like GTPase 13	w
+GTPASE	human	Q5JTY5	ZNG1C	Q5JTY5	10	113	Zinc-regulated GTPase metalloprotein activator 1C (EC 3.6.5.	w
+GTPASE	human	Q5RIA9	ZNG1E	Q5RIA9	4	37	Zinc-regulated GTPase metalloprotein activator 1E (EC 3.6.5.	w
+GTPASE	human	Q5VTM2	AGAP9	Q5VTM2	1	9	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	Q5VUJ5	AGAP7P	Q5VUJ5	1	9	Putative Arf-GAP with GTPase, ANK repeat and PH domain-conta	w
+GTPASE	human	Q5VW22	AGAP6	Q5VW22	6	43	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	Q68CJ6	NUGGC	Q68CJ6	1	18	Nuclear GTPase SLIP-GC (EC 3.6.1.-) (Speckled-like pattern i	w
+GTPASE	human	Q6NXR0	IRGC	Q6NXR0	3	59	Interferon-inducible GTPase 5 (EC 3.6.5.-) (Immunity-related	w
+GTPASE	human	Q6P9H5	GIMAP6	Q6P9H5	7	29	GTPase IMAP family member 6 (Immunity-associated nucleotide 	w
+GTPASE	human	Q7L0Q8	RHOU	Q7L0Q8	121	610	Rho-related GTP-binding protein RhoU (EC 3.6.5.2) (CDC42-lik	w
+GTPASE	human	Q7Z2Y8	GVINP1	Q7Z2Y8	0	1	Interferon-induced very large GTPase 1 (Interferon-induced v	w
+GTPASE	human	Q7Z2Z2	EFL1	Q7Z2Z2	10	360	Elongation factor-like GTPase 1 (EC 3.6.5.-) (Elongation fac	w
+GTPASE	human	Q7Z444	ERAS	Q7Z444	19	102	GTPase ERas (E-Ras) (EC 3.6.5.2) (Embryonic stem cell-expres	w
+GTPASE	human	Q8IUF1	ZNG1B	Q8IUF1	12	115	Zinc-regulated GTPase metalloprotein activator 1B (EC 3.6.5.	w
+GTPASE	human	Q8IWA4	MFN1	Q8IWA4	16	174	Mitofusin-1 (EC 3.6.5.-) (Fzo homolog) (Transmembrane GTPase	w
+GTPASE	human	Q8IXI1	RHOT2	Q8IXI1	37	354	Mitochondrial Rho GTPase 2 (MIRO-2) (hMiro-2) (EC 3.6.5.-) (	w
+GTPASE	human	Q8IXI2	RHOT1	Q8IXI2	7	87	Mitochondrial Rho GTPase 1 (MIRO-1) (hMiro-1) (EC 3.6.5.-) (	w
+GTPASE	human	Q8N442	GUF1	Q8N442	9	256	Translation factor GUF1, mitochondrial (EC 3.6.5.-) (Elongat	w
+GTPASE	human	Q8ND71	GIMAP8	Q8ND71	9	108	GTPase IMAP family member 8 (Immune-associated nucleotide-bi	w
+GTPASE	human	Q8NHV1	GIMAP7	Q8NHV1	7	75	GTPase IMAP family member 7 (Immunity-associated nucleotide 	w
+GTPASE	human	Q8TAI7	RHEBL1	Q8TAI7	15	144	GTPase RhebL1 (EC 3.6.5.-) (Ras homolog enriched in brain li	w
+GTPASE	human	Q8TF27	AGAP11	Q8TF27	0	18	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	Q8WWP7	GIMAP1	Q8WWP7	14	123	GTPase IMAP family member 1 (Immunity-associated protein 1) 	w
+GTPASE	human	Q8WZA9	IRGQ	Q8WZA9	6	85	Immunity-related GTPase family Q protein	w
+GTPASE	human	Q92730	RND1	Q92730	89	498	Rho-related GTP-binding protein Rho6 (EC 3.6.5.2) (Rho famil	w
+GTPASE	human	Q92834	RPGR	Q92834	15	125	X-linked retinitis pigmentosa GTPase regulator	w
+GTPASE	human	Q96F15	GIMAP5	Q96F15	40	333	GTPase IMAP family member 5 (Immune-associated nucleotide-bi	w
+GTPASE	human	Q96KN7	RPGRIP1	Q96KN7	42	130	X-linked retinitis pigmentosa GTPase regulator-interacting p	w
+GTPASE	human	Q96L33	RHOV	Q96L33	122	398	Rho-related GTP-binding protein RhoV (EC 3.6.5.2) (CDC42-lik	w
+GTPASE	human	Q96P47	AGAP3	Q96P47	27	156	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	Q96P64	AGAP4	Q96P64	1	14	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	Q99490	AGAP2	Q99490	28	114	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	Q9BRT8	ZNG1A	Q9BRT8	19	211	Zinc-regulated GTPase metalloprotein activator 1A (EC 3.6.5.	w
+GTPASE	human	Q9BT17	MTG1	Q9BT17	4	349	Mitochondrial ribosome-associated GTPase 1 (GTP-binding prot	w
+GTPASE	human	Q9BU20	CPLANE2	Q9BU20	14	130	Ciliogenesis and planar polarity effector 2 (REM2- and Rab-l	w
+GTPASE	human	Q9H089	LSG1	Q9H089	17	400	Large subunit GTPase 1 homolog (hLsg1) (EC 3.6.5.-)	w
+GTPASE	human	Q9H4K7	MTG2	Q9H4K7	10	354	Mitochondrial ribosome-associated GTPase 2 (GTP-binding prot	w
+GTPASE	human	Q9H9Y4	GPN2	Q9H9Y4	10	221	GPN-loop GTPase 2 (EC 3.6.5.-) (ATP-binding domain 1 family 	w
+GTPASE	human	Q9HBH0	RHOF	Q9HBH0	122	850	Rho-related GTP-binding protein RhoF (EC 3.6.5.2) (Rho famil	w
+GTPASE	human	Q9HCN4	GPN1	Q9HCN4	16	185	GPN-loop GTPase 1 (EC 3.6.5.-) (MBD2-interacting protein) (M	w
+GTPASE	human	Q9NR31	SAR1A	Q9NR31	31	384	Small COPII coat GTPase SAR1A (EC 3.6.5.2) (COPII-associated	w
+GTPASE	human	Q9NUV9	GIMAP4	Q9NUV9	7	45	GTPase IMAP family member 4 (Immunity-associated nucleotide 	w
+GTPASE	human	Q9UG22	GIMAP2	Q9UG22	8	59	GTPase IMAP family member 2 (Immunity-associated protein 2) 	w
+GTPASE	human	Q9UHW5	GPN3	Q9UHW5	15	239	GPN-loop GTPase 3 (EC 3.6.5.-) (ATP-binding domain 1 family 	w
+GTPASE	human	Q9UNA1	ARHGAP26	Q9UNA1	45	211	Rho GTPase-activating protein 26 (GTPase regulator associate	w
+GTPASE	human	Q9UPQ3	AGAP1	Q9UPQ3	27	197	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	human	Q9Y6B6	SAR1B	Q9Y6B6	43	490	Small COPII coat GTPase SAR1B (EC 3.6.5.2) (GTP-binding prot	w
+GTPASE	worm	A4UZ34	CELE_Y71F9AR.2	A4UZ34	0	12	small monomeric GTPase	w
+GTPASE	worm	G5EBS5	aex-6	G5EBS5	1	13	small monomeric GTPase	w
+GTPASE	worm	G5EBV3	mig-2	G5EBV3	16	115	Rac-like GTPase	w
+GTPASE	worm	G5EDF5	tufm-2	G5EDF5	3	96	protein-synthesizing GTPase	w
+GTPASE	worm	H2L0Q6	ral-1	H2L0Q6	10	38	small monomeric GTPase	w
+GTPASE	worm	O01312	rap-3	O01312	10	24	RAP homolog (Vertebrate Rap GTPase family)	w
+GTPASE	worm	O01426	B0207.6	O01426	2	7	GPN-loop GTPase 2	w
+GTPASE	worm	O01826	C53H9.2	O01826	5	72	Large subunit GTPase 1 homolog	w
+GTPASE	worm	O17599	rap-2	O17599	8	24	small monomeric GTPase	w
+GTPASE	worm	O45691	CELE_M01E5.2	O45691	2	42	Mitochondrial ribosome-associated GTPase 2	w
+GTPASE	worm	P46577	gop-2	P46577	4	15	GPN-loop GTPase 1	w
+GTPASE	worm	P91857	rab-5	P91857	22	71	small monomeric GTPase	w
+GTPASE	worm	Q09523	eral-1	Q09523	1	53	GTPase Era, mitochondrial	w
+GTPASE	worm	Q18965	eat-3	Q18965	1	35	Dynamin-like GTPase OPA1, mitochondrial	w
+GTPASE	worm	Q23424	fzo-1	Q23424	1	43	Transmembrane GTPase fzo-1	w
+GTPASE	worm	Q23445	sar-1	Q23445	3	47	Small COPII coat GTPase SAR1	w
+GTPASE	worm	Q5DX34	glo-4	Q5DX34	0	21	X-linked retinitis pigmentosa GTPase regulator homolog	w
+GTPASE	worm	Q94263	miro-1	Q94263	3	29	Mitochondrial Rho GTPase 1	w
+GTPASE	worm	Q95XR0	eif-2gamma	Q95XR0	4	117	protein-synthesizing GTPase	w
+GTPASE	worm	Q9XW68	gex-4	Q9XW68	2	5	GPN-loop GTPase 3	w
+GTPASE	yeast	P20606	SAR1	P20606	5	61	Small COPII coat GTPase SAR1	w
+GTPASE	yeast	P32266	MGM1	P32266	1	32	Dynamin-like GTPase MGM1, mitochondrial	w
+GTPASE	yeast	P32559	MSS1	P32559	1	57	tRNA modification GTPase MSS1, mitochondrial	w
+GTPASE	yeast	P32939	YPT7	P32939	14	74	Ypt/Rab-type GTPase YPT7	w
+GTPASE	yeast	P38860	MTG2	P38860	1	72	GTPase MTG2, mitochondrial	w
+GTPASE	yeast	P39722	GEM1	P39722	1	43	Mitochondrial Rho GTPase 1	w
+GTPASE	yeast	P39729	RBG1	P39729	5	141	Ribosome-interacting GTPase 1	w
+GTPASE	yeast	P47122	NPA3	P47122	5	83	GPN-loop GTPase 1	w
+GTPASE	yeast	P53145	LSG1	P53145	10	158	Large subunit GTPase 1	w
+GTPASE	yeast	P53295	RBG2	P53295	13	121	Ribosome-interacting GTPase 2	w
+GTPASE	yeast	P53729	ZNG1	P53729	1	16	Zinc-regulated GTPase metalloprotein activator 1	w
+GTPASE	yeast	Q03151	MTG1	Q03151	3	94	Mitochondrial GTPase 1	w
+GTPASE	yeast	Q06543	GPN3	Q06543	2	17	GPN-loop GTPase 3	w
+GTPASE	yeast	Q08726	GPN2	Q08726	3	28	GPN-loop GTPase 2	w
+GTPASE	zebrafish	A0A0G2KPB1	LOC571582	A0A0G2KPB1	0	8	GTPase IMAP family member 8	w
+GTPASE	zebrafish	A0A140LGH1	si:dkey-88j15.3	A0A140LGH1	0	8	GTPase IMAP family member 8-like	w
+GTPASE	zebrafish	A0A2R8Q1M9	si:ch73-171o20.1	A0A2R8Q1M9	0	7	Interferon-inducible GTPase 5-like	w
+GTPASE	zebrafish	A0A2R8Q259	rab27b	A0A2R8Q259	11	33	small monomeric GTPase	w
+GTPASE	zebrafish	A0A2R8Q8S1	kras	A0A2R8Q8S1	22	67	small monomeric GTPase	w
+GTPASE	zebrafish	A0A2R8QCG5	LOC100538151	A0A2R8QCG5	1	8	GTPase IMAP family member 9	w
+GTPASE	zebrafish	A0A2R8RQN4	LOC100333286	A0A2R8RQN4	0	7	Immunity-related GTPase family, e1	w
+GTPASE	zebrafish	A0A8M1NCI2	agap2	A0A8M1NCI2	0	2	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE	zebrafish	A0A8M1NDE6	zgc:165583	A0A8M1NDE6	0	8	GTPase IMAP family member 8	w
+GTPASE	zebrafish	A0A8M1P8B8	irgf1	A0A8M1P8B8	0	7	Immunity-related GTPase family, f1	w
+GTPASE	zebrafish	A0A8M3B823	LOC110437776	A0A8M3B823	0	8	GTPase IMAP family member 7-like	w
+GTPASE	zebrafish	A0A8M3BF01	rab9b	A0A8M3BF01	13	53	small monomeric GTPase	w
+GTPASE	zebrafish	A0A8M6YXI7	LOC108179113	A0A8M6YXI7	0	8	GTPase IMAP family member 6-like	w
+GTPASE	zebrafish	A0A8M6YXT6	LOC108179126	A0A8M6YXT6	0	8	GTPase IMAP family member 8	w
+GTPASE	zebrafish	A0A8M9PTD4	LOC100333355	A0A8M9PTD4	1	8	GTPase IMAP family member 4-like	w
+GTPASE	zebrafish	A0A8M9PWT7	LOC100148249	A0A8M9PWT7	1	8	GTPase IMAP family member 9-like	w
+GTPASE	zebrafish	A0A8M9QID3	si:ch1073-365p7.2	A0A8M9QID3	0	7	GTPase IMAP family member 8	w
+GTPASE	zebrafish	A0AB13A8A4	si:ch73-308m11.1	A0AB13A8A4	0	8	GTPase IMAP family member-like protein	w
+GTPASE	zebrafish	A0AB32TV31	dnm1a	A0AB32TV31	1	70	dynamin GTPase	w
+GTPASE	zebrafish	A0AB32TW11	LOC100148237	A0AB32TW11	1	8	GTPase IMAP family member 4-like	w
+GTPASE	zebrafish	A1L1U3	g3bp2a	A1L1U3	11	42	GTPase activating protein (SH3 domain) binding protein 2	w
+GTPASE	zebrafish	A4FVK4	rab8a	A4FVK4	12	48	small monomeric GTPase	w
+GTPASE	zebrafish	A5PLC7	rab8b	A5PLC7	8	40	small monomeric GTPase	w
+GTPASE	zebrafish	A5WUN5	abr	A5WUN5	0	1	ABR activator of RhoGEF and GTPase	w
+GTPASE	zebrafish	A9JRY8	rac3b	A9JRY8	19	86	small monomeric GTPase	w
+GTPASE	zebrafish	B0R0B1	zng1	B0R0B1	1	4	Zinc-regulated GTPase metalloprotein activator 1	w
+GTPASE	zebrafish	B0S6U7	eral1	B0S6U7	1	84	GTPase Era, mitochondrial	w
+GTPASE	zebrafish	B3DJU3	rit1	B3DJU3	7	28	small monomeric GTPase	w
+GTPASE	zebrafish	B7ZD40	sar1ab	B7ZD40	2	21	small monomeric GTPase	w
+GTPASE	zebrafish	B8JIV0	rap2ab	B8JIV0	15	33	small monomeric GTPase	w
+GTPASE	zebrafish	E7F144	rap2aa	E7F144	14	33	small monomeric GTPase	w
+GTPASE	zebrafish	E7F6D1	irgf3	E7F6D1	0	7	Immunity-related GTPase family, f3	w
+GTPASE	zebrafish	E9QCB3	mtg2	E9QCB3	0	76	Mitochondrial ribosome-associated GTPase 2	w
+GTPASE	zebrafish	F1Q8X3	si:dkey-73p2.1	F1Q8X3	0	8	GTPase IMAP family member 7	w
+GTPASE	zebrafish	F1Q9E9	bcr	F1Q9E9	1	3	BCR activator of RhoGEF and GTPase	w
+GTPASE	zebrafish	F1QM29	rpgrb	F1QM29	5	58	X-linked retinitis pigmentosa GTPase regulator	w
+GTPASE	zebrafish	F1QV70	LOC571124	F1QV70	0	8	GTPase IMAP family member 4	w
+GTPASE	zebrafish	F1RBS9	si:dkey-73p2.2	F1RBS9	0	8	GTPase IMAP family member 8	w
+GTPASE	zebrafish	F6P8C7	nuggc.3	F6P8C7	0	1	Nuclear GTPase, germinal center associated, tandem duplicate	w
+GTPASE	zebrafish	H0WEU1	si:ch211-214j24.15	H0WEU1	0	1	GTPase IMAP family member 8	w
+GTPASE	zebrafish	P79737	nras	P79737	22	64	GTPase NRas	w
+GTPASE	zebrafish	Q0P3Y1	rab33a	Q0P3Y1	8	64	small monomeric GTPase	w
+GTPASE	zebrafish	Q0P458	rab9a	Q0P458	13	53	small monomeric GTPase	w
+GTPASE	zebrafish	Q1L986	rab3b	Q1L986	4	20	small monomeric GTPase	w
+GTPASE	zebrafish	Q1LV74	si:dkeyp-59c12.1	Q1LV74	0	13	small monomeric GTPase	w
+GTPASE	zebrafish	Q1LY91	irgq2	Q1LY91	0	7	Immunity-related GTPase family, q2	w
+GTPASE	zebrafish	Q1RLP4	rab40c	Q1RLP4	2	20	small monomeric GTPase	w
+GTPASE	zebrafish	Q29RC5	rac1b	Q29RC5	17	58	small monomeric GTPase	w
+GTPASE	zebrafish	Q32LU1	rhot2	Q32LU1	4	47	Mitochondrial Rho GTPase 2	w
+GTPASE	zebrafish	Q498P3	rab33ba	Q498P3	8	64	small monomeric GTPase	w
+GTPASE	zebrafish	Q4V8U8	rab27a	Q4V8U8	10	33	small monomeric GTPase	w
+GTPASE	zebrafish	Q503B6	hrasb	Q503B6	21	64	small monomeric GTPase	w
+GTPASE	zebrafish	Q503D0	wu:fc69h08	Q503D0	0	13	small monomeric GTPase	w
+GTPASE	zebrafish	Q5RHY9	rerglb	Q5RHY9	0	13	small monomeric GTPase	w
+GTPASE	zebrafish	Q5U3A3	ralab	Q5U3A3	9	46	small monomeric GTPase	w
+GTPASE	zebrafish	Q5U3A7	opa1	Q5U3A7	5	35	Dynamin-like GTPase OPA1, mitochondrial	w
+GTPASE	zebrafish	Q5U3E1	rab11a	Q5U3E1	30	88	small monomeric GTPase	w
+GTPASE	zebrafish	Q5XWT8	rasd4	Q5XWT8	4	23	Ras-dva-2 small GTPase	w
+GTPASE	zebrafish	Q6DC92	ralba	Q6DC92	10	46	small monomeric GTPase	w
+GTPASE	zebrafish	Q6DGB7	rac3a	Q6DGB7	18	86	small monomeric GTPase	w
+GTPASE	zebrafish	Q6DGU2	rab11bb	Q6DGU2	32	85	small monomeric GTPase	w
+GTPASE	zebrafish	Q6DGV5	rab10	Q6DGV5	6	35	small monomeric GTPase	w
+GTPASE	zebrafish	Q6DHG5	rnd3b	Q6DHG5	18	62	Rho family GTPase 3b	w
+GTPASE	zebrafish	Q6DI07	rab3db	Q6DI07	3	18	small monomeric GTPase	w
+GTPASE	zebrafish	Q6GMK1	cdc42ep4a	Q6GMK1	2	10	CDC42 effector protein (Rho GTPase binding) 4	w
+GTPASE	zebrafish	Q6NVC5	rhot1a	Q6NVC5	6	48	Mitochondrial Rho GTPase 1-A	w
+GTPASE	zebrafish	Q6NY89	lsg1	Q6NY89	6	228	Large subunit GTPase 1 homolog	w
+GTPASE	zebrafish	Q6P129	rab18a	Q6P129	2	11	small monomeric GTPase	w
+GTPASE	zebrafish	Q6PBX2	sar1b	Q6PBX2	4	70	small monomeric GTPase	w
+GTPASE	zebrafish	Q6PUR6	gpn2	Q6PUR6	2	14	GPN-loop GTPase 2	w
+GTPASE	zebrafish	Q6ZM63	gpn3	Q6ZM63	2	19	GPN-loop GTPase 3	w
+GTPASE	zebrafish	Q7SY59	rap2b	Q7SY59	15	33	small monomeric GTPase	w
+GTPASE	zebrafish	Q7T383	ralaa	Q7T383	12	46	small monomeric GTPase	w
+GTPASE	zebrafish	Q7T393	zgc:64022	Q7T393	0	13	small monomeric GTPase	w
+GTPASE	zebrafish	Q7ZSZ9	rac1a	Q7ZSZ9	25	139	small monomeric GTPase	w
+GTPASE	zebrafish	Q7ZUG4	rab5ab	Q7ZUG4	28	54	small monomeric GTPase	w
+GTPASE	zebrafish	Q7ZUL8	zgc:55558	Q7ZUL8	16	42	small monomeric GTPase	w
+GTPASE	zebrafish	Q7ZUW5	rab5aa	Q7ZUW5	34	62	small monomeric GTPase	w
+GTPASE	zebrafish	Q7ZVP2	rab5c	Q7ZVP2	35	74	small monomeric GTPase	w
+GTPASE-ACTIVATIN	human	Q8N6T3	ARFGAP1	Q8N6T3	19	121	ADP-ribosylation factor GTPase-activating protein 1 (ARF GAP	w
+GTPASE-ACTIVATING	fly	FBgn0003346	RanGAP	Q9VIW3	21	169	Ran GTPase-activating protein (RanGAP) (Protein segregation 	w
+GTPASE-ACTIVATING	fly	FBgn0027505	Rab3-GAP	Q9VKB9	3	67	Rab3 GTPase-activating protein non-catalytic subunit (Rab3 G	w
+GTPASE-ACTIVATING	fly	FBgn0030685	Graf	X2JDY8	2	49	Rho GTPase-activating protein Graf (GTPase regulator associa	w
+GTPASE-ACTIVATING	fly	FBgn0032821	CdGAPr	Q9VIS1	1	3	GTPase-activating protein CdGAPr (d-CdGAPr)	w
+GTPASE-ACTIVATING	fly	FBgn0033539	Git	Q95RG8	21	78	ARF GTPase-activating protein Git (ARF GAP GIT) (dGIT protei	w
+GTPASE-ACTIVATING	fly	FBgn0036257	RhoGAP68F	Q9VTU3	14	77	Rho GTPase-activating protein 68F	w
+GTPASE-ACTIVATING	fly	FBgn0038747	RhoGAP92B	Q9VDS5	4	45	Rho GTPase-activating protein 92B	w
+GTPASE-ACTIVATING	fly	FBgn0039883	RhoGAP100F	Q9V9S7	4	10	Rho GTPase-activating protein 100F (RhoGAP-100F) (Synapse de	w
+GTPASE-ACTIVATING	fly	FBgn0039994	conu	Q8T0G4	9	66	Rho GTPase-activating protein conundrum	w
+GTPASE-ACTIVATING	fly	FBgn0045843	RacGAP84C	P40809	6	32	GTPase-activating protein RacGAP84C (Protein rotund RacGAP)	w
+GTPASE-ACTIVATING	fly	FBgn0051935	Rab3GAP1	Q9VQ26	3	4	Rab3 GTPase-activating protein catalytic subunit	w
+GTPASE-ACTIVATING	human	A1A4S6	ARHGAP10	A1A4S6	46	178	Rho GTPase-activating protein 10 (GTPase regulator associate	w
+GTPASE-ACTIVATING	human	A6NI28	ARHGAP42	A6NI28	32	146	Rho GTPase-activating protein 42 (Rho GTPase-activating prot	w
+GTPASE-ACTIVATING	human	A7KAX9	ARHGAP32	A7KAX9	46	236	Rho GTPase-activating protein 32 (Brain-specific Rho GTPase-	w
+GTPASE-ACTIVATING	human	B7ZAP0	RABGAP1L	B7ZAP0	73	311	Rab GTPase-activating protein 1-like, isoform 10	w
+GTPASE-ACTIVATING	human	C9J798	RASA4B	C9J798	12	110	Ras GTPase-activating protein 4B	w
+GTPASE-ACTIVATING	human	O14559	ARHGAP33	O14559	6	32	Rho GTPase-activating protein 33 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	O43182	ARHGAP6	O43182	24	112	Rho GTPase-activating protein 6 (Rho-type GTPase-activating 	w
+GTPASE-ACTIVATING	human	O43295	SRGAP3	O43295	31	210	SLIT-ROBO Rho GTPase-activating protein 3 (srGAP3) (Mental d	w
+GTPASE-ACTIVATING	human	O43374	RASA4	O43374	21	132	Ras GTPase-activating protein 4 (Calcium-promoted Ras inacti	w
+GTPASE-ACTIVATING	human	O75044	SRGAP2	O75044	51	284	SLIT-ROBO Rho GTPase-activating protein 2 (srGAP2) (Formin-b	w
+GTPASE-ACTIVATING	human	O76081	RGS20	O76081	50	201	Regulator of G protein signaling 20 (RGS20) (Gz-selective GT	w
+GTPASE-ACTIVATING	human	P0DJJ0	SRGAP2C	P0DJJ0	9	25	SLIT-ROBO Rho GTPase-activating protein 2C (SLIT-ROBO Rho GT	w
+GTPASE-ACTIVATING	human	P0DMP2	SRGAP2B	P0DMP2	13	40	SLIT-ROBO Rho GTPase-activating protein 2B (SLIT-ROBO Rho GT	w
+GTPASE-ACTIVATING	human	P15882	CHN1	P15882	13	142	N-chimaerin (A-chimaerin) (Alpha-chimerin) (N-chimerin) (NC)	w
+GTPASE-ACTIVATING	human	P20936	RASA1	P20936	28	276	Ras GTPase-activating protein 1 (GAP) (GTPase-activating pro	w
+GTPASE-ACTIVATING	human	P42331	ARHGAP25	P42331	28	146	Rho GTPase-activating protein 25 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	P43487	RANBP1	P43487	13	228	Ran-specific GTPase-activating protein (Ran-binding protein 	w
+GTPASE-ACTIVATING	human	P46060	RANGAP1	P46060	30	364	Ran GTPase-activating protein 1 (RanGAP1)	w
+GTPASE-ACTIVATING	human	P47736	RAP1GAP	P47736	23	95	Rap1 GTPase-activating protein 1 (Rap1GAP) (Rap1GAP1)	w
+GTPASE-ACTIVATING	human	P52757	CHN2	P52757	10	99	Beta-chimaerin (Beta-chimerin) (Rho GTPase-activating protei	w
+GTPASE-ACTIVATING	human	P85298	ARHGAP8	P85298	7	62	Rho GTPase-activating protein 8 (Rho-type GTPase-activating 	w
+GTPASE-ACTIVATING	human	P98171	ARHGAP4	P98171	34	198	Rho GTPase-activating protein 4 (Rho-GAP hematopoietic prote	w
+GTPASE-ACTIVATING	human	Q07960	ARHGAP1	Q07960	23	236	Rho GTPase-activating protein 1 (CDC42 GTPase-activating pro	w
+GTPASE-ACTIVATING	human	Q13017	ARHGAP5	Q13017	30	93	Rho GTPase-activating protein 5 (Rho-type GTPase-activating 	w
+GTPASE-ACTIVATING	human	Q13283	G3BP1	Q13283	134	830	Ras GTPase-activating protein-binding protein 1 (G3BP-1) (EC	w
+GTPASE-ACTIVATING	human	Q14161	GIT2	Q14161	108	311	ARF GTPase-activating protein GIT2 (ARF GAP GIT2) (Cool-inte	w
+GTPASE-ACTIVATING	human	Q14644	RASA3	Q14644	36	198	Ras GTPase-activating protein 3 (GAP1(IP4BP)) (Ins P4-bindin	w
+GTPASE-ACTIVATING	human	Q14C86	GAPVD1	Q14C86	29	257	GTPase-activating protein and VPS9 domain-containing protein	w
+GTPASE-ACTIVATING	human	Q14CB8	ARHGAP19	Q14CB8	25	99	Rho GTPase-activating protein 19 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q15042	RAB3GAP1	Q15042	42	203	Rab3 GTPase-activating protein catalytic subunit (RAB3 GTPas	w
+GTPASE-ACTIVATING	human	Q15283	RASA2	Q15283	21	141	Ras GTPase-activating protein 2 (GTPase-activating protein 1	w
+GTPASE-ACTIVATING	human	Q17R89	ARHGAP44	Q17R89	34	125	Rho GTPase-activating protein 44 (NPC-A-10) (Rho-type GTPase	w
+GTPASE-ACTIVATING	human	Q2M1Z3	ARHGAP31	Q2M1Z3	41	152	Rho GTPase-activating protein 31 (Cdc42 GTPase-activating pr	w
+GTPASE-ACTIVATING	human	Q2PPJ7	RALGAPA2	Q2PPJ7	16	67	Ral GTPase-activating protein subunit alpha-2 (250 kDa subst	w
+GTPASE-ACTIVATING	human	Q3KRB8	ARHGAP11B	Q3KRB8	6	35	Inactive Rho GTPase-activating protein 11B (Rho-type GTPase-	w
+GTPASE-ACTIVATING	human	Q52LW3	ARHGAP29	Q52LW3	25	175	Rho GTPase-activating protein 29 (PTPL1-associated RhoGAP pr	w
+GTPASE-ACTIVATING	human	Q53QZ3	ARHGAP15	Q53QZ3	16	126	Rho GTPase-activating protein 15 (ArhGAP15) (Rho-type GTPase	w
+GTPASE-ACTIVATING	human	Q5R372	RABGAP1L	Q5R372	58	244	Rab GTPase-activating protein 1-like	w
+GTPASE-ACTIVATING	human	Q5T5U3	ARHGAP21	Q5T5U3	77	286	Rho GTPase-activating protein 21 (Rho GTPase-activating prot	w
+GTPASE-ACTIVATING	human	Q5TG30	ARHGAP40	Q5TG30	7	39	Rho GTPase-activating protein 40 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q5VT97	SYDE2	Q5VT97	30	127	Rho GTPase-activating protein SYDE2 (Synapse defective prote	w
+GTPASE-ACTIVATING	human	Q5VVW2	GARNL3	Q5VVW2	12	70	GTPase-activating Rap/Ran-GAP domain-like protein 3	w
+GTPASE-ACTIVATING	human	Q684P5	RAP1GAP2	Q684P5	19	98	Rap1 GTPase-activating protein 2 (Rap1GAP2) (GTPase-activati	w
+GTPASE-ACTIVATING	human	Q68EM7	ARHGAP17	Q68EM7	44	157	Rho GTPase-activating protein 17 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q6GYQ0	RALGAPA1	Q6GYQ0	28	98	Ral GTPase-activating protein subunit alpha-1 (GAP-related-i	w
+GTPASE-ACTIVATING	human	Q6P4F7	ARHGAP11A	Q6P4F7	38	212	Rho GTPase-activating protein 11A (Rho-type GTPase-activatin	w
+GTPASE-ACTIVATING	human	Q6ZRI8	ARHGAP36	Q6ZRI8	10	124	Rho GTPase-activating protein 36	w
+GTPASE-ACTIVATING	human	Q6ZUM4	ARHGAP27	Q6ZUM4	18	67	Rho GTPase-activating protein 27 (CIN85-associated multi-dom	w
+GTPASE-ACTIVATING	human	Q6ZW31	SYDE1	Q6ZW31	43	174	Rho GTPase-activating protein SYDE1 (Synapse defective prote	w
+GTPASE-ACTIVATING	human	Q7Z5H3	ARHGAP22	Q7Z5H3	42	153	Rho GTPase-activating protein 22 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q7Z6B7	SRGAP1	Q7Z6B7	43	225	SLIT-ROBO Rho GTPase-activating protein 1 (srGAP1) (Rho GTPa	w
+GTPASE-ACTIVATING	human	Q7Z6I6	ARHGAP30	Q7Z6I6	8	39	Rho GTPase-activating protein 30 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q86X10	RALGAPB	Q86X10	5	108	Ral GTPase-activating protein subunit beta (p170)	w
+GTPASE-ACTIVATING	human	Q8IWW6	ARHGAP12	Q8IWW6	74	180	Rho GTPase-activating protein 12 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q8IYX1	TBC1D21	Q8IYX1	18	64	TBC1 domain family member 21 (Male germ cell Rab GTPase-acti	w
+GTPASE-ACTIVATING	human	Q8IZP1	TBC1D3	Q8IZP1	4	22	TBC1 domain family member 3 (Prostate cancer gene 17 protein	w
+GTPASE-ACTIVATING	human	Q8N103	TAGAP	Q8N103	39	144	T-cell activation Rho GTPase-activating protein (T-cell acti	w
+GTPASE-ACTIVATING	human	Q8N264	ARHGAP24	Q8N264	78	517	Rho GTPase-activating protein 24 (Filamin-A-associated RhoGA	w
+GTPASE-ACTIVATING	human	Q8N392	ARHGAP18	Q8N392	19	174	Rho GTPase-activating protein 18 (MacGAP) (Rho-type GTPase-a	w
+GTPASE-ACTIVATING	human	Q8N6H7	ARFGAP2	Q8N6H7	41	157	ADP-ribosylation factor GTPase-activating protein 2 (ARF GAP	w
+GTPASE-ACTIVATING	human	Q8N6T3	ARFGAP1	Q8N6T3	19	121	ADP-ribosylation factor GTPase-activating protein 1 (ARF GAP	w
+GTPASE-ACTIVATING	human	Q8TC07	TBC1D15	Q8TC07	34	207	TBC1 domain family member 15 (GTPase-activating protein RAB7	w
+GTPASE-ACTIVATING	human	Q92619	ARHGAP45	Q92619	49	296	Rho GTPase-activating protein 45 [Cleaved into: Minor histoc	w
+GTPASE-ACTIVATING	human	Q96FS4	SIPA1	Q96FS4	44	161	Signal-induced proliferation-associated protein 1 (Sipa-1) (	w
+GTPASE-ACTIVATING	human	Q96PV0	SYNGAP1	Q96PV0	85	273	Ras/Rap GTPase-activating protein SynGAP (Neuronal RasGAP) (	w
+GTPASE-ACTIVATING	human	Q96QB1	DLC1	Q96QB1	30	147	Rho GTPase-activating protein 7 (Deleted in liver cancer 1 p	w
+GTPASE-ACTIVATING	human	Q99490	AGAP2	Q99490	28	114	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE-ACTIVATING	human	Q9BRR9	ARHGAP9	Q9BRR9	28	148	Rho GTPase-activating protein 9 (Rho-type GTPase-activating 	w
+GTPASE-ACTIVATING	human	Q9C0H5	ARHGAP39	Q9C0H5	47	197	Rho GTPase-activating protein 39	w
+GTPASE-ACTIVATING	human	Q9H0H5	RACGAP1	Q9H0H5	100	485	Rac GTPase-activating protein 1 (Male germ cell RacGap) (Mgc	w
+GTPASE-ACTIVATING	human	Q9H2M9	RAB3GAP2	Q9H2M9	14	154	Rab3 GTPase-activating protein non-catalytic subunit (RGAP-i	w
+GTPASE-ACTIVATING	human	Q9NP61	ARFGAP3	Q9NP61	27	125	ADP-ribosylation factor GTPase-activating protein 3 (ARF GAP	w
+GTPASE-ACTIVATING	human	Q9NRY4	ARHGAP35	Q9NRY4	43	252	Rho GTPase-activating protein 35 (Glucocorticoid receptor DN	w
+GTPASE-ACTIVATING	human	Q9P227	ARHGAP23	Q9P227	56	171	Rho GTPase-activating protein 23 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q9P2F6	ARHGAP20	Q9P2F6	23	111	Rho GTPase-activating protein 20 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q9P2N2	ARHGAP28	Q9P2N2	3	18	Rho GTPase-activating protein 28 (Rho-type GTPase-activating	w
+GTPASE-ACTIVATING	human	Q9UJF2	RASAL2	Q9UJF2	106	359	Ras GTPase-activating protein nGAP (RAS protein activator-li	w
+GTPASE-ACTIVATING	human	Q9ULH1	ASAP1	Q9ULH1	55	235	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	w
+GTPASE-ACTIVATING	human	Q9UN86	G3BP2	Q9UN86	78	450	Ras GTPase-activating protein-binding protein 2 (G3BP-2) (GA	w
+GTPASE-ACTIVATING	human	Q9UNA1	ARHGAP26	Q9UNA1	45	211	Rho GTPase-activating protein 26 (GTPase regulator associate	w
+GTPASE-ACTIVATING	human	Q9UPQ3	AGAP1	Q9UPQ3	27	197	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+GTPASE-ACTIVATING	human	Q9Y2X7	GIT1	Q9Y2X7	98	311	ARF GTPase-activating protein GIT1 (ARF GAP GIT1) (Cool-asso	w
+GTPASE-ACTIVATING	human	Q9Y3M8	STARD13	Q9Y3M8	58	274	StAR-related lipid transfer protein 13 (46H23.2) (Deleted in	w
+GTPASE-ACTIVATING	human	Q9Y3P9	RABGAP1	Q9Y3P9	88	326	Rab GTPase-activating protein 1 (GAP and centrosome-associat	w
+GTPASE-ACTIVATING	worm	H2KZV6	CELE_T04C9.1	H2KZV6	1	25	Rho GTPase-activating protein 26	w
+GTPASE-ACTIVATING	worm	H2KZZ6	tbc-11	H2KZZ6	5	7	Rab GTPase-activating protein tbc-11	w
+GTPASE-ACTIVATING	worm	I2HAA0	tbc-8	I2HAA0	2	4	Rab GTPase-activating protein tbc-8	w
+GTPASE-ACTIVATING	worm	P34342	ran-2	P34342	0	56	Ran GTPase-activating protein 2	w
+GTPASE-ACTIVATING	worm	P90904	CELE_K02B12.7	P90904	5	28	ADP-ribosylation factor GTPase-activating protein 1	w
+GTPASE-ACTIVATING	worm	Q20498	rrc-1	Q20498	1	7	GTPase-activating protein rrc-1	w
+GTPASE-ACTIVATING	worm	Q21351	gtbp-1	Q21351	2	42	Ras GTPase-activating protein-binding protein gtbp-1	w
+GTPASE-ACTIVATING	worm	Q22670	rbg-2	Q22670	1	4	Rab3 GTPase-activating protein regulatory subunit	w
+GTPASE-ACTIVATING	worm	Q22720	gap-1	Q22720	0	4	Ras GTPase-activating protein gap-1	w
+GTPASE-ACTIVATING	worm	Q23130	rga-1	Q23130	6	18	Rho GTPase-activating protein 68F	w
+GTPASE-ACTIVATING	worm	Q86NH1	syd-1	Q86NH1	1	18	Rho GTPase-activating protein syd-1	w
+GTPASE-ACTIVATING	worm	Q93538	rbg-1	Q93538	2	4	Rab3 GTPase-activating protein catalytic subunit	w
+GTPASE-ACTIVATING	worm	Q9XUS9	cyk-4	Q9XUS9	15	66	Rac GTPase-activating protein 1	w
+GTPASE-ACTIVATING	worm	Q9XW53	rga-2	Q9XW53	0	1	Rho GTPase-activating protein 20	w
+GTPASE-ACTIVATING	worm	S6F527	eat-17	S6F527	7	9	Rab GTPase-activating protein eat-17	w
+GTPASE-ACTIVATING	yeast	P11745	RNA1	P11745	3	75	Ran GTPase-activating protein 1	w
+GTPASE-ACTIVATING	yeast	P17121	SAC7	P17121	2	10	GTPase-activating protein SAC7	w
+GTPASE-ACTIVATING	yeast	P32806	GYP6	P32806	6	19	GTPase-activating protein GYP6	w
+GTPASE-ACTIVATING	yeast	P32873	BEM3	P32873	6	31	GTPase-activating protein BEM3	w
+GTPASE-ACTIVATING	yeast	P35197	GCS1	P35197	2	49	ADP-ribosylation factor GTPase-activating protein GCS1	w
+GTPASE-ACTIVATING	yeast	P38339	RGD1	P38339	7	35	RHO GTPase-activating protein RGD1	w
+GTPASE-ACTIVATING	yeast	P38682	GLO3	P38682	8	44	ADP-ribosylation factor GTPase-activating protein GLO3	w
+GTPASE-ACTIVATING	yeast	P38769	NEL1	P38769	4	22	GTPase-activating protein NEL1	w
+GTPASE-ACTIVATING	yeast	P39083	RGA1	P39083	14	46	Rho-type GTPase-activating protein 1	w
+GTPASE-ACTIVATING	yeast	P40517	YRB2	P40517	8	48	Ran-specific GTPase-activating protein 2	w
+GTPASE-ACTIVATING	yeast	P41920	YRB1	P41920	5	40	Ran-specific GTPase-activating protein 1	w
+GTPASE-ACTIVATING	yeast	P43570	GYP8	P43570	3	10	GTPase-activating protein GYP8	w
+GTPASE-ACTIVATING	yeast	P48365	GYP7	P48365	1	9	GTPase-activating protein GYP7	w
+GTPASE-ACTIVATING	yeast	P48566	MSB3	P48566	12	32	GTPase-activating protein GYP3	w
+GTPASE-ACTIVATING	yeast	P53107	YRB30	P53107	2	3	Ran-specific GTPase-activating protein 30	w
+GTPASE-ACTIVATING	yeast	P53258	MDR1	P53258	5	11	GTPase-activating protein GYP2	w
+GTPASE-ACTIVATING	yeast	Q04322	GYL1	Q04322	7	24	Probable GTPase-activating protein GYL1	w
+GTPASE-ACTIVATING	yeast	Q04412	AGE1	Q04412	0	4	ADP-ribosylation factor GTPase-activating protein effector p	w
+GTPASE-ACTIVATING	yeast	Q06407	RGA2	Q06407	15	44	Rho-type GTPase-activating protein 2	w
+GTPASE-ACTIVATING	yeast	Q08484	GYP1	Q08484	8	42	GTPase-activating protein GYP1	w
+GTPASE-ACTIVATING	yeast	Q12317	MSB4	Q12317	6	14	GTPase-activating protein MSB4	w
+GTPASE-ACTIVATING	yeast	Q12344	GYP5	Q12344	8	33	GTPase-activating protein GYP5	w
+GTPASE-ACTIVATING	zebrafish	A0A0G2KK80	syde2	A0A0G2KK80	3	4	Rho GTPase-activating protein SYDE2	w
+GTPASE-ACTIVATING	zebrafish	A0A0G2KWM4	arhgap45a	A0A0G2KWM4	0	5	Rho GTPase-activating protein 45 isoform X2	w
+GTPASE-ACTIVATING	zebrafish	A0A0R4IDX6	si:ch211-247j9.1	A0A0R4IDX6	0	1	Rho GTPase-activating protein 24 isoform X3	w
+GTPASE-ACTIVATING	zebrafish	A0A0R4ILK3	arhgap11a	A0A0R4ILK3	0	1	Rho GTPase-activating protein 11A	w
+GTPASE-ACTIVATING	zebrafish	A0A0R4IRU6	arhgap24	A0A0R4IRU6	1	1	Rho GTPase-activating protein 24	w
+GTPASE-ACTIVATING	zebrafish	A0A2R9YJK6	rap1gapb	A0A2R9YJK6	7	7	Rap1 GTPase-activating protein 1 isoform X6	w
+GTPASE-ACTIVATING	zebrafish	A0A8M1NBH7	git2b	A0A8M1NBH7	11	35	ARF GTPase-activating protein GIT2b isoform 1	w
+GTPASE-ACTIVATING	zebrafish	A0A8M1NI98	rap1gap2b	A0A8M1NI98	7	7	Rap1 GTPase-activating protein 2b isoform 2	w
+GTPASE-ACTIVATING	zebrafish	A0A8M9PP74	si:dkeyp-68b7.12	A0A8M9PP74	1	6	Rho GTPase-activating protein 30 isoform X1	w
+GTPASE-ACTIVATING	zebrafish	A0A8M9PSX5	arhgap20	A0A8M9PSX5	7	9	Rho GTPase-activating protein 20	w
+GTPASE-ACTIVATING	zebrafish	A0AB32TCZ4	rabgap1l	A0AB32TCZ4	2	2	Rab GTPase-activating protein 1-like isoform X3	w
+GTPASE-ACTIVATING	zebrafish	A0AB32TGD9	arhgap45b	A0AB32TGD9	0	5	Rho GTPase-activating protein 45 isoform X6	w
+GTPASE-ACTIVATING	zebrafish	A2BG45	git2a	A2BG45	9	41	ARF GTPase-activating protein GIT2a	w
+GTPASE-ACTIVATING	zebrafish	A3KNF9	rap1gap2a	A3KNF9	7	8	RAP1 GTPase-activating protein 2a	w
+GTPASE-ACTIVATING	zebrafish	A9JTA8	rangap1b	A9JTA8	7	90	Ran GTPase-activating protein 1	w
+GTPASE-ACTIVATING	zebrafish	B0S6B7	rabgap1l2	B0S6B7	2	2	Rab GTPase-activating protein 1-like	w
+GTPASE-ACTIVATING	zebrafish	B0S6J3	srgap2	B0S6J3	4	21	SLIT-ROBO Rho GTPase-activating protein 2	w
+GTPASE-ACTIVATING	zebrafish	B0S8J8	arhgap15	B0S8J8	0	3	Rho GTPase-activating protein 15	w
+GTPASE-ACTIVATING	zebrafish	E7EYC8	srgap3	E7EYC8	0	11	SLIT-ROBO Rho GTPase-activating protein 3	w
+GTPASE-ACTIVATING	zebrafish	E7F1R9	arhgap27l	E7F1R9	0	3	Rho GTPase-activating protein 27 isoform X1	w
+GTPASE-ACTIVATING	zebrafish	E7F916	rasa3	E7F916	3	7	Ras GTPase-activating protein 2	w
+GTPASE-ACTIVATING	zebrafish	E7F9H1	arhgap46b	E7F9H1	0	13	Rho GTPase-activating protein 39 isoform X3	w
+GTPASE-ACTIVATING	zebrafish	E7FA87	syde1	E7FA87	0	4	Rho GTPase-activating protein SYDE1	w
+GTPASE-ACTIVATING	zebrafish	E7FAZ2	git1	E7FAZ2	16	52	ARF GTPase-activating protein GIT1 isoform X2	w
+GTPASE-ACTIVATING	zebrafish	E7FBY0	dlc1	E7FBY0	1	3	Rho GTPase-activating protein 7	w
+GTPASE-ACTIVATING	zebrafish	E7FCI7	arhgap27	E7FCI7	0	3	Rho GTPase-activating protein 27	w
+GTPASE-ACTIVATING	zebrafish	E7FEI6	arhgap4b	E7FEI6	0	7	Rho GTPase-activating protein 4b	w
+GTPASE-ACTIVATING	zebrafish	E9QGF9	arhgap31	E9QGF9	1	6	Rho GTPase-activating protein 31	w
+GTPASE-ACTIVATING	zebrafish	F1Q4Y5	srgap1a	F1Q4Y5	0	11	SLIT-ROBO Rho GTPase-activating protein 1	w
+GTPASE-ACTIVATING	zebrafish	F1QFY0	arhgap4a	F1QFY0	0	10	Rho GTPase-activating protein 4a	w
+GTPASE-ACTIVATING	zebrafish	F1R3X3	rasa1a	F1R3X3	17	61	Ras GTPase-activating protein 1	w
+GTPASE-ACTIVATING	zebrafish	F1R6L8	arhgap17b	F1R6L8	1	4	Rho GTPase-activating protein 17	w
+GTPASE-ACTIVATING	zebrafish	F1R7M1	arhgap17a	F1R7M1	1	4	Rho GTPase-activating protein 17	w
+GTPASE-ACTIVATING	zebrafish	F6P057	arhgap12a	F6P057	2	3	Rho GTPase-activating protein 12a	w
+GTPASE-ACTIVATING	zebrafish	K7DYN0	rab3gap2	K7DYN0	1	5	RAB3 GTPase-activating protein subunit 2 (non-catalytic)	w
+GTPASE-ACTIVATING	zebrafish	Q08BV5	rangap1a	Q08BV5	7	101	Ran GTPase-activating protein 1	w
+GTPASE-ACTIVATING	zebrafish	Q1JPR9	arhgap10	Q1JPR9	4	16	Rho GTPase-activating protein 10	w
+GTPASE-ACTIVATING	zebrafish	Q5RIG8	srgap1b	Q5RIG8	0	11	SLIT-ROBO Rho GTPase-activating protein 1b	w
+GTPASE-ACTIVATING	zebrafish	Q6NUV0	rab3gap1	Q6NUV0	7	9	Rab3 GTPase-activating protein catalytic subunit	w
+GTPASE-ACTIVATING	zebrafish	Q6NWK3	ranbp1	Q6NWK3	6	59	Ran-specific GTPase-activating protein	w
+GTPASE-ACTIVATING	zebrafish	Q6P3H8	racgap1	Q6P3H8	30	65	Rac GTPase-activating protein 1	w
+GTPASE-ACTIVATING	zebrafish	Q6PCS4	arhgap29	Q6PCS4	1	6	Rho GTPase-activating protein 29	w
+GTPASE-ACTIVATING	zebrafish	Q6ZM89	arhgap42a	Q6ZM89	0	1	Rho GTPase-activating protein 42	w
+GTPASE-ACTIVATING-LIKE	human	O95294	RASAL1	O95294	11	92	RasGAP-activating-like protein 1 (RAS protein activator like	w
+GTPASE-ACTIVATING-LIKE	human	P46940	IQGAP1	P46940	50	520	Ras GTPase-activating-like protein IQGAP1 (p195)	w
+GTPASE-ACTIVATING-LIKE	human	Q13576	IQGAP2	Q13576	24	308	Ras GTPase-activating-like protein IQGAP2	w
+GTPASE-ACTIVATING-LIKE	human	Q86VI3	IQGAP3	Q86VI3	33	313	Ras GTPase-activating-like protein IQGAP3	w
+GTPASE-ACTIVATING-LIKE	yeast	Q12280	IQG1	Q12280	5	67	Ras GTPase-activating-like protein IQG1	w
+GTPASE-BINDING	human	Q15276	RABEP1	Q15276	80	270	Rab GTPase-binding effector protein 1 (Rabaptin-4) (Rabaptin	w
+GTPASE-BINDING	human	Q9H5N1	RABEP2	Q9H5N1	39	133	Rab GTPase-binding effector protein 2 (Rabaptin-5beta)	w
+GTPASE-BINDING	zebrafish	A0A8M1NIH2	rabep1	A0A8M1NIH2	11	29	Rab GTPase-binding effector protein 1 isoform 2	w
+GTPASE-BINDING	zebrafish	A0A8M1P8I7	cdc42ep1b	A0A8M1P8I7	1	1	CDC42 effector protein (Rho GTPase-binding) 1b	w
+GTPASE-BINDING	zebrafish	E7F7G6	cdc42ep4b	E7F7G6	3	12	CDC42 effector protein (Rho GTPase-binding) 4b	w
+GTPASE-BINDING	zebrafish	E7F913	cdc42ep1a	E7F913	0	6	CDC42 effector protein (Rho GTPase-binding) 1a	w
+GTPASE-BINDING	zebrafish	F1Q793	rabep2	F1Q793	3	23	Rab GTPase-binding effector protein 2	w
+GTPASE-BINDING	zebrafish	F1R2T1	cdc42ep5	F1R2T1	5	10	CDC42 effector protein (Rho GTPase-binding) 5	w
+GTPASE-BINDING	zebrafish	Q5BKX1	cdc42ep2	Q5BKX1	1	10	CDC42 effector protein (Rho GTPase-binding) 2	w
+GTPASE-BINDING	zebrafish	Q66HU1	cdc42ep3	Q66HU1	2	6	CDC42 effector protein (Rho GTPase-binding) 3	w
+GTPASE-GDP	fly	FBgn0022960	vimar	A1Z6S7	11	20	GTPase-GDP dissociation stimulator vimar	w
+GTPASE-GDP	human	P52306	RAP1GDS1	P52306	58	287	Rap1 GTPase-GDP dissociation stimulator 1 (Exchange factor s	w
+GTPASE-GDP	yeast	P39011	BEM4	P39011	4	37	GTPase-GDP dissociation stimulator BEM4	w
+GTPASE-GDP	zebrafish	B8JK90	si:dkey-191g9.5	B8JK90	1	31	Rap1 GTPase-GDP dissociation stimulator 1-B	w
+GTPASE-INTERACTING	human	Q9HB90	RRAGC	Q9HB90	23	125	Ras-related GTP-binding protein C (Rag C) (RagC) (EC 3.6.5.-	w
+GTPASE-INTERACTING	yeast	P38785	GIC1	P38785	1	27	GTPase-interacting component 1	w
+GTPASE-INTERACTING	yeast	Q06648	GIC2	Q06648	2	33	GTPase-interacting component 2	w
+GTPASE-LIKE	human	Q7L0Q8	RHOU	Q7L0Q8	121	610	Rho-related GTP-binding protein RhoU (EC 3.6.5.2) (CDC42-lik	w
+GTPASE-LIKE	human	Q96L33	RHOV	Q96L33	122	398	Rho-related GTP-binding protein RhoV (EC 3.6.5.2) (CDC42-lik	w
+GTPASE-REGULATING	human	O75628	REM1	O75628	16	176	GTP-binding protein REM 1 (GTPase-regulating endothelial cel	w
+GTPASES	human	O14613	CDC42EP2	O14613	12	66	Cdc42 effector protein 2 (Binder of Rho GTPases 1)	w
+GTPASES	human	Q00587	CDC42EP1	Q00587	36	162	Cdc42 effector protein 1 (Binder of Rho GTPases 5) (Serum pr	w
+GTPASES	human	Q6NZY7	CDC42EP5	Q6NZY7	7	68	Cdc42 effector protein 5 (Binder of Rho GTPases 3)	w
+GTPASES	human	Q9H3Q1	CDC42EP4	Q9H3Q1	31	112	Cdc42 effector protein 4 (Binder of Rho GTPases 4)	w
+GTPASES	human	Q9UKI2	CDC42EP3	Q9UKI2	9	64	Cdc42 effector protein 3 (Binder of Rho GTPases 2) (MSE55-re	w
+GTPB1_HUMAN	human	O00178	GTPBP1	O00178	9	192		
+GTPB2_HUMAN	human	Q9BX10	GTPBP2	Q9BX10	3	94		
+GTPB3	human	Q969Y2	GTPBP3	Q969Y2	5	116	5-taurinomethyluridine-[tRNA] synthase subunit GTPB3, mitoch	w
+GTPB3_HUMAN	human	Q969Y2	GTPBP3	Q969Y2	5	116		
+GTPB4_HUMAN	human	Q9BZE4	GTPBP4	Q9BZE4	32	759		
+GTPB6_HUMAN	human	O43824	GTPBP6	O43824	7	214		
+GTPB8_HUMAN	human	Q8N3Z3	GTPBP8	Q8N3Z3	18	192		
+GTPBA_HUMAN	human	A4D1E9	GTPBP10	A4D1E9	3	222		
+GTPBP	oryza-sativa-subsp-japonica	Q84TA8	GTPBP	Q84TA8	5	23	Os03g0819900 protein	
+GTPBP1	cladophialophora-carrionii	A0A1C1C933	Gtpbp1	A0A1C1C933	0	2	GTP-binding protein 1	
+GTPBP1	dictyostelium-discoideum	Q54D77	gtpbp1	Q54D77	0	3	GTP-binding protein 1	
+GTPBP1	fly	FBgn0027836	Gtpbp1	Q0E931	9	54	Dgp-1, isoform A (Dgp-1, isoform B) (FI18016p1)	
+GTPBP1	human	O00178	GTPBP1	O00178	9	192	GTP-binding protein 1 (G protein 1) (GP-1) (GP1) (EC 3.6.5.3	
+GTPBP1	mus-musculus	O08582	Gtpbp1	O08582	0	39	GTP-binding protein 1	
+GTPBP1	rattus-norvegicus	D2XV59	Gtpbp1	D2XV59	1	52	GTP-binding protein 1	
+GTPBP10	human	A4D1E9	GTPBP10	A4D1E9	3	222	GTP-binding protein 10 (Protein obg homolog 2) (ObgH2)	
+GTPBP10	mus-musculus	Q8K013	Gtpbp10	Q8K013	1	82	GTP-binding protein 10	
+GTPBP10	rattus-norvegicus	D4A3U1	Gtpbp10	D4A3U1	0	103	GTP-binding protein 10	
+GTPBP10	zebrafish	Q6DHF7	gtpbp10	Q6DHF7	0	82	GTP-binding protein 10	
+GTPBP1L	zebrafish	A0AB13ABQ3	gtpbp1l	A0AB13ABQ3	1	21	GTP-binding protein 1	
+GTPBP2	fly	FBgn0037391	Gtpbp2	Q960F7	8	114	SD03629p	
+GTPBP2	human	Q9BX10	GTPBP2	Q9BX10	3	94	GTP-binding protein 2	
+GTPBP2	mus-musculus	Q3UJK4	Gtpbp2	Q3UJK4	0	3	GTP-binding protein 2	
+GTPBP2	rattus-norvegicus	D4ABV1	Gtpbp2	D4ABV1	0	3	GTP-binding protein 2	
+GTPBP2B	zebrafish	A0A8M1PAI6	gtpbp2b	A0A8M1PAI6	0	2	GTP-binding protein 2b	
+GTPBP3	dictyostelium-discoideum	Q55C52	gtpbp3	Q55C52	2	25	tRNA modification GTPase gtpbp3, mitochondrial	
+GTPBP3	human	Q969Y2	GTPBP3	Q969Y2	5	116	5-taurinomethyluridine-[tRNA] synthase subunit GTPB3, mitoch	
+GTPBP3	mus-musculus	Q923K4	Gtpbp3	Q923K4	4	96	5-taurinomethyluridine-	
+GTPBP3	rattus-norvegicus	Q5PQQ1	Gtpbp3	Q5PQQ1	5	142	5-taurinomethyluridine-	
+GTPBP3	zebrafish	Q501Z5	gtpbp3	Q501Z5	3	130	5-taurinomethyluridine-	
+GTPBP4	human	Q9BZE4	GTPBP4	Q9BZE4	32	759	GTP-binding protein 4 (Chronic renal failure gene protein) (	
+GTPBP4	mus-musculus	Q99ME9	Gtpbp4	Q99ME9	13	212	GTP-binding protein 4	
+GTPBP4	rattus-norvegicus	Q99P77	Gtpbp4	Q99P77	29	344	GTP-binding protein 4	
+GTPBP5	dictyostelium-discoideum	Q54Z70	gtpbp5	Q54Z70	3	35	GTP1/OBG family protein	
+GTPBP5	human	Q9H4K7	MTG2	Q9H4K7	10	354		
+GTPBP6	human	O43824	GTPBP6	O43824	7	214	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	
+GTPBP6	mus-musculus	Q3U6U5	Gtpbp6	Q3U6U5	2	116	Putative GTP-binding protein 6	
+GTPBP6	rattus-norvegicus	A0A8I5ZU18	Gtpbp6	A0A8I5ZU18	3	121	Putative GTP-binding protein 6	
+GTPBP7	human	Q9BT17	MTG1	Q9BT17	4	349		
+GTPBP8	human	Q8N3Z3	GTPBP8	Q8N3Z3	18	192	GTP-binding protein 8	
+GTPBP8	mus-musculus	Q9CY28	Gtpbp8	Q9CY28	4	55	GTP-binding protein 8	
+GTPBP8	rattus-norvegicus	Q5BK22	Gtpbp8	Q5BK22	9	123	GTP-binding protein 8	
+GTPBP8	zebrafish	B0S8I0	gtpbp8	B0S8I0	7	109	GTP-binding protein 8	
+GTPBP9	human	Q9NTK5	OLA1	Q9NTK5	14	205		
+GTPSCS	fly	FBgn0029118	ScsbetaG	Q9V470	9	175	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+GTPSCS	human	Q96I99	SUCLG2	Q96I99	13	235	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+GTPX	fly	FBgn0035438	Gtpx	Q8IRD3	21	279	Glutathione peroxidase	

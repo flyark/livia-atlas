@@ -1,4 +1,1390 @@
-GEN1	arabidopsis-thaliana	Q9LPD2	GEN1	Q9LPD2	7	124	Flap endonuclease GEN-like 1
-GEN1	mus-musculus	Q8BMI4	Gen1	Q8BMI4	0	26	Flap endonuclease GEN homolog 1
-GEN1	rattus-norvegicus	D3ZVS5	Gen1	D3ZVS5	2	36	Flap endonuclease GEN homolog 1
-GENE1000	arabidopsis-thaliana	P94032	gene1000	P94032	2	49	Gene1000 protein
+GEN	fly	FBgn0263831	Gen	Q9VRJ0	3	63	Flap endonuclease GEN (EC 3.1.-.-) (Flap structure-specific 	
+GEN-1	worm	Q22418	gen-1	Q22418	2	32	GEN1 Holliday junction resolvase homolog	
+GEN1	arabidopsis-thaliana	Q9LPD2	GEN1	Q9LPD2	7	124	Flap endonuclease GEN-like 1	
+GEN1	human	Q17RS7	GEN1	Q17RS7	12	146	Flap endonuclease GEN homolog 1 (EC 3.1.-.-)	
+GEN1	mus-musculus	Q8BMI4	Gen1	Q8BMI4	0	26	Flap endonuclease GEN homolog 1	
+GEN1	rattus-norvegicus	D3ZVS5	Gen1	D3ZVS5	2	36	Flap endonuclease GEN homolog 1	
+GEN1	worm	Q22418	gen-1	Q22418	2	32	GEN1 Holliday junction resolvase homolog	w
+GENDERBLIND	fly	FBgn0039487	gb	Q9VB75	3	35	GH08870p (Genderblind, isoform A) (Genderblind, isoform B) (	w
+GENE	fly	FBgn0000227	Elba1	Q9VR17	2	4	Early boundary activity protein 1 (Blastoderm-specific gene 	w
+GENE	fly	FBgn0001253	ImpE1	Q7KUB3	2	8	Ecdysone-inducible gene E1, isoform A (Ecdysone-inducible ge	w
+GENE	fly	FBgn0001255	ImpE3	Q9VHW8	36	244	Ecdysone-inducible gene E3 (LD11958p)	w
+GENE	fly	FBgn0001256	ImpL1	Q7KUJ4	46	248	Ecdysone-inducible gene L1, isoform B	w
+GENE	fly	FBgn0003086	Pig1	P26023	30	248	Pre-intermoult gene 1 protein (Gland-specific protein)	w
+GENE	fly	FBgn0004588	Eig71Ea	Q9VUS3	40	243	Ecdysone-induced gene 71Ea (GEO02636p1) (MIP29911p)	w
+GENE	fly	FBgn0004589	Eig71Eb	Q27364	28	243	Ecdysone-induced gene 71Eb, isoform A (Ecdysone-induced gene	w
+GENE	fly	FBgn0004590	Eig71Ec	Q9VUS6	41	244	Ecdysone-induced gene 71Ec	w
+GENE	fly	FBgn0004591	Eig71Ed	Q27241	32	247	Ecdysone-induced gene 71Ed (GEO09060p1) (L71-4) (LP04160p)	w
+GENE	fly	FBgn0004592	Eig71Ee	Q9VUS8	17	246	Ecdysone-induced gene 71Ee (LP03361p)	w
+GENE	fly	FBgn0004593	Eig71Ef	Q9VUS9	38	243	Ecdysone-induced gene 71Ef (GEO07176p1)	w
+GENE	fly	FBgn0004594	Eig71Eg	Q9VUT0	16	243	Ecdysone-induced gene 71Eg	w
+GENE	fly	FBgn0010340	Timmdc1	P81928	1	44	RPII140-upstream gene protein	w
+GENE	fly	FBgn0015801	Reg-5	Q94913	62	244	Rhythmically expressed gene 5 protein (dReg-5)	w
+GENE	fly	FBgn0016715	Reg-2	Q94915	0	3	Rhythmically expressed gene 2 protein (dREG-2)	w
+GENE	fly	FBgn0017550	Rga	Q94547	54	482	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
+GENE	fly	FBgn0020445	E23	Q7KU30	1	6	Early gene at 23, isoform C (Early gene at 23, isoform D) (E	w
+GENE	fly	FBgn0024183	vig	Q9V426	28	241	LD07162p (Vasa intronic gene, isoform A) (Vasa intronic gene	w
+GENE	fly	FBgn0027378	MRG15	A0A0B4KHJ7	102	465	MORF-related gene 15, isoform B	w
+GENE	fly	FBgn0030555	Fbxl4	Q9VY46	9	38	F box and leucine-rich-repeat gene 4 (GH11272p)	w
+GENE	fly	FBgn0030654	CG15643	Q9VXT6	1	3	SREBP regulating gene protein	w
+GENE	fly	FBgn0032475	Sfmbt	B7YZV6	15	152	Scm-related gene containing four mbt domains, isoform C	w
+GENE	fly	FBgn0032499	Uvrag	Q9VK07	13	58	UV radiation resistance-associated gene protein (UV-resistan	w
+GENE	fly	FBgn0034454	CG15120	A1ZBM4	3	61	Parkin coregulated gene protein homolog	w
+GENE	fly	FBgn0034918	Pym	P82804	2	7	Partner of Y14 and mago (DmPYM) (Protein within the bgcn gen	w
+GENE	fly	FBgn0036158	CG6149	Q9VTI1	1	11	Androgen-induced gene 1 protein	w
+GENE	fly	FBgn0036666	TSG101	Q9VVA7	21	132	Tumor suppressor protein 101 (Tumor susceptibility gene 101)	w
+GENE	fly	FBgn0039350	jigr1	Q9VBP5	58	391	Jing interacting gene regulatory 1, isoform A (Jing interact	w
+GENE	fly	FBgn0039694	fig	Q9VAH4	488	974	Protein phosphatase PTC7 homolog fig (Fos intronic gene prot	w
+GENE	fly	FBgn0051404	CG31404	Q8IN72	0	0	Testicular haploid expressed gene protein-like	w
+GENE	fly	FBgn0053200	VepD	Q9N2P6	0	1	Ventrally expressed gene D protein	w
+GENE	fly	FBgn0267033	mamo	Q9VY72	14	73	Maternal gene required for meiosis, isoform H (Maternal gene	w
+GENE	human	A0A1B0GUX0	SPMIP1	A0A1B0GUX0	5	45	Protein SPMIP1 (ATP6V1F neighbor gene protein) (Protein ATP6	w
+GENE	human	A1A5B4	ANO9	A1A5B4	8	51	Anoctamin-9 (Transmembrane protein 16J) (Tumor protein p53-i	w
+GENE	human	A1L190	SYCE3	A1L190	16	137	Synaptonemal complex central element protein 3 (Testis highl	w
+GENE	human	A2RRP1	NBAS	A2RRP1	18	177	NBAS subunit of NRZ tethering complex (Neuroblastoma-amplifi	w
+GENE	human	A6NC42	DPPA5	A6NC42	13	67	Developmental pluripotency-associated 5 protein (hDPPA5) (Em	w
+GENE	human	A6NDD5	SYNDIG1L	A6NDD5	14	131	Synapse differentiation-inducing gene protein 1-like (Capuci	w
+GENE	human	A6NDV4	TMEM8B	A6NDV4	7	32	Transmembrane protein 8B (Nasopharyngeal carcinoma-associate	w
+GENE	human	A6NGY1	FRG2C	A6NGY1	3	16	Protein FRG2-like-2 (FSHD region gene 2 protein family membe	w
+GENE	human	A6NK06	ACOD1	A6NK06	6	137	Cis-aconitate decarboxylase (CAD) (EC 4.1.1.6) (Aconitate de	w
+GENE	human	A6NKG5	RTL1	A6NKG5	1	35	Retrotransposon-like protein 1 (Mammalian retrotransposon de	w
+GENE	human	A8MUL3	ADARB2-AS1	A8MUL3	0	3	Putative uncharacterized protein ADARB2-AS1 (ADARB2 antisens	w
+GENE	human	A8MUP6	GSG1L2	A8MUP6	2	24	Germ cell-specific gene 1-like protein 2 (GSG1-like protein 	w
+GENE	human	A8MWY0	ELAPOR2	A8MWY0	8	62	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+GENE	human	B1ANH7	IBA57-DT	B1ANH7	2	9	Putative uncharacterized protein IBA57-DT (IBA57 antisense R	w
+GENE	human	D3DTV9	PRAC2	D3DTV9	1	7	Protein PRAC2 (Prostate, rectum and colon expressed gene pro	w
+GENE	human	H3BPM6	MKRN2OS	H3BPM6	4	20	MKRN2 opposite strand protein (MKRN2 antisense RNA 1) (MKRN2	w
+GENE	human	I3L0S3	PYCARD-AS1	I3L0S3	0	3	Putative uncharacterized protein PYCARD-AS1 (PYCARD antisens	w
+GENE	human	K7EIQ3	ZNF561-AS1	K7EIQ3	0	7	Uncharacterized protein ZNF561-AS1 (ZNF561 antisense RNA 1) 	w
+GENE	human	O00116	AGPS	O00116	18	198	Alkyldihydroxyacetonephosphate synthase, peroxisomal (Alkyl-	w
+GENE	human	O00422	SAP18	O00422	83	408	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	w
+GENE	human	O00534	VWA5A	O00534	4	110	von Willebrand factor A domain-containing protein 5A (Breast	w
+GENE	human	O00559	EBAG9	O00559	29	316	Receptor-binding cancer antigen expressed on SiSo cells (Can	w
+GENE	human	O14681	EI24	O14681	2	126	Etoposide-induced protein 2.4 homolog (p53-induced gene 8 pr	w
+GENE	human	O14682	ENC1	O14682	41	176	Ectoderm-neural cortex protein 1 (ENC-1) (Kelch-like protein	w
+GENE	human	O14683	TP53I11	O14683	7	67	Tumor protein p53-inducible protein 11 (p53-induced gene 11 	w
+GENE	human	O14773	TPP1	O14773	7	201	Tripeptidyl-peptidase 1 (TPP-1) (EC 3.4.14.9) (Cell growth-i	w
+GENE	human	O14933	UBE2L6	O14933	77	294	Ubiquitin/ISG15-conjugating enzyme E2 L6 (EC 2.3.2.23) (E2 u	w
+GENE	human	O15121	DEGS1	O15121	18	134	Sphingolipid delta(4)-desaturase DES1 (EC 1.14.19.17) (Cell 	w
+GENE	human	O15234	CASC3	O15234	39	214	Protein CASC3 (Cancer susceptibility candidate gene 3 protei	w
+GENE	human	O15405	TOX3	O15405	72	394	TOX high mobility group box family member 3 (CAG trinucleoti	w
+GENE	human	O15409	FOXP2	O15409	9	56	Forkhead box protein P2 (CAG repeat protein 44) (Trinucleoti	w
+GENE	human	O15417	TNRC18	O15417	21	77	Trinucleotide repeat-containing gene 18 protein (Long CAG tr	w
+GENE	human	O15503	INSIG1	O15503	11	175	Insulin-induced gene 1 protein (INSIG-1)	w
+GENE	human	O15535	ZSCAN9	O15535	64	370	Zinc finger and SCAN domain-containing protein 9 (Cell proli	w
+GENE	human	O43261	DLEU1	O43261	0	4	Leukemia-associated protein 1 (Deleted in lymphocytic leukem	w
+GENE	human	O43272	PRODH	O43272	2	73	Proline dehydrogenase 1, mitochondrial (EC 1.5.5.2) (Proline	w
+GENE	human	O60259	KLK8	O60259	40	134	Kallikrein-8 (hK8) (EC 3.4.21.118) (Neuropsin) (NP) (Ovasin)	w
+GENE	human	O60296	TRAK2	O60296	39	115	Trafficking kinesin-binding protein 2 (Amyotrophic lateral s	w
+GENE	human	O60447	EVI5	O60447	53	155	Ecotropic viral integration site 5 protein homolog (EVI-5) (	w
+GENE	human	O60565	GREM1	O60565	6	118	Gremlin-1 (Cell proliferation-inducing gene 2 protein) (Cyst	w
+GENE	human	O60749	SNX2	O60749	30	266	Sorting nexin-2 (Transformation-related gene 9 protein) (TRG	w
+GENE	human	O60884	DNAJA2	O60884	64	590	DnaJ homolog subfamily A member 2 (Cell cycle progression re	w
+GENE	human	O60927	PPP1R11	O60927	19	109	E3 ubiquitin-protein ligase PPP1R11 (EC 2.3.2.27) (Hemochrom	w
+GENE	human	O75081	CBFA2T3	O75081	37	127	Transcriptional corepressor CBFA2T3 (MTG8-related protein 2)	w
+GENE	human	O75179	ANKRD17	O75179	16	186	Ankyrin repeat domain-containing protein 17 (Gene trap ankyr	w
+GENE	human	O75340	PDCD6	O75340	33	266	Programmed cell death protein 6 (Apoptosis-linked gene 2 pro	w
+GENE	human	O75351	VPS4B	O75351	14	144	Vacuolar protein sorting-associated protein 4B (EC 3.6.4.6) 	w
+GENE	human	O75387	SLC43A1	O75387	3	87	Large neutral amino acids transporter small subunit 3 (L-typ	w
+GENE	human	O75459	PAGE1	O75459	5	89	P antigen family member 1 (PAGE-1) (AL5) (G antigen 9) (GAGE	w
+GENE	human	O75534	CSDE1	O75534	37	355	Cold shock domain-containing protein E1 (N-ras upstream gene	w
+GENE	human	O75626	PRDM1	O75626	29	156	PR domain zinc finger protein 1 (EC 2.1.1.-) (BLIMP-1) (Beta	w
+GENE	human	O75711	SCRG1	O75711	5	83	Scrapie-responsive protein 1 (Scrapie-responsive gene 1 prot	w
+GENE	human	O75884	RBBP9	O75884	10	124	Serine hydrolase RBBP9 (EC 3.1.-.-) (B5T-overexpressed gene 	w
+GENE	human	O75907	DGAT1	O75907	3	93	Diacylglycerol O-acyltransferase 1 (EC 2.3.1.20) (ACAT-relat	w
+GENE	human	O76021	RSL1D1	O76021	67	662	Ribosomal L1 domain-containing protein 1 (CATX-11) (Cellular	w
+GENE	human	O76062	TM7SF2	O76062	3	82	Delta(14)-sterol reductase TM7SF2 (Delta-14-SR) (EC 1.3.1.70	w
+GENE	human	O76070	SNCG	O76070	23	249	Gamma-synuclein (Breast cancer-specific gene 1 protein) (Per	w
+GENE	human	O94759	TRPM2	O94759	11	26	Transient receptor potential cation channel subfamily M memb	w
+GENE	human	O94915	FRYL	O94915	1	42	Protein furry homolog-like (ALL1-fused gene from chromosome 	w
+GENE	human	O94992	HEXIM1	O94992	129	968	Protein HEXIM1 (Cardiac lineage protein 1) (Estrogen down-re	w
+GENE	human	O95177	GAS8-AS1	O95177	0	3	Uncharacterized protein GAS8-AS1 (GAS8 antisense RNA 1) (GAS	w
+GENE	human	O95263	PDE8B	O95263	8	71	High affinity cAMP-specific and IBMX-insensitive 3',5'-cycli	w
+GENE	human	O95274	LYPD3	O95274	25	252	Ly6/PLAUR domain-containing protein 3 (GPI-anchored metastas	w
+GENE	human	O95633	FSTL3	O95633	13	133	Follistatin-related protein 3 (Follistatin-like protein 3) (	w
+GENE	human	O95868	LY6G6D	O95868	12	70	Lymphocyte antigen 6 complex locus protein G6d (Protein Ly6-	w
+GENE	human	O95997	PTTG1	O95997	36	475	Securin (Esp1-associated protein) (Pituitary tumor-transform	w
+GENE	human	P00338	LDHA	P00338	20	458	L-lactate dehydrogenase A chain (LDH-A) (EC 1.1.1.27) (Cell 	w
+GENE	human	P00558	PGK1	P00558	8	476	Phosphoglycerate kinase 1 (EC 2.7.11.1) (EC 2.7.2.3) (Cell m	w
+GENE	human	P01011	SERPINA3	P01011	30	460	Alpha-1-antichymotrypsin (ACT) (Cell growth-inhibiting gene 	w
+GENE	human	P02794	FTH1	P02794	7	282	Ferritin heavy chain (Ferritin H subunit) (EC 1.16.3.1) (Cel	w
+GENE	human	P04626	ERBB2	P04626	160	2138	Receptor tyrosine-protein kinase erbB-2 (EC 2.7.10.1) (Metas	w
+GENE	human	P05783	KRT18	P05783	166	682	Keratin, type I cytoskeletal 18 (Cell proliferation-inducing	w
+GENE	human	P07814	EPRS1	P07814	17	439	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+GENE	human	P08493	MGP	P08493	4	45	Matrix Gla protein (MGP) (Cell growth-inhibiting gene 36 pro	w
+GENE	human	P09565	IG2R	P09565	4	8	Putative insulin-like growth factor 2-associated protein (Ce	w
+GENE	human	P0C7P2	RFPL3S	P0C7P2	9	14	Putative protein RFPL3S (RFPL3 antisense RNA 1) (RFPL3 antis	w
+GENE	human	P0C7T7	FRMD6-AS1	P0C7T7	0	4	Putative uncharacterized protein FRMD6-AS1 (FRMD6 antisense 	w
+GENE	human	P0C853	BAALC-AS2	P0C853	0	2	Putative uncharacterized protein BAALC-AS2 (BAALC antisense 	w
+GENE	human	P0C864	DANCR	P0C864	0	6	Putative uncharacterized protein DANCR (Anti-differentiation	w
+GENE	human	P0CAT3	TLX1NB	P0CAT3	0	4	Putative TLX1 neighbor protein (TLX1 divergent gene protein)	w
+GENE	human	P0DJG4	SPMAP2L	P0DJG4	0	10	Sperm microtubule associated protein 2-like (Testicular hapl	w
+GENE	human	P0DP75	MED14OS	P0DP75	1	9	Putative uncharacterized protein MED14OS (MED14 antisense ge	w
+GENE	human	P0DPA3	SNHG28	P0DPA3	0	5	Putative uncharacterized protein SNHG28 (Small nucleolar RNA	w
+GENE	human	P10909	CLU	P10909	102	1070	Clusterin (Aging-associated gene 4 protein) (Apolipoprotein 	w
+GENE	human	P13236	CCL4	P13236	56	177	C-C motif chemokine 4 (G-26 T-lymphocyte-secreted protein) (	w
+GENE	human	P14868	DARS1	P14868	9	274	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
+GENE	human	P17022	ZNF18	P17022	26	36	Zinc finger protein 18 (Heart development-specific gene 1 pr	w
+GENE	human	P18077	RPL35A	P18077	57	771	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
+GENE	human	P18627	LAG3	P18627	76	475	Lymphocyte activation gene 3 protein (LAG-3) (CD antigen CD2	w
+GENE	human	P19838	NFKB1	P19838	70	813	Nuclear factor NF-kappa-B p105 subunit (DNA-binding factor K	w
+GENE	human	P21675	TAF1	P21675	48	444	Transcription initiation factor TFIID subunit 1 (EC 2.3.1.48	w
+GENE	human	P21926	CD9	P21926	35	638	CD9 antigen (5H9 antigen) (Cell growth-inhibiting gene 2 pro	w
+GENE	human	P25815	S100P	P25815	48	489	Protein S100-P (Migration-inducing gene 9 protein) (MIG9) (P	w
+GENE	human	P27469	G0S2	P27469	30	204	G0/G1 switch protein 2 (G0/G1 switch regulatory protein 2) (	w
+GENE	human	P27544	CERS1	P27544	0	43	Ceramide synthase 1 (CerS1) (LAG1 longevity assurance homolo	w
+GENE	human	P28067	HLA-DMA	P28067	86	369	HLA class II histocompatibility antigen, DM alpha chain (MHC	w
+GENE	human	P28068	HLA-DMB	P28068	54	385	HLA class II histocompatibility antigen, DM beta chain (MHC 	w
+GENE	human	P31949	S100A11	P31949	90	548	Protein S100-A11 (Calgizzarin) (Metastatic lymph node gene 7	w
+GENE	human	P36955	SERPINF1	P36955	41	455	Pigment epithelium-derived factor (PEDF) (Cell proliferation	w
+GENE	human	P40305	IFI27	P40305	12	286	Interferon alpha-inducible protein 27, mitochondrial (p27) (	w
+GENE	human	P41220	RGS2	P41220	54	241	Regulator of G protein signaling 2 (RGS2) (Cell growth-inhib	w
+GENE	human	P42568	MLLT3	P42568	198	540	Protein AF-9 (ALL1-fused gene from chromosome 9 protein) (My	w
+GENE	human	P42684	ABL2	P42684	223	1496	Tyrosine-protein kinase ABL2 (EC 2.7.10.2) (Abelson murine l	w
+GENE	human	P43304	GPD2	P43304	4	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	w
+GENE	human	P46695	IER3	P46695	30	181	Radiation-inducible immediate-early gene IEX-1 (Differentiat	w
+GENE	human	P46934	NEDD4	P46934	130	707	E3 ubiquitin-protein ligase NEDD4 (EC 2.3.2.26) (Cell prolif	w
+GENE	human	P47929	LGALS7	P47929	38	327	Galectin-7 (Gal-7) (HKL-14) (PI7) (p53-induced gene 1 protei	w
+GENE	human	P49788	RARRES1	P49788	30	133	Retinoic acid receptor responder protein 1 (Phorbol ester-in	w
+GENE	human	P50454	SERPINH1	P50454	55	491	Serpin H1 (47 kDa heat shock protein) (Arsenic-transactivate	w
+GENE	human	P51153	RAB13	P51153	59	273	Ras-related protein Rab-13 (EC 3.6.5.2) (Cell growth-inhibit	w
+GENE	human	P51813	BMX	P51813	105	1377	Cytoplasmic tyrosine-protein kinase BMX (EC 2.7.10.2) (Bone 	w
+GENE	human	P51825	AFF1	P51825	67	199	AF4/FMR2 family member 1 (ALL1-fused gene from chromosome 4 	w
+GENE	human	P52298	NCBP2	P52298	32	558	Nuclear cap-binding protein subunit 2 (20 kDa nuclear cap-bi	w
+GENE	human	P52747	ZNF143	P52747	7	149	Zinc finger protein 143 (SPH-binding factor) (Selenocysteine	w
+GENE	human	P53801	PTTG1IP	P53801	25	147	Pituitary tumor-transforming gene 1 protein-interacting prot	w
+GENE	human	P55061	TMBIM6	P55061	25	146	Bax inhibitor 1 (BI-1) (Testis-enhanced gene transcript prot	w
+GENE	human	P55196	AFDN	P55196	84	452	Afadin (ALL1-fused gene from chromosome 6 protein) (Protein 	w
+GENE	human	P55197	MLLT10	P55197	31	108	Protein AF-10 (ALL1-fused gene from chromosome 10 protein)	w
+GENE	human	P55198	MLLT6	P55198	48	161	Protein AF-17 (ALL1-fused gene from chromosome 17 protein)	w
+GENE	human	P56645	PER3	P56645	28	113	Period circadian protein homolog 3 (hPER3) (Cell growth-inhi	w
+GENE	human	P57727	TMPRSS3	P57727	8	101	Transmembrane protease serine 3 (EC 3.4.21.-) (Serine protea	w
+GENE	human	P57738	TCTA	P57738	9	70	T-cell leukemia translocation-altered gene protein (T-cell l	w
+GENE	human	P58004	SESN2	P58004	12	160	Sestrin-2 (EC 1.11.1.-) (Hypoxia-induced gene)	w
+GENE	human	P58062	SPINK7	P58062	55	202	Serine protease inhibitor Kazal-type 7 (Esophagus cancer-rel	w
+GENE	human	P58335	ANTXR2	P58335	14	143	Anthrax toxin receptor 2 (Capillary morphogenesis gene 2 pro	w
+GENE	human	P59052	B3GALT5-AS1	P59052	0	2	Putative uncharacterized protein B3GALT5-AS1 (B3GALT5 antise	w
+GENE	human	P59910	DNAJB13	P59910	14	127	DnaJ homolog subfamily B member 13 (Testis and spermatogenes	w
+GENE	human	P61371	ISL1	P61371	52	452	Insulin gene enhancer protein ISL-1 (Islet-1)	w
+GENE	human	P61964	WDR5	P61964	198	865	WD repeat-containing protein 5 (BMP2-induced 3-kb gene prote	w
+GENE	human	P62324	BTG1	P62324	12	57	Protein BTG1 (B-cell translocation gene 1 protein)	w
+GENE	human	P62736	ACTA2	P62736	116	645	Actin, aortic smooth muscle (EC 3.6.4.-) (Alpha-actin-2) (Ce	w
+GENE	human	P63000	RAC1	P63000	242	1240	Ras-related C3 botulinum toxin substrate 1 (EC 3.6.5.2) (Cel	w
+GENE	human	P63244	RACK1	P63244	105	1123	Small ribosomal subunit protein RACK1 (Cell proliferation-in	w
+GENE	human	P83881	RPL36A	P83881	30	498	Large ribosomal subunit protein eL42 (60S ribosomal protein 	w
+GENE	human	P84996	GNAS	P84996	20	167	Protein ALEX (Alternative gene product encoded by XL-exon)	w
+GENE	human	P86434	ADORA2A-AS1	P86434	0	5	Putative uncharacterized protein ADORA2A-AS1 (ADORA2A antise	w
+GENE	human	P98066	TNFAIP6	P98066	15	187	Tumor necrosis factor-inducible gene 6 protein (EC 3.1.1.-) 	w
+GENE	human	Q00978	IRF9	Q00978	110	488	Interferon regulatory factor 9 (IRF-9) (IFN-alpha-responsive	w
+GENE	human	Q03169	TNFAIP2	Q03169	31	310	Tumor necrosis factor alpha-induced protein 2 (TNF alpha-ind	w
+GENE	human	Q04206	RELA	Q04206	91	932	Transcription factor p65 (Nuclear factor NF-kappa-B p65 subu	w
+GENE	human	Q04609	FOLH1	Q04609	14	165	Glutamate carboxypeptidase 2 (EC 3.4.17.21) (Cell growth-inh	w
+GENE	human	Q06250	WT1-AS	Q06250	4	14	Putative Wilms tumor upstream neighbor 1 gene protein (WIT-1	w
+GENE	human	Q06830	PRDX1	Q06830	10	488	Peroxiredoxin-1 (EC 1.11.1.24) (Natural killer cell-enhancin	w
+GENE	human	Q0IIN9	ZNF252P-AS1	Q0IIN9	0	4	Putative uncharacterized protein ZNF252P-AS1 (ZNF252P antise	w
+GENE	human	Q12809	KCNH2	Q12809	55	270	Voltage-gated inwardly rectifying potassium channel KCNH2 (E	w
+GENE	human	Q12980	NPRL3	Q12980	24	132	GATOR1 complex protein NPRL3 (-14 gene protein) (Alpha-globi	w
+GENE	human	Q12981	BNIP1	Q12981	25	129	Vesicle transport protein SEC20 (BCL2/adenovirus E1B 19 kDa 	w
+GENE	human	Q13007	IL24	Q13007	38	318	Interleukin-24 (IL-24) (Melanoma differentiation-associated 	w
+GENE	human	Q13129	RLF	Q13129	40	173	Zinc finger protein Rlf (Rearranged L-myc fusion gene protei	w
+GENE	human	Q13145	BAMBI	Q13145	9	71	BMP and activin membrane-bound inhibitor homolog (Non-metast	w
+GENE	human	Q13158	FADD	Q13158	15	264	FAS-associated death domain protein (FAS-associating death d	w
+GENE	human	Q13536	MIR9-1HG	Q13536	1	5	Protein CROC-4 (Contingent replication of cDNA 4) (MIR9-1 ho	w
+GENE	human	Q14008	CKAP5	Q14008	42	356	Cytoskeleton-associated protein 5 (Colonic and hepatic tumor	w
+GENE	human	Q14213	EBI3	Q14213	32	129	Interleukin-27 subunit beta (IL-27 subunit beta) (IL-27B) (E	w
+GENE	human	Q14236	DIAPH2-AS1	Q14236	0	2	Early lymphoid activation gene protein (DIAPH2 antisense RNA	w
+GENE	human	Q14331	FRG1	Q14331	12	129	Protein FRG1 (FSHD region gene 1 protein)	w
+GENE	human	Q14533	KRT81	Q14533	67	122	Keratin, type II cuticular Hb1 (Hair keratin K2.9) (Keratin,	w
+GENE	human	Q14596	NBR1	Q14596	211	688	Next to BRCA1 gene 1 protein (Cell migration-inducing gene 1	w
+GENE	human	Q14667	BLTP2	Q14667	3	41	Bridge-like lipid transfer protein family member 2 (Antigen 	w
+GENE	human	Q14699	RFTN1	Q14699	9	69	Raftlin (Cell migration-inducing gene 2 protein) (Raft-linki	w
+GENE	human	Q14847	LASP1	Q14847	43	243	LIM and SH3 domain protein 1 (LASP-1) (Metastatic lymph node	w
+GENE	human	Q14849	STARD3	Q14849	16	176	StAR-related lipid transfer protein 3 (Metastatic lymph node	w
+GENE	human	Q14914	PTGR1	Q14914	7	94	Prostaglandin reductase 1 (PRG-1) (15-oxoprostaglandin 13-re	w
+GENE	human	Q14973	SLC10A1	Q14973	4	155	Hepatic sodium/bile acid cotransporter (Cell growth-inhibiti	w
+GENE	human	Q15014	MORF4L2	Q15014	77	549	Mortality factor 4-like protein 2 (MORF-related gene X prote	w
+GENE	human	Q15327	ANKRD1	Q15327	18	99	Ankyrin repeat domain-containing protein 1 (Cardiac ankyrin 	w
+GENE	human	Q15334	LLGL1	Q15334	19	158	Lethal(2) giant larvae protein homolog 1 (LLGL) (DLG4) (Hugl	w
+GENE	human	Q15397	PUM3	Q15397	23	285	Pumilio homolog 3 (HBV X-transactivated gene 5 protein) (HBV	w
+GENE	human	Q15637	SF1	Q15637	57	308	Splicing factor 1 (Mammalian branch point-binding protein) (	w
+GENE	human	Q15643	TRIP11	Q15643	35	234	Thyroid receptor-interacting protein 11 (TR-interacting prot	w
+GENE	human	Q15847	ADIRF	Q15847	8	170	Adipogenesis regulatory factor (Adipogenesis factor rich in 	w
+GENE	human	Q16520	BATF	Q16520	127	607	Basic leucine zipper transcriptional factor ATF-like (B-cell	w
+GENE	human	Q16538	GPR162	Q16538	19	122	Probable G protein-coupled receptor 162 (Gene-rich cluster g	w
+GENE	human	Q16553	LY6E	Q16553	23	139	Lymphocyte antigen 6E (Ly-6E) (Retinoic acid-induced gene E 	w
+GENE	human	Q16609	LPAL2	Q16609	34	67	Putative apolipoprotein(a)-like protein 2 (Apo(a)-like prote	w
+GENE	human	Q16617	NKG7	Q16617	25	315	Protein NKG7 (G-CSF-induced gene 1 protein) (GIG-1 protein) 	w
+GENE	human	Q16881	TXNRD1	Q16881	15	193	Thioredoxin reductase 1, cytoplasmic (TR) (EC 1.8.1.9) (Gene	w
+GENE	human	Q16891	IMMT	Q16891	32	456	MICOS complex subunit MIC60 (Cell proliferation-inducing gen	w
+GENE	human	Q17RA5	EPCIP-AS1	Q17RA5	2	9	Putative uncharacterized protein EPCIP-AS1 (C21orf62 antisen	w
+GENE	human	Q1ED39	KNOP1	Q1ED39	33	293	Lysine-rich nucleolar protein 1 (Protein FAM191A) (Testis-sp	w
+GENE	human	Q1W209	ESRG	Q1W209	0	2	Embryonic stem cell-related gene protein (hES cell-related g	w
+GENE	human	Q29RF7	PDS5A	Q29RF7	64	370	Sister chromatid cohesion protein PDS5 homolog A (Cell proli	w
+GENE	human	Q2KHT4	GSG1	Q2KHT4	2	29	Germ cell-specific gene 1 protein	w
+GENE	human	Q2M385	MPEG1	Q2M385	4	137	Macrophage-expressed gene 1 protein (Macrophage gene 1 prote	w
+GENE	human	Q2M3D2	EXOC3L2	Q2M3D2	26	171	Exocyst complex component 3-like protein 2 (HBV X-transactiv	w
+GENE	human	Q2TAM9	TUSC1	Q2TAM9	8	68	Tumor suppressor candidate gene 1 protein (TSG-9) (TSG9)	w
+GENE	human	Q32NC0	RMP24	Q32NC0	28	216	Ribonuclease MRP protein subunit p24 (HBV X-transactivated g	w
+GENE	human	Q3SYG4	BBS9	Q3SYG4	14	118	Protein PTHB1 (Bardet-Biedl syndrome 9 protein) (Parathyroid	w
+GENE	human	Q494R0	FBXL19-AS1	Q494R0	0	1	Putative uncharacterized protein FBXL19-AS1 (FBXL19 antisens	w
+GENE	human	Q495Z4	ASB16-AS1	Q495Z4	1	3	Putative uncharacterized protein ASB16-AS1 (ASB16 antisense 	w
+GENE	human	Q4ZG55	GREB1	Q4ZG55	27	217	Protein GREB1 (Gene regulated in breast cancer 1 protein)	w
+GENE	human	Q504U0	C4orf46	Q504U0	12	59	Renal cancer differentiation gene 1 protein	w
+GENE	human	Q53FA7	TP53I3	Q53FA7	3	91	Quinone oxidoreductase PIG3 (EC 1.6.5.5) (NADPH:quinone redu	w
+GENE	human	Q53GA4	PHLDA2	Q53GA4	8	123	Pleckstrin homology-like domain family A member 2 (Beckwith-	w
+GENE	human	Q53HL2	CDCA8	Q53HL2	62	476	Borealin (Cell division cycle-associated protein 8) (Dasra-B	w
+GENE	human	Q53TS8	CATSPERT	Q53TS8	6	73	Cation channel sperm-associated targeting subunit tau (CatSp	w
+GENE	human	Q58A44	PCOTH	Q58A44	0	4	Prostate collagen triple helix protein (C1QTNF9B antisense R	w
+GENE	human	Q5EB52	MEST	Q5EB52	5	91	Mesoderm-specific transcript homolog protein (EC 3.-.-.-) (P	w
+GENE	human	Q5EE01	CENPW	Q5EE01	34	327	Centromere protein W (CENP-W) (Cancer-up-regulated gene 2 pr	w
+GENE	human	Q5J8M3	EMC4	Q5J8M3	8	303	ER membrane protein complex subunit 4 (Cell proliferation-in	w
+GENE	human	Q5JRK9	PAGE2B	Q5JRK9	5	29	Putative G antigen family E member 3 (Prostate-associated ge	w
+GENE	human	Q5JSS6	MEIG1	Q5JSS6	4	50	Meiosis expressed gene 1 protein homolog	w
+GENE	human	Q5JTC6	AMER1	Q5JTC6	37	116	APC membrane recruitment protein 1 (Amer1) (Protein FAM123B)	w
+GENE	human	Q5JUK9	PAGE3	Q5JUK9	1	12	P antigen family member 3 (PAGE-3) (G antigen family D membe	w
+GENE	human	Q5QFB9	PAPPA-AS1	Q5QFB9	0	4	Protein PAPPAS (DIPLA1 antisense RNA 1) (DIPLA1 antisense ge	w
+GENE	human	Q5SR53	PIK3CD-AS1	Q5SR53	1	3	Putative uncharacterized protein PIK3CD-AS1 (PIK3CD antisens	w
+GENE	human	Q5SY13	COL5A1-AS1	Q5SY13	0	5	Putative uncharacterized protein encoded by COL5A1-AS1 (COL5	w
+GENE	human	Q5T0D9	TPRG1L	Q5T0D9	3	20	Tumor protein p63-regulated gene 1-like protein (Mossy fiber	w
+GENE	human	Q5T3Y7	POPDC1-AS1	Q5T3Y7	0	8	Putative uncharacterized protein POPDC1-AS1 (BVES antisense 	w
+GENE	human	Q5T4H9	MIR1915HG	Q5T4H9	0	4	Putative uncharacterized protein encoded by MIR1915-HG (Canc	w
+GENE	human	Q5T5F5	ADAMTSL4-AS1	Q5T5F5	0	6	Uncharacterized protein ADAMTSL4-AS1 (ADAMTSL4 antisense RNA	w
+GENE	human	Q5T953	IER5L	Q5T953	4	9	Immediate early response gene 5-like protein	w
+GENE	human	Q5T9C2	EEIG1	Q5T9C2	11	29	Early estrogen-induced gene 1 protein (EEIG1)	w
+GENE	human	Q5TC04	ATP1A1-AS1	Q5TC04	2	4	Putative uncharacterized protein ATP1A1-AS1 (ATP1A1 antisens	w
+GENE	human	Q5TG53	SERTAD4-AS1	Q5TG53	1	3	Putative uncharacterized protein SERTAD4-AS1 (SERTAD4 antise	w
+GENE	human	Q5TKA1	LIN9	Q5TKA1	113	722	Protein lin-9 homolog (HuLin-9) (hLin-9) (Beta subunit-assoc	w
+GENE	human	Q5VY09	IER5	Q5VY09	7	27	Immediate early response gene 5 protein	w
+GENE	human	Q5W111	SPRYD7	Q5W111	34	430	SPRY domain-containing protein 7 (Chronic lymphocytic leukem	w
+GENE	human	Q64ET8	FRG2	Q64ET8	2	25	Protein FRG2 (FSHD region gene 2 protein)	w
+GENE	human	Q66K80	RUSC1-AS1	Q66K80	0	9	Putative uncharacterized protein RUSC1-AS1 (RUSC1 antisense 	w
+GENE	human	Q674R7	ATG9B	Q674R7	4	58	Autophagy-related protein 9B (APG9-like 2) (Nitric oxide syn	w
+GENE	human	Q69YL0	NCBP2AS2	Q69YL0	4	39	Protein NCBP2AS2 (Hypoxia-induced angiogenesis regulator) (N	w
+GENE	human	Q6AI39	BICRAL	Q6AI39	17	136	BRD4-interacting chromatin-remodeling complex-associated pro	w
+GENE	human	Q6AZY7	SCARA3	Q6AZY7	24	180	Scavenger receptor class A member 3 (Cellular stress respons	w
+GENE	human	Q6DJT9	PLAG1	Q6DJT9	2	28	Zinc finger protein PLAG1 (Pleiomorphic adenoma gene 1 prote	w
+GENE	human	Q6IWH7	ANO7	Q6IWH7	10	86	Anoctamin-7 (Dresden transmembrane protein of the prostate) 	w
+GENE	human	Q6NUM9	RETSAT	Q6NUM9	9	198	All-trans-retinol 13,14-reductase (EC 1.3.99.23) (All-trans-	w
+GENE	human	Q6P1K1	SLC48A1	Q6P1K1	3	57	Heme transporter HRG1 (Heme-responsive gene 1 protein homolo	w
+GENE	human	Q6P1L5	FAM117B	Q6P1L5	28	64	Protein FAM117B (Amyotrophic lateral sclerosis 2 chromosomal	w
+GENE	human	Q6P4E1	GOLM2	Q6P4E1	16	55	Protein GOLM2 (Cancer susceptibility candidate gene 4 protei	w
+GENE	human	Q6PB30	CSAG1	Q6PB30	13	100	Chondrosarcoma-associated gene 1 protein (Cancer/testis anti	w
+GENE	human	Q6PEX7	TEX38	Q6PEX7	5	21	Testis-expressed protein 38 (ATPAF1 antisense RNA 1) (ATPAF1	w
+GENE	human	Q6TDU7	DNAI7	Q6TDU7	2	37	Dynein axonemal intermediate chain 7 (Cancer susceptibility 	w
+GENE	human	Q6U949	IGF2-AS	Q6U949	0	14	Putative insulin-like growth factor 2 antisense gene protein	w
+GENE	human	Q6UXG2	ELAPOR1	Q6UXG2	4	23	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+GENE	human	Q6UXU4	GSG1L	Q6UXU4	11	82	Germ cell-specific gene 1-like protein (GSG1-like protein)	w
+GENE	human	Q6WQI6	HEPN1	Q6WQI6	4	50	Protein HEPN1 (Cancer susceptibility gene HEPN1 protein)	w
+GENE	human	Q6X4U4	SOSTDC1	Q6X4U4	5	47	Sclerostin domain-containing protein 1 (Ectodermal BMP inhib	w
+GENE	human	Q6Y7W6	GIGYF2	Q6Y7W6	53	270	GRB10-interacting GYF protein 2 (PERQ amino acid-rich with G	w
+GENE	human	Q6YHU6	THADA	Q6YHU6	2	129	tRNA (32-2'-O)-methyltransferase regulator THADA (Gene induc	w
+GENE	human	Q6ZS30	NBEAL1	Q6ZS30	5	61	Neurobeachin-like protein 1 (Amyotrophic lateral sclerosis 2	w
+GENE	human	Q6ZSK4	NTM-AS1	Q6ZSK4	0	4	Putative uncharacterized protein NTM-AS1 (NTM antisense RNA 	w
+GENE	human	Q6ZUI0	TPRG1	Q6ZUI0	3	28	Tumor protein p63-regulated gene 1 protein (Protein FAM79B)	w
+GENE	human	Q70E73	RAPH1	Q70E73	66	201	Ras-associated and pleckstrin homology domains-containing pr	w
+GENE	human	Q75NE6	MIR17HG	Q75NE6	0	13	Putative microRNA 17 host gene protein (Putative microRNA ho	w
+GENE	human	Q7L1V2	MON1B	Q7L1V2	25	79	Vacuolar fusion protein MON1 homolog B (HSV-1 stimulation-re	w
+GENE	human	Q7L5Y9	MAEA	Q7L5Y9	24	202	E3 ubiquitin-protein transferase MAEA (EC 2.3.2.27) (Cell pr	w
+GENE	human	Q7LC44	ARC	Q7LC44	6	66	Activity-regulated cytoskeleton-associated protein (hArc) (A	w
+GENE	human	Q7LFX5	CHST15	Q7LFX5	5	91	Carbohydrate sulfotransferase 15 (EC 2.8.2.33) (B-cell RAG-a	w
+GENE	human	Q7Z2R9	SSBP3-AS1	Q7Z2R9	3	10	Putative uncharacterized protein SSBP3-AS1 (SSBP3 antisense 	w
+GENE	human	Q7Z2X7	PAGE2	Q7Z2X7	7	51	P antigen family member 2 (PAGE-2) (G antigen family C 2) (P	w
+GENE	human	Q7Z417	NUFIP2	Q7Z417	83	416	FMR1-interacting protein NUFIP2 (82 kDa FMRP-interacting pro	w
+GENE	human	Q7Z4K8	TRIM46	Q7Z4K8	37	170	Tripartite motif-containing protein 46 (Gene Y protein) (Gen	w
+GENE	human	Q7Z5L4	SPATA19	Q7Z5L4	11	61	Spermatogenesis-associated protein 19, mitochondrial (Sperma	w
+GENE	human	Q7Z628	NET1	Q7Z628	36	148	Neuroepithelial cell-transforming gene 1 protein (Proto-onco	w
+GENE	human	Q7Z769	SLC35E3	Q7Z769	0	49	Solute carrier family 35 member E3 (Bladder cancer-overexpre	w
+GENE	human	Q7Z7A3	CTU1	Q7Z7A3	9	176	Cytoplasmic tRNA 2-thiolation protein 1 (EC 2.7.7.-) (ATP-bi	w
+GENE	human	Q7Z7C7	STRA8	Q7Z7C7	10	73	Stimulated by retinoic acid gene 8 protein homolog	w
+GENE	human	Q7Z7G0	ABI3BP	Q7Z7G0	22	137	Target of Nesh-SH3 (Tarsh) (ABI gene family member 3-binding	w
+GENE	human	Q7Z7J5	DPPA2	Q7Z7J5	18	86	Developmental pluripotency-associated protein 2 (Pluripotent	w
+GENE	human	Q86SY8	KTN1-AS1	Q86SY8	2	8	Putative uncharacterized protein KTN1-AS1 (KTN1 antisense RN	w
+GENE	human	Q86TM3	DDX53	Q86TM3	3	110	Probable ATP-dependent RNA helicase DDX53 (EC 3.6.4.13) (Can	w
+GENE	human	Q86UY5	SACK1A	Q86UY5	20	134	Scaffolding CK1 anchoring protein A (Protein FAM83A) (Tumor 	w
+GENE	human	Q86YD1	PTOV1	Q86YD1	18	88	Prostate tumor-overexpressed gene 1 protein (PTOV-1) (Activa	w
+GENE	human	Q8IU53	CASC2	Q8IU53	7	46	Protein CASC2, isoforms 1/2 (Cancer susceptibility candidate	w
+GENE	human	Q8IUX8	EGFL6	Q8IUX8	12	65	Epidermal growth factor-like protein 6 (EGF-like protein 6) 	w
+GENE	human	Q8IXH6	TP53INP2	Q8IXH6	14	54	Tumor protein p53-inducible nuclear protein 2 (Diabetes and 	w
+GENE	human	Q8IXI1	RHOT2	Q8IXI1	37	354	Mitochondrial Rho GTPase 2 (MIRO-2) (hMiro-2) (EC 3.6.5.-) (	w
+GENE	human	Q8IXI2	RHOT1	Q8IXI2	7	87	Mitochondrial Rho GTPase 1 (MIRO-1) (hMiro-1) (EC 3.6.5.-) (	w
+GENE	human	Q8IXT1	DDIAS	Q8IXT1	13	96	DNA damage-induced apoptosis suppressor protein (Nitric oxid	w
+GENE	human	Q8IYL9	GPR65	Q8IYL9	14	161	G protein-coupled receptor 65 (Psychosine receptor) (T-cell 	w
+GENE	human	Q8IZM0	CNG1O	Q8IZM0	0	1	Putative CNGA1-overlapping antisense gene protein (Anti-CNG1	w
+GENE	human	Q8IZP1	TBC1D3	Q8IZP1	4	22	TBC1 domain family member 3 (Prostate cancer gene 17 protein	w
+GENE	human	Q8IZS5	OFCC1	Q8IZS5	2	5	Orofacial cleft 1 candidate gene 1 protein (Orofacial clefti	w
+GENE	human	Q8N0V1	ZNF295-AS1	Q8N0V1	0	1	Putative uncharacterized protein ZNF295-AS1 (ZNF295 antisens	w
+GENE	human	Q8N123	CPXCR1	Q8N123	1	11	CPX chromosomal region candidate gene 1 protein (Cancer/test	w
+GENE	human	Q8N187	CARF	Q8N187	4	17	Calcium-responsive transcription factor (Amyotrophic lateral	w
+GENE	human	Q8N1D0	SLC67A1-AS	Q8N1D0	0	7	Uncharacterized protein SLC67A1-AS (Beckwith-Wiedemann syndr	w
+GENE	human	Q8N2C9	UMODL1-AS1	Q8N2C9	0	1	Uncharacterized protein UMODL1-AS1 (UMODL1 antisense RNA 1) 	w
+GENE	human	Q8N2X6	EXOC3-AS1	Q8N2X6	2	10	Uncharacterized protein EXOC3-AS1 (EXOC3 antisense RNA 1) (E	w
+GENE	human	Q8N302	AGGF1	Q8N302	31	105	Angiogenic factor with G patch and FHA domains 1 (Angiogenic	w
+GENE	human	Q8N6N3	C1orf52	Q8N6N3	9	58	UPF0690 protein C1orf52 (BCL10-associated gene protein)	w
+GENE	human	Q8N7Q2	CELF2-AS1	Q8N7Q2	0	1	Putative uncharacterized protein CELF2-AS1 (CELF2 antisense 	w
+GENE	human	Q8N7Y1	KIRREL3-AS3	Q8N7Y1	0	8	Putative uncharacterized protein KIRREL3-AS3 (KIRREL3 antise	w
+GENE	human	Q8N801	STPG4	Q8N801	1	33	Protein STPG4 (Gonad-specific expression gene protein) (GSE)	w
+GENE	human	Q8N8E1	MAPKAPK5-AS1	Q8N8E1	1	13	Putative uncharacterized protein encoded by MAPKAPK5-AS1 (MA	w
+GENE	human	Q8NA97	FER1L6-AS1	Q8NA97	0	3	Putative uncharacterized protein FER1L6-AS1 (FER1L6 antisens	w
+GENE	human	Q8NB90	AFG2A	Q8NB90	12	220	ATPase family gene 2 protein homolog A (EC 3.6.4.10) (AFG2 A	w
+GENE	human	Q8NBB2	ST20-AS1	Q8NBB2	1	8	Putative uncharacterized protein ST20-AS1 (ST20 antisense RN	w
+GENE	human	Q8NC38	ZNF436-AS1	Q8NC38	1	12	Putative uncharacterized protein ZNF436-AS1 (ZNF436 antisens	w
+GENE	human	Q8NCD3	HJURP	Q8NCD3	77	604	Holliday junction recognition protein (14-3-3-associated AKT	w
+GENE	human	Q8NCQ2	CSNK1G2-AS1	Q8NCQ2	1	7	Uncharacterized protein CSNK1G2-AS1 (CSNK1G2 antisense RNA 1	w
+GENE	human	Q8ND04	SMG8	Q8ND04	17	151	Nonsense-mediated mRNA decay factor SMG8 (Amplified in breas	w
+GENE	human	Q8ND25	ZNRF1	Q8ND25	19	51	E3 ubiquitin-protein ligase ZNRF1 (EC 2.3.2.27) (Nerve injur	w
+GENE	human	Q8NDH6	ICA1L	Q8NDH6	8	36	Islet cell autoantigen 1-like protein (Amyotrophic lateral s	w
+GENE	human	Q8NDN9	RCBTB1	Q8NDN9	7	68	RCC1 and BTB domain-containing protein 1 (Chronic lymphocyti	w
+GENE	human	Q8NDV7	TNRC6A	Q8NDV7	60	280	Trinucleotide repeat-containing gene 6A protein (CAG repeat 	w
+GENE	human	Q8NEY3	SPATA4	Q8NEY3	10	71	Spermatogenesis-associated protein 4 (Testis and spermatogen	w
+GENE	human	Q8NFJ5	GPRC5A	Q8NFJ5	17	127	Retinoic acid-induced protein 3 (G protein-coupled receptor 	w
+GENE	human	Q8NFJ8	BHLHE22	Q8NFJ8	118	363	Class E basic helix-loop-helix protein 22 (bHLHe22) (Class B	w
+GENE	human	Q8NG31	KNL1	Q8NG31	93	676	Outer kinetochore KNL1 complex subunit KNL1 (ALL1-fused gene	w
+GENE	human	Q8NHV9	RHOXF1	Q8NHV9	65	356	Rhox homeobox family member 1 (Ovary-, testis- and epididymi	w
+GENE	human	Q8NHW4	CCL4L1	Q8NHW4	107	567	C-C motif chemokine 4-like (Lymphocyte activation gene 1 pro	w
+GENE	human	Q8TBA6	GOLGA5	Q8TBA6	45	234	Golgin subfamily A member 5 (Cell proliferation-inducing gen	w
+GENE	human	Q8TBR5	CIRBP-AS1	Q8TBR5	0	3	Putative uncharacterized protein CIRBP-AS1 (CIRBP antisense 	w
+GENE	human	Q8TC20	CAGE1	Q8TC20	14	58	Cancer-associated gene 1 protein (CAGE-1) (Cancer/testis ant	w
+GENE	human	Q8TC36	SUN5	Q8TC36	4	50	SUN domain-containing protein 5 (Sad1 and UNC84 domain-conta	w
+GENE	human	Q8TCV5	WFDC5	Q8TCV5	6	28	WAP four-disulfide core domain protein 5 (Putative protease 	w
+GENE	human	Q8TCY9	URGCP	Q8TCY9	0	45	Up-regulator of cell proliferation (HBV X protein up-regulat	w
+GENE	human	Q8TD10	MIPOL1	Q8TD10	13	128	Mirror-image polydactyly gene 1 protein	w
+GENE	human	Q8TD26	CHD6	Q8TD26	4	64	ATP-dependent chromatin remodeler CHD6 (EC 3.6.4.-) (Chromo 	w
+GENE	human	Q8TD31	CCHCR1	Q8TD31	60	242	Coiled-coil alpha-helical rod protein 1 (Alpha-helical coile	w
+GENE	human	Q8TEB7	RNF128	Q8TEB7	92	462	E3 ubiquitin-protein ligase RNF128 (EC 2.3.2.27) (Gene relat	w
+GENE	human	Q8TEV9	SMCR8	Q8TEV9	26	218	Guanine nucleotide exchange protein SMCR8 (Smith-Magenis syn	w
+GENE	human	Q8TEW8	PARD3B	Q8TEW8	47	144	Partitioning defective 3 homolog B (Amyotrophic lateral scle	w
+GENE	human	Q8TF76	HASPIN	Q8TF76	33	216	Serine/threonine-protein kinase haspin (EC 2.7.11.1) (Germ c	w
+GENE	human	Q8WTP9	XAGE3	Q8WTP9	10	70	X antigen family member 3 (XAGE-3) (Cancer/testis antigen 12	w
+GENE	human	Q8WTW4	NPRL2	Q8WTW4	29	464	GATOR1 complex protein NPRL2 (Gene 21 protein) (G21 protein)	w
+GENE	human	Q8WUA8	TSKU	Q8WUA8	7	69	Tsukushi (E2-induced gene 4 protein) (Leucine-rich repeat-co	w
+GENE	human	Q8WUU5	GATAD1	Q8WUU5	36	196	GATA zinc finger domain-containing protein 1 (Ocular develop	w
+GENE	human	Q8WUY9	DEPDC1B	Q8WUY9	97	349	DEP domain-containing protein 1B (HBV X-transactivated gene 	w
+GENE	human	Q8WVP7	LMBR1	Q8WVP7	9	119	Limb region 1 protein homolog (Differentiation-related gene 	w
+GENE	human	Q8WXC6	COPS9	Q8WXC6	7	59	COP9 signalosome complex subunit 9 (CSN acidic protein) (CSN	w
+GENE	human	Q8WXG1	RSAD2	Q8WXG1	14	118	S-adenosylmethionine-dependent nucleotide dehydratase RSAD2 	w
+GENE	human	Q8WXH2	JPH3	Q8WXH2	12	95	Junctophilin-3 (JP-3) (Junctophilin type 3) (Trinucleotide r	w
+GENE	human	Q8WXU2	DNAAF4	Q8WXU2	14	79	Dynein axonemal assembly factor 4 (Dyslexia susceptibility 1	w
+GENE	human	Q8WXX7	AUTS2	Q8WXX7	27	85	Autism susceptibility gene 2 protein	w
+GENE	human	Q8WZ82	OVCA2	Q8WZ82	4	45	Esterase OVCA2 (EC 3.1.1.1) (OVCA2 serine hydrolase domain-c	w
+GENE	human	Q8WZA8	GCRG224	Q8WZA8	2	4	Putative gastric cancer-related gene 224 protein (GCRG-224) 	w
+GENE	human	Q92504	SLC39A7	Q92504	6	176	Zinc transporter SLC39A7 (Histidine-rich membrane protein Ke	w
+GENE	human	Q92537	SUSD6	Q92537	17	56	Sushi domain-containing protein 6 (Drug-activated gene overe	w
+GENE	human	Q92597	NDRG1	Q92597	36	374	Protein NDRG1 (Differentiation-related gene 1 protein) (DRG-	w
+GENE	human	Q92626	PXDN	Q92626	36	426	Peroxidasin homolog (EC 1.11.2.-) (Melanoma-associated antig	w
+GENE	human	Q92733	PRCC	Q92733	12	131	Proline-rich protein PRCC (Papillary renal cell carcinoma tr	w
+GENE	human	Q92734	TFG	Q92734	31	306	Protein TFG (TRK-fused gene protein)	w
+GENE	human	Q969G5	CAVIN3	Q969G5	31	181	Caveolae-associated protein 3 (Cavin-3) (Protein kinase C de	w
+GENE	human	Q96A26	FAM162A	Q96A26	40	150	Protein FAM162A (E2-induced gene 5 protein) (Growth and tran	w
+GENE	human	Q96A47	ISL2	Q96A47	57	397	Insulin gene enhancer protein ISL-2 (Islet-2)	w
+GENE	human	Q96AC1	FERMT2	Q96AC1	27	280	Fermitin family homolog 2 (Kindlin-2) (Mitogen-inducible gen	w
+GENE	human	Q96AM1	MRGPRF	Q96AM1	5	79	Mas-related G protein-coupled receptor member F (Mas-related	w
+GENE	human	Q96AY4	TTC28	Q96AY4	12	99	Tetratricopeptide repeat protein 28 (TPR repeat protein 28) 	w
+GENE	human	Q96AZ6	ISG20	Q96AZ6	8	113	Interferon-stimulated gene 20 kDa protein (EC 3.1.13.1) (Est	w
+GENE	human	Q96BI1	SLC67A1	Q96BI1	10	129	Solute carrier family 67 member A1 (Beckwith-Wiedemann syndr	w
+GENE	human	Q96BM0	IFI27L1	Q96BM0	5	122	Interferon alpha-inducible protein 27-like protein 1 (Interf	w
+GENE	human	Q96BY9	SARAF	Q96BY9	18	216	Store-operated calcium entry-associated regulatory factor (S	w
+GENE	human	Q96C90	PPP1R14B	Q96C90	17	71	Protein phosphatase 1 regulatory subunit 14B (Phospholipase 	w
+GENE	human	Q96DN2	VWCE	Q96DN2	11	138	von Willebrand factor C and EGF domain-containing protein (H	w
+GENE	human	Q96DZ1	ERLEC1	Q96DZ1	17	173	Endoplasmic reticulum lectin 1 (ER lectin) (Erlectin) (XTP3-	w
+GENE	human	Q96DZ7	TM4SF19	Q96DZ7	10	118	Transmembrane 4 L6 family member 19 (Osteoclast maturation-a	w
+GENE	human	Q96EA4	SPDL1	Q96EA4	71	517	Protein Spindly (hSpindly) (Arsenite-related gene 1 protein)	w
+GENE	human	Q96EB1	ELP4	Q96EB1	32	507	Elongator complex protein 4 (hELP4) (PAX6 neighbor gene prot	w
+GENE	human	Q96EZ4	MYEOV	Q96EZ4	1	29	Myeloma-overexpressed gene protein (Oncogene in multiple mye	w
+GENE	human	Q96FM1	PGAP3	Q96FM1	1	33	GPI-specific phospholipase A2-like PGAP3 (EC 3.1.1.-) (COS16	w
+GENE	human	Q96FQ6	S100A16	Q96FQ6	50	440	Protein S100-A16 (Aging-associated gene 13 protein) (Protein	w
+GENE	human	Q96G23	CERS2	Q96G23	40	571	Ceramide synthase 2 (CerS2) (LAG1 longevity assurance homolo	w
+GENE	human	Q96GU1	PAGE5	Q96GU1	15	95	P antigen family member 5 (PAGE-5) (Cancer/testis antigen 16	w
+GENE	human	Q96HZ7	URB1-DT	Q96HZ7	0	4	Putative uncharacterized protein URB1-DT (URB1 antisense RNA	w
+GENE	human	Q96IP4	TENT5A	Q96IP4	20	125	Terminal nucleotidyltransferase 5A (EC 2.7.7.19) (HBV X-tran	w
+GENE	human	Q96IT6	ARHGAP5-AS1	Q96IT6	5	11	Putative uncharacterized protein ARHGAP5-AS1 (ARHGAP5 antise	w
+GENE	human	Q96JB3	HIC2	Q96JB3	25	85	Hypermethylated in cancer 2 protein (Hic-2) (HIC1-related ge	w
+GENE	human	Q96JB8	MPP4	Q96JB8	13	65	MAGUK p55 subfamily member 4 (Amyotrophic lateral sclerosis 	w
+GENE	human	Q96JE7	SEC16B	Q96JE7	7	61	Protein transport protein Sec16B (Leucine zipper transcripti	w
+GENE	human	Q96JN2	CCDC136	Q96JN2	46	237	Coiled-coil domain-containing protein 136 (Nasopharyngeal ca	w
+GENE	human	Q96KF2	PRAC1	Q96KF2	10	42	Small nuclear protein PRAC1 (Prostate cancer susceptibility 	w
+GENE	human	Q96KP6	TNIP3	Q96KP6	12	55	TNFAIP3-interacting protein 3 (A20-binding inhibitor of NF-k	w
+GENE	human	Q96KT0	FAM167A-AS1	Q96KT0	1	6	Uncharacterized protein FAM167A-AS1 (FAM167A antisense RNA 1	w
+GENE	human	Q96L91	EP400	Q96L91	19	392	E1A-binding protein p400 (EC 3.6.4.-) (CAG repeat protein 32	w
+GENE	human	Q96LB3	IFT74	Q96LB3	53	159	Intraflagellar transport protein 74 homolog (Capillary morph	w
+GENE	human	Q96LD4	TRIM47	Q96LD4	40	111	E3 ubiquitin-protein ligase TRIM47 (EC 2.3.2.27) (Gene overe	w
+GENE	human	Q96LR9	APOLD1	Q96LR9	2	37	Apolipoprotein L domain-containing protein 1 (Vascular early	w
+GENE	human	Q96M15	IGF2BP2-AS1	Q96M15	0	1	Putative uncharacterized protein IGF2BP2-AS1 (IGF2BP2 antise	w
+GENE	human	Q96M78	FER1L6-AS2	Q96M78	0	3	Putative uncharacterized protein encoded by FER1L6-AS2 (FER1	w
+GENE	human	Q96M98	PACRG	Q96M98	14	182	Parkin coregulated gene protein (Molecular chaperone/chapero	w
+GENE	human	Q96NR7	WWC2-AS2	Q96NR7	0	13	Putative uncharacterized protein WWC2-AS2 (WWC2 antisense RN	w
+GENE	human	Q96PP4	TSGA13	Q96PP4	8	72	Testis-specific gene 13 protein	w
+GENE	human	Q96PS6	GAFA1	Q96PS6	3	8	Putative uncharacterized protein GAFA-1 (Gene associated wit	w
+GENE	human	Q96Q05	TRAPPC9	Q96Q05	23	156	Trafficking protein particle complex subunit 9 (NIK- and IKB	w
+GENE	human	Q96Q35	FLACC1	Q96Q35	6	49	Flagellum-associated coiled-coil domain-containing protein 1	w
+GENE	human	Q96Q40	CDK15	Q96Q40	167	1382	Cyclin-dependent kinase 15 (EC 2.7.11.22) (Amyotrophic later	w
+GENE	human	Q96Q42	ALS2	Q96Q42	8	49	Alsin (Amyotrophic lateral sclerosis 2 chromosomal region ca	w
+GENE	human	Q96Q45	TMEM237	Q96Q45	20	237	Transmembrane protein 237 (Amyotrophic lateral sclerosis 2 c	w
+GENE	human	Q96QE3	ATAD5	Q96QE3	25	228	ATPase family AAA domain-containing protein 5 (Chromosome fr	w
+GENE	human	Q96QU4	FRG2B	Q96QU4	3	45	Protein FRG2-like-1 (FSHD region gene 2 protein family membe	w
+GENE	human	Q96RU8	TRIB1	Q96RU8	62	223	Tribbles homolog 1 (TRB-1) (G protein-coupled receptor-induc	w
+GENE	human	Q96S65	CSRNP1	Q96S65	8	25	Cysteine/serine-rich nuclear protein 1 (CSRNP-1) (Axin-1 up-	w
+GENE	human	Q96T68	SETDB2	Q96T68	18	86	Histone-lysine N-methyltransferase SETDB2 (EC 2.1.1.366) (Ch	w
+GENE	human	Q99674	CGREF1	Q99674	15	45	Cell growth regulator with EF hand domain protein 1 (Cell gr	w
+GENE	human	Q99675	CGRRF1	Q99675	30	121	Cell growth regulator with RING finger domain protein 1 (Cel	w
+GENE	human	Q99700	ATXN2	Q99700	84	368	Ataxin-2 (Spinocerebellar ataxia type 2 protein) (Trinucleot	w
+GENE	human	Q99720	SIGMAR1	Q99720	5	235	Sigma non-opioid intracellular receptor 1 (Aging-associated 	w
+GENE	human	Q99816	TSG101	Q99816	52	397	Tumor susceptibility gene 101 protein (ESCRT-I complex subun	w
+GENE	human	Q99961	SH3GL1	Q99961	31	268	Endophilin-A2 (EEN fusion partner of MLL) (Endophilin-2) (Ex	w
+GENE	human	Q99969	RARRES2	Q99969	32	269	Retinoic acid receptor responder protein 2 (Chemerin) (RAR-r	w
+GENE	human	Q99988	GDF15	Q99988	38	255	Growth/differentiation factor 15 (GDF-15) (Macrophage inhibi	w
+GENE	human	Q9BQ08	RETNLB	Q9BQ08	39	559	Resistin-like beta (Colon and small intestine-specific cyste	w
+GENE	human	Q9BQY4	RHOXF2	Q9BQY4	23	125	Rhox homeobox family member 2 (Paired-like homeobox protein 	w
+GENE	human	Q9BR10	SPATA25	Q9BR10	7	43	Spermatogenesis-associated protein 25 (Testis-specific gene 	w
+GENE	human	Q9BRT3	MIEN1	Q9BRT3	13	61	Migration and invasion enhancer 1 (HBV X-transactivated gene	w
+GENE	human	Q9BSJ5	MTNAP1	Q9BSJ5	20	335	Mitochondrial nucleoid-associated protein 1 (Cell migration-	w
+GENE	human	Q9BT09	CNPY3	Q9BT09	21	202	Protein canopy homolog 3 (CTG repeat protein 4a) (Expanded r	w
+GENE	human	Q9BTL4	IER2	Q9BTL4	19	74	Immediate early response gene 2 protein (Protein ETR101)	w
+GENE	human	Q9BTT4	MED10	Q9BTT4	43	623	Mediator of RNA polymerase II transcription subunit 10 (Medi	w
+GENE	human	Q9BUR4	WRAP53	Q9BUR4	9	169	Telomerase Cajal body protein 1 (WD repeat-containing protei	w
+GENE	human	Q9BUZ4	TRAF4	Q9BUZ4	34	350	TNF receptor-associated factor 4 (EC 2.3.2.27) (Cysteine-ric	w
+GENE	human	Q9BVP2	GNL3	Q9BVP2	65	597	Guanine nucleotide-binding protein-like 3 (E2-induced gene 3	w
+GENE	human	Q9BVQ7	AFG2B	Q9BVQ7	5	273	ATPase family gene 2 protein homolog B (EC 3.6.4.10) (AFG2 A	w
+GENE	human	Q9BW04	SARG	Q9BW04	11	48	Specifically androgen-regulated gene protein	w
+GENE	human	Q9BWJ2	RHPN1-AS1	Q9BWJ2	0	9	Putative uncharacterized protein encoded by RHPN1-AS1 (RHPN1	w
+GENE	human	Q9BX79	STRA6	Q9BX79	8	78	Receptor for retinol uptake STRA6 (Retinol-binding protein r	w
+GENE	human	Q9BXL5	HEMGN	Q9BXL5	19	94	Hemogen (Erythroid differentiation-associated gene protein) 	w
+GENE	human	Q9BXW3	SNHG12	Q9BXW3	1	9	Putative uncharacterized protein SNHG12 (Transformation-rela	w
+GENE	human	Q9BY14	TEX101	Q9BY14	53	426	Testis-expressed protein 101 (Cell surface receptor NYD-SP8)	w
+GENE	human	Q9BYV8	CEP41	Q9BYV8	9	53	Centrosomal protein of 41 kDa (Cep41) (Testis-specific gene 	w
+GENE	human	Q9BYZ6	RHOBTB2	Q9BYZ6	54	380	Rho-related BTB domain-containing protein 2 (EC 3.6.5.2) (De	w
+GENE	human	Q9BZE4	GTPBP4	Q9BZE4	32	759	GTP-binding protein 4 (Chronic renal failure gene protein) (	w
+GENE	human	Q9BZE9	ASPSCR1	Q9BZE9	13	120	Tether containing UBX domain for GLUT4 (Alveolar soft part s	w
+GENE	human	Q9BZQ8	NIBAN1	Q9BZQ8	21	397	Protein Niban 1 (Cell growth-inhibiting gene 39 protein) (Pr	w
+GENE	human	Q9BZW7	TSGA10	Q9BZW7	38	131	Testis-specific gene 10 protein (Testis development protein 	w
+GENE	human	Q9BZZ5	API5	Q9BZZ5	48	345	Apoptosis inhibitor 5 (API-5) (Antiapoptosis clone 11 protei	w
+GENE	human	Q9C002	COXFA4L3	Q9C002	41	277	Cytochrome c oxidase associated subunit FA4L3 (Modulator of 	w
+GENE	human	Q9C0K0	BCL11B	Q9C0K0	46	196	B-cell lymphoma/leukemia 11B (BCL-11B) (B-cell CLL/lymphoma 	w
+GENE	human	Q9C0K7	STRADB	Q9C0K7	14	93	STE20-related kinase adapter protein beta (STRAD beta) (Amyo	w
+GENE	human	Q9GZM7	TINAGL1	Q9GZM7	7	94	Tubulointerstitial nephritis antigen-like (Glucocorticoid-in	w
+GENE	human	Q9GZP7	VN1R1	Q9GZP7	4	38	Vomeronasal type-1 receptor 1 (G protein-coupled receptor GP	w
+GENE	human	Q9GZQ3	COMMD5	Q9GZQ3	37	312	COMM domain-containing protein 5 (Hypertension-related calci	w
+GENE	human	Q9GZT8	NIF3L1	Q9GZT8	1	193	NIF3-like protein 1 (Amyotrophic lateral sclerosis 2 chromos	w
+GENE	human	Q9GZU0	C6orf62	Q9GZU0	3	42	Uncharacterized protein C6orf62 (HBV X-transactivated gene 1	w
+GENE	human	Q9GZU2	PEG3	Q9GZU2	19	110	Paternally-expressed gene 3 protein (Zinc finger and SCAN do	w
+GENE	human	Q9GZY1	PBOV1	Q9GZY1	3	16	Prostate and breast cancer overexpressed gene 1 protein (Pro	w
+GENE	human	Q9H1A4	ANAPC1	Q9H1A4	18	481	Anaphase-promoting complex subunit 1 (APC1) (Cyclosome subun	w
+GENE	human	Q9H1L0	MIR1-1HG	Q9H1L0	1	7	Uncharacterized protein MIR1-1HG (MIR1-1 host gene protein)	w
+GENE	human	Q9H1Z8	ECRG4	Q9H1Z8	4	97	Augurin (Esophageal cancer-related gene 4 protein) (ECRG4)	w
+GENE	human	Q9H246	C1orf21	Q9H246	16	63	Uncharacterized protein C1orf21 (Cell proliferation-inducing	w
+GENE	human	Q9H252	KCNH6	Q9H252	25	90	Voltage-gated inwardly rectifying potassium channel KCNH6 (E	w
+GENE	human	Q9H2J1	ARRDC1-AS1	Q9H2J1	5	9	Uncharacterized protein ARRDC1-AS1 (ARRDC1 antisense RNA 1) 	w
+GENE	human	Q9H2X8	IFI27L2	Q9H2X8	2	36	Interferon alpha-inducible protein 27-like protein 2 (Interf	w
+GENE	human	Q9H3R0	KDM4C	Q9H3R0	35	217	Lysine-specific demethylase 4C (EC 1.14.11.66) (Gene amplifi	w
+GENE	human	Q9H4X1	RGCC	Q9H4X1	17	118	Regulator of cell cycle RGCC (Response gene to complement 32	w
+GENE	human	Q9H741	SPRING1	Q9H741	20	261	SREBP regulating gene protein (SREBF pathway regulator in Go	w
+GENE	human	Q9H773	DCTPP1	Q9H773	6	100	dCTP pyrophosphatase 1 (EC 3.6.1.12) (Deoxycytidine-triphosp	w
+GENE	human	Q9H7H0	METTL17	Q9H7H0	30	436	Ribosome assembly protein METTL17, mitochondrial (False p73 	w
+GENE	human	Q9H7V2	SYNDIG1	Q9H7V2	8	172	Synapse differentiation-inducing gene protein 1 (SynDIG1) (D	w
+GENE	human	Q9H8N7	ZNF395	Q9H8N7	180	479	Zinc finger protein 395 (HD-regulating factor 2) (HDRF-2) (H	w
+GENE	human	Q9H8Q6	HEXA-AS1	Q9H8Q6	0	1	Putative uncharacterized protein encoded by HEXA-AS1 (HEXA a	w
+GENE	human	Q9HA38	ZMAT3	Q9HA38	3	57	Zinc finger matrin-type protein 3 (Zinc finger protein WIG-1	w
+GENE	human	Q9HBA9	FOLH1B	Q9HBA9	5	24	Putative N-acetylated-alpha-linked acidic dipeptidase (NAALA	w
+GENE	human	Q9HBF5	ST20	Q9HBF5	4	44	Suppressor of tumorigenicity 20 protein (Human cervical canc	w
+GENE	human	Q9HBW1	LRRC4	Q9HBW1	21	100	Leucine-rich repeat-containing protein 4 (Brain tumor-associ	w
+GENE	human	Q9HBX3	SND1-IT1	Q9HBX3	2	6	Uncharacterized protein encoded by SND1-IT1 (Brain and nasop	w
+GENE	human	Q9HCJ0	TNRC6C	Q9HCJ0	23	162	Trinucleotide repeat-containing gene 6C protein	w
+GENE	human	Q9HCM7	FBRSL1	Q9HCM7	32	92	Fibrosin-1-like protein (AUTS2-like protein) (HBV X-transact	w
+GENE	human	Q9HD87	C6orf50	Q9HD87	0	16	Putative uncharacterized protein C6orf50 (Nasopharyngeal car	w
+GENE	human	Q9NP79	VTA1	Q9NP79	27	156	Vacuolar protein sorting-associated protein VTA1 homolog (Do	w
+GENE	human	Q9NPD8	UBE2T	Q9NPD8	71	272	Ubiquitin-conjugating enzyme E2 T (EC 2.3.2.23) (Cell prolif	w
+GENE	human	Q9NQ31	AKIP1	Q9NQ31	5	40	A-kinase-interacting protein 1 (Breast cancer-associated gen	w
+GENE	human	Q9NQ84	GPRC5C	Q9NQ84	13	165	G protein-coupled receptor family C group 5 member C (Retino	w
+GENE	human	Q9NQQ7	SLC35H1	Q9NQQ7	9	112	Solute carrier family 35 member H1 (Ovarian cancer-overexpre	w
+GENE	human	Q9NR83	SLC2A4RG	Q9NR83	147	459	SLC2A4 regulator (GLUT4 enhancer factor) (GEF) (Huntington d	w
+GENE	human	Q9NRQ2	PLSCR4	Q9NRQ2	4	102	Phospholipid scramblase 4 (PL scramblase 4) (Ca(2+)-dependen	w
+GENE	human	Q9NS40	KCNH7	Q9NS40	35	132	Voltage-gated inwardly rectifying potassium channel KCNH7 (E	w
+GENE	human	Q9NSY0	NRBP2	Q9NSY0	31	207	Nuclear receptor-binding protein 2 (Transformation-related g	w
+GENE	human	Q9NTK1	DEPP1	Q9NTK1	4	29	Protein DEPP1 (Decidual protein induced by progesterone) (Fa	w
+GENE	human	Q9NUQ3	TXLNG	Q9NUQ3	32	105	Gamma-taxilin (Environmental lipopolysaccharide-responding g	w
+GENE	human	Q9NVV5	AIG1	Q9NVV5	5	85	Androgen-induced gene 1 protein (AIG-1) (Fatty acid esters o	w
+GENE	human	Q9NX65	ZSCAN32	Q9NX65	37	55	Zinc finger and SCAN domain-containing protein 32 (Human cer	w
+GENE	human	Q9NYF0	DACT1	Q9NYF0	26	98	Dapper homolog 1 (hDPR1) (Dapper antagonist of catenin 1) (H	w
+GENE	human	Q9NYJ1	COA4	Q9NYJ1	11	66	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	w
+GENE	human	Q9NYL2	MAP3K20	Q9NYL2	18	146	Mitogen-activated protein kinase kinase kinase 20 (EC 2.7.11	w
+GENE	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
+GENE	human	Q9NZ09	UBAP1	Q9NZ09	22	92	Ubiquitin-associated protein 1 (UBAP-1) (Nasopharyngeal carc	w
+GENE	human	Q9NZ38	IDI2-AS1	Q9NZ38	0	1	Uncharacterized protein IDI2-AS1 (IDI2 antisense RNA 1) (IDI	w
+GENE	human	Q9NZB8	MOCS1	Q9NZB8	9	131	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	w
+GENE	human	Q9NZF1	PLAC8	Q9NZF1	5	42	Placenta-specific gene 8 protein (Protein C15)	w
+GENE	human	Q9NZH0	GPRC5B	Q9NZH0	19	163	G protein-coupled receptor family C group 5 member B (A-69G1	w
+GENE	human	Q9NZH4	PTTG3P	Q9NZH4	0	8	Putative pituitary tumor-transforming gene 3 protein (hPTTG3	w
+GENE	human	Q9NZH5	PTTG2	Q9NZH5	3	26	Securin-2 (Pituitary tumor-transforming gene 2 protein)	w
+GENE	human	Q9NZM4	BICRA	Q9NZM4	28	214	BRD4-interacting chromatin-remodeling complex-associated pro	w
+GENE	human	Q9NZM5	NOP53	Q9NZM5	62	545	Ribosome biogenesis protein NOP53 (Glioma tumor suppressor c	w
+GENE	human	Q9NZQ8	TRPM5	Q9NZQ8	10	86	Transient receptor potential cation channel subfamily M memb	w
+GENE	human	Q9P0J0	NDUFA13	Q9P0J0	29	387	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+GENE	human	Q9P1G2	RBM12B-AS1	Q9P1G2	0	6	Putative uncharacterized protein encoded by RBM12B-AS1 (RBM1	w
+GENE	human	Q9P1J3	DHRS4-AS1	Q9P1J3	0	2	Putative uncharacterized protein DHRS4-AS1 (DHRS4 antisense 	w
+GENE	human	Q9P243	ZFAT	Q9P243	4	54	Zinc finger protein ZFAT (Zinc finger gene in AITD susceptib	w
+GENE	human	Q9P2A4	ABI3	Q9P2A4	45	142	ABI gene family member 3 (New molecule including SH3) (Nesh)	w
+GENE	human	Q9P2S5	WRAP73	Q9P2S5	25	179	WD repeat-containing protein WRAP73 (WD repeat-containing pr	w
+GENE	human	Q9P2T0	SPMAP2	Q9P2T0	2	20	Sperm microtubule associated protein 2 (Cancer/testis antige	w
+GENE	human	Q9P2W9	STX18	Q9P2W9	68	196	Syntaxin-18 (Cell growth-inhibiting gene 9 protein)	w
+GENE	human	Q9P2X3	IMPACT	Q9P2X3	12	217	Protein IMPACT (Imprinted and ancient gene protein homolog)	w
+GENE	human	Q9P2Y5	UVRAG	Q9P2Y5	35	147	UV radiation resistance-associated gene protein (p63)	w
+GENE	human	Q9UBC1	NFKBIL1	Q9UBC1	26	176	NF-kappa-B inhibitor-like protein 1 (Inhibitor of kappa B-li	w
+GENE	human	Q9UBP8	KAAG1	Q9UBP8	5	33	Kidney-associated antigen 1 (RU2 antisense gene protein)	w
+GENE	human	Q9UBQ5	EIF3K	Q9UBQ5	19	301	Eukaryotic translation initiation factor 3 subunit K (eIF3k)	w
+GENE	human	Q9UBU8	MORF4L1	Q9UBU8	101	615	Mortality factor 4-like protein 1 (MORF-related gene 15 prot	w
+GENE	human	Q9UGV2	NDRG3	Q9UGV2	8	77	Protein NDRG3 (N-myc downstream-regulated gene 3 protein)	w
+GENE	human	Q9UH64	CDKN2A-AS1	Q9UH64	3	4	Putative uncharacterized protein CDKN2A-AS1 (CDKN2A antisens	w
+GENE	human	Q9UHB7	AFF4	Q9UHB7	81	248	AF4/FMR2 family member 4 (ALL1-fused gene from chromosome 5q	w
+GENE	human	Q9UID3	VPS51	Q9UID3	26	232	Vacuolar protein sorting-associated protein 51 homolog (Anot	w
+GENE	human	Q9UIG4	PSORS1C2	Q9UIG4	6	78	Psoriasis susceptibility 1 candidate gene 2 protein (Protein	w
+GENE	human	Q9UIG5	PSORS1C1	Q9UIG5	6	53	Psoriasis susceptibility 1 candidate gene 1 protein (Protein	w
+GENE	human	Q9UJ90	KCNE5	Q9UJ90	14	70	Potassium voltage-gated channel subfamily E regulatory beta 	w
+GENE	human	Q9UJM3	ERRFI1	Q9UJM3	44	146	ERBB receptor feedback inhibitor 1 (Mitogen-inducible gene 6	w
+GENE	human	Q9UJS0	SLC25A13	Q9UJS0	8	277	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	w
+GENE	human	Q9UJY1	HSPB8	Q9UJY1	29	256	Heat shock protein beta-8 (HspB8) (Alpha-crystallin C chain)	w
+GENE	human	Q9ULP0	NDRG4	Q9ULP0	13	113	Protein NDRG4 (Brain development-related molecule 1) (N-myc 	w
+GENE	human	Q9ULZ0	TP53TG3	Q9ULZ0	0	7	TP53-target gene 3 protein (TP53-inducible gene 3 protein)	w
+GENE	human	Q9UM22	EPDR1	Q9UM22	13	164	Mammalian ependymin-related protein 1 (MERP-1) (Upregulated 	w
+GENE	human	Q9UN36	NDRG2	Q9UN36	12	162	Protein NDRG2 (N-myc downstream-regulated gene 2 protein) (P	w
+GENE	human	Q9UNF1	MAGED2	Q9UNF1	48	258	Melanoma-associated antigen D2 (11B6) (Breast cancer-associa	w
+GENE	human	Q9UPN9	TRIM33	Q9UPN9	96	588	E3 ubiquitin-protein ligase TRIM33 (EC 2.3.2.27) (Ectodermin	w
+GENE	human	Q9UPQ9	TNRC6B	Q9UPQ9	62	292	Trinucleotide repeat-containing gene 6B protein	w
+GENE	human	Q9Y241	HIGD1A	Q9Y241	49	172	HIG1 domain family member 1A, mitochondrial (Hypoxia-inducib	w
+GENE	human	Q9Y2B4	TP53TG5	Q9Y2B4	2	10	TP53-target gene 5 protein (TP53-inducible gene 5 protein)	w
+GENE	human	Q9Y2G1	MYRF	Q9Y2G1	12	45	Myelin regulatory factor (EC 3.4.-.-) (Myelin gene regulator	w
+GENE	human	Q9Y2H6	FNDC3A	Q9Y2H6	25	295	Fibronectin type-III domain-containing protein 3A (Human gen	w
+GENE	human	Q9Y320	TMX2	Q9Y320	15	253	Thioredoxin-related transmembrane protein 2 (Cell proliferat	w
+GENE	human	Q9Y421	FAM32A	Q9Y421	21	243	Protein FAM32A (Ovarian tumor-associated gene 12) (OTAG-12)	w
+GENE	human	Q9Y4A0	JRKL	Q9Y4A0	3	18	Jerky protein homolog-like (Human homolog of mouse jerky gen	w
+GENE	human	Q9Y4X0	AMMECR1	Q9Y4X0	25	89	Nuclear protein AMMECR1 (AMME syndrome candidate gene 1 prot	w
+GENE	human	Q9Y512	SAMM50	Q9Y512	11	201	Sorting and assembly machinery component 50 homolog (Transfo	w
+GENE	human	Q9Y520	PRRC2C	Q9Y520	47	233	Protein PRRC2C (BAT2 domain-containing protein 1) (HBV X-tra	w
+GENE	human	Q9Y5L2	HILPDA	Q9Y5L2	15	118	Hypoxia-inducible lipid droplet-associated protein (Hypoxia-	w
+GENE	human	Q9Y5P2	CSAG2	Q9Y5P2	1	90	Chondrosarcoma-associated gene 2/3 protein (Cancer/testis an	w
+GENE	human	Q9Y5T4	DNAJC15	Q9Y5T4	18	222	DnaJ homolog subfamily C member 15 (Cell growth-inhibiting g	w
+GENE	human	Q9Y5U2	TSSC4	Q9Y5U2	21	135	U5 small nuclear ribonucleoprotein TSSC4 (Tumor-suppressing 	w
+GENE	human	Q9Y5U4	INSIG2	Q9Y5U4	8	210	Insulin-induced gene 2 protein (INSIG-2)	w
+GENE	human	Q9Y6C7	LINC00312	Q9Y6C7	0	12	Putative uncharacterized protein encoded by LINC00312 (Loss 	w
+GENE	human	Q9Y6H1	CHCHD2	Q9Y6H1	43	324	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
+GENE	human	Q9Y6J3	SMAD5-AS1	Q9Y6J3	1	6	SMAD5 antisense gene protein 1 (10.3 kDa proline-rich protei	w
+GENE	human	Q9Y6Z4	KIF25-AS1	Q9Y6Z4	0	2	Putative uncharacterized protein KIF25-AS1 (KIF25 antisense 	w
+GENE	virus	A0A068EF54	pepv_051	A0A068EF54	6	240	Viral late gene transcription factor 2	w
+GENE	virus	A0A068EHS9	pepv_177	A0A068EHS9	8	240	Viral late gene transcription factor 3	w
+GENE	virus	A0A068EKN5	fep_049	A0A068EKN5	5	221	Viral late gene transcription factor 2	w
+GENE	virus	A0A068EKZ1	fep_169	A0A068EKZ1	8	221	Viral late gene transcription factor 3	w
+GENE	virus	A0A0A7MA99		A0A0A7MA99	6	130	Viral late gene transcription factor 3	w
+GENE	virus	A0A0A7MC52		A0A0A7MC52	3	130	Viral late gene transcription factor 2	w
+GENE	virus	A0A0G3FXS8	RCNV-Herman-115	A0A0G3FXS8	7	195	Viral late gene transcription factor 2	w
+GENE	virus	A0A0G3G052	RCNV-Herman-116	A0A0G3G052	7	195	Viral late gene transcription factor 3	w
+GENE	virus	A0A0M5HTN6		A0A0M5HTN6	4	170	Viral late gene transcription factor 2	w
+GENE	virus	A0A0M5HU07		A0A0M5HU07	5	170	Viral late gene transcription factor 3	w
+GENE	virus	A0A1B1MRG8	PTPV-Aus-094	A0A1B1MRG8	1	143	Viral late gene transcription factor 2	w
+GENE	virus	A0A1B1MRL8	PTPV-Aus-095	A0A1B1MRL8	6	143	Viral late gene transcription factor 3	w
+GENE	virus	A0A1C9KBQ6	SKPV-WA-118	A0A1C9KBQ6	8	209	Viral late gene transcription factor 2	w
+GENE	virus	A0A1C9KBT0	SKPV-WA-119	A0A1C9KBT0	7	209	Viral late gene transcription factor 3	w
+GENE	virus	A0A1C9KCE2	VPXV-CA-119	A0A1C9KCE2	6	204	Viral late gene transcription factor 3	w
+GENE	virus	A0A1C9KCE9	VPXV-CA-118	A0A1C9KCE9	5	204	Viral late gene transcription factor 2	w
+GENE	virus	A0A1Z3GCS9	SePPVgORF067	A0A1Z3GCS9	3	119	Viral late gene transcription factor 2	w
+GENE	virus	A0A1Z3GCT3	SePPVgORF068	A0A1Z3GCT3	3	119	Viral late gene transcription factor 3	w
+GENE	virus	A0A220T6F7	EPTV-WA-097	A0A220T6F7	4	179	Viral late gene transcription factor 3	w
+GENE	virus	A0A220T6F8	EPTV-WA-096	A0A220T6F8	6	179	Viral late gene transcription factor 2	w
+GENE	virus	A0A223FMU6	Murmansk-116	A0A223FMU6	7	202	Viral late gene transcription factor 3	w
+GENE	virus	A0A223FMV2	Murmansk-115	A0A223FMV2	2	202	Viral late gene transcription factor 2	w
+GENE	virus	A0A2C9DSQ3		A0A2C9DSQ3	3	162	Viral late gene transcription factor 2	w
+GENE	virus	A0A2C9DSQ4		A0A2C9DSQ4	10	161	Viral late gene transcription factor 3	w
+GENE	virus	A0A2C9DT67		A0A2C9DT67	8	162	Viral late gene transcription factor 2	w
+GENE	virus	A0A2C9DT68		A0A2C9DT68	6	162	Viral late gene transcription factor 3	w
+GENE	virus	A0A2H4X263	fgpv_046	A0A2H4X263	8	256	Viral late gene transcription factor 2	w
+GENE	virus	A0A2H4X2J1	fgpv_178	A0A2H4X2J1	6	255	Viral late gene transcription factor 3	w
+GENE	virus	A0A2U9QHQ9	SOPV-ELK-089	A0A2U9QHQ9	3	130	Viral late gene transcription factor 2	w
+GENE	virus	A0A2U9QHR0	SOPV-ELK-090	A0A2U9QHR0	6	130	Viral late gene transcription factor 3	w
+GENE	virus	A0A346FRM1	AKMV-88-129	A0A346FRM1	8	214	Viral late gene transcription factor 2	w
+GENE	virus	A0A346FSW1	AKMV-88-130	A0A346FSW1	4	214	Viral late gene transcription factor 3	w
+GENE	virus	A0A3G2KXX7	OPVA120	A0A3G2KXX7	1	208	Viral late gene transcription factor 3	w
+GENE	virus	A0A3G2KXY1	OPVA119	A0A3G2KXY1	5	208	Viral late gene transcription factor 2	w
+GENE	virus	A0A916KP57	AHEV_142	A0A916KP57	8	243	Viral late gene transcription factor 3	w
+GENE	virus	A0A916KPQ7	CHBEV_235	A0A916KPQ7	4	311	Viral late gene transcription factor 3	w
+GENE	virus	A0A916KQC0	MYSEV_231	A0A916KQC0	11	301	Viral late gene transcription factor 3	w
+GENE	virus	A0ABM9QK82	CHREV_031	A0ABM9QK82	3	286	Tryptophan repeat gene family	w
+GENE	virus	A0ABM9QKE6	CHREV_101	A0ABM9QKE6	7	286	Tryptophan repeat gene family	w
+GENE	virus	A0ABM9QKI9	CHREV_148	A0ABM9QKI9	10	286	Leucine rich repeat gene family	w
+GENE	virus	A0ABM9QKJ8	CHREV_158	A0ABM9QKJ8	5	286	Viral late gene transcription factor 3	w
+GENE	virus	A0ABM9QKP9	CHREV_203	A0ABM9QKP9	4	286	Viral late gene transcription factor 3	w
+GENE	virus	A7XCL8	91L	A7XCL8	5	154	Viral late gene transcription factor 2	w
+GENE	virus	A7XCM0	92L	A7XCM0	4	154	Viral late gene transcription factor 3	w
+GENE	virus	D3IZ94		D3IZ94	3	125	Viral late gene transcription factor 3	w
+GENE	virus	D3IZM4		D3IZM4	5	125	Viral late gene transcription factor 2	w
+GENE	virus	G3EHZ4	YKV102c	G3EHZ4	8	184	Viral late gene transcription factor 3	w
+GENE	virus	G3EIH9	YKV101c	G3EIH9	7	184	Viral late gene transcription factor 2	w
+GENE	virus	H6TA80	COTV108	H6TA80	3	170	Viral late gene transcription factor 2	w
+GENE	virus	H6TA81	COTV109	H6TA81	4	170	Viral late gene transcription factor 3	w
+GENE	virus	O36358	A1	O36358	1	70	Uncharacterized gene A1 protein	w
+GENE	virus	O36359	A4	O36359	2	70	Uncharacterized gene A4 protein	w
+GENE	virus	O36365	10	O36365	0	69	Uncharacterized gene 10 protein	w
+GENE	virus	O36366	11	O36366	1	69	Uncharacterized gene 11 protein	w
+GENE	virus	O36368	18	O36368	5	69	Gene 18 protein	w
+GENE	virus	O36373	23	O36373	2	69	Uncharacterized gene 23 protein	w
+GENE	virus	O36374	24	O36374	6	69	Uncharacterized gene 24 protein	w
+GENE	virus	O36377	27	O36377	6	69	Uncharacterized gene 27 protein	w
+GENE	virus	O36379	30	O36379	4	69	Uncharacterized gene 30 protein	w
+GENE	virus	O36380	31	O36380	5	69	Gene 31 protein	w
+GENE	virus	O36383	34	O36383	3	69	Gene 34 protein	w
+GENE	virus	O36384	35	O36384	1	70	Gene 35 protein	w
+GENE	virus	O36389	40	O36389	7	69	Uncharacterized gene 40 protein	w
+GENE	virus	O36390	41	O36390	3	70	Uncharacterized gene 41 protein	w
+GENE	virus	O36394	45	O36394	1	69	Uncharacterized gene 45 protein	w
+GENE	virus	O36397	48	O36397	3	69	Uncharacterized gene 48 protein	w
+GENE	virus	O36399	A6	O36399	1	69	Uncharacterized gene A6 protein	w
+GENE	virus	O36401	A8	O36401	0	69	Uncharacterized gene A8 protein	w
+GENE	virus	O36402	52	O36402	4	69	Uncharacterized gene 52 protein	w
+GENE	virus	O36408	58	O36408	1	69	Gene 58 protein	w
+GENE	virus	O36416	66	O36416	4	69	Uncharacterized gene 66 protein	w
+GENE	virus	O36421	73	O36421	3	65	Uncharacterized gene 73 protein	w
+GENE	virus	O36424	A10	O36424	1	69	Uncharacterized gene A10 protein	w
+GENE	virus	O72910	VLTF2	O72910	4	250	Viral late gene transcription factor 2	w
+GENE	virus	P03220	BGLF3	P03220	5	91	Late gene expression regulator BGLF3	w
+GENE	virus	P07610	OPG126	P07610	13	218	Viral late gene transcription factor 2	w
+GENE	virus	P0CK56	BDLF4	P0CK56	1	91	Late gene expression regulator BDLF4	w
+GENE	virus	P0DOT5	OPG127	P0DOT5	6	199	Viral late gene transcription factor 3	w
+GENE	virus	P0DSV3	OPG126	P0DSV3	3	199	Viral late gene transcription factor 2	w
+GENE	virus	P0DXO7	BDLF3.5	P0DXO7	3	91	Late gene expression regulator BDLF3.5	w
+GENE	virus	P14347	BFRF2	P14347	3	91	Late gene expression regulator BFRF2	w
+GENE	virus	P24912	5	P24912	0	74	Uncharacterized gene 5 protein	w
+GENE	virus	P24913	10	P24913	3	74	Uncharacterized gene 10 protein	w
+GENE	virus	P24914	11	P24914	0	74	Uncharacterized gene 11 protein	w
+GENE	virus	P24915	12	P24915	2	74	Uncharacterized gene 12 protein	w
+GENE	virus	P25215	BcRF1	P25215	3	91	Late gene expression regulator BcRF1	w
+GENE	virus	P28964	68	P28964	3	74	Gene 68 protein	w
+GENE	virus	P28978	1	P28978	4	74	Uncharacterized gene 1 protein	w
+GENE	virus	P28979	2	P28979	0	74	Uncharacterized gene 2 protein	w
+GENE	virus	P28983	59	P28983	4	74	Uncharacterized gene 59 protein	w
+GENE	virus	P28985	75	P28985	3	74	Uncharacterized gene 75 protein	w
+GENE	virus	P28988	3	P28988	4	74	Gene 3 protein	w
+GENE	virus	P28989	34	P28989	3	74	Gene 34 protein	w
+GENE	virus	P68319	OPG127	P68319	6	218	Viral late gene transcription factor 3	w
+GENE	virus	Q00998	27	Q00998	4	74	Uncharacterized gene 27 protein	w
+GENE	virus	Q01001	16	Q01001	3	75	Bcl-2-like gene 16 protein	w
+GENE	virus	Q01003	18	Q01003	2	74	Gene 18 protein	w
+GENE	virus	Q01006	23	Q01006	1	74	Uncharacterized gene 23 protein	w
+GENE	virus	Q01007	24	Q01007	4	74	Gene 24 protein	w
+GENE	virus	Q01009	28	Q01009	0	75	Uncharacterized gene 28 protein	w
+GENE	virus	Q01010	30	Q01010	2	74	Uncharacterized gene 30 protein	w
+GENE	virus	Q01011	31	Q01011	2	74	Gene 31 protein	w
+GENE	virus	Q01023	34	Q01023	3	75	Gene 34 protein	w
+GENE	virus	Q01024	35	Q01024	1	74	Gene 35 protein	w
+GENE	virus	Q01026	40	Q01026	6	74	Uncharacterized gene 40 protein	w
+GENE	virus	Q01027	41	Q01027	4	75	Uncharacterized gene 41 protein	w
+GENE	virus	Q01030	45	Q01030	3	74	Uncharacterized gene 45 protein	w
+GENE	virus	Q01032	49	Q01032	2	74	Uncharacterized gene 49 protein	w
+GENE	virus	Q01033	48	Q01033	3	74	Uncharacterized gene 48 protein	w
+GENE	virus	Q01036	51	Q01036	3	74	Gene 51 glycoprotein	w
+GENE	virus	Q01044	71	Q01044	3	75	Uncharacterized gene 71 protein	w
+GENE	virus	Q01046	66	Q01046	4	74	Uncharacterized gene 66 protein	w
+GENE	virus	Q01048	55	Q01048	2	75	Gene 55 protein	w
+GENE	virus	Q01050	52	Q01050	1	74	Uncharacterized gene 52 protein	w
+GENE	virus	Q01052	59	Q01052	3	74	Gene 59 protein	w
+GENE	virus	Q01053	58	Q01053	5	74	Gene 58 protein	w
+GENE	virus	Q070C9	CRV122	Q070C9	6	172	Viral late gene transcription factor 3	w
+GENE	virus	Q070D0	CRV121	Q070D0	2	172	Viral late gene transcription factor 2	w
+GENE	virus	Q08FQ1	DpV83gp101	Q08FQ1	4	165	Viral late gene transcription factor 3	w
+GENE	virus	Q08FQ2	DpV83gp100	Q08FQ2	5	165	Viral late gene transcription factor 2	w
+GENE	virus	Q0NP89	TATV_DAH68_122	Q0NP89	5	220	Viral late gene transcription factor 3	w
+GENE	virus	Q0NP90	TATV_DAH68_121	Q0NP90	7	220	Viral late gene transcription factor 2	w
+GENE	virus	Q2MG95	BVLF1	Q2MG95	8	91	Late gene expression regulator BVLF1	w
+GENE	virus	Q66607	E2	Q66607	1	76	Uncharacterized gene E2 protein	w
+GENE	virus	Q66610	E4	Q66610	4	76	Uncharacterized gene E4 protein	w
+GENE	virus	Q66616	10	Q66616	3	76	Uncharacterized gene 10 protein	w
+GENE	virus	Q66617	11	Q66617	1	76	Uncharacterized gene 11 protein	w
+GENE	virus	Q66621	18	Q66621	14	76	Gene 18 protein	w
+GENE	virus	Q66626	23	Q66626	6	76	Uncharacterized gene 23 protein	w
+GENE	virus	Q66627	24	Q66627	4	76	Gene 24 protein	w
+GENE	virus	Q66630	27	Q66630	2	76	Uncharacterized gene 27 protein	w
+GENE	virus	Q66631	28	Q66631	0	76	Uncharacterized gene 28 protein	w
+GENE	virus	Q66633	30	Q66633	1	76	Uncharacterized gene 30 protein	w
+GENE	virus	Q66634	31	Q66634	6	76	Gene 31 protein	w
+GENE	virus	Q66638	34	Q66638	7	76	Gene 34 protein	w
+GENE	virus	Q66639	35	Q66639	0	76	Gene 35 protein	w
+GENE	virus	Q66648	45	Q66648	2	76	Uncharacterized gene 45 protein	w
+GENE	virus	Q66651	49	Q66651	2	76	Uncharacterized gene 49 protein	w
+GENE	virus	Q66654	52	Q66654	1	76	Gene 52 protein	w
+GENE	virus	Q66660	58	Q66660	1	76	Gene 58 protein	w
+GENE	virus	Q66668	66	Q66668	5	76	Uncharacterized gene 66 protein	w
+GENE	virus	Q66676	E9	Q66676	3	76	Uncharacterized gene E9 protein	w
+GENE	virus	Q6LAQ8	IR6	Q6LAQ8	1	74	Uncharacterized gene 67 protein	w
+GENE	virus	Q6TUS6		Q6TUS6	6	140	Viral late gene transcription factor 3	w
+GENE	virus	Q6TUS7		Q6TUS7	5	140	Viral late gene transcription factor 2	w
+GENE	virus	Q6TVB1		Q6TVB1	6	130	Viral late gene transcription factor 3	w
+GENE	virus	Q6TVB2		Q6TVB2	3	130	Viral late gene transcription factor 2	w
+GENE	virus	Q6TVP3		Q6TVP3	5	129	Viral late gene transcription factor 3	w
+GENE	virus	Q6TVP4		Q6TVP4	2	129	Viral late gene transcription factor 2	w
+GENE	virus	Q6VZA9	CNPV238	Q6VZA9	11	322	Viral late gene transcription factor 3	w
+GENE	virus	Q6VZS8	CNPV069	Q6VZS8	6	322	Viral late gene transcription factor 2	w
+GENE	virus	Q77GC1	LSDV092	Q77GC1	2	153	Viral late gene transcription factor 3	w
+GENE	virus	Q77GC2	LSDV091	Q77GC2	3	153	Viral late gene transcription factor 2	w
+GENE	virus	Q77HM9	A1L	Q77HM9	4	187	Viral late gene transcription factor 2	w
+GENE	virus	Q77MQ0	MDV087	Q77MQ0	5	87	Uncharacterized gene 87 protein	w
+GENE	virus	Q77MQ9	MDV007	Q77MQ9	1	87	Uncharacterized gene 7 protein	w
+GENE	virus	Q77MR2	MDV069	Q77MR2	0	87	Uncharacterized gene 69 protein	w
+GENE	virus	Q77MT3	MDV006	Q77MT3	2	87	Uncharacterized gene 6b protein	w
+GENE	virus	Q77MT6	MDV001	Q77MT6	3	87	Uncharacterized gene 1 protein	w
+GENE	virus	Q85434		Q85434	0	13	Suppressor of RNA-mediated gene silencing	w
+GENE	virus	Q8JLB1	EVM104	Q8JLB1	3	170	Viral late gene transcription factor 3	w
+GENE	virus	Q8JLB2	EVM103	Q8JLB2	6	170	Viral late gene transcription factor 2	w
+GENE	virus	Q8QMU8	CPXV133 CDS	Q8QMU8	4	225	Viral late gene transcription factor 3	w
+GENE	virus	Q8QMU9	CPXV132 CDS	Q8QMU9	8	225	Viral late gene transcription factor 2	w
+GENE	virus	Q8V2Q4		Q8V2Q4	1	207	Viral late gene transcription factor 3	w
+GENE	virus	Q8V2Q5		Q8V2Q5	10	208	Viral late gene transcription factor 2	w
+GENE	virus	Q8V3K7	SPV089	Q8V3K7	5	146	Viral late gene transcription factor 3	w
+GENE	virus	Q8V3K8	SPV088	Q8V3K8	4	146	Viral late gene transcription factor 2	w
+GENE	virus	Q8V4X4	A2L	Q8V4X4	3	187	Viral late gene transcription factor 3	w
+GENE	virus	Q98270	MC103L	Q98270	6	161	Viral late gene transcription factor 2	w
+GENE	virus	Q98271	MC104L	Q98271	2	162	Viral late gene transcription factor 3	w
+GENE	virus	Q9DGS3	MDV002	Q9DGS3	3	87	Uncharacterized gene 2 protein	w
+GENE	virus	Q9DGV6	MDV006	Q9DGV6	0	86	Uncharacterized gene 6a protein	w
+GENE	virus	Q9DGY2	MDV086	Q9DGY2	2	86	Uncharacterized gene 86 protein	w
+GENE	virus	Q9DH17	MDV085	Q9DH17	0	87	Uncharacterized gene 85 protein	w
+GENE	virus	Q9DH37	MDV082	Q9DH37	1	87	Uncharacterized gene 82 protein	w
+GENE	virus	Q9DH77	MDV83	Q9DH77	0	88	Uncharacterized gene 83 protein	w
+GENE	virus	Q9DH85	MDV004	Q9DH85	2	87	Uncharacterized gene 4 protein	w
+GENE	virus	Q9DH90	MDV103	Q9DH90	1	88	Uncharacterized gene 81 protein	w
+GENE	virus	Q9DHM1	92L	Q9DHM1	7	150	Viral late gene transcription factor 3	w
+GENE	virus	Q9DHM2	91L	Q9DHM2	4	150	Viral late gene transcription factor 2	w
+GENE	virus	Q9E6L4	MDV097	Q9E6L4	2	87	Uncharacterized gene 97 protein	w
+GENE	virus	Q9E6L7	MDV093	Q9E6L7	0	87	Uncharacterized gene 93 protein	w
+GENE	virus	Q9E6M0	MDV090	Q9E6M0	1	87	Uncharacterized gene 90 protein	w
+GENE	virus	Q9E6M1	MDV072	Q9E6M1	0	86	Uncharacterized gene 72 protein	w
+GENE	virus	Q9E6M2	MDV071	Q9E6M2	4	87	Uncharacterized gene 71 protein	w
+GENE	virus	Q9E6R5	MDV009	Q9E6R5	0	87	Uncharacterized gene 9 protein	w
+GENE	virus	Q9EMK1	AMV205	Q9EMK1	7	278	Viral late gene transcription factor 3	w
+GENE	virus	Q9J566	VLTF3	Q9J566	7	250	Viral late gene transcription factor 3	w
+GENE	virus	Q9JGV3		Q9JGV3	1	12	Suppressor of RNA-mediated gene silencing	w
+GENE	virus	Q9Q8L0	m090L	Q9Q8L0	5	157	Viral late gene transcription factor 3	w
+GENE	virus	Q9Q8L1	m089L	Q9Q8L1	4	157	Viral late gene transcription factor 2	w
+GENE	virus	Q9Q8Y8	s090L	Q9Q8Y8	5	153	Viral late gene transcription factor 3	w
+GENE	virus	Q9Q8Y9	s089L	Q9Q8Y9	6	153	Viral late gene transcription factor 2	w
+GENE	virus	U3UBA5	A2L	U3UBA5	4	141	Viral late gene transcription factor 3	w
+GENE	virus	U3UBJ7	A1L	U3UBJ7	6	141	Viral late gene transcription factor 2	w
+GENE	worm	A7DT33	CELE_Y34B4A.2	A7DT33	6	20	UV radiation resistance-associated gene protein-like	w
+GENE	worm	O44737	xpg-1	O44737	2	35	XPG (Xeroderma Pigmentosum group G) DNA repair gene homolog	w
+GENE	worm	O76258	tsg-101	O76258	15	69	Tumor susceptibility gene 101 protein	w
+GENE	worm	P34552	alx-1	P34552	6	52	Apoptosis-linked gene 2-interacting protein X 1	w
+GENE	worm	Q19060	pcrg-1	Q19060	0	17	Parkin coregulated gene protein homolog	w
+GENE	worm	Q95QK5	alfa-1	Q95QK5	1	29	ALS/FTD Associated gene homolog	w
+GENE	worm	Q9N4C3	xpc-1	Q9N4C3	8	92	XPC (Xeroderma Pigmentosum group C) DNA repair gene homolog	w
+GENE	worm	Q9TXI9	ccm-2	Q9TXI9	1	7	CCM (Cerebral Cavernous Malformation) gene homolog	w
+GENE	yeast	P32794	AFG2	P32794	3	147	ATPase family gene 2 protein	w
+GENE	yeast	P38224	FIG1	P38224	0	4	Factor-induced gene 1 protein	w
+GENE	yeast	P50088	SPG1	P50088	1	5	Stationary phase gene 1 protein	w
+GENE	yeast	Q06567	MCP2	Q06567	0	11	ABC1 family protein MCP2 (MDM10-complementing protein 2) (MI	w
+GENE	zebrafish	A0A0G2KL77	LOC108181672	A0A0G2KL77	2	7	Major histocompatibility complex class I-related gene protei	w
+GENE	zebrafish	A0A0R4IUT0	btr20	A0A0R4IUT0	0	3	Bloodthirsty-related gene family, member 20	w
+GENE	zebrafish	A0A0R4IVY0	btr31	A0A0R4IVY0	0	1	Bloodthirsty-related gene family, member 31	w
+GENE	zebrafish	A0A0R4IZK4	mhc1lca	A0A0R4IZK4	4	21	Major histocompatibility complex class I-related gene protei	w
+GENE	zebrafish	A0A0R4IZN1	btr24	A0A0R4IZN1	0	3	Bloodthirsty-related gene family, member 24	w
+GENE	zebrafish	A0A1D5NS27	btr04	A0A1D5NS27	0	1	Bloodthirsty-related gene family, member 4	w
+GENE	zebrafish	A0A1D5NS95	btr07	A0A1D5NS95	0	1	Bloodthirsty-related gene family, member 7	w
+GENE	zebrafish	A0A2R8QIP9	btg3	A0A2R8QIP9	4	7	B-cell translocation gene 3	w
+GENE	zebrafish	A0A8M1N3B8	pacrg	A0A8M1N3B8	13	476	Parkin coregulated gene protein	w
+GENE	zebrafish	A0A8M1NB69	abi3a	A0A8M1NB69	12	18	ABI gene family member 3	w
+GENE	zebrafish	A0A8M1NTY9	btr29	A0A8M1NTY9	0	3	Bloodthirsty-related gene family, member 29	w
+GENE	zebrafish	A0A8M9PGS9	tnrc6bb.2	A0A8M9PGS9	0	1	Trinucleotide repeat-containing gene 6B protein-like isoform	w
+GENE	zebrafish	A0A8N7T6E8	abi3b	A0A8N7T6E8	8	46	ABI gene family member 3 isoform X1	w
+GENE	zebrafish	A0AB12Y1Z1	btr16	A0AB12Y1Z1	0	1	Bloodthirsty-related gene family, member 16	w
+GENE	zebrafish	A0AB13A8N5	btr05	A0AB13A8N5	0	3	Bloodthirsty-related gene family, member 5	w
+GENE	zebrafish	A0AB13AA62	btr22	A0AB13AA62	0	3	Bloodthirsty-related gene family, member 22	w
+GENE	zebrafish	A0JPE5	mxtx1	A0JPE5	1	15	Mix-type homeobox gene 1	w
+GENE	zebrafish	A0PJR9	im:7139868	A0PJR9	0	1	Radiation-inducible immediate-early gene IEX-1	w
+GENE	zebrafish	A2CEP8	eeig1b	A2CEP8	0	4	Early estrogen-induced gene 1 protein isoform X3	w
+GENE	zebrafish	A9JSZ8	btr25	A9JSZ8	0	3	Bloodthirsty-related gene family, member 25	w
+GENE	zebrafish	B0UY56	tnfaip6	B0UY56	1	32	Tumor necrosis factor-inducible gene 6 protein	w
+GENE	zebrafish	B3DKE1	btr09	B3DKE1	0	3	Bloodthirsty-related gene family, member 9	w
+GENE	zebrafish	B7SXM5	ier2	B7SXM5	1	2	Immediate early response gene 2 protein	w
+GENE	zebrafish	B8A4S2	tsga10	B8A4S2	0	49	Testis-specific gene 10 protein	w
+GENE	zebrafish	B8A500	znfl1g	B8A500	0	6	Zinc finger-like gene 1g	w
+GENE	zebrafish	E7F1H1	fbrs	E7F1H1	7	24	Autism susceptibility gene 2 protein isoform X2	w
+GENE	zebrafish	E9QJ06	cyp27a1.2	E9QJ06	3	8	Cytochrome P450, family 27, subfamily A, polypeptide 1, gene	w
+GENE	zebrafish	F1Q8W3	afg2b	F1Q8W3	2	173	ATPase family gene 2 protein homolog B	w
+GENE	zebrafish	F1Q977	btr02	F1Q977	0	1	Bloodthirsty-related gene family, member 2	w
+GENE	zebrafish	F1QYX5	btr01	F1QYX5	0	5	Bloodthirsty-related gene family, member 1	w
+GENE	zebrafish	F1QZB6	btr06	F1QZB6	0	3	Bloodthirsty-related gene family, member 6	w
+GENE	zebrafish	F1RE72	zgc:153317	F1RE72	7	32	Normal mucosa of esophagus-specific gene 1 protein	w
+GENE	zebrafish	F6P4J7	znfl1b	F6P4J7	0	6	Zinc finger-like gene 1b	w
+GENE	zebrafish	P53405	isl1	P53405	5	8	Insulin gene enhancer protein isl-1	w
+GENE	zebrafish	P53406	isl2a	P53406	5	7	Insulin gene enhancer protein isl-2a	w
+GENE	zebrafish	P53407	isl2b	P53407	5	7	Insulin gene enhancer protein isl-2b	w
+GENE	zebrafish	Q08C26	btr12	Q08C26	0	2	Bloodthirsty-related gene family, member 12	w
+GENE	zebrafish	Q08ES4	btg4	Q08ES4	2	2	B-cell translocation gene 4	w
+GENE	zebrafish	Q1LXK0	krt1-19d	Q1LXK0	19	32	Keratin, type 1, gene 19d	w
+GENE	zebrafish	Q1MTC8	mhc2dab	Q1MTC8	15	54	Major histocompatibility complex class II DAB gene	w
+GENE	zebrafish	Q1RLP5	btr32	Q1RLP5	0	3	Bloodthirsty-related gene family, member 32	w
+GENE	zebrafish	Q1RM27	mxtx2	Q1RM27	0	9	Mix-type homeobox gene 2	w
+GENE	zebrafish	Q29YB2	plag1	Q29YB2	0	2	Pleiomorphic adenoma gene 1	w
+GENE	zebrafish	Q4V922	gsg1l	Q4V922	0	1	Germ cell-specific gene 1-like protein	w
+GENE	zebrafish	Q503V3	spring	Q503V3	1	1	SREBP regulating gene protein	w
+GENE	zebrafish	Q56P19	syce2	Q56P19	2	5	Spermatogenesis related gene	w
+GENE	zebrafish	Q5PQZ5	sox17	Q5PQZ5	2	6	SRY-box containing gene 17	w
+GENE	zebrafish	Q5RGE4	meig1	Q5RGE4	1	1	Meiosis expressed gene 1 protein homolog	w
+GENE	zebrafish	Q5YLG6	rhov	Q5YLG6	16	62	Ras homolog gene family, member V	w
+GENE	zebrafish	Q6NYT3	ier5l	Q6NYT3	0	1	Immediate early response gene 5-like protein	w
+GENE	zebrafish	Q6TH21	dgcr6	Q6TH21	1	4	DiGeorge syndrome critical region gene 6	w
+GENE	zebrafish	Q8AV60	insig2	Q8AV60	4	21	Insulin-induced gene protein	w
+GENE	zebrafish	Q8AV61	insig1	Q8AV61	4	21	Insulin-induced gene 1 protein	w
+GENE-1	human	Q86UE4	MTDH	Q86UE4	39	453	Protein LYRIC (3D3/LYRIC) (Astrocyte elevated gene-1 protein	w
+GENE-1	human	Q8N3R3	TCAIM	Q8N3R3	5	26	T-cell activation inhibitor, mitochondrial (Tolerance associ	w
+GENE-2	fly	FBgn0086378	Alg-2	A8Y589	6	20	Apoptosis-linked gene-2	w
+GENE-5	fly	FBgn0036580	PDCD-5	Q9VUZ8	1	9	GEO07442p1 (Programmed cell death 5) (Programmed cell death 	w
+GENE-ASSOCIATED	human	Q8IWI9	MGA	Q8IWI9	32	161	MAX gene-associated protein (MAX dimerization protein 5)	w
+GENE-CODING	human	Q9Y250	LZTS1	Q9Y250	135	462	Leucine zipper putative tumor suppressor 1 (F37/esophageal c	w
+GENE-LIKE	zebrafish	B3DK35	plagl2	B3DK35	0	1	Pleiomorphic adenoma gene-like 2	w
+GENE-RELATED	human	O15243	LEPROT	O15243	6	68	Leptin receptor gene-related protein (Endospanin-1) (Leptin 	w
+GENE-RELATED	human	O75575	CRCP	O75575	42	356	DNA-directed RNA polymerase III subunit RPC9 (RNA polymerase	w
+GENE-RELATED	human	P06881	CALCA	P06881	160	1114	Calcitonin gene-related peptide 1 (CGRP1) (Alpha-type CGRP) 	w
+GENE-RELATED	human	P10092	CALCB	P10092	11	99	Calcitonin gene-related peptide 2 (CGRP2) (Beta-type CGRP) (	w
+GENE-RELATED	human	Q16602	CALCRL	Q16602	23	118	Calcitonin gene-related peptide type 1 receptor (CGRP type 1	w
+GENE-RELATED	zebrafish	A0A8M9PPS1	calcr	A0A8M9PPS1	6	29	Calcitonin gene-related peptide type 1 receptor	w
+GENE-RELATED	zebrafish	I3IRX3	calcrlb	I3IRX3	4	25	Calcitonin gene-related peptide type 1 receptor	w
+GENE-RELATED	zebrafish	Q561T9	leprot	Q561T9	1	1	Leptin receptor gene-related protein	w
+GENE-RELATED	zebrafish	Q68EK2	calcrla	Q68EK2	4	25	Calcitonin gene-related peptide type 1 receptor	w
+GENE-RICH	human	Q16538	GPR162	Q16538	19	122	Probable G protein-coupled receptor 162 (Gene-rich cluster g	w
+GENE-RICH	human	Q99618	CDCA3	Q99618	43	306	Cell division cycle-associated protein 3 (Gene-rich cluster 	w
+GENE-RICH	human	Q99619	SPSB2	Q99619	7	100	SPRY domain-containing SOCS box protein 2 (SSB-2) (Gene-rich	w
+GENE-SPEC	fly	FBgn0052529	Hers	Q9VWC0	0	1	Histone gene-specific epigenetic repressor in late S phase, 	w
+GENE-SPECIFIC	fly	FBgn0052529	Hers	Q9VWC0	0	1	Histone gene-specific epigenetic repressor in late S phase, 	w
+GENE1000	arabidopsis-thaliana	P94032	gene1000	P94032	2	49	Gene1000 protein	
+GENERAL	fly	FBgn0001179	hay	Q02870	23	493	General transcription and DNA repair factor IIH helicase/tra	w
+GENERAL	fly	FBgn0004915	TfIIB	P29052	56	522	Transcription initiation factor IIB (General transcription f	w
+GENERAL	fly	FBgn0010282	TfIIFalpha	Q05913	107	524	General transcription factor IIF subunit 1 (Transcription fa	w
+GENERAL	fly	FBgn0010421	TfIIFbeta	P41900	100	533	General transcription factor IIF subunit 2 (Transcription in	w
+GENERAL	fly	FBgn0011279	Obp69a	P54191	0	2	General odorant-binding protein 69a (Odorant-binding protein	w
+GENERAL	fly	FBgn0011280	Obp19d	P54192	34	262	General odorant-binding protein 19d (Odorant-binding protein	w
+GENERAL	fly	FBgn0011283	Obp28a	P54195	33	255	General odorant-binding protein 28a (Odorant-binding protein	w
+GENERAL	fly	FBgn0011289	TfIIA-L	P52654	110	520	Transcription initiation factor IIA subunit 1 (General trans	w
+GENERAL	fly	FBgn0013347	TfIIA-S	P52656	34	480	Transcription initiation factor IIA subunit 2 (General trans	w
+GENERAL	fly	FBgn0020277	lush	O02372	29	248	General odorant-binding protein lush	w
+GENERAL	fly	FBgn0031109	Obp19a	Q9VR94	26	243	General odorant-binding protein 19a	w
+GENERAL	fly	FBgn0031309	Tfb4	Q9VPX4	35	508	General transcription factor IIH subunit 3 (General transcri	w
+GENERAL	fly	FBgn0033929	Tfb1	Q960E8	63	522	General transcription factor IIH subunit 1 (TFIIH basal tran	w
+GENERAL	fly	FBgn0034468	Obp56a	Q9V8Y2	26	264	General odorant-binding protein 56a	w
+GENERAL	fly	FBgn0034470	Obp56d	Q8SY61	24	291	General odorant-binding protein 56d	w
+GENERAL	fly	FBgn0034475	Obp56h	Q9V8Y9	20	258	General odorant-binding protein 56h	w
+GENERAL	fly	FBgn0034509	Obp57c	Q9V931	20	258	General odorant-binding protein 57c	w
+GENERAL	fly	FBgn0037202	Ssl1	Q9VNP8	38	492	General transcription factor IIH subunit	w
+GENERAL	fly	FBgn0039678	Obp99a	Q9VAJ4	19	247	General odorant-binding protein 99a	w
+GENERAL	fly	FBgn0039685	Obp99b	Q9VAI6	13	253	General odorant-binding protein 99b	w
+GENERAL	fly	FBgn0040087	p115	Q9W3N6	13	118	General vesicular transport factor p115	w
+GENERAL	fly	FBgn0040338	TfIIA-S-2	Q9W5B9	37	457	Transcription initiation factor IIA subunit 2-2 (General tra	w
+GENERAL	fly	FBgn0043534	Obp57b	Q8MKJ4	29	244	General odorant-binding protein 57b	w
+GENERAL	fly	FBgn0043535	Obp57a	Q8MKK0	0	2	General odorant-binding protein 57a	w
+GENERAL	fly	FBgn0043536	Obp57d	Q8MMF9	48	243	General odorant-binding protein 57d	w
+GENERAL	fly	FBgn0050145	Obp57e	Q9V938	21	243	General odorant-binding protein 57e	w
+GENERAL	fly	FBgn0261109	mrn	Q9VUR1	12	135	General transcription factor IIH subunit 4	w
+GENERAL	fly	FBgn0261850	Xpd	Q7KVP9	21	504	General transcription and DNA repair factor IIH helicase sub	w
+GENERAL	fly	FBgn0265968	Tfb5	B7Z018	5	79	General transcription and DNA repair factor IIH subunit TFB5	w
+GENERAL	human	O43739	CYTH3	O43739	36	174	Cytohesin-3 (ARF nucleotide-binding site opener 3) (Protein 	w
+GENERAL	human	O60763	USO1	O60763	51	330	General vesicular transport factor p115 (Protein USO1 homolo	w
+GENERAL	human	P13984	GTF2F2	P13984	72	621	General transcription factor IIF subunit 2 (General transcri	w
+GENERAL	human	P18074	ERCC2	P18074	22	388	General transcription and DNA repair factor IIH helicase sub	w
+GENERAL	human	P19447	ERCC3	P19447	55	561	General transcription and DNA repair factor IIH helicase/tra	w
+GENERAL	human	P29083	GTF2E1	P29083	110	592	General transcription factor IIE subunit 1 (General transcri	w
+GENERAL	human	P29084	GTF2E2	P29084	61	655	Transcription initiation factor IIE subunit beta (TFIIE-beta	w
+GENERAL	human	P32780	GTF2H1	P32780	52	689	General transcription factor IIH subunit 1 (Basic transcript	w
+GENERAL	human	P35269	GTF2F1	P35269	139	685	General transcription factor IIF subunit 1 (General transcri	w
+GENERAL	human	P52655	GTF2A1	P52655	116	540	Transcription initiation factor IIA subunit 1 (General trans	w
+GENERAL	human	P52657	GTF2A2	P52657	43	605	Transcription initiation factor IIA subunit 2 (General trans	w
+GENERAL	human	P60520	GABARAPL2	P60520	106	319	Gamma-aminobutyric acid receptor-associated protein-like 2 (	w
+GENERAL	human	P78347	GTF2I	P78347	23	415	General transcription factor II-I (GTFII-I) (TFII-I) (Bruton	w
+GENERAL	human	Q00403	GTF2B	Q00403	84	682	Transcription initiation factor IIB (EC 2.3.1.48) (General t	w
+GENERAL	human	Q12789	GTF3C1	Q12789	24	482	General transcription factor 3C polypeptide 1 (TF3C-alpha) (	w
+GENERAL	human	Q13888	GTF2H2	Q13888	30	550	General transcription factor IIH subunit 2 (Basic transcript	w
+GENERAL	human	Q13889	GTF2H3	Q13889	42	586	General transcription factor IIH subunit 3 (Basic transcript	w
+GENERAL	human	Q6EKJ0	GTF2IRD2B	Q6EKJ0	6	57	General transcription factor II-I repeat domain-containing p	w
+GENERAL	human	Q6P1K8	GTF2H2C	Q6P1K8	27	438	General transcription factor IIH subunit 2-like protein (Gen	w
+GENERAL	human	Q6ZYL4	GTF2H5	Q6ZYL4	37	270	General transcription factor IIH subunit 5 (General transcri	w
+GENERAL	human	Q7Z6J2	TAMALIN	Q7Z6J2	27	62	Protein TAMALIN (General receptor for phosphoinositides 1-as	w
+GENERAL	human	Q86UP8	GTF2IRD2	Q86UP8	7	57	General transcription factor II-I repeat domain-containing p	w
+GENERAL	human	Q8WUA4	GTF3C2	Q8WUA4	43	400	General transcription factor 3C polypeptide 2 (TF3C-beta) (T	w
+GENERAL	human	Q92616	GCN1	Q92616	14	504	Stalled ribosome sensor GCN1 (GCN1 eIF-2-alpha kinase activa	w
+GENERAL	human	Q92759	GTF2H4	Q92759	16	327	General transcription factor IIH subunit 4 (Basic transcript	w
+GENERAL	human	Q92830	KAT2A	Q92830	84	737	Histone acetyltransferase KAT2A (EC 2.3.1.48) (General contr	w
+GENERAL	human	Q969F1	GTF3C6	Q969F1	61	458	General transcription factor 3C polypeptide 6 (Transcription	w
+GENERAL	human	Q9UHL9	GTF2IRD1	Q9UHL9	23	136	General transcription factor II-I repeat domain-containing p	w
+GENERAL	human	Q9UKN8	GTF3C4	Q9UKN8	36	295	General transcription factor 3C polypeptide 4 (EC 2.3.1.48) 	w
+GENERAL	human	Q9UNN4	GTF2A1L	Q9UNN4	111	399	TFIIA-alpha and beta-like factor (General transcription fact	w
+GENERAL	human	Q9Y5Q8	GTF3C5	Q9Y5Q8	119	681	General transcription factor 3C polypeptide 5 (TF3C-epsilon)	w
+GENERAL	human	Q9Y5Q9	GTF3C3	Q9Y5Q9	61	403	General transcription factor 3C polypeptide 3 (Transcription	w
+GENERAL	worm	K8F7X5	gtf-2h4	K8F7X5	9	92	General transcription factor IIH subunit 4	w
+GENERAL	worm	P34567	gtf-2H2C	P34567	5	86	General transcription factor IIH subunit 2	w
+GENERAL	worm	Q09645	gtf-2h3	Q09645	11	92	General transcription factor IIH subunit 3	w
+GENERAL	worm	Q22093	tftc-5	Q22093	1	7	General transcription factor 3C polypeptide 5	w
+GENERAL	worm	Q8MYM8	gtf-2f2	Q8MYM8	13	134	General transcription factor IIF subunit 2	w
+GENERAL	worm	Q93654	gras-1	Q93654	2	24	General receptor for phosphoinositides 1-associated scaffold	w
+GENERAL	worm	Q95PZ4	xpb-1	Q95PZ4	7	113	General transcription and DNA repair factor IIH helicase/tra	w
+GENERAL	worm	Q9N390	gtf-2H5	Q9N390	2	56	General transcription and DNA repair factor IIH subunit TFB5	w
+GENERAL	worm	Q9N3L2	xpd-1	Q9N3L2	6	102	General transcription and DNA repair factor IIH helicase sub	w
+GENERAL	yeast	P03069	GCN4	P03069	7	87	General control transcription factor GCN4	w
+GENERAL	yeast	P06100	CDC36	P06100	2	40	General negative regulator of transcription subunit 2	w
+GENERAL	yeast	P06102	NOT3	P06102	6	88	General negative regulator of transcription subunit 3	w
+GENERAL	yeast	P06839	RAD3	P06839	6	148	General transcription and DNA repair factor IIH helicase sub	w
+GENERAL	yeast	P14922	CYC8	P14922	8	106	General transcriptional corepressor CYC8	w
+GENERAL	yeast	P15442	GCN2	P15442	2	11	eIF-2-alpha kinase GCN2 (EC 2.7.11.1) (General control non-d	w
+GENERAL	yeast	P16649	TUP1	P16649	3	86	General transcriptional corepressor TUP1	w
+GENERAL	yeast	P19145	GAP1	P19145	2	53	General amino-acid permease GAP1	w
+GENERAL	yeast	P25376	AGP1	P25376	0	7	General amino acid permease AGP1	w
+GENERAL	yeast	P32776	TFB1	P32776	17	135	General transcription and DNA repair factor IIH subunit TFB1	w
+GENERAL	yeast	P34909	MOT2	P34909	12	64	General negative regulator of transcription subunit 4	w
+GENERAL	yeast	P38090	AGP2	P38090	0	8	General amino acid permease AGP2	w
+GENERAL	yeast	P43548	AGP3	P43548	0	3	General amino acid permease AGP3	w
+GENERAL	yeast	P53048	MAL11	P53048	0	7	General alpha-glucoside permease	w
+GENERAL	yeast	Q00578	SSL2	Q00578	16	151	General transcription and DNA repair factor IIH helicase/tra	w
+GENERAL	yeast	Q02939	TFB2	Q02939	11	135	General transcription and DNA repair factor IIH subunit TFB2	w
+GENERAL	yeast	Q04673	SSL1	Q04673	8	118	General transcription and DNA repair factor IIH subunit SSL1	w
+GENERAL	yeast	Q08816	TFB6	Q08816	2	28	General transcription and DNA repair factor IIH subunit TFB6	w
+GENERAL	yeast	Q12004	TFB4	Q12004	11	137	General transcription and DNA repair factor IIH subunit TFB4	w
+GENERAL	yeast	Q12514	NOT5	Q12514	18	135	General negative regulator of transcription subunit 5	w
+GENERAL	yeast	Q3E7C1	TFB5	Q3E7C1	3	86	General transcription and DNA repair factor IIH subunit TFB5	w
+GENERAL	zebrafish	A5WWE3	gtf2h3	A5WWE3	9	202	General transcription factor IIH subunit 3	w
+GENERAL	zebrafish	B8JHR3	gtf2f2a	B8JHR3	17	183	General transcription factor IIF subunit 2	w
+GENERAL	zebrafish	E7EZ29	gtf3c5	E7EZ29	7	38	General transcription factor 3C polypeptide 5	w
+GENERAL	zebrafish	F1Q5E7	ercc2	F1Q5E7	8	211	General transcription and DNA repair factor IIH helicase sub	w
+GENERAL	zebrafish	F1R215	gtf3c2	F1R215	2	19	General transcription factor 3C polypeptide 2 isoform X1	w
+GENERAL	zebrafish	F1R8F7	ston1	F1R8F7	0	13	General transcription factor IIA, 1-like	w
+GENERAL	zebrafish	F1RDA7	gtf3c3	F1RDA7	5	51	General transcription factor 3C polypeptide 3	w
+GENERAL	zebrafish	Q08BV4	gtf2a1l	Q08BV4	5	117	General transcription factor IIA, 1-like	w
+GENERAL	zebrafish	Q29RA7	tamalin	Q29RA7	6	21	GRP1 (general receptor for phosphoinositides 1)-associated s	w
+GENERAL	zebrafish	Q5SNQ6	gtf2h5	Q5SNQ6	5	170	General transcription and DNA repair factor IIH subunit TFB5	w
+GENERAL	zebrafish	Q5SQE1	gtf2e1	Q5SQE1	11	179	General transcription factor IIE subunit 1	w
+GENERAL	zebrafish	Q66I03	gtf2h1	Q66I03	18	206	General transcription factor IIH subunit 1	w
+GENERAL	zebrafish	Q7ZVV1	ercc3	Q7ZVV1	7	230	General transcription and DNA repair factor IIH helicase/tra	w
+GENERAL	zebrafish	Q7ZVV4	gtf2h2	Q7ZVV4	14	182	General transcription factor IIH subunit	w
+GENERAL	zebrafish	Q7ZW40	uso1	Q7ZW40	15	68	General vesicular transport factor p115	w
+GENERALLY	human	O43491	EPB41L2	O43491	57	307	Band 4.1-like protein 2 (Erythrocyte membrane protein band 4	w
+GENERATIVE	fly	FBgn0054027	CG34027	Q2PDQ0	0	1	Generative cell specific-1/HAP2 domain-containing protein	w
+GENES	fly	FBgn0025456	CREG	Q9VEK7	22	588	Cellular repressor of E1A-stimulated genes, isoform A (Cellu	w
+GENES	fly	FBgn0033453	Sting	A0A0B4LFY9	0	13	Stimulator of interferon genes protein homolog (dSTING) (dmS	w
+GENES	human	O75629	CREG1	O75629	5	389	Protein CREG1 (Cellular repressor of E1A-stimulated genes 1)	w
+GENES	human	Q86WV6	STING1	Q86WV6	13	216	Stimulator of interferon genes protein (hSTING) (Endoplasmic	w
+GENES	human	Q8IUH2	CREG2	Q8IUH2	15	340	Protein CREG2 (Cellular repressor of E1A-stimulated genes 2)	w
+GENES	yeast	P07261	GCR1	P07261	1	21	Glycolytic genes transcriptional activator GCR1	w
+GENES	yeast	P40467	ASG1	P40467	0	13	Activator of stress genes 1	w
+GENES	yeast	Q01722	GCR2	Q01722	2	18	Glycolytic genes transcriptional activator GCR2	w
+GENES	zebrafish	A0A0R4IZQ0	creg1	A0A0R4IZQ0	0	1	Cellular repressor of E1A-stimulated genes 1	w
+GENES	zebrafish	E7F4N7	sting1	E7F4N7	2	69	Stimulator of interferon genes protein	w
+GENESIS	human	Q9UJU5	FOXD3	Q9UJU5	96	396	Forkhead box protein D3 (HNF3/FH transcription factor genesi	w
+GENETHONIN-1	human	O95210	STBD1	O95210	33	139	Starch-binding domain-containing protein 1 (Genethonin-1) (G	w
+GENETHONIN-2	human	Q9UMS6	SYNPO2	Q9UMS6	13	42	Synaptopodin-2 (Genethonin-2) (Myopodin)	w
+GENETIC	human	Q14687	GSE1	Q14687	55	217	Genetic suppressor element 1	w
+GENETIC	yeast	P53171	GEP7	P53171	0	7	Genetic interactor of prohibitin 7, mitochondrial	w
+GENETIC	yeast	Q08622	GEP3	Q08622	1	6	Genetic interactor of prohibitins 3, mitochondrial	w
+GENETIC	yeast	Q12393	GEP5	Q12393	1	5	Genetic interactor of prohibitin 5, mitochondrial	w
+GENETIC	zebrafish	E7F5N8	gse1a	E7F5N8	0	8	Genetic suppressor element 1 isoform X1	w
+GENETIC	zebrafish	Q1LWL6	gse1	Q1LWL6	0	8	Genetic suppressor element 1	w
+GENETIC-SCREENED	human	Q9BZM3	GSX2	Q9BZM3	82	352	GS homeobox 2 (Genetic-screened homeobox 2) (Homeobox protei	w
+GENEY	human	Q7Z4K8	TRIM46	Q7Z4K8	37	170	Tripartite motif-containing protein 46 (Gene Y protein) (Gen	w
+GENGHIS	fly	FBgn0023081	gek	Q9W1B0	131	1032	Serine/threonine-protein kinase Genghis Khan (EC 2.7.11.1)	w
+GENKI	fly	FBgn0010114	hig	Q09101	40	303	Locomotion-related protein Hikaru genki	w
+GENOME	human	Q96E14	RMI2	Q96E14	15	137	RecQ-mediated genome instability protein 2 (hRMI2) (BLM-asso	w
+GENOME	human	Q9BQP7	MGME1	Q9BQP7	19	125	Mitochondrial genome maintenance exonuclease 1 (EC 3.1.-.-)	w
+GENOME	human	Q9H9A7	RMI1	Q9H9A7	44	203	RecQ-mediated genome instability protein 1 (BLM-associated p	w
+GENOME	virus	A0A023IN45_pd1032667a3		A0A023IN45	0	11	Viral protein genome linked	w
+GENOME	virus	A0A023PJE6_pd3e9b25451		A0A023PJE6	0	8	Viral genome linked protein	w
+GENOME	virus	A0A060VG16_p6ee46997b5		A0A060VG16	1	11	Viral protein genome linked	w
+GENOME	virus	A0A076JAH1_pca23617a76		A0A076JAH1	0	8	Viral genome linked protein	w
+GENOME	virus	A0A076V8N6_pbf2b0fb1ca		A0A076V8N6	0	13	Viral protein genome linked	w
+GENOME	virus	A0A076VCM4_p79e355db4d		A0A076VCM4	0	12	Viral protein genome linked	w
+GENOME	virus	A0A097KZN7_pe9b0d4b627		A0A097KZN7	0	9	Viral protein genome linked	w
+GENOME	virus	A0A097ZPI0_p3d4416f33f		A0A097ZPI0	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0A0R237_ped4d135bef		A0A0A0R237	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0A0R971_p0216e518b1		A0A0A0R971	0	10	Viral protein genome linked	w
+GENOME	virus	A0A0B5GG60_p6dcc919db8		A0A0B5GG60	2	12	Viral protein genome linked	w
+GENOME	virus	A0A0B5HPB2_pccca62f552		A0A0B5HPB2	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0D3MCC7_p28538401bb		A0A0D3MCC7	0	11	Viral protein genome linked	w
+GENOME	virus	A0A0D3MDA4_pb2014b3cc8		A0A0D3MDA4	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0D3MDN0_p85a6c8658d		A0A0D3MDN0	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0E3GP40_p9364a73001		A0A0E3GP40	3	11	Viral protein genome linked	w
+GENOME	virus	A0A0E3JW61_p9364a73001		A0A0E3JW61	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0M3R836_pde9630e1bb		A0A0M3R836	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0M3VGG2_p01a7553d6d		A0A0M3VGG2	1	12	Viral protein genome linked	w
+GENOME	virus	A0A0M4TZ36_p01a7553d6d		A0A0M4TZ36	1	12	Viral protein genome linked	w
+GENOME	virus	A0A0M4UP75_pa792e1165a		A0A0M4UP75	1	12	Viral protein genome linked	w
+GENOME	virus	A0A0N9HRV4_pb3c3366297		A0A0N9HRV4	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0N9HSR5_pb3c3366297		A0A0N9HSR5	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M389_pdba88baaf2		A0A0S1M389	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3B2_pface5fd836		A0A0S1M3B2	0	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3B3_p3ae257be92		A0A0S1M3B3	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3B6_pdc488cc141		A0A0S1M3B6	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3B7_pa5ea5302a5		A0A0S1M3B7	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3B8_p5cadb510d3		A0A0S1M3B8	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3C1_p9e62fcb1cd		A0A0S1M3C1	0	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3C3_p40e7134af9		A0A0S1M3C3	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3C5_p917e35ec89		A0A0S1M3C5	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0S1M3C6_p07592e7594		A0A0S1M3C6	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0U1Y1G0_pf76faf6053		A0A0U1Y1G0	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0U1YYL5_peb7950f070		A0A0U1YYL5	0	11	Viral protein genome linked	w
+GENOME	virus	A0A0U1Z254_p7ffa106d26		A0A0U1Z254	0	11	Viral protein genome linked	w
+GENOME	virus	A0A0U1Z270_p3c107b46df		A0A0U1Z270	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0U2SQ69_p55fbb5934e		A0A0U2SQ69	1	10	Viral protein genome linked	w
+GENOME	virus	A0A0U2U7C6_p7a08927fb0		A0A0U2U7C6	2	11	Viral protein genome linked	w
+GENOME	virus	A0A0U2UT22_p426fb2284e		A0A0U2UT22	1	11	Viral protein genome linked	w
+GENOME	virus	A0A0Y0DH04_pa4e04787df		A0A0Y0DH04	1	10	Viral protein genome linked	w
+GENOME	virus	A0A141QRW8_peaedbfc3db		A0A141QRW8	1	6	Viral protein genome linked	w
+GENOME	virus	A0A142DDH1_p700e524c39		A0A142DDH1	1	11	Viral protein genome linked	w
+GENOME	virus	A0A145Y3F3_pa82d2b82e0		A0A145Y3F3	2	11	Viral protein genome linked	w
+GENOME	virus	A0A172GFP5_p06cd113564		A0A172GFP5	1	11	Viral protein genome linked	w
+GENOME	virus	A0A193AUM2_p802e145048		A0A193AUM2	1	11	Viral protein genome linked	w
+GENOME	virus	A0A193DXD7_pd4c9710d37		A0A193DXD7	1	10	Viral protein genome linked	w
+GENOME	virus	A0A193DXE3_p6378494ea9		A0A193DXE3	1	9	Viral protein genome linked	w
+GENOME	virus	A0A1B4Z1H7_pa993f8fd45		A0A1B4Z1H7	0	11	Viral protein genome linked	w
+GENOME	virus	A0A1I9WAL8_pf0272fb1a8		A0A1I9WAL8	0	11	Viral protein genome linked	w
+GENOME	virus	A0A1I9WAM0_p8b1f92eca2		A0A1I9WAM0	0	11	Viral protein genome linked	w
+GENOME	virus	A0A1S5VYQ4_p11a33418cd		A0A1S5VYQ4	2	11	Viral protein genome linked	w
+GENOME	virus	A0A1S5VYQ5_ped841a03c3		A0A1S5VYQ5	1	10	Viral protein genome linked	w
+GENOME	virus	A0A1S6ZGH7_p993c899e8b		A0A1S6ZGH7	1	11	Viral protein genome linked	w
+GENOME	virus	A0A238TMC8_pac8699dfe1	polyprotein	A0A238TMC8	1	11	Viral protein genome linked	w
+GENOME	virus	A0A240F7S2_pe7f453b12f		A0A240F7S2	1	8	Viral genome linked protein	w
+GENOME	virus	A0A248AAI2_p4127f723bc		A0A248AAI2	1	12	Viral protein genome linked	w
+GENOME	virus	A0A291FH43_pf8b1815b97		A0A291FH43	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2H4RDT0_p847e7c714f		A0A2H4RDT0	2	12	Viral protein genome linked	w
+GENOME	virus	A0A2H4RDT2_p4376f4bb34		A0A2H4RDT2	2	12	Viral protein genome linked	w
+GENOME	virus	A0A2H4RDT5_p9f3c221e18		A0A2H4RDT5	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2H4RDT6_p4b722317dd		A0A2H4RDT6	3	12	Viral protein genome linked	w
+GENOME	virus	A0A2H4RDT9_pe07d210455		A0A2H4RDT9	1	12	Viral protein genome linked	w
+GENOME	virus	A0A2H4RDU9_p0f3138cf21		A0A2H4RDU9	1	12	Viral protein genome linked	w
+GENOME	virus	A0A2H4UZA4_p501d05abd5		A0A2H4UZA4	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2H5AJN4_p0903dfc44b		A0A2H5AJN4	2	11	Viral protein genome linked	w
+GENOME	virus	A0A2K9YN85_pf1ec2ad35d		A0A2K9YN85	2	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1C6L6_p389b7096e6		A0A2P1C6L6	2	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN28_pcccf2788ce		A0A2P1GN28	1	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN30_p37215532f8		A0A2P1GN30	1	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN36_p4629d23324		A0A2P1GN36	1	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN45_p46ef3e7fb3		A0A2P1GN45	1	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN56_p00c7e5edf4		A0A2P1GN56	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN66_pd957e4aded		A0A2P1GN66	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN77_p06633379e0		A0A2P1GN77	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN81_p1e2b523651		A0A2P1GN81	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GN85_pfabc4c01c6		A0A2P1GN85	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2P1GNA3_pf41815c18b		A0A2P1GNA3	0	11	Viral protein genome linked	w
+GENOME	virus	A0A2R4N9G3_p4d7952fe17		A0A2R4N9G3	0	12	Viral protein genome linked	w
+GENOME	virus	A0A2S0SYS6_p996be4a732		A0A2S0SYS6	2	11	Viral protein genome linked	w
+GENOME	virus	A0A2S1YF43_pbcf3cdbcf0		A0A2S1YF43	2	12	Viral protein genome linked	w
+GENOME	virus	A0A2S1YF50_pdcab0a9adb		A0A2S1YF50	1	12	Viral protein genome linked	w
+GENOME	virus	A0A2S1YF57_pa2c29af1ca		A0A2S1YF57	1	12	Viral protein genome linked	w
+GENOME	virus	A0A2S1YF60_p2ba60c2289		A0A2S1YF60	1	12	Viral protein genome linked	w
+GENOME	virus	A0A2S1YF64_p4d744d5377		A0A2S1YF64	1	12	Viral protein genome linked	w
+GENOME	virus	A0A3S5HUR1_pdff98f4454		A0A3S5HUR1	1	11	Viral protein genome linked	w
+GENOME	virus	A0A411EW42_pab440bf544		A0A411EW42	0	12	Viral protein genome linked	w
+GENOME	virus	A0A484HNJ6_pbbe6dda14d		A0A484HNJ6	2	12	Viral protein genome linked	w
+GENOME	virus	A0AC59EWD6_p1909ecbeab		A0AC59EWD6	2	12	Viral protein genome linked	w
+GENOME	virus	A0AC59HC16_paf6eb04843		A0AC59HC16	0	11	Viral protein genome linked	w
+GENOME	virus	A0AC59HC26_pf0f3cf7b29		A0AC59HC26	2	13	Viral protein genome linked	w
+GENOME	virus	A0AC59HC36_p45df83c7b3		A0AC59HC36	1	11	Viral protein genome linked	w
+GENOME	virus	A0AC61LP38_p801dccccbc		A0AC61LP38	1	13	Viral protein genome linked	w
+GENOME	virus	A0ACM8DFZ3_p397d0c2fcc		A0ACM8DFZ3	1	12	Viral protein genome linked	w
+GENOME	virus	A0MHB7_p7179912c35		A0MHB7	0	11	Viral protein genome linked	w
+GENOME	virus	A3QWZ2_p3347af78aa		A3QWZ2	2	11	Viral protein genome linked	w
+GENOME	virus	A4UHT9_p386cc92636		A4UHT9	0	11	Viral protein genome linked	w
+GENOME	virus	A5GZD5_p52338e650a		A5GZD5	1	11	Viral protein genome linked	w
+GENOME	virus	A5GZD6_p5bfadaabbf		A5GZD6	0	11	Viral protein genome linked	w
+GENOME	virus	A5GZD7_p358cac67b8		A5GZD7	1	11	Viral protein genome linked	w
+GENOME	virus	A5GZD8_p3cb806789e		A5GZD8	1	11	Viral protein genome linked	w
+GENOME	virus	A5GZD9_pb3b535feaa		A5GZD9	0	11	Viral protein genome linked	w
+GENOME	virus	A5GZE0_pab671d849c		A5GZE0	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZE1_pba3b63fedf		A5GZE1	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZE2_p1b480bb2cc		A5GZE2	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZE3_p3dd34744cc		A5GZE3	1	11	Viral protein genome linked	w
+GENOME	virus	A5GZE4_pb080aa46bf		A5GZE4	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZE5_pba3b63fedf		A5GZE5	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZE6_p7b1b9b4e68		A5GZE6	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZE7_p1b480bb2cc		A5GZE7	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZE9_p1b480bb2cc		A5GZE9	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZF0_pba3b63fedf		A5GZF0	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZF1_p2782641fc1		A5GZF1	1	11	Viral protein genome linked	w
+GENOME	virus	A5GZF2_p7a666797fb		A5GZF2	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZF3_p7a666797fb		A5GZF3	3	11	Viral protein genome linked	w
+GENOME	virus	A5GZF4_p4e4c76a883		A5GZF4	1	11	Viral protein genome linked	w
+GENOME	virus	A5GZF5_pe0c3d7d514		A5GZF5	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZF6_pe0c3d7d514		A5GZF6	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZF7_pda8f20dd72		A5GZF7	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZF8_p8612061925		A5GZF8	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZF9_p58e763fba7		A5GZF9	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZG0_p91ce15a281		A5GZG0	2	11	Viral protein genome linked	w
+GENOME	virus	A5GZG1_p1b480bb2cc		A5GZG1	2	11	Viral protein genome linked	w
+GENOME	virus	A5LGG1_p03e609f963		A5LGG1	1	10	Viral protein genome linked	w
+GENOME	virus	A5Y0T1_pc36698d133		A5Y0T1	1	12	Viral protein genome linked	w
+GENOME	virus	A6XB61_p16986d5b6a		A6XB61	1	12	Viral protein genome linked	w
+GENOME	virus	A7KC06_p2782641fc1		A7KC06	2	11	Viral protein genome linked	w
+GENOME	virus	A7KC07_p84d92c0727		A7KC07	2	11	Viral protein genome linked	w
+GENOME	virus	A7KC08_p7fc9d3bec9		A7KC08	2	11	Viral protein genome linked	w
+GENOME	virus	A7KC09_pba3b63fedf		A7KC09	2	11	Viral protein genome linked	w
+GENOME	virus	A7KC10_p4a4575bcb9		A7KC10	2	11	Viral protein genome linked	w
+GENOME	virus	A7KC11_p656c003cbe		A7KC11	2	11	Viral protein genome linked	w
+GENOME	virus	A7KC12_p358cac67b8		A7KC12	1	11	Viral protein genome linked	w
+GENOME	virus	A7KC15_pcffe1e4c38		A7KC15	2	11	Viral protein genome linked	w
+GENOME	virus	A7KC17_pb6f3e9a3e4		A7KC17	0	11	Viral protein genome linked	w
+GENOME	virus	A7TUB1_pb28398901f		A7TUB1	1	11	Viral protein genome linked	w
+GENOME	virus	A7TUB2_p3adacf2133		A7TUB2	2	11	Viral protein genome linked	w
+GENOME	virus	A7YF31_p9baa88fc5d		A7YF31	1	11	Viral protein genome linked	w
+GENOME	virus	A7YF37_p486cd0d216		A7YF37	1	11	Viral protein genome linked	w
+GENOME	virus	A8D7N3_p8b6b157d27	SPV1gp1	A8D7N3	1	11	Viral protein genome linked	w
+GENOME	virus	A8S322_pb5581fa19a		A8S322	0	11	Viral protein genome linked	w
+GENOME	virus	A8S330_pfd142f4ae6		A8S330	0	11	Viral protein genome linked	w
+GENOME	virus	A8S334_p06cd113564		A8S334	1	11	Viral protein genome linked	w
+GENOME	virus	B2Y6C9_p3b6d3e4aae		B2Y6C9	1	8	Viral genome linked protein	w
+GENOME	virus	B3SRP1_p36839bdce6		B3SRP1	0	11	Viral protein genome linked	w
+GENOME	virus	B5A1N0_p3ac93db2aa		B5A1N0	2	12	Viral protein genome linked	w
+GENOME	virus	B5BSU4_pafcb8065d1		B5BSU4	2	11	Viral protein genome linked	w
+GENOME	virus	B5BSU5_p9baa88fc5d		B5BSU5	1	11	Viral protein genome linked	w
+GENOME	virus	B7T8D2_p33d50e3be2		B7T8D2	1	11	Viral protein genome linked	w
+GENOME	virus	B9UD49_pabc96863d1		B9UD49	1	10	Viral protein genome linked	w
+GENOME	virus	B9UK62_p90c3b1e8cc		B9UK62	1	10	Viral protein genome linked	w
+GENOME	virus	B9V433_p82d3e543f3		B9V433	1	11	Viral protein genome linked	w
+GENOME	virus	B9V434_p4b7d252310		B9V434	1	11	Viral protein genome linked	w
+GENOME	virus	B9V437_p1b480bb2cc		B9V437	2	11	Viral protein genome linked	w
+GENOME	virus	B9V439_p1b480bb2cc		B9V439	2	11	Viral protein genome linked	w
+GENOME	virus	B9V440_pba3b63fedf		B9V440	2	9	Viral protein genome linked	w
+GENOME	virus	B9V441_p701489e316		B9V441	2	11	Viral protein genome linked	w
+GENOME	virus	B9V442_p506e3012b5		B9V442	2	11	Viral protein genome linked	w
+GENOME	virus	B9V443_p1b480bb2cc		B9V443	2	7	Viral protein genome linked	w
+GENOME	virus	B9V444_p1b480bb2cc		B9V444	2	11	Viral protein genome linked	w
+GENOME	virus	B9V445_pdae129667e		B9V445	0	10	Viral protein genome linked	w
+GENOME	virus	B9V446_pba3b63fedf		B9V446	0	10	Viral protein genome linked	w
+GENOME	virus	B9V447_p1b480bb2cc		B9V447	1	9	Viral protein genome linked	w
+GENOME	virus	B9V448_p1b480bb2cc		B9V448	2	10	Viral protein genome linked	w
+GENOME	virus	B9V449_pbc08e4b354		B9V449	2	10	Viral protein genome linked	w
+GENOME	virus	B9V450_p1b480bb2cc		B9V450	2	11	Viral protein genome linked	w
+GENOME	virus	B9V451_p82d3e543f3		B9V451	0	11	Viral protein genome linked	w
+GENOME	virus	B9V452_pe0b3b50529		B9V452	2	10	Viral protein genome linked	w
+GENOME	virus	B9V453_pd0bb04abcc		B9V453	2	11	Viral protein genome linked	w
+GENOME	virus	B9V454_p1b480bb2cc		B9V454	2	11	Viral protein genome linked	w
+GENOME	virus	B9V456_p91ce15a281		B9V456	2	10	Viral protein genome linked	w
+GENOME	virus	B9V457_pe1dc3b4f66		B9V457	1	10	Viral protein genome linked	w
+GENOME	virus	B9V458_p358cac67b8		B9V458	1	11	Viral protein genome linked	w
+GENOME	virus	B9V459_pba3b63fedf		B9V459	2	11	Viral protein genome linked	w
+GENOME	virus	B9V461_p1b480bb2cc		B9V461	2	11	Viral protein genome linked	w
+GENOME	virus	B9V462_p91ce15a281		B9V462	2	10	Viral protein genome linked	w
+GENOME	virus	B9V463_p8bb5223bcb		B9V463	2	10	Viral protein genome linked	w
+GENOME	virus	B9V464_pba3b63fedf		B9V464	2	11	Viral protein genome linked	w
+GENOME	virus	B9V465_pe87177e804		B9V465	2	11	Viral protein genome linked	w
+GENOME	virus	B9V466_p378cfbca80		B9V466	2	10	Viral protein genome linked	w
+GENOME	virus	B9V467_p1b480bb2cc		B9V467	2	11	Viral protein genome linked	w
+GENOME	virus	B9V468_p0dde02e0fe		B9V468	2	11	Viral protein genome linked	w
+GENOME	virus	B9V469_p1eefc980d3		B9V469	2	10	Viral protein genome linked	w
+GENOME	virus	B9V470_p1b480bb2cc		B9V470	2	11	Viral protein genome linked	w
+GENOME	virus	B9V471_pe0c3d7d514		B9V471	2	10	Viral protein genome linked	w
+GENOME	virus	B9V472_p358cac67b8		B9V472	1	9	Viral protein genome linked	w
+GENOME	virus	B9V473_pe01368c672		B9V473	2	11	Viral protein genome linked	w
+GENOME	virus	B9V474_pa61c0f1bc3		B9V474	1	11	Viral protein genome linked	w
+GENOME	virus	B9V475_pba3b63fedf		B9V475	1	9	Viral protein genome linked	w
+GENOME	virus	B9V476_p31d3e1d4c5		B9V476	1	11	Viral protein genome linked	w
+GENOME	virus	B9V477_pe0c3d7d514		B9V477	1	10	Viral protein genome linked	w
+GENOME	virus	B9V478_p1b480bb2cc		B9V478	2	10	Viral protein genome linked	w
+GENOME	virus	B9V482_pb3bf399df1		B9V482	1	10	Viral protein genome linked	w
+GENOME	virus	B9V483_pbd3b463271		B9V483	0	9	Viral protein genome linked	w
+GENOME	virus	B9V484_p1b480bb2cc		B9V484	2	11	Viral protein genome linked	w
+GENOME	virus	B9V485_pc08bffa518		B9V485	1	10	Viral protein genome linked	w
+GENOME	virus	B9V488_pa5e4d00013		B9V488	1	10	Viral protein genome linked	w
+GENOME	virus	B9V489_p358cac67b8		B9V489	1	9	Viral protein genome linked	w
+GENOME	virus	B9V490_p6caee92e95		B9V490	1	11	Viral protein genome linked	w
+GENOME	virus	B9V492_p1b480bb2cc		B9V492	2	10	Viral protein genome linked	w
+GENOME	virus	B9V493_pf7dbdc202e		B9V493	0	11	Viral protein genome linked	w
+GENOME	virus	B9V495_p251378155d		B9V495	0	10	Viral protein genome linked	w
+GENOME	virus	B9V496_pba3b63fedf		B9V496	2	11	Viral protein genome linked	w
+GENOME	virus	B9V498_p1eefc980d3		B9V498	2	10	Viral protein genome linked	w
+GENOME	virus	B9V4A9_p358cac67b8		B9V4A9	1	11	Viral protein genome linked	w
+GENOME	virus	C4N5E9_p0df06c0a78		C4N5E9	0	8	Viral genome linked protein	w
+GENOME	virus	C5HDF8_p3dc074fc10		C5HDF8	0	11	Viral protein genome linked	w
+GENOME	virus	C6EN53_p7e3f8223fe		C6EN53	1	11	Viral protein genome linked	w
+GENOME	virus	C6EN54_pef0d7f3a58		C6EN54	1	11	Viral protein genome linked	w
+GENOME	virus	C6ENF3_p9d88ffe1e0		C6ENF3	2	11	Viral protein genome linked	w
+GENOME	virus	C6ENF4_pa648f63078		C6ENF4	1	11	Viral protein genome linked	w
+GENOME	virus	C7DUC6_pee4b943483		C7DUC6	1	11	Viral protein genome linked	w
+GENOME	virus	C7DUC7_p3c28eeb349		C7DUC7	0	11	Viral protein genome linked	w
+GENOME	virus	C9DDK2_p64ce43e657		C9DDK2	1	11	Viral protein genome linked	w
+GENOME	virus	D2IW00_p6738d86e58		D2IW00	2	11	Viral protein genome linked	w
+GENOME	virus	D6QS60_p7a7780d79f		D6QS60	0	9	Viral genome linked protein	w
+GENOME	virus	D8VCT6_p2c8d4880c9		D8VCT6	1	11	Viral protein genome linked	w
+GENOME	virus	E1U266_p0f83acfba7		E1U266	2	9	Viral protein genome linked	w
+GENOME	virus	E2J7X9_p8a61abd65e		E2J7X9	0	8	Viral genome linked protein	w
+GENOME	virus	E5D8F2_p2c2aa1d70c		E5D8F2	1	11	Viral protein genome linked	w
+GENOME	virus	E9LS24_p5bfadaabbf		E9LS24	0	11	Viral protein genome linked	w
+GENOME	virus	F5B9S5_p18eb75e14c		F5B9S5	2	11	Viral protein genome linked	w
+GENOME	virus	F6M9Y0_p162595f436		F6M9Y0	1	11	Viral protein genome linked	w
+GENOME	virus	F6N707_p04068dcbcd		F6N707	2	11	Viral protein genome linked	w
+GENOME	virus	G0ZNT5_p52746a3e15		G0ZNT5	0	11	Viral protein genome linked	w
+GENOME	virus	G5D5E3_p7fc9d3bec9		G5D5E3	2	11	Viral protein genome linked	w
+GENOME	virus	G5DBU6_p52338e650a		G5DBU6	1	11	Viral protein genome linked	w
+GENOME	virus	H2E685_pb3c3366297		H2E685	2	11	Viral protein genome linked	w
+GENOME	virus	H6VBU5_pb9101febf9		H6VBU5	0	10	Viral protein genome linked	w
+GENOME	virus	H8Y6P9_pa95e272122		H8Y6P9	1	11	Viral protein genome linked	w
+GENOME	virus	I0DHL5_padf565318c		I0DHL5	1	8	Viral genome linked protein	w
+GENOME	virus	I3UMN1_p9f81b97bdf		I3UMN1	2	11	Viral protein genome linked	w
+GENOME	virus	I6QFL7_pcd27b27642		I6QFL7	1	11	Viral protein genome linked	w
+GENOME	virus	I6YQK4_p1f29007378		I6YQK4	1	11	Viral protein genome linked	w
+GENOME	virus	J7EH30_pf8327a7308		J7EH30	0	8	Viral genome linked protein	w
+GENOME	virus	J7HCF4_p899af7ed64		J7HCF4	0	11	Viral protein genome linked	w
+GENOME	virus	J7JID0_peaedbfc3db		J7JID0	2	11	Viral protein genome linked	w
+GENOME	virus	J7K0G7_p7bd804f04d		J7K0G7	2	10	Viral protein genome linked	w
+GENOME	virus	J9S4C0_p25c0459b61		J9S4C0	1	11	Viral protein genome linked	w
+GENOME	virus	K4HMH3_p4e8fb69e02		K4HMH3	1	11	Viral protein genome linked	w
+GENOME	virus	K4MT64_p1f29007378		K4MT64	1	11	Viral protein genome linked	w
+GENOME	virus	K4NWE0_p560eaf7b9f		K4NWE0	2	12	Viral protein genome linked	w
+GENOME	virus	K7RX76_p3ce312f8b9		K7RX76	1	11	Viral protein genome linked	w
+GENOME	virus	M4PJD6_pae87b0f77b		M4PJD6	1	12	Viral protein genome linked	w
+GENOME	virus	M4T930_pd6939e3314		M4T930	1	11	Viral protein genome linked	w
+GENOME	virus	O73556_p90c3b1e8cc		O73556	1	10	Viral protein genome linked	w
+GENOME	virus	O91734_p9baa88fc5d		O91734	1	11	Viral protein genome linked	w
+GENOME	virus	P03300_pa648f63078		P03300	1	12	Viral protein genome linked	w
+GENOME	virus	P03301_pa648f63078		P03301	2	11	Viral protein genome linked	w
+GENOME	virus	P03302_p3a4fc9ed0e		P03302	1	11	Viral protein genome linked	w
+GENOME	virus	P03303_pb1d1ddd525		P03303	1	11	Viral protein genome linked	w
+GENOME	virus	P04936_pe87177e804		P04936	2	11	Viral protein genome linked	w
+GENOME	virus	P06210_p314cc98639		P06210	2	11	Viral protein genome linked	w
+GENOME	virus	P07210_p8bb5223bcb		P07210	2	11	Viral protein genome linked	w
+GENOME	virus	P08291_p9baa88fc5d		P08291	1	11	Viral protein genome linked	w
+GENOME	virus	P08292_p9baa88fc5d		P08292	1	11	Viral protein genome linked	w
+GENOME	virus	P08617_p51d32d8b35		P08617	1	11	Viral protein genome linked	w
+GENOME	virus	P12915_pb3d8415a5c		P12915	2	11	Viral protein genome linked	w
+GENOME	virus	P12916_p506e3012b5		P12916	2	11	Viral protein genome linked	w
+GENOME	virus	P21404_p0f5103421d		P21404	2	11	Viral protein genome linked	w
+GENOME	virus	P23008_pba3b63fedf		P23008	2	9	Viral protein genome linked	w
+GENOME	virus	P27409_paf03222d83	ORF1	P27409	1	8	Viral genome linked protein	w
+GENOME	virus	P27410_p2181cb1539	ORF1	P27410	1	9	Viral genome linked protein	w
+GENOME	virus	P29813_p9baa88fc5d		P29813	2	11	Viral protein genome linked	w
+GENOME	virus	P32537_pe49df8726f		P32537	1	9	Viral protein genome linked	w
+GENOME	virus	P54634_pd7cdd5f12c	ORF1	P54634	0	8	Viral genome linked protein	w
+GENOME	virus	Q00MX7_pae7d863aa4		Q00MX7	1	10	Viral protein genome linked	w
+GENOME	virus	Q05ED4_p9baa88fc5d		Q05ED4	1	10	Viral protein genome linked	w
+GENOME	virus	Q05ED5_p9baa88fc5d		Q05ED5	2	11	Viral protein genome linked	w
+GENOME	virus	Q05ED6_p486cd0d216		Q05ED6	1	11	Viral protein genome linked	w
+GENOME	virus	Q05ED7_p486cd0d216		Q05ED7	1	11	Viral protein genome linked	w
+GENOME	virus	Q05ED8_p9baa88fc5d		Q05ED8	2	11	Viral protein genome linked	w
+GENOME	virus	Q05ED9_p9baa88fc5d		Q05ED9	2	11	Viral protein genome linked	w
+GENOME	virus	Q05EE1_p9baa88fc5d		Q05EE1	2	11	Viral protein genome linked	w
+GENOME	virus	Q05EE2_p9baa88fc5d		Q05EE2	2	11	Viral protein genome linked	w
+GENOME	virus	Q05EE3_p9baa88fc5d		Q05EE3	2	11	Viral protein genome linked	w
+GENOME	virus	Q05EE4_p9baa88fc5d		Q05EE4	1	11	Viral protein genome linked	w
+GENOME	virus	Q05EE5_p9baa88fc5d		Q05EE5	1	11	Viral protein genome linked	w
+GENOME	virus	Q076B4_pe05ddc6218		Q076B4	1	12	Viral protein genome linked	w
+GENOME	virus	Q0R5W5_p2c3af6ddf0		Q0R5W5	0	9	Viral genome linked protein	w
+GENOME	virus	Q288N7_pc531fa4940	ORF1	Q288N7	1	8	Viral genome linked protein	w
+GENOME	virus	Q2LKY9_peb7386c439		Q2LKY9	1	11	Viral protein genome linked	w
+GENOME	virus	Q2LKZ0_peb7386c439		Q2LKZ0	2	11	Viral protein genome linked	w
+GENOME	virus	Q2LKZ2_pb3d8415a5c		Q2LKZ2	2	11	Viral protein genome linked	w
+GENOME	virus	Q2LL14_peb7386c439		Q2LL14	2	11	Viral protein genome linked	w
+GENOME	virus	Q5GA06_p36839bdce6		Q5GA06	1	11	Viral protein genome linked	w
+GENOME	virus	Q5GA07_p36839bdce6		Q5GA07	1	10	Viral protein genome linked	w
+GENOME	virus	Q5GA08_pcf60dec8fc		Q5GA08	0	11	Viral protein genome linked	w
+GENOME	virus	Q5GA09_pcf60dec8fc		Q5GA09	2	10	Viral protein genome linked	w
+GENOME	virus	Q5IT19_p6014d68c43		Q5IT19	1	9	Viral genome linked protein	w
+GENOME	virus	Q5VAK7_p9baa88fc5d		Q5VAK7	2	11	Viral protein genome linked	w
+GENOME	virus	Q5VAM0_p9baa88fc5d		Q5VAM0	1	11	Viral protein genome linked	w
+GENOME	virus	Q5XLP5_p1b480bb2cc		Q5XLP5	1	11	Viral protein genome linked	w
+GENOME	virus	Q65900_pe5f9ce6cbf		Q65900	1	11	Viral protein genome linked	w
+GENOME	virus	Q66338_pcb6e6d4d02		Q66338	1	11	Viral protein genome linked	w
+GENOME	virus	Q66478_p4f51feddb2		Q66478	2	12	Viral protein genome linked	w
+GENOME	virus	Q66575_p9baa88fc5d		Q66575	1	11	Viral protein genome linked	w
+GENOME	virus	Q66578_p90c3b1e8cc		Q66578	1	10	Viral protein genome linked	w
+GENOME	virus	Q66849_p1ba06bfa40		Q66849	2	11	Viral protein genome linked	w
+GENOME	virus	Q672R3_p20de833661		Q672R3	1	11	Viral protein genome linked	w
+GENOME	virus	Q68T42_p7a5cc1833f		Q68T42	1	11	Viral protein genome linked	w
+GENOME	virus	Q69014_p7a7780d79f	ORF1	Q69014	0	9	Viral genome linked protein	w
+GENOME	virus	Q6JKR7_p796714d9ed		Q6JKR7	1	10	Viral protein genome linked	w
+GENOME	virus	Q6JKR8_p6ee46997b5		Q6JKR8	1	11	Viral protein genome linked	w
+GENOME	virus	Q6JKR9_p796714d9ed		Q6JKR9	1	11	Viral protein genome linked	w
+GENOME	virus	Q6JKS0_p92f024b400		Q6JKS0	2	11	Viral protein genome linked	w
+GENOME	virus	Q6JKS1_p22892fb187		Q6JKS1	1	11	Viral protein genome linked	w
+GENOME	virus	Q6JKS2_p796714d9ed		Q6JKS2	1	11	Viral protein genome linked	w
+GENOME	virus	Q6JKS3_pfa177ca536		Q6JKS3	2	11	Viral protein genome linked	w
+GENOME	virus	Q6JKS4_p796714d9ed		Q6JKS4	1	11	Viral protein genome linked	w
+GENOME	virus	Q6JKS5_p6ee46997b5		Q6JKS5	0	10	Viral protein genome linked	w
+GENOME	virus	Q6JKS6_p796714d9ed		Q6JKS6	1	9	Viral protein genome linked	w
+GENOME	virus	Q6W9E4_p1ba06bfa40		Q6W9E4	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9E5_p0f5103421d		Q6W9E5	2	11	Viral protein genome linked	w
+GENOME	virus	Q6W9E6_p7f979128f6		Q6W9E6	2	11	Viral protein genome linked	w
+GENOME	virus	Q6W9E7_p9baa88fc5d		Q6W9E7	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9E8_p486cd0d216		Q6W9E8	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9E9_p9baa88fc5d		Q6W9E9	2	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F0_p9baa88fc5d		Q6W9F0	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F1_p9baa88fc5d		Q6W9F1	2	10	Viral protein genome linked	w
+GENOME	virus	Q6W9F2_p9baa88fc5d		Q6W9F2	2	10	Viral protein genome linked	w
+GENOME	virus	Q6W9F3_p9baa88fc5d		Q6W9F3	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F4_p9baa88fc5d		Q6W9F4	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F5_p9baa88fc5d		Q6W9F5	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F6_p9baa88fc5d		Q6W9F6	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F7_p9baa88fc5d		Q6W9F7	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F8_p9baa88fc5d		Q6W9F8	2	11	Viral protein genome linked	w
+GENOME	virus	Q6W9F9_p9baa88fc5d		Q6W9F9	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9G0_p9baa88fc5d		Q6W9G0	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9G1_p9baa88fc5d		Q6W9G1	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9G2_p9baa88fc5d		Q6W9G2	2	11	Viral protein genome linked	w
+GENOME	virus	Q6W9G3_p9baa88fc5d		Q6W9G3	1	11	Viral protein genome linked	w
+GENOME	virus	Q6W9G4_p9baa88fc5d		Q6W9G4	2	11	Viral protein genome linked	w
+GENOME	virus	Q6W9G5_p9baa88fc5d		Q6W9G5	1	11	Viral protein genome linked	w
+GENOME	virus	Q7T7N6_pe29229fc01		Q7T7N6	1	11	Viral protein genome linked	w
+GENOME	virus	Q7T7N7_pd6939e3314		Q7T7N7	2	11	Viral protein genome linked	w
+GENOME	virus	Q7T7N8_p314cc98639		Q7T7N8	1	11	Viral protein genome linked	w
+GENOME	virus	Q7T7N9_pf52993b1f1		Q7T7N9	1	11	Viral protein genome linked	w
+GENOME	virus	Q7T7P0_p314cc98639		Q7T7P0	1	10	Viral protein genome linked	w
+GENOME	virus	Q7T7P1_pa648f63078		Q7T7P1	1	11	Viral protein genome linked	w
+GENOME	virus	Q7T7P3_p314cc98639		Q7T7P3	2	11	Viral protein genome linked	w
+GENOME	virus	Q7T7P4_p9a98833f03		Q7T7P4	1	11	Viral protein genome linked	w
+GENOME	virus	Q7T7P5_pf52993b1f1		Q7T7P5	0	11	Viral protein genome linked	w
+GENOME	virus	Q80J95_pf8f564395b	ORF1	Q80J95	0	9	Viral genome linked protein	w
+GENOME	virus	Q80N16_p723758abe0		Q80N16	1	11	Viral protein genome linked	w
+GENOME	virus	Q82081_p5c171b3d4e		Q82081	1	11	Viral protein genome linked	w
+GENOME	virus	Q82122_pba3b63fedf		Q82122	2	11	Viral protein genome linked	w
+GENOME	virus	Q83883_pe0afc7e85a	ORF1	Q83883	0	8	Viral genome linked protein	w
+GENOME	virus	Q8B552_p729d078182		Q8B552	3	12	Viral protein genome linked	w
+GENOME	virus	Q8B8M7_pb16eb17c4a		Q8B8M7	2	11	Viral protein genome linked	w
+GENOME	virus	Q8BES5_p606c717528		Q8BES5	1	10	Viral protein genome linked	w
+GENOME	virus	Q8JJT0_pc5659ca8a0		Q8JJT0	2	12	Viral protein genome linked	w
+GENOME	virus	Q8JN60_pc531fa4940	ORF1	Q8JN60	1	8	Viral genome linked protein	w
+GENOME	virus	Q8JV21_p17cb6916d4		Q8JV21	0	11	Viral protein genome linked	w
+GENOME	virus	Q8QUZ6_pb3c3366297		Q8QUZ6	2	11	Viral protein genome linked	w
+GENOME	virus	Q8UY33_pbe9e34b303		Q8UY33	1	11	Viral protein genome linked	w
+GENOME	virus	Q8UZ80_p05bfeb3cb9		Q8UZ80	0	8	Viral genome linked protein	w
+GENOME	virus	Q8V0P3_pf9ba406966		Q8V0P3	0	8	Viral genome linked protein	w
+GENOME	virus	Q8V398_p1833cd05b4		Q8V398	2	11	Viral protein genome linked	w
+GENOME	virus	Q8V5Z9_p33d50e3be2		Q8V5Z9	2	10	Viral protein genome linked	w
+GENOME	virus	Q8V601_p5bd8021a09		Q8V601	2	11	Viral protein genome linked	w
+GENOME	virus	Q8V604_pb5b99ec7f5		Q8V604	2	11	Viral protein genome linked	w
+GENOME	virus	Q8V606_p65137febab		Q8V606	2	11	Viral protein genome linked	w
+GENOME	virus	Q8V613_p2db715126e		Q8V613	2	11	Viral protein genome linked	w
+GENOME	virus	Q8V614_p67eb94b003		Q8V614	2	11	Viral protein genome linked	w
+GENOME	virus	Q8V635_p1ba06bfa40		Q8V635	1	11	Viral protein genome linked	w
+GENOME	virus	Q96725_pd21d651c5a	ORF1	Q96725	1	9	Viral genome linked protein	w
+GENOME	virus	Q98595_p314cc98639		Q98595	1	11	Viral protein genome linked	w
+GENOME	virus	Q999Y5_p7f979128f6	pol	Q999Y5	2	11	Viral protein genome linked	w
+GENOME	virus	Q9DUN3_p98f2b83ff9	ORF1	Q9DUN3	1	8	Viral genome linked protein	w
+GENOME	virus	Q9PYF2_p9baa88fc5d		Q9PYF2	2	11	Viral protein genome linked	w
+GENOME	virus	Q9QEJ5_p663d0967ba	ORF1	Q9QEJ5	0	8	Viral genome linked protein	w
+GENOME	virus	Q9QL88_p9baa88fc5d		Q9QL88	2	11	Viral protein genome linked	w
+GENOME	virus	Q9WN78_p8998e96303		Q9WN78	2	11	Viral protein genome linked	w
+GENOME	virus	Q9YID8_pb04193b9f2		Q9YID8	1	10	Viral protein genome linked	w
+GENOME	virus	Q9YLG5_p9baa88fc5d		Q9YLG5	2	11	Viral protein genome linked	w
+GENOME	virus	Q9YLJ1_p9baa88fc5d		Q9YLJ1	2	11	Viral protein genome linked	w
+GENOME	virus	Q9YLS4_pa3593659fd		Q9YLS4	1	11	Viral protein genome linked	w
+GENOME	virus	Q9YQ23_pcb3c2937b6		Q9YQ23	1	8	Viral genome linked protein	w
+GENOME	virus	S4VD62_p4e733f85fe		S4VD62	0	11	Viral protein genome linked	w
+GENOME	virus	T1YD22_pb5edce75f9		T1YD22	0	11	Viral protein genome linked	w
+GENOME	virus	T2BA54_peeb60f89e0		T2BA54	0	11	Viral protein genome linked	w
+GENOME	virus	U6BN37_p2813204671		U6BN37	1	11	Viral protein genome linked	w
+GENOME	virus	V9VMS8_p7427a3617b		V9VMS8	1	11	Viral protein genome linked	w
+GENOME	virus	W8GPM9_p39c620280f		W8GPM9	0	11	Viral protein genome linked	w
+GENOME	virus	W8P9I7_p51d929bb3f		W8P9I7	2	11	Viral protein genome linked	w
+GENOME	virus	X2CZS5_p9baa88fc5d		X2CZS5	2	11	Viral protein genome linked	w
+GENOME	virus	X4YD30_pb0f5b14fad		X4YD30	0	15	Viral protein genome linked	w
+GENOME	worm	A9QY30	C27H6.9	A9QY30	0	6	Mitochondrial genome maintenance exonuclease 1	w
+GENOME	worm	G5EF82	rmh-2	G5EF82	5	27	RecQ-mediated genome instability protein 1	w
+GENOME	worm	P91399	rmh-1	P91399	5	19	RecQ-mediated genome instability protein 1 homolog	w
+GENOME	worm	Q8MXU4	rmif-2	Q8MXU4	0	2	RecQ-mediated genome instability protein 2 homolog	w
+GENOME	yeast	P32787	MGM101	P32787	0	55	Mitochondrial genome maintenance protein MGM101	w
+GENOME	yeast	Q02685	RMI1	Q02685	1	19	RecQ-mediated genome instability protein 1	w
+GENOME	zebrafish	A0A0R4IFY3	htr5aa	A0A0R4IFY3	1	21	5-hydroxytryptamine (serotonin) receptor 5A, Genome duplicat	w
+GENOME	zebrafish	A0A0R4IUC9	rmi2	A0A0R4IUC9	2	44	RecQ-mediated genome instability protein 2	w
+GENOME	zebrafish	B3DKC6	myl12.2	B3DKC6	1	41	Myosin, light chain 12, genome duplicate 2	w
+GENOME	zebrafish	F1QCU7	lrrc4cb	F1QCU7	2	23	Leucine-rich repeat-containing 4C, genome duplicate b	w
+GENOME	zebrafish	Q503I7	lrrc4ca	Q503I7	3	24	Leucine rich repeat containing 4C, genome duplicate a isofor	w
+GENOME	zebrafish	Q6PHJ8	myl12.1	Q6PHJ8	1	41	Myosin, light chain 12, genome duplicate 1	w
+GENOME	zebrafish	Q7ZVM9	rmi1	Q7ZVM9	10	61	RecQ-mediated genome instability protein 1	w
+GENOMIC	fly	FBgn0036574	elg1	Q86BP6	9	20	Enhanced level of genomic instability 1	w
+GENX-3745	human	Q9NY35	CLDND1	Q9NY35	17	120	Claudin domain-containing protein 1 (Claudin-25) (Membrane p	w
+GEN_HUMAN	human	Q17RS7	GEN1	Q17RS7	12	146		

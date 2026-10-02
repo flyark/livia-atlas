@@ -1,45 +1,176 @@
-SOX	arabidopsis-thaliana	Q9S850	SOX	Q9S850	1	5	Sulfite oxidase
-SOX	cladophialophora-carrionii	A0A1C1C9L3	SOX	A0A1C1C9L3	0	4	Sulfite oxidase
-SOX	cladophialophora-carrionii	A0A1C1CMI8	SOX	A0A1C1CMI8	2	4	Sulfite oxidase
-SOX1	mus-musculus	P53783	Sox1	P53783	0	3	Transcription factor SOX-1
-SOX10	mus-musculus	Q04888	Sox10	Q04888	0	17	Transcription factor SOX-10
-SOX10	rattus-norvegicus	O55170	Sox10	O55170	0	18	Transcription factor SOX-10
-SOX11	mus-musculus	Q7M6Y2	Sox11	Q7M6Y2	1	8	Transcription factor SOX-11
-SOX11	rattus-norvegicus	P0C1G9	Sox11	P0C1G9	2	14	Transcription factor SOX-11
-SOX12	mus-musculus	Q04890	Sox12	Q04890	0	3	Transcription factor SOX-12
-SOX13	mus-musculus	Q04891	Sox13	Q04891	1	7	Transcription factor SOX-13
-SOX13	rattus-norvegicus	D4A8S0	Sox13	D4A8S0	2	10	SRY-box transcription factor 13
-SOX14	mus-musculus	Q04892	Sox14	Q04892	1	1	Transcription factor SOX-14
-SOX14	rattus-norvegicus	B7SZV3	Sox14	B7SZV3	3	11	SRY-box transcription factor 14
-SOX15	mus-musculus	P43267	Sox15	P43267	1	13	Transcription factor SOX-15
-SOX17	mus-musculus	Q61473	Sox17	Q61473	1	30	Transcription factor SOX-17
-SOX17	rattus-norvegicus	G3V923	Sox17	G3V923	1	19	SRY-box transcription factor 17
-SOX18	mus-musculus	P43680	Sox18	P43680	0	7	Transcription factor SOX-18
-SOX18	rattus-norvegicus	Q4V7E4	Sox18	Q4V7E4	1	8	SRY-box transcription factor 18
-SOX2	mus-musculus	P48432	Sox2	P48432	14	225	Transcription factor SOX-2
-SOX2	rattus-norvegicus	A0ABK0LE60	Sox2	A0ABK0LE60	4	96	SRY-box transcription factor 2
-SOX21	mus-musculus	Q811W0	Sox21	Q811W0	1	3	Transcription factor SOX-21
-SOX3	mus-musculus	P53784	Sox3	P53784	1	9	Transcription factor SOX-3
-SOX30	rattus-norvegicus	F1M453	Sox30	F1M453	1	5	Transcription factor SOX-30
-SOX4	mus-musculus	Q06831	Sox4	Q06831	2	30	Transcription factor SOX-4
-SOX5	mus-musculus	P35710	Sox5	P35710	2	16	Transcription factor SOX-5
-SOX5	rattus-norvegicus	F1M8W4	Sox5	F1M8W4	2	20	Transcription factor SOX-5
-SOX6	mus-musculus	P40645	Sox6	P40645	4	25	Transcription factor SOX-6
-SOX6	rattus-norvegicus	A0A0G2JTZ2	Sox6	A0A0G2JTZ2	5	36	Transcription factor SOX-6
-SOX7	mus-musculus	P40646	Sox7	P40646	2	4	Transcription factor SOX-7
-SOX7	rattus-norvegicus	D3ZTE1	Sox7	D3ZTE1	2	6	SRY-box transcription factor 7
-SOX8	mus-musculus	Q04886	Sox8	Q04886	2	23	Transcription factor SOX-8
-SOX8	rattus-norvegicus	D3ZR96	Sox8	D3ZR96	2	12	SRY-box transcription factor 8
-SOX9	mus-musculus	Q04887	Sox9	Q04887	3	45	Transcription factor SOX-9
-SOX9	rattus-norvegicus	F1LYL9	Sox9	F1LYL9	3	37	Transcription factor SOX-9
-SOXA	pseudomonas-aeruginosa	Q9HTE6	soxA	Q9HTE6	3	183	Sarcosine oxidase alpha subunit
-SOXB	pseudomonas-aeruginosa	Q9HTE8	soxB	Q9HTE8	4	12	Sarcosine oxidase subunit beta
-SOXC	cladophialophora-carrionii	A0A1C1CQ14	soxC	A0A1C1CQ14	0	7	Dibenzothiophene desulfurization enzyme C
-SOXD	pseudomonas-aeruginosa	Q9HTE7	soxD	Q9HTE7	3	28	Sarcosine oxidase delta subunit
-SOXG	pseudomonas-aeruginosa	Q9HTE5	soxG	Q9HTE5	3	28	Sarcosine oxidase gamma subunit
-SOXR	pseudomonas-aeruginosa	Q51506	soxR	Q51506	2	33	Redox-sensitive transcriptional activator SoxR
-SOXR	salmonella-typhimurium	P0A2R0	soxR	P0A2R0	0	16	Redox-sensitive transcriptional activator SoxR
-SOXR	shigella-dysenteriae-serotype-1	Q327X6	soxR	Q327X6	0	23	Redox-sensitive transcriptional activator SoxR
-SOXS	escherichia-coli-83333	P0A9E2	soxS	P0A9E2	0	6	Regulatory protein SoxS
-SOXS	salmonella-typhimurium	Q56143	soxS	Q56143	0	5	Regulatory protein SoxS
-SOXS	shigella-dysenteriae-serotype-1	Q327X5	soxS	Q327X5	0	6	Regulation of superoxide response regulon
+SOX	arabidopsis-thaliana	Q9S850	SOX	Q9S850	1	5	Sulfite oxidase	
+SOX	cladophialophora-carrionii	A0A1C1C9L3	SOX	A0A1C1C9L3	0	4	Sulfite oxidase	
+SOX	cladophialophora-carrionii	A0A1C1CMI8	SOX	A0A1C1CMI8	2	4	Sulfite oxidase	
+SOX-1	human	O00570	SOX1	O00570	68	352	Transcription factor SOX-1	w
+SOX-10	human	P56693	SOX10	P56693	57	514	Transcription factor SOX-10	w
+SOX-10	zebrafish	Q90XD1	sox10	Q90XD1	0	13	Transcription factor SOX-10	w
+SOX-11	human	P35716	SOX11	P35716	57	355	Transcription factor SOX-11	w
+SOX-12	human	O15370	SOX12	O15370	56	356	Transcription factor SOX-12 (Protein SOX-22)	w
+SOX-12	human	O60248	SOX15	O60248	25	498	Transcription factor SOX-15 (Protein SOX-12) (Protein SOX-20	w
+SOX-13	human	Q9UN79	SOX13	Q9UN79	27	100	Transcription factor SOX-13 (Islet cell antigen 12) (SRY (Se	w
+SOX-13	zebrafish	A0AB13A9F2	sox13	A0AB13A9F2	1	8	Transcription factor SOX-13 isoform 1	w
+SOX-14	fly	FBgn0005612	Sox14	P40656	52	371	Putative transcription factor SOX-14	w
+SOX-14	human	O95416	SOX14	O95416	36	343	Transcription factor SOX-14 (Protein SOX-28)	w
+SOX-14	zebrafish	Q32PP9	sox14	Q32PP9	1	3	Transcription factor Sox-14	w
+SOX-15	fly	FBgn0005613	Sox15	P40657	87	362	Putative transcription factor SOX-15 (Sox50E)	w
+SOX-15	human	O60248	SOX15	O60248	25	498	Transcription factor SOX-15 (Protein SOX-12) (Protein SOX-20	w
+SOX-17	human	Q9H6I2	SOX17	Q9H6I2	83	472	Transcription factor SOX-17	w
+SOX-18	human	P35713	SOX18	P35713	53	359	Transcription factor SOX-18	w
+SOX-19A	zebrafish	P47792	sox19a	P47792	0	6	Transcription factor Sox-19a	w
+SOX-19B	zebrafish	Q9DDD7	sox19b	Q9DDD7	1	5	Transcription factor Sox-19b	w
+SOX-1A	zebrafish	Q6DGL6	sox1a	Q6DGL6	2	5	Transcription factor Sox-1a	w
+SOX-1B	zebrafish	Q2Z1R2	sox1b	Q2Z1R2	1	5	Transcription factor Sox-1b	w
+SOX-2	human	P48431	SOX2	P48431	228	1751	Transcription factor SOX-2	w
+SOX-2	worm	Q21305	sox-2	Q21305	1	38	Transcription factor sox-2	w
+SOX-2	worm	Q21305	sox-2	Q21305	1	38	Transcription factor sox-2	w
+SOX-2	zebrafish	Q6P0E1	sox2	Q6P0E1	3	9	Transcription factor Sox-2	w
+SOX-20	human	O60248	SOX15	O60248	25	498	Transcription factor SOX-15 (Protein SOX-12) (Protein SOX-20	w
+SOX-21	human	Q9Y651	SOX21	Q9Y651	41	342	Transcription factor SOX-21 (SOX-A)	w
+SOX-21-A	zebrafish	Q7SZS1	sox21a	Q7SZS1	0	3	Transcription factor Sox-21-A	w
+SOX-21-B	zebrafish	Q6RVD7	sox21b	Q6RVD7	0	3	Transcription factor Sox-21-B	w
+SOX-22	human	O15370	SOX12	O15370	56	356	Transcription factor SOX-12 (Protein SOX-22)	w
+SOX-28	human	O95416	SOX14	O95416	36	343	Transcription factor SOX-14 (Protein SOX-28)	w
+SOX-3	human	P41225	SOX3	P41225	74	355	Transcription factor SOX-3	w
+SOX-3	worm	Q20201	sox-3	Q20201	4	132	Transcription factor sox-3	w
+SOX-3	worm	Q20201	sox-3	Q20201	4	132	Transcription factor sox-3	w
+SOX-3	zebrafish	Q6EJB7	sox3	Q6EJB7	2	9	Transcription factor Sox-3	w
+SOX-30	human	O94993	SOX30	O94993	5	30	Transcription factor SOX-30	w
+SOX-4	human	Q06945	SOX4	Q06945	52	458	Transcription factor SOX-4	w
+SOX-4	worm	A0A1N7SZG1	sox-4	A0A1N7SZG1	0	11	Sex-determining region Y protein	
+SOX-5	human	P35711	SOX5	P35711	54	239	Transcription factor SOX-5	w
+SOX-6	human	P35712	SOX6	P35712	51	259	Transcription factor SOX-6	w
+SOX-6	zebrafish	A0AB32TRN6	sox6	A0AB32TRN6	2	26	Transcription factor SOX-6 isoform X7	w
+SOX-7	human	Q9BT81	SOX7	Q9BT81	72	445	Transcription factor SOX-7	w
+SOX-8	human	P57073	SOX8	P57073	45	387	Transcription factor SOX-8	w
+SOX-8B	zebrafish	A0A8M1N736	sox8b	A0A8M1N736	0	8	Transcription factor SOX-8b	w
+SOX-9	human	P48436	SOX9	P48436	69	522	Transcription factor SOX-9	w
+SOX-A	human	Q9Y651	SOX21	Q9Y651	41	342	Transcription factor SOX-21 (SOX-A)	w
+SOX1	human	O00570	SOX1	O00570	68	352	Transcription factor SOX-1	
+SOX1	mus-musculus	P53783	Sox1	P53783	0	3	Transcription factor SOX-1	
+SOX10	human	P56693	SOX10	P56693	57	514	Transcription factor SOX-10	
+SOX10	mus-musculus	Q04888	Sox10	Q04888	0	17	Transcription factor SOX-10	
+SOX10	rattus-norvegicus	O55170	Sox10	O55170	0	18	Transcription factor SOX-10	
+SOX10	zebrafish	Q90XD1	sox10	Q90XD1	0	13	Transcription factor SOX-10	
+SOX100B	fly	FBgn0024288	Sox100B	Q9VA17	63	389	Sox100B	w
+SOX100B	fly	FBgn0024288	Sox100B	Q9VA17	63	389	Sox100B	w
+SOX102F	fly	FBgn0039938	Sox102F	Q59DN5	88	378	FI18025p1 (Sox102F, isoform B)	w
+SOX102F	fly	FBgn0039938	Sox102F	Q59DN5	88	378	FI18025p1 (Sox102F, isoform B)	w
+SOX10_HUMAN	human	P56693	SOX10	P56693	57	514		
+SOX11	human	P35716	SOX11	P35716	57	355	Transcription factor SOX-11	
+SOX11	mus-musculus	Q7M6Y2	Sox11	Q7M6Y2	1	8	Transcription factor SOX-11	
+SOX11	rattus-norvegicus	P0C1G9	Sox11	P0C1G9	2	14	Transcription factor SOX-11	
+SOX11A	zebrafish	Q9I9C8	sox11a	Q9I9C8	1	5	Transcription factor SOX	
+SOX11_HUMAN	human	P35716	SOX11	P35716	57	355		
+SOX12	human	O15370	SOX12	O15370	56	356	Transcription factor SOX-12 (Protein SOX-22)	
+SOX12	human	O60248	SOX15	O60248	25	498		
+SOX12	mus-musculus	Q04890	Sox12	Q04890	0	3	Transcription factor SOX-12	
+SOX12	zebrafish	A0AB40EAE6	sox12	A0AB40EAE6	1	4	Transcription factor SOX	
+SOX12_HUMAN	human	O15370	SOX12	O15370	56	356		
+SOX13	human	Q9UN79	SOX13	Q9UN79	27	100	Transcription factor SOX-13 (Islet cell antigen 12) (SRY (Se	
+SOX13	mus-musculus	Q04891	Sox13	Q04891	1	7	Transcription factor SOX-13	
+SOX13	rattus-norvegicus	D4A8S0	Sox13	D4A8S0	2	10	SRY-box transcription factor 13	
+SOX13	zebrafish	A0AB13A9F2	sox13	A0AB13A9F2	1	8	Transcription factor SOX-13 isoform 1	
+SOX13_HUMAN	human	Q9UN79	SOX13	Q9UN79	27	100		
+SOX14	fly	FBgn0005612	Sox14	P40656	52	371	Putative transcription factor SOX-14	
+SOX14	human	O95416	SOX14	O95416	36	343	Transcription factor SOX-14 (Protein SOX-28)	
+SOX14	mus-musculus	Q04892	Sox14	Q04892	1	1	Transcription factor SOX-14	
+SOX14	rattus-norvegicus	B7SZV3	Sox14	B7SZV3	3	11	SRY-box transcription factor 14	
+SOX14	zebrafish	Q32PP9	sox14	Q32PP9	1	3	Transcription factor Sox-14	
+SOX14_HUMAN	human	O95416	SOX14	O95416	36	343		
+SOX15	fly	FBgn0005613	Sox15	P40657	87	362	Putative transcription factor SOX-15 (Sox50E)	
+SOX15	human	O60248	SOX15	O60248	25	498	Transcription factor SOX-15 (Protein SOX-12) (Protein SOX-20	
+SOX15	mus-musculus	P43267	Sox15	P43267	1	13	Transcription factor SOX-15	
+SOX15_HUMAN	human	O60248	SOX15	O60248	25	498		
+SOX17	human	Q9H6I2	SOX17	Q9H6I2	83	472	Transcription factor SOX-17	
+SOX17	mus-musculus	Q61473	Sox17	Q61473	1	30	Transcription factor SOX-17	
+SOX17	rattus-norvegicus	G3V923	Sox17	G3V923	1	19	SRY-box transcription factor 17	
+SOX17	zebrafish	Q5PQZ5	sox17	Q5PQZ5	2	6	SRY-box containing gene 17	
+SOX17_HUMAN	human	Q9H6I2	SOX17	Q9H6I2	83	472		
+SOX18	human	P35713	SOX18	P35713	53	359	Transcription factor SOX-18	
+SOX18	mus-musculus	P43680	Sox18	P43680	0	7	Transcription factor SOX-18	
+SOX18	rattus-norvegicus	Q4V7E4	Sox18	Q4V7E4	1	8	SRY-box transcription factor 18	
+SOX18	zebrafish	E7F9I2	sox18	E7F9I2	0	4	SRY-box transcription factor 18	
+SOX18_HUMAN	human	P35713	SOX18	P35713	53	359		
+SOX19A	zebrafish	P47792	sox19a	P47792	0	6	Transcription factor Sox-19a	
+SOX19B	zebrafish	Q9DDD7	sox19b	Q9DDD7	1	5	Transcription factor Sox-19b	
+SOX1A	zebrafish	Q6DGL6	sox1a	Q6DGL6	2	5	Transcription factor Sox-1a	
+SOX1B	zebrafish	Q2Z1R2	sox1b	Q2Z1R2	1	5	Transcription factor Sox-1b	
+SOX1_HUMAN	human	O00570	SOX1	O00570	68	352		
+SOX2	human	P48431	SOX2	P48431	228	1751	Transcription factor SOX-2	
+SOX2	mus-musculus	P48432	Sox2	P48432	14	225	Transcription factor SOX-2	
+SOX2	rattus-norvegicus	A0ABK0LE60	Sox2	A0ABK0LE60	4	96	SRY-box transcription factor 2	
+SOX2	zebrafish	Q6P0E1	sox2	Q6P0E1	3	9	Transcription factor Sox-2	
+SOX20	human	O60248	SOX15	O60248	25	498		
+SOX21	human	Q9Y651	SOX21	Q9Y651	41	342	Transcription factor SOX-21 (SOX-A)	
+SOX21	mus-musculus	Q811W0	Sox21	Q811W0	1	3	Transcription factor SOX-21	
+SOX21A	fly	FBgn0036411	Sox21a	M9PFG6	85	401	Sox21a, isoform B	w
+SOX21A	fly	FBgn0036411	Sox21a	M9PFG6	85	401	Sox21a, isoform B	w
+SOX21A	zebrafish	Q7SZS1	sox21a	Q7SZS1	0	3	Transcription factor Sox-21-A	
+SOX21B	fly	FBgn0042630	Sox21b	M9PCG2	51	408	Sox21b, isoform C	w
+SOX21B	fly	FBgn0042630	Sox21b	M9PCG2	51	408	Sox21b, isoform C	w
+SOX21B	zebrafish	Q6RVD7	sox21b	Q6RVD7	0	3	Transcription factor Sox-21-B	
+SOX21B-PA	fly	FBgn0042630	Sox21b	M9PCG2	51	408		
+SOX21_HUMAN	human	Q9Y651	SOX21	Q9Y651	41	342		
+SOX22	human	O15370	SOX12	O15370	56	356		
+SOX25	human	Q9Y651	SOX21	Q9Y651	41	342		
+SOX26	human	O60248	SOX15	O60248	25	498		
+SOX27	human	O60248	SOX15	O60248	25	498		
+SOX28	human	O95416	SOX14	O95416	36	343		
+SOX2_HUMAN	human	P48431	SOX2	P48431	228	1751		
+SOX3	human	P41225	SOX3	P41225	74	355	Transcription factor SOX-3	
+SOX3	mus-musculus	P53784	Sox3	P53784	1	9	Transcription factor SOX-3	
+SOX3	zebrafish	Q6EJB7	sox3	Q6EJB7	2	9	Transcription factor Sox-3	
+SOX30	human	O94993	SOX30	O94993	5	30	Transcription factor SOX-30	
+SOX30	rattus-norvegicus	F1M453	Sox30	F1M453	1	5	Transcription factor SOX-30	
+SOX30_HUMAN	human	O94993	SOX30	O94993	5	30		
+SOX3_HUMAN	human	P41225	SOX3	P41225	74	355		
+SOX4	human	Q06945	SOX4	Q06945	52	458	Transcription factor SOX-4	
+SOX4	mus-musculus	Q06831	Sox4	Q06831	2	30	Transcription factor SOX-4	
+SOX4A	zebrafish	Q6P0Z4	sox4a	Q6P0Z4	2	9	Transcription factor SOX	
+SOX4_HUMAN	human	Q06945	SOX4	Q06945	52	458		
+SOX5	human	P35711	SOX5	P35711	54	239	Transcription factor SOX-5	
+SOX5	mus-musculus	P35710	Sox5	P35710	2	16	Transcription factor SOX-5	
+SOX5	rattus-norvegicus	F1M8W4	Sox5	F1M8W4	2	20	Transcription factor SOX-5	
+SOX50E	fly	FBgn0005613	Sox15	P40657	87	362	Putative transcription factor SOX-15 (Sox50E)	w
+SOX5_HUMAN	human	P35711	SOX5	P35711	54	239		
+SOX6	human	P35712	SOX6	P35712	51	259	Transcription factor SOX-6	
+SOX6	mus-musculus	P40645	Sox6	P40645	4	25	Transcription factor SOX-6	
+SOX6	rattus-norvegicus	A0A0G2JTZ2	Sox6	A0A0G2JTZ2	5	36	Transcription factor SOX-6	
+SOX6	zebrafish	A0AB32TRN6	sox6	A0AB32TRN6	2	26	Transcription factor SOX-6 isoform X7	
+SOX6_HUMAN	human	P35712	SOX6	P35712	51	259		
+SOX7	human	Q9BT81	SOX7	Q9BT81	72	445	Transcription factor SOX-7	
+SOX7	mus-musculus	P40646	Sox7	P40646	2	4	Transcription factor SOX-7	
+SOX7	rattus-norvegicus	D3ZTE1	Sox7	D3ZTE1	2	6	SRY-box transcription factor 7	
+SOX7	zebrafish	Q6TEN5	sox7	Q6TEN5	3	3	SRY-box 7	
+SOX7_HUMAN	human	Q9BT81	SOX7	Q9BT81	72	445		
+SOX8	human	P57073	SOX8	P57073	45	387	Transcription factor SOX-8	
+SOX8	mus-musculus	Q04886	Sox8	Q04886	2	23	Transcription factor SOX-8	
+SOX8	rattus-norvegicus	D3ZR96	Sox8	D3ZR96	2	12	SRY-box transcription factor 8	
+SOX8A	zebrafish	A0A0R4ITJ3	sox8a	A0A0R4ITJ3	0	8	SRY-box transcription factor 8a	
+SOX8B	zebrafish	A0A8M1N736	sox8b	A0A8M1N736	0	8	Transcription factor SOX-8b	
+SOX8_HUMAN	human	P57073	SOX8	P57073	45	387		
+SOX9	human	P48436	SOX9	P48436	69	522	Transcription factor SOX-9	
+SOX9	mus-musculus	Q04887	Sox9	Q04887	3	45	Transcription factor SOX-9	
+SOX9	rattus-norvegicus	F1LYL9	Sox9	F1LYL9	3	37	Transcription factor SOX-9	
+SOX9A	zebrafish	Q9DFH2	sox9a	Q9DFH2	0	12	Transcription factor sox9a	w
+SOX9A	zebrafish	Q9DFH2	sox9a	Q9DFH2	0	12	Transcription factor sox9a	w
+SOX9B	zebrafish	Q9DFH1	sox9b	Q9DFH1	0	10	HMG box transcription factor Sox9b	w
+SOX9B	zebrafish	Q9DFH1	sox9b	Q9DFH1	0	10	HMG box transcription factor Sox9b	w
+SOX9_HUMAN	human	P48436	SOX9	P48436	69	522		
+SOXA	human	Q9Y651	SOX21	Q9Y651	41	342		
+SOXA	pseudomonas-aeruginosa	Q9HTE6	soxA	Q9HTE6	3	183	Sarcosine oxidase alpha subunit	
+SOXB	pseudomonas-aeruginosa	Q9HTE8	soxB	Q9HTE8	4	12	Sarcosine oxidase subunit beta	
+SOXC	cladophialophora-carrionii	A0A1C1CQ14	soxC	A0A1C1CQ14	0	7	Dibenzothiophene desulfurization enzyme C	
+SOXD	pseudomonas-aeruginosa	Q9HTE7	soxD	Q9HTE7	3	28	Sarcosine oxidase delta subunit	
+SOXG	pseudomonas-aeruginosa	Q9HTE5	soxG	Q9HTE5	3	28	Sarcosine oxidase gamma subunit	
+SOXN	fly	FBgn0029123	SoxN	M9PCZ7	83	370	SoxNeuro, isoform B	
+SOXN	human	Q6ZRP7	QSOX2	Q6ZRP7	14	100		
+SOXNEURO	fly	FBgn0029123	SoxN	M9PCZ7	83	370	SoxNeuro, isoform B	w
+SOXNEURO	fly	FBgn0036349	SNCF	Q9VU59	1	12	GEO07864p1 (RE54375p) (SoxNeuro Co-Factor)	w
+SOXR	pseudomonas-aeruginosa	Q51506	soxR	Q51506	2	33	Redox-sensitive transcriptional activator SoxR	
+SOXR	salmonella-typhimurium	P0A2R0	soxR	P0A2R0	0	16	Redox-sensitive transcriptional activator SoxR	
+SOXR	shigella-dysenteriae-serotype-1	Q327X6	soxR	Q327X6	0	23	Redox-sensitive transcriptional activator SoxR	
+SOXS	escherichia-coli-83333	P0A9E2	soxS	P0A9E2	0	6	Regulatory protein SoxS	
+SOXS	salmonella-typhimurium	Q56143	soxS	Q56143	0	5	Regulatory protein SoxS	
+SOXS	shigella-dysenteriae-serotype-1	Q327X5	soxS	Q327X5	0	6	Regulation of superoxide response regulon	
+SOX_HUMAN	human	Q9P0Z9	PIPOX	Q9P0Z9	6	60		

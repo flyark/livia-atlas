@@ -1,41 +1,915 @@
-STR1	arabidopsis-thaliana	O64530	STR1	O64530	2	34	Thiosulfate/3-mercaptopyruvate sulfurtransferase 1, mitochondrial
-STR11	arabidopsis-thaliana	Q0WWT7	STR11	Q0WWT7	0	3	Rhodanese-like domain-containing protein 11, chloroplastic
-STR15	arabidopsis-thaliana	Q38853	STR15	Q38853	0	52	Rhodanese-like domain-containing protein 15, chloroplastic
-STR16	arabidopsis-thaliana	Q39129	STR16	Q39129	1	46	Thiosulfate sulfurtransferase 16, chloroplastic
-STR17	arabidopsis-thaliana	F4IPI4	STR17	F4IPI4	2	45	Rhodanese-like domain-containing protein 17
-STR18	arabidopsis-thaliana	Q9FKW8	STR18	Q9FKW8	2	45	Thiosulfate sulfurtransferase 18
-STR2	arabidopsis-thaliana	Q24JL3	STR2	Q24JL3	0	34	Thiosulfate/3-mercaptopyruvate sulfurtransferase 2
-STR2	candida-albicans-237561	A0A1D8PD47	STR2	A0A1D8PD47	0	1	cystathionine gamma-synthase
-STR3	schizosaccharomyces-pombe	O94350	str3	O94350	0	3	Cystathionine beta-lyase
-STR4	arabidopsis-thaliana	Q9M158	STR4	Q9M158	0	21	Rhodanese-like domain-containing protein 4, chloroplastic
-STR4A	arabidopsis-thaliana	Q56XR7	STR4A	Q56XR7	0	3	Rhodanese-like domain-containing protein 4A, chloroplastic
-STRA6	mus-musculus	O70491	Stra6	O70491	5	10	Receptor for retinol uptake STRA6
-STRA6	rattus-norvegicus	Q4QR83	Stra6	Q4QR83	3	10	Receptor for retinol uptake STRA6
-STRA6L	rattus-norvegicus	A6IJA5	Stra6l	A6IJA5	0	1	Hypothetical LOC298077
-STRA8	mus-musculus	P70278	Stra8	P70278	4	14	Stimulated by retinoic acid gene 8 protein
-STRA8	rattus-norvegicus	D4ADQ4	Stra8	D4ADQ4	2	4	Stimulated by retinoic acid 8
-STRADA	mus-musculus	Q3UUJ4	Strada	Q3UUJ4	3	29	STE20-related kinase adapter protein alpha
-STRADA	rattus-norvegicus	Q7TNZ6	Strada	Q7TNZ6	4	34	STE20-related kinase adapter protein alpha
-STRADB	mus-musculus	Q8K4T3	Stradb	Q8K4T3	3	21	STE20-related kinase adapter protein beta
-STRADB	rattus-norvegicus	D3ZVH0	Stradb	D3ZVH0	4	27	STE20-related kinase adapter protein beta
-STRAP	cladophialophora-carrionii	A0A1C1CPM0	strap	A0A1C1CPM0	0	3	Serine-threonine kinase receptor-associated protein
-STRAP	dictyostelium-discoideum	Q54LT8	strap	Q54LT8	0	2	Serine-threonine kinase receptor-associated protein
-STRAP	mus-musculus	Q9Z1Z2	Strap	Q9Z1Z2	2	38	Serine-threonine kinase receptor-associated protein
-STRAP	rattus-norvegicus	M0RCV0	Strap	M0RCV0	3	15	Serine-threonine kinase receptor-associated protein
-STRAP	rattus-norvegicus	Q5XIG8	Strap	Q5XIG8	4	28	Serine-threonine kinase receptor-associated protein
-STRBP	mus-musculus	Q91WM1	Strbp	Q91WM1	4	9	Spermatid perinuclear RNA-binding protein
-STRH	streptococcus-pneumoniae	Q8DRL6	strH	Q8DRL6	0	14	Beta-N-acetyl-hexosaminidase
-STRIP1	mus-musculus	Q8C079	Strip1	Q8C079	4	40	Striatin-interacting protein 1
-STRIP1	rattus-norvegicus	G3V8E2	Strip1	G3V8E2	2	38	Striatin-interacting protein 1
-STRIP2	mus-musculus	Q8C9H6	Strip2	Q8C9H6	1	64	Striatin-interacting proteins 2
-STRIP2	rattus-norvegicus	A0A0G2JT26	Strip2	A0A0G2JT26	3	37	Striatin interacting protein 2
-STRIT1	mus-musculus	P0DN83	Strit1	P0DN83	1	1	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator DWORF
-STRK1	oryza-sativa-subsp-japonica	Q7XR88	STRK1	Q7XR88	0	2	Salt tolerance receptor-like cytoplasmic kinase 1
-STRM-1	strongyloides-stercoralis	A0A0K0E275	strm-1	A0A0K0E275	1	45	Methyltransferase
-STRN	dictyostelium-discoideum	Q54J37	strn	Q54J37	2	12	Striatin homolog
-STRN	mus-musculus	O55106	Strn	O55106	9	81	Striatin
-STRN	rattus-norvegicus	P70483	Strn	P70483	9	49	Striatin
-STRN3	mus-musculus	Q9ERG2	Strn3	Q9ERG2	8	57	Striatin-3
-STRN3	rattus-norvegicus	P58405	Strn3	P58405	7	46	Striatin-3
-STRN4	mus-musculus	P58404	Strn4	P58404	7	41	Striatin-4
-STRN4	rattus-norvegicus	A0A8I6AK86	Strn4	A0A8I6AK86	8	45	Striatin 4
+STR-101	worm	O45972	str-101	O45972	0	3	Serpentine receptor class r-10	
+STR-102	worm	O45710	str-102	O45710	0	3	Serpentine receptor class r-10	
+STR-103	worm	O17872	str-103	O17872	0	3	Serpentine receptor class r-10	
+STR-111	worm	O62148	str-111	O62148	0	8	Serpentine receptor class r-10	
+STR-112	worm	O16913	str-112	O16913	0	3	Serpentine receptor class r-10	
+STR-113	worm	Q9UAX4	str-113	Q9UAX4	0	3	Serpentine receptor class r-10	
+STR-115	worm	G5ECI0	str-115	G5ECI0	0	3	Serpentine receptor class r-10	
+STR-116	worm	Q19145	str-116	Q19145	0	12	Serpentine receptor class r-10	
+STR-119	worm	Q9UAU7	str-119	Q9UAU7	0	1	Serpentine receptor class r-10	
+STR-12	worm	O62017	str-12	O62017	0	1	Seven TM Receptor	
+STR-123	worm	O18115	str-123	O18115	0	3	Serpentine receptor class r-10	
+STR-124	worm	O18114	str-124	O18114	0	3	Serpentine receptor class r-10	
+STR-125	worm	O18027	str-125	O18027	0	3	Serpentine receptor class r-10	
+STR-129	worm	Q9GS11	str-129	Q9GS11	0	7	Serpentine receptor class r-10	
+STR-13	worm	O76436	str-13	O76436	0	8	Seven TM Receptor	
+STR-130	worm	O16336	str-130	O16336	0	2	Serpentine receptor class r-10	
+STR-151	worm	O45735	str-151	O45735	0	2	Serpentine receptor class r-10	
+STR-156	worm	Q9N2T6	str-156	Q9N2T6	0	1	Serpentine receptor class r-10	
+STR-166	worm	O44532	str-166	O44532	1	63	Serpentine receptor class r-10	
+STR-169	worm	Q9N2S8	str-169	Q9N2S8	1	23	Serpentine receptor class r-10	
+STR-171	worm	G5EGE5	str-171	G5EGE5	0	27	Serpentine receptor class r-10	
+STR-172	worm	Q9N482	str-172	Q9N482	0	3	Serpentine receptor class r-10	
+STR-173	worm	Q9N483	str-173	Q9N483	0	3	Serpentine receptor class r-10	
+STR-176	worm	G4S3P8	str-176	G4S3P8	0	16	Major facilitator superfamily (MFS) profile domain-containin	
+STR-18	worm	O45805	str-18	O45805	0	2	Seven TM Receptor	
+STR-180	worm	H2L036	str-180	H2L036	0	9	Serpentine receptor class r-10	
+STR-207	worm	O16932	str-207	O16932	0	21	Seven TM Receptor	
+STR-211	worm	O16439	str-211	O16439	0	5	Serpentine receptor class r-10	
+STR-220	worm	Q18568	str-220	Q18568	0	3	Serpentine receptor class r-10	
+STR-222	worm	Q966B4	str-222	Q966B4	0	1	Serpentine receptor class r-10	
+STR-225	worm	O16323	str-225	O16323	0	3	Serpentine receptor class r-10	
+STR-226	worm	O16325	str-226	O16325	0	3	Serpentine receptor class r-10	
+STR-227	worm	O16326	str-227	O16326	0	13	Serpentine receptor class r-10	
+STR-228	worm	O16324	str-228	O16324	0	3	Serpentine receptor class r-10	
+STR-229	worm	O16396	str-229	O16396	0	3	Seven TM Receptor	
+STR-230	worm	Q22521	str-230	Q22521	0	3	Seven TM Receptor	
+STR-243	worm	O61982	str-243	O61982	0	2	Seven TM Receptor	
+STR-245	worm	P91860	str-245	P91860	0	2	Seven TM Receptor	
+STR-264	worm	O17571	str-264	O17571	0	3	Seven TM Receptor	
+STR-267	worm	G5ECX6	str-267	G5ECX6	0	3	Serpentine receptor class r-10	
+STR-27	worm	O45803	str-27	O45803	0	23	Seven TM Receptor	
+STR-32	worm	O01611	str-32	O01611	0	3	Seven TM Receptor	
+STR-38	worm	G5EBN8	str-38	G5EBN8	0	1	Seven TM Receptor	
+STR-43	worm	O45807	str-43	O45807	0	3	Seven TM Receptor	
+STR-44	worm	Q18571	str-44	Q18571	0	3	Seven TM Receptor	
+STR-5	worm	O45809	str-5	O45809	0	3	Seven TM Receptor	
+STR-52	worm	O44691	str-52	O44691	0	3	7TM_GPCR_Srx domain-containing protein	
+STR-55	worm	O62184	str-55	O62184	0	3	Seven TM Receptor	
+STR-56	worm	O18042	str-56	O18042	0	12	Seven TM Receptor	
+STR-57	worm	O18041	str-57	O18041	0	4	Seven TM Receptor	
+STR-6	worm	O45808	str-6	O45808	0	3	Seven TM Receptor	
+STR-66	worm	Q9TXW2	str-66	Q9TXW2	0	3	Seven TM Receptor	
+STR-67	worm	O61888	str-67	O61888	0	3	Seven TM Receptor	
+STR-68	worm	Q9TXW3	str-68	Q9TXW3	0	3	Seven TM Receptor	
+STR-69	worm	Q965G3	str-69	Q965G3	0	3	Seven TM Receptor	
+STR-71	worm	O18121	str-71	O18121	0	3	Seven TM Receptor	
+STR-73	worm	O17841	str-73	O17841	0	3	Seven TM Receptor	
+STR-74	worm	O62060	str-74	O62060	0	9	Seven TM Receptor	
+STR-77	worm	O45893	str-77	O45893	1	3	Seven TM Receptor	
+STR-79	worm	Q9TXM5	str-79	Q9TXM5	2	6	Seven TM Receptor	
+STR-81	worm	Q9XUN2	str-81	Q9XUN2	2	6	Seven TM Receptor	
+STR-82	worm	O44660	str-82	O44660	0	3	Seven TM Receptor	
+STR-83	worm	O44661	str-83	O44661	0	3	Seven TM Receptor	
+STR-89	worm	O62280	str-89	O62280	0	3	Serpentine receptor class r-10	
+STR-90	worm	Q9GS08	str-90	Q9GS08	0	3	Serpentine receptor class r-10	
+STR-92	worm	O62279	str-92	O62279	0	3	Serpentine receptor class r-10	
+STR-93	worm	Q86DA3	str-93	Q86DA3	0	3	Serpentine receptor class r-10	
+STR-94	worm	Q9GS14	str-94	Q9GS14	0	7	Seven TM Receptor	
+STR-96	worm	O18083	str-96	O18083	0	3	Serpentine receptor class r-10	
+STR-97	worm	O45337	str-97	O45337	0	3	Serpentine receptor class r-10	
+STR-99	worm	O45339	str-99	O45339	0	3	Serpentine receptor class r-10	
+STR1	arabidopsis-thaliana	O64530	STR1	O64530	2	34	Thiosulfate/3-mercaptopyruvate sulfurtransferase 1, mitochon	
+STR11	arabidopsis-thaliana	Q0WWT7	STR11	Q0WWT7	0	3	Rhodanese-like domain-containing protein 11, chloroplastic	
+STR15	arabidopsis-thaliana	Q38853	STR15	Q38853	0	52	Rhodanese-like domain-containing protein 15, chloroplastic	
+STR16	arabidopsis-thaliana	Q39129	STR16	Q39129	1	46	Thiosulfate sulfurtransferase 16, chloroplastic	
+STR17	arabidopsis-thaliana	F4IPI4	STR17	F4IPI4	2	45	Rhodanese-like domain-containing protein 17	
+STR18	arabidopsis-thaliana	Q9FKW8	STR18	Q9FKW8	2	45	Thiosulfate sulfurtransferase 18	
+STR2	arabidopsis-thaliana	Q24JL3	STR2	Q24JL3	0	34	Thiosulfate/3-mercaptopyruvate sulfurtransferase 2	
+STR2	candida-albicans-237561	A0A1D8PD47	STR2	A0A1D8PD47	0	1	cystathionine gamma-synthase	
+STR2	yeast	P47164	STR2	P47164	0	9	Cystathionine gamma-synthase	
+STR3	schizosaccharomyces-pombe	O94350	str3	O94350	0	3	Cystathionine beta-lyase	
+STR3	yeast	P53101	STR3	P53101	0	5	Cystathionine beta-lyase	
+STR3N_HUMAN	human	O95772	STARD3NL	O95772	8	90		
+STR4	arabidopsis-thaliana	Q9M158	STR4	Q9M158	0	21	Rhodanese-like domain-containing protein 4, chloroplastic	
+STR4A	arabidopsis-thaliana	Q56XR7	STR4A	Q56XR7	0	3	Rhodanese-like domain-containing protein 4A, chloroplastic	
+STRA13	human	A8MT69	CENPX	A8MT69	22	136		
+STRA13	human	O14503	BHLHE40	O14503	161	549		
+STRA6	human	Q9BX79	STRA6	Q9BX79	8	78	Receptor for retinol uptake STRA6 (Retinol-binding protein r	
+STRA6	mus-musculus	O70491	Stra6	O70491	5	10	Receptor for retinol uptake STRA6	
+STRA6	rattus-norvegicus	Q4QR83	Stra6	Q4QR83	3	10	Receptor for retinol uptake STRA6	
+STRA6	zebrafish	F1RAX4	stra6	F1RAX4	1	9	Receptor for retinol uptake stra6	w
+STRA6	zebrafish	F1RAX4	stra6	F1RAX4	1	9	Receptor for retinol uptake stra6	w
+STRA6-LIKE	zebrafish	A0AB32T087	stra6l	A0AB32T087	0	3	STRA6-like isoform X4	w
+STRA6L	rattus-norvegicus	A6IJA5	Stra6l	A6IJA5	0	1	Hypothetical LOC298077	
+STRA6L	zebrafish	A0AB32T087	stra6l	A0AB32T087	0	3	STRA6-like isoform X4	
+STRA6_HUMAN	human	Q9BX79	STRA6	Q9BX79	8	78		
+STRA8	human	Q7Z7C7	STRA8	Q7Z7C7	10	73	Stimulated by retinoic acid gene 8 protein homolog	
+STRA8	mus-musculus	P70278	Stra8	P70278	4	14	Stimulated by retinoic acid gene 8 protein	
+STRA8	rattus-norvegicus	D4ADQ4	Stra8	D4ADQ4	2	4	Stimulated by retinoic acid 8	
+STRA8_HUMAN	human	Q7Z7C7	STRA8	Q7Z7C7	10	73		
+STRAA_HUMAN	human	Q7RTN6	STRADA	Q7RTN6	7	89		
+STRABISMUS	human	Q8TAA9	VANGL1	Q8TAA9	17	302	Vang-like protein 1 (Loop-tail protein 2 homolog) (LPP2) (St	w
+STRABISMUS	human	Q9ULK5	VANGL2	Q9ULK5	22	259	Vang-like protein 2 (Loop-tail protein 1 homolog) (Strabismu	w
+STRAB_HUMAN	human	Q9C0K7	STRADB	Q9C0K7	14	93		
+STRAD	human	Q7RTN6	STRADA	Q7RTN6	7	89		
+STRAD	human	Q9C0K7	STRADB	Q9C0K7	14	93	STE20-related kinase adapter protein beta (STRAD beta) (Amyo	w
+STRAD	worm	G5ECN5	strd-1	G5ECN5	5	32	STE20-related kinase adapter protein strd-1 (STRAD STE20-rel	w
+STRADA	human	Q7RTN6	STRADA	Q7RTN6	7	89	STE20-related kinase adapter protein alpha (STRAD alpha) (ST	
+STRADA	mus-musculus	Q3UUJ4	Strada	Q3UUJ4	3	29	STE20-related kinase adapter protein alpha	
+STRADA	rattus-norvegicus	Q7TNZ6	Strada	Q7TNZ6	4	34	STE20-related kinase adapter protein alpha	
+STRADA	zebrafish	F1Q5T1	strada	F1Q5T1	4	25	STE20-related kinase adapter protein alpha (STE20-related ad	
+STRADB	human	Q9C0K7	STRADB	Q9C0K7	14	93	STE20-related kinase adapter protein beta (STRAD beta) (Amyo	
+STRADB	mus-musculus	Q8K4T3	Stradb	Q8K4T3	3	21	STE20-related kinase adapter protein beta	
+STRADB	rattus-norvegicus	D3ZVH0	Stradb	D3ZVH0	4	27	STE20-related kinase adapter protein beta	
+STRADB	zebrafish	F1QQD8	stradb	F1QQD8	2	15	STE20-related kinase adapter protein beta	
+STRAIGHT-CHAIN	human	Q15067	ACOX1	Q15067	9	105	Peroxisomal acyl-coenzyme A oxidase 1 (AOX) (EC 1.3.3.6) (Pa	w
+STRAIGHTJACKET	fly	FBgn0261041	stj	A0A0B4K866	115	2354	Straightjacket, isoform C	w
+STRAIT11499	human	Q9NPA3	MID1IP1	Q9NPA3	4	103	Mid1-interacting protein 1 (Gastrulation-specific G12-like p	w
+STRAND	human	A0A0B4J2F0	PIGBOS1	A0A0B4J2F0	18	32	Protein PIGBOS1 (PIGB opposite strand protein 1)	w
+STRAND	human	A0A0U1RRA0	ZNF593OS	A0A0U1RRA0	0	5	Transmembrane protein ZNF593OS (ZNF593 opposite strand prote	w
+STRAND	human	A0A0U1RRL7	MMP24OS	A0A0U1RRL7	3	19	Protein MMP24OS (MMP24 opposite strand)	w
+STRAND	human	A0A0U1RRN3	MISFA	A0A0U1RRN3	4	15	Mitochondrial sheath formation-associated protein (Putative 	w
+STRAND	human	A0A1B0GUC4	MYOCOS	A0A1B0GUC4	2	14	Myocilin opposite strand protein	w
+STRAND	human	A0A1B0GUI7	BRD3OS	A0A1B0GUI7	2	29	Uncharacterized protein BRD3OS (BRD3 opposite strand protein	w
+STRAND	human	A6NMA1	TRPC5OS	A6NMA1	0	7	Putative uncharacterized protein TRPC5OS (TRPC5 opposite str	w
+STRAND	human	A8MTT3	CEBPZOS	A8MTT3	44	126	Protein CEBPZOS (CEBPZ antisense RNA 1) (CEBPZ opposite stra	w
+STRAND	human	C9J7I0	UMAD1	C9J7I0	5	28	UBAP1-MVB12-associated (UMA)-domain containing protein 1 (RP	w
+STRAND	human	H3BPM6	MKRN2OS	H3BPM6	4	20	MKRN2 opposite strand protein (MKRN2 antisense RNA 1) (MKRN2	w
+STRAND	human	I3L0S3	PYCARD-AS1	I3L0S3	0	3	Putative uncharacterized protein PYCARD-AS1 (PYCARD antisens	w
+STRAND	human	P0C853	BAALC-AS2	P0C853	0	2	Putative uncharacterized protein BAALC-AS2 (BAALC antisense 	w
+STRAND	human	P0CW21	SPART-AS1	P0CW21	1	7	Putative uncharacterized protein SPART-AS1 (SPART antisense 	w
+STRAND	human	P0DMR3	ATXN8OS	P0DMR3	0	2	Putative protein ATXN8OS (ATXN8 opposite strand) (Spinocereb	w
+STRAND	human	P0DO92	CDIPTOSP	P0DO92	2	6	Putative protein T-ENOL (CDIP transferase opposite strand, p	w
+STRAND	human	P0DP75	MED14OS	P0DP75	1	9	Putative uncharacterized protein MED14OS (MED14 antisense ge	w
+STRAND	human	Q5K130	CLLU1-AS1	Q5K130	3	34	Putative uncharacterized protein CLLU1-AS1 (CLLU1 antisense 	w
+STRAND	human	Q5T036	FAM120AOS	Q5T036	4	23	Uncharacterized protein FAM120AOS (FAM120A opposite strand p	w
+STRAND	human	Q5TC04	ATP1A1-AS1	Q5TC04	2	4	Putative uncharacterized protein ATP1A1-AS1 (ATP1A1 antisens	w
+STRAND	human	Q5U4N7	GDF5-AS1	Q5U4N7	1	10	Protein GDF5-AS1, mitochondrial (GDF5 antisense RNA 1) (Grow	w
+STRAND	human	Q86W11	ZSCAN30	Q86W11	24	37	Zinc finger and SCAN domain-containing protein 30 (ZNF-WYM) 	w
+STRAND	human	Q8IWT0	ZBTB8OS	Q8IWT0	11	75	tRNA-splicing ligase-activating factor archease (EC 2.7.7.-)	w
+STRAND	human	Q8N1H7	SIX6OS1	Q8N1H7	6	15	Protein SIX6OS1 (Six6 opposite strand transcript 1)	w
+STRAND	human	Q8N6T0	TOP6BL	Q8N6T0	2	6	Type 2 DNA topoisomerase 6 subunit B-like (TOP6B like initia	w
+STRAND	human	Q8N7S6	ARIH2OS	Q8N7S6	0	1	Uncharacterized protein ARIH2OS (Ariadne-2 homolog opposite 	w
+STRAND	human	Q8NAP1	CASTOR3P	Q8NAP1	2	26	Putative protein CASTOR3P (CASTOR3 pseudogene) (STAG3 opposi	w
+STRAND	human	Q8TAI1	TYMSOS	Q8TAI1	1	21	TYMS opposite strand protein	w
+STRAND	human	Q96CW6	SLC7A6OS	Q96CW6	32	244	Probable RNA polymerase II nuclear localization protein SLC7	w
+STRAND	human	Q96PS1	FANCD2OS	Q96PS1	7	66	FANCD2 opposite strand protein (Fanconi anemia group D2 prot	w
+STRAND	human	Q9H1A3	METTL9	Q9H1A3	7	94	Protein-L-histidine N-pros-methyltransferase (EC 2.1.1.-) (D	w
+STRAND	human	Q9Y284	WDR83OS	Q9Y284	16	168	PAT complex subunit Asterix (Protein associated with the ER 	w
+STRAND	human	Q9Y6J3	SMAD5-AS1	Q9Y6J3	1	6	SMAD5 antisense gene protein 1 (10.3 kDa proline-rich protei	w
+STRAND	worm	C0Z1Y1	CELE_W10D9.3	C0Z1Y1	1	1	MKRN2 opposite strand protein-like C-terminal domain-contain	w
+STRAND-EXCHANGE	human	Q8IZH2	XRN1	Q8IZH2	26	243	5'-3' exoribonuclease 1 (EC 3.1.13.-) (Strand-exchange prote	w
+STRANDED	fly	FBgn0002306	sas	Q04164	383	2333	Putative epidermal cell surface receptor (Stranded at second	w
+STRANDED	human	A0A087X159	SSBP2	A0A087X159	5	44	Single stranded DNA binding protein 2	w
+STRANDED	zebrafish	B3DJV4	ssbp3a	B3DJV4	5	7	Single stranded DNA binding protein 3	w
+STRAP	cladophialophora-carrionii	A0A1C1CPM0	strap	A0A1C1CPM0	0	3	Serine-threonine kinase receptor-associated protein	
+STRAP	dictyostelium-discoideum	Q54LT8	strap	Q54LT8	0	2	Serine-threonine kinase receptor-associated protein	
+STRAP	human	Q8N0Z6	TTC5	Q8N0Z6	20	163	Tetratricopeptide repeat protein 5 (TPR repeat protein 5) (S	w
+STRAP	human	Q8NEF9	SRFBP1	Q8NEF9	47	255	Serum response factor-binding protein 1 (SRF-dependent trans	w
+STRAP	human	Q9Y3F4	STRAP	Q9Y3F4	24	285	Serine-threonine kinase receptor-associated protein (MAP act	
+STRAP	mus-musculus	Q9Z1Z2	Strap	Q9Z1Z2	2	38	Serine-threonine kinase receptor-associated protein	
+STRAP	rattus-norvegicus	M0RCV0	Strap	M0RCV0	3	15	Serine-threonine kinase receptor-associated protein	
+STRAP	rattus-norvegicus	Q5XIG8	Strap	Q5XIG8	4	28	Serine-threonine kinase receptor-associated protein	
+STRAP	zebrafish	Q7ZW92	strap	Q7ZW92	6	56	Serine-threonine kinase receptor-associated protein	
+STRAP_HUMAN	human	Q9Y3F4	STRAP	Q9Y3F4	24	285		
+STRAT	fly	FBgn0032020	strat	Q9VLP3	13	108	Guanine nucleotide exchange factor MSS4 homolog (Guanine nuc	
+STRATIFIN	human	P31947	SFN	P31947	1178	3425	14-3-3 protein sigma (Epithelial cell marker protein 1) (Str	w
+STRATUM	fly	FBgn0032020	strat	Q9VLP3	13	108	Guanine nucleotide exchange factor MSS4 homolog (Guanine nuc	w
+STRATUM	human	P49862	KLK7	P49862	96	284	Kallikrein-7 (hK7) (EC 3.4.21.117) (Serine protease 6) (Stra	w
+STRATUM	human	Q9Y337	KLK5	Q9Y337	96	300	Kallikrein-5 (EC 3.4.21.-) (Kallikrein-like protein 2) (KLK-	w
+STRAW	fly	FBgn0286203	stw	B7YZT1	0	20	Straw, isoform D (EC 1.10.3.-, EC 1.16.3.1)	w
+STRAWBERRY	fly	FBgn0004569	aos	Q00805	55	300	Protein giant-lens (Protein argos) (Protein strawberry)	w
+STRAWBERRY	fly	FBgn0028887	CG3491	Q9V453	0	5	Protein strawberry notch homolog 1	w
+STRAWBERRY	fly	FBgn0265630	sno	A8JUV0	1	8	Protein strawberry notch	w
+STRAWBERRY	human	A3KN83	SBNO1	A3KN83	29	303	Protein strawberry notch homolog 1 (Monocyte protein 3) (MOP	w
+STRAWBERRY	human	Q9Y2G9	SBNO2	Q9Y2G9	0	18	Protein strawberry notch homolog 2	w
+STRBP	human	Q96SI9	STRBP	Q96SI9	50	270	Spermatid perinuclear RNA-binding protein	
+STRBP	mus-musculus	Q91WM1	Strbp	Q91WM1	4	9	Spermatid perinuclear RNA-binding protein	
+STRBP	zebrafish	F1QB35	strbp	F1QB35	4	9	Spermatid perinuclear RNA-binding protein	
+STRBP_HUMAN	human	Q96SI9	STRBP	Q96SI9	50	270		
+STRC	human	Q7RTU9	STRC	Q7RTU9	1	42	Stereocilin	
+STRCL_HUMAN	human	A6NGW2	STRCP1	A6NGW2	7	42		
+STRCP	human	A6NGW2	STRCP1	A6NGW2	7	42		
+STRCP1	human	A6NGW2	STRCP1	A6NGW2	7	42	Putative stereocilin-like protein (Stereocilin pseudogene 1)	
+STRC_HUMAN	human	Q7RTU9	STRC	Q7RTU9	1	42		
+STRD-1	worm	G5ECN5	strd-1	G5ECN5	5	32	STE20-related kinase adapter protein strd-1 (STRAD STE20-rel	w
+STRD-1	worm	G5ECN5	strd-1	G5ECN5	5	32	STE20-related kinase adapter protein strd-1 (STRAD STE20-rel	w
+STRD1_CAEEL	worm	G5ECN5	strd-1	G5ECN5	5	32		
+STRE	human	Q9UJY1	HSPB8	Q9UJY1	29	256	Heat shock protein beta-8 (HspB8) (Alpha-crystallin C chain)	w
+STREP14	human	Q17RD7	SYT16	Q17RD7	6	77		
+STRESS	fly	FBgn0039593	Sid	Q9VAU2	33	248	IP21418p (LP02841p) (Stress induced DNase)	w
+STRESS	human	A0A7P0TBJ1	HAPSTR2	A0A7P0TBJ1	2	8	HUWE1-associated protein modifying stress responses 2	w
+STRESS	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
+STRESS	human	Q14CZ0	HAPSTR1	Q14CZ0	26	559	HUWE1-associated protein modifying stress responses 1 (Telom	w
+STRESS	human	Q6AZY7	SCARA3	Q6AZY7	24	180	Scavenger receptor class A member 3 (Cellular stress respons	w
+STRESS	human	Q6IQ49	SDE2	Q6IQ49	39	276	Splicing regulator SDE2 (Replication stress response regulat	w
+STRESS	human	Q96EW2	HSPBAP1	Q96EW2	20	45	HSPB1-associated protein 1 (27 kDa heat shock protein-associ	w
+STRESS	human	Q9NUQ6	SPATS2L	Q9NUQ6	13	136	SPATS2-like protein (DNA polymerase-transactivated protein 6	w
+STRESS	human	Q9NX61	TMEM161A	Q9NX61	14	112	Transmembrane protein 161A (Adaptive response to oxidative s	w
+STRESS	human	Q9UBG3	CRNN	Q9UBG3	27	192	Cornulin (53 kDa putative calcium-binding protein) (53 kDa s	w
+STRESS	worm	G5EC45	sde-2	G5EC45	5	46	Replication stress response regulator SDE2	w
+STRESS	worm	Q19910	osgn-1	Q19910	0	1	Oxidative stress induced growth inhibitor homolog osgn-1	w
+STRESS	worm	Q23272	atfs-1	Q23272	3	19	Stress activated transcription factor atfs-1	w
+STRESS	yeast	P18899	DDR48	P18899	0	129	Stress protein DDR48	w
+STRESS	yeast	P38739	WSC4	P38739	0	13	Cell wall integrity and stress response component 4	w
+STRESS	yeast	P40467	ASG1	P40467	0	13	Activator of stress genes 1	w
+STRESS	yeast	P53832	WSC2	P53832	1	30	Cell wall integrity and stress response component 2	w
+STRESS	yeast	P53935	NST1	P53935	4	41	Stress response protein NST1	w
+STRESS	yeast	Q12132	USV1	Q12132	0	8	Nutrient and stress factor 1	w
+STRESS	yeast	Q12215	WSC3	Q12215	0	25	Cell wall integrity and stress response component 3	w
+STRESS-70	human	P38646	HSPA9	P38646	96	797	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
+STRESS-70	human	P48723	HSPA13	P48723	10	176	Heat shock 70 kDa protein 13 (Heat shock protein family A me	w
+STRESS-AC	human	Q15759	MAPK11	Q15759	339	1440	Mitogen-activated protein kinase 11 (MAP kinase 11) (MAPK 11	w
+STRESS-ACTIVAT	human	O15264	MAPK13	O15264	177	1506	Mitogen-activated protein kinase 13 (MAP kinase 13) (MAPK 13	w
+STRESS-ACTIVAT	human	P53779	MAPK10	P53779	258	1322	Mitogen-activated protein kinase 10 (MAP kinase 10) (MAPK 10	w
+STRESS-ACTIVATED	fly	FBgn0000229	bsk	P92208	257	1360	Stress-activated protein kinase JNK (dJNK) (EC 2.7.11.24) (P	w
+STRESS-ACTIVATED	fly	FBgn0033935	Sin1	Q9V719	9	67	Stress-activated map kinase-interacting protein 1 (SAPK-inte	w
+STRESS-ACTIVATED	human	O75582	RPS6KA5	O75582	39	319	Ribosomal protein S6 kinase alpha-5 (S6K-alpha-5) (EC 2.7.11	w
+STRESS-ACTIVATED	human	O75676	RPS6KA4	O75676	17	168	Ribosomal protein S6 kinase alpha-4 (S6K-alpha-4) (EC 2.7.11	w
+STRESS-ACTIVATED	human	P45983	MAPK8	P45983	319	1914	Mitogen-activated protein kinase 8 (MAP kinase 8) (MAPK 8) (	w
+STRESS-ACTIVATED	human	P45984	MAPK9	P45984	258	1705	Mitogen-activated protein kinase 9 (MAP kinase 9) (MAPK 9) (	w
+STRESS-ACTIVATED	human	P46734	MAP2K3	P46734	117	1512	Dual specificity mitogen-activated protein kinase kinase 3 (	w
+STRESS-ACTIVATED	human	P52564	MAP2K6	P52564	96	1364	Dual specificity mitogen-activated protein kinase kinase 6 (	w
+STRESS-ACTIVATED	human	P53779	MAPK10	P53779	258	1322	Mitogen-activated protein kinase 10 (MAP kinase 10) (MAPK 10	w
+STRESS-ACTIVATED	human	Q9BPZ7	MAPKAP1	Q9BPZ7	33	212	Target of rapamycin complex 2 subunit MAPKAP1 (TORC2 subunit	w
+STRESS-ACTIVATED	worm	H2KZI0	kgb-2	H2KZI0	3	18	Stress-activated protein kinase JNK	w
+STRESS-ACTIVATED	worm	Q17446	pmk-1	Q17446	18	70	Mitogen-activated protein kinase pmk-1 (EC 2.7.11.24) (Stres	w
+STRESS-ACTIVATED	worm	Q8WQG9	jnk-1	Q8WQG9	16	54	Stress-activated protein kinase jnk-1 (EC 2.7.11.24)	w
+STRESS-ACTIVATED	worm	Q9NA80	sinh-1	Q9NA80	3	36	Stress-activated map kinase-interacting protein 1 homolog	w
+STRESS-ACTIVATED	zebrafish	A0A0R4IKK9	mapk10	A0A0R4IKK9	26	200	Stress-activated protein kinase JNK	w
+STRESS-ACTIVATED	zebrafish	A0A8M6Z2A6	mapk8a	A0A8M6Z2A6	21	47	Stress-activated protein kinase JNK (EC 2.7.11.24)	w
+STRESS-ACTIVATED	zebrafish	A8WG58	mapk8a	A8WG58	24	200	Stress-activated protein kinase JNK	w
+STRESS-ACTIVATED	zebrafish	E9QE29	mapk9	E9QE29	26	211	Stress-activated protein kinase JNK	w
+STRESS-ASSOCIATED	human	Q8N6R1	SERP2	Q8N6R1	26	84	Stress-associated endoplasmic reticulum protein 2 (Ribosome-	w
+STRESS-ASSOCIATED	human	Q9NZB2	FAM120A	Q9NZB2	52	375	Constitutive coactivator of PPAR-gamma-like protein 1 (Oxida	w
+STRESS-ASSOCIATED	human	Q9Y6X1	SERP1	Q9Y6X1	30	123	Stress-associated endoplasmic reticulum protein 1 (Ribosome-	w
+STRESS-ASSOCIATED	worm	Q8MXH3	serp-1.2	Q8MXH3	0	1	Stress-associated endoplasmic reticulum protein	w
+STRESS-ASSOCIATED	worm	Q93838	serp-1.1	Q93838	0	4	Stress-associated endoplasmic reticulum protein 2	w
+STRESS-ASSOCIATED	zebrafish	Q6DGW5	wu:fc96h11	Q6DGW5	0	1	Stress-associated endoplasmic reticulum protein	w
+STRESS-GATED	human	Q9P1W3	TMEM63C	Q9P1W3	4	65	Osmosensitive cation channel TMEM63C (Calcium permeable stre	w
+STRESS-GATED	yeast	Q06538	CSC1	Q06538	0	10	Calcium permeable stress-gated cation channel 1	w
+STRESS-INDUCED	human	Q96A56	TP53INP1	Q96A56	27	103	Tumor protein p53-inducible nuclear protein 1 (Stress-induce	w
+STRESS-INDUCED	human	Q9H7M9	VSIR	Q9H7M9	41	224	V-type immunoglobulin domain-containing suppressor of T-cell	w
+STRESS-INDUCED	human	Q9UJX0	OSGIN1	Q9UJX0	14	137	Oxidative stress-induced growth inhibitor 1 (EC 1.14.13.-) (	w
+STRESS-INDUCED	human	Q9Y236	OSGIN2	Q9Y236	3	56	Oxidative stress-induced growth inhibitor 2 (hT41)	w
+STRESS-INDUCED	worm	Q20363	sip-1	Q20363	3	15	Stress-induced protein 1	w
+STRESS-INDUCED-PHOSPHOPROTEIN	fly	FBgn0024352	Stip1	Q9VPN5	28	222	Stress-induced-phosphoprotein 1	w
+STRESS-INDUCED-PHOSPHOPROTEIN	human	P31948	STIP1	P31948	60	684	Stress-induced-phosphoprotein 1 (STI1) (Hsc70/Hsp90-organizi	w
+STRESS-INDUCED-PHOSPHOPROTEIN	worm	O16259	sti-1	O16259	11	74	Stress-induced-phosphoprotein 1	w
+STRESS-INDUCED-PHOSPHOPROTEIN	zebrafish	Q5RKM3	stip1	Q5RKM3	14	126	Stress-induced-phosphoprotein 1	w
+STRESS-INDUCIBLE	human	Q8NDW8	TTC21A	Q8NDW8	7	43	Tetratricopeptide repeat protein 21A (TPR repeat protein 21A	w
+STRESS-REG	human	Q8WVP5	TNFAIP8L1	Q8WVP5	9	105	Tumor necrosis factor alpha-induced protein 8-like protein 1	w
+STRESS-REGULATED	fly	FBgn0038233	HtrA2	Q9VFJ3	0	20	Serine protease HTRA2, mitochondrial (EC 3.4.21.108) (High t	w
+STRESS-REGULATED	human	O43464	HTRA2	O43464	15	314	Serine protease HTRA2, mitochondrial (EC 3.4.21.108) (High t	w
+STRESS-RESPONSE	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
+STRESS-RESPONSE	human	Q7Z7H5	TMED4	Q7Z7H5	13	106	Transmembrane emp24 domain-containing protein 4 (Endoplasmic	w
+STRESS-RESPONSIVE	fly	FBgn0032231	Oser1	Q9VKY0	0	1	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
+STRESS-RESPONSIVE	fly	FBgn0050487	CG30487	Q6NN84	0	0	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
+STRESS-RESPONSIVE	human	O95747	OXSR1	O95747	220	1427	Serine/threonine-protein kinase OSR1 (EC 2.7.11.1) (Oxidativ	w
+STRESS-RESPONSIVE	human	Q6ZPB5	SDIM1	Q6ZPB5	0	1	Stress-responsive DNAJB4-interacting membrane protein 1	w
+STRESS-RESPONSIVE	human	Q8N0Z6	TTC5	Q8N0Z6	20	163	Tetratricopeptide repeat protein 5 (TPR repeat protein 5) (S	w
+STRESS-RESPONSIVE	human	Q96DD0	LRRC39	Q96DD0	2	64	Leucine-rich repeat-containing protein 39 (Myosin-interactin	w
+STRESS-RESPONSIVE	human	Q9NX31	OSER1	Q9NX31	5	24	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
+STRESS-SENSITIVE	fly	FBgn0003360	sesB	Q26365	8	165	ADP,ATP carrier protein (ADP/ATP translocase) (Adenine nucle	w
+STRESSCOPIN	human	Q969E3	UCN3	Q969E3	24	152	Urocortin-3 (Stresscopin) (Urocortin III) (Ucn III)	w
+STRESSCOPIN	zebrafish	Q1LYP1	ucn3l	Q1LYP1	1	4	Novel protein similar to vertebrate urocortin 3 (Stresscopin	w
+STRESSCOPIN-RELATED	human	Q96RP3	UCN2	Q96RP3	6	42	Urocortin-2 (Stresscopin-related peptide) (Urocortin II) (Uc	w
+STRETCH	fly	FBgn0039946	ATbp	Q86P48	78	394	AT-rich binding protein ((A+T)-stretch binding protein)	w
+STRETCH-ACTIVATED	yeast	P41821	MID1	P41821	1	61	Stretch-activated cation channel MID1	w
+STRETCH-RESPONSIVE	human	Q9UHP9	SMPX	Q9UHP9	12	110	Small muscular protein (Stretch-responsive skeletal muscle p	w
+STRG	human	Q9GZN0	GPR88	Q9GZN0	9	104		
+STRH	streptococcus-pneumoniae	Q8DRL6	strH	Q8DRL6	0	14	Beta-N-acetyl-hexosaminidase	
+STRIATED	human	Q15772	SPEG	Q15772	0	11	Striated muscle preferentially expressed protein kinase (EC 	w
+STRIATED	human	Q8N0Z2	ABRA	Q8N0Z2	12	58	Actin-binding Rho-activating protein (Striated muscle activa	w
+STRIATIN	fly	FBgn0035437	Strip	Q8IRD5	4	65	AT25231p (Striatin interacting protein, isoform B)	w
+STRIATIN	human	O43815	STRN	O43815	75	299	Striatin	w
+STRIATIN	worm	G5EE12	cash-1	G5EE12	3	43	Striatin N-terminal domain-containing protein	w
+STRIATIN	zebrafish	A1L1U1	strn	A1L1U1	6	71	Striatin	w
+STRIATIN-3	human	Q13033	STRN3	Q13033	52	204	Striatin-3 (Cell cycle autoantigen SG2NA) (S/G2 antigen)	w
+STRIATIN-3	zebrafish	A9JRZ4	strn3	A9JRZ4	4	46	Striatin-3	w
+STRIATIN-4	human	Q9NRL3	STRN4	Q9NRL3	57	198	Striatin-4 (Zinedin)	w
+STRIATIN-INTERACTING	human	Q5VSL9	STRIP1	Q5VSL9	12	216	Striatin-interacting protein 1 (Protein FAM40A)	w
+STRIATIN-INTERACTING	human	Q9ULQ0	STRIP2	Q9ULQ0	10	105	Striatin-interacting protein 2 (Protein FAM40B)	w
+STRIATIN-INTERACTING	zebrafish	Q803T2	strip1	Q803T2	1	41	Striatin-interacting protein 1 homolog	w
+STRIATIN-INTERACTING	zebrafish	X1WE96	strip2	X1WE96	2	40	Striatin-interacting protein 1 homolog isoform X2	w
+STRIATUM	human	Q96D21	RASD2	Q96D21	20	138	GTP-binding protein Rhes (Ras homolog enriched in striatum) 	w
+STRIATUM-ENRICHED	human	P54829	PTPN5	P54829	13	123	Tyrosine-protein phosphatase non-receptor type 5 (EC 3.1.3.4	w
+STRIATUM-SPECIFIC	human	Q9GZN0	GPR88	Q9GZN0	9	104	G protein-coupled receptor 88 (Striatum-specific G protein-c	w
+STRICA	fly	FBgn0033051	Strica	Q7KHK9	3	31	DREAM (LD13366p) (STRICA) (Ser/Thr-rich caspase, isoform A (	w
+STRICA	fly	FBgn0033051	Strica	Q7KHK9	3	31	DREAM (LD13366p) (STRICA) (Ser/Thr-rich caspase, isoform A (	w
+STRICTOSIDINE	fly	FBgn0041780	Ssl2	Q9VAQ9	2	21	Strictosidine synthase-like 2 (EC 4.3.3.2)	w
+STRICTOSIDINE	worm	O62040	C08E8.2	O62040	1	11	Strictosidine synthase conserved region domain-containing pr	w
+STRICTOSIDINE	worm	O62265	CELE_F57C2.5	O62265	1	11	Strictosidine synthase conserved region domain-containing pr	w
+STRICTOSIDINE	worm	Q22437	CELE_T12G3.4	Q22437	0	11	Strictosidine synthase conserved region domain-containing pr	w
+STRING	fly	FBgn0003525	stg	P20483	164	1029	M-phase inducer phosphatase (EC 3.1.3.48) (Cdc25-like protei	w
+STRING	fly	FBgn0004179	Csp	Q03751	4	68	DnaJ homolog subfamily C member 5 homolog (Cysteine string p	w
+STRING	human	Q8N7S2	DNAJC5G	Q8N7S2	0	70	DnaJ homolog subfamily C member 5G (Cysteine string protein-	w
+STRING	human	Q9H3Z4	DNAJC5	Q9H3Z4	34	488	DnaJ homolog subfamily C member 5 (Ceroid-lipofuscinosis neu	w
+STRINGS	fly	FBgn0004867	RpS2	P31009	33	453	Small ribosomal subunit protein uS5 (40S ribosomal protein S	w
+STRIP	fly	FBgn0035437	Strip	Q8IRD5	4	65	AT25231p (Striatin interacting protein, isoform B)	
+STRIP1	human	Q5VSL9	STRIP1	Q5VSL9	12	216	Striatin-interacting protein 1 (Protein FAM40A)	
+STRIP1	mus-musculus	Q8C079	Strip1	Q8C079	4	40	Striatin-interacting protein 1	
+STRIP1	rattus-norvegicus	G3V8E2	Strip1	G3V8E2	2	38	Striatin-interacting protein 1	
+STRIP1	zebrafish	Q803T2	strip1	Q803T2	1	41	Striatin-interacting protein 1 homolog	
+STRIP2	human	Q9ULQ0	STRIP2	Q9ULQ0	10	105	Striatin-interacting protein 2 (Protein FAM40B)	
+STRIP2	mus-musculus	Q8C9H6	Strip2	Q8C9H6	1	64	Striatin-interacting proteins 2	
+STRIP2	rattus-norvegicus	A0A0G2JT26	Strip2	A0A0G2JT26	3	37	Striatin interacting protein 2	
+STRIP2	zebrafish	X1WE96	strip2	X1WE96	2	40	Striatin-interacting protein 1 homolog isoform X2	
+STRIPE	fly	FBgn0003499	sr	A0A0B4KGW2	29	105	Stripe, isoform D	w
+STRIPES	fly	FBgn0013953	Esp	Q9VC29	0	13	Epidermal stripes and patches, isoform A (Epidermal stripes 	w
+STRIT1	human	P0DN84	STRIT1	P0DN84	27	51	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	
+STRIT1	mus-musculus	P0DN83	Strit1	P0DN83	1	1	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	
+STRK1	oryza-sativa-subsp-japonica	Q7XR88	STRK1	Q7XR88	0	2	Salt tolerance receptor-like cytoplasmic kinase 1	
+STRL-1	worm	O17883	strl-1	O17883	1	12	Steroidogenic acute regulatory-like protein 1	
+STRL22	human	P51684	CCR6	P51684	51	306		
+STRL33	human	O00574	CXCR6	O00574	23	242		
+STRM-1	strongyloides-stercoralis	A0A0K0E275	strm-1	A0A0K0E275	1	45	Methyltransferase	
+STRM-1	worm	Q9TYP1	strm-1	Q9TYP1	0	7	Sterol 4-C-methyltransferase strm-1	w
+STRM-1	worm	Q9TYP1	strm-1	Q9TYP1	0	7	Sterol 4-C-methyltransferase strm-1	w
+STRN	dictyostelium-discoideum	Q54J37	strn	Q54J37	2	12	Striatin homolog	
+STRN	human	O43815	STRN	O43815	75	299	Striatin	
+STRN	mus-musculus	O55106	Strn	O55106	9	81	Striatin	
+STRN	rattus-norvegicus	P70483	Strn	P70483	9	49	Striatin	
+STRN	zebrafish	A1L1U1	strn	A1L1U1	6	71	Striatin	
+STRN3	human	Q13033	STRN3	Q13033	52	204	Striatin-3 (Cell cycle autoantigen SG2NA) (S/G2 antigen)	
+STRN3	mus-musculus	Q9ERG2	Strn3	Q9ERG2	8	57	Striatin-3	
+STRN3	rattus-norvegicus	P58405	Strn3	P58405	7	46	Striatin-3	
+STRN3	zebrafish	A9JRZ4	strn3	A9JRZ4	4	46	Striatin-3	
+STRN3_HUMAN	human	Q13033	STRN3	Q13033	52	204		
+STRN4	human	Q9NRL3	STRN4	Q9NRL3	57	198	Striatin-4 (Zinedin)	
+STRN4	mus-musculus	P58404	Strn4	P58404	7	41	Striatin-4	
+STRN4	rattus-norvegicus	A0A8I6AK86	Strn4	A0A8I6AK86	8	45	Striatin 4	
+STRN4_HUMAN	human	Q9NRL3	STRN4	Q9NRL3	57	198		
+STRN_HUMAN	human	O43815	STRN	O43815	75	299		
+STROMA	human	Q9H171	ZBP1	Q9H171	8	80	Z-DNA-binding protein 1 (DNA-dependent activator of IFN-regu	w
+STROMA	human	Q9Y258	CCL26	Q9Y258	78	352	C-C motif chemokine 26 (CC chemokine IMAC) (Eotaxin-3) (Macr	w
+STROMA-ASSOCI	human	Q9UNK4	PLA2G2D	Q9UNK4	10	117	Group IID secretory phospholipase A2 (GIID sPLA2) (sPLA2-IID	w
+STROMAL	fly	FBgn0045073	Stim	P83094	567	2426	Stromal interaction molecule homolog	w
+STROMAL	human	P0CL83	STAG3L1	P0CL83	3	8	Putative STAG3-like protein 1 (Stromal antigen 3-like protei	w
+STROMAL	human	P0CL84	STAG3L2	P0CL84	2	10	Putative STAG3-like protein 2 (Stromal antigen 3-like protei	w
+STROMAL	human	P0CL85	STAG3L3	P0CL85	3	8	STAG3-like protein 3 (Stromal antigen 3-like protein 3)	w
+STROMAL	human	P48061	CXCL12	P48061	42	85	Stromal cell-derived factor 1 (SDF-1) (hSDF-1) (C-X-C motif 	w
+STROMAL	human	Q10588	BST1	Q10588	11	112	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2 (EC 3.2.2.	w
+STROMAL	human	Q10589	BST2	Q10589	40	374	Bone marrow stromal antigen 2 (BST-2) (HM1.24 antigen) (Teth	w
+STROMAL	human	Q13586	STIM1	Q13586	43	429	Stromal interaction molecule 1	w
+STROMAL	human	Q5XXA6	ANO1	Q5XXA6	9	48	Anoctamin-1 (Discovered on gastrointestinal stromal tumors p	w
+STROMAL	human	Q6ZNA5	FRRS1	Q6ZNA5	2	17	Ferric reductase 1 (EC 1.-.-.-) (Ferric-chelate reductase 1)	w
+STROMAL	human	Q8IYB5	SMAP1	Q8IYB5	7	69	Stromal membrane-associated protein 1	w
+STROMAL	human	Q8N3U4	STAG2	Q8N3U4	35	329	Cohesin subunit SA-2 (SCC3 homolog 2) (Stromal antigen 2)	w
+STROMAL	human	Q8NI77	KIF18A	Q8NI77	66	387	Kinesin-like protein KIF18A (Marrow stromal KIF18A) (MS-KIF1	w
+STROMAL	human	Q8TBR4	STAG3L4	Q8TBR4	2	10	Putative STAG3-like protein 4 (Stromal antigen 3-like protei	w
+STROMAL	human	Q8WU79	SMAP2	Q8WU79	14	189	Stromal membrane-associated protein 2 (Stromal membrane-asso	w
+STROMAL	human	Q8WVM7	STAG1	Q8WVM7	26	170	Cohesin subunit SA-1 (SCC3 homolog 1) (Stromal antigen 1)	w
+STROMAL	human	Q8WVV9	HNRNPLL	Q8WVV9	18	205	Heterogeneous nuclear ribonucleoprotein L-like (hnRNPLL) (St	w
+STROMAL	human	Q969D9	TSLP	Q969D9	51	387	Thymic stromal lymphopoietin	w
+STROMAL	human	Q96M53	TBATA	Q96M53	0	9	Protein TBATA (Protein SPATIAL) (Stromal protein associated 	w
+STROMAL	human	Q96S82	UBL7	Q96S82	29	259	Ubiquitin-like protein 7 (Bone marrow stromal cell ubiquitin	w
+STROMAL	human	Q99470	SDF2	Q99470	18	102	Stromal cell-derived factor 2 (SDF-2)	w
+STROMAL	human	Q9BRK5	SDF4	Q9BRK5	24	204	45 kDa calcium-binding protein (Cab45) (Stromal cell-derived	w
+STROMAL	human	Q9BRV3	SLC50A1	Q9BRV3	11	114	Sugar transporter SWEET1 (HsSWEET1) (RAG1-activating protein	w
+STROMAL	human	Q9BSK2	SLC25A33	Q9BSK2	4	90	Solute carrier family 25 member 33 (Bone marrow stromal cell	w
+STROMAL	human	Q9BY10	SLC46A2	Q9BY10	2	22	Solute carrier family 46 member 2 (Thymic stromal cotranspor	w
+STROMAL	human	Q9HC57	WFDC1	Q9HC57	3	46	WAP four-disulfide core domain protein 1 (Prostate stromal p	w
+STROMAL	human	Q9HC73	CRLF2	Q9HC73	65	289	Cytokine receptor-like factor 2 (Cytokine receptor-like 2) (	w
+STROMAL	human	Q9HCN8	SDF2L1	Q9HCN8	42	357	Stromal cell-derived factor 2-like protein 1 (SDF2-like prot	w
+STROMAL	human	Q9P246	STIM2	Q9P246	24	178	Stromal interaction molecule 2	w
+STROMAL	human	Q9UJ98	STAG3	Q9UJ98	10	65	Cohesin subunit SA-3 (SCC3 homolog 3) (Stromal antigen 3) (S	w
+STROMAL	human	Q9UJX0	OSGIN1	Q9UJX0	14	137	Oxidative stress-induced growth inhibitor 1 (EC 1.14.13.-) (	w
+STROMAL	human	Q9Y639	NPTN	Q9Y639	40	403	Neuroplastin (Stromal cell-derived receptor 1) (SDR-1)	w
+STROMAL	worm	G5EF60	stim-1	G5EF60	1	17	Stromal interaction molecule 1	w
+STROMAL	zebrafish	A0A0R4IAT9	stim1b	A0A0R4IAT9	4	27	Stromal interaction molecule 1 isoform X1	w
+STROMAL	zebrafish	A2BIR7	sdf2l1	A2BIR7	1	10	Stromal cell-derived factor 2-like 1	w
+STROMAL	zebrafish	E7FE10	stim2b	E7FE10	4	23	Stromal interaction molecule 2	w
+STROMAL	zebrafish	E7FEY7	stim2a	E7FEY7	3	22	Stromal interaction molecule 2 isoform X1	w
+STROMAL	zebrafish	F1QAT8	epsti1	F1QAT8	0	2	Epithelial stromal interaction 1	w
+STROMAL	zebrafish	Q1LY88	stim1a	Q1LY88	4	23	Stromal interaction molecule 1a	w
+STROMAL	zebrafish	Q6V9B5	cxcl12b	Q6V9B5	20	62	Stromal cell-derived factor 1	w
+STROMAL	zebrafish	Q8AV10	cxcl12a	Q8AV10	19	64	Stromal cell-derived factor 1	w
+STROMALIN	fly	FBgn0020616	SA1	Q9VM62	3	26	LD34181p (Stromalin)	w
+STROMALIN-2	fly	FBgn0043865	SA2	Q9W0F4	3	18	Stromalin-2	w
+STROMALIN-3	human	Q9UJ98	STAG3	Q9UJ98	10	65	Cohesin subunit SA-3 (SCC3 homolog 3) (Stromal antigen 3) (S	w
+STROMELYSIN-1	human	P08254	MMP3	P08254	26	184	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinas	w
+STROMELYSIN-1	human	Q9UGU0	TCF20	Q9UGU0	85	361	Transcription factor 20 (TCF-20) (Nuclear factor SPBP) (Prot	w
+STROMELYSIN-2	human	P09238	MMP10	P09238	20	142	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinas	w
+STROMELYSIN-3	human	P24347	MMP11	P24347	11	91	Stromelysin-3 (SL-3) (ST3) (EC 3.4.24.-) (Matrix metalloprot	w
+STROMELYSIN-3	zebrafish	A0A8M9Q3Z2	mmp11a	A0A8M9Q3Z2	0	8	Stromelysin-3	w
+STROMELYSIN-3	zebrafish	A0A8N7T826	mmp11b	A0A8N7T826	0	2	Stromelysin-3	w
+STRP1_HUMAN	human	Q5VSL9	STRIP1	Q5VSL9	12	216		
+STRP2_HUMAN	human	Q9ULQ0	STRIP2	Q9ULQ0	10	105		
+STRUCTURAL	fly	FBgn0015391	glu	Q9V3A7	19	126	Structural maintenance of chromosomes protein	w
+STRUCTURAL	fly	FBgn0015615	SMC3	Q9VXE9	12	62	Structural maintenance of chromosomes protein	w
+STRUCTURAL	fly	FBgn0027783	SMC2	Q7KK96	9	34	Structural maintenance of chromosomes protein	w
+STRUCTURAL	fly	FBgn0037581	CG7352	Q9VHR7	3	30	Meiosis-specific nuclear structural protein 1	w
+STRUCTURAL	fly	FBgn0040283	SMC1	Q9VCD8	11	56	Structural maintenance of chromosomes protein	w
+STRUCTURAL	fly	FBgn0052438	SMC5	Q8IPT2	10	57	Structural maintenance of chromosomes protein 5	w
+STRUCTURAL	human	A6NHR9	SMCHD1	A6NHR9	15	244	Structural maintenance of chromosomes flexible hinge domain-	w
+STRUCTURAL	human	O95347	SMC2	O95347	44	458	Structural maintenance of chromosomes protein 2 (SMC protein	w
+STRUCTURAL	human	Q12934	BFSP1	Q12934	32	60	Filensin (Beaded filament structural protein 1) (Lens fiber 	w
+STRUCTURAL	human	Q13515	BFSP2	Q13515	39	125	Phakinin (49 kDa cytoskeletal protein) (Beaded filament stru	w
+STRUCTURAL	human	Q14683	SMC1A	Q14683	57	636	Structural maintenance of chromosomes protein 1A (SMC protei	w
+STRUCTURAL	human	Q8IY18	SMC5	Q8IY18	69	1060	Structural maintenance of chromosomes protein 5 (SMC protein	w
+STRUCTURAL	human	Q8NDV3	SMC1B	Q8NDV3	21	141	Structural maintenance of chromosomes protein 1B (SMC protei	w
+STRUCTURAL	human	Q8NEH6	MNS1	Q8NEH6	7	119	Meiosis-specific nuclear structural protein 1	w
+STRUCTURAL	human	Q96SB8	SMC6	Q96SB8	42	294	Structural maintenance of chromosomes protein 6 (SMC protein	w
+STRUCTURAL	human	Q9NTJ3	SMC4	Q9NTJ3	41	532	Structural maintenance of chromosomes protein 4 (SMC protein	w
+STRUCTURAL	human	Q9UQE7	SMC3	Q9UQE7	34	645	Structural maintenance of chromosomes protein 3 (SMC protein	w
+STRUCTURAL	virus	A0A024B7W1_p6719d95f9c		A0A024B7W1	2	15	Non structural protein 1	w
+STRUCTURAL	virus	A0A024B7W1_p721e22aa75		A0A024B7W1	0	15	Non structural protein 2A	w
+STRUCTURAL	virus	A0A024B7W1_p8a30407d06		A0A024B7W1	1	15	Non structural protein 4B	w
+STRUCTURAL	virus	A0A024B7W1_p95c1b37c5b		A0A024B7W1	1	15	Non structural protein 4A	w
+STRUCTURAL	virus	A0A097NZ77_p1671bc20d9		A0A097NZ77	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A097NZ77_p5be639a70a		A0A097NZ77	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A097NZ77_pa4b6145dee		A0A097NZ77	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A097NZA3_p43918128cf		A0A097NZA3	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	A0A097NZA3_p59a8be83dc		A0A097NZA3	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	A0A097NZA3_p8e29accd87		A0A097NZA3	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	A0A097NZB6_pa2470f3ef9		A0A097NZB6	1	9	Non structural protein 4B	w
+STRUCTURAL	virus	A0A097NZB6_pa955bc27af		A0A097NZB6	0	9	Non structural protein 5A	w
+STRUCTURAL	virus	A0A0B5HK21_p5b329007a2		A0A0B5HK21	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	A0A0B5HK21_pd7c1627a00		A0A0B5HK21	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	A0A0B5HK21_pf883e63069		A0A0B5HK21	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	A0A0C4PNF2_p25c2cda8a6		A0A0C4PNF2	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0A0C4PNF2_p8e15213e6d		A0A0C4PNF2	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0A0C4PNF2_pd22460e02b		A0A0C4PNF2	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0A0C4PNF2_pd67a9f42d4		A0A0C4PNF2	2	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0A0C4W3V9_p2c44989b3e		A0A0C4W3V9	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0A0C4W3V9_p4075959f0f		A0A0C4W3V9	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0A0C4W3V9_pf37bcb62b8		A0A0C4W3V9	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0A0C4W3V9_pf502e04272		A0A0C4W3V9	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0A0F7JH93_p5ffc1bc2e2		A0A0F7JH93	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	A0A0F7JH93_pa1d660608b		A0A0F7JH93	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	A0A0F7JH93_pad6cd8763a		A0A0F7JH93	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	A0A0K0WRN6_p13c954a588		A0A0K0WRN6	1	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A0K0WRN6_p58f3e43cdf		A0A0K0WRN6	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A0K0WRN6_pbcc530defe		A0A0K0WRN6	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A0M4NCP8_pae475c5f2c		A0A0M4NCP8	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	A0A0M4NCP8_pb2b2235bf8		A0A0M4NCP8	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	A0A0M4NCP8_pbb9a5a12d1		A0A0M4NCP8	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	A0A1B0Z5J8_p690898cdf1		A0A1B0Z5J8	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	A0A1B0Z5J8_pa9f19e8c41		A0A1B0Z5J8	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	A0A1B0Z5J8_pfb75817213		A0A1B0Z5J8	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	A0A1Z3MI02_p25bcb7196c		A0A1Z3MI02	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A1Z3MI02_pb11b833f29		A0A1Z3MI02	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A1Z3MI02_pf42cb5fd0f		A0A1Z3MI02	2	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A247ZNN0_p0a3eb0378e		A0A247ZNN0	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	A0A247ZNN0_p64cc1b2b3d		A0A247ZNN0	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	A0A247ZNN0_pae9aebf595		A0A247ZNN0	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	A0A2H4GY08_p6719d95f9c		A0A2H4GY08	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0A2H4GY08_p721e22aa75		A0A2H4GY08	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0A2H4GY08_p8a30407d06		A0A2H4GY08	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0A2H4GY08_p95c1b37c5b		A0A2H4GY08	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0A2H4MX92_p215cc1471f		A0A2H4MX92	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A2H4MX92_p7dec8a9e43		A0A2H4MX92	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A2H4MX92_pfe6d96e752		A0A2H4MX92	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A2H4N061_pa4c13ab793		A0A2H4N061	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A2H4N061_pab7b2b6a4e		A0A2H4N061	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A2H4N061_padb20683e0		A0A2H4N061	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A3G5BHF3_p808294af7b		A0A3G5BHF3	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A3G5BHF3_p9a17939cef		A0A3G5BHF3	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A3G5BHF3_pafc2a7e1b8		A0A3G5BHF3	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A514TR60_p1d90c187f3		A0A514TR60	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A514TR60_p50807b843d		A0A514TR60	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A514TR60_pd8d30a6df3		A0A514TR60	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A5P8HZL6_p56c981de31		A0A5P8HZL6	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A5P8HZL6_pb45a56dce1		A0A5P8HZL6	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A5P8HZL6_pda29d35b64		A0A5P8HZL6	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A6G6CUL0_p350e7e2e73		A0A6G6CUL0	2	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A6G6CUL0_p3fb30d64a2		A0A6G6CUL0	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0A6G6CUL0_pbe8b266004		A0A6G6CUL0	1	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A8G1H4Y3_p4e010033b7		A0A8G1H4Y3	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	A0A8G1H4Y3_p6cf83e1f80		A0A8G1H4Y3	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	A0A8G1H4Y3_p98050600cc		A0A8G1H4Y3	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	A0AA97PZD4_p22d7d3f7e8		A0AA97PZD4	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0AA97PZD4_p721e22aa75		A0AA97PZD4	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0AA97PZD4_p8a30407d06		A0AA97PZD4	0	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0AA97PZD4_p95c1b37c5b		A0AA97PZD4	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0EKU1_p24c0306433		A0EKU1	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0EKU1_p54a07a11df		A0EKU1	3	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0EKU1_pbdcbe5d1bb		A0EKU1	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0EKU1_pe2979c1cfa		A0EKU1	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0EKU2_p2128b90090		A0EKU2	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0EKU2_p4c43bcc0da		A0EKU2	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0EKU2_pb083713d01		A0EKU2	3	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0EKU2_pec55037171		A0EKU2	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0EKU3_p70a4442430		A0EKU3	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0EKU3_pc402373246		A0EKU3	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0EKU3_pcd37d1e7b6		A0EKU3	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0EKU3_pfe4f878412		A0EKU3	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0EKU6_p0b560a2627		A0EKU6	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0EKU6_p1795010180		A0EKU6	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0EKU6_p727a16e71b		A0EKU6	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0EKU6_pab187e11ba		A0EKU6	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0EKU7_p05495834a7		A0EKU7	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0EKU7_p5a9fa3d4cf		A0EKU7	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0EKU7_p96d58b1a7a		A0EKU7	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0EKU7_pf7510cc819		A0EKU7	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0EKU8_p1fa2bf8553		A0EKU8	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	A0EKU8_p49a06fdffb		A0EKU8	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A0EKU8_p8f866dbb32		A0EKU8	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A0EKU8_pd19a3a8818		A0EKU8	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A0MNM1_pdea57fcec5	nsP1234	A0MNM1	1	9	Non structural protein 3	w
+STRUCTURAL	virus	A1BQD2_p25b3f30ea0		A1BQD2	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	A1BQD2_p97a80195c1		A1BQD2	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A1BQD2_pd82e61d0a2		A1BQD2	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	A1BQD2_pdfe6a086c5		A1BQD2	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	A1Y2M8_p76543998a6		A1Y2M8	3	13	Non structural protein 4A	w
+STRUCTURAL	virus	A1Y2M8_pda84e20e22		A1Y2M8	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	A1Y2M8_pf5ac211c48		A1Y2M8	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	A1Y2M8_pfe159dd62a		A1Y2M8	2	13	Non structural protein 1	w
+STRUCTURAL	virus	A8QPD9_p39b88978d2		A8QPD9	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	A8QPD9_p525c51042d		A8QPD9	3	10	Non structural protein 4B	w
+STRUCTURAL	virus	A8QPD9_p84f06e99ca		A8QPD9	2	10	Non structural protein 4A	w
+STRUCTURAL	virus	A9CB82		A9CB82	1	28	Structural protein p32K	w
+STRUCTURAL	virus	C4NF75_p2d79b19b5a		C4NF75	2	12	Non structural protein 4A	w
+STRUCTURAL	virus	C4NF75_pc68d8b466d		C4NF75	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	C4NF75_pe2b2c433ad		C4NF75	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	C5H431_p11aad4d76c		C5H431	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	C5H431_p2b93e9383f		C5H431	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C5H431_pc1e3963bf9		C5H431	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	C5H431_pcf6d2008e6		C5H431	3	13	Non structural protein 4A	w
+STRUCTURAL	virus	C5H8E4_p04ad5f6de0		C5H8E4	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	C5H8E4_p0c789726e4		C5H8E4	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	C5H8E4_pdfd13d7c99		C5H8E4	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	C8XPA8_p2aaf49add1		C8XPA8	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C8XPA8_p69a85eb46b		C8XPA8	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	C8XPA8_pa7edea7326		C8XPA8	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	C8XPA8_pf10cbf9805		C8XPA8	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	C8XPA9_p07b8d58b11		C8XPA9	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	C8XPA9_p8ead3983f2		C8XPA9	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	C8XPA9_peea8204aa3		C8XPA9	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	C8XPA9_pf898c8121f		C8XPA9	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C8XPB2_p32a7d591a2		C8XPB2	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C8XPB2_p3e66373ea6		C8XPB2	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	C8XPB2_p4134de8719		C8XPB2	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	C8XPB2_p49b8452dcc		C8XPB2	0	13	Non structural protein 4B	w
+STRUCTURAL	virus	C8XPB4_pc703b475ee		C8XPB4	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	C8XPB4_pd636ce8d76		C8XPB4	2	13	Non structural protein 2A	w
+STRUCTURAL	virus	C8XPB4_pf44ad2ee33		C8XPB4	3	13	Non structural protein 4B	w
+STRUCTURAL	virus	C8XPB4_pf5e6b10492		C8XPB4	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C8XPB7_p348887b404		C8XPB7	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	C8XPB7_p5cb61d094d		C8XPB7	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C8XPB7_pc016ecbbb9		C8XPB7	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	C8XPB7_ped8602a667		C8XPB7	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	C8XPB8_p289afd0966		C8XPB8	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	C8XPB8_p8bc4fa0063		C8XPB8	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	C8XPB8_p9d9f49cc7a		C8XPB8	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C8XPB8_pf4848db74a		C8XPB8	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	C8XPB9_p1f56f461dd		C8XPB9	2	13	Non structural protein 1	w
+STRUCTURAL	virus	C8XPB9_p89fa08e6bd		C8XPB9	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	C8XPB9_pb515d430b9		C8XPB9	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	C8XPB9_pce63f22ffa		C8XPB9	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	D2CGF5_p025d1da243		D2CGF5	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	D2CGF5_p8d82fdf8a0		D2CGF5	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	D2CGF5_pda6e286eff		D2CGF5	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	D6P446_p0534c59694		D6P446	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	D6P446_p7104a8cb6f		D6P446	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	D6P446_p8dd126c5d7		D6P446	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	D6QS62		D6QS62	2	9	Minor structural protein	w
+STRUCTURAL	virus	D7RF80_pad9b4defd6		D7RF80	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	D7RF80_pc8e346b60e		D7RF80	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	D7RF80_pccd6580b4d		D7RF80	2	13	Non structural protein 1	w
+STRUCTURAL	virus	D7RF80_pcf4c2478c9		D7RF80	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	D8X148_p90540f243c		D8X148	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	D8X148_pd6af98098a		D8X148	2	10	Non structural protein 4A	w
+STRUCTURAL	virus	D8X148_pfd1c3bad87		D8X148	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	G1CRV4_p232876256d		G1CRV4	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	G1CRV4_p26e7a6d13f		G1CRV4	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	G1CRV4_p3b136c956d		G1CRV4	2	13	Non structural protein 1	w
+STRUCTURAL	virus	G1CRV4_pcd91cf0d5c		G1CRV4	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	J9ZZK6_p342b20612d		J9ZZK6	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	J9ZZK6_p67ebb6e545		J9ZZK6	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	J9ZZK6_pb0844a6e90		J9ZZK6	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	K0BRZ6_p196130d53b		K0BRZ6	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	K0BRZ6_p4eedfb7bac		K0BRZ6	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	K0BRZ6_p5239dd26b5		K0BRZ6	2	13	Non structural protein 1	w
+STRUCTURAL	virus	K0BRZ6_pbad49c4b57		K0BRZ6	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	M4TAM3_p0a1f159283		M4TAM3	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	M4TAM3_p1d753c9e88		M4TAM3	2	10	Non structural protein 4B	w
+STRUCTURAL	virus	M4TAM3_pdcd0e06fc3		M4TAM3	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	M4VPD4_p3000e68fbd		M4VPD4	1	9	Non structural protein 4B	w
+STRUCTURAL	virus	M4VPD4_pe3c2899662		M4VPD4	2	9	Non structural protein 4A	w
+STRUCTURAL	virus	M4VPD4_pf0c0bb5587		M4VPD4	0	9	Non structural protein 5A	w
+STRUCTURAL	virus	M9UVS3_p3caa7d979c		M9UVS3	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	M9UVS3_p9b29cbe7b1		M9UVS3	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	M9UVS3_pafa97bd37d		M9UVS3	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	M9V357_p610ada9a87		M9V357	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	M9V357_pb30e2a0cdd		M9V357	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	M9V357_pb778844c73		M9V357	2	10	Non structural protein 4B	w
+STRUCTURAL	virus	M9ZRW5_p466478d7b2		M9ZRW5	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	M9ZRW5_paa4a34b6f9		M9ZRW5	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	M9ZRW5_pea8dfbd4f6		M9ZRW5	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	M9ZU32_p5908cafcf4		M9ZU32	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	M9ZU32_p668e971f6f		M9ZU32	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	M9ZU32_pf6cd7223cb		M9ZU32	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	M9ZVI1_p0802264f87		M9ZVI1	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	M9ZVI1_p50c0f15ebc		M9ZVI1	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	M9ZVI1_p571cc8c0e7		M9ZVI1	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	M9ZZL8_p33151b250e		M9ZZL8	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	M9ZZL8_pcbd4011786		M9ZZL8	2	10	Non structural protein 4B	w
+STRUCTURAL	virus	M9ZZL8_pea309522a3		M9ZZL8	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	N0A109_p0bfd5e62e1		N0A109	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	N0A109_p6b70eba7eb		N0A109	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	N0A109_pb894dadcdc		N0A109	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	N0A118_p0144c6ea08		N0A118	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	N0A118_p13b9058391		N0A118	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	N0A118_p60d0177d08		N0A118	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	O09234_p195bf7111b		O09234	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	O09234_p38acfe8eb5		O09234	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	O09234_p9338173fcb		O09234	2	13	Non structural protein 1	w
+STRUCTURAL	virus	O09234_pc2f4d0da67		O09234	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	O09781		O09781	0	11	Structural protein precursor VP8	w
+STRUCTURAL	virus	O36177_p56ad820db0		O36177	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	O36177_p63d43f6deb		O36177	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	O36177_pd3ea6394b8		O36177	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	O36180_p07bf4111aa		O36180	0	9	Non structural protein 5A	w
+STRUCTURAL	virus	O36180_p9bc35763b5		O36180	1	9	Non structural protein 4B	w
+STRUCTURAL	virus	O36180_pb62fb4204e		O36180	1	9	Non structural protein 4A	w
+STRUCTURAL	virus	O39927_p384359f9af		O39927	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	O39927_p8fc1f0d8c2		O39927	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	O39927_pa540d6a90a		O39927	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	O39928_p914e48614e		O39928	2	10	Non structural protein 4A	w
+STRUCTURAL	virus	O39928_pb42f132cd0		O39928	3	10	Non structural protein 4B	w
+STRUCTURAL	virus	O39928_pf29517a5e1		O39928	2	10	Non structural protein 5A	w
+STRUCTURAL	virus	O41892_pfdd0d46549		O41892	0	6	Non structural protein 4A	w
+STRUCTURAL	virus	O56042		O56042	0	8	Structural protein VP1	w
+STRUCTURAL	virus	O90370_p5695c4f113		O90370	1	9	Non structural protein 3	w
+STRUCTURAL	virus	O93214		O93214	2	12	Structural protein VP9	w
+STRUCTURAL	virus	P03314_p7f3ddde28e		P03314	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P03314_paaca2e1f76		P03314	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	P03314_pd85f07b18b		P03314	2	13	Non structural protein 2A	w
+STRUCTURAL	virus	P03314_pddbcd8474b		P03314	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P05769_p7a1e7eb16f		P05769	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P05769_pb4ba4e2e68		P05769	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	P05769_pb576b8ccc2		P05769	3	13	Non structural protein 4B	w
+STRUCTURAL	virus	P05769_pfd6239c12b		P05769	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P06935_p3fbbcd7448		P06935	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P06935_p7524d1cf1c		P06935	3	13	Non structural protein 1	w
+STRUCTURAL	virus	P06935_pc72ac4f360		P06935	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	P06935_pcb8bf29f44		P06935	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	P08411_pdc3067b63c		P08411	2	9	Non structural protein 3	w
+STRUCTURAL	virus	P09266	ORF1	P09266	1	68	Structural protein 1	w
+STRUCTURAL	virus	P09866_p0c5585f493		P09866	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	P09866_p2ab913bee9		P09866	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	P09866_p314b7816f0		P09866	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P09866_p3f7b08f2f6		P09866	2	13	Non structural protein 4A	w
+STRUCTURAL	virus	P0C568	L	P0C568	1	2	Large structural protein	w
+STRUCTURAL	virus	P0DOH8		P0DOH8	2	13	Structural polyprotein	w
+STRUCTURAL	virus	P0DOK0		P0DOK0	1	9	Frameshifted structural polyprotein	w
+STRUCTURAL	virus	P0DOK1		P0DOK1	1	10	Frameshifted structural polyprotein	w
+STRUCTURAL	virus	P0DTO1	U11	P0DTO1	4	95	Large structural phosphoprotein	w
+STRUCTURAL	virus	P11213	L	P11213	0	1	Large structural protein	w
+STRUCTURAL	virus	P13886_p1248436c56		P13886	1	9	Non structural protein 3	w
+STRUCTURAL	virus	P14335_pa7254ed196		P14335	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	P14335_pb8d628f4ba		P14335	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P14335_pc23cec6017		P14335	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	P14335_pf2ffd6920d		P14335	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P14336_p25920af8ef		P14336	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P14336_p6d3144272f		P14336	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	P14336_p9b4e7cdcf7		P14336	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	P14336_pc257d8f625		P14336	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P17763_p154a88d67e		P17763	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	P17763_p40297f855f		P17763	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	P17763_p76f6dfa537		P17763	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P17763_pf06088a854		P17763	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P19711_p445e78c598		P19711	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	P19711_p947b6b4847		P19711	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	P19711_p966afc147a		P19711	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	P22338_p2e5d97b284		P22338	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P22338_p4c943efb5c		P22338	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	P22338_p8522a3d943		P22338	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	P22338_pfddcda155c		P22338	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P26660_p14e3e95970		P26660	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	P26660_pbad36688a8		P26660	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	P26660_pd5cc9045e6		P26660	3	10	Non structural protein 4B	w
+STRUCTURAL	virus	P26661_p55a98021f0		P26661	2	10	Non structural protein 4A	w
+STRUCTURAL	virus	P26661_p9396b6e2d6		P26661	4	10	Non structural protein 4B	w
+STRUCTURAL	virus	P26661_pb4a04d9988		P26661	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	P26662_pe222b48ef2		P26662	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	P26662_pe328c29056		P26662	2	10	Non structural protein 4B	w
+STRUCTURAL	virus	P26662_pe5531b56c5		P26662	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	P26664_p03f7dcd0c4		P26664	2	11	Non structural protein 4B	w
+STRUCTURAL	virus	P26664_p47699a0053		P26664	1	11	Non structural protein 5A	w
+STRUCTURAL	virus	P26664_pbe18fca2eb		P26664	1	11	Non structural protein 4A	w
+STRUCTURAL	virus	P27915_p9f82cae31e		P27915	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	P27915_pc0cd4d71a3		P27915	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	P27915_pddedcd9426		P27915	2	13	Non structural protein 1	w
+STRUCTURAL	virus	P27915_pdeea004827		P27915	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	P27958_p7e1436215e		P27958	2	11	Non structural protein 4B	w
+STRUCTURAL	virus	P27958_pad0c780436		P27958	2	11	Non structural protein 4A	w
+STRUCTURAL	virus	P27958_pc9808c6417		P27958	2	11	Non structural protein 5A	w
+STRUCTURAL	virus	P32886_p246cf3f22b		P32886	2	14	Non structural protein 4A	w
+STRUCTURAL	virus	P32886_pd44d6f1e4c		P32886	2	14	Non structural protein 4B	w
+STRUCTURAL	virus	P32886_pe6d836d1b8		P32886	0	14	Non structural protein 2A	w
+STRUCTURAL	virus	P32886_pe751153d17		P32886	3	14	Non structural protein 1	w
+STRUCTURAL	virus	P89028		P89028	1	30	Structural protein p32K	w
+STRUCTURAL	virus	Q00701	U11	Q00701	5	97	Large structural phosphoprotein	w
+STRUCTURAL	virus	Q01499_p727afec7de		Q01499	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	Q01499_pd361934d8d		Q01499	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	Q01499_pf336d6b51c		Q01499	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	Q04538_p387958f51a		Q04538	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q04538_p4f3efd4fc5		Q04538	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q04538_p5df6191650		Q04538	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q04538_pde614edb42		Q04538	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q2Y0F0	S1	Q2Y0F0	0	6	Putative structural protein VP1	w
+STRUCTURAL	virus	Q32ZD1_p3d8e481d47		Q32ZD1	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q32ZD1_p578da9c6d0		Q32ZD1	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q32ZD1_p67575e735e		Q32ZD1	3	13	Non structural protein 1	w
+STRUCTURAL	virus	Q32ZD1_pee4e2ee54b		Q32ZD1	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q32ZD5_p16ee6a8826		Q32ZD5	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q32ZD5_p3db3706bc4		Q32ZD5	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q32ZD5_pa7f82577bf		Q32ZD5	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q32ZD5_pb96412b480		Q32ZD5	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q32ZD6_p511ee9ee1a		Q32ZD6	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q32ZD6_p66e1a889b3		Q32ZD6	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q32ZD6_p68207711eb		Q32ZD6	2	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q32ZD6_pbdc78363ea		Q32ZD6	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q32ZD7_p09dd818c4a		Q32ZD7	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q32ZD7_p18b72ea427		Q32ZD7	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q32ZD7_p4259cc98b0		Q32ZD7	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q32ZD7_p9e0303c508		Q32ZD7	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q32ZE0_p14828edc8a		Q32ZE0	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q32ZE0_p9155290657		Q32ZE0	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q32ZE0_pb382b3b62a		Q32ZE0	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q32ZE0_pb49f6bce52		Q32ZE0	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q32ZE1_p3c4e695e53		Q32ZE1	2	14	Non structural protein 1	w
+STRUCTURAL	virus	Q32ZE1_p4518752e52		Q32ZE1	0	14	Non structural protein 2A	w
+STRUCTURAL	virus	Q32ZE1_p826f33d2b2		Q32ZE1	1	14	Non structural protein 4A	w
+STRUCTURAL	virus	Q32ZE1_pc323f6aa31		Q32ZE1	1	14	Non structural protein 4B	w
+STRUCTURAL	virus	Q533M7_p4f84be79c1		Q533M7	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	Q533M7_p8fdbf19cf6		Q533M7	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	Q533M7_pb12d98342b		Q533M7	2	12	Non structural protein 4A	w
+STRUCTURAL	virus	Q56IH8_p4a0741551f		Q56IH8	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q56IH8_p5963685f8b		Q56IH8	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q56IH8_p6cbce528a6		Q56IH8	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q5WPU5_p001144c656		Q5WPU5	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q5WPU5_p203bac1bc2		Q5WPU5	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q5WPU5_p69ace814f0		Q5WPU5	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q5WPU5_pdffb664790		Q5WPU5	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q65464_p62e48a146c		Q65464	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	Q65464_pb9f35c92ab		Q65464	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	Q65464_pfab922131a		Q65464	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	Q65786_p6de63ecc60		Q65786	2	12	Non structural protein 4A	w
+STRUCTURAL	virus	Q65786_pdae263dba9		Q65786	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	Q65786_pf3860194ea		Q65786	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	Q68798_p0b241eb909		Q68798	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q68798_p7cc0ca2fcd		Q68798	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q68798_pec4d483f7b		Q68798	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q68801_p455de79735		Q68801	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q68801_p5878a004bf		Q68801	2	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q68801_pdae56aaa35		Q68801	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q68871_p248513f41b		Q68871	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	Q68871_p6f8b1db6ac		Q68871	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	Q68871_pe42a031594		Q68871	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	Q69422_p1bec49bcf8		Q69422	0	12	Non structural protein 4A	w
+STRUCTURAL	virus	Q69422_p5a77a6a6dc		Q69422	1	12	Non structural protein 5A	w
+STRUCTURAL	virus	Q69422_p667da25911		Q69422	1	12	Non structural protein 4B	w
+STRUCTURAL	virus	Q69431_p19fc6f1bea		Q69431	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q69431_pa2b91c4f23		Q69431	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q69431_pa33510f19d		Q69431	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q69433_p1a02097cda		Q69433	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q69433_p9975182aaf		Q69433	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q69433_pfcb6ac6935		Q69433	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q7T6D2_p174d9fc1bd		Q7T6D2	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q7T6D2_p5e2ea53842		Q7T6D2	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q7T6D2_p886f52a438		Q7T6D2	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q7T6D2_p887a7e575d		Q7T6D2	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q7T918_p0756699e1d		Q7T918	2	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q7T918_p7460a81848		Q7T918	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q7T918_p9aa2e84846		Q7T918	1	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q7T918_pbdda0b843a		Q7T918	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q80PW6_p42cca9b2f3		Q80PW6	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q80PW6_p9975182aaf		Q80PW6	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q80PW6_pc34b00238e		Q80PW6	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q81258_p01186d56fb		Q81258	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q81258_p724cbb7f7b		Q81258	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q81258_pf7f6fb73f5		Q81258	1	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q86281		Q86281	0	11	Putative minor structural protein VP5	w
+STRUCTURAL	virus	Q8JJZ3_p3ce19da1aa		Q8JJZ3	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q8JJZ3_p759e2388b0		Q8JJZ3	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q8JJZ3_p9fd88eb1d4		Q8JJZ3	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q8JJZ3_pbd9cbe3d49		Q8JJZ3	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q8JUX6_pb45d42d1fa		Q8JUX6	1	10	Non structural protein 3	w
+STRUCTURAL	virus	Q8QL53_pd41bf461dd		Q8QL53	1	9	Non structural protein 3	w
+STRUCTURAL	virus	Q8QL64_p32d1538d85		Q8QL64	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q8QL64_p6340eebf2c		Q8QL64	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q8QL64_p71c165c910		Q8QL64	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q8QL64_pdedec1c68d		Q8QL64	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q8QV02	S3	Q8QV02	0	10	Putative structural protein VP3	w
+STRUCTURAL	virus	Q8UZ79		Q8UZ79	1	8	Minor structural protein	w
+STRUCTURAL	virus	Q8VBK7_p063804e684		Q8VBK7	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q8VBK7_p09f8f0c2a0		Q8VBK7	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q8VBK7_p4b075c97b9		Q8VBK7	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q8VBK7_p7e478de777		Q8VBK7	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q91B85_p68399725e3		Q91B85	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q91B85_pc20e91d1cd		Q91B85	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q91B85_pe8c462cab7		Q91B85	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q91B85_pffc39c021e		Q91B85	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q91E12		Q91E12	0	13	Minor core structural protein	w
+STRUCTURAL	virus	Q91ID5	S8	Q91ID5	0	10	Putative structural protein VP5	w
+STRUCTURAL	virus	Q91ID9	S3	Q91ID9	0	7	Putative structural protein VP3	w
+STRUCTURAL	virus	Q96898_p24f7b80667		Q96898	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q96898_p3a2234d281		Q96898	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q96898_pc34e63b362		Q96898	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q96901_p1001f35a61		Q96901	1	9	Non structural protein 4B	w
+STRUCTURAL	virus	Q96901_p38c2acac45		Q96901	1	9	Non structural protein 4A	w
+STRUCTURAL	virus	Q96901_p6299356b12		Q96901	0	9	Non structural protein 5A	w
+STRUCTURAL	virus	Q9DUT7_p5f2f5038f8		Q9DUT7	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q9DUT7_p6ec469c13c		Q9DUT7	1	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q9DUT7_pce748d2dc3		Q9DUT7	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q9DUT7_pefa49d5ac5		Q9DUT7	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q9IG40_p700f0e23a2		Q9IG40	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q9IG40_p82f8c78f35		Q9IG40	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q9IG40_pa873314f52		Q9IG40	0	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q9IG40_pc65bbad5bb		Q9IG40	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q9J9C2_p3d63d5627a		Q9J9C2	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q9J9C2_pb7ecedf777		Q9J9C2	0	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q9J9C2_pc0d9c4fd31		Q9J9C2	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q9J9C2_pf70f9115a8		Q9J9C2	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q9JAD5_p85974e4805		Q9JAD5	1	13	Non structural protein 4A	w
+STRUCTURAL	virus	Q9JAD5_pb64d2b487c		Q9JAD5	0	13	Non structural protein 4B	w
+STRUCTURAL	virus	Q9JAD5_pb7bfc79873		Q9JAD5	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	Q9JAD5_pc1b721b8b9		Q9JAD5	2	13	Non structural protein 1	w
+STRUCTURAL	virus	Q9PYB2_p6b8bb4038f		Q9PYB2	1	12	Non structural protein 4A	w
+STRUCTURAL	virus	Q9PYB2_pa73c6bbb7e		Q9PYB2	0	12	Non structural protein 4B	w
+STRUCTURAL	virus	Q9PYB2_pfd41572161		Q9PYB2	0	12	Non structural protein 5A	w
+STRUCTURAL	virus	Q9QSP0	L	Q9QSP0	1	3	Large structural protein	w
+STRUCTURAL	virus	Q9WBT6_p1fafbcc492		Q9WBT6	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q9WBT6_p6bfa4f2df0		Q9WBT6	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q9WBT6_p88a26119dc		Q9WBT6	2	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q9WM98_p28fb8825aa		Q9WM98	1	10	Non structural protein 4A	w
+STRUCTURAL	virus	Q9WM98_p8aa59624ab		Q9WM98	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	Q9WM98_p9bc35763b5		Q9WM98	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	Q9YWQ2	Segment-10	Q9YWQ2	0	12	Structural protein VP10	w
+STRUCTURAL	virus	R9QT72_p2754513af6		R9QT72	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	R9QT72_pb76446245a		R9QT72	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	R9QT72_pb881cc84b1		R9QT72	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	R9QTE4_p5cead003fe		R9QTE4	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	R9QTE4_p92ef4a6a02		R9QTE4	1	10	Non structural protein 4B	w
+STRUCTURAL	virus	R9QTE4_pcb0d5b6753		R9QTE4	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	R9QTQ6_p5381a4d650		R9QTQ6	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	R9QTQ6_pa00aa563e0		R9QTQ6	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	R9QTQ6_pfa78350d3a		R9QTQ6	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	S5E367_p412253d02f		S5E367	0	10	Non structural protein 4B	w
+STRUCTURAL	virus	S5E367_p57b7378ebf		S5E367	0	10	Non structural protein 5A	w
+STRUCTURAL	virus	S5E367_p5f1b798003		S5E367	0	10	Non structural protein 4A	w
+STRUCTURAL	virus	W5VK97_p152c8464ed		W5VK97	2	13	Non structural protein 4B	w
+STRUCTURAL	virus	W5VK97_pcaccf11e69		W5VK97	0	13	Non structural protein 2A	w
+STRUCTURAL	virus	W5VK97_pf3ea49a321		W5VK97	2	13	Non structural protein 1	w
+STRUCTURAL	virus	W5VK97_pf5ff497d24		W5VK97	1	13	Non structural protein 4A	w
+STRUCTURAL	worm	B2FDA8	smc-3	B2FDA8	9	51	Structural maintenance of chromosomes protein 3	w
+STRUCTURAL	worm	G5ECT2	CELE_F15E6.3	G5ECT2	0	4	Glycine-rich cell wall structural protein	w
+STRUCTURAL	worm	G5EDG6	col-117	G5EDG6	0	3	COLlagen structural	w
+STRUCTURAL	worm	G5EEB6	dpy-14	G5EEB6	0	7	COLlagen structural	w
+STRUCTURAL	worm	G5EG17	smc-6	G5EG17	4	23	Structural maintenance of chromosomes protein 6 homolog smc-	w
+STRUCTURAL	worm	H2L275	grsp-2	H2L275	0	3	Glycine-rich cell wall structural protein 1.8-like	w
+STRUCTURAL	worm	O01789	him-1	O01789	8	36	Structural maintenance of chromosomes protein 1	w
+STRUCTURAL	worm	O45197	CELE_W09G12.6	O45197	0	1	Glycine-rich cell wall structural protein 1	w
+STRUCTURAL	worm	Q18237	smc-5	Q18237	7	32	Structural maintenance of chromosomes protein 5	w
+STRUCTURAL	worm	Q18616	smcl-1	Q18616	4	25	Structural maintenance of chromosomes-like protein 1	w
+STRUCTURAL	worm	Q8MYM7	CELE_Y39B6A.37	Q8MYM7	1	1	Structural protein	w
+STRUCTURAL	worm	Q9NET6	CELE_Y39B6A.9	Q9NET6	0	21	Glycine-rich cell wall structural protein 1.8-like	w
+STRUCTURAL	yeast	P32908	SMC1	P32908	11	80	Structural maintenance of chromosomes protein 1	w
+STRUCTURAL	yeast	P38989	SMC2	P38989	11	46	Structural maintenance of chromosomes protein 2	w
+STRUCTURAL	yeast	P47037	SMC3	P47037	10	104	Structural maintenance of chromosomes protein 3	w
+STRUCTURAL	yeast	Q01846	MDM1	Q01846	1	25	Structural protein MDM1	w
+STRUCTURAL	yeast	Q08204	SMC5	Q08204	9	60	Structural maintenance of chromosomes protein 5	w
+STRUCTURAL	yeast	Q12267	SMC4	Q12267	9	52	Structural maintenance of chromosomes protein 4	w
+STRUCTURAL	yeast	Q12749	SMC6	Q12749	16	220	Structural maintenance of chromosomes protein 6	w
+STRUCTURAL	zebrafish	A0A8M1NHD0	si:dkey-119f1.1	A0A8M1NHD0	5	43	Structural maintenance of chromosomes protein 6	w
+STRUCTURAL	zebrafish	A0AB32THU2	smc1b	A0AB32THU2	12	55	Structural maintenance of chromosomes protein	w
+STRUCTURAL	zebrafish	B8A5K9	smc2	B8A5K9	11	71	Structural maintenance of chromosomes protein	w
+STRUCTURAL	zebrafish	E7F0X6	smc1a	E7F0X6	15	56	Structural maintenance of chromosomes protein	w
+STRUCTURAL	zebrafish	E7FGC2	smc4	E7FGC2	14	62	Structural maintenance of chromosomes protein	w
+STRUCTURAL	zebrafish	Q6DRM9	smc1al	Q6DRM9	10	55	Structural maintenance of chromosomes protein	w
+STRUCTURAL	zebrafish	Q6PBA8	mns1	Q6PBA8	0	57	Meiosis-specific nuclear structural protein 1	w
+STRUCTURE	fly	FBgn0037506	Mics1	Q9VIB2	6	12	MIP04261p (Mitochondrial morphology and cristae structure 1)	w
+STRUCTURE	human	Q5M775	SPECC1	Q5M775	85	243	Cytospin-B (Nuclear structure protein 5) (NSP5) (Sperm antig	w
+STRUCTURE	human	Q9BX97	PLVAP	Q9BX97	15	193	Plasmalemma vesicle-associated protein (Fenestrated endothel	w
+STRUCTURE	human	Q9H3K2	GHITM	Q9H3K2	27	159	Growth hormone-inducible transmembrane protein (Dermal papil	w
+STRUCTURE	human	Q9UEW3	MARCO	Q9UEW3	4	23	Macrophage receptor MARCO (Macrophage receptor with collagen	w
+STRUCTURE-CONTAINING	human	Q9P0K7	RAI14	Q9P0K7	61	263	Ankycorbin (Ankyrin repeat and coiled-coil structure-contain	w
+STRUCTURE-REMODELING	yeast	P25632	RSC6	P25632	11	74	Chromatin structure-remodeling complex protein RSC6	w
+STRUCTURE-REMODELING	yeast	P32832	NPL6	P32832	4	90	Chromatin structure-remodeling complex subunit RSC7	w
+STRUCTURE-REMODELING	yeast	P38210	LDB7	P38210	2	29	Chromatin structure-remodeling complex protein RSC14	w
+STRUCTURE-REMODELING	yeast	P38781	RSC30	P38781	2	78	Chromatin structure-remodeling complex protein RSC30	w
+STRUCTURE-REMODELING	yeast	P43609	RSC8	P43609	20	156	Chromatin structure-remodeling complex protein RSC8	w
+STRUCTURE-REMODELING	yeast	P53236	RSC1	P53236	6	56	Chromatin structure-remodeling complex subunit RSC1	w
+STRUCTURE-REMODELING	yeast	Q02206	RSC4	Q02206	4	135	Chromatin structure-remodeling complex subunit RSC4	w
+STRUCTURE-REMODELING	yeast	Q03124	RSC9	Q03124	6	60	Chromatin structure-remodeling complex subunit RSC9	w
+STRUCTURE-REMODELING	yeast	Q06168	SFH1	Q06168	2	59	Chromatin structure-remodeling complex subunit SFH1	w
+STRUCTURE-REMODELING	yeast	Q06488	RSC2	Q06488	6	100	Chromatin structure-remodeling complex subunit RSC2	w
+STRUCTURE-REMODELING	yeast	Q06639	RSC3	Q06639	3	104	Chromatin structure-remodeling complex protein RSC3	w
+STRUCTURE-REMODELING	yeast	Q07979	RSC58	Q07979	9	119	Chromatin structure-remodeling complex protein RSC58	w
+STRUCTURE-SPECIFIC	fly	FBgn0002909	mus312	A0A023GPN3	5	34	Structure-specific endonuclease subunit SLX4	w
+STRUCTURE-SPECIFIC	fly	FBgn0025832	Fen1	Q7K7A9	9	144	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (Flap structure-spe	w
+STRUCTURE-SPECIFIC	fly	FBgn0037263	slx1	Q9VN41	5	24	Structure-specific endonuclease subunit SLX1 homolog (EC 3.1	w
+STRUCTURE-SPECIFIC	fly	FBgn0263831	Gen	Q9VRJ0	3	63	Flap endonuclease GEN (EC 3.1.-.-) (Flap structure-specific 	w
+STRUCTURE-SPECIFIC	human	A4GXA9	EME2	A4GXA9	8	90	Structure-specific endonuclease subunit EME2 (Essential meio	w
+STRUCTURE-SPECIFIC	human	P39748	FEN1	P39748	13	278	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (DNase IV) (Flap st	w
+STRUCTURE-SPECIFIC	human	Q8IY92	SLX4	Q8IY92	119	461	Structure-specific endonuclease subunit SLX4 (BTB/POZ domain	w
+STRUCTURE-SPECIFIC	human	Q8NAG6	ANKLE1	Q8NAG6	9	67	Structure-specific endonuclease ANKLE1 (Ankyrin repeat and L	w
+STRUCTURE-SPECIFIC	human	Q96AY2	EME1	Q96AY2	24	158	Structure-specific endonuclease subunit EME1 (Crossover junc	w
+STRUCTURE-SPECIFIC	human	Q96NY9	MUS81	Q96NY9	25	222	Structure-specific endonuclease subunit MUS81 (EC 3.1.22.-) 	w
+STRUCTURE-SPECIFIC	human	Q9BQ83	SLX1A	Q9BQ83	7	108	Structure-specific endonuclease subunit SLX1 (EC 3.1.-.-) (G	w
+STRUCTURE-SPECIFIC	worm	P91351	slx-1	P91351	3	19	Structure-specific endonuclease subunit SLX1 homolog	w
+STRUCTURE-SPECIFIC	yeast	P38324	SLX1	P38324	1	14	Structure-specific endonuclease subunit SLX1	w
+STRUCTURE-SPECIFIC	yeast	Q12098	SLX4	Q12098	7	27	Structure-specific endonuclease subunit SLX4	w
+STRUCTURE-SPECIFIC	zebrafish	Q7SXA9	mus81	Q7SXA9	6	113	Structure-specific endonuclease subunit MUS81	w
+STRUMP	fly	FBgn0036571	Strump	Q9VUY8	5	18	WASH complex subunit homolog 5 (WASH complex subunit strumpe	
+STRUMPELLIN	fly	FBgn0030739	SWIP	Q9VXH9	4	11	WASH complex subunit 4 (Strumpellin and WASH-interacting pro	w
+STRUMPELLIN	fly	FBgn0036571	Strump	Q9VUY8	5	18	WASH complex subunit homolog 5 (WASH complex subunit strumpe	w
+STRUMPELLIN	human	Q12768	WASHC5	Q12768	11	103	WASH complex subunit 5 (Strumpellin) (WASH complex subunit s	w
+STRUMPELLIN	human	Q2M389	WASHC4	Q2M389	11	104	WASH complex subunit 4 (Strumpellin and WASH-interacting pro	w
+STRUMPELLIN	worm	O01858	wshc-5	O01858	2	6	WASH complex subunit strumpellin	w
+STRYCHNINE-BINDING	human	P23415	GLRA1	P23415	32	99	Glycine receptor subunit alpha-1 (Glycine receptor 48 kDa su	w

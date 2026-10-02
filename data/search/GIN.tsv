@@ -1,19 +1,52 @@
-GIN1	candida-albicans-237561	A0A1D8PF47	GIN1	A0A1D8PF47	3	7	Chromatin-modulating protein
-GIN1	mus-musculus	Q8K259	Gin1	Q8K259	0	4	Gypsy retrotransposon integrase-like protein 1
-GIN1	rattus-norvegicus	Q66H30	GIN1	Q66H30	0	8	Gypsy retrotransposon integrase-like protein 1
-GIN4	candida-albicans-237561	Q59W62	GIN4	Q59W62	1	14	Serine/threonine-protein kinase GIN4
-GINS1	dictyostelium-discoideum	Q54HR6	gins1	Q54HR6	3	19	Probable DNA replication complex GINS protein PSF1
-GINS1	mus-musculus	Q9CZ15	Gins1	Q9CZ15	5	37	DNA replication complex GINS protein PSF1
-GINS1	rattus-norvegicus	A6KHH3	Gins1	A6KHH3	6	46	DNA replication complex GINS protein PSF1
-GINS2	arabidopsis-thaliana	Q9C7A8	GINS2	Q9C7A8	5	43	DNA replication complex GINS protein PSF2
-GINS2	dictyostelium-discoideum	Q54BL9	gins2	Q54BL9	3	20	Probable DNA replication complex GINS protein PSF2
-GINS2	mus-musculus	Q9D600	Gins2	Q9D600	4	35	DNA replication complex GINS protein PSF2
-GINS2	rattus-norvegicus	D3ZSY6	Gins2	D3ZSY6	3	47	DNA replication complex GINS protein PSF2
-GINS3	dictyostelium-discoideum	Q54EH6	gins3	Q54EH6	4	19	Probable DNA replication complex GINS protein PSF3
-GINS3	mus-musculus	Q9CY94	Gins3	Q9CY94	3	29	DNA replication complex GINS protein PSF3
-GINS3	rattus-norvegicus	D3Z9I4	Gins3	D3Z9I4	2	37	DNA replication complex GINS protein PSF3
-GINS4	dictyostelium-discoideum	Q55EA2	gins4	Q55EA2	3	22	DNA replication complex GINS protein SLD5
-GINS4	mus-musculus	Q99LZ3	Gins4	Q99LZ3	2	46	DNA replication complex GINS protein SLD5
-GINS4	rattus-norvegicus	Q499W2	Gins4	Q499W2	3	51	DNA replication complex GINS protein SLD5
-GINT1	arabidopsis-thaliana	Q84WB7	GINT1	Q84WB7	0	45	Glucosamine inositolphosphorylceramide transferase 1
-GINT1	oryza-sativa-subsp-japonica	Q53WK1	GINT1	Q53WK1	0	48	Glucosamine inositolphosphorylceramide transferase 1
+GIN-1	human	Q9NXP7	GIN1	Q9NXP7	4	34	Gypsy retrotransposon integrase-like protein 1 (GIN-1) (Ty3/	w
+GIN1	candida-albicans-237561	A0A1D8PF47	GIN1	A0A1D8PF47	3	7	Chromatin-modulating protein	
+GIN1	human	Q9NXP7	GIN1	Q9NXP7	4	34	Gypsy retrotransposon integrase-like protein 1 (GIN-1) (Ty3/	
+GIN1	human	Q9P2P1	NYNRIN	Q9P2P1	6	48	Protein NYNRIN (NYN domain and retroviral integrase catalyti	w
+GIN1	mus-musculus	Q8K259	Gin1	Q8K259	0	4	Gypsy retrotransposon integrase-like protein 1	
+GIN1	rattus-norvegicus	Q66H30	GIN1	Q66H30	0	8	Gypsy retrotransposon integrase-like protein 1	
+GIN1_HUMAN	human	Q9NXP7	GIN1	Q9NXP7	4	34		
+GIN4	candida-albicans-237561	Q59W62	GIN4	Q59W62	1	14	Serine/threonine-protein kinase GIN4	
+GIN4	yeast	Q12263	GIN4	Q12263	11	102	Serine/threonine-protein kinase GIN4 (EC 2.7.11.1) (Growth i	
+GIN4_YEAST	yeast	Q12263	GIN4	Q12263	11	102		
+GINM1	human	Q9NU53	GINM1	Q9NU53	17	93	Glycoprotein integral membrane protein 1	
+GINM1_HUMAN	human	Q9NU53	GINM1	Q9NU53	17	93		
+GINS	fly	FBgn0030196	Psf3	Q9W2V7	4	32	DNA replication complex GINS protein PSF3	w
+GINS	fly	FBgn0035194	Psf1	Q9W0I7	6	37	DNA replication complex GINS protein PSF1	w
+GINS	fly	FBgn0261976	Psf2	Q9VQY9	5	37	Probable DNA replication complex GINS protein PSF2 (GINS com	w
+GINS	human	Q14691	GINS1	Q14691	24	251	DNA replication complex GINS protein PSF1 (GINS complex subu	w
+GINS	human	Q9BRT9	GINS4	Q9BRT9	26	264	DNA replication complex GINS protein SLD5 (GINS complex subu	w
+GINS	human	Q9BRX5	GINS3	Q9BRX5	9	104	DNA replication complex GINS protein PSF3 (GINS complex subu	w
+GINS	human	Q9Y248	GINS2	Q9Y248	23	221	DNA replication complex GINS protein PSF2 (GINS complex subu	w
+GINS	worm	O62193	psf-2	O62193	4	20	Probable DNA replication complex GINS protein PSF2	w
+GINS	worm	Q22019	psf-1	Q22019	4	39	Probable DNA replication complex GINS protein PSF1	w
+GINS	worm	Q9BL54	psf-3	Q9BL54	4	25	DNA replication complex GINS protein PSF3	w
+GINS	worm	Q9U2W9	sld-5	Q9U2W9	3	29	DNA replication complex GINS protein SLD5	w
+GINS	yeast	P40359	PSF2	P40359	3	86	DNA replication complex GINS protein PSF2	w
+GINS	yeast	Q03406	SLD5	Q03406	7	61	DNA replication complex GINS protein SLD5	w
+GINS	yeast	Q12146	PSF3	Q12146	4	47	DNA replication complex GINS protein PSF3	w
+GINS	yeast	Q12488	PSF1	Q12488	5	49	DNA replication complex GINS protein PSF1	w
+GINS	zebrafish	A0A2R8Q9M1	gins4	A0A2R8Q9M1	2	38	DNA replication complex GINS protein SLD5	w
+GINS	zebrafish	Q4VBJ6	gins2	Q4VBJ6	1	33	DNA replication complex GINS protein PSF2	w
+GINS1	dictyostelium-discoideum	Q54HR6	gins1	Q54HR6	3	19	Probable DNA replication complex GINS protein PSF1	
+GINS1	human	Q14691	GINS1	Q14691	24	251	DNA replication complex GINS protein PSF1 (GINS complex subu	
+GINS1	mus-musculus	Q9CZ15	Gins1	Q9CZ15	5	37	DNA replication complex GINS protein PSF1	
+GINS1	rattus-norvegicus	A6KHH3	Gins1	A6KHH3	6	46	DNA replication complex GINS protein PSF1	
+GINS2	arabidopsis-thaliana	Q9C7A8	GINS2	Q9C7A8	5	43	DNA replication complex GINS protein PSF2	
+GINS2	dictyostelium-discoideum	Q54BL9	gins2	Q54BL9	3	20	Probable DNA replication complex GINS protein PSF2	
+GINS2	human	Q9Y248	GINS2	Q9Y248	23	221	DNA replication complex GINS protein PSF2 (GINS complex subu	
+GINS2	mus-musculus	Q9D600	Gins2	Q9D600	4	35	DNA replication complex GINS protein PSF2	
+GINS2	rattus-norvegicus	D3ZSY6	Gins2	D3ZSY6	3	47	DNA replication complex GINS protein PSF2	
+GINS2	zebrafish	Q4VBJ6	gins2	Q4VBJ6	1	33	DNA replication complex GINS protein PSF2	
+GINS3	dictyostelium-discoideum	Q54EH6	gins3	Q54EH6	4	19	Probable DNA replication complex GINS protein PSF3	
+GINS3	human	Q9BRX5	GINS3	Q9BRX5	9	104	DNA replication complex GINS protein PSF3 (GINS complex subu	
+GINS3	mus-musculus	Q9CY94	Gins3	Q9CY94	3	29	DNA replication complex GINS protein PSF3	
+GINS3	rattus-norvegicus	D3Z9I4	Gins3	D3Z9I4	2	37	DNA replication complex GINS protein PSF3	
+GINS4	dictyostelium-discoideum	Q55EA2	gins4	Q55EA2	3	22	DNA replication complex GINS protein SLD5	
+GINS4	human	Q9BRT9	GINS4	Q9BRT9	26	264	DNA replication complex GINS protein SLD5 (GINS complex subu	
+GINS4	mus-musculus	Q99LZ3	Gins4	Q99LZ3	2	46	DNA replication complex GINS protein SLD5	
+GINS4	rattus-norvegicus	Q499W2	Gins4	Q499W2	3	51	DNA replication complex GINS protein SLD5	
+GINS4	zebrafish	A0A2R8Q9M1	gins4	A0A2R8Q9M1	2	38	DNA replication complex GINS protein SLD5	
+GINT1	arabidopsis-thaliana	Q84WB7	GINT1	Q84WB7	0	45	Glucosamine inositolphosphorylceramide transferase 1	
+GINT1	oryza-sativa-subsp-japonica	Q53WK1	GINT1	Q53WK1	0	48	Glucosamine inositolphosphorylceramide transferase 1	
+GINT3	fly	FBgn0034372	amls	Q7K0S5	1	19		
+GINT3_301	fly	FBgn0034372	amls	Q7K0S5	1	19		

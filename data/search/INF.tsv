@@ -1,47 +1,88 @@
-INF2	mus-musculus	Q0GNC1	Inf2	Q0GNC1	1	20	Inverted formin-2
-INF2	rattus-norvegicus	E9PT22	Inf2	E9PT22	0	5	Inverted formin-2
-INFA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PM85	infA	Q9PM85	0	34	Translation initiation factor IF-1
-INFA	escherichia-coli-83333	P69222	infA	P69222	2	37	Translation initiation factor IF-1
-INFA	glycine-max	Q94KR7	infA	Q94KR7	14	511	Translation initiation factor IF-1, chloroplastic
-INFA	haemophilus-influenzae	P44322	infA	P44322	2	30	Translation initiation factor IF-1
-INFA	helicobacter-pylori	P65108	infA	P65108	1	44	Translation initiation factor IF-1
-INFA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQL9	infA	A0A0H3GQL9	7	138	Translation initiation factor IF-1
-INFA	mycobacterium-leprae	P0A5H7	infA	P0A5H7	4	66	Translation initiation factor IF-1
-INFA	mycobacterium-tuberculosis	P9WKK3	infA	P9WKK3	3	49	Translation initiation factor IF-1
-INFA	neisseria-gonorrhoeae	Q5F5U8	infA	Q5F5U8	1	39	Translation initiation factor IF-1
-INFA	nocardia-brasiliensis	K0EPH0	infA	K0EPH0	5	69	Translation initiation factor IF-1
-INFA	nocardia-brasiliensis	K0F358	infA	K0F358	4	69	Translation initiation factor IF-1
-INFA	oryza-sativa-subsp-japonica	P0C380	infA	P0C380	17	305	Translation initiation factor IF-1, chloroplastic
-INFA	salmonella-typhimurium	P69226	infA	P69226	4	46	Translation initiation factor IF-1
-INFA	shigella-dysenteriae-serotype-1	Q32E03	infA	Q32E03	2	49	Translation initiation factor IF-1
-INFA	staphylococcus-aureus-93061	Q2FW28	infA	Q2FW28	4	36	Translation initiation factor IF-1
-INFA	streptococcus-pneumoniae	P65122	infA	P65122	2	29	Translation initiation factor IF-1
-INFA	zea-mays	P46618	infA	P46618	20	259	Translation initiation factor IF-1, chloroplastic
-INFB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIZ1	infB	Q9PIZ1	4	94	Translation initiation factor IF-2
-INFB	cladophialophora-carrionii	A0A1C1CGG4	infB	A0A1C1CGG4	5	165	Translation initiation factor IF-2, mitochondrial
-INFB	haemophilus-influenzae	P44323	infB	P44323	2	88	Translation initiation factor IF-2
-INFB	helicobacter-pylori	P55972	infB	P55972	1	79	Translation initiation factor IF-2
-INFB	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GY08	infB	A0A0H3GY08	2	201	Translation initiation factor IF-2
-INFB	methanocaldococcus-jannaschii	Q57710	infB	Q57710	0	79	Probable translation initiation factor IF-2
-INFB	mycobacterium-leprae	Q9Z5I9	infB	Q9Z5I9	1	110	Translation initiation factor IF-2
-INFB	mycobacterium-tuberculosis	P9WKK1	infB	P9WKK1	2	139	Translation initiation factor IF-2
-INFB	neisseria-gonorrhoeae	Q5F797	infB	Q5F797	5	103	Translation initiation factor IF-2
-INFB	nocardia-brasiliensis	K0F2V4	infB	K0F2V4	2	174	Translation initiation factor IF-2
-INFB	pseudomonas-aeruginosa	Q9HV55	infB	Q9HV55	2	147	Translation initiation factor IF-2
-INFB	salmonella-typhimurium	Q9ZF31	infB	Q9ZF31	2	132	Translation initiation factor IF-2
-INFB	shigella-dysenteriae-serotype-1	Q32BG5	infB	Q32BG5	2	135	Translation initiation factor IF-2
-INFB	staphylococcus-aureus-93061	Q2G2D0	infB	Q2G2D0	1	95	Translation initiation factor IF-2
-INFB	streptococcus-pneumoniae	Q8DQV2	infB	Q8DQV2	4	106	Translation initiation factor IF-2
-INFC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIS2	infC	Q9PIS2	3	21	Translation initiation factor IF-3
-INFC	escherichia-coli-83333	P0A707	infC	P0A707	3	22	Translation initiation factor IF-3
-INFC	haemophilus-influenzae	P43814	infC	P43814	2	19	Translation initiation factor IF-3
-INFC	helicobacter-pylori	P55973	infC	P55973	0	24	Translation initiation factor IF-3
-INFC	mycobacterium-leprae	Q9CC22	infC	Q9CC22	2	27	Translation initiation factor IF-3
-INFC	mycobacterium-tuberculosis	P9WKJ9	infC	P9WKJ9	1	25	Translation initiation factor IF-3
-INFC	neisseria-gonorrhoeae	Q5F9U3	infC	Q5F9U3	2	21	Translation initiation factor IF-3
-INFC	nocardia-brasiliensis	K0EUJ7	infC	K0EUJ7	0	34	Translation initiation factor IF-3
-INFC	pseudomonas-aeruginosa	Q9I0A0	infC	Q9I0A0	1	26	Translation initiation factor IF-3
-INFC	salmonella-typhimurium	P33321	infC	P33321	3	20	Translation initiation factor IF-3
-INFC	shigella-dysenteriae-serotype-1	Q32FI1	infC	Q32FI1	3	23	Translation initiation factor IF-3
-INFC	staphylococcus-aureus-93061	Q2FXP9	infC	Q2FXP9	2	22	Translation initiation factor IF-3
-INFC	streptococcus-pneumoniae	P65145	infC	P65145	2	21	Translation initiation factor IF-3
+INF-1	worm	P27639	inf-1	P27639	3	75	Eukaryotic initiation factor 4A	
+INF1	human	Q9C0D6	FHDC1	Q9C0D6	9	64		
+INF2	human	Q27J81	INF2	Q27J81	27	331	Inverted formin-2 (HBEBP2-binding protein C)	
+INF2	mus-musculus	Q0GNC1	Inf2	Q0GNC1	1	20	Inverted formin-2	
+INF2	rattus-norvegicus	E9PT22	Inf2	E9PT22	0	5	Inverted formin-2	
+INF2	zebrafish	A0A8M9P0A2	inf2	A0A8M9P0A2	1	17	Inverted formin-2	
+INF2_HUMAN	human	Q27J81	INF2	Q27J81	27	331		
+INFA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PM85	infA	Q9PM85	0	34	Translation initiation factor IF-1	
+INFA	escherichia-coli-83333	P69222	infA	P69222	2	37	Translation initiation factor IF-1	
+INFA	glycine-max	Q94KR7	infA	Q94KR7	14	511	Translation initiation factor IF-1, chloroplastic	
+INFA	haemophilus-influenzae	P44322	infA	P44322	2	30	Translation initiation factor IF-1	
+INFA	helicobacter-pylori	P65108	infA	P65108	1	44	Translation initiation factor IF-1	
+INFA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQL9	infA	A0A0H3GQL9	7	138	Translation initiation factor IF-1	
+INFA	mycobacterium-leprae	P0A5H7	infA	P0A5H7	4	66	Translation initiation factor IF-1	
+INFA	mycobacterium-tuberculosis	P9WKK3	infA	P9WKK3	3	49	Translation initiation factor IF-1	
+INFA	neisseria-gonorrhoeae	Q5F5U8	infA	Q5F5U8	1	39	Translation initiation factor IF-1	
+INFA	nocardia-brasiliensis	K0EPH0	infA	K0EPH0	5	69	Translation initiation factor IF-1	
+INFA	nocardia-brasiliensis	K0F358	infA	K0F358	4	69	Translation initiation factor IF-1	
+INFA	oryza-sativa-subsp-japonica	P0C380	infA	P0C380	17	305	Translation initiation factor IF-1, chloroplastic	
+INFA	salmonella-typhimurium	P69226	infA	P69226	4	46	Translation initiation factor IF-1	
+INFA	shigella-dysenteriae-serotype-1	Q32E03	infA	Q32E03	2	49	Translation initiation factor IF-1	
+INFA	staphylococcus-aureus-93061	Q2FW28	infA	Q2FW28	4	36	Translation initiation factor IF-1	
+INFA	streptococcus-pneumoniae	P65122	infA	P65122	2	29	Translation initiation factor IF-1	
+INFA	zea-mays	P46618	infA	P46618	20	259	Translation initiation factor IF-1, chloroplastic	
+INFB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIZ1	infB	Q9PIZ1	4	94	Translation initiation factor IF-2	
+INFB	cladophialophora-carrionii	A0A1C1CGG4	infB	A0A1C1CGG4	5	165	Translation initiation factor IF-2, mitochondrial	
+INFB	haemophilus-influenzae	P44323	infB	P44323	2	88	Translation initiation factor IF-2	
+INFB	helicobacter-pylori	P55972	infB	P55972	1	79	Translation initiation factor IF-2	
+INFB	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GY08	infB	A0A0H3GY08	2	201	Translation initiation factor IF-2	
+INFB	methanocaldococcus-jannaschii	Q57710	infB	Q57710	0	79	Probable translation initiation factor IF-2	
+INFB	mycobacterium-leprae	Q9Z5I9	infB	Q9Z5I9	1	110	Translation initiation factor IF-2	
+INFB	mycobacterium-tuberculosis	P9WKK1	infB	P9WKK1	2	139	Translation initiation factor IF-2	
+INFB	neisseria-gonorrhoeae	Q5F797	infB	Q5F797	5	103	Translation initiation factor IF-2	
+INFB	nocardia-brasiliensis	K0F2V4	infB	K0F2V4	2	174	Translation initiation factor IF-2	
+INFB	pseudomonas-aeruginosa	Q9HV55	infB	Q9HV55	2	147	Translation initiation factor IF-2	
+INFB	salmonella-typhimurium	Q9ZF31	infB	Q9ZF31	2	132	Translation initiation factor IF-2	
+INFB	shigella-dysenteriae-serotype-1	Q32BG5	infB	Q32BG5	2	135	Translation initiation factor IF-2	
+INFB	staphylococcus-aureus-93061	Q2G2D0	infB	Q2G2D0	1	95	Translation initiation factor IF-2	
+INFB	streptococcus-pneumoniae	Q8DQV2	infB	Q8DQV2	4	106	Translation initiation factor IF-2	
+INFC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIS2	infC	Q9PIS2	3	21	Translation initiation factor IF-3	
+INFC	escherichia-coli-83333	P0A707	infC	P0A707	3	22	Translation initiation factor IF-3	
+INFC	haemophilus-influenzae	P43814	infC	P43814	2	19	Translation initiation factor IF-3	
+INFC	helicobacter-pylori	P55973	infC	P55973	0	24	Translation initiation factor IF-3	
+INFC	mycobacterium-leprae	Q9CC22	infC	Q9CC22	2	27	Translation initiation factor IF-3	
+INFC	mycobacterium-tuberculosis	P9WKJ9	infC	P9WKJ9	1	25	Translation initiation factor IF-3	
+INFC	neisseria-gonorrhoeae	Q5F9U3	infC	Q5F9U3	2	21	Translation initiation factor IF-3	
+INFC	nocardia-brasiliensis	K0EUJ7	infC	K0EUJ7	0	34	Translation initiation factor IF-3	
+INFC	pseudomonas-aeruginosa	Q9I0A0	infC	Q9I0A0	1	26	Translation initiation factor IF-3	
+INFC	salmonella-typhimurium	P33321	infC	P33321	3	20	Translation initiation factor IF-3	
+INFC	shigella-dysenteriae-serotype-1	Q32FI1	infC	Q32FI1	3	23	Translation initiation factor IF-3	
+INFC	staphylococcus-aureus-93061	Q2FXP9	infC	Q2FXP9	2	22	Translation initiation factor IF-3	
+INFC	streptococcus-pneumoniae	P65145	infC	P65145	2	21	Translation initiation factor IF-3	
+INFECTION	fly	FBgn0052185	edin	Q8IQR7	13	256	Elevated during infection (GEO12088p1)	w
+INFECTION	fly	FBgn0265577	IbinA	A0A6M3Q7I6	34	256	Induced by Infection A	w
+INFECTION	fly	FBgn0266405	IbinB	A0A6H2EDS4	0	1	Induced by Infection B	w
+INFECTION	human	Q9BWK5	CYREN	Q9BWK5	12	59	Cell cycle regulator of non-homologous end joining (Cell cyc	w
+INFECTION	worm	A0A131MBU3	irg-7	A0A131MBU3	0	6	Protein irg-7 (Infection response protein 7)	w
+INFECTION	worm	G5EED4	nipi-3	G5EED4	7	47	Protein nipi-3 (No induction of peptide after drechmeria inf	w
+INFECTION-RELATED	human	Q9H0R1	AP5M1	Q9H0R1	18	206	AP-5 complex subunit mu-1 (Adaptor-related protein complex 5	w
+INFERTILITY-RELATED	human	Q07617	SPAG1	Q07617	23	131	Sperm-associated antigen 1 (HSD-3.8) (Infertility-related sp	w
+INFERTILITY-RELATED	human	Q96P26	NT5C1B	Q96P26	6	79	Cytosolic 5'-nucleotidase 1B (cN1B) (EC 3.1.3.5) (Autoimmune	w
+INFLAMMASOME	zebrafish	Q5TYM7	caiap	Q5TYM7	2	14	CARD- and ANK-domain containing inflammasome adapter protein	w
+INFLAMMATION	human	Q6P589	TNFAIP8L2	Q6P589	31	328	Tumor necrosis factor alpha-induced protein 8-like protein 2	w
+INFLAMMATION	human	Q9C002	COXFA4L3	Q9C002	41	277	Cytochrome c oxidase associated subunit FA4L3 (Modulator of 	w
+INFLAMMATION	human	Q9H6K1	ILRUN	Q9H6K1	5	35	Protein ILRUN (Inflammation and lipid regulator with UBA-lik	w
+INFLAMMATION-RELATED	human	Q9NQS5	GPR84	Q9NQS5	7	99	G protein-coupled receptor 84 (Inflammation-related G protei	w
+INFLAMMATORY	human	P10147	CCL3	P10147	94	659	C-C motif chemokine 3 (G0/G1 switch regulatory protein 19-1)	w
+INFLAMMATORY	human	P13236	CCL4	P13236	56	177	C-C motif chemokine 4 (G-26 T-lymphocyte-secreted protein) (	w
+INFLAMMATORY	human	P19875	CXCL2	P19875	80	410	C-X-C motif chemokine 2 (Growth-regulated protein beta) (Gro	w
+INFLAMMATORY	human	P19876	CXCL3	P19876	64	399	C-X-C motif chemokine 3 (GRO-gamma(1-73)) (Growth-regulated 	w
+INFLAMMATORY	human	P32246	CCR1	P32246	92	561	C-C chemokine receptor type 1 (C-C CKR-1) (CC-CKR-1) (CCR-1)	w
+INFLAMMATORY	human	P55008	AIF1	P55008	28	674	Allograft inflammatory factor 1 (AIF-1) (Ionized calcium-bin	w
+INFLAMMATORY	human	P55773	CCL23	P55773	39	118	C-C motif chemokine 23 (CK-beta-8) (CKB-8) (Macrophage infla	w
+INFLAMMATORY	human	P78556	CCL20	P78556	74	529	C-C motif chemokine 20 (Beta-chemokine exodus-1) (CC chemoki	w
+INFLAMMATORY	human	Q16663	CCL15	Q16663	53	175	C-C motif chemokine 15 (Chemokine CC-2) (HCC-2) (Leukotactin	w
+INFLAMMATORY	human	Q8NHW4	CCL4L1	Q8NHW4	107	567	C-C motif chemokine 4-like (Lymphocyte activation gene 1 pro	w
+INFLAMMATORY	human	Q9BQI0	AIF1L	Q9BQI0	6	92	Allograft inflammatory factor 1-like (Ionized calcium-bindin	w
+INFLAMMATORY	human	Q9HC29	NOD2	Q9HC29	12	172	Nucleotide-binding oligomerization domain-containing protein	w
+INFLAMMATORY	human	Q9Y258	CCL26	Q9Y258	78	352	C-C motif chemokine 26 (CC chemokine IMAC) (Eotaxin-3) (Macr	w
+INFLAMMATORY	virus	Q98157	vCCL2	Q98157	3	85	Viral macrophage inflammatory protein 2	w
+INFLAMMATORY	zebrafish	Q6PBZ5	aif1l	Q6PBZ5	0	35	Allograft inflammatory factor 1-like	w
+INFLATED	fly	FBgn0001250	if	P12080	378	2447	Integrin alpha-PS2 (Position-specific antigen subunit alpha-	w
+INFLUENZA	human	Q9Y6Y0	IVNS1ABP	Q9Y6Y0	12	174	Influenza virus NS1A-binding protein (NS1-BP) (NS1-binding p	w
+INFLUENZA	zebrafish	Q5RG82	ivns1abpa	Q5RG82	1	9	Influenza virus NS1A-binding protein homolog A	w
+INFLUENZA	zebrafish	Q7ZVQ8	ivns1abpb	Q7ZVQ8	0	9	Influenza virus NS1A-binding protein homolog B	w
+INFORMATION	fly	FBgn0024291	Sirt1	Q9VK34	115	533	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
+INFRAABDOMINAL	fly	FBgn0000015	Abd-B	P09087	71	435	Homeobox protein abdominal-B (Infraabdominal 7) (IAB-7) (P3)	w
+INFT-2	worm	Q19479	inft-2	Q19479	11	41	FH2 domain-containing protein	

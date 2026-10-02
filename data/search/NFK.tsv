@@ -1,16 +1,42 @@
-NFKB1	mus-musculus	P25799	Nfkb1	P25799	17	127	Nuclear factor NF-kappa-B p105 subunit
-NFKB1	rattus-norvegicus	Q63369	Nfkb1	Q63369	15	131	Nuclear factor NF-kappa-B p105 subunit
-NFKB2	mus-musculus	Q9WTK5	Nfkb2	Q9WTK5	13	46	Nuclear factor NF-kappa-B p100 subunit
-NFKB2	rattus-norvegicus	A6JHL8	Nfkb2	A6JHL8	13	60	Nuclear factor NF-kappa-B p100 subunit
-NFKBIA	mus-musculus	Q9Z1E3	Nfkbia	Q9Z1E3	12	82	NF-kappa-B inhibitor alpha
-NFKBIA	rattus-norvegicus	Q63746	Nfkbia	Q63746	13	75	NF-kappa-B inhibitor alpha
-NFKBIB	mus-musculus	Q60778	Nfkbib	Q60778	11	42	NF-kappa-B inhibitor beta
-NFKBIB	rattus-norvegicus	Q9JIA3	Nfkbib	Q9JIA3	9	40	NF-kappa-B inhibitor beta
-NFKBID	mus-musculus	Q2TB02	Nfkbid	Q2TB02	5	10	NF-kappa-B inhibitor delta
-NFKBID	rattus-norvegicus	F1M2B5	Nfkbid	F1M2B5	7	13	NF-kappa-B inhibitor delta
-NFKBIE	mus-musculus	O54910	Nfkbie	O54910	5	21	NF-kappa-B inhibitor epsilon
-NFKBIE	rattus-norvegicus	Q6P780	Nfkbie	Q6P780	7	21	NF-kappa-B inhibitor epsilon
-NFKBIL1	mus-musculus	O88995	Nfkbil1	O88995	0	4	NF-kappa-B inhibitor-like protein 1
-NFKBIL1	rattus-norvegicus	Q8R2H1	Nfkbil1	Q8R2H1	0	4	NF-kappa-B inhibitor-like protein 1
-NFKBIZ	mus-musculus	Q9EST8	Nfkbiz	Q9EST8	7	21	NF-kappa-B inhibitor zeta
-NFKBIZ	rattus-norvegicus	A0A0G2K6U7	Nfkbiz	A0A0G2K6U7	6	16	NF-kappa-B inhibitor zeta
+NFKB	human	Q8NI38	NFKBID	Q8NI38	26	165	NF-kappa-B inhibitor delta (NFKB inhibitor delta) (I-kappa-B	w
+NFKB	human	Q969V5	MUL1	Q969V5	23	127	Mitochondrial ubiquitin ligase activator of NFKB 1 (EC 2.3.2	w
+NFKB	zebrafish	Q5M7X9	mul1a	Q5M7X9	7	9	Mitochondrial ubiquitin ligase activator of nfkb 1-A	w
+NFKB-INTERACTING	human	Q8WUF5	PPP1R13L	Q8WUF5	81	150	RelA-associated inhibitor (Inhibitor of ASPP protein) (Prote	w
+NFKB-LIKE	human	Q8NI38	NFKBID	Q8NI38	26	165	NF-kappa-B inhibitor delta (NFKB inhibitor delta) (I-kappa-B	w
+NFKB-REPRESSING	human	O15226	NKRF	O15226	32	294	NF-kappa-B-repressing factor (NFkB-repressing factor) (NRF) 	w
+NFKB1	human	P19838	NFKB1	P19838	70	813	Nuclear factor NF-kappa-B p105 subunit (DNA-binding factor K	
+NFKB1	mus-musculus	P25799	Nfkb1	P25799	17	127	Nuclear factor NF-kappa-B p105 subunit	
+NFKB1	rattus-norvegicus	Q63369	Nfkb1	Q63369	15	131	Nuclear factor NF-kappa-B p105 subunit	
+NFKB1	zebrafish	A0A0R4IN79	nfkb1	A0A0R4IN79	10	61	Nuclear factor NF-kappa-B p105 subunit isoform X1	
+NFKB1_HUMAN	human	P19838	NFKB1	P19838	70	813		
+NFKB2	human	Q00653	NFKB2	Q00653	42	369	Nuclear factor NF-kappa-B p100 subunit (DNA-binding factor K	
+NFKB2	mus-musculus	Q9WTK5	Nfkb2	Q9WTK5	13	46	Nuclear factor NF-kappa-B p100 subunit	
+NFKB2	rattus-norvegicus	A6JHL8	Nfkb2	A6JHL8	13	60	Nuclear factor NF-kappa-B p100 subunit	
+NFKB2	zebrafish	Q0II00	nfkb2	Q0II00	13	64	Nuclear factor NF-kappa-B p105 subunit	
+NFKB2_HUMAN	human	Q00653	NFKB2	Q00653	42	369		
+NFKB3	human	Q04206	RELA	Q04206	91	932		
+NFKBI	human	P25963	NFKBIA	P25963	91	700		
+NFKBIA	human	P25963	NFKBIA	P25963	91	700	NF-kappa-B inhibitor alpha (I-kappa-B-alpha) (IkB-alpha) (Ik	
+NFKBIA	mus-musculus	Q9Z1E3	Nfkbia	Q9Z1E3	12	82	NF-kappa-B inhibitor alpha	
+NFKBIA	rattus-norvegicus	Q63746	Nfkbia	Q63746	13	75	NF-kappa-B inhibitor alpha	
+NFKBIAA	zebrafish	F1QCG4	nfkbiaa	F1QCG4	6	76	NF-kappa-B inhibitor alpha	
+NFKBIAB	zebrafish	Q7ZW68	nfkbiab	Q7ZW68	10	83	NF-kappa-B inhibitor alpha	
+NFKBIB	human	Q15653	NFKBIB	Q15653	27	203	NF-kappa-B inhibitor beta (NF-kappa-BIB) (I-kappa-B-beta) (I	
+NFKBIB	mus-musculus	Q60778	Nfkbib	Q60778	11	42	NF-kappa-B inhibitor beta	
+NFKBIB	rattus-norvegicus	Q9JIA3	Nfkbib	Q9JIA3	9	40	NF-kappa-B inhibitor beta	
+NFKBIB	zebrafish	B3DJC4	nfkbib	B3DJC4	6	33	NF-kappa-B inhibitor beta	
+NFKBID	human	Q8NI38	NFKBID	Q8NI38	26	165	NF-kappa-B inhibitor delta (NFKB inhibitor delta) (I-kappa-B	
+NFKBID	mus-musculus	Q2TB02	Nfkbid	Q2TB02	5	10	NF-kappa-B inhibitor delta	
+NFKBID	rattus-norvegicus	F1M2B5	Nfkbid	F1M2B5	7	13	NF-kappa-B inhibitor delta	
+NFKBIE	human	O00221	NFKBIE	O00221	21	86	NF-kappa-B inhibitor epsilon (NF-kappa-BIE) (I-kappa-B-epsil	
+NFKBIE	mus-musculus	O54910	Nfkbie	O54910	5	21	NF-kappa-B inhibitor epsilon	
+NFKBIE	rattus-norvegicus	Q6P780	Nfkbie	Q6P780	7	21	NF-kappa-B inhibitor epsilon	
+NFKBIL1	human	Q9UBC1	NFKBIL1	Q9UBC1	26	176	NF-kappa-B inhibitor-like protein 1 (Inhibitor of kappa B-li	
+NFKBIL1	mus-musculus	O88995	Nfkbil1	O88995	0	4	NF-kappa-B inhibitor-like protein 1	
+NFKBIL1	rattus-norvegicus	Q8R2H1	Nfkbil1	Q8R2H1	0	4	NF-kappa-B inhibitor-like protein 1	
+NFKBIL2	human	Q96HA7	TONSL	Q96HA7	125	731		
+NFKBIZ	human	Q9BYH8	NFKBIZ	Q9BYH8	17	68	NF-kappa-B inhibitor zeta (I-kappa-B-zeta) (IkB-zeta) (Ikapp	
+NFKBIZ	mus-musculus	Q9EST8	Nfkbiz	Q9EST8	7	21	NF-kappa-B inhibitor zeta	
+NFKBIZ	rattus-norvegicus	A0A0G2K6U7	Nfkbiz	A0A0G2K6U7	6	16	NF-kappa-B inhibitor zeta	
+NFKBIZ	zebrafish	A0A8M9Q7W9	nfkbiz	A0A8M9Q7W9	6	15	NF-kappa-B inhibitor zeta	
+NFKI-1	worm	G5EDE9	nfki-1	G5EDE9	1	8	ANK repeat-containing protein nipk-1	

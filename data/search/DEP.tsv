@@ -1,12 +1,57 @@
-DEP	arabidopsis-thaliana	Q3ECE3	DEP	Q3ECE3	0	2	RING-type E3 ubiquitin transferase
-DEP1	glycine-max	I1MSA0	DEP1	I1MSA0	4	26	Dense and erect pancile 1
-DEP1	oryza-sativa-subsp-japonica	Q67UU9	DEP1	Q67UU9	1	11	Guanine nucleotide-binding protein subunit gamma 4
-DEP1	schizosaccharomyces-pombe	Q9P7M1	dep1	Q9P7M1	6	17	Transcriptional regulatory protein dep1
-DEPDC1	rattus-norvegicus	D3ZGJ9	Depdc1	D3ZGJ9	0	3	DEP domain-containing protein 1A
-DEPDC1A	mus-musculus	Q8CIG0	Depdc1a	Q8CIG0	0	2	DEP domain-containing protein 1A
-DEPDC1B	mus-musculus	Q8BH88	Depdc1b	Q8BH88	1	14	DEP domain-containing protein 1B
-DEPDC1B	rattus-norvegicus	D4AA32	Depdc1b	D4AA32	0	10	DEP domain-containing protein 1B
-DEPDC5	rattus-norvegicus	A0A0G2K6M8	Depdc5	A0A0G2K6M8	6	28	DEP domain containing 5, GATOR1 subcomplex subunit
-DEPDC7	mus-musculus	Q91WS7	Depdc7	Q91WS7	0	1	DEP domain-containing protein 7
-DEPTOR	mus-musculus	Q570Y9	Deptor	Q570Y9	0	22	DEP domain-containing mTOR-interacting protein
-DEPTOR	rattus-norvegicus	F1M8Y4	Deptor	F1M8Y4	2	20	DEP domain-containing mTOR-interacting protein
+DEP	arabidopsis-thaliana	Q3ECE3	DEP	Q3ECE3	0	2	RING-type E3 ubiquitin transferase	
+DEP-1	human	Q12913	PTPRJ	Q12913	24	319	Receptor-type tyrosine-protein phosphatase eta (Protein-tyro	w
+DEP-1	worm	G5EGJ9	dep-1	G5EGJ9	2	96	Receptor-type tyrosine-protein phosphatase dep-1	w
+DEP-1	worm	G5EGJ9	dep-1	G5EGJ9	2	96	Receptor-type tyrosine-protein phosphatase dep-1	w
+DEP1	glycine-max	I1MSA0	DEP1	I1MSA0	4	26	Dense and erect pancile 1	
+DEP1	human	Q12913	PTPRJ	Q12913	24	319		
+DEP1	oryza-sativa-subsp-japonica	Q67UU9	DEP1	Q67UU9	1	11	Guanine nucleotide-binding protein subunit gamma 4	
+DEP1	schizosaccharomyces-pombe	Q9P7M1	dep1	Q9P7M1	6	17	Transcriptional regulatory protein dep1	
+DEP1	yeast	P31385	DEP1	P31385	6	40	Transcriptional regulatory protein DEP1	
+DEP1A_HUMAN	human	Q5TB30	DEPDC1	Q5TB30	35	154		
+DEP1B_HUMAN	human	Q8WUY9	DEPDC1B	Q8WUY9	97	349		
+DEPC-1	human	Q96Q83	ALKBH3	Q96Q83	21	213	Alpha-ketoglutarate-dependent dioxygenase alkB homolog 3 (EC	w
+DEPC1	human	Q96Q83	ALKBH3	Q96Q83	21	213		
+DEPD4_HUMAN	human	Q8N2C3	DEPDC4	Q8N2C3	1	10		
+DEPD5_HUMAN	human	O75140	DEPDC5	O75140	8	70		
+DEPD7_HUMAN	human	Q96QD5	DEPDC7	Q96QD5	12	83		
+DEPDC1	human	Q5TB30	DEPDC1	Q5TB30	35	154	DEP domain-containing protein 1A	
+DEPDC1	rattus-norvegicus	D3ZGJ9	Depdc1	D3ZGJ9	0	3	DEP domain-containing protein 1A	
+DEPDC1A	human	Q5TB30	DEPDC1	Q5TB30	35	154		
+DEPDC1A	mus-musculus	Q8CIG0	Depdc1a	Q8CIG0	0	2	DEP domain-containing protein 1A	
+DEPDC1B	human	Q8WUY9	DEPDC1B	Q8WUY9	97	349	DEP domain-containing protein 1B (HBV X-transactivated gene 	
+DEPDC1B	mus-musculus	Q8BH88	Depdc1b	Q8BH88	1	14	DEP domain-containing protein 1B	
+DEPDC1B	rattus-norvegicus	D4AA32	Depdc1b	D4AA32	0	10	DEP domain-containing protein 1B	
+DEPDC2	human	Q70Z35	PREX2	Q70Z35	12	129		
+DEPDC4	human	Q8N2C3	DEPDC4	Q8N2C3	1	10	DEP domain-containing protein 4	
+DEPDC5	human	A0A2R8YF50	?	A0A2R8YF50	0	6	GATOR complex protein DEPDC5	w
+DEPDC5	human	O75140	DEPDC5	O75140	8	70	GATOR1 complex protein DEPDC5 (DEP domain-containing protein	
+DEPDC5	rattus-norvegicus	A0A0G2K6M8	Depdc5	A0A0G2K6M8	6	28	DEP domain containing 5, GATOR1 subcomplex subunit	
+DEPDC6	human	Q8TB45	DEPTOR	Q8TB45	20	195		
+DEPDC7	human	Q96QD5	DEPDC7	Q96QD5	12	83	DEP domain-containing protein 7 (Protein TR2/D15)	
+DEPDC7	mus-musculus	Q91WS7	Depdc7	Q91WS7	0	1	DEP domain-containing protein 7	
+DEPEDENT	fly	FBgn0026869	Tdg	Q9V4D8	16	67	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
+DEPENDE	human	Q99707	MTR	Q99707	3	214	Methionine synthase (MS) (EC 2.1.1.13) (5-methyltetrahydrofo	w
+DEPENDEN	human	O75452	RDH16	O75452	10	37	Retinol dehydrogenase 16 (EC 1.1.1.105) (EC 1.1.1.209) (EC 1	w
+DEPENDENCE-RELATED	human	P40227	CCT6A	P40227	31	623	T-complex protein 1 subunit zeta (TCP-1-zeta) (EC 3.6.1.-) (	w
+DEPHENYLALANINATED	human	Q9NY65	TUBA8	Q9NY65	144	1280	Tubulin alpha-8 chain (EC 3.6.5.-) (Alpha-tubulin 8) (Tubuli	w
+DEPHOSPHO-COA	fly	FBgn0035632	Ppat-Dpck	Q9VRP4	0	11	Bifunctional phosphopantetheine adenylyltransferase - Dephos	w
+DEPHOSPHO-COA	fly	FBgn0037469	Dpck	Q9VI57	0	11	Dephospho-CoA kinase (EC 2.7.1.24) (LP07378p1)	w
+DEPHOSPHO-COA	human	Q13057	COASY	Q13057	10	132	Bifunctional coenzyme A synthase (CoA synthase) (NBP) (POV-2	w
+DEPHOSPHO-COA	human	Q8WVC6	DCAKD	Q8WVC6	3	102	Dephospho-CoA kinase domain-containing protein	w
+DEPHOSPHO-COA	yeast	Q03941	CAB5	Q03941	1	25	Dephospho-CoA kinase CAB5	w
+DEPHOSPHO-COA	zebrafish	Q0P4C4	dcakd	Q0P4C4	0	2	Dephospho-CoA kinase domain-containing protein	w
+DEPLETED	worm	Q22641	lpd-9	Q22641	0	4	LiPid Depleted	w
+DEPLETED	worm	Q8IG68	lpd-2	Q8IG68	16	110	LiPid Depleted	w
+DEPOLARIZATION	fly	FBgn0038966	pinta	Q9VD09	1	4	Retinol-binding protein pinta (Prolonged depolarization afte	w
+DEPOLYMERIZATION	human	Q8WUJ3	CEMIP	Q8WUJ3	1	21	Cell migration-inducing and hyaluronan-binding protein (EC 3	w
+DEPP	human	Q9NTK1	DEPP1	Q9NTK1	4	29		
+DEPP1	human	Q9NTK1	DEPP1	Q9NTK1	4	29	Protein DEPP1 (Decidual protein induced by progesterone) (Fa	
+DEPP1_HUMAN	human	Q9NTK1	DEPP1	Q9NTK1	4	29		
+DEPRIVATION	human	Q969G5	CAVIN3	Q969G5	31	181	Caveolae-associated protein 3 (Cavin-3) (Protein kinase C de	w
+DEPRIVATION-RESPONSE	human	O95810	CAVIN2	O95810	21	194	Caveolae-associated protein 2 (Cavin-2) (PS-p68) (Phosphatid	w
+DEPS-1	worm	Q9N303	deps-1	Q9N303	0	4	P-granule-associated protein deps-1	w
+DEPS-1	worm	Q9N303	deps-1	Q9N303	0	4	P-granule-associated protein deps-1	w
+DEPTOR	human	Q8TB45	DEPTOR	Q8TB45	20	195	DEP domain-containing mTOR-interacting protein (hDEPTOR) (DE	
+DEPTOR	mus-musculus	Q570Y9	Deptor	Q570Y9	0	22	DEP domain-containing mTOR-interacting protein	
+DEPTOR	rattus-norvegicus	F1M8Y4	Deptor	F1M8Y4	2	20	DEP domain-containing mTOR-interacting protein	
+DEPTOR	zebrafish	A0A8M2BKU4	deptor	A0A8M2BKU4	2	36	DEP domain-containing MTOR-interacting protein	

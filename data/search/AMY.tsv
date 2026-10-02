@@ -1,21 +1,115 @@
-AMY	streptococcus-pneumoniae	Q8DPC8	amy	Q8DPC8	0	2	Alpha-amylase
-AMY1	arabidopsis-thaliana	Q8VZ56	AMY1	Q8VZ56	0	58	Alpha-amylase 1
-AMY1	mus-musculus	P00687	Amy1	P00687	1	22	Alpha-amylase 1
-AMY1.1	oryza-sativa-subsp-japonica	P17654	AMY1.1	P17654	2	31	Alpha-amylase
-AMY1.2	oryza-sativa-subsp-japonica	P27932	AMY1.2	P27932	1	30	Alpha-amylase isozyme 3A
-AMY1.3	oryza-sativa-subsp-japonica	P27933	AMY1.3	P27933	1	30	Alpha-amylase isozyme 3D
-AMY1.4	oryza-sativa-subsp-japonica	P27934	AMY1.4	P27934	1	30	Alpha-amylase isozyme 3E
-AMY1.6	oryza-sativa-subsp-japonica	P27937	AMY1.6	P27937	0	30	Alpha-amylase isozyme 3B
-AMY1.7	oryza-sativa-subsp-japonica	P27939	AMY1.7	P27939	0	30	Alpha-amylase isozyme 3C
-AMY1B	oryza-sativa-subsp-japonica	Q0JMV4	AMY1B	Q0JMV4	0	30	Alpha-amylase isozyme C
-AMY2	arabidopsis-thaliana	Q8LFG1	AMY2	Q8LFG1	2	57	Probable alpha-amylase 2
-AMY2	rattus-norvegicus	P00689	Amy2	P00689	0	12	Pancreatic alpha-amylase
-AMY2A	oryza-sativa-subsp-japonica	Q0D9J1	AMY2A	Q0D9J1	0	30	Alpha-amylase isozyme 2A
-AMY2A1	mus-musculus	E9PV85	Amy2a1	E9PV85	0	8	alpha-amylase
-AMY2A5	mus-musculus	P00688	Amy2a5	P00688	0	8	Pancreatic alpha-amylase 2a5
-AMY3	arabidopsis-thaliana	Q94A41	AMY3	Q94A41	0	59	Alpha-amylase 3, chloroplastic
-AMYA	dictyostelium-discoideum	Q54TS5	amyA	Q54TS5	0	1	alpha-amylase
-AMYA	escherichia-coli-83333	P26612	amyA	P26612	0	14	Cytoplasmic alpha-amylase
-AMYA	salmonella-typhimurium	P26613	amyA	P26613	0	12	Cytoplasmic alpha-amylase
-AMYA	shigella-dysenteriae-serotype-1	Q32HF4	amyA	Q32HF4	0	10	Cytoplasmic alpha-amylase
-AMYS	cladophialophora-carrionii	A0A1C1CAC8	amyS	A0A1C1CAC8	0	11	Alpha-amylase
+AMY	streptococcus-pneumoniae	Q8DPC8	amy	Q8DPC8	0	2	Alpha-amylase	
+AMY-1	human	Q99417	MYCBP	Q99417	33	189	c-Myc-binding protein (Associate of Myc 1) (AMY-1)	w
+AMY-1-ASSOCIATED	human	Q7Z4T9	CFAP91	Q7Z4T9	8	32	Cilia- and flagella-associated protein 91 (CFAP91) (AMY-1-as	w
+AMY-1-ASSOCIATING	human	Q7Z4T9	CFAP91	Q7Z4T9	8	32	Cilia- and flagella-associated protein 91 (CFAP91) (AMY-1-as	w
+AMY-1-BINDING	human	Q8TBZ2	MYCBPAP	Q8TBZ2	24	141	MYCBP-associated protein (AMAM-1) (AMY-1-binding protein 1) 	w
+AMY-D	fly	FBgn0000078	Amy-d	P81641	17	246	Alpha-amylase B (EC 3.2.1.1) (1,4-alpha-D-glucan glucanohydr	
+AMY-P	fly	A0A0B4LGS0	Amy-p	A0A0B4LGS0	0	6	alpha-amylase	
+AMY-P	fly	FBgn0000079	Amy-p	P08144	25	247	Alpha-amylase A (EC 3.2.1.1) (1,4-alpha-D-glucan glucanohydr	
+AMY1	arabidopsis-thaliana	Q8VZ56	AMY1	Q8VZ56	0	58	Alpha-amylase 1	
+AMY1	human	P0DTE7	AMY1B	P0DTE7	0	4		
+AMY1	human	P0DTE8	AMY1C	P0DTE8	6	124		
+AMY1	human	P0DUB6	AMY1A	P0DUB6	0	7		
+AMY1	human	Q99417	MYCBP	Q99417	33	189		
+AMY1	mus-musculus	P00687	Amy1	P00687	1	22	Alpha-amylase 1	
+AMY1.1	oryza-sativa-subsp-japonica	P17654	AMY1.1	P17654	2	31	Alpha-amylase	
+AMY1.2	oryza-sativa-subsp-japonica	P27932	AMY1.2	P27932	1	30	Alpha-amylase isozyme 3A	
+AMY1.3	oryza-sativa-subsp-japonica	P27933	AMY1.3	P27933	1	30	Alpha-amylase isozyme 3D	
+AMY1.4	oryza-sativa-subsp-japonica	P27934	AMY1.4	P27934	1	30	Alpha-amylase isozyme 3E	
+AMY1.6	oryza-sativa-subsp-japonica	P27937	AMY1.6	P27937	0	30	Alpha-amylase isozyme 3B	
+AMY1.7	oryza-sativa-subsp-japonica	P27939	AMY1.7	P27939	0	30	Alpha-amylase isozyme 3C	
+AMY1A	human	P0DUB6	AMY1A	P0DUB6	0	7	Alpha-amylase 1A (EC 3.2.1.1) (1,4-alpha-D-glucan glucanohyd	
+AMY1A_HUMAN	human	P0DUB6	AMY1A	P0DUB6	0	7		
+AMY1B	human	P0DTE7	AMY1B	P0DTE7	0	4	Alpha-amylase 1B (EC 3.2.1.1)	
+AMY1B	oryza-sativa-subsp-japonica	Q0JMV4	AMY1B	Q0JMV4	0	30	Alpha-amylase isozyme C	
+AMY1B_HUMAN	human	P0DTE7	AMY1B	P0DTE7	0	4		
+AMY1C	human	P0DTE8	AMY1C	P0DTE8	6	124	Alpha-amylase 1C (EC 3.2.1.1)	
+AMY1C_HUMAN	human	P0DTE8	AMY1C	P0DTE8	6	124		
+AMY2	arabidopsis-thaliana	Q8LFG1	AMY2	Q8LFG1	2	57	Probable alpha-amylase 2	
+AMY2	rattus-norvegicus	P00689	Amy2	P00689	0	12	Pancreatic alpha-amylase	
+AMY2A	human	P04746	AMY2A	P04746	7	106	Pancreatic alpha-amylase (PA) (EC 3.2.1.1) (1,4-alpha-D-gluc	
+AMY2A	oryza-sativa-subsp-japonica	Q0D9J1	AMY2A	Q0D9J1	0	30	Alpha-amylase isozyme 2A	
+AMY2A	zebrafish	Q6P5J0	amy2a	Q6P5J0	0	45	Alpha-amylase	
+AMY2A1	mus-musculus	E9PV85	Amy2a1	E9PV85	0	8	alpha-amylase	
+AMY2A5	mus-musculus	P00688	Amy2a5	P00688	0	8	Pancreatic alpha-amylase 2a5	
+AMY2AL1	zebrafish	A0AB32TC54	amy2al1	A0AB32TC54	2	45	Alpha-amylase	
+AMY2B	human	P19961	AMY2B	P19961	2	25	Alpha-amylase 2B (EC 3.2.1.1) (1,4-alpha-D-glucan glucanohyd	
+AMY2B_HUMAN	human	P19961	AMY2B	P19961	2	25		
+AMY3	arabidopsis-thaliana	Q94A41	AMY3	Q94A41	0	59	Alpha-amylase 3, chloroplastic	
+AMYA	dictyostelium-discoideum	Q54TS5	amyA	Q54TS5	0	1	alpha-amylase	
+AMYA	escherichia-coli-83333	P26612	amyA	P26612	0	14	Cytoplasmic alpha-amylase	
+AMYA	salmonella-typhimurium	P26613	amyA	P26613	0	12	Cytoplasmic alpha-amylase	
+AMYA	shigella-dysenteriae-serotype-1	Q32HF4	amyA	Q32HF4	0	10	Cytoplasmic alpha-amylase	
+AMYB	human	P10243	MYBL1	P10243	20	104		
+AMYLIN	human	P10997	IAPP	P10997	49	266	Islet amyloid polypeptide (IAPP) (Amylin) (Diabetes-associat	w
+AMYLO-ALPHA-1	human	P35573	AGL	P35573	5	102	Glycogen debranching enzyme (Glycogen debrancher) [Includes:	w
+AMYLOID	fly	FBgn0000108	Appl	M9NE22	781	2476	Beta amyloid protein-like, isoform B	w
+AMYLOID	human	O00213	APBB1	O00213	60	438	Amyloid beta precursor protein binding family B member 1 (Am	w
+AMYLOID	human	P02743	APCS	P02743	20	543	Serum amyloid P-component (SAP) (9.5S alpha-1-glycoprotein) 	w
+AMYLOID	human	P05067	APP	P05067	552	2982	Amyloid-beta precursor protein (APP) (ABPP) (APPI) (Alzheime	w
+AMYLOID	human	P0DJI8	SAA1	P0DJI8	60	545	Serum amyloid A-1 protein (SAA) [Cleaved into: Amyloid prote	w
+AMYLOID	human	P0DJI9	SAA2	P0DJI9	43	397	Serum amyloid A-2 protein (SAA2) [Cleaved into: Amyloid A2 p	w
+AMYLOID	human	P10997	IAPP	P10997	49	266	Islet amyloid polypeptide (IAPP) (Amylin) (Diabetes-associat	w
+AMYLOID	human	P35542	SAA4	P35542	24	295	Serum amyloid A-4 protein (Constitutively expressed serum am	w
+AMYLOID	human	P37840	SNCA	P37840	216	1507	Alpha-synuclein (Non-A beta component of AD amyloid) (Non-A4	w
+AMYLOID	human	P51693	APLP1	P51693	54	176	Amyloid beta precursor like protein 1 (Amyloid beta (A4) pre	w
+AMYLOID	human	P56270	MAZ	P56270	7	107	Myc-associated zinc finger protein (MAZI) (Pur-1) (Purine-bi	w
+AMYLOID	human	P56817	BACE1	P56817	22	169	Beta-secretase 1 (EC 3.4.23.46) (Aspartyl protease 2) (ASP2)	w
+AMYLOID	human	Q06481	APLP2	Q06481	79	249	Amyloid beta precursor like protein 2 (APPH) (Amyloid beta (	w
+AMYLOID	human	Q13564	NAE1	Q13564	10	172	NEDD8-activating enzyme E1 regulatory subunit (Amyloid beta 	w
+AMYLOID	human	Q7Z5R6	APBB1IP	Q7Z5R6	34	189	Amyloid beta A4 precursor protein-binding family B member 1-	w
+AMYLOID	human	Q92624	APPBP2	Q92624	97	374	Amyloid protein-binding protein 2 (Amyloid beta precursor pr	w
+AMYLOID	human	Q92870	APBB2	Q92870	22	159	Amyloid beta precursor protein binding family B member 2 (Am	w
+AMYLOID	human	Q9BXS0	COL25A1	Q9BXS0	7	39	Collagen alpha-1(XXV) chain (Alzheimer disease amyloid-assoc	w
+AMYLOID	human	Q9Y5Z0	BACE2	Q9Y5Z0	51	138	Beta-secretase 2 (EC 3.4.23.45) (Aspartic-like protease 56 k	w
+AMYLOID	zebrafish	A0A0R4IXG2	aplp1	A0A0R4IXG2	18	92	Amyloid beta (A4) precursor-like protein 1	w
+AMYLOID	zebrafish	A0A1D5NS70	apba2b	A0A1D5NS70	5	21	Amyloid beta (A4) precursor protein-binding, family A, membe	w
+AMYLOID	zebrafish	A0A286YA88	iapp	A0A286YA88	2	33	Islet amyloid polypeptide	w
+AMYLOID	zebrafish	A0A8M1Q7S5	apba1a	A0A8M1Q7S5	6	21	Amyloid beta (A4) precursor protein-binding, family A, membe	w
+AMYLOID	zebrafish	A0AB32T7Y5	apbb2a	A0AB32T7Y5	0	9	Amyloid beta precursor protein binding family B member 2	w
+AMYLOID	zebrafish	A2BID8	aplp2	A2BID8	55	157	Amyloid beta (A4) precursor-like protein 2	w
+AMYLOID	zebrafish	B8A4C9	cst3	B8A4C9	1	5	Cystatin C (amyloid angiopathy and cerebral hemorrhage)	w
+AMYLOID	zebrafish	E7F0N6	apbb1	E7F0N6	4	25	Amyloid beta (A4) precursor protein-binding, family B, membe	w
+AMYLOID	zebrafish	Q642J9	saa	Q642J9	1	8	Serum amyloid A protein	w
+AMYLOID	zebrafish	Q6NY32	appbp2	Q6NY32	3	76	Amyloid protein-binding protein 2	w
+AMYLOID	zebrafish	Q6PFT9	apbb1ip	Q6PFT9	22	80	Amyloid beta A4 precursor protein-binding family B member 1-	w
+AMYLOID-ASSOCIATED	human	Q9BXS0	COL25A1	Q9BXS0	7	39	Collagen alpha-1(XXV) chain (Alzheimer disease amyloid-assoc	w
+AMYLOID-BETA	human	O00213	APBB1	O00213	60	438	Amyloid beta precursor protein binding family B member 1 (Am	w
+AMYLOID-BETA	human	O95704	APBB3	O95704	10	81	Amyloid-beta A4 precursor protein-binding family B member 3 	w
+AMYLOID-BETA	human	O96018	APBA3	O96018	27	118	Amyloid-beta A4 precursor protein-binding family A member 3 	w
+AMYLOID-BETA	human	P05067	APP	P05067	552	2982	Amyloid-beta precursor protein (APP) (ABPP) (APPI) (Alzheime	w
+AMYLOID-BETA	human	Q02410	APBA1	Q02410	46	187	Amyloid-beta A4 precursor protein-binding family A member 1 	w
+AMYLOID-BETA	human	Q7Z6G8	ANKS1B	Q7Z6G8	26	77	Ankyrin repeat and sterile alpha motif domain-containing pro	w
+AMYLOID-BETA	human	Q92870	APBB2	Q92870	22	159	Amyloid beta precursor protein binding family B member 2 (Am	w
+AMYLOID-BETA	human	Q96P71	NECAB3	Q96P71	10	93	N-terminal EF-hand calcium-binding protein 3 (Amyloid-beta A	w
+AMYLOID-BETA	human	Q99767	APBA2	Q99767	37	148	Amyloid-beta A4 precursor protein-binding family A member 2 	w
+AMYLOID-BETA	zebrafish	A0A8M1PBL6	appb	A0A8M1PBL6	31	229	Amyloid-beta A4 protein	w
+AMYLOID-BETA	zebrafish	E7FED4	si:ch73-40i7.5	E7FED4	3	22	Amyloid-beta A4 precursor protein-binding family A member 3	w
+AMYLOID-BETA	zebrafish	E7FF73	apbb3	E7FF73	3	9	Amyloid-beta A4 precursor protein-binding family B member 3	w
+AMYLOID-BETA	zebrafish	E9QDB8	apba1b	E9QDB8	5	21	Amyloid-beta A4 precursor protein-binding family A member 3	w
+AMYLOID-BETA-BINDING	human	Q9BX74	TM2D1	Q9BX74	3	36	TM2 domain-containing protein 1 (Amyloid-beta-binding protei	w
+AMYLOID-BETA-LIKE	worm	Q10651	apl-1	Q10651	9	58	Amyloid-beta-like protein	w
+AMYLOID-LIKE	human	P51693	APLP1	P51693	54	176	Amyloid beta precursor like protein 1 (Amyloid beta (A4) pre	w
+AMYLOID-LIKE	human	Q06481	APLP2	Q06481	79	249	Amyloid beta precursor like protein 2 (APPH) (Amyloid beta (	w
+AMYO	human	Q70E73	RAPH1	Q70E73	66	201	Ras-associated and pleckstrin homology domains-containing pr	w
+AMYOPATHIC	human	Q9BYX4	IFIH1	Q9BYX4	11	158	Interferon-induced helicase C domain-containing protein 1 (E	w
+AMYOTROPHIC	fly	FBgn0037116	Als2	Q9VNZ8	6	26	Alsin homolog (Amyotrophic lateral sclerosis 2 protein homol	w
+AMYOTROPHIC	human	O60296	TRAK2	O60296	39	115	Trafficking kinesin-binding protein 2 (Amyotrophic lateral s	w
+AMYOTROPHIC	human	Q53TS8	CATSPERT	Q53TS8	6	73	Cation channel sperm-associated targeting subunit tau (CatSp	w
+AMYOTROPHIC	human	Q6P1L5	FAM117B	Q6P1L5	28	64	Protein FAM117B (Amyotrophic lateral sclerosis 2 chromosomal	w
+AMYOTROPHIC	human	Q6ZS30	NBEAL1	Q6ZS30	5	61	Neurobeachin-like protein 1 (Amyotrophic lateral sclerosis 2	w
+AMYOTROPHIC	human	Q70E73	RAPH1	Q70E73	66	201	Ras-associated and pleckstrin homology domains-containing pr	w
+AMYOTROPHIC	human	Q7Z333	SETX	Q7Z333	12	158	Helicase senataxin (EC 5.6.2.3) (Amyotrophic lateral scleros	w
+AMYOTROPHIC	human	Q8N187	CARF	Q8N187	4	17	Calcium-responsive transcription factor (Amyotrophic lateral	w
+AMYOTROPHIC	human	Q8NDH6	ICA1L	Q8NDH6	8	36	Islet cell autoantigen 1-like protein (Amyotrophic lateral s	w
+AMYOTROPHIC	human	Q8TEW8	PARD3B	Q8TEW8	47	144	Partitioning defective 3 homolog B (Amyotrophic lateral scle	w
+AMYOTROPHIC	human	Q96JB8	MPP4	Q96JB8	13	65	MAGUK p55 subfamily member 4 (Amyotrophic lateral sclerosis 	w
+AMYOTROPHIC	human	Q96Q35	FLACC1	Q96Q35	6	49	Flagellum-associated coiled-coil domain-containing protein 1	w
+AMYOTROPHIC	human	Q96Q40	CDK15	Q96Q40	167	1382	Cyclin-dependent kinase 15 (EC 2.7.11.22) (Amyotrophic later	w
+AMYOTROPHIC	human	Q96Q42	ALS2	Q96Q42	8	49	Alsin (Amyotrophic lateral sclerosis 2 chromosomal region ca	w
+AMYOTROPHIC	human	Q96Q45	TMEM237	Q96Q45	20	237	Transmembrane protein 237 (Amyotrophic lateral sclerosis 2 c	w
+AMYOTROPHIC	human	Q9C0K7	STRADB	Q9C0K7	14	93	STE20-related kinase adapter protein beta (STRAD beta) (Amyo	w
+AMYOTROPHIC	human	Q9GZT8	NIF3L1	Q9GZT8	1	193	NIF3-like protein 1 (Amyotrophic lateral sclerosis 2 chromos	w
+AMYP_HUMAN	human	P04746	AMY2A	P04746	7	106		
+AMYREL	fly	FBgn0020506	Amyrel	O18408	17	260	Alpha-amylase-related protein (EC 3.2.1.1)	
+AMYS	cladophialophora-carrionii	A0A1C1CAC8	amyS	A0A1C1CAC8	0	11	Alpha-amylase	

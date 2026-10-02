@@ -1,16 +1,317 @@
-SORBS1	mus-musculus	D3Z5J3	Sorbs1	D3Z5J3	13	50	Sorbin and SH3 domain containing 1
-SORBS1	rattus-norvegicus	P84109	Sorbs1	P84109	1	36	Sorbin and SH3 domain-containing protein 1
-SORBS2	mus-musculus	Q3UTJ2	Sorbs2	Q3UTJ2	8	39	Sorbin and SH3 domain-containing protein 2
-SORBS2	rattus-norvegicus	O35413	Sorbs2	O35413	9	21	Sorbin and SH3 domain-containing protein 2
-SORBS3	mus-musculus	Q9R1Z8	Sorbs3	Q9R1Z8	10	48	Vinexin
-SORCS1	mus-musculus	Q9JLC4	Sorcs1	Q9JLC4	1	15	VPS10 domain-containing receptor SorCS1
-SORCS1	rattus-norvegicus	F1LUZ4	Sorcs1	F1LUZ4	1	32	VPS10 domain-containing receptor SorCS1
-SORCS2	mus-musculus	Q9EPR5	Sorcs2	Q9EPR5	2	20	VPS10 domain-containing receptor SorCS2
-SORCS2	rattus-norvegicus	D3ZW09	Sorcs2	D3ZW09	0	38	VPS10 domain-containing receptor SorCS2
-SORCS3	mus-musculus	Q8VI51	Sorcs3	Q8VI51	0	17	VPS10 domain-containing receptor SorCS3
-SORCS3	rattus-norvegicus	D4A2I9	Sorcs3	D4A2I9	1	32	VPS10 domain-containing receptor SorCS3
-SORD	mus-musculus	Q64442	Sord	Q64442	0	25	Sorbitol dehydrogenase
-SORD	rattus-norvegicus	P27867	Sord	P27867	0	10	Sorbitol dehydrogenase
-SORT1	dictyostelium-discoideum	Q54GL5	sort1	Q54GL5	1	20	PDZ domain-containing protein
-SORT1	mus-musculus	Q6PHU5	Sort1	Q6PHU5	8	94	Sortilin
-SORT1	rattus-norvegicus	O54861	Sort1	O54861	6	86	Sortilin
+SOR-1	worm	P34619	sor-1	P34619	0	5	Sop-2-related protein 1	
+SOR-3	worm	Q11193	sor-3	Q11193	0	3	Sop-2-related protein 3	
+SOR1	yeast	P35497	SOR1	P35497	1	10	Sorbitol dehydrogenase 1	
+SOR2	yeast	Q07786	SOR2	Q07786	1	8	Sorbitol dehydrogenase 2	
+SORB-1	worm	G5EC32	sorb-1	G5EC32	7	74	Sorbin and SH3 domain-containing protein 1 homolog	
+SORBIN	human	O60504	SORBS3	O60504	87	270	Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin	w
+SORBIN	human	O94875	SORBS2	O94875	69	157	Sorbin and SH3 domain-containing protein 2 (Arg-binding prot	w
+SORBIN	human	Q9BX66	SORBS1	Q9BX66	62	194	Sorbin and SH3 domain-containing protein 1 (Ponsin) (SH3 dom	w
+SORBIN	worm	G5EC32	sorb-1	G5EC32	7	74	Sorbin and SH3 domain-containing protein 1 homolog	w
+SORBITOL	fly	FBgn0022359	Sord2	O96299	2	16	Sorbitol dehydrogenase (Polyol dehydrogenase)	w
+SORBITOL	fly	FBgn0024289	Sord1	O97479	1	19	Sorbitol dehydrogenase (Polyol dehydrogenase)	w
+SORBITOL	human	Q00796	SORD	Q00796	8	194	Sorbitol dehydrogenase (SDH) (EC 1.1.1.-) ((R,R)-butanediol 	w
+SORBITOL	worm	Q21702	CELE_R04B5.5	Q21702	2	10	Sorbitol dehydrogenase	w
+SORBITOL	worm	Q21703	CELE_R04B5.6	Q21703	1	5	Sorbitol dehydrogenase	w
+SORBITOL	yeast	P35497	SOR1	P35497	1	10	Sorbitol dehydrogenase 1	w
+SORBITOL	yeast	Q07786	SOR2	Q07786	1	8	Sorbitol dehydrogenase 2	w
+SORBITOL	zebrafish	F1Q713	sord	F1Q713	0	17	Sorbitol dehydrogenase	w
+SORBS1	human	Q9BX66	SORBS1	Q9BX66	62	194	Sorbin and SH3 domain-containing protein 1 (Ponsin) (SH3 dom	
+SORBS1	mus-musculus	D3Z5J3	Sorbs1	D3Z5J3	13	50	Sorbin and SH3 domain containing 1	
+SORBS1	rattus-norvegicus	P84109	Sorbs1	P84109	1	36	Sorbin and SH3 domain-containing protein 1	
+SORBS2	human	O94875	SORBS2	O94875	69	157	Sorbin and SH3 domain-containing protein 2 (Arg-binding prot	
+SORBS2	mus-musculus	Q3UTJ2	Sorbs2	Q3UTJ2	8	39	Sorbin and SH3 domain-containing protein 2	
+SORBS2	rattus-norvegicus	O35413	Sorbs2	O35413	9	21	Sorbin and SH3 domain-containing protein 2	
+SORBS3	human	O60504	SORBS3	O60504	87	270	Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin	
+SORBS3	mus-musculus	Q9R1Z8	Sorbs3	Q9R1Z8	10	48	Vinexin	
+SORC1_HUMAN	human	Q8WY21	SORCS1	Q8WY21	7	47		
+SORC2_HUMAN	human	Q96PQ0	SORCS2	Q96PQ0	15	98		
+SORC3_HUMAN	human	Q9UPU3	SORCS3	Q9UPU3	31	137		
+SORCIN	human	P30626	SRI	P30626	23	168	Sorcin (22 kDa protein) (CP-22) (CP22) (V19)	w
+SORCIN	zebrafish	F1R4I7	sri	F1R4I7	7	31	Sorcin	w
+SORCN_HUMAN	human	P30626	SRI	P30626	23	168		
+SORCS	human	Q8WY21	SORCS1	Q8WY21	7	47		
+SORCS1	human	Q8WY21	SORCS1	Q8WY21	7	47	VPS10 domain-containing receptor SorCS1 (hSorCS)	
+SORCS1	mus-musculus	Q9JLC4	Sorcs1	Q9JLC4	1	15	VPS10 domain-containing receptor SorCS1	
+SORCS1	rattus-norvegicus	F1LUZ4	Sorcs1	F1LUZ4	1	32	VPS10 domain-containing receptor SorCS1	
+SORCS2	human	Q96PQ0	SORCS2	Q96PQ0	15	98	VPS10 domain-containing receptor SorCS2 [Cleaved into: SorCS	
+SORCS2	mus-musculus	Q9EPR5	Sorcs2	Q9EPR5	2	20	VPS10 domain-containing receptor SorCS2	
+SORCS2	rattus-norvegicus	D3ZW09	Sorcs2	D3ZW09	0	38	VPS10 domain-containing receptor SorCS2	
+SORCS2	zebrafish	E7FD83	sorcs2	E7FD83	2	31	VPS10 domain-containing receptor SorCS2	w
+SORCS2	zebrafish	E7FD83	sorcs2	E7FD83	2	31	VPS10 domain-containing receptor SorCS2	w
+SORCS3	human	Q9UPU3	SORCS3	Q9UPU3	31	137	VPS10 domain-containing receptor SorCS3	
+SORCS3	mus-musculus	Q8VI51	Sorcs3	Q8VI51	0	17	VPS10 domain-containing receptor SorCS3	
+SORCS3	rattus-norvegicus	D4A2I9	Sorcs3	D4A2I9	1	32	VPS10 domain-containing receptor SorCS3	
+SORD	human	Q00796	SORD	Q00796	8	194	Sorbitol dehydrogenase (SDH) (EC 1.1.1.-) ((R,R)-butanediol 	
+SORD	mus-musculus	Q64442	Sord	Q64442	0	25	Sorbitol dehydrogenase	
+SORD	rattus-norvegicus	P27867	Sord	P27867	0	10	Sorbitol dehydrogenase	
+SORD	zebrafish	F1Q713	sord	F1Q713	0	17	Sorbitol dehydrogenase	
+SORD1	fly	FBgn0024289	Sord1	O97479	1	19	Sorbitol dehydrogenase (Polyol dehydrogenase)	
+SORD2	fly	FBgn0022359	Sord2	O96299	2	16	Sorbitol dehydrogenase (Polyol dehydrogenase)	
+SORDD1	fly	FBgn0030693	sordd1	Q9VXP1	12	74	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	
+SORDD2	fly	FBgn0052581	sordd2	Q8IR26	10	54	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	
+SORDL	fly	FBgn0270925	Sordl	B7Z0M7	1	18	Uncharacterized protein, isoform E	
+SORF-1	worm	Q23533	sorf-1	Q23533	1	2	Suppressor of organelle fusion 1	
+SORF-2	worm	Q10122	sorf-2	Q10122	1	10	Suppressor of organelle fusion 2	
+SORF1	virus	Q6UDF9	sORF1	Q6UDF9	1	69	Tegument protein UL47 homolog	
+SORF1	virus	Q782N3	SORF1	Q782N3	1	108	Q782N3_9ALPH	
+SORF2	virus	F8TC78	SORF2	F8TC78	2	108	F8TC78_9ALPH	
+SORF2	virus	Q6UDF7	sORF2	Q6UDF7	0	68	Uncharacterized protein sORF2	w
+SORF2	virus	Q6UDF7	sORF2	Q6UDF7	0	68	Uncharacterized protein sORF2	w
+SORF3	virus	A0A1R3TCX9	SORF3	A0A1R3TCX9	4	82	A0A1R3TCX9_9ALPH	
+SORF3	virus	G3GR54	SORF3	G3GR54	4	74	G3GR54_9ALPH	
+SORF3	virus	Q6UDF3		Q6UDF3	1	69	Uncharacterized protein sORF3/4	w
+SORF3	virus	Q782N1	SORF3	Q782N1	3	108	Q782N1_9ALPH	
+SORF4	virus	Q782M8	SORF4	Q782M8	2	108	Q782M8_9ALPH	
+SORF4/3	virus	G8HKG8	sORF4/3	G8HKG8	1	75	G8HKG8_ILTV	
+SORF5	virus	F8TC92	SORF5	F8TC92	3	108	F8TC92_9ALPH	
+SORL	human	Q92673	SORL1	Q92673	30	247	Sortilin-related receptor (Low-density lipoprotein receptor 	w
+SORL1	human	Q92673	SORL1	Q92673	30	247	Sortilin-related receptor (Low-density lipoprotein receptor 	
+SORL_HUMAN	human	Q92673	SORL1	Q92673	30	247		
+SORORIN	fly	FBgn0278604	dmt	Q9VH89	7	15	Protein dalmatian (Sororin ortholog)	w
+SORORIN	human	E9PRG8	RSMC	E9PRG8	3	57	28S rRNA/ribosome and sororin micro-cofactor	w
+SORORIN	human	Q96FF9	CDCA5	Q96FF9	72	456	Sororin (Cell division cycle-associated protein 5) (p35)	w
+SORT	human	Q96CF2	CHMP4C	Q96CF2	45	772	Charged multivesicular body protein 4c (Chromatin-modifying 	w
+SORT	human	Q9H444	CHMP4B	Q9H444	36	726	Charged multivesicular body protein 4b (Chromatin-modifying 	w
+SORT1	dictyostelium-discoideum	Q54GL5	sort1	Q54GL5	1	20	PDZ domain-containing protein	
+SORT1	human	Q99523	SORT1	Q99523	62	357	Sortilin (100 kDa NT receptor) (Glycoprotein 95) (Gp95) (Neu	
+SORT1	mus-musculus	Q6PHU5	Sort1	Q6PHU5	8	94	Sortilin	
+SORT1	rattus-norvegicus	O54861	Sort1	O54861	6	86	Sortilin	
+SORT1	zebrafish	Q6NUT7	sort1	Q6NUT7	2	70	Sortilin	
+SORT1B	zebrafish	A5PMG8	sort1b	A5PMG8	3	30	Sortilin	
+SORTASE	worm	Q966J4	CELE_F41B4.3	Q966J4	0	4	Proteobacterial sortase system OmpA family protein	w
+SORTI	human	Q9BY43	CHMP4A	Q9BY43	21	137	Charged multivesicular body protein 4a (Chromatin-modifying 	w
+SORTILIN	human	Q99523	SORT1	Q99523	62	357	Sortilin (100 kDa NT receptor) (Glycoprotein 95) (Gp95) (Neu	w
+SORTILIN	zebrafish	A5PMG8	sort1b	A5PMG8	3	30	Sortilin	w
+SORTILIN	zebrafish	Q6NUT7	sort1	Q6NUT7	2	70	Sortilin	w
+SORTILIN-RELATED	human	Q92673	SORL1	Q92673	30	247	Sortilin-related receptor (Low-density lipoprotein receptor 	w
+SORTING	fly	FBgn0016038	Vsp37A	O77259	4	25	EG:115C2.5 protein (RE69619p) (Vacuolar protein sorting 37A,	w
+SORTING	fly	FBgn0022027	Vps25	Q7JXV9	11	44	Vacuolar protein-sorting-associated protein 25 (ESCRT-II com	w
+SORTING	fly	FBgn0031310	Vps29	Q9VPX5	8	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
+SORTING	fly	FBgn0031457	Snx21	Q9VQG1	0	2	LD12265p (Sorting nexin 21, isoform A)	w
+SORTING	fly	FBgn0031534	Snx1	Q9VQQ6	8	134	FI18122p1 (Sorting nexin 1, isoform A)	w
+SORTING	fly	FBgn0032005	Snx6	M9NDI3	12	63	Sorting nexin 6, isoform B	w
+SORTING	fly	FBgn0032191	Snx17	Q9VL28	6	26	LD15323p (Sorting nexin 17)	w
+SORTING	fly	FBgn0034265	Snx16	Q7JR96	4	12	SD19533p (Sorting nexin 16)	w
+SORTING	fly	FBgn0034271	Vps50	A1ZAY8	5	5	FI23003p1 (Vacuolar protein sorting 50)	w
+SORTING	fly	FBgn0034744	Vps20	Q9W236	5	85	Vacuolar protein sorting 20, isoform A (Vacuolar protein sor	w
+SORTING	fly	FBgn0035704	Vps8	Q9VRX2	9	24	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
+SORTING	fly	FBgn0037299	Vps37B	Q9VN88	8	39	LD45836p (Vacuolar protein sorting 37B, isoform A) (Vacuolar	w
+SORTING	fly	FBgn0037622	CG8202	Q9VHM2	4	8	VPS35 endosomal protein sorting factor-like	w
+SORTING	fly	FBgn0038065	Snx3	Q9VG51	6	58	RE52028p (Sorting nexin 3, isoform A) (Sorting nexin 3, isof	w
+SORTING	fly	FBgn0039335	Vps33B	Q9VBR1	9	31	Vacuolar protein sorting 33B	w
+SORTING	fly	FBgn0040475	SH3PX1	Q9NCC3	9	90	Sorting nexin	w
+SORTING	fly	FBgn0052758	Snx27	Q9W486	3	21	LD13361p (Sorting nexin 27, isoform A)	w
+SORTING	fly	FBgn0261049	Vps45	Q9VHB5	11	57	SD10846p (Vacuolar protein sorting 45)	w
+SORTING	fly	FBgn0283469	Vps4	Q9Y162	19	211	BcDNA.GH02678 (Vacuolar protein sorting 4, isoform A (EC 3.6	w
+SORTING	fly	FBgn0290431	Vps2	Q9VBI3	6	44	Vacuolar protein sorting 2	w
+SORTING	human	O14559	ARHGAP33	O14559	6	32	Rho GTPase-activating protein 33 (Rho-type GTPase-activating	w
+SORTING	human	O60493	SNX3	O60493	16	259	Sorting nexin-3 (Protein SDP3)	w
+SORTING	human	O60749	SNX2	O60749	30	266	Sorting nexin-2 (Transformation-related gene 9 protein) (TRG	w
+SORTING	human	O75436	VPS26A	O75436	29	231	Vacuolar protein sorting-associated protein 26A (Vesicle pro	w
+SORTING	human	O95219	SNX4	O95219	22	169	Sorting nexin-4	w
+SORTING	human	P57768	SNX16	P57768	10	35	Sorting nexin-16	w
+SORTING	human	Q13596	SNX1	Q13596	27	267	Sorting nexin-1	w
+SORTING	human	Q15036	SNX17	Q15036	19	155	Sorting nexin-17	w
+SORTING	human	Q4G0F5	VPS26B	Q4G0F5	23	137	Vacuolar protein sorting-associated protein 26B (Vesicle pro	w
+SORTING	human	Q5JY77	GPRASP1	Q5JY77	19	292	G protein-coupled receptor-associated sorting protein 1 (GAS	w
+SORTING	human	Q5VWJ9	SNX30	Q5VWJ9	20	71	Sorting nexin-30	w
+SORTING	human	Q6PI77	GPRASP3	Q6PI77	11	66	G protein-coupled receptor associated sorting protein 3 (Pro	w
+SORTING	human	Q6VY07	PACS1	Q6VY07	15	98	Phosphofurin acidic cluster sorting protein 1 (PACS-1)	w
+SORTING	human	Q7Z614	SNX20	Q7Z614	3	72	Sorting nexin-20 (Selectin ligand-interactor cytoplasmic 1) 	w
+SORTING	human	Q86VP3	PACS2	Q86VP3	10	68	Phosphofurin acidic cluster sorting protein 2 (PACS-2) (PACS	w
+SORTING	human	Q86XE0	SNX32	Q86XE0	21	71	Sorting nexin-32 (Sorting nexin-6B)	w
+SORTING	human	Q8IUI4	SNX29P2	Q8IUI4	0	1	Putative protein SNX29P2 (RUN domain-containing protein 2C) 	w
+SORTING	human	Q8N9S9	SNX31	Q8N9S9	6	57	Sorting nexin-31	w
+SORTING	human	Q8TEQ0	SNX29	Q8TEQ0	18	105	Sorting nexin-29 (RUN domain-containing protein 2A)	w
+SORTING	human	Q8WV41	SNX33	Q8WV41	40	141	Sorting nexin-33 (SH3 and PX domain-containing protein 3)	w
+SORTING	human	Q92543	SNX19	Q92543	16	90	Sorting nexin-19	w
+SORTING	human	Q969T3	SNX21	Q969T3	10	96	Sorting nexin-21 (Sorting nexin L) (SNX-L)	w
+SORTING	human	Q96D09	GPRASP2	Q96D09	25	169	G protein-coupled receptor-associated sorting protein 2 (GAS	w
+SORTING	human	Q96L92	SNX27	Q96L92	96	593	Sorting nexin-27	w
+SORTING	human	Q96L93	KIF16B	Q96L93	15	110	Kinesin-like protein KIF16B (Sorting nexin-23)	w
+SORTING	human	Q96L94	SNX22	Q96L94	3	45	Sorting nexin-22	w
+SORTING	human	Q96QK1	VPS35	Q96QK1	27	364	Vacuolar protein sorting-associated protein 35 (hVPS35) (Mat	w
+SORTING	human	Q96RF0	SNX18	Q96RF0	29	110	Sorting nexin-18 (SH3 and PX domain-containing protein 3B)	w
+SORTING	human	Q9H3E2	SNX25	Q9H3E2	6	60	Sorting nexin-25	w
+SORTING	human	Q9NRS6	SNX15	Q9NRS6	6	53	Sorting nexin-15	w
+SORTING	human	Q9UBQ0	VPS29	Q9UBQ0	16	191	Vacuolar protein sorting-associated protein 29 (hVPS29) (PEP	w
+SORTING	human	Q9UMY4	SNX12	Q9UMY4	11	115	Sorting nexin-12	w
+SORTING	human	Q9UNH6	SNX7	Q9UNH6	13	47	Sorting nexin-7	w
+SORTING	human	Q9UNH7	SNX6	Q9UNH7	35	285	Sorting nexin-6 (TRAF4-associated factor 2) [Cleaved into: S	w
+SORTING	human	Q9Y343	SNX24	Q9Y343	12	61	Sorting nexin-24	w
+SORTING	human	Q9Y512	SAMM50	Q9Y512	11	201	Sorting and assembly machinery component 50 homolog (Transfo	w
+SORTING	human	Q9Y5W7	SNX14	Q9Y5W7	11	107	Sorting nexin-14	w
+SORTING	human	Q9Y5W8	SNX13	Q9Y5W8	2	30	Sorting nexin-13 (RGS domain- and PHOX domain-containing pro	w
+SORTING	human	Q9Y5W9	SNX11	Q9Y5W9	8	95	Sorting nexin-11	w
+SORTING	human	Q9Y5X0	SNX10	Q9Y5X0	15	116	Sorting nexin-10	w
+SORTING	human	Q9Y5X1	SNX9	Q9Y5X1	40	208	Sorting nexin-9 (SH3 and PX domain-containing protein 1) (Pr	w
+SORTING	human	Q9Y5X2	SNX8	Q9Y5X2	17	73	Sorting nexin-8	w
+SORTING	human	Q9Y5X3	SNX5	Q9Y5X3	30	215	Sorting nexin-5	w
+SORTING	worm	G5EF63	snx-14	G5EF63	0	2	Sorting nexin-12	w
+SORTING	worm	P54815	mspn-1	P54815	1	14	Mitochondrial sorting homolog	w
+SORTING	worm	Q19532	snx-17	Q19532	2	11	Sorting nexin-17 homolog	w
+SORTING	worm	Q19833	CELE_F26G1.1	Q19833	4	8	VPS35 endosomal protein sorting factor-like	w
+SORTING	worm	Q8I4E2	lst-4	Q8I4E2	4	40	Sorting nexin lst-4	w
+SORTING	worm	Q93566	snx-27	Q93566	2	15	Sorting nexin-27	w
+SORTING	worm	Q95QA3	pacs-1	Q95QA3	1	8	Phosphofurin acidic cluster sorting protein 2	w
+SORTING	worm	Q9U2U6	snx-13	Q9U2U6	0	1	Sorting nexin-13	w
+SORTING	worm	Q9XW41	snx-3	Q9XW41	2	20	Sorting nexin-3	w
+SORTING	yeast	P14693	SAM35	P14693	3	39	Sorting assembly machinery 35 kDa subunit	w
+SORTING	yeast	P40959	MVP1	P40959	2	18	Sorting nexin MVP1	w
+SORTING	yeast	P42939	MVB12	P42939	3	19	Multivesicular body sorting factor 12	w
+SORTING	yeast	P47057	SNX4	P47057	4	50	Sorting nexin-4	w
+SORTING	yeast	P50110	SAM37	P50110	3	31	Sorting assembly machinery 37 kDa subunit	w
+SORTING	yeast	P53969	SAM50	P53969	7	385	Sorting assembly machinery 50 kDa subunit	w
+SORTING	yeast	Q04053	SNX41	Q04053	6	31	Sorting nexin-41	w
+SORTING	yeast	Q08826	SNX3	Q08826	0	22	Sorting nexin-3	w
+SORTING	zebrafish	A0A0R4IDN5	snx8b	A0A0R4IDN5	2	13	Sorting nexin 8b	w
+SORTING	zebrafish	A0A0R4IIY5	snx7	A0A0R4IIY5	2	18	Sorting nexin-7	w
+SORTING	zebrafish	A0A0R4IKU1	si:ch211-126j24.1	A0A0R4IKU1	2	8	Phosphofurin acidic cluster sorting protein 2 isoform X3	w
+SORTING	zebrafish	A0A8M9QGA7	si:dkey-28n18.9	A0A8M9QGA7	7	22	Sorting nexin-5	w
+SORTING	zebrafish	A5PMM5	snx18a	A5PMM5	1	19	Sorting nexin	w
+SORTING	zebrafish	A8WG21	snx10b	A8WG21	0	10	Sorting nexin-10B	w
+SORTING	zebrafish	B5RHZ3	snx33	B5RHZ3	1	19	Sorting nexin	w
+SORTING	zebrafish	E7EYK3	snx29	E7EYK3	0	2	Sorting nexin 29	w
+SORTING	zebrafish	F1Q506	snx10a	F1Q506	1	10	Sorting nexin-10A	w
+SORTING	zebrafish	F1Q9I7	snx1a	F1Q9I7	7	25	Sorting nexin-1	w
+SORTING	zebrafish	F1QM62	snx13	F1QM62	1	2	Sorting nexin-13	w
+SORTING	zebrafish	F6NGW9	snx8a	F6NGW9	2	13	Sorting nexin-8a	w
+SORTING	zebrafish	F8W5C6	snx6	F8W5C6	8	25	Sorting nexin	w
+SORTING	zebrafish	Q1L8B0	snx27a	Q1L8B0	2	28	Sorting nexin-27	w
+SORTING	zebrafish	Q3B7E7	snx3	Q3B7E7	2	14	Sorting nexin-3	w
+SORTING	zebrafish	Q566W7	snx30	Q566W7	3	18	Sorting nexin-30	w
+SORTING	zebrafish	Q5PNP1	snx14	Q5PNP1	1	2	Sorting nexin-14	w
+SORTING	zebrafish	Q5RID7	snx17	Q5RID7	3	31	Sorting nexin-17	w
+SORTING	zebrafish	Q5SPP2	snx9b	Q5SPP2	1	15	Sorting nexin	w
+SORTING	zebrafish	Q5U3I0	samm50b	Q5U3I0	3	26	Sorting and assembly machinery component 50 homolog B	w
+SORTING	zebrafish	Q6P3G2	snx27b	Q6P3G2	2	28	Sorting nexin-27	w
+SORTING	zebrafish	Q7ZZB1	snx9a	Q7ZZB1	2	21	Sorting nexin	w
+SORTING	zebrafish	Q803G5	samm50a	Q803G5	3	26	Sorting and assembly machinery component 50 homolog A	w
+SORTING-ASSOCIAT	human	O43633	CHMP2A	O43633	19	161	Charged multivesicular body protein 2a (Chromatin-modifying 	w
+SORTING-ASSOCIATED	fly	FBgn0000257	car	M9PF72	12	126	Vacuolar protein sorting-associated protein 33A	w
+SORTING-ASSOCIATED	fly	FBgn0000482	dor	Q24314	17	124	Vacuolar protein sorting-associated protein 18 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0002566	lt	Q7PL76	13	58	Vacuolar protein sorting-associated protein 41 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0011232	scat	Q9VLC0	10	42	Vacuolar protein sorting-associated protein 54 (Protein scat	w
+SORTING-ASSOCIATED	fly	FBgn0014411	Vps26	Q9W552	5	33	Vacuolar protein sorting-associated protein 26 (VPS26 protei	w
+SORTING-ASSOCIATED	fly	FBgn0021814	Vps28	Q9V359	6	72	Vacuolar protein sorting-associated protein 28 homolog (ESCR	w
+SORTING-ASSOCIATED	fly	FBgn0031310	Vps29	Q9VPX5	8	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
+SORTING-ASSOCIATED	fly	FBgn0031598	Vps53	Q9VQY8	16	61	Vacuolar protein sorting-associated protein 53 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0031710	Vps52	Q9VMQ8	18	64	Vacuolar protein sorting-associated protein 52 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0032321	YL-1	Q9VKM6	64	442	Vacuolar protein sorting-associated protein 72 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0033194	Vps13	A1Z713	0	2	Intermembrane lipid transfer protein Vps13 (Vacuolar protein	w
+SORTING-ASSOCIATED	fly	FBgn0034380	Vps51	Q8MSY4	11	68	Vacuolar protein sorting-associated protein 51 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0034708	Vps35	Q9W277	10	72	Vacuolar protein sorting-associated protein 35	w
+SORTING-ASSOCIATED	fly	FBgn0035704	Vps8	Q9VRX2	9	24	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
+SORTING-ASSOCIATED	fly	FBgn0038593	Vps39	Q9VEA2	15	146	Vacuolar protein sorting-associated protein 39 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0039702	Vps16B	Q9VAG4	14	81	Vacuolar protein sorting-associated protein 16B (Protein ful	w
+SORTING-ASSOCIATED	fly	FBgn0052113	Vps13D	Q9VU08	1	29	Intermembrane lipid transfer protein Vps13D (Vacuolar protei	w
+SORTING-ASSOCIATED	fly	FBgn0052350	Vps11	Q8SX81	6	35	Vacuolar protein sorting-associated protein 11 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0285911	Vps16A	Q9VHG1	13	59	Vacuolar protein sorting-associated protein 16 homolog (Prot	w
+SORTING-ASSOCIATED	human	A5D8V6	VPS37C	A5D8V6	34	162	Vacuolar protein sorting-associated protein 37C (hVps37C) (E	w
+SORTING-ASSOCIATED	human	O14972	VPS26C	O14972	13	96	Vacuolar protein sorting-associated protein 26C (Down syndro	w
+SORTING-ASSOCIATED	human	O75351	VPS4B	O75351	14	144	Vacuolar protein sorting-associated protein 4B (EC 3.6.4.6) 	w
+SORTING-ASSOCIATED	human	O75436	VPS26A	O75436	29	231	Vacuolar protein sorting-associated protein 26A (Vesicle pro	w
+SORTING-ASSOCIATED	human	P49754	VPS41	P49754	15	130	Vacuolar protein sorting-associated protein 41 homolog (S53)	w
+SORTING-ASSOCIATED	human	Q15906	VPS72	Q15906	132	571	Vacuolar protein sorting-associated protein 72 homolog (Prot	w
+SORTING-ASSOCIATED	human	Q4G0F5	VPS26B	Q4G0F5	23	137	Vacuolar protein sorting-associated protein 26B (Vesicle pro	w
+SORTING-ASSOCIATED	human	Q5VIR6	VPS53	Q5VIR6	49	208	Vacuolar protein sorting-associated protein 53 homolog	w
+SORTING-ASSOCIATED	human	Q7LBR1	CHMP1B	Q7LBR1	8	101	Charged multivesicular body protein 1b (CHMP1.5) (Chromatin-	w
+SORTING-ASSOCIATED	human	Q86XT2	VPS37D	Q86XT2	14	80	Vacuolar protein sorting-associated protein 37D (ESCRT-I com	w
+SORTING-ASSOCIATED	human	Q8N1B4	VPS52	Q8N1B4	53	233	Vacuolar protein sorting-associated protein 52 homolog (SAC2	w
+SORTING-ASSOCIATED	human	Q8N3P4	VPS8	Q8N3P4	21	111	Vacuolar protein sorting-associated protein 8 homolog	w
+SORTING-ASSOCIATED	human	Q8NEZ2	VPS37A	Q8NEZ2	20	103	Vacuolar protein sorting-associated protein 37A (hVps37A) (E	w
+SORTING-ASSOCIATED	human	Q96AX1	VPS33A	Q96AX1	27	253	Vacuolar protein sorting-associated protein 33A (hVPS33A)	w
+SORTING-ASSOCIATED	human	Q96FZ7	CHMP6	Q96FZ7	14	127	Charged multivesicular body protein 6 (Chromatin-modifying p	w
+SORTING-ASSOCIATED	human	Q96QK1	VPS35	Q96QK1	27	364	Vacuolar protein sorting-associated protein 35 (hVPS35) (Mat	w
+SORTING-ASSOCIATED	human	Q96RL7	VPS13A	Q96RL7	5	69	Intermembrane lipid transfer protein VPS13A (Chorea-acanthoc	w
+SORTING-ASSOCIATED	human	Q9H267	VPS33B	Q9H267	47	235	Vacuolar protein sorting-associated protein 33B (hVPS33B)	w
+SORTING-ASSOCIATED	human	Q9H269	VPS16	Q9H269	32	158	Vacuolar protein sorting-associated protein 16 homolog (hVPS	w
+SORTING-ASSOCIATED	human	Q9H270	VPS11	Q9H270	17	152	Vacuolar protein sorting-associated protein 11 homolog (hVPS	w
+SORTING-ASSOCIATED	human	Q9H9H4	VPS37B	Q9H9H4	24	100	Vacuolar protein sorting-associated protein 37B (hVps37B) (E	w
+SORTING-ASSOCIATED	human	Q9HD42	CHMP1A	Q9HD42	9	145	Charged multivesicular body protein 1a (Chromatin-modifying 	w
+SORTING-ASSOCIATED	human	Q9NP79	VTA1	Q9NP79	27	156	Vacuolar protein sorting-associated protein VTA1 homolog (Do	w
+SORTING-ASSOCIATED	human	Q9NRW7	VPS45	Q9NRW7	35	253	Vacuolar protein sorting-associated protein 45 (h-VPS45) (hl	w
+SORTING-ASSOCIATED	human	Q9NZZ3	CHMP5	Q9NZZ3	21	178	Charged multivesicular body protein 5 (Chromatin-modifying p	w
+SORTING-ASSOCIATED	human	Q9P1Q0	VPS54	Q9P1Q0	22	99	Vacuolar protein sorting-associated protein 54 (Hepatocellul	w
+SORTING-ASSOCIATED	human	Q9P253	VPS18	Q9P253	31	192	Vacuolar protein sorting-associated protein 18 homolog (hVPS	w
+SORTING-ASSOCIATED	human	Q9UBQ0	VPS29	Q9UBQ0	16	191	Vacuolar protein sorting-associated protein 29 (hVPS29) (PEP	w
+SORTING-ASSOCIATED	human	Q9UID3	VPS51	Q9UID3	26	232	Vacuolar protein sorting-associated protein 51 homolog (Anot	w
+SORTING-ASSOCIATED	human	Q9UK41	VPS28	Q9UK41	14	174	Vacuolar protein sorting-associated protein 28 homolog (H-Vp	w
+SORTING-ASSOCIATED	human	Q9UN37	VPS4A	Q9UN37	15	137	Vacuolar protein sorting-associated protein 4A (EC 3.6.4.6) 	w
+SORTING-ASSOCIATED	human	Q9UQN3	CHMP2B	Q9UQN3	11	143	Charged multivesicular body protein 2b (CHMP2.5) (Chromatin-	w
+SORTING-ASSOCIATED	human	Q9Y3E7	CHMP3	Q9Y3E7	23	197	Charged multivesicular body protein 3 (Chromatin-modifying p	w
+SORTING-ASSOCIATED	worm	G5EFV8	vps-52	G5EFV8	8	35	Vacuolar protein sorting-associated protein 52 homolog	w
+SORTING-ASSOCIATED	worm	H2KYN0	vps-45	H2KYN0	6	28	Vacuolar protein sorting-associated protein 45	w
+SORTING-ASSOCIATED	worm	O01258	vps-26	O01258	3	13	Vacuolar protein sorting-associated protein 26	w
+SORTING-ASSOCIATED	worm	O01839	vps-51	O01839	3	49	Vacuolar protein sorting-associated protein 51 homolog	w
+SORTING-ASSOCIATED	worm	P34260	vps-33.1	P34260	4	27	Vacuolar protein sorting-associated protein 33A	w
+SORTING-ASSOCIATED	worm	P34561	vps-53	P34561	8	29	Vacuolar protein sorting-associated protein 53 homolog	w
+SORTING-ASSOCIATED	worm	Q09600	vps-11	Q09600	6	19	Vacuolar protein sorting-associated protein 11 homolog	w
+SORTING-ASSOCIATED	worm	Q11182	vps-16	Q11182	5	17	Vacuolar protein sorting-associated protein 16 homolog	w
+SORTING-ASSOCIATED	worm	Q18319	C30B5.2	Q18319	1	1	Vacuolar protein sorting-associated protein 55 homolog	w
+SORTING-ASSOCIATED	worm	Q18891	vps-33.2	Q18891	6	25	Vacuolar protein sorting-associated protein 33B	w
+SORTING-ASSOCIATED	worm	Q19954	vps-41	Q19954	5	13	Vacuolar protein sorting-associated protein 41 homolog	w
+SORTING-ASSOCIATED	worm	Q1ZXS5	vps-39	Q1ZXS5	7	90	Vacuolar protein sorting-associated protein 39 homolog	w
+SORTING-ASSOCIATED	worm	Q21053	vps-35	Q21053	4	28	Vacuolar protein sorting-associated protein 35	w
+SORTING-ASSOCIATED	worm	Q22639	vps-54	Q22639	4	22	Vacuolar protein sorting-associated protein 54	w
+SORTING-ASSOCIATED	worm	Q23194	vps-18	Q23194	6	22	Vacuolar protein sorting-associated protein 18 homolog	w
+SORTING-ASSOCIATED	worm	Q86D99	vps-29	Q86D99	4	21	Vacuolar protein sorting-associated protein 29	w
+SORTING-ASSOCIATED	worm	Q93230	vps-72	Q93230	5	56	Vacuolar protein sorting-associated protein 72 homolog	w
+SORTING-ASSOCIATED	worm	Q9NA26	vps-28	Q9NA26	2	30	Vacuolar protein sorting-associated protein 28 homolog	w
+SORTING-ASSOCIATED	yeast	P20795	VPS33	P20795	5	41	Vacuolar protein sorting-associated protein 33	w
+SORTING-ASSOCIATED	yeast	P21576	VPS1	P21576	1	128	Vacuolar protein sorting-associated protein 1	w
+SORTING-ASSOCIATED	yeast	P22219	VPS15	P22219	12	73	Serine/threonine-protein kinase VPS15 (EC 2.7.11.1) (Golgi-r	w
+SORTING-ASSOCIATED	yeast	P23643	VPS3	P23643	7	22	Vacuolar protein sorting-associated protein 3	w
+SORTING-ASSOCIATED	yeast	P32913	VPS17	P32913	5	26	Vacuolar protein sorting-associated protein 17	w
+SORTING-ASSOCIATED	yeast	P34110	VPS35	P34110	5	49	Vacuolar protein sorting-associated protein 35	w
+SORTING-ASSOCIATED	yeast	P36017	VPS21	P36017	15	52	Vacuolar protein sorting-associated protein 21	w
+SORTING-ASSOCIATED	yeast	P36116	VPS51	P36116	4	20	Vacuolar protein sorting-associated protein 51	w
+SORTING-ASSOCIATED	yeast	P38759	VPS29	P38759	6	30	Vacuolar protein sorting-associated protein 29	w
+SORTING-ASSOCIATED	yeast	P38932	VPS45	P38932	11	50	Vacuolar protein sorting-associated protein 45	w
+SORTING-ASSOCIATED	yeast	P38959	VPS41	P38959	7	41	Vacuolar protein sorting-associated protein 41	w
+SORTING-ASSOCIATED	yeast	P39702	VPS8	P39702	7	19	Vacuolar protein sorting-associated protein 8	w
+SORTING-ASSOCIATED	yeast	P39904	VPS52	P39904	4	23	Vacuolar protein sorting-associated protein 52	w
+SORTING-ASSOCIATED	yeast	P40343	VPS27	P40343	2	34	Vacuolar protein sorting-associated protein 27	w
+SORTING-ASSOCIATED	yeast	P47061	VPS53	P47061	5	22	Vacuolar protein sorting-associated protein 53	w
+SORTING-ASSOCIATED	yeast	P47111	VPS55	P47111	1	7	Vacuolar protein sorting-associated protein 55	w
+SORTING-ASSOCIATED	yeast	P47161	VPS70	P47161	0	13	Vacuolar protein sorting-associated protein 70	w
+SORTING-ASSOCIATED	yeast	P52917	VPS4	P52917	11	33	Vacuolar protein sorting-associated protein 4	w
+SORTING-ASSOCIATED	yeast	P53142	VPS73	P53142	0	7	Vacuolar protein sorting-associated protein 73	w
+SORTING-ASSOCIATED	yeast	P53285	VPS62	P53285	0	5	Vacuolar protein sorting-associated protein 62	w
+SORTING-ASSOCIATED	yeast	P53843	IST1	P53843	5	47	Vacuolar protein sorting-associated protein IST1	w
+SORTING-ASSOCIATED	yeast	P53853	VPS75	P53853	2	27	Vacuolar protein sorting-associated protein 75	w
+SORTING-ASSOCIATED	yeast	P54787	VPS9	P54787	6	23	Vacuolar protein sorting-associated protein 9	w
+SORTING-ASSOCIATED	yeast	Q02767	VPS28	Q02767	2	20	Vacuolar protein sorting-associated protein 28	w
+SORTING-ASSOCIATED	yeast	Q02948	VPS30	Q02948	13	78	Vacuolar protein sorting-associated protein 30	w
+SORTING-ASSOCIATED	yeast	Q03308	VPS16	Q03308	8	37	Vacuolar protein sorting-associated protein 16	w
+SORTING-ASSOCIATED	yeast	Q03388	VPS72	Q03388	4	45	Vacuolar protein sorting-associated protein 72	w
+SORTING-ASSOCIATED	yeast	Q03433	VPS71	Q03433	3	43	Vacuolar protein sorting-associated protein 71	w
+SORTING-ASSOCIATED	yeast	Q03944	VPS64	Q03944	3	32	Vacuolar protein sorting-associated protein 64	w
+SORTING-ASSOCIATED	yeast	Q04272	VPS20	Q04272	3	41	Vacuolar protein sorting-associated protein 20	w
+SORTING-ASSOCIATED	yeast	Q05919	VPS38	Q05919	3	11	Vacuolar protein sorting-associated protein 38	w
+SORTING-ASSOCIATED	yeast	Q06263	VTA1	Q06263	7	17	Vacuolar protein sorting-associated protein VTA1	w
+SORTING-ASSOCIATED	yeast	Q06385	VPS74	Q06385	1	30	Vacuolar protein sorting-associated protein 74	w
+SORTING-ASSOCIATED	yeast	Q06466	TDA6	Q06466	0	1	Putative vacuolar protein sorting-associated protein TDA6	w
+SORTING-ASSOCIATED	yeast	Q12016	VPS68	Q12016	1	15	Vacuolar protein sorting-associated protein 68	w
+SORTING-ASSOCIATED	yeast	Q12071	VPS54	Q12071	4	31	Vacuolar protein sorting-associated protein 54	w
+SORTING-ASSOCIATED	yeast	Q92331	VPS5	Q92331	4	35	Vacuolar protein sorting-associated protein 5	w
+SORTING-ASSOCIATED	zebrafish	A0A0R4ID82	vps33a	A0A0R4ID82	16	60	Vacuolar protein sorting-associated protein 33A	w
+SORTING-ASSOCIATED	zebrafish	A0A0R4IY52	vps52	A0A0R4IY52	4	22	Vacuolar protein sorting-associated protein 52 homolog	w
+SORTING-ASSOCIATED	zebrafish	A0AB32TWK3	vps11	A0AB32TWK3	7	35	Vacuolar protein sorting-associated protein 11 homolog	w
+SORTING-ASSOCIATED	zebrafish	A5D6T0	vps16	A5D6T0	11	52	Vacuolar protein sorting-associated protein 16 homolog	w
+SORTING-ASSOCIATED	zebrafish	A8E7N5	vps45	A8E7N5	7	45	Vacuolar protein sorting-associated protein 45	w
+SORTING-ASSOCIATED	zebrafish	E7FAG0	vps53	E7FAG0	6	24	Vacuolar protein sorting-associated protein 53 homolog	w
+SORTING-ASSOCIATED	zebrafish	F1QQ05	vps8	F1QQ05	7	14	Vacuolar protein sorting-associated protein 8 homolog	w
+SORTING-ASSOCIATED	zebrafish	P59015	vps18	P59015	14	38	Vacuolar protein sorting-associated protein 18 homolog	w
+SORTING-ASSOCIATED	zebrafish	Q155U0	vps51	Q155U0	8	14	Vacuolar protein sorting-associated protein 51 homolog	w
+SORTING-ASSOCIATED	zebrafish	Q1L8X4	vps72a	Q1L8X4	11	69	Vacuolar protein sorting-associated protein 72 homolog	w
+SORTING-ASSOCIATED	zebrafish	Q58EN8	vps33b	Q58EN8	12	62	Vacuolar protein sorting-associated protein 33B	w
+SORTING-ASSOCIATED	zebrafish	Q6DH23	vps26bl	Q6DH23	3	34	Vacuolar protein sorting-associated protein 26B-like	w
+SORTING-ASSOCIATED	zebrafish	Q6DHL2	vps26c	Q6DHL2	3	20	Vacuolar protein sorting-associated protein 26C	w
+SORTING-ASSOCIATED	zebrafish	Q6PH25	vps28	Q6PH25	4	43	Vacuolar protein sorting-associated protein 28 homolog	w
+SORTING-ASSOCIATED	zebrafish	Q6TNP8	vps26a	Q6TNP8	3	44	Vacuolar protein sorting-associated protein 26A	w
+SORTING-ASSOCIATED	zebrafish	Q6ZM34	vps35	Q6ZM34	10	84	Vacuolar protein sorting-associated protein 35	w
+SORTING-ASSOCIATED	zebrafish	Q7ZV03	vps26b	Q7ZV03	3	34	Vacuolar protein sorting-associated protein 26B	w
+SORTING-ASSOCIATED	zebrafish	Q7ZV68	vps29	Q7ZV68	5	69	Vacuolar protein sorting-associated protein 29	w
+SORT_HUMAN	human	Q99523	SORT1	Q99523	62	357		
+SORULATION-REGULATED	yeast	Q12282	SPR2	Q12282	1	2	Sorulation-regulated protein 2	w

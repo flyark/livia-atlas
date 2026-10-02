@@ -1,11 +1,32 @@
-PYG7	arabidopsis-thaliana	B9DHG0	PYG7	B9DHG0	0	1	Tetratricopeptide repeat domain-containing protein PYG7, chloroplastic
-PYGB	mus-musculus	Q8CI94	Pygb	Q8CI94	0	15	Glycogen phosphorylase, brain form
-PYGB	rattus-norvegicus	P53534	Pygb	P53534	1	6	Glycogen phosphorylase, brain form
-PYGL	mus-musculus	Q9ET01	Pygl	Q9ET01	1	23	Glycogen phosphorylase, liver form
-PYGL	rattus-norvegicus	P09811	Pygl	P09811	0	9	Glycogen phosphorylase, liver form
-PYGM	mus-musculus	Q9WUB3	Pygm	Q9WUB3	0	25	Glycogen phosphorylase, muscle form
-PYGM	rattus-norvegicus	P09812	Pygm	P09812	1	12	Glycogen phosphorylase, muscle form
-PYGO1	mus-musculus	Q9D0P5	Pygo1	Q9D0P5	6	21	Pygopus homolog 1
-PYGO1	rattus-norvegicus	A0A8I6AA06	Pygo1	A0A8I6AA06	3	18	Pygopus family PHD finger 1
-PYGO2	mus-musculus	Q80V76	Pygo2	Q80V76	5	19	Pygopus 2
-PYGO2	rattus-norvegicus	B5DFG8	Pygo2	B5DFG8	3	21	Pygopus family PHD finger 2
+PYG7	arabidopsis-thaliana	B9DHG0	PYG7	B9DHG0	0	1	Tetratricopeptide repeat domain-containing protein PYG7, chl	
+PYGB	human	P11216	PYGB	P11216	4	154	Glycogen phosphorylase, brain form (EC 2.4.1.1)	
+PYGB	mus-musculus	Q8CI94	Pygb	Q8CI94	0	15	Glycogen phosphorylase, brain form	
+PYGB	rattus-norvegicus	P53534	Pygb	P53534	1	6	Glycogen phosphorylase, brain form	
+PYGB_HUMAN	human	P11216	PYGB	P11216	4	154		
+PYGL	human	P06737	PYGL	P06737	3	129	Glycogen phosphorylase, liver form (EC 2.4.1.1)	
+PYGL	mus-musculus	Q9ET01	Pygl	Q9ET01	1	23	Glycogen phosphorylase, liver form	
+PYGL	rattus-norvegicus	P09811	Pygl	P09811	0	9	Glycogen phosphorylase, liver form	
+PYGL	zebrafish	A0AB13A8T7	pygl	A0AB13A8T7	0	2	Alpha-1,4 glucan phosphorylase	
+PYGL-1	worm	Q9N5U1	pygl-1	Q9N5U1	0	17	Alpha-1,4 glucan phosphorylase	
+PYGL_HUMAN	human	P06737	PYGL	P06737	3	129		
+PYGM	human	P11217	PYGM	P11217	6	103	Glycogen phosphorylase, muscle form (EC 2.4.1.1) (Myophospho	
+PYGM	mus-musculus	Q9WUB3	Pygm	Q9WUB3	0	25	Glycogen phosphorylase, muscle form	
+PYGM	rattus-norvegicus	P09812	Pygm	P09812	1	12	Glycogen phosphorylase, muscle form	
+PYGMA	zebrafish	Q503C7	pygma	Q503C7	1	3	Alpha-1,4 glucan phosphorylase	
+PYGMB	zebrafish	E7EXT3	pygmb	E7EXT3	1	3	Alpha-1,4 glucan phosphorylase	
+PYGM_HUMAN	human	P11217	PYGM	P11217	6	103		
+PYGO	fly	FBgn0043900	pygo	Q9V9W8	80	450	Protein pygopus (Protein gammy legs)	
+PYGO-1	worm	O44447	pygo-1	O44447	0	22	SH3 domain-containing protein	
+PYGO1	human	Q9Y3Y4	PYGO1	Q9Y3Y4	61	387	Pygopus homolog 1	
+PYGO1	mus-musculus	Q9D0P5	Pygo1	Q9D0P5	6	21	Pygopus homolog 1	
+PYGO1	rattus-norvegicus	A0A8I6AA06	Pygo1	A0A8I6AA06	3	18	Pygopus family PHD finger 1	
+PYGO1_HUMAN	human	Q9Y3Y4	PYGO1	Q9Y3Y4	61	387		
+PYGO2	human	Q9BRQ0	PYGO2	Q9BRQ0	69	455	Pygopus homolog 2	
+PYGO2	mus-musculus	Q80V76	Pygo2	Q80V76	5	19	Pygopus 2	
+PYGO2	rattus-norvegicus	B5DFG8	Pygo2	B5DFG8	3	21	Pygopus family PHD finger 2	
+PYGO2	zebrafish	Q1L8T6	pygo2	Q1L8T6	3	51	Pygopus homolog 2 (Drosophila)	
+PYGO2_HUMAN	human	Q9BRQ0	PYGO2	Q9BRQ0	69	455		
+PYGOPUS	fly	FBgn0043900	pygo	Q9V9W8	80	450	Protein pygopus (Protein gammy legs)	w
+PYGOPUS	human	Q9BRQ0	PYGO2	Q9BRQ0	69	455	Pygopus homolog 2	w
+PYGOPUS	human	Q9Y3Y4	PYGO1	Q9Y3Y4	61	387	Pygopus homolog 1	w
+PYGOPUS	zebrafish	Q1L8T6	pygo2	Q1L8T6	3	51	Pygopus homolog 2 (Drosophila)	w

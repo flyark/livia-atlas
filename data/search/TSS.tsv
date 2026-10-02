@@ -1,20 +1,54 @@
-TSSA1	pseudomonas-aeruginosa	Q9I750	tssA1	Q9I750	0	10	Type VI secretion system component TssA1
-TSSB1	pseudomonas-aeruginosa	Q9I749	tssB1	Q9I749	4	8	Type VI secretion system sheath protein TssB1
-TSSC1	pseudomonas-aeruginosa	Q9I748	tssC1	Q9I748	3	14	Type VI secretion system sheath protein TssC1
-TSSC4	mus-musculus	Q9JHE7	Tssc4	Q9JHE7	0	10	U5 small nuclear ribonucleoprotein TSSC4
-TSSC4	rattus-norvegicus	Q5XIB1	Tssc4	Q5XIB1	1	14	U5 small nuclear ribonucleoprotein TSSC4
-TSSE1	pseudomonas-aeruginosa	Q9I745	tssE1	Q9I745	2	29	Type VI secretion system component TssE1
-TSSF1	pseudomonas-aeruginosa	Q9I744	tssF1	Q9I744	0	5	Type VI secretion system component TssF1
-TSSK1	pseudomonas-aeruginosa	Q9I753	tssK1	Q9I753	0	5	Type VI secretion system baseplate component TssK1
-TSSK1B	mus-musculus	Q61241	Tssk1b	Q61241	0	6	Testis-specific serine/threonine-protein kinase 1
-TSSK1B	rattus-norvegicus	Q6V9Y2	Tssk1b	Q6V9Y2	0	5	non-specific serine/threonine protein kinase
-TSSK2	mus-musculus	O54863	Tssk2	O54863	0	7	Testis-specific serine/threonine-protein kinase 2
-TSSK3	mus-musculus	Q9D2E1	Tssk3	Q9D2E1	0	6	Testis-specific serine/threonine-protein kinase 3
-TSSK3	rattus-norvegicus	Q6V9Y3	Tssk3	Q6V9Y3	0	5	Testis-specific serine/threonine-protein kinase 3
-TSSK4	mus-musculus	Q9D411	Tssk4	Q9D411	1	10	Testis-specific serine/threonine-protein kinase 4
-TSSK4	rattus-norvegicus	A0A0G2QC55	Tssk4	A0A0G2QC55	0	7	Testis-specific serine/threonine-protein kinase 4
-TSSK5	mus-musculus	Q8C1R0	Tssk5	Q8C1R0	0	8	Testis-specific serine/threonine-protein kinase 5
-TSSK5	rattus-norvegicus	D3ZJ84	Tssk5	D3ZJ84	0	5	non-specific serine/threonine protein kinase
-TSSK6	mus-musculus	Q925K9	Tssk6	Q925K9	0	7	Testis-specific serine/threonine-protein kinase 6
-TSSK6	rattus-norvegicus	D3ZEK4	Tssk6	D3ZEK4	0	7	Testis-specific serine/threonine-protein kinase 6
-TSSM1	pseudomonas-aeruginosa	Q9I755	tssM1	Q9I755	3	7	Type VI secretion system component TssM1
+TSSA	worm	O16649	CELE_T06D4.1	O16649	0	12	Type VI secretion system protein TssA	w
+TSSA1	pseudomonas-aeruginosa	Q9I750	tssA1	Q9I750	0	10	Type VI secretion system component TssA1	
+TSSB1	pseudomonas-aeruginosa	Q9I749	tssB1	Q9I749	4	8	Type VI secretion system sheath protein TssB1	
+TSSC1	human	Q53HC9	EIPR1	Q53HC9	16	115		
+TSSC1	pseudomonas-aeruginosa	Q9I748	tssC1	Q9I748	3	14	Type VI secretion system sheath protein TssC1	
+TSSC3	human	Q53GA4	PHLDA2	Q53GA4	8	123		
+TSSC4	fly	FBgn0036063	CG6674	Q9VT74	3	19	U5 small nuclear ribonucleoprotein TSSC4	w
+TSSC4	human	Q9Y5U2	TSSC4	Q9Y5U2	21	135	U5 small nuclear ribonucleoprotein TSSC4 (Tumor-suppressing 	
+TSSC4	mus-musculus	Q9JHE7	Tssc4	Q9JHE7	0	10	U5 small nuclear ribonucleoprotein TSSC4	
+TSSC4	rattus-norvegicus	Q5XIB1	Tssc4	Q5XIB1	1	14	U5 small nuclear ribonucleoprotein TSSC4	
+TSSC4	worm	G5EDE0	CELE_F57A8.1	G5EDE0	0	3	Protein TSSC4	w
+TSSC4	zebrafish	Q0P4A6	tssc4	Q0P4A6	0	18	U5 small nuclear ribonucleoprotein TSSC4	w
+TSSC4	zebrafish	Q0P4A6	tssc4	Q0P4A6	0	18	U5 small nuclear ribonucleoprotein TSSC4	w
+TSSC4_HUMAN	human	Q9Y5U2	TSSC4	Q9Y5U2	21	135		
+TSSC5	human	Q96BI1	SLC67A1	Q96BI1	10	129		
+TSSC6	human	Q96QS1	TSPAN32	Q96QS1	19	157		
+TSSE1	pseudomonas-aeruginosa	Q9I745	tssE1	Q9I745	2	29	Type VI secretion system component TssE1	
+TSSF1	pseudomonas-aeruginosa	Q9I744	tssF1	Q9I744	0	5	Type VI secretion system component TssF1	
+TSSK	fly	FBgn0038630	Tssk	Q9VE58	319	1106	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+TSSK-1	human	Q9BXA7	TSSK1B	Q9BXA7	307	1305	Testis-specific serine/threonine-protein kinase 1 (TSK-1) (T	w
+TSSK-2	human	Q96PF2	TSSK2	Q96PF2	220	1158	Testis-specific serine/threonine-protein kinase 2 (TSK-2) (T	w
+TSSK-3	human	Q96PN8	TSSK3	Q96PN8	274	1261	Testis-specific serine/threonine-protein kinase 3 (TSK-3) (T	w
+TSSK-4	human	Q6SA08	TSSK4	Q6SA08	194	1254	Testis-specific serine/threonine-protein kinase 4 (TSK-4) (T	w
+TSSK-6	human	Q9BXA6	TSSK6	Q9BXA6	394	1254	Testis-specific serine/threonine-protein kinase 6 (TSK-6) (T	w
+TSSK1	human	Q9BXA7	TSSK1B	Q9BXA7	307	1305		
+TSSK1	pseudomonas-aeruginosa	Q9I753	tssK1	Q9I753	0	5	Type VI secretion system baseplate component TssK1	
+TSSK1B	human	Q9BXA7	TSSK1B	Q9BXA7	307	1305	Testis-specific serine/threonine-protein kinase 1 (TSK-1) (T	
+TSSK1B	mus-musculus	Q61241	Tssk1b	Q61241	0	6	Testis-specific serine/threonine-protein kinase 1	
+TSSK1B	rattus-norvegicus	Q6V9Y2	Tssk1b	Q6V9Y2	0	5	non-specific serine/threonine protein kinase	
+TSSK1_HUMAN	human	Q9BXA7	TSSK1B	Q9BXA7	307	1305		
+TSSK2	fly	FBgn0031784	Tssk2	Q8T4D4	246	1103	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+TSSK2	human	Q96PF2	TSSK2	Q96PF2	220	1158	Testis-specific serine/threonine-protein kinase 2 (TSK-2) (T	
+TSSK2	mus-musculus	O54863	Tssk2	O54863	0	7	Testis-specific serine/threonine-protein kinase 2	
+TSSK2_HUMAN	human	Q96PF2	TSSK2	Q96PF2	220	1158		
+TSSK3	human	Q96PN8	TSSK3	Q96PN8	274	1261	Testis-specific serine/threonine-protein kinase 3 (TSK-3) (T	
+TSSK3	mus-musculus	Q9D2E1	Tssk3	Q9D2E1	0	6	Testis-specific serine/threonine-protein kinase 3	
+TSSK3	rattus-norvegicus	Q6V9Y3	Tssk3	Q6V9Y3	0	5	Testis-specific serine/threonine-protein kinase 3	
+TSSK3_HUMAN	human	Q96PN8	TSSK3	Q96PN8	274	1261		
+TSSK4	human	Q6SA08	TSSK4	Q6SA08	194	1254	Testis-specific serine/threonine-protein kinase 4 (TSK-4) (T	
+TSSK4	mus-musculus	Q9D411	Tssk4	Q9D411	1	10	Testis-specific serine/threonine-protein kinase 4	
+TSSK4	rattus-norvegicus	A0A0G2QC55	Tssk4	A0A0G2QC55	0	7	Testis-specific serine/threonine-protein kinase 4	
+TSSK4_HUMAN	human	Q6SA08	TSSK4	Q6SA08	194	1254		
+TSSK5	human	Q6SA08	TSSK4	Q6SA08	194	1254		
+TSSK5	mus-musculus	Q8C1R0	Tssk5	Q8C1R0	0	8	Testis-specific serine/threonine-protein kinase 5	
+TSSK5	rattus-norvegicus	D3ZJ84	Tssk5	D3ZJ84	0	5	non-specific serine/threonine protein kinase	
+TSSK6	human	Q9BXA6	TSSK6	Q9BXA6	394	1254	Testis-specific serine/threonine-protein kinase 6 (TSK-6) (T	
+TSSK6	mus-musculus	Q925K9	Tssk6	Q925K9	0	7	Testis-specific serine/threonine-protein kinase 6	
+TSSK6	rattus-norvegicus	D3ZEK4	Tssk6	D3ZEK4	0	7	Testis-specific serine/threonine-protein kinase 6	
+TSSK6	zebrafish	Q1LVI1	tssk6	Q1LVI1	13	74	Serine/threonine-protein (EC 2.7.11.1)	
+TSSK6-ACTIVATING	human	Q96A04	TSACC	Q96A04	12	56	TSSK6-activating co-chaperone protein (SSTK-interacting prot	w
+TSSK6_HUMAN	human	Q9BXA6	TSSK6	Q9BXA6	394	1254		
+TSSM1	pseudomonas-aeruginosa	Q9I755	tssM1	Q9I755	3	7	Type VI secretion system component TssM1	
+TSSP	human	Q9NQE7	PRSS16	Q9NQE7	8	68		
+TSSP_HUMAN	human	Q9NQE7	PRSS16	Q9NQE7	8	68		

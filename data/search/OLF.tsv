@@ -1,17 +1,564 @@
-OLFM1	mus-musculus	O88998	Olfm1	O88998	6	53	Noelin
-OLFM1	rattus-norvegicus	Q62609	Olfm1	Q62609	4	52	Noelin
-OLFM2	mus-musculus	Q8BM13	Olfm2	Q8BM13	4	45	Noelin-2
-OLFM2	rattus-norvegicus	Q568Y7	Olfm2	Q568Y7	4	45	Noelin-2
-OLFM3	mus-musculus	P63056	Olfm3	P63056	4	46	Noelin-3
-OLFM3	rattus-norvegicus	P63057	Olfm3	P63057	4	46	Noelin-3
-OLFM4	mus-musculus	Q3UZZ4	Olfm4	Q3UZZ4	0	10	Olfactomedin-4
-OLFM4	rattus-norvegicus	D3ZMI6	Olfm4	D3ZMI6	0	10	Olfactomedin 4
-OLFM5	mus-musculus	Q8BU90	Olfm5	Q8BU90	0	4	Olfactomedin 5
-OLFM5	rattus-norvegicus	D3Z8Z4	Olfm5	D3Z8Z4	0	5	Olfactomedin 5
-OLFML1	rattus-norvegicus	Q66H86	Olfml1	Q66H86	0	1	Olfactomedin-like protein 1
-OLFML2A	mus-musculus	Q8BHP7	Olfml2a	Q8BHP7	0	1	Olfactomedin-like protein 2A
-OLFML2A	rattus-norvegicus	D3ZMR0	Olfml2a	D3ZMR0	1	1	Olfactomedin-like 2A
-OLFML2B	rattus-norvegicus	D4A0J7	Olfml2b	D4A0J7	0	1	Olfactomedin-like 2B
-OLFML3	mus-musculus	Q8BK62	Olfml3	Q8BK62	0	1	Olfactomedin-like protein 3
-OLFML3	rattus-norvegicus	B0BNI5	Olfml3	B0BNI5	0	2	Olfactomedin-like protein 3
-OLFR1	rattus-norvegicus	P70526	Olfr1	P70526	0	3	Olfactory receptor 1
+OLF-1	human	Q9BQW3	EBF4	Q9BQW3	9	34	Transcription factor COE4 (Early B-cell factor 4) (EBF-4) (O	w
+OLF-1	human	Q9H4W6	EBF3	Q9H4W6	84	377	Transcription factor COE3 (Early B-cell factor 3) (EBF-3) (O	w
+OLF-INTERACTING	human	Q2M1K9	ZNF423	Q2M1K9	12	80	Zinc finger protein 423 (Olf1/EBF-associated zinc finger pro	w
+OLF1	human	Q13606	OR5I1	Q13606	3	42		
+OLF1	human	Q2M1K9	ZNF423	Q2M1K9	12	80	Zinc finger protein 423 (Olf1/EBF-associated zinc finger pro	w
+OLF186-F	fly	FBgn0041585	Orai	Q9U6B8	1	22		
+OLF186-M	fly	FBgn0015522	olf186-M	Q7JRH7	0	2	M protein (Olf186-M) (RE27327p)	w
+OLF186-M	fly	FBgn0015522	olf186-M	Q7JRH7	0	2	M protein (Olf186-M) (RE27327p)	w
+OLF3	human	Q13607	OR2F1	Q13607	4	38		
+OLF413	fly	FBgn0037153	olf413	Q6NP60	31	249	MOXD1 homolog 2	
+OLFAC	human	P58173	OR2B6	P58173	1	21	Olfactory receptor 2B6 (Hs6M1-32) (Olfactory receptor 2B1) (	w
+OLFACTIVE	human	O60266	ADCY3	O60266	19	134	Adenylate cyclase type 3 (EC 4.6.1.1) (ATP pyrophosphate-lya	w
+OLFACTOMEDIN	worm	G5EBT7	cof-2	G5EBT7	1	3	Collagen/olfactomedin domain containing protein 2	w
+OLFACTOMEDIN	zebrafish	A2AWU1	olfm1a	A2AWU1	0	1	Olfactomedin 1a	w
+OLFACTOMEDIN	zebrafish	B7ZD15	olfm1b	B7ZD15	0	1	Olfactomedin 1b	w
+OLFACTOMEDIN-1	human	Q99784	OLFM1	Q99784	21	137	Noelin (Neuronal olfactomedin-related ER localized protein) 	w
+OLFACTOMEDIN-2	human	O95897	OLFM2	O95897	28	187	Noelin-2 (Olfactomedin-2)	w
+OLFACTOMEDIN-3	human	Q96PB7	OLFM3	Q96PB7	24	235	Noelin-3 (Olfactomedin-3) (Optimedin)	w
+OLFACTOMEDIN-4	human	Q6UX06	OLFM4	Q6UX06	19	220	Olfactomedin-4 (OLM4) (Antiapoptotic protein GW112) (G-CSF-s	w
+OLFACTOMEDIN-4	zebrafish	A0A8M6Z4H1	si:ch211-194m7.8	A0A8M6Z4H1	0	2	Olfactomedin-4	w
+OLFACTOMEDIN-LIKE	human	Q68BL7	OLFML2A	Q68BL7	8	40	Olfactomedin-like protein 2A (Photomedin-1)	w
+OLFACTOMEDIN-LIKE	human	Q68BL8	OLFML2B	Q68BL8	8	43	Olfactomedin-like protein 2B (Photomedin-2)	w
+OLFACTOMEDIN-LIKE	human	Q6UWY5	OLFML1	Q6UWY5	7	29	Olfactomedin-like protein 1	w
+OLFACTOMEDIN-LIKE	human	Q9NRN5	OLFML3	Q9NRN5	18	139	Olfactomedin-like protein 3 (HNOEL-iso) (hOLF44)	w
+OLFACTOMEDIN-RELATED	human	Q99784	OLFM1	Q99784	21	137	Noelin (Neuronal olfactomedin-related ER localized protein) 	w
+OLFACTORIN	human	Q5DID0	UMODL1	Q5DID0	6	79	Uromodulin-like 1 (Olfactorin)	w
+OLFACTORY	fly	FBgn0003270	amos	Q9Y0A7	65	392	Basic helix-loop-helix transcription factor amos (Absent MD 	w
+OLFACTORY	human	A0A096LPK9	OR4N4C	A0A096LPK9	1	30	Olfactory receptor 4N4C	w
+OLFACTORY	human	A0A0X1KG70	OR4M2B	A0A0X1KG70	1	35	Olfactory receptor 4M2B	w
+OLFACTORY	human	A0A126GWS4	OR2J2	A0A126GWS4	0	3	Olfactory receptor	w
+OLFACTORY	human	A3KFT3	OR2M5	A3KFT3	1	50	Olfactory receptor 2M5	w
+OLFACTORY	human	A4D2G3	OR2A25	A4D2G3	1	33	Olfactory receptor 2A25 (Olfactory receptor 2A27)	w
+OLFACTORY	human	A6NCV1	OR6C74	A6NCV1	1	18	Olfactory receptor 6C74	w
+OLFACTORY	human	A6ND48	OR14I1	A6ND48	3	27	Olfactory receptor 14I1 (Olfactory receptor 5BU1)	w
+OLFACTORY	human	A6NDH6	OR5H15	A6NDH6	1	27	Olfactory receptor 5H15	w
+OLFACTORY	human	A6NDL8	OR6C68	A6NDL8	1	11	Olfactory receptor 6C68	w
+OLFACTORY	human	A6NET4	OR5K3	A6NET4	2	17	Olfactory receptor 5K3	w
+OLFACTORY	human	A6NF89	OR6C6	A6NF89	2	18	Olfactory receptor 6C6	w
+OLFACTORY	human	A6NFC9	OR2W5	A6NFC9	1	3	Putative olfactory receptor 2W5	w
+OLFACTORY	human	A6NGY5	OR51F1	A6NGY5	3	39	Olfactory receptor 51F1	w
+OLFACTORY	human	A6NH00	OR2T8	A6NH00	1	34	Olfactory receptor 2T8	w
+OLFACTORY	human	A6NHA9	OR4C46	A6NHA9	3	38	Olfactory receptor 4C46	w
+OLFACTORY	human	A6NHG9	OR5H14	A6NHG9	1	31	Olfactory receptor 5H14	w
+OLFACTORY	human	A6NIJ9	OR6C70	A6NIJ9	1	20	Olfactory receptor 6C70	w
+OLFACTORY	human	A6NJZ3	OR6C65	A6NJZ3	1	25	Olfactory receptor 6C65	w
+OLFACTORY	human	A6NKK0	OR5H1	A6NKK0	2	23	Olfactory receptor 5H1 (HTPCRX14)	w
+OLFACTORY	human	A6NL08	OR6C75	A6NL08	1	18	Olfactory receptor 6C75	w
+OLFACTORY	human	A6NL26	OR5B21	A6NL26	1	19	Olfactory receptor 5B21	w
+OLFACTORY	human	A6NM03	OR2AG2	A6NM03	1	18	Olfactory receptor 2AG2	w
+OLFACTORY	human	A6NM76	OR6C76	A6NM76	1	20	Olfactory receptor 6C76	w
+OLFACTORY	human	A6NMS3	OR5K4	A6NMS3	2	12	Olfactory receptor 5K4	w
+OLFACTORY	human	A6NMU1	OR52A4P	A6NMU1	1	3	Olfactory receptor 52A4	w
+OLFACTORY	human	A6NMZ5	OR4C45	A6NMZ5	1	29	Olfactory receptor 4C45	w
+OLFACTORY	human	A6NND4	OR2AT4	A6NND4	5	30	Olfactory receptor 2AT4 (Olfactory receptor OR11-265)	w
+OLFACTORY	human	B2RN74	OR11H12	B2RN74	1	33	Olfactory receptor 11H12	w
+OLFACTORY	human	I3L273	GFY	I3L273	8	112	Golgi-associated olfactory signaling regulator (Golgi protei	w
+OLFACTORY	human	O14581	OR7A17	O14581	1	15	Olfactory receptor 7A17	w
+OLFACTORY	human	O43749	OR1F1	O43749	2	11	Olfactory receptor 1F1 (Olfactory receptor 16-35) (OR16-35) 	w
+OLFACTORY	human	O43869	OR2T1	O43869	8	95	Olfactory receptor 2T1 (Olfactory receptor 1-25) (OR1-25) (O	w
+OLFACTORY	human	O60403	OR10H2	O60403	7	104	Olfactory receptor 10H2 (Olfactory receptor OR19-23)	w
+OLFACTORY	human	O60404	OR10H3	O60404	2	23	Olfactory receptor 10H3 (Olfactory receptor OR19-24)	w
+OLFACTORY	human	O60412	OR7C2	O60412	3	17	Olfactory receptor 7C2 (Olfactory receptor 19-18) (OR19-18) 	w
+OLFACTORY	human	O60431	OR1I1	O60431	0	17	Olfactory receptor 1I1 (Olfactory receptor 19-20) (OR19-20)	w
+OLFACTORY	human	O76000	OR2B3	O76000	1	29	Putative olfactory receptor 2B3 (Hs6M1-1) (Olfactory recepto	w
+OLFACTORY	human	O76001	OR2J3	O76001	2	45	Olfactory receptor 2J3 (Hs6M1-3) (Olfactory receptor OR6-16)	w
+OLFACTORY	human	O76002	OR2J2	O76002	2	33	Olfactory receptor 2J2 (Hs6M1-6) (Olfactory receptor 6-8) (O	w
+OLFACTORY	human	O76099	OR7C1	O76099	1	25	Olfactory receptor 7C1 (Olfactory receptor 7C4) (Olfactory r	w
+OLFACTORY	human	O76100	OR7A10	O76100	5	18	Olfactory receptor 7A10 (OST027) (Olfactory receptor OR19-18	w
+OLFACTORY	human	O95006	OR2F2	O95006	0	45	Olfactory receptor 2F2 (Olfactory receptor 7-1) (OR7-1) (Olf	w
+OLFACTORY	human	O95007	OR6B1	O95007	1	44	Olfactory receptor 6B1 (Olfactory receptor 7-3) (OR7-3) (Olf	w
+OLFACTORY	human	O95013	OR4F21	O95013	1	49	Olfactory receptor 4F21	w
+OLFACTORY	human	O95047	OR2A4	O95047	9	160	Olfactory receptor 2A4 (Olfactory receptor 2A10) (Olfactory 	w
+OLFACTORY	human	O95221	OR5F1	O95221	3	36	Olfactory receptor 5F1 (Olfactory receptor 11-10) (OR11-10) 	w
+OLFACTORY	human	O95222	OR6A2	O95222	5	39	Olfactory receptor 6A2 (Olfactory receptor 11-55) (OR11-55) 	w
+OLFACTORY	human	O95371	OR2C1	O95371	3	82	Olfactory receptor 2C1 (OLFmf3) (Olfactory receptor 2C2) (Ol	w
+OLFACTORY	human	O95918	OR2H2	O95918	3	28	Olfactory receptor 2H2 (Hs6M1-12) (Olfactory receptor 2H3) (	w
+OLFACTORY	human	P0C604	OR4A8	P0C604	3	37	Olfactory receptor 4A8 (Olfactory receptor OR11-110)	w
+OLFACTORY	human	P0C617	OR5AL1	P0C617	1	25	Olfactory receptor 5AL1 (Olfactory receptor OR11-184)	w
+OLFACTORY	human	P0C623	OR4Q2	P0C623	3	61	Olfactory receptor 4Q2 (olfactory receptor OR14-21)	w
+OLFACTORY	human	P0C626	OR5G3	P0C626	1	8	Olfactory receptor 5G3 (Olfactory receptor 5G6) (Olfactory r	w
+OLFACTORY	human	P0C628	OR5AC1	P0C628	0	28	Olfactory receptor 5AC1 (Olfactory receptor OR3-2)	w
+OLFACTORY	human	P0C629	OR10J4	P0C629	1	14	Olfactory receptor 10J4	w
+OLFACTORY	human	P0C645	OR4E1	P0C645	2	23	Olfactory receptor 4E1 (Olfactory receptor OR14-43)	w
+OLFACTORY	human	P0C646	OR52Z1	P0C646	2	37	Olfactory receptor 52Z1	w
+OLFACTORY	human	P0C7N1	OR8U8	P0C7N1	1	26	Olfactory receptor 8U8	w
+OLFACTORY	human	P0C7N5	OR8U9	P0C7N5	1	20	Olfactory receptor 8U9	w
+OLFACTORY	human	P0C7N8	OR9G9	P0C7N8	2	5	Olfactory receptor 9G9	w
+OLFACTORY	human	P0C7T2	OR2T7	P0C7T2	1	26	Olfactory receptor 2T7 (OST723) (olfactory receptor OR1-44)	w
+OLFACTORY	human	P0C7T3	OR56A5	P0C7T3	1	35	Olfactory receptor 56A5	w
+OLFACTORY	human	P0DMU2	OR8G3	P0DMU2	1	20	Olfactory receptor 8G3 (Olfactory receptor OR11-297)	w
+OLFACTORY	human	P0DN80	OR5H8	P0DN80	1	21	Olfactory receptor 5H8 (Olfactory receptor 5H8 pseudogene) (	w
+OLFACTORY	human	P0DN81	OR13C7	P0DN81	3	15	Olfactory receptor 13C7	w
+OLFACTORY	human	P0DN82	OR12D1	P0DN82	0	11	Olfactory receptor 12D1	w
+OLFACTORY	human	P30953	OR1E1	P30953	2	40	Olfactory receptor 1E1 (Olfactory receptor 13-66) (OR13-66) 	w
+OLFACTORY	human	P30954	OR10J1	P30954	2	24	Olfactory receptor 10J1 (Olfactory receptor OR1-26) (Olfacto	w
+OLFACTORY	human	P34982	OR1D2	P34982	2	25	Olfactory receptor 1D2 (Olfactory receptor 17-4) (OR17-4) (O	w
+OLFACTORY	human	P38405	GNAL	P38405	69	257	Guanine nucleotide-binding protein G(olf) subunit alpha (EC 	w
+OLFACTORY	human	P47874	OMP	P47874	1	81	Olfactory marker protein (Olfactory neuronal-specific protei	w
+OLFACTORY	human	P47881	OR3A1	P47881	6	36	Olfactory receptor 3A1 (Olfactory receptor 17-40) (OR17-40) 	w
+OLFACTORY	human	P47883	OR3A4P	P47883	1	12	Putative olfactory receptor 3A4 (Olfactory receptor 17-24) (	w
+OLFACTORY	human	P47884	OR1D4	P47884	1	15	Olfactory receptor 1D4 (Olfactory receptor 17-30) (OR17-30)	w
+OLFACTORY	human	P47887	OR1E2	P47887	2	21	Olfactory receptor 1E2 (Olfactory receptor 17-93/17-135/17-1	w
+OLFACTORY	human	P47888	OR3A3	P47888	1	21	Olfactory receptor 3A3 (Olfactory receptor 17-201) (OR17-201	w
+OLFACTORY	human	P47890	OR1G1	P47890	2	28	Olfactory receptor 1G1 (Olfactory receptor 17-209) (OR17-209	w
+OLFACTORY	human	P47893	OR3A2	P47893	1	27	Olfactory receptor 3A2 (Olfactory receptor 17-228) (OR17-228	w
+OLFACTORY	human	P58170	OR1D5	P58170	1	30	Olfactory receptor 1D5 (Olfactory receptor 17-31) (OR17-31)	w
+OLFACTORY	human	P58173	OR2B6	P58173	1	21	Olfactory receptor 2B6 (Hs6M1-32) (Olfactory receptor 2B1) (	w
+OLFACTORY	human	P58180	OR4D2	P58180	6	45	Olfactory receptor 4D2 (B-lymphocyte membrane protein BC2009	w
+OLFACTORY	human	P58181	OR10A3	P58181	2	28	Olfactory receptor 10A3 (HTPCRX12) (Olfactory receptor OR11-	w
+OLFACTORY	human	P58182	OR12D2	P58182	1	18	Olfactory receptor 12D2 (Hs6M1-20) (Olfactory receptor OR6-2	w
+OLFACTORY	human	P59922	OR2B8	P59922	1	15	Olfactory receptor 2B8 (Hs6M1-29P)	w
+OLFACTORY	human	Q13606	OR5I1	Q13606	3	42	Olfactory receptor 5I1 (Olfactory receptor OR11-159) (Olfact	w
+OLFACTORY	human	Q13607	OR2F1	Q13607	4	38	Olfactory receptor 2F1 (Olfactory receptor 2F3) (Olfactory r	w
+OLFACTORY	human	Q15612	OR1Q1	Q15612	1	30	Olfactory receptor 1Q1 (OST226) (Olfactory receptor 1Q2) (Ol	w
+OLFACTORY	human	Q15615	OR4D1	Q15615	2	65	Olfactory receptor 4D1 (Olfactory receptor 4D3) (Olfactory r	w
+OLFACTORY	human	Q15617	OR8G1	Q15617	3	44	Olfactory receptor 8G1 (Olfactory receptor OR11-281) (Olfact	w
+OLFACTORY	human	Q15619	OR1C1	Q15619	4	31	Olfactory receptor 1C1 (Olfactory receptor OR1-42) (Olfactor	w
+OLFACTORY	human	Q15620	OR8B8	Q15620	2	30	Olfactory receptor 8B8 (Olfactory receptor TPCR85) (Olfactor	w
+OLFACTORY	human	Q15622	OR7A5	Q15622	5	22	Olfactory receptor 7A5 (Olfactory receptor OR19-17) (Olfacto	w
+OLFACTORY	human	Q16280	CNGA2	Q16280	11	74	Cyclic nucleotide-gated channel alpha-2 (CNG channel alpha-2	w
+OLFACTORY	human	Q5JQS5	OR2B11	Q5JQS5	1	42	Olfactory receptor 2B11	w
+OLFACTORY	human	Q5JRS4	OR10J3	Q5JRS4	1	4	Olfactory receptor 10J3	w
+OLFACTORY	human	Q5TZ20	OR2G6	Q5TZ20	3	37	Olfactory receptor 2G6	w
+OLFACTORY	human	Q6IEU7	OR5M10	Q6IEU7	1	52	Olfactory receptor 5M10 (Olfactory receptor OR11-207)	w
+OLFACTORY	human	Q6IEV9	OR4C11	Q6IEV9	1	28	Olfactory receptor 4C11 (Olfactory receptor OR11-136)	w
+OLFACTORY	human	Q6IEY1	OR4F3	Q6IEY1	0	49	Olfactory receptor 4F3/4F16/4F29 (Olfactory receptor OR1-1)	w
+OLFACTORY	human	Q6IEZ7	OR2T5	Q6IEZ7	2	37	Olfactory receptor 2T5 (Olfactory receptor OR1-62)	w
+OLFACTORY	human	Q6IF00	OR2T2	Q6IF00	2	35	Olfactory receptor 2T2 (Olfactory receptor OR1-43)	w
+OLFACTORY	human	Q6IF36	OR8G2P	Q6IF36	1	13	Olfactory receptor 8G2 (Olfactory receptor 8G4) (Olfactory r	w
+OLFACTORY	human	Q6IF42	OR2A2	Q6IF42	2	39	Olfactory receptor 2A2 (Olfactory receptor 2A17) (Olfactory 	w
+OLFACTORY	human	Q6IF63	OR52W1	Q6IF63	2	30	Olfactory receptor 52W1 (Olfactory receptor OR11-71)	w
+OLFACTORY	human	Q6IF82	OR4A47	Q6IF82	2	81	Olfactory receptor 4A47 (Olfactory receptor OR11-113)	w
+OLFACTORY	human	Q6IF99	OR10K2	Q6IF99	3	24	Olfactory receptor 10K2 (Olfactory receptor OR1-4)	w
+OLFACTORY	human	Q6IFG1	OR52E8	Q6IFG1	7	63	Olfactory receptor 52E8 (Olfactory receptor OR11-54)	w
+OLFACTORY	human	Q6IFH4	OR6B2	Q6IFH4	2	41	Olfactory receptor 6B2 (Olfactory receptor OR2-1)	w
+OLFACTORY	human	Q6IFN5	OR7E24	Q6IFN5	3	24	Olfactory receptor 7E24 (Olfactory receptor OR19-14)	w
+OLFACTORY	human	Q7Z3T1	OR2W3	Q7Z3T1	2	47	Olfactory receptor 2W3 (Olfactory receptor 2W8) (Olfactory r	w
+OLFACTORY	human	Q8IV77	CNGA4	Q8IV77	27	133	Cyclic nucleotide-gated channel alpha-4 (CNG channel alpha-4	w
+OLFACTORY	human	Q8IXE1	OR4N5	Q8IXE1	1	42	Olfactory receptor 4N5 (Olfactory receptor OR14-33)	w
+OLFACTORY	human	Q8N0Y3	OR4N4	Q8N0Y3	2	35	Olfactory receptor 4N4 (Olfactory receptor OR15-1) (Olfactor	w
+OLFACTORY	human	Q8N0Y5	OR8I2	Q8N0Y5	1	31	Olfactory receptor 8I2 (Olfactory receptor OR11-170)	w
+OLFACTORY	human	Q8N127	OR5AS1	Q8N127	1	21	Olfactory receptor 5AS1 (Olfactory receptor OR11-168)	w
+OLFACTORY	human	Q8N146	OR8H3	Q8N146	2	59	Olfactory receptor 8H3 (Olfactory receptor OR11-172)	w
+OLFACTORY	human	Q8N148	OR6V1	Q8N148	2	17	Olfactory receptor 6V1 (Olfactory receptor OR7-3)	w
+OLFACTORY	human	Q8N162	OR8H2	Q8N162	1	32	Olfactory receptor 8H2 (Olfactory receptor OR11-171)	w
+OLFACTORY	human	Q8N349	OR2L13	Q8N349	5	64	Olfactory receptor 2L13 (Olfactory receptor 2L14)	w
+OLFACTORY	human	Q8N628	OR2C3	Q8N628	2	19	Olfactory receptor 2C3 (Olfactory receptor 2C4) (Olfactory r	w
+OLFACTORY	human	Q8NG75	OR5T1	Q8NG75	2	18	Olfactory receptor 5T1 (Olfactory receptor OR11-179)	w
+OLFACTORY	human	Q8NG76	OR2T33	Q8NG76	2	20	Olfactory receptor 2T33 (Olfactory receptor OR1-56)	w
+OLFACTORY	human	Q8NG77	OR2T12	Q8NG77	3	35	Olfactory receptor 2T12 (Olfactory receptor OR1-57)	w
+OLFACTORY	human	Q8NG78	OR8G5	Q8NG78	2	10	Olfactory receptor 8G5 (Olfactory receptor 8G6) (Olfactory r	w
+OLFACTORY	human	Q8NG80	OR2L5	Q8NG80	2	49	Olfactory receptor 2L5 (Olfactory receptor 2L11) (Olfactory 	w
+OLFACTORY	human	Q8NG81	OR2M7	Q8NG81	3	57	Olfactory receptor 2M7 (Olfactory receptor OR1-58)	w
+OLFACTORY	human	Q8NG83	OR2M3	Q8NG83	1	60	Olfactory receptor 2M3 (Olfactory receptor 2M6) (Olfactory r	w
+OLFACTORY	human	Q8NG84	OR2AK2	Q8NG84	2	41	Olfactory receptor 2AK2 (Olfactory receptor 2AK1) (Olfactory	w
+OLFACTORY	human	Q8NG85	OR2L3	Q8NG85	1	50	Olfactory receptor 2L3	w
+OLFACTORY	human	Q8NG92	OR13H1	Q8NG92	4	27	Olfactory receptor 13H1 (Olfactory receptor ORX-1)	w
+OLFACTORY	human	Q8NG94	OR11H1	Q8NG94	1	18	Olfactory receptor 11H1 (Olfactory receptor OR22-1)	w
+OLFACTORY	human	Q8NG95	OR7G3	Q8NG95	1	19	Olfactory receptor 7G3 (OST085) (Olfactory receptor OR19-9)	w
+OLFACTORY	human	Q8NG97	OR2Z1	Q8NG97	1	13	Olfactory receptor 2Z1 (Olfactory receptor 2Z2) (Olfactory r	w
+OLFACTORY	human	Q8NG98	OR7D4	Q8NG98	3	50	Olfactory receptor 7D4 (OR19-B) (Odorant receptor family sub	w
+OLFACTORY	human	Q8NG99	OR7G2	Q8NG99	1	15	Olfactory receptor 7G2 (OST260) (Olfactory receptor 19-13) (	w
+OLFACTORY	human	Q8NGA0	OR7G1	Q8NGA0	1	13	Olfactory receptor 7G1 (Olfactory receptor 19-15) (OR19-15) 	w
+OLFACTORY	human	Q8NGA1	OR1M1	Q8NGA1	2	46	Olfactory receptor 1M1 (Olfactory receptor 19-6) (OR19-6) (O	w
+OLFACTORY	human	Q8NGA2	OR7A2P	Q8NGA2	2	8	Putative olfactory receptor 7A2 (Putative olfactory receptor	w
+OLFACTORY	human	Q8NGA5	OR10H4	Q8NGA5	1	16	Olfactory receptor 10H4 (Olfactory receptor OR19-28)	w
+OLFACTORY	human	Q8NGA6	OR10H5	Q8NGA6	2	18	Olfactory receptor 10H5 (Olfactory receptor OR19-25) (Olfact	w
+OLFACTORY	human	Q8NGA8	OR4F17	Q8NGA8	1	68	Olfactory receptor 4F17 (Olfactory receptor 4F11) (Olfactory	w
+OLFACTORY	human	Q8NGB2	OR4C5	Q8NGB2	1	10	Olfactory receptor 4C5 (Olfactory receptor OR11-99)	w
+OLFACTORY	human	Q8NGB4	OR4S1	Q8NGB4	1	24	Olfactory receptor 4S1 (Olfactory receptor OR11-100)	w
+OLFACTORY	human	Q8NGB6	OR4M2	Q8NGB6	2	25	Olfactory receptor 4M2 (Olfactory receptor OR15-3)	w
+OLFACTORY	human	Q8NGB8	OR4F15	Q8NGB8	3	43	Olfactory receptor 4F15 (Olfactory receptor OR15-14)	w
+OLFACTORY	human	Q8NGB9	OR4F6	Q8NGB9	1	34	Olfactory receptor 4F6 (Olfactory receptor 4F12) (Olfactory 	w
+OLFACTORY	human	Q8NGC0	OR5AU1	Q8NGC0	2	31	Olfactory receptor 5AU1 (Olfactory receptor OR14-38)	w
+OLFACTORY	human	Q8NGC1	OR11G2	Q8NGC1	2	11	Olfactory receptor 11G2 (Olfactory receptor OR14-34)	w
+OLFACTORY	human	Q8NGC2	OR4E2	Q8NGC2	1	37	Olfactory receptor 4E2 (Olfactory receptor OR14-42)	w
+OLFACTORY	human	Q8NGC3	OR10G2	Q8NGC3	1	36	Olfactory receptor 10G2	w
+OLFACTORY	human	Q8NGC4	OR10G3	Q8NGC4	1	32	Olfactory receptor 10G3 (Olfactory receptor OR14-40)	w
+OLFACTORY	human	Q8NGC5	OR6J1	Q8NGC5	2	9	Olfactory receptor 6J1 (Olfactory receptor 6J2)	w
+OLFACTORY	human	Q8NGC6	OR4K17	Q8NGC6	3	79	Olfactory receptor 4K17 (Olfactory receptor OR14-29)	w
+OLFACTORY	human	Q8NGC7	OR11H6	Q8NGC7	3	39	Olfactory receptor 11H6 (Olfactory receptor OR14-35)	w
+OLFACTORY	human	Q8NGC8	OR11H7	Q8NGC8	1	15	Olfactory receptor 11H7 (Olfactory receptor OR14-32)	w
+OLFACTORY	human	Q8NGC9	OR11H4	Q8NGC9	2	30	Olfactory receptor 11H4 (Olfactory receptor OR14-36)	w
+OLFACTORY	human	Q8NGD0	OR4M1	Q8NGD0	1	82	Olfactory receptor 4M1 (Olfactory receptor OR14-7)	w
+OLFACTORY	human	Q8NGD1	OR4N2	Q8NGD1	4	69	Olfactory receptor 4N2 (Olfactory receptor OR14-13) (Olfacto	w
+OLFACTORY	human	Q8NGD2	OR4K2	Q8NGD2	4	49	Olfactory receptor 4K2 (Olfactory receptor OR14-15)	w
+OLFACTORY	human	Q8NGD3	OR4K5	Q8NGD3	1	43	Olfactory receptor 4K5 (Olfactory receptor OR14-16)	w
+OLFACTORY	human	Q8NGD4	OR4K1	Q8NGD4	4	60	Olfactory receptor 4K1 (Olfactory receptor OR14-19)	w
+OLFACTORY	human	Q8NGD5	OR4K14	Q8NGD5	2	56	Olfactory receptor 4K14 (Olfactory receptor OR14-22)	w
+OLFACTORY	human	Q8NGE0	OR10AD1	Q8NGE0	2	58	Olfactory receptor 10AD1 (Olfactory receptor OR12-1)	w
+OLFACTORY	human	Q8NGE1	OR6C4	Q8NGE1	3	28	Olfactory receptor 6C4 (Olfactory receptor OR12-10)	w
+OLFACTORY	human	Q8NGE2	OR2AP1	Q8NGE2	1	18	Olfactory receptor 2AP1 (Olfactory receptor OR12-9)	w
+OLFACTORY	human	Q8NGE3	OR10P1	Q8NGE3	2	45	Olfactory receptor 10P1 (Olfactory receptor 10P2) (Olfactory	w
+OLFACTORY	human	Q8NGE5	OR10A7	Q8NGE5	1	40	Olfactory receptor 10A7 (Olfactory receptor OR12-6)	w
+OLFACTORY	human	Q8NGE7	OR9K2	Q8NGE7	2	26	Olfactory receptor 9K2 (Olfactory receptor OR12-2)	w
+OLFACTORY	human	Q8NGE8	OR4D9	Q8NGE8	1	39	Olfactory receptor 4D9 (Olfactory receptor OR11-253)	w
+OLFACTORY	human	Q8NGE9	OR9Q2	Q8NGE9	1	31	Olfactory receptor 9Q2	w
+OLFACTORY	human	Q8NGF0	OR52B6	Q8NGF0	8	37	Olfactory receptor 52B6 (Olfactory receptor OR11-47)	w
+OLFACTORY	human	Q8NGF1	OR52R1	Q8NGF1	1	55	Olfactory receptor 52R1 (Olfactory receptor OR11-22)	w
+OLFACTORY	human	Q8NGF3	OR51D1	Q8NGF3	3	46	Olfactory receptor 51D1 (Olfactory receptor OR11-14)	w
+OLFACTORY	human	Q8NGF4	OR5AP2	Q8NGF4	3	34	Olfactory receptor 5AP2	w
+OLFACTORY	human	Q8NGF6	OR10W1	Q8NGF6	5	163	Olfactory receptor 10W1 (Olfactory receptor OR11-236)	w
+OLFACTORY	human	Q8NGF7	OR5B17	Q8NGF7	1	32	Olfactory receptor 5B17 (Olfactory receptor 5B20) (Olfactory	w
+OLFACTORY	human	Q8NGF8	OR4B1	Q8NGF8	2	61	Olfactory receptor 4B1 (OST208) (Olfactory receptor OR11-106	w
+OLFACTORY	human	Q8NGF9	OR4X2	Q8NGF9	2	29	Olfactory receptor 4X2 (Olfactory receptor OR11-105)	w
+OLFACTORY	human	Q8NGG0	OR8J3	Q8NGG0	1	19	Olfactory receptor 8J3 (Olfactory receptor OR11-173)	w
+OLFACTORY	human	Q8NGG1	OR8J2	Q8NGG1	1	24	Olfactory receptor 8J2	w
+OLFACTORY	human	Q8NGG2	OR5T2	Q8NGG2	1	27	Olfactory receptor 5T2 (Olfactory receptor OR11-177)	w
+OLFACTORY	human	Q8NGG3	OR5T3	Q8NGG3	1	14	Olfactory receptor 5T3 (Olfactory receptor OR11-178)	w
+OLFACTORY	human	Q8NGG4	OR8H1	Q8NGG4	2	48	Olfactory receptor 8H1 (Olfactory receptor OR11-180)	w
+OLFACTORY	human	Q8NGG5	OR8K1	Q8NGG5	2	30	Olfactory receptor 8K1 (Olfactory receptor OR11-182)	w
+OLFACTORY	human	Q8NGG6	OR8B12	Q8NGG6	2	17	Olfactory receptor 8B12 (Olfactory receptor OR11-317)	w
+OLFACTORY	human	Q8NGG7	OR8A1	Q8NGG7	1	21	Olfactory receptor 8A1 (OST025) (Olfactory receptor OR11-318	w
+OLFACTORY	human	Q8NGG8	OR8B3	Q8NGG8	1	28	Olfactory receptor 8B3 (Olfactory receptor OR11-311)	w
+OLFACTORY	human	Q8NGH3	OR2D3	Q8NGH3	2	29	Olfactory receptor 2D3 (Olfactory receptor OR11-89)	w
+OLFACTORY	human	Q8NGH5	OR56A1	Q8NGH5	3	62	Olfactory receptor 56A1 (Olfactory receptor OR11-75)	w
+OLFACTORY	human	Q8NGH6	OR52L2P	Q8NGH6	1	6	Putative olfactory receptor 52L2 (Olfactory receptor OR11-74	w
+OLFACTORY	human	Q8NGH7	OR52L1	Q8NGH7	6	30	Olfactory receptor 52L1 (Olfactory receptor OR11-50)	w
+OLFACTORY	human	Q8NGH8	OR56A4	Q8NGH8	1	24	Olfactory receptor 56A4 (Olfactory receptor OR11-49)	w
+OLFACTORY	human	Q8NGH9	OR52E4	Q8NGH9	2	44	Olfactory receptor 52E4 (Olfactory receptor OR11-55)	w
+OLFACTORY	human	Q8NGI0	OR52N2	Q8NGI0	1	41	Olfactory receptor 52N2 (Olfactory receptor OR11-57)	w
+OLFACTORY	human	Q8NGI1	OR56B2	Q8NGI1	2	16	Olfactory receptor 56B2	w
+OLFACTORY	human	Q8NGI2	OR52N4	Q8NGI2	3	39	Olfactory receptor 52N4 (Olfactory receptor OR11-64)	w
+OLFACTORY	human	Q8NGI3	OR56B1	Q8NGI3	3	29	Olfactory receptor 56B1 (Olfactory receptor OR11-65)	w
+OLFACTORY	human	Q8NGI4	OR4D11	Q8NGI4	1	38	Olfactory receptor 4D11	w
+OLFACTORY	human	Q8NGI6	OR4D10	Q8NGI6	2	43	Olfactory receptor 4D10 (Olfactory receptor OR11-251)	w
+OLFACTORY	human	Q8NGI7	OR10V1	Q8NGI7	1	41	Olfactory receptor 10V1 (Olfactory receptor OR11-256)	w
+OLFACTORY	human	Q8NGI8	OR5AN1	Q8NGI8	1	31	Olfactory receptor 5AN1 (Olfactory receptor OR11-244)	w
+OLFACTORY	human	Q8NGI9	OR5A2	Q8NGI9	4	51	Olfactory receptor 5A2 (Olfactory receptor OR11-248)	w
+OLFACTORY	human	Q8NGJ0	OR5A1	Q8NGJ0	1	28	Olfactory receptor 5A1 (OST181) (Olfactory receptor OR11-249	w
+OLFACTORY	human	Q8NGJ1	OR4D6	Q8NGJ1	1	27	Olfactory receptor 4D6 (Olfactory receptor OR11-250)	w
+OLFACTORY	human	Q8NGJ2	OR52H1	Q8NGJ2	5	54	Olfactory receptor 52H1 (Olfactory receptor OR11-45)	w
+OLFACTORY	human	Q8NGJ3	OR52E1	Q8NGJ3	1	22	Olfactory receptor 52E1	w
+OLFACTORY	human	Q8NGJ4	OR52E2	Q8NGJ4	2	39	Olfactory receptor 52E2	w
+OLFACTORY	human	Q8NGJ5	OR51L1	Q8NGJ5	2	53	Olfactory receptor 51L1 (Olfactory receptor OR11-31)	w
+OLFACTORY	human	Q8NGJ6	OR51A4	Q8NGJ6	1	34	Olfactory receptor 51A4	w
+OLFACTORY	human	Q8NGJ7	OR51A2	Q8NGJ7	6	61	Olfactory receptor 51A2	w
+OLFACTORY	human	Q8NGJ8	OR51S1	Q8NGJ8	1	14	Olfactory receptor 51S1 (Olfactory receptor OR11-24)	w
+OLFACTORY	human	Q8NGJ9	OR51T1	Q8NGJ9	4	51	Olfactory receptor 51T1 (Olfactory receptor OR11-26)	w
+OLFACTORY	human	Q8NGK0	OR51G2	Q8NGK0	2	43	Olfactory receptor 51G2 (Olfactory receptor OR11-28)	w
+OLFACTORY	human	Q8NGK1	OR51G1	Q8NGK1	1	33	Olfactory receptor 51G1 (Olfactory receptor 51G3) (Olfactory	w
+OLFACTORY	human	Q8NGK2	OR52B4	Q8NGK2	1	40	Olfactory receptor 52B4 (Olfactory receptor OR11-3)	w
+OLFACTORY	human	Q8NGK3	OR52K2	Q8NGK3	5	54	Olfactory receptor 52K2 (Olfactory receptor OR11-7)	w
+OLFACTORY	human	Q8NGK4	OR52K1	Q8NGK4	8	90	Olfactory receptor 52K1 (Olfactory receptor OR11-8)	w
+OLFACTORY	human	Q8NGK5	OR52M1	Q8NGK5	6	59	Olfactory receptor 52M1 (Olfactory receptor OR11-11)	w
+OLFACTORY	human	Q8NGK6	OR52I1	Q8NGK6	1	32	Olfactory receptor 52I1 (Olfactory receptor OR11-13)	w
+OLFACTORY	human	Q8NGK9	OR5D16	Q8NGK9	1	41	Olfactory receptor 5D16 (Olfactory receptor OR11-154)	w
+OLFACTORY	human	Q8NGL0	OR5L2	Q8NGL0	4	60	Olfactory receptor 5L2 (HTPCRX16) (Olfactory receptor OR11-1	w
+OLFACTORY	human	Q8NGL1	OR5D18	Q8NGL1	1	26	Olfactory receptor 5D18 (Olfactory receptor OR11-143) (Olfac	w
+OLFACTORY	human	Q8NGL2	OR5L1	Q8NGL2	1	46	Olfactory receptor 5L1 (OST262) (Olfactory receptor OR11-151	w
+OLFACTORY	human	Q8NGL3	OR5D14	Q8NGL3	2	46	Olfactory receptor 5D14 (Olfactory receptor OR11-141) (Olfac	w
+OLFACTORY	human	Q8NGL4	OR5D13	Q8NGL4	1	13	Olfactory receptor 5D13 (Olfactory receptor OR11-142) (Olfac	w
+OLFACTORY	human	Q8NGL6	OR4A15	Q8NGL6	1	10	Olfactory receptor 4A15 (Olfactory receptor OR11-118)	w
+OLFACTORY	human	Q8NGL7	OR4P4	Q8NGL7	2	38	Olfactory receptor 4P4 (Olfactory receptor 4P3)	w
+OLFACTORY	human	Q8NGL9	OR4C16	Q8NGL9	0	19	Olfactory receptor 4C16 (Olfactory receptor OR11-135)	w
+OLFACTORY	human	Q8NGM1	OR4C15	Q8NGM1	1	57	Olfactory receptor 4C15 (Olfactory receptor OR11-127) (Olfac	w
+OLFACTORY	human	Q8NGM8	OR6M1	Q8NGM8	1	44	Olfactory receptor 6M1 (Olfactory receptor OR11-271)	w
+OLFACTORY	human	Q8NGM9	OR8D4	Q8NGM9	1	28	Olfactory receptor 8D4 (Olfactory receptor OR11-275)	w
+OLFACTORY	human	Q8NGN0	OR4D5	Q8NGN0	1	52	Olfactory receptor 4D5 (Olfactory receptor OR11-276)	w
+OLFACTORY	human	Q8NGN1	OR6T1	Q8NGN1	2	66	Olfactory receptor 6T1 (Olfactory receptor OR11-277)	w
+OLFACTORY	human	Q8NGN2	OR10S1	Q8NGN2	2	25	Olfactory receptor 10S1 (Olfactory receptor OR11-279)	w
+OLFACTORY	human	Q8NGN3	OR10G4	Q8NGN3	3	54	Olfactory receptor 10G4 (Olfactory receptor OR11-278)	w
+OLFACTORY	human	Q8NGN4	OR10G9	Q8NGN4	3	76	Olfactory receptor 10G9 (Olfactory receptor 10G10)	w
+OLFACTORY	human	Q8NGN5	OR10G8	Q8NGN5	7	63	Olfactory receptor 10G8 (Olfactory receptor OR11-282)	w
+OLFACTORY	human	Q8NGN6	OR10G7	Q8NGN6	1	48	Olfactory receptor 10G7 (Olfactory receptor OR11-283)	w
+OLFACTORY	human	Q8NGN7	OR10D4P	Q8NGN7	1	8	Putative olfactory receptor 10D4	w
+OLFACTORY	human	Q8NGN8	OR4A4P	Q8NGN8	2	62	Putative olfactory receptor 4A4 (Olfactory receptor OR11-107	w
+OLFACTORY	human	Q8NGP0	OR4C13	Q8NGP0	1	27	Olfactory receptor 4C13 (Olfactory receptor OR11-260)	w
+OLFACTORY	human	Q8NGP2	OR8J1	Q8NGP2	1	85	Olfactory receptor 8J1 (Olfactory receptor OR11-183)	w
+OLFACTORY	human	Q8NGP3	OR5M9	Q8NGP3	2	32	Olfactory receptor 5M9 (Olfactory receptor OR11-190)	w
+OLFACTORY	human	Q8NGP4	OR5M3	Q8NGP4	2	61	Olfactory receptor 5M3 (Olfactory receptor OR11-191)	w
+OLFACTORY	human	Q8NGP6	OR5M8	Q8NGP6	1	59	Olfactory receptor 5M8 (Olfactory receptor OR11-194)	w
+OLFACTORY	human	Q8NGP8	OR5M1	Q8NGP8	2	48	Olfactory receptor 5M1 (OST050) (Olfactory receptor OR11-208	w
+OLFACTORY	human	Q8NGP9	OR5AR1	Q8NGP9	2	50	Olfactory receptor 5AR1 (Olfactory receptor OR11-209)	w
+OLFACTORY	human	Q8NGQ1	OR9G4	Q8NGQ1	1	38	Olfactory receptor 9G4 (Olfactory receptor OR11-216)	w
+OLFACTORY	human	Q8NGQ2	OR6Q1	Q8NGQ2	1	25	Olfactory receptor 6Q1 (Olfactory receptor OR11-226)	w
+OLFACTORY	human	Q8NGQ3	OR1S2	Q8NGQ3	1	12	Olfactory receptor 1S2 (Olfactory receptor OR11-231)	w
+OLFACTORY	human	Q8NGQ4	OR10Q1	Q8NGQ4	1	26	Olfactory receptor 10Q1 (Olfactory receptor OR11-233)	w
+OLFACTORY	human	Q8NGQ5	OR9Q1	Q8NGQ5	1	30	Olfactory receptor 9Q1	w
+OLFACTORY	human	Q8NGQ6	OR9I1	Q8NGQ6	1	28	Olfactory receptor 9I1 (Olfactory receptor OR11-228)	w
+OLFACTORY	human	Q8NGR1	OR13A1	Q8NGR1	5	23	Olfactory receptor 13A1 (Olfactory receptor OR10-3)	w
+OLFACTORY	human	Q8NGR2	OR1L6	Q8NGR2	1	14	Olfactory receptor 1L6 (Olfactory receptor 1L7) (Olfactory r	w
+OLFACTORY	human	Q8NGR3	OR1K1	Q8NGR3	1	13	Olfactory receptor 1K1	w
+OLFACTORY	human	Q8NGR4	OR5C1	Q8NGR4	1	22	Olfactory receptor 5C1 (Olfactory receptor 5C2) (Olfactory r	w
+OLFACTORY	human	Q8NGR5	OR1L4	Q8NGR5	2	26	Olfactory receptor 1L4 (OST046) (Olfactory receptor 1L5) (Ol	w
+OLFACTORY	human	Q8NGR6	OR1B1	Q8NGR6	4	10	Olfactory receptor 1B1 (Olfactory receptor 9-B) (OR9-B) (Olf	w
+OLFACTORY	human	Q8NGR8	OR1L8	Q8NGR8	2	13	Olfactory receptor 1L8 (Olfactory receptor OR9-24)	w
+OLFACTORY	human	Q8NGR9	OR1N2	Q8NGR9	3	27	Olfactory receptor 1N2 (Olfactory receptor OR9-23)	w
+OLFACTORY	human	Q8NGS0	OR1N1	Q8NGS0	2	24	Olfactory receptor 1N1 (Olfactory receptor 1-26) (OR1-26) (O	w
+OLFACTORY	human	Q8NGS1	OR1J4	Q8NGS1	1	16	Olfactory receptor 1J4 (HTPCRX01) (Olfactory receptor OR9-21	w
+OLFACTORY	human	Q8NGS2	OR1J2	Q8NGS2	1	24	Olfactory receptor 1J2 (HSA5) (HTPCRX15) (OST044) (Olfactory	w
+OLFACTORY	human	Q8NGS3	OR1J1	Q8NGS3	1	22	Olfactory receptor 1J1 (Olfactory receptor OR9-18)	w
+OLFACTORY	human	Q8NGS4	OR13F1	Q8NGS4	2	93	Olfactory receptor 13F1 (Olfactory receptor OR9-6)	w
+OLFACTORY	human	Q8NGS5	OR13C4	Q8NGS5	1	51	Olfactory receptor 13C4 (Olfactory receptor OR9-7)	w
+OLFACTORY	human	Q8NGS6	OR13C3	Q8NGS6	2	60	Olfactory receptor 13C3 (Olfactory receptor OR9-8)	w
+OLFACTORY	human	Q8NGS7	OR13C8	Q8NGS7	2	36	Olfactory receptor 13C8	w
+OLFACTORY	human	Q8NGS8	OR13C5	Q8NGS8	1	104	Olfactory receptor 13C5 (Olfactory receptor OR9-11)	w
+OLFACTORY	human	Q8NGS9	OR13C2	Q8NGS9	0	53	Olfactory receptor 13C2 (Olfactory receptor OR9-12)	w
+OLFACTORY	human	Q8NGT0	OR13C9	Q8NGT0	1	85	Olfactory receptor 13C9 (Olfactory receptor OR9-13)	w
+OLFACTORY	human	Q8NGT1	OR2K2	Q8NGT1	1	50	Olfactory receptor 2K2 (HTPCRH06) (Olfactory receptor OR9-17	w
+OLFACTORY	human	Q8NGT2	OR13J1	Q8NGT2	2	23	Olfactory receptor 13J1 (Olfactory receptor OR9-2)	w
+OLFACTORY	human	Q8NGT5	OR9A2	Q8NGT5	2	14	Olfactory receptor 9A2 (Olfactory receptor OR7-2)	w
+OLFACTORY	human	Q8NGT7	OR2A12	Q8NGT7	2	54	Olfactory receptor 2A12 (Olfactory receptor OR7-10)	w
+OLFACTORY	human	Q8NGT9	OR2A1	Q8NGT9	2	20	Olfactory receptor 2A1/2A42 (Olfactory receptor OR7-16) (Olf	w
+OLFACTORY	human	Q8NGU1	OR9A1P	Q8NGU1	1	9	Olfactory receptor 9A1 (HSHTPRX06)	w
+OLFACTORY	human	Q8NGU2	OR9A4	Q8NGU2	2	31	Olfactory receptor 9A4 (Olfactory receptor OR7-1)	w
+OLFACTORY	human	Q8NGU4	OR2I1	Q8NGU4	3	23	Putative olfactory receptor 2I1 (Putative olfactory receptor	w
+OLFACTORY	human	Q8NGV0	OR2Y1	Q8NGV0	2	146	Olfactory receptor 2Y1 (Olfactory receptor OR5-2)	w
+OLFACTORY	human	Q8NGV5	OR13D1	Q8NGV5	1	24	Olfactory receptor 13D1 (Olfactory receptor OR9-15)	w
+OLFACTORY	human	Q8NGV6	OR5H6	Q8NGV6	3	21	Olfactory receptor 5H6 (Olfactory receptor OR3-11)	w
+OLFACTORY	human	Q8NGV7	OR5H2	Q8NGV7	1	64	Olfactory receptor 5H2 (Olfactory receptor OR3-10)	w
+OLFACTORY	human	Q8NGW1	OR6B3	Q8NGW1	5	44	Olfactory receptor 6B3 (Olfactory receptor OR2-2)	w
+OLFACTORY	human	Q8NGW6	OR6K6	Q8NGW6	3	24	Olfactory receptor 6K6 (Olfactory receptor OR1-21)	w
+OLFACTORY	human	Q8NGX0	OR11L1	Q8NGX0	1	22	Olfactory receptor 11L1	w
+OLFACTORY	human	Q8NGX1	OR2T34	Q8NGX1	1	17	Olfactory receptor 2T34 (Olfactory receptor OR1-63)	w
+OLFACTORY	human	Q8NGX2	OR2T35	Q8NGX2	2	54	Olfactory receptor 2T35 (Olfactory receptor OR1-66)	w
+OLFACTORY	human	Q8NGX3	OR10T2	Q8NGX3	3	26	Olfactory receptor 10T2 (Olfactory receptor OR1-3)	w
+OLFACTORY	human	Q8NGX5	OR10K1	Q8NGX5	2	17	Olfactory receptor 10K1 (Olfactory receptor OR1-6)	w
+OLFACTORY	human	Q8NGX6	OR10R2	Q8NGX6	1	38	Olfactory receptor 10R2 (Olfactory receptor OR1-8)	w
+OLFACTORY	human	Q8NGX8	OR6Y1	Q8NGX8	1	44	Olfactory receptor 6Y1 (Olfactory receptor 6Y2) (Olfactory r	w
+OLFACTORY	human	Q8NGX9	OR6P1	Q8NGX9	3	24	Olfactory receptor 6P1 (Olfactory receptor OR1-12)	w
+OLFACTORY	human	Q8NGY0	OR10X1	Q8NGY0	1	20	Olfactory receptor 10X1 (Olfactory receptor OR1-14)	w
+OLFACTORY	human	Q8NGY1	OR10Z1	Q8NGY1	3	21	Olfactory receptor 10Z1 (Olfactory receptor OR1-15)	w
+OLFACTORY	human	Q8NGY2	OR6K2	Q8NGY2	2	12	Olfactory receptor 6K2 (Olfactory receptor OR1-17)	w
+OLFACTORY	human	Q8NGY3	OR6K3	Q8NGY3	2	24	Olfactory receptor 6K3 (Olfactory receptor OR1-18)	w
+OLFACTORY	human	Q8NGY5	OR6N1	Q8NGY5	3	85	Olfactory receptor 6N1	w
+OLFACTORY	human	Q8NGY6	OR6N2	Q8NGY6	4	59	Olfactory receptor 6N2 (Olfactory receptor OR1-23)	w
+OLFACTORY	human	Q8NGY7	OR10J6P	Q8NGY7	2	7	Putative olfactory receptor 10J6	w
+OLFACTORY	human	Q8NGY9	OR2L8	Q8NGY9	1	45	Olfactory receptor 2L8 (Olfactory receptor OR1-46)	w
+OLFACTORY	human	Q8NGZ0	OR2AJ1	Q8NGZ0	1	16	Olfactory receptor 2AJ1	w
+OLFACTORY	human	Q8NGZ2	OR14K1	Q8NGZ2	1	12	Olfactory receptor 14K1 (Olfactory receptor 5AY1) (Olfactory	w
+OLFACTORY	human	Q8NGZ3	OR13G1	Q8NGZ3	4	34	Olfactory receptor 13G1 (Olfactory receptor OR1-37)	w
+OLFACTORY	human	Q8NGZ4	OR2G3	Q8NGZ4	1	20	Olfactory receptor 2G3 (Olfactory receptor OR1-33)	w
+OLFACTORY	human	Q8NGZ5	OR2G2	Q8NGZ5	1	7	Olfactory receptor 2G2 (Olfactory receptor OR1-32)	w
+OLFACTORY	human	Q8NGZ6	OR6F1	Q8NGZ6	4	33	Olfactory receptor 6F1 (Olfactory receptor OR1-38)	w
+OLFACTORY	human	Q8NGZ9	OR2T10	Q8NGZ9	1	64	Olfactory receptor 2T10 (Olfactory receptor OR1-64)	w
+OLFACTORY	human	Q8NH00	OR2T4	Q8NH00	3	26	Olfactory receptor 2T4 (Olfactory receptor OR1-60)	w
+OLFACTORY	human	Q8NH01	OR2T11	Q8NH01	1	23	Olfactory receptor 2T11 (Olfactory receptor OR1-65)	w
+OLFACTORY	human	Q8NH02	OR2T29	Q8NH02	1	42	Olfactory receptor 2T29	w
+OLFACTORY	human	Q8NH03	OR2T3	Q8NH03	2	27	Olfactory receptor 2T3	w
+OLFACTORY	human	Q8NH04	OR2T27	Q8NH04	2	22	Olfactory receptor 2T27 (Olfactory receptor OR1-67)	w
+OLFACTORY	human	Q8NH05	OR4Q3	Q8NH05	1	43	Olfactory receptor 4Q3 (Olfactory receptor 4Q4) (Olfactory r	w
+OLFACTORY	human	Q8NH06	OR1P1	Q8NH06	1	5	Olfactory receptor 1P1 (Olfactory receptor 17-208) (OR17-208	w
+OLFACTORY	human	Q8NH07	OR11H2	Q8NH07	6	26	Olfactory receptor 11H2 (Olfactory receptor OR14-1)	w
+OLFACTORY	human	Q8NH08	OR10AC1	Q8NH08	1	2	Olfactory receptor 10AC1 (Olfactory receptor OR7-5)	w
+OLFACTORY	human	Q8NH09	OR8S1	Q8NH09	4	16	Olfactory receptor 8S1	w
+OLFACTORY	human	Q8NH10	OR8U1	Q8NH10	1	38	Olfactory receptor 8U1	w
+OLFACTORY	human	Q8NH16	OR2L2	Q8NH16	2	47	Olfactory receptor 2L2 (HTPCRH07) (Olfactory receptor 2L12) 	w
+OLFACTORY	human	Q8NH18	OR5J2	Q8NH18	2	24	Olfactory receptor 5J2 (Olfactory receptor OR11-266)	w
+OLFACTORY	human	Q8NH19	OR10AG1	Q8NH19	1	15	Olfactory receptor 10AG1 (Olfactory receptor OR11-160)	w
+OLFACTORY	human	Q8NH21	OR4F5	Q8NH21	6	77	Olfactory receptor 4F5	w
+OLFACTORY	human	Q8NH37	OR4C3	Q8NH37	1	39	Olfactory receptor 4C3 (Olfactory receptor OR11-98)	w
+OLFACTORY	human	Q8NH40	OR6S1	Q8NH40	1	15	Olfactory receptor 6S1 (Olfactory receptor OR14-37)	w
+OLFACTORY	human	Q8NH41	OR4K15	Q8NH41	3	55	Olfactory receptor 4K15 (Olfactory receptor OR14-20)	w
+OLFACTORY	human	Q8NH42	OR4K13	Q8NH42	2	54	Olfactory receptor 4K13 (Olfactory receptor OR14-27)	w
+OLFACTORY	human	Q8NH43	OR4L1	Q8NH43	2	46	Olfactory receptor 4L1 (Olfactory receptor 4L2) (Olfactory r	w
+OLFACTORY	human	Q8NH48	OR5B3	Q8NH48	1	23	Olfactory receptor 5B3 (Olfactory receptor 5B13) (Olfactory 	w
+OLFACTORY	human	Q8NH49	OR4X1	Q8NH49	1	60	Olfactory receptor 4X1 (Olfactory receptor OR11-104)	w
+OLFACTORY	human	Q8NH50	OR8K5	Q8NH50	0	54	Olfactory receptor 8K5 (Olfactory receptor OR11-174)	w
+OLFACTORY	human	Q8NH51	OR8K3	Q8NH51	2	24	Olfactory receptor 8K3 (Olfactory receptor OR11-181)	w
+OLFACTORY	human	Q8NH53	OR52N1	Q8NH53	1	40	Olfactory receptor 52N1 (Olfactory receptor OR11-61)	w
+OLFACTORY	human	Q8NH54	OR56A3	Q8NH54	1	32	Olfactory receptor 56A3 (Olfactory receptor 56A6)	w
+OLFACTORY	human	Q8NH55	OR52E5	Q8NH55	1	50	Olfactory receptor 52E5	w
+OLFACTORY	human	Q8NH56	OR52N5	Q8NH56	5	34	Olfactory receptor 52N5 (Olfactory receptor OR11-62)	w
+OLFACTORY	human	Q8NH57	OR52P1	Q8NH57	1	15	Olfactory receptor 52P1	w
+OLFACTORY	human	Q8NH59	OR51Q1	Q8NH59	2	26	Olfactory receptor 51Q1	w
+OLFACTORY	human	Q8NH60	OR52J3	Q8NH60	2	47	Olfactory receptor 52J3 (Olfactory receptor OR11-32)	w
+OLFACTORY	human	Q8NH61	OR51F2	Q8NH61	1	21	Olfactory receptor 51F2 (Olfactory receptor OR11-23)	w
+OLFACTORY	human	Q8NH63	OR51H1	Q8NH63	1	17	Olfactory receptor 51H1 (Olfactory receptor OR11-25)	w
+OLFACTORY	human	Q8NH64	OR51A7	Q8NH64	5	55	Olfactory receptor 51A7 (Olfactory receptor OR11-27)	w
+OLFACTORY	human	Q8NH67	OR52I2	Q8NH67	3	35	Olfactory receptor 52I2 (Olfactory receptor OR11-12)	w
+OLFACTORY	human	Q8NH69	OR5W2	Q8NH69	1	45	Olfactory receptor 5W2 (Olfactory receptor 5W3) (Olfactory r	w
+OLFACTORY	human	Q8NH70	OR4A16	Q8NH70	1	9	Olfactory receptor 4A16 (Olfactory receptor OR11-117)	w
+OLFACTORY	human	Q8NH72	OR4C6	Q8NH72	3	58	Olfactory receptor 4C6 (Olfactory receptor OR11-138)	w
+OLFACTORY	human	Q8NH73	OR4S2	Q8NH73	1	49	Olfactory receptor 4S2 (Olfactory receptor OR11-137)	w
+OLFACTORY	human	Q8NH74	OR10A6	Q8NH74	1	39	Olfactory receptor 10A6 (Olfactory receptor OR11-96)	w
+OLFACTORY	human	Q8NH76	OR56B4	Q8NH76	2	34	Olfactory receptor 56B4 (Olfactory receptor OR11-67)	w
+OLFACTORY	human	Q8NH79	OR6X1	Q8NH79	2	27	Olfactory receptor 6X1 (Olfactory receptor OR11-270)	w
+OLFACTORY	human	Q8NH80	OR10D3	Q8NH80	2	30	Olfactory receptor 10D3 (HTPCRX09) (Olfactory receptor OR11-	w
+OLFACTORY	human	Q8NH81	OR10G6	Q8NH81	3	19	Olfactory receptor 10G6 (Olfactory receptor OR11-280)	w
+OLFACTORY	human	Q8NH83	OR4A5	Q8NH83	1	28	Olfactory receptor 4A5 (Olfactory receptor OR11-111)	w
+OLFACTORY	human	Q8NH85	OR8U3	Q8NH85	1	20	Olfactory receptor 8U3 (Olfactory receptor 5R1) (Olfactory r	w
+OLFACTORY	human	Q8NH87	OR9G1	Q8NH87	1	18	Olfactory receptor 9G1 (Olfactory receptor 9G5) (Olfactory r	w
+OLFACTORY	human	Q8NH89	OR5AK3P	Q8NH89	1	8	Olfactory receptor 5AK3	w
+OLFACTORY	human	Q8NH90	OR5AK2	Q8NH90	1	31	Olfactory receptor 5AK2	w
+OLFACTORY	human	Q8NH92	OR1S1	Q8NH92	1	7	Olfactory receptor 1S1 (Olfactory receptor OR11-232)	w
+OLFACTORY	human	Q8NH93	OR1L3	Q8NH93	2	20	Olfactory receptor 1L3 (Olfactory receptor 9-D) (OR9-D) (Olf	w
+OLFACTORY	human	Q8NH94	OR1L1	Q8NH94	3	16	Olfactory receptor 1L1 (Olfactory receptor 1L2) (Olfactory r	w
+OLFACTORY	human	Q8NH95	OR13C6P	Q8NH95	0	8	Putative olfactory receptor 13C6 (Olfactory receptor, family	w
+OLFACTORY	human	Q8NHA4	OR2AE1	Q8NHA4	1	37	Olfactory receptor 2AE1 (Olfactory receptor 2AE2)	w
+OLFACTORY	human	Q8NHA6	OR2W6P	Q8NHA6	0	23	Putative olfactory receptor 2W6 (Olfactory receptor OR6-3) (	w
+OLFACTORY	human	Q8NHA8	OR1F12P	Q8NHA8	1	9	Putative olfactory receptor 1F12P (Hs6M1-35P)	w
+OLFACTORY	human	Q8NHB1	OR2V1	Q8NHB1	1	27	Olfactory receptor 2V1	w
+OLFACTORY	human	Q8NHB7	OR5K1	Q8NHB7	3	42	Olfactory receptor 5K1 (HTPCRX10) (Olfactory receptor OR3-8)	w
+OLFACTORY	human	Q8NHB8	OR5K2	Q8NHB8	1	53	Olfactory receptor 5K2 (Olfactory receptor OR3-9)	w
+OLFACTORY	human	Q8NHC4	OR10J5	Q8NHC4	2	19	Olfactory receptor 10J5 (Olfactory receptor OR1-28)	w
+OLFACTORY	human	Q8NHC5	OR14A16	Q8NHC5	1	14	Olfactory receptor 14A16 (Olfactory receptor 5AT1) (Olfactor	w
+OLFACTORY	human	Q8NHC6	OR14L1	Q8NHC6	1	3	Olfactory receptor 14L1 (Olfactory receptor 5AV1)	w
+OLFACTORY	human	Q8NHC7	OR14C36	Q8NHC7	1	11	Olfactory receptor 14C36 (Olfactory receptor 5BF1) (Olfactor	w
+OLFACTORY	human	Q8NHC8	OR2T6	Q8NHC8	1	25	Olfactory receptor 2T6 (OST703) (Olfactory receptor 2T9)	w
+OLFACTORY	human	Q8TCB6	OR51E1	Q8TCB6	7	88	Olfactory receptor 51E1 (D-GPCR) (G protein-coupled receptor	w
+OLFACTORY	human	Q8WZ84	OR8D1	Q8WZ84	2	50	Olfactory receptor 8D1 (OST004) (Olfactory receptor 8D3) (Ol	w
+OLFACTORY	human	Q8WZ92	OR5P2	Q8WZ92	1	24	Olfactory receptor 5P2 (Olfactory receptor-like protein JCG3	w
+OLFACTORY	human	Q8WZ94	OR5P3	Q8WZ94	1	25	Olfactory receptor 5P3 (Olfactory receptor OR11-94) (Olfacto	w
+OLFACTORY	human	Q8WZA6	OR1E3	Q8WZA6	1	11	Olfactory receptor 1E3 (Olfactory receptor 17-210) (OR17-210	w
+OLFACTORY	human	Q96KK4	OR10C1	Q96KK4	3	32	Olfactory receptor 10C1 (Hs6M1-17) (Olfactory receptor 10C2)	w
+OLFACTORY	human	Q96R08	OR5B12	Q96R08	1	26	Olfactory receptor 5B12 (Olfactory receptor 5B16) (Olfactory	w
+OLFACTORY	human	Q96R09	OR5B2	Q96R09	1	93	Olfactory receptor 5B2 (OST073) (Olfactory receptor OR11-240	w
+OLFACTORY	human	Q96R27	OR2M4	Q96R27	2	39	Olfactory receptor 2M4 (HTPCRX18) (OST710) (Olfactory recept	w
+OLFACTORY	human	Q96R28	OR2M2	Q96R28	1	22	Olfactory receptor 2M2 (OST423)	w
+OLFACTORY	human	Q96R30	OR2V2	Q96R30	1	67	Olfactory receptor 2V2 (Olfactory receptor 2V3) (Olfactory r	w
+OLFACTORY	human	Q96R45	OR2A7	Q96R45	3	39	Olfactory receptor 2A7 (Olfactory receptor OR7-18)	w
+OLFACTORY	human	Q96R47	OR2A14	Q96R47	1	45	Olfactory receptor 2A14 (OST182) (Olfactory receptor 2A6) (O	w
+OLFACTORY	human	Q96R48	OR2A5	Q96R48	1	27	Olfactory receptor 2A5 (Olfactory receptor 2A26) (Olfactory 	w
+OLFACTORY	human	Q96R54	OR14A2	Q96R54	1	29	Olfactory receptor 14A2 (Olfactory receptor 5AX1) (Olfactory	w
+OLFACTORY	human	Q96R67	OR4C12	Q96R67	3	57	Olfactory receptor 4C12 (Olfactory receptor OR11-259)	w
+OLFACTORY	human	Q96R69	OR4F4	Q96R69	3	79	Olfactory receptor 4F4 (HS14a-1-A) (Olfactory receptor OR19-	w
+OLFACTORY	human	Q96R72	OR4K3	Q96R72	6	65	Olfactory receptor 4K3 (Olfactory receptor OR14-14)	w
+OLFACTORY	human	Q96R84	OR1F2P	Q96R84	1	9	Putative olfactory receptor 1F2 (OLFmf2)	w
+OLFACTORY	human	Q96RA2	OR7D2	Q96RA2	3	22	Olfactory receptor 7D2 (HTPCRH03) (Olfactory receptor 19-4) 	w
+OLFACTORY	human	Q96RB7	OR5M11	Q96RB7	1	34	Olfactory receptor 5M11	w
+OLFACTORY	human	Q96RC9	OR8B4	Q96RC9	3	20	Olfactory receptor 8B4 (Olfactory receptor OR11-315)	w
+OLFACTORY	human	Q96RD0	OR8B2	Q96RD0	0	29	Olfactory receptor 8B2 (Olfactory receptor OR11-309)	w
+OLFACTORY	human	Q96RD1	OR6C1	Q96RD1	1	19	Olfactory receptor 6C1 (OST267)	w
+OLFACTORY	human	Q96RD2	OR52B2	Q96RD2	2	54	Olfactory receptor 52B2 (Olfactory receptor OR11-70)	w
+OLFACTORY	human	Q96RD3	OR52E6	Q96RD3	1	44	Olfactory receptor 52E6 (Olfactory receptor OR11-58)	w
+OLFACTORY	human	Q9GZK3	OR2B2	Q9GZK3	1	22	Olfactory receptor 2B2 (Hs6M1-10) (Olfactory receptor 2B9) (	w
+OLFACTORY	human	Q9GZK4	OR2H1	Q9GZK4	2	26	Olfactory receptor 2H1 (Hs6M1-16) (OLFR42A-9004.14/9026.2) (	w
+OLFACTORY	human	Q9GZK6	OR2J1	Q9GZK6	3	30	Olfactory receptor 2J1 (Hs6M1-4) (Olfactory receptor 6-5) (O	w
+OLFACTORY	human	Q9GZK7	OR11A1	Q9GZK7	2	20	Olfactory receptor 11A1 (Hs6M1-18) (Olfactory receptor 11A2)	w
+OLFACTORY	human	Q9GZM6	OR8D2	Q9GZM6	1	30	Olfactory receptor 8D2 (Olfactory receptor OR11-303) (Olfact	w
+OLFACTORY	human	Q9GZP7	VN1R1	Q9GZP7	4	38	Vomeronasal type-1 receptor 1 (G protein-coupled receptor GP	w
+OLFACTORY	human	Q9H205	OR2AG1	Q9H205	2	29	Olfactory receptor 2AG1 (HT3) (Olfactory receptor 2AG3) (Olf	w
+OLFACTORY	human	Q9H207	OR10A5	Q9H207	5	35	Olfactory receptor 10A5 (HP3) (Olfactory receptor 10A1) (Olf	w
+OLFACTORY	human	Q9H208	OR10A2	Q9H208	3	22	Olfactory receptor 10A2 (HP4) (Olfactory receptor OR11-86)	w
+OLFACTORY	human	Q9H209	OR10A4	Q9H209	2	44	Olfactory receptor 10A4 (HP2) (Olfactory receptor-like prote	w
+OLFACTORY	human	Q9H210	OR2D2	Q9H210	1	26	Olfactory receptor 2D2 (HB2) (Olfactory receptor 11-610) (OR	w
+OLFACTORY	human	Q9H255	OR51E2	Q9H255	7	95	Olfactory receptor 51E2 (HPRAJ) (Olfactory receptor OR11-16)	w
+OLFACTORY	human	Q9H2C5	OR52A5	Q9H2C5	1	47	Olfactory receptor 52A5 (Odorant receptor HOR3'beta5) (Olfac	w
+OLFACTORY	human	Q9H2C8	OR51V1	Q9H2C8	3	52	Olfactory receptor 51V1 (Odorant receptor HOR3'beta1) (Olfac	w
+OLFACTORY	human	Q9H339	OR51B5	Q9H339	3	58	Olfactory receptor 51B5 (Odorant receptor HOR5'beta5) (Olfac	w
+OLFACTORY	human	Q9H340	OR51B6	Q9H340	2	56	Olfactory receptor 51B6 (Odorant receptor HOR5'beta6)	w
+OLFACTORY	human	Q9H341	OR51M1	Q9H341	1	60	Olfactory receptor 51M1 (Odorant receptor HOR5'beta7) (Olfac	w
+OLFACTORY	human	Q9H342	OR51J1	Q9H342	1	5	Olfactory receptor 51J1 (Odorant receptor HOR5'beta8) (Olfac	w
+OLFACTORY	human	Q9H343	OR51I1	Q9H343	2	42	Olfactory receptor 51I1 (Odorant receptor HOR5'beta11) (Olfa	w
+OLFACTORY	human	Q9H344	OR51I2	Q9H344	2	63	Olfactory receptor 51I2 (Odorant receptor HOR5'beta12) (Olfa	w
+OLFACTORY	human	Q9H346	OR52D1	Q9H346	4	62	Olfactory receptor 52D1 (Odorant receptor HOR5'beta14) (Olfa	w
+OLFACTORY	human	Q9NQN1	OR2S2	Q9NQN1	1	28	Olfactory receptor 2S2 (Olfactory receptor OR9-3)	w
+OLFACTORY	human	Q9NZP0	OR6C3	Q9NZP0	1	24	Olfactory receptor 6C3 (HSA8)	w
+OLFACTORY	human	Q9NZP2	OR6C2	Q9NZP2	2	27	Olfactory receptor 6C2 (HSA3)	w
+OLFACTORY	human	Q9NZP5	OR5AC2	Q9NZP5	1	39	Olfactory receptor 5AC2 (HSA1)	w
+OLFACTORY	human	Q9P1Q5	OR1A1	Q9P1Q5	3	41	Olfactory receptor 1A1 (Olfactory receptor 17-7) (OR17-7) (O	w
+OLFACTORY	human	Q9UGF5	OR14J1	Q9UGF5	2	24	Olfactory receptor 14J1 (Hs6M1-28) (Olfactory receptor 5U1) 	w
+OLFACTORY	human	Q9UGF6	OR5V1	Q9UGF6	5	47	Olfactory receptor 5V1 (Hs6M1-21) (Olfactory receptor OR6-26	w
+OLFACTORY	human	Q9UGF7	OR12D3	Q9UGF7	2	26	Olfactory receptor 12D3 (Hs6M1-27) (Olfactory receptor OR6-2	w
+OLFACTORY	human	Q9UKL2	OR52A1	Q9UKL2	1	63	Olfactory receptor 52A1 (HPFH1OR) (Odorant receptor HOR3'bet	w
+OLFACTORY	human	Q9Y3N9	OR2W1	Q9Y3N9	1	30	Olfactory receptor 2W1 (Hs6M1-15) (Olfactory receptor OR6-13	w
+OLFACTORY	human	Q9Y4A9	OR10H1	Q9Y4A9	2	73	Olfactory receptor 10H1 (Olfactory receptor OR19-27)	w
+OLFACTORY	human	Q9Y585	OR1A2	Q9Y585	2	35	Olfactory receptor 1A2 (Olfactory receptor 17-6) (OR17-6) (O	w
+OLFACTORY	human	Q9Y5P0	OR51B4	Q9Y5P0	2	29	Olfactory receptor 51B4 (Odorant receptor HOR5'beta1)	w
+OLFACTORY	human	Q9Y5P1	OR51B2	Q9Y5P1	1	57	Olfactory receptor 51B2 (Odorant receptor HOR5'beta3) (Olfac	w
+OLFACTORY	zebrafish	A0A0R4I9L6	olfcg3	A0A0R4I9L6	1	10	Olfactory receptor C family, g3	w
+OLFACTORY	zebrafish	A0A0R4IC00	olfch1	A0A0R4IC00	1	10	Olfactory receptor C family, h1	w
+OLFACTORY	zebrafish	A0A0R4IDZ4	olfcg2	A0A0R4IDZ4	0	10	Olfactory receptor C family, g2	w
+OLFACTORY	zebrafish	A0A0R4IHA3	olfcj1	A0A0R4IHA3	0	10	Olfactory receptor C family, j1	w
+OLFACTORY	zebrafish	A0A0R4IJ62	olfcg1	A0A0R4IJ62	0	10	Olfactory receptor C family, g1	w
+OLFACTORY	zebrafish	A0A0R4IJP4	olfcg5	A0A0R4IJP4	0	10	Olfactory receptor C family, g5	w
+OLFACTORY	zebrafish	A0A0R4IM31	ora1	A0A0R4IM31	0	1	Olfactory receptor class A-like protein 1	w
+OLFACTORY	zebrafish	A0A0R4IP11	ora4	A0A0R4IP11	0	3	Olfactory receptor class A-like protein 4	w
+OLFACTORY	zebrafish	A0A0R4IS27	olfcg6	A0A0R4IS27	0	10	Olfactory receptor C family, g6	w
+OLFACTORY	zebrafish	A0A0R4ITC7	olfcg4	A0A0R4ITC7	0	10	Olfactory receptor C family, g4	w
+OLFACTORY	zebrafish	A0A0R4IV20	olfcs1	A0A0R4IV20	1	10	Olfactory receptor C family, s1	w
+OLFACTORY	zebrafish	A0A0R4IW17	olfcs2	A0A0R4IW17	0	10	Olfactory receptor C family, s2	w
+OLFACTORY	zebrafish	A0A8M1N5X2	olfcw1	A0A8M1N5X2	0	10	Olfactory receptor CW1 precursor	w
+OLFACTORY	zebrafish	A0AB13A3P1	olfcg7	A0AB13A3P1	0	10	Olfactory receptor CG7	w
+OLFACTORY	zebrafish	A3KQI0	olfcq10	A3KQI0	0	10	Olfactory receptor C family, q10	w
+OLFACTORY	zebrafish	F1QPB6	olfcb1	F1QPB6	2	12	Olfactory receptor C family, b1	w
+OLFACTORY	zebrafish	Q1LV86	olfcu1	Q1LV86	0	10	Olfactory receptor C family, u1	w
+OLFACTORY	zebrafish	Q1LV87	olfcq1	Q1LV87	0	10	Olfactory receptor C family, q1	w
+OLFACTORY	zebrafish	Q1LV89	olfcq3	Q1LV89	0	10	Olfactory receptor C family, q3	w
+OLFACTORY	zebrafish	Q2PRB5	or30by3	Q2PRB5	0	4	Olfactory receptor	w
+OLFACTORY	zebrafish	Q2PRG5	or62c5	Q2PRG5	0	5	Olfactory receptor	w
+OLFACTORY-LIKE	human	Q15620	OR8B8	Q15620	2	30	Olfactory receptor 8B8 (Olfactory receptor TPCR85) (Olfactor	w
+OLFACTORY-SPECIFIC	fly	FBgn0014000	Hf	Q9VIQ4	2	4	GH03980p (Helical factor) (Olfactory-specific protein Os9)	w
+OLFACTORY-SPECIFIC	fly	FBgn0042129	OS9	Q9I7M1	27	275	Olfactory-specific 9	w
+OLFCB1	zebrafish	F1QPB6	olfcb1	F1QPB6	2	12	Olfactory receptor C family, b1	
+OLFCD1	zebrafish	A0A8M9PAH3	olfcd1	A0A8M9PAH3	1	10	Extracellular calcium-sensing receptor	
+OLFCD2	zebrafish	A0T300	olfcd2	A0T300	0	10	C-family odorant receptor OLFCD2	w
+OLFCD2	zebrafish	A0T300	olfcd2	A0T300	0	10	C-family odorant receptor OLFCD2	w
+OLFCD3	zebrafish	F1QS61	olfcd3	F1QS61	1	10	Extracellular calcium-sensing receptor	
+OLFCG1	zebrafish	A0A0R4IJ62	olfcg1	A0A0R4IJ62	0	10	Olfactory receptor C family, g1	
+OLFCG12	zebrafish	A0A8M9PPM0	olfcg12	A0A8M9PPM0	1	10	Extracellular calcium-sensing receptor	
+OLFCG2	zebrafish	A0A0R4IDZ4	olfcg2	A0A0R4IDZ4	0	10	Olfactory receptor C family, g2	
+OLFCG3	zebrafish	A0A0R4I9L6	olfcg3	A0A0R4I9L6	1	10	Olfactory receptor C family, g3	
+OLFCG4	zebrafish	A0A0R4ITC7	olfcg4	A0A0R4ITC7	0	10	Olfactory receptor C family, g4	
+OLFCG5	zebrafish	A0A0R4IJP4	olfcg5	A0A0R4IJP4	0	10	Olfactory receptor C family, g5	
+OLFCG6	zebrafish	A0A0R4IS27	olfcg6	A0A0R4IS27	0	10	Olfactory receptor C family, g6	
+OLFCG7	zebrafish	A0AB13A3P1	olfcg7	A0AB13A3P1	0	10	Olfactory receptor CG7	
+OLFCG8	zebrafish	A0A8M3B2Z8	olfcg8	A0A8M3B2Z8	0	10	Extracellular calcium-sensing receptor-like	
+OLFCG9	zebrafish	A0A8M9PFV7	olfcg9	A0A8M9PFV7	0	10	Extracellular calcium-sensing receptor	
+OLFCH1	zebrafish	A0A0R4IC00	olfch1	A0A0R4IC00	1	10	Olfactory receptor C family, h1	
+OLFCJ1	zebrafish	A0A0R4IHA3	olfcj1	A0A0R4IHA3	0	10	Olfactory receptor C family, j1	
+OLFCK3	zebrafish	A0A8M3AV03	olfck3	A0A8M3AV03	0	10	Extracellular calcium-sensing receptor-like isoform X1	
+OLFCQ1	zebrafish	Q1LV87	olfcq1	Q1LV87	0	10	Olfactory receptor C family, q1	
+OLFCQ10	zebrafish	A3KQI0	olfcq10	A3KQI0	0	10	Olfactory receptor C family, q10	
+OLFCQ11	zebrafish	A0A8N7UUY1	olfcq11	A0A8N7UUY1	0	10	Extracellular calcium-sensing receptor-like	
+OLFCQ12	zebrafish	A0A8N7UVL1	olfcq12	A0A8N7UVL1	0	10	Extracellular calcium-sensing receptor-like	
+OLFCQ13	zebrafish	A0A8M1Q166	olfcq13	A0A8M1Q166	1	10	Extracellular calcium-sensing receptor	
+OLFCQ15	zebrafish	A0A8M1PU52	olfcq15	A0A8M1PU52	0	10	Extracellular calcium-sensing receptor	
+OLFCQ17	zebrafish	A0A8N7T6Z6	olfcq17	A0A8N7T6Z6	0	10	Extracellular calcium-sensing receptor	
+OLFCQ18	zebrafish	A0A8M1Q146	olfcq18	A0A8M1Q146	0	10	Extracellular calcium-sensing receptor	
+OLFCQ19	zebrafish	A0T301	olfcq19	A0T301	0	10	C-family odorant receptor OLFCQ19	w
+OLFCQ19	zebrafish	A0T301	olfcq19	A0T301	0	10	C-family odorant receptor OLFCQ19	w
+OLFCQ20	zebrafish	A0A8M1RT73	olfcq20	A0A8M1RT73	0	10	Extracellular calcium-sensing receptor isoform X1	
+OLFCQ3	zebrafish	Q1LV89	olfcq3	Q1LV89	0	10	Olfactory receptor C family, q3	
+OLFCQ4	zebrafish	A0A8N7T5D2	olfcq4	A0A8N7T5D2	0	10	Extracellular calcium-sensing receptor-like	
+OLFCQ5	zebrafish	A0A8M1RHU5	olfcq5	A0A8M1RHU5	0	10	Extracellular calcium-sensing receptor-like	
+OLFCQ9	zebrafish	A0A8N7T6G6	olfcq9	A0A8N7T6G6	0	10	Extracellular calcium-sensing receptor	
+OLFCS1	zebrafish	A0A0R4IV20	olfcs1	A0A0R4IV20	1	10	Olfactory receptor C family, s1	
+OLFCS2	zebrafish	A0A0R4IW17	olfcs2	A0A0R4IW17	0	10	Olfactory receptor C family, s2	
+OLFCU1	zebrafish	Q1LV86	olfcu1	Q1LV86	0	10	Olfactory receptor C family, u1	
+OLFCW1	zebrafish	A0A8M1N5X2	olfcw1	A0A8M1N5X2	0	10	Olfactory receptor CW1 precursor	
+OLFCX1	zebrafish	A0A8M1PS22	olfcx1	A0A8M1PS22	0	10	Extracellular calcium-sensing receptor isoform X1	
+OLFL1_HUMAN	human	Q6UWY5	OLFML1	Q6UWY5	7	29		
+OLFL3_HUMAN	human	Q9NRN5	OLFML3	Q9NRN5	18	139		
+OLFM1	human	Q99784	OLFM1	Q99784	21	137	Noelin (Neuronal olfactomedin-related ER localized protein) 	
+OLFM1	mus-musculus	O88998	Olfm1	O88998	6	53	Noelin	
+OLFM1	rattus-norvegicus	Q62609	Olfm1	Q62609	4	52	Noelin	
+OLFM1A	zebrafish	A2AWU1	olfm1a	A2AWU1	0	1	Olfactomedin 1a	
+OLFM1B	zebrafish	B7ZD15	olfm1b	B7ZD15	0	1	Olfactomedin 1b	
+OLFM2	human	O95897	OLFM2	O95897	28	187	Noelin-2 (Olfactomedin-2)	
+OLFM2	mus-musculus	Q8BM13	Olfm2	Q8BM13	4	45	Noelin-2	
+OLFM2	rattus-norvegicus	Q568Y7	Olfm2	Q568Y7	4	45	Noelin-2	
+OLFM2A	zebrafish	F1R5K6	olfm2a	F1R5K6	0	1	Noelin-2a isoform X1	
+OLFM2B	zebrafish	A0A0R4ILX8	olfm2b	A0A0R4ILX8	1	1	Noelin-2b precursor	
+OLFM3	human	Q96PB7	OLFM3	Q96PB7	24	235	Noelin-3 (Olfactomedin-3) (Optimedin)	
+OLFM3	mus-musculus	P63056	Olfm3	P63056	4	46	Noelin-3	
+OLFM3	rattus-norvegicus	P63057	Olfm3	P63057	4	46	Noelin-3	
+OLFM3B	zebrafish	A0AB32T7F6	olfm3b	A0AB32T7F6	0	1	Noelin-3 isoform X2	
+OLFM4	human	Q6UX06	OLFM4	Q6UX06	19	220	Olfactomedin-4 (OLM4) (Antiapoptotic protein GW112) (G-CSF-s	
+OLFM4	mus-musculus	Q3UZZ4	Olfm4	Q3UZZ4	0	10	Olfactomedin-4	
+OLFM4	rattus-norvegicus	D3ZMI6	Olfm4	D3ZMI6	0	10	Olfactomedin 4	
+OLFM4_HUMAN	human	Q6UX06	OLFM4	Q6UX06	19	220		
+OLFM5	mus-musculus	Q8BU90	Olfm5	Q8BU90	0	4	Olfactomedin 5	
+OLFM5	rattus-norvegicus	D3Z8Z4	Olfm5	D3Z8Z4	0	5	Olfactomedin 5	
+OLFMF	human	O43749	OR1F1	O43749	2	11		
+OLFMF2	human	Q96R84	OR1F2P	Q96R84	1	9	Putative olfactory receptor 1F2 (OLFmf2)	w
+OLFMF3	human	O95371	OR2C1	O95371	3	82	Olfactory receptor 2C1 (OLFmf3) (Olfactory receptor 2C2) (Ol	w
+OLFML1	human	Q6UWY5	OLFML1	Q6UWY5	7	29	Olfactomedin-like protein 1	
+OLFML1	rattus-norvegicus	Q66H86	Olfml1	Q66H86	0	1	Olfactomedin-like protein 1	
+OLFML2A	human	Q68BL7	OLFML2A	Q68BL7	8	40	Olfactomedin-like protein 2A (Photomedin-1)	
+OLFML2A	mus-musculus	Q8BHP7	Olfml2a	Q8BHP7	0	1	Olfactomedin-like protein 2A	
+OLFML2A	rattus-norvegicus	D3ZMR0	Olfml2a	D3ZMR0	1	1	Olfactomedin-like 2A	
+OLFML2B	human	Q68BL8	OLFML2B	Q68BL8	8	43	Olfactomedin-like protein 2B (Photomedin-2)	
+OLFML2B	rattus-norvegicus	D4A0J7	Olfml2b	D4A0J7	0	1	Olfactomedin-like 2B	
+OLFML3	human	Q9NRN5	OLFML3	Q9NRN5	18	139	Olfactomedin-like protein 3 (HNOEL-iso) (hOLF44)	
+OLFML3	mus-musculus	Q8BK62	Olfml3	Q8BK62	0	1	Olfactomedin-like protein 3	
+OLFML3	rattus-norvegicus	B0BNI5	Olfml3	B0BNI5	0	2	Olfactomedin-like protein 3	
+OLFR1	human	P34982	OR1D2	P34982	2	25		
+OLFR1	rattus-norvegicus	P70526	Olfr1	P70526	0	3	Olfactory receptor 1	
+OLFR2	human	O95918	OR2H2	O95918	3	28		
+OLFR42A-9004	human	Q9GZK4	OR2H1	Q9GZK4	2	26	Olfactory receptor 2H1 (Hs6M1-16) (OLFR42A-9004.14/9026.2) (	w
+OLFRA03	human	P47881	OR3A1	P47881	6	36		
+OLFRA04	human	P47893	OR3A2	P47893	1	27		

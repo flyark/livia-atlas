@@ -1,22 +1,135 @@
-SNF	streptococcus-pneumoniae	Q8DP39	snf	Q8DP39	1	34	SWF/SNF family ATP-dependent RNA helicase
-SNF1	candida-albicans-237561	A0A1D8PN61	SNF1	A0A1D8PN61	3	11	Carbon catabolite-derepressing protein kinase
-SNF12	candida-albicans-237561	A0A1D8PHT4	SNF12	A0A1D8PHT4	6	42	Uncharacterized protein
-SNF12-1	dictyostelium-discoideum	Q556Z0	snf12-1	Q556Z0	5	57	SWI/SNF complex component SNF12 homolog
-SNF21	cladophialophora-carrionii	A0A1C1D1U0	snf21	A0A1C1D1U0	6	50	Chromatin structure-remodeling complex subunit snf21
-SNF21	schizosaccharomyces-pombe	Q9UTN6	snf21	Q9UTN6	6	37	Chromatin structure-remodeling complex subunit snf21
-SNF30	schizosaccharomyces-pombe	Q9P7S6	snf30	Q9P7S6	1	12	SWI/SNF chromatin-remodeling complex subunit snf30
-SNF4	arabidopsis-thaliana	Q944A6	SNF4	Q944A6	12	127	Sucrose nonfermenting 4-like protein
-SNF4	candida-albicans-237561	A0A1D8PQA6	SNF4	A0A1D8PQA6	4	13	5'-AMP-activated protein kinase subunit gamma
-SNF4	cladophialophora-carrionii	A0A1C1C9G1	SNF4	A0A1C1C9G1	2	24	Nuclear protein SNF4
-SNF5	candida-albicans-237561	A0A1D8PJZ6	SNF5	A0A1D8PJZ6	6	36	Snf5p
-SNF5	glycine-max	D7RJ53	SNF5	D7RJ53	9	331	Chromatin structure-remodeling complex protein BSH-like
-SNF5	schizosaccharomyces-pombe	Q09699	snf5	Q09699	5	41	SWI/SNF chromatin-remodeling complex subunit snf5
-SNF59	schizosaccharomyces-pombe	O74792	snf59	O74792	2	15	SWI/SNF global transcription activator complex subunit snf59
-SNF6	candida-albicans-237561	A0A1D8PH05	SNF6	A0A1D8PH05	8	111	Uncharacterized protein
-SNF7	candida-albicans-237561	Q5ABD0	SNF7	Q5ABD0	5	25	Vacuolar-sorting protein SNF7
-SNF7	cladophialophora-carrionii	A0A1C1CGB5	SNF7	A0A1C1CGB5	6	28	Vacuolar-sorting protein SNF7
-SNF7	schizosaccharomyces-pombe	Q9P7F7	snf7	Q9P7F7	5	26	Vacuolar-sorting protein snf7
-SNF8	dictyostelium-discoideum	Q54RC4	snf8	Q54RC4	2	21	Vacuolar-sorting protein SNF8
-SNF8	mus-musculus	Q9CZ28	Snf8	Q9CZ28	4	34	Vacuolar-sorting protein SNF8
-SNF8	rattus-norvegicus	Q5RK19	Snf8	Q5RK19	4	31	Vacuolar-sorting protein SNF8
-SNFA	dictyostelium-discoideum	Q54YF2	snfA	Q54YF2	1	13	5'-AMP-activated serine/threonine-protein kinase catalytic subunit alpha
+SNF	fly	FBgn0003449	snf	P43332	19	264	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1	
+SNF	streptococcus-pneumoniae	Q8DP39	snf	Q8DP39	1	34	SWF/SNF family ATP-dependent RNA helicase	
+SNF-1	worm	O44752	snf-1	O44752	0	1	Sodium: Neurotransmitter symporter Family	
+SNF-10	worm	O45915	snf-10	O45915	0	5	Transporter	
+SNF-12	worm	O45813	snf-12	O45813	1	1	Sodium-dependent transporter snf-12	w
+SNF-12	worm	O45813	snf-12	O45813	1	1	Sodium-dependent transporter snf-12	w
+SNF-3	worm	G5EBN9	snf-3	G5EBN9	0	1	Sodium- and chloride-dependent betaine transporter	
+SNF-6	worm	O76689	snf-6	O76689	2	5	Sodium-dependent acetylcholine transporter	
+SNF-9	worm	Q9XUG5	snf-9	Q9XUG5	0	4	Sodium-dependent nutrient amino acid transporter 1	
+SNF-RELATED	fly	FBgn0031655	Marcal1	Q9VMX6	3	31	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	fly	FBgn0032157	Etl1	Q9VL72	2	19	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	O60264	SMARCA5	O60264	73	676	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	P28370	SMARCA1	P28370	43	373	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	P51531	SMARCA2	P51531	35	399	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	P51532	SMARCA4	P51532	39	544	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	Q12824	SMARCB1	Q12824	92	1049	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	Q6STE5	SMARCD3	Q6STE5	89	553	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	Q8TAQ2	SMARCC2	Q8TAQ2	45	479	SWI/SNF complex subunit SMARCC2 (BRG1-associated factor 170)	w
+SNF-RELATED	human	Q92922	SMARCC1	Q92922	47	522	SWI/SNF complex subunit SMARCC1 (BRG1-associated factor 155)	w
+SNF-RELATED	human	Q92925	SMARCD2	Q92925	80	589	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	Q969G3	SMARCE1	Q969G3	67	659	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	Q96GM5	SMARCD1	Q96GM5	83	789	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	Q9H4L7	SMARCAD1	Q9H4L7	25	270	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	human	Q9NRH2	SNRK	Q9NRH2	29	163	SNF-related serine/threonine-protein kinase (EC 2.7.11.1) (S	w
+SNF-RELATED	human	Q9NZC9	SMARCAL1	Q9NZC9	12	129	SNF2 related chromatin remodeling annealing helicase 1 (EC 3	w
+SNF-RELATED	human	Q9P0W2	HMG20B	Q9P0W2	73	514	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	worm	G5EDG2	smrd-1	G5EDG2	0	13	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	worm	Q8MNV7	smrc-1	Q8MNV7	2	11	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	B0R061	smarcad1a	B0R061	0	9	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	B2KL77	smarcd3b	B2KL77	12	103	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	B2ZFP3	smarcal1	B2ZFP3	5	63	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	B8A552	smarca5	B8A552	6	143	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	E7EYW7	smarcd2	E7EYW7	13	102	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	E7F1C4	smarcad1b	E7F1C4	0	9	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	E9QC50	smarcd3a	E9QC50	10	95	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	Q5U379	smarcb1a	Q5U379	6	115	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	Q802C8	smarcd1	Q802C8	9	97	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF-RELATED	zebrafish	Q803S1	smarce1	Q803S1	13	76	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+SNF1	candida-albicans-237561	A0A1D8PN61	SNF1	A0A1D8PN61	3	11	Carbon catabolite-derepressing protein kinase	
+SNF1	human	Q9H093	NUAK2	Q9H093	342	1299	NUAK family SNF1-like kinase 2 (EC 2.7.11.1) (Omphalocele ki	w
+SNF1	worm	Q9NAH7	aakb-2	Q9NAH7	12	41	Association with the SNF1 complex (ASC) domain-containing pr	w
+SNF1	yeast	P06782	SNF1	P06782	11	117	Carbon catabolite-derepressing protein kinase (EC 2.7.11.1) 	
+SNF1	yeast	P32578	SIP1	P32578	2	33	SNF1 protein kinase subunit beta-1	w
+SNF1	yeast	P34164	SIP2	P34164	5	50	SNF1 protein kinase subunit beta-2 (Protein SPM2) (SNF1-inte	w
+SNF1	yeast	Q04739	GAL83	Q04739	9	57	SNF1 protein kinase subunit beta-3 (Glucose repression prote	w
+SNF1-ACTIVATING	yeast	P38990	SAK1	P38990	3	55	SNF1-activating kinase 1 (EC 2.7.11.1)	w
+SNF1-INTERACTING	yeast	P34164	SIP2	P34164	5	50	SNF1 protein kinase subunit beta-2 (Protein SPM2) (SNF1-inte	w
+SNF1-LIKE	human	O60285	NUAK1	O60285	335	1319	NUAK family SNF1-like kinase 1 (EC 2.7.11.1) (AMPK-related p	w
+SNF1-LIKE	human	P57059	SIK1	P57059	33	160	Serine/threonine-protein kinase SIK1 (EC 2.7.11.1) (Salt-ind	w
+SNF1-LIKE	human	Q9H093	NUAK2	Q9H093	342	1299	NUAK family SNF1-like kinase 2 (EC 2.7.11.1) (Omphalocele ki	w
+SNF1-LIKE	human	Q9H0K1	SIK2	Q9H0K1	68	220	Serine/threonine-protein kinase SIK2 (EC 2.7.11.1) (Qin-indu	w
+SNF1-RELATED	human	Q9NRH2	SNRK	Q9NRH2	29	163	SNF-related serine/threonine-protein kinase (EC 2.7.11.1) (S	w
+SNF11	yeast	P38956	SNF11	P38956	1	27	Transcription regulatory protein SNF11	
+SNF12	candida-albicans-237561	A0A1D8PHT4	SNF12	A0A1D8PHT4	6	42	Uncharacterized protein	
+SNF12	yeast	P53628	SNF12	P53628	9	79	Transcription regulatory protein SNF12	
+SNF12-1	dictyostelium-discoideum	Q556Z0	snf12-1	Q556Z0	5	57	SWI/SNF complex component SNF12 homolog	
+SNF1LK	human	P57059	SIK1	P57059	33	160		
+SNF1LK2	human	Q9H0K1	SIK2	Q9H0K1	68	220		
+SNF1LK2A	zebrafish	A0A8M1NG45	sik2a	A0A8M1NG45	37	65		
+SNF1_YEAST	yeast	P06782	SNF1	P06782	11	117		
+SNF2	human	Q149N8	SHPRH	Q149N8	8	269	E3 ubiquitin-protein ligase SHPRH (EC 2.3.2.27) (EC 3.6.4.-)	w
+SNF2	human	Q9NZC9	SMARCAL1	Q9NZC9	12	129	SNF2 related chromatin remodeling annealing helicase 1 (EC 3	w
+SNF2	worm	G1K104	CELE_M04C3.2	G1K104	0	8	SNF2 N-terminal domain-containing protein	w
+SNF2	worm	M1Z848	CELE_M04C3.1	M1Z848	0	8	SNF2 N-terminal domain-containing protein	w
+SNF2	worm	O62078	C25F9.4	O62078	0	9	SNF2 N-terminal domain-containing protein	w
+SNF2	worm	O62079	C25F9.5	O62079	0	10	SNF2 N-terminal domain-containing protein	w
+SNF2	worm	Q9XWW9	CELE_Y43F8B.14	Q9XWW9	0	9	SNF2 N-terminal domain-containing protein	w
+SNF2	worm	Q9XXT0	CELE_F19B2.5	Q9XXT0	1	6	SNF2 N-terminal domain-containing protein	w
+SNF2-LIKE	human	Q9NRZ9	HELLS	Q9NRZ9	7	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	w
+SNF2-R	human	Q96L91	EP400	Q96L91	19	392	E1A-binding protein p400 (EC 3.6.4.-) (CAG repeat protein 32	w
+SNF2-RELATED	human	Q6ZRS2	SRCAP	Q6ZRS2	8	272	Chromatin remodeling protein SRCAP (EC 3.6.4.-) (Domino homo	w
+SNF2-RELATED	human	Q9NRZ9	HELLS	Q9NRZ9	7	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	w
+SNF21	cladophialophora-carrionii	A0A1C1D1U0	snf21	A0A1C1D1U0	6	50	Chromatin structure-remodeling complex subunit snf21	
+SNF21	schizosaccharomyces-pombe	Q9UTN6	snf21	Q9UTN6	6	37	Chromatin structure-remodeling complex subunit snf21	
+SNF2A	human	P51531	SMARCA2	P51531	35	399		
+SNF2B	human	P51532	SMARCA4	P51532	39	544		
+SNF2H	human	O60264	SMARCA5	O60264	73	676		
+SNF2L	human	P28370	SMARCA1	P28370	43	373		
+SNF2L1	human	P28370	SMARCA1	P28370	43	373		
+SNF2L1	zebrafish	A5WUY4	smarca1	A5WUY4	8	133	Probable global transcription activator SNF2L1	w
+SNF2L2	human	P51531	SMARCA2	P51531	35	399		
+SNF2L3	human	Q14527	HLTF	Q14527	7	234		
+SNF2L4	human	P51532	SMARCA4	P51532	39	544		
+SNF3	yeast	P10870	SNF3	P10870	4	10	Low glucose sensor SNF3	
+SNF3	yeast	Q12505	SKS1	Q12505	12	58	Serine/threonine-protein kinase SKS1 (EC 2.7.11.1) (Suppress	w
+SNF30	schizosaccharomyces-pombe	Q9P7S6	snf30	Q9P7S6	1	12	SWI/SNF chromatin-remodeling complex subunit snf30	
+SNF4	arabidopsis-thaliana	Q944A6	SNF4	Q944A6	12	127	Sucrose nonfermenting 4-like protein	
+SNF4	candida-albicans-237561	A0A1D8PQA6	SNF4	A0A1D8PQA6	4	13	5'-AMP-activated protein kinase subunit gamma	
+SNF4	cladophialophora-carrionii	A0A1C1C9G1	SNF4	A0A1C1C9G1	2	24	Nuclear protein SNF4	
+SNF4	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50	LD22662p (Loechrig isoform I) (SNF4/AMP-activated protein ki	w
+SNF4	yeast	P12904	SNF4	P12904	5	59	5'-AMP-activated protein kinase subunit gamma	
+SNF4AGAMMA	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50	LD22662p (Loechrig isoform I) (SNF4/AMP-activated protein ki	
+SNF4AGAMMA_141	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50		
+SNF4AGAMMA_314	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50		
+SNF4AGAMMA_471	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50		
+SNF4AGAMMA_7	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50		
+SNF4AGAMMA_79	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50		
+SNF4AGAMMA_81	fly	FBgn0264357	SNF4Agamma	Q9VDD2	7	50		
+SNF5	candida-albicans-237561	A0A1D8PJZ6	SNF5	A0A1D8PJZ6	6	36	Snf5p	
+SNF5	glycine-max	D7RJ53	SNF5	D7RJ53	9	331	Chromatin structure-remodeling complex protein BSH-like	
+SNF5	schizosaccharomyces-pombe	Q09699	snf5	Q09699	5	41	SWI/SNF chromatin-remodeling complex subunit snf5	
+SNF5	yeast	P18480	SNF5	P18480	14	106	SWI/SNF chromatin-remodeling complex subunit SNF5	
+SNF5-RELATED	fly	FBgn0011715	Snr1	Q24090	72	688	GH08712p (SNR1) (Snf5-related 1)	w
+SNF59	schizosaccharomyces-pombe	O74792	snf59	O74792	2	15	SWI/SNF global transcription activator complex subunit snf59	
+SNF5L1	human	Q12824	SMARCB1	Q12824	92	1049		
+SNF5_HUMAN	human	Q12824	SMARCB1	Q12824	92	1049		
+SNF6	candida-albicans-237561	A0A1D8PH05	SNF6	A0A1D8PH05	8	111	Uncharacterized protein	
+SNF6	yeast	P18888	SNF6	P18888	5	94	Transcription regulatory protein SNF6	
+SNF7	candida-albicans-237561	Q5ABD0	SNF7	Q5ABD0	5	25	Vacuolar-sorting protein SNF7	
+SNF7	cladophialophora-carrionii	A0A1C1CGB5	SNF7	A0A1C1CGB5	6	28	Vacuolar-sorting protein SNF7	
+SNF7	human	Q96CF2	CHMP4C	Q96CF2	45	772	Charged multivesicular body protein 4c (Chromatin-modifying 	w
+SNF7	human	Q9BY43	CHMP4A	Q9BY43	21	137	Charged multivesicular body protein 4a (Chromatin-modifying 	w
+SNF7	human	Q9H444	CHMP4B	Q9H444	36	726	Charged multivesicular body protein 4b (Chromatin-modifying 	w
+SNF7	human	Q9NZZ3	CHMP5	Q9NZZ3	21	178	Charged multivesicular body protein 5 (Chromatin-modifying p	w
+SNF7	schizosaccharomyces-pombe	Q9P7F7	snf7	Q9P7F7	5	26	Vacuolar-sorting protein snf7	
+SNF7	yeast	P39929	SNF7	P39929	10	86	Vacuolar-sorting protein SNF7	
+SNF7-1	human	Q9BY43	CHMP4A	Q9BY43	21	137	Charged multivesicular body protein 4a (Chromatin-modifying 	w
+SNF7-2	human	Q9H444	CHMP4B	Q9H444	36	726	Charged multivesicular body protein 4b (Chromatin-modifying 	w
+SNF7-3	human	Q96CF2	CHMP4C	Q96CF2	45	772	Charged multivesicular body protein 4c (Chromatin-modifying 	w
+SNF7DC2	human	Q9NZZ3	CHMP5	Q9NZZ3	21	178		
+SNF8	dictyostelium-discoideum	Q54RC4	snf8	Q54RC4	2	21	Vacuolar-sorting protein SNF8	
+SNF8	fly	FBgn0260940	lsn	Q9VD72	3	33	Vacuolar-sorting protein SNF8	w
+SNF8	human	Q96H20	SNF8	Q96H20	8	136	Vacuolar-sorting protein SNF8 (ELL-associated protein of 30 	
+SNF8	mus-musculus	Q9CZ28	Snf8	Q9CZ28	4	34	Vacuolar-sorting protein SNF8	
+SNF8	rattus-norvegicus	Q5RK19	Snf8	Q5RK19	4	31	Vacuolar-sorting protein SNF8	
+SNF8	worm	Q18258	vps-22	Q18258	3	45	Vacuolar-sorting protein SNF8	w
+SNF8	yeast	Q12483	SNF8	Q12483	4	21	Vacuolar-sorting protein SNF8	
+SNF8	zebrafish	Q5U3V9	snf8	Q5U3V9	2	30	Vacuolar-sorting protein SNF8	w
+SNF8	zebrafish	Q5U3V9	snf8	Q5U3V9	2	30	Vacuolar-sorting protein SNF8	w
+SNF8_HUMAN	human	Q96H20	SNF8	Q96H20	8	136		
+SNFA	dictyostelium-discoideum	Q54YF2	snfA	Q54YF2	1	13	5'-AMP-activated serine/threonine-protein kinase catalytic s	
+SNFC-5	worm	Q21831	snfc-5	Q21831	1	147	SWI/SNF Subunit INI1 DNA binding domain-containing protein	
+SNFRK	human	Q9NRH2	SNRK	Q9NRH2	29	163		
+SNFT	human	Q9NR55	BATF3	Q9NR55	122	594		
+SNF_114	fly	FBgn0003449	snf	P43332	19	264		

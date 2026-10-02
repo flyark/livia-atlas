@@ -1,72 +1,417 @@
-DEF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIT8	def	Q9PIT8	5	55	Peptide deformylase
-DEF	escherichia-coli-83333	P0A6K3	def	P0A6K3	11	55	Peptide deformylase
-DEF	haemophilus-influenzae	P44786	def	P44786	10	52	Peptide deformylase
-DEF	helicobacter-pylori	P56419	def	P56419	10	57	Peptide deformylase
-DEF	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H3U3	def	A0A0H3H3U3	18	100	Peptide deformylase
-DEF	mycobacterium-leprae	Q9CBI2	def	Q9CBI2	19	73	Peptide deformylase
-DEF	mycobacterium-tuberculosis	P9WIJ3	def	P9WIJ3	15	60	Peptide deformylase
-DEF	neisseria-gonorrhoeae	Q5F5P6	def	Q5F5P6	19	56	Peptide deformylase
-DEF	nocardia-brasiliensis	K0EXL0	def	K0EXL0	11	66	Peptide deformylase
-DEF	nocardia-brasiliensis	K0F369	def	K0F369	11	66	Peptide deformylase
-DEF	nocardia-brasiliensis	K0F5A6	def	K0F5A6	14	66	Peptide deformylase
-DEF	nocardia-brasiliensis	K0F830	def	K0F830	14	66	Peptide deformylase
-DEF	pseudomonas-aeruginosa	Q9I7A8	def	Q9I7A8	18	62	Peptide deformylase
-DEF	salmonella-typhimurium	Q8ZLM7	def	Q8ZLM7	12	51	Peptide deformylase
-DEF	shigella-dysenteriae-serotype-1	Q32B63	def	Q32B63	10	55	Peptide deformylase
-DEF	staphylococcus-aureus-93061	Q2FZG6	def	Q2FZG6	8	53	Peptide deformylase
-DEF	streptococcus-pneumoniae	Q8DP22	def	Q8DP22	2	53	Formylmethionine deformylase
-DEF	streptococcus-pneumoniae	Q8DP79	def	Q8DP79	7	53	Peptide deformylase
-DEF1	candida-albicans-237561	G1UB67	DEF1	G1UB67	1	30	Transcriptional regulator DEF1
-DEF1	candida-albicans-237561	Q5AMM4	DEF1	Q5AMM4	0	3	RNA polymerase II degradation factor 1
-DEF1	cladophialophora-carrionii	A0A1C1C6E2	def1	A0A1C1C6E2	8	68	Peptide deformylase
-DEF1	schizosaccharomyces-pombe	O43024	def1	O43024	0	3	RNA polymerase II degradation factor 1
-DEF6	mus-musculus	Q8C2K1	Def6	Q8C2K1	0	7	Differentially expressed in FDCP 6
-DEF6	rattus-norvegicus	D3ZCK4	Def6	D3ZCK4	0	4	IRF4-binding protein
-DEF8	mus-musculus	Q99J78	Def8	Q99J78	0	1	Differentially expressed in FDCP 8
-DEF8	rattus-norvegicus	Q4V8I4	Def8	Q4V8I4	0	7	Differentially expressed in FDCP 8 homolog
-DEFA	rattus-norvegicus	Q62715	Defa	Q62715	3	9	Neutrophil antibiotic peptide NP-2
-DEFA20	mus-musculus	Q45VN2	Defa20	Q45VN2	10	19	Alpha-defensin 20
-DEFA21	mus-musculus	Q8C1P2	Defa21	Q8C1P2	11	19	Alpha-defensin 21
-DEFA23	mus-musculus	Q5G866	Defa23	Q5G866	7	19	Alpha-defensin 23
-DEFA24	mus-musculus	Q5G865	Defa24	Q5G865	5	19	Alpha-defensin 24
-DEFA25	mus-musculus	Q5G864	Defa25	Q5G864	4	19	Alpha-defensin 25
-DEFA26	mus-musculus	Q3L180	Defa26	Q3L180	5	21	Alpha-defensin 26
-DEFA28	mus-musculus	D3Z1V9	Defa28	D3Z1V9	5	19	Defensin, alpha, 28
-DEFA29	mus-musculus	P17533	Defa29	P17533	0	19	Alpha-defensin 29
-DEFA3	mus-musculus	P28310	Defa3	P28310	7	19	Alpha-defensin 3
-DEFA3	rattus-norvegicus	Q4JEI3	Defa3	Q4JEI3	2	9	Defensin alpha 11
-DEFA30	mus-musculus	E9QPZ2	Defa30	E9QPZ2	10	19	Defensin, alpha, 30
-DEFA31	rattus-norvegicus	F1LSU5	Defa31	F1LSU5	4	9	Defensin alpha 31
-DEFA34	mus-musculus	D3Z0J0	Defa34	D3Z0J0	5	19	Defensin, alpha, 34
-DEFA36	mus-musculus	K9J724	Defa36	K9J724	4	19	Defensin, alpha, 36
-DEFA38	mus-musculus	Q5ERJ0	Defa38	Q5ERJ0	0	19	CRS1C-2
-DEFA39	mus-musculus	Q9D848	Defa39	Q9D848	0	19	CRS1C-3
-DEFA40	mus-musculus	L7N231	Defa40	L7N231	5	19	Defensin, alpha, 40
-DEFA41	mus-musculus	D3YX02	Defa41	D3YX02	4	19	Defensin, alpha, 41
-DEFA42	mus-musculus	D3YX03	Defa42	D3YX03	0	19	Defensin, alpha, 42
-DEFA5	mus-musculus	L7N230	Defa5	L7N230	0	3	Defensin, alpha, 5
-DEFA5	mus-musculus	P28312	Defa5	P28312	4	22	Alpha-defensin 5
-DEFA6	rattus-norvegicus	Q4JEI8	Defa6	Q4JEI8	3	9	Defensin alpha 6
-DEFA8	rattus-norvegicus	Q4JEI6	Defa8	Q4JEI6	3	9	Defensin alpha 8
-DEFA9	rattus-norvegicus	Q4JEI5	Defa9	Q4JEI5	4	9	Defensin alpha 9
-DEFAL1	rattus-norvegicus	Q4JEI2	Defal1	Q4JEI2	3	9	Defensin alpha-like protein 1
-DEFB1	mus-musculus	P56386	Defb1	P56386	0	16	Beta-defensin 1
-DEFB1	rattus-norvegicus	O89117	Defb1	O89117	0	19	Beta-defensin 1
-DEFB10	rattus-norvegicus	Q32ZI1	Defb10	Q32ZI1	0	2	Beta-defensin 10
-DEFB11	mus-musculus	Q8R2I7	Defb11	Q8R2I7	0	1	Beta-defensin 11
-DEFB14	mus-musculus	Q7TNV9	Defb14	Q7TNV9	0	11	Beta-defensin 14
-DEFB14	rattus-norvegicus	Q32ZH7	Defb14	Q32ZH7	0	12	Beta-defensin 14
-DEFB2	mus-musculus	P82020	Defb2	P82020	0	5	Beta-defensin 2
-DEFB2	rattus-norvegicus	Q32ZI5	Defb2	Q32ZI5	0	2	Beta-defensin 2
-DEFB26	mus-musculus	Q30KN7	Defb26	Q30KN7	0	32	Beta-defensin
-DEFB26	rattus-norvegicus	Q32ZG6	Defb26	Q32ZG6	1	41	Beta-defensin
-DEFB3	mus-musculus	Q9WTL0	Defb3	Q9WTL0	0	3	Beta-defensin 3
-DEFB4	mus-musculus	P82019	Defb4	P82019	0	4	Beta-defensin 4
-DEFB4	rattus-norvegicus	O88514	Defb4	O88514	0	11	Beta-defensin 4
-DEFB46	mus-musculus	Q4QY34	Defb46	Q4QY34	1	2	Beta-defensin 50
-DEFB5	mus-musculus	Q9EPV9	Defb5	Q9EPV9	0	2	Beta-defensin 5
-DEFB5	rattus-norvegicus	Q32ZI3	Defb5	Q32ZI3	0	6	Beta-defensin 5
-DEFB6	mus-musculus	Q91VD6	Defb6	Q91VD6	0	2	Beta-defensin 6
-DEFB7	mus-musculus	Q91V70	Defb7	Q91V70	0	2	Beta-defensin 7
-DEFB8	mus-musculus	Q91V82	Defb8	Q91V82	0	4	Beta-defensin 8
-DEFB9	rattus-norvegicus	Q32ZI2	Defb9	Q32ZI2	0	2	Beta-defensin 9
+DEF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIT8	def	Q9PIT8	5	55	Peptide deformylase	
+DEF	escherichia-coli-83333	P0A6K3	def	P0A6K3	11	55	Peptide deformylase	
+DEF	fly	FBgn0010385	Def	P36192	21	264	Defensin	
+DEF	haemophilus-influenzae	P44786	def	P44786	10	52	Peptide deformylase	
+DEF	helicobacter-pylori	P56419	def	P56419	10	57	Peptide deformylase	
+DEF	human	Q68CQ4	UTP25	Q68CQ4	41	319		
+DEF	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H3U3	def	A0A0H3H3U3	18	100	Peptide deformylase	
+DEF	mycobacterium-leprae	Q9CBI2	def	Q9CBI2	19	73	Peptide deformylase	
+DEF	mycobacterium-tuberculosis	P9WIJ3	def	P9WIJ3	15	60	Peptide deformylase	
+DEF	neisseria-gonorrhoeae	Q5F5P6	def	Q5F5P6	19	56	Peptide deformylase	
+DEF	nocardia-brasiliensis	K0EXL0	def	K0EXL0	11	66	Peptide deformylase	
+DEF	nocardia-brasiliensis	K0F369	def	K0F369	11	66	Peptide deformylase	
+DEF	nocardia-brasiliensis	K0F5A6	def	K0F5A6	14	66	Peptide deformylase	
+DEF	nocardia-brasiliensis	K0F830	def	K0F830	14	66	Peptide deformylase	
+DEF	pseudomonas-aeruginosa	Q9I7A8	def	Q9I7A8	18	62	Peptide deformylase	
+DEF	salmonella-typhimurium	Q8ZLM7	def	Q8ZLM7	12	51	Peptide deformylase	
+DEF	shigella-dysenteriae-serotype-1	Q32B63	def	Q32B63	10	55	Peptide deformylase	
+DEF	staphylococcus-aureus-93061	Q2FZG6	def	Q2FZG6	8	53	Peptide deformylase	
+DEF	streptococcus-pneumoniae	Q8DP22	def	Q8DP22	2	53	Formylmethionine deformylase	
+DEF	streptococcus-pneumoniae	Q8DP79	def	Q8DP79	7	53	Peptide deformylase	
+DEF-3	human	P78332	RBM6	P78332	41	219	RNA-binding protein 6 (Lung cancer antigen NY-LU-12) (Protei	w
+DEF-6	human	Q9H4E7	DEF6	Q9H4E7	28	117	Differentially expressed in FDCP 6 homolog (DEF-6) (IRF4-bin	w
+DEF-8	human	Q6ZN54	DEF8	Q6ZN54	7	78	Differentially expressed in FDCP 8 homolog (DEF-8)	w
+DEF-G1	fly	FBgn0263133	mEFG1	Q9VM33	1	271	Elongation factor G, mitochondrial (EF-Gmt) (Elongation fact	w
+DEF1	candida-albicans-237561	G1UB67	DEF1	G1UB67	1	30	Transcriptional regulator DEF1	
+DEF1	candida-albicans-237561	Q5AMM4	DEF1	Q5AMM4	0	3	RNA polymerase II degradation factor 1	
+DEF1	cladophialophora-carrionii	A0A1C1C6E2	def1	A0A1C1C6E2	8	68	Peptide deformylase	
+DEF1	human	P59665	DEFA1	P59665	33	181		
+DEF1	schizosaccharomyces-pombe	O43024	def1	O43024	0	3	RNA polymerase II degradation factor 1	
+DEF1	yeast	P35732	DEF1	P35732	7	244	RNA polymerase II degradation factor 1	
+DEF1_HUMAN	human	P59665	DEFA1	P59665	33	181		
+DEF3	human	P59666	DEFA3	P59666	40	202		
+DEF3	human	P78332	RBM6	P78332	41	219		
+DEF3_HUMAN	human	P59666	DEFA3	P59666	40	202		
+DEF4	human	P12838	DEFA4	P12838	11	93		
+DEF4_HUMAN	human	P12838	DEFA4	P12838	11	93		
+DEF5	human	Q01523	DEFA5	Q01523	20	138		
+DEF5_HUMAN	human	Q01523	DEFA5	Q01523	20	138		
+DEF6	human	Q01524	DEFA6	Q01524	7	83		
+DEF6	human	Q9H4E7	DEF6	Q9H4E7	28	117	Differentially expressed in FDCP 6 homolog (DEF-6) (IRF4-bin	
+DEF6	mus-musculus	Q8C2K1	Def6	Q8C2K1	0	7	Differentially expressed in FDCP 6	
+DEF6	rattus-norvegicus	D3ZCK4	Def6	D3ZCK4	0	4	IRF4-binding protein	
+DEF6	zebrafish	Q7SYB5	def6	Q7SYB5	0	8	Differentially expressed in FDCP 6 homolog	
+DEF6_HUMAN	human	Q01524	DEFA6	Q01524	7	83		
+DEF8	fly	FBgn0046296	DEF8	Q9VTT9	6	27	Differentially expressed in FDCP 8 homolog	
+DEF8	human	Q6ZN54	DEF8	Q6ZN54	7	78	Differentially expressed in FDCP 8 homolog (DEF-8)	
+DEF8	mus-musculus	Q99J78	Def8	Q99J78	0	1	Differentially expressed in FDCP 8	
+DEF8	rattus-norvegicus	Q4V8I4	Def8	Q4V8I4	0	7	Differentially expressed in FDCP 8 homolog	
+DEF8	zebrafish	A0A0R4IHS8	def8	A0A0R4IHS8	1	6	Differentially expressed in FDCP 8 homolog	
+DEFA	rattus-norvegicus	Q62715	Defa	Q62715	3	9	Neutrophil antibiotic peptide NP-2	
+DEFA1	human	P59665	DEFA1	P59665	33	181	Neutrophil defensin 1 (Defensin, alpha 1) (HNP-1) (HP-1) (HP	
+DEFA1B	human	P59665	DEFA1	P59665	33	181		
+DEFA2	human	P59665	DEFA1	P59665	33	181		
+DEFA20	mus-musculus	Q45VN2	Defa20	Q45VN2	10	19	Alpha-defensin 20	
+DEFA21	mus-musculus	Q8C1P2	Defa21	Q8C1P2	11	19	Alpha-defensin 21	
+DEFA23	mus-musculus	Q5G866	Defa23	Q5G866	7	19	Alpha-defensin 23	
+DEFA24	mus-musculus	Q5G865	Defa24	Q5G865	5	19	Alpha-defensin 24	
+DEFA25	mus-musculus	Q5G864	Defa25	Q5G864	4	19	Alpha-defensin 25	
+DEFA26	mus-musculus	Q3L180	Defa26	Q3L180	5	21	Alpha-defensin 26	
+DEFA28	mus-musculus	D3Z1V9	Defa28	D3Z1V9	5	19	Defensin, alpha, 28	
+DEFA29	mus-musculus	P17533	Defa29	P17533	0	19	Alpha-defensin 29	
+DEFA3	human	P59666	DEFA3	P59666	40	202	Neutrophil defensin 3 (Defensin, alpha 3) (HNP-3) (HP-3) (HP	
+DEFA3	mus-musculus	P28310	Defa3	P28310	7	19	Alpha-defensin 3	
+DEFA3	rattus-norvegicus	Q4JEI3	Defa3	Q4JEI3	2	9	Defensin alpha 11	
+DEFA30	mus-musculus	E9QPZ2	Defa30	E9QPZ2	10	19	Defensin, alpha, 30	
+DEFA31	rattus-norvegicus	F1LSU5	Defa31	F1LSU5	4	9	Defensin alpha 31	
+DEFA34	mus-musculus	D3Z0J0	Defa34	D3Z0J0	5	19	Defensin, alpha, 34	
+DEFA36	mus-musculus	K9J724	Defa36	K9J724	4	19	Defensin, alpha, 36	
+DEFA38	mus-musculus	Q5ERJ0	Defa38	Q5ERJ0	0	19	CRS1C-2	
+DEFA39	mus-musculus	Q9D848	Defa39	Q9D848	0	19	CRS1C-3	
+DEFA4	human	P12838	DEFA4	P12838	11	93	Defensin alpha 4 (Corticostatin HP-4) (HNP-4) (HP-4) (Neutro	
+DEFA40	mus-musculus	L7N231	Defa40	L7N231	5	19	Defensin, alpha, 40	
+DEFA41	mus-musculus	D3YX02	Defa41	D3YX02	4	19	Defensin, alpha, 41	
+DEFA42	mus-musculus	D3YX03	Defa42	D3YX03	0	19	Defensin, alpha, 42	
+DEFA5	human	Q01523	DEFA5	Q01523	20	138	Defensin alpha 5 (Defensin-5) (HD5(20-94)) [Cleaved into: HD	
+DEFA5	mus-musculus	L7N230	Defa5	L7N230	0	3	Defensin, alpha, 5	
+DEFA5	mus-musculus	P28312	Defa5	P28312	4	22	Alpha-defensin 5	
+DEFA6	human	Q01524	DEFA6	Q01524	7	83	Defensin-6 (Defensin, alpha 6)	
+DEFA6	rattus-norvegicus	Q4JEI8	Defa6	Q4JEI8	3	9	Defensin alpha 6	
+DEFA8	rattus-norvegicus	Q4JEI6	Defa8	Q4JEI6	3	9	Defensin alpha 8	
+DEFA9	rattus-norvegicus	Q4JEI5	Defa9	Q4JEI5	4	9	Defensin alpha 9	
+DEFAL1	rattus-norvegicus	Q4JEI2	Defal1	Q4JEI2	3	9	Defensin alpha-like protein 1	
+DEFATTY-ACYLASE	human	Q8IXJ6	SIRT2	Q8IXJ6	39	267	NAD-dependent protein deacetylase sirtuin-2 (EC 2.3.1.286) (	w
+DEFB-10	human	Q30KQ9	DEFB110	Q30KQ9	9	79	Beta-defensin 110 (Beta-defensin 10) (DEFB-10) (Beta-defensi	w
+DEFB-109	human	Q30KR1	DEFB109B	Q30KR1	1	16	Beta-defensin 109B (DEFB-109) (HBD9) (Defensin beta 109B)	w
+DEFB-11	human	Q30KQ9	DEFB110	Q30KQ9	9	79	Beta-defensin 110 (Beta-defensin 10) (DEFB-10) (Beta-defensi	w
+DEFB-12	human	Q30KQ8	DEFB112	Q30KQ8	3	63	Beta-defensin 112 (Beta-defensin 12) (DEFB-12) (Defensin, be	w
+DEFB-13	human	Q30KQ7	DEFB113	Q30KQ7	4	55	Beta-defensin 113 (Beta-defensin 13) (DEFB-13) (Defensin, be	w
+DEFB-14	human	Q30KQ6	DEFB114	Q30KQ6	7	63	Beta-defensin 114 (Beta-defensin 14) (DEFB-14) (Defensin, be	w
+DEFB-15	human	Q30KQ5	DEFB115	Q30KQ5	7	75	Beta-defensin 115 (Beta-defensin 15) (DEFB-15) (Defensin, be	w
+DEFB-16	human	Q30KQ4	DEFB116	Q30KQ4	16	60	Beta-defensin 116 (Beta-defensin 16) (DEFB-16) (Defensin, be	w
+DEFB-18	human	Q96PH6	DEFB118	Q96PH6	4	51	Defensin beta 118 (Beta-defensin 18) (DEFB-18) (Epididymal s	w
+DEFB-19	human	Q8N690	DEFB119	Q8N690	5	31	Beta-defensin 119 (Beta-defensin 120) (Beta-defensin 19) (DE	w
+DEFB-20	human	Q8N690	DEFB119	Q8N690	5	31	Beta-defensin 119 (Beta-defensin 120) (Beta-defensin 19) (DE	w
+DEFB-21	human	Q5J5C9	DEFB121	Q5J5C9	14	89	Beta-defensin 121 (Beta-defensin 21) (DEFB-21) (Defensin, be	w
+DEFB-23	human	Q8N688	DEFB123	Q8N688	7	74	Beta-defensin 123 (Beta-defensin 23) (DEFB-23) (Defensin, be	w
+DEFB-24	human	Q8NES8	DEFB124	Q8NES8	6	87	Beta-defensin 124 (Beta-defensin 24) (DEFB-24) (Defensin, be	w
+DEFB-25	human	Q8N687	DEFB125	Q8N687	8	155	Beta-defensin 125 (Beta-defensin 25) (DEFB-25) (Defensin, be	w
+DEFB-26	human	Q9BYW3	DEFB126	Q9BYW3	12	67	Beta-defensin 126 (Beta-defensin 26) (DEFB-26) (Defensin, be	w
+DEFB-27	human	Q9H1M4	DEFB127	Q9H1M4	12	78	Beta-defensin 127 (Beta-defensin 27) (DEFB-27) (Defensin, be	w
+DEFB-28	human	Q7Z7B8	DEFB128	Q7Z7B8	7	61	Beta-defensin 128 (Beta-defensin 28) (DEFB-28) (Defensin, be	w
+DEFB-29	human	Q9H1M3	DEFB129	Q9H1M3	4	39	Beta-defensin 129 (Beta-defensin 29) (DEFB-29) (Defensin, be	w
+DEFB-3	human	P81534	DEFB103A	P81534	33	220	Beta-defensin 103 (Beta-defensin 3) (BD-3) (DEFB-3) (HBD3) (	w
+DEFB-30	human	P0DP74	DEFB130A	P0DP74	13	70	Beta-defensin 130A (Beta-defensin 130) (Beta-defensin 30) (D	w
+DEFB-31	human	P59861	DEFB131A	P59861	6	49	Beta-defensin 131A (Beta-defensin 31) (DEFB-31) (Defensin, b	w
+DEFB-32	human	Q7Z7B7	DEFB132	Q7Z7B7	18	61	Beta-defensin 132 (Beta-defensin 32) (BD-32) (DEFB-32) (Defe	w
+DEFB-4	human	Q8WTQ1	DEFB104A	Q8WTQ1	17	90	Beta-defensin 104 (Beta-defensin 4) (BD-4) (DEFB-4) (hBD-4) 	w
+DEFB-5	human	Q8NG35	DEFB105A	Q8NG35	1	64	Beta-defensin 105 (Beta-defensin 5) (BD-5) (DEFB-5) (Defensi	w
+DEFB-6	human	Q8N104	DEFB106A	Q8N104	26	101	Beta-defensin 106 (Beta-defensin 6) (BD-6) (DEFB-6) (Defensi	w
+DEFB-7	human	Q8IZN7	DEFB107A	Q8IZN7	14	59	Beta-defensin 107 (Beta-defensin 7) (BD-7) (DEFB-7) (Defensi	w
+DEFB-8	human	Q8NET1	DEFB108B	Q8NET1	5	62	Beta-defensin 108B (Beta-defensin 8) (BD-8) (DEFB-8) (hBD-8)	w
+DEFB1	human	P60022	DEFB1	P60022	27	242	Beta-defensin 1 (BD-1) (hBD-1) (Defensin, beta 1)	
+DEFB1	mus-musculus	P56386	Defb1	P56386	0	16	Beta-defensin 1	
+DEFB1	rattus-norvegicus	O89117	Defb1	O89117	0	19	Beta-defensin 1	
+DEFB10	human	Q30KQ9	DEFB110	Q30KQ9	9	79		
+DEFB10	rattus-norvegicus	Q32ZI1	Defb10	Q32ZI1	0	2	Beta-defensin 10	
+DEFB102	human	O15263	DEFB4A	O15263	35	239		
+DEFB103	human	P81534	DEFB103A	P81534	33	220		
+DEFB103A	human	P81534	DEFB103A	P81534	33	220	Beta-defensin 103 (Beta-defensin 3) (BD-3) (DEFB-3) (HBD3) (	
+DEFB103B	human	P81534	DEFB103A	P81534	33	220		
+DEFB104	human	Q8WTQ1	DEFB104A	Q8WTQ1	17	90		
+DEFB104A	human	Q8WTQ1	DEFB104A	Q8WTQ1	17	90	Beta-defensin 104 (Beta-defensin 4) (BD-4) (DEFB-4) (hBD-4) 	
+DEFB104B	human	Q8WTQ1	DEFB104A	Q8WTQ1	17	90		
+DEFB105	human	Q8NG35	DEFB105A	Q8NG35	1	64		
+DEFB105A	human	Q8NG35	DEFB105A	Q8NG35	1	64	Beta-defensin 105 (Beta-defensin 5) (BD-5) (DEFB-5) (Defensi	
+DEFB105B	human	Q8NG35	DEFB105A	Q8NG35	1	64		
+DEFB106	human	Q8N104	DEFB106A	Q8N104	26	101		
+DEFB106A	human	Q8N104	DEFB106A	Q8N104	26	101	Beta-defensin 106 (Beta-defensin 6) (BD-6) (DEFB-6) (Defensi	
+DEFB106B	human	Q8N104	DEFB106A	Q8N104	26	101		
+DEFB107	human	Q8IZN7	DEFB107A	Q8IZN7	14	59		
+DEFB107A	human	Q8IZN7	DEFB107A	Q8IZN7	14	59	Beta-defensin 107 (Beta-defensin 7) (BD-7) (DEFB-7) (Defensi	
+DEFB107B	human	Q8IZN7	DEFB107A	Q8IZN7	14	59		
+DEFB108	human	Q8NET1	DEFB108B	Q8NET1	5	62		
+DEFB108A	human	A8MXU0	DEFB108A	A8MXU0	3	23	Putative beta-defensin 108A (Defensin, beta 108A) (Defensin,	
+DEFB108B	human	Q8NET1	DEFB108B	Q8NET1	5	62	Beta-defensin 108B (Beta-defensin 8) (BD-8) (DEFB-8) (hBD-8)	
+DEFB108C	human	A8MXU0	DEFB108A	A8MXU0	3	23		
+DEFB108P1;	human	A8MXU0	DEFB108A	A8MXU0	3	23		
+DEFB108P2	human	A8MXU0	DEFB108A	A8MXU0	3	23		
+DEFB109B	human	Q30KR1	DEFB109B	Q30KR1	1	16	Beta-defensin 109B (DEFB-109) (HBD9) (Defensin beta 109B)	
+DEFB109P1B	human	Q30KR1	DEFB109B	Q30KR1	1	16		
+DEFB11	human	Q30KQ9	DEFB110	Q30KQ9	9	79		
+DEFB11	mus-musculus	Q8R2I7	Defb11	Q8R2I7	0	1	Beta-defensin 11	
+DEFB110	human	Q30KQ9	DEFB110	Q30KQ9	9	79	Beta-defensin 110 (Beta-defensin 10) (DEFB-10) (Beta-defensi	
+DEFB111	human	Q30KQ9	DEFB110	Q30KQ9	9	79		
+DEFB112	human	Q30KQ8	DEFB112	Q30KQ8	3	63	Beta-defensin 112 (Beta-defensin 12) (DEFB-12) (Defensin, be	
+DEFB113	human	Q30KQ7	DEFB113	Q30KQ7	4	55	Beta-defensin 113 (Beta-defensin 13) (DEFB-13) (Defensin, be	
+DEFB114	human	Q30KQ6	DEFB114	Q30KQ6	7	63	Beta-defensin 114 (Beta-defensin 14) (DEFB-14) (Defensin, be	
+DEFB115	human	Q30KQ5	DEFB115	Q30KQ5	7	75	Beta-defensin 115 (Beta-defensin 15) (DEFB-15) (Defensin, be	
+DEFB116	human	Q30KQ4	DEFB116	Q30KQ4	16	60	Beta-defensin 116 (Beta-defensin 16) (DEFB-16) (Defensin, be	
+DEFB118	human	Q96PH6	DEFB118	Q96PH6	4	51	Defensin beta 118 (Beta-defensin 18) (DEFB-18) (Epididymal s	
+DEFB119	human	Q8N690	DEFB119	Q8N690	5	31	Beta-defensin 119 (Beta-defensin 120) (Beta-defensin 19) (DE	
+DEFB12	human	Q30KQ8	DEFB112	Q30KQ8	3	63		
+DEFB120	human	Q8N690	DEFB119	Q8N690	5	31		
+DEFB121	human	Q5J5C9	DEFB121	Q5J5C9	14	89	Beta-defensin 121 (Beta-defensin 21) (DEFB-21) (Defensin, be	
+DEFB123	human	Q8N688	DEFB123	Q8N688	7	74	Beta-defensin 123 (Beta-defensin 23) (DEFB-23) (Defensin, be	
+DEFB124	human	Q8NES8	DEFB124	Q8NES8	6	87	Beta-defensin 124 (Beta-defensin 24) (DEFB-24) (Defensin, be	
+DEFB125	human	Q8N687	DEFB125	Q8N687	8	155	Beta-defensin 125 (Beta-defensin 25) (DEFB-25) (Defensin, be	
+DEFB126	human	Q9BYW3	DEFB126	Q9BYW3	12	67	Beta-defensin 126 (Beta-defensin 26) (DEFB-26) (Defensin, be	
+DEFB127	human	Q9H1M4	DEFB127	Q9H1M4	12	78	Beta-defensin 127 (Beta-defensin 27) (DEFB-27) (Defensin, be	
+DEFB128	human	Q7Z7B8	DEFB128	Q7Z7B8	7	61	Beta-defensin 128 (Beta-defensin 28) (DEFB-28) (Defensin, be	
+DEFB129	human	Q9H1M3	DEFB129	Q9H1M3	4	39	Beta-defensin 129 (Beta-defensin 29) (DEFB-29) (Defensin, be	
+DEFB13	human	Q30KQ7	DEFB113	Q30KQ7	4	55		
+DEFB130	human	P0DP74	DEFB130A	P0DP74	13	70		
+DEFB130A	human	P0DP74	DEFB130A	P0DP74	13	70	Beta-defensin 130A (Beta-defensin 130) (Beta-defensin 30) (D	
+DEFB130B	human	P0DP73	DEFB130B	P0DP73	0	10	Beta-defensin 130B	
+DEFB131	human	P59861	DEFB131A	P59861	6	49		
+DEFB131A	human	P59861	DEFB131A	P59861	6	49	Beta-defensin 131A (Beta-defensin 31) (DEFB-31) (Defensin, b	
+DEFB131B	human	A0A096LNP1	DEFB131B	A0A096LNP1	6	18	Beta-defensin 131B (Defensin, beta 131)	
+DEFB132	human	Q7Z7B7	DEFB132	Q7Z7B7	18	61	Beta-defensin 132 (Beta-defensin 32) (BD-32) (DEFB-32) (Defe	
+DEFB133	human	Q30KQ1	DEFB133	Q30KQ1	3	38	Beta-defensin 133 (Defensin, beta 133)	
+DEFB134	human	Q4QY38	DEFB134	Q4QY38	7	67	Beta-defensin 134 (Defensin, beta 134)	
+DEFB135	human	Q30KP9	DEFB135	Q30KP9	7	133	Beta-defensin 135 (Defensin, beta 135)	
+DEFB136	human	Q30KP8	DEFB136	Q30KP8	0	105	Defensin beta 136 (Beta-defensin 136) (DEFB137)	
+DEFB137	human	Q30KP8	DEFB136	Q30KP8	0	105	Defensin beta 136 (Beta-defensin 136) (DEFB137)	w
+DEFB14	human	Q30KQ6	DEFB114	Q30KQ6	7	63		
+DEFB14	mus-musculus	Q7TNV9	Defb14	Q7TNV9	0	11	Beta-defensin 14	
+DEFB14	rattus-norvegicus	Q32ZH7	Defb14	Q32ZH7	0	12	Beta-defensin 14	
+DEFB15	human	Q30KQ5	DEFB115	Q30KQ5	7	75		
+DEFB16	human	Q30KQ4	DEFB116	Q30KQ4	16	60		
+DEFB18	human	Q96PH6	DEFB118	Q96PH6	4	51		
+DEFB19	human	Q8N690	DEFB119	Q8N690	5	31		
+DEFB1_HUMAN	human	P60022	DEFB1	P60022	27	242		
+DEFB2	human	O15263	DEFB4A	O15263	35	239		
+DEFB2	mus-musculus	P82020	Defb2	P82020	0	5	Beta-defensin 2	
+DEFB2	rattus-norvegicus	Q32ZI5	Defb2	Q32ZI5	0	2	Beta-defensin 2	
+DEFB20	human	Q8N690	DEFB119	Q8N690	5	31		
+DEFB21	human	Q5J5C9	DEFB121	Q5J5C9	14	89		
+DEFB23	human	Q8N688	DEFB123	Q8N688	7	74		
+DEFB24	human	Q8NES8	DEFB124	Q8NES8	6	87		
+DEFB25	human	Q8N687	DEFB125	Q8N687	8	155		
+DEFB26	human	Q9BYW3	DEFB126	Q9BYW3	12	67		
+DEFB26	mus-musculus	Q30KN7	Defb26	Q30KN7	0	32	Beta-defensin	
+DEFB26	rattus-norvegicus	Q32ZG6	Defb26	Q32ZG6	1	41	Beta-defensin	
+DEFB27	human	Q9H1M4	DEFB127	Q9H1M4	12	78		
+DEFB28	human	Q7Z7B8	DEFB128	Q7Z7B8	7	61		
+DEFB29	human	Q9H1M3	DEFB129	Q9H1M3	4	39		
+DEFB3	mus-musculus	Q9WTL0	Defb3	Q9WTL0	0	3	Beta-defensin 3	
+DEFB30	human	P0DP74	DEFB130A	P0DP74	13	70		
+DEFB31	human	P59861	DEFB131A	P59861	6	49		
+DEFB32	human	Q7Z7B7	DEFB132	Q7Z7B7	18	61		
+DEFB3;	human	P81534	DEFB103A	P81534	33	220		
+DEFB4	mus-musculus	P82019	Defb4	P82019	0	4	Beta-defensin 4	
+DEFB4	rattus-norvegicus	O88514	Defb4	O88514	0	11	Beta-defensin 4	
+DEFB46	mus-musculus	Q4QY34	Defb46	Q4QY34	1	2	Beta-defensin 50	
+DEFB4;	human	O15263	DEFB4A	O15263	35	239		
+DEFB4;	human	Q8WTQ1	DEFB104A	Q8WTQ1	17	90		
+DEFB4A	human	O15263	DEFB4A	O15263	35	239	Defensin beta 4A (Beta-defensin 2) (BD-2) (hBD-2) (Defensin,	
+DEFB4B	human	O15263	DEFB4A	O15263	35	239		
+DEFB5	mus-musculus	Q9EPV9	Defb5	Q9EPV9	0	2	Beta-defensin 5	
+DEFB5	rattus-norvegicus	Q32ZI3	Defb5	Q32ZI3	0	6	Beta-defensin 5	
+DEFB5;	human	Q8NG35	DEFB105A	Q8NG35	1	64		
+DEFB6	mus-musculus	Q91VD6	Defb6	Q91VD6	0	2	Beta-defensin 6	
+DEFB6;	human	Q8N104	DEFB106A	Q8N104	26	101		
+DEFB7	mus-musculus	Q91V70	Defb7	Q91V70	0	2	Beta-defensin 7	
+DEFB7;	human	Q8IZN7	DEFB107A	Q8IZN7	14	59		
+DEFB8	human	Q8NET1	DEFB108B	Q8NET1	5	62		
+DEFB8	mus-musculus	Q91V82	Defb8	Q91V82	0	4	Beta-defensin 8	
+DEFB9	rattus-norvegicus	Q32ZI2	Defb9	Q32ZI2	0	2	Beta-defensin 9	
+DEFCAP	human	Q9C000	NLRP1	Q9C000	25	290		
+DEFECATION	worm	P34501	dec-7	P34501	2	18	Defecation cycle abnormal dec-7	w
+DEFECT	fly	FBgn0002873	mud	Q8IR55	1	10	Mushroom body defect, isoform H	w
+DEFECT	fly	FBgn0031662	CG3792	Q9VMW8	0	14	Mannose-P-dolichol utilization defect 1 protein homolog	w
+DEFECT	fly	FBgn0037949	prd1	Q9VGI1	3	19	FI23955p1 (Pruning defect 1, isoform A)	w
+DEFECT	fly	FBgn0038478	cal1	Q9VEN2	4	13	Chromosome alignment defect 1	w
+DEFECT	fly	FBgn0087021	Spc25	Q9V3V7	9	20	Kinetochore protein Spc25 (Chromosome alignment defect 2) (M	w
+DEFECT	fly	FBgn0284257	Ttd14	A8DYI2	0	8	TRPL translocation defect 14, isoform C	w
+DEFECT	human	O75351	VPS4B	O75351	14	144	Vacuolar protein sorting-associated protein 4B (EC 3.6.4.6) 	w
+DEFECT	human	O75352	MPDU1	O75352	1	125	Mannose-P-dolichol utilization defect 1 protein (Suppressor 	w
+DEFECT	human	Q14746	COG2	Q14746	18	150	Conserved oligomeric Golgi complex subunit 2 (COG complex su	w
+DEFECT	human	Q9H078	CLPB	Q9H078	30	309	Mitochondrial disaggregase (EC 3.6.1.-) (Suppressor of potas	w
+DEFECT	human	Q9UJV3	MID2	Q9UJV3	47	340	E3 ubiquitin-protein ligase MID2 (EC 2.3.2.27) (Midin-2) (Mi	w
+DEFECT	worm	Q20157	mpdu-1	Q20157	0	16	Mannose-P-dolichol utilization defect 1 protein homolog	w
+DEFECT	worm	Q95Q00	such-1	Q95Q00	3	41	Suppressor of spindle checkpoint defect 1	w
+DEFECT	yeast	Q04216	DLT1	Q04216	1	3	Defect at low temperature protein 1	w
+DEFECT	yeast	Q06132	SGD1	Q06132	4	42	Suppressor of glycerol defect protein 1	w
+DEFECTIVE	fly	FBgn0000427	dec	P18171	0	6	Defective chorion protein, FC177 isoform	w
+DEFECTIVE	fly	FBgn0000808	gd	O62589	34	250	Serine protease gd (EC 3.4.21.-) (Protein gastrulation defec	w
+DEFECTIVE	fly	FBgn0003984	vn	Q94918	59	310	Protein vein (Epidermal growth factor-like protein) (Protein	w
+DEFECTIVE	fly	FBgn0003997	hid	Q24106	16	95	Cell death protein hid (Protein head involution defective) (	w
+DEFECTIVE	fly	FBgn0020307	dve	Q9W268	15	121	Defective proventriculus, isoform A (IP14647p)	w
+DEFECTIVE	fly	FBgn0023090	dtr	Q8INT5	0	10	Dynein axonemal assembly factor 1 homolog (Defective transmi	w
+DEFECTIVE	fly	FBgn0025776	ind	Q7KUL4	89	384	Intermediate neuroblasts defective	w
+DEFECTIVE	fly	FBgn0027500	spd-2	Q9VV79	8	39	BcDNA.LD24702 (Spindle defective 2 (EC 3.6.1.13))	w
+DEFECTIVE	fly	FBgn0029974	dpr14	Q9W3N2	3	7	Defective proboscis extension response 14, isoform A (Defect	w
+DEFECTIVE	fly	FBgn0030723	dpr18	Q9VXK1	2	4	Defective proboscis extension response 18 (RE24718p)	w
+DEFECTIVE	fly	FBgn0032233	dpr19	Q9VKX8	4	7	Defective proboscis extension response 19, isoform A (Defect	w
+DEFECTIVE	fly	FBgn0033784	SCCRO3	Q8T8S1	10	53	DCN1-like protein 3 (DCNL3) (DCUN1 domain-containing protein	w
+DEFECTIVE	fly	FBgn0034286	dpr13	A1ZB15	3	6	Defective proboscis extension response 13, isoform B (IP0431	w
+DEFECTIVE	fly	FBgn0034908	CG5543	Q9W1J3	5	39	Gastrulation defective protein 1 homolog	w
+DEFECTIVE	fly	FBgn0035170	dpr20	Q9W0L9	2	4	Defective proboscis extension response 20 (GH16485p)	w
+DEFECTIVE	fly	FBgn0036510	SCCRO	M9NDR9	16	89	Defective in cullin neddylation protein	w
+DEFECTIVE	fly	FBgn0036967	SCCRO4	Q9VWB1	9	74	DCN1-like protein 4 (DCNL4) (DCUN1 domain-containing protein	w
+DEFECTIVE	fly	FBgn0037295	dpr16	A0A0B4LGN7	4	6	Defective proboscis extension response 16, isoform C	w
+DEFECTIVE	fly	FBgn0037908	dpr5	Q961T8	4	10	Defective proboscis extension response 5, isoform A (GH08163	w
+DEFECTIVE	fly	FBgn0037993	dpr15	Q9VGD0	58	246	Defective proboscis extension response 15, isoform A (Defect	w
+DEFECTIVE	fly	FBgn0038282	dpr9	Q9VFD9	6	17	Defective proboscis extension response 9, isoform A (Defecti	w
+DEFECTIVE	fly	FBgn0038427	ema	Q9VEV4	3	10	Protein CLEC16A homolog (Endosomal maturation defective prot	w
+DEFECTIVE	fly	FBgn0039560	BOD1	A0A0B4KHZ9	1	17	Biorientation defective 1, isoform E	w
+DEFECTIVE	fly	FBgn0039883	RhoGAP100F	Q9V9S7	4	10	Rho GTPase-activating protein 100F (RhoGAP-100F) (Synapse de	w
+DEFECTIVE	fly	FBgn0040726	dpr1	A1ZBY3	6	8	Defective proboscis extension response 1, isoform A (Defecti	w
+DEFECTIVE	fly	FBgn0040823	dpr6	X2J8X8	44	253	Defective proboscis extension response 6, isoform F	w
+DEFECTIVE	fly	FBgn0051361	dpr17	Q9VGD3	4	13	Defective proboscis extension response 17, isoform A (Defect	w
+DEFECTIVE	fly	FBgn0052057	dpr10	Q9VT83	4	9	Defective proboscis extension response 10, isoform A (Defect	w
+DEFECTIVE	fly	FBgn0052600	dpr8	Q9VY33	6	13	Defective proboscis extension response 8, isoform A (Defecti	w
+DEFECTIVE	fly	FBgn0053202	dpr11	Q8MRE6	3	8	Defective proboscis extension response 11, isoform B (Defect	w
+DEFECTIVE	fly	FBgn0053481	dpr7	A8DZ27	6	9	Defective proboscis extension response 7, isoform F	w
+DEFECTIVE	fly	FBgn0053512	dpr4	Q59DX6	5	6	Defective proboscis extension response 4 (FI04761p)	w
+DEFECTIVE	fly	FBgn0053516	dpr3	Q59E13	4	6	Defective proboscis extension response 3, isoform B (Defecti	w
+DEFECTIVE	fly	FBgn0085414	dpr12	A1Z6H9	2	5	Defective proboscis extension response 12, isoform C (IP1704	w
+DEFECTIVE	fly	FBgn0260995	dpr21	A0A0C4DHN4	2	4	Defective proboscis extension response 21	w
+DEFECTIVE	fly	FBgn0261871	dpr2	Q59DZ4	5	9	Defective proboscis extension response 2, isoform F (Defecti	w
+DEFECTIVE	fly	FBgn0261930	vnd	P22808	121	385	Homeobox protein vnd (Homeobox protein NK-2) (Protein ventra	w
+DEFECTIVE	fly	FBgn0263490	mld	A0A0B4K7S6	1	3	Molting defective, isoform D	w
+DEFECTIVE	human	Q5TIA1	MEI1	Q5TIA1	5	33	Meiosis inhibitor protein 1 (Meiosis defective protein 1)	w
+DEFECTIVE	human	Q5VT97	SYDE2	Q5VT97	30	127	Rho GTPase-activating protein SYDE2 (Synapse defective prote	w
+DEFECTIVE	human	Q6PH85	DCUN1D2	Q6PH85	18	111	DCN1-like protein 2 (DCNL2) (DCUN1 domain-containing protein	w
+DEFECTIVE	human	Q6UVJ0	SASS6	Q6UVJ0	61	312	Spindle assembly abnormal protein 6 homolog (HsSAS-6) (Spind	w
+DEFECTIVE	human	Q6ZW31	SYDE1	Q6ZW31	43	174	Rho GTPase-activating protein SYDE1 (Synapse defective prote	w
+DEFECTIVE	human	Q8IWE4	DCUN1D3	Q8IWE4	18	91	DCN1-like protein 3 (DCNL3) (DCUN1 domain-containing protein	w
+DEFECTIVE	human	Q8TEW0	PARD3	Q8TEW0	137	441	Partitioning defective 3 homolog (PAR-3) (PARD-3) (Atypical 	w
+DEFECTIVE	human	Q8TEW8	PARD3B	Q8TEW8	47	144	Partitioning defective 3 homolog B (Amyotrophic lateral scle	w
+DEFECTIVE	human	Q92564	DCUN1D4	Q92564	23	130	DCN1-like protein 4 (DCNL4) (DCUN1 domain-containing protein	w
+DEFECTIVE	human	Q96GG9	DCUN1D1	Q96GG9	51	372	DCN1-like protein 1 (DCNL1) (DCUN1 domain-containing protein	w
+DEFECTIVE	human	Q96IK1	BOD1	Q96IK1	12	110	Biorientation of chromosomes in cell division protein 1 (Bio	w
+DEFECTIVE	human	Q9BTE7	DCUN1D5	Q9BTE7	42	253	DCN1-like protein 5 (DCNL5) (DCUN1 domain-containing protein	w
+DEFECTIVE	human	Q9BVC3	DSCC1	Q9BVC3	20	164	Sister chromatid cohesion protein DCC1 (Defective in sister 	w
+DEFECTIVE	human	Q9BYG4	PARD6G	Q9BYG4	23	71	Partitioning defective 6 homolog gamma (PAR-6 gamma) (PAR6D)	w
+DEFECTIVE	human	Q9BYG5	PARD6B	Q9BYG5	51	178	Partitioning defective 6 homolog beta (PAR-6 beta) (PAR-6B)	w
+DEFECTIVE	human	Q9H7L9	SUDS3	Q9H7L9	51	340	Sin3 histone deacetylase corepressor complex component SDS3 	w
+DEFECTIVE	human	Q9NPB6	PARD6A	Q9NPB6	39	150	Partitioning defective 6 homolog alpha (PAR-6) (PAR-6 alpha)	w
+DEFECTIVE	worm	G5EDB2	madd-3	G5EDB2	12	32	Probable dual specificity protein kinase madd-3 (EC 2.7.11.-	w
+DEFECTIVE	worm	G5EEM5	zyg-9	G5EEM5	3	56	Zygote defective protein 9	w
+DEFECTIVE	worm	O16519	gad-1	O16519	6	53	Gastrulation defective protein 1	w
+DEFECTIVE	worm	O45952	csc-1	O45952	2	5	Chromosome segregation and cytokinesis defective protein 1	w
+DEFECTIVE	worm	O76360	egl-4	O76360	2	25	cGMP-dependent protein kinase egl-4 (EC 2.7.11.12) (Egg-layi	w
+DEFECTIVE	worm	P34325	cyk-7	P34325	0	2	Cytokinesis defective protein 7	w
+DEFECTIVE	worm	P41950	dex-1	P41950	0	1	Dendrite extension defective protein 1	w
+DEFECTIVE	worm	P91082	egl-26	P91082	0	2	Egg-laying defective protein 26	w
+DEFECTIVE	worm	Q09228	egl-27	Q09228	6	25	Egg-laying defective protein 27	w
+DEFECTIVE	worm	Q09322	cup-15	Q09322	1	16	Coelomocyte uptake defective protein 15	w
+DEFECTIVE	worm	Q10925	sid-3	Q10925	6	57	Tyrosine-protein kinase sid-3 (EC 2.7.10.2) (Systemic RNA in	w
+DEFECTIVE	worm	Q17353	par-3	Q17353	3	69	Partitioning defective protein 3	w
+DEFECTIVE	worm	Q17381	pha-4	Q17381	3	112	Defective pharyngeal development protein 4	w
+DEFECTIVE	worm	Q19443	sid-5	Q19443	0	8	Systemic RNA interference defective protein 5	w
+DEFECTIVE	worm	Q19469	sad-1	Q19469	13	44	Serine/threonine kinase SAD-1 (EC 2.7.11.1) (Synapses of Amp	w
+DEFECTIVE	worm	Q23529	zyg-12	Q23529	3	13	Zygote defective protein 12	w
+DEFECTIVE	worm	Q6BET5	rde-11	Q6BET5	0	1	RNA interference defective protein 11	w
+DEFECTIVE	worm	Q95XQ1	sydn-1	Q95XQ1	0	3	Synaptic defective enhancer 1	w
+DEFECTIVE	worm	Q95ZK7	gld-3	Q95ZK7	0	14	Defective in germ line development protein 3	w
+DEFECTIVE	worm	Q9GZC8	sid-1	Q9GZC8	2	21	Systemic RNA interference defective protein 1	w
+DEFECTIVE	worm	Q9N3S2	rde-10	Q9N3S2	1	76	RNA interference defective protein 10	w
+DEFECTIVE	worm	Q9NAN2	par-6	Q9NAN2	12	62	Partitioning defective protein 6	w
+DEFECTIVE	worm	Q9TYY7	spd-3	Q9TYY7	0	1	Spindle defective protein 3	w
+DEFECTIVE	worm	Q9U3C8	dcn-1	Q9U3C8	11	77	Defective in cullin neddylation protein 1	w
+DEFECTIVE	yeast	P22219	VPS15	P22219	12	73	Serine/threonine-protein kinase VPS15 (EC 2.7.11.1) (Golgi-r	w
+DEFECTIVE	yeast	Q08887	NDD1	Q08887	2	20	Nuclear division defective protein 1	w
+DEFECTIVE	yeast	Q12395	DCN1	Q12395	3	12	Defective in cullin neddylation protein 1	w
+DEFECTIVE-1	worm	Q8I4M5	gls-1	Q8I4M5	1	13	Germline survival defective-1	w
+DEFECTIVE-3	worm	Q21691	nrde-3	Q21691	0	37	Nuclear RNAi defective-3 protein	w
+DEFECTS	fly	FBgn0020278	loco	Q9VCX1	8	17	Regulator of G-protein signaling loco (RGS) (Locomotion defe	w
+DEFECTS	fly	FBgn0038168	omd	Q9VFS6	10	44	Integrator complex subunit 5 (Protein oocyte maintenance def	w
+DEFECTS	human	Q9H790	EXO5	Q9H790	11	40	Exonuclease V (Exo V) (hExo5) (EC 3.1.-.-) (Defects in morph	w
+DEFENDER	fly	FBgn0263852	Dad1	Q9VLM5	6	66	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+DEFENDER	human	P61803	DAD1	P61803	13	118	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+DEFENSE	fly	FBgn0261534	l(2)34Fc	Q9V3Y3	25	294	Defense protein l(2)34Fc	w
+DEFENSIN	fly	FBgn0010385	Def	P36192	21	264	Defensin	w
+DEFENSIN	human	A0A096LNP1	DEFB131B	A0A096LNP1	6	18	Beta-defensin 131B (Defensin, beta 131)	w
+DEFENSIN	human	A8MXU0	DEFB108A	A8MXU0	3	23	Putative beta-defensin 108A (Defensin, beta 108A) (Defensin,	w
+DEFENSIN	human	O15263	DEFB4A	O15263	35	239	Defensin beta 4A (Beta-defensin 2) (BD-2) (hBD-2) (Defensin,	w
+DEFENSIN	human	P0DP74	DEFB130A	P0DP74	13	70	Beta-defensin 130A (Beta-defensin 130) (Beta-defensin 30) (D	w
+DEFENSIN	human	P12838	DEFA4	P12838	11	93	Defensin alpha 4 (Corticostatin HP-4) (HNP-4) (HP-4) (Neutro	w
+DEFENSIN	human	P59665	DEFA1	P59665	33	181	Neutrophil defensin 1 (Defensin, alpha 1) (HNP-1) (HP-1) (HP	w
+DEFENSIN	human	P59666	DEFA3	P59666	40	202	Neutrophil defensin 3 (Defensin, alpha 3) (HNP-3) (HP-3) (HP	w
+DEFENSIN	human	P59861	DEFB131A	P59861	6	49	Beta-defensin 131A (Beta-defensin 31) (DEFB-31) (Defensin, b	w
+DEFENSIN	human	P60022	DEFB1	P60022	27	242	Beta-defensin 1 (BD-1) (hBD-1) (Defensin, beta 1)	w
+DEFENSIN	human	P81534	DEFB103A	P81534	33	220	Beta-defensin 103 (Beta-defensin 3) (BD-3) (DEFB-3) (HBD3) (	w
+DEFENSIN	human	Q01523	DEFA5	Q01523	20	138	Defensin alpha 5 (Defensin-5) (HD5(20-94)) [Cleaved into: HD	w
+DEFENSIN	human	Q01524	DEFA6	Q01524	7	83	Defensin-6 (Defensin, alpha 6)	w
+DEFENSIN	human	Q30KP8	DEFB136	Q30KP8	0	105	Defensin beta 136 (Beta-defensin 136) (DEFB137)	w
+DEFENSIN	human	Q30KP9	DEFB135	Q30KP9	7	133	Beta-defensin 135 (Defensin, beta 135)	w
+DEFENSIN	human	Q30KQ1	DEFB133	Q30KQ1	3	38	Beta-defensin 133 (Defensin, beta 133)	w
+DEFENSIN	human	Q30KQ4	DEFB116	Q30KQ4	16	60	Beta-defensin 116 (Beta-defensin 16) (DEFB-16) (Defensin, be	w
+DEFENSIN	human	Q30KQ5	DEFB115	Q30KQ5	7	75	Beta-defensin 115 (Beta-defensin 15) (DEFB-15) (Defensin, be	w
+DEFENSIN	human	Q30KQ6	DEFB114	Q30KQ6	7	63	Beta-defensin 114 (Beta-defensin 14) (DEFB-14) (Defensin, be	w
+DEFENSIN	human	Q30KQ7	DEFB113	Q30KQ7	4	55	Beta-defensin 113 (Beta-defensin 13) (DEFB-13) (Defensin, be	w
+DEFENSIN	human	Q30KQ8	DEFB112	Q30KQ8	3	63	Beta-defensin 112 (Beta-defensin 12) (DEFB-12) (Defensin, be	w
+DEFENSIN	human	Q30KQ9	DEFB110	Q30KQ9	9	79	Beta-defensin 110 (Beta-defensin 10) (DEFB-10) (Beta-defensi	w
+DEFENSIN	human	Q30KR1	DEFB109B	Q30KR1	1	16	Beta-defensin 109B (DEFB-109) (HBD9) (Defensin beta 109B)	w
+DEFENSIN	human	Q4QY38	DEFB134	Q4QY38	7	67	Beta-defensin 134 (Defensin, beta 134)	w
+DEFENSIN	human	Q5J5C9	DEFB121	Q5J5C9	14	89	Beta-defensin 121 (Beta-defensin 21) (DEFB-21) (Defensin, be	w
+DEFENSIN	human	Q7Z7B7	DEFB132	Q7Z7B7	18	61	Beta-defensin 132 (Beta-defensin 32) (BD-32) (DEFB-32) (Defe	w
+DEFENSIN	human	Q7Z7B8	DEFB128	Q7Z7B8	7	61	Beta-defensin 128 (Beta-defensin 28) (DEFB-28) (Defensin, be	w
+DEFENSIN	human	Q8IZN7	DEFB107A	Q8IZN7	14	59	Beta-defensin 107 (Beta-defensin 7) (BD-7) (DEFB-7) (Defensi	w
+DEFENSIN	human	Q8N104	DEFB106A	Q8N104	26	101	Beta-defensin 106 (Beta-defensin 6) (BD-6) (DEFB-6) (Defensi	w
+DEFENSIN	human	Q8N687	DEFB125	Q8N687	8	155	Beta-defensin 125 (Beta-defensin 25) (DEFB-25) (Defensin, be	w
+DEFENSIN	human	Q8N688	DEFB123	Q8N688	7	74	Beta-defensin 123 (Beta-defensin 23) (DEFB-23) (Defensin, be	w
+DEFENSIN	human	Q8N690	DEFB119	Q8N690	5	31	Beta-defensin 119 (Beta-defensin 120) (Beta-defensin 19) (DE	w
+DEFENSIN	human	Q8NES8	DEFB124	Q8NES8	6	87	Beta-defensin 124 (Beta-defensin 24) (DEFB-24) (Defensin, be	w
+DEFENSIN	human	Q8NET1	DEFB108B	Q8NET1	5	62	Beta-defensin 108B (Beta-defensin 8) (BD-8) (DEFB-8) (hBD-8)	w
+DEFENSIN	human	Q8NG35	DEFB105A	Q8NG35	1	64	Beta-defensin 105 (Beta-defensin 5) (BD-5) (DEFB-5) (Defensi	w
+DEFENSIN	human	Q8WTQ1	DEFB104A	Q8WTQ1	17	90	Beta-defensin 104 (Beta-defensin 4) (BD-4) (DEFB-4) (hBD-4) 	w
+DEFENSIN	human	Q96PH6	DEFB118	Q96PH6	4	51	Defensin beta 118 (Beta-defensin 18) (DEFB-18) (Epididymal s	w
+DEFENSIN	human	Q9BYW3	DEFB126	Q9BYW3	12	67	Beta-defensin 126 (Beta-defensin 26) (DEFB-26) (Defensin, be	w
+DEFENSIN	human	Q9H1M3	DEFB129	Q9H1M3	4	39	Beta-defensin 129 (Beta-defensin 29) (DEFB-29) (Defensin, be	w
+DEFENSIN	human	Q9H1M4	DEFB127	Q9H1M4	12	78	Beta-defensin 127 (Beta-defensin 27) (DEFB-27) (Defensin, be	w
+DEFENSIN-5	human	Q01523	DEFA5	Q01523	20	138	Defensin alpha 5 (Defensin-5) (HD5(20-94)) [Cleaved into: HD	w
+DEFENSIN-6	human	Q01524	DEFA6	Q01524	7	83	Defensin-6 (Defensin, alpha 6)	w
+DEFENSIN-LIKE	human	P81534	DEFB103A	P81534	33	220	Beta-defensin 103 (Beta-defensin 3) (BD-3) (DEFB-3) (HBD3) (	w
+DEFI6_HUMAN	human	Q9H4E7	DEF6	Q9H4E7	28	117		
+DEFI8_HUMAN	human	Q6ZN54	DEF8	Q6ZN54	7	78		
+DEFICIENCY	fly	FBgn0013983	imd	Q7K4Z4	15	125	Protein immune deficiency	w
+DEFICIENCY	human	Q8NI22	MCFD2	Q8NI22	12	169	Multiple coagulation factor deficiency protein 2 (Neural ste	w
+DEFICIENCY-ASSOCIATED	human	Q8WYA0	IFT81	Q8WYA0	63	334	Intraflagellar transport protein 81 homolog (Carnitine defic	w
+DEFICIENT	fly	FBgn0035976	PGRP-LC	Q9GNK5	1260	2818	Peptidoglycan-recognition protein LC (Immune response defici	w
+DEFICIENT	human	Q13257	MAD2L1	Q13257	118	388	Mitotic spindle assembly checkpoint protein MAD2A (HsMAD2) (	w
+DEFICIENT	human	Q76M96	CCDC80	Q76M96	11	136	Coiled-coil domain-containing protein 80 (Down-regulated by 	w
+DEFICIENT	human	Q9H4A3	WNK1	Q9H4A3	53	172	Serine/threonine-protein kinase WNK1 (EC 2.7.11.1) (Erythroc	w
+DEFICIENT	human	Q9NXL9	MCM9	Q9NXL9	10	131	DNA helicase MCM9 (hMCM9) (EC 5.6.2.4) (DNA 3'-5' helicase M	w
+DEFICIENT	human	Q9UI95	MAD2L2	Q9UI95	147	585	Mitotic spindle assembly checkpoint protein MAD2B (Mitotic a	w
+DEFICIENT	human	Q9Y6D9	MAD1L1	Q9Y6D9	38	185	Mitotic spindle assembly checkpoint protein MAD1 (Mitotic ar	w
+DEFICIENT	worm	G5EFM0	mdf-1	G5EFM0	3	22	MAD (Yeast Mitosis arrest DeFicient) related	w
+DEFICIENT	worm	O62071	pcmd-1	O62071	0	4	PeriCentriolar MatriX Deficient	w
+DEFICIENT	yeast	Q03233	ADD37	Q03233	0	5	Alpha1-proteinase inhibitor-degradation deficient protein 37	w
+DEFIN	human	Q9Y3S1	WNK2	Q9Y3S1	35	92	Serine/threonine-protein kinase WNK2 (EC 2.7.11.1) (Antigen 	w
+DEFINED	human	O60524	NEMF	O60524	20	289	Ribosome quality control complex subunit NEMF (Antigen NY-CO	w
+DEFINED	human	O75179	ANKRD17	O75179	16	186	Ankyrin repeat domain-containing protein 17 (Gene trap ankyr	w
+DEFINED	human	Q5FBB7	SGO1	Q5FBB7	119	469	Shugoshin 1 (Serologically defined breast cancer antigen NY-	w
+DEFINED	human	Q5SZL2	CEP85L	Q5SZL2	23	57	Centrosomal protein of 85 kDa-like (Serologically defined br	w
+DEFINED	human	Q6ZSZ6	TSHZ1	Q6ZSZ6	31	111	Teashirt homolog 1 (Antigen NY-CO-33) (Serologically defined	w
+DEFINED	human	Q7RTN6	STRADA	Q7RTN6	7	89	STE20-related kinase adapter protein alpha (STRAD alpha) (ST	w
+DEFINED	human	Q86SQ7	SDCCAG8	Q86SQ7	52	133	Serologically defined colon cancer antigen 8 (Antigen NY-CO-	w
+DEFINED	human	Q8TAE6	PPP1R14C	Q8TAE6	13	66	Protein phosphatase 1 regulatory subunit 14C (Kinase-enhance	w
+DEFINED	human	Q8WWY3	PRPF31	Q8WWY3	41	516	U4/U6 small nuclear ribonucleoprotein Prp31 (Pre-mRNA-proces	w
+DEFINED	human	Q8WYJ6	SEPTIN1	Q8WYJ6	17	56	Septin-1 (LARP) (Peanut-like protein 3) (Serologically defin	w
+DEFINED	human	Q96C92	ENTR1	Q96C92	68	215	Endosome-associated-trafficking regulator 1 (Antigen NY-CO-3	w
+DEFINED	human	Q96GE6	CALML4	Q96GE6	66	507	Calmodulin-like protein 4 (Serologically defined breast canc	w
+DEFINED	human	Q9BVJ6	UTP14A	Q9BVJ6	61	381	U3 small nucleolar RNA-associated protein 14 homolog A (Anti	w
+DEFINED	human	Q9BXX2	ANKRD30B	Q9BXX2	14	93	Ankyrin repeat domain-containing protein 30B (Serologically 	w
+DEFINED	human	Q9BXX3	ANKRD30A	Q9BXX3	15	96	Ankyrin repeat domain-containing protein 30A (Serologically 	w
+DEFINED	human	Q9NS87	KIF15	Q9NS87	57	198	Kinesin-like protein KIF15 (Kinesin-like protein 2) (hKLP2) 	w
+DEFINED	human	Q9NWK9	ZNHIT6	Q9NWK9	34	235	Box C/D snoRNA protein 1 (Serologically defined breast cance	w
+DEFINED	human	Q9Y282	ERGIC3	Q9Y282	9	340	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+DEFINED	human	Q9Y365	STARD10	Q9Y365	11	86	START domain-containing protein 10 (StARD10) (Antigen NY-CO-	w
+DEFINED	zebrafish	B8JK76	Sdccag8	B8JK76	1	3	Serologically defined colon cancer antigen 8 homolog	w
+DEFL	fly	FBgn0036038	defl	Q9VT41	11	45	Integrator complex subunit 7 (Protein deflated)	
+DEFLATED	fly	FBgn0036038	defl	Q9VT41	11	45	Integrator complex subunit 7 (Protein deflated)	w
+DEFM_HUMAN	human	Q9HBH1	PDF	Q9HBH1	26	205		
+DEFORMED	fly	FBgn0000439	Dfd	P07548	82	414	Homeotic protein deformed	w
+DEFORMED	fly	FBgn0000520	dwg	Q9W4V9	40	398	Deformed wings (LD45751p)	w
+DEFORMED	fly	FBgn0013799	Deaf1	Q24180	92	461	Deformed epidermal autoregulatory factor 1 (Protein DEAF-1)	w
+DEFORMED	human	O75398	DEAF1	O75398	79	387	Deformed epidermal autoregulatory factor 1 homolog (Nuclear 	w
+DEFORMITY	human	Q68DA7	FMN1	Q68DA7	15	92	Formin-1 (Limb deformity protein homolog)	w
+DEFORMYLASE	fly	FBgn0051278	CG31278	Q9VGY2	28	133	Peptide deformylase (EC 3.5.1.88)	w
+DEFORMYLASE	fly	FBgn0051373	CG31373	Q8INL3	19	130	Peptide deformylase (EC 3.5.1.88)	w
+DEFORMYLASE	human	Q9HBH1	PDF	Q9HBH1	26	205	Peptide deformylase, mitochondrial (EC 3.5.1.88) (Polypeptid	w
+DEFORMYLASE	zebrafish	Q4V8U4	pdf	Q4V8U4	5	61	Peptide deformylase	w
+DEFT	human	O75618	DEDD	O75618	63	402		

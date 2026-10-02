@@ -1,32 +1,1115 @@
-BET1	mus-musculus	O35623	Bet1	O35623	16	83	BET1 homolog
-BET1	rattus-norvegicus	Q62896	Bet1	Q62896	12	76	BET1 homolog
-BET1	schizosaccharomyces-pombe	O13932	bet1	O13932	5	41	Protein transport protein bet1
-BET11	arabidopsis-thaliana	Q9M2J9	BET11	Q9M2J9	13	61	Bet1-like SNARE 1-1
-BET12	arabidopsis-thaliana	Q94CG2	BET12	Q94CG2	17	66	Bet1-like SNARE 1-2
-BET1L	mus-musculus	O35153	Bet1l	O35153	9	64	BET1-like protein
-BET1L	rattus-norvegicus	O35152	Bet1l	O35152	10	60	BET1-like protein
-BET2	candida-albicans-237561	A0A1D8PU24	BET2	A0A1D8PU24	1	7	Geranylgeranyl transferase type-2 subunit beta
-BET2	cladophialophora-carrionii	A0A1C1CC07	BET2	A0A1C1CC07	1	8	Geranylgeranyl transferase type-2 subunit beta
-BET3	schizosaccharomyces-pombe	Q9P6P5	bet3	Q9P6P5	7	25	Transport protein particle subunit bet3
-BET4	candida-albicans-237561	A0A1D8PD57	BET4	A0A1D8PD57	2	10	Geranylgeranyl transferase type-2 subunit alpha
-BET4	schizosaccharomyces-pombe	O94412	bet4	O94412	3	12	Geranylgeranyl transferase type-2 subunit alpha
-BET5	candida-albicans-237561	Q5AEG6	BET5	Q5AEG6	4	12	Trafficking protein particle complex subunit
-BET5	schizosaccharomyces-pombe	Q9UT70	bet5	Q9UT70	4	22	Transport protein particle subunit bet5
-BETA	escherichia-coli-83333	P17444	betA	P17444	0	8	Oxygen-dependent choline dehydrogenase
-BETA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GL29	betA	A0A0H3GL29	0	27	Oxygen-dependent choline dehydrogenase
-BETA	pseudomonas-aeruginosa	Q9HTJ2	betA	Q9HTJ2	0	28	Oxygen-dependent choline dehydrogenase
-BETA	staphylococcus-aureus-93061	Q2FV11	betA	Q2FV11	0	3	Oxygen-dependent choline dehydrogenase
-BETA-COP	trypanosoma-brucei-brucei-185431	Q4GYW5	beta-coP	Q4GYW5	14	36	Coatomer subunit beta
-BETA-OHASE 1	arabidopsis-thaliana	Q9SZZ8	BETA-OHASE 1	Q9SZZ8	0	2	Beta-carotene 3-hydroxylase 1, chloroplastic
-BETA-OHASE 2	arabidopsis-thaliana	Q9LTG0	BETA-OHASE 2	Q9LTG0	0	3	Beta-carotene 3-hydroxylase 2, chloroplastic
-BETAA-AD	arabidopsis-thaliana	Q9LDK9	BETAA-AD	Q9LDK9	51	148	Beta-adaptin-like protein A
-BETAB-AD	arabidopsis-thaliana	Q9SUS3	BETAB-AD	Q9SUS3	49	146	Beta-adaptin-like protein B
-BETAC-AD	arabidopsis-thaliana	O81742	BETAC-AD	O81742	54	148	Beta-adaptin-like protein C
-BETB	escherichia-coli-83333	P17445	betB	P17445	0	5	Betaine aldehyde dehydrogenase
-BETB	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GTN1	betB	A0A0H3GTN1	0	38	Betaine aldehyde dehydrogenase
-BETB	pseudomonas-aeruginosa	Q9HTJ1	betB	Q9HTJ1	1	1	NAD/NADP-dependent betaine aldehyde dehydrogenase
-BETC	cladophialophora-carrionii	A0A1C1CJQ9	betC	A0A1C1CJQ9	0	5	Choline-sulfatase
-BETC	pseudomonas-aeruginosa	Q9I799	betC	Q9I799	0	7	Choline sulfatase
-BETI	escherichia-coli-83333	P17446	betI	P17446	0	1	HTH-type transcriptional regulator BetI
-BETI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GJT3	betI	A0A0H3GJT3	0	3	HTH-type transcriptional regulator BetI
-BETI	pseudomonas-aeruginosa	Q9HTJ0	betI	Q9HTJ0	0	1	HTH-type transcriptional regulator BetI
+BET	human	Q8NFT8	DNER	Q8NFT8	9	92		
+BET-1	worm	Q95Y80	bet-1	Q95Y80	1	17	Bromodomain-containing protein bet-1	w
+BET-1	worm	Q95Y80	bet-1	Q95Y80	1	17	Bromodomain-containing protein bet-1	w
+BET-2	worm	Q20947	bet-2	Q20947	1	12	Bromo domain-containing protein	
+BET1	fly	FBgn0260857	Bet1	Q9VVX6	18	80	Blocked early in transport 1, isoform A (Blocked early in tr	
+BET1	human	O15155	BET1	O15155	58	401	BET1 homolog (hBET1) (Golgi vesicular membrane-trafficking p	
+BET1	mus-musculus	O35623	Bet1	O35623	16	83	BET1 homolog	
+BET1	rattus-norvegicus	Q62896	Bet1	Q62896	12	76	BET1 homolog	
+BET1	schizosaccharomyces-pombe	O13932	bet1	O13932	5	41	Protein transport protein bet1	
+BET1	worm	G5EEU1	nbet-1	G5EEU1	13	77	BET1 homolog	w
+BET1	yeast	P22804	BET1	P22804	5	66	Protein transport protein BET1	
+BET1	zebrafish	Q6IQT6	bet1	Q6IQT6	16	84	BET1 homolog	w
+BET1	zebrafish	Q6IQT6	bet1	Q6IQT6	16	84	BET1 homolog	w
+BET1-LIKE	human	Q9NYM9	BET1L	Q9NYM9	23	155	BET1-like protein (Golgi SNARE with a size of 15 kDa) (GOS-1	w
+BET11	arabidopsis-thaliana	Q9M2J9	BET11	Q9M2J9	13	61	Bet1-like SNARE 1-1	
+BET12	arabidopsis-thaliana	Q94CG2	BET12	Q94CG2	17	66	Bet1-like SNARE 1-2	
+BET1L	human	Q9NYM9	BET1L	Q9NYM9	23	155	BET1-like protein (Golgi SNARE with a size of 15 kDa) (GOS-1	
+BET1L	mus-musculus	O35153	Bet1l	O35153	9	64	BET1-like protein	
+BET1L	rattus-norvegicus	O35152	Bet1l	O35152	10	60	BET1-like protein	
+BET1L_HUMAN	human	Q9NYM9	BET1L	Q9NYM9	23	155		
+BET1_HUMAN	human	O15155	BET1	O15155	58	401		
+BET2	candida-albicans-237561	A0A1D8PU24	BET2	A0A1D8PU24	1	7	Geranylgeranyl transferase type-2 subunit beta	
+BET2	cladophialophora-carrionii	A0A1C1CC07	BET2	A0A1C1CC07	1	8	Geranylgeranyl transferase type-2 subunit beta	
+BET2	yeast	P20133	BET2	P20133	1	18	Geranylgeranyl transferase type-2 subunit beta	
+BET3	fly	FBgn0260859	Bet3	Q9VSY8	13	70	Trafficking protein particle complex subunit	
+BET3	human	O43617	TRAPPC3	O43617	18	111		
+BET3	schizosaccharomyces-pombe	Q9P6P5	bet3	Q9P6P5	7	25	Transport protein particle subunit bet3	
+BET3	yeast	P36149	BET3	P36149	5	35	Trafficking protein particle complex subunit BET3	
+BET3-LIKE	human	Q5T215	TRAPPC3L	Q5T215	10	30	Trafficking protein particle complex subunit 3-like protein 	w
+BET3L	human	Q5T215	TRAPPC3L	Q5T215	10	30		
+BET4	candida-albicans-237561	A0A1D8PD57	BET4	A0A1D8PD57	2	10	Geranylgeranyl transferase type-2 subunit alpha	
+BET4	schizosaccharomyces-pombe	O94412	bet4	O94412	3	12	Geranylgeranyl transferase type-2 subunit alpha	
+BET4	yeast	Q00618	BET4	Q00618	2	17	Geranylgeranyl transferase type-2 subunit alpha	
+BET5	candida-albicans-237561	Q5AEG6	BET5	Q5AEG6	4	12	Trafficking protein particle complex subunit	
+BET5	fly	FBgn0260860	Bet5	Q9VA95	6	84	Trafficking protein particle complex subunit	
+BET5	human	Q9Y5R8	TRAPPC1	Q9Y5R8	12	89		
+BET5	schizosaccharomyces-pombe	Q9UT70	bet5	Q9UT70	4	22	Transport protein particle subunit bet5	
+BET5	yeast	Q03630	BET5	Q03630	3	25	Trafficking protein particle complex subunit BET5	
+BETA	escherichia-coli-83333	P17444	betA	P17444	0	8	Oxygen-dependent choline dehydrogenase	
+BETA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GL29	betA	A0A0H3GL29	0	27	Oxygen-dependent choline dehydrogenase	
+BETA	pseudomonas-aeruginosa	Q9HTJ2	betA	Q9HTJ2	0	28	Oxygen-dependent choline dehydrogenase	
+BETA	staphylococcus-aureus-93061	Q2FV11	betA	Q2FV11	0	3	Oxygen-dependent choline dehydrogenase	
+BETA	virus	A0A096ZGT3	beta	A0A096ZGT3	0	10	A0A096ZGT3_9RHAB	
+BETA	virus	A0A096ZGU6	beta	A0A096ZGU6	0	11	A0A096ZGU6_9RHAB	
+BETA	virus	H8XWF7	beta	H8XWF7	0	11	H8XWF7_9RHAB	
+BETA	virus	H8XWT2	beta	H8XWT2	1	9	H8XWT2_9RHAB	
+BETA	virus	I3NUY1	beta	I3NUY1	1	9	I3NUY1_9RHAB	
+BETA	virus	J9UF80	beta	J9UF80	0	10	J9UF80_9RHAB	
+BETA	virus	K4HH67	beta	K4HH67	1	9	K4HH67_ARV	
+BETA	virus	Q65478	beta	Q65478	0	12	Protein beta	
+BETA'COP	fly	FBgn0025724	beta'COP	O62621	7	82	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP)	
+BETA-	human	Q99436	PSMB7	Q99436	19	242	Proteasome subunit beta type-7 (EC 3.4.25.1) (Macropain chai	w
+BETA-	zebrafish	F1QSA2	hsd3b1	F1QSA2	1	208	Hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid d	w
+BETA-1	fly	FBgn0000221	brn	Q24157	351	2594	Beta-1,3-galactosyltransferase brn (EC 2.4.1.62) (Brainiac p	w
+BETA-1	fly	FBgn0001105	Gbeta13F	P26308	28	186	Guanine nucleotide-binding protein subunit beta-1	w
+BETA-1	fly	FBgn0001404	egh	O01346	0	9	Beta-1,4-mannosyltransferase egh (EC 2.4.1.-) (Protein egghe	w
+BETA-1	fly	FBgn0013973	Gycbeta100B	Q9VA09	8	89	Guanylate cyclase soluble subunit beta-1 (EC 4.6.1.2) (Guany	w
+BETA-1	fly	FBgn0015776	nrv1	Q24046	196	2408	Sodium/potassium-transporting ATPase subunit beta-1 (Protein	w
+BETA-1	fly	FBgn0030984	tgy	Q9VWM1	8	17	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0031466	CG3119	Q9VQH4	8	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0031468	CG2975	Q9VQH6	8	17	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0031469	CG18558	Q9VQH7	0	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0031472	CG2983	Q9VQI0	9	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0033271	CG8708	Q7JRF9	8	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0036144	GlcAT-P	Q9VTG7	281	2381	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-1	fly	FBgn0039258	beta4GalT7	Q9VBZ9	351	2373	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	w
+BETA-1	fly	FBgn0039738	Mgat2	Q961U0	373	2377	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-1	fly	FBgn0041706	CG3253	Q9W1A7	214	2373	Beta-1,4-glucuronyltransferase 1 (I-beta-1,3-N-acetylglucosa	w
+BETA-1	fly	FBgn0051849	Mgat3	Q95RF3	1	23	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-1	fly	FBgn0054056	CG34056	Q9W0L4	8	15	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0054057	CG34057	Q2PE08	8	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	fly	FBgn0066114	GlcAT-I	O97422	58	2375	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-1	fly	FBgn0085481	CG34452	A8JNT2	8	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+BETA-1	human	A8MXE2	B3GALT9	A8MXE2	3	26	Beta-1,3-galactosyltransferase 9 (EC 2.4.1.-) (UDP-GlcNAc:be	w
+BETA-1	human	O00203	AP3B1	O00203	45	303	AP-3 complex subunit beta-1 (Adaptor protein complex AP-3 su	w
+BETA-1	human	O00241	SIRPB1	O00241	30	290	Signal-regulatory protein beta-1 (SIRP-beta-1) (CD172 antige	w
+BETA-1	human	O00587	MFNG	O00587	9	77	Beta-1,3-N-acetylglucosaminyltransferase manic fringe (EC 2.	w
+BETA-1	human	O43286	B4GALT5	O43286	9	105	Beta-1,4-galactosyltransferase 5 (Beta-1,4-GalTase 5) (Beta4	w
+BETA-1	human	O43505	B4GAT1	O43505	15	154	Beta-1,4-glucuronyltransferase 1 (EC 2.4.1.-) (I-beta-1,3-N-	w
+BETA-1	human	O43825	B3GALT2	O43825	5	39	Beta-1,3-galactosyltransferase 2 (Beta-1,3-GalTase 2) (Beta3	w
+BETA-1	human	O60512	B4GALT3	O60512	15	150	Beta-1,4-galactosyltransferase 3 (Beta-1,4-GalTase 3) (Beta4	w
+BETA-1	human	O60513	B4GALT4	O60513	7	80	Beta-1,4-galactosyltransferase 4 (Beta-1,4-GalTase 4) (Beta4	w
+BETA-1	human	O60909	B4GALT2	O60909	21	164	Beta-1,4-galactosyltransferase 2 (Beta-1,4-GalTase 2) (Beta4	w
+BETA-1	human	O75752	B3GALNT1	O75752	11	110	UDP-GalNAc:beta-1,3-N-acetylgalactosaminyltransferase 1 (Bet	w
+BETA-1	human	O94766	B3GAT3	O94766	10	144	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-1	human	O95395	GCNT3	O95395	7	94	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+BETA-1	human	O95985	TOP3B	O95985	150	1465	DNA topoisomerase 3-beta-1 (EC 5.6.2.1) (DNA topoisomerase I	w
+BETA-1	human	O96024	B3GALT4	O96024	3	120	Beta-1,3-galactosyltransferase 4 (Beta-1,3-GalTase 4) (Beta3	w
+BETA-1	human	P01137	TGFB1	P01137	49	837	Transforming growth factor beta-1 proprotein [Cleaved into: 	w
+BETA-1	human	P02787	TF	P02787	33	566	Serotransferrin (Transferrin) (Beta-1 metal-binding globulin	w
+BETA-1	human	P04792	HSPB1	P04792	46	693	Heat shock protein beta-1 (HspB1) (28 kDa heat shock protein	w
+BETA-1	human	P05026	ATP1B1	P05026	18	271	Sodium/potassium-transporting ATPase subunit beta-1 (Sodium/	w
+BETA-1	human	P05556	ITGB1	P05556	71	710	Integrin beta-1 (Fibronectin receptor subunit beta) (Glycopr	w
+BETA-1	human	P07942	LAMB1	P07942	27	200	Laminin subunit beta-1 (Laminin B1 chain) (Laminin-1 subunit	w
+BETA-1	human	P08034	GJB1	P08034	15	418	Gap junction beta-1 protein (Connexin-32) (Cx32) (GAP juncti	w
+BETA-1	human	P08588	ADRB1	P08588	41	450	Beta-1 adrenergic receptor (Beta-1 adrenoreceptor) (Beta-1 a	w
+BETA-1	human	P11465	PSG2	P11465	14	143	Pregnancy-specific beta-1-glycoprotein 2 (PS-beta-G-2) (PSBG	w
+BETA-1	human	P15291	B4GALT1	P15291	27	172	Beta-1,4-galactosyltransferase 1 (Beta-1,4-GalTase 1) (Beta4	w
+BETA-1	human	P18505	GABRB1	P18505	34	139	Gamma-aminobutyric acid receptor subunit beta-1 (GABA(A) rec	w
+BETA-1	human	P23443	RPS6KB1	P23443	279	1563	Ribosomal protein S6 kinase beta-1 (S6K-beta-1) (S6K1) (EC 2	w
+BETA-1	human	P35222	CTNNB1	P35222	299	2470	Catenin beta-1 (Beta-catenin)	w
+BETA-1	human	P42701	IL12RB1	P42701	72	496	Interleukin-12 receptor subunit beta-1 (IL-12 receptor subun	w
+BETA-1	human	P49407	ARRB1	P49407	155	766	Beta-arrestin-1 (Arrestin beta-1) (Non-visual arrestin-2)	w
+BETA-1	human	P62873	GNB1	P62873	125	1533	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+BETA-1	human	Q00887	PSG9	Q00887	9	58	Pregnancy-specific beta-1-glycoprotein 9 (PS-beta-G-9) (PSBG	w
+BETA-1	human	Q00973	B4GALNT1	Q00973	8	181	Beta-1,4 N-acetylgalactosaminyltransferase 1 (EC 2.4.1.92) (	w
+BETA-1	human	Q02153	GUCY1B1	Q02153	9	173	Guanylate cyclase soluble subunit beta-1 (GCS-beta-1) (EC 4.	w
+BETA-1	human	Q02641	CACNB1	Q02641	16	104	Voltage-dependent L-type calcium channel subunit beta-1 (CAB	w
+BETA-1	human	Q02742	GCNT1	Q02742	8	110	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+BETA-1	human	Q06547	GABPB1	Q06547	65	480	GA-binding protein subunit beta-1 (GABP subunit beta-1) (GAB	w
+BETA-1	human	Q07699	SCN1B	Q07699	13	53	Sodium channel regulatory subunit beta-1	w
+BETA-1	human	Q09327	MGAT3	Q09327	4	36	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-1	human	Q09328	MGAT5	Q09328	22	321	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	w
+BETA-1	human	Q10469	MGAT2	Q10469	8	71	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-1	human	Q10567	AP1B1	Q10567	74	395	AP-1 complex subunit beta-1 (Adaptor protein complex AP-1 su	w
+BETA-1	human	Q14028	CNGB1	Q14028	13	84	Cyclic nucleotide-gated channel beta-1 (CNG channel beta-1) 	w
+BETA-1	human	Q14722	KCNAB1	Q14722	7	123	Voltage-gated potassium channel subunit beta-1 (EC 1.1.1.-) 	w
+BETA-1	human	Q14974	KPNB1	Q14974	43	728	Importin subunit beta-1 (Importin-90) (Karyopherin subunit b	w
+BETA-1	human	Q15363	TMED2	Q15363	24	241	Transmembrane emp24 domain-containing protein 2 (Membrane pr	w
+BETA-1	human	Q15661	TPSAB1	Q15661	18	60	Tryptase alpha/beta-1 (Tryptase-1) (EC 3.4.21.59) (Tryptase 	w
+BETA-1	human	Q16558	KCNMB1	Q16558	18	144	Calcium-activated potassium channel subunit beta-1 (BK chann	w
+BETA-1	human	Q2VPB7	AP5B1	Q2VPB7	13	69	AP-5 complex subunit beta-1 (Adaptor-related protein complex	w
+BETA-1	human	Q3V5L5	MGAT5B	Q3V5L5	28	326	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	w
+BETA-1	human	Q5TFQ8	SIRPB1	Q5TFQ8	148	2025	Signal-regulatory protein beta-1 isoform 3 (SIRP-beta-1 isof	w
+BETA-1	human	Q67FW5	QTGAL	Q67FW5	2	24	Queuosine-tRNA galactosyltransferase (QTGAL) (EC 2.4.1.-) (B	w
+BETA-1	human	Q6L9W6	B4GALNT3	Q6L9W6	19	100	Beta-1,4-N-acetylgalactosaminyltransferase 3 (B4GalNAcT3) (B	w
+BETA-1	human	Q6UX72	B3GNT9	Q6UX72	7	25	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	w
+BETA-1	human	Q6Y288	B3GLCT	Q6Y288	8	72	Beta-1,3-glucosyltransferase (Beta3Glc-T) (EC 2.4.1.-) (Beta	w
+BETA-1	human	Q6ZMB0	B3GNT6	Q6ZMB0	4	79	Acetylgalactosaminyl-O-glycosyl-glycoprotein beta-1,3-N-acet	w
+BETA-1	human	Q6ZNI0	GCNT7	Q6ZNI0	6	47	Probable beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,	w
+BETA-1	human	Q76KP1	B4GALNT4	Q76KP1	11	87	N-acetyl-beta-glucosaminyl-glycoprotein 4-beta-N-acetylgalac	w
+BETA-1	human	Q7Z7M8	B3GNT8	Q7Z7M8	8	74	N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransfera	w
+BETA-1	human	Q8N0V5	GCNT2	Q8N0V5	9	137	N-acetyllactosaminide beta-1,6-N-acetylglucosaminyl-transfer	w
+BETA-1	human	Q8N6G5	CSGALNACT2	Q8N6G5	27	158	Chondroitin sulfate N-acetylgalactosaminyltransferase 2 (EC 	w
+BETA-1	human	Q8NAT1	POMGNT2	Q8NAT1	5	131	Protein O-linked-mannose beta-1,4-N-acetylglucosaminyltransf	w
+BETA-1	human	Q8NCR0	B3GALNT2	Q8NCR0	8	76	UDP-GalNAc:beta-1,3-N-acetylgalactosaminyltransferase 2 (Bet	w
+BETA-1	human	Q8NES3	LFNG	Q8NES3	7	49	Beta-1,3-N-acetylglucosaminyltransferase lunatic fringe (EC 	w
+BETA-1	human	Q8NFL0	B3GNT7	Q8NFL0	12	129	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	w
+BETA-1	human	Q8NHY0	B4GALNT2	Q8NHY0	4	92	N-acetylneuraminylgalactosylglucosyl-glucoside beta-1,4-N- a	w
+BETA-1	human	Q8TDX6	CSGALNACT1	Q8TDX6	8	123	Chondroitin sulfate N-acetylgalactosaminyltransferase 1 (CsG	w
+BETA-1	human	Q8WZA1	POMGNT1	Q8WZA1	9	126	Protein O-linked-mannose beta-1,2-N-acetylglucosaminyltransf	w
+BETA-1	human	Q96L58	B3GALT6	Q96L58	5	76	Beta-1,3-galactosyltransferase 6 (Beta-1,3-GalTase 6) (Beta3	w
+BETA-1	human	Q9BT22	ALG1	Q9BT22	4	168	Chitobiosyldiphosphodolichol beta-mannosyltransferase (EC 2.	w
+BETA-1	human	Q9C0J1	B3GNT4	Q9C0J1	11	63	N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransfera	w
+BETA-1	human	Q9H4B7	TUBB1	Q9H4B7	92	1070	Tubulin beta-1 chain	w
+BETA-1	human	Q9NPZ5	B3GAT2	Q9NPZ5	7	58	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-1	human	Q9NQ66	PLCB1	Q9NQ66	28	192	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase be	w
+BETA-1	human	Q9NY97	B3GNT2	Q9NY97	36	597	N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransfera	w
+BETA-1	human	Q9P109	GCNT4	Q9P109	4	67	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+BETA-1	human	Q9P2W7	B3GAT1	Q9P2W7	28	440	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-1	human	Q9UBV7	B4GALT7	Q9UBV7	18	147	Beta-1,4-galactosyltransferase 7 (Beta-1,4-GalTase 7) (Beta4	w
+BETA-1	human	Q9UBX8	B4GALT6	Q9UBX8	6	79	Beta-1,4-galactosyltransferase 6 (Beta-1,4-GalTase 6) (Beta4	w
+BETA-1	human	Q9Y2A9	B3GNT3	Q9Y2A9	11	183	N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransfera	w
+BETA-1	human	Q9Y2C3	B3GALT5	Q9Y2C3	4	54	Beta-1,3-galactosyltransferase 5 (Beta-1,3-GalTase 5) (Beta3	w
+BETA-1	human	Q9Y478	PRKAB1	Q9Y478	22	187	5'-AMP-activated protein kinase subunit beta-1 (AMPK subunit	w
+BETA-1	human	Q9Y5F3	PCDHB1	Q9Y5F3	53	92	Protocadherin beta-1 (PCDH-beta-1)	w
+BETA-1	human	Q9Y5Z6	B3GALT1	Q9Y5Z6	13	144	Beta-1,3-galactosyltransferase 1 (Beta-1,3-GalTase 1) (Beta3	w
+BETA-1	human	Q9Y644	RFNG	Q9Y644	3	38	Beta-1,3-N-acetylglucosaminyltransferase radical fringe (EC 	w
+BETA-1	human	Q9Y6B7	AP4B1	Q9Y6B7	42	180	AP-4 complex subunit beta-1 (AP-4 adaptor complex subunit be	w
+BETA-1	virus	Q99CW3	Bo17	Q99CW3	4	78	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+BETA-1	worm	A0A0K3AUU0	bgnt-1.2	A0A0K3AUU0	0	1	B3GNT1, Beta-1,3-N-acetylGucosamiNylTransferase 1, homolog	w
+BETA-1	worm	G5ECT3	CELE_Y38C1AB.1	G5ECT3	8	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	G5EEZ8	gly-15	G5EEZ8	0	1	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+BETA-1	worm	G5EGF3	bgnt-1.3	G5EGF3	0	11	B3GNT1, Beta-1,3-N-acetylGucosamiNylTransferase 1, homolog	w
+BETA-1	worm	G5EGS9	CELE_W02B12.11	G5EGS9	0	1	Beta-1,4-N-acetylgalactosaminyltransferase	w
+BETA-1	worm	H2KYW8	bgnt-1.4	H2KYW8	1	1	B3GNT1, Beta-1,3-N-acetylGucosamiNylTransferase 1, homolog	w
+BETA-1	worm	O16374	galt-1	O16374	0	15	Beta-1,4-galactosyltransferase galt-1	w
+BETA-1	worm	O16535	C17A2.3	O16535	0	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	O17053	C02H6.1	O17053	3	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	O17747	CELE_E03H4.3	O17747	2	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	O18184	CELE_W09D10.5	O18184	5	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	O44563	bus-4	O44563	6	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	O45579	CELE_F56H6.1	O45579	1	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	P12456	mec-7	P12456	10	31	Tubulin beta-1 chain	w
+BETA-1	worm	P17343	gpb-1	P17343	25	137	Guanine nucleotide-binding protein subunit beta-1	w
+BETA-1	worm	Q22900	C16D9.6	Q22900	7	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	w
+BETA-1	worm	Q7YWW9	bgnt-1.5	Q7YWW9	1	1	B3GNT1, Beta-1,3-N-acetylGucosamiNylTransferase 1, homolog	w
+BETA-1	worm	Q93235	nkb-1	Q93235	2	27	Sodium/potassium-transporting ATPase subunit beta-1	w
+BETA-1	worm	Q9GUM2	bre-4	Q9GUM2	0	2	Beta-1,4-N-acetylgalactosaminyltransferase bre-4	w
+BETA-1	worm	Q9XUY2	aakb-1	Q9XUY2	10	25	5'-AMP-activated protein kinase subunit beta-1	w
+BETA-1	worm	Q9XXL4	CELE_ZK1225.1	Q9XXL4	1	7	Core-2/I-branching beta-1,6-N-acetylglucosaminyltransferase 	w
+BETA-1	yeast	P32578	SIP1	P32578	2	33	SNF1 protein kinase subunit beta-1	w
+BETA-1	yeast	P36000	APL2	P36000	21	99	AP-1 complex subunit beta-1	w
+BETA-1	yeast	P43614	KEG1	P43614	0	13	Beta-1,6-glucan synthesis-associated protein KEG1	w
+BETA-1	yeast	Q02642	EGD1	Q02642	6	129	Nascent polypeptide-associated complex subunit beta-1	w
+BETA-1	yeast	Q06142	KAP95	Q06142	8	146	Importin subunit beta-1	w
+BETA-1	zebrafish	A0A0G2KRY8	mgat3b	A0A0G2KRY8	1	1	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-1	zebrafish	A0A0R4ICJ7	b4galt4	A0A0R4ICJ7	0	10	Beta-1,4-galactosyltransferase	w
+BETA-1	zebrafish	A0A0R4IMZ8	kpnb1	A0A0R4IMZ8	16	106	Importin subunit beta-1	w
+BETA-1	zebrafish	A0A8M1N666	mgat3a	A0A8M1N666	1	1	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-1	zebrafish	A0A8M1RK31	si:dkey-1k23.3	A0A8M1RK31	2	47	Heat shock protein beta-1	w
+BETA-1	zebrafish	A0A8M2BDH6	b4galnt1b	A0A8M2BDH6	1	10	Beta-1,4 N-acetylgalactosaminyltransferase	w
+BETA-1	zebrafish	A0A8M9PDW9	b4galt3	A0A8M9PDW9	0	11	Beta-1,4-galactosyltransferase	w
+BETA-1	zebrafish	A0A8N7UUW6	b4galnt3a	A0A8N7UUW6	0	2	Beta-1,4-N-acetylgalactosaminyltransferase	w
+BETA-1	zebrafish	A1L229	b4galnt1a	A1L229	1	10	Beta-1,4 N-acetylgalactosaminyltransferase	w
+BETA-1	zebrafish	A4VAK4	hspb1	A4VAK4	1	51	Heat shock protein beta-1	w
+BETA-1	zebrafish	A8WHZ0	b4galt2	A8WHZ0	0	10	Beta-1,4-galactosyltransferase	w
+BETA-1	zebrafish	B3DHM6	adrb1	B3DHM6	2	25	Beta-1 adrenergic receptor	w
+BETA-1	zebrafish	C1KH59	b4galt1l	C1KH59	1	20	Beta-1,4-galactosyltransferase	w
+BETA-1	zebrafish	E7F204	b4galnt4a	E7F204	1	4	Beta-1,4-N-acetylgalactosaminyltransferase	w
+BETA-1	zebrafish	E7FCM6	si:dkey-199f5.8	E7FCM6	0	7	Beta-1,4-galactosyltransferase	w
+BETA-1	zebrafish	E7FE27	b4galnt4b	E7FE27	1	2	Beta-1,4-N-acetylgalactosaminyltransferase	w
+BETA-1	zebrafish	E9QGU5	kcnab2b	E9QGU5	5	61	Voltage-gated potassium channel subunit beta-1	w
+BETA-1	zebrafish	F1QGH7	ctnnb1	F1QGH7	44	284	Catenin beta-1	w
+BETA-1	zebrafish	F1QNB2	pomgnt1	F1QNB2	0	2	Protein O-linked-mannose beta-1,2-N-acetylglucosaminyltransf	w
+BETA-1	zebrafish	F1QNR4	gucy1b1	F1QNR4	4	9	Guanylate cyclase soluble subunit beta-1	w
+BETA-1	zebrafish	F1QPU4	ap5b1	F1QPU4	4	23	AP-5 complex subunit beta-1	w
+BETA-1	zebrafish	F1QPW7	gabrb1	F1QPW7	7	17	Gamma-aminobutyric acid receptor subunit beta-1	w
+BETA-1	zebrafish	F1QYH1	b4galnt3b	F1QYH1	2	4	Beta-1,4-N-acetylgalactosaminyltransferase	w
+BETA-1	zebrafish	F1RAK7	gcnt3	F1RAK7	0	1	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+BETA-1	zebrafish	L7YAI7	b4gat1	L7YAI7	0	3	Beta-1,4-glucuronyltransferase 1	w
+BETA-1	zebrafish	Q2Q551	cacnb1	Q2Q551	4	24	Voltage-dependent L-type calcium channel subunit beta-1	w
+BETA-1	zebrafish	Q3YL68	b4galt5	Q3YL68	0	15	Beta-1,4-galactosyltransferase 5	w
+BETA-1	zebrafish	Q58EC4	kcnab1a	Q58EC4	4	74	Voltage-gated potassium channel subunit beta-1	w
+BETA-1	zebrafish	Q5NDE5	pomgnt2	Q5NDE5	1	1	Protein O-linked-mannose beta-1,4-N-acetylglucosaminyltransf	w
+BETA-1	zebrafish	Q5YB40	mfng	Q5YB40	1	17	Beta-1,3-N-acetylglucosaminyltransferase manic fringe	w
+BETA-1	zebrafish	Q6KFX9	rfng	Q6KFX9	0	16	Beta-1,3-N-acetylglucosaminyltransferase radical fringe	w
+BETA-1	zebrafish	Q6PH57	gnb1	Q6PH57	59	373	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+BETA-1	zebrafish	Q71SG7	gcnt4	Q71SG7	0	1	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	w
+BETA-1	zebrafish	Q8JHF2	lfng	Q8JHF2	0	17	Beta-1,3-N-acetylglucosaminyltransferase lunatic fringe	w
+BETA-1	zebrafish	Q90486	ba1	Q90486	11	17	Hemoglobin subunit beta-1	w
+BETA-1-ADAPTIN	human	Q10567	AP1B1	Q10567	74	395	AP-1 complex subunit beta-1 (Adaptor protein complex AP-1 su	w
+BETA-1-BINDING	human	O14713	ITGB1BP1	O14713	37	157	Integrin beta-1-binding protein 1 (Integrin cytoplasmic doma	w
+BETA-1-BINDING	human	Q14766	LTBP1	Q14766	22	213	Latent-transforming growth factor beta-binding protein 1 (LT	w
+BETA-1-BINDING	human	Q9NPI5	NMRK2	Q9NPI5	8	62	Nicotinamide riboside kinase 2 (NRK 2) (NmR-K 2) (EC 2.7.1.2	w
+BETA-1-BINDING	human	Q9UKP3	ITGB1BP2	Q9UKP3	4	44	Integrin beta-1-binding protein 2 (Melusin)	w
+BETA-1-BINDING	zebrafish	Q5RG21	itgb1bp1	Q5RG21	9	20	Integrin beta-1-binding protein 1	w
+BETA-1-GLYCOPROTEIN	human	A0A096LNM5	PSG7	A0A096LNM5	0	14	Pregnancy specific beta-1-glycoprotein 7	w
+BETA-1-GLYCOPROTEIN	human	P11464	PSG1	P11464	8	85	Pregnancy-specific beta-1-glycoprotein 1 (PS-beta-G-1) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	P11465	PSG2	P11465	14	143	Pregnancy-specific beta-1-glycoprotein 2 (PS-beta-G-2) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	Q00887	PSG9	Q00887	9	58	Pregnancy-specific beta-1-glycoprotein 9 (PS-beta-G-9) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	Q00888	PSG4	Q00888	1	40	Pregnancy-specific beta-1-glycoprotein 4 (PS-beta-G-4) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	Q00889	PSG6	Q00889	4	41	Pregnancy-specific beta-1-glycoprotein 6 (PS-beta-G-6) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	Q13046	PSG7	Q13046	1	29	Pregnancy-specific beta-1-glycoprotein 7 (PS-beta-G-7) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	Q15238	PSG5	Q15238	9	79	Pregnancy-specific beta-1-glycoprotein 5 (PS-beta-G-5) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	Q16557	PSG3	Q16557	9	63	Pregnancy-specific beta-1-glycoprotein 3 (PS-beta-G-3) (PSBG	w
+BETA-1-GLYCOPROTEIN	human	Q9UQ72	PSG11	Q9UQ72	17	192	Pregnancy-specific beta-1-glycoprotein 11 (PS-beta-G-11) (PS	w
+BETA-1-GLYCOPROTEIN	human	Q9UQ74	PSG8	Q9UQ74	11	72	Pregnancy-specific beta-1-glycoprotein 8 (PS-beta-G-8) (PSBG	w
+BETA-1-I	human	Q15714	TSC22D1	Q15714	25	122	TSC22 domain family protein 1 (Cerebral protein 2) (HUCEP-2)	w
+BETA-1-INDUCED	fly	FBgn0041789	Pax	Q2PDT4	13	115	Transforming growth factor beta-1-induced transcript 1 prote	w
+BETA-1-INDUCED	human	O43294	TGFB1I1	O43294	35	146	Transforming growth factor beta-1-induced transcript 1 prote	w
+BETA-1-INTERACTING	fly	FBgn0085442	NKAIN	A6MHQ4	3	10	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-INTERACTING	human	Q4KMZ8	NKAIN1	Q4KMZ8	13	130	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-INTERACTING	human	Q5VXU1	NKAIN2	Q5VXU1	6	95	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-INTERACTING	human	Q8IVV8	NKAIN4	Q8IVV8	4	56	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-INTERACTING	human	Q8N8D7	NKAIN3	Q8N8D7	6	66	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-INTERACTING	worm	Q9U369	gldi-7	Q9U369	0	4	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-INTERACTING	zebrafish	A0AB13A8U9	nkain2	A0AB13A8U9	0	1	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-INTERACTING	zebrafish	Q6PHL4	nkain1	Q6PHL4	0	1	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+BETA-1-RELATED	human	A4D0S4	LAMB4	A4D0S4	5	14	Laminin subunit beta-4 (Laminin beta-1-related protein)	w
+BETA-1-SYNTROPHIN	human	Q13884	SNTB1	Q13884	22	159	Beta-1-syntrophin (59 kDa dystrophin-associated protein A1 b	w
+BETA-1-SYNTROPHIN	zebrafish	Q6GMG2	sntb1	Q6GMG2	4	20	Beta-1-syntrophin	w
+BETA-10	human	P63313	TMSB10	P63313	51	556	Thymosin beta-10	w
+BETA-10	human	Q14990	ODF1	Q14990	9	107	Outer dense fiber protein 1 (Heat shock protein beta-10) (Hs	w
+BETA-10	human	Q9UN67	PCDHB10	Q9UN67	58	74	Protocadherin beta-10 (PCDH-beta-10)	w
+BETA-11	human	Q99731	CCL19	Q99731	82	585	C-C motif chemokine 19 (Beta-chemokine exodus-3) (CK beta-11	w
+BETA-11	human	Q9Y547	IFT25	Q9Y547	14	182	Intraflagellar transport protein 25 homolog (Heat shock prot	w
+BETA-11	human	Q9Y5F2	PCDHB11	Q9Y5F2	61	124	Protocadherin beta-11 (PCDH-beta-11)	w
+BETA-12	human	Q9Y5F1	PCDHB12	Q9Y5F1	54	75	Protocadherin beta-12 (PCDH-beta-12)	w
+BETA-13	human	Q9Y5F0	PCDHB13	Q9Y5F0	53	72	Protocadherin beta-13 (PCDH-beta-13)	w
+BETA-14	human	Q9Y5E9	PCDHB14	Q9Y5E9	56	90	Protocadherin beta-14 (PCDH-beta-14)	w
+BETA-15	human	Q9Y5E8	PCDHB15	Q9Y5E8	56	89	Protocadherin beta-15 (PCDH-beta-15)	w
+BETA-15	worm	O01509	srb-15	O01509	0	7	Serpentine receptor class beta-15	w
+BETA-15A	human	P0CG34	TMSB15A	P0CG34	11	57	Thymosin beta-15A (NB thymosin beta) (Thymosin-like protein 	w
+BETA-15B	human	P0CG35	TMSB15B	P0CG35	22	134	Thymosin beta-15B	w
+BETA-15C	human	P0DX04	TMSB15C	P0DX04	0	2	Thymosin beta-15C	w
+BETA-16	human	Q9NRJ7	PCDHB16	Q9NRJ7	57	122	Protocadherin beta-16 (PCDH-beta-16) (Protocadherin-3X)	w
+BETA-18	human	Q96TA0	PCDHB18P	Q96TA0	54	57	Putative protocadherin beta-18 (PCDH-beta-18) (PCDH-psi2)	w
+BETA-1B-GLYCOPROTEIN	human	P02790	HPX	P02790	53	604	Hemopexin (Beta-1B-glycoprotein)	w
+BETA-1R	fly	FBgn0038980	Octbeta1R	Q9VCZ3	5	30	Octopamine receptor beta-1R (DmOA2) (DmOct-beta-1R)	w
+BETA-2	fly	FBgn0003889	betaTub85D	P61857	18	154	Tubulin beta-2 chain (Beta-2-tubulin)	w
+BETA-2	fly	FBgn0004623	Gbeta76C	P29829	16	75	Guanine nucleotide-binding protein subunit beta-2	w
+BETA-2	fly	FBgn0015777	nrv2	Q24048	223	2413	Sodium/potassium-transporting ATPase subunit beta-2 (Protein	w
+BETA-2	human	A6NJW9	CD8B2	A6NJW9	23	66	T-cell surface glycoprotein CD8 beta-2 chain (CD8b pseudogen	w
+BETA-2	human	O43741	PRKAB2	O43741	38	301	5'-AMP-activated protein kinase subunit beta-2 (AMPK subunit	w
+BETA-2	human	O60939	SCN2B	O60939	59	396	Sodium channel regulatory subunit beta-2	w
+BETA-2	human	O75343	GUCY1B2	O75343	1	6	Putative guanylate cyclase soluble subunit beta-2 (GCS-beta-	w
+BETA-2	human	O95718	ESRRB	O95718	179	491	Steroid hormone receptor ERR2 (ERR beta-2) (Estrogen recepto	w
+BETA-2	human	P05107	ITGB2	P05107	60	560	Integrin beta-2 (Cell surface adhesion glycoproteins LFA-1/C	w
+BETA-2	human	P05231	IL6	P05231	67	947	Interleukin-6 (IL-6) (B-cell stimulatory factor 2) (BSF-2) (	w
+BETA-2	human	P07550	ADRB2	P07550	53	840	Beta-2 adrenergic receptor (Beta-2 adrenoreceptor) (Beta-2 a	w
+BETA-2	human	P14415	ATP1B2	P14415	17	171	Sodium/potassium-transporting ATPase subunit beta-2 (Adhesio	w
+BETA-2	human	P17787	CHRNB2	P17787	44	210	Neuronal acetylcholine receptor subunit beta-2	w
+BETA-2	human	P20231	TPSB2	P20231	21	109	Tryptase beta-2 (Tryptase-2) (EC 3.4.21.59) (Tryptase II)	w
+BETA-2	human	P29033	GJB2	P29033	13	204	Gap junction beta-2 protein (Connexin-26) (Cx26)	w
+BETA-2	human	P32121	ARRB2	P32121	79	651	Beta-arrestin-2 (Arrestin beta-2) (Non-visual arrestin-3)	w
+BETA-2	human	P47870	GABRB2	P47870	38	158	Gamma-aminobutyric acid receptor subunit beta-2 (GABA(A) rec	w
+BETA-2	human	P55268	LAMB2	P55268	14	178	Laminin subunit beta-2 (Laminin B1s chain) (Laminin-11 subun	w
+BETA-2	human	P61812	TGFB2	P61812	25	377	Transforming growth factor beta-2 proprotein (Cetermin) (Gli	w
+BETA-2	human	P62879	GNB2	P62879	118	1071	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+BETA-2	human	P68371	TUBB4B	P68371	89	890	Tubulin beta-4B chain (Tubulin beta-2 chain) (Tubulin beta-2	w
+BETA-2	human	Q00722	PLCB2	Q00722	31	256	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase be	w
+BETA-2	human	Q06547	GABPB1	Q06547	65	480	GA-binding protein subunit beta-1 (GABP subunit beta-1) (GAB	w
+BETA-2	human	Q08289	CACNB2	Q08289	9	83	Voltage-dependent L-type calcium channel subunit beta-2 (CAB	w
+BETA-2	human	Q13303	KCNAB2	Q13303	7	76	Voltage-gated potassium channel subunit beta-2 (EC 1.1.1.-) 	w
+BETA-2	human	Q13367	AP3B2	Q13367	26	113	AP-3 complex subunit beta-2 (Adaptor protein complex AP-3 su	w
+BETA-2	human	Q16082	HSPB2	Q16082	17	363	Heat shock protein beta-2 (HspB2) (DMPK-binding protein) (MK	w
+BETA-2	human	Q53HC0	CCDC92	Q53HC0	19	97	Coiled-coil domain-containing protein 92 (Limkain beta-2)	w
+BETA-2	human	Q5JXA9	SIRPB2	Q5JXA9	21	156	Signal-regulatory protein beta-2 (SIRP-beta-2) (Protein tyro	w
+BETA-2	human	Q8TAK5	GABPB2	Q8TAK5	46	369	GA-binding protein subunit beta-2 (GABP subunit beta-2) (GAB	w
+BETA-2	human	Q92973	TNPO1	Q92973	39	416	Transportin-1 (Importin beta-2) (Karyopherin beta-2) (M9 reg	w
+BETA-2	human	Q99665	IL12RB2	Q99665	35	246	Interleukin-12 receptor subunit beta-2 (IL-12 receptor subun	w
+BETA-2	human	Q9P1W8	SIRPG	Q9P1W8	25	221	Signal-regulatory protein gamma (SIRP-gamma) (CD172 antigen-	w
+BETA-2	human	Q9UBS0	RPS6KB2	Q9UBS0	264	1585	Ribosomal protein S6 kinase beta-2 (S6K-beta-2) (S6K2) (EC 2	w
+BETA-2	human	Q9UGP5	POLL	Q9UGP5	12	157	DNA polymerase lambda (Pol Lambda) (EC 2.7.7.7) (EC 4.2.99.-	w
+BETA-2	human	Q9Y5E7	PCDHB2	Q9Y5E7	55	73	Protocadherin beta-2 (PCDH-beta-2)	w
+BETA-2	human	Q9Y691	KCNMB2	Q9Y691	7	51	Calcium-activated potassium channel subunit beta-2 (BK chann	w
+BETA-2	worm	P52275	tbb-2	P52275	11	37	Tubulin beta-2 chain	w
+BETA-2	worm	Q20636	gpb-2	Q20636	23	139	Guanine nucleotide-binding protein subunit beta-2	w
+BETA-2	worm	Q95ZY1	srb-2	Q95ZY1	0	2	Serpentine receptor class beta-2	w
+BETA-2	yeast	P34164	SIP2	P34164	5	50	SNF1 protein kinase subunit beta-2 (Protein SPM2) (SNF1-inte	w
+BETA-2	yeast	P38217	KAP104	P38217	16	121	Importin subunit beta-2	w
+BETA-2	yeast	P40314	BTT1	P40314	10	101	Nascent polypeptide-associated complex subunit beta-2	w
+BETA-2	zebrafish	A0A8M1NCZ7	adrb2b	A0A8M1NCZ7	1	25	Beta-2 adrenergic receptor	w
+BETA-2	zebrafish	A0A8M2BK33	s100p	A0A8M2BK33	0	1	Calcium-activated potassium channel subunit beta-2	w
+BETA-2	zebrafish	A0AB32TUG0	cacnb2a	A0AB32TUG0	4	24	Voltage-dependent L-type calcium channel subunit beta-2	w
+BETA-2	zebrafish	B0F0D0	cacnb4a	B0F0D0	2	22	Voltage-dependent L-type calcium channel subunit beta-2	w
+BETA-2	zebrafish	E7EXL7	LOC101885642	E7EXL7	0	3	Beta-2 adrenergic receptor	w
+BETA-2	zebrafish	E7F4S7	chrnb2	E7F4S7	10	10	Neuronal acetylcholine receptor subunit beta-2	w
+BETA-2	zebrafish	Q06W28	scn2b	Q06W28	2	26	Sodium channel subunit beta-2	w
+BETA-2	zebrafish	Q0D273	gabpb2b	Q0D273	3	15	GA-binding protein subunit beta-2 isoform X1	w
+BETA-2	zebrafish	Q566R8	hspb2	Q566R8	4	48	Heat shock protein beta-2	w
+BETA-2-ADAPTIN	human	P63010	AP2B1	P63010	92	578	AP-2 complex subunit beta (AP105B) (Adaptor protein complex 	w
+BETA-2-GLYCOPROTEIN	human	P02749	APOH	P02749	45	460	Beta-2-glycoprotein 1 (APC inhibitor) (Activated protein C-b	w
+BETA-2-LIKE	human	P63244	RACK1	P63244	105	1123	Small ribosomal subunit protein RACK1 (Cell proliferation-in	w
+BETA-2-MICROGLOBULIN	human	P61769	B2M	P61769	115	1213	Beta-2-microglobulin [Cleaved into: Beta-2-microglobulin for	w
+BETA-2-MICROGLOBULIN	zebrafish	A0AB32U1V9	zmp:0000001138	A0AB32U1V9	21	37	Beta-2-microglobulin	w
+BETA-2-MICROGLOBULIN	zebrafish	E7F1G6	b2ml	E7F1G6	19	128	Beta-2-microglobulin	w
+BETA-2-MICROGLOBULIN	zebrafish	Q04475	b2m	Q04475	21	135	Beta-2-microglobulin	w
+BETA-2-SYNTROPHIN	human	Q13425	SNTB2	Q13425	23	211	Beta-2-syntrophin (59 kDa dystrophin-associated protein A1 b	w
+BETA-2-SYNTROPHIN	zebrafish	E7FDL7	sntb2	E7FDL7	4	20	Beta-2-syntrophin	w
+BETA-2-TUBULIN	fly	FBgn0003889	betaTub85D	P61857	18	154	Tubulin beta-2 chain (Beta-2-tubulin)	w
+BETA-2A	human	Q13885	TUBB2A	Q13885	122	1941	Tubulin beta-2A chain (Tubulin beta class IIa)	w
+BETA-2A	zebrafish	A3KQS6	gabpb2a	A3KQS6	4	15	GA-binding protein subunit beta-2a	w
+BETA-2B	human	O14787	TNPO2	O14787	21	280	Transportin-2 (Karyopherin beta-2b)	w
+BETA-2B	human	Q9BVA1	TUBB2B	Q9BVA1	34	417	Tubulin beta-2B chain	w
+BETA-2B	zebrafish	A0AB13A9L7	cacnb2b	A0AB13A9L7	2	22	Voltage-dependent L-type calcium channel subunit beta-2b iso	w
+BETA-2C	human	P68371	TUBB4B	P68371	89	890	Tubulin beta-4B chain (Tubulin beta-2 chain) (Tubulin beta-2	w
+BETA-3	fly	FBgn0013973	Gycbeta100B	Q9VA09	8	89	Guanylate cyclase soluble subunit beta-1 (EC 4.6.1.2) (Guany	w
+BETA-3	fly	FBgn0026380	Prosbeta3	Q9XYN7	25	163	Proteasome subunit beta type-3 (20S proteasome subunit beta-	w
+BETA-3	human	A0A3B3IT50	?	A0A3B3IT50	0	2	Beta-3 adrenergic receptor	w
+BETA-3	human	O00410	IPO5	O00410	48	486	Importin-5 (Imp5) (Importin subunit beta-3) (Karyopherin bet	w
+BETA-3	human	O43448	KCNAB3	O43448	13	118	Voltage-gated potassium channel subunit beta-3 (EC 1.1.1.-) 	w
+BETA-3	human	O75712	GJB3	O75712	5	139	Gap junction beta-3 protein (Connexin-31) (Cx31)	w
+BETA-3	human	P05106	ITGB3	P05106	58	544	Integrin beta-3 (Platelet membrane glycoprotein IIIa) (GPIII	w
+BETA-3	human	P10600	TGFB3	P10600	22	214	Transforming growth factor beta-3 proprotein [Cleaved into: 	w
+BETA-3	human	P13945	ADRB3	P13945	13	103	Beta-3 adrenergic receptor (Beta-3 adrenoreceptor) (Beta-3 a	w
+BETA-3	human	P16520	GNB3	P16520	60	410	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+BETA-3	human	P28472	GABRB3	P28472	39	167	Gamma-aminobutyric acid receptor subunit beta-3 (GABA(A) rec	w
+BETA-3	human	P49720	PSMB3	P49720	26	283	Proteasome subunit beta type-3 (Proteasome chain 13) (Protea	w
+BETA-3	human	P54284	CACNB3	P54284	20	141	Voltage-dependent L-type calcium channel subunit beta-3 (CAB	w
+BETA-3	human	P54709	ATP1B3	P54709	23	291	Sodium/potassium-transporting ATPase subunit beta-3 (Sodium/	w
+BETA-3	human	Q01970	PLCB3	Q01970	38	216	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase be	w
+BETA-3	human	Q02153	GUCY1B1	Q02153	9	173	Guanylate cyclase soluble subunit beta-1 (GCS-beta-1) (EC 4.	w
+BETA-3	human	Q05901	CHRNB3	Q05901	34	95	Neuronal acetylcholine receptor subunit beta-3	w
+BETA-3	human	Q12988	HSPB3	Q12988	15	243	Heat shock protein beta-3 (HspB3) (Heat shock 17 kDa protein	w
+BETA-3	human	Q13509	TUBB3	Q13509	92	1444	Tubulin beta-3 chain (Tubulin beta-4 chain) (Tubulin beta-II	w
+BETA-3	human	Q13751	LAMB3	Q13751	36	164	Laminin subunit beta-3 (Epiligrin subunit beta) (Kalinin B1 	w
+BETA-3	human	Q58FF7	HSP90AB3P	Q58FF7	7	10	Putative heat shock protein HSP 90-beta-3 (Heat shock protei	w
+BETA-3	human	Q9NPA1	KCNMB3	Q9NPA1	12	93	Calcium-activated potassium channel subunit beta-3 (BK chann	w
+BETA-3	human	Q9NQW8	CNGB3	Q9NQW8	9	53	Cyclic nucleotide-gated channel beta-3 (CNG channel beta-3) 	w
+BETA-3	human	Q9NY72	SCN3B	Q9NY72	71	514	Sodium channel regulatory subunit beta-3	w
+BETA-3	human	Q9Y5E6	PCDHB3	Q9Y5E6	67	202	Protocadherin beta-3 (PCDH-beta-3)	w
+BETA-3	worm	Q9XUY5	nkb-3	Q9XUY5	2	21	Probable sodium/potassium-transporting ATPase subunit beta-3	w
+BETA-3	yeast	P32337	PSE1	P32337	16	134	Importin subunit beta-3	w
+BETA-3	yeast	Q04739	GAL83	Q04739	9	57	SNF1 protein kinase subunit beta-3 (Glucose repression prote	w
+BETA-3	zebrafish	A0A8M2BDH7	gabrb3	A0A8M2BDH7	6	17	Gamma-aminobutyric acid receptor subunit beta-3 isoform X1	w
+BETA-3	zebrafish	A0A8M9PL84	cacnb3b	A0A8M9PL84	4	22	Voltage-dependent L-type calcium channel subunit beta-3	w
+BETA-3	zebrafish	A0AB32TVN1	hspb3	A0AB32TVN1	5	63	Heat shock protein beta-3 isoform X1	w
+BETA-3	zebrafish	A8E7Q8	si:ch211-225p5.8	A8E7Q8	2	11	Sodium channel regulatory subunit beta-3	w
+BETA-3	zebrafish	F8W4B3	scn3b	F8W4B3	1	11	Sodium channel regulatory subunit beta-3	w
+BETA-3	zebrafish	Q06W32	scn1ba	Q06W32	1	21	Sodium channel regulatory subunit beta-3	w
+BETA-3-BINDING	human	Q13352	ITGB3BP	Q13352	30	118	Centromere protein R (CENP-R) (Beta-3-endonexin) (Integrin b	w
+BETA-3-ENDONEXIN	human	Q13352	ITGB3BP	Q13352	30	118	Centromere protein R (CENP-R) (Beta-3-endonexin) (Integrin b	w
+BETA-3-GLUCOSYLTRANSFERASE	zebrafish	A0A068F9P7	b3glcta	A0A068F9P7	0	14	Beta-3-glucosyltransferase a	w
+BETA-3-GLYCOSYLTRANSFERASE-LIKE	human	Q6Y288	B3GLCT	Q6Y288	8	72	Beta-1,3-glucosyltransferase (Beta3Glc-T) (EC 2.4.1.-) (Beta	w
+BETA-3-GX-T5	human	Q9Y2C3	B3GALT5	Q9Y2C3	4	54	Beta-1,3-galactosyltransferase 5 (Beta-1,3-GalTase 5) (Beta3	w
+BETA-3A-ADAPTIN	human	O00203	AP3B1	O00203	45	303	AP-3 complex subunit beta-1 (Adaptor protein complex AP-3 su	w
+BETA-3B-ADAPTIN	human	Q13367	AP3B2	Q13367	26	113	AP-3 complex subunit beta-2 (Adaptor protein complex AP-3 su	w
+BETA-3R	fly	FBgn0250910	Octbeta3R	Q4LBB6	6	28	Octopamine receptor beta-3R (DmOct-beta-3R)	w
+BETA-4	human	A4D0S4	LAMB4	A4D0S4	5	14	Laminin subunit beta-4 (Laminin beta-1-related protein)	w
+BETA-4	human	O00305	CACNB4	O00305	18	124	Voltage-dependent L-type calcium channel subunit beta-4 (CAB	w
+BETA-4	human	O14604	TMSB4Y	O14604	11	79	Thymosin beta-4, Y-chromosomal	w
+BETA-4	human	P02489	CRYAA	P02489	15	256	Alpha-crystallin A chain (Heat shock protein beta-4) (HspB4)	w
+BETA-4	human	P04350	TUBB4A	P04350	84	1288	Tubulin beta-4A chain (Tubulin 5 beta) (Tubulin beta-4 chain	w
+BETA-4	human	P16144	ITGB4	P16144	15	225	Integrin beta-4 (GP150) (CD antigen CD104)	w
+BETA-4	human	P30926	CHRNB4	P30926	35	128	Neuronal acetylcholine receptor subunit beta-4	w
+BETA-4	human	P62328	TMSB4X	P62328	141	1664	Thymosin beta-4 (T beta-4) (Fx) [Cleaved into: Hemoregulator	w
+BETA-4	human	Q13509	TUBB3	Q13509	92	1444	Tubulin beta-3 chain (Tubulin beta-4 chain) (Tubulin beta-II	w
+BETA-4	human	Q15147	PLCB4	Q15147	14	100	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase be	w
+BETA-4	human	Q86W47	KCNMB4	Q86W47	14	142	Calcium-activated potassium channel subunit beta-4 (BK chann	w
+BETA-4	human	Q8IWT1	SCN4B	Q8IWT1	27	251	Sodium channel regulatory subunit beta-4	w
+BETA-4	human	Q9HAV0	GNB4	Q9HAV0	76	608	Guanine nucleotide-binding protein subunit beta-4 (Transduci	w
+BETA-4	human	Q9NTQ9	GJB4	Q9NTQ9	4	133	Gap junction beta-4 protein (Connexin-30.3) (Cx30.3)	w
+BETA-4	human	Q9Y5E5	PCDHB4	Q9Y5E5	54	87	Protocadherin beta-4 (PCDH-beta-4)	w
+BETA-4	worm	P41937	tbb-4	P41937	11	30	Tubulin beta-4 chain	w
+BETA-4	yeast	P40069	KAP123	P40069	9	215	Importin subunit beta-4	w
+BETA-4	zebrafish	B0F0D1	cacnb4b	B0F0D1	3	22	Voltage-dependent L-type calcium channel subunit beta-4	w
+BETA-4	zebrafish	F1Q4Y6	gabrb4	F1Q4Y6	6	17	Gamma-aminobutyric acid receptor subunit beta-4 isoform X1	w
+BETA-4A	human	P04350	TUBB4A	P04350	84	1288	Tubulin beta-4A chain (Tubulin 5 beta) (Tubulin beta-4 chain	w
+BETA-4B	human	P68371	TUBB4B	P68371	89	890	Tubulin beta-4B chain (Tubulin beta-2 chain) (Tubulin beta-2	w
+BETA-5	human	O14775	GNB5	O14775	69	492	Guanine nucleotide-binding protein subunit beta-5 (Gbeta5) (	w
+BETA-5	human	O95377	GJB5	O95377	4	149	Gap junction beta-5 protein (Connexin-31.1) (Cx31.1)	w
+BETA-5	human	P02511	CRYAB	P02511	29	476	Alpha-crystallin B chain (Alpha(B)-crystallin) (Heat shock p	w
+BETA-5	human	P07437	TUBB	P07437	70	931	Tubulin beta chain (Tubulin beta-5 chain)	w
+BETA-5	human	P18084	ITGB5	P18084	48	352	Integrin beta-5	w
+BETA-5	human	Q30154	HLA-DRB5	Q30154	77	621	HLA class II histocompatibility antigen, DR beta 5 chain (DR	w
+BETA-5	human	Q86YW7	GPHB5	Q86YW7	19	74	Glycoprotein hormone beta-5 (Thyrostimulin subunit beta)	w
+BETA-5	human	Q9Y5E4	PCDHB5	Q9Y5E4	58	88	Protocadherin beta-5 (PCDH-beta-5)	w
+BETA-5	yeast	P53067	KAP114	P53067	3	35	Importin subunit beta-5	w
+BETA-5	zebrafish	A0A8M6Z9E1	gjz1	A0A8M6Z9E1	1	41	Gap junction beta-5 protein	w
+BETA-5	zebrafish	C6SUS4	gphb5	C6SUS4	2	2	Glycoprotein hormone beta-5	w
+BETA-5A	zebrafish	A1L271	gnb5a	A1L271	62	375	Guanine nucleotide-binding protein subunit beta-5a	w
+BETA-5B	zebrafish	Q6PBY0	gnb5b	Q6PBY0	54	331	Guanine nucleotide-binding protein subunit beta-5b	w
+BETA-5T	human	A5LHX3	PSMB11	A5LHX3	11	94	Proteasome subunit beta type-11 (EC 3.4.25.1) (Proteasome su	w
+BETA-6	human	O14558	HSPB6	O14558	19	248	Heat shock protein beta-6 (HspB6) (Heat shock 20 kDa-like pr	w
+BETA-6	human	O95452	GJB6	O95452	10	315	Gap junction beta-6 protein (Connexin-30) (Cx30)	w
+BETA-6	human	P18564	ITGB6	P18564	31	231	Integrin beta-6	w
+BETA-6	human	Q9BUF5	TUBB6	Q9BUF5	84	1046	Tubulin beta-6 chain (Tubulin beta class V)	w
+BETA-6	human	Q9Y5E3	PCDHB6	Q9Y5E3	56	88	Protocadherin beta-6 (PCDH-beta-6)	w
+BETA-6	zebrafish	A0A8M1NE96	hspb6	A0A8M1NE96	2	32	Heat shock protein beta-6	w
+BETA-7	human	P26010	ITGB7	P26010	38	265	Integrin beta-7 (Gut homing receptor beta subunit)	w
+BETA-7	human	Q6PEY0	GJB7	Q6PEY0	7	95	Gap junction beta-7 protein (Connexin-25) (Cx25)	w
+BETA-7	human	Q9UBY9	HSPB7	Q9UBY9	8	55	Heat shock protein beta-7 (HspB7) (Cardiovascular heat shock	w
+BETA-7	human	Q9Y5E2	PCDHB7	Q9Y5E2	58	113	Protocadherin beta-7 (PCDH-beta-7)	w
+BETA-8	human	P26012	ITGB8	P26012	29	165	Integrin beta-8	w
+BETA-8	human	Q3ZCM7	TUBB8	Q3ZCM7	76	751	Tubulin beta-8 chain (Tubulin beta 8 class VIII)	w
+BETA-8	human	Q9UJY1	HSPB8	Q9UJY1	29	256	Heat shock protein beta-8 (HspB8) (Alpha-crystallin C chain)	w
+BETA-8	human	Q9UN66	PCDHB8	Q9UN66	53	68	Protocadherin beta-8 (PCDH-beta-8) (Protocadherin-3I)	w
+BETA-9	human	Q9BQS6	HSPB9	Q9BQS6	8	55	Heat shock protein beta-9 (HspB9) (Cancer/testis antigen 51)	w
+BETA-9	human	Q9Y5E1	PCDHB9	Q9Y5E1	55	68	Protocadherin beta-9 (PCDH-beta-9) (Protocadherin-3H)	w
+BETA-A	human	P08476	INHBA	P08476	22	180	Inhibin beta A chain (Activin beta-A chain) (Erythroid diffe	w
+BETA-A	zebrafish	A1L1N5	hnf1ba	A1L1N5	2	8	Hepatocyte nuclear factor 1-beta-A	w
+BETA-A2	human	P53672	CRYBA2	P53672	16	80	Beta-crystallin A2 (Beta-A2 crystallin)	w
+BETA-A4	human	P53673	CRYBA4	P53673	16	91	Beta-crystallin A4 (Beta-A4 crystallin)	w
+BETA-ACTIN	human	P60709	ACTB	P60709	423	3211	Actin, cytoplasmic 1 (EC 3.6.4.-) (Beta-actin) [Cleaved into	w
+BETA-ACTIN-LIKE	human	Q562R1	ACTBL2	Q562R1	133	727	Beta-actin-like protein 2 (Kappa-actin)	w
+BETA-ACTIN-LIKE	human	Q9BYX7	POTEKP	Q9BYX7	1	23	Putative beta-actin-like protein 3 (Kappa-actin) (POTE ankyr	w
+BETA-ADAPTIN	human	P63010	AP2B1	P63010	92	578	AP-2 complex subunit beta (AP105B) (Adaptor protein complex 	w
+BETA-ADAPTIN	human	Q10567	AP1B1	Q10567	74	395	AP-1 complex subunit beta-1 (Adaptor protein complex AP-1 su	w
+BETA-ADDUCIN	human	P35612	ADD2	P35612	22	166	Beta-adducin (Erythrocyte adducin subunit beta)	w
+BETA-ADRENERGIC	human	P25098	GRK2	P25098	123	1534	G protein-coupled receptor kinase 2 (EC 2.7.11.16) (Beta-adr	w
+BETA-ADRENERGIC	human	P35626	GRK3	P35626	101	1456	G protein-coupled receptor kinase 3 (EC 2.7.11.16) (Beta-adr	w
+BETA-ALA-HIS	human	Q96KN2	CNDP1	Q96KN2	8	94	Beta-Ala-His dipeptidase (EC 3.4.13.20) (CNDP dipeptidase 1)	w
+BETA-ALA-LYS	human	Q8IYS1	PM20D2	Q8IYS1	1	94	Xaa-Arg dipeptidase (EC 3.4.13.4) (Beta-Ala-Lys dipeptidase)	w
+BETA-ALAAT	human	Q9BYV1	AGXT2	Q9BYV1	4	71	Alanine--glyoxylate aminotransferase 2, mitochondrial (AGT 2	w
+BETA-ALANINE	fly	FBgn0033778	Balat	Q961J5	1	5	Beta-alanine transporter (BalaT)	w
+BETA-ALANINE	fly	FBgn0037513	pyd3	Q9VI04	0	51	Beta-alanine synthase (EC 3.5.1.6) (Pyd3 (EC 3.5.1.-))	w
+BETA-ALANINE	human	Q8TDS7	MRGPRD	Q8TDS7	7	81	Mas-related G protein-coupled receptor member D (Beta-alanin	w
+BETA-ALANINE	human	Q9UBR1	UPB1	Q9UBR1	0	37	Beta-ureidopropionase (EC 3.5.1.6) (BUP-1) (Beta-alanine syn	w
+BETA-ALANINE-ACTIVATING	fly	FBgn0027780	CG13401	Q9VLL0	0	10	Beta-alanine-activating enzyme (EC 6.2.1.-) (Acyl-CoA synthe	w
+BETA-ALANINE-ACTIVATING	human	Q4L235	AASDH	Q4L235	8	213	Beta-alanine-activating enzyme (EC 6.2.1.-) (Acyl-CoA synthe	w
+BETA-ALANINE-ACTIVATING	zebrafish	Q5RG49	aasdh	Q5RG49	0	99	Beta-alanine-activating enzyme	w
+BETA-ALANYL-BIOAMINE	fly	FBgn0000527	e	Q9VDC6	1	16	Beta-alanyl-bioamine nonribosomal peptide synthetase ebony (	w
+BETA-ALANYL-DOPAMINE	fly	FBgn0086367	t	Q9W369	0	4	Beta-alanyl-dopamine/carcinine hydrolase	w
+BETA-AMYLOID	fly	FBgn0261112	APP-BP1	Q9VTE9	2	40	Nedd8-activating enzyme E1 regulatory subunit (Beta-amyloid 	w
+BETA-AMYLOID	human	Q8TF66	LRRC15	Q8TF66	69	259	Leucine-rich repeat-containing protein 15 (Leucine-rich repe	w
+BETA-AMYLOID	human	Q92508	PIEZO1	Q92508	1	55	Piezo-type mechanosensitive ion channel component 1 (Membran	w
+BETA-AMYLOID-BINDING	human	Q9BRN9	TM2D3	Q9BRN9	17	114	TM2 domain-containing protein 3 (Beta-amyloid-binding protei	w
+BETA-AMYLOID-BINDING	human	Q9BX73	TM2D2	Q9BX73	7	43	TM2 domain-containing protein 2 (Beta-amyloid-binding protei	w
+BETA-ARK-1	human	P25098	GRK2	P25098	123	1534	G protein-coupled receptor kinase 2 (EC 2.7.11.16) (Beta-adr	w
+BETA-ARK-2	human	P35626	GRK3	P35626	101	1456	G protein-coupled receptor kinase 3 (EC 2.7.11.16) (Beta-adr	w
+BETA-ARRESTIN	worm	P51485	arr-1	P51485	3	100	Beta-arrestin arr-1	w
+BETA-ARRESTIN-1	human	P49407	ARRB1	P49407	155	766	Beta-arrestin-1 (Arrestin beta-1) (Non-visual arrestin-2)	w
+BETA-ARRESTIN-1	zebrafish	C3PTE8	arrb1	C3PTE8	9	95	Beta-arrestin-1	w
+BETA-ARRESTIN-2	human	P32121	ARRB2	P32121	79	651	Beta-arrestin-2 (Arrestin beta-2) (Non-visual arrestin-3)	w
+BETA-ASPARTYL-PEPTIDASE	fly	FBgn0030653	CG7860	Q9VXT7	1	34	Probable isoaspartyl peptidase/L-asparaginase CG7860 (EC 3.4	w
+BETA-ASPARTYL-PEPTIDASE	human	Q7L266	ASRGL1	Q7L266	4	53	Isoaspartyl peptidase/L-asparaginase (EC 3.4.19.5) (EC 3.5.1	w
+BETA-ASSOCIATING	human	Q8TAE8	GADD45GIP1	Q8TAE8	18	317	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
+BETA-B	human	P09529	INHBB	P09529	26	97	Inhibin beta B chain (Activin beta-B chain)	w
+BETA-B	zebrafish	Q8UW00	hnf1bb	Q8UW00	6	21	Hepatocyte nuclear factor 1-beta-B	w
+BETA-B1	human	P53674	CRYBB1	P53674	75	320	Beta-crystallin B1 (Beta-B1 crystallin)	w
+BETA-B2	human	P43320	CRYBB2	P43320	18	54	Beta-crystallin B2 (Beta-B2 crystallin) (Beta-crystallin Bp)	w
+BETA-B3	human	P26998	CRYBB3	P26998	75	336	Beta-crystallin B3 (Beta-B3 crystallin) [Cleaved into: Beta-	w
+BETA-BARREL	worm	Q18793	C52G5.2	Q18793	0	3	THAP4-like heme-binding beta-barrel domain-containing protei	w
+BETA-BARREL	worm	Q5FC47	C55A6.12	Q5FC47	0	1	THAP4-like heme-binding beta-barrel domain-containing protei	w
+BETA-BINDING	human	Q14766	LTBP1	Q14766	22	213	Latent-transforming growth factor beta-binding protein 1 (LT	w
+BETA-BINDING	human	Q14767	LTBP2	Q14767	29	170	Latent-transforming growth factor beta-binding protein 2 (LT	w
+BETA-BINDING	human	Q8N2S1	LTBP4	Q8N2S1	22	91	Latent-transforming growth factor beta-binding protein 4 (LT	w
+BETA-BINDING	human	Q9NS15	LTBP3	Q9NS15	20	94	Latent-transforming growth factor beta-binding protein 3 (LT	w
+BETA-BINDING	human	Q9UBF6	RNF7	Q9UBF6	44	626	RING-box protein 2 (Rbx2) (EC 2.3.2.27) (EC 2.3.2.32) (CKII 	w
+BETA-C	human	P55103	INHBC	P55103	19	49	Inhibin beta C chain (Activin beta-C chain)	w
+BETA-CAROTENE	fly	FBgn0002937	ninaB	Q9VFS2	0	5	Carotenoid isomerooxygenase (EC 1.13.11.65) (Beta-carotene 1	w
+BETA-CAROTENE	human	Q9BYV7	BCO2	Q9BYV7	0	16	Carotenoid-cleaving dioxygenase, mitochondrial (EC 1.13.11.-	w
+BETA-CAROTENE	human	Q9HAY6	BCO1	Q9HAY6	3	60	Beta,beta-carotene 15,15'-dioxygenase (EC 1.13.11.63) (Beta-	w
+BETA-CAROTENE	worm	Q9U2E4	bcmo-1	Q9U2E4	0	1	Beta,beta-carotene 9,10-oxygenase	w
+BETA-CASEIN	human	P05814	CSN2	P05814	16	116	Beta-casein	w
+BETA-CASEIN-LIKE	human	Q969K7	TMEM54	Q969K7	6	104	Transmembrane protein 54 (Beta-casein-like protein) (Protein	w
+BETA-CASP	worm	Q95ZM2	ints-9	Q95ZM2	7	57	Beta-Casp domain-containing protein	w
+BETA-CATENIN	human	P35222	CTNNB1	P35222	299	2470	Catenin beta-1 (Beta-catenin)	w
+BETA-CATENIN	human	Q96B18	DACT3	Q96B18	9	37	Dapper homolog 3 (Antagonist of beta-catenin Dapper homolog 	w
+BETA-CATENIN	human	Q9NSA3	CTNNBIP1	Q9NSA3	47	190	Beta-catenin-interacting protein 1 (Inhibitor of beta-cateni	w
+BETA-CATENIN	worm	Q18825	bar-1	Q18825	12	102	Beta-catenin/armadillo-related protein 1	w
+BETA-CATENIN	worm	Q9XVI2	sys-1	Q9XVI2	3	18	Beta-catenin homolog sys-1	w
+BETA-CATENIN-INTERACTING	human	Q9NSA3	CTNNBIP1	Q9NSA3	47	190	Beta-catenin-interacting protein 1 (Inhibitor of beta-cateni	w
+BETA-CATENIN-INTERACTING	zebrafish	Q9I903	ctnnbip1	Q9I903	5	17	Beta-catenin-interacting protein 1	w
+BETA-CATENIN-LIKE	human	Q5W041	ARMC3	Q5W041	8	129	Armadillo repeat-containing protein 3 (Beta-catenin-like pro	w
+BETA-CATENIN-LIKE	human	Q8WYA6	CTNNBL1	Q8WYA6	36	289	Beta-catenin-like protein 1 (Nuclear-associated protein) (NA	w
+BETA-CATENIN-LIKE	worm	O44326	hmp-2	O44326	9	118	Beta-catenin-like protein hmp-2	w
+BETA-CATENIN-LIKE	worm	P91401	ctnb-1	P91401	3	32	Beta-catenin-like protein 1 N-terminal domain-containing pro	w
+BETA-CATENIN-LIKE	zebrafish	Q6P4V4	ctnnbl1	Q6P4V4	6	65	Beta-catenin-like protein 1	w
+BETA-CELL-SPECIFIC	human	Q8NHW3	MAFA	Q8NHW3	113	363	Transcription factor MafA (Pancreatic beta-cell-specific tra	w
+BETA-CENTRACTIN	human	P42025	ACTR1B	P42025	59	287	Beta-centractin (Actin-related protein 1B) (ARP1B)	w
+BETA-CGRP	human	P10092	CALCB	P10092	11	99	Calcitonin gene-related peptide 2 (CGRP2) (Beta-type CGRP) (	w
+BETA-CHAIN	human	P38484	IFNGR2	P38484	53	455	Interferon gamma receptor 2 (IFN-gamma receptor 2) (IFN-gamm	w
+BETA-CHAIN	human	Q01362	MS4A2	Q01362	46	212	High affinity immunoglobulin epsilon receptor subunit beta (	w
+BETA-CHAIN	human	Q8N9M5	TMEM102	Q8N9M5	16	79	Transmembrane protein 102 (Common beta-chain associated prot	w
+BETA-CHEMOKINE	human	O00585	CCL21	O00585	55	267	C-C motif chemokine 21 (6Ckine) (Beta-chemokine exodus-2) (S	w
+BETA-CHEMOKINE	human	P78556	CCL20	P78556	74	529	C-C motif chemokine 20 (Beta-chemokine exodus-1) (CC chemoki	w
+BETA-CHEMOKINE	human	Q99731	CCL19	Q99731	82	585	C-C motif chemokine 19 (Beta-chemokine exodus-3) (CK beta-11	w
+BETA-CHIMAERIN	human	P52757	CHN2	P52757	10	99	Beta-chimaerin (Beta-chimerin) (Rho GTPase-activating protei	w
+BETA-CHIMERIN	human	P52757	CHN2	P52757	10	99	Beta-chimaerin (Beta-chimerin) (Rho GTPase-activating protei	w
+BETA-CHOLESTANE-3-ALPHA	human	Q02318	CYP27A1	Q02318	7	103	Sterol 26-hydroxylase, mitochondrial (EC 1.14.15.15) (5-beta	w
+BETA-CITRYLGLUTAMATE	human	Q9ULI2	RIMKLB	Q9ULI2	2	102	Beta-citrylglutamate synthase B (EC 6.3.1.17) (N-acetyl-aspa	w
+BETA-COAT	fly	FBgn0008635	betaCOP	P45437	18	177	Coatomer subunit beta (Beta-coat protein) (Beta-COP)	w
+BETA-COAT	human	P53618	COPB1	P53618	45	330	Coatomer subunit beta (Beta-coat protein) (Beta-COP)	w
+BETA-CONVERTING	human	O43353	RIPK2	O43353	94	1408	Receptor-interacting serine/threonine-protein kinase 2 (EC 2	w
+BETA-CONVERTING	human	P29466	CASP1	P29466	33	259	Caspase-1 (CASP-1) (EC 3.4.22.36) (Interleukin-1 beta conver	w
+BETA-COP	fly	FBgn0008635	betaCOP	P45437	18	177	Coatomer subunit beta (Beta-coat protein) (Beta-COP)	w
+BETA-COP	human	P53618	COPB1	P53618	45	330	Coatomer subunit beta (Beta-coat protein) (Beta-COP)	w
+BETA-COP	trypanosoma-brucei-brucei-185431	Q4GYW5	beta-coP	Q4GYW5	14	36	Coatomer subunit beta	
+BETA-CRYSTALLIN	human	P05813	CRYBA1	P05813	21	89	Beta-crystallin A3 [Cleaved into: Beta-crystallin A3, isofor	w
+BETA-CRYSTALLIN	human	P22914	CRYGS	P22914	9	89	Gamma-crystallin S (Beta-crystallin S) (Gamma-S-crystallin)	w
+BETA-CRYSTALLIN	human	P26998	CRYBB3	P26998	75	336	Beta-crystallin B3 (Beta-B3 crystallin) [Cleaved into: Beta-	w
+BETA-CRYSTALLIN	human	P43320	CRYBB2	P43320	18	54	Beta-crystallin B2 (Beta-B2 crystallin) (Beta-crystallin Bp)	w
+BETA-CRYSTALLIN	human	P53672	CRYBA2	P53672	16	80	Beta-crystallin A2 (Beta-A2 crystallin)	w
+BETA-CRYSTALLIN	human	P53673	CRYBA4	P53673	16	91	Beta-crystallin A4 (Beta-A4 crystallin)	w
+BETA-CRYSTALLIN	human	P53674	CRYBB1	P53674	75	320	Beta-crystallin B1 (Beta-B1 crystallin)	w
+BETA-CRYSTALLIN	zebrafish	Q45FX9	cryba2b	Q45FX9	0	1	Beta-crystallin A2	w
+BETA-CRYSTALLIN	zebrafish	Q52JI3	crybb3	Q52JI3	2	25	Beta-crystallin B3	w
+BETA-CRYSTALLIN	zebrafish	Q52JI7	cryba4	Q52JI7	0	1	Beta-crystallin A4	w
+BETA-CRYSTALLIN	zebrafish	Q6IQU2	cryba2a	Q6IQU2	0	1	Beta-crystallin A2	w
+BETA-D-GALACTOSIDE	human	P19526	FUT1	P19526	16	89	Galactoside alpha-(1,2)-fucosyltransferase 1 (Alpha(1,2)FT 1	w
+BETA-D-GALACTOSIDE	human	Q10981	FUT2	Q10981	22	135	Galactoside alpha-(1,2)-fucosyltransferase 2 (Alpha(1,2)FT 2	w
+BETA-D-GLUCOSIDASE	yeast	P53753	DSE4	P53753	0	7	Glucan endo-1,3-beta-D-glucosidase 1	w
+BETA-D-GLUCOSIDASE	yeast	Q12168	ACF2	Q12168	2	29	Glucan endo-1,3-beta-D-glucosidase 2	w
+BETA-D-GLUCOSIDE	fly	FBgn0039273	shams	Q9VBY3	0	1	UDP-D-xylose:beta-D-glucoside alpha-1,3-D-xylosyltransferase	w
+BETA-D-GLUCOSIDE	zebrafish	A4QN62	gxylt2	A4QN62	0	3	UDP-D-xylose:beta-D-glucoside alpha-1,3-D-xylosyltransferase	w
+BETA-D-MANNOSYLTRA	human	Q9P2X0	DPM3	Q9P2X0	16	74	Dolichol-phosphate mannosyltransferase subunit 3 (Dolichol-p	w
+BETA-D-MANNOSYLTRANSFERA	fly	FBgn0032799	Dpm1	Q9VIU7	3	65	Dolichol-phosphate mannosyltransferase subunit 1 (DPM syntha	w
+BETA-DE	human	Q6UWP2	DHRS11	Q6UWP2	7	96	Dehydrogenase/reductase SDR family member 11 (17-beta-hydrox	w
+BETA-DEFENSIN	human	A0A096LNP1	DEFB131B	A0A096LNP1	6	18	Beta-defensin 131B (Defensin, beta 131)	w
+BETA-DEFENSIN	human	A8MXU0	DEFB108A	A8MXU0	3	23	Putative beta-defensin 108A (Defensin, beta 108A) (Defensin,	w
+BETA-DEFENSIN	human	O15263	DEFB4A	O15263	35	239	Defensin beta 4A (Beta-defensin 2) (BD-2) (hBD-2) (Defensin,	w
+BETA-DEFENSIN	human	P0DP73	DEFB130B	P0DP73	0	10	Beta-defensin 130B	w
+BETA-DEFENSIN	human	P0DP74	DEFB130A	P0DP74	13	70	Beta-defensin 130A (Beta-defensin 130) (Beta-defensin 30) (D	w
+BETA-DEFENSIN	human	P59861	DEFB131A	P59861	6	49	Beta-defensin 131A (Beta-defensin 31) (DEFB-31) (Defensin, b	w
+BETA-DEFENSIN	human	P60022	DEFB1	P60022	27	242	Beta-defensin 1 (BD-1) (hBD-1) (Defensin, beta 1)	w
+BETA-DEFENSIN	human	P81534	DEFB103A	P81534	33	220	Beta-defensin 103 (Beta-defensin 3) (BD-3) (DEFB-3) (HBD3) (	w
+BETA-DEFENSIN	human	Q30KP8	DEFB136	Q30KP8	0	105	Defensin beta 136 (Beta-defensin 136) (DEFB137)	w
+BETA-DEFENSIN	human	Q30KP9	DEFB135	Q30KP9	7	133	Beta-defensin 135 (Defensin, beta 135)	w
+BETA-DEFENSIN	human	Q30KQ1	DEFB133	Q30KQ1	3	38	Beta-defensin 133 (Defensin, beta 133)	w
+BETA-DEFENSIN	human	Q30KQ4	DEFB116	Q30KQ4	16	60	Beta-defensin 116 (Beta-defensin 16) (DEFB-16) (Defensin, be	w
+BETA-DEFENSIN	human	Q30KQ5	DEFB115	Q30KQ5	7	75	Beta-defensin 115 (Beta-defensin 15) (DEFB-15) (Defensin, be	w
+BETA-DEFENSIN	human	Q30KQ6	DEFB114	Q30KQ6	7	63	Beta-defensin 114 (Beta-defensin 14) (DEFB-14) (Defensin, be	w
+BETA-DEFENSIN	human	Q30KQ7	DEFB113	Q30KQ7	4	55	Beta-defensin 113 (Beta-defensin 13) (DEFB-13) (Defensin, be	w
+BETA-DEFENSIN	human	Q30KQ8	DEFB112	Q30KQ8	3	63	Beta-defensin 112 (Beta-defensin 12) (DEFB-12) (Defensin, be	w
+BETA-DEFENSIN	human	Q30KQ9	DEFB110	Q30KQ9	9	79	Beta-defensin 110 (Beta-defensin 10) (DEFB-10) (Beta-defensi	w
+BETA-DEFENSIN	human	Q30KR1	DEFB109B	Q30KR1	1	16	Beta-defensin 109B (DEFB-109) (HBD9) (Defensin beta 109B)	w
+BETA-DEFENSIN	human	Q4QY38	DEFB134	Q4QY38	7	67	Beta-defensin 134 (Defensin, beta 134)	w
+BETA-DEFENSIN	human	Q5J5C9	DEFB121	Q5J5C9	14	89	Beta-defensin 121 (Beta-defensin 21) (DEFB-21) (Defensin, be	w
+BETA-DEFENSIN	human	Q7Z7B7	DEFB132	Q7Z7B7	18	61	Beta-defensin 132 (Beta-defensin 32) (BD-32) (DEFB-32) (Defe	w
+BETA-DEFENSIN	human	Q7Z7B8	DEFB128	Q7Z7B8	7	61	Beta-defensin 128 (Beta-defensin 28) (DEFB-28) (Defensin, be	w
+BETA-DEFENSIN	human	Q8IZN7	DEFB107A	Q8IZN7	14	59	Beta-defensin 107 (Beta-defensin 7) (BD-7) (DEFB-7) (Defensi	w
+BETA-DEFENSIN	human	Q8N104	DEFB106A	Q8N104	26	101	Beta-defensin 106 (Beta-defensin 6) (BD-6) (DEFB-6) (Defensi	w
+BETA-DEFENSIN	human	Q8N687	DEFB125	Q8N687	8	155	Beta-defensin 125 (Beta-defensin 25) (DEFB-25) (Defensin, be	w
+BETA-DEFENSIN	human	Q8N688	DEFB123	Q8N688	7	74	Beta-defensin 123 (Beta-defensin 23) (DEFB-23) (Defensin, be	w
+BETA-DEFENSIN	human	Q8N690	DEFB119	Q8N690	5	31	Beta-defensin 119 (Beta-defensin 120) (Beta-defensin 19) (DE	w
+BETA-DEFENSIN	human	Q8NES8	DEFB124	Q8NES8	6	87	Beta-defensin 124 (Beta-defensin 24) (DEFB-24) (Defensin, be	w
+BETA-DEFENSIN	human	Q8NET1	DEFB108B	Q8NET1	5	62	Beta-defensin 108B (Beta-defensin 8) (BD-8) (DEFB-8) (hBD-8)	w
+BETA-DEFENSIN	human	Q8NG35	DEFB105A	Q8NG35	1	64	Beta-defensin 105 (Beta-defensin 5) (BD-5) (DEFB-5) (Defensi	w
+BETA-DEFENSIN	human	Q8WTQ1	DEFB104A	Q8WTQ1	17	90	Beta-defensin 104 (Beta-defensin 4) (BD-4) (DEFB-4) (hBD-4) 	w
+BETA-DEFENSIN	human	Q96PH6	DEFB118	Q96PH6	4	51	Defensin beta 118 (Beta-defensin 18) (DEFB-18) (Epididymal s	w
+BETA-DEFENSIN	human	Q9BYW3	DEFB126	Q9BYW3	12	67	Beta-defensin 126 (Beta-defensin 26) (DEFB-26) (Defensin, be	w
+BETA-DEFENSIN	human	Q9H1M3	DEFB129	Q9H1M3	4	39	Beta-defensin 129 (Beta-defensin 29) (DEFB-29) (Defensin, be	w
+BETA-DEFENSIN	human	Q9H1M4	DEFB127	Q9H1M4	12	78	Beta-defensin 127 (Beta-defensin 27) (DEFB-27) (Defensin, be	w
+BETA-DEHYD	human	P14061	HSD17B1	P14061	10	92	17-beta-hydroxysteroid dehydrogenase type 1 (17-beta-HSD 1) 	w
+BETA-DEHYDROGENASE	human	C9JRZ8	AKR1B15	C9JRZ8	0	35	Aldo-keto reductase family 1 member B15 (EC 1.1.1.-) (EC 1.1	w
+BETA-DEHYDROGENASE	human	P28845	HSD11B1	P28845	17	128	11-beta-hydroxysteroid dehydrogenase 1 (11-DH) (11-beta-HSD1	w
+BETA-DEHYDROGENASE	human	P37058	HSD17B3	P37058	7	69	17-beta-hydroxysteroid dehydrogenase type 3 (17-beta-HSD 3) 	w
+BETA-DEHYDROGENASE	human	P37059	HSD17B2	P37059	15	81	17-beta-hydroxysteroid dehydrogenase type 2 (17-beta-HSD 2) 	w
+BETA-DEHYDROGENASE	human	Q7Z5J1	HSD11B1L	Q7Z5J1	2	13	Hydroxysteroid 11-beta-dehydrogenase 1-like protein (EC 1.1.	w
+BETA-DEHYDROGENASE	human	Q8NBQ5	HSD17B11	Q8NBQ5	17	419	Estradiol 17-beta-dehydrogenase 11 (EC 1.1.1.62) (17-beta-hy	w
+BETA-DEHYDROGENASE	zebrafish	F1QUP2	hsd17b1	F1QUP2	0	35	Estradiol 17-beta-dehydrogenase	w
+BETA-DEHYDROGENASE	zebrafish	Q6PUF3	hsd11b1l	Q6PUF3	2	9	Hydroxysteroid 11-beta-dehydrogenase 1-like protein	w
+BETA-DG	human	Q14118	DAG1	Q14118	44	207	Dystroglycan 1 (Dystroglycan) (Dystrophin-associated glycopr	w
+BETA-DIKETONASE	human	P16930	FAH	P16930	1	88	Fumarylacetoacetase (FAA) (EC 3.7.1.2) (Beta-diketonase) (Fu	w
+BETA-DIOXYGENASE	human	Q12797	ASPH	Q12797	42	341	Aspartyl/asparaginyl beta-hydroxylase (EC 1.14.11.16) (Aspar	w
+BETA-DYSTROBREVIN	human	O60941	DTNB	O60941	49	148	Dystrobrevin beta (DTN-B) (Beta-dystrobrevin)	w
+BETA-DYSTROGLYCAN	human	Q14118	DAG1	Q14118	44	207	Dystroglycan 1 (Dystroglycan) (Dystrophin-associated glycopr	w
+BETA-E	human	P58166	INHBE	P58166	14	108	Inhibin beta E chain (Activin beta-E chain)	w
+BETA-ENAC	human	P51168	SCNN1B	P51168	10	85	Epithelial sodium channel subunit beta (Beta-ENaC) (ENaC sub	w
+BETA-ENOLASE	human	P13929	ENO3	P13929	15	371	Beta-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyas	w
+BETA-ENOLASE	zebrafish	Q6TH14	eno3	Q6TH14	3	75	Beta-enolase	w
+BETA-ESTRADIOL	human	Q99714	HSD17B10	Q99714	6	364	3-hydroxyacyl-CoA dehydrogenase type-2 (EC 1.1.1.35) (17-bet	w
+BETA-ETF	fly	FBgn0039697	Etfb	Q0KHZ6	18	136	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
+BETA-ETF	human	P38117	ETFB	P38117	26	187	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
+BETA-FACTOR	human	P00748	F12	P00748	80	546	Coagulation factor XII (EC 3.4.21.38) (Hageman factor) (HAF)	w
+BETA-FILAMIN	human	O75369	FLNB	O75369	17	356	Filamin-B (FLN-B) (ABP-278) (ABP-280 homolog) (Actin-binding	w
+BETA-G1	human	P08236	GUSB	P08236	14	173	Beta-glucuronidase (EC 3.2.1.31) (Beta-G1)	w
+BETA-GALACTOSE-3-O-SULFOTRANSFERASE	human	Q96A11	GAL3ST3	Q96A11	2	42	Galactose-3-O-sulfotransferase 3 (Gal3ST-3) (EC 2.8.2.-) (Be	w
+BETA-GALACTOSE-3-O-SULFOTRANSFERASE	human	Q96RP7	GAL3ST4	Q96RP7	3	18	Galactose-3-O-sulfotransferase 4 (Gal3ST-4) (EC 2.8.2.-) (Be	w
+BETA-GALACTOSE-3-O-SULFOTRANSFERASE	human	Q9H3Q3	GAL3ST2	Q9H3Q3	11	49	Galactose-3-O-sulfotransferase 2 (Gal3ST-2) (EC 2.8.2.-) (Be	w
+BETA-GALACTOSIDASE	fly	FBgn0260746	Ect3	Q9VGE7	14	254	Beta-galactosidase (EC 3.2.1.23)	w
+BETA-GALACTOSIDASE	human	P16278	GLB1	P16278	13	165	Beta-galactosidase (EC 3.2.1.23) (Acid beta-galactosidase) (	w
+BETA-GALACTOSIDASE	human	P54803	GALC	P54803	11	136	Galactocerebrosidase (GALCERase) (EC 3.2.1.46) (Galactocereb	w
+BETA-GALACTOSIDASE	worm	Q27526	bgal-1	Q27526	0	4	Beta-galactosidase	w
+BETA-GALACTOSIDASE	zebrafish	A0A8M2B6W2	glb1	A0A8M2B6W2	0	8	Beta-galactosidase	w
+BETA-GALACTOSIDASE	zebrafish	A2BIK1	si:dkey-224e22.2	A2BIK1	0	6	Beta-galactosidase	w
+BETA-GALACTOSIDASE-1-LIKE	human	Q6UWU2	GLB1L	Q6UWU2	6	56	Beta-galactosidase-1-like protein (EC 3.2.1.23)	w
+BETA-GALACTOSIDASE-1-LIKE	human	Q8IW92	GLB1L2	Q8IW92	4	95	Beta-galactosidase-1-like protein 2 (EC 3.2.1.23)	w
+BETA-GALACTOSIDASE-1-LIKE	human	Q8NCI6	GLB1L3	Q8NCI6	5	45	Beta-galactosidase-1-like protein 3 (EC 3.2.1.23)	w
+BETA-GALACTOSIDASE-1-LIKE	zebrafish	F1QXE8	glb1l	F1QXE8	0	7	Beta-galactosidase-1-like protein precursor	w
+BETA-GALACTOSIDE	fly	FBgn0035050	Siat	Q9GU23	288	2388	beta-galactoside alpha-(2,6)-sialyltransferase (EC 2.4.3.1)	w
+BETA-GALACTOSIDE	human	P15907	ST6GAL1	P15907	20	147	Beta-galactoside alpha-2,6-sialyltransferase 1 (Alpha 2,6-ST	w
+BETA-GALACTOSIDE	human	Q11201	ST3GAL1	Q11201	21	117	CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialylt	w
+BETA-GALACTOSIDE	human	Q11203	ST3GAL3	Q11203	1	36	CMP-N-acetylneuraminate-beta-1,4-galactoside alpha-2,3-sialy	w
+BETA-GALACTOSIDE	human	Q11206	ST3GAL4	Q11206	12	131	CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialylt	w
+BETA-GALACTOSIDE	human	Q16842	ST3GAL2	Q16842	15	115	CMP-N-acetylneuraminate-beta-galactosamide-alpha-2,3-sialylt	w
+BETA-GALACTOSIDE	human	Q96JF0	ST6GAL2	Q96JF0	6	42	Beta-galactoside alpha-2,6-sialyltransferase 2 (Alpha 2,6-ST	w
+BETA-GALACTOSIDE	human	Q9Y274	ST3GAL6	Q9Y274	3	58	Type 2 lactosamine alpha-2,3-sialyltransferase (EC 2.4.3.6) 	w
+BETA-GALACTOSIDE	virus	A0A223FMY5	Murmansk-161	A0A223FMY5	16	202	beta-galactoside alpha-(2,6)-sialyltransferase	w
+BETA-GALACTOSIDE	virus	A0A3S5HA00	V1	A0A3S5HA00	3	69	beta-galactoside alpha-(2,6)-sialyltransferase	w
+BETA-GALACTOSIDE	virus	A0A3S8D7R5	V1	A0A3S8D7R5	2	75	beta-galactoside alpha-(2,6)-sialyltransferase	w
+BETA-GALACTOSIDE	virus	G3EI40	YKV148	G3EI40	12	184	beta-galactoside alpha-(2,6)-sialyltransferase	w
+BETA-GALACTOSIDE	virus	Q1HTP7	SQPV_1380	Q1HTP7	15	140	beta-galactoside alpha-(2,6)-sialyltransferase	w
+BETA-GALACTOSIDE	zebrafish	D2U4T9	st6gal2b	D2U4T9	0	8	Beta-galactoside alpha-2,6-sialyltransferase 2	w
+BETA-GALACTOSIDE	zebrafish	F1QMH5	st6gal1	F1QMH5	0	9	Beta-galactoside alpha-2,6-sialyltransferase 1	w
+BETA-GALACTOSIDE	zebrafish	Q701R2	st6gal2	Q701R2	1	8	Beta-galactoside alpha-2,6-sialyltransferase 2	w
+BETA-GALACTOSIDE-BINDING	human	P05162	LGALS2	P05162	6	64	Galectin-2 (Gal-2) (Beta-galactoside-binding lectin L-14-II)	w
+BETA-GALACTOSIDE-BINDING	human	P09382	LGALS1	P09382	53	526	Galectin-1 (Gal-1) (14 kDa laminin-binding protein) (HLBP14)	w
+BETA-GALACTOSIDE-BINDING	worm	P36573	lec-1	P36573	5	50	32 kDa beta-galactoside-binding lectin	w
+BETA-GALACTOSIDE-BINDING	worm	Q09581	lec-3	Q09581	3	18	32 kDa beta-galactoside-binding lectin lec-3	w
+BETA-GALACTOSYL-1	human	Q9H4F1	ST6GALNAC4	Q9H4F1	14	117	Alpha-N-acetyl-neuraminyl-2,3-beta-galactosyl-1,3-N-acetyl-g	w
+BETA-GALACTOSYLTRAN	human	O43825	B3GALT2	O43825	5	39	Beta-1,3-galactosyltransferase 2 (Beta-1,3-GalTase 2) (Beta3	w
+BETA-GALACTOSYLTRANSFERASE	fly	FBgn0032078	C1GalTA	Q7K237	136	2401	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+BETA-GALACTOSYLTRANSFERASE	human	Q16880	UGT8	Q16880	23	144	2-hydroxyacylsphingosine 1-beta-galactosyltransferase (EC 2.	w
+BETA-GALACTOSYLTRANSFERASE	human	Q9NS00	C1GALT1	Q9NS00	11	127	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+BETA-GALACTOSYLTRANSFERASE	worm	Q18515	C38H2.2	Q18515	4	12	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+BETA-GALACTOSYLTRANSFERASE	zebrafish	A0A0G2L384	c1galt1b	A0A0G2L384	0	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+BETA-GALACTOSYLTRANSFERASE	zebrafish	A0AB40E9A7	ugt8	A0AB40E9A7	0	5	2-hydroxyacylsphingosine 1-beta-galactosyltransferase	w
+BETA-GALACTOSYLTRANSFERASE	zebrafish	A3KQK4	c1galt1a	A3KQK4	2	27	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+BETA-GALACTOSYLTRANSFERASE	zebrafish	Q08BL3	c1galt1la	Q08BL3	0	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+BETA-GALACTOSYLTRANSFERASE	zebrafish	Q7SYI5	c1galt1lb	Q7SYI5	2	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+BETA-GC	human	P04062	GBA1	P04062	12	203	Lysosomal acid glucosylceramidase (Lysosomal acid GCase) (EC	w
+BETA-GLCNAC	human	Q9Y2C3	B3GALT5	Q9Y2C3	4	54	Beta-1,3-galactosyltransferase 5 (Beta-1,3-GalTase 5) (Beta3	w
+BETA-GLOBIN	human	P68871	HBB	P68871	56	1095	Hemoglobin subunit beta (Beta-globin) (Hemoglobin beta chain	w
+BETA-GLOBIN	zebrafish	O93548	hbbe1.3	O93548	10	16	Embryonic 1 beta-globin	w
+BETA-GLUCAN	human	Q9BXN2	CLEC7A	Q9BXN2	155	382	C-type lectin domain family 7 member A (Beta-glucan receptor	w
+BETA-GLUCAN	yeast	P32486	KRE6	P32486	1	27	Beta-glucan synthesis-associated protein KRE6	w
+BETA-GLUCAN	yeast	P33336	SKN1	P33336	0	9	Beta-glucan synthesis-associated protein SKN1	w
+BETA-GLUCANASE	yeast	P38288	TOS1	P38288	2	24	Probable circularly permuted 1,3-beta-glucanase TOS1	w
+BETA-GLUCANASE	yeast	P46992	TOH1	P46992	0	9	Probable circularly permuted 1,3-beta-glucanase YJL171C	w
+BETA-GLUCANOSYLTRANSFERASE	yeast	P22146	GAS1	P22146	3	29	1,3-beta-glucanosyltransferase GAS1	w
+BETA-GLUCANOSYLTRANSFERASE	yeast	Q03655	GAS3	Q03655	1	9	Probable 1,3-beta-glucanosyltransferase GAS3	w
+BETA-GLUCANOSYLTRANSFERASE	yeast	Q06135	GAS2	Q06135	0	4	1,3-beta-glucanosyltransferase GAS2	w
+BETA-GLUCANOSYLTRANSFERASE	yeast	Q08193	GAS5	Q08193	1	7	1,3-beta-glucanosyltransferase GAS5	w
+BETA-GLUCANOSYLTRANSFERASE	yeast	Q08271	GAS4	Q08271	0	7	1,3-beta-glucanosyltransferase GAS4	w
+BETA-GLUCOCEREBROSIDASE	human	P04062	GBA1	P04062	12	203	Lysosomal acid glucosylceramidase (Lysosomal acid GCase) (EC	w
+BETA-GLUCOCEREBROSIDASE	human	Q9HCG7	GBA2	Q9HCG7	2	61	Non-lysosomal glucosylceramidase (NLGase) (EC 3.2.1.45) (Bet	w
+BETA-GLUCOSIDASE	human	P04062	GBA1	P04062	12	203	Lysosomal acid glucosylceramidase (Lysosomal acid GCase) (EC	w
+BETA-GLUCOSIDASE	human	Q9H227	GBA3	Q9H227	1	20	Cytosolic beta-glucosidase (EC 3.2.1.21) (Cytosolic beta-glu	w
+BETA-GLUCOSIDASE	human	Q9HCG7	GBA2	Q9HCG7	2	61	Non-lysosomal glucosylceramidase (NLGase) (EC 3.2.1.45) (Bet	w
+BETA-GLUCOSIDASE	yeast	P15703	BGL2	P15703	2	27	Glucan 1,3-beta-glucosidase	w
+BETA-GLUCOSIDASE	yeast	P23776	EXG1	P23776	0	13	Glucan 1,3-beta-glucosidase I/II	w
+BETA-GLUCOSIDASE	yeast	P32603	SPR1	P32603	0	9	Sporulation-specific glucan 1,3-beta-glucosidase	w
+BETA-GLUCOSIDASE	yeast	P36135	UTH1	P36135	0	10	Probable secreted beta-glucosidase UTH1	w
+BETA-GLUCOSIDASE	yeast	P40472	SIM1	P40472	0	6	Probable secreted beta-glucosidase SIM1	w
+BETA-GLUCOSIDASE	yeast	P52911	EXG2	P52911	0	8	Glucan 1,3-beta-glucosidase 2	w
+BETA-GLUCOSIDASE	yeast	P53616	SUN4	P53616	0	14	Probable secreted beta-glucosidase SUN4	w
+BETA-GLUCOSIDASE	zebrafish	A0A286Y8V0	lctlb	A0A286Y8V0	0	8	Cytosolic beta-glucosidase	w
+BETA-GLUCOSIDASE	zebrafish	Q6DGC8	lctla	Q6DGC8	1	8	Cytosolic beta-glucosidase	w
+BETA-GLUCOSIDASE-LIKE	human	Q9H227	GBA3	Q9H227	1	20	Cytosolic beta-glucosidase (EC 3.2.1.21) (Cytosolic beta-glu	w
+BETA-GLUCOSIDASE-LIKE	yeast	P46955	NCA3	P46955	0	4	Beta-glucosidase-like protein NCA3, mitochondrial	w
+BETA-GLUCOSYLC	human	P04062	GBA1	P04062	12	203	Lysosomal acid glucosylceramidase (Lysosomal acid GCase) (EC	w
+BETA-GLUCOSYLTRANSFERASE	fly	FBgn0261020	wol	Q9VLQ1	1	11	Dolichyl-phosphate beta-glucosyltransferase (EC 2.4.1.117) (	w
+BETA-GLUCOSYLTRANSFERASE	human	Q9Y673	ALG5	Q9Y673	5	133	Dolichyl-phosphate beta-glucosyltransferase (DolP-glucosyltr	w
+BETA-GLUCOSYLTRANSFERASE	worm	Q8WSL9	algn-5	Q8WSL9	0	2	dolichyl-phosphate beta-glucosyltransferase	w
+BETA-GLUCOSYLTRANSFERASE	yeast	P40350	ALG5	P40350	0	17	Dolichyl-phosphate beta-glucosyltransferase	w
+BETA-GLUCOSYLTRANSFERASE	yeast	Q06321	ATG26	Q06321	0	10	Sterol 3-beta-glucosyltransferase	w
+BETA-GLUCOSYLTRANSFERASE	zebrafish	A0A8M1NAE9	alg5	A0A8M1NAE9	0	5	Dolichyl-phosphate beta-glucosyltransferase	w
+BETA-GLUCURONIDASE	fly	FBgn0034417	CG15117	A1ZBG9	21	249	Beta-glucuronidase (EC 3.2.1.31)	w
+BETA-GLUCURONIDASE	fly	FBgn0270927	betaGlu	Q9V9T9	14	245	Beta-glucuronidase (EC 3.2.1.31)	w
+BETA-GLUCURONIDASE	human	P08236	GUSB	P08236	14	173	Beta-glucuronidase (EC 3.2.1.31) (Beta-G1)	w
+BETA-GLUCURONIDASE	human	Q6P575	GUSBP11	Q6P575	2	3	Putative inactive beta-glucuronidase protein GUSBP11 (Beta-g	w
+BETA-GLUCURONIDASE	zebrafish	F1QGS9	gusb	F1QGS9	0	5	Beta-glucuronidase	w
+BETA-GLUCURONIDASE-LIKE	human	Q15486	GUSBP1	Q15486	1	6	Putative inactive beta-glucuronidase-like protein SMA3	w
+BETA-GLUCURONOSYLTRANSFERASE	fly	FBgn0032135	GlcAT-S	E1JHC8	183	2377	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	fly	FBgn0036144	GlcAT-P	Q9VTG7	281	2381	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	fly	FBgn0066114	GlcAT-I	O97422	58	2375	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	human	O94766	B3GAT3	O94766	10	144	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	human	Q9NPZ5	B3GAT2	Q9NPZ5	7	58	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	human	Q9P2W7	B3GAT1	Q9P2W7	28	440	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	worm	A0A0K3AUF6	glct-6	A0A0K3AUF6	0	3	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	worm	O02304	glct-1	O02304	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	worm	O17708	glct-5	O17708	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	worm	O17751	glct-2	O17751	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	worm	O62113	glct-4	O62113	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	worm	Q09363	sqv-8	Q09363	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	worm	Q9XU73	glct-3	Q9XU73	0	1	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	zebrafish	A0A8M2BH40	b3gat1b	A0A8M2BH40	2	6	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	zebrafish	F8W289	b3gat3	F8W289	1	4	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	zebrafish	Q5CB02	b3gat1a	Q5CB02	2	6	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-GLUCURONOSYLTRANSFERASE	zebrafish	Q6DBR2	b3gat2	Q6DBR2	3	7	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+BETA-HEXOSAMINIDASE	human	O60502	OGA	O60502	9	158	Protein O-GlcNAcase (OGA) (EC 3.2.1.169) (Beta-N-acetylgluco	w
+BETA-HEXOSAMINIDASE	human	P06865	HEXA	P06865	6	113	Beta-hexosaminidase subunit alpha (EC 3.2.1.52) (Beta-N-acet	w
+BETA-HEXOSAMINIDASE	human	P07686	HEXB	P07686	7	122	Beta-hexosaminidase subunit beta (EC 3.2.1.52) (Beta-N-acety	w
+BETA-HEXOSAMINIDASE	human	Q8WVB3	HEXD	Q8WVB3	5	56	Hexosaminidase D (EC 3.2.1.52) (Beta-N-acetylhexosaminidase)	w
+BETA-HEXOSAMINIDASE	worm	Q22492	hex-1	Q22492	0	2	Beta-hexosaminidase A	w
+BETA-HEXOSAMINIDASE	zebrafish	A2BHD8	hexb	A2BHD8	1	4	Beta-hexosaminidase	w
+BETA-HSD	fly	FBgn0021765	scu	O18404	2	211	3-hydroxyacyl-CoA dehydrogenase type-2 (EC 1.1.1.35) (17-bet	w
+BETA-HSD	human	O14756	HSD17B6	O14756	11	48	17-beta-hydroxysteroid dehydrogenase type 6 (17-beta-HSD 6) 	w
+BETA-HSD	human	P14060	HSD3B1	P14060	6	234	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase ty	w
+BETA-HSD	human	P14061	HSD17B1	P14061	10	92	17-beta-hydroxysteroid dehydrogenase type 1 (17-beta-HSD 1) 	w
+BETA-HSD	human	P26439	HSD3B2	P26439	4	270	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase ty	w
+BETA-HSD	human	P37058	HSD17B3	P37058	7	69	17-beta-hydroxysteroid dehydrogenase type 3 (17-beta-HSD 3) 	w
+BETA-HSD	human	P37059	HSD17B2	P37059	15	81	17-beta-hydroxysteroid dehydrogenase type 2 (17-beta-HSD 2) 	w
+BETA-HSD	human	P42330	AKR1C3	P42330	1	122	Aldo-keto reductase family 1 member C3 (EC 1.1.1.-) (EC 1.1.	w
+BETA-HSD	human	P51659	HSD17B4	P51659	3	195	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	w
+BETA-HSD	human	P56937	HSD17B7	P56937	4	116	3-keto-steroid reductase/17-beta-hydroxysteroid dehydrogenas	w
+BETA-HSD	human	P80365	HSD11B2	P80365	9	47	11-beta-hydroxysteroid dehydrogenase type 2 (11-DH2) (11-bet	w
+BETA-HSD	human	Q53GQ0	HSD17B12	Q53GQ0	13	291	Very-long-chain 3-oxoacyl-CoA reductase (EC 1.1.1.330) (17-b	w
+BETA-HSD	human	Q7Z5P4	HSD17B13	Q7Z5P4	17	167	17-beta-hydroxysteroid dehydrogenase 13 (17-beta-HSD 13) (EC	w
+BETA-HSD	human	Q8NBQ5	HSD17B11	Q8NBQ5	17	419	Estradiol 17-beta-dehydrogenase 11 (EC 1.1.1.62) (17-beta-hy	w
+BETA-HSD	human	Q92506	HSD17B8	Q92506	6	102	(3R)-3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12) (17-beta	w
+BETA-HSD	human	Q9H2F3	HSD3B7	Q9H2F3	24	642	3 beta-hydroxysteroid dehydrogenase type 7 (3 beta-hydroxyst	w
+BETA-HSD1	human	P28845	HSD11B1	P28845	17	128	11-beta-hydroxysteroid dehydrogenase 1 (11-DH) (11-beta-HSD1	w
+BETA-HSD2	human	P80365	HSD11B2	P80365	9	47	11-beta-hydroxysteroid dehydrogenase type 2 (11-DH2) (11-bet	w
+BETA-HSD3	human	Q7Z5J1	HSD11B1L	Q7Z5J1	2	13	Hydroxysteroid 11-beta-dehydrogenase 1-like protein (EC 1.1.	w
+BETA-HSD6	human	O14756	HSD17B6	O14756	11	48	17-beta-hydroxysteroid dehydrogenase type 6 (17-beta-HSD 6) 	w
+BETA-HYDRO	human	P14060	HSD3B1	P14060	6	234	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase ty	w
+BETA-HYDROXY-DELTA	human	Q9H2F3	HSD3B7	Q9H2F3	24	642	3 beta-hydroxysteroid dehydrogenase type 7 (3 beta-hydroxyst	w
+BETA-HYDROXYBUTYRATE	human	Q9BUT1	BDH2	Q9BUT1	4	159	Dehydrogenase/reductase SDR family member 6 (EC 1.1.1.-) ((R	w
+BETA-HYDROXYLASE	fly	FBgn0010329	Tbh	Q86B61	25	247	Tyramine beta-hydroxylase (EC 1.14.17.-) (Tyramine beta-mono	w
+BETA-HYDROXYLASE	fly	FBgn0034075	Asph	A0A0B4KFS5	4	11	Aspartyl beta-hydroxylase, isoform L (EC 1.14.11.16)	w
+BETA-HYDROXYLASE	human	P09172	DBH	P09172	14	168	Dopamine beta-hydroxylase (EC 1.14.17.1) (Dopamine beta-mono	w
+BETA-HYDROXYLASE	human	P15538	CYP11B1	P15538	7	31	Cytochrome P450 11B1, mitochondrial (CYP11B1) (CYPXIB1) (Cyt	w
+BETA-HYDROXYLASE	human	Q12797	ASPH	Q12797	42	341	Aspartyl/asparaginyl beta-hydroxylase (EC 1.14.11.16) (Aspar	w
+BETA-HYDROXYLASE	human	Q5U4P2	ASPHD1	Q5U4P2	2	40	Aspartate beta-hydroxylase domain-containing protein 1 (EC 1	w
+BETA-HYDROXYLASE	human	Q6ICH7	ASPHD2	Q6ICH7	4	67	Aspartate beta-hydroxylase domain-containing protein 2 (EC 1	w
+BETA-HYDROXYLASE	worm	Q9XTQ6	tbh-1	Q9XTQ6	0	2	Tyramine beta-hydroxylase	w
+BETA-HYDROXYLASE	zebrafish	A0A2R8QJF6	unm_hu7910	A0A2R8QJF6	1	26	Aspartyl/asparaginyl beta-hydroxylase isoform X3	w
+BETA-HYDROXYLASE	zebrafish	B0S5J7	asph	B0S5J7	0	3	Aspartate beta-hydroxylase	w
+BETA-HYDROXYSTEROID	fly	FBgn0021765	scu	O18404	2	211	3-hydroxyacyl-CoA dehydrogenase type-2 (EC 1.1.1.35) (17-bet	w
+BETA-HYDROXYSTEROID	human	O14756	HSD17B6	O14756	11	48	17-beta-hydroxysteroid dehydrogenase type 6 (17-beta-HSD 6) 	w
+BETA-HYDROXYSTEROID	human	P14060	HSD3B1	P14060	6	234	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase ty	w
+BETA-HYDROXYSTEROID	human	P14061	HSD17B1	P14061	10	92	17-beta-hydroxysteroid dehydrogenase type 1 (17-beta-HSD 1) 	w
+BETA-HYDROXYSTEROID	human	P16152	CBR1	P16152	17	285	Carbonyl reductase [NADPH] 1 (EC 1.1.1.184) (15-hydroxyprost	w
+BETA-HYDROXYSTEROID	human	P26439	HSD3B2	P26439	4	270	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase ty	w
+BETA-HYDROXYSTEROID	human	P28845	HSD11B1	P28845	17	128	11-beta-hydroxysteroid dehydrogenase 1 (11-DH) (11-beta-HSD1	w
+BETA-HYDROXYSTEROID	human	P37058	HSD17B3	P37058	7	69	17-beta-hydroxysteroid dehydrogenase type 3 (17-beta-HSD 3) 	w
+BETA-HYDROXYSTEROID	human	P37059	HSD17B2	P37059	15	81	17-beta-hydroxysteroid dehydrogenase type 2 (17-beta-HSD 2) 	w
+BETA-HYDROXYSTEROID	human	P42330	AKR1C3	P42330	1	122	Aldo-keto reductase family 1 member C3 (EC 1.1.1.-) (EC 1.1.	w
+BETA-HYDROXYSTEROID	human	P51659	HSD17B4	P51659	3	195	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	w
+BETA-HYDROXYSTEROID	human	P56937	HSD17B7	P56937	4	116	3-keto-steroid reductase/17-beta-hydroxysteroid dehydrogenas	w
+BETA-HYDROXYSTEROID	human	P80365	HSD11B2	P80365	9	47	11-beta-hydroxysteroid dehydrogenase type 2 (11-DH2) (11-bet	w
+BETA-HYDROXYSTEROID	human	Q53GQ0	HSD17B12	Q53GQ0	13	291	Very-long-chain 3-oxoacyl-CoA reductase (EC 1.1.1.330) (17-b	w
+BETA-HYDROXYSTEROID	human	Q6UWP2	DHRS11	Q6UWP2	7	96	Dehydrogenase/reductase SDR family member 11 (17-beta-hydrox	w
+BETA-HYDROXYSTEROID	human	Q7Z5J1	HSD11B1L	Q7Z5J1	2	13	Hydroxysteroid 11-beta-dehydrogenase 1-like protein (EC 1.1.	w
+BETA-HYDROXYSTEROID	human	Q7Z5P4	HSD17B13	Q7Z5P4	17	167	17-beta-hydroxysteroid dehydrogenase 13 (17-beta-HSD 13) (EC	w
+BETA-HYDROXYSTEROID	human	Q8NBQ5	HSD17B11	Q8NBQ5	17	419	Estradiol 17-beta-dehydrogenase 11 (EC 1.1.1.62) (17-beta-hy	w
+BETA-HYDROXYSTEROID	human	Q92506	HSD17B8	Q92506	6	102	(3R)-3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12) (17-beta	w
+BETA-HYDROXYSTEROID	human	Q9BPX1	HSD17B14	Q9BPX1	7	100	L-fucose dehydrogenase (EC 1.1.1.122) (17-beta-hydroxysteroi	w
+BETA-HYDROXYSTEROID	human	Q9H2F3	HSD3B7	Q9H2F3	24	642	3 beta-hydroxysteroid dehydrogenase type 7 (3 beta-hydroxyst	w
+BETA-HYDROXYSTEROID	virus	A0A068EE23	fep_046	A0A068EE23	9	219	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A068EHE9	pepv_048	A0A068EHE9	5	240	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A0G3FXV3	RCNV-Herman-162	A0A0G3FXV3	11	194	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A0M3ZHF0		A0A0M3ZHF0	8	170	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A1B1MRD1	PTPV-Aus-038	A0A1B1MRD1	8	143	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A1C9KBV8	SKPV-WA-165	A0A1C9KBV8	13	208	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A1C9KCG7	VPXV-CA-165	A0A1C9KCG7	16	204	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A220T6L0	EPTV-WA-144	A0A220T6L0	7	179	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A223FN07	Murmansk-162	A0A223FN07	14	202	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A2C9DSV6		A0A2C9DSV6	2	160	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A2C9DTC1		A0A2C9DTC1	2	161	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A2H4X257	fgpv_043	A0A2H4X257	14	255	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A2U9QHM5	SOPV-ELK-032	A0A2U9QHM5	3	130	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A346FRS0	AKMV-88-178	A0A346FRS0	9	214	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A0A3G2KY24	OPVA167	A0A3G2KY24	8	207	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	A7XCS0	133L	A7XCS0	3	153	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	G3EI41	YKV149c	G3EI41	6	184	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	P26670	OPG174	P26670	10	218	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q67477	FPV046	Q67477	10	248	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q6VZT4	CNPV063	Q6VZT4	15	321	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q89187	OPG174	Q89187	14	199	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q8JL76	EVM143	Q8JL76	7	170	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q8QMR0	CPXV182 CDS	Q8QMR0	9	225	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q8V2L3		Q8V2L3	9	208	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q8V4T4	A45L	Q8V4T4	10	187	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q98318	MC152R	Q98318	6	161	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	virus	Q9DHI0	133L	Q9DHI0	5	150	3 beta-hydroxysteroid dehydrogenase/Delta 5-->4-isomerase	w
+BETA-HYDROXYSTEROID	worm	O16881	dhs-16	O16881	0	7	3beta-hydroxysteroid dehydrogenase dhs-16	w
+BETA-HYDROXYSTEROID	worm	Q9XWF0	hsd-1	Q9XWF0	0	10	3beta-hydroxysteroid dehydrogenase/Delta(5)-Delta(4) isomera	w
+BETA-HYDROXYSTEROID	zebrafish	A2BFP6	hsd20b2	A2BFP6	2	13	20beta-hydroxysteroid dehydrogenase type 2	w
+BETA-HYDROXYSTEROID	zebrafish	F1QLP1	hsd11b2	F1QLP1	2	2	11-beta-hydroxysteroid dehydrogenase type 2	w
+BETA-HYDROXYSTEROID	zebrafish	Q08BC5	hsd17b7	Q08BC5	0	45	3-keto-steroid reductase/17-beta-hydroxysteroid dehydrogenas	w
+BETA-HYDROXYSTEROID	zebrafish	Q6DEH9	hsd17b14	Q6DEH9	0	32	17-beta-hydroxysteroid dehydrogenase 14	w
+BETA-HYDROXYSTEROID	zebrafish	Q7T396	hsd17b3	Q7T396	0	9	17-beta-hydroxysteroid dehydrogenase type 3	w
+BETA-HYDROXYSTEROID-DELTA	human	Q15125	EBP	Q15125	19	282	3-beta-hydroxysteroid-Delta(8),Delta(7)-isomerase (EC 5.3.3.	w
+BETA-HYDROXYSTEROID-DELTA	zebrafish	Q6DG98	ebp	Q6DG98	0	31	3-beta-hydroxysteroid-Delta(8), Delta(7)-isomerase	w
+BETA-HYDROXYSTEROL	human	O76062	TM7SF2	O76062	3	82	Delta(14)-sterol reductase TM7SF2 (Delta-14-SR) (EC 1.3.1.70	w
+BETA-HYDROXYSTEROL	human	Q14739	LBR	Q14739	39	324	Delta(14)-sterol reductase LBR (Delta-14-SR) (EC 1.3.1.70) (	w
+BETA-HYDROXYSTEROL	human	Q15392	DHCR24	Q15392	7	237	Delta(24)-sterol reductase (EC 1.3.1.72) (24-dehydrocholeste	w
+BETA-I	human	P11277	SPTB	P11277	15	317	Spectrin beta chain, erythrocytic (Beta-I spectrin)	w
+BETA-II	human	Q01082	SPTBN1	Q01082	23	473	Spectrin beta chain, non-erythrocytic 1 (Beta-II spectrin) (	w
+BETA-III	human	O15020	SPTBN2	O15020	11	243	Spectrin beta chain, non-erythrocytic 2 (Beta-III spectrin) 	w
+BETA-III	human	Q13509	TUBB3	Q13509	92	1444	Tubulin beta-3 chain (Tubulin beta-4 chain) (Tubulin beta-II	w
+BETA-INTERACTING	human	Q8N4C6	NIN	Q8N4C6	68	360	Ninein (hNinein) (Glycogen synthase kinase 3 beta-interactin	w
+BETA-INTERFERON	human	O75626	PRDM1	O75626	29	156	PR domain zinc finger protein 1 (EC 2.1.1.-) (BLIMP-1) (Beta	w
+BETA-IV	human	Q9H254	SPTBN4	Q9H254	7	238	Spectrin beta chain, non-erythrocytic 4 (Beta-IV spectrin) (	w
+BETA-KETO	human	Q9H0W9	BKGD	Q9H0W9	10	107	Beta-keto L-gulonate decarboxylase (BKGD) (EC 4.1.1.34)	w
+BETA-KETOACYL-	worm	Q6A1T5	CELE_F10G8.9	Q6A1T5	1	11	beta-ketoacyl-	w
+BETA-KETOACYL-ACP	human	Q9NWU1	OXSM	Q9NWU1	3	85	3-oxoacyl-[acyl-carrier-protein] synthase, mitochondrial (EC	w
+BETA-KETOTHIOLA	human	P09110	ACAA1	P09110	8	133	3-ketoacyl-CoA thiolase, peroxisomal (EC 2.3.1.16) (Acetyl-C	w
+BETA-KLOTHO	human	Q86Z14	KLB	Q86Z14	9	53	Beta-klotho (BKL) (BetaKlotho) (Klotho beta-like protein)	w
+BETA-KLOTHO	zebrafish	A0A0R4IX01	klb	A0A0R4IX01	4	35	Beta-klotho	w
+BETA-LACTAMASE	fly	FBgn0039965	Coa7	Q9W5N0	5	23	Cytochrome c oxidase assembly factor 7 homolog (Beta-lactama	w
+BETA-LACTAMASE	human	P16444	DPEP1	P16444	20	106	Dipeptidase 1 (EC 3.4.13.19) (Beta-lactamase) (EC 3.5.2.6) (	w
+BETA-LACTAMASE	human	Q68D91	MBLAC2	Q68D91	12	118	Acyl-coenzyme A thioesterase MBLAC2 (Acyl-CoA thioesterase M	w
+BETA-LACTAMASE	human	Q6PJP8	DCLRE1A	Q6PJP8	23	125	DNA cross-link repair 1A protein (Beta-lactamase DCLRE1A) (E	w
+BETA-LACTAMASE	human	Q96BR5	COA7	Q96BR5	44	187	Cytochrome c oxidase assembly factor 7 (Beta-lactamase hcp-l	w
+BETA-LACTAMASE	human	Q9H816	DCLRE1B	Q9H816	38	205	5' exonuclease Apollo (EC 3.1.-.-) (Beta-lactamase DCLRE1B) 	w
+BETA-LACTAMASE	worm	Q09621	lact-2	Q09621	0	1	Beta-lactamase domain-containing protein 2	w
+BETA-LACTAMASE-LIKE	fly	FBgn0031987	CG12375	Q9VLS9	0	13	Beta-lactamase-like protein 2 homolog (EC 3.-.-.-)	w
+BETA-LACTAMASE-LIKE	human	A8MY62	LACTBL1	A8MY62	0	22	Beta-lactamase-like protein 1	w
+BETA-LACTAMASE-LIKE	human	P83111	LACTB	P83111	4	203	Serine beta-lactamase-like protein LACTB, mitochondrial (EC 	w
+BETA-LACTAMASE-LIKE	human	Q53H82	LACTB2	Q53H82	10	128	Endoribonuclease LACTB2 (EC 3.1.27.-) (Beta-lactamase-like p	w
+BETA-LACTAMASE-LIKE	worm	Q95Q18	Y53F4B.39	Q95Q18	0	11	Beta-lactamase-like protein 2 homolog	w
+BETA-LACTAMASE-LIKE	zebrafish	A0A8M9PE02	lactbl1a	A0A8M9PE02	0	3	Beta-lactamase-like 1	w
+BETA-LACTAMASE-LIKE	zebrafish	F1QP06	lactbl1b	F1QP06	0	3	Beta-lactamase-like 1 isoform X2	w
+BETA-LACTAMASE-RELATED	worm	O62481	lact-9	O62481	0	8	Beta-lactamase-related domain-containing protein	w
+BETA-LACTAMASE-RELATED	worm	Q18384	lact-5	Q18384	1	1	Beta-lactamase-related domain-containing protein	w
+BETA-LACTAMASE-RELATED	worm	Q20489	lact-1	Q20489	0	1	Beta-lactamase-related domain-containing protein	w
+BETA-LACTAMASE-RELATED	worm	Q21523	lact-4	Q21523	0	1	Beta-lactamase-related domain-containing protein	w
+BETA-LACTAMASE-RELATED	worm	Q21569	lact-3	Q21569	0	1	Beta-lactamase-related domain-containing protein	w
+BETA-LACTAMASE-RELATED	worm	Q9U3M7	lact-7	Q9U3M7	0	1	Beta-lactamase-related domain-containing protein	w
+BETA-LACTAMASE-RELATED	worm	Q9XU43	lact-6	Q9XU43	0	12	Beta-lactamase-related domain-containing protein	w
+BETA-LACTAMASE-RELATED	worm	Q9XWZ6	lact-8	Q9XWZ6	0	1	Beta-lactamase-related domain-containing protein	w
+BETA-LIKE	fly	FBgn0000038	nAChRbeta1	P04755	11	27	Acetylcholine receptor subunit beta-like 1 (Nicotinic acetyl	w
+BETA-LIKE	fly	FBgn0004118	nAChRbeta2	P25162	10	19	Acetylcholine receptor subunit beta-like 2 (Nicotinic acetyl	w
+BETA-LIKE	fly	FBgn0010240	Lcch3	Q08832	1	6	Gamma-aminobutyric acid receptor subunit beta-like (GABA(A) 	w
+BETA-LIKE	fly	FBgn0020618	Rack1	O18640	66	778	Small ribosomal subunit protein RACK1 (Guanine nucleotide-bi	w
+BETA-LIKE	human	O60907	TBL1X	O60907	92	498	F-box-like/WD repeat-containing protein TBL1X (SMAP55) (Tran	w
+BETA-LIKE	human	O95965	ITGBL1	O95965	2	36	Integrin beta-like protein 1 (Osteoblast-specific cysteine-r	w
+BETA-LIKE	human	Q12788	TBL3	Q12788	81	523	Transducin beta-like protein 3 (WD repeat-containing protein	w
+BETA-LIKE	human	Q15198	PDGFRL	Q15198	19	113	Platelet-derived growth factor receptor-like protein (PDGFR-	w
+BETA-LIKE	human	Q86Z14	KLB	Q86Z14	9	53	Beta-klotho (BKL) (BetaKlotho) (Klotho beta-like protein)	w
+BETA-LIKE	human	Q9BQ87	TBL1Y	Q9BQ87	24	156	F-box-like/WD repeat-containing protein TBL1Y (Transducin be	w
+BETA-LIKE	human	Q9BYB4	GNB1L	Q9BYB4	25	182	Guanine nucleotide-binding protein subunit beta-like protein	w
+BETA-LIKE	human	Q9BZK7	TBL1XR1	Q9BZK7	60	289	F-box-like/WD repeat-containing protein TBL1XR1 (Nuclear rec	w
+BETA-LIKE	human	Q9NWB7	IFT57	Q9NWB7	58	203	Intraflagellar transport protein 57 homolog (Dermal papilla-	w
+BETA-LIKE	human	Q9UNN4	GTF2A1L	Q9UNN4	111	399	TFIIA-alpha and beta-like factor (General transcription fact	w
+BETA-LIKE	human	Q9Y4P3	TBL2	Q9Y4P3	25	241	Transducin beta-like protein 2 (WS beta-transducin repeats p	w
+BETA-LIKE	worm	Q9GYK2	C05D9.3	Q9GYK2	3	31	Uncharacterized integrin beta-like protein C05D9.3	w
+BETA-LIKE	yeast	P32767	KAP122	P32767	3	37	Importin beta-like protein KAP122	w
+BETA-LIKE	yeast	Q02932	KAP120	Q02932	2	20	Importin beta-like protein KAP120	w
+BETA-LIKE	zebrafish	E7F4J8	tbl2	E7F4J8	1	75	Transducin beta-like 2	w
+BETA-LYASE	human	Q16773	KYAT1	Q16773	7	77	Kynurenine--oxoglutarate transaminase 1 (EC 2.6.1.7) (Cystei	w
+BETA-LYASE	human	Q6YP21	KYAT3	Q6YP21	5	77	Kynurenine--oxoglutarate transaminase 3 (EC 2.6.1.7) (Cystei	w
+BETA-LYASE	yeast	P43623	IRC7	P43623	0	7	Putative cystathionine beta-lyase	w
+BETA-LYASE	yeast	P53101	STR3	P53101	0	5	Cystathionine beta-lyase	w
+BETA-M	human	Q9UN42	ATP1B4	Q9UN42	17	104	Protein ATP1B4 (X,K-ATPase subunit beta-m) (X/potassium-tran	w
+BETA-MAN	fly	FBgn0037215	beta-Man	Q9VMY5	0	10	beta-mannosidase (EC 3.2.1.25)	
+BETA-MANNOSIDASE	fly	FBgn0037215	beta-Man	Q9VMY5	0	10	beta-mannosidase (EC 3.2.1.25)	w
+BETA-MANNOSIDASE	human	O00462	MANBA	O00462	9	106	Beta-mannosidase (EC 3.2.1.25) (Lysosomal beta A mannosidase	w
+BETA-MANNOSIDASE	worm	Q93324	C33G3.4	Q93324	0	17	Probable beta-mannosidase	w
+BETA-MANNOSYLTRANSFERASE	fly	FBgn0038552	Alg1	Q9VEE9	0	23	ALG1, chitobiosyldiphosphodolichol beta-mannosyltransferase 	w
+BETA-MANNOSYLTRANSFERASE	human	Q9BT22	ALG1	Q9BT22	4	168	Chitobiosyldiphosphodolichol beta-mannosyltransferase (EC 2.	w
+BETA-MANNOSYLTRANSFERASE	worm	Q22797	algn-1	Q22797	0	5	Chitobiosyldiphosphodolichol beta-mannosyltransferase	w
+BETA-MANNOSYLTRANSFERASE	yeast	P16661	ALG1	P16661	0	13	Chitobiosyldiphosphodolichol beta-mannosyltransferase	w
+BETA-METHYLMALATE	human	Q8N0X4	CLYBL	Q8N0X4	0	114	Citramalyl-CoA lyase, mitochondrial (EC 4.1.3.25) ((3S)-maly	w
+BETA-MICROSEMINOPROTEIN	human	P08118	MSMB	P08118	24	152	Beta-microseminoprotein (Immunoglobulin-binding factor) (IGB	w
+BETA-MICROSEMINOPROTEIN	zebrafish	X1WGF7	si:ch73-288o11.4	X1WGF7	4	8	Beta-microseminoprotein	w
+BETA-MONOOXYGENASE	fly	FBgn0010329	Tbh	Q86B61	25	247	Tyramine beta-hydroxylase (EC 1.14.17.-) (Tyramine beta-mono	w
+BETA-MONOOXYGENASE	human	P09172	DBH	P09172	14	168	Dopamine beta-hydroxylase (EC 1.14.17.1) (Dopamine beta-mono	w
+BETA-MPP	human	O75439	PMPCB	O75439	14	405	Mitochondrial-processing peptidase subunit beta (EC 3.4.24.6	w
+BETA-N-ACETYL-GLUCOSAMINE-BETA-1	human	Q9Y5Z6	B3GALT1	Q9Y5Z6	13	144	Beta-1,3-galactosyltransferase 1 (Beta-1,3-GalTase 1) (Beta3	w
+BETA-N-ACETYLGALACTOSAMINYLTRANSFERASE	human	Q76KP1	B4GALNT4	Q76KP1	11	87	N-acetyl-beta-glucosaminyl-glycoprotein 4-beta-N-acetylgalac	w
+BETA-N-ACETYLGLUCOSAMINIDASE	human	O60502	OGA	O60502	9	158	Protein O-GlcNAcase (OGA) (EC 3.2.1.169) (Beta-N-acetylgluco	w
+BETA-N-ACETYLGLUCOSAMINYL	fly	FBgn0033431	CG1827	Q8MR45	9	246	Putative N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase CG1	w
+BETA-N-ACETYLGLUCOSAMINYL	human	P20933	AGA	P20933	1	55	N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase (EC 3.5.1.26	w
+BETA-N-ACETYLGLUCOSAMINYL	worm	Q21697	R04B3.2	Q21697	0	5	Putative N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase	w
+BETA-N-ACETYLGLUCOSAMINYL	zebrafish	A8KC00	aga	A8KC00	1	1	N(4)-(Beta-N-acetylglucosaminyl)-L-asparaginase	w
+BETA-N-ACETYLGLUCOSAMINYL-GLYCOLIPID	human	O60512	B4GALT3	O60512	15	150	Beta-1,4-galactosyltransferase 3 (Beta-1,4-GalTase 3) (Beta4	w
+BETA-N-ACETYLGLUCOSAMINYL-GLYCOLIPID	human	O60513	B4GALT4	O60513	7	80	Beta-1,4-galactosyltransferase 4 (Beta-1,4-GalTase 4) (Beta4	w
+BETA-N-ACETYLGLUCOSAMINYL-GLYCOLIPID	human	O60909	B4GALT2	O60909	21	164	Beta-1,4-galactosyltransferase 2 (Beta-1,4-GalTase 2) (Beta4	w
+BETA-N-ACETYLGLUCOSAMINYL-GLYCOLIPID	human	P15291	B4GALT1	P15291	27	172	Beta-1,4-galactosyltransferase 1 (Beta-1,4-GalTase 1) (Beta4	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	fly	FBgn0011591	fng	Q24342	293	2384	Fringe glycosyltransferase (EC 2.4.1.222) (O-fucosylpeptide 	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	fly	FBgn0034521	Mgat1	Q60GL7	233	2378	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	fly	FBgn0036446	Mgat4a	Q9VUH4	2	7	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	fly	FBgn0036447	Mgat4b	Q9VUH5	1	6	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	fly	FBgn0039738	Mgat2	Q961U0	373	2377	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	fly	FBgn0051849	Mgat3	Q95RF3	1	23	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	O00587	MFNG	O00587	9	77	Beta-1,3-N-acetylglucosaminyltransferase manic fringe (EC 2.	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	P26572	MGAT1	P26572	6	107	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q09327	MGAT3	Q09327	4	36	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q09328	MGAT5	Q09328	22	321	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q10469	MGAT2	Q10469	8	71	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q3V5L5	MGAT5B	Q3V5L5	28	326	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q8NES3	LFNG	Q8NES3	7	49	Beta-1,3-N-acetylglucosaminyltransferase lunatic fringe (EC 	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q9UBM8	MGAT4C	Q9UBM8	7	82	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q9UM21	MGAT4A	Q9UM21	9	76	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q9UQ53	MGAT4B	Q9UQ53	9	101	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	human	Q9Y644	RFNG	Q9Y644	3	38	Beta-1,3-N-acetylglucosaminyltransferase radical fringe (EC 	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	worm	G5EBG7	gly-12	G5EBG7	0	4	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	worm	G5EFK6	gly-14	G5EFK6	0	3	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	worm	O17560	gly-20	O17560	0	3	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	worm	Q11068	gly-13	Q11068	0	10	Putative alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylgluc	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	worm	Q22898	C16D9.4	Q22898	0	6	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	worm	Q22899	C16D9.5	Q22899	0	6	Alpha-1,6-mannosyl-glycoprotein 6-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	A0A0G2KRY8	mgat3b	A0A0G2KRY8	1	1	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	A0A8M1N666	mgat3a	A0A8M1N666	1	1	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	A3KQ03	mgat1b	A3KQ03	1	6	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	A4IG58	mgat2	A4IG58	2	3	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	E7FDN9	si:ch73-91k6.2	E7FDN9	1	3	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	F1QTA6	mgat1a	F1QTA6	2	6	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	Q1ECU6	mgat5	Q1ECU6	0	32	alpha-1,6-mannosyl-glycoprotein 6-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE	zebrafish	Q5U3T0	mgat4c	Q5U3T0	0	2	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLGLUCOSAMINYLTRANSFERASE-LIKE	human	A6NG13	MGAT4D	A6NG13	4	17	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+BETA-N-ACETYLHEXOSAMINIDASE	fly	FBgn0041629	Hexo2	Q9W3C4	25	257	beta-N-acetylhexosaminidase (EC 3.2.1.52)	w
+BETA-N-ACETYLHEXOSAMINIDASE	fly	FBgn0041630	Hexo1	Q0E8H9	2	12	beta-N-acetylhexosaminidase (EC 3.2.1.52)	w
+BETA-N-ACETYLHEXOSAMINIDASE	human	O60502	OGA	O60502	9	158	Protein O-GlcNAcase (OGA) (EC 3.2.1.169) (Beta-N-acetylgluco	w
+BETA-N-ACETYLHEXOSAMINIDASE	human	P06865	HEXA	P06865	6	113	Beta-hexosaminidase subunit alpha (EC 3.2.1.52) (Beta-N-acet	w
+BETA-N-ACETYLHEXOSAMINIDASE	human	P07686	HEXB	P07686	7	122	Beta-hexosaminidase subunit beta (EC 3.2.1.52) (Beta-N-acety	w
+BETA-N-ACETYLHEXOSAMINIDASE	human	Q8WVB3	HEXD	Q8WVB3	5	56	Hexosaminidase D (EC 3.2.1.52) (Beta-N-acetylhexosaminidase)	w
+BETA-N-ACETYLHEXOSAMINIDASE	worm	G5EDG9	hex-3	G5EDG9	0	6	beta-N-acetylhexosaminidase	w
+BETA-N-ACETYLHEXOSAMINIDASE	worm	G5EEC8	hex-5	G5EEC8	1	7	beta-N-acetylhexosaminidase	w
+BETA-N-ACETYLHEXOSAMINIDASE	worm	G5EFL1	hex-2	G5EFL1	0	6	beta-N-acetylhexosaminidase	w
+BETA-N-ACETYLHEXOSAMINIDASE	worm	Q8WTK2	hex-4	Q8WTK2	0	6	beta-N-acetylhexosaminidase	w
+BETA-N-ACETYLHEXOSAMINIDASE	zebrafish	F1R118	hexd	F1R118	0	72	beta-N-acetylhexosaminidase	w
+BETA-N-ACETYLMURAMIDASE	fly	FBgn0004425	LysB	Q08694	32	253	Lysozyme B (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase B)	w
+BETA-N-ACETYLMURAMIDASE	fly	FBgn0004427	LysD	P83972	29	237	Lysozyme D (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase D)	w
+BETA-N-ACETYLMURAMIDASE	fly	FBgn0004428	LysE	P37159	26	248	Lysozyme E (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase E)	w
+BETA-N-ACETYLMURAMIDASE	fly	FBgn0004429	LysP	P29615	50	258	Lysozyme P (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase P)	w
+BETA-N-ACETYLMURAMIDASE	fly	FBgn0004430	LysS	P37160	30	247	Lysozyme S (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase S)	w
+BETA-N-ACETYLMURAMIDASE	fly	FBgn0004431	LysX	P37161	24	248	Lysozyme X (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase X)	w
+BETA-N-ACETYLMURAMIDASE	human	P61626	LYZ	P61626	71	641	Lysozyme C (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase C)	w
+BETA-NEOENDORPHIN	human	P01213	PDYN	P01213	7	101	Proenkephalin-B (Beta-neoendorphin-dynorphin) (Preprodynorph	w
+BETA-NEOENDORPHIN-DYNORPHIN	human	P01213	PDYN	P01213	7	101	Proenkephalin-B (Beta-neoendorphin-dynorphin) (Preprodynorph	w
+BETA-NERVE	human	P01138	NGF	P01138	18	301	Beta-nerve growth factor (Beta-NGF)	w
+BETA-NETRIN	human	Q9HB63	NTN4	Q9HB63	10	96	Netrin-4 (Beta-netrin) (Hepar-derived netrin-like protein)	w
+BETA-NGF	human	P01138	NGF	P01138	18	301	Beta-nerve growth factor (Beta-NGF)	w
+BETA-NU	fly	FBgn0010395	Itgbn	Q27591	191	2464	Integrin beta-nu	w
+BETA-OHASE 1	arabidopsis-thaliana	Q9SZZ8	BETA-OHASE 1	Q9SZZ8	0	2	Beta-carotene 3-hydroxylase 1, chloroplastic	
+BETA-OHASE 2	arabidopsis-thaliana	Q9LTG0	BETA-OHASE 2	Q9LTG0	0	3	Beta-carotene 3-hydroxylase 2, chloroplastic	
+BETA-OXIDATION	human	Q8NCU8	MTLN	Q8NCU8	3	23	Mitoregulin (Micropeptide in mitochondria) (Micropeptide reg	w
+BETA-PAK	human	O75914	PAK3	O75914	289	1295	Serine/threonine-protein kinase PAK 3 (EC 2.7.11.1) (Beta-PA	w
+BETA-PARVIN	human	Q9HBI1	PARVB	Q9HBI1	7	62	Beta-parvin (Affixin)	w
+BETA-PARVIN	zebrafish	Q6PC42	parvb	Q6PC42	4	48	Beta-parvin	w
+BETA-PHERS	fly	FBgn0039175	beta-PheRS	Q9VCA5	2	35	Phenylalanine--tRNA ligase beta subunit (EC 6.1.1.20) (Pheny	
+BETA-PIX	human	Q14155	ARHGEF7	Q14155	67	335	Rho guanine nucleotide exchange factor 7 (Beta-Pix) (COOL-1)	w
+BETA-PROPELLER	human	O15040	TECPR2	O15040	15	91	Tectonin beta-propeller repeat-containing protein 2 (WD repe	w
+BETA-PROPELLER	human	Q7Z6L1	TECPR1	Q7Z6L1	12	122	Tectonin beta-propeller repeat-containing protein 1	w
+BETA-PROPELLER	zebrafish	F6P3V2	tecpr2	F6P3V2	7	18	Tectonin beta-propeller repeat-containing 2	w
+BETA-PROPELLER	zebrafish	X1WFY6	tecpr1b	X1WFY6	3	84	Tectonin beta-propeller repeat-containing 1b	w
+BETA-PROPELLER-INTERACTING	human	Q9NWW0	HCFC1R1	Q9NWW0	10	67	Host cell factor C1 regulator 1 (HCF-1 beta-propeller-intera	w
+BETA-R1	human	O14625	CXCL11	O14625	91	491	C-X-C motif chemokine 11 (Beta-R1) (H174) (Interferon gamma-	w
+BETA-REDUCTASE	human	P30043	BLVRB	P30043	8	230	Flavin reductase (NADPH) (FR) (EC 1.5.1.30) (Biliverdin redu	w
+BETA-REDUCTASE	human	P51857	AKR1D1	P51857	2	52	Aldo-keto reductase family 1 member D1 (EC 1.3.1.3) (3-oxo-5	w
+BETA-SARCOGLYCAN	fly	FBgn0038042	Scgbeta	Q9VG77	83	2378	Beta-sarcoglycan	w
+BETA-SARCOGLYCAN	human	Q16585	SGCB	Q16585	17	114	Beta-sarcoglycan (Beta-SG) (43 kDa dystrophin-associated gly	w
+BETA-SARCOGLYCAN	worm	Q9TZ49	sgcb-1	Q9TZ49	1	21	Beta-sarcoglycan	w
+BETA-SARCOGLYCAN	zebrafish	Q3ZB93	sgcb	Q3ZB93	4	11	Beta-sarcoglycan	w
+BETA-SECRETASE	human	P56817	BACE1	P56817	22	169	Beta-secretase 1 (EC 3.4.23.46) (Aspartyl protease 2) (ASP2)	w
+BETA-SECRETASE	human	Q9Y5Z0	BACE2	Q9Y5Z0	51	138	Beta-secretase 2 (EC 3.4.23.45) (Aspartic-like protease 56 k	w
+BETA-SECRETASE	zebrafish	Q5XJ89	bace2	Q5XJ89	0	15	Beta-secretase 2	w
+BETA-SG	human	Q16585	SGCB	Q16585	17	114	Beta-sarcoglycan (Beta-SG) (43 kDa dystrophin-associated gly	w
+BETA-SGT	human	Q96EQ0	SGTB	Q96EQ0	45	267	Small glutamine-rich tetratricopeptide repeat-containing pro	w
+BETA-SITE	fly	FBgn0032049	Bace	Q9VLK3	2	65	Beta-site APP-cleaving enzyme, isoform A (Beta-site APP-clea	w
+BETA-SITE	human	P56817	BACE1	P56817	22	169	Beta-secretase 1 (EC 3.4.23.46) (Aspartyl protease 2) (ASP2)	w
+BETA-SITE	human	Q9Y5Z0	BACE2	Q9Y5Z0	51	138	Beta-secretase 2 (EC 3.4.23.45) (Aspartic-like protease 56 k	w
+BETA-SOLUBLE	human	Q9H115	NAPB	Q9H115	23	117	Beta-soluble NSF attachment protein (SNAP-beta) (N-ethylmale	w
+BETA-SPEC	fly	FBgn0250788	beta-Spec	M9PF16	3	18	Spectrin beta chain	
+BETA-SPEC_2270	fly	FBgn0250788	beta-Spec	M9PF16	3	18		
+BETA-SPEC_996	fly	FBgn0250788	beta-Spec	M9PF16	3	18		
+BETA-SYNTHASE	fly	FBgn0031148	Cbs	Q9VRD9	1	76	Cystathionine beta-synthase (EC 4.2.1.22)	w
+BETA-SYNTHASE	human	P35520	CBS	P35520	3	206	Cystathionine beta-synthase (EC 4.2.1.22) (Beta-thionase) (S	w
+BETA-SYNTHASE	worm	G5EFH8	cbs-1	G5EFH8	0	9	Cystathionine beta-synthase cbs-1	w
+BETA-SYNTHASE	worm	Q9N4K2	cbs-2	Q9N4K2	0	9	Putative cystathionine beta-synthase cbs-2	w
+BETA-SYNTHASE	yeast	P32582	CYS4	P32582	0	64	Cystathionine beta-synthase	w
+BETA-SYNTHASE	zebrafish	A0A8M1N4Z7	cbsb	A0A8M1N4Z7	1	14	Cystathionine beta-synthase	w
+BETA-SYNTHASE	zebrafish	A9JT04	cbsa	A9JT04	1	14	Cystathionine beta-synthase	w
+BETA-SYNUCLEIN	human	Q16143	SNCB	Q16143	15	136	Beta-synuclein	w
+BETA-SYNUCLEIN	zebrafish	Q7SX92	sncb	Q7SX92	0	3	Beta-synuclein	w
+BETA-TAXILIN	human	Q8N3L3	TXLNB	Q8N3L3	39	95	Beta-taxilin (Muscle-derived protein 77) (hMDP77)	w
+BETA-TAXILIN	zebrafish	Q5RIN3	txlnba	Q5RIN3	0	3	Beta-taxilin isoform X2	w
+BETA-TECTORIN	human	Q96PL2	TECTB	Q96PL2	3	72	Beta-tectorin	w
+BETA-THIONASE	human	P35520	CBS	P35520	3	206	Cystathionine beta-synthase (EC 4.2.1.22) (Beta-thionase) (S	w
+BETA-TNTF	human	P45378	TNNT3	P45378	21	98	Troponin T, fast skeletal muscle (TnTf) (Beta-TnTF) (Fast sk	w
+BETA-TRACE	human	P41222	PTGDS	P41222	164	684	Prostaglandin-H2 D-isomerase (EC 5.3.99.2) (Beta-trace prote	w
+BETA-TRANSDUCIN	human	Q9Y4P3	TBL2	Q9Y4P3	25	241	Transducin beta-like protein 2 (WS beta-transducin repeats p	w
+BETA-TRCP	human	Q9Y297	BTRC	Q9Y297	196	986	F-box/WD repeat-containing protein 1A (E3RSIkappaB) (Epididy	w
+BETA-TRCP2	human	Q9UKB1	FBXW11	Q9UKB1	116	595	F-box/WD repeat-containing protein 11 (F-box and WD repeats 	w
+BETA-TROPOMYOSIN	human	P07951	TPM2	P07951	56	564	Tropomyosin beta chain (Beta-tropomyosin) (Tropomyosin-2)	w
+BETA-TRYPSIN	human	P07477	PRSS1	P07477	76	290	Serine protease 1 (EC 3.4.21.4) (Anionic trypsin I) (Anionic	w
+BETA-TUBULIN	fly	FBgn0052396	betaTub65B	Q9VRX3	8	35	beta-Tubulin at 65B	w
+BETA-TUBULIN	fly	FBgn0288686	betaTub60D	P08841	9	67	beta-Tubulin at 60D	w
+BETA-TUBULIN	human	Q9BTW9	TBCD	Q9BTW9	19	253	Tubulin-specific chaperone D (Beta-tubulin cofactor D) (tfcD	w
+BETA-TUBULIN-N-ACETYLTRANSFERASE	fly	FBgn0039859	Mnat9	Q9V9V9	38	410	Alpha/beta-tubulin-N-acetyltransferase 9 (EC 2.3.1.308) (Mic	w
+BETA-TUBULIN-N-ACETYLTRANSFERASE	human	Q9BTE0	NAT9	Q9BTE0	28	377	Alpha/beta-tubulin-N-acetyltransferase 9 (EC 2.3.1.308) (Emb	w
+BETA-TYPE	human	P09619	PDGFRB	P09619	167	1604	Platelet-derived growth factor receptor beta (PDGF-R-beta) (	w
+BETA-TYPE	human	P10092	CALCB	P10092	11	99	Calcitonin gene-related peptide 2 (CGRP2) (Beta-type CGRP) (	w
+BETA-TYPE	worm	P48181	unc-29	P48181	14	154	Acetylcholine receptor subunit beta-type unc-29	w
+BETA-TYPE	worm	P48182	acr-2	P48182	13	13	Acetylcholine receptor subunit beta-type acr-2	w
+BETA-TYPE	worm	P56173	ins-5	P56173	0	2	Putative insulin-like peptide beta-type 6	w
+BETA-TYPE	worm	Q09626	ins-4	Q09626	1	2	Probable insulin-like peptide beta-type 1	w
+BETA-TYPE	worm	Q27218	lev-1	Q27218	12	15	Acetylcholine receptor subunit beta-type lev-1	w
+BETA-TYPE	worm	Q93149	acr-3	Q93149	12	13	Acetylcholine receptor subunit beta-type acr-3	w
+BETA-UREIDOPROPIONASE	human	Q9UBR1	UPB1	Q9UBR1	0	37	Beta-ureidopropionase (EC 3.5.1.6) (BUP-1) (Beta-alanine syn	w
+BETA-UREIDOPROPIONASE	worm	Q19437	upb-1	Q19437	0	21	Beta-ureidopropionase	w
+BETA-XIN	human	A4UGR9	XIRP2	A4UGR9	0	6	Xin actin-binding repeat-containing protein 2 (Beta-xin) (Ca	w
+BETA-XYLOSE	fly	FBgn0039258	beta4GalT7	Q9VBZ9	351	2373	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	w
+BETA-XYLOSE	human	Q9UBV7	B4GALT7	Q9UBV7	18	147	Beta-1,4-galactosyltransferase 7 (Beta-1,4-GalTase 7) (Beta4	w
+BETA1	fly	FBgn0027538	beta4GalNAcTA	Q7KN92	376	2376	Beta1,4-N-acetylgalactosaminyltransferase A (EC 2.4.1.244) (	w
+BETA1	fly	FBgn0039258	beta4GalT7	Q9VBZ9	351	2373	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	w
+BETA1	fly	FBgn0039625	beta4GalNAcTB	Q9VAQ8	252	2379	Beta1,4-N-acetylgalactosaminyltransferase B (EC 2.4.1.244) (	w
+BETA1	human	Q96EU7	C1GALT1C1	Q96EU7	3	55	C1GALT1-specific chaperone 1 (C38H2-like protein 1) (C38H2-L	w
+BETA1	human	Q9H2C8	OR51V1	Q9H2C8	3	52	Olfactory receptor 51V1 (Odorant receptor HOR3'beta1) (Olfac	w
+BETA1	human	Q9UBV7	B4GALT7	Q9UBV7	18	147	Beta-1,4-galactosyltransferase 7 (Beta-1,4-GalTase 7) (Beta4	w
+BETA1	human	Q9Y2B1	RXYLT1	Q9Y2B1	4	53	Ribitol-5-phosphate xylosyltransferase 1 (EC 2.4.2.61) (Tran	w
+BETA1	human	Q9Y5P0	OR51B4	Q9Y5P0	2	29	Olfactory receptor 51B4 (Odorant receptor HOR5'beta1)	w
+BETA11	fly	FBgn0284254	Impbeta11	Q7K0Q2	0	13	Importin beta11 (LD41918p) (Ran binding protein 11)	w
+BETA11	human	Q9H343	OR51I1	Q9H343	2	42	Olfactory receptor 51I1 (Odorant receptor HOR5'beta11) (Olfa	w
+BETA12	human	Q9H344	OR51I2	Q9H344	2	63	Olfactory receptor 51I2 (Odorant receptor HOR5'beta12) (Olfa	w
+BETA14	human	Q9H346	OR52D1	Q9H346	4	62	Olfactory receptor 52D1 (Odorant receptor HOR5'beta14) (Olfa	w
+BETA2	fly	FBgn0038063	Octbeta2R	E1JIJ4	68	388	Octopamine beta2 receptor, isoform F	w
+BETA2	human	Q9UGP5	POLL	Q9UGP5	12	157	DNA polymerase lambda (Pol Lambda) (EC 2.7.7.7) (EC 4.2.99.-	w
+BETA3	fly	FBgn0031261	nAChRbeta3	Q9VPQ8	11	23	Nicotinic acetylcholine receptor beta 3 (Dbeta3) subunit (Ni	w
+BETA3	human	Q96EU7	C1GALT1C1	Q96EU7	3	55	C1GALT1-specific chaperone 1 (C38H2-like protein 1) (C38H2-L	w
+BETA3	human	Q9Y5P1	OR51B2	Q9Y5P1	1	57	Olfactory receptor 51B2 (Odorant receptor HOR5'beta3) (Olfac	w
+BETA3-GAL-T2	human	Q96EU7	C1GALT1C1	Q96EU7	3	55	C1GALT1-specific chaperone 1 (C38H2-like protein 1) (C38H2-L	w
+BETA3GAL-T1	human	Q9Y5Z6	B3GALT1	Q9Y5Z6	13	144	Beta-1,3-galactosyltransferase 1 (Beta-1,3-GalTase 1) (Beta3	w
+BETA3GAL-T2	human	O43825	B3GALT2	O43825	5	39	Beta-1,3-galactosyltransferase 2 (Beta-1,3-GalTase 2) (Beta3	w
+BETA3GAL-T3	human	O75752	B3GALNT1	O75752	11	110	UDP-GalNAc:beta-1,3-N-acetylgalactosaminyltransferase 1 (Bet	w
+BETA3GAL-T4	human	O96024	B3GALT4	O96024	3	120	Beta-1,3-galactosyltransferase 4 (Beta-1,3-GalTase 4) (Beta3	w
+BETA3GAL-T5	human	Q9Y2C3	B3GALT5	Q9Y2C3	4	54	Beta-1,3-galactosyltransferase 5 (Beta-1,3-GalTase 5) (Beta3	w
+BETA3GAL-T6	human	Q96L58	B3GALT6	Q96L58	5	76	Beta-1,3-galactosyltransferase 6 (Beta-1,3-GalTase 6) (Beta3	w
+BETA3GALT1	human	Q9Y5Z6	B3GALT1	Q9Y5Z6	13	144	Beta-1,3-galactosyltransferase 1 (Beta-1,3-GalTase 1) (Beta3	w
+BETA3GALT2	human	O43825	B3GALT2	O43825	5	39	Beta-1,3-galactosyltransferase 2 (Beta-1,3-GalTase 2) (Beta3	w
+BETA3GALT4	human	O96024	B3GALT4	O96024	3	120	Beta-1,3-galactosyltransferase 4 (Beta-1,3-GalTase 4) (Beta3	w
+BETA3GALT5	human	Q9Y2C3	B3GALT5	Q9Y2C3	4	54	Beta-1,3-galactosyltransferase 5 (Beta-1,3-GalTase 5) (Beta3	w
+BETA3GALT6	human	Q96L58	B3GALT6	Q96L58	5	76	Beta-1,3-galactosyltransferase 6 (Beta-1,3-GalTase 6) (Beta3	w
+BETA3GALTII	fly	FBgn0033315	beta3GalTII	A1Z7G9	158	2375	Hexosyltransferase (EC 2.4.1.-)	
+BETA3GLC-T	human	Q6Y288	B3GLCT	Q6Y288	8	72	Beta-1,3-glucosyltransferase (Beta3Glc-T) (EC 2.4.1.-) (Beta	w
+BETA3GN-	human	Q9NY97	B3GNT2	Q9NY97	36	597	N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransfera	w
+BETA3GN-T7	human	Q8NFL0	B3GNT7	Q8NFL0	12	129	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	w
+BETA3GN-T8	human	Q67FW5	QTGAL	Q67FW5	2	24	Queuosine-tRNA galactosyltransferase (QTGAL) (EC 2.4.1.-) (B	w
+BETA3GN-T9	human	Q6UX72	B3GNT9	Q6UX72	7	25	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	w
+BETA4	human	Q9UKL2	OR52A1	Q9UKL2	1	63	Olfactory receptor 52A1 (HPFH1OR) (Odorant receptor HOR3'bet	w
+BETA4-ADAPTIN	human	Q9Y6B7	AP4B1	Q9Y6B7	42	180	AP-4 complex subunit beta-1 (AP-4 adaptor complex subunit be	w
+BETA4GAL-T1	human	P15291	B4GALT1	P15291	27	172	Beta-1,4-galactosyltransferase 1 (Beta-1,4-GalTase 1) (Beta4	w
+BETA4GAL-T2	human	O60909	B4GALT2	O60909	21	164	Beta-1,4-galactosyltransferase 2 (Beta-1,4-GalTase 2) (Beta4	w
+BETA4GAL-T3	human	O60512	B4GALT3	O60512	15	150	Beta-1,4-galactosyltransferase 3 (Beta-1,4-GalTase 3) (Beta4	w
+BETA4GAL-T4	human	O60513	B4GALT4	O60513	7	80	Beta-1,4-galactosyltransferase 4 (Beta-1,4-GalTase 4) (Beta4	w
+BETA4GAL-T5	human	O43286	B4GALT5	O43286	9	105	Beta-1,4-galactosyltransferase 5 (Beta-1,4-GalTase 5) (Beta4	w
+BETA4GAL-T6	human	Q9UBX8	B4GALT6	Q9UBX8	6	79	Beta-1,4-galactosyltransferase 6 (Beta-1,4-GalTase 6) (Beta4	w
+BETA4GAL-T7	human	Q9UBV7	B4GALT7	Q9UBV7	18	147	Beta-1,4-galactosyltransferase 7 (Beta-1,4-GalTase 7) (Beta4	w
+BETA4GALNAC-T3	human	Q6L9W6	B4GALNT3	Q6L9W6	19	100	Beta-1,4-N-acetylgalactosaminyltransferase 3 (B4GalNAcT3) (B	w
+BETA4GALNACT-1	human	Q8TDX6	CSGALNACT1	Q8TDX6	8	123	Chondroitin sulfate N-acetylgalactosaminyltransferase 1 (CsG	w
+BETA4GALNACT-2	human	Q8N6G5	CSGALNACT2	Q8N6G5	27	158	Chondroitin sulfate N-acetylgalactosaminyltransferase 2 (EC 	w
+BETA4GALNACT3	human	Q6L9W6	B4GALNT3	Q6L9W6	19	100	Beta-1,4-N-acetylgalactosaminyltransferase 3 (B4GalNAcT3) (B	w
+BETA4GALNACTA	fly	FBgn0027538	beta4GalNAcTA	Q7KN92	376	2376	Beta1,4-N-acetylgalactosaminyltransferase A (EC 2.4.1.244) (	
+BETA4GALNACTB	fly	FBgn0039625	beta4GalNAcTB	Q9VAQ8	252	2379	Beta1,4-N-acetylgalactosaminyltransferase B (EC 2.4.1.244) (	
+BETA4GALT7	fly	FBgn0039258	beta4GalT7	Q9VBZ9	351	2373	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	
+BETA5	human	Q2VPB7	AP5B1	Q2VPB7	13	69	AP-5 complex subunit beta-1 (Adaptor-related protein complex	w
+BETA5	human	Q9H2C5	OR52A5	Q9H2C5	1	47	Olfactory receptor 52A5 (Odorant receptor HOR3'beta5) (Olfac	w
+BETA5	human	Q9H339	OR51B5	Q9H339	3	58	Olfactory receptor 51B5 (Odorant receptor HOR5'beta5) (Olfac	w
+BETA6	human	Q9H340	OR51B6	Q9H340	2	56	Olfactory receptor 51B6 (Odorant receptor HOR5'beta6)	w
+BETA7	human	Q9H341	OR51M1	Q9H341	1	60	Olfactory receptor 51M1 (Odorant receptor HOR5'beta7) (Olfac	w
+BETA8	human	Q9H342	OR51J1	Q9H342	1	5	Olfactory receptor 51J1 (Odorant receptor HOR5'beta8) (Olfac	w
+BETAA-AD	arabidopsis-thaliana	Q9LDK9	BETAA-AD	Q9LDK9	51	148	Beta-adaptin-like protein A	
+BETAB-AD	arabidopsis-thaliana	Q9SUS3	BETAB-AD	Q9SUS3	49	146	Beta-adaptin-like protein B	
+BETAC-AD	arabidopsis-thaliana	O81742	BETAC-AD	O81742	54	148	Beta-adaptin-like protein C	
+BETACELLULIN	human	P35070	BTC	P35070	56	219	Probetacellulin [Cleaved into: Betacellulin (BTC)]	w
+BETACOP	fly	FBgn0008635	betaCOP	P45437	18	177	Coatomer subunit beta (Beta-coat protein) (Beta-COP)	
+BETACOP_942	fly	FBgn0008635	betaCOP	P45437	18	177		
+BETAGA	human	Q67FW5	QTGAL	Q67FW5	2	24	Queuosine-tRNA galactosyltransferase (QTGAL) (EC 2.4.1.-) (B	w
+BETAGAL	human	A8MXE2	B3GALT9	A8MXE2	3	26	Beta-1,3-galactosyltransferase 9 (EC 2.4.1.-) (UDP-GlcNAc:be	w
+BETAGAL	human	Q6UX72	B3GNT9	Q6UX72	7	25	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	w
+BETAGAL	human	Q6ZMB0	B3GNT6	Q6ZMB0	4	79	Acetylgalactosaminyl-O-glycosyl-glycoprotein beta-1,3-N-acet	w
+BETAGAL	human	Q7Z7M8	B3GNT8	Q7Z7M8	8	74	N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransfera	w
+BETAGAL	human	Q8NFL0	B3GNT7	Q8NFL0	12	129	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	w
+BETAGAL	human	Q9C0J1	B3GNT4	Q9C0J1	11	63	N-acetyllactosaminide beta-1,3-N-acetylglucosaminyltransfera	w
+BETAGGT-I	fly	FBgn0015000	betaggt-I	Q24173	5	51	Geranylgeranyl transferase type-1 subunit beta (EC 2.5.1.59)	
+BETAGGT-II	fly	FBgn0028970	RabGGTb	Q9XZ68	11	78		
+BETAGLU	fly	FBgn0270927	betaGlu	Q9V9T9	14	245	Beta-glucuronidase (EC 3.2.1.31)	
+BETAGLYCAN	human	Q03167	TGFBR3	Q03167	30	186	Transforming growth factor beta receptor type 3 (TGF-beta re	w
+BETAHSD11	human	Q8NBQ5	HSD17B11	Q8NBQ5	17	419	Estradiol 17-beta-dehydrogenase 11 (EC 1.1.1.62) (17-beta-hy	w
+BETAINE	human	P48065	SLC6A12	P48065	6	52	Sodium- and chloride-dependent betaine transporter (BGT-1) (	w
+BETAINE	worm	G5EBN9	snf-3	G5EBN9	0	1	Sodium- and chloride-dependent betaine transporter	w
+BETAINE	worm	G5EG88	acr-23	G5EG88	2	2	Betaine receptor acr-23	w
+BETAINE--HOMOCYSTEINE	human	Q93088	BHMT	Q93088	4	129	Betaine--homocysteine S-methyltransferase 1 (EC 2.1.1.5)	w
+BETAINE--HOMOCYSTEINE	human	Q9H2M3	BHMT2	Q9H2M3	5	133	S-methylmethionine--homocysteine S-methyltransferase BHMT2 (	w
+BETAINE--HOMOCYSTEINE	zebrafish	Q32LQ4	bhmt	Q32LQ4	0	4	Betaine--homocysteine S-methyltransferase 1	w
+BETAKLOTHO	human	Q86Z14	KLB	Q86Z14	9	53	Beta-klotho (BKL) (BetaKlotho) (Klotho beta-like protein)	w
+BETANACTES1	fly	FBgn0030538	betaNACtes1	Q9VY63	12	48	Transcription factor BTF3	
+BETANACTES2	fly	FBgn0030563	betaNACtes2	Q9VY38	9	44	Transcription factor BTF3	
+BETANACTES3	fly	FBgn0052601	betaNACtes3	B6VQA0	135	429	Transcription factor BTF3	
+BETANACTES4	fly	FBgn0030566	betaNACtes4	Q9VY34	10	45	Transcription factor BTF3	
+BETANACTES6	fly	FBgn0052598	betaNACtes6	Q8IR50	121	413	Transcription factor BTF3	
+BETATROPHIN	human	Q6UXH0	ANGPTL8	Q6UXH0	15	81	Angiopoietin-like protein 8 (Betatrophin) (Lipasin) (Refeedi	w
+BETATRY	fly	FBgn0010357	betaTry	P35004	54	259	Trypsin beta (EC 3.4.21.4)	
+BETATUB56D	fly	FBgn0284243	betaTub56D	A1ZBL0	24	200	Tubulin beta chain	
+BETATUB60D	fly	FBgn0288686	betaTub60D	P08841	9	67	beta-Tubulin at 60D	
+BETATUB65B	fly	FBgn0052396	betaTub65B	Q9VRX3	8	35	beta-Tubulin at 65B	
+BETATUB85D	fly	FBgn0003889	betaTub85D	P61857	18	154	Tubulin beta-2 chain (Beta-2-tubulin)	
+BETATUB97EF	fly	FBgn0003890	betaTub97EF	Q8MST5	10	62	Tubulin beta chain	
+BETB	escherichia-coli-83333	P17445	betB	P17445	0	5	Betaine aldehyde dehydrogenase	
+BETB	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GTN1	betB	A0A0H3GTN1	0	38	Betaine aldehyde dehydrogenase	
+BETB	pseudomonas-aeruginosa	Q9HTJ1	betB	Q9HTJ1	1	1	NAD/NADP-dependent betaine aldehyde dehydrogenase	
+BETC	cladophialophora-carrionii	A0A1C1CJQ9	betC	A0A1C1CJQ9	0	5	Choline-sulfatase	
+BETC	pseudomonas-aeruginosa	Q9I799	betC	Q9I799	0	7	Choline sulfatase	
+BETI	escherichia-coli-83333	P17446	betI	P17446	0	1	HTH-type transcriptional regulator BetI	
+BETI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GJT3	betI	A0A0H3GJT3	0	3	HTH-type transcriptional regulator BetI	
+BETI	pseudomonas-aeruginosa	Q9HTJ0	betI	Q9HTJ0	0	1	HTH-type transcriptional regulator BetI	

@@ -1,14 +1,52 @@
-CNN1	mus-musculus	Q08091	Cnn1	Q08091	0	28	Calponin-1
-CNN1	rattus-norvegicus	Q08290	Cnn1	Q08290	1	51	Calponin-1
-CNN2	mus-musculus	Q08093	Cnn2	Q08093	0	29	Calponin-2
-CNN2	rattus-norvegicus	D3ZRX9	Cnn2	D3ZRX9	0	48	Calponin
-CNN3	mus-musculus	Q9DAW9	Cnn3	Q9DAW9	1	51	Calponin-3
-CNN3	rattus-norvegicus	P37397	Cnn3	P37397	0	51	Calponin-3
-CNNM1	mus-musculus	Q0GA42	Cnnm1	Q0GA42	2	3	Metal transporter CNNM1
-CNNM1	rattus-norvegicus	D4A1C0	Cnnm1	D4A1C0	4	4	Metal transporter
-CNNM2	mus-musculus	Q3TWN3	Cnnm2	Q3TWN3	2	3	Metal transporter CNNM2
-CNNM2	rattus-norvegicus	Q5U2P1	Cnnm2	Q5U2P1	3	4	Metal transporter CNNM2
-CNNM3	mus-musculus	Q32NY4	Cnnm3	Q32NY4	3	4	Metal transporter CNNM3
-CNNM3	rattus-norvegicus	D4ACK7	Cnnm3	D4ACK7	4	4	Metal transporter
-CNNM4	mus-musculus	Q69ZF7	Cnnm4	Q69ZF7	3	6	Metal transporter CNNM4
-CNNM4	rattus-norvegicus	P0C588	Cnnm4	P0C588	4	5	Metal transporter CNNM4
+CNN	fly	FBgn0013765	cnn	A0A0B4K863	30	105	Centrosomin, isoform L	
+CNN1	human	P51911	CNN1	P51911	11	183	Calponin-1 (Basic calponin) (Calponin H1, smooth muscle)	
+CNN1	mus-musculus	Q08091	Cnn1	Q08091	0	28	Calponin-1	
+CNN1	rattus-norvegicus	Q08290	Cnn1	Q08290	1	51	Calponin-1	
+CNN1	yeast	P43618	CNN1	P43618	2	39	Inner kinetochore subunit CNN1	
+CNN1A	zebrafish	B8A668	cnn1a	B8A668	4	70	Calponin	
+CNN1B	zebrafish	A0A0R4IGU0	cnn1b	A0A0R4IGU0	2	69	Calponin	
+CNN1_HUMAN	human	P51911	CNN1	P51911	11	183		
+CNN2	human	Q99439	CNN2	Q99439	10	176	Calponin-2 (Calponin H2, smooth muscle) (Neutral calponin)	
+CNN2	mus-musculus	Q08093	Cnn2	Q08093	0	29	Calponin-2	
+CNN2	rattus-norvegicus	D3ZRX9	Cnn2	D3ZRX9	0	48	Calponin	
+CNN2_HUMAN	human	Q99439	CNN2	Q99439	10	176		
+CNN3	human	Q15417	CNN3	Q15417	9	203	Calponin-3 (Calponin, acidic isoform)	
+CNN3	mus-musculus	Q9DAW9	Cnn3	Q9DAW9	1	51	Calponin-3	
+CNN3	rattus-norvegicus	P37397	Cnn3	P37397	0	51	Calponin-3	
+CNN3A	zebrafish	Q7T303	cnn3a	Q7T303	7	69	Calponin	
+CNN3B	zebrafish	Q32PU2	cnn3b	Q32PU2	3	69	Calponin	
+CNN3_HUMAN	human	Q15417	CNN3	Q15417	9	203		
+CNNM	worm	Q20271	CELE_F41C6.6	Q20271	0	2	CNNM transmembrane domain-containing protein	w
+CNNM-1	worm	A3QM97	cnnm-1	A3QM97	1	1	Metal transporter cnnm-1	w
+CNNM-1	worm	A3QM97	cnnm-1	A3QM97	1	1	Metal transporter cnnm-1	w
+CNNM-2	worm	Q9GYL2	cnnm-2	Q9GYL2	0	1	Metal transporter cnnm-2	w
+CNNM-2	worm	Q9GYL2	cnnm-2	Q9GYL2	0	1	Metal transporter cnnm-2	w
+CNNM-3	worm	A0A131MCZ8	cnnm-3	A0A131MCZ8	1	2	Metal transporter cnnm-3	w
+CNNM-3	worm	A0A131MCZ8	cnnm-3	A0A131MCZ8	1	2	Metal transporter cnnm-3	w
+CNNM-4	worm	Q17586	cnnm-4	Q17586	0	1	Metal transporter cnnm-4	w
+CNNM-4	worm	Q17586	cnnm-4	Q17586	0	1	Metal transporter cnnm-4	w
+CNNM-5	worm	G5ED05	cnnm-5	G5ED05	0	9	Metal transporter cnnm-5	w
+CNNM-5	worm	G5ED05	cnnm-5	G5ED05	0	9	Metal transporter cnnm-5	w
+CNNM1	human	Q9NRU3	CNNM1	Q9NRU3	12	78	Metal transporter CNNM1 (Ancient conserved domain-containing	
+CNNM1	mus-musculus	Q0GA42	Cnnm1	Q0GA42	2	3	Metal transporter CNNM1	
+CNNM1	rattus-norvegicus	D4A1C0	Cnnm1	D4A1C0	4	4	Metal transporter	
+CNNM1	zebrafish	A0A0G2KKC2	cnnm1	A0A0G2KKC2	5	6	Metal transporter	
+CNNM1_HUMAN	human	Q9NRU3	CNNM1	Q9NRU3	12	78		
+CNNM2	human	Q9H8M5	CNNM2	Q9H8M5	11	88	Metal transporter CNNM2 (Ancient conserved domain-containing	
+CNNM2	mus-musculus	Q3TWN3	Cnnm2	Q3TWN3	2	3	Metal transporter CNNM2	
+CNNM2	rattus-norvegicus	Q5U2P1	Cnnm2	Q5U2P1	3	4	Metal transporter CNNM2	
+CNNM2A	zebrafish	A2ATX7	cnnm2a	A2ATX7	5	6	Metal transporter	
+CNNM2B	zebrafish	F1QIW8	cnnm2b	F1QIW8	5	6	Metal transporter	
+CNNM2_HUMAN	human	Q9H8M5	CNNM2	Q9H8M5	11	88		
+CNNM3	human	Q8NE01	CNNM3	Q8NE01	29	191	Metal transporter CNNM3 (Ancient conserved domain-containing	
+CNNM3	mus-musculus	Q32NY4	Cnnm3	Q32NY4	3	4	Metal transporter CNNM3	
+CNNM3	rattus-norvegicus	D4ACK7	Cnnm3	D4ACK7	4	4	Metal transporter	
+CNNM3	zebrafish	A0A8M1RMB4	cnnm3	A0A8M1RMB4	5	6	Metal transporter	
+CNNM3_HUMAN	human	Q8NE01	CNNM3	Q8NE01	29	191		
+CNNM4	human	Q6P4Q7	CNNM4	Q6P4Q7	13	115	Metal transporter CNNM4 (Ancient conserved domain-containing	
+CNNM4	mus-musculus	Q69ZF7	Cnnm4	Q69ZF7	3	6	Metal transporter CNNM4	
+CNNM4	rattus-norvegicus	P0C588	Cnnm4	P0C588	4	5	Metal transporter CNNM4	
+CNNM4A	zebrafish	A0A0G2KHE4	cnnm4a	A0A0G2KHE4	0	6	Metal transporter	
+CNNM4_HUMAN	human	Q6P4Q7	CNNM4	Q6P4Q7	13	115		
+CNN_853	fly	FBgn0013765	cnn	A0A0B4K863	30	105		
+CNN_9	fly	FBgn0013765	cnn	A0A0B4K863	30	105		

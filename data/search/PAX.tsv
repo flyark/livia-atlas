@@ -1,27 +1,106 @@
-PAX	arabidopsis-thaliana	F4IV25	PAX	F4IV25	0	1	non-specific serine/threonine protein kinase
-PAX1	mus-musculus	P09084	Pax1	P09084	1	5	Paired box protein Pax-1
-PAX1	rattus-norvegicus	F1LT82	Pax1	F1LT82	0	4	Paired box 1
-PAX2	mus-musculus	P32114	Pax2	P32114	3	22	Paired box protein Pax-2
-PAX2	rattus-norvegicus	D4ACZ2	Pax2	D4ACZ2	10	41	Paired box 2
-PAX3	mus-musculus	P24610	Pax3	P24610	6	40	Paired box protein Pax-3
-PAX3	rattus-norvegicus	F1LMV3	Pax3	F1LMV3	2	32	Paired box 3
-PAX4	mus-musculus	P32115	Pax4	P32115	2	10	Paired box protein Pax-4
-PAX4	rattus-norvegicus	O88436	Pax4	O88436	4	21	Paired box protein Pax-4
-PAX5	mus-musculus	Q02650	Pax5	Q02650	9	36	Paired box protein Pax-5
-PAX5	rattus-norvegicus	F1M4W2	Pax5	F1M4W2	18	54	Paired box 5
-PAX6	mus-musculus	P63015	Pax6	P63015	4	64	Paired box protein Pax-6
-PAX6	rattus-norvegicus	P63016	Pax6	P63016	5	59	Paired box protein Pax-6
-PAX7	mus-musculus	P47239	Pax7	P47239	1	19	Paired box protein Pax-7
-PAX7	rattus-norvegicus	D3ZRA8	Pax7	D3ZRA8	1	22	Paired box 7
-PAX8	mus-musculus	Q00288	Pax8	Q00288	1	16	Paired box protein Pax-8
-PAX8	rattus-norvegicus	P51974	Pax8	P51974	10	38	Paired box protein Pax-8
-PAX9	mus-musculus	P47242	Pax9	P47242	1	11	Paired box protein Pax-9
-PAX9	rattus-norvegicus	Q2L4T2	Pax9	Q2L4T2	3	8	Paired box protein Pax-9
-PAXB	dictyostelium-discoideum	Q8MML5	paxB	Q8MML5	0	17	Paxillin-B
-PAXBP1	mus-musculus	P58501	Paxbp1	P58501	5	17	PAX3- and PAX7-binding protein 1
-PAXBP1	rattus-norvegicus	D4A8C8	Paxbp1	D4A8C8	3	5	PAX3 and PAX7 binding protein 1
-PAXIP1	mus-musculus	Q6NZQ4	Paxip1	Q6NZQ4	10	58	PAX-interacting protein 1
-PAXIP1	rattus-norvegicus	D3ZSX6	Paxip1	D3ZSX6	8	95	PAX-interacting protein 1
-PAXL	arabidopsis-thaliana	Q9LUK3	PAXL	Q9LUK3	1	1	non-specific serine/threonine protein kinase
-PAXX	mus-musculus	Q8K0Y7	Paxx	Q8K0Y7	4	43	Protein PAXX
-PAXX	rattus-norvegicus	A0A0G2QC22	Paxx	A0A0G2QC22	5	43	PAXX, non-homologous end joining factor
+PAX	arabidopsis-thaliana	F4IV25	PAX	F4IV25	0	1	non-specific serine/threonine protein kinase	
+PAX	fly	FBgn0041789	Pax	Q2PDT4	13	115	Transforming growth factor beta-1-induced transcript 1 prote	
+PAX-1	human	P15863	PAX1	P15863	76	338	Paired box protein Pax-1 (HuP48)	w
+PAX-1	worm	Q21272	pax-1	Q21272	2	8	Paired box protein 1 homolog	
+PAX-1A	zebrafish	A0AB32T8Y5	pax1a	A0AB32T8Y5	0	4	Paired box protein Pax-1a isoform X1	w
+PAX-2	human	Q02962	PAX2	Q02962	124	430	Paired box protein Pax-2	w
+PAX-2	worm	Q21263	pax-2	Q21263	8	41	Paired box protein 2 homolog	
+PAX-3	human	P23760	PAX3	P23760	131	410	Paired box protein Pax-3 (HuP2)	w
+PAX-3	worm	G5ED66	pax-3	G5ED66	6	92	Paired box protein 3 homolog	
+PAX-4	human	O43316	PAX4	O43316	85	369	Paired box protein Pax-4	w
+PAX-5	human	Q02548	PAX5	Q02548	142	469	Paired box protein Pax-5 (B-cell-specific transcription fact	w
+PAX-6	human	P26367	PAX6	P26367	163	778	Paired box protein Pax-6 (Aniridia type II protein) (Oculorh	w
+PAX-6	zebrafish	A0A0R4IQL7	pax6b	A0A0R4IQL7	1	26	Paired box protein Pax-6	w
+PAX-6	zebrafish	I3IT91	pax10	I3IT91	0	12	Paired box protein Pax-6	w
+PAX-6	zebrafish	P26630	pax6a	P26630	2	29	Paired box protein Pax-6	w
+PAX-7	human	P23759	PAX7	P23759	154	491	Paired box protein Pax-7 (HuP1)	w
+PAX-8	human	Q06710	PAX8	Q06710	115	485	Paired box protein Pax-8	w
+PAX-8	zebrafish	F1Q9Q9	pax8	F1Q9Q9	4	26	Paired box protein Pax-8	w
+PAX-9	human	P55771	PAX9	P55771	122	484	Paired box protein Pax-9	w
+PAX-9	zebrafish	Q98865	pax9	Q98865	1	4	Paired box protein Pax-9	w
+PAX-INTERACTING	human	Q6ZW49	PAXIP1	Q6ZW49	133	421	PAX-interacting protein 1 (PAX transactivation activation do	w
+PAX-INTERACTING	worm	Q9U370	pis-1	Q9U370	10	73	PAX-interacting protein 1	w
+PAX-INTERACTING	zebrafish	Q5XIY8	paxip1	Q5XIY8	7	75	PAX-interacting protein 1	w
+PAX1	human	P15863	PAX1	P15863	76	338	Paired box protein Pax-1 (HuP48)	
+PAX1	mus-musculus	P09084	Pax1	P09084	1	5	Paired box protein Pax-1	
+PAX1	rattus-norvegicus	F1LT82	Pax1	F1LT82	0	4	Paired box 1	
+PAX10	zebrafish	I3IT91	pax10	I3IT91	0	12	Paired box protein Pax-6	
+PAX1A	zebrafish	A0AB32T8Y5	pax1a	A0AB32T8Y5	0	4	Paired box protein Pax-1a isoform X1	
+PAX1B	zebrafish	B0S7C8	pax1b	B0S7C8	0	4	Paired box 1b	
+PAX1_HUMAN	human	P15863	PAX1	P15863	76	338		
+PAX2	human	Q02962	PAX2	Q02962	124	430	Paired box protein Pax-2	
+PAX2	mus-musculus	P32114	Pax2	P32114	3	22	Paired box protein Pax-2	
+PAX2	rattus-norvegicus	D4ACZ2	Pax2	D4ACZ2	10	41	Paired box 2	
+PAX2_HUMAN	human	Q02962	PAX2	Q02962	124	430		
+PAX3	human	P23760	PAX3	P23760	131	410	Paired box protein Pax-3 (HuP2)	
+PAX3	mus-musculus	P24610	Pax3	P24610	6	40	Paired box protein Pax-3	
+PAX3	rattus-norvegicus	F1LMV3	Pax3	F1LMV3	2	32	Paired box 3	
+PAX3	zebrafish	E9QDJ4	paxbp1	E9QDJ4	2	8	PAX3 and PAX7-binding protein 1	w
+PAX3-	human	Q9Y5B6	PAXBP1	Q9Y5B6	87	422	PAX3- and PAX7-binding protein 1 (GC-rich sequence DNA-bindi	w
+PAX3A	zebrafish	O57416	pax3a	O57416	1	19	Paired box 3a	
+PAX3B	zebrafish	F1Q9S0	pax3b	F1Q9S0	1	14	Paired box 3b	
+PAX3_HUMAN	human	P23760	PAX3	P23760	131	410		
+PAX4	human	O43316	PAX4	O43316	85	369	Paired box protein Pax-4	
+PAX4	mus-musculus	P32115	Pax4	P32115	2	10	Paired box protein Pax-4	
+PAX4	rattus-norvegicus	O88436	Pax4	O88436	4	21	Paired box protein Pax-4	
+PAX4_HUMAN	human	O43316	PAX4	O43316	85	369		
+PAX5	human	Q02548	PAX5	Q02548	142	469	Paired box protein Pax-5 (B-cell-specific transcription fact	
+PAX5	mus-musculus	Q02650	Pax5	Q02650	9	36	Paired box protein Pax-5	
+PAX5	rattus-norvegicus	F1M4W2	Pax5	F1M4W2	18	54	Paired box 5	
+PAX5	zebrafish	F1QGF8	pax5	F1QGF8	7	27	Paired box 5	
+PAX5_HUMAN	human	Q02548	PAX5	Q02548	142	469		
+PAX6	human	P26367	PAX6	P26367	163	778	Paired box protein Pax-6 (Aniridia type II protein) (Oculorh	
+PAX6	human	Q96EB1	ELP4	Q96EB1	32	507	Elongator complex protein 4 (hELP4) (PAX6 neighbor gene prot	w
+PAX6	mus-musculus	P63015	Pax6	P63015	4	64	Paired box protein Pax-6	
+PAX6	rattus-norvegicus	P63016	Pax6	P63016	5	59	Paired box protein Pax-6	
+PAX6A	zebrafish	P26630	pax6a	P26630	2	29	Paired box protein Pax-6	
+PAX6B	zebrafish	A0A0R4IQL7	pax6b	A0A0R4IQL7	1	26	Paired box protein Pax-6	
+PAX6_HUMAN	human	P26367	PAX6	P26367	163	778		
+PAX7	human	P23759	PAX7	P23759	154	491	Paired box protein Pax-7 (HuP1)	
+PAX7	mus-musculus	P47239	Pax7	P47239	1	19	Paired box protein Pax-7	
+PAX7	rattus-norvegicus	D3ZRA8	Pax7	D3ZRA8	1	22	Paired box 7	
+PAX7-BINDING	human	Q9Y5B6	PAXBP1	Q9Y5B6	87	422	PAX3- and PAX7-binding protein 1 (GC-rich sequence DNA-bindi	w
+PAX7-BINDING	zebrafish	E9QDJ4	paxbp1	E9QDJ4	2	8	PAX3 and PAX7-binding protein 1	w
+PAX7A	zebrafish	O57418	pax7a	O57418	0	17	Paired box 7a	
+PAX7_HUMAN	human	P23759	PAX7	P23759	154	491		
+PAX8	human	Q06710	PAX8	Q06710	115	485	Paired box protein Pax-8	
+PAX8	mus-musculus	Q00288	Pax8	Q00288	1	16	Paired box protein Pax-8	
+PAX8	rattus-norvegicus	P51974	Pax8	P51974	10	38	Paired box protein Pax-8	
+PAX8	zebrafish	F1Q9Q9	pax8	F1Q9Q9	4	26	Paired box protein Pax-8	
+PAX8_HUMAN	human	Q06710	PAX8	Q06710	115	485		
+PAX9	human	P55771	PAX9	P55771	122	484	Paired box protein Pax-9	
+PAX9	mus-musculus	P47242	Pax9	P47242	1	11	Paired box protein Pax-9	
+PAX9	rattus-norvegicus	Q2L4T2	Pax9	Q2L4T2	3	8	Paired box protein Pax-9	
+PAX9	zebrafish	Q98865	pax9	Q98865	1	4	Paired box protein Pax-9	
+PAX9_HUMAN	human	P55771	PAX9	P55771	122	484		
+PAXB	dictyostelium-discoideum	Q8MML5	paxB	Q8MML5	0	17	Paxillin-B	
+PAXB	human	Q8NFW5	DMBX1	Q8NFW5	141	348		
+PAXB1_HUMAN	human	Q9Y5B6	PAXBP1	Q9Y5B6	87	422		
+PAXBP1	human	Q9Y5B6	PAXBP1	Q9Y5B6	87	422	PAX3- and PAX7-binding protein 1 (GC-rich sequence DNA-bindi	
+PAXBP1	mus-musculus	P58501	Paxbp1	P58501	5	17	PAX3- and PAX7-binding protein 1	
+PAXBP1	rattus-norvegicus	D4A8C8	Paxbp1	D4A8C8	3	5	PAX3 and PAX7 binding protein 1	
+PAXBP1	zebrafish	E9QDJ4	paxbp1	E9QDJ4	2	8	PAX3 and PAX7-binding protein 1	
+PAXI1_HUMAN	human	Q6ZW49	PAXIP1	Q6ZW49	133	421		
+PAXILLIN	human	P49023	PXN	P49023	68	452	Paxillin	w
+PAXILLIN	worm	Q09476	pxl-1	Q09476	3	93	Paxillin homolog 1	w
+PAXILLIN-ASSOCIATED	human	O43150	ASAP2	O43150	60	312	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	w
+PAXILLIN-LIKE	yeast	P36166	PXL1	P36166	3	28	Paxillin-like protein 1	w
+PAXIP1	human	Q6ZW49	PAXIP1	Q6ZW49	133	421	PAX-interacting protein 1 (PAX transactivation activation do	
+PAXIP1	mus-musculus	Q6NZQ4	Paxip1	Q6NZQ4	10	58	PAX-interacting protein 1	
+PAXIP1	rattus-norvegicus	D3ZSX6	Paxip1	D3ZSX6	8	95	PAX-interacting protein 1	
+PAXIP1	zebrafish	Q5XIY8	paxip1	Q5XIY8	7	75	PAX-interacting protein 1	
+PAXIP1-ASSOCIATED	human	Q9BTK6	PAGR1	Q9BTK6	7	107	PAXIP1-associated glutamate-rich protein 1 (Glutamate-rich c	w
+PAXIP1-ASSOCIATED	zebrafish	E7F1D2	pagr1	E7F1D2	3	13	PAXIP1-associated glutamate-rich protein 1	w
+PAXIP1L	human	Q6ZW49	PAXIP1	Q6ZW49	133	421		
+PAXI_HUMAN	human	P49023	PXN	P49023	68	452		
+PAXL	arabidopsis-thaliana	Q9LUK3	PAXL	Q9LUK3	1	1	non-specific serine/threonine protein kinase	
+PAXNEB	human	Q96EB1	ELP4	Q96EB1	32	507		
+PAXT-1	worm	Q21738	paxt-1	Q21738	1	4	Partner of xrn-2 protein 1	
+PAXX	human	Q9BUH6	PAXX	Q9BUH6	24	147	Protein PAXX (Paralog of XRCC4 and XLF) (XRCC4-like small pr	
+PAXX	mus-musculus	Q8K0Y7	Paxx	Q8K0Y7	4	43	Protein PAXX	
+PAXX	rattus-norvegicus	A0A0G2QC22	Paxx	A0A0G2QC22	5	43	PAXX, non-homologous end joining factor	
+PAXX	zebrafish	B3DFL2	paxx	B3DFL2	3	29	PAXX non-homologous end joining factor	w
+PAXX	zebrafish	B3DFL2	paxx	B3DFL2	3	29	PAXX non-homologous end joining factor	w
+PAXX_HUMAN	human	Q9BUH6	PAXX	Q9BUH6	24	147		
+PAX_199	fly	FBgn0041789	Pax	Q2PDT4	13	115		
+PAX_96	fly	FBgn0041789	Pax	Q2PDT4	13	115		

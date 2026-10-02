@@ -1,20 +1,927 @@
-HOM	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBY8	hom	Q0PBY8	0	23	Homoserine dehydrogenase
-HOM	helicobacter-pylori	P56429	hom	P56429	0	4	Homoserine dehydrogenase
-HOM	methanocaldococcus-jannaschii	Q58997	hom	Q58997	0	5	Homoserine dehydrogenase
-HOM	mycobacterium-leprae	P46806	hom	P46806	0	14	Homoserine dehydrogenase
-HOM	mycobacterium-tuberculosis	P9WPX1	hom	P9WPX1	0	3	Homoserine dehydrogenase
-HOM	pseudomonas-aeruginosa	P29365	hom	P29365	0	9	Homoserine dehydrogenase
-HOM	streptococcus-pneumoniae	Q8DPE1	hom	Q8DPE1	0	4	Homoserine dehydrogenase
-HOM2	schizosaccharomyces-pombe	P78780	hom2	P78780	0	4	Aspartate-semialdehyde dehydrogenase
-HOM3	candida-albicans-237561	A0A1D8PMB8	HOM3	A0A1D8PMB8	0	1	Aspartokinase
-HOM3	cladophialophora-carrionii	A0A1C1D2D2	HOM3	A0A1C1D2D2	0	2	Aspartokinase
-HOM3	schizosaccharomyces-pombe	O60163	hom3	O60163	0	5	Aspartokinase
-HOM6	candida-albicans-237561	Q5AIA2	HOM6	Q5AIA2	0	1	Homoserine dehydrogenase
-HOM6	schizosaccharomyces-pombe	O94671	hom6	O94671	0	3	Homoserine dehydrogenase
-HOMER1	mus-musculus	Q9Z2Y3	Homer1	Q9Z2Y3	8	57	Homer protein homolog 1
-HOMER1	rattus-norvegicus	Q9Z214	Homer1	Q9Z214	7	33	Homer protein homolog 1
-HOMER2	mus-musculus	Q9QWW1	Homer2	Q9QWW1	4	13	Homer protein homolog 2
-HOMER2	rattus-norvegicus	O88801	Homer2	O88801	3	12	Homer protein homolog 2
-HOMER3	mus-musculus	Q99JP6	Homer3	Q99JP6	10	30	Homer protein homolog 3
-HOMER3	rattus-norvegicus	Q9Z2X5	Homer3	Q9Z2X5	8	27	Homer protein homolog 3
-HOMEZ	rattus-norvegicus	Q8K3E9	Homez	Q8K3E9	0	5	Homeobox and leucine zipper protein Homez
+HOM	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBY8	hom	Q0PBY8	0	23	Homoserine dehydrogenase	
+HOM	helicobacter-pylori	P56429	hom	P56429	0	4	Homoserine dehydrogenase	
+HOM	methanocaldococcus-jannaschii	Q58997	hom	Q58997	0	5	Homoserine dehydrogenase	
+HOM	mycobacterium-leprae	P46806	hom	P46806	0	14	Homoserine dehydrogenase	
+HOM	mycobacterium-tuberculosis	P9WPX1	hom	P9WPX1	0	3	Homoserine dehydrogenase	
+HOM	pseudomonas-aeruginosa	P29365	hom	P29365	0	9	Homoserine dehydrogenase	
+HOM	streptococcus-pneumoniae	Q8DPE1	hom	Q8DPE1	0	4	Homoserine dehydrogenase	
+HOM-HCC-8	human	Q9P1Q0	VPS54	Q9P1Q0	22	99	Vacuolar protein sorting-associated protein 54 (Hepatocellul	w
+HOM-HD-21	human	O00182	LGALS9	O00182	31	672	Galectin-9 (Gal-9) (Ecalectin) (Tumor antigen HOM-HD-21)	w
+HOM-MEL-40	human	Q16385	SSX2	Q16385	9	81	Protein SSX2 (Cancer/testis antigen 5.2) (CT5.2) (Synovial s	w
+HOM-RCC-3	human	O43570	CA12	O43570	13	93	Carbonic anhydrase 12 (EC 4.2.1.1) (Carbonate dehydratase XI	w
+HOM-TES-103	human	Q0D2I5	IFFO1	Q0D2I5	30	75	Non-homologous end joining factor IFFO1 (NHEJ factor IFFO1) 	w
+HOM-TES-85	human	Q9P127	LUZP4	Q9P127	10	130	Leucine zipper protein 4 (Cancer/testis antigen 28) (CT-28) 	w
+HOM2	schizosaccharomyces-pombe	P78780	hom2	P78780	0	4	Aspartate-semialdehyde dehydrogenase	
+HOM2	yeast	P13663	HOM2	P13663	0	40	Aspartate-semialdehyde dehydrogenase	
+HOM3	candida-albicans-237561	A0A1D8PMB8	HOM3	A0A1D8PMB8	0	1	Aspartokinase	
+HOM3	cladophialophora-carrionii	A0A1C1D2D2	HOM3	A0A1C1D2D2	0	2	Aspartokinase	
+HOM3	schizosaccharomyces-pombe	O60163	hom3	O60163	0	5	Aspartokinase	
+HOM3	yeast	P10869	HOM3	P10869	0	19	Aspartokinase	
+HOM6	candida-albicans-237561	Q5AIA2	HOM6	Q5AIA2	0	1	Homoserine dehydrogenase	
+HOM6	schizosaccharomyces-pombe	O94671	hom6	O94671	0	3	Homoserine dehydrogenase	
+HOM6	yeast	P31116	HOM6	P31116	0	18	Homoserine dehydrogenase	
+HOME1_HUMAN	human	Q86YM7	HOMER1	Q86YM7	75	235		
+HOME2_HUMAN	human	Q9NSB8	HOMER2	Q9NSB8	39	124		
+HOME3_HUMAN	human	Q9NSC5	HOMER3	Q9NSC5	59	224		
+HOMELESS	fly	FBgn0003483	spn-E	Q9VF26	5	29	Probable ATP-dependent RNA helicase spindle-E (EC 3.6.4.13) 	w
+HOMEO	zebrafish	A2BE68	hoxc12a	A2BE68	2	6	Homeo box C12a	w
+HOMEO	zebrafish	A8KBT9	cdx4	A8KBT9	3	14	Caudal type homeo box transcription factor 4	w
+HOMEO	zebrafish	B3DHA2	mnx2a	B3DHA2	4	5	Homeo box HB9 like a	w
+HOMEOBOX	fly	FBgn0000014	abd-A	P29555	93	532	Homeobox protein abdominal-A	w
+HOMEOBOX	fly	FBgn0000015	Abd-B	P09087	71	435	Homeobox protein abdominal-B (Infraabdominal 7) (IAB-7) (P3)	w
+HOMEOBOX	fly	FBgn0000061	al	Q06453	114	405	Homeobox protein aristaless	w
+HOMEOBOX	fly	FBgn0000492	Dr	Q03372	117	399	Muscle segmentation homeobox (Protein drop) (Protein msh)	w
+HOMEOBOX	fly	FBgn0000529	bsh	Q04787	89	433	Brain-specific homeobox protein	w
+HOMEOBOX	fly	FBgn0000577	en	P02836	154	417	Segmentation polarity homeobox protein engrailed	w
+HOMEOBOX	fly	FBgn0000611	exd	P40427	73	462	Homeobox protein extradenticle (Dpbx)	w
+HOMEOBOX	fly	FBgn0001170	H2.0	P10035	95	421	Homeobox protein H2.0	w
+HOMEOBOX	fly	FBgn0001235	hth	O46339	83	449	Homeobox protein homothorax (Homeobox protein dorsotonals)	w
+HOMEOBOX	fly	FBgn0001269	inv	P05527	147	386	Homeobox protein invected	w
+HOMEOBOX	fly	FBgn0003267	ro	P10181	99	394	Homeobox protein rough	w
+HOMEOBOX	fly	FBgn0004110	tin	P22711	98	402	Muscle-specific homeobox protein tinman (Msh-2) (NK-4)	w
+HOMEOBOX	fly	FBgn0004198	ct	P10180	14	76	Homeobox protein cut	w
+HOMEOBOX	fly	FBgn0004854	B-H2	Q24256	106	380	Homeobox protein B-H2 (Homeobox protein BarH2)	w
+HOMEOBOX	fly	FBgn0004862	bap	P22809	113	402	Homeobox protein bagpipe (Homeobox protein NK-3)	w
+HOMEOBOX	fly	FBgn0011758	B-H1	Q24255	116	395	Homeobox protein B-H1 (Homeobox protein BarH1)	w
+HOMEOBOX	fly	FBgn0015561	unpg	Q4V5A3	84	381	Homeobox protein unplugged	w
+HOMEOBOX	fly	FBgn0015904	ara	Q24248	101	379	Homeobox protein araucan	w
+HOMEOBOX	fly	FBgn0015919	caup	P54269	92	380	Homeobox protein caupolican	w
+HOMEOBOX	fly	FBgn0020617	Rx	Q9W2Q1	107	389	Retinal Homeobox	w
+HOMEOBOX	fly	FBgn0024184	unc-4	O77215	99	379	Homeobox protein unc-4 (Paired-like homeodomain protein unc-	w
+HOMEOBOX	fly	FBgn0026058	OdsH	Q9VX20	140	592	IP01524p (Ods-site homeobox)	w
+HOMEOBOX	fly	FBgn0026411	Lim1	Q9V472	78	428	DLim1 (GH04929p) (LIM homeobox 1, isoform A)	w
+HOMEOBOX	fly	FBgn0027364	Six4	Q9Y1P6	113	468	GM13131p (Homeobox protein SIX4) (Myotonix) (RT01027p) (Six4	w
+HOMEOBOX	fly	FBgn0028996	onecut	Q9NJB5	31	110	Homeobox protein onecut	w
+HOMEOBOX	fly	FBgn0038592	CG18599	Q9VEA3	92	386	Homeobox domain-containing protein	w
+HOMEOBOX	fly	FBgn0038852	HHEX	Q9VDF0	55	415	Hematopoietically expressed homeobox	w
+HOMEOBOX	fly	FBgn0052105	Lmx1a	Q9VTW5	99	374	LIM homeobox transcription factor 1 alpha, isoform B (RE7081	w
+HOMEOBOX	fly	FBgn0054031	CG34031	M9NDG6	60	381	Homeobox domain-containing protein	w
+HOMEOBOX	fly	FBgn0085369	Drgx	A0AVV3	116	374	Dorsal root ganglia homeobox, isoform E (Dorsal root ganglia	w
+HOMEOBOX	fly	FBgn0261930	vnd	P22808	121	385	Homeobox protein vnd (Homeobox protein NK-2) (Protein ventra	w
+HOMEOBOX	fly	FBgn0263511	Vsx1	Q9W4B2	95	353	FI01127p (Visual system homeobox 1, isoform A) (Visual syste	w
+HOMEOBOX	fly	FBgn0263512	Vsx2	X2JDS9	124	472	Visual system homeobox 2 (Ceh-10 homeodomain-containing homo	w
+HOMEOBOX	human	A0A1W2PPF3	DUXB	A0A1W2PPF3	0	11	Double homeobox protein B	w
+HOMEOBOX	human	A0A1W2PPM1	CPHXL	A0A1W2PPM1	29	334	Cytoplasmic polyadenylated homeobox-like protein (Cytoplasmi	w
+HOMEOBOX	human	A2RU54	HMX2	A2RU54	107	363	Homeobox protein HMX2 (Homeobox protein H6 family member 2)	w
+HOMEOBOX	human	A6NCS4	NKX2-6	A6NCS4	121	361	Homeobox protein Nkx-2.6 (Homeobox protein NK-2 homolog F)	w
+HOMEOBOX	human	A6NDR6	MEIS3P1	A6NDR6	1	3	Putative homeobox protein Meis3-like 1	w
+HOMEOBOX	human	A6NFQ7	DPRX	A6NFQ7	41	346	Divergent paired-related homeobox	w
+HOMEOBOX	human	A6NHT5	HMX3	A6NHT5	111	373	Homeobox protein HMX3 (Homeobox protein H6 family member 3) 	w
+HOMEOBOX	human	A6NJ46	NKX6-3	A6NJ46	104	386	Homeobox protein Nkx-6.3	w
+HOMEOBOX	human	A6NJG6	ARGFX	A6NJG6	59	344	Arginine-fifty homeobox	w
+HOMEOBOX	human	A6NJT0	UNCX	A6NJT0	120	420	Homeobox protein unc-4 homolog (Homeobox protein Uncx4.1)	w
+HOMEOBOX	human	A6NLW8	DUXA	A6NLW8	43	396	Double homeobox protein A	w
+HOMEOBOX	human	A6NMT0	DBX1	A6NMT0	150	359	Homeobox protein DBX1 (Developing brain homeobox protein 1)	w
+HOMEOBOX	human	A6NNA5	DRGX	A6NNA5	142	377	Dorsal root ganglia homeobox protein (Paired-related homeobo	w
+HOMEOBOX	human	A8K0S8	MEIS3P2	A8K0S8	1	8	Putative homeobox protein Meis3-like 2	w
+HOMEOBOX	human	A8K830	POU2AF3	A8K830	4	7	POU class 2 homeobox associating factor 3 (Cancer susceptibi	w
+HOMEOBOX	human	A8MTQ0	NOTO	A8MTQ0	60	370	Homeobox protein notochord	w
+HOMEOBOX	human	A8MZ59	LEUTX	A8MZ59	3	55	Paired-like homeodomain transcription factor LEUTX (Leucine-	w
+HOMEOBOX	human	D6RAR5	?	D6RAR5	1	2	Homeobox domain-containing protein	w
+HOMEOBOX	human	E9PGG2	ANHX	E9PGG2	5	13	Anomalous homeobox protein	w
+HOMEOBOX	human	F5H0K0	HNF1A	F5H0K0	9	63	HNF1 homeobox A	w
+HOMEOBOX	human	O00470	MEIS1	O00470	65	412	Homeobox protein Meis1	w
+HOMEOBOX	human	O14529	CUX2	O14529	19	74	Homeobox protein cut-like 2 (Homeobox protein cux-2)	w
+HOMEOBOX	human	O14627	CDX4	O14627	80	367	Homeobox protein CDX-4 (Caudal-type homeobox protein 4)	w
+HOMEOBOX	human	O14770	MEIS2	O14770	77	467	Homeobox protein Meis2 (Meis1-related protein 1)	w
+HOMEOBOX	human	O14813	PHOX2A	O14813	176	426	Paired mesoderm homeobox protein 2A (ARIX1 homeodomain prote	w
+HOMEOBOX	human	O15266	SHOX	O15266	148	388	Short stature homeobox protein (Pseudoautosomal homeobox-con	w
+HOMEOBOX	human	O15499	GSC2	O15499	19	93	Homeobox protein goosecoid-2 (GSC-2) (Homeobox protein goose	w
+HOMEOBOX	human	O15522	NKX2-8	O15522	106	360	Homeobox protein Nkx-2.8 (Homeobox protein NK-2 homolog H)	w
+HOMEOBOX	human	O43186	CRX	O43186	155	502	Cone-rod homeobox protein	w
+HOMEOBOX	human	O43248	HOXC11	O43248	136	435	Homeobox protein Hox-C11 (Homeobox protein Hox-3H)	w
+HOMEOBOX	human	O43364	HOXA2	O43364	120	392	Homeobox protein Hox-A2 (Homeobox protein Hox-1K)	w
+HOMEOBOX	human	O43365	HOXA3	O43365	95	412	Homeobox protein Hox-A3 (Homeobox protein Hox-1E)	w
+HOMEOBOX	human	O43711	TLX3	O43711	189	651	T-cell leukemia homeobox protein 3 (Homeobox protein Hox-11L	w
+HOMEOBOX	human	O43763	TLX2	O43763	156	502	T-cell leukemia homeobox protein 2 (Homeobox protein Hox-11L	w
+HOMEOBOX	human	O43812	DUX1	O43812	60	336	Double homeobox protein 1	w
+HOMEOBOX	human	O60315	ZEB2	O60315	40	168	Zinc finger E-box-binding homeobox 2 (Smad-interacting prote	w
+HOMEOBOX	human	O60393	NOBOX	O60393	4	15	Homeobox protein NOBOX	w
+HOMEOBOX	human	O60422	ONECUT3	O60422	85	338	One cut domain family member 3 (One cut homeobox 3) (Transcr	w
+HOMEOBOX	human	O60479	DLX3	O60479	99	393	Homeobox protein DLX-3	w
+HOMEOBOX	human	O60663	LMX1B	O60663	71	394	LIM homeobox transcription factor 1-beta (LIM/homeobox prote	w
+HOMEOBOX	human	O60902	SHOX2	O60902	187	424	Short stature homeobox protein 2 (Homeobox protein Og12X) (P	w
+HOMEOBOX	human	O75360	PROP1	O75360	45	124	Homeobox protein prophet of Pit-1 (PROP-1) (Pituitary-specif	w
+HOMEOBOX	human	O75364	PITX3	O75364	114	402	Pituitary homeobox 3 (Homeobox protein PITX3) (Paired-like h	w
+HOMEOBOX	human	O95076	ALX3	O95076	176	474	Homeobox protein aristaless-like 3 (Proline-rich transcripti	w
+HOMEOBOX	human	O95096	NKX2-2	O95096	132	442	Homeobox protein Nkx-2.2 (Homeobox protein NK-2 homolog B)	w
+HOMEOBOX	human	O95231	VENTX	O95231	22	115	Homeobox protein VENTX (VENT homeobox homolog) (VENT-like ho	w
+HOMEOBOX	human	O95343	SIX3	O95343	71	388	Homeobox protein SIX3 (Sine oculis homeobox homolog 3)	w
+HOMEOBOX	human	O95475	SIX6	O95475	80	428	Homeobox protein SIX6 (Homeodomain protein OPTX2) (Optic hom	w
+HOMEOBOX	human	O95948	ONECUT2	O95948	104	382	One cut domain family member 2 (Hepatocyte nuclear factor 6-	w
+HOMEOBOX	human	P09016	HOXD4	P09016	96	428	Homeobox protein Hox-D4 (Homeobox protein HHO.C13) (Homeobox	w
+HOMEOBOX	human	P09017	HOXC4	P09017	104	418	Homeobox protein Hox-C4 (Homeobox protein CP19) (Homeobox pr	w
+HOMEOBOX	human	P09067	HOXB5	P09067	92	492	Homeobox protein Hox-B5 (Homeobox protein HHO.C10) (Homeobox	w
+HOMEOBOX	human	P09629	HOXB7	P09629	83	436	Homeobox protein Hox-B7 (Homeobox protein HHO.C1) (Homeobox 	w
+HOMEOBOX	human	P09630	HOXC6	P09630	93	409	Homeobox protein Hox-C6 (Homeobox protein CP25) (Homeobox pr	w
+HOMEOBOX	human	P0C7M4	RHOXF2B	P0C7M4	5	32	Rhox homeobox family member 2B	w
+HOMEOBOX	human	P0CJ85	DUX4L2	P0CJ85	58	520	Double homeobox protein 4-like protein 2	w
+HOMEOBOX	human	P0CJ86	DUX4L3	P0CJ86	50	326	Double homeobox protein 4-like protein 3	w
+HOMEOBOX	human	P0CJ87	DUX4L4	P0CJ87	58	336	Double homeobox protein 4-like protein 4	w
+HOMEOBOX	human	P0CJ88	DUX4L5	P0CJ88	47	326	Double homeobox protein 4-like protein 5	w
+HOMEOBOX	human	P0CJ89	DUX4L6	P0CJ89	49	326	Double homeobox protein 4-like protein 6	w
+HOMEOBOX	human	P0CJ90	DUX4L7	P0CJ90	44	327	Double homeobox protein 4-like protein 7	w
+HOMEOBOX	human	P0DV77	TPRX2	P0DV77	84	331	Tetrapeptide repeat homeobox protein 2	w
+HOMEOBOX	human	P13378	HOXD8	P13378	90	407	Homeobox protein Hox-D8 (Homeobox protein Hox-4E) (Homeobox 	w
+HOMEOBOX	human	P14651	HOXB3	P14651	99	408	Homeobox protein Hox-B3 (Homeobox protein Hox-2.7) (Homeobox	w
+HOMEOBOX	human	P14652	HOXB2	P14652	113	394	Homeobox protein Hox-B2 (Homeobox protein Hox-2.8) (Homeobox	w
+HOMEOBOX	human	P14653	HOXB1	P14653	111	433	Homeobox protein Hox-B1 (Homeobox protein Hox-2I)	w
+HOMEOBOX	human	P17481	HOXB8	P17481	89	408	Homeobox protein Hox-B8 (Homeobox protein Hox-2.4) (Homeobox	w
+HOMEOBOX	human	P17482	HOXB9	P17482	88	500	Homeobox protein Hox-B9 (Homeobox protein Hox-2.5) (Homeobox	w
+HOMEOBOX	human	P17483	HOXB4	P17483	79	402	Homeobox protein Hox-B4 (Homeobox protein Hox-2.6) (Homeobox	w
+HOMEOBOX	human	P17509	HOXB6	P17509	79	439	Homeobox protein Hox-B6 (Homeobox protein Hox-2.2) (Homeobox	w
+HOMEOBOX	human	P19622	EN2	P19622	148	358	Homeobox protein engrailed-2 (Homeobox protein en-2) (Hu-En-	w
+HOMEOBOX	human	P20264	POU3F3	P20264	137	391	POU domain, class 3, transcription factor 3 (Brain-specific 	w
+HOMEOBOX	human	P20265	POU3F2	P20265	119	378	POU domain, class 3, transcription factor 2 (Brain-specific 	w
+HOMEOBOX	human	P20719	HOXA5	P20719	95	491	Homeobox protein Hox-A5 (Homeobox protein Hox-1C)	w
+HOMEOBOX	human	P28356	HOXD9	P28356	100	382	Homeobox protein Hox-D9 (Homeobox protein Hox-4C) (Homeobox 	w
+HOMEOBOX	human	P28358	HOXD10	P28358	111	385	Homeobox protein Hox-D10 (Homeobox protein Hox-4D) (Homeobox	w
+HOMEOBOX	human	P28360	MSX1	P28360	136	429	Homeobox protein MSX-1 (Homeobox protein Hox-7) (Msh homeobo	w
+HOMEOBOX	human	P31249	HOXD3	P31249	92	435	Homeobox protein Hox-D3 (Homeobox protein Hox-4A)	w
+HOMEOBOX	human	P31260	HOXA10	P31260	128	425	Homeobox protein Hox-A10 (Homeobox protein Hox-1.8) (Homeobo	w
+HOMEOBOX	human	P31267	HOXA6	P31267	64	382	Homeobox protein Hox-A6 (Homeobox protein Hox-1B)	w
+HOMEOBOX	human	P31268	HOXA7	P31268	78	408	Homeobox protein Hox-A7 (Homeobox protein Hox 1.1) (Homeobox	w
+HOMEOBOX	human	P31269	HOXA9	P31269	110	471	Homeobox protein Hox-A9 (Homeobox protein Hox-1G)	w
+HOMEOBOX	human	P31270	HOXA11	P31270	91	420	Homeobox protein Hox-A11 (Homeobox protein Hox-1I)	w
+HOMEOBOX	human	P31271	HOXA13	P31271	80	367	Homeobox protein Hox-A13 (Homeobox protein Hox-1J)	w
+HOMEOBOX	human	P31273	HOXC8	P31273	116	498	Homeobox protein Hox-C8 (Homeobox protein Hox-3A)	w
+HOMEOBOX	human	P31274	HOXC9	P31274	116	432	Homeobox protein Hox-C9 (Homeobox protein Hox-3B)	w
+HOMEOBOX	human	P31275	HOXC12	P31275	69	348	Homeobox protein Hox-C12 (Homeobox protein Hox-3F)	w
+HOMEOBOX	human	P31276	HOXC13	P31276	76	408	Homeobox protein Hox-C13 (Homeobox protein Hox-3G)	w
+HOMEOBOX	human	P31277	HOXD11	P31277	63	362	Homeobox protein Hox-D11 (Homeobox protein Hox-4F)	w
+HOMEOBOX	human	P31314	TLX1	P31314	124	537	T-cell leukemia homeobox protein 1 (Homeobox protein Hox-11)	w
+HOMEOBOX	human	P32242	OTX1	P32242	166	541	Homeobox protein OTX1 (Orthodenticle homolog 1)	w
+HOMEOBOX	human	P32243	OTX2	P32243	175	472	Homeobox protein OTX2 (Orthodenticle homolog 2)	w
+HOMEOBOX	human	P35452	HOXD12	P35452	69	366	Homeobox protein Hox-D12 (Homeobox protein Hox-4H)	w
+HOMEOBOX	human	P35453	HOXD13	P35453	92	473	Homeobox protein Hox-D13 (Homeobox protein Hox-4I)	w
+HOMEOBOX	human	P35548	MSX2	P35548	175	587	Homeobox protein MSX-2 (Homeobox protein Hox-8)	w
+HOMEOBOX	human	P37275	ZEB1	P37275	49	286	Zinc finger E-box-binding homeobox 1 (NIL-2-A zinc finger pr	w
+HOMEOBOX	human	P39880	CUX1	P39880	48	228	Homeobox protein cut-like 1 (CCAAT displacement protein) (CD	w
+HOMEOBOX	human	P40424	PBX1	P40424	125	576	Pre-B-cell leukemia transcription factor 1 (Homeobox protein	w
+HOMEOBOX	human	P40425	PBX2	P40425	95	493	Pre-B-cell leukemia transcription factor 2 (Homeobox protein	w
+HOMEOBOX	human	P40426	PBX3	P40426	93	492	Pre-B-cell leukemia transcription factor 3 (Homeobox protein	w
+HOMEOBOX	human	P43699	NKX2-1	P43699	165	576	Homeobox protein Nkx-2.1 (Homeobox protein NK-2 homolog A) (	w
+HOMEOBOX	human	P47902	CDX1	P47902	111	444	Homeobox protein CDX-1 (Caudal-type homeobox protein 1)	w
+HOMEOBOX	human	P48742	LHX1	P48742	65	464	LIM/homeobox protein Lhx1 (LIM homeobox protein 1) (Homeobox	w
+HOMEOBOX	human	P49335	POU3F4	P49335	127	351	POU domain, class 3, transcription factor 4 (Brain-specific 	w
+HOMEOBOX	human	P49639	HOXA1	P49639	147	713	Homeobox protein Hox-A1 (Homeobox protein Hox-1F)	w
+HOMEOBOX	human	P49640	EVX1	P49640	111	360	Homeobox even-skipped homolog protein 1 (EVX-1)	w
+HOMEOBOX	human	P50219	MNX1	P50219	119	402	Motor neuron and pancreas homeobox protein 1 (Homeobox prote	w
+HOMEOBOX	human	P50221	MEOX1	P50221	105	494	Homeobox protein MOX-1 (Mesenchyme homeobox 1)	w
+HOMEOBOX	human	P50222	MEOX2	P50222	155	1039	Homeobox protein MOX-2 (Growth arrest-specific homeobox) (Me	w
+HOMEOBOX	human	P50458	LHX2	P50458	76	526	LIM/homeobox protein Lhx2 (Homeobox protein LH-2) (LIM homeo	w
+HOMEOBOX	human	P52945	PDX1	P52945	95	398	Pancreas/duodenum homeobox protein 1 (PDX-1) (Glucose-sensit	w
+HOMEOBOX	human	P52951	GBX2	P52951	102	415	Homeobox protein GBX-2 (Gastrulation and brain-specific home	w
+HOMEOBOX	human	P52952	NKX2-5	P52952	156	452	Homeobox protein Nkx-2.5 (Cardiac-specific homeobox) (Homeob	w
+HOMEOBOX	human	P52954	LBX1	P52954	130	392	Transcription factor LBX1 (Ladybird homeobox protein homolog	w
+HOMEOBOX	human	P54821	PRRX1	P54821	136	408	Paired mesoderm homeobox protein 1 (Homeobox protein PHOX1) 	w
+HOMEOBOX	human	P55347	PKNOX1	P55347	82	438	Homeobox protein PKNOX1 (Homeobox protein PREP-1) (PBX/knott	w
+HOMEOBOX	human	P56177	DLX1	P56177	95	377	Homeobox protein DLX-1	w
+HOMEOBOX	human	P56178	DLX5	P56178	102	410	Homeobox protein DLX-5	w
+HOMEOBOX	human	P56179	DLX6	P56179	76	381	Homeobox protein DLX-6	w
+HOMEOBOX	human	P56915	GSC	P56915	154	428	Homeobox protein goosecoid	w
+HOMEOBOX	human	P58304	VSX2	P58304	107	393	Visual system homeobox 2 (Ceh-10 homeodomain-containing homo	w
+HOMEOBOX	human	P78337	PITX1	P78337	135	575	Pituitary homeobox 1 (Hindlimb-expressed homeobox protein ba	w
+HOMEOBOX	human	P78367	NKX3-2	P78367	117	376	Homeobox protein Nkx-3.2 (Bagpipe homeobox protein homolog 1	w
+HOMEOBOX	human	P78411	IRX5	P78411	110	391	Iroquois-class homeodomain protein IRX-5 (Homeodomain protei	w
+HOMEOBOX	human	P78412	IRX6	P78412	108	352	Iroquois-class homeodomain protein IRX-6 (Homeodomain protei	w
+HOMEOBOX	human	P78413	IRX4	P78413	108	409	Iroquois-class homeodomain protein IRX-4 (Homeodomain protei	w
+HOMEOBOX	human	P78414	IRX1	P78414	142	418	Iroquois-class homeodomain protein IRX-1 (Homeodomain protei	w
+HOMEOBOX	human	P78415	IRX3	P78415	124	375	Iroquois-class homeodomain protein IRX-3 (Homeodomain protei	w
+HOMEOBOX	human	P78426	NKX6-1	P78426	101	366	Homeobox protein Nkx-6.1 (Homeobox protein NK-6 homolog A)	w
+HOMEOBOX	human	P84550	SKOR1	P84550	2	8	SKI family transcriptional corepressor 1 (Functional Smad-su	w
+HOMEOBOX	human	Q00056	HOXA4	Q00056	68	395	Homeobox protein Hox-A4 (Homeobox protein Hox-1.4) (Homeobox	w
+HOMEOBOX	human	Q00444	HOXC5	Q00444	78	434	Homeobox protein Hox-C5 (Homeobox protein CP11) (Homeobox pr	w
+HOMEOBOX	human	Q01851	POU4F1	Q01851	98	356	POU domain, class 4, transcription factor 1 (Brain-specific 	w
+HOMEOBOX	human	Q03014	HHEX	Q03014	140	471	Hematopoietically-expressed homeobox protein HHEX (Homeobox 	w
+HOMEOBOX	human	Q03828	EVX2	Q03828	97	349	Homeobox even-skipped homolog protein 2 (EVX-2)	w
+HOMEOBOX	human	Q04741	EMX1	Q04741	108	378	Homeobox protein EMX1 (Empty spiracles homolog 1) (Empty spi	w
+HOMEOBOX	human	Q04743	EMX2	Q04743	129	445	Homeobox protein EMX2 (Empty spiracles homolog 2) (Empty spi	w
+HOMEOBOX	human	Q05925	EN1	Q05925	173	455	Homeobox protein engrailed-1 (Homeobox protein en-1) (Hu-En-	w
+HOMEOBOX	human	Q07687	DLX2	Q07687	99	396	Homeobox protein DLX-2	w
+HOMEOBOX	human	Q12837	POU4F2	Q12837	103	433	POU domain, class 4, transcription factor 2 (Brain-specific 	w
+HOMEOBOX	human	Q14549	GBX1	Q14549	86	364	Homeobox protein GBX-1 (Gastrulation and brain-specific home	w
+HOMEOBOX	human	Q14774	HLX	Q14774	132	400	H2.0-like homeobox protein (Homeobox protein HB24) (Homeobox	w
+HOMEOBOX	human	Q14863	POU6F1	Q14863	96	336	POU domain, class 6, transcription factor 1 (Brain-specific 	w
+HOMEOBOX	human	Q15270	NKX1-1	Q15270	91	335	NK1 transcription factor-related protein 1 (Homeobox protein	w
+HOMEOBOX	human	Q15319	POU4F3	Q15319	118	408	POU domain, class 4, transcription factor 3 (Brain-specific 	w
+HOMEOBOX	human	Q15475	SIX1	Q15475	108	535	Homeobox protein SIX1 (Sine oculis homeobox homolog 1)	w
+HOMEOBOX	human	Q15583	TGIF1	Q15583	103	407	Homeobox protein TGIF1 (5'-TG-3'-interacting factor 1)	w
+HOMEOBOX	human	Q15699	ALX1	Q15699	143	398	ALX homeobox protein 1 (Cartilage homeoprotein 1) (CART-1)	w
+HOMEOBOX	human	Q2M1V0	ISX	Q2M1V0	105	395	Intestine-specific homeobox (RAX-like homeobox)	w
+HOMEOBOX	human	Q2VWA4	SKOR2	Q2VWA4	1	14	SKI family transcriptional corepressor 2 (Functional Smad-su	w
+HOMEOBOX	human	Q3B8N5	PROX2	Q3B8N5	73	335	Prospero homeobox protein 2 (Homeobox prospero-like protein 	w
+HOMEOBOX	human	Q3C1V8	BSX	Q3C1V8	107	361	Brain-specific homeobox protein homolog	w
+HOMEOBOX	human	Q5SQQ9	VAX1	Q5SQQ9	115	365	Ventral anterior homeobox 1	w
+HOMEOBOX	human	Q5XKR4	OTP	Q5XKR4	175	422	Homeobox protein orthopedia	w
+HOMEOBOX	human	Q68G74	LHX8	Q68G74	86	399	LIM/homeobox protein Lhx8 (LIM homeobox protein 8)	w
+HOMEOBOX	human	Q6IQ32	ADNP2	Q6IQ32	21	115	Activity-dependent neuroprotector homeobox protein 2 (ADNP h	w
+HOMEOBOX	human	Q6NSW7	NANOGP8	Q6NSW7	69	390	Homeobox protein NANOGP8	w
+HOMEOBOX	human	Q6NT76	HMBOX1	Q6NT76	130	502	Homeobox-containing protein 1 (Homeobox telomere-binding pro	w
+HOMEOBOX	human	Q6RFH8	DUX4L9	Q6RFH8	47	329	Double homeobox protein 4C (Double homeobox protein 4, centr	w
+HOMEOBOX	human	Q6XYB7	LBX2	Q6XYB7	136	372	Transcription factor LBX2 (Ladybird homeobox 2) (Ladybird ho	w
+HOMEOBOX	human	Q6ZNG2	DBX2	Q6ZNG2	127	370	Homeobox protein DBX2 (Developing brain homeobox protein 2)	w
+HOMEOBOX	human	Q7Z353	HDX	Q7Z353	4	35	Highly divergent homeobox	w
+HOMEOBOX	human	Q7Z5D8	NANOGNB	Q7Z5D8	1	15	NANOG neighbor homeobox (Homeobox protein C14)	w
+HOMEOBOX	human	Q8IUE0	TGIF2LY	Q8IUE0	86	388	Homeobox protein TGIF2LY (TGF-beta-induced transcription fac	w
+HOMEOBOX	human	Q8IUE1	TGIF2LX	Q8IUE1	89	401	Homeobox protein TGIF2LX (TGF-beta-induced transcription fac	w
+HOMEOBOX	human	Q8IX15	HOMEZ	Q8IX15	45	180	Homeobox and leucine zipper protein Homez (Homeodomain leuci	w
+HOMEOBOX	human	Q8IYA7	MKX	Q8IYA7	112	347	Homeobox protein Mohawk	w
+HOMEOBOX	human	Q8N196	SIX5	Q8N196	12	62	Homeobox protein SIX5 (DM locus-associated homeodomain prote	w
+HOMEOBOX	human	Q8N693	ESX1	Q8N693	88	372	Homeobox protein ESX1 (Extraembryonic, spermatogenesis, home	w
+HOMEOBOX	human	Q8N7R0	NANOGP1	Q8N7R0	44	328	Putative homeobox protein NANOG2	w
+HOMEOBOX	human	Q8N7U7	TPRX1	Q8N7U7	62	350	Tetra-peptide repeat homeobox protein 1	w
+HOMEOBOX	human	Q8NFW5	DMBX1	Q8NFW5	141	348	Diencephalon/mesencephalon homeobox protein 1 (Orthodenticle	w
+HOMEOBOX	human	Q8NHV9	RHOXF1	Q8NHV9	65	356	Rhox homeobox family member 1 (Ovary-, testis- and epididymi	w
+HOMEOBOX	human	Q8TAU0	NKX2-3	Q8TAU0	165	390	Homeobox protein Nkx-2.3 (Homeobox protein NK-2 homolog C)	w
+HOMEOBOX	human	Q8TE12	LMX1A	Q8TE12	63	371	LIM homeobox transcription factor 1-alpha (LIM/homeobox prot	w
+HOMEOBOX	human	Q92786	PROX1	Q92786	29	66	Prospero homeobox protein 1 (Homeobox prospero-like protein 	w
+HOMEOBOX	human	Q92826	HOXB13	Q92826	70	393	Homeobox protein Hox-B13	w
+HOMEOBOX	human	Q92988	DLX4	Q92988	77	358	Homeobox protein DLX-4 (Beta protein 1) (Homeobox protein DL	w
+HOMEOBOX	human	Q969G2	LHX4	Q969G2	59	506	LIM/homeobox protein Lhx4 (LIM homeobox protein 4)	w
+HOMEOBOX	human	Q96IS3	RAX2	Q96IS3	118	410	Retina and anterior neural fold homeobox protein 2 (Q50-type	w
+HOMEOBOX	human	Q96KN3	PKNOX2	Q96KN3	84	381	Homeobox protein PKNOX2 (Homeobox protein PREP-2) (PBX/knott	w
+HOMEOBOX	human	Q96PT3	DUX5	Q96PT3	1	9	Double homeobox protein 5	w
+HOMEOBOX	human	Q96PT4	DUX3	Q96PT4	1	13	Putative double homeobox protein 3	w
+HOMEOBOX	human	Q96QS3	ARX	Q96QS3	162	375	Homeobox protein ARX (Aristaless-related homeobox)	w
+HOMEOBOX	human	Q99453	PHOX2B	Q99453	138	357	Paired mesoderm homeobox protein 2B (Neuroblastoma Phox) (NB	w
+HOMEOBOX	human	Q99626	CDX2	Q99626	115	436	Homeobox protein CDX-2 (CDX-3) (Caudal-type homeobox protein	w
+HOMEOBOX	human	Q99687	MEIS3	Q99687	60	361	Homeobox protein Meis3 (Meis1-related protein 2)	w
+HOMEOBOX	human	Q99697	PITX2	Q99697	111	457	Pituitary homeobox 2 (ALL1-responsive protein ARP1) (Homeobo	w
+HOMEOBOX	human	Q99801	NKX3-1	Q99801	104	438	Homeobox protein Nkx-3.1 (Homeobox protein NK-3 homolog A)	w
+HOMEOBOX	human	Q99811	PRRX2	Q99811	172	422	Paired mesoderm homeobox protein 2 (Paired-related homeobox 	w
+HOMEOBOX	human	Q9BPY8	HOPX	Q9BPY8	13	58	Homeodomain-only protein (Lung cancer-associated Y protein) 	w
+HOMEOBOX	human	Q9BQY4	RHOXF2	Q9BQY4	23	125	Rhox homeobox family member 2 (Paired-like homeobox protein 	w
+HOMEOBOX	human	Q9BYU1	PBX4	Q9BYU1	94	436	Pre-B-cell leukemia transcription factor 4 (Homeobox protein	w
+HOMEOBOX	human	Q9BZE3	BARHL1	Q9BZE3	114	397	BarH-like 1 homeobox protein	w
+HOMEOBOX	human	Q9BZI1	IRX2	Q9BZI1	130	439	Iroquois-class homeodomain protein IRX-2 (Homeodomain protei	w
+HOMEOBOX	human	Q9BZM3	GSX2	Q9BZM3	82	352	GS homeobox 2 (Genetic-screened homeobox 2) (Homeobox protei	w
+HOMEOBOX	human	Q9C056	NKX6-2	Q9C056	97	392	Homeobox protein Nkx-6.2 (Homeobox protein NK-6 homolog B)	w
+HOMEOBOX	human	Q9C0A1	ZFHX2	Q9C0A1	1	64	Zinc finger homeobox protein 2 (Zinc finger homeodomain prot	w
+HOMEOBOX	human	Q9GZN2	TGIF2	Q9GZN2	90	397	Homeobox protein TGIF2 (5'-TG-3'-interacting factor 2) (TGF-	w
+HOMEOBOX	human	Q9GZZ0	HOXD1	Q9GZZ0	83	393	Homeobox protein Hox-D1 (Homeobox protein Hox-GG)	w
+HOMEOBOX	human	Q9H161	ALX4	Q9H161	157	453	Homeobox protein aristaless-like 4	w
+HOMEOBOX	human	Q9H2C1	LHX5	Q9H2C1	51	353	LIM/homeobox protein Lhx5 (LIM homeobox protein 5)	w
+HOMEOBOX	human	Q9H2P0	ADNP	Q9H2P0	64	340	Activity-dependent neuroprotector homeobox protein (Activity	w
+HOMEOBOX	human	Q9H2W2	MIXL1	Q9H2W2	105	373	Homeobox protein MIXL1 (Homeodomain protein MIX) (hMix) (MIX	w
+HOMEOBOX	human	Q9H2Z4	NKX2-4	Q9H2Z4	114	373	Homeobox protein Nkx-2.4 (Homeobox protein NK-2 homolog D)	w
+HOMEOBOX	human	Q9H4I2	ZHX3	Q9H4I2	30	106	Zinc fingers and homeoboxes protein 3 (Triple homeobox prote	w
+HOMEOBOX	human	Q9H4S2	GSX1	Q9H4S2	108	410	GS homeobox 1 (Homeobox protein GSH-1)	w
+HOMEOBOX	human	Q9H9S0	NANOG	Q9H9S0	96	642	Homeobox protein NANOG (Homeobox transcription factor Nanog)	w
+HOMEOBOX	human	Q9HB31	SEBOX	Q9HB31	69	373	Homeobox protein SEBOX (Homeobox OG-9) (Skin-, embryo-, brai	w
+HOMEOBOX	human	Q9HBU1	BARX1	Q9HBU1	102	378	Homeobox protein BarH-like 1	w
+HOMEOBOX	human	Q9NP08	HMX1	Q9NP08	92	334	Homeobox protein HMX1 (Homeobox protein H6)	w
+HOMEOBOX	human	Q9NPC8	SIX2	Q9NPC8	83	431	Homeobox protein SIX2 (Sine oculis homeobox homolog 2)	w
+HOMEOBOX	human	Q9NQ69	LHX9	Q9NQ69	53	357	LIM/homeobox protein Lhx9 (LIM homeobox protein 9)	w
+HOMEOBOX	human	Q9NY43	BARHL2	Q9NY43	98	343	BarH-like 2 homeobox protein	w
+HOMEOBOX	human	Q9NYD6	HOXC10	Q9NYD6	97	424	Homeobox protein Hox-C10 (Homeobox protein Hox-3I)	w
+HOMEOBOX	human	Q9NZR4	VSX1	Q9NZR4	124	431	Visual system homeobox 1 (Homeodomain protein RINX) (Retinal	w
+HOMEOBOX	human	Q9UBC0	ONECUT1	Q9UBC0	92	380	Hepatocyte nuclear factor 6 (HNF-6) (One cut domain family m	w
+HOMEOBOX	human	Q9UBR4	LHX3	Q9UBR4	93	530	LIM/homeobox protein Lhx3 (LIM homeobox protein 3)	w
+HOMEOBOX	human	Q9UBX0	HESX1	Q9UBX0	123	361	Homeobox expressed in ES cells 1 (Homeobox protein ANF) (hAn	w
+HOMEOBOX	human	Q9UBX2	DUX4	Q9UBX2	60	546	Double homeobox protein 4 (Double homeobox protein 10)	w
+HOMEOBOX	human	Q9UD57	NKX1-2	Q9UD57	73	342	NK1 transcription factor-related protein 2 (Homeobox protein	w
+HOMEOBOX	human	Q9UIU6	SIX4	Q9UIU6	15	78	Homeobox protein SIX4 (Sine oculis homeobox homolog 4)	w
+HOMEOBOX	human	Q9UIW0	VAX2	Q9UIW0	72	357	Ventral anterior homeobox 2	w
+HOMEOBOX	human	Q9UMQ3	BARX2	Q9UMQ3	144	373	Homeobox protein BarH-like 2	w
+HOMEOBOX	human	Q9UPM6	LHX6	Q9UPM6	91	444	LIM/homeobox protein Lhx6 (LIM homeobox protein 6) (LIM/home	w
+HOMEOBOX	human	Q9Y2V3	RAX	Q9Y2V3	152	413	Retinal homeobox protein Rx (Retina and anterior neural fold	w
+HOMEOBOX	human	V9GYH0	?	V9GYH0	0	11	Homeobox domain-containing protein	w
+HOMEOBOX	worm	A3FPJ2	ceh-63	A3FPJ2	6	77	Homeobox protein ceh-63	w
+HOMEOBOX	worm	A7DTF5	CELE_Y56A3A.7	A7DTF5	2	4	Homeobox protein cut-like	w
+HOMEOBOX	worm	G5EBU4	zag-1	G5EBU4	4	35	Zinc finger E-box-binding homeobox protein zag-1	w
+HOMEOBOX	worm	G5EC36	lim-7	G5EC36	5	34	LIM/homeobox protein lim-7	w
+HOMEOBOX	worm	G5EC89	ceh-17	G5EC89	7	62	Homeobox protein ceh-17	w
+HOMEOBOX	worm	G5ECT8	ceh-2	G5ECT8	1	12	Homeobox protein ceh-2	w
+HOMEOBOX	worm	G5EE18	ceh-28	G5EE18	5	15	Homeobox protein ceh-28	w
+HOMEOBOX	worm	G5EE86	ttx-3	G5EE86	1	6	LIM/homeobox protein ttx-3	w
+HOMEOBOX	worm	G5EEA1	lim-4	G5EEA1	3	20	LIM/homeobox protein lim-4	w
+HOMEOBOX	worm	G5EFY5	nob-1	G5EFY5	5	24	Homeobox protein nob-1	w
+HOMEOBOX	worm	I7KSD3	CELE_F45D3.2	I7KSD3	1	9	Homeobox domain-containing protein	w
+HOMEOBOX	worm	L8E946	unc-42	L8E946	28	504	Homeobox protein unc-42	w
+HOMEOBOX	worm	O01996	eyg-1	O01996	2	68	Homeobox domain-containing protein	w
+HOMEOBOX	worm	O02224	ceh-79	O02224	0	3	Homeobox domain-containing protein	w
+HOMEOBOX	worm	O16747	ceh-81	O16747	0	1	Homeobox domain-containing protein	w
+HOMEOBOX	worm	O16748	ceh-82	O16748	0	2	Homeobox domain-containing protein	w
+HOMEOBOX	worm	O17102	ceh-86	O17102	0	8	Homeobox domain-containing protein	w
+HOMEOBOX	worm	O17184	ceh-87	O17184	0	5	Homeobox domain-containing protein	w
+HOMEOBOX	worm	O17894	unc-39	O17894	3	29	Homeobox protein unc-39	w
+HOMEOBOX	worm	O44462	ceh-53	O44462	0	12	Homeobox domain-containing protein	w
+HOMEOBOX	worm	O61890	CELE_K10C9.7	O61890	0	2	Homeobox domain-containing protein	w
+HOMEOBOX	worm	P10038	mab-5	P10038	11	84	Homeobox protein mab-5	w
+HOMEOBOX	worm	P17486	egl-5	P17486	6	188	Homeobox protein egl-5	w
+HOMEOBOX	worm	P17487	ceh-12	P17487	1	8	Homeobox protein ceh-12	w
+HOMEOBOX	worm	P17488	ceh-13	P17488	4	8	Homeobox protein ceh-13	w
+HOMEOBOX	worm	P20268	ceh-6	P20268	3	48	Homeobox protein ceh-6	w
+HOMEOBOX	worm	P20269	ceh-5	P20269	0	7	Homeobox protein ceh-5	w
+HOMEOBOX	worm	P20270	ceh-7	P20270	0	7	Homeobox protein ceh-7	w
+HOMEOBOX	worm	P20271	ceh-14	P20271	21	277	LIM/homeobox protein ceh-14	w
+HOMEOBOX	worm	P26797	ceh-19	P26797	5	93	Homeobox protein ceh-19	w
+HOMEOBOX	worm	P29506	unc-4	P29506	10	139	Homeobox protein unc-4	w
+HOMEOBOX	worm	P34326	ceh-16	P34326	1	7	Homeobox protein engrailed-like ceh-16	w
+HOMEOBOX	worm	P34522	pros-1	P34522	1	5	Homeobox protein prospero homolog 1	w
+HOMEOBOX	worm	P34663	ceh-23	P34663	5	54	Homeobox protein ceh-23	w
+HOMEOBOX	worm	P34684	lin-39	P34684	17	257	Homeobox protein lin-39	w
+HOMEOBOX	worm	P34766	pal-1	P34766	5	136	Homeobox protein pal-1	w
+HOMEOBOX	worm	P41779	ceh-20	P41779	16	53	Homeobox protein ceh-20	w
+HOMEOBOX	worm	P41934	ceh-18	P41934	7	93	Homeobox protein ceh-18	w
+HOMEOBOX	worm	P41935	ceh-10	P41935	4	60	Homeobox protein ceh-10	w
+HOMEOBOX	worm	P41936	ceh-22	P41936	4	31	Homeobox protein ceh-22	w
+HOMEOBOX	worm	P52906	unc-30	P52906	2	42	Homeobox protein unc-30	w
+HOMEOBOX	worm	P53547	ceh-1	P53547	12	423	Homeobox protein ceh-1	w
+HOMEOBOX	worm	P56407	ceh-9	P56407	11	128	Homeobox protein ceh-9	w
+HOMEOBOX	worm	Q09602	ceh-62	Q09602	8	228	Homeobox protein ceh-62	w
+HOMEOBOX	worm	Q09604	vab-15	Q09604	24	582	Homeobox protein vab-15	w
+HOMEOBOX	worm	Q17788	ceh-57	Q17788	0	3	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q17792	ceh-58	Q17792	1	36	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q18273	ceh-43	Q18273	2	41	Homeobox protein ceh-43	w
+HOMEOBOX	worm	Q18533	mls-2	Q18533	42	830	Homeobox protein mls-2	w
+HOMEOBOX	worm	Q18764	ceh-75	Q18764	1	3	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q19503	ceh-40	Q19503	11	30	Homeobox protein ceh-40	w
+HOMEOBOX	worm	Q19720	ceh-38	Q19720	4	117	Homeobox protein ceh-38	w
+HOMEOBOX	worm	Q19937	tab-1	Q19937	3	67	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q21192	lim-6	Q21192	1	9	LIM/homeobox protein lim-6	w
+HOMEOBOX	worm	Q21578	pha-2	Q21578	4	9	Homeobox protein HEX homolog pha-2	w
+HOMEOBOX	worm	Q21836	alr-1	Q21836	2	5	Homeobox ARX homolog alr-1	w
+HOMEOBOX	worm	Q22459	ceh-54	Q22459	6	29	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q22810	ceh-41	Q22810	0	4	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q22811	ceh-21	Q22811	1	75	Homeobox protein ceh-21	w
+HOMEOBOX	worm	Q22812	ceh-39	Q22812	3	82	Homeobox protein ceh-39	w
+HOMEOBOX	worm	Q22909	ceh-30	Q22909	4	45	Homeobox protein ceh-30	w
+HOMEOBOX	worm	Q22910	ceh-31	Q22910	4	121	Homeobox protein ceh-31	w
+HOMEOBOX	worm	Q23175	ceh-32	Q23175	2	24	Homeobox protein ceh-32	w
+HOMEOBOX	worm	Q23269	ceh-74	Q23269	0	3	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q45EK2	ceh-60	Q45EK2	10	24	Homeobox protein ceh-60	w
+HOMEOBOX	worm	Q5FC44	ceh-99	Q5FC44	0	2	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q69YW8	ceh-90	Q69YW8	0	3	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q7K6J1	ceh-91	Q7K6J1	0	28	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q7K714	ceh-100	Q7K714	0	38	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q86DC2	ceh-93	Q86DC2	0	14	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q86MI0	dve-1	Q86MI0	3	52	Homeobox protein dve-1	w
+HOMEOBOX	worm	Q93246	dsc-1	Q93246	0	7	Homeobox protein dsc-1	w
+HOMEOBOX	worm	Q93352	ceh-36	Q93352	0	21	Homeobox protein ceh-36	w
+HOMEOBOX	worm	Q93356	ceh-37	Q93356	1	29	Homeobox protein ceh-37	w
+HOMEOBOX	worm	Q93899	vab-7	Q93899	1	37	Homeobox protein vab-7	w
+HOMEOBOX	worm	Q94165	ceh-34	Q94165	1	9	Homeobox protein ceh-34	w
+HOMEOBOX	worm	Q94166	ceh-33	Q94166	1	4	Homeobox protein ceh-33	w
+HOMEOBOX	worm	Q94398	ceh-8	Q94398	1	91	Homeobox protein ceh-8	w
+HOMEOBOX	worm	Q9BL02	ceh-44	Q9BL02	1	17	Homeobox protein cut-like ceh-44	w
+HOMEOBOX	worm	Q9N2V1	ceh-76	Q9N2V1	0	1	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q9N4L2	ceh-45	Q9N4L2	4	96	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q9N5D6	unc-62	Q9N5D6	9	99	Homeobox protein unc-62	w
+HOMEOBOX	worm	Q9NLC2	ceh-24	Q9NLC2	4	44	Homeobox protein ceh-24	w
+HOMEOBOX	worm	Q9U1R1	ceh-51	Q9U1R1	0	23	Homeobox protein ceh-51	w
+HOMEOBOX	worm	Q9U2Z0	ttx-1	Q9U2Z0	8	68	Homeobox protein ttx-1	w
+HOMEOBOX	worm	Q9XUG3	ceh-88	Q9XUG3	2	12	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q9XVN4	ceh-27	Q9XVN4	7	24	Homeobox domain-containing protein	w
+HOMEOBOX	worm	Q9XW88	php-3	Q9XW88	6	204	Homeobox protein php-3	w
+HOMEOBOX	yeast	P34161	YOX1	P34161	2	16	Homeobox protein YOX1	w
+HOMEOBOX	yeast	P41817	CUP9	P41817	2	5	Homeobox protein CUP9	w
+HOMEOBOX	yeast	P53147	TOS8	P53147	0	8	Homeobox protein TOS8	w
+HOMEOBOX	yeast	Q04116	YHP1	Q04116	1	27	Homeobox protein YHP1	w
+HOMEOBOX	zebrafish	A0A0G2KH34	tlx3a	A0A0G2KH34	2	2	T-cell leukemia homeobox protein 3	w
+HOMEOBOX	zebrafish	A0A0G2KXF6	arxb	A0A0G2KXF6	3	4	Aristaless-related homeobox b	w
+HOMEOBOX	zebrafish	A0A0R4IDM3	hoxc11b	A0A0R4IDM3	4	5	Homeobox C11b	w
+HOMEOBOX	zebrafish	A0A0R4IVX3	uncx	A0A0R4IVX3	2	6	Homeobox protein unc-4 homolog	w
+HOMEOBOX	zebrafish	A0A0R4IY89	nkx6.2	A0A0R4IY89	1	1	Homeobox protein Nkx-6.2	w
+HOMEOBOX	zebrafish	A0A2R8QPY7	tgif2	A0A2R8QPY7	1	12	Homeobox protein TGIF2	w
+HOMEOBOX	zebrafish	A0A8M1NFI3	mkxb	A0A8M1NFI3	0	7	Mohawk homeobox b	w
+HOMEOBOX	zebrafish	A0A8M1PA75	tlx3b	A0A8M1PA75	0	2	T-cell leukemia homeobox protein 3b	w
+HOMEOBOX	zebrafish	A0A8M9P3F1	pitx1	A0A8M9P3F1	0	2	Homeobox protein	w
+HOMEOBOX	zebrafish	A0A8M9QE24	zeb1b	A0A8M9QE24	0	16	Zinc finger E-box-binding homeobox 1	w
+HOMEOBOX	zebrafish	A0A8N7TEV4	pknox1.2	A0A8N7TEV4	6	7	Homeobox protein PKNOX1	w
+HOMEOBOX	zebrafish	A0A8N7UZK3	nkx2.5	A0A8N7UZK3	2	34	Homeobox protein Nkx-2.5	w
+HOMEOBOX	zebrafish	A0A8N7V0A4	hlx1	A0A8N7V0A4	0	2	H2.0-like homeobox protein	w
+HOMEOBOX	zebrafish	A0JPE5	mxtx1	A0JPE5	1	15	Mix-type homeobox gene 1	w
+HOMEOBOX	zebrafish	A1A5U3	tlx2	A1A5U3	2	2	T cell leukemia homeobox 2	w
+HOMEOBOX	zebrafish	A4IG26	six4a	A4IG26	2	5	Homeobox protein SIX4a	w
+HOMEOBOX	zebrafish	A4UU10	pbx3b	A4UU10	43	87	Pre-B-cell leukemia homeobox 3a	w
+HOMEOBOX	zebrafish	A5PLE8	cdx1b	A5PLE8	2	3	Caudal type homeobox 1 b	w
+HOMEOBOX	zebrafish	B0R107	lhx2b	B0R107	3	5	LIM/homeobox protein Lhx9	w
+HOMEOBOX	zebrafish	B0S5S7	lhx4	B0S5S7	6	14	LIM homeobox 4	w
+HOMEOBOX	zebrafish	B0S5T0	shox	B0S5T0	0	1	Short stature homeobox	w
+HOMEOBOX	zebrafish	B3DI74	six9	B3DI74	2	5	Sine oculis homeobox homolog 1a	w
+HOMEOBOX	zebrafish	B3DIJ7	six2b	B3DIJ7	1	5	Sine oculis homeobox homolog 1a	w
+HOMEOBOX	zebrafish	B7ZD71	hmx4	B7ZD71	1	4	H6 family homeobox 4	w
+HOMEOBOX	zebrafish	B8A4X8	phox2ba	B8A4X8	2	4	Paired-like homeobox 2Ba	w
+HOMEOBOX	zebrafish	E7F4J9	cux1a	E7F4J9	1	9	Homeobox protein cut-like	w
+HOMEOBOX	zebrafish	E7F5L7	hdx	E7F5L7	0	6	Highly divergent homeobox	w
+HOMEOBOX	zebrafish	E7F895	adnpb	E7F895	0	5	Activity-dependent neuroprotector homeobox b	w
+HOMEOBOX	zebrafish	E7FEH1	meox2a	E7FEH1	2	12	Homeobox protein MOX-2	w
+HOMEOBOX	zebrafish	E9QBI8	lhx2a	E9QBI8	3	4	LIM/homeobox protein Lhx9	w
+HOMEOBOX	zebrafish	F1Q4R9	meox1	F1Q4R9	0	7	Homeobox protein MOX-1	w
+HOMEOBOX	zebrafish	F1QAE1	prox1a	F1QAE1	0	1	Prospero homeobox 1a	w
+HOMEOBOX	zebrafish	F1QMZ5	zeb1a	F1QMZ5	2	11	Zinc finger E-box-binding homeobox 1 isoform X1	w
+HOMEOBOX	zebrafish	F1QTJ6	hmx2	F1QTJ6	3	5	H6 family homeobox 2	w
+HOMEOBOX	zebrafish	F1QY45	zeb2a	F1QY45	1	12	Zinc finger E-box-binding homeobox 2a	w
+HOMEOBOX	zebrafish	F1R2J1	pnx	F1R2J1	0	1	Homeobox protein pnx	w
+HOMEOBOX	zebrafish	F1R3M6	nkx3.3	F1R3M6	0	10	Homeobox protein Nkx-3.2	w
+HOMEOBOX	zebrafish	F1RAI4	nkx6.3	F1RAI4	0	1	Homeobox protein Nkx-6.3	w
+HOMEOBOX	zebrafish	F1RCJ6	mnx2b	F1RCJ6	2	5	Motor neuron and pancreas homeobox 2b	w
+HOMEOBOX	zebrafish	F6NI81	hoxc10a	F6NI81	6	11	Homeobox C10a	w
+HOMEOBOX	zebrafish	O13106	lhx1b	O13106	3	5	LIM/homeobox protein Lhx1	w
+HOMEOBOX	zebrafish	O42115	arx	O42115	2	4	Aristaless-related homeobox protein	w
+HOMEOBOX	zebrafish	O42250	vsx1	O42250	0	9	Visual system homeobox 1	w
+HOMEOBOX	zebrafish	O42365	hoxa2b	O42365	4	6	Homeobox protein Hox-A2b	w
+HOMEOBOX	zebrafish	O42366	hoxb1a	O42366	5	7	Homeobox protein Hox-B1a	w
+HOMEOBOX	zebrafish	O42367	hoxb2a	O42367	3	5	Homeobox protein Hox-B2a	w
+HOMEOBOX	zebrafish	O42368	hoxb3a	O42368	1	7	Homeobox protein Hox-B3a	w
+HOMEOBOX	zebrafish	O42370	hoxd3a	O42370	4	8	Homeobox protein Hox-D3a	w
+HOMEOBOX	zebrafish	O42477	vsx2	O42477	0	9	Visual system homeobox 2	w
+HOMEOBOX	zebrafish	O57374	hoxd4a	O57374	7	15	Homeobox protein Hox-D4a	w
+HOMEOBOX	zebrafish	O93282	six7	O93282	6	11	Homeobox protein Six7	w
+HOMEOBOX	zebrafish	P09013	hoxb5b	P09013	8	19	Homeobox protein Hox-B5b	w
+HOMEOBOX	zebrafish	P09014	hoxb5a	P09014	6	18	Homeobox protein Hox-B5a	w
+HOMEOBOX	zebrafish	P09074	hoxc5a	P09074	7	18	Homeobox protein Hox-C5a	w
+HOMEOBOX	zebrafish	P15861	hoxb6a	P15861	6	15	Homeobox protein Hox-B6a	w
+HOMEOBOX	zebrafish	P15862	hoxc6a	P15862	6	14	Homeobox protein Hox-C6a	w
+HOMEOBOX	zebrafish	P22574	hoxb4a	P22574	8	17	Homeobox protein Hox-B4a	w
+HOMEOBOX	zebrafish	P28174	hoxc3a	P28174	7	7	Homeobox protein Hox-C3a	w
+HOMEOBOX	zebrafish	P50574	dlx2a	P50574	5	12	Homeobox protein Dlx2a	w
+HOMEOBOX	zebrafish	P50576	dlx5a	P50576	2	15	Homeobox protein Dlx5a	w
+HOMEOBOX	zebrafish	P52889	lhx5	P52889	3	5	LIM/homeobox protein Lhx5	w
+HOMEOBOX	zebrafish	P53544	gsc	P53544	2	19	Homeobox protein goosecoid	w
+HOMEOBOX	zebrafish	P79724	hoxa13b	P79724	2	6	Homeobox protein Hox-A13b	w
+HOMEOBOX	zebrafish	Q01702	dlx3b	Q01702	2	7	Homeobox protein Dlx3b	w
+HOMEOBOX	zebrafish	Q01704	msxd	Q01704	5	11	Homeobox protein MSH-D	w
+HOMEOBOX	zebrafish	Q03357	msxa	Q03357	6	11	Homeobox protein MSH-A	w
+HOMEOBOX	zebrafish	Q1ECY2	hoxb13a	Q1ECY2	3	9	Homeobox protein Hox-B13a	w
+HOMEOBOX	zebrafish	Q1LU90	meox2b	Q1LU90	1	12	Homeobox protein MOX-2b	w
+HOMEOBOX	zebrafish	Q1LVQ7	alx1	Q1LVQ7	1	1	ALX homeobox protein 1	w
+HOMEOBOX	zebrafish	Q1LWG1	irx4b	Q1LWG1	0	7	Iroquois homeobox 4b	w
+HOMEOBOX	zebrafish	Q1LWV4	lhx9	Q1LWV4	3	4	LIM/homeobox protein Lhx9	w
+HOMEOBOX	zebrafish	Q1LXU5	irx5a	Q1LXU5	0	9	Iroquois homeobox protein 5a	w
+HOMEOBOX	zebrafish	Q1RM27	mxtx2	Q1RM27	0	9	Mix-type homeobox gene 2	w
+HOMEOBOX	zebrafish	Q1RMA3	gsx2	Q1RMA3	3	6	GS homeobox 2	w
+HOMEOBOX	zebrafish	Q4L1M5	lmx1ba	Q4L1M5	4	5	LIM homeobox transcription factor 1-alpha	w
+HOMEOBOX	zebrafish	Q4L1M6	lmx1bb	Q4L1M6	3	6	LIM homeobox transcription factor 1, beta 1	w
+HOMEOBOX	zebrafish	Q503F2	barx1	Q503F2	1	2	Homeobox protein BarH-like 1	w
+HOMEOBOX	zebrafish	Q503Z8	irx6a	Q503Z8	0	8	Iroquois homeobox protein 6a	w
+HOMEOBOX	zebrafish	Q504H8	hmx3	Q504H8	2	4	Homeobox protein HMX3	w
+HOMEOBOX	zebrafish	Q50D79	uncx	Q50D79	2	6	Homeobox protein unc-4 homolog	w
+HOMEOBOX	zebrafish	Q58EL0	hoxc11a	Q58EL0	5	5	Homeobox protein Hox-C11a	w
+HOMEOBOX	zebrafish	Q5BJ08	en1b	Q5BJ08	3	9	Homeobox protein engrailed-like	w
+HOMEOBOX	zebrafish	Q5BJA8	nkx2.2b	Q5BJA8	0	20	NK2 homeobox 2b	w
+HOMEOBOX	zebrafish	Q5I7G4	phox2bb	Q5I7G4	4	4	Paired-like homeobox 2b	w
+HOMEOBOX	zebrafish	Q5QHS3	gsx1	Q5QHS3	2	5	GS homeobox 1	w
+HOMEOBOX	zebrafish	Q5RI65	lmx1a	Q5RI65	3	5	LIM homeobox transcription factor 1, alpha	w
+HOMEOBOX	zebrafish	Q5TYX1	mixl1	Q5TYX1	2	11	Homeobox protein MIXL1	w
+HOMEOBOX	zebrafish	Q5TYZ2	six6b	Q5TYZ2	2	10	Homeobox protein SIX6b	w
+HOMEOBOX	zebrafish	Q68EH7	hoxc8a	Q68EH7	5	8	Homeobox protein Hox-C8a	w
+HOMEOBOX	zebrafish	Q6BDC4	lhx6a	Q6BDC4	3	5	LIM homeobox 6	w
+HOMEOBOX	zebrafish	Q6DHF9	six1a	Q6DHF9	3	6	Homeobox protein six1a	w
+HOMEOBOX	zebrafish	Q6JIY4	hoxc13b	Q6JIY4	1	5	Homeobox protein Hox-C13b	w
+HOMEOBOX	zebrafish	Q6JIY5	hoxc13a	Q6JIY5	4	5	Homeobox protein Hox-C13a	w
+HOMEOBOX	zebrafish	Q6NZ04	six1b	Q6NZ04	2	5	Homeobox protein six1b	w
+HOMEOBOX	zebrafish	Q6NZU4	irx4a	Q6NZU4	0	8	Iroquois homeobox 4a	w
+HOMEOBOX	zebrafish	Q6P295	prrx1b	Q6P295	0	4	Paired mesoderm homeobox protein 1b	w
+HOMEOBOX	zebrafish	Q6QU75	pitx3	Q6QU75	0	2	Pituitary homeobox 3	w
+HOMEOBOX	zebrafish	Q6R3Q6	bsx	Q6R3Q6	1	26	Brain-specific homeobox protein homolog	w
+HOMEOBOX	zebrafish	Q6SYZ1	mnx1	Q6SYZ1	4	5	Homeobox protein HB9	w
+HOMEOBOX	zebrafish	Q6W990	hoxa13a	Q6W990	0	6	Homeobox protein Hox-A13a	w
+HOMEOBOX	zebrafish	Q6ZM39	lbx1a	Q6ZM39	3	5	Ladybird homeobox 1a	w
+HOMEOBOX	zebrafish	Q7SZN8	shox2	Q7SZN8	0	1	Short stature homeobox 2	w
+HOMEOBOX	zebrafish	Q7SZP3	meis1a	Q7SZP3	6	8	Homeobox protein Meis1a	w
+HOMEOBOX	zebrafish	Q7T373	prrx1a	Q7T373	0	4	Paired mesoderm homeobox protein 1a	w
+HOMEOBOX	zebrafish	Q7T3G8	six6a	Q7T3G8	1	10	Homeobox protein SIX6a	w
+HOMEOBOX	zebrafish	Q801E1	vax2	Q801E1	0	1	Ventral anterior homeobox 2	w
+HOMEOBOX	zebrafish	Q803F0	tgif1	Q803F0	3	12	Homeobox protein TGIF1	w
+HOMEOBOX	zebrafish	Q803Z6	nkx3-2	Q803Z6	1	11	Homeobox protein Nkx-3.2	w
+HOMEOBOX	zebrafish	Q804S6	emx1	Q804S6	0	1	Homeobox protein EMX1	w
+HOMEOBOX	zebrafish	Q8AWY2	hoxa10b	Q8AWY2	6	10	Homeobox protein Hox-A10b	w
+HOMEOBOX	zebrafish	Q8AWY9	hoxb7a	Q8AWY9	12	30	Homeobox protein Hox-B7a	w
+HOMEOBOX	zebrafish	Q8AWZ0	hoxb8a	Q8AWZ0	5	8	Homeobox protein Hox-B8a	w
+HOMEOBOX	zebrafish	Q8AWZ2	hoxa3a	Q8AWZ2	4	8	Homeobox protein Hox-A3a	w
+HOMEOBOX	zebrafish	Q8AXR4	cdx1a	Q8AXR4	1	2	Caudal type homeobox 1a	w
+HOMEOBOX	zebrafish	Q8AYN1	pknox2	Q8AYN1	6	7	Homeobox protein PKNOX2	w
+HOMEOBOX	zebrafish	Q8JH55	hoxb8b	Q8JH55	5	5	Homeobox protein Hox-B8b	w
+HOMEOBOX	zebrafish	Q8JI10	dmbx1a	Q8JI10	0	1	Diencephalon/mesencephalon homeobox protein 1-A	w
+HOMEOBOX	zebrafish	Q8JI13	tlx1	Q8JI13	1	2	Homeobox protein Hox11	w
+HOMEOBOX	zebrafish	Q8JIZ3	crx	Q8JIZ3	1	6	Cone-rod homeobox	w
+HOMEOBOX	zebrafish	Q8QGU1	gbx2	Q8QGU1	0	8	Homeobox protein GBX-2	w
+HOMEOBOX	zebrafish	Q90267	otx1a	Q90267	0	2	Homeobox protein OTX1 A	w
+HOMEOBOX	zebrafish	Q90421	lhx3	Q90421	7	15	LIM/homeobox protein Lhx3	w
+HOMEOBOX	zebrafish	Q90423	hoxb1b	Q90423	4	5	Homeobox protein Hox-B1b	w
+HOMEOBOX	zebrafish	Q90469	hoxd10a	Q90469	6	12	Homeobox protein Hox-D10a	w
+HOMEOBOX	zebrafish	Q90470	hoxd11a	Q90470	4	5	Homeobox protein Hox-D11a	w
+HOMEOBOX	zebrafish	Q90471	hoxd12a	Q90471	1	5	Homeobox protein Hox-D12a	w
+HOMEOBOX	zebrafish	Q90472	hoxd13a	Q90472	4	6	Homeobox protein Hox-D13a	w
+HOMEOBOX	zebrafish	Q90476	lhx1a	Q90476	4	5	LIM/homeobox protein Lhx1	w
+HOMEOBOX	zebrafish	Q90481	nkx2.2a	Q90481	7	20	Homeobox protein Nkx-2.2a	w
+HOMEOBOX	zebrafish	Q90VY7	pknox1.1	Q90VY7	7	12	Homeobox protein PKNOX1.1	w
+HOMEOBOX	zebrafish	Q90XH2	meis1b	Q90XH2	13	23	Homeobox protein Meis1b	w
+HOMEOBOX	zebrafish	Q90YX8	irx7	Q90YX8	1	7	Iroquois homeobox 7	w
+HOMEOBOX	zebrafish	Q90Z68	irx3a	Q90Z68	0	8	Iroquois 3 homeobox protein	w
+HOMEOBOX	zebrafish	Q90ZB2	gbx1	Q90ZB2	0	5	Gastrulation brain homeobox 1	w
+HOMEOBOX	zebrafish	Q90ZE3	meis3	Q90ZE3	7	9	Homeobox protein Meis3	w
+HOMEOBOX	zebrafish	Q91981	otx2	Q91981	1	15	Homeobox protein OTX2	w
+HOMEOBOX	zebrafish	Q91994	otx1b	Q91994	0	2	Homeobox protein OTX1 B	w
+HOMEOBOX	zebrafish	Q98871	nkx2.3	Q98871	0	7	Homeobox protein Nkx-2.3	w
+HOMEOBOX	zebrafish	Q98875	dlx1a	Q98875	5	7	Homeobox protein Dlx1a	w
+HOMEOBOX	zebrafish	Q98876	dlx2b	Q98876	3	6	Homeobox protein Dlx2b	w
+HOMEOBOX	zebrafish	Q98SH9	hoxc1a	Q98SH9	5	5	Homeobox protein Hox-C1a	w
+HOMEOBOX	zebrafish	Q98SI1	hoxa1a	Q98SI1	6	10	Homeobox protein Hox-A1a	w
+HOMEOBOX	zebrafish	Q98TH1	six2a	Q98TH1	2	5	Sine oculis homeobox homolog 1a	w
+HOMEOBOX	zebrafish	Q9DDU0	hoxa11a	Q9DDU0	5	5	Homeobox protein Hox-A11a	w
+HOMEOBOX	zebrafish	Q9DDU1	hoxa11b	Q9DDU1	3	5	Homeobox protein Hox-A11b	w
+HOMEOBOX	zebrafish	Q9DGM9	vent	Q9DGM9	4	5	Homeobox protein Vega2	w
+HOMEOBOX	zebrafish	Q9IAV3	hhex	Q9IAV3	10	27	Hematopoietically-expressed homeobox protein hhex	w
+HOMEOBOX	zebrafish	Q9PWL6	hoxa9a	Q9PWL6	6	13	Homeobox protein Hox-A9a	w
+HOMEOBOX	zebrafish	Q9PWL7	hoxb10a	Q9PWL7	5	5	Homeobox protein Hox-B10a	w
+HOMEOBOX	zebrafish	Q9PWM2	hoxb9a	Q9PWM2	6	6	Homeobox protein Hox-B9a	w
+HOMEOBOX	zebrafish	Q9PWM3	hoxc4a	Q9PWM3	9	16	Homeobox protein Hox-C4a	w
+HOMEOBOX	zebrafish	Q9PWM5	hoxc6b	Q9PWM5	7	14	Homeobox protein Hox-C6b	w
+HOMEOBOX	zebrafish	Q9PWM6	hoxd9a	Q9PWM6	7	11	Homeobox protein Hox-D9a	w
+HOMEOBOX	zebrafish	Q9W5Z2	pitx2	Q9W5Z2	0	4	Pituitary homeobox 2	w
+HOMEOBOX	zebrafish	Q9YGS6	hoxc9a	Q9YGS6	7	11	Homeobox protein Hox-C9a	w
+HOMEOBOX	zebrafish	Q9YGT0	hoxc12b	Q9YGT0	5	6	Homeobox protein Hox-C12b	w
+HOMEOBOX	zebrafish	Q9YGT4	hoxb6b	Q9YGT4	6	15	Homeobox protein Hox-B6b	w
+HOMEOBOX	zebrafish	Q9YGT5	hoxa9b	Q9YGT5	5	5	Homeobox protein Hox-A9b	w
+HOMEOBOX	zebrafish	Q9YGT6	hoxa5a	Q9YGT6	5	15	Homeobox protein Hox-A5a	w
+HOMEOBOX	zebrafish	U3JAS7	hmx3b	U3JAS7	3	4	H6 family homeobox 3b	w
+HOMEOBOX-ASSOCIATING	human	Q8IXP5	POU2AF2	Q8IXP5	2	16	POU domain class 2-associating factor 2 (Oct coactivator fro	w
+HOMEOBOX-CONTAINING	human	O15266	SHOX	O15266	148	388	Short stature homeobox protein (Pseudoautosomal homeobox-con	w
+HOMEOBOX-CONTAINING	human	Q6NT76	HMBOX1	Q6NT76	130	502	Homeobox-containing protein 1 (Homeobox telomere-binding pro	w
+HOMEOBOX-CONTAINING	worm	Q9TYT0	hmbx-1	Q9TYT0	0	31	Homeobox-containing protein 1	w
+HOMEOBOX-CONTAINING	zebrafish	F1RAA7	zgc:91944	F1RAA7	0	1	Homeobox-containing protein 1	w
+HOMEOBOX-CYSTEINE	worm	Q95Q08	ceh-92	Q95Q08	0	15	Homeobox-cysteine loop-homeobox domain-containing protein	w
+HOMEOBOX-INTERACTING	zebrafish	E7F6R0	pbxip1b	E7F6R0	0	8	Pre-B-cell leukemia homeobox-interacting protein 1b	w
+HOMEOBOX-LIKE	human	A0A1W2PPK0	CPHXL2	A0A1W2PPK0	1	9	Cytoplasmic polyadenylated homeobox-like protein 2	w
+HOMEOBOX-LIKE	human	A0A1W2PPM1	CPHXL	A0A1W2PPM1	29	334	Cytoplasmic polyadenylated homeobox-like protein (Cytoplasmi	w
+HOMEOBOX-LIKE	human	Q17RH7	TPRXL	Q17RH7	86	323	Tetra-peptide repeat homeobox-like protein	w
+HOMEOBOX-LIKE	human	Q96IS3	RAX2	Q96IS3	118	410	Retina and anterior neural fold homeobox protein 2 (Q50-type	w
+HOMEOBOX-LIKE	human	Q9H2W2	MIXL1	Q9H2W2	105	373	Homeobox protein MIXL1 (Homeodomain protein MIX) (hMix) (MIX	w
+HOMEOBOXES	human	Q96EF9	ZHX1-C8orf76	Q96EF9	4	42	Zinc fingers and homeoboxes protein 1, isoform 2 (ZHX1-C8orf	w
+HOMEOBOXES	human	Q9H4I2	ZHX3	Q9H4I2	30	106	Zinc fingers and homeoboxes protein 3 (Triple homeobox prote	w
+HOMEOBOXES	human	Q9UKY1	ZHX1	Q9UKY1	39	143	Zinc fingers and homeoboxes protein 1	w
+HOMEOBOXES	human	Q9Y6X8	ZHX2	Q9Y6X8	51	188	Zinc fingers and homeoboxes protein 2 (Alpha-fetoprotein reg	w
+HOMEOBOXES	zebrafish	F1R0G0	zhx3b	F1R0G0	0	9	Zinc fingers and homeoboxes 3	w
+HOMEOBRAIN	fly	FBgn0008636	hbn	Q9W2P8	93	400	Homeobrain (IP01393p)	w
+HOMEODOMAIN	fly	FBgn0004606	zfh1	P28166	44	195	Zn finger homeodomain 1	w
+HOMEODOMAIN	fly	FBgn0004607	zfh2	P28167	0	6	Zinc finger protein 2 (Zinc finger homeodomain protein 2)	w
+HOMEODOMAIN	fly	FBgn0024184	unc-4	O77215	99	379	Homeobox protein unc-4 (Paired-like homeodomain protein unc-	w
+HOMEODOMAIN	fly	FBgn0025334	PHDP	Q9W1H7	96	438	Putative homeodomain protein (RT01102p)	w
+HOMEODOMAIN	fly	FBgn0035142	Hipk	Q9W0Q1	366	1158	Homeodomain interacting protein kinase	w
+HOMEODOMAIN	human	A8MZ59	LEUTX	A8MZ59	3	55	Paired-like homeodomain transcription factor LEUTX (Leucine-	w
+HOMEODOMAIN	human	O14813	PHOX2A	O14813	176	426	Paired mesoderm homeobox protein 2A (ARIX1 homeodomain prote	w
+HOMEODOMAIN	human	O75360	PROP1	O75360	45	124	Homeobox protein prophet of Pit-1 (PROP-1) (Pituitary-specif	w
+HOMEODOMAIN	human	O75364	PITX3	O75364	114	402	Pituitary homeobox 3 (Homeobox protein PITX3) (Paired-like h	w
+HOMEODOMAIN	human	O95475	SIX6	O95475	80	428	Homeobox protein SIX6 (Homeodomain protein OPTX2) (Optic hom	w
+HOMEODOMAIN	human	P78337	PITX1	P78337	135	575	Pituitary homeobox 1 (Hindlimb-expressed homeobox protein ba	w
+HOMEODOMAIN	human	P78411	IRX5	P78411	110	391	Iroquois-class homeodomain protein IRX-5 (Homeodomain protei	w
+HOMEODOMAIN	human	P78412	IRX6	P78412	108	352	Iroquois-class homeodomain protein IRX-6 (Homeodomain protei	w
+HOMEODOMAIN	human	P78413	IRX4	P78413	108	409	Iroquois-class homeodomain protein IRX-4 (Homeodomain protei	w
+HOMEODOMAIN	human	P78414	IRX1	P78414	142	418	Iroquois-class homeodomain protein IRX-1 (Homeodomain protei	w
+HOMEODOMAIN	human	P78415	IRX3	P78415	124	375	Iroquois-class homeodomain protein IRX-3 (Homeodomain protei	w
+HOMEODOMAIN	human	Q03014	HHEX	Q03014	140	471	Hematopoietically-expressed homeobox protein HHEX (Homeobox 	w
+HOMEODOMAIN	human	Q8IX15	HOMEZ	Q8IX15	45	180	Homeobox and leucine zipper protein Homez (Homeodomain leuci	w
+HOMEODOMAIN	human	Q8N196	SIX5	Q8N196	12	62	Homeobox protein SIX5 (DM locus-associated homeodomain prote	w
+HOMEODOMAIN	human	Q99453	PHOX2B	Q99453	138	357	Paired mesoderm homeobox protein 2B (Neuroblastoma Phox) (NB	w
+HOMEODOMAIN	human	Q99697	PITX2	Q99697	111	457	Pituitary homeobox 2 (ALL1-responsive protein ARP1) (Homeobo	w
+HOMEODOMAIN	human	Q9BZI1	IRX2	Q9BZI1	130	439	Iroquois-class homeodomain protein IRX-2 (Homeodomain protei	w
+HOMEODOMAIN	human	Q9C0A1	ZFHX2	Q9C0A1	1	64	Zinc finger homeobox protein 2 (Zinc finger homeodomain prot	w
+HOMEODOMAIN	human	Q9H2W2	MIXL1	Q9H2W2	105	373	Homeobox protein MIXL1 (Homeodomain protein MIX) (hMix) (MIX	w
+HOMEODOMAIN	human	Q9H4I2	ZHX3	Q9H4I2	30	106	Zinc fingers and homeoboxes protein 3 (Triple homeobox prote	w
+HOMEODOMAIN	human	Q9NZR4	VSX1	Q9NZR4	124	431	Visual system homeobox 1 (Homeodomain protein RINX) (Retinal	w
+HOMEODOMAIN	human	Q9Y6X8	ZHX2	Q9Y6X8	51	188	Zinc fingers and homeoboxes protein 2 (Alpha-fetoprotein reg	w
+HOMEODOMAIN	worm	Q93348	irx-1	Q93348	3	24	Putative iroquois-class homeodomain protein irx-1	w
+HOMEODOMAIN	zebrafish	A0A8M1PF69	irx1a	A0A8M1PF69	1	9	Iroquois-class homeodomain protein IRX-1a isoform 1	w
+HOMEODOMAIN	zebrafish	A0A8M1PGB3	irx3b	A0A8M1PGB3	0	7	Iroquois-class homeodomain protein IRX-3b	w
+HOMEODOMAIN	zebrafish	A9ULS8	phtf1	A9ULS8	0	21	Homeodomain transcription factor 1	w
+HOMEODOMAIN	zebrafish	Q98873	nkx2.7	Q98873	2	6	Homeodomain protein Nkx2.7	w
+HOMEODOMAIN	zebrafish	Q9I9B4	pbx2	Q9I9B4	56	87	Pbxy homeodomain protein	w
+HOMEODOMAIN-CONTAINING	fly	FBgn0263512	Vsx2	X2JDS9	124	472	Visual system homeobox 2 (Ceh-10 homeodomain-containing homo	w
+HOMEODOMAIN-CONTAINING	human	P58304	VSX2	P58304	107	393	Visual system homeobox 2 (Ceh-10 homeodomain-containing homo	w
+HOMEODOMAIN-INTERACTING	human	Q86Z02	HIPK1	Q86Z02	10	73	Homeodomain-interacting protein kinase 1 (EC 2.7.11.1) (Nucl	w
+HOMEODOMAIN-INTERACTING	human	Q8NE63	HIPK4	Q8NE63	299	1251	Homeodomain-interacting protein kinase 4 (EC 2.7.11.1)	w
+HOMEODOMAIN-INTERACTING	human	Q9H2X6	HIPK2	Q9H2X6	36	196	Homeodomain-interacting protein kinase 2 (hHIPk2) (EC 2.7.11	w
+HOMEODOMAIN-INTERACTING	human	Q9H422	HIPK3	Q9H422	17	118	Homeodomain-interacting protein kinase 3 (EC 2.7.11.1) (Andr	w
+HOMEODOMAIN-INTERACTING	worm	Q8MQ70	hpk-1	Q8MQ70	9	58	Homeodomain-interacting protein kinase 1 (EC 2.7.11.1)	w
+HOMEODOMAIN-ONLY	human	Q9BPY8	HOPX	Q9BPY8	13	58	Homeodomain-only protein (Lung cancer-associated Y protein) 	w
+HOMEODOMAIN-ONLY	worm	O16749	ceh-83	O16749	0	2	Homeodomain-only protein	w
+HOMEODOMAIN-ONLY	worm	Q9XX95	ceh-89	Q9XX95	1	7	Homeodomain-only protein	w
+HOMEODOMAIN-ONLY	zebrafish	Q8AYB8	hopx	Q8AYB8	2	4	Homeodomain-only protein	w
+HOMEOPROTEIN	human	P35680	HNF1B	P35680	49	253	Hepatocyte nuclear factor 1-beta (HNF-1-beta) (HNF-1B) (Home	w
+HOMEOPROTEIN	human	Q15699	ALX1	Q15699	143	398	ALX homeobox protein 1 (Cartilage homeoprotein 1) (CART-1)	w
+HOMEOSTASIS	fly	FBgn0038332	CG6136	Q9VF71	0	1	Copper homeostasis protein cutC homolog	w
+HOMEOSTASIS	fly	FBgn0039751	CG1983	Q9VA97	0	9	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
+HOMEOSTASIS	human	O94903	PLPBP	O94903	14	123	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
+HOMEOSTASIS	human	Q5JW98	CALHM4	Q5JW98	1	50	Calcium homeostasis modulator protein 4 (Protein FAM26D)	w
+HOMEOSTASIS	human	Q5R3K3	CALHM6	Q5R3K3	0	39	Calcium homeostasis modulator protein 6 (Protein FAM26F)	w
+HOMEOSTASIS	human	Q86XJ0	CALHM3	Q86XJ0	1	39	Calcium homeostasis modulator protein 3 (Protein A)	w
+HOMEOSTASIS	human	Q8IU99	CALHM1	Q8IU99	1	78	Calcium homeostasis modulator protein 1 (Protein FAM26C)	w
+HOMEOSTASIS	human	Q8IWX8	CHERP	Q8IWX8	78	334	Calcium homeostasis endoplasmic reticulum protein (ERPROT 21	w
+HOMEOSTASIS	human	Q8N5C1	CALHM5	Q8N5C1	0	48	Calcium homeostasis modulator protein 5 (Protein FAM26E)	w
+HOMEOSTASIS	human	Q9HA72	CALHM2	Q9HA72	0	54	Calcium homeostasis modulator protein 2 (Protein FAM26B)	w
+HOMEOSTASIS	human	Q9NTM9	CUTC	Q9NTM9	0	63	Copper homeostasis protein cutC homolog	w
+HOMEOSTASIS	worm	P34630	cutc-1	P34630	0	1	Copper homeostasis protein cutC homolog	w
+HOMEOSTASIS	worm	P52057	F09E5.8	P52057	0	5	Pyridoxal phosphate homeostasis protein	w
+HOMEOSTASIS	yeast	P38197	YBL036C	P38197	0	11	Pyridoxal phosphate homeostasis protein	w
+HOMEOSTASIS	yeast	Q12067	ATX2	Q12067	0	2	Metal homeostasis factor ATX2	w
+HOMEOSTASIS	zebrafish	A0A8M1PAQ9	cherp	A0A8M1PAQ9	10	41	Calcium homeostasis endoplasmic reticulum protein	w
+HOMEOSTASIS	zebrafish	B1H1M3	plpbp	B1H1M3	0	1	Pyridoxal phosphate homeostasis protein	w
+HOMEOSTASIS-ASSOCIATED	human	Q6UWT2	ENHO	Q6UWT2	26	127	Adropin (Energy homeostasis-associated protein)	w
+HOMEOSTATIS	yeast	P38356	BSD2	P38356	3	17	Metal homeostatis protein BSD2	w
+HOMEOTIC	fly	FBgn0000139	ash2	Q94545	40	479	Set1/Ash2 histone methyltransferase complex subunit ASH2 (Ab	w
+HOMEOTIC	fly	FBgn0000166	bcd	P09081	125	485	Homeotic protein bicoid (PRD-4)	w
+HOMEOTIC	fly	FBgn0000439	Dfd	P07548	82	414	Homeotic protein deformed	w
+HOMEOTIC	fly	FBgn0003944	Ubx	P83949	126	647	Homeotic protein ultrabithorax	w
+HOMEOTIC	fly	FBgn0004656	fs(1)h	M9PJC7	217	721	Female sterile (1) homeotic, isoform G	w
+HOMEOTIC	fly	FBgn0005386	ash1	Q9VW15	8	22	Histone-lysine N-methyltransferase ash1 (EC 2.1.1.354) (Abse	w
+HOMEOTIC	fly	FBgn0051481	pb	P31264	101	359	Homeotic protein proboscipedia	w
+HOMEOTIC	fly	FBgn0260642	Antp	P02833	79	449	Homeotic protein antennapedia	w
+HOMEOTIC	fly	FBgn0261648	salm	P39770	27	128	Homeotic protein spalt-major	w
+HOMEOTIC	human	Q9NR48	ASH1L	Q9NR48	15	70	Histone-lysine N-methyltransferase ASH1L (EC 2.1.1.359) (EC 	w
+HOMER	fly	FBgn0025777	homer	Q0E8S7	15	45	Homer, isoform E	w
+HOMER	fly	FBgn0025777	homer	Q0E8S7	15	45	Homer, isoform E	w
+HOMER	human	Q86YM7	HOMER1	Q86YM7	75	235	Homer protein homolog 1 (Homer-1)	w
+HOMER	human	Q9NSB8	HOMER2	Q9NSB8	39	124	Homer protein homolog 2 (Homer-2) (Cupidin)	w
+HOMER	human	Q9NSC5	HOMER3	Q9NSC5	59	224	Homer protein homolog 3 (Homer-3)	w
+HOMER	zebrafish	B8JIC5	homer1b	B8JIC5	3	31	Homer protein homolog 1	w
+HOMER-1	human	Q86YM7	HOMER1	Q86YM7	75	235	Homer protein homolog 1 (Homer-1)	w
+HOMER-2	human	Q9NSB8	HOMER2	Q9NSB8	39	124	Homer protein homolog 2 (Homer-2) (Cupidin)	w
+HOMER-3	human	Q9NSC5	HOMER3	Q9NSC5	59	224	Homer protein homolog 3 (Homer-3)	w
+HOMER1	human	Q86YM7	HOMER1	Q86YM7	75	235	Homer protein homolog 1 (Homer-1)	
+HOMER1	mus-musculus	Q9Z2Y3	Homer1	Q9Z2Y3	8	57	Homer protein homolog 1	
+HOMER1	rattus-norvegicus	Q9Z214	Homer1	Q9Z214	7	33	Homer protein homolog 1	
+HOMER1B	zebrafish	B8JIC5	homer1b	B8JIC5	3	31	Homer protein homolog 1	
+HOMER2	human	Q9NSB8	HOMER2	Q9NSB8	39	124	Homer protein homolog 2 (Homer-2) (Cupidin)	
+HOMER2	mus-musculus	Q9QWW1	Homer2	Q9QWW1	4	13	Homer protein homolog 2	
+HOMER2	rattus-norvegicus	O88801	Homer2	O88801	3	12	Homer protein homolog 2	
+HOMER3	human	Q9NSC5	HOMER3	Q9NSC5	59	224	Homer protein homolog 3 (Homer-3)	
+HOMER3	mus-musculus	Q99JP6	Homer3	Q99JP6	10	30	Homer protein homolog 3	
+HOMER3	rattus-norvegicus	Q9Z2X5	Homer3	Q9Z2X5	8	27	Homer protein homolog 3	
+HOMEZ	human	Q8IX15	HOMEZ	Q8IX15	45	180	Homeobox and leucine zipper protein Homez (Homeodomain leuci	
+HOMEZ	rattus-norvegicus	Q8K3E9	Homez	Q8K3E9	0	5	Homeobox and leucine zipper protein Homez	
+HOMEZ_HUMAN	human	Q8IX15	HOMEZ	Q8IX15	45	180		
+HOMING	human	P16070	CD44	P16070	135	876	CD44 antigen (CDw44) (Epican) (Extracellular matrix receptor	w
+HOMING	human	P26010	ITGB7	P26010	38	265	Integrin beta-7 (Gut homing receptor beta subunit)	w
+HOMO	human	Q8WY91	THAP4	Q8WY91	7	87	Peroxynitrite isomerase THAP4 (EC 5.99.-.-) (Ferric Homo sap	w
+HOMO	human	Q96L33	RHOV	Q96L33	122	398	Rho-related GTP-binding protein RhoV (EC 3.6.5.2) (CDC42-lik	w
+HOMOACONITASE	yeast	P49367	LYS4	P49367	0	37	Homoaconitase, mitochondrial	w
+HOMOCITRATE	yeast	P39533	ACO2	P39533	1	25	Homocitrate dehydratase, mitochondrial	w
+HOMOCITRATE	yeast	P48570	LYS20	P48570	1	40	Homocitrate synthase, cytosolic isozyme	w
+HOMOCITRATE	yeast	Q12122	LYS21	Q12122	1	25	Homocitrate synthase, mitochondrial	w
+HOMOCYSTEINE	human	P32929	CTH	P32929	0	128	Cystathionine gamma-lyase (CGL) (CSE) (EC 4.4.1.1) (Cysteine	w
+HOMOCYSTEINE	yeast	P06106	MET17	P06106	0	38	Homocysteine/cysteine synthase	w
+HOMOCYSTEINE	yeast	Q08985	SAM4	Q08985	0	4	Homocysteine S-methyltransferase 2	w
+HOMOCYSTEINE	yeast	Q12198	HSU1	Q12198	0	4	Homocysteine/cysteine synthase	w
+HOMOCYSTEINE	yeast	Q12525	MHT1	Q12525	0	9	Homocysteine S-methyltransferase 1	w
+HOMOCYSTEINE-INDUCED	fly	FBgn0031950	Herp	Q9VLW9	1	8	Homocysteine-induced endoplasmic reticulum protein, isoform 	w
+HOMOCYSTEINE-RESPONSIVE	human	Q15011	HERPUD1	Q15011	18	63	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+HOMOCYSTEINE-RESPONSIVE	human	Q9BSE4	HERPUD2	Q9BSE4	6	33	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+HOMOCYSTEINE-RESPONSIVE	zebrafish	Q6NYI0	herpud2	Q6NYI0	0	5	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+HOMOCYSTINURIA	human	Q9H3L0	MMADHC	Q9H3L0	7	66	Cobalamin trafficking protein CblD (CblD) (Methylmalonic aci	w
+HOMOCYSTINURIA	worm	Q9XWC9	mmad-1	Q9XWC9	2	6	Methylmalonic aciduria and homocystinuria type D homolog, mi	w
+HOMODIMERISATION	worm	Q21746	sgt-1	Q21746	18	167	SGTA homodimerisation domain-containing protein	w
+HOMOGENTISATE	fly	FBgn0040211	Hgd	Q9VKJ0	0	1	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
+HOMOGENTISATE	human	Q93099	HGD	Q93099	3	54	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
+HOMOGENTISATE	worm	Q9Y041	hgo-1	Q9Y041	0	5	Homogentisate 1,2-dioxygenase	w
+HOMOGENTISIC	fly	FBgn0040211	Hgd	Q9VKJ0	0	1	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
+HOMOGENTISIC	human	Q93099	HGD	Q93099	3	54	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
+HOMOGENTISICASE	fly	FBgn0040211	Hgd	Q9VKJ0	0	1	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
+HOMOGENTISICASE	human	Q93099	HGD	Q93099	3	54	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
+HOMOISOCITRATE	yeast	P40495	LYS12	P40495	2	98	Homoisocitrate dehydrogenase, mitochondrial	w
+HOMOL	human	P05412	JUN	P05412	253	1096	Transcription factor Jun (Activator protein 1) (AP1) (Proto-	w
+HOMOL	human	Q8TDZ2	MICAL1	Q8TDZ2	23	148	[F-actin]-monooxygenase MICAL1 (EC 1.14.13.225) (EC 1.6.3.1)	w
+HOMOLO	fly	FBgn0027786	Mtch	Q9V3Y4	0	13	LD43650p (Mitochondrial carrier homolog) (Mitochondrial carr	w
+HOMOLO	fly	FBgn0243511	psidin	Q9VDQ7	12	96	Phagocyte signaling-impaired protein (N-terminal acetyltrans	w
+HOMOLO	human	P60228	EIF3E	P60228	60	418	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
+HOMOLO	human	Q5VZK9	CARMIL1	Q5VZK9	16	157	F-actin-uncapping protein LRRC16A (CARMIL homolog) (Capping 	w
+HOMOLO	human	Q96MF7	NSMCE2	Q96MF7	23	153	E3 SUMO-protein ligase NSE2 (EC 2.3.2.-) (E3 SUMO-protein tr	w
+HOMOLOG-ASSOCIATED	human	Q1A5X7	WHAMMP3	Q1A5X7	1	16	Putative WASP homolog-associated protein with actin, membran	w
+HOMOLOG-ASSOCIATED	human	Q8TF30	WHAMM	Q8TF30	34	112	WASP homolog-associated protein with actin, membranes and mi	w
+HOMOLOG-ASSOCIATED	zebrafish	A0A8M2B6G8	dlgap3	A0A8M2B6G8	2	18	Discs, large (Drosophila) homolog-associated protein 3	w
+HOMOLOG-B	zebrafish	Q1LXZ9	skor1b	Q1LXZ9	0	5	SKI family transcriptional corepressor 1 homolog-B	w
+HOMOLOG-INTERACTING	human	O95405	ZFYVE9	O95405	31	164	Zinc finger FYVE domain-containing protein 9 (Mothers agains	w
+HOMOLOG-LIKE	human	O94915	FRYL	O94915	1	42	Protein furry homolog-like (ALL1-fused gene from chromosome 	w
+HOMOLOG-LIKE	human	P0C7V6	SUPT20HL2	P0C7V6	2	6	Transcription factor SPT20 homolog-like 2	w
+HOMOLOG-LIKE	human	P86790	CCZ1B	P86790	2	66	Vacuolar fusion protein CCZ1 homolog B (Vacuolar fusion prot	w
+HOMOLOG-LIKE	human	Q3ZLR7	SUPT20HL1	Q3ZLR7	3	4	Transcription factor SPT20 homolog-like 1	w
+HOMOLOG-LIKE	human	Q6UX01	LMBR1L	Q6UX01	97	975	Protein LMBR1L (Limb region 1 protein homolog-like) (Lipocal	w
+HOMOLOG-LIKE	human	Q8IX06	REXO1L1P	Q8IX06	1	11	Putative exonuclease GOR (EC 3.1.-.-) (Antigen GOR homolog) 	w
+HOMOLOG-LIKE	human	Q9H0K6	PUS7L	Q9H0K6	6	124	Pseudouridylate synthase PUS7L (EC 5.4.99.-) (Pseudouridylat	w
+HOMOLOG-LIKE	human	Q9HCJ6	VAT1L	Q9HCJ6	4	66	Putative NADPH-dependent quinone oxidoreductase VAT1L (EC 1.	w
+HOMOLOG-LIKE	human	Q9Y4A0	JRKL	Q9Y4A0	3	18	Jerky protein homolog-like (Human homolog of mouse jerky gen	w
+HOMOLOG-LIKE	zebrafish	A0AB32TZ83	mybl2b	A0AB32TZ83	18	97	V-myb avian myeloblastosis viral oncogene homolog-like 2b is	w
+HOMOLOG-LIKE	zebrafish	B8A4H0	si:ch211-202h22.8	B8A4H0	0	9	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+HOMOLOG-LIKE	zebrafish	E9QFU4	mybl2a	E9QFU4	2	93	V-myb avian myeloblastosis viral oncogene homolog-like 2a	w
+HOMOLOG-LIKE	zebrafish	Q803C7	lmbr1l	Q803C7	0	2	Limb region 1 homolog-like protein	w
+HOMOLOGOUS	fly	FBgn0053100	eIF4EHP	E1JIV5	3	29	Eukaryotic translation initiation factor 4E homologous prote	w
+HOMOLOGOUS	fly	FBgn0266450	Kr-h1	P08155	83	437	Krueppel homolog 1 (Krueppel homologous protein 1)	w
+HOMOLOGOUS	human	O43439	CBFA2T2	O43439	26	92	Protein CBFA2T2 (ETO homologous on chromosome 20) (MTG8-like	w
+HOMOLOGOUS	human	O43745	CHP2	O43745	18	112	Calcineurin B homologous protein 2 (Hepatocellular carcinoma	w
+HOMOLOGOUS	human	O60573	EIF4E2	O60573	36	312	Eukaryotic translation initiation factor 4E type 2 (eIF-4E t	w
+HOMOLOGOUS	human	P13987	CD59	P13987	60	699	CD59 glycoprotein (1F5 antigen) (20 kDa homologous restricti	w
+HOMOLOGOUS	human	P42679	MATK	P42679	195	1296	Megakaryocyte-associated tyrosine-protein kinase (EC 2.7.10.	w
+HOMOLOGOUS	human	P61328	FGF12	P61328	21	200	Fibroblast growth factor 12 (FGF-12) (Fibroblast growth fact	w
+HOMOLOGOUS	human	Q15386	UBE3C	Q15386	18	210	Ubiquitin-protein ligase E3C (EC 2.3.2.26) (HECT-type ubiqui	w
+HOMOLOGOUS	human	Q16611	BAK1	Q16611	15	159	Bcl-2 homologous antagonist/killer (Apoptosis regulator BAK)	w
+HOMOLOGOUS	human	Q6XPS3	TPTE2	Q6XPS3	9	118	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase TPTE2	w
+HOMOLOGOUS	human	Q8N3J3	HROB	Q8N3J3	24	74	Homologous recombination OB-fold protein	w
+HOMOLOGOUS	human	Q8N441	FGFRL1	Q8N441	23	119	Fibroblast growth factor receptor-like 1 (FGF receptor-like 	w
+HOMOLOGOUS	human	Q8TCT6	SPPL3	Q8TCT6	59	900	Signal peptide peptidase-like 3 (SPP-like 3) (EC 3.4.23.-) (	w
+HOMOLOGOUS	human	Q8TCT7	SPPL2B	Q8TCT7	29	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
+HOMOLOGOUS	human	Q8WZA0	LZIC	Q8WZA0	4	104	Protein LZIC (Leucine zipper and CTNNBIP1 domain-containing 	w
+HOMOLOGOUS	human	Q92913	FGF13	Q92913	26	206	Fibroblast growth factor 13 (FGF-13) (Fibroblast growth fact	w
+HOMOLOGOUS	human	Q92914	FGF11	Q92914	50	294	Fibroblast growth factor 11 (FGF-11) (Fibroblast growth fact	w
+HOMOLOGOUS	human	Q92915	FGF14	Q92915	10	62	Fibroblast growth factor 14 (FGF-14) (Fibroblast growth fact	w
+HOMOLOGOUS	human	Q96BS2	TESC	Q96BS2	12	198	Calcineurin B homologous protein 3 (Tescalcin) (TSC)	w
+HOMOLOGOUS	human	Q99653	CHP1	Q99653	28	224	Calcineurin B homologous protein 1 (Calcineurin B-like prote	w
+HOMOLOGOUS	human	Q9BRQ8	AIFM2	Q9BRQ8	6	122	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
+HOMOLOGOUS	human	Q9NZC4	EHF	Q9NZC4	47	363	ETS homologous factor (hEHF) (ETS domain-containing transcri	w
+HOMOLOGOUS	human	Q9P0K8	FOXJ2	Q9P0K8	19	129	Forkhead box protein J2 (Fork head homologous X)	w
+HOMOLOGOUS	human	Q9UKB1	FBXW11	Q9UKB1	116	595	F-box/WD repeat-containing protein 11 (F-box and WD repeats 	w
+HOMOLOGOUS	human	Q9ULX6	AKAP8L	Q9ULX6	30	302	A-kinase anchor protein 8-like (AKAP8-like protein) (Helicas	w
+HOMOLOGOUS	human	Q9Y4K4	MAP4K5	Q9Y4K4	122	1387	Mitogen-activated protein kinase kinase kinase kinase 5 (EC 	w
+HOMOLOGOUS	worm	C6KRL6	zhp-3	C6KRL6	1	2	Zip homologous protein 3	w
+HOMOLOGOUS	worm	G5EF09	spe-41	G5EF09	0	19	TRP homologous cation channel protein	w
+HOMOLOGOUS	worm	Q8MYP1	zhp-4	Q8MYP1	1	4	Zip homologous protein 4	w
+HOMOLOGOUS	worm	Q95R14	zhp-1	Q95R14	1	4	Zip homologous protein 1	w
+HOMOLOGOUS	worm	Q9U3L0	zhp-2	Q9U3L0	1	2	Zip homologous protein 2	w
+HOMOLOGOUS	zebrafish	Q6NYK0	tesca	Q6NYK0	6	23	Calcineurin B homologous protein 3	w
+HOMOLOGOUS	zebrafish	Q6P005	tescb	Q6P005	4	23	Calcineurin B homologous protein 3	w
+HOMOLOGOUS	zebrafish	Q7T2F7	chp1	Q7T2F7	7	25	Calcineurin B homologous protein 1	w
+HOMOLOGOUS	zebrafish	Q803Y0	chp2	Q803Y0	7	23	Calcineurin B homologous protein 2	w
+HOMOLOGOUS-PAIRING	human	Q9P2W1	PSMC3IP	Q9P2W1	15	89	Homologous-pairing protein 2 homolog (Nuclear receptor coact	w
+HOMOLOGOUS-PAIRING	yeast	P53187	HOP2	P53187	3	9	Homologous-pairing protein 2	w
+HOMOLOGS	human	Q17R89	ARHGAP44	Q17R89	34	125	Rho GTPase-activating protein 44 (NPC-A-10) (Rho-type GTPase	w
+HOMOLOGS	human	Q68EM7	ARHGAP17	Q68EM7	44	157	Rho GTPase-activating protein 17 (Rho-type GTPase-activating	w
+HOMOLOGUE	fly	FBgn0034948	PPP1R15	Q9W1E4	7	18	GH11727p (Growth arrest and DNA damage 34 homologue) (Protei	w
+HOMOLOGUE	fly	FBgn0250848	CtsK1	Q9V3U6	10	443	26-29kD-proteinase (EC 3.4.22.-) (Homologue of Sarcophaga 26	w
+HOMOLOGUE	worm	A0A0K3ATN9	tom-1	A0A0K3ATN9	6	45	Lethal giant larvae homologue 2 domain-containing protein	w
+HOMOLOGUE	worm	A0A1T5HUK5	insc-1	A0A1T5HUK5	1	8	Protein inscuteable homologue C-terminal domain-containing p	w
+HOMOLOGUE	worm	A7LPG5	cisd-1	A7LPG5	0	4	CDGSH iron-sulfur domain-containing protein 2 homologue	w
+HOMOLOGY	fly	FBgn0023489	Pph13	Q9XZU0	110	409	FI01102p (Munster protein) (PvuII-PstI homology 13)	w
+HOMOLOGY	fly	FBgn0025381	rush	O76902	15	169	Pleckstrin homology domain-containing family F member 1 homo	w
+HOMOLOGY	fly	FBgn0032633	Lrch	Q9VJE6	2	9	Leucine-rich-repeats and calponin homology domain protein, i	w
+HOMOLOGY	fly	FBgn0034180	Ehbp1	A4UZL3	3	31	Eps15 homology domain containing protein-binding protein 1, 	w
+HOMOLOGY	fly	FBgn0034659	CG4021	Q9W2D0	0	1	K Homology domain-containing protein	w
+HOMOLOGY	fly	FBgn0034694	Plekhm1	Q9W293	5	12	Pleckstrin homology and RUN domain containing M1	w
+HOMOLOGY	fly	FBgn0034739	CG3927	Q9W240	2	7	K Homology domain-containing protein	w
+HOMOLOGY	fly	FBgn0266084	Fhos	E1JI78	1	8	Formin homology 2 domain containing, isoform I (Formin homol	w
+HOMOLOGY	human	A1L390	PLEKHG3	A1L390	70	250	Pleckstrin homology domain-containing family G member 3 (PH 	w
+HOMOLOGY	human	A6NEE1	PLEKHD1	A6NEE1	2	40	Pleckstrin homology domain-containing family D member 1 (PH 	w
+HOMOLOGY	human	A6NGQ2	OOEP	A6NGQ2	11	80	Oocyte-expressed protein homolog (KH homology domain-contain	w
+HOMOLOGY	human	A6NKF1	SAC3D1	A6NKF1	4	130	SAC3 domain-containing protein 1 (SAC3 homology domain-conta	w
+HOMOLOGY	human	G5EA03	LIMCH1	G5EA03	5	54	LIM and calponin homology domains 1	w
+HOMOLOGY	human	L7N2F9	?	L7N2F9	16	55	V-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	human	O14492	SH2B2	O14492	19	80	SH2B adapter protein 2 (Adapter protein with pleckstrin homo	w
+HOMOLOGY	human	O60229	KALRN	O60229	3	95	Kalirin (EC 2.7.11.1) (Huntingtin-associated protein-interac	w
+HOMOLOGY	human	O60346	PHLPP1	O60346	38	268	PH domain leucine-rich repeat-containing protein phosphatase	w
+HOMOLOGY	human	O75427	LRCH4	O75427	18	93	Leucine-rich repeat and calponin homology domain-containing 	w
+HOMOLOGY	human	O94827	PLEKHG5	O94827	54	140	Pleckstrin homology domain-containing family G member 5 (PH 	w
+HOMOLOGY	human	O95397	PLEKHA8P1	O95397	6	12	Putative protein PLEKHA9 (Pleckstrin homology domain-contain	w
+HOMOLOGY	human	P29353	SHC1	P29353	88	389	SHC-transforming protein 1 (SHC-transforming protein 3) (SHC	w
+HOMOLOGY	human	P54756	EPHA5	P54756	85	345	Ephrin type-A receptor 5 (EC 2.7.10.1) (Brain-specific kinas	w
+HOMOLOGY	human	P56180	TPTE	P56180	7	174	Putative tyrosine-protein phosphatase TPTE (EC 3.1.3.48) (Ca	w
+HOMOLOGY	human	P98077	SHC2	P98077	19	91	SHC-transforming protein 2 (Protein Sck) (SHC-transforming p	w
+HOMOLOGY	human	Q02763	TEK	Q02763	100	1867	Angiopoietin-1 receptor (EC 2.7.10.1) (Endothelial tyrosine 	w
+HOMOLOGY	human	Q15375	EPHA7	Q15375	191	1600	Ephrin type-A receptor 7 (EC 2.7.10.1) (EPH homology kinase 	w
+HOMOLOGY	human	Q3KR16	PLEKHG6	Q3KR16	24	86	Pleckstrin homology domain-containing family G member 6 (PH 	w
+HOMOLOGY	human	Q494U1	PLEKHN1	Q494U1	24	123	Pleckstrin homology domain-containing family N member 1 (PH 	w
+HOMOLOGY	human	Q4VXA5	KHDC1	Q4VXA5	7	80	KH homology domain-containing protein 1	w
+HOMOLOGY	human	Q53GL0	PLEKHO1	Q53GL0	29	115	Pleckstrin homology domain-containing family O member 1 (PH 	w
+HOMOLOGY	human	Q58EX7	PLEKHG4	Q58EX7	58	216	Puratrophin-1 (Pleckstrin homology domain-containing family 	w
+HOMOLOGY	human	Q5M775	SPECC1	Q5M775	85	243	Cytospin-B (Nuclear structure protein 5) (NSP5) (Sperm antig	w
+HOMOLOGY	human	Q5SXH7	PLEKHS1	Q5SXH7	5	36	Pleckstrin homology domain-containing family S member 1 (PH 	w
+HOMOLOGY	human	Q5VUJ6	LRCH2	Q5VUJ6	20	84	Leucine-rich repeat and calponin homology domain-containing 	w
+HOMOLOGY	human	Q69YQ0	SPECC1L	Q69YQ0	78	240	Cytospin-A (Renal carcinoma antigen NY-REN-22) (Sperm antige	w
+HOMOLOGY	human	Q6IQ23	PLEKHA7	Q6IQ23	100	702	Pleckstrin homology domain-containing family A member 7 (PH 	w
+HOMOLOGY	human	Q6S5L8	SHC4	Q6S5L8	19	51	SHC-transforming protein 4 (Rai-like protein) (RaLP) (SHC-tr	w
+HOMOLOGY	human	Q6ZMT1	STAC2	Q6ZMT1	14	100	SH3 and cysteine-rich domain-containing protein 2 (24b2/STAC	w
+HOMOLOGY	human	Q6ZR37	PLEKHG7	Q6ZR37	11	79	Pleckstrin homology domain-containing family G member 7 (PH 	w
+HOMOLOGY	human	Q6ZWE6	PLEKHM3	Q6ZWE6	14	45	Pleckstrin homology domain-containing family M member 3 (PH 	w
+HOMOLOGY	human	Q70E73	RAPH1	Q70E73	66	201	Ras-associated and pleckstrin homology domains-containing pr	w
+HOMOLOGY	human	Q765P7	MTSS2	Q765P7	30	133	Protein MTSS 2 (Actin-bundling with BAIAP2 homology protein 	w
+HOMOLOGY	human	Q7Z736	PLEKHH3	Q7Z736	15	140	Pleckstrin homology domain-containing family H member 3 (PH 	w
+HOMOLOGY	human	Q7Z7F0	KHDC4	Q7Z7F0	17	87	KH homology domain-containing protein 4 (Brings lots of mone	w
+HOMOLOGY	human	Q8IVE3	PLEKHH2	Q8IVE3	22	95	Pleckstrin homology domain-containing family H member 2	w
+HOMOLOGY	human	Q8IVF7	FMNL3	Q8IVF7	45	210	Formin-like protein 3 (Formin homology 2 domain-containing p	w
+HOMOLOGY	human	Q8IVV2	LOXHD1	Q8IVV2	0	40	Lipoxygenase homology domain-containing protein 1	w
+HOMOLOGY	human	Q8IWE5	PLEKHM2	Q8IWE5	22	156	Pleckstrin homology domain-containing family M member 2 (PH 	w
+HOMOLOGY	human	Q8IZC4	RTKN2	Q8IZC4	13	64	Rhotekin-2 (Pleckstrin homology domain-containing family K m	w
+HOMOLOGY	human	Q8TAS1	UHMK1	Q8TAS1	336	1287	Serine/threonine-protein kinase Kist (EC 2.7.11.1) (Kinase i	w
+HOMOLOGY	human	Q8TBE0	BAHD1	Q8TBE0	41	123	Bromo adjacent homology domain-containing 1 protein (BAH dom	w
+HOMOLOGY	human	Q8TD55	PLEKHO2	Q8TD55	23	78	Pleckstrin homology domain-containing family O member 2 (PH 	w
+HOMOLOGY	human	Q8TF30	WHAMM	Q8TF30	34	112	WASP homolog-associated protein with actin, membranes and mi	w
+HOMOLOGY	human	Q8WV28	BLNK	Q8WV28	23	120	B-cell linker protein (B-cell adapter containing a SH2 domai	w
+HOMOLOGY	human	Q92529	SHC3	Q92529	44	149	SHC-transforming protein 3 (Neuronal Shc) (N-Shc) (Protein R	w
+HOMOLOGY	human	Q92558	WASF1	Q92558	26	137	Actin-binding protein WASF1 (Protein WAVE-1) (Verprolin homo	w
+HOMOLOGY	human	Q96AC1	FERMT2	Q96AC1	27	280	Fermitin family homolog 2 (Kindlin-2) (Mitogen-inducible gen	w
+HOMOLOGY	human	Q96CS7	PLEKHB2	Q96CS7	11	84	Pleckstrin homology domain-containing family B member 2 (PH 	w
+HOMOLOGY	human	Q96II8	LRCH3	Q96II8	38	126	DISP complex protein LRCH3 (Leucine-rich repeat and calponin	w
+HOMOLOGY	human	Q96JA3	PLEKHA8	Q96JA3	11	67	Pleckstrin homology domain-containing family A member 8 (PH 	w
+HOMOLOGY	human	Q96PY5	FMNL2	Q96PY5	39	198	Formin-like protein 2 (Formin homology 2 domain-containing p	w
+HOMOLOGY	human	Q96S99	PLEKHF1	Q96S99	12	75	Pleckstrin homology domain-containing family F member 1 (PH 	w
+HOMOLOGY	human	Q99469	STAC	Q99469	36	106	SH3 and cysteine-rich domain-containing protein (Src homolog	w
+HOMOLOGY	human	Q9H4M7	PLEKHA4	Q9H4M7	841	2959	Pleckstrin homology domain-containing family A member 4 (PH 	w
+HOMOLOGY	human	Q9H7P9	PLEKHG2	Q9H7P9	28	114	Pleckstrin homology domain-containing family G member 2 (PH 	w
+HOMOLOGY	human	Q9H8W4	PLEKHF2	Q9H8W4	37	215	Pleckstrin homology domain-containing family F member 2 (PH 	w
+HOMOLOGY	human	Q9HAU0	PLEKHA5	Q9HAU0	111	286	Pleckstrin homology domain-containing family A member 5 (PH 	w
+HOMOLOGY	human	Q9HB19	PLEKHA2	Q9HB19	39	173	Pleckstrin homology domain-containing family A member 2 (PH 	w
+HOMOLOGY	human	Q9HB20	PLEKHA3	Q9HB20	22	90	Pleckstrin homology domain-containing family A member 3 (PH 	w
+HOMOLOGY	human	Q9HB21	PLEKHA1	Q9HB21	44	208	Pleckstrin homology domain-containing family A member 1 (PH 	w
+HOMOLOGY	human	Q9NW61	PLEKHJ1	Q9NW61	15	65	Pleckstrin homology domain-containing family J member 1 (PH 	w
+HOMOLOGY	human	Q9P281	BAHCC1	Q9P281	25	63	BAH and coiled-coil domain-containing protein 1 (Bromo adjac	w
+HOMOLOGY	human	Q9UF11	PLEKHB1	Q9UF11	5	44	Pleckstrin homology domain-containing family B member 1 (PH 	w
+HOMOLOGY	human	Q9UF33	EPHA6	Q9UF33	47	215	Ephrin type-A receptor 6 (EC 2.7.10.1) (EPH homology kinase 	w
+HOMOLOGY	human	Q9ULL1	PLEKHG1	Q9ULL1	38	242	Pleckstrin homology domain-containing family G member 1	w
+HOMOLOGY	human	Q9ULM0	PLEKHH1	Q9ULM0	29	142	Pleckstrin homology domain-containing family H member 1 (PH 	w
+HOMOLOGY	human	Q9UPQ0	LIMCH1	Q9UPQ0	29	124	LIM and calponin homology domains-containing protein 1	w
+HOMOLOGY	human	Q9UPY6	WASF3	Q9UPY6	28	112	Actin-binding protein WASF3 (Protein WAVE-3) (Verprolin homo	w
+HOMOLOGY	human	Q9Y2H5	PLEKHA6	Q9Y2H5	46	138	Pleckstrin homology domain-containing family A member 6 (PH 	w
+HOMOLOGY	human	Q9Y2L9	LRCH1	Q9Y2L9	34	105	Leucine-rich repeat and calponin homology domain-containing 	w
+HOMOLOGY	human	Q9Y4G2	PLEKHM1	Q9Y4G2	30	139	Pleckstrin homology domain-containing family M member 1 (PH 	w
+HOMOLOGY	human	Q9Y613	FHOD1	Q9Y613	26	221	FH1/FH2 domain-containing protein 1 (Formin homolog overexpr	w
+HOMOLOGY	human	Q9Y6W5	WASF2	Q9Y6W5	36	187	Actin-binding protein WASF2 (Protein WAVE-2) (Verprolin homo	w
+HOMOLOGY	virus	A0A3G1T4B1	BHRF1	A0A3G1T4B1	9	81	Bcl-2 Bcl-2 homology region 1-3 domain-containing protein	w
+HOMOLOGY	virus	Q9YW33	MSV059	Q9YW33	2	261	K Homology domain-containing protein	w
+HOMOLOGY	worm	A0A1X7RBI4	CELE_T10E9.14	A0A1X7RBI4	0	2	K Homology domain-containing protein	w
+HOMOLOGY	worm	A0A4V0ILI5	nova-1	A0A4V0ILI5	1	17	K Homology domain-containing protein	w
+HOMOLOGY	worm	A9Z1L6	ascc-1	A9Z1L6	1	32	K Homology domain-containing protein	w
+HOMOLOGY	worm	G2HK09	CELE_Y56A3A.16	G2HK09	2	8	Rubicon Homology domain-containing protein	w
+HOMOLOGY	worm	G5EBK2	snb-7	G5EBK2	14	108	V-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	H2L067	mex-3	H2L067	2	27	K Homology domain-containing protein	w
+HOMOLOGY	worm	H2L0P5	prhg-1	H2L0P5	0	1	Pleckstrin homology domain-containing family G member 7	w
+HOMOLOGY	worm	H2L0S1	CELE_Y69A2AR.32	H2L0S1	0	1	K Homology domain-containing protein	w
+HOMOLOGY	worm	K8FE02	imph-1	K8FE02	0	23	K Homology domain-containing protein	w
+HOMOLOGY	worm	O18230	vti-1	O18230	10	64	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	O44150	C49A9.6	O44150	0	2	MATH (Meprin-associated Traf homology) domain containing	w
+HOMOLOGY	worm	O45180	CELE_K07H8.9	O45180	0	1	K Homology domain-containing protein	w
+HOMOLOGY	worm	O45420	F31D4.5	O45420	0	1	Pleckstrin homology domain-containing family D member 1	w
+HOMOLOGY	worm	O62236	syx-7	O62236	7	59	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	O62387	syx-17	O62387	5	57	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	O76413	syx-18	O76413	18	57	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	P91027	chdp-1	P91027	0	9	Calponin homology domain-containing protein	w
+HOMOLOGY	worm	P91393	fubl-4	P91393	0	9	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q17832	vgln-1	Q17832	2	20	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q17936	fubl-1	Q17936	2	17	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q18728	C50B8.4	Q18728	0	1	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	Q18922	CELE_D1014.4	Q18922	4	45	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	Q19767	snb-2	Q19767	13	110	V-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	Q21301	crml-1	Q21301	0	6	CARMIL pleckstrin homology domain-containing protein	w
+HOMOLOGY	worm	Q23486	tofu-7	Q23486	1	7	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q23487	fubl-2	Q23487	0	10	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q2V4X2	B0280.17	Q2V4X2	0	1	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q8I4C4	CELE_Y57G11C.36	Q8I4C4	0	3	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q93730	CELE_F46A9.2	Q93730	0	2	MATH (Meprin-associated Traf homology) domain containing	w
+HOMOLOGY	worm	Q94057	snb-6	Q94057	14	111	V-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	Q95PZ1	kdp-1	Q95PZ1	0	17	KASH (Klarsicht/ANC-1/Syne Homology) Domain Protein	w
+HOMOLOGY	worm	Q95QZ1	vamp-8	Q95QZ1	15	56	V-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	Q95XH1	vamp-7	Q95XH1	11	39	V-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	Q95XW7	affl-2	Q95XW7	1	3	AF4/FMR2 C-terminal homology domain-containing protein	w
+HOMOLOGY	worm	Q95Y67	pes-4	Q95Y67	1	48	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q965L0	CELE_M116.5	Q965L0	1	25	Calponin homology domain-containing protein	w
+HOMOLOGY	worm	Q9BLA0	fubl-3	Q9BLA0	1	9	K Homology domain-containing protein	w
+HOMOLOGY	worm	Q9TY08	syx-16	Q9TY08	28	59	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	Q9XXA2	ebp-2	Q9XXA2	2	29	Calponin homology domain-containing protein	w
+HOMOLOGY	yeast	P25339	PUF4	P25339	18	508	Pumilio homology domain family member 4	w
+HOMOLOGY	yeast	P38271	OPY1	P38271	1	14	Pleckstrin homology domain protein OPY1	w
+HOMOLOGY	yeast	Q04373	PUF6	Q04373	5	162	Pumilio homology domain family member 6	w
+HOMOLOGY	zebrafish	A0A0G2L933	plekhg5b	A0A0G2L933	2	25	Pleckstrin homology domain-containing family G member 5 isof	w
+HOMOLOGY	zebrafish	A0A0R4I9G1	plekha1b	A0A0R4I9G1	0	6	Pleckstrin homology domain-containing family A member 1 isof	w
+HOMOLOGY	zebrafish	A0A0R4IJJ4	limch1b	A0A0R4IJJ4	2	4	LIM and calponin homology domains 1b	w
+HOMOLOGY	zebrafish	A0A0R4ISX1	plekhg5a	A0A0R4ISX1	1	27	Pleckstrin homology domain-containing family G member 5 isof	w
+HOMOLOGY	zebrafish	A0A140LH23	plekhg6	A0A140LH23	4	25	Pleckstrin homology domain-containing family G member 6 isof	w
+HOMOLOGY	zebrafish	A0A2R8QBK4	lrch4	A0A2R8QBK4	2	22	Leucine-rich repeat and calponin homology domain-containing 	w
+HOMOLOGY	zebrafish	A0A8M2B9Z8	si:ch211-234p6.5	A0A8M2B9Z8	5	38	Pleckstrin homology domain-containing family A member 4 isof	w
+HOMOLOGY	zebrafish	A0A8M9Q8H1	plekhm1	A0A8M9Q8H1	6	21	Pleckstrin homology domain-containing family M member 1 isof	w
+HOMOLOGY	zebrafish	A0A8M9QCP5	plekha7b	A0A8M9QCP5	16	51	Pleckstrin homology domain-containing family A member 7 isof	w
+HOMOLOGY	zebrafish	A0A8N7UQQ7	raph1a	A0A8N7UQQ7	17	61	Ras-associated and pleckstrin homology domains-containing pr	w
+HOMOLOGY	zebrafish	A4IG55	plekho1a	A4IG55	0	2	Pleckstrin homology domain-containing family O member 1-A	w
+HOMOLOGY	zebrafish	A8HAL3	plekhg7	A8HAL3	0	7	Pleckstrin homology domain-containing family G member 7	w
+HOMOLOGY	zebrafish	B6RSP1	plekha7	B6RSP1	1	1	Pleckstrin homology domain-containing family A member 7	w
+HOMOLOGY	zebrafish	B8A4X7	limch1a	B8A4X7	2	4	LIM and calponin homology domains 1a	w
+HOMOLOGY	zebrafish	E7EY37	bahd1	E7EY37	0	2	Bromo adjacent homology domain-containing 1	w
+HOMOLOGY	zebrafish	E7FG09	LOC100331694	E7FG09	0	2	Bromo adjacent homology domain-containing 1 protein isoform 	w
+HOMOLOGY	zebrafish	E9QFG1	lrch1	E9QFG1	0	22	Leucine-rich repeat and calponin homology domain-containing 	w
+HOMOLOGY	zebrafish	E9QIX7	plekho1b	E9QIX7	1	9	Pleckstrin homology domain-containing family O member 1b	w
+HOMOLOGY	zebrafish	F1QG29	tpte	F1QG29	1	42	Transmembrane phosphatase with tensin homology	w
+HOMOLOGY	zebrafish	F1R282	plekhm3	F1R282	0	2	Pleckstrin homology domain-containing family M member 3	w
+HOMOLOGY	zebrafish	F1R8A2	plekha5	F1R8A2	8	34	Pleckstrin homology domain-containing family A member 5	w
+HOMOLOGY	zebrafish	I3ITQ9	si:ch211-18i17.2	I3ITQ9	3	16	Pleckstrin homology domain-containing family H member 3	w
+HOMOLOGY	zebrafish	Q1LX18	shc2	Q1LX18	7	44	SHC (Src homology 2 domain-containing)-transforming protein 	w
+HOMOLOGY	zebrafish	Q5RIW6	bach2b	Q5RIW6	13	15	BTB and CNC homology 1, basic leucine zipper transcription f	w
+HOMOLOGY	zebrafish	Q5U3N0	plekha8	Q5U3N0	0	5	Pleckstrin homology domain-containing family A member 8	w
+HOMOLOGY	zebrafish	Q6NZ18	khdc4	Q6NZ18	0	3	KH homology domain-containing protein 4	w
+HOMOLOGY	zebrafish	Q6P0G8	plekhj1	Q6P0G8	0	6	Pleckstrin homology domain-containing family J member 1	w
+HOMOLOGY	zebrafish	Q7T3F6	plekhf1	Q7T3F6	0	8	Pleckstrin homology domain-containing family F member 1	w
+HOMOLOGY	zebrafish	Q7ZUV1	plekhf2	Q7ZUV1	0	9	Pleckstrin homology domain-containing family F member 2	w
+HOMOLOGY	zebrafish	X1WCB1	bach2a	X1WCB1	12	13	BTB and CNC homology 1, basic leucine zipper transcription f	w
+HOMOLOGY-LIKE	human	Q53GA4	PHLDA2	Q53GA4	8	123	Pleckstrin homology-like domain family A member 2 (Beckwith-	w
+HOMOLOGY-LIKE	human	Q6NSJ2	PHLDB3	Q6NSJ2	26	119	Pleckstrin homology-like domain family B member 3	w
+HOMOLOGY-LIKE	human	Q86SQ0	PHLDB2	Q86SQ0	80	292	Pleckstrin homology-like domain family B member 2 (Protein L	w
+HOMOLOGY-LIKE	human	Q86UU1	PHLDB1	Q86UU1	61	230	Pleckstrin homology-like domain family B member 1 (Protein L	w
+HOMOLOGY-LIKE	human	Q8WV24	PHLDA1	Q8WV24	10	105	Pleckstrin homology-like domain family A member 1 (Apoptosis	w
+HOMOLOGY-LIKE	human	Q9Y5J5	PHLDA3	Q9Y5J5	27	188	Pleckstrin homology-like domain family A member 3 (TDAG51/Ip	w
+HOMOLOGY-LIKE	zebrafish	A0A8M2B4B1	phldb1b	A0A8M2B4B1	0	7	Pleckstrin homology-like domain family B member 1	w
+HOMOLOGY-LIKE	zebrafish	A0A8N7TEA5	phldb1a	A0A8N7TEA5	0	7	Pleckstrin homology-like domain family B member 1	w
+HOMOLOGY-LIKE	zebrafish	Q5XJ33	phlda1	Q5XJ33	1	5	Pleckstrin homology-like domain family A member 1	w
+HOMOSERINE	yeast	P08465	MET2	P08465	0	4	Homoserine O-acetyltransferase	w
+HOMOSERINE	yeast	P17423	THR1	P17423	0	20	Homoserine kinase	w
+HOMOSERINE	yeast	P31116	HOM6	P31116	0	18	Homoserine dehydrogenase	w
+HOMOTHALLIC	yeast	P09932	HO	P09932	0	31	Homothallic switching endonuclease	w
+HOMOTHORAX	fly	FBgn0001235	hth	O46339	83	449	Homeobox protein homothorax (Homeobox protein dorsotonals)	w
+HOMOZYGOUSLY	human	O95155	UBE4B	O95155	40	185	Ubiquitin conjugation factor E4 B (EC 2.3.2.27) (Homozygousl	w
+HOMT-1	worm	Q9N4D9	homt-1	Q9N4D9	1	3	Alpha N-terminal protein methyltransferase 1	

@@ -1,41 +1,206 @@
-CHI	arabidopsis-thaliana	O24603	CHI	O24603	0	1	Endochitinase CHI
-CHI	oryza-sativa-subsp-japonica	Q84T92	CHI	Q84T92	0	4	Chalcone--flavanone isomerase
-CHI	zea-mays	Q08704	CHI	Q08704	2	20	Chalcone--flavanone isomerase
-CHI-B	arabidopsis-thaliana	P19171	CHI-B	P19171	0	2	Basic endochitinase B
-CHI1	arabidopsis-thaliana	P41088	CHI1	P41088	1	24	Chalcone--flavanone isomerase 1
-CHI1	glycine-max	O81980	CHI1	O81980	0	2	Chalcone--flavanone isomerase 1
-CHI1A	glycine-max	Q93XE6	CHI1A	Q93XE6	0	2	Chalcone--flavanone isomerase 1A
-CHI1B1	glycine-max	Q53B75	CHI1B1	Q53B75	0	2	Chalcone--flavanone isomerase 1B-1
-CHI1B2	glycine-max	I1LFF1	CHI1B2	I1LFF1	0	2	Chalcone-flavonone isomerase family protein
-CHI1B2	glycine-max	Q53B70	CHI1B2	Q53B70	0	2	Chalcone--flavanone isomerase 1B-2
-CHI2	arabidopsis-thaliana	Q9FKW3	CHI2	Q9FKW3	1	16	Chalcone--flavanone isomerase 2
-CHI2-A	glycine-max	C6SWQ7	CHI2-A	C6SWQ7	0	2	Chalcone-flavonone isomerase family protein
-CHI2-A	glycine-max	Q53B74	CHI2-A	Q53B74	0	2	Chalcone--flavanone isomerase 2-A
-CHI2-B	glycine-max	A7ISP5	CHI2-B	A7ISP5	0	2	Chalcone--flavanone isomerase 2-B
-CHI3	arabidopsis-thaliana	Q8VZW3	CHI3	Q8VZW3	0	6	Probable chalcone--flavanone isomerase 3
-CHI3	glycine-max	A7ISP6	CHI3	A7ISP6	0	2	Chalcone--flavanone isomerase 3
-CHI3L1	mus-musculus	Q61362	Chi3l1	Q61362	1	21	Chitinase-3-like protein 1
-CHI3L1	rattus-norvegicus	Q9WTV1	Chi3l1	Q9WTV1	5	44	Chitinase-3-like protein 1
-CHI3L3	rattus-norvegicus	F1M559	Chi3l3	F1M559	0	30	Chitinase 3-like 3
-CHI4A	glycine-max	Q53B72	CHI4A	Q53B72	0	4	Chalcone-flavonone isomerase family protein
-CHI4B	glycine-max	A0A0R4J387	CHI4B	A0A0R4J387	0	4	Chalcone-flavonone isomerase family protein
-CHIA	mus-musculus	Q91XA9	Chia	Q91XA9	0	9	Acidic mammalian chitinase
-CHIA	rattus-norvegicus	Q6RY07	Chia	Q6RY07	6	32	Acidic mammalian chitinase
-CHIA1	glycine-max	Q9SDY6	Chia1	Q9SDY6	0	7	chitinase
-CHIAL1	rattus-norvegicus	D4A2D4	Chial1	D4A2D4	3	32	Chitinase acidic-like 1
-CHIB1	oryza-sativa-subsp-japonica	Q9FYR9	chib1	Q9FYR9	0	14	Class III chitinase
-CHIC	arabidopsis-thaliana	O81862	ChiC	O81862	0	11	Class V chitinase
-CHIC	pseudomonas-aeruginosa	Q9I1H5	chiC	Q9I1H5	0	5	chitinase
-CHID1	dictyostelium-discoideum	Q54G42	chid1	Q54G42	0	2	Chitinase domain-containing protein 1
-CHID1	mus-musculus	Q922Q9	Chid1	Q922Q9	2	16	Chitinase domain-containing protein 1
-CHID1	rattus-norvegicus	Q7TP14	Chid1	Q7TP14	1	18	Chitinase domain-containing protein 1
-CHIL3	mus-musculus	O35744	Chil3	O35744	0	6	Chitinase-like protein 3
-CHIL4	mus-musculus	Q91Z98	Chil4	Q91Z98	0	4	Chitinase-like protein 4
-CHIL5	mus-musculus	A0A0G2JDS2	Chil5	A0A0G2JDS2	0	5	Chitinase-like 5
-CHIL6	mus-musculus	Q80W26	Chil6	Q80W26	0	6	Chitinase-like 6
-CHIP	arabidopsis-thaliana	Q9SRS9	CHIP	Q9SRS9	50	146	E3 ubiquitin-protein ligase CHIP
-CHIP	escherichia-coli-83333	P75733	chiP	P75733	0	16	Chitoporin
-CHIP	salmonella-typhimurium	Q7CQY4	chiP	Q7CQY4	1	12	Chitoporin
-CHIT1	mus-musculus	Q9D7Q1	Chit1	Q9D7Q1	1	6	Chitotriosidase-1
-CHIT1	rattus-norvegicus	A0S5V8	Chit1	A0S5V8	7	31	Chitotriosidase-1
-CHIZ	mycobacterium-tuberculosis	I6YA32	chiZ	I6YA32	1	8	Cell wall hydrolase ChiZ
+CHI	arabidopsis-thaliana	O24603	CHI	O24603	0	1	Endochitinase CHI	
+CHI	fly	FBgn0013764	Chi	Q7KVG9	95	521	Chip, isoform B (RE67266p)	
+CHI	oryza-sativa-subsp-japonica	Q84T92	CHI	Q84T92	0	4	Chalcone--flavanone isomerase	
+CHI	zea-mays	Q08704	CHI	Q08704	2	20	Chalcone--flavanone isomerase	
+CHI-1	human	Q8N144	GJD3	Q8N144	20	488	Gap junction delta-3 protein (Connexin-31.9) (Cx31.9) (Gap j	w
+CHI-B	arabidopsis-thaliana	P19171	CHI-B	P19171	0	2	Basic endochitinase B	
+CHI1	arabidopsis-thaliana	P41088	CHI1	P41088	1	24	Chalcone--flavanone isomerase 1	
+CHI1	glycine-max	O81980	CHI1	O81980	0	2	Chalcone--flavanone isomerase 1	
+CHI1A	glycine-max	Q93XE6	CHI1A	Q93XE6	0	2	Chalcone--flavanone isomerase 1A	
+CHI1B1	glycine-max	Q53B75	CHI1B1	Q53B75	0	2	Chalcone--flavanone isomerase 1B-1	
+CHI1B2	glycine-max	I1LFF1	CHI1B2	I1LFF1	0	2	Chalcone-flavonone isomerase family protein	
+CHI1B2	glycine-max	Q53B70	CHI1B2	Q53B70	0	2	Chalcone--flavanone isomerase 1B-2	
+CHI2	arabidopsis-thaliana	Q9FKW3	CHI2	Q9FKW3	1	16	Chalcone--flavanone isomerase 2	
+CHI2-A	glycine-max	C6SWQ7	CHI2-A	C6SWQ7	0	2	Chalcone-flavonone isomerase family protein	
+CHI2-A	glycine-max	Q53B74	CHI2-A	Q53B74	0	2	Chalcone--flavanone isomerase 2-A	
+CHI2-B	glycine-max	A7ISP5	CHI2-B	A7ISP5	0	2	Chalcone--flavanone isomerase 2-B	
+CHI3	arabidopsis-thaliana	Q8VZW3	CHI3	Q8VZW3	0	6	Probable chalcone--flavanone isomerase 3	
+CHI3	glycine-max	A7ISP6	CHI3	A7ISP6	0	2	Chalcone--flavanone isomerase 3	
+CHI3L1	human	P36222	CHI3L1	P36222	11	192	Chitinase-3-like protein 1 (39 kDa synovial protein) (Cartil	
+CHI3L1	mus-musculus	Q61362	Chi3l1	Q61362	1	21	Chitinase-3-like protein 1	
+CHI3L1	rattus-norvegicus	Q9WTV1	Chi3l1	Q9WTV1	5	44	Chitinase-3-like protein 1	
+CHI3L2	human	Q15782	CHI3L2	Q15782	5	90	Chitinase-3-like protein 2 (Chondrocyte protein 39) (YKL-39)	
+CHI3L3	rattus-norvegicus	F1M559	Chi3l3	F1M559	0	30	Chitinase 3-like 3	
+CHI4A	glycine-max	Q53B72	CHI4A	Q53B72	0	4	Chalcone-flavonone isomerase family protein	
+CHI4B	glycine-max	A0A0R4J387	CHI4B	A0A0R4J387	0	4	Chalcone-flavonone isomerase family protein	
+CHIA	human	Q9BZP6	CHIA	Q9BZP6	12	101	Acidic mammalian chitinase (AMCase) (EC 3.2.1.14) (Lung-spec	
+CHIA	mus-musculus	Q91XA9	Chia	Q91XA9	0	9	Acidic mammalian chitinase	
+CHIA	rattus-norvegicus	Q6RY07	Chia	Q6RY07	6	32	Acidic mammalian chitinase	
+CHIA.1	zebrafish	Q7ZVF1	chia.1	Q7ZVF1	2	31	chitinase	
+CHIA.2	zebrafish	Q6P006	chia.2	Q6P006	1	31	chitinase	
+CHIA.3	zebrafish	Q6NZZ8	chia.3	Q6NZZ8	1	31	chitinase	
+CHIA.6	zebrafish	B7ZVM0	chia.6	B7ZVM0	3	24	chitinase	
+CHIA.6	zebrafish	F1QJL0	chia.6	F1QJL0	1	31	chitinase	
+CHIA1	glycine-max	Q9SDY6	Chia1	Q9SDY6	0	7	chitinase	
+CHIAL1	rattus-norvegicus	D4A2D4	Chial1	D4A2D4	3	32	Chitinase acidic-like 1	
+CHIASM	fly	FBgn0003285	rst	Q08180	162	2405	Irregular chiasm C-roughest protein (Protein IRREC)	w
+CHIASM-LIKE	human	Q6UWL6	KIRREL2	Q6UWL6	26	108	Kin of IRRE-like protein 2 (Kin of irregular chiasm-like pro	w
+CHIASM-LIKE	human	Q8IZU9	KIRREL3	Q8IZU9	34	132	Kin of IRRE-like protein 3 (Kin of irregular chiasm-like pro	w
+CHIASM-LIKE	human	Q96J84	KIRREL1	Q96J84	45	218	Kin of IRRE-like protein 1 (Kin of irregular chiasm-like pro	w
+CHIASMATA	human	Q5VXU9	SHOC1	Q5VXU9	2	22	Protein shortage in chiasmata 1 ortholog (EC 3.6.-.-) (Prote	w
+CHIA_HUMAN	human	Q9BZP6	CHIA	Q9BZP6	12	101		
+CHIB1	oryza-sativa-subsp-japonica	Q9FYR9	chib1	Q9FYR9	0	14	Class III chitinase	
+CHIBBY	fly	FBgn0067317	Cby	B9A0M5	2	6	Chibby, isoform E	w
+CHIBBY	human	Q8NA61	CBY2	Q8NA61	50	184	Protein chibby homolog 2 (Spermatid-associated protein)	w
+CHIBBY	human	Q9Y3M2	CBY1	Q9Y3M2	36	211	Protein chibby homolog 1 (ARPP-binding protein) (Cytosolic l	w
+CHIBBY3	human	A6NI87	CBY3	A6NI87	10	50	Sperm annulus positioning complex subunit Chibby3	w
+CHIC	arabidopsis-thaliana	O81862	ChiC	O81862	0	11	Class V chitinase	
+CHIC	fly	FBgn0000308	chic	P25843	58	360	Profilin (Protein chickadee)	
+CHIC	pseudomonas-aeruginosa	Q9I1H5	chiC	Q9I1H5	0	5	chitinase	
+CHIC1	human	Q5VXU3	CHIC1	Q5VXU3	3	18	Cysteine-rich hydrophobic domain-containing protein 1 (Brain	
+CHIC1_HUMAN	human	Q5VXU3	CHIC1	Q5VXU3	3	18		
+CHIC2	human	Q9UKJ5	CHIC2	Q9UKJ5	5	89	Cysteine-rich hydrophobic domain-containing protein 2 (BrX-l	
+CHIC2_HUMAN	human	Q9UKJ5	CHIC2	Q9UKJ5	5	89		
+CHICA	human	Q9H4H8	SACK1D	Q9H4H8	28	180	Scaffolding CK1 anchoring protein D (Protein FAM83D) (Spindl	w
+CHICKADEE	fly	FBgn0000308	chic	P25843	58	360	Profilin (Protein chickadee)	w
+CHICKEN	human	Q7L7X3	TAOK1	Q7L7X3	30	184	Serine/threonine-protein kinase TAO1 (EC 2.7.11.1) (Kinase f	w
+CHICKEN	human	Q9UL54	TAOK2	Q9UL54	26	123	Serine/threonine-protein kinase TAO2 (EC 2.7.11.1) (Kinase f	w
+CHICO	fly	FBgn0024248	chico	Q9XTN2	15	88	Insulin receptor substrate 1 (dIRS) (Protein chico)	w
+CHICO	fly	FBgn0024248	chico	Q9XTN2	15	88	Insulin receptor substrate 1 (dIRS) (Protein chico)	w
+CHICO	zebrafish	Q9PTS6	chico	Q9PTS6	3	27	Chico	w
+CHICO	zebrafish	Q9PTS6	chico	Q9PTS6	3	27	Chico	w
+CHICO_286	fly	FBgn0024248	chico	Q9XTN2	15	88		
+CHICO_327	fly	FBgn0024248	chico	Q9XTN2	15	88		
+CHICO_342	fly	FBgn0024248	chico	Q9XTN2	15	88		
+CHICO_471	fly	FBgn0024248	chico	Q9XTN2	15	88		
+CHICO_502	fly	FBgn0024248	chico	Q9XTN2	15	88		
+CHICO_555	fly	FBgn0024248	chico	Q9XTN2	15	88		
+CHID1	dictyostelium-discoideum	Q54G42	chid1	Q54G42	0	2	Chitinase domain-containing protein 1	
+CHID1	human	Q9BWS9	CHID1	Q9BWS9	10	141	Chitinase domain-containing protein 1 (Stabilin-1-interactin	
+CHID1	mus-musculus	Q922Q9	Chid1	Q922Q9	2	16	Chitinase domain-containing protein 1	
+CHID1	rattus-norvegicus	Q7TP14	Chid1	Q7TP14	1	18	Chitinase domain-containing protein 1	
+CHID1	zebrafish	Q7SYK0	chid1	Q7SYK0	0	71	Chitinase domain-containing protein 1	
+CHID1_HUMAN	human	Q9BWS9	CHID1	Q9BWS9	10	141		
+CHIF	fly	FBgn0000307	chif	Q9NK54	5	13	Protein chiffon	
+CHIFFON	fly	FBgn0000307	chif	Q9NK54	5	13	Protein chiffon	w
+CHIFFON	human	Q8NFT6	DBF4B	Q8NFT6	10	79	Protein DBF4 homolog B (Activator of S phase kinase-like pro	w
+CHIFFON	human	Q9UBU7	DBF4	Q9UBU7	64	323	Protein DBF4 homolog A (Activator of S phase kinase) (Chiffo	w
+CHIL-10	worm	Q18607	chil-10	Q18607	0	7	Chitinase domain-containing protein 1	
+CHIL-17	worm	Q21859	chil-17	Q21859	0	5	GH18 domain-containing protein	
+CHIL-18	worm	Q21861	chil-18	Q21861	0	3	GH18 domain-containing protein	
+CHIL-23	worm	G5EBF8	chil-23	G5EBF8	0	6	GH18 domain-containing protein	
+CHIL-26	worm	Q22596	chil-26	Q22596	0	1	GH18 domain-containing protein	
+CHIL-5	worm	Q17835	chil-5	Q17835	0	2	GH18 domain-containing protein	
+CHIL3	mus-musculus	O35744	Chil3	O35744	0	6	Chitinase-like protein 3	
+CHIL4	mus-musculus	Q91Z98	Chil4	Q91Z98	0	4	Chitinase-like protein 4	
+CHIL5	mus-musculus	A0A0G2JDS2	Chil5	A0A0G2JDS2	0	5	Chitinase-like 5	
+CHIL6	mus-musculus	Q80W26	Chil6	Q80W26	0	6	Chitinase-like 6	
+CHILD	fly	FBgn0263510	nclb	A1Z8D0	4	56	Periodic tryptophan protein 1 homolog (PWP1) (Protein no chi	w
+CHILDREN	fly	FBgn0010328	woc	A8JRE3	11	44	Without children, isoform B	w
+CHIMAERIN	zebrafish	E7F3K5	chn2	E7F3K5	3	6	Chimaerin	w
+CHIMAERIN	zebrafish	Q7ZUT6	chn1	Q7ZUT6	4	8	Chimaerin	w
+CHIMERIC	human	A5A3E0	POTEF	A5A3E0	58	371	POTE ankyrin domain family member F (ANKRD26-like family C m	w
+CHIMERIC	human	P0DP91	ERCC6	P0DP91	12	142	Chimeric ERCC6-PGBD3 protein (Chimeric CSB-PGBD3 protein)	w
+CHIMERIC	human	Q6ZT62	BARGIN	Q6ZT62	2	8	Bargin (Chimeric SH3BP1-PDXP protein)	w
+CHIMERIN	worm	Q965N4	chin-1	Q965N4	2	10	Chimerin 2	w
+CHIMP	human	Q96PM5	RCHY1	Q96PM5	48	385		
+CHIN-1	worm	Q965N4	chin-1	Q965N4	2	10	Chimerin 2	
+CHINMO	fly	FBgn0086758	chinmo	Q7KU09	99	367	Chronologically inappropriate morphogenesis, isoform E (Chro	
+CHINMO_140	fly	FBgn0086758	chinmo	Q7KU09	99	367		
+CHIN_HUMAN	human	P15882	CHN1	P15882	13	142		
+CHIO_HUMAN	human	P52757	CHN2	P52757	10	99		
+CHIP	arabidopsis-thaliana	Q9SRS9	CHIP	Q9SRS9	50	146	E3 ubiquitin-protein ligase CHIP	
+CHIP	escherichia-coli-83333	P75733	chiP	P75733	0	16	Chitoporin	
+CHIP	fly	FBgn0013764	Chi	Q7KVG9	95	521	Chip, isoform B (RE67266p)	w
+CHIP	fly	FBgn0027052	STUB1	Q9XYW6	27	123	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (RING-type E3	w
+CHIP	human	Q9UNE7	STUB1	Q9UNE7	140	695		
+CHIP	salmonella-typhimurium	Q7CQY4	chiP	Q7CQY4	1	12	Chitoporin	
+CHIP	worm	G5ECY6	chn-1	G5ECY6	12	85	E3 ubiquitin-protein ligase CHIP	w
+CHIP	zebrafish	F1Q8K3	stub1	F1Q8K3	33	107	E3 ubiquitin-protein ligase CHIP	w
+CHIP-DERIVED	human	Q8N365	CIART	Q8N365	9	28	Circadian-associated transcriptional repressor (ChIP-derived	w
+CHIP28	human	P29972	AQP1	P29972	13	348		
+CHIP_HUMAN	human	Q9UNE7	STUB1	Q9UNE7	140	695		
+CHIT1	human	Q13231	CHIT1	Q13231	9	77	Chitotriosidase-1 (EC 3.2.1.14) (Chitinase-1)	
+CHIT1	mus-musculus	Q9D7Q1	Chit1	Q9D7Q1	1	6	Chitotriosidase-1	
+CHIT1	rattus-norvegicus	A0S5V8	Chit1	A0S5V8	7	31	Chitotriosidase-1	
+CHIT1_HUMAN	human	Q13231	CHIT1	Q13231	9	77		
+CHITIN	fly	FBgn0001311	kkv	Q8IPN4	1	9	chitin synthase (EC 2.4.1.16)	w
+CHITIN	fly	FBgn0029091	Chs2	Q9VNW7	3	70	chitin synthase (EC 2.4.1.16)	w
+CHITIN	fly	FBgn0032598	ChLD3	Q9VJI8	27	243	Chitin and LDLR binding deacetylase 3 (RE01566p)	w
+CHITIN	fly	FBgn0034197	Cda9	A1ZAQ7	22	243	Chitin deacetylase-like 9, isoform A (EC 3.5.-.-) (Chitin de	w
+CHITIN	fly	FBgn0051973	Cda5	Q9VPI3	3	23	Chitin deacetylase-like 5, isoform B (EC 3.5.-.-)	w
+CHITIN	fly	FBgn0052499	Cda4	Q9VR69	24	244	Chitin deacetylase-like 4 (RE51076p)	w
+CHITIN	worm	G5ECD6	chs-1	G5ECD6	1	26	Chitin synthase chs-1	w
+CHITIN	worm	P34504	chtb-1	P34504	1	12	Chitin binding domain (ChtBD2) containing chtb-1	w
+CHITIN	worm	Q95X60	gpaa-1	Q95X60	3	6	Chitin synthase	w
+CHITIN	yeast	P08004	CHS1	P08004	1	35	Chitin synthase 1	w
+CHITIN	yeast	P14180	CHS2	P14180	2	41	Chitin synthase 2	w
+CHITIN	yeast	P29465	CHS3	P29465	3	51	Chitin synthase 3	w
+CHITIN	yeast	P34226	SKT5	P34226	5	35	Chitin synthase regulator SKT5	w
+CHITIN	yeast	P38843	CHS7	P38843	1	25	Chitin synthase export chaperone	w
+CHITIN	yeast	P40955	CHS6	P40955	3	16	Chitin biosynthesis protein CHS6	w
+CHITIN	yeast	Q06702	CDA1	Q06702	1	22	Chitin deacetylase 1	w
+CHITIN	yeast	Q06703	CDA2	Q06703	0	24	Chitin deacetylase 2	w
+CHITIN	yeast	Q08054	CSI2	Q08054	0	3	Chitin synthase 3 complex protein CSI2	w
+CHITIN	yeast	Q12114	CHS5	Q12114	5	72	Chitin biosynthesis protein CHS5	w
+CHITIN	zebrafish	E7F1A0	chs1	E7F1A0	3	51	chitin synthase	w
+CHITIN-BINDING	fly	FBgn0035607	CG4835	Q9VRL7	2	80	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0035931	CG13312	Q9VSQ5	20	249	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0035932	CG13308	Q9VSQ6	21	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0035933	CG13309	Q9VSQ7	25	245	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0036225	CG5883	Q9VTR0	25	248	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0036227	CG17826	Q9VTR2	36	276	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0036362	CG10725	Q8IQJ4	21	262	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0036363	CG10140	Q9VU74	30	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0036948	CG7298	Q9VW90	14	246	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0039042	CG13837	Q9VCS0	16	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0040607	CG14244	Q9VBC3	24	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0051077	CG31077	Q8IMQ3	37	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0052036	CG32036	Q9VT02	35	277	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0052302	CG32302	Q9W030	33	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0053263	CG33263	Q7KUJ0	24	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0053985	CG33985	Q2PDY7	32	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0053986	CG33986	Q2PDY8	18	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0085249	CG34220	A8DY89	22	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0085455	CG34426	A8JNN8	41	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0085456	CG34427	A8JNN9	33	244	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0085599	CG41284	A8Y548	0	2	Chitin-binding type-4 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0259192	CG42296	Q9VQ68	60	243	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0260997	CG42598	D2A6L3	0	2	Chitin-binding type-4 domain-containing protein	w
+CHITIN-BINDING	fly	FBgn0263748	CG43673	M9PEP7	14	244	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	virus	A0A916KQ89	MYSEV_173	A0A916KQ89	12	301	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	virus	A0A916KQI8	MYSEV_148	A0A916KQI8	8	301	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	worm	G5EDA8	CELE_Y45F10B.13	G5EDA8	0	1	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	worm	O01780	ule-1	O01780	0	10	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	worm	O45599	cbd-1	O45599	0	7	Chitin-binding domain protein cbd-1	w
+CHITIN-BINDING	worm	Q18529	C39D10.7	Q18529	0	15	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	worm	Q21496	lrpc-1	Q21496	0	12	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	worm	Q21650	CELE_R02F2.4	Q21650	0	1	Chitin-binding type-2 domain-containing protein	w
+CHITIN-BINDING	worm	Q9XUB6	pqn-74	Q9XUB6	0	3	Chitin-binding type-2 domain-containing protein	w
+CHITINASE	fly	FBgn0022700	Cht4	Q9W2M6	26	244	Chitinase 4 (EC 3.2.1.14) (RE62779p)	w
+CHITINASE	fly	FBgn0022702	Cht2	Q9W092	26	246	Probable chitinase 2 (EC 3.2.1.14)	w
+CHITINASE	fly	FBgn0029913	Cht11	Q9W3V1	0	4	Chitinase 11 (EC 3.2.1.14) (RE35233p)	w
+CHITINASE	fly	FBgn0031996	CG8460	Q9VLS0	35	256	Chitinase domain-containing protein 1	w
+CHITINASE	fly	FBgn0034580	Cht8	Q9W2M7	28	244	Chitinase 8 (EC 3.2.1.14)	w
+CHITINASE	fly	FBgn0034582	Cht9	Q9W2M5	11	250	Chitinase 9 (EC 3.2.1.14)	w
+CHITINASE	fly	FBgn0035398	Cht7	Q9VZV2	7	250	Chitinase 7 (EC 3.2.1.14) (LD45559p)	w
+CHITINASE	fly	FBgn0038180	Cht5	Q9VFR3	27	271	Chitinase 5 (EC 3.2.1.14) (LP08894p)	w
+CHITINASE	fly	FBgn0050293	Cht12	Q8MLW8	20	243	Chitinase 12 (EC 3.2.1.14)	w
+CHITINASE	fly	FBgn0250907	Cht10	Q9W5U2	0	1	Probable chitinase 10 (EC 3.2.1.14) (Probable chitinase 1) (	w
+CHITINASE	human	Q9BWS9	CHID1	Q9BWS9	10	141	Chitinase domain-containing protein 1 (Stabilin-1-interactin	w
+CHITINASE	human	Q9BZP6	CHIA	Q9BZP6	12	101	Acidic mammalian chitinase (AMCase) (EC 3.2.1.14) (Lung-spec	w
+CHITINASE	worm	Q18607	chil-10	Q18607	0	7	Chitinase domain-containing protein 1	w
+CHITINASE	yeast	Q06350	CTS2	Q06350	1	6	Sporulation-specific chitinase 2	w
+CHITINASE	zebrafish	B7ZVM0	chia.6	B7ZVM0	3	24	chitinase	w
+CHITINASE	zebrafish	F1QJL0	chia.6	F1QJL0	1	31	chitinase	w
+CHITINASE	zebrafish	Q6NZZ8	chia.3	Q6NZZ8	1	31	chitinase	w
+CHITINASE	zebrafish	Q6P006	chia.2	Q6P006	1	31	chitinase	w
+CHITINASE	zebrafish	Q7SYK0	chid1	Q7SYK0	0	71	Chitinase domain-containing protein 1	w
+CHITINASE	zebrafish	Q7ZVF1	chia.1	Q7ZVF1	2	31	chitinase	w
+CHITINASE-1	human	Q13231	CHIT1	Q13231	9	77	Chitotriosidase-1 (EC 3.2.1.14) (Chitinase-1)	w
+CHITINASE-3-LIKE	human	P36222	CHI3L1	P36222	11	192	Chitinase-3-like protein 1 (39 kDa synovial protein) (Cartil	w
+CHITINASE-3-LIKE	human	Q15782	CHI3L2	Q15782	5	90	Chitinase-3-like protein 2 (Chondrocyte protein 39) (YKL-39)	w
+CHITINASE-LIKE	fly	FBgn0020414	Idgf3	Q8MLZ7	13	244	Chitinase-like protein Idgf3 (Imaginal disk growth factor pr	w
+CHITINASE-LIKE	fly	FBgn0020415	Idgf2	Q9V3D4	15	246	Chitinase-like protein Idgf2 (Imaginal disk growth factor pr	w
+CHITINASE-LIKE	fly	FBgn0020416	Idgf1	Q8MM24	15	244	Chitinase-like protein Idgf1 (Imaginal disk growth factor pr	w
+CHITINASE-LIKE	fly	FBgn0026415	Idgf4	Q9W303	16	267	Chitinase-like protein Idgf4 (Imaginal disk growth factor pr	w
+CHITINASE-LIKE	fly	FBgn0064237	Idgf5	Q8T0R7	32	246	Chitinase-like protein Idgf5 (Imaginal disk growth factor pr	w
+CHITINASE-LIKE	human	Q9BWS9	CHID1	Q9BWS9	10	141	Chitinase domain-containing protein 1 (Stabilin-1-interactin	w
+CHITINASE-LIKE	worm	Q18143	cht-3	Q18143	0	7	Chitinase-like protein C25A8.4	w
+CHITOBIOSYLDIPHOSPHODOLICHOL	fly	FBgn0038552	Alg1	Q9VEE9	0	23	ALG1, chitobiosyldiphosphodolichol beta-mannosyltransferase 	w
+CHITOBIOSYLDIPHOSPHODOLICHOL	human	Q9BT22	ALG1	Q9BT22	4	168	Chitobiosyldiphosphodolichol beta-mannosyltransferase (EC 2.	w
+CHITOBIOSYLDIPHOSPHODOLICHOL	worm	Q22797	algn-1	Q22797	0	5	Chitobiosyldiphosphodolichol beta-mannosyltransferase	w
+CHITOBIOSYLDIPHOSPHODOLICHOL	yeast	P16661	ALG1	P16661	0	13	Chitobiosyldiphosphodolichol beta-mannosyltransferase	w
+CHITOTRIOSIDASE-1	human	Q13231	CHIT1	Q13231	9	77	Chitotriosidase-1 (EC 3.2.1.14) (Chitinase-1)	w
+CHIZ	mycobacterium-tuberculosis	I6YA32	chiZ	I6YA32	1	8	Cell wall hydrolase ChiZ	
+CHI_472	fly	FBgn0013764	Chi	Q7KVG9	95	521		

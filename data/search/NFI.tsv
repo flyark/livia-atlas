@@ -1,14 +1,41 @@
-NFI	escherichia-coli-83333	P68739	nfi	P68739	2	8	Endonuclease V
-NFI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GGQ9	nfi	A0A0H3GGQ9	0	11	Endonuclease V
-NFI	nocardia-brasiliensis	K0F5F0	nfi	K0F5F0	0	2	Endonuclease V
-NFI	salmonella-typhimurium	P68738	nfi	P68738	0	1	Endonuclease V
-NFI	shigella-dysenteriae-serotype-1	Q32AH1	nfi	Q32AH1	1	2	Endonuclease V
-NFIA	mus-musculus	Q02780	Nfia	Q02780	0	4	Nuclear factor 1 A-type
-NFIA	rattus-norvegicus	P09414	Nfia	P09414	1	5	Nuclear factor 1 A-type
-NFIB	mus-musculus	P97863	Nfib	P97863	0	14	Nuclear factor 1 B-type
-NFIC	mus-musculus	P70255	Nfic	P70255	2	16	Nuclear factor 1 C-type
-NFIL3	mus-musculus	O08750	Nfil3	O08750	6	22	Nuclear factor interleukin-3-regulated protein
-NFIL3	rattus-norvegicus	Q6IMZ0	Nfil3	Q6IMZ0	10	45	Nuclear factor interleukin-3-regulated protein
-NFILZ	mus-musculus	A0A5F8MPM5	Nfilz	A0A5F8MPM5	3	5	E4 promoter-binding protein 4
-NFIX	mus-musculus	P70257	Nfix	P70257	0	44	Nuclear factor 1 X-type
-NFIX	rattus-norvegicus	A0A0G2K1B6	Nfix	A0A0G2K1B6	1	7	Nuclear factor 1
+NFI	escherichia-coli-83333	P68739	nfi	P68739	2	8	Endonuclease V	
+NFI	fly	FBgn0042696	NfI	Q86P06	45	356	Nuclear factor I, isoform B (RE01666p) (RE01983p)	
+NFI	human	P08651	NFIC	P08651	115	610		
+NFI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GGQ9	nfi	A0A0H3GGQ9	0	11	Endonuclease V	
+NFI	nocardia-brasiliensis	K0F5F0	nfi	K0F5F0	0	2	Endonuclease V	
+NFI	salmonella-typhimurium	P68738	nfi	P68738	0	1	Endonuclease V	
+NFI	shigella-dysenteriae-serotype-1	Q32AH1	nfi	Q32AH1	1	2	Endonuclease V	
+NFI-1	worm	Q5H9N3	nfi-1	Q5H9N3	2	84	Nuclear factor I family protein	
+NFI-A	human	Q12857	NFIA	Q12857	111	545	Nuclear factor 1 A-type (NF1-A) (Nuclear factor 1/A) (CCAAT-	w
+NFI-B	human	O00712	NFIB	O00712	87	504	Nuclear factor 1 B-type (NF1-B) (Nuclear factor 1/B) (CCAAT-	w
+NFI-C	human	P08651	NFIC	P08651	115	610	Nuclear factor 1 C-type (NF1-C) (Nuclear factor 1/C) (CCAAT-	w
+NFI-X	human	Q14938	NFIX	Q14938	90	545	Nuclear factor 1 X-type (NF1-X) (Nuclear factor 1/X) (CCAAT-	w
+NFI1	yeast	Q12216	NFI1	Q12216	8	125	E3 SUMO-protein ligase SIZ2	
+NFIA	human	Q12857	NFIA	Q12857	111	545	Nuclear factor 1 A-type (NF1-A) (Nuclear factor 1/A) (CCAAT-	
+NFIA	mus-musculus	Q02780	Nfia	Q02780	0	4	Nuclear factor 1 A-type	
+NFIA	rattus-norvegicus	P09414	Nfia	P09414	1	5	Nuclear factor 1 A-type	
+NFIA_HUMAN	human	Q12857	NFIA	Q12857	111	545		
+NFIB	human	O00712	NFIB	O00712	87	504	Nuclear factor 1 B-type (NF1-B) (Nuclear factor 1/B) (CCAAT-	
+NFIB	mus-musculus	P97863	Nfib	P97863	0	14	Nuclear factor 1 B-type	
+NFIB_HUMAN	human	O00712	NFIB	O00712	87	504		
+NFIC	human	P08651	NFIC	P08651	115	610	Nuclear factor 1 C-type (NF1-C) (Nuclear factor 1/C) (CCAAT-	
+NFIC	mus-musculus	P70255	Nfic	P70255	2	16	Nuclear factor 1 C-type	
+NFIC_HUMAN	human	P08651	NFIC	P08651	115	610		
+NFIL3	human	A0A5F9ZHS7	NFILZ	A0A5F9ZHS7	59	359	NFIL3 like protein (NFIL3 like basic leucine zipper)	w
+NFIL3	human	Q16649	NFIL3	Q16649	112	423	Nuclear factor interleukin-3-regulated protein (E4 promoter-	
+NFIL3	mus-musculus	O08750	Nfil3	O08750	6	22	Nuclear factor interleukin-3-regulated protein	
+NFIL3	rattus-norvegicus	Q6IMZ0	Nfil3	Q6IMZ0	10	45	Nuclear factor interleukin-3-regulated protein	
+NFIL3	zebrafish	Q68EL6	nfil3	Q68EL6	6	24	Nuclear factor interleukin-3-regulated protein	
+NFIL3-3	zebrafish	B3DJ19	nfil3-3	B3DJ19	5	23	Hypothetical LOC799271	
+NFIL3-4	zebrafish	A0AB32TA35	nfil3-4	A0AB32TA35	4	23	Nuclear factor, interleukin 3 regulated, member 4 isoform X1	
+NFIL3-5	zebrafish	F1QZP2	nfil3-5	F1QZP2	6	21	Nuclear factor, interleukin 3 regulated, member 5 isoform X1	
+NFIL3_HUMAN	human	Q16649	NFIL3	Q16649	112	423		
+NFILZ	human	A0A5F9ZHS7	NFILZ	A0A5F9ZHS7	59	359	NFIL3 like protein (NFIL3 like basic leucine zipper)	
+NFILZ	mus-musculus	A0A5F8MPM5	Nfilz	A0A5F8MPM5	3	5	E4 promoter-binding protein 4	
+NFILZ_HUMAN	human	A0A5F9ZHS7	NFILZ	A0A5F9ZHS7	59	359		
+NFIP1_HUMAN	human	Q9BT67	NDFIP1	Q9BT67	10	156		
+NFIP2_HUMAN	human	Q9NV92	NDFIP2	Q9NV92	12	80		
+NFIX	human	Q14938	NFIX	Q14938	90	545	Nuclear factor 1 X-type (NF1-X) (Nuclear factor 1/X) (CCAAT-	
+NFIX	mus-musculus	P70257	Nfix	P70257	0	44	Nuclear factor 1 X-type	
+NFIX	rattus-norvegicus	A0A0G2K1B6	Nfix	A0A0G2K1B6	1	7	Nuclear factor 1	
+NFIX_HUMAN	human	Q14938	NFIX	Q14938	90	545		

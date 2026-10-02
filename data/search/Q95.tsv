@@ -1,22 +1,431 @@
-Q95043	schistosoma-mansoni	Q95043	RPL13	Q95043	26	265	Large ribosomal subunit protein eL13
-Q95574	rattus-norvegicus	Q95574	RT1-DMa	Q95574	12	18	Major histocompatibility complex, class II, DM alpha
-Q95695	arabidopsis-thaliana	Q95695	ndhG	Q95695	4	56	NAD(P)H-quinone oxidoreductase subunit 6, chloroplastic
-Q95747	arabidopsis-thaliana	Q95747	RPL16	Q95747	45	476	Large ribosomal subunit protein uL16m
-Q95748	arabidopsis-thaliana	Q95748	NAD9	Q95748	15	198	NADH dehydrogenase
-Q95749	arabidopsis-thaliana	Q95749	RPS3	Q95749	1	75	Small ribosomal subunit protein uS3m
-Q95NZ8	dictyostelium-discoideum	Q95NZ8	rpmA	Q95NZ8	0	8	DNA-directed RNA polymerase
-Q95PM1	schistosoma-mansoni	Q95PM1	cb2	Q95PM1	0	2	Cathepsin B-like cysteine proteinase
-Q95UC5	dictyostelium-discoideum	Q95UC5	DDB_G0275693	Q95UC5	0	1	Dipeptidyl aminopeptidase
-Q95UP9	dictyostelium-discoideum	Q95UP9	rdiB	Q95UP9	0	3	Putative rho GDP-dissociation inhibitor 2
-Q95UQ1	dictyostelium-discoideum	Q95UQ1	rdiA	Q95UQ1	14	20	Putative rho GDP-dissociation inhibitor 1
-Q95VZ3	dictyostelium-discoideum	Q95VZ3	carmil	Q95VZ3	1	2	Protein CARMIL
-Q95W35	schistosoma-mansoni	Q95W35	?	Q95W35	5	143	Eukaryotic translation initiation factor 2 subunit 1
-Q95W36	schistosoma-mansoni	Q95W36	?	Q95W36	10	66	14-3-3 epsilon 2
-Q95WA2	schistosoma-mansoni	Q95WA2	TCTP	Q95WA2	0	7	Translationally-controlled tumor protein homolog
-Q95YH0	dictyostelium-discoideum	Q95YH0	cdk8	Q95YH0	3	34	Probable cyclin-dependent kinase 8
-Q95YL4	dictyostelium-discoideum	Q95YL4	pefB	Q95YL4	1	7	Penta-EF hand domain-containing protein 2
-Q95YL5	dictyostelium-discoideum	Q95YL5	pefA	Q95YL5	0	7	Penta-EF hand domain-containing protein 1
-Q95ZG3	dictyostelium-discoideum	Q95ZG3	spc97	Q95ZG3	2	4	Spindle pole body component 97
-Q95ZG4	dictyostelium-discoideum	Q95ZG4	spc98	Q95ZG4	3	22	Spindle pole body component 98
-Q95ZG5	dictyostelium-discoideum	Q95ZG5	DrnA	Q95ZG5	0	8	Putative RNaseIII
-Q95ZG8	dictyostelium-discoideum	Q95ZG8	gpgA	Q95ZG8	1	14	Guanine nucleotide-binding protein subunit gamma
+Q95003	worm	Q95003	gpx-3	Q95003	1	9	Glutathione peroxidase 3	
+Q95005	worm	Q95005	pas-4	Q95005	1	113	Proteasome subunit alpha type-7	
+Q95008	worm	Q95008	pas-5	Q95008	0	61	Proteasome subunit alpha type-5	
+Q95011	worm	Q95011	CELE_F29G6.1	Q95011	0	7	Kazal-like domain-containing protein	
+Q95017	worm	Q95017	ubc-9	Q95017	7	53	SUMO-conjugating enzyme UBC9	
+Q95018	worm	Q95018	CELE_M01H9.2	Q95018	0	2	ShKT domain-containing protein	
+Q95028	fly	FBgn0001258	Ldh	Q95028	4	221	L-lactate dehydrogenase (EC 1.1.1.27)	
+Q95029	fly	FBgn0013770	CtsL1	Q95029	279	3792	Cathepsin L (EC 3.4.22.15) (Cysteine proteinase 1) [Cleaved 	
+Q95043	schistosoma-mansoni	Q95043	RPL13	Q95043	26	265	Large ribosomal subunit protein eL13	
+Q95078	fly	FBgn0010383	Cyp18a1	Q95078	1	5	Cytochrome P450 18a1 (EC 1.14.-.-) (CYPXVIIIA1)	
+Q95083	fly	FBgn0016697	Prosalpha5	Q95083	16	117	Proteasome subunit alpha type-5	
+Q95460	human	Q95460	MR1	Q95460	60	388	Major histocompatibility complex class I-related protein 1 (	
+Q95574	rattus-norvegicus	Q95574	RT1-DMa	Q95574	12	18	Major histocompatibility complex, class II, DM alpha	
+Q95695	arabidopsis-thaliana	Q95695	ndhG	Q95695	4	56	NAD(P)H-quinone oxidoreductase subunit 6, chloroplastic	
+Q95747	arabidopsis-thaliana	Q95747	RPL16	Q95747	45	476	Large ribosomal subunit protein uL16m	
+Q95748	arabidopsis-thaliana	Q95748	NAD9	Q95748	15	198	NADH dehydrogenase	
+Q95749	arabidopsis-thaliana	Q95749	RPS3	Q95749	1	75	Small ribosomal subunit protein uS3m	
+Q95NH6	fly	FBgn0041579	AttC	Q95NH6	26	246	Attacin-C [Cleaved into: Immune-induced peptide 16 (DIM-16) 	
+Q95NM6	worm	Q95NM6	cps-6	Q95NM6	0	12	Endonuclease G, mitochondrial	
+Q95NU5	worm	Q95NU5	ooc-5	Q95NU5	2	9	Torsin-like protein	
+Q95NU8	fly	FBgn0086677	jeb	Q95NU8	27	248	GH16255p (Jelly Belly) (Jelly belly, isoform B)	
+Q95NZ8	dictyostelium-discoideum	Q95NZ8	rpmA	Q95NZ8	0	8	DNA-directed RNA polymerase	
+Q95PE4	fly	FBgn0032921	Mpp6	Q95PE4	5	17	GEO07784p1 (M phase phosphoprotein 6) (M-phase phosphoprotei	
+Q95PM1	schistosoma-mansoni	Q95PM1	cb2	Q95PM1	0	2	Cathepsin B-like cysteine proteinase	
+Q95PV7	worm	Q95PV7	tftc-3	Q95PV7	3	12	TPR_REGION domain-containing protein	
+Q95PW2	worm	Q95PW2	CELE_ZK792.1	Q95PW2	0	1	Acid phosphatase-like protein 2	
+Q95PW5	worm	Q95PW5	tag-307	Q95PW5	1	8	ApaG domain-containing protein	
+Q95PW9	worm	Q95PW9	nck-1	Q95PW9	15	98	NCK (Non-Catalytic region of tyrosine Kinase) adaptor protei	
+Q95PX3	worm	Q95PX3	tbx-7	Q95PX3	0	2	Putative T-box protein 7	
+Q95PX7	worm	Q95PX7	tcer-1	Q95PX7	2	37	WW domain-containing protein	
+Q95PY4	worm	Q95PY4	mrps-18a	Q95PY4	8	134	28S ribosomal protein S18a, mitochondrial	
+Q95PY8	worm	Q95PY8	cpsf-3	Q95PY8	7	56	Cleavage and polyadenylation specificity factor subunit 3	
+Q95PZ0	worm	Q95PZ0	csn-6	Q95PZ0	10	60	COP9 signalosome complex subunit 6	
+Q95PZ1	worm	Q95PZ1	kdp-1	Q95PZ1	0	17	KASH (Klarsicht/ANC-1/Syne Homology) Domain Protein	
+Q95PZ2	worm	Q95PZ2	micu-1	Q95PZ2	1	13	Calcium uptake protein 1 homolog, mitochondrial	
+Q95PZ4	worm	Q95PZ4	xpb-1	Q95PZ4	7	113	General transcription and DNA repair factor IIH helicase/tra	
+Q95PZ6	worm	Q95PZ6	CELE_Y66D12A.19	Q95PZ6	0	4	ArgoN domain-containing protein	
+Q95PZ7	worm	Q95PZ7	psme-3	Q95PZ7	0	51	Proteasome activator complex subunit 3	
+Q95PZ8	worm	Q95PZ8	nars-2	Q95PZ8	2	19	Aminoacyl-transfer RNA synthetases class-II family profile d	
+Q95Q00	worm	Q95Q00	such-1	Q95Q00	3	41	Suppressor of spindle checkpoint defect 1	
+Q95Q03	worm	Q95Q03	ztf-29	Q95Q03	0	12	C2H2-type domain-containing protein	
+Q95Q05	worm	Q95Q05	CELE_Y66D12A.10	Q95Q05	1	6	MITD1 C-terminal phospholipase D-like domain-containing prot	
+Q95Q06	worm	Q95Q06	CELE_Y66D12A.8	Q95Q06	4	33	STING ER exit protein	
+Q95Q08	worm	Q95Q08	ceh-92	Q95Q08	0	15	Homeobox-cysteine loop-homeobox domain-containing protein	
+Q95Q11	worm	Q95Q11	mrps-7	Q95Q11	19	318	Small ribosomal subunit protein uS7m	
+Q95Q15	worm	Q95Q15	CELE_Y55D9A.2	Q95Q15	3	6	G-patch domain-containing protein	
+Q95Q17	worm	Q95Q17	let-49	Q95Q17	9	93	Mediator of RNA polymerase II transcription subunit 7	
+Q95Q18	worm	Q95Q18	Y53F4B.39	Q95Q18	0	11	Beta-lactamase-like protein 2 homolog	
+Q95Q25	worm	Q95Q25	rad-51	Q95Q25	6	97	DNA repair protein RAD51 homolog	
+Q95Q27	worm	Q95Q27	hpr-9	Q95Q27	8	35	Cell cycle checkpoint protein hpr-9	
+Q95Q34	worm	Q95Q34	riok-2	Q95Q34	15	97	Serine/threonine-protein kinase RIO2 (EC 2.7.11.1)	
+Q95Q35	worm	Q95Q35	exoc-8	Q95Q35	11	30	Exocyst component Exo84 C-terminal domain-containing protein	
+Q95Q36	worm	Q95Q36	CELE_W09G3.6	Q95Q36	0	4	RING-type domain-containing protein	
+Q95Q57	worm	Q95Q57	CELE_F29B9.5	Q95Q57	0	1	Thioredoxin domain-containing protein	
+Q95Q58	worm	Q95Q58	CELE_F21F8.5	Q95Q58	0	2	Uncharacterized protein	
+Q95Q60	worm	Q95Q60	fkb-5	Q95Q60	0	5	peptidylprolyl isomerase	
+Q95Q62	worm	Q95Q62	lfe-2	Q95Q62	0	3	Inositol-trisphosphate 3-kinase homolog	
+Q95Q68	worm	Q95Q68	C37H5.13	Q95Q68	0	3	Acyl-coenzyme A thioesterase 8	
+Q95Q77	worm	Q95Q77	C32E12.4	Q95Q77	1	5	Ubiquitin carboxyl-terminal hydrolase	
+Q95Q89	worm	Q95Q89	sir-2.4	Q95Q89	0	51	NAD-dependent protein deacetylase sir-2.4	
+Q95Q95	worm	Q95Q95	let-363	Q95Q95	0	2	Target of rapamycin homolog (EC 2.7.11.1) (CeTOR) (Lethal pr	
+Q95Q98	worm	Q95Q98	jhdm-1	Q95Q98	0	10	JmjC domain-containing histone demethylation protein 1	
+Q95QA3	worm	Q95QA3	pacs-1	Q95QA3	1	8	Phosphofurin acidic cluster sorting protein 2	
+Q95QB1	worm	Q95QB1	CELE_T13H5.8	Q95QB1	0	3	Lipid scramblase CLPTM1L	
+Q95QB3	worm	Q95QB3	nhr-273	Q95QB3	8	92	Nuclear Hormone Receptor family	
+Q95QB8	worm	Q95QB8	kbp-1	Q95QB8	1	8	KNL (Kinetochore null) Binding Protein	
+Q95QC2	worm	Q95QC2	mrpl-58	Q95QC2	7	157	Large ribosomal subunit protein mL62	
+Q95QC4	worm	Q95QC4	zyg-8	Q95QC4	6	69	Serine/threonine-protein kinase zyg-8 (EC 2.7.11.1) (Doublec	
+Q95QC9	worm	Q95QC9	CELE_K09F5.6	Q95QC9	0	1	Protein tincar	
+Q95QD5	worm	Q95QD5	cox-11	Q95QD5	0	8	Cytochrome c oxidase assembly protein COX11, mitochondrial	
+Q95QD6	worm	Q95QD6	CELE_JC8.4	Q95QD6	1	5	CMP/dCMP-type deaminase domain-containing protein	
+Q95QD7	worm	Q95QD7	lin-54	Q95QD7	11	569	Protein lin-54	
+Q95QD9	worm	Q95QD9	CELE_F58G6.7	Q95QD9	0	3	Copper transport protein	
+Q95QE8	worm	Q95QE8	CELE_F54E7.9	Q95QE8	2	22	N-terminal methionine N(alpha)-acetyltransferase NatE	
+Q95QF1	worm	Q95QF1	CELE_F53B2.8	Q95QF1	1	7	Coiled-coil domain-containing protein 86	
+Q95QG1	worm	Q95QG1	Q95QG1_CAEEL	Q95QG1	8	31	Malectin domain-containing protein	
+Q95QG1_CAEEL	worm	Q95QG1	Q95QG1_CAEEL	Q95QG1	8	31	Malectin domain-containing protein	
+Q95QG4	worm	Q95QG4	ptl-1	Q95QG4	0	32	Microtubule-associated protein	
+Q95QG7	worm	Q95QG7	exos-8	Q95QG7	4	32	Ribosomal RNA-processing protein 43	
+Q95QG8	worm	Q95QG8	fcp-1	Q95QG8	5	41	RNA polymerase II subunit A C-terminal domain phosphatase	
+Q95QH1	worm	Q95QH1	CELE_F32H2.10	Q95QH1	0	1	Integrator complex subunit 1 R4 domain-containing protein	
+Q95QH2	worm	Q95QH2	CELE_F32E10.8	Q95QH2	0	1	Low-density lipoprotein receptor domain class A	
+Q95QH4	worm	Q95QH4	CELE_F32A5.8	Q95QH4	0	5	DeHydrogenases, Short chain	
+Q95QI1	worm	Q95QI1	CELE_F30F8.9	Q95QI1	0	1	Letm1 RBD domain-containing protein	
+Q95QI6	worm	Q95QI6	CELE_F26F4.12	Q95QI6	1	8	ANK_REP_REGION domain-containing protein	
+Q95QI7	worm	Q95QI7	daf-3	Q95QI7	5	103	Smad protein daf-3	
+Q95QJ7	worm	Q95QJ7	gpr-1	Q95QJ7	3	13	G-protein regulator 1	
+Q95QK3	worm	Q95QK3	jmjd-3.1	Q95QK3	1	40	Lysine-specific demethylase jmjd-3.1	
+Q95QK5	worm	Q95QK5	alfa-1	Q95QK5	1	29	ALS/FTD Associated gene homolog	
+Q95QL1	worm	Q95QL1	CELE_F13H8.11	Q95QL1	0	10	Lipase_GDSL domain-containing protein	
+Q95QL2	worm	Q95QL2	mrpl-13	Q95QL2	13	279	Ribosomal protein L13	
+Q95QL3	worm	Q95QL3	rbm-34	Q95QL3	2	18	RRM domain-containing protein	
+Q95QM5	worm	Q95QM5	unc-115	Q95QM5	0	10	Actin-binding lim zn-finger protein limatin involved in axon	
+Q95QN1	worm	Q95QN1	CELE_F01F1.15	Q95QN1	0	5	DUF3456 domain-containing protein	
+Q95QN2	worm	Q95QN2	ddx-23	Q95QN2	0	54	Probable ATP-dependent RNA helicase DDX23	
+Q95QN6	worm	Q95QN6	brap-2	Q95QN6	1	9	BRCA1-associated protein homolog 2	
+Q95QN9	worm	Q95QN9	CELE_E04F6.15	Q95QN9	0	5	DeHydrogenases, Short chain	
+Q95QQ1	worm	Q95QQ1	dnj-8	Q95QQ1	4	9	DnaJ homolog subfamily C member 16	
+Q95QQ2	worm	Q95QQ2	C56C10.7	Q95QQ2	3	13	Probable trafficking protein particle complex subunit 13 hom	
+Q95QQ4	worm	Q95QQ4	atic-1	Q95QQ4	0	23	Bifunctional purine biosynthesis protein ATIC	
+Q95QQ6	worm	Q95QQ6	C55C3.6	Q95QQ6	0	1	Lipoprotein	
+Q95QQ9	worm	Q95QQ9	C49H3.6	Q95QQ9	0	12	Cortactin-binding protein-2 N-terminal domain-containing pro	
+Q95QR2	worm	Q95QR2	nhr-46	Q95QR2	2	15	Nuclear Hormone Receptor family	
+Q95QR5	worm	Q95QR5	hrpl-1	Q95QR5	1	27	RRM domain-containing protein	
+Q95QR7	worm	Q95QR7	C39D10.8	Q95QR7	0	2	DUF4440 domain-containing protein	
+Q95QS2	worm	Q95QS2	C35C5.8	Q95QS2	0	1	Saposin B-type domain-containing protein	
+Q95QS3	worm	Q95QS3	mrps-26	Q95QS3	11	85	Small ribosomal subunit protein mS26	
+Q95QS4	worm	Q95QS4	C34E10.10	Q95QS4	1	30	rRNA-processing protein UTP23 homolog	
+Q95QS6	worm	Q95QS6	tag-321	Q95QS6	0	1	Transmembrane protein 65	
+Q95QT2	worm	Q95QT2	C29E4.10	Q95QT2	0	2	Putative galactocerebrosidase	
+Q95QT4	worm	Q95QT4	nhr-138	Q95QT4	2	8	Nuclear Hormone Receptor family	
+Q95QT8	worm	Q95QT8	dyf-13	Q95QT8	5	35	Intraflagellar transport protein 56 homolog	
+Q95QU0	worm	Q95QU0	C27F2.10	Q95QU0	5	10	PCI domain-containing protein 2 homolog	
+Q95QU5	worm	Q95QU5	C26E6.12	Q95QU5	1	24	OBG-type G domain-containing protein	
+Q95QV2	worm	Q95QV2	cft-1	Q95QV2	1	40	Cystic Fibrosis Transmembrane conductance regulator homolog	
+Q95QV8	worm	Q95QV8	tiar-1	Q95QV8	2	41	Cytotoxic granule-associated RNA binding protein tiar-1	
+Q95QW0	worm	Q95QW0	eif-3.L	Q95QW0	6	89	Eukaryotic translation initiation factor 3 subunit L	
+Q95QW3	worm	Q95QW3	C15H9.11	Q95QW3	1	69	UPAR/Ly6 domain-containing protein	
+Q95QX5	worm	Q95QX5	tmyb-1	Q95QX5	4	16	TOM1-like protein 2	
+Q95QY0	worm	Q95QY0	C04G6.11	Q95QY0	0	1	Uncharacterized protein	
+Q95QY1	worm	Q95QY1	idpb-1	Q95QY1	0	1	Intrinsically Disordered Protein, class B	
+Q95QY6	worm	Q95QY6	C03B1.13	Q95QY6	0	21	Major facilitator superfamily (MFS) profile domain-containin	
+Q95QY7	worm	Q95QY7	C02F5.12	Q95QY7	0	2	Putative zinc finger protein C02F5.12	
+Q95QZ1	worm	Q95QZ1	vamp-8	Q95QZ1	15	56	V-SNARE coiled-coil homology domain-containing protein	
+Q95QZ9	worm	Q95QZ9	npl-4.2	Q95QZ9	1	73	Nuclear protein localization protein 4 homolog 2	
+Q95R11	worm	Q95R11	CELE_F28B3.10	Q95R11	0	70	Chloride channel protein CLC-d	
+Q95R12	worm	Q95R12	acl-11	Q95R12	0	8	Phospholipid/glycerol acyltransferase domain-containing prot	
+Q95R14	worm	Q95R14	zhp-1	Q95R14	1	4	Zip homologous protein 1	
+Q95R19	worm	Q95R19	B0041.8	Q95R19	0	5	Plus3 domain-containing protein	
+Q95R29	fly	FBgn0051324	Cipc	Q95R29	5	15	HL03650p (RH68619p)	
+Q95R34	fly	FBgn0023525	CG3191	Q95R34	0	0	GH16463p	
+Q95R35	fly	FBgn0052064	S-Lap4	Q95R35	7	125	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	
+Q95R48	fly	FBgn0086365	Orct2	Q95R48	2	7	Organic cation transporter-like protein	
+Q95R73	fly	FBgn0260475	CG30059	Q95R73	34	246	SD03412p	
+Q95R98	fly	FBgn0035951	CG5068	Q95R98	3	14	Protein phosphatase methylesterase 1 (PME-1) (EC 3.1.1.-)	
+Q95RA0	fly	FBgn0040732	CG16926	Q95RA0	0	1	GEO09367p1 (LP01766p)	
+Q95RA8	fly	FBgn0038965	mats	Q95RA8	85	1152	MOB kinase activator-like 1 (Mob as tumor suppressor protein	
+Q95RA9	fly	FBgn0038149	GILT1	Q95RA9	43	326	GILT-like protein 1	
+Q95RB1	fly	FBgn0037220	CG14641	Q95RB1	30	184	Pre-mRNA-splicing factor RBM22 (RNA-binding motif protein 22	
+Q95RB2	fly	FBgn0033728	Cpr49Ae	Q95RB2	10	331	Cuticular protein 49Ae (GEO04354p1) (LD46766p)	
+Q95RC0	fly	FBgn0024362	Naa30A	Q95RC0	7	24	N-alpha-acetyltransferase 30A (EC 2.3.1.-) (N-acetyltransfer	
+Q95RC5	fly	FBgn0038855	Tbc1d22	Q95RC5	7	40	LD44506p	
+Q95RC8	fly	FBgn0002872	mu2	Q95RC8	7	46	LD44171p (Mutator 2, isoform A)	
+Q95RE4	fly	FBgn0022959	yps	Q95RE4	46	539	LD37574p (Ypsilon schachtel, isoform A)	
+Q95RF3	fly	FBgn0051849	Mgat3	Q95RF3	1	23	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	
+Q95RF6	fly	FBgn0036928	Tom20	Q95RF6	62	532	LD34461p (Translocase of outer membrane 20, isoform A) (Tran	
+Q95RF7	fly	FBgn0047199	CG31517	Q95RF7	0	2	GEO09362p1 (LD34214p)	
+Q95RF9	fly	FBgn0039198	CG5768	Q95RF9	9	244		
+Q95RG8	fly	FBgn0033539	Git	Q95RG8	21	78	ARF GTPase-activating protein Git (ARF GAP GIT) (dGIT protei	
+Q95RH3	fly	FBgn0052756	CG32756	Q95RH3	1	6	LD29716p	
+Q95RI2	fly	FBgn0036306	CG10973	Q95RI2	29	261	LD28549p	
+Q95RI5	fly	FBgn0014163	fax	Q95RI5	23	197	Failed axon connections	
+Q95RI7	fly	FBgn0039977	Spf30	Q95RI7	9	56	Survival of motor neuron-related-splicing factor 30 (Surviva	
+Q95RJ9	fly	FBgn0263933	ebi	Q95RJ9	24	197	F-box-like/WD repeat-containing protein ebi	
+Q95RM0	fly	FBgn0053229	CG33229	Q95RM0	2	8	LD20362p	
+Q95RN0	fly	FBgn0038013	CG10038	Q95RN0	0	0	FAM172 family protein homolog CG10038	
+Q95RP1	fly	FBgn0052037	CG32037	Q95RP1	24	266	LD18295p	
+Q95RP8	fly	FBgn0040373	CG3038	Q95RP8	589	2376	Hexosyltransferase (EC 2.4.1.-)	
+Q95RQ1	fly	FBgn0035539	slow	Q95RQ1	65	284	LD16414p (Slowdown, isoform A) (Slowdown, isoform B)	
+Q95RQ4	fly	FBgn0265192	Snp	Q95RQ4	5	33	3'-5' exonuclease Snipper (EC 3.1.15.-) (ERI1 exoribonucleas	
+Q95RQ7	fly	FBgn0040009	CG17490	Q95RQ7	0	0	LD15658p	
+Q95RQ8	fly	FBgn0034878	pita	Q95RQ8	43	362	Zinc finger protein pita (Protein spotted-dick)	
+Q95RR8	fly	FBgn0035397	PAN3	Q95RR8	86	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	
+Q95RS6	fly	FBgn0058160	Sph242	Q95RS6	34	244	IP12536p (LD13269p) (Uncharacterized protein, isoform A) (Un	
+Q95RU0	fly	FBgn0011204	cue	Q95RU0	186	2386	Protein cueball	
+Q95RV2	fly	FBgn0026257	cav	Q95RV2	7	51	Telomere-binding protein cav (Anonymous fast evolving 1G5) (	
+Q95RV3	fly	FBgn0034217	Lhr	Q95RV3	87	382	LD09786p (Lethal hybrid rescue)	
+Q95RV5	fly	FBgn0050499	Rpe	Q95RV5	3	83	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	
+Q95RW8	fly	FBgn0025360	Optix	A0A0B4KEE9	73	392		
+Q95RX5	fly	FBgn0037655	Kcmf1	Q95RX5	3	24	E3 ubiquitin-protein ligase Kcmf1 (EC 2.3.2.27)	
+Q95RY2	fly	FBgn0036505	CG7945	Q95RY2	14	38	LD01461p	
+Q95SH0	fly	FBgn0034950	Pask	Q95SH0	265	1146	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+Q95SH2	fly	FBgn0036805	Chmp1	Q95SH2	5	51	Charged multivesicular body protein 1, isoform A (Charged mu	
+Q95SH6	fly	FBgn0263392	Tet	Q95SH6	1	5	Ten-Eleven Translocation (TET) family protein	
+Q95SH7	fly	FBgn0035440	Ostm1	Q95SH7	4	20	GH26007p	
+Q95SI7	fly	FBgn0038924	CG6028	Q95SI7	0	7	GH23390p	
+Q95SK3	fly	FBgn0050291	CG30291	Q95SK3	6	26	CDK5RAP3-like protein	
+Q95SM8	fly	FBgn0050281	CG30281	Q95SM8	27	255	GH13859p	
+Q95SN8	fly	FBgn0051200	CG31200	Q95SN8	20	255	GH12395p	
+Q95SP2	fly	FBgn0039875	sip3	Q95SP2	12	64	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	
+Q95SR0	fly	FBgn0051445	CG31445	Q95SR0	35	328	Aminopeptidase (EC 3.4.11.-)	
+Q95SS8	fly	FBgn0035805	Tmem70	Q95SS8	0	6	Transmembrane protein 70 homolog, mitochondrial	
+Q95ST2	fly	FBgn0036141	wls	Q95ST2	27	377	Protein wntless (Evenness interrupted) (Sprinter)	
+Q95SX8	fly	FBgn0036039	Naa60	Q95SX8	0	19	N-alpha-acetyltransferase 60 (dNaa60) (EC 2.3.1.259) (EC 2.3	
+Q95T08	fly	FBgn0037556	CG9636	Q95T08	3	5	LD29354p	
+Q95T10	fly	FBgn0038268	CG3631	Q95T10	0	2	Glycosaminoglycan xylosylkinase homolog (EC 2.7.1.-) (Xylose	
+Q95T12	fly	FBgn0261722	fwe	Q95T12	2	73	Calcium channel flower (3L5)	
+Q95T19	fly	FBgn0051133	Slimp	Q95T19	2	26	Serine--tRNA synthetase-like protein Slimp (Seryl-tRNA synth	
+Q95T35	fly	FBgn0035240	Ogdh2	Q95T35	5	59	2-oxoglutarate dehydrogenase, mitochondrial (EC 1.2.4.2) (2-	
+Q95T64	fly	FBgn0035975	PGRP-LA	Q95T64	1	16	Peptidoglycan-recognition protein LA	
+Q95T98	fly	FBgn0051523	CG31523	Q95T98	9	135	Elongation of very long chain fatty acids protein (EC 2.3.1.	
+Q95TA8	fly	FBgn0053293	CG33293	Q95TA8	0	1	AT05092p1 (GEO09861p1) (GH07964p)	
+Q95TF4	fly	FBgn0260479	CG31904	Q95TF4	0	0	GH01326p	
+Q95TH4	fly	FBgn0016754	sba	Q95TH4	21	141	six-banded	
+Q95TJ9	fly	FBgn0039858	CycG	Q95TJ9	54	290	Cyclin G	
+Q95TK5	fly	FBgn0039854	CG1635	Q95TK5	1	39	LD44914p	
+Q95TL8	fly	FBgn0030734	ERp44	Q95TL8	11	53	LD41494p	
+Q95TN1	fly	FBgn0032204	CG4953	Q95TN1	4	14	Probable trafficking protein particle complex subunit 13 hom	
+Q95TN4	fly	FBgn0032258	Cog4	Q95TN4	16	59	Conserved oligomeric Golgi complex subunit 4 (COG complex su	
+Q95TN8	fly	FBgn0260399	gwl	Q95TN8	242	1106	Serine/threonine-protein kinase greatwall (EC 2.7.11.1) (Mic	
+Q95TP0	fly	FBgn0051961	Tbcc	Q95TP0	3	14	LD34582p (Tubulin-binding cofactor C, isoform A) (Tubulin-bi	
+Q95TS5	fly	FBgn0036570	IntS9	Q95TS5	6	58	Integrator complex subunit 9	
+Q95TS8	fly	FBgn0031398	daed	Q95TS8	3	8	Daedalus, isoform A (LD25288p)	
+Q95TU2	fly	FBgn0032388	CG6686	Q95TU2	77	448	LD23187p	
+Q95TU8	fly	FBgn0034013	unc-5	Q95TU8	253	2397	Netrin receptor unc-5 (Unc5 netrin receptor)	
+Q95TV5	fly	FBgn0036212	CG11597	Q95TV5	124	999	Serine/threonine-protein phosphatase (EC 3.1.3.16)	
+Q95TY2	fly	FBgn0033654	Sobp	Q95TY2	3	7	GH22790p (Sine oculis-binding protein, isoform A) (Sine ocul	
+Q95TY8	fly	FBgn0036403	CG6661	Q95TY8	6	80	GH20963p	
+Q95TZ4	fly	FBgn0037988	Cs2	Q95TZ4	2	73	Citrate synthase	
+Q95U06	fly	FBgn0046793	CG32236	Q95U06	0	1	GH16763p	
+Q95U32	fly	FBgn0051344	CG31344	Q95U32	1	113	GH11867p	
+Q95U34	fly	FBgn0263199	Galk	Q95U34	3	21	GH11113p (Galactokinase, isoform A (EC 2.7.1.6)) (Galactokin	
+Q95U38	fly	FBgn0037643	ScsbetaA	Q95U38	12	159	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	
+Q95U54	fly	FBgn0037301	Mms19	Q95U54	3	23	MMS19 nucleotide excision repair protein	
+Q95U58	fly	FBgn0035889	mkg-p	Q95U58	0	7	GH05885p (Monkey king protein, isoform A) (Monkey king prote	
+Q95U65	fly	FBgn0052095	CG32095	Q95U65	0	0	GH03217p	
+Q95UC5	dictyostelium-discoideum	Q95UC5	DDB_G0275693	Q95UC5	0	1	Dipeptidyl aminopeptidase	
+Q95UN8	fly	FBgn0030018	slpr	M9MSN2	201	1156		
+Q95UP9	dictyostelium-discoideum	Q95UP9	rdiB	Q95UP9	0	3	Putative rho GDP-dissociation inhibitor 2	
+Q95UQ1	dictyostelium-discoideum	Q95UQ1	rdiA	Q95UQ1	14	20	Putative rho GDP-dissociation inhibitor 1	
+Q95V25	worm	Q95V25	slo-1	Q95V25	0	7	Calcium-activated potassium channel slo-1	
+Q95V50	fly	FBgn0046697	Ppr-Y	Q95V50	0	0	Dynein regulatory complex subunit 3	
+Q95V55	fly	FBgn0038197	foxo	A0A0B4KGN1	147	652		
+Q95VZ3	dictyostelium-discoideum	Q95VZ3	carmil	Q95VZ3	1	2	Protein CARMIL	
+Q95W35	schistosoma-mansoni	Q95W35	?	Q95W35	5	143	Eukaryotic translation initiation factor 2 subunit 1	
+Q95W36	schistosoma-mansoni	Q95W36	?	Q95W36	10	66	14-3-3 epsilon 2	
+Q95WA2	schistosoma-mansoni	Q95WA2	TCTP	Q95WA2	0	7	Translationally-controlled tumor protein homolog	
+Q95WY3	fly	FBgn0038964	Nop56	Q95WY3	13	186	Nucleolar protein 56	
+Q95X11	worm	Q95X11	CELE_Y38A10A.7	Q95X11	0	7	N-alpha-acetyltransferase 40	
+Q95X18	worm	Q95X18	CELE_F52C12.2	Q95X18	0	2	18S rRNA aminocarboxypropyltransferase	
+Q95X32	worm	Q95X32	flp-34	Q95X32	0	4	FMRF-Like Peptide	
+Q95X35	worm	Q95X35	mppe-1	Q95X35	0	3	Metallophosphoesterase 1 homolog	
+Q95X36	worm	Q95X36	C35E7.11	Q95X36	0	3	Glutamic acid-rich protein-like	
+Q95X39	worm	Q95X39	mrpl-9	Q95X39	7	153	Large ribosomal subunit protein bL9m	
+Q95X42	worm	Q95X42	wdr-37	Q95X42	1	39	WD repeat-containing protein 37	
+Q95X43	worm	Q95X43	grl-26	Q95X43	0	6	Ground-like domain-containing protein	
+Q95X44	worm	Q95X44	vha-8	Q95X44	4	71	V-type proton ATPase subunit E	
+Q95X59	worm	Q95X59	dhhc-3	Q95X59	0	3	Palmitoyltransferase	
+Q95X60	worm	Q95X60	gpaa-1	Q95X60	3	6	Chitin synthase	
+Q95X82	worm	Q95X82	dnsn-1	Q95X82	0	4	Downstream Neighbor of SoN homolog	
+Q95X83	worm	Q95X83	rpoa-49	Q95X83	2	32	RNA polymerase I associated factor, A49-like protein	
+Q95X84	worm	Q95X84	CELE_F25G6.1	Q95X84	0	3	MULE transposase domain-containing protein	
+Q95X85	worm	Q95X85	CELE_F22E5.17	Q95X85	2	16	F-box associated domain-containing protein	
+Q95X87	worm	Q95X87	CELE_ZK1240.9	Q95X87	0	1	RING-type domain-containing protein	
+Q95X90	worm	Q95X90	CELE_D2062.1	Q95X90	0	1	SCP domain-containing protein	
+Q95X91	worm	Q95X91	nhr-96	Q95X91	0	1	Nuclear hormone receptor family member nhr-96	
+Q95X94	worm	Q95X94	hyls-1	Q95X94	1	5	Centriolar and ciliogenesis-associated protein hyls-1	
+Q95XA0	worm	Q95XA0	CELE_Y37F4.1	Q95XA0	1	11	BAR domain-containing protein	
+Q95XA8	worm	Q95XA8	crtc-1	Q95XA8	0	5	CREB-regulated transcription coactivator 1 homolog	
+Q95XA9	worm	Q95XA9	gap-3	Q95XA9	15	73	SH2 domain-containing protein	
+Q95XB7	worm	Q95XB7	fbxa-5	Q95XB7	0	1	F-box domain-containing protein	
+Q95XC1	worm	Q95XC1	CELE_Y82E9BL.12	Q95XC1	0	1	Methyltransferase FkbM domain-containing protein	
+Q95XC4	worm	Q95XC4	CELE_Y92H12BL.5	Q95XC4	1	10	diphosphoinositol-polyphosphate diphosphatase	
+Q95XC6	worm	Q95XC6	tyr-6	Q95XC6	0	3	Tyrosinase copper-binding domain-containing protein	
+Q95XC8	worm	Q95XC8	htp-2	Q95XC8	5	8	HORMA domain-containing protein	
+Q95XD0	worm	Q95XD0	exos-2	Q95XD0	8	56	Exosome complex component RRP4 homolog	
+Q95XD1	worm	Q95XD1	shl-1	Q95XD1	8	26	BTB domain-containing protein	
+Q95XD3	worm	Q95XD3	blos-2	Q95XD3	12	19	Biogenesis of lysosome-related organelles complex 1 subunit 	
+Q95XD4	worm	Q95XD4	lsm-8	Q95XD4	10	69	U6 snRNA-associated Sm-like protein LSm8	
+Q95XD5	worm	Q95XD5	CELE_Y73B6BL.29	Q95XD5	0	1	tRNA pseudouridine synthase	
+Q95XD8	worm	Q95XD8	CELE_Y73B3B.1	Q95XD8	0	16	Calponin-homology (CH) domain-containing protein	
+Q95XE2	worm	Q95XE2	CELE_Y73B3A.1	Q95XE2	0	9	JmjC domain-containing protein	
+Q95XE9	worm	Q95XE9	CELE_Y73B3A.4	Q95XE9	0	6	RING-type domain-containing protein	
+Q95XF0	worm	Q95XF0	elk-2	Q95XF0	0	1	ELK transcription factor homolog	
+Q95XG5	worm	Q95XG5	gfrl-1	Q95XG5	0	2	GDNF/GAS1 domain-containing protein	
+Q95XG6	worm	Q95XG6	nduv-3	Q95XG6	0	43	NADH dehydrogenase	
+Q95XG7	worm	Q95XG7	ngn-1	Q95XG7	3	9	Helix-loop-helix protein ngn-1	
+Q95XG8	worm	Q95XG8	smf-3	Q95XG8	0	4	NRAMP-like transporter smf-3	
+Q95XG9	worm	Q95XG9	daao-1	Q95XG9	0	2	D-amino-acid oxidase	
+Q95XH0	worm	Q95XH0	CELE_Y69A2AR.28	Q95XH0	0	1	PEST proteolytic signal-containing nuclear protein	
+Q95XH1	worm	Q95XH1	vamp-7	Q95XH1	11	39	V-SNARE coiled-coil homology domain-containing protein	
+Q95XH2	worm	Q95XH2	epg-9	Q95XH2	2	28	Autophagy-related protein 101	
+Q95XH8	worm	Q95XH8	nhr-242	Q95XH8	0	1	Nuclear Hormone Receptor family	
+Q95XI7	worm	Q95XI7	CELE_Y69A2AR.16	Q95XI7	0	5	Exportin-4	
+Q95XJ0	worm	Q95XJ0	CELE_Y69A2AR.18	Q95XJ0	4	47	F-ATPase gamma subunit	
+Q95XJ1	worm	Q95XJ1	ccdc-12	Q95XJ1	4	50	Coiled-coil domain-containing protein 12	
+Q95XJ4	worm	Q95XJ4	coh-4	Q95XJ4	0	3	Rad21/Rec8-like protein C-terminal eukaryotic domain-contain	
+Q95XJ5	worm	Q95XJ5	CELE_Y45G5AM.7	Q95XJ5	0	2	Cilia- and flagella-associated protein 157	
+Q95XJ7	worm	Q95XJ7	igcm-4	Q95XJ7	0	3	receptor protein-tyrosine kinase	
+Q95XJ9	worm	Q95XJ9	ergi-1	Q95XJ9	0	2	Endoplasmic reticulum-Golgi intermediate compartment protein	
+Q95XK0	worm	Q95XK0	CELE_Y102A11A.5	Q95XK0	0	7	MliC domain-containing protein	
+Q95XK1	worm	Q95XK1	CELE_Y102A11A.2	Q95XK1	0	3	Chromatin-remodeling ATPase INO80	
+Q95XK4	worm	Q95XK4	ppm-1.d	Q95XK4	1	19	PPM-type phosphatase domain-containing protein	
+Q95XK5	worm	Q95XK5	CELE_Y54F10BM.13	Q95XK5	0	10	Dual specificity protein phosphatase 19	
+Q95XK6	worm	Q95XK6	CELE_Y54F10BM.12	Q95XK6	0	6	Insulin/EGF-Receptor L Domain protein	
+Q95XL0	worm	Q95XL0	CELE_Y54F10BM.9	Q95XL0	0	1	SWIM-type domain-containing protein	
+Q95XL1	worm	Q95XL1	CELE_Y54F10BM.3	Q95XL1	0	7	Tyrosine-protein phosphatase domain-containing protein	
+Q95XL6	worm	Q95XL6	CELE_Y73E7A.8	Q95XL6	0	1	Mucin-5AC	
+Q95XL8	worm	Q95XL8	chaf-2	Q95XL8	4	8	WD_REPEATS_REGION domain-containing protein	
+Q95XM4	worm	Q95XM4	CELE_Y71G12B.27	Q95XM4	5	33	Cyclin-dependent kinases regulatory subunit	
+Q95XM5	worm	Q95XM5	rml-5	Q95XM5	1	11	NAD(P)-binding domain-containing protein	
+Q95XM9	worm	Q95XM9	ddx-27	Q95XM9	1	18	RNA helicase	
+Q95XN0	worm	Q95XN0	lin-65	Q95XN0	2	47	LIN-65L	
+Q95XN1	worm	Q95XN1	CELE_Y71G12B.10	Q95XN1	0	14	hydroxymethylglutaryl-CoA lyase	
+Q95XN2	worm	Q95XN2	mppa-1	Q95XN2	4	63	Mitochondrial-processing peptidase subunit alpha	
+Q95XN5	worm	Q95XN5	CELE_Y71G12B.13	Q95XN5	0	7	RING-type domain-containing protein	
+Q95XN6	worm	Q95XN6	lsm-6	Q95XN6	14	77	U6 snRNA-associated Sm-like protein LSm6	
+Q95XN7	worm	Q95XN7	ubc-3	Q95XN7	4	60	UBC core domain-containing protein	
+Q95XP0	worm	Q95XP0	CELE_Y71G12B.17	Q95XP0	0	6	Phosphatidylinositol transfer protein	
+Q95XP4	worm	Q95XP4	mab-20	Q95XP4	0	26	Semaphorin-2A	
+Q95XP5	worm	Q95XP5	mca-3	Q95XP5	1	13	Calcium-transporting ATPase	
+Q95XP9	worm	Q95XP9	zwl-1	Q95XP9	0	12	Protein zwilch homolog	
+Q95XQ1	worm	Q95XQ1	sydn-1	Q95XQ1	0	3	Synaptic defective enhancer 1	
+Q95XQ4	worm	Q95XQ4	zeel-1	Q95XQ4	0	25	TIR domain-containing protein	
+Q95XQ7	worm	Q95XQ7	CELE_Y39G10AR.15	Q95XQ7	0	2	DUF5523 domain-containing protein	
+Q95XQ8	worm	Q95XQ8	mcm-4	Q95XQ8	0	39	DNA replication licensing factor mcm-4	
+Q95XR0	worm	Q95XR0	eif-2gamma	Q95XR0	4	117	protein-synthesizing GTPase	
+Q95XR1	worm	Q95XR1	tbca-1	Q95XR1	10	14	Tubulin-specific chaperone A	
+Q95XR2	worm	Q95XR2	nsun-4	Q95XR2	1	29	5-cytosine rRNA methyltransferase nsun-4	
+Q95XR3	worm	Q95XR3	CELE_Y39G10AR.9	Q95XR3	4	23	WD_REPEATS_REGION domain-containing protein	
+Q95XR4	worm	Q95XR4	epg-2	Q95XR4	1	7	Ectopic P granules protein 2	
+Q95XR6	worm	Q95XR6	CELE_Y39G10AR.11	Q95XR6	0	26	TPR_MLP1_2 domain-containing protein	
+Q95XR9	worm	Q95XR9	CELE_Y38F2AR.10	Q95XR9	0	2	Major sperm protein	
+Q95XS0	worm	Q95XS0	eri-5	Q95XS0	1	8	Tudor domain-containing protein	
+Q95XS1	worm	Q95XS1	trap-3	Q95XS1	4	17	Translocon-associated protein subunit gamma	
+Q95XS2	worm	Q95XS2	sec-61.b	Q95XS2	5	150	Protein transport protein Sec61 subunit beta	
+Q95XT5	worm	Q95XT5	trap-1	Q95XT5	3	14	Translocon-associated protein subunit alpha	
+Q95XU1	worm	Q95XU1	dmd-9	Q95XU1	0	2	DM domain-containing protein	
+Q95XU6	worm	Q95XU6	sut-2	Q95XU6	1	26	Zinc finger CCCH domain-containing protein 14	
+Q95XU7	worm	Q95XU7	CELE_Y59H11AM.1	Q95XU7	1	8	Major sperm protein	
+Q95XW0	worm	Q95XW0	srt-24	Q95XW0	0	3	Serpentine Receptor, class T	
+Q95XW5	worm	Q95XW5	magu-1	Q95XW5	2	21	MAGUK family	
+Q95XW7	worm	Q95XW7	affl-2	Q95XW7	1	3	AF4/FMR2 C-terminal homology domain-containing protein	
+Q95XW8	worm	Q95XW8	cec-8	Q95XW8	1	2	Chromo domain-containing protein	
+Q95XX0	worm	Q95XX0	ubc-13	Q95XX0	26	81	Ubiquitin-conjugating enzyme E2 13	
+Q95XX1	worm	Q95XX1	nprt-1	Q95XX1	0	3	Nicotinate phosphoribosyltransferase	
+Q95XX5	worm	Q95XX5	clec-80	Q95XX5	0	14	C-type lectin domain-containing protein	
+Q95XX6	worm	Q95XX6	CELE_Y54G2A.32	Q95XX6	0	2	DUF148 domain-containing protein	
+Q95XY4	worm	Q95XY4	nol-6	Q95XY4	5	110	Nucleolar protein 6	
+Q95XY8	worm	Q95XY8	CELE_Y51H7C.9	Q95XY8	1	1	Serine racemase	
+Q95XZ0	worm	Q95XZ0	cogc-4	Q95XZ0	12	52	Conserved oligomeric Golgi complex subunit 4	
+Q95XZ1	worm	Q95XZ1	nefr-1	Q95XZ1	0	1	Protein kinase domain-containing protein	
+Q95XZ6	worm	Q95XZ6	laat-1	Q95XZ6	0	1	Lysosomal amino acid transporter 1	
+Q95Y04	worm	Q95Y04	rps-28	Q95Y04	6	254	Small ribosomal subunit protein eS28	
+Q95Y05	worm	Q95Y05	nhr-274	Q95Y05	1	1	NR LBD domain-containing protein	
+Q95Y07	worm	Q95Y07	nhr-92	Q95Y07	2	37	Nuclear Hormone Receptor family	
+Q95Y10	worm	Q95Y10	dsl-3	Q95Y10	2	7	Delta-like protein	
+Q95Y10_CAEEL	worm	Q95Y10	dsl-3	Q95Y10	2	7		
+Q95Y11	worm	Q95Y11	CELE_Y41D4B.11	Q95Y11	0	1	DUF1014-domain-containing protein	
+Q95Y12	worm	Q95Y12	set-23	Q95Y12	1	3	Probable histone-lysine N-methyltransferase set-23	
+Q95Y15	worm	Q95Y15	npp-8	Q95Y15	5	84	Nucleoporin_N domain-containing protein	
+Q95Y26	worm	Q95Y26	ptpn-22	Q95Y26	0	10	Protein-tyrosine-phosphatase	
+Q95Y27	worm	Q95Y27	nspg-12	Q95Y27	0	7	DUF19 domain-containing protein	
+Q95Y28	worm	Q95Y28	nspg-13	Q95Y28	0	7	DUF19 domain-containing protein	
+Q95Y29	worm	Q95Y29	nspg-14	Q95Y29	0	8	DUF19 domain-containing protein	
+Q95Y35	worm	Q95Y35	CELE_Y108G3AL.2	Q95Y35	0	5	Pre-mRNA-splicing factor 38	
+Q95Y36	worm	Q95Y36	cfap-36	Q95Y36	0	2	Cilia- and flagella-associated protein 36	
+Q95Y41	worm	Q95Y41	rcor-1	Q95Y41	6	58	REST corepressor rcor-1	
+Q95Y42	worm	Q95Y42	CELE_Y71H2B.11	Q95Y42	0	5	BTB domain-containing protein	
+Q95Y44	worm	Q95Y44	dnj-30	Q95Y44	0	7	J domain-containing protein	
+Q95Y48	worm	Q95Y48	fbxb-97	Q95Y48	0	1	F-box associated domain-containing protein	
+Q95Y49	worm	Q95Y49	C52E2.4	Q95Y49	0	4	DUF38 domain-containing protein	
+Q95Y51	worm	Q95Y51	smr-1	Q95Y51	2	47	Tudor domain-containing protein	
+Q95Y58	worm	Q95Y58	CELE_Y50D4A.4	Q95Y58	1	3	Mic1 domain-containing protein	
+Q95Y67	worm	Q95Y67	pes-4	Q95Y67	1	48	K Homology domain-containing protein	
+Q95Y69	worm	Q95Y69	orc-3	Q95Y69	1	17	ORC_WH_C domain-containing protein	
+Q95Y71	worm	Q95Y71	mrpl-45	Q95Y71	7	101	Large ribosomal subunit protein mL45	
+Q95Y72	worm	Q95Y72	dss-1	Q95Y72	7	60	Probable 26S proteasome complex subunit dss-1	
+Q95Y73	worm	Q95Y73	fusm-2	Q95Y73	1	22	Mitochondrial elongation factor G2	
+Q95Y80	worm	Q95Y80	bet-1	Q95Y80	1	17	Bromodomain-containing protein bet-1	
+Q95Y82	worm	Q95Y82	rnf-145	Q95Y82	1	14	RING finger protein 145 homolog	
+Q95Y83	worm	Q95Y83	mrpl-19	Q95Y83	9	171	Large ribosomal subunit protein bL19m	
+Q95Y87	worm	Q95Y87	CELE_R13A5.10	Q95Y87	1	1	CMP/dCMP-type deaminase domain-containing protein	
+Q95Y88	worm	Q95Y88	mfsd-6	Q95Y88	0	1	Major facilitator superfamily associated domain-containing p	
+Q95Y89	worm	Q95Y89	lpd-7	Q95Y89	18	130	Pescadillo homolog	
+Q95Y90	worm	Q95Y90	rpl-9	Q95Y90	13	326	Large ribosomal subunit protein uL6	
+Q95Y94	worm	Q95Y94	lgc-12	Q95Y94	1	2	Ligand-Gated ion Channel	
+Q95Y96	worm	Q95Y96	CELE_M04F3.4	Q95Y96	1	29	EF-hand domain-containing protein	
+Q95Y97	worm	Q95Y97	rpa-2	Q95Y97	4	67	Replication protein A C-terminal domain-containing protein	
+Q95YA3	worm	Q95YA3	nlp-49	Q95YA3	1	1	Neuropeptide-Like Protein	
+Q95YA5	worm	Q95YA5	dyla-1	Q95YA5	1	30	DYnein Light chain, Axonemal p28 type	
+Q95YA9	worm	Q95YA9	cas-1	Q95YA9	9	28	C-CAP/cofactor C-like domain-containing protein	
+Q95YB1	worm	Q95YB1	CELE_F28A10.5	Q95YB1	0	7	Methyltransferase FkbM domain-containing protein	
+Q95YB2	worm	Q95YB2	acdh-9	Q95YB2	1	22	Isobutyryl-CoA dehydrogenase, mitochondrial	
+Q95YC3	worm	Q95YC3	cest-35.2	Q95YC3	0	2	Carboxylic ester hydrolase	
+Q95YC4	worm	Q95YC4	cest-32	Q95YC4	0	11	Carboxylic ester hydrolase	
+Q95YC6	worm	Q95YC6	spig-20	Q95YC6	1	5	Neuropeptide-Like Protein	
+Q95YD1	worm	Q95YD1	gln-1	Q95YD1	0	13	glutamine synthetase	
+Q95YD2	worm	Q95YD2	C45B2.6	Q95YD2	0	16	phospholipase A2	
+Q95YD4	worm	Q95YD4	kin-32	Q95YD4	5	103	Inactive tyrosine-protein kinase kin-32	
+Q95YD5	worm	Q95YD5	vha-16	Q95YD5	8	71	V-type proton ATPase subunit	
+Q95YD7	worm	Q95YD7	trhr-1	Q95YD7	1	2	Thyrotropin-releasing hormone receptor	
+Q95YD8	worm	Q95YD8	idhg-2	Q95YD8	5	17	Isocitrate dehydrogenase	
+Q95YD9	worm	Q95YD9	C30F12.4	Q95YD9	0	117	LITAF domain-containing protein	
+Q95YE1	worm	Q95YE1	C30F12.2	Q95YE1	0	4	ATPase N2B	
+Q95YE2	worm	Q95YE2	rege-1	Q95YE2	0	5	Endoribonuclease rege-1	
+Q95YE6	worm	Q95YE6	lig-4	Q95YE6	2	32	DNA ligase IV	
+Q95YE7	worm	Q95YE7	C07H6.2	Q95YE7	2	11	E3 ubiquitin-protein ligase PPP1R11	
+Q95YE9	worm	Q95YE9	clk-2	Q95YE9	1	17	Telomere length regulation protein clk-2	
+Q95YF0	worm	Q95YF0	cls-1	Q95YF0	0	3	Protein CLASP-1	
+Q95YF1	worm	Q95YF1	sap-140	Q95YF1	7	28	U2 snRNP-associated SURP motif-containing protein	
+Q95YF3	worm	Q95YF3	cgh-1	Q95YF3	10	109	ATP-dependent RNA helicase cgh-1	
+Q95YH0	dictyostelium-discoideum	Q95YH0	cdk8	Q95YH0	3	34	Probable cyclin-dependent kinase 8	
+Q95YI5	fly	FBgn0042641	frc	Q95YI5	0	8	UDP-sugar transporter UST74c (Protein fringe connection)	
+Q95YL4	dictyostelium-discoideum	Q95YL4	pefB	Q95YL4	1	7	Penta-EF hand domain-containing protein 2	
+Q95YL5	dictyostelium-discoideum	Q95YL5	pefA	Q95YL5	0	7	Penta-EF hand domain-containing protein 1	
+Q95ZG3	dictyostelium-discoideum	Q95ZG3	spc97	Q95ZG3	2	4	Spindle pole body component 97	
+Q95ZG4	dictyostelium-discoideum	Q95ZG4	spc98	Q95ZG4	3	22	Spindle pole body component 98	
+Q95ZG5	dictyostelium-discoideum	Q95ZG5	DrnA	Q95ZG5	0	8	Putative RNaseIII	
+Q95ZG8	dictyostelium-discoideum	Q95ZG8	gpgA	Q95ZG8	1	14	Guanine nucleotide-binding protein subunit gamma	
+Q95ZI6	worm	Q95ZI6	ZK353.9	Q95ZI6	1	5	PITH domain-containing protein ZK353.9	
+Q95ZI9	worm	Q95ZI9	mihp-2	Q95ZI9	0	1	Neuropeptide CCHamide-1	
+Q95ZJ1	worm	Q95ZJ1	gly-5	Q95ZJ1	0	17	Polypeptide N-acetylgalactosaminyltransferase 5	
+Q95ZJ9	worm	Q95ZJ9	CELE_Y10G11A.1	Q95ZJ9	0	6	5'-nucleotidase	
+Q95ZK1	worm	Q95ZK1	CELE_W04G5.10	Q95ZK1	3	42	receptor protein-tyrosine kinase	
+Q95ZK7	worm	Q95ZK7	gld-3	Q95ZK7	0	14	Defective in germ line development protein 3	
+Q95ZL9	worm	Q95ZL9	bro-1	Q95ZL9	1	47	Core-binding factor subunit beta homolog bro-1	
+Q95ZM2	worm	Q95ZM2	ints-9	Q95ZM2	7	57	Beta-Casp domain-containing protein	
+Q95ZQ4	worm	Q95ZQ4	aak-2	Q95ZQ4	7	51	5'-AMP-activated protein kinase catalytic subunit alpha-2 (A	
+Q95ZQ5	worm	Q95ZQ5	pnn-1	Q95ZQ5	2	26	Pinin/SDK/MemA protein domain-containing protein	
+Q95ZQ7	worm	Q95ZQ7	nssp-42	Q95ZQ7	0	4	DUF148 domain-containing protein	
+Q95ZR2	worm	Q95ZR2	CELE_R05D11.9	Q95ZR2	0	7	Sphingomyelin phosphodiesterase 4	
+Q95ZR7	worm	Q95ZR7	scbp-2	Q95ZR7	0	1	Ribosomal protein eL8/eL30/eS12/Gadd45 domain-containing pro	
+Q95ZR9	worm	Q95ZR9	ncs-3	Q95ZR9	2	10	EF-hand domain-containing protein	
+Q95ZS0	worm	Q95ZS0	taf-10	Q95ZS0	13	75	Transcription initiation factor TFIID subunit 10	
+Q95ZS1	worm	Q95ZS1	gfi-2	Q95ZS1	15	33	ANK_REP_REGION domain-containing protein	
+Q95ZS2	worm	Q95ZS2	tdc-1	Q95ZS2	2	6	Tyrosine decarboxylase	
+Q95ZS5	worm	Q95ZS5	CELE_F56A8.3	Q95ZS5	0	6	Leucine-rich repeat domain, L domain-like	
+Q95ZS6	worm	Q95ZS6	rfip-1	Q95ZS6	1	26	FIP-RBD domain-containing protein	
+Q95ZT6	worm	Q95ZT6	CELE_F43H9.4	Q95ZT6	1	21	Glycine N-acyltransferase-like protein	
+Q95ZT9	worm	Q95ZT9	pqn-37	Q95ZT9	0	3	Prion-like-(Q/N-rich)-domain-bearing protein	
+Q95ZV7	worm	Q95ZV7	ddr-2	Q95ZV7	5	28	Discoidin domain-containing receptor tyrosine kinase B (EC 2	
+Q95ZV8	worm	Q95ZV8	CELE_F08F8.10	Q95ZV8	0	1	Nuclear transcription factor Y subunit	
+Q95ZV9	worm	Q95ZV9	CELE_F08F8.9	Q95ZV9	0	4	Uncharacterized protein	
+Q95ZW1	worm	Q95ZW1	gos-28	Q95ZW1	7	43	Golgi SNAP receptor complex member 1	
+Q95ZW2	worm	Q95ZW2	CELE_F08F8.7	Q95ZW2	0	9	Ribulose-phosphate 3-epimerase	
+Q95ZW3	worm	Q95ZW3	CELE_F08F8.6	Q95ZW3	0	6	Uncharacterized protein	
+Q95ZW7	worm	Q95ZW7	CELE_D1014.6	Q95ZW7	0	1	Glycosyltransferase family 92 protein	
+Q95ZW9	worm	Q95ZW9	C50F4.16	Q95ZW9	1	8	Uridine diphosphate glucose pyrophosphatase NUDT14	
+Q95ZX6	worm	Q95ZX6	mys-4	Q95ZX6	3	27	Histone acetyltransferase	
+Q95ZY1	worm	Q95ZY1	srb-2	Q95ZY1	0	2	Serpentine receptor class beta-2	

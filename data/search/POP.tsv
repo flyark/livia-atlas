@@ -1,34 +1,91 @@
-POP1	arabidopsis-thaliana	F4IL30	POP1	F4IL30	2	69	Ribonucleases P/MRP protein subunit POP1
-POP1	dictyostelium-discoideum	Q54EV0	pop1	Q54EV0	2	32	RNase P protein subunit
-POP1	mus-musculus	Q8K205	Pop1	Q8K205	2	50	Processing of 1, ribonuclease P/MRP family, (S. cerevisiae)
-POP1	rattus-norvegicus	D4AE75	Pop1	D4AE75	2	53	POP1 homolog, ribonuclease P/MRP subunit
-POP1	schizosaccharomyces-pombe	P87060	pop1	P87060	3	36	WD repeat-containing protein pop1
-POP1	schizosaccharomyces-pombe	Q9UTA4	pop1	Q9UTA4	4	46	Ribonucleases P/MRP protein subunit pop1
-POP2	arabidopsis-thaliana	Q94CE5	POP2	Q94CE5	0	3	Gamma-aminobutyrate transaminase POP2, mitochondrial
-POP2	candida-albicans-237561	Q5A8L5	POP2	Q5A8L5	3	18	CCR4-NOT core DEDD family RNase subunit
-POP2	schizosaccharomyces-pombe	O14170	pop2	O14170	5	37	WD repeat-containing protein pop2
-POP3	candida-albicans-237561	A0A1D8PUA8	POP3	A0A1D8PUA8	3	32	Pop3p
-POP3	schizosaccharomyces-pombe	O74184	pop3	O74184	3	48	Target of rapamycin complex subunit wat1
-POP3	schizosaccharomyces-pombe	O74450	pop3	O74450	3	43	Ribonucleases P/MRP protein subunit pop3
-POP4	arabidopsis-thaliana	Q9ZW76	POP4	Q9ZW76	6	43	Ribonuclease MRP protein subunit POP4
-POP4	candida-albicans-237561	A0A1D8PQ05	POP4	A0A1D8PQ05	4	32	Ribonuclease P protein subunit
-POP4	cladophialophora-carrionii	A0A1C1C963	Pop4	A0A1C1C963	5	49	Ribonuclease P protein subunit
-POP4	dictyostelium-discoideum	Q54IT0	pop4	Q54IT0	3	30	Ribonuclease P protein subunit p29
-POP4	mus-musculus	Q9CR08	Pop4	Q9CR08	4	46	Ribonuclease P protein subunit p29
-POP4	rattus-norvegicus	Q5M882	Pop4	Q5M882	6	53	Ribonuclease P protein subunit p29
-POP5	dictyostelium-discoideum	Q54EP3	pop5	Q54EP3	3	34	Probable ribonuclease P/MRP protein subunit POP5
-POP5	mus-musculus	Q9DB28	Pop5	Q9DB28	3	58	Ribonuclease P/MRP protein subunit POP5
-POP5	rattus-norvegicus	D3ZY31	Pop5	D3ZY31	5	77	Ribonuclease P/MRP protein subunit POP5
-POP7	mus-musculus	Q9DCH2	Pop7	Q9DCH2	9	44	Ribonuclease P protein subunit p20
-POP7	rattus-norvegicus	D3ZQJ2	Pop7	D3ZQJ2	8	56	Ribonuclease P protein subunit p20
-POP7	schizosaccharomyces-pombe	O94251	pop7	O94251	5	42	Ribonucleases P/MRP protein subunit POP7
-POP8	schizosaccharomyces-pombe	Q7Z996	pop8	Q7Z996	6	43	Probable ribonucleases P protein subunit pop8
-POPB	pseudomonas-aeruginosa	Q9I324	popB	Q9I324	3	9	Translocator protein PopB
-POPD	pseudomonas-aeruginosa	Q9I323	popD	Q9I323	1	4	Translocator outer membrane protein PopD
-POPDC1	mus-musculus	Q9ES83	Popdc1	Q9ES83	1	4	Popeye domain-containing protein 1
-POPDC2	mus-musculus	Q9ES82	Popdc2	Q9ES82	1	4	Popeye domain-containing protein 2
-POPDC2	rattus-norvegicus	Q6P722	Popdc2	Q6P722	0	5	Popeye domain containing 2
-POPDC3	mus-musculus	Q9ES81	Popdc3	Q9ES81	0	2	Popeye domain-containing protein 3
-POPDC3	rattus-norvegicus	Q3KRE1	Popdc3	Q3KRE1	0	2	Popeye domain-containing 3
-POPN	pseudomonas-aeruginosa	G3XCX6	popN	G3XCX6	0	1	Type III secretion outer membrane protein PopN
-POPT	staphylococcus-aureus-93061	Q2FZY8	popT	Q2FZY8	0	1	Polyprenyl-phosphate transporter
+POP-1	worm	Q10666	pop-1	Q10666	7	74	Protein pop-1	w
+POP-1	worm	Q10666	pop-1	Q10666	7	74	Protein pop-1	w
+POP1	arabidopsis-thaliana	F4IL30	POP1	F4IL30	2	69	Ribonucleases P/MRP protein subunit POP1	
+POP1	dictyostelium-discoideum	Q54EV0	pop1	Q54EV0	2	32	RNase P protein subunit	
+POP1	fly	FBgn0026702	Pop1	Q7KVW2	1	42	FI18256p1 (POP1 ribonuclease P/MRP subunit)	w
+POP1	fly	FBgn0026702	Pop1	Q7KVW2	1	42	FI18256p1 (POP1 ribonuclease P/MRP subunit)	w
+POP1	human	Q8NE79	POPDC1	Q8NE79	5	44		
+POP1	human	Q8WXC3	PYDC1	Q8WXC3	2	161		
+POP1	human	Q99575	POP1	Q99575	31	543	Ribonucleases P/MRP protein subunit POP1 (hPOP1)	
+POP1	mus-musculus	Q8K205	Pop1	Q8K205	2	50	Processing of 1, ribonuclease P/MRP family, (S. cerevisiae)	
+POP1	rattus-norvegicus	D4AE75	Pop1	D4AE75	2	53	POP1 homolog, ribonuclease P/MRP subunit	
+POP1	schizosaccharomyces-pombe	P87060	pop1	P87060	3	36	WD repeat-containing protein pop1	
+POP1	schizosaccharomyces-pombe	Q9UTA4	pop1	Q9UTA4	4	46	Ribonucleases P/MRP protein subunit pop1	
+POP1	yeast	P41812	POP1	P41812	3	53	Ribonucleases P/MRP protein subunit POP1	
+POP1_HUMAN	human	Q99575	POP1	Q99575	31	543		
+POP2	arabidopsis-thaliana	Q94CE5	POP2	Q94CE5	0	3	Gamma-aminobutyrate transaminase POP2, mitochondrial	
+POP2	candida-albicans-237561	Q5A8L5	POP2	Q5A8L5	3	18	CCR4-NOT core DEDD family RNase subunit	
+POP2	fly	FBgn0036239	Pop2	X2JCC3	37	426	CCR4-NOT transcription complex subunit 7 (EC 3.1.13.4) (CCR4	
+POP2	human	Q56P42	PYDC2	Q56P42	7	48		
+POP2	human	Q9HBU9	POPDC2	Q9HBU9	9	63		
+POP2	human	Q9UFF9	CNOT8	Q9UFF9	41	456		
+POP2	schizosaccharomyces-pombe	O14170	pop2	O14170	5	37	WD repeat-containing protein pop2	
+POP2	yeast	P39008	POP2	P39008	3	59	Poly(A) ribonuclease POP2	
+POP3	candida-albicans-237561	A0A1D8PUA8	POP3	A0A1D8PUA8	3	32	Pop3p	
+POP3	human	Q9HBV1	POPDC3	Q9HBV1	6	56		
+POP3	human	W6CW81	PYDC5	W6CW81	0	1		
+POP3	schizosaccharomyces-pombe	O74184	pop3	O74184	3	48	Target of rapamycin complex subunit wat1	
+POP3	schizosaccharomyces-pombe	O74450	pop3	O74450	3	43	Ribonucleases P/MRP protein subunit pop3	
+POP3	yeast	P53833	POP3	P53833	2	47	Ribonucleases P/MRP protein subunit POP3	
+POP4	arabidopsis-thaliana	Q9ZW76	POP4	Q9ZW76	6	43	Ribonuclease MRP protein subunit POP4	
+POP4	candida-albicans-237561	A0A1D8PQ05	POP4	A0A1D8PQ05	4	32	Ribonuclease P protein subunit	
+POP4	cladophialophora-carrionii	A0A1C1C963	Pop4	A0A1C1C963	5	49	Ribonuclease P protein subunit	
+POP4	dictyostelium-discoideum	Q54IT0	pop4	Q54IT0	3	30	Ribonuclease P protein subunit p29	
+POP4	fly	FBgn0035831	Pop4	Q9VSC6	5	50	Ribonuclease P protein subunit p29	
+POP4	human	O95707	POP4	O95707	23	192	Ribonuclease P protein subunit p29 (hPOP4)	
+POP4	human	P0DMW2	NLRP2B	P0DMW2	0	18		
+POP4	mus-musculus	Q9CR08	Pop4	Q9CR08	4	46	Ribonuclease P protein subunit p29	
+POP4	rattus-norvegicus	Q5M882	Pop4	Q5M882	6	53	Ribonuclease P protein subunit p29	
+POP4	yeast	P38336	POP4	P38336	6	42	RNases MRP/P 32.9 kDa subunit	
+POP5	dictyostelium-discoideum	Q54EP3	pop5	Q54EP3	3	34	Probable ribonuclease P/MRP protein subunit POP5	
+POP5	fly	FBgn0036696	Pop5	Q9VVE0	4	47	Ribonuclease P/MRP protein subunit POP5	w
+POP5	fly	FBgn0036696	Pop5	Q9VVE0	4	47	Ribonuclease P/MRP protein subunit POP5	w
+POP5	human	Q969H6	POP5	Q969H6	19	228	Ribonuclease P/MRP protein subunit POP5 (hPop5)	
+POP5	mus-musculus	Q9DB28	Pop5	Q9DB28	3	58	Ribonuclease P/MRP protein subunit POP5	
+POP5	rattus-norvegicus	D3ZY31	Pop5	D3ZY31	5	77	Ribonuclease P/MRP protein subunit POP5	
+POP5	worm	G5EF59	popl-5	G5EF59	2	35	Ribonuclease P/MRP protein subunit POP5	w
+POP5	yeast	P28005	POP5	P28005	5	46	Ribonuclease P/MRP protein subunit POP5	
+POP5	zebrafish	Q5BJI6	pop5	Q5BJI6	2	45	Ribonuclease P/MRP protein subunit POP5	w
+POP5	zebrafish	Q5BJI6	pop5	Q5BJI6	2	45	Ribonuclease P/MRP protein subunit POP5	w
+POP5_HUMAN	human	Q969H6	POP5	Q969H6	19	228		
+POP6	yeast	P53218	POP6	P53218	2	48	Ribonucleases P/MRP protein subunit POP6	
+POP7	human	O75817	POP7	O75817	19	173	Ribonuclease P protein subunit p20 (RNaseP protein p20) (Rib	
+POP7	mus-musculus	Q9DCH2	Pop7	Q9DCH2	9	44	Ribonuclease P protein subunit p20	
+POP7	rattus-norvegicus	D3ZQJ2	Pop7	D3ZQJ2	8	56	Ribonuclease P protein subunit p20	
+POP7	schizosaccharomyces-pombe	O94251	pop7	O94251	5	42	Ribonucleases P/MRP protein subunit POP7	
+POP7	yeast	P38291	POP7	P38291	6	81	Ribonucleases P/MRP protein subunit POP7	
+POP7	zebrafish	Q5XJ22	pop7	Q5XJ22	4	39	Ribonuclease P protein subunit p20	
+POP7_HUMAN	human	O75817	POP7	O75817	19	173		
+POP8	schizosaccharomyces-pombe	Q7Z996	pop8	Q7Z996	6	43	Probable ribonucleases P protein subunit pop8	
+POP8	yeast	P38208	POP8	P38208	1	41	Ribonucleases P/MRP protein subunit POP8	
+POPB	pseudomonas-aeruginosa	Q9I324	popB	Q9I324	3	9	Translocator protein PopB	
+POPD	pseudomonas-aeruginosa	Q9I323	popD	Q9I323	1	4	Translocator outer membrane protein PopD	
+POPD1_HUMAN	human	Q8NE79	POPDC1	Q8NE79	5	44		
+POPD2_HUMAN	human	Q9HBU9	POPDC2	Q9HBU9	9	63		
+POPD3_HUMAN	human	Q9HBV1	POPDC3	Q9HBV1	6	56		
+POPDC1	human	Q8NE79	POPDC1	Q8NE79	5	44	Popeye domain-containing protein 1 (Popeye protein 1)	
+POPDC1	mus-musculus	Q9ES83	Popdc1	Q9ES83	1	4	Popeye domain-containing protein 1	
+POPDC1	zebrafish	Q5PQZ7	popdc1	Q5PQZ7	2	7	Popeye domain-containing protein 1	
+POPDC1-AS1	human	Q5T3Y7	POPDC1-AS1	Q5T3Y7	0	8	Putative uncharacterized protein POPDC1-AS1 (BVES antisense 	
+POPDC2	human	Q9HBU9	POPDC2	Q9HBU9	9	63	Popeye domain-containing protein 2 (Popeye protein 2)	
+POPDC2	mus-musculus	Q9ES82	Popdc2	Q9ES82	1	4	Popeye domain-containing protein 2	
+POPDC2	rattus-norvegicus	Q6P722	Popdc2	Q6P722	0	5	Popeye domain containing 2	
+POPDC2	zebrafish	Q6JWV8	popdc2	Q6JWV8	0	4	Popeye domain-containing 2	
+POPDC3	human	Q9HBV1	POPDC3	Q9HBV1	6	56	Popeye domain-containing protein 3 (Popeye protein 3)	
+POPDC3	mus-musculus	Q9ES81	Popdc3	Q9ES81	0	2	Popeye domain-containing protein 3	
+POPDC3	rattus-norvegicus	Q3KRE1	Popdc3	Q3KRE1	0	2	Popeye domain-containing 3	
+POPEYE	human	Q8NE79	POPDC1	Q8NE79	5	44	Popeye domain-containing protein 1 (Popeye protein 1)	w
+POPEYE	human	Q9HBU9	POPDC2	Q9HBU9	9	63	Popeye domain-containing protein 2 (Popeye protein 2)	w
+POPEYE	human	Q9HBV1	POPDC3	Q9HBV1	6	56	Popeye domain-containing protein 3 (Popeye protein 3)	w
+POPEYE	zebrafish	Q5PQZ7	popdc1	Q5PQZ7	2	7	Popeye domain-containing protein 1	w
+POPEYE	zebrafish	Q6JWV8	popdc2	Q6JWV8	0	4	Popeye domain-containing 2	w
+POPL-1	worm	Q11188	popl-1	Q11188	1	30	Ribonucleases P/MRP protein subunit popl-1	w
+POPL-1	worm	Q11188	popl-1	Q11188	1	30	Ribonucleases P/MRP protein subunit popl-1	w
+POPL-4	worm	Q9XVT1	popl-4	Q9XVT1	4	33	Ribonuclease P protein subunit p29	
+POPL-5	worm	G5EF59	popl-5	G5EF59	2	35	Ribonuclease P/MRP protein subunit POP5	
+POPL-7	worm	A0A2K5ATW7	popl-7	A0A2K5ATW7	0	1	Protein kish	
+POPN	pseudomonas-aeruginosa	G3XCX6	popN	G3XCX6	0	1	Type III secretion outer membrane protein PopN	
+POPT	staphylococcus-aureus-93061	Q2FZY8	popT	Q2FZY8	0	1	Polyprenyl-phosphate transporter	
+POPULATION	fly	FBgn0024177	zpg	Q9VRX6	0	11	Innexin inx4 (Innexin-4) (Protein zero population growth)	w
+POPX1	human	Q8WY54	PPM1E	Q8WY54	9	111		
+POPX2	human	P49593	PPM1F	P49593	25	168		

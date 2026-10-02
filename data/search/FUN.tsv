@@ -1,8 +1,74 @@
-FUN12	candida-albicans-237561	Q5A782	FUN12	Q5A782	4	158	Eukaryotic translation initiation factor 5B
-FUN30	candida-albicans-237561	A0A1D8PTJ0	FUN30	A0A1D8PTJ0	0	6	DNA helicase
-FUN31	candida-albicans-237561	A0A1D8PKQ6	FUN31	A0A1D8PKQ6	0	5	non-specific serine/threonine protein kinase
-FUNDC1	mus-musculus	Q9DB70	Fundc1	Q9DB70	5	26	FUN14 domain-containing protein 1
-FUNDC1	rattus-norvegicus	Q5BJS4	Fundc1	Q5BJS4	6	28	FUN14 domain-containing protein 1
-FUNDC2	mus-musculus	Q9D6K8	Fundc2	Q9D6K8	0	2	FUN14 domain-containing protein 2
-FUNDC2	rattus-norvegicus	D3ZAQ0	Fundc2	D3ZAQ0	0	3	FUN14 domain-containing protein 2
-FUNDC2B	rattus-norvegicus	A0A0G2JX60	Fundc2b	A0A0G2JX60	1	3	FUN14 domain containing 2B
+FUN-1	human	P42081	CD86	P42081	110	492	T-lymphocyte activation antigen CD86 (Activation B7-2 antige	w
+FUN12	candida-albicans-237561	Q5A782	FUN12	Q5A782	4	158	Eukaryotic translation initiation factor 5B	
+FUN12	yeast	P39730	FUN12	P39730	7	285	Eukaryotic translation initiation factor 5B	
+FUN14	human	Q8IVP5	FUNDC1	Q8IVP5	11	88	FUN14 domain-containing protein 1	w
+FUN14	human	Q9BWH2	FUNDC2	Q9BWH2	4	108	FUN14 domain-containing protein 2 (Cervical cancer proto-onc	w
+FUN14	worm	Q22252	fndc-1	Q22252	0	9	FUN14 domain-containing protein fndc-1	w
+FUN14	yeast	P18411	FUN14	P18411	2	13	Protein FUN14	
+FUN14	zebrafish	Q6DH87	fundc1	Q6DH87	6	25	FUN14 domain-containing protein 1	w
+FUN19	yeast	P28003	FUN19	P28003	4	41	SWIRM domain-containing protein FUN19	
+FUN26	yeast	P31381	FUN26	P31381	0	2	Nucleoside transporter FUN26	
+FUN30	candida-albicans-237561	A0A1D8PTJ0	FUN30	A0A1D8PTJ0	0	6	DNA helicase	
+FUN30	yeast	P31380	FUN30	P31380	1	32	ATP-dependent helicase FUN30	
+FUN31	candida-albicans-237561	A0A1D8PKQ6	FUN31	A0A1D8PKQ6	0	5	non-specific serine/threonine protein kinase	
+FUNCTION	fly	FBgn0029094	asf1	Q9V464	24	79	Histone chaperone asf1 (Anti-silencing function protein 1) (	w
+FUNCTION	human	Q6P1X5	TAF2	Q6P1X5	43	522	Transcription initiation factor TFIID subunit 2 (150 kDa cof	w
+FUNCTION	human	Q96JZ2	HSH2D	Q96JZ2	21	94	Hematopoietic SH2 domain-containing protein (Hematopoietic S	w
+FUNCTION	human	Q9NVP2	ASF1B	Q9NVP2	45	150	Histone chaperone ASF1B (Anti-silencing function protein 1 h	w
+FUNCTION	human	Q9UMX5	NENF	Q9UMX5	17	133	Neudesin (Cell immortalization-related protein 2) (Neuron-de	w
+FUNCTION	human	Q9Y294	ASF1A	Q9Y294	83	257	Histone chaperone ASF1A (Anti-silencing function protein 1 h	w
+FUNCTION	worm	A0A8D6PJU0	CELE_F36G9.13	A0A8D6PJU0	0	2	Domain of unknown function WSN domain-containing protein	w
+FUNCTION	worm	H2L2B7	spe-43	H2L2B7	0	8	Domain of unknown function DX domain-containing protein	w
+FUNCTION	worm	K8ERN2	CELE_Y67A10A.3	K8ERN2	0	1	Domain of unknown function WSN domain-containing protein	w
+FUNCTION	worm	O62033	C06C6.7	O62033	0	1	Domain of unknown function WSN domain-containing protein	w
+FUNCTION	worm	O76623	CELE_Y57G7A.6	O76623	0	1	Domain of unknown function WSN domain-containing protein	w
+FUNCTION	worm	P91405	CELE_R57.2	P91405	1	3	Domain of unknown function DB domain-containing protein	w
+FUNCTION	worm	Q17566	C01G5.4	Q17566	0	5	Domain of unknown function WSN domain-containing protein	w
+FUNCTION	worm	Q18709	C49F8.3	Q18709	0	7	Domain of unknown function DB domain-containing protein	w
+FUNCTION	worm	Q19830	CELE_F26G1.5	Q19830	0	13	Domain of unknown function DB domain-containing protein	w
+FUNCTION	worm	Q2V4U3	CELE_F26G1.9	Q2V4U3	0	12	Domain of unknown function DB domain-containing protein	w
+FUNCTION	worm	Q86LS4	dao-2	Q86LS4	0	30	Domain of unknown function DB domain-containing protein	w
+FUNCTION	worm	Q966J9	CELE_F35B3.4	Q966J9	0	1	Domain of unknown function DB domain-containing protein	w
+FUNCTION	worm	Q9N5L7	CELE_H20J04.1	Q9N5L7	0	4	Domain of unknown function WSN domain-containing protein	w
+FUNCTION	worm	Q9U2S0	CELE_Y116A8C.33	Q9U2S0	0	1	Domain of unknown function WSN domain-containing protein	w
+FUNCTION	worm	Q9XV50	pqn-32	Q9XV50	0	4	Domain of unknown function DB domain-containing protein	w
+FUNCTION-ASSOCIATED	human	P19256	CD58	P19256	57	378	Lymphocyte function-associated antigen 3 (Ag3) (Surface glyc	w
+FUNCTION-ASSOCIATED	human	P20701	ITGAL	P20701	56	385	Integrin alpha-L (CD11 antigen-like family member A) (Leukoc	w
+FUNCTIONAL	human	O75962	TRIO	O75962	8	68	Triple functional domain protein (EC 2.7.11.1) (PTPRF-intera	w
+FUNCTIONAL	human	P84550	SKOR1	P84550	2	8	SKI family transcriptional corepressor 1 (Functional Smad-su	w
+FUNCTIONAL	human	Q13769	THOC5	Q13769	43	401	THO complex subunit 5 (Functional spliceosome-associated pro	w
+FUNCTIONAL	human	Q2VWA4	SKOR2	Q2VWA4	1	14	SKI family transcriptional corepressor 2 (Functional Smad-su	w
+FUNCTIONAL	human	Q6I9Y2	THOC7	Q6I9Y2	29	190	THO complex subunit 7 (Functional spliceosome-associated pro	w
+FUNCTIONAL	human	Q86W42	THOC6	Q86W42	12	143	THO complex subunit 6 (Functional spliceosome-associated pro	w
+FUNCTIONAL	virus	D3XDR6	M91	D3XDR6	2	158	Herpesvirus U62/UL91 functional domain-containing protein	w
+FUNCTIONAL	worm	Q9U205	talp-3	Q9U205	0	6	TALPid3 (TALPID3) functional homolog	w
+FUND1_HUMAN	human	Q8IVP5	FUNDC1	Q8IVP5	11	88		
+FUND2_HUMAN	human	Q9BWH2	FUNDC2	Q9BWH2	4	108		
+FUNDC1	fly	FBgn0032200	Fundc1	Q9VL16	3	61	RE45833p	
+FUNDC1	human	Q8IVP5	FUNDC1	Q8IVP5	11	88	FUN14 domain-containing protein 1	
+FUNDC1	mus-musculus	Q9DB70	Fundc1	Q9DB70	5	26	FUN14 domain-containing protein 1	
+FUNDC1	rattus-norvegicus	Q5BJS4	Fundc1	Q5BJS4	6	28	FUN14 domain-containing protein 1	
+FUNDC1	zebrafish	Q6DH87	fundc1	Q6DH87	6	25	FUN14 domain-containing protein 1	
+FUNDC2	human	Q9BWH2	FUNDC2	Q9BWH2	4	108	FUN14 domain-containing protein 2 (Cervical cancer proto-onc	
+FUNDC2	mus-musculus	Q9D6K8	Fundc2	Q9D6K8	0	2	FUN14 domain-containing protein 2	
+FUNDC2	rattus-norvegicus	D3ZAQ0	Fundc2	D3ZAQ0	0	3	FUN14 domain-containing protein 2	
+FUNDC2B	rattus-norvegicus	A0A0G2JX60	Fundc2b	A0A0G2JX60	1	3	FUN14 domain containing 2B	
+FUNES	fly	FBgn0039116	Funes	Q9VCH9	0	5	LD07883p	
+FUNGAL	worm	G5EGD7	CELE_T08B1.4	G5EGD7	0	1	Fungal lipase-like domain-containing protein	w
+FUNGAL	worm	H2KZV5	CELE_T21H3.1	H2KZV5	0	37	Fungal lipase-like domain-containing protein	w
+FUNGAL	worm	O01584	CELE_K08B12.1	O01584	0	1	Fungal lipase-like domain-containing protein	w
+FUNGAL	worm	O02293	CELE_T02E1.2	O02293	0	1	Fungal_trans domain-containing protein	w
+FUNGAL	worm	O45953	CELE_Y51A2B.4	O45953	1	8	Fungal lipase-like domain-containing protein	w
+FUNGAL	worm	Q19891	CELE_F28H7.3	Q19891	0	26	Fungal lipase-like domain-containing protein	w
+FUNGAL	worm	Q9XTU3	CELE_Y49E10.18	Q9XTU3	2	13	Fungal lipase-like domain-containing protein	w
+FUNGUS-INDUCED	worm	O16460	fip-4	O16460	0	2	Fungus-Induced Protein	w
+FUNGUS-INDUCED	worm	P34300	fip-3	P34300	0	1	Fungus-induced protein 3	w
+FUNGUS-INDUCED	worm	P34407	fip-1	P34407	0	4	Fungus-induced protein 1	w
+FUNGUS-INDUCED	worm	Q20726	CELE_F53F4.1	Q20726	0	1	FIP (Fungus-Induced Protein) Related	w
+FUNGUS-INDUCED	worm	Q22029	CELE_R74.2	Q22029	0	1	FIP (Fungus-Induced Protein) Related	w
+FUNGUS-INDUCED	worm	Q23052	fip-2	Q23052	0	6	Fungus-Induced Protein	w
+FUNGUS-INDUCED	worm	Q56W03	CELE_H37A05.4	Q56W03	0	1	FIP (Fungus-Induced Protein) Related	w
+FUNGUS-INDUCED	worm	Q9U2E5	CELE_Y46G5A.23	Q9U2E5	0	1	FIP (Fungus-Induced Protein) Related	w
+FUNGUS-INDUCED	worm	Q9XXD3	fipr-17	Q9XXD3	0	2	FIP (Fungus-Induced Protein) Related	w
+FUNGUS-INDUCED	worm	Q9XXF1	CELE_Y43C5A.3	Q9XXF1	0	3	FIP (Fungus-Induced Protein) Related	w
+FUNGUS-INDUCED-RELATED	worm	Q19408	fipr-15	Q19408	0	1	Fungus-induced-related protein 15	w

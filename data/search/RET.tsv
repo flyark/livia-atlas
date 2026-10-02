@@ -1,23 +1,587 @@
-RET	mus-musculus	P35546	Ret	P35546	13	84	Proto-oncogene tyrosine-protein kinase receptor Ret
-RET	rattus-norvegicus	G3V9H8	Ret	G3V9H8	12	76	Proto-oncogene tyrosine-protein kinase receptor Ret
-RET2	candida-albicans-237561	A0A1D8PND9	RET2	A0A1D8PND9	5	17	Coatomer subunit delta
-RET2	leishmania-infantum	A4I1X5	RET2	A4I1X5	0	4	RNA uridylyltransferase
-RET2	schizosaccharomyces-pombe	O74496	ret2	O74496	2	12	Coatomer subunit delta
-RET3	cladophialophora-carrionii	A0A1C1CJ27	RET3	A0A1C1CJ27	2	11	Coatomer subunit zeta
-RET3	schizosaccharomyces-pombe	O74891	ret3	O74891	3	37	Probable coatomer subunit zeta
-RETN	mus-musculus	Q99P87	Retn	Q99P87	0	25	Resistin
-RETN	rattus-norvegicus	Q8K4J7	Retn	Q8K4J7	0	21	Resistin
-RETNLA	mus-musculus	Q9EP95	Retnla	Q9EP95	0	1	Resistin-like alpha
-RETNLA	rattus-norvegicus	Q99P85	Retnla	Q99P85	0	2	Resistin-like alpha
-RETNLB	mus-musculus	Q99P86	Retnlb	Q99P86	0	10	Resistin-like beta
-RETNLB	rattus-norvegicus	A6IQV7	Retnlb	A6IQV7	0	8	Resistin-like beta
-RETNLG	mus-musculus	Q8K426	Retnlg	Q8K426	0	21	Resistin-like gamma
-RETNLG	rattus-norvegicus	G3V686	Retnlg	G3V686	0	19	Resistin-like gamma
-RETREG1	mus-musculus	Q8VE91	Retreg1	Q8VE91	6	83	Reticulophagy regulator 1
-RETREG1	rattus-norvegicus	Q5FVM3	Retreg1	Q5FVM3	14	179	Reticulophagy regulator 1
-RETREG2	mus-musculus	Q6NS82	Retreg2	Q6NS82	1	74	Reticulophagy regulator 2
-RETREG2	rattus-norvegicus	Q3MHU5	Retreg2	Q3MHU5	5	141	Reticulophagy regulator 2
-RETREG3	mus-musculus	Q9CQV4	Retreg3	Q9CQV4	1	75	Reticulophagy regulator 3
-RETREG3	rattus-norvegicus	B2GV94	Retreg3	B2GV94	2	141	Fam134c protein
-RETS	pseudomonas-aeruginosa	Q9HUV7	retS	Q9HUV7	18	115	histidine kinase
-RETSAT	mus-musculus	Q64FW2	Retsat	Q64FW2	0	1	All-trans-retinol 13,14-reductase
+RET	fly	FBgn0011829	Ret	Q7KT06	129	1157	Ret oncogene, isoform A (Ret oncogene, isoform B (EC 2.7.10.	
+RET	human	P07949	RET	P07949	114	1697	Proto-oncogene tyrosine-protein kinase receptor Ret (EC 2.7.	
+RET	mus-musculus	P35546	Ret	P35546	13	84	Proto-oncogene tyrosine-protein kinase receptor Ret	
+RET	rattus-norvegicus	G3V9H8	Ret	G3V9H8	12	76	Proto-oncogene tyrosine-protein kinase receptor Ret	
+RET	zebrafish	A8E7C6	ret	A8E7C6	13	96	Proto-oncogene tyrosine-protein kinase receptor Ret (EC 2.7.	
+RET-FUSED	human	Q8TBA6	GOLGA5	Q8TBA6	45	234	Golgin subfamily A member 5 (Cell proliferation-inducing gen	w
+RET-FUSED	human	Q9UPN9	TRIM33	Q9UPN9	96	588	E3 ubiquitin-protein ligase TRIM33 (EC 2.3.2.27) (Ectodermin	w
+RET-II	human	Q8TBA6	GOLGA5	Q8TBA6	45	234	Golgin subfamily A member 5 (Cell proliferation-inducing gen	w
+RET1	yeast	P22276	RET1	P22276	12	142	DNA-directed RNA polymerase III subunit RPC2	
+RET1_HUMAN	human	P09455	RBP1	P09455	10	94		
+RET2	candida-albicans-237561	A0A1D8PND9	RET2	A0A1D8PND9	5	17	Coatomer subunit delta	
+RET2	leishmania-infantum	A4I1X5	RET2	A4I1X5	0	4	RNA uridylyltransferase	
+RET2	schizosaccharomyces-pombe	O74496	ret2	O74496	2	12	Coatomer subunit delta	
+RET2	yeast	P43621	RET2	P43621	6	89	Coatomer subunit delta	
+RET2_HUMAN	human	P50120	RBP2	P50120	7	68		
+RET3	cladophialophora-carrionii	A0A1C1CJ27	RET3	A0A1C1CJ27	2	11	Coatomer subunit zeta	
+RET3	schizosaccharomyces-pombe	O74891	ret3	O74891	3	37	Probable coatomer subunit zeta	
+RET3	yeast	P53600	RET3	P53600	4	40	Coatomer subunit zeta	
+RET3_HUMAN	human	P10745	RBP3	P10745	7	43		
+RET4_HUMAN	human	P02753	RBP4	P02753	47	557		
+RET5_HUMAN	human	P82980	RBP5	P82980	7	58		
+RET7_HUMAN	human	Q96R05	RBP7	Q96R05	12	68		
+RETAINED	fly	FBgn0004795	retn	Q24573	104	414	Protein dead ringer (Protein retained)	w
+RETBINDIN	human	Q9BSG5	RTBDN	Q9BSG5	5	22	Retbindin	w
+RETBINDIN	zebrafish	A0A0R4IY94	rtbdn	A0A0R4IY94	0	2	Retbindin isoform X1	w
+RETENTION	human	O43731	KDELR3	O43731	10	113	ER lumen protein-retaining receptor 3 (KDEL endoplasmic reti	w
+RETENTION	human	P24390	KDELR1	P24390	8	173	ER lumen protein-retaining receptor 1 (KDEL endoplasmic reti	w
+RETENTION	human	P33947	KDELR2	P33947	12	183	ER lumen protein-retaining receptor 2 (ERD2-like protein 1) 	w
+RETENTION	human	Q9Y5Y7	LYVE1	Q9Y5Y7	45	278	Lymphatic vessel endothelial hyaluronic acid receptor 1 (LYV	w
+RETEPLASE	human	P00750	PLAT	P00750	41	314	Tissue-type plasminogen activator (t-PA) (t-plasminogen acti	w
+RETGC	human	Q02846	GUCY2D	Q02846	11	125		
+RETGC-1	human	Q02846	GUCY2D	Q02846	11	125	Retinal guanylyl cyclase 1 (RETGC-1) (EC 4.6.1.2) (CG-E) (Gu	w
+RETGC-2	human	P51841	GUCY2F	P51841	7	72	Retinal guanylyl cyclase 2 (RETGC-2) (EC 4.6.1.2) (Guanylate	w
+RETGC-2	zebrafish	E7F111	gc2	E7F111	6	44		
+RETGC1	human	Q02846	GUCY2D	Q02846	11	125		
+RETGC2	human	P51841	GUCY2F	P51841	7	72		
+RETI	fly	FBgn0031759	Kdm5	Q9VMJ7	15	77	Lysine-specific demethylase 5 (EC 1.14.11.67) (Histone demet	w
+RETI	human	O43174	CYP26A1	O43174	5	80	Cytochrome P450 26A1 (CYP26A1) (EC 1.14.13.-) (Cytochrome P4	w
+RETIC	human	O14983	ATP2A1	O14983	9	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 1 (SERCA1)	w
+RETIC	human	P16615	ATP2A2	P16615	4	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 (SERCA2)	w
+RETIC	human	Q15041	ARL6IP1	Q15041	11	514	ADP-ribosylation factor-like protein 6-interacting protein 1	w
+RETICU	human	P30101	PDIA3	P30101	20	445	Protein disulfide-isomerase A3 (EC 5.3.4.1) (58 kDa glucose-	w
+RETICULOCALBIN	zebrafish	F1R369	rcn1	F1R369	0	5	Reticulocalbin 1, EF-hand calcium-binding domain	w
+RETICULOCALBIN-1	human	Q15293	RCN1	Q15293	15	238	Reticulocalbin-1	w
+RETICULOCALBIN-2	human	Q14257	RCN2	Q14257	22	319	Reticulocalbin-2 (Calcium-binding protein ERC-55) (E6-bindin	w
+RETICULOCALBIN-2	zebrafish	A0A8M1N7T9	rcn2	A0A8M1N7T9	2	8	Reticulocalbin-2 precursor	w
+RETICULOCALBIN-3	human	Q96D15	RCN3	Q96D15	3	46	Reticulocalbin-3 (EF-hand calcium-binding protein RLP49)	w
+RETICULOCALBIN-3	worm	G5EBH7	calu-1	G5EBH7	0	12	Reticulocalbin-3	w
+RETICULON	zebrafish	F1R540	rtn1b	F1R540	1	14	Reticulon	w
+RETICULON	zebrafish	Q4G5K8	rtn2a	Q4G5K8	0	8	Reticulon	w
+RETICULON	zebrafish	Q4G5T7	rtn2b	Q4G5T7	0	5	Reticulon	w
+RETICULON	zebrafish	Q4G5V7	rtn1a	Q4G5V7	1	14	Reticulon	w
+RETICULON	zebrafish	Q4G5W2	rtn4a	Q4G5W2	0	10	Reticulon	w
+RETICULON	zebrafish	Q4G5W3	rtn3	Q4G5W3	0	8	Reticulon	w
+RETICULON-1	human	Q16799	RTN1	Q16799	11	131	Reticulon-1 (Neuroendocrine-specific protein)	w
+RETICULON-2	human	O75298	RTN2	O75298	7	63	Reticulon-2 (Neuroendocrine-specific protein-like 1) (NSP-li	w
+RETICULON-3	human	O95197	RTN3	O95197	26	186	Reticulon-3 (Homolog of ASY protein) (HAP) (Neuroendocrine-s	w
+RETICULON-4	human	Q86UN2	RTN4RL1	Q86UN2	7	88	Reticulon-4 receptor-like 1 (Nogo receptor-like 2) (Nogo-66 	w
+RETICULON-4	human	Q86UN3	RTN4RL2	Q86UN3	7	85	Reticulon-4 receptor-like 2 (Nogo receptor-like 3) (Nogo-66 	w
+RETICULON-4	human	Q9BZR6	RTN4R	Q9BZR6	18	186	Reticulon-4 receptor (Nogo receptor) (NgR) (Nogo-66 receptor	w
+RETICULON-4	human	Q9NQC3	RTN4	Q9NQC3	26	380	Reticulon-4 (Foocen) (Neurite outgrowth inhibitor) (Nogo pro	w
+RETICULON-4	zebrafish	E7F813	si:ch211-237i5.4	E7F813	2	34	Reticulon-4 receptor	w
+RETICULON-4-INTERACTING	human	Q8WWV3	RTN4IP1	Q8WWV3	5	130	NAD(P)H oxidoreductase RTN4IP1, mitochondrial (EC 1.6.5.-) (	w
+RETICULON-4-INTERACTING	worm	Q4W4Z2	rad-8	Q4W4Z2	0	3	Reticulon-4-interacting protein 1, mitochondrial	w
+RETICULON-LIKE	fly	FBgn0015831	Rtnl2	Q9VIB7	0	12	Reticulon-like protein	w
+RETICULON-LIKE	fly	FBgn0053113	Rtnl1	E1JHT6	20	259	Reticulon-like protein	w
+RETICULON-LIKE	fly	FBgn0262100	CG42853	C0PDE0	3	62	Reticulon-like protein	w
+RETICULON-LIKE	yeast	Q04947	RTN1	Q04947	3	100	Reticulon-like protein 1	w
+RETICULON-LIKE	yeast	Q12443	RTN2	Q12443	4	41	Reticulon-like protein 2	w
+RETICULOPHAGY	human	Q86VR2	RETREG3	Q86VR2	23	279	Reticulophagy regulator 3	w
+RETICULOPHAGY	human	Q8NC44	RETREG2	Q8NC44	15	116	Reticulophagy regulator 2	w
+RETICULOPHAGY	human	Q9H6L5	RETREG1	Q9H6L5	15	184	Reticulophagy regulator 1 (Reticulophagy receptor 1)	w
+RETICULOPHAGY	zebrafish	F1QYM7	retreg3	F1QYM7	3	106	Reticulophagy regulator 3	w
+RETICULUM	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
+RETICULUM	fly	FBgn0031950	Herp	Q9VLW9	1	8	Homocysteine-induced endoplasmic reticulum protein, isoform 	w
+RETICULUM	fly	FBgn0032398	CG6766	Q9VKC7	29	304	Endoplasmic reticulum lectin 1 (ER lectin)	w
+RETICULUM	fly	FBgn0033309	Lnpk	Q7K2N0	0	3	Endoplasmic reticulum junction formation protein lunapark	w
+RETICULUM	fly	FBgn0035165	CG13887	Q9W0M4	4	207	Endoplasmic reticulum transmembrane protein	w
+RETICULUM	fly	FBgn0037327	PEK	Q9NIV1	303	3493	Eukaryotic translation initiation factor 2-alpha kinase (EC 	w
+RETICULUM	fly	FBgn0038127	CG8476	Q9VFY1	2	9	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
+RETICULUM	fly	FBgn0261274	Ero1L	Q9V3A6	7	35	Ero1-like protein (EC 1.8.4.-) (Endoplasmic reticulum oxidor	w
+RETICULUM	fly	FBgn0263006	SERCA	P22700	4	154	Calcium-transporting ATPase sarcoplasmic/endoplasmic reticul	w
+RETICULUM	fly	FBgn0286784	TER94	Q7KN62	21	336	Transitional endoplasmic reticulum 94	w
+RETICULUM	fly	FBgn0287183	l(3)80Fg	Q7PLG1	231	2394	DnaJ homolog subfamily C member 16 (Endoplasmic reticulum DN	w
+RETICULUM	human	A6NNS2	DHRS7C	A6NNS2	4	57	Dehydrogenase/reductase SDR family member 7C (EC 1.1.1.105) 	w
+RETICULUM	human	O14983	ATP2A1	O14983	9	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 1 (SERCA1)	w
+RETICULUM	human	O43731	KDELR3	O43731	10	113	ER lumen protein-retaining receptor 3 (KDEL endoplasmic reti	w
+RETICULUM	human	O75477	ERLIN1	O75477	16	186	Erlin-1 (Endoplasmic reticulum lipid raft-associated protein	w
+RETICULUM	human	O94905	ERLIN2	O94905	17	329	Erlin-2 (Endoplasmic reticulum lipid raft-associated protein	w
+RETICULUM	human	O95881	TXNDC12	O95881	29	215	Thioredoxin domain-containing protein 12 (EC 1.8.4.2) (Endop	w
+RETICULUM	human	P0DN84	STRIT1	P0DN84	27	51	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+RETICULUM	human	P11021	HSPA5	P11021	135	1351	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
+RETICULUM	human	P13667	PDIA4	P13667	11	517	Protein disulfide-isomerase A4 (EC 5.3.4.1) (Endoplasmic ret	w
+RETICULUM	human	P16615	ATP2A2	P16615	4	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 (SERCA2)	w
+RETICULUM	human	P23327	HRC	P23327	6	114	Sarcoplasmic reticulum histidine-rich calcium-binding protei	w
+RETICULUM	human	P24390	KDELR1	P24390	8	173	ER lumen protein-retaining receptor 1 (KDEL endoplasmic reti	w
+RETICULUM	human	P27797	CALR	P27797	94	768	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum res	w
+RETICULUM	human	P30040	ERP29	P30040	17	155	Endoplasmic reticulum resident protein 29 (ERp29) (Endoplasm	w
+RETICULUM	human	P33947	KDELR2	P33947	12	183	ER lumen protein-retaining receptor 2 (ERD2-like protein 1) 	w
+RETICULUM	human	P51811	XK	P51811	9	87	Endoplasmic reticulum membrane adapter protein XK (Kell comp	w
+RETICULUM	human	P55072	VCP	P55072	54	1338	Transitional endoplasmic reticulum ATPase (TER ATPase) (EC 3	w
+RETICULUM	human	P78383	SLC35B1	P78383	1	93	Solute carrier family 35 member B1 (ATP/ADP exchanger ER) (A	w
+RETICULUM	human	Q12767	TMEM94	Q12767	2	37	Transmembrane protein 94 (Endoplasmic reticulum magnesium AT	w
+RETICULUM	human	Q13217	DNAJC3	Q13217	14	250	DnaJ homolog subfamily C member 3 (Endoplasmic reticulum DNA	w
+RETICULUM	human	Q14494	NFE2L1	Q14494	33	78	Endoplasmic reticulum membrane sensor NFE2L1 (Locus control 	w
+RETICULUM	human	Q15084	PDIA6	Q15084	25	309	Protein disulfide-isomerase A6 (EC 5.3.4.1) (Endoplasmic ret	w
+RETICULUM	human	Q5T6L9	ERMARD	Q5T6L9	6	205	Endoplasmic reticulum membrane-associated RNA degradation pr	w
+RETICULUM	human	Q6P179	ERAP2	Q6P179	4	46	Endoplasmic reticulum aminopeptidase 2 (EC 3.4.11.-) (Leukoc	w
+RETICULUM	human	Q6UW63	POGLUT2	Q6UW63	3	98	Protein O-glucosyltransferase 2 (EC 2.4.1.-) (Endoplasmic re	w
+RETICULUM	human	Q7Z2K6	ERMP1	Q7Z2K6	9	153	Endoplasmic reticulum metallopeptidase 1 (EC 3.4.-.-) (Felix	w
+RETICULUM	human	Q7Z7H5	TMED4	Q7Z7H5	13	106	Transmembrane emp24 domain-containing protein 4 (Endoplasmic	w
+RETICULUM	human	Q86WV6	STING1	Q86WV6	13	216	Stimulator of interferon genes protein (hSTING) (Endoplasmic	w
+RETICULUM	human	Q86YB8	ERO1B	Q86YB8	11	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
+RETICULUM	human	Q8IWF2	FOXRED2	Q8IWF2	8	254	FAD-dependent oxidoreductase domain-containing protein 2 (En	w
+RETICULUM	human	Q8IWX8	CHERP	Q8IWX8	78	334	Calcium homeostasis endoplasmic reticulum protein (ERPROT 21	w
+RETICULUM	human	Q8IXB1	DNAJC10	Q8IXB1	16	390	Endoplasmic reticulum disulfide reductase DNAJC10 (EC 1.8.4.	w
+RETICULUM	human	Q8N5K1	CISD2	Q8N5K1	13	332	CDGSH iron-sulfur domain-containing protein 2 (Endoplasmic r	w
+RETICULUM	human	Q8N6R1	SERP2	Q8N6R1	26	84	Stress-associated endoplasmic reticulum protein 2 (Ribosome-	w
+RETICULUM	human	Q8N8F6	YIPF7	Q8N8F6	5	35	Protein YIPF7 (Five-pass transmembrane protein localizing in	w
+RETICULUM	human	Q8NBS9	TXNDC5	Q8NBS9	10	225	Thioredoxin domain-containing protein 5 (EC 1.8.4.-) (EC 5.3	w
+RETICULUM	human	Q8TB92	HMGCLL1	Q8TB92	3	58	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic (EC 4.1.3.	w
+RETICULUM	human	Q8WU39	MZB1	Q8WU39	28	176	Marginal zone B- and B1-cell-specific protein (Mesenteric es	w
+RETICULUM	human	Q8WVX3	ARLN	Q8WVX3	20	123	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+RETICULUM	human	Q92791	P3H4	Q92791	18	95	Endoplasmic reticulum protein SC65 (Leprecan-like protein 4)	w
+RETICULUM	human	Q93084	ATP2A3	Q93084	8	574	Sarcoplasmic/endoplasmic reticulum calcium ATPase 3 (SERCA3)	w
+RETICULUM	human	Q969M3	YIPF5	Q969M3	8	146	Protein YIPF5 (Five-pass transmembrane protein localizing in	w
+RETICULUM	human	Q96DN0	ERP27	Q96DN0	11	66	Endoplasmic reticulum resident protein 27 (ER protein 27) (E	w
+RETICULUM	human	Q96DZ1	ERLEC1	Q96DZ1	17	173	Endoplasmic reticulum lectin 1 (ER lectin) (Erlectin) (XTP3-	w
+RETICULUM	human	Q96HE7	ERO1A	Q96HE7	10	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
+RETICULUM	human	Q96MG2	JSRP1	Q96MG2	6	40	Junctional sarcoplasmic reticulum protein 1 (Junctional-face	w
+RETICULUM	human	Q96Q80	DERL3	Q96Q80	12	118	Derlin-3 (Degradation in endoplasmic reticulum protein 3) (D	w
+RETICULUM	human	Q9BS26	ERP44	Q9BS26	27	211	Endoplasmic reticulum resident protein 44 (ER protein 44) (E	w
+RETICULUM	human	Q9BUN8	DERL1	Q9BUN8	19	457	Derlin-1 (Degradation in endoplasmic reticulum protein 1) (D	w
+RETICULUM	human	Q9BVX2	TMEM106C	Q9BVX2	20	130	Transmembrane protein 106C (Endoplasmic reticulum membrane p	w
+RETICULUM	human	Q9BY12	SCAPER	Q9BY12	8	60	S phase cyclin A-associated protein in the endoplasmic retic	w
+RETICULUM	human	Q9C0E8	LNPK	Q9C0E8	38	297	Endoplasmic reticulum junction formation protein lunapark (E	w
+RETICULUM	human	Q9GZP9	DERL2	Q9GZP9	20	234	Derlin-2 (Degradation in endoplasmic reticulum protein 2) (D	w
+RETICULUM	human	Q9HD20	ATP13A1	Q9HD20	13	274	Endoplasmic reticulum transmembrane helix translocase (EC 7.	w
+RETICULUM	human	Q9NPA0	EMC7	Q9NPA0	15	162	Endoplasmic reticulum membrane protein complex subunit 7 (ER	w
+RETICULUM	human	Q9NZ08	ERAP1	Q9NZ08	19	116	Endoplasmic reticulum aminopeptidase 1 (EC 3.4.11.-) (ARTS-1	w
+RETICULUM	human	Q9NZJ5	EIF2AK3	Q9NZJ5	37	329	Eukaryotic translation initiation factor 2-alpha kinase 3 (E	w
+RETICULUM	human	Q9UBS3	DNAJB9	Q9UBS3	49	274	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
+RETICULUM	human	Q9UKM7	MAN1B1	Q9UKM7	18	151	Endoplasmic reticulum mannosyl-oligosaccharide 1,2-alpha-man	w
+RETICULUM	human	Q9Y2G8	DNAJC16	Q9Y2G8	42	311	DnaJ homolog subfamily C member 16 (Endoplasmic reticulum DN	w
+RETICULUM	human	Q9Y6X1	SERP1	Q9Y6X1	30	123	Stress-associated endoplasmic reticulum protein 1 (Ribosome-	w
+RETICULUM	worm	G5EBI0	4D656	G5EBI0	1	15	Endoplasmic reticulum transmembrane protein	w
+RETICULUM	worm	G5EGE8	scpr-1	G5EGE8	0	1	S phase cyclin A-associated protein in the endoplasmic retic	w
+RETICULUM	worm	P20163	hsp-4	P20163	30	127	Endoplasmic reticulum chaperone BiP homolog	w
+RETICULUM	worm	P54811	cdc-48.1	P54811	12	81	Transitional endoplasmic reticulum ATPase homolog 1	w
+RETICULUM	worm	P54812	cdc-48.2	P54812	14	125	Transitional endoplasmic reticulum ATPase homolog 2	w
+RETICULUM	worm	Q17688	erp-44.2	Q17688	1	9	Endoplasmic reticulum resident protein 44.2	w
+RETICULUM	worm	Q19192	pek-1	Q19192	1	33	Eukaryotic translation initiation factor 2-alpha kinase pek-	w
+RETICULUM	worm	Q7YTU4	ero-1	Q7YTU4	5	17	Endoplasmic reticulum oxidoreductin-1	w
+RETICULUM	worm	Q8MXH3	serp-1.2	Q8MXH3	0	1	Stress-associated endoplasmic reticulum protein	w
+RETICULUM	worm	Q93838	serp-1.1	Q93838	0	4	Stress-associated endoplasmic reticulum protein 2	w
+RETICULUM	worm	Q9NF22	CELE_Y105E8A.2	Q9NF22	2	41	Endoplasmic reticulum lectin 1	w
+RETICULUM	yeast	P16474	KAR2	P16474	30	251	Endoplasmic reticulum chaperone BiP	w
+RETICULUM	yeast	P32906	MNS1	P32906	0	13	Endoplasmic reticulum mannosyl-oligosaccharide 1,2-alpha-man	w
+RETICULUM	yeast	P35723	YET1	P35723	2	29	Endoplasmic reticulum transmembrane protein 1	w
+RETICULUM	yeast	P38307	DER1	P38307	1	30	Degradation in the endoplasmic reticulum protein 1	w
+RETICULUM	yeast	P38878	LNP1	P38878	0	22	Endoplasmic reticulum junction formation protein lunapark	w
+RETICULUM	yeast	P39986	SPF1	P39986	0	33	Endoplasmic reticulum transmembrane helix translocase	w
+RETICULUM	yeast	P40085	EMP65	P40085	1	6	Endoplasmic reticulum membrane protein 65	w
+RETICULUM	yeast	P47090	YJR015W	P47090	0	10	Uncharacterized endoplasmic reticulum membrane protein YJR01	w
+RETICULUM	yeast	P53723	YNR021W	P53723	7	93	UPF0674 endoplasmic reticulum membrane protein YNR021W	w
+RETICULUM	yeast	P53956	YNL046W	P53956	0	2	Uncharacterized endoplasmic reticulum membrane protein YNL04	w
+RETICULUM	yeast	P54837	ERV25	P54837	10	98	Endoplasmic reticulum vesicle protein 25	w
+RETICULUM	yeast	Q04210	YET2	Q04210	0	4	Endoplasmic reticulum transmembrane protein 2	w
+RETICULUM	yeast	Q07451	YET3	Q07451	2	41	Endoplasmic reticulum transmembrane protein 3	w
+RETICULUM	yeast	Q12025	EMC10	Q12025	1	33	Endoplasmic reticulum membrane protein complex subunit 10	w
+RETICULUM	yeast	Q12144	PER33	Q12144	0	27	Pore and endoplasmic reticulum protein of 33 kDa	w
+RETICULUM	yeast	Q12205	MNL2	Q12205	1	5	Putative endoplasmic reticulum mannosidase MNL2	w
+RETICULUM	yeast	Q3E842	YMR122W-A	Q3E842	0	7	Uncharacterized endoplasmic reticulum membrane protein YMR12	w
+RETICULUM	zebrafish	A0A0R4INE3	p3h4	A0A0R4INE3	3	4	Endoplasmic reticulum protein SC65	w
+RETICULUM	zebrafish	A0A8M1PAQ9	cherp	A0A8M1PAQ9	10	41	Calcium homeostasis endoplasmic reticulum protein	w
+RETICULUM	zebrafish	B1H1L9	scaper	B1H1L9	1	4	S phase cyclin A-associated protein in the endoplasmic retic	w
+RETICULUM	zebrafish	B3DGS0	nfe2l1a	B3DGS0	18	34	Endoplasmic reticulum membrane sensor NFE2L1	w
+RETICULUM	zebrafish	F1R1X4	atp13a1	F1R1X4	0	13	Endoplasmic reticulum transmembrane helix translocase	w
+RETICULUM	zebrafish	L0ANA2	nfe2l1b	L0ANA2	20	34	Endoplasmic reticulum membrane sensor NFE2L1	w
+RETICULUM	zebrafish	Q29RA2	zgc:136908	Q29RA2	16	190	Transitional endoplasmic reticulum ATPase	w
+RETICULUM	zebrafish	Q5TYV0	emc7	Q5TYV0	1	11	Endoplasmic reticulum membrane protein complex subunit 7	w
+RETICULUM	zebrafish	Q6DGW5	wu:fc96h11	Q6DGW5	0	1	Stress-associated endoplasmic reticulum protein	w
+RETICULUM	zebrafish	Q6P3G9	erp44	Q6P3G9	6	39	Endoplasmic reticulum protein 44	w
+RETICULUM	zebrafish	Q7ZU99	vcp	Q7ZU99	18	218	Transitional endoplasmic reticulum ATPase	w
+RETICULUM	zebrafish	U3JAC7	tmem94	U3JAC7	0	2	Endoplasmic reticulum magnesium-transporting P-type ATPase i	w
+RETICULUM-ASSOCIATED	human	Q9H8W4	PLEKHF2	Q9H8W4	37	215	Pleckstrin homology domain-containing family F member 2 (PH 	w
+RETICULUM-ASSOCIATED	human	Q9Y3M2	CBY1	Q9Y3M2	36	211	Protein chibby homolog 1 (ARPP-binding protein) (Cytosolic l	w
+RETICULUM-GOLGI	fly	FBgn0036489	CG7011	Q9VUM3	1	16	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	human	Q969X5	ERGIC1	Q969X5	9	298	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	human	Q96RQ1	ERGIC2	Q96RQ1	22	262	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	human	Q9Y282	ERGIC3	Q9Y282	9	340	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	worm	G5EEW1	ergi-2	G5EEW1	1	3	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	worm	Q93878	ergi-3	Q93878	1	4	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	worm	Q95XJ9	ergi-1	Q95XJ9	0	2	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	zebrafish	Q4V8Y6	ergic1	Q4V8Y6	0	6	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	zebrafish	Q7T2D4	ergic2	Q7T2D4	0	10	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	zebrafish	Q803I2	ergic3	Q803I2	1	11	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-GOLGI	zebrafish	U3JB19	si:ch211-225b10.3	U3JB19	1	10	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+RETICULUM-LIKE	worm	O44769	CELE_K04F10.3	O44769	0	8	Endoplasmic reticulum-like protein	w
+RETICULUM-RESIDENT	human	Q15011	HERPUD1	Q15011	18	63	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+RETICULUM-RESIDENT	human	Q9BSE4	HERPUD2	Q9BSE4	6	33	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+RETICULUM-RESIDENT	zebrafish	Q6NYI0	herpud2	Q6NYI0	0	5	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+RETICULUM-TO-NUCLEUS	human	O75460	ERN1	O75460	20	216	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
+RETICULUM-TO-NUCLEUS	human	Q76MJ5	ERN2	Q76MJ5	8	91	Serine/threonine-protein kinase/endoribonuclease IRE2 (Endop	w
+RETICULUM-TO-NUCLEUS	yeast	P32361	IRE1	P32361	3	38	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
+RETII	human	Q8TBA6	GOLGA5	Q8TBA6	45	234		
+RETINA	human	Q96IS3	RAX2	Q96IS3	118	410	Retina and anterior neural fold homeobox protein 2 (Q50-type	w
+RETINA	human	Q9UF11	PLEKHB1	Q9UF11	5	44	Pleckstrin homology domain-containing family B member 1 (PH 	w
+RETINA	human	Q9Y2V3	RAX	Q9Y2V3	152	413	Retinal homeobox protein Rx (Retina and anterior neural fold	w
+RETINA-DERIVED	human	P78424	POU6F2	P78424	28	143	POU domain, class 6, transcription factor 2 (Retina-derived 	w
+RETINA-SPECIFIC	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.4.3.21) (Amine oxi	w
+RETINA-SPECIFIC	human	P54845	NRL	P54845	108	370	Neural retina-specific leucine zipper protein (NRL)	w
+RETINA-SPECIFIC	human	Q9Y5X4	NR2E3	Q9Y5X4	74	426	Photoreceptor-specific nuclear receptor (Nuclear receptor su	w
+RETINA-SPECIFIC	worm	B0M0M9	maf-1	B0M0M9	4	13	Neural retina-specific leucine zipper protein	w
+RETINA-SPECIFIC	zebrafish	A0AB32TC82	nrl	A0AB32TC82	24	26	Neural retina-specific leucine zipper protein isoform X1	w
+RETINAL	fly	FBgn0003218	rdgB	M9PEJ5	5	34	Retinal degeneration B, isoform J	w
+RETINAL	fly	FBgn0020617	Rx	Q9W2Q1	107	389	Retinal Homeobox	w
+RETINAL	fly	FBgn0027872	rdgBbeta	Q9U9P7	0	4	Cytoplasmic phosphatidylinositol transfer protein 1 (Retinal	w
+RETINAL	fly	FBgn0265959	rdgC	P40421	54	923	retinal degeneration C	w
+RETINAL	human	O00341	SLC1A7	O00341	6	46	Excitatory amino acid transporter 5 (Retinal glutamate trans	w
+RETINAL	human	O00562	PITPNM1	O00562	11	84	Membrane-associated phosphatidylinositol transfer protein 1 	w
+RETINAL	human	O14926	FSCN2	O14926	1	70	Fascin-2 (Retinal fascin)	w
+RETINAL	human	O43924	PDE6D	O43924	34	177	Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodie	w
+RETINAL	human	O60721	SLC24A1	O60721	3	13	Sodium/potassium/calcium exchanger 1 (Na(+)/K(+)/Ca(2+)-exch	w
+RETINAL	human	O75911	DHRS3	O75911	23	134	Short-chain dehydrogenase/reductase 3 (EC 1.1.1.300) (DD83.1	w
+RETINAL	human	O94788	ALDH1A2	O94788	15	143	Retinal dehydrogenase 2 (RALDH 2) (RalDH2) (EC 1.2.1.36) (Al	w
+RETINAL	human	P0DJH9	RD3L	P0DJH9	2	27	Protein RD3-like (Retinal degeneration protein 3-like)	w
+RETINAL	human	P10523	SAG	P10523	26	185	S-arrestin (48 kDa protein) (Retinal S-antigen) (S-AG) (Rod 	w
+RETINAL	human	P23942	PRPH2	P23942	17	118	Peripherin-2 (Retinal degeneration slow protein) (Tetraspani	w
+RETINAL	human	P36575	ARR3	P36575	22	137	Arrestin-C (Cone arrestin) (C-arrestin) (cArr) (Retinal cone	w
+RETINAL	human	P51841	GUCY2F	P51841	7	72	Retinal guanylyl cyclase 2 (RETGC-2) (EC 4.6.1.2) (Guanylate	w
+RETINAL	human	P55283	CDH4	P55283	31	168	Cadherin-4 (Retinal cadherin) (R-CAD) (R-cadherin)	w
+RETINAL	human	Q02846	GUCY2D	Q02846	11	125	Retinal guanylyl cyclase 1 (RETGC-1) (EC 4.6.1.2) (CG-E) (Gu	w
+RETINAL	human	Q13432	UNC119	Q13432	29	247	Protein unc-119 homolog A (Retinal protein 4) (hRG4)	w
+RETINAL	human	Q13956	PDE6H	Q13956	10	104	Retinal cone rhodopsin-sensitive cGMP 3',5'-cyclic phosphodi	w
+RETINAL	human	Q16518	RPE65	Q16518	1	57	Retinoid isomerohydrolase (EC 3.1.1.64) (All-trans-retinyl-p	w
+RETINAL	human	Q7Z3Z2	RD3	Q7Z3Z2	14	62	Protein RD3 (Retinal degeneration protein 3)	w
+RETINAL	human	Q7Z5P4	HSD17B13	Q7Z5P4	17	167	17-beta-hydroxysteroid dehydrogenase 13 (17-beta-HSD 13) (EC	w
+RETINAL	human	Q8N3Y7	SDR16C5	Q8N3Y7	11	72	Epidermal retinol dehydrogenase 2 (EPHD-2) (RDH-E2) (EC 1.1.	w
+RETINAL	human	Q96IS3	RAX2	Q96IS3	118	410	Retina and anterior neural fold homeobox protein 2 (Q50-type	w
+RETINAL	human	Q96PM9	ZNF385A	Q96PM9	86	367	Zinc finger protein 385A (Hematopoietic zinc finger protein)	w
+RETINAL	human	Q9BPX1	HSD17B14	Q9BPX1	7	100	L-fucose dehydrogenase (EC 1.1.1.122) (17-beta-hydroxysteroi	w
+RETINAL	human	Q9NZR4	VSX1	Q9NZR4	124	431	Visual system homeobox 1 (Homeodomain protein RINX) (Retinal	w
+RETINAL	human	Q9P0K7	RAI14	Q9P0K7	61	263	Ankycorbin (Ankyrin repeat and coiled-coil structure-contain	w
+RETINAL	human	Q9UI40	SLC24A2	Q9UI40	5	70	Sodium/potassium/calcium exchanger 2 (Na(+)/K(+)/Ca(2+)-exch	w
+RETINAL	human	Q9UKF7	PITPNC1	Q9UKF7	8	71	Cytoplasmic phosphatidylinositol transfer protein 1 (Mammali	w
+RETINAL	human	Q9Y2V3	RAX	Q9Y2V3	152	413	Retinal homeobox protein Rx (Retina and anterior neural fold	w
+RETINAL	human	Q9Y394	DHRS7	Q9Y394	24	247	Dehydrogenase/reductase SDR family member 7 (EC 1.1.1.-) (Re	w
+RETINAL	zebrafish	A9C3R8	rpe65c	A9C3R8	1	1	Retinal Mueller cells isomerohydrolase	w
+RETINAL-SPECIFIC	human	O15492	RGS16	O15492	38	123	Regulator of G protein signaling 16 (RGS16) (A28-RGS14P) (Re	w
+RETINAL-SPECIFIC	human	P78363	ABCA4	P78363	0	16	Retinal-specific phospholipid-transporting ATPase ABCA4 (EC 	w
+RETINAL-SPECIFIC	human	Q15846	CLUL1	Q15846	1	14	Clusterin-like protein 1 (Retinal-specific clusterin-like pr	w
+RETINALDEHYDE	fly	FBgn0035636	Cralbp	Q9VRP8	0	5	Cellular retinaldehyde binding protein	w
+RETINALDEHYDE	human	P47895	ALDH1A3	P47895	21	181	Retinaldehyde dehydrogenase 3 (RALDH-3) (RalDH3) (EC 1.2.1.3	w
+RETINALDEHYDE-BINDING	human	P12271	RLBP1	P12271	3	49	Retinaldehyde-binding protein 1 (Cellular retinaldehyde-bind	w
+RETINALDEHYDE-BINDING	human	Q5SYC1	CLVS2	Q5SYC1	10	105	Clavesin-2 (Retinaldehyde-binding protein 1-like 2) (clathri	w
+RETINALDEHYDE-BINDING	human	Q8IUQ0	CLVS1	Q8IUQ0	3	48	Clavesin-1 (Cellular retinaldehyde-binding protein-like) (Re	w
+RETINALDEHYDE-SPECIFIC	human	O94788	ALDH1A2	O94788	15	143	Retinal dehydrogenase 2 (RALDH 2) (RalDH2) (EC 1.2.1.36) (Al	w
+RETINALLY	human	O15492	RGS16	O15492	38	123	Regulator of G protein signaling 16 (RGS16) (A28-RGS14P) (Re	w
+RETININ	fly	FBgn0040074	retinin	Q9VV36	42	286	Retinin	w
+RETININ	fly	FBgn0040074	retinin	Q9VV36	42	286	Retinin	w
+RETINITIS	human	P56715	RP1	P56715	7	71	Oxygen-regulated protein 1 (Retinitis pigmentosa 1 protein) 	w
+RETINITIS	human	Q8IWN7	RP1L1	Q8IWN7	5	50	Retinitis pigmentosa 1-like 1 protein	w
+RETINITIS	human	Q8TA86	RP9	Q8TA86	8	123	Retinitis pigmentosa 9 protein (Pim-1-associated protein) (P	w
+RETINITIS	human	Q92834	RPGR	Q92834	15	125	X-linked retinitis pigmentosa GTPase regulator	w
+RETINITIS	human	Q96KN7	RPGRIP1	Q96KN7	42	130	X-linked retinitis pigmentosa GTPase regulator-interacting p	w
+RETINITIS	worm	Q5DX34	glo-4	Q5DX34	0	21	X-linked retinitis pigmentosa GTPase regulator homolog	w
+RETINITIS	zebrafish	F1QM29	rpgrb	F1QM29	5	58	X-linked retinitis pigmentosa GTPase regulator	w
+RETINOBLAS	human	Q7Z6E9	RBBP6	Q7Z6E9	106	457	E3 ubiquitin-protein ligase RBBP6 (EC 2.3.2.27) (Proliferati	w
+RETINOBLASTOMA	fly	FBgn0015799	Rbf	Q24472	104	466	Retinoblastoma family protein	w
+RETINOBLASTOMA	fly	FBgn0038390	Rbf2	Q9VF04	44	394	RE32990p (Retinoblastoma protein homolog RBF2) (Retinoblasto	w
+RETINOBLASTOMA	human	Q92499	DDX1	Q92499	19	465	ATP-dependent RNA helicase DDX1 (EC 3.6.4.13) (DEAD box prot	w
+RETINOBLASTOMA-AS	human	O14777	NDC80	O14777	136	443	Kinetochore protein NDC80 homolog (Highly expressed in cance	w
+RETINOBLASTOMA-ASSOCIATED	human	O75150	RNF40	O75150	74	375	E3 ubiquitin-protein ligase BRE1B (BRE1-B) (EC 2.3.2.27) (95	w
+RETINOBLASTOMA-ASSOCIATED	human	P06400	RB1	P06400	72	472	Retinoblastoma-associated protein (p105-Rb) (p110-RB1) (pRb)	w
+RETINOBLASTOMA-ASSOCIATED	human	P28749	RBL1	P28749	45	142	Retinoblastoma-like protein 1 (107 kDa retinoblastoma-associ	w
+RETINOBLASTOMA-ASSOCIATED	human	Q01094	E2F1	Q01094	105	603	Transcription factor E2F1 (E2F-1) (PBR3) (Retinoblastoma-ass	w
+RETINOBLASTOMA-ASSOCIATED	human	Q08999	RBL2	Q08999	33	119	Retinoblastoma-like protein 2 (130 kDa retinoblastoma-associ	w
+RETINOBLASTOMA-ASSOCIATED	human	Q9UK61	TASOR	Q9UK61	20	168	Protein TASOR (CTCL tumor antigen se89-1) (Retinoblastoma-as	w
+RETINOBLASTOMA-BINDING	fly	FBgn0036973	Rbbp5	Q9VPH8	10	131	Retinoblastoma-binding protein 5 homolog	w
+RETINOBLASTOMA-BINDING	human	O75884	RBBP9	O75884	10	124	Serine hydrolase RBBP9 (EC 3.1.-.-) (B5T-overexpressed gene 	w
+RETINOBLASTOMA-BINDING	human	P29374	ARID4A	P29374	73	491	AT-rich interactive domain-containing protein 4A (ARID domai	w
+RETINOBLASTOMA-BINDING	human	P29375	KDM5A	P29375	32	200	Lysine-specific demethylase 5A (EC 1.14.11.67) (Histone deme	w
+RETINOBLASTOMA-BINDING	human	Q01094	E2F1	Q01094	105	603	Transcription factor E2F1 (E2F-1) (PBR3) (Retinoblastoma-ass	w
+RETINOBLASTOMA-BINDING	human	Q15291	RBBP5	Q15291	60	742	Retinoblastoma-binding protein 5 (RBBP-5) (Retinoblastoma-bi	w
+RETINOBLASTOMA-BINDING	human	Q16576	RBBP7	Q16576	81	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
+RETINOBLASTOMA-BINDING	human	Q99708	RBBP8	Q99708	125	635	DNA endonuclease RBBP8 (EC 3.1.-.-) (CtBP-interacting protei	w
+RETINOBLASTOMA-BINDING	worm	Q09309	rbbp-5	Q09309	8	113	Retinoblastoma-binding protein homolog 5	w
+RETINOBLASTOMA-FAMILY	fly	FBgn0038390	Rbf2	Q9VF04	44	394	RE32990p (Retinoblastoma protein homolog RBF2) (Retinoblasto	w
+RETINOBLASTOMA-INTERACTING	human	Q99708	RBBP8	Q99708	125	635	DNA endonuclease RBBP8 (EC 3.1.-.-) (CtBP-interacting protei	w
+RETINOBLASTOMA-LIKE	human	P28749	RBL1	P28749	45	142	Retinoblastoma-like protein 1 (107 kDa retinoblastoma-associ	w
+RETINOBLASTOMA-LIKE	human	Q08999	RBL2	Q08999	33	119	Retinoblastoma-like protein 2 (130 kDa retinoblastoma-associ	w
+RETINOBLASTOMA-LIKE	worm	G5EDT1	lin-35	G5EDT1	4	60	Retinoblastoma-like protein homolog lin-35	w
+RETINOBLASTOMA-LIKE	zebrafish	E7FDM3	rbl2	E7FDM3	19	69	Retinoblastoma-like protein 2	w
+RETINOBLASTOMA-RELATED	human	Q08999	RBL2	Q08999	33	119	Retinoblastoma-like protein 2 (130 kDa retinoblastoma-associ	w
+RETINOI	human	Q9P0J0	NDUFA13	Q9P0J0	29	387	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+RETINOIC	human	O14933	UBE2L6	O14933	77	294	Ubiquitin/ISG15-conjugating enzyme E2 L6 (EC 2.3.2.23) (E2 u	w
+RETINOIC	human	O43174	CYP26A1	O43174	5	80	Cytochrome P450 26A1 (CYP26A1) (EC 1.14.13.-) (Cytochrome P4	w
+RETINOIC	human	O60477	BRINP1	O60477	36	220	BMP/retinoic acid-inducible neural-specific protein 1 (Delet	w
+RETINOIC	human	O75563	SKAP2	O75563	45	167	Src kinase-associated phosphoprotein 2 (Pyk2/RAFTK-associate	w
+RETINOIC	human	P10276	RARA	P10276	155	554	Retinoic acid receptor alpha (RAR-alpha) (Nuclear receptor s	w
+RETINOIC	human	P10826	RARB	P10826	46	112	Retinoic acid receptor beta (RAR-beta) (HBV-activated protei	w
+RETINOIC	human	P13631	RARG	P13631	98	272	Retinoic acid receptor gamma (RAR-gamma) (Nuclear receptor s	w
+RETINOIC	human	P17028	ZNF24	P17028	76	503	Zinc finger protein 24 (Retinoic acid suppression protein A)	w
+RETINOIC	human	P19793	RXRA	P19793	121	723	Retinoic acid receptor RXR-alpha (Nuclear receptor subfamily	w
+RETINOIC	human	P28702	RXRB	P28702	104	454	Retinoic acid receptor RXR-beta (Nuclear receptor subfamily 	w
+RETINOIC	human	P29373	CRABP2	P29373	21	209	Cellular retinoic acid-binding protein 2 (Cellular retinoic 	w
+RETINOIC	human	P29762	CRABP1	P29762	15	132	Cellular retinoic acid-binding protein 1 (Cellular retinoic 	w
+RETINOIC	human	P48443	RXRG	P48443	92	510	Retinoic acid receptor RXR-gamma (Nuclear receptor subfamily	w
+RETINOIC	human	P49788	RARRES1	P49788	30	133	Retinoic acid receptor responder protein 1 (Phorbol ester-in	w
+RETINOIC	human	Q13325	IFIT5	Q13325	6	224	Interferon-induced protein with tetratricopeptide repeats 5 	w
+RETINOIC	human	Q13571	LAPTM5	Q13571	20	245	Lysosomal-associated transmembrane protein 5 (Lysosomal-asso	w
+RETINOIC	human	Q16553	LY6E	Q16553	23	139	Lymphocyte antigen 6E (Ly-6E) (Retinoic acid-induced gene E 	w
+RETINOIC	human	Q16881	TXNRD1	Q16881	15	193	Thioredoxin reductase 1, cytoplasmic (TR) (EC 1.8.1.9) (Gene	w
+RETINOIC	human	Q5VY80	RAET1L	Q5VY80	15	76	UL16-binding protein 6 (Retinoic acid early transcript 1L pr	w
+RETINOIC	human	Q6GMV2	SMYD5	Q6GMV2	14	119	Protein-lysine N-trimethyltransferase SMYD5 (EC 2.1.1.-) (Pr	w
+RETINOIC	human	Q6H3X3	RAET1G	Q6H3X3	8	28	UL-16 binding protein 5 (Retinoic acid early transcript 1G p	w
+RETINOIC	human	Q6UW56	ATRAID	Q6UW56	6	36	All-trans retinoic acid-induced differentiation factor (Apop	w
+RETINOIC	human	Q76B58	BRINP3	Q76B58	28	142	BMP/retinoic acid-inducible neural-specific protein 3 (DBCCR	w
+RETINOIC	human	Q7Z5J4	RAI1	Q7Z5J4	89	324	Retinoic acid-induced protein 1	w
+RETINOIC	human	Q7Z7C7	STRA8	Q7Z7C7	10	73	Stimulated by retinoic acid gene 8 protein homolog	w
+RETINOIC	human	Q86V87	FHIP2B	Q86V87	56	303	FHF complex subunit HOOK-interacting protein 2B (FHIP2B) (Re	w
+RETINOIC	human	Q8IVL1	NAV2	Q8IVL1	51	253	Neuron navigator 2 (EC 3.6.4.12) (Helicase APC down-regulate	w
+RETINOIC	human	Q8NFJ5	GPRC5A	Q8NFJ5	17	127	Retinoic acid-induced protein 3 (G protein-coupled receptor 	w
+RETINOIC	human	Q8TD07	RAET1E	Q8TD07	24	118	Retinoic acid early transcript 1E (Lymphocyte effector toxic	w
+RETINOIC	human	Q96R05	RBP7	Q96R05	12	68	Retinoid-binding protein 7 (Cellular retinoic acid-binding p	w
+RETINOIC	human	Q99969	RARRES2	Q99969	32	269	Retinoic acid receptor responder protein 2 (Chemerin) (RAR-r	w
+RETINOIC	human	Q9BX79	STRA6	Q9BX79	8	78	Receptor for retinol uptake STRA6 (Retinol-binding protein r	w
+RETINOIC	human	Q9BZM4	ULBP3	Q9BZM4	41	184	UL16-binding protein 3 (ALCAN-gamma) (NKG2D ligand 3) (N2DL-	w
+RETINOIC	human	Q9BZM5	ULBP2	Q9BZM5	43	218	UL16-binding protein 2 (ALCAN-alpha) (NKG2D ligand 2) (N2DL-	w
+RETINOIC	human	Q9BZM6	ULBP1	Q9BZM6	25	148	UL16-binding protein 1 (ALCAN-beta) (NKG2D ligand 1) (N2DL-1	w
+RETINOIC	human	Q9C0B6	BRINP2	Q9C0B6	20	139	BMP/retinoic acid-inducible neural-specific protein 2 (DBCCR	w
+RETINOIC	human	Q9NQ84	GPRC5C	Q9NQ84	13	165	G protein-coupled receptor family C group 5 member C (Retino	w
+RETINOIC	human	Q9NR63	CYP26B1	Q9NR63	3	98	Cytochrome P450 26B1 (EC 1.14.13.-) (Cytochrome P450 26A2) (	w
+RETINOIC	human	Q9NZH0	GPRC5B	Q9NZH0	19	163	G protein-coupled receptor family C group 5 member B (A-69G1	w
+RETINOIC	human	Q9NZJ0	DTL	Q9NZJ0	84	355	Denticleless protein homolog (DDB1- and CUL4-associated fact	w
+RETINOIC	human	Q9P0K7	RAI14	Q9P0K7	61	263	Ankycorbin (Ankyrin repeat and coiled-coil structure-contain	w
+RETINOIC	human	Q9UL19	PLAAT4	Q9UL19	18	192	Phospholipase A and acyltransferase 4 (EC 2.3.1.-) (EC 3.1.1	w
+RETINOIC	human	Q9ULJ6	ZMIZ1	Q9ULJ6	31	124	Zinc finger MIZ domain-containing protein 1 (PIAS-like prote	w
+RETINOIC	human	Q9Y5P3	RAI2	Q9Y5P3	11	79	Retinoic acid-induced protein 2	w
+RETINOIC	human	Q9Y618	NCOR2	Q9Y618	75	372	Nuclear receptor corepressor 2 (N-CoR2) (CTG repeat protein 	w
+RETINOIC	zebrafish	A0A0R4INS8	rarres3	A0A0R4INS8	3	131	Retinoic acid receptor responder 3	w
+RETINOIC	zebrafish	A2T928	rargb	A2T928	14	24	Retinoic acid receptor gamma-B	w
+RETINOIC	zebrafish	A2T929	rxraa	A2T929	15	40	Retinoic acid receptor RXR-alpha-A	w
+RETINOIC	zebrafish	Q5G9L7	crabp2b	Q5G9L7	1	4	Cellular retinoic acid-binding protein 2, b	w
+RETINOIC	zebrafish	Q6DHK9	rarres3l	Q6DHK9	4	131	Retinoic acid receptor responder 3-like	w
+RETINOIC	zebrafish	Q6DHP9	rxrgb	Q6DHP9	15	28	Retinoic acid receptor RXR-gamma-B	w
+RETINOIC	zebrafish	Q6IWJ1	crabp1b	Q6IWJ1	1	4	Cellular retinoic acid-binding protein 1b	w
+RETINOIC	zebrafish	Q7SYN5	rxrba	Q7SYN5	15	31	Retinoic acid receptor RXR-beta-A	w
+RETINOIC	zebrafish	Q7T0F4	crabp1a	Q7T0F4	1	5	Cellular retinoic acid-binding protein	w
+RETINOIC	zebrafish	Q7ZTI3	rarab	Q7ZTI3	17	30	Retinoic acid receptor alpha-B	w
+RETINOIC	zebrafish	Q801Y4	crabp2a	Q801Y4	2	11	Cellular retinoic acid binding protein type II	w
+RETINOIC	zebrafish	Q90271	raraa	Q90271	16	30	Retinoic acid receptor alpha-A	w
+RETINOIC	zebrafish	Q90415	rxrab	Q90415	15	25	Retinoic acid receptor RXR-alpha-B	w
+RETINOIC	zebrafish	Q90417	rxrbb	Q90417	16	25	Retinoic acid receptor RXR-beta-B	w
+RETINOIC	zebrafish	Q91392	rarga	Q91392	13	27	Retinoic acid receptor gamma-A	w
+RETINOID	fly	FBgn0002937	ninaB	Q9VFS2	0	5	Carotenoid isomerooxygenase (EC 1.13.11.65) (Beta-carotene 1	w
+RETINOID	human	P19793	RXRA	P19793	121	723	Retinoic acid receptor RXR-alpha (Nuclear receptor subfamily	w
+RETINOID	human	P28702	RXRB	P28702	104	454	Retinoic acid receptor RXR-beta (Nuclear receptor subfamily 	w
+RETINOID	human	P48443	RXRG	P48443	92	510	Retinoic acid receptor RXR-gamma (Nuclear receptor subfamily	w
+RETINOID	human	Q14994	NR1I3	Q14994	102	453	Nuclear receptor subfamily 1 group I member 3 (Constitutive 	w
+RETINOID	human	Q15406	NR6A1	Q15406	80	425	Nuclear receptor subfamily 6 group A member 1 (Germ cell nuc	w
+RETINOID	human	Q16518	RPE65	Q16518	1	57	Retinoid isomerohydrolase (EC 3.1.1.64) (All-trans-retinyl-p	w
+RETINOID	human	Q96RI1	NR1H4	Q96RI1	78	234	Bile acid receptor (Farnesoid X-activated receptor) (Farneso	w
+RETINOID	human	Q96RL1	UIMC1	Q96RL1	66	319	BRCA1-A complex subunit RAP80 (Receptor-associated protein 8	w
+RETINOID	zebrafish	Q6PBW5	rpe65a	Q6PBW5	1	1	Retinoid isomerohydrolase	w
+RETINOID-	fly	FBgn0087002	apolpp	Q9V496	3	34	Apolipophorins (Retinoid- and fatty acid-binding glycoprotei	w
+RETINOID-BINDING	human	P10745	RBP3	P10745	7	43	Retinol-binding protein 3 (Interphotoreceptor retinoid-bindi	w
+RETINOID-BINDING	human	Q96R05	RBP7	Q96R05	12	68	Retinoid-binding protein 7 (Cellular retinoic acid-binding p	w
+RETINOID-BINDING	zebrafish	B3DHK5	rbp7b	B3DHK5	1	2	Retinoid-binding protein 7	w
+RETINOID-INDUCIBLE	human	Q7LFL8	CXXC5	Q7LFL8	58	356	CXXC-type zinc finger protein 5 (CF5) (Putative MAPK-activat	w
+RETINOID-INDUCIBLE	human	Q9HB40	SCPEP1	Q9HB40	6	142	Retinoid-inducible serine carboxypeptidase (EC 3.4.16.-) (Se	w
+RETINOID-INDUCIBLE	worm	G5EDP0	CELE_Y32F6A.5	G5EDP0	0	5	Retinoid-inducible serine carboxypeptidase	w
+RETINOID-RELATED	human	P35398	RORA	P35398	149	434	Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuc	w
+RETINOID-RELATED	human	P51449	RORC	P51449	189	490	Nuclear receptor ROR-gamma (Nuclear receptor RZR-gamma) (Nuc	w
+RETINOID-RELATED	human	Q92753	RORB	Q92753	162	464	Nuclear receptor ROR-beta (Nuclear receptor RZR-beta) (Nucle	w
+RETINOL	fly	FBgn0038946	rdhB	Q9VD30	1	17	GH05294p (Retinol dehydrogenase B, isoform A (EC 1.1.1.105))	w
+RETINOL	human	O75452	RDH16	O75452	10	37	Retinol dehydrogenase 16 (EC 1.1.1.105) (EC 1.1.1.209) (EC 1	w
+RETINOL	human	O75907	DGAT1	O75907	3	93	Diacylglycerol O-acyltransferase 1 (EC 2.3.1.20) (ACAT-relat	w
+RETINOL	human	O75911	DHRS3	O75911	23	134	Short-chain dehydrogenase/reductase 3 (EC 1.1.1.300) (DD83.1	w
+RETINOL	human	O95237	LRAT	O95237	0	51	Lecithin retinol acyltransferase (EC 2.3.1.135) (Phosphatidy	w
+RETINOL	human	Q4G0S4	CYP27C1	Q4G0S4	5	26	Cytochrome P450 27C1 (EC 1.14.19.53) (All-trans retinol 3,4-	w
+RETINOL	human	Q6E213	AWAT2	Q6E213	0	26	Acyl-CoA wax alcohol acyltransferase 2 (EC 2.3.1.75) (11-cis	w
+RETINOL	human	Q7Z5P4	HSD17B13	Q7Z5P4	17	167	17-beta-hydroxysteroid dehydrogenase 13 (17-beta-HSD 13) (EC	w
+RETINOL	human	Q8IZV5	RDH10	Q8IZV5	11	147	Retinol dehydrogenase 10 (EC 1.1.1.300) (Short chain dehydro	w
+RETINOL	human	Q8N3Y7	SDR16C5	Q8N3Y7	11	72	Epidermal retinol dehydrogenase 2 (EPHD-2) (RDH-E2) (EC 1.1.	w
+RETINOL	human	Q8NBN7	RDH13	Q8NBN7	10	132	Retinol dehydrogenase 13 (EC 1.1.1.300) (Short chain dehydro	w
+RETINOL	human	Q8TC12	RDH11	Q8TC12	4	232	Retinol dehydrogenase 11 (EC 1.1.1.300) (Androgen-regulated 	w
+RETINOL	human	Q92781	RDH5	Q92781	11	42	Retinol dehydrogenase 5 (EC 1.1.1.209) (EC 1.1.1.315) (EC 1.	w
+RETINOL	human	Q96NR8	RDH12	Q96NR8	2	82	Retinol dehydrogenase 12 (EC 1.1.1.300) (All-trans and 9-cis	w
+RETINOL	human	Q96PD7	DGAT2	Q96PD7	1	37	Diacylglycerol O-acyltransferase 2 (EC 2.3.1.20) (Acyl-CoA r	w
+RETINOL	human	Q9BPW9	DHRS9	Q9BPW9	15	48	Dehydrogenase/reductase SDR family member 9 (EC 1.1.1.209) (	w
+RETINOL	human	Q9BTZ2	DHRS4	Q9BTZ2	15	136	Dehydrogenase/reductase SDR family member 4 (EC 1.1.1.184) (	w
+RETINOL	human	Q9BX79	STRA6	Q9BX79	8	78	Receptor for retinol uptake STRA6 (Retinol-binding protein r	w
+RETINOL	human	Q9HBH5	RDH14	Q9HBH5	1	94	Retinol dehydrogenase 14 (EC 1.1.1.300) (Alcohol dehydrogena	w
+RETINOL	human	Q9NYR8	RDH8	Q9NYR8	4	65	Retinol dehydrogenase 8 (EC 1.1.1.300) (Photoreceptor outer 	w
+RETINOL	worm	G5EF32	npa-1	G5EF32	0	27	Nematode polyprotein allergen related, post-translationnally	w
+RETINOL	worm	P91013	dhs-1	P91013	0	2	Retinol dehydrogenase 12-like	w
+RETINOL	worm	Q1XFZ3	dhs-17	Q1XFZ3	1	1	Retinol dehydrogenase 14	w
+RETINOL	worm	Q9TZ51	far-7	Q9TZ51	0	1	Fatty Acid/Retinol binding protein	w
+RETINOL	worm	Q9U1Y6	dhs-24	Q9U1Y6	3	40	Retinol dehydrogenase 13	w
+RETINOL	zebrafish	A0A2R8PZT4	LOC137487234	A0A2R8PZT4	7	131	Lecithin retinol acyltransferase b, tandem duplicate 1	w
+RETINOL	zebrafish	A0A8M2BB22	zmp:0000001048	A0A8M2BB22	0	31	Retinol dehydrogenase 8 isoform X1	w
+RETINOL	zebrafish	A0A8N7TEZ4	si:dkey-23o4.6	A0A8N7TEZ4	0	11	Retinol dehydrogenase 12 isoform X1	w
+RETINOL	zebrafish	A1L1W4	rdh10a	A1L1W4	1	10	Retinol dehydrogenase 10-A	w
+RETINOL	zebrafish	A9JR93	rbp1.2	A9JR93	0	1	Retinol binding protein 1a	w
+RETINOL	zebrafish	F1Q7T8	lrata	F1Q7T8	4	131	Lecithin retinol acyltransferase a	w
+RETINOL	zebrafish	F1QT23	rdh8b	F1QT23	0	31	Retinol dehydrogenase	w
+RETINOL	zebrafish	F1RAX4	stra6	F1RAX4	1	9	Receptor for retinol uptake stra6	w
+RETINOL	zebrafish	Q504A4	zgc:109982	Q504A4	0	31	Retinol dehydrogenase	w
+RETINOL	zebrafish	Q7SZ49	sdr16c5b	Q7SZ49	2	10	Epidermal retinol dehydrogenase 2	w
+RETINOL	zebrafish	Q7T2D1	rdh10b	Q7T2D1	1	10	Retinol dehydrogenase 10-B	w
+RETINOL-BINDING	fly	FBgn0038966	pinta	Q9VD09	1	4	Retinol-binding protein pinta (Prolonged depolarization afte	w
+RETINOL-BINDING	human	P02753	RBP4	P02753	47	557	Retinol-binding protein 4 (Plasma retinol-binding protein) (	w
+RETINOL-BINDING	human	P09455	RBP1	P09455	10	94	Retinol-binding protein 1 (Cellular retinol-binding protein)	w
+RETINOL-BINDING	human	P10745	RBP3	P10745	7	43	Retinol-binding protein 3 (Interphotoreceptor retinoid-bindi	w
+RETINOL-BINDING	human	P50120	RBP2	P50120	7	68	Retinol-binding protein 2 (Cellular retinol-binding protein 	w
+RETINOL-BINDING	human	P82980	RBP5	P82980	7	58	Retinol-binding protein 5 (Cellular retinol-binding protein 	w
+RETINOL-BINDING	human	Q9BX79	STRA6	Q9BX79	8	78	Receptor for retinol uptake STRA6 (Retinol-binding protein r	w
+RETINOL-BINDING	worm	P34382	far-1	P34382	0	12	Fatty-acid and retinol-binding protein 1	w
+RETINOL-BINDING	worm	P34383	far-2	P34383	1	26	Fatty-acid and retinol-binding protein 2	w
+RETINOL-BINDING	worm	Q19478	far-3	Q19478	0	4	Fatty-acid and retinol-binding protein 1	w
+RETINOL-BINDING	worm	Q19480	far-5	Q19480	1	5	Fatty-acid and retinol-binding protein 1	w
+RETINOL-BINDING	worm	Q20226	CELE_F40F8.4	Q20226	1	3	Fatty-acid and retinol-binding protein 1	w
+RETINOL-BINDING	worm	Q9XUB7	far-6	Q9XUB7	0	12	Fatty-acid and retinol-binding protein 1	w
+RETINOL-BINDING	zebrafish	B0R174	rbp1.1	B0R174	0	1	Retinol-binding protein 1, cellular, tandem duplicate 1	w
+RETINOL-BINDING	zebrafish	Q9PT95	rbp4	Q9PT95	0	2	Plasma retinol-binding protein II	w
+RETINOPATHY	human	P35243	RCVRN	P35243	13	140	Recoverin (Cancer-associated retinopathy protein) (Protein C	w
+RETINOPHILIN	fly	FBgn0087005	rtp	Q9VN91	4	19	MORN repeat-containing protein 4 homolog (Retinophilin) (und	w
+RETINOPHILIN	human	Q8NDC4	MORN4	Q8NDC4	17	73	MORN repeat-containing protein 4 (Protein 44050) (Retinophil	w
+RETINOSCHISIN	human	O15537	RS1	O15537	5	39	Retinoschisin (X-linked juvenile retinoschisis protein)	w
+RETINOSCHISIN	zebrafish	Q6DH01	rs1a	Q6DH01	3	94	Retinoschisin 1a	w
+RETINOSCHISIS	human	O15537	RS1	O15537	5	39	Retinoschisin (X-linked juvenile retinoschisis protein)	w
+RETINYL	human	Q05469	LIPE	Q05469	5	138	Hormone-sensitive lipase (HSL) (EC 3.1.1.79) (Monoacylglycer	w
+RETINYL-ESTER	human	Q6E213	AWAT2	Q6E213	0	26	Acyl-CoA wax alcohol acyltransferase 2 (EC 2.3.1.75) (11-cis	w
+RETL1	human	P56159	GFRA1	P56159	28	184		
+RETL2	human	O00451	GFRA2	O00451	15	106		
+RETM	fly	FBgn0031814	retm	M9PB50	0	9	Real-time, isoform B	
+RETN	fly	FBgn0004795	retn	Q24573	104	414	Protein dead ringer (Protein retained)	
+RETN	human	Q9HD89	RETN	Q9HD89	13	209	Resistin (Adipose tissue-specific secretory factor) (ADSF) (	
+RETN	mus-musculus	Q99P87	Retn	Q99P87	0	25	Resistin	
+RETN	rattus-norvegicus	Q8K4J7	Retn	Q8K4J7	0	21	Resistin	
+RETNB_HUMAN	human	Q9BQ08	RETNLB	Q9BQ08	39	559		
+RETNL2	human	Q9BQ08	RETNLB	Q9BQ08	39	559		
+RETNLA	mus-musculus	Q9EP95	Retnla	Q9EP95	0	1	Resistin-like alpha	
+RETNLA	rattus-norvegicus	Q99P85	Retnla	Q99P85	0	2	Resistin-like alpha	
+RETNLB	human	Q9BQ08	RETNLB	Q9BQ08	39	559	Resistin-like beta (Colon and small intestine-specific cyste	
+RETNLB	mus-musculus	Q99P86	Retnlb	Q99P86	0	10	Resistin-like beta	
+RETNLB	rattus-norvegicus	A6IQV7	Retnlb	A6IQV7	0	8	Resistin-like beta	
+RETNLG	mus-musculus	Q8K426	Retnlg	Q8K426	0	21	Resistin-like gamma	
+RETNLG	rattus-norvegicus	G3V686	Retnlg	G3V686	0	19	Resistin-like gamma	
+RETN_HUMAN	human	Q9HD89	RETN	Q9HD89	13	209		
+RETR1_HUMAN	human	Q9H6L5	RETREG1	Q9H6L5	15	184		
+RETR2_HUMAN	human	Q8NC44	RETREG2	Q8NC44	15	116		
+RETR3_HUMAN	human	Q86VR2	RETREG3	Q86VR2	23	279		
+RETREG1	human	Q9H6L5	RETREG1	Q9H6L5	15	184	Reticulophagy regulator 1 (Reticulophagy receptor 1)	
+RETREG1	mus-musculus	Q8VE91	Retreg1	Q8VE91	6	83	Reticulophagy regulator 1	
+RETREG1	rattus-norvegicus	Q5FVM3	Retreg1	Q5FVM3	14	179	Reticulophagy regulator 1	
+RETREG2	human	Q8NC44	RETREG2	Q8NC44	15	116	Reticulophagy regulator 2	
+RETREG2	mus-musculus	Q6NS82	Retreg2	Q6NS82	1	74	Reticulophagy regulator 2	
+RETREG2	rattus-norvegicus	Q3MHU5	Retreg2	Q3MHU5	5	141	Reticulophagy regulator 2	
+RETREG2	zebrafish	A1A604	retreg2	A1A604	4	104	Family with sequence similarity 134, member A	
+RETREG3	human	Q86VR2	RETREG3	Q86VR2	23	279	Reticulophagy regulator 3	
+RETREG3	mus-musculus	Q9CQV4	Retreg3	Q9CQV4	1	75	Reticulophagy regulator 3	
+RETREG3	rattus-norvegicus	B2GV94	Retreg3	B2GV94	2	141	Fam134c protein	
+RETREG3	zebrafish	F1QYM7	retreg3	F1QYM7	3	106	Reticulophagy regulator 3	
+RETROACTIVE	fly	FBgn0261277	rtv	Q9VZ21	1	10	UPAR/Ly6 domain-containing protein rtv (Protein retroactive)	w
+RETROELEMENT	human	Q9HCM1	RESF1	Q9HCM1	28	99	Retroelement silencing factor 1	w
+RETROGRADE	human	Q53HC9	EIPR1	Q53HC9	16	115	EARP and GARP complex-interacting protein 1 (Endosome-associ	w
+RETROGRADE	human	Q92546	RGP1	Q92546	11	74	RAB6A-GEF complex partner protein 2 (Retrograde Golgi transp	w
+RETROGRADE	yeast	P32607	RTG1	P32607	5	17	Retrograde regulation protein 1	w
+RETROGRADE	yeast	P32608	RTG2	P32608	1	42	Retrograde regulation protein 2	w
+RETROGRADE	yeast	P38165	RTG3	P38165	3	39	Retrograde regulation protein 3	w
+RETROLINKIN	human	Q6UXF1	TMEM108	Q6UXF1	5	45	Transmembrane protein 108 (Retrolinkin)	w
+RETROTRANSPOSABLE	human	O00370	LORF2	O00370	0	2	LINE-1 retrotransposable element ORF2 protein (ORF2p) [Inclu	w
+RETROTRANSPOSABLE	human	Q9UN81	L1RE1	Q9UN81	14	98	LINE-1 retrotransposable element ORF1 protein (L1ORF1p) (LIN	w
+RETROTRANSPOSON	human	A6NKG5	RTL1	A6NKG5	1	35	Retrotransposon-like protein 1 (Mammalian retrotransposon de	w
+RETROTRANSPOSON	human	A6ZKI3	RTL8C	A6ZKI3	16	128	Retrotransposon Gag-like protein 8C (Mammalian retrotranspos	w
+RETROTRANSPOSON	human	Q17RB0	RTL8B	Q17RB0	11	55	Retrotransposon Gag-like protein 8B (Mammalian retrotranspos	w
+RETROTRANSPOSON	human	Q5HYW3	RTL5	Q5HYW3	0	7	Retrotransposon Gag-like protein 5 (Retrotransposon gag doma	w
+RETROTRANSPOSON	human	Q6ICC9	RTL6	Q6ICC9	9	25	Retrotransposon Gag-like protein 6 (Leucine zipper protein d	w
+RETROTRANSPOSON	human	Q6ZR62	RTL4	Q6ZR62	1	14	Retrotransposon Gag-like protein 4 (Mammalian retrotransposo	w
+RETROTRANSPOSON	human	Q7L3V2	RTL10	Q7L3V2	4	40	Protein Bop (BH3-only protein) (Retrotransposon Gag-like pro	w
+RETROTRANSPOSON	human	Q8N8U3	RTL3	Q8N8U3	0	8	Retrotransposon Gag-like protein 3 (Zinc finger CCHC domain-	w
+RETROTRANSPOSON	human	Q8NET4	RTL9	Q8NET4	0	38	Retrotransposon Gag-like protein 9 (Retrotransposon gag doma	w
+RETROTRANSPOSON	human	Q9BWD3	RTL8A	Q9BWD3	18	109	Retrotransposon Gag-like protein 8A (Mammalian retrotranspos	w
+RETROTRANSPOSON	human	Q9NXP7	GIN1	Q9NXP7	4	34	Gypsy retrotransposon integrase-like protein 1 (GIN-1) (Ty3/	w
+RETROTRANSPOSON	worm	G5ECF6	CELE_F07B7.2	G5ECF6	0	2	Retrotransposon protein	w
+RETROTRANSPOSON	worm	H2KZH7	CELE_Y37E11AL.3	H2KZH7	0	1	Retrotransposon gag protein	w
+RETROTRANSPOSON	zebrafish	A3KGZ3	zgc:113436	A3KGZ3	0	9	Gypsy retrotransposon integrase-like protein 1	w
+RETROTRANSPOSON-DERIVED	human	A6NKG5	RTL1	A6NKG5	1	35	Retrotransposon-like protein 1 (Mammalian retrotransposon de	w
+RETROTRANSPOSON-DERIVED	human	Q6ICC9	RTL6	Q6ICC9	9	25	Retrotransposon Gag-like protein 6 (Leucine zipper protein d	w
+RETROTRANSPOSON-DERIVED	human	Q6ZR62	RTL4	Q6ZR62	1	14	Retrotransposon Gag-like protein 4 (Mammalian retrotransposo	w
+RETROTRANSPOSON-DERIVED	human	Q86TG7	PEG10	Q86TG7	16	120	Retrotransposon-derived protein PEG10 (Embryonal carcinoma d	w
+RETROTRANSPOSON-LIKE	human	A6NKG5	RTL1	A6NKG5	1	35	Retrotransposon-like protein 1 (Mammalian retrotransposon de	w
+RETROVIRAL	human	P30825	SLC7A1	P30825	12	260	High affinity cationic amino acid transporter 1 (CAT-1) (CAT	w
+RETROVIRAL	human	Q9H9K5	ERVMER34-1	Q9H9K5	3	20	Endogenous retroviral envelope protein HEMO (Endogenous retr	w
+RETROVIRAL	human	Q9P2P1	NYNRIN	Q9P2P1	6	48	Protein NYNRIN (NYN domain and retroviral integrase catalyti	w
+RETROVIRAL-LIKE	human	Q53RT3	ASPRV1	Q53RT3	5	51	Retroviral-like aspartic protease 1 (EC 3.4.23.-) (Skin-spec	w
+RETROVIRUS	fly	FBgn0029679	CG2901	Q9W4P9	0	4	Xenotropic and polytropic retrovirus receptor 1	w
+RETROVIRUS	fly	FBgn0032827	CG10481	Q7KT29	1	10	Xenotropic and polytropic retrovirus receptor 1	w
+RETROVIRUS	fly	FBgn0035649	PXo	Q9VRR2	4	25	Solute carrier family 53 member 1 (Inorganic phosphate-sensi	w
+RETROVIRUS	human	B6SEH8	ERVV-1	B6SEH8	7	13	Endogenous retrovirus group V member 1 Env polyprotein (HERV	w
+RETROVIRUS	human	B6SEH9	ERVV-2	B6SEH9	8	19	Endogenous retrovirus group V member 2 Env polyprotein (HERV	w
+RETROVIRUS	human	M5A8F1	ERVH48-1	M5A8F1	1	5	Suppressyn (Endogenous retrovirus group 48 member 1) (NDUFV3	w
+RETROVIRUS	human	O42043	ERVK-18	O42043	7	331	Endogenous retrovirus group K member 18 Env polyprotein (Env	w
+RETROVIRUS	human	O71037	ERVK-19	O71037	3	90	Endogenous retrovirus group K member 19 Env polyprotein (Env	w
+RETROVIRUS	human	P10265	ERVK-10	P10265	15	84	Endogenous retrovirus group K member 10 Pro protein (HERV-K1	w
+RETROVIRUS	human	P10266	ERVK-10	P10266	7	11	Endogenous retrovirus group K member 10 Pol protein (HERV-K1	w
+RETROVIRUS	human	P30825	SLC7A1	P30825	12	260	High affinity cationic amino acid transporter 1 (CAT-1) (CAT	w
+RETROVIRUS	human	P60507	ERVFC1	P60507	5	12	Endogenous retrovirus group FC1 Env polyprotein (Envelope po	w
+RETROVIRUS	human	P60508	ERVFRD-1	P60508	10	155	Syncytin-2 (Endogenous retrovirus group FRD member 1) (Envel	w
+RETROVIRUS	human	P60509	ERVPABLB-1	P60509	6	10	Endogenous retrovirus group PABLB member 1 Env polyprotein (	w
+RETROVIRUS	human	P60608	ERVFC1-1	P60608	6	8	Endogenous retrovirus group FC1 member 1 Env polyprotein (En	w
+RETROVIRUS	human	P61550	ERVS71-1	P61550	1	11	Endogenous retrovirus group S71 member 1 Env polyprotein (En	w
+RETROVIRUS	human	P61565	ERVK-21	P61565	4	12	Endogenous retrovirus group K member 21 Env polyprotein (Env	w
+RETROVIRUS	human	P61566	ERVK-24	P61566	4	192	Endogenous retrovirus group K member 24 Env polyprotein (Env	w
+RETROVIRUS	human	P61567	ERVK-7	P61567	7	164	Endogenous retrovirus group K member 7 Env polyprotein (Enve	w
+RETROVIRUS	human	P61568	ERVK11-1	P61568	0	2	Putative endogenous retrovirus group K member 11-1 Env polyp	w
+RETROVIRUS	human	P61570	ERVK-25	P61570	7	142	Endogenous retrovirus group K member 25 Env polyprotein (Env	w
+RETROVIRUS	human	P61571	ERVK-21	P61571	0	3	Endogenous retrovirus group K member 21 Rec protein (HERV-K_	w
+RETROVIRUS	human	P61572	ERVK-19	P61572	0	3	Endogenous retrovirus group K member 19 Rec protein (HERV-K(	w
+RETROVIRUS	human	P61573	ERVK-9	P61573	1	2	Endogenous retrovirus group K member 9 Rec protein (HERV-K(C	w
+RETROVIRUS	human	P61574	HERVK_113	P61574	3	6	Endogenous retrovirus group K member 113 Rec protein (HERV-K	w
+RETROVIRUS	human	P61575	ERVK-8	P61575	0	9	Endogenous retrovirus group K member 8 Rec protein (HERV-K11	w
+RETROVIRUS	human	P61576	HERV-K104	P61576	4	14	Endogenous retrovirus group K member 104 Rec protein (HERV-K	w
+RETROVIRUS	human	P61578	ERVK-16	P61578	1	6	Endogenous retrovirus group K member 16 Rec protein (HERV-K_	w
+RETROVIRUS	human	P61579	ERVK-25	P61579	1	5	Endogenous retrovirus group K member 25 Rec protein (Endogen	w
+RETROVIRUS	human	P61580	ERVK-10	P61580	1	11	Endogenous retrovirus group K member 10 Np9 protein (HERV-K1	w
+RETROVIRUS	human	P61581	ERVK-24	P61581	2	12	Endogenous retrovirus group K member 24 Np9 protein (HERV-K1	w
+RETROVIRUS	human	P61582	ERVK-7	P61582	1	10	Endogenous retrovirus group K member 7 Np9 protein (HERV-K(I	w
+RETROVIRUS	human	P61583	ERVK-5	P61583	1	6	Endogenous retrovirus group K member 5 Np9 protein (Endogeno	w
+RETROVIRUS	human	P62683	ERVK-21	P62683	0	113	Endogenous retrovirus group K member 21 Gag polyprotein (HER	w
+RETROVIRUS	human	P62684	HERVK_113	P62684	0	8	Endogenous retrovirus group K member 113 Gag polyprotein (HE	w
+RETROVIRUS	human	P62685	ERVK-8	P62685	3	104	Endogenous retrovirus group K member 8 Gag polyprotein (HERV	w
+RETROVIRUS	human	P63119	ERVK-21	P63119	12	87	Endogenous retrovirus group K member 21 Pro protein (HERV-K_	w
+RETROVIRUS	human	P63120	ERVK-19	P63120	12	81	Endogenous retrovirus group K member 19 Pro protein (HERV-K(	w
+RETROVIRUS	human	P63121	HERVK_113	P63121	10	14	Endogenous retrovirus group K member 113 Pro protein (HERV-K	w
+RETROVIRUS	human	P63122	ERVK-8	P63122	13	81	Endogenous retrovirus group K member 8 Pro protein (HERV-K11	w
+RETROVIRUS	human	P63123	ERVK-18	P63123	13	107	Endogenous retrovirus group K member 18 Pro protein (HERV-K(	w
+RETROVIRUS	human	P63124	HERV-K104	P63124	11	17	Endogenous retrovirus group K member 104 Pro protein (HERV-K	w
+RETROVIRUS	human	P63125	ERVK-25	P63125	11	90	Endogenous retrovirus group K member 25 Pro protein (HERV-K_	w
+RETROVIRUS	human	P63126	ERVK-9	P63126	2	118	Endogenous retrovirus group K member 9 Gag polyprotein (HERV	w
+RETROVIRUS	human	P63127	ERVK-9	P63127	13	62	Endogenous retrovirus group K member 9 Pro protein (HERV-K(C	w
+RETROVIRUS	human	P63129	ERVK-24	P63129	16	98	Endogenous retrovirus group K member 24 Pro protein (HERV-K1	w
+RETROVIRUS	human	P63130	ERVK-7	P63130	2	128	Endogenous retrovirus group K member 7 Gag polyprotein (HERV	w
+RETROVIRUS	human	P63131	ERVK-7	P63131	14	98	Endogenous retrovirus group K member 7 Pro protein (HERV-K(I	w
+RETROVIRUS	human	P63132	HERVK_113	P63132	6	28	Endogenous retrovirus group K member 113 Pol protein (HERV-K	w
+RETROVIRUS	human	P63133	ERVK-8	P63133	8	11	Endogenous retrovirus group K member 8 Pol protein (HERV-K11	w
+RETROVIRUS	human	P63135	ERVK-7	P63135	4	4	Endogenous retrovirus group K member 7 Pol protein (HERV-K(I	w
+RETROVIRUS	human	P63136	ERVK-25	P63136	7	28	Endogenous retrovirus group K member 25 Pol protein (HERV-K_	w
+RETROVIRUS	human	P63145	ERVK-24	P63145	0	9	Endogenous retrovirus group K member 24 Gag polyprotein (HER	w
+RETROVIRUS	human	P87889	ERVK-10	P87889	2	128	Endogenous retrovirus group K member 10 Gag polyprotein (HER	w
+RETROVIRUS	human	Q14264	ERV3-1	Q14264	8	219	Endogenous retrovirus group 3 member 1 Env polyprotein (ERV-	w
+RETROVIRUS	human	Q15758	SLC1A5	Q15758	22	309	Neutral amino acid transporter B(0) (ATB(0)) (Baboon M7 viru	w
+RETROVIRUS	human	Q69383	ERVK-6	Q69383	0	3	Endogenous retrovirus group K member 6 Rec protein (Central 	w
+RETROVIRUS	human	Q69384	ERVK-6	Q69384	3	132	Endogenous retrovirus group K member 6 Env polyprotein (EnvK	w
+RETROVIRUS	human	Q7LDI9	ERVK-6	Q7LDI9	1	125	Endogenous retrovirus group K member 6 Gag polyprotein (HERV	w
+RETROVIRUS	human	Q902F8	ERVK-8	Q902F8	4	108	Endogenous retrovirus group K member 8 Env polyprotein (EnvK	w
+RETROVIRUS	human	Q902F9	HERVK_113	Q902F9	1	11	Endogenous retrovirus group K member 113 Env polyprotein (En	w
+RETROVIRUS	human	Q9BWK5	CYREN	Q9BWK5	12	59	Cell cycle regulator of non-homologous end joining (Cell cyc	w
+RETROVIRUS	human	Q9BXR3	ERVK-6	Q9BXR3	7	36	Endogenous retrovirus group K member 6 Pol protein (HERV-K(C	w
+RETROVIRUS	human	Q9H9K5	ERVMER34-1	Q9H9K5	3	20	Endogenous retroviral envelope protein HEMO (Endogenous retr	w
+RETROVIRUS	human	Q9HAB3	SLC52A2	Q9HAB3	9	192	Solute carrier family 52, riboflavin transporter, member 2 (	w
+RETROVIRUS	human	Q9HDB8	ERVK-5	Q9HDB8	1	31	Endogenous retrovirus group K member 5 Env polyprotein (Enve	w
+RETROVIRUS	human	Q9HDB9	ERVK-5	Q9HDB9	0	10	Endogenous retrovirus group K member 5 Gag polyprotein (HERV	w
+RETROVIRUS	human	Q9NWF4	SLC52A1	Q9NWF4	5	175	Solute carrier family 52, riboflavin transporter, member 1 (	w
+RETROVIRUS	human	Q9NX77	ERVK13-1	Q9NX77	0	11	Endogenous retrovirus group K member 13-1 Env polyprotein (E	w
+RETROVIRUS	human	Q9QC07	ERVK-18	Q9QC07	8	11	Endogenous retrovirus group K member 18 Pol protein (HERV-K(	w
+RETROVIRUS	human	Q9UKH3	ERVK-9	Q9UKH3	4	113	Endogenous retrovirus group K member 9 Env polyprotein (EnvK	w
+RETROVIRUS	human	Q9UQF0	ERVW-1	Q9UQF0	23	292	Syncytin-1 (Endogenous retrovirus group W member 1) (Env-W) 	w
+RETROVIRUS	human	Q9UQG0	ERVK-11	Q9UQG0	8	11	Endogenous retrovirus group K member 11 Pol protein (HERV-K_	w
+RETROVIRUS	human	Q9WJR5	ERVK-19	Q9WJR5	5	16	Endogenous retrovirus group K member 19 Pol protein (HERV-K(	w
+RETROVIRUS	human	Q9Y6I0	ERVK-6	Q9Y6I0	15	101	Endogenous retrovirus group K member 6 Pro protein (HERV-K(C	w
+RETROVIRUS	human	Q9YNA8	ERVK-19	Q9YNA8	1	101	Endogenous retrovirus group K member 19 Gag polyprotein (HER	w
+RETROVIRUS	worm	Q9XX10	CELE_Y39A1A.22	Q9XX10	0	7	Xenotropic and polytropic retrovirus receptor 1 homolog	w
+RETROVIRUS	zebrafish	A8DZH4	xpr1	A8DZH4	0	20	Xenotropic and polytropic retrovirus receptor 1 homolog	w
+RETROVIRUS-H	human	Q9UM44	HHLA2	Q9UM44	12	94	HERV-H LTR-associating protein 2 (Human endogenous retroviru	w
+RETROVIRUS-H	human	Q9XRX5	ANKRD13C-DT	Q9XRX5	2	11	Putative uncharacterized protein ANKRD13C-DT (ANKRD13C diver	w
+RETS	pseudomonas-aeruginosa	Q9HUV7	retS	Q9HUV7	18	115	histidine kinase	
+RETSAT	human	Q6NUM9	RETSAT	Q6NUM9	9	198	All-trans-retinol 13,14-reductase (EC 1.3.99.23) (All-trans-	
+RETSAT	mus-musculus	Q64FW2	Retsat	Q64FW2	0	1	All-trans-retinol 13,14-reductase	
+RETSDR1	human	O75911	DHRS3	O75911	23	134	Short-chain dehydrogenase/reductase 3 (EC 1.1.1.300) (DD83.1	w
+RETSDR2	human	Q8N3Y7	SDR16C5	Q8N3Y7	11	72	Epidermal retinol dehydrogenase 2 (EPHD-2) (RDH-E2) (EC 1.1.	w
+RETSDR4	human	Q9Y394	DHRS7	Q9Y394	24	247		
+RETST_HUMAN	human	Q6NUM9	RETSAT	Q6NUM9	9	198		
+RET_HUMAN	human	P07949	RET	P07949	114	1697		

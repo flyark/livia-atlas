@@ -1,12 +1,39 @@
-GNPAT	mus-musculus	P98192	Gnpat	P98192	1	11	Dihydroxyacetone phosphate acyltransferase
-GNPAT	rattus-norvegicus	Q9ES71	Gnpat	Q9ES71	1	9	Dihydroxyacetone phosphate acyltransferase
-GNPDA1	cladophialophora-carrionii	A0A1C1CNW3	Gnpda1	A0A1C1CNW3	0	3	Glucosamine-6-phosphate isomerase
-GNPDA1	dictyostelium-discoideum	Q54XK9	gnpda1	Q54XK9	0	1	Glucosamine-6-phosphate deaminase
-GNPDA1	mus-musculus	O88958	Gnpda1	O88958	0	16	Glucosamine-6-phosphate deaminase 1
-GNPDA1	rattus-norvegicus	B5DFC6	Gnpda1	B5DFC6	1	4	Glucosamine-6-phosphate isomerase
-GNPDA2	mus-musculus	Q9CRC9	Gnpda2	Q9CRC9	0	3	Glucosamine-6-phosphate deaminase 2
-GNPDA2	rattus-norvegicus	B5DEZ6	Gnpda2	B5DEZ6	1	4	Glucosamine-6-phosphate isomerase
-GNPNAT1	mus-musculus	Q9JK38	Gnpnat1	Q9JK38	0	2	Glucosamine 6-phosphate N-acetyltransferase
-GNPNAT1	rattus-norvegicus	A6KDZ8	Gnpnat1	A6KDZ8	0	5	Glucosamine 6-phosphate N-acetyltransferase
-GNPTAB	mus-musculus	Q69ZN6	Gnptab	Q69ZN6	1	2	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta
-GNPTG	mus-musculus	Q6S5C2	Gnptg	Q6S5C2	1	8	N-acetylglucosamine-1-phosphotransferase subunit gamma
+GNP1	yeast	P48813	GNP1	P48813	0	26	High-affinity glutamine permease	
+GNP2	human	Q8TDQ7	GNPDA2	Q8TDQ7	6	114		
+GNPAT	fly	FBgn0040212	Gnpat	A0A0B4KHK0	2	11	Dihydroxyacetone phosphate acyltransferase (EC 2.3.1.42) (Gl	
+GNPAT	human	O15228	GNPAT	O15228	9	115	Dihydroxyacetone phosphate acyltransferase (DAP-AT) (DAPAT) 	
+GNPAT	mus-musculus	P98192	Gnpat	P98192	1	11	Dihydroxyacetone phosphate acyltransferase	
+GNPAT	rattus-norvegicus	Q9ES71	Gnpat	Q9ES71	1	9	Dihydroxyacetone phosphate acyltransferase	
+GNPAT	zebrafish	F1QAU7	gnpat	F1QAU7	0	5	Dihydroxyacetone phosphate acyltransferase	
+GNPAT2	zebrafish	A0A8M1RMJ8	gnpat2	A0A8M1RMJ8	0	2	Dihydroxyacetone phosphate acyltransferase	
+GNPAT_HUMAN	human	O15228	GNPAT	O15228	9	115		
+GNPDA	fly	FBgn0031717	Gnpda	Q9VMP9	1	77	Glucosamine-6-phosphate isomerase (EC 3.5.99.6) (Glucosamine	w
+GNPDA	fly	FBgn0031717	Gnpda	Q9VMP9	1	77	Glucosamine-6-phosphate isomerase (EC 3.5.99.6) (Glucosamine	w
+GNPDA1	cladophialophora-carrionii	A0A1C1CNW3	Gnpda1	A0A1C1CNW3	0	3	Glucosamine-6-phosphate isomerase	
+GNPDA1	dictyostelium-discoideum	Q54XK9	gnpda1	Q54XK9	0	1	Glucosamine-6-phosphate deaminase	
+GNPDA1	human	P46926	GNPDA1	P46926	4	119	Glucosamine-6-phosphate deaminase 1 (GlcN6P deaminase 1) (EC	
+GNPDA1	mus-musculus	O88958	Gnpda1	O88958	0	16	Glucosamine-6-phosphate deaminase 1	
+GNPDA1	rattus-norvegicus	B5DFC6	Gnpda1	B5DFC6	1	4	Glucosamine-6-phosphate isomerase	
+GNPDA2	human	Q8TDQ7	GNPDA2	Q8TDQ7	6	114	Glucosamine-6-phosphate deaminase 2 (GlcN6P deaminase 2) (EC	
+GNPDA2	mus-musculus	Q9CRC9	Gnpda2	Q9CRC9	0	3	Glucosamine-6-phosphate deaminase 2	
+GNPDA2	rattus-norvegicus	B5DEZ6	Gnpda2	B5DEZ6	1	4	Glucosamine-6-phosphate isomerase	
+GNPDA2	zebrafish	E7F0E2	gnpda2	E7F0E2	1	10	Glucosamine-6-phosphate isomerase	
+GNPI	human	P46926	GNPDA1	P46926	4	119		
+GNPI1_HUMAN	human	P46926	GNPDA1	P46926	4	119		
+GNPI2_HUMAN	human	Q8TDQ7	GNPDA2	Q8TDQ7	6	114		
+GNPNAT	fly	FBgn0039690	Gnpnat	A0A0B4KI57	1	21	Glucosamine 6-phosphate N-acetyltransferase (EC 2.3.1.4)	
+GNPNAT1	human	Q96EK6	GNPNAT1	Q96EK6	4	55	Glucosamine 6-phosphate N-acetyltransferase (EC 2.3.1.4) (Ph	
+GNPNAT1	mus-musculus	Q9JK38	Gnpnat1	Q9JK38	0	2	Glucosamine 6-phosphate N-acetyltransferase	
+GNPNAT1	rattus-norvegicus	A6KDZ8	Gnpnat1	A6KDZ8	0	5	Glucosamine 6-phosphate N-acetyltransferase	
+GNPNAT1	zebrafish	Q4VBJ4	gnpnat1	Q4VBJ4	0	8	Glucosamine 6-phosphate N-acetyltransferase	
+GNPTA	human	Q3T906	GNPTAB	Q3T906	17	79		
+GNPTAB	fly	FBgn0033392	Gnptab	A1Z7S7	164	2374	FI02838p	
+GNPTAB	human	Q3T906	GNPTAB	Q3T906	17	79	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta	
+GNPTAB	human	Q8N6I4	LYSET	Q8N6I4	4	31	Lysosomal enzyme trafficking factor (GNPTAB cleavage and act	w
+GNPTAB	mus-musculus	Q69ZN6	Gnptab	Q69ZN6	1	2	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta	
+GNPTAG	human	Q9UJJ9	GNPTG	Q9UJJ9	12	87		
+GNPTA_HUMAN	human	Q3T906	GNPTAB	Q3T906	17	79		
+GNPTA_MOUSE	fly	GNPTA_MOUSE	GNPTA_MOUSE		7	53		
+GNPTG	human	Q9UJJ9	GNPTG	Q9UJJ9	12	87	N-acetylglucosamine-1-phosphotransferase subunit gamma (GlcN	
+GNPTG	mus-musculus	Q6S5C2	Gnptg	Q6S5C2	1	8	N-acetylglucosamine-1-phosphotransferase subunit gamma	
+GNPTG_HUMAN	human	Q9UJJ9	GNPTG	Q9UJJ9	12	87		

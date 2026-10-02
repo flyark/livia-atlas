@@ -1,19 +1,282 @@
-ADP1	candida-albicans-237561	A0A1D8PT53	ADP1	A0A1D8PT53	0	2	ATP-dependent permease
-ADP1	cladophialophora-carrionii	A0A1C1CE65	ADP1	A0A1C1CE65	0	4	Putative ATP-dependent permease
-ADPG1	arabidopsis-thaliana	O23147	ADPG1	O23147	0	3	Polygalacturonase ADPG1
-ADPG2	arabidopsis-thaliana	Q8RY29	ADPG2	Q8RY29	0	3	Polygalacturonase ADPG2
-ADPGK	mus-musculus	Q8VDL4	Adpgk	Q8VDL4	0	10	ADP-dependent glucokinase
-ADPGK	rattus-norvegicus	G3V784	Adpgk	G3V784	0	5	ADP-dependent glucokinase
-ADPRH	dictyostelium-discoideum	Q54H71	adprh	Q54H71	0	6	ADP-ribosylhydrolase ARH1
-ADPRH	mus-musculus	P54923	Adprh	P54923	1	12	ADP-ribosylhydrolase ARH1
-ADPRH	rattus-norvegicus	Q02589	Adprh	Q02589	0	6	ADP-ribosylhydrolase ARH1
-ADPRHL1	mus-musculus	Q8BGK2	Adprhl1	Q8BGK2	0	10	Inactive ADP-ribosyltransferase ARH2
-ADPRHL1	rattus-norvegicus	Q5XIB3	Adprhl1	Q5XIB3	0	6	Inactive ADP-ribosyltransferase ARH2
-ADPRM	mus-musculus	Q99KS6	Adprm	Q99KS6	0	4	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase
-ADPRM	rattus-norvegicus	Q5M886	Adprm	Q5M886	0	4	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase
-ADPRS	mus-musculus	Q8CG72	Adprs	Q8CG72	0	1	ADP-ribosylhydrolase ARH3
-ADPRS	rattus-norvegicus	B0K017	Adprs	B0K017	0	1	ADP-ribosylhydrolase ARH3
-ADPRT1A	dictyostelium-discoideum	Q54XI2	adprt1A	Q54XI2	0	36	Poly
-ADPRT1B	dictyostelium-discoideum	Q54X55	adprt1B	Q54X55	1	36	Poly
-ADPRT2	dictyostelium-discoideum	Q8I7C6	adprt2	Q8I7C6	1	36	Poly
-ADPRT4	dictyostelium-discoideum	Q55GU8	adprt4	Q55GU8	0	36	Poly
+ADP	fly	FBgn0000057	adp	Q7K7W5	2	26	Adipose protein (Adipose, isoform A) (Adipose, isoform B) (F	
+ADP-DEPENDENT	human	Q9BRR6	ADPGK	Q9BRR6	13	121	ADP-dependent glucokinase (ADP-GK) (ADPGK) (EC 2.7.1.147) (R	w
+ADP-DEPENDENT	worm	Q86S40	C50D2.7	Q86S40	0	2	Probable ADP-dependent glucokinase	w
+ADP-DEPENDENT	zebrafish	A0JML7	adpgk	A0JML7	0	8	ADP-dependent glucokinase	w
+ADP-DEPENDENT	zebrafish	E7F6M4	adpgk2	E7F6M4	0	8	ADP-dependent glucokinase	w
+ADP-FORMING	fly	FBgn0037643	ScsbetaA	Q95U38	12	159	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+ADP-FORMING	human	Q9P2R7	SUCLA2	Q9P2R7	21	271	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+ADP-GK	human	Q9BRR6	ADPGK	Q9BRR6	13	121	ADP-dependent glucokinase (ADP-GK) (ADPGK) (EC 2.7.1.147) (R	w
+ADP-GLUCOSE	human	Q9H244	P2RY12	Q9H244	23	264	P2Y purinoceptor 12 (P2Y12) (ADP-glucose receptor) (ADPG-R) 	w
+ADP-RI	human	Q13508	ART3	Q13508	6	65	Ecto-ADP-ribosyltransferase 3 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RI	human	Q460N3	PARP15	Q460N3	1	39	Protein mono-ADP-ribosyltransferase PARP15 (EC 2.4.2.-) (ADP	w
+ADP-RI	human	Q460N5	PARP14	Q460N5	16	136	Protein mono-ADP-ribosyltransferase PARP14 (EC 2.4.2.-) (ADP	w
+ADP-RI	human	Q96L15	ART5	Q96L15	6	72	Ecto-ADP-ribosyltransferase 5 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RIB	human	Q9BQ69	MACROD1	Q9BQ69	8	86	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
+ADP-RIBOS	human	Q8IXQ6	PARP9	Q8IXQ6	12	119	Protein mono-ADP-ribosyltransferase PARP9 (EC 2.4.2.-) (ADP-	w
+ADP-RIBOSE	fly	FBgn0010247	Parp1	P35875	10	452	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.30) (NAD(+) AD	w
+ADP-RIBOSE	fly	FBgn0023216	Parg	O46043	3	11	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.143)	w
+ADP-RIBOSE	fly	FBgn0027508	Tnks	A0A0B4KI19	3	28	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.-)	w
+ADP-RIBOSE	fly	FBgn0262579	Sarm	M9NE45	10	73	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase (EC 3.2.2.6)	w
+ADP-RIBOSE	human	A1Z1Q3	MACROD2	A1Z1Q3	3	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	w
+ADP-RIBOSE	human	O95271	TNKS	O95271	33	215	Poly [ADP-ribose] polymerase tankyrase-1 (EC 2.4.2.30) (ADP-	w
+ADP-RIBOSE	human	P09874	PARP1	P09874	43	1100	Poly [ADP-ribose] polymerase 1 (PARP-1) (EC 2.4.2.30) (ADP-r	w
+ADP-RIBOSE	human	P28907	CD38	P28907	21	281	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1 (EC 3.2.2.	w
+ADP-RIBOSE	human	Q10588	BST1	Q10588	11	112	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2 (EC 3.2.2.	w
+ADP-RIBOSE	human	Q2NL67	PARP6	Q2NL67	11	254	Protein mono-ADP-ribosyltransferase PARP6 (EC 2.4.2.-) (ADP-	w
+ADP-RIBOSE	human	Q3LIE5	ADPRM	Q3LIE5	14	123	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase (EC	w
+ADP-RIBOSE	human	Q53GL7	PARP10	Q53GL7	9	104	Protein mono-ADP-ribosyltransferase PARP10 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSE	human	Q7Z2W4	ZC3HAV1	Q7Z2W4	28	660	Zinc finger CCCH-type antiviral protein 1 (ADP-ribosyltransf	w
+ADP-RIBOSE	human	Q7Z3E1	TIPARP	Q7Z3E1	239	1521	Protein mono-ADP-ribosyltransferase TIPARP (EC 2.4.2.-) (ADP	w
+ADP-RIBOSE	human	Q86W56	PARG	Q86W56	9	99	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.143)	w
+ADP-RIBOSE	human	Q8N3A8	PARP8	Q8N3A8	26	254	Protein mono-ADP-ribosyltransferase PARP8 (EC 2.4.2.-) (ADP-	w
+ADP-RIBOSE	human	Q8N5Y8	PARP16	Q8N5Y8	8	75	Protein mono-ADP-ribosyltransferase PARP16 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSE	human	Q9BQ69	MACROD1	Q9BQ69	8	86	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
+ADP-RIBOSE	human	Q9BW91	NUDT9	Q9BW91	5	56	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	w
+ADP-RIBOSE	human	Q9H0J9	PARP12	Q9H0J9	5	111	Protein mono-ADP-ribosyltransferase PARP12 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSE	human	Q9H2K2	TNKS2	Q9H2K2	24	181	Poly [ADP-ribose] polymerase tankyrase-2 (EC 2.4.2.30) (ADP-	w
+ADP-RIBOSE	human	Q9NR21	PARP11	Q9NR21	8	61	Protein mono-ADP-ribosyltransferase PARP11 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSE	human	Q9NX46	ADPRS	Q9NX46	8	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
+ADP-RIBOSE	human	Q9UGN5	PARP2	Q9UGN5	14	276	Poly [ADP-ribose] polymerase 2 (PARP-2) (hPARP-2) (EC 2.4.2.	w
+ADP-RIBOSE	human	Q9Y530	OARD1	Q9Y530	1	47	ADP-ribose glycohydrolase OARD1 (O-acetyl-ADP-ribose deacety	w
+ADP-RIBOSE	worm	Q867X0	parg-1	Q867X0	0	6	Poly(ADP-ribose) glycohydrolase 1	w
+ADP-RIBOSE	worm	Q9N5L4	parg-2	Q9N5L4	0	13	Poly(ADP-ribose) glycohydrolase 2	w
+ADP-RIBOSE	yeast	P38218	POA1	P38218	0	6	ADP-ribose 1''-phosphate phosphatase	w
+ADP-RIBOSE	yeast	Q01976	YSA1	Q01976	1	12	ADP-ribose pyrophosphatase	w
+ADP-RIBOSE	yeast	Q04299	YMR087W	Q04299	0	9	Probable ADP-ribose 1''-phosphate phosphatase YML087W	w
+ADP-RIBOSE	zebrafish	A0A0R4ITH7	pargl	A0A0R4ITH7	0	9	poly(ADP-ribose) glycohydrolase	w
+ADP-RIBOSE	zebrafish	E7F2B6	parga	E7F2B6	0	9	poly(ADP-ribose) glycohydrolase	w
+ADP-RIBOSE	zebrafish	F1QL34	nudt9	F1QL34	0	2	ADP-ribose pyrophosphatase, mitochondrial	w
+ADP-RIBOSE	zebrafish	F6PBM1	macrod1	F6PBM1	0	2	ADP-ribose glycohydrolase MACROD1	w
+ADP-RIBOSE	zebrafish	Q1LUY0	parp12a	Q1LUY0	0	1	Poly (ADP-ribose) polymerase family, member 12a	w
+ADP-RIBOSE	zebrafish	Q1LVS6	parp12b	Q1LVS6	0	1	Poly (ADP-ribose) polymerase family, member 12b	w
+ADP-RIBOSE	zebrafish	Q503C5	oard1	Q503C5	0	1	ADP-ribose glycohydrolase OARD1	w
+ADP-RIBOSE	zebrafish	Q6DGR8	parp6a	Q6DGR8	14	91	Poly (ADP-ribose) polymerase family, member 6a	w
+ADP-RIBOSE	zebrafish	Q7T291	adprm	Q7T291	1	5	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase	w
+ADP-RIBOSE-L-ARGININE	human	P54922	ADPRH	P54922	4	70	ADP-ribosylhydrolase ARH1 (EC 3.2.2.19) (ADP-ribose-L-argini	w
+ADP-RIBOSYL	fly	FBgn0262579	Sarm	M9NE45	10	73	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase (EC 3.2.2.6)	w
+ADP-RIBOSYL	human	P28907	CD38	P28907	21	281	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1 (EC 3.2.2.	w
+ADP-RIBOSYL	human	P52961	ART1	P52961	10	75	GPI-linked NAD(P)(+)--arginine ADP-ribosyltransferase 1 (EC 	w
+ADP-RIBOSYL	human	Q10588	BST1	Q10588	11	112	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2 (EC 3.2.2.	w
+ADP-RIBOSYL	human	Q13508	ART3	Q13508	6	65	Ecto-ADP-ribosyltransferase 3 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RIBOSYL	human	Q93070	ART4	Q93070	11	73	Ecto-ADP-ribosyltransferase 4 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RIBOSYL	human	Q96L15	ART5	Q96L15	6	72	Ecto-ADP-ribosyltransferase 5 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RIBOSYLARGININE	human	P54922	ADPRH	P54922	4	70	ADP-ribosylhydrolase ARH1 (EC 3.2.2.19) (ADP-ribose-L-argini	w
+ADP-RIBOSYLARGININE	human	Q8NDY3	ADPRHL1	Q8NDY3	0	50	Inactive ADP-ribosyltransferase ARH2 (ADP-ribosylhydrolase-l	w
+ADP-RIBOSYLARGININE	zebrafish	Q6DBR3	adprh	Q6DBR3	0	8	ADP-ribosylarginine hydrolase	w
+ADP-RIBOSYLASPARTATE	human	A1Z1Q3	MACROD2	A1Z1Q3	3	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	w
+ADP-RIBOSYLATION	fly	FBgn0000115	Arl1	P25160	8	61	ADP-ribosylation factor-like protein 1	w
+ADP-RIBOSYLATION	fly	FBgn0004908	Arl2	Q06849	11	80	ADP-ribosylation factor-like protein 2	w
+ADP-RIBOSYLATION	fly	FBgn0010348	Arf1	P61209	23	174	ADP-ribosylation factor 1 (EC 3.6.5.2)	w
+ADP-RIBOSYLATION	fly	FBgn0013750	Arf6	P40946	27	108	ADP-ribosylation factor 6 (ARF6) (ADP ribosylation factor at	w
+ADP-RIBOSYLATION	fly	FBgn0020655	ArfGAP1	Q9VTX5	11	95	ADP-ribosylation factor GTPase activating protein 1, isoform	w
+ADP-RIBOSYLATION	fly	FBgn0030088	Arfrp1	Q9W389	6	48	ADP-ribosylation factor-related protein 1	w
+ADP-RIBOSYLATION	fly	FBgn0034446	Arl6	A1ZBK9	4	30	ADP-ribosylation factor-like protein 6	w
+ADP-RIBOSYLATION	fly	FBgn0035866	Arl5	Q9VSG8	5	35	ADP-ribosylation factor-like 5 (LD31204p)	w
+ADP-RIBOSYLATION	fly	FBgn0037182	ArfGAP3	A8JNX0	16	62	ADP-ribosylation factor GTPase activating protein 3, isoform	w
+ADP-RIBOSYLATION	fly	FBgn0037551	Arl8	Q9VHV5	15	167	ADP-ribosylation factor-like protein 8 (Novel small G protei	w
+ADP-RIBOSYLATION	fly	FBgn0038453	Arl6IP1	Q9VES1	6	309	ADP-ribosylation factor-like protein 6-interacting protein 1	w
+ADP-RIBOSYLATION	fly	FBgn0038915	CG17819	Q9VD65	5	38	ADP-ribosylation factor-related protein 1	w
+ADP-RIBOSYLATION	fly	FBgn0039149	CG18428	Q9VCD4	3	21	ADP-ribosylation factor-like protein 6-interacting protein 4	w
+ADP-RIBOSYLATION	fly	FBgn0051158	Efa6	E1JIT7	17	66	PH and SEC7 domain-containing protein (Exchange factor for A	w
+ADP-RIBOSYLATION	human	A5PKW4	PSD	A5PKW4	26	97	PH and SEC7 domain-containing protein 1 (Exchange factor for	w
+ADP-RIBOSYLATION	human	A6NH57	ARL5C	A6NH57	8	58	Putative ADP-ribosylation factor-like protein 5C (ADP-ribosy	w
+ADP-RIBOSYLATION	human	F5H423	?	F5H423	3	10	ADP-ribosylation factor 3	w
+ADP-RIBOSYLATION	human	O75915	ARL6IP5	O75915	12	243	PRA1 family protein 3 (ADP-ribosylation factor-like protein 	w
+ADP-RIBOSYLATION	human	P18085	ARF4	P18085	85	456	ADP-ribosylation factor 4	w
+ADP-RIBOSYLATION	human	P36404	ARL2	P36404	32	203	ADP-ribosylation factor-like protein 2	w
+ADP-RIBOSYLATION	human	P36405	ARL3	P36405	64	456	ADP-ribosylation factor-like protein 3	w
+ADP-RIBOSYLATION	human	P36406	TRIM23	P36406	74	635	E3 ubiquitin-protein ligase TRIM23 (EC 2.3.2.27) (ADP-ribosy	w
+ADP-RIBOSYLATION	human	P40616	ARL1	P40616	97	582	ADP-ribosylation factor-like protein 1	w
+ADP-RIBOSYLATION	human	P40617	ARL4A	P40617	17	104	ADP-ribosylation factor-like protein 4A	w
+ADP-RIBOSYLATION	human	P49703	ARL4D	P49703	23	196	ADP-ribosylation factor-like protein 4D (ADP-ribosylation fa	w
+ADP-RIBOSYLATION	human	P53365	ARFIP2	P53365	22	151	Arfaptin-2 (ADP-ribosylation factor-interacting protein 2) (	w
+ADP-RIBOSYLATION	human	P53367	ARFIP1	P53367	30	213	Arfaptin-1 (ADP-ribosylation factor-interacting protein 1)	w
+ADP-RIBOSYLATION	human	P56559	ARL4C	P56559	43	283	ADP-ribosylation factor-like protein 4C (ADP-ribosylation fa	w
+ADP-RIBOSYLATION	human	P61204	ARF3	P61204	166	959	ADP-ribosylation factor 3	w
+ADP-RIBOSYLATION	human	P62330	ARF6	P62330	166	894	ADP-ribosylation factor 6 (EC 3.6.5.2)	w
+ADP-RIBOSYLATION	human	P84077	ARF1	P84077	132	748	ADP-ribosylation factor 1 (EC 3.6.5.2)	w
+ADP-RIBOSYLATION	human	P84085	ARF5	P84085	87	423	ADP-ribosylation factor 5	w
+ADP-RIBOSYLATION	human	Q0P5N6	ARL16	Q0P5N6	20	131	ADP-ribosylation factor-like protein 16	w
+ADP-RIBOSYLATION	human	Q13795	ARFRP1	Q13795	37	186	ADP-ribosylation factor-related protein 1 (ARF-related prote	w
+ADP-RIBOSYLATION	human	Q15041	ARL6IP1	Q15041	11	514	ADP-ribosylation factor-like protein 6-interacting protein 1	w
+ADP-RIBOSYLATION	human	Q3SXY8	ARL13B	Q3SXY8	53	359	ADP-ribosylation factor-like protein 13B (ADP-ribosylation f	w
+ADP-RIBOSYLATION	human	Q5H913	ARL13A	Q5H913	10	30	ADP-ribosylation factor-like protein 13A (ARF-like GTPase 13	w
+ADP-RIBOSYLATION	human	Q66PJ3	ARL6IP4	Q66PJ3	13	132	ADP-ribosylation factor-like protein 6-interacting protein 4	w
+ADP-RIBOSYLATION	human	Q6DN90	IQSEC1	Q6DN90	44	181	IQ motif and SEC7 domain-containing protein 1 (ADP-ribosylat	w
+ADP-RIBOSYLATION	human	Q6T311	ARL9	Q6T311	13	107	ADP-ribosylation factor-like protein 9	w
+ADP-RIBOSYLATION	human	Q8IVW1	ARL17A	Q8IVW1	4	30	Putative ADP-ribosylation factor-like protein 17A	w
+ADP-RIBOSYLATION	human	Q8N4G2	ARL14	Q8N4G2	30	190	ADP-ribosylation factor-like protein 14 (ADP-ribosylation fa	w
+ADP-RIBOSYLATION	human	Q8N6H7	ARFGAP2	Q8N6H7	41	157	ADP-ribosylation factor GTPase-activating protein 2 (ARF GAP	w
+ADP-RIBOSYLATION	human	Q8N6S5	ARL6IP6	Q8N6S5	10	94	ADP-ribosylation factor-like protein 6-interacting protein 6	w
+ADP-RIBOSYLATION	human	Q8N6T3	ARFGAP1	Q8N6T3	19	121	ADP-ribosylation factor GTPase-activating protein 1 (ARF GAP	w
+ADP-RIBOSYLATION	human	Q8N8L6	ARL10	Q8N8L6	46	248	ADP-ribosylation factor-like protein 10	w
+ADP-RIBOSYLATION	human	Q8NDX1	PSD4	Q8NDX1	16	66	PH and SEC7 domain-containing protein 4 (Exchange factor for	w
+ADP-RIBOSYLATION	human	Q8NHH9	ATL2	Q8NHH9	3	114	Atlastin-2 (ATL-2) (EC 3.6.5.-) (ADP-ribosylation factor-lik	w
+ADP-RIBOSYLATION	human	Q969Q4	ARL11	Q969Q4	15	124	ADP-ribosylation factor-like protein 11 (ADP-ribosylation fa	w
+ADP-RIBOSYLATION	human	Q96BM9	ARL8A	Q96BM9	83	334	ADP-ribosylation factor-like protein 8A (ADP-ribosylation fa	w
+ADP-RIBOSYLATION	human	Q96KC2	ARL5B	Q96KC2	47	308	ADP-ribosylation factor-like protein 5B (ADP-ribosylation fa	w
+ADP-RIBOSYLATION	human	Q9BQI7	PSD2	Q9BQI7	20	108	PH and SEC7 domain-containing protein 2 (Exchange factor for	w
+ADP-RIBOSYLATION	human	Q9H0F7	ARL6	Q9H0F7	45	197	ADP-ribosylation factor-like protein 6 (Bardet-Biedl syndrom	w
+ADP-RIBOSYLATION	human	Q9NP61	ARFGAP3	Q9NP61	27	125	ADP-ribosylation factor GTPase-activating protein 3 (ARF GAP	w
+ADP-RIBOSYLATION	human	Q9NVJ2	ARL8B	Q9NVJ2	82	402	ADP-ribosylation factor-like protein 8B (EC 3.6.5.2) (ADP-ri	w
+ADP-RIBOSYLATION	human	Q9NXU5	ARL15	Q9NXU5	42	263	ADP-ribosylation factor-like protein 15 (ADP-ribosylation fa	w
+ADP-RIBOSYLATION	human	Q9NYI0	PSD3	Q9NYI0	30	113	PH and SEC7 domain-containing protein 3 (Epididymis tissue p	w
+ADP-RIBOSYLATION	human	Q9NZ52	GGA3	Q9NZ52	48	158	ADP-ribosylation factor-binding protein GGA3 (Golgi-localize	w
+ADP-RIBOSYLATION	human	Q9UJY4	GGA2	Q9UJY4	38	121	ADP-ribosylation factor-binding protein GGA2 (Gamma-adaptin-	w
+ADP-RIBOSYLATION	human	Q9UJY5	GGA1	Q9UJY5	40	149	ADP-ribosylation factor-binding protein GGA1 (Gamma-adaptin-	w
+ADP-RIBOSYLATION	human	Q9Y2Y0	ARL2BP	Q9Y2Y0	35	150	ADP-ribosylation factor-like protein 2-binding protein (ARF-	w
+ADP-RIBOSYLATION	human	Q9Y689	ARL5A	Q9Y689	55	308	ADP-ribosylation factor-like protein 5A	w
+ADP-RIBOSYLATION	human	Q9Y6D5	ARFGEF2	Q9Y6D5	12	147	Brefeldin A-inhibited guanine nucleotide-exchange protein 2 	w
+ADP-RIBOSYLATION	human	Q9Y6D6	ARFGEF1	Q9Y6D6	15	183	Brefeldin A-inhibited guanine nucleotide-exchange protein 1 	w
+ADP-RIBOSYLATION	worm	G5EDC6	arl-8	G5EDC6	3	26	ADP-ribosylation factor-like protein 8B	w
+ADP-RIBOSYLATION	worm	G5EFK4	arf-5	G5EFK4	13	94	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	worm	H2L0N8	arl-13	H2L0N8	5	63	ADP-ribosylation factor-like protein 13B	w
+ADP-RIBOSYLATION	worm	O45379	arl-3	O45379	4	19	ADP-ribosylation factor-like protein 3	w
+ADP-RIBOSYLATION	worm	P34212	arl-5	P34212	4	24	ADP-ribosylation factor-like protein 5	w
+ADP-RIBOSYLATION	worm	P90904	CELE_K02B12.7	P90904	5	28	ADP-ribosylation factor GTPase-activating protein 1	w
+ADP-RIBOSYLATION	worm	Q10943	arf-1	Q10943	12	80	ADP-ribosylation factor 1-like 2	w
+ADP-RIBOSYLATION	worm	Q18510	arl-6	Q18510	7	44	ADP-ribosylation factor-like protein 6	w
+ADP-RIBOSYLATION	worm	Q19705	evl-20	Q19705	3	6	ADP-ribosylation factor-like protein 2	w
+ADP-RIBOSYLATION	worm	Q20758	arl-1	Q20758	2	15	ADP-ribosylation factor-like protein 1	w
+ADP-RIBOSYLATION	worm	Q22013	CELE_R186.3	Q22013	2	39	ADP-ribosylation factor-related protein 1	w
+ADP-RIBOSYLATION	worm	Q23165	apt-9	Q23165	2	12	ADP-ribosylation factor-binding protein GGA1	w
+ADP-RIBOSYLATION	worm	Q94231	arf-1.1	Q94231	12	68	ADP-ribosylation factor 1-like 1	w
+ADP-RIBOSYLATION	worm	Q9N3C8	CELE_Y54E10BR.2	Q9N3C8	2	16	ADP-ribosylation factor-related protein 1	w
+ADP-RIBOSYLATION	worm	Q9U2S4	arf-6	Q9U2S4	8	54	ADP-ribosylation factor 6	w
+ADP-RIBOSYLATION	yeast	P11076	ARF1	P11076	18	138	ADP-ribosylation factor 1	w
+ADP-RIBOSYLATION	yeast	P19146	ARF2	P19146	14	82	ADP-ribosylation factor 2	w
+ADP-RIBOSYLATION	yeast	P35197	GCS1	P35197	2	49	ADP-ribosylation factor GTPase-activating protein GCS1	w
+ADP-RIBOSYLATION	yeast	P38116	ARL1	P38116	8	25	ADP-ribosylation factor-like protein 1	w
+ADP-RIBOSYLATION	yeast	P38682	GLO3	P38682	8	44	ADP-ribosylation factor GTPase-activating protein GLO3	w
+ADP-RIBOSYLATION	yeast	P38817	GGA2	P38817	9	37	ADP-ribosylation factor-binding protein GGA2	w
+ADP-RIBOSYLATION	yeast	P40994	ARF3	P40994	8	50	ADP-ribosylation factor 3	w
+ADP-RIBOSYLATION	yeast	Q02804	ARL3	Q02804	2	19	ADP-ribosylation factor-like protein 3	w
+ADP-RIBOSYLATION	yeast	Q04412	AGE1	Q04412	0	4	ADP-ribosylation factor GTPase-activating protein effector p	w
+ADP-RIBOSYLATION	yeast	Q06336	GGA1	Q06336	3	10	ADP-ribosylation factor-binding protein GGA1	w
+ADP-RIBOSYLATION	zebrafish	A0A0R4ISY9	gga3b	A0A0R4ISY9	28	44	ADP-ribosylation factor-binding protein GGA3 isoform X1	w
+ADP-RIBOSYLATION	zebrafish	A0A2R8QEE6	arl10	A0A2R8QEE6	1	19	ADP-ribosylation factor-like 10	w
+ADP-RIBOSYLATION	zebrafish	A0A2R8QEJ6	gga1	A0A2R8QEJ6	11	34	ADP-ribosylation factor-binding protein GGA1	w
+ADP-RIBOSYLATION	zebrafish	A0A2R8QI61	arl3a	A0A2R8QI61	16	88	ADP-ribosylation factor-like protein 3	w
+ADP-RIBOSYLATION	zebrafish	A0A8M1NCV9	gga3a	A0A8M1NCV9	25	55	ADP-ribosylation factor-binding protein GGA3a	w
+ADP-RIBOSYLATION	zebrafish	A5PMK4	arl15a	A5PMK4	11	39	ADP-ribosylation factor-like protein 15	w
+ADP-RIBOSYLATION	zebrafish	B8JLB2	arl14	B8JLB2	7	31	ADP-ribosylation factor-like protein 14	w
+ADP-RIBOSYLATION	zebrafish	F1QKW5	arl13a	F1QKW5	2	5	ADP-ribosylation factor-like 13A	w
+ADP-RIBOSYLATION	zebrafish	F1RBH2	arl8bb	F1RBH2	3	16	ADP-ribosylation factor-like 8Bb	w
+ADP-RIBOSYLATION	zebrafish	F1RDR4	arl15b	F1RDR4	7	39	ADP-ribosylation factor-like protein 15	w
+ADP-RIBOSYLATION	zebrafish	F8W2P1	arl8a	F8W2P1	2	16	ADP-ribosylation factor-like 8A	w
+ADP-RIBOSYLATION	zebrafish	Q0P4A1	arl14ep	Q0P4A1	3	11	ADP-ribosylation factor-like 14 effector protein	w
+ADP-RIBOSYLATION	zebrafish	Q1MTE5	arl3	Q1MTE5	21	89	ADP-ribosylation factor-like protein 3	w
+ADP-RIBOSYLATION	zebrafish	Q502P0	arl6ip4	Q502P0	0	1	ADP-ribosylation factor-like protein 6-interacting protein 4	w
+ADP-RIBOSYLATION	zebrafish	Q561U6	arl4ca	Q561U6	6	20	ADP-ribosylation factor-like 4Ca	w
+ADP-RIBOSYLATION	zebrafish	Q567G5	arfip2b	Q567G5	3	10	ADP-ribosylation factor-interacting protein 2b	w
+ADP-RIBOSYLATION	zebrafish	Q5EAS5	arfrp1	Q5EAS5	6	10	ADP-ribosylation factor-related protein 1	w
+ADP-RIBOSYLATION	zebrafish	Q5M9P8	arl6	Q5M9P8	7	36	ADP-ribosylation factor-like protein 6	w
+ADP-RIBOSYLATION	zebrafish	Q5XIZ7	arfip2a	Q5XIZ7	2	10	ADP-ribosylation factor-interacting protein 2a	w
+ADP-RIBOSYLATION	zebrafish	Q6DC20	arf4a	Q6DC20	7	47	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	zebrafish	Q6DGK1	arl1	Q6DGK1	5	22	ADP-ribosylation factor-like protein 1	w
+ADP-RIBOSYLATION	zebrafish	Q6DHP0	arl5a	Q6DHP0	2	33	ADP-ribosylation factor-like 5A	w
+ADP-RIBOSYLATION	zebrafish	Q6DHP3	arf3a	Q6DHP3	8	33	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	zebrafish	Q6NZW8	arl8ba	Q6NZW8	4	16	ADP-ribosylation factor-like protein 8B-A	w
+ADP-RIBOSYLATION	zebrafish	Q6P2U5	arf6b	Q6P2U5	21	82	ADP-ribosylation factor 6	w
+ADP-RIBOSYLATION	zebrafish	Q6P5K1	arl4aa	Q6P5K1	8	25	ADP-ribosylation factor-like protein 4A	w
+ADP-RIBOSYLATION	zebrafish	Q6P5L0	arl4d	Q6P5L0	9	23	ADP-ribosylation factor-like 4D	w
+ADP-RIBOSYLATION	zebrafish	Q6P5M5	DKEY-238C7.11	Q6P5M5	9	44	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	zebrafish	Q6P5M7	arl4cb	Q6P5M7	7	20	ADP-ribosylation factor-like 4Cb	w
+ADP-RIBOSYLATION	zebrafish	Q6P6E8	arl5c	Q6P6E8	6	33	ADP-ribosylation factor-like 5C	w
+ADP-RIBOSYLATION	zebrafish	Q6PC43	arl3l2	Q6PC43	11	79	ADP-ribosylation factor-like protein 3	w
+ADP-RIBOSYLATION	zebrafish	Q6PC92	arl3l1	Q6PC92	11	79	ADP-ribosylation factor-like protein 3	w
+ADP-RIBOSYLATION	zebrafish	Q78AP9	arf3b	Q78AP9	9	34	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	zebrafish	Q7SYK6	arfip1	Q7SYK6	2	10	ADP-ribosylation factor-interacting protein 1 (arfaptin 1)	w
+ADP-RIBOSYLATION	zebrafish	Q7SYL1	arl2bp	Q7SYL1	0	2	ADP-ribosylation factor-like protein 2-binding protein	w
+ADP-RIBOSYLATION	zebrafish	Q7ZUW4	arf5	Q7ZUW4	9	45	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	zebrafish	Q7ZUZ7	arf2b	Q7ZUZ7	8	35	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	zebrafish	Q7ZVD8	arl11	Q7ZVD8	6	31	ADP-ribosylation factor-like protein 11	w
+ADP-RIBOSYLATION	zebrafish	Q7ZWB4	arl6ip1	Q7ZWB4	10	593	ADP-ribosylation factor-like 6 interacting protein	w
+ADP-RIBOSYLATION	zebrafish	Q803D1	arf1	Q803D1	12	89	ADP-ribosylation factor	w
+ADP-RIBOSYLATION	zebrafish	Q8JHI3	arl13b	Q8JHI3	4	22	ADP-ribosylation factor-like protein 13B	w
+ADP-RIBOSYLGLUTAMATE	human	Q9Y530	OARD1	Q9Y530	1	47	ADP-ribose glycohydrolase OARD1 (O-acetyl-ADP-ribose deacety	w
+ADP-RIBOSYLHYDROLASE	human	P54922	ADPRH	P54922	4	70	ADP-ribosylhydrolase ARH1 (EC 3.2.2.19) (ADP-ribose-L-argini	w
+ADP-RIBOSYLHYDROLASE	human	Q9NX46	ADPRS	Q9NX46	8	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
+ADP-RIBOSYLHYDROLASE	zebrafish	Q66HT8	adprs	Q66HT8	0	24	ADP-ribosylhydrolase ARH3	w
+ADP-RIBOSYLHYDROLASE-LIKE	human	Q8NDY3	ADPRHL1	Q8NDY3	0	50	Inactive ADP-ribosyltransferase ARH2 (ADP-ribosylhydrolase-l	w
+ADP-RIBOSYLTRANSFERASE	fly	FBgn0010247	Parp1	P35875	10	452	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.30) (NAD(+) AD	w
+ADP-RIBOSYLTRANSFERASE	human	O95271	TNKS	O95271	33	215	Poly [ADP-ribose] polymerase tankyrase-1 (EC 2.4.2.30) (ADP-	w
+ADP-RIBOSYLTRANSFERASE	human	P09874	PARP1	P09874	43	1100	Poly [ADP-ribose] polymerase 1 (PARP-1) (EC 2.4.2.30) (ADP-r	w
+ADP-RIBOSYLTRANSFERASE	human	P52961	ART1	P52961	10	75	GPI-linked NAD(P)(+)--arginine ADP-ribosyltransferase 1 (EC 	w
+ADP-RIBOSYLTRANSFERASE	human	Q13508	ART3	Q13508	6	65	Ecto-ADP-ribosyltransferase 3 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RIBOSYLTRANSFERASE	human	Q2NL67	PARP6	Q2NL67	11	254	Protein mono-ADP-ribosyltransferase PARP6 (EC 2.4.2.-) (ADP-	w
+ADP-RIBOSYLTRANSFERASE	human	Q460N3	PARP15	Q460N3	1	39	Protein mono-ADP-ribosyltransferase PARP15 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSYLTRANSFERASE	human	Q460N5	PARP14	Q460N5	16	136	Protein mono-ADP-ribosyltransferase PARP14 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSYLTRANSFERASE	human	Q53GL7	PARP10	Q53GL7	9	104	Protein mono-ADP-ribosyltransferase PARP10 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSYLTRANSFERASE	human	Q7Z2W4	ZC3HAV1	Q7Z2W4	28	660	Zinc finger CCCH-type antiviral protein 1 (ADP-ribosyltransf	w
+ADP-RIBOSYLTRANSFERASE	human	Q7Z3E1	TIPARP	Q7Z3E1	239	1521	Protein mono-ADP-ribosyltransferase TIPARP (EC 2.4.2.-) (ADP	w
+ADP-RIBOSYLTRANSFERASE	human	Q8IXQ6	PARP9	Q8IXQ6	12	119	Protein mono-ADP-ribosyltransferase PARP9 (EC 2.4.2.-) (ADP-	w
+ADP-RIBOSYLTRANSFERASE	human	Q8N3A8	PARP8	Q8N3A8	26	254	Protein mono-ADP-ribosyltransferase PARP8 (EC 2.4.2.-) (ADP-	w
+ADP-RIBOSYLTRANSFERASE	human	Q8N5Y8	PARP16	Q8N5Y8	8	75	Protein mono-ADP-ribosyltransferase PARP16 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSYLTRANSFERASE	human	Q8NDY3	ADPRHL1	Q8NDY3	0	50	Inactive ADP-ribosyltransferase ARH2 (ADP-ribosylhydrolase-l	w
+ADP-RIBOSYLTRANSFERASE	human	Q93070	ART4	Q93070	11	73	Ecto-ADP-ribosyltransferase 4 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RIBOSYLTRANSFERASE	human	Q96L15	ART5	Q96L15	6	72	Ecto-ADP-ribosyltransferase 5 (EC 2.4.2.31) (ADP-ribosyltran	w
+ADP-RIBOSYLTRANSFERASE	human	Q9H0J9	PARP12	Q9H0J9	5	111	Protein mono-ADP-ribosyltransferase PARP12 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSYLTRANSFERASE	human	Q9H2K2	TNKS2	Q9H2K2	24	181	Poly [ADP-ribose] polymerase tankyrase-2 (EC 2.4.2.30) (ADP-	w
+ADP-RIBOSYLTRANSFERASE	human	Q9NR21	PARP11	Q9NR21	8	61	Protein mono-ADP-ribosyltransferase PARP11 (EC 2.4.2.-) (ADP	w
+ADP-RIBOSYLTRANSFERASE	human	Q9UGN5	PARP2	Q9UGN5	14	276	Poly [ADP-ribose] polymerase 2 (PARP-2) (hPARP-2) (EC 2.4.2.	w
+ADP-RIBOSYLTRANSFERASE	human	Q9UKK3	PARP4	Q9UKK3	4	56	Protein mono-ADP-ribosyltransferase PARP4 (EC 2.4.2.-) (193 	w
+ADP-RIBOSYLTRANSFERASE	human	Q9Y6E7	SIRT4	Q9Y6E7	32	362	NAD-dependent protein lipoamidase sirtuin-4, mitochondrial (	w
+ADP-RIBOSYLTRANSFERASE	human	Q9Y6F1	PARP3	Q9Y6F1	0	58	Protein mono-ADP-ribosyltransferase PARP3 (EC 2.4.2.-) (ADP-	w
+ADP-RIBOSYLTRANSFERASE	zebrafish	Q5XJB9	adprhl1	Q5XJB9	0	8	Inactive ADP-ribosyltransferase arh2	w
+ADP-SUGAR	human	Q9UKK9	NUDT5	Q9UKK9	13	127	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	w
+ADP-SUGAR	zebrafish	Q6IQ66	nudt5	Q6IQ66	0	21	ADP-sugar pyrophosphatase	w
+ADP1	candida-albicans-237561	A0A1D8PT53	ADP1	A0A1D8PT53	0	2	ATP-dependent permease	
+ADP1	cladophialophora-carrionii	A0A1C1CE65	ADP1	A0A1C1CE65	0	4	Putative ATP-dependent permease	
+ADP1	yeast	P25371	ADP1	P25371	1	26	Probable ATP-dependent permease	
+ADPG	human	P29372	MPG	P29372	17	129	DNA-3-methyladenine glycosylase (EC 3.2.2.21) (3-alkyladenin	w
+ADPG-R	human	Q9H244	P2RY12	Q9H244	23	264	P2Y purinoceptor 12 (P2Y12) (ADP-glucose receptor) (ADPG-R) 	w
+ADPG1	arabidopsis-thaliana	O23147	ADPG1	O23147	0	3	Polygalacturonase ADPG1	
+ADPG2	arabidopsis-thaliana	Q8RY29	ADPG2	Q8RY29	0	3	Polygalacturonase ADPG2	
+ADPGK	human	Q9BRR6	ADPGK	Q9BRR6	13	121	ADP-dependent glucokinase (ADP-GK) (ADPGK) (EC 2.7.1.147) (R	
+ADPGK	mus-musculus	Q8VDL4	Adpgk	Q8VDL4	0	10	ADP-dependent glucokinase	
+ADPGK	rattus-norvegicus	G3V784	Adpgk	G3V784	0	5	ADP-dependent glucokinase	
+ADPGK	zebrafish	A0JML7	adpgk	A0JML7	0	8	ADP-dependent glucokinase	
+ADPGK2	zebrafish	E7F6M4	adpgk2	E7F6M4	0	8	ADP-dependent glucokinase	
+ADPGK_HUMAN	human	Q9BRR6	ADPGK	Q9BRR6	13	121		
+ADPLA	human	P53816	PLAAT3	P53816	20	286	Phospholipase A and acyltransferase 3 (EC 2.3.1.-) (EC 3.1.1	w
+ADPN	human	Q9NST1	PNPLA3	Q9NST1	1	47		
+ADPPT_HUMAN	human	Q9NRN7	AASDHPPT	Q9NRN7	20	132		
+ADPR-1	worm	Q4W5Q8	adpr-1	Q4W5Q8	1	15	WD and tetratricopeptide repeats protein 1	
+ADPR-PPASE	human	Q9BW91	NUDT9	Q9BW91	5	56	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	w
+ADPRH	dictyostelium-discoideum	Q54H71	adprh	Q54H71	0	6	ADP-ribosylhydrolase ARH1	
+ADPRH	human	P54922	ADPRH	P54922	4	70	ADP-ribosylhydrolase ARH1 (EC 3.2.2.19) (ADP-ribose-L-argini	
+ADPRH	mus-musculus	P54923	Adprh	P54923	1	12	ADP-ribosylhydrolase ARH1	
+ADPRH	rattus-norvegicus	Q02589	Adprh	Q02589	0	6	ADP-ribosylhydrolase ARH1	
+ADPRH	zebrafish	Q6DBR3	adprh	Q6DBR3	0	8	ADP-ribosylarginine hydrolase	
+ADPRHL1	human	Q8NDY3	ADPRHL1	Q8NDY3	0	50	Inactive ADP-ribosyltransferase ARH2 (ADP-ribosylhydrolase-l	
+ADPRHL1	mus-musculus	Q8BGK2	Adprhl1	Q8BGK2	0	10	Inactive ADP-ribosyltransferase ARH2	
+ADPRHL1	rattus-norvegicus	Q5XIB3	Adprhl1	Q5XIB3	0	6	Inactive ADP-ribosyltransferase ARH2	
+ADPRHL1	zebrafish	Q5XJB9	adprhl1	Q5XJB9	0	8	Inactive ADP-ribosyltransferase arh2	
+ADPRHL2	human	Q9NX46	ADPRS	Q9NX46	8	65		
+ADPRH_HUMAN	human	P54922	ADPRH	P54922	4	70		
+ADPRIBASE-MN	human	Q3LIE5	ADPRM	Q3LIE5	14	123	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase (EC	w
+ADPRM	human	Q3LIE5	ADPRM	Q3LIE5	14	123	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase (EC	
+ADPRM	mus-musculus	Q99KS6	Adprm	Q99KS6	0	4	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase	
+ADPRM	rattus-norvegicus	Q5M886	Adprm	Q5M886	0	4	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase	
+ADPRM	zebrafish	Q7T291	adprm	Q7T291	1	5	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase	
+ADPRM_HUMAN	human	Q3LIE5	ADPRM	Q3LIE5	14	123		
+ADPRS	human	Q9NX46	ADPRS	Q9NX46	8	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	
+ADPRS	mus-musculus	Q8CG72	Adprs	Q8CG72	0	1	ADP-ribosylhydrolase ARH3	
+ADPRS	rattus-norvegicus	B0K017	Adprs	B0K017	0	1	ADP-ribosylhydrolase ARH3	
+ADPRS	zebrafish	Q66HT8	adprs	Q66HT8	0	24	ADP-ribosylhydrolase ARH3	
+ADPRS_HUMAN	human	Q9NX46	ADPRS	Q9NX46	8	65		
+ADPRT	fly	FBgn0010247	Parp1	P35875	10	452	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.30) (NAD(+) AD	w
+ADPRT	human	P09874	PARP1	P09874	43	1100		
+ADPRT1A	dictyostelium-discoideum	Q54XI2	adprt1A	Q54XI2	0	36	Poly	
+ADPRT1B	dictyostelium-discoideum	Q54X55	adprt1B	Q54X55	1	36	Poly	
+ADPRT2	dictyostelium-discoideum	Q8I7C6	adprt2	Q8I7C6	1	36	Poly	
+ADPRT2	human	Q9UGN5	PARP2	Q9UGN5	14	276		
+ADPRT3	human	Q9Y6F1	PARP3	Q9Y6F1	0	58		
+ADPRT4	dictyostelium-discoideum	Q55GU8	adprt4	Q55GU8	0	36	Poly	
+ADPRTL1	human	Q9UKK3	PARP4	Q9UKK3	4	56		
+ADPRTL2	human	Q9UGN5	PARP2	Q9UGN5	14	276		
+ADPRTL3	human	Q9Y6F1	PARP3	Q9Y6F1	0	58		
+ADPS	fly	FBgn0033983	Agps	Q9V778	0	13		
+ADPSP	human	Q9UBP0	SPAST	Q9UBP0	25	197		
+ADP_468	fly	FBgn0000057	adp	Q7K7W5	2	26		

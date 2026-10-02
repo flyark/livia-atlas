@@ -1,42 +1,184 @@
-EPHA	mycobacterium-tuberculosis	I6YGS0	ephA	I6YGS0	0	11	Epoxide hydrolase A
-EPHA1	mus-musculus	Q60750	Epha1	Q60750	11	42	Ephrin type-A receptor 1
-EPHA1	rattus-norvegicus	D3ZDH4	Epha1	D3ZDH4	12	50	Ephrin type-A receptor 1
-EPHA10	mus-musculus	Q8BYG9	Epha10	Q8BYG9	8	19	Ephrin type-A receptor 10
-EPHA10	rattus-norvegicus	F1LX55	Epha10	F1LX55	10	21	Ephrin type-A receptor 10
-EPHA2	mus-musculus	Q03145	Epha2	Q03145	15	73	Ephrin type-A receptor 2
-EPHA2	rattus-norvegicus	D3ZBN3	Epha2	D3ZBN3	15	71	Ephrin type-A receptor 2
-EPHA3	mus-musculus	P29319	Epha3	P29319	8	38	Ephrin type-A receptor 3
-EPHA3	rattus-norvegicus	O08680	Epha3	O08680	9	41	Ephrin type-A receptor 3
-EPHA4	mus-musculus	Q03137	Epha4	Q03137	9	46	Ephrin type-A receptor 4
-EPHA4	rattus-norvegicus	D3ZZK3	Epha4	D3ZZK3	9	41	receptor protein-tyrosine kinase
-EPHA5	mus-musculus	Q60629	Epha5	Q60629	10	23	Ephrin type-A receptor 5
-EPHA5	rattus-norvegicus	P54757	Epha5	P54757	10	29	Ephrin type-A receptor 5
-EPHA6	mus-musculus	Q62413	Epha6	Q62413	8	22	Ephrin type-A receptor 6
-EPHA6	rattus-norvegicus	P54758	Epha6	P54758	10	21	Ephrin type-A receptor 6
-EPHA7	mus-musculus	Q61772	Epha7	Q61772	9	31	Ephrin type-A receptor 7
-EPHA7	rattus-norvegicus	P54759	Epha7	P54759	10	30	Ephrin type-A receptor 7
-EPHA8	mus-musculus	O09127	Epha8	O09127	9	32	Ephrin type-A receptor 8
-EPHA8	rattus-norvegicus	P29321	Epha8	P29321	4	17	Ephrin type-A receptor 8
-EPHB	mycobacterium-tuberculosis	I6YC03	ephB	I6YC03	0	11	Epoxide hydrolase B
-EPHB1	mus-musculus	Q8CBF3	Ephb1	Q8CBF3	9	45	Ephrin type-B receptor 1
-EPHB1	rattus-norvegicus	P09759	Ephb1	P09759	9	46	Ephrin type-B receptor 1
-EPHB2	rattus-norvegicus	A0A0G2JY48	Ephb2	A0A0G2JY48	14	59	receptor protein-tyrosine kinase
-EPHB3	mus-musculus	P54754	Ephb3	P54754	10	46	Ephrin type-B receptor 3
-EPHB3	rattus-norvegicus	D3ZH39	Ephb3	D3ZH39	13	40	Ephrin type-B receptor 3
-EPHB4	mus-musculus	P54761	Ephb4	P54761	9	49	Ephrin type-B receptor 4
-EPHB4	rattus-norvegicus	M0RDA4	Ephb4	M0RDA4	10	44	Ephrin type-B receptor 4
-EPHB6	mus-musculus	O08644	Ephb6	O08644	9	30	Ephrin type-B receptor 6
-EPHB6	rattus-norvegicus	P0C0K7	Ephb6	P0C0K7	9	32	Ephrin type-B receptor 6
-EPHC	mycobacterium-tuberculosis	O06576	ephC	O06576	0	11	Probable epoxide hydrolase EphC (Epoxide hydratase)
-EPHD	mycobacterium-leprae	Q7AQE6	ephD	Q7AQE6	2	24	Oxidoreductase
-EPHD	mycobacterium-tuberculosis	P9WGS3	ephD	P9WGS3	0	22	Probable oxidoreductase EphD
-EPHE	mycobacterium-tuberculosis	I6YCQ4	ephE	I6YCQ4	1	11	Possible epoxide hydrolase EphE (Epoxide hydratase) (Arene-oxide hydratase)
-EPHF	mycobacterium-tuberculosis	P96811	ephF	P96811	1	11	Possible epoxide hydrolase EphF (Epoxide hydratase) (Arene-oxide hydratase)
-EPHH	mycobacterium-tuberculosis	O53388	ephH	O53388	0	11	Epoxide hydrolase EphH
-EPHX1	mus-musculus	Q9D379	Ephx1	Q9D379	0	15	Epoxide hydrolase 1
-EPHX1	rattus-norvegicus	P07687	Ephx1	P07687	1	6	Epoxide hydrolase 1
-EPHX2	mus-musculus	P34914	Ephx2	P34914	1	16	Bifunctional epoxide hydrolase 2
-EPHX2	rattus-norvegicus	P80299	Ephx2	P80299	1	32	Bifunctional epoxide hydrolase 2
-EPHX3	mus-musculus	Q3V1F8	Ephx3	Q3V1F8	0	1	Epoxide hydrolase 3
-EPHX3	rattus-norvegicus	D4A4W4	Ephx3	D4A4W4	0	4	Epoxide hydrolase 3
-EPHX4	rattus-norvegicus	D3ZKP8	Ephx4	D3ZKP8	0	1	Epoxide hydrolase 4
+EPH	fly	FBgn0025936	Eph	Q9V4E5	538	3564	receptor protein-tyrosine kinase (EC 2.7.10.1)	
+EPH	human	P21709	EPHA1	P21709	199	1626		
+EPH-	human	P29322	EPHA8	P29322	58	293	Ephrin type-A receptor 8 (EC 2.7.10.1) (EPH- and ELK-related	w
+EPH-6	human	O15197	EPHB6	O15197	55	275	Ephrin type-B receptor 6 (HEP) (Tyrosine-protein kinase-defe	w
+EPH-INTERACTING	human	Q8N5V2	NGEF	Q8N5V2	25	166	Ephexin-1 (Eph-interacting exchange protein) (Neuronal guani	w
+EPH-LIKE	human	P29320	EPHA3	P29320	202	1445	Ephrin type-A receptor 3 (EC 2.7.10.1) (EPH-like kinase 4) (	w
+EPH-LIKE	human	P29322	EPHA8	P29322	58	293	Ephrin type-A receptor 8 (EC 2.7.10.1) (EPH- and ELK-related	w
+EPH-LIKE	human	P29323	EPHB2	P29323	69	444	Ephrin type-B receptor 2 (EC 2.7.10.1) (Developmentally-regu	w
+EPH-LIKE	human	P54753	EPHB3	P54753	171	1430	Ephrin type-B receptor 3 (EC 2.7.10.1) (EPH-like tyrosine ki	w
+EPH-LIKE	human	P54756	EPHA5	P54756	85	345	Ephrin type-A receptor 5 (EC 2.7.10.1) (Brain-specific kinas	w
+EPH-LIKE	human	P54762	EPHB1	P54762	173	1436	Ephrin type-B receptor 1 (EC 2.7.10.1) (ELK) (EPH tyrosine k	w
+EPH-LIKE	human	P54764	EPHA4	P54764	208	1603	Ephrin type-A receptor 4 (EC 2.7.10.1) (EPH-like kinase 8) (	w
+EPH-LIKE	human	Q15375	EPHA7	Q15375	191	1600	Ephrin type-A receptor 7 (EC 2.7.10.1) (EPH homology kinase 	w
+EPH-LIKE	human	Q9UF33	EPHA6	Q9UF33	47	215	Ephrin type-A receptor 6 (EC 2.7.10.1) (EPH homology kinase 	w
+EPH-LIKE	zebrafish	O13146	epha3	O13146	16	37	Ephrin type-A receptor 3 (EC 2.7.10.1) (EPH-like kinase 1) (	w
+EPH-PA	fly	FBgn0025936	Eph	Q9V4E5	538	3564		
+EPH-PA_73_976	fly	FBgn0025936	Eph	Q9V4E5	538	3564		
+EPH-RELATED	human	O43921	EFNA2	O43921	51	244	Ephrin-A2 (EPH-related receptor tyrosine kinase ligand 6) (L	w
+EPH-RELATED	human	P20827	EFNA1	P20827	28	200	Ephrin-A1 (EPH-related receptor tyrosine kinase ligand 1) (L	w
+EPH-RELATED	human	P29323	EPHB2	P29323	69	444	Ephrin type-B receptor 2 (EC 2.7.10.1) (Developmentally-regu	w
+EPH-RELATED	human	P52797	EFNA3	P52797	19	116	Ephrin-A3 (EFL-2) (EHK1 ligand) (EHK1-L) (EPH-related recept	w
+EPH-RELATED	human	P52798	EFNA4	P52798	23	163	Ephrin-A4 (EPH-related receptor tyrosine kinase ligand 4) (L	w
+EPH-RELATED	human	P52799	EFNB2	P52799	77	410	Ephrin-B2 (EPH-related receptor tyrosine kinase ligand 5) (L	w
+EPH-RELATED	human	P52803	EFNA5	P52803	40	300	Ephrin-A5 (AL-1) (EPH-related receptor tyrosine kinase ligan	w
+EPH-RELATED	human	P54762	EPHB1	P54762	173	1436	Ephrin type-B receptor 1 (EC 2.7.10.1) (ELK) (EPH tyrosine k	w
+EPH-RELATED	human	P98172	EFNB1	P98172	64	399	Ephrin-B1 (EFL-3) (ELK ligand) (ELK-L) (EPH-related receptor	w
+EPH-RELATED	human	Q15768	EFNB3	Q15768	37	177	Ephrin-B3 (EPH-related receptor transmembrane ligand ELK-L3)	w
+EPHA	mycobacterium-tuberculosis	I6YGS0	ephA	I6YGS0	0	11	Epoxide hydrolase A	
+EPHA1	human	P21709	EPHA1	P21709	199	1626	Ephrin type-A receptor 1 (hEpha1) (EC 2.7.10.1) (EPH tyrosin	
+EPHA1	mus-musculus	Q60750	Epha1	Q60750	11	42	Ephrin type-A receptor 1	
+EPHA1	rattus-norvegicus	D3ZDH4	Epha1	D3ZDH4	12	50	Ephrin type-A receptor 1	
+EPHA10	human	Q5JZY3	EPHA10	Q5JZY3	34	159	Ephrin type-A receptor 10 (Inactive tyrosine-protein kinase 	
+EPHA10	mus-musculus	Q8BYG9	Epha10	Q8BYG9	8	19	Ephrin type-A receptor 10	
+EPHA10	rattus-norvegicus	F1LX55	Epha10	F1LX55	10	21	Ephrin type-A receptor 10	
+EPHA1_HUMAN	human	P21709	EPHA1	P21709	199	1626		
+EPHA2	human	P29317	EPHA2	P29317	195	1718	Ephrin type-A receptor 2 (EC 2.7.10.1) (Epithelial cell kina	
+EPHA2	mus-musculus	Q03145	Epha2	Q03145	15	73	Ephrin type-A receptor 2	
+EPHA2	rattus-norvegicus	D3ZBN3	Epha2	D3ZBN3	15	71	Ephrin type-A receptor 2	
+EPHA2B	zebrafish	E7F533	epha2b	E7F533	13	39	receptor protein-tyrosine kinase	
+EPHA2_HUMAN	human	P29317	EPHA2	P29317	195	1718		
+EPHA3	human	P29320	EPHA3	P29320	202	1445	Ephrin type-A receptor 3 (EC 2.7.10.1) (EPH-like kinase 4) (	
+EPHA3	mus-musculus	P29319	Epha3	P29319	8	38	Ephrin type-A receptor 3	
+EPHA3	rattus-norvegicus	O08680	Epha3	O08680	9	41	Ephrin type-A receptor 3	
+EPHA3	zebrafish	O13146	epha3	O13146	16	37	Ephrin type-A receptor 3 (EC 2.7.10.1) (EPH-like kinase 1) (	
+EPHA3_DANRE	zebrafish	O13146	epha3	O13146	16	37		
+EPHA3_HUMAN	human	P29320	EPHA3	P29320	202	1445		
+EPHA4	human	P54764	EPHA4	P54764	208	1603	Ephrin type-A receptor 4 (EC 2.7.10.1) (EPH-like kinase 8) (	
+EPHA4	mus-musculus	Q03137	Epha4	Q03137	9	46	Ephrin type-A receptor 4	
+EPHA4	rattus-norvegicus	D3ZZK3	Epha4	D3ZZK3	9	41	receptor protein-tyrosine kinase	
+EPHA4A	zebrafish	O13148	epha4a	O13148	1	17	Ephrin type-A receptor 4a	
+EPHA4L	zebrafish	F1QJD4	epha4l	F1QJD4	14	48	receptor protein-tyrosine kinase (EC 2.7.10.1)	
+EPHA4_HUMAN	human	P54764	EPHA4	P54764	208	1603		
+EPHA5	human	P54756	EPHA5	P54756	85	345	Ephrin type-A receptor 5 (EC 2.7.10.1) (Brain-specific kinas	
+EPHA5	mus-musculus	Q60629	Epha5	Q60629	10	23	Ephrin type-A receptor 5	
+EPHA5	rattus-norvegicus	P54757	Epha5	P54757	10	29	Ephrin type-A receptor 5	
+EPHA5	zebrafish	E7F2W4	epha5	E7F2W4	11	22	receptor protein-tyrosine kinase	
+EPHA5_HUMAN	human	P54756	EPHA5	P54756	85	345		
+EPHA6	human	Q9UF33	EPHA6	Q9UF33	47	215	Ephrin type-A receptor 6 (EC 2.7.10.1) (EPH homology kinase 	
+EPHA6	mus-musculus	Q62413	Epha6	Q62413	8	22	Ephrin type-A receptor 6	
+EPHA6	rattus-norvegicus	P54758	Epha6	P54758	10	21	Ephrin type-A receptor 6	
+EPHA6	zebrafish	F6P3V1	epha6	F6P3V1	11	22	Ephrin type-A receptor 6	
+EPHA6_HUMAN	human	Q9UF33	EPHA6	Q9UF33	47	215		
+EPHA7	human	Q15375	EPHA7	Q15375	191	1600	Ephrin type-A receptor 7 (EC 2.7.10.1) (EPH homology kinase 	
+EPHA7	mus-musculus	Q61772	Epha7	Q61772	9	31	Ephrin type-A receptor 7	
+EPHA7	rattus-norvegicus	P54759	Epha7	P54759	10	30	Ephrin type-A receptor 7	
+EPHA7	zebrafish	Q5VSJ4	epha7	Q5VSJ4	17	49	Ephrin type-A receptor 7 (EC 2.7.10.1)	
+EPHA7_HUMAN	human	Q15375	EPHA7	Q15375	191	1600		
+EPHA8	human	P29322	EPHA8	P29322	58	293	Ephrin type-A receptor 8 (EC 2.7.10.1) (EPH- and ELK-related	
+EPHA8	mus-musculus	O09127	Epha8	O09127	9	32	Ephrin type-A receptor 8	
+EPHA8	rattus-norvegicus	P29321	Epha8	P29321	4	17	Ephrin type-A receptor 8	
+EPHA8_HUMAN	human	P29322	EPHA8	P29322	58	293		
+EPHAA_HUMAN	human	Q5JZY3	EPHA10	Q5JZY3	34	159		
+EPHB	mycobacterium-tuberculosis	I6YC03	ephB	I6YC03	0	11	Epoxide hydrolase B	
+EPHB1	human	P54762	EPHB1	P54762	173	1436	Ephrin type-B receptor 1 (EC 2.7.10.1) (ELK) (EPH tyrosine k	
+EPHB1	mus-musculus	Q8CBF3	Ephb1	Q8CBF3	9	45	Ephrin type-B receptor 1	
+EPHB1	rattus-norvegicus	P09759	Ephb1	P09759	9	46	Ephrin type-B receptor 1	
+EPHB1	zebrafish	A0A8M6Z303	ephb1	A0A8M6Z303	2	25	receptor protein-tyrosine kinase (EC 2.7.10.1)	
+EPHB1_HUMAN	human	P54762	EPHB1	P54762	173	1436		
+EPHB2	human	P29323	EPHB2	P29323	69	444	Ephrin type-B receptor 2 (EC 2.7.10.1) (Developmentally-regu	
+EPHB2	rattus-norvegicus	A0A0G2JY48	Ephb2	A0A0G2JY48	14	59	receptor protein-tyrosine kinase	
+EPHB2A	zebrafish	A0A8M9PL45	ephb2a	A0A8M9PL45	11	39	receptor protein-tyrosine kinase	
+EPHB2B	zebrafish	A2CEJ3	ephb2b	A2CEJ3	12	62	receptor protein-tyrosine kinase (EC 2.7.10.1)	
+EPHB2_HUMAN	human	P29323	EPHB2	P29323	69	444		
+EPHB3	human	P54753	EPHB3	P54753	171	1430	Ephrin type-B receptor 3 (EC 2.7.10.1) (EPH-like tyrosine ki	
+EPHB3	mus-musculus	P54754	Ephb3	P54754	10	46	Ephrin type-B receptor 3	
+EPHB3	rattus-norvegicus	D3ZH39	Ephb3	D3ZH39	13	40	Ephrin type-B receptor 3	
+EPHB3	zebrafish	O13147	ephb3	O13147	2	22	Ephrin type-B receptor 3	
+EPHB3_HUMAN	human	P54753	EPHB3	P54753	171	1430		
+EPHB4	human	P54760	EPHB4	P54760	188	1506	Ephrin type-B receptor 4 (EC 2.7.10.1) (Hepatoma transmembra	
+EPHB4	mus-musculus	P54761	Ephb4	P54761	9	49	Ephrin type-B receptor 4	
+EPHB4	rattus-norvegicus	M0RDA4	Ephb4	M0RDA4	10	44	Ephrin type-B receptor 4	
+EPHB4A	zebrafish	O73875	ephb4a	O73875	10	21	Ephrin type-B receptor 4a	
+EPHB4B	zebrafish	O73878	ephb4b	O73878	9	21	Ephrin type-B receptor 4b	
+EPHB4_HUMAN	human	P54760	EPHB4	P54760	188	1506		
+EPHB6	human	O15197	EPHB6	O15197	55	275	Ephrin type-B receptor 6 (HEP) (Tyrosine-protein kinase-defe	
+EPHB6	mus-musculus	O08644	Ephb6	O08644	9	30	Ephrin type-B receptor 6	
+EPHB6	rattus-norvegicus	P0C0K7	Ephb6	P0C0K7	9	32	Ephrin type-B receptor 6	
+EPHB6	zebrafish	A0A8M2BKS8	ephb6	A0A8M2BKS8	10	20	receptor protein-tyrosine kinase	
+EPHB6_HUMAN	human	O15197	EPHB6	O15197	55	275		
+EPHC	mycobacterium-tuberculosis	O06576	ephC	O06576	0	11	Probable epoxide hydrolase EphC (Epoxide hydratase)	
+EPHD	mycobacterium-leprae	Q7AQE6	ephD	Q7AQE6	2	24	Oxidoreductase	
+EPHD	mycobacterium-tuberculosis	P9WGS3	ephD	P9WGS3	0	22	Probable oxidoreductase EphD	
+EPHD-2	human	Q8N3Y7	SDR16C5	Q8N3Y7	11	72	Epidermal retinol dehydrogenase 2 (EPHD-2) (RDH-E2) (EC 1.1.	w
+EPHE	mycobacterium-tuberculosis	I6YCQ4	ephE	I6YCQ4	1	11	Possible epoxide hydrolase EphE (Epoxide hydratase) (Arene-o	
+EPHEXIN	fly	FBgn0261547	Exn	Q9VVC6	0	1	Ephexin, isoform D (Ephexin, isoform E) (FI17855p1)	w
+EPHEXIN-1	human	Q8N5V2	NGEF	Q8N5V2	25	166	Ephexin-1 (Eph-interacting exchange protein) (Neuronal guani	w
+EPHEXIN-1	zebrafish	E7FDB4	ngef	E7FDB4	0	3	Ephexin-1 isoform X1	w
+EPHEXIN-2	human	Q8IW93	ARHGEF19	Q8IW93	23	118	Rho guanine nucleotide exchange factor 19 (Ephexin-2)	w
+EPHEXIN-3	human	Q12774	ARHGEF5	Q12774	26	94	Rho guanine nucleotide exchange factor 5 (Ephexin-3) (Guanin	w
+EPHEXIN-4	human	Q5VV41	ARHGEF16	Q5VV41	21	209	Rho guanine nucleotide exchange factor 16 (Ephexin-4)	w
+EPHEXIN-5	human	O94989	ARHGEF15	O94989	12	95	Rho guanine nucleotide exchange factor 15 (Ephexin-5) (E5) (	w
+EPHEXIN4	human	Q5VV41	ARHGEF16	Q5VV41	21	209		
+EPHF	mycobacterium-tuberculosis	P96811	ephF	P96811	1	11	Possible epoxide hydrolase EphF (Epoxide hydratase) (Arene-o	
+EPHH	mycobacterium-tuberculosis	O53388	ephH	O53388	0	11	Epoxide hydrolase EphH	
+EPHRIN	fly	FBgn0040324	Ephrin	Q9V4E1	10	89	Ephrin (Ephrin, isoform B) (Ephrin, isoform C) (LD11109p)	w
+EPHRIN	fly	FBgn0040324	Ephrin	Q9V4E1	10	89	Ephrin (Ephrin, isoform B) (Ephrin, isoform C) (LD11109p)	w
+EPHRIN	human	O15197	EPHB6	O15197	55	275	Ephrin type-B receptor 6 (HEP) (Tyrosine-protein kinase-defe	w
+EPHRIN	human	P21709	EPHA1	P21709	199	1626	Ephrin type-A receptor 1 (hEpha1) (EC 2.7.10.1) (EPH tyrosin	w
+EPHRIN	human	P29317	EPHA2	P29317	195	1718	Ephrin type-A receptor 2 (EC 2.7.10.1) (Epithelial cell kina	w
+EPHRIN	human	P29320	EPHA3	P29320	202	1445	Ephrin type-A receptor 3 (EC 2.7.10.1) (EPH-like kinase 4) (	w
+EPHRIN	human	P29322	EPHA8	P29322	58	293	Ephrin type-A receptor 8 (EC 2.7.10.1) (EPH- and ELK-related	w
+EPHRIN	human	P29323	EPHB2	P29323	69	444	Ephrin type-B receptor 2 (EC 2.7.10.1) (Developmentally-regu	w
+EPHRIN	human	P54753	EPHB3	P54753	171	1430	Ephrin type-B receptor 3 (EC 2.7.10.1) (EPH-like tyrosine ki	w
+EPHRIN	human	P54756	EPHA5	P54756	85	345	Ephrin type-A receptor 5 (EC 2.7.10.1) (Brain-specific kinas	w
+EPHRIN	human	P54760	EPHB4	P54760	188	1506	Ephrin type-B receptor 4 (EC 2.7.10.1) (Hepatoma transmembra	w
+EPHRIN	human	P54762	EPHB1	P54762	173	1436	Ephrin type-B receptor 1 (EC 2.7.10.1) (ELK) (EPH tyrosine k	w
+EPHRIN	human	P54764	EPHA4	P54764	208	1603	Ephrin type-A receptor 4 (EC 2.7.10.1) (EPH-like kinase 8) (	w
+EPHRIN	human	Q15375	EPHA7	Q15375	191	1600	Ephrin type-A receptor 7 (EC 2.7.10.1) (EPH homology kinase 	w
+EPHRIN	human	Q5JZY3	EPHA10	Q5JZY3	34	159	Ephrin type-A receptor 10 (Inactive tyrosine-protein kinase 	w
+EPHRIN	human	Q9UF33	EPHA6	Q9UF33	47	215	Ephrin type-A receptor 6 (EC 2.7.10.1) (EPH homology kinase 	w
+EPHRIN	worm	G5EEE7	vab-2	G5EEE7	3	18	Ephrin RBD domain-containing protein	w
+EPHRIN	worm	O61460	vab-1	O61460	11	45	Ephrin receptor 1 (EC 2.7.10.1) (Tyrosine-protein kinase Eph	w
+EPHRIN	worm	Q19475	efn-3	Q19475	1	17	Ephrin RBD domain-containing protein	w
+EPHRIN	worm	Q9U3M2	efn-2	Q9U3M2	2	17	Ephrin RBD domain-containing protein	w
+EPHRIN	zebrafish	F6P3V1	epha6	F6P3V1	11	22	Ephrin type-A receptor 6	w
+EPHRIN	zebrafish	O13146	epha3	O13146	16	37	Ephrin type-A receptor 3 (EC 2.7.10.1) (EPH-like kinase 1) (	w
+EPHRIN	zebrafish	O13147	ephb3	O13147	2	22	Ephrin type-B receptor 3	w
+EPHRIN	zebrafish	O13148	epha4a	O13148	1	17	Ephrin type-A receptor 4a	w
+EPHRIN	zebrafish	O73875	ephb4a	O73875	10	21	Ephrin type-B receptor 4a	w
+EPHRIN	zebrafish	O73878	ephb4b	O73878	9	21	Ephrin type-B receptor 4b	w
+EPHRIN	zebrafish	Q5VSJ4	epha7	Q5VSJ4	17	49	Ephrin type-A receptor 7 (EC 2.7.10.1)	w
+EPHRIN-4	worm	O44516	efn-4	O44516	1	19	Ephrin-4	w
+EPHRIN-A1	human	P20827	EFNA1	P20827	28	200	Ephrin-A1 (EPH-related receptor tyrosine kinase ligand 1) (L	w
+EPHRIN-A1	zebrafish	O93431	efna1b	O93431	10	21	Ephrin-A1	w
+EPHRIN-A1	zebrafish	Q6PGZ9	efna1a	Q6PGZ9	2	7	Ephrin-A1	w
+EPHRIN-A2	human	O43921	EFNA2	O43921	51	244	Ephrin-A2 (EPH-related receptor tyrosine kinase ligand 6) (L	w
+EPHRIN-A2	zebrafish	P79727	efna2	P79727	6	11	Ephrin-A2	w
+EPHRIN-A3	human	P52797	EFNA3	P52797	19	116	Ephrin-A3 (EFL-2) (EHK1 ligand) (EHK1-L) (EPH-related recept	w
+EPHRIN-A3	zebrafish	A0A8M1Q1X6	efna3a	A0A8M1Q1X6	2	5	Ephrin-A3	w
+EPHRIN-A3	zebrafish	Q90YC5	efna3b	Q90YC5	11	21	Ephrin-A3	w
+EPHRIN-A4	human	P52798	EFNA4	P52798	23	163	Ephrin-A4 (EPH-related receptor tyrosine kinase ligand 4) (L	w
+EPHRIN-A5	human	P52803	EFNA5	P52803	40	300	Ephrin-A5 (AL-1) (EPH-related receptor tyrosine kinase ligan	w
+EPHRIN-A5B	zebrafish	P79728	efna5b	P79728	14	39	Ephrin-A5b	w
+EPHRIN-B1	human	P98172	EFNB1	P98172	64	399	Ephrin-B1 (EFL-3) (ELK ligand) (ELK-L) (EPH-related receptor	w
+EPHRIN-B1	zebrafish	Q90Z33	efnb1	Q90Z33	15	44	Ephrin-B1	w
+EPHRIN-B2	human	P52799	EFNB2	P52799	77	410	Ephrin-B2 (EPH-related receptor tyrosine kinase ligand 5) (L	w
+EPHRIN-B2A	zebrafish	O73874	efnb2a	O73874	14	23	Ephrin-B2a	w
+EPHRIN-B2B	zebrafish	Q90Z32	efnb2b	Q90Z32	15	42	Ephrin-B2b	w
+EPHRIN-B3	human	Q15768	EFNB3	Q15768	37	177	Ephrin-B3 (EPH-related receptor transmembrane ligand ELK-L3)	w
+EPHRIN-B3	zebrafish	A0A2R8RI02	efnb3a	A0A2R8RI02	12	23	Ephrin-B3	w
+EPHRIN-B3	zebrafish	Q90Z31	efnb3b	Q90Z31	16	42	Ephrin-B3	w
+EPHRIN-PA	fly	FBgn0040324	Ephrin	Q9V4E1	10	89		
+EPHRIN-PA_210_559	fly	FBgn0040324	Ephrin	Q9V4E1	10	89		
+EPHT	human	P21709	EPHA1	P21709	199	1626		
+EPHT1	human	P21709	EPHA1	P21709	199	1626		
+EPHT2	human	P54762	EPHB1	P54762	173	1436		
+EPHT3	human	P29323	EPHB2	P29323	69	444		
+EPHX	human	P07099	EPHX1	P07099	5	156		
+EPHX-1	worm	Q965J0	ephx-1	Q965J0	1	7	SH2 domain-containing protein	
+EPHX1	human	P07099	EPHX1	P07099	5	156	Epoxide hydrolase 1 (EC 3.3.2.9) (Epoxide hydratase) (Micros	
+EPHX1	mus-musculus	Q9D379	Ephx1	Q9D379	0	15	Epoxide hydrolase 1	
+EPHX1	rattus-norvegicus	P07687	Ephx1	P07687	1	6	Epoxide hydrolase 1	
+EPHX2	human	P34913	EPHX2	P34913	5	150	Bifunctional epoxide hydrolase 2 [Includes: Cytosolic epoxid	
+EPHX2	mus-musculus	P34914	Ephx2	P34914	1	16	Bifunctional epoxide hydrolase 2	
+EPHX2	rattus-norvegicus	P80299	Ephx2	P80299	1	32	Bifunctional epoxide hydrolase 2	
+EPHX3	human	Q9H6B9	EPHX3	Q9H6B9	0	39	Epoxide hydrolase 3 (EH3) (EC 3.3.2.10) (Abhydrolase domain-	
+EPHX3	mus-musculus	Q3V1F8	Ephx3	Q3V1F8	0	1	Epoxide hydrolase 3	
+EPHX3	rattus-norvegicus	D4A4W4	Ephx3	D4A4W4	0	4	Epoxide hydrolase 3	
+EPHX3_HUMAN	human	Q9H6B9	EPHX3	Q9H6B9	0	39		
+EPHX4	human	Q8IUS5	EPHX4	Q8IUS5	3	89	Epoxide hydrolase 4 (EC 3.3.-.-) (Abhydrolase domain-contain	
+EPHX4	rattus-norvegicus	D3ZKP8	Ephx4	D3ZKP8	0	1	Epoxide hydrolase 4	
+EPHX4	zebrafish	A0A0R4ILH2	ephx4	A0A0R4ILH2	0	9	Epoxide hydrolase 4	
+EPHX4_HUMAN	human	Q8IUS5	EPHX4	Q8IUS5	3	89		
+EPHXRP	human	Q8IUS5	EPHX4	Q8IUS5	3	89		

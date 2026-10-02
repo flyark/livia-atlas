@@ -1,24 +1,380 @@
-UNC	arabidopsis-thaliana	Q9SYB9	UNC	Q9SYB9	1	2	Serine/threonine-protein kinase UCN
-UNC119	mus-musculus	Q9Z2R6	Unc119	Q9Z2R6	3	29	Protein unc-119 homolog A
-UNC119	rattus-norvegicus	Q62885	Unc119	Q62885	3	23	Protein unc-119 homolog A
-UNC119B	mus-musculus	Q8C4B4	Unc119b	Q8C4B4	2	10	Protein unc-119 homolog B
-UNC13D	mus-musculus	B2RUP2	Unc13d	B2RUP2	4	9	Protein unc-13 homolog D
-UNC13D	rattus-norvegicus	Q9R189	Unc13d	Q9R189	3	5	Protein unc-13 homolog D
-UNC45A	mus-musculus	Q99KD5	Unc45a	Q99KD5	3	10	Protein unc-45 homolog A
-UNC45A	rattus-norvegicus	Q32PZ3	Unc45a	Q32PZ3	4	11	Protein unc-45 homolog A
-UNC45B	mus-musculus	Q8CGY6	Unc45b	Q8CGY6	5	11	Protein unc-45 homolog B
-UNC45B	rattus-norvegicus	D4A8U9	Unc45b	D4A8U9	3	10	Unc-45 myosin chaperone B
-UNC5A	mus-musculus	Q8K1S4	Unc5a	Q8K1S4	2	15	Netrin receptor UNC5A
-UNC5A	rattus-norvegicus	O08721	Unc5a	O08721	1	15	Netrin receptor UNC5A
-UNC5B	mus-musculus	Q8K1S3	Unc5b	Q8K1S3	1	17	Netrin receptor UNC5B
-UNC5B	rattus-norvegicus	O08722	Unc5b	O08722	1	15	Netrin receptor UNC5B
-UNC5C	mus-musculus	O08747	Unc5c	O08747	1	16	Netrin receptor UNC5C
-UNC5C	rattus-norvegicus	Q761X5	Unc5c	Q761X5	3	21	Netrin receptor UNC5C
-UNC5CL	mus-musculus	Q6R653	Unc5cl	Q6R653	0	8	UNC5C-like protein
-UNC5CL	rattus-norvegicus	A0A096MKD8	Unc5cl	A0A096MKD8	0	12	Unc-5 family C-terminal like
-UNC5D	mus-musculus	Q8K1S2	Unc5d	Q8K1S2	2	13	Netrin receptor UNC5D
-UNC5D	rattus-norvegicus	F1LW30	Unc5d	F1LW30	1	15	Netrin receptor UNC5D
-UNC93B1	mus-musculus	Q8VCW4	Unc93b1	Q8VCW4	5	8	Protein unc-93 homolog B1
-UNC93B1	rattus-norvegicus	D3ZDJ4	Unc93b1	D3ZDJ4	6	9	Protein unc-93 homolog B1
-UNCX	mus-musculus	O08934	Uncx	O08934	2	7	Homeobox protein unc-4 homolog
-UNCX	rattus-norvegicus	P97830	Uncx	P97830	3	6	Homeobox protein unc-4 homolog
+UNC	arabidopsis-thaliana	Q9SYB9	UNC	Q9SYB9	1	2	Serine/threonine-protein kinase UCN	
+UNC	fly	FBgn0003950	unc	Q9VRF2	1	11	Uncoordinated (Uncoordinated, isoform B)	
+UNC-1	worm	Q21190	unc-1	Q21190	0	42	Protein unc-1	w
+UNC-1	worm	Q21190	unc-1	Q21190	0	42	Protein unc-1	w
+UNC-101	worm	P35602	unc-101	P35602	6	58	AP-1 complex subunit mu-1-I	
+UNC-104	fly	FBgn0267002	unc-104	A1ZAJ2	2	12	uncoordinated-104	
+UNC-104-	human	Q12756	KIF1A	Q12756	27	450	Kinesin-like protein KIF1A (EC 5.6.1.3) (Axonal transporter 	w
+UNC-104_1499	fly	FBgn0267002	unc-104	A1ZAJ2	2	12		
+UNC-105	worm	Q09274	unc-105	Q09274	16	17	Degenerin-like protein unc-105	w
+UNC-105	worm	Q09274	unc-105	Q09274	16	17	Degenerin-like protein unc-105	w
+UNC-108	worm	A0A2C9C2Y0	unc-108	A0A2C9C2Y0	3	17	Ras-related protein Rab-2	
+UNC-112	worm	Q18685	unc-112	Q18685	3	19	Protein unc-112	w
+UNC-112	worm	Q18685	unc-112	Q18685	3	19	Protein unc-112	w
+UNC-112-RELATED	fly	FBgn0035498	Fit1	Q9VZI3	3	26	Unc-112-related protein (Fermitin-1)	w
+UNC-112-RELATED	human	Q86UX7	FERMT3	Q86UX7	48	480	Fermitin family homolog 3 (Kindlin-3) (MIG2-like protein) (U	w
+UNC-112-RELATED	human	Q9BQL6	FERMT1	Q9BQL6	21	139	Fermitin family homolog 1 (Kindlerin) (Kindlin syndrome prot	w
+UNC-115	worm	Q95QM5	unc-115	Q95QM5	0	10	Actin-binding lim zn-finger protein limatin involved in axon	
+UNC-115A	fly	FBgn0051352	Unc-115a	E1JIH3	4	15	Uncoordinated 115a, isoform B	
+UNC-115A_375	fly	FBgn0051352	Unc-115a	E1JIH3	4	15		
+UNC-115A_539	fly	FBgn0051352	Unc-115a	E1JIH3	4	15		
+UNC-115A_694	fly	FBgn0051352	Unc-115a	E1JIH3	4	15		
+UNC-115B	fly	FBgn0260463	Unc-115b	Q8INN6	0	7	Uncoordinated 115b, isoform C	
+UNC-116	worm	P34540	unc-116	P34540	10	56	Kinesin heavy chain	
+UNC-119	fly	FBgn0025549	unc-119	Q9XYQ2	4	33	Protein unc-119 homolog (DmUNC-119)	w
+UNC-119	fly	FBgn0025549	unc-119	Q9XYQ2	4	33	Protein unc-119 homolog (DmUNC-119)	w
+UNC-119	human	A6NIH7	UNC119B	A6NIH7	9	94	Protein unc-119 homolog B	w
+UNC-119	human	Q13432	UNC119	Q13432	29	247	Protein unc-119 homolog A (Retinal protein 4) (hRG4)	w
+UNC-119	worm	Q10658	unc-119	Q10658	2	7	Protein unc-119	w
+UNC-119	worm	Q10658	unc-119	Q10658	2	7	Protein unc-119	w
+UNC-119	zebrafish	E7F2M1	unc119c	E7F2M1	3	8	Protein unc-119 homolog B	w
+UNC-119	zebrafish	F1QE32	unc119a1	F1QE32	6	17	Protein unc-119 homolog A	w
+UNC-119	zebrafish	Q1RM42	unc119a2	Q1RM42	5	17	Protein unc-119 homolog A	w
+UNC-119	zebrafish	Q90Z08	unc119b	Q90Z08	3	8	Protein unc-119 homolog B	w
+UNC-120	worm	Q18955	unc-120	Q18955	4	59	Serum response factor homolog	
+UNC-129	worm	G5EBY8	unc-129	G5EBY8	3	26	BMP-like protein unc-129	w
+UNC-129	worm	G5EBY8	unc-129	G5EBY8	3	26	BMP-like protein unc-129	w
+UNC-13	fly	FBgn0025726	unc-13	H9XVP2	0	4	Unc-13, isoform E	w
+UNC-13	fly	FBgn0025726	unc-13	H9XVP2	0	4	Unc-13, isoform E	w
+UNC-13	fly	FBgn0266719	stac	Q9VBY8	11	89	Protein unc-13 homolog 4B (Protein Staccato)	w
+UNC-13	human	O14795	UNC13B	O14795	11	64	Protein unc-13 homolog B (Munc13-2) (munc13)	w
+UNC-13	human	Q70J99	UNC13D	Q70J99	42	218	Protein unc-13 homolog D (Munc13-4)	w
+UNC-13	human	Q8NB66	UNC13C	Q8NB66	4	43	Protein unc-13 homolog C (Munc13-3)	w
+UNC-13	human	Q9UPW8	UNC13A	Q9UPW8	11	84	Protein unc-13 homolog A (Munc13-1)	w
+UNC-13	zebrafish	F6NFN1	unc13d	F6NFN1	2	6	Protein unc-13 homolog D	w
+UNC-13-4A	fly	FBgn0035756	unc-13-4A	Q9VS41	3	16	Unc-13-4A, isoform B (Unc-13-4A, isoform C)	w
+UNC-13-4A	fly	FBgn0035756	unc-13-4A	Q9VS41	3	16	Unc-13-4A, isoform B (Unc-13-4A, isoform C)	w
+UNC-130	worm	Q18694	unc-130	Q18694	7	265	Forkhead box protein unc-130	w
+UNC-130	worm	Q18694	unc-130	Q18694	7	265	Forkhead box protein unc-130	w
+UNC-132	worm	O01619	unc-132	O01619	0	2	NadR/Ttd14 AAA domain-containing protein	
+UNC-14	worm	G5ECQ1	unc-14	G5ECQ1	1	8	RUN domain-containing protein	
+UNC-15	worm	P10567	unc-15	P10567	1	35	Paramyosin	
+UNC-16	worm	P34609	unc-16	P34609	4	31	JNK-interacting protein	
+UNC-17	worm	P34711	unc-17	P34711	1	45	Vesicular acetylcholine transporter unc-17	w
+UNC-17	worm	P34711	unc-17	P34711	1	45	Vesicular acetylcholine transporter unc-17	w
+UNC-18	human	O00186	STXBP3	O00186	25	162	Syntaxin-binding protein 3 (Platelet Sec1 protein) (PSP) (Pr	w
+UNC-18	human	P61764	STXBP1	P61764	31	288	Syntaxin-binding protein 1 (MUNC18-1) (N-Sec1) (Protein unc-	w
+UNC-18	human	Q15833	STXBP2	Q15833	36	227	Syntaxin-binding protein 2 (Protein unc-18 homolog 2) (Munc1	w
+UNC-18	worm	P34815	unc-18	P34815	10	77	Acetylcholine regulator unc-18	w
+UNC-18	worm	P34815	unc-18	P34815	10	77	Acetylcholine regulator unc-18	w
+UNC-18A	human	P61764	STXBP1	P61764	31	288	Syntaxin-binding protein 1 (MUNC18-1) (N-Sec1) (Protein unc-	w
+UNC-18B	human	Q15833	STXBP2	Q15833	36	227	Syntaxin-binding protein 2 (Protein unc-18 homolog 2) (Munc1	w
+UNC-18C	human	O00186	STXBP3	O00186	25	162	Syntaxin-binding protein 3 (Platelet Sec1 protein) (PSP) (Pr	w
+UNC-23	worm	O61980	unc-23	O61980	4	28	BAG domain-containing protein	
+UNC-24	human	Q9UBI4	STOML1	Q9UBI4	11	89	Stomatin-like protein 1 (SLP-1) (EPB72-like protein 1) (Prot	w
+UNC-24	worm	Q7KPQ9	unc-24	Q7KPQ9	2	30	Band 7 domain-containing protein	
+UNC-25	worm	G5EDB7	unc-25	G5EDB7	0	19	Glutamate decarboxylase 1	
+UNC-26	worm	G5ECL2	unc-26	G5ECL2	3	27	Synaptojanin	
+UNC-27	worm	Q9GYF1	unc-27	Q9GYF1	12	30	Troponin I 2	
+UNC-29	worm	P48181	unc-29	P48181	14	154	Acetylcholine receptor subunit beta-type unc-29	w
+UNC-29	worm	P48181	unc-29	P48181	14	154	Acetylcholine receptor subunit beta-type unc-29	w
+UNC-3	worm	Q93705	unc-3	Q93705	2	21	Transcription factor unc-3	w
+UNC-3	worm	Q93705	unc-3	Q93705	2	21	Transcription factor unc-3	w
+UNC-30	worm	P52906	unc-30	P52906	2	42	Homeobox protein unc-30	w
+UNC-30	worm	P52906	unc-30	P52906	2	42	Homeobox protein unc-30	w
+UNC-31	worm	Q23658	unc-31	Q23658	0	1	Calcium-dependent secretion activator	
+UNC-32	worm	P30628	unc-32	P30628	11	54	V-type proton ATPase 116 kDa subunit a 1	
+UNC-33	worm	Q01630	unc-33	Q01630	1	13	Protein unc-33	w
+UNC-33	worm	Q01630	unc-33	Q01630	1	13	Protein unc-33	w
+UNC-33-LIKE	human	Q14194	CRMP1	Q14194	7	189	Dihydropyrimidinase-related protein 1 (DRP-1) (Collapsin res	w
+UNC-33-LIKE	human	Q14195	DPYSL3	Q14195	13	180	Dihydropyrimidinase-related protein 3 (DRP-3) (Collapsin res	w
+UNC-33-LIKE	human	Q16555	DPYSL2	Q16555	15	280	Dihydropyrimidinase-related protein 2 (DRP-2) (Collapsin res	w
+UNC-34	worm	G5EG53	unc-34	G5EG53	7	39	UNC-34	w
+UNC-34	worm	G5EG53	unc-34	G5EG53	7	39	UNC-34	w
+UNC-36	worm	P34374	unc-36	P34374	0	10	Voltage-dependent calcium channel unc-36	w
+UNC-36	worm	P34374	unc-36	P34374	0	10	Voltage-dependent calcium channel unc-36	w
+UNC-37	worm	O02482	unc-37	O02482	19	78	Transcription factor unc-37	w
+UNC-37	worm	O02482	unc-37	O02482	19	78	Transcription factor unc-37	w
+UNC-38	worm	Q23022	unc-38	Q23022	11	16	Acetylcholine receptor subunit alpha-type unc-38	w
+UNC-38	worm	Q23022	unc-38	Q23022	11	16	Acetylcholine receptor subunit alpha-type unc-38	w
+UNC-39	worm	O17894	unc-39	O17894	3	29	Homeobox protein unc-39	w
+UNC-39	worm	O17894	unc-39	O17894	3	29	Homeobox protein unc-39	w
+UNC-4	fly	FBgn0024184	unc-4	O77215	99	379	Homeobox protein unc-4 (Paired-like homeodomain protein unc-	w
+UNC-4	fly	FBgn0024184	unc-4	O77215	99	379	Homeobox protein unc-4 (Paired-like homeodomain protein unc-	w
+UNC-4	human	A6NJT0	UNCX	A6NJT0	120	420	Homeobox protein unc-4 homolog (Homeobox protein Uncx4.1)	w
+UNC-4	worm	P29506	unc-4	P29506	10	139	Homeobox protein unc-4	w
+UNC-4	worm	P29506	unc-4	P29506	10	139	Homeobox protein unc-4	w
+UNC-4	zebrafish	A0A0R4IVX3	uncx	A0A0R4IVX3	2	6	Homeobox protein unc-4 homolog	w
+UNC-4	zebrafish	Q50D79	uncx	Q50D79	2	6	Homeobox protein unc-4 homolog	w
+UNC-40	worm	G5EF96	unc-40	G5EF96	3	19	Netrin receptor unc-40	w
+UNC-40	worm	G5EF96	unc-40	G5EF96	3	19	Netrin receptor unc-40	w
+UNC-42	worm	L8E946	unc-42	L8E946	28	504	Homeobox protein unc-42	w
+UNC-42	worm	L8E946	unc-42	L8E946	28	504	Homeobox protein unc-42	w
+UNC-43	worm	G5EDZ5	unc-43	G5EDZ5	9	39	Calcium/calmodulin-dependent protein kinase type II	
+UNC-43	worm	O62305	unc-43	O62305	4	18	Calcium/calmodulin-dependent protein kinase type II (CaM kin	
+UNC-45	fly	FBgn0288846	unc-45	Q9VHW4	4	23	uncoordinated 45	
+UNC-45	human	Q8IWX7	UNC45B	Q8IWX7	4	62	Protein unc-45 homolog B (Unc-45B) (SMUNC45)	w
+UNC-45	human	Q9H3U1	UNC45A	Q9H3U1	25	324	Protein unc-45 homolog A (Unc-45A) (GCUNC-45) (Smooth muscle	w
+UNC-45	worm	G5EG62	unc-45	G5EG62	1	14	UNC-45	w
+UNC-45	worm	G5EG62	unc-45	G5EG62	1	14	UNC-45	w
+UNC-45	zebrafish	Q6DGE9	unc45b	Q6DGE9	4	8	Protein unc-45 homolog B	w
+UNC-45A	human	Q9H3U1	UNC45A	Q9H3U1	25	324	Protein unc-45 homolog A (Unc-45A) (GCUNC-45) (Smooth muscle	w
+UNC-45B	human	Q8IWX7	UNC45B	Q8IWX7	4	62	Protein unc-45 homolog B (Unc-45B) (SMUNC45)	w
+UNC-46	worm	Q9GZD5	unc-46	Q9GZD5	1	2	Lysosome-associated membrane glycoprotein 5	
+UNC-47	worm	P34579	unc-47	P34579	2	23	Vesicular GABA transporter	
+UNC-49	worm	G5ECD3	unc-49	G5ECD3	1	6	Gamma-aminobutyric acid receptor subunit beta	
+UNC-5	fly	FBgn0034013	unc-5	Q95TU8	253	2397	Netrin receptor unc-5 (Unc5 netrin receptor)	w
+UNC-5	fly	FBgn0034013	unc-5	Q95TU8	253	2397	Netrin receptor unc-5 (Unc5 netrin receptor)	w
+UNC-5	human	O95185	UNC5C	O95185	41	184	Netrin receptor UNC5C (Protein unc-5 homolog 3) (Protein unc	w
+UNC-5	human	Q6UXZ4	UNC5D	Q6UXZ4	25	150	Netrin receptor UNC5D (Protein unc-5 homolog 4) (Protein unc	w
+UNC-5	human	Q6ZN44	UNC5A	Q6ZN44	26	196	Netrin receptor UNC5A (Protein unc-5 homolog 1) (Protein unc	w
+UNC-5	human	Q8IV45	UNC5CL	Q8IV45	9	110	UNC5C-like protein (Protein unc-5 homolog C-like) (ZU5 and d	w
+UNC-5	human	Q8IZJ1	UNC5B	Q8IZJ1	36	309	Netrin receptor UNC5B (Protein unc-5 homolog 2) (Protein unc	w
+UNC-5	worm	Q26261	unc-5	Q26261	1	12	Netrin receptor unc-5	w
+UNC-5	worm	Q26261	unc-5	Q26261	1	12	Netrin receptor unc-5	w
+UNC-50	fly	FBgn0037609	Unc50	Q9VHN5	1	35	Protein unc-50 homolog (Uncoordinated-like protein)	w
+UNC-50	human	Q53HI1	UNC50	Q53HI1	2	129	Protein unc-50 homolog (Periodontal ligament-specific protei	w
+UNC-50	worm	Q10045	unc-50	Q10045	0	2	Protein unc-50	w
+UNC-50	worm	Q10045	unc-50	Q10045	0	2	Protein unc-50	w
+UNC-50	zebrafish	Q7ZUU1	unc50	Q7ZUU1	0	1	Protein unc-50 homolog	w
+UNC-51	worm	Q23023	unc-51	Q23023	10	70	Serine/threonine-protein kinase unc-51 (EC 2.7.11.1) (Uncoor	w
+UNC-51	worm	Q23023	unc-51	Q23023	10	70	Serine/threonine-protein kinase unc-51 (EC 2.7.11.1) (Uncoor	w
+UNC-51-LIKE	fly	FBgn0037679	Aduk	Q9VHF6	242	1128	Serine/threonine-protein kinase ULK3 (EC 2.7.11.1) (Unc-51-l	w
+UNC-51-LIKE	human	O75385	ULK1	O75385	70	322	Serine/threonine-protein kinase ULK1 (EC 2.7.11.1) (Autophag	w
+UNC-51-LIKE	human	Q6PHR2	ULK3	Q6PHR2	172	1359	Serine/threonine-protein kinase ULK3 (EC 2.7.11.1) (Unc-51-l	w
+UNC-51-LIKE	human	Q8IYT8	ULK2	Q8IYT8	18	120	Serine/threonine-protein kinase ULK2 (EC 2.7.11.1) (Unc-51-l	w
+UNC-51-LIKE	human	Q96C45	ULK4	Q96C45	5	69	Inactive serine/threonine-protein kinase ULK4 (Pseudokinase 	w
+UNC-52	human	Q2TAY7	SMU1	Q2TAY7	48	456	WD40 repeat-containing protein SMU1 (Smu-1 suppressor of mec	w
+UNC-52	worm	G5EEG7	smu-1	G5EEG7	5	21	Smu-1 suppressor of mec-8 and unc-52 protein	w
+UNC-52	worm	Q9N4U5	smu-2	Q9N4U5	3	10	Smu-2 suppressor of mec-8 and unc-52 protein	w
+UNC-53	human	Q8IVL0	NAV3	Q8IVL0	33	165	Neuron navigator 3 (Pore membrane and/or filament-interactin	w
+UNC-53	human	Q8NEY1	NAV1	Q8NEY1	81	307	Neuron navigator 1 (Pore membrane and/or filament-interactin	w
+UNC-55	worm	G5ECR9	unc-55	G5ECR9	1	13	Nuclear hormone receptor unc-55	w
+UNC-55	worm	G5ECR9	unc-55	G5ECR9	1	13	Nuclear hormone receptor unc-55	w
+UNC-57	worm	B1V8A0	unc-57	B1V8A0	8	74	Endophilin-A homolog	
+UNC-58	worm	Q22271	unc-58	Q22271	27	27	Uncoordinated protein 58	
+UNC-59	worm	Q9U334	unc-59	Q9U334	1	11	Septin	
+UNC-6	worm	P34710	unc-6	P34710	2	15	Netrin unc-6	w
+UNC-6	worm	P34710	unc-6	P34710	2	15	Netrin unc-6	w
+UNC-60	worm	Q07749	unc-60	Q07749	13	102	Actin-depolymerizing factor 2, isoform c	
+UNC-61	worm	Q8I4C9	unc-61	Q8I4C9	1	5	Septin-type G domain-containing protein	
+UNC-62	worm	Q9N5D6	unc-62	Q9N5D6	9	99	Homeobox protein unc-62	w
+UNC-62	worm	Q9N5D6	unc-62	Q9N5D6	9	99	Homeobox protein unc-62	w
+UNC-63	worm	Q9N587	unc-63	Q9N587	10	16	Acetylcholine receptor subunit alpha-type unc-63	w
+UNC-63	worm	Q9N587	unc-63	Q9N587	10	16	Acetylcholine receptor subunit alpha-type unc-63	w
+UNC-64	worm	O16000	unc-64	O16000	7	67	Syntaxin-1A homolog	
+UNC-69	worm	A7LPF8	unc-69	A7LPF8	2	8	Short coiled-coil protein homolog	
+UNC-7	worm	Q03412	unc-7	Q03412	0	1	Innexin unc-7	w
+UNC-7	worm	Q03412	unc-7	Q03412	0	1	Innexin unc-7	w
+UNC-75	worm	G5EE68	unc-75	G5EE68	0	8	Putative RNA-binding protein	
+UNC-76	fly	FBgn0040395	Unc-76	Q9W525	6	17	LD08195p (Uncoordinated 76, isoform A) (Uncoordinated 76, is	
+UNC-76	worm	E0AHC6	unc-76	E0AHC6	4	14	UNC-76	w
+UNC-76	worm	E0AHC6	unc-76	E0AHC6	4	14	UNC-76	w
+UNC-78	worm	Q11176	unc-78	Q11176	1	44	Actin-interacting protein 1	
+UNC-79	human	Q9P2D8	UNC79	Q9P2D8	1	14	Protein unc-79 homolog	w
+UNC-79	worm	P42173	unc-79	P42173	0	57	Uncoordinated protein 79	
+UNC-8	worm	Q21974	unc-8	Q21974	17	18	Degenerin unc-8	w
+UNC-8	worm	Q21974	unc-8	Q21974	17	18	Degenerin unc-8	w
+UNC-80	human	Q8N2C7	UNC80	Q8N2C7	2	96	Protein unc-80 homolog	w
+UNC-83	worm	Q23064	unc-83	Q23064	3	34	Nuclear migration protein unc-83	w
+UNC-83	worm	Q23064	unc-83	Q23064	3	34	Nuclear migration protein unc-83	w
+UNC-84	human	O94901	SUN1	O94901	31	216	SUN domain-containing protein 1 (Protein unc-84 homolog A) (	w
+UNC-84	human	Q8TAQ9	SUN3	Q8TAQ9	8	38	SUN domain-containing protein 3 (Sad1/unc-84 domain-containi	w
+UNC-84	human	Q9UH99	SUN2	Q9UH99	32	252	SUN domain-containing protein 2 (Protein unc-84 homolog B) (	w
+UNC-84	worm	Q20745	unc-84	Q20745	1	39	Nuclear migration and anchoring protein unc-84	w
+UNC-84	worm	Q20745	unc-84	Q20745	1	39	Nuclear migration and anchoring protein unc-84	w
+UNC-85	worm	Q19326	unc-85	Q19326	15	37	Probable histone chaperone asf-1	
+UNC-86	worm	P13528	unc-86	P13528	6	81	Transcription factor unc-86	w
+UNC-86	worm	P13528	unc-86	P13528	6	81	Transcription factor unc-86	w
+UNC-87	worm	P37806	unc-87	P37806	0	16	Protein unc-87	w
+UNC-87	worm	P37806	unc-87	P37806	0	16	Protein unc-87	w
+UNC-89	fly	FBgn0053519	Obsc	A8DYP0	0	1	Obscurin (Inactive serine/threonine-protein kinase obscurin)	w
+UNC-89	fly	FBgn0053519	Obsc	A8DYP0	0	1	Obscurin (Inactive serine/threonine-protein kinase obscurin)	w
+UNC-9	worm	O01393	unc-9	O01393	0	2	Innexin unc-9	w
+UNC-9	worm	O01393	unc-9	O01393	0	2	Innexin unc-9	w
+UNC-93	human	Q86WB7	UNC93A	Q86WB7	1	52	N-acetylglucosamine transporter UNC93A (Protein unc-93 homol	w
+UNC-93	human	Q9H1C4	UNC93B1	Q9H1C4	48	478	Protein unc-93 homolog B1 (Unc-93B1) (hUNC93B1)	w
+UNC-93	worm	Q93380	unc-93	Q93380	0	1	Putative potassium channel regulatory protein unc-93	w
+UNC-93	worm	Q93380	unc-93	Q93380	0	1	Putative potassium channel regulatory protein unc-93	w
+UNC-93	zebrafish	F1QYA8	unc93b1	F1QYA8	9	16	Protein unc-93 homolog B1	w
+UNC-93	zebrafish	Q5SPF7	unc93a	Q5SPF7	0	3	Protein unc-93 homolog A	w
+UNC-93A	human	Q86WB7	UNC93A	Q86WB7	1	52	N-acetylglucosamine transporter UNC93A (Protein unc-93 homol	w
+UNC-93B1	human	Q9H1C4	UNC93B1	Q9H1C4	48	478	Protein unc-93 homolog B1 (Unc-93B1) (hUNC93B1)	w
+UNC-94	worm	O01479	unc-94	O01479	7	51	Tropomodulin	
+UNC-95	worm	Q9NEZ5	unc-95	Q9NEZ5	3	16	LIM domain-containing protein unc-95	w
+UNC-95	worm	Q9NEZ5	unc-95	Q9NEZ5	3	16	LIM domain-containing protein unc-95	w
+UNC-96	worm	H2KZR3	unc-96	H2KZR3	0	11	CRE-UNC-96 protein	
+UNC-97	worm	P50464	unc-97	P50464	3	27	LIM domain-containing protein unc-97	w
+UNC-97	worm	P50464	unc-97	P50464	3	27	LIM domain-containing protein unc-97	w
+UNC-98	worm	Q19203	unc-98	Q19203	3	58	Zinc finger protein unc-98	w
+UNC-98	worm	Q19203	unc-98	Q19203	3	58	Zinc finger protein unc-98	w
+UNC119	human	Q13432	UNC119	Q13432	29	247	Protein unc-119 homolog A (Retinal protein 4) (hRG4)	
+UNC119	mus-musculus	Q9Z2R6	Unc119	Q9Z2R6	3	29	Protein unc-119 homolog A	
+UNC119	rattus-norvegicus	Q62885	Unc119	Q62885	3	23	Protein unc-119 homolog A	
+UNC119A1	zebrafish	F1QE32	unc119a1	F1QE32	6	17	Protein unc-119 homolog A	
+UNC119A2	zebrafish	Q1RM42	unc119a2	Q1RM42	5	17	Protein unc-119 homolog A	
+UNC119B	human	A6NIH7	UNC119B	A6NIH7	9	94	Protein unc-119 homolog B	
+UNC119B	mus-musculus	Q8C4B4	Unc119b	Q8C4B4	2	10	Protein unc-119 homolog B	
+UNC119B	zebrafish	Q90Z08	unc119b	Q90Z08	3	8	Protein unc-119 homolog B	
+UNC119C	zebrafish	E7F2M1	unc119c	E7F2M1	3	8	Protein unc-119 homolog B	
+UNC13	human	O14795	UNC13B	O14795	11	64		
+UNC13A	human	Q9UPW8	UNC13A	Q9UPW8	11	84	Protein unc-13 homolog A (Munc13-1)	
+UNC13B	human	O14795	UNC13B	O14795	11	64	Protein unc-13 homolog B (Munc13-2) (munc13)	
+UNC13C	human	Q8NB66	UNC13C	Q8NB66	4	43	Protein unc-13 homolog C (Munc13-3)	
+UNC13D	human	Q70J99	UNC13D	Q70J99	42	218	Protein unc-13 homolog D (Munc13-4)	
+UNC13D	mus-musculus	B2RUP2	Unc13d	B2RUP2	4	9	Protein unc-13 homolog D	
+UNC13D	rattus-norvegicus	Q9R189	Unc13d	Q9R189	3	5	Protein unc-13 homolog D	
+UNC13D	zebrafish	F6NFN1	unc13d	F6NFN1	2	6	Protein unc-13 homolog D	
+UNC18-1	human	P61764	STXBP1	P61764	31	288	Syntaxin-binding protein 1 (MUNC18-1) (N-Sec1) (Protein unc-	w
+UNC18-2	human	Q15833	STXBP2	Q15833	36	227	Syntaxin-binding protein 2 (Protein unc-18 homolog 2) (Munc1	w
+UNC18-3	human	O00186	STXBP3	O00186	25	162	Syntaxin-binding protein 3 (Platelet Sec1 protein) (PSP) (Pr	w
+UNC18A	human	P61764	STXBP1	P61764	31	288		
+UNC18B	human	Q15833	STXBP2	Q15833	36	227		
+UNC24	human	Q9UBI4	STOML1	Q9UBI4	11	89		
+UNC33-LIKE	human	O14531	DPYSL4	O14531	8	143	Dihydropyrimidinase-related protein 4 (DRP-4) (Collapsin res	w
+UNC33-LIKE	human	Q9BPU6	DPYSL5	Q9BPU6	11	119	Dihydropyrimidinase-related protein 5 (DRP-5) (CRMP3-associa	w
+UNC45	human	Q8IWX7	UNC45B	Q8IWX7	4	62		
+UNC45A	human	Q9H3U1	UNC45A	Q9H3U1	25	324	Protein unc-45 homolog A (Unc-45A) (GCUNC-45) (Smooth muscle	
+UNC45A	mus-musculus	Q99KD5	Unc45a	Q99KD5	3	10	Protein unc-45 homolog A	
+UNC45A	rattus-norvegicus	Q32PZ3	Unc45a	Q32PZ3	4	11	Protein unc-45 homolog A	
+UNC45B	human	Q8IWX7	UNC45B	Q8IWX7	4	62	Protein unc-45 homolog B (Unc-45B) (SMUNC45)	
+UNC45B	mus-musculus	Q8CGY6	Unc45b	Q8CGY6	5	11	Protein unc-45 homolog B	
+UNC45B	rattus-norvegicus	D4A8U9	Unc45b	D4A8U9	3	10	Unc-45 myosin chaperone B	
+UNC45B	zebrafish	Q6DGE9	unc45b	Q6DGE9	4	8	Protein unc-45 homolog B	
+UNC4_HUMAN	human	A6NJT0	UNCX	A6NJT0	120	420		
+UNC5	fly	FBgn0034013	unc-5	Q95TU8	253	2397	Netrin receptor unc-5 (Unc5 netrin receptor)	w
+UNC5	zebrafish	A0A0R4IEH4	unc5da	A0A0R4IEH4	1	25	Netrin receptor UNC5	w
+UNC5	zebrafish	A0A2R8QCX6	unc5db	A0A2R8QCX6	1	25	Netrin receptor UNC5	w
+UNC5	zebrafish	A9JRY6	unc5a	A9JRY6	0	24	Netrin receptor UNC5	w
+UNC50	fly	FBgn0037609	Unc50	Q9VHN5	1	35	Protein unc-50 homolog (Uncoordinated-like protein)	
+UNC50	human	Q53HI1	UNC50	Q53HI1	2	129	Protein unc-50 homolog (Periodontal ligament-specific protei	
+UNC50	zebrafish	Q7ZUU1	unc50	Q7ZUU1	0	1	Protein unc-50 homolog	
+UNC50_HUMAN	human	Q53HI1	UNC50	Q53HI1	2	129		
+UNC51_CAEEL	worm	Q23023	unc-51	Q23023	10	70		
+UNC53H1	human	Q8NEY1	NAV1	Q8NEY1	81	307	Neuron navigator 1 (Pore membrane and/or filament-interactin	w
+UNC53H3	human	Q8IVL0	NAV3	Q8IVL0	33	165	Neuron navigator 3 (Pore membrane and/or filament-interactin	w
+UNC5A	human	Q6ZN44	UNC5A	Q6ZN44	26	196	Netrin receptor UNC5A (Protein unc-5 homolog 1) (Protein unc	
+UNC5A	mus-musculus	Q8K1S4	Unc5a	Q8K1S4	2	15	Netrin receptor UNC5A	
+UNC5A	rattus-norvegicus	O08721	Unc5a	O08721	1	15	Netrin receptor UNC5A	
+UNC5A	zebrafish	A9JRY6	unc5a	A9JRY6	0	24	Netrin receptor UNC5	
+UNC5A_HUMAN	human	Q6ZN44	UNC5A	Q6ZN44	26	196		
+UNC5B	human	Q8IZJ1	UNC5B	Q8IZJ1	36	309	Netrin receptor UNC5B (Protein unc-5 homolog 2) (Protein unc	
+UNC5B	mus-musculus	Q8K1S3	Unc5b	Q8K1S3	1	17	Netrin receptor UNC5B	
+UNC5B	rattus-norvegicus	O08722	Unc5b	O08722	1	15	Netrin receptor UNC5B	
+UNC5B_HUMAN	human	Q8IZJ1	UNC5B	Q8IZJ1	36	309		
+UNC5C	human	O95185	UNC5C	O95185	41	184	Netrin receptor UNC5C (Protein unc-5 homolog 3) (Protein unc	
+UNC5C	mus-musculus	O08747	Unc5c	O08747	1	16	Netrin receptor UNC5C	
+UNC5C	rattus-norvegicus	Q761X5	Unc5c	Q761X5	3	21	Netrin receptor UNC5C	
+UNC5C-LIKE	human	Q8IV45	UNC5CL	Q8IV45	9	110	UNC5C-like protein (Protein unc-5 homolog C-like) (ZU5 and d	w
+UNC5CL	human	Q8IV45	UNC5CL	Q8IV45	9	110	UNC5C-like protein (Protein unc-5 homolog C-like) (ZU5 and d	
+UNC5CL	mus-musculus	Q6R653	Unc5cl	Q6R653	0	8	UNC5C-like protein	
+UNC5CL	rattus-norvegicus	A0A096MKD8	Unc5cl	A0A096MKD8	0	12	Unc-5 family C-terminal like	
+UNC5C_HUMAN	human	O95185	UNC5C	O95185	41	184		
+UNC5D	human	Q6UXZ4	UNC5D	Q6UXZ4	25	150	Netrin receptor UNC5D (Protein unc-5 homolog 4) (Protein unc	
+UNC5D	mus-musculus	Q8K1S2	Unc5d	Q8K1S2	2	13	Netrin receptor UNC5D	
+UNC5D	rattus-norvegicus	F1LW30	Unc5d	F1LW30	1	15	Netrin receptor UNC5D	
+UNC5DA	zebrafish	A0A0R4IEH4	unc5da	A0A0R4IEH4	1	25	Netrin receptor UNC5	
+UNC5DB	zebrafish	A0A2R8QCX6	unc5db	A0A2R8QCX6	1	25	Netrin receptor UNC5	
+UNC5D_HUMAN	human	Q6UXZ4	UNC5D	Q6UXZ4	25	150		
+UNC5H1	human	Q6ZN44	UNC5A	Q6ZN44	26	196		
+UNC5H2	human	Q8IZJ1	UNC5B	Q8IZJ1	36	309		
+UNC5H3	human	O95185	UNC5C	O95185	41	184		
+UNC5H4	human	Q6UXZ4	UNC5D	Q6UXZ4	25	150		
+UNC79	human	Q9P2D8	UNC79	Q9P2D8	1	14	Protein unc-79 homolog	
+UNC79_HUMAN	human	Q9P2D8	UNC79	Q9P2D8	1	14		
+UNC80	fly	FBgn0039536	unc80	A0A0B4KHR1	0	1	Uncoordinated 80, isoform F	
+UNC80	human	Q8N2C7	UNC80	Q8N2C7	2	96	Protein unc-80 homolog	
+UNC80_HUMAN	human	Q8N2C7	UNC80	Q8N2C7	2	96		
+UNC84	human	Q8TC36	SUN5	Q8TC36	4	50	SUN domain-containing protein 5 (Sad1 and UNC84 domain-conta	w
+UNC84A	human	O94901	SUN1	O94901	31	216		
+UNC84B	human	Q9UH99	SUN2	Q9UH99	32	252		
+UNC93	human	Q9H1C4	UNC93B1	Q9H1C4	48	478		
+UNC93-LIKE	fly	FBgn0027556	CG4928	Q9Y115	0	5	UNC93-like protein	w
+UNC93-LIKE	fly	FBgn0038053	CG18549	Q9VG64	0	2	UNC93-like protein MFSD11 (Major facilitator superfamily dom	w
+UNC93-LIKE	human	O43934	MFSD11	O43934	3	42	UNC93-like protein MFSD11 (Major facilitator superfamily dom	w
+UNC93-LIKE	worm	H2KYC3	CELE_Y39D8A.1	H2KYC3	0	4	UNC93-like protein MFSD11	w
+UNC93-LIKE	worm	Q19932	CELE_F31D5.2	Q19932	0	3	UNC93-like protein MFSD11	w
+UNC93-LIKE	worm	Q9NEU8	CELE_Y39B6A.29	Q9NEU8	0	23	UNC93-like protein MFSD11	w
+UNC93-LIKE	worm	Q9XV34	CELE_F36G9.3	Q9XV34	0	3	UNC93-like protein MFSD11	w
+UNC93A	human	Q86WB7	UNC93A	Q86WB7	1	52	N-acetylglucosamine transporter UNC93A (Protein unc-93 homol	
+UNC93A	zebrafish	Q5SPF7	unc93a	Q5SPF7	0	3	Protein unc-93 homolog A	
+UNC93B	human	Q9H1C4	UNC93B1	Q9H1C4	48	478		
+UNC93B1	human	Q9H1C4	UNC93B1	Q9H1C4	48	478	Protein unc-93 homolog B1 (Unc-93B1) (hUNC93B1)	
+UNC93B1	mus-musculus	Q8VCW4	Unc93b1	Q8VCW4	5	8	Protein unc-93 homolog B1	
+UNC93B1	rattus-norvegicus	D3ZDJ4	Unc93b1	D3ZDJ4	6	9	Protein unc-93 homolog B1	
+UNC93B1	zebrafish	F1QYA8	unc93b1	F1QYA8	9	16	Protein unc-93 homolog B1	
+UNCHARACTERIZ	fly	FBgn0046247	CG5938	Q0KI06	1	9	Uncharacterized protein, isoform A (Uncharacterized protein,	w
+UNCHARACTERIZ	fly	FBgn0052767	CG32767	Q9W4E8	19	102	Uncharacterized protein, isoform C (Uncharacterized protein,	w
+UNCHARACTERIZ	fly	FBgn0264742	CG44000	M9PCM2	0	3	Uncharacterized protein, isoform B (Uncharacterized protein,	w
+UNCL	human	Q53HI1	UNC50	Q53HI1	2	129		
+UNCNACBETA	fly	FBgn0031264	uncNacbeta	Q9VPR2	93	389	Transcription factor BTF3	
+UNCOATING	virus	A0A346FRL1	AKMV-88-119	A0A346FRL1	9	213	Uncoating factor OPG117	w
+UNCOATING	virus	A0A3G2KXW8	OPVA110	A0A3G2KXW8	5	208	Uncoating factor OPG117	w
+UNCOATING	virus	D5FLE0	VPXV-CA-109	D5FLE0	6	202	Uncoating factor OPG117	w
+UNCOATING	virus	D5FLE9	RCNV-Herman-106	D5FLE9	3	194	Uncoating factor OPG117	w
+UNCOATING	virus	D5FLF8	SKPV-WA-109	D5FLF8	5	208	Uncoating factor OPG117	w
+UNCOATING	virus	P04305	OPG117	P04305	5	218	Uncoating factor OPG117	w
+UNCOATING	virus	P0DST7	OPG117	P0DST7	5	199	Uncoating factor OPG117	w
+UNCOATING	virus	Q0NP99	TATV_DAH68_112	Q0NP99	5	220	Uncoating factor OPG117	w
+UNCOATING	virus	Q8JLC1	EVM094	Q8JLC1	7	169	Uncoating factor OPG117	w
+UNCOATING	virus	Q8QMV5	CPXV122 CDS	Q8QMV5	8	224	Uncoating factor OPG117	w
+UNCOATING	virus	Q8V2R4		Q8V2R4	5	207	Uncoating factor OPG117	w
+UNCOATING	virus	Q8V4Y3	E5R	Q8V4Y3	7	186	Uncoating factor OPG117	w
+UNCOATING	yeast	Q06677	SWA2	Q06677	25	92	Auxilin-like clathrin uncoating factor SWA2 (Bud site select	w
+UNCONVENTIONAL	fly	FBgn0035025	uri	Q9W148	13	19	Unconventional prefoldin RPB5 interactor-like protein	w
+UNCONVENTIONAL	fly	FBgn0086347	Myo31DF	Q23978	22	231	Unconventional myosin ID (MyoID) (Brush border myosin IA) (B	w
+UNCONVENTIONAL	fly	FBgn0261397	didum	A1Z6Z8	13	86	Dilute class unconventional myosin, isoform C	w
+UNCONVENTIONAL	human	B0I1T2	MYO1G	B0I1T2	10	126	Unconventional myosin-Ig [Cleaved into: Minor histocompatibi	w
+UNCONVENTIONAL	human	B2RTY4	MYO9A	B2RTY4	17	184	Unconventional myosin-IXa (Unconventional myosin-9a)	w
+UNCONVENTIONAL	human	O00159	MYO1C	O00159	28	578	Unconventional myosin-Ic (Myosin I beta) (MMI-beta) (MMIb)	w
+UNCONVENTIONAL	human	O00160	MYO1F	O00160	37	366	Unconventional myosin-If (Myosin-1F) (Myosin-Ie)	w
+UNCONVENTIONAL	human	O43795	MYO1B	O43795	29	406	Unconventional myosin-Ib (MYH-1c) (Myosin I alpha) (MMI-alph	w
+UNCONVENTIONAL	human	O94763	URI1	O94763	55	247	Unconventional prefoldin RPB5 interactor 1 (Protein NNX3) (P	w
+UNCONVENTIONAL	human	O94832	MYO1D	O94832	15	255	Unconventional myosin-Id	w
+UNCONVENTIONAL	human	Q12965	MYO1E	Q12965	41	347	Unconventional myosin-Ie (Myosin-Ic) (Unconventional myosin 	w
+UNCONVENTIONAL	human	Q13402	MYO7A	Q13402	3	195	Unconventional myosin-VIIa	w
+UNCONVENTIONAL	human	Q13459	MYO9B	Q13459	23	257	Unconventional myosin-IXb (Unconventional myosin-9b)	w
+UNCONVENTIONAL	human	Q6PIF6	MYO7B	Q6PIF6	13	132	Unconventional myosin-VIIb	w
+UNCONVENTIONAL	human	Q8IUG5	MYO18B	Q8IUG5	0	10	Unconventional myosin-XVIIIb	w
+UNCONVENTIONAL	human	Q8N1T3	MYO1H	Q8N1T3	3	57	Unconventional myosin-Ih (Myosin-1H)	w
+UNCONVENTIONAL	human	Q92614	MYO18A	Q92614	33	232	Unconventional myosin-XVIIIa (Molecule associated with JAK3 	w
+UNCONVENTIONAL	human	Q96H55	MYO19	Q96H55	37	353	Unconventional myosin-XIX (Myosin head domain-containing pro	w
+UNCONVENTIONAL	human	Q96JP2	MYO15B	Q96JP2	3	16	Unconventional myosin-XVB (Myosin XVBP) (Unconventional myos	w
+UNCONVENTIONAL	human	Q9HD67	MYO10	Q9HD67	14	173	Unconventional myosin-X (Unconventional myosin-10)	w
+UNCONVENTIONAL	human	Q9NQX4	MYO5C	Q9NQX4	19	211	Unconventional myosin-Vc	w
+UNCONVENTIONAL	human	Q9UBC5	MYO1A	Q9UBC5	7	101	Unconventional myosin-Ia (Brush border myosin I) (BBM-I) (BB	w
+UNCONVENTIONAL	human	Q9ULV0	MYO5B	Q9ULV0	23	214	Unconventional myosin-Vb	w
+UNCONVENTIONAL	human	Q9UM54	MYO6	Q9UM54	43	427	Unconventional myosin-VI (Unconventional myosin-6)	w
+UNCONVENTIONAL	human	Q9Y4I1	MYO5A	Q9Y4I1	31	310	Unconventional myosin-Va (Dilute myosin heavy chain, non-mus	w
+UNCONVENTIONAL	human	Q9Y6X6	MYO16	Q9Y6X6	11	66	Unconventional myosin-XVI (Neuronal tyrosine-phosphorylated 	w
+UNCONVENTIONAL	worm	Q19901	hum-1	Q19901	7	64	Unconventional myosin-Ie	w
+UNCONVENTIONAL	worm	Q966M4	uri-1	Q966M4	5	24	Unconventional prefoldin RPB5 interactor	w
+UNCONVENTIONAL	zebrafish	A0A8M3APY8	myo1cb	A0A8M3APY8	0	44	Unconventional myosin-Ic	w
+UNCONVENTIONAL	zebrafish	A0A8M9PH95	myo6a	A0A8M9PH95	32	124	Unconventional myosin-VI	w
+UNCONVENTIONAL	zebrafish	A5PF48	myo1c	A5PF48	0	26	Unconventional myosin-Ic	w
+UNCONVENTIONAL	zebrafish	E7F9L8	myo1d	E7F9L8	1	21	Unconventional myosin-Id	w
+UNCONVENTIONAL	zebrafish	F1R617	myo1b	F1R617	0	30	Unconventional myosin-Ib	w
+UNCOORDINATED	fly	FBgn0003950	unc	Q9VRF2	1	11	Uncoordinated (Uncoordinated, isoform B)	w
+UNCOORDINATED	fly	FBgn0039536	unc80	A0A0B4KHR1	0	1	Uncoordinated 80, isoform F	w
+UNCOORDINATED	fly	FBgn0040395	Unc-76	Q9W525	6	17	LD08195p (Uncoordinated 76, isoform A) (Uncoordinated 76, is	w
+UNCOORDINATED	fly	FBgn0051352	Unc-115a	E1JIH3	4	15	Uncoordinated 115a, isoform B	w
+UNCOORDINATED	fly	FBgn0260463	Unc-115b	Q8INN6	0	7	Uncoordinated 115b, isoform C	w
+UNCOORDINATED	fly	FBgn0288846	unc-45	Q9VHW4	4	23	uncoordinated 45	w
+UNCOORDINATED	worm	O17581	mau-2	O17581	0	8	Maternal uncoordinated protein 2	w
+UNCOORDINATED	worm	O62305	unc-43	O62305	4	18	Calcium/calmodulin-dependent protein kinase type II (CaM kin	w
+UNCOORDINATED	worm	P42173	unc-79	P42173	0	57	Uncoordinated protein 79	w
+UNCOORDINATED	worm	Q22271	unc-58	Q22271	27	27	Uncoordinated protein 58	w
+UNCOORDINATED	worm	Q23023	unc-51	Q23023	10	70	Serine/threonine-protein kinase unc-51 (EC 2.7.11.1) (Uncoor	w
+UNCOORDINATED-104	fly	FBgn0267002	unc-104	A1ZAJ2	2	12	uncoordinated-104	w
+UNCOORDINATED-LIKE	fly	FBgn0037609	Unc50	Q9VHN5	1	35	Protein unc-50 homolog (Uncoordinated-like protein)	w
+UNCOORDINATED-LIKE	human	Q53HI1	UNC50	Q53HI1	2	129	Protein unc-50 homolog (Periodontal ligament-specific protei	w
+UNCOORDINATION	worm	O45607	enu-3.1	O45607	0	1	ENhancer of Uncoordination	w
+UNCOUPLING	fly	FBgn0031757	Ucp4C	Q9VMK1	0	0	Mitochondrial uncoupling protein 4C	w
+UNCOUPLING	fly	FBgn0031758	Ucp4B	Q9VMK0	0	1	IP15246p (Uncoupling protein 4B, isoform A)	w
+UNCOUPLING	fly	FBgn0036199	Bmcp	Q7K566	0	1	Mitochondrial uncoupling protein Bmcp (Brain mitochondrial c	w
+UNCOUPLING	human	O95258	SLC25A14	O95258	3	79	Brain mitochondrial carrier protein 1 (BMCP-1) (Mitochondria	w
+UNCOUPLING	human	O95847	SLC25A27	O95847	0	34	Mitochondrial uncoupling protein 4 (UCP 4) (Solute carrier f	w
+UNCOUPLING	human	P25874	UCP1	P25874	2	120	Mitochondrial brown fat uncoupling protein 1 (UCP 1) (Solute	w
+UNCOUPLING	human	P55851	UCP2	P55851	6	115	Dicarboxylate carrier SLC25A8 (Mitochondrial uncoupling prot	w
+UNCOUPLING	human	P55916	UCP3	P55916	4	81	Putative mitochondrial transporter UCP3 (Solute carrier fami	w
+UNCOUPLING	human	Q5SVS4	SLC25A30	Q5SVS4	1	93	Kidney mitochondrial carrier protein 1 (Solute carrier famil	w
+UNCOUPLING	human	Q9HC21	SLC25A19	Q9HC21	3	217	Mitochondrial thiamine pyrophosphate carrier (Mitochondrial 	w
+UNCOUPLING	worm	O01883	ucp-4	O01883	0	1	UnCoupling Protein (Mitochondrial substrate carrier)	w
+UNCP-18	worm	O44412	uncp-18	O44412	10	32	Syntaxin-binding protein 1	
+UNCX	human	A6NJT0	UNCX	A6NJT0	120	420	Homeobox protein unc-4 homolog (Homeobox protein Uncx4.1)	
+UNCX	mus-musculus	O08934	Uncx	O08934	2	7	Homeobox protein unc-4 homolog	
+UNCX	rattus-norvegicus	P97830	Uncx	P97830	3	6	Homeobox protein unc-4 homolog	
+UNCX	zebrafish	A0A0R4IVX3	uncx	A0A0R4IVX3	2	6	Homeobox protein unc-4 homolog	
+UNCX	zebrafish	Q50D79	uncx	Q50D79	2	6	Homeobox protein unc-4 homolog	
+UNCX4	human	A6NJT0	UNCX	A6NJT0	120	420	Homeobox protein unc-4 homolog (Homeobox protein Uncx4.1)	w
+UNCX4.1	human	A6NJT0	UNCX	A6NJT0	120	420		

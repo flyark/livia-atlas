@@ -1,21 +1,98 @@
-PHA2	candida-albicans-237561	A0A1D8PJH8	PHA2	A0A1D8PJH8	0	2	prephenate dehydratase
-PHA2	schizosaccharomyces-pombe	O14361	pha2	O14361	0	2	Putative prephenate dehydratase
-PHAC1	pseudomonas-aeruginosa	G3XCV5	phaC1	G3XCV5	0	3	Poly(3-hydroxyalkanoic acid) synthase 1
-PHAC2	pseudomonas-aeruginosa	G3XCZ9	phaC2	G3XCZ9	0	3	Poly(3-hydroxyalkanoic acid) synthase 2
-PHACTR1	mus-musculus	Q2M3X8	Phactr1	Q2M3X8	3	11	Phosphatase and actin regulator 1
-PHACTR1	rattus-norvegicus	P62024	Phactr1	P62024	3	7	Phosphatase and actin regulator 1
-PHACTR2	mus-musculus	Q3UQ19	Phactr2	Q3UQ19	2	3	Phosphatase and actin regulator
-PHACTR2	rattus-norvegicus	P62025	Phactr2	P62025	1	2	Phosphatase and actin regulator 2
-PHACTR3	mus-musculus	Q8BYK5	Phactr3	Q8BYK5	0	2	Phosphatase and actin regulator 3
-PHACTR4	mus-musculus	Q501J7	Phactr4	Q501J7	2	4	Phosphatase and actin regulator 4
-PHAD	pseudomonas-aeruginosa	G3XD91	phaD	G3XD91	0	53	Poly(3-hydroxyalkanoic acid) depolymerase
-PHAF	pseudomonas-aeruginosa	Q9HUC3	phaF	Q9HUC3	0	1	Polyhydroxyalkanoate synthesis protein PhaF
-PHAF1	mus-musculus	Q922R1	Phaf1	Q922R1	3	7	Phagosome assembly factor 1
-PHAF1	rattus-norvegicus	O08654	Phaf1	O08654	4	11	Phagosome assembly factor 1
-PHAG	pseudomonas-aeruginosa	Q51553	phaG	Q51553	2	53	(R)-3-hydroxydecanoyl-ACP:CoA transacylase
-PHAN3	glycine-max	K7MT37	PHAN3	K7MT37	5	27	MYB/HD-like transcription factor
-PHANA	glycine-max	A0A0K2CTB2	PHANa	A0A0K2CTB2	5	27	MYB/HD-like transcription factor
-PHANB	glycine-max	Q4VPE5	PHANb	Q4VPE5	5	27	Phantastica transcription factor b
-PHAX	mus-musculus	Q9JJT9	Phax	Q9JJT9	5	20	Phosphorylated adapter RNA export protein
-PHAX	rattus-norvegicus	Q63068	Phax	Q63068	2	16	Phosphorylated adapter RNA export protein
-PHAZ	dictyostelium-discoideum	Q54PS3	phaZ	Q54PS3	0	4	Polyhydroxybutyrate depolymerase
+PHA-1	worm	G5EGL5	pha-1	G5EGL5	0	1	F-box domain-containing protein	
+PHA-2	worm	Q21578	pha-2	Q21578	4	9	Homeobox protein HEX homolog pha-2	w
+PHA-2	worm	Q21578	pha-2	Q21578	4	9	Homeobox protein HEX homolog pha-2	w
+PHA-4	worm	Q17381	pha-4	Q17381	3	112	Defective pharyngeal development protein 4	
+PHA2	candida-albicans-237561	A0A1D8PJH8	PHA2	A0A1D8PJH8	0	2	prephenate dehydratase	
+PHA2	schizosaccharomyces-pombe	O14361	pha2	O14361	0	2	Putative prephenate dehydratase	
+PHA2	yeast	P32452	PHA2	P32452	0	7	Probable prephenate dehydratase	
+PHAC-1	worm	P91855	phac-1	P91855	1	29	Phosphatase and actin regulator 2	
+PHAC1	pseudomonas-aeruginosa	G3XCV5	phaC1	G3XCV5	0	3	Poly(3-hydroxyalkanoic acid) synthase 1	
+PHAC2	pseudomonas-aeruginosa	G3XCZ9	phaC2	G3XCZ9	0	3	Poly(3-hydroxyalkanoic acid) synthase 2	
+PHACS	human	Q96QU6	ACCS	Q96QU6	2	38		
+PHACTR1	human	Q9C0D0	PHACTR1	Q9C0D0	127	344	Phosphatase and actin regulator 1	
+PHACTR1	mus-musculus	Q2M3X8	Phactr1	Q2M3X8	3	11	Phosphatase and actin regulator 1	
+PHACTR1	rattus-norvegicus	P62024	Phactr1	P62024	3	7	Phosphatase and actin regulator 1	
+PHACTR2	human	O75167	PHACTR2	O75167	13	48	Phosphatase and actin regulator 2	
+PHACTR2	mus-musculus	Q3UQ19	Phactr2	Q3UQ19	2	3	Phosphatase and actin regulator	
+PHACTR2	rattus-norvegicus	P62025	Phactr2	P62025	1	2	Phosphatase and actin regulator 2	
+PHACTR3	human	Q96KR7	PHACTR3	Q96KR7	108	374	Phosphatase and actin regulator 3 (Scaffold-associated PP1-i	
+PHACTR3	mus-musculus	Q8BYK5	Phactr3	Q8BYK5	0	2	Phosphatase and actin regulator 3	
+PHACTR4	human	Q8IZ21	PHACTR4	Q8IZ21	19	129	Phosphatase and actin regulator 4	
+PHACTR4	mus-musculus	Q501J7	Phactr4	Q501J7	2	4	Phosphatase and actin regulator 4	
+PHACTR4A	zebrafish	A0AB32TEG5	phactr4a	A0AB32TEG5	4	4	Phosphatase and actin regulator 4	
+PHACTR4A	zebrafish	F1QIC4	phactr4a	F1QIC4	4	4	Phosphatase and actin regulator 4A	
+PHACTR4B	zebrafish	Q6PEI3	phactr4b	Q6PEI3	4	4	Phosphatase and actin regulator 4B	
+PHAD	pseudomonas-aeruginosa	G3XD91	phaD	G3XD91	0	53	Poly(3-hydroxyalkanoic acid) depolymerase	
+PHAE1	fly	FBgn0263234	Phae1	Q9VKA9	76	250	AT26814p (Phaedra 1, isoform A (EC 3.4.21.-)) (Phaedra 1, is	
+PHAE2	fly	FBgn0263235	Phae2	Q9VKA8	87	243	Phaedra 2, isoform B (EC 3.4.21.-) (Phaedra 2, isoform C)	
+PHAEDRA	fly	FBgn0263234	Phae1	Q9VKA9	76	250	AT26814p (Phaedra 1, isoform A (EC 3.4.21.-)) (Phaedra 1, is	w
+PHAEDRA	fly	FBgn0263235	Phae2	Q9VKA8	87	243	Phaedra 2, isoform B (EC 3.4.21.-) (Phaedra 2, isoform C)	w
+PHAF	pseudomonas-aeruginosa	Q9HUC3	phaF	Q9HUC3	0	1	Polyhydroxyalkanoate synthesis protein PhaF	
+PHAF1	fly	FBgn0035877	CG7083	Q9VSH9	1	6	PHAF1 protein CG7083	w
+PHAF1	human	Q9BSU1	PHAF1	Q9BSU1	13	103	Phagosome assembly factor 1	
+PHAF1	mus-musculus	Q922R1	Phaf1	Q922R1	3	7	Phagosome assembly factor 1	
+PHAF1	rattus-norvegicus	O08654	Phaf1	O08654	4	11	Phagosome assembly factor 1	
+PHAF1	worm	P34692	T01G9.2	P34692	2	13	PHAF1 protein T01G9.2	w
+PHAF1	zebrafish	Q1LV04	phaf1	Q1LV04	0	13	Si:dkey-102f14.5	
+PHAF1_HUMAN	human	Q9BSU1	PHAF1	Q9BSU1	13	103		
+PHAG	pseudomonas-aeruginosa	Q51553	phaG	Q51553	2	53	(R)-3-hydroxydecanoyl-ACP:CoA transacylase	
+PHAG1_HUMAN	human	Q9NWQ8	PAG1	Q9NWQ8	48	133		
+PHAGE	worm	E1B6Q6	CELE_ZK1127.13	E1B6Q6	2	3	Phage tail protein	w
+PHAGE	worm	F0IWU1	CELE_F23C8.3	F0IWU1	0	1	Phage protein	w
+PHAGE	worm	P91066	C17H11.5	P91066	0	9	Phage protein	w
+PHAGOCYTE	fly	FBgn0243511	psidin	Q9VDQ7	12	96	Phagocyte signaling-impaired protein (N-terminal acetyltrans	w
+PHAGOSOME	human	Q9BSU1	PHAF1	Q9BSU1	13	103	Phagosome assembly factor 1	w
+PHAKININ	human	Q13515	BFSP2	Q13515	39	125	Phakinin (49 kDa cytoskeletal protein) (Beaded filament stru	w
+PHAN3	glycine-max	K7MT37	PHAN3	K7MT37	5	27	MYB/HD-like transcription factor	
+PHANA	glycine-max	A0A0K2CTB2	PHANa	A0A0K2CTB2	5	27	MYB/HD-like transcription factor	
+PHANB	glycine-max	Q4VPE5	PHANb	Q4VPE5	5	27	Phantastica transcription factor b	
+PHANTOM	fly	FBgn0004959	phtm	Q9VWR5	1	13	Cytochrome P450 306a1 (CYPCCCVIA1) (EC 1.14.-.-) (Protein ph	w
+PHAP1	human	P39687	ANP32A	P39687	15	206		
+PHAPI2	human	Q92688	ANP32B	Q92688	16	208		
+PHAPII	human	Q01105	SET	Q01105	34	308	Protein SET (HLA-DR-associated protein II) (Inhibitor of gra	w
+PHAR1_HUMAN	human	Q9C0D0	PHACTR1	Q9C0D0	127	344		
+PHAR2_HUMAN	human	O75167	PHACTR2	O75167	13	48		
+PHAR3_HUMAN	human	Q96KR7	PHACTR3	Q96KR7	108	374		
+PHAR4_HUMAN	human	Q8IZ21	PHACTR4	Q8IZ21	19	129		
+PHARYNGEAL	worm	H2KZY6	marg-1	H2KZY6	0	6	Pharyngeal MARGginal cell marker	w
+PHARYNGEAL	worm	O62203	phm-2	O62203	1	19	Pharyngeal muscle protein 2	w
+PHARYNGEAL	worm	Q17381	pha-4	Q17381	3	112	Defective pharyngeal development protein 4	w
+PHARYNX	worm	A0A0K3AV61	idpp-2	A0A0K3AV61	0	1	Intrinsically Disordered Protein, expressed in Pharynx	w
+PHARYNX	worm	O45522	idpp-3	O45522	0	1	Intrinsically Disordered Protein, expressed in Pharynx	w
+PHARYNX	worm	P34587	idpp-15	P34587	1	21	Intrinsically disordered protein, expressed in pharynx 15	w
+PHARYNX	worm	P41990	apx-1	P41990	0	1	Anterior pharynx in excess protein 1	w
+PHARYNX	worm	Q18329	idpp-14	Q18329	0	1	Intrinsically Disordered Protein, expressed in Pharynx	w
+PHARYNX	worm	Q94131	pie-1	Q94131	1	70	Pharynx and intestine in excess protein 1	w
+PHARYNX	worm	Q9N5B1	idpp-12	Q9N5B1	0	3	Intrinsically Disordered Protein, expressed in Pharynx	w
+PHARYNX	worm	Q9XU68	idpp-7	Q9XU68	0	2	Intrinsically Disordered Protein, expressed in Pharynx	w
+PHASE	fly	FBgn0032921	Mpp6	Q95PE4	5	17	GEO07784p1 (M phase phosphoprotein 6) (M-phase phosphoprotei	w
+PHASE	fly	FBgn0052529	Hers	Q9VWC0	0	1	Histone gene-specific epigenetic repressor in late S phase, 	w
+PHASE	human	O00566	MPHOSPH10	O00566	49	498	U3 small nucleolar ribonucleoprotein protein MPP10 (M phase 	w
+PHASE	human	P15170	GSPT1	P15170	31	327	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+PHASE	human	Q8IYD1	GSPT2	Q8IYD1	25	155	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+PHASE	human	Q8NFT6	DBF4B	Q8NFT6	10	79	Protein DBF4 homolog B (Activator of S phase kinase-like pro	w
+PHASE	human	Q9BY12	SCAPER	Q9BY12	8	60	S phase cyclin A-associated protein in the endoplasmic retic	w
+PHASE	human	Q9UBU7	DBF4	Q9UBU7	64	323	Protein DBF4 homolog A (Activator of S phase kinase) (Chiffo	w
+PHASE	worm	G5EGE8	scpr-1	G5EGE8	0	1	S phase cyclin A-associated protein in the endoplasmic retic	w
+PHASE	yeast	P42933	SPG5	P42933	0	6	Stationary phase protein 5	w
+PHASE	yeast	P50088	SPG1	P50088	1	5	Stationary phase gene 1 protein	w
+PHASE	yeast	Q04398	SPG3	Q04398	0	5	Stationary phase protein 3	w
+PHASE	yeast	Q04438	SPG4	Q04438	0	2	Stationary phase protein 4	w
+PHASE	zebrafish	B1H1L9	scaper	B1H1L9	1	4	S phase cyclin A-associated protein in the endoplasmic retic	w
+PHASE	zebrafish	Q7T358	gspt1l	Q7T358	10	133	G1 to S phase transition 1	w
+PHASE-DEPENDENT	human	Q86UD0	SAPCD2	Q86UD0	24	69	Suppressor APC domain-containing protein 2 (Tumor specificit	w
+PHASE-EXPRESSED	human	Q9NYZ3	GTSE1	Q9NYZ3	59	335	G2 and S phase-expressed protein 1 (GTSE-1) (Protein B99 hom	w
+PHASE-SPECIFIC	human	Q7L622	G2E3	Q7L622	31	194	G2/M phase-specific E3 ubiquitin-protein ligase (EC 2.3.2.26	w
+PHASE-SPECIFIC	zebrafish	Q8AW58	g2e3	Q8AW58	1	27	G2/M phase-specific E3 ubiquitin-protein ligase	w
+PHASER	fly	FBgn0036522	Phs	Q9VUS0	82	337	FI01202p (Phaser)	w
+PHAT-1	worm	Q9GYJ3	phat-1	Q9GYJ3	0	2	ShKT domain-containing protein	
+PHAT-2	worm	Q9GYJ2	phat-2	Q9GYJ2	0	1	ShKT domain-containing protein	
+PHAT-4	worm	O16424	phat-4	O16424	1	1	ShKT domain-containing protein	
+PHAT-7	worm	O16226	phat-7	O16226	0	1	ShKT domain-containing protein	
+PHAT-8	worm	O17815	phat-8	O17815	0	5	ShKT domain-containing protein	
+PHAX	fly	FBgn0033380	Phax	A1Z7P3	3	14	Phosphorylated adapter RNA export protein (RNA U small nucle	
+PHAX	human	Q9H814	PHAX	Q9H814	44	290	Phosphorylated adapter RNA export protein (RNA U small nucle	
+PHAX	mus-musculus	Q9JJT9	Phax	Q9JJT9	5	20	Phosphorylated adapter RNA export protein	
+PHAX	rattus-norvegicus	Q63068	Phax	Q63068	2	16	Phosphorylated adapter RNA export protein	
+PHAX_HUMAN	human	Q9H814	PHAX	Q9H814	44	290		
+PHAZ	dictyostelium-discoideum	Q54PS3	phaZ	Q54PS3	0	4	Polyhydroxybutyrate depolymerase	

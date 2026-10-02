@@ -1,38 +1,314 @@
-SPL	arabidopsis-thaliana	O81836	SPL	O81836	5	34	Protein SPOROCYTELESS
-SPL	leishmania-infantum	A4I5R3	SPL	A4I5R3	0	5	sphinganine-1-phosphate aldolase
-SPL1	arabidopsis-thaliana	Q94HV7	SPL1	Q94HV7	0	2	E3 ubiquitin-protein ligase SPL1
-SPL1	arabidopsis-thaliana	Q9SMX9	SPL1	Q9SMX9	5	17	Squamosa promoter-binding-like protein 1
-SPL1	oryza-sativa-subsp-japonica	Q9LGU7	SPL1	Q9LGU7	1	32	Squamosa promoter-binding-like protein 1
-SPL10	arabidopsis-thaliana	Q8S9L0	SPL10	Q8S9L0	1	18	Squamosa promoter-binding-like protein 10
-SPL11	arabidopsis-thaliana	Q9FZK0	SPL11	Q9FZK0	1	15	Squamosa promoter-binding-like protein 11
-SPL11	oryza-sativa-subsp-japonica	Q0IMG9	SPL11	Q0IMG9	0	1	E3 ubiquitin-protein ligase SPL11
-SPL12	arabidopsis-thaliana	Q9S7P5	SPL12	Q9S7P5	2	14	Squamosa promoter-binding-like protein 12
-SPL12	oryza-sativa-subsp-japonica	Q5Z818	SPL12	Q5Z818	3	29	Squamosa promoter-binding-like protein 12
-SPL13B	arabidopsis-thaliana	P0DI11	SPL13B	P0DI11	2	20	Squamosa promoter-binding-like protein 13B
-SPL14	arabidopsis-thaliana	Q8RY95	SPL14	Q8RY95	0	15	Squamosa promoter-binding-like protein 14
-SPL14	oryza-sativa-subsp-japonica	Q7EXZ2	SPL14	Q7EXZ2	6	96	Squamosa promoter-binding-like protein 14
-SPL15	arabidopsis-thaliana	Q9M2Q6	SPL15	Q9M2Q6	2	67	Squamosa promoter-binding-like protein 15
-SPL15	oryza-sativa-subsp-japonica	Q6Z8M8	SPL15	Q6Z8M8	0	29	Squamosa promoter-binding-like protein 15
-SPL16	arabidopsis-thaliana	Q700C2	SPL16	Q700C2	1	13	Squamosa promoter-binding-like protein 16
-SPL17	oryza-sativa-subsp-japonica	A3C057	SPL17	A3C057	6	98	Squamosa promoter-binding-like protein 17
-SPL2	arabidopsis-thaliana	Q9S840	SPL2	Q9S840	0	12	Squamosa promoter-binding-like protein 2
-SPL2	oryza-sativa-subsp-japonica	Q0JGI1	SPL2	Q0JGI1	19	93	Squamosa promoter-binding-like protein 2
-SPL3	arabidopsis-thaliana	P93015	SPL3	P93015	1	15	Squamosa promoter-binding-like protein 3
-SPL3	oryza-sativa-subsp-japonica	A3A2Z8	SPL3	A3A2Z8	4	29	Squamosa promoter-binding-like protein 3
-SPL4	arabidopsis-thaliana	Q9S7A9	SPL4	Q9S7A9	1	5	Squamosa promoter-binding-like protein 4
-SPL5	arabidopsis-thaliana	Q9S758	SPL5	Q9S758	0	2	Squamosa promoter-binding-like protein 5
-SPL5	oryza-sativa-subsp-japonica	Q0E3F8	SPL5	Q0E3F8	14	98	Squamosa promoter-binding-like protein 5
-SPL6	arabidopsis-thaliana	Q94JW8	SPL6	Q94JW8	5	75	Squamosa promoter-binding-like protein 6
-SPL6	oryza-sativa-subsp-japonica	Q75LH6	SPL6	Q75LH6	0	32	Squamosa promoter-binding-like protein 6
-SPL7	arabidopsis-thaliana	Q8S9G8	SPL7	Q8S9G8	0	3	Squamosa promoter-binding-like protein 7
-SPL7	oryza-sativa-subsp-japonica	Q7XT42	SPL7	Q7XT42	2	29	Squamosa promoter-binding-like protein 7
-SPL8	arabidopsis-thaliana	Q8GXL3	SPL8	Q8GXL3	5	59	Squamosa promoter-binding-like protein 8
-SPL9	arabidopsis-thaliana	Q700W2	SPL9	Q700W2	4	71	Squamosa promoter-binding-like protein 9
-SPL9	oryza-sativa-subsp-japonica	Q6I576	SPL9	Q6I576	0	5	Squamosa promoter-binding-like protein 9
-SPL9A	glycine-max	K7K967	SPL9A	K7K967	6	137	Squamosa promoter-binding-like protein 9a
-SPL9B	glycine-max	I1N2A2	SPL9B	I1N2A2	5	136	SBP-type domain-containing protein
-SPL9C	glycine-max	K7KF17	SPL9C	K7KF17	3	137	SBP-type domain-containing protein
-SPL9D	glycine-max	I1N969	SPL9D	I1N969	10	137	SBP-type domain-containing protein
-SPLA	staphylococcus-aureus-93061	Q2FXC2	splA	Q2FXC2	0	1	Serine protease SplA
-SPLB	dictyostelium-discoideum	P18161	splB	P18161	0	29	Dual specificity protein kinase splB
-SPLE	staphylococcus-aureus-93061	Q2FXC7	splE	Q2FXC7	0	6	Serine protease SplE
+SPL	arabidopsis-thaliana	O81836	SPL	O81836	5	34	Protein SPOROCYTELESS	
+SPL	leishmania-infantum	A4I5R3	SPL	A4I5R3	0	5	sphinganine-1-phosphate aldolase	
+SPL-1	worm	Q9Y194	spl-1	Q9Y194	1	10	Sphingosine-1-phosphate lyase	
+SPL-2	worm	Q17456	spl-2	Q17456	1	2	sphinganine-1-phosphate aldolase	
+SPL-3	worm	Q966E7	spl-3	Q966E7	0	1	sphinganine-1-phosphate aldolase	
+SPL1	arabidopsis-thaliana	Q94HV7	SPL1	Q94HV7	0	2	E3 ubiquitin-protein ligase SPL1	
+SPL1	arabidopsis-thaliana	Q9SMX9	SPL1	Q9SMX9	5	17	Squamosa promoter-binding-like protein 1	
+SPL1	oryza-sativa-subsp-japonica	Q9LGU7	SPL1	Q9LGU7	1	32	Squamosa promoter-binding-like protein 1	
+SPL10	arabidopsis-thaliana	Q8S9L0	SPL10	Q8S9L0	1	18	Squamosa promoter-binding-like protein 10	
+SPL11	arabidopsis-thaliana	Q9FZK0	SPL11	Q9FZK0	1	15	Squamosa promoter-binding-like protein 11	
+SPL11	oryza-sativa-subsp-japonica	Q0IMG9	SPL11	Q0IMG9	0	1	E3 ubiquitin-protein ligase SPL11	
+SPL12	arabidopsis-thaliana	Q9S7P5	SPL12	Q9S7P5	2	14	Squamosa promoter-binding-like protein 12	
+SPL12	oryza-sativa-subsp-japonica	Q5Z818	SPL12	Q5Z818	3	29	Squamosa promoter-binding-like protein 12	
+SPL13B	arabidopsis-thaliana	P0DI11	SPL13B	P0DI11	2	20	Squamosa promoter-binding-like protein 13B	
+SPL14	arabidopsis-thaliana	Q8RY95	SPL14	Q8RY95	0	15	Squamosa promoter-binding-like protein 14	
+SPL14	oryza-sativa-subsp-japonica	Q7EXZ2	SPL14	Q7EXZ2	6	96	Squamosa promoter-binding-like protein 14	
+SPL15	arabidopsis-thaliana	Q9M2Q6	SPL15	Q9M2Q6	2	67	Squamosa promoter-binding-like protein 15	
+SPL15	oryza-sativa-subsp-japonica	Q6Z8M8	SPL15	Q6Z8M8	0	29	Squamosa promoter-binding-like protein 15	
+SPL16	arabidopsis-thaliana	Q700C2	SPL16	Q700C2	1	13	Squamosa promoter-binding-like protein 16	
+SPL17	oryza-sativa-subsp-japonica	A3C057	SPL17	A3C057	6	98	Squamosa promoter-binding-like protein 17	
+SPL2	arabidopsis-thaliana	Q9S840	SPL2	Q9S840	0	12	Squamosa promoter-binding-like protein 2	
+SPL2	oryza-sativa-subsp-japonica	Q0JGI1	SPL2	Q0JGI1	19	93	Squamosa promoter-binding-like protein 2	
+SPL2	yeast	P38839	SPL2	P38839	0	8	Putative cyclin-dependent kinase inhibitor SPL2	
+SPL3	arabidopsis-thaliana	P93015	SPL3	P93015	1	15	Squamosa promoter-binding-like protein 3	
+SPL3	oryza-sativa-subsp-japonica	A3A2Z8	SPL3	A3A2Z8	4	29	Squamosa promoter-binding-like protein 3	
+SPL4	arabidopsis-thaliana	Q9S7A9	SPL4	Q9S7A9	1	5	Squamosa promoter-binding-like protein 4	
+SPL5	arabidopsis-thaliana	Q9S758	SPL5	Q9S758	0	2	Squamosa promoter-binding-like protein 5	
+SPL5	oryza-sativa-subsp-japonica	Q0E3F8	SPL5	Q0E3F8	14	98	Squamosa promoter-binding-like protein 5	
+SPL6	arabidopsis-thaliana	Q94JW8	SPL6	Q94JW8	5	75	Squamosa promoter-binding-like protein 6	
+SPL6	oryza-sativa-subsp-japonica	Q75LH6	SPL6	Q75LH6	0	32	Squamosa promoter-binding-like protein 6	
+SPL7	arabidopsis-thaliana	Q8S9G8	SPL7	Q8S9G8	0	3	Squamosa promoter-binding-like protein 7	
+SPL7	oryza-sativa-subsp-japonica	Q7XT42	SPL7	Q7XT42	2	29	Squamosa promoter-binding-like protein 7	
+SPL8	arabidopsis-thaliana	Q8GXL3	SPL8	Q8GXL3	5	59	Squamosa promoter-binding-like protein 8	
+SPL9	arabidopsis-thaliana	Q700W2	SPL9	Q700W2	4	71	Squamosa promoter-binding-like protein 9	
+SPL9	oryza-sativa-subsp-japonica	Q6I576	SPL9	Q6I576	0	5	Squamosa promoter-binding-like protein 9	
+SPL9A	glycine-max	K7K967	SPL9A	K7K967	6	137	Squamosa promoter-binding-like protein 9a	
+SPL9B	glycine-max	I1N2A2	SPL9B	I1N2A2	5	136	SBP-type domain-containing protein	
+SPL9C	glycine-max	K7KF17	SPL9C	K7KF17	3	137	SBP-type domain-containing protein	
+SPL9D	glycine-max	I1N969	SPL9D	I1N969	10	137	SBP-type domain-containing protein	
+SPLA	staphylococcus-aureus-93061	Q2FXC2	splA	Q2FXC2	0	1	Serine protease SplA	
+SPLA2	fly	FBgn0033170	sPLA2	Q6XPX3	37	312	phospholipase A2 (EC 3.1.1.4)	
+SPLA2	human	O15496	PLA2G10	O15496	10	163	Group 10 secretory phospholipase A2 (EC 3.1.1.4) (Group X se	w
+SPLA2	human	P14555	PLA2G2A	P14555	12	157	Phospholipase A2, membrane associated (EC 3.1.1.4) (GIIC sPL	w
+SPLA2	human	Q9BZM1	PLA2G12A	Q9BZM1	5	75	Group XIIA secretory phospholipase A2 (GXII sPLA2) (sPLA2-XI	w
+SPLA2	human	Q9BZM2	PLA2G2F	Q9BZM2	10	46	Group IIF secretory phospholipase A2 (GIIF sPLA2) (sPLA2-IIF	w
+SPLA2	human	Q9NZ20	PLA2G3	Q9NZ20	15	152	Group 3 secretory phospholipase A2 (EC 3.1.1.4) (Group III s	w
+SPLA2	human	Q9NZK7	PLA2G2E	Q9NZK7	5	69	Group IIE secretory phospholipase A2 (GIIE sPLA2) (sPLA2-IIE	w
+SPLA2	human	Q9UNK4	PLA2G2D	Q9UNK4	10	117	Group IID secretory phospholipase A2 (GIID sPLA2) (sPLA2-IID	w
+SPLA2-GXIIB	human	Q9BX93	PLA2G12B	Q9BX93	4	29	Group XIIB secretory phospholipase A2-like protein (Group XI	w
+SPLA2-IID	human	Q9UNK4	PLA2G2D	Q9UNK4	10	117	Group IID secretory phospholipase A2 (GIID sPLA2) (sPLA2-IID	w
+SPLA2-IIE	human	Q9NZK7	PLA2G2E	Q9NZK7	5	69	Group IIE secretory phospholipase A2 (GIIE sPLA2) (sPLA2-IIE	w
+SPLA2-IIF	human	Q9BZM2	PLA2G2F	Q9BZM2	10	46	Group IIF secretory phospholipase A2 (GIIF sPLA2) (sPLA2-IIF	w
+SPLA2-III	human	Q9NZ20	PLA2G3	Q9NZ20	15	152	Group 3 secretory phospholipase A2 (EC 3.1.1.4) (Group III s	w
+SPLA2-LIKE	human	Q9BX93	PLA2G12B	Q9BX93	4	29	Group XIIB secretory phospholipase A2-like protein (Group XI	w
+SPLA2-X	human	O15496	PLA2G10	O15496	10	163	Group 10 secretory phospholipase A2 (EC 3.1.1.4) (Group X se	w
+SPLA2-XII	human	Q9BZM1	PLA2G12A	Q9BZM1	5	75	Group XIIA secretory phospholipase A2 (GXII sPLA2) (sPLA2-XI	w
+SPLASH	human	Q9UNK4	PLA2G2D	Q9UNK4	10	117		
+SPLB	dictyostelium-discoideum	P18161	splB	P18161	0	29	Dual specificity protein kinase splB	
+SPLE	staphylococcus-aureus-93061	Q2FXC7	splE	Q2FXC7	0	6	Serine protease SplE	
+SPLEEN	human	P43405	SYK	P43405	217	1792	Tyrosine-protein kinase SYK (EC 2.7.10.2) (Spleen tyrosine k	w
+SPLEEN	human	Q13609	DNASE1L3	Q13609	1	43	Deoxyribonuclease gamma (DNase gamma) (EC 3.1.21.-) (DNase I	w
+SPLEEN	human	Q2V2M9	FHOD3	Q2V2M9	9	87	FH1/FH2 domain-containing protein 3 (Formactin-2) (Formin ho	w
+SPLEEN	human	Q9BSJ6	PIMREG	Q9BSJ6	24	156	Protein PIMREG (CALM-interactor expressed in thymus and sple	w
+SPLEEN	human	Q9Y613	FHOD1	Q9Y613	26	221	FH1/FH2 domain-containing protein 1 (Formin homolog overexpr	w
+SPLGP02	virus	A0AAF1DB79	SPLgp02	A0AAF1DB79	3	25	A0AAF1DB79_9ADEN	
+SPLGP03	virus	A0AAE6IQX7	SPLgp03	A0AAE6IQX7	0	25	A0AAE6IQX7_9ADEN	
+SPLGP04	virus	A0AAF1DB80	SPLgp04	A0AAF1DB80	1	25	A0AAF1DB80_9ADEN	
+SPLGP05	virus	A0AAE6IQY7	SPLgp05	A0AAE6IQY7	0	25	A0AAE6IQY7_9ADEN	
+SPLGP06	virus	A0AAF1DB81	SPLgp06	A0AAF1DB81	3	25	A0AAF1DB81_9ADEN	
+SPLGP07	virus	A0AAF1DB82	SPLgp07	A0AAF1DB82	1	23	DNA polymerase	
+SPLGP08	virus	A0AAE6IRP4	SPLgp08	A0AAE6IRP4	1	25	A0AAE6IRP4_9ADEN	
+SPLGP09	virus	A0AAE6IRJ7	SPLgp09	A0AAE6IRJ7	2	25	A0AAE6IRJ7_9ADEN	
+SPLGP10	virus	A0AAE6ISK1	SPLgp10	A0AAE6ISK1	3	25	A0AAE6ISK1_9ADEN	
+SPLGP11	virus	A0AAE6M5T0	SPLgp11	A0AAE6M5T0	0	25	A0AAE6M5T0_9ADEN	
+SPLGP12	virus	A0AAE6M6N4	SPLgp12	A0AAE6M6N4	1	25	A0AAE6M6N4_9ADEN	
+SPLGP13	virus	A0AAE6M6G5	SPLgp13	A0AAE6M6G5	2	25	A0AAE6M6G5_9ADEN	
+SPLGP14	virus	A0AAE6M5T1	SPLgp14	A0AAE6M5T1	1	25	Hexon protein	
+SPLGP16	virus	A0AAF1DB83	SPLgp16	A0AAF1DB83	0	25	A0AAF1DB83_9ADEN	
+SPLGP17	virus	A0AAF1DB84	SPLgp17	A0AAF1DB84	2	24	A0AAF1DB84_9ADEN	
+SPLGP18	virus	A0AAE6IR03	SPLgp18	A0AAE6IR03	3	25	A0AAE6IR03_9ADEN	
+SPLGP21	virus	A0AAE6IR02	SPLgp21	A0AAE6IR02	1	25	A0AAE6IR02_9ADEN	
+SPLGP22	virus	A0AAF1DB86	SPLgp22	A0AAF1DB86	3	25	A0AAF1DB86_9ADEN	
+SPLGP23	virus	A0AAF1DB87	SPLgp23	A0AAF1DB87	2	25	A0AAF1DB87_9ADEN	
+SPLGP24	virus	A0AAE6IRS0	SPLgp24	A0AAE6IRS0	1	25	A0AAE6IRS0_9ADEN	
+SPLGP25	virus	A0AAE6IRK8	SPLgp25	A0AAE6IRK8	1	25	A0AAE6IRK8_9ADEN	
+SPLGP26	virus	A0AAE6ISM1	SPLgp26	A0AAE6ISM1	0	25	A0AAE6ISM1_9ADEN	
+SPLI	human	P60896	SEM1	P60896	64	588	26S proteasome complex subunit SEM1 (26S proteasome complex 	w
+SPLICE	fly	FBgn0000542	ec	Q1W9P9	6	10	Echinus splice form 3 (Echinus, isoform C)	w
+SPLICE	fly	FBgn0035849	ERR	Q8WS79	170	533	Estrogen-related receptor splice variant (Estrogen-related r	w
+SPLICE	fly	FBgn0040505	Alk	Q7KJ08	226	3354	Anaplastic lymphoma kinase, isoform A (EC 2.7.10.1) (Anaplas	w
+SPLICE	human	Q8NCE2	MTMR14	Q8NCE2	17	149	Phosphatidylinositol-3,5-bisphosphate 3-phosphatase MTMR14 (	w
+SPLICED	fly	FBgn0035917	Zasp66	Q8IQB4	21	91	Z band alternatively spliced PDZ-motif protein 66, isoform E	w
+SPLICED	fly	FBgn0036044	Zasp67	Q9VT49	5	18	Z band alternatively spliced PDZ-motif protein 67, isoform G	w
+SPLICED	fly	FBgn0265991	Zasp52	A1ZA47	6	48	PDZ and LIM domain protein Zasp (Z band alternatively splice	w
+SPLICED	human	O75112	LDB3	O75112	9	49	LIM domain-binding protein 3 (Protein cypher) (Z-band altern	w
+SPLICEOSOMAL	fly	FBgn0015818	Spx	Q9W424	11	163	RE50839p (Spliceosomal protein on the X)	w
+SPLICEOSOMAL	human	P83876	TXNL4A	P83876	14	192	Thioredoxin-like protein 4A (DIM1 protein homolog) (Spliceos	w
+SPLICEOSOMAL	yeast	Q06819	DIB1	Q06819	4	56	Spliceosomal protein DIB1	w
+SPLICEOSOME	fly	FBgn0035294	Mfap1	Q9W062	16	110	Microfibrillar-associated protein 1 (Spliceosome B complex p	w
+SPLICEOSOME	human	P55081	MFAP1	P55081	73	533	Microfibrillar-associated protein 1 (Spliceosome B complex p	w
+SPLICEOSOME	human	Q13838	DDX39B	Q13838	55	653	Spliceosome RNA helicase DDX39B (EC 3.6.4.13) (56 kDa U2AF65	w
+SPLICEOSOME	human	Q15020	SART3	Q15020	38	449	Spliceosome associated factor 3, U4/U6 recycling protein (Sq	w
+SPLICEOSOME	worm	Q17430	sart-3	Q17430	1	45	Spliceosome associated factor 3, U4/U6 recycling protein	w
+SPLICEOSOME	worm	Q18212	hel-1	Q18212	12	102	Spliceosome RNA helicase DDX39B homolog	w
+SPLICEOSOME	zebrafish	B3DJT0	sart3	B3DJT0	1	25	Spliceosome associated factor 3, U4/U6 recycling protein	w
+SPLICEOSOME-ASSOCIATED	fly	FBgn0036207	CG10907	Q9VTN7	26	134	Spliceosome-associated protein CWC27 homolog (Probable inact	w
+SPLICEOSOME-ASSOCIATED	human	O75533	SF3B1	O75533	70	799	Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 	w
+SPLICEOSOME-ASSOCIATED	human	O75934	BCAS2	O75934	49	380	Pre-mRNA-splicing factor SPF27 (Breast carcinoma-amplified s	w
+SPLICEOSOME-ASSOCIATED	human	Q12874	SF3A3	Q12874	43	444	Splicing factor 3A subunit 3 (SF3a60) (Spliceosome-associate	w
+SPLICEOSOME-ASSOCIATED	human	Q13435	SF3B2	Q13435	69	513	Splicing factor 3B subunit 2 (Pre-mRNA-splicing factor SF3b 	w
+SPLICEOSOME-ASSOCIATED	human	Q13769	THOC5	Q13769	43	401	THO complex subunit 5 (Functional spliceosome-associated pro	w
+SPLICEOSOME-ASSOCIATED	human	Q15393	SF3B3	Q15393	42	919	Splicing factor 3B subunit 3 (Pre-mRNA-splicing factor SF3b 	w
+SPLICEOSOME-ASSOCIATED	human	Q15427	SF3B4	Q15427	31	360	Splicing factor 3B subunit 4 (Pre-mRNA-splicing factor SF3b 	w
+SPLICEOSOME-ASSOCIATED	human	Q15428	SF3A2	Q15428	65	317	Splicing factor 3A subunit 2 (SF3a66) (Spliceosome-associate	w
+SPLICEOSOME-ASSOCIATED	human	Q15459	SF3A1	Q15459	85	475	Splicing factor 3A subunit 1 (SF3a120) (Spliceosome-associat	w
+SPLICEOSOME-ASSOCIATED	human	Q6I9Y2	THOC7	Q6I9Y2	29	190	THO complex subunit 7 (Functional spliceosome-associated pro	w
+SPLICEOSOME-ASSOCIATED	human	Q6UX04	CWC27	Q6UX04	52	210	Spliceosome-associated protein CWC27 homolog (Antigen NY-CO-	w
+SPLICEOSOME-ASSOCIATED	human	Q86W42	THOC6	Q86W42	12	143	THO complex subunit 6 (Functional spliceosome-associated pro	w
+SPLICEOSOME-ASSOCIATED	human	Q96BP3	PPWD1	Q96BP3	22	332	Peptidylprolyl isomerase domain and WD repeat-containing pro	w
+SPLICEOSOME-ASSOCIATED	human	Q9NXE8	CWC25	Q9NXE8	49	283	Pre-mRNA-splicing factor CWC25 homolog (Coiled-coil domain-c	w
+SPLICEOSOME-ASSOCIATED	human	Q9P013	CWC15	Q9P013	27	233	Spliceosome-associated protein CWC15 homolog	w
+SPLICEOSOME-ASSOCIATED	human	Q9Y3B4	SF3B6	Q9Y3B4	33	321	Splicing factor 3B subunit 6 (Pre-mRNA branch site protein p	w
+SPLICEOSOME-ASSOCIATED	worm	O45766	cwc-15	O45766	9	84	Spliceosome-associated protein CWC15 homolog	w
+SPLICEOSOME-ASSOCIATED	worm	Q9XXI7	cyn-16	Q9XXI7	5	52	Spliceosome-associated protein CWC27 homolog	w
+SPLICEOSOME-ASSOCIATED	zebrafish	Q6DG11	sart1	Q6DG11	17	109	Spliceosome-associated factor 1, recruiter of U4/U6.U5 tri-s	w
+SPLICEOSOME-ASSOCIATED	zebrafish	Q7ZVW8	cwc25	Q7ZVW8	9	100	CWC25 spliceosome-associated protein homolog	w
+SPLICEOSOME-ASSOCIATED	zebrafish	Q7ZW86	cwc27	Q7ZW86	28	170	Spliceosome-associated protein CWC27 homolog	w
+SPLICEOSOME-RIBOSOME	fly	FBgn0038049	Srlp	Q9VG69	1	62	LP03547p (Spliceosome-ribosome linker protein)	w
+SPLICIN	human	O75494	SRSF10	O75494	35	282	Serine/arginine-rich splicing factor 10 (40 kDa SR-repressor	w
+SPLICING	fly	FBgn0005411	U2af50	M9NF89	14	97	Splicing factor U2AF subunit (U2 snRNP auxiliary factor larg	w
+SPLICING	fly	FBgn0011305	Rsf1	Q8SYR3	3	34	RE39606p (Repressor splicing factor 1, isoform B)	w
+SPLICING	fly	FBgn0014366	noi	O46106	16	148	Splicing factor 3A subunit 3 (Protein noisette)	w
+SPLICING	fly	FBgn0017457	U2af38	Q94535	19	76	Splicing factor U2af 38 kDa subunit (U2 auxiliary factor 38 	w
+SPLICING	fly	FBgn0023506	Es2	O44424	5	39	Splicing factor ESS-2 homolog (Protein Es2) (dEs2)	w
+SPLICING	fly	FBgn0024285	Srp54	Q9VL71	12	84	LD29830p (Splicing regulatory protein 54)	w
+SPLICING	fly	FBgn0027616	Ythdc1	Q9VZQ1	5	47	YTH domain-containing protein 1 (Splicing factor YT521) (YT5	w
+SPLICING	fly	FBgn0028554	x16	Q9V3V0	5	25	Serine/arginine-rich splicing factor x16 (SR family splicing	w
+SPLICING	fly	FBgn0031114	cactin	Q9VR99	10	52	Splicing factor Cactin (Cactus-interacting protein)	w
+SPLICING	fly	FBgn0031266	Sf3b1	Q9VPR5	16	158	Splicing factor 3b subunit 1, isoform A (Splicing factor 3b 	w
+SPLICING	fly	FBgn0031493	Sf3b2	Q9VQK7	29	164	LD45152p (Splicing factor 3b subunit 2, isoform A) (Splicing	w
+SPLICING	fly	FBgn0034084	CG8435	Q7JVH0	8	80	Splicing factor YJU2	w
+SPLICING	fly	FBgn0034834	LS2	Q9W1T4	11	51	Splicing factor U2AF subunit (U2 snRNP auxiliary factor larg	w
+SPLICING	fly	FBgn0035162	Sf3b3	Q9W0M7	15	214	Splicing factor 3B subunit 3	w
+SPLICING	fly	FBgn0035692	Sf3b6	Q9VRV7	12	105	Splicing factor 3B subunit 6 (Pre-mRNA branch site p14-like 	w
+SPLICING	fly	FBgn0036266	Tsen54	Q9VTV4	4	27	tRNA splicing endonuclease subunit 54	w
+SPLICING	fly	FBgn0036314	Sf3a2	Q9VU15	24	145	LD47455p (Splicing factor 3a subunit 2)	w
+SPLICING	fly	FBgn0038590	CG12320	Q9VEA6	1	30	Protein AAR2 homolog (AAR2 splicing factor homolog)	w
+SPLICING	fly	FBgn0040534	Sf3b5	Q9VHI4	10	176	Splicing factor 3B subunit 5 (Pre-mRNA-splicing factor SF3b 	w
+SPLICING	fly	FBgn0050343	Tsen15	A1Z7S9	2	4	tRNA splicing endonuclease subunit 15, isoform A (EC 4.6.1.1	w
+SPLICING	fly	FBgn0086683	Spf45	Q7PL83	12	38	Splicing factor 45 (RNA-binding motif protein 17)	w
+SPLICING	fly	FBgn0265298	SC35	Q9V3T8	57	491	LD32469p (SR family splicing factor SC35) (SR family splicin	w
+SPLICING	fly	FBgn0266917	Sf3a1	Q9VEP9	23	138	GH03554p (Splicing factor 3a subunit 1)	w
+SPLICING	fly	FBgn0283477	SF2	Q9V3W7	16	243	LD40489p (SR family splicing factor) (Splicing factor 2, iso	w
+SPLICING	human	A7MD48	SRRM4	A7MD48	12	47	Serine/arginine repetitive matrix protein 4 (Medulloblastoma	w
+SPLICING	human	O00192	ARVCF	O00192	58	154	Splicing regulator ARVCF (Armadillo repeat protein deleted i	w
+SPLICING	human	O43143	DHX15	O43143	86	681	ATP-dependent RNA helicase DHX15 (EC 3.6.4.13) (ATP-dependen	w
+SPLICING	human	O43172	PRPF4	O43172	45	446	U4/U6 small nuclear ribonucleoprotein Prp4 (PRP4 homolog) (h	w
+SPLICING	human	O75494	SRSF10	O75494	35	282	Serine/arginine-rich splicing factor 10 (40 kDa SR-repressor	w
+SPLICING	human	O75533	SF3B1	O75533	70	799	Splicing factor 3B subunit 1 (Pre-mRNA-splicing factor SF3b 	w
+SPLICING	human	O75937	DNAJC8	O75937	20	278	DnaJ homolog subfamily C member 8 (Splicing protein spf31)	w
+SPLICING	human	O75940	SMNDC1	O75940	29	198	Survival of motor neuron-related-splicing factor 30 (30 kDa 	w
+SPLICING	human	O95104	SCAF4	O95104	37	234	SR-related and CTD-associated factor 4 (CTD-binding SR-like 	w
+SPLICING	human	O95218	ZRANB2	O95218	54	505	Zinc finger Ran-binding domain-containing protein 2 (Zinc fi	w
+SPLICING	human	P13994	YJU2B	P13994	22	113	Probable splicing factor YJU2B (Coiled-coil domain-containin	w
+SPLICING	human	P23246	SFPQ	P23246	22	437	Splicing factor, proline- and glutamine-rich (100 kDa DNA-pa	w
+SPLICING	human	P26368	U2AF2	P26368	91	625	Splicing factor U2AF 65 kDa subunit (U2 auxiliary factor 65 	w
+SPLICING	human	P57052	RBM11	P57052	34	254	Splicing regulator RBM11 (RNA-binding motif protein 11)	w
+SPLICING	human	P62995	TRA2B	P62995	27	260	Transformer-2 protein homolog beta (TRA-2 beta) (TRA2-beta) 	w
+SPLICING	human	P84103	SRSF3	P84103	68	576	Serine/arginine-rich splicing factor 3 (Pre-mRNA-splicing fa	w
+SPLICING	human	Q01081	U2AF1	Q01081	74	299	Splicing factor U2AF 35 kDa subunit (U2 auxiliary factor 35 	w
+SPLICING	human	Q01130	SRSF2	Q01130	65	774	Serine/arginine-rich splicing factor 2 (Protein PR264) (Spli	w
+SPLICING	human	Q02040	AKAP17A	Q02040	17	184	A-kinase anchor protein 17A (AKAP-17A) (721P) (B-lymphocyte 	w
+SPLICING	human	Q05519	SRSF11	Q05519	66	296	Serine/arginine-rich splicing factor 11 (Arginine-rich 54 kD	w
+SPLICING	human	Q07955	SRSF1	Q07955	80	749	Serine/arginine-rich splicing factor 1 (Alternative-splicing	w
+SPLICING	human	Q08170	SRSF4	Q08170	36	378	Serine/arginine-rich splicing factor 4 (Pre-mRNA-splicing fa	w
+SPLICING	human	Q12872	SFSWAP	Q12872	77	316	Splicing factor, suppressor of white-apricot homolog (Splici	w
+SPLICING	human	Q12874	SF3A3	Q12874	43	444	Splicing factor 3A subunit 3 (SF3a60) (Spliceosome-associate	w
+SPLICING	human	Q13242	SRSF9	Q13242	41	369	Serine/arginine-rich splicing factor 9 (Pre-mRNA-splicing fa	w
+SPLICING	human	Q13243	SRSF5	Q13243	64	545	Serine/arginine-rich splicing factor 5 (Delayed-early protei	w
+SPLICING	human	Q13247	SRSF6	Q13247	47	449	Serine/arginine-rich splicing factor 6 (Pre-mRNA-splicing fa	w
+SPLICING	human	Q13435	SF3B2	Q13435	69	513	Splicing factor 3B subunit 2 (Pre-mRNA-splicing factor SF3b 	w
+SPLICING	human	Q15393	SF3B3	Q15393	42	919	Splicing factor 3B subunit 3 (Pre-mRNA-splicing factor SF3b 	w
+SPLICING	human	Q15427	SF3B4	Q15427	31	360	Splicing factor 3B subunit 4 (Pre-mRNA-splicing factor SF3b 	w
+SPLICING	human	Q15428	SF3A2	Q15428	65	317	Splicing factor 3A subunit 2 (SF3a66) (Spliceosome-associate	w
+SPLICING	human	Q15459	SF3A1	Q15459	85	475	Splicing factor 3A subunit 1 (SF3a120) (Spliceosome-associat	w
+SPLICING	human	Q15637	SF1	Q15637	57	308	Splicing factor 1 (Mammalian branch point-binding protein) (	w
+SPLICING	human	Q16629	SRSF7	Q16629	42	513	Serine/arginine-rich splicing factor 7 (Splicing factor 9G8)	w
+SPLICING	human	Q2TBE0	CWF19L2	Q2TBE0	41	336	Pre-mRNA splicing factor CWF19L2 (CWF19-like protein 2)	w
+SPLICING	human	Q495M9	USH1G	Q495M9	16	65	pre-mRNA splicing regulator USH1G (Scaffold protein containi	w
+SPLICING	human	Q69YN2	CWF19L1	Q69YN2	18	126	Pre-mRNA splicing factor CWF19L1 (CWF19-like protein 1) (C19	w
+SPLICING	human	Q6IQ49	SDE2	Q6IQ49	39	276	Splicing regulator SDE2 (Replication stress response regulat	w
+SPLICING	human	Q6NXG1	ESRP1	Q6NXG1	12	175	Epithelial splicing regulatory protein 1 (RNA-binding motif 	w
+SPLICING	human	Q6P2Q9	PRPF8	Q6P2Q9	62	2237	Pre-mRNA-processing-splicing factor 8 (220 kDa U5 snRNP-spec	w
+SPLICING	human	Q6ZRY4	RBPMS2	Q6ZRY4	11	104	RNA-binding protein with multiple splicing 2 (RNA binding pr	w
+SPLICING	human	Q7RTV0	PHF5A	Q7RTV0	31	562	PHD finger-like domain-containing protein 5A (PHD finger-lik	w
+SPLICING	human	Q7Z7F0	KHDC4	Q7Z7F0	17	87	KH homology domain-containing protein 4 (Brings lots of mone	w
+SPLICING	human	Q86U06	RBM23	Q86U06	35	139	Probable RNA-binding protein 23 (CAPER beta) (CAPERbeta) (RN	w
+SPLICING	human	Q86UT8	CENATAC	Q86UT8	19	114	Centrosomal AT-AC splicing factor (Coiled-coil domain-contai	w
+SPLICING	human	Q86X95	CIRSR	Q86X95	52	435	Corepressor of RBPJ and splicing regulator (CBF1-interacting	w
+SPLICING	human	Q8IWZ8	SUGP1	Q8IWZ8	51	273	SURP and G-patch domain-containing protein 1 (RNA-binding pr	w
+SPLICING	human	Q8IX01	SUGP2	Q8IX01	38	207	SURP and G-patch domain-containing protein 2 (Arginine/serin	w
+SPLICING	human	Q8N2F6	ARMC10	Q8N2F6	14	142	Armadillo repeat-containing protein 10 (Splicing variant inv	w
+SPLICING	human	Q8N2M8	CLASRP	Q8N2M8	37	261	CLK4-associating serine/arginine rich protein (Splicing fact	w
+SPLICING	human	Q8N9Q2	SREK1IP1	Q8N9Q2	23	171	Protein SREK1IP1 (SFRS12-interacting protein 1) (SREK1-inter	w
+SPLICING	human	Q8WU68	U2AF1L4	Q8WU68	10	49	Splicing factor U2AF 26 kDa subunit (U2 auxiliary factor 26)	w
+SPLICING	human	Q8WUQ7	CACTIN	Q8WUQ7	44	407	Splicing factor Cactin (Renal carcinoma antigen NY-REN-24)	w
+SPLICING	human	Q8WXA9	SREK1	Q8WXA9	22	196	Splicing regulatory glutamine/lysine-rich protein 1 (Serine/	w
+SPLICING	human	Q8WXF0	SRSF12	Q8WXF0	29	186	Serine/arginine-rich splicing factor 12 (35 kDa SR repressor	w
+SPLICING	human	Q93062	RBPMS	Q93062	80	354	RNA-binding protein with multiple splicing (RBP-MS) (RBPMS) 	w
+SPLICING	human	Q96DF8	ESS2	Q96DF8	41	300	Splicing factor ESS-2 homolog (DiGeorge syndrome critical re	w
+SPLICING	human	Q96I25	RBM17	Q96I25	66	302	Splicing factor 45 (45 kDa-splicing factor) (RNA-binding mot	w
+SPLICING	human	Q96MU7	YTHDC1	Q96MU7	91	470	YTH domain-containing protein 1 (Splicing factor YT521) (YT5	w
+SPLICING	human	Q9BRL6	SRSF8	Q9BRL6	47	475	Serine/arginine-rich splicing factor 8 (Pre-mRNA-splicing fa	w
+SPLICING	human	Q9BW85	YJU2	Q9BW85	26	332	Splicing factor YJU2 (Coiled-coil domain-containing protein 	w
+SPLICING	human	Q9BWJ5	SF3B5	Q9BWJ5	18	381	Splicing factor 3B subunit 5 (SF3b5) (Pre-mRNA-splicing fact	w
+SPLICING	human	Q9H0G5	NSRP1	Q9H0G5	53	254	Nuclear speckle splicing regulatory protein 1 (Coiled-coil d	w
+SPLICING	human	Q9H6T0	ESRP2	Q9H6T0	7	147	Epithelial splicing regulatory protein 2 (RNA-binding motif 	w
+SPLICING	human	Q9H7N4	SCAF1	Q9H7N4	60	258	Splicing factor, arginine/serine-rich 19 (SR-related C-termi	w
+SPLICING	human	Q9NZ63	C9orf78	Q9NZ63	89	642	Splicing factor C9orf78 (Hepatocellular carcinoma-associated	w
+SPLICING	human	Q9UQ35	SRRM2	Q9UQ35	30	529	Serine/arginine repetitive matrix protein 2 (300 kDa nuclear	w
+SPLICING	human	Q9Y2W2	WBP11	Q9Y2W2	61	259	WW domain-binding protein 11 (WBP-11) (Npw38-binding protein	w
+SPLICING	human	Q9Y312	AAR2	Q9Y312	55	669	Protein AAR2 homolog (AAR2 splicing factor homolog)	w
+SPLICING	human	Q9Y3B4	SF3B6	Q9Y3B4	33	321	Splicing factor 3B subunit 6 (Pre-mRNA branch site protein p	w
+SPLICING	worm	G5EEQ8	sftb-1	G5EEQ8	15	143	Splicing factor 3B subunit 1 domain-containing protein	w
+SPLICING	worm	G5EG14	cacn-1	G5EG14	6	27	Splicing factor Cactin	w
+SPLICING	worm	H2KZK5	tos-1	H2KZK5	0	1	Target Of Splicing	w
+SPLICING	worm	H2L0S8	CELE_Y119D3B.12	H2L0S8	3	25	LUC7 related splicing factor homolog	w
+SPLICING	worm	O01159	rsp-7	O01159	2	56	Probable splicing factor, arginine/serine-rich 7	w
+SPLICING	worm	O44985	teg-4	O44985	8	150	Splicing factor 3B subunit 3	w
+SPLICING	worm	O45781	drr-2	O45781	1	62	Serine/arginine-rich splicing factor 2	w
+SPLICING	worm	P34420	ess-2	P34420	0	16	Splicing factor ESS-2	w
+SPLICING	worm	P90978	uaf-1	P90978	8	93	Splicing factor U2AF 65 kDa subunit	w
+SPLICING	worm	Q09217	luc-7L	Q09217	6	37	LUC7-related splicing factor homolog	w
+SPLICING	worm	Q09252	ccdc-55	Q09252	4	30	Nuclear speckle splicing regulatory protein 1 homolog	w
+SPLICING	worm	Q09442	sap-49	Q09442	11	106	Splicing factor 3B subunit 4	w
+SPLICING	worm	Q09511	rsp-4	Q09511	1	96	Probable splicing factor, arginine/serine-rich 4	w
+SPLICING	worm	Q10021	rsp-5	Q10021	4	81	Probable splicing factor, arginine/serine-rich 5	w
+SPLICING	worm	Q18409	rsp-6	Q18409	4	96	Probable splicing factor, arginine/serine-rich 6	w
+SPLICING	worm	Q19335	repo-1	Q19335	10	108	Splicing factor 3A subunit 2	w
+SPLICING	worm	Q20124	yju-2	Q20124	1	57	Splicing factor YJU2	w
+SPLICING	worm	Q20966	rbm-17	Q20966	5	20	Splicing factor 45	w
+SPLICING	worm	Q23120	rsp-2	Q23120	3	91	Probable splicing factor, arginine/serine-rich 2	w
+SPLICING	worm	Q23121	rsp-1	Q23121	1	44	Probable splicing factor, arginine/serine-rich 1	w
+SPLICING	worm	Q8ITY4	sftb-6	Q8ITY4	11	65	Splicing factor 3B subunit 6-like protein	w
+SPLICING	worm	Q9NEW6	rsp-3	Q9NEW6	2	107	Probable splicing factor, arginine/serine-rich 3	w
+SPLICING	worm	Q9U2U0	uaf-2	Q9U2U0	16	69	Splicing factor U2AF 35 kDa subunit	w
+SPLICING	yeast	P28320	YJU2	P28320	11	61	Splicing factor YJU2	w
+SPLICING	yeast	P36084	MUD2	P36084	10	112	Splicing factor MUD2	w
+SPLICING	zebrafish	A0A8M1PEX4	sfpq	A0A8M1PEX4	2	13	Splicing factor, proline- and glutamine-rich	w
+SPLICING	zebrafish	A0A8M1RQW2	ush1ga	A0A8M1RQW2	4	13	Pre-mRNA splicing regulator USH1G	w
+SPLICING	zebrafish	A0A8N7T6J6	ush1gb	A0A8N7T6J6	5	13	Pre-mRNA splicing regulator USH1G	w
+SPLICING	zebrafish	A1L1G1	esrp1	A1L1G1	0	5	Epithelial splicing regulatory protein 1	w
+SPLICING	zebrafish	A2BIN4	srek1	A2BIN4	4	9	Splicing regulatory glutamine/lysine-rich protein 1	w
+SPLICING	zebrafish	A5WWG4	srsf3b	A5WWG4	1	74	Serine/arginine-rich splicing factor 3	w
+SPLICING	zebrafish	A7YT51	sf3b2	A7YT51	25	223	Splicing factor 3B subunit 2	w
+SPLICING	zebrafish	A8WHR3	yju2	A8WHR3	7	70	Splicing factor YJU2	w
+SPLICING	zebrafish	F1Q5L3	sfswap	F1Q5L3	1	2	Splicing factor, suppressor of white-apricot homolog	w
+SPLICING	zebrafish	F1Q8W0	cactin	F1Q8W0	10	133	Splicing factor Cactin	w
+SPLICING	zebrafish	F1QQZ1	sf3b1	F1QQZ1	22	252	Splicing factor 3B subunit 1	w
+SPLICING	zebrafish	F1QVC6	srsf9	F1QVC6	14	197	Serine/arginine-rich splicing factor 9	w
+SPLICING	zebrafish	Q1LVE8	sf3b3	Q1LVE8	21	259	Splicing factor 3B subunit 3	w
+SPLICING	zebrafish	Q568R1	nsrp1	Q568R1	1	4	Nuclear speckle splicing regulatory protein 1	w
+SPLICING	zebrafish	Q66I85	yju2b	Q66I85	3	23	Probable splicing factor YJU2B	w
+SPLICING	zebrafish	Q6DHJ0	srsf5b	Q6DHJ0	10	155	Serine/arginine-rich splicing factor 5	w
+SPLICING	zebrafish	Q6IQM0	sf3b6	Q6IQM0	19	107	Splicing factor 3B subunit 6	w
+SPLICING	zebrafish	Q6NWB3	sf3b4	Q6NWB3	9	220	Splicing factor 3B subunit 4	w
+SPLICING	zebrafish	Q6NYA0	srsf1b	Q6NYA0	20	239	Serine/arginine-rich splicing factor 1B	w
+SPLICING	zebrafish	Q6NZT9	srsf2b	Q6NZT9	4	72	Serine/arginine-rich splicing factor 2	w
+SPLICING	zebrafish	Q6P022	u2af2b	Q6P022	17	119	Splicing factor U2AF subunit	w
+SPLICING	zebrafish	Q6P0K2	srsf7a	Q6P0K2	1	23	Serine and arginine rich splicing factor 7a isoform X1	w
+SPLICING	zebrafish	Q6TGT9	srsf5a	Q6TGT9	5	130	Serine/arginine-rich splicing factor 5	w
+SPLICING	zebrafish	Q6ZM78	sf3b5	Q6ZM78	4	221	Splicing factor 3B subunit 5	w
+SPLICING	zebrafish	Q7SXP4	srsf1a	Q7SXP4	18	216	Serine/arginine-rich splicing factor 1A	w
+SPLICING	zebrafish	Q7SZS0	srsf10b	Q7SZS0	6	149	Serine/arginine-rich splicing factor 10	w
+SPLICING	zebrafish	Q7T293	sde2	Q7T293	6	62	Splicing regulator SDE2	w
+SPLICING	zebrafish	Q7ZV13	srsf2a	Q7ZV13	6	75	Serine/arginine-rich splicing factor 2	w
+SPLICING	zebrafish	Q7ZVD4	sf3a2	Q7ZVD4	27	243	Splicing factor 3A subunit 2	w
+SPLICING	zebrafish	Q7ZVN6	rbm17	Q7ZVN6	14	39	Splicing factor 45	w
+SPLICING	zebrafish	Q7ZVR8	esrp2	Q7ZVR8	0	5	Epithelial splicing regulatory protein 2	w
+SPLICING	zebrafish	Q90X41	sf3a1	Q90X41	35	204	Splicing factor 3A subunit 1	w
+SPLIT	fly	FBgn0000591	E(spl)m8-HLH	P13098	71	429	Enhancer of split m8 protein (E(spl)m8)	w
+SPLIT	fly	FBgn0001139	gro	P16371	183	486	Protein groucho (Enhancer of split m9/10 protein) (E(spl)m9/	w
+SPLIT	fly	FBgn0002578	Kaz-m1	O97176	25	243	Enhancer of split M1 protein (E(spl)m1) (Kazal-type protease	w
+SPLIT	fly	FBgn0002592	E(spl)m2-BFM	O97177	0	0	Enhancer of split M2 protein (E(spl)m2)	w
+SPLIT	fly	FBgn0002609	E(spl)m3-HLH	Q01068	59	410	Enhancer of split m3 protein (E(spl)m3) (HLH-m3)	w
+SPLIT	fly	FBgn0002629	E(spl)m4-BFM	P13095	4	11	Enhancer of split m4 protein (E(spl)m4)	w
+SPLIT	fly	FBgn0002631	E(spl)m5-HLH	P13096	39	400	Enhancer of split m5 protein (E(spl)m5)	w
+SPLIT	fly	FBgn0002632	E(spl)m6-BFM	O97179	1	1	Enhancer of split m6 protein (E(spl)m6)	w
+SPLIT	fly	FBgn0002633	E(spl)m7-HLH	P13097	55	412	Enhancer of split m7 protein (E(spl)m7)	w
+SPLIT	fly	FBgn0002732	E(spl)malpha-BFM	O97178	3	5	Enhancer of split malpha protein (E(spl)malpha)	w
+SPLIT	fly	FBgn0002733	E(spl)mbeta-HLH	Q01069	42	396	Enhancer of split mbeta protein (E(spl)mbeta) (HLH-mbeta) (S	w
+SPLIT	fly	FBgn0002734	E(spl)mdelta-HLH	Q01071	55	420	Enhancer of split mdelta protein (E(spl)mdelta) (HLH-mdelta)	w
+SPLIT	fly	FBgn0002735	E(spl)mgamma-HLH	Q01070	71	412	Enhancer of split mgamma protein (E(spl)mgamma) (Split locus	w
+SPLIT	fly	FBgn0016977	spen	Q8SX83	0	0	Protein split ends	w
+SPLIT	human	P54198	HIRA	P54198	42	458	Protein HIRA (TUP1-like enhancer of split protein 1)	w
+SPLIT	human	P60896	SEM1	P60896	64	588	26S proteasome complex subunit SEM1 (26S proteasome complex 	w
+SPLIT	human	Q04724	TLE1	Q04724	122	308	Transducin-like enhancer protein 1 (E(Sp1) homolog) (Enhance	w
+SPLIT	human	Q04725	TLE2	Q04725	68	175	Transducin-like enhancer protein 2 (Enhancer of split grouch	w
+SPLIT	human	Q04726	TLE3	Q04726	179	420	Transducin-like enhancer protein 3 (Enhancer of split grouch	w
+SPLIT	human	Q08117	TLE5	Q08117	42	450	TLE family member 5 (Amino-terminal enhancer of split) (Amin	w
+SPLIT	human	Q14469	HES1	Q14469	42	404	Transcription factor HES-1 (Class B basic helix-loop-helix p	w
+SPLIT	human	Q5TA89	HES5	Q5TA89	74	410	Transcription factor HES-5 (Class B basic helix-loop-helix p	w
+SPLIT	human	Q5TGS1	HES3	Q5TGS1	81	383	Transcription factor HES-3 (Class B basic helix-loop-helix p	w
+SPLIT	human	Q96HZ4	HES6	Q96HZ4	67	417	Transcription cofactor HES-6 (C-HAIRY1) (Class B basic helix	w
+SPLIT	human	Q9BYE0	HES7	Q9BYE0	69	357	Transcription factor HES-7 (hHes7) (Class B basic helix-loop	w
+SPLIT	human	Q9HCC6	HES4	Q9HCC6	53	396	Transcription factor HES-4 (hHES4) (Class B basic helix-loop	w
+SPLIT	human	Q9Y543	HES2	Q9Y543	58	371	Transcription factor HES-2 (Class B basic helix-loop-helix p	w
+SPLIT	zebrafish	Q7T289	tle5	Q7T289	2	27	Amino-terminal enhancer of split	w
+SPLIT-RELATED	human	A6NFD8	HELT	A6NFD8	47	352	Hairy and enhancer of split-related protein HELT (HES/HEY-li	w
+SPLIT-RELATED	zebrafish	Q6QB00	helt	Q6QB00	2	2	Hairy and enhancer of split-related protein helt	w
+SPLUNC1	human	Q9NP55	BPIFA1	Q9NP55	11	177		
+SPLUNC2	human	Q96DR5	BPIFA2	Q96DR5	6	70		
+SPLUNC3	human	Q9BQP9	BPIFA3	Q9BQP9	9	30		
+SPLY	fly	FBgn0010591	Sply	Q9V7Y2	2	94	Sphingosine-1-phosphate lyase (S1PL) (SP-lyase) (SPL) (EC 4.	

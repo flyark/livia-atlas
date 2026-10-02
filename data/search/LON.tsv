@@ -1,23 +1,242 @@
-LON	campylobacter-jejuni-subsp-jejuni-serotype-o-2	O69300	lon	O69300	0	11	Lon protease
-LON	escherichia-coli-83333	P0A9M0	lon	P0A9M0	0	14	Lon protease
-LON	haemophilus-influenzae	P43864	lon	P43864	0	4	Lon protease
-LON	helicobacter-pylori	P55995	lon	P55995	0	12	Lon protease
-LON	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GJ60	lon	A0A0H3GJ60	0	73	Lon protease
-LON	neisseria-gonorrhoeae	Q5F8J8	lon	Q5F8J8	0	11	Lon protease
-LON	nocardia-brasiliensis	K0F2D1	lon	K0F2D1	1	20	Lon protease
-LON	pseudomonas-aeruginosa	Q9I2T9	lon	Q9I2T9	0	11	Lon protease
-LON	pseudomonas-aeruginosa	Q9I5F9	lon	Q9I5F9	0	11	Lon protease
-LON	salmonella-typhimurium	Q8ZRB9	lon	Q8ZRB9	0	11	Lon protease
-LON	shigella-dysenteriae-serotype-1	Q32JJ5	lon	Q32JJ5	0	13	Lon protease
-LON1	arabidopsis-thaliana	P93655	LON1	P93655	1	6	Lon protease homolog 1, mitochondrial
-LON2	arabidopsis-thaliana	O64948	LON2	O64948	0	1	Lon protease homolog 2, peroxisomal
-LONP1	mus-musculus	Q8CGK3	Lonp1	Q8CGK3	1	29	Lon protease homolog, mitochondrial
-LONP1	rattus-norvegicus	Q924S5	Lonp1	Q924S5	1	8	Lon protease homolog, mitochondrial
-LONP2	mus-musculus	Q9DBN5	Lonp2	Q9DBN5	0	13	Lon protease homolog 2, peroxisomal
-LONP2	rattus-norvegicus	Q3MIB4	Lonp2	Q3MIB4	0	11	Lon protease homolog 2, peroxisomal
-LONRF1	mus-musculus	D3YY23	Lonrf1	D3YY23	0	1	LON peptidase N-terminal domain and RING finger protein 1
-LONRF1	rattus-norvegicus	A0A0G2K313	Lonrf1	A0A0G2K313	1	6	LON peptidase N-terminal domain and RING finger protein 1
-LONRF2	mus-musculus	B2RT44	Lonrf2	B2RT44	0	9	LON peptidase N-terminal domain and ring finger 2
-LONRF2	rattus-norvegicus	D3ZX48	Lonrf2	D3ZX48	3	15	LON peptidase N-terminal domain and ring finger 2
-LONRF3	mus-musculus	Q9D4H7	Lonrf3	Q9D4H7	1	6	LON peptidase N-terminal domain and RING finger protein 3
-LONRF3	rattus-norvegicus	A0A0G2K884	Lonrf3	A0A0G2K884	2	10	LON peptidase N-terminal domain and ring finger 3
+LON	campylobacter-jejuni-subsp-jejuni-serotype-o-2	O69300	lon	O69300	0	11	Lon protease	
+LON	escherichia-coli-83333	P0A9M0	lon	P0A9M0	0	14	Lon protease	
+LON	fly	FBgn0036892	Lon	Q7KUT2	1	21	Lon protease homolog, mitochondrial (EC 3.4.21.53)	
+LON	haemophilus-influenzae	P43864	lon	P43864	0	4	Lon protease	
+LON	helicobacter-pylori	P55995	lon	P55995	0	12	Lon protease	
+LON	human	P36776	LONP1	P36776	13	379		
+LON	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GJ60	lon	A0A0H3GJ60	0	73	Lon protease	
+LON	neisseria-gonorrhoeae	Q5F8J8	lon	Q5F8J8	0	11	Lon protease	
+LON	nocardia-brasiliensis	K0F2D1	lon	K0F2D1	1	20	Lon protease	
+LON	pseudomonas-aeruginosa	Q9I2T9	lon	Q9I2T9	0	11	Lon protease	
+LON	pseudomonas-aeruginosa	Q9I5F9	lon	Q9I5F9	0	11	Lon protease	
+LON	salmonella-typhimurium	Q8ZRB9	lon	Q8ZRB9	0	11	Lon protease	
+LON	shigella-dysenteriae-serotype-1	Q32JJ5	lon	Q32JJ5	0	13	Lon protease	
+LON-1	worm	Q09566	lon-1	Q09566	0	1	Protein lon-1	w
+LON-1	worm	Q09566	lon-1	Q09566	0	1	Protein lon-1	w
+LON-2	worm	Q18530	lon-2	Q18530	0	3	LONg	
+LON-3	worm	Q23628	lon-3	Q23628	0	1	Cuticle collagen lon-3	w
+LON-3	worm	Q23628	lon-3	Q23628	0	1	Cuticle collagen lon-3	w
+LON1	arabidopsis-thaliana	P93655	LON1	P93655	1	6	Lon protease homolog 1, mitochondrial	
+LON2	arabidopsis-thaliana	O64948	LON2	O64948	0	1	Lon protease homolog 2, peroxisomal	
+LONELY	fly	FBgn0032252	loh	Q9VKV3	66	241	Lonely heart, isoform A (EC 3.4.24.-)	w
+LONER	fly	FBgn0026179	Iqsec	Q9VP80	7	14	FI21420p1 (Loner ISO1) (Schizo, isoform B)	w
+LONF1_HUMAN	human	Q17RB8	LONRF1	Q17RB8	16	129		
+LONF2_HUMAN	human	Q1L5Z9	LONRF2	Q1L5Z9	6	67		
+LONF3_HUMAN	human	Q496Y0	LONRF3	Q496Y0	7	47		
+LONG	fly	FBgn0003149	Prm	P35415	10	172	Paramyosin, long form	w
+LONG	fly	FBgn0027621	Pfrx	Q9VWH7	7	84	6-phosphofructo 2-kinase/fructose 2,6-bisphosphatase long fo	w
+LONG	fly	FBgn0030964	Pvf1	Q9VWP6	48	306	LD28763p (PDGF-and VEGF-related factor 1, isoform A) (VEGF2-	w
+LONG	fly	FBgn0034382	mElo	Q6NN18	3	78	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0034383	CG17821	A1ZBD2	4	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0036128	Elo68beta	A8JNR0	3	76	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0037534	Elovl7	Q9VHX7	9	103	Very long chain fatty acid elongase 7 (EC 2.3.1.199) (ELOVL 	w
+LONG	fly	FBgn0037761	CG8534	Q9VH59	2	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0037762	eloF	Q9VH58	4	70	Very long chain fatty acid elongase F (EC 2.3.1.199) (Elonga	w
+LONG	fly	FBgn0037763	CG16904	Q9VH57	1	69	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0037764	CG9459	Q4V3H4	1	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0037765	CG9458	Q9VH55	3	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0038983	CG5326	Q9VCZ0	6	112	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0038986	sit	Q9VCY6	8	62	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0039030	CG6660	Q9VCT3	8	86	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0039044	p53	Q8IMZ4	82	635	p53 protein long form variant 1 (p53, isoform B)	w
+LONG	fly	FBgn0050008	CG30008	Q8SXD1	2	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0051141	CG31141	Q8IMY2	1	58	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0051522	CG31522	A0A0B4KF65	3	86	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0051523	CG31523	Q95T98	9	135	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0051619	nolo	Q0E8N3	2	12	No long nerve cord, isoform C (EC 3.4.24.-) (No long nerve c	w
+LONG	fly	FBgn0052072	Elo68alpha	Q5JZZ4	3	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0053110	CG33110	Q9VCY5	6	58	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0086532	Spt-I	Q6NR46	6	116	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
+LONG	fly	FBgn0260942	bond	Q9VCY7	4	72	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+LONG	fly	FBgn0260960	Baldspot	Q9VV87	7	116	Very long chain fatty acid elongase 6 (ELOVL6) (EC 2.3.1.199	w
+LONG	fly	FBgn0262976	lawc	Q8SXG2	3	17	CG32711-PA long isoform (CG32711-PA short isoform) (GEO09706	w
+LONG	fly	FBgn0288701	lncRNA:CR46499		0	1	long non-coding RNA:CR46499	w
+LONG	human	A0A0J9YXV3	GREP1	A0A0J9YXV3	0	1	Glycine-rich extracellular protein 1 (Long intergenic non-pr	w
+LONG	human	A0A1B0GTZ2	CCDC196	A0A1B0GTZ2	1	9	Coiled-coil domain-containing protein 196 (Long intergenic n	w
+LONG	human	A0A1B0GUI7	BRD3OS	A0A1B0GUI7	2	29	Uncharacterized protein BRD3OS (BRD3 opposite strand protein	w
+LONG	human	A0A1B0GVN3	C2orf92	A0A1B0GVN3	0	1	Uncharacterized protein C2orf92 (Long intergenic non-protein	w
+LONG	human	A0A1B0GWH6	LASP1NB	A0A1B0GWH6	2	8	LASP1 neighbor protein (Long intergenic non-protein coding R	w
+LONG	human	A0A8I5QEB2	KIR3DL3	A0A8I5QEB2	0	20	Killer cell immunoglobulin like receptor, three Ig domains a	w
+LONG	human	A1L3X0	ELOVL7	A1L3X0	5	75	Very long chain fatty acid elongase 7 (EC 2.3.1.199) (3-keto	w
+LONG	human	A2RU37	LINC02872	A2RU37	2	14	Uncharacterized protein encoded by LINC02872 (Long intergeni	w
+LONG	human	A6NGG3	LINC03041	A6NGG3	5	11	Putative uncharacterized protein encoded by LINC03041 (Long 	w
+LONG	human	A6NIN4	RNF227	A6NIN4	5	13	RING finger protein 227 (Long intergenic non-protein coding 	w
+LONG	human	B7Z368	LINC02881	B7Z368	1	2	Uncharacterized protein encoded by LINC02881 (Long intergeni	w
+LONG	human	E5RJ46	LINC02906	E5RJ46	1	2	Putative uncharacterized protein LINC02906 (Long intergenic 	w
+LONG	human	O00154	ACOT7	O00154	6	174	Cytosolic acyl coenzyme A thioester hydrolase (EC 3.1.2.2) (	w
+LONG	human	O15269	SPTLC1	O15269	25	192	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
+LONG	human	O15270	SPTLC2	O15270	15	146	Serine palmitoyltransferase 2 (EC 2.3.1.50) (Long chain base	w
+LONG	human	O15417	TNRC18	O15417	21	77	Trinucleotide repeat-containing gene 18 protein (Long CAG tr	w
+LONG	human	O60313	OPA1	O60313	20	246	Dynamin-like GTPase OPA1, mitochondrial (EC 3.6.5.5) (Optic 	w
+LONG	human	O94759	TRPM2	O94759	11	26	Transient receptor potential cation channel subfamily M memb	w
+LONG	human	P00749	PLAU	P00749	41	315	Urokinase-type plasminogen activator (U-plasminogen activato	w
+LONG	human	P15692	VEGFA	P15692	14	61	Vascular endothelial growth factor A, long form (L-VEGF) (Va	w
+LONG	human	P28300	LOX	P28300	23	192	Protein-lysine 6-oxidase (EC 1.4.3.13) (Lysyl oxidase) [Clea	w
+LONG	human	P59826	BPIFB3	P59826	2	33	BPI fold-containing family B member 3 (Ligand-binding protei	w
+LONG	human	P59827	BPIFB4	P59827	0	19	BPI fold-containing family B member 4 (Ligand-binding protei	w
+LONG	human	Q14154	DELE1	Q14154	12	33	DAP3-binding cell death enhancer 1 (DAP3-binding cell death 	w
+LONG	human	Q2M2E5	LINC03122	Q2M2E5	1	6	Uncharacterized protein encoded by LINC03122 (Long intergeni	w
+LONG	human	Q4VX62	LINC02901	Q4VX62	0	10	Putative uncharacterized protein LINC02901 (Long intergenic 	w
+LONG	human	Q52M58	LINC02914	Q52M58	0	2	Testis-specific protein LINC02914 (Long intergenic non-prote	w
+LONG	human	Q5TEZ4	LINC01590	Q5TEZ4	0	11	Putative uncharacterized protein encoded by LINC01590 (Long 	w
+LONG	human	Q5VZ66	JAKMIP3	Q5VZ66	24	89	Janus kinase and microtubule-interacting protein 3 (Neuroend	w
+LONG	human	Q6ZNF0	ACP7	Q6ZNF0	6	48	Acid phosphatase type 7 (EC 3.1.3.2) (Purple acid phosphatas	w
+LONG	human	Q6ZUL3	LINC03042	Q6ZUL3	0	8	Uncharacterized protein LINC03042 (Long intergenic non-prote	w
+LONG	human	Q6ZV77	LINC02908	Q6ZV77	1	20	Putative uncharacterized protein LINC02908 (Long intergenic 	w
+LONG	human	Q6ZV80	LINC02898	Q6ZV80	1	7	Putative uncharacterized protein LINC02898 (Long intergenic 	w
+LONG	human	Q7Z2W7	TRPM8	Q7Z2W7	22	192	Transient receptor potential cation channel subfamily M memb	w
+LONG	human	Q7Z4N2	TRPM1	Q7Z4N2	25	159	Transient receptor potential cation channel subfamily M memb	w
+LONG	human	Q86TX2	ACOT1	Q86TX2	5	190	Acyl-coenzyme A thioesterase 1 (Acyl-CoA thioesterase 1) (EC	w
+LONG	human	Q8N159	NAGS	Q8N159	9	110	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	w
+LONG	human	Q8N4F0	BPIFB2	Q8N4F0	10	94	BPI fold-containing family B member 2 (Bactericidal/permeabi	w
+LONG	human	Q8TD43	TRPM4	Q8TD43	15	171	Transient receptor potential cation channel subfamily M memb	w
+LONG	human	Q8TDL5	BPIFB1	Q8TDL5	15	204	BPI fold-containing family B member 1 (Long palate, lung and	w
+LONG	human	Q96AA8	JAKMIP2	Q96AA8	21	69	Janus kinase and microtubule-interacting protein 2 (CTCL tum	w
+LONG	human	Q96PD5	PGLYRP2	Q96PD5	10	130	N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28) (Peptidogly	w
+LONG	human	Q96QT4	TRPM7	Q96QT4	39	410	Transient receptor potential cation channel subfamily M memb	w
+LONG	human	Q9BW60	ELOVL1	Q9BW60	5	106	Very long chain fatty acid elongase 1 (EC 2.3.1.199) (3-keto	w
+LONG	human	Q9GZR5	ELOVL4	Q9GZR5	8	148	Very long chain fatty acid elongase 4 (EC 2.3.1.199) (3-keto	w
+LONG	human	Q9H5J4	ELOVL6	Q9H5J4	5	57	Very long chain fatty acid elongase 6 (EC 2.3.1.199) (3-keto	w
+LONG	human	Q9HB03	ELOVL3	Q9HB03	3	34	Very long chain fatty acid elongase 3 (EC 2.3.1.199) (3-keto	w
+LONG	human	Q9HCF6	TRPM3	Q9HCF6	30	216	Transient receptor potential cation channel subfamily M memb	w
+LONG	human	Q9NRD8	DUOX2	Q9NRD8	2	12	Dual oxidase 2 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	w
+LONG	human	Q9NRD9	DUOX1	Q9NRD9	1	16	Dual oxidase 1 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	w
+LONG	human	Q9NUV7	SPTLC3	Q9NUV7	12	56	Serine palmitoyltransferase 3 (EC 2.3.1.50) (Long chain base	w
+LONG	human	Q9NXB9	ELOVL2	Q9NXB9	7	85	Very long chain fatty acid elongase 2 (EC 2.3.1.199) (3-keto	w
+LONG	human	Q9NYP7	ELOVL5	Q9NYP7	22	384	Very long chain fatty acid elongase 5 (EC 2.3.1.199) (3-keto	w
+LONG	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
+LONG	human	Q9NZQ8	TRPM5	Q9NZQ8	10	86	Transient receptor potential cation channel subfamily M memb	w
+LONG	human	Q9UBV8	PEF1	Q9UBV8	20	166	Peflin (PEF protein with a long N-terminal hydrophobic domai	w
+LONG	human	Q9UM44	HHLA2	Q9UM44	12	94	HERV-H LTR-associating protein 2 (Human endogenous retroviru	w
+LONG	human	Q9XRX5	ANKRD13C-DT	Q9XRX5	2	11	Putative uncharacterized protein ANKRD13C-DT (ANKRD13C diver	w
+LONG	worm	G5EEE5	elo-1	G5EEE5	0	8	Long chain fatty acid elongase 1	w
+LONG	worm	Q17604	lab-1	Q17604	4	19	Long arms of the bivalent protein 1	w
+LONG	worm	Q18530	lon-2	Q18530	0	3	LONg	w
+LONG	worm	Q20303	elo-6	Q20303	1	10	Long chain fatty acid elongase 6	w
+LONG	worm	Q8WQE8	lab-2	Q8WQE8	0	2	Long Arms of the Bivalent protein	w
+LONG	yeast	P53252	PIL1	P53252	9	127	Sphingolipid long chain base-responsive protein PIL1	w
+LONG	yeast	Q02786	LCL1	Q02786	0	3	Long chronological lifespan protein 1	w
+LONG	yeast	Q03529	SCS7	Q03529	2	56	Ceramide very long chain fatty acid hydroxylase SCS7	w
+LONG	yeast	Q06147	LCB5	Q06147	0	19	Sphingoid long chain base kinase 5	w
+LONG	yeast	Q08045	LCL2	Q08045	1	4	Long chronological lifespan protein 2	w
+LONG	yeast	Q12230	LSP1	Q12230	14	117	Sphingolipid long chain base-responsive protein LSP1	w
+LONG	yeast	Q12246	LCB4	Q12246	1	15	Sphingoid long chain base kinase 4	w
+LONG	zebrafish	A0A0R4IT00	elovl1b	A0A0R4IT00	0	2	Elongation of very long chain fatty acids protein 1	w
+LONG	zebrafish	A0A8M1PC16	elovl7a	A0A8M1PC16	0	2	Elongation of very long chain fatty acids protein 7	w
+LONG	zebrafish	A3KP14	elovl2	A3KP14	0	1	Elongation of very long chain fatty acids protein 2	w
+LONG	zebrafish	A3KPN4	ptx3a	A3KPN4	2	26	Pentraxin 3, long a	w
+LONG	zebrafish	Q5XJ87	elovl1a	Q5XJ87	0	2	Elongation of very long chain fatty acids protein 1	w
+LONG	zebrafish	Q6P978	elovl4b	Q6P978	0	2	Elongation of very long chain fatty acids protein 4	w
+LONG	zebrafish	Q6PC64	elovl6	Q6PC64	0	7	Very long chain fatty acid elongase 6	w
+LONG	zebrafish	Q8AX86	elovl5	Q8AX86	0	3	Elongation of very long chain fatty acids protein 5	w
+LONG-	human	Q9HBI6	CYP4F11	Q9HBI6	3	52	Cytochrome P450 4F11 (CYPIVF11) (EC 1.14.14.1) (3-hydroxy fa	w
+LONG-CHAIN	fly	FBgn0034432	Acadvl	A1ZBJ2	3	44	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	w
+LONG-CHAIN	human	O14975	SLC27A2	O14975	5	183	Long-chain fatty acid transport protein 2 (Arachidonate--CoA	w
+LONG-CHAIN	human	O60488	ACSL4	O60488	4	220	Long-chain-fatty-acid--CoA ligase 4 (EC 6.2.1.3) (Arachidona	w
+LONG-CHAIN	human	O95573	ACSL3	O95573	5	320	Fatty acid CoA ligase Acsl3 (Arachidonate--CoA ligase) (EC 6	w
+LONG-CHAIN	human	P28330	ACADL	P28330	8	56	Long-chain specific acyl-CoA dehydrogenase, mitochondrial (L	w
+LONG-CHAIN	human	P33121	ACSL1	P33121	2	185	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	w
+LONG-CHAIN	human	P43353	ALDH3B1	P43353	8	150	Aldehyde dehydrogenase family 3 member B1 (EC 1.2.1.28) (EC 	w
+LONG-CHAIN	human	P48448	ALDH3B2	P48448	6	63	Aldehyde dehydrogenase family 3 member B2 (ALDH3B2) (EC 1.2.	w
+LONG-CHAIN	human	P49748	ACADVL	P49748	9	184	Very long-chain acyl-CoA dehydrogenase, mitochondrial (VLCAD	w
+LONG-CHAIN	human	P49753	ACOT2	P49753	8	161	Acyl-coenzyme A thioesterase 2, mitochondrial (Acyl-CoA thio	w
+LONG-CHAIN	human	Q02388	COL7A1	Q02388	1	13	Collagen alpha-1(VII) chain (Long-chain collagen) (LC collag	w
+LONG-CHAIN	human	Q5K4L6	SLC27A3	Q5K4L6	3	97	Long-chain fatty acid transport protein 3 (FATP-3) (Fatty ac	w
+LONG-CHAIN	human	Q5TCH4	CYP4A22	Q5TCH4	2	31	Cytochrome P450 4A22 (CYPIVA22) (Fatty acid omega-hydroxylas	w
+LONG-CHAIN	human	Q6P1M0	SLC27A4	Q6P1M0	3	185	Long-chain fatty acid transport protein 4 (FATP-4) (Fatty ac	w
+LONG-CHAIN	human	Q6PCB7	SLC27A1	Q6PCB7	0	224	Long-chain fatty acid transport protein 1 (Arachidonate--CoA	w
+LONG-CHAIN	human	Q6ZWL3	CYP4V2	Q6ZWL3	3	52	Cytochrome P450 4V2 (Docosahexaenoic acid omega-hydroxylase 	w
+LONG-CHAIN	human	Q7Z449	CYP2U1	Q7Z449	2	80	Cytochrome P450 2U1 (Long-chain fatty acid omega-monooxygena	w
+LONG-CHAIN	human	Q9UKU0	ACSL6	Q9UKU0	2	213	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	w
+LONG-CHAIN	human	Q9ULC5	ACSL5	Q9ULC5	3	152	Long-chain-fatty-acid--CoA ligase 5 (EC 6.2.1.3) (Arachidona	w
+LONG-CHAIN	human	Q9Y2P4	SLC27A6	Q9Y2P4	2	93	Long-chain fatty acid transport protein 6 (FATP-6) (Fatty ac	w
+LONG-CHAIN	human	Q9Y2P5	SLC27A5	Q9Y2P5	0	40	Long-chain fatty acid transport protein 5 (FATP-5) (Fatty ac	w
+LONG-CHAIN	worm	Q18916	acs-22	Q18916	0	21	Very long-chain fatty acid transport protein	w
+LONG-CHAIN	worm	Q19057	acdh-12	Q19057	1	14	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	w
+LONG-CHAIN	yeast	P34230	PXA2	P34230	1	52	Peroxisomal long-chain fatty acid import protein 1	w
+LONG-CHAIN	yeast	P38225	FAT1	P38225	0	41	Very long-chain fatty acid transport protein	w
+LONG-CHAIN	yeast	P41909	PXA1	P41909	1	36	Peroxisomal long-chain fatty acid import protein 2	w
+LONG-CHAIN	yeast	Q08417	RSB1	Q08417	0	6	Sphingoid long-chain base transporter RSB1	w
+LONG-CHAIN	zebrafish	A0AB32TU96	acadvl	A0AB32TU96	1	23	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	w
+LONG-CHAIN-ALCOHOL	human	Q58HT5	AWAT1	Q58HT5	0	21	Acyl-CoA wax alcohol acyltransferase 1 (EC 2.3.1.75) (Diacyl	w
+LONG-CHAIN-FATTY-ACID--COA	fly	FBgn0027348	bgm	Q9V3S9	1	31	Very long-chain-fatty-acid--CoA ligase bubblegum (EC 6.2.1.3	w
+LONG-CHAIN-FATTY-ACID--COA	fly	FBgn0034999	Fatp3	Q8SXR7	1	49	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	fly	FBgn0036821	CG3961	Q9VVT8	0	36	Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)	w
+LONG-CHAIN-FATTY-ACID--COA	fly	FBgn0263120	Acsl	A0A0B4KFE4	0	64	long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)	w
+LONG-CHAIN-FATTY-ACID--COA	fly	FBgn0265187	Fatp2	Q7KVJ6	0	44	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	fly	FBgn0267828	Fatp1	E1JHE4	0	88	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	fly	FBgn0286723	hll	Q9V3U0	0	30	Long-chain-fatty-acid--CoA ligase heimdall (EC 6.2.1.3) (Ver	w
+LONG-CHAIN-FATTY-ACID--COA	human	O60488	ACSL4	O60488	4	220	Long-chain-fatty-acid--CoA ligase 4 (EC 6.2.1.3) (Arachidona	w
+LONG-CHAIN-FATTY-ACID--COA	human	O95573	ACSL3	O95573	5	320	Fatty acid CoA ligase Acsl3 (Arachidonate--CoA ligase) (EC 6	w
+LONG-CHAIN-FATTY-ACID--COA	human	P33121	ACSL1	P33121	2	185	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	w
+LONG-CHAIN-FATTY-ACID--COA	human	Q5FVE4	ACSBG2	Q5FVE4	0	56	Long-chain-fatty-acid--CoA ligase ACSBG2 (EC 6.2.1.3) (Acyl-	w
+LONG-CHAIN-FATTY-ACID--COA	human	Q5K4L6	SLC27A3	Q5K4L6	3	97	Long-chain fatty acid transport protein 3 (FATP-3) (Fatty ac	w
+LONG-CHAIN-FATTY-ACID--COA	human	Q6P1M0	SLC27A4	Q6P1M0	3	185	Long-chain fatty acid transport protein 4 (FATP-4) (Fatty ac	w
+LONG-CHAIN-FATTY-ACID--COA	human	Q6PCB7	SLC27A1	Q6PCB7	0	224	Long-chain fatty acid transport protein 1 (Arachidonate--CoA	w
+LONG-CHAIN-FATTY-ACID--COA	human	Q96GR2	ACSBG1	Q96GR2	2	82	Long-chain-fatty-acid--CoA ligase ACSBG1 (EC 6.2.1.3) (Acyl-	w
+LONG-CHAIN-FATTY-ACID--COA	human	Q9UKU0	ACSL6	Q9UKU0	2	213	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	w
+LONG-CHAIN-FATTY-ACID--COA	human	Q9ULC5	ACSL5	Q9ULC5	3	152	Long-chain-fatty-acid--CoA ligase 5 (EC 6.2.1.3) (Arachidona	w
+LONG-CHAIN-FATTY-ACID--COA	human	X6R3N0	SLC27A3	X6R3N0	2	42	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	O16775	acs-15	O16775	0	16	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	O44560	acs-3	O44560	0	9	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	Q18660	acs-17	Q18660	0	10	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	Q19878	acs-20	Q19878	1	17	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	Q20121	acs-4	Q20121	0	14	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	Q21872	acs-18	Q21872	0	19	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	Q9XWD1	acs-5	Q9XWD1	0	12	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	worm	V6CLI5	acs-13	V6CLI5	0	12	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	yeast	P30624	FAA1	P30624	0	29	Long-chain-fatty-acid--CoA ligase 1	w
+LONG-CHAIN-FATTY-ACID--COA	yeast	P39002	FAA3	P39002	2	14	Long-chain-fatty-acid--CoA ligase 3	w
+LONG-CHAIN-FATTY-ACID--COA	yeast	P39518	FAA2	P39518	0	21	Long-chain-fatty-acid--CoA ligase 2	w
+LONG-CHAIN-FATTY-ACID--COA	yeast	P47912	FAA4	P47912	2	74	Long-chain-fatty-acid--CoA ligase 4	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	A0A8M1NBM6	slc27a6	A0A8M1NBM6	0	10	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	A2VCY4	zgc:158482	A2VCY4	0	14	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	A5WV16	acsl4b	A5WV16	0	15	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	B0S5C4	acsl3b	B0S5C4	0	15	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	B8JK22	acsl1a	B8JK22	0	22	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	E7FCY5	acsbg1	E7FCY5	0	22	Long-chain-fatty-acid--CoA ligase ACSBG1	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	F1QDA6	acsl1b	F1QDA6	0	23	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	F1RAK0	acsl5	F1RAK0	0	22	Long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	F6NGD6	slc27a2b	F6NGD6	0	14	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	Q08BF2	slc27a1b	Q08BF2	0	177	long-chain-fatty-acid--CoA ligase	w
+LONG-CHAIN-FATTY-ACID--COA	zebrafish	Q1LVA8	acsl3a	Q1LVA8	0	15	long-chain-fatty-acid--CoA ligase	w
+LONG-IRBIT	human	Q96HN2	AHCYL2	Q96HN2	29	217	S-adenosylhomocysteine hydrolase-like protein 2 (IP(3)Rs bin	w
+LONG-WAVE-SENSITIVE	human	P04000	OPN1LW	P04000	13	74	Long-wave-sensitive opsin 1 (Red cone photoreceptor pigment)	w
+LONGEST	fly	FBgn0265487	mbl	I7BCJ6	6	66	Muscleblind longest transcript variant (Muscleblind, isoform	w
+LONGEVITY	fly	FBgn0040918	schlank	Q9W423	83	550	LD18904p (Longevity protein) (Schlank, isoform A (EC 2.3.1.2	w
+LONGEVITY	human	P27544	CERS1	P27544	0	43	Ceramide synthase 1 (CerS1) (LAG1 longevity assurance homolo	w
+LONGEVITY	human	Q6ZMG9	CERS6	Q6ZMG9	35	471	Ceramide synthase 6 (CerS6) (EC 2.3.1.-) (LAG1 longevity ass	w
+LONGEVITY	human	Q8IU89	CERS3	Q8IU89	36	408	Ceramide synthase 3 (CerS3) (Dihydroceramide synthase 3) (LA	w
+LONGEVITY	human	Q8N5B7	CERS5	Q8N5B7	52	404	Ceramide synthase 5 (CerS5) (LAG1 longevity assurance homolo	w
+LONGEVITY	human	Q96G23	CERS2	Q96G23	40	571	Ceramide synthase 2 (CerS2) (LAG1 longevity assurance homolo	w
+LONGEVITY	human	Q9HA82	CERS4	Q9HA82	16	436	Ceramide synthase 4 (CerS4) (EC 2.3.1.-) (LAG1 longevity ass	w
+LONGEVITY	worm	O17694	ril-1	O17694	1	9	RNAi-Induced Longevity	w
+LONGEVITY	worm	O45962	rle-1	O45962	0	2	Regulation of longevity by E3 ubiquitin-protein ligase	w
+LONGEVITY	worm	Q17973	ril-2	Q17973	0	18	RNAi-Induced Longevity	w
+LONGITUDINALS	fly	FBgn0022238	lolal	Q7KRI2	42	428	Longitudinals lacking protein-like (Lola-like protein) (Prot	w
+LONGITUDINALS	fly	FBgn0283521	lola	Q867Z4	29	159	Longitudinals lacking protein, isoforms F/I/K/T	w
+LONHS	human	P36776	LONP1	P36776	13	379	Lon protease homolog, mitochondrial (EC 3.4.21.53) (LONHs) (	w
+LONM_HUMAN	human	P36776	LONP1	P36776	13	379		
+LONP	human	P36776	LONP1	P36776	13	379	Lon protease homolog, mitochondrial (EC 3.4.21.53) (LONHs) (	w
+LONP	human	Q86WA8	LONP2	Q86WA8	5	86		
+LONP-1	worm	O44952	lonp-1	O44952	0	25	Lon protease homolog, mitochondrial	
+LONP1	human	P36776	LONP1	P36776	13	379	Lon protease homolog, mitochondrial (EC 3.4.21.53) (LONHs) (	
+LONP1	mus-musculus	Q8CGK3	Lonp1	Q8CGK3	1	29	Lon protease homolog, mitochondrial	
+LONP1	rattus-norvegicus	Q924S5	Lonp1	Q924S5	1	8	Lon protease homolog, mitochondrial	
+LONP1	zebrafish	A0A0R4IH79	lonp1	A0A0R4IH79	0	11	Lon protease homolog, mitochondrial	
+LONP2	human	Q86WA8	LONP2	Q86WA8	5	86	Lon protease homolog 2, peroxisomal (EC 3.4.21.53) (Lon prot	
+LONP2	mus-musculus	Q9DBN5	Lonp2	Q9DBN5	0	13	Lon protease homolog 2, peroxisomal	
+LONP2	rattus-norvegicus	Q3MIB4	Lonp2	Q3MIB4	0	11	Lon protease homolog 2, peroxisomal	
+LONP2	zebrafish	Q5PQY6	lonp2	Q5PQY6	0	15	Lon protease homolog 2, peroxisomal	
+LONP2_HUMAN	human	Q86WA8	LONP2	Q86WA8	5	86		
+LONRF1	human	Q17RB8	LONRF1	Q17RB8	16	129	LON peptidase N-terminal domain and RING finger protein 1 (R	
+LONRF1	mus-musculus	D3YY23	Lonrf1	D3YY23	0	1	LON peptidase N-terminal domain and RING finger protein 1	
+LONRF1	rattus-norvegicus	A0A0G2K313	Lonrf1	A0A0G2K313	1	6	LON peptidase N-terminal domain and RING finger protein 1	
+LONRF1	zebrafish	F1QJQ0	lonrf1	F1QJQ0	2	15	LON peptidase N-terminal domain and ring finger 1	
+LONRF2	human	Q1L5Z9	LONRF2	Q1L5Z9	6	67	LON peptidase N-terminal domain and RING finger protein 2 (N	
+LONRF2	mus-musculus	B2RT44	Lonrf2	B2RT44	0	9	LON peptidase N-terminal domain and ring finger 2	
+LONRF2	rattus-norvegicus	D3ZX48	Lonrf2	D3ZX48	3	15	LON peptidase N-terminal domain and ring finger 2	
+LONRF3	human	Q496Y0	LONRF3	Q496Y0	7	47	LON peptidase N-terminal domain and RING finger protein 3 (R	
+LONRF3	mus-musculus	Q9D4H7	Lonrf3	Q9D4H7	1	6	LON peptidase N-terminal domain and RING finger protein 3	
+LONRF3	rattus-norvegicus	A0A0G2K884	Lonrf3	A0A0G2K884	2	10	LON peptidase N-terminal domain and ring finger 3	
+LONRF4	zebrafish	A0A8M9QPJ1	lonrf4	A0A8M9QPJ1	2	15	LON peptidase N-terminal domain and RING finger protein 1 is	

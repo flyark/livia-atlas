@@ -1,12 +1,532 @@
-ACY1	dictyostelium-discoideum	Q55DP8	acy1	Q55DP8	0	4	Aminoacylase-1
-ACY1	mus-musculus	Q99JW2	Acy1	Q99JW2	0	8	Aminoacylase-1
-ACY1A	rattus-norvegicus	Q6AYS7	Acy1a	Q6AYS7	0	8	Aminoacylase-1A
-ACY3	mus-musculus	Q91XE4	Acy3	Q91XE4	2	12	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-forming)
-ACY3	rattus-norvegicus	Q5M876	Acy3	Q5M876	1	8	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-forming)
-ACYP	mycobacterium-tuberculosis	P9WQC9	acyP	P9WQC9	0	2	Acylphosphatase
-ACYP	pseudomonas-aeruginosa	Q9I504	acyP	Q9I504	0	1	Acylphosphatase
-ACYP	streptococcus-pneumoniae	Q8DNE2	acyP	Q8DNE2	0	1	acylphosphatase
-ACYP1	mus-musculus	P56376	Acyp1	P56376	0	1	Acylphosphatase-1
-ACYP1	rattus-norvegicus	D4A6X4	Acyp1	D4A6X4	0	1	Acylphosphatase
-ACYP2	mus-musculus	P56375	Acyp2	P56375	0	1	Acylphosphatase-2
-ACYP2	rattus-norvegicus	P35745	Acyp2	P35745	0	1	Acylphosphatase-2
+ACY-1	human	Q03154	ACY1	Q03154	5	103	Aminoacylase-1 (ACY-1) (EC 3.5.1.14) (N-acyl-L-amino-acid am	w
+ACY-1	worm	Q19523	acy-1	Q19523	3	9	adenylate cyclase	
+ACY-2	human	P45381	ASPA	P45381	1	88	Aspartoacylase (EC 3.5.1.15) (Aminoacylase-2) (ACY-2)	w
+ACY-2	worm	O16880	acy-2	O16880	2	7	adenylate cyclase	
+ACY-3	human	Q96HD9	ACY3	Q96HD9	12	115	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
+ACY-3	worm	G5EE33	acy-3	G5EE33	0	2	adenylate cyclase	
+ACY-4	worm	Q966F9	acy-4	Q966F9	2	11	adenylate cyclase	
+ACY1	dictyostelium-discoideum	Q55DP8	acy1	Q55DP8	0	4	Aminoacylase-1	
+ACY1	human	Q03154	ACY1	Q03154	5	103	Aminoacylase-1 (ACY-1) (EC 3.5.1.14) (N-acyl-L-amino-acid am	
+ACY1	mus-musculus	Q99JW2	Acy1	Q99JW2	0	8	Aminoacylase-1	
+ACY1	zebrafish	F1QZ04	acy1	F1QZ04	1	8	N-acyl-aliphatic-L-amino acid amidohydrolase	
+ACY1A	rattus-norvegicus	Q6AYS7	Acy1a	Q6AYS7	0	8	Aminoacylase-1A	
+ACY1L2	human	Q8IYS1	PM20D2	Q8IYS1	1	94		
+ACY1_HUMAN	human	Q03154	ACY1	Q03154	5	103		
+ACY2	human	P45381	ASPA	P45381	1	88		
+ACY2_HUMAN	human	P45381	ASPA	P45381	1	88		
+ACY3	human	Q96HD9	ACY3	Q96HD9	12	115	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	
+ACY3	mus-musculus	Q91XE4	Acy3	Q91XE4	2	12	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	
+ACY3	rattus-norvegicus	Q5M876	Acy3	Q5M876	1	8	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	
+ACY3.1	zebrafish	Q6DHI0	acy3.1	Q6DHI0	0	25	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	
+ACY3.2	zebrafish	Q6DHQ3	acy3.2	Q6DHQ3	0	25	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	
+ACY3_HUMAN	human	Q96HD9	ACY3	Q96HD9	12	115		
+ACYL	fly	FBgn0011361	ND-ACP	M9PDU4	58	366	Acyl carrier protein	w
+ACYL	human	O00154	ACOT7	O00154	6	174	Cytosolic acyl coenzyme A thioester hydrolase (EC 3.1.2.2) (	w
+ACYL	human	O14561	NDUFAB1	O14561	132	614	Acyl carrier protein, mitochondrial (ACP) (CI-SDAP) (NADH-ub	w
+ACYL	human	Q6ZUV0	ACOT7L	Q6ZUV0	0	6	Cytosolic acyl coenzyme A thioester hydrolase-like (Acyl-CoA	w
+ACYL	human	Q8N9L9	ACOT4	Q8N9L9	10	91	Peroxisomal succinyl-coenzyme A thioesterase (EC 3.1.2.3) (A	w
+ACYL	worm	A3QMD3	oac-58	A3QMD3	0	1	Acyl_transf_3 domain-containing protein	w
+ACYL	worm	O16467	oac-29	O16467	0	2	Acyl_transf_3 domain-containing protein	w
+ACYL	worm	O17685	spig-15	O17685	0	2	Acyl carrier protein	w
+ACYL	worm	O45374	oac-17	O45374	0	2	Acyl_transf_3 domain-containing protein	w
+ACYL	worm	Q20122	ndab-2	Q20122	23	166	Acyl carrier protein	w
+ACYL	worm	Q9U241	ndab-1	Q9U241	19	194	Acyl carrier protein	w
+ACYL	yeast	P32463	ACP1	P32463	39	205	Acyl carrier protein, mitochondrial	w
+ACYL	zebrafish	F1QCE9	ndufab1b	F1QCE9	50	417	Acyl carrier protein	w
+ACYL-1-LYSOPHOSPHATIDYLINOSITOL	yeast	P38226	CST26	P38226	0	7	2-acyl-1-lysophosphatidylinositol acyltransferase	w
+ACYL-ACTIVATING	fly	FBgn0012034	AcCoAS	Q9VP61	4	76	Acetyl-coenzyme A synthetase (EC 6.2.1.1) (Acetate--CoA liga	w
+ACYL-CARRIER-PROTEIN	fly	FBgn0033883	Mecr	Q9V6U9	1	40	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
+ACYL-CARRIER-PROTEIN	fly	FBgn0036691	beg	Q8T3L6	8	54	Probable malonyl-CoA-acyl carrier protein transacylase, mito	w
+ACYL-CARRIER-PROTEIN	fly	FBgn0037251	Lipt2	Q9VN27	1	21	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
+ACYL-CARRIER-PROTEIN	fly	FBgn0037356	CG12170	Q9VNF5	11	1185	3-oxoacyl-[acyl-carrier-protein] synthase	w
+ACYL-CARRIER-PROTEIN	human	A6NK58	LIPT2	A6NK58	10	39	Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferas	w
+ACYL-CARRIER-PROTEIN	human	P49327	FASN	P49327	8	765	Fatty acid synthase (EC 2.3.1.85) (Type I fatty acid synthas	w
+ACYL-CARRIER-PROTEIN	human	P86397	HTD2	P86397	0	16	Hydroxyacyl-thioester dehydratase type 2, mitochondrial (HsH	w
+ACYL-CARRIER-PROTEIN	human	Q8N4T8	CBR4	Q8N4T8	9	97	3-oxoacyl-[acyl-carrier-protein] reductase (EC 1.1.1.100) (3	w
+ACYL-CARRIER-PROTEIN	human	Q92506	HSD17B8	Q92506	6	102	(3R)-3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12) (17-beta	w
+ACYL-CARRIER-PROTEIN	human	Q9BV79	MECR	Q9BV79	3	119	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
+ACYL-CARRIER-PROTEIN	human	Q9NWU1	OXSM	Q9NWU1	3	85	3-oxoacyl-[acyl-carrier-protein] synthase, mitochondrial (EC	w
+ACYL-CARRIER-PROTEIN	zebrafish	F1R7W6	oxsm	F1R7W6	2	86	3-oxoacyl-[acyl-carrier-protein] synthase	w
+ACYL-COA	fly	FBgn0023550	FarO	Q9W508	0	6	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0027780	CG13401	Q9VLL0	0	10	Beta-alanine-activating enzyme (EC 6.2.1.-) (Acyl-CoA synthe	w
+ACYL-COA	fly	FBgn0029821	CG4020	Q9W459	1	2	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0031703	Acsf2	Q9VMR6	1	57	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+ACYL-COA	fly	FBgn0031992	Acbp1	Q9VLS4	0	5	Acyl-CoA binding protein 1, isoform A (Acyl-CoA binding prot	w
+ACYL-COA	fly	FBgn0032055	Sgp	Q9VLJ7	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0033464	CG1441	Q7K3T3	0	2	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0034142	CG8306	Q960W6	0	15	Putative fatty acyl-CoA reductase CG8306 (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0034143	CG8303	A1ZAI3	1	14	Putative fatty acyl-CoA reductase CG8303 (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0034145	CG5065	A1ZAI5	0	5	Putative fatty acyl-CoA reductase CG5065 (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0034432	Acadvl	A1ZBJ2	3	44	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	w
+ACYL-COA	fly	FBgn0035742	Acbp4	Q9VS20	0	2	Acyl-CoA binding protein 4 (GEO09603p1) (RE33457p)	w
+ACYL-COA	fly	FBgn0035743	Acbp6	Q9VS21	0	3	Acyl-CoA binding protein 6, isoform A (Acyl-CoA binding prot	w
+ACYL-COA	fly	FBgn0035811	Mcad	Q9VSA3	6	146	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
+ACYL-COA	fly	FBgn0035926	Acbp5	Q9VSP9	0	12	Acyl-CoA binding protein 5 (RE05521p)	w
+ACYL-COA	fly	FBgn0036824	CG3902	Q9VVU1	3	25	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
+ACYL-COA	fly	FBgn0037999	CG4860	Q9VGC2	3	9	Short-chain specific acyl-CoA dehydrogenase, mitochondrial (	w
+ACYL-COA	fly	FBgn0038032	CG10096	Q9VG87	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0038033	CG10097	Q9VG86	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0038449	CG17562	Q9VES7	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0038450	CG17560	Q9VES6	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0038451	CG14893	Q9VES5	0	4	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0038742	Arc42	Q9VDT1	18	386	Short-chain specific acyl-CoA dehydrogenase, mitochondrial (	w
+ACYL-COA	fly	FBgn0038751	CG4770	Q9VDS1	0	4	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0039131	CG12268	Q9VCF6	0	5	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0039184	CG6432	Q9VC92	1	15	Acyl-CoA synthetase short-chain family member 3, mitochondri	w
+ACYL-COA	fly	FBgn0039620	wat	Q8MS59	1	23	Fatty acyl-CoA reductase wat (Protein waterproof) (EC 1.2.1.	w
+ACYL-COA	fly	FBgn0043792	CG30427	Q8MMC6	0	6	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0085371	CG34342	A8JNC9	0	2	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
+ACYL-COA	fly	FBgn0250836	Acbp3	Q9VS22	0	4	Acyl-CoA binding protein 3, isoform A (Acyl-CoA binding prot	w
+ACYL-COA	human	A0A0A0MR51	FADS1	A0A0A0MR51	1	41	Acyl-CoA (8-3)-desaturase	w
+ACYL-COA	human	A1L3X0	ELOVL7	A1L3X0	5	75	Very long chain fatty acid elongase 7 (EC 2.3.1.199) (3-keto	w
+ACYL-COA	human	O00154	ACOT7	O00154	6	174	Cytosolic acyl coenzyme A thioester hydrolase (EC 3.1.2.2) (	w
+ACYL-COA	human	O00767	SCD	O00767	22	179	Stearoyl-CoA desaturase (hSCD1) (EC 1.14.19.1) (Acyl-CoA des	w
+ACYL-COA	human	O14734	ACOT8	O14734	7	86	Acyl-coenzyme A thioesterase 8 (Acyl-CoA thioesterase 8) (EC	w
+ACYL-COA	human	O15228	GNPAT	O15228	9	115	Dihydroxyacetone phosphate acyltransferase (DAP-AT) (DAPAT) 	w
+ACYL-COA	human	O15254	ACOX3	O15254	8	76	Peroxisomal acyl-coenzyme A oxidase 3 (EC 1.3.3.6) (Branched	w
+ACYL-COA	human	O60427	FADS1	O60427	4	134	Acyl-CoA (8-3)-desaturase (EC 1.14.19.44) (Delta(5) fatty ac	w
+ACYL-COA	human	O60488	ACSL4	O60488	4	220	Long-chain-fatty-acid--CoA ligase 4 (EC 6.2.1.3) (Arachidona	w
+ACYL-COA	human	O75907	DGAT1	O75907	3	93	Diacylglycerol O-acyltransferase 1 (EC 2.3.1.20) (ACAT-relat	w
+ACYL-COA	human	O95573	ACSL3	O95573	5	320	Fatty acid CoA ligase Acsl3 (Arachidonate--CoA ligase) (EC 6	w
+ACYL-COA	human	O95864	FADS2	O95864	6	125	Acyl-CoA 6-desaturase (EC 1.14.19.3) (Delta(6) fatty acid de	w
+ACYL-COA	human	P0C7M7	ACSM4	P0C7M7	0	29	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	w
+ACYL-COA	human	P11310	ACADM	P11310	13	224	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
+ACYL-COA	human	P16219	ACADS	P16219	28	395	Short-chain specific acyl-CoA dehydrogenase, mitochondrial (	w
+ACYL-COA	human	P28330	ACADL	P28330	8	56	Long-chain specific acyl-CoA dehydrogenase, mitochondrial (L	w
+ACYL-COA	human	P33121	ACSL1	P33121	2	185	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	w
+ACYL-COA	human	P42765	ACAA2	P42765	6	247	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	w
+ACYL-COA	human	P45954	ACADSB	P45954	11	119	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
+ACYL-COA	human	P49748	ACADVL	P49748	9	184	Very long-chain acyl-CoA dehydrogenase, mitochondrial (VLCAD	w
+ACYL-COA	human	P49753	ACOT2	P49753	8	161	Acyl-coenzyme A thioesterase 2, mitochondrial (Acyl-CoA thio	w
+ACYL-COA	human	Q08AH1	ACSM1	Q08AH1	2	55	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	w
+ACYL-COA	human	Q08AH3	ACSM2A	Q08AH3	1	29	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	w
+ACYL-COA	human	Q15067	ACOX1	Q15067	9	105	Peroxisomal acyl-coenzyme A oxidase 1 (AOX) (EC 1.3.3.6) (Pa	w
+ACYL-COA	human	Q3I5F7	ACOT6	Q3I5F7	3	76	Acyl-coenzyme A thioesterase 6 (Acyl-CoA thioesterase 6) (EC	w
+ACYL-COA	human	Q3SYC2	MOGAT2	Q3SYC2	1	26	2-acylglycerol O-acyltransferase 2 (EC 2.3.1.20) (EC 2.3.1.2	w
+ACYL-COA	human	Q4G176	ACSF3	Q4G176	4	236	Malonate--CoA ligase ACSF3, mitochondrial (EC 6.2.1.76) (Acy	w
+ACYL-COA	human	Q4L235	AASDH	Q4L235	8	213	Beta-alanine-activating enzyme (EC 6.2.1.-) (Acyl-CoA synthe	w
+ACYL-COA	human	Q53FZ2	ACSM3	Q53FZ2	0	52	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	w
+ACYL-COA	human	Q58HT5	AWAT1	Q58HT5	0	21	Acyl-CoA wax alcohol acyltransferase 1 (EC 2.3.1.75) (Diacyl	w
+ACYL-COA	human	Q5FVE4	ACSBG2	Q5FVE4	0	56	Long-chain-fatty-acid--CoA ligase ACSBG2 (EC 6.2.1.3) (Acyl-	w
+ACYL-COA	human	Q5SZD4	GLYATL3	Q5SZD4	3	14	Glycine N-acyltransferase-like protein 3 (EC 2.3.1.13) (Acyl	w
+ACYL-COA	human	Q5T1C6	THEM4	Q5T1C6	3	111	Acyl-coenzyme A thioesterase THEM4 (Acyl-CoA thioesterase TH	w
+ACYL-COA	human	Q68CK6	ACSM2B	Q68CK6	1	25	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	w
+ACYL-COA	human	Q68D91	MBLAC2	Q68D91	12	118	Acyl-coenzyme A thioesterase MBLAC2 (Acyl-CoA thioesterase M	w
+ACYL-COA	human	Q6E213	AWAT2	Q6E213	0	26	Acyl-CoA wax alcohol acyltransferase 2 (EC 2.3.1.75) (11-cis	w
+ACYL-COA	human	Q6IB77	GLYAT	Q6IB77	11	127	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
+ACYL-COA	human	Q6JQN1	ACAD10	Q6JQN1	4	120	Acyl-CoA dehydrogenase family member 10 (ACAD-10) (EC 1.3.99	w
+ACYL-COA	human	Q6NUN0	ACSM5	Q6NUN0	6	82	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	w
+ACYL-COA	human	Q6P461	ACSM6	Q6P461	0	14	Acyl-coenzyme A synthetase ACSM6, mitochondrial (EC 6.2.1.2)	w
+ACYL-COA	human	Q6UWP7	LCLAT1	Q6UWP7	15	136	Lysocardiolipin acyltransferase 1 (EC 2.3.1.-) (1-acylglycer	w
+ACYL-COA	human	Q6ZUV0	ACOT7L	Q6ZUV0	0	6	Cytosolic acyl coenzyme A thioester hydrolase-like (Acyl-CoA	w
+ACYL-COA	human	Q709F0	ACAD11	Q709F0	9	176	Acyl-CoA dehydrogenase family member 11 (ACAD-11) (EC 1.3.8.	w
+ACYL-COA	human	Q86TX2	ACOT1	Q86TX2	5	190	Acyl-coenzyme A thioesterase 1 (Acyl-CoA thioesterase 1) (EC	w
+ACYL-COA	human	Q86UL3	GPAT4	Q86UL3	11	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
+ACYL-COA	human	Q86V21	AACS	Q86V21	2	105	Acetoacetyl-CoA synthetase (EC 6.2.1.16) (Acyl-CoA synthetas	w
+ACYL-COA	human	Q86VF5	MOGAT3	Q86VF5	0	40	2-acylglycerol O-acyltransferase 3 (EC 2.3.1.20) (EC 2.3.1.2	w
+ACYL-COA	human	Q8N1Q8	THEM5	Q8N1Q8	5	61	Acyl-coenzyme A thioesterase THEM5 (Acyl-CoA thioesterase TH	w
+ACYL-COA	human	Q8N9L9	ACOT4	Q8N9L9	10	91	Peroxisomal succinyl-coenzyme A thioesterase (EC 3.1.2.3) (A	w
+ACYL-COA	human	Q8WU03	GLYATL2	Q8WU03	3	40	Glycine N-acyltransferase-like protein 2 (EC 2.3.1.13) (Acyl	w
+ACYL-COA	human	Q8WVX9	FAR1	Q8WVX9	11	121	Fatty acyl-CoA reductase 1 (FAR1) (EC 1.2.1.84) (Male steril	w
+ACYL-COA	human	Q8WXI4	ACOT11	Q8WXI4	5	124	Acyl-coenzyme A thioesterase 11 (Acyl-CoA thioesterase 11) (	w
+ACYL-COA	human	Q8WYK0	ACOT12	Q8WYK0	2	102	Acetyl-coenzyme A thioesterase (EC 3.1.2.1) (Acyl-CoA thioes	w
+ACYL-COA	human	Q92604	LPGAT1	Q92604	5	116	Acyl-CoA:lysophosphatidylglycerol acyltransferase 1 (2-acylg	w
+ACYL-COA	human	Q969I3	GLYATL1	Q969I3	4	33	Glycine N-acyltransferase-like protein 1 (EC 2.3.1.68) (Acyl	w
+ACYL-COA	human	Q96CM8	ACSF2	Q96CM8	5	280	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+ACYL-COA	human	Q96GR2	ACSBG1	Q96GR2	2	82	Long-chain-fatty-acid--CoA ligase ACSBG1 (EC 6.2.1.3) (Acyl-	w
+ACYL-COA	human	Q96K12	FAR2	Q96K12	3	66	Fatty acyl-CoA reductase 2 (FAR2) (EC 1.2.1.84) (Male steril	w
+ACYL-COA	human	Q96PD6	MOGAT1	Q96PD6	0	22	2-acylglycerol O-acyltransferase 1 (EC 2.3.1.22) (Acyl-CoA:m	w
+ACYL-COA	human	Q96PD7	DGAT2	Q96PD7	1	37	Diacylglycerol O-acyltransferase 2 (EC 2.3.1.20) (Acyl-CoA r	w
+ACYL-COA	human	Q99424	ACOX2	Q99424	5	34	Peroxisomal acyl-coenzyme A oxidase 2 (EC 1.3.3.6) (3-alpha,	w
+ACYL-COA	human	Q9BW60	ELOVL1	Q9BW60	5	106	Very long chain fatty acid elongase 1 (EC 2.3.1.199) (3-keto	w
+ACYL-COA	human	Q9GZR5	ELOVL4	Q9GZR5	8	148	Very long chain fatty acid elongase 4 (EC 2.3.1.199) (3-keto	w
+ACYL-COA	human	Q9H5J4	ELOVL6	Q9H5J4	5	57	Very long chain fatty acid elongase 6 (EC 2.3.1.199) (3-keto	w
+ACYL-COA	human	Q9H6R3	ACSS3	Q9H6R3	0	47	Acyl-CoA synthetase short-chain family member 3, mitochondri	w
+ACYL-COA	human	Q9H845	ACAD9	Q9H845	15	371	Complex I assembly factor ACAD9, mitochondrial (Acyl-CoA deh	w
+ACYL-COA	human	Q9HB03	ELOVL3	Q9HB03	3	34	Very long chain fatty acid elongase 3 (EC 2.3.1.199) (3-keto	w
+ACYL-COA	human	Q9NPJ3	ACOT13	Q9NPJ3	4	71	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	w
+ACYL-COA	human	Q9NR19	ACSS2	Q9NR19	0	122	Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acet	w
+ACYL-COA	human	Q9NUB1	ACSS1	Q9NUB1	5	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
+ACYL-COA	human	Q9NUZ1	ACOXL	Q9NUZ1	3	14	Acyl-coenzyme A oxidase-like protein (Acyl-CoA oxidase-like 	w
+ACYL-COA	human	Q9NXB9	ELOVL2	Q9NXB9	7	85	Very long chain fatty acid elongase 2 (EC 2.3.1.199) (3-keto	w
+ACYL-COA	human	Q9NYP7	ELOVL5	Q9NYP7	22	384	Very long chain fatty acid elongase 5 (EC 2.3.1.199) (3-keto	w
+ACYL-COA	human	Q9UKU0	ACSL6	Q9UKU0	2	213	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	w
+ACYL-COA	human	Q9UKU7	ACAD8	Q9UKU7	10	77	Isobutyryl-CoA dehydrogenase, mitochondrial (IBDH) (EC 1.3.8	w
+ACYL-COA	human	Q9ULC5	ACSL5	Q9ULC5	3	152	Long-chain-fatty-acid--CoA ligase 5 (EC 6.2.1.3) (Arachidona	w
+ACYL-COA	human	Q9Y2P5	SLC27A5	Q9Y2P5	0	40	Long-chain fatty acid transport protein 5 (FATP-5) (Fatty ac	w
+ACYL-COA	human	Q9Y305	ACOT9	Q9Y305	3	150	Acyl-coenzyme A thioesterase 9, mitochondrial (Acyl-CoA thio	w
+ACYL-COA	worm	A0A0K3AQR2	acdh-4	A0A0K3AQR2	3	10	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
+ACYL-COA	worm	A8WI16	CELE_F49H6.17	A8WI16	0	4	Acyl-CoA thioesterase	w
+ACYL-COA	worm	B3WFZ3	C31H5.6	B3WFZ3	0	1	BAAT/acyl-CoA thioester hydrolase protein	w
+ACYL-COA	worm	H2KYN3	acdh-13	H2KYN3	1	7	Acyl-CoA dehydrogenase family member 9, mitochondrial	w
+ACYL-COA	worm	H2KYU0	acdh-2	H2KYU0	0	8	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
+ACYL-COA	worm	H2KZG6	acdh-1	H2KZG6	3	18	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
+ACYL-COA	worm	O01502	acdh-5	O01502	1	2	Medium-chain acyl-CoA dehydrogenase	w
+ACYL-COA	worm	O01590	acds-10	O01590	0	23	Acyl-CoA dehydrogenase family member 11	w
+ACYL-COA	worm	O02171	pkal-1	O02171	0	10	Acyl-CoA synthetase family member 2, mitochondrial	w
+ACYL-COA	worm	O18693	acs-2	O18693	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
+ACYL-COA	worm	O44549	acdh-3	O44549	3	12	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
+ACYL-COA	worm	P34275	acdh-6	P34275	1	19	Probable acyl-CoA dehydrogenase 6	w
+ACYL-COA	worm	Q17577	acs-7	Q17577	0	16	Acyl-CoA synthetase 7	w
+ACYL-COA	worm	Q19057	acdh-12	Q19057	1	14	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	w
+ACYL-COA	worm	Q19781	CELE_F25E2.3	Q19781	0	7	Acyl-CoA thioesterase II	w
+ACYL-COA	worm	Q21243	acdh-8	Q21243	2	6	medium-chain acyl-CoA dehydrogenase	w
+ACYL-COA	worm	Q22347	acdh-10	Q22347	1	8	Probable medium-chain specific acyl-CoA dehydrogenase 10, mi	w
+ACYL-COA	worm	Q22781	acdh-7	Q22781	2	18	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	w
+ACYL-COA	worm	Q9TZL9	fard-1	Q9TZL9	0	1	Fatty acyl-CoA reductase	w
+ACYL-COA	worm	Q9UAV8	acs-1	Q9UAV8	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
+ACYL-COA	worm	Q9XWZ2	acdh-11	Q9XWZ2	0	7	Acyl-CoA dehydrogenase family member 11	w
+ACYL-COA	yeast	P21147	OLE1	P21147	2	90	Acyl-CoA desaturase 1	w
+ACYL-COA	yeast	Q03002	FRK1	Q03002	1	29	Fatty acyl-CoA synthetase and RNA processing-associated kina	w
+ACYL-COA	zebrafish	A0A8M1NZE7	acot22	A0A8M1NZE7	0	8	Acyl-CoA thioesterase 22	w
+ACYL-COA	zebrafish	A0A8M9PMN6	far1	A0A8M9PMN6	0	1	Fatty acyl-CoA reductase	w
+ACYL-COA	zebrafish	A0AB13A482	acot16	A0AB13A482	0	5	Acyl-CoA thioesterase 16 precursor	w
+ACYL-COA	zebrafish	A0AB32TU96	acadvl	A0AB32TU96	1	23	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	w
+ACYL-COA	zebrafish	A2CG95	acadm	A2CG95	3	22	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	w
+ACYL-COA	zebrafish	A5PMN5	acot17	A5PMN5	0	5	Acyl-CoA thioesterase 17	w
+ACYL-COA	zebrafish	A9JRA7	acsm3	A9JRA7	1	7	medium-chain acyl-CoA ligase	w
+ACYL-COA	zebrafish	E7F2S8	acsf3	E7F2S8	2	201	Acyl-CoA synthetase family member 3	w
+ACYL-COA	zebrafish	F1QFQ7	acadsb	F1QFQ7	2	11	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
+ACYL-COA	zebrafish	Q0P4F7	acsf2	Q0P4F7	2	180	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
+ACYL-COA	zebrafish	Q1L8Q4	si:dkey-97m3.1	Q1L8Q4	0	1	Fatty acyl-CoA reductase	w
+ACYL-COA	zebrafish	Q5RH35	acot18	Q5RH35	0	5	Acyl-CoA thioesterase 18	w
+ACYL-COA	zebrafish	Q5SPG8	acot20	Q5SPG8	0	11	Acyl-CoA thioesterase 20	w
+ACYL-COA	zebrafish	Q5U3W6	acot19	Q5U3W6	0	8	Acyl-CoA thioesterase 19	w
+ACYL-COA	zebrafish	Q6AXI7	acads	Q6AXI7	2	11	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	w
+ACYL-COA	zebrafish	Q9DEX7	fads2	Q9DEX7	0	2	Acyl-CoA 6-desaturase	w
+ACYL-COA-BINDING	fly	FBgn0010387	Acbp2	P42281	0	6	Acyl-CoA-binding protein homolog (ACBP) (Diazepam-binding in	w
+ACYL-COA-BINDING	fly	FBgn0064116	Acbp-Ank	Q9VRG6	1	5	Acyl-CoA-binding domain-containing protein 6	w
+ACYL-COA-BINDING	human	P07108	DBI	P07108	8	117	Acyl-CoA-binding protein (ACBP) (Diazepam-binding inhibitor)	w
+ACYL-COA-BINDING	human	Q5T8D3	ACBD5	Q5T8D3	47	208	Acyl-CoA-binding domain-containing protein 5	w
+ACYL-COA-BINDING	human	Q8N6N7	ACBD7	Q8N6N7	6	62	Acyl-CoA-binding domain-containing protein 7	w
+ACYL-COA-BINDING	human	Q8NC06	ACBD4	Q8NC06	4	22	Acyl-CoA-binding domain-containing protein 4	w
+ACYL-COA-BINDING	human	Q9BR61	ACBD6	Q9BR61	22	91	Acyl-CoA-binding domain-containing protein 6	w
+ACYL-COA-BINDING	human	Q9H3P7	ACBD3	Q9H3P7	42	282	Golgi resident protein GCP60 (Acyl-CoA-binding domain-contai	w
+ACYL-COA-BINDING	worm	O01805	acbp-1	O01805	3	46	Acyl-CoA-binding protein homolog 1	w
+ACYL-COA-BINDING	worm	Q20507	acbp-3	Q20507	0	21	Acyl-CoA-binding protein homolog 3	w
+ACYL-COA-BINDING	worm	Q9XVJ0	acbp-5	Q9XVJ0	1	2	Acyl-CoA-binding domain-containing protein 6	w
+ACYL-COA-BINDING	yeast	P31787	ACB1	P31787	2	33	Acyl-CoA-binding protein	w
+ACYL-COA-BINDING	zebrafish	A5WV69	acbd5b	A5WV69	1	4	Acyl-CoA-binding domain-containing protein 5-B	w
+ACYL-COA-BINDING	zebrafish	Q4V8X4	acbd6	Q4V8X4	2	5	Acyl-CoA-binding domain-containing protein 6	w
+ACYL-COA-BINDING	zebrafish	Q502L1	acbd5a	Q502L1	2	6	Acyl-CoA-binding domain-containing protein 5A	w
+ACYL-COA-BINDING	zebrafish	Q6P5L2	dbi	Q6P5L2	0	6	Acyl-CoA-binding protein	w
+ACYL-COA-DESATURASE	human	Q86SK9	SCD5	Q86SK9	9	104	Stearoyl-CoA desaturase 5 (EC 1.14.19.1) (Acyl-CoA-desaturas	w
+ACYL-COENZYME	fly	FBgn0027572	Acox1	Q7KML2	6	89	Acyl-coenzyme A oxidase 1 (EC 1.3.3.6)	w
+ACYL-COENZYME	fly	FBgn0029924	CG4586	Q9W3U0	5	34	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	fly	FBgn0031813	Acox3	B7Z028	6	35	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	fly	FBgn0032775	CG17544	Q9VIX4	5	19	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	fly	FBgn0034628	Acox57D-p	Q9W2G9	5	23	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	fly	FBgn0034629	Acox57D-d	Q9W2G8	5	24	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	human	A8MXV4	NUDT19	A8MXV4	13	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
+ACYL-COENZYME	human	O14734	ACOT8	O14734	7	86	Acyl-coenzyme A thioesterase 8 (Acyl-CoA thioesterase 8) (EC	w
+ACYL-COENZYME	human	O15254	ACOX3	O15254	8	76	Peroxisomal acyl-coenzyme A oxidase 3 (EC 1.3.3.6) (Branched	w
+ACYL-COENZYME	human	O75908	SOAT2	O75908	2	28	Sterol O-acyltransferase 2 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
+ACYL-COENZYME	human	P0C7M7	ACSM4	P0C7M7	0	29	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	w
+ACYL-COENZYME	human	P23141	CES1	P23141	2	42	Liver carboxylesterase 1 (Acyl-coenzyme A:cholesterol acyltr	w
+ACYL-COENZYME	human	P35610	SOAT1	P35610	7	254	Sterol O-acyltransferase 1 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
+ACYL-COENZYME	human	P49753	ACOT2	P49753	8	161	Acyl-coenzyme A thioesterase 2, mitochondrial (Acyl-CoA thio	w
+ACYL-COENZYME	human	Q08AH1	ACSM1	Q08AH1	2	55	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	w
+ACYL-COENZYME	human	Q08AH3	ACSM2A	Q08AH3	1	29	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	w
+ACYL-COENZYME	human	Q15067	ACOX1	Q15067	9	105	Peroxisomal acyl-coenzyme A oxidase 1 (AOX) (EC 1.3.3.6) (Pa	w
+ACYL-COENZYME	human	Q3I5F7	ACOT6	Q3I5F7	3	76	Acyl-coenzyme A thioesterase 6 (Acyl-CoA thioesterase 6) (EC	w
+ACYL-COENZYME	human	Q53FZ2	ACSM3	Q53FZ2	0	52	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	w
+ACYL-COENZYME	human	Q5T1C6	THEM4	Q5T1C6	3	111	Acyl-coenzyme A thioesterase THEM4 (Acyl-CoA thioesterase TH	w
+ACYL-COENZYME	human	Q68CK6	ACSM2B	Q68CK6	1	25	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	w
+ACYL-COENZYME	human	Q68D91	MBLAC2	Q68D91	12	118	Acyl-coenzyme A thioesterase MBLAC2 (Acyl-CoA thioesterase M	w
+ACYL-COENZYME	human	Q6NUN0	ACSM5	Q6NUN0	6	82	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	w
+ACYL-COENZYME	human	Q6P461	ACSM6	Q6P461	0	14	Acyl-coenzyme A synthetase ACSM6, mitochondrial (EC 6.2.1.2)	w
+ACYL-COENZYME	human	Q86TX2	ACOT1	Q86TX2	5	190	Acyl-coenzyme A thioesterase 1 (Acyl-CoA thioesterase 1) (EC	w
+ACYL-COENZYME	human	Q8N1Q8	THEM5	Q8N1Q8	5	61	Acyl-coenzyme A thioesterase THEM5 (Acyl-CoA thioesterase TH	w
+ACYL-COENZYME	human	Q8N6M3	FITM2	Q8N6M3	0	128	Acyl-coenzyme A diphosphatase FITM2 (EC 3.6.1.-) (Fat storag	w
+ACYL-COENZYME	human	Q8N9L9	ACOT4	Q8N9L9	10	91	Peroxisomal succinyl-coenzyme A thioesterase (EC 3.1.2.3) (A	w
+ACYL-COENZYME	human	Q8WXI4	ACOT11	Q8WXI4	5	124	Acyl-coenzyme A thioesterase 11 (Acyl-CoA thioesterase 11) (	w
+ACYL-COENZYME	human	Q8WYK0	ACOT12	Q8WYK0	2	102	Acetyl-coenzyme A thioesterase (EC 3.1.2.1) (Acyl-CoA thioes	w
+ACYL-COENZYME	human	Q99424	ACOX2	Q99424	5	34	Peroxisomal acyl-coenzyme A oxidase 2 (EC 1.3.3.6) (3-alpha,	w
+ACYL-COENZYME	human	Q9NPJ3	ACOT13	Q9NPJ3	4	71	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	w
+ACYL-COENZYME	human	Q9NUZ1	ACOXL	Q9NUZ1	3	14	Acyl-coenzyme A oxidase-like protein (Acyl-CoA oxidase-like 	w
+ACYL-COENZYME	human	Q9Y305	ACOT9	Q9Y305	3	150	Acyl-coenzyme A thioesterase 9, mitochondrial (Acyl-CoA thio	w
+ACYL-COENZYME	worm	O62137	acox-1.2	O62137	6	16	Acyl-coenzyme A oxidase acox-1.2	w
+ACYL-COENZYME	worm	O62138	acox-1.3	O62138	6	10	Acyl-coenzyme A oxidase acox-1.3	w
+ACYL-COENZYME	worm	O62139	acox-1.4	O62139	6	10	Acyl-coenzyme A oxidase acox-1.4	w
+ACYL-COENZYME	worm	O62140	acox-1.1	O62140	6	15	Acyl-coenzyme A oxidase acox-1.1	w
+ACYL-COENZYME	worm	P34355	acox-1.5	P34355	6	12	Probable acyl-coenzyme A oxidase acox-1.5	w
+ACYL-COENZYME	worm	Q18187	C25H3.3	Q18187	0	3	Acyl-coenzyme A thioesterase 13	w
+ACYL-COENZYME	worm	Q20992	acox-3	Q20992	6	28	Acyl-coenzyme A oxidase acox-3	w
+ACYL-COENZYME	worm	Q8IG45	C25H3.14	Q8IG45	0	8	Acyl-coenzyme A thioesterase 13	w
+ACYL-COENZYME	worm	Q93839	acox-1.6	Q93839	6	12	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	worm	Q95Q68	C37H5.13	Q95Q68	0	3	Acyl-coenzyme A thioesterase 8	w
+ACYL-COENZYME	worm	Q9GYN3	CELE_K05B2.4	Q9GYN3	0	3	Acyl-coenzyme A thioesterase 1-like	w
+ACYL-COENZYME	worm	Q9U1Q5	CELE_Y87G2A.2	Q9U1Q5	0	1	Acyl-coenzyme A thioesterase 8	w
+ACYL-COENZYME	yeast	P13711	POX1	P13711	0	16	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	yeast	P41903	TES1	P41903	0	15	Peroxisomal acyl-coenzyme A thioester hydrolase 1	w
+ACYL-COENZYME	yeast	P53012	SCS3	P53012	3	73	Acyl-coenzyme A diphosphatase SCS3	w
+ACYL-COENZYME	yeast	Q06676	YFT2	Q06676	0	17	Acyl-coenzyme A diphosphatase YFT2	w
+ACYL-COENZYME	zebrafish	A0A8M1PGE7	acox3	A0A8M1PGE7	0	16	Acyl-coenzyme A oxidase	w
+ACYL-COENZYME	zebrafish	A0A8N7T759	acot21	A0A8N7T759	0	11	Acyl-coenzyme A thioesterase 1	w
+ACYL-COENZYME	zebrafish	A0A8N7UYL9	them4	A0A8N7UYL9	0	6	Acyl-coenzyme A thioesterase THEM4	w
+ACYL-COENZYME	zebrafish	B0R0T6	mblac2	B0R0T6	1	18	Acyl-coenzyme A thioesterase MBLAC2 isoform X1	w
+ACYL-COENZYME	zebrafish	B3DHE6	nudt19	B3DHE6	1	17	Acyl-coenzyme A diphosphatase NUDT19	w
+ACYL-COENZYME	zebrafish	F6P1Y9	acot13	F6P1Y9	0	10	Acyl-coenzyme A thioesterase 13	w
+ACYL-COENZYME	zebrafish	Q5XJP9	acot8	Q5XJP9	0	8	Acyl-coenzyme A thioesterase 8	w
+ACYL-MALONYL-CONDENSING	human	P0C7Q5	SLC35G4	P0C7Q5	2	18	Solute carrier family 35 member G4 (Acyl-malonyl-condensing 	w
+ACYL-MALONYL-CONDENSING	human	P0C7Q6	SLC35G6	P0C7Q6	1	24	Solute carrier family 35 member G6 (Acyl-malonyl-condensing 	w
+ACYL-MALONYL-CONDENSING	human	Q8N808	SLC35G3	Q8N808	1	13	Solute carrier family 35 member G3 (Acyl-malonyl-condensing 	w
+ACYL-MALONYL-CONDENSING	human	Q96KT7	SLC35G5	Q96KT7	2	17	Solute carrier family 35 member G5 (Acyl-malonyl-condensing 	w
+ACYL-PEPTIDE	human	P13798	APEH	P13798	4	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	w
+ACYL-PROTEIN	human	O75608	LYPLA1	O75608	7	159	Acyl-protein thioesterase 1 (APT-1) (hAPT1) (EC 3.1.2.-) (Ly	w
+ACYL-PROTEIN	human	O95372	LYPLA2	O95372	14	139	Acyl-protein thioesterase 2 (APT-2) (EC 3.1.2.-) (Lysophosph	w
+ACYL-PROTEIN	human	Q9NUJ1	ABHD10	Q9NUJ1	10	187	Palmitoyl-protein thioesterase ABHD10, mitochondrial (EC 3.1	w
+ACYL-PROTEIN	yeast	Q12354	YLR118C	Q12354	0	3	Acyl-protein thioesterase 1	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	fly	FBgn0026718	Agpat2	Q7KTI0	0	12	1-acyl-sn-glycerol-3-phosphate acyltransferase (EC 2.3.1.51)	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	fly	FBgn0030421	Agpat1	Q9VYJ4	2	18	1-acyl-sn-glycerol-3-phosphate acyltransferase (EC 2.3.1.51)	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	human	O15120	AGPAT2	O15120	7	125	1-acyl-sn-glycerol-3-phosphate acyltransferase beta (EC 2.3.	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	human	Q53EU6	GPAT3	Q53EU6	13	208	Glycerol-3-phosphate acyltransferase 3 (GPAT-3) (EC 2.3.1.15	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	human	Q99943	AGPAT1	Q99943	16	337	1-acyl-sn-glycerol-3-phosphate acyltransferase alpha (EC 2.3	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	human	Q9NRZ5	AGPAT4	Q9NRZ5	5	91	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	human	Q9NRZ7	AGPAT3	Q9NRZ7	10	123	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma (EC 2.3	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	human	Q9NUQ2	AGPAT5	Q9NUQ2	6	109	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	worm	Q22267	acl-2	Q22267	0	7	Putative 1-acyl-sn-glycerol-3-phosphate acyltransferase acl-	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	worm	Q93841	acl-1	Q93841	0	8	Putative 1-acyl-sn-glycerol-3-phosphate acyltransferase acl-	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	yeast	P33333	SLC1	P33333	1	45	1-acyl-sn-glycerol-3-phosphate acyltransferase	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	zebrafish	A0A8M1PN43	agpat4	A0A8M1PN43	0	8	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	zebrafish	A0JMM2	agpat2	A0JMM2	1	14	1-acyl-sn-glycerol-3-phosphate acyltransferase	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	zebrafish	F1QDN6	agpat5	F1QDN6	1	9	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon	w
+ACYL-SN-GLYCEROL-3-PHOSPHATE	zebrafish	Q7ZWC9	agpat3	Q7ZWC9	0	8	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma	w
+ACYLAMIDASE	human	P22760	AADAC	P22760	0	77	Deacylase AADAC (EC 3.-.-.-) (Acetylesterase AADAC) (EC 3.1.	w
+ACYLAMINO-ACID-RELEASING	human	P13798	APEH	P13798	4	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	w
+ACYLAMINO-ACID-RELEASING	zebrafish	A9C3Q8	si:dkey-16c7.3	A9C3Q8	0	8	Acylamino-acid-releasing enzyme	w
+ACYLAMINOACYL-PEPTIDASE	human	P13798	APEH	P13798	4	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	w
+ACYLAMINOACYL-PEPTIDASE	worm	Q9TYX1	dpf-5	Q9TYX1	1	13	acylaminoacyl-peptidase	w
+ACYLASE	human	Q96HD9	ACY3	Q96HD9	12	115	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
+ACYLATING	fly	FBgn0023537	CG17896	Q7KW39	1	10	Probable methylmalonate-semialdehyde/malonate-semialdehyde d	w
+ACYLATING	human	Q02252	ALDH6A1	Q02252	8	95	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	w
+ACYLCARNITINE	human	O43772	SLC25A20	O43772	4	140	Mitochondrial carnitine/acylcarnitine carrier protein (Carni	w
+ACYLCARNITINE	human	Q8N8R3	SLC25A29	Q8N8R3	2	82	Mitochondrial basic amino acids transporter (Carnitine/acylc	w
+ACYLCARNITINE	zebrafish	A0A8M1QL66	si:dkey-150i13.2	A0A8M1QL66	0	4	Mitochondrial carnitine/acylcarnitine carrier protein isofor	w
+ACYLCARNITINE	zebrafish	Q6P5K6	slc25a20	Q6P5K6	0	4	Mitochondrial carnitine/acylcarnitine carrier protein	w
+ACYLCHOLINE	human	P06276	BCHE	P06276	8	329	Cholinesterase (EC 3.1.1.8) (Acylcholine acylhydrolase) (But	w
+ACYLDIHYDROXYACETONE	yeast	P40471	AYR1	P40471	0	32	NADPH-dependent 1-acyldihydroxyacetone phosphate reductase	w
+ACYLGLYCEROL	fly	FBgn0260750	Mulk	Q9VL10	3	13	Acylglycerol kinase, mitochondrial (EC 2.7.1.107) (EC 2.7.1.	w
+ACYLGLYCEROL	human	Q3SYC2	MOGAT2	Q3SYC2	1	26	2-acylglycerol O-acyltransferase 2 (EC 2.3.1.20) (EC 2.3.1.2	w
+ACYLGLYCEROL	human	Q53H12	AGK	Q53H12	19	227	Acylglycerol kinase, mitochondrial (hAGK) (EC 2.7.1.107) (EC	w
+ACYLGLYCEROL	human	Q86VF5	MOGAT3	Q86VF5	0	40	2-acylglycerol O-acyltransferase 3 (EC 2.3.1.20) (EC 2.3.1.2	w
+ACYLGLYCEROL	human	Q96MH6	TMEM68	Q96MH6	4	74	DGAT1/2-independent enzyme synthesizing storage lipids (DIES	w
+ACYLGLYCEROL	human	Q96PD6	MOGAT1	Q96PD6	0	22	2-acylglycerol O-acyltransferase 1 (EC 2.3.1.22) (Acyl-CoA:m	w
+ACYLGLYCEROL	human	Q9NST1	PNPLA3	Q9NST1	1	47	1-acylglycerol-3-phosphate O-acyltransferase PNPLA3 (EC 2.3.	w
+ACYLGLYCEROL	zebrafish	A0A8M1P4P5	abhd6b	A0A8M1P4P5	0	10	acylglycerol lipase	w
+ACYLGLYCEROL	zebrafish	E7F881	abhd6a	E7F881	0	10	acylglycerol lipase	w
+ACYLGLYCEROL	zebrafish	Q7ZW00	agk	Q7ZW00	1	7	Acylglycerol kinase, mitochondrial	w
+ACYLGLYCEROL-	fly	FBgn0036622	Agpat4	Q9VV49	3	28	1-Acylglycerol-3-phosphate O-acyltransferase 4, isoform A (E	w
+ACYLGLYCEROL-3-PHOSPHATE	fly	FBgn0036622	Agpat4	Q9VV49	3	28	1-Acylglycerol-3-phosphate O-acyltransferase 4, isoform A (E	w
+ACYLGLYCEROL-3-PHOSPHATE	fly	FBgn0036623	Agpat3	D5AEK7	2	110	1-Acylglycerol-3-phosphate O-acyltransferase 3, isoform E (E	w
+ACYLGLYCEROL-3-PHOSPHATE	human	O15120	AGPAT2	O15120	7	125	1-acyl-sn-glycerol-3-phosphate acyltransferase beta (EC 2.3.	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q643R3	LPCAT4	Q643R3	3	82	Lysophospholipid acyltransferase LPCAT4 (1-acylglycerol-3-ph	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q6NUI2	GPAT2	Q6NUI2	3	38	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q6UWP7	LCLAT1	Q6UWP7	15	136	Lysocardiolipin acyltransferase 1 (EC 2.3.1.-) (1-acylglycer	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q7L5N7	LPCAT2	Q7L5N7	9	134	Lysophosphatidylcholine acyltransferase 2 (LPC acyltransfera	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q86UL3	GPAT4	Q86UL3	11	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q8NF37	LPCAT1	Q8NF37	7	182	Lysophosphatidylcholine acyltransferase 1 (LPC acyltransfera	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q8WTS1	ABHD5	Q8WTS1	9	89	1-acylglycerol-3-phosphate O-acyltransferase ABHD5 (EC 2.3.1	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q99943	AGPAT1	Q99943	16	337	1-acyl-sn-glycerol-3-phosphate acyltransferase alpha (EC 2.3	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q9NRZ5	AGPAT4	Q9NRZ5	5	91	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q9NRZ7	AGPAT3	Q9NRZ7	10	123	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma (EC 2.3	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q9NST1	PNPLA3	Q9NST1	1	47	1-acylglycerol-3-phosphate O-acyltransferase PNPLA3 (EC 2.3.	w
+ACYLGLYCEROL-3-PHOSPHATE	human	Q9NUQ2	AGPAT5	Q9NUQ2	6	109	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	w
+ACYLGLYCEROL-3-PHOSPHATE	yeast	Q12385	ICT1	Q12385	0	3	1-acylglycerol-3-phosphate O-acyltransferase ICT1	w
+ACYLGLYCEROPHOSPHATE	human	Q6ZWT7	MBOAT2	Q6ZWT7	1	58	Membrane-bound glycerophospholipid O-acyltransferase 2 (EC 2	w
+ACYLGLYCEROPHOSPHATIDYLINOSITOL	human	Q96N66	MBOAT7	Q96N66	17	208	Membrane-bound acylglycerophosphatidylinositol O-acyltransfe	w
+ACYLGLYCEROPHOSPHATIDYLINOSITOL	worm	Q19468	mboa-7	Q19468	0	3	Membrane-bound acylglycerophosphatidylinositol O-acyltransfe	w
+ACYLGLYCEROPHOSPHATIDYLINOSITOL	zebrafish	Q7SZQ0	mboat7	Q7SZQ0	0	4	Membrane-bound acylglycerophosphatidylinositol O-acyltransfe	w
+ACYLGLYCEROPHOSPHOCHOLINE	fly	FBgn0026630	nes	Q9VVX5	2	32	Lysophospholipid acyltransferase 5 (LPLAT 5) (1-acylglycerop	w
+ACYLGLYCEROPHOSPHOCHOLINE	fly	FBgn0052699	LPCAT	Q0KHU5	1	25	Lysophosphatidylcholine acyltransferase (1-acylglycerophosph	w
+ACYLGLYCEROPHOSPHOCHOLINE	human	Q643R3	LPCAT4	Q643R3	3	82	Lysophospholipid acyltransferase LPCAT4 (1-acylglycerol-3-ph	w
+ACYLGLYCEROPHOSPHOCHOLINE	human	Q6P1A2	LPCAT3	Q6P1A2	10	125	Lysophospholipid acyltransferase 5 (LPLAT 5) (EC 2.3.1.-) (1	w
+ACYLGLYCEROPHOSPHOCHOLINE	human	Q6ZNC8	MBOAT1	Q6ZNC8	2	82	Membrane-bound glycerophospholipid O-acyltransferase 1 (EC 2	w
+ACYLGLYCEROPHOSPHOCHOLINE	human	Q6ZWT7	MBOAT2	Q6ZWT7	1	58	Membrane-bound glycerophospholipid O-acyltransferase 2 (EC 2	w
+ACYLGLYCEROPHOSPHOCHOLINE	human	Q92604	LPGAT1	Q92604	5	116	Acyl-CoA:lysophosphatidylglycerol acyltransferase 1 (2-acylg	w
+ACYLGLYCEROPHOSPHOETHANOLAM	human	Q6ZNC8	MBOAT1	Q6ZNC8	2	82	Membrane-bound glycerophospholipid O-acyltransferase 1 (EC 2	w
+ACYLGLYCEROPHOSPHOETHANOLAMINE	human	Q6P1A2	LPCAT3	Q6P1A2	10	125	Lysophospholipid acyltransferase 5 (LPLAT 5) (EC 2.3.1.-) (1	w
+ACYLGLYCEROPHOSPHOSERINE	fly	FBgn0026630	nes	Q9VVX5	2	32	Lysophospholipid acyltransferase 5 (LPLAT 5) (1-acylglycerop	w
+ACYLHYDROLASE	human	O15496	PLA2G10	O15496	10	163	Group 10 secretory phospholipase A2 (EC 3.1.1.4) (Group X se	w
+ACYLHYDROLASE	human	O60733	PLA2G6	O60733	3	70	85/88 kDa calcium-independent phospholipase A2 (CaI-PLA2) (E	w
+ACYLHYDROLASE	human	P04054	PLA2G1B	P04054	9	75	Phospholipase A2 (EC 3.1.1.4) (Group IB phospholipase A2) (P	w
+ACYLHYDROLASE	human	P06276	BCHE	P06276	8	329	Cholinesterase (EC 3.1.1.8) (Acylcholine acylhydrolase) (But	w
+ACYLHYDROLASE	human	P39877	PLA2G5	P39877	7	71	Phospholipase A2 group V (EC 3.1.1.4) (PLA2-10) (Phosphatidy	w
+ACYLHYDROLASE	human	P47712	PLA2G4A	P47712	4	212	Cytosolic phospholipase A2 (cPLA2) (Phospholipase A2 group I	w
+ACYLHYDROLASE	human	Q05315	CLC	Q05315	17	71	Galectin-10 (Gal-10) (Charcot-Leyden crystal protein) (CLC) 	w
+ACYLHYDROLASE	human	Q9BZM1	PLA2G12A	Q9BZM1	5	75	Group XIIA secretory phospholipase A2 (GXII sPLA2) (sPLA2-XI	w
+ACYLHYDROLASE	human	Q9BZM2	PLA2G2F	Q9BZM2	10	46	Group IIF secretory phospholipase A2 (GIIF sPLA2) (sPLA2-IIF	w
+ACYLHYDROLASE	human	Q9NZ20	PLA2G3	Q9NZ20	15	152	Group 3 secretory phospholipase A2 (EC 3.1.1.4) (Group III s	w
+ACYLHYDROLASE	human	Q9NZK7	PLA2G2E	Q9NZK7	5	69	Group IIE secretory phospholipase A2 (GIIE sPLA2) (sPLA2-IIE	w
+ACYLHYDROLASE	human	Q9UNK4	PLA2G2D	Q9UNK4	10	117	Group IID secretory phospholipase A2 (GIID sPLA2) (sPLA2-IID	w
+ACYLHYDROLASE-LIKE	human	Q5R387	PLA2G2C	Q5R387	0	7	Putative inactive group IIC secretory phospholipase A2 (Phos	w
+ACYLOXYACYL	human	P28039	AOAH	P28039	0	8	Acyloxyacyl hydrolase (EC 3.1.1.77) [Cleaved into: Acyloxyac	w
+ACYLPHOSPHATASE	fly	FBgn0033893	CG18371	Q4V6I0	7	85	acylphosphatase (EC 3.6.1.7)	w
+ACYLPHOSPHATASE	fly	FBgn0040524	CG11052	Q9VHX3	6	66	acylphosphatase (EC 3.6.1.7)	w
+ACYLPHOSPHATASE	fly	FBgn0085190	CG34161	A1A6Q5	3	64	Acylphosphatase (EC 3.6.1.7)	w
+ACYLPHOSPHATASE	human	P07311	ACYP1	P07311	1	68	Acylphosphatase-1 (EC 3.6.1.7) (Acylphosphatase, erythrocyte	w
+ACYLPHOSPHATASE	human	P14621	ACYP2	P14621	3	41	Acylphosphatase-2 (EC 3.6.1.7) (Acylphosphatase, muscle type	w
+ACYLPHOSPHATASE-1	fly	FBgn0025115	Acyp	P56544	4	64	Acylphosphatase-1 (EC 3.6.1.7) (Acylphosphate phosphohydrola	w
+ACYLPHOSPHATASE-1	human	P07311	ACYP1	P07311	1	68	Acylphosphatase-1 (EC 3.6.1.7) (Acylphosphatase, erythrocyte	w
+ACYLPHOSPHATASE-2	fly	FBgn0038363	Acyp2	Q9VF36	14	117	Acylphosphatase-2 (EC 3.6.1.7) (Acylphosphate phosphohydrola	w
+ACYLPHOSPHATASE-2	human	P14621	ACYP2	P14621	3	41	Acylphosphatase-2 (EC 3.6.1.7) (Acylphosphatase, muscle type	w
+ACYLPHOSPHATE	fly	FBgn0025115	Acyp	P56544	4	64	Acylphosphatase-1 (EC 3.6.1.7) (Acylphosphate phosphohydrola	w
+ACYLPHOSPHATE	fly	FBgn0038363	Acyp2	Q9VF36	14	117	Acylphosphatase-2 (EC 3.6.1.7) (Acylphosphate phosphohydrola	w
+ACYLPHOSPHATE	human	P07311	ACYP1	P07311	1	68	Acylphosphatase-1 (EC 3.6.1.7) (Acylphosphatase, erythrocyte	w
+ACYLPHOSPHATE	human	P14621	ACYP2	P14621	3	41	Acylphosphatase-2 (EC 3.6.1.7) (Acylphosphatase, muscle type	w
+ACYLPYRUVASE	human	Q6P587	FAHD1	Q6P587	4	231	Oxaloacetate tautomerase FAHD1, mitochondrial (EC 5.3.2.2) (	w
+ACYLSPHINGOSINE	fly	FBgn0039774	CDase	Q9VA70	17	299	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.23) (Neutral	w
+ACYLSPHINGOSINE	human	Q02083	NAAA	Q02083	29	325	N-acylethanolamine-hydrolyzing acid amidase (EC 3.5.1.60) (A	w
+ACYLSPHINGOSINE	human	Q13510	ASAH1	Q13510	4	166	Acid ceramidase (AC) (ACDase) (Acid CDase) (EC 3.5.1.23) (Ac	w
+ACYLSPHINGOSINE	human	Q5QJU3	ACER2	Q5QJU3	0	32	Alkaline ceramidase 2 (AlkCDase 2) (Alkaline CDase 2) (haCER	w
+ACYLSPHINGOSINE	human	Q8TCT0	CERK	Q8TCT0	12	139	Ceramide kinase (hCERK) (EC 2.7.1.138) (Acylsphingosine kina	w
+ACYLSPHINGOSINE	human	Q8TDN7	ACER1	Q8TDN7	3	28	Alkaline ceramidase 1 (AlkCDase 1) (Alkaline CDase 1) (EC 3.	w
+ACYLSPHINGOSINE	human	Q9NR71	ASAH2	Q9NR71	0	27	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.-) (EC 3.5.1	w
+ACYLTRANSFERASE	fly	FBgn0026630	nes	Q9VVX5	2	32	Lysophospholipid acyltransferase 5 (LPLAT 5) (1-acylglycerop	w
+ACYLTRANSFERASE	fly	FBgn0026718	Agpat2	Q7KTI0	0	12	1-acyl-sn-glycerol-3-phosphate acyltransferase (EC 2.3.1.51)	w
+ACYLTRANSFERASE	fly	FBgn0030421	Agpat1	Q9VYJ4	2	18	1-acyl-sn-glycerol-3-phosphate acyltransferase (EC 2.3.1.51)	w
+ACYLTRANSFERASE	fly	FBgn0031132	CG15450	Q9VRC1	1	18	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	fly	FBgn0031815	frj	Q9VMD5	0	21	Lysophospholipid acyltransferase 7 (LPLAT 7) (EC 2.3.1.-) (E	w
+ACYLTRANSFERASE	fly	FBgn0032471	CG5122	Q9VK40	1	11	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	fly	FBgn0033110	CG9447	A1Z6Q3	0	8	Acyltransferase 3 domain-containing protein	w
+ACYLTRANSFERASE	fly	FBgn0033214	CG1941	Q7JYK2	1	18	Acyltransferase (EC 2.3.1.-)	w
+ACYLTRANSFERASE	fly	FBgn0033215	Dgat2	Q7K1C2	0	20	Acyltransferase (EC 2.3.1.-)	w
+ACYLTRANSFERASE	fly	FBgn0033216	bishu-2	A1Z739	0	18	Acyltransferase (EC 2.3.1.-)	w
+ACYLTRANSFERASE	fly	FBgn0033476	oys	Q6NN55	1	12	Lysophospholipid acyltransferase 6 (LPLAT 6) (EC 2.3.1.-) (E	w
+ACYLTRANSFERASE	fly	FBgn0034971	Gpat4	A0A0B4LGJ9	1	60	Glycerol-3-phosphate acyltransferase 4, isoform D (EC 2.3.1.	w
+ACYLTRANSFERASE	fly	FBgn0038486	CG5265	Q9VEM4	0	13	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	fly	FBgn0040212	Gnpat	A0A0B4KHK0	2	11	Dihydroxyacetone phosphate acyltransferase (EC 2.3.1.42) (Gl	w
+ACYLTRANSFERASE	fly	FBgn0052699	LPCAT	Q0KHU5	1	25	Lysophosphatidylcholine acyltransferase (1-acylglycerophosph	w
+ACYLTRANSFERASE	human	O15120	AGPAT2	O15120	7	125	1-acyl-sn-glycerol-3-phosphate acyltransferase beta (EC 2.3.	w
+ACYLTRANSFERASE	human	O15228	GNPAT	O15228	9	115	Dihydroxyacetone phosphate acyltransferase (DAP-AT) (DAPAT) 	w
+ACYLTRANSFERASE	human	O75908	SOAT2	O75908	2	28	Sterol O-acyltransferase 2 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
+ACYLTRANSFERASE	human	O95237	LRAT	O95237	0	51	Lecithin retinol acyltransferase (EC 2.3.1.135) (Phosphatidy	w
+ACYLTRANSFERASE	human	P04180	LCAT	P04180	12	145	Phosphatidylcholine-sterol acyltransferase (EC 2.3.1.43) (1-	w
+ACYLTRANSFERASE	human	P09110	ACAA1	P09110	8	133	3-ketoacyl-CoA thiolase, peroxisomal (EC 2.3.1.16) (Acetyl-C	w
+ACYLTRANSFERASE	human	P11182	DBT	P11182	17	230	Lipoamide acyltransferase component of branched-chain alpha-	w
+ACYLTRANSFERASE	human	P23141	CES1	P23141	2	42	Liver carboxylesterase 1 (Acyl-coenzyme A:cholesterol acyltr	w
+ACYLTRANSFERASE	human	P35610	SOAT1	P35610	7	254	Sterol O-acyltransferase 1 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
+ACYLTRANSFERASE	human	P40939	HADHA	P40939	38	598	Trifunctional enzyme subunit alpha, mitochondrial (78 kDa ga	w
+ACYLTRANSFERASE	human	P42765	ACAA2	P42765	6	247	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	w
+ACYLTRANSFERASE	human	P53816	PLAAT3	P53816	20	286	Phospholipase A and acyltransferase 3 (EC 2.3.1.-) (EC 3.1.1	w
+ACYLTRANSFERASE	human	P55084	HADHB	P55084	29	475	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	w
+ACYLTRANSFERASE	human	Q3SYC2	MOGAT2	Q3SYC2	1	26	2-acylglycerol O-acyltransferase 2 (EC 2.3.1.20) (EC 2.3.1.2	w
+ACYLTRANSFERASE	human	Q53EU6	GPAT3	Q53EU6	13	208	Glycerol-3-phosphate acyltransferase 3 (GPAT-3) (EC 2.3.1.15	w
+ACYLTRANSFERASE	human	Q58HT5	AWAT1	Q58HT5	0	21	Acyl-CoA wax alcohol acyltransferase 1 (EC 2.3.1.75) (Diacyl	w
+ACYLTRANSFERASE	human	Q5VTY9	HHAT	Q5VTY9	2	21	Protein-cysteine N-palmitoyltransferase HHAT (EC 2.3.1.-) (H	w
+ACYLTRANSFERASE	human	Q5W0Z9	ZDHHC20	Q5W0Z9	20	76	Palmitoyltransferase ZDHHC20 (EC 2.3.1.225) (Acyltransferase	w
+ACYLTRANSFERASE	human	Q643R3	LPCAT4	Q643R3	3	82	Lysophospholipid acyltransferase LPCAT4 (1-acylglycerol-3-ph	w
+ACYLTRANSFERASE	human	Q6E213	AWAT2	Q6E213	0	26	Acyl-CoA wax alcohol acyltransferase 2 (EC 2.3.1.75) (11-cis	w
+ACYLTRANSFERASE	human	Q6NUI2	GPAT2	Q6NUI2	3	38	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	w
+ACYLTRANSFERASE	human	Q6P1A2	LPCAT3	Q6P1A2	10	125	Lysophospholipid acyltransferase 5 (LPLAT 5) (EC 2.3.1.-) (1	w
+ACYLTRANSFERASE	human	Q6UWP7	LCLAT1	Q6UWP7	15	136	Lysocardiolipin acyltransferase 1 (EC 2.3.1.-) (1-acylglycer	w
+ACYLTRANSFERASE	human	Q7L5N7	LPCAT2	Q7L5N7	9	134	Lysophosphatidylcholine acyltransferase 2 (LPC acyltransfera	w
+ACYLTRANSFERASE	human	Q86UL3	GPAT4	Q86UL3	11	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
+ACYLTRANSFERASE	human	Q86VF5	MOGAT3	Q86VF5	0	40	2-acylglycerol O-acyltransferase 3 (EC 2.3.1.20) (EC 2.3.1.2	w
+ACYLTRANSFERASE	human	Q8IUH5	ZDHHC17	Q8IUH5	61	319	Palmitoyltransferase ZDHHC17 (EC 2.3.1.225) (Acyltransferase	w
+ACYLTRANSFERASE	human	Q8IVS2	MCAT	Q8IVS2	19	154	Malonyl-CoA-acyl carrier protein transacylase, mitochondrial	w
+ACYLTRANSFERASE	human	Q8NCC3	PLA2G15	Q8NCC3	5	65	Lysosomal phospholipase A and acyltransferase (EC 2.3.1.-) (	w
+ACYLTRANSFERASE	human	Q8NF37	LPCAT1	Q8NF37	7	182	Lysophosphatidylcholine acyltransferase 1 (LPC acyltransfera	w
+ACYLTRANSFERASE	human	Q92604	LPGAT1	Q92604	5	116	Acyl-CoA:lysophosphatidylglycerol acyltransferase 1 (2-acylg	w
+ACYLTRANSFERASE	human	Q96KN8	PLAAT5	Q96KN8	1	14	Phospholipase A and acyltransferase 5 (Ca(2+)-independent N-	w
+ACYLTRANSFERASE	human	Q96MV8	ZDHHC15	Q96MV8	16	145	Palmitoyltransferase ZDHHC15 (EC 2.3.1.225) (Acyltransferase	w
+ACYLTRANSFERASE	human	Q96PD6	MOGAT1	Q96PD6	0	22	2-acylglycerol O-acyltransferase 1 (EC 2.3.1.22) (Acyl-CoA:m	w
+ACYLTRANSFERASE	human	Q99943	AGPAT1	Q99943	16	337	1-acyl-sn-glycerol-3-phosphate acyltransferase alpha (EC 2.3	w
+ACYLTRANSFERASE	human	Q9HCL2	GPAM	Q9HCL2	4	62	Glycerol-3-phosphate acyltransferase 1, mitochondrial (GPAT-	w
+ACYLTRANSFERASE	human	Q9HDD0	PLAAT1	Q9HDD0	3	51	Phospholipase A and acyltransferase 1 (EC 2.3.1.-) (EC 3.1.1	w
+ACYLTRANSFERASE	human	Q9NRZ5	AGPAT4	Q9NRZ5	5	91	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	w
+ACYLTRANSFERASE	human	Q9NRZ7	AGPAT3	Q9NRZ7	10	123	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma (EC 2.3	w
+ACYLTRANSFERASE	human	Q9NUQ2	AGPAT5	Q9NUQ2	6	109	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	w
+ACYLTRANSFERASE	human	Q9NWW9	PLAAT2	Q9NWW9	5	86	Phospholipase A and acyltransferase 2 (EC 2.3.1.-) (EC 3.1.1	w
+ACYLTRANSFERASE	human	Q9NXF8	ZDHHC7	Q9NXF8	15	87	Palmitoyltransferase ZDHHC7 (EC 2.3.1.225) (Acyltransferase 	w
+ACYLTRANSFERASE	human	Q9NYG2	ZDHHC3	Q9NYG2	25	70	Palmitoyltransferase ZDHHC3 (EC 2.3.1.225) (Acyltransferase 	w
+ACYLTRANSFERASE	human	Q9UHJ9	PGAP2	Q9UHJ9	12	61	Acyltransferase PGAP2 (EC 2.3.-.-) (FGF receptor-activating 	w
+ACYLTRANSFERASE	human	Q9UIJ5	ZDHHC2	Q9UIJ5	7	64	Palmitoyltransferase ZDHHC2 (EC 2.3.1.225) (Acyltransferase 	w
+ACYLTRANSFERASE	human	Q9UL19	PLAAT4	Q9UL19	18	192	Phospholipase A and acyltransferase 4 (EC 2.3.1.-) (EC 3.1.1	w
+ACYLTRANSFERASE	worm	G5EC12	oac-1	G5EC12	0	1	Acyltransferase	w
+ACYLTRANSFERASE	worm	G5EC53	mboa-3	G5EC53	0	18	Lysophospholipid acyltransferase	w
+ACYLTRANSFERASE	worm	G5EE59	CELE_M79.2	G5EE59	0	2	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	G5EFP8	acl-7	G5EFP8	1	4	Dihydroxyacetone phosphate acyltransferase	w
+ACYLTRANSFERASE	worm	G5EG54	cpt-5	G5EG54	0	3	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	worm	O01881	CELE_K07B1.4	O01881	0	4	Acyltransferase	w
+ACYLTRANSFERASE	worm	O01882	acl-14	O01882	1	7	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	O01925	mboa-6	O01925	0	4	Lysophospholipid acyltransferase 5	w
+ACYLTRANSFERASE	worm	O16526	acl-8	O16526	0	10	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	O16992	CELE_W03F9.4	O16992	0	1	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	worm	O18241	hhat-2	O18241	0	4	Homolog of Hedgehog AcylTransferase	w
+ACYLTRANSFERASE	worm	O44619	cpt-4	O44619	0	1	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	worm	O45279	dlat-2	O45279	2	22	2-oxoacid dehydrogenase acyltransferase catalytic domain-con	w
+ACYLTRANSFERASE	worm	O45617	oac-37	O45617	0	15	Acyltransferase	w
+ACYLTRANSFERASE	worm	Q17499	B0395.3	Q17499	0	17	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	worm	Q19221	acl-13	Q19221	0	7	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	Q20278	CELE_F41E7.6	Q20278	0	1	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	worm	Q20800	bus-18	Q20800	0	15	Lysophosphatidylinositol acyltransferase 10	w
+ACYLTRANSFERASE	worm	Q21689	bus-1	Q21689	0	4	Acyltransferase	w
+ACYLTRANSFERASE	worm	Q21812	acl-5	Q21812	0	3	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	Q22267	acl-2	Q22267	0	7	Putative 1-acyl-sn-glycerol-3-phosphate acyltransferase acl-	w
+ACYLTRANSFERASE	worm	Q22949	acl-6	Q22949	0	3	Probable glycerol-3-phosphate acyltransferase, mitochondrial	w
+ACYLTRANSFERASE	worm	Q23066	cpt-6	Q23066	0	26	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	worm	Q23067	dgtr-1	Q23067	0	9	Acyltransferase	w
+ACYLTRANSFERASE	worm	Q23087	acl-9	Q23087	1	11	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	Q23571	dbt-1	Q23571	2	25	Lipoamide acyltransferase component of branched-chain alpha-	w
+ACYLTRANSFERASE	worm	Q93841	acl-1	Q93841	0	8	Putative 1-acyl-sn-glycerol-3-phosphate acyltransferase acl-	w
+ACYLTRANSFERASE	worm	Q95R12	acl-11	Q95R12	0	8	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	Q9N4S3	CELE_Y53G8B.2	Q9N4S3	0	3	Acyltransferase	w
+ACYLTRANSFERASE	worm	Q9N5S8	acl-4	Q9N5S8	0	4	Phospholipid/glycerol acyltransferase domain-containing prot	w
+ACYLTRANSFERASE	worm	Q9U1V4	oac-56	Q9U1V4	1	2	Acyltransferase	w
+ACYLTRANSFERASE	worm	Q9XUN8	CELE_T20B3.1	Q9XUN8	0	5	Choline/carnitine acyltransferase domain-containing protein	w
+ACYLTRANSFERASE	worm	Q9XUW0	dgat-2	Q9XUW0	0	5	Acyltransferase	w
+ACYLTRANSFERASE	worm	Q9XVW0	oac-54	Q9XVW0	0	2	Acyltransferase 3 domain-containing protein	w
+ACYLTRANSFERASE	yeast	P33333	SLC1	P33333	1	45	1-acyl-sn-glycerol-3-phosphate acyltransferase	w
+ACYLTRANSFERASE	yeast	P38226	CST26	P38226	0	7	2-acyl-1-lysophosphatidylinositol acyltransferase	w
+ACYLTRANSFERASE	yeast	P40345	LRO1	P40345	0	13	Phospholipid:diacylglycerol acyltransferase	w
+ACYLTRANSFERASE	yeast	P48236	GPC1	P48236	0	14	Glycerophosphocholine acyltransferase 1	w
+ACYLTRANSFERASE	yeast	Q06508	LOA1	Q06508	3	50	Lysophosphatidic acid:oleoyl-CoA acyltransferase 1	w
+ACYLTRANSFERASE	yeast	Q08548	ALE1	Q08548	0	10	Lysophospholipid acyltransferase	w
+ACYLTRANSFERASE	yeast	Q12185	YDR018C	Q12185	0	4	Uncharacterized acyltransferase YDR018C	w
+ACYLTRANSFERASE	zebrafish	A0A0R4IY06	plaat1	A0A0R4IY06	2	130	Phospholipase A and acyltransferase 1	w
+ACYLTRANSFERASE	zebrafish	A0A0R4IZC9	mboat1	A0A0R4IZC9	2	21	Lysophospholipid acyltransferase 1	w
+ACYLTRANSFERASE	zebrafish	A0A2R8PZT4	LOC137487234	A0A2R8PZT4	7	131	Lecithin retinol acyltransferase b, tandem duplicate 1	w
+ACYLTRANSFERASE	zebrafish	A0A8M1P7R5	lcat	A0A8M1P7R5	0	11	Phosphatidylcholine-sterol acyltransferase	w
+ACYLTRANSFERASE	zebrafish	A0A8M1PN43	agpat4	A0A8M1PN43	0	8	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	w
+ACYLTRANSFERASE	zebrafish	A0A8M1RMJ8	gnpat2	A0A8M1RMJ8	0	2	Dihydroxyacetone phosphate acyltransferase	w
+ACYLTRANSFERASE	zebrafish	A0AB32U1E7	gpat2	A0AB32U1E7	0	4	Glycerol-3-phosphate acyltransferase 2, mitochondrial isofor	w
+ACYLTRANSFERASE	zebrafish	A0JMM2	agpat2	A0JMM2	1	14	1-acyl-sn-glycerol-3-phosphate acyltransferase	w
+ACYLTRANSFERASE	zebrafish	A2BHM7	mogat3b	A2BHM7	0	16	Acyltransferase	w
+ACYLTRANSFERASE	zebrafish	A3KGT9	agpat9l	A3KGT9	2	5	Glycerol-3-phosphate acyltransferase 3-like	w
+ACYLTRANSFERASE	zebrafish	E7F6M7	gpam	E7F6M7	0	8	Glycerol-3-phosphate acyltransferase 1, mitochondrial	w
+ACYLTRANSFERASE	zebrafish	E7FAX1	lpcat3	E7FAX1	0	5	Lysophospholipid acyltransferase 5	w
+ACYLTRANSFERASE	zebrafish	F1Q7T8	lrata	F1Q7T8	4	131	Lecithin retinol acyltransferase a	w
+ACYLTRANSFERASE	zebrafish	F1QAU7	gnpat	F1QAU7	0	5	Dihydroxyacetone phosphate acyltransferase	w
+ACYLTRANSFERASE	zebrafish	F1QD35	lpcat4	F1QD35	0	10	Lysophosphatidylcholine acyltransferase 4	w
+ACYLTRANSFERASE	zebrafish	F1QDN6	agpat5	F1QDN6	1	9	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon	w
+ACYLTRANSFERASE	zebrafish	F1R0E7	mogat2	F1R0E7	0	14	Acyltransferase	w
+ACYLTRANSFERASE	zebrafish	F6NQA9	mboat2a	F6NQA9	0	6	Lysophospholipid acyltransferase 2	w
+ACYLTRANSFERASE	zebrafish	F8W2J4	hhat	F8W2J4	1	1	Hedgehog acyltransferase	w
+ACYLTRANSFERASE	zebrafish	Q08CV3	gpat4	Q08CV3	2	5	Glycerol-3-phosphate acyltransferase 4	w
+ACYLTRANSFERASE	zebrafish	Q1LWG4	lpcat1	Q1LWG4	0	9	Lysophosphatidylcholine acyltransferase 1	w
+ACYLTRANSFERASE	zebrafish	Q502J0	lpcat2	Q502J0	0	8	Lysophosphatidylcholine acyltransferase 2	w
+ACYLTRANSFERASE	zebrafish	Q6DG38	gpat3	Q6DG38	2	5	Glycerol-3-phosphate acyltransferase 3	w
+ACYLTRANSFERASE	zebrafish	Q6NYV8	lclat1	Q6NYV8	1	14	Lysocardiolipin acyltransferase 1	w
+ACYLTRANSFERASE	zebrafish	Q7ZWC9	agpat3	Q7ZWC9	0	8	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma	w
+ACYLTRANSFERASE-LIKE	fly	FBgn0052699	LPCAT	Q0KHU5	1	25	Lysophosphatidylcholine acyltransferase (1-acylglycerophosph	w
+ACYLTRANSFERASE-LIKE	human	Q9HCP6	HHATL	Q9HCP6	4	58	Protein-cysteine N-palmitoyltransferase HHAT-like protein (G	w
+ACYLTRANSFERASE-LIKE	zebrafish	F1QYT4	hhatlb	F1QYT4	0	1	Hedgehog acyltransferase-like, b	w
+ACYLTRANSFERASE-LIKE	zebrafish	Q6P3I5	hhatla	Q6P3I5	0	1	Hedgehog acyltransferase-like, a	w
+ACYP	fly	FBgn0025115	Acyp	P56544	4	64	Acylphosphatase-1 (EC 3.6.1.7) (Acylphosphate phosphohydrola	
+ACYP	human	P14621	ACYP2	P14621	3	41		
+ACYP	mycobacterium-tuberculosis	P9WQC9	acyP	P9WQC9	0	2	Acylphosphatase	
+ACYP	pseudomonas-aeruginosa	Q9I504	acyP	Q9I504	0	1	Acylphosphatase	
+ACYP	streptococcus-pneumoniae	Q8DNE2	acyP	Q8DNE2	0	1	acylphosphatase	
+ACYP1	human	P07311	ACYP1	P07311	1	68	Acylphosphatase-1 (EC 3.6.1.7) (Acylphosphatase, erythrocyte	
+ACYP1	mus-musculus	P56376	Acyp1	P56376	0	1	Acylphosphatase-1	
+ACYP1	rattus-norvegicus	D4A6X4	Acyp1	D4A6X4	0	1	Acylphosphatase	
+ACYP1_HUMAN	human	P07311	ACYP1	P07311	1	68		
+ACYP2	fly	FBgn0038363	Acyp2	Q9VF36	14	117	Acylphosphatase-2 (EC 3.6.1.7) (Acylphosphate phosphohydrola	
+ACYP2	human	P14621	ACYP2	P14621	3	41	Acylphosphatase-2 (EC 3.6.1.7) (Acylphosphatase, muscle type	
+ACYP2	mus-musculus	P56375	Acyp2	P56375	0	1	Acylphosphatase-2	
+ACYP2	rattus-norvegicus	P35745	Acyp2	P35745	0	1	Acylphosphatase-2	
+ACYP2_HUMAN	human	P14621	ACYP2	P14621	3	41		
+ACYPE	human	P07311	ACYP1	P07311	1	68		
+ACYP_67	fly	FBgn0025115	Acyp	P56544	4	64		
+ACYP_68	fly	FBgn0025115	Acyp	P56544	4	64		

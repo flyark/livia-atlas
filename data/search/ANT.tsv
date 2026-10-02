@@ -1,16 +1,1507 @@
-ANT	arabidopsis-thaliana	Q38914	ANT	Q38914	1	15	AP2-like ethylene-responsive transcription factor ANT
-ANT1	arabidopsis-thaliana	Q9SF09	ANT1	Q9SF09	0	5	Amino acid transporter ANT1
-ANT1	candida-albicans-237561	Q5AAQ7	ANT1	Q5AAQ7	1	2	Mitochondrial thiamine pyrophosphate carrier 1
-ANT1	zea-mays	P04709	ANT1	P04709	4	92	ADP,ATP carrier protein 1, mitochondrial
-ANT2	zea-mays	P12857	ANT2	P12857	4	92	ADP,ATP carrier protein 2, mitochondrial
-ANTA	pseudomonas-aeruginosa	Q9I0X0	antA	Q9I0X0	3	10	Anthranilate dioxygenase large subunit
-ANTB	pseudomonas-aeruginosa	Q9I0W9	antB	Q9I0W9	3	13	Anthranilate dioxygenase small subunit
-ANTC	pseudomonas-aeruginosa	Q9I0W8	antC	Q9I0W8	0	114	Anthranilate dioxygenase reductase
-ANTKMT	mus-musculus	Q501J2	Antkmt	Q501J2	0	2	Adenine nucleotide translocase lysine N-methyltransferase
-ANTKMT	rattus-norvegicus	D4A1T7	Antkmt	D4A1T7	1	4	Adenine nucleotide translocase lysine methyltransferase
-ANTR1	arabidopsis-thaliana	O82390	ANTR1	O82390	0	1	Sodium-dependent phosphate transport protein 1, chloroplastic
-ANTXR1	mus-musculus	Q9CZ52	Antxr1	Q9CZ52	0	7	Anthrax toxin receptor 1
-ANTXR1	rattus-norvegicus	Q0PMD2	Antxr1	Q0PMD2	1	10	Anthrax toxin receptor 1
-ANTXR2	mus-musculus	Q6DFX2	Antxr2	Q6DFX2	1	20	Anthrax toxin receptor 2
-ANTXR2	rattus-norvegicus	F1LT78	Antxr2	F1LT78	2	17	Anthrax toxin receptor
-ANTXRL1	rattus-norvegicus	A0A0G2K7L7	Antxrl1	A0A0G2K7L7	0	7	ANTXR like 1
+ANT	arabidopsis-thaliana	Q38914	ANT	Q38914	1	15	AP2-like ethylene-responsive transcription factor ANT	
+ANT-1	human	O94906	PRPF6	O94906	48	638	Pre-mRNA-processing factor 6 (Androgen receptor N-terminal d	w
+ANT-1.1	worm	O45865	ant-1.1	O45865	0	24	ADP/ATP translocase	
+ANT-1.2	worm	O01813	ant-1.2	O01813	0	28	ADP/ATP translocase	
+ANT-1.3	worm	G5EFW8	ant-1.3	G5EFW8	0	12	ADP/ATP translocase	
+ANT-1.4	worm	G5EFU2	ant-1.4	G5EFU2	0	12	ADP/ATP translocase	
+ANT-KMT	human	Q9BQD7	ANTKMT	Q9BQD7	3	58	Adenine nucleotide translocase lysine N-methyltransferase (A	w
+ANT1	arabidopsis-thaliana	Q9SF09	ANT1	Q9SF09	0	5	Amino acid transporter ANT1	
+ANT1	candida-albicans-237561	Q5AAQ7	ANT1	Q5AAQ7	1	2	Mitochondrial thiamine pyrophosphate carrier 1	
+ANT1	human	P12235	SLC25A4	P12235	10	519		
+ANT1	yeast	Q06497	ANT1	Q06497	0	7	Peroxisomal adenine nucleotide transporter 1	
+ANT1	zea-mays	P04709	ANT1	P04709	4	92	ADP,ATP carrier protein 1, mitochondrial	
+ANT2	fly	FBgn0025111	Ant2	O62526	5	184	ADP/ATP translocase (ADP,ATP carrier protein)	
+ANT2	human	P05141	SLC25A5	P05141	15	575		
+ANT2	zea-mays	P12857	ANT2	P12857	4	92	ADP,ATP carrier protein 2, mitochondrial	
+ANT2-BINDING	human	Q8N357	SLC35F6	Q8N357	12	106	Solute carrier family 35 member F6 (ANT2-binding protein) (A	w
+ANT2BP	human	Q8N357	SLC35F6	Q8N357	12	106	Solute carrier family 35 member F6 (ANT2-binding protein) (A	w
+ANT3	human	P12236	SLC25A6	P12236	8	599		
+ANT3_HUMAN	human	P01008	SERPINC1	P01008	55	531		
+ANT4	human	Q9H0C2	SLC25A31	Q9H0C2	2	132		
+ANTA	pseudomonas-aeruginosa	Q9I0X0	antA	Q9I0X0	3	10	Anthranilate dioxygenase large subunit	
+ANTAGON	human	Q92934	BAD	Q92934	59	202	Bcl2-associated agonist of cell death (BAD) (Bcl-2-binding c	w
+ANTAGONIST	human	O14798	TNFRSF10C	O14798	37	147	Tumor necrosis factor receptor superfamily member 10C (Antag	w
+ANTAGONIST	human	O43610	SPRY3	O43610	8	39	Protein sprouty homolog 3 (Spry-3) (Sprouty RTK signaling an	w
+ANTAGONIST	human	O60565	GREM1	O60565	6	118	Gremlin-1 (Cell proliferation-inducing gene 2 protein) (Cyst	w
+ANTAGONIST	human	P18510	IL1RN	P18510	12	111	Interleukin-1 receptor antagonist protein (IL-1RN) (IL-1ra) 	w
+ANTAGONIST	human	P18583	SON	P18583	57	676	Protein SON (Bax antagonist selected in saccharomyces 1) (BA	w
+ANTAGONIST	human	Q16611	BAK1	Q16611	15	159	Bcl-2 homologous antagonist/killer (Apoptosis regulator BAK)	w
+ANTAGONIST	human	Q5SW24	DACT2	Q5SW24	13	46	Dapper homolog 2 (Dapper antagonist of catenin 2)	w
+ANTAGONIST	human	Q8N907	DAND5	Q8N907	5	39	DAN domain family member 5 (Cerberus-like protein 2) (Cerl-2	w
+ANTAGONIST	human	Q96B18	DACT3	Q96B18	9	37	Dapper homolog 3 (Antagonist of beta-catenin Dapper homolog 	w
+ANTAGONIST	human	Q96BJ3	AIDA	Q96BJ3	15	75	Axin interactor, dorsalization-associated protein (Axin inte	w
+ANTAGONIST	human	Q99583	MNT	Q99583	129	380	Max-binding protein MNT (Class D basic helix-loop-helix prot	w
+ANTAGONIST	human	Q9H772	GREM2	Q9H772	10	102	Gremlin-2 (Cysteine knot superfamily 1, BMP antagonist 2) (D	w
+ANTAGONIST	human	Q9NYF0	DACT1	Q9NYF0	26	98	Dapper homolog 1 (hDPR1) (Dapper antagonist of catenin 1) (H	w
+ANTAGONIST	human	Q9UBH0	IL36RN	Q9UBH0	33	187	Interleukin-36 receptor antagonist protein (IL-36Ra) (FIL1 d	w
+ANTAGONIST	virus	P04297	OPG039	P04297	16	218	Interferon antagonist OPG040	w
+ANTAGONIST	virus	P0DSW7	OPG027	P0DSW7	6	199	Interferon antagonist OPG027	w
+ANTAGONIST	virus	P0DTP8	OPG040	P0DTP8	8	199	Truncated interferon antagonist OPG039	w
+ANTAGONIST	virus	P68600	OPG027	P68600	6	218	Interferon antagonist OPG027	w
+ANTAGONIST	virus	Q08FU8	DpV83gp054	Q08FU8	2	165	Interleukin-1 receptor antagonist protein	w
+ANTAGONIST	virus	Q0NPI6	TATV_DAH68_025	Q0NPI6	6	220	IL-1 receptor antagonist	w
+ANTAGONIST	virus	Q8V2Z5		Q8V2Z5	3	208	IL-1 receptor antagonist	w
+ANTAGONIST	virus	Q8V566	OPG027	Q8V566	3	187	Interferon antagonist OPG027	w
+ANTAGONIST	virus	Q91MZ7	LSDV007	Q91MZ7	4	152	IL-1 receptor antagonist	w
+ANTAGONIST	yeast	P38285	AMN1	P38285	9	22	Antagonist of mitotic exit network protein 1	w
+ANTAGONIST	zebrafish	F1R4W0	grem2a	F1R4W0	0	7	Gremlin 2, DAN family BMP antagonist a	w
+ANTAGONIZING	fly	FBgn0031851	Aatf	Q9VM95	18	113	Protein Aatf (Apoptosis antagonizing transcription factor or	w
+ANTAGONIZING	human	P0C864	DANCR	P0C864	0	6	Putative uncharacterized protein DANCR (Anti-differentiation	w
+ANTARES	fly	FBgn0050488	antr	A0A0B4K7N3	26	244	Antares, isoform B	w
+ANTB	pseudomonas-aeruginosa	Q9I0W9	antB	Q9I0W9	3	13	Anthranilate dioxygenase small subunit	
+ANTC	pseudomonas-aeruginosa	Q9I0W8	antC	Q9I0W8	0	114	Anthranilate dioxygenase reductase	
+ANTDH	fly	FBgn0026268	Antdh	Q9VZ19	0	20	Antdh (EC 1.-.-.-, EC 1.1.1.270, EC 1.1.1.62)	w
+ANTDH	fly	FBgn0026268	Antdh	Q9VZ19	0	20	Antdh (EC 1.-.-.-, EC 1.1.1.270, EC 1.1.1.62)	w
+ANTDH	fly	FBgn0026268	Antdh	Q9VZ19	0	20	Antdh (EC 1.-.-.-, EC 1.1.1.270, EC 1.1.1.62)	w
+ANTECEDENT	human	P03951	F11	P03951	19	171	Coagulation factor XI (FXI) (EC 3.4.21.27) (Plasma thrombopl	w
+ANTENNA	fly	FBgn0039286	dan	A0A0B4KI14	1	15	Distal antenna, isoform B	w
+ANTENNA-RELATED	fly	FBgn0039283	danr	Q9VBW9	5	15	Protein distal antenna-related	w
+ANTENNA-YOUNG	fly	FBgn0050401	dany	Q9W2B0	54	372	Distal antenna-young, isoform A (Distal antenna-young, isofo	w
+ANTENNAL	fly	FBgn0011293	4Csp4	Q27377	21	261	Putative odorant-binding protein A10 (Antennal protein 10) (	w
+ANTENNAL	fly	FBgn0011294	a5	P54185	38	416	Putative odorant-binding protein A5 (Antennal protein 5)	w
+ANTENNAPEDIA	fly	FBgn0260642	Antp	P02833	79	449	Homeotic protein antennapedia	w
+ANTERIOR	fly	FBgn0000097	aop	Q01842	70	417	Ets DNA-binding protein pokkuri (Protein anterior open) (Pro	w
+ANTERIOR	human	O95994	AGR2	O95994	226	1086	Anterior gradient protein 2 homolog (AG-2) (hAG-2) (HPC8) (S	w
+ANTERIOR	human	P01215	CGA	P01215	14	54	Glycoprotein hormones alpha chain (Anterior pituitary glycop	w
+ANTERIOR	human	Q5SQQ9	VAX1	Q5SQQ9	115	365	Ventral anterior homeobox 1	w
+ANTERIOR	human	Q6NXT6	TAPT1	Q6NXT6	6	62	Transmembrane anterior posterior transformation protein 1 ho	w
+ANTERIOR	human	Q8TD06	AGR3	Q8TD06	35	111	Anterior gradient protein 3 (AG-3) (AG3) (hAG-3) (Anterior g	w
+ANTERIOR	human	Q96IS3	RAX2	Q96IS3	118	410	Retina and anterior neural fold homeobox protein 2 (Q50-type	w
+ANTERIOR	human	Q9UIW0	VAX2	Q9UIW0	72	357	Ventral anterior homeobox 2	w
+ANTERIOR	human	Q9Y2V3	RAX	Q9Y2V3	152	413	Retinal homeobox protein Rx (Retina and anterior neural fold	w
+ANTERIOR	worm	O45146	era-1	O45146	0	2	Embryonic mRna (mRNA) Anterior	w
+ANTERIOR	worm	P41990	apx-1	P41990	0	1	Anterior pharynx in excess protein 1	w
+ANTERIOR	zebrafish	A2BIE7	tapt1	A2BIE7	1	1	Transmembrane anterior posterior transformation protein 1 ho	w
+ANTERIOR	zebrafish	E7F5M9	tapt1a	E7F5M9	1	1	Transmembrane anterior posterior transformation 1a	w
+ANTERIOR	zebrafish	Q5RZ65	agr2	Q5RZ65	0	7	Anterior gradient protein 2 homolog	w
+ANTERIOR	zebrafish	Q801E1	vax2	Q801E1	0	1	Ventral anterior homeobox 2	w
+ANTHER-SPECIFIC	worm	Q9TXY1	msrp-3	Q9TXY1	0	1	Anther-specific protein BCP1-like	w
+ANTHRACYCLINE	human	O95255	ABCC6	O95255	0	66	ATP-binding cassette sub-family C member 6 (EC 7.6.2.-) (EC 	w
+ANTHRACYCLINE-ASSOCIATED	human	Q9UBT2	UBA2	Q9UBT2	40	306	SUMO-activating enzyme subunit 2 (EC 2.3.2.-) (Anthracycline	w
+ANTHRANILATE	yeast	P00899	TRP2	P00899	1	38	Anthranilate synthase component 1	w
+ANTHRANILATE	yeast	P00912	TRP1	P00912	0	7	N-(5'-phosphoribosyl)anthranilate isomerase	w
+ANTHRANILATE	yeast	P07285	TRP4	P07285	0	11	Anthranilate phosphoribosyltransferase	w
+ANTHRAX	human	A6NF34	ANTXRL	A6NF34	0	7	Anthrax toxin receptor-like	w
+ANTHRAX	human	P58335	ANTXR2	P58335	14	143	Anthrax toxin receptor 2 (Capillary morphogenesis gene 2 pro	w
+ANTHRAX	human	Q9H6X2	ANTXR1	Q9H6X2	28	276	Anthrax toxin receptor 1 (Tumor endothelial marker 8)	w
+ANTHRAX	zebrafish	A0AB32U207	antxr1b	A0AB32U207	0	9	Anthrax toxin receptor 1	w
+ANTHRAX	zebrafish	E7F2W8	antxr1c	E7F2W8	0	7	Anthrax toxin receptor 1	w
+ANTI	human	P15328	FOLR1	P15328	41	393	Folate receptor alpha (FR-alpha) (Adult folate-binding prote	w
+ANTI	human	P49913	CAMP	P49913	66	590	Cathelicidin antimicrobial peptide (18 kDa cationic antimicr	w
+ANTI-APOPTOTIC	human	O95411	MYO18A	O95411	2	33	Putative TGFB1-induced anti-apoptotic factor 1 (12 kDa TGF-b	w
+ANTI-APOPTOTIC	human	Q8WXF8	DEDD2	Q8WXF8	57	365	DNA-binding death effector domain-containing protein 2 (DED-	w
+ANTI-APOPTOTIC	human	Q9H8G2	CAAP1	Q9H8G2	17	53	Caspase activity and apoptosis inhibitor 1 (Conserved anti-a	w
+ANTI-APOPTOTIC	human	Q9HC24	TMBIM4	Q9HC24	8	49	Protein lifeguard 4 (Golgi anti-apoptotic protein) (Protein 	w
+ANTI-APOPTOTIC	human	Q9HD36	BCL2L10	Q9HD36	12	39	Bcl-2-like protein 10 (Bcl2-L-10) (Anti-apoptotic protein Bo	w
+ANTI-CNG1	human	Q8IZM0	CNG1O	Q8IZM0	0	1	Putative CNGA1-overlapping antisense gene protein (Anti-CNG1	w
+ANTI-DIFFERENTIATION	human	P0C864	DANCR	P0C864	0	6	Putative uncharacterized protein DANCR (Anti-differentiation	w
+ANTI-DORSALIZING	zebrafish	A0A8M1P9H5	admp	A0A8M1P9H5	0	1	Anti-dorsalizing morphogenic protein precursor	w
+ANTI-ESTROGEN	human	O75815	BCAR3	O75815	29	176	Breast cancer anti-estrogen resistance protein 3 (Novel SH2-	w
+ANTI-ESTROGEN	human	P56945	BCAR1	P56945	177	576	Breast cancer anti-estrogen resistance protein 1 (CRK-associ	w
+ANTI-ESTROGEN	human	Q96PN7	TRERF1	Q96PN7	11	62	Transcriptional-regulating factor 1 (Breast cancer anti-estr	w
+ANTI-ESTROGEN	zebrafish	B5DE36	bcar1	B5DE36	33	170	Breast cancer anti-estrogen resistance protein 1	w
+ANTI-INFLAMMATORY	human	Q16539	MAPK14	Q16539	414	1783	Mitogen-activated protein kinase 14 (MAP kinase 14) (MAPK 14	w
+ANTI-MUELLERIAN	human	P03971	AMH	P03971	25	102	Anti-Muellerian hormone (AMH) (Muellerian-inhibiting factor)	w
+ANTI-MUELLERIAN	human	Q16671	AMHR2	Q16671	356	1284	Anti-Muellerian hormone type-2 receptor (EC 2.7.11.30) (Anti	w
+ANTI-MULLERIAN	zebrafish	A8E7B8	amh	A8E7B8	4	6	Anti-Mullerian hormone	w
+ANTI-NEOPLASTIC	human	P55000	SLURP1	P55000	23	285	Secreted Ly-6/uPAR-related protein 1 (SLURP-1) (ARS componen	w
+ANTI-NF-KAPPA-B	human	Q6GQQ9	OTUD7B	Q6GQQ9	18	137	OTU domain-containing protein 7B (EC 3.4.19.12) (Cellular zi	w
+ANTI-PROLIFERATIVE	human	P78543	BTG2	P78543	32	198	Protein BTG2 (BTG family member 2) (NGF-inducible anti-proli	w
+ANTI-PROLIFERATIVE	worm	G5EDX7	fog-3	G5EDX7	1	4	Anti-proliferative protein domain-containing protein	w
+ANTI-PROLIFERATIVE	zebrafish	Q9IB77	btg2	Q9IB77	6	27	Anti-proliferative cofactor	w
+ANTI-PTH	human	Q5JPF3	ANKRD36C	Q5JPF3	4	24	Ankyrin repeat domain-containing protein 36C (Protein immuno	w
+ANTI-SILENCING	fly	FBgn0029094	asf1	Q9V464	24	79	Histone chaperone asf1 (Anti-silencing function protein 1) (	w
+ANTI-SILENCING	human	Q9NVP2	ASF1B	Q9NVP2	45	150	Histone chaperone ASF1B (Anti-silencing function protein 1 h	w
+ANTI-SILENCING	human	Q9Y294	ASF1A	Q9Y294	83	257	Histone chaperone ASF1A (Anti-silencing function protein 1 h	w
+ANTI-SILENCING	yeast	P32448	ASF2	P32448	1	11	Anti-silencing protein 2	w
+ANTI-ZUAI-1	human	O95359	TACC2	O95359	18	113	Transforming acidic coiled-coil-containing protein 2 (Anti-Z	w
+ANTIAPOPTOSIS	fly	FBgn0286781	cass	Q9V431	2	5	Apoptosis inhibitor 5 homolog (API-5) (Antiapoptosis clone 1	w
+ANTIAPOPTOSIS	human	Q9BZZ5	API5	Q9BZZ5	48	345	Apoptosis inhibitor 5 (API-5) (Antiapoptosis clone 11 protei	w
+ANTIAPOPTOTIC	human	O95411	MYO18A	O95411	2	33	Putative TGFB1-induced anti-apoptotic factor 1 (12 kDa TGF-b	w
+ANTIAPOPTOTIC	human	Q6UX06	OLFM4	Q6UX06	19	220	Olfactomedin-4 (OLM4) (Antiapoptotic protein GW112) (G-CSF-s	w
+ANTIBACTERIAL	human	P49913	CAMP	P49913	66	590	Cathelicidin antimicrobial peptide (18 kDa cationic antimicr	w
+ANTIBODIES	human	Q5JPF3	ANKRD36C	Q5JPF3	4	24	Ankyrin repeat domain-containing protein 36C (Protein immuno	w
+ANTIBODY	human	P46013	MKI67	P46013	29	176	Proliferation marker protein Ki-67 (Antigen identified by mo	w
+ANTIBODY	human	P60033	CD81	P60033	38	576	CD81 antigen (26 kDa cell surface protein TAPA-1) (Target of	w
+ANTICARDIOLIPIN	human	P02749	APOH	P02749	45	460	Beta-2-glycoprotein 1 (APC inhibitor) (Activated protein C-b	w
+ANTICOAGULANT	human	P04070	PROC	P04070	20	235	Vitamin K-dependent protein C (EC 3.4.21.69) (Anticoagulant 	w
+ANTICOAGULANT	human	P07355	ANXA2	P07355	31	551	Annexin A2 (Annexin II) (Annexin-2) (Calpactin I heavy chain	w
+ANTICOAGULANT	human	P08758	ANXA5	P08758	12	554	Annexin A5 (Anchorin CII) (Annexin V) (Annexin-5) (Calphobin	w
+ANTICOAGULANT	human	P12429	ANXA3	P12429	3	190	Annexin A3 (35-alpha calcimedin) (Annexin III) (Annexin-3) (	w
+ANTICOAGULANT-BETA	human	P13928	ANXA8	P13928	1	182	Annexin A8 (Annexin VIII) (Annexin-8) (Vascular anticoagulan	w
+ANTICODON-BINDING	human	Q5D0E6	DALRD3	Q5D0E6	4	136	DALR anticodon-binding domain-containing protein 3	w
+ANTICODON-BINDING	human	Q9BRP7	FDXACB1	Q9BRP7	0	68	Ferredoxin-fold anticodon-binding domain-containing protein 	w
+ANTICODON-BINDING	zebrafish	A0JML8	dalrd3	A0JML8	0	12	DALR anticodon-binding domain-containing protein 3	w
+ANTIDIURETIC	human	P30518	AVPR2	P30518	32	296	Vasopressin V2 receptor (V2R) (AVPR V2) (Antidiuretic hormon	w
+ANTIDIURETIC	human	P37288	AVPR1A	P37288	24	127	Vasopressin V1a receptor (V1aR) (AVPR V1a) (Antidiuretic hor	w
+ANTIDIURETIC	human	P47901	AVPR1B	P47901	18	101	Vasopressin V1b receptor (V1bR) (AVPR V1b) (AVPR V3) (Antidi	w
+ANTIFREEZE	worm	H2KZE4	C53B7.3	H2KZE4	0	1	Antifreeze protein	w
+ANTIFREEZE	zebrafish	E9QGU7	LOC568656	E9QGU7	0	1	Antifreeze protein type IV	w
+ANTIFREEZE	zebrafish	Q4L216	afp4	Q4L216	0	1	Antifreeze protein type IV	w
+ANTIG	human	P41732	TSPAN7	P41732	9	132	Tetraspanin-7 (Tspan-7) (Cell surface glycoprotein A15) (Mem	w
+ANTIG	human	P43121	MCAM	P43121	132	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	w
+ANTIG	human	Q8TAE6	PPP1R14C	Q8TAE6	13	66	Protein phosphatase 1 regulatory subunit 14C (Kinase-enhance	w
+ANTIGE	human	P20273	CD22	P20273	21	270	B-cell receptor CD22 (B-lymphocyte cell adhesion molecule) (	w
+ANTIGE	human	P26718	KLRK1	P26718	109	347	NKG2-D type II integral membrane protein (Killer cell lectin	w
+ANTIGE	human	P49682	CXCR3	P49682	35	171	C-X-C chemokine receptor type 3 (CXC-R3) (CXCR-3) (CKR-L2) (	w
+ANTIGE	human	Q06330	RBPJ	Q06330	112	821	Recombining binding protein suppressor of hairless (CBF-1) (	w
+ANTIGE	human	Q96RD9	FCRL5	Q96RD9	18	104	Fc receptor-like protein 5 (FcR-like protein 5) (FcRL5) (BXM	w
+ANTIGE	human	Q96RS0	TGS1	Q96RS0	65	255	Trimethylguanosine synthase (EC 2.1.1.-) (CLL-associated ant	w
+ANTIGEN	fly	FBgn0001250	if	P12080	378	2447	Integrin alpha-PS2 (Position-specific antigen subunit alpha-	w
+ANTIGEN	fly	FBgn0001291	Jra	A0A0B4KEI6	118	616	Jun-related antigen, isoform C	w
+ANTIGEN	fly	FBgn0001297	kay	P21525	119	479	Transcription factor kayak, isoforms A/B/F (AP-1) (Fos-relat	w
+ANTIGEN	fly	FBgn0003607	Su(var)205	P05205	85	709	Heterochromatin protein 1 (HP1) (Non-histone chromosomal pro	w
+ANTIGEN	fly	FBgn0005655	PCNA	P17917	40	266	Proliferating cell nuclear antigen (PCNA) (Cyclin) (Mutagen-	w
+ANTIGEN	fly	FBgn0013756	Mgtor	A1Z8P9	2	9	Nucleoprotein TPR (Megator) (Nuclear envelope antigen Bx34)	w
+ANTIGEN	fly	FBgn0015010	Ag5r	Q9VY18	46	248	Antigen 5-related, isoform A (Antigen 5-related, isoform B) 	w
+ANTIGEN	fly	FBgn0020508	Ag5r2	Q9VY19	52	249	Antigen 5-related 2 (LP10960p)	w
+ANTIGEN	fly	FBgn0031315	CG14341	Q7KU06	0	7	Male-enhanced antigen 1	w
+ANTIGEN	fly	FBgn0032250	holn1	Q9VKV5	8	40	CD2 antigen cytoplasmic tail-binding protein 2 homolog (Prot	w
+ANTIGEN	fly	FBgn0032368	spag4	Q9VKG2	2	15	Sperm-associated antigen 4	w
+ANTIGEN	fly	FBgn0032813	PCNA2	Q9VIT0	25	76	Proliferating cell nuclear antigen 2	w
+ANTIGEN	fly	FBgn0034005	ItgaPS4	Q9V7A4	301	2415	Integrin alpha-PS4 (Position-specific antigen subunit alpha-	w
+ANTIGEN	fly	FBgn0283442	vas	P09052	5	67	ATP-dependent RNA helicase vasa (EC 3.6.4.13) (Antigen Mab46	w
+ANTIGEN	fly	FBgn0286785	scb	O44386	335	2431	Integrin alpha-PS3 (Position-specific antigen subunit alpha-	w
+ANTIGEN	human	A0A0B4J1T7	LY6G6E	A0A0B4J1T7	0	1	Lymphocyte antigen 6 family member G6E (pseudogene)	w
+ANTIGEN	human	A0A0G2JN59	SPAG11B	A0A0G2JN59	0	3	Sperm associated antigen 11B	w
+ANTIGEN	human	A0A0J9YX57	MAGEB6B	A0A0J9YX57	5	16	Melanoma-associated antigen B6B	w
+ANTIGEN	human	A0A0J9YX94	PNMA6F	A0A0J9YX94	3	20	Paraneoplastic antigen Ma6F	w
+ANTIGEN	human	A0A0J9YXQ4	PNMA6E	A0A0J9YXQ4	0	4	Paraneoplastic antigen Ma6E	w
+ANTIGEN	human	A0A0U1RQG5	CT47C1	A0A0U1RQG5	0	2	Cancer/testis antigen family 47 member C1	w
+ANTIGEN	human	A1L429	GAGE12B	A1L429	5	215	G antigen 12B/C/D/E (GAGE-12B) (GAGE-12C) (GAGE-12D) (GAGE-1	w
+ANTIGEN	human	A2A368	MAGEB16	A2A368	19	53	Melanoma-associated antigen B16 (MAGE-B16 antigen)	w
+ANTIGEN	human	A6NDE8	GAGE12H	A6NDE8	2	211	G antigen 12H (GAGE-12H)	w
+ANTIGEN	human	A6NER3	GAGE12J	A6NER3	2	210	G antigen 12J (GAGE-12J)	w
+ANTIGEN	human	A6NFN3	RBFOX3	A6NFN3	7	69	RNA binding protein fox-1 homolog 3 (Fox-1 homolog C) (Neuro	w
+ANTIGEN	human	A6NGK3	GAGE10	A6NGK3	20	302	G antigen 10 (GAGE-10)	w
+ANTIGEN	human	A6NJ88	SAGE2P	A6NJ88	0	1	Putative SAGE1-like protein (Sarcoma antigen 2 pseudogene)	w
+ANTIGEN	human	A7E2Y1	MYH7B	A7E2Y1	5	56	Myosin-7B (Antigen MLAA-21) (Myosin cardiac muscle beta chai	w
+ANTIGEN	human	A7MD48	SRRM4	A7MD48	12	47	Serine/arginine repetitive matrix protein 4 (Medulloblastoma	w
+ANTIGEN	human	A8K0R7	ZNF839	A8K0R7	5	27	Zinc finger protein 839 (Renal carcinoma antigen NY-REN-50)	w
+ANTIGEN	human	A8MXT2	MAGEB17	A8MXT2	10	39	Melanoma-associated antigen B17	w
+ANTIGEN	human	B0I1T2	MYO1G	B0I1T2	10	126	Unconventional myosin-Ig [Cleaved into: Minor histocompatibi	w
+ANTIGEN	human	B2RUZ4	SMIM1	B2RUZ4	35	138	Small integral membrane protein 1 (Vel blood group antigen)	w
+ANTIGEN	human	E7ENX8	?	E7ENX8	12	29	ABC-type antigen peptide transporter	w
+ANTIGEN	human	H3BQJ8	LY6L	H3BQJ8	12	61	Lymphocyte antigen 6L (Lymphocyte antigen 6 complex locus pr	w
+ANTIGEN	human	H3BT10	RHD	H3BT10	2	11	Rh blood group D antigen	w
+ANTIGEN	human	O00144	FZD9	O00144	36	157	Frizzled-9 (Fz-9) (hFz9) (FzE6) (CD antigen CD349)	w
+ANTIGEN	human	O00182	LGALS9	O00182	31	672	Galectin-9 (Gal-9) (Ecalectin) (Tumor antigen HOM-HD-21)	w
+ANTIGEN	human	O00206	TLR4	O00206	61	611	Toll-like receptor 4 (hToll) (CD antigen CD284)	w
+ANTIGEN	human	O00214	LGALS8	O00214	10	192	Galectin-8 (Gal-8) (Po66 carbohydrate-binding protein) (Po66	w
+ANTIGEN	human	O00238	BMPR1B	O00238	126	1317	Bone morphogenetic protein receptor type-1B (BMP type-1B rec	w
+ANTIGEN	human	O00241	SIRPB1	O00241	30	290	Signal-regulatory protein beta-1 (SIRP-beta-1) (CD172 antige	w
+ANTIGEN	human	O00295	TULP2	O00295	86	378	Tubby-related protein 2 (Cancer/testis antigen 65) (CT65) (T	w
+ANTIGEN	human	O00481	BTN3A1	O00481	36	210	Butyrophilin subfamily 3 member A1 (CD antigen CD277)	w
+ANTIGEN	human	O00515	LAD1	O00515	21	78	Ladinin-1 (Lad-1) (Linear IgA disease antigen) (LADA)	w
+ANTIGEN	human	O00559	EBAG9	O00559	29	316	Receptor-binding cancer antigen expressed on SiSo cells (Can	w
+ANTIGEN	human	O00574	CXCR6	O00574	23	242	C-X-C chemokine receptor type 6 (CXC-R6) (CXCR-6) (CDw186) (	w
+ANTIGEN	human	O00592	PODXL	O00592	45	169	Podocalyxin (GCTM-2 antigen) (Gp200) (Podocalyxin-like prote	w
+ANTIGEN	human	O14786	NRP1	O14786	78	621	Neuropilin-1 (Vascular endothelial cell growth factor 165 re	w
+ANTIGEN	human	O14817	TSPAN4	O14817	8	178	Tetraspanin-4 (Tspan-4) (Novel antigen 2) (NAG-2) (Transmemb	w
+ANTIGEN	human	O14836	TNFRSF13B	O14836	52	203	Tumor necrosis factor receptor superfamily member 13B (Trans	w
+ANTIGEN	human	O14931	NCR3	O14931	70	468	Natural cytotoxicity triggering receptor 3 (Activating natur	w
+ANTIGEN	human	O15050	TRANK1	O15050	2	20	TPR and ankyrin repeat-containing protein 1 (Lupus brain ant	w
+ANTIGEN	human	O15078	CEP290	O15078	32	196	Centrosomal protein of 290 kDa (Cep290) (Bardet-Biedl syndro	w
+ANTIGEN	human	O15389	SIGLEC5	O15389	19	208	Sialic acid-binding Ig-like lectin 5 (Siglec-5) (CD33 antige	w
+ANTIGEN	human	O15455	TLR3	O15455	22	457	Toll-like receptor 3 (CD antigen CD283)	w
+ANTIGEN	human	O15479	MAGEB2	O15479	57	411	Melanoma-associated antigen B2 (Cancer/testis antigen 3.2) (	w
+ANTIGEN	human	O15480	MAGEB3	O15480	10	43	Melanoma-associated antigen B3 (MAGE-B3 antigen)	w
+ANTIGEN	human	O15481	MAGEB4	O15481	35	109	Melanoma-associated antigen B4 (MAGE-B4 antigen)	w
+ANTIGEN	human	O43290	SART1	O43290	83	501	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSn	w
+ANTIGEN	human	O43482	OIP5	O43482	85	428	Protein Mis18-beta (Cancer/testis antigen 86) (CT86) (Opa-in	w
+ANTIGEN	human	O43490	PROM1	O43490	10	148	Prominin-1 (Antigen AC133) (Prominin-like protein 1) (CD ant	w
+ANTIGEN	human	O43557	TNFSF14	O43557	71	460	Tumor necrosis factor ligand superfamily member 14 (Herpes v	w
+ANTIGEN	human	O43570	CA12	O43570	13	93	Carbonic anhydrase 12 (EC 4.2.1.1) (Carbonate dehydratase XI	w
+ANTIGEN	human	O43653	PSCA	O43653	29	189	Prostate stem cell antigen	w
+ANTIGEN	human	O43699	SIGLEC6	O43699	12	111	Sialic acid-binding Ig-like lectin 6 (Siglec-6) (CD33 antige	w
+ANTIGEN	human	O43745	CHP2	O43745	18	112	Calcineurin B homologous protein 2 (Hepatocellular carcinoma	w
+ANTIGEN	human	O60224	SSX4	O60224	15	72	Protein SSX4 (Cancer/testis antigen 5.4) (CT5.4)	w
+ANTIGEN	human	O60271	SPAG9	O60271	75	386	C-Jun-amino-terminal kinase-interacting protein 4 (JIP-4) (J	w
+ANTIGEN	human	O60437	PPL	O60437	69	266	Periplakin (190 kDa paraneoplastic pemphigus antigen) (195 k	w
+ANTIGEN	human	O60449	LY75	O60449	0	5	Lymphocyte antigen 75 (Ly-75) (C-type lectin domain family 1	w
+ANTIGEN	human	O60486	PLXNC1	O60486	26	150	Plexin-C1 (Virus-encoded semaphorin protein receptor) (CD an	w
+ANTIGEN	human	O60487	MPZL2	O60487	57	308	Myelin protein zero-like protein 2 (Epithelial V-like antige	w
+ANTIGEN	human	O60502	OGA	O60502	9	158	Protein O-GlcNAcase (OGA) (EC 3.2.1.169) (Beta-N-acetylgluco	w
+ANTIGEN	human	O60522	TDRD6	O60522	11	90	Tudor domain-containing protein 6 (Antigen NY-CO-45) (Cancer	w
+ANTIGEN	human	O60524	NEMF	O60524	20	289	Ribosome quality control complex subunit NEMF (Antigen NY-CO	w
+ANTIGEN	human	O60603	TLR2	O60603	46	513	Toll-like receptor 2 (Toll/interleukin-1 receptor-like prote	w
+ANTIGEN	human	O60732	MAGEC1	O60732	20	108	Melanoma-associated antigen C1 (Cancer/testis antigen 7.1) (	w
+ANTIGEN	human	O60829	PAGE4	O60829	102	624	P antigen family member 4 (PAGE-4) (G antigen family C membe	w
+ANTIGEN	human	O60884	DNAJA2	O60884	64	590	DnaJ homolog subfamily A member 2 (Cell cycle progression re	w
+ANTIGEN	human	O75019	LILRA1	O75019	5	125	Leukocyte immunoglobulin-like receptor subfamily A member 1 	w
+ANTIGEN	human	O75023	LILRB5	O75023	12	88	Leukocyte immunoglobulin-like receptor subfamily B member 5 	w
+ANTIGEN	human	O75144	ICOSLG	O75144	70	260	ICOS ligand (B7 homolog 2) (B7-H2) (B7-like protein Gl50) (B	w
+ANTIGEN	human	O75179	ANKRD17	O75179	16	186	Ankyrin repeat domain-containing protein 17 (Gene trap ankyr	w
+ANTIGEN	human	O75326	SEMA7A	O75326	20	214	Semaphorin-7A (CDw108) (JMH blood group antigen) (John-Milto	w
+ANTIGEN	human	O75330	HMMR	O75330	42	212	Hyaluronan mediated motility receptor (Intracellular hyaluro	w
+ANTIGEN	human	O75367	MACROH2A1	O75367	86	563	Core histone macro-H2A.1 (Histone macroH2A1) (mH2A1) (Histon	w
+ANTIGEN	human	O75391	SPAG7	O75391	3	58	Sperm-associated antigen 7	w
+ANTIGEN	human	O75410	TACC1	O75410	34	214	Transforming acidic coiled-coil-containing protein 1 (Gastri	w
+ANTIGEN	human	O75459	PAGE1	O75459	5	89	P antigen family member 1 (PAGE-1) (AL5) (G antigen 9) (GAGE	w
+ANTIGEN	human	O75475	PSIP1	O75475	48	314	PC4 and SFRS1-interacting protein (CLL-associated antigen KW	w
+ANTIGEN	human	O75506	HSBP1	O75506	26	105	Heat shock factor-binding protein 1 (Nasopharyngeal carcinom	w
+ANTIGEN	human	O75509	TNFRSF21	O75509	37	167	Tumor necrosis factor receptor superfamily member 21 (Death 	w
+ANTIGEN	human	O75602	SPAG6	O75602	8	141	Sperm-associated antigen 6 (Protein PF16 homolog) (Repro-SA-	w
+ANTIGEN	human	O75636	FCN3	O75636	44	341	Ficolin-3 (Collagen/fibrinogen domain-containing lectin 3 p3	w
+ANTIGEN	human	O75638	CTAG2	O75638	3	43	Cancer/testis antigen 2 (CT2) (Autoimmunogenic cancer/testis	w
+ANTIGEN	human	O75871	CEACAM4	O75871	73	242	Cell adhesion molecule CEACAM4 (Carcinoembryonic antigen CGM	w
+ANTIGEN	human	O75952	CABYR	O75952	11	58	Calcium-binding tyrosine phosphorylation-regulated protein (	w
+ANTIGEN	human	O75969	AKAP3	O75969	2	39	A-kinase anchor protein 3 (AKAP-3) (A-kinase anchor protein 	w
+ANTIGEN	human	O76036	NCR1	O76036	91	399	Natural cytotoxicity triggering receptor 1 (Lymphocyte antig	w
+ANTIGEN	human	O76087	GAGE7	O76087	2	24	G antigen 7 (GAGE-7) (AL4) (Cancer/testis antigen 4.7) (CT4.	w
+ANTIGEN	human	O94772	LY6H	O94772	13	77	Lymphocyte antigen 6H (Ly-6H)	w
+ANTIGEN	human	O94864	SUPT7L	O94864	34	95	STAGA complex 65 subunit gamma (Adenocarcinoma antigen ART1)	w
+ANTIGEN	human	O95400	CD2BP2	O95400	68	285	CD2 antigen cytoplasmic tail-binding protein 2 (CD2 cytoplas	w
+ANTIGEN	human	O95466	FMNL1	O95466	51	227	Formin-like protein 1 (CLL-associated antigen KW-13) (Leukoc	w
+ANTIGEN	human	O95711	LY86	O95711	47	474	Lymphocyte antigen 86 (Ly-86) (Protein MD-1)	w
+ANTIGEN	human	O95727	CRTAM	O95727	35	95	Cytotoxic and regulatory T-cell molecule (Class-I MHC-restri	w
+ANTIGEN	human	O95867	LY6G6C	O95867	16	85	Lymphocyte antigen 6 complex locus protein G6c	w
+ANTIGEN	human	O95868	LY6G6D	O95868	12	70	Lymphocyte antigen 6 complex locus protein G6d (Protein Ly6-	w
+ANTIGEN	human	O95925	EPPIN	O95925	24	126	Eppin (Cancer/testis antigen 71) (CT71) (Epididymal protease	w
+ANTIGEN	human	O95944	NCR2	O95944	38	143	Natural cytotoxicity triggering receptor 2 (Lymphocyte antig	w
+ANTIGEN	human	O95971	CD160	O95971	56	302	CD160 antigen (Natural killer cell receptor BY55) (CD antige	w
+ANTIGEN	human	O97980	HMHB1	O97980	2	20	Minor histocompatibility protein HB-1 [Cleaved into: Minor h	w
+ANTIGEN	human	P00338	LDHA	P00338	20	458	L-lactate dehydrogenase A chain (LDH-A) (EC 1.1.1.27) (Cell 	w
+ANTIGEN	human	P01589	IL2RA	P01589	151	444	Interleukin-2 receptor subunit alpha (IL-2 receptor subunit 	w
+ANTIGEN	human	P01730	CD4	P01730	99	1243	T-cell surface glycoprotein CD4 (T-cell surface antigen T4/L	w
+ANTIGEN	human	P01732	CD8A	P01732	190	1201	T-cell surface glycoprotein CD8 alpha chain (T-lymphocyte di	w
+ANTIGEN	human	P01889	HLA-B	P01889	623	1802	HLA class I histocompatibility antigen, B alpha chain (Human	w
+ANTIGEN	human	P01893	HLA-H	P01893	69	356	Putative HLA class I histocompatibility antigen, alpha chain	w
+ANTIGEN	human	P01903	HLA-DRA	P01903	259	1187	HLA class II histocompatibility antigen, DR alpha chain (MHC	w
+ANTIGEN	human	P01906	HLA-DQA2	P01906	67	404	HLA class II histocompatibility antigen, DQ alpha 2 chain (D	w
+ANTIGEN	human	P01909	HLA-DQA1	P01909	33	195	HLA class II histocompatibility antigen, DQ alpha 1 chain (D	w
+ANTIGEN	human	P01911	HLA-DRB1	P01911	116	1148	HLA class II histocompatibility antigen, DRB1 beta chain (Hu	w
+ANTIGEN	human	P01920	HLA-DQB1	P01920	20	180	HLA class II histocompatibility antigen, DQ beta 1 chain (MH	w
+ANTIGEN	human	P02511	CRYAB	P02511	29	476	Alpha-crystallin B chain (Alpha(B)-crystallin) (Heat shock p	w
+ANTIGEN	human	P02545	LMNA	P02545	151	1292	Prelamin-A/C [Cleaved into: Lamin-A/C (70 kDa lamin) (Renal 	w
+ANTIGEN	human	P02724	GYPA	P02724	48	480	Glycophorin-A (MN sialoglycoprotein) (PAS-2) (Sialoglycoprot	w
+ANTIGEN	human	P02730	SLC4A1	P02730	21	293	Band 3 anion transport protein (Anion exchange protein 1) (A	w
+ANTIGEN	human	P02786	TFRC	P02786	35	684	Transferrin receptor protein 1 (TR) (TfR) (TfR1) (Trfr) (T9)	w
+ANTIGEN	human	P04075	ALDOA	P04075	4	381	Fructose-bisphosphate aldolase A (EC 4.1.2.13) (Lung cancer 	w
+ANTIGEN	human	P04156	PRNP	P04156	69	1210	Major prion protein (PrP) (ASCR) (PrP27-30) (PrP33-35C) (CD 	w
+ANTIGEN	human	P04216	THY1	P04216	82	908	Thy-1 membrane glycoprotein (CDw90) (Thy-1 antigen) (CD anti	w
+ANTIGEN	human	P04233	CD74	P04233	90	1271	HLA class II histocompatibility antigen gamma chain (HLA-DR 	w
+ANTIGEN	human	P04234	CD3D	P04234	63	599	T-cell surface glycoprotein CD3 delta chain (T-cell receptor	w
+ANTIGEN	human	P04275	VWF	P04275	2	94	von Willebrand factor (vWF) [Cleaved into: von Willebrand an	w
+ANTIGEN	human	P04279	SEMG1	P04279	30	188	Semenogelin-1 (Cancer/testis antigen 103) (Semenogelin I) (S	w
+ANTIGEN	human	P04439	HLA-A	P04439	793	1948	HLA class I histocompatibility antigen, A alpha chain (Human	w
+ANTIGEN	human	P04440	HLA-DPB1	P04440	49	460	HLA class II histocompatibility antigen, DP beta 1 chain (HL	w
+ANTIGEN	human	P04637	TP53	P04637	385	2943	Cellular tumor antigen p53 (Antigen NY-CO-13) (Phosphoprotei	w
+ANTIGEN	human	P04921	GYPC	P04921	70	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
+ANTIGEN	human	P05106	ITGB3	P05106	58	544	Integrin beta-3 (Platelet membrane glycoprotein IIIa) (GPIII	w
+ANTIGEN	human	P05107	ITGB2	P05107	60	560	Integrin beta-2 (Cell surface adhesion glycoproteins LFA-1/C	w
+ANTIGEN	human	P05109	S100A8	P05109	51	1185	Protein S100-A8 (Calgranulin-A) (Calprotectin L1L subunit) (	w
+ANTIGEN	human	P05362	ICAM1	P05362	159	1037	Intercellular adhesion molecule 1 (ICAM-1) (Major group rhin	w
+ANTIGEN	human	P05387	RPLP2	P05387	52	702	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
+ANTIGEN	human	P05455	SSB	P05455	84	686	Lupus La protein (La autoantigen) (La ribonucleoprotein) (Sj	w
+ANTIGEN	human	P05538	HLA-DQB2	P05538	43	258	HLA class II histocompatibility antigen, DQ beta 2 chain (HL	w
+ANTIGEN	human	P05556	ITGB1	P05556	71	710	Integrin beta-1 (Fibronectin receptor subunit beta) (Glycopr	w
+ANTIGEN	human	P06028	GYPB	P06028	29	243	Glycophorin-B (PAS-3) (SS-active sialoglycoprotein) (Sialogl	w
+ANTIGEN	human	P06126	CD1A	P06126	55	382	T-cell surface glycoprotein CD1a (T-cell surface antigen T6/	w
+ANTIGEN	human	P06127	CD5	P06127	79	404	T-cell surface glycoprotein CD5 (Lymphocyte antigen T1/Leu-1	w
+ANTIGEN	human	P06213	INSR	P06213	69	1678	Insulin receptor (IR) (EC 2.7.10.1) (CD antigen CD220) [Clea	w
+ANTIGEN	human	P06340	HLA-DOA	P06340	50	259	HLA class II histocompatibility antigen, DO alpha chain (MHC	w
+ANTIGEN	human	P06729	CD2	P06729	61	552	T-cell surface antigen CD2 (Erythrocyte receptor) (LFA-2) (L	w
+ANTIGEN	human	P06731	CEACAM5	P06731	22	134	Cell adhesion molecule CEACAM5 (Carcinoembryonic antigen) (C	w
+ANTIGEN	human	P06756	ITGAV	P06756	86	474	Integrin alpha-V (Vitronectin receptor) (Vitronectin recepto	w
+ANTIGEN	human	P07195	LDHB	P07195	9	297	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	w
+ANTIGEN	human	P07204	THBD	P07204	42	312	Thrombomodulin (TM) (Fetomodulin) (CD antigen CD141)	w
+ANTIGEN	human	P07288	KLK3	P07288	89	334	Prostate-specific antigen (PSA) (EC 3.4.21.77) (Gamma-semino	w
+ANTIGEN	human	P07333	CSF1R	P07333	310	1664	Macrophage colony-stimulating factor 1 receptor (CSF-1 recep	w
+ANTIGEN	human	P07359	GP1BA	P07359	25	226	Platelet glycoprotein Ib alpha chain (GP-Ib alpha) (GPIb-alp	w
+ANTIGEN	human	P07766	CD3E	P07766	82	319	T-cell surface glycoprotein CD3 epsilon chain (T-cell surfac	w
+ANTIGEN	human	P07864	LDHC	P07864	7	225	L-lactate dehydrogenase C chain (LDH-C) (EC 1.1.1.27) (Cance	w
+ANTIGEN	human	P08069	IGF1R	P08069	91	1895	Insulin-like growth factor 1 receptor (EC 2.7.10.1) (Insulin	w
+ANTIGEN	human	P08174	CD55	P08174	27	136	Complement decay-accelerating factor (CD antigen CD55)	w
+ANTIGEN	human	P08195	SLC3A2	P08195	27	434	Amino acid transporter heavy chain SLC3A2 (4F2 cell-surface 	w
+ANTIGEN	human	P08473	MME	P08473	71	311	Neprilysin (EC 3.4.24.11) (Atriopeptidase) (Common acute lym	w
+ANTIGEN	human	P08514	ITGA2B	P08514	87	667	Integrin alpha-IIb (GPalpha IIb) (GPIIb) (Platelet membrane 	w
+ANTIGEN	human	P08571	CD14	P08571	54	606	Monocyte differentiation antigen CD14 (My23 antigen) (Myeloi	w
+ANTIGEN	human	P08575	PTPRC	P08575	79	687	Receptor-type tyrosine-protein phosphatase C (EC 3.1.3.48) (	w
+ANTIGEN	human	P08582	MELTF	P08582	15	127	Melanotransferrin (Melanoma-associated antigen p97) (CD anti	w
+ANTIGEN	human	P08637	FCGR3A	P08637	42	311	Low affinity immunoglobulin gamma Fc region receptor III-A (	w
+ANTIGEN	human	P08648	ITGA5	P08648	42	357	Integrin alpha-5 (CD49 antigen-like family member E) (Fibron	w
+ANTIGEN	human	P08962	CD63	P08962	28	363	CD63 antigen (Granulophysin) (Lysosomal-associated membrane 	w
+ANTIGEN	human	P09326	CD48	P09326	27	191	CD48 antigen (B-lymphocyte activation marker BLAST-1) (BCM1 	w
+ANTIGEN	human	P09564	CD7	P09564	61	338	T-cell antigen CD7 (GP40) (T-cell leukemia antigen) (T-cell 	w
+ANTIGEN	human	P09693	CD3G	P09693	43	340	T-cell surface glycoprotein CD3 gamma chain (T-cell receptor	w
+ANTIGEN	human	P0C2W7	CT47B1	P0C2W7	0	3	Cancer/testis antigen family 47 member B1 (Cancer/testis ant	w
+ANTIGEN	human	P0C5K6	VENTXP1	P0C5K6	1	4	Putative tumor antigen NA88-A (Cancer/testis antigen 18) (CT	w
+ANTIGEN	human	P0C5K7	CT62	P0C5K7	1	2	Cancer/testis antigen 62 (CT62)	w
+ANTIGEN	human	P0C7T4	HMSD	P0C7T4	0	1	Minor histocompatibility protein HMSD variant form (HSMD-v) 	w
+ANTIGEN	human	P0CL80	GAGE12F	P0CL80	1	23	G antigen 12F (GAGE-12F)	w
+ANTIGEN	human	P0CL81	GAGE12G	P0CL81	1	9	G antigen 12G (GAGE-12G)	w
+ANTIGEN	human	P0CL82	GAGE12I	P0CL82	2	188	G antigen 12I (GAGE-12I)	w
+ANTIGEN	human	P0CL83	STAG3L1	P0CL83	3	8	Putative STAG3-like protein 1 (Stromal antigen 3-like protei	w
+ANTIGEN	human	P0CL84	STAG3L2	P0CL84	2	10	Putative STAG3-like protein 2 (Stromal antigen 3-like protei	w
+ANTIGEN	human	P0CL85	STAG3L3	P0CL85	3	8	STAG3-like protein 3 (Stromal antigen 3-like protein 3)	w
+ANTIGEN	human	P0DMU7	CT45A6	P0DMU7	1	6	Cancer/testis antigen family 45 member A6 (Cancer/testis ant	w
+ANTIGEN	human	P0DMU8	CT45A5	P0DMU8	1	5	Cancer/testis antigen family 45 member A5 (Cancer/testis ant	w
+ANTIGEN	human	P0DMU9	CT45A10	P0DMU9	6	34	Cancer/testis antigen family 45 member A10 (Cancer/testis an	w
+ANTIGEN	human	P0DMV0	CT45A7	P0DMV0	5	25	Cancer/testis antigen family 45 member A7 (Cancer/testis ant	w
+ANTIGEN	human	P0DMV1	CT45A8	P0DMV1	0	6	Cancer/testis antigen family 45 member A8 (Cancer/testis ant	w
+ANTIGEN	human	P0DMV2	CT45A9	P0DMV2	2	21	Cancer/testis antigen family 45 member A9 (Cancer/testis ant	w
+ANTIGEN	human	P0DSO3	GAGE4	P0DSO3	6	219	G antigen 4 (Cancer/testis antigen 4.4) (CT4.4)	w
+ANTIGEN	human	P0DTL4	LY6S	P0DTL4	3	13	Lymphocyte antigen 6S	w
+ANTIGEN	human	P0DTW1	GAGE1	P0DTW1	0	23	G antigen 1 (GAGE-1) (Antigen MZ2-F) (Cancer/testis antigen 	w
+ANTIGEN	human	P10321	HLA-C	P10321	527	1517	HLA class I histocompatibility antigen, C alpha chain (HLA-C	w
+ANTIGEN	human	P10586	PTPRF	P10586	42	309	Receptor-type tyrosine-protein phosphatase F (EC 3.1.3.48) (	w
+ANTIGEN	human	P10747	CD28	P10747	177	738	T-cell-specific surface glycoprotein CD28 (TP44) (CD antigen	w
+ANTIGEN	human	P10966	CD8B	P10966	42	119	T-cell surface glycoprotein CD8 beta chain (CD antigen CD8b)	w
+ANTIGEN	human	P11049	CD37	P11049	9	194	Leukocyte antigen CD37 (Tetraspanin-26) (Tspan-26) (CD antig	w
+ANTIGEN	human	P11274	BCR	P11274	52	377	Breakpoint cluster region protein (EC 2.7.11.1) (Renal carci	w
+ANTIGEN	human	P11279	LAMP1	P11279	90	926	Lysosome-associated membrane glycoprotein 1 (LAMP-1) (Lysoso	w
+ANTIGEN	human	P11836	MS4A1	P11836	34	340	B-lymphocyte antigen CD20 (B-lymphocyte surface antigen B1) 	w
+ANTIGEN	human	P11912	CD79A	P11912	91	662	B-cell antigen receptor complex-associated protein alpha cha	w
+ANTIGEN	human	P12004	PCNA	P12004	187	767	DNA sliding clamp PCNA (Cyclin) (Proliferating cell nuclear 	w
+ANTIGEN	human	P12018	VPREB1	P12018	29	141	Immunoglobulin iota chain (CD179 antigen-like family member 	w
+ANTIGEN	human	P12314	FCGR1A	P12314	81	546	High affinity immunoglobulin gamma Fc receptor I (IgG Fc rec	w
+ANTIGEN	human	P12318	FCGR2A	P12318	81	438	Low affinity immunoglobulin gamma Fc region receptor II-a (I	w
+ANTIGEN	human	P12821	ACE	P12821	14	283	Angiotensin-converting enzyme (ACE) (EC 3.4.15.1) (Dipeptidy	w
+ANTIGEN	human	P12830	CDH1	P12830	92	1128	Cadherin-1 (CAM 120/80) (Epithelial cadherin) (E-cadherin) (	w
+ANTIGEN	human	P12956	XRCC6	P12956	72	756	DNA repair protein Ku70 (EC 4.2.99.18) (EC 5.6.2.4) (5'-deox	w
+ANTIGEN	human	P13010	XRCC5	P13010	72	641	DNA repair protein Ku80 (EC 4.2.99.18) (EC 5.6.2.4) (86 kDa 	w
+ANTIGEN	human	P13224	GP1BB	P13224	188	625	Platelet glycoprotein Ib beta chain (GP-Ib beta) (GPIb-beta)	w
+ANTIGEN	human	P13473	LAMP2	P13473	26	620	Lysosome-associated membrane glycoprotein 2 (LAMP-2) (Lysoso	w
+ANTIGEN	human	P13591	NCAM1	P13591	39	317	Neural cell adhesion molecule 1 (N-CAM-1) (NCAM-1) (CD antig	w
+ANTIGEN	human	P13598	ICAM2	P13598	120	624	Intercellular adhesion molecule 2 (ICAM-2) (CD antigen CD102	w
+ANTIGEN	human	P13612	ITGA4	P13612	126	624	Integrin alpha-4 (CD49 antigen-like family member D) (Integr	w
+ANTIGEN	human	P13726	F3	P13726	34	373	Tissue factor (TF) (Coagulation factor III) (Thromboplastin)	w
+ANTIGEN	human	P13747	HLA-E	P13747	369	741	HLA class I histocompatibility antigen, alpha chain E (MHC c	w
+ANTIGEN	human	P13762	HLA-DRB4	P13762	47	224	HLA class II histocompatibility antigen, DR beta 4 chain (MH	w
+ANTIGEN	human	P13765	HLA-DOB	P13765	43	321	HLA class II histocompatibility antigen, DO beta chain (MHC 	w
+ANTIGEN	human	P13987	CD59	P13987	60	699	CD59 glycoprotein (1F5 antigen) (20 kDa homologous restricti	w
+ANTIGEN	human	P14151	SELL	P14151	27	507	L-selectin (CD62 antigen-like family member L) (Leukocyte ad	w
+ANTIGEN	human	P14209	CD99	P14209	14	181	CD99 antigen (12E7) (E2 antigen) (Protein MIC2) (T-cell surf	w
+ANTIGEN	human	P14679	TYR	P14679	46	356	Tyrosinase (EC 1.14.18.1) (LB24-AB) (Monophenol monooxygenas	w
+ANTIGEN	human	P14770	GP9	P14770	63	419	Platelet glycoprotein IX (GP-IX) (GPIX) (Glycoprotein 9) (CD	w
+ANTIGEN	human	P15151	PVR	P15151	64	396	Poliovirus receptor (Nectin-like protein 5) (NECL-5) (CD ant	w
+ANTIGEN	human	P15260	IFNGR1	P15260	54	372	Interferon gamma receptor 1 (IFN-gamma receptor 1) (IFN-gamm	w
+ANTIGEN	human	P15391	CD19	P15391	107	529	B-lymphocyte antigen CD19 (B-lymphocyte surface antigen B4) 	w
+ANTIGEN	human	P15407	FOSL1	P15407	146	551	Fos-related antigen 1 (FRA-1)	w
+ANTIGEN	human	P15408	FOSL2	P15408	141	506	Fos-related antigen 2 (FRA-2)	w
+ANTIGEN	human	P15509	CSF2RA	P15509	46	272	Granulocyte-macrophage colony-stimulating factor receptor su	w
+ANTIGEN	human	P15529	CD46	P15529	30	114	Membrane cofactor protein (TLX) (Trophoblast leukocyte commo	w
+ANTIGEN	human	P15812	CD1E	P15812	38	212	T-cell surface glycoprotein CD1e, membrane-associated (hCD1e	w
+ANTIGEN	human	P15813	CD1D	P15813	79	394	Antigen-presenting glycoprotein CD1d (R3G1) (CD antigen CD1d	w
+ANTIGEN	human	P15924	DSP	P15924	27	288	Desmoplakin (DP) (250/210 kDa paraneoplastic pemphigus antig	w
+ANTIGEN	human	P15941	MUC1	P15941	25	158	Mucin-1 (MUC-1) (Breast carcinoma-associated antigen DF3) (C	w
+ANTIGEN	human	P16070	CD44	P16070	135	876	CD44 antigen (CDw44) (Epican) (Extracellular matrix receptor	w
+ANTIGEN	human	P16144	ITGB4	P16144	15	225	Integrin beta-4 (GP150) (CD antigen CD104)	w
+ANTIGEN	human	P16150	SPN	P16150	36	354	Leukosialin (GPL115) (Galactoglycoprotein) (GALGP) (Leukocyt	w
+ANTIGEN	human	P16284	PECAM1	P16284	73	490	Platelet endothelial cell adhesion molecule (PECAM-1) (EndoC	w
+ANTIGEN	human	P16410	CTLA4	P16410	285	1178	Cytotoxic T-lymphocyte protein 4 (Cytotoxic T-lymphocyte-ass	w
+ANTIGEN	human	P16422	EPCAM	P16422	29	487	Epithelial cell adhesion molecule (Ep-CAM) (Adenocarcinoma-a	w
+ANTIGEN	human	P16562	CRISP2	P16562	14	71	Cysteine-rich secretory protein 2 (CRISP-2) (Cancer/testis a	w
+ANTIGEN	human	P16671	CD36	P16671	34	543	Platelet glycoprotein 4 (Fatty acid translocase) (FAT) (Glyc	w
+ANTIGEN	human	P16871	IL7R	P16871	120	606	Interleukin-7 receptor subunit alpha (IL-7 receptor subunit 	w
+ANTIGEN	human	P17301	ITGA2	P17301	52	378	Integrin alpha-2 (CD49 antigen-like family member B) (Collag	w
+ANTIGEN	human	P17643	TYRP1	P17643	41	296	5,6-dihydroxyindole-2-carboxylic acid oxidase (DHICA oxidase	w
+ANTIGEN	human	P17693	HLA-G	P17693	447	1007	HLA class I histocompatibility antigen, alpha chain G (HLA G	w
+ANTIGEN	human	P17813	ENG	P17813	86	556	Endoglin (CD antigen CD105)	w
+ANTIGEN	human	P17927	CR1	P17927	0	79	Complement receptor type 1 (C3b/C4b receptor) (CD antigen CD	w
+ANTIGEN	human	P18577	RHCE	P18577	11	199	Blood group Rh(CE) polypeptide (Rh polypeptide 1) (RhPI) (Rh	w
+ANTIGEN	human	P18627	LAG3	P18627	76	475	Lymphocyte activation gene 3 protein (LAG-3) (CD antigen CD2	w
+ANTIGEN	human	P18827	SDC1	P18827	40	295	Syndecan-1 (SYND1) (CD antigen CD138)	w
+ANTIGEN	human	P19022	CDH2	P19022	68	460	Cadherin-2 (CDw325) (Neural cadherin) (N-cadherin) (CD antig	w
+ANTIGEN	human	P19075	TSPAN8	P19075	5	153	Tetraspanin-8 (Tspan-8) (Transmembrane 4 superfamily member 	w
+ANTIGEN	human	P19256	CD58	P19256	57	378	Lymphocyte function-associated antigen 3 (Ag3) (Surface glyc	w
+ANTIGEN	human	P19320	VCAM1	P19320	65	906	Vascular cell adhesion protein 1 (V-CAM 1) (VCAM-1) (INCAM-1	w
+ANTIGEN	human	P19397	CD53	P19397	54	361	Leukocyte surface antigen CD53 (Cell surface glycoprotein CD	w
+ANTIGEN	human	P20023	CR2	P20023	18	135	Complement receptor type 2 (Cr2) (Complement C3d receptor) (	w
+ANTIGEN	human	P20036	HLA-DPA1	P20036	120	563	HLA class II histocompatibility antigen, DP alpha 1 chain (D	w
+ANTIGEN	human	P20138	CD33	P20138	45	373	Myeloid cell surface antigen CD33 (Sialic acid-binding Ig-li	w
+ANTIGEN	human	P20273	CD22	P20273	21	270	B-cell receptor CD22 (B-lymphocyte cell adhesion molecule) (	w
+ANTIGEN	human	P20963	CD247	P20963	67	384	T-cell surface glycoprotein CD3 zeta chain (T-cell receptor 	w
+ANTIGEN	human	P21730	C5AR1	P21730	53	396	C5a anaphylatoxin chemotactic receptor 1 (C5a anaphylatoxin 	w
+ANTIGEN	human	P21757	MSR1	P21757	61	322	Macrophage scavenger receptor types I and II (Macrophage ace	w
+ANTIGEN	human	P21802	FGFR2	P21802	214	1597	Fibroblast growth factor receptor 2 (FGFR-2) (EC 2.7.10.1) (	w
+ANTIGEN	human	P21854	CD72	P21854	44	313	B-cell differentiation antigen CD72 (Lyb-2) (CD antigen CD72	w
+ANTIGEN	human	P21926	CD9	P21926	35	638	CD9 antigen (5H9 antigen) (Cell growth-inhibiting gene 2 pro	w
+ANTIGEN	human	P22087	FBL	P22087	101	698	rRNA 2'-O-methyltransferase fibrillarin (EC 2.1.1.-) (34 kDa	w
+ANTIGEN	human	P22455	FGFR4	P22455	210	1776	Fibroblast growth factor receptor 4 (FGFR-4) (EC 2.7.10.1) (	w
+ANTIGEN	human	P22607	FGFR3	P22607	206	1675	Fibroblast growth factor receptor 3 (FGFR-3) (EC 2.7.10.1) (	w
+ANTIGEN	human	P23229	ITGA6	P23229	70	392	Integrin alpha-6 (CD49 antigen-like family member F) (VLA-6)	w
+ANTIGEN	human	P23276	KEL	P23276	29	180	Kell blood group glycoprotein (EC 3.4.24.-) (CD antigen CD23	w
+ANTIGEN	human	P23510	TNFSF4	P23510	81	405	Tumor necrosis factor ligand superfamily member 4 (Glycoprot	w
+ANTIGEN	human	P24071	FCAR	P24071	53	237	Immunoglobulin alpha Fc receptor (IgA Fc receptor) (CD antig	w
+ANTIGEN	human	P24158	PRTN3	P24158	77	430	Myeloblastin (EC 3.4.21.76) (AGP7) (C-ANCA antigen) (Leukocy	w
+ANTIGEN	human	P24394	IL4R	P24394	106	390	Interleukin-4 receptor subunit alpha (IL-4 receptor subunit 	w
+ANTIGEN	human	P24821	TNC	P24821	22	158	Tenascin (TN) (Cytotactin) (GMEM) (GP 150-225) (Glioma-assoc	w
+ANTIGEN	human	P25024	CXCR1	P25024	54	208	C-X-C chemokine receptor type 1 (CXC-R1) (CXCR-1) (CDw128a) 	w
+ANTIGEN	human	P25063	CD24	P25063	3	49	Signal transducer CD24 (Small cell lung carcinoma cluster 4 	w
+ANTIGEN	human	P25445	FAS	P25445	130	615	Tumor necrosis factor receptor superfamily member 6 (Apo-1 a	w
+ANTIGEN	human	P25942	CD40	P25942	110	555	Tumor necrosis factor receptor superfamily member 5 (B-cell 	w
+ANTIGEN	human	P26006	ITGA3	P26006	31	211	Integrin alpha-3 (CD49 antigen-like family member C) (FRP-2)	w
+ANTIGEN	human	P26378	ELAVL4	P26378	11	130	ELAV-like protein 4 (Hu-antigen D) (HuD) (Paraneoplastic enc	w
+ANTIGEN	human	P26715	KLRC1	P26715	118	386	NKG2-A/NKG2-B type II integral membrane protein (CD159 antig	w
+ANTIGEN	human	P26717	KLRC2	P26717	56	183	NKG2-C type II integral membrane protein (CD159 antigen-like	w
+ANTIGEN	human	P26842	CD27	P26842	91	372	CD27 antigen (CD27L receptor) (T-cell activation antigen CD2	w
+ANTIGEN	human	P26951	IL3RA	P26951	69	534	Interleukin-3 receptor subunit alpha (IL-3 receptor subunit 	w
+ANTIGEN	human	P27487	DPP4	P27487	58	679	Dipeptidyl peptidase 4 (EC 3.4.14.5) (ADABP) (Adenosine deam	w
+ANTIGEN	human	P27701	CD82	P27701	10	198	CD82 antigen (C33 antigen) (IA4) (Inducible membrane protein	w
+ANTIGEN	human	P28067	HLA-DMA	P28067	86	369	HLA class II histocompatibility antigen, DM alpha chain (MHC	w
+ANTIGEN	human	P28068	HLA-DMB	P28068	54	385	HLA class II histocompatibility antigen, DM beta chain (MHC 	w
+ANTIGEN	human	P28906	CD34	P28906	79	640	Hematopoietic progenitor cell antigen CD34 (CD antigen CD34)	w
+ANTIGEN	human	P28908	TNFRSF8	P28908	35	141	Tumor necrosis factor receptor superfamily member 8 (CD30L r	w
+ANTIGEN	human	P29016	CD1B	P29016	95	531	T-cell surface glycoprotein CD1b (CD antigen CD1b)	w
+ANTIGEN	human	P29017	CD1C	P29017	52	396	T-cell surface glycoprotein CD1c (CD antigen CD1c)	w
+ANTIGEN	human	P29508	SERPINB3	P29508	6	312	Serpin B3 (Protein T4-A) (Squamous cell carcinoma antigen 1)	w
+ANTIGEN	human	P29692	EEF1D	P29692	112	657	Elongation factor 1-delta (EF-1-delta) (Antigen NY-CO-4)	w
+ANTIGEN	human	P29965	CD40LG	P29965	94	654	CD40 ligand (CD40-L) (T-cell antigen Gp39) (TNF-related acti	w
+ANTIGEN	human	P30203	CD6	P30203	47	271	T-cell differentiation antigen CD6 (T12) (TP120) (CD antigen	w
+ANTIGEN	human	P30408	TM4SF1	P30408	6	141	Transmembrane 4 L6 family member 1 (Membrane component chrom	w
+ANTIGEN	human	P30511	HLA-F	P30511	40	404	HLA class I histocompatibility antigen, alpha chain F (CDA12	w
+ANTIGEN	human	P31358	CD52	P31358	15	305	CAMPATH-1 antigen (CDw52) (Cambridge pathology 1 antigen) (E	w
+ANTIGEN	human	P31948	STIP1	P31948	60	684	Stress-induced-phosphoprotein 1 (STI1) (Hsc70/Hsp90-organizi	w
+ANTIGEN	human	P31994	FCGR2B	P31994	78	345	Low affinity immunoglobulin gamma Fc region receptor II-b (I	w
+ANTIGEN	human	P31995	FCGR2C	P31995	26	107	Low affinity immunoglobulin gamma Fc region receptor II-c (I	w
+ANTIGEN	human	P31997	CEACAM8	P31997	72	357	Cell adhesion molecule CEACAM8 (CD67 antigen) (Carcinoembryo	w
+ANTIGEN	human	P32004	L1CAM	P32004	50	282	Neural cell adhesion molecule L1 (N-CAM-L1) (NCAM-L1) (CD an	w
+ANTIGEN	human	P32302	CXCR5	P32302	32	238	C-X-C chemokine receptor type 5 (CXC-R5) (CXCR-5) (Burkitt l	w
+ANTIGEN	human	P32926	DSG3	P32926	18	121	Desmoglein-3 (130 kDa pemphigus vulgaris antigen) (PVA) (Cad	w
+ANTIGEN	human	P32927	CSF2RB	P32927	38	395	Cytokine receptor common subunit beta (CDw131) (GM-CSF/IL-3/	w
+ANTIGEN	human	P32942	ICAM3	P32942	82	436	Intercellular adhesion molecule 3 (ICAM-3) (CDw50) (ICAM-R) 	w
+ANTIGEN	human	P32970	CD70	P32970	20	210	CD70 antigen (CD27 ligand) (CD27-L) (Tumor necrosis factor l	w
+ANTIGEN	human	P32971	TNFSF8	P32971	63	402	Tumor necrosis factor ligand superfamily member 8 (CD30 liga	w
+ANTIGEN	human	P33151	CDH5	P33151	56	414	Cadherin-5 (7B4 antigen) (Vascular endothelial cadherin) (VE	w
+ANTIGEN	human	P33241	LSP1	P33241	20	62	Lymphocyte-specific protein 1 (47 kDa actin-binding protein)	w
+ANTIGEN	human	P33681	CD80	P33681	235	985	T-lymphocyte activation antigen CD80 (Activation B7-1 antige	w
+ANTIGEN	human	P34741	SDC2	P34741	36	221	Syndecan-2 (SYND2) (Fibroglycan) (Heparan sulfate proteoglyc	w
+ANTIGEN	human	P34810	CD68	P34810	70	544	Macrosialin (Gp110) (CD antigen CD68)	w
+ANTIGEN	human	P34910	EVI2B	P34910	34	161	Protein EVI2B (Ecotropic viral integration site 2B protein h	w
+ANTIGEN	human	P35221	CTNNA1	P35221	34	479	Catenin alpha-1 (Alpha E-catenin) (Cadherin-associated prote	w
+ANTIGEN	human	P35613	BSG	P35613	98	869	Basigin (5F7) (Collagenase stimulatory factor) (Extracellula	w
+ANTIGEN	human	P38570	ITGAE	P38570	16	52	Integrin alpha-E (HML-1 antigen) (Integrin alpha-IEL) (Mucos	w
+ANTIGEN	human	P40197	GP5	P40197	42	366	Platelet glycoprotein V (GPV) (Glycoprotein 5) (CD antigen C	w
+ANTIGEN	human	P40198	CEACAM3	P40198	86	302	Cell adhesion molecule CEACAM3 (Carcinoembryonic antigen CGM	w
+ANTIGEN	human	P40199	CEACAM6	P40199	99	320	Cell adhesion molecule CEACAM6 (Carcinoembryonic antigen-rel	w
+ANTIGEN	human	P40200	CD96	P40200	44	176	T-cell surface protein tactile (Cell surface antigen CD96) (	w
+ANTIGEN	human	P40238	MPL	P40238	48	180	Thrombopoietin receptor (TPO-R) (Myeloproliferative leukemia	w
+ANTIGEN	human	P40259	CD79B	P40259	87	485	B-cell antigen receptor complex-associated protein beta chai	w
+ANTIGEN	human	P40967	PMEL	P40967	17	168	Melanocyte protein PMEL (ME20-M) (ME20M) (Melanocyte protein	w
+ANTIGEN	human	P41214	EIF2D	P41214	9	101	Eukaryotic translation initiation factor 2D (eIF2d) (Hepatoc	w
+ANTIGEN	human	P41217	CD200	P41217	18	135	OX-2 membrane glycoprotein (CD antigen CD200)	w
+ANTIGEN	human	P41218	MNDA	P41218	41	654	Myeloid cell nuclear differentiation antigen	w
+ANTIGEN	human	P41597	CCR2	P41597	38	307	C-C chemokine receptor type 2 (C-C CKR-2) (CC-CKR-2) (CCR-2)	w
+ANTIGEN	human	P42081	CD86	P42081	110	492	T-lymphocyte activation antigen CD86 (Activation B7-2 antige	w
+ANTIGEN	human	P42702	LIFR	P42702	38	281	Leukemia inhibitory factor receptor (LIF receptor) (LIF-R) (	w
+ANTIGEN	human	P43121	MCAM	P43121	132	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	w
+ANTIGEN	human	P43355	MAGEA1	P43355	73	256	Melanoma-associated antigen 1 (Antigen MZ2-E) (Cancer/testis	w
+ANTIGEN	human	P43356	MAGEA2	P43356	39	118	Melanoma-associated antigen 2 (Cancer/testis antigen 1.2) (C	w
+ANTIGEN	human	P43357	MAGEA3	P43357	66	237	Melanoma-associated antigen 3 (Antigen MZ2-D) (Cancer/testis	w
+ANTIGEN	human	P43358	MAGEA4	P43358	65	233	Melanoma-associated antigen 4 (Cancer/testis antigen 1.4) (C	w
+ANTIGEN	human	P43359	MAGEA5P	P43359	2	8	Putative melanoma-associated antigen 5P (Cancer/testis antig	w
+ANTIGEN	human	P43360	MAGEA6	P43360	75	202	Melanoma-associated antigen 6 (Cancer/testis antigen 1.6) (C	w
+ANTIGEN	human	P43361	MAGEA8	P43361	69	180	Melanoma-associated antigen 8 (Cancer/testis antigen 1.8) (C	w
+ANTIGEN	human	P43362	MAGEA9	P43362	87	249	Melanoma-associated antigen 9 (Cancer/testis antigen 1.9) (C	w
+ANTIGEN	human	P43363	MAGEA10	P43363	54	113	Melanoma-associated antigen 10 (Cancer/testis antigen 1.10) 	w
+ANTIGEN	human	P43364	MAGEA11	P43364	94	234	Melanoma-associated antigen 11 (Cancer/testis antigen 1.11) 	w
+ANTIGEN	human	P43365	MAGEA12	P43365	36	105	Melanoma-associated antigen 12 (Cancer/testis antigen 1.12) 	w
+ANTIGEN	human	P43366	MAGEB1	P43366	8	41	Melanoma-associated antigen B1 (Cancer/testis antigen 3.1) (	w
+ANTIGEN	human	P43489	TNFRSF4	P43489	43	230	Tumor necrosis factor receptor superfamily member 4 (ACT35 a	w
+ANTIGEN	human	P45973	CBX5	P45973	144	740	Chromobox protein homolog 5 (Antigen p25) (Heterochromatin p	w
+ANTIGEN	human	P46013	MKI67	P46013	29	176	Proliferation marker protein Ki-67 (Antigen identified by mo	w
+ANTIGEN	human	P46087	NOP2	P46087	81	469	28S rRNA (cytosine(4447)-C(5))-methyltransferase (EC 2.1.1.-	w
+ANTIGEN	human	P48023	FASLG	P48023	61	509	Tumor necrosis factor ligand superfamily member 6 (Apoptosis	w
+ANTIGEN	human	P48059	LIMS1	P48059	15	152	LIM and senescent cell antigen-like-containing domain protei	w
+ANTIGEN	human	P48357	LEPR	P48357	32	234	Leptin receptor (LEP-R) (HuB219) (OB receptor) (OB-R) (CD an	w
+ANTIGEN	human	P48509	CD151	P48509	27	240	CD151 antigen (GP27) (Membrane glycoprotein SFA-1) (Platelet	w
+ANTIGEN	human	P48594	SERPINB4	P48594	10	290	Serpin B4 (Leupin) (Peptidase inhibitor 11) (PI-11) (Squamou	w
+ANTIGEN	human	P48960	ADGRE5	P48960	34	283	Adhesion G protein-coupled receptor E5 (Leukocyte antigen CD	w
+ANTIGEN	human	P49454	CENPF	P49454	5	85	Centromere protein F (CENP-F) (AH antigen) (Kinetochore prot	w
+ANTIGEN	human	P49588	AARS1	P49588	3	308	Alanine--tRNA ligase, cytoplasmic (EC 6.1.1.7) (Alanyl-tRNA 	w
+ANTIGEN	human	P49910	ZNF165	P49910	25	73	Zinc finger protein 165 (Cancer/testis antigen 53) (CT53) (L	w
+ANTIGEN	human	P50591	TNFSF10	P50591	58	353	Tumor necrosis factor ligand superfamily member 10 (Apo-2 li	w
+ANTIGEN	human	P50895	BCAM	P50895	28	250	Basal cell adhesion molecule (Auberger B antigen) (B-CAM cel	w
+ANTIGEN	human	P50990	CCT8	P50990	18	514	T-complex protein 1 subunit theta (TCP-1-theta) (EC 3.6.1.-)	w
+ANTIGEN	human	P51513	NOVA1	P51513	3	36	RNA-binding protein Nova-1 (Neuro-oncological ventral antige	w
+ANTIGEN	human	P51572	BCAP31	P51572	26	516	B-cell receptor-associated protein 31 (BCR-associated protei	w
+ANTIGEN	human	P51677	CCR3	P51677	53	205	C-C chemokine receptor type 3 (C C CKR3) (C-C CKR-3) (CC-CKR	w
+ANTIGEN	human	P51679	CCR4	P51679	49	193	C-C chemokine receptor type 4 (C-C CKR-4) (CC-CKR-4) (CCR-4)	w
+ANTIGEN	human	P51681	CCR5	P51681	51	348	C-C chemokine receptor type 5 (C-C CKR-5) (CC-CKR-5) (CCR-5)	w
+ANTIGEN	human	P51686	CCR9	P51686	46	215	C-C chemokine receptor type 9 (C-C CKR-9) (CC-CKR-9) (CCR-9)	w
+ANTIGEN	human	P51811	XK	P51811	9	87	Endoplasmic reticulum membrane adapter protein XK (Kell comp	w
+ANTIGEN	human	P51861	CDR1	P51861	2	26	Cerebellar degeneration-related antigen 1 (CDR34)	w
+ANTIGEN	human	P52756	RBM5	P52756	54	292	RNA-binding protein 5 (Protein G15) (Putative tumor suppress	w
+ANTIGEN	human	P54709	ATP1B3	P54709	23	291	Sodium/potassium-transporting ATPase subunit beta-3 (Sodium/	w
+ANTIGEN	human	P56180	TPTE	P56180	7	174	Putative tyrosine-protein phosphatase TPTE (EC 3.1.3.48) (Ca	w
+ANTIGEN	human	P56181	NDUFV3	P56181	20	253	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	w
+ANTIGEN	human	P56199	ITGA1	P56199	56	317	Integrin alpha-1 (CD49 antigen-like family member A) (Lamini	w
+ANTIGEN	human	P56470	LGALS4	P56470	1	111	Galectin-4 (Gal-4) (Antigen NY-CO-27) (L-36 lactose-binding 	w
+ANTIGEN	human	P57087	JAM2	P57087	44	196	Junctional adhesion molecule B (JAM-B) (Junctional adhesion 	w
+ANTIGEN	human	P57729	RAB38	P57729	51	178	Ras-related protein Rab-38 (EC 3.6.5.2) (Melanoma antigen NY	w
+ANTIGEN	human	P57737	CORO7	P57737	6	100	Coronin-7 (Crn7) (70 kDa WD repeat tumor rejection antigen h	w
+ANTIGEN	human	P59047	NLRP5	P59047	11	99	NACHT, LRR and PYD domains-containing protein 5 (Mater prote	w
+ANTIGEN	human	P59901	LILRA4	P59901	25	129	Leukocyte immunoglobulin-like receptor subfamily A member 4 	w
+ANTIGEN	human	P60033	CD81	P60033	38	576	CD81 antigen (26 kDa cell surface protein TAPA-1) (Target of	w
+ANTIGEN	human	P62913	RPL11	P62913	78	727	Large ribosomal subunit protein uL5 (60S ribosomal protein L	w
+ANTIGEN	human	P78325	ADAM8	P78325	18	115	Disintegrin and metalloproteinase domain-containing protein 	w
+ANTIGEN	human	P78332	RBM6	P78332	41	219	RNA-binding protein 6 (Lung cancer antigen NY-LU-12) (Protei	w
+ANTIGEN	human	P78358	CTAG1A	P78358	75	392	Cancer/testis antigen 1 (Autoimmunogenic cancer/testis antig	w
+ANTIGEN	human	P78395	PRAME	P78395	18	336	Melanoma antigen preferentially expressed in tumors (Opa-int	w
+ANTIGEN	human	P78504	JAG1	P78504	27	240	Protein jagged-1 (Jagged1) (hJ1) (CD antigen CD339)	w
+ANTIGEN	human	P78552	IL13RA1	P78552	54	298	Interleukin-13 receptor subunit alpha-1 (IL-13 receptor subu	w
+ANTIGEN	human	P79483	HLA-DRB3	P79483	47	314	HLA class II histocompatibility antigen, DR beta 3 chain (MH	w
+ANTIGEN	human	P80303	NUCB2	P80303	10	130	Nucleobindin-2 (DNA-binding protein NEFA) (Epididymis secret	w
+ANTIGEN	human	P80370	DLK1	P80370	29	211	Protein delta homolog 1 (DLK-1) (pG2) [Cleaved into: Fetal a	w
+ANTIGEN	human	Q01113	IL9R	Q01113	44	164	Interleukin-9 receptor (IL-9 receptor) (IL-9R) (CD antigen C	w
+ANTIGEN	human	Q01151	CD83	Q01151	106	473	CD83 antigen (hCD83) (B-cell activation protein) (Cell surfa	w
+ANTIGEN	human	Q01344	IL5RA	Q01344	46	400	Interleukin-5 receptor subunit alpha (IL-5 receptor subunit 	w
+ANTIGEN	human	Q01534	TSPY1	Q01534	12	32	Testis-specific Y-encoded protein 1 (Cancer/testis antigen 7	w
+ANTIGEN	human	Q01850	CDR2	Q01850	55	200	Cerebellar degeneration-related protein 2 (Major Yo paraneop	w
+ANTIGEN	human	Q01955	COL4A3	Q01955	6	25	Collagen alpha-3(IV) chain (Goodpasture antigen) [Cleaved in	w
+ANTIGEN	human	Q02040	AKAP17A	Q02040	17	184	A-kinase anchor protein 17A (AKAP-17A) (721P) (B-lymphocyte 	w
+ANTIGEN	human	Q02161	RHD	Q02161	4	21	Blood group Rh(D) polypeptide (RHXIII) (Rh polypeptide 2) (R	w
+ANTIGEN	human	Q02223	TNFRSF17	Q02223	66	254	Tumor necrosis factor receptor superfamily member 17 (B-cell	w
+ANTIGEN	human	Q02413	DSG1	Q02413	55	437	Desmoglein-1 (Cadherin family member 4) (Desmosomal glycopro	w
+ANTIGEN	human	Q03405	PLAUR	Q03405	84	562	Urokinase plasminogen activator surface receptor (U-PAR) (uP	w
+ANTIGEN	human	Q03518	TAP1	Q03518	13	270	Antigen peptide transporter 1 (APT1) (EC 7.4.2.14) (ATP-bind	w
+ANTIGEN	human	Q03519	TAP2	Q03519	11	197	Antigen peptide transporter 2 (APT2) (EC 7.4.2.14) (ATP-bind	w
+ANTIGEN	human	Q04900	CD164	Q04900	25	85	Sialomucin core protein 24 (MUC-24) (Endolyn) (Multi-glycosy	w
+ANTIGEN	human	Q04912	MST1R	Q04912	49	398	Macrophage-stimulating protein receptor (MSP receptor) (EC 2	w
+ANTIGEN	human	Q07011	TNFRSF9	Q07011	79	425	Tumor necrosis factor receptor superfamily member 9 (4-1BB l	w
+ANTIGEN	human	Q07075	ENPEP	Q07075	3	51	Glutamyl aminopeptidase (EAP) (EC 3.4.11.7) (Aminopeptidase 	w
+ANTIGEN	human	Q07108	CD69	Q07108	87	401	Early activation antigen CD69 (Activation inducer molecule) 	w
+ANTIGEN	human	Q07617	SPAG1	Q07617	23	131	Sperm-associated antigen 1 (HSD-3.8) (Infertility-related sp	w
+ANTIGEN	human	Q08289	CACNB2	Q08289	9	83	Voltage-dependent L-type calcium channel subunit beta-2 (CAB	w
+ANTIGEN	human	Q08431	MFGE8	Q08431	20	338	Lactadherin (Breast epithelial antigen BA46) (HMFG) (MFGM) (	w
+ANTIGEN	human	Q08648	SPAG11B	Q08648	1	14	Sperm-associated antigen 11B (Human epididymis-specific prot	w
+ANTIGEN	human	Q08708	CD300C	Q08708	14	151	CMRF35-like molecule 6 (CLM-6) (CD300 antigen-like family me	w
+ANTIGEN	human	Q08722	CD47	Q08722	113	605	Leukocyte surface antigen CD47 (Antigenic surface determinan	w
+ANTIGEN	human	Q0D2I5	IFFO1	Q0D2I5	30	75	Non-homologous end joining factor IFFO1 (NHEJ factor IFFO1) 	w
+ANTIGEN	human	Q10588	BST1	Q10588	11	112	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2 (EC 3.2.2.	w
+ANTIGEN	human	Q10589	BST2	Q10589	40	374	Bone marrow stromal antigen 2 (BST-2) (HM1.24 antigen) (Teth	w
+ANTIGEN	human	Q12816	TRO	Q12816	6	120	Trophinin (MAGE-D3 antigen)	w
+ANTIGEN	human	Q12830	BPTF	Q12830	25	254	Nucleosome-remodeling factor subunit BPTF (Bromodomain and P	w
+ANTIGEN	human	Q12846	STX4	Q12846	43	446	Syntaxin-4 (Renal carcinoma antigen NY-REN-31)	w
+ANTIGEN	human	Q13033	STRN3	Q13033	52	204	Striatin-3 (Cell cycle autoantigen SG2NA) (S/G2 antigen)	w
+ANTIGEN	human	Q13066	GAGE2B	Q13066	2	27	G antigen 2B/2C (GAGE-2B) (GAGE-2C) (Cancer/testis antigen 4	w
+ANTIGEN	human	Q13069	GAGE5	Q13069	6	70	G antigen 5 (GAGE-5) (Cancer/testis antigen 4.5) (CT4.5)	w
+ANTIGEN	human	Q13070	GAGE6	Q13070	0	20	G antigen 6 (GAGE-6) (Cancer/testis antigen 4.6) (CT4.6)	w
+ANTIGEN	human	Q13072	BAGE	Q13072	3	9	B melanoma antigen 1 (B melanoma antigen) (Antigen MZ2-BA) (	w
+ANTIGEN	human	Q13084	MRPL28	Q13084	20	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+ANTIGEN	human	Q13137	CALCOCO2	Q13137	85	526	Calcium-binding and coiled-coil domain-containing protein 2 	w
+ANTIGEN	human	Q13241	KLRD1	Q13241	150	558	Natural killer cells antigen CD94 (KP43) (Killer cell lectin	w
+ANTIGEN	human	Q13261	IL15RA	Q13261	12	50	Interleukin-15 receptor subunit alpha (IL-15 receptor subuni	w
+ANTIGEN	human	Q13291	SLAMF1	Q13291	20	177	Signaling lymphocytic activation molecule (CDw150) (IPO-3) (	w
+ANTIGEN	human	Q13349	ITGAD	Q13349	22	123	Integrin alpha-D (ADB2) (CD11 antigen-like family member D) 	w
+ANTIGEN	human	Q13421	MSLN	Q13421	38	235	Mesothelin (CAK1 antigen) (Pre-pro-megakaryocyte-potentiatin	w
+ANTIGEN	human	Q13464	ROCK1	Q13464	360	1585	Rho-associated protein kinase 1 (EC 2.7.11.39) (Renal carcin	w
+ANTIGEN	human	Q13625	TP53BP2	Q13625	137	337	Apoptosis-stimulating of p53 protein 2 (Bcl2-binding protein	w
+ANTIGEN	human	Q13641	TPBG	Q13641	26	166	Trophoblast glycoprotein (5T4 oncofetal antigen) (5T4 oncofe	w
+ANTIGEN	human	Q13740	ALCAM	Q13740	29	265	CD166 antigen (Activated leukocyte cell adhesion molecule) (	w
+ANTIGEN	human	Q14002	CEACAM7	Q14002	75	238	Cell adhesion molecule CEACAM7 (Carcinoembryonic antigen CGM	w
+ANTIGEN	human	Q14210	LY6D	Q14210	8	93	Lymphocyte antigen 6D (Ly-6D) (E48 antigen)	w
+ANTIGEN	human	Q14242	SELPLG	Q14242	58	313	P-selectin glycoprotein ligand 1 (PSGL-1) (Selectin P ligand	w
+ANTIGEN	human	Q14254	FLOT2	Q14254	24	458	Flotillin-2 (Epidermal surface antigen) (ESA) (Membrane comp	w
+ANTIGEN	human	Q14576	ELAVL3	Q14576	9	89	ELAV-like protein 3 (Hu-antigen C) (HuC) (Paraneoplastic cer	w
+ANTIGEN	human	Q14657	LAGE3	Q14657	23	189	EKC/KEOPS complex subunit LAGE3 (L antigen family member 3) 	w
+ANTIGEN	human	Q14667	BLTP2	Q14667	3	41	Bridge-like lipid transfer protein family member 2 (Antigen 	w
+ANTIGEN	human	Q14773	ICAM4	Q14773	32	106	Intercellular adhesion molecule 4 (ICAM-4) (Landsteiner-Wien	w
+ANTIGEN	human	Q14953	KIR2DS5	Q14953	4	41	Killer cell immunoglobulin-like receptor 2DS5 (CD158 antigen	w
+ANTIGEN	human	Q14954	KIR2DS1	Q14954	7	34	Killer cell immunoglobulin-like receptor 2DS1 (CD158 antigen	w
+ANTIGEN	human	Q14966	ZNF638	Q14966	92	386	Zinc finger protein 638 (Cutaneous T-cell lymphoma-associate	w
+ANTIGEN	human	Q14980	NUMA1	Q14980	49	419	Nuclear mitotic apparatus protein 1 (Nuclear matrix protein-	w
+ANTIGEN	human	Q15020	SART3	Q15020	38	449	Spliceosome associated factor 3, U4/U6 recycling protein (Sq	w
+ANTIGEN	human	Q15075	EEA1	Q15075	59	410	Early endosome antigen 1 (Endosome-associated protein p162) 	w
+ANTIGEN	human	Q15116	PDCD1	Q15116	133	403	Programmed cell death protein 1 (Protein PD-1) (hPD-1) (CD a	w
+ANTIGEN	human	Q15238	PSG5	Q15238	9	79	Pregnancy-specific beta-1-glycoprotein 5 (PS-beta-G-5) (PSBG	w
+ANTIGEN	human	Q15276	RABEP1	Q15276	80	270	Rab GTPase-binding effector protein 1 (Rabaptin-4) (Rabaptin	w
+ANTIGEN	human	Q15397	PUM3	Q15397	23	285	Pumilio homolog 3 (HBV X-transactivated gene 5 protein) (HBV	w
+ANTIGEN	human	Q15399	TLR1	Q15399	26	235	Toll-like receptor 1 (Toll/interleukin-1 receptor-like prote	w
+ANTIGEN	human	Q15431	SYCP1	Q15431	18	118	Synaptonemal complex protein 1 (SCP-1) (Cancer/testis antige	w
+ANTIGEN	human	Q15506	SPA17	Q15506	16	93	Sperm surface protein Sp17 (Cancer/testis antigen 22) (CT22)	w
+ANTIGEN	human	Q15762	CD226	Q15762	65	651	CD226 antigen (DNAX accessory molecule 1) (DNAM-1) (CD antig	w
+ANTIGEN	human	Q15788	NCOA1	Q15788	134	383	Nuclear receptor coactivator 1 (NCoA-1) (EC 2.3.1.48) (Class	w
+ANTIGEN	human	Q15831	STK11	Q15831	157	1669	Serine/threonine-protein kinase STK11 (EC 2.7.11.1) (Liver k	w
+ANTIGEN	human	Q16206	ENOX2	Q16206	16	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
+ANTIGEN	human	Q16222	UAP1	Q16222	7	76	UDP-N-acetylhexosamine pyrophosphorylase (Antigen X) (AGX) (	w
+ANTIGEN	human	Q16384	SSX1	Q16384	9	93	Protein SSX1 (Cancer/testis antigen 5.1) (CT5.1) (Synovial s	w
+ANTIGEN	human	Q16385	SSX2	Q16385	9	81	Protein SSX2 (Cancer/testis antigen 5.2) (CT5.2) (Synovial s	w
+ANTIGEN	human	Q16552	IL17A	Q16552	52	741	Interleukin-17A (IL-17) (IL-17A) (Cytotoxic T-lymphocyte-ass	w
+ANTIGEN	human	Q16553	LY6E	Q16553	23	139	Lymphocyte antigen 6E (Ly-6E) (Retinoic acid-induced gene E 	w
+ANTIGEN	human	Q16557	PSG3	Q16557	9	63	Pregnancy-specific beta-1-glycoprotein 3 (PS-beta-G-3) (PSBG	w
+ANTIGEN	human	Q16570	ACKR1	Q16570	52	311	Atypical chemokine receptor 1 (Duffy antigen receptor for ch	w
+ANTIGEN	human	Q16623	STX1A	Q16623	47	400	Syntaxin-1A (Neuron-specific antigen HPC-1)	w
+ANTIGEN	human	Q16626	MEA1	Q16626	15	52	Male-enhanced antigen 1 (MEA-1)	w
+ANTIGEN	human	Q16655	MLANA	Q16655	60	246	Melanoma antigen recognized by T-cells 1 (MART-1) (Antigen L	w
+ANTIGEN	human	Q16790	CA9	Q16790	42	298	Carbonic anhydrase 9 (EC 4.2.1.1) (Carbonate dehydratase IX)	w
+ANTIGEN	human	Q16849	PTPRN	Q16849	54	283	Receptor-type tyrosine-protein phosphatase-like N (R-PTP-N) 	w
+ANTIGEN	human	Q17RY6	LY6K	Q17RY6	12	97	Lymphocyte antigen 6K (Ly-6K)	w
+ANTIGEN	human	Q2HXU8	CLEC12B	Q2HXU8	59	297	C-type lectin domain family 12 member B (Macrophage antigen 	w
+ANTIGEN	human	Q2NKX8	ERCC6L	Q2NKX8	15	237	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-d	w
+ANTIGEN	human	Q2TAK8	PWWP3A	Q2TAK8	15	159	PWWP domain-containing DNA repair factor 3A (PWWP3A) (Mutate	w
+ANTIGEN	human	Q30154	HLA-DRB5	Q30154	77	621	HLA class II histocompatibility antigen, DR beta 5 chain (DR	w
+ANTIGEN	human	Q4V321	GAGE13	Q4V321	4	221	G antigen 13 (GAGE-13) (G antigen 12A) (GAGE-12A)	w
+ANTIGEN	human	Q4V326	GAGE2E	Q4V326	18	353	G antigen 2E (GAGE-2E)	w
+ANTIGEN	human	Q538Z0	LUZP6	Q538Z0	0	16	Leucine zipper protein 6 (Myeloproliferative disease-associa	w
+ANTIGEN	human	Q53EL6	PDCD4	Q53EL6	23	234	Programmed cell death protein 4 (Neoplastic transformation i	w
+ANTIGEN	human	Q58F21	BRDT	Q58F21	25	113	Bromodomain testis-specific protein (Cancer/testis antigen 9	w
+ANTIGEN	human	Q5DJT8	CT45A2	Q5DJT8	7	48	Cancer/testis antigen family 45 member A2 (Cancer/testis ant	w
+ANTIGEN	human	Q5FBB7	SGO1	Q5FBB7	119	469	Shugoshin 1 (Serologically defined breast cancer antigen NY-	w
+ANTIGEN	human	Q5H943	CT83	Q5H943	13	56	Kita-kyushu lung cancer antigen 1 (KK-LC-1) (Cancer/testis a	w
+ANTIGEN	human	Q5H9I0	TFDP3	Q5H9I0	91	407	Transcription factor Dp family member 3 (Cancer/testis antig	w
+ANTIGEN	human	Q5H9L4	TAF7L	Q5H9L4	67	414	Transcription initiation factor TFIID subunit 7-like (Cancer	w
+ANTIGEN	human	Q5H9M0	PWWP3B	Q5H9M0	9	133	PWWP domain-containing DNA repair factor 3B (PWWP3B) (Mutate	w
+ANTIGEN	human	Q5HYN5	CT45A1	Q5HYN5	8	51	Cancer/testis antigen family 45 member A1 (Cancer/testis ant	w
+ANTIGEN	human	Q5JQC4	CT47A1	Q5JQC4	2	18	Cancer/testis antigen 47A (Cancer/testis antigen 47) (CT47)	w
+ANTIGEN	human	Q5JRK9	PAGE2B	Q5JRK9	5	29	Putative G antigen family E member 3 (Prostate-associated ge	w
+ANTIGEN	human	Q5JUK9	PAGE3	Q5JUK9	1	12	P antigen family member 3 (PAGE-3) (G antigen family D membe	w
+ANTIGEN	human	Q5JVS0	HABP4	Q5JVS0	24	408	Intracellular hyaluronan-binding protein 4 (IHABP-4) (IHABP4	w
+ANTIGEN	human	Q5M775	SPECC1	Q5M775	85	243	Cytospin-B (Nuclear structure protein 5) (NSP5) (Sperm antig	w
+ANTIGEN	human	Q5SQ64	LY6G6F	Q5SQ64	20	107	Lymphocyte antigen 6 complex locus protein G6f	w
+ANTIGEN	human	Q5SRR4	LY6G5C	Q5SRR4	14	88	Lymphocyte antigen 6 complex locus protein G5c	w
+ANTIGEN	human	Q5SU54	HLA-DQB1	Q5SU54	14	99	MHC class II antigen	w
+ANTIGEN	human	Q5SZL2	CEP85L	Q5SZL2	23	57	Centrosomal protein of 85 kDa-like (Serologically defined br	w
+ANTIGEN	human	Q5T124	UBXN11	Q5T124	10	72	UBX domain-containing protein 11 (Colorectal tumor-associate	w
+ANTIGEN	human	Q5T8P6	RBM26	Q5T8P6	81	248	RNA-binding protein 26 (CTCL tumor antigen se70-2) (RNA-bind	w
+ANTIGEN	human	Q5T9S5	CCDC18	Q5T9S5	51	121	Coiled-coil domain-containing protein 18 (Sarcoma antigen NY	w
+ANTIGEN	human	Q5VTL8	PRPF38B	Q5VTL8	32	222	Pre-mRNA-splicing factor 38B (Sarcoma antigen NY-SAR-27)	w
+ANTIGEN	human	Q5VTY9	HHAT	Q5VTY9	2	21	Protein-cysteine N-palmitoyltransferase HHAT (EC 2.3.1.-) (H	w
+ANTIGEN	human	Q5W041	ARMC3	Q5W041	8	129	Armadillo repeat-containing protein 3 (Beta-catenin-like pro	w
+ANTIGEN	human	Q5Y7H0	HLA-DQA1	Q5Y7H0	18	94	HLA class II histocompatibility antigen DQ alpha chain	w
+ANTIGEN	human	Q5ZPR3	CD276	Q5ZPR3	28	223	CD276 antigen (4Ig-B7-H3) (B7 homolog 3) (B7-H3) (Costimulat	w
+ANTIGEN	human	Q658P3	STEAP3	Q658P3	7	259	Metalloreductase STEAP3 (EC 1.16.1.-) (Dudulin-2) (Six-trans	w
+ANTIGEN	human	Q687X5	STEAP4	Q687X5	9	111	Metalloreductase STEAP4 (EC 1.16.1.-) (Six-transmembrane epi	w
+ANTIGEN	human	Q68G75	LEMD1	Q68G75	8	37	LEM domain-containing protein 1 (Cancer/testis antigen 50) (	w
+ANTIGEN	human	Q69YQ0	SPECC1L	Q69YQ0	78	240	Cytospin-A (Renal carcinoma antigen NY-REN-22) (Sperm antige	w
+ANTIGEN	human	Q6GTX8	LAIR1	Q6GTX8	52	199	Leukocyte-associated immunoglobulin-like receptor 1 (LAIR-1)	w
+ANTIGEN	human	Q6ISS4	LAIR2	Q6ISS4	30	238	Leukocyte-associated immunoglobulin-like receptor 2 (LAIR-2)	w
+ANTIGEN	human	Q6ISU1	PTCRA	Q6ISU1	5	73	Pre T-cell antigen receptor alpha (pT-alpha) (pTa) (pT-alpha	w
+ANTIGEN	human	Q6NT46	GAGE2A	Q6NT46	16	309	G antigen 2A (GAGE-2A)	w
+ANTIGEN	human	Q6PB30	CSAG1	Q6PB30	13	100	Chondrosarcoma-associated gene 1 protein (Cancer/testis anti	w
+ANTIGEN	human	Q6PDA7	SPAG11A	Q6PDA7	5	21	Sperm-associated antigen 11A (Antimicrobial-like protein Bin	w
+ANTIGEN	human	Q6PEW0	PRSS54	Q6PEW0	4	15	Inactive serine protease 54 (Cancer/testis antigen 67) (CT67	w
+ANTIGEN	human	Q6PJT7	ZC3H14	Q6PJT7	56	238	Zinc finger CCCH domain-containing protein 14 (Mammalian sup	w
+ANTIGEN	human	Q6Q4G3	LVRN	Q6Q4G3	4	12	Aminopeptidase Q (AP-Q) (APQ) (EC 3.4.11.-) (CHL2 antigen) (	w
+ANTIGEN	human	Q6Q759	SPAG17	Q6Q759	0	17	Sperm-associated antigen 17 (Projection protein PF6 homolog)	w
+ANTIGEN	human	Q6UX04	CWC27	Q6UX04	52	210	Spliceosome-associated protein CWC27 homolog (Antigen NY-CO-	w
+ANTIGEN	human	Q6UXB8	PI16	Q6UXB8	14	42	Peptidase inhibitor 16 (PI-16) (Cysteine-rich secretory prot	w
+ANTIGEN	human	Q6UXG3	CD300LG	Q6UXG3	15	74	CMRF35-like molecule 9 (CLM-9) (CD300 antigen-like family me	w
+ANTIGEN	human	Q6UXN8	CLEC9A	Q6UXN8	86	309	C-type lectin domain family 9 member A (CD antigen CD370)	w
+ANTIGEN	human	Q6UXZ3	CD300LD	Q6UXZ3	51	168	CMRF35-like molecule 5 (CLM-5) (CD300 antigen-like family me	w
+ANTIGEN	human	Q6XZB0	LIPI	Q6XZB0	3	25	Lipase member I (LIPI) (EC 3.1.1.-) (Cancer/testis antigen 1	w
+ANTIGEN	human	Q6YFQ2	COX6B2	Q6YFQ2	8	112	Cytochrome c oxidase subunit 6B2 (Cancer/testis antigen 59) 	w
+ANTIGEN	human	Q6YHK3	CD109	Q6YHK3	12	245	CD109 antigen (150 kDa TGF-beta-1-binding protein) (C3 and P	w
+ANTIGEN	human	Q6ZRK6	CCDC73	Q6ZRK6	4	32	Coiled-coil domain-containing protein 73 (Sarcoma antigen NY	w
+ANTIGEN	human	Q6ZSZ6	TSHZ1	Q6ZSZ6	31	111	Teashirt homolog 1 (Antigen NY-CO-33) (Serologically defined	w
+ANTIGEN	human	Q7RTN6	STRADA	Q7RTN6	7	89	STE20-related kinase adapter protein alpha (STRAD alpha) (ST	w
+ANTIGEN	human	Q7Z2X7	PAGE2	Q7Z2X7	7	51	P antigen family member 2 (PAGE-2) (G antigen family C 2) (P	w
+ANTIGEN	human	Q7Z3E2	CCDC186	Q7Z3E2	23	54	Coiled-coil domain-containing protein 186 (CTCL tumor antige	w
+ANTIGEN	human	Q7Z3E5	ARMC9	Q7Z3E5	14	75	LisH domain-containing protein ARMC9 (Armadillo repeat-conta	w
+ANTIGEN	human	Q7Z4S6	KIF21A	Q7Z4S6	38	209	Kinesin-like protein KIF21A (Kinesin-like protein KIF2) (Ren	w
+ANTIGEN	human	Q7Z6A9	BTLA	Q7Z6A9	66	317	B- and T-lymphocyte attenuator (B- and T-lymphocyte-associat	w
+ANTIGEN	human	Q7Z6M3	MILR1	Q7Z6M3	22	145	Allergin-1 (Allergy inhibitory receptor 1) (Mast cell antige	w
+ANTIGEN	human	Q86SQ7	SDCCAG8	Q86SQ7	52	133	Serologically defined colon cancer antigen 8 (Antigen NY-CO-	w
+ANTIGEN	human	Q86TM3	DDX53	Q86TM3	3	110	Probable ATP-dependent RNA helicase DDX53 (EC 3.6.4.13) (Can	w
+ANTIGEN	human	Q86UG4	SLCO6A1	Q86UG4	16	288	Solute carrier organic anion transporter family member 6A1 (	w
+ANTIGEN	human	Q86UP2	KTN1	Q86UP2	54	347	Kinectin (CG-1 antigen) (Kinesin receptor)	w
+ANTIGEN	human	Q86UR1	NOXA1	Q86UR1	27	123	NADPH oxidase activator 1 (NOX activator 1) (Antigen NY-CO-3	w
+ANTIGEN	human	Q86UY5	SACK1A	Q86UY5	20	134	Scaffolding CK1 anchoring protein A (Protein FAM83A) (Tumor 	w
+ANTIGEN	human	Q86VB7	CD163	Q86VB7	12	154	Scavenger receptor cysteine-rich type 1 protein M130 (Hemogl	w
+ANTIGEN	human	Q86VD1	MORC1	Q86VD1	15	51	MORC family CW-type zinc finger protein 1 (Cancer/testis ant	w
+ANTIGEN	human	Q86WA6	BPHL	Q86WA6	11	134	Serine hydrolase BPHL (EC 3.1.-.-) (Biphenyl hydrolase-like 	w
+ANTIGEN	human	Q86X02	CDR2L	Q86X02	36	134	Cerebellar degeneration-related protein 2-like (Paraneoplast	w
+ANTIGEN	human	Q86X24	HORMAD1	Q86X24	35	73	HORMA domain-containing protein 1 (Cancer/testis antigen 46)	w
+ANTIGEN	human	Q86XK7	VSIG1	Q86XK7	12	105	V-set and immunoglobulin domain-containing protein 1 (Cell s	w
+ANTIGEN	human	Q86Y27	BAGE5	Q86Y27	4	17	B melanoma antigen 5 (Cancer/testis antigen 2.5) (CT2.5)	w
+ANTIGEN	human	Q86Y28	BAGE4	Q86Y28	3	6	B melanoma antigen 4 (Cancer/testis antigen 2.4) (CT2.4)	w
+ANTIGEN	human	Q86Y29	BAGE3	Q86Y29	0	1	B melanoma antigen 3 (Cancer/testis antigen 2.3) (CT2.3)	w
+ANTIGEN	human	Q86Y30	BAGE2	Q86Y30	0	3	B melanoma antigen 2 (Cancer/testis antigen 2.2) (CT2.2)	w
+ANTIGEN	human	Q86YL7	PDPN	Q86YL7	4	32	Podoplanin (Aggrus) (Glycoprotein 36) (Gp36) (PA2.26 antigen	w
+ANTIGEN	human	Q86YT9	JAML	Q86YT9	50	185	Junctional adhesion molecule-like (Adhesion molecule interac	w
+ANTIGEN	human	Q8IV76	PASD1	Q8IV76	19	89	Circadian clock protein PASD1 (Cancer/testis antigen 63) (CT	w
+ANTIGEN	human	Q8IWJ2	GCC2	Q8IWJ2	19	134	GRIP and coiled-coil domain-containing protein 2 (185 kDa Go	w
+ANTIGEN	human	Q8IX05	CD302	Q8IX05	24	121	CD302 antigen (C-type lectin BIMLEC) (C-type lectin domain f	w
+ANTIGEN	human	Q8IX06	REXO1L1P	Q8IX06	1	11	Putative exonuclease GOR (EC 3.1.-.-) (Antigen GOR homolog) 	w
+ANTIGEN	human	Q8IXA5	SPACA3	Q8IXA5	17	99	Sperm acrosome membrane-associated protein 3 (Cancer/testis 	w
+ANTIGEN	human	Q8IYA8	IHO1	Q8IYA8	18	98	Interactor of HORMAD1 protein 1 (Cancer/testis antigen 74) (	w
+ANTIGEN	human	Q8IZM8	ZNF654	Q8IZM8	3	9	Zinc finger protein 654 (Melanoma-associated antigen)	w
+ANTIGEN	human	Q8N0S2	SYCE1	Q8N0S2	76	157	Synaptonemal complex central element protein 1 (Cancer/testi	w
+ANTIGEN	human	Q8N0W7	FMR1NB	Q8N0W7	2	36	FMR1 neighbor protein (Cancer/testis antigen 37) (CT37) (Sar	w
+ANTIGEN	human	Q8N0X2	SPAG16	Q8N0X2	6	41	Sperm-associated antigen 16 protein (Pf20 protein homolog)	w
+ANTIGEN	human	Q8N109	KIR2DL5A	Q8N109	8	32	Killer cell immunoglobulin-like receptor 2DL5A (CD antigen C	w
+ANTIGEN	human	Q8N111	CEND1	Q8N111	13	165	Cell cycle exit and neuronal differentiation protein 1 (BM88	w
+ANTIGEN	human	Q8N123	CPXCR1	Q8N123	1	11	CPX chromosomal region candidate gene 1 protein (Cancer/test	w
+ANTIGEN	human	Q8N2N9	ANKRD36B	Q8N2N9	12	110	Ankyrin repeat domain-containing protein 36B (CLL-associated	w
+ANTIGEN	human	Q8N3U4	STAG2	Q8N3U4	35	329	Cohesin subunit SA-2 (SCC3 homolog 2) (Stromal antigen 2)	w
+ANTIGEN	human	Q8N5R6	CCDC33	Q8N5R6	33	198	Coiled-coil domain-containing protein 33 (Cancer/testis anti	w
+ANTIGEN	human	Q8N6Q3	CD177	Q8N6Q3	16	200	CD177 antigen (Human neutrophil alloantigen 2a) (HNA-2a) (NB	w
+ANTIGEN	human	Q8N743	KIR3DL3	Q8N743	15	99	Killer cell immunoglobulin-like receptor 3DL3 (CD158 antigen	w
+ANTIGEN	human	Q8N7X4	MAGEB6	Q8N7X4	8	38	Melanoma-associated antigen B6 (Cancer/testis antigen 3.4) (	w
+ANTIGEN	human	Q8ND90	PNMA1	Q8ND90	29	248	Paraneoplastic antigen Ma1 (37 kDa neuronal protein) (Neuron	w
+ANTIGEN	human	Q8NDX9	LY6G5B	Q8NDX9	15	109	Lymphocyte antigen 6 complex locus protein G5b	w
+ANTIGEN	human	Q8NEB7	ACRBP	Q8NEB7	3	58	Acrosin-binding protein (Acrosin-binding protein, 60 kDa for	w
+ANTIGEN	human	Q8NEN9	PDZD8	Q8NEN9	49	429	PDZ domain-containing protein 8 (Lysosomal vacuolator) (LYVA	w
+ANTIGEN	human	Q8NET4	RTL9	Q8NET4	0	38	Retrotransposon Gag-like protein 9 (Retrotransposon gag doma	w
+ANTIGEN	human	Q8NEY8	PPHLN1	Q8NEY8	54	372	Periphilin-1 (CDC7 expression repressor) (CR) (Gastric cance	w
+ANTIGEN	human	Q8NFA0	USP32	Q8NFA0	15	272	Ubiquitin carboxyl-terminal hydrolase 32 (EC 3.4.19.12) (Deu	w
+ANTIGEN	human	Q8NHK3	KIR2DL5B	Q8NHK3	9	31	Killer cell immunoglobulin-like receptor 2DL5B (CD158 antige	w
+ANTIGEN	human	Q8NHU0	CT45A3	Q8NHU0	8	56	Cancer/testis antigen family 45 member A3 (Cancer/testis ant	w
+ANTIGEN	human	Q8NI51	CTCFL	Q8NI51	4	57	Transcriptional repressor CTCFL (Brother of the regulator of	w
+ANTIGEN	human	Q8TBR4	STAG3L4	Q8TBR4	2	10	Putative STAG3-like protein 4 (Stromal antigen 3-like protei	w
+ANTIGEN	human	Q8TBY0	RBM46	Q8TBY0	6	45	Probable RNA-binding protein 46 (Cancer/testis antigen 68) (	w
+ANTIGEN	human	Q8TBZ0	CCDC110	Q8TBZ0	4	19	Coiled-coil domain-containing protein 110 (Cancer/testis ant	w
+ANTIGEN	human	Q8TC20	CAGE1	Q8TC20	14	58	Cancer-associated gene 1 protein (CAGE-1) (Cancer/testis ant	w
+ANTIGEN	human	Q8TC36	SUN5	Q8TC36	4	50	SUN domain-containing protein 5 (Sad1 and UNC84 domain-conta	w
+ANTIGEN	human	Q8TC59	PIWIL2	Q8TC59	12	133	Piwi-like protein 2 (EC 3.1.26.-) (Cancer/testis antigen 80)	w
+ANTIGEN	human	Q8TCT9	HM13	Q8TCT9	6	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
+ANTIGEN	human	Q8TCZ2	CD99L2	Q8TCZ2	9	85	CD99 antigen-like protein 2 (MIC2-like protein 1) (CD antige	w
+ANTIGEN	human	Q8TD90	MAGEE2	Q8TD90	7	48	Melanoma-associated antigen E2 (Hepatocellular carcinoma-ass	w
+ANTIGEN	human	Q8TD91	MAGEC3	Q8TD91	6	42	Melanoma-associated antigen C3 (Cancer/testis antigen 7.2) (	w
+ANTIGEN	human	Q8TEW0	PARD3	Q8TEW0	137	441	Partitioning defective 3 homolog (PAR-3) (PARD-3) (Atypical 	w
+ANTIGEN	human	Q8WTP9	XAGE3	Q8WTP9	10	70	X antigen family member 3 (XAGE-3) (Cancer/testis antigen 12	w
+ANTIGEN	human	Q8WTT0	CLEC4C	Q8WTT0	49	276	C-type lectin domain family 4 member C (Blood dendritic cell	w
+ANTIGEN	human	Q8WUE5	CT55	Q8WUE5	11	101	Cancer/testis antigen 55 (Tumor antigen BJ-HCC-20)	w
+ANTIGEN	human	Q8WUQ7	CACTIN	Q8WUQ7	44	407	Splicing factor Cactin (Renal carcinoma antigen NY-REN-24)	w
+ANTIGEN	human	Q8WVM7	STAG1	Q8WVM7	26	170	Cohesin subunit SA-1 (SCC3 homolog 1) (Stromal antigen 1)	w
+ANTIGEN	human	Q8WWI5	SLC44A1	Q8WWI5	10	109	Choline transporter-like protein 1 (CDw92) (Solute carrier f	w
+ANTIGEN	human	Q8WWK9	CKAP2	Q8WWK9	49	195	Cytoskeleton-associated protein 2 (CTCL tumor antigen se20-1	w
+ANTIGEN	human	Q8WWM1	XAGE5	Q8WWM1	1	41	X antigen family member 5 (XAGE-5) (Cancer/testis antigen 12	w
+ANTIGEN	human	Q8WWV6	FCAMR	Q8WWV6	7	29	High affinity immunoglobulin alpha and immunoglobulin mu Fc 	w
+ANTIGEN	human	Q8WWY3	PRPF31	Q8WWY3	41	516	U4/U6 small nuclear ribonucleoprotein Prp31 (Pre-mRNA-proces	w
+ANTIGEN	human	Q8WX93	PALLD	Q8WX93	58	213	Palladin (SIH002) (Sarcoma antigen NY-SAR-77)	w
+ANTIGEN	human	Q8WXB1	METTL21A	Q8WXB1	39	111	Protein N-lysine methyltransferase METTL21A (EC 2.1.1.-) (HS	w
+ANTIGEN	human	Q8WYJ6	SEPTIN1	Q8WYJ6	17	56	Septin-1 (LARP) (Peanut-like protein 3) (Serologically defin	w
+ANTIGEN	human	Q8WYR4	RSPH1	Q8WYR4	51	177	Radial spoke head 1 homolog (Cancer/testis antigen 79) (CT79	w
+ANTIGEN	human	Q92598	HSPH1	Q92598	36	481	Heat shock protein 105 kDa (Antigen NY-CO-25) (Heat shock 11	w
+ANTIGEN	human	Q92619	ARHGAP45	Q92619	49	296	Rho GTPase-activating protein 45 [Cleaved into: Minor histoc	w
+ANTIGEN	human	Q92626	PXDN	Q92626	36	426	Peroxidasin homolog (EC 1.11.2.-) (Melanoma-associated antig	w
+ANTIGEN	human	Q92817	EVPL	Q92817	21	233	Envoplakin (210 kDa cornified envelope precursor protein) (2	w
+ANTIGEN	human	Q92854	SEMA4D	Q92854	31	286	Semaphorin-4D (A8) (BB18) (GR3) (CD antigen CD100)	w
+ANTIGEN	human	Q92974	ARHGEF2	Q92974	116	415	Rho guanine nucleotide exchange factor 2 (Guanine nucleotide	w
+ANTIGEN	human	Q93033	CD101	Q93033	29	115	Immunoglobulin superfamily member 2 (IgSF2) (Cell surface gl	w
+ANTIGEN	human	Q969F0	FATE1	Q969F0	49	168	Fetal and adult testis-expressed transcript protein (Cancer/	w
+ANTIGEN	human	Q969Q6	PPP2R3C	Q969Q6	15	148	Serine/threonine-protein phosphatase 2A regulatory subunit B	w
+ANTIGEN	human	Q96AA8	JAKMIP2	Q96AA8	21	69	Janus kinase and microtubule-interacting protein 2 (CTCL tum	w
+ANTIGEN	human	Q96AZ1	EEF1AKMT3	Q96AZ1	68	392	EEF1A lysine methyltransferase 3 (EC 2.1.1.-) (Hepatocellula	w
+ANTIGEN	human	Q96BY2	MOAP1	Q96BY2	13	97	Modulator of apoptosis 1 (MAP-1) (MAP1) (Paraneoplastic anti	w
+ANTIGEN	human	Q96C92	ENTR1	Q96C92	68	215	Endosome-associated-trafficking regulator 1 (Antigen NY-CO-3	w
+ANTIGEN	human	Q96DU3	SLAMF6	Q96DU3	41	274	SLAM family member 6 (Activating NK receptor) (NK-T-B-antige	w
+ANTIGEN	human	Q96EA4	SPDL1	Q96EA4	71	517	Protein Spindly (hSpindly) (Arsenite-related gene 1 protein)	w
+ANTIGEN	human	Q96EY1	DNAJA3	Q96EY1	23	394	DnaJ homolog subfamily A member 3, mitochondrial (DnaJ prote	w
+ANTIGEN	human	Q96F46	IL17RA	Q96F46	92	496	Interleukin-17 receptor A (IL-17 receptor A) (IL-17RA) (CDw2	w
+ANTIGEN	human	Q96GE6	CALML4	Q96GE6	66	507	Calmodulin-like protein 4 (Serologically defined breast canc	w
+ANTIGEN	human	Q96GT9	XAGE2	Q96GT9	9	62	X antigen family member 2 (XAGE-2) (Cancer/testis antigen 12	w
+ANTIGEN	human	Q96GU1	PAGE5	Q96GU1	15	95	P antigen family member 5 (PAGE-5) (Cancer/testis antigen 16	w
+ANTIGEN	human	Q96HJ3	CCDC34	Q96HJ3	2	36	Coiled-coil domain-containing protein 34 (Renal carcinoma an	w
+ANTIGEN	human	Q96HP8	TMEM176A	Q96HP8	4	163	Transmembrane protein 176A (Hepatocellular carcinoma-associa	w
+ANTIGEN	human	Q96JG8	MAGED4	Q96JG8	15	53	Melanoma-associated antigen D4 (MAGE-D4 antigen) (MAGE-E1 an	w
+ANTIGEN	human	Q96KB5	PBK	Q96KB5	252	1409	Lymphokine-activated killer T-cell-originated protein kinase	w
+ANTIGEN	human	Q96LZ2	MAGEB10	Q96LZ2	32	104	Melanoma-associated antigen B10 (MAGE-B10 antigen)	w
+ANTIGEN	human	Q96M61	MAGEB18	Q96M61	14	55	Melanoma-associated antigen B18 (MAGE-B18 antigen)	w
+ANTIGEN	human	Q96MG7	NSMCE3	Q96MG7	15	119	Non-structural maintenance of chromosomes element 3 homolog 	w
+ANTIGEN	human	Q96MN2	NLRP4	Q96MN2	4	36	NACHT, LRR and PYD domains-containing protein 4 (Cancer/test	w
+ANTIGEN	human	Q96PC5	MIA2	Q96PC5	18	117	Melanoma inhibitory activity protein 2 (MIA protein 2) (CTAG	w
+ANTIGEN	human	Q96PL5	ERMAP	Q96PL5	50	146	Erythroid membrane-associated protein (hERMAP) (Radin blood 	w
+ANTIGEN	human	Q96PP8	GBP5	Q96PP8	14	141	Guanylate-binding protein 5 (EC 3.6.5.-) (GBP-TA antigen) (G	w
+ANTIGEN	human	Q96PV4	PNMA5	Q96PV4	24	93	Paraneoplastic antigen-like protein 5 (Tumor antigen BJ-HCC-	w
+ANTIGEN	human	Q96PY6	NEK1	Q96PY6	35	129	Serine/threonine-protein kinase Nek1 (EC 2.7.11.1) (Never in	w
+ANTIGEN	human	Q96Q89	KIF20B	Q96Q89	24	151	Kinesin-like protein KIF20B (Cancer/testis antigen 90) (CT90	w
+ANTIGEN	human	Q96QF7	GCNA	Q96QF7	2	27	Germ cell nuclear acidic protein (Acidic repeat-containing p	w
+ANTIGEN	human	Q96R06	SPAG5	Q96R06	76	479	Sperm-associated antigen 5 (Astrin) (Deepest) (Mitotic spind	w
+ANTIGEN	human	Q96RJ3	TNFRSF13C	Q96RJ3	47	271	Tumor necrosis factor receptor superfamily member 13C (B-cel	w
+ANTIGEN	human	Q96RS0	TGS1	Q96RS0	65	255	Trimethylguanosine synthase (EC 2.1.1.-) (CLL-associated ant	w
+ANTIGEN	human	Q96RS6	NUDCD1	Q96RS6	11	293	NudC domain-containing protein 1 (Chronic myelogenous leukem	w
+ANTIGEN	human	Q96RT6	CTAGE1	Q96RT6	10	19	cTAGE family member 2 (Protein cTAGE-2) (Cancer/testis antig	w
+ANTIGEN	human	Q96T75	DSCR8	Q96T75	3	14	Down syndrome critical region protein 8 (Cancer/testis antig	w
+ANTIGEN	human	Q99062	CSF3R	Q99062	213	596	Granulocyte colony-stimulating factor receptor (G-CSF recept	w
+ANTIGEN	human	Q99467	CD180	Q99467	14	212	CD180 antigen (Lymphocyte antigen 64) (Radioprotective 105 k	w
+ANTIGEN	human	Q99590	SCAF11	Q99590	75	256	Protein SCAF11 (CTD-associated SR protein 11) (Renal carcino	w
+ANTIGEN	human	Q99795	GPA33	Q99795	39	156	Cell surface A33 antigen (Glycoprotein A33)	w
+ANTIGEN	human	Q99909	SSX3	Q99909	16	90	Protein SSX3 (Cancer/testis antigen 5.3) (CT5.3)	w
+ANTIGEN	human	Q99932	SPAG8	Q99932	9	144	Sperm-associated antigen 8 (HSD-1) (Sperm membrane protein 1	w
+ANTIGEN	human	Q99965	ADAM2	Q99965	20	71	Disintegrin and metalloproteinase domain-containing protein 	w
+ANTIGEN	human	Q9BPX3	NCAPG	Q9BPX3	74	317	Condensin complex subunit 3 (Chromosome-associated protein G	w
+ANTIGEN	human	Q9BQ51	PDCD1LG2	Q9BQ51	78	583	Programmed cell death 1 ligand 2 (PD-1 ligand 2) (PD-L2) (PD	w
+ANTIGEN	human	Q9BQS6	HSPB9	Q9BQS6	8	55	Heat shock protein beta-9 (HspB9) (Cancer/testis antigen 51)	w
+ANTIGEN	human	Q9BT25	HAUS8	Q9BT25	73	271	HAUS augmin-like complex subunit 8 (HEC1/NDC80-interacting c	w
+ANTIGEN	human	Q9BVI0	PHF20	Q9BVI0	57	281	PHD finger protein 20 (Glioma-expressed antigen 2) (Hepatoce	w
+ANTIGEN	human	Q9BVJ6	UTP14A	Q9BVJ6	61	381	U3 small nucleolar RNA-associated protein 14 homolog A (Anti	w
+ANTIGEN	human	Q9BW61	DDA1	Q9BW61	28	395	DET1- and DDB1-associated protein 1 (Placenta cross-immune r	w
+ANTIGEN	human	Q9BXA6	TSSK6	Q9BXA6	394	1254	Testis-specific serine/threonine-protein kinase 6 (TSK-6) (T	w
+ANTIGEN	human	Q9BXJ9	NAA15	Q9BXJ9	34	274	N-alpha-acetyltransferase 15, NatA auxiliary subunit (Gastri	w
+ANTIGEN	human	Q9BXN6	SPANXD	Q9BXN6	15	54	Sperm protein associated with the nucleus on the X chromosom	w
+ANTIGEN	human	Q9BXR5	TLR10	Q9BXR5	29	185	Toll-like receptor 10 (CD antigen CD290)	w
+ANTIGEN	human	Q9BXT4	TDRD1	Q9BXT4	13	86	Tudor domain-containing protein 1 (Cancer/testis antigen 41.	w
+ANTIGEN	human	Q9BXT5	TEX15	Q9BXT5	5	144	Testis-expressed protein 15 (Cancer/testis antigen 42) (CT42	w
+ANTIGEN	human	Q9BXU8	FTHL17	Q9BXU8	6	55	Ferritin heavy polypeptide-like 17 (Cancer/testis antigen 38	w
+ANTIGEN	human	Q9BXX2	ANKRD30B	Q9BXX2	14	93	Ankyrin repeat domain-containing protein 30B (Serologically 	w
+ANTIGEN	human	Q9BXX3	ANKRD30A	Q9BXX3	15	96	Ankyrin repeat domain-containing protein 30A (Serologically 	w
+ANTIGEN	human	Q9BY66	KDM5D	Q9BY66	19	83	Lysine-specific demethylase 5D (EC 1.14.11.67) (Histocompati	w
+ANTIGEN	human	Q9BYX2	TBC1D2	Q9BYX2	102	298	TBC1 domain family member 2A (Armus) (Prostate antigen recog	w
+ANTIGEN	human	Q9BZ81	MAGEB5	Q9BZ81	12	39	Melanoma-associated antigen B5 (Cancer/testis antigen 3.3) (	w
+ANTIGEN	human	Q9BZZ2	SIGLEC1	Q9BZZ2	7	88	Sialoadhesin (Sialic acid-binding Ig-like lectin 1) (Siglec-	w
+ANTIGEN	human	Q9GZM5	YIPF3	Q9GZM5	12	209	Protein YIPF3 (Killer lineage protein 1) (Natural killer cel	w
+ANTIGEN	human	Q9GZY0	NXF2	Q9GZY0	17	100	Nuclear RNA export factor 2 (Cancer/testis antigen 39) (CT39	w
+ANTIGEN	human	Q9H013	ADAM19	Q9H013	22	91	Disintegrin and metalloproteinase domain-containing protein 	w
+ANTIGEN	human	Q9H0Z9	RBM38	Q9H0Z9	10	66	RNA-binding protein 38 (CLL-associated antigen KW-5) (HSRNAS	w
+ANTIGEN	human	Q9H1Q7	PCED1A	Q9H1Q7	7	37	PC-esterase domain-containing protein 1A (Protein FAM113A) (	w
+ANTIGEN	human	Q9H213	MAGEH1	Q9H213	24	100	Melanoma-associated antigen H1 (Apoptosis-related protein 1)	w
+ANTIGEN	human	Q9H2F9	CCDC68	Q9H2F9	34	113	Coiled-coil domain-containing protein 68 (Cutaneous T-cell l	w
+ANTIGEN	human	Q9H2G2	SLK	Q9H2G2	16	181	STE20-like serine/threonine-protein kinase (STE20-like kinas	w
+ANTIGEN	human	Q9H2G4	TSPYL2	Q9H2G4	17	128	Testis-specific Y-encoded-like protein 2 (TSPY-like protein 	w
+ANTIGEN	human	Q9H2K8	TAOK3	Q9H2K8	21	106	Serine/threonine-protein kinase TAO3 (EC 2.7.11.1) (Cutaneou	w
+ANTIGEN	human	Q9H568	ACTL8	Q9H568	32	282	Actin-like protein 8 (Cancer/testis antigen 57) (CT57)	w
+ANTIGEN	human	Q9H6Q3	SLA2	Q9H6Q3	39	247	Src-like-adapter 2 (Modulator of antigen receptor signaling)	w
+ANTIGEN	human	Q9H8M2	BRD9	Q9H8M2	34	196	Bromodomain-containing protein 9 (Rhabdomyosarcoma antigen M	w
+ANTIGEN	human	Q9H9F9	ACTR5	Q9H9F9	14	246	Actin-related protein 5 (hARP5) (Sarcoma antigen NY-SAR-16)	w
+ANTIGEN	human	Q9H9S4	CAB39L	Q9H9S4	14	104	Calcium-binding protein 39-like (Antigen MLAA-34) (MO25beta)	w
+ANTIGEN	human	Q9HAF1	MEAF6	Q9HAF1	30	171	Chromatin modification-related protein MEAF6 (MYST/Esa1-asso	w
+ANTIGEN	human	Q9HAT0	ROPN1	Q9HAT0	26	84	Ropporin-1A (Cancer/testis antigen 91) (CT91) (Rhophilin-ass	w
+ANTIGEN	human	Q9HAY2	MAGEF1	Q9HAY2	10	71	Melanoma-associated antigen F1 (MAGE-F1) (MAGE-F1 antigen)	w
+ANTIGEN	human	Q9HBE5	IL21R	Q9HBE5	86	279	Interleukin-21 receptor (IL-21 receptor) (IL-21R) (Novel int	w
+ANTIGEN	human	Q9HBG7	LY9	Q9HBG7	51	243	T-lymphocyte surface antigen Ly-9 (Cell surface molecule Ly-	w
+ANTIGEN	human	Q9HC47	CTAGE1	Q9HC47	0	7	Cutaneous T-cell lymphoma-associated antigen 1 (Protein cTAG	w
+ANTIGEN	human	Q9HCH5	SYTL2	Q9HCH5	23	79	Synaptotagmin-like protein 2 (Breast cancer-associated antig	w
+ANTIGEN	human	Q9HCI5	MAGEE1	Q9HCI5	6	65	Melanoma-associated antigen E1 (Alpha-dystrobrevin-associate	w
+ANTIGEN	human	Q9HCU0	CD248	Q9HCU0	16	76	Endosialin (Tumor endothelial marker 1) (CD antigen CD248)	w
+ANTIGEN	human	Q9HD40	SEPSECS	Q9HD40	1	49	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
+ANTIGEN	human	Q9HD64	XAGE1A	Q9HD64	6	69	X antigen family member 1 (XAGE-1) (Cancer/testis antigen 12	w
+ANTIGEN	human	Q9NNX6	CD209	Q9NNX6	4	211	CD209 antigen (C-type lectin domain family 4 member L) (Dend	w
+ANTIGEN	human	Q9NP99	TREM1	Q9NP99	43	306	Triggering receptor expressed on myeloid cells 1 (TREM-1) (T	w
+ANTIGEN	human	Q9NPE6	SPAG4	Q9NPE6	12	72	Sperm-associated antigen 4 protein (Outer dense fiber-associ	w
+ANTIGEN	human	Q9NPF0	CD320	Q9NPF0	16	90	CD320 antigen (8D6 antigen) (FDC-signaling molecule 8D6) (FD	w
+ANTIGEN	human	Q9NQ25	SLAMF7	Q9NQ25	57	333	SLAM family member 7 (CD2 subset 1) (CD2-like receptor-activ	w
+ANTIGEN	human	Q9NQ35	NRIP3	Q9NQ35	11	62	Nuclear receptor-interacting protein 3 (Sarcoma antigen NY-S	w
+ANTIGEN	human	Q9NQM4	DNAAF6	Q9NQM4	11	49	Dynein axonemal assembly factor 6 (PIH1 domain-containing pr	w
+ANTIGEN	human	Q9NQS3	NECTIN3	Q9NQS3	43	154	Nectin-3 (CDw113) (Nectin cell adhesion molecule 3) (Poliovi	w
+ANTIGEN	human	Q9NQT4	EXOSC5	Q9NQT4	25	328	Exosome complex component RRP46 (Chronic myelogenous leukemi	w
+ANTIGEN	human	Q9NQZ6	ZC4H2	Q9NQZ6	4	69	Zinc finger C4H2 domain-containing protein (Hepatocellular c	w
+ANTIGEN	human	Q9NR16	CD163L1	Q9NR16	2	18	Scavenger receptor cysteine-rich type 1 protein M160 (CD163 	w
+ANTIGEN	human	Q9NR96	TLR9	Q9NR96	27	418	Toll-like receptor 9 (CD antigen CD289)	w
+ANTIGEN	human	Q9NR97	TLR8	Q9NR97	18	277	Toll-like receptor 8 (CD antigen CD288)	w
+ANTIGEN	human	Q9NS25	SPANXB1	Q9NS25	19	85	Sperm protein associated with the nucleus on the X chromosom	w
+ANTIGEN	human	Q9NS26	SPANXA1	Q9NS26	25	92	Sperm protein associated with the nucleus on the X chromosom	w
+ANTIGEN	human	Q9NS87	KIF15	Q9NS87	57	198	Kinesin-like protein KIF15 (Kinesin-like protein 2) (hKLP2) 	w
+ANTIGEN	human	Q9NSQ0	RRP7BP	Q9NSQ0	5	31	Putative ribosomal RNA-processing protein 7 homolog B (Putat	w
+ANTIGEN	human	Q9NVM9	INTS13	Q9NVM9	15	145	Integrator complex subunit 13 (Cell cycle regulator Mat89Bb 	w
+ANTIGEN	human	Q9NWK9	ZNHIT6	Q9NWK9	34	235	Box C/D snoRNA protein 1 (Serologically defined breast cance	w
+ANTIGEN	human	Q9NWZ3	IRAK4	Q9NWZ3	248	1371	Interleukin-1 receptor-associated kinase 4 (IRAK-4) (EC 2.7.	w
+ANTIGEN	human	Q9NX05	FAM120C	Q9NX05	44	232	Constitutive coactivator of PPAR-gamma-like protein 2 (Prote	w
+ANTIGEN	human	Q9NX40	OCIAD1	Q9NX40	51	404	OCIA domain-containing protein 1 (Ovarian cancer immunoreact	w
+ANTIGEN	human	Q9NXZ1	SAGE1	Q9NXZ1	7	94	Sarcoma antigen 1 (Cancer/testis antigen 14) (CT14)	w
+ANTIGEN	human	Q9NXZ2	DDX43	Q9NXZ2	0	95	Probable ATP-dependent RNA helicase DDX43 (EC 3.6.4.13) (Can	w
+ANTIGEN	human	Q9NY15	STAB1	Q9NY15	7	180	Stabilin-1 (Fasciclin, EGF-like, laminin-type EGF-like and l	w
+ANTIGEN	human	Q9NY74	ETAA1	Q9NY74	41	198	Ewing's tumor-associated antigen 1 (Ewing's tumor-associated	w
+ANTIGEN	human	Q9NY87	SPANXC	Q9NY87	17	64	Sperm protein associated with the nucleus on the X chromosom	w
+ANTIGEN	human	Q9NYH9	UTP6	Q9NYH9	84	474	U3 small nucleolar RNA-associated protein 6 homolog (Hepatoc	w
+ANTIGEN	human	Q9NZ63	C9orf78	Q9NZ63	89	642	Splicing factor C9orf78 (Hepatocellular carcinoma-associated	w
+ANTIGEN	human	Q9NZQ7	CD274	Q9NZQ7	152	951	Programmed cell death 1 ligand 1 (PD-L1) (PDCD1 ligand 1) (P	w
+ANTIGEN	human	Q9P055	JKAMP	Q9P055	3	28	JNK1/MAPK8-associated membrane protein (JKAMP) (JNK1-associa	w
+ANTIGEN	human	Q9P0V8	SLAMF8	Q9P0V8	39	339	SLAM family member 8 (B-lymphocyte activator macrophage expr	w
+ANTIGEN	human	Q9P127	LUZP4	Q9P127	10	130	Leucine zipper protein 4 (Cancer/testis antigen 28) (CT-28) 	w
+ANTIGEN	human	Q9P1Q0	VPS54	Q9P1Q0	22	99	Vacuolar protein sorting-associated protein 54 (Hepatocellul	w
+ANTIGEN	human	Q9P1W8	SIRPG	Q9P1W8	25	221	Signal-regulatory protein gamma (SIRP-gamma) (CD172 antigen-	w
+ANTIGEN	human	Q9P1Z2	CALCOCO1	Q9P1Z2	55	150	Calcium-binding and coiled-coil domain-containing protein 1 	w
+ANTIGEN	human	Q9P2T0	SPMAP2	Q9P2T0	2	20	Sperm microtubule associated protein 2 (Cancer/testis antige	w
+ANTIGEN	human	Q9UBF1	MAGEC2	Q9UBF1	39	132	Melanoma-associated antigen C2 (Cancer/testis antigen 10) (C	w
+ANTIGEN	human	Q9UBP8	KAAG1	Q9UBP8	5	33	Kidney-associated antigen 1 (RU2 antisense gene protein)	w
+ANTIGEN	human	Q9UEU5	GAGE2D	Q9UEU5	16	167	G antigen 2D (GAGE-2D) (Cancer/testis antigen 4.8) (CT4.8) (	w
+ANTIGEN	human	Q9UGL1	KDM5B	Q9UGL1	30	192	Lysine-specific demethylase 5B (EC 1.14.11.67) (Cancer/testi	w
+ANTIGEN	human	Q9UHE8	STEAP1	Q9UHE8	11	94	STEAP1 protein (Six-transmembrane epithelial antigen of pros	w
+ANTIGEN	human	Q9UHL3	FAM153A	Q9UHL3	6	23	Protein FAM153A (Renal carcinoma antigen NY-REN-7)	w
+ANTIGEN	human	Q9UHX3	ADGRE2	Q9UHX3	27	260	Adhesion G protein-coupled receptor E2 (EGF-like module rece	w
+ANTIGEN	human	Q9UI38	PRSS50	Q9UI38	23	104	Probable threonine protease PRSS50 (EC 3.4.25.-) (Cancer/tes	w
+ANTIGEN	human	Q9UIB8	CD84	Q9UIB8	48	403	SLAM family member 5 (Cell surface antigen MAX.3) (Hly9-beta	w
+ANTIGEN	human	Q9UIL8	PHF11	Q9UIL8	14	197	PHD finger protein 11 (BRCA1 C-terminus-associated protein) 	w
+ANTIGEN	human	Q9UJ71	CD207	Q9UJ71	16	201	C-type lectin domain family 4 member K (Langerin) (CD antige	w
+ANTIGEN	human	Q9UJ98	STAG3	Q9UJ98	10	65	Cohesin subunit SA-3 (SCC3 homolog 3) (Stromal antigen 3) (S	w
+ANTIGEN	human	Q9UJW2	TINAG	Q9UJW2	3	60	Tubulointerstitial nephritis antigen (TIN-Ag)	w
+ANTIGEN	human	Q9UK61	TASOR	Q9UK61	20	168	Protein TASOR (CTCL tumor antigen se89-1) (Retinoblastoma-as	w
+ANTIGEN	human	Q9UK85	DKKL1	Q9UK85	11	131	Dickkopf-like protein 1 (Cancer/testis antigen 34) (CT34) (P	w
+ANTIGEN	human	Q9UK97	FBXO9	Q9UK97	9	71	F-box only protein 9 (Cross-immune reaction antigen 1) (Rena	w
+ANTIGEN	human	Q9UKF5	ADAM29	Q9UKF5	11	31	Disintegrin and metalloproteinase domain-containing protein 	w
+ANTIGEN	human	Q9UL01	DSE	Q9UL01	3	34	Dermatan-sulfate epimerase (DS epimerase) (EC 5.1.3.19) (Cho	w
+ANTIGEN	human	Q9UL41	PNMA3	Q9UL41	9	87	Paraneoplastic antigen Ma3	w
+ANTIGEN	human	Q9UL42	PNMA2	Q9UL42	47	317	Paraneoplastic antigen Ma2 (40 kDa neuronal protein) (Oncone	w
+ANTIGEN	human	Q9ULC0	EMCN	Q9ULC0	42	250	Endomucin (Endomucin-2) (Gastric cancer antigen Ga34) (Mucin	w
+ANTIGEN	human	Q9ULD9	ZNF608	Q9ULD9	25	173	Zinc finger protein 608 (Renal carcinoma antigen NY-REN-36)	w
+ANTIGEN	human	Q9ULU4	ZMYND8	Q9ULU4	90	404	MYND-type zinc finger-containing chromatin reader ZMYND8 (Cu	w
+ANTIGEN	human	Q9ULV1	FZD4	Q9ULV1	44	237	Frizzled-4 (Fz-4) (hFz4) (FzE4) (CD antigen CD344)	w
+ANTIGEN	human	Q9ULW0	TPX2	Q9ULW0	36	371	Targeting protein for Xklp2 (Differentially expressed in can	w
+ANTIGEN	human	Q9ULW2	FZD10	Q9ULW2	32	159	Frizzled-10 (Fz-10) (hFz10) (FzE7) (CD antigen CD350)	w
+ANTIGEN	human	Q9UM73	ALK	Q9UM73	45	369	ALK tyrosine kinase receptor (EC 2.7.10.1) (Anaplastic lymph	w
+ANTIGEN	human	Q9UMD9	COL17A1	Q9UMD9	21	106	Collagen alpha-1(XVII) chain (180 kDa bullous pemphigoid ant	w
+ANTIGEN	human	Q9UMX9	SLC45A2	Q9UMX9	4	80	Membrane-associated transporter protein (Melanoma antigen AI	w
+ANTIGEN	human	Q9UN79	SOX13	Q9UN79	27	100	Transcription factor SOX-13 (Islet cell antigen 12) (SRY (Se	w
+ANTIGEN	human	Q9UNE7	STUB1	Q9UNE7	140	695	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (Antigen NY-C	w
+ANTIGEN	human	Q9UNF1	MAGED2	Q9UNF1	48	258	Melanoma-associated antigen D2 (11B6) (Breast cancer-associa	w
+ANTIGEN	human	Q9UNN8	PROCR	Q9UNN8	47	318	Endothelial protein C receptor (Activated protein C receptor	w
+ANTIGEN	human	Q9UNW9	NOVA2	Q9UNW9	2	32	RNA-binding protein Nova-2 (Astrocytic NOVA1-like RNA-bindin	w
+ANTIGEN	human	Q9UQ07	MOK	Q9UQ07	256	1229	MAPK/MAK/MRK overlapping kinase (EC 2.7.11.22) (MOK protein 	w
+ANTIGEN	human	Q9UQ35	SRRM2	Q9UQ35	30	529	Serine/arginine repetitive matrix protein 2 (300 kDa nuclear	w
+ANTIGEN	human	Q9UQL6	HDAC5	Q9UQL6	83	480	Histone deacetylase 5 (HD5) (EC 3.5.1.98) (Antigen NY-CO-9)	w
+ANTIGEN	human	Q9Y282	ERGIC3	Q9Y282	9	340	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ANTIGEN	human	Q9Y286	SIGLEC7	Q9Y286	19	152	Sialic acid-binding Ig-like lectin 7 (Siglec-7) (Adhesion in	w
+ANTIGEN	human	Q9Y2C9	TLR6	Q9Y2C9	42	302	Toll-like receptor 6 (CD antigen CD286)	w
+ANTIGEN	human	Q9Y2U9	KLHDC2	Q9Y2U9	34	157	Kelch domain-containing protein 2 (Hepatocellular carcinoma-	w
+ANTIGEN	human	Q9Y336	SIGLEC9	Q9Y336	10	75	Sialic acid-binding Ig-like lectin 9 (Siglec-9) (CDw329) (Pr	w
+ANTIGEN	human	Q9Y365	STARD10	Q9Y365	11	86	START domain-containing protein 10 (StARD10) (Antigen NY-CO-	w
+ANTIGEN	human	Q9Y3A4	RRP7A	Q9Y3A4	27	343	Ribosomal RNA-processing protein 7 homolog A (Gastric cancer	w
+ANTIGEN	human	Q9Y3S1	WNK2	Q9Y3S1	35	92	Serine/threonine-protein kinase WNK2 (EC 2.7.11.1) (Antigen 	w
+ANTIGEN	human	Q9Y592	CEP83	Q9Y592	55	165	Centrosomal protein of 83 kDa (Cep83) (Coiled-coil domain-co	w
+ANTIGEN	human	Q9Y597	KCTD3	Q9Y597	21	224	BTB/POZ domain-containing protein KCTD3 (Renal carcinoma ant	w
+ANTIGEN	human	Q9Y5A6	ZSCAN21	Q9Y5A6	44	120	Zinc finger and SCAN domain-containing protein 21 (Renal car	w
+ANTIGEN	human	Q9Y5A7	NUB1	Q9Y5A7	33	117	NEDD8 ultimate buster 1 (Negative regulator of ubiquitin-lik	w
+ANTIGEN	human	Q9Y5A9	YTHDF2	Q9Y5A9	123	407	YTH domain-containing family protein 2 (DF2) (CLL-associated	w
+ANTIGEN	human	Q9Y5K1	SPO11	Q9Y5K1	3	45	Meiotic recombination protein SPO11 (EC 5.6.2.2) (Cancer/tes	w
+ANTIGEN	human	Q9Y5P2	CSAG2	Q9Y5P2	1	90	Chondrosarcoma-associated gene 2/3 protein (Cancer/testis an	w
+ANTIGEN	human	Q9Y5U5	TNFRSF18	Q9Y5U5	3	46	Tumor necrosis factor receptor superfamily member 18 (Activa	w
+ANTIGEN	human	Q9Y5V3	MAGED1	Q9Y5V3	53	372	Melanoma-associated antigen D1 (MAGE tumor antigen CCF) (MAG	w
+ANTIGEN	human	Q9Y5Y4	PTGDR2	Q9Y5Y4	12	105	Prostaglandin D2 receptor 2 (Chemoattractant receptor-homolo	w
+ANTIGEN	human	Q9Y624	F11R	Q9Y624	66	442	Junctional adhesion molecule A (JAM-A) (Junctional adhesion 	w
+ANTIGEN	human	Q9Y6N9	USH1C	Q9Y6N9	9	31	Harmonin (Antigen NY-CO-38/NY-CO-37) (Autoimmune enteropathy	w
+ANTIGEN	human	Q9Y6Q6	TNFRSF11A	Q9Y6Q6	22	98	Tumor necrosis factor receptor superfamily member 11A (Osteo	w
+ANTIGEN	human	Q9Y6W8	ICOS	Q9Y6W8	92	301	Inducible T-cell costimulator (Activation-inducible lymphocy	w
+ANTIGEN	human	Q9Y6Y9	LY96	Q9Y6Y9	77	494	Lymphocyte antigen 96 (Ly-96) (ESOP-1) (Protein MD-2)	w
+ANTIGEN	virus	A0A024B6C0		A0A024B6C0	1	6	Large T antigen	w
+ANTIGEN	virus	A0A097A5I9		A0A097A5I9	0	6	Large T antigen	w
+ANTIGEN	virus	A0A0A7DQC0	C	A0A0A7DQC0	1	4	External core antigen	w
+ANTIGEN	virus	A0A0A7W5B8		A0A0A7W5B8	0	5	Large T antigen	w
+ANTIGEN	virus	A0A0B5L789		A0A0B5L789	0	5	Small t antigen	w
+ANTIGEN	virus	A0A0B5LB58		A0A0B5LB58	0	5	Large T antigen	w
+ANTIGEN	virus	A0A0D5ZYE4		A0A0D5ZYE4	0	4	Large T antigen	w
+ANTIGEN	virus	A0A0D5ZYL4		A0A0D5ZYL4	0	4	Large T antigen	w
+ANTIGEN	virus	A0A0D5ZYL6		A0A0D5ZYL6	0	4	Small t antigen	w
+ANTIGEN	virus	A0A0D5ZYM7		A0A0D5ZYM7	0	4	Large T antigen	w
+ANTIGEN	virus	A0A0K1ETR3		A0A0K1ETR3	0	6	Large T antigen	w
+ANTIGEN	virus	A0A0N7IN28		A0A0N7IN28	0	5	Small t antigen	w
+ANTIGEN	virus	A0A0P0HGX9		A0A0P0HGX9	0	5	Large T antigen	w
+ANTIGEN	virus	A0A0P0HKC7		A0A0P0HKC7	0	5	Large T antigen	w
+ANTIGEN	virus	A0A0P0HQE5		A0A0P0HQE5	0	5	Small t antigen	w
+ANTIGEN	virus	A0A0S2EGK8		A0A0S2EGK8	0	5	Large T antigen	w
+ANTIGEN	virus	A0A0S2EH22		A0A0S2EH22	1	5	Small t antigen	w
+ANTIGEN	virus	A0A0S2VEK7	LTag	A0A0S2VEK7	0	6	Large T antigen	w
+ANTIGEN	virus	A0A0S2VEM2	STag	A0A0S2VEM2	1	6	Small t antigen	w
+ANTIGEN	virus	A0A162GN70	LTAg	A0A162GN70	1	13	Large T antigen	w
+ANTIGEN	virus	A0A1B2FQZ4		A0A1B2FQZ4	0	5	Large T antigen	w
+ANTIGEN	virus	A0A1B3B6A4	LSDV128	A0A1B3B6A4	5	152	Leukocyte surface antigen CD47	w
+ANTIGEN	virus	A0A1D8BJ34		A0A1D8BJ34	0	6	Large T antigen	w
+ANTIGEN	virus	A0A1J0MVR5	RatPyV2_gp5	A0A1J0MVR5	0	5	Small t antigen	w
+ANTIGEN	virus	A0A1L4AB40		A0A1L4AB40	0	7	Large T antigen	w
+ANTIGEN	virus	A0A1L4AB43		A0A1L4AB43	0	7	Small t antigen	w
+ANTIGEN	virus	A0A1V0CLV5		A0A1V0CLV5	0	5	Small t antigen	w
+ANTIGEN	virus	A0A1V0CLV9		A0A1V0CLV9	0	5	Large T antigen	w
+ANTIGEN	virus	A0A1W5X9V9		A0A1W5X9V9	0	7	Large T antigen	w
+ANTIGEN	virus	A0A1W6EU81		A0A1W6EU81	0	6	Small t antigen	w
+ANTIGEN	virus	A0A1W6EU85		A0A1W6EU85	0	6	Large T antigen	w
+ANTIGEN	virus	A0A220IG74		A0A220IG74	0	5	Large T antigen	w
+ANTIGEN	virus	A0A223PYM2	LTAg	A0A223PYM2	0	5	Large T antigen	w
+ANTIGEN	virus	A0A223PYP4	LTAg	A0A223PYP4	0	5	Large T antigen	w
+ANTIGEN	virus	A0A2H5BVH9	C	A0A2H5BVH9	1	4	External core antigen	w
+ANTIGEN	virus	A0A2H5BVJ1	C	A0A2H5BVJ1	1	2	External core antigen	w
+ANTIGEN	virus	A0A2S0SZ03		A0A2S0SZ03	0	5	Small t antigen	w
+ANTIGEN	virus	A0A2S1CJH8	620T	A0A2S1CJH8	0	6	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJJ1	713T	A0A2S1CJJ1	0	8	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJK5	616T	A0A2S1CJK5	0	7	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJL7	650T	A0A2S1CJL7	1	6	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJL8	713T	A0A2S1CJL8	0	10	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJM1	667T	A0A2S1CJM1	0	10	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJM2	756T	A0A2S1CJM2	0	8	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJM7	776T	A0A2S1CJM7	1	8	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJM8	129T	A0A2S1CJM8	1	10	Small t antigen	w
+ANTIGEN	virus	A0A2S1CJN0	169T	A0A2S1CJN0	0	6	Small t antigen	w
+ANTIGEN	virus	A0A2S1CJN7	166T	A0A2S1CJN7	0	10	Small t antigen	w
+ANTIGEN	virus	A0A2S1CJR5	731T	A0A2S1CJR5	0	9	Large T antigen	w
+ANTIGEN	virus	A0A2S1CJS5	719T	A0A2S1CJS5	0	6	Large T antigen	w
+ANTIGEN	virus	A0A2U8SZQ3	C	A0A2U8SZQ3	1	4	External core antigen	w
+ANTIGEN	virus	A0A2Z2DSM2	RatPyV2_gp4	A0A2Z2DSM2	0	5	Large T antigen	w
+ANTIGEN	virus	A0A3G1T4C2	EBNA-2	A0A3G1T4C2	2	81	Nuclear antigen EBNA-2	w
+ANTIGEN	virus	A0A5P9NRD9		A0A5P9NRD9	0	7	Large T antigen	w
+ANTIGEN	virus	A0A6G7NNZ2		A0A6G7NNZ2	0	5	Large T antigen	w
+ANTIGEN	virus	A0A6G7NP94		A0A6G7NP94	0	5	Small t antigen	w
+ANTIGEN	virus	A0A6G9LUL0	LTAg	A0A6G9LUL0	0	6	Large T antigen	w
+ANTIGEN	virus	A0A6G9LUM1	STAg	A0A6G9LUM1	0	6	Small t antigen	w
+ANTIGEN	virus	A0A6G9LWZ1	STAg	A0A6G9LWZ1	0	6	Small t antigen	w
+ANTIGEN	virus	A0A6G9LX01	LTAg	A0A6G9LX01	1	6	Large T antigen	w
+ANTIGEN	virus	A0A6P1E072		A0A6P1E072	0	5	Large T antigen	w
+ANTIGEN	virus	A0A8K1VTC5		A0A8K1VTC5	0	6	Large T antigen	w
+ANTIGEN	virus	A0AAE9P7J4	LTAg	A0AAE9P7J4	0	5	Large T antigen	w
+ANTIGEN	virus	A5HBD7		A5HBD7	0	4	Small t antigen	w
+ANTIGEN	virus	A5HBG1		A5HBG1	0	4	Large T antigen	w
+ANTIGEN	virus	A8Y984	large T	A8Y984	0	6	Large T antigen	w
+ANTIGEN	virus	A8Y985		A8Y985	1	6	Small t antigen	w
+ANTIGEN	virus	B6E002		B6E002	0	6	Large T antigen	w
+ANTIGEN	virus	B6E003		B6E003	0	6	Small t antigen	w
+ANTIGEN	virus	C9X3W6	large T	C9X3W6	0	5	Large T antigen	w
+ANTIGEN	virus	C9X3X1	large T	C9X3X1	0	5	Large T antigen	w
+ANTIGEN	virus	D3IZT4		D3IZT4	0	6	Large T antigen	w
+ANTIGEN	virus	D3IZT5		D3IZT5	0	6	Small t antigen	w
+ANTIGEN	virus	E0XL34		E0XL34	0	5	Large T antigen	w
+ANTIGEN	virus	E2ESL8	T	E2ESL8	0	5	Large T antigen	w
+ANTIGEN	virus	E5AX31	large T	E5AX31	0	5	Large T antigen	w
+ANTIGEN	virus	E9M5I1	RHVP.R2	E9M5I1	3	82	MHC class I-like antigen recognition-like domain-containing 	w
+ANTIGEN	virus	E9M5I2	RHVP.R3	E9M5I2	3	81	MHC class I-like antigen recognition-like domain-containing 	w
+ANTIGEN	virus	E9NQ91		E9NQ91	0	5	Large T antigen	w
+ANTIGEN	virus	I3QJF1	EPyV_gp4	I3QJF1	0	5	Large T antigen	w
+ANTIGEN	virus	I3QJF2	EPyV_gp5	I3QJF2	0	5	Small t antigen	w
+ANTIGEN	virus	I6VPL7		I6VPL7	0	6	Large T antigen	w
+ANTIGEN	virus	J3TNZ7		J3TNZ7	0	5	Large T antigen	w
+ANTIGEN	virus	J3TNZ9		J3TNZ9	1	5	Small t antigen	w
+ANTIGEN	virus	J3U5T0		J3U5T0	0	5	Large T antigen	w
+ANTIGEN	virus	J3W7X8		J3W7X8	0	5	Large T antigen	w
+ANTIGEN	virus	J3W7Y3		J3W7Y3	0	5	Small t antigen	w
+ANTIGEN	virus	J3Z5R0		J3Z5R0	0	4	Large T antigen	w
+ANTIGEN	virus	J3ZGN4		J3ZGN4	0	4	Large T antigen	w
+ANTIGEN	virus	J7H9E6		J7H9E6	0	4	Small t antigen	w
+ANTIGEN	virus	J7HD79		J7HD79	0	5	Large T antigen	w
+ANTIGEN	virus	K7QJ79		K7QJ79	0	6	Large T antigen	w
+ANTIGEN	virus	K7QJ82		K7QJ82	0	4	Large T antigen	w
+ANTIGEN	virus	K7QJ83		K7QJ83	0	5	Small t antigen	w
+ANTIGEN	virus	K7QJ84		K7QJ84	0	4	Large T antigen	w
+ANTIGEN	virus	K7QJJ5		K7QJJ5	0	4	Large T antigen	w
+ANTIGEN	virus	K7QJK1		K7QJK1	0	4	Large T antigen	w
+ANTIGEN	virus	K7QK05		K7QK05	0	5	Large T antigen	w
+ANTIGEN	virus	K7QKH4		K7QKH4	0	4	Large T antigen	w
+ANTIGEN	virus	K7QKH9		K7QKH9	0	4	Large T antigen	w
+ANTIGEN	virus	K7QKI0		K7QKI0	0	4	Small t antigen	w
+ANTIGEN	virus	K7QKI1		K7QKI1	0	5	Large T antigen	w
+ANTIGEN	virus	K7QLH1		K7QLH1	0	4	Large T antigen	w
+ANTIGEN	virus	K7QLH6		K7QLH6	1	5	Small t antigen	w
+ANTIGEN	virus	L0GBA5		L0GBA5	0	5	Large T antigen	w
+ANTIGEN	virus	L0GBA8		L0GBA8	0	5	Large T antigen	w
+ANTIGEN	virus	L0GBB8		L0GBB8	0	5	Large T antigen	w
+ANTIGEN	virus	L0GBC3		L0GBC3	0	5	Large T antigen	w
+ANTIGEN	virus	L0GC42		L0GC42	0	5	Small t antigen	w
+ANTIGEN	virus	L0GC47		L0GC47	0	5	Small t antigen	w
+ANTIGEN	virus	L0MYX3		L0MYX3	1	6	Small t antigen	w
+ANTIGEN	virus	L0MYY5		L0MYY5	0	4	Large T antigen	w
+ANTIGEN	virus	L0MZS0		L0MZS0	1	6	Large T antigen	w
+ANTIGEN	virus	L0N113		L0N113	0	5	Large T antigen	w
+ANTIGEN	virus	L0N1W9		L0N1W9	0	6	Small t antigen	w
+ANTIGEN	virus	L0N2D5		L0N2D5	0	6	Large T antigen	w
+ANTIGEN	virus	L0N2E1		L0N2E1	0	5	Large T antigen	w
+ANTIGEN	virus	L7RFY1		L7RFY1	0	6	Large T antigen	w
+ANTIGEN	virus	M4PSV1	C	M4PSV1	1	4	External core antigen	w
+ANTIGEN	virus	O36422	75	O36422	2	66	Probable membrane antigen 75	w
+ANTIGEN	virus	P03070		P03070	0	6	Large T antigen	w
+ANTIGEN	virus	P03071		P03071	0	6	Large T antigen	w
+ANTIGEN	virus	P03072		P03072	0	5	Large T antigen	w
+ANTIGEN	virus	P03081		P03081	0	6	Small t antigen	w
+ANTIGEN	virus	P03082		P03082	0	6	Small t antigen	w
+ANTIGEN	virus	P03083		P03083	1	5	Small t antigen	w
+ANTIGEN	virus	P03153	C	P03153	2	5	External core antigen	w
+ANTIGEN	virus	P03203	EBNA4	P03203	4	91	Epstein-Barr nuclear antigen 4	w
+ANTIGEN	virus	P03204	EBNA6	P03204	1	88	Epstein-Barr nuclear antigen 6	w
+ANTIGEN	virus	P03211	EBNA1	P03211	3	91	Epstein-Barr nuclear antigen 1	w
+ANTIGEN	virus	P0C573	C	P0C573	2	7	External core antigen	w
+ANTIGEN	virus	P0C625	C	P0C625	2	5	External core antigen	w
+ANTIGEN	virus	P0C6G9	C	P0C6G9	2	5	External core antigen	w
+ANTIGEN	virus	P0C6J0	C	P0C6J0	3	5	External core antigen	w
+ANTIGEN	virus	P0C6J5	C	P0C6J5	2	5	External core antigen	w
+ANTIGEN	virus	P0C6M4		P0C6M4	2	2	Large delta antigen	w
+ANTIGEN	virus	P0DOI6		P0DOI6	0	4	Large T antigen	w
+ANTIGEN	virus	P0DOI9		P0DOI9	0	4	Small t antigen	w
+ANTIGEN	virus	P0DOJ4		P0DOJ4	0	6	Large T antigen	w
+ANTIGEN	virus	P0DOJ7		P0DOJ7	1	6	Middle T antigen	w
+ANTIGEN	virus	P11282	75	P11282	0	70	Probable membrane antigen 75	w
+ANTIGEN	virus	P12977	EBNA3	P12977	1	90	Epstein-Barr nuclear antigen 3	w
+ANTIGEN	virus	P12978	EBNA2	P12978	2	91	Epstein-Barr nuclear antigen 2	w
+ANTIGEN	virus	P13845	C	P13845	2	4	External core antigen	w
+ANTIGEN	virus	P24851		P24851	0	5	Large T antigen	w
+ANTIGEN	virus	P24852		P24852	0	5	Small t antigen	w
+ANTIGEN	virus	Q01000	3	Q01000	1	72	Probable membrane antigen 3	w
+ANTIGEN	virus	Q08FL4	DpV83gp139	Q08FL4	9	165	Leukocyte surface antigen CD47	w
+ANTIGEN	virus	Q0NP52	TATV_DAH68_159	Q0NP52	4	220	MHC-II antigen presentation inhibitor	w
+ANTIGEN	virus	Q1HTQ3	A38L	Q1HTQ3	6	141	Leukocyte surface antigen CD47	w
+ANTIGEN	virus	Q20HX6		Q20HX6	0	6	Large T antigen	w
+ANTIGEN	virus	Q20HY2		Q20HY2	0	6	Large T antigen	w
+ANTIGEN	virus	Q66609	3	Q66609	2	71	Probable membrane antigen 3	w
+ANTIGEN	virus	Q66675	75	Q66675	1	71	Probable membrane antigen 75	w
+ANTIGEN	virus	Q77ZF7	3	Q77ZF7	1	64	Probable tegument protein antigen 3	w
+ANTIGEN	virus	Q80FI2		Q80FI2	0	6	Large T antigen	w
+ANTIGEN	virus	Q89860	C	Q89860	2	4	External core antigen	w
+ANTIGEN	virus	Q8AZK7	EBNA-LP	Q8AZK7	0	91	Epstein-Barr nuclear antigen leader protein	w
+ANTIGEN	virus	Q8V2M2		Q8V2M2	5	208	MHC class II antigen presentation inhibitor	w
+ANTIGEN	virus	Q8V3H1	SPV125	Q8V3H1	10	146	Leukocyte surface antigen CD47	w
+ANTIGEN	virus	Q9E925		Q9E925	2	2	Small delta antigen	w
+ANTIGEN	virus	Q9IBL3		Q9IBL3	0	9	Large T antigen	w
+ANTIGEN	virus	Q9Q8H3	m128L	Q9Q8H3	1	156	Leukocyte surface antigen CD47	w
+ANTIGEN	virus	Q9WJE9	C	Q9WJE9	2	5	External core antigen	w
+ANTIGEN	virus	S5M0P9		S5M0P9	0	5	Large T antigen	w
+ANTIGEN	virus	U3M5H3	C	U3M5H3	1	4	External core antigen	w
+ANTIGEN	virus	U3M5R9	C	U3M5R9	1	4	External core antigen	w
+ANTIGEN	virus	V5K6X6		V5K6X6	0	6	Large T antigen	w
+ANTIGEN	worm	O02086	haf-2	O02086	7	21	ABC-type antigen peptide transporter	w
+ANTIGEN	worm	O02115	pcn-1	O02115	29	110	Proliferating cell nuclear antigen	w
+ANTIGEN	worm	O44897	haf-9	O44897	7	25	ABC-type antigen peptide transporter	w
+ANTIGEN	worm	O61757	CELE_F56C3.7	O61757	0	1	MHC class II antigen K	w
+ANTIGEN	worm	Q21019	CELE_F59A2.5	Q21019	1	6	L antigen family member 3	w
+ANTIGEN	worm	Q9TZD9	haf-4	Q9TZD9	7	22	ABC-type antigen peptide transporter	w
+ANTIGEN	worm	Q9XVH9	CELE_T23G11.4	Q9XVH9	5	21	Hepatocellular carcinoma-associated antigen 59	w
+ANTIGEN	yeast	P15873	POL30	P15873	22	102	Proliferating cell nuclear antigen	w
+ANTIGEN	zebrafish	A0A0A8P3N1	ly86	A0A0A8P3N1	4	15	Lymphocyte antigen 86	w
+ANTIGEN	zebrafish	A0A0G2L1H9	spag8	A0A0G2L1H9	9	213	Sperm-associated antigen 8	w
+ANTIGEN	zebrafish	A0A0R4IAR1	ly6m2	A0A0R4IAR1	1	2	Lymphocyte antigen 6 family member M2	w
+ANTIGEN	zebrafish	A0A0R4ISW2	mhc2d8.37b2	A0A0R4ISW2	16	54	Rano class II histocompatibility antigen, A beta chain	w
+ANTIGEN	zebrafish	A0A0R4IW80	ly6m6	A0A0R4IW80	0	2	Lymphocyte antigen 6 family member M6	w
+ANTIGEN	zebrafish	A0A1L1QZR0	mhc2d4b	A0A1L1QZR0	17	54	H-2 class II histocompatibility antigen, E-S beta chain isof	w
+ANTIGEN	zebrafish	A0A2R8QB65	lage3	A0A2R8QB65	1	5	L antigen family member 3	w
+ANTIGEN	zebrafish	A0A2R8QFS1	mhc2d8.35a1	A0A2R8QFS1	13	40	H-2 class II histocompatibility antigen, A-Q alpha chain	w
+ANTIGEN	zebrafish	A0A8M1NEQ7	cd83	A0A8M1NEQ7	1	3	CD83 antigen precursor	w
+ANTIGEN	zebrafish	A0A8M1NGR6	etaa1a	A0A8M1NGR6	10	83	Ewing's tumor-associated antigen 1	w
+ANTIGEN	zebrafish	A0A8M1P6U9	cd180	A0A8M1P6U9	1	30	CD180 antigen precursor	w
+ANTIGEN	zebrafish	A0A8M1Q7V8	etaa1b	A0A8M1Q7V8	7	83	Ewing's tumor-associated antigen 1	w
+ANTIGEN	zebrafish	A0AB13AA03	mea1	A0AB13AA03	1	4	Male-enhanced antigen 1	w
+ANTIGEN	zebrafish	A0AB32U371	cd302	A0AB32U371	0	6	CD302 antigen	w
+ANTIGEN	zebrafish	A4FUM4	mhc1zca	A4FUM4	3	20	MHC class I antigen ZCA transcript variant 1	w
+ANTIGEN	zebrafish	A8E7F2	mhc1zea	A8E7F2	5	20	MHC class I antigen ZEA transcript variant 1	w
+ANTIGEN	zebrafish	A8E7F4	mhc1zba	A8E7F4	7	23	MHC class I antigen ZBA transcript variant 1	w
+ANTIGEN	zebrafish	B0S576	tp73	B0S576	11	84	Cellular tumor antigen p53	w
+ANTIGEN	zebrafish	B8JK76	Sdccag8	B8JK76	1	3	Serologically defined colon cancer antigen 8 homolog	w
+ANTIGEN	zebrafish	E7F0J8	negaly6	E7F0J8	0	2	Neuromast-expressed gpi-anchored lymphocyte antigen 6	w
+ANTIGEN	zebrafish	E7F2I0	tap2t	E7F2I0	4	13	Antigen peptide transporter 2	w
+ANTIGEN	zebrafish	E7F481	si:cabz01074946.1	E7F481	0	34	CD48 antigen isoform X1	w
+ANTIGEN	zebrafish	E7F6F8	si:ch73-95l15.5	E7F6F8	1	25	Early endosome antigen 1	w
+ANTIGEN	zebrafish	E7F6T0	cd44a	E7F6T0	16	166	CD44 antigen	w
+ANTIGEN	zebrafish	E7F8A9	tap1	E7F8A9	3	28	Antigen peptide transporter 1	w
+ANTIGEN	zebrafish	E7FAH6	mhc1uma	E7FAH6	25	85	MHC class I antigen transcript variant 1	w
+ANTIGEN	zebrafish	F1QM89	cd276	F1QM89	5	28	CD276 antigen isoform X1	w
+ANTIGEN	zebrafish	F1QNN0	mhc2d8.37a1	F1QNN0	16	70	Mamu class II histocompatibility antigen, DR alpha chain	w
+ANTIGEN	zebrafish	F1QS51	eea1	F1QS51	3	42	Early endosome antigen 1	w
+ANTIGEN	zebrafish	F1QT05	sp100.4	F1QT05	0	6	SP110 nuclear antigen, tandem duplicate 4 isoform 1	w
+ANTIGEN	zebrafish	F1QVI4	mhc2bl	F1QVI4	15	55	H-2 class II histocompatibility antigen, E-S beta chain	w
+ANTIGEN	zebrafish	F1QW96	cd209	F1QW96	1	6	CD209 antigen	w
+ANTIGEN	zebrafish	F1RBN2	spag1a	F1RBN2	13	67	Sperm-associated antigen 1A	w
+ANTIGEN	zebrafish	M9MM93	mhc2d8.46a	M9MM93	15	70	H-2 class II histocompatibility antigen, A-U alpha chain	w
+ANTIGEN	zebrafish	P79734	tp53	P79734	24	532	Cellular tumor antigen p53	w
+ANTIGEN	zebrafish	Q24JW8	cd8a	Q24JW8	3	61	CD8 antigen, alpha polypeptide	w
+ANTIGEN	zebrafish	Q4VV70	rhd	Q4VV70	4	18	Rh blood group, D antigen	w
+ANTIGEN	zebrafish	Q6GMH8	spag6	Q6GMH8	1	68	Sperm-associated antigen 6	w
+ANTIGEN	zebrafish	Q7SYJ9	spag7	Q7SYJ9	0	6	Sperm-associated antigen 7 homolog	w
+ANTIGEN	zebrafish	Q90460	alcama	Q90460	0	2	CD166 antigen homolog A	w
+ANTIGEN	zebrafish	Q9PTP1	pcna	Q9PTP1	41	211	Proliferating cell nuclear antigen	w
+ANTIGEN	zebrafish	U6BNE9	mhc1zka	U6BNE9	4	8	MHC class I antigen ZKA transcript variant 1	w
+ANTIGEN	zebrafish	X1WDW3	si:dkey-202g17.3	X1WDW3	11	44	4F2 cell-surface antigen heavy chain	w
+ANTIGEN-1	human	P31483	TIA1	P31483	12	280	Cytotoxic granule associated RNA binding protein TIA1 (Nucle	w
+ANTIGEN-1	virus	A0A3G1T4G2	EBNA-1	A0A3G1T4G2	3	81	Epstein Barr virus nuclear antigen-1 DNA-binding domain-cont	w
+ANTIGEN-ASSOCIATED	human	P04233	CD74	P04233	90	1271	HLA class II histocompatibility antigen gamma chain (HLA-DR 	w
+ANTIGEN-ASSOCIATED	human	P30153	PPP2R1A	P30153	31	752	Serine/threonine-protein phosphatase 2A 65 kDa regulatory su	w
+ANTIGEN-BINDING	human	P27824	CANX	P27824	134	1250	Calnexin (IP90) (Major histocompatibility complex class I an	w
+ANTIGEN-BINDING	human	Q9Y5P4	CERT1	Q9Y5P4	24	124	Ceramide transfer protein (hCERT) (Collagen type IV alpha-3-	w
+ANTIGEN-INTERACTING	human	Q15834	CCDC85B	Q15834	46	214	Coiled-coil domain-containing protein 85B (Hepatitis delta a	w
+ANTIGEN-INTERACTING	human	Q71F23	CENPU	Q71F23	58	295	Centromere protein U (CENP-U) (Centromere protein of 50 kDa)	w
+ANTIGEN-LIKE	human	A0A0K2S4Q6	CD300H	A0A0K2S4Q6	0	35	Protein CD300H (CD300 antigen-like family member H)	w
+ANTIGEN-LIKE	human	A0A1B0GUJ8	PNMA8C	A0A1B0GUJ8	6	43	Paraneoplastic antigen-like protein 8C	w
+ANTIGEN-LIKE	human	A6NI73	LILRA5	A6NI73	27	178	Leukocyte immunoglobulin-like receptor subfamily A member 5 	w
+ANTIGEN-LIKE	human	A8K4G0	CD300LB	A8K4G0	48	319	CMRF35-like molecule 7 (CLM-7) (CD300 antigen-like family me	w
+ANTIGEN-LIKE	human	O00241	SIRPB1	O00241	30	290	Signal-regulatory protein beta-1 (SIRP-beta-1) (CD172 antige	w
+ANTIGEN-LIKE	human	O15389	SIGLEC5	O15389	19	208	Sialic acid-binding Ig-like lectin 5 (Siglec-5) (CD33 antige	w
+ANTIGEN-LIKE	human	O43699	SIGLEC6	O43699	12	111	Sialic acid-binding Ig-like lectin 6 (Siglec-6) (CD33 antige	w
+ANTIGEN-LIKE	human	O43866	CD5L	O43866	32	391	CD5 antigen-like (Apoptosis inhibitor expressed by macrophag	w
+ANTIGEN-LIKE	human	O75019	LILRA1	O75019	5	125	Leukocyte immunoglobulin-like receptor subfamily A member 1 	w
+ANTIGEN-LIKE	human	O75022	LILRB3	O75022	7	136	Leukocyte immunoglobulin-like receptor subfamily B member 3 	w
+ANTIGEN-LIKE	human	O75023	LILRB5	O75023	12	88	Leukocyte immunoglobulin-like receptor subfamily B member 5 	w
+ANTIGEN-LIKE	human	O75354	ENTPD6	O75354	8	67	Ectonucleoside triphosphate diphosphohydrolase 6 (NTPDase 6)	w
+ANTIGEN-LIKE	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
+ANTIGEN-LIKE	human	O75356	ENTPD5	O75356	7	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	w
+ANTIGEN-LIKE	human	O95256	IL18RAP	O95256	59	322	Interleukin-18 receptor accessory protein (IL-18 receptor ac	w
+ANTIGEN-LIKE	human	P08648	ITGA5	P08648	42	357	Integrin alpha-5 (CD49 antigen-like family member E) (Fibron	w
+ANTIGEN-LIKE	human	P0CW24	PNMA6A	P0CW24	6	42	Paraneoplastic antigen-like protein 6A	w
+ANTIGEN-LIKE	human	P11215	ITGAM	P11215	28	190	Integrin alpha-M (CD11 antigen-like family member B) (CR-3 a	w
+ANTIGEN-LIKE	human	P11279	LAMP1	P11279	90	926	Lysosome-associated membrane glycoprotein 1 (LAMP-1) (Lysoso	w
+ANTIGEN-LIKE	human	P11464	PSG1	P11464	8	85	Pregnancy-specific beta-1-glycoprotein 1 (PS-beta-G-1) (PSBG	w
+ANTIGEN-LIKE	human	P12018	VPREB1	P12018	29	141	Immunoglobulin iota chain (CD179 antigen-like family member 	w
+ANTIGEN-LIKE	human	P13473	LAMP2	P13473	26	620	Lysosome-associated membrane glycoprotein 2 (LAMP-2) (Lysoso	w
+ANTIGEN-LIKE	human	P13612	ITGA4	P13612	126	624	Integrin alpha-4 (CD49 antigen-like family member D) (Integr	w
+ANTIGEN-LIKE	human	P14151	SELL	P14151	27	507	L-selectin (CD62 antigen-like family member L) (Leukocyte ad	w
+ANTIGEN-LIKE	human	P14778	IL1R1	P14778	60	428	Interleukin-1 receptor type 1 (IL-1R-1) (IL-1RT-1) (IL-1RT1)	w
+ANTIGEN-LIKE	human	P15814	IGLL1	P15814	147	371	Immunoglobulin lambda-like polypeptide 1 (CD179 antigen-like	w
+ANTIGEN-LIKE	human	P16109	SELP	P16109	14	235	P-selectin (CD62 antigen-like family member P) (Granule memb	w
+ANTIGEN-LIKE	human	P16581	SELE	P16581	13	190	E-selectin (CD62 antigen-like family member E) (Endothelial 	w
+ANTIGEN-LIKE	human	P17301	ITGA2	P17301	52	378	Integrin alpha-2 (CD49 antigen-like family member B) (Collag	w
+ANTIGEN-LIKE	human	P20701	ITGAL	P20701	56	385	Integrin alpha-L (CD11 antigen-like family member A) (Leukoc	w
+ANTIGEN-LIKE	human	P20702	ITGAX	P20702	34	337	Integrin alpha-X (CD11 antigen-like family member C) (Leu M5	w
+ANTIGEN-LIKE	human	P23229	ITGA6	P23229	70	392	Integrin alpha-6 (CD49 antigen-like family member F) (VLA-6)	w
+ANTIGEN-LIKE	human	P26006	ITGA3	P26006	31	211	Integrin alpha-3 (CD49 antigen-like family member C) (FRP-2)	w
+ANTIGEN-LIKE	human	P26715	KLRC1	P26715	118	386	NKG2-A/NKG2-B type II integral membrane protein (CD159 antig	w
+ANTIGEN-LIKE	human	P26717	KLRC2	P26717	56	183	NKG2-C type II integral membrane protein (CD159 antigen-like	w
+ANTIGEN-LIKE	human	P27930	IL1R2	P27930	61	387	Interleukin-1 receptor type 2 (IL-1R-2) (IL-1RT-2) (IL-1RT2)	w
+ANTIGEN-LIKE	human	P43626	KIR2DL1	P43626	12	87	Killer cell immunoglobulin-like receptor 2DL1 (CD158 antigen	w
+ANTIGEN-LIKE	human	P43627	KIR2DL2	P43627	29	172	Killer cell immunoglobulin-like receptor 2DL2 (CD158 antigen	w
+ANTIGEN-LIKE	human	P43628	KIR2DL3	P43628	13	131	Killer cell immunoglobulin-like receptor 2DL3 (CD158 antigen	w
+ANTIGEN-LIKE	human	P43629	KIR3DL1	P43629	18	170	Killer cell immunoglobulin-like receptor 3DL1 (CD158 antigen	w
+ANTIGEN-LIKE	human	P43630	KIR3DL2	P43630	27	139	Killer cell immunoglobulin-like receptor 3DL2 (CD158 antigen	w
+ANTIGEN-LIKE	human	P43631	KIR2DS2	P43631	13	144	Killer cell immunoglobulin-like receptor 2DS2 (CD158 antigen	w
+ANTIGEN-LIKE	human	P43632	KIR2DS4	P43632	9	41	Killer cell immunoglobulin-like receptor 2DS4 (CD158 antigen	w
+ANTIGEN-LIKE	human	P56199	ITGA1	P56199	56	317	Integrin alpha-1 (CD49 antigen-like family member A) (Lamini	w
+ANTIGEN-LIKE	human	P59901	LILRA4	P59901	25	129	Leukocyte immunoglobulin-like receptor subfamily A member 4 	w
+ANTIGEN-LIKE	human	Q08345	DDR1	Q08345	145	1411	Epithelial discoidin domain-containing receptor 1 (Epithelia	w
+ANTIGEN-LIKE	human	Q08708	CD300C	Q08708	14	151	CMRF35-like molecule 6 (CLM-6) (CD300 antigen-like family me	w
+ANTIGEN-LIKE	human	Q13349	ITGAD	Q13349	22	123	Integrin alpha-D (ADB2) (CD11 antigen-like family member D) 	w
+ANTIGEN-LIKE	human	Q13478	IL18R1	Q13478	60	361	Interleukin-18 receptor 1 (IL-18R-1) (IL-18R1) (EC 3.2.2.6) 	w
+ANTIGEN-LIKE	human	Q14108	SCARB2	Q14108	45	482	Lysosome membrane protein 2 (85 kDa lysosomal membrane sialo	w
+ANTIGEN-LIKE	human	Q14953	KIR2DS5	Q14953	4	41	Killer cell immunoglobulin-like receptor 2DS5 (CD158 antigen	w
+ANTIGEN-LIKE	human	Q14954	KIR2DS1	Q14954	7	34	Killer cell immunoglobulin-like receptor 2DS1 (CD158 antigen	w
+ANTIGEN-LIKE	human	Q16832	DDR2	Q16832	111	1459	Discoidin domain-containing receptor 2 (Discoidin domain rec	w
+ANTIGEN-LIKE	human	Q2WEN9	CEACAM16	Q2WEN9	11	71	Cell adhesion molecule CEACAM16 (Carcinoembryonic antigen-li	w
+ANTIGEN-LIKE	human	Q496F6	CD300E	Q496F6	11	149	CMRF35-like molecule 2 (CLM-2) (CD300 antigen-like family me	w
+ANTIGEN-LIKE	human	Q56VL3	OCIAD2	Q56VL3	3	76	OCIA domain-containing protein 2 (Ovarian carcinoma immunore	w
+ANTIGEN-LIKE	human	Q6UXG3	CD300LG	Q6UXG3	15	74	CMRF35-like molecule 9 (CLM-9) (CD300 antigen-like family me	w
+ANTIGEN-LIKE	human	Q6UXZ3	CD300LD	Q6UXZ3	51	168	CMRF35-like molecule 5 (CLM-5) (CD300 antigen-like family me	w
+ANTIGEN-LIKE	human	Q6ZMC9	SIGLEC15	Q6ZMC9	24	98	Sialic acid-binding Ig-like lectin 15 (Siglec-15) (CD33 anti	w
+ANTIGEN-LIKE	human	Q7Z692	CEACAM19	Q7Z692	5	41	Cell adhesion molecule CEACAM19 (Carcinoembryonic antigen-li	w
+ANTIGEN-LIKE	human	Q86V59	PNMA8A	Q86V59	12	128	Paraneoplastic antigen-like protein 8A (PNMA-like protein 1)	w
+ANTIGEN-LIKE	human	Q8N149	LILRA2	Q8N149	11	133	Leukocyte immunoglobulin-like receptor subfamily A member 2 	w
+ANTIGEN-LIKE	human	Q8N423	LILRB2	Q8N423	26	198	Leukocyte immunoglobulin-like receptor subfamily B member 2 	w
+ANTIGEN-LIKE	human	Q8N6C8	LILRA3	Q8N6C8	14	97	Leukocyte immunoglobulin-like receptor subfamily A member 3 	w
+ANTIGEN-LIKE	human	Q8N743	KIR3DL3	Q8N743	15	99	Killer cell immunoglobulin-like receptor 3DL3 (CD158 antigen	w
+ANTIGEN-LIKE	human	Q8NHJ6	LILRB4	Q8NHJ6	30	179	Leukocyte immunoglobulin-like receptor subfamily B member 4 	w
+ANTIGEN-LIKE	human	Q8NHK3	KIR2DL5B	Q8NHK3	9	31	Killer cell immunoglobulin-like receptor 2DL5B (CD158 antige	w
+ANTIGEN-LIKE	human	Q8NHL6	LILRB1	Q8NHL6	46	257	Leukocyte immunoglobulin-like receptor subfamily B member 1 	w
+ANTIGEN-LIKE	human	Q8TCZ2	CD99L2	Q8TCZ2	9	85	CD99 antigen-like protein 2 (MIC2-like protein 1) (CD antige	w
+ANTIGEN-LIKE	human	Q8TDQ1	CD300LF	Q8TDQ1	32	218	CMRF35-like molecule 1 (CLM-1) (CD300 antigen-like family me	w
+ANTIGEN-LIKE	human	Q8WTV0	SCARB1	Q8WTV0	13	278	Scavenger receptor class B member 1 (SRB1) (CD36 and LIMPII 	w
+ANTIGEN-LIKE	human	Q95460	MR1	Q95460	60	388	Major histocompatibility complex class I-related protein 1 (	w
+ANTIGEN-LIKE	human	Q96HJ5	MS4A3	Q96HJ5	12	136	Membrane-spanning 4-domains subfamily A member 3 (CD20 antig	w
+ANTIGEN-LIKE	human	Q96JQ5	MS4A4A	Q96JQ5	16	150	Membrane-spanning 4-domains subfamily A member 4A (CD20 anti	w
+ANTIGEN-LIKE	human	Q96PG2	MS4A10	Q96PG2	0	34	Membrane-spanning 4-domains subfamily A member 10 (CD20 anti	w
+ANTIGEN-LIKE	human	Q96PV4	PNMA5	Q96PV4	24	93	Paraneoplastic antigen-like protein 5 (Tumor antigen BJ-HCC-	w
+ANTIGEN-LIKE	human	Q99706	KIR2DL4	Q99706	30	161	Killer cell immunoglobulin-like receptor 2DL4 (CD158 antigen	w
+ANTIGEN-LIKE	human	Q9GZM7	TINAGL1	Q9GZM7	7	94	Tubulointerstitial nephritis antigen-like (Glucocorticoid-in	w
+ANTIGEN-LIKE	human	Q9GZW8	MS4A7	Q9GZW8	18	115	Membrane-spanning 4-domains subfamily A member 7 (CD20 antig	w
+ANTIGEN-LIKE	human	Q9H2W1	MS4A6A	Q9H2W1	2	11	Membrane-spanning 4-domains subfamily A member 6A (CD20 anti	w
+ANTIGEN-LIKE	human	Q9H2X3	CLEC4M	Q9H2X3	1	75	C-type lectin domain family 4 member M (CD209 antigen-like p	w
+ANTIGEN-LIKE	human	Q9H3V2	MS4A5	Q9H3V2	2	28	Membrane-spanning 4-domains subfamily A member 5 (CD20 antig	w
+ANTIGEN-LIKE	human	Q9HBA9	FOLH1B	Q9HBA9	5	24	Putative N-acetylated-alpha-linked acidic dipeptidase (NAALA	w
+ANTIGEN-LIKE	human	Q9NR16	CD163L1	Q9NR16	2	18	Scavenger receptor cysteine-rich type 1 protein M160 (CD163 	w
+ANTIGEN-LIKE	human	Q9P1W8	SIRPG	Q9P1W8	25	221	Signal-regulatory protein gamma (SIRP-gamma) (CD172 antigen-	w
+ANTIGEN-LIKE	human	Q9UGN4	CD300A	Q9UGN4	23	146	CMRF35-like molecule 8 (CLM-8) (CD300 antigen-like family me	w
+ANTIGEN-LIKE	human	Q9ULN7	PNMA8B	Q9ULN7	12	200	Paraneoplastic antigen-like protein 8B (PNMA-like protein 2)	w
+ANTIGEN-LIKE	human	Q9Y5L3	ENTPD2	Q9Y5L3	13	167	Ectonucleoside triphosphate diphosphohydrolase 2 (E-NTPDase 	w
+ANTIGEN-LIKE	zebrafish	A0A8M2BDP6	ddr2a	A0A8M2BDP6	6	33	Discoidin domain-containing receptor 2 (EC 2.7.10.1) (CD167 	w
+ANTIGEN-LIKE	zebrafish	A0A8M2BJT7	si:ch73-111e15.1	A0A8M2BJT7	0	5	CD209 antigen-like protein C	w
+ANTIGEN-LIKE	zebrafish	A0A8M3BCY5	LOC101884526	A0A8M3BCY5	1	5	CD209 antigen-like protein D isoform X1	w
+ANTIGEN-LIKE	zebrafish	A0AB32T0A0	LOC137487487	A0AB32T0A0	1	34	CD48 antigen-like	w
+ANTIGEN-LIKE	zebrafish	Q6DBW9	cd99l2	Q6DBW9	0	2	CD99 antigen-like protein 2	w
+ANTIGEN-LIKE-CONTAINING	human	P0CW19	LIMS3	P0CW19	2	27	LIM and senescent cell antigen-like-containing domain protei	w
+ANTIGEN-LIKE-CONTAINING	human	P0CW20	LIMS4	P0CW20	6	48	LIM and senescent cell antigen-like-containing domain protei	w
+ANTIGEN-LIKE-CONTAINING	human	P48059	LIMS1	P48059	15	152	LIM and senescent cell antigen-like-containing domain protei	w
+ANTIGEN-LIKE-CONTAINING	human	Q7Z4I7	LIMS2	Q7Z4I7	5	55	LIM and senescent cell antigen-like-containing domain protei	w
+ANTIGEN-PRESENTING	human	P15813	CD1D	P15813	79	394	Antigen-presenting glycoprotein CD1d (R3G1) (CD antigen CD1d	w
+ANTIGEN-RELATED	human	A8MTB9	CEACAM18	A8MTB9	5	64	Cell adhesion molecule CEACAM18 (Carcinoembryonic antigen-re	w
+ANTIGEN-RELATED	human	O75871	CEACAM4	O75871	73	242	Cell adhesion molecule CEACAM4 (Carcinoembryonic antigen CGM	w
+ANTIGEN-RELATED	human	P06731	CEACAM5	P06731	22	134	Cell adhesion molecule CEACAM5 (Carcinoembryonic antigen) (C	w
+ANTIGEN-RELATED	human	P13688	CEACAM1	P13688	28	160	Cell adhesion molecule CEACAM1 (Biliary glycoprotein 1) (BGP	w
+ANTIGEN-RELATED	human	P31997	CEACAM8	P31997	72	357	Cell adhesion molecule CEACAM8 (CD67 antigen) (Carcinoembryo	w
+ANTIGEN-RELATED	human	P40198	CEACAM3	P40198	86	302	Cell adhesion molecule CEACAM3 (Carcinoembryonic antigen CGM	w
+ANTIGEN-RELATED	human	P40199	CEACAM6	P40199	99	320	Cell adhesion molecule CEACAM6 (Carcinoembryonic antigen-rel	w
+ANTIGEN-RELATED	human	Q14002	CEACAM7	Q14002	75	238	Cell adhesion molecule CEACAM7 (Carcinoembryonic antigen CGM	w
+ANTIGEN-RELATED	human	Q2WEN9	CEACAM16	Q2WEN9	11	71	Cell adhesion molecule CEACAM16 (Carcinoembryonic antigen-li	w
+ANTIGEN-RELATED	human	Q3KPI0	CEACAM21	Q3KPI0	70	355	Cell adhesion molecule CEACAM21 (Carcinoembryonic antigen-re	w
+ANTIGEN-RELATED	human	Q6UY09	CEACAM20	Q6UY09	5	32	Cell adhesion molecule CEACAM20 (Carcinoembryonic antigen-re	w
+ANTIGEN-RELATED	human	Q7Z692	CEACAM19	Q7Z692	5	41	Cell adhesion molecule CEACAM19 (Carcinoembryonic antigen-li	w
+ANTIGEN-RELATED	zebrafish	E9QJI4	si:ch211-264f5.6	E9QJI4	1	8	Carcinoembryonic antigen-related cell adhesion molecule 5	w
+ANTIGENIC	human	O60870	KIN	O60870	100	718	DNA/RNA-binding protein KIN17 (Binding to curved DNA) (KIN, 	w
+ANTIGENIC	human	Q08722	CD47	Q08722	113	605	Leukocyte surface antigen CD47 (Antigenic surface determinan	w
+ANTIGENS	human	P18577	RHCE	P18577	11	199	Blood group Rh(CE) polypeptide (Rh polypeptide 1) (RhPI) (Rh	w
+ANTIGENS-ASSOCIATED	human	P04233	CD74	P04233	90	1271	HLA class II histocompatibility antigen gamma chain (HLA-DR 	w
+ANTIHEMOPHILIC	human	P00451	F8	P00451	2	17	Coagulation factor VIII (Antihemophilic factor) (AHF) (Proco	w
+ANTILEUKOPROTEINASE	human	P03973	SLPI	P03973	53	315	Antileukoproteinase (ALP) (BLPI) (HUSI-1) (Mucus proteinase 	w
+ANTILEUKOPROTEINASE	human	P19957	PI3	P19957	23	158	Elafin (Elastase-specific inhibitor) (ESI) (Peptidase inhibi	w
+ANTIMICROBIAL	fly	FBgn0010388	Dro	P36193	30	258	Drosocin antimicrobial peptides [Cleaved into: Drosocin; Bul	w
+ANTIMICROBIAL	fly	FBgn0034210	Camp	Q8MRA9	2	2	Cathelicidin-like antimicrobial protein, isoform A (RE49550p	w
+ANTIMICROBIAL	human	P20160	AZU1	P20160	33	201	Azurocidin (Cationic antimicrobial protein CAP37) (Heparin-b	w
+ANTIMICROBIAL	human	P49913	CAMP	P49913	66	590	Cathelicidin antimicrobial peptide (18 kDa cationic antimicr	w
+ANTIMICROBIAL	human	P81172	HAMP	P81172	40	210	Hepcidin (Liver-expressed antimicrobial peptide 1) (LEAP-1) 	w
+ANTIMICROBIAL	human	Q6UWK7	GPR15LG	Q6UWK7	7	60	Protein GPR15LG (Antimicrobial peptide with 57 amino acid re	w
+ANTIMICROBIAL	human	Q969E1	LEAP2	Q969E1	16	91	Liver-expressed antimicrobial peptide 2 (LEAP-2)	w
+ANTIMICROBIAL	human	Q9H1E1	RNASE7	Q9H1E1	36	213	Ribonuclease 7 (RNase 7) (EC 3.1.27.-) (Skin-derived antimic	w
+ANTIMICROBIAL-LIKE	human	Q6PDA7	SPAG11A	Q6PDA7	5	21	Sperm-associated antigen 11A (Antimicrobial-like protein Bin	w
+ANTIOXIDA	human	P30041	PRDX6	P30041	11	327	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys 	w
+ANTIOXIDANT	human	P30044	PRDX5	P30044	21	260	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
+ANTIOXIDANT	human	P30048	PRDX3	P30048	8	315	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
+ANTIOXIDANT	human	P32119	PRDX2	P32119	9	445	Peroxiredoxin-2 (EC 1.11.1.24) (Natural killer cell-enhancin	w
+ANTIOXIDANT	human	Q13162	PRDX4	Q13162	18	257	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
+ANTIOXIDANT	human	Q7RTV5	PRXL2C	Q7RTV5	11	95	Peroxiredoxin-like 2C (AhpC/TSA antioxidant enzyme domain-co	w
+ANTIPHAGE-LIKE	human	Q9BPY3	SIRAL1	Q9BPY3	13	186	SIR2 antiphage-like protein 1 (Protein FAM118B)	w
+ANTIPHAGE-LIKE	human	Q9NWS6	SIRAL2	Q9NWS6	24	150	SIR2 antiphage-like protein 2 (Protein FAM118A)	w
+ANTIPORTER	fly	FBgn0031865	Nha1	Q9VM74	1	9	Na[+]/H[+] hydrogen antiporter 1, isoform A	w
+ANTIPORTER	fly	FBgn0033762	ZnT49B	A1Z935	17	355	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Solut	w
+ANTIPORTER	fly	FBgn0263390	Nha2	A0A0B4K6G5	1	18	Na[+]/H[+] hydrogen antiporter 2, isoform B	w
+ANTIPORTER	human	O14863	SLC30A4	O14863	11	84	Probable proton-coupled zinc antiporter SLC30A4 (Solute carr	w
+ANTIPORTER	human	O75746	SLC25A12	O75746	10	271	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	w
+ANTIPORTER	human	P19634	SLC9A1	P19634	28	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	w
+ANTIPORTER	human	P41440	SLC19A1	P41440	5	134	Reduced folate transporter (FOLT) (Cyclic dinucleotide:anion	w
+ANTIPORTER	human	Q6KCM7	SLC25A25	Q6KCM7	0	58	Mitochondrial adenyl nucleotide antiporter SLC25A25 (Mitocho	w
+ANTIPORTER	human	Q6NUK1	SLC25A24	Q6NUK1	1	231	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	w
+ANTIPORTER	human	Q6PML9	SLC30A9	Q6PML9	18	494	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Human	w
+ANTIPORTER	human	Q6XR72	SLC30A10	Q6XR72	7	38	Calcium/manganese antiporter SLC30A10 (Solute carrier family	w
+ANTIPORTER	human	Q86VL8	SLC47A2	Q86VL8	0	19	Multidrug and toxin extrusion protein 2 (MATE-2) (hMATE-2) (	w
+ANTIPORTER	human	Q8IWU4	SLC30A8	Q8IWU4	9	104	Proton-coupled zinc antiporter SLC30A8 (Solute carrier famil	w
+ANTIPORTER	human	Q8TAD4	SLC30A5	Q8TAD4	8	176	Proton-coupled zinc antiporter SLC30A5 (Solute carrier famil	w
+ANTIPORTER	human	Q99726	SLC30A3	Q99726	8	60	Probable proton-coupled zinc antiporter SLC30A3 (Solute carr	w
+ANTIPORTER	human	Q9BRI3	SLC30A2	Q9BRI3	6	115	Proton-coupled zinc antiporter SLC30A2 (Solute carrier famil	w
+ANTIPORTER	human	Q9BV35	SLC25A23	Q9BV35	0	127	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	w
+ANTIPORTER	human	Q9HC07	TMEM165	Q9HC07	4	120	Putative divalent cation/proton antiporter TMEM165 (Transmem	w
+ANTIPORTER	human	Q9UJS0	SLC25A13	Q9UJS0	8	277	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	w
+ANTIPORTER	human	Q9Y6M5	SLC30A1	Q9Y6M5	19	176	Proton-coupled zinc antiporter SLC30A1 (Solute carrier famil	w
+ANTIPORTER	worm	Q8WQB6	slc-30a5	Q8WQB6	1	2	Proton-coupled zinc antiporter SLC30A5	w
+ANTIPORTER	yeast	P38301	GDT1	P38301	0	12	Divalent cation/proton antiporter GDT1	w
+ANTIPORTER	yeast	P38776	YHK8	P38776	0	2	Probable drug/proton antiporter YHK8	w
+ANTIPORTER	yeast	P40309	KHA1	P40309	0	7	K(+)/H(+) antiporter 1	w
+ANTIPORTER	yeast	P42839	VNX1	P42839	0	13	Low affinity vacuolar monovalent cation/H(+) antiporter	w
+ANTIPORTER	yeast	Q06328	YPQ2	Q06328	0	6	Vacuolar arginine/histidine antiporter YPQ2	w
+ANTIPORTER	yeast	Q99271	NHA1	Q99271	0	12	Na(+)/H(+) antiporter	w
+ANTIPORTER	zebrafish	F1QFA1	slc30a2	F1QFA1	0	1	Probable proton-coupled zinc antiporter SLC30A3	w
+ANTIPORTER	zebrafish	Q5PQZ3	slc30a9	Q5PQZ3	0	4	Proton-coupled zinc antiporter SLC30A9, mitochondrial	w
+ANTIPORTER	zebrafish	Q66L49	slc25a24	Q66L49	0	98	Mitochondrial adenyl nucleotide antiporter SLC25A24	w
+ANTIPORTER	zebrafish	Q6DG36	slc30a5	Q6DG36	1	1	Proton-coupled zinc antiporter SLC30A5	w
+ANTIPORTER	zebrafish	R4GDS9	slc25a23a	R4GDS9	1	98	Mitochondrial adenyl nucleotide antiporter SLC25A23 isoform 	w
+ANTIPROLIFERATIVE	human	P60033	CD81	P60033	38	576	CD81 antigen (26 kDa cell surface protein TAPA-1) (Target of	w
+ANTIPROTEINASE	human	P35237	SERPINB6	P35237	9	106	Serpin B6 (Cytoplasmic antiproteinase) (CAP) (Peptidase inhi	w
+ANTIPROTEINASE	human	P50452	SERPINB8	P50452	5	136	Serpin B8 (Cytoplasmic antiproteinase 2) (CAP-2) (CAP2) (Pep	w
+ANTIPROTEINASE	human	P50453	SERPINB9	P50453	12	193	Serpin B9 (Cytoplasmic antiproteinase 3) (CAP-3) (CAP3) (Pep	w
+ANTIPROTEINASE	zebrafish	A0A8N7V0N1	serpina1l	A0A8N7V0N1	0	38	Serine (Or cysteine) proteinase inhibitor, clade A (Alpha-1 	w
+ANTIQUITIN-1	human	P49419	ALDH7A1	P49419	10	168	Alpha-aminoadipic semialdehyde dehydrogenase (Alpha-AASA deh	w
+ANTISE	human	Q8N1D0	SLC67A1-AS	Q8N1D0	0	7	Uncharacterized protein SLC67A1-AS (Beckwith-Wiedemann syndr	w
+ANTISECRETORY	human	P55036	PSMD4	P55036	61	359	26S proteasome non-ATPase regulatory subunit 4 (26S proteaso	w
+ANTISENSE	human	A0A0U1RRN3	MISFA	A0A0U1RRN3	4	15	Mitochondrial sheath formation-associated protein (Putative 	w
+ANTISENSE	human	A0A1B0GUW7	TZMP1	A0A1B0GUW7	2	10	Transition zone microprotein 1 (Small integral membrane prot	w
+ANTISENSE	human	A0A1B0GVV1	SMIM35	A0A1B0GVV1	3	12	Small integral membrane protein 35 (TMPRSS4 antisense RNA 1)	w
+ANTISENSE	human	A8MTT3	CEBPZOS	A8MTT3	44	126	Protein CEBPZOS (CEBPZ antisense RNA 1) (CEBPZ opposite stra	w
+ANTISENSE	human	A8MUL3	ADARB2-AS1	A8MUL3	0	3	Putative uncharacterized protein ADARB2-AS1 (ADARB2 antisens	w
+ANTISENSE	human	B1ANH7	IBA57-DT	B1ANH7	2	9	Putative uncharacterized protein IBA57-DT (IBA57 antisense R	w
+ANTISENSE	human	C9J7I0	UMAD1	C9J7I0	5	28	UBAP1-MVB12-associated (UMA)-domain containing protein 1 (RP	w
+ANTISENSE	human	H3BPM6	MKRN2OS	H3BPM6	4	20	MKRN2 opposite strand protein (MKRN2 antisense RNA 1) (MKRN2	w
+ANTISENSE	human	I3L0S3	PYCARD-AS1	I3L0S3	0	3	Putative uncharacterized protein PYCARD-AS1 (PYCARD antisens	w
+ANTISENSE	human	K7EIQ3	ZNF561-AS1	K7EIQ3	0	7	Uncharacterized protein ZNF561-AS1 (ZNF561 antisense RNA 1) 	w
+ANTISENSE	human	M5A8F1	ERVH48-1	M5A8F1	1	5	Suppressyn (Endogenous retrovirus group 48 member 1) (NDUFV3	w
+ANTISENSE	human	O15446	POLR1G	O15446	63	562	DNA-directed RNA polymerase I subunit RPA34 (A34.5) (Antisen	w
+ANTISENSE	human	O95177	GAS8-AS1	O95177	0	3	Uncharacterized protein GAS8-AS1 (GAS8 antisense RNA 1) (GAS	w
+ANTISENSE	human	P0C7P2	RFPL3S	P0C7P2	9	14	Putative protein RFPL3S (RFPL3 antisense RNA 1) (RFPL3 antis	w
+ANTISENSE	human	P0C7T7	FRMD6-AS1	P0C7T7	0	4	Putative uncharacterized protein FRMD6-AS1 (FRMD6 antisense 	w
+ANTISENSE	human	P0C853	BAALC-AS2	P0C853	0	2	Putative uncharacterized protein BAALC-AS2 (BAALC antisense 	w
+ANTISENSE	human	P0CW21	SPART-AS1	P0CW21	1	7	Putative uncharacterized protein SPART-AS1 (SPART antisense 	w
+ANTISENSE	human	P0DMR3	ATXN8OS	P0DMR3	0	2	Putative protein ATXN8OS (ATXN8 opposite strand) (Spinocereb	w
+ANTISENSE	human	P0DO92	CDIPTOSP	P0DO92	2	6	Putative protein T-ENOL (CDIP transferase opposite strand, p	w
+ANTISENSE	human	P0DP75	MED14OS	P0DP75	1	9	Putative uncharacterized protein MED14OS (MED14 antisense ge	w
+ANTISENSE	human	P53370	NUDT6	P53370	2	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	w
+ANTISENSE	human	P59052	B3GALT5-AS1	P59052	0	2	Putative uncharacterized protein B3GALT5-AS1 (B3GALT5 antise	w
+ANTISENSE	human	P86434	ADORA2A-AS1	P86434	0	5	Putative uncharacterized protein ADORA2A-AS1 (ADORA2A antise	w
+ANTISENSE	human	Q06250	WT1-AS	Q06250	4	14	Putative Wilms tumor upstream neighbor 1 gene protein (WIT-1	w
+ANTISENSE	human	Q0IIN9	ZNF252P-AS1	Q0IIN9	0	4	Putative uncharacterized protein ZNF252P-AS1 (ZNF252P antise	w
+ANTISENSE	human	Q14236	DIAPH2-AS1	Q14236	0	2	Early lymphoid activation gene protein (DIAPH2 antisense RNA	w
+ANTISENSE	human	Q17RA5	EPCIP-AS1	Q17RA5	2	9	Putative uncharacterized protein EPCIP-AS1 (C21orf62 antisen	w
+ANTISENSE	human	Q494R0	FBXL19-AS1	Q494R0	0	1	Putative uncharacterized protein FBXL19-AS1 (FBXL19 antisens	w
+ANTISENSE	human	Q495Z4	ASB16-AS1	Q495Z4	1	3	Putative uncharacterized protein ASB16-AS1 (ASB16 antisense 	w
+ANTISENSE	human	Q4G0G2	H1-10-AS1	Q4G0G2	0	4	Putative uncharacterized protein H1-10-AS1 (H1-10 antisense 	w
+ANTISENSE	human	Q58A44	PCOTH	Q58A44	0	4	Prostate collagen triple helix protein (C1QTNF9B antisense R	w
+ANTISENSE	human	Q5K130	CLLU1-AS1	Q5K130	3	34	Putative uncharacterized protein CLLU1-AS1 (CLLU1 antisense 	w
+ANTISENSE	human	Q5QFB9	PAPPA-AS1	Q5QFB9	0	4	Protein PAPPAS (DIPLA1 antisense RNA 1) (DIPLA1 antisense ge	w
+ANTISENSE	human	Q5SR53	PIK3CD-AS1	Q5SR53	1	3	Putative uncharacterized protein PIK3CD-AS1 (PIK3CD antisens	w
+ANTISENSE	human	Q5SY13	COL5A1-AS1	Q5SY13	0	5	Putative uncharacterized protein encoded by COL5A1-AS1 (COL5	w
+ANTISENSE	human	Q5T3Y7	POPDC1-AS1	Q5T3Y7	0	8	Putative uncharacterized protein POPDC1-AS1 (BVES antisense 	w
+ANTISENSE	human	Q5T5F5	ADAMTSL4-AS1	Q5T5F5	0	6	Uncharacterized protein ADAMTSL4-AS1 (ADAMTSL4 antisense RNA	w
+ANTISENSE	human	Q5T742	ZNF22-AS1	Q5T742	0	10	Uncharacterized protein ZNF22-AS1 (ZNF22 antisense RNA 1)	w
+ANTISENSE	human	Q5T8R8	DOCK8-AS1	Q5T8R8	0	3	Uncharacterized protein DOCK8-AS1 (DOCK8 antisense RNA 1)	w
+ANTISENSE	human	Q5TC04	ATP1A1-AS1	Q5TC04	2	4	Putative uncharacterized protein ATP1A1-AS1 (ATP1A1 antisens	w
+ANTISENSE	human	Q5TG53	SERTAD4-AS1	Q5TG53	1	3	Putative uncharacterized protein SERTAD4-AS1 (SERTAD4 antise	w
+ANTISENSE	human	Q5U4N7	GDF5-AS1	Q5U4N7	1	10	Protein GDF5-AS1, mitochondrial (GDF5 antisense RNA 1) (Grow	w
+ANTISENSE	human	Q66K80	RUSC1-AS1	Q66K80	0	9	Putative uncharacterized protein RUSC1-AS1 (RUSC1 antisense 	w
+ANTISENSE	human	Q674R7	ATG9B	Q674R7	4	58	Autophagy-related protein 9B (APG9-like 2) (Nitric oxide syn	w
+ANTISENSE	human	Q69YL0	NCBP2AS2	Q69YL0	4	39	Protein NCBP2AS2 (Hypoxia-induced angiogenesis regulator) (N	w
+ANTISENSE	human	Q6PEX7	TEX38	Q6PEX7	5	21	Testis-expressed protein 38 (ATPAF1 antisense RNA 1) (ATPAF1	w
+ANTISENSE	human	Q6U949	IGF2-AS	Q6U949	0	14	Putative insulin-like growth factor 2 antisense gene protein	w
+ANTISENSE	human	Q6ZSK4	NTM-AS1	Q6ZSK4	0	4	Putative uncharacterized protein NTM-AS1 (NTM antisense RNA 	w
+ANTISENSE	human	Q7L5Y1	ENOSF1	Q7L5Y1	0	75	Mitochondrial enolase superfamily member 1 (EC 4.2.1.68) (An	w
+ANTISENSE	human	Q7Z2R9	SSBP3-AS1	Q7Z2R9	3	10	Putative uncharacterized protein SSBP3-AS1 (SSBP3 antisense 	w
+ANTISENSE	human	Q86SY8	KTN1-AS1	Q86SY8	2	8	Putative uncharacterized protein KTN1-AS1 (KTN1 antisense RN	w
+ANTISENSE	human	Q8IZM0	CNG1O	Q8IZM0	0	1	Putative CNGA1-overlapping antisense gene protein (Anti-CNG1	w
+ANTISENSE	human	Q8N0V1	ZNF295-AS1	Q8N0V1	0	1	Putative uncharacterized protein ZNF295-AS1 (ZNF295 antisens	w
+ANTISENSE	human	Q8N1I8	CACTIN-AS1	Q8N1I8	0	1	Putative uncharacterized protein encoded by CACTIN-AS1 (Cact	w
+ANTISENSE	human	Q8N2C9	UMODL1-AS1	Q8N2C9	0	1	Uncharacterized protein UMODL1-AS1 (UMODL1 antisense RNA 1) 	w
+ANTISENSE	human	Q8N2X6	EXOC3-AS1	Q8N2X6	2	10	Uncharacterized protein EXOC3-AS1 (EXOC3 antisense RNA 1) (E	w
+ANTISENSE	human	Q8N7Q2	CELF2-AS1	Q8N7Q2	0	1	Putative uncharacterized protein CELF2-AS1 (CELF2 antisense 	w
+ANTISENSE	human	Q8N7Y1	KIRREL3-AS3	Q8N7Y1	0	8	Putative uncharacterized protein KIRREL3-AS3 (KIRREL3 antise	w
+ANTISENSE	human	Q8N8E1	MAPKAPK5-AS1	Q8N8E1	1	13	Putative uncharacterized protein encoded by MAPKAPK5-AS1 (MA	w
+ANTISENSE	human	Q8N8Z3	DIP2C-AS1	Q8N8Z3	0	3	Putative uncharacterized protein DIP2C-AS1 (DIP2C antisense 	w
+ANTISENSE	human	Q8N910	PAK6-AS1	Q8N910	0	4	Putative uncharacterized protein PAK6-AS1 (PAK6 antisense RN	w
+ANTISENSE	human	Q8NA97	FER1L6-AS1	Q8NA97	0	3	Putative uncharacterized protein FER1L6-AS1 (FER1L6 antisens	w
+ANTISENSE	human	Q8NBB2	ST20-AS1	Q8NBB2	1	8	Putative uncharacterized protein ST20-AS1 (ST20 antisense RN	w
+ANTISENSE	human	Q8NBZ9	NEXN-AS1	Q8NBZ9	0	4	Putative uncharacterized protein NEXN-AS1 (NEXN antisense RN	w
+ANTISENSE	human	Q8NC38	ZNF436-AS1	Q8NC38	1	12	Putative uncharacterized protein ZNF436-AS1 (ZNF436 antisens	w
+ANTISENSE	human	Q8NCQ2	CSNK1G2-AS1	Q8NCQ2	1	7	Uncharacterized protein CSNK1G2-AS1 (CSNK1G2 antisense RNA 1	w
+ANTISENSE	human	Q8NEE0	KLHL30-AS1	Q8NEE0	0	9	Putative uncharacterized protein KLHL30-AS1 (KLHL30 antisens	w
+ANTISENSE	human	Q8TAF5	FLVCR1-DT	Q8TAF5	0	1	Putative uncharacterized protein LQK1 (FLVCR1 antisense RNA 	w
+ANTISENSE	human	Q8TAV5	KCNJ5-AS1	Q8TAV5	1	12	Uncharacterized protein KCNJ5-AS1 (KCNJ5 antisense RNA 1)	w
+ANTISENSE	human	Q8TBR5	CIRBP-AS1	Q8TBR5	0	3	Putative uncharacterized protein CIRBP-AS1 (CIRBP antisense 	w
+ANTISENSE	human	Q96HZ7	URB1-DT	Q96HZ7	0	4	Putative uncharacterized protein URB1-DT (URB1 antisense RNA	w
+ANTISENSE	human	Q96IT6	ARHGAP5-AS1	Q96IT6	5	11	Putative uncharacterized protein ARHGAP5-AS1 (ARHGAP5 antise	w
+ANTISENSE	human	Q96KT0	FAM167A-AS1	Q96KT0	1	6	Uncharacterized protein FAM167A-AS1 (FAM167A antisense RNA 1	w
+ANTISENSE	human	Q96M15	IGF2BP2-AS1	Q96M15	0	1	Putative uncharacterized protein IGF2BP2-AS1 (IGF2BP2 antise	w
+ANTISENSE	human	Q96M78	FER1L6-AS2	Q96M78	0	3	Putative uncharacterized protein encoded by FER1L6-AS2 (FER1	w
+ANTISENSE	human	Q96MC9	IKBKE-AS1	Q96MC9	0	1	Putative uncharacterized protein IKBKE-AS1 (IKBKE antisense 	w
+ANTISENSE	human	Q96MU5	CD300LD-AS1	Q96MU5	0	8	Uncharacterized protein CD300LD-AS1 (CD300LD antisense RNA 1	w
+ANTISENSE	human	Q96NR7	WWC2-AS2	Q96NR7	0	13	Putative uncharacterized protein WWC2-AS2 (WWC2 antisense RN	w
+ANTISENSE	human	Q96PY0	PSMG3-AS1	Q96PY0	0	7	Putative uncharacterized protein PSMG3-AS1 (PSMG3 antisense 	w
+ANTISENSE	human	Q9BR46	SCP2D1-AS1	Q9BR46	0	1	Putative uncharacterized protein SCP2D1-AS1 (SCP2D1 antisens	w
+ANTISENSE	human	Q9BUR4	WRAP53	Q9BUR4	9	169	Telomerase Cajal body protein 1 (WD repeat-containing protei	w
+ANTISENSE	human	Q9BWJ2	RHPN1-AS1	Q9BWJ2	0	9	Putative uncharacterized protein encoded by RHPN1-AS1 (RHPN1	w
+ANTISENSE	human	Q9H2J1	ARRDC1-AS1	Q9H2J1	5	9	Uncharacterized protein ARRDC1-AS1 (ARRDC1 antisense RNA 1) 	w
+ANTISENSE	human	Q9H7B7	PKD1L1-AS1	Q9H7B7	1	14	Putative uncharacterized protein PKD1L1-AS1 (PKD1L1 antisens	w
+ANTISENSE	human	Q9H8Q6	HEXA-AS1	Q9H8Q6	0	1	Putative uncharacterized protein encoded by HEXA-AS1 (HEXA a	w
+ANTISENSE	human	Q9NZ38	IDI2-AS1	Q9NZ38	0	1	Uncharacterized protein IDI2-AS1 (IDI2 antisense RNA 1) (IDI	w
+ANTISENSE	human	Q9P1G2	RBM12B-AS1	Q9P1G2	0	6	Putative uncharacterized protein encoded by RBM12B-AS1 (RBM1	w
+ANTISENSE	human	Q9P1J3	DHRS4-AS1	Q9P1J3	0	2	Putative uncharacterized protein DHRS4-AS1 (DHRS4 antisense 	w
+ANTISENSE	human	Q9P2S5	WRAP73	Q9P2S5	25	179	WD repeat-containing protein WRAP73 (WD repeat-containing pr	w
+ANTISENSE	human	Q9UBP8	KAAG1	Q9UBP8	5	33	Kidney-associated antigen 1 (RU2 antisense gene protein)	w
+ANTISENSE	human	Q9UH64	CDKN2A-AS1	Q9UH64	3	4	Putative uncharacterized protein CDKN2A-AS1 (CDKN2A antisens	w
+ANTISENSE	human	Q9Y442	YWHAH-AS1	Q9Y442	0	1	Putative uncharacterized protein YWHAH-AS1 (YWHAH antisense 	w
+ANTISENSE	human	Q9Y6J3	SMAD5-AS1	Q9Y6J3	1	6	SMAD5 antisense gene protein 1 (10.3 kDa proline-rich protei	w
+ANTISENSE	human	Q9Y6Z4	KIF25-AS1	Q9Y6Z4	0	2	Putative uncharacterized protein KIF25-AS1 (KIF25 antisense 	w
+ANTISERA-SELECTED	human	Q9Y2I1	NISCH	Q9Y2I1	15	146	Nischarin (Imidazoline receptor 1) (I-1) (IR1) (Imidazoline 	w
+ANTITHROMBIN-III	human	P01008	SERPINC1	P01008	55	531	Antithrombin-III (ATIII) (Serpin C1)	w
+ANTITHROMBIN-III	zebrafish	Q8AYE3	serpinc1	Q8AYE3	5	44	Antithrombin-III	w
+ANTITOXIN	worm	Q9XXE2	tpan-1	Q9XXE2	0	1	Antitoxin	w
+ANTITRYPSIN	zebrafish	A0A8N7V0N1	serpina1l	A0A8N7V0N1	0	38	Serine (Or cysteine) proteinase inhibitor, clade A (Alpha-1 	w
+ANTIVIRAL	human	A4D0T7	SMIM30	A4D0T7	8	17	Small integral membrane protein 30 (Microprotein in antivira	w
+ANTIVIRAL	human	O95786	RIGI	O95786	63	1617	Antiviral innate immune response receptor RIG-I (ATP-depende	w
+ANTIVIRAL	human	P09914	IFIT1	P09914	53	427	Antiviral innate immune response effector IFIT1 (IFIT-1) (In	w
+ANTIVIRAL	human	Q0VG73	RDUR	Q0VG73	0	6	Putative protein RDUR (RIG-I dependent antiviral response re	w
+ANTIVIRAL	human	Q7Z2W4	ZC3HAV1	Q7Z2W4	28	660	Zinc finger CCCH-type antiviral protein 1 (ADP-ribosyltransf	w
+ANTIVIRAL	human	Q96H79	ZC3HAV1L	Q96H79	7	72	Zinc finger CCCH-type antiviral protein 1-like	w
+ANTIVIRAL	human	Q9NUL5	SHFL	Q9NUL5	2	141	Shiftless antiviral inhibitor of ribosomal frameshifting pro	w
+ANTIVIRAL	yeast	P35207	SKI2	P35207	7	131	Antiviral helicase SKI2	w
+ANTIVIRAL	yeast	Q02793	SKI8	Q02793	8	166	Antiviral protein SKI8	w
+ANTIVIRAL-SIGNALING	human	Q7Z434	MAVS	Q7Z434	45	391	Mitochondrial antiviral-signaling protein (MAVS) (CARD adapt	w
+ANTIVIRAL-SIGNALING	zebrafish	B8A4W7	mavs	B8A4W7	2	30	Mitochondrial antiviral-signaling protein	w
+ANTIZYME	fly	FBgn0014184	Oda	A1Z8U1	19	57	Ornithine decarboxylase antizyme	w
+ANTIZYME	human	O14977	AZIN1	O14977	8	71	Antizyme inhibitor 1 (AZI) (AZI1) (Ornithine decarboxylase a	w
+ANTIZYME	human	O95190	OAZ2	O95190	15	59	Ornithine decarboxylase antizyme 2 (AZ2) (ODC-Az 2)	w
+ANTIZYME	human	P54368	OAZ1	P54368	27	144	Ornithine decarboxylase antizyme 1 (AZ1) (ODC-Az)	w
+ANTIZYME	human	Q96A70	AZIN2	Q96A70	7	48	Antizyme inhibitor 2 (AzI2) (Arginine decarboxylase) (ADC) (	w
+ANTIZYME	human	Q9UMX2	OAZ3	Q9UMX2	21	102	Ornithine decarboxylase antizyme 3 (AZ3) (ODC-Az 3)	w
+ANTIZYME	worm	O01579	azin-1	O01579	2	5	Antizyme inhibitor 1	w
+ANTIZYME	worm	Q9NHZ6	oaz-1	Q9NHZ6	2	5	Ornithine decarboxylase antizyme	w
+ANTIZYME	yeast	Q02803	OAZ1	Q02803	0	1	Ornithine decarboxylase antizyme	w
+ANTIZYME	zebrafish	A0A0R4IGR0	oaz2a	A0A0R4IGR0	3	3	Ornithine decarboxylase antizyme 2a	w
+ANTIZYME	zebrafish	A0A8M1N598	azin1a	A0A8M1N598	4	7	Antizyme inhibitor 1a	w
+ANTIZYME	zebrafish	A0MQ45	oaz2b	A0MQ45	3	3	Ornithine decarboxylase antizyme	w
+ANTIZYME	zebrafish	Q801V3	azin1b	Q801V3	5	8	Antizyme inhibitor 1b	w
+ANTIZYME	zebrafish	Q9YI97	oaz1b	Q9YI97	3	3	Ornithine decarboxylase antizyme 2	w
+ANTIZYME	zebrafish	Q9YI98	oaz1a	Q9YI98	3	3	Ornithine decarboxylase antizyme 1	w
+ANTKMT	human	Q9BQD7	ANTKMT	Q9BQD7	3	58	Adenine nucleotide translocase lysine N-methyltransferase (A	
+ANTKMT	mus-musculus	Q501J2	Antkmt	Q501J2	0	2	Adenine nucleotide translocase lysine N-methyltransferase	
+ANTKMT	rattus-norvegicus	D4A1T7	Antkmt	D4A1T7	1	4	Adenine nucleotide translocase lysine methyltransferase	
+ANTKMT	zebrafish	Q6IQ61	antkmt	Q6IQ61	0	13	Adenine nucleotide translocase lysine N-methyltransferase	
+ANTOLEFININ	human	Q96GY3	LIN37	Q96GY3	44	461	Protein lin-37 homolog (Antolefinin)	w
+ANTP	fly	FBgn0260642	Antp	P02833	79	449	Homeotic protein antennapedia	
+ANTR	fly	FBgn0050488	antr	A0A0B4K7N3	26	244	Antares, isoform B	
+ANTR1	arabidopsis-thaliana	O82390	ANTR1	O82390	0	1	Sodium-dependent phosphate transport protein 1, chloroplasti	
+ANTR1_HUMAN	human	Q9H6X2	ANTXR1	Q9H6X2	28	276		
+ANTR2_HUMAN	human	P58335	ANTXR2	P58335	14	143		
+ANTRL_HUMAN	human	A6NF34	ANTXRL	A6NF34	0	7		
+ANTRUM	human	Q9NS71	GKN1	Q9NS71	9	69	Gastrokine-1 (18 kDa antrum mucosa protein) (AMP-18) (Protei	w
+ANTXR1	human	Q9H6X2	ANTXR1	Q9H6X2	28	276	Anthrax toxin receptor 1 (Tumor endothelial marker 8)	
+ANTXR1	mus-musculus	Q9CZ52	Antxr1	Q9CZ52	0	7	Anthrax toxin receptor 1	
+ANTXR1	rattus-norvegicus	Q0PMD2	Antxr1	Q0PMD2	1	10	Anthrax toxin receptor 1	
+ANTXR1B	zebrafish	A0AB32U207	antxr1b	A0AB32U207	0	9	Anthrax toxin receptor 1	
+ANTXR1C	zebrafish	E7F2W8	antxr1c	E7F2W8	0	7	Anthrax toxin receptor 1	
+ANTXR2	human	P58335	ANTXR2	P58335	14	143	Anthrax toxin receptor 2 (Capillary morphogenesis gene 2 pro	
+ANTXR2	mus-musculus	Q6DFX2	Antxr2	Q6DFX2	1	20	Anthrax toxin receptor 2	
+ANTXR2	rattus-norvegicus	F1LT78	Antxr2	F1LT78	2	17	Anthrax toxin receptor	
+ANTXRL	human	A6NF34	ANTXRL	A6NF34	0	7	Anthrax toxin receptor-like	
+ANTXRL1	rattus-norvegicus	A0A0G2K7L7	Antxrl1	A0A0G2K7L7	0	7	ANTXR like 1	

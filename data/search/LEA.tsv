@@ -1,12 +1,166 @@
-LEA-1	glycine-max	C6TLT7	LEA-1	C6TLT7	0	43	Late-embryogenesis abundant protein 1
-LEA-2	glycine-max	C6T750	LEA-2	C6T750	1	43	Late-embryogenesis abundant protein 2
-LEA1	candida-albicans-237561	Q5A449	LEA1	Q5A449	6	84	U2 small nuclear ribonucleoprotein A
-LEA1	cladophialophora-carrionii	A0A1C1C7V9	lea1	A0A1C1C7V9	18	151	U2 small nuclear ribonucleoprotein A
-LEA1	schizosaccharomyces-pombe	Q9USX8	lea1	Q9USX8	12	134	U2 small nuclear ribonucleoprotein A
-LEA14	arabidopsis-thaliana	O03983	LEA14	O03983	0	4	Probable desiccation-related protein LEA14
-LEA14A	zea-mays	B6UH99	Lea14A	B6UH99	0	2	Late embryogeneis abundant protein Lea14-A
-LEA25	arabidopsis-thaliana	Q9SIN3	LEA25	Q9SIN3	0	16	Late embryogenesis abundant domain-containing protein / LEA domain-containing pr
-LEA26	arabidopsis-thaliana	O80576	LEA26	O80576	0	4	At2g44060
-LEA29	arabidopsis-thaliana	Q9LW12	LEA29	Q9LW12	0	1	Late embryogenesis abundant protein 29
-LEA41	arabidopsis-thaliana	Q39084	LEA41	Q39084	0	1	Late embryogenis abundant protein 41
-LEAP2	mus-musculus	Q91V13	Leap2	Q91V13	1	2	Liver-expressed antimicrobial peptide 2
+LEA-1	glycine-max	C6TLT7	LEA-1	C6TLT7	0	43	Late-embryogenesis abundant protein 1	
+LEA-1	worm	H2FLL1	lea-1	H2FLL1	0	5	Plant Late Embryo Abundant (LEA) related	
+LEA-2	glycine-max	C6T750	LEA-2	C6T750	1	43	Late-embryogenesis abundant protein 2	
+LEA1	candida-albicans-237561	Q5A449	LEA1	Q5A449	6	84	U2 small nuclear ribonucleoprotein A	
+LEA1	cladophialophora-carrionii	A0A1C1C7V9	lea1	A0A1C1C7V9	18	151	U2 small nuclear ribonucleoprotein A	
+LEA1	schizosaccharomyces-pombe	Q9USX8	lea1	Q9USX8	12	134	U2 small nuclear ribonucleoprotein A	
+LEA1	yeast	Q08963	LEA1	Q08963	8	126	U2 small nuclear ribonucleoprotein A	
+LEA14	arabidopsis-thaliana	O03983	LEA14	O03983	0	4	Probable desiccation-related protein LEA14	
+LEA14A	zea-mays	B6UH99	Lea14A	B6UH99	0	2	Late embryogeneis abundant protein Lea14-A	
+LEA25	arabidopsis-thaliana	Q9SIN3	LEA25	Q9SIN3	0	16	Late embryogenesis abundant domain-containing protein / LEA 	
+LEA26	arabidopsis-thaliana	O80576	LEA26	O80576	0	4	At2g44060	
+LEA29	arabidopsis-thaliana	Q9LW12	LEA29	Q9LW12	0	1	Late embryogenesis abundant protein 29	
+LEA41	arabidopsis-thaliana	Q39084	LEA41	Q39084	0	1	Late embryogenis abundant protein 41	
+LEADER	fly	FBgn0035065	CG3589	Q9W106	1	18	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
+LEADER	human	Q2T9J0	TYSND1	Q2T9J0	6	47	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
+LEADER	virus	A0A076VAH7_pa004b3bed7		A0A076VAH7	0	11	Leader protein	w
+LEADER	virus	A0A076YJH3_pa7e71d7694		A0A076YJH3	0	11	Leader protein	w
+LEADER	virus	A0A089FY58_p0f84146d3c		A0A089FY58	0	11	Leader protein	w
+LEADER	virus	A0A097NZC8_p442d1298f0		A0A097NZC8	1	10	Leader protein	w
+LEADER	virus	A0A0A7EQ87_p282286ca7b		A0A0A7EQ87	0	12	Leader protein	w
+LEADER	virus	A0A0B4UEH9_p2ae13644b2		A0A0B4UEH9	0	12	Leader protein	w
+LEADER	virus	A0A0B5CMK1_pbf2d7a8e1d		A0A0B5CMK1	0	12	Leader protease	w
+LEADER	virus	A0A0B5GG60_pc97fe73810		A0A0B5GG60	0	12	Leader protein	w
+LEADER	virus	A0A0B5GGD3_paeee1e2172		A0A0B5GGD3	0	12	Leader protein	w
+LEADER	virus	A0A0B5GND3_p5fc28c4487		A0A0B5GND3	1	12	Leader protein	w
+LEADER	virus	A0A0B6CCI0_pa199ab244b		A0A0B6CCI0	1	12	Leader protein	w
+LEADER	virus	A0A0D5XR02_p74807628e1		A0A0D5XR02	0	12	Leader protease	w
+LEADER	virus	A0A0M3VGG2_p17d9ef78e0		A0A0M3VGG2	1	12	Leader protein	w
+LEADER	virus	A0A0M4TZ36_pd783260a96		A0A0M4TZ36	2	12	Leader protein	w
+LEADER	virus	A0A0M4UP75_p546a27fab2		A0A0M4UP75	0	12	Leader protein	w
+LEADER	virus	A0A0M4V8J2_pf5d0c73a2b		A0A0M4V8J2	1	11	Leader protein	w
+LEADER	virus	A0A0M5N6H6_p36ac85ca39		A0A0M5N6H6	1	11	Leader protein	w
+LEADER	virus	A0A0P0QLC4_p6c7bbb2091		A0A0P0QLC4	0	11	Leader protein	w
+LEADER	virus	A0A0S2LUK8_pe7a55266c3		A0A0S2LUK8	0	11	Leader protein	w
+LEADER	virus	A0A0U2LPY7_pbb5300033a		A0A0U2LPY7	0	11	Leader protein	w
+LEADER	virus	A0A0U2U7C6_p066257e0d7		A0A0U2U7C6	0	11	Leader protein	w
+LEADER	virus	A0A144KVR0_p6724faabfe		A0A144KVR0	1	12	Leader protein	w
+LEADER	virus	A0A167QQ30_p56b3b9c901		A0A167QQ30	0	12	Leader protease	w
+LEADER	virus	A0A193AUD9_peed0da3e38		A0A193AUD9	0	12	Leader protease	w
+LEADER	virus	A0A1I9WAM2_pf804a3cd81		A0A1I9WAM2	1	12	Leader protein	w
+LEADER	virus	A0A1L5J1E8_pee32907a54		A0A1L5J1E8	1	11	Leader protein	w
+LEADER	virus	A0A1L6KW43_pa164e8d187		A0A1L6KW43	1	11	Leader protein	w
+LEADER	virus	A0A1L6KW60_p32dcef133b		A0A1L6KW60	0	11	Leader protein	w
+LEADER	virus	A0A1P8SNT4_p35d9716651		A0A1P8SNT4	1	12	Leader protein	w
+LEADER	virus	A0A1S6WM53_p443c9a7704		A0A1S6WM53	0	12	Leader protease	w
+LEADER	virus	A0A2H4RDT0_p4bce74a0c5		A0A2H4RDT0	1	12	Leader protein	w
+LEADER	virus	A0A2H4RDT2_pb44c5c949d		A0A2H4RDT2	0	12	Leader protein	w
+LEADER	virus	A0A2H4RDT6_p90d3915bf6		A0A2H4RDT6	0	12	Leader protein	w
+LEADER	virus	A0A2H4RDT9_pc37d01ebe5		A0A2H4RDT9	0	12	Leader protein	w
+LEADER	virus	A0A2H4RDU0_p8298931fdd		A0A2H4RDU0	0	11	Leader protein	w
+LEADER	virus	A0A2H4RDU1_p330ff3e99b		A0A2H4RDU1	1	12	Leader protein	w
+LEADER	virus	A0A2H4RDU9_pbeb6cd72c8		A0A2H4RDU9	0	12	Leader protein	w
+LEADER	virus	A0A2H4RDW5_pdba8967117		A0A2H4RDW5	1	12	Leader protein	w
+LEADER	virus	A0A2H5BV49_pd390c9f174		A0A2H5BV49	0	11	Leader protein	w
+LEADER	virus	A0A2K9VQ60_p1c8f6e3e46		A0A2K9VQ60	0	11	Leader protein	w
+LEADER	virus	A0A2P1GN41_p4466673a84		A0A2P1GN41	0	11	Leader protein	w
+LEADER	virus	A0A2P1GN42_p5fb699106e		A0A2P1GN42	0	11	Leader protein	w
+LEADER	virus	A0A2P1GN47_p670bb55770		A0A2P1GN47	0	11	Leader protein	w
+LEADER	virus	A0A2P1GN58_p7b8b7421b1		A0A2P1GN58	0	11	Leader protein	w
+LEADER	virus	A0A2P1GN62_p6dc4eb6526		A0A2P1GN62	0	11	Leader protein	w
+LEADER	virus	A0A2P1GN97_p791a72b813		A0A2P1GN97	0	11	Leader protein	w
+LEADER	virus	A0A2P1IP98_p7869ea6cc4		A0A2P1IP98	0	11	Leader protein	w
+LEADER	virus	A0A2P1IPA4_p7022254f29		A0A2P1IPA4	0	11	Leader protein	w
+LEADER	virus	A0A2P1IPB1_pafa0b8c7e6		A0A2P1IPB1	1	11	Leader protein	w
+LEADER	virus	A0A2R4N9G3_p4e554d3294		A0A2R4N9G3	0	12	Leader protein	w
+LEADER	virus	A0A2R4N9G9_pbee11fca26		A0A2R4N9G9	1	13	Leader protease	w
+LEADER	virus	A0A2S0SYS6_p23307f61ce		A0A2S0SYS6	1	11	Leader protein	w
+LEADER	virus	A0A2S0SYW5_pd01413d8e1		A0A2S0SYW5	1	11	Leader protein	w
+LEADER	virus	A0A2S0SZ54_p17325076e8		A0A2S0SZ54	1	12	Leader protein	w
+LEADER	virus	A0A2S1YF40_p4377807e30		A0A2S1YF40	1	12	Leader protein	w
+LEADER	virus	A0A2S1YF43_p891daa0cc4		A0A2S1YF43	1	12	Leader protein	w
+LEADER	virus	A0A2S1YF50_p49d87e2088		A0A2S1YF50	0	12	Leader protein	w
+LEADER	virus	A0A2S1YF57_pc0dc2f4ba1		A0A2S1YF57	0	12	Leader protein	w
+LEADER	virus	A0A2S1YF58_p80b82bfbdf		A0A2S1YF58	0	12	Leader protein	w
+LEADER	virus	A0A2S1YF60_p01cf6ecb74		A0A2S1YF60	2	12	Leader protein	w
+LEADER	virus	A0A2S1YF64_p1e50792f34		A0A2S1YF64	0	12	Leader protein	w
+LEADER	virus	A0A2S1YF76_p164db4bd22		A0A2S1YF76	1	11	Leader protein	w
+LEADER	virus	A0A386JUY0_pdf5f972309		A0A386JUY0	1	12	Leader protein	w
+LEADER	virus	A0A3G1T4C0	EBNA-LP	A0A3G1T4C0	4	81	Herpesvirus leader protein domain-containing protein	w
+LEADER	virus	A0A484HNJ6_pb9e042b742		A0A484HNJ6	0	12	Leader protein	w
+LEADER	virus	A0AC59EWD6_p8762c2e420		A0AC59EWD6	1	12	Leader protein	w
+LEADER	virus	A0ACM8DFZ3_p430d82b4da		A0ACM8DFZ3	0	12	Leader protein	w
+LEADER	virus	A0ACM8DG06_p38f5ba51b7		A0ACM8DG06	0	12	Leader protein	w
+LEADER	virus	A0ACM8DG08_p2e4e568b13		A0ACM8DG08	1	12	Leader protein	w
+LEADER	virus	A4ZKN2_p50d8aaa3b4		A4ZKN2	1	12	Leader protein	w
+LEADER	virus	B0Z3W9_p17ebf19ea2		B0Z3W9	0	12	Leader protease	w
+LEADER	virus	B3FRR2_p5d5bf26b9c		B3FRR2	1	12	Leader protein	w
+LEADER	virus	B5A1N0_p59aaac2023		B5A1N0	0	12	Leader protein	w
+LEADER	virus	B8R1T8_pa4be3ab8d7		B8R1T8	1	11	Leader protein	w
+LEADER	virus	C5MSH2_p92f37e94cc		C5MSH2	1	11	Leader protein	w
+LEADER	virus	D6N367_pa2547e75f1		D6N367	0	11	Leader protein	w
+LEADER	virus	D9YV24_p0ee3a3c9da		D9YV24	0	11	Leader protein	w
+LEADER	virus	D9YV26_pc7ef318848		D9YV26	0	11	Leader protein	w
+LEADER	virus	D9YV28_pdbb818add0		D9YV28	0	11	Leader protein	w
+LEADER	virus	D9ZYS1_pa90a608a71		D9ZYS1	1	12	Leader protein	w
+LEADER	virus	F4YYF3_p81b357e28e		F4YYF3	0	12	Leader protein	w
+LEADER	virus	G1C9J8_p89f4cea629		G1C9J8	1	11	Leader protein	w
+LEADER	virus	G1DFA4_p03e3dc197b		G1DFA4	0	13	Leader protease	w
+LEADER	virus	G1JSF8_p16b1e72647		G1JSF8	1	11	Leader protein	w
+LEADER	virus	H9AY35_pd1ba3f36ab		H9AY35	1	12	Leader protease	w
+LEADER	virus	H9U0H0_pcb239224cd		H9U0H0	1	12	Leader protein	w
+LEADER	virus	I3VR62_pe6608a3e9d		I3VR62	1	12	Leader protein	w
+LEADER	virus	I7C489_p9ed965a77c		I7C489	0	11	Leader protein	w
+LEADER	virus	I7D1R9_p26399edd1f		I7D1R9	1	12	Leader protein	w
+LEADER	virus	J9Y0I9_p75d44a579a		J9Y0I9	0	12	Leader protein	w
+LEADER	virus	K0IRN5_pff7ff162d0		K0IRN5	1	12	Leader protein	w
+LEADER	virus	K0IRN8_p5fe943eab6		K0IRN8	1	12	Leader protein	w
+LEADER	virus	K0IRU9_pab3ae52e87		K0IRU9	1	12	Leader protein	w
+LEADER	virus	K0IUN3_p0b56ee9595		K0IUN3	1	12	Leader protein	w
+LEADER	virus	K0IWN0_pfb8a12bc47		K0IWN0	1	12	Leader protein	w
+LEADER	virus	K0J1H6_pc03a1e94da		K0J1H6	1	12	Leader protein	w
+LEADER	virus	K4NWE0_p83202424b4		K4NWE0	0	12	Leader protein	w
+LEADER	virus	M4JGH6_p0db952989e		M4JGH6	0	12	Leader protein	w
+LEADER	virus	O91464_pe32989dd9d		O91464	1	11	Leader protein	w
+LEADER	virus	P03308_p19de9ced02		P03308	0	14	Leader protease	w
+LEADER	virus	P08544_peb6daad73a		P08544	0	12	Leader protein	w
+LEADER	virus	P08545_p79251c64dc		P08545	2	12	Leader protein	w
+LEADER	virus	P0C6L2		P0C6L2	0	6	SV40 early leader protein	w
+LEADER	virus	P13899_pdb42ec0cce		P13899	1	13	Leader protein	w
+LEADER	virus	P15072_p746cba7aa4		P15072	0	14	Leader protease	w
+LEADER	virus	Q19AF3_pcfddfbd7af		Q19AF3	0	14	Leader protease	w
+LEADER	virus	Q2XP17_pe00c11c0a2		Q2XP17	0	12	Leader protease	w
+LEADER	virus	Q66765_pd7e273be8e		Q66765	0	13	Leader protein	w
+LEADER	virus	Q672R3_p4cd26e724a		Q672R3	0	11	Leader protein	w
+LEADER	virus	Q6PMT6_p2d63794970		Q6PMT6	0	14	Leader protease	w
+LEADER	virus	Q6PMT7_p02d223d05f		Q6PMT7	0	14	Leader protease	w
+LEADER	virus	Q6PMU6_pcda2a58c46		Q6PMU6	0	14	Leader protease	w
+LEADER	virus	Q6PMV7_p8f924831d4		Q6PMV7	0	14	Leader protease	w
+LEADER	virus	Q80IV2_p16f5e90ff5	L	Q80IV2	1	13	Leader protein	w
+LEADER	virus	Q8AZK7	EBNA-LP	Q8AZK7	0	91	Epstein-Barr nuclear antigen leader protein	w
+LEADER	virus	Q8B552_p63bf0fc257		Q8B552	0	12	Leader protein	w
+LEADER	virus	Q8BES6_pf7a38d7aa9		Q8BES6	0	11	Leader protein	w
+LEADER	virus	Q8JJT0_p605528d1eb		Q8JJT0	0	12	Leader protein	w
+LEADER	virus	Q99FL0_pec0e89c629		Q99FL0	2	12	Leader protein	w
+LEADER	virus	Q99FL1_p6306ca78fd		Q99FL1	1	12	Leader protein	w
+LEADER	virus	Q99FL2_pd11c6ad005		Q99FL2	2	12	Leader protein	w
+LEADER	virus	Q99FL3_pacda457bb8		Q99FL3	1	12	Leader protein	w
+LEADER	virus	Q99FL4_p5c28cbe489		Q99FL4	1	12	Leader protein	w
+LEADER	virus	Q99FL5_p179743334b		Q99FL5	0	12	Leader protein	w
+LEADER	virus	Q99FL6_pcaa46f9305		Q99FL6	2	12	Leader protein	w
+LEADER	virus	Q99FL7_p0a8546dcb3		Q99FL7	1	12	Leader protein	w
+LEADER	virus	Q99FL8_p0d055bdb19		Q99FL8	1	12	Leader protein	w
+LEADER	virus	Q99FL9_pafe8154ea8		Q99FL9	1	12	Leader protein	w
+LEADER	virus	Q9WJ28_p1c252c763b		Q9WJ28	0	12	Leader protein	w
+LEADER	virus	U5XL86_p534b90e5b0	SakoVgp1	U5XL86	0	11	Leader protein	w
+LEADER	virus	W5S7X3_pdd2012a455		W5S7X3	0	11	Leader protein	w
+LEADER	virus	X2DF31_pdb29842128		X2DF31	2	11	Leader protein	w
+LEADER	virus	X2FKI7_p5d3228ea86		X2FKI7	1	11	Leader protein	w
+LEADER	virus	X2L6K2_p40f1795ca1		X2L6K2	1	13	Leader protease	w
+LEADER	virus	X4ZGA1_p808d8f89e6		X4ZGA1	0	11	Leader protein	w
+LEADER	zebrafish	B3DFU6	tysnd1	B3DFU6	0	9	Peroxisomal leader peptide-processing protease	w
+LEADING	human	Q8IUD6	RNF135	Q8IUD6	39	144	E3 ubiquitin-protein ligase RNF135 (EC 2.3.2.27) (RIG-I E3 u	w
+LEAK	human	Q8IZF0	NALCN	Q8IZF0	1	109	Sodium leak channel NALCN (CanIon) (Sodium leak channel non-	w
+LEAKAGE	yeast	Q03760	PML39	Q03760	0	4	Pre-mRNA leakage protein 39	w
+LEAKAGE	yeast	Q07930	PML1	Q07930	7	72	Pre-mRNA leakage protein 1	w
+LEAKY	fly	FBgn0031082	lky	Q9W5X9	1	16	Alpha-tubulin N-acetyltransferase 2 (Alpha-TAT 2) (TAT 2) (E	w
+LEAP-1	human	P81172	HAMP	P81172	40	210	Hepcidin (Liver-expressed antimicrobial peptide 1) (LEAP-1) 	w
+LEAP-2	human	Q969E1	LEAP2	Q969E1	16	91	Liver-expressed antimicrobial peptide 2 (LEAP-2)	w
+LEAP1	human	P81172	HAMP	P81172	40	210		
+LEAP2	human	Q969E1	LEAP2	Q969E1	16	91	Liver-expressed antimicrobial peptide 2 (LEAP-2)	
+LEAP2	mus-musculus	Q91V13	Leap2	Q91V13	1	2	Liver-expressed antimicrobial peptide 2	
+LEAP2_HUMAN	human	Q969E1	LEAP2	Q969E1	16	91		
+LEARNING	fly	FBgn0000479	Pde4	Q9W4T4	9	115	3',5'-cyclic-AMP phosphodiesterase, isoform I (EC 3.1.4.53) 	w
+LEASH	fly	FBgn0037856	Leash	Q9VGU4	21	190	FI02822p (Leash)	w
+LEASH	fly	FBgn0037856	Leash	Q9VGU4	21	190	FI02822p (Leash)	w
+LEASH_493_515	fly	FBgn0037856	Leash	Q9VGU4	21	190		

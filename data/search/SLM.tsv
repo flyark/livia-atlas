@@ -1,14 +1,33 @@
-SLM1	cladophialophora-carrionii	A0A1C1CCP0	slm1	A0A1C1CCP0	1	42	Cytoskeletal signaling protein slm1
-SLM1	oryza-sativa-subsp-japonica	Q6Z8Z7	SLM1	Q6Z8Z7	0	15	hydroperoxide dehydratase
-SLM1	schizosaccharomyces-pombe	O94447	slm1	O94447	0	34	Cytoskeletal signaling protein slm1
-SLM2	candida-albicans-237561	A0A1D8PPT0	SLM2	A0A1D8PPT0	4	14	Phosphatidylinositol 4,5-bisphosphate-binding protein
-SLM5	cladophialophora-carrionii	A0A1C1CGI6	SLM5	A0A1C1CGI6	1	16	Asparagine--tRNA ligase, mitochondrial
-SLM5	schizosaccharomyces-pombe	Q9P6I0	slm5	Q9P6I0	1	10	Asparagine--tRNA ligase, mitochondrial
-SLM9	schizosaccharomyces-pombe	O74309	slm9	O74309	2	40	Histone transcription regulator slm9
-SLMA	escherichia-coli-83333	P0C093	slmA	P0C093	1	1	Nucleoid occlusion factor SlmA
-SLMA	haemophilus-influenzae	P29280	slmA	P29280	0	1	Nucleoid occlusion factor SlmA
-SLMA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GYT1	slmA	A0A0H3GYT1	1	3	Nucleoid occlusion factor SlmA
-SLMA	salmonella-typhimurium	Q8ZL46	slmA	Q8ZL46	1	2	Nucleoid occlusion factor SlmA
-SLMAP	mus-musculus	Q3URD3	Slmap	Q3URD3	3	41	Sarcolemmal membrane-associated protein
-SLMAP	rattus-norvegicus	P0C219	Slmap	P0C219	2	22	Sarcolemmal membrane-associated protein
-SLMO	dictyostelium-discoideum	Q54G07	slmo	Q54G07	1	1	Protein slowmo homolog
+SLM-1	human	Q5VWX1	KHDRBS2	Q5VWX1	14	141	KH domain-containing, RNA-binding, signal transduction-assoc	w
+SLM-2	human	O75525	KHDRBS3	O75525	18	129	KH domain-containing, RNA-binding, signal transduction-assoc	w
+SLM1	cladophialophora-carrionii	A0A1C1CCP0	slm1	A0A1C1CCP0	1	42	Cytoskeletal signaling protein slm1	
+SLM1	human	Q5VWX1	KHDRBS2	Q5VWX1	14	141		
+SLM1	oryza-sativa-subsp-japonica	Q6Z8Z7	SLM1	Q6Z8Z7	0	15	hydroperoxide dehydratase	
+SLM1	schizosaccharomyces-pombe	O94447	slm1	O94447	0	34	Cytoskeletal signaling protein slm1	
+SLM1	yeast	P40485	SLM1	P40485	6	129	Phosphatidylinositol 4,5-bisphosphate-binding protein SLM1	
+SLM2	candida-albicans-237561	A0A1D8PPT0	SLM2	A0A1D8PPT0	4	14	Phosphatidylinositol 4,5-bisphosphate-binding protein	
+SLM2	human	O75525	KHDRBS3	O75525	18	129		
+SLM2	yeast	P53955	SLM2	P53955	7	73	Phosphatidylinositol 4,5-bisphosphate-binding protein SLM2	
+SLM3	yeast	Q12093	SLM3	Q12093	0	8	Mitochondrial tRNA-specific 2-thiouridylase 1	
+SLM4	yeast	P38247	SLM4	P38247	1	23	Protein SLM4	
+SLM5	cladophialophora-carrionii	A0A1C1CGI6	SLM5	A0A1C1CGI6	1	16	Asparagine--tRNA ligase, mitochondrial	
+SLM5	schizosaccharomyces-pombe	Q9P6I0	slm5	Q9P6I0	1	10	Asparagine--tRNA ligase, mitochondrial	
+SLM5	yeast	P25345	SLM5	P25345	3	40	Asparagine--tRNA ligase, mitochondrial	
+SLM6	yeast	P38343	SLM6	P38343	0	1	Protein SLM6	
+SLM9	schizosaccharomyces-pombe	O74309	slm9	O74309	2	40	Histone transcription regulator slm9	
+SLMA	escherichia-coli-83333	P0C093	slmA	P0C093	1	1	Nucleoid occlusion factor SlmA	
+SLMA	haemophilus-influenzae	P29280	slmA	P29280	0	1	Nucleoid occlusion factor SlmA	
+SLMA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GYT1	slmA	A0A0H3GYT1	1	3	Nucleoid occlusion factor SlmA	
+SLMA	salmonella-typhimurium	Q8ZL46	slmA	Q8ZL46	1	2	Nucleoid occlusion factor SlmA	
+SLMAP	fly	FBgn0040011	Slmap	Q9W5R5	15	73	LD47843p (Sarcolemma associated protein, isoform A) (Sarcole	
+SLMAP	human	Q14BN4	SLMAP	Q14BN4	38	186	Sarcolemmal membrane-associated protein (Sarcolemmal-associa	
+SLMAP	mus-musculus	Q3URD3	Slmap	Q3URD3	3	41	Sarcolemmal membrane-associated protein	
+SLMAP	rattus-norvegicus	P0C219	Slmap	P0C219	2	22	Sarcolemmal membrane-associated protein	
+SLMAPA	zebrafish	Q08BE3	slmapa	Q08BE3	4	30	Sarcolemmal membrane-associated protein	
+SLMAP_HUMAN	human	Q14BN4	SLMAP	Q14BN4	38	186		
+SLMB	fly	FBgn0283468	slmb	A0A0B4KHK1	25	111	Supernumerary limbs, isoform B	
+SLMO	dictyostelium-discoideum	Q54G07	slmo	Q54G07	1	1	Protein slowmo homolog	
+SLMO	fly	FBgn0029161	slmo	Q9V3U9	2	8	Protein slowmo	
+SLMO1	human	Q96N28	PRELID3A	Q96N28	6	23		
+SLMO2	human	Q9Y3B1	PRELID3B	Q9Y3B1	18	215		
+SLMP-1	worm	U4PEB6	slmp-1	U4PEB6	0	36	FHA domain-containing protein	

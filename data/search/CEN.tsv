@@ -1,46 +1,453 @@
-CEN	arabidopsis-thaliana	Q9ZNV5	CEN	Q9ZNV5	43	198	Protein CENTRORADIALIS-like
-CEN1	glycine-max	G7Z0B4	CEN1	G7Z0B4	75	394	CENTRORADIALIS-like protein 1
-CEN2	glycine-max	G7Z0B5	CEN2	G7Z0B5	77	394	CEN-like protein 2-like
-CENA	dictyostelium-discoideum	Q54IY3	cenA	Q54IY3	2	9	Centrin-A
-CENATAC	mus-musculus	Q4VA36	Cenatac	Q4VA36	0	1	Centrosomal AT-AC splicing factor
-CENATAC	rattus-norvegicus	D4A553	Cenatac	D4A553	1	3	Centrosomal AT-AC splicing factor
-CENB	dictyostelium-discoideum	Q54X77	cenB	Q54X77	2	40	Centrin-B
-CEND1	mus-musculus	Q9JKC6	Cend1	Q9JKC6	0	3	Cell cycle exit and neuronal differentiation protein 1
-CEND1	rattus-norvegicus	Q5FVI4	Cend1	Q5FVI4	0	2	Cell cycle exit and neuronal differentiation protein 1
-CENH3	arabidopsis-thaliana	Q8RVQ9	CENH3	Q8RVQ9	51	379	Histone H3-like centromeric protein CENH3
-CENH3	oryza-sativa-subsp-japonica	Q6T367	CENH3	Q6T367	47	421	Histone H3-like centromeric protein CENH3
-CENPA	mus-musculus	O35216	Cenpa	O35216	50	160	Histone H3-like centromeric protein A
-CENPA	rattus-norvegicus	A6HAC7	Cenpa	A6HAC7	35	190	Histone H3-like centromeric protein A
-CENPB	mus-musculus	P27790	Cenpb	P27790	1	10	Major centromere autoantigen B
-CENPB	rattus-norvegicus	A0A0G2KAW9	Cenpb	A0A0G2KAW9	1	10	Major centromere autoantigen B
-CENPC	arabidopsis-thaliana	Q66LG9	CENPC	Q66LG9	0	1	Centromere protein C
-CENPC	mus-musculus	P49452	Cenpc	P49452	16	160	Centromere protein C
-CENPC	rattus-norvegicus	E9PSW8	Cenpc	E9PSW8	3	58	Centromere protein C
-CENPH	mus-musculus	Q9QYM8	Cenph	Q9QYM8	6	44	Centromere protein H
-CENPH	rattus-norvegicus	F1M389	Cenph	F1M389	7	44	Centromere protein H
-CENPI	mus-musculus	Q8K1K4	Cenpi	Q8K1K4	11	89	Centromere protein I
-CENPI	rattus-norvegicus	Q63517	Cenpi	Q63517	18	128	Centromere protein I
-CENPK	mus-musculus	Q9ESN5	Cenpk	Q9ESN5	10	43	Centromere protein K
-CENPK	rattus-norvegicus	D4A9X9	Cenpk	D4A9X9	7	46	Centromere protein K
-CENPL	mus-musculus	Q3U3S3	Cenpl	Q3U3S3	4	24	Centromere protein L
-CENPL	rattus-norvegicus	Q3ZAU7	Cenpl	Q3ZAU7	2	36	Centromere protein L
-CENPM	mus-musculus	Q9CQA0	Cenpm	Q9CQA0	8	39	Centromere protein M
-CENPM	rattus-norvegicus	D4AC25	Cenpm	D4AC25	5	49	Centromere protein M
-CENPN	mus-musculus	Q9CZW2	Cenpn	Q9CZW2	3	45	Centromere protein N
-CENPN	rattus-norvegicus	Q7TME4	Cenpn	Q7TME4	12	68	Centromere protein N
-CENPO	mus-musculus	Q8K015	Cenpo	Q8K015	5	34	Centromere protein O
-CENPO	rattus-norvegicus	M0R9I1	Cenpo	M0R9I1	7	46	Centromere protein O
-CENPP	mus-musculus	Q9CZ92	Cenpp	Q9CZ92	7	40	Centromere protein P
-CENPP	rattus-norvegicus	A0A1W2Q6F6	Cenpp	A0A1W2Q6F6	6	71	Centromere protein P
-CENPQ	mus-musculus	Q9CPQ5	Cenpq	Q9CPQ5	3	34	Centromere protein Q
-CENPQ	rattus-norvegicus	Q66H02	Cenpq	Q66H02	5	38	Centromere protein Q
-CENPS	mus-musculus	Q9D084	Cenps	Q9D084	4	87	Centromere protein S
-CENPT	mus-musculus	Q3TJM4	Cenpt	Q3TJM4	10	84	Centromere protein T
-CENPT	rattus-norvegicus	Q561R1	Cenpt	Q561R1	6	75	Centromere protein T
-CENPU	mus-musculus	Q8C4M7	Cenpu	Q8C4M7	14	47	Centromere protein U
-CENPU	rattus-norvegicus	Q4V8G7	Cenpu	Q4V8G7	13	42	Centromere protein U
-CENPV	mus-musculus	Q9CXS4	Cenpv	Q9CXS4	0	11	Centromere protein V
-CENPV	rattus-norvegicus	D4A9A3	Cenpv	D4A9A3	0	3	Centromere protein V
-CENPW	mus-musculus	Q3URR0	Cenpw	Q3URR0	9	35	Centromere protein W
-CENPW	rattus-norvegicus	A1L1L1	Cenpw	A1L1L1	7	35	Centromere protein W
-CENPX	mus-musculus	Q8C4X1	Cenpx	Q8C4X1	4	53	Centromere protein X
+CEN	arabidopsis-thaliana	Q9ZNV5	CEN	Q9ZNV5	43	198	Protein CENTRORADIALIS-like	
+CEN	fly	FBgn0032876	Cen	Q9VIK6	9	23	Centrocortin, isoform A (Centrocortin, isoform B) (LD41224p)	
+CEN1	glycine-max	G7Z0B4	CEN1	G7Z0B4	75	394	CENTRORADIALIS-like protein 1	
+CEN1	human	Q12798	CETN1	Q12798	45	200		
+CEN2	glycine-max	G7Z0B5	CEN2	G7Z0B5	77	394	CEN-like protein 2-like	
+CEN2	human	P41208	CETN2	P41208	53	386		
+CEN3	human	O15182	CETN3	O15182	29	146		
+CENA	dictyostelium-discoideum	Q54IY3	cenA	Q54IY3	2	9	Centrin-A	
+CENATAC	human	Q86UT8	CENATAC	Q86UT8	19	114	Centrosomal AT-AC splicing factor (Coiled-coil domain-contai	
+CENATAC	mus-musculus	Q4VA36	Cenatac	Q4VA36	0	1	Centrosomal AT-AC splicing factor	
+CENATAC	rattus-norvegicus	D4A553	Cenatac	D4A553	1	3	Centrosomal AT-AC splicing factor	
+CENATAC	zebrafish	F1QIL3	cenatac	F1QIL3	1	2	Coiled-coil domain containing 84	
+CENB	dictyostelium-discoideum	Q54X77	cenB	Q54X77	2	40	Centrin-B	
+CENB1A	fly	FBgn0039056	CenB1A	Q9VCQ6	3	16	Centaurin beta 1A (MIP17913p)	
+CEND1	human	Q8N111	CEND1	Q8N111	13	165	Cell cycle exit and neuronal differentiation protein 1 (BM88	
+CEND1	mus-musculus	Q9JKC6	Cend1	Q9JKC6	0	3	Cell cycle exit and neuronal differentiation protein 1	
+CEND1	rattus-norvegicus	Q5FVI4	Cend1	Q5FVI4	0	2	Cell cycle exit and neuronal differentiation protein 1	
+CEND_HUMAN	human	Q8N111	CEND1	Q8N111	13	165		
+CENEXIN	human	Q5BJF6	ODF2	Q5BJF6	98	289	Outer dense fiber protein 2 (Cenexin) (Outer dense fiber of 	w
+CENG1A	fly	FBgn0028509	CenG1A	Q9NGC3	4	52	Centaurin-gamma-1A	
+CENG1A-PA	fly	FBgn0028509	CenG1A	Q9NGC3	4	52		
+CENH3	arabidopsis-thaliana	Q8RVQ9	CENH3	Q8RVQ9	51	379	Histone H3-like centromeric protein CENH3	
+CENH3	oryza-sativa-subsp-japonica	Q6T367	CENH3	Q6T367	47	421	Histone H3-like centromeric protein CENH3	
+CENL1_HUMAN	human	A0A0U1RR11	CENPVL1	A0A0U1RR11	2	11		
+CENL2_HUMAN	human	P0DPI3	CENPVL2	P0DPI3	1	5		
+CENL3_HUMAN	human	A0A0U1RRI6	CENPVL3	A0A0U1RRI6	5	15		
+CENP-27	human	Q96DE5	ANAPC16	Q96DE5	22	230		
+CENP-28	human	Q9HAF1	MEAF6	Q9HAF1	30	171		
+CENP-29	human	Q9UEE9	CFDP1	Q9UEE9	27	116		
+CENP-30	human	Q9NVF7	FBXO28	Q9NVF7	47	129		
+CENP-31	human	Q8IWS0	PHF6	Q8IWS0	27	525		
+CENP-32	human	Q5T280	SPOUT1	Q5T280	12	279	28S rRNA (uridine-N(3))-methyltransferase (EC 2.1.1.-) (Cent	w
+CENP-33	human	Q9UFC0	LRWD1	Q9UFC0	114	236		
+CENP-34	human	P50749	RASSF2	P50749	36	128		
+CENP-35	human	O75151	PHF2	O75151	49	149		
+CENP-36	human	Q7Z3B3	KANSL1	Q7Z3B3	86	342		
+CENP-50	human	Q71F23	CENPU	Q71F23	58	295	Centromere protein U (CENP-U) (Centromere protein of 50 kDa)	w
+CENP-A	fly	FBgn0040477	cid	Q9V6Q2	12	45	Histone H3-like centromeric protein cid (CENP-A homolog) (Ce	w
+CENP-A	human	P49450	CENPA	P49450	94	623	Histone H3-like centromeric protein A (Centromere autoantige	w
+CENP-ANA	fly	FBgn0040233	cana	Q9VKH9	1	2	CENP-ana, isoform A (EC 5.6.1.3)	w
+CENP-B	human	P07199	CENPB	P07199	11	147	Major centromere autoantigen B (Centromere protein B) (CENP-	w
+CENP-C	fly	FBgn0266916	Cenp-C	Q9VHP9	16	43	Centromeric protein-C, isoform A (FI18815p1)	
+CENP-C	human	Q03188	CENPC	Q03188	98	420	Centromere protein C (CENP-C) (Centromere autoantigen C) (Ce	w
+CENP-C-LIKE	worm	G5EDA3	hcp-4	G5EDA3	0	15	CENP-C-like protein HCP-4	w
+CENP-E	human	Q02224	CENPE	Q02224	50	457	Centromere-associated protein E (Centromere protein E) (CENP	w
+CENP-F	human	P49454	CENPF	P49454	5	85	Centromere protein F (CENP-F) (AH antigen) (Kinetochore prot	w
+CENP-H	human	Q9H3R5	CENPH	Q9H3R5	51	310	Centromere protein H (CENP-H) (Interphase centromere complex	w
+CENP-I	human	Q92674	CENPI	Q92674	51	401	Centromere protein I (CENP-I) (FSH primary response protein 	w
+CENP-J	human	Q9HC77	CPAP	Q9HC77	99	320	Centrosomal P4.1-associated protein (Centromere protein J) (	w
+CENP-K	human	Q9BS16	CENPK	Q9BS16	48	459	Centromere protein K (CENP-K) (Interphase centromere complex	w
+CENP-L	human	Q8N0S6	CENPL	Q8N0S6	13	121	Centromere protein L (CENP-L) (Interphase centromere complex	w
+CENP-M	human	Q9NSP4	CENPM	Q9NSP4	30	320	Centromere protein M (CENP-M) (Interphase centromere complex	w
+CENP-META	fly	FBgn0040232	cmet	Q9VKI0	2	16	CENP-meta, isoform C (EC 5.6.1.3)	w
+CENP-N	human	Q96H22	CENPN	Q96H22	26	201	Centromere protein N (CENP-N) (Interphase centromere complex	w
+CENP-O	human	Q9BU64	CENPO	Q9BU64	43	309	Centromere protein O (CENP-O) (Interphase centromere complex	w
+CENP-P	human	Q6IPU0	CENPP	Q6IPU0	30	234	Centromere protein P (CENP-P)	w
+CENP-Q	human	Q7L2Z9	CENPQ	Q7L2Z9	52	208	Centromere protein Q (CENP-Q)	w
+CENP-R	human	Q13352	ITGB3BP	Q13352	30	118	Centromere protein R (CENP-R) (Beta-3-endonexin) (Integrin b	w
+CENP-S	human	Q8N2Z9	CENPS	Q8N2Z9	19	148	Centromere protein S (CENP-S) (Apoptosis-inducing TAF9-like 	w
+CENP-T	human	Q96BT3	CENPT	Q96BT3	61	297	Centromere protein T (CENP-T) (Interphase centromere complex	w
+CENP-U	human	Q71F23	CENPU	Q71F23	58	295	Centromere protein U (CENP-U) (Centromere protein of 50 kDa)	w
+CENP-V	human	Q7Z7K6	CENPV	Q7Z7K6	16	198	Centromere protein V (CENP-V) (Nuclear protein p30) (Proline	w
+CENP-V	worm	Q8MNR9	CELE_F25B4.8	Q8MNR9	0	18	CENP-V/GFA domain-containing protein	w
+CENP-W	human	Q5EE01	CENPW	Q5EE01	34	327	Centromere protein W (CENP-W) (Cancer-up-regulated gene 2 pr	w
+CENP-X	human	A8MT69	CENPX	A8MT69	22	136	Centromere protein X (CENP-X) (FANCM-associated histone fold	w
+CENP-Y	human	Q8N954	GPATCH11	Q8N954	9	89	G patch domain-containing protein 11 (Centromeric protein Y)	w
+CENP-Z	human	Q8N554	ZNF276	Q8N554	9	42		
+CENP1_HUMAN	human	B2RD01	CENPBD1P	B2RD01	0	3		
+CENPA	human	P49450	CENPA	P49450	94	623	Histone H3-like centromeric protein A (Centromere autoantige	
+CENPA	mus-musculus	O35216	Cenpa	O35216	50	160	Histone H3-like centromeric protein A	
+CENPA	rattus-norvegicus	A6HAC7	Cenpa	A6HAC7	35	190	Histone H3-like centromeric protein A	
+CENPA	zebrafish	Q803H4	cenpa	Q803H4	35	207	Histone H3-like centromeric protein A	
+CENPA_HUMAN	human	P49450	CENPA	P49450	94	623		
+CENPB	human	B2RD01	CENPBD1P	B2RD01	0	3	Putative CENPB DNA-binding domain-containing protein 1	w
+CENPB	human	P07199	CENPB	P07199	11	147	Major centromere autoantigen B (Centromere protein B) (CENP-	
+CENPB	mus-musculus	P27790	Cenpb	P27790	1	10	Major centromere autoantigen B	
+CENPB	rattus-norvegicus	A0A0G2KAW9	Cenpb	A0A0G2KAW9	1	10	Major centromere autoantigen B	
+CENPB-TYPE	worm	A0A8D9N0J4	CELE_Y53G8AM.8	A0A8D9N0J4	0	2	HTH CENPB-type domain-containing protein	w
+CENPB-TYPE	worm	Q19682	CELE_F21D5.4	Q19682	0	4	HTH CENPB-type domain-containing protein	w
+CENPBD1	human	B2RD01	CENPBD1P	B2RD01	0	3		
+CENPBD1P	human	B2RD01	CENPBD1P	B2RD01	0	3	Putative CENPB DNA-binding domain-containing protein 1	
+CENPB_HUMAN	human	P07199	CENPB	P07199	11	147		
+CENPC	arabidopsis-thaliana	Q66LG9	CENPC	Q66LG9	0	1	Centromere protein C	
+CENPC	human	Q03188	CENPC	Q03188	98	420	Centromere protein C (CENP-C) (Centromere autoantigen C) (Ce	
+CENPC	mus-musculus	P49452	Cenpc	P49452	16	160	Centromere protein C	
+CENPC	rattus-norvegicus	E9PSW8	Cenpc	E9PSW8	3	58	Centromere protein C	
+CENPC1	human	Q03188	CENPC	Q03188	98	420		
+CENPC_HUMAN	human	Q03188	CENPC	Q03188	98	420		
+CENPE	human	Q02224	CENPE	Q02224	50	457	Centromere-associated protein E (Centromere protein E) (CENP	
+CENPE_HUMAN	human	Q02224	CENPE	Q02224	50	457		
+CENPF	human	P49454	CENPF	P49454	5	85	Centromere protein F (CENP-F) (AH antigen) (Kinetochore prot	
+CENPF_HUMAN	human	P49454	CENPF	P49454	5	85		
+CENPH	human	Q9H3R5	CENPH	Q9H3R5	51	310	Centromere protein H (CENP-H) (Interphase centromere complex	
+CENPH	mus-musculus	Q9QYM8	Cenph	Q9QYM8	6	44	Centromere protein H	
+CENPH	rattus-norvegicus	F1M389	Cenph	F1M389	7	44	Centromere protein H	
+CENPH	zebrafish	A8WHV8	cenph	A8WHV8	11	54	Centromere protein H	
+CENPH_HUMAN	human	Q9H3R5	CENPH	Q9H3R5	51	310		
+CENPI	human	Q92674	CENPI	Q92674	51	401	Centromere protein I (CENP-I) (FSH primary response protein 	
+CENPI	mus-musculus	Q8K1K4	Cenpi	Q8K1K4	11	89	Centromere protein I	
+CENPI	rattus-norvegicus	Q63517	Cenpi	Q63517	18	128	Centromere protein I	
+CENPI	zebrafish	F1QJK1	cenpi	F1QJK1	27	178	Centromere protein I	
+CENPI_HUMAN	human	Q92674	CENPI	Q92674	51	401		
+CENPJ	human	Q9HC77	CPAP	Q9HC77	99	320		
+CENPJ_HUMAN	human	Q9HC77	CPAP	Q9HC77	99	320		
+CENPK	human	Q9BS16	CENPK	Q9BS16	48	459	Centromere protein K (CENP-K) (Interphase centromere complex	
+CENPK	mus-musculus	Q9ESN5	Cenpk	Q9ESN5	10	43	Centromere protein K	
+CENPK	rattus-norvegicus	D4A9X9	Cenpk	D4A9X9	7	46	Centromere protein K	
+CENPK	zebrafish	A0A8M1NZ19	cenpk	A0A8M1NZ19	9	43	Centromere protein K	
+CENPK_HUMAN	human	Q9BS16	CENPK	Q9BS16	48	459		
+CENPL	human	Q8N0S6	CENPL	Q8N0S6	13	121	Centromere protein L (CENP-L) (Interphase centromere complex	
+CENPL	mus-musculus	Q3U3S3	Cenpl	Q3U3S3	4	24	Centromere protein L	
+CENPL	rattus-norvegicus	Q3ZAU7	Cenpl	Q3ZAU7	2	36	Centromere protein L	
+CENPL	zebrafish	Q6DRD4	cenpl	Q6DRD4	2	22	Centromere protein L	
+CENPL_HUMAN	human	Q8N0S6	CENPL	Q8N0S6	13	121		
+CENPM	human	Q9NSP4	CENPM	Q9NSP4	30	320	Centromere protein M (CENP-M) (Interphase centromere complex	
+CENPM	mus-musculus	Q9CQA0	Cenpm	Q9CQA0	8	39	Centromere protein M	
+CENPM	rattus-norvegicus	D4AC25	Cenpm	D4AC25	5	49	Centromere protein M	
+CENPM	zebrafish	Q7ZZC6	cenpm	Q7ZZC6	5	40	Centromere protein M	
+CENPM_HUMAN	human	Q9NSP4	CENPM	Q9NSP4	30	320		
+CENPN	human	Q96H22	CENPN	Q96H22	26	201	Centromere protein N (CENP-N) (Interphase centromere complex	
+CENPN	mus-musculus	Q9CZW2	Cenpn	Q9CZW2	3	45	Centromere protein N	
+CENPN	rattus-norvegicus	Q7TME4	Cenpn	Q7TME4	12	68	Centromere protein N	
+CENPN	zebrafish	Q6DHP4	cenpn	Q6DHP4	8	92	Centromere protein N	
+CENPN_HUMAN	human	Q96H22	CENPN	Q96H22	26	201		
+CENPO	human	Q9BU64	CENPO	Q9BU64	43	309	Centromere protein O (CENP-O) (Interphase centromere complex	
+CENPO	mus-musculus	Q8K015	Cenpo	Q8K015	5	34	Centromere protein O	
+CENPO	rattus-norvegicus	M0R9I1	Cenpo	M0R9I1	7	46	Centromere protein O	
+CENPO	zebrafish	A0AB32T3E2	cenpo	A0AB32T3E2	5	48	Centromere protein O	
+CENPO_HUMAN	human	Q9BU64	CENPO	Q9BU64	43	309		
+CENPP	human	Q6IPU0	CENPP	Q6IPU0	30	234	Centromere protein P (CENP-P)	
+CENPP	mus-musculus	Q9CZ92	Cenpp	Q9CZ92	7	40	Centromere protein P	
+CENPP	rattus-norvegicus	A0A1W2Q6F6	Cenpp	A0A1W2Q6F6	6	71	Centromere protein P	
+CENPP	zebrafish	Q1LV50	cenpp	Q1LV50	11	115	Centromere protein P	
+CENPP_HUMAN	human	Q6IPU0	CENPP	Q6IPU0	30	234		
+CENPQ	human	Q7L2Z9	CENPQ	Q7L2Z9	52	208	Centromere protein Q (CENP-Q)	
+CENPQ	mus-musculus	Q9CPQ5	Cenpq	Q9CPQ5	3	34	Centromere protein Q	
+CENPQ	rattus-norvegicus	Q66H02	Cenpq	Q66H02	5	38	Centromere protein Q	
+CENPQ_HUMAN	human	Q7L2Z9	CENPQ	Q7L2Z9	52	208		
+CENPR	human	Q13352	ITGB3BP	Q13352	30	118		
+CENPR_HUMAN	human	Q13352	ITGB3BP	Q13352	30	118		
+CENPS	human	Q8N2Z9	CENPS	Q8N2Z9	19	148	Centromere protein S (CENP-S) (Apoptosis-inducing TAF9-like 	
+CENPS	mus-musculus	Q9D084	Cenps	Q9D084	4	87	Centromere protein S	
+CENPS	zebrafish	B3DJV8	cenps	B3DJV8	6	84	Centromere protein S	
+CENPS-CORT	human	A0A087WT10	CENPS-CORT	A0A087WT10	4	24	Centromere protein S	
+CENPS_HUMAN	human	Q8N2Z9	CENPS	Q8N2Z9	19	148		
+CENPT	human	Q96BT3	CENPT	Q96BT3	61	297	Centromere protein T (CENP-T) (Interphase centromere complex	
+CENPT	mus-musculus	Q3TJM4	Cenpt	Q3TJM4	10	84	Centromere protein T	
+CENPT	rattus-norvegicus	Q561R1	Cenpt	Q561R1	6	75	Centromere protein T	
+CENPT	zebrafish	E9QIT3	cenpt	E9QIT3	10	72	Centromere protein T	
+CENPT_HUMAN	human	Q96BT3	CENPT	Q96BT3	61	297		
+CENPU	human	Q71F23	CENPU	Q71F23	58	295	Centromere protein U (CENP-U) (Centromere protein of 50 kDa)	
+CENPU	mus-musculus	Q8C4M7	Cenpu	Q8C4M7	14	47	Centromere protein U	
+CENPU	rattus-norvegicus	Q4V8G7	Cenpu	Q4V8G7	13	42	Centromere protein U	
+CENPU	zebrafish	E7FCV0	cenpu	E7FCV0	8	44	Centromere protein U	
+CENPU_HUMAN	human	Q71F23	CENPU	Q71F23	58	295		
+CENPV	human	Q7Z7K6	CENPV	Q7Z7K6	16	198	Centromere protein V (CENP-V) (Nuclear protein p30) (Proline	
+CENPV	mus-musculus	Q9CXS4	Cenpv	Q9CXS4	0	11	Centromere protein V	
+CENPV	rattus-norvegicus	D4A9A3	Cenpv	D4A9A3	0	3	Centromere protein V	
+CENPVL1	human	A0A0U1RR11	CENPVL1	A0A0U1RR11	2	11	Centromere protein V-like protein 1 (Centromere protein V ps	
+CENPVL2	human	P0DPI3	CENPVL2	P0DPI3	1	5	Centromere protein V-like protein 2 (Centromere protein V ps	
+CENPVL3	human	A0A0U1RRI6	CENPVL3	A0A0U1RRI6	5	15	Centromere protein V-like protein 3 (Centromere protein V ps	
+CENPVP1	human	A0A0U1RR11	CENPVL1	A0A0U1RR11	2	11		
+CENPVP2	human	P0DPI3	CENPVL2	P0DPI3	1	5		
+CENPVP3	human	A0A0U1RRI6	CENPVL3	A0A0U1RRI6	5	15		
+CENPV_HUMAN	human	Q7Z7K6	CENPV	Q7Z7K6	16	198		
+CENPW	human	Q5EE01	CENPW	Q5EE01	34	327	Centromere protein W (CENP-W) (Cancer-up-regulated gene 2 pr	
+CENPW	mus-musculus	Q3URR0	Cenpw	Q3URR0	9	35	Centromere protein W	
+CENPW	rattus-norvegicus	A1L1L1	Cenpw	A1L1L1	7	35	Centromere protein W	
+CENPW	zebrafish	A0A0R4ISL4	cenpw	A0A0R4ISL4	6	34	Centromere protein W	
+CENPW_HUMAN	human	Q5EE01	CENPW	Q5EE01	34	327		
+CENPX	human	A8MT69	CENPX	A8MT69	22	136	Centromere protein X (CENP-X) (FANCM-associated histone fold	
+CENPX	mus-musculus	Q8C4X1	Cenpx	Q8C4X1	4	53	Centromere protein X	
+CENPX	zebrafish	E7F1X6	cenpx	E7F1X6	4	63	Centromere protein X	
+CENPX_HUMAN	human	A8MT69	CENPX	A8MT69	22	136		
+CENTA1	human	O75689	ADAP1	O75689	3	92		
+CENTA2	human	Q9NPF8	ADAP2	Q9NPF8	7	68		
+CENTAURIN	fly	FBgn0039056	CenB1A	Q9VCQ6	3	16	Centaurin beta 1A (MIP17913p)	w
+CENTAURIN-ALPHA-1	human	O75689	ADAP1	O75689	3	92	Arf-GAP with dual PH domain-containing protein 1 (Centaurin-	w
+CENTAURIN-ALPHA-2	human	Q9NPF8	ADAP2	Q9NPF8	7	68	Arf-GAP with dual PH domain-containing protein 2 (Centaurin-	w
+CENTAURIN-BETA-1	human	Q15027	ACAP1	Q15027	20	121	Arf-GAP with coiled-coil, ANK repeat and PH domain-containin	w
+CENTAURIN-BETA-2	human	Q15057	ACAP2	Q15057	26	163	Arf-GAP with coiled-coil, ANK repeat and PH domain-containin	w
+CENTAURIN-BETA-5	human	Q96P50	ACAP3	Q96P50	16	92	Arf-GAP with coiled-coil, ANK repeat and PH domain-containin	w
+CENTAURIN-DELTA-1	human	Q8WZ64	ARAP2	Q8WZ64	19	110	Arf-GAP with Rho-GAP domain, ANK repeat and PH domain-contai	w
+CENTAURIN-DELTA-2	human	Q96P48	ARAP1	Q96P48	43	215	Arf-GAP with Rho-GAP domain, ANK repeat and PH domain-contai	w
+CENTAURIN-DELTA-3	human	Q8WWN8	ARAP3	Q8WWN8	51	278	Arf-GAP with Rho-GAP domain, ANK repeat and PH domain-contai	w
+CENTAURIN-GAMMA-1	human	Q99490	AGAP2	Q99490	28	114	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTAURIN-GAMMA-1A	fly	FBgn0028509	CenG1A	Q9NGC3	4	52	Centaurin-gamma-1A	w
+CENTAURIN-GAMMA-2	human	Q9UPQ3	AGAP1	Q9UPQ3	27	197	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTAURIN-GAMMA-3	human	Q96P47	AGAP3	Q96P47	27	156	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTAURIN-GAMMA-LIKE	human	A6NIR3	AGAP5	A6NIR3	3	22	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTAURIN-GAMMA-LIKE	human	Q5VTM2	AGAP9	Q5VTM2	1	9	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTAURIN-GAMMA-LIKE	human	Q5VW22	AGAP6	Q5VW22	6	43	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTAURIN-GAMMA-LIKE	human	Q8TF27	AGAP11	Q8TF27	0	18	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTAURIN-GAMMA-LIKE	human	Q96P64	AGAP4	Q96P64	1	14	Arf-GAP with GTPase, ANK repeat and PH domain-containing pro	w
+CENTB1	human	Q15027	ACAP1	Q15027	20	121		
+CENTB2	human	Q15057	ACAP2	Q15057	26	163		
+CENTB5	human	Q96P50	ACAP3	Q96P50	16	92		
+CENTD1	human	Q8WZ64	ARAP2	Q8WZ64	19	110		
+CENTD2	human	Q96P48	ARAP1	Q96P48	43	215		
+CENTD3	human	Q8WWN8	ARAP3	Q8WWN8	51	278		
+CENTER	human	Q12851	MAP4K2	Q12851	35	243	Mitogen-activated protein kinase kinase kinase kinase 2 (EC 	w
+CENTER	human	Q68CJ6	NUGGC	Q68CJ6	1	18	Nuclear GTPase SLIP-GC (EC 3.6.1.-) (Speckled-like pattern i	w
+CENTER	human	Q86WD7	SERPINA9	Q86WD7	6	53	Serpin A9 (Centerin) (Germinal center B-cell-expressed trans	w
+CENTER	human	Q8IVH8	MAP4K3	Q8IVH8	48	252	Mitogen-activated protein kinase kinase kinase kinase 3 (EC 	w
+CENTER	human	Q8N6F7	GCSAM	Q8N6F7	14	107	Germinal center-associated signaling and motility protein (G	w
+CENTER	worm	G5EEN4	gck-3	G5EEN4	12	64	Germinal center kinase 3 (EC 2.7.11.1) (STE20-like serine/th	w
+CENTER	worm	H2L099	gck-1	H2L099	8	55	Germinal center kinase 1 (EC 2.7.11.1)	w
+CENTER	zebrafish	F6P8C7	nuggc.3	F6P8C7	0	1	Nuclear GTPase, germinal center associated, tandem duplicate	w
+CENTER-ASSOCIATED	human	Q5JQS6	GCSAML	Q5JQS6	10	62	Germinal center-associated signaling and motility-like prote	w
+CENTER-ASSOCIATED	human	Q6UX34	SNORC	Q6UX34	10	86	Protein SNORC (Secondary ossification center-associated regu	w
+CENTER-ASSOCIATED	human	Q8N6F7	GCSAM	Q8N6F7	14	107	Germinal center-associated signaling and motility protein (G	w
+CENTERIN	human	Q86WD7	SERPINA9	Q86WD7	6	53	Serpin A9 (Centerin) (Germinal center B-cell-expressed trans	w
+CENTERS	worm	Q9N4I5	CELE_Y71F9AL.12	Q9N4I5	4	106	Increased recombination centers protein 6	w
+CENTERS	yeast	P40006	IRC22	P40006	0	12	Increased recombination centers protein 22	w
+CENTERS	yeast	P43615	IRC6	P43615	9	111	Increased recombination centers protein 6	w
+CENTERS	yeast	Q02733	IRC15	Q02733	2	37	Increased recombination centers protein 15	w
+CENTERS	yeast	Q04772	IRC21	Q04772	0	8	Increased recombination centers protein 21	w
+CENTERS	yeast	Q07843	IRC19	Q07843	1	5	Increased recombination centers protein 19	w
+CENTERS	yeast	Q08416	IRC23	Q08416	0	3	Increased recombination centers protein 23	w
+CENTERS	yeast	Q12479	IRC11	Q12479	0	2	Putative increased recombination centers protein 11	w
+CENTG1	human	Q99490	AGAP2	Q99490	28	114		
+CENTG2	human	Q9UPQ3	AGAP1	Q9UPQ3	27	197		
+CENTG3	human	Q96P47	AGAP3	Q96P47	27	156		
+CENTLEIN	human	Q9NXG0	CNTLN	Q9NXG0	48	112	Centlein (Centrosomal protein)	w
+CENTLEIN	zebrafish	F1QX00	cntln	F1QX00	1	4	Centlein isoform X1	w
+CENTRACTIN	human	P61163	ACTR1A	P61163	73	398	Alpha-centractin (Centractin) (ARP1) (Actin-RPV) (Centrosome	w
+CENTRACTIN	yeast	P38696	ARP1	P38696	11	97	Centractin	w
+CENTRACTIN	zebrafish	Q7ZUZ2	actr1b	Q7ZUZ2	41	205	Actin related protein 1, centractin	w
+CENTRAL	fly	FBgn0024194	rasp	Q9VZU2	6	31	Protein-cysteine N-palmitoyltransferase Rasp (EC 2.3.1.-) (P	w
+CENTRAL	fly	FBgn0025874	Meics	O96395	33	365	LD05664p (Meiotic central spindle, isoform A) (Zinc finger m	w
+CENTRAL	fly	FBgn0038452	Ccdc114	Q9VES4	9	31	ODAD1 central coiled coil region domain-containing protein	w
+CENTRAL	fly	FBgn0039490	CG5882	Q9VB72	0	1	Cilia- and flagella-associated protein 58 central coiled coi	w
+CENTRAL	fly	FBgn0039491	CG6059	Q9VB71	1	1	Cilia- and flagella-associated protein 58 central coiled coi	w
+CENTRAL	fly	FBgn0287645	ccb	Q9VRF5	0	5	central complex broad	w
+CENTRAL	human	A1L190	SYCE3	A1L190	16	137	Synaptonemal complex central element protein 3 (Testis highl	w
+CENTRAL	human	A8MT33	SYCE1L	A8MT33	22	81	Synaptonemal complex central element protein 1-like (Meiosis	w
+CENTRAL	human	Q69383	ERVK-6	Q69383	0	3	Endogenous retrovirus group K member 6 Rec protein (Central 	w
+CENTRAL	human	Q6PIF2	SYCE2	Q6PIF2	7	90	Synaptonemal complex central element protein 2 (Central elem	w
+CENTRAL	human	Q8N0S2	SYCE1	Q8N0S2	76	157	Synaptonemal complex central element protein 1 (Cancer/testi	w
+CENTRAL	human	Q8N8B7	TCEANC	Q8N8B7	35	226	Transcription elongation factor A N-terminal and central dom	w
+CENTRAL	human	Q96MN5	TCEANC2	Q96MN5	10	177	Transcription elongation factor A N-terminal and central dom	w
+CENTRAL	worm	H2KYN6	smk-1	H2KYN6	20	73	Serine/threonine-protein phosphatase 4 regulatory subunit 3-	w
+CENTRAL	worm	Q93456	ercc-1	Q93456	5	39	ERCC1-like central domain-containing protein	w
+CENTRAL	worm	Q9BL99	C36E6.2	Q9BL99	0	9	Next to BRCA1 central domain-containing protein	w
+CENTRAL	zebrafish	B0UYI1	tceanc2	B0UYI1	8	100	Transcription elongation factor A N-terminal and central dom	w
+CENTRAL	zebrafish	B3DHF5	LOC100005931	B3DHF5	3	7	Synaptonemal complex central element protein 3	w
+CENTRIN	zebrafish	A0A0R4IVN1	cetn2	A0A0R4IVN1	6	58	Centrin, EF-hand protein, 2	w
+CENTRIN	zebrafish	F1R789	cetn4	F1R789	11	85	Centrin 4	w
+CENTRIN-1	human	Q12798	CETN1	Q12798	45	200	Centrin-1 (Caltractin isoform 2)	w
+CENTRIN-2	human	P41208	CETN2	P41208	53	386	Centrin-2 (Caltractin isoform 1)	w
+CENTRIN-3	human	O15182	CETN3	O15182	29	146	Centrin-3	w
+CENTRIOLAR	fly	FBgn0031191	Cp110	Q2PDW6	7	25	Centriolar coiled coil protein 110kDa, isoform B (Centriolar	w
+CENTRIOLAR	fly	FBgn0087041	Hyls1	B7YZW2	0	0	Hyls1 centriolar and ciliogenesis associated	w
+CENTRIOLAR	human	O43303	CCP110	O43303	72	356	Centriolar coiled-coil protein of 110 kDa (Centrosomal prote	w
+CENTRIOLAR	human	O75665	OFD1	O75665	99	405	Centriole and centriolar satellite protein OFD1 (Oral-facial	w
+CENTRIOLAR	human	Q8IUZ0	LRRC49	Q8IUZ0	25	162	Leucine-rich repeat-containing protein 49 (Centriolar satell	w
+CENTRIOLAR	human	Q8NBT0	POC1A	Q8NBT0	43	191	POC1 centriolar protein homolog A (Pix2) (Proteome of centri	w
+CENTRIOLAR	human	Q8TC44	POC1B	Q8TC44	18	142	POC1 centriolar protein homolog B (Pix1) (Proteome of centri	w
+CENTRIOLAR	human	Q96M11	HYLS1	Q96M11	5	20	Centriolar and ciliogenesis-associated protein HYLS1 (Hydrol	w
+CENTRIOLAR	human	Q9H6J7	CSTPP1	Q9H6J7	13	123	Centriolar satellite-associated tubulin polyglutamylase comp	w
+CENTRIOLAR	worm	Q95X94	hyls-1	Q95X94	1	5	Centriolar and ciliogenesis-associated protein hyls-1	w
+CENTRIOLAR	zebrafish	A0A0R4I9S3	cp110	A0A0R4I9S3	6	13	Centriolar coiled-coil protein of 110 kDa isoform X1	w
+CENTRIOLAR	zebrafish	A2CEH0	poc1b	A2CEH0	5	84	POC1 centriolar protein homolog B	w
+CENTRIOLAR	zebrafish	Q6DGK9	cstpp1	Q6DGK9	1	5	Centriolar satellite-associated tubulin polyglutamylase comp	w
+CENTRIOLAR	zebrafish	Q7SZK7	ofd1	Q7SZK7	5	14	Centriole and centriolar satellite protein ofd1	w
+CENTRIOLAR	zebrafish	Q7ZVF0	poc1a	Q7ZVF0	6	82	POC1 centriolar protein homolog A	w
+CENTRIOLE	human	O75665	OFD1	O75665	99	405	Centriole and centriolar satellite protein OFD1 (Oral-facial	w
+CENTRIOLE	human	Q6IQ19	CCSAP	Q6IQ19	2	13	Centriole, cilia and spindle-associated protein	w
+CENTRIOLE	human	Q8NA72	POC5	Q8NA72	35	163	Centrosomal protein POC5 (Protein of centriole 5) (hPOC5)	w
+CENTRIOLE	human	Q8NBT0	POC1A	Q8NBT0	43	191	POC1 centriolar protein homolog A (Pix2) (Proteome of centri	w
+CENTRIOLE	human	Q8TC44	POC1B	Q8TC44	18	142	POC1 centriolar protein homolog B (Pix1) (Proteome of centri	w
+CENTRIOLE	human	Q9HC77	CPAP	Q9HC77	99	320	Centrosomal P4.1-associated protein (Centromere protein J) (	w
+CENTRIOLE	zebrafish	A0A0R4IQQ3	ccsapa	A0A0R4IQQ3	0	7	Centriole, cilia and spindle-associated protein	w
+CENTRIOLE	zebrafish	Q7SZK7	ofd1	Q7SZK7	5	14	Centriole and centriolar satellite protein ofd1	w
+CENTRIOLE-ASSOCIATED	human	Q76KD6	SPATC1	Q76KD6	0	16	Speriolin (Spermatogenesis and centriole-associated protein 	w
+CENTRIOLE-ASSOCIATED	human	Q8N0Z3	SPICE1	Q8N0Z3	56	222	Spindle and centriole-associated protein 1 (Coiled-coil doma	w
+CENTRIOLE-ASSOCIATED	human	Q9H0A9	SPATC1L	Q9H0A9	12	83	Speriolin-like protein (Spermatogenesis and centriole-associ	w
+CENTRIOLE-ASSOCIATED	human	Q9ULJ1	ODF2L	Q9ULJ1	30	117	Protein BCAP (Basal body centriole-associated protein) (Oute	w
+CENTRIOLE-ASSOCIATED	zebrafish	A0A2R8Q094	spice1	A0A2R8Q094	0	1	Spindle and centriole-associated protein 1	w
+CENTRIOLES	fly	FBgn0036354	Poc1	M9PCD6	5	36	Proteome of centrioles 1, isoform B	w
+CENTRIOLIN	human	Q7Z7A1	CNTRL	Q7Z7A1	50	287	Centriolin (Centrosomal protein 1) (Centrosomal protein of 1	w
+CENTROBIN	fly	FBgn0035295	Cnb	Q9I7U5	6	14	Centrobin, isoform A (Centrobin, isoform B)	w
+CENTROBIN	human	Q8N137	CNTROB	Q8N137	41	220	Centrobin (Centrosomal BRCA2-interacting protein) (LYST-inte	w
+CENTROCORTIN	fly	FBgn0032876	Cen	Q9VIK6	9	23	Centrocortin, isoform A (Centrocortin, isoform B) (LD41224p)	w
+CENTROMERE	fly	FBgn0004643	Zw10	Q9W4X9	7	51	Centromere/kinetochore protein zw10 (Mitotic 15 protein)	w
+CENTROMERE	fly	FBgn0040477	cid	Q9V6Q2	12	45	Histone H3-like centromeric protein cid (CENP-A homolog) (Ce	w
+CENTROMERE	fly	FBgn0260991	Incenp	Q7JRJ9	13	69	Inner centromere protein, isoform A (Inner centromere protei	w
+CENTROMERE	human	A0A087WT10	CENPS-CORT	A0A087WT10	4	24	Centromere protein S	w
+CENTROMERE	human	A0A0U1RR11	CENPVL1	A0A0U1RR11	2	11	Centromere protein V-like protein 1 (Centromere protein V ps	w
+CENTROMERE	human	A0A0U1RRI6	CENPVL3	A0A0U1RRI6	5	15	Centromere protein V-like protein 3 (Centromere protein V ps	w
+CENTROMERE	human	A8MT69	CENPX	A8MT69	22	136	Centromere protein X (CENP-X) (FANCM-associated histone fold	w
+CENTROMERE	human	O43264	ZW10	O43264	27	221	Centromere/kinetochore protein zw10 homolog	w
+CENTROMERE	human	P07199	CENPB	P07199	11	147	Major centromere autoantigen B (Centromere protein B) (CENP-	w
+CENTROMERE	human	P0DPI3	CENPVL2	P0DPI3	1	5	Centromere protein V-like protein 2 (Centromere protein V ps	w
+CENTROMERE	human	P49450	CENPA	P49450	94	623	Histone H3-like centromeric protein A (Centromere autoantige	w
+CENTROMERE	human	P49454	CENPF	P49454	5	85	Centromere protein F (CENP-F) (AH antigen) (Kinetochore prot	w
+CENTROMERE	human	Q02224	CENPE	Q02224	50	457	Centromere-associated protein E (Centromere protein E) (CENP	w
+CENTROMERE	human	Q03188	CENPC	Q03188	98	420	Centromere protein C (CENP-C) (Centromere autoantigen C) (Ce	w
+CENTROMERE	human	Q13352	ITGB3BP	Q13352	30	118	Centromere protein R (CENP-R) (Beta-3-endonexin) (Integrin b	w
+CENTROMERE	human	Q5EE01	CENPW	Q5EE01	34	327	Centromere protein W (CENP-W) (Cancer-up-regulated gene 2 pr	w
+CENTROMERE	human	Q5T280	SPOUT1	Q5T280	12	279	28S rRNA (uridine-N(3))-methyltransferase (EC 2.1.1.-) (Cent	w
+CENTROMERE	human	Q6IPU0	CENPP	Q6IPU0	30	234	Centromere protein P (CENP-P)	w
+CENTROMERE	human	Q71F23	CENPU	Q71F23	58	295	Centromere protein U (CENP-U) (Centromere protein of 50 kDa)	w
+CENTROMERE	human	Q7L2Z9	CENPQ	Q7L2Z9	52	208	Centromere protein Q (CENP-Q)	w
+CENTROMERE	human	Q7Z7K6	CENPV	Q7Z7K6	16	198	Centromere protein V (CENP-V) (Nuclear protein p30) (Proline	w
+CENTROMERE	human	Q8N0S6	CENPL	Q8N0S6	13	121	Centromere protein L (CENP-L) (Interphase centromere complex	w
+CENTROMERE	human	Q8N2Z9	CENPS	Q8N2Z9	19	148	Centromere protein S (CENP-S) (Apoptosis-inducing TAF9-like 	w
+CENTROMERE	human	Q8NEJ9	NGDN	Q8NEJ9	39	328	Neuroguidin (Centromere accumulated nuclear protein 1) (CANu	w
+CENTROMERE	human	Q92674	CENPI	Q92674	51	401	Centromere protein I (CENP-I) (FSH primary response protein 	w
+CENTROMERE	human	Q96BT3	CENPT	Q96BT3	61	297	Centromere protein T (CENP-T) (Interphase centromere complex	w
+CENTROMERE	human	Q96H22	CENPN	Q96H22	26	201	Centromere protein N (CENP-N) (Interphase centromere complex	w
+CENTROMERE	human	Q9BS16	CENPK	Q9BS16	48	459	Centromere protein K (CENP-K) (Interphase centromere complex	w
+CENTROMERE	human	Q9BU64	CENPO	Q9BU64	43	309	Centromere protein O (CENP-O) (Interphase centromere complex	w
+CENTROMERE	human	Q9H3R5	CENPH	Q9H3R5	51	310	Centromere protein H (CENP-H) (Interphase centromere complex	w
+CENTROMERE	human	Q9HC77	CPAP	Q9HC77	99	320	Centrosomal P4.1-associated protein (Centromere protein J) (	w
+CENTROMERE	human	Q9NQS7	INCENP	Q9NQS7	71	422	Inner centromere protein	w
+CENTROMERE	human	Q9NSP4	CENPM	Q9NSP4	30	320	Centromere protein M (CENP-M) (Interphase centromere complex	w
+CENTROMERE	human	Q9UFC0	LRWD1	Q9UFC0	114	236	Leucine-rich repeat and WD repeat-containing protein 1 (Cent	w
+CENTROMERE	worm	G5EC81	CELE_Y48E1C.1	G5EC81	2	10	Centromere protein S	w
+CENTROMERE	worm	Q19642	czw-1	Q19642	1	42	Centromere/kinetochore protein zw10 homolog	w
+CENTROMERE	worm	Q20071	CELE_F35H10.5	Q20071	1	1	Centromere protein X	w
+CENTROMERE	yeast	P32504	CBF2	P32504	4	70	Centromere DNA-binding protein complex CBF3 subunit A	w
+CENTROMERE	yeast	P35203	CTF13	P35203	2	25	Centromere DNA-binding protein complex CBF3 subunit C	w
+CENTROMERE	yeast	P38283	SLI15	P38283	4	38	Inner centromere protein SLI15	w
+CENTROMERE	yeast	P40969	CEP3	P40969	2	40	Centromere DNA-binding protein complex CBF3 subunit B	w
+CENTROMERE	zebrafish	A0A0R4ISL4	cenpw	A0A0R4ISL4	6	34	Centromere protein W	w
+CENTROMERE	zebrafish	A0A8M1NZ19	cenpk	A0A8M1NZ19	9	43	Centromere protein K	w
+CENTROMERE	zebrafish	A0AB32T3E2	cenpo	A0AB32T3E2	5	48	Centromere protein O	w
+CENTROMERE	zebrafish	A8WHV8	cenph	A8WHV8	11	54	Centromere protein H	w
+CENTROMERE	zebrafish	B3DJV8	cenps	B3DJV8	6	84	Centromere protein S	w
+CENTROMERE	zebrafish	E7F1X6	cenpx	E7F1X6	4	63	Centromere protein X	w
+CENTROMERE	zebrafish	E7FCV0	cenpu	E7FCV0	8	44	Centromere protein U	w
+CENTROMERE	zebrafish	E9QIT3	cenpt	E9QIT3	10	72	Centromere protein T	w
+CENTROMERE	zebrafish	F1QJK1	cenpi	F1QJK1	27	178	Centromere protein I	w
+CENTROMERE	zebrafish	Q1LV50	cenpp	Q1LV50	11	115	Centromere protein P	w
+CENTROMERE	zebrafish	Q6DHP4	cenpn	Q6DHP4	8	92	Centromere protein N	w
+CENTROMERE	zebrafish	Q6DRD4	cenpl	Q6DRD4	2	22	Centromere protein L	w
+CENTROMERE	zebrafish	Q7ZZC6	cenpm	Q7ZZC6	5	40	Centromere protein M	w
+CENTROMERE-ASSOCIATED	human	Q02224	CENPE	Q02224	50	457	Centromere-associated protein E (Centromere protein E) (CENP	w
+CENTROMERE-ASSOCIATED	human	Q99661	KIF2C	Q99661	16	294	Kinesin-like protein KIF2C (Kinesin-like protein 6) (Mitotic	w
+CENTROMERE-BINDING	yeast	P17106	CBF1	P17106	4	33	Centromere-binding protein 1	w
+CENTROMERIC	fly	FBgn0040477	cid	Q9V6Q2	12	45	Histone H3-like centromeric protein cid (CENP-A homolog) (Ce	w
+CENTROMERIC	fly	FBgn0266916	Cenp-C	Q9VHP9	16	43	Centromeric protein-C, isoform A (FI18815p1)	w
+CENTROMERIC	human	P49450	CENPA	P49450	94	623	Histone H3-like centromeric protein A (Centromere autoantige	w
+CENTROMERIC	human	Q6RFH8	DUX4L9	Q6RFH8	47	329	Double homeobox protein 4C (Double homeobox protein 4, centr	w
+CENTROMERIC	human	Q8N954	GPATCH11	Q8N954	9	89	G patch domain-containing protein 11 (Centromeric protein Y)	w
+CENTROMERIC	worm	P34440	cpar-1	P34440	4	25	Histone H3-like centromeric protein cpar-1	w
+CENTROMERIC	worm	P34470	hcp-3	P34470	5	47	Histone H3-like centromeric protein hcp-3	w
+CENTROMERIC	yeast	P36012	CSE4	P36012	24	359	Histone H3-like centromeric protein CSE4	w
+CENTROMERIC	zebrafish	Q803H4	cenpa	Q803H4	35	207	Histone H3-like centromeric protein A	w
+CENTROSOMAL	fly	FBgn0000283	Cp190	Q24478	47	177	Centrosome-associated zinc finger protein Cp190 (Centrosomal	w
+CENTROSOMAL	fly	FBgn0010313	corto	P41046	9	56	Centrosomal and chromosomal factor (CCF) (Chromocentrosomin)	w
+CENTROSOMAL	fly	FBgn0031575	Cep97	Q9VQV7	4	13	Centrosomal protein 97kDa, isoform B	w
+CENTROSOMAL	fly	FBgn0035168	Cep290	Q9W0M1	0	3	Centrosomal protein Cep290	w
+CENTROSOMAL	fly	FBgn0036480	Cep135	M9MSL4	5	32	Centrosomal protein 135kDa, isoform B	w
+CENTROSOMAL	fly	FBgn0261610	Cep162	Q9W474	2	2	Centrosomal protein of 162 kDa	w
+CENTROSOMAL	human	O15078	CEP290	O15078	32	196	Centrosomal protein of 290 kDa (Cep290) (Bardet-Biedl syndro	w
+CENTROSOMAL	human	O43303	CCP110	O43303	72	356	Centriolar coiled-coil protein of 110 kDa (Centrosomal prote	w
+CENTROSOMAL	human	O60308	CEP104	O60308	27	142	Centrosomal protein of 104 kDa (Cep104)	w
+CENTROSOMAL	human	O94986	CEP152	O94986	46	236	Centrosomal protein of 152 kDa (Cep152)	w
+CENTROSOMAL	human	O95684	CEP43	O95684	26	209	Centrosomal protein 43 (FGFR1 oncogene partner)	w
+CENTROSOMAL	human	Q2M2Z5	KIZ	Q2M2Z5	16	73	Centrosomal protein kizuna (Polo-like kinase 1 substrate 1)	w
+CENTROSOMAL	human	Q53EZ4	CEP55	Q53EZ4	114	369	Centrosomal protein of 55 kDa (Cep55) (Up-regulated in colon	w
+CENTROSOMAL	human	Q5JTW2	CEP78	Q5JTW2	34	177	Centrosomal protein of 78 kDa (Cep78)	w
+CENTROSOMAL	human	Q5SW79	CEP170	Q5SW79	174	488	Centrosomal protein of 170 kDa (Cep170) (KARP-1-binding prot	w
+CENTROSOMAL	human	Q5SZL2	CEP85L	Q5SZL2	23	57	Centrosomal protein of 85 kDa-like (Serologically defined br	w
+CENTROSOMAL	human	Q5TB80	CEP162	Q5TB80	53	201	Centrosomal protein of 162 kDa (Cep162) (Protein QN1 homolog	w
+CENTROSOMAL	human	Q66GS9	CEP135	Q66GS9	109	315	Centrosomal protein of 135 kDa (Cep135) (Centrosomal protein	w
+CENTROSOMAL	human	Q68DK2	ZFYVE26	Q68DK2	5	86	Zinc finger FYVE domain-containing protein 26 (FYVE domain-c	w
+CENTROSOMAL	human	Q6P2H3	CEP85	Q6P2H3	68	212	Centrosomal protein of 85 kDa (Cep85) (Coiled-coil domain-co	w
+CENTROSOMAL	human	Q6ZU80	CEP128	Q6ZU80	68	348	Centrosomal protein 128 (Cep128) (Centrosomal protein of 128	w
+CENTROSOMAL	human	Q76N32	CEP68	Q76N32	19	54	Centrosomal protein of 68 kDa (Cep68)	w
+CENTROSOMAL	human	Q7Z7A1	CNTRL	Q7Z7A1	50	287	Centriolin (Centrosomal protein 1) (Centrosomal protein of 1	w
+CENTROSOMAL	human	Q86SQ7	SDCCAG8	Q86SQ7	52	133	Serologically defined colon cancer antigen 8 (Antigen NY-CO-	w
+CENTROSOMAL	human	Q86UT8	CENATAC	Q86UT8	19	114	Centrosomal AT-AC splicing factor (Coiled-coil domain-contai	w
+CENTROSOMAL	human	Q86XR8	CEP57	Q86XR8	63	219	Centrosomal protein of 57 kDa (Cep57) (FGF2-interacting prot	w
+CENTROSOMAL	human	Q8IW35	CEP97	Q8IW35	42	270	Centrosomal protein of 97 kDa (Cep97) (Leucine-rich repeat a	w
+CENTROSOMAL	human	Q8IYX8	CEP57L1	Q8IYX8	42	119	Centrosomal protein CEP57L1 (Centrosomal protein 57kDa-like 	w
+CENTROSOMAL	human	Q8N137	CNTROB	Q8N137	41	220	Centrobin (Centrosomal BRCA2-interacting protein) (LYST-inte	w
+CENTROSOMAL	human	Q8N8E3	CEP112	Q8N8E3	23	113	Centrosomal protein of 112 kDa (Cep112) (Coiled-coil domain-	w
+CENTROSOMAL	human	Q8N960	CEP120	Q8N960	42	155	Centrosomal protein of 120 kDa (Cep120) (Coiled-coil domain-	w
+CENTROSOMAL	human	Q8NA72	POC5	Q8NA72	35	163	Centrosomal protein POC5 (Protein of centriole 5) (hPOC5)	w
+CENTROSOMAL	human	Q8NHQ1	CEP70	Q8NHQ1	35	368	Centrosomal protein of 70 kDa (Cep70) (p10-binding protein)	w
+CENTROSOMAL	human	Q8TAP6	CEP76	Q8TAP6	37	297	Centrosomal protein of 76 kDa (Cep76)	w
+CENTROSOMAL	human	Q8TEP8	CEP192	Q8TEP8	64	436	Centrosomal protein of 192 kDa (Cep192) (Cep192/SPD-2)	w
+CENTROSOMAL	human	Q8WXW3	PIBF1	Q8WXW3	63	277	Progesterone-induced-blocking factor 1 (PIBF) (Centrosomal p	w
+CENTROSOMAL	human	Q96GE4	CEP95	Q96GE4	13	62	Centrosomal protein of 95 kDa (Cep95) (Coiled-coil domain-co	w
+CENTROSOMAL	human	Q96LK0	CEP19	Q96LK0	36	186	Centrosomal protein of 19 kDa (Cep19)	w
+CENTROSOMAL	human	Q96M02	C10orf90	Q96M02	3	16	(E2-independent) E3 ubiquitin-conjugating enzyme FATS (EC 2.	w
+CENTROSOMAL	human	Q96MT8	CEP63	Q96MT8	93	244	Centrosomal protein of 63 kDa (Cep63)	w
+CENTROSOMAL	human	Q96NB1	CEP20	Q96NB1	4	47	Centrosomal protein 20 (FGFR1OP N-terminal-like protein) (FO	w
+CENTROSOMAL	human	Q96ST8	CEP89	Q96ST8	59	184	Centrosomal protein of 89 kDa (Cep89) (Centrosomal protein 1	w
+CENTROSOMAL	human	Q9BV73	CEP250	Q9BV73	30	296	Centrosome-associated protein CEP250 (250 kDa centrosomal pr	w
+CENTROSOMAL	human	Q9BYV8	CEP41	Q9BYV8	9	53	Centrosomal protein of 41 kDa (Cep41) (Testis-specific gene 	w
+CENTROSOMAL	human	Q9C099	LRRCC1	Q9C099	21	121	Leucine-rich repeat and coiled-coil domain-containing protei	w
+CENTROSOMAL	human	Q9C0D2	CEP295	Q9C0D2	11	96	Centrosomal protein of 295 kDa	w
+CENTROSOMAL	human	Q9C0F1	CEP44	Q9C0F1	57	207	Centrosomal protein of 44 kDa (Cep44) (HBV PreS1-transactiva	w
+CENTROSOMAL	human	Q9HBI5	CEP15	Q9HBI5	4	47	Centrosomal protein 15 (Centrosomal protein 15 kDa)	w
+CENTROSOMAL	human	Q9HC77	CPAP	Q9HC77	99	320	Centrosomal P4.1-associated protein (Centromere protein J) (	w
+CENTROSOMAL	human	Q9HCH0	NCKAP5L	Q9HCH0	57	139	Nck-associated protein 5-like (NCKAP5-like) (Centrosomal pro	w
+CENTROSOMAL	human	Q9NVX0	HAUS2	Q9NVX0	32	222	HAUS augmin-like complex subunit 2 (Centrosomal protein of 2	w
+CENTROSOMAL	human	Q9NXG0	CNTLN	Q9NXG0	48	112	Centlein (Centrosomal protein)	w
+CENTROSOMAL	human	Q9P209	CEP72	Q9P209	55	162	Centrosomal protein of 72 kDa (Cep72)	w
+CENTROSOMAL	human	Q9P2H0	CEP126	Q9P2H0	17	117	Centrosomal protein of 126 kDa	w
+CENTROSOMAL	human	Q9UPN4	CEP131	Q9UPN4	57	267	Centrosomal protein of 131 kDa (5-azacytidine-induced protei	w
+CENTROSOMAL	human	Q9UPV0	CEP164	Q9UPV0	37	224	Centrosomal protein of 164 kDa (Cep164)	w
+CENTROSOMAL	human	Q9Y4F5	CEP170B	Q9Y4F5	124	309	Centrosomal protein of 170 kDa protein B (Centrosomal protei	w
+CENTROSOMAL	human	Q9Y592	CEP83	Q9Y592	55	165	Centrosomal protein of 83 kDa (Cep83) (Coiled-coil domain-co	w
+CENTROSOMAL	human	Q9Y6R9	CCDC61	Q9Y6R9	20	72	Centrosomal protein CCDC61 (Coiled-coil domain-containing pr	w
+CENTROSOMAL	worm	Q22387	CELE_T11B7.1	Q22387	0	47	Centrosomal protein of 162 kDa	w
+CENTROSOMAL	worm	Q9N5N7	ccep-135	Q9N5N7	1	14	CEntrosomal Protein	w
+CENTROSOMAL	zebrafish	A0A8M1PB79	cep97	A0A8M1PB79	4	77	Centrosomal protein of 97 kDa	w
+CENTROSOMAL	zebrafish	A0A8M3AJS2	cep126	A0A8M3AJS2	0	8	Centrosomal protein of 126 kDa isoform X2	w
+CENTROSOMAL	zebrafish	A0A8M6Z3B7	cep70	A0A8M6Z3B7	2	4	Centrosomal protein of 70 kDa	w
+CENTROSOMAL	zebrafish	A0A8M9PEF8	cep170ba	A0A8M9PEF8	1	23	Centrosomal protein of 170 kDa protein B isoform X2	w
+CENTROSOMAL	zebrafish	A5D8S0	kiz	A5D8S0	3	10	Centrosomal protein kizuna	w
+CENTROSOMAL	zebrafish	A7E2V1	cep76	A7E2V1	1	3	Centrosomal protein of 76 kDa	w
+CENTROSOMAL	zebrafish	B0S5R1	poc5	B0S5R1	6	10	Centrosomal protein POC5	w
+CENTROSOMAL	zebrafish	E7EZM2	cep112	E7EZM2	0	16	Centrosomal protein 112	w
+CENTROSOMAL	zebrafish	E7EZM5	si:dkey-274m17.3	E7EZM5	1	1	Centrosomal protein 15	w
+CENTROSOMAL	zebrafish	E7F5E1	cep162	E7F5E1	0	3	Centrosomal protein of 162 kDa	w
+CENTROSOMAL	zebrafish	E7FCY1	cpap	E7FCY1	9	70	Centrosomal P4.1-associated protein	w
+CENTROSOMAL	zebrafish	E9QBC3	cep85	E9QBC3	1	4	Centrosomal protein 85	w
+CENTROSOMAL	zebrafish	F1Q543	cep78	F1Q543	0	1	Centrosomal protein 78	w
+CENTROSOMAL	zebrafish	F1QW15	cep85l	F1QW15	0	3	Centrosomal protein 85,-like	w
+CENTROSOMAL	zebrafish	F1R4Y7	cep83	F1R4Y7	7	16	Centrosomal protein of 83 kDa	w
+CENTROSOMAL	zebrafish	I3ITH9	cep20	I3ITH9	2	4	Centrosomal protein 20	w
+CENTROSOMAL	zebrafish	Q08CF3	ccdc61	Q08CF3	0	3	Centrosomal protein CCDC61	w
+CENTROSOMAL	zebrafish	Q4V8Z3	cep19	Q4V8Z3	2	8	Centrosomal protein of 19 kDa	w
+CENTROSOMAL	zebrafish	Q501X2	cep72	Q501X2	1	1	Centrosomal protein of 72 kDa	w
+CENTROSOMAL	zebrafish	Q502I3	cep55	Q502I3	2	28	Centrosomal protein of 55 kDa	w
+CENTROSOMAL	zebrafish	Q5RG45	cep135	Q5RG45	3	51	Centrosomal protein of 135 kDa	w
+CENTROSOMAL	zebrafish	Q6GQN0	cep41	Q6GQN0	0	3	Centrosomal protein of 41 kDa	w
+CENTROSOMAL	zebrafish	Q6IQF6	cep43	Q6IQF6	2	11	Centrosomal protein 43	w
+CENTROSOMAL	zebrafish	Q6P402	cep89	Q6P402	5	8	Centrosomal protein of 89 kDa	w
+CENTROSOMAL	zebrafish	Q6PGZ0	cep63	Q6PGZ0	3	5	Centrosomal protein of 63 kDa	w
+CENTROSOMAL	zebrafish	U3JAG9	cep131	U3JAG9	1	34	Centrosomal protein of 131 kDa	w
+CENTROSOME	human	Q1MSJ5	CSPP1	Q1MSJ5	31	167	Centrosome and spindle pole-associated protein 1	w
+CENTROSOME	human	Q9HC77	CPAP	Q9HC77	99	320	Centrosomal P4.1-associated protein (Centromere protein J) (	w
+CENTROSOME	zebrafish	A0A8M6Z479	cspp1a	A0A8M6Z479	7	182	Centrosome and spindle pole-associated protein 1 isoform X1	w
+CENTROSOME-ASSOCIATED	fly	FBgn0000283	Cp190	Q24478	47	177	Centrosome-associated zinc finger protein Cp190 (Centrosomal	w
+CENTROSOME-ASSOCIATED	fly	FBgn0025388	Alms1a	Q5BI31	1	7	Centrosome-associated protein Alms1a (Alstrom syndrome prote	w
+CENTROSOME-ASSOCIATED	fly	FBgn0035879	GAPcenA	A8JNN5	4	20	GTPase activating protein and centrosome-associated, isoform	w
+CENTROSOME-ASSOCIATED	human	P61163	ACTR1A	P61163	73	398	Alpha-centractin (Centractin) (ARP1) (Actin-RPV) (Centrosome	w
+CENTROSOME-ASSOCIATED	human	Q5VT06	CEP350	Q5VT06	8	75	Centrosome-associated protein 350 (Cep350) (Centrosome-assoc	w
+CENTROSOME-ASSOCIATED	human	Q6QNY1	BLOC1S2	Q6QNY1	46	120	Biogenesis of lysosome-related organelles complex 1 subunit 	w
+CENTROSOME-ASSOCIATED	human	Q96SN8	CDK5RAP2	Q96SN8	56	199	CDK5 regulatory subunit-associated protein 2 (CDK5 activator	w
+CENTROSOME-ASSOCIATED	human	Q9BT25	HAUS8	Q9BT25	73	271	HAUS augmin-like complex subunit 8 (HEC1/NDC80-interacting c	w
+CENTROSOME-ASSOCIATED	human	Q9BV73	CEP250	Q9BV73	30	296	Centrosome-associated protein CEP250 (250 kDa centrosomal pr	w
+CENTROSOME-ASSOCIATED	human	Q9Y3P9	RABGAP1	Q9Y3P9	88	326	Rab GTPase-activating protein 1 (GAP and centrosome-associat	w
+CENTROSOME-RELATED	human	Q5T6F0	DCAF12	Q5T6F0	30	206	DDB1- and CUL4-associated factor 12 (Centrosome-related prot	w
+CENTROSOMIN	fly	FBgn0013765	cnn	A0A0B4K863	30	105	Centrosomin, isoform L	w
+CENTROSOMIN	fly	FBgn0086757	Golgin97	Q7K4K7	8	45	Centrosomin's beautiful sister, isoform A (LD35238p)	w

@@ -202,8 +202,11 @@ async function rangeRead(url, range) {   // → the bytes of one Range read, or 
 async function screenFile(ds, rel) {
   const z = ds.reg.zip;
   if (!z) { const res = await fetch(new URL(rel.split('/').map(encodeURIComponent).join('/'), ds.manifest.bundleBase || ds.base).href); return res.ok ? res : null; }
-  if (!OFFS.has(ds.id)) OFFS.set(ds.id, fetch(new URL(z.offsets, location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
-  const at = (await OFFS.get(ds.id))[rel]; if (!at) return null;
+  let ok = ds.id;   // the map, or the shard that holds this bundle (files.offsetShards: offsets/<last two characters of the name>.json)
+  if ((ds.manifest.files || {}).offsetShards) { const nm = rel.split('/').pop().replace(/\.[^.]+$/, ''), xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_'); ok = `${ds.id}/${xx}`;
+    if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets.replace(/offsets\.json$/, `offsets/${xx}.json`), location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))); }
+  else if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets, location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+  const at = (await OFFS.get(ok))[rel]; if (!at) return null;
   const t = ds.reg.title || ds.id, what = /^(Human|Zebrafish|Yeast|Fly|Worm)\b/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t;   // “the human kinase–kinase screen”, “C. elegans …”, “FlyPredictome”
   const buf = await trackLoad(what, rangeRead(DEV && z.dev ? new URL(z.dev, location.href).href : z.url, `bytes=${at[0]}-${at[0] + at[1] - 1}`));
   return buf ? new Response(buf) : null;
@@ -220,8 +223,9 @@ function speciesManifest(id) {   // a species' counts and screens only (the home
     .catch((e) => { delete SPM[id]; throw e; });
   return SPM[id];
 }
+const SPL = new Set();   // species whose index has arrived: the search reads them whole, and the name shards for every other species
 function species(id) {   // one load per species however many callers ask at once
-  if (!SPC[id]) SPC[id] = speciesIndex(id).catch((e) => { delete SPC[id]; throw e; });
+  if (!SPC[id]) SPC[id] = speciesIndex(id).then((x) => { SPL.add(id); return x; }).catch((e) => { delete SPC[id]; throw e; });
   return SPC[id];
 }
 async function speciesIndex(id) {   // the species index: one row per protein over every screen, keyed by UniProt accession (fly: FlyBase gene)
@@ -486,13 +490,14 @@ const hetPair = (r) => { const m = {}; VMCOL.forEach((k, n) => { if (r[8 + n] !=
   return { model: r[2], shown: false, addr: { tar: r[3], cif_off: +r[4], cif_len: +r[5], pae_off: +r[6], pae_len: +r[7] }, m }; };
 async function afdbStruct(sp, ia, ib) {
   if (ia == null || ib == null) return null;
-  const r = (await hetShard(sp, Math.floor(Math.min(ia, ib) / 1000))).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
+  const k = (sp.manifest.files || {}).structsBoth ? ia : Math.min(ia, ib);   // under both rows: the query's own shard, the one its page already read
+  const r = (await hetShard(sp, Math.floor(k / 1000))).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
   return r ? hetPair(r) : null;
 }
 // Every AFDB pair of row i the Atlas indexes (past 10% FPR): its model, archive address and scores, keyed by the partner's row.
 async function afdbPartnerRows(sp, i, partners) {
   const ks = new Set([Math.floor(i / 1000)]);
-  for (const p of partners) { const r = sp.byKey.get(p.id); if (r) ks.add(Math.floor(Math.min(i, r.i) / 1000)); }
+  if (!(sp.manifest.files || {}).structsBoth) for (const p of partners) { const r = sp.byKey.get(p.id); if (r) ks.add(Math.floor(Math.min(i, r.i) / 1000)); }   // older layout: pairs sit under the lower row only
   const out = new Map();
   for (const rows of await Promise.all([...ks].map((k) => hetShard(sp, k)))) for (const r of rows) { const a = +r[0], b = +r[1]; if (a === i || b === i) out.set(a === i ? b : a, hetPair(r)); }
   return out;
@@ -887,16 +892,18 @@ function scoreProteins(sp, raw, limit = 10) {   // → [{ row, score }], best fi
 // Names of the species the home search does not load (data/search/, build/search_index.py): one small shard per name prefix,
 // so a query reads one file; matches carry their species. → [{ row, sp, base, bonus, score }]
 let SIDX = null; const SSH = new Map();
-async function searchOthers(q) {
-  const Q = q.trim().toUpperCase(); if (Q.length < 3) return [];
-  if (!SIDX) SIDX = getJSON('data/search/index.json').then((j) => new Set(j.split)).catch(() => new Set());
-  const split = await SIDX; let L = 3; while (split.has(Q.slice(0, L)) && Q.length > L) L++;
-  const k = Q.slice(0, L).replace(/[^A-Z0-9_-]/g, '_');
+async function searchOthers(q, skip = SPL) {   // skip: species the caller searched by index already
+  const Q = q.trim().toUpperCase(); if (!Q) return [];
+  let k;
+  if (Q.length < 3) k = 'short';   // names of one or two characters, one small file
+  else { if (!SIDX) SIDX = getJSON('data/search/index.json').then((j) => new Set(j.split)).catch(() => new Set());
+    const split = await SIDX; let L = 3; while (split.has(Q.slice(0, L)) && Q.length > L) L++;
+    k = Q.slice(0, L).replace(/[^A-Z0-9_-]/g, '_'); }
   if (!SSH.has(k)) SSH.set(k, getText(`data/search/${k}.tsv`).then((t) => t.trim().split('\n').map((l) => l.split('\t'))).catch(() => []));
   const reg = await registry(), lab = new Map((reg.species || []).map((x) => [x.id, x])), seen = new Set(), out = [];
-  for (const [n, sid, key, gene, acc, pos10, partners, name] of await SSH.get(k)) {
-    if (!n || !n.startsWith(Q) || seen.has(sid + key)) continue; seen.add(sid + key);
-    const base = n === Q ? 80 : 40, x = lab.get(sid); if (!x) continue;
+  for (const [n, sid, key, gene, acc, pos10, partners, name, kind] of await SSH.get(k)) {
+    if (!n || !n.startsWith(Q) || seen.has(sid + key) || skip.has(sid)) continue; seen.add(sid + key);
+    const base = kind === 'w' ? (n === Q ? 50 : 30) : n === Q ? 80 : 40, x = lab.get(sid); if (!x) continue;   // a word of the protein name ranks under a name
     out.push({ row: { key, gene: gene || key, acc, id: key, name, pos10: +pos10, partners: +partners }, sp: { id: sid, reg: x }, base, bonus: Math.min(19, Math.log10(1 + +pos10) * 6), score: base + Math.log10(1 + +pos10) });
   }
   return out.sort((a, b) => b.score - a.score).slice(0, 12);
@@ -911,7 +918,7 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
   const go = (it) => { box.hidden = true; input.value = ''; location.hash = it.v ? `#/${it.sp.id}/taxon/${it.v.taxid}` : `#/${it.sp.id}/${it.row.key}${set ? '?set=' + encodeURIComponent(set) : ''}`; };
   const paint = () => { [...box.children].forEach((c, k) => c.classList.toggle('on', k === on)); };
   async function update() {
-    const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(coreSpecies(await registry()).map((x) => species(x.id).catch(() => null)));
+    const q = input.value, sps = spId ? [await species(spId)] : await Promise.all(coreSpecies(await registry()).filter((x) => SPL.has(x.id)).map((x) => species(x.id).catch(() => null)));   // no index is loaded for the search: the shards serve the species not here
     const many = sps.filter(Boolean).length > 1;
     const t = q.trim().toLowerCase(), al = VALIAS[t] || [], vir = (t.length < 3 && !al.length) || only ? [] : sps.filter((sp) => sp && sp.viruses).flatMap((sp) => sp.viruses.map((v) => {
       const nm = v.name.toLowerCase(), spn = (v.species || '').toLowerCase(), score = nm === t || al.includes(nm) || spn === t ? 3 : nm.startsWith(t) || spn.startsWith(t) ? 2 : nm.includes(t) ? 1 : 0; return { v, sp, score }; }))
@@ -925,7 +932,7 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
       for (const h of [...hits].sort((a, b) => b.score - a.score)) { if (!bySp.has(h.sp)) bySp.set(h.sp, []); bySp.get(h.sp).push(h); }
       prot = [...hits].sort((a, b) => x(b) - x(a)).map((h) => bySp.get(h.sp).shift());
     } else prot = hits.sort((a, b) => b.score - a.score);
-    const others = spId || only ? [] : await searchOthers(q); if (q !== input.value) return;   // the one-screen AFDB species, from the name index
+    const others = spId || only ? [] : await searchOthers(q); if (q !== input.value) return;   // every species whose index is not loaded, from the name shards
     if (others.length) prot = [...prot, ...others].sort((a, b) => (b.base >= 80) - (a.base >= 80) || (b.row.pos10 || 0) - (a.row.pos10 || 0));   // exact names first, then by pairs past 10% FPR, whatever the species
     // a virus named exactly (or by a common name) first, then exact gene matches, then viruses named in part ("Tor" is a gene first)
     const exact = prot.filter((h) => h.base >= 80), rest = prot.filter((h) => h.base < 80);
@@ -1172,7 +1179,7 @@ async function viewHome() {
   mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase();
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1500));
-  idle(() => { if (!stale(gen)) for (const x of coreSpecies(reg)) species(x.id).catch(() => {}); }, { timeout: 4000 });   // search is instant by the first keystroke
+  void idle;   // the search reads a name shard per query, so no species index is loaded here
 }
 async function fillThemes() {   // home: each theme's species and totals, from its members' counts
   const reg = await registry(), box = $('#themes'); if (!box) return;
@@ -1933,7 +1940,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
         show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a variant (for example <span id="res-eg">T983A</span>) to see which
         predictions, partners and sites contact it; the link keeps it.</p><p class="note" id="clip-aside" hidden></p></div>
-    <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">Looking for orthologs in the Atlas's other species…</div></div>${xticks}</div>
+    <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div>${xticks}</div>
       <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
     <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
@@ -2173,7 +2180,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   const orthName = (o) => `${o.reg2.label} ${o.P2 ? o.P2.gene : o.key2}`, orthLabel = (o) => esc(orthName(o));   // orthName for canvas text, orthLabel for HTML
   async function orthInit() {
-    const sub = $('#orth-sub'); if (!sub) return;
+    const sub = $('#orth-sub'); if (!sub) return; sub.textContent = 'Looking for orthologs in the Atlas\'s other species…';
     let list; try { list = await orthList(); } catch (e) { list = []; }
     if (gone()) return;
     ORTH.list = list;
@@ -2994,7 +3001,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
   loadStructure();
-  cluster(); orthInit();
+  cluster();
+  { const card = $('#c-orth'); let started = false; const start = () => { if (!started) { started = true; orthInit(); } };   // the orthologs (other species' indexes and bundles) load when the card nears the viewport
+    if (card) { new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) start(); }, { rootMargin: '300px' }).observe(card); } }
   let rsz, rszW = window.innerWidth; window.onresize = () => { if (window.innerWidth === rszW) return; rszW = window.innerWidth; clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
 }
 

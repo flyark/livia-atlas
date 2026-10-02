@@ -1,30 +1,165 @@
-SAR1	candida-albicans-237561	Q59S78	SAR1	Q59S78	4	13	Small COPII coat GTPase SAR1
-SAR1	cladophialophora-carrionii	A0A1C1D0B2	sar1	A0A1C1D0B2	2	15	Small COPII coat GTPase SAR1
-SAR1	schizosaccharomyces-pombe	Q01475	sar1	Q01475	3	22	Small COPII coat GTPase sar1
-SAR1A	arabidopsis-thaliana	O04834	SAR1A	O04834	8	37	Small COPII coat GTPase SAR1A
-SAR1A	mus-musculus	P36536	Sar1a	P36536	3	22	Small COPII coat GTPase SAR1A
-SAR1B	arabidopsis-thaliana	Q01474	SAR1B	Q01474	7	40	Small COPII coat GTPase SAR1B
-SAR1B	mus-musculus	Q9CQC9	Sar1b	Q9CQC9	8	77	Small COPII coat GTPase SAR1B
-SAR1B	rattus-norvegicus	Q5HZY2	Sar1b	Q5HZY2	4	61	Small COPII coat GTPase SAR1B
-SARA	dictyostelium-discoideum	Q559R0	sarA	Q559R0	2	17	Small COPII coat GTPase SAR1A
-SARA1A	arabidopsis-thaliana	O80489	SARA1A	O80489	8	34	small monomeric GTPase
-SARAF	dictyostelium-discoideum	Q54P59	saraf	Q54P59	0	6	Store-operated calcium entry-associated regulatory factor
-SARAF	mus-musculus	Q8R3Q0	Saraf	Q8R3Q0	0	8	Store-operated calcium entry-associated regulatory factor
-SARAF	rattus-norvegicus	Q6AYN2	Saraf	Q6AYN2	0	6	Store-operated calcium entry-associated regulatory factor
-SARB	dictyostelium-discoideum	Q54Y14	sarB	Q54Y14	1	11	Small COPII coat GTPase SAR1B
-SARD1	arabidopsis-thaliana	Q9C9T2	SARD1	Q9C9T2	3	16	Protein SAR DEFICIENT 1
-SARDH	mus-musculus	Q99LB7	Sardh	Q99LB7	0	16	Sarcosine dehydrogenase, mitochondrial
-SARDH	rattus-norvegicus	Q64380	Sardh	Q64380	0	19	Sarcosine dehydrogenase, mitochondrial
-SARM1	mus-musculus	Q6PDS3	Sarm1	Q6PDS3	2	42	NAD(+) hydrolase SARM1
-SARM1	rattus-norvegicus	D3ZUM2	Sarm1	D3ZUM2	2	39	NAD(+) hydrolase SARM1
-SARNP	mus-musculus	Q9D1J3	Sarnp	Q9D1J3	5	74	SAP domain-containing ribonucleoprotein
-SARNP	rattus-norvegicus	Q498U4	Sarnp	Q498U4	2	22	SAP domain-containing ribonucleoprotein
-SARR	staphylococcus-aureus-93061	Q9F0R1	sarR	Q9F0R1	0	1	HTH-type transcriptional regulator SarR
-SARS1	mus-musculus	P26638	Sars1	P26638	2	35	Serine--tRNA ligase, cytoplasmic
-SARS1	rattus-norvegicus	Q6P799	Sars1	Q6P799	1	29	Serine--tRNA ligase, cytoplasmic
-SARS2	mus-musculus	Q9JJL8	Sars2	Q9JJL8	3	28	Serine--tRNA ligase, mitochondrial
-SARS2	rattus-norvegicus	D3ZM09	Sars2	D3ZM09	1	17	Serine--tRNA ligase, mitochondrial
-SART1	mus-musculus	Q9Z315	Sart1	Q9Z315	14	110	U4/U6.U5 tri-snRNP-associated protein 1
-SART1	rattus-norvegicus	Q5XIW8	Sart1	Q5XIW8	19	139	U4/U6.U5 tri-snRNP-associated protein 1
-SART3	mus-musculus	Q9JLI8	Sart3	Q9JLI8	2	35	Spliceosome associated factor 3, U4/U6 recycling protein
-SART3	rattus-norvegicus	D3ZAS8	Sart3	D3ZAS8	1	30	Spliceosome associated factor 3, U4/U6 recycling protein
+SAR-1	worm	Q23445	sar-1	Q23445	3	47	Small COPII coat GTPase SAR1	
+SAR1	candida-albicans-237561	Q59S78	SAR1	Q59S78	4	13	Small COPII coat GTPase SAR1	
+SAR1	cladophialophora-carrionii	A0A1C1D0B2	sar1	A0A1C1D0B2	2	15	Small COPII coat GTPase SAR1	
+SAR1	fly	FBgn0038947	Sar1	Q9VD29	10	176	RE74312p (Secretion-associated Ras-related 1, isoform A) (Se	
+SAR1	human	Q9NR31	SAR1A	Q9NR31	31	384		
+SAR1	schizosaccharomyces-pombe	Q01475	sar1	Q01475	3	22	Small COPII coat GTPase sar1	
+SAR1	worm	Q23445	sar-1	Q23445	3	47	Small COPII coat GTPase SAR1	w
+SAR1	yeast	P20606	SAR1	P20606	5	61	Small COPII coat GTPase SAR1	
+SAR1A	arabidopsis-thaliana	O04834	SAR1A	O04834	8	37	Small COPII coat GTPase SAR1A	
+SAR1A	human	Q9NR31	SAR1A	Q9NR31	31	384	Small COPII coat GTPase SAR1A (EC 3.6.5.2) (COPII-associated	
+SAR1A	mus-musculus	P36536	Sar1a	P36536	3	22	Small COPII coat GTPase SAR1A	
+SAR1AB	zebrafish	B7ZD40	sar1ab	B7ZD40	2	21	small monomeric GTPase	
+SAR1A_HUMAN	human	Q9NR31	SAR1A	Q9NR31	31	384		
+SAR1B	arabidopsis-thaliana	Q01474	SAR1B	Q01474	7	40	Small COPII coat GTPase SAR1B	
+SAR1B	human	Q9Y6B6	SAR1B	Q9Y6B6	43	490	Small COPII coat GTPase SAR1B (EC 3.6.5.2) (GTP-binding prot	
+SAR1B	mus-musculus	Q9CQC9	Sar1b	Q9CQC9	8	77	Small COPII coat GTPase SAR1B	
+SAR1B	rattus-norvegicus	Q5HZY2	Sar1b	Q5HZY2	4	61	Small COPII coat GTPase SAR1B	
+SAR1B	zebrafish	Q6PBX2	sar1b	Q6PBX2	4	70	small monomeric GTPase	
+SAR1B_HUMAN	human	Q9Y6B6	SAR1B	Q9Y6B6	43	490		
+SAR2	human	P27701	CD82	P27701	10	198		
+SARA	dictyostelium-discoideum	Q559R0	sarA	Q559R0	2	17	Small COPII coat GTPase SAR1A	
+SARA	fly	FBgn0026369	Sara	Q7K9H6	9	29	Zinc finger FYVE domain-containing protein	
+SARA	human	O95405	ZFYVE9	O95405	31	164		
+SARA	human	Q9NR31	SAR1A	Q9NR31	31	384		
+SARA1	human	Q9NR31	SAR1A	Q9NR31	31	384		
+SARA1A	arabidopsis-thaliana	O80489	SARA1A	O80489	8	34	small monomeric GTPase	
+SARA2	human	Q9Y6B6	SAR1B	Q9Y6B6	43	490		
+SARAF	dictyostelium-discoideum	Q54P59	saraf	Q54P59	0	6	Store-operated calcium entry-associated regulatory factor	
+SARAF	human	Q96BY9	SARAF	Q96BY9	18	216	Store-operated calcium entry-associated regulatory factor (S	
+SARAF	mus-musculus	Q8R3Q0	Saraf	Q8R3Q0	0	8	Store-operated calcium entry-associated regulatory factor	
+SARAF	rattus-norvegicus	Q6AYN2	Saraf	Q6AYN2	0	6	Store-operated calcium entry-associated regulatory factor	
+SARAF	zebrafish	F1QPC3	saraf	F1QPC3	1	11	Store-operated calcium entry-associated regulatory factor	
+SARAF_HUMAN	human	Q96BY9	SARAF	Q96BY9	18	216		
+SARAH	fly	FBgn0086370	sra	Q9XZL8	3	9	Protein sarah (Protein nebula)	w
+SARA_709	fly	FBgn0026369	Sara	Q7K9H6	9	29		
+SARB	dictyostelium-discoideum	Q54Y14	sarB	Q54Y14	1	11	Small COPII coat GTPase SAR1B	
+SARB	human	Q9Y6B6	SAR1B	Q9Y6B6	43	490		
+SARCALUMENIN	human	Q86TD4	SRL	Q86TD4	6	55	Sarcalumenin	w
+SARCALUMENIN	zebrafish	A0AUR2	srl	A0AUR2	0	2	Sarcalumenin	w
+SARCOGLYCAN	fly	FBgn0025391	Scgdelta	O76892	66	2384	EG:4F1.1 protein (Gamma/delta-sarcoglycan-like protein SCG-G	w
+SARCOGLYCAN	fly	FBgn0032013	Scgalpha	M9PF78	0	6	Sarcoglycan alpha, isoform C	w
+SARCOGLYCAN	worm	Q19185	sgn-1	Q19185	1	21	Sarcoglycan complex subunit protein	w
+SARCOGLYCAN	zebrafish	A0A286Y8U0	sgcz	A0A286Y8U0	3	15	Sarcoglycan zeta	w
+SARCOLAMBAN	fly	FBgn0266491	SclA	C0HJH4	1	3	Sarcolamban A	w
+SARCOLAMBAN	fly	FBgn0266492	SclB	C0HJH3	1	2	Sarcolamban B	w
+SARCOLECTIN	human	P08729	KRT7	P08729	77	311	Keratin, type II cytoskeletal 7 (Cytokeratin-7) (CK-7) (Kera	w
+SARCOLEMMA	fly	FBgn0040011	Slmap	Q9W5R5	15	73	LD47843p (Sarcolemma associated protein, isoform A) (Sarcole	w
+SARCOLEMMAL	human	Q14BN4	SLMAP	Q14BN4	38	186	Sarcolemmal membrane-associated protein (Sarcolemmal-associa	w
+SARCOLEMMAL	zebrafish	Q08BE3	slmapa	Q08BE3	4	30	Sarcolemmal membrane-associated protein	w
+SARCOLEMMAL-ASSOCIATED	human	Q14BN4	SLMAP	Q14BN4	38	186	Sarcolemmal membrane-associated protein (Sarcolemmal-associa	w
+SARCOLIPIN	human	O00631	SLN	O00631	52	193	Sarcolipin	w
+SARCOMA	human	A6NJ88	SAGE2P	A6NJ88	0	1	Putative SAGE1-like protein (Sarcoma antigen 2 pseudogene)	w
+SARCOMA	human	P05412	JUN	P05412	253	1096	Transcription factor Jun (Activator protein 1) (AP1) (Proto-	w
+SARCOMA	human	P07332	FES	P07332	71	1380	Tyrosine-protein kinase Fes/Fps (EC 2.7.10.2) (Feline sarcom	w
+SARCOMA	human	P07948	LYN	P07948	307	2264	Tyrosine-protein kinase Lyn (EC 2.7.10.2) (Lck/Yes-related n	w
+SARCOMA	human	P09769	FGR	P09769	224	1531	Tyrosine-protein kinase Fgr (EC 2.7.10.2) (Gardner-Rasheed f	w
+SARCOMA	human	P15056	BRAF	P15056	185	1795	Serine/threonine-protein kinase B-raf (EC 2.7.11.1) (Proto-o	w
+SARCOMA	human	P16591	FER	P16591	46	1374	Tyrosine-protein kinase Fer (EC 2.7.10.2) (Feline encephalit	w
+SARCOMA	human	Q01844	EWSR1	Q01844	84	811	RNA-binding protein EWS (EWS oncogene) (Ewing sarcoma breakp	w
+SARCOMA	human	Q15532	SS18	Q15532	10	108	Protein SSXT (Protein SYT) (Synovial sarcoma translocated to	w
+SARCOMA	human	Q16384	SSX1	Q16384	9	93	Protein SSX1 (Cancer/testis antigen 5.1) (CT5.1) (Synovial s	w
+SARCOMA	human	Q16385	SSX2	Q16385	9	81	Protein SSX2 (Cancer/testis antigen 5.2) (CT5.2) (Synovial s	w
+SARCOMA	human	Q5T9S5	CCDC18	Q5T9S5	51	121	Coiled-coil domain-containing protein 18 (Sarcoma antigen NY	w
+SARCOMA	human	Q5VTL8	PRPF38B	Q5VTL8	32	222	Pre-mRNA-splicing factor 38B (Sarcoma antigen NY-SAR-27)	w
+SARCOMA	human	Q6ZRK6	CCDC73	Q6ZRK6	4	32	Coiled-coil domain-containing protein 73 (Sarcoma antigen NY	w
+SARCOMA	human	Q8N0W7	FMR1NB	Q8N0W7	2	36	FMR1 neighbor protein (Cancer/testis antigen 37) (CT37) (Sar	w
+SARCOMA	human	Q8NEN9	PDZD8	Q8NEN9	49	429	PDZ domain-containing protein 8 (Lysosomal vacuolator) (LYVA	w
+SARCOMA	human	Q8WX93	PALLD	Q8WX93	58	213	Palladin (SIH002) (Sarcoma antigen NY-SAR-77)	w
+SARCOMA	human	Q9BT25	HAUS8	Q9BT25	73	271	HAUS augmin-like complex subunit 8 (HEC1/NDC80-interacting c	w
+SARCOMA	human	Q9BZE9	ASPSCR1	Q9BZE9	13	120	Tether containing UBX domain for GLUT4 (Alveolar soft part s	w
+SARCOMA	human	Q9H1Q7	PCED1A	Q9H1Q7	7	37	PC-esterase domain-containing protein 1A (Protein FAM113A) (	w
+SARCOMA	human	Q9H9F9	ACTR5	Q9H9F9	14	246	Actin-related protein 5 (hARP5) (Sarcoma antigen NY-SAR-16)	w
+SARCOMA	human	Q9HAF1	MEAF6	Q9HAF1	30	171	Chromatin modification-related protein MEAF6 (MYST/Esa1-asso	w
+SARCOMA	human	Q9NQ35	NRIP3	Q9NQ35	11	62	Nuclear receptor-interacting protein 3 (Sarcoma antigen NY-S	w
+SARCOMA	human	Q9NQM4	DNAAF6	Q9NQM4	11	49	Dynein axonemal assembly factor 6 (PIH1 domain-containing pr	w
+SARCOMA	human	Q9NVM9	INTS13	Q9NVM9	15	145	Integrator complex subunit 13 (Cell cycle regulator Mat89Bb 	w
+SARCOMA	human	Q9NXZ1	SAGE1	Q9NXZ1	7	94	Sarcoma antigen 1 (Cancer/testis antigen 14) (CT14)	w
+SARCOMA	human	Q9P1Z2	CALCOCO1	Q9P1Z2	55	150	Calcium-binding and coiled-coil domain-containing protein 1 	w
+SARCOMA	zebrafish	X1WH62	ssx2ipa	X1WH62	2	6	Synovial sarcoma, X breakpoint 2 interacting protein a isofo	w
+SARCOMA-AMPLIFIED	human	Q12999	TSPAN31	Q12999	7	113	Tetraspanin-31 (Tspan-31) (Sarcoma-amplified sequence)	w
+SARCOMA-ASSOCIATED	fly	FBgn0285954	caz	Q27294	18	212	RNA-binding protein cabeza (P19) (Sarcoma-associated RNA-bin	w
+SARCOMA-RELATED	human	P16591	FER	P16591	46	1374	Tyrosine-protein kinase Fer (EC 2.7.10.2) (Feline encephalit	w
+SARCOMERE	fly	FBgn0051374	sals	Q9VGN4	2	5	Sarcomere length short, isoform B (Sarcomere length short, i	w
+SARCOMERIC	human	P17540	CKMT2	P17540	8	109	Creatine kinase S-type, mitochondrial (EC 2.7.3.2) (Basic-ty	w
+SARCOMERIC	human	Q86TC9	MYPN	Q86TC9	31	112	Myopalladin (145 kDa sarcomeric protein)	w
+SARCOMERIC	worm	Q23158	atn-1	Q23158	1	107	Alpha-actinin, sarcomeric	w
+SARCOPHAGA	fly	FBgn0250848	CtsK1	Q9V3U6	10	443	26-29kD-proteinase (EC 3.4.22.-) (Homologue of Sarcophaga 26	w
+SARCOPLASMIC	fly	FBgn0020908	Scp1	Q8MSI2	2	102	GH15296p (Sarcoplasmic calcium-binding protein 1, isoform A)	w
+SARCOPLASMIC	fly	FBgn0026144	CBP	M9PHB8	3	12	Sarcoplasmic calcium-binding protein, isoform C	w
+SARCOPLASMIC	fly	FBgn0263006	SERCA	P22700	4	154	Calcium-transporting ATPase sarcoplasmic/endoplasmic reticul	w
+SARCOPLASMIC	human	A6NNS2	DHRS7C	A6NNS2	4	57	Dehydrogenase/reductase SDR family member 7C (EC 1.1.1.105) 	w
+SARCOPLASMIC	human	O14983	ATP2A1	O14983	9	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 1 (SERCA1)	w
+SARCOPLASMIC	human	P0DN84	STRIT1	P0DN84	27	51	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+SARCOPLASMIC	human	P16615	ATP2A2	P16615	4	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 (SERCA2)	w
+SARCOPLASMIC	human	P23327	HRC	P23327	6	114	Sarcoplasmic reticulum histidine-rich calcium-binding protei	w
+SARCOPLASMIC	human	Q8WVX3	ARLN	Q8WVX3	20	123	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+SARCOPLASMIC	human	Q93084	ATP2A3	Q93084	8	574	Sarcoplasmic/endoplasmic reticulum calcium ATPase 3 (SERCA3)	w
+SARCOPLASMIC	human	Q96MG2	JSRP1	Q96MG2	6	40	Junctional sarcoplasmic reticulum protein 1 (Junctional-face	w
+SARCOSIN	human	O60662	KLHL41	O60662	42	154	Kelch-like protein 41 (Kel-like protein 23) (Kelch repeat an	w
+SARCOSINE	fly	FBgn0034276	Sardh	A1ZAZ2	0	40	Sarcosine dehydrogenase (EC 1.-.-.-, EC 1.5.8.3)	w
+SARCOSINE	human	Q9P0Z9	PIPOX	Q9P0Z9	6	60	Peroxisomal sarcosine oxidase (PSO) (EC 1.5.3.1) (EC 1.5.3.7	w
+SARCOSINE	human	Q9UL12	SARDH	Q9UL12	2	71	Sarcosine dehydrogenase, mitochondrial (SarDH) (EC 1.5.8.3) 	w
+SARCOSINE	worm	Q18006	C15B12.1	Q18006	0	2	Putative sarcosine oxidase	w
+SARCOSINE	worm	Q8WSW2	C15B12.8	Q8WSW2	0	2	sarcosine oxidasee (formaldehyde-forming)	w
+SARCOSINE	zebrafish	A0A8M1P8J4	pipox	A0A8M1P8J4	0	17	Peroxisomal sarcosine oxidase	w
+SARCOSINE	zebrafish	F1Q5K3	sardh	F1Q5K3	0	17	Sarcosine dehydrogenase, mitochondrial	w
+SARCOSPAN	human	Q14714	SSPN	Q14714	4	99	Sarcospan (K-ras oncogene-associated protein) (Kirsten-ras-a	w
+SARCOSPAN	zebrafish	A0AB40ED77	sspn	A0AB40ED77	0	18	Sarcospan	w
+SARCOSYNAPSIN	human	Q2TBA0	KLHL40	Q2TBA0	53	162	Kelch-like protein 40 (Kelch repeat and BTB domain-containin	w
+SARCO_HUMAN	human	O00631	SLN	O00631	52	193		
+SARD1	arabidopsis-thaliana	Q9C9T2	SARD1	Q9C9T2	3	16	Protein SAR DEFICIENT 1	
+SARDH	fly	FBgn0034276	Sardh	A1ZAZ2	0	40	Sarcosine dehydrogenase (EC 1.-.-.-, EC 1.5.8.3)	
+SARDH	human	Q9UL12	SARDH	Q9UL12	2	71	Sarcosine dehydrogenase, mitochondrial (SarDH) (EC 1.5.8.3) 	
+SARDH	mus-musculus	Q99LB7	Sardh	Q99LB7	0	16	Sarcosine dehydrogenase, mitochondrial	
+SARDH	rattus-norvegicus	Q64380	Sardh	Q64380	0	19	Sarcosine dehydrogenase, mitochondrial	
+SARDH	zebrafish	F1Q5K3	sardh	F1Q5K3	0	17	Sarcosine dehydrogenase, mitochondrial	
+SARDH_HUMAN	human	Q9UL12	SARDH	Q9UL12	2	71		
+SARG	human	Q9BW04	SARG	Q9BW04	11	48	Specifically androgen-regulated gene protein	
+SARGRAMOSTIM	human	P04141	CSF2	P04141	91	860	Granulocyte-macrophage colony-stimulating factor (GM-CSF) (C	w
+SARG_HUMAN	human	Q9BW04	SARG	Q9BW04	11	48		
+SARI	human	Q8N1L9	BATF2	Q8N1L9	84	460	Basic leucine zipper transcriptional factor ATF-like 2 (B-AT	w
+SARM	fly	FBgn0262579	Sarm	M9NE45	10	73	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase (EC 3.2.2.6)	
+SARM	human	Q6SZW1	SARM1	Q6SZW1	8	143		
+SARM1	human	Q6SZW1	SARM1	Q6SZW1	8	143	NAD(+) hydrolase SARM1 (NADase SARM1) (hSARM1) (EC 3.2.2.6) 	
+SARM1	mus-musculus	Q6PDS3	Sarm1	Q6PDS3	2	42	NAD(+) hydrolase SARM1	
+SARM1	rattus-norvegicus	D3ZUM2	Sarm1	D3ZUM2	2	39	NAD(+) hydrolase SARM1	
+SARM1	zebrafish	F1QWA8	sarm1	F1QWA8	0	39	NAD(+) hydrolase SARM1	w
+SARM1	zebrafish	F1QWA8	sarm1	F1QWA8	0	39	NAD(+) hydrolase SARM1	w
+SARM1_HUMAN	human	Q6SZW1	SARM1	Q6SZW1	8	143		
+SARNP	human	P82979	SARNP	P82979	46	493	SAP domain-containing ribonucleoprotein (Cytokine-induced pr	
+SARNP	mus-musculus	Q9D1J3	Sarnp	Q9D1J3	5	74	SAP domain-containing ribonucleoprotein	
+SARNP	rattus-norvegicus	Q498U4	Sarnp	Q498U4	2	22	SAP domain-containing ribonucleoprotein	
+SARNP_HUMAN	human	P82979	SARNP	P82979	46	493		
+SARP-1	human	Q96HF1	SFRP2	Q96HF1	17	146	Secreted frizzled-related protein 2 (FRP-2) (sFRP-2) (Secret	w
+SARP-2	human	Q8N474	SFRP1	Q8N474	25	183	Secreted frizzled-related protein 1 (FRP-1) (sFRP-1) (Secret	w
+SARP-3	human	Q5T4F7	SFRP5	Q5T4F7	19	105	Secreted frizzled-related protein 5 (sFRP-5) (Frizzled-relat	w
+SARP1	human	Q96HF1	SFRP2	Q96HF1	17	146		
+SARP2	human	Q8N474	SFRP1	Q8N474	25	183		
+SARP3	human	Q5T4F7	SFRP5	Q5T4F7	19	105		
+SARR	staphylococcus-aureus-93061	Q9F0R1	sarR	Q9F0R1	0	1	HTH-type transcriptional regulator SarR	
+SARS	human	P49591	SARS1	P49591	7	184		
+SARS-1	worm	Q18678	sars-1	Q18678	1	32	Probable serine--tRNA ligase, cytoplasmic	
+SARS-2	worm	G5EF77	sars-2	G5EF77	1	30	serine--tRNA ligase	
+SARS1	human	P49591	SARS1	P49591	7	184	Serine--tRNA ligase, cytoplasmic (EC 6.1.1.11) (Seryl-tRNA s	
+SARS1	mus-musculus	P26638	Sars1	P26638	2	35	Serine--tRNA ligase, cytoplasmic	
+SARS1	rattus-norvegicus	Q6P799	Sars1	Q6P799	1	29	Serine--tRNA ligase, cytoplasmic	
+SARS1	zebrafish	Q6DRC0	sars1	Q6DRC0	0	32	Serine--tRNA ligase, cytoplasmic	
+SARS2	human	Q9NP81	SARS2	Q9NP81	4	136	Serine--tRNA ligase, mitochondrial (EC 6.1.1.11) (SerRSmt) (	
+SARS2	mus-musculus	Q9JJL8	Sars2	Q9JJL8	3	28	Serine--tRNA ligase, mitochondrial	
+SARS2	rattus-norvegicus	D3ZM09	Sars2	D3ZM09	1	17	Serine--tRNA ligase, mitochondrial	
+SARSM	human	Q9NP81	SARS2	Q9NP81	4	136		
+SART-1	human	O43290	SART1	O43290	83	501	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSn	w
+SART-2	human	Q9UL01	DSE	Q9UL01	3	34	Dermatan-sulfate epimerase (DS epimerase) (EC 5.1.3.19) (Cho	w
+SART-3	human	Q15020	SART3	Q15020	38	449	Spliceosome associated factor 3, U4/U6 recycling protein (Sq	w
+SART-3	worm	Q17430	sart-3	Q17430	1	45	Spliceosome associated factor 3, U4/U6 recycling protein	
+SART1	human	O43290	SART1	O43290	83	501	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSn	
+SART1	mus-musculus	Q9Z315	Sart1	Q9Z315	14	110	U4/U6.U5 tri-snRNP-associated protein 1	
+SART1	rattus-norvegicus	Q5XIW8	Sart1	Q5XIW8	19	139	U4/U6.U5 tri-snRNP-associated protein 1	
+SART1	zebrafish	Q6DG11	sart1	Q6DG11	17	109	Spliceosome-associated factor 1, recruiter of U4/U6.U5 tri-s	
+SART2	human	Q9UL01	DSE	Q9UL01	3	34		
+SART3	human	Q15020	SART3	Q15020	38	449	Spliceosome associated factor 3, U4/U6 recycling protein (Sq	
+SART3	mus-musculus	Q9JLI8	Sart3	Q9JLI8	2	35	Spliceosome associated factor 3, U4/U6 recycling protein	
+SART3	rattus-norvegicus	D3ZAS8	Sart3	D3ZAS8	1	30	Spliceosome associated factor 3, U4/U6 recycling protein	
+SART3	zebrafish	B3DJT0	sart3	B3DJT0	1	25	Spliceosome associated factor 3, U4/U6 recycling protein	
+SART3_HUMAN	human	Q15020	SART3	Q15020	38	449		

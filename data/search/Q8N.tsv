@@ -1,10 +1,1282 @@
-Q8N0B4	dictyostelium-discoideum	Q8N0B4	SUMO	Q8N0B4	15	78	Small ubiquitin-like protein
-Q8N7M5	rattus-norvegicus	Q8N7M5	Hjv	Q8N7M5	8	28	Hemojuvelin
-Q8N7N5	mus-musculus	Q8N7N5	Dcaf8	Q8N7N5	1	49	DDB1- and CUL4-associated factor 8
-Q8N7N6	mus-musculus	Q8N7N6	Traf3ip2	Q8N7N6	5	17	E3 ubiquitin ligase TRAF3IP2
-Q8N9S3	mus-musculus	Q8N9S3	Ahsa2	Q8N9S3	1	14	Activator of 90 kDa heat shock protein ATPase homolog 2
-Q8NIL3	schizosaccharomyces-pombe	Q8NIL3	aes1	Q8NIL3	0	1	Antisense-enhancing sequence 1
-Q8NIQ1	schizosaccharomyces-pombe	Q8NIQ1	SPAC2F3.18c	Q8NIQ1	2	5	V-type proton ATPase subunit f
-Q8NJN3	candida-albicans-237561	Q8NJN3	ACS2	Q8NJN3	1	4	Acetyl-coenzyme A synthetase 2
-Q8NKC1	schizosaccharomyces-pombe	Q8NKC1	SPBPB21E7.04c	Q8NKC1	0	2	Probable catechol O-methyltransferase 2
-Q8NKC2	schizosaccharomyces-pombe	Q8NKC2	eno102	Q8NKC2	1	12	Enolase 1-2
+Q8N0B4	dictyostelium-discoideum	Q8N0B4	SUMO	Q8N0B4	15	78	Small ubiquitin-like protein	
+Q8N0S2	human	Q8N0S2	SYCE1	Q8N0S2	76	157	Synaptonemal complex central element protein 1 (Cancer/testi	
+Q8N0S6	human	Q8N0S6	CENPL	Q8N0S6	13	121	Centromere protein L (CENP-L) (Interphase centromere complex	
+Q8N0T1	human	Q8N0T1	RBIS	Q8N0T1	22	95	Ribosomal biogenesis factor	
+Q8N0U2	human	Q8N0U2	TMEM61	Q8N0U2	5	34	Transmembrane protein 61	
+Q8N0U4	human	Q8N0U4	FAM185A	Q8N0U4	2	48	Protein FAM185A	
+Q8N0U7	human	Q8N0U7	C1orf87	Q8N0U7	6	30	Uncharacterized protein C1orf87	
+Q8N0U8	human	Q8N0U8	VKORC1L1	Q8N0U8	8	118	Vitamin K epoxide reductase complex subunit 1-like protein 1	
+Q8N0V1	human	Q8N0V1	ZNF295-AS1	Q8N0V1	0	1	Putative uncharacterized protein ZNF295-AS1 (ZNF295 antisens	
+Q8N0V3	human	Q8N0V3	RBFA	Q8N0V3	16	172	Putative ribosome-binding factor A, mitochondrial	
+Q8N0V4	human	Q8N0V4	LGI2	Q8N0V4	14	86	Leucine-rich repeat LGI family member 2 (LGI1-like protein 2	
+Q8N0V5	human	Q8N0V5	GCNT2	Q8N0V5	9	137	N-acetyllactosaminide beta-1,6-N-acetylglucosaminyl-transfer	
+Q8N0W3	human	Q8N0W3	FCSK	Q8N0W3	2	49	L-fucose kinase (Fucokinase) (EC 2.7.1.52)	
+Q8N0W4	human	Q8N0W4	NLGN4X	Q8N0W4	16	79	Neuroligin-4, X-linked (Neuroligin X) (HNLX)	
+Q8N0W5	human	Q8N0W5	IQCK	Q8N0W5	9	34	IQ domain-containing protein K	
+Q8N0W7	human	Q8N0W7	FMR1NB	Q8N0W7	2	36	FMR1 neighbor protein (Cancer/testis antigen 37) (CT37) (Sar	
+Q8N0X2	human	Q8N0X2	SPAG16	Q8N0X2	6	41	Sperm-associated antigen 16 protein (Pf20 protein homolog)	
+Q8N0X4	human	Q8N0X4	CLYBL	Q8N0X4	0	114	Citramalyl-CoA lyase, mitochondrial (EC 4.1.3.25) ((3S)-maly	
+Q8N0X7	human	Q8N0X7	SPART	Q8N0X7	24	114	Spartin (Spastic paraplegia 20 protein) (Trans-activated by 	
+Q8N0Y2	human	Q8N0Y2	ZNF444	Q8N0Y2	82	460	Zinc finger protein 444 (Endothelial zinc finger protein 2) 	
+Q8N0Y3	human	Q8N0Y3	OR4N4	Q8N0Y3	2	35	Olfactory receptor 4N4 (Olfactory receptor OR15-1) (Olfactor	
+Q8N0Y5	human	Q8N0Y5	OR8I2	Q8N0Y5	1	31	Olfactory receptor 8I2 (Olfactory receptor OR11-170)	
+Q8N0Y7	human	Q8N0Y7	PGAM4	Q8N0Y7	6	207	Probable phosphoglycerate mutase 4 (EC 5.4.2.11) (EC 5.4.2.4	
+Q8N0Z2	human	Q8N0Z2	ABRA	Q8N0Z2	12	58	Actin-binding Rho-activating protein (Striated muscle activa	
+Q8N0Z3	human	Q8N0Z3	SPICE1	Q8N0Z3	56	222	Spindle and centriole-associated protein 1 (Coiled-coil doma	
+Q8N0Z6	human	Q8N0Z6	TTC5	Q8N0Z6	20	163	Tetratricopeptide repeat protein 5 (TPR repeat protein 5) (S	
+Q8N0Z8	human	Q8N0Z8	PUSL1	Q8N0Z8	9	133	tRNA pseudouridine synthase-like 1 (EC 5.4.99.12) (tRNA pseu	
+Q8N0Z9	human	Q8N0Z9	VSIG10	Q8N0Z9	6	33	V-set and immunoglobulin domain-containing protein 10	
+Q8N100	human	Q8N100	ATOH7	Q8N100	75	413	Transcription factor ATOH7 (Atonal bHLH transcription factor	
+Q8N103	human	Q8N103	TAGAP	Q8N103	39	144	T-cell activation Rho GTPase-activating protein (T-cell acti	
+Q8N104	human	Q8N104	DEFB106A	Q8N104	26	101	Beta-defensin 106 (Beta-defensin 6) (BD-6) (DEFB-6) (Defensi	
+Q8N108	human	Q8N108	MIER1	Q8N108	80	411	Mesoderm induction early response protein 1 (Early response 	
+Q8N109	human	Q8N109	KIR2DL5A	Q8N109	8	32	Killer cell immunoglobulin-like receptor 2DL5A (CD antigen C	
+Q8N111	human	Q8N111	CEND1	Q8N111	13	165	Cell cycle exit and neuronal differentiation protein 1 (BM88	
+Q8N112	human	Q8N112	LSMEM2	Q8N112	21	83	Leucine-rich single-pass membrane protein 2	
+Q8N114	human	Q8N114	SHISA5	Q8N114	16	79	Protein shisa-5 (Putative NF-kappa-B-activating protein 120)	
+Q8N118	human	Q8N118	CYP4X1	Q8N118	0	52	Cytochrome P450 4X1 (EC 1.14.14.-) (CYPIVX1)	
+Q8N119	human	Q8N119	MMP21	Q8N119	9	44	Matrix metalloproteinase-21 (MMP-21) (EC 3.4.24.-)	
+Q8N122	human	Q8N122	RPTOR	Q8N122	39	557	Regulatory-associated protein of mTOR (Raptor) (p150 target 	
+Q8N123	human	Q8N123	CPXCR1	Q8N123	1	11	CPX chromosomal region candidate gene 1 protein (Cancer/test	
+Q8N126	human	Q8N126	CADM3	Q8N126	40	211	Cell adhesion molecule 3 (Brain immunoglobulin receptor) (Im	
+Q8N127	human	Q8N127	OR5AS1	Q8N127	1	21	Olfactory receptor 5AS1 (Olfactory receptor OR11-168)	
+Q8N128	human	Q8N128	FAM177A1	Q8N128	16	95	Protein FAM177A1	
+Q8N129	human	Q8N129	CNPY4	Q8N129	5	41	Protein canopy homolog 4	
+Q8N130	human	Q8N130	SLC34A3	Q8N130	3	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	
+Q8N131	human	Q8N131	TMEM123	Q8N131	19	118	Porimin (Keratinocytes-associated transmembrane protein 3) (	
+Q8N135	human	Q8N135	LGI4	Q8N135	15	110	Leucine-rich repeat LGI family member 4 (LGI1-like protein 3	
+Q8N136	human	Q8N136	DAW1	Q8N136	5	80	Dynein assembly factor with WD repeat domains 1 (Outer row d	
+Q8N137	human	Q8N137	CNTROB	Q8N137	41	220	Centrobin (Centrosomal BRCA2-interacting protein) (LYST-inte	
+Q8N138	human	Q8N138	ORMDL3	Q8N138	16	144	ORM1-like protein 3	
+Q8N139	human	Q8N139	ABCA6	Q8N139	2	22	ATP-binding cassette sub-family A member 6 (EC 7.6.2.-)	
+Q8N140	human	Q8N140	EID3	Q8N140	44	109	EP300-interacting inhibitor of differentiation 3 (EID-3) (E1	
+Q8N141	human	Q8N141	ZFP82	Q8N141	1	42	Zinc finger protein 82 homolog (Zfp-82) (Zinc finger protein	
+Q8N142	human	Q8N142	ADSS1	Q8N142	2	23	Adenylosuccinate synthetase isozyme 1 (AMPSase 1) (AdSS 1) (	
+Q8N143	human	Q8N143	BCL6B	Q8N143	10	76	B-cell CLL/lymphoma 6 member B protein (Bcl6-associated zinc	
+Q8N144	human	Q8N144	GJD3	Q8N144	20	488	Gap junction delta-3 protein (Connexin-31.9) (Cx31.9) (Gap j	
+Q8N145	human	Q8N145	LGI3	Q8N145	10	157	Leucine-rich repeat LGI family member 3 (LGI1-like protein 4	
+Q8N146	human	Q8N146	OR8H3	Q8N146	2	59	Olfactory receptor 8H3 (Olfactory receptor OR11-172)	
+Q8N148	human	Q8N148	OR6V1	Q8N148	2	17	Olfactory receptor 6V1 (Olfactory receptor OR7-3)	
+Q8N149	human	Q8N149	LILRA2	Q8N149	11	133	Leukocyte immunoglobulin-like receptor subfamily A member 2 	
+Q8N157	human	Q8N157	AHI1	Q8N157	15	137	Jouberin (Abelson helper integration site 1 protein homolog)	
+Q8N158	human	Q8N158	GPC2	Q8N158	3	66	Glypican-2 [Cleaved into: Secreted glypican-2]	
+Q8N159	human	Q8N159	NAGS	Q8N159	9	110	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	
+Q8N162	human	Q8N162	OR8H2	Q8N162	1	32	Olfactory receptor 8H2 (Olfactory receptor OR11-171)	
+Q8N163	human	Q8N163	CCAR2	Q8N163	32	357	Cell cycle and apoptosis regulator protein 2 (Cell division 	
+Q8N165	human	Q8N165	PDIK1L	Q8N165	344	1266	Serine/threonine-protein kinase PDIK1L (EC 2.7.11.1) (PDLIM1	
+Q8N183	human	Q8N183	NDUFAF2	Q8N183	9	173	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	
+Q8N184	human	Q8N184	ZNF567	Q8N184	1	105	Zinc finger protein 567	
+Q8N187	human	Q8N187	CARF	Q8N187	4	17	Calcium-responsive transcription factor (Amyotrophic lateral	
+Q8N196	human	Q8N196	SIX5	Q8N196	12	62	Homeobox protein SIX5 (DM locus-associated homeodomain prote	
+Q8N1A0	human	Q8N1A0	KRT222	Q8N1A0	20	64	Keratin-like protein KRT222 (Keratin-222) (Keratin-222 pseud	
+Q8N1A6	human	Q8N1A6	C4orf33	Q8N1A6	9	74	UPF0462 protein C4orf33	
+Q8N1B3	human	Q8N1B3	CCNQ	Q8N1B3	10	62	Cyclin-Q (CDK10-activating cyclin) (Cyclin-M) (Cyclin-relate	
+Q8N1B4	human	Q8N1B4	VPS52	Q8N1B4	53	233	Vacuolar protein sorting-associated protein 52 homolog (SAC2	
+Q8N1C3	human	Q8N1C3	GABRG1	Q8N1C3	37	142	Gamma-aminobutyric acid receptor subunit gamma-1 (GABA(A) re	
+Q8N1D0	human	Q8N1D0	SLC67A1-AS	Q8N1D0	0	7	Uncharacterized protein SLC67A1-AS (Beckwith-Wiedemann syndr	
+Q8N1D5	human	Q8N1D5	CFAP107	Q8N1D5	3	104	Cilia- and flagella-associated protein 107	
+Q8N1E2	human	Q8N1E2	LYG1	Q8N1E2	0	21	Lysozyme g-like protein 1 (EC 3.2.1.-)	
+Q8N1E6	human	Q8N1E6	FBXL14	Q8N1E6	11	106	F-box/LRR-repeat protein 14 (F-box and leucine-rich repeat p	
+Q8N1F7	human	Q8N1F7	NUP93	Q8N1F7	38	360	Nuclear pore complex protein Nup93 (93 kDa nucleoporin) (Nuc	
+Q8N1F8	human	Q8N1F8	STK11IP	Q8N1F8	27	143	Serine/threonine-protein kinase 11-interacting protein (LKB1	
+Q8N1G0	human	Q8N1G0	ZNF687	Q8N1G0	76	251	Zinc finger protein 687	
+Q8N1G1	human	Q8N1G1	REXO1	Q8N1G1	11	104	RNA exonuclease 1 homolog (EC 3.1.-.-) (Elongin-A-binding pr	
+Q8N1G2	human	Q8N1G2	CMTR1	Q8N1G2	19	296	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1 (EC	
+Q8N1G4	human	Q8N1G4	LRRC47	Q8N1G4	16	197	Leucine-rich repeat-containing protein 47	
+Q8N1H7	human	Q8N1H7	SIX6OS1	Q8N1H7	6	15	Protein SIX6OS1 (Six6 opposite strand transcript 1)	
+Q8N1I0	human	Q8N1I0	DOCK4	Q8N1I0	9	106	Dedicator of cytokinesis protein 4	
+Q8N1I8	human	Q8N1I8	CACTIN-AS1	Q8N1I8	0	1	Putative uncharacterized protein encoded by CACTIN-AS1 (Cact	
+Q8N1K5	human	Q8N1K5	THEMIS	Q8N1K5	16	80	Protein THEMIS (Thymocyte-expressed molecule involved in sel	
+Q8N1L1	human	Q8N1L1	LINC00528	Q8N1L1	0	1	Putative uncharacterized protein encoded by LINC00528	
+Q8N1L4	human	Q8N1L4	CYP4Z2P	Q8N1L4	0	8	Putative inactive cytochrome P450 family member 4Z2	
+Q8N1L9	human	Q8N1L9	BATF2	Q8N1L9	84	460	Basic leucine zipper transcriptional factor ATF-like 2 (B-AT	
+Q8N1M1	human	Q8N1M1	BEST3	Q8N1M1	1	16	Bestrophin-3 (Vitelliform macular dystrophy 2-like protein 3	
+Q8N1N0	human	Q8N1N0	CLEC4F	Q8N1N0	4	75	C-type lectin domain family 4 member F (C-type lectin superf	
+Q8N1N2	human	Q8N1N2	DYNAP	Q8N1N2	11	111	Dynactin-associated protein (Full)	
+Q8N1N4	human	Q8N1N4	KRT78	Q8N1N4	79	250	Keratin, type II cytoskeletal 78 (Cytokeratin-78) (CK-78) (K	
+Q8N1P7	human	Q8N1P7	CRYBG2	Q8N1P7	2	37	Beta/gamma crystallin domain-containing protein 2 (Absent in	
+Q8N1Q1	human	Q8N1Q1	CA13	Q8N1Q1	6	64	Carbonic anhydrase 13 (EC 4.2.1.1) (Carbonate dehydratase XI	
+Q8N1Q8	human	Q8N1Q8	THEM5	Q8N1Q8	5	61	Acyl-coenzyme A thioesterase THEM5 (Acyl-CoA thioesterase TH	
+Q8N1S5	human	Q8N1S5	SLC39A11	Q8N1S5	2	84	Zinc transporter ZIP11 (Solute carrier family 39 member 11) 	
+Q8N1T3	human	Q8N1T3	MYO1H	Q8N1T3	3	57	Unconventional myosin-Ih (Myosin-1H)	
+Q8N1V2	human	Q8N1V2	CFAP52	Q8N1V2	11	99	Cilia- and flagella-associated protein 52 (WD repeat-contain	
+Q8N1V8	human	Q8N1V8	LINC01561	Q8N1V8	0	5	Uncharacterized protein encoded by LINC01561	
+Q8N1W1	human	Q8N1W1	ARHGEF28	Q8N1W1	60	176	Rho guanine nucleotide exchange factor 28 (190 kDa guanine n	
+Q8N1W2	human	Q8N1W2	ZNF710	Q8N1W2	4	47	Zinc finger protein 710	
+Q8N1X5	human	Q8N1X5	YF001	Q8N1X5	0	2	Uncharacterized protein FLJ37310	
+Q8N201	human	Q8N201	INTS1	Q8N201	49	579	Integrator complex subunit 1 (Int1)	
+Q8N205	human	Q8N205	SYNE4	Q8N205	26	133	Nesprin-4 (KASH domain-containing protein 4) (KASH4) (Nuclea	
+Q8N228	human	Q8N228	SCML4	Q8N228	80	353	Sex comb on midleg-like protein 4	
+Q8N239	human	Q8N239	KLHL34	Q8N239	21	109	Kelch-like protein 34	
+Q8N257	human	Q8N257	H2BC26	Q8N257	114	1032	Histone H2B type 3-B (H2B type 12) (H2B-clustered histone 26	
+Q8N264	human	Q8N264	ARHGAP24	Q8N264	78	517	Rho GTPase-activating protein 24 (Filamin-A-associated RhoGA	
+Q8N268	human	Q8N268	CT197	Q8N268	3	95		
+Q8N271	human	Q8N271	PROM2	Q8N271	1	49	Prominin-2 (PROM-2) (Prominin-like protein 2) (hPROML2)	
+Q8N283	human	Q8N283	ANKRD35	Q8N283	6	39	Ankyrin repeat domain-containing protein 35	
+Q8N292	human	Q8N292	GAPT	Q8N292	20	127	Protein GAPT (GRB2-binding adapter protein, transmembrane) (	
+Q8N2A0	human	Q8N2A0	LINC00269	Q8N2A0	1	1	Putative uncharacterized protein encoded by LINC00269	
+Q8N2A8	human	Q8N2A8	PLD6	Q8N2A8	10	172	Mitochondrial cardiolipin hydrolase (EC 3.1.4.-) (Choline ph	
+Q8N2B8	human	Q8N2B8	YB035	Q8N2B8	0	12	Putative uncharacterized protein FLJ33534	
+Q8N2C3	human	Q8N2C3	DEPDC4	Q8N2C3	1	10	DEP domain-containing protein 4	
+Q8N2C7	human	Q8N2C7	UNC80	Q8N2C7	2	96	Protein unc-80 homolog	
+Q8N2C9	human	Q8N2C9	UMODL1-AS1	Q8N2C9	0	1	Uncharacterized protein UMODL1-AS1 (UMODL1 antisense RNA 1) 	
+Q8N2E2	human	Q8N2E2	VWDE	Q8N2E2	8	98	von Willebrand factor D and EGF domain-containing protein	
+Q8N2E6	human	Q8N2E6	TOR2A	Q8N2E6	38	562	Prosalusin (Torsin family 2 member A) (Torsin-2A) [Cleaved i	
+Q8N2F6	human	Q8N2F6	ARMC10	Q8N2F6	14	142	Armadillo repeat-containing protein 10 (Splicing variant inv	
+Q8N2G4	human	Q8N2G4	LYPD1	Q8N2G4	15	168	Ly6/PLAUR domain-containing protein 1 (Putative HeLa tumor s	
+Q8N2G6	human	Q8N2G6	ZCCHC24	Q8N2G6	2	46	Zinc finger CCHC domain-containing protein 24	
+Q8N2G8	human	Q8N2G8	GHDC	Q8N2G8	8	86	GH3 domain-containing protein	
+Q8N2H3	human	Q8N2H3	PYROXD2	Q8N2H3	2	41	Pyridine nucleotide-disulfide oxidoreductase domain-containi	
+Q8N2H4	human	Q8N2H4	SYS1	Q8N2H4	9	137	Protein SYS1 homolog	
+Q8N2H9	human	Q8N2H9	PELI3	Q8N2H9	15	96	E3 ubiquitin-protein ligase pellino homolog 3 (Pellino-3) (E	
+Q8N2I2	human	Q8N2I2	ZNF619	Q8N2I2	0	8	Zinc finger protein 619	
+Q8N2I9	human	Q8N2I9	STK40	Q8N2I9	272	1230	Serine/threonine-protein kinase 40 (EC 2.7.11.1) (SINK-homol	
+Q8N2K0	human	Q8N2K0	ABHD12	Q8N2K0	5	169	Lysophosphatidylserine lipase ABHD12 (EC 3.1.1.-) (2-arachid	
+Q8N2K1	human	Q8N2K1	UBE2J2	Q8N2K1	29	90	Ubiquitin-conjugating enzyme E2 J2 (EC 2.3.2.23) (E2 ubiquit	
+Q8N2M4	human	Q8N2M4	TMEM86A	Q8N2M4	5	66	Lysoplasmalogenase TMEM86A (EC 3.3.2.2) (Transmembrane prote	
+Q8N2M8	human	Q8N2M8	CLASRP	Q8N2M8	37	261	CLK4-associating serine/arginine rich protein (Splicing fact	
+Q8N2N9	human	Q8N2N9	ANKRD36B	Q8N2N9	12	110	Ankyrin repeat domain-containing protein 36B (CLL-associated	
+Q8N2Q7	human	Q8N2Q7	NLGN1	Q8N2Q7	38	172	Neuroligin-1	
+Q8N2R0	human	Q8N2R0	OSR2	Q8N2R0	34	346	Protein odd-skipped-related 2	
+Q8N2R8	human	Q8N2R8	FAM43A	Q8N2R8	10	57	Protein FAM43A	
+Q8N2S1	human	Q8N2S1	LTBP4	Q8N2S1	22	91	Latent-transforming growth factor beta-binding protein 4 (LT	
+Q8N2U0	human	Q8N2U0	TMEM256	Q8N2U0	4	81	Transmembrane protein 256	
+Q8N2U9	human	Q8N2U9	SLC66A2	Q8N2U9	2	57	Solute carrier family 66 member 2 (PQ-loop repeat-containing	
+Q8N2W9	human	Q8N2W9	PIAS4	Q8N2W9	89	600	E3 SUMO-protein ligase PIAS4 (EC 2.3.2.27) (PIASy) (Protein 	
+Q8N2X6	human	Q8N2X6	EXOC3-AS1	Q8N2X6	2	10	Uncharacterized protein EXOC3-AS1 (EXOC3 antisense RNA 1) (E	
+Q8N2Y8	human	Q8N2Y8	RUSC2	Q8N2Y8	53	248	AP-4 complex accessory subunit RUSC2 (Interacting protein of	
+Q8N2Z9	human	Q8N2Z9	CENPS	Q8N2Z9	19	148	Centromere protein S (CENP-S) (Apoptosis-inducing TAF9-like 	
+Q8N300	human	Q8N300	SVBP	Q8N300	7	60	Small vasohibin-binding protein (Coiled coil domain-containi	
+Q8N302	human	Q8N302	AGGF1	Q8N302	31	105	Angiogenic factor with G patch and FHA domains 1 (Angiogenic	
+Q8N307	human	Q8N307	MUC20	Q8N307	6	95	Mucin-20 (MUC-20)	
+Q8N309	human	Q8N309	LRRC43	Q8N309	8	65	Leucine-rich repeat-containing protein 43	
+Q8N319	human	Q8N319	LINC03040	Q8N319	0	5	Uncharacterized protein LINC03040	
+Q8N323	human	Q8N323	NXPE1	Q8N323	6	12	NXPE family member 1 (Protein FAM55A)	
+Q8N326	human	Q8N326	RPP38-DT	Q8N326	0	1	Putative uncharacterized protein RPP38-DT (RPP38 divergent t	
+Q8N328	human	Q8N328	PGBD3	Q8N328	2	18	PiggyBac transposable element-derived protein 3	
+Q8N335	human	Q8N335	GPD1L	Q8N335	4	449	Glycerol-3-phosphate dehydrogenase 1-like protein (GPD1-L) (	
+Q8N336	human	Q8N336	ELMOD1	Q8N336	12	61	ELMO domain-containing protein 1	
+Q8N339	human	Q8N339	MT1M	Q8N339	12	56	Metallothionein-1M (MT-1M) (Metallothionein-IM) (MT-IM)	
+Q8N344	human	Q8N344	MIER2	Q8N344	65	374	Mesoderm induction early response protein 2 (Mi-er2)	
+Q8N349	human	Q8N349	OR2L13	Q8N349	5	64	Olfactory receptor 2L13 (Olfactory receptor 2L14)	
+Q8N350	human	Q8N350	CBARP	Q8N350	19	79	Voltage-dependent calcium channel beta subunit-associated re	
+Q8N357	human	Q8N357	SLC35F6	Q8N357	12	106	Solute carrier family 35 member F6 (ANT2-binding protein) (A	
+Q8N365	human	Q8N365	CIART	Q8N365	9	28	Circadian-associated transcriptional repressor (ChIP-derived	
+Q8N370	human	Q8N370	SLC43A2	Q8N370	3	95	Large neutral amino acids transporter small subunit 4 (L-typ	
+Q8N371	human	Q8N371	KDM8	Q8N371	14	231	Bifunctional peptidase and arginyl-hydroxylase JMJD5 (EC 1.1	
+Q8N377	human	Q8N377	YJ004	Q8N377	0	5	Putative uncharacterized protein LOC387726	
+Q8N386	human	Q8N386	LRRC25	Q8N386	41	351	Leucine-rich repeat-containing protein 25 (Monocyte and plas	
+Q8N387	human	Q8N387	MUC15	Q8N387	7	64	Mucin-15 (MUC-15)	
+Q8N392	human	Q8N392	ARHGAP18	Q8N392	19	174	Rho GTPase-activating protein 18 (MacGAP) (Rho-type GTPase-a	
+Q8N393	human	Q8N393	ZNF786	Q8N393	2	54	Zinc finger protein 786	
+Q8N394	human	Q8N394	TMTC2	Q8N394	8	39	Protein O-mannosyl-transferase TMTC2 (EC 2.4.1.109) (Transme	
+Q8N398	human	Q8N398	VWA5B2	Q8N398	2	17	von Willebrand factor A domain-containing protein 5B2	
+Q8N3A8	human	Q8N3A8	PARP8	Q8N3A8	26	254	Protein mono-ADP-ribosyltransferase PARP8 (EC 2.4.2.-) (ADP-	
+Q8N3C0	human	Q8N3C0	ASCC3	Q8N3C0	19	190	Activating signal cointegrator 1 complex subunit 3 (EC 5.6.2	
+Q8N3C7	human	Q8N3C7	CLIP4	Q8N3C7	23	94	CAP-Gly domain-containing linker protein 4 (Restin-like prot	
+Q8N3D4	human	Q8N3D4	EHBP1L1	Q8N3D4	31	129	EH domain-binding protein 1-like protein 1	
+Q8N3E9	human	Q8N3E9	PLCD3	Q8N3E9	6	192	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase de	
+Q8N3F0	human	Q8N3F0	MTURN	Q8N3F0	16	130	Maturin (Maturin neural progenitor differentiation regulator	
+Q8N3F8	human	Q8N3F8	MICALL1	Q8N3F8	65	260	MICAL-like protein 1 (Molecule interacting with Rab13) (MIRa	
+Q8N3F9	human	Q8N3F9	GPR137C	Q8N3F9	3	52	Integral membrane protein GPR137C (Transmembrane 7 superfami	
+Q8N3G9	human	Q8N3G9	TMEM130	Q8N3G9	29	202	Transmembrane protein 130	
+Q8N3H0	human	Q8N3H0	TAFA2	Q8N3H0	11	116	Chemokine-like protein TAFA-2	
+Q8N3I7	human	Q8N3I7	BBS5	Q8N3I7	7	43	BBSome complex member BBS5 (Bardet-Biedl syndrome 5 protein)	
+Q8N3J2	human	Q8N3J2	METTL4	Q8N3J2	7	39	N(6)-adenine-specific methyltransferase METTL4 (Methyltransf	
+Q8N3J3	human	Q8N3J3	HROB	Q8N3J3	24	74	Homologous recombination OB-fold protein	
+Q8N3J5	human	Q8N3J5	PPM1K	Q8N3J5	9	73	Protein phosphatase Mn(2+)-dependent 1K (EC 3.1.3.16) (Branc	
+Q8N3J6	human	Q8N3J6	CADM2	Q8N3J6	29	138	Cell adhesion molecule 2 (Immunoglobulin superfamily member 	
+Q8N3J9	human	Q8N3J9	ZNF664	Q8N3J9	8	410	Zinc finger protein 664 (Zinc finger protein 176) (Zinc fing	
+Q8N3L3	human	Q8N3L3	TXLNB	Q8N3L3	39	95	Beta-taxilin (Muscle-derived protein 77) (hMDP77)	
+Q8N3P4	human	Q8N3P4	VPS8	Q8N3P4	21	111	Vacuolar protein sorting-associated protein 8 homolog	
+Q8N3R3	human	Q8N3R3	TCAIM	Q8N3R3	5	26	T-cell activation inhibitor, mitochondrial (Tolerance associ	
+Q8N3R9	human	Q8N3R9	PALS1	Q8N3R9	57	204	Protein PALS1 (MAGUK p55 subfamily member 5) (Membrane prote	
+Q8N3S3	human	Q8N3S3	PHTF2	Q8N3S3	3	43	Protein PHTF2	
+Q8N3T1	human	Q8N3T1	GALNT15	Q8N3T1	4	40	Polypeptide N-acetylgalactosaminyltransferase 15 (EC 2.4.1.4	
+Q8N3T6	human	Q8N3T6	TMEM132C	Q8N3T6	19	51	Transmembrane protein 132C	
+Q8N3U1	human	Q8N3U1	YS014	Q8N3U1	0	5	Putative uncharacterized protein LOC400692	
+Q8N3U4	human	Q8N3U4	STAG2	Q8N3U4	35	329	Cohesin subunit SA-2 (SCC3 homolog 2) (Stromal antigen 2)	
+Q8N3V7	human	Q8N3V7	SYNPO	Q8N3V7	69	326	Synaptopodin	
+Q8N3X1	human	Q8N3X1	FNBP4	Q8N3X1	43	191	Formin-binding protein 4 (Formin-binding protein 30)	
+Q8N3X6	human	Q8N3X6	LCORL	Q8N3X6	6	31	Ligand-dependent nuclear receptor corepressor-like protein (	
+Q8N3Y1	human	Q8N3Y1	FBXW8	Q8N3Y1	30	247	F-box/WD repeat-containing protein 8 (F-box and WD-40 domain	
+Q8N3Y3	human	Q8N3Y3	LARGE2	Q8N3Y3	8	96	Xylosyl- and glucuronyltransferase LARGE2 (EC 2.4.-.-) (Glyc	
+Q8N3Y7	human	Q8N3Y7	SDR16C5	Q8N3Y7	11	72	Epidermal retinol dehydrogenase 2 (EPHD-2) (RDH-E2) (EC 1.1.	
+Q8N3Z0	human	Q8N3Z0	PRSS35	Q8N3Z0	4	76	Inactive serine protease 35	
+Q8N3Z3	human	Q8N3Z3	GTPBP8	Q8N3Z3	18	192	GTP-binding protein 8	
+Q8N3Z6	human	Q8N3Z6	ZCCHC7	Q8N3Z6	10	94	Zinc finger CCHC domain-containing protein 7 (TRAMP-like com	
+Q8N412	human	Q8N412	STPG2	Q8N412	8	62	Sperm-tail PG-rich repeat-containing protein 2	
+Q8N413	human	Q8N413	SLC25A45	Q8N413	0	26	Methylated amino-acid transporter SLC25A45 (Solute carrier f	
+Q8N414	human	Q8N414	PGBD5	Q8N414	9	47	PiggyBac transposable element-derived protein 5 (EC 3.1.-.-)	
+Q8N423	human	Q8N423	LILRB2	Q8N423	26	198	Leukocyte immunoglobulin-like receptor subfamily B member 2 	
+Q8N427	human	Q8N427	NME8	Q8N427	28	443	Protein NME8 (NM23-H8) (NME/NM23 family member 8) (Nucleosid	
+Q8N428	human	Q8N428	GALNT16	Q8N428	13	80	Polypeptide N-acetylgalactosaminyltransferase 16 (EC 2.4.1.4	
+Q8N431	human	Q8N431	RASGEF1C	Q8N431	8	85	Ras-GEF domain-containing family member 1C	
+Q8N434	human	Q8N434	SVOPL	Q8N434	0	63	Putative transporter SVOPL (SV2-related protein-like) (SVOP-	
+Q8N436	human	Q8N436	CPXM2	Q8N436	7	46	Inactive carboxypeptidase-like protein X2	
+Q8N441	human	Q8N441	FGFRL1	Q8N441	23	119	Fibroblast growth factor receptor-like 1 (FGF receptor-like 	
+Q8N442	human	Q8N442	GUF1	Q8N442	9	256	Translation factor GUF1, mitochondrial (EC 3.6.5.-) (Elongat	
+Q8N443	human	Q8N443	RIBC1	Q8N443	15	114	RIB43A-like with coiled-coils protein 1	
+Q8N446	human	Q8N446	ZNF843	Q8N446	3	20	Zinc finger protein 843	
+Q8N448	human	Q8N448	LNX2	Q8N448	26	249	Ligand of Numb protein X 2 (Numb-binding protein 2) (PDZ dom	
+Q8N456	human	Q8N456	LRRC18	Q8N456	3	38	Leucine-rich repeat-containing protein 18	
+Q8N461	human	Q8N461	FBXL16	Q8N461	56	265	F-box/LRR-repeat protein 16 (F-box and leucine-rich repeat p	
+Q8N465	human	Q8N465	D2HGDH	Q8N465	15	214	D-2-hydroxyglutarate dehydrogenase, mitochondrial (EC 1.1.99	
+Q8N468	human	Q8N468	SLC60A1	Q8N468	8	247	Solute carrier family 60 member 1 (Major facilitator superfa	
+Q8N474	human	Q8N474	SFRP1	Q8N474	25	183	Secreted frizzled-related protein 1 (FRP-1) (sFRP-1) (Secret	
+Q8N475	human	Q8N475	FSTL5	Q8N475	14	93	Follistatin-related protein 5 (Follistatin-like protein 5)	
+Q8N485	human	Q8N485	LIX1	Q8N485	6	29	Protein limb expression 1 homolog	
+Q8N488	human	Q8N488	RYBP	Q8N488	231	897	RING1 and YY1-binding protein (Apoptin-associating protein 1	
+Q8N490	human	Q8N490	PNKD	Q8N490	18	167	Probable thioesterase PNKD (EC 3.1.2.-) (Myofibrillogenesis 	
+Q8N4A0	human	Q8N4A0	GALNT4	Q8N4A0	6	64	Polypeptide N-acetylgalactosaminyltransferase 4 (EC 2.4.1.41	
+Q8N4B1	human	Q8N4B1	PHETA1	Q8N4B1	14	54	Sesquipedalian-1 (Ses1) (27 kDa inositol polyphosphate phosp	
+Q8N4B4	human	Q8N4B4	FBXO39	Q8N4B4	5	53	F-box only protein 39	
+Q8N4B5	human	Q8N4B5	PRR18	Q8N4B5	5	58	Proline-rich protein 18	
+Q8N4C6	human	Q8N4C6	NIN	Q8N4C6	68	360	Ninein (hNinein) (Glycogen synthase kinase 3 beta-interactin	
+Q8N4C7	human	Q8N4C7	STX19	Q8N4C7	33	104	Syntaxin-19	
+Q8N4C8	human	Q8N4C8	MINK1	Q8N4C8	70	305	Misshapen-like kinase 1 (EC 2.7.11.1) (GCK family kinase MiN	
+Q8N4C9	human	Q8N4C9	C17orf78	Q8N4C9	4	20	Uncharacterized protein C17orf78	
+Q8N4E4	human	Q8N4E4	PDCL2	Q8N4E4	5	46	Phosducin-like protein 2	
+Q8N4E7	human	Q8N4E7	FTMT	Q8N4E7	3	29	Ferritin, mitochondrial (EC 1.16.3.1)	
+Q8N4F0	human	Q8N4F0	BPIFB2	Q8N4F0	10	94	BPI fold-containing family B member 2 (Bactericidal/permeabi	
+Q8N4F4	human	Q8N4F4	SLC22A24	Q8N4F4	0	25	Steroid transmembrane transporter SLC22A24 (Solute carrier f	
+Q8N4F7	human	Q8N4F7	RNF175	Q8N4F7	1	22	RING finger protein 175	
+Q8N4G2	human	Q8N4G2	ARL14	Q8N4G2	30	190	ADP-ribosylation factor-like protein 14 (ADP-ribosylation fa	
+Q8N4H0	human	Q8N4H0	SPATA6L	Q8N4H0	3	13	Spermatogenesis associated 6-like protein	
+Q8N4H5	human	Q8N4H5	TOMM5	Q8N4H5	30	145	Mitochondrial import receptor subunit TOM5 homolog	
+Q8N4J0	human	Q8N4J0	CARNMT1	Q8N4J0	21	102	Protein-L-histidine N-pros-methyltransferase CARNMT1 (EC 2.1	
+Q8N4K4	human	Q8N4K4	RPRML	Q8N4K4	10	49	Reprimo-like protein	
+Q8N4L1	human	Q8N4L1	TMEM151A	Q8N4L1	7	32	Transmembrane protein 151A	
+Q8N4L2	human	Q8N4L2	PIP4P2	Q8N4L2	6	70	Type 2 phosphatidylinositol 4,5-bisphosphate 4-phosphatase (	
+Q8N4L4	human	Q8N4L4	SPEM1	Q8N4L4	2	24	Spermatid maturation protein 1	
+Q8N4L8	human	Q8N4L8	CCDC24	Q8N4L8	6	47	Coiled-coil domain-containing protein 24	
+Q8N4M1	human	Q8N4M1	SLC44A3	Q8N4M1	0	22	Choline transporter-like protein 3 (Solute carrier family 44	
+Q8N4M7	human	Q8N4M7	C10orf126	Q8N4M7	0	2	Putative uncharacterized protein C10orf126	
+Q8N4N3	human	Q8N4N3	KLHL36	Q8N4N3	34	100	Kelch-like protein 36	
+Q8N4N8	human	Q8N4N8	KIF2B	Q8N4N8	17	139	Kinesin-like protein KIF2B	
+Q8N4P2	human	Q8N4P2	IFT70B	Q8N4P2	24	139	Intraflagellar transport protein 70B (Tetratricopeptide repe	
+Q8N4P3	human	Q8N4P3	HDDC3	Q8N4P3	16	219	Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase MES	
+Q8N4P6	human	Q8N4P6	LRRC71	Q8N4P6	4	43	Leucine-rich repeat-containing protein 71	
+Q8N4Q0	human	Q8N4Q0	PTGR3	Q8N4Q0	9	58	Prostaglandin reductase 3 (PRG-3) (EC 1.3.1.48) (Zinc-bindin	
+Q8N4Q1	human	Q8N4Q1	CHCHD4	Q8N4Q1	9	163	Mitochondrial intermembrane space import and assembly protei	
+Q8N4S0	human	Q8N4S0	CCDC82	Q8N4S0	15	69	Coiled-coil domain-containing protein 82	
+Q8N4S7	human	Q8N4S7	PAQR4	Q8N4S7	5	74	Progestin and adipoQ receptor family member 4 (Progestin and	
+Q8N4S9	human	Q8N4S9	MARVELD2	Q8N4S9	32	137	MARVEL domain-containing protein 2 (Tricellulin)	
+Q8N4T0	human	Q8N4T0	CPA6	Q8N4T0	4	47	Carboxypeptidase A6 (EC 3.4.17.-)	
+Q8N4T4	human	Q8N4T4	ARHGEF39	Q8N4T4	9	104	Rho guanine nucleotide exchange factor 39	
+Q8N4T8	human	Q8N4T8	CBR4	Q8N4T8	9	97	3-oxoacyl-[acyl-carrier-protein] reductase (EC 1.1.1.100) (3	
+Q8N4U5	human	Q8N4U5	TCP11L2	Q8N4U5	3	34	T-complex protein 11-like protein 2	
+Q8N4V1	human	Q8N4V1	MMGT1	Q8N4V1	19	398	ER membrane protein complex subunit 5 (Membrane magnesium tr	
+Q8N4V2	human	Q8N4V2	SVOP	Q8N4V2	2	58	Synaptic vesicle 2-related protein (SV2-related protein)	
+Q8N4W6	human	Q8N4W6	DNAJC22	Q8N4W6	4	114	DnaJ homolog subfamily C member 22	
+Q8N4W9	human	Q8N4W9	ZNF808	Q8N4W9	2	64	Zinc finger protein 808	
+Q8N4X5	human	Q8N4X5	AFAP1L2	Q8N4X5	50	112	Actin filament-associated protein 1-like 2 (AFAP1-like prote	
+Q8N4Y2	human	Q8N4Y2	CRACR2B	Q8N4Y2	15	79	EF-hand calcium-binding domain-containing protein 4A (Calciu	
+Q8N4Z0	human	Q8N4Z0	RAB42	Q8N4Z0	7	48	Ras-related protein Rab-42 (EC 3.6.5.2)	
+Q8N511	human	Q8N511	VMA12	Q8N511	31	194	Vacuolar ATPase assembly protein VMA12 (Transmembrane protei	
+Q8N531	human	Q8N531	FBXL6	Q8N531	28	138	F-box/LRR-repeat protein 6 (F-box and leucine-rich repeat pr	
+Q8N535	human	Q8N535	LINC00471	Q8N535	0	5	Putative uncharacterized protein encoded by LINC00471	
+Q8N539	human	Q8N539	FIBCD1	Q8N539	15	75	Fibrinogen C domain-containing protein 1	
+Q8N543	human	Q8N543	OGFOD1	Q8N543	19	150	Prolyl 3-hydroxylase OGFOD1 (EC 1.14.11.-) (2-oxoglutarate a	
+Q8N554	human	Q8N554	ZNF276	Q8N554	9	42	Zinc finger protein 276 (Zfp-276) (Zinc finger protein 477)	
+Q8N556	human	Q8N556	AFAP1	Q8N556	24	102	Actin filament-associated protein 1 (110 kDa actin filament-	
+Q8N565	human	Q8N565	MREG	Q8N565	20	144	Melanoregulin (Dilute suppressor protein homolog)	
+Q8N567	human	Q8N567	ZCCHC9	Q8N567	45	303	Zinc finger CCHC domain-containing protein 9	
+Q8N568	human	Q8N568	DCLK2	Q8N568	43	140	Serine/threonine-protein kinase DCLK2 (EC 2.7.11.1) (CaMK-li	
+Q8N573	human	Q8N573	OXR1	Q8N573	11	43	Oxidation resistance protein 1	
+Q8N584	human	Q8N584	TTC39C	Q8N584	2	37	Tetratricopeptide repeat protein 39C (TPR repeat protein 39C	
+Q8N587	human	Q8N587	ZNF561	Q8N587	2	26	Zinc finger protein 561	
+Q8N594	human	Q8N594	MPND	Q8N594	12	119	MPN domain-containing protein (EC 3.4.-.-)	
+Q8N5A5	human	Q8N5A5	ZGPAT	Q8N5A5	38	204	Zinc finger CCCH-type with G patch domain-containing protein	
+Q8N5B7	human	Q8N5B7	CERS5	Q8N5B7	52	404	Ceramide synthase 5 (CerS5) (LAG1 longevity assurance homolo	
+Q8N5C1	human	Q8N5C1	CALHM5	Q8N5C1	0	48	Calcium homeostasis modulator protein 5 (Protein FAM26E)	
+Q8N5C6	human	Q8N5C6	SRBD1	Q8N5C6	23	337	S1 RNA-binding domain-containing protein 1	
+Q8N5C7	human	Q8N5C7	DTWD1	Q8N5C7	3	50	tRNA-uridine aminocarboxypropyltransferase 1 (EC 2.5.1.25) (	
+Q8N5C8	human	Q8N5C8	TAB3	Q8N5C8	36	153	TGF-beta-activated kinase 1 and MAP3K7-binding protein 3 (Mi	
+Q8N5D0	human	Q8N5D0	WDTC1	Q8N5D0	42	253	WD and tetratricopeptide repeats protein 1	
+Q8N5D6	human	Q8N5D6	GBGT1	Q8N5D6	3	71	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1 (EC 	
+Q8N5F7	human	Q8N5F7	NKAP	Q8N5F7	61	282	NF-kappa-B-activating protein	
+Q8N5G0	human	Q8N5G0	SMIM20	Q8N5G0	50	138	Small integral membrane protein 20 (Mitochondrial translatio	
+Q8N5G2	human	Q8N5G2	MACO1	Q8N5G2	42	188	Macoilin (Macoilin-1) (Transmembrane protein 57)	
+Q8N5H3	human	Q8N5H3	FAM89B	Q8N5H3	8	76	Leucine repeat adapter protein 25	
+Q8N5H7	human	Q8N5H7	SH2D3C	Q8N5H7	55	325	SH2 domain-containing protein 3C (Cas/HEF1-associated signal	
+Q8N5I2	human	Q8N5I2	ARRDC1	Q8N5I2	24	101	Arrestin domain-containing protein 1 (Alpha-arrestin 1)	
+Q8N5I3	human	Q8N5I3	KCNRG	Q8N5I3	9	155	Potassium channel regulatory protein (Potassium channel regu	
+Q8N5I4	human	Q8N5I4	DHRSX	Q8N5I4	0	76	Polyprenol dehydrogenase (EC 1.1.1.441) (DHRSXY) (Dehydrogen	
+Q8N5I9	human	Q8N5I9	NOPCHAP1	Q8N5I9	9	104	NOP protein chaperone 1	
+Q8N5J2	human	Q8N5J2	MINDY1	Q8N5J2	10	106	Ubiquitin carboxyl-terminal hydrolase MINDY-1 (EC 3.4.19.12)	
+Q8N5J4	human	Q8N5J4	SPIC	Q8N5J4	55	340	Transcription factor Spi-C	
+Q8N5K1	human	Q8N5K1	CISD2	Q8N5K1	13	332	CDGSH iron-sulfur domain-containing protein 2 (Endoplasmic r	
+Q8N5L8	human	Q8N5L8	RPP25L	Q8N5L8	21	153	Ribonuclease P protein subunit p25-like protein (RNase P pro	
+Q8N5M1	human	Q8N5M1	ATPAF2	Q8N5M1	17	132	ATP synthase mitochondrial F1 complex assembly factor 2 (ATP	
+Q8N5M4	human	Q8N5M4	TTC9C	Q8N5M4	54	270	Tetratricopeptide repeat protein 9C (TPR repeat protein 9C)	
+Q8N5M9	human	Q8N5M9	JAGN1	Q8N5M9	16	349	Protein jagunal homolog 1	
+Q8N5N4	human	Q8N5N4	C3orf22	Q8N5N4	1	32	Uncharacterized protein C3orf22	
+Q8N5N7	human	Q8N5N7	MRPL50	Q8N5N7	11	253	Large ribosomal subunit protein mL50 (39S ribosomal protein 	
+Q8N5P1	human	Q8N5P1	ZC3H8	Q8N5P1	107	607	Zinc finger CCCH domain-containing protein 8	
+Q8N5Q1	human	Q8N5Q1	GARIN5B	Q8N5Q1	14	104	Golgi-associated RAB2 interactor protein 5B	
+Q8N5R6	human	Q8N5R6	CCDC33	Q8N5R6	33	198	Coiled-coil domain-containing protein 33 (Cancer/testis anti	
+Q8N5S1	human	Q8N5S1	SLC25A41	Q8N5S1	6	170	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	
+Q8N5S3	human	Q8N5S3	CIMIP6	Q8N5S3	2	29	Ciliary microtubule inner protein 6	
+Q8N5S9	human	Q8N5S9	CAMKK1	Q8N5S9	133	1306	Calcium/calmodulin-dependent protein kinase kinase 1 (CaM-KK	
+Q8N5T2	human	Q8N5T2	TBC1D19	Q8N5T2	19	61	TBC1 domain family member 19	
+Q8N5U0	human	Q8N5U0	C11orf42	Q8N5U0	1	17	Uncharacterized protein C11orf42	
+Q8N5U1	human	Q8N5U1	MS4A15	Q8N5U1	7	63	Membrane-spanning 4-domains subfamily A member 15	
+Q8N5U6	human	Q8N5U6	RNF10	Q8N5U6	32	136	E3 ubiquitin-protein ligase RNF10 (EC 2.3.2.27) (RING finger	
+Q8N5V2	human	Q8N5V2	NGEF	Q8N5V2	25	166	Ephexin-1 (Eph-interacting exchange protein) (Neuronal guani	
+Q8N5W8	human	Q8N5W8	FAM24B	Q8N5W8	21	108	Protein FAM24B	
+Q8N5W9	human	Q8N5W9	RFLNB	Q8N5W9	1	23	Refilin-B (Regulator of filamin protein B) (RefilinB)	
+Q8N5X7	human	Q8N5X7	EIF4E3	Q8N5X7	17	245	Eukaryotic translation initiation factor 4E type 3 (eIF-4E t	
+Q8N5Y2	human	Q8N5Y2	MSL3	Q8N5Y2	62	442	MSL complex subunit 3 (Male-specific lethal 3 homolog) (Male	
+Q8N5Y8	human	Q8N5Y8	PARP16	Q8N5Y8	8	75	Protein mono-ADP-ribosyltransferase PARP16 (EC 2.4.2.-) (ADP	
+Q8N5Z0	human	Q8N5Z0	AADAT	Q8N5Z0	1	38	Kynurenine/alpha-aminoadipate aminotransferase, mitochondria	
+Q8N5Z5	human	Q8N5Z5	KCTD17	Q8N5Z5	18	177	BTB/POZ domain-containing protein KCTD17	
+Q8N608	human	Q8N608	DPP10	Q8N608	9	75	Inactive dipeptidyl peptidase 10 (Dipeptidyl peptidase IV-re	
+Q8N609	human	Q8N609	TRAM1L1	Q8N609	8	51	Translocating chain-associated membrane protein 1-like 1	
+Q8N612	human	Q8N612	FHIP1B	Q8N612	33	264	FHF complex subunit HOOK-interacting protein 1B (FHIP1B) (FT	
+Q8N614	human	Q8N614	TMEM156	Q8N614	5	47	Transmembrane protein 156	
+Q8N616	human	Q8N616	LINC00311	Q8N616	0	1	Putative uncharacterized protein encoded by LINC00311	
+Q8N628	human	Q8N628	OR2C3	Q8N628	2	19	Olfactory receptor 2C3 (Olfactory receptor 2C4) (Olfactory r	
+Q8N635	human	Q8N635	MEIOB	Q8N635	3	81	Meiosis-specific with OB domain-containing protein (EC 3.1.-	
+Q8N653	human	Q8N653	LZTR1	Q8N653	29	289	Leucine-zipper-like transcriptional regulator 1 (LZTR-1)	
+Q8N660	human	Q8N660	NBPF15	Q8N660	12	34	NBPF family member NBPF15 (Neuroblastoma breakpoint family m	
+Q8N661	human	Q8N661	TMEM86B	Q8N661	1	121	Lysoplasmalogenase TMEM86B (EC 3.3.2.2) (Transmembrane prote	
+Q8N668	human	Q8N668	COMMD1	Q8N668	40	333	COMM domain-containing protein 1 (Protein Murr1)	
+Q8N680	human	Q8N680	ZBTB2	Q8N680	113	525	Zinc finger and BTB domain-containing protein 2	
+Q8N682	human	Q8N682	DRAM1	Q8N682	10	54	DNA damage-regulated autophagy modulator protein 1 (Damage-r	
+Q8N684	human	Q8N684	CPSF7	Q8N684	69	338	Cleavage and polyadenylation specificity factor subunit 7 (C	
+Q8N687	human	Q8N687	DEFB125	Q8N687	8	155	Beta-defensin 125 (Beta-defensin 25) (DEFB-25) (Defensin, be	
+Q8N688	human	Q8N688	DEFB123	Q8N688	7	74	Beta-defensin 123 (Beta-defensin 23) (DEFB-23) (Defensin, be	
+Q8N690	human	Q8N690	DEFB119	Q8N690	5	31	Beta-defensin 119 (Beta-defensin 120) (Beta-defensin 19) (DE	
+Q8N693	human	Q8N693	ESX1	Q8N693	88	372	Homeobox protein ESX1 (Extraembryonic, spermatogenesis, home	
+Q8N695	human	Q8N695	SLC5A8	Q8N695	4	55	Sodium-coupled monocarboxylate transporter 1 (Apical iodide 	
+Q8N697	human	Q8N697	SLC15A4	Q8N697	4	135	Solute carrier family 15 member 4 (Peptide transporter 4) (P	
+Q8N699	human	Q8N699	MYCT1	Q8N699	6	72	Myc target protein 1 (Myc target in myeloid cells protein 1)	
+Q8N6C5	human	Q8N6C5	IGSF1	Q8N6C5	4	37	Immunoglobulin superfamily member 1 (IgSF1) (Immunoglobulin-	
+Q8N6C7	human	Q8N6C7	MIR7-3HG	Q8N6C7	1	5	Putative uncharacterized protein encoded by MIR7-3HG (Pituit	
+Q8N6C8	human	Q8N6C8	LILRA3	Q8N6C8	14	97	Leukocyte immunoglobulin-like receptor subfamily A member 3 	
+Q8N6D2	human	Q8N6D2	RNF182	Q8N6D2	12	64	E3 ubiquitin-protein ligase RNF182 (EC 2.3.2.27) (RING finge	
+Q8N6D5	human	Q8N6D5	ANKRD29	Q8N6D5	24	68	Ankyrin repeat domain-containing protein 29	
+Q8N6F1	human	Q8N6F1	CLDN19	Q8N6F1	28	215	Claudin-19	
+Q8N6F7	human	Q8N6F7	GCSAM	Q8N6F7	14	107	Germinal center-associated signaling and motility protein (G	
+Q8N6F8	human	Q8N6F8	METTL27	Q8N6F8	20	71	Methyltransferase-like protein 27 (Williams-Beuren syndrome 	
+Q8N6G2	human	Q8N6G2	TEX26	Q8N6G2	2	43	Testis-expressed protein 26	
+Q8N6G5	human	Q8N6G5	CSGALNACT2	Q8N6G5	27	158	Chondroitin sulfate N-acetylgalactosaminyltransferase 2 (EC 	
+Q8N6G6	human	Q8N6G6	ADAMTSL1	Q8N6G6	8	36	ADAMTS-like protein 1 (ADAMTSL-1) (Punctin-1)	
+Q8N6H7	human	Q8N6H7	ARFGAP2	Q8N6H7	41	157	ADP-ribosylation factor GTPase-activating protein 2 (ARF GAP	
+Q8N6I1	human	Q8N6I1	EID2	Q8N6I1	7	30	EP300-interacting inhibitor of differentiation 2 (EID-2) (CR	
+Q8N6I4	human	Q8N6I4	LYSET	Q8N6I4	4	31	Lysosomal enzyme trafficking factor (GNPTAB cleavage and act	
+Q8N6K0	human	Q8N6K0	TEX29	Q8N6K0	9	63	Testis-expressed protein 29	
+Q8N6K4	human	Q8N6K4	YP021	Q8N6K4	1	5	Putative uncharacterized protein MGC34800	
+Q8N6K7	human	Q8N6K7	SAMD3	Q8N6K7	6	61	Sterile alpha motif domain-containing protein 3 (SAM domain-	
+Q8N6L0	human	Q8N6L0	KASH5	Q8N6L0	29	144	Protein KASH5 (Coiled-coil domain-containing protein 155) (K	
+Q8N6L1	human	Q8N6L1	KRTCAP2	Q8N6L1	18	449	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	
+Q8N6L7	human	Q8N6L7	TMEM252	Q8N6L7	7	35	Transmembrane protein 252	
+Q8N6M0	human	Q8N6M0	OTUD6B	Q8N6M0	9	129	Deubiquitinase OTUD6B (EC 3.4.19.12) (DUBA-5) (OTU domain-co	
+Q8N6M3	human	Q8N6M3	FITM2	Q8N6M3	0	128	Acyl-coenzyme A diphosphatase FITM2 (EC 3.6.1.-) (Fat storag	
+Q8N6M5	human	Q8N6M5	ALLC	Q8N6M5	4	34	Probable inactive allantoicase (Allantoate amidinohydrolase)	
+Q8N6M6	human	Q8N6M6	AOPEP	Q8N6M6	7	77	Aminopeptidase O (AP-O) (EC 3.4.11.-)	
+Q8N6M8	human	Q8N6M8	IQCF1	Q8N6M8	7	77	IQ domain-containing protein F1	
+Q8N6M9	human	Q8N6M9	ZFAND2A	Q8N6M9	6	63	AN1-type zinc finger protein 2A	
+Q8N6N2	human	Q8N6N2	TTC9B	Q8N6N2	29	158	Tetratricopeptide repeat protein 9B (TPR repeat protein 9B)	
+Q8N6N3	human	Q8N6N3	C1orf52	Q8N6N3	9	58	UPF0690 protein C1orf52 (BCL10-associated gene protein)	
+Q8N6N6	human	Q8N6N6	NATD1	Q8N6N6	13	152	Protein NATD1 (N-acetyltransferase domain-containing protein	
+Q8N6N7	human	Q8N6N7	ACBD7	Q8N6N7	6	62	Acyl-CoA-binding domain-containing protein 7	
+Q8N6P7	human	Q8N6P7	IL22RA1	Q8N6P7	46	198	Interleukin-22 receptor subunit alpha-1 (IL-22 receptor subu	
+Q8N6Q1	human	Q8N6Q1	TMCO5A	Q8N6Q1	10	44	Transmembrane and coiled-coil domain-containing protein 5A	
+Q8N6Q3	human	Q8N6Q3	CD177	Q8N6Q3	16	200	CD177 antigen (Human neutrophil alloantigen 2a) (HNA-2a) (NB	
+Q8N6Q8	human	Q8N6Q8	METTL25	Q8N6Q8	3	54	Probable methyltransferase-like protein 25 (EC 2.1.1.-)	
+Q8N6R0	human	Q8N6R0	METTL13	Q8N6R0	17	121	eEF1A lysine and N-terminal methyltransferase (eEF1A-KNMT) (	
+Q8N6R1	human	Q8N6R1	SERP2	Q8N6R1	26	84	Stress-associated endoplasmic reticulum protein 2 (Ribosome-	
+Q8N6S4	human	Q8N6S4	ANKRD13C	Q8N6S4	2	46	Ankyrin repeat domain-containing protein 13C	
+Q8N6S5	human	Q8N6S5	ARL6IP6	Q8N6S5	10	94	ADP-ribosylation factor-like protein 6-interacting protein 6	
+Q8N6T0	human	Q8N6T0	TOP6BL	Q8N6T0	2	6	Type 2 DNA topoisomerase 6 subunit B-like (TOP6B like initia	
+Q8N6T3	human	Q8N6T3	ARFGAP1	Q8N6T3	19	121	ADP-ribosylation factor GTPase-activating protein 1 (ARF GAP	
+Q8N6T7	human	Q8N6T7	SIRT6	Q8N6T7	165	1054	NAD-dependent protein deacylase sirtuin-6 (EC 2.3.1.-) (NAD-	
+Q8N6U2	human	Q8N6U2	LINC00612	Q8N6U2	0	7	Putative uncharacterized protein encoded by LINC00612	
+Q8N6U8	human	Q8N6U8	GPR161	Q8N6U8	22	97	G protein-coupled receptor 161 (G protein-coupled receptor R	
+Q8N6V4	human	Q8N6V4	C10orf53	Q8N6V4	3	64	UPF0728 protein C10orf53	
+Q8N6V9	human	Q8N6V9	TEX9	Q8N6V9	19	48	Testis-expressed protein 9	
+Q8N6W0	human	Q8N6W0	CELF5	Q8N6W0	5	59	CUGBP Elav-like family member 5 (CELF-5) (Bruno-like protein	
+Q8N6Y0	human	Q8N6Y0	USHBP1	Q8N6Y0	89	280	Harmonin-binding protein USHBP1 (AIE-75-binding protein) (Mu	
+Q8N6Y1	human	Q8N6Y1	PCDH20	Q8N6Y1	25	122	Protocadherin-20 (Protocadherin-13)	
+Q8N6Y2	human	Q8N6Y2	LRRC17	Q8N6Y2	3	66	Leucine-rich repeat-containing protein 17 (p37NB)	
+Q8N715	human	Q8N715	CCDC185	Q8N715	8	58	Coiled-coil domain-containing protein 185	
+Q8N720	human	Q8N720	ZNF655	Q8N720	35	207	Zinc finger protein 655 (Vav-interacting Krueppel-like prote	
+Q8N726	human	Q8N726	CDKN2A	Q8N726	129	818	Tumor suppressor ARF (Alternative reading frame) (ARF) (Cycl	
+Q8N729	human	Q8N729	NPW	Q8N729	27	115	Neuropeptide W (Preproprotein L8) (hPPL8) [Cleaved into: Neu	
+Q8N743	human	Q8N743	KIR3DL3	Q8N743	15	99	Killer cell immunoglobulin-like receptor 3DL3 (CD158 antigen	
+Q8N752	human	Q8N752	CSNK1A1L	Q8N752	177	1248	Casein kinase I isoform alpha-like (CKI-alpha-like) (EC 2.7.	
+Q8N755	human	Q8N755	SLC66A3	Q8N755	2	50	Solute carrier family 66 member 3 (PQ-loop repeat-containing	
+Q8N766	human	Q8N766	EMC1	Q8N766	25	422	ER membrane protein complex subunit 1	
+Q8N769	human	Q8N769	SLIRP-OT1	Q8N769	3	33	Putative uncharacterized protein SLIRP-OT1 (SLIRP overlappin	
+Q8N782	human	Q8N782	ZNF525	Q8N782	1	94	Zinc finger protein 525	
+Q8N7A1	human	Q8N7A1	KLHDC1	Q8N7A1	7	51	Kelch domain-containing protein 1	
+Q8N7B1	human	Q8N7B1	HORMAD2	Q8N7B1	37	76	HORMA domain-containing protein 2	
+Q8N7B6	human	Q8N7B6	PACRGL	Q8N7B6	16	203	PACRG-like protein	
+Q8N7B9	human	Q8N7B9	EFCAB3	Q8N7B9	0	54	EF-hand calcium-binding domain-containing protein 3	
+Q8N7C0	human	Q8N7C0	LRRC52	Q8N7C0	23	112	Leucine-rich repeat-containing protein 52 (BK channel auxili	
+Q8N7C3	human	Q8N7C3	TRIML2	Q8N7C3	13	81	Probable E3 ubiquitin-protein ligase TRIML2 (EC 2.3.2.27) (R	
+Q8N7C4	human	Q8N7C4	TMEM217	Q8N7C4	1	14	Transmembrane protein 217	
+Q8N7C7	human	Q8N7C7	RNF148	Q8N7C7	58	371	RING finger protein 148	
+Q8N7E2	human	Q8N7E2	CBLL2	Q8N7E2	54	372	E3 ubiquitin-protein ligase CBLL2 (EC 2.3.2.27) (Cbl proto-o	
+Q8N7F7	human	Q8N7F7	UBL4B	Q8N7F7	31	384	Ubiquitin-like protein 4B	
+Q8N7G0	human	Q8N7G0	POU5F2	Q8N7G0	80	332	POU domain, class 5, transcription factor 2 (Sperm 1 POU dom	
+Q8N7H1	human	Q8N7H1	LINC01465	Q8N7H1	1	11	Putative uncharacterized protein encoded by LINC01465	
+Q8N7H5	human	Q8N7H5	PAF1	Q8N7H5	82	419	RNA polymerase II-associated factor 1 homolog (hPAF1) (Pancr	
+Q8N7J2	human	Q8N7J2	AMER2	Q8N7J2	9	35	APC membrane recruitment protein 2 (Amer2) (Protein FAM123A)	
+Q8N7K0	human	Q8N7K0	ZNF433	Q8N7K0	6	52	Zinc finger protein 433	
+Q8N7L0	human	Q8N7L0	FAM216B	Q8N7L0	2	36	Protein FAM216B	
+Q8N7M0	human	Q8N7M0	DYNLT5	Q8N7M0	12	43	Dynein light chain Tctex-type 5 (Tctex1 domain-containing pr	
+Q8N7M2	human	Q8N7M2	ZNF283	Q8N7M2	0	16	Zinc finger protein 283 (Zinc finger protein HZF19)	
+Q8N7M5	rattus-norvegicus	Q8N7M5	Hjv	Q8N7M5	8	28	Hemojuvelin	
+Q8N7N1	human	Q8N7N1	FAM86B1	Q8N7N1	7	80	Putative protein N-methyltransferase FAM86B1 (EC 2.1.1.-)	
+Q8N7N5	mus-musculus	Q8N7N5	Dcaf8	Q8N7N5	1	49	DDB1- and CUL4-associated factor 8	
+Q8N7N6	mus-musculus	Q8N7N6	Traf3ip2	Q8N7N6	5	17	E3 ubiquitin ligase TRAF3IP2	
+Q8N7P1	human	Q8N7P1	PLD5	Q8N7P1	14	88	Inactive phospholipase D5 (Inactive PLD 5) (Inactive choline	
+Q8N7P3	human	Q8N7P3	CLDN22	Q8N7P3	2	67	Claudin-22	
+Q8N7P7	human	Q8N7P7	YH007	Q8N7P7	0	5	Uncharacterized protein FLJ40521	
+Q8N7Q2	human	Q8N7Q2	CELF2-AS1	Q8N7Q2	0	1	Putative uncharacterized protein CELF2-AS1 (CELF2 antisense 	
+Q8N7Q3	human	Q8N7Q3	ZNF676	Q8N7Q3	3	60	Zinc finger protein 676	
+Q8N7R0	human	Q8N7R0	NANOGP1	Q8N7R0	44	328	Putative homeobox protein NANOG2	
+Q8N7R1	human	Q8N7R1	POM121L12	Q8N7R1	0	2	POM121-like protein 12	
+Q8N7R7	human	Q8N7R7	CCNYL1	Q8N7R7	15	113	Cyclin-Y-like protein 1	
+Q8N7S2	human	Q8N7S2	DNAJC5G	Q8N7S2	0	70	DnaJ homolog subfamily C member 5G (Cysteine string protein-	
+Q8N7S6	human	Q8N7S6	ARIH2OS	Q8N7S6	0	1	Uncharacterized protein ARIH2OS (Ariadne-2 homolog opposite 	
+Q8N7U6	human	Q8N7U6	EFHB	Q8N7U6	13	135	EF-hand domain-containing family member B (Cilia- and flagel	
+Q8N7U7	human	Q8N7U7	TPRX1	Q8N7U7	62	350	Tetra-peptide repeat homeobox protein 1	
+Q8N7U9	human	Q8N7U9	LINC00469	Q8N7U9	0	2	Putative uncharacterized protein encoded by LINC00469	
+Q8N7W2	human	Q8N7W2	BEND7	Q8N7W2	24	96	BEN domain-containing protein 7	
+Q8N7X0	human	Q8N7X0	ADGB	Q8N7X0	2	8	Androglobin	
+Q8N7X1	human	Q8N7X1	RBMXL3	Q8N7X1	3	165	RNA-binding motif protein, X-linked-like-3	
+Q8N7X2	human	Q8N7X2	STPG3	Q8N7X2	1	14	Protein STPG3 (Sperm-tail PG-rich repeat-containing protein 	
+Q8N7X4	human	Q8N7X4	MAGEB6	Q8N7X4	8	38	Melanoma-associated antigen B6 (Cancer/testis antigen 3.4) (	
+Q8N7X8	human	Q8N7X8	SIGLECL1	Q8N7X8	26	215	SIGLEC family-like protein 1	
+Q8N7Y1	human	Q8N7Y1	KIRREL3-AS3	Q8N7Y1	0	8	Putative uncharacterized protein KIRREL3-AS3 (KIRREL3 antise	
+Q8N7Z2	human	Q8N7Z2	GOLGA6L1	Q8N7Z2	9	37	Golgin subfamily A member 6-like protein 1	
+Q8N7Z5	human	Q8N7Z5	ANKRD31	Q8N7Z5	10	88	Ankyrin repeat domain-containing protein 31	
+Q8N801	human	Q8N801	STPG4	Q8N801	1	33	Protein STPG4 (Gonad-specific expression gene protein) (GSE)	
+Q8N806	human	Q8N806	UBR7	Q8N806	25	430	Putative E3 ubiquitin-protein ligase UBR7 (EC 2.3.2.27) (N-r	
+Q8N807	human	Q8N807	PDILT	Q8N807	8	48	Protein disulfide-isomerase-like protein of the testis	
+Q8N808	human	Q8N808	SLC35G3	Q8N808	1	13	Solute carrier family 35 member G3 (Acyl-malonyl-condensing 	
+Q8N812	human	Q8N812	C12orf76	Q8N812	0	2	Uncharacterized protein C12orf76	
+Q8N813	human	Q8N813	PRR23E	Q8N813	1	1	Proline-rich protein 23E	
+Q8N815	human	Q8N815	CNTD1	Q8N815	10	39	Cyclin N-terminal domain-containing protein 1	
+Q8N819	human	Q8N819	PPM1N	Q8N819	9	63	Probable protein phosphatase 1N (EC 3.1.3.16)	
+Q8N823	human	Q8N823	ZNF611	Q8N823	3	49	Zinc finger protein 611	
+Q8N831	human	Q8N831	TSPYL6	Q8N831	23	93	Testis-specific Y-encoded-like protein 6 (TSPY-like protein 	
+Q8N841	human	Q8N841	TTLL6	Q8N841	0	34	Tubulin polyglutamylase TTLL6 (EC 6.3.2.-) (Protein polyglut	
+Q8N859	human	Q8N859	ZNF713	Q8N859	31	366	Zinc finger protein 713	
+Q8N865	human	Q8N865	SPMIP4	Q8N865	1	24	Sperm-associated microtubule inner protein 4	
+Q8N878	human	Q8N878	FRMD1	Q8N878	12	100	FERM domain-containing protein 1	
+Q8N883	human	Q8N883	ZNF614	Q8N883	1	64	Zinc finger protein 614	
+Q8N884	human	Q8N884	CGAS	Q8N884	18	414	Cyclic GMP-AMP synthase (cGAMP synthase) (cGAS) (h-cGAS) (EC	
+Q8N888	human	Q8N888	BCORP1	Q8N888	1	10	Putative BCoR-like protein 2 (BCL-6 corepressor pseudogene 1	
+Q8N895	human	Q8N895	ZNF366	Q8N895	0	30	Zinc finger protein 366 (Dendritic cell-specific transcript 	
+Q8N8A2	human	Q8N8A2	ANKRD44	Q8N8A2	29	70	Serine/threonine-protein phosphatase 6 regulatory ankyrin re	
+Q8N8A6	human	Q8N8A6	DDX51	Q8N8A6	42	352	ATP-dependent RNA helicase DDX51 (EC 3.6.4.13) (DEAD box pro	
+Q8N8A8	human	Q8N8A8	FAM169BP	Q8N8A8	6	60	Protein FAM169BP (FAM169BP pseudogene)	
+Q8N8B7	human	Q8N8B7	TCEANC	Q8N8B7	35	226	Transcription elongation factor A N-terminal and central dom	
+Q8N8C0	human	Q8N8C0	ZNF781	Q8N8C0	4	398	Zinc finger protein 781	
+Q8N8D1	human	Q8N8D1	PDCD7	Q8N8D1	73	515	Programmed cell death protein 7 (ES18) (hES18)	
+Q8N8D7	human	Q8N8D7	NKAIN3	Q8N8D7	6	66	Sodium/potassium-transporting ATPase subunit beta-1-interact	
+Q8N8E1	human	Q8N8E1	MAPKAPK5-AS1	Q8N8E1	1	13	Putative uncharacterized protein encoded by MAPKAPK5-AS1 (MA	
+Q8N8E2	human	Q8N8E2	ZNF513	Q8N8E2	0	29	Zinc finger protein 513	
+Q8N8E3	human	Q8N8E3	CEP112	Q8N8E3	23	113	Centrosomal protein of 112 kDa (Cep112) (Coiled-coil domain-	
+Q8N8F6	human	Q8N8F6	YIPF7	Q8N8F6	5	35	Protein YIPF7 (Five-pass transmembrane protein localizing in	
+Q8N8F7	human	Q8N8F7	LSMEM1	Q8N8F7	13	73	Leucine-rich single-pass membrane protein 1	
+Q8N8G2	human	Q8N8G2	VGLL2	Q8N8G2	57	332	Transcription cofactor vestigial-like protein 2 (Vgl-2) (Pro	
+Q8N8G6	human	Q8N8G6	LINC02915	Q8N8G6	1	6	Putative uncharacterized protein encoded by LINC02915	
+Q8N8H1	human	Q8N8H1	ZNF321P	Q8N8H1	3	18	Putative protein ZNF321 (Zinc finger protein 321 pseudogene)	
+Q8N8I0	human	Q8N8I0	SAMD12	Q8N8I0	11	52	Sterile alpha motif domain-containing protein 12 (SAM domain	
+Q8N8I6	human	Q8N8I6	LINC00482	Q8N8I6	0	2	Putative uncharacterized protein encoded by LINC00482	
+Q8N8J0	human	Q8N8J0	PI4KAP1	Q8N8J0	0	17	Putative inactive phosphatidylinositol 4-kinase alpha-like p	
+Q8N8J6	human	Q8N8J6	ZNF615	Q8N8J6	2	48	Zinc finger protein 615	
+Q8N8J7	human	Q8N8J7	FAM241A	Q8N8J7	15	125	Uncharacterized protein FAM241A	
+Q8N8K9	human	Q8N8K9	KIAA1958	Q8N8K9	5	36	Uncharacterized protein KIAA1958	
+Q8N8L2	human	Q8N8L2	ZNF491	Q8N8L2	6	380	Zinc finger protein 491	
+Q8N8L6	human	Q8N8L6	ARL10	Q8N8L6	46	248	ADP-ribosylation factor-like protein 10	
+Q8N8M0	human	Q8N8M0	NAT16	Q8N8M0	0	23	Probable N-acetyltransferase 16 (EC 2.3.1.-)	
+Q8N8N0	human	Q8N8N0	RNF152	Q8N8N0	17	73	E3 ubiquitin-protein ligase RNF152 (EC 2.3.2.27) (RING finge	
+Q8N8N7	human	Q8N8N7	PTGR2	Q8N8N7	1	63	Prostaglandin reductase 2 (PRG-2) (EC 1.3.1.48) (15-oxoprost	
+Q8N8Q1	human	Q8N8Q1	CYB561D1	Q8N8Q1	0	20	Probable transmembrane reductase CYB561D1 (EC 7.2.1.3) (Cyto	
+Q8N8Q3	human	Q8N8Q3	ENDOV	Q8N8Q3	2	48	Endonuclease V (hEndoV) (EC 3.1.26.-) (Inosine-specific endo	
+Q8N8Q8	human	Q8N8Q8	COX18	Q8N8Q8	3	63	Cytochrome c oxidase assembly protein COX18, mitochondrial (	
+Q8N8Q9	human	Q8N8Q9	NIPA2	Q8N8Q9	3	34	Magnesium transporter NIPA2 (Non-imprinted in Prader-Willi/A	
+Q8N8R3	human	Q8N8R3	SLC25A29	Q8N8R3	2	82	Mitochondrial basic amino acids transporter (Carnitine/acylc	
+Q8N8R5	human	Q8N8R5	C2orf69	Q8N8R5	2	19	Mitochondrial protein C2orf69	
+Q8N8R7	human	Q8N8R7	ARL14EP	Q8N8R7	14	74	ARL14 effector protein (ARF7 effector protein)	
+Q8N8S7	human	Q8N8S7	ENAH	Q8N8S7	41	124	Protein enabled homolog	
+Q8N8U2	human	Q8N8U2	CDYL2	Q8N8U2	20	205	Chromodomain Y-like protein 2 (CDY-like 2)	
+Q8N8U3	human	Q8N8U3	RTL3	Q8N8U3	0	8	Retrotransposon Gag-like protein 3 (Zinc finger CCHC domain-	
+Q8N8U9	human	Q8N8U9	BMPER	Q8N8U9	9	115	BMP-binding endothelial regulator protein (Bone morphogeneti	
+Q8N8V2	human	Q8N8V2	GBP7	Q8N8V2	7	45	Guanylate-binding protein 7 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	
+Q8N8V4	human	Q8N8V4	ANKS4B	Q8N8V4	8	36	Ankyrin repeat and SAM domain-containing protein 4B (Harmoni	
+Q8N8V8	human	Q8N8V8	TMEM105	Q8N8V8	1	11	Transmembrane protein 105	
+Q8N8W4	human	Q8N8W4	PNPLA1	Q8N8W4	2	26	Omega-hydroxyceramide transacylase (EC 2.3.1.296) (Patatin-l	
+Q8N8X9	human	Q8N8X9	MAB21L3	Q8N8X9	5	74	Protein mab-21-like 3	
+Q8N8Y2	human	Q8N8Y2	ATP6V0D2	Q8N8Y2	19	172	V-type proton ATPase subunit d 2 (V-ATPase subunit d 2) (Vac	
+Q8N8Y5	human	Q8N8Y5	ZFP41	Q8N8Y5	29	388	Zinc finger protein 41 homolog (Zfp-41)	
+Q8N8Z3	human	Q8N8Z3	DIP2C-AS1	Q8N8Z3	0	3	Putative uncharacterized protein DIP2C-AS1 (DIP2C antisense 	
+Q8N8Z6	human	Q8N8Z6	DCBLD1	Q8N8Z6	6	40	Discoidin, CUB and LCCL domain-containing protein 1	
+Q8N8Z8	human	Q8N8Z8	ZNF441	Q8N8Z8	7	45	Zinc finger protein 441	
+Q8N907	human	Q8N907	DAND5	Q8N907	5	39	DAN domain family member 5 (Cerberus-like protein 2) (Cerl-2	
+Q8N910	human	Q8N910	PAK6-AS1	Q8N910	0	4	Putative uncharacterized protein PAK6-AS1 (PAK6 antisense RN	
+Q8N912	human	Q8N912	NRAC	Q8N912	12	48	Nutritionally-regulated adipose and cardiac enriched protein	
+Q8N944	human	Q8N944	AMER3	Q8N944	5	15	APC membrane recruitment protein 3 (Amer3) (Protein FAM123C)	
+Q8N945	human	Q8N945	PRELID2	Q8N945	8	40	PRELI domain-containing protein 2	
+Q8N954	human	Q8N954	GPATCH11	Q8N954	9	89	G patch domain-containing protein 11 (Centromeric protein Y)	
+Q8N957	human	Q8N957	ANKFN1	Q8N957	7	43	Ankyrin repeat and fibronectin type-III domain-containing pr	
+Q8N960	human	Q8N960	CEP120	Q8N960	42	155	Centrosomal protein of 120 kDa (Cep120) (Coiled-coil domain-	
+Q8N961	human	Q8N961	ABTB2	Q8N961	6	103	Ankyrin repeat and BTB/POZ domain-containing protein 2	
+Q8N966	human	Q8N966	ZDHHC22	Q8N966	14	46	Palmitoyltransferase ZDHHC22 (EC 2.3.1.225) (Zinc finger DHH	
+Q8N967	human	Q8N967	LRTM2	Q8N967	12	85	Leucine-rich repeat and transmembrane domain-containing prot	
+Q8N972	human	Q8N972	ZNF709	Q8N972	5	32	Zinc finger protein 709	
+Q8N976	human	Q8N976	YG039	Q8N976	4	11	Putative uncharacterized protein FLJ38264	
+Q8N983	human	Q8N983	MRPL43	Q8N983	11	101	Large ribosomal subunit protein mL43 (39S ribosomal protein 	
+Q8N987	human	Q8N987	NECAB1	Q8N987	17	171	N-terminal EF-hand calcium-binding protein 1 (EF-hand calciu	
+Q8N988	human	Q8N988	ZNF557	Q8N988	15	358	Zinc finger protein 557	
+Q8N998	human	Q8N998	CCDC89	Q8N998	10	38	Coiled-coil domain-containing protein 89 (Bc8 orange-interac	
+Q8N999	human	Q8N999	RLIG1	Q8N999	2	42	RNA ligase 1 (EC 6.5.1.3) (RNA ligase) (Rnl)	
+Q8N9A8	human	Q8N9A8	CNEP1R1	Q8N9A8	8	40	Nuclear envelope phosphatase-regulatory subunit 1 (NEP1-R1) 	
+Q8N9B4	human	Q8N9B4	ANKRD42	Q8N9B4	6	48	Ankyrin repeat domain-containing protein 42	
+Q8N9B5	human	Q8N9B5	JMY	Q8N9B5	27	141	Junction-mediating and -regulatory protein	
+Q8N9B8	human	Q8N9B8	RASGEF1A	Q8N9B8	5	67	Ras-GEF domain-containing family member 1A	
+Q8N9C0	human	Q8N9C0	IGSF22	Q8N9C0	4	41	Immunoglobulin superfamily member 22 (IgSF22)	
+Q8N9E0	human	Q8N9E0	FAM133A	Q8N9E0	13	103	Protein FAM133A	
+Q8N9F0	human	Q8N9F0	NAT8L	Q8N9F0	7	98	N-acetylaspartate synthetase (NAA synthetase) (EC 2.3.1.17) 	
+Q8N9F7	human	Q8N9F7	GDPD1	Q8N9F7	5	61	Lysophospholipase D GDPD1 (EC 3.1.4.-) (Glycerophosphodieste	
+Q8N9F8	human	Q8N9F8	ZNF454	Q8N9F8	1	42	Zinc finger protein 454	
+Q8N9G6	human	Q8N9G6	YJ012	Q8N9G6	1	10	Putative UPF0607 protein FLJ37424	
+Q8N9H8	human	Q8N9H8	EXD3	Q8N9H8	4	55	Exonuclease mut-7 homolog (EC 3.1.-.-) (Exonuclease 3'-5' do	
+Q8N9H9	human	Q8N9H9	CIROZ	Q8N9H9	1	4	Ciliated left-right organizer ZP-N domains-containing protei	
+Q8N9I0	human	Q8N9I0	SYT2	Q8N9I0	15	228	Synaptotagmin-2 (Synaptotagmin II) (SytII)	
+Q8N9I5	human	Q8N9I5	FADS6	Q8N9I5	3	100	Fatty acid desaturase 6 (EC 1.14.19.-)	
+Q8N9I9	human	Q8N9I9	DTX3	Q8N9I9	17	117	E3 ubiquitin-protein ligase DTX3 (EC 2.3.2.27) (Protein delt	
+Q8N9K5	human	Q8N9K5	ZNF565	Q8N9K5	1	41	Zinc finger protein 565	
+Q8N9L1	human	Q8N9L1	ZIC4	Q8N9L1	32	345	Zinc finger protein ZIC 4 (Zinc finger protein of the cerebe	
+Q8N9L7	human	Q8N9L7	YV006	Q8N9L7	0	5	Putative uncharacterized protein FLJ36925	
+Q8N9L9	human	Q8N9L9	ACOT4	Q8N9L9	10	91	Peroxisomal succinyl-coenzyme A thioesterase (EC 3.1.2.3) (A	
+Q8N9M1	human	Q8N9M1	C19orf47	Q8N9M1	8	50	Uncharacterized protein C19orf47	
+Q8N9M5	human	Q8N9M5	TMEM102	Q8N9M5	16	79	Transmembrane protein 102 (Common beta-chain associated prot	
+Q8N9N2	human	Q8N9N2	ASCC1	Q8N9N2	28	186	Activating signal cointegrator 1 complex subunit 1 (ASC-1 co	
+Q8N9N5	human	Q8N9N5	BANP	Q8N9N5	74	443	Protein BANP (BEN domain-containing protein 1) (Btg3-associa	
+Q8N9N7	human	Q8N9N7	LRRC57	Q8N9N7	7	100	Leucine-rich repeat-containing protein 57	
+Q8N9N8	human	Q8N9N8	EIF1AD	Q8N9N8	13	165	Probable RNA-binding protein EIF1AD (Eukaryotic translation 	
+Q8N9P0	human	Q8N9P0	YF006	Q8N9P0	0	6	Putative uncharacterized protein FLJ36797	
+Q8N9P6	human	Q8N9P6	C9orf163	Q8N9P6	0	48	Uncharacterized protein C9orf163	
+Q8N9Q2	human	Q8N9Q2	SREK1IP1	Q8N9Q2	23	171	Protein SREK1IP1 (SFRS12-interacting protein 1) (SREK1-inter	
+Q8N9R6	human	Q8N9R6	CDRT4	Q8N9R6	2	28	CMT1A duplicated region transcript 4 protein	
+Q8N9R8	human	Q8N9R8	SCAI	Q8N9R8	16	136	Protein SCAI (Suppressor of cancer cell invasion protein)	
+Q8N9S3	mus-musculus	Q8N9S3	Ahsa2	Q8N9S3	1	14	Activator of 90 kDa heat shock protein ATPase homolog 2	
+Q8N9S9	human	Q8N9S9	SNX31	Q8N9S9	6	57	Sorting nexin-31	
+Q8N9T2	human	Q8N9T2	NKAPP1	Q8N9T2	1	5	Putative uncharacterized protein CXorf42 (NF-kappa-B-activat	
+Q8N9T8	human	Q8N9T8	KRI1	Q8N9T8	41	371	Protein KRI1 homolog	
+Q8N9U0	human	Q8N9U0	TC2N	Q8N9U0	8	45	Tandem C2 domains nuclear protein (Membrane targeting tandem	
+Q8N9U9	human	Q8N9U9	SPANXA2-OT1	Q8N9U9	0	6	Putative uncharacterized protein SPANXA2-OT1	
+Q8N9V2	human	Q8N9V2	TRIML1	Q8N9V2	17	53	Probable E3 ubiquitin-protein ligase TRIML1 (EC 2.3.2.27) (R	
+Q8N9V3	human	Q8N9V3	WDSUB1	Q8N9V3	3	97	WD repeat, SAM and U-box domain-containing protein 1	
+Q8N9V6	human	Q8N9V6	ANKRD53	Q8N9V6	0	19	Ankyrin repeat domain-containing protein 53	
+Q8N9V7	human	Q8N9V7	TOPAZ1	Q8N9V7	9	117	Protein TOPAZ1 (Testis- and ovary-specific PAZ domain-contai	
+Q8N9W4	human	Q8N9W4	GOLGA6L2	Q8N9W4	6	20	Golgin subfamily A member 6-like protein 2	
+Q8N9W5	human	Q8N9W5	DNAAF3	Q8N9W5	5	78	Dynein axonemal assembly factor 3	
+Q8N9W6	human	Q8N9W6	BOLL	Q8N9W6	3	59	Protein boule-like	
+Q8N9W7	human	Q8N9W7	YO010	Q8N9W7	0	2	Putative transmembrane protein FLJ36131	
+Q8N9W8	human	Q8N9W8	GARIN2	Q8N9W8	4	13	Golgi-associated RAB2 interactor protein 2	
+Q8N9X3	human	Q8N9X3	LINC01356	Q8N9X3	0	8	Putative uncharacterized protein encoded by LINC01356	
+Q8N9X5	human	Q8N9X5	LINC02912	Q8N9X5	0	3	Putative protein encoded by LINC02912	
+Q8N9Y4	human	Q8N9Y4	FAM181A	Q8N9Y4	2	18	Protein FAM181A	
+Q8N9Z0	human	Q8N9Z0	ZNF610	Q8N9Z0	3	73	Zinc finger protein 610	
+Q8N9Z2	human	Q8N9Z2	CCDC71L	Q8N9Z2	5	38	Coiled-coil domain-containing protein 71L	
+Q8N9Z9	human	Q8N9Z9	LMNTD1	Q8N9Z9	4	25	Lamin tail domain-containing protein 1 (Intermediate filamen	
+Q8NA03	human	Q8NA03	FSIP1	Q8NA03	5	34	Fibrous sheath-interacting protein 1	
+Q8NA19	human	Q8NA19	L3MBTL4	Q8NA19	9	69	Lethal(3)malignant brain tumor-like protein 4 (H-l(3)mbt-lik	
+Q8NA23	human	Q8NA23	WDR31	Q8NA23	28	430	WD repeat-containing protein 31	
+Q8NA29	human	Q8NA29	MFSD2A	Q8NA29	7	170	Sodium-dependent lysophosphatidylcholine symporter 1 (NLS1) 	
+Q8NA31	human	Q8NA31	TERB1	Q8NA31	17	70	Telomere repeats-binding bouquet formation protein 1 (Coiled	
+Q8NA42	human	Q8NA42	ZNF383	Q8NA42	2	54	Zinc finger protein 383	
+Q8NA47	human	Q8NA47	CCDC63	Q8NA47	25	91	Coiled-coil domain-containing protein 63	
+Q8NA54	human	Q8NA54	IQUB	Q8NA54	18	152	IQ motif and ubiquitin-like domain-containing protein	
+Q8NA56	human	Q8NA56	TTC29	Q8NA56	8	108	Tetratricopeptide repeat protein 29 (TPR repeat protein 29) 	
+Q8NA57	human	Q8NA57	ZC3H11D	Q8NA57	3	12	Protein ZC3H11D (Zinc finger CCCH domain-containing protein 	
+Q8NA58	human	Q8NA58	PNLDC1	Q8NA58	6	43	Poly(A)-specific ribonuclease PNLDC1 (EC 3.1.13.4) (PARN-lik	
+Q8NA61	human	Q8NA61	CBY2	Q8NA61	50	184	Protein chibby homolog 2 (Spermatid-associated protein)	
+Q8NA66	human	Q8NA66	CNBD1	Q8NA66	2	14	Cyclic nucleotide-binding domain-containing protein 1	
+Q8NA69	human	Q8NA69	SAXO5	Q8NA69	3	24	Stabilizer of axonemal microtubules 5 (Testis-expressed prot	
+Q8NA70	human	Q8NA70	FAM47B	Q8NA70	4	12	Protein FAM47B	
+Q8NA72	human	Q8NA72	POC5	Q8NA72	35	163	Centrosomal protein POC5 (Protein of centriole 5) (hPOC5)	
+Q8NA75	human	Q8NA75	DCAF4L2	Q8NA75	7	85	DDB1- and CUL4-associated factor 4-like protein 2 (WD repeat	
+Q8NA77	human	Q8NA77	TEX19	Q8NA77	11	126	Testis-expressed protein 19	
+Q8NA82	human	Q8NA82	MARCHF10	Q8NA82	11	35	Probable E3 ubiquitin-protein ligase MARCHF10 (EC 2.3.2.27) 	
+Q8NA92	human	Q8NA92	THAP8	Q8NA92	9	36	THAP domain-containing protein 8	
+Q8NA96	human	Q8NA96	YE027	Q8NA96	0	5	Putative uncharacterized protein FLJ35723	
+Q8NA97	human	Q8NA97	FER1L6-AS1	Q8NA97	0	3	Putative uncharacterized protein FER1L6-AS1 (FER1L6 antisens	
+Q8NAA4	human	Q8NAA4	ATG16L2	Q8NAA4	15	76	Protein Atg16l2 (APG16-like 2) (Autophagy-related protein 16	
+Q8NAA5	human	Q8NAA5	LRRC75A	Q8NAA5	6	26	Leucine-rich repeat-containing protein 75A (Leucine-rich rep	
+Q8NAA6	human	Q8NAA6	LINC02694	Q8NAA6	0	17	Putative uncharacterized protein encoded by LINC02694	
+Q8NAB2	human	Q8NAB2	KBTBD3	Q8NAB2	13	38	Kelch repeat and BTB domain-containing protein 3 (BTB and ke	
+Q8NAC3	human	Q8NAC3	IL17RC	Q8NAC3	36	241	Interleukin-17 receptor C (IL-17 receptor C) (IL-17RC) (Inte	
+Q8NAE3	human	Q8NAE3	LINC01555	Q8NAE3	0	5	Putative uncharacterized protein encoded by LINC01555	
+Q8NAF0	human	Q8NAF0	ZNF579	Q8NAF0	6	88	Zinc finger protein 579	
+Q8NAG6	human	Q8NAG6	ANKLE1	Q8NAG6	9	67	Structure-specific endonuclease ANKLE1 (Ankyrin repeat and L	
+Q8NAJ2	human	Q8NAJ2	LINC02913	Q8NAJ2	0	3	Putative uncharacterized protein encoded by LINC02913	
+Q8NAM6	human	Q8NAM6	ZSCAN4	Q8NAM6	15	361	Zinc finger and SCAN domain-containing protein 4 (Zinc finge	
+Q8NAN2	human	Q8NAN2	MIGA1	Q8NAN2	14	93	Mitoguardin 1 (Protein FAM73A)	
+Q8NAP1	human	Q8NAP1	CASTOR3P	Q8NAP1	2	26	Putative protein CASTOR3P (CASTOR3 pseudogene) (STAG3 opposi	
+Q8NAP3	human	Q8NAP3	ZBTB38	Q8NAP3	57	234	Zinc finger and BTB domain-containing protein 38	
+Q8NAP8	human	Q8NAP8	ZBTB8B	Q8NAP8	14	37	Zinc finger and BTB domain-containing protein 8B	
+Q8NAQ8	human	Q8NAQ8	YP023	Q8NAQ8	0	4	Putative uncharacterized protein FLJ34945	
+Q8NAT1	human	Q8NAT1	POMGNT2	Q8NAT1	5	131	Protein O-linked-mannose beta-1,4-N-acetylglucosaminyltransf	
+Q8NAT2	human	Q8NAT2	TDRD5	Q8NAT2	14	72	Tudor domain-containing protein 5	
+Q8NAU1	human	Q8NAU1	FNDC5	Q8NAU1	39	222	Fibronectin type III domain-containing protein 5 (Fibronecti	
+Q8NAV1	human	Q8NAV1	PRPF38A	Q8NAV1	71	398	Pre-mRNA-splicing factor 38A	
+Q8NAV2	human	Q8NAV2	C8orf58	Q8NAV2	1	11	Uncharacterized protein C8orf58	
+Q8NAX2	human	Q8NAX2	KDF1	Q8NAX2	35	196	Keratinocyte differentiation factor 1	
+Q8NB12	human	Q8NB12	SMYD1	Q8NB12	40	185	Histone-lysine N-methyltransferase SMYD1 (EC 2.1.1.354) (SET	
+Q8NB14	human	Q8NB14	USP38	Q8NB14	13	121	Ubiquitin carboxyl-terminal hydrolase 38 (EC 3.4.19.12) (Deu	
+Q8NB15	human	Q8NB15	ZNF511	Q8NB15	52	413	Zinc finger protein 511	
+Q8NB16	human	Q8NB16	MLKL	Q8NB16	8	133	Mixed lineage kinase domain-like protein (hMLKL)	
+Q8NB25	human	Q8NB25	FAM184A	Q8NB25	23	120	Protein FAM184A	
+Q8NB37	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	
+Q8NB42	human	Q8NB42	ZNF527	Q8NB42	1	94	Zinc finger protein 527	
+Q8NB46	human	Q8NB46	ANKRD52	Q8NB46	96	224	Serine/threonine-protein phosphatase 6 regulatory ankyrin re	
+Q8NB49	human	Q8NB49	ATP11C	Q8NB49	15	155	Phospholipid-transporting ATPase IG (EC 7.6.2.1) (ATPase IQ)	
+Q8NB50	human	Q8NB50	ZFP62	Q8NB50	1	163	Zinc finger protein 62 homolog (Zfp-62)	
+Q8NB59	human	Q8NB59	SYT14	Q8NB59	3	14	Synaptotagmin-14 (Synaptotagmin XIV) (SytXIV)	
+Q8NB66	human	Q8NB66	UNC13C	Q8NB66	4	43	Protein unc-13 homolog C (Munc13-3)	
+Q8NB78	human	Q8NB78	KDM1B	Q8NB78	8	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	
+Q8NB90	human	Q8NB90	AFG2A	Q8NB90	12	220	ATPase family gene 2 protein homolog A (EC 3.6.4.10) (AFG2 A	
+Q8NB91	human	Q8NB91	FANCB	Q8NB91	26	255	Fanconi anemia group B protein (Protein FACB) (Fanconi anemi	
+Q8NBA8	human	Q8NBA8	DTWD2	Q8NBA8	10	108	tRNA-uridine aminocarboxypropyltransferase 2 (EC 2.5.1.25) (	
+Q8NBB2	human	Q8NBB2	ST20-AS1	Q8NBB2	1	8	Putative uncharacterized protein ST20-AS1 (ST20 antisense RN	
+Q8NBB4	human	Q8NBB4	ZSCAN1	Q8NBB4	74	400	Zinc finger and SCAN domain-containing protein 1	
+Q8NBC4	human	Q8NBC4	C20orf203	Q8NBC4	0	7	Uncharacterized protein C20orf203	
+Q8NBD8	human	Q8NBD8	TMEM229B	Q8NBD8	5	68	Transmembrane protein 229B	
+Q8NBE8	human	Q8NBE8	KLHL23	Q8NBE8	22	75	Kelch-like protein 23	
+Q8NBF1	human	Q8NBF1	GLIS1	Q8NBF1	3	53	Zinc finger protein GLIS1 (GLI-similar 1)	
+Q8NBF2	human	Q8NBF2	NHLRC2	Q8NBF2	38	421	NHL repeat-containing protein 2	
+Q8NBF4	human	Q8NBF4	YG006	Q8NBF4	0	2	Putative uncharacterized protein FLJ33307	
+Q8NBF6	human	Q8NBF6	AVL9	Q8NBF6	7	45	Late secretory pathway protein AVL9 homolog	
+Q8NBH2	human	Q8NBH2	KY	Q8NBH2	8	67	Kyphoscoliosis peptidase (EC 3.4.-.-)	
+Q8NBI2	human	Q8NBI2	CYB561A3	Q8NBI2	4	54	Lysosomal membrane ascorbate-dependent ferrireductase CYB561	
+Q8NBI3	human	Q8NBI3	DRAXIN	Q8NBI3	3	13	Draxin (Dorsal inhibitory axon guidance protein) (Dorsal rep	
+Q8NBI5	human	Q8NBI5	SLC43A3	Q8NBI5	3	126	Equilibrative nucleobase transporter 1 (Protein FOAP-13) (So	
+Q8NBI6	human	Q8NBI6	XXYLT1	Q8NBI6	5	71	Xyloside xylosyltransferase 1 (EC 2.4.2.62) (UDP-xylose:alph	
+Q8NBJ4	human	Q8NBJ4	GOLM1	Q8NBJ4	26	185	Golgi membrane protein 1 (Golgi membrane protein GP73) (Golg	
+Q8NBJ5	human	Q8NBJ5	COLGALT1	Q8NBJ5	10	176	Procollagen galactosyltransferase 1 (EC 2.4.1.50) (Collagen 	
+Q8NBJ7	human	Q8NBJ7	SUMF2	Q8NBJ7	5	70	Inactive C-alpha-formylglycine-generating enzyme 2 (Paralog 	
+Q8NBJ9	human	Q8NBJ9	SIDT2	Q8NBJ9	8	255	SID1 transmembrane family member 2	
+Q8NBK3	human	Q8NBK3	SUMF1	Q8NBK3	11	83	Formylglycine-generating enzyme (FGE) (EC 1.8.3.7) (C-alpha-	
+Q8NBL1	human	Q8NBL1	POGLUT1	Q8NBL1	9	130	Protein O-glucosyltransferase 1 (EC 2.4.1.376) (CAP10-like 4	
+Q8NBL3	human	Q8NBL3	TMEM178A	Q8NBL3	4	66	Transmembrane protein 178A	
+Q8NBM4	human	Q8NBM4	UBAC2	Q8NBM4	27	197	Ubiquitin-associated domain-containing protein 2 (UBA domain	
+Q8NBM8	human	Q8NBM8	PCYOX1L	Q8NBM8	2	66	Prenylcysteine oxidase 1-like (EC 1.8.3.5)	
+Q8NBN3	human	Q8NBN3	TMEM87A	Q8NBN3	15	218	Golgi-pH regulating cation channel (Elkin1)	
+Q8NBN7	human	Q8NBN7	RDH13	Q8NBN7	10	132	Retinol dehydrogenase 13 (EC 1.1.1.300) (Short chain dehydro	
+Q8NBP0	human	Q8NBP0	TTC13	Q8NBP0	18	170	Tetratricopeptide repeat protein 13 (TPR repeat protein 13)	
+Q8NBP5	human	Q8NBP5	SLC67A2	Q8NBP5	0	31	Solute carrier family 67 member A2 (Major facilitator superf	
+Q8NBP7	human	Q8NBP7	PCSK9	Q8NBP7	21	314	Proprotein convertase subtilisin/kexin type 9 (EC 3.4.21.-) 	
+Q8NBQ5	human	Q8NBQ5	HSD17B11	Q8NBQ5	17	419	Estradiol 17-beta-dehydrogenase 11 (EC 1.1.1.62) (17-beta-hy	
+Q8NBQ7	human	Q8NBQ7	AQP11	Q8NBQ7	2	35	Aquaporin-11 (AQP-11)	
+Q8NBR0	human	Q8NBR0	TP53I13	Q8NBR0	13	156	Tumor protein p53-inducible protein 13 (Damage-stimulated cy	
+Q8NBR6	human	Q8NBR6	MINDY2	Q8NBR6	9	49	Ubiquitin carboxyl-terminal hydrolase MINDY-2 (EC 3.4.19.12)	
+Q8NBS3	human	Q8NBS3	SLC4A11	Q8NBS3	6	83	Solute carrier family 4 member 11 (Sodium borate cotransport	
+Q8NBS9	human	Q8NBS9	TXNDC5	Q8NBS9	10	225	Thioredoxin domain-containing protein 5 (EC 1.8.4.-) (EC 5.3	
+Q8NBT0	human	Q8NBT0	POC1A	Q8NBT0	43	191	POC1 centriolar protein homolog A (Pix2) (Proteome of centri	
+Q8NBT2	human	Q8NBT2	SPC24	Q8NBT2	32	229	Kinetochore protein Spc24 (hSpc24)	
+Q8NBT3	human	Q8NBT3	TMEM145	Q8NBT3	1	32	Transmembrane protein 145	
+Q8NBU5	human	Q8NBU5	ATAD1	Q8NBU5	5	137	Outer mitochondrial transmembrane helix translocase (EC 7.4.	
+Q8NBV4	human	Q8NBV4	PLPP7	Q8NBV4	7	26	Inactive phospholipid phosphatase 7 (Phosphatidic acid phosp	
+Q8NBV8	human	Q8NBV8	SYT8	Q8NBV8	5	69	Synaptotagmin-8 (Synaptotagmin VIII) (SytVIII)	
+Q8NBW4	human	Q8NBW4	SLC38A9	Q8NBW4	6	114	Neutral amino acid transporter 9 (Solute carrier family 38 m	
+Q8NBX0	human	Q8NBX0	SCCPDH	Q8NBX0	10	248	Saccharopine dehydrogenase-like oxidoreductase (EC 1.-.-.-)	
+Q8NBZ0	human	Q8NBZ0	INO80E	Q8NBZ0	43	199	INO80 complex subunit E (Coiled-coil domain-containing prote	
+Q8NBZ7	human	Q8NBZ7	UXS1	Q8NBZ7	12	346	UDP-glucuronic acid decarboxylase 1 (EC 4.1.1.35) (UDP-glucu	
+Q8NBZ9	human	Q8NBZ9	NEXN-AS1	Q8NBZ9	0	4	Putative uncharacterized protein NEXN-AS1 (NEXN antisense RN	
+Q8NC01	human	Q8NC01	CLEC1A	Q8NC01	62	188	C-type lectin domain family 1 member A (C-type lectin-like r	
+Q8NC06	human	Q8NC06	ACBD4	Q8NC06	4	22	Acyl-CoA-binding domain-containing protein 4	
+Q8NC24	human	Q8NC24	RELL2	Q8NC24	13	52	RELT-like protein 2	
+Q8NC26	human	Q8NC26	ZNF114	Q8NC26	53	385	Zinc finger protein 114	
+Q8NC38	human	Q8NC38	ZNF436-AS1	Q8NC38	1	12	Putative uncharacterized protein ZNF436-AS1 (ZNF436 antisens	
+Q8NC42	human	Q8NC42	RNF149	Q8NC42	131	885	E3 ubiquitin-protein ligase RNF149 (EC 2.3.2.27) (DNA polyme	
+Q8NC44	human	Q8NC44	RETREG2	Q8NC44	15	116	Reticulophagy regulator 2	
+Q8NC51	human	Q8NC51	SERBP1	Q8NC51	68	777	SERPINE1 mRNA-binding protein 1 (PAI1 RNA-binding protein 1)	
+Q8NC54	human	Q8NC54	KCT2	Q8NC54	20	75	Keratinocyte-associated transmembrane protein 2	
+Q8NC56	human	Q8NC56	LEMD2	Q8NC56	13	130	LEM domain-containing protein 2 (hLEM2)	
+Q8NC60	human	Q8NC60	NOA1	Q8NC60	12	238	Nitric oxide-associated protein 1	
+Q8NC67	human	Q8NC67	NETO2	Q8NC67	10	98	Neuropilin and tolloid-like protein 2 (Brain-specific transm	
+Q8NC69	human	Q8NC69	KCTD6	Q8NC69	16	112	BTB/POZ domain-containing protein KCTD6 (KCASH3 protein) (Po	
+Q8NC74	human	Q8NC74	RBBP8NL	Q8NC74	18	40	RBBP8 N-terminal-like protein	
+Q8NC96	human	Q8NC96	NECAP1	Q8NC96	22	125	Adaptin ear-binding coat-associated protein 1 (NECAP endocyt	
+Q8NCA5	human	Q8NCA5	FAM98A	Q8NCA5	32	213	Protein FAM98A	
+Q8NCA9	human	Q8NCA9	ZNF784	Q8NCA9	29	357	Zinc finger protein 784	
+Q8NCB2	human	Q8NCB2	CAMKV	Q8NCB2	12	159	CaM kinase-like vesicle-associated protein	
+Q8NCC3	human	Q8NCC3	PLA2G15	Q8NCC3	5	65	Lysosomal phospholipase A and acyltransferase (EC 2.3.1.-) (	
+Q8NCC5	human	Q8NCC5	SLC37A3	Q8NCC5	4	99	Sugar phosphate exchanger 3 (Solute carrier family 37 member	
+Q8NCD3	human	Q8NCD3	HJURP	Q8NCD3	77	604	Holliday junction recognition protein (14-3-3-associated AKT	
+Q8NCE0	human	Q8NCE0	TSEN2	Q8NCE0	38	267	tRNA-splicing endonuclease subunit Sen2 (EC 4.6.1.16) (tRNA-	
+Q8NCE2	human	Q8NCE2	MTMR14	Q8NCE2	17	149	Phosphatidylinositol-3,5-bisphosphate 3-phosphatase MTMR14 (	
+Q8NCF0	human	Q8NCF0	CLEC18C	Q8NCF0	2	9	C-type lectin domain family 18 member C (Mannose receptor-li	
+Q8NCF5	human	Q8NCF5	NFATC2IP	Q8NCF5	67	282	NFATC2-interacting protein (45 kDa NF-AT-interacting protein	
+Q8NCG5	human	Q8NCG5	CHST4	Q8NCG5	7	60	Carbohydrate sulfotransferase 4 (EC 2.8.2.-) (Galactose/N-ac	
+Q8NCG7	human	Q8NCG7	DAGLB	Q8NCG7	2	69	Diacylglycerol lipase-beta (DAGL-beta) (DGL-beta) (EC 3.1.1.	
+Q8NCH0	human	Q8NCH0	CHST14	Q8NCH0	7	97	Carbohydrate sulfotransferase 14 (EC 2.8.2.35) (Dermatan 4-s	
+Q8NCI6	human	Q8NCI6	GLB1L3	Q8NCI6	5	45	Beta-galactosidase-1-like protein 3 (EC 3.2.1.23)	
+Q8NCJ5	human	Q8NCJ5	SPRYD3	Q8NCJ5	7	87	SPRY domain-containing protein 3	
+Q8NCK3	human	Q8NCK3	ZNF485	Q8NCK3	19	428	Zinc finger protein 485	
+Q8NCK7	human	Q8NCK7	SLC16A11	Q8NCK7	10	546	Monocarboxylate transporter 11 (MCT 11) (Solute carrier fami	
+Q8NCL4	human	Q8NCL4	GALNT6	Q8NCL4	23	130	Polypeptide N-acetylgalactosaminyltransferase 6 (EC 2.4.1.41	
+Q8NCL8	human	Q8NCL8	TMEM116	Q8NCL8	1	14	Transmembrane protein 116	
+Q8NCL9	human	Q8NCL9	APCDD1L	Q8NCL9	4	26	Protein APCDD1-like (Adenomatosis polyposis coli down-regula	
+Q8NCM2	human	Q8NCM2	KCNH5	Q8NCM2	40	195	Voltage-gated delayed rectifier potassium channel KCNH5 (Eth	
+Q8NCN2	human	Q8NCN2	ZBTB34	Q8NCN2	31	66	Zinc finger and BTB domain-containing protein 34	
+Q8NCN4	human	Q8NCN4	RNF169	Q8NCN4	40	182	E3 ubiquitin-protein ligase RNF169 (EC 2.3.2.27) (RING finge	
+Q8NCN5	human	Q8NCN5	PDPR	Q8NCN5	6	120	Pyruvate dehydrogenase phosphatase regulatory subunit, mitoc	
+Q8NCP5	human	Q8NCP5	ZBTB44	Q8NCP5	40	116	Zinc finger and BTB domain-containing protein 44 (BTB/POZ do	
+Q8NCQ2	human	Q8NCQ2	CSNK1G2-AS1	Q8NCQ2	1	7	Uncharacterized protein CSNK1G2-AS1 (CSNK1G2 antisense RNA 1	
+Q8NCQ3	human	Q8NCQ3	LINC00301	Q8NCQ3	3	8	Putative uncharacterized protein encoded by LINC00301	
+Q8NCQ5	human	Q8NCQ5	FBXO15	Q8NCQ5	7	58	F-box only protein 15	
+Q8NCQ7	human	Q8NCQ7	PROCA1	Q8NCQ7	2	121	Protein PROCA1 (Protein interacting with cyclin A1)	
+Q8NCR0	human	Q8NCR0	B3GALNT2	Q8NCR0	8	76	UDP-GalNAc:beta-1,3-N-acetylgalactosaminyltransferase 2 (Bet	
+Q8NCR3	human	Q8NCR3	MFI	Q8NCR3	2	19	Protein MFI (Mitochondrial fission factor interactor)	
+Q8NCR6	human	Q8NCR6	SPMIP6	Q8NCR6	19	104	Sperm microtubule inner protein 6 (Ciliated bronchial epithe	
+Q8NCR9	human	Q8NCR9	CLRN3	Q8NCR9	7	89	Clarin-3 (Transmembrane protein 12) (Usher syndrome type-3A-	
+Q8NCS4	human	Q8NCS4	TMEM35B	Q8NCS4	4	37	Transmembrane protein 35B (ZMYM6 neighbor protein)	
+Q8NCS7	human	Q8NCS7	SLC44A5	Q8NCS7	2	34	Choline transporter-like protein 5 (Solute carrier family 44	
+Q8NCT1	human	Q8NCT1	ARRDC4	Q8NCT1	16	85	Arrestin domain-containing protein 4	
+Q8NCT3	human	Q8NCT3	MATCAP2	Q8NCT3	0	16	Putative tyrosine carboxypeptidase MATCAP2 (EC 3.4.17.-)	
+Q8NCU1	human	Q8NCU1	CCDC197	Q8NCU1	7	31	Uncharacterized protein CCDC197 (Coiled-coil domain-containi	
+Q8NCU4	human	Q8NCU4	CCDC191	Q8NCU4	1	12	Coiled-coil domain-containing protein 191	
+Q8NCU7	human	Q8NCU7	C2CD4A	Q8NCU7	4	23	C2 calcium-dependent domain-containing protein 4A (Nuclear-l	
+Q8NCU8	human	Q8NCU8	MTLN	Q8NCU8	3	23	Mitoregulin (Micropeptide in mitochondria) (Micropeptide reg	
+Q8NCV1	human	Q8NCV1	ADAD2	Q8NCV1	3	32	Adenosine deaminase domain-containing protein 2 (Testis nucl	
+Q8NCW0	human	Q8NCW0	KREMEN2	Q8NCW0	21	93	Kremen protein 2 (Dickkopf receptor 2) (Kringle domain-conta	
+Q8NCW5	human	Q8NCW5	NAXE	Q8NCW5	9	128	NAD(P)H-hydrate epimerase (EC 5.1.99.6) (Apolipoprotein A-I-	
+Q8NCW6	human	Q8NCW6	GALNT11	Q8NCW6	8	66	Polypeptide N-acetylgalactosaminyltransferase 11 (EC 2.4.1.4	
+Q8NCX0	human	Q8NCX0	CCDC150	Q8NCX0	18	50	Coiled-coil domain-containing protein 150	
+Q8NCY6	human	Q8NCY6	MSANTD4	Q8NCY6	5	23	Myb/SANT-like DNA-binding domain-containing protein 4 (Myb/S	
+Q8ND04	human	Q8ND04	SMG8	Q8ND04	17	151	Nonsense-mediated mRNA decay factor SMG8 (Amplified in breas	
+Q8ND07	human	Q8ND07	BBOF1	Q8ND07	7	33	Basal body-orientation factor 1 (Coiled-coil domain-containi	
+Q8ND23	human	Q8ND23	CARMIL3	Q8ND23	17	86	Capping protein, Arp2/3 and myosin-I linker protein 3 (Cappi	
+Q8ND24	human	Q8ND24	RNF214	Q8ND24	32	106	RING finger protein 214	
+Q8ND25	human	Q8ND25	ZNRF1	Q8ND25	19	51	E3 ubiquitin-protein ligase ZNRF1 (EC 2.3.2.27) (Nerve injur	
+Q8ND30	human	Q8ND30	PPFIBP2	Q8ND30	55	124	Liprin-beta-2 (Protein tyrosine phosphatase receptor type f 	
+Q8ND56	human	Q8ND56	LSM14A	Q8ND56	55	305	Protein LSM14 homolog A (Protein FAM61A) (Protein SCD6 homol	
+Q8ND61	human	Q8ND61	C3orf20	Q8ND61	1	36	Uncharacterized protein C3orf20	
+Q8ND71	human	Q8ND71	GIMAP8	Q8ND71	9	108	GTPase IMAP family member 8 (Immune-associated nucleotide-bi	
+Q8ND76	human	Q8ND76	CCNY	Q8ND76	26	91	Cyclin-Y (Cyc-Y) (Cyclin box protein 1) (Cyclin fold protein	
+Q8ND82	human	Q8ND82	ZNF280C	Q8ND82	43	124	Zinc finger protein 280C (Suppressor of hairy wing homolog 3	
+Q8ND83	human	Q8ND83	SLAIN1	Q8ND83	37	152	SLAIN motif-containing protein 1	
+Q8ND90	human	Q8ND90	PNMA1	Q8ND90	29	248	Paraneoplastic antigen Ma1 (37 kDa neuronal protein) (Neuron	
+Q8ND94	human	Q8ND94	LRRN4CL	Q8ND94	14	114	LRRN4 C-terminal-like protein	
+Q8NDA8	human	Q8NDA8	MROH1	Q8NDA8	5	63	Maestro heat-like repeat-containing protein family member 1 	
+Q8NDB2	human	Q8NDB2	BANK1	Q8NDB2	20	77	B-cell scaffold protein with ankyrin repeats	
+Q8NDB6	human	Q8NDB6	FAM156A	Q8NDB6	8	38	Protein FAM156A/FAM156B (Transmembrane protein 29/29B)	
+Q8NDC0	human	Q8NDC0	MAPK1IP1L	Q8NDC0	15	186	MAPK-interacting and spindle-stabilizing protein-like (Mitog	
+Q8NDC4	human	Q8NDC4	MORN4	Q8NDC4	17	73	MORN repeat-containing protein 4 (Protein 44050) (Retinophil	
+Q8NDD1	human	Q8NDD1	FSAF1	Q8NDD1	52	360	40S small subunit processome assembly factor 1	
+Q8NDF8	human	Q8NDF8	TENT4B	Q8NDF8	27	196	Terminal nucleotidyltransferase 4B (Non-canonical poly(A) RN	
+Q8NDG6	human	Q8NDG6	TDRD9	Q8NDG6	3	45	ATP-dependent RNA helicase TDRD9 (EC 3.6.4.13) (Tudor domain	
+Q8NDH3	human	Q8NDH3	NPEPL1	Q8NDH3	2	64	Probable aminopeptidase NPEPL1 (EC 3.4.11.-) (Aminopeptidase	
+Q8NDH6	human	Q8NDH6	ICA1L	Q8NDH6	8	36	Islet cell autoantigen 1-like protein (Amyotrophic lateral s	
+Q8NDI1	human	Q8NDI1	EHBP1	Q8NDI1	58	284	EH domain-binding protein 1	
+Q8NDL9	human	Q8NDL9	AGBL5	Q8NDL9	7	63	Cytosolic carboxypeptidase-like protein 5 (EC 3.4.17.-) (EC 	
+Q8NDM7	human	Q8NDM7	CFAP43	Q8NDM7	11	91	Cilia- and flagella-associated protein 43 (WD repeat-contain	
+Q8NDN9	human	Q8NDN9	RCBTB1	Q8NDN9	7	68	RCC1 and BTB domain-containing protein 1 (Chronic lymphocyti	
+Q8NDP4	human	Q8NDP4	ZNF439	Q8NDP4	4	71	Zinc finger protein 439	
+Q8NDQ6	human	Q8NDQ6	ZNF540	Q8NDQ6	1	53	Zinc finger protein 540	
+Q8NDT2	human	Q8NDT2	RBM15B	Q8NDT2	41	176	Putative RNA-binding protein 15B (One-twenty two protein 3) 	
+Q8NDV1	human	Q8NDV1	ST6GALNAC3	Q8NDV1	9	117	Alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase 3 	
+Q8NDV2	human	Q8NDV2	GPR26	Q8NDV2	12	101	G protein-coupled receptor 26	
+Q8NDV3	human	Q8NDV3	SMC1B	Q8NDV3	21	141	Structural maintenance of chromosomes protein 1B (SMC protei	
+Q8NDV7	human	Q8NDV7	TNRC6A	Q8NDV7	60	280	Trinucleotide repeat-containing gene 6A protein (CAG repeat 	
+Q8NDW4	human	Q8NDW4	ZNF248	Q8NDW4	2	50	Zinc finger protein 248	
+Q8NDW8	human	Q8NDW8	TTC21A	Q8NDW8	7	43	Tetratricopeptide repeat protein 21A (TPR repeat protein 21A	
+Q8NDX1	human	Q8NDX1	PSD4	Q8NDX1	16	66	PH and SEC7 domain-containing protein 4 (Exchange factor for	
+Q8NDX2	human	Q8NDX2	SLC17A8	Q8NDX2	5	85	Vesicular glutamate transporter 3 (VGluT3) (Solute carrier f	
+Q8NDX5	human	Q8NDX5	PHC3	Q8NDX5	58	197	Polyhomeotic-like protein 3 (Early development regulatory pr	
+Q8NDX6	human	Q8NDX6	ZNF740	Q8NDX6	2	58	Zinc finger protein 740 (OriLyt TD-element-binding protein 7	
+Q8NDX9	human	Q8NDX9	LY6G5B	Q8NDX9	15	109	Lymphocyte antigen 6 complex locus protein G5b	
+Q8NDY3	human	Q8NDY3	ADPRHL1	Q8NDY3	0	50	Inactive ADP-ribosyltransferase ARH2 (ADP-ribosylhydrolase-l	
+Q8NDY4	human	Q8NDY4	MDS2	Q8NDY4	0	9	Myelodysplastic syndrome 2 translocation-associated protein	
+Q8NDY6	human	Q8NDY6	BHLHE23	Q8NDY6	102	408	Class E basic helix-loop-helix protein 23 (bHLHe23) (Class B	
+Q8NDY8	human	Q8NDY8	TMEM52	Q8NDY8	8	74	Transmembrane protein 52	
+Q8NDZ0	human	Q8NDZ0	BEND2	Q8NDZ0	3	15	BEN domain-containing protein 2	
+Q8NDZ2	human	Q8NDZ2	SIMC1	Q8NDZ2	23	107	SUMO-interacting motif-containing protein 1 (Platform elemen	
+Q8NDZ4	human	Q8NDZ4	DIPK2A	Q8NDZ4	16	131	Divergent protein kinase domain 2A (Deleted in autism protei	
+Q8NDZ6	human	Q8NDZ6	TMEM161B	Q8NDZ6	2	67	Transmembrane protein 161B	
+Q8NE00	human	Q8NE00	SLC38A12	Q8NE00	1	51	Putative sodium-coupled neutral amino acid transporter 12 (S	
+Q8NE01	human	Q8NE01	CNNM3	Q8NE01	29	191	Metal transporter CNNM3 (Ancient conserved domain-containing	
+Q8NE09	human	Q8NE09	RGS22	Q8NE09	11	114	Regulator of G protein signaling 22 (RGS22)	
+Q8NE18	human	Q8NE18	NSUN7	Q8NE18	11	118	Protein NSUN7 (NOL1/NOP2/Sun domain family member 7)	
+Q8NE22	human	Q8NE22	SETD9	Q8NE22	7	59	SET domain-containing protein 9 (EC 2.1.1.-)	
+Q8NE28	human	Q8NE28	STKLD1	Q8NE28	1	37	Serine/threonine kinase-like domain-containing protein STKLD	
+Q8NE31	human	Q8NE31	FAM13C	Q8NE31	12	41	Protein FAM13C	
+Q8NE35	human	Q8NE35	CPEB3	Q8NE35	10	75	Cytoplasmic polyadenylation element-binding protein 3 (CPE-B	
+Q8NE62	human	Q8NE62	CHDH	Q8NE62	4	71	Choline dehydrogenase, mitochondrial (CDH) (CHD) (EC 1.1.99.	
+Q8NE63	human	Q8NE63	HIPK4	Q8NE63	299	1251	Homeodomain-interacting protein kinase 4 (EC 2.7.11.1)	
+Q8NE65	human	Q8NE65	ZNF738	Q8NE65	21	376	Zinc finger protein 738	
+Q8NE71	human	Q8NE71	ABCF1	Q8NE71	19	331	ATP-binding cassette sub-family F member 1 (ATP-binding cass	
+Q8NE79	human	Q8NE79	POPDC1	Q8NE79	5	44	Popeye domain-containing protein 1 (Popeye protein 1)	
+Q8NE86	human	Q8NE86	MCU	Q8NE86	11	209	Calcium uniporter protein, mitochondrial (HsMCU) (Coiled-coi	
+Q8NEA4	human	Q8NEA4	FBXO36	Q8NEA4	7	50	F-box only protein 36	
+Q8NEA5	human	Q8NEA5	C19orf18	Q8NEA5	5	31	Uncharacterized protein C19orf18	
+Q8NEA6	human	Q8NEA6	GLIS3	Q8NEA6	14	66	Zinc finger protein GLIS3 (GLI-similar 3) (Zinc finger prote	
+Q8NEA9	human	Q8NEA9	GMCL2	Q8NEA9	42	364	Germ cell-less protein-like 2 (Germ cell-less protein-like 1	
+Q8NEB5	human	Q8NEB5	PLPP5	Q8NEB5	5	79	Phospholipid phosphatase 5 (EC 3.1.3.4) (EC 3.6.1.75) (Phosp	
+Q8NEB7	human	Q8NEB7	ACRBP	Q8NEB7	3	58	Acrosin-binding protein (Acrosin-binding protein, 60 kDa for	
+Q8NEB9	human	Q8NEB9	PIK3C3	Q8NEB9	22	288	Phosphatidylinositol 3-kinase catalytic subunit type 3 (PI3-	
+Q8NEC5	human	Q8NEC5	CATSPER1	Q8NEC5	13	176	Cation channel sperm-associated protein 1 (CatSper1) (hCatSp	
+Q8NEC7	human	Q8NEC7	GSTCD	Q8NEC7	2	65	Glutathione S-transferase C-terminal domain-containing prote	
+Q8NEE0	human	Q8NEE0	KLHL30-AS1	Q8NEE0	0	9	Putative uncharacterized protein KLHL30-AS1 (KLHL30 antisens	
+Q8NEE6	human	Q8NEE6	FBXL13	Q8NEE6	10	92	F-box and leucine-rich repeat protein 13 (Dynein regulatory 	
+Q8NEE8	human	Q8NEE8	TTC16	Q8NEE8	18	71	Tetratricopeptide repeat protein 16 (TPR repeat protein 16)	
+Q8NEF3	human	Q8NEF3	CCDC112	Q8NEF3	5	49	Coiled-coil domain-containing protein 112 (Mutated in bladde	
+Q8NEF9	human	Q8NEF9	SRFBP1	Q8NEF9	47	255	Serum response factor-binding protein 1 (SRF-dependent trans	
+Q8NEG0	human	Q8NEG0	GARIN6	Q8NEG0	9	30	Golgi-associated RAB2 interactor protein 6	
+Q8NEG2	human	Q8NEG2	C7orf57	Q8NEG2	6	43	Uncharacterized protein C7orf57	
+Q8NEG4	human	Q8NEG4	SACK1F	Q8NEG4	11	38	Scaffolding CK1 anchoring protein F (Protein FAM83F)	
+Q8NEG5	human	Q8NEG5	ZSWIM2	Q8NEG5	3	26	E3 ubiquitin-protein ligase ZSWIM2 (EC 2.3.2.27) (MEKK1-rela	
+Q8NEG7	human	Q8NEG7	DENND6B	Q8NEG7	5	53	Protein DENND6B (DENN domain-containing protein 6B)	
+Q8NEH6	human	Q8NEH6	MNS1	Q8NEH6	7	119	Meiosis-specific nuclear structural protein 1	
+Q8NEJ0	human	Q8NEJ0	DUSP18	Q8NEJ0	7	58	Dual specificity protein phosphatase 18 (EC 3.1.3.16) (EC 3.	
+Q8NEJ9	human	Q8NEJ9	NGDN	Q8NEJ9	39	328	Neuroguidin (Centromere accumulated nuclear protein 1) (CANu	
+Q8NEK5	human	Q8NEK5	ZNF548	Q8NEK5	2	103	Zinc finger protein 548	
+Q8NEK8	human	Q8NEK8	TENT5D	Q8NEK8	6	53	Terminal nucleotidyltransferase 5D (EC 2.7.7.19) (Non-canoni	
+Q8NEL0	human	Q8NEL0	CCDC54	Q8NEL0	0	9	Coiled-coil domain-containing protein 54 (Testis development	
+Q8NEL9	human	Q8NEL9	DDHD1	Q8NEL9	8	105	Phospholipase DDHD1 (EC 3.1.1.111) (EC 3.1.1.32) (DDHD domai	
+Q8NEM0	human	Q8NEM0	MCPH1	Q8NEM0	41	160	Microcephalin	
+Q8NEM1	human	Q8NEM1	ZNF680	Q8NEM1	6	55	Zinc finger protein 680	
+Q8NEM2	human	Q8NEM2	SHCBP1	Q8NEM2	12	131	SHC SH2 domain-binding protein 1	
+Q8NEM7	human	Q8NEM7	SUPT20H	Q8NEM7	36	169	Transcription factor SPT20 homolog (p38-interacting protein)	
+Q8NEM8	human	Q8NEM8	AGBL3	Q8NEM8	11	62	Cytosolic carboxypeptidase 3 (EC 3.4.17.-) (ATP/GTP-binding 	
+Q8NEN0	human	Q8NEN0	ARMC2	Q8NEN0	8	70	Armadillo repeat-containing protein 2	
+Q8NEN9	human	Q8NEN9	PDZD8	Q8NEN9	49	429	PDZ domain-containing protein 8 (Lysosomal vacuolator) (LYVA	
+Q8NEP3	human	Q8NEP3	DNAAF1	Q8NEP3	8	35	Dynein axonemal assembly factor 1 (Leucine-rich repeat-conta	
+Q8NEP7	human	Q8NEP7	KLHDC9	Q8NEP7	15	93	Kelch domain-containing protein 9 (Kelch/ankyrin repeat-cont	
+Q8NEP9	human	Q8NEP9	ZNF555	Q8NEP9	7	48	Zinc finger protein 555	
+Q8NEQ5	human	Q8NEQ5	C1orf162	Q8NEQ5	34	201	Transmembrane protein C1orf162	
+Q8NEQ6	human	Q8NEQ6	SRARP	Q8NEQ6	2	20	Steroid receptor-associated and regulated protein (Estrogen 	
+Q8NER1	human	Q8NER1	TRPV1	Q8NER1	21	255	Transient receptor potential cation channel subfamily V memb	
+Q8NER5	human	Q8NER5	ACVR1C	Q8NER5	113	1307	Activin receptor type-1C (EC 2.7.11.30) (Activin receptor ty	
+Q8NES3	human	Q8NES3	LFNG	Q8NES3	7	49	Beta-1,3-N-acetylglucosaminyltransferase lunatic fringe (EC 	
+Q8NES8	human	Q8NES8	DEFB124	Q8NES8	6	87	Beta-defensin 124 (Beta-defensin 24) (DEFB-24) (Defensin, be	
+Q8NET1	human	Q8NET1	DEFB108B	Q8NET1	5	62	Beta-defensin 108B (Beta-defensin 8) (BD-8) (DEFB-8) (hBD-8)	
+Q8NET4	human	Q8NET4	RTL9	Q8NET4	0	38	Retrotransposon Gag-like protein 9 (Retrotransposon gag doma	
+Q8NET5	human	Q8NET5	NFAM1	Q8NET5	27	135	NFAT activation molecule 1 (Calcineurin/NFAT-activating ITAM	
+Q8NET6	human	Q8NET6	CHST13	Q8NET6	7	34	Carbohydrate sulfotransferase 13 (EC 2.8.2.5) (Chondroitin 4	
+Q8NET8	human	Q8NET8	TRPV3	Q8NET8	16	119	Transient receptor potential cation channel subfamily V memb	
+Q8NEU8	human	Q8NEU8	APPL2	Q8NEU8	27	252	DCC-interacting protein 13-beta (Dip13-beta) (Adapter protei	
+Q8NEV1	human	Q8NEV1	CSNK2A3	Q8NEV1	158	1530	Casein kinase II subunit alpha 3 (CK II alpha 3) (EC 2.7.11.	
+Q8NEV4	human	Q8NEV4	MYO3A	Q8NEV4	19	97	Myosin-IIIa (EC 2.7.11.1)	
+Q8NEV8	human	Q8NEV8	EXPH5	Q8NEV8	6	75	Exophilin-5 (Synaptotagmin-like protein homolog lacking C2 d	
+Q8NEV9	human	Q8NEV9	IL27	Q8NEV9	22	179	Interleukin-27 subunit alpha (IL-27 subunit alpha) (IL-27-A)	
+Q8NEW0	human	Q8NEW0	SLC30A7	Q8NEW0	4	106	Zinc transporter 7 (ZnT-7) (Solute carrier family 30 member 	
+Q8NEW7	human	Q8NEW7	TMIE	Q8NEW7	20	87	Transmembrane inner ear expressed protein	
+Q8NEX5	human	Q8NEX5	WFDC9	Q8NEX5	9	60	Protein WFDC9	
+Q8NEX6	human	Q8NEX6	WFDC11	Q8NEX6	20	84	Protein WFDC11	
+Q8NEX9	human	Q8NEX9	SDR9C7	Q8NEX9	12	114	Short-chain dehydrogenase/reductase family 9C member 7 (SDR9	
+Q8NEY1	human	Q8NEY1	NAV1	Q8NEY1	81	307	Neuron navigator 1 (Pore membrane and/or filament-interactin	
+Q8NEY3	human	Q8NEY3	SPATA4	Q8NEY3	10	71	Spermatogenesis-associated protein 4 (Testis and spermatogen	
+Q8NEY4	human	Q8NEY4	ATP6V1C2	Q8NEY4	11	115	V-type proton ATPase subunit C 2 (V-ATPase subunit C 2) (Vac	
+Q8NEY8	human	Q8NEY8	PPHLN1	Q8NEY8	54	372	Periphilin-1 (CDC7 expression repressor) (CR) (Gastric cance	
+Q8NEZ2	human	Q8NEZ2	VPS37A	Q8NEZ2	20	103	Vacuolar protein sorting-associated protein 37A (hVps37A) (E	
+Q8NEZ3	human	Q8NEZ3	WDR19	Q8NEZ3	13	139	WD repeat-containing protein 19 (Intraflagellar transport 14	
+Q8NEZ5	human	Q8NEZ5	FBXO22	Q8NEZ5	15	89	F-box only protein 22 (F-box protein FBX22p44)	
+Q8NF37	human	Q8NF37	LPCAT1	Q8NF37	7	182	Lysophosphatidylcholine acyltransferase 1 (LPC acyltransfera	
+Q8NF50	human	Q8NF50	DOCK8	Q8NF50	16	160	Dedicator of cytokinesis protein 8	
+Q8NF64	human	Q8NF64	ZMIZ2	Q8NF64	25	104	Zinc finger MIZ domain-containing protein 2 (PIAS-like prote	
+Q8NF67	human	Q8NF67	ANKRD20A12P	Q8NF67	2	7	Putative ankyrin repeat domain-containing protein 20A12	
+Q8NF86	human	Q8NF86	PRSS33	Q8NF86	12	55	Serine protease 33 (EC 3.4.21.-) (Serine protease EOS)	
+Q8NF99	human	Q8NF99	ZNF397	Q8NF99	38	86	Zinc finger protein 397 (Zinc finger and SCAN domain-contain	
+Q8NFA0	human	Q8NFA0	USP32	Q8NFA0	15	272	Ubiquitin carboxyl-terminal hydrolase 32 (EC 3.4.19.12) (Deu	
+Q8NFA2	human	Q8NFA2	NOXO1	Q8NFA2	15	139	NADPH oxidase organizer 1 (NADPH oxidase regulatory protein)	
+Q8NFB2	human	Q8NFB2	TMEM185A	Q8NFB2	7	97	Transmembrane protein 185A (Protein FAM11A)	
+Q8NFC6	human	Q8NFC6	BOD1L1	Q8NFC6	17	190	Biorientation of chromosomes in cell division protein 1-like	
+Q8NFD2	human	Q8NFD2	ANKK1	Q8NFD2	28	63	Ankyrin repeat and protein kinase domain-containing protein 	
+Q8NFD4	human	Q8NFD4	YI018	Q8NFD4	1	5	Uncharacterized protein FLJ76381	
+Q8NFD5	human	Q8NFD5	ARID1B	Q8NFD5	24	180	AT-rich interactive domain-containing protein 1B (ARID domai	
+Q8NFF2	human	Q8NFF2	SLC24A4	Q8NFF2	5	46	Sodium/potassium/calcium exchanger 4 (Na(+)/K(+)/Ca(2+)-exch	
+Q8NFF5	human	Q8NFF5	FLAD1	Q8NFF5	12	148	Bifunctional FAD diphosphatase/FAD synthase [Includes: FAD d	
+Q8NFG4	human	Q8NFG4	FLCN	Q8NFG4	15	156	Folliculin (BHD skin lesion fibrofolliculoma protein) (Birt-	
+Q8NFH3	human	Q8NFH3	NUP43	Q8NFH3	60	509	Nucleoporin Nup43 (Nup107-160 subcomplex subunit Nup43) (p42	
+Q8NFH4	human	Q8NFH4	NUP37	Q8NFH4	15	127	Nucleoporin Nup37 (p37) (Nup107-160 subcomplex subunit Nup37	
+Q8NFH5	human	Q8NFH5	NUP35	Q8NFH5	43	363	Nucleoporin NUP35 (35 kDa nucleoporin) (Mitotic phosphoprote	
+Q8NFH8	human	Q8NFH8	REPS2	Q8NFH8	25	68	RalBP1-associated Eps domain-containing protein 2 (Partner o	
+Q8NFI3	human	Q8NFI3	ENGASE	Q8NFI3	5	46	Cytosolic endo-beta-N-acetylglucosaminidase (ENGase) (EC 3.2	
+Q8NFI4	human	Q8NFI4	ST13P5	Q8NFI4	3	31	Putative protein FAM10A5 (Suppression of tumorigenicity 13 p	
+Q8NFJ5	human	Q8NFJ5	GPRC5A	Q8NFJ5	17	127	Retinoic acid-induced protein 3 (G protein-coupled receptor 	
+Q8NFJ6	human	Q8NFJ6	PROKR2	Q8NFJ6	17	91	Prokineticin receptor 2 (PK-R2) (G protein-coupled receptor 	
+Q8NFJ8	human	Q8NFJ8	BHLHE22	Q8NFJ8	118	363	Class E basic helix-loop-helix protein 22 (bHLHe22) (Class B	
+Q8NFJ9	human	Q8NFJ9	BBS1	Q8NFJ9	15	235	BBSome complex member BBS1 (BBS2-like protein 2) (Bardet-Bie	
+Q8NFK1	human	Q8NFK1	GJC3	Q8NFK1	4	53	Gap junction gamma-3 protein (Connexin-30.2) (Cx30.2) (Conne	
+Q8NFL0	human	Q8NFL0	B3GNT7	Q8NFL0	12	129	UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 	
+Q8NFM4	human	Q8NFM4	ADCY4	Q8NFM4	10	47	Adenylate cyclase type 4 (EC 4.6.1.1) (ATP pyrophosphate-lya	
+Q8NFM7	human	Q8NFM7	IL17RD	Q8NFM7	17	144	Interleukin-17 receptor D (IL-17 receptor D) (IL-17RD) (IL17	
+Q8NFN8	human	Q8NFN8	GPR156	Q8NFN8	19	103	Probable G protein-coupled receptor 156 (G protein-coupled r	
+Q8NFP0	human	Q8NFP0	PXT1	Q8NFP0	2	42	Peroxisomal testis-specific protein 1 (Small testis-specific	
+Q8NFP4	human	Q8NFP4	MDGA1	Q8NFP4	8	106	MAM domain-containing glycosylphosphatidylinositol anchor pr	
+Q8NFP7	human	Q8NFP7	NUDT10	Q8NFP7	6	57	Diphosphoinositol polyphosphate phosphohydrolase 3-alpha (DI	
+Q8NFP9	human	Q8NFP9	NBEA	Q8NFP9	4	63	Neurobeachin (Lysosomal-trafficking regulator 2) (Protein BC	
+Q8NFQ5	human	Q8NFQ5	BPIFB6	Q8NFQ5	2	37	BPI fold-containing family B member 6 (Bactericidal/permeabi	
+Q8NFQ6	human	Q8NFQ6	BPIFC	Q8NFQ6	3	46	BPI fold-containing family C protein (Bactericidal/permeabil	
+Q8NFQ8	human	Q8NFQ8	TOR1AIP2	Q8NFQ8	31	215	Torsin-1A-interacting protein 2 (Lumenal domain-like LAP1)	
+Q8NFR3	human	Q8NFR3	SPTSSB	Q8NFR3	18	113	Serine palmitoyltransferase small subunit B (Protein ADMP) (	
+Q8NFR7	human	Q8NFR7	CCDC148	Q8NFR7	2	27	Coiled-coil domain-containing protein 148	
+Q8NFR9	human	Q8NFR9	IL17RE	Q8NFR9	21	122	Interleukin-17 receptor E (IL-17 receptor E) (IL-17RE)	
+Q8NFT2	human	Q8NFT2	STEAP2	Q8NFT2	7	60	Metalloreductase STEAP2 (EC 1.16.1.-) (Prostate cancer-assoc	
+Q8NFT6	human	Q8NFT6	DBF4B	Q8NFT6	10	79	Protein DBF4 homolog B (Activator of S phase kinase-like pro	
+Q8NFT8	human	Q8NFT8	DNER	Q8NFT8	9	92	Delta and Notch-like epidermal growth factor-related recepto	
+Q8NFU0	human	Q8NFU0	BEST4	Q8NFU0	0	24	Bestrophin-4 (Vitelliform macular dystrophy 2-like protein 2	
+Q8NFU1	human	Q8NFU1	BEST2	Q8NFU1	0	35	Bestrophin-2a (Vitelliform macular dystrophy 2-like protein 	
+Q8NFU3	human	Q8NFU3	TSTD1	Q8NFU3	8	148	Thiosulfate:glutathione sulfurtransferase (TST) (EC 2.8.1.3)	
+Q8NFU4	human	Q8NFU4	FDCSP	Q8NFU4	1	63	Follicular dendritic cell secreted peptide (FDC secreted pro	
+Q8NFU5	human	Q8NFU5	IPMK	Q8NFU5	5	69	Inositol polyphosphate multikinase (EC 2.7.1.140) (EC 2.7.1.	
+Q8NFU7	human	Q8NFU7	TET1	Q8NFU7	15	220	Methylcytosine dioxygenase TET1 (EC 1.14.11.80) (CXXC-type z	
+Q8NFV4	human	Q8NFV4	ABHD11	Q8NFV4	13	202	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	
+Q8NFV5	human	Q8NFV5	SPDYE1	Q8NFV5	12	56	Speedy protein E1 (Williams-Beuren syndrome chromosomal regi	
+Q8NFW1	human	Q8NFW1	COL22A1	Q8NFW1	20	109	Collagen alpha-1(XXII) chain	
+Q8NFW5	human	Q8NFW5	DMBX1	Q8NFW5	141	348	Diencephalon/mesencephalon homeobox protein 1 (Orthodenticle	
+Q8NFW8	human	Q8NFW8	CMAS	Q8NFW8	2	138	N-acylneuraminate cytidylyltransferase (EC 2.7.7.43) (CMP-N-	
+Q8NFW9	human	Q8NFW9	MYRIP	Q8NFW9	18	75	Rab effector MyRIP (Exophilin-8) (Myosin-VIIa- and Rab-inter	
+Q8NFX7	human	Q8NFX7	STXBP6	Q8NFX7	13	110	Syntaxin-binding protein 6 (Amisyn)	
+Q8NFY4	human	Q8NFY4	SEMA6D	Q8NFY4	19	106	Semaphorin-6D	
+Q8NFY9	human	Q8NFY9	KBTBD8	Q8NFY9	45	142	Kelch repeat and BTB domain-containing protein 8 (T-cell act	
+Q8NFZ0	human	Q8NFZ0	FBH1	Q8NFZ0	2	51	F-box DNA helicase 1 (hFBH1) (EC 5.6.2.4) (DNA 3'-5' helicas	
+Q8NFZ3	human	Q8NFZ3	NLGN4Y	Q8NFZ3	23	115	Neuroligin-4, Y-linked (Neuroligin Y)	
+Q8NFZ4	human	Q8NFZ4	NLGN2	Q8NFZ4	35	177	Neuroligin-2	
+Q8NFZ5	human	Q8NFZ5	TNIP2	Q8NFZ5	166	981	TNFAIP3-interacting protein 2 (A20-binding inhibitor of NF-k	
+Q8NFZ6	human	Q8NFZ6	VN1R2	Q8NFZ6	6	23	Vomeronasal type-1 receptor 2 (G protein-coupled receptor GP	
+Q8NFZ8	human	Q8NFZ8	CADM4	Q8NFZ8	36	191	Cell adhesion molecule 4 (Immunoglobulin superfamily member 	
+Q8NG04	human	Q8NG04	SLC26A10P	Q8NG04	6	57	Putative solute carrier family 26 member 10P	
+Q8NG06	human	Q8NG06	TRIM58	Q8NG06	39	171	E3 ubiquitin-protein ligase TRIM58 (EC 2.3.2.27) (Protein BI	
+Q8NG08	human	Q8NG08	HELB	Q8NG08	5	39	DNA helicase B (hDHB) (EC 5.6.2.3) (DNA 5'-3' helicase B)	
+Q8NG11	human	Q8NG11	TSPAN14	Q8NG11	10	145	Tetraspanin-14 (Tspan-14) (DC-TM4F2) (Transmembrane 4 superf	
+Q8NG27	human	Q8NG27	PJA1	Q8NG27	27	140	E3 ubiquitin-protein ligase Praja-1 (Praja1) (EC 2.3.2.27) (	
+Q8NG31	human	Q8NG31	KNL1	Q8NG31	93	676	Outer kinetochore KNL1 complex subunit KNL1 (ALL1-fused gene	
+Q8NG35	human	Q8NG35	DEFB105A	Q8NG35	1	64	Beta-defensin 105 (Beta-defensin 5) (BD-5) (DEFB-5) (Defensi	
+Q8NG41	human	Q8NG41	NPB	Q8NG41	22	133	Neuropeptide B (Preproprotein L7) (hPPL7) [Cleaved into: Neu	
+Q8NG48	human	Q8NG48	LINS1	Q8NG48	3	34	Protein Lines homolog 1 (Wnt-signaling molecule Lines homolo	
+Q8NG50	human	Q8NG50	RDM1	Q8NG50	6	61	RAD52 motif-containing protein 1 (RAD52 homolog B)	
+Q8NG66	human	Q8NG66	NEK11	Q8NG66	119	1217	Serine/threonine-protein kinase Nek11 (EC 2.7.11.1) (Never i	
+Q8NG68	human	Q8NG68	TTL	Q8NG68	14	99	Tubulin--tyrosine ligase (TTL) (EC 6.3.2.25)	
+Q8NG75	human	Q8NG75	OR5T1	Q8NG75	2	18	Olfactory receptor 5T1 (Olfactory receptor OR11-179)	
+Q8NG76	human	Q8NG76	OR2T33	Q8NG76	2	20	Olfactory receptor 2T33 (Olfactory receptor OR1-56)	
+Q8NG77	human	Q8NG77	OR2T12	Q8NG77	3	35	Olfactory receptor 2T12 (Olfactory receptor OR1-57)	
+Q8NG78	human	Q8NG78	OR8G5	Q8NG78	2	10	Olfactory receptor 8G5 (Olfactory receptor 8G6) (Olfactory r	
+Q8NG80	human	Q8NG80	OR2L5	Q8NG80	2	49	Olfactory receptor 2L5 (Olfactory receptor 2L11) (Olfactory 	
+Q8NG81	human	Q8NG81	OR2M7	Q8NG81	3	57	Olfactory receptor 2M7 (Olfactory receptor OR1-58)	
+Q8NG83	human	Q8NG83	OR2M3	Q8NG83	1	60	Olfactory receptor 2M3 (Olfactory receptor 2M6) (Olfactory r	
+Q8NG84	human	Q8NG84	OR2AK2	Q8NG84	2	41	Olfactory receptor 2AK2 (Olfactory receptor 2AK1) (Olfactory	
+Q8NG85	human	Q8NG85	OR2L3	Q8NG85	1	50	Olfactory receptor 2L3	
+Q8NG92	human	Q8NG92	OR13H1	Q8NG92	4	27	Olfactory receptor 13H1 (Olfactory receptor ORX-1)	
+Q8NG94	human	Q8NG94	OR11H1	Q8NG94	1	18	Olfactory receptor 11H1 (Olfactory receptor OR22-1)	
+Q8NG95	human	Q8NG95	OR7G3	Q8NG95	1	19	Olfactory receptor 7G3 (OST085) (Olfactory receptor OR19-9)	
+Q8NG97	human	Q8NG97	OR2Z1	Q8NG97	1	13	Olfactory receptor 2Z1 (Olfactory receptor 2Z2) (Olfactory r	
+Q8NG98	human	Q8NG98	OR7D4	Q8NG98	3	50	Olfactory receptor 7D4 (OR19-B) (Odorant receptor family sub	
+Q8NG99	human	Q8NG99	OR7G2	Q8NG99	1	15	Olfactory receptor 7G2 (OST260) (Olfactory receptor 19-13) (	
+Q8NGA0	human	Q8NGA0	OR7G1	Q8NGA0	1	13	Olfactory receptor 7G1 (Olfactory receptor 19-15) (OR19-15) 	
+Q8NGA1	human	Q8NGA1	OR1M1	Q8NGA1	2	46	Olfactory receptor 1M1 (Olfactory receptor 19-6) (OR19-6) (O	
+Q8NGA2	human	Q8NGA2	OR7A2P	Q8NGA2	2	8	Putative olfactory receptor 7A2 (Putative olfactory receptor	
+Q8NGA4	human	Q8NGA4	GPR32P1	Q8NGA4	4	9	Putative G protein-coupled receptor GPR32P1 (G protein-coupl	
+Q8NGA5	human	Q8NGA5	OR10H4	Q8NGA5	1	16	Olfactory receptor 10H4 (Olfactory receptor OR19-28)	
+Q8NGA6	human	Q8NGA6	OR10H5	Q8NGA6	2	18	Olfactory receptor 10H5 (Olfactory receptor OR19-25) (Olfact	
+Q8NGA8	human	Q8NGA8	OR4F17	Q8NGA8	1	68	Olfactory receptor 4F17 (Olfactory receptor 4F11) (Olfactory	
+Q8NGB2	human	Q8NGB2	OR4C5	Q8NGB2	1	10	Olfactory receptor 4C5 (Olfactory receptor OR11-99)	
+Q8NGB4	human	Q8NGB4	OR4S1	Q8NGB4	1	24	Olfactory receptor 4S1 (Olfactory receptor OR11-100)	
+Q8NGB6	human	Q8NGB6	OR4M2	Q8NGB6	2	25	Olfactory receptor 4M2 (Olfactory receptor OR15-3)	
+Q8NGB8	human	Q8NGB8	OR4F15	Q8NGB8	3	43	Olfactory receptor 4F15 (Olfactory receptor OR15-14)	
+Q8NGB9	human	Q8NGB9	OR4F6	Q8NGB9	1	34	Olfactory receptor 4F6 (Olfactory receptor 4F12) (Olfactory 	
+Q8NGC0	human	Q8NGC0	OR5AU1	Q8NGC0	2	31	Olfactory receptor 5AU1 (Olfactory receptor OR14-38)	
+Q8NGC1	human	Q8NGC1	OR11G2	Q8NGC1	2	11	Olfactory receptor 11G2 (Olfactory receptor OR14-34)	
+Q8NGC2	human	Q8NGC2	OR4E2	Q8NGC2	1	37	Olfactory receptor 4E2 (Olfactory receptor OR14-42)	
+Q8NGC3	human	Q8NGC3	OR10G2	Q8NGC3	1	36	Olfactory receptor 10G2	
+Q8NGC4	human	Q8NGC4	OR10G3	Q8NGC4	1	32	Olfactory receptor 10G3 (Olfactory receptor OR14-40)	
+Q8NGC5	human	Q8NGC5	OR6J1	Q8NGC5	2	9	Olfactory receptor 6J1 (Olfactory receptor 6J2)	
+Q8NGC6	human	Q8NGC6	OR4K17	Q8NGC6	3	79	Olfactory receptor 4K17 (Olfactory receptor OR14-29)	
+Q8NGC7	human	Q8NGC7	OR11H6	Q8NGC7	3	39	Olfactory receptor 11H6 (Olfactory receptor OR14-35)	
+Q8NGC8	human	Q8NGC8	OR11H7	Q8NGC8	1	15	Olfactory receptor 11H7 (Olfactory receptor OR14-32)	
+Q8NGC9	human	Q8NGC9	OR11H4	Q8NGC9	2	30	Olfactory receptor 11H4 (Olfactory receptor OR14-36)	
+Q8NGD0	human	Q8NGD0	OR4M1	Q8NGD0	1	82	Olfactory receptor 4M1 (Olfactory receptor OR14-7)	
+Q8NGD1	human	Q8NGD1	OR4N2	Q8NGD1	4	69	Olfactory receptor 4N2 (Olfactory receptor OR14-13) (Olfacto	
+Q8NGD2	human	Q8NGD2	OR4K2	Q8NGD2	4	49	Olfactory receptor 4K2 (Olfactory receptor OR14-15)	
+Q8NGD3	human	Q8NGD3	OR4K5	Q8NGD3	1	43	Olfactory receptor 4K5 (Olfactory receptor OR14-16)	
+Q8NGD4	human	Q8NGD4	OR4K1	Q8NGD4	4	60	Olfactory receptor 4K1 (Olfactory receptor OR14-19)	
+Q8NGD5	human	Q8NGD5	OR4K14	Q8NGD5	2	56	Olfactory receptor 4K14 (Olfactory receptor OR14-22)	
+Q8NGE0	human	Q8NGE0	OR10AD1	Q8NGE0	2	58	Olfactory receptor 10AD1 (Olfactory receptor OR12-1)	
+Q8NGE1	human	Q8NGE1	OR6C4	Q8NGE1	3	28	Olfactory receptor 6C4 (Olfactory receptor OR12-10)	
+Q8NGE2	human	Q8NGE2	OR2AP1	Q8NGE2	1	18	Olfactory receptor 2AP1 (Olfactory receptor OR12-9)	
+Q8NGE3	human	Q8NGE3	OR10P1	Q8NGE3	2	45	Olfactory receptor 10P1 (Olfactory receptor 10P2) (Olfactory	
+Q8NGE5	human	Q8NGE5	OR10A7	Q8NGE5	1	40	Olfactory receptor 10A7 (Olfactory receptor OR12-6)	
+Q8NGE7	human	Q8NGE7	OR9K2	Q8NGE7	2	26	Olfactory receptor 9K2 (Olfactory receptor OR12-2)	
+Q8NGE8	human	Q8NGE8	OR4D9	Q8NGE8	1	39	Olfactory receptor 4D9 (Olfactory receptor OR11-253)	
+Q8NGE9	human	Q8NGE9	OR9Q2	Q8NGE9	1	31	Olfactory receptor 9Q2	
+Q8NGF0	human	Q8NGF0	OR52B6	Q8NGF0	8	37	Olfactory receptor 52B6 (Olfactory receptor OR11-47)	
+Q8NGF1	human	Q8NGF1	OR52R1	Q8NGF1	1	55	Olfactory receptor 52R1 (Olfactory receptor OR11-22)	
+Q8NGF3	human	Q8NGF3	OR51D1	Q8NGF3	3	46	Olfactory receptor 51D1 (Olfactory receptor OR11-14)	
+Q8NGF4	human	Q8NGF4	OR5AP2	Q8NGF4	3	34	Olfactory receptor 5AP2	
+Q8NGF6	human	Q8NGF6	OR10W1	Q8NGF6	5	163	Olfactory receptor 10W1 (Olfactory receptor OR11-236)	
+Q8NGF7	human	Q8NGF7	OR5B17	Q8NGF7	1	32	Olfactory receptor 5B17 (Olfactory receptor 5B20) (Olfactory	
+Q8NGF8	human	Q8NGF8	OR4B1	Q8NGF8	2	61	Olfactory receptor 4B1 (OST208) (Olfactory receptor OR11-106	
+Q8NGF9	human	Q8NGF9	OR4X2	Q8NGF9	2	29	Olfactory receptor 4X2 (Olfactory receptor OR11-105)	
+Q8NGG0	human	Q8NGG0	OR8J3	Q8NGG0	1	19	Olfactory receptor 8J3 (Olfactory receptor OR11-173)	
+Q8NGG1	human	Q8NGG1	OR8J2	Q8NGG1	1	24	Olfactory receptor 8J2	
+Q8NGG2	human	Q8NGG2	OR5T2	Q8NGG2	1	27	Olfactory receptor 5T2 (Olfactory receptor OR11-177)	
+Q8NGG3	human	Q8NGG3	OR5T3	Q8NGG3	1	14	Olfactory receptor 5T3 (Olfactory receptor OR11-178)	
+Q8NGG4	human	Q8NGG4	OR8H1	Q8NGG4	2	48	Olfactory receptor 8H1 (Olfactory receptor OR11-180)	
+Q8NGG5	human	Q8NGG5	OR8K1	Q8NGG5	2	30	Olfactory receptor 8K1 (Olfactory receptor OR11-182)	
+Q8NGG6	human	Q8NGG6	OR8B12	Q8NGG6	2	17	Olfactory receptor 8B12 (Olfactory receptor OR11-317)	
+Q8NGG7	human	Q8NGG7	OR8A1	Q8NGG7	1	21	Olfactory receptor 8A1 (OST025) (Olfactory receptor OR11-318	
+Q8NGG8	human	Q8NGG8	OR8B3	Q8NGG8	1	28	Olfactory receptor 8B3 (Olfactory receptor OR11-311)	
+Q8NGH3	human	Q8NGH3	OR2D3	Q8NGH3	2	29	Olfactory receptor 2D3 (Olfactory receptor OR11-89)	
+Q8NGH5	human	Q8NGH5	OR56A1	Q8NGH5	3	62	Olfactory receptor 56A1 (Olfactory receptor OR11-75)	
+Q8NGH6	human	Q8NGH6	OR52L2P	Q8NGH6	1	6	Putative olfactory receptor 52L2 (Olfactory receptor OR11-74	
+Q8NGH7	human	Q8NGH7	OR52L1	Q8NGH7	6	30	Olfactory receptor 52L1 (Olfactory receptor OR11-50)	
+Q8NGH8	human	Q8NGH8	OR56A4	Q8NGH8	1	24	Olfactory receptor 56A4 (Olfactory receptor OR11-49)	
+Q8NGH9	human	Q8NGH9	OR52E4	Q8NGH9	2	44	Olfactory receptor 52E4 (Olfactory receptor OR11-55)	
+Q8NGI0	human	Q8NGI0	OR52N2	Q8NGI0	1	41	Olfactory receptor 52N2 (Olfactory receptor OR11-57)	
+Q8NGI1	human	Q8NGI1	OR56B2	Q8NGI1	2	16	Olfactory receptor 56B2	
+Q8NGI2	human	Q8NGI2	OR52N4	Q8NGI2	3	39	Olfactory receptor 52N4 (Olfactory receptor OR11-64)	
+Q8NGI3	human	Q8NGI3	OR56B1	Q8NGI3	3	29	Olfactory receptor 56B1 (Olfactory receptor OR11-65)	
+Q8NGI4	human	Q8NGI4	OR4D11	Q8NGI4	1	38	Olfactory receptor 4D11	
+Q8NGI6	human	Q8NGI6	OR4D10	Q8NGI6	2	43	Olfactory receptor 4D10 (Olfactory receptor OR11-251)	
+Q8NGI7	human	Q8NGI7	OR10V1	Q8NGI7	1	41	Olfactory receptor 10V1 (Olfactory receptor OR11-256)	
+Q8NGI8	human	Q8NGI8	OR5AN1	Q8NGI8	1	31	Olfactory receptor 5AN1 (Olfactory receptor OR11-244)	
+Q8NGI9	human	Q8NGI9	OR5A2	Q8NGI9	4	51	Olfactory receptor 5A2 (Olfactory receptor OR11-248)	
+Q8NGJ0	human	Q8NGJ0	OR5A1	Q8NGJ0	1	28	Olfactory receptor 5A1 (OST181) (Olfactory receptor OR11-249	
+Q8NGJ1	human	Q8NGJ1	OR4D6	Q8NGJ1	1	27	Olfactory receptor 4D6 (Olfactory receptor OR11-250)	
+Q8NGJ2	human	Q8NGJ2	OR52H1	Q8NGJ2	5	54	Olfactory receptor 52H1 (Olfactory receptor OR11-45)	
+Q8NGJ3	human	Q8NGJ3	OR52E1	Q8NGJ3	1	22	Olfactory receptor 52E1	
+Q8NGJ4	human	Q8NGJ4	OR52E2	Q8NGJ4	2	39	Olfactory receptor 52E2	
+Q8NGJ5	human	Q8NGJ5	OR51L1	Q8NGJ5	2	53	Olfactory receptor 51L1 (Olfactory receptor OR11-31)	
+Q8NGJ6	human	Q8NGJ6	OR51A4	Q8NGJ6	1	34	Olfactory receptor 51A4	
+Q8NGJ7	human	Q8NGJ7	OR51A2	Q8NGJ7	6	61	Olfactory receptor 51A2	
+Q8NGJ8	human	Q8NGJ8	OR51S1	Q8NGJ8	1	14	Olfactory receptor 51S1 (Olfactory receptor OR11-24)	
+Q8NGJ9	human	Q8NGJ9	OR51T1	Q8NGJ9	4	51	Olfactory receptor 51T1 (Olfactory receptor OR11-26)	
+Q8NGK0	human	Q8NGK0	OR51G2	Q8NGK0	2	43	Olfactory receptor 51G2 (Olfactory receptor OR11-28)	
+Q8NGK1	human	Q8NGK1	OR51G1	Q8NGK1	1	33	Olfactory receptor 51G1 (Olfactory receptor 51G3) (Olfactory	
+Q8NGK2	human	Q8NGK2	OR52B4	Q8NGK2	1	40	Olfactory receptor 52B4 (Olfactory receptor OR11-3)	
+Q8NGK3	human	Q8NGK3	OR52K2	Q8NGK3	5	54	Olfactory receptor 52K2 (Olfactory receptor OR11-7)	
+Q8NGK4	human	Q8NGK4	OR52K1	Q8NGK4	8	90	Olfactory receptor 52K1 (Olfactory receptor OR11-8)	
+Q8NGK5	human	Q8NGK5	OR52M1	Q8NGK5	6	59	Olfactory receptor 52M1 (Olfactory receptor OR11-11)	
+Q8NGK6	human	Q8NGK6	OR52I1	Q8NGK6	1	32	Olfactory receptor 52I1 (Olfactory receptor OR11-13)	
+Q8NGK9	human	Q8NGK9	OR5D16	Q8NGK9	1	41	Olfactory receptor 5D16 (Olfactory receptor OR11-154)	
+Q8NGL0	human	Q8NGL0	OR5L2	Q8NGL0	4	60	Olfactory receptor 5L2 (HTPCRX16) (Olfactory receptor OR11-1	
+Q8NGL1	human	Q8NGL1	OR5D18	Q8NGL1	1	26	Olfactory receptor 5D18 (Olfactory receptor OR11-143) (Olfac	
+Q8NGL2	human	Q8NGL2	OR5L1	Q8NGL2	1	46	Olfactory receptor 5L1 (OST262) (Olfactory receptor OR11-151	
+Q8NGL3	human	Q8NGL3	OR5D14	Q8NGL3	2	46	Olfactory receptor 5D14 (Olfactory receptor OR11-141) (Olfac	
+Q8NGL4	human	Q8NGL4	OR5D13	Q8NGL4	1	13	Olfactory receptor 5D13 (Olfactory receptor OR11-142) (Olfac	
+Q8NGL6	human	Q8NGL6	OR4A15	Q8NGL6	1	10	Olfactory receptor 4A15 (Olfactory receptor OR11-118)	
+Q8NGL7	human	Q8NGL7	OR4P4	Q8NGL7	2	38	Olfactory receptor 4P4 (Olfactory receptor 4P3)	
+Q8NGL9	human	Q8NGL9	OR4C16	Q8NGL9	0	19	Olfactory receptor 4C16 (Olfactory receptor OR11-135)	
+Q8NGM1	human	Q8NGM1	OR4C15	Q8NGM1	1	57	Olfactory receptor 4C15 (Olfactory receptor OR11-127) (Olfac	
+Q8NGM8	human	Q8NGM8	OR6M1	Q8NGM8	1	44	Olfactory receptor 6M1 (Olfactory receptor OR11-271)	
+Q8NGM9	human	Q8NGM9	OR8D4	Q8NGM9	1	28	Olfactory receptor 8D4 (Olfactory receptor OR11-275)	
+Q8NGN0	human	Q8NGN0	OR4D5	Q8NGN0	1	52	Olfactory receptor 4D5 (Olfactory receptor OR11-276)	
+Q8NGN1	human	Q8NGN1	OR6T1	Q8NGN1	2	66	Olfactory receptor 6T1 (Olfactory receptor OR11-277)	
+Q8NGN2	human	Q8NGN2	OR10S1	Q8NGN2	2	25	Olfactory receptor 10S1 (Olfactory receptor OR11-279)	
+Q8NGN3	human	Q8NGN3	OR10G4	Q8NGN3	3	54	Olfactory receptor 10G4 (Olfactory receptor OR11-278)	
+Q8NGN4	human	Q8NGN4	OR10G9	Q8NGN4	3	76	Olfactory receptor 10G9 (Olfactory receptor 10G10)	
+Q8NGN5	human	Q8NGN5	OR10G8	Q8NGN5	7	63	Olfactory receptor 10G8 (Olfactory receptor OR11-282)	
+Q8NGN6	human	Q8NGN6	OR10G7	Q8NGN6	1	48	Olfactory receptor 10G7 (Olfactory receptor OR11-283)	
+Q8NGN7	human	Q8NGN7	OR10D4P	Q8NGN7	1	8	Putative olfactory receptor 10D4	
+Q8NGN8	human	Q8NGN8	OR4A4P	Q8NGN8	2	62	Putative olfactory receptor 4A4 (Olfactory receptor OR11-107	
+Q8NGP0	human	Q8NGP0	OR4C13	Q8NGP0	1	27	Olfactory receptor 4C13 (Olfactory receptor OR11-260)	
+Q8NGP2	human	Q8NGP2	OR8J1	Q8NGP2	1	85	Olfactory receptor 8J1 (Olfactory receptor OR11-183)	
+Q8NGP3	human	Q8NGP3	OR5M9	Q8NGP3	2	32	Olfactory receptor 5M9 (Olfactory receptor OR11-190)	
+Q8NGP4	human	Q8NGP4	OR5M3	Q8NGP4	2	61	Olfactory receptor 5M3 (Olfactory receptor OR11-191)	
+Q8NGP6	human	Q8NGP6	OR5M8	Q8NGP6	1	59	Olfactory receptor 5M8 (Olfactory receptor OR11-194)	
+Q8NGP8	human	Q8NGP8	OR5M1	Q8NGP8	2	48	Olfactory receptor 5M1 (OST050) (Olfactory receptor OR11-208	
+Q8NGP9	human	Q8NGP9	OR5AR1	Q8NGP9	2	50	Olfactory receptor 5AR1 (Olfactory receptor OR11-209)	
+Q8NGQ1	human	Q8NGQ1	OR9G4	Q8NGQ1	1	38	Olfactory receptor 9G4 (Olfactory receptor OR11-216)	
+Q8NGQ2	human	Q8NGQ2	OR6Q1	Q8NGQ2	1	25	Olfactory receptor 6Q1 (Olfactory receptor OR11-226)	
+Q8NGQ3	human	Q8NGQ3	OR1S2	Q8NGQ3	1	12	Olfactory receptor 1S2 (Olfactory receptor OR11-231)	
+Q8NGQ4	human	Q8NGQ4	OR10Q1	Q8NGQ4	1	26	Olfactory receptor 10Q1 (Olfactory receptor OR11-233)	
+Q8NGQ5	human	Q8NGQ5	OR9Q1	Q8NGQ5	1	30	Olfactory receptor 9Q1	
+Q8NGQ6	human	Q8NGQ6	OR9I1	Q8NGQ6	1	28	Olfactory receptor 9I1 (Olfactory receptor OR11-228)	
+Q8NGR1	human	Q8NGR1	OR13A1	Q8NGR1	5	23	Olfactory receptor 13A1 (Olfactory receptor OR10-3)	
+Q8NGR2	human	Q8NGR2	OR1L6	Q8NGR2	1	14	Olfactory receptor 1L6 (Olfactory receptor 1L7) (Olfactory r	
+Q8NGR3	human	Q8NGR3	OR1K1	Q8NGR3	1	13	Olfactory receptor 1K1	
+Q8NGR4	human	Q8NGR4	OR5C1	Q8NGR4	1	22	Olfactory receptor 5C1 (Olfactory receptor 5C2) (Olfactory r	
+Q8NGR5	human	Q8NGR5	OR1L4	Q8NGR5	2	26	Olfactory receptor 1L4 (OST046) (Olfactory receptor 1L5) (Ol	
+Q8NGR6	human	Q8NGR6	OR1B1	Q8NGR6	4	10	Olfactory receptor 1B1 (Olfactory receptor 9-B) (OR9-B) (Olf	
+Q8NGR8	human	Q8NGR8	OR1L8	Q8NGR8	2	13	Olfactory receptor 1L8 (Olfactory receptor OR9-24)	
+Q8NGR9	human	Q8NGR9	OR1N2	Q8NGR9	3	27	Olfactory receptor 1N2 (Olfactory receptor OR9-23)	
+Q8NGS0	human	Q8NGS0	OR1N1	Q8NGS0	2	24	Olfactory receptor 1N1 (Olfactory receptor 1-26) (OR1-26) (O	
+Q8NGS1	human	Q8NGS1	OR1J4	Q8NGS1	1	16	Olfactory receptor 1J4 (HTPCRX01) (Olfactory receptor OR9-21	
+Q8NGS2	human	Q8NGS2	OR1J2	Q8NGS2	1	24	Olfactory receptor 1J2 (HSA5) (HTPCRX15) (OST044) (Olfactory	
+Q8NGS3	human	Q8NGS3	OR1J1	Q8NGS3	1	22	Olfactory receptor 1J1 (Olfactory receptor OR9-18)	
+Q8NGS4	human	Q8NGS4	OR13F1	Q8NGS4	2	93	Olfactory receptor 13F1 (Olfactory receptor OR9-6)	
+Q8NGS5	human	Q8NGS5	OR13C4	Q8NGS5	1	51	Olfactory receptor 13C4 (Olfactory receptor OR9-7)	
+Q8NGS6	human	Q8NGS6	OR13C3	Q8NGS6	2	60	Olfactory receptor 13C3 (Olfactory receptor OR9-8)	
+Q8NGS7	human	Q8NGS7	OR13C8	Q8NGS7	2	36	Olfactory receptor 13C8	
+Q8NGS8	human	Q8NGS8	OR13C5	Q8NGS8	1	104	Olfactory receptor 13C5 (Olfactory receptor OR9-11)	
+Q8NGS9	human	Q8NGS9	OR13C2	Q8NGS9	0	53	Olfactory receptor 13C2 (Olfactory receptor OR9-12)	
+Q8NGT0	human	Q8NGT0	OR13C9	Q8NGT0	1	85	Olfactory receptor 13C9 (Olfactory receptor OR9-13)	
+Q8NGT1	human	Q8NGT1	OR2K2	Q8NGT1	1	50	Olfactory receptor 2K2 (HTPCRH06) (Olfactory receptor OR9-17	
+Q8NGT2	human	Q8NGT2	OR13J1	Q8NGT2	2	23	Olfactory receptor 13J1 (Olfactory receptor OR9-2)	
+Q8NGT5	human	Q8NGT5	OR9A2	Q8NGT5	2	14	Olfactory receptor 9A2 (Olfactory receptor OR7-2)	
+Q8NGT7	human	Q8NGT7	OR2A12	Q8NGT7	2	54	Olfactory receptor 2A12 (Olfactory receptor OR7-10)	
+Q8NGT9	human	Q8NGT9	OR2A1	Q8NGT9	2	20	Olfactory receptor 2A1/2A42 (Olfactory receptor OR7-16) (Olf	
+Q8NGU1	human	Q8NGU1	OR9A1P	Q8NGU1	1	9	Olfactory receptor 9A1 (HSHTPRX06)	
+Q8NGU2	human	Q8NGU2	OR9A4	Q8NGU2	2	31	Olfactory receptor 9A4 (Olfactory receptor OR7-1)	
+Q8NGU4	human	Q8NGU4	OR2I1	Q8NGU4	3	23	Putative olfactory receptor 2I1 (Putative olfactory receptor	
+Q8NGU9	human	Q8NGU9	GPR150	Q8NGU9	6	32	Probable G protein-coupled receptor 150	
+Q8NGV0	human	Q8NGV0	OR2Y1	Q8NGV0	2	146	Olfactory receptor 2Y1 (Olfactory receptor OR5-2)	
+Q8NGV5	human	Q8NGV5	OR13D1	Q8NGV5	1	24	Olfactory receptor 13D1 (Olfactory receptor OR9-15)	
+Q8NGV6	human	Q8NGV6	OR5H6	Q8NGV6	3	21	Olfactory receptor 5H6 (Olfactory receptor OR3-11)	
+Q8NGV7	human	Q8NGV7	OR5H2	Q8NGV7	1	64	Olfactory receptor 5H2 (Olfactory receptor OR3-10)	
+Q8NGW1	human	Q8NGW1	OR6B3	Q8NGW1	5	44	Olfactory receptor 6B3 (Olfactory receptor OR2-2)	
+Q8NGW6	human	Q8NGW6	OR6K6	Q8NGW6	3	24	Olfactory receptor 6K6 (Olfactory receptor OR1-21)	
+Q8NGX0	human	Q8NGX0	OR11L1	Q8NGX0	1	22	Olfactory receptor 11L1	
+Q8NGX1	human	Q8NGX1	OR2T34	Q8NGX1	1	17	Olfactory receptor 2T34 (Olfactory receptor OR1-63)	
+Q8NGX2	human	Q8NGX2	OR2T35	Q8NGX2	2	54	Olfactory receptor 2T35 (Olfactory receptor OR1-66)	
+Q8NGX3	human	Q8NGX3	OR10T2	Q8NGX3	3	26	Olfactory receptor 10T2 (Olfactory receptor OR1-3)	
+Q8NGX5	human	Q8NGX5	OR10K1	Q8NGX5	2	17	Olfactory receptor 10K1 (Olfactory receptor OR1-6)	
+Q8NGX6	human	Q8NGX6	OR10R2	Q8NGX6	1	38	Olfactory receptor 10R2 (Olfactory receptor OR1-8)	
+Q8NGX8	human	Q8NGX8	OR6Y1	Q8NGX8	1	44	Olfactory receptor 6Y1 (Olfactory receptor 6Y2) (Olfactory r	
+Q8NGX9	human	Q8NGX9	OR6P1	Q8NGX9	3	24	Olfactory receptor 6P1 (Olfactory receptor OR1-12)	
+Q8NGY0	human	Q8NGY0	OR10X1	Q8NGY0	1	20	Olfactory receptor 10X1 (Olfactory receptor OR1-14)	
+Q8NGY1	human	Q8NGY1	OR10Z1	Q8NGY1	3	21	Olfactory receptor 10Z1 (Olfactory receptor OR1-15)	
+Q8NGY2	human	Q8NGY2	OR6K2	Q8NGY2	2	12	Olfactory receptor 6K2 (Olfactory receptor OR1-17)	
+Q8NGY3	human	Q8NGY3	OR6K3	Q8NGY3	2	24	Olfactory receptor 6K3 (Olfactory receptor OR1-18)	
+Q8NGY5	human	Q8NGY5	OR6N1	Q8NGY5	3	85	Olfactory receptor 6N1	
+Q8NGY6	human	Q8NGY6	OR6N2	Q8NGY6	4	59	Olfactory receptor 6N2 (Olfactory receptor OR1-23)	
+Q8NGY7	human	Q8NGY7	OR10J6P	Q8NGY7	2	7	Putative olfactory receptor 10J6	
+Q8NGY9	human	Q8NGY9	OR2L8	Q8NGY9	1	45	Olfactory receptor 2L8 (Olfactory receptor OR1-46)	
+Q8NGZ0	human	Q8NGZ0	OR2AJ1	Q8NGZ0	1	16	Olfactory receptor 2AJ1	
+Q8NGZ2	human	Q8NGZ2	OR14K1	Q8NGZ2	1	12	Olfactory receptor 14K1 (Olfactory receptor 5AY1) (Olfactory	
+Q8NGZ3	human	Q8NGZ3	OR13G1	Q8NGZ3	4	34	Olfactory receptor 13G1 (Olfactory receptor OR1-37)	
+Q8NGZ4	human	Q8NGZ4	OR2G3	Q8NGZ4	1	20	Olfactory receptor 2G3 (Olfactory receptor OR1-33)	
+Q8NGZ5	human	Q8NGZ5	OR2G2	Q8NGZ5	1	7	Olfactory receptor 2G2 (Olfactory receptor OR1-32)	
+Q8NGZ6	human	Q8NGZ6	OR6F1	Q8NGZ6	4	33	Olfactory receptor 6F1 (Olfactory receptor OR1-38)	
+Q8NGZ9	human	Q8NGZ9	OR2T10	Q8NGZ9	1	64	Olfactory receptor 2T10 (Olfactory receptor OR1-64)	
+Q8NH00	human	Q8NH00	OR2T4	Q8NH00	3	26	Olfactory receptor 2T4 (Olfactory receptor OR1-60)	
+Q8NH01	human	Q8NH01	OR2T11	Q8NH01	1	23	Olfactory receptor 2T11 (Olfactory receptor OR1-65)	
+Q8NH02	human	Q8NH02	OR2T29	Q8NH02	1	42	Olfactory receptor 2T29	
+Q8NH03	human	Q8NH03	OR2T3	Q8NH03	2	27	Olfactory receptor 2T3	
+Q8NH04	human	Q8NH04	OR2T27	Q8NH04	2	22	Olfactory receptor 2T27 (Olfactory receptor OR1-67)	
+Q8NH05	human	Q8NH05	OR4Q3	Q8NH05	1	43	Olfactory receptor 4Q3 (Olfactory receptor 4Q4) (Olfactory r	
+Q8NH06	human	Q8NH06	OR1P1	Q8NH06	1	5	Olfactory receptor 1P1 (Olfactory receptor 17-208) (OR17-208	
+Q8NH07	human	Q8NH07	OR11H2	Q8NH07	6	26	Olfactory receptor 11H2 (Olfactory receptor OR14-1)	
+Q8NH08	human	Q8NH08	OR10AC1	Q8NH08	1	2	Olfactory receptor 10AC1 (Olfactory receptor OR7-5)	
+Q8NH09	human	Q8NH09	OR8S1	Q8NH09	4	16	Olfactory receptor 8S1	
+Q8NH10	human	Q8NH10	OR8U1	Q8NH10	1	38	Olfactory receptor 8U1	
+Q8NH16	human	Q8NH16	OR2L2	Q8NH16	2	47	Olfactory receptor 2L2 (HTPCRH07) (Olfactory receptor 2L12) 	
+Q8NH18	human	Q8NH18	OR5J2	Q8NH18	2	24	Olfactory receptor 5J2 (Olfactory receptor OR11-266)	
+Q8NH19	human	Q8NH19	OR10AG1	Q8NH19	1	15	Olfactory receptor 10AG1 (Olfactory receptor OR11-160)	
+Q8NH21	human	Q8NH21	OR4F5	Q8NH21	6	77	Olfactory receptor 4F5	
+Q8NH37	human	Q8NH37	OR4C3	Q8NH37	1	39	Olfactory receptor 4C3 (Olfactory receptor OR11-98)	
+Q8NH40	human	Q8NH40	OR6S1	Q8NH40	1	15	Olfactory receptor 6S1 (Olfactory receptor OR14-37)	
+Q8NH41	human	Q8NH41	OR4K15	Q8NH41	3	55	Olfactory receptor 4K15 (Olfactory receptor OR14-20)	
+Q8NH42	human	Q8NH42	OR4K13	Q8NH42	2	54	Olfactory receptor 4K13 (Olfactory receptor OR14-27)	
+Q8NH43	human	Q8NH43	OR4L1	Q8NH43	2	46	Olfactory receptor 4L1 (Olfactory receptor 4L2) (Olfactory r	
+Q8NH48	human	Q8NH48	OR5B3	Q8NH48	1	23	Olfactory receptor 5B3 (Olfactory receptor 5B13) (Olfactory 	
+Q8NH49	human	Q8NH49	OR4X1	Q8NH49	1	60	Olfactory receptor 4X1 (Olfactory receptor OR11-104)	
+Q8NH50	human	Q8NH50	OR8K5	Q8NH50	0	54	Olfactory receptor 8K5 (Olfactory receptor OR11-174)	
+Q8NH51	human	Q8NH51	OR8K3	Q8NH51	2	24	Olfactory receptor 8K3 (Olfactory receptor OR11-181)	
+Q8NH53	human	Q8NH53	OR52N1	Q8NH53	1	40	Olfactory receptor 52N1 (Olfactory receptor OR11-61)	
+Q8NH54	human	Q8NH54	OR56A3	Q8NH54	1	32	Olfactory receptor 56A3 (Olfactory receptor 56A6)	
+Q8NH55	human	Q8NH55	OR52E5	Q8NH55	1	50	Olfactory receptor 52E5	
+Q8NH56	human	Q8NH56	OR52N5	Q8NH56	5	34	Olfactory receptor 52N5 (Olfactory receptor OR11-62)	
+Q8NH57	human	Q8NH57	OR52P1	Q8NH57	1	15	Olfactory receptor 52P1	
+Q8NH59	human	Q8NH59	OR51Q1	Q8NH59	2	26	Olfactory receptor 51Q1	
+Q8NH60	human	Q8NH60	OR52J3	Q8NH60	2	47	Olfactory receptor 52J3 (Olfactory receptor OR11-32)	
+Q8NH61	human	Q8NH61	OR51F2	Q8NH61	1	21	Olfactory receptor 51F2 (Olfactory receptor OR11-23)	
+Q8NH63	human	Q8NH63	OR51H1	Q8NH63	1	17	Olfactory receptor 51H1 (Olfactory receptor OR11-25)	
+Q8NH64	human	Q8NH64	OR51A7	Q8NH64	5	55	Olfactory receptor 51A7 (Olfactory receptor OR11-27)	
+Q8NH67	human	Q8NH67	OR52I2	Q8NH67	3	35	Olfactory receptor 52I2 (Olfactory receptor OR11-12)	
+Q8NH69	human	Q8NH69	OR5W2	Q8NH69	1	45	Olfactory receptor 5W2 (Olfactory receptor 5W3) (Olfactory r	
+Q8NH70	human	Q8NH70	OR4A16	Q8NH70	1	9	Olfactory receptor 4A16 (Olfactory receptor OR11-117)	
+Q8NH72	human	Q8NH72	OR4C6	Q8NH72	3	58	Olfactory receptor 4C6 (Olfactory receptor OR11-138)	
+Q8NH73	human	Q8NH73	OR4S2	Q8NH73	1	49	Olfactory receptor 4S2 (Olfactory receptor OR11-137)	
+Q8NH74	human	Q8NH74	OR10A6	Q8NH74	1	39	Olfactory receptor 10A6 (Olfactory receptor OR11-96)	
+Q8NH76	human	Q8NH76	OR56B4	Q8NH76	2	34	Olfactory receptor 56B4 (Olfactory receptor OR11-67)	
+Q8NH79	human	Q8NH79	OR6X1	Q8NH79	2	27	Olfactory receptor 6X1 (Olfactory receptor OR11-270)	
+Q8NH80	human	Q8NH80	OR10D3	Q8NH80	2	30	Olfactory receptor 10D3 (HTPCRX09) (Olfactory receptor OR11-	
+Q8NH81	human	Q8NH81	OR10G6	Q8NH81	3	19	Olfactory receptor 10G6 (Olfactory receptor OR11-280)	
+Q8NH83	human	Q8NH83	OR4A5	Q8NH83	1	28	Olfactory receptor 4A5 (Olfactory receptor OR11-111)	
+Q8NH85	human	Q8NH85	OR8U3	Q8NH85	1	20	Olfactory receptor 8U3 (Olfactory receptor 5R1) (Olfactory r	
+Q8NH87	human	Q8NH87	OR9G1	Q8NH87	1	18	Olfactory receptor 9G1 (Olfactory receptor 9G5) (Olfactory r	
+Q8NH89	human	Q8NH89	OR5AK3P	Q8NH89	1	8	Olfactory receptor 5AK3	
+Q8NH90	human	Q8NH90	OR5AK2	Q8NH90	1	31	Olfactory receptor 5AK2	
+Q8NH92	human	Q8NH92	OR1S1	Q8NH92	1	7	Olfactory receptor 1S1 (Olfactory receptor OR11-232)	
+Q8NH93	human	Q8NH93	OR1L3	Q8NH93	2	20	Olfactory receptor 1L3 (Olfactory receptor 9-D) (OR9-D) (Olf	
+Q8NH94	human	Q8NH94	OR1L1	Q8NH94	3	16	Olfactory receptor 1L1 (Olfactory receptor 1L2) (Olfactory r	
+Q8NH95	human	Q8NH95	OR13C6P	Q8NH95	0	8	Putative olfactory receptor 13C6 (Olfactory receptor, family	
+Q8NHA4	human	Q8NHA4	OR2AE1	Q8NHA4	1	37	Olfactory receptor 2AE1 (Olfactory receptor 2AE2)	
+Q8NHA6	human	Q8NHA6	OR2W6P	Q8NHA6	0	23	Putative olfactory receptor 2W6 (Olfactory receptor OR6-3) (	
+Q8NHA8	human	Q8NHA8	OR1F12P	Q8NHA8	1	9	Putative olfactory receptor 1F12P (Hs6M1-35P)	
+Q8NHB1	human	Q8NHB1	OR2V1	Q8NHB1	1	27	Olfactory receptor 2V1	
+Q8NHB7	human	Q8NHB7	OR5K1	Q8NHB7	3	42	Olfactory receptor 5K1 (HTPCRX10) (Olfactory receptor OR3-8)	
+Q8NHB8	human	Q8NHB8	OR5K2	Q8NHB8	1	53	Olfactory receptor 5K2 (Olfactory receptor OR3-9)	
+Q8NHC4	human	Q8NHC4	OR10J5	Q8NHC4	2	19	Olfactory receptor 10J5 (Olfactory receptor OR1-28)	
+Q8NHC5	human	Q8NHC5	OR14A16	Q8NHC5	1	14	Olfactory receptor 14A16 (Olfactory receptor 5AT1) (Olfactor	
+Q8NHC6	human	Q8NHC6	OR14L1	Q8NHC6	1	3	Olfactory receptor 14L1 (Olfactory receptor 5AV1)	
+Q8NHC7	human	Q8NHC7	OR14C36	Q8NHC7	1	11	Olfactory receptor 14C36 (Olfactory receptor 5BF1) (Olfactor	
+Q8NHC8	human	Q8NHC8	OR2T6	Q8NHC8	1	25	Olfactory receptor 2T6 (OST703) (Olfactory receptor 2T9)	
+Q8NHE4	human	Q8NHE4	ATP6V0E2	Q8NHE4	14	79	V-type proton ATPase subunit e 2 (V-ATPase subunit e 2) (Lys	
+Q8NHG7	human	Q8NHG7	SVIP	Q8NHG7	16	124	Small VCP/p97-interacting protein	
+Q8NHG8	human	Q8NHG8	ZNRF2	Q8NHG8	22	101	E3 ubiquitin-protein ligase ZNRF2 (EC 2.3.2.27) (Protein Ell	
+Q8NHH1	human	Q8NHH1	TTLL11	Q8NHH1	2	50	Tubulin polyglutamylase TTLL11 (EC 6.3.2.-) (Tubulin--tyrosi	
+Q8NHH9	human	Q8NHH9	ATL2	Q8NHH9	3	114	Atlastin-2 (ATL-2) (EC 3.6.5.-) (ADP-ribosylation factor-lik	
+Q8NHJ6	human	Q8NHJ6	LILRB4	Q8NHJ6	30	179	Leukocyte immunoglobulin-like receptor subfamily B member 4 	
+Q8NHK3	human	Q8NHK3	KIR2DL5B	Q8NHK3	9	31	Killer cell immunoglobulin-like receptor 2DL5B (CD158 antige	
+Q8NHL6	human	Q8NHL6	LILRB1	Q8NHL6	46	257	Leukocyte immunoglobulin-like receptor subfamily B member 1 	
+Q8NHM4	human	Q8NHM4	PRSS3P2	Q8NHM4	8	24	Putative trypsin-6 (EC 3.4.21.4) (Serine protease 3 pseudoge	
+Q8NHM5	human	Q8NHM5	KDM2B	Q8NHM5	54	362	Lysine-specific demethylase 2B (EC 1.14.11.27) (CXXC-type zi	
+Q8NHP1	human	Q8NHP1	AKR7L	Q8NHP1	9	79	Aflatoxin B1 aldehyde reductase member 4 (EC 1.-.-.-) (AFB1 	
+Q8NHP6	human	Q8NHP6	MOSPD2	Q8NHP6	25	208	Motile sperm domain-containing protein 2	
+Q8NHP7	human	Q8NHP7	EXD1	Q8NHP7	4	26	piRNA biogenesis protein EXD1 (Exonuclease 3'-5' domain-cont	
+Q8NHP8	human	Q8NHP8	PLBD2	Q8NHP8	9	67	Putative aminopeptidase PLBD2 (EC 3.4.11.-) (76 kDa protein)	
+Q8NHQ1	human	Q8NHQ1	CEP70	Q8NHQ1	35	368	Centrosomal protein of 70 kDa (Cep70) (p10-binding protein)	
+Q8NHQ8	human	Q8NHQ8	RASSF8	Q8NHQ8	63	140	Ras association domain-containing protein 8 (Carcinoma-assoc	
+Q8NHQ9	human	Q8NHQ9	DDX55	Q8NHQ9	32	473	ATP-dependent RNA helicase DDX55 (EC 3.6.4.13) (DEAD box pro	
+Q8NHR7	human	Q8NHR7	TERB2	Q8NHR7	4	36	Telomere repeats-binding bouquet formation protein 2	
+Q8NHR9	human	Q8NHR9	PFN4	Q8NHR9	14	158	Profilin-4 (Profilin IV)	
+Q8NHS0	human	Q8NHS0	DNAJB8	Q8NHS0	19	171	DnaJ homolog subfamily B member 8	
+Q8NHS1	human	Q8NHS1	CLDND2	Q8NHS1	5	70	Claudin domain-containing protein 2	
+Q8NHS2	human	Q8NHS2	GOT1L1	Q8NHS2	3	41	Aspartate aminotransferase, cytoplasmic 2 (EC 2.6.1.1) (Glut	
+Q8NHS3	human	Q8NHS3	MFSD8	Q8NHS3	5	103	Major facilitator superfamily domain-containing protein 8 (C	
+Q8NHS4	human	Q8NHS4	CLHC1	Q8NHS4	25	171	Clathrin heavy chain linker domain-containing protein 1	
+Q8NHS9	human	Q8NHS9	SPATA22	Q8NHS9	9	35	Spermatogenesis-associated protein 22 (Testis development pr	
+Q8NHU0	human	Q8NHU0	CT45A3	Q8NHU0	8	56	Cancer/testis antigen family 45 member A3 (Cancer/testis ant	
+Q8NHU2	human	Q8NHU2	CFAP61	Q8NHU2	1	5	Cilia- and flagella-associated protein 61	
+Q8NHU3	human	Q8NHU3	SGMS2	Q8NHU3	3	60	Phosphatidylcholine:ceramide cholinephosphotransferase 2 (EC	
+Q8NHU6	human	Q8NHU6	TDRD7	Q8NHU6	28	150	Tudor domain-containing protein 7 (PCTAIRE2-binding protein)	
+Q8NHV1	human	Q8NHV1	GIMAP7	Q8NHV1	7	75	GTPase IMAP family member 7 (Immunity-associated nucleotide 	
+Q8NHV4	human	Q8NHV4	NEDD1	Q8NHV4	80	293	Protein NEDD1 (Neural precursor cell expressed developmental	
+Q8NHV5	human	Q8NHV5	MOSMO	Q8NHV5	3	39	Modulator of smoothened protein (Attenuator of hedgehog)	
+Q8NHV9	human	Q8NHV9	RHOXF1	Q8NHV9	65	356	Rhox homeobox family member 1 (Ovary-, testis- and epididymi	
+Q8NHW3	human	Q8NHW3	MAFA	Q8NHW3	113	363	Transcription factor MafA (Pancreatic beta-cell-specific tra	
+Q8NHW4	human	Q8NHW4	CCL4L1	Q8NHW4	107	567	C-C motif chemokine 4-like (Lymphocyte activation gene 1 pro	
+Q8NHW5	human	Q8NHW5	RPLP0P6	Q8NHW5	11	200	Putative ribosomal protein uL10-like (60S acidic ribosomal p	
+Q8NHW6	human	Q8NHW6	OTOS	Q8NHW6	5	69	Otospiralin	
+Q8NHX4	human	Q8NHX4	SPATA3	Q8NHX4	11	129	Spermatogenesis-associated protein 3 (Testis and spermatogen	
+Q8NHX9	human	Q8NHX9	TPCN2	Q8NHX9	3	142	Two pore channel protein 2 (Two pore calcium channel protein	
+Q8NHY0	human	Q8NHY0	B4GALNT2	Q8NHY0	4	92	N-acetylneuraminylgalactosylglucosyl-glucoside beta-1,4-N- a	
+Q8NHY2	human	Q8NHY2	COP1	Q8NHY2	76	422	E3 ubiquitin-protein ligase COP1 (EC 2.3.2.27) (Constitutive	
+Q8NHY3	human	Q8NHY3	GAS2L2	Q8NHY3	23	86	GAS2-like protein 2 (GAS2-related protein on chromosome 17) 	
+Q8NHY5	human	Q8NHY5	HUS1B	Q8NHY5	11	44	Checkpoint protein HUS1B (hHUS1B)	
+Q8NHY6	human	Q8NHY6	ZFP28	Q8NHY6	3	46	Zinc finger protein 28 homolog (Zfp-28) (Krueppel-like zinc 	
+Q8NHZ7	human	Q8NHZ7	MBD3L2	Q8NHZ7	12	65	Methyl-CpG-binding domain protein 3-like 2 (MBD3-like protei	
+Q8NHZ8	human	Q8NHZ8	CDC26	Q8NHZ8	15	209	Anaphase-promoting complex subunit CDC26 (Anaphase-promoting	
+Q8NI08	human	Q8NI08	NCOA7	Q8NI08	23	72	Nuclear receptor coactivator 7 (140 kDa estrogen receptor-as	
+Q8NI17	human	Q8NI17	IL31RA	Q8NI17	68	378	Interleukin-31 receptor subunit alpha (IL-31 receptor A) (IL	
+Q8NI22	human	Q8NI22	MCFD2	Q8NI22	12	169	Multiple coagulation factor deficiency protein 2 (Neural ste	
+Q8NI27	human	Q8NI27	THOC2	Q8NI27	33	381	THO complex subunit 2 (Tho2) (hTREX120)	
+Q8NI29	human	Q8NI29	FBXO27	Q8NI29	22	85	F-box only protein 27 (F-box/G-domain protein 5)	
+Q8NI32	human	Q8NI32	LYPD6B	Q8NI32	8	56	Ly6/PLAUR domain-containing protein 6B	
+Q8NI35	human	Q8NI35	PATJ	Q8NI35	22	110	InaD-like protein (Inadl protein) (hINADL) (Channel-interact	
+Q8NI36	human	Q8NI36	WDR36	Q8NI36	45	522	WD repeat-containing protein 36 (T-cell activation WD repeat	
+Q8NI37	human	Q8NI37	PPTC7	Q8NI37	14	103	Protein phosphatase PTC7 homolog (EC 3.1.3.16) (T-cell activ	
+Q8NI38	human	Q8NI38	NFKBID	Q8NI38	26	165	NF-kappa-B inhibitor delta (NFKB inhibitor delta) (I-kappa-B	
+Q8NI51	human	Q8NI51	CTCFL	Q8NI51	4	57	Transcriptional repressor CTCFL (Brother of the regulator of	
+Q8NI60	human	Q8NI60	COQ8A	Q8NI60	11	230	Atypical kinase COQ8A, mitochondrial (EC 2.7.-.-) (Chaperone	
+Q8NI77	human	Q8NI77	KIF18A	Q8NI77	66	387	Kinesin-like protein KIF18A (Marrow stromal KIF18A) (MS-KIF1	
+Q8NI99	human	Q8NI99	ANGPTL6	Q8NI99	8	47	Angiopoietin-related protein 6 (Angiopoietin-like protein 6)	
+Q8NIL3	schizosaccharomyces-pombe	Q8NIL3	aes1	Q8NIL3	0	1	Antisense-enhancing sequence 1	
+Q8NIQ1	schizosaccharomyces-pombe	Q8NIQ1	SPAC2F3.18c	Q8NIQ1	2	5	V-type proton ATPase subunit f	
+Q8NJN3	candida-albicans-237561	Q8NJN3	ACS2	Q8NJN3	1	4	Acetyl-coenzyme A synthetase 2	
+Q8NKC1	schizosaccharomyces-pombe	Q8NKC1	SPBPB21E7.04c	Q8NKC1	0	2	Probable catechol O-methyltransferase 2	
+Q8NKC2	schizosaccharomyces-pombe	Q8NKC2	eno102	Q8NKC2	1	12	Enolase 1-2	

@@ -1,9 +1,183 @@
-MEL1	oryza-sativa-subsp-japonica	Q851R2	MEL1	Q851R2	2	28	Protein argonaute MEL1
-MEL1	schizosaccharomyces-pombe	Q9URZ0	mel1	Q9URZ0	0	1	Alpha-galactosidase mel1
-MELA	escherichia-coli-83333	P06720	melA	P06720	0	1	Alpha-galactosidase
-MELB	escherichia-coli-83333	P02921	melB	P02921	0	1	Melibiose permease
-MELK	mus-musculus	Q61846	Melk	Q61846	1	21	Maternal embryonic leucine zipper kinase
-MELK	rattus-norvegicus	D4A6T6	Melk	D4A6T6	2	20	Maternal embryonic leucine zipper kinase
-MELR	salmonella-typhimurium	Q7CPA6	melR	Q7CPA6	0	5	Regulator of melibiose operon
-MELTF	mus-musculus	Q9R0R1	Meltf	Q9R0R1	0	3	Melanotransferrin
-MELTF	rattus-norvegicus	D4ADK7	Meltf	D4ADK7	0	14	Melanotransferrin
+MEL	fly	FBgn0290597	mel	Q9VR81	0	3	melanized	
+MEL	human	P61006	RAB8A	P61006	120	445		
+MEL-11	worm	G5ECD7	mel-11	G5ECD7	15	29	cGMP-dependent protein kinase interacting domain-containing 	
+MEL-18	human	P35227	PCGF2	P35227	89	542	Polycomb group RING finger protein 2 (DNA-binding protein Me	w
+MEL-1A-R	human	P48039	MTNR1A	P48039	20	234	Melatonin receptor type 1A (Mel-1A-R) (Mel1a receptor)	w
+MEL-1B-R	human	P49286	MTNR1B	P49286	9	194	Melatonin receptor type 1B (Mel-1B-R) (Mel1b receptor)	w
+MEL-26	worm	Q94420	mel-26	Q94420	7	66	Protein maternal effect lethal 26	
+MEL-28	human	Q8WYP5	AHCTF1	Q8WYP5	47	363	Protein ELYS (Embryonic large molecule derived from yolk sac	w
+MEL-32	worm	P50432	mel-32	P50432	1	38	Serine hydroxymethyltransferase	
+MEL-46	worm	G5ED26	mel-46	G5ED26	3	51	ATP-dependent RNA helicase	
+MEL1	human	Q9HAZ2	PRDM16	Q9HAZ2	49	282		
+MEL1	oryza-sativa-subsp-japonica	Q851R2	MEL1	Q851R2	2	28	Protein argonaute MEL1	
+MEL1	schizosaccharomyces-pombe	Q9URZ0	mel1	Q9URZ0	0	1	Alpha-galactosidase mel1	
+MEL18	human	P35227	PCGF2	P35227	89	542		
+MEL18	human	Q9BYE7	PCGF6	Q9BYE7	84	556	Polycomb group RING finger protein 6 (Mel18 and Bmi1-like RI	w
+MEL1A	human	P48039	MTNR1A	P48039	20	234	Melatonin receptor type 1A (Mel-1A-R) (Mel1a receptor)	w
+MEL1B	human	P49286	MTNR1B	P49286	9	194	Melatonin receptor type 1B (Mel-1B-R) (Mel1b receptor)	w
+MEL4B3	human	Q4ZHG4	FNDC1	Q4ZHG4	5	66		
+MELA	escherichia-coli-83333	P06720	melA	P06720	0	1	Alpha-galactosidase	
+MELAN	human	Q96MG7	NSMCE3	Q96MG7	15	119	Non-structural maintenance of chromosomes element 3 homolog 	w
+MELAN-A	human	Q16655	MLANA	Q16655	60	246	Melanoma antigen recognized by T-cells 1 (MART-1) (Antigen L	w
+MELANIN-CONC	human	P20382	PMCH	P20382	77	311	Pro-MCH [Cleaved into: Neuropeptide-glycine-glutamic acid (N	w
+MELANIN-CONCENTRATING	human	Q969V1	MCHR2	Q969V1	20	93	Melanin-concentrating hormone receptor 2 (MCH receptor 2) (M	w
+MELANIN-CONCENTRATING	human	Q96E35	ZMYND19	Q96E35	31	146	Zinc finger MYND domain-containing protein 19 (Melanin-conce	w
+MELANIN-CONCENTRATING	human	Q99705	MCHR1	Q99705	13	90	Melanin-concentrating hormone receptor 1 (MCH receptor 1) (M	w
+MELANIZATION	fly	FBgn0027930	MP1	A0A126GUP6	121	583	Melanization protease 1 (EC 3.4.21.-)	w
+MELANIZATION	fly	FBgn0037515	Sp7	Q9V3Z2	46	257	Serine protease 7 (EC 3.4.21.-) (Melanization protease 2)	w
+MELANIZED	fly	FBgn0290597	mel	Q9VR81	0	3	melanized	w
+MELANOCORTIN	human	P32245	MC4R	P32245	20	217	Melanocortin receptor 4 (MC4-R)	w
+MELANOCORTIN	human	P33032	MC5R	P33032	8	109	Melanocortin receptor 5 (MC5-R) (MC-2)	w
+MELANOCORTIN	human	P41968	MC3R	P41968	16	102	Melanocortin receptor 3 (MC3-R)	w
+MELANOCORTIN	human	Q01718	MC2R	Q01718	13	130	Adrenocorticotropic hormone receptor (ACTH receptor) (ACTH-R	w
+MELANOCORTIN	human	Q01726	MC1R	Q01726	15	105	Melanocyte-stimulating hormone receptor (MSH-R) (Melanocorti	w
+MELANOCORTIN	zebrafish	A3KGQ1	mc5ra	A3KGQ1	0	4	Melanocortin receptor 5	w
+MELANOCORTIN	zebrafish	B0V1P1	mc4r	B0V1P1	2	16	Melanocortin receptor 4	w
+MELANOCORTIN	zebrafish	F1Q9X6	mc5rb	F1Q9X6	1	4	Melanocortin receptor 5	w
+MELANOCORTIN	zebrafish	F1QQG9	mc3r	F1QQG9	2	7	Melanocortin 3 receptor	w
+MELANOCORTIN-2	human	Q8TCY5	MRAP	Q8TCY5	12	77	Melanocortin-2 receptor accessory protein (B27) (Fat cell-sp	w
+MELANOCORTIN-2	human	Q96G30	MRAP2	Q96G30	27	139	Melanocortin-2 receptor accessory protein 2 (MC2R accessory 	w
+MELANOCORTIN-2	zebrafish	F8W4H9	mrap2a	F8W4H9	0	3	Melanocortin-2 receptor accessory protein 2A	w
+MELANOCORTIN-2	zebrafish	P0DM64	mrap2b	P0DM64	0	3	Melanocortin-2 receptor accessory protein 2B	w
+MELANOCYTE	fly	FBgn0051076	CG31076	Q8IMQ4	7	90	Leucine-rich melanocyte differentiation-associated protein	w
+MELANOCYTE	human	P40967	PMEL	P40967	17	168	Melanocyte protein PMEL (ME20-M) (ME20M) (Melanocyte protein	w
+MELANOCYTE	human	Q9H2I8	LRMDA	Q9H2I8	7	179	Leucine-rich melanocyte differentiation-associated protein	w
+MELANOCYTE	zebrafish	Q501Y0	lrmda	Q501Y0	15	175	Leucine-rich melanocyte differentiation-associated protein	w
+MELANOCYTE	zebrafish	Q9PWC2	mitfa	Q9PWC2	11	34	Melanocyte inducing transcription factor a isoform 1	w
+MELANOCYTE-INDUCING	zebrafish	F1Q885	mitfb	F1Q885	18	34	Melanocyte-inducing transcription factor b	w
+MELANOCYTE-SPECIFIC	human	Q04671	OCA2	Q04671	5	168	P protein (Melanocyte-specific transporter protein) (Pink-ey	w
+MELANOCYTE-SPECIFIC	human	Q7Z3E5	ARMC9	Q7Z3E5	14	75	LisH domain-containing protein ARMC9 (Armadillo repeat-conta	w
+MELANOCYTE-SPECIFIC	human	Q99966	CITED1	Q99966	5	58	Cbp/p300-interacting transactivator 1 (Melanocyte-specific p	w
+MELANOCYTE-STIMULATING	human	A0A0B4J269	?	A0A0B4J269	10	52	Melanocyte-stimulating hormone receptor	w
+MELANOCYTE-STIMULATING	human	Q01726	MC1R	Q01726	15	105	Melanocyte-stimulating hormone receptor (MSH-R) (Melanocorti	w
+MELANOCYTE-STIMULATING	zebrafish	Q7ZTA3	mc1r	Q7ZTA3	1	19	Melanocyte-stimulating hormone receptor	w
+MELANOCYTES	human	P40967	PMEL	P40967	17	168	Melanocyte protein PMEL (ME20-M) (ME20M) (Melanocyte protein	w
+MELANOGASTER	fly	FBgn0052695	CG32695	Q9W312	35	243	Drosophila melanogaster dromepin-6 mRNA (RH68724p)	w
+MELANOMA	human	O00560	SDCBP	O00560	23	544	Syntenin-1 (Melanoma differentiation-associated protein 9) (	w
+MELANOMA	human	O14862	AIM2	O14862	15	302	Interferon-inducible protein AIM2 (Absent in melanoma 2)	w
+MELANOMA	human	P09341	CXCL1	P09341	111	761	Growth-regulated alpha protein (C-X-C motif chemokine 1) (GR	w
+MELANOMA	human	P17643	TYRP1	P17643	41	296	5,6-dihydroxyindole-2-carboxylic acid oxidase (DHICA oxidase	w
+MELANOMA	human	P38936	CDKN1A	P38936	65	565	Cyclin-dependent kinase inhibitor 1 (CDK-interacting protein	w
+MELANOMA	human	P43121	MCAM	P43121	132	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	w
+MELANOMA	human	P57729	RAB38	P57729	51	178	Ras-related protein Rab-38 (EC 3.6.5.2) (Melanoma antigen NY	w
+MELANOMA	human	P78395	PRAME	P78395	18	336	Melanoma antigen preferentially expressed in tumors (Opa-int	w
+MELANOMA	human	Q12884	FAP	Q12884	26	166	Prolyl endopeptidase FAP (EC 3.4.21.26) (170 kDa melanoma me	w
+MELANOMA	human	Q13007	IL24	Q13007	38	318	Interleukin-24 (IL-24) (Melanoma differentiation-associated 	w
+MELANOMA	human	Q13072	BAGE	Q13072	3	9	B melanoma antigen 1 (B melanoma antigen) (Antigen MZ2-BA) (	w
+MELANOMA	human	Q13084	MRPL28	Q13084	20	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+MELANOMA	human	Q16655	MLANA	Q16655	60	246	Melanoma antigen recognized by T-cells 1 (MART-1) (Antigen L	w
+MELANOMA	human	Q16674	MIA	Q16674	12	62	Melanoma-derived growth regulatory protein (Melanoma inhibit	w
+MELANOMA	human	Q5JRA6	MIA3	Q5JRA6	68	280	Transport and Golgi organization protein 1 homolog (TANGO1) 	w
+MELANOMA	human	Q5VTY9	HHAT	Q5VTY9	2	21	Protein-cysteine N-palmitoyltransferase HHAT (EC 2.3.1.-) (H	w
+MELANOMA	human	Q6UVK1	CSPG4	Q6UVK1	7	150	Chondroitin sulfate proteoglycan 4 (Chondroitin sulfate prot	w
+MELANOMA	human	Q7Z3E5	ARMC9	Q7Z3E5	14	75	LisH domain-containing protein ARMC9 (Armadillo repeat-conta	w
+MELANOMA	human	Q86Y27	BAGE5	Q86Y27	4	17	B melanoma antigen 5 (Cancer/testis antigen 2.5) (CT2.5)	w
+MELANOMA	human	Q86Y28	BAGE4	Q86Y28	3	6	B melanoma antigen 4 (Cancer/testis antigen 2.4) (CT2.4)	w
+MELANOMA	human	Q86Y29	BAGE3	Q86Y29	0	1	B melanoma antigen 3 (Cancer/testis antigen 2.3) (CT2.3)	w
+MELANOMA	human	Q86Y30	BAGE2	Q86Y30	0	3	B melanoma antigen 2 (Cancer/testis antigen 2.2) (CT2.2)	w
+MELANOMA	human	Q8N1P7	CRYBG2	Q8N1P7	2	37	Beta/gamma crystallin domain-containing protein 2 (Absent in	w
+MELANOMA	human	Q96CA5	BIRC7	Q96CA5	47	134	Baculoviral IAP repeat-containing protein 7 (EC 2.3.2.27) (K	w
+MELANOMA	human	Q96PC5	MIA2	Q96PC5	18	117	Melanoma inhibitory activity protein 2 (MIA protein 2) (CTAG	w
+MELANOMA	human	Q96TA1	NIBAN2	Q96TA1	37	380	Protein Niban 2 (Meg-3) (Melanoma invasion by ERK) (MINERVA)	w
+MELANOMA	human	Q9BPX3	NCAPG	Q9BPX3	74	317	Condensin complex subunit 3 (Chromosome-associated protein G	w
+MELANOMA	human	Q9H307	PNN	Q9H307	57	347	Pinin (140 kDa nuclear and cell adhesion-related phosphoprot	w
+MELANOMA	human	Q9NRC9	OTOR	Q9NRC9	8	61	Otoraplin (Fibrocyte-derived protein) (Melanoma inhibitory a	w
+MELANOMA	human	Q9UHD0	IL19	Q9UHD0	11	64	Interleukin-19 (IL-19) (Melanoma differentiation-associated 	w
+MELANOMA	human	Q9UMX9	SLC45A2	Q9UMX9	4	80	Membrane-associated transporter protein (Melanoma antigen AI	w
+MELANOMA-ASSOCIATED	human	A0A0J9YX57	MAGEB6B	A0A0J9YX57	5	16	Melanoma-associated antigen B6B	w
+MELANOMA-ASSOCIATED	human	A2A368	MAGEB16	A2A368	19	53	Melanoma-associated antigen B16 (MAGE-B16 antigen)	w
+MELANOMA-ASSOCIATED	human	A8MXT2	MAGEB17	A8MXT2	10	39	Melanoma-associated antigen B17	w
+MELANOMA-ASSOCIATED	human	O15479	MAGEB2	O15479	57	411	Melanoma-associated antigen B2 (Cancer/testis antigen 3.2) (	w
+MELANOMA-ASSOCIATED	human	O15480	MAGEB3	O15480	10	43	Melanoma-associated antigen B3 (MAGE-B3 antigen)	w
+MELANOMA-ASSOCIATED	human	O15481	MAGEB4	O15481	35	109	Melanoma-associated antigen B4 (MAGE-B4 antigen)	w
+MELANOMA-ASSOCIATED	human	O60732	MAGEC1	O60732	20	108	Melanoma-associated antigen C1 (Cancer/testis antigen 7.1) (	w
+MELANOMA-ASSOCIATED	human	P08582	MELTF	P08582	15	127	Melanotransferrin (Melanoma-associated antigen p97) (CD anti	w
+MELANOMA-ASSOCIATED	human	P08962	CD63	P08962	28	363	CD63 antigen (Granulophysin) (Lysosomal-associated membrane 	w
+MELANOMA-ASSOCIATED	human	P40967	PMEL	P40967	17	168	Melanocyte protein PMEL (ME20-M) (ME20M) (Melanocyte protein	w
+MELANOMA-ASSOCIATED	human	P43121	MCAM	P43121	132	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	w
+MELANOMA-ASSOCIATED	human	P43355	MAGEA1	P43355	73	256	Melanoma-associated antigen 1 (Antigen MZ2-E) (Cancer/testis	w
+MELANOMA-ASSOCIATED	human	P43356	MAGEA2	P43356	39	118	Melanoma-associated antigen 2 (Cancer/testis antigen 1.2) (C	w
+MELANOMA-ASSOCIATED	human	P43357	MAGEA3	P43357	66	237	Melanoma-associated antigen 3 (Antigen MZ2-D) (Cancer/testis	w
+MELANOMA-ASSOCIATED	human	P43358	MAGEA4	P43358	65	233	Melanoma-associated antigen 4 (Cancer/testis antigen 1.4) (C	w
+MELANOMA-ASSOCIATED	human	P43359	MAGEA5P	P43359	2	8	Putative melanoma-associated antigen 5P (Cancer/testis antig	w
+MELANOMA-ASSOCIATED	human	P43360	MAGEA6	P43360	75	202	Melanoma-associated antigen 6 (Cancer/testis antigen 1.6) (C	w
+MELANOMA-ASSOCIATED	human	P43361	MAGEA8	P43361	69	180	Melanoma-associated antigen 8 (Cancer/testis antigen 1.8) (C	w
+MELANOMA-ASSOCIATED	human	P43362	MAGEA9	P43362	87	249	Melanoma-associated antigen 9 (Cancer/testis antigen 1.9) (C	w
+MELANOMA-ASSOCIATED	human	P43363	MAGEA10	P43363	54	113	Melanoma-associated antigen 10 (Cancer/testis antigen 1.10) 	w
+MELANOMA-ASSOCIATED	human	P43364	MAGEA11	P43364	94	234	Melanoma-associated antigen 11 (Cancer/testis antigen 1.11) 	w
+MELANOMA-ASSOCIATED	human	P43365	MAGEA12	P43365	36	105	Melanoma-associated antigen 12 (Cancer/testis antigen 1.12) 	w
+MELANOMA-ASSOCIATED	human	P43366	MAGEB1	P43366	8	41	Melanoma-associated antigen B1 (Cancer/testis antigen 3.1) (	w
+MELANOMA-ASSOCIATED	human	Q13084	MRPL28	Q13084	20	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+MELANOMA-ASSOCIATED	human	Q15742	NAB2	Q15742	103	506	NGFI-A-binding protein 2 (EGR-1-binding protein 2) (Melanoma	w
+MELANOMA-ASSOCIATED	human	Q2TAK8	PWWP3A	Q2TAK8	15	159	PWWP domain-containing DNA repair factor 3A (PWWP3A) (Mutate	w
+MELANOMA-ASSOCIATED	human	Q5H9M0	PWWP3B	Q5H9M0	9	133	PWWP domain-containing DNA repair factor 3B (PWWP3B) (Mutate	w
+MELANOMA-ASSOCIATED	human	Q6UVK1	CSPG4	Q6UVK1	7	150	Chondroitin sulfate proteoglycan 4 (Chondroitin sulfate prot	w
+MELANOMA-ASSOCIATED	human	Q8IZM8	ZNF654	Q8IZM8	3	9	Zinc finger protein 654 (Melanoma-associated antigen)	w
+MELANOMA-ASSOCIATED	human	Q8N7X4	MAGEB6	Q8N7X4	8	38	Melanoma-associated antigen B6 (Cancer/testis antigen 3.4) (	w
+MELANOMA-ASSOCIATED	human	Q8TD90	MAGEE2	Q8TD90	7	48	Melanoma-associated antigen E2 (Hepatocellular carcinoma-ass	w
+MELANOMA-ASSOCIATED	human	Q8TD91	MAGEC3	Q8TD91	6	42	Melanoma-associated antigen C3 (Cancer/testis antigen 7.2) (	w
+MELANOMA-ASSOCIATED	human	Q92626	PXDN	Q92626	36	426	Peroxidasin homolog (EC 1.11.2.-) (Melanoma-associated antig	w
+MELANOMA-ASSOCIATED	human	Q96JG8	MAGED4	Q96JG8	15	53	Melanoma-associated antigen D4 (MAGE-D4 antigen) (MAGE-E1 an	w
+MELANOMA-ASSOCIATED	human	Q96LZ2	MAGEB10	Q96LZ2	32	104	Melanoma-associated antigen B10 (MAGE-B10 antigen)	w
+MELANOMA-ASSOCIATED	human	Q96M61	MAGEB18	Q96M61	14	55	Melanoma-associated antigen B18 (MAGE-B18 antigen)	w
+MELANOMA-ASSOCIATED	human	Q96T75	DSCR8	Q96T75	3	14	Down syndrome critical region protein 8 (Cancer/testis antig	w
+MELANOMA-ASSOCIATED	human	Q9BZ81	MAGEB5	Q9BZ81	12	39	Melanoma-associated antigen B5 (Cancer/testis antigen 3.3) (	w
+MELANOMA-ASSOCIATED	human	Q9H213	MAGEH1	Q9H213	24	100	Melanoma-associated antigen H1 (Apoptosis-related protein 1)	w
+MELANOMA-ASSOCIATED	human	Q9HAY2	MAGEF1	Q9HAY2	10	71	Melanoma-associated antigen F1 (MAGE-F1) (MAGE-F1 antigen)	w
+MELANOMA-ASSOCIATED	human	Q9HCI5	MAGEE1	Q9HCI5	6	65	Melanoma-associated antigen E1 (Alpha-dystrobrevin-associate	w
+MELANOMA-ASSOCIATED	human	Q9UBF1	MAGEC2	Q9UBF1	39	132	Melanoma-associated antigen C2 (Cancer/testis antigen 10) (C	w
+MELANOMA-ASSOCIATED	human	Q9UNF1	MAGED2	Q9UNF1	48	258	Melanoma-associated antigen D2 (11B6) (Breast cancer-associa	w
+MELANOMA-ASSOCIATED	human	Q9Y5V3	MAGED1	Q9Y5V3	53	372	Melanoma-associated antigen D1 (MAGE tumor antigen CCF) (MAG	w
+MELANOMA-DERIVED	human	P15018	LIF	P15018	47	306	Leukemia inhibitory factor (LIF) (Differentiation-stimulatin	w
+MELANOMA-DERIVED	human	Q16674	MIA	Q16674	12	62	Melanoma-derived growth regulatory protein (Melanoma inhibit	w
+MELANOMA-DERIVED	human	Q9BYG8	GSDMC	Q9BYG8	1	38	Gasdermin-C (Melanoma-derived leucine zipper-containing extr	w
+MELANOPHILIN	human	Q9BV36	MLPH	Q9BV36	21	55	Melanophilin (Exophilin-3) (Slp homolog lacking C2 domains a	w
+MELANOPSIN	human	Q9UHM6	OPN4	Q9UHM6	9	98	Melanopsin (Opsin-4)	w
+MELANOPSIN	zebrafish	F1QZ18	opn4xa	F1QZ18	1	4	Melanopsin opn4x1	w
+MELANOPSIN-A	zebrafish	Q2KNE5	opn4a	Q2KNE5	3	4	Melanopsin-A	w
+MELANOPSIN-LIKE	zebrafish	Q1JPS6	opn4l	Q1JPS6	0	4	Melanopsin-like	w
+MELANOREGULIN	human	Q8N565	MREG	Q8N565	20	144	Melanoregulin (Dilute suppressor protein homolog)	w
+MELANOREGULIN	zebrafish	Q6GQM0	mreg	Q6GQM0	0	2	Melanoregulin	w
+MELANOTRANSFERRIN	fly	FBgn0036299	Tsf2	Q9VTZ5	12	263	Transferrin 2 (Melanotransferrin)	w
+MELANOTRANSFERRIN	human	P08582	MELTF	P08582	15	127	Melanotransferrin (Melanoma-associated antigen p97) (CD anti	w
+MELANOTROPIN	human	P01189	POMC	P01189	29	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w
+MELASTATIN-1	human	Q7Z4N2	TRPM1	Q7Z4N2	25	159	Transient receptor potential cation channel subfamily M memb	w
+MELASTATIN-2	human	Q9HCF6	TRPM3	Q9HCF6	30	216	Transient receptor potential cation channel subfamily M memb	w
+MELASTATIN-RELATED	human	Q9BX84	TRPM6	Q9BX84	17	169	Transient receptor potential cation channel subfamily M memb	w
+MELATONIN	human	P48039	MTNR1A	P48039	20	234	Melatonin receptor type 1A (Mel-1A-R) (Mel1a receptor)	w
+MELATONIN	human	P49286	MTNR1B	P49286	9	194	Melatonin receptor type 1B (Mel-1B-R) (Mel1b receptor)	w
+MELATONIN	worm	O17899	pcdr-1	O17899	0	25	Melatonin receptor pdcr-1	w
+MELATONIN	zebrafish	F1QHL7	mtnr1ab	F1QHL7	0	6	Melatonin receptor 1A b	w
+MELATONIN	zebrafish	P51046	mtnr1aa	P51046	0	7	Melatonin receptor type 1A-A	w
+MELATONIN	zebrafish	P51049	mtnr1bb	P51049	0	7	Melatonin receptor type 1B-B	w
+MELATONIN	zebrafish	P51052	mtnr1c	P51052	0	6	Melatonin receptor type 1C	w
+MELATONIN-RELATED	human	Q13585	GPR50	Q13585	14	118	Melatonin-related receptor (G protein-coupled receptor 50) (	w
+MELB	escherichia-coli-83333	P02921	melB	P02921	0	1	Melibiose permease	
+MELIBIASE	human	P06280	GLA	P06280	7	105	Alpha-galactosidase A (EC 3.2.1.22) (Alpha-D-galactosidase A	w
+MELK	human	Q14680	MELK	Q14680	180	1353	Maternal embryonic leucine zipper kinase (hMELK) (EC 2.7.11.	
+MELK	mus-musculus	Q61846	Melk	Q61846	1	21	Maternal embryonic leucine zipper kinase	
+MELK	rattus-norvegicus	D4A6T6	Melk	D4A6T6	2	20	Maternal embryonic leucine zipper kinase	
+MELK	worm	U4PR86	pig-1	U4PR86	9	64	Maternal embryonic leucine zipper kinase (MELK) (EC 2.7.11.1	w
+MELK	zebrafish	F1QGZ6	melk	F1QGZ6	1	24	Maternal embryonic leucine zipper kinase	
+MELK_CAEEL	worm	U4PR86	pig-1	U4PR86	9	64		
+MELK_HUMAN	human	Q14680	MELK	Q14680	180	1353		
+MELL1	human	Q495T6	MMEL1	Q495T6	17	56		
+MELO	fly	FBgn0034382	mElo	Q6NN18	3	78	Elongation of very long chain fatty acids protein (EC 2.3.1.	
+MELO-1	worm	Q9U202	melo-1	Q9U202	0	8	RRM domain-containing protein	
+MELO-2	worm	H2KYW0	melo-2	H2KYW0	0	2	C3H1-type domain-containing protein	
+MELPH_HUMAN	human	Q9BV36	MLPH	Q9BV36	21	55		
+MELR	salmonella-typhimurium	Q7CPA6	melR	Q7CPA6	0	5	Regulator of melibiose operon	
+MELT	fly	FBgn0023001	melt	Q9VS24	4	19	Protein melted	
+MELTED	fly	FBgn0023001	melt	Q9VS24	4	19	Protein melted	w
+MELTED	human	Q14D04	VEPH1	Q14D04	5	59	Ventricular zone-expressed PH domain-containing protein homo	w
+MELTF	human	P08582	MELTF	P08582	15	127	Melanotransferrin (Melanoma-associated antigen p97) (CD anti	
+MELTF	mus-musculus	Q9R0R1	Meltf	Q9R0R1	0	3	Melanotransferrin	
+MELTF	rattus-norvegicus	D4ADK7	Meltf	D4ADK7	0	14	Melanotransferrin	
+MELTF	zebrafish	E7F2E3	meltf	E7F2E3	0	22	Serotransferrin	
+MELTRIN	fly	FBgn0265140	Meltrin	Q6QU65	2	37	ADAM metalloprotease (Meltrin, isoform C (EC 3.4.24.-))	w
+MELTRIN	fly	FBgn0265140	Meltrin	Q6QU65	2	37	ADAM metalloprotease (Meltrin, isoform C (EC 3.4.24.-))	w
+MELTRIN-ALPHA	human	O43184	ADAM12	O43184	25	165	Disintegrin and metalloproteinase domain-containing protein 	w
+MELTRIN-BETA	human	Q9H013	ADAM19	Q9H013	22	91	Disintegrin and metalloproteinase domain-containing protein 	w
+MELTRIN-GAMMA	human	Q13443	ADAM9	Q13443	29	219	Disintegrin and metalloproteinase domain-containing protein 	w
+MELT_HUMAN	human	Q14D04	VEPH1	Q14D04	5	59		
+MELUSIN	human	Q9UKP3	ITGB1BP2	Q9UKP3	4	44	Integrin beta-1-binding protein 2 (Melusin)	w

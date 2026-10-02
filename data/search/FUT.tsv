@@ -1,26 +1,74 @@
-FUT1	arabidopsis-thaliana	Q9SWH5	FUT1	Q9SWH5	1	19	Galactoside 2-alpha-L-fucosyltransferase
-FUT1	mus-musculus	O09160	Fut1	O09160	0	2	Galactoside alpha-(1,2)-fucosyltransferase 1
-FUT1	rattus-norvegicus	Q10980	Fut1	Q10980	0	4	Galactoside alpha-(1,2)-fucosyltransferase 1
-FUT10	arabidopsis-thaliana	Q9SJP6	FUT10	Q9SJP6	1	16	Putative fucosyltransferase 10
-FUT11	arabidopsis-thaliana	Q9LJK1	FUT11	Q9LJK1	0	2	Glycoprotein 3-alpha-L-fucosyltransferase A
-FUT11	mus-musculus	Q8BHC9	Fut11	Q8BHC9	0	12	GDP-fucose protein O-fucosyltransferase 4
-FUT12	arabidopsis-thaliana	Q9FX97	FUT12	Q9FX97	0	3	Putative fucosyltransferase-like protein
-FUT13	arabidopsis-thaliana	Q9C8W3	FUT13	Q9C8W3	0	1	Alpha-(1,4)-fucosyltransferase
-FUT2	arabidopsis-thaliana	O81053	FUT2	O81053	2	13	Fucosyltransferase 2
-FUT2	mus-musculus	Q9JL27	Fut2	Q9JL27	0	5	Galactoside alpha-(1,2)-fucosyltransferase 2
-FUT2	rattus-norvegicus	Q10984	Fut2	Q10984	0	9	Galactoside alpha-(1,2)-fucosyltransferase 2
-FUT3	arabidopsis-thaliana	Q9CA71	FUT3	Q9CA71	1	13	Fucosyltransferase 3
-FUT4	arabidopsis-thaliana	Q9SJP2	FUT4	Q9SJP2	0	13	Probable fucosyltransferase 4
-FUT4	mus-musculus	Q11127	Fut4	Q11127	2	12	Alpha-(1,3)-fucosyltransferase 4
-FUT4	rattus-norvegicus	Q62994	Fut4	Q62994	3	16	Alpha-(1,3)-fucosyltransferase 4
-FUT5	arabidopsis-thaliana	Q9SJP4	FUT5	Q9SJP4	1	13	Probable fucosyltransferase 5
-FUT6	arabidopsis-thaliana	Q9XI80	FUT6	Q9XI80	0	13	Fucosyltransferase 6
-FUT7	arabidopsis-thaliana	Q9XI81	FUT7	Q9XI81	0	14	Probable fucosyltransferase 7
-FUT7	mus-musculus	Q11131	Fut7	Q11131	0	4	Alpha-(1,3)-fucosyltransferase 7
-FUT7	rattus-norvegicus	Q712G6	Fut7	Q712G6	0	8	Alpha-(1,3)-fucosyltransferase 7
-FUT8	arabidopsis-thaliana	Q9XI78	FUT8	Q9XI78	0	13	Probable fucosyltransferase 8
-FUT8	mus-musculus	Q9WTS2	Fut8	Q9WTS2	0	7	Alpha-(1,6)-fucosyltransferase
-FUT8	rattus-norvegicus	Q6EV76	Fut8	Q6EV76	0	6	Alpha-(1,6)-fucosyltransferase
-FUT9	arabidopsis-thaliana	Q9XI77	FUT9	Q9XI77	1	13	Probable fucosyltransferase 9
-FUT9	mus-musculus	O88819	Fut9	O88819	0	4	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase 9
-FUT9	rattus-norvegicus	Q99JB3	Fut9	Q99JB3	1	10	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase 9
+FUT-3	worm	G5EFP5	fut-3	G5EFP5	0	3	Alpha-(1,3)-fucosyltransferase fut-3	w
+FUT-3	worm	G5EFP5	fut-3	G5EFP5	0	3	Alpha-(1,3)-fucosyltransferase fut-3	w
+FUT-8	worm	G5EFE7	fut-8	G5EFE7	0	1	Alpha-(1,6)-fucosyltransferase	
+FUT1	arabidopsis-thaliana	Q9SWH5	FUT1	Q9SWH5	1	19	Galactoside 2-alpha-L-fucosyltransferase	
+FUT1	human	P19526	FUT1	P19526	16	89	Galactoside alpha-(1,2)-fucosyltransferase 1 (Alpha(1,2)FT 1	
+FUT1	mus-musculus	O09160	Fut1	O09160	0	2	Galactoside alpha-(1,2)-fucosyltransferase 1	
+FUT1	rattus-norvegicus	Q10980	Fut1	Q10980	0	4	Galactoside alpha-(1,2)-fucosyltransferase 1	
+FUT10	arabidopsis-thaliana	Q9SJP6	FUT10	Q9SJP6	1	16	Putative fucosyltransferase 10	
+FUT10	human	Q6P4F1	POFUT3	Q6P4F1	2	55		
+FUT10	zebrafish	Q5F2N3	fut10	Q5F2N3	0	2	GDP-fucose protein O-fucosyltransferase 3	
+FUT10_HUMAN	human	Q6P4F1	POFUT3	Q6P4F1	2	55		
+FUT11	arabidopsis-thaliana	Q9LJK1	FUT11	Q9LJK1	0	2	Glycoprotein 3-alpha-L-fucosyltransferase A	
+FUT11	human	Q495W5	POFUT4	Q495W5	5	137		
+FUT11	mus-musculus	Q8BHC9	Fut11	Q8BHC9	0	12	GDP-fucose protein O-fucosyltransferase 4	
+FUT11	zebrafish	Q08C60	fut11	Q08C60	0	2	GDP-fucose protein O-fucosyltransferase 4	
+FUT11_HUMAN	human	Q495W5	POFUT4	Q495W5	5	137		
+FUT12	arabidopsis-thaliana	Q9FX97	FUT12	Q9FX97	0	3	Putative fucosyltransferase-like protein	
+FUT12	human	Q9H488	POFUT1	Q9H488	1	95		
+FUT13	arabidopsis-thaliana	Q9C8W3	FUT13	Q9C8W3	0	1	Alpha-(1,4)-fucosyltransferase	
+FUT13	human	Q9Y2G5	POFUT2	Q9Y2G5	2	48		
+FUT1_HUMAN	human	P19526	FUT1	P19526	16	89		
+FUT2	arabidopsis-thaliana	O81053	FUT2	O81053	2	13	Fucosyltransferase 2	
+FUT2	human	Q10981	FUT2	Q10981	22	135	Galactoside alpha-(1,2)-fucosyltransferase 2 (Alpha(1,2)FT 2	
+FUT2	mus-musculus	Q9JL27	Fut2	Q9JL27	0	5	Galactoside alpha-(1,2)-fucosyltransferase 2	
+FUT2	rattus-norvegicus	Q10984	Fut2	Q10984	0	9	Galactoside alpha-(1,2)-fucosyltransferase 2	
+FUT2_HUMAN	human	Q10981	FUT2	Q10981	22	135		
+FUT3	arabidopsis-thaliana	Q9CA71	FUT3	Q9CA71	1	13	Fucosyltransferase 3	
+FUT3	human	P21217	FUT3	P21217	12	55	3-galactosyl-N-acetylglucosaminide 4-alpha-L-fucosyltransfer	
+FUT3_HUMAN	human	P21217	FUT3	P21217	12	55		
+FUT4	arabidopsis-thaliana	Q9SJP2	FUT4	Q9SJP2	0	13	Probable fucosyltransferase 4	
+FUT4	human	P22083	FUT4	P22083	19	130	Alpha-(1,3)-fucosyltransferase 4 (4-galactosyl-N-acetylgluco	
+FUT4	mus-musculus	Q11127	Fut4	Q11127	2	12	Alpha-(1,3)-fucosyltransferase 4	
+FUT4	rattus-norvegicus	Q62994	Fut4	Q62994	3	16	Alpha-(1,3)-fucosyltransferase 4	
+FUT4_HUMAN	human	P22083	FUT4	P22083	19	130		
+FUT5	arabidopsis-thaliana	Q9SJP4	FUT5	Q9SJP4	1	13	Probable fucosyltransferase 5	
+FUT5	human	Q11128	FUT5	Q11128	11	46	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransfer	
+FUT5_HUMAN	human	Q11128	FUT5	Q11128	11	46		
+FUT6	arabidopsis-thaliana	Q9XI80	FUT6	Q9XI80	0	13	Fucosyltransferase 6	
+FUT6	fly	FBgn0030327	Fut6	Q9VYV5	104	2384	Alpha-(1,6)-fucosyltransferase (Alpha1-6FucT) (EC 2.4.1.68) 	
+FUT6	human	P51993	FUT6	P51993	9	34	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransfer	
+FUT6_HUMAN	human	P51993	FUT6	P51993	9	34		
+FUT7	arabidopsis-thaliana	Q9XI81	FUT7	Q9XI81	0	14	Probable fucosyltransferase 7	
+FUT7	human	Q11130	FUT7	Q11130	4	51	Alpha-(1,3)-fucosyltransferase 7 (EC 2.4.1.-) (Fucosyltransf	
+FUT7	mus-musculus	Q11131	Fut7	Q11131	0	4	Alpha-(1,3)-fucosyltransferase 7	
+FUT7	rattus-norvegicus	Q712G6	Fut7	Q712G6	0	8	Alpha-(1,3)-fucosyltransferase 7	
+FUT7	zebrafish	Q32WF4	fut7	Q32WF4	0	2	Fucosyltransferase	
+FUT7_HUMAN	human	Q11130	FUT7	Q11130	4	51		
+FUT8	arabidopsis-thaliana	Q9XI78	FUT8	Q9XI78	0	13	Probable fucosyltransferase 8	
+FUT8	human	Q9BYC5	FUT8	Q9BYC5	14	206	Alpha-(1,6)-fucosyltransferase (Alpha1-6FucT) (EC 2.4.1.68) 	
+FUT8	mus-musculus	Q9WTS2	Fut8	Q9WTS2	0	7	Alpha-(1,6)-fucosyltransferase	
+FUT8	rattus-norvegicus	Q6EV76	Fut8	Q6EV76	0	6	Alpha-(1,6)-fucosyltransferase	
+FUT8A	zebrafish	F1QW63	fut8a	F1QW63	1	2	Alpha-(1,6)-fucosyltransferase	
+FUT8B	zebrafish	E7FDF1	fut8b	E7FDF1	1	2	Alpha-(1,6)-fucosyltransferase	
+FUT8_HUMAN	human	Q9BYC5	FUT8	Q9BYC5	14	206		
+FUT9	arabidopsis-thaliana	Q9XI77	FUT9	Q9XI77	1	13	Probable fucosyltransferase 9	
+FUT9	human	Q9Y231	FUT9	Q9Y231	11	41	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransfer	
+FUT9	mus-musculus	O88819	Fut9	O88819	0	4	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransfer	
+FUT9	rattus-norvegicus	Q99JB3	Fut9	Q99JB3	1	10	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransfer	
+FUT9A	zebrafish	B3DGK8	fut9a	B3DGK8	0	2	Fucosyltransferase	
+FUT9B.1	zebrafish	A0A8M1N337	fut9b.1	A0A8M1N337	0	2	Fucosyltransferase	
+FUT9B.2	zebrafish	A0A8M1NEG9	fut9b.2	A0A8M1NEG9	0	2	Fucosyltransferase	
+FUT9B.3	zebrafish	F1Q797	fut9b.3	F1Q797	0	2	Fucosyltransferase	
+FUT9B.5	zebrafish	A0A8M1NDU4	fut9b.5	A0A8M1NDU4	0	2	Fucosyltransferase	
+FUT9B.6	zebrafish	A0A0R4IWR0	fut9b.6	A0A0R4IWR0	0	2	Fucosyltransferase	
+FUT9D	zebrafish	Q2VU44	fut9d	Q2VU44	0	2	Fucosyltransferase	
+FUT9_HUMAN	human	Q9Y231	FUT9	Q9Y231	11	41		
+FUTA	fly	FBgn0036485	FutA	Q9VUL9	191	2375	Glycoprotein 3-alpha-L-fucosyltransferase A (EC 2.4.1.214) (	
+FUTB	fly	FBgn0032117	FutB	Q9VLC1	446	2378	Alpha-(1,3)-fucosyltransferase B (EC 2.4.1.-) (Galactoside 3	
+FUTC	fly	FBgn0044872	FutC	P83088	276	2375	Alpha-(1,3)-fucosyltransferase C (EC 2.4.1.-) (Galactoside 3	
+FUTD	fly	FBgn0035217	FutD	Q9W0F6	334	2387	Fucosyltransferase (EC 2.4.1.-)	
+FUTSCH	fly	FBgn0259108	futsch	Q9W596	0	2	Microtubule-associated protein futsch (MAP1B homolog) [Cleav	w
+FUTSCH	fly	FBgn0259108	futsch	Q9W596	0	2	Microtubule-associated protein futsch (MAP1B homolog) [Cleav	w
+FUTSCH	worm	A9UJN7	maph-1.2	A9UJN7	0	11	Microtubule-associated protein futsch	w
+FUTSCH	worm	Q18494	maph-1.3	Q18494	0	10	Microtubule-associated protein futsch	w

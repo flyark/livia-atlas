@@ -1,4 +1,514 @@
-FACA	cladophialophora-carrionii	A0A1C1C6Y9	facA	A0A1C1C6Y9	0	4	Acetyl-coenzyme A synthetase
-FACE1	arabidopsis-thaliana	Q8RX88	FACE1	Q8RX88	1	1	CAAX prenyl protease 1 homolog
-FACE2	arabidopsis-thaliana	Q8GW19	FACE2	Q8GW19	2	9	CAAX prenyl protease 2
-FACT	arabidopsis-thaliana	Q9FFQ7	FACT	Q9FFQ7	2	19	Fatty alcohol:caffeoyl-CoA acyltransferase
+FAC	human	Q00597	FANCC	Q00597	38	173		
+FAC-A	worm	G5ECX4	CELE_W06G6.21	G5ECX4	0	10	Rep_fac-A_C domain-containing protein	w
+FAC1	human	Q12830	BPTF	Q12830	25	254		
+FACA	cladophialophora-carrionii	A0A1C1C6Y9	facA	A0A1C1C6Y9	0	4	Acetyl-coenzyme A synthetase	
+FACA	human	O15360	FANCA	O15360	18	212		
+FACB	human	Q8NB91	FANCB	Q8NB91	26	255	Fanconi anemia group B protein (Protein FACB) (Fanconi anemi	w
+FACC	human	Q00597	FANCC	Q00597	38	173		
+FACC1_HUMAN	human	Q96Q35	FLACC1	Q96Q35	6	49		
+FACD	human	P51587	BRCA2	P51587	9	117		
+FACD	human	Q9BXW9	FANCD2	Q9BXW9	54	749		
+FACD2	fly	FBgn0038827	Fancd2	Q8MYL1	152	1152	Fanconi anemia group D2 protein homolog (Protein FACD2)	w
+FACD2	human	Q9BXW9	FANCD2	Q9BXW9	54	749	Fanconi anemia group D2 protein (Protein FACD2)	w
+FACD2_HUMAN	human	Q9BXW9	FANCD2	Q9BXW9	54	749		
+FACE	human	Q9H5J4	ELOVL6	Q9H5J4	5	57		
+FACE	human	Q9HB96	FANCE	Q9HB96	27	565		
+FACE-1	human	O75844	ZMPSTE24	O75844	2	172	CAAX prenyl protease 1 homolog (EC 3.4.24.84) (Farnesylated 	w
+FACE-2	fly	FBgn0029121	Sras	Q9U1H8	3	26	CAAX prenyl protease 2 (EC 3.4.-.-) (Farnesylated proteins-c	w
+FACE-2	human	Q9Y256	RCE1	Q9Y256	13	95	CAAX prenyl protease 2 (EC 3.4.26.1) (Farnesylated proteins-	w
+FACE1	arabidopsis-thaliana	Q8RX88	FACE1	Q8RX88	1	1	CAAX prenyl protease 1 homolog	
+FACE1	human	O75844	ZMPSTE24	O75844	2	172		
+FACE1_HUMAN	human	O75844	ZMPSTE24	O75844	2	172		
+FACE2	arabidopsis-thaliana	Q8GW19	FACE2	Q8GW19	2	9	CAAX prenyl protease 2	
+FACE2	human	Q9Y256	RCE1	Q9Y256	13	95		
+FACE2_HUMAN	human	Q9Y256	RCE1	Q9Y256	13	95		
+FACETS	fly	FBgn0005632	faf	P55824	0	19	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
+FACETS	fly	FBgn0028582	lqf	Q9VS85	17	84	FI19443p1 (Liquid facets, isoform A) (Liquid facets, isoform	w
+FACETS	fly	FBgn0259676	Prim2	Q9VPH2	5	35	DNA primase large subunit (DNA polymerase subunit beta) (Sup	w
+FACETS	human	O00507	USP9Y	O00507	7	67	Ubiquitin carboxyl-terminal hydrolase 9Y (EC 3.4.19.12) (Deu	w
+FACETS	human	Q93008	USP9X	Q93008	20	334	Ubiquitin carboxyl-terminal hydrolase 9X (EC 3.4.19.12) (Deu	w
+FACETS-RELATED	fly	FBgn0261279	lqfR	Q8IN05	7	75	Liquid facets-Related, isoform D	w
+FACF	human	Q9NPI8	FANCF	Q9NPI8	14	88	Fanconi anemia group F protein (Protein FACF)	w
+FACG	human	O15287	FANCG	O15287	64	283	Fanconi anemia group G protein (Protein FACG) (DNA repair pr	w
+FACI	fly	FBgn0033354	FANCI	A1Z7L1	5	42	Fanconi anemia group I protein homolog (Protein FACI)	w
+FACI	human	Q9NVI1	FANCI	Q9NVI1	22	302	Fanconi anemia group I protein (Protein FACI)	w
+FACILITATED	fly	FBgn0033644	Tret1l	Q8MKK4	6	62	Facilitated trehalose transporter Tret1-2 homolog (DmTret1-2	w
+FACILITATED	fly	FBgn0050035	Tret1	A1Z8N1	8	145	Facilitated trehalose transporter Tret1-1 (DmTret1-1)	w
+FACILITATED	human	O95528	SLC2A10	O95528	2	111	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	P11166	SLC2A1	P11166	45	642	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	P11168	SLC2A2	P11168	4	96	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	P11169	SLC2A3	P11169	6	250	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	P14672	SLC2A4	P14672	7	198	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	P22732	SLC2A5	P22732	2	112	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	Q6PXP3	SLC2A7	Q6PXP3	0	34	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	Q8TD20	SLC2A12	Q8TD20	3	153	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	Q8TDB8	SLC2A14	Q8TDB8	1	76	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	Q9BYW1	SLC2A11	Q9BYW1	3	25	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	Q9NRM0	SLC2A9	Q9NRM0	1	98	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	Q9NY64	SLC2A8	Q9NY64	8	157	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	human	Q9UGQ3	SLC2A6	Q9UGQ3	9	136	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	worm	O44616	R09B5.11	O44616	2	21	Facilitated glucose transporter homolog	w
+FACILITATED	worm	O44827	fgt-1	O44827	0	23	Facilitated glucose transporter protein 1	w
+FACILITATED	zebrafish	A0AB13A7N6	slc2a5	A0AB13A7N6	0	1	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	zebrafish	F1QYH9	LOC100334818	F1QYH9	0	3	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	zebrafish	F1R0H0	slc2a10	F1R0H0	2	106	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	zebrafish	F1RB41	slc2a6	F1RB41	1	106	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATED	zebrafish	Q285P3	slc2a1a	Q285P3	0	5	Facilitated glucose transporter 1	w
+FACILITATED	zebrafish	Q6NWF1	slc2a12	Q6NWF1	3	106	Solute carrier family 2, facilitated glucose transporter mem	w
+FACILITATES	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+FACILITATES	human	Q08945	SSRP1	Q08945	107	789	FACT complex subunit SSRP1 (Chromatin-specific transcription	w
+FACILITATES	human	Q9Y5B9	SUPT16H	Q9Y5B9	70	651	FACT complex subunit SPT16 (Chromatin-specific transcription	w
+FACILITATOR	fly	FBgn0010651	MFS14	Q8MRP7	1	5	GH07529p (Major facilitator superfamily transporter 14, isof	w
+FACILITATOR	fly	FBgn0025684	MFS18	Q9VQZ7	1	4	Major facilitator superfamily transporter 18 (SD06977p)	w
+FACILITATOR	fly	FBgn0029727	CG6978	Q9W4G7	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0030331	CG15221	Q9VYV0	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0030452	MFS10	Q9VYG7	0	4	FI19708p1 (Major facilitator superfamily transporter 10, iso	w
+FACILITATOR	fly	FBgn0031307	MFS3	Q9VPX2	0	5	Major facilitator superfamily transporter 3 (RE01809p)	w
+FACILITATOR	fly	FBgn0031523	CG15408	Q9VQP2	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0031636	CG12194	E1JHT4	0	4	Major facilitator superfamily domain-containing protein 1	w
+FACILITATOR	fly	FBgn0033234	MFS12	Q8MS66	0	2	LP07366p (Major facilitator superfamily transporter 12, isof	w
+FACILITATOR	fly	FBgn0034392	MFS15	A1ZBD9	0	4	FI23731p1 (Major facilitator superfamily transporter 15, iso	w
+FACILITATOR	fly	FBgn0034611	MFS16	Q8MLW5	0	6	Major facilitator superfamily transporter 16, isoform B (RE2	w
+FACILITATOR	fly	FBgn0034785	CG3649	Q9W1Y9	1	4	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0035645	CG5592	Q9VRQ8	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0035763	mrva	Q9VS47	0	23	Major facilitator superfamily domain-containing protein 1	w
+FACILITATOR	fly	FBgn0037003	CG18281	Q9VPE0	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0037004	CG17637	Q9VPD9	0	4	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0037005	CG5078	Q9VPD8	0	9	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038053	CG18549	Q9VG64	0	2	UNC93-like protein MFSD11 (Major facilitator superfamily dom	w
+FACILITATOR	fly	FBgn0038099	CG7091	Q9VG14	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038260	CG14855	Q9VFG2	0	5	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038262	CG14857	Q9VFG0	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038414	CG6901	Q9VEW9	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038415	CG17929	Q9VEW8	1	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038715	CG7333	Q9VDW0	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038717	CG17751	Q9VDV8	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0038799	VGlut2	Q7K2N3	0	3	GH23975p (Major facilitator superfamily transporter 9, isofo	w
+FACILITATOR	fly	FBgn0042126	CG18788	Q9I7N1	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0050272	MFS1	Q8MMD6	0	2	Major facilitator superfamily transporter 1	w
+FACILITATOR	fly	FBgn0051103	CG31103	Q9VBV9	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0052054	CG32054	Q8IQE0	1	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0053282	CG33282	Q9VQP0	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0058263	MFS17	Q494G7	0	2	Major facilitator superfamily transporter 17, isoform F (Maj	w
+FACILITATOR	fly	FBgn0259164	CG42269	Q9VRT4	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	fly	FBgn0262008	CG42826	M9MS27	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	human	A6NFX1	MFSD2B	A6NFX1	1	64	Sphingosine-1-phosphate transporter MFSD2B (Major facilitato	w
+FACILITATOR	human	H7C1H1	?	H7C1H1	3	3	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	human	O43934	MFSD11	O43934	3	42	UNC93-like protein MFSD11 (Major facilitator superfamily dom	w
+FACILITATOR	human	Q14728	SLC75A1	Q14728	3	92	Solute carrier family 75 member 1 (Major facilitator superfa	w
+FACILITATOR	human	Q14CX5	SLC68A1	Q14CX5	2	41	Solute carrier family 68 member 1 (Major facilitator superfa	w
+FACILITATOR	human	Q5SR56	SLC71A2	Q5SR56	4	108	Solute carrier family 71 member 2 (Hippocampus abundant tran	w
+FACILITATOR	human	Q5TF39	SLC60A2	Q5TF39	5	72	Solute carrier family 60 member 2 (Major facilitator superfa	w
+FACILITATOR	human	Q5VZR4	SLC71A3P	Q5VZR4	1	19	Putative solute carrier family 71 member 3 (Hippocampus abun	w
+FACILITATOR	human	Q6N075	SLC61A1	Q6N075	5	136	Solute carrier family 61 member 1 (Major facilitator superfa	w
+FACILITATOR	human	Q6NUT3	MFSD12	Q6NUT3	4	66	Major facilitator superfamily domain-containing protein 12	w
+FACILITATOR	human	Q6UXD7	SLC49A3	Q6UXD7	4	29	Solute carrier family 49 member A3 (Major facilitator superf	w
+FACILITATOR	human	Q6ZSS7	MFSD6	Q6ZSS7	5	60	Major facilitator superfamily domain-containing protein 6 (M	w
+FACILITATOR	human	Q8IWD5	MFSD6L	Q8IWD5	3	32	Major facilitator superfamily domain-containing protein 6-li	w
+FACILITATOR	human	Q8N468	SLC60A1	Q8N468	8	247	Solute carrier family 60 member 1 (Major facilitator superfa	w
+FACILITATOR	human	Q8NA29	MFSD2A	Q8NA29	7	170	Sodium-dependent lysophosphatidylcholine symporter 1 (NLS1) 	w
+FACILITATOR	human	Q8NBP5	SLC67A2	Q8NBP5	0	31	Solute carrier family 67 member A2 (Major facilitator superf	w
+FACILITATOR	human	Q8NHS3	MFSD8	Q8NHS3	5	103	Major facilitator superfamily domain-containing protein 8 (C	w
+FACILITATOR	human	Q96ES6	SLC33A2	Q96ES6	7	208	Solute carrier family 33 member 2 (Major facilitator superfa	w
+FACILITATOR	human	Q96MC6	SLC71A1	Q96MC6	0	45	Solute carrier family 71 member 1 (Hippocampus abundant tran	w
+FACILITATOR	human	Q9BZR8	BCL2L14	Q9BZR8	16	150	Apoptosis facilitator Bcl-2-like protein 14 (Bcl2-L-14) (Apo	w
+FACILITATOR	human	Q9H3U5	MFSD1	Q9H3U5	4	111	Lysosomal dipeptide transporter MFSD1 (Major facilitator sup	w
+FACILITATOR	worm	A0A3B1DV80	spin-4	A0A3B1DV80	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	C0RSI9	C42C1.19	C0RSI9	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	D1MN75	mfsc-1	D1MN75	0	4	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	G4S3P8	str-176	G4S3P8	0	16	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	G5EC93	fdgt-2	G5EC93	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	G5EDB5	C01B4.8	G5EDB5	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	G5EDU0	oat-1	G5EDU0	0	16	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	G5EEI9	CELE_K11D9.3	G5EEI9	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	G5EEK1	vglu-2	G5EEK1	0	17	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	G5EGL6	CELE_F45E10.2	G5EGL6	0	6	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	H2FLL7	CELE_T10C6.6	H2FLL7	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	L8E6P0	CELE_F14D7.6	L8E6P0	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	O01927	spin-1	O01927	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	O16547	C35A11.4	O16547	2	27	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	O17328	mct-6	O17328	0	4	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	O45920	CELE_Y37A1A.3	O45920	1	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	O62511	mfsd-8.1	O62511	0	14	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	P91993	CELE_F32H5.4	P91993	0	16	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q09479	C18D1.2	Q09479	0	4	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q09617	CELE_ZK892.3	Q09617	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q18613	C44C10.3	Q18613	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q19376	CELE_F13B12.2	Q19376	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q20523	CELE_F47B8.10	Q20523	0	11	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q20734	CELE_F53H8.3	Q20734	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q21381	CELE_K09C4.5	Q21381	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q21382	CELE_K09C4.4	Q21382	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q21385	CELE_K09C4.1	Q21385	1	25	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q22189	CELE_T05A1.5	Q22189	0	8	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q22406	CELE_T11G6.4	Q22406	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q22410	CELE_T11G6.3	Q22410	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q22686	CELE_T22F7.1	Q22686	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q23012	CELE_K11G9.5	Q23012	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q23535	slcf-2	Q23535	1	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q23626	CELE_ZK829.9	Q23626	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q4PIX1	CELE_F23F12.13	Q4PIX1	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q5WRR9	CELE_F11D5.7	Q5WRR9	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q8I4F6	slc-17.4	Q8I4F6	0	7	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q93896	mct-3	Q93896	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q94305	CELE_T22F3.8	Q94305	0	28	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q95QY6	C03B1.13	Q95QY6	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q95Y88	mfsd-6	Q95Y88	0	1	Major facilitator superfamily associated domain-containing p	w
+FACILITATOR	worm	Q9BKR9	CELE_Y82E9BR.16	Q9BKR9	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9GNP0	cat-1	Q9GNP0	0	27	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9GPA2	CELE_F48E3.2	Q9GPA2	0	23	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9N309	CELE_Y61A9LA.1	Q9N309	1	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9N3G2	mfsd-8.3	Q9N3G2	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9NEI8	CELE_Y39B6A.41	Q9NEI8	2	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9U2K5	CELE_Y39E4B.5	Q9U2K5	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9U3A4	CELE_M162.5	Q9U3A4	0	12	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9XU83	CELE_K08H10.6	Q9XU83	1	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9XVK0	CELE_R10D12.1	Q9XVK0	0	1	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9XVL3	CELE_K08F9.1	Q9XVL3	0	21	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9XXC1	CELE_Y51B9A.6	Q9XXC1	0	2	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	worm	Q9XXQ4	CELE_Y51A2D.18	Q9XXQ4	1	16	Major facilitator superfamily (MFS) profile domain-containin	w
+FACILITATOR	yeast	O13577	DIF1	O13577	2	8	Damage-regulated import facilitator 1	w
+FACILITATOR	yeast	P23900	FPS1	P23900	3	28	Glycerol uptake/efflux facilitator protein	w
+FACILITATOR	yeast	P25351	YCR023C	P25351	0	6	Major facilitator superfamily domain-containing protein YCR0	w
+FACILITATOR	yeast	Q04433	FIT1	Q04433	0	5	Facilitator of iron transport 1	w
+FACILITATOR	yeast	Q08906	FIT2	Q08906	0	4	Facilitator of iron transport 2	w
+FACILITATOR	yeast	Q08907	FIT3	Q08907	0	8	Facilitator of iron transport 3	w
+FACILITATOR	zebrafish	E7EYP8	LOC101885512	E7EYP8	1	25	Apoptosis facilitator Bcl-2-like protein 14	w
+FACILITATOR	zebrafish	F1QX01	mfsd8l2	F1QX01	0	3	Major facilitator superfamily domain-containing protein 8	w
+FACILITATOR	zebrafish	Q0VA82	mfsd8	Q0VA82	0	3	Major facilitator superfamily domain-containing protein 8	w
+FACILITATOR	zebrafish	Q7SXB7	mfsd4a	Q7SXB7	0	7	Major facilitator superfamily domain-containing protein 4A	w
+FACIOGENITAL	human	P98174	FGD1	P98174	22	113	FYVE, RhoGEF and PH domain-containing protein 1 (Faciogenita	w
+FACL1	human	P33121	ACSL1	P33121	2	185		
+FACL2	human	P33121	ACSL1	P33121	2	185		
+FACL3	human	O95573	ACSL3	O95573	5	320		
+FACL4	human	O60488	ACSL4	O60488	4	220		
+FACL5	human	Q9ULC5	ACSL5	Q9ULC5	3	152		
+FACL6	human	Q9UKU0	ACSL6	Q9UKU0	2	213		
+FACM	fly	FBgn0038889	Fancm	Q9VDA0	3	64	DEAD-box ATP-dependent DNA helicase Fancm (EC 5.6.2.4) (Fanc	w
+FACM	human	Q8IYD8	FANCM	Q8IYD8	22	212	Fanconi anemia group M protein (Protein FACM) (EC 3.6.4.13) 	w
+FACOS_HUMAN	human	Q96PS1	FANCD2OS	Q96PS1	7	66		
+FACR1_HUMAN	human	Q8WVX9	FAR1	Q8WVX9	11	121		
+FACR2_HUMAN	human	Q96K12	FAR2	Q96K12	3	66		
+FACT	arabidopsis-thaliana	Q9FFQ7	FACT	Q9FFQ7	2	19	Fatty alcohol:caffeoyl-CoA acyltransferase	
+FACT	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+FACT	human	O00358	FOXE1	O00358	70	464	Forkhead box protein E1 (Forkhead box protein E2) (Forkhead-	w
+FACT	human	P11717	IGF2R	P11717	16	264	Cation-independent mannose-6-phosphate receptor (CI Man-6-P 	w
+FACT	human	Q08945	SSRP1	Q08945	107	789	FACT complex subunit SSRP1 (Chromatin-specific transcription	w
+FACT	human	Q9Y2Y9	KLF13	Q9Y2Y9	56	384	Krueppel-like factor 13 (Basic transcription element-binding	w
+FACT	human	Q9Y5B9	SUPT16H	Q9Y5B9	70	651	FACT complex subunit SPT16 (Chromatin-specific transcription	w
+FACT	worm	O01683	hmg-3	O01683	15	151	FACT complex subunit ssrp1-B	w
+FACT	worm	P41848	hmg-4	P41848	9	110	FACT complex subunit SSRP1-A	w
+FACT	worm	Q9N5R9	spt-16	Q9N5R9	16	119	FACT complex subunit spt-16	w
+FACT	yeast	P32558	SPT16	P32558	14	324	FACT complex subunit SPT16	w
+FACT	yeast	Q04636	POB3	Q04636	12	136	FACT complex subunit POB3	w
+FACT	zebrafish	A5A4L9	supt16h	A5A4L9	11	218	FACT complex subunit	w
+FACT	zebrafish	F1QEB4	ssrp1a	F1QEB4	20	187	FACT complex subunit SSRP1	w
+FACT	zebrafish	F6NLJ7	ssrp1b	F6NLJ7	18	186	FACT complex subunit SSRP1	w
+FACT140	human	Q9Y5B9	SUPT16H	Q9Y5B9	70	651		
+FACT80	human	Q08945	SSRP1	Q08945	107	789		
+FACTO	human	O43809	NUDT21	O43809	36	353	Cleavage and polyadenylation specificity factor subunit 5 (C	w
+FACTO	human	P36956	SREBF1	P36956	35	227	Sterol regulatory element-binding protein 1 (SREBP-1) (Class	w
+FACTO	human	Q03052	POU3F1	Q03052	133	369	POU domain, class 3, transcription factor 1 (Octamer-binding	w
+FACTO	human	Q12772	SREBF2	Q12772	55	363	Sterol regulatory element-binding protein 2 (SREBP-2) (Class	w
+FACTO	human	Q16630	CPSF6	Q16630	92	467	Cleavage and polyadenylation specificity factor subunit 6 (C	w
+FACTO	human	Q8IZX4	TAF1L	Q8IZX4	23	148	Transcription initiation factor TFIID subunit 1-like (TAF(II	w
+FACTO	human	Q8N684	CPSF7	Q8N684	69	338	Cleavage and polyadenylation specificity factor subunit 7 (C	w
+FACTO	human	Q92831	KAT2B	Q92831	67	579	Histone acetyltransferase KAT2B (EC 2.3.1.48) (Histone acety	w
+FACTO	human	Q9BY44	EIF2A	Q9BY44	17	222	Eukaryotic translation initiation factor 2A (eIF-2A) (65 kDa	w
+FACTOR-1	fly	FBgn0030054	Caf1-180	Q9W3D1	9	65	Chromatin assembly factor 1, p180 subunit (Chromatin assembl	w
+FACTOR-1	fly	FBgn0040305	MTF-1	A8JNP3	45	354	Metal response element-binding transcription Factor-1, isofo	w
+FACTOR-1	human	P56270	MAZ	P56270	7	107	Myc-associated zinc finger protein (MAZI) (Pur-1) (Purine-bi	w
+FACTOR-1	zebrafish	A0A2R8QBT6	msc	A0A2R8QBT6	1	1	Musculin (activated B-cell factor-1)	w
+FACTOR-2	fly	FBgn0031888	Pvf2	Q9VM43	29	263	PDGF- and VEGF-related factor 2 (PDGF/VEGF factor-2) (RH4021	w
+FACTOR-2	fly	FBgn0265193	Atf-2	Q2PE13	81	438	Activating transcription factor-2	w
+FACTOR-ALPHA	human	Q12950	FOXD4	Q12950	78	425	Forkhead box protein D4 (Forkhead-related protein FKHL9) (Fo	w
+FACTOR-ALPHA	human	Q99732	LITAF	Q99732	48	429	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+FACTOR-ALPHA	zebrafish	B8A4H0	si:ch211-202h22.8	B8A4H0	0	9	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+FACTOR-ALPHA	zebrafish	Q6GMG8	litaf	Q6GMG8	1	13	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+FACTOR-ASSOCIATED	human	O14981	BTAF1	O14981	10	279	TATA-binding protein-associated factor 172 (EC 3.6.4.-) (ATP	w
+FACTOR-ASSOCIATED	human	O75529	TAF5L	O75529	71	513	TAF5-like RNA polymerase II p300/CBP-associated factor-assoc	w
+FACTOR-ASSOCIATED	human	Q8TEU8	WFIKKN2	Q8TEU8	24	114	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing	w
+FACTOR-ASSOCIATED	human	Q96NZ8	WFIKKN1	Q96NZ8	22	96	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing	w
+FACTOR-ASSOCIATED	human	Q9UHB7	AFF4	Q9UHB7	81	248	AF4/FMR2 family member 4 (ALL1-fused gene from chromosome 5q	w
+FACTOR-ASSOCIATED	human	Q9Y6J9	TAF6L	Q9Y6J9	39	257	TAF6-like RNA polymerase II p300/CBP-associated factor-assoc	w
+FACTOR-ASSOCIATED	zebrafish	A0AB32U277	taf5l	A0AB32U277	25	293	TAF5-like RNA polymerase II p300/CBP-associated factor-assoc	w
+FACTOR-ASSOCIATED	zebrafish	E7FEV1	taf6l	E7FEV1	23	133	TAF6-like RNA polymerase II p300/CBP-associated factor-assoc	w
+FACTOR-BETA	human	H3BV60	TGFBR3L	H3BV60	12	77	Transforming growth factor-beta receptor type 3-like protein	w
+FACTOR-BETA	human	P37173	TGFBR2	P37173	364	1663	TGF-beta receptor type-2 (TGFR-2) (EC 2.7.11.30) (TGF-beta t	w
+FACTOR-BETA	human	Q8WUH2	TGFBRAP1	Q8WUH2	33	127	Transforming growth factor-beta receptor-associated protein 	w
+FACTOR-BETA	zebrafish	A0A8M6YTA3	si:ch211-266g18.9	A0A8M6YTA3	15	37	Transforming growth factor-beta receptor-associated protein 	w
+FACTOR-BETA	zebrafish	A4IG72	tgfbrap1	A4IG72	16	38	Transforming growth factor-beta receptor-associated protein 	w
+FACTOR-BETA-ACTIVATED	human	O43318	MAP3K7	O43318	488	1751	Mitogen-activated protein kinase kinase kinase 7 (EC 2.7.11.	w
+FACTOR-BETA-INDUCED	human	Q15582	TGFBI	Q15582	32	444	Transforming growth factor-beta-induced protein ig-h3 (Beta 	w
+FACTOR-BETA-INDUCIBLE	human	O14901	KLF11	O14901	99	385	Krueppel-like factor 11 (Transforming growth factor-beta-ind	w
+FACTOR-BETA-INDUCIBLE	human	Q13118	KLF10	Q13118	107	413	Krueppel-like factor 10 (EGR-alpha) (Transforming growth fac	w
+FACTOR-BINDING	fly	FBgn0052055	CG32055	Q9VT89	24	246	Insulin-like growth factor-binding protein complex acid labi	w
+FACTOR-BINDING	human	C9JCN9	HSBP1L1	C9JCN9	13	52	Heat shock factor-binding protein 1-like protein 1	w
+FACTOR-BINDING	human	O00622	CCN1	O00622	28	229	CCN family member 1 (Cellular communication network factor 1	w
+FACTOR-BINDING	human	O75506	HSBP1	O75506	26	105	Heat shock factor-binding protein 1 (Nasopharyngeal carcinom	w
+FACTOR-BINDING	human	P08833	IGFBP1	P08833	14	198	Insulin-like growth factor-binding protein 1 (IBP-1) (IGF-bi	w
+FACTOR-BINDING	human	P17936	IGFBP3	P17936	65	331	Insulin-like growth factor-binding protein 3 (IBP-3) (IGF-bi	w
+FACTOR-BINDING	human	P18065	IGFBP2	P18065	37	211	Insulin-like growth factor-binding protein 2 (IBP-2) (IGF-bi	w
+FACTOR-BINDING	human	P22692	IGFBP4	P22692	34	231	Insulin-like growth factor-binding protein 4 (IBP-4) (IGF-bi	w
+FACTOR-BINDING	human	P24387	CRHBP	P24387	7	46	Corticotropin-releasing hormone-binding protein (CRH-BP) (Co	w
+FACTOR-BINDING	human	P24592	IGFBP6	P24592	22	191	Insulin-like growth factor-binding protein 6 (IBP-6) (IGF-bi	w
+FACTOR-BINDING	human	P24593	IGFBP5	P24593	57	397	Insulin-like growth factor-binding protein 5 (IBP-5) (IGF-bi	w
+FACTOR-BINDING	human	P35858	IGFALS	P35858	17	252	Insulin-like growth factor-binding protein complex acid labi	w
+FACTOR-BINDING	human	P48745	CCN3	P48745	11	137	CCN family member 3 (Cellular communication network factor 3	w
+FACTOR-BINDING	human	Q14512	FGFBP1	Q14512	17	295	Fibroblast growth factor-binding protein 1 (FGF-BP) (FGF-BP1	w
+FACTOR-BINDING	human	Q16270	IGFBP7	Q16270	21	275	Insulin-like growth factor-binding protein 7 (IBP-7) (IGF-bi	w
+FACTOR-BINDING	human	Q86XT9	TMEM219	Q86XT9	1	61	Insulin-like growth factor-binding protein 3 receptor (IGFBP	w
+FACTOR-BINDING	human	Q8NEF9	SRFBP1	Q8NEF9	47	255	Serum response factor-binding protein 1 (SRF-dependent trans	w
+FACTOR-BINDING	human	Q8TAT2	FGFBP3	Q8TAT2	2	33	Fibroblast growth factor-binding protein 3 (FGF-BP3) (FGF-bi	w
+FACTOR-BINDING	human	Q8WX77	IGFBPL1	Q8WX77	7	58	Insulin-like growth factor-binding protein-like 1 (IGFBP-rel	w
+FACTOR-BINDING	human	Q9BYJ0	FGFBP2	Q9BYJ0	5	41	Fibroblast growth factor-binding protein 2 (FGF-BP2) (FGF-bi	w
+FACTOR-BINDING	human	Q9NS37	CREBZF	Q9NS37	17	51	CREB/ATF bZIP transcription factor (Host cell factor-binding	w
+FACTOR-BINDING	human	Q9NZ52	GGA3	Q9NZ52	48	158	ADP-ribosylation factor-binding protein GGA3 (Golgi-localize	w
+FACTOR-BINDING	human	Q9UJY4	GGA2	Q9UJY4	38	121	ADP-ribosylation factor-binding protein GGA2 (Gamma-adaptin-	w
+FACTOR-BINDING	human	Q9UJY5	GGA1	Q9UJY5	40	149	ADP-ribosylation factor-binding protein GGA1 (Gamma-adaptin-	w
+FACTOR-BINDING	worm	G5EFM7	CELE_F18C12.3	G5EFM7	5	79	Serum response factor-binding protein 1	w
+FACTOR-BINDING	worm	Q23165	apt-9	Q23165	2	12	ADP-ribosylation factor-binding protein GGA1	w
+FACTOR-BINDING	worm	Q9U3B7	hsb-1	Q9U3B7	3	8	Heat shock factor-binding protein 1	w
+FACTOR-BINDING	yeast	P38817	GGA2	P38817	9	37	ADP-ribosylation factor-binding protein GGA2	w
+FACTOR-BINDING	yeast	Q06336	GGA1	Q06336	3	10	ADP-ribosylation factor-binding protein GGA1	w
+FACTOR-BINDING	zebrafish	A0A0R4ISY9	gga3b	A0A0R4ISY9	28	44	ADP-ribosylation factor-binding protein GGA3 isoform X1	w
+FACTOR-BINDING	zebrafish	A0A2R8QEJ6	gga1	A0A2R8QEJ6	11	34	ADP-ribosylation factor-binding protein GGA1	w
+FACTOR-BINDING	zebrafish	A0A8M1NCV9	gga3a	A0A8M1NCV9	25	55	ADP-ribosylation factor-binding protein GGA3a	w
+FACTOR-BINDING	zebrafish	A0A8M1PIC1	igfbp7	A0A8M1PIC1	0	21	Insulin-like growth factor-binding protein 7 precursor	w
+FACTOR-BINDING	zebrafish	A0A8M9PPG4	fgfbp3	A0A8M9PPG4	0	4	Fibroblast growth factor-binding protein 1	w
+FACTOR-BINDING	zebrafish	A0A8M9Q0I5	fgfbp1b	A0A8M9Q0I5	0	3	Fibroblast growth factor-binding protein 1	w
+FACTOR-BINDING	zebrafish	A0AB40E5I1	igfbp6a	A0AB40E5I1	2	6	Insulin-like growth factor-binding protein 6a precursor	w
+FACTOR-BINDING	zebrafish	A4K8J2	igfbp1b	A4K8J2	2	19	Insulin-like growth factor-binding protein 1	w
+FACTOR-BINDING	zebrafish	A5PLA3	igfbp5a	A5PLA3	2	15	Insulin-like growth factor-binding protein 5	w
+FACTOR-BINDING	zebrafish	B0S525	igfbp5b	B0S525	3	4	Insulin-like growth factor-binding protein 5	w
+FACTOR-BINDING	zebrafish	E9QJJ1	igfals	E9QJJ1	1	31	Insulin-like growth factor-binding protein complex acid labi	w
+FACTOR-BINDING	zebrafish	F6N9E8	igfbp6b	F6N9E8	2	6	Insulin-like growth factor-binding protein 6	w
+FACTOR-BINDING	zebrafish	Q5BJ18	hsbp1a	Q5BJ18	2	3	Heat shock factor-binding protein 1	w
+FACTOR-BINDING	zebrafish	Q66I28	igfbp3	Q66I28	8	46	Insulin-like growth factor-binding protein 3	w
+FACTOR-BINDING	zebrafish	Q6DG79	crhbp	Q6DG79	2	4	Corticotropin-releasing factor-binding protein	w
+FACTOR-BINDING	zebrafish	Q6DI30	srfbp1	Q6DI30	16	141	Serum response factor-binding protein 1	w
+FACTOR-BINDING	zebrafish	Q6PBV8	hsbp1b	Q6PBV8	2	4	Heat shock factor-binding protein 1	w
+FACTOR-BINDING	zebrafish	Q8JHX6	igfbp1a	Q8JHX6	3	6	Insulin-like growth factor-binding protein 1	w
+FACTOR-BINDING	zebrafish	Q9PTH3	igfbp2a	Q9PTH3	5	19	Insulin-like growth factor-binding protein 2-A	w
+FACTOR-BINDING-RELATED	human	Q8WX77	IGFBPL1	Q8WX77	7	58	Insulin-like growth factor-binding protein-like 1 (IGFBP-rel	w
+FACTOR-CLEAVING	human	Q76LX8	ADAMTS13	Q76LX8	19	104	A disintegrin and metalloproteinase with thrombospondin moti	w
+FACTOR-DEPENDENT	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	w
+FACTOR-GAMMA	human	Q8WXT5	FOXD4L4	Q8WXT5	68	341	Forkhead box protein D4-like 4 (FOXD4-like 4) (Forkhead box 	w
+FACTOR-INDEPENDENT	zebrafish	E7FBX7	gfi1b	E7FBX7	0	6	Growth factor-independent 1B transcription repressor	w
+FACTOR-INDUCED	human	P18146	EGR1	P18146	105	607	Early growth response protein 1 (EGR-1) (AT225) (Nerve growt	w
+FACTOR-INDUCED	yeast	P38224	FIG1	P38224	0	4	Factor-induced gene 1 protein	w
+FACTOR-INDUCIBLE	human	O00458	IFRD1	O00458	15	217	Interferon-related developmental regulator 1 (Nerve growth f	w
+FACTOR-INDUCIBLE	human	P06703	S100A6	P06703	67	831	Protein S100-A6 (Calcyclin) (Growth factor-inducible protein	w
+FACTOR-INDUCIBLE	human	P26651	ZFP36	P26651	28	241	mRNA decay activator protein ZFP36 (G0/G1 switch regulatory 	w
+FACTOR-INDUCIBLE	human	P98066	TNFAIP6	P98066	15	187	Tumor necrosis factor-inducible gene 6 protein (EC 3.1.1.-) 	w
+FACTOR-INDUCIBLE	human	Q9NP84	TNFRSF12A	Q9NP84	51	267	Tumor necrosis factor receptor superfamily member 12A (Fibro	w
+FACTOR-INDUCIBLE	zebrafish	B0UY56	tnfaip6	B0UY56	1	32	Tumor necrosis factor-inducible gene 6 protein	w
+FACTOR-INTERACTING	human	P53365	ARFIP2	P53365	22	151	Arfaptin-2 (ADP-ribosylation factor-interacting protein 2) (	w
+FACTOR-INTERACTING	human	P53367	ARFIP1	P53367	30	213	Arfaptin-1 (ADP-ribosylation factor-interacting protein 1)	w
+FACTOR-INTERACTING	human	Q96AQ6	PBXIP1	Q96AQ6	44	227	Pre-B-cell leukemia transcription factor-interacting protein	w
+FACTOR-INTERACTING	zebrafish	Q567G5	arfip2b	Q567G5	3	10	ADP-ribosylation factor-interacting protein 2b	w
+FACTOR-INTERACTING	zebrafish	Q5XIZ7	arfip2a	Q5XIZ7	2	10	ADP-ribosylation factor-interacting protein 2a	w
+FACTOR-INTERACTING	zebrafish	Q7SYK6	arfip1	Q7SYK6	2	10	ADP-ribosylation factor-interacting protein 1 (arfaptin 1)	w
+FACTOR-LI	human	Q49AM1	MTERF2	Q49AM1	9	119	Transcription termination factor 2, mitochondrial (Mitochond	w
+FACTOR-LIKE	fly	FBgn0000115	Arl1	P25160	8	61	ADP-ribosylation factor-like protein 1	w
+FACTOR-LIKE	fly	FBgn0000715	FMRFa	P10552	16	250	FMRFamide-related peptides [Cleaved into: FMRFamide A; Corti	w
+FACTOR-LIKE	fly	FBgn0003984	vn	Q94918	59	310	Protein vein (Epidermal growth factor-like protein) (Protein	w
+FACTOR-LIKE	fly	FBgn0004908	Arl2	Q06849	11	80	ADP-ribosylation factor-like protein 2	w
+FACTOR-LIKE	fly	FBgn0030748	Traf-like	Q8IR14	13	177	RE66324p (TNF-receptor-associated factor-like, isoform A)	w
+FACTOR-LIKE	fly	FBgn0031281	Saf6	Q9VPT4	13	65	LD32410p (SAGA factor-like TAF6, isoform A)	w
+FACTOR-LIKE	fly	FBgn0034446	Arl6	A1ZBK9	4	30	ADP-ribosylation factor-like protein 6	w
+FACTOR-LIKE	fly	FBgn0034641	mahj	Q9W2F2	4	15	Protein mahjong (DDB1- and CUL4-associated factor-like 1) (V	w
+FACTOR-LIKE	fly	FBgn0035866	Arl5	Q9VSG8	5	35	ADP-ribosylation factor-like 5 (LD31204p)	w
+FACTOR-LIKE	fly	FBgn0037551	Arl8	Q9VHV5	15	167	ADP-ribosylation factor-like protein 8 (Novel small G protei	w
+FACTOR-LIKE	fly	FBgn0037622	CG8202	Q9VHM2	4	8	VPS35 endosomal protein sorting factor-like	w
+FACTOR-LIKE	fly	FBgn0038453	Arl6IP1	Q9VES1	6	309	ADP-ribosylation factor-like protein 6-interacting protein 1	w
+FACTOR-LIKE	fly	FBgn0039149	CG18428	Q9VCD4	3	21	ADP-ribosylation factor-like protein 6-interacting protein 4	w
+FACTOR-LIKE	fly	FBgn0039889	Arl4	H9XVM3	6	29	ADP ribosylation factor-like 4, isoform B	w
+FACTOR-LIKE	human	A0A1W2PQ73	ERFL	A0A1W2PQ73	35	330	ETS domain-containing transcription factor ERF-like (ETS rep	w
+FACTOR-LIKE	human	A6BM72	MEGF11	A6BM72	5	21	Multiple epidermal growth factor-like domains protein 11 (Mu	w
+FACTOR-LIKE	human	A6H8Y1	BDP1	A6H8Y1	103	876	Transcription factor TFIIIB component B'' homolog (Transcrip	w
+FACTOR-LIKE	human	A6NH57	ARL5C	A6NH57	8	58	Putative ADP-ribosylation factor-like protein 5C (ADP-ribosy	w
+FACTOR-LIKE	human	E7EWW0	VPS35L	E7EWW0	4	29	VPS35 endosomal protein-sorting factor-like	w
+FACTOR-LIKE	human	O75093	SLIT1	O75093	25	172	Slit homolog 1 protein (Slit-1) (Multiple epidermal growth f	w
+FACTOR-LIKE	human	O75094	SLIT3	O75094	23	170	Slit homolog 3 protein (Slit-3) (Multiple epidermal growth f	w
+FACTOR-LIKE	human	O75095	MEGF6	O75095	4	33	Multiple epidermal growth factor-like domains protein 6 (Mul	w
+FACTOR-LIKE	human	O75096	LRP4	O75096	7	166	Low-density lipoprotein receptor-related protein 4 (LRP-4) (	w
+FACTOR-LIKE	human	O75915	ARL6IP5	O75915	12	243	PRA1 family protein 3 (ADP-ribosylation factor-like protein 	w
+FACTOR-LIKE	human	O76076	CCN5	O76076	17	101	CCN family member 5 (Connective tissue growth factor-like pr	w
+FACTOR-LIKE	human	P13385	CRIPTO	P13385	13	98	Protein Cripto (Cripto, EGF-CFC family member) (Cripto-1 gro	w
+FACTOR-LIKE	human	P26927	MST1	P26927	13	211	Hepatocyte growth factor-like protein (Macrophage stimulator	w
+FACTOR-LIKE	human	P36404	ARL2	P36404	32	203	ADP-ribosylation factor-like protein 2	w
+FACTOR-LIKE	human	P36405	ARL3	P36405	64	456	ADP-ribosylation factor-like protein 3	w
+FACTOR-LIKE	human	P36980	CFHR2	P36980	9	79	Complement factor H-related protein 2 (FHR-2) (DDESK59) (H f	w
+FACTOR-LIKE	human	P40616	ARL1	P40616	97	582	ADP-ribosylation factor-like protein 1	w
+FACTOR-LIKE	human	P40617	ARL4A	P40617	17	104	ADP-ribosylation factor-like protein 4A	w
+FACTOR-LIKE	human	P49703	ARL4D	P49703	23	196	ADP-ribosylation factor-like protein 4D (ADP-ribosylation fa	w
+FACTOR-LIKE	human	P51864	CRIPTO3	P51864	16	110	Protein CRIPTO3 (Cripto, EGF-CFC family member 3) (Cripto-3 	w
+FACTOR-LIKE	human	P56559	ARL4C	P56559	43	283	ADP-ribosylation factor-like protein 4C (ADP-ribosylation fa	w
+FACTOR-LIKE	human	Q02078	MEF2A	Q02078	93	471	Myocyte-specific enhancer factor 2A (Serum response factor-l	w
+FACTOR-LIKE	human	Q02080	MEF2B	Q02080	32	370	Myocyte-specific enhancer factor 2B (RSRFR2) (Serum response	w
+FACTOR-LIKE	human	Q02985	CFHR3	Q02985	8	73	Complement factor H-related protein 3 (FHR-3) (DOWN16) (H fa	w
+FACTOR-LIKE	human	Q03591	CFHR1	Q03591	33	273	Complement factor H-related protein 1 (FHR-1) (H factor-like	w
+FACTOR-LIKE	human	Q0P5N6	ARL16	Q0P5N6	20	131	ADP-ribosylation factor-like protein 16	w
+FACTOR-LIKE	human	Q15014	MORF4L2	Q15014	77	549	Mortality factor 4-like protein 2 (MORF-related gene X prote	w
+FACTOR-LIKE	human	Q15041	ARL6IP1	Q15041	11	514	ADP-ribosylation factor-like protein 6-interacting protein 1	w
+FACTOR-LIKE	human	Q15906	VPS72	Q15906	132	571	Vacuolar protein sorting-associated protein 72 homolog (Prot	w
+FACTOR-LIKE	human	Q2TV78	MST1L	Q2TV78	0	1	Putative macrophage stimulating 1-like protein (Brain rescue	w
+FACTOR-LIKE	human	Q3SXY8	ARL13B	Q3SXY8	53	359	ADP-ribosylation factor-like protein 13B (ADP-ribosylation f	w
+FACTOR-LIKE	human	Q56NI9	ESCO2	Q56NI9	23	177	N-acetyltransferase ESCO2 (EC 2.3.1.-) (Establishment factor	w
+FACTOR-LIKE	human	Q5FWF5	ESCO1	Q5FWF5	18	102	N-acetyltransferase ESCO1 (EC 2.3.1.-) (CTF7 homolog 1) (Est	w
+FACTOR-LIKE	human	Q5H913	ARL13A	Q5H913	10	30	ADP-ribosylation factor-like protein 13A (ARF-like GTPase 13	w
+FACTOR-LIKE	human	Q5T1H1	EYS	Q5T1H1	1	4	Protein eyes shut homolog (Epidermal growth factor-like prot	w
+FACTOR-LIKE	human	Q5TGJ6	HDGFL1	Q5TGJ6	9	76	Hepatoma-derived growth factor-like protein 1 (PWWP domain-c	w
+FACTOR-LIKE	human	Q5VY43	PEAR1	Q5VY43	8	51	Platelet endothelial aggregation receptor 1 (hPEAR1) (Multip	w
+FACTOR-LIKE	human	Q66PJ3	ARL6IP4	Q66PJ3	13	132	ADP-ribosylation factor-like protein 6-interacting protein 4	w
+FACTOR-LIKE	human	Q6B9Z1	IGFL4	Q6B9Z1	5	41	Insulin growth factor-like family member 4	w
+FACTOR-LIKE	human	Q6T311	ARL9	Q6T311	13	107	ADP-ribosylation factor-like protein 9	w
+FACTOR-LIKE	human	Q6UW32	IGFL1	Q6UW32	11	54	Insulin growth factor-like family member 1	w
+FACTOR-LIKE	human	Q6UWQ7	IGFL2	Q6UWQ7	7	47	Insulin growth factor-like family member 2	w
+FACTOR-LIKE	human	Q6UXB1	IGFL3	Q6UXB1	10	94	Insulin growth factor-like family member 3	w
+FACTOR-LIKE	human	Q6UY11	DLK2	Q6UY11	32	117	Protein delta homolog 2 (DLK-2) (Epidermal growth factor-lik	w
+FACTOR-LIKE	human	Q7Z2Z2	EFL1	Q7Z2Z2	10	360	Elongation factor-like GTPase 1 (EC 3.6.5.-) (Elongation fac	w
+FACTOR-LIKE	human	Q7Z3J2	VPS35L	Q7Z3J2	6	80	VPS35 endosomal protein-sorting factor-like (Esophageal canc	w
+FACTOR-LIKE	human	Q7Z7M0	MEGF8	Q7Z7M0	7	53	Multiple epidermal growth factor-like domains protein 8 (Mul	w
+FACTOR-LIKE	human	Q8IUX8	EGFL6	Q8IUX8	12	65	Epidermal growth factor-like protein 6 (EGF-like protein 6) 	w
+FACTOR-LIKE	human	Q8IVW1	ARL17A	Q8IVW1	4	30	Putative ADP-ribosylation factor-like protein 17A	w
+FACTOR-LIKE	human	Q8N4G2	ARL14	Q8N4G2	30	190	ADP-ribosylation factor-like protein 14 (ADP-ribosylation fa	w
+FACTOR-LIKE	human	Q8N6S5	ARL6IP6	Q8N6S5	10	94	ADP-ribosylation factor-like protein 6-interacting protein 6	w
+FACTOR-LIKE	human	Q8N8L6	ARL10	Q8N8L6	46	248	ADP-ribosylation factor-like protein 10	w
+FACTOR-LIKE	human	Q8NHH9	ATL2	Q8NHH9	3	114	Atlastin-2 (ATL-2) (EC 3.6.5.-) (ADP-ribosylation factor-lik	w
+FACTOR-LIKE	human	Q8TDY4	ASAP3	Q8TDY4	41	172	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	w
+FACTOR-LIKE	human	Q8WW43	APH1B	Q8WW43	7	35	Gamma-secretase subunit APH-1B (APH-1b) (Aph-1beta) (Preseni	w
+FACTOR-LIKE	human	Q8WWR9	PPDPFL	Q8WWR9	13	50	Pancreatic progenitor cell differentiation and proliferation	w
+FACTOR-LIKE	human	Q969Q4	ARL11	Q969Q4	15	124	ADP-ribosylation factor-like protein 11 (ADP-ribosylation fa	w
+FACTOR-LIKE	human	Q96BM9	ARL8A	Q96BM9	83	334	ADP-ribosylation factor-like protein 8A (ADP-ribosylation fa	w
+FACTOR-LIKE	human	Q96I51	RCC1L	Q96I51	14	177	RCC1-like G exchanging factor-like protein (RCC1-like protei	w
+FACTOR-LIKE	human	Q96KC2	ARL5B	Q96KC2	47	308	ADP-ribosylation factor-like protein 5B (ADP-ribosylation fa	w
+FACTOR-LIKE	human	Q96KG7	MEGF10	Q96KG7	9	46	Multiple epidermal growth factor-like domains protein 10 (Mu	w
+FACTOR-LIKE	human	Q96LU7	MYRFL	Q96LU7	3	8	Myelin regulatory factor-like protein	w
+FACTOR-LIKE	human	Q96NN9	AIFM3	Q96NN9	8	81	Apoptosis-inducing factor 3 (EC 1.-.-.-) (Apoptosis-inducing	w
+FACTOR-LIKE	human	Q99944	EGFL8	Q99944	27	115	Epidermal growth factor-like protein 8 (EGF-like protein 8) 	w
+FACTOR-LIKE	human	Q9H0F7	ARL6	Q9H0F7	45	197	ADP-ribosylation factor-like protein 6 (Bardet-Biedl syndrom	w
+FACTOR-LIKE	human	Q9H1U4	MEGF9	Q9H1U4	7	21	Multiple epidermal growth factor-like domains protein 9 (Mul	w
+FACTOR-LIKE	human	Q9H503	BANF2	Q9H503	3	116	Barrier-to-autointegration factor-like protein (BAF-L) (Barr	w
+FACTOR-LIKE	human	Q9HCU4	CELSR2	Q9HCU4	7	113	Cadherin EGF LAG seven-pass G-type receptor 2 (Cadherin fami	w
+FACTOR-LIKE	human	Q9NQ48	LZTFL1	Q9NQ48	12	126	Leucine zipper transcription factor-like protein 1	w
+FACTOR-LIKE	human	Q9NVJ2	ARL8B	Q9NVJ2	82	402	ADP-ribosylation factor-like protein 8B (EC 3.6.5.2) (ADP-ri	w
+FACTOR-LIKE	human	Q9NXU5	ARL15	Q9NXU5	42	263	ADP-ribosylation factor-like protein 15 (ADP-ribosylation fa	w
+FACTOR-LIKE	human	Q9NYQ7	CELSR3	Q9NYQ7	0	10	Cadherin EGF LAG seven-pass G-type receptor 3 (Cadherin fami	w
+FACTOR-LIKE	human	Q9UBU8	MORF4L1	Q9UBU8	101	615	Mortality factor 4-like protein 1 (MORF-related gene 15 prot	w
+FACTOR-LIKE	human	Q9UH92	MLX	Q9UH92	84	419	Max-like protein X (Class D basic helix-loop-helix protein 1	w
+FACTOR-LIKE	human	Q9UHF1	EGFL7	Q9UHF1	38	186	Epidermal growth factor-like protein 7 (EGF-like protein 7) 	w
+FACTOR-LIKE	human	Q9UHV5	RAPGEFL1	Q9UHV5	12	53	Rap guanine nucleotide exchange factor-like 1 (Link guanine 	w
+FACTOR-LIKE	human	Q9UL49	TCFL5	Q9UL49	4	22	Transcription factor-like 5 protein (Cha transcription facto	w
+FACTOR-LIKE	human	Q9Y2U9	KLHDC2	Q9Y2U9	34	157	Kelch domain-containing protein 2 (Hepatocellular carcinoma-	w
+FACTOR-LIKE	human	Q9Y2Y0	ARL2BP	Q9Y2Y0	35	150	ADP-ribosylation factor-like protein 2-binding protein (ARF-	w
+FACTOR-LIKE	human	Q9Y689	ARL5A	Q9Y689	55	308	ADP-ribosylation factor-like protein 5A	w
+FACTOR-LIKE	worm	G5EDC6	arl-8	G5EDC6	3	26	ADP-ribosylation factor-like protein 8B	w
+FACTOR-LIKE	worm	H2L0N8	arl-13	H2L0N8	5	63	ADP-ribosylation factor-like protein 13B	w
+FACTOR-LIKE	worm	O17944	CELE_K10C3.5	O17944	3	112	Elongation factor-like 1	w
+FACTOR-LIKE	worm	O45379	arl-3	O45379	4	19	ADP-ribosylation factor-like protein 3	w
+FACTOR-LIKE	worm	P34212	arl-5	P34212	4	24	ADP-ribosylation factor-like protein 5	w
+FACTOR-LIKE	worm	Q18510	arl-6	Q18510	7	44	ADP-ribosylation factor-like protein 6	w
+FACTOR-LIKE	worm	Q19705	evl-20	Q19705	3	6	ADP-ribosylation factor-like protein 2	w
+FACTOR-LIKE	worm	Q19833	CELE_F26G1.1	Q19833	4	8	VPS35 endosomal protein sorting factor-like	w
+FACTOR-LIKE	worm	Q20758	arl-1	Q20758	2	15	ADP-ribosylation factor-like protein 1	w
+FACTOR-LIKE	yeast	P38116	ARL1	P38116	8	25	ADP-ribosylation factor-like protein 1	w
+FACTOR-LIKE	yeast	Q02804	ARL3	Q02804	2	19	ADP-ribosylation factor-like protein 3	w
+FACTOR-LIKE	yeast	Q04461	EUC1	Q04461	3	21	Transcription factor-like protein EUC1	w
+FACTOR-LIKE	yeast	Q05863	YLR281C	Q05863	8	122	Uncharacterized peptide chain release factor-like protein YL	w
+FACTOR-LIKE	zebrafish	A0A2R8QEE6	arl10	A0A2R8QEE6	1	19	ADP-ribosylation factor-like 10	w
+FACTOR-LIKE	zebrafish	A0A2R8QI61	arl3a	A0A2R8QI61	16	88	ADP-ribosylation factor-like protein 3	w
+FACTOR-LIKE	zebrafish	A0AA70QSB6	efl1	A0AA70QSB6	8	326	Elongation factor-like 1	w
+FACTOR-LIKE	zebrafish	A0AB32TY92	megf6b	A0AB32TY92	0	7	Multiple epidermal growth factor-like domains protein 6 isof	w
+FACTOR-LIKE	zebrafish	A2CEV2	si:dkey-220k22.1	A2CEV2	0	1	Multiple epidermal growth factor-like domains protein 9	w
+FACTOR-LIKE	zebrafish	A4VCH4	vps35l	A4VCH4	4	11	VPS35 endosomal protein-sorting factor-like	w
+FACTOR-LIKE	zebrafish	A5PMK4	arl15a	A5PMK4	11	39	ADP-ribosylation factor-like protein 15	w
+FACTOR-LIKE	zebrafish	B8JLB2	arl14	B8JLB2	7	31	ADP-ribosylation factor-like protein 14	w
+FACTOR-LIKE	zebrafish	E9QJQ6	megf10	E9QJQ6	0	10	Multiple epidermal growth factor-like domains protein 10	w
+FACTOR-LIKE	zebrafish	F1QKW5	arl13a	F1QKW5	2	5	ADP-ribosylation factor-like 13A	w
+FACTOR-LIKE	zebrafish	F1RBH2	arl8bb	F1RBH2	3	16	ADP-ribosylation factor-like 8Bb	w
+FACTOR-LIKE	zebrafish	F1RDR4	arl15b	F1RDR4	7	39	ADP-ribosylation factor-like protein 15	w
+FACTOR-LIKE	zebrafish	F8W2P1	arl8a	F8W2P1	2	16	ADP-ribosylation factor-like 8A	w
+FACTOR-LIKE	zebrafish	Q0P4A1	arl14ep	Q0P4A1	3	11	ADP-ribosylation factor-like 14 effector protein	w
+FACTOR-LIKE	zebrafish	Q1MTE5	arl3	Q1MTE5	21	89	ADP-ribosylation factor-like protein 3	w
+FACTOR-LIKE	zebrafish	Q502P0	arl6ip4	Q502P0	0	1	ADP-ribosylation factor-like protein 6-interacting protein 4	w
+FACTOR-LIKE	zebrafish	Q561U6	arl4ca	Q561U6	6	20	ADP-ribosylation factor-like 4Ca	w
+FACTOR-LIKE	zebrafish	Q5M9P8	arl6	Q5M9P8	7	36	ADP-ribosylation factor-like protein 6	w
+FACTOR-LIKE	zebrafish	Q6DGK1	arl1	Q6DGK1	5	22	ADP-ribosylation factor-like protein 1	w
+FACTOR-LIKE	zebrafish	Q6DHP0	arl5a	Q6DHP0	2	33	ADP-ribosylation factor-like 5A	w
+FACTOR-LIKE	zebrafish	Q6NZW8	arl8ba	Q6NZW8	4	16	ADP-ribosylation factor-like protein 8B-A	w
+FACTOR-LIKE	zebrafish	Q6P5K1	arl4aa	Q6P5K1	8	25	ADP-ribosylation factor-like protein 4A	w
+FACTOR-LIKE	zebrafish	Q6P5L0	arl4d	Q6P5L0	9	23	ADP-ribosylation factor-like 4D	w
+FACTOR-LIKE	zebrafish	Q6P5M7	arl4cb	Q6P5M7	7	20	ADP-ribosylation factor-like 4Cb	w
+FACTOR-LIKE	zebrafish	Q6P6E8	arl5c	Q6P6E8	6	33	ADP-ribosylation factor-like 5C	w
+FACTOR-LIKE	zebrafish	Q6PC43	arl3l2	Q6PC43	11	79	ADP-ribosylation factor-like protein 3	w
+FACTOR-LIKE	zebrafish	Q6PC92	arl3l1	Q6PC92	11	79	ADP-ribosylation factor-like protein 3	w
+FACTOR-LIKE	zebrafish	Q7SYL1	arl2bp	Q7SYL1	0	2	ADP-ribosylation factor-like protein 2-binding protein	w
+FACTOR-LIKE	zebrafish	Q7ZVD8	arl11	Q7ZVD8	6	31	ADP-ribosylation factor-like protein 11	w
+FACTOR-LIKE	zebrafish	Q7ZWB4	arl6ip1	Q7ZWB4	10	593	ADP-ribosylation factor-like 6 interacting protein	w
+FACTOR-LIKE	zebrafish	Q8JHI3	arl13b	Q8JHI3	4	22	ADP-ribosylation factor-like protein 13B	w
+FACTOR-PHOSPHOLIPASE	human	O60906	SMPD2	O60906	8	131	Sphingomyelin phosphodiesterase 2 (EC 3.1.4.12) (Lyso-platel	w
+FACTOR-PROLINE	fly	FBgn0264785	Hph	Q8SX21	23	83	hypoxia-inducible factor-proline dioxygenase (EC 1.14.11.29)	w
+FACTOR-PROLINE	human	A0A590UJK7	?	A0A590UJK7	0	6	hypoxia-inducible factor-proline dioxygenase	w
+FACTOR-PROLINE	zebrafish	E7F518	egln1a	E7F518	6	21	hypoxia-inducible factor-proline dioxygenase	w
+FACTOR-PROLINE	zebrafish	E7F8S1	egln2	E7F8S1	6	11	hypoxia-inducible factor-proline dioxygenase	w
+FACTOR-PROLINE	zebrafish	F6P6J7	egln1b	F6P6J7	7	10	hypoxia-inducible factor-proline dioxygenase	w
+FACTOR-PROLINE	zebrafish	Q6NY85	egln3	Q6NY85	7	23	hypoxia-inducible factor-proline dioxygenase	w
+FACTOR-R	human	Q96FC9	DDX11	Q96FC9	18	393	ATP-dependent DNA helicase DDX11 (EC 5.6.2.3) (CHL1-related 	w
+FACTOR-REGULATED	fly	FBgn0031450	Hrs	Q960X8	20	113	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+FACTOR-REGULATED	human	O14964	HGS	O14964	95	539	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+FACTOR-REGULATED	worm	Q17796	hgrs-1	Q17796	8	70	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+FACTOR-REGULATED	zebrafish	E9QCS7	hgs	E9QCS7	14	71	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+FACTOR-RELA	human	P05109	S100A8	P05109	51	1185	Protein S100-A8 (Calgranulin-A) (Calprotectin L1L subunit) (	w
+FACTOR-RELATED	fly	FBgn0024732	Drep1	A0A0B4KFQ3	14	76	DNAation factor-related protein 1, isoform B	w
+FACTOR-RELATED	fly	FBgn0028406	Drep4	Q9V3H0	3	17	DNAation factor-related protein 4 (Drep4)	w
+FACTOR-RELATED	fly	FBgn0028407	Drep3	Q0E9B7	4	19	DNAation factor-related protein 3, isoform A (DNAation facto	w
+FACTOR-RELATED	fly	FBgn0028408	Drep2	A8DY77	8	46	DNAation factor-related protein 2, isoform B	w
+FACTOR-RELATED	fly	FBgn0030088	Arfrp1	Q9W389	6	48	ADP-ribosylation factor-related protein 1	w
+FACTOR-RELATED	fly	FBgn0038915	CG17819	Q9VD65	5	38	ADP-ribosylation factor-related protein 1	w
+FACTOR-RELATED	human	B2RNN3	C1QTNF9B	B2RNN3	16	77	Complement C1q and tumor necrosis factor-related protein 9B 	w
+FACTOR-RELATED	human	O75973	C1QL1	O75973	20	181	C1q-related factor (C1q and tumor necrosis factor-related pr	w
+FACTOR-RELATED	human	O76076	CCN5	O76076	17	101	CCN family member 5 (Connective tissue growth factor-like pr	w
+FACTOR-RELATED	human	P06702	S100A9	P06702	61	1302	Protein S100-A9 (Calgranulin-B) (Calprotectin L1H subunit) (	w
+FACTOR-RELATED	human	P0C862	C1QTNF9	P0C862	17	57	Complement C1q and tumor necrosis factor-related protein 9A 	w
+FACTOR-RELATED	human	P49767	VEGFC	P49767	40	337	Vascular endothelial growth factor C (VEGF-C) (Flt4 ligand) 	w
+FACTOR-RELATED	human	P60827	C1QTNF8	P60827	10	45	Complement C1q tumor necrosis factor-related protein 8 (C1q/	w
+FACTOR-RELATED	human	Q13795	ARFRP1	Q13795	37	186	ADP-ribosylation factor-related protein 1 (ARF-related prote	w
+FACTOR-RELATED	human	Q15270	NKX1-1	Q15270	91	335	NK1 transcription factor-related protein 1 (Homeobox protein	w
+FACTOR-RELATED	human	Q4G0M1	ERFE	Q4G0M1	11	44	Erythroferrone (Complement C1q tumor necrosis factor-related	w
+FACTOR-RELATED	human	Q5T7M4	C1QTNF12	Q5T7M4	7	33	Adipolin (Adipose-derived insulin-sensitizing factor) (C1q a	w
+FACTOR-RELATED	human	Q5VWW1	C1QL3	Q5VWW1	20	137	Complement C1q-like protein 3 (C1q and tumor necrosis factor	w
+FACTOR-RELATED	human	Q7Z4V5	HDGFL2	Q7Z4V5	42	185	Hepatoma-derived growth factor-related protein 2 (HDGF-relat	w
+FACTOR-RELATED	human	Q7Z5L3	C1QL2	Q7Z5L3	18	162	Complement C1q-like protein 2 (C1q and tumor necrosis factor	w
+FACTOR-RELATED	human	Q86Z23	C1QL4	Q86Z23	25	134	Complement C1q-like protein 4 (C1q and tumor necrosis factor	w
+FACTOR-RELATED	human	Q8NFT8	DNER	Q8NFT8	9	92	Delta and Notch-like epidermal growth factor-related recepto	w
+FACTOR-RELATED	human	Q969G5	CAVIN3	Q969G5	31	181	Caveolae-associated protein 3 (Cavin-3) (Protein kinase C de	w
+FACTOR-RELATED	human	Q9BXI9	C1QTNF6	Q9BXI9	28	94	Complement C1q tumor necrosis factor-related protein 6	w
+FACTOR-RELATED	human	Q9BXJ0	C1QTNF5	Q9BXJ0	13	73	Complement C1q tumor necrosis factor-related protein 5	w
+FACTOR-RELATED	human	Q9BXJ1	C1QTNF1	Q9BXJ1	24	96	Complement C1q tumor necrosis factor-related protein 1 (G pr	w
+FACTOR-RELATED	human	Q9BXJ2	C1QTNF7	Q9BXJ2	24	113	Complement C1q tumor necrosis factor-related protein 7	w
+FACTOR-RELATED	human	Q9BXJ3	C1QTNF4	Q9BXJ3	15	95	Complement C1q tumor necrosis factor-related protein 4 (C1q/	w
+FACTOR-RELATED	human	Q9BXJ4	C1QTNF3	Q9BXJ4	16	59	Complement C1q tumor necrosis factor-related protein 3 (Coll	w
+FACTOR-RELATED	human	Q9BXJ5	C1QTNF2	Q9BXJ5	12	69	Complement C1q tumor necrosis factor-related protein 2	w
+FACTOR-RELATED	human	Q9NXU5	ARL15	Q9NXU5	42	263	ADP-ribosylation factor-like protein 15 (ADP-ribosylation fa	w
+FACTOR-RELATED	human	Q9UD57	NKX1-2	Q9UD57	73	342	NK1 transcription factor-related protein 2 (Homeobox protein	w
+FACTOR-RELATED	human	Q9UQ35	SRRM2	Q9UQ35	30	529	Serine/arginine repetitive matrix protein 2 (300 kDa nuclear	w
+FACTOR-RELATED	human	Q9Y3E1	HDGFL3	Q9Y3E1	3	65	Hepatoma-derived growth factor-related protein 3 (HRP-3) (He	w
+FACTOR-RELATED	worm	Q22013	CELE_R186.3	Q22013	2	39	ADP-ribosylation factor-related protein 1	w
+FACTOR-RELATED	worm	Q9N3C8	CELE_Y54E10BR.2	Q9N3C8	2	16	ADP-ribosylation factor-related protein 1	w
+FACTOR-RELATED	zebrafish	A0A8M1N540	c1qtnf4	A0A8M1N540	1	22	Complement C1q tumor necrosis factor-related protein 4	w
+FACTOR-RELATED	zebrafish	A0A8M2BHA7	c1qtnf13	A0A8M2BHA7	1	22	Complement C1q tumor necrosis factor-related protein 4	w
+FACTOR-RELATED	zebrafish	Q5EAS5	arfrp1	Q5EAS5	6	10	ADP-ribosylation factor-related protein 1	w
+FACTOR-RELATED	zebrafish	Q5XXA7	hdgfl2	Q5XXA7	1	20	Hepatoma-derived growth factor-related protein 2	w
+FACTORS	human	A0A2Q2T6B6	IPCEF1	A0A2Q2T6B6	4	12	Interaction protein for cytohesin exchange factors 1	w
+FACTORS	human	Q16620	NTRK2	Q16620	139	1754	BDNF/NT-3 growth factors receptor (EC 2.7.10.1) (GP145-TrkB)	w
+FACTORS	human	Q6DN90	IQSEC1	Q6DN90	44	181	IQ motif and SEC7 domain-containing protein 1 (ADP-ribosylat	w
+FACTORS	human	Q8WWN9	IPCEF1	Q8WWN9	19	56	Interactor protein for cytohesin exchange factors 1 (Phospho	w
+FACTORS	human	Q9H171	ZBP1	Q9H171	8	80	Z-DNA-binding protein 1 (DNA-dependent activator of IFN-regu	w
+FACTORS	worm	E5QCJ3	CELE_T23B5.4	E5QCJ3	0	79	Prokaryotic-type class I peptide chain release factors domai	w
+FACTORS	yeast	Q08471	MSA1	Q08471	4	13	G1-specific transcription factors activator MSA1	w
+FACTP140	human	Q9Y5B9	SUPT16H	Q9Y5B9	70	651		
+FACVL1	human	O14975	SLC27A2	O14975	5	183		
+FACVL2	human	Q9Y2P4	SLC27A6	Q9Y2P4	2	93		
+FACVL3	human	Q9Y2P5	SLC27A5	Q9Y2P5	0	40		

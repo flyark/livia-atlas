@@ -1,7 +1,412 @@
-INI1	cladophialophora-carrionii	A0A1C1CZ56	ini1	A0A1C1CZ56	6	175	Pre-mRNA-splicing factor ini1
-INI1	schizosaccharomyces-pombe	Q9UTB8	ini1	Q9UTB8	2	69	Pre-mRNA-splicing factor ini1
-INIA	mycobacterium-tuberculosis	P9WJ99	iniA	P9WJ99	0	10	Isoniazid-induced protein IniA
-INIB	mycobacterium-tuberculosis	P9WJ97	iniB	P9WJ97	0	12	Isoniazid-induced protein IniB
-INIC	mycobacterium-tuberculosis	P9WJ95	iniC	P9WJ95	0	16	Isoniazid-induced protein IniC
-INIP	mus-musculus	Q3TXT3	Inip	Q3TXT3	1	3	SOSS complex subunit C
-INIP	rattus-norvegicus	D3Z914	Inip	D3Z914	1	3	SOSS complex subunit C
+INI1	cladophialophora-carrionii	A0A1C1CZ56	ini1	A0A1C1CZ56	6	175	Pre-mRNA-splicing factor ini1	
+INI1	human	Q12824	SMARCB1	Q12824	92	1049		
+INI1	schizosaccharomyces-pombe	Q9UTB8	ini1	Q9UTB8	2	69	Pre-mRNA-splicing factor ini1	
+INI1	worm	Q21831	snfc-5	Q21831	1	147	SWI/SNF Subunit INI1 DNA binding domain-containing protein	w
+INIA	mycobacterium-tuberculosis	P9WJ99	iniA	P9WJ99	0	10	Isoniazid-induced protein IniA	
+INIB	mycobacterium-tuberculosis	P9WJ97	iniB	P9WJ97	0	12	Isoniazid-induced protein IniB	
+INIC	mycobacterium-tuberculosis	P9WJ95	iniC	P9WJ95	0	16	Isoniazid-induced protein IniC	
+INIP	human	Q9NRY2	INIP	Q9NRY2	7	59	SOSS complex subunit C (INTS3- and NABP-interacting protein)	
+INIP	mus-musculus	Q3TXT3	Inip	Q3TXT3	1	3	SOSS complex subunit C	
+INIP	rattus-norvegicus	D3Z914	Inip	D3Z914	1	3	SOSS complex subunit C	
+INIP	zebrafish	Q7ZV26	inip	Q7ZV26	2	5	SOSS complex subunit C	
+INITIATION	fly	FBgn0000617	Taf9	Q27272	75	538	Transcription initiation factor TFIID subunit 9 (Protein enh	w
+INITIATION	fly	FBgn0000927	fs(1)Ya	P25028	7	67	Mitosis initiation protein fs(1)Ya	w
+INITIATION	fly	FBgn0001942	eIF4A	Q02748	14	204	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
+INITIATION	fly	FBgn0002842	sa	Q9VP40	79	445	Transcription initiation factor TFIID subunit 8	w
+INITIATION	fly	FBgn0003687	Tbp	P20227	100	557	TATA-box-binding protein (TATA sequence-binding protein) (TA	w
+INITIATION	fly	FBgn0004915	TfIIB	P29052	56	522	Transcription initiation factor IIB (General transcription f	w
+INITIATION	fly	FBgn0004926	eIF2beta	P41375	22	192	Eukaryotic translation initiation factor 2 subunit 2 (Eukary	w
+INITIATION	fly	FBgn0010282	TfIIFalpha	Q05913	107	524	General transcription factor IIF subunit 1 (Transcription fa	w
+INITIATION	fly	FBgn0010355	Taf1	A0A0B4K602	56	612	Transcription initiation factor TFIID subunit 1	w
+INITIATION	fly	FBgn0010356	Taf5	P49846	57	522	Transcription initiation factor TFIID subunit 5 (TAFII-80) (	w
+INITIATION	fly	FBgn0010417	Taf6	P49847	80	532	Transcription initiation factor TFIID subunit 6 (TAFII-60) (	w
+INITIATION	fly	FBgn0010421	TfIIFbeta	P41900	100	533	General transcription factor IIF subunit 2 (Transcription in	w
+INITIATION	fly	FBgn0010488	NAT1	A1Z968	17	132	Eukaryotic translation initiation factor 4 gamma 2	w
+INITIATION	fly	FBgn0011289	TfIIA-L	P52654	110	520	Transcription initiation factor IIA subunit 1 (General trans	w
+INITIATION	fly	FBgn0011290	Taf12	P49905	71	552	Transcription initiation factor TFIID subunit 12 (TAFII30 al	w
+INITIATION	fly	FBgn0011291	Taf11	P49906	73	550	Transcription initiation factor TFIID subunit 11 (TAFII30 be	w
+INITIATION	fly	FBgn0011569	can	Q9VT91	65	426	Transcription initiation factor TFIID subunit 5	w
+INITIATION	fly	FBgn0011836	Taf2	Q24325	12	177	Transcription initiation factor TFIID subunit 2 (Transcripti	w
+INITIATION	fly	FBgn0013347	TfIIA-S	P52656	34	480	Transcription initiation factor IIA subunit 2 (General trans	w
+INITIATION	fly	FBgn0015218	eIF4E1	P48598	38	257	Eukaryotic translation initiation factor 4E1 (eIF-4F 25 kDa 	w
+INITIATION	fly	FBgn0015829	TfIIEbeta	O96881	47	491	Transcription initiation factor IIE subunit beta	w
+INITIATION	fly	FBgn0015834	eIF3i	O02195	10	154	Eukaryotic translation initiation factor 3 subunit I (eIF3i)	w
+INITIATION	fly	FBgn0020660	eIF4B	Q7PLL3	9	98	Eukaryotic initiation factor 4B (Eukaryotic translation init	w
+INITIATION	fly	FBgn0022023	eIF3h	Q9U9Q4	14	137	Eukaryotic translation initiation factor 3 subunit H (eIF3h)	w
+INITIATION	fly	FBgn0022724	Taf8	Q9VWY6	81	455	Transcription initiation factor TFIID subunit 8 (Protein pro	w
+INITIATION	fly	FBgn0023213	eIF4G1	A8DZ29	11	36	Eukaryotic translation initiation factor 4G1, isoform B	w
+INITIATION	fly	FBgn0023512	eIF2Bepsilon	Q9W541	3	17	Translation initiation factor eIF2B subunit epsilon (eIF2B G	w
+INITIATION	fly	FBgn0024909	Taf7	Q9VHY5	95	465	Transcription initiation factor TFIID subunit 7 (Transcripti	w
+INITIATION	fly	FBgn0024996	eIF2Bbeta	O76863	3	22	Translation initiation factor eIF2B subunit beta (eIF2B GDP-	w
+INITIATION	fly	FBgn0025582	eIF3e	O77410	19	135	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
+INITIATION	fly	FBgn0026250	eIF1A	Q9VEA1	15	141	Eukaryotic translation initiation factor 4C	w
+INITIATION	fly	FBgn0026259	eIF5B	Q9VZP5	14	264	Eukaryotic translation initiation factor 5B (Translation ini	w
+INITIATION	fly	FBgn0026324	Taf10b	Q9XZT7	46	509	Transcription initiation factor TFIID subunit 10b (Transcrip	w
+INITIATION	fly	FBgn0027619	eIF3j	Q7K550	11	161	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	w
+INITIATION	fly	FBgn0028398	Taf10	Q9U5W9	36	494	Transcription initiation factor TFIID subunit 10 (Transcript	w
+INITIATION	fly	FBgn0029629	eIF3g1	Q9W4X7	10	104	Eukaryotic translation initiation factor 3 subunit G-1 (Euka	w
+INITIATION	fly	FBgn0030719	eIF5	Q9VXK6	12	138	Eukaryotic translation initiation factor 5 (eIF-5)	w
+INITIATION	fly	FBgn0033069	eIF3f2	H1UU98	11	105	Eukaryotic translation initiation factor 3 subunit F (eIF3f)	w
+INITIATION	fly	FBgn0033712	mIF3	A0A384ZD34	4	9	mitochondrial translation initiation factor 3	w
+INITIATION	fly	FBgn0033902	eIF3m	Q7JVI3	15	201	Eukaryotic translation initiation factor 3 subunit M (eIF3m)	w
+INITIATION	fly	FBgn0034029	eIF2Bgamma	A1ZA22	4	29	Translation initiation factor eIF2B subunit gamma (eIF2B GDP	w
+INITIATION	fly	FBgn0034237	eIF3b	Q0E940	10	162	Eukaryotic translation initiation factor 3 subunit B (eIF3b)	w
+INITIATION	fly	FBgn0034258	eIF3c	A1ZAX1	13	134	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	w
+INITIATION	fly	FBgn0034654	eIF3k	Q9W2D9	6	120	Eukaryotic translation initiation factor 3 subunit K (eIF3k)	w
+INITIATION	fly	FBgn0034858	eIF2Bdelta	Q9W1Q8	9	19	Translation initiation factor eIF2B subunit delta (eIF2B GDP	w
+INITIATION	fly	FBgn0034915	eIF6	P56538	14	185	Eukaryotic translation initiation factor 6 (eIF-6)	w
+INITIATION	fly	FBgn0035423	eIF1	Q9VZS3	11	122	Eukaryotic translation initiation factor eIF1 (Protein trans	w
+INITIATION	fly	FBgn0036258	eIF3l	Q9VTU4	10	170	Eukaryotic translation initiation factor 3 subunit L (eIF3l)	w
+INITIATION	fly	FBgn0037135	eIF2A	Q9VNX8	2	57	Eukaryotic translation initiation factor 2A (eIF-2A)	w
+INITIATION	fly	FBgn0037249	eIF3a	Q9VN25	18	147	Eukaryotic translation initiation factor 3 subunit A (eIF3a)	w
+INITIATION	fly	FBgn0037270	eIF3f1	Q9VN50	15	123	Eukaryotic translation initiation factor 3 subunit F-1 (eIF3	w
+INITIATION	fly	FBgn0037327	PEK	Q9NIV1	303	3493	Eukaryotic translation initiation factor 2-alpha kinase (EC 	w
+INITIATION	fly	FBgn0037573	CG7483	Q9VHS8	16	244	Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III)	w
+INITIATION	fly	FBgn0037994	eIF3d2	Q9VGC7	5	109	Eukaryotic translation initiation factor 3 subunit D-2 (eIF3	w
+INITIATION	fly	FBgn0038796	eIF3g2	Q9VDM6	12	99	Eukaryotic translation initiation factor 3 subunit G-2 (Euka	w
+INITIATION	fly	FBgn0039588	mIF2	Q9VAV2	7	240	FI21480p1 (Mitochondrial translation initiation factor 2)	w
+INITIATION	fly	FBgn0039726	eIF2Balpha	Q9VAD4	3	20	Translation initiation factor eIF2B subunit alpha (eIF2B GDP	w
+INITIATION	fly	FBgn0039797	eIF4H2	Q9VA45	4	36	Eukaryotic translation initiation factor 4H2, isoform A (Euk	w
+INITIATION	fly	FBgn0039849	Mri1	Q9V9X4	0	45	Methylthioribose-1-phosphate isomerase (M1Pi) (MTR-1-P isome	w
+INITIATION	fly	FBgn0040227	eIF3d1	Q9VCK0	5	126	Eukaryotic translation initiation factor 3 subunit D-1 (eIF3	w
+INITIATION	fly	FBgn0040338	TfIIA-S-2	Q9W5B9	37	457	Transcription initiation factor IIA subunit 2-2 (General tra	w
+INITIATION	fly	FBgn0041588	eIF2D	Q9NG60	13	118	Eukaryotic translation initiation factor 2D (LD24540p) (LIGA	w
+INITIATION	fly	FBgn0051957	CG31957	Q8IQ13	1	39	Probable RNA-binding protein EIF1AD (Eukaryotic translation 	w
+INITIATION	fly	FBgn0052016	4E-T	Q8IH18	34	133	Eukaryotic translation initiation factor 4E transporter (4E-	w
+INITIATION	fly	FBgn0053100	eIF4EHP	E1JIV5	3	29	Eukaryotic translation initiation factor 4E homologous prote	w
+INITIATION	fly	FBgn0250753	kra	Q9VNE2	1	18	Protein krasavietz (Eukaryotic translation initiation factor	w
+INITIATION	fly	FBgn0260634	eIF4G2	Q9VCH1	5	24	Eukaryotic translation initiation factor 4G2, isoform A (Euk	w
+INITIATION	fly	FBgn0261560	Thor	Q9XZ56	19	124	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	fly	FBgn0262734	eIF4H1	X2JC79	6	46	Eukaryotic translation initiation factor 4H	w
+INITIATION	fly	FBgn0263740	eIF2gamma	Q24208	17	538	Eukaryotic translation initiation factor 2 subunit 3 (EC 3.6	w
+INITIATION	fly	FBgn0285952	eEF5	Q9GU68	25	255	Eukaryotic translation initiation factor 5A (eIF-5A)	w
+INITIATION	fly	FBgn0290109	eIF2alpha	P41374	9	158	eukaryotic translation initiation factor 2 subunit alpha	w
+INITIATION	human	A6NMX2	EIF4E1B	A6NMX2	15	133	Eukaryotic translation initiation factor 4E type 1B	w
+INITIATION	human	B5ME19	EIF3CL	B5ME19	25	224	Eukaryotic translation initiation factor 3 subunit C-like pr	w
+INITIATION	human	D3DQV9	EIF4G2	D3DQV9	12	109	Eukaryotic translation initiation factor 4 gamma 2	w
+INITIATION	human	O00268	TAF4	O00268	88	299	Transcription initiation factor TFIID subunit 4 (RNA polymer	w
+INITIATION	human	O00303	EIF3F	O00303	44	312	Eukaryotic translation initiation factor 3 subunit F (eIF3f)	w
+INITIATION	human	O14602	EIF1AY	O14602	26	274	Eukaryotic translation initiation factor 1A, Y-chromosomal (	w
+INITIATION	human	O15371	EIF3D	O15371	22	412	Eukaryotic translation initiation factor 3 subunit D (eIF3d)	w
+INITIATION	human	O15372	EIF3H	O15372	25	337	Eukaryotic translation initiation factor 3 subunit H (eIF3h)	w
+INITIATION	human	O43310	CTIF	O43310	28	106	CBP80/20-dependent translation initiation factor	w
+INITIATION	human	O43432	EIF4G3	O43432	22	150	Eukaryotic translation initiation factor 4 gamma 3 (eIF-4-ga	w
+INITIATION	human	O60516	EIF4EBP3	O60516	6	38	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	human	O60573	EIF4E2	O60573	36	312	Eukaryotic translation initiation factor 4E type 2 (eIF-4E t	w
+INITIATION	human	O60739	EIF1B	O60739	27	270	Eukaryotic translation initiation factor 1b (eIF1b) (Protein	w
+INITIATION	human	O60841	EIF5B	O60841	33	484	Eukaryotic translation initiation factor 5B (eIF-5B) (EC 3.6	w
+INITIATION	human	O75486	SUPT3H	O75486	37	482	Transcription initiation protein SPT3 homolog (SPT3-like pro	w
+INITIATION	human	O75794	CDC123	O75794	2	91	Translation initiation factor eIF2 assembly protein (Cell di	w
+INITIATION	human	O75821	EIF3G	O75821	45	287	Eukaryotic translation initiation factor 3 subunit G (eIF3g)	w
+INITIATION	human	O75822	EIF3J	O75822	23	219	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	w
+INITIATION	human	P05198	EIF2S1	P05198	26	442	Eukaryotic translation initiation factor 2 subunit 1 (Eukary	w
+INITIATION	human	P06730	EIF4E	P06730	26	353	Eukaryotic translation initiation factor 4E (eIF-4E) (eIF4E)	w
+INITIATION	human	P13984	GTF2F2	P13984	72	621	General transcription factor IIF subunit 2 (General transcri	w
+INITIATION	human	P19525	EIF2AK2	P19525	57	1487	Interferon-induced, double-stranded RNA-activated protein ki	w
+INITIATION	human	P20042	EIF2S2	P20042	37	359	Eukaryotic translation initiation factor 2 subunit 2 (Eukary	w
+INITIATION	human	P20226	TBP	P20226	153	860	TATA-box-binding protein (TATA sequence-binding protein) (TA	w
+INITIATION	human	P21675	TAF1	P21675	48	444	Transcription initiation factor TFIID subunit 1 (EC 2.3.1.48	w
+INITIATION	human	P23588	EIF4B	P23588	66	357	Eukaryotic translation initiation factor 4B (eIF-4B)	w
+INITIATION	human	P29083	GTF2E1	P29083	110	592	General transcription factor IIE subunit 1 (General transcri	w
+INITIATION	human	P29084	GTF2E2	P29084	61	655	Transcription initiation factor IIE subunit beta (TFIIE-beta	w
+INITIATION	human	P35269	GTF2F1	P35269	139	685	General transcription factor IIF subunit 1 (General transcri	w
+INITIATION	human	P38919	EIF4A3	P38919	78	853	Eukaryotic initiation factor 4A-III (eIF-4A-III) (eIF4A-III)	w
+INITIATION	human	P41091	EIF2S3	P41091	30	781	Eukaryotic translation initiation factor 2 subunit 3 (EC 3.6	w
+INITIATION	human	P41214	EIF2D	P41214	9	101	Eukaryotic translation initiation factor 2D (eIF2d) (Hepatoc	w
+INITIATION	human	P41567	EIF1	P41567	25	217	Eukaryotic translation initiation factor 1 (eIF1) (A121) (Pr	w
+INITIATION	human	P46199	MTIF2	P46199	15	591	Translation initiation factor IF-2, mitochondrial (IF-2(Mt))	w
+INITIATION	human	P47813	EIF1AX	P47813	16	252	Eukaryotic translation initiation factor 1A, X-chromosomal (	w
+INITIATION	human	P49770	EIF2B2	P49770	9	245	Translation initiation factor eIF2B subunit beta (S20I15) (S	w
+INITIATION	human	P49848	TAF6	P49848	110	623	Transcription initiation factor TFIID subunit 6 (RNA polymer	w
+INITIATION	human	P50579	METAP2	P50579	95	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+INITIATION	human	P52655	GTF2A1	P52655	116	540	Transcription initiation factor IIA subunit 1 (General trans	w
+INITIATION	human	P52657	GTF2A2	P52657	43	605	Transcription initiation factor IIA subunit 2 (General trans	w
+INITIATION	human	P55010	EIF5	P55010	30	302	Eukaryotic translation initiation factor 5 (eIF-5)	w
+INITIATION	human	P55884	EIF3B	P55884	46	462	Eukaryotic translation initiation factor 3 subunit B (eIF3b)	w
+INITIATION	human	P56537	EIF6	P56537	43	507	Eukaryotic translation initiation factor 6 (eIF-6) (B(2)GCN 	w
+INITIATION	human	P60228	EIF3E	P60228	60	418	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
+INITIATION	human	P60842	EIF4A1	P60842	39	466	Eukaryotic initiation factor 4A-I (eIF-4A-I) (eIF4A-I) (EC 3	w
+INITIATION	human	P63241	EIF5A	P63241	33	283	Eukaryotic translation initiation factor 5A-1 (eIF-5A-1) (eI	w
+INITIATION	human	P78344	EIF4G2	P78344	19	179	Eukaryotic translation initiation factor 4 gamma 2 (eIF-4-ga	w
+INITIATION	human	Q00403	GTF2B	Q00403	84	682	Transcription initiation factor IIB (EC 2.3.1.48) (General t	w
+INITIATION	human	Q04637	EIF4G1	Q04637	84	439	Eukaryotic translation initiation factor 4 gamma 1 (eIF-4-ga	w
+INITIATION	human	Q12962	TAF10	Q12962	91	650	Transcription initiation factor TFIID subunit 10 (STAF28) (T	w
+INITIATION	human	Q13144	EIF2B5	Q13144	48	687	Translation initiation factor eIF2B subunit epsilon (eIF2B G	w
+INITIATION	human	Q13347	EIF3I	Q13347	22	382	Eukaryotic translation initiation factor 3 subunit I (eIF3i)	w
+INITIATION	human	Q13541	EIF4EBP1	Q13541	7	143	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	human	Q13542	EIF4EBP2	Q13542	5	70	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	human	Q14152	EIF3A	Q14152	42	508	Eukaryotic translation initiation factor 3 subunit A (eIF3a)	w
+INITIATION	human	Q14232	EIF2B1	Q14232	9	178	Translation initiation factor eIF2B subunit alpha (eIF2B GDP	w
+INITIATION	human	Q14240	EIF4A2	Q14240	40	544	Eukaryotic initiation factor 4A-II (eIF-4A-II) (eIF4A-II) (E	w
+INITIATION	human	Q15056	EIF4H	Q15056	26	261	Eukaryotic translation initiation factor 4H (eIF-4H) (Willia	w
+INITIATION	human	Q15542	TAF5	Q15542	49	504	Transcription initiation factor TFIID subunit 5 (Transcripti	w
+INITIATION	human	Q15543	TAF13	Q15543	61	503	Transcription initiation factor TFIID subunit 13 (Transcript	w
+INITIATION	human	Q15544	TAF11	Q15544	82	491	Transcription initiation factor TFIID subunit 11 (TFIID subu	w
+INITIATION	human	Q15545	TAF7	Q15545	103	616	Transcription initiation factor TFIID subunit 7 (RNA polymer	w
+INITIATION	human	Q16514	TAF12	Q16514	109	643	Transcription initiation factor TFIID subunit 12 (Transcript	w
+INITIATION	human	Q16594	TAF9	Q16594	117	630	Transcription initiation factor TFIID subunit 9 (RNA polymer	w
+INITIATION	human	Q2VIR3	EIF2S3B	Q2VIR3	15	535	Eukaryotic translation initiation factor 2 subunit 3B (EC 3.	w
+INITIATION	human	Q5H9L4	TAF7L	Q5H9L4	67	414	Transcription initiation factor TFIID subunit 7-like (Cancer	w
+INITIATION	human	Q5VWG9	TAF3	Q5VWG9	70	218	Transcription initiation factor TFIID subunit 3 (140 kDa TAT	w
+INITIATION	human	Q6IS14	EIF5AL1	Q6IS14	16	281	Eukaryotic translation initiation factor 5A-1-like (eIF-5A-1	w
+INITIATION	human	Q6P1X5	TAF2	Q6P1X5	43	522	Transcription initiation factor TFIID subunit 2 (150 kDa cof	w
+INITIATION	human	Q7L2H7	EIF3M	Q7L2H7	32	243	Eukaryotic translation initiation factor 3 subunit M (eIF3m)	w
+INITIATION	human	Q7Z7C8	TAF8	Q7Z7C8	90	649	Transcription initiation factor TFIID subunit 8 (Protein tau	w
+INITIATION	human	Q8IZX4	TAF1L	Q8IZX4	23	148	Transcription initiation factor TFIID subunit 1-like (TAF(II	w
+INITIATION	human	Q8N5X7	EIF4E3	Q8N5X7	17	245	Eukaryotic translation initiation factor 4E type 3 (eIF-4E t	w
+INITIATION	human	Q8N9N8	EIF1AD	Q8N9N8	13	165	Probable RNA-binding protein EIF1AD (Eukaryotic translation 	w
+INITIATION	human	Q8TAL6	FIBIN	Q8TAL6	7	127	Fin bud initiation factor homolog	w
+INITIATION	human	Q92750	TAF4B	Q92750	40	111	Transcription initiation factor TFIID subunit 4B (Transcript	w
+INITIATION	human	Q99613	EIF3C	Q99613	39	359	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	w
+INITIATION	human	Q9BQI3	EIF2AK1	Q9BQI3	78	1212	Eukaryotic translation initiation factor 2-alpha kinase 1 (E	w
+INITIATION	human	Q9BWE0	REPIN1	Q9BWE0	7	149	DNA-binding protein REPIN1 (60 kDa origin-specific DNA-bindi	w
+INITIATION	human	Q9BY44	EIF2A	Q9BY44	17	222	Eukaryotic translation initiation factor 2A (eIF-2A) (65 kDa	w
+INITIATION	human	Q9GZV4	EIF5A2	Q9GZV4	69	553	Eukaryotic translation initiation factor 5A-2 (eIF-5A-2) (eI	w
+INITIATION	human	Q9H2K0	MTIF3	Q9H2K0	24	286	Translation initiation factor IF-3, mitochondrial (IF-3(Mt))	w
+INITIATION	human	Q9H9G7	AGO3	Q9H9G7	16	240	Protein argonaute-3 (Argonaute3) (hAgo3) (EC 3.1.26.n2) (Arg	w
+INITIATION	human	Q9HBM6	TAF9B	Q9HBM6	88	584	Transcription initiation factor TFIID subunit 9B (Neuronal c	w
+INITIATION	human	Q9HCK5	AGO4	Q9HCK5	16	177	Protein argonaute-4 (Argonaute4) (hAgo4) (Argonaute RISC cat	w
+INITIATION	human	Q9NR50	EIF2B3	Q9NR50	27	269	Translation initiation factor eIF2B subunit gamma (eIF2B GDP	w
+INITIATION	human	Q9NRA8	EIF4ENIF1	Q9NRA8	64	324	Eukaryotic translation initiation factor 4E transporter (4E-	w
+INITIATION	human	Q9NYV6	RRN3	Q9NYV6	16	208	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	human	Q9NZJ5	EIF2AK3	Q9NZJ5	37	329	Eukaryotic translation initiation factor 2-alpha kinase 3 (E	w
+INITIATION	human	Q9P2K8	EIF2AK4	Q9P2K8	25	217	eIF-2-alpha kinase GCN2 (EC 2.7.11.1) (Eukaryotic translatio	w
+INITIATION	human	Q9UBQ5	EIF3K	Q9UBQ5	19	301	Eukaryotic translation initiation factor 3 subunit K (eIF3k)	w
+INITIATION	human	Q9UI10	EIF2B4	Q9UI10	31	410	Translation initiation factor eIF2B subunit delta (eIF2B GDP	w
+INITIATION	human	Q9UKD1	GMEB2	Q9UKD1	17	79	Glucocorticoid modulatory element-binding protein 2 (GMEB-2)	w
+INITIATION	human	Q9UKV8	AGO2	Q9UKV8	54	653	Protein argonaute-2 (Argonaute2) (hAgo2) (EC 3.1.26.n2) (Arg	w
+INITIATION	human	Q9UL18	AGO1	Q9UL18	34	387	Protein argonaute-1 (Argonaute1) (hAgo1) (Argonaute RISC cat	w
+INITIATION	human	Q9Y262	EIF3L	Q9Y262	15	346	Eukaryotic translation initiation factor 3 subunit L (eIF3l)	w
+INITIATION	human	Q9Y692	GMEB1	Q9Y692	7	58	Glucocorticoid modulatory element-binding protein 1 (GMEB-1)	w
+INITIATION	worm	A0A5E4M2I1	CELE_K09E9.3	A0A5E4M2I1	0	1	Transcription initiation factor TFIID subunit 5	w
+INITIATION	worm	G5EF68	taf-5	G5EF68	13	99	Transcription initiation factor TFIID subunit 5	w
+INITIATION	worm	G5EFF9	eif-2bdelta	G5EFF9	3	23	Translation initiation factor eIF2B subunit delta	w
+INITIATION	worm	G5EG47	gtf-2e2	G5EG47	13	82	Transcription initiation factor IIE subunit beta	w
+INITIATION	worm	G5EGM3	taf-1	G5EGM3	3	15	Transcription initiation factor TFIID subunit 1 (TBP-associa	w
+INITIATION	worm	G5EGT7	iffb-1	G5EGT7	2	199	Eukaryotic translation initiation factor 5B	w
+INITIATION	worm	O01974	eif-3.H	O01974	9	98	Eukaryotic translation initiation factor 3 subunit H	w
+INITIATION	worm	O02328	eif-3.C	O02328	9	110	Eukaryotic translation initiation factor 3 subunit C	w
+INITIATION	worm	O16991	ttb-1	O16991	7	108	Transcription initiation factor IIB	w
+INITIATION	worm	O45551	ife-1	O45551	8	46	Eukaryotic translation initiation factor 4E-1	w
+INITIATION	worm	O45784	taf-9	O45784	18	96	Transcription initiation factor TFIID subunit 9	w
+INITIATION	worm	O61707	taf-4	O61707	15	60	Transcription initiation factor TFIID subunit 4	w
+INITIATION	worm	O61820	eif-3.E	O61820	10	104	Eukaryotic translation initiation factor 3 subunit E	w
+INITIATION	worm	O61955	ife-3	O61955	10	108	Eukaryotic translation initiation factor 4E-3	w
+INITIATION	worm	O62106	eif-6	O62106	6	152	Eukaryotic translation initiation factor 6	w
+INITIATION	worm	P27639	inf-1	P27639	3	75	Eukaryotic initiation factor 4A	w
+INITIATION	worm	P30642	eif-3.D	P30642	8	117	Eukaryotic translation initiation factor 3 subunit D	w
+INITIATION	worm	P34339	egl-45	P34339	17	119	Eukaryotic translation initiation factor 3 subunit A	w
+INITIATION	worm	P34563	iff-1	P34563	12	153	Eukaryotic translation initiation factor 5A-1	w
+INITIATION	worm	P34604	ZK1098.4	P34604	2	25	Translation initiation factor eIF2B subunit alpha	w
+INITIATION	worm	P48322	tif-1A	P48322	2	59	RNA polymerase I-specific transcription initiation factor ti	w
+INITIATION	worm	P56570	ife-5	P56570	4	38	Eukaryotic translation initiation factor 4E-5	w
+INITIATION	worm	P80361	eif-2Bgamma	P80361	1	17	Translation initiation factor eIF2B subunit gamma	w
+INITIATION	worm	Q17558	gtf-2f1	Q17558	12	149	Transcription initiation factor IIF subunit alpha	w
+INITIATION	worm	Q17957	taf-13	Q17957	14	50	Transcription initiation factor TFIID subunit 13	w
+INITIATION	worm	Q18967	eif-3.F	Q18967	10	107	Eukaryotic translation initiation factor 3 subunit F	w
+INITIATION	worm	Q18994	eif-2bepsilon	Q18994	3	15	Translation initiation factor eIF2B subunit epsilon	w
+INITIATION	worm	Q19052	eif-2A	Q19052	2	46	Eukaryotic translation initiation factor 2A	w
+INITIATION	worm	Q19192	pek-1	Q19192	1	33	Eukaryotic translation initiation factor 2-alpha kinase pek-	w
+INITIATION	worm	Q19706	eif-3.G	Q19706	9	102	Eukaryotic translation initiation factor 3 subunit G	w
+INITIATION	worm	Q20361	taf-11.3	Q20361	18	47	Transcription initiation factor TFIID subunit 11	w
+INITIATION	worm	Q20563	taf-11.1	Q20563	11	27	Transcription initiation factor TFIID subunit 11	w
+INITIATION	worm	Q20751	iff-2	Q20751	11	158	Eukaryotic translation initiation factor 5A-2	w
+INITIATION	worm	Q21230	eif-2beta	Q21230	6	105	Eukaryotic translation initiation factor 2 subunit 2	w
+INITIATION	worm	Q21417	taf-11.2	Q21417	13	33	Transcription initiation factor TFIID subunit 11	w
+INITIATION	worm	Q21693	ife-2	Q21693	10	73	Eukaryotic translation initiation factor 4E-2	w
+INITIATION	worm	Q22168	CELE_T04F8.8	Q22168	0	3	Translation initiation factor IF-2	w
+INITIATION	worm	Q22888	ife-4	Q22888	4	35	Eukaryotic translation initiation factor 4E-4	w
+INITIATION	worm	Q22918	C37C3.2	Q22918	9	102	Eukaryotic translation initiation factor 5	w
+INITIATION	worm	Q7YTH5	taf-8	Q7YTH5	11	68	Transcription initiation factor TFIID subunit 8	w
+INITIATION	worm	Q95QW0	eif-3.L	Q95QW0	6	89	Eukaryotic translation initiation factor 3 subunit L	w
+INITIATION	worm	Q95ZS0	taf-10	Q95ZS0	13	75	Transcription initiation factor TFIID subunit 10	w
+INITIATION	worm	Q965S8	eif-3.I	Q965S8	14	120	Eukaryotic translation initiation factor 3 subunit I	w
+INITIATION	worm	Q9BIB4	B0336.13	Q9BIB4	4	52	Transcription initiation factor IIA small chain homolog	w
+INITIATION	worm	Q9BKU3	eif-2alpha	Q9BKU3	8	121	Eukaryotic translation initiation factor 2 subunit 1	w
+INITIATION	worm	Q9GZI6	taf-6.1	Q9GZI6	21	74	Transcription initiation factor TFIID subunit 6	w
+INITIATION	worm	Q9N4C7	CELE_Y76B12C.4	Q9N4C7	0	1	Translation initiation factor IF-2	w
+INITIATION	worm	Q9NEX2	gtf-2A2	Q9NEX2	6	88	Transcription initiation factor IIA subunit 2	w
+INITIATION	worm	Q9TXU7	eif-1.a	Q9TXU7	8	103	Eukaryotic translation initiation factor 4C	w
+INITIATION	worm	Q9TYN3	taf-2	Q9TYN3	2	54	Transcription initiation factor TFIID subunit 2	w
+INITIATION	worm	Q9U226	taf-12	Q9U226	17	108	Transcription initiation factor TFIID subunit 12	w
+INITIATION	worm	Q9XUP3	eif-3.K	Q9XUP3	3	83	Eukaryotic translation initiation factor 3 subunit K	w
+INITIATION	worm	Q9XW13	mxt-1	Q9XW13	4	10	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	worm	Q9XWD5	eif-2bbeta	Q9XWD5	3	11	Translation initiation factor eIF2B subunit beta	w
+INITIATION	worm	Q9XWI6	eif-3.B	Q9XWI6	7	124	Eukaryotic translation initiation factor 3 subunit B	w
+INITIATION	worm	Q9XWP7	eif-3.j	Q9XWP7	2	92	Eukaryotic translation initiation factor 3 30 kDa subunit	w
+INITIATION	yeast	P06103	PRT1	P06103	8	174	Eukaryotic translation initiation factor 3 subunit B	w
+INITIATION	yeast	P07260	CDC33	P07260	8	151	Eukaryotic translation initiation factor 4E	w
+INITIATION	yeast	P09032	GCD1	P09032	4	59	Translation initiation factor eIF2B subunit gamma	w
+INITIATION	yeast	P09064	SUI3	P09064	7	126	Eukaryotic translation initiation factor 2 subunit beta	w
+INITIATION	yeast	P11747	TAF13	P11747	11	90	Transcription initiation factor TFIID subunit 13	w
+INITIATION	yeast	P12754	GCD2	P12754	3	40	Translation initiation factor eIF2B subunit delta	w
+INITIATION	yeast	P14741	GCN3	P14741	3	53	Translation initiation factor eIF2B subunit alpha	w
+INITIATION	yeast	P19211	ANB1	P19211	10	175	Eukaryotic translation initiation factor 5A-2	w
+INITIATION	yeast	P20459	SUI2	P20459	4	157	Eukaryotic translation initiation factor 2 subunit alpha	w
+INITIATION	yeast	P23255	TAF2	P23255	11	83	Transcription initiation factor TFIID subunit 2	w
+INITIATION	yeast	P23301	HYP2	P23301	10	248	Eukaryotic translation initiation factor 5A-1	w
+INITIATION	yeast	P25038	IFM1	P25038	5	218	Translation initiation factor IF-2, mitochondrial	w
+INITIATION	yeast	P29055	SUA7	P29055	8	169	Transcription initiation factor IIB	w
+INITIATION	yeast	P32481	GCD11	P32481	10	212	Eukaryotic translation initiation factor 2 subunit gamma	w
+INITIATION	yeast	P32497	NIP1	P32497	10	175	Eukaryotic translation initiation factor 3 subunit C	w
+INITIATION	yeast	P32501	GCD6	P32501	6	71	Translation initiation factor eIF2B subunit epsilon	w
+INITIATION	yeast	P32502	GCD7	P32502	4	91	Translation initiation factor eIF2B subunit beta	w
+INITIATION	yeast	P32773	TOA1	P32773	6	84	Transcription initiation factor IIA large subunit	w
+INITIATION	yeast	P32774	TOA2	P32774	6	98	Transcription initiation factor IIA subunit 2	w
+INITIATION	yeast	P32786	RRN6	P32786	4	60	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	yeast	P32911	SUI1	P32911	5	132	Eukaryotic translation initiation factor eIF-1	w
+INITIATION	yeast	P34167	TIF3	P34167	7	79	Eukaryotic translation initiation factor 4B	w
+INITIATION	yeast	P35189	TAF14	P35189	8	165	Transcription initiation factor TFIID subunit 14	w
+INITIATION	yeast	P36070	RRN3	P36070	1	44	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	yeast	P36100	TFA1	P36100	4	104	Transcription initiation factor IIE subunit alpha	w
+INITIATION	yeast	P36145	TFA2	P36145	11	88	Transcription initiation factor IIE subunit beta	w
+INITIATION	yeast	P38204	RRN10	P38204	3	25	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	yeast	P38249	RPG1	P38249	12	187	Eukaryotic translation initiation factor 3 subunit A	w
+INITIATION	yeast	P38431	TIF5	P38431	12	115	Eukaryotic translation initiation factor 5	w
+INITIATION	yeast	P38912	TIF11	P38912	5	121	Eukaryotic translation initiation factor 1A	w
+INITIATION	yeast	P39730	FUN12	P39730	7	285	Eukaryotic translation initiation factor 5B	w
+INITIATION	yeast	P39935	TIF4631	P39935	27	376	Eukaryotic initiation factor 4F subunit p150	w
+INITIATION	yeast	P39936	TIF4632	P39936	17	127	Eukaryotic initiation factor 4F subunit p130	w
+INITIATION	yeast	P40217	TIF34	P40217	5	137	Eukaryotic translation initiation factor 3 subunit I	w
+INITIATION	yeast	P40992	RRN7	P40992	7	278	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	yeast	P41895	TFG1	P41895	15	117	Transcription initiation factor IIF subunit alpha	w
+INITIATION	yeast	P41896	TFG2	P41896	12	122	Transcription initiation factor IIF subunit beta	w
+INITIATION	yeast	P46677	TAF1	P46677	16	169	Transcription initiation factor TFIID subunit 1 (EC 2.3.1.48	w
+INITIATION	yeast	P50105	TAF4	P50105	21	97	Transcription initiation factor TFIID subunit 4	w
+INITIATION	yeast	P53235	YGR054W	P53235	7	101	Eukaryotic translation initiation factor 2A	w
+INITIATION	yeast	P53437	RRN9	P53437	3	23	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	yeast	Q02983	RRN5	Q02983	3	16	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	yeast	Q03195	RLI1	Q03195	11	209	Translation initiation factor RLI1	w
+INITIATION	yeast	Q03750	TAF8	Q03750	10	67	Transcription initiation factor TFIID subunit 8	w
+INITIATION	yeast	Q04067	TIF35	Q04067	9	121	Eukaryotic translation initiation factor 3 subunit G	w
+INITIATION	yeast	Q04226	TAF11	Q04226	13	74	Transcription initiation factor TFIID subunit 11	w
+INITIATION	yeast	Q04712	RRN11	Q04712	2	79	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	yeast	Q05021	TAF7	Q05021	7	65	Transcription initiation factor TFIID subunit 7	w
+INITIATION	yeast	Q05775	HCR1	Q05775	2	102	Eukaryotic translation initiation factor 3 subunit J	w
+INITIATION	yeast	Q05791	CDC123	Q05791	1	11	Translation initiation factor eIF2 assembly protein	w
+INITIATION	yeast	Q12297	TAF3	Q12297	8	27	Transcription initiation factor TFIID subunit 3	w
+INITIATION	yeast	Q12522	TIF6	Q12522	7	245	Eukaryotic translation initiation factor 6	w
+INITIATION	zebrafish	A0A0R4ICI5	rrn3	A0A0R4ICI5	2	64	RNA polymerase I-specific transcription initiation factor RR	w
+INITIATION	zebrafish	A0A0R4IMF6	eif4ba	A0A0R4IMF6	13	159	Eukaryotic translation initiation factor 4B	w
+INITIATION	zebrafish	A0A8M1NXK7	eif3f	A0A8M1NXK7	19	214	Eukaryotic translation initiation factor 3 subunit F	w
+INITIATION	zebrafish	A0A8M2BCS6	taf1	A0A8M2BCS6	6	23	Transcription initiation factor TFIID subunit	w
+INITIATION	zebrafish	A0A8M6YWV6	taf4b	A0A8M6YWV6	23	100	Transcription initiation factor TFIID subunit 4	w
+INITIATION	zebrafish	A0AB13AB08	gtf2f1	A0AB13AB08	34	221	Transcription initiation factor IIF subunit alpha	w
+INITIATION	zebrafish	A0AB40EDI1	si:dkey-219c3.2	A0AB40EDI1	23	99	Transcription initiation factor TFIID subunit 4 isoform X1	w
+INITIATION	zebrafish	A1L200	eif4e2	A1L200	6	47	Eukaryotic translation initiation factor 4E type 2	w
+INITIATION	zebrafish	A2BEV1	mtif3	A2BEV1	3	39	Mitochondrial translational initiation factor 3	w
+INITIATION	zebrafish	A9JT06	eif4e1c	A9JT06	8	94	Eukaryotic translation initiation factor 4E family member 1c	w
+INITIATION	zebrafish	E7F6H3	ctif	E7F6H3	1	6	CBP80/20-dependent translation initiation factor	w
+INITIATION	zebrafish	E7FDR0	eif4enif1	E7FDR0	21	82	Eukaryotic translation initiation factor 4E nuclear import f	w
+INITIATION	zebrafish	F1QGW6	eif2s3	F1QGW6	11	232	Eukaryotic translation initiation factor 2 subunit 3	w
+INITIATION	zebrafish	F1QYM4	eif4h	F1QYM4	6	161	Eukaryotic translation initiation factor 4H	w
+INITIATION	zebrafish	Q1LVD6	taf10	Q1LVD6	29	305	Transcription initiation factor TFIID subunit 10	w
+INITIATION	zebrafish	Q32PW3	taf2	Q32PW3	10	138	Transcription initiation factor TFIID subunit 2	w
+INITIATION	zebrafish	Q32PW4	taf5	Q32PW4	27	303	Transcription initiation factor TFIID subunit 5	w
+INITIATION	zebrafish	Q4QRJ7	eif2a	Q4QRJ7	3	40	Eukaryotic translation initiation factor 2A	w
+INITIATION	zebrafish	Q4V9N9	eif1axb	Q4V9N9	11	152	Eukaryotic translation initiation factor 4C	w
+INITIATION	zebrafish	Q503H9	gtf2a2	Q503H9	7	163	Transcription initiation factor IIA subunit 2	w
+INITIATION	zebrafish	Q567V6	eif3k	Q567V6	8	128	Eukaryotic translation initiation factor 3 subunit K	w
+INITIATION	zebrafish	Q5PR67	eif3hb	Q5PR67	5	125	Eukaryotic translation initiation factor 3 subunit H-B	w
+INITIATION	zebrafish	Q5RH27	taf3	Q5RH27	19	131	Transcription initiation factor TFIID subunit 3	w
+INITIATION	zebrafish	Q5RIE1	eif2b4	Q5RIE1	2	12	Translation initiation factor eIF2B subunit delta	w
+INITIATION	zebrafish	Q5U3D2	eif4ebp3	Q5U3D2	6	13	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	zebrafish	Q5XJR0	eif1axa	Q5XJR0	7	152	Eukaryotic translation initiation factor 4C	w
+INITIATION	zebrafish	Q66HY7	eif4e3	Q66HY7	10	68	Eukaryotic translation initiation factor 4E type 3	w
+INITIATION	zebrafish	Q66HZ5	taf6	Q66HZ5	32	172	Transcription initiation factor TFIID subunit 6	w
+INITIATION	zebrafish	Q6AXJ2	eif3ha	Q6AXJ2	5	125	Eukaryotic translation initiation factor 3 subunit H-A	w
+INITIATION	zebrafish	Q6DRC4	eif3g	Q6DRC4	15	140	Eukaryotic translation initiation factor 3 subunit G	w
+INITIATION	zebrafish	Q6DRI1	eif3ea	Q6DRI1	21	175	Eukaryotic translation initiation factor 3 subunit E-A	w
+INITIATION	zebrafish	Q6NX89	eif5a	Q6NX89	8	200	Eukaryotic translation initiation factor 5A-1	w
+INITIATION	zebrafish	Q6NXA3	gtf2e2	Q6NXA3	19	176	Transcription initiation factor IIE subunit beta	w
+INITIATION	zebrafish	Q6NXC7	eif2b2	Q6NXC7	2	13	Translation initiation factor eIF2B subunit beta	w
+INITIATION	zebrafish	Q6NYL2	eif4ebp2	Q6NYL2	4	8	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	zebrafish	Q6P013	taf12	Q6P013	18	278	Transcription initiation factor TFIID subunit 12	w
+INITIATION	zebrafish	Q6P0T2	taf8	Q6P0T2	25	140	Transcription initiation factor TFIID subunit 8	w
+INITIATION	zebrafish	Q6PBU4	eif4e2rs1	Q6PBU4	5	25	Eukaryotic translation initiation factor 4E type 2	w
+INITIATION	zebrafish	Q6PC40	cdc123	Q6PC40	1	5	Translation initiation factor eIF2 assembly protein	w
+INITIATION	zebrafish	Q6PCR7	eif3a	Q6PCR7	17	145	Eukaryotic translation initiation factor 3 subunit A	w
+INITIATION	zebrafish	Q6PFQ2	eif3c	Q6PFQ2	20	172	Eukaryotic translation initiation factor 3 subunit C	w
+INITIATION	zebrafish	Q6PFS8	eif4ebp1	Q6PFS8	4	8	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	zebrafish	Q6TH15	eif3d	Q6TH15	4	139	Eukaryotic translation initiation factor 3 subunit D	w
+INITIATION	zebrafish	Q6ZM19	eif6	Q6ZM19	11	232	Eukaryotic translation initiation factor 6	w
+INITIATION	zebrafish	Q7SXU0	eif3ja	Q7SXU0	6	110	Eukaryotic translation initiation factor 3 subunit J-A	w
+INITIATION	zebrafish	Q7T2A5	eif3l	Q7T2A5	5	146	Eukaryotic translation initiation factor 3 subunit L	w
+INITIATION	zebrafish	Q7T3B0	eif3m	Q7T3B0	12	155	Eukaryotic translation initiation factor 3 subunit M	w
+INITIATION	zebrafish	Q7ZTY5	eif2b3	Q7ZTY5	2	20	Translation initiation factor eIF2B subunit gamma	w
+INITIATION	zebrafish	Q7ZUI8	eif1	Q7ZUI8	7	147	Eukaryotic translation initiation factor 1	w
+INITIATION	zebrafish	Q7ZUP4	eif5a2	Q7ZUP4	7	198	Eukaryotic translation initiation factor 5A	w
+INITIATION	zebrafish	Q7ZV55	eif3i	Q7ZV55	7	115	Eukaryotic translation initiation factor 3 subunit I	w
+INITIATION	zebrafish	Q7ZVA6	eif4a3	Q7ZVA6	14	319	Eukaryotic initiation factor 4A-III	w
+INITIATION	zebrafish	Q7ZW93	eif1b	Q7ZW93	9	146	Eukaryotic Translation initiation factor 1B	w
+INITIATION	zebrafish	Q7ZWA9	eif5	Q7ZWA9	10	149	Eukaryotic translation initiation factor 5	w
+INITIATION	zebrafish	Q7ZWD3	eif2s1a	Q7ZWD3	9	179	Eukaryotic translation initiation factor 2 subunit 1	w
+INITIATION	zebrafish	Q803P1	eif3jb	Q803P1	6	110	Eukaryotic translation initiation factor 3 subunit J-B	w
+INITIATION	zebrafish	Q98TT6	eif4ebp3l	Q98TT6	5	5	Eukaryotic translation initiation factor 4E-binding protein 	w
+INITIATION	zebrafish	Q9DFS6	eif4ea	Q9DFS6	9	98	Eukaryotic translation initiation factor 4E-1A	w
+INITIATION	zebrafish	Q9I9E9	eif2s1b	Q9I9E9	11	179	Eukaryotic translation initiation factor 2 subunit 1	w
+INITIATION	zebrafish	Q9PW28	eif4e1b	Q9PW28	10	98	Eukaryotic translation initiation factor 4E-1B	w
+INITIATION	zebrafish	X1WET9	eif3ba	X1WET9	11	154	Eukaryotic translation initiation factor 3 subunit B	w
+INITIATION-SPECIFIC	yeast	P31755	OCH1	P31755	1	30	Initiation-specific alpha-1,6-mannosyltransferase	w
+INITIATOR	human	C9JSJ3	MEIOSIN	C9JSJ3	2	6	Meiosis initiator protein (Basic helix-loop-helix and HMG bo	w
+INITIATOR	human	Q6P1X5	TAF2	Q6P1X5	43	522	Transcription initiation factor TFIID subunit 2 (150 kDa cof	w
+INITIATOR	human	Q8N6T0	TOP6BL	Q8N6T0	2	6	Type 2 DNA topoisomerase 6 subunit B-like (TOP6B like initia	w
+INITIATOR	virus	A0A076K072		A0A076K072	0	4	Initiator protein NS1	w
+INITIATOR	virus	A0A097F8P3		A0A097F8P3	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A0A0Q450		A0A0A0Q450	0	5	Initiator protein NS1	w
+INITIATOR	virus	A0A0E3VL15	NS1	A0A0E3VL15	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A0S2XGE5		A0A0S2XGE5	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A0U2UI06		A0A0U2UI06	0	2	Initiator protein NS1	w
+INITIATOR	virus	A0A0U3BDC2		A0A0U3BDC2	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A0Y0BM95	NS1	A0A0Y0BM95	0	5	Initiator protein NS1	w
+INITIATOR	virus	A0A0Y0D5K5	NS2	A0A0Y0D5K5	0	5	Initiator protein NS1	w
+INITIATOR	virus	A0A146GE41	NS1	A0A146GE41	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A168P987	NS1	A0A168P987	0	5	Initiator protein NS1	w
+INITIATOR	virus	A0A193AUR3	ORF1	A0A193AUR3	0	2	Initiator protein NS1	w
+INITIATOR	virus	A0A1B0VJ42		A0A1B0VJ42	0	5	Initiator protein NS1	w
+INITIATOR	virus	A0A1B3IIG2	NS1	A0A1B3IIG2	0	4	Initiator protein NS1	w
+INITIATOR	virus	A0A1D8QQE9		A0A1D8QQE9	0	2	Initiator protein NS1	w
+INITIATOR	virus	A0A1W5PPT3	NS1	A0A1W5PPT3	2	5	Initiator protein NS1	w
+INITIATOR	virus	A0A1W5PPW3	NS2	A0A1W5PPW3	0	5	Initiator protein NS1	w
+INITIATOR	virus	A0A1Z3FVU9	NS1	A0A1Z3FVU9	0	4	Initiator protein NS1	w
+INITIATOR	virus	A0A1Z3FVX5	NS1	A0A1Z3FVX5	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A221LEC6		A0A221LEC6	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A2H4N9V9	NS1	A0A2H4N9V9	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A2S0SYY8		A0A2S0SYY8	0	4	Initiator protein NS1	w
+INITIATOR	virus	A0A2U8CRN0		A0A2U8CRN0	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A2Z3D950		A0A2Z3D950	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0A517FM29		A0A517FM29	0	2	Initiator protein NS1	w
+INITIATOR	virus	A0A5J6BDH4	NS1	A0A5J6BDH4	0	4	Initiator protein NS1	w
+INITIATOR	virus	A0A7D5T368		A0A7D5T368	0	2	Initiator protein NS1	w
+INITIATOR	virus	A0A9E7VB57	NS1	A0A9E7VB57	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0AA48XHX2		A0AA48XHX2	0	5	Initiator protein NS1	w
+INITIATOR	virus	A0AAE8BBP7		A0AAE8BBP7	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0AAX1PBY5		A0AAX1PBY5	0	3	Initiator protein NS1	w
+INITIATOR	virus	A0AAX2ZA48	NS1	A0AAX2ZA48	0	4	Initiator protein NS1	w
+INITIATOR	virus	B8XCK2		B8XCK2	0	4	Initiator protein NS1	w
+INITIATOR	virus	B9UYK5	NS1	B9UYK5	0	3	Initiator protein NS1	w
+INITIATOR	virus	D0EZM8	NS1	D0EZM8	0	6	Initiator protein NS1	w
+INITIATOR	virus	D7RF51		D7RF51	0	4	Initiator protein NS1	w
+INITIATOR	virus	E3W906	NS1	E3W906	0	4	Initiator protein NS1	w
+INITIATOR	virus	F8RWB2		F8RWB2	0	4	Initiator protein NS1	w
+INITIATOR	virus	G1JYW6		G1JYW6	0	4	Initiator protein NS1	w
+INITIATOR	virus	G1JYX9		G1JYX9	0	2	Initiator protein NS1	w
+INITIATOR	virus	G3EZE1	NS1	G3EZE1	0	4	Initiator protein NS1	w
+INITIATOR	virus	G5CKI2		G5CKI2	0	5	Initiator protein NS1	w
+INITIATOR	virus	G9ID10		G9ID10	0	4	Initiator protein NS1	w
+INITIATOR	virus	I3VR58		I3VR58	0	4	Initiator protein NS1	w
+INITIATOR	virus	I6XK58		I6XK58	0	4	Initiator protein NS1	w
+INITIATOR	virus	K4NWE5		K4NWE5	0	2	Initiator protein NS1	w
+INITIATOR	virus	M1PI49		M1PI49	0	3	Initiator protein NS1	w
+INITIATOR	virus	N0A5N5		N0A5N5	0	3	Initiator protein NS1	w
+INITIATOR	virus	O71157	NS1	O71157	0	2	Initiator protein NS1	w
+INITIATOR	virus	P03134	NS1	P03134	0	8	Initiator protein NS1	w
+INITIATOR	virus	P07296	NS1	P07296	0	3	Initiator protein NS1	w
+INITIATOR	virus	P12929	NS1	P12929	0	2	Initiator protein NS1	w
+INITIATOR	virus	P24030	NS1	P24030	0	4	Initiator protein NS1	w
+INITIATOR	virus	Q6TV13	NS	Q6TV13	0	6	Initiator protein NS1	w
+INITIATOR	virus	Q84365	NS1	Q84365	0	8	Initiator protein NS1	w
+INITIATOR	virus	Q90185	NS1	Q90185	0	3	Initiator protein NS1	w
+INITIATOR	virus	R4L4X1	NS1	R4L4X1	0	4	Initiator protein NS1	w
+INITIATOR	virus	R4LAH7	NS1	R4LAH7	0	4	Initiator protein NS1	w
+INITIATOR	virus	U5YM23	NS1	U5YM23	0	4	Initiator protein NS1	w

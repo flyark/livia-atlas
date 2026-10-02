@@ -1,7 +1,59 @@
-PMS1	arabidopsis-thaliana	Q941I6	PMS1	Q941I6	7	77	DNA mismatch repair protein PMS1
-PMS1	candida-albicans-237561	A0A1D8PII6	PMS1	A0A1D8PII6	5	32	ATP-binding mismatch repair protein
-PMS1	dictyostelium-discoideum	Q54QA0	pms1	Q54QA0	4	31	Mismatch repair endonuclease pms1
-PMS1	mus-musculus	Q8K119	Pms1	Q8K119	9	61	PMS1 homolog 1, mismatch repair system component
-PMS1	rattus-norvegicus	D4A651	Pms1	D4A651	8	60	PMS1 homolog 1, mismatch repair system component
-PMS1	schizosaccharomyces-pombe	P54280	pms1	P54280	3	43	DNA mismatch repair protein pms1
-PMS2	mus-musculus	P54279	Pms2	P54279	6	58	Mismatch repair endonuclease PMS2
+PMS-2	worm	G5EFG5	pms-2	G5EFG5	4	39	Mismatch repair endonuclease PMS2	
+PMS1	arabidopsis-thaliana	Q941I6	PMS1	Q941I6	7	77	DNA mismatch repair protein PMS1	
+PMS1	candida-albicans-237561	A0A1D8PII6	PMS1	A0A1D8PII6	5	32	ATP-binding mismatch repair protein	
+PMS1	dictyostelium-discoideum	Q54QA0	pms1	Q54QA0	4	31	Mismatch repair endonuclease pms1	
+PMS1	human	P54277	PMS1	P54277	32	200	PMS1 protein homolog 1 (DNA mismatch repair protein PMS1)	
+PMS1	human	P54278	PMS2	P54278	24	194	Mismatch repair endonuclease PMS2 (EC 3.1.-.-) (DNA mismatch	w
+PMS1	mus-musculus	Q8K119	Pms1	Q8K119	9	61	PMS1 homolog 1, mismatch repair system component	
+PMS1	rattus-norvegicus	D4A651	Pms1	D4A651	8	60	PMS1 homolog 1, mismatch repair system component	
+PMS1	schizosaccharomyces-pombe	P54280	pms1	P54280	3	43	DNA mismatch repair protein pms1	
+PMS1	yeast	P14242	PMS1	P14242	7	51	DNA mismatch repair protein PMS1	
+PMS1	zebrafish	A0AB32TWV9	pms1	A0AB32TWV9	8	46	PMS1 protein homolog 1 isoform X1	w
+PMS1	zebrafish	A0AB32TWV9	pms1	A0AB32TWV9	8	46	PMS1 protein homolog 1 isoform X1	w
+PMS1_HUMAN	human	P54277	PMS1	P54277	32	200		
+PMS2	fly	FBgn0011660	Pms2	A1ZA03	10	98	Pms2 (EC 3.6.1.3)	w
+PMS2	fly	FBgn0011660	Pms2	A1ZA03	10	98	Pms2 (EC 3.6.1.3)	w
+PMS2	human	P54278	PMS2	P54278	24	194	Mismatch repair endonuclease PMS2 (EC 3.1.-.-) (DNA mismatch	
+PMS2	mus-musculus	P54279	Pms2	P54279	6	58	Mismatch repair endonuclease PMS2	
+PMS2	worm	G5EFG5	pms-2	G5EFG5	4	39	Mismatch repair endonuclease PMS2	w
+PMS2	zebrafish	E7F558	pms2	E7F558	3	49	Mismatch repair endonuclease PMS2	w
+PMS2	zebrafish	E7F558	pms2	E7F558	3	49	Mismatch repair endonuclease PMS2	w
+PMS2-C	human	Q68D20	PMS2CL	Q68D20	1	14	Protein PMS2CL (PMS2-C terminal-like protein)	w
+PMS2-RELATED	human	A4D2B8	PMS2P1	A4D2B8	2	7	Putative postmeiotic segregation increased 2-like protein 1 	w
+PMS2-RELATED	human	Q13401	PMS2P3	Q13401	2	2	Putative postmeiotic segregation increased 2-like protein 3 	w
+PMS2-RELATED	human	Q13670	PMS2P11	Q13670	7	51	Putative postmeiotic segregation increased 2-like protein 11	w
+PMS2CL	human	Q68D20	PMS2CL	Q68D20	1	14	Protein PMS2CL (PMS2-C terminal-like protein)	
+PMS2L1	human	A4D2B8	PMS2P1	A4D2B8	2	7		
+PMS2L11	human	Q13670	PMS2P11	Q13670	7	51		
+PMS2L13	human	A4D2B8	PMS2P1	A4D2B8	2	7		
+PMS2L14	human	O95744	PMS2P2	O95744	2	4		
+PMS2L2	human	O95744	PMS2P2	O95744	2	4		
+PMS2L3	human	Q13401	PMS2P3	Q13401	2	2		
+PMS2L5	human	A8MQ11	PMS2P5	A8MQ11	4	17		
+PMS2L6	human	A4D2B8	PMS2P1	A4D2B8	2	7		
+PMS2L8	human	A4D2B8	PMS2P1	A4D2B8	2	7		
+PMS2L9	human	Q13401	PMS2P3	Q13401	2	2		
+PMS2L_HUMAN	human	Q68D20	PMS2CL	Q68D20	1	14		
+PMS2P1	human	A4D2B8	PMS2P1	A4D2B8	2	7	Putative postmeiotic segregation increased 2-like protein 1 	
+PMS2P11	human	Q13670	PMS2P11	Q13670	7	51	Putative postmeiotic segregation increased 2-like protein 11	
+PMS2P13	human	Q68D20	PMS2CL	Q68D20	1	14		
+PMS2P2	human	O95744	PMS2P2	O95744	2	4	Putative postmeiotic segregation increased 2-like protein 2 	
+PMS2P3	human	Q13401	PMS2P3	Q13401	2	2	Putative postmeiotic segregation increased 2-like protein 3 	
+PMS2P5	human	A8MQ11	PMS2P5	A8MQ11	4	17	Postmeiotic segregation increased 2-like protein 5 (Postmeio	
+PMS2_477	fly	FBgn0011660	Pms2	A1ZA03	10	98		
+PMS2_HUMAN	human	P54278	PMS2	P54278	24	194		
+PMS3	human	A4D2B8	PMS2P1	A4D2B8	2	7		
+PMS4	human	A8MQ11	PMS2P5	A8MQ11	4	17		
+PMS4	human	O95744	PMS2P2	O95744	2	4		
+PMS5	human	Q13401	PMS2P3	Q13401	2	2		
+PMS7	human	A8MQ11	PMS2P5	A8MQ11	4	17		
+PMS8	human	A4D2B8	PMS2P1	A4D2B8	2	7		
+PMSCL	human	Q01780	EXOSC10	Q01780	77	484		
+PMSCL1	human	Q06265	EXOSC9	Q06265	30	343		
+PMSCL2	human	Q01780	EXOSC10	Q01780	77	484		
+PMSGN1	human	A6NI15	MSGN1	A6NI15	108	388	Mesogenin-1 (Paraxial mesoderm-specific mesogenin1) (pMesoge	w
+PMSL1	human	P54277	PMS1	P54277	32	200		
+PMSL2	human	P54278	PMS2	P54278	24	194		
+PMSR2	human	A4D2B8	PMS2P1	A4D2B8	2	7		
+PMSR3	human	Q13401	PMS2P3	Q13401	2	2		
+PMSR6	human	Q13670	PMS2P11	Q13670	7	51		

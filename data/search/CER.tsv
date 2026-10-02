@@ -1,28 +1,236 @@
-CER1	arabidopsis-thaliana	F4HVY0	CER1	F4HVY0	0	10	Very-long-chain aldehyde decarbonylase CER1
-CER1	mus-musculus	O55233	Cer1	O55233	0	3	Cerberus
-CER1	rattus-norvegicus	A6J843	Cer1	A6J843	0	2	Cerberus
-CER2	arabidopsis-thaliana	Q39048	CER2	Q39048	1	9	Protein ECERIFERUM 2
-CER26	arabidopsis-thaliana	Q9SVM9	CER26	Q9SVM9	0	4	Protein ECERIFERUM 26
-CER26L	arabidopsis-thaliana	Q9LIS1	CER26L	Q9LIS1	1	6	Protein ECERIFERUM 26-like
-CER3	arabidopsis-thaliana	Q8H1Z0	CER3	Q8H1Z0	0	6	Very-long-chain aldehyde decarbonylase CER3
-CERCAM	mus-musculus	A3KGW5	Cercam	A3KGW5	0	2	Inactive glycosyltransferase 25 family member 3
-CERK	arabidopsis-thaliana	Q6USK2	CERK	Q6USK2	0	1	Ceramide kinase
-CERK	mus-musculus	Q8K4Q7	Cerk	Q8K4Q7	0	6	Ceramide kinase
-CERK	oryza-sativa-subsp-japonica	C0LT23	CERK	C0LT23	0	2	Ceramide kinase
-CERK	rattus-norvegicus	D3Z9Y3	Cerk	D3Z9Y3	0	4	Ceramide kinase
-CERK1	arabidopsis-thaliana	A8R7E6	CERK1	A8R7E6	4	26	Chitin elicitor receptor kinase 1
-CERK1	oryza-sativa-subsp-japonica	A0A0P0XII1	CERK1	A0A0P0XII1	5	18	Chitin elicitor receptor kinase 1
-CERLI2	plasmodium-falciparum-36329	Q8I1X7	CERLI2	Q8I1X7	0	1	Rhoptry surface protein CERLI2
-CERS1	rattus-norvegicus	Q1HL14	Cers1	Q1HL14	0	12	Growth differentiation factor 1
-CERS2	mus-musculus	Q924Z4	Cers2	Q924Z4	2	32	Ceramide synthase 2
-CERS2	rattus-norvegicus	Q3T1K1	Cers2	Q3T1K1	0	15	Ceramide synthase 2
-CERS3	mus-musculus	Q1A3B0	Cers3	Q1A3B0	0	11	Ceramide synthase 3
-CERS3	rattus-norvegicus	F7FB42	Cers3	F7FB42	1	12	Ceramide synthase 3
-CERS4	mus-musculus	Q9D6J1	Cers4	Q9D6J1	0	11	Ceramide synthase 4
-CERS4	rattus-norvegicus	D3ZU86	Cers4	D3ZU86	0	12	Ceramide synthase 4
-CERS5	mus-musculus	Q9D6K9	Cers5	Q9D6K9	0	14	Ceramide synthase 5
-CERS5	rattus-norvegicus	D4AA91	Cers5	D4AA91	1	11	Ceramide synthase 5
-CERS6	mus-musculus	Q8C172	Cers6	Q8C172	0	14	Ceramide synthase 6
-CERS6	rattus-norvegicus	F1LTP8	Cers6	F1LTP8	0	13	Ceramide synthase 6
-CERT1	mus-musculus	Q9EQG9	Cert1	Q9EQG9	2	11	Ceramide transfer protein
-CERT1	rattus-norvegicus	D4ACN6	Cert1	D4ACN6	2	11	Ceramide transfer protein
+CER	fly	FBgn0034443	cer	A1ZBK7	1	8	Crammer (GEO13161p1) (LP06209p)	
+CER-D4	human	Q92784	DPF3	Q92784	87	440	Zinc finger protein DPF3 (BRG1-associated factor 45C) (BAF45	w
+CER1	arabidopsis-thaliana	F4HVY0	CER1	F4HVY0	0	10	Very-long-chain aldehyde decarbonylase CER1	
+CER1	human	O95813	CER1	O95813	4	42	Cerberus (Cerberus-related protein) (DAN domain family membe	
+CER1	mus-musculus	O55233	Cer1	O55233	0	3	Cerberus	
+CER1	rattus-norvegicus	A6J843	Cer1	A6J843	0	2	Cerberus	
+CER1_HUMAN	human	O95813	CER1	O95813	4	42		
+CER2	arabidopsis-thaliana	Q39048	CER2	Q39048	1	9	Protein ECERIFERUM 2	
+CER2	human	Q8N907	DAND5	Q8N907	5	39		
+CER26	arabidopsis-thaliana	Q9SVM9	CER26	Q9SVM9	0	4	Protein ECERIFERUM 26	
+CER26L	arabidopsis-thaliana	Q9LIS1	CER26L	Q9LIS1	1	6	Protein ECERIFERUM 26-like	
+CER3	arabidopsis-thaliana	Q8H1Z0	CER3	Q8H1Z0	0	6	Very-long-chain aldehyde decarbonylase CER3	
+CERAMIDASE	fly	FBgn0039774	CDase	Q9VA70	17	299	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.23) (Neutral	w
+CERAMIDASE	fly	FBgn0045064	bwa	M9PDG7	2	57	Alkaline ceramidase (EC 3.5.1.-)	w
+CERAMIDASE	human	P0C7U1	ASAH2B	P0C7U1	2	27	Putative inactive neutral ceramidase B (ASAH2-like protein) 	w
+CERAMIDASE	human	Q13510	ASAH1	Q13510	4	166	Acid ceramidase (AC) (ACDase) (Acid CDase) (EC 3.5.1.23) (Ac	w
+CERAMIDASE	human	Q5QJU3	ACER2	Q5QJU3	0	32	Alkaline ceramidase 2 (AlkCDase 2) (Alkaline CDase 2) (haCER	w
+CERAMIDASE	human	Q8TDN7	ACER1	Q8TDN7	3	28	Alkaline ceramidase 1 (AlkCDase 1) (Alkaline CDase 1) (EC 3.	w
+CERAMIDASE	human	Q9NR71	ASAH2	Q9NR71	0	27	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.-) (EC 3.5.1	w
+CERAMIDASE	human	Q9NUN7	ACER3	Q9NUN7	3	54	Alkaline ceramidase 3 (AlkCDase 3) (Alkaline CDase 3) (EC 3.	w
+CERAMIDASE	worm	O45145	W02F12.2	O45145	0	5	Alkaline ceramidase	w
+CERAMIDASE	worm	O45686	asah-1	O45686	0	7	Acid ceramidase	w
+CERAMIDASE	worm	Q09551	asah-2	Q09551	0	7	Probable acid ceramidase	w
+CERAMIDASE	yeast	P38298	YPC1	P38298	0	9	Alkaline ceramidase YPC1	w
+CERAMIDASE	yeast	Q02896	YDC1	Q02896	0	14	Alkaline ceramidase YDC1	w
+CERAMIDASE	zebrafish	A0A8M1P6A3	acer3	A0A8M1P6A3	0	1	Alkaline ceramidase	w
+CERAMIDASE	zebrafish	E7FCF4	acer2	E7FCF4	0	4	Alkaline ceramidase	w
+CERAMIDASE	zebrafish	Q568I2	acer1	Q568I2	0	3	Alkaline ceramidase 1	w
+CERAMIDASE	zebrafish	Q5W7F1	asah2	Q5W7F1	0	4	Neutral ceramidase	w
+CERAMIDASE	zebrafish	Q6PH71	asah1b	Q6PH71	2	104	Acid ceramidase	w
+CERAMIDASE-LIKE	human	Q02083	NAAA	Q02083	29	325	N-acylethanolamine-hydrolyzing acid amidase (EC 3.5.1.60) (A	w
+CERAMIDE	fly	FBgn0025335	Cpes	O77475	3	120	Ceramide phosphoethanolamine synthase (CPE synthase) (EC 2.7	w
+CERAMIDE	fly	FBgn0027569	cert	Q9Y128	151	1162	Ceramide transfer protein (Collagen type IV alpha-3-binding 	w
+CERAMIDE	fly	FBgn0037315	Cerk	Q9VNA6	1	23	Ceramide kinase, isoform A (Ceramide kinase, isoform B (EC 2	w
+CERAMIDE	fly	FBgn0052380	SMSr	Q9VS60	0	8	Ceramide phosphoethanolamine synthase (CPE synthase) (EC 2.7	w
+CERAMIDE	fly	FBgn0067102	GlcT	Q9W297	0	9	ceramide glucosyltransferase (EC 2.4.1.80)	w
+CERAMIDE	human	P27544	CERS1	P27544	0	43	Ceramide synthase 1 (CerS1) (LAG1 longevity assurance homolo	w
+CERAMIDE	human	Q16739	UGCG	Q16739	5	75	Ceramide glucosyltransferase (EC 2.4.1.80) (GLCT-1) (Glucosy	w
+CERAMIDE	human	Q16880	UGT8	Q16880	23	144	2-hydroxyacylsphingosine 1-beta-galactosyltransferase (EC 2.	w
+CERAMIDE	human	Q49MI3	CERKL	Q49MI3	8	40	Ceramide kinase-like protein	w
+CERAMIDE	human	Q6ZMG9	CERS6	Q6ZMG9	35	471	Ceramide synthase 6 (CerS6) (EC 2.3.1.-) (LAG1 longevity ass	w
+CERAMIDE	human	Q71RH2	TLCD3B	Q71RH2	11	85	Ceramide synthase (EC 2.3.1.-) (Protein FAM57B) (TLC domain-	w
+CERAMIDE	human	Q86VZ5	SGMS1	Q86VZ5	6	56	Phosphatidylcholine:ceramide cholinephosphotransferase 1 (EC	w
+CERAMIDE	human	Q8IU89	CERS3	Q8IU89	36	408	Ceramide synthase 3 (CerS3) (Dihydroceramide synthase 3) (LA	w
+CERAMIDE	human	Q8N5B7	CERS5	Q8N5B7	52	404	Ceramide synthase 5 (CerS5) (LAG1 longevity assurance homolo	w
+CERAMIDE	human	Q8NHU3	SGMS2	Q8NHU3	3	60	Phosphatidylcholine:ceramide cholinephosphotransferase 2 (EC	w
+CERAMIDE	human	Q8TCT0	CERK	Q8TCT0	12	139	Ceramide kinase (hCERK) (EC 2.7.1.138) (Acylsphingosine kina	w
+CERAMIDE	human	Q96G23	CERS2	Q96G23	40	571	Ceramide synthase 2 (CerS2) (LAG1 longevity assurance homolo	w
+CERAMIDE	human	Q96LT4	SAMD8	Q96LT4	2	30	Sphingomyelin synthase-related protein 1 (SMSr) (EC 2.7.8.-)	w
+CERAMIDE	human	Q9HA82	CERS4	Q9HA82	16	436	Ceramide synthase 4 (CerS4) (EC 2.3.1.-) (LAG1 longevity ass	w
+CERAMIDE	human	Q9NYU1	UGGT2	Q9NYU1	2	86	UDP-glucose:glycoprotein glucosyltransferase 2 (UGT2) (hUGT2	w
+CERAMIDE	human	Q9NYU2	UGGT1	Q9NYU2	18	181	UDP-glucose:glycoprotein glucosyltransferase 1 (UGT1) (hUGT1	w
+CERAMIDE	human	Q9Y5P4	CERT1	Q9Y5P4	24	124	Ceramide transfer protein (hCERT) (Collagen type IV alpha-3-	w
+CERAMIDE	worm	G5EC84	cgt-2	G5EC84	1	19	Ceramide glucosyltransferase 2	w
+CERAMIDE	worm	G5ED45	hyl-1	G5ED45	0	5	Ceramide synthase hyl-1	w
+CERAMIDE	worm	O18037	cgt-1	O18037	0	8	Ceramide glucosyltransferase 1	w
+CERAMIDE	worm	Q20735	sms-2	Q20735	2	7	Phosphatidylcholine:ceramide cholinephosphotransferase 2	w
+CERAMIDE	worm	Q21054	cgt-3	Q21054	0	8	Ceramide glucosyltransferase 3	w
+CERAMIDE	worm	Q7Z139	hyl-2	Q7Z139	0	5	Ceramide synthase hyl-2	w
+CERAMIDE	worm	Q93569	cert-1	Q93569	8	40	Ceramide transfer protein (Collagen type IV alpha-3-binding 	w
+CERAMIDE	worm	Q965Q4	sms-3	Q965Q4	2	7	Putative phosphatidylcholine:ceramide cholinephosphotransfer	w
+CERAMIDE	worm	Q9TZI1	cerk-1	Q9TZI1	0	1	Ceramide kinase 1	w
+CERAMIDE	worm	Q9U3D4	sms-1	Q9U3D4	2	9	Phosphatidylcholine:ceramide cholinephosphotransferase 1	w
+CERAMIDE	worm	Q9XWE9	lagr-1	Q9XWE9	0	5	Probable ceramide synthase lagr-1	w
+CERAMIDE	yeast	P28496	LAC1	P28496	2	49	Ceramide synthase LAC1	w
+CERAMIDE	yeast	P33300	SUR1	P33300	1	10	Mannosyl phosphorylinositol ceramide synthase SUR1	w
+CERAMIDE	yeast	P35206	CSG2	P35206	2	12	Mannosyl phosphorylinositol ceramide synthase regulatory pro	w
+CERAMIDE	yeast	P38287	CSH1	P38287	1	5	Mannosyl phosphorylinositol ceramide synthase CSH1	w
+CERAMIDE	yeast	P38703	LAG1	P38703	4	19	Ceramide synthase LAG1	w
+CERAMIDE	yeast	Q03529	SCS7	Q03529	2	56	Ceramide very long chain fatty acid hydroxylase SCS7	w
+CERAMIDE	yeast	Q03579	LIP1	Q03579	2	14	Ceramide synthase subunit LIP1	w
+CERAMIDE	zebrafish	A0A0G2KHZ9	tlcd3a	A0A0G2KHZ9	0	5	Ceramide synthase	w
+CERAMIDE	zebrafish	A0A140LFW4	cers3a	A0A140LFW4	0	5	Ceramide synthase 3 isoform X2	w
+CERAMIDE	zebrafish	A0A2R9YJF5	cert1a	A0A2R9YJF5	10	36	Ceramide transfer protein (Collagen type IV alpha-3-binding 	w
+CERAMIDE	zebrafish	A0A8M1NT99	sgms2a	A0A8M1NT99	2	8	Phosphatidylcholine:ceramide cholinephosphotransferase 2	w
+CERAMIDE	zebrafish	A0JMN0	sgms1b	A0JMN0	2	8	Phosphatidylcholine:ceramide cholinephosphotransferase 1	w
+CERAMIDE	zebrafish	A4QNW6	cerkl	A4QNW6	0	7	Ceramide kinase-like	w
+CERAMIDE	zebrafish	A5WVZ0	cerk	A5WVZ0	0	6	Ceramide kinase	w
+CERAMIDE	zebrafish	E7F9X7	cers2b	E7F9X7	0	5	Ceramide synthase 2	w
+CERAMIDE	zebrafish	E7FG14	tlcd3bb	E7FG14	0	5	Ceramide synthase	w
+CERAMIDE	zebrafish	F1Q5B1	cers1	F1Q5B1	0	5	Ceramide synthase 1	w
+CERAMIDE	zebrafish	F1QMI7	zgc:158263	F1QMI7	0	6	Ceramide kinase family protein	w
+CERAMIDE	zebrafish	F1QPF3	cers6	F1QPF3	0	3	Ceramide synthase 6	w
+CERAMIDE	zebrafish	Q5M7Y0	cert1	Q5M7Y0	1	6	Ceramide transfer protein	w
+CERAMIDE	zebrafish	Q5U3Z9	sgms1a	Q5U3Z9	2	8	Phosphatidylcholine:ceramide cholinephosphotransferase 1	w
+CERAMIDE	zebrafish	Q90YY7	cers2a	Q90YY7	0	5	Ceramide synthase 2a	w
+CERAMIDE-1-PHOSPHATE	human	Q5TA50	CPTP	Q5TA50	3	29	Ceramide-1-phosphate transfer protein (CPTP) (Glycolipid tra	w
+CERAMIDE-BINDING	yeast	Q05515	SVF1	Q05515	0	23	Ceramide-binding protein SVF1	w
+CERBERUS	human	O95813	CER1	O95813	4	42	Cerberus (Cerberus-related protein) (DAN domain family membe	w
+CERBERUS	human	Q9H772	GREM2	Q9H772	10	102	Gremlin-2 (Cysteine knot superfamily 1, BMP antagonist 2) (D	w
+CERBERUS-LIKE	human	Q8N907	DAND5	Q8N907	5	39	DAN domain family member 5 (Cerberus-like protein 2) (Cerl-2	w
+CERBERUS-RELATED	human	O95813	CER1	O95813	4	42	Cerberus (Cerberus-related protein) (DAN domain family membe	w
+CERCAM	human	Q5T4B2	CERCAM	Q5T4B2	9	162	Inactive glycosyltransferase 25 family member 3 (Cerebral en	
+CERCAM	mus-musculus	A3KGW5	Cercam	A3KGW5	0	2	Inactive glycosyltransferase 25 family member 3	
+CERD4	human	Q92784	DPF3	Q92784	87	440		
+CEREBELLAR	human	P51861	CDR1	P51861	2	26	Cerebellar degeneration-related antigen 1 (CDR34)	w
+CEREBELLAR	human	Q01850	CDR2	Q01850	55	200	Cerebellar degeneration-related protein 2 (Major Yo paraneop	w
+CEREBELLAR	human	Q14576	ELAVL3	Q14576	9	89	ELAV-like protein 3 (Hu-antigen C) (HuC) (Paraneoplastic cer	w
+CEREBELLAR	human	Q86X02	CDR2L	Q86X02	36	134	Cerebellar degeneration-related protein 2-like (Paraneoplast	w
+CEREBELLAR	worm	C6KRG7	CELE_F57C12.6	C6KRG7	1	10	Cerebellar degeneration-related protein 2-like	w
+CEREBELLAR	zebrafish	E7F704	cdr2b	E7F704	0	6	Cerebellar degeneration-related protein 2	w
+CEREBELLAR	zebrafish	Q6NZT2	cdr2l	Q6NZT2	0	2	Cerebellar degeneration-related protein 2-like	w
+CEREBELLIN	human	P23435	CBLN1	P23435	24	336	Cerebellin-1 (Precerebellin) [Cleaved into: Cerebellin (CER)	w
+CEREBELLIN	zebrafish	A0A8M1N8S6	cbln10	A0A8M1N8S6	1	22	Cerebellin 10 precursor	w
+CEREBELLIN	zebrafish	A0A8M1P3F3	cbln17	A0A8M1P3F3	1	22	Cerebellin 17 precursor	w
+CEREBELLIN	zebrafish	A0A8M2BIR9	cbln14	A0A8M2BIR9	1	22	Cerebellin 14 precursor	w
+CEREBELLIN	zebrafish	A0A8N7UYU6	cbln13	A0A8N7UYU6	0	22	Cerebellin 13 precursor	w
+CEREBELLIN	zebrafish	A0AB13AAU0	cbln7	A0AB13AAU0	1	22	Cerebellin 7 precursor	w
+CEREBELLIN	zebrafish	B0R0I5	cbln12	B0R0I5	1	22	Cerebellin 12	w
+CEREBELLIN	zebrafish	B3DK67	cbln2a	B3DK67	1	22	Cerebellin 2a	w
+CEREBELLIN	zebrafish	E7F5I8	cbln11	E7F5I8	1	22	Cerebellin 11	w
+CEREBELLIN	zebrafish	F1QNI1	cbln5	F1QNI1	1	22	Cerebellin 5	w
+CEREBELLIN-1	human	P23435	CBLN1	P23435	24	336	Cerebellin-1 (Precerebellin) [Cleaved into: Cerebellin (CER)	w
+CEREBELLIN-1	zebrafish	A0A2R8QR93	si:dkeyp-74b6.2	A0A2R8QR93	1	27	Cerebellin-1	w
+CEREBELLIN-1	zebrafish	A0AB13AAF3	cbln1	A0AB13AAF3	1	27	Cerebellin-1 precursor	w
+CEREBELLIN-2	human	Q8IUK8	CBLN2	Q8IUK8	20	198	Cerebellin-2	w
+CEREBELLIN-3	human	Q6UW01	CBLN3	Q6UW01	15	115	Cerebellin-3	w
+CEREBELLIN-4	human	Q9NTU7	CBLN4	Q9NTU7	29	374	Cerebellin-4 (Cerebellin-like glycoprotein 1)	w
+CEREBELLIN-LIKE	human	Q9NTU7	CBLN4	Q9NTU7	29	374	Cerebellin-4 (Cerebellin-like glycoprotein 1)	w
+CEREBELLUM	human	O60481	ZIC3	O60481	38	388	Zinc finger protein ZIC 3 (Zinc finger protein 203) (Zinc fi	w
+CEREBELLUM	human	O95409	ZIC2	O95409	69	406	Zinc finger protein ZIC 2 (Zinc finger protein of the cerebe	w
+CEREBELLUM	human	Q15915	ZIC1	Q15915	57	478	Zinc finger protein ZIC 1 (Zinc finger protein 201) (Zinc fi	w
+CEREBELLUM	human	Q8N9L1	ZIC4	Q8N9L1	32	345	Zinc finger protein ZIC 4 (Zinc finger protein of the cerebe	w
+CEREBELLUM	human	Q96T25	ZIC5	Q96T25	2	31	Zinc finger protein ZIC 5 (Zinc finger protein of the cerebe	w
+CEREBLON	fly	FBgn0037780	ohgt	Q9VH36	3	40	Protein cereblon (Protein ohgata)	w
+CEREBLON	human	Q96SW2	CRBN	Q96SW2	20	317	Protein cereblon	w
+CEREBLON	zebrafish	Q68EH9	crbn	Q68EH9	2	56	Protein cereblon	w
+CEREBRAL	fly	FBgn0038331	Ccm3	Q9VF70	4	31	Cerebral cavernous malformation 3 (RE18871p)	w
+CEREBRAL	human	O00522	KRIT1	O00522	31	246	Krev interaction trapped protein 1 (Krev interaction trapped	w
+CEREBRAL	human	O15255	RTL8C	O15255	1	3	CAAX box protein 1 (Cerebral protein 5)	w
+CEREBRAL	human	O43159	RRP8	O43159	62	331	Ribosomal RNA-processing protein 8 (EC 2.1.1.-) (Cerebral pr	w
+CEREBRAL	human	O75069	TMCC2	O75069	24	55	Transmembrane and coiled-coil domains protein 2 (Cerebral pr	w
+CEREBRAL	human	Q15714	TSC22D1	Q15714	25	122	TSC22 domain family protein 1 (Cerebral protein 2) (HUCEP-2)	w
+CEREBRAL	human	Q49AH0	CDNF	Q49AH0	9	31	Cerebral dopamine neurotrophic factor (ARMET-like protein 1)	w
+CEREBRAL	human	Q5T4B2	CERCAM	Q5T4B2	9	162	Inactive glycosyltransferase 25 family member 3 (Cerebral en	w
+CEREBRAL	human	Q76NI1	KNDC1	Q76NI1	26	100	Kinase non-catalytic C-lobe domain-containing protein 1 (KIN	w
+CEREBRAL	human	Q92560	BAP1	Q92560	180	1359	Ubiquitin carboxyl-terminal hydrolase BAP1 (EC 3.4.19.12) (B	w
+CEREBRAL	human	Q96JS3	PGBD1	Q96JS3	23	37	PiggyBac transposable element-derived protein 1 (Cerebral pr	w
+CEREBRAL	human	Q96TC7	RMDN3	Q96TC7	51	338	Regulator of microtubule dynamics protein 3 (RMD-3) (hRMD-3)	w
+CEREBRAL	human	Q9BSQ5	CCM2	Q9BSQ5	28	142	Cerebral cavernous malformations 2 protein (Malcavernin)	w
+CEREBRAL	human	Q9BUL8	PDCD10	Q9BUL8	38	203	Programmed cell death protein 10 (Cerebral cavernous malform	w
+CEREBRAL	human	Q9NQX7	ITM2C	Q9NQX7	19	134	Integral membrane protein 2C (Cerebral protein 14) (Transmem	w
+CEREBRAL	human	Q9NS85	CA10	Q9NS85	27	143	Carbonic anhydrase-related protein 10 (Carbonic anhydrase-re	w
+CEREBRAL	human	Q9NUG4	CCM2L	Q9NUG4	1	9	Cerebral cavernous malformations 2 protein-like (CCM2-like)	w
+CEREBRAL	worm	Q9TXI9	ccm-2	Q9TXI9	1	7	CCM (Cerebral Cavernous Malformation) gene homolog	w
+CEREBRAL	zebrafish	A4QNW4	cdnf	A4QNW4	1	3	Cerebral dopamine neurotrophic factor	w
+CEREBRAL	zebrafish	B8A4C9	cst3	B8A4C9	1	5	Cystatin C (amyloid angiopathy and cerebral hemorrhage)	w
+CEREBRAL	zebrafish	Q6DRP4	ccm2	Q6DRP4	7	18	Cerebral cavernous malformations protein 2 homolog	w
+CEREBRIN-28	human	P41222	PTGDS	P41222	164	684	Prostaglandin-H2 D-isomerase (EC 5.3.99.2) (Beta-trace prote	w
+CEREBROSIDE	human	P07602	PSAP	P07602	31	201	Prosaposin (Proactivator polypeptide) [Cleaved into: Saposin	w
+CEREBROSIDE	human	P17900	GM2A	P17900	13	149	Ganglioside GM2 activator (Cerebroside sulfate activator pro	w
+CEREBROSIDE	human	Q16880	UGT8	Q16880	23	144	2-hydroxyacylsphingosine 1-beta-galactosyltransferase (EC 2.	w
+CEREBROSIDE-SULFATASE	human	P15289	ARSA	P15289	7	153	Arylsulfatase A (ASA) (EC 3.1.6.8) (Cerebroside-sulfatase) [	w
+CEREVISIAE	zebrafish	A0A0R4IZJ0	cmc4	A0A0R4IZJ0	2	91	C-x(9)-C motif-containing 4 homolog (S. cerevisiae)	w
+CEREVISIAE	zebrafish	F1QG96	mrm1	F1QG96	5	128	Mitochondrial rRNA methyltransferase 1 homolog (S. cerevisia	w
+CEREVISIAE	zebrafish	F1QTD4	efr3ba	F1QTD4	1	1	EFR3 homolog Ba (S. cerevisiae)	w
+CEREVISIAE	zebrafish	Q1LUE7	chtf8	Q1LUE7	2	15	CTF8, chromosome transmission fidelity factor 8 homolog (S. 	w
+CEREVISIAE	zebrafish	Q6P111	lsm14aa	Q6P111	11	99	LSM14 homolog A (SCD6, S. cerevisiae)	w
+CEREVISIAE	zebrafish	Q7ZU79	cdc45	Q7ZU79	3	74	CDC45 cell division cycle 45 homolog (S. cerevisiae)	w
+CEREVISIAE	zebrafish	Q803U0	scyl3	Q803U0	3	21	SCY1-like 3 (S. cerevisiae)	w
+CEREVISIASE	zebrafish	A0A0R4IRC7	avl9	A0A0R4IRC7	2	2	AVL9 homolog (S. cerevisiase)	w
+CEREVISIN	yeast	P09232	PRB1	P09232	2	38	Cerevisin	w
+CERK	arabidopsis-thaliana	Q6USK2	CERK	Q6USK2	0	1	Ceramide kinase	
+CERK	fly	FBgn0037315	Cerk	Q9VNA6	1	23	Ceramide kinase, isoform A (Ceramide kinase, isoform B (EC 2	
+CERK	human	Q8TCT0	CERK	Q8TCT0	12	139	Ceramide kinase (hCERK) (EC 2.7.1.138) (Acylsphingosine kina	
+CERK	mus-musculus	Q8K4Q7	Cerk	Q8K4Q7	0	6	Ceramide kinase	
+CERK	oryza-sativa-subsp-japonica	C0LT23	CERK	C0LT23	0	2	Ceramide kinase	
+CERK	rattus-norvegicus	D3Z9Y3	Cerk	D3Z9Y3	0	4	Ceramide kinase	
+CERK	zebrafish	A5WVZ0	cerk	A5WVZ0	0	6	Ceramide kinase	
+CERK-1	worm	Q9TZI1	cerk-1	Q9TZI1	0	1	Ceramide kinase 1	
+CERK1	arabidopsis-thaliana	A8R7E6	CERK1	A8R7E6	4	26	Chitin elicitor receptor kinase 1	
+CERK1	oryza-sativa-subsp-japonica	A0A0P0XII1	CERK1	A0A0P0XII1	5	18	Chitin elicitor receptor kinase 1	
+CERK1_HUMAN	human	Q8TCT0	CERK	Q8TCT0	12	139		
+CERKL	human	Q49MI3	CERKL	Q49MI3	8	40	Ceramide kinase-like protein	
+CERKL	zebrafish	A4QNW6	cerkl	A4QNW6	0	7	Ceramide kinase-like	
+CERKL_HUMAN	human	Q49MI3	CERKL	Q49MI3	8	40		
+CERL-2	human	Q8N907	DAND5	Q8N907	5	39	DAN domain family member 5 (Cerberus-like protein 2) (Cerl-2	w
+CERLI2	plasmodium-falciparum-36329	Q8I1X7	CERLI2	Q8I1X7	0	1	Rhoptry surface protein CERLI2	
+CERNUNNOS	human	Q9H9Q4	NHEJ1	Q9H9Q4	25	159	Non-homologous end-joining factor 1 (Protein cernunnos) (XRC	w
+CEROID-LIPOFUSCINOSIS	human	O75503	CLN5	O75503	14	87	Bis(monoacylglycero)phosphate synthase CLN5 (BMP synthase CL	w
+CEROID-LIPOFUSCINOSIS	human	Q8NHS3	MFSD8	Q8NHS3	5	103	Major facilitator superfamily domain-containing protein 8 (C	w
+CEROID-LIPOFUSCINOSIS	human	Q9H3Z4	DNAJC5	Q9H3Z4	34	488	DnaJ homolog subfamily C member 5 (Ceroid-lipofuscinosis neu	w
+CEROID-LIPOFUSCINOSIS	human	Q9NWW5	CLN6	Q9NWW5	8	171	Ceroid-lipofuscinosis neuronal protein 6 (Protein CLN6)	w
+CERP	human	O95477	ABCA1	O95477	1	30		
+CERS1	human	P27544	CERS1	P27544	0	43	Ceramide synthase 1 (CerS1) (LAG1 longevity assurance homolo	
+CERS1	rattus-norvegicus	Q1HL14	Cers1	Q1HL14	0	12	Growth differentiation factor 1	
+CERS1	zebrafish	F1Q5B1	cers1	F1Q5B1	0	5	Ceramide synthase 1	
+CERS1_HUMAN	human	P27544	CERS1	P27544	0	43		
+CERS2	human	Q96G23	CERS2	Q96G23	40	571	Ceramide synthase 2 (CerS2) (LAG1 longevity assurance homolo	
+CERS2	mus-musculus	Q924Z4	Cers2	Q924Z4	2	32	Ceramide synthase 2	
+CERS2	rattus-norvegicus	Q3T1K1	Cers2	Q3T1K1	0	15	Ceramide synthase 2	
+CERS2A	zebrafish	Q90YY7	cers2a	Q90YY7	0	5	Ceramide synthase 2a	
+CERS2B	zebrafish	E7F9X7	cers2b	E7F9X7	0	5	Ceramide synthase 2	
+CERS2_HUMAN	human	Q96G23	CERS2	Q96G23	40	571		
+CERS3	human	Q8IU89	CERS3	Q8IU89	36	408	Ceramide synthase 3 (CerS3) (Dihydroceramide synthase 3) (LA	
+CERS3	mus-musculus	Q1A3B0	Cers3	Q1A3B0	0	11	Ceramide synthase 3	
+CERS3	rattus-norvegicus	F7FB42	Cers3	F7FB42	1	12	Ceramide synthase 3	
+CERS3A	zebrafish	A0A140LFW4	cers3a	A0A140LFW4	0	5	Ceramide synthase 3 isoform X2	
+CERS3_HUMAN	human	Q8IU89	CERS3	Q8IU89	36	408		
+CERS4	human	Q9HA82	CERS4	Q9HA82	16	436	Ceramide synthase 4 (CerS4) (EC 2.3.1.-) (LAG1 longevity ass	
+CERS4	mus-musculus	Q9D6J1	Cers4	Q9D6J1	0	11	Ceramide synthase 4	
+CERS4	rattus-norvegicus	D3ZU86	Cers4	D3ZU86	0	12	Ceramide synthase 4	
+CERS4_HUMAN	human	Q9HA82	CERS4	Q9HA82	16	436		
+CERS5	human	Q8N5B7	CERS5	Q8N5B7	52	404	Ceramide synthase 5 (CerS5) (LAG1 longevity assurance homolo	
+CERS5	mus-musculus	Q9D6K9	Cers5	Q9D6K9	0	14	Ceramide synthase 5	
+CERS5	rattus-norvegicus	D4AA91	Cers5	D4AA91	1	11	Ceramide synthase 5	
+CERS5_HUMAN	human	Q8N5B7	CERS5	Q8N5B7	52	404		
+CERS6	human	Q6ZMG9	CERS6	Q6ZMG9	35	471	Ceramide synthase 6 (CerS6) (EC 2.3.1.-) (LAG1 longevity ass	
+CERS6	mus-musculus	Q8C172	Cers6	Q8C172	0	14	Ceramide synthase 6	
+CERS6	rattus-norvegicus	F1LTP8	Cers6	F1LTP8	0	13	Ceramide synthase 6	
+CERS6	zebrafish	F1QPF3	cers6	F1QPF3	0	3	Ceramide synthase 6	
+CERS6_HUMAN	human	Q6ZMG9	CERS6	Q6ZMG9	35	471		
+CERT	fly	FBgn0027569	cert	Q9Y128	151	1162	Ceramide transfer protein (Collagen type IV alpha-3-binding 	
+CERT	human	Q9Y5P4	CERT1	Q9Y5P4	24	124		
+CERT-1	worm	Q93569	cert-1	Q93569	8	40	Ceramide transfer protein (Collagen type IV alpha-3-binding 	
+CERT1	human	Q9Y5P4	CERT1	Q9Y5P4	24	124	Ceramide transfer protein (hCERT) (Collagen type IV alpha-3-	
+CERT1	mus-musculus	Q9EQG9	Cert1	Q9EQG9	2	11	Ceramide transfer protein	
+CERT1	rattus-norvegicus	D4ACN6	Cert1	D4ACN6	2	11	Ceramide transfer protein	
+CERT1	zebrafish	A0A2R9YJF5	cert1a	A0A2R9YJF5	10	36		
+CERT1	zebrafish	Q5M7Y0	cert1	Q5M7Y0	1	6	Ceramide transfer protein	
+CERT1A	zebrafish	A0A2R9YJF5	cert1a	A0A2R9YJF5	10	36	Ceramide transfer protein (Collagen type IV alpha-3-binding 	
+CERT_HUMAN	human	Q9Y5P4	CERT1	Q9Y5P4	24	124		
+CERULOPLASMIN	human	P00450	CP	P00450	11	196	Ceruloplasmin (Cuproxidase ceruloplasmin) (EC 1.16.3.4) (Fer	w
+CERU_HUMAN	human	P00450	CP	P00450	11	196		
+CERV	fly	FBgn0030657	cerv	Q9VXT3	6	47	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	
+CERVICAL	human	P07686	HEXB	P07686	7	122	Beta-hexosaminidase subunit beta (EC 3.2.1.52) (Beta-N-acety	w
+CERVICAL	human	P82912	MRPS11	P82912	34	661	Small ribosomal subunit protein uS11m (28S ribosomal protein	w
+CERVICAL	human	Q5W5X9	TTC23	Q5W5X9	45	159	Tetratricopeptide repeat protein 23 (TPR repeat protein 23) 	w
+CERVICAL	human	Q6P1Q0	LETMD1	Q6P1Q0	4	81	LETM1 domain-containing protein 1 (Cervical cancer 1 proto-o	w
+CERVICAL	human	Q8WY22	BRI3BP	Q8WY22	10	123	BRI3-binding protein (I3-binding protein) (Cervical cancer 1	w
+CERVICAL	human	Q93045	STMN2	Q93045	9	95	Stathmin-2 (Superior cervical ganglion-10 protein) (Protein 	w
+CERVICAL	human	Q9BWH2	FUNDC2	Q9BWH2	4	108	FUN14 domain-containing protein 2 (Cervical cancer proto-onc	w
+CERVICAL	human	Q9HBF5	ST20	Q9HBF5	4	44	Suppressor of tumorigenicity 20 protein (Human cervical canc	w
+CERVICAL	human	Q9NX65	ZSCAN32	Q9NX65	37	55	Zinc finger and SCAN domain-containing protein 32 (Human cer	w
+CERVICAL	human	Q9NYL2	MAP3K20	Q9NYL2	18	146	Mitogen-activated protein kinase kinase kinase 20 (EC 2.7.11	w
+CERVICAL	human	Q9UJU6	DBNL	Q9UJU6	49	243	Drebrin-like protein (Cervical SH3P7) (Cervical mucin-associ	w

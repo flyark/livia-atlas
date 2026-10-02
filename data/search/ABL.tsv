@@ -1,11 +1,52 @@
-ABL1	mus-musculus	P00520	Abl1	P00520	19	104	Tyrosine-protein kinase ABL1
-ABL1	rattus-norvegicus	A0ABK0LKB8	Abl1	A0ABK0LKB8	13	37	ABL proto-oncogene 1, non-receptor tyrosine kinase
-ABL1	rattus-norvegicus	E9PT20	Abl1	E9PT20	22	91	Tyrosine-protein kinase
-ABL2	mus-musculus	Q4JIM5	Abl2	Q4JIM5	8	26	Tyrosine-protein kinase ABL2
-ABL2	rattus-norvegicus	F1M0N1	Abl2	F1M0N1	15	39	Tyrosine-protein kinase
-ABLIM1	mus-musculus	Q8K4G5	Ablim1	Q8K4G5	1	17	Actin-binding LIM protein 1
-ABLIM1	rattus-norvegicus	F1LWK7	Ablim1	F1LWK7	0	6	Actin-binding LIM protein 1
-ABLIM2	mus-musculus	Q8BL65	Ablim2	Q8BL65	3	12	Actin-binding LIM protein 2
-ABLIM2	rattus-norvegicus	Q6KC51	Ablim2	Q6KC51	0	4	Actin-binding LIM protein 2
-ABLIM3	mus-musculus	Q69ZX8	Ablim3	Q69ZX8	0	4	Actin-binding LIM protein 3
-ABLIM3	rattus-norvegicus	F1M8U2	Ablim3	F1M8U2	1	1	Actin binding LIM protein family, member 3
+ABL	fly	FBgn0000017	Abl	M9PFS1	185	1041	non-specific protein-tyrosine kinase (EC 2.7.10.2)	
+ABL	human	P00519	ABL1	P00519	284	1787		
+ABL-1	worm	P03949	abl-1	P03949	12	96	Tyrosine-protein kinase abl-1 (EC 2.7.10.2)	w
+ABL-1	worm	P03949	abl-1	P03949	12	96	Tyrosine-protein kinase abl-1 (EC 2.7.10.2)	w
+ABL-BINDING	human	Q8IZP0	ABI1	Q8IZP0	71	244	Abl interactor 1 (Abelson interactor 1) (Abi-1) (Abl-binding	w
+ABL-BINDING	human	Q9NYB9	ABI2	Q9NYB9	107	338	Abl interactor 2 (Abelson interactor 2) (Abi-2) (Abl-binding	w
+ABL-INTERACTING	human	O94875	SORBS2	O94875	69	157	Sorbin and SH3 domain-containing protein 2 (Arg-binding prot	w
+ABL-INTERACTOR	zebrafish	F1R187	abi1a	F1R187	25	70	Abl-interactor 1a	w
+ABL-INTERACTOR	zebrafish	Q1JPU9	abi2b	Q1JPU9	11	20	Abl-interactor 2b	w
+ABL-PHILIN	human	Q969W1	ZDHHC16	Q969W1	3	31	Palmitoyltransferase ZDHHC16 (EC 2.3.1.225) (Abl-philin 2) (	w
+ABL1	human	P00519	ABL1	P00519	284	1787	Tyrosine-protein kinase ABL1 (EC 2.7.10.2) (Abelson murine l	
+ABL1	human	Q8TDN4	CABLES1	Q8TDN4	16	66	CDK5 and ABL1 enzyme substrate 1 (Interactor with CDK3 1) (I	w
+ABL1	human	Q9BTV7	CABLES2	Q9BTV7	15	41	CDK5 and ABL1 enzyme substrate 2 (Interactor with CDK3 2) (I	w
+ABL1	mus-musculus	P00520	Abl1	P00520	19	104	Tyrosine-protein kinase ABL1	
+ABL1	rattus-norvegicus	A0ABK0LKB8	Abl1	A0ABK0LKB8	13	37	ABL proto-oncogene 1, non-receptor tyrosine kinase	
+ABL1	rattus-norvegicus	E9PT20	Abl1	E9PT20	22	91	Tyrosine-protein kinase	
+ABL1	zebrafish	A0A8M9Q830	cables2a	A0A8M9Q830	1	2	CDK5 and ABL1 enzyme substrate 2 isoform X1	w
+ABL1	zebrafish	E7F0B6	cables2b	E7F0B6	0	2	CDK5 and ABL1 enzyme substrate 2	w
+ABL1	zebrafish	F8W2F9	abl1	F8W2F9	18	54	Tyrosine-protein kinase	
+ABL1_CAEEL	worm	P03949	abl-1	P03949	12	96		
+ABL1_HUMAN	human	P00519	ABL1	P00519	284	1787		
+ABL2	human	P42684	ABL2	P42684	223	1496	Tyrosine-protein kinase ABL2 (EC 2.7.10.2) (Abelson murine l	
+ABL2	mus-musculus	Q4JIM5	Abl2	Q4JIM5	8	26	Tyrosine-protein kinase ABL2	
+ABL2	rattus-norvegicus	F1M0N1	Abl2	F1M0N1	15	39	Tyrosine-protein kinase	
+ABL2	zebrafish	A0A0R4IYB8	abl2	A0A0R4IYB8	22	51	Tyrosine-protein kinase (EC 2.7.10.2)	
+ABL2	zebrafish	B0UXN7	abl2	B0UXN7	14	47	Tyrosine-protein kinase	
+ABL2_HUMAN	human	P42684	ABL2	P42684	223	1496		
+ABLBP3	human	Q9NYB9	ABI2	Q9NYB9	107	338	Abl interactor 2 (Abelson interactor 2) (Abi-2) (Abl-binding	w
+ABLBP4	human	Q8IZP0	ABI1	Q8IZP0	71	244	Abl interactor 1 (Abelson interactor 1) (Abi-1) (Abl-binding	w
+ABLIM	human	O14639	ABLIM1	O14639	42	259		
+ABLIM	worm	H2KZ48	C30F12.5	H2KZ48	0	2	AbLIM_anchor domain-containing protein	w
+ABLIM-1	human	O14639	ABLIM1	O14639	42	259	Actin-binding LIM protein 1 (abLIM-1) (Actin-binding LIM pro	w
+ABLIM-2	human	Q6H8Q1	ABLIM2	Q6H8Q1	3	31	Actin-binding LIM protein 2 (abLIM-2) (Actin-binding LIM pro	w
+ABLIM-3	human	O94929	ABLIM3	O94929	10	70	Actin-binding LIM protein 3 (abLIM-3) (Actin-binding LIM pro	w
+ABLIM1	human	O14639	ABLIM1	O14639	42	259	Actin-binding LIM protein 1 (abLIM-1) (Actin-binding LIM pro	
+ABLIM1	mus-musculus	Q8K4G5	Ablim1	Q8K4G5	1	17	Actin-binding LIM protein 1	
+ABLIM1	rattus-norvegicus	F1LWK7	Ablim1	F1LWK7	0	6	Actin-binding LIM protein 1	
+ABLIM2	human	F5GYR0	ABLIM2	F5GYR0	1	17	Actin-binding LIM protein 2	
+ABLIM2	human	Q6H8Q1	ABLIM2	Q6H8Q1	3	31	Actin-binding LIM protein 2 (abLIM-2) (Actin-binding LIM pro	
+ABLIM2	mus-musculus	Q8BL65	Ablim2	Q8BL65	3	12	Actin-binding LIM protein 2	
+ABLIM2	rattus-norvegicus	Q6KC51	Ablim2	Q6KC51	0	4	Actin-binding LIM protein 2	
+ABLIM3	human	O94929	ABLIM3	O94929	10	70	Actin-binding LIM protein 3 (abLIM-3) (Actin-binding LIM pro	
+ABLIM3	mus-musculus	Q69ZX8	Ablim3	Q69ZX8	0	4	Actin-binding LIM protein 3	
+ABLIM3	rattus-norvegicus	F1M8U2	Ablim3	F1M8U2	1	1	Actin binding LIM protein family, member 3	
+ABLIM3	zebrafish	A0A0R4IXJ5	ablim3	A0A0R4IXJ5	1	6	Actin-binding LIM protein 3 isoform X1	
+ABLL	human	P42684	ABL2	P42684	223	1496		
+ABLM1_HUMAN	human	O14639	ABLIM1	O14639	42	259		
+ABLM2_HUMAN	human	Q6H8Q1	ABLIM2	Q6H8Q1	3	31		
+ABLM3_HUMAN	human	O94929	ABLIM3	O94929	10	70		
+ABL_1134	fly	FBgn0000017	Abl	M9PFS1	185	1041		
+ABL_1388	fly	FBgn0000017	Abl	M9PFS1	185	1041		
+ABL_863	fly	FBgn0000017	Abl	M9PFS1	185	1041		

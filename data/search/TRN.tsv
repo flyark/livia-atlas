@@ -1,9 +1,315 @@
-TRN1	arabidopsis-thaliana	Q8H0U4	TRN1	Q8H0U4	7	46	Transportin-1
-TRN1	arabidopsis-thaliana	Q9FJ57	TRN1	Q9FJ57	0	19	Protein TORNADO 1
-TRN1	oryza-sativa-subsp-japonica	B9FDR3	TRN1	B9FDR3	19	115	Transportin-1
-TRNAU1AP	mus-musculus	Q80VC6	Trnau1ap	Q80VC6	1	46	tRNA selenocysteine 1-associated protein 1
-TRNAU1AP	rattus-norvegicus	Q9QZI7	Trnau1ap	Q9QZI7	1	58	tRNA selenocysteine 1-associated protein 1
-TRNP1	mus-musculus	Q80ZI1	Trnp1	Q80ZI1	0	2	TMF-regulated nuclear protein 1
-TRNP1	rattus-norvegicus	A0A0G2K0Y1	Trnp1	A0A0G2K0Y1	0	1	TMF1-regulated nuclear protein 1
-TRNT1	mus-musculus	Q8K1J6	Trnt1	Q8K1J6	0	4	CCA tRNA nucleotidyltransferase 1, mitochondrial
-TRNT1	rattus-norvegicus	Q4VBH2	Trnt1	Q4VBH2	0	4	CCA tRNA nucleotidyltransferase 1, mitochondrial
+TRN	fly	FBgn0010452	trn	M9PFH7	2	27	Tartan, isoform B	
+TRN	human	Q92973	TNPO1	Q92973	39	416		
+TRN-SR	human	Q9Y5L0	TNPO3	Q9Y5L0	10	427	Transportin-3 (Importin-12) (Imp12) (Transportin-SR) (TRN-SR	w
+TRN1	arabidopsis-thaliana	Q8H0U4	TRN1	Q8H0U4	7	46	Transportin-1	
+TRN1	arabidopsis-thaliana	Q9FJ57	TRN1	Q9FJ57	0	19	Protein TORNADO 1	
+TRN1	oryza-sativa-subsp-japonica	B9FDR3	TRN1	B9FDR3	19	115	Transportin-1	
+TRNA	fly	FBgn0025629	Mettl1	O77263	4	36	tRNA (guanine-N(7)-)-methyltransferase (EC 2.1.1.33) (tRNA (	w
+TRNA	fly	FBgn0026079	Nsun2	Q9W4M9	5	134	tRNA (cytosine(34)-C(5))-methyltransferase (EC 2.1.1.203) (N	w
+TRNA	fly	FBgn0028426	RNaseZ	Q8MKW7	0	6	Ribonuclease Z, mitochondrial (RNase Z) (EC 3.1.26.11) (Juve	w
+TRNA	fly	FBgn0028707	Mt2	Q9VKB3	0	6	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
+TRNA	fly	FBgn0029857	wuho	Q9W415	4	37	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+TRNA	fly	FBgn0031041	Pstk	Q9VWF7	86	1325	Phosphoseryl tRNA kinase, isoform A (Phosphoseryl tRNA kinas	w
+TRNA	fly	FBgn0031060	Tcs4	Q9VWD6	4	23	Probable tRNA N6-adenosine threonylcarbamoyltransferase, mit	w
+TRNA	fly	FBgn0031077	THADA	Q9VWB9	0	3	tRNA (32-2'-O)-methyltransferase regulator THADA (Thyroid ad	w
+TRNA	fly	FBgn0031189	Trmt10A	Q9VR56	0	9	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	w
+TRNA	fly	FBgn0031227	Pus10	Q9VPK7	1	4	Putative tRNA pseudouridine synthase Pus10 (EC 5.4.99.25) (C	w
+TRNA	fly	FBgn0031604	Elp3	Q9VQZ6	27	393	Elongator complex protein 3 (EC 2.3.1.311) (tRNA uridine(34)	w
+TRNA	fly	FBgn0031607	Secp43	Q8SXG7	10	142	tRNA selenocysteine-associated protein 1	w
+TRNA	fly	FBgn0031832	Trmt6	Q8MS69	3	23	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
+TRNA	fly	FBgn0032430	Trm1	Q9VK89	0	24	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
+TRNA	fly	FBgn0032793	Ctu2	Q9VIV3	2	16	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
+TRNA	fly	FBgn0033375	Ctu1	Q7JWW5	1	14	Cytoplasmic tRNA 2-thiolation protein 1 (EC 2.7.7.-) (Cytopl	w
+TRNA	fly	FBgn0034214	CG6550	Q7K4W1	2	17	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
+TRNA	fly	FBgn0035247	Mettl2	Q86BS6	4	40	tRNA N(3)-methylcytidine methyltransferase Mettl2 (EC 2.1.1.	w
+TRNA	fly	FBgn0036266	Tsen54	Q9VTV4	4	27	tRNA splicing endonuclease subunit 54	w
+TRNA	fly	FBgn0036515	AIMP2	Q9VUR3	7	39	Probable aminoacyl tRNA synthase complex-interacting multifu	w
+TRNA	fly	FBgn0036838	Trmt2a	Q9VVV7	3	19	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	w
+TRNA	fly	FBgn0037061	Trmt112	Q9VP65	6	76	Multifunctional methyltransferase subunit TRM112-like protei	w
+TRNA	fly	FBgn0037250	CG1074	Q960G1	2	12	tRNA (guanine(10)-N2)-methyltransferase homolog (tRNA guanos	w
+TRNA	fly	FBgn0037435	CG18048	Q8SX24	0	2	tRNA:m(4)X modification enzyme TRM13 (EC 2.1.1.225)	w
+TRNA	fly	FBgn0037708	CG9386	Q9VHB9	0	8	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w
+TRNA	fly	FBgn0038471	Trm7-32	Q9VEP1	9	60	tRNA (cytidine(32)-2'-O)-methyltransferase (EC 2.1.1.205) (2	w
+TRNA	fly	FBgn0038861	Trm7-34	Q9VDD9	6	57	tRNA (guanosine(34)-2'-O)-methyltransferase (EC 2.1.1.205) (	w
+TRNA	fly	FBgn0050343	Tsen15	A1Z7S9	2	4	tRNA splicing endonuclease subunit 15, isoform A (EC 4.6.1.1	w
+TRNA	fly	FBgn0052281	CG32281	Q8IRE4	1	5	tRNA (guanine(37)-N1)-methyltransferase (EC 2.1.1.228) (M1G-	w
+TRNA	fly	FBgn0053172	CG33172	Q86B53	2	14	tRNA (34-2'-O)-methyltransferase regulator WDR6	w
+TRNA	fly	FBgn0083976	CG34140	Q0E8K6	0	8	tRNA pseudouridine synthase (EC 5.4.99.12)	w
+TRNA	fly	FBgn0085224	CG34195	A1ZAY5	1	17	tRNA N(3)-methylcytidine methyltransferase (EC 2.1.1.-)	w
+TRNA	fly	FBgn0283659	Thg	Q9V3N8	0	7	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (tRNA-h	w
+TRNA	fly	FBgn0283681	Tcs3	Q9VV41	4	23	Probable tRNA N6-adenosine threonylcarbamoyltransferase (EC 	w
+TRNA	fly	FBgn0290420	Trmt61	Q9VBH7	4	17	tRNA methyltransferase 61	w
+TRNA	human	A2RUC4	TYW5	A2RUC4	1	48	tRNA wybutosine-synthesizing protein 5 (hTYW5) (tRNA yW-synt	w
+TRNA	human	O14717	TRDMT1	O14717	1	62	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
+TRNA	human	O43324	EEF1E1	O43324	23	201	Eukaryotic translation elongation factor 1 epsilon-1 (Aminoa	w
+TRNA	human	O43592	XPOT	O43592	14	254	Exportin-T (Exportin(tRNA)) (tRNA exportin)	w
+TRNA	human	O60294	LCMT2	O60294	2	93	tRNA wybutosine-synthesizing protein 4 (tRNA yW-synthesizing	w
+TRNA	human	O95900	TRUB2	O95900	19	341	Pseudouridylate synthase TRUB2, mitochondrial (EC 5.4.99.-) 	w
+TRNA	human	P52747	ZNF143	P52747	7	149	Zinc finger protein 143 (SPH-binding factor) (Selenocysteine	w
+TRNA	human	P57081	WDR4	P57081	15	135	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+TRNA	human	Q12904	AIMP1	Q12904	26	255	Aminoacyl tRNA synthase complex-interacting multifunctional 	w
+TRNA	human	Q13155	AIMP2	Q13155	60	435	Aminoacyl tRNA synthase complex-interacting multifunctional 	w
+TRNA	human	Q13395	TARBP1	Q13395	6	110	tRNA (guanosine(18)-2'-O)-methyltransferase TARBP1 (EC 2.1.1	w
+TRNA	human	Q2VPK5	CTU2	Q2VPK5	11	169	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
+TRNA	human	Q32P41	TRMT5	Q32P41	2	85	tRNA (guanine(37)-N(1))-methyltransferase (EC 2.1.1.228) (M1	w
+TRNA	human	Q3MIT2	PUS10	Q3MIT2	2	54	tRNA pseudouridine synthase Pus10 (Hup10) (EC 5.4.99.25) (Co	w
+TRNA	human	Q53H54	TYW2	Q53H54	8	103	tRNA wybutosine-synthesizing protein 2 homolog (tRNA-yW-synt	w
+TRNA	human	Q5VV42	CDKAL1	Q5VV42	20	245	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
+TRNA	human	Q6IPR3	TYW3	Q6IPR3	5	94	tRNA wybutosine-synthesizing protein 3 homolog (tRNA-yW-synt	w
+TRNA	human	Q6NUM6	TYW1B	Q6NUM6	4	42	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
+TRNA	human	Q6P1Q9	METTL2B	Q6P1Q9	6	84	tRNA N(3)-cytidine methyltransferase METTL2B (EC 2.1.1.-) (M	w
+TRNA	human	Q6PF06	TRMT10B	Q6PF06	6	61	tRNA methyltransferase 10 homolog B (EC 2.1.1.221) (RNA (gua	w
+TRNA	human	Q6YHU6	THADA	Q6YHU6	2	129	tRNA (32-2'-O)-methyltransferase regulator THADA (Gene induc	w
+TRNA	human	Q7L0Y3	TRMT10C	Q7L0Y3	21	235	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
+TRNA	human	Q7Z2T5	TRMT1L	Q7Z2T5	9	262	tRNA (guanine(27)-N(2))-dimethyltransferase (EC 2.1.1.-) (tR	w
+TRNA	human	Q7Z4G4	TRMT11	Q7Z4G4	10	106	tRNA (guanine(10)-N(2))-methyltransferase TRMT11 (EC 2.1.1.2	w
+TRNA	human	Q7Z7A3	CTU1	Q7Z7A3	9	176	Cytoplasmic tRNA 2-thiolation protein 1 (EC 2.7.7.-) (ATP-bi	w
+TRNA	human	Q86TN4	TRPT1	Q86TN4	2	53	tRNA 2'-phosphotransferase 1 (EC 2.7.1.160)	w
+TRNA	human	Q8IYL2	TRMT44	Q8IYL2	5	71	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w
+TRNA	human	Q8IZ69	TRMT2A	Q8IZ69	13	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	w
+TRNA	human	Q8N0Z8	PUSL1	Q8N0Z8	9	133	tRNA pseudouridine synthase-like 1 (EC 5.4.99.12) (tRNA pseu	w
+TRNA	human	Q8TBZ6	TRMT10A	Q8TBZ6	5	56	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	w
+TRNA	human	Q8TCB7	METTL6	Q8TCB7	2	58	tRNA N(3)-cytidine methyltransferase METTL6 (EC 2.1.1.-) (Me	w
+TRNA	human	Q8TEA1	NSUN6	Q8TEA1	14	144	tRNA (cytosine(72)-C(5))-methyltransferase NSUN6 (EC 2.1.1.-	w
+TRNA	human	Q8WU10	PYROXD1	Q8WU10	5	130	tRNA ligase complex-associated NAD(P)H dehydrogenase PYROXD1	w
+TRNA	human	Q8WWH5	TRUB1	Q8WWH5	8	86	Pseudouridylate synthase TRUB1 (EC 5.4.99.-) (TruB pseudouri	w
+TRNA	human	Q969Y2	GTPBP3	Q969Y2	5	116	5-taurinomethyluridine-[tRNA] synthase subunit GTPB3, mitoch	w
+TRNA	human	Q96BT7	ALKBH8	Q96BT7	7	75	tRNA (carboxymethyluridine(34)-5-O)-methyltransferase ALKBH8	w
+TRNA	human	Q96CB9	NSUN4	Q96CB9	25	210	5-cytosine rRNA methyltransferase NSUN4 (EC 2.1.1.-) (5-cyto	w
+TRNA	human	Q96FN9	DTD2	Q96FN9	1	43	D-aminoacyl-tRNA deacylase 2 (EC 3.1.1.96) (Animalia-specifi	w
+TRNA	human	Q96FX7	TRMT61A	Q96FX7	17	125	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
+TRNA	human	Q96GJ1	TRMT2B	Q96GJ1	3	67	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
+TRNA	human	Q96IZ6	METTL2A	Q96IZ6	2	67	tRNA N(3)-cytidine methyltransferase METTL2A (EC 2.1.1.-) (M	w
+TRNA	human	Q96Q11	TRNT1	Q96Q11	2	71	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	w
+TRNA	human	Q96SZ6	CDK5RAP1	Q96SZ6	10	144	Mitochondrial tRNA methylthiotransferase CDK5RAP1 (EC 2.8.4.	w
+TRNA	human	Q9BQ52	ELAC2	Q9BQ52	8	262	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
+TRNA	human	Q9BU70	TRMO	Q9BU70	2	72	tRNA (adenine(37)-N6)-methyltransferase (EC 2.1.1.-) (tRNA m	w
+TRNA	human	Q9BV44	THUMPD3	Q9BV44	24	120	tRNA (guanine(6)-N(2))-methyltransferase THUMP3 (EC 2.1.1.25	w
+TRNA	human	Q9BVS5	TRMT61B	Q9BVS5	29	304	tRNA (adenine(58)-N(1))-methyltransferase, mitochondrial (EC	w
+TRNA	human	Q9BZE2	PUS3	Q9BZE2	3	46	tRNA pseudouridine(38/39) synthase (EC 5.4.99.45) (tRNA pseu	w
+TRNA	human	Q9H3H1	TRIT1	Q9H3H1	0	44	tRNA dimethylallyltransferase (EC 2.5.1.75) (Isopentenyl-dip	w
+TRNA	human	Q9H4B0	OSGEPL1	Q9H4B0	5	78	tRNA N6-adenosine threonylcarbamoyltransferase, mitochondria	w
+TRNA	human	Q9H649	NSUN3	Q9H649	2	111	tRNA (cytosine(34)-C(5))-methyltransferase, mitochondrial (E	w
+TRNA	human	Q9H777	ELAC1	Q9H777	0	23	Zinc phosphodiesterase ELAC protein 1 (EC 3.1.26.11) (Delete	w
+TRNA	human	Q9H825	METTL8	Q9H825	0	32	tRNA N(3)-cytidine methyltransferase METTL8, mitochondrial (	w
+TRNA	human	Q9H8Y5	ANKZF1	Q9H8Y5	13	129	tRNA endonuclease ANKZF1 (EC 3.1.-.-) (Ankyrin repeat and zi	w
+TRNA	human	Q9H9T3	ELP3	Q9H9T3	35	517	Elongator complex protein 3 (hELP3) (EC 2.3.1.311) (tRNA uri	w
+TRNA	human	Q9NNW5	WDR6	Q9NNW5	15	282	tRNA (34-2'-O)-methyltransferase regulator WDR6 (WD repeat-c	w
+TRNA	human	Q9NPF4	OSGEP	Q9NPF4	32	210	tRNA N6-adenosine threonylcarbamoyltransferase (EC 2.3.1.234	w
+TRNA	human	Q9NUP7	TRMT13	Q9NUP7	4	68	tRNA:m(4)X modification enzyme TRM13 homolog (EC 2.1.1.225) 	w
+TRNA	human	Q9NV66	TYW1	Q9NV66	6	142	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
+TRNA	human	Q9NWX6	THG1L	Q9NWX6	2	66	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	w
+TRNA	human	Q9NX07	TRNAU1AP	Q9NX07	11	138	tRNA selenocysteine 1-associated protein 1 (SECp43) (tRNA se	w
+TRNA	human	Q9NXH9	TRMT1	Q9NXH9	6	168	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
+TRNA	human	Q9P272	TRMT9B	Q9P272	11	43	Probable tRNA methyltransferase 9B (Probable tRNA methyltran	w
+TRNA	human	Q9UBP6	METTL1	Q9UBP6	9	108	tRNA (guanine-N(7)-)-methyltransferase (EC 2.1.1.33) (Methyl	w
+TRNA	human	Q9UET6	FTSJ1	Q9UET6	13	213	tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase (EC	w
+TRNA	human	Q9UI30	TRMT112	Q9UI30	17	192	Multifunctional methyltransferase subunit TRM112-like protei	w
+TRNA	human	Q9UJA5	TRMT6	Q9UJA5	16	131	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
+TRNA	human	Q9Y2Z2	MTO1	Q9Y2Z2	4	118	5-taurinomethyluridine-[tRNA] synthase subunit MTO1, mitocho	w
+TRNA	human	Q9Y606	PUS1	Q9Y606	8	158	Pseudouridylate synthase 1 homolog (EC 5.4.99.-) (tRNA pseud	w
+TRNA	worm	A8WHT1	C53A5.17	A8WHT1	0	2	tRNA (guanine(37)-N(1))-methyltransferase	w
+TRNA	worm	G5EGR8	CELE_W02A11.1	G5EGR8	1	5	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
+TRNA	worm	O76365	tut-1	O76365	1	14	Cytoplasmic tRNA 2-thiolation protein 1	w
+TRNA	worm	P34511	vms-1	P34511	0	20	tRNA endonuclease vms-1	w
+TRNA	worm	Q09524	tag-124	Q09524	0	11	Probable tRNA pseudouridine synthase tag-124	w
+TRNA	worm	Q19789	trmt-10a	Q19789	0	2	tRNA (guanine(9)-N(1))-methyltransferase	w
+TRNA	worm	Q19906	tut-2	Q19906	1	4	Cytoplasmic tRNA 2-thiolation protein 2	w
+TRNA	worm	Q20240	CELE_F40F9.10	Q20240	0	3	tRNA(Phe) (4-demethylwyosine(37)-C(7)) aminocarboxypropyltra	w
+TRNA	worm	Q22031	R74.7	Q22031	5	41	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransf	w
+TRNA	worm	Q22484	CELE_T14B4.1	Q22484	1	29	tRNA/rRNA methyltransferase SpoU type domain-containing prot	w
+TRNA	worm	Q23126	metl-1	Q23126	2	13	tRNA (guanine-N(7)-)-methyltransferase	w
+TRNA	worm	Q23232	wdr-4	Q23232	1	7	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+TRNA	worm	Q23270	trm-1	Q23270	0	19	tRNA (guanine(26)-N(2))-dimethyltransferase	w
+TRNA	worm	Q23383	metl-6	Q23383	0	6	tRNA N(3)-methylcytidine methyltransferase	w
+TRNA	worm	Q2MDF2	metl-2	Q2MDF2	0	11	tRNA N(3)-methylcytidine methyltransferase	w
+TRNA	worm	Q8MXQ7	Y92H12BL.1	Q8MXQ7	0	1	Threonylcarbamoyladenosine tRNA methylthiotransferase	w
+TRNA	worm	Q93170	C01G10.10	Q93170	0	12	Probable tRNA N6-adenosine threonylcarbamoyltransferase, mit	w
+TRNA	worm	Q93795	hpo-31	Q93795	0	6	CCA tRNA nucleotidyltransferase 1, mitochondrial	w
+TRNA	worm	Q94416	trmt-6	Q94416	2	11	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
+TRNA	worm	Q95XD5	CELE_Y73B6BL.29	Q95XD5	0	1	tRNA pseudouridine synthase	w
+TRNA	worm	Q9BL15	nsun-2	Q9BL15	3	36	tRNA (cytosine(34)-C(5))-methyltransferase	w
+TRNA	worm	Q9GZD0	C04F5.8	Q9GZD0	1	47	tRNA (guanine(46)-N(7))-methyltransferase	w
+TRNA	worm	Q9N4H1	CELE_Y71F9AL.1	Q9N4H1	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	w
+TRNA	worm	Q9N5L0	trm-2a	Q9N5L0	0	3	tRNA (uracil(54)-C(5))-methyltransferase	w
+TRNA	worm	Q9U287	CELE_Y48C3A.20	Q9U287	1	4	tRNA pseudouridine(55) synthase	w
+TRNA	worm	Q9XW93	CELE_Y49A3A.3	Q9XW93	0	4	tRNA:m(4)X modification enzyme TRM13	w
+TRNA	worm	W6RTG0	CELE_Y92H12A.5	W6RTG0	1	4	tRNA (32-2'-O)-methyltransferase regulator THADA	w
+TRNA	yeast	P07884	MOD5	P07884	0	14	tRNA dimethylallyltransferase	w
+TRNA	yeast	P09880	TRL1	P09880	0	6	tRNA ligase	w
+TRNA	yeast	P15565	TRM1	P15565	2	59	tRNA (guanine(26)-N(2))-dimethyltransferase, mitochondrial	w
+TRNA	yeast	P21269	CCA1	P21269	0	8	CCA tRNA nucleotidyltransferase, mitochondrial	w
+TRNA	yeast	P23796	RIT1	P23796	1	3	tRNA A64-2'-O-ribosylphosphate transferase	w
+TRNA	yeast	P31115	DEG1	P31115	0	9	tRNA pseudouridine(38/39) synthase	w
+TRNA	yeast	P32559	MSS1	P32559	1	57	tRNA modification GTPase MSS1, mitochondrial	w
+TRNA	yeast	P33753	TRM2	P33753	0	5	tRNA (uracil(54)-C(5))-methyltransferase	w
+TRNA	yeast	P36101	TCD2	P36101	0	7	tRNA threonylcarbamoyladenosine dehydratase 2	w
+TRNA	yeast	P36132	KAE1	P36132	2	14	tRNA N6-adenosine threonylcarbamoyltransferase	w
+TRNA	yeast	P38205	NCL1	P38205	4	60	Multisite-specific tRNA:(cytosine-C(5))-methyltransferase	w
+TRNA	yeast	P38238	TRM7	P38238	4	22	tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase	w
+TRNA	yeast	P38756	TCD1	P38756	0	9	tRNA threonylcarbamoyladenosine dehydratase 1	w
+TRNA	yeast	P38793	TRM5	P38793	0	9	tRNA (guanine(37)-N(1))-methyltransferase	w
+TRNA	yeast	P41814	GCD10	P41814	2	36	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
+TRNA	yeast	P43122	QRI7	P43122	0	11	tRNA N6-adenosine threonylcarbamoyltransferase, mitochondria	w
+TRNA	yeast	P46959	GCD14	P46959	4	44	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
+TRNA	yeast	P48567	PUS4	P48567	0	21	tRNA pseudouridine synthase 4	w
+TRNA	yeast	P49957	TRM9	P49957	1	6	tRNA (carboxymethyluridine(34)-5-O)-methyltransferase	w
+TRNA	yeast	P53072	TAN1	P53072	1	13	tRNA acetyltransferase TAN1	w
+TRNA	yeast	P53088	NCS6	P53088	2	14	Cytoplasmic tRNA 2-thiolation protein 1	w
+TRNA	yeast	P53167	PUS2	P53167	0	10	tRNA pseudouridine(27/28) synthase	w
+TRNA	yeast	P53177	TYW3	P53177	0	12	tRNA wybutosine-synthesizing protein 3	w
+TRNA	yeast	P53215	THG1	P53215	0	12	tRNA(His) guanylyltransferase	w
+TRNA	yeast	P53294	PUS6	P53294	0	26	tRNA pseudouridine(31) synthase	w
+TRNA	yeast	P53923	NCS2	P53923	1	27	Cytoplasmic tRNA 2-thiolation protein 2	w
+TRNA	yeast	Q02648	TRM44	Q02648	0	15	tRNA (uracil-O(2)-)-methyltransferase	w
+TRNA	yeast	Q03496	TRM732	Q03496	1	10	tRNA (32-2'-O)-methyltransferase regulator TRM732	w
+TRNA	yeast	Q03774	TRM82	Q03774	1	12	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+TRNA	yeast	Q04235	TRM12	Q04235	0	6	tRNA wybutosine-synthesizing protein 2	w
+TRNA	yeast	Q04311	VMS1	Q04311	5	82	tRNA endonuclease VMS1	w
+TRNA	yeast	Q07527	TRM3	Q07527	0	48	tRNA (guanosine(18)-2'-O)-methyltransferase	w
+TRNA	yeast	Q08282	PPM2	Q08282	0	8	tRNA wybutosine-synthesizing protein 4	w
+TRNA	yeast	Q08641	ABP140	Q08641	0	34	tRNA(Thr) (cytosine(32)-N(3))-methyltransferase	w
+TRNA	yeast	Q08924	RTT10	Q08924	1	16	tRNA (34-2'-O)-methyltransferase regulator RTT10	w
+TRNA	yeast	Q08960	TYW1	Q08960	0	17	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
+TRNA	yeast	Q12009	TRM8	Q12009	1	20	tRNA (guanine-N(7)-)-methyltransferase	w
+TRNA	yeast	Q12069	PUS9	Q12069	0	27	tRNA pseudouridine(32) synthase, mitochondrial	w
+TRNA	yeast	Q12211	PUS1	Q12211	0	33	tRNA pseudouridine synthase 1	w
+TRNA	yeast	Q12272	TPT1	Q12272	0	6	tRNA 2'-phosphotransferase	w
+TRNA	yeast	Q12383	TRM13	Q12383	0	2	tRNA:m(4)X modification enzyme TRM13	w
+TRNA	yeast	Q12400	TRM10	Q12400	0	7	tRNA (guanine(9)-N1)-methyltransferase	w
+TRNA	yeast	Q12463	TRM11	Q12463	1	9	tRNA (guanine(10)-N(2))-methyltransferase	w
+TRNA	zebrafish	A0A8M1N890	trmt6	A0A8M1N890	3	9	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
+TRNA	zebrafish	A0A8M1PGS2	trmt11	A0A8M1PGS2	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	w
+TRNA	zebrafish	A0A8N7TEL4	trmt1l	A0A8N7TEL4	1	12	tRNA (guanine(27)-N(2))-dimethyltransferase	w
+TRNA	zebrafish	A0AB32T4Y1	mettl6	A0AB32T4Y1	0	28	tRNA N(3)-cytidine methyltransferase	w
+TRNA	zebrafish	A4IGH4	wdr4	A4IGH4	2	7	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+TRNA	zebrafish	A8KBL7	mettl2a	A8KBL7	4	29	tRNA N(3)-cytidine methyltransferase METTL2	w
+TRNA	zebrafish	A8WHX0	lcmt2	A8WHX0	0	9	tRNA wybutosine-synthesizing protein 4	w
+TRNA	zebrafish	A9C3T6	wdr6	A9C3T6	1	9	tRNA (34-2'-O)-methyltransferase regulator WDR6	w
+TRNA	zebrafish	B8A5G9	trmt5	B8A5G9	0	3	tRNA (guanine(37)-N(1))-methyltransferase	w
+TRNA	zebrafish	B8JM40	trmt10c	B8JM40	3	12	tRNA methyltransferase 10 homolog C	w
+TRNA	zebrafish	E7F4D7	ankzf1	E7F4D7	7	80	tRNA endonuclease ANKZF1	w
+TRNA	zebrafish	E7FBE2	trmt10a	E7FBE2	0	11	tRNA methyltransferase 10 homolog A	w
+TRNA	zebrafish	E9QB52	alkbh8	E9QB52	2	5	tRNA (carboxymethyluridine(34)-5-O)-methyltransferase	w
+TRNA	zebrafish	F1QDU3	ftsj1	F1QDU3	3	133	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransf	w
+TRNA	zebrafish	F1QGD9	trmt1	F1QGD9	0	13	tRNA (guanine(26)-N(2))-dimethyltransferase	w
+TRNA	zebrafish	F1QJL2	pusl1	F1QJL2	0	46	tRNA pseudouridine synthase	w
+TRNA	zebrafish	F1R509	mto1	F1R509	1	8	Mitochondrial tRNA translation optimization 1	w
+TRNA	zebrafish	F6NXI9	trnt1	F6NXI9	0	10	CCA tRNA nucleotidyltransferase 1, mitochondrial	w
+TRNA	zebrafish	Q08BM0	trmt10b	Q08BM0	0	10	tRNA methyltransferase 10 homolog B	w
+TRNA	zebrafish	Q08BV2	tyw5	Q08BV2	0	2	tRNA wybutosine-synthesizing protein 5	w
+TRNA	zebrafish	Q08C92	tyw1	Q08C92	0	8	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
+TRNA	zebrafish	Q0P466	trmt12	Q0P466	0	5	tRNA wybutosine-synthesizing protein 2 homolog	w
+TRNA	zebrafish	Q32LQ3	osgepl1	Q32LQ3	1	13	tRNA N6-adenosine threonylcarbamoyltransferase, mitochondria	w
+TRNA	zebrafish	Q4KM14	trnau1apl	Q4KM14	4	141	tRNA selenocysteine 1-associated protein 1-like	w
+TRNA	zebrafish	Q4KMK0	nsun3	Q4KMK0	1	118	tRNA (cytosine(34)-C(5))-methyltransferase, mitochondrial	w
+TRNA	zebrafish	Q503H1	trnau1ap	Q503H1	2	141	tRNA selenocysteine 1-associated protein 1	w
+TRNA	zebrafish	Q588C1	trdmt1	Q588C1	0	7	tRNA (cytosine(38)-C(5))-methyltransferase	w
+TRNA	zebrafish	Q5RHZ6	osgep	Q5RHZ6	3	17	tRNA N6-adenosine threonylcarbamoyltransferase	w
+TRNA	zebrafish	Q5XJ57	mettl1	Q5XJ57	1	25	tRNA (guanine-N(7)-)-methyltransferase	w
+TRNA	zebrafish	Q6DC53	ctu2	Q6DC53	1	10	Cytoplasmic tRNA 2-thiolation protein 2	w
+TRNA	zebrafish	Q6DHJ1	tyw3	Q6DHJ1	0	3	tRNA wybutosine-synthesizing protein 3 homolog	w
+TRNA	zebrafish	Q6DI31	trmt61a	Q6DI31	4	6	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
+TRNA	zebrafish	Q6PG34	cdkal1	Q6PG34	0	8	Threonylcarbamoyladenosine tRNA methylthiotransferase	w
+TRNA	zebrafish	Q803X1	ctu1	Q803X1	2	5	Cytoplasmic tRNA 2-thiolation protein 1	w
+TRNA	zebrafish	R4GEK9	trmo	R4GEK9	0	2	tRNA (adenine(37)-N6)-methyltransferase	w
+TRNA	zebrafish	X1WF30	trmt61b	X1WF30	3	6	tRNA (adenine(58)-N(1))-methyltransferase	w
+TRNA-AMINOACYLATION	yeast	P46672	ARC1	P46672	6	98	tRNA-aminoacylation cofactor ARC1	w
+TRNA-BINDING	worm	Q9N3F2	CELE_Y54E10A.6	Q9N3F2	1	18	B3/B4 tRNA-binding domain-containing protein	w
+TRNA-DIHYDROURIDINE	fly	FBgn0031238	Dus1	Q9VPM1	2	13	tRNA-dihydrouridine(16/17) synthase [NAD(P)(+)] (EC 1.3.1.88	w
+TRNA-DIHYDROURIDINE	fly	FBgn0032819	Dus3	Q9VIS4	7	58	tRNA-dihydrouridine(47) synthase [NAD(P)(+)] (EC 1.3.1.-) (t	w
+TRNA-DIHYDROURIDINE	human	A0A669KAY5	DUS4L-BCAP29	A0A669KAY5	1	5	tRNA-dihydrouridine(20a/20b) synthase	w
+TRNA-DIHYDROURIDINE	human	O95620	DUS4L	O95620	7	74	tRNA-dihydrouridine(20a/20b) synthase [NAD(P)+]-like (EC 1.3	w
+TRNA-DIHYDROURIDINE	human	Q6P1R4	DUS1L	Q6P1R4	4	71	tRNA-dihydrouridine(16/17) synthase [NAD(P)(+)]-like (EC 1.3	w
+TRNA-DIHYDROURIDINE	human	Q96G46	DUS3L	Q96G46	5	119	tRNA-dihydrouridine(47) synthase [NAD(P)(+)]-like (EC 1.3.1.	w
+TRNA-DIHYDROURIDINE	human	Q9NX74	DUS2	Q9NX74	5	58	tRNA-dihydrouridine(20) synthase [NAD(P)+]-like (EC 1.3.1.91	w
+TRNA-DIHYDROURIDINE	worm	Q09504	C45G9.2	Q09504	0	1	Uncharacterized tRNA-dihydrouridine synthase-like protein C4	w
+TRNA-DIHYDROURIDINE	worm	Q9TYN2	CELE_Y37E11B.5	Q9TYN2	0	2	tRNA-dihydrouridine(47) synthase	w
+TRNA-DIHYDROURIDINE	yeast	P53720	SMM1	P53720	0	3	tRNA-dihydrouridine(20) synthase	w
+TRNA-DIHYDROURIDINE	yeast	P53759	DUS1	P53759	0	3	tRNA-dihydrouridine(16/17) synthase	w
+TRNA-DIHYDROURIDINE	yeast	Q06053	DUS3	Q06053	0	7	tRNA-dihydrouridine(47) synthase	w
+TRNA-DIHYDROURIDINE	yeast	Q06063	DUS4	Q06063	1	4	tRNA-dihydrouridine(20a/20b) synthase	w
+TRNA-DIHYDROURIDINE	zebrafish	B0S7L0	dus1l	B0S7L0	0	1	tRNA-dihydrouridine(16/17) synthase	w
+TRNA-GUANINE	fly	FBgn0031321	Tgt	Q9VPY8	1	16	Queuine tRNA-ribosyltransferase catalytic subunit (EC 2.4.2.	w
+TRNA-GUANINE	human	Q9BXR0	QTRT1	Q9BXR0	3	75	Queuine tRNA-ribosyltransferase catalytic subunit 1 (EC 2.4.	w
+TRNA-HISTIDINE	fly	FBgn0283659	Thg	Q9V3N8	0	7	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (tRNA-h	w
+TRNA-HISTIDINE	human	Q9NWX6	THG1L	Q9NWX6	2	66	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	w
+TRNA-INTRON	fly	FBgn0051812	Tsen2	Q8IP11	4	26	tRNA-intron lyase (EC 4.6.1.16)	w
+TRNA-INTRON	human	Q7Z6J9	TSEN54	Q7Z6J9	23	219	tRNA-splicing endonuclease subunit Sen54 (SEN54 homolog) (Hs	w
+TRNA-INTRON	human	Q8NCE0	TSEN2	Q8NCE0	38	267	tRNA-splicing endonuclease subunit Sen2 (EC 4.6.1.16) (tRNA-	w
+TRNA-INTRON	human	Q8WW01	TSEN15	Q8WW01	17	107	tRNA-splicing endonuclease subunit Sen15 (SEN15 homolog) (Hs	w
+TRNA-INTRON	human	Q9BSV6	TSEN34	Q9BSV6	39	411	tRNA-splicing endonuclease subunit Sen34 (EC 4.6.1.16) (Leuk	w
+TRNA-INTRON	worm	Q8MQ07	tsen-34	Q8MQ07	2	2	tRNA-intron lyase	w
+TRNA-INTRON	worm	Q9U218	tsen-2	Q9U218	2	14	tRNA-intron lyase	w
+TRNA-QUEUOSINE	fly	FBgn0030700	CG15914	Q9VXN0	0	2	tRNA-queuosine alpha-mannosyltransferase (EC 2.4.1.110)	w
+TRNA-QUEUOSINE	human	Q4AE62	QTMAN	Q4AE62	1	66	tRNA-queuosine alpha-mannosyltransferase (QTMAN) (EC 2.4.1.1	w
+TRNA-RIBOSYLTRANSFERASE	fly	FBgn0031321	Tgt	Q9VPY8	1	16	Queuine tRNA-ribosyltransferase catalytic subunit (EC 2.4.2.	w
+TRNA-RIBOSYLTRANSFERASE	fly	FBgn0036000	CG3434	Q9VSZ6	5	76	Queuine tRNA-ribosyltransferase accessory subunit 2 (Queuine	w
+TRNA-RIBOSYLTRANSFERASE	human	Q9BXR0	QTRT1	Q9BXR0	3	75	Queuine tRNA-ribosyltransferase catalytic subunit 1 (EC 2.4.	w
+TRNA-RIBOSYLTRANSFERASE	human	Q9H974	QTRT2	Q9H974	4	60	Queuine tRNA-ribosyltransferase accessory subunit 2 (Queuine	w
+TRNA-RIBOSYLTRANSFERASE	worm	Q23623	tgt-1	Q23623	1	2	Queuine tRNA-ribosyltransferase catalytic subunit	w
+TRNA-RIBOSYLTRANSFERASE	worm	Q9NEU3	tgt-2	Q9NEU3	1	9	Queuine tRNA-ribosyltransferase accessory subunit 2	w
+TRNA-RIBOSYLTRANSFERASE	zebrafish	Q7SYK1	qtrt1	Q7SYK1	1	1	Queuine tRNA-ribosyltransferase catalytic subunit 1	w
+TRNA-RIBOSYLTRANSFERASE	zebrafish	Q7ZVJ6	qtrt2	Q7ZVJ6	1	1	Queuine tRNA-ribosyltransferase accessory subunit 2	w
+TRNA-SPECIFIC	fly	FBgn0028658	Adat1	Q9V3R6	0	9	tRNA-specific adenosine deaminase 1 (EC 3.5.4.34) (dADAT1) (	w
+TRNA-SPECIFIC	fly	FBgn0034360	CG10927	Q7K157	3	22	tRNA-specific adenosine deaminase 2 (Deaminase domain-contai	w
+TRNA-SPECIFIC	fly	FBgn0040337	CG3021	Q9W5B6	2	30	Mitochondrial tRNA-specific 2-thiouridylase 1 (EC 2.8.1.14)	w
+TRNA-SPECIFIC	human	O75648	TRMU	O75648	13	136	Mitochondrial tRNA-specific 2-thiouridylase 1 (EC 2.8.1.14) 	w
+TRNA-SPECIFIC	human	Q7Z6V5	ADAT2	Q7Z6V5	11	170	tRNA-specific adenosine-34 deaminase catalytic subunit ADAT2	w
+TRNA-SPECIFIC	human	Q96EY9	ADAT3	Q96EY9	12	202	tRNA-specific adenosine-34 deaminase regulatory subunit ADAT	w
+TRNA-SPECIFIC	human	Q9BUB4	ADAT1	Q9BUB4	0	50	tRNA-specific adenosine deaminase 1 (hADAT1) (EC 3.5.4.34) (	w
+TRNA-SPECIFIC	worm	Q17440	mttu-1	Q17440	0	8	Probable mitochondrial tRNA-specific 2-thiouridylase 1	w
+TRNA-SPECIFIC	yeast	P47058	TAD2	P47058	2	7	tRNA-specific adenosine deaminase subunit TAD2	w
+TRNA-SPECIFIC	yeast	P53065	TAD1	P53065	0	7	tRNA-specific adenosine deaminase 1	w
+TRNA-SPECIFIC	yeast	Q12093	SLM3	Q12093	0	8	Mitochondrial tRNA-specific 2-thiouridylase 1	w
+TRNA-SPECIFIC	yeast	Q9URQ3	TAD3	Q9URQ3	2	4	tRNA-specific adenosine deaminase subunit TAD3	w
+TRNA-SPECIFIC	zebrafish	Q503J2	trmu	Q503J2	0	6	Mitochondrial tRNA-specific 2-thiouridylase 1	w
+TRNA-SPECIFIC	zebrafish	Q5RIV4	adat2	Q5RIV4	1	7	tRNA-specific adenosine deaminase 2	w
+TRNA-SPECIFIC	zebrafish	Q8JFW4	adat3	Q8JFW4	1	5	Probable inactive tRNA-specific adenosine deaminase-like pro	w
+TRNA-SPLICING	fly	FBgn0053260	Tsen34	Q0E8E7	33	393	tRNA-splicing endonuclease subunit Sen34 (EC 4.6.1.16)	w
+TRNA-SPLICING	human	Q52LJ0	FAM98B	Q52LJ0	16	121	tRNA-splicing ligase complex subunit FAM98B	w
+TRNA-SPLICING	human	Q7Z6J9	TSEN54	Q7Z6J9	23	219	tRNA-splicing endonuclease subunit Sen54 (SEN54 homolog) (Hs	w
+TRNA-SPLICING	human	Q8IWT0	ZBTB8OS	Q8IWT0	11	75	tRNA-splicing ligase-activating factor archease (EC 2.7.7.-)	w
+TRNA-SPLICING	human	Q8NCE0	TSEN2	Q8NCE0	38	267	tRNA-splicing endonuclease subunit Sen2 (EC 4.6.1.16) (tRNA-	w
+TRNA-SPLICING	human	Q8WW01	TSEN15	Q8WW01	17	107	tRNA-splicing endonuclease subunit Sen15 (SEN15 homolog) (Hs	w
+TRNA-SPLICING	human	Q9BSV6	TSEN34	Q9BSV6	39	411	tRNA-splicing endonuclease subunit Sen34 (EC 4.6.1.16) (Leuk	w
+TRNA-SPLICING	human	Q9BVC5	C2orf49	Q9BVC5	10	108	tRNA-splicing ligase complex subunit ASW	w
+TRNA-SPLICING	human	Q9Y224	RTRAF	Q9Y224	37	233	tRNA-splicing ligase complex subunit RTRAF (CLE7 homolog) (C	w
+TRNA-SPLICING	worm	Q9TXV5	tsen-54	Q9TXV5	3	14	tRNA-splicing endonuclease subunit Sen54 N-terminal domain-c	w
+TRNA-SPLICING	yeast	P16658	SEN2	P16658	2	24	tRNA-splicing endonuclease subunit SEN2	w
+TRNA-SPLICING	yeast	P39707	SEN34	P39707	5	19	tRNA-splicing endonuclease subunit SEN34	w
+TRNA-SPLICING	yeast	Q02825	SEN54	Q02825	3	20	tRNA-splicing endonuclease subunit SEN54	w
+TRNA-SPLICING	yeast	Q04675	SEN15	Q04675	2	48	tRNA-splicing endonuclease subunit SEN15	w
+TRNA-SPLICING	zebrafish	A2BIL9	tsen34	A2BIL9	2	15	tRNA-splicing endonuclease subunit Sen34	w
+TRNA-T	fly	FBgn0034214	CG6550	Q7K4W1	2	17	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
+TRNA-T	human	Q5VV42	CDKAL1	Q5VV42	20	245	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
+TRNA-URIDINE	fly	FBgn0037492	Dtwd2	Q9VI85	0	1	tRNA-uridine aminocarboxypropyltransferase 2 (EC 2.5.1.25) (	w
+TRNA-URIDINE	fly	FBgn0039664	CG2006	Q9VAL1	0	3	tRNA-uridine aminocarboxypropyltransferase 1 (EC 2.5.1.25) (	w
+TRNA-URIDINE	human	Q8N0Z8	PUSL1	Q8N0Z8	9	133	tRNA pseudouridine synthase-like 1 (EC 5.4.99.12) (tRNA pseu	w
+TRNA-URIDINE	human	Q8N5C7	DTWD1	Q8N5C7	3	50	tRNA-uridine aminocarboxypropyltransferase 1 (EC 2.5.1.25) (	w
+TRNA-URIDINE	human	Q8NBA8	DTWD2	Q8NBA8	10	108	tRNA-uridine aminocarboxypropyltransferase 2 (EC 2.5.1.25) (	w
+TRNA-URIDINE	human	Q9BZE2	PUS3	Q9BZE2	3	46	tRNA pseudouridine(38/39) synthase (EC 5.4.99.45) (tRNA pseu	w
+TRNA-URIDINE	worm	B7WNB4	CELE_Y53C12A.10	B7WNB4	0	2	tRNA-uridine aminocarboxypropyltransferase 1	w
+TRNA-YW-SYNTHESIZING	human	Q53H54	TYW2	Q53H54	8	103	tRNA wybutosine-synthesizing protein 2 homolog (tRNA-yW-synt	w
+TRNA-YW-SYNTHESIZING	human	Q6IPR3	TYW3	Q6IPR3	5	94	tRNA wybutosine-synthesizing protein 3 homolog (tRNA-yW-synt	w
+TRNASE	fly	FBgn0028426	RNaseZ	Q8MKW7	0	6	Ribonuclease Z, mitochondrial (RNase Z) (EC 3.1.26.11) (Juve	w
+TRNASE	human	Q9H777	ELAC1	Q9H777	0	23	Zinc phosphodiesterase ELAC protein 1 (EC 3.1.26.11) (Delete	w
+TRNAU1AP	human	Q9NX07	TRNAU1AP	Q9NX07	11	138	tRNA selenocysteine 1-associated protein 1 (SECp43) (tRNA se	
+TRNAU1AP	mus-musculus	Q80VC6	Trnau1ap	Q80VC6	1	46	tRNA selenocysteine 1-associated protein 1	
+TRNAU1AP	rattus-norvegicus	Q9QZI7	Trnau1ap	Q9QZI7	1	58	tRNA selenocysteine 1-associated protein 1	
+TRNAU1AP	zebrafish	Q503H1	trnau1ap	Q503H1	2	141	tRNA selenocysteine 1-associated protein 1	
+TRNAU1APL	zebrafish	Q4KM14	trnau1apl	Q4KM14	4	141	tRNA selenocysteine 1-associated protein 1-like	
+TRNK1_HUMAN	human	O15050	TRANK1	O15050	2	20		
+TRNP	human	Q6NT89	TRNP1	Q6NT89	79	367		
+TRNP1	human	Q6NT89	TRNP1	Q6NT89	79	367	TMF-regulated nuclear protein 1	
+TRNP1	mus-musculus	Q80ZI1	Trnp1	Q80ZI1	0	2	TMF-regulated nuclear protein 1	
+TRNP1	rattus-norvegicus	A0A0G2K0Y1	Trnp1	A0A0G2K0Y1	0	1	TMF1-regulated nuclear protein 1	
+TRNP1_HUMAN	human	Q6NT89	TRNP1	Q6NT89	79	367		
+TRNP48	human	Q9HD40	SEPSECS	Q9HD40	1	49		
+TRNR1	human	P56159	GFRA1	P56159	28	184		
+TRNR2	human	O00451	GFRA2	O00451	15	106		
+TRNT1	human	Q96Q11	TRNT1	Q96Q11	2	71	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	
+TRNT1	mus-musculus	Q8K1J6	Trnt1	Q8K1J6	0	4	CCA tRNA nucleotidyltransferase 1, mitochondrial	
+TRNT1	rattus-norvegicus	Q4VBH2	Trnt1	Q4VBH2	0	4	CCA tRNA nucleotidyltransferase 1, mitochondrial	
+TRNT1	zebrafish	F6NXI9	trnt1	F6NXI9	0	10	CCA tRNA nucleotidyltransferase 1, mitochondrial	
+TRNT1_HUMAN	human	Q96Q11	TRNT1	Q96Q11	2	71		

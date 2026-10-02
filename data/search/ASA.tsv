@@ -1,19 +1,61 @@
-ASA1	arabidopsis-thaliana	P32068	ASA1	P32068	7	16	Anthranilate synthase alpha subunit 1, chloroplastic
-ASA1	candida-albicans-237561	Q5ABV4	ASA1	Q5ABV4	0	53	ASTRA-associated protein 1
-ASA1	cladophialophora-carrionii	A0A1C1C949	asa1	A0A1C1C949	2	80	ASTRA-associated protein 1
-ASA1	oryza-sativa-subsp-japonica	Q94GF1	ASA1	Q94GF1	4	14	Anthranilate synthase alpha subunit 1, chloroplastic
-ASA1	schizosaccharomyces-pombe	Q9UTR9	asa1	Q9UTR9	1	18	ASTRA-associated protein 1
-ASA2	arabidopsis-thaliana	P32069	ASA2	P32069	5	14	Anthranilate synthase alpha subunit 2, chloroplastic
-ASA2	oryza-sativa-subsp-japonica	Q9XJ29	ASA2	Q9XJ29	4	14	Anthranilate synthase alpha subunit 2, chloroplastic
-ASAH1	mus-musculus	Q9WV54	Asah1	Q9WV54	0	30	Acid ceramidase
-ASAH1	rattus-norvegicus	Q6P7S1	Asah1	Q6P7S1	0	84	Acid ceramidase
-ASAH2	mus-musculus	Q9JHE3	Asah2	Q9JHE3	0	10	Neutral ceramidase
-ASAH2	rattus-norvegicus	Q91XT9	Asah2	Q91XT9	0	11	Neutral ceramidase
-ASAP1	mus-musculus	Q9QWY8	Asap1	Q9QWY8	15	64	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing protein 1
-ASAP1	rattus-norvegicus	Q1AAU6	Asap1	Q1AAU6	16	42	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing protein 1
-ASAP2	mus-musculus	Q7SIG6	Asap2	Q7SIG6	6	21	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing protein 2
-ASAP2	rattus-norvegicus	A0A0G2K808	Asap2	A0A0G2K808	3	13	ArfGAP with SH3 domain, ankyrin repeat and PH domain 2
-ASAP3	mus-musculus	Q5U464	Asap3	Q5U464	4	7	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing protein 3
-ASAP3	rattus-norvegicus	M0R5J1	Asap3	M0R5J1	4	11	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing protein 3
-ASAT	leishmania-infantum	Q2PD92	asat	Q2PD92	1	8	Aspartate aminotransferase
-ASAT1	arabidopsis-thaliana	Q9SV07	ASAT1	Q9SV07	0	17	Acyl-CoA--sterol O-acyltransferase 1
+ASA1	arabidopsis-thaliana	P32068	ASA1	P32068	7	16	Anthranilate synthase alpha subunit 1, chloroplastic	
+ASA1	candida-albicans-237561	Q5ABV4	ASA1	Q5ABV4	0	53	ASTRA-associated protein 1	
+ASA1	cladophialophora-carrionii	A0A1C1C949	asa1	A0A1C1C949	2	80	ASTRA-associated protein 1	
+ASA1	oryza-sativa-subsp-japonica	Q94GF1	ASA1	Q94GF1	4	14	Anthranilate synthase alpha subunit 1, chloroplastic	
+ASA1	schizosaccharomyces-pombe	Q9UTR9	asa1	Q9UTR9	1	18	ASTRA-associated protein 1	
+ASA1	yeast	Q06822	ASA1	Q06822	3	38	ASTRA-associated protein 1	
+ASA2	arabidopsis-thaliana	P32069	ASA2	P32069	5	14	Anthranilate synthase alpha subunit 2, chloroplastic	
+ASA2	oryza-sativa-subsp-japonica	Q9XJ29	ASA2	Q9XJ29	4	14	Anthranilate synthase alpha subunit 2, chloroplastic	
+ASA2B_HUMAN	human	P0C7U1	ASAH2B	P0C7U1	2	27		
+ASAH	human	Q13510	ASAH1	Q13510	4	166		
+ASAH-1	worm	O45686	asah-1	O45686	0	7	Acid ceramidase	
+ASAH-2	worm	Q09551	asah-2	Q09551	0	7	Probable acid ceramidase	
+ASAH1	human	Q13510	ASAH1	Q13510	4	166	Acid ceramidase (AC) (ACDase) (Acid CDase) (EC 3.5.1.23) (Ac	
+ASAH1	mus-musculus	Q9WV54	Asah1	Q9WV54	0	30	Acid ceramidase	
+ASAH1	rattus-norvegicus	Q6P7S1	Asah1	Q6P7S1	0	84	Acid ceramidase	
+ASAH1B	zebrafish	Q6PH71	asah1b	Q6PH71	2	104	Acid ceramidase	
+ASAH1_HUMAN	human	Q13510	ASAH1	Q13510	4	166		
+ASAH1_MOUSE	fly	ASAH1_MOUSE	ASAH1_MOUSE		0	1		
+ASAH2	human	Q9NR71	ASAH2	Q9NR71	0	27	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.-) (EC 3.5.1	
+ASAH2	mus-musculus	Q9JHE3	Asah2	Q9JHE3	0	10	Neutral ceramidase	
+ASAH2	rattus-norvegicus	Q91XT9	Asah2	Q91XT9	0	11	Neutral ceramidase	
+ASAH2	zebrafish	Q5W7F1	asah2	Q5W7F1	0	4	Neutral ceramidase	
+ASAH2-LIKE	human	P0C7U1	ASAH2B	P0C7U1	2	27	Putative inactive neutral ceramidase B (ASAH2-like protein) 	w
+ASAH2B	human	P0C7U1	ASAH2B	P0C7U1	2	27	Putative inactive neutral ceramidase B (ASAH2-like protein) 	
+ASAH2C	human	P0C7U1	ASAH2B	P0C7U1	2	27		
+ASAH2L	human	P0C7U1	ASAH2B	P0C7U1	2	27		
+ASAH2_HUMAN	human	Q9NR71	ASAH2	Q9NR71	0	27		
+ASAH3	human	Q8TDN7	ACER1	Q8TDN7	3	28		
+ASAH3L	human	Q5QJU3	ACER2	Q5QJU3	0	32		
+ASAHL	human	Q02083	NAAA	Q02083	29	325		
+ASAL	human	P04424	ASL	P04424	1	56	Argininosuccinate lyase (ASAL) (EC 4.3.2.1) (Arginosuccinase	w
+ASAM	human	Q9H6B4	CLMP	Q9H6B4	11	77		
+ASAP	fly	FBgn0050372	Asap	A1Z7A6	6	29	ArfGAP with SH3 domain, ANK repeat and PH domain-containing 	
+ASAP	fly	FBgn0051721	Trim9	M9MRI4	4	34	E3 ubiquitin-protein ligase TRIM9 (EC 2.3.2.27) (Anomalies i	w
+ASAP	human	Q49MG5	MAP9	Q49MG5	3	65		
+ASAP1	human	Q9ULH1	ASAP1	Q9ULH1	55	235	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP1	mus-musculus	Q9QWY8	Asap1	Q9QWY8	15	64	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP1	rattus-norvegicus	Q1AAU6	Asap1	Q1AAU6	16	42	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP1A	zebrafish	A0A8M2BAX6	asap1a	A0A8M2BAX6	1	5	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP1_HUMAN	human	Q9ULH1	ASAP1	Q9ULH1	55	235		
+ASAP2	human	O43150	ASAP2	O43150	60	312	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP2	mus-musculus	Q7SIG6	Asap2	Q7SIG6	6	21	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP2	rattus-norvegicus	A0A0G2K808	Asap2	A0A0G2K808	3	13	ArfGAP with SH3 domain, ankyrin repeat and PH domain 2	
+ASAP2A	zebrafish	Q5RG20	asap2a	Q5RG20	1	5	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP2_HUMAN	human	O43150	ASAP2	O43150	60	312		
+ASAP3	human	Q8TDY4	ASAP3	Q8TDY4	41	172	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP3	mus-musculus	Q5U464	Asap3	Q5U464	4	7	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP3	rattus-norvegicus	M0R5J1	Asap3	M0R5J1	4	11	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP3	zebrafish	A0AB13A770	asap3	A0AB13A770	3	5	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	
+ASAP3_HUMAN	human	Q8TDY4	ASAP3	Q8TDY4	41	172		
+ASAP_731	fly	FBgn0050372	Asap	A1Z7A6	6	29		
+ASAP_737	fly	FBgn0050372	Asap	A1Z7A6	6	29		
+ASAP_824	fly	FBgn0050372	Asap	A1Z7A6	6	29		
+ASAP_849	fly	FBgn0050372	Asap	A1Z7A6	6	29		
+ASAP_956	fly	FBgn0050372	Asap	A1Z7A6	6	29		
+ASAS1_HUMAN	human	Q495Z4	ASB16-AS1	Q495Z4	1	3		
+ASASE	human	P30566	ADSL	P30566	2	195	Adenylosuccinate lyase (ADSL) (ASL) (EC 4.3.2.2) (Adenylosuc	w
+ASAT	leishmania-infantum	Q2PD92	asat	Q2PD92	1	8	Aspartate aminotransferase	
+ASAT1	arabidopsis-thaliana	Q9SV07	ASAT1	Q9SV07	0	17	Acyl-CoA--sterol O-acyltransferase 1	
+ASATOR	fly	FBgn0039908	Asator	Q9V4D6	205	1104	Asator, isoform D (EC 2.7.11.-)	w
+ASATOR	fly	FBgn0039908	Asator	Q9V4D6	205	1104	Asator, isoform D (EC 2.7.11.-)	w

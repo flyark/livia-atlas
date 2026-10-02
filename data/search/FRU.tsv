@@ -1,19 +1,71 @@
-FRUA	escherichia-coli-83333	P20966	fruA	P20966	3	12	PTS system fructose-specific EIIB'BC component
-FRUA	haemophilus-influenzae	P44714	fruA	P44714	1	8	PTS system fructose-specific EIIB'BC component
-FRUA	pseudomonas-aeruginosa	Q9HY57	fruA	Q9HY57	1	29	protein-N(pi)-phosphohistidine--D-fructose phosphotransferase
-FRUA	salmonella-typhimurium	Q8ZNK5	fruA	Q8ZNK5	5	31	Fructose-specific transport protein
-FRUA	shigella-dysenteriae-serotype-1	Q32E63	fruA	Q32E63	1	28	PTS system, fructose-specific transport protein
-FRUA	streptococcus-pneumoniae	Q8DQ95	fruA	Q8DQ95	0	27	Fructose specific-phosphotransferase system IIBC component
-FRUB	escherichia-coli-83333	P69811	fruB	P69811	4	29	Multiphosphoryl transfer protein
-FRUB	haemophilus-influenzae	P44715	fruB	P44715	1	19	Multiphosphoryl transfer protein
-FRUB	salmonella-typhimurium	P17127	fruB	P17127	8	62	Multiphosphoryl transfer protein
-FRUB	shigella-dysenteriae-serotype-1	Q32E61	fruB	Q32E61	6	51	Multiphosphoryl transfer protein
-FRUB	streptococcus-pneumoniae	Q8DQ96	fruB	Q8DQ96	0	2	Tagatose-6-phosphate kinase
-FRUI	pseudomonas-aeruginosa	Q9HY55	fruI	Q9HY55	3	29	phosphoenolpyruvate--protein phosphotransferase
-FRUK	haemophilus-influenzae	P44330	fruK	P44330	0	4	1-phosphofructokinase
-FRUK	pseudomonas-aeruginosa	Q9HY56	fruK	Q9HY56	0	8	Phosphofructokinase
-FRUK	salmonella-typhimurium	Q7CQ78	fruK	Q7CQ78	0	7	Phosphofructokinase
-FRUK	shigella-dysenteriae-serotype-1	Q32E62	fruK	Q32E62	0	3	Phosphofructokinase
-FRUK	shigella-flexneri	P0AEX2	fruK	P0AEX2	0	0	1-phosphofructokinase
-FRUR	pseudomonas-aeruginosa	Q9HY54	fruR	Q9HY54	0	161	Fructose transport system repressor FruR
-FRUR	shigella-dysenteriae-serotype-1	Q32K12	fruR	Q32K12	0	15	Catabolite repressor/activator
+FRU	fly	FBgn0004652	fru	E1JIP5	75	366	Fruitless, isoform N	
+FRU-2	human	O60825	PFKFB2	O60825	9	103	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 2 (6PF-	w
+FRU-2	human	P16118	PFKFB1	P16118	4	60	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 1 (6PF-	w
+FRU-2	human	Q16875	PFKFB3	Q16875	12	90	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 3 (6PF-	w
+FRU-2	human	Q16877	PFKFB4	Q16877	7	85	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 4 (6PF-	w
+FRUA	escherichia-coli-83333	P20966	fruA	P20966	3	12	PTS system fructose-specific EIIB'BC component	
+FRUA	haemophilus-influenzae	P44714	fruA	P44714	1	8	PTS system fructose-specific EIIB'BC component	
+FRUA	pseudomonas-aeruginosa	Q9HY57	fruA	Q9HY57	1	29	protein-N(pi)-phosphohistidine--D-fructose phosphotransferas	
+FRUA	salmonella-typhimurium	Q8ZNK5	fruA	Q8ZNK5	5	31	Fructose-specific transport protein	
+FRUA	shigella-dysenteriae-serotype-1	Q32E63	fruA	Q32E63	1	28	PTS system, fructose-specific transport protein	
+FRUA	streptococcus-pneumoniae	Q8DQ95	fruA	Q8DQ95	0	27	Fructose specific-phosphotransferase system IIBC component	
+FRUB	escherichia-coli-83333	P69811	fruB	P69811	4	29	Multiphosphoryl transfer protein	
+FRUB	haemophilus-influenzae	P44715	fruB	P44715	1	19	Multiphosphoryl transfer protein	
+FRUB	salmonella-typhimurium	P17127	fruB	P17127	8	62	Multiphosphoryl transfer protein	
+FRUB	shigella-dysenteriae-serotype-1	Q32E61	fruB	Q32E61	6	51	Multiphosphoryl transfer protein	
+FRUB	streptococcus-pneumoniae	Q8DQ96	fruB	Q8DQ96	0	2	Tagatose-6-phosphate kinase	
+FRUCTOKINASE	human	P50053	KHK	P50053	3	106	Ketohexokinase (EC 2.7.1.3) (Hepatic fructokinase)	w
+FRUCTOSAMINE-3-KINASE	human	Q9H479	FN3K	Q9H479	11	138	Fructosamine-3-kinase (EC 2.7.1.171) (Protein-psicosamine 3-	w
+FRUCTOSAMINE-3-KINASE-RELATED	human	Q9HA64	FN3KRP	Q9HA64	9	133	Ketosamine-3-kinase (EC 2.7.1.172) (Fructosamine-3-kinase-re	w
+FRUCTOSE	fly	FBgn0027621	Pfrx	Q9VWH7	7	84	6-phosphofructo 2-kinase/fructose 2,6-bisphosphatase long fo	w
+FRUCTOSE	human	P22732	SLC2A5	P22732	2	112	Solute carrier family 2, facilitated glucose transporter mem	w
+FRUCTOSE-1	human	O00757	FBP2	O00757	1	117	Fructose-1,6-bisphosphatase isozyme 2 (FBPase 2) (EC 3.1.3.1	w
+FRUCTOSE-1	human	P09467	FBP1	P09467	2	458	Fructose-1,6-bisphosphatase 1 (FBPase 1) (EC 3.1.3.11) (D-fr	w
+FRUCTOSE-1	worm	G5EBJ7	fbp-1	G5EBJ7	0	54	Fructose-1,6-bisphosphatase isozyme 2	w
+FRUCTOSE-1	yeast	P09201	FBP1	P09201	0	28	Fructose-1,6-bisphosphatase	w
+FRUCTOSE-1	zebrafish	Q6PFT1	fbp1a	Q6PFT1	1	17	Fructose-1,6-bisphosphatase 1	w
+FRUCTOSE-1	zebrafish	Q7T337	fbp1b	Q7T337	1	17	Fructose-1,6-bisphosphatase 1	w
+FRUCTOSE-2	human	O60825	PFKFB2	O60825	9	103	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 2 (6PF-	w
+FRUCTOSE-2	human	P16118	PFKFB1	P16118	4	60	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 1 (6PF-	w
+FRUCTOSE-2	human	Q16875	PFKFB3	Q16875	12	90	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 3 (6PF-	w
+FRUCTOSE-2	human	Q16877	PFKFB4	Q16877	7	85	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 4 (6PF-	w
+FRUCTOSE-2	human	Q9NQ88	TIGAR	Q9NQ88	11	147	Fructose-2,6-bisphosphatase TIGAR (EC 3.1.3.46) (TP53-induce	w
+FRUCTOSE-2	worm	Q21122	pfkb-1.2	Q21122	1	8	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase	w
+FRUCTOSE-2	yeast	P32604	FBP26	P32604	2	15	Fructose-2,6-bisphosphatase	w
+FRUCTOSE-2	yeast	Q06137	YLR345W	Q06137	4	22	Putative 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatas	w
+FRUCTOSE-2	zebrafish	A0A8M1N836	pfkfb4a	A0A8M1N836	3	15	6-phosphofructo-2-kinase/fructose-2, 6-bisphosphatase 4a iso	w
+FRUCTOSE-2	zebrafish	A0A8M3ANB0	pfkfb2a	A0A8M3ANB0	3	17	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 2	w
+FRUCTOSE-2	zebrafish	Q29RA5	tigara	Q29RA5	0	9	Probable fructose-2,6-bisphosphatase TIGAR A	w
+FRUCTOSE-2	zebrafish	Q6P951	pfkfb3	Q6P951	4	18	6-phosphofructo-2-kinase/fructose-2, 6-biphosphatase 3	w
+FRUCTOSE-2	zebrafish	Q7ZVE3	tigarb	Q7ZVE3	0	9	Fructose-2,6-bisphosphatase TIGAR B	w
+FRUCTOSE-2	zebrafish	Q803Y6	pfkfb1	Q803Y6	4	18	6-phosphofructo-2-kinase/fructose-2, 6-biphosphatase 1	w
+FRUCTOSE-2	zebrafish	X1WEG8	pfkfb2b	X1WEG8	4	18	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 2	w
+FRUCTOSE-6-PHOSPHATE	human	O94808	GFPT2	O94808	7	161	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+FRUCTOSE-6-PHOSPHATE	human	Q06210	GFPT1	Q06210	9	259	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+FRUCTOSE-BISPHOSPHATASE	fly	FBgn0032820	Fbp	A0A0U1RVK6	2	110	fructose-bisphosphatase (EC 3.1.3.11) (D-fructose-1,6-bispho	w
+FRUCTOSE-BISPHOSPHATE	fly	FBgn0000064	Aldo	F3YDE2	3	345	Fructose-bisphosphate aldolase (EC 4.1.2.13)	w
+FRUCTOSE-BISPHOSPHATE	fly	FBgn0039425	Aldol	Q9VBF5	2	109	fructose-bisphosphate aldolase (EC 4.1.2.13)	w
+FRUCTOSE-BISPHOSPHATE	human	J3KPS3	ALDOA	J3KPS3	1	42	Fructose-bisphosphate aldolase	w
+FRUCTOSE-BISPHOSPHATE	human	P04075	ALDOA	P04075	4	381	Fructose-bisphosphate aldolase A (EC 4.1.2.13) (Lung cancer 	w
+FRUCTOSE-BISPHOSPHATE	human	P05062	ALDOB	P05062	5	288	Fructose-bisphosphate aldolase B (EC 4.1.2.13) (Liver-type a	w
+FRUCTOSE-BISPHOSPHATE	human	P09972	ALDOC	P09972	4	207	Fructose-bisphosphate aldolase C (EC 4.1.2.13) (Brain-type a	w
+FRUCTOSE-BISPHOSPHATE	worm	P46563	aldo-2	P46563	0	47	Fructose-bisphosphate aldolase 2	w
+FRUCTOSE-BISPHOSPHATE	worm	P54216	aldo-1	P54216	0	43	Fructose-bisphosphate aldolase 1	w
+FRUCTOSE-BISPHOSPHATE	yeast	P14540	FBA1	P14540	0	188	Fructose-bisphosphate aldolase	w
+FRUCTOSE-BISPHOSPHATE	zebrafish	Q4KMC8	aldoca	Q4KMC8	0	13	Fructose-bisphosphate aldolase C-A	w
+FRUCTOSE-BISPHOSPHATE	zebrafish	Q6P043	aldoab	Q6P043	0	13	Fructose-bisphosphate aldolase	w
+FRUCTOSE-BISPHOSPHATE	zebrafish	Q803Q7	aldoaa	Q803Q7	1	20	Fructose-bisphosphate aldolase	w
+FRUCTOSE-BISPHOSPHATE	zebrafish	Q8JH70	aldocb	Q8JH70	1	15	Fructose-bisphosphate aldolase C-B	w
+FRUCTOSE-BISPHOSPHATE	zebrafish	Q8JH71	aldob	Q8JH71	2	21	Fructose-bisphosphate aldolase B	w
+FRUHSTART	fly	FBgn0004052	Z600	P22469	6	12	Protein Z600 (Protein Fruhstart)	w
+FRUI	pseudomonas-aeruginosa	Q9HY55	fruI	Q9HY55	3	29	phosphoenolpyruvate--protein phosphotransferase	
+FRUITLESS	fly	FBgn0004652	fru	E1JIP5	75	366	Fruitless, isoform N	w
+FRUK	haemophilus-influenzae	P44330	fruK	P44330	0	4	1-phosphofructokinase	
+FRUK	pseudomonas-aeruginosa	Q9HY56	fruK	Q9HY56	0	8	Phosphofructokinase	
+FRUK	salmonella-typhimurium	Q7CQ78	fruK	Q7CQ78	0	7	Phosphofructokinase	
+FRUK	shigella-dysenteriae-serotype-1	Q32E62	fruK	Q32E62	0	3	Phosphofructokinase	
+FRUK	shigella-flexneri	P0AEX2	fruK	P0AEX2	0	0	1-phosphofructokinase	
+FRUR	pseudomonas-aeruginosa	Q9HY54	fruR	Q9HY54	0	161	Fructose transport system repressor FruR	
+FRUR	shigella-dysenteriae-serotype-1	Q32K12	fruR	Q32K12	0	15	Catabolite repressor/activator	
+FRU_464	fly	FBgn0004652	fru	E1JIP5	75	366		
+FRU_652	fly	FBgn0004652	fru	E1JIP5	75	366		

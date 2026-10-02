@@ -1,21 +1,49 @@
-TAD1	arabidopsis-thaliana	F4HU58	TAD1	F4HU58	0	21	tRNA-specific adenosine deaminase TAD1
-TAD2	arabidopsis-thaliana	Q6IDB6	TAD2	Q6IDB6	1	3	tRNA-specific adenosine deaminase TAD2
-TAD2	cladophialophora-carrionii	A0A1C1CT96	TAD2	A0A1C1CT96	1	4	tRNA(adenine(34)) deaminase
-TAD2	schizosaccharomyces-pombe	O94642	tad2	O94642	1	4	tRNA-specific adenosine deaminase subunit tad2
-TAD3	arabidopsis-thaliana	F4KH86	TAD3	F4KH86	4	17	tRNA-specific adenosine deaminase TAD3
-TAD3	schizosaccharomyces-pombe	Q9P7N4	tad3	Q9P7N4	3	4	tRNA-specific adenosine deaminase subunit tad3
-TADA	arabidopsis-thaliana	Q9S7I0	TADA	Q9S7I0	1	3	tRNA(adenine(34)) deaminase, chloroplastic
-TADA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GTS9	tadA	A0A0H3GTS9	0	2	tRNA-specific adenosine deaminase
-TADA	mycobacterium-leprae	Q9CB32	tadA	Q9CB32	0	2	tRNA-specific adenosine deaminase
-TADA	mycobacterium-tuberculosis	O69719	tadA	O69719	0	2	tRNA-specific adenosine deaminase
-TADA	neisseria-gonorrhoeae	Q5F851	tadA	Q5F851	0	1	tRNA-specific adenosine deaminase
-TADA	nocardia-brasiliensis	K0EL27	tadA	K0EL27	0	2	tRNA-specific adenosine deaminase
-TADA	pseudomonas-aeruginosa	Q9HXM8	tadA	Q9HXM8	0	1	tRNA-specific adenosine deaminase
-TADA1	mus-musculus	Q99LM9	Tada1	Q99LM9	14	39	Transcriptional adapter 1
-TADA1	rattus-norvegicus	Q5BJQ7	Tada1	Q5BJQ7	13	61	Transcriptional adapter 1
-TADA2A	mus-musculus	Q8CHV6	Tada2a	Q8CHV6	15	65	Transcriptional adapter 2-alpha
-TADA2A	rattus-norvegicus	Q6AYE3	Tada2a	Q6AYE3	11	53	Transcriptional adapter 2-alpha
-TADA2B	mus-musculus	D3Z4Z0	Tada2b	D3Z4Z0	4	51	Transcriptional adapter
-TADA3	mus-musculus	Q8R0L9	Tada3	Q8R0L9	20	104	Transcriptional adapter 3
-TADA3	rattus-norvegicus	Q4V8F5	Tada3	Q4V8F5	21	109	Transcriptional adapter 3
-TADB	pseudomonas-aeruginosa	Q9HW99	tadB	Q9HW99	0	2	TadB
+TAD1	arabidopsis-thaliana	F4HU58	TAD1	F4HU58	0	21	tRNA-specific adenosine deaminase TAD1	
+TAD1	yeast	P53065	TAD1	P53065	0	7	tRNA-specific adenosine deaminase 1	
+TAD2	arabidopsis-thaliana	Q6IDB6	TAD2	Q6IDB6	1	3	tRNA-specific adenosine deaminase TAD2	
+TAD2	cladophialophora-carrionii	A0A1C1CT96	TAD2	A0A1C1CT96	1	4	tRNA(adenine(34)) deaminase	
+TAD2	schizosaccharomyces-pombe	O94642	tad2	O94642	1	4	tRNA-specific adenosine deaminase subunit tad2	
+TAD2	yeast	P47058	TAD2	P47058	2	7	tRNA-specific adenosine deaminase subunit TAD2	
+TAD2A_HUMAN	human	O75478	TADA2A	O75478	110	642		
+TAD2B_HUMAN	human	Q86TJ2	TADA2B	Q86TJ2	83	492		
+TAD3	arabidopsis-thaliana	F4KH86	TAD3	F4KH86	4	17	tRNA-specific adenosine deaminase TAD3	
+TAD3	human	Q96EY9	ADAT3	Q96EY9	12	202		
+TAD3	schizosaccharomyces-pombe	Q9P7N4	tad3	Q9P7N4	3	4	tRNA-specific adenosine deaminase subunit tad3	
+TAD3	yeast	Q9URQ3	TAD3	Q9URQ3	2	4	tRNA-specific adenosine deaminase subunit TAD3	
+TADA	arabidopsis-thaliana	Q9S7I0	TADA	Q9S7I0	1	3	tRNA(adenine(34)) deaminase, chloroplastic	
+TADA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GTS9	tadA	A0A0H3GTS9	0	2	tRNA-specific adenosine deaminase	
+TADA	mycobacterium-leprae	Q9CB32	tadA	Q9CB32	0	2	tRNA-specific adenosine deaminase	
+TADA	mycobacterium-tuberculosis	O69719	tadA	O69719	0	2	tRNA-specific adenosine deaminase	
+TADA	neisseria-gonorrhoeae	Q5F851	tadA	Q5F851	0	1	tRNA-specific adenosine deaminase	
+TADA	nocardia-brasiliensis	K0EL27	tadA	K0EL27	0	2	tRNA-specific adenosine deaminase	
+TADA	pseudomonas-aeruginosa	Q9HXM8	tadA	Q9HXM8	0	1	tRNA-specific adenosine deaminase	
+TADA1	human	Q96BN2	TADA1	Q96BN2	39	173	Transcriptional adapter 1 (SPT3-associated factor 42) (STAF4	
+TADA1	human	Q9Y2Y6	TMEM98	Q9Y2Y6	4	53	Transmembrane protein 98 (Protein TADA1)	w
+TADA1	mus-musculus	Q99LM9	Tada1	Q99LM9	14	39	Transcriptional adapter 1	
+TADA1	rattus-norvegicus	Q5BJQ7	Tada1	Q5BJQ7	13	61	Transcriptional adapter 1	
+TADA1	zebrafish	Q6NWA8	tada1	Q6NWA8	16	146	Transcriptional adapter 1	
+TADA1L	human	Q96BN2	TADA1	Q96BN2	39	173		
+TADA1_HUMAN	human	Q96BN2	TADA1	Q96BN2	39	173		
+TADA2A	human	O75478	TADA2A	O75478	110	642	Transcriptional adapter 2-alpha (Transcriptional adapter 2-l	
+TADA2A	mus-musculus	Q8CHV6	Tada2a	Q8CHV6	15	65	Transcriptional adapter 2-alpha	
+TADA2A	rattus-norvegicus	Q6AYE3	Tada2a	Q6AYE3	11	53	Transcriptional adapter 2-alpha	
+TADA2B	human	Q86TJ2	TADA2B	Q86TJ2	83	492	Transcriptional adapter 2-beta (ADA2-like protein beta) (ADA	
+TADA2B	mus-musculus	D3Z4Z0	Tada2b	D3Z4Z0	4	51	Transcriptional adapter	
+TADA2B	zebrafish	Q503N9	tada2b	Q503N9	12	77	Transcriptional adapter 2-beta	
+TADA2L	human	O75478	TADA2A	O75478	110	642		
+TADA3	human	O75528	TADA3	O75528	113	641	Transcriptional adapter 3 (ADA3 homolog) (hADA3) (STAF54) (T	
+TADA3	mus-musculus	Q8R0L9	Tada3	Q8R0L9	20	104	Transcriptional adapter 3	
+TADA3	rattus-norvegicus	Q4V8F5	Tada3	Q4V8F5	21	109	Transcriptional adapter 3	
+TADA3	zebrafish	Q7SY21	tada3	Q7SY21	35	226	Transcriptional adapter 3	
+TADA3L	human	O75528	TADA3	O75528	113	641		
+TADA3_HUMAN	human	O75528	TADA3	O75528	113	641		
+TADB	pseudomonas-aeruginosa	Q9HW99	tadB	Q9HW99	0	2	TadB	
+TADBP_HUMAN	human	Q13148	TARDBP	Q13148	50	773		
+TADEKINIG-ALFA	human	O95998	IL18BP	O95998	4	14	Interleukin-18-binding protein (IL-18BP) (Tadekinig-alfa)	w
+TADG-12	human	P57727	TMPRSS3	P57727	8	101	Transmembrane protease serine 3 (EC 3.4.21.-) (Serine protea	w
+TADG-14	human	O60259	KLK8	O60259	40	134	Kallikrein-8 (hK8) (EC 3.4.21.118) (Neuropsin) (NP) (Ovasin)	w
+TADG12	human	P57727	TMPRSS3	P57727	8	101		
+TADG14	human	O60259	KLK8	O60259	40	134		
+TADG15	human	Q9Y5Y6	ST14	Q9Y5Y6	41	275		
+TADR	fly	FBgn0032911	tadr	Q9I7L6	1	8	Torn and diminished rhabdomeres, isoform D	
+TADS-1	worm	O02209	tads-1	O02209	0	2	Replication termination factor 2	

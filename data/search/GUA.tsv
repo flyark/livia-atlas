@@ -1,44 +1,558 @@
-GUA1	candida-albicans-237561	Q5APF2	GUA1	Q5APF2	0	9	GMP synthase
-GUA1	cladophialophora-carrionii	A0A1C1C7J4	GUA1	A0A1C1C7J4	0	22	GMP synthase
-GUA1	schizosaccharomyces-pombe	O14344	gua1	O14344	0	8	Inosine-5'-monophosphate dehydrogenase
-GUA2	schizosaccharomyces-pombe	Q9P772	gua2	Q9P772	0	12	GMP synthase
-GUAA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PN49	guaA	Q9PN49	0	12	GMP synthase
-GUAA	dictyostelium-discoideum	P32073	guaA	P32073	0	9	GMP synthase
-GUAA	escherichia-coli-83333	P04079	guaA	P04079	0	24	GMP synthase
-GUAA	haemophilus-influenzae	P44335	guaA	P44335	0	16	GMP synthase
-GUAA	helicobacter-pylori	O25165	guaA	O25165	0	7	GMP synthase
-GUAA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRL9	guaA	A0A0H3GRL9	0	57	GMP synthase
-GUAA	mycobacterium-leprae	P46810	guaA	P46810	0	19	GMP synthase
-GUAA	mycobacterium-tuberculosis	P9WMS7	guaA	P9WMS7	0	26	GMP synthase
-GUAA	neisseria-gonorrhoeae	Q5F4X9	guaA	Q5F4X9	0	10	GMP synthase
-GUAA	nocardia-brasiliensis	K0EQ68	guaA	K0EQ68	0	31	GMP synthase
-GUAA	pseudomonas-aeruginosa	Q9HXM6	guaA	Q9HXM6	0	21	GMP synthase
-GUAA	salmonella-typhimurium	Q8ZN60	guaA	Q8ZN60	0	30	GMP synthase
-GUAA	shigella-dysenteriae-serotype-1	Q32D55	guaA	Q32D55	0	28	GMP synthase
-GUAA	staphylococcus-aureus-93061	Q2G0Y6	guaA	Q2G0Y6	0	14	GMP synthase
-GUAA	streptococcus-pneumoniae	P64298	guaA	P64298	0	16	GMP synthase
-GUAAA	methanocaldococcus-jannaschii	Q58970	guaAA	Q58970	0	4	GMP synthase
-GUAAB	methanocaldococcus-jannaschii	Q58531	guaAB	Q58531	0	7	GMP synthase
-GUAB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9J4	guaB	Q0P9J4	0	72	Inosine-5'-monophosphate dehydrogenase
-GUAB	haemophilus-influenzae	P44334	guaB	P44334	0	41	Inosine-5'-monophosphate dehydrogenase
-GUAB	helicobacter-pylori	P56088	guaB	P56088	0	37	Inosine-5'-monophosphate dehydrogenase
-GUAB	methanocaldococcus-jannaschii	Q59011	guaB	Q59011	0	6	Inosine-5'-monophosphate dehydrogenase
-GUAB	mycobacterium-leprae	Q49729	guaB	Q49729	0	67	Inosine-5'-monophosphate dehydrogenase
-GUAB	mycobacterium-tuberculosis	P9WKI7	guaB	P9WKI7	0	16	Inosine-5'-monophosphate dehydrogenase
-GUAB	neisseria-gonorrhoeae	Q5F8H4	guaB	Q5F8H4	0	17	Inosine-5'-monophosphate dehydrogenase
-GUAB	nocardia-brasiliensis	K0ENK0	guaB	K0ENK0	0	89	Inosine-5'-monophosphate dehydrogenase
-GUAB	pseudomonas-aeruginosa	Q9HXM5	guaB	Q9HXM5	0	154	Inosine-5'-monophosphate dehydrogenase
-GUAB	salmonella-typhimurium	Q8ZN59	guaB	Q8ZN59	2	132	Inosine-5'-monophosphate dehydrogenase
-GUAB	shigella-dysenteriae-serotype-1	Q32D54	guaB	Q32D54	0	13	Inosine-5'-monophosphate dehydrogenase
-GUAB	shigella-flexneri	P0ADG9	guaB	P0ADG9	0	2	Inosine-5'-monophosphate dehydrogenase
-GUAB	staphylococcus-aureus-93061	Q2G0Y7	guaB	Q2G0Y7	0	3	Inosine-5'-monophosphate dehydrogenase
-GUAB1	mycobacterium-leprae	O32912	guaB1	O32912	0	39	GMP reductase
-GUAB1	mycobacterium-tuberculosis	P9WKI3	guaB1	P9WKI3	0	16	GMP reductase
-GUAB1	nocardia-brasiliensis	K0EQ69	guaB1	K0EQ69	0	11	GMP reductase
-GUAC	escherichia-coli-83333	P60560	guaC	P60560	0	8	GMP reductase
-GUAC	helicobacter-pylori	O25525	guaC	O25525	1	4	GMP reductase
-GUAC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRS0	guaC	A0A0H3GRS0	0	128	GMP reductase
-GUAC	salmonella-typhimurium	Q8ZRT5	guaC	Q8ZRT5	0	13	GMP reductase
-GUAC	shigella-dysenteriae-serotype-1	Q32JY8	guaC	Q32JY8	0	13	GMP reductase
-GUAC	staphylococcus-aureus-93061	Q2FYU4	guaC	Q2FYU4	0	3	GMP reductase
-GUAC	streptococcus-pneumoniae	Q8DPJ7	guaC	Q8DPJ7	0	3	GMP reductase
+GUA1	candida-albicans-237561	Q5APF2	GUA1	Q5APF2	0	9	GMP synthase	
+GUA1	cladophialophora-carrionii	A0A1C1C7J4	GUA1	A0A1C1C7J4	0	22	GMP synthase	
+GUA1	schizosaccharomyces-pombe	O14344	gua1	O14344	0	8	Inosine-5'-monophosphate dehydrogenase	
+GUA1	yeast	P38625	GUA1	P38625	0	30	GMP synthase	
+GUA2	schizosaccharomyces-pombe	Q9P772	gua2	Q9P772	0	12	GMP synthase	
+GUAA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PN49	guaA	Q9PN49	0	12	GMP synthase	
+GUAA	dictyostelium-discoideum	P32073	guaA	P32073	0	9	GMP synthase	
+GUAA	escherichia-coli-83333	P04079	guaA	P04079	0	24	GMP synthase	
+GUAA	haemophilus-influenzae	P44335	guaA	P44335	0	16	GMP synthase	
+GUAA	helicobacter-pylori	O25165	guaA	O25165	0	7	GMP synthase	
+GUAA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRL9	guaA	A0A0H3GRL9	0	57	GMP synthase	
+GUAA	mycobacterium-leprae	P46810	guaA	P46810	0	19	GMP synthase	
+GUAA	mycobacterium-tuberculosis	P9WMS7	guaA	P9WMS7	0	26	GMP synthase	
+GUAA	neisseria-gonorrhoeae	Q5F4X9	guaA	Q5F4X9	0	10	GMP synthase	
+GUAA	nocardia-brasiliensis	K0EQ68	guaA	K0EQ68	0	31	GMP synthase	
+GUAA	pseudomonas-aeruginosa	Q9HXM6	guaA	Q9HXM6	0	21	GMP synthase	
+GUAA	salmonella-typhimurium	Q8ZN60	guaA	Q8ZN60	0	30	GMP synthase	
+GUAA	shigella-dysenteriae-serotype-1	Q32D55	guaA	Q32D55	0	28	GMP synthase	
+GUAA	staphylococcus-aureus-93061	Q2G0Y6	guaA	Q2G0Y6	0	14	GMP synthase	
+GUAA	streptococcus-pneumoniae	P64298	guaA	P64298	0	16	GMP synthase	
+GUAAA	methanocaldococcus-jannaschii	Q58970	guaAA	Q58970	0	4	GMP synthase	
+GUAAB	methanocaldococcus-jannaschii	Q58531	guaAB	Q58531	0	7	GMP synthase	
+GUAA_HUMAN	human	P49915	GMPS	P49915	5	232		
+GUAB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9J4	guaB	Q0P9J4	0	72	Inosine-5'-monophosphate dehydrogenase	
+GUAB	haemophilus-influenzae	P44334	guaB	P44334	0	41	Inosine-5'-monophosphate dehydrogenase	
+GUAB	helicobacter-pylori	P56088	guaB	P56088	0	37	Inosine-5'-monophosphate dehydrogenase	
+GUAB	methanocaldococcus-jannaschii	Q59011	guaB	Q59011	0	6	Inosine-5'-monophosphate dehydrogenase	
+GUAB	mycobacterium-leprae	Q49729	guaB	Q49729	0	67	Inosine-5'-monophosphate dehydrogenase	
+GUAB	mycobacterium-tuberculosis	P9WKI7	guaB	P9WKI7	0	16	Inosine-5'-monophosphate dehydrogenase	
+GUAB	neisseria-gonorrhoeae	Q5F8H4	guaB	Q5F8H4	0	17	Inosine-5'-monophosphate dehydrogenase	
+GUAB	nocardia-brasiliensis	K0ENK0	guaB	K0ENK0	0	89	Inosine-5'-monophosphate dehydrogenase	
+GUAB	pseudomonas-aeruginosa	Q9HXM5	guaB	Q9HXM5	0	154	Inosine-5'-monophosphate dehydrogenase	
+GUAB	salmonella-typhimurium	Q8ZN59	guaB	Q8ZN59	2	132	Inosine-5'-monophosphate dehydrogenase	
+GUAB	shigella-dysenteriae-serotype-1	Q32D54	guaB	Q32D54	0	13	Inosine-5'-monophosphate dehydrogenase	
+GUAB	shigella-flexneri	P0ADG9	guaB	P0ADG9	0	2	Inosine-5'-monophosphate dehydrogenase	
+GUAB	staphylococcus-aureus-93061	Q2G0Y7	guaB	Q2G0Y7	0	3	Inosine-5'-monophosphate dehydrogenase	
+GUAB1	mycobacterium-leprae	O32912	guaB1	O32912	0	39	GMP reductase	
+GUAB1	mycobacterium-tuberculosis	P9WKI3	guaB1	P9WKI3	0	16	GMP reductase	
+GUAB1	nocardia-brasiliensis	K0EQ69	guaB1	K0EQ69	0	11	GMP reductase	
+GUAC	escherichia-coli-83333	P60560	guaC	P60560	0	8	GMP reductase	
+GUAC	helicobacter-pylori	O25525	guaC	O25525	1	4	GMP reductase	
+GUAC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRS0	guaC	A0A0H3GRS0	0	128	GMP reductase	
+GUAC	salmonella-typhimurium	Q8ZRT5	guaC	Q8ZRT5	0	13	GMP reductase	
+GUAC	shigella-dysenteriae-serotype-1	Q32JY8	guaC	Q32JY8	0	13	GMP reductase	
+GUAC	staphylococcus-aureus-93061	Q2FYU4	guaC	Q2FYU4	0	3	GMP reductase	
+GUAC	streptococcus-pneumoniae	Q8DPJ7	guaC	Q8DPJ7	0	3	GMP reductase	
+GUAD_HUMAN	human	Q9Y2T3	GDA	Q9Y2T3	0	108		
+GUAN	human	Q7L0Y3	TRMT10C	Q7L0Y3	21	235	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
+GUANASE	human	Q9Y2T3	GDA	Q9Y2T3	0	108	Guanine deaminase (Guanase) (Guanine aminase) (EC 3.5.4.3) (	w
+GUANIDINO	human	Q9BSE5	AGMAT	Q9BSE5	2	93	Guanidino acid hydrolase, mitochondrial (EC 3.5.3.-) (Argina	w
+GUANIDINOACETATE	human	Q14353	GAMT	Q14353	6	83	Guanidinoacetate N-methyltransferase (EC 2.1.1.2)	w
+GUANIDINOACETATE	zebrafish	Q71N41	gamt	Q71N41	0	4	Guanidinoacetate N-methyltransferase	w
+GUANIDINOBUTYRASE	human	Q9BSE5	AGMAT	Q9BSE5	2	93	Guanidino acid hydrolase, mitochondrial (EC 3.5.3.-) (Argina	w
+GUANIDINOPROPIONASE	human	Q9BSE5	AGMAT	Q9BSE5	2	93	Guanidino acid hydrolase, mitochondrial (EC 3.5.3.-) (Argina	w
+GUANINE	fly	FBgn0000384	cta	P25157	19	77	Guanine nucleotide-binding protein subunit alpha homolog (Pr	w
+GUANINE	fly	FBgn0001104	Galphai	P20353	50	216	G protein alpha i subunit (Guanine nucleotide-binding protei	w
+GUANINE	fly	FBgn0001105	Gbeta13F	P26308	28	186	Guanine nucleotide-binding protein subunit beta-1	w
+GUANINE	fly	FBgn0001122	Galphao	P16378	17	87	G protein alpha o subunit (Guanine nucleotide-binding protei	w
+GUANINE	fly	FBgn0001123	Galphas	P20354	58	326	G protein alpha s subunit (Adenylate cyclase-stimulating G a	w
+GUANINE	fly	FBgn0004623	Gbeta76C	P29829	16	75	Guanine nucleotide-binding protein subunit beta-2	w
+GUANINE	fly	FBgn0004921	Ggamma1	P38040	8	78	Guanine nucleotide-binding protein subunit gamma-1	w
+GUANINE	fly	FBgn0010223	Galphaf	Q05337	4	38	Guanine nucleotide-binding protein G(f) subunit alpha (G pro	w
+GUANINE	fly	FBgn0015803	RtGEF	A8DZ19	10	65	Rho-type guanine nucleotide exchange factor, isoform F (Rho-	w
+GUANINE	fly	FBgn0020618	Rack1	O18640	66	778	Small ribosomal subunit protein RACK1 (Guanine nucleotide-bi	w
+GUANINE	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18	Rho guanine nucleotide exchange factor 2, isoform D (Rho gua	w
+GUANINE	fly	FBgn0025629	Mettl1	O77263	4	36	tRNA (guanine-N(7)-)-methyltransferase (EC 2.1.1.33) (tRNA (	w
+GUANINE	fly	FBgn0026376	Rgl	M9PCE9	8	28	Ral guanine nucleotide dissociation stimulator-like, isoform	w
+GUANINE	fly	FBgn0028500	Rich	Q9V3C5	2	32	Guanine nucleotide exchange factor subunit Rich (Protein RIC	w
+GUANINE	fly	FBgn0031321	Tgt	Q9VPY8	1	16	Queuine tRNA-ribosyltransferase catalytic subunit (EC 2.4.2.	w
+GUANINE	fly	FBgn0032020	strat	Q9VLP3	13	108	Guanine nucleotide exchange factor MSS4 homolog (Guanine nuc	w
+GUANINE	fly	FBgn0032430	Trm1	Q9VK89	0	24	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
+GUANINE	fly	FBgn0032882	Ns4	Q9VIJ9	0	103	Guanine nucleotide-binding protein-like 1	w
+GUANINE	fly	FBgn0033756	CG17760	Q8MQV5	28	94	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	fly	FBgn0035574	RhoGEF64C	Q9VZ85	4	20	Rho guanine nucleotide exchange factor at 64C, isoform A (Rh	w
+GUANINE	fly	FBgn0035761	RhoGEF4	Q9VS45	1	7	LD03170p (Rho guanine nucleotide exchange factor 4)	w
+GUANINE	fly	FBgn0037250	CG1074	Q960G1	2	12	tRNA (guanine(10)-N2)-methyltransferase homolog (tRNA guanos	w
+GUANINE	fly	FBgn0038473	Ns1	Q8MT06	20	150	Guanine nucleotide-binding protein-like 3 homolog (Nucleoste	w
+GUANINE	fly	FBgn0040068	Vav	A8JUQ9	22	156	Vav guanine nucleotide exchange factor, isoform C	w
+GUANINE	fly	FBgn0050054	CG30054	Q0E9A7	10	31	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	fly	FBgn0050115	GEFmeso	A1ZBA1	11	21	FI17866p1 (Guanine nucleotide exchange factor in mesoderm, i	w
+GUANINE	fly	FBgn0051158	Efa6	E1JIT7	17	66	PH and SEC7 domain-containing protein (Exchange factor for A	w
+GUANINE	fly	FBgn0052281	CG32281	Q8IRE4	1	5	tRNA (guanine(37)-N1)-methyltransferase (EC 2.1.1.228) (M1G-	w
+GUANINE	fly	FBgn0259228	C3G	O77086	12	41	Guanine nucleotide-releasing factor 2 (CRK SH3-binding GNRP)	w
+GUANINE	fly	FBgn0261436	DhpD	Q9VMY9	0	94	Guanine deaminase (EC 3.5.4.3) (Dihydropterin deaminase) (EC	w
+GUANINE	fly	FBgn0263029	CG43324	A0A0B4K838	5	25	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	fly	FBgn0264707	RhoGEF3	Q9W0S2	0	1	Rho guanine nucleotide exchange factor 3, isoform L	w
+GUANINE	fly	FBgn0265778	PDZ-GEF	Q9VMF3	4	38	Dizzy isoform AII (Gef26 dizzy AI isoform) (PDZ domain-conta	w
+GUANINE	fly	FBgn0267252	Ggamma30A	X2JDM7	6	58	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	human	A0A024R161	DNAJC25-GNG10	A0A024R161	8	69	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	human	A0A087WZG4	ARHGEF18	A0A087WZG4	6	32	Rho guanine nucleotide exchange factor 18	w
+GUANINE	human	A0A1W2PPG7	GNG14	A0A1W2PPG7	14	49	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	A0A2R8Y471	?	A0A2R8Y471	2	6	Ral guanine nucleotide dissociation stimulator	w
+GUANINE	human	A0A5F9ZHI8	ARHGEF18	A0A5F9ZHI8	0	4	Rho/Rac guanine nucleotide exchange factor 18	w
+GUANINE	human	A0A804HLA8	GNG5B	A0A804HLA8	3	11	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	A1IGU5	ARHGEF37	A1IGU5	14	67	Rho guanine nucleotide exchange factor 37	w
+GUANINE	human	A5PKW4	PSD	A5PKW4	26	97	PH and SEC7 domain-containing protein 1 (Exchange factor for	w
+GUANINE	human	A5YM69	ARHGEF35	A5YM69	2	12	Rho guanine nucleotide exchange factor 35 (Rho guanine nucle	w
+GUANINE	human	A8MTJ3	GNAT3	A8MTJ3	85	213	Guanine nucleotide-binding protein G(t) subunit alpha-3 (Gus	w
+GUANINE	human	A8MVX0	ARHGEF33	A8MVX0	4	36	Rho guanine nucleotide exchange factor 33	w
+GUANINE	human	O14610	GNGT2	O14610	25	209	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	O14775	GNB5	O14775	69	492	Guanine nucleotide-binding protein subunit beta-5 (Gbeta5) (	w
+GUANINE	human	O14827	RASGRF2	O14827	17	231	Ras-specific guanine nucleotide-releasing factor 2 (Ras-GRF2	w
+GUANINE	human	O15013	ARHGEF10	O15013	43	230	Rho guanine nucleotide exchange factor 10	w
+GUANINE	human	O15068	MCF2L	O15068	50	193	Guanine nucleotide exchange factor DBS (DBL's big sister) (M	w
+GUANINE	human	O15085	ARHGEF11	O15085	78	229	Rho guanine nucleotide exchange factor 11 (PDZ-RhoGEF)	w
+GUANINE	human	O15211	RGL2	O15211	21	84	Ral guanine nucleotide dissociation stimulator-like 2 (RalGD	w
+GUANINE	human	O43307	ARHGEF9	O43307	26	176	Rho guanine nucleotide exchange factor 9 (Collybistin) (PEM-	w
+GUANINE	human	O60262	GNG7	O60262	28	233	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	O94827	PLEKHG5	O94827	54	140	Pleckstrin homology domain-containing family G member 5 (PH 	w
+GUANINE	human	O94989	ARHGEF15	O94989	12	95	Rho guanine nucleotide exchange factor 15 (Ephexin-5) (E5) (	w
+GUANINE	human	O95267	RASGRP1	O95267	35	264	RAS guanyl-releasing protein 1 (Calcium and DAG-regulated gu	w
+GUANINE	human	O95398	RAPGEF3	O95398	28	198	Rap guanine nucleotide exchange factor 3 (Exchange factor di	w
+GUANINE	human	O95837	GNA14	O95837	62	195	Guanine nucleotide-binding protein subunit alpha-14 (G alpha	w
+GUANINE	human	P04899	GNAI2	P04899	292	849	Guanine nucleotide-binding protein G(i) subunit alpha-2 (EC 	w
+GUANINE	human	P08754	GNAI3	P08754	275	744	Guanine nucleotide-binding protein G(i) subunit alpha-3 (G(i	w
+GUANINE	human	P09471	GNAO1	P09471	164	485	Guanine nucleotide-binding protein G(o) subunit alpha (EC 3.	w
+GUANINE	human	P11488	GNAT1	P11488	52	195	Guanine nucleotide-binding protein G(t) subunit alpha-1 (EC 	w
+GUANINE	human	P16520	GNB3	P16520	60	410	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+GUANINE	human	P19086	GNAZ	P19086	73	347	Guanine nucleotide-binding protein G(z) subunit alpha (G(x) 	w
+GUANINE	human	P19087	GNAT2	P19087	42	175	Guanine nucleotide-binding protein G(t) subunit alpha-2 (EC 	w
+GUANINE	human	P29992	GNA11	P29992	157	395	Guanine nucleotide-binding protein subunit alpha-11 (G alpha	w
+GUANINE	human	P30679	GNA15	P30679	41	172	Guanine nucleotide-binding protein subunit alpha-15 (G alpha	w
+GUANINE	human	P32455	GBP1	P32455	22	280	Guanylate-binding protein 1 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	w
+GUANINE	human	P32456	GBP2	P32456	20	231	Guanylate-binding protein 2 (EC 3.6.5.-) (GTP-binding protei	w
+GUANINE	human	P36915	GNL1	P36915	4	203	Guanine nucleotide-binding protein-like 1 (GTP-binding prote	w
+GUANINE	human	P38405	GNAL	P38405	69	257	Guanine nucleotide-binding protein G(olf) subunit alpha (EC 	w
+GUANINE	human	P47224	RABIF	P47224	32	241	Guanine nucleotide exchange factor MSS4 (Rab-interacting fac	w
+GUANINE	human	P50148	GNAQ	P50148	337	824	Guanine nucleotide-binding protein G(q) subunit alpha (EC 3.	w
+GUANINE	human	P50150	GNG4	P50150	21	225	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	P50151	GNG10	P50151	26	191	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	P52735	VAV2	P52735	38	291	Guanine nucleotide exchange factor VAV2 (VAV-2)	w
+GUANINE	human	P59768	GNG2	P59768	42	409	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	P61952	GNG11	P61952	31	262	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	P62873	GNB1	P62873	125	1533	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+GUANINE	human	P62879	GNB2	P62879	118	1071	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+GUANINE	human	P63092	GNAS	P63092	960	6779	Guanine nucleotide-binding protein G(s) subunit alpha isofor	w
+GUANINE	human	P63096	GNAI1	P63096	518	1995	Guanine nucleotide-binding protein G(i) subunit alpha-1 (EC 	w
+GUANINE	human	P63211	GNGT1	P63211	26	163	Guanine nucleotide-binding protein G(T) subunit gamma-T1 (Tr	w
+GUANINE	human	P63215	GNG3	P63215	16	135	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	P63218	GNG5	P63218	26	239	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	P63244	RACK1	P63244	105	1123	Small ribosomal subunit protein RACK1 (Cell proliferation-in	w
+GUANINE	human	P98174	FGD1	P98174	22	113	FYVE, RhoGEF and PH domain-containing protein 1 (Faciogenita	w
+GUANINE	human	Q008S8	ECT2L	Q008S8	2	83	Epithelial cell-transforming sequence 2 oncogene-like (Lung-	w
+GUANINE	human	Q03113	GNA12	Q03113	75	257	Guanine nucleotide-binding protein subunit alpha-12 (G alpha	w
+GUANINE	human	Q12774	ARHGEF5	Q12774	26	94	Rho guanine nucleotide exchange factor 5 (Ephexin-3) (Guanin	w
+GUANINE	human	Q12802	AKAP13	Q12802	28	79	A-kinase anchor protein 13 (AKAP-13) (AKAP-Lbc) (Breast canc	w
+GUANINE	human	Q12967	RALGDS	Q12967	24	78	Ral guanine nucleotide dissociation stimulator (RalGDS) (Ral	w
+GUANINE	human	Q13009	TIAM1	Q13009	111	569	Rho guanine nucleotide exchange factor TIAM1 (T-lymphoma inv	w
+GUANINE	human	Q13905	RAPGEF1	Q13905	37	218	Rap guanine nucleotide exchange factor 1 (CRK SH3-binding GN	w
+GUANINE	human	Q13972	RASGRF1	Q13972	16	188	Ras-specific guanine nucleotide-releasing factor 1 (Ras-GRF1	w
+GUANINE	human	Q14155	ARHGEF7	Q14155	67	335	Rho guanine nucleotide exchange factor 7 (Beta-Pix) (COOL-1)	w
+GUANINE	human	Q14344	GNA13	Q14344	92	369	Guanine nucleotide-binding protein subunit alpha-13 (G alpha	w
+GUANINE	human	Q15052	ARHGEF6	Q15052	66	284	Rho guanine nucleotide exchange factor 6 (Alpha-Pix) (COOL-2	w
+GUANINE	human	Q32P41	TRMT5	Q32P41	2	85	tRNA (guanine(37)-N(1))-methyltransferase (EC 2.1.1.228) (M1	w
+GUANINE	human	Q3KR16	PLEKHG6	Q3KR16	24	86	Pleckstrin homology domain-containing family G member 6 (PH 	w
+GUANINE	human	Q3MIN7	RGL3	Q3MIN7	15	90	Ral guanine nucleotide dissociation stimulator-like 3 (RalGD	w
+GUANINE	human	Q4ADV7	RIC1	Q4ADV7	8	100	Guanine nucleotide exchange factor subunit RIC1 (Connexin-43	w
+GUANINE	human	Q5JS13	RALGPS1	Q5JS13	8	65	Ras-specific guanine nucleotide-releasing factor RalGPS1 (Ra	w
+GUANINE	human	Q5JSL3	DOCK11	Q5JSL3	9	49	Dedicator of cytokinesis protein 11 (Activated Cdc42-associa	w
+GUANINE	human	Q5JWF2	GNAS	Q5JWF2	127	483	Guanine nucleotide-binding protein G(s) subunit alpha isofor	w
+GUANINE	human	Q5TH69	ARFGEF3	Q5TH69	4	85	Brefeldin A-inhibited guanine nucleotide-exchange protein 3 	w
+GUANINE	human	Q5VV41	ARHGEF16	Q5VV41	21	209	Rho guanine nucleotide exchange factor 16 (Ephexin-4)	w
+GUANINE	human	Q6DN90	IQSEC1	Q6DN90	44	181	IQ motif and SEC7 domain-containing protein 1 (ADP-ribosylat	w
+GUANINE	human	Q6PF06	TRMT10B	Q6PF06	6	61	tRNA methyltransferase 10 homolog B (EC 2.1.1.221) (RNA (gua	w
+GUANINE	human	Q6ZN66	GBP6	Q6ZN66	8	95	Guanylate-binding protein 6 (EC 3.6.5.-) (GTP-binding protei	w
+GUANINE	human	Q6ZSZ5	ARHGEF18	Q6ZSZ5	35	86	Rho guanine nucleotide exchange factor 18 (114 kDa Rho-speci	w
+GUANINE	human	Q7LDG7	RASGRP2	Q7LDG7	28	266	RAS guanyl-releasing protein 2 (Calcium and DAG-regulated gu	w
+GUANINE	human	Q7Z2T5	TRMT1L	Q7Z2T5	9	262	tRNA (guanine(27)-N(2))-dimethyltransferase (EC 2.1.1.-) (tR	w
+GUANINE	human	Q7Z4G4	TRMT11	Q7Z4G4	10	106	tRNA (guanine(10)-N(2))-methyltransferase TRMT11 (EC 2.1.1.2	w
+GUANINE	human	Q7Z628	NET1	Q7Z628	36	148	Neuroepithelial cell-transforming gene 1 protein (Proto-onco	w
+GUANINE	human	Q86VW2	ARHGEF25	Q86VW2	17	112	Rho guanine nucleotide exchange factor 25 (Guanine nucleotid	w
+GUANINE	human	Q86X27	RALGPS2	Q86X27	32	140	Ras-specific guanine nucleotide-releasing factor RalGPS2 (Ra	w
+GUANINE	human	Q86YR7	MCF2L2	Q86YR7	14	86	Probable guanine nucleotide exchange factor MCF2L2 (Dbs-rela	w
+GUANINE	human	Q8IV61	RASGRP3	Q8IV61	26	174	Ras guanyl-releasing protein 3 (Calcium and DAG-regulated gu	w
+GUANINE	human	Q8IVF5	TIAM2	Q8IVF5	72	259	Rho guanine nucleotide exchange factor TIAM2 (SIF and TIAM1-	w
+GUANINE	human	Q8IW93	ARHGEF19	Q8IW93	23	118	Rho guanine nucleotide exchange factor 19 (Ephexin-2)	w
+GUANINE	human	Q8IZJ4	RGL4	Q8IZJ4	5	17	Ral-GDS-related protein (hRGR) (Ral guanine nucleotide disso	w
+GUANINE	human	Q8N1W1	ARHGEF28	Q8N1W1	60	176	Rho guanine nucleotide exchange factor 28 (190 kDa guanine n	w
+GUANINE	human	Q8N4T4	ARHGEF39	Q8N4T4	9	104	Rho guanine nucleotide exchange factor 39	w
+GUANINE	human	Q8N5V2	NGEF	Q8N5V2	25	166	Ephexin-1 (Eph-interacting exchange protein) (Neuronal guani	w
+GUANINE	human	Q8N8V2	GBP7	Q8N8V2	7	45	Guanylate-binding protein 7 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	w
+GUANINE	human	Q8NDX1	PSD4	Q8NDX1	16	66	PH and SEC7 domain-containing protein 4 (Exchange factor for	w
+GUANINE	human	Q8TBN0	RAB3IL1	Q8TBN0	32	129	Guanine nucleotide exchange factor for Rab-3A (Rab-3A-intera	w
+GUANINE	human	Q8TBZ6	TRMT10A	Q8TBZ6	5	56	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	w
+GUANINE	human	Q8TER5	ARHGEF40	Q8TER5	29	143	Rho guanine nucleotide exchange factor 40 (Protein SOLO) (Sc	w
+GUANINE	human	Q8TEU7	RAPGEF6	Q8TEU7	64	271	Rap guanine nucleotide exchange factor 6 (PDZ domain-contain	w
+GUANINE	human	Q8TEV9	SMCR8	Q8TEV9	26	218	Guanine nucleotide exchange protein SMCR8 (Smith-Magenis syn	w
+GUANINE	human	Q8WXF7	ATL1	Q8WXF7	7	126	Atlastin-1 (ATL-1) (EC 3.6.5.-) (Brain-specific GTP-binding 	w
+GUANINE	human	Q8WZA2	RAPGEF4	Q8WZA2	11	158	Rap guanine nucleotide exchange factor 4 (Exchange factor di	w
+GUANINE	human	Q92538	GBF1	Q92538	36	491	Golgi-specific brefeldin A-resistance guanine nucleotide exc	w
+GUANINE	human	Q92565	RAPGEF5	Q92565	15	68	Rap guanine nucleotide exchange factor 5 (Guanine nucleotide	w
+GUANINE	human	Q92888	ARHGEF1	Q92888	73	298	Rho guanine nucleotide exchange factor 1 (115 kDa guanine nu	w
+GUANINE	human	Q92974	ARHGEF2	Q92974	116	415	Rho guanine nucleotide exchange factor 2 (Guanine nucleotide	w
+GUANINE	human	Q96DR7	ARHGEF26	Q96DR7	17	99	Rho guanine nucleotide exchange factor 26 (SH3 domain-contai	w
+GUANINE	human	Q96LT7	C9orf72	Q96LT7	25	295	Guanine nucleotide exchange factor C9orf72	w
+GUANINE	human	Q96N96	SPATA13	Q96N96	30	128	Spermatogenesis-associated protein 13 (APC-stimulated guanin	w
+GUANINE	human	Q96PE2	ARHGEF17	Q96PE2	26	157	Rho guanine nucleotide exchange factor 17 (164 kDa Rho-speci	w
+GUANINE	human	Q96PP8	GBP5	Q96PP8	14	141	Guanylate-binding protein 5 (EC 3.6.5.-) (GBP-TA antigen) (G	w
+GUANINE	human	Q96PP9	GBP4	Q96PP9	8	102	Guanylate-binding protein 4 (EC 3.6.5.-) (GTP-binding protei	w
+GUANINE	human	Q9BQI7	PSD2	Q9BQI7	20	108	PH and SEC7 domain-containing protein 2 (Exchange factor for	w
+GUANINE	human	Q9BV44	THUMPD3	Q9BV44	24	120	tRNA (guanine(6)-N(2))-methyltransferase THUMP3 (EC 2.1.1.25	w
+GUANINE	human	Q9BVP2	GNL3	Q9BVP2	65	597	Guanine nucleotide-binding protein-like 3 (E2-induced gene 3	w
+GUANINE	human	Q9BXR0	QTRT1	Q9BXR0	3	75	Queuine tRNA-ribosyltransferase catalytic subunit 1 (EC 2.4.	w
+GUANINE	human	Q9BYB4	GNB1L	Q9BYB4	25	182	Guanine nucleotide-binding protein subunit beta-like protein	w
+GUANINE	human	Q9BZ29	DOCK9	Q9BZ29	11	84	Dedicator of cytokinesis protein 9 (Cdc42 guanine nucleotide	w
+GUANINE	human	Q9H0R5	GBP3	Q9H0R5	9	68	Guanylate-binding protein 3 (EC 3.6.5.-) (GTP-binding protei	w
+GUANINE	human	Q9HAV0	GNB4	Q9HAV0	76	608	Guanine nucleotide-binding protein subunit beta-4 (Transduci	w
+GUANINE	human	Q9HCE6	ARHGEF10L	Q9HCE6	24	221	Rho guanine nucleotide exchange factor 10-like protein (Grin	w
+GUANINE	human	Q9HCU5	PREB	Q9HCU5	57	544	Guanine nucleotide-exchange factor SEC12 (Prolactin regulato	w
+GUANINE	human	Q9HD47	RANGRF	Q9HD47	12	107	Ran guanine nucleotide release factor (RanGNRF) (Ran-binding	w
+GUANINE	human	Q9NR80	ARHGEF4	Q9NR80	34	181	Rho guanine nucleotide exchange factor 4 (APC-stimulated gua	w
+GUANINE	human	Q9NR81	ARHGEF3	Q9NR81	31	167	Rho guanine nucleotide exchange factor 3 (Exchange factor fo	w
+GUANINE	human	Q9NVN8	GNL3L	Q9NVN8	39	451	Guanine nucleotide-binding protein-like 3-like protein	w
+GUANINE	human	Q9NW61	PLEKHJ1	Q9NW61	15	65	Pleckstrin homology domain-containing family J member 1 (PH 	w
+GUANINE	human	Q9NXH9	TRMT1	Q9NXH9	6	168	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
+GUANINE	human	Q9NXL2	ARHGEF38	Q9NXL2	15	59	Rho guanine nucleotide exchange factor 38	w
+GUANINE	human	Q9NYI0	PSD3	Q9NYI0	30	113	PH and SEC7 domain-containing protein 3 (Epididymis tissue p	w
+GUANINE	human	Q9NZL6	RGL1	Q9NZL6	20	71	Ral guanine nucleotide dissociation stimulator-like 1 (RalGD	w
+GUANINE	human	Q9NZN5	ARHGEF12	Q9NZN5	80	240	Rho guanine nucleotide exchange factor 12 (Leukemia-associat	w
+GUANINE	human	Q9P2W3	GNG13	Q9P2W3	22	296	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	Q9UBI6	GNG12	Q9UBI6	33	301	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	Q9UGK8	SERGEF	Q9UGK8	17	76	Secretion-regulating guanine nucleotide exchange factor (Dea	w
+GUANINE	human	Q9UHV5	RAPGEFL1	Q9UHV5	12	53	Rap guanine nucleotide exchange factor-like 1 (Link guanine 	w
+GUANINE	human	Q9UK08	GNG8	Q9UK08	27	300	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
+GUANINE	human	Q9UKW4	VAV3	Q9UKW4	43	312	Guanine nucleotide exchange factor VAV3 (VAV-3)	w
+GUANINE	human	Q9Y2T3	GDA	Q9Y2T3	0	108	Guanine deaminase (Guanase) (Guanine aminase) (EC 3.5.4.3) (	w
+GUANINE	human	Q9Y4G8	RAPGEF2	Q9Y4G8	78	347	Rap guanine nucleotide exchange factor 2 (Cyclic nucleotide 	w
+GUANINE	human	Q9Y6D5	ARFGEF2	Q9Y6D5	12	147	Brefeldin A-inhibited guanine nucleotide-exchange protein 2 	w
+GUANINE	human	Q9Y6D6	ARFGEF1	Q9Y6D6	15	183	Brefeldin A-inhibited guanine nucleotide-exchange protein 1 	w
+GUANINE	worm	A8WHT1	C53A5.17	A8WHT1	0	2	tRNA (guanine(37)-N(1))-methyltransferase	w
+GUANINE	worm	G5EDB9	pxf-1	G5EDB9	0	8	Rap guanine nucleotide exchange factor	w
+GUANINE	worm	G5EFE1	rhgf-1	G5EFE1	8	22	Guanine nucleotide exchange factor	w
+GUANINE	worm	G5EGU1	egl-30	G5EGU1	36	94	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	worm	H2KZX7	CELE_Y34B4A.4	H2KZX7	7	54	Rap guanine nucleotide exchange factor 1	w
+GUANINE	worm	O76584	gpa-11	O76584	4	30	Guanine nucleotide-binding protein alpha-11 subunit	w
+GUANINE	worm	P17343	gpb-1	P17343	25	137	Guanine nucleotide-binding protein subunit beta-1	w
+GUANINE	worm	P22454	gpa-2	P22454	4	30	Guanine nucleotide-binding protein alpha-2 subunit	w
+GUANINE	worm	P28051	gpa-1	P28051	3	31	Guanine nucleotide-binding protein alpha-1 subunit	w
+GUANINE	worm	P28052	gpa-3	P28052	3	33	Guanine nucleotide-binding protein alpha-3 subunit	w
+GUANINE	worm	P34578	epac-1	P34578	5	33	Rap guanine nucleotide exchange factor 1	w
+GUANINE	worm	P42171	rei-1	P42171	3	10	Guanine nucleotide exchange factor rei-1	w
+GUANINE	worm	P51875	goa-1	P51875	13	68	Guanine nucleotide-binding protein G(o) subunit alpha	w
+GUANINE	worm	P54406	gpc-1	P54406	2	101	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	worm	P91907	gpa-15	P91907	2	27	Guanine nucleotide-binding protein alpha-15 subunit	w
+GUANINE	worm	Q09346	smcr-8	Q09346	1	9	Guanine nucleotide exchange protein smcr-8	w
+GUANINE	worm	Q09417	R06F6.8	Q09417	1	15	Guanine nucleotide exchange factor subunit R06F6.8	w
+GUANINE	worm	Q18434	odr-3	Q18434	4	31	Guanine nucleotide-binding protein alpha-17 subunit	w
+GUANINE	worm	Q19572	gpa-12	Q19572	4	35	Guanine nucleotide-binding protein alpha-12 subunit	w
+GUANINE	worm	Q19789	trmt-10a	Q19789	0	2	tRNA (guanine(9)-N(1))-methyltransferase	w
+GUANINE	worm	Q19852	rgl-1	Q19852	11	19	Ral guanine nucleotide dissociation stimulator-like 1	w
+GUANINE	worm	Q20636	gpb-2	Q20636	23	139	Guanine nucleotide-binding protein subunit beta-2	w
+GUANINE	worm	Q20701	gpa-5	Q20701	8	65	Guanine nucleotide-binding protein alpha-5 subunit	w
+GUANINE	worm	Q20907	gpa-8	Q20907	4	30	Guanine nucleotide-binding protein alpha-8 subunit	w
+GUANINE	worm	Q20910	gpa-9	Q20910	0	30	Guanine nucleotide-binding protein alpha-9 subunit	w
+GUANINE	worm	Q21086	nst-1	Q21086	10	100	Guanine nucleotide-binding protein-like 3 homolog	w
+GUANINE	worm	Q21194	rei-2	Q21194	2	3	Guanine nucleotide exchange factor rei-2	w
+GUANINE	worm	Q21653	osg-1	Q21653	0	4	Rho guanine nucleotide exchange factor osg-1	w
+GUANINE	worm	Q21917	gpa-7	Q21917	4	31	Guanine nucleotide-binding protein alpha-7 subunit	w
+GUANINE	worm	Q23270	trm-1	Q23270	0	19	tRNA (guanine(26)-N(2))-dimethyltransferase	w
+GUANINE	worm	Q7KPV0	gsa-1	Q7KPV0	4	81	Guanine nucleotide-binding protein G(s) subunit alpha	w
+GUANINE	worm	Q93743	gpa-6	Q93743	2	28	Guanine nucleotide-binding protein alpha-6 subunit	w
+GUANINE	worm	Q9BIG2	gpa-14	Q9BIG2	4	32	Guanine nucleotide-binding protein alpha-14 subunit	w
+GUANINE	worm	Q9BIG4	gpa-10	Q9BIG4	3	55	Guanine nucleotide-binding protein alpha-10 subunit	w
+GUANINE	worm	Q9BIG5	gpa-4	Q9BIG5	32	76	Guanine nucleotide-binding protein alpha-4 subunit	w
+GUANINE	worm	Q9GZD0	C04F5.8	Q9GZD0	1	47	tRNA (guanine(46)-N(7))-methyltransferase	w
+GUANINE	worm	Q9N2V6	gpa-16	Q9N2V6	32	81	Guanine nucleotide-binding protein alpha-16 subunit	w
+GUANINE	worm	Q9N4H1	CELE_Y71F9AL.1	Q9N4H1	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	w
+GUANINE	worm	Q9U1X4	Y62E10A.11	Q9U1X4	0	39	Putative guanine nucleotide exchange factor MSS4 homolog	w
+GUANINE	worm	Q9XTB2	gpa-13	Q9XTB2	0	29	Guanine nucleotide-binding protein alpha-13 subunit	w
+GUANINE	yeast	P07866	LTE1	P07866	5	29	Guanine nucleotide exchange factor LTE1	w
+GUANINE	yeast	P08539	GPA1	P08539	5	41	Guanine nucleotide-binding protein alpha-1 subunit	w
+GUANINE	yeast	P10823	GPA2	P10823	6	57	Guanine nucleotide-binding protein alpha-2 subunit	w
+GUANINE	yeast	P11655	SEC12	P11655	2	10	Guanine nucleotide-exchange factor SEC12	w
+GUANINE	yeast	P15565	TRM1	P15565	2	59	tRNA (guanine(26)-N(2))-dimethyltransferase, mitochondrial	w
+GUANINE	yeast	P16664	RGP1	P16664	2	23	Guanine nucleotide exchange factor subunit RGP1	w
+GUANINE	yeast	P17065	SEC2	P17065	4	49	Rab guanine nucleotide exchange factor SEC2	w
+GUANINE	yeast	P18851	STE4	P18851	14	141	Guanine nucleotide-binding protein subunit beta	w
+GUANINE	yeast	P18852	STE18	P18852	4	24	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	yeast	P21827	SRM1	P21827	3	52	Guanine nucleotide exchange factor SRM1	w
+GUANINE	yeast	P25365	SED4	P25365	0	11	Putative guanine nucleotide-exchange factor SED4	w
+GUANINE	yeast	P25627	BUD23	P25627	10	65	18S rRNA (guanine(1575)-N(7))-methyltransferase	w
+GUANINE	yeast	P38793	TRM5	P38793	0	9	tRNA (guanine(37)-N(1))-methyltransferase	w
+GUANINE	yeast	P39717	GPB2	P39717	0	16	Guanine nucleotide-binding protein subunit beta 2	w
+GUANINE	yeast	P40395	RIC1	P40395	2	23	Guanine nucleotide exchange factor subunit RIC1	w
+GUANINE	yeast	Q06412	TUS1	Q06412	8	22	Rho1 guanine nucleotide exchange factor TUS1	w
+GUANINE	yeast	Q06836	SYT1	Q06836	4	13	Arf guanine nucleotide exchange factor SYT1	w
+GUANINE	yeast	Q07729	GUD1	Q07729	0	8	Probable guanine deaminase	w
+GUANINE	yeast	Q08886	GPB1	Q08886	0	14	Guanine nucleotide-binding protein subunit beta 1	w
+GUANINE	yeast	Q12400	TRM10	Q12400	0	7	tRNA (guanine(9)-N1)-methyltransferase	w
+GUANINE	yeast	Q12463	TRM11	Q12463	1	9	tRNA (guanine(10)-N(2))-methyltransferase	w
+GUANINE	zebrafish	A0A0G2L6W9	gng10	A0A0G2L6W9	22	115	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	A0A0G2LAU9	gnaz	A0A0G2LAU9	55	125	Guanine nucleotide binding protein (G protein), alpha z poly	w
+GUANINE	zebrafish	A0A0R4IA30	eef1da	A0A0R4IA30	9	19	Eukaryotic Translation Elongation factor 1 delta A (guanine 	w
+GUANINE	zebrafish	A0A0R4IHM6	gng12b	A0A0R4IHM6	20	62	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	A0A286Y8W8	vav2	A0A286Y8W8	8	41	Guanine nucleotide exchange factor VAV2 isoform X3	w
+GUANINE	zebrafish	A0A2R8Q515	arhgef7a	A0A2R8Q515	7	49	Rho guanine nucleotide exchange factor (GEF) 7a	w
+GUANINE	zebrafish	A0A2R8QPS5	ric1	A0A2R8QPS5	1	19	Guanine nucleotide exchange factor subunit RIC1	w
+GUANINE	zebrafish	A0A2R8RKX9	gnb4b	A0A2R8RKX9	60	415	Guanine nucleotide binding protein (G protein), beta polypep	w
+GUANINE	zebrafish	A0A8M1PGS2	trmt11	A0A8M1PGS2	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	w
+GUANINE	zebrafish	A0A8M1PH81	ralgps2	A0A8M1PH81	1	16	Ras-specific guanine nucleotide-releasing factor RalGPS2	w
+GUANINE	zebrafish	A0A8M1RS61	gna15.2	A0A8M1RS61	16	53	Guanine nucleotide-binding protein subunit alpha-15	w
+GUANINE	zebrafish	A0A8M2BID6	mcf2la	A0A8M2BID6	7	7	Guanine nucleotide exchange factor DBS isoform X3	w
+GUANINE	zebrafish	A0A8M3ANZ5	gng12a	A0A8M3ANZ5	16	116	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	A0A8M3AXD6	arhgef18a	A0A8M3AXD6	13	15	Rho guanine nucleotide exchange factor 18a isoform X1	w
+GUANINE	zebrafish	A0A8M9Q1C1	gng4	A0A8M9Q1C1	20	259	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	A0A8M9Q7W2	gna12b	A0A8M9Q7W2	5	127	Guanine nucleotide-binding protein subunit alpha-12	w
+GUANINE	zebrafish	A0A8M9QBG1	mcf2lb	A0A8M9QBG1	7	7	Guanine nucleotide exchange factor DBS isoform X6	w
+GUANINE	zebrafish	A0A8N7TEL4	trmt1l	A0A8N7TEL4	1	12	tRNA (guanine(27)-N(2))-dimethyltransferase	w
+GUANINE	zebrafish	A0AB32TC44	gna15.3	A0AB32TC44	8	53	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	zebrafish	A1L271	gnb5a	A1L271	62	375	Guanine nucleotide-binding protein subunit beta-5a	w
+GUANINE	zebrafish	A2CEA7	rasgrf2	A2CEA7	2	27	Ras-specific guanine nucleotide-releasing factor 2	w
+GUANINE	zebrafish	A2RUX1	arhgef2a	A2RUX1	7	20	Rho guanine nucleotide exchange factor 2	w
+GUANINE	zebrafish	A3KPP3	rangrf	A3KPP3	0	2	Ran guanine nucleotide release factor	w
+GUANINE	zebrafish	B0S6C8	vav3b	B0S6C8	11	38	Guanine nucleotide exchange factor VAV3b isoform X2	w
+GUANINE	zebrafish	B0UXH6	ralgps1	B0UXH6	1	15	Ras-specific guanine nucleotide-releasing factor RalGPS1	w
+GUANINE	zebrafish	B0V3V7	gnav1	B0V3V7	48	151	Guanine nucleotide binding protein (G protein) alpha v1	w
+GUANINE	zebrafish	B3DI16	gna11a	B3DI16	49	109	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	zebrafish	B3DIM4	gng13a	B3DIM4	14	62	Guanine nucleotide-binding protein (G protein), gamma 13a	w
+GUANINE	zebrafish	B8A5G9	trmt5	B8A5G9	0	3	tRNA (guanine(37)-N(1))-methyltransferase	w
+GUANINE	zebrafish	B8JLJ7	gnaq	B8JLJ7	59	131	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	zebrafish	E7F1F5	gngt2b	E7F1F5	23	62	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	E7F3M3	arhgef37	E7F3M3	0	6	Rho guanine nucleotide exchange factor (GEF) 37	w
+GUANINE	zebrafish	E7F4U1	arhgef2b	E7F4U1	9	22	Rho guanine nucleotide exchange factor 2 isoform X1	w
+GUANINE	zebrafish	E7F7V2	rasgrf1	E7F7V2	2	27	Ras-specific guanine nucleotide-releasing factor 1 isoform X	w
+GUANINE	zebrafish	E7F836	arhgef6	E7F836	6	44	Rac/Cdc42 guanine nucleotide exchange factor (GEF) 6	w
+GUANINE	zebrafish	E7FA21	smcr8a	E7FA21	2	17	Guanine nucleotide exchange protein smcr8a	w
+GUANINE	zebrafish	E7FBN7	rasgrf2a	E7FBN7	2	20	Ras protein-specific guanine nucleotide-releasing factor 2a	w
+GUANINE	zebrafish	E7FDC9	rapgef3	E7FDC9	0	31	Rap guanine nucleotide exchange factor (GEF) 3	w
+GUANINE	zebrafish	E7FDV8	arhgef12a	E7FDV8	11	17	Rho guanine nucleotide exchange factor (GEF) 12a	w
+GUANINE	zebrafish	E7FF78	arhgef25b	E7FF78	12	15	Rho guanine nucleotide exchange factor (GEF) 25b	w
+GUANINE	zebrafish	E7FGN2	rapgefl1	E7FGN2	0	2	Rap guanine nucleotide exchange factor (GEF)-like 1	w
+GUANINE	zebrafish	E9QHS5	arhgef9a	E9QHS5	16	38	Rho guanine nucleotide exchange factor 9	w
+GUANINE	zebrafish	F1Q4Y0	arhgef1	F1Q4Y0	11	17	Rho guanine nucleotide exchange factor (GEF) 1b	w
+GUANINE	zebrafish	F1Q628	arhgef9b	F1Q628	15	38	Rho guanine nucleotide exchange factor 9	w
+GUANINE	zebrafish	F1QGD9	trmt1	F1QGD9	0	13	tRNA (guanine(26)-N(2))-dimethyltransferase	w
+GUANINE	zebrafish	F1QJL5	gna15.1	F1QJL5	20	71	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	zebrafish	F1QJX7	gnas	F1QJX7	64	208	Guanine nucleotide-binding protein G(s) subunit alpha	w
+GUANINE	zebrafish	F1QKS2	sergef	F1QKS2	1	20	Secretion-regulating guanine nucleotide exchange factor	w
+GUANINE	zebrafish	I3IT01	rgl3a	I3IT01	19	46	Ral guanine nucleotide dissociation stimulator-like 1 isofor	w
+GUANINE	zebrafish	Q15KE4	gng2	Q15KE4	25	298	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	Q1LW07	gna15.4	Q1LW07	8	53	Guanine nucleotide-binding protein (G protein), alpha 15 (Gq	w
+GUANINE	zebrafish	Q1LXP8	gnl1	Q1LXP8	4	203	Guanine nucleotide-binding protein-like 1	w
+GUANINE	zebrafish	Q1MT42	arhgef3	Q1MT42	16	42	Rho guanine nucleotide exchange factor 3	w
+GUANINE	zebrafish	Q503Q6	gng8	Q503Q6	25	115	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	Q504F6	arhgef3l	Q504F6	19	42	Rho guanine nucleotide exchange factor 3	w
+GUANINE	zebrafish	Q5RKP9	gna11b	Q5RKP9	54	120	Guanine nucleotide-binding protein subunit alpha	w
+GUANINE	zebrafish	Q6DGQ2	rabif	Q6DGQ2	11	172	Guanine nucleotide exchange factor MSS4	w
+GUANINE	zebrafish	Q6DGZ5	gng7	Q6DGZ5	19	115	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	Q6DH00	gng13b	Q6DH00	15	123	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	Q6DH55	gnb3a	Q6DH55	57	372	Guanine nucleotide binding protein (G protein), beta polypep	w
+GUANINE	zebrafish	Q6DRP2	gnl3	Q6DRP2	20	204	Guanine nucleotide-binding protein-like 3	w
+GUANINE	zebrafish	Q6P112	rgl1	Q6P112	18	46	Ral guanine nucleotide dissociation stimulator-like 1	w
+GUANINE	zebrafish	Q6P6Y4	rabgef1	Q6P6Y4	16	77	RAB guanine nucleotide exchange factor (GEF) 1	w
+GUANINE	zebrafish	Q6P967	gnao1b	Q6P967	55	127	Guanine nucleotide-binding protein G(o) subunit alpha	w
+GUANINE	zebrafish	Q6PBN9	gngt1	Q6PBN9	20	128	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	Q6PBP1	gnao1a	Q6PBP1	78	156	Guanine nucleotide-binding protein G(o) subunit alpha	w
+GUANINE	zebrafish	Q6PBR4	gngt2a	Q6PBR4	19	115	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	Q6PBY0	gnb5b	Q6PBY0	54	331	Guanine nucleotide-binding protein subunit beta-5b	w
+GUANINE	zebrafish	Q6PH57	gnb1	Q6PH57	59	373	Guanine nucleotide-binding protein G(I)/G(S)/G(T) subunit be	w
+GUANINE	zebrafish	Q6PUR7	smcr8b	Q6PUR7	4	21	Guanine nucleotide exchange protein smcr8b	w
+GUANINE	zebrafish	Q6TH03	gng5	Q6TH03	25	115	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	Q6TLH8	c13h9orf72	Q6TLH8	4	46	Guanine nucleotide exchange C9orf72 homolog	w
+GUANINE	zebrafish	Q6TNT8	gnai2a	Q6TNT8	82	153	Guanine nucleotide-binding protein G(i) subunit alpha-2	w
+GUANINE	zebrafish	Q7T3D3	gnai1	Q7T3D3	84	160	Guanine nucleotide-binding protein G(i) subunit alpha-1	w
+GUANINE	zebrafish	Q90WX6	gnat1	Q90WX6	66	144	Guanine nucleotide-binding protein (G protein), alpha transd	w
+GUANINE	zebrafish	Q90Z40	gng3	Q90Z40	24	115	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	R4GE45	si:ch211-286b5.5	R4GE45	22	62	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE	zebrafish	X1WBG0	si:dkey-204f11.64	X1WBG0	16	59	Guanine nucleotide-binding protein subunit gamma	w
+GUANINE-26	fly	FBgn0032430	Trm1	Q9VK89	0	24	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
+GUANINE-26	human	Q9NXH9	TRMT1	Q9NXH9	6	168	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
+GUANINE-7	human	Q9BTL3	RAMAC	Q9BTL3	3	138	RNA guanine-N7 methyltransferase activating subunit (Protein	w
+GUANINE-9-	fly	FBgn0031189	Trmt10A	Q9VR56	0	9	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	w
+GUANINE-9-	fly	FBgn0034351	rswl	Q7JUX9	2	29	Mitochondrial ribonuclease P protein 1 homolog (Mitochondria	w
+GUANINE-9-	human	Q6PF06	TRMT10B	Q6PF06	6	61	tRNA methyltransferase 10 homolog B (EC 2.1.1.221) (RNA (gua	w
+GUANINE-9-	human	Q8TBZ6	TRMT10A	Q8TBZ6	5	56	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	w
+GUANINE-9-	worm	Q9BI62	trmt-10c.1	Q9BI62	0	3	RNA (guanine-9-)-methyltransferase domain-containing protein	w
+GUANINE-N	fly	FBgn0025629	Mettl1	O77263	4	36	tRNA (guanine-N(7)-)-methyltransferase (EC 2.1.1.33) (tRNA (	w
+GUANINE-N	fly	FBgn0029857	wuho	Q9W415	4	37	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+GUANINE-N	fly	FBgn0286027	Rnmt	Q9VJQ4	3	46	mRNA cap guanine-N7 methyltransferase (EC 2.1.1.56) (mRNA (g	w
+GUANINE-N	human	O43148	RNMT	O43148	43	159	mRNA cap guanine-N(7) methyltransferase (EC 2.1.1.56) (RG7MT	w
+GUANINE-N	human	O43709	BUD23	O43709	29	259	18S rRNA (guanine-N(7))-methyltransferase (EC 2.1.1.-) (Bud 	w
+GUANINE-N	human	O95398	RAPGEF3	O95398	28	198	Rap guanine nucleotide exchange factor 3 (Exchange factor di	w
+GUANINE-N	human	P57081	WDR4	P57081	15	135	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+GUANINE-N	human	Q96RS0	TGS1	Q96RS0	65	255	Trimethylguanosine synthase (EC 2.1.1.-) (CLL-associated ant	w
+GUANINE-N	human	Q9BTF0	THUMPD2	Q9BTF0	13	55	U6 snRNA (guanine-N(2))-methyltransferase THUMPD2 (EC 2.1.1.	w
+GUANINE-N	human	Q9UBP6	METTL1	Q9UBP6	9	108	tRNA (guanine-N(7)-)-methyltransferase (EC 2.1.1.33) (Methyl	w
+GUANINE-N	worm	Q23126	metl-1	Q23126	2	13	tRNA (guanine-N(7)-)-methyltransferase	w
+GUANINE-N	worm	Q23232	wdr-4	Q23232	1	7	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+GUANINE-N	worm	Q9XVS1	tag-72	Q9XVS1	4	35	mRNA cap guanine-N(7) methyltransferase	w
+GUANINE-N	yeast	P32783	ABD1	P32783	2	40	mRNA cap guanine-N(7) methyltransferase	w
+GUANINE-N	yeast	Q03774	TRM82	Q03774	1	12	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+GUANINE-N	yeast	Q12009	TRM8	Q12009	1	20	tRNA (guanine-N(7)-)-methyltransferase	w
+GUANINE-N	zebrafish	A3KNP4	bud23	A3KNP4	3	49	18S rRNA (guanine-N(7))-methyltransferase	w
+GUANINE-N	zebrafish	A4IGH4	wdr4	A4IGH4	2	7	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+GUANINE-N	zebrafish	Q1MTD3	rnmt	Q1MTD3	6	31	mRNA cap guanine-N(7) methyltransferase	w
+GUANINE-N	zebrafish	Q5XJ57	mettl1	Q5XJ57	1	25	tRNA (guanine-N(7)-)-methyltransferase	w
+GUANINE-N7	fly	FBgn0286027	Rnmt	Q9VJQ4	3	46	mRNA cap guanine-N7 methyltransferase (EC 2.1.1.56) (mRNA (g	w
+GUANINE-N7	human	A0A3B3IU46	RAMACL	A0A3B3IU46	1	46	RNA guanine-N7 methyltransferase-activating subunit-like pro	w
+GUANINE-N7	human	Q9BTL3	RAMAC	Q9BTL3	3	138	RNA guanine-N7 methyltransferase activating subunit (Protein	w
+GUANINE-NUCLEOTIDE	human	Q96PE2	ARHGEF17	Q96PE2	26	157	Rho guanine nucleotide exchange factor 17 (164 kDa Rho-speci	w
+GUANINE-NUCLEOTIDE	yeast	P34225	YEL1	P34225	4	11	Guanine-nucleotide exchange factor YEL1	w
+GUANINE-NUCLEOTIDE	yeast	P39993	GEA2	P39993	5	56	ARF guanine-nucleotide exchange factor 2	w
+GUANINE-NUCLEOTIDE	yeast	P47102	GEA1	P47102	2	24	ARF guanine-nucleotide exchange factor 1	w
+GUANOSI	human	O75356	ENTPD5	O75356	7	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	w
+GUANOSINE	fly	FBgn0038861	Trm7-34	Q9VDD9	6	57	tRNA (guanosine(34)-2'-O)-methyltransferase (EC 2.1.1.205) (	w
+GUANOSINE	human	P31150	GDI1	P31150	61	275	Rab GDP dissociation inhibitor alpha (Rab GDI alpha) (Guanos	w
+GUANOSINE	human	P36959	GMPR	P36959	1	123	GMP reductase 1 (GMPR 1) (EC 1.7.1.7) (Guanosine 5'-monophos	w
+GUANOSINE	human	P50395	GDI2	P50395	50	292	Rab GDP dissociation inhibitor beta (Rab GDI beta) (Guanosin	w
+GUANOSINE	human	Q13395	TARBP1	Q13395	6	110	tRNA (guanosine(18)-2'-O)-methyltransferase TARBP1 (EC 2.1.1	w
+GUANOSINE	human	Q6IN84	MRM1	Q6IN84	21	421	rRNA methyltransferase 1, mitochondrial (EC 2.1.1.-) (16S rR	w
+GUANOSINE	human	Q8IV20	LACC1	Q8IV20	15	136	Purine nucleoside phosphorylase LACC1 (EC 2.4.2.1) (Adenosin	w
+GUANOSINE	human	Q9HC36	MRM3	Q9HC36	13	267	rRNA methyltransferase 3, mitochondrial (EC 2.1.1.-) (16S rR	w
+GUANOSINE	human	Q9P2T1	GMPR2	Q9P2T1	2	55	GMP reductase 2 (GMPR 2) (EC 1.7.1.7) (Guanosine 5'-monophos	w
+GUANOSINE	human	Q9UET6	FTSJ1	Q9UET6	13	213	tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase (EC	w
+GUANOSINE	worm	Q22031	R74.7	Q22031	5	41	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransf	w
+GUANOSINE	yeast	P25582	SPB1	P25582	17	154	27S pre-rRNA (guanosine(2922)-2'-O)-methyltransferase	w
+GUANOSINE	yeast	P38238	TRM7	P38238	4	22	tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase	w
+GUANOSINE	yeast	Q07527	TRM3	Q07527	0	48	tRNA (guanosine(18)-2'-O)-methyltransferase	w
+GUANOSINE	zebrafish	F1QDU3	ftsj1	F1QDU3	3	133	Putative tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransf	w
+GUANOSINE-2	fly	FBgn0036889	CG14100	Q9VW14	3	84	rRNA methyltransferase 3, mitochondrial (EC 2.1.1.-) (RNA me	w
+GUANOSINE-2	fly	FBgn0037250	CG1074	Q960G1	2	12	tRNA (guanine(10)-N2)-methyltransferase homolog (tRNA guanos	w
+GUANOSINE-3	fly	FBgn0039650	Mesh1	Q9VAM9	3	160	Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase MES	w
+GUANOSINE-3	human	Q8N4P3	HDDC3	Q8N4P3	16	219	Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase MES	w
+GUANOSINE-3	worm	O18307	CELE_ZK909.3	O18307	8	138	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase MESH1	w
+GUANOSINE-3	zebrafish	Q568P1	hddc3	Q568P1	3	62	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase MESH1	w
+GUANOSINE-DIPHOSPHATASE	yeast	P32621	GDA1	P32621	0	9	Guanosine-diphosphatase	w
+GUANYL	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	w
+GUANYL-RELEASING	human	O95267	RASGRP1	O95267	35	264	RAS guanyl-releasing protein 1 (Calcium and DAG-regulated gu	w
+GUANYL-RELEASING	human	Q7LDG7	RASGRP2	Q7LDG7	28	266	RAS guanyl-releasing protein 2 (Calcium and DAG-regulated gu	w
+GUANYL-RELEASING	human	Q8IV61	RASGRP3	Q8IV61	26	174	Ras guanyl-releasing protein 3 (Calcium and DAG-regulated gu	w
+GUANYL-RELEASING	human	Q8TDF6	RASGRP4	Q8TDF6	31	147	RAS guanyl-releasing protein 4	w
+GUANYL-RELEASING	worm	Q19770	rgef-1	Q19770	8	47	Ras guanyl-releasing protein 3	w
+GUANYL-RELEASING	zebrafish	A0A8M2B4V9	rasgrp3	A0A8M2B4V9	19	35	RAS guanyl-releasing protein 3 (calcium and DAG-regulated)	w
+GUANYL-RELEASING	zebrafish	Q1L9A0	rasgrp4	Q1L9A0	19	35	RAS guanyl-releasing protein 4	w
+GUANYL-SPECIFIC	worm	G5EBV6	pgl-3	G5EBV6	2	90	Guanyl-specific ribonuclease pgl-3	w
+GUANYL-SPECIFIC	worm	Q9TZQ3	pgl-1	Q9TZQ3	6	66	Guanyl-specific ribonuclease pgl-1	w
+GUANYLATE	fly	FBgn0010197	Gyc32E	A8DYZ3	761	3520	Guanylate cyclase (EC 4.6.1.2)	w
+GUANYLATE	fly	FBgn0013972	Gycalpha99B	Q07093	11	87	Head-specific guanylate cyclase (EC 4.6.1.2) (Guanylyl cycla	w
+GUANYLATE	fly	FBgn0013973	Gycbeta100B	Q9VA09	8	89	Guanylate cyclase soluble subunit beta-1 (EC 4.6.1.2) (Guany	w
+GUANYLATE	fly	FBgn0033845	mars	Q7K3L1	9	37	Guanylate kinase-associated protein mars	w
+GUANYLATE	fly	FBgn0034568	CG3216	Q8MLX0	311	3520	Guanylate cyclase (EC 4.6.1.2)	w
+GUANYLATE	fly	FBgn0036099	oya	Q9VTB3	2	111	guanylate kinase (EC 2.7.4.8)	w
+GUANYLATE	fly	FBgn0036368	EHR	Q9VU79	216	3456	Guanylate cyclase (EC 4.6.1.2)	w
+GUANYLATE	fly	FBgn0038295	Gyc88E	Q8INF0	9	75	Soluble guanylate cyclase 88E (EC 4.6.1.2)	w
+GUANYLATE	fly	FBgn0038435	Gyc89Da	Q9VEU6	9	90	Soluble guanylate cyclase 89Da (EC 4.6.1.2)	w
+GUANYLATE	fly	FBgn0038436	Gyc89Db	Q9VEU5	9	92	Soluble guanylate cyclase 89Db (EC 4.6.1.2)	w
+GUANYLATE	fly	FBgn0051183	CG31183	Q9VF17	307	4640	Guanylate cyclase (EC 4.6.1.2)	w
+GUANYLATE	fly	FBgn0085386	Gucy2d	A8JQT1	81	1051	Guanylate cyclase 2d	w
+GUANYLATE	fly	FBgn0261360	CG42637	Q7JQ32	146	2394	Receptor-type guanylate cyclase Gyc76C (EC 4.6.1.2) (DrGC-1)	w
+GUANYLATE	fly	FBgn0266136	Gyc76C	Q7JQ32	9	58	Receptor-type guanylate cyclase Gyc76C (EC 4.6.1.2) (DrGC-1)	w
+GUANYLATE	human	O14490	DLGAP1	O14490	62	285	Disks large-associated protein 1 (DAP-1) (Guanylate kinase-a	w
+GUANYLATE	human	O75343	GUCY1B2	O75343	1	6	Putative guanylate cyclase soluble subunit beta-2 (GCS-beta-	w
+GUANYLATE	human	O95843	GUCA1C	O95843	4	86	Guanylyl cyclase-activating protein 3 (GCAP 3) (Guanylate cy	w
+GUANYLATE	human	P16066	NPR1	P16066	14	114	Atrial natriuretic peptide receptor 1 (EC 4.6.1.2) (Atrial n	w
+GUANYLATE	human	P20594	NPR2	P20594	15	119	Atrial natriuretic peptide receptor 2 (EC 4.6.1.2) (Atrial n	w
+GUANYLATE	human	P25092	GUCY2C	P25092	8	78	Guanylyl cyclase C (GC-C) (EC 4.6.1.2) (Heat-stable enteroto	w
+GUANYLATE	human	P33402	GUCY1A2	P33402	12	115	Guanylate cyclase soluble subunit alpha-2 (GCS-alpha-2) (EC 	w
+GUANYLATE	human	P43080	GUCA1A	P43080	5	145	Guanylyl cyclase-activating protein 1 (GCAP 1) (Guanylate cy	w
+GUANYLATE	human	P51841	GUCY2F	P51841	7	72	Retinal guanylyl cyclase 2 (RETGC-2) (EC 4.6.1.2) (Guanylate	w
+GUANYLATE	human	Q02108	GUCY1A1	Q02108	5	173	Guanylate cyclase soluble subunit alpha-1 (GCS-alpha-1) (EC 	w
+GUANYLATE	human	Q02153	GUCY1B1	Q02153	9	173	Guanylate cyclase soluble subunit beta-1 (GCS-beta-1) (EC 4.	w
+GUANYLATE	human	Q02747	GUCA2A	Q02747	14	104	Guanylin (Guanylate cyclase activator 2A) (Guanylate cyclase	w
+GUANYLATE	human	Q02846	GUCY2D	Q02846	11	125	Retinal guanylyl cyclase 1 (RETGC-1) (EC 4.6.1.2) (CG-E) (Gu	w
+GUANYLATE	human	Q16661	GUCA2B	Q16661	14	101	Guanylate cyclase activator 2B [Cleaved into: Guanylate cycl	w
+GUANYLATE	human	Q16774	GUK1	Q16774	5	135	Guanylate kinase (EC 2.7.4.8) (GMP kinase) (Guanylate kinase	w
+GUANYLATE	human	Q5TCQ9	MAGI3	Q5TCQ9	31	170	Membrane-associated guanylate kinase, WW and PDZ domain-cont	w
+GUANYLATE	human	Q86UL8	MAGI2	Q86UL8	31	107	Membrane-associated guanylate kinase, WW and PDZ domain-cont	w
+GUANYLATE	human	Q96M69	LRGUK	Q96M69	38	326	Leucine-rich repeat and guanylate kinase domain-containing p	w
+GUANYLATE	human	Q96QZ7	MAGI1	Q96QZ7	46	263	Membrane-associated guanylate kinase, WW and PDZ domain-cont	w
+GUANYLATE	human	Q9BUH8	BEGAIN	Q9BUH8	33	180	Brain-enriched guanylate kinase-associated protein	w
+GUANYLATE	human	Q9UMX6	GUCA1B	Q9UMX6	3	122	Guanylyl cyclase-activating protein 2 (GCAP 2) (Guanylate cy	w
+GUANYLATE	virus	A0A1C9KCK9	VPXV-CA-178	A0A1C9KCK9	10	204	guanylate kinase	w
+GUANYLATE	virus	A0A346FSF2	AKMV-88-190	A0A346FSF2	12	214	guanylate kinase	w
+GUANYLATE	virus	A0A3G2KY39	OPVA179	A0A3G2KY39	13	208	guanylate kinase	w
+GUANYLATE	virus	Q01230	VACWR182	Q01230	12	218	Guanylate kinase homolog	w
+GUANYLATE	virus	Q8QMQ0	CPXV195 CDS	Q8QMQ0	14	225	guanylate kinase	w
+GUANYLATE	worm	B1Q257	odr-1	B1Q257	0	2	Receptor-type guanylate cyclase gcy-10	w
+GUANYLATE	worm	C1P633	magi-1	C1P633	5	89	Guanylate kinase	w
+GUANYLATE	worm	E7EAU8	gcy-9	E7EAU8	0	4	Receptor-type guanylate cyclase gcy-9	w
+GUANYLATE	worm	G5EFQ0	gcy-18	G5EFQ0	0	2	Receptor-type guanylate cyclase gcy-18	w
+GUANYLATE	worm	O01661	ccb-1	O01661	0	10	Guanylate kinase/L-type calcium channel beta subunit domain-	w
+GUANYLATE	worm	O02298	gcy-35	O02298	6	8	Soluble guanylate cyclase gcy-35	w
+GUANYLATE	worm	O62179	gcy-20	O62179	2	12	Receptor-type guanylate cyclase gcy-20 (EC 4.6.1.2)	w
+GUANYLATE	worm	P90895	gcy-33	P90895	6	7	Soluble guanylate cyclase gcy-33	w
+GUANYLATE	worm	P91182	magu-3	P91182	0	3	Guanylate kinase-like domain-containing protein	w
+GUANYLATE	worm	P91425	guk-1	P91425	0	9	guanylate kinase	w
+GUANYLATE	worm	P91550	gcy-15	P91550	2	64	Receptor-type guanylate cyclase gcy-15	w
+GUANYLATE	worm	P92006	gcy-34	P92006	6	7	Soluble guanylate cyclase gcy-34	w
+GUANYLATE	worm	Q18331	gcy-11	Q18331	1	2	Receptor-type guanylate cyclase gcy-11	w
+GUANYLATE	worm	Q23681	gcy-4	Q23681	2	13	Receptor-type guanylate cyclase gcy-4 (EC 4.6.1.2)	w
+GUANYLATE	worm	Q6DNF3	gcy-37	Q6DNF3	6	6	Soluble guanylate cyclase gcy-37	w
+GUANYLATE	worm	Q6DNF4	gcy-36	Q6DNF4	6	6	Soluble guanylate cyclase gcy-36	w
+GUANYLATE	worm	Q6DNF7	gcy-32	Q6DNF7	6	6	Soluble guanylate cyclase gcy-32	w
+GUANYLATE	worm	Q7YWZ9	CELE_F59A1.15	Q7YWZ9	0	2	Adenylate and Guanylate cyclase catalytic domain containing 	w
+GUANYLATE	worm	Q86C56	gcy-31	Q86C56	6	7	Soluble guanylate cyclase gcy-31	w
+GUANYLATE	worm	Q86GV3	gcy-28	Q86GV3	2	13	Receptor-type guanylate cyclase gcy-28 (EC 4.6.1.2) (GCY-X1)	w
+GUANYLATE	worm	Q8I4N4	daf-11	Q8I4N4	0	3	Receptor-type guanylate cyclase daf-11	w
+GUANYLATE	worm	Q9XTY1	gcy-22	Q9XTY1	0	9	Receptor-type guanylate cyclase gcy-22	w
+GUANYLATE	worm	Q9XU42	gcy-27	Q9XU42	0	5	Receptor-type guanylate cyclase gcy-27	w
+GUANYLATE	worm	X5M8U1	gcy-17	X5M8U1	0	1	Receptor-type guanylate cyclase gcy-17	w
+GUANYLATE	yeast	P15454	GUK1	P15454	1	27	Guanylate kinase	w
+GUANYLATE	zebrafish	A0A0R4IGT8	magi3a	A0A0R4IGT8	4	42	Membrane-associated guanylate kinase, WW and PDZ domain-cont	w
+GUANYLATE	zebrafish	A0A2R8RJH6	guk1a	A0A2R8RJH6	0	27	Guanylate kinase	w
+GUANYLATE	zebrafish	A0A8M1RKJ8	gucy2g	A0A8M1RKJ8	3	17	Guanylate cyclase (EC 4.6.1.2)	w
+GUANYLATE	zebrafish	A0A8M3AQN2	npr1b	A0A8M3AQN2	2	14	Guanylate cyclase (EC 4.6.1.2)	w
+GUANYLATE	zebrafish	A0A8M3AT28	gucy1a2	A0A8M3AT28	3	8	guanylate cyclase	w
+GUANYLATE	zebrafish	A0AB32TJI5	magi2b	A0AB32TJI5	3	16	Membrane-associated guanylate kinase, WW and PDZ domain-cont	w
+GUANYLATE	zebrafish	A0AB32TQI1	si:dkey-37g12.1	A0AB32TQI1	0	6	Guanylate cyclase	w
+GUANYLATE	zebrafish	A0AB32U008	guk1b	A0AB32U008	0	27	Guanylate kinase	w
+GUANYLATE	zebrafish	B3DHF2	gucy2f	B3DHF2	1	8	Guanylate cyclase	w
+GUANYLATE	zebrafish	E7EZW5	gucy1a1	E7EZW5	3	8	Guanylate cyclase soluble subunit alpha-1	w
+GUANYLATE	zebrafish	E7F111	gc2	E7F111	6	44	Guanylate cyclase (EC 4.6.1.2)	w
+GUANYLATE	zebrafish	E7F6T1	gucy1b2	E7F6T1	4	9	guanylate cyclase	w
+GUANYLATE	zebrafish	E7FDF3	gucy2g	E7FDF3	0	7	Guanylate cyclase	w
+GUANYLATE	zebrafish	F1QNR4	gucy1b1	F1QNR4	4	9	Guanylate cyclase soluble subunit beta-1	w
+GUANYLATE	zebrafish	F1QZB9	magi1b	F1QZB9	2	18	Membrane-associated guanylate kinase, WW and PDZ domain-cont	w
+GUANYLATE	zebrafish	Q1L8G4	lrguk	Q1L8G4	42	539	Leucine-rich repeat and guanylate kinase domain-containing p	w
+GUANYLATE	zebrafish	Q6ZM98	guca1d	Q6ZM98	0	29	Guanylate cyclase activating protein 4	w
+GUANYLATE	zebrafish	Q8UUX9	guca1c	Q8UUX9	0	27	Guanylate cyclase activator 1C	w
+GUANYLATE	zebrafish	U3JAG6	gucy2cb	U3JAG6	0	7	Guanylate cyclase	w
+GUANYLATE-BINDING	human	P32455	GBP1	P32455	22	280	Guanylate-binding protein 1 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	w
+GUANYLATE-BINDING	human	P32456	GBP2	P32456	20	231	Guanylate-binding protein 2 (EC 3.6.5.-) (GTP-binding protei	w
+GUANYLATE-BINDING	human	Q6ZN66	GBP6	Q6ZN66	8	95	Guanylate-binding protein 6 (EC 3.6.5.-) (GTP-binding protei	w
+GUANYLATE-BINDING	human	Q8N8V2	GBP7	Q8N8V2	7	45	Guanylate-binding protein 7 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	w
+GUANYLATE-BINDING	human	Q96PP8	GBP5	Q96PP8	14	141	Guanylate-binding protein 5 (EC 3.6.5.-) (GBP-TA antigen) (G	w
+GUANYLATE-BINDING	human	Q96PP9	GBP4	Q96PP9	8	102	Guanylate-binding protein 4 (EC 3.6.5.-) (GTP-binding protei	w
+GUANYLATE-BINDING	human	Q9H0R5	GBP3	Q9H0R5	9	68	Guanylate-binding protein 3 (EC 3.6.5.-) (GTP-binding protei	w
+GUANYLATE-BINDING	zebrafish	Q6DHP7	gbp1	Q6DHP7	0	1	Guanylate-binding protein 1	w
+GUANYLIN	human	Q02747	GUCA2A	Q02747	14	104	Guanylin (Guanylate cyclase activator 2A) (Guanylate cyclase	w
+GUANYLTRANSFERASE	fly	FBgn0037279	Gmppb	Q7JZB4	2	62	Mannose-1-phosphate guanyltransferase beta (EC 2.7.7.13) (GD	w
+GUANYLTRANSFERASE	yeast	P41940	PSA1	P41940	1	216	Mannose-1-phosphate guanyltransferase	w
+GUANYLYL	fly	FBgn0013972	Gycalpha99B	Q07093	11	87	Head-specific guanylate cyclase (EC 4.6.1.2) (Guanylyl cycla	w
+GUANYLYL	human	O95843	GUCA1C	O95843	4	86	Guanylyl cyclase-activating protein 3 (GCAP 3) (Guanylate cy	w
+GUANYLYL	human	P25092	GUCY2C	P25092	8	78	Guanylyl cyclase C (GC-C) (EC 4.6.1.2) (Heat-stable enteroto	w
+GUANYLYL	human	P43080	GUCA1A	P43080	5	145	Guanylyl cyclase-activating protein 1 (GCAP 1) (Guanylate cy	w
+GUANYLYL	human	P51841	GUCY2F	P51841	7	72	Retinal guanylyl cyclase 2 (RETGC-2) (EC 4.6.1.2) (Guanylate	w
+GUANYLYL	human	Q02846	GUCY2D	Q02846	11	125	Retinal guanylyl cyclase 1 (RETGC-1) (EC 4.6.1.2) (CG-E) (Gu	w
+GUANYLYL	human	Q96NT3	GUCD1	Q96NT3	11	113	Protein GUCD1 (Guanylyl cyclase domain-containing protein 1)	w
+GUANYLYL	human	Q9UMX6	GUCA1B	Q9UMX6	3	122	Guanylyl cyclase-activating protein 2 (GCAP 2) (Guanylate cy	w
+GUANYLYL	zebrafish	A0A8M1RRU8	guca1ab.2	A0A8M1RRU8	0	27	Guanylyl cyclase-activating protein 1	w
+GUANYLYL	zebrafish	A0A8N7UZP3	guca1aa	A0A8N7UZP3	0	27	Guanylyl cyclase-activating protein 1	w
+GUANYLYLTRA	human	Q8NDF8	TENT4B	Q8NDF8	27	196	Terminal nucleotidyltransferase 4B (Non-canonical poly(A) RN	w
+GUANYLYLTRANSF	human	Q9NWX6	THG1L	Q9NWX6	2	66	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	w
+GUANYLYLTRANSFERASE	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	w
+GUANYLYLTRANSFERASE	fly	FBgn0037279	Gmppb	Q7JZB4	2	62	Mannose-1-phosphate guanyltransferase beta (EC 2.7.7.13) (GD	w
+GUANYLYLTRANSFERASE	fly	FBgn0283659	Thg	Q9V3N8	0	7	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (tRNA-h	w
+GUANYLYLTRANSFERASE	human	O14772	FPGT	O14772	0	61	Fucose-1-phosphate guanylyltransferase (EC 2.7.7.30) (GDP-L-	w
+GUANYLYLTRANSFERASE	human	O60942	RNGTT	O60942	29	340	mRNA-capping enzyme (HCAP1) (HCE) [Includes: mRNA 5'-triphos	w
+GUANYLYLTRANSFERASE	human	Q96IJ6	GMPPA	Q96IJ6	7	94	Mannose-1-phosphate guanylyltransferase regulatory subunit a	w
+GUANYLYLTRANSFERASE	human	Q9NWX6	THG1L	Q9NWX6	2	66	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	w
+GUANYLYLTRANSFERASE	human	Q9Y5P6	GMPPB	Q9Y5P6	7	159	Mannose-1-phosphate guanylyltransferase catalytic subunit be	w
+GUANYLYLTRANSFERASE	virus	Q9INI4	Segment-3	Q9INI4	1	12	Viral guanylyltransferase VP3	w
+GUANYLYLTRANSFERASE	worm	A3QMC8	tag-335	A3QMC8	1	15	Mannose-1-phosphate guanylyltransferase catalytic subunit be	w
+GUANYLYLTRANSFERASE	yeast	P53215	THG1	P53215	0	12	tRNA(His) guanylyltransferase	w
+GUANYLYLTRANSFERASE	zebrafish	F1QSV4	fpgt	F1QSV4	0	2	Fucose-1-phosphate guanylyltransferase	w
+GUANYLYLTRANSFERASE	zebrafish	Q6DBU5	gmppb	Q6DBU5	3	17	Mannose-1-phosphate guanylyltransferase catalytic subunit be	w
+GUANYLYLTRANSFERASE	zebrafish	Q6GMK8	gmppaa	Q6GMK8	1	13	Mannose-1-phosphate guanylyltransferase regulatory subunit a	w
+GUANYLYLTRANSFERASE	zebrafish	Q7SXP8	gmppab	Q7SXP8	1	11	Mannose-1-phosphate guanylyltransferase regulatory subunit a	w

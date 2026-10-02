@@ -1,15 +1,574 @@
-MOT1	arabidopsis-thaliana	Q9SL95	MOT1	Q9SL95	0	2	Molybdate transporter 1
-MOT2	arabidopsis-thaliana	Q0WP36	MOT2	Q0WP36	0	2	Molybdate transporter 2
-MOTA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBH2	motA	Q0PBH2	2	6	Flagellar motor proton channel
-MOTA	escherichia-coli-83333	P09348	motA	P09348	1	3	Motility protein A
-MOTA	helicobacter-pylori	P65410	motA	P65410	1	2	Motility protein A
-MOTA	pseudomonas-aeruginosa	Q9HUL1	motA	Q9HUL1	2	5	Chemotaxis protein MotA
-MOTA	salmonella-typhimurium	P55891	motA	P55891	1	3	Motility protein A
-MOTA	shigella-dysenteriae-serotype-1	Q32H62	motA	Q32H62	0	3	Proton conductor component of motor
-MOTB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBH3	motB	Q0PBH3	4	54	Flagellar motor protein
-MOTB	escherichia-coli-83333	P0AF06	motB	P0AF06	1	19	Motility protein B
-MOTB	helicobacter-pylori	P56427	motB	P56427	2	23	Motility protein B
-MOTB	pseudomonas-aeruginosa	Q9HUL2	motB	Q9HUL2	3	24	Chemotaxis protein MotB
-MOTB	salmonella-typhimurium	P55892	motB	P55892	2	28	Motility protein B
-MOTC	pseudomonas-aeruginosa	G3XD73	motC	G3XD73	2	5	MotC
-MOTD	pseudomonas-aeruginosa	G3XD90	motD	G3XD90	3	29	MotD
+MOT1	arabidopsis-thaliana	Q9SL95	MOT1	Q9SL95	0	2	Molybdate transporter 1	
+MOT10_HUMAN	human	Q8TF71	SLC16A10	Q8TF71	7	95		
+MOT11_HUMAN	human	Q8NCK7	SLC16A11	Q8NCK7	10	546		
+MOT12_HUMAN	human	Q6ZSM3	SLC16A12	Q6ZSM3	0	36		
+MOT13_HUMAN	human	Q7RTY0	SLC16A13	Q7RTY0	1	62		
+MOT14_HUMAN	human	Q7RTX9	SLC16A14	Q7RTX9	1	25		
+MOT1_HUMAN	human	P53985	SLC16A1	P53985	15	250		
+MOT2	arabidopsis-thaliana	Q0WP36	MOT2	Q0WP36	0	2	Molybdate transporter 2	
+MOT2	yeast	P34909	MOT2	P34909	12	64	General negative regulator of transcription subunit 4	
+MOT2_HUMAN	human	O60669	SLC16A7	O60669	3	76		
+MOT3	yeast	P54785	MOT3	P54785	0	38	Transcriptional activator/repressor MOT3	
+MOT3_HUMAN	human	O95907	SLC16A8	O95907	2	42		
+MOT4_HUMAN	human	O15427	SLC16A3	O15427	11	191		
+MOT5_HUMAN	human	O15374	SLC16A4	O15374	2	70		
+MOT6_HUMAN	human	O15375	SLC16A5	O15375	0	62		
+MOT7_HUMAN	human	O15403	SLC16A6	O15403	3	73		
+MOT8	human	Q9UKB5	AJAP1	Q9UKB5	15	48		
+MOT8_HUMAN	human	P36021	SLC16A2	P36021	2	79		
+MOT9_HUMAN	human	Q7RTY1	SLC16A9	Q7RTY1	2	38		
+MOTA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBH2	motA	Q0PBH2	2	6	Flagellar motor proton channel	
+MOTA	escherichia-coli-83333	P09348	motA	P09348	1	3	Motility protein A	
+MOTA	helicobacter-pylori	P65410	motA	P65410	1	2	Motility protein A	
+MOTA	pseudomonas-aeruginosa	Q9HUL1	motA	Q9HUL1	2	5	Chemotaxis protein MotA	
+MOTA	salmonella-typhimurium	P55891	motA	P55891	1	3	Motility protein A	
+MOTA	shigella-dysenteriae-serotype-1	Q32H62	motA	Q32H62	0	3	Proton conductor component of motor	
+MOTB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBH3	motB	Q0PBH3	4	54	Flagellar motor protein	
+MOTB	escherichia-coli-83333	P0AF06	motB	P0AF06	1	19	Motility protein B	
+MOTB	helicobacter-pylori	P56427	motB	P56427	2	23	Motility protein B	
+MOTB	pseudomonas-aeruginosa	Q9HUL2	motB	Q9HUL2	3	24	Chemotaxis protein MotB	
+MOTB	salmonella-typhimurium	P55892	motB	P55892	2	28	Motility protein B	
+MOTC	pseudomonas-aeruginosa	G3XD73	motC	G3XD73	2	5	MotC	
+MOTD	pseudomonas-aeruginosa	G3XD90	motD	G3XD90	3	29	MotD	
+MOTHERS	fly	FBgn0011648	Mad	M9PBX0	96	564	Mothers against decapentaplegic homolog (MAD homolog) (Mothe	w
+MOTHERS	fly	FBgn0025800	Smox	O96660	87	484	Mothers against decapentaplegic homolog (MAD homolog) (Mothe	w
+MOTHERS	human	O15105	SMAD7	O15105	52	544	SMAD family member 7 (SMAD 7) (hSMAD7) (Mothers against deca	w
+MOTHERS	human	O15198	SMAD9	O15198	78	565	SMAD family member 9 (SMAD 9) (Madh6) (Mothers against decap	w
+MOTHERS	human	O43541	SMAD6	O43541	42	422	SMAD family member 6 (SMAD 6) (hSMAD6) (Mothers against deca	w
+MOTHERS	human	O95405	ZFYVE9	O95405	31	164	Zinc finger FYVE domain-containing protein 9 (Mothers agains	w
+MOTHERS	human	P84022	SMAD3	P84022	121	888	SMAD family member 3 (SMAD 3) (hSMAD3) (JV15-2) (Mothers aga	w
+MOTHERS	human	Q13485	SMAD4	Q13485	113	1063	SMAD family member 4 (SMAD 4) (hSMAD4) (Deletion target in p	w
+MOTHERS	human	Q15796	SMAD2	Q15796	128	920	SMAD family member 2 (SMAD 2) (hSMAD2) (JV18-1) (Mad-related	w
+MOTHERS	human	Q15797	SMAD1	Q15797	74	576	SMAD family member 1 (SMAD 1) (hSMAD1) (JV4-1) (Mad-related 	w
+MOTHERS	human	Q99717	SMAD5	Q99717	79	534	SMAD family member 5 (SMAD 5) (hSmad5) (JV5-1) (Mothers agai	w
+MOTHERS	worm	G5EDS9	tag-68	G5EDS9	0	26	Mothers against decapentaplegic homolog	w
+MOTHERS	zebrafish	A0A8M1N9U9	smad10a	A0A8M1N9U9	13	103	Mothers against decapentaplegic homolog	w
+MOTHERS	zebrafish	A0A8M9PY51	smad4b	A0A8M9PY51	7	99	Mothers against decapentaplegic homolog 4	w
+MOTHERS	zebrafish	A0A8N7UYT7	smad4a	A0A8N7UYT7	14	128	Mothers against decapentaplegic homolog	w
+MOTHERS	zebrafish	E7FFZ5	smad10a	E7FFZ5	13	103	Mothers against decapentaplegic homolog	w
+MOTHERS	zebrafish	F1QXZ9	smad9	F1QXZ9	13	68	Mothers against decapentaplegic homolog	w
+MOTHERS	zebrafish	Q1L8Y3	smad6b	Q1L8Y3	6	62	Mothers against decapentaplegic homolog	w
+MOTHERS	zebrafish	Q8AY15	smad3a	Q8AY15	15	131	Mothers against decapentaplegic homolog	w
+MOTHERS	zebrafish	Q9I8V2	smad1	Q9I8V2	14	80	Mothers against decapentaplegic homolog 1	w
+MOTHERS	zebrafish	Q9I9P9	smad2	Q9I9P9	16	131	Mothers against decapentaplegic homolog 2	w
+MOTHERS	zebrafish	Q9W7E7	smad5	Q9W7E7	14	71	Mothers against decapentaplegic homolog 5	w
+MOTI	human	Q96DE0	NUDT16	Q96DE0	3	55	U8 snoRNA-decapping enzyme (EC 3.6.1.62) (IDP phosphatase) (	w
+MOTIF	fly	FBgn0025874	Meics	O96395	33	365	LD05664p (Meiotic central spindle, isoform A) (Zinc finger m	w
+MOTIF	fly	FBgn0027788	Hey	Q7KM13	48	437	Hairy/enhancer-of-split related with YRPW motif protein	w
+MOTIF	fly	FBgn0029791	AdamTS-B	Q9W493	22	253	ADAM metallopeptidase with thrombospondin type 1 motif B, is	w
+MOTIF	fly	FBgn0030571	CG14414	X2JBU2	0	2	Probable RNA-binding protein 18 (RNA-binding motif protein 1	w
+MOTIF	fly	FBgn0037220	CG14641	Q95RB1	30	184	Pre-mRNA-splicing factor RBM22 (RNA-binding motif protein 22	w
+MOTIF	fly	FBgn0037342	CG2931	Q9VND7	5	54	RNA-binding protein 42 (RNA-binding motif protein 42)	w
+MOTIF	fly	FBgn0037611	CG11755	Q9VHN3	0	1	Cysteine-rich DPF motif domain-containing protein 1	w
+MOTIF	fly	FBgn0037621	M1BP	Q9VHM3	39	441	LD30467p (Motif 1 binding protein)	w
+MOTIF	fly	FBgn0038303	SIDL	Q9VFB7	13	42	Trafficking protein particle complex subunit 10 (Shal Intera	w
+MOTIF	fly	FBgn0086683	Spf45	Q7PL83	12	38	Splicing factor 45 (RNA-binding motif protein 17)	w
+MOTIF	fly	FBgn0261588	pdm3	A0A0B4JD55	22	99	Pou domain motif 3, isoform F	w
+MOTIF	fly	FBgn0286071	AdamTS-A	Q8SXB0	4	17	ADAM metallopeptidase with thrombospondin type 1 motif A, is	w
+MOTIF	human	A0A024RBG1	NUDT4B	A0A024RBG1	1	28	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B (DIP	w
+MOTIF	human	A0AV96	RBM47	A0AV96	36	233	RNA-binding protein 47 (RNA-binding motif protein 47)	w
+MOTIF	human	A6NDE4	RBMY1B	A6NDE4	0	10	RNA-binding motif protein, Y chromosome, family 1 member B	w
+MOTIF	human	A6NEQ0	RBMY1E	A6NEQ0	0	13	RNA-binding motif protein, Y chromosome, family 1 member E	w
+MOTIF	human	A8MXQ7	IQANK1	A8MXQ7	2	36	IQ motif and ankyrin repeat domain-containing protein 1	w
+MOTIF	human	A8MXV4	NUDT19	A8MXV4	13	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
+MOTIF	human	O00175	CCL24	O00175	97	329	C-C motif chemokine 24 (CK-beta-6) (Eosinophil chemotactic p	w
+MOTIF	human	O00585	CCL21	O00585	55	267	C-C motif chemokine 21 (6Ckine) (Beta-chemokine exodus-2) (S	w
+MOTIF	human	O00626	CCL22	O00626	102	603	C-C motif chemokine 22 (CC chemokine STCP-1) (MDC(1-69)) (Ma	w
+MOTIF	human	O14625	CXCL11	O14625	91	491	C-X-C motif chemokine 11 (Beta-R1) (H174) (Interferon gamma-	w
+MOTIF	human	O15444	CCL25	O15444	38	191	C-C motif chemokine 25 (Chemokine TECK) (Small-inducible cyt	w
+MOTIF	human	O15467	CCL16	O15467	82	207	C-C motif chemokine 16 (Chemokine CC-4) (HCC-4) (Chemokine L	w
+MOTIF	human	O43251	RBFOX2	O43251	22	224	RNA binding protein fox-1 homolog 2 (Fox-1 homolog B) (Hexar	w
+MOTIF	human	O43927	CXCL13	O43927	114	529	C-X-C motif chemokine 13 (Angie) (B cell-attracting chemokin	w
+MOTIF	human	O75526	RBMXL2	O75526	8	93	RNA-binding motif protein, X-linked-like-2 (Testis-specific 	w
+MOTIF	human	O75603	GCM2	O75603	58	371	Chorion-specific transcription factor GCMb (hGCMb) (GCM moti	w
+MOTIF	human	O95715	CXCL14	O95715	52	378	C-X-C motif chemokine 14 (Chemokine BRAK) (MIP-2G) (Small-in	w
+MOTIF	human	O95848	NUDT14	O95848	2	64	Uridine diphosphate glucose pyrophosphatase NUDT14 (UDPG pyr	w
+MOTIF	human	P02775	PPBP	P02775	114	654	Platelet basic protein (PBP) (C-X-C motif chemokine 7) (Leuk	w
+MOTIF	human	P02776	PF4	P02776	113	792	Platelet factor 4 (PF-4) (C-X-C motif chemokine 4) (Iroplact	w
+MOTIF	human	P02778	CXCL10	P02778	157	959	C-X-C motif chemokine 10 (10 kDa interferon gamma-induced pr	w
+MOTIF	human	P09341	CXCL1	P09341	111	761	Growth-regulated alpha protein (C-X-C motif chemokine 1) (GR	w
+MOTIF	human	P0C024	NUDT7	P0C024	4	33	Peroxisomal coenzyme A diphosphatase NUDT7 (EC 3.6.1.-) (EC 	w
+MOTIF	human	P0C025	NUDT17	P0C025	5	16	m7GpppN-mRNA hydrolase NUDT17 (EC 3.6.1.62) (Nucleoside diph	w
+MOTIF	human	P0C7P1	RBMY1D	P0C7P1	0	10	RNA-binding motif protein, Y chromosome, family 1 member D	w
+MOTIF	human	P0DJD3	RBMY1A1	P0DJD3	3	30	RNA-binding motif protein, Y chromosome, family 1 member A1 	w
+MOTIF	human	P0DJD4	RBMY1C	P0DJD4	0	27	RNA-binding motif protein, Y chromosome, family 1 member C	w
+MOTIF	human	P10145	CXCL8	P10145	159	999	Interleukin-8 (IL-8) (C-X-C motif chemokine 8) (Chemokine (C	w
+MOTIF	human	P10147	CCL3	P10147	94	659	C-C motif chemokine 3 (G0/G1 switch regulatory protein 19-1)	w
+MOTIF	human	P10720	PF4V1	P10720	63	368	Platelet factor 4 variant (C-X-C motif chemokine 4 variant) 	w
+MOTIF	human	P13236	CCL4	P13236	56	177	C-C motif chemokine 4 (G-26 T-lymphocyte-secreted protein) (	w
+MOTIF	human	P13500	CCL2	P13500	212	1438	C-C motif chemokine 2 (HC11) (Monocyte chemoattractant prote	w
+MOTIF	human	P13501	CCL5	P13501	145	1268	C-C motif chemokine 5 (EoCP) (Eosinophil chemotactic cytokin	w
+MOTIF	human	P16619	CCL3L1	P16619	72	374	C-C motif chemokine 3-like 1 (G0/G1 switch regulatory protei	w
+MOTIF	human	P19875	CXCL2	P19875	80	410	C-X-C motif chemokine 2 (Growth-regulated protein beta) (Gro	w
+MOTIF	human	P19876	CXCL3	P19876	64	399	C-X-C motif chemokine 3 (GRO-gamma(1-73)) (Growth-regulated 	w
+MOTIF	human	P22362	CCL1	P22362	58	288	C-C motif chemokine 1 (Small-inducible cytokine A1) (T lymph	w
+MOTIF	human	P27448	MARK3	P27448	372	1515	MAP/microtubule affinity-regulating kinase 3 (EC 2.7.11.1) (	w
+MOTIF	human	P29558	RBMS1	P29558	37	218	RNA-binding motif, single-stranded-interacting protein 1 (Si	w
+MOTIF	human	P38159	RBMX	P38159	33	408	RNA-binding motif protein, X chromosome (Glycoprotein p43) (	w
+MOTIF	human	P42696	RBM34	P42696	59	335	RNA-binding protein 34 (RNA-binding motif protein 34)	w
+MOTIF	human	P42830	CXCL5	P42830	94	526	C-X-C motif chemokine 5 (ENA-78(1-78)) (Epithelial-derived n	w
+MOTIF	human	P47992	XCL1	P47992	73	280	Lymphotactin (ATAC) (C motif chemokine 1) (Cytokine SCM-1) (	w
+MOTIF	human	P48061	CXCL12	P48061	42	85	Stromal cell-derived factor 1 (SDF-1) (hSDF-1) (C-X-C motif 	w
+MOTIF	human	P49756	RBM25	P49756	69	467	RNA-binding protein 25 (Arg/Glu/Asp-rich protein of 120 kDa)	w
+MOTIF	human	P51671	CCL11	P51671	104	373	Eotaxin (C-C motif chemokine 11) (Eosinophil chemotactic pro	w
+MOTIF	human	P52756	RBM5	P52756	54	292	RNA-binding protein 5 (Protein G15) (Putative tumor suppress	w
+MOTIF	human	P55773	CCL23	P55773	39	118	C-C motif chemokine 23 (CK-beta-8) (CKB-8) (Macrophage infla	w
+MOTIF	human	P55774	CCL18	P55774	84	400	C-C motif chemokine 18 (Alternative macrophage activation-as	w
+MOTIF	human	P57052	RBM11	P57052	34	254	Splicing regulator RBM11 (RNA-binding motif protein 11)	w
+MOTIF	human	P60602	ROMO1	P60602	19	64	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	w
+MOTIF	human	P78332	RBM6	P78332	41	219	RNA-binding protein 6 (Lung cancer antigen NY-LU-12) (Protei	w
+MOTIF	human	P78423	CX3CL1	P78423	57	378	Fractalkine (C-X3-C motif chemokine 1) (CX3C membrane-anchor	w
+MOTIF	human	P78556	CCL20	P78556	74	529	C-C motif chemokine 20 (Beta-chemokine exodus-1) (CC chemoki	w
+MOTIF	human	P80075	CCL8	P80075	121	428	C-C motif chemokine 8 (HC14) (Monocyte chemoattractant prote	w
+MOTIF	human	P80098	CCL7	P80098	90	315	C-C motif chemokine 7 (Monocyte chemoattractant protein 3) (	w
+MOTIF	human	P80162	CXCL6	P80162	80	464	C-X-C motif chemokine 6 (Chemokine alpha 3) (CKA-3) (Granulo	w
+MOTIF	human	P98175	RBM10	P98175	83	377	RNA-binding protein 10 (G patch domain-containing protein 9)	w
+MOTIF	human	P98179	RBM3	P98179	18	249	RNA-binding protein 3 (RNA-binding motif protein 3) (RNPL)	w
+MOTIF	human	Q07325	CXCL9	Q07325	83	535	C-X-C motif chemokine 9 (Gamma-interferon-induced monokine) 	w
+MOTIF	human	Q09019	DMWD	Q09019	31	152	Dystrophia myotonica WD repeat-containing protein (Dystrophi	w
+MOTIF	human	Q14498	RBM39	Q14498	189	1074	RNA-binding protein 39 (CAPER alpha) (CAPERalpha) (Hepatocel	w
+MOTIF	human	Q14678	KANK1	Q14678	48	167	KN motif and ankyrin repeat domain-containing protein 1 (Ank	w
+MOTIF	human	Q15051	IQCB1	Q15051	95	600	IQ calmodulin-binding motif-containing protein 1 (Nephrocyst	w
+MOTIF	human	Q15415	RBMY1F	Q15415	1	47	RNA-binding motif protein, Y chromosome, family 1 member F/J	w
+MOTIF	human	Q15434	RBMS2	Q15434	40	250	RNA-binding motif, single-stranded-interacting protein 2 (Su	w
+MOTIF	human	Q15695	ZRSR2P1	Q15695	13	62	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
+MOTIF	human	Q15696	ZRSR2	Q15696	21	139	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
+MOTIF	human	Q16627	CCL14	Q16627	65	186	C-C motif chemokine 14 (Chemokine CC-1/CC-3) (HCC-1/HCC-3) (	w
+MOTIF	human	Q16663	CCL15	Q16663	53	175	C-C motif chemokine 15 (Chemokine CC-2) (HCC-2) (Leukotactin	w
+MOTIF	human	Q502X0	MORN2	Q502X0	4	25	MORN repeat-containing protein 2 (MORN motif protein in test	w
+MOTIF	human	Q58WW2	DCAF6	Q58WW2	31	282	DDB1- and CUL4-associated factor 6 (Androgen receptor comple	w
+MOTIF	human	Q5JQF8	PABPC1L2A	Q5JQF8	4	65	Polyadenylate-binding protein 1-like 2 (RNA-binding motif pr	w
+MOTIF	human	Q5JS13	RALGPS1	Q5JS13	8	65	Ras-specific guanine nucleotide-releasing factor RalGPS1 (Ra	w
+MOTIF	human	Q5JU85	IQSEC2	Q5JU85	85	331	IQ motif and SEC7 domain-containing protein 2 (Brefeldin A r	w
+MOTIF	human	Q5K651	SAMD9	Q5K651	2	54	Sterile alpha motif domain-containing protein 9 (SAM domain-	w
+MOTIF	human	Q5PRF9	SAMD4B	Q5PRF9	37	173	Protein Smaug homolog 2 (Smaug 2) (hSmaug2) (Sterile alpha m	w
+MOTIF	human	Q5T481	RBM20	Q5T481	24	100	RNA-binding protein 20 (RNA-binding motif protein 20)	w
+MOTIF	human	Q5T7N3	KANK4	Q5T7N3	29	112	KN motif and ankyrin repeat domain-containing protein 4 (Ank	w
+MOTIF	human	Q5T8P6	RBM26	Q5T8P6	81	248	RNA-binding protein 26 (CTCL tumor antigen se70-2) (RNA-bind	w
+MOTIF	human	Q5TGI4	SAMD5	Q5TGI4	33	96	Sterile alpha motif domain-containing protein 5 (SAM domain-	w
+MOTIF	human	Q5VXD3	SAMD13	Q5VXD3	17	142	Sterile alpha motif domain-containing protein 13 (SAM domain	w
+MOTIF	human	Q63ZY3	KANK2	Q63ZY3	139	370	KN motif and ankyrin repeat domain-containing protein 2 (Ank	w
+MOTIF	human	Q68DC2	ANKS6	Q68DC2	10	93	Ankyrin repeat and SAM domain-containing protein 6 (Ankyrin 	w
+MOTIF	human	Q6DN90	IQSEC1	Q6DN90	44	181	IQ motif and SEC7 domain-containing protein 1 (ADP-ribosylat	w
+MOTIF	human	Q6NVV7	CDPF1	Q6NVV7	11	99	Cysteine-rich DPF motif domain-containing protein 1	w
+MOTIF	human	Q6NXG1	ESRP1	Q6NXG1	12	175	Epithelial splicing regulatory protein 1 (RNA-binding motif 	w
+MOTIF	human	Q6NY19	KANK3	Q6NY19	13	53	KN motif and ankyrin repeat domain-containing protein 3 (Ank	w
+MOTIF	human	Q6SPF0	SAMD1	Q6SPF0	38	176	Sterile alpha motif domain-containing protein 1 (SAM domain-	w
+MOTIF	human	Q6UXB2	CXCL17	Q6UXB2	29	125	C-X-C motif chemokine 17 (6-Cys CXCL17) (Dendritic cell and 	w
+MOTIF	human	Q6XE24	RBMS3	Q6XE24	19	76	RNA-binding motif, single-stranded-interacting protein 3	w
+MOTIF	human	Q6ZN01	MAMSTR	Q6ZN01	18	70	MEF2-activating motif and SAP domain-containing transcriptio	w
+MOTIF	human	Q6ZP01	RBM44	Q6ZP01	6	19	RNA-binding protein 44 (RNA-binding motif protein 44)	w
+MOTIF	human	Q6ZSC3	RBM43	Q6ZSC3	13	53	RNA-binding protein 43 (RNA-binding motif protein 43)	w
+MOTIF	human	Q7KZI7	MARK2	Q7KZI7	337	1490	Serine/threonine-protein kinase MARK2 (EC 2.7.11.1) (EC 2.7.	w
+MOTIF	human	Q7Z3H4	SAMD7	Q7Z3H4	2	17	Sterile alpha motif domain-containing protein 7 (SAM domain-	w
+MOTIF	human	Q7Z4K8	TRIM46	Q7Z4K8	37	170	Tripartite motif-containing protein 46 (Gene Y protein) (Gen	w
+MOTIF	human	Q7Z6G8	ANKS1B	Q7Z6G8	26	77	Ankyrin repeat and sterile alpha motif domain-containing pro	w
+MOTIF	human	Q86U06	RBM23	Q86U06	35	139	Probable RNA-binding protein 23 (CAPER beta) (CAPERbeta) (RN	w
+MOTIF	human	Q86X27	RALGPS2	Q86X27	32	140	Ras-specific guanine nucleotide-releasing factor RalGPS2 (Ra	w
+MOTIF	human	Q86X67	NUDT13	Q86X67	1	26	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	w
+MOTIF	human	Q8IU60	DCP2	Q8IU60	25	195	m7GpppN-mRNA hydrolase (EC 3.6.1.62) (Nucleoside diphosphate	w
+MOTIF	human	Q8IUH3	RBM45	Q8IUH3	18	236	RNA-binding protein 45 (Developmentally-regulated RNA-bindin	w
+MOTIF	human	Q8IVG5	SAMD9L	Q8IVG5	3	51	Sterile alpha motif domain-containing protein 9-like (SAM do	w
+MOTIF	human	Q8IXT5	RBM12B	Q8IXT5	16	152	RNA-binding protein 12B (RNA-binding motif protein 12B)	w
+MOTIF	human	Q8IYX4	DND1	Q8IYX4	13	105	Dead end protein homolog 1 (RNA-binding motif, single-strand	w
+MOTIF	human	Q8IZD0	SAMD14	Q8IZD0	3	14	Sterile alpha motif domain-containing protein 14 (SAM domain	w
+MOTIF	human	Q8N6K7	SAMD3	Q8N6K7	6	61	Sterile alpha motif domain-containing protein 3 (SAM domain-	w
+MOTIF	human	Q8N7C3	TRIML2	Q8N7C3	13	81	Probable E3 ubiquitin-protein ligase TRIML2 (EC 2.3.2.27) (R	w
+MOTIF	human	Q8N7X1	RBMXL3	Q8N7X1	3	165	RNA-binding motif protein, X-linked-like-3	w
+MOTIF	human	Q8N8I0	SAMD12	Q8N8I0	11	52	Sterile alpha motif domain-containing protein 12 (SAM domain	w
+MOTIF	human	Q8N9V2	TRIML1	Q8N9V2	17	53	Probable E3 ubiquitin-protein ligase TRIML1 (EC 2.3.2.27) (R	w
+MOTIF	human	Q8NA54	IQUB	Q8NA54	18	152	IQ motif and ubiquitin-like domain-containing protein	w
+MOTIF	human	Q8NDT2	RBM15B	Q8NDT2	41	176	Putative RNA-binding protein 15B (One-twenty two protein 3) 	w
+MOTIF	human	Q8NET5	NFAM1	Q8NET5	27	135	NFAT activation molecule 1 (Calcineurin/NFAT-activating ITAM	w
+MOTIF	human	Q8NEU8	APPL2	Q8NEU8	27	252	DCC-interacting protein 13-beta (Dip13-beta) (Adapter protei	w
+MOTIF	human	Q8NHW4	CCL4L1	Q8NHW4	107	567	C-C motif chemokine 4-like (Lymphocyte activation gene 1 pro	w
+MOTIF	human	Q8TAS1	UHMK1	Q8TAS1	336	1287	Serine/threonine-protein kinase Kist (EC 2.7.11.1) (Kinase i	w
+MOTIF	human	Q8TBY0	RBM46	Q8TBY0	6	45	Probable RNA-binding protein 46 (Cancer/testis antigen 68) (	w
+MOTIF	human	Q8WV74	NUDT8	Q8WV74	5	73	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
+MOTIF	human	Q92583	CCL17	Q92583	96	352	C-C motif chemokine 17 (CC chemokine TARC) (Small-inducible 	w
+MOTIF	human	Q92766	RREB1	Q92766	25	174	Ras-responsive element-binding protein 1 (RREB-1) (Finger pr	w
+MOTIF	human	Q96C01	TIMCC	Q96C01	14	134	TIM double twin CX3C motif protein	w
+MOTIF	human	Q96E39	RBMXL1	Q96E39	12	218	RNA binding motif protein, X-linked-like-1 (Heterogeneous nu	w
+MOTIF	human	Q96EV2	RBM33	Q96EV2	45	177	RNA-binding protein 33 (Proline-rich protein 8) (RNA-binding	w
+MOTIF	human	Q96FG2	ELMOD3	Q96FG2	16	54	ELMO domain-containing protein 3 (RNA-binding motif and ELMO	w
+MOTIF	human	Q96H35	RBM18	Q96H35	6	54	Probable RNA-binding protein 18 (RNA-binding motif protein 1	w
+MOTIF	human	Q96I25	RBM17	Q96I25	66	302	Splicing factor 45 (45 kDa-splicing factor) (RNA-binding mot	w
+MOTIF	human	Q96IZ5	RBM41	Q96IZ5	14	171	RNA-binding protein 41 (RNA-binding motif protein 41)	w
+MOTIF	human	Q96LT9	RNPC3	Q96LT9	43	318	RNA-binding region-containing protein 3 (RNA-binding motif p	w
+MOTIF	human	Q96NU1	SAMD11	Q96NU1	19	52	Sterile alpha motif domain-containing protein 11 (SAM domain	w
+MOTIF	human	Q96PK6	RBM14	Q96PK6	53	582	RNA-binding protein 14 (Paraspeckle protein 2) (PSP2) (RNA-b	w
+MOTIF	human	Q96T37	RBM15	Q96T37	49	253	RNA-binding protein 15 (One-twenty two protein 1) (RNA-bindi	w
+MOTIF	human	Q99616	CCL13	Q99616	101	296	C-C motif chemokine 13 (CK-beta-10) (Monocyte chemoattractan	w
+MOTIF	human	Q99731	CCL19	Q99731	82	585	C-C motif chemokine 19 (Beta-chemokine exodus-3) (CK beta-11	w
+MOTIF	human	Q9BQ04	RBM4B	Q9BQ04	15	247	RNA-binding protein 4B (RNA-binding motif protein 30) (RNA-b	w
+MOTIF	human	Q9BQG2	NUDT12	Q9BQG2	4	53	NAD-capped RNA hydrolase NUDT12 (DeNADding enzyme NUDT12) (E	w
+MOTIF	human	Q9BRQ3	NUDT22	Q9BRQ3	8	54	Uridine diphosphate glucose pyrophosphatase NUDT22 (EC 3.6.1	w
+MOTIF	human	Q9BTD8	RBM42	Q9BTD8	44	428	RNA-binding protein 42 (RNA-binding motif protein 42)	w
+MOTIF	human	Q9BWF3	RBM4	Q9BWF3	22	257	RNA-binding protein 4 (Lark homolog) (hLark) (RNA-binding mo	w
+MOTIF	human	Q9BX46	RBM24	Q9BX46	3	48	RNA-binding protein 24 (RNA-binding motif protein 24) (RNA-b	w
+MOTIF	human	Q9BYL1	SAMD10	Q9BYL1	8	38	Sterile alpha motif domain-containing protein 10 (SAM domain	w
+MOTIF	human	Q9GZV5	WWTR1	Q9GZV5	136	463	WW domain-containing transcription regulator protein 1 (Tran	w
+MOTIF	human	Q9H0Z9	RBM38	Q9H0Z9	10	66	RNA-binding protein 38 (CLL-associated antigen KW-5) (HSRNAS	w
+MOTIF	human	Q9H2A7	CXCL16	Q9H2A7	48	363	C-X-C motif chemokine 16 (Scavenger receptor for phosphatidy	w
+MOTIF	human	Q9H582	ZNF644	Q9H582	52	287	Zinc finger protein 644 (Zinc finger motif enhancer-binding 	w
+MOTIF	human	Q9H6E5	TUT1	Q9H6E5	19	196	Speckle targeted PIP5K1A-regulated poly(A) polymerase (Star-	w
+MOTIF	human	Q9H6T0	ESRP2	Q9H6T0	7	147	Epithelial splicing regulatory protein 2 (RNA-binding motif 	w
+MOTIF	human	Q9NP62	GCM1	Q9NP62	78	405	Chorion-specific transcription factor GCMa (hGCMa) (GCM moti	w
+MOTIF	human	Q9NRJ3	CCL28	Q9NRJ3	32	138	C-C motif chemokine 28 (Mucosae-associated epithelial chemok	w
+MOTIF	human	Q9NTZ6	RBM12	Q9NTZ6	12	144	RNA-binding protein 12 (RNA-binding motif protein 12) (SH3/W	w
+MOTIF	human	Q9NV35	NUDT15	Q9NV35	9	87	Nucleotide triphosphate diphosphatase NUDT15 (EC 3.6.1.68) (	w
+MOTIF	human	Q9NW13	RBM28	Q9NW13	85	432	RNA-binding protein 28 (RNA-binding motif protein 28)	w
+MOTIF	human	Q9NW64	RBM22	Q9NW64	39	309	Pre-mRNA-splicing factor RBM22 (RNA-binding motif protein 22	w
+MOTIF	human	Q9NWV4	CZIB	Q9NWV4	15	111	CXXC motif containing zinc binding protein (UPF0587 protein 	w
+MOTIF	human	Q9P1V8	SAMD15	Q9P1V8	4	40	Sterile alpha motif domain-containing protein 15 (SAM domain	w
+MOTIF	human	Q9P2N5	RBM27	Q9P2N5	77	278	RNA-binding protein 27 (RNA-binding motif protein 27)	w
+MOTIF	human	Q9P2R3	ANKFY1	Q9P2R3	26	230	Ankyrin repeat and FYVE domain-containing protein 1 (Ankyrin	w
+MOTIF	human	Q9UBD3	XCL2	Q9UBD3	67	324	Cytokine SCM-1 beta (C motif chemokine 2) (XC chemokine liga	w
+MOTIF	human	Q9UBP5	HEY2	Q9UBP5	85	418	Hairy/enhancer-of-split related with YRPW motif protein 2 (C	w
+MOTIF	human	Q9UKG1	APPL1	Q9UKG1	39	383	DCC-interacting protein 13-alpha (Dip13-alpha) (Adapter prot	w
+MOTIF	human	Q9UPN6	SCAF8	Q9UPN6	41	218	SR-related and CTD-associated factor 8 (CDC5L complex-associ	w
+MOTIF	human	Q9UPP2	IQSEC3	Q9UPP2	27	97	IQ motif and SEC7 domain-containing protein 3	w
+MOTIF	human	Q9UPU9	SAMD4A	Q9UPU9	35	175	Protein Smaug homolog 1 (Smaug 1) (hSmaug1) (Sterile alpha m	w
+MOTIF	human	Q9UPY3	DICER1	Q9UPY3	9	224	Endoribonuclease Dicer (EC 3.1.26.3) (Helicase with RNase mo	w
+MOTIF	human	Q9Y250	LZTS1	Q9Y250	135	462	Leucine zipper putative tumor suppressor 1 (F37/esophageal c	w
+MOTIF	human	Q9Y258	CCL26	Q9Y258	78	352	C-C motif chemokine 26 (CC chemokine IMAC) (Eotaxin-3) (Macr	w
+MOTIF	human	Q9Y388	RBMX2	Q9Y388	31	274	RNA-binding motif protein, X-linked 2	w
+MOTIF	human	Q9Y4C8	RBM19	Q9Y4C8	74	434	Probable RNA-binding protein 19 (RNA-binding motif protein 1	w
+MOTIF	human	Q9Y4X3	CCL27	Q9Y4X3	59	256	C-C motif chemokine 27 (CC chemokine ILC) (Cutaneous T-cell-	w
+MOTIF	human	Q9Y580	RBM7	Q9Y580	39	191	RNA-binding protein 7 (RNA-binding motif protein 7)	w
+MOTIF	human	Q9Y5J3	HEY1	Q9Y5J3	100	554	Hairy/enhancer-of-split related with YRPW motif protein 1 (C	w
+MOTIF	human	Q9Y5S9	RBM8A	Q9Y5S9	35	528	RNA-binding protein 8A (Binder of OVCA1-1) (BOV-1) (RNA-bind	w
+MOTIF	virus	A0A2H4X275	fgpv_066	A0A2H4X275	12	256	HT motif family protein	w
+MOTIF	worm	H2KZA3	pqn-22	H2KZA3	0	6	Zasp-like motif domain-containing protein	w
+MOTIF	worm	Q9N4L5	CELE_ZK973.1	Q9N4L5	0	55	S1 motif domain-containing protein	w
+MOTIF	yeast	P40167	SLZ1	P40167	1	6	Sporulation-specific with a leucine zipper motif protein 1	w
+MOTIF	zebrafish	A0A0G2KM47	cxcl11.4	A0A0G2KM47	2	10	C-X-C motif chemokine 11-6-like	w
+MOTIF	zebrafish	A0A0G2KWZ2	cxcl11.3	A0A0G2KWZ2	5	15	C-X-C motif chemokine 11-6-like	w
+MOTIF	zebrafish	A0A0G2KYH9	cxcl8a	A0A0G2KYH9	8	23	Chemokine (C-X-C motif) ligand 8a	w
+MOTIF	zebrafish	A0A0G2L2I4	ccl36.1	A0A0G2L2I4	5	20	C-C motif chemokine	w
+MOTIF	zebrafish	A0A0R4IFJ9	ccl39.6	A0A0R4IFJ9	1	10	C-C motif chemokine 22-like	w
+MOTIF	zebrafish	A0A0R4IFY9	samd1a	A0A0R4IFY9	3	43	Sterile alpha motif domain-containing 1a	w
+MOTIF	zebrafish	A0A0R4IJP6	iqub	A0A0R4IJP6	5	44	IQ motif and ubiquitin domain-containing	w
+MOTIF	zebrafish	A0A0R4INB9	cxcl11.1	A0A0R4INB9	1	12	C-X-C motif chemokine 11-1	w
+MOTIF	zebrafish	A0A0R4IPJ5	ccl34b.1	A0A0R4IPJ5	0	10	Chemokine (C-C motif) ligand 34b, duplicate 1	w
+MOTIF	zebrafish	A0A0R4ISV2	ccl39.2	A0A0R4ISV2	9	24	Chemokine (C-C motif) ligand 39, duplicate 2	w
+MOTIF	zebrafish	A0A0R4ITB4	iqsec3b	A0A0R4ITB4	0	2	IQ motif and SEC7 domain-containing protein 3	w
+MOTIF	zebrafish	A0A0R4IYE4	rbm26	A0A0R4IYE4	5	9	RNA-binding motif protein 26	w
+MOTIF	zebrafish	A0A2R8QR67	ccl25a	A0A2R8QR67	9	27	C-C motif chemokine 21	w
+MOTIF	zebrafish	A0A8M1NGD4	trim35-31	A0A8M1NGD4	0	1	Tripartite motif containing 35-31	w
+MOTIF	zebrafish	A0A8M2BB29	samd1b	A0A8M2BB29	2	43	Sterile alpha motif domain-containing protein 1	w
+MOTIF	zebrafish	A0A8M2BDE3	kank4	A0A8M2BDE3	1	9	KN motif and ankyrin repeat domain-containing protein 4 isof	w
+MOTIF	zebrafish	A0A8M2BIN2	ccl20l	A0A8M2BIN2	21	55	C-C motif chemokine 20	w
+MOTIF	zebrafish	A0A8M3B7T1	samd7	A0A8M3B7T1	0	1	Sterile alpha motif domain-containing 7	w
+MOTIF	zebrafish	A0A8M6Z1Y1	sb:cb1081	A0A8M6Z1Y1	0	10	Sterile alpha motif domain-containing protein 9	w
+MOTIF	zebrafish	A0AB13A8Y3	trim35-9	A0AB13A8Y3	0	1	Tripartite motif containing 35-9	w
+MOTIF	zebrafish	A0AB13AAP3	xcr1a.1	A0AB13AAP3	5	10	Chemokine (C motif) receptor 1a, duplicate 1	w
+MOTIF	zebrafish	A0AB32TYM6	kank3	A0AB32TYM6	1	10	KN motif and ankyrin repeat domain-containing protein 3 isof	w
+MOTIF	zebrafish	A2BHJ6	cxcl11.8	A2BHJ6	1	10	Chemokine (C-X-C motif) ligand 11, duplicate 8	w
+MOTIF	zebrafish	A2BIR2	ccl19a.1	A2BIR2	9	23	C-C motif chemokine	w
+MOTIF	zebrafish	A5PMU4	anks1b	A5PMU4	1	2	Ankyrin repeat and sterile alpha motif domain-containing pro	w
+MOTIF	zebrafish	A8DZA0	rbm25b	A8DZA0	4	55	RNA-binding motif protein 25b	w
+MOTIF	zebrafish	A9ZPD8	ccl35.2	A9ZPD8	9	22	Chemokine (C-C motif) ligand 35, duplicate 2	w
+MOTIF	zebrafish	A9ZPE0	ccl20b	A9ZPE0	10	43	C-C motif chemokine	w
+MOTIF	zebrafish	A9ZPF1	cxcl19	A9ZPF1	3	16	C-X-C motif chemokine 19 precursor	w
+MOTIF	zebrafish	A9ZPF3	ccl44	A9ZPF3	0	4	Chemokine (C-C motif) ligand 44	w
+MOTIF	zebrafish	A9ZPF6	cxcl20	A9ZPF6	5	13	Chemokine (C-X-C motif) ligand 20	w
+MOTIF	zebrafish	B0R190	cxcl11.7	B0R190	5	11	C-X-C motif chemokine	w
+MOTIF	zebrafish	B0R191	cxcl11.6	B0R191	6	16	C-X-C motif chemokine 11-6	w
+MOTIF	zebrafish	B0S522	rbm45	B0S522	1	12	RNA-binding motif protein 45	w
+MOTIF	zebrafish	B3DGJ7	ccl34a.4	B3DGJ7	2	10	Chemokine (C-C motif) ligand 34a, duplicate 4	w
+MOTIF	zebrafish	B3DGM0	ccl20a.3	B3DGM0	16	55	C-C motif chemokine	w
+MOTIF	zebrafish	B3DJJ8	czib	B3DJJ8	0	3	CXXC motif containing zinc binding protein	w
+MOTIF	zebrafish	E7EZE5	iqsec1b	E7EZE5	0	1	IQ motif and SEC7 domain-containing protein 1 isoform X1	w
+MOTIF	zebrafish	E7F6E2	rbm12bb	E7F6E2	0	1	RNA binding motif protein 12B	w
+MOTIF	zebrafish	E7F787	ccl38a.3	E7F787	7	26	C-C motif chemokine	w
+MOTIF	zebrafish	E7FC87	xcr1b.2	E7FC87	0	2	Chemokine (C motif) receptor 1b, duplicate 2	w
+MOTIF	zebrafish	E9QCG4	rbm24b	E9QCG4	0	4	RNA-binding motif protein 24b	w
+MOTIF	zebrafish	F1Q7F8	rbm4.2	F1Q7F8	0	9	RNA-binding motif protein 4.2	w
+MOTIF	zebrafish	F1QAC0	rbm33a	F1QAC0	0	22	RNA-binding motif protein 33a	w
+MOTIF	zebrafish	F1QBE9	ccl25b	F1QBE9	5	12	C-C motif chemokine 25	w
+MOTIF	zebrafish	F1R6S5	ccl27a	F1R6S5	1	1	C-C motif chemokine	w
+MOTIF	zebrafish	F1RAH8	rbmx2	F1RAH8	3	112	RNA-binding motif protein, X-linked 2	w
+MOTIF	zebrafish	F2Z4W9	trim35-20	F2Z4W9	0	1	Tripartite motif containing 35-20 isoform 1	w
+MOTIF	zebrafish	F6P784	ccl19a.2	F6P784	12	36	C-C motif chemokine 19a.2 precursor	w
+MOTIF	zebrafish	F8W2E8	rbm27	F8W2E8	5	9	RNA-binding motif protein 27	w
+MOTIF	zebrafish	N0GW19	cxcl8b.1	N0GW19	15	36	Chemokine (C-X-C motif) ligand 8b, duplicate 1	w
+MOTIF	zebrafish	Q08C88	samd13	Q08C88	0	43	Sterile alpha motif domain-containing 13	w
+MOTIF	zebrafish	Q1MT09	trim35-24	Q1MT09	0	1	Tripartite motif containing 35-24 isoform X1	w
+MOTIF	zebrafish	Q503D7	rbm14a	Q503D7	0	8	RNA-binding motif protein 14a	w
+MOTIF	zebrafish	Q58ER0	rbm39b	Q58ER0	11	55	RNA-binding motif protein 39b	w
+MOTIF	zebrafish	Q5RHE6	slain2	Q5RHE6	3	94	SLAIN motif family, member 2	w
+MOTIF	zebrafish	Q5TYP9	ccl38a.4	Q5TYP9	8	20	C-C motif chemokine	w
+MOTIF	zebrafish	Q5TYQ0	ccl38a.5	Q5TYQ0	9	24	C-C motif chemokine	w
+MOTIF	zebrafish	Q6DGP7	lyrm1	Q6DGP7	2	4	LYR motif containing protein 1	w
+MOTIF	zebrafish	Q6DHU2	rbm34	Q6DHU2	11	123	RNA-binding motif protein 34	w
+MOTIF	zebrafish	Q6NXC1	rbm4.3	Q6NXC1	1	17	RNA-binding motif protein 4.3	w
+MOTIF	zebrafish	Q7ZWA3	rbmx	Q7ZWA3	7	130	RNA-binding motif protein, X chromosome	w
+MOTIF	zebrafish	Q803H1	rbm39a	Q803H1	8	55	RNA-binding motif protein 39a	w
+MOTIF	zebrafish	Q8AXV6	hey1	Q8AXV6	3	10	Hairy/enhancer-of-split related with YRPW motif protein 1	w
+MOTIF	zebrafish	Q9I9L0	hey2	Q9I9L0	4	9	Hairy/enhancer-of-split related with YRPW motif protein 2	w
+MOTIF	zebrafish	X1WE18	kank2	X1WE18	1	15	KN motif and ankyrin repeat domain-containing protein 2	w
+MOTIF-CO	human	Q6ZMI0	PPP1R21	Q6ZMI0	29	173	Protein phosphatase 1 regulatory subunit 21 (Coiled-coil dom	w
+MOTIF-CONT	human	Q96HA8	NTAQ1	Q96HA8	126	464	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
+MOTIF-CONTA	human	C9J1S8	TRIM49D1	C9J1S8	16	39	Tripartite motif-containing protein 49D (Tripartite motif-co	w
+MOTIF-CONTA	zebrafish	A0A2R8Q2E8	trim33	A0A2R8Q2E8	4	30	E3 ubiquitin-protein ligase TRIM33 (EC 2.3.2.27) (RING-type 	w
+MOTIF-CONTAINING	fly	FBgn0020305	dbe	Q9VPU8	24	162	KRR1 small subunit processome component homolog (KRR-R motif	w
+MOTIF-CONTAINING	fly	FBgn0034572	CG9346	Q9W2N6	8	31	U2 snRNP-associated SURP motif-containing protein	w
+MOTIF-CONTAINING	fly	FBgn0036291	CG10681	Q9VTY4	12	72	KxDL motif-containing protein CG10681	w
+MOTIF-CONTAINING	fly	FBgn0083986	CG34150	Q0KI15	1	70	Complex III assembly factor LYRM7 (LYR motif-containing prot	w
+MOTIF-CONTAINING	fly	FBgn0259832	CG34229	Q6IGM9	2	14	LYR motif-containing protein 2	w
+MOTIF-CONTAINING	human	A0A096LPI5	CCDC28A-AS1	A0A096LPI5	3	11	Putative uncharacterized protein CCDC28A-AS1 (GVQW motif-con	w
+MOTIF-CONTAINING	human	A0A0J9YVX5	?	A0A0J9YVX5	0	8	Golgi-associated PDZ and coiled-coil motif-containing protei	w
+MOTIF-CONTAINING	human	A0A3B3IT33	TRIM51G	A0A3B3IT33	21	47	Tripartite motif-containing protein 51G	w
+MOTIF-CONTAINING	human	A6NCK2	TRIM43B	A6NCK2	39	103	Tripartite motif-containing protein 43B	w
+MOTIF-CONTAINING	human	A6NDI0	TRIM49B	A6NDI0	33	83	Putative tripartite motif-containing protein 49B (RING finge	w
+MOTIF-CONTAINING	human	A6NFY7	SDHAF1	A6NFY7	12	95	Succinate dehydrogenase assembly factor 1, mitochondrial (SD	w
+MOTIF-CONTAINING	human	A6NGJ6	TRIM64	A6NGJ6	14	47	Tripartite motif-containing protein 64	w
+MOTIF-CONTAINING	human	A6NI03	TRIM64B	A6NI03	22	46	Tripartite motif-containing protein 64B	w
+MOTIF-CONTAINING	human	A6NK02	TRIM75	A6NK02	21	51	Tripartite motif-containing protein 75	w
+MOTIF-CONTAINING	human	A6NLI5	TRIM64C	A6NLI5	15	49	Tripartite motif-containing protein 64C	w
+MOTIF-CONTAINING	human	A8MSI8	LYRM9	A8MSI8	18	88	LYR motif-containing protein 9	w
+MOTIF-CONTAINING	human	C9J1S8	TRIM49D1	C9J1S8	16	39	Tripartite motif-containing protein 49D (Tripartite motif-co	w
+MOTIF-CONTAINING	human	I1YAP6	TRIM77	I1YAP6	19	52	Tripartite motif-containing protein 77	w
+MOTIF-CONTAINING	human	O00635	TRIM38	O00635	44	167	E3 ubiquitin-protein ligase TRIM38 (EC 2.3.2.27) (RING finge	w
+MOTIF-CONTAINING	human	O15016	TRIM66	O15016	30	211	Tripartite motif-containing protein 66	w
+MOTIF-CONTAINING	human	O15042	U2SURP	O15042	91	449	U2 snRNP-associated SURP motif-containing protein (140 kDa S	w
+MOTIF-CONTAINING	human	O43325	LYRM1	O43325	7	80	LYR motif-containing protein 1	w
+MOTIF-CONTAINING	human	O43670	ZNF207	O43670	75	468	BUB3-interacting and GLEBS motif-containing protein ZNF207 (	w
+MOTIF-CONTAINING	human	O75054	IGSF3	O75054	29	151	Immunoglobulin superfamily member 3 (IgSF3) (Glu-Trp-Ile EWI	w
+MOTIF-CONTAINING	human	O75382	TRIM3	O75382	45	190	Tripartite motif-containing protein 3 (EC 2.3.2.27) (Brain-e	w
+MOTIF-CONTAINING	human	O94972	TRIM37	O94972	164	685	E3 ubiquitin-protein ligase TRIM37 (EC 2.3.2.27) (Mulibrey n	w
+MOTIF-CONTAINING	human	O95361	TRIM16	O95361	29	169	E3 ubiquitin-protein ligase TRIM16 (EC 2.3.2.27) (Estrogen-r	w
+MOTIF-CONTAINING	human	P0CI25	TRIM49	P0CI25	20	56	Tripartite motif-containing protein 49 (RING finger protein 	w
+MOTIF-CONTAINING	human	P0CI26	TRIM49C	P0CI26	11	20	Tripartite motif-containing protein 49C (Tripartite motif-co	w
+MOTIF-CONTAINING	human	P14373	TRIM27	P14373	100	643	Zinc finger protein RFP (EC 2.3.2.27) (RING finger protein 7	w
+MOTIF-CONTAINING	human	P42704	LRPPRC	P42704	32	522	Leucine-rich PPR motif-containing protein, mitochondrial (13	w
+MOTIF-CONTAINING	human	P49750	YLPM1	P49750	29	175	YLP motif-containing protein 1 (Nuclear protein ZAP3) (ZAP11	w
+MOTIF-CONTAINING	human	P55061	TMBIM6	P55061	25	146	Bax inhibitor 1 (BI-1) (Testis-enhanced gene transcript prot	w
+MOTIF-CONTAINING	human	P56277	CMC4	P56277	14	83	Cx9C motif-containing protein 4 (Mature T-cell proliferation	w
+MOTIF-CONTAINING	human	P56556	NDUFA6	P56556	14	318	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
+MOTIF-CONTAINING	human	Q12899	TRIM26	Q12899	49	277	Tripartite motif-containing protein 26 (EC 2.3.2.27) (Acid f	w
+MOTIF-CONTAINING	human	Q13049	TRIM32	Q13049	73	317	E3 ubiquitin-protein ligase TRIM32 (EC 2.3.2.27) (72 kDa Tat	w
+MOTIF-CONTAINING	human	Q13601	KRR1	Q13601	72	457	KRR1 small subunit processome component homolog (HIV-1 Rev-b	w
+MOTIF-CONTAINING	human	Q14134	TRIM29	Q14134	31	319	Tripartite motif-containing protein 29 (Ataxia telangiectasi	w
+MOTIF-CONTAINING	human	Q14142	TRIM14	Q14142	51	556	Tripartite motif-containing protein 14	w
+MOTIF-CONTAINING	human	Q15051	IQCB1	Q15051	95	600	IQ calmodulin-binding motif-containing protein 1 (Nephrocyst	w
+MOTIF-CONTAINING	human	Q2Q1W2	TRIM71	Q2Q1W2	15	170	E3 ubiquitin-protein ligase TRIM71 (EC 2.3.2.27) (Protein li	w
+MOTIF-CONTAINING	human	Q309B1	TRIM16L	Q309B1	25	154	Tripartite motif-containing protein 16-like protein (Tripart	w
+MOTIF-CONTAINING	human	Q3ZCU0	GVQW3	Q3ZCU0	2	23	Protein GVQW3 (GVQW motif-containing protein 3)	w
+MOTIF-CONTAINING	human	Q495X7	TRIM60	Q495X7	17	56	Tripartite motif-containing protein 60 (RING finger protein 	w
+MOTIF-CONTAINING	human	Q5EBN2	TRIM61	Q5EBN2	13	64	Putative tripartite motif-containing protein 61 (RING finger	w
+MOTIF-CONTAINING	human	Q5TGY3	AHDC1	Q5TGY3	37	171	Transcription factor Gibbin (AT-hook DNA-binding motif-conta	w
+MOTIF-CONTAINING	human	Q5U5X0	LYRM7	Q5U5X0	19	239	Complex III assembly factor LYRM7 (LYR motif-containing prot	w
+MOTIF-CONTAINING	human	Q5VW32	BROX	Q5VW32	15	105	BRO1 domain-containing protein BROX (BRO1 domain- and CAAX m	w
+MOTIF-CONTAINING	human	Q629K1	TRIQK	Q629K1	10	55	Triple QxxK/R motif-containing protein (Triple repetitive-se	w
+MOTIF-CONTAINING	human	Q6IPR1	ETFRF1	Q6IPR1	20	113	Electron transfer flavoprotein regulatory factor 1 (LYR moti	w
+MOTIF-CONTAINING	human	Q6PJ69	TRIM65	Q6PJ69	49	166	E3 ubiquitin-protein ligase TRIM65 (EC 2.3.2.27) (Tripartite	w
+MOTIF-CONTAINING	human	Q6UW63	POGLUT2	Q6UW63	3	98	Protein O-glucosyltransferase 2 (EC 2.4.1.-) (Endoplasmic re	w
+MOTIF-CONTAINING	human	Q6UWE0	LRSAM1	Q6UWE0	21	125	E3 ubiquitin-protein ligase LRSAM1 (EC 2.3.2.27) (Leucine-ri	w
+MOTIF-CONTAINING	human	Q6ZMU5	TRIM72	Q6ZMU5	32	174	Tripartite motif-containing protein 72 (EC 2.3.2.27) (Mitsug	w
+MOTIF-CONTAINING	human	Q6ZTA4	TRIM67	Q6ZTA4	426	4712	Tripartite motif-containing protein 67 (TRIM9-like protein)	w
+MOTIF-CONTAINING	human	Q7Z4H8	POGLUT3	Q7Z4H8	6	98	Protein O-glucosyltransferase 3 (EC 2.4.1.-) (KDEL motif-con	w
+MOTIF-CONTAINING	human	Q7Z4K8	TRIM46	Q7Z4K8	37	170	Tripartite motif-containing protein 46 (Gene Y protein) (Gen	w
+MOTIF-CONTAINING	human	Q86UB2	BIVM	Q86UB2	3	89	Basic immunoglobulin-like variable motif-containing protein	w
+MOTIF-CONTAINING	human	Q86UV6	TRIM74	Q86UV6	24	62	Tripartite motif-containing protein 74 (Tripartite motif-con	w
+MOTIF-CONTAINING	human	Q86UV7	TRIM73	Q86UV7	32	80	Tripartite motif-containing protein 73 (Tripartite motif-con	w
+MOTIF-CONTAINING	human	Q86XT4	TRIM50	Q86XT4	41	111	E3 ubiquitin-protein ligase TRIM50 (EC 2.3.2.27) (RING-type 	w
+MOTIF-CONTAINING	human	Q8IWR1	TRIM59	Q8IWR1	42	115	Tripartite motif-containing protein 59 (EC 2.3.2.27) (RING f	w
+MOTIF-CONTAINING	human	Q8IWZ4	TRIM48	Q8IWZ4	11	33	E3 ubiquitin-protein ligase TRIM48 (EC 2.3.2.27) (RING finge	w
+MOTIF-CONTAINING	human	Q8IWZ5	TRIM42	Q8IWZ5	11	153	Tripartite motif-containing protein 42	w
+MOTIF-CONTAINING	human	Q8IZY5	BLID	Q8IZY5	5	21	BH3-like motif-containing cell death inducer (Breast cancer 	w
+MOTIF-CONTAINING	human	Q8NBL1	POGLUT1	Q8NBL1	9	130	Protein O-glucosyltransferase 1 (EC 2.4.1.376) (CAP10-like 4	w
+MOTIF-CONTAINING	human	Q8ND83	SLAIN1	Q8ND83	37	152	SLAIN motif-containing protein 1	w
+MOTIF-CONTAINING	human	Q8NDZ2	SIMC1	Q8NDZ2	23	107	SUMO-interacting motif-containing protein 1 (Platform elemen	w
+MOTIF-CONTAINING	human	Q8NG06	TRIM58	Q8NG06	39	171	E3 ubiquitin-protein ligase TRIM58 (EC 2.3.2.27) (Protein BI	w
+MOTIF-CONTAINING	human	Q8NG50	RDM1	Q8NG50	6	61	RAD52 motif-containing protein 1 (RAD52 homolog B)	w
+MOTIF-CONTAINING	human	Q8TBF4	ZCRB1	Q8TBF4	33	233	Zinc finger CCHC-type and RNA-binding motif-containing prote	w
+MOTIF-CONTAINING	human	Q8TD35	LKAAEAR1	Q8TD35	0	3	Protein LKAAEAR1 (LKAAEAR motif-containing protein 1)	w
+MOTIF-CONTAINING	human	Q8WUY3	PRUNE2	Q8WUY3	12	261	Protein prune homolog 2 (BNIP2 motif-containing molecule at 	w
+MOTIF-CONTAINING	human	Q8WV44	TRIM41	Q8WV44	46	281	E3 ubiquitin-protein ligase TRIM41 (EC 2.3.2.27) (RING finge	w
+MOTIF-CONTAINING	human	Q93033	CD101	Q93033	29	115	Immunoglobulin superfamily member 2 (IgSF2) (Cell surface gl	w
+MOTIF-CONTAINING	human	Q969P0	IGSF8	Q969P0	16	305	Immunoglobulin superfamily member 8 (IgSF8) (CD81 partner 3)	w
+MOTIF-CONTAINING	human	Q969X1	TMBIM1	Q969X1	5	94	Protein lifeguard 3 (Protein RECS1 homolog) (Transmembrane B	w
+MOTIF-CONTAINING	human	Q96A61	TRIM52	Q96A61	21	185	E3 ubiquitin-protein ligase TRIM52 (EC 2.3.2.27) (RING finge	w
+MOTIF-CONTAINING	human	Q96A73	KIAA1191	Q96A73	22	68	Putative monooxygenase p33MONOX (EC 1.-.-.-) (Brain-derived 	w
+MOTIF-CONTAINING	human	Q96BQ3	TRIM43	Q96BQ3	33	90	Tripartite motif-containing protein 43	w
+MOTIF-CONTAINING	human	Q96DX7	TRIM44	Q96DX7	30	118	Tripartite motif-containing protein 44 (Protein DIPB)	w
+MOTIF-CONTAINING	human	Q96F44	TRIM11	Q96F44	67	294	E3 ubiquitin-protein ligase TRIM11 (EC 2.3.2.27) (Protein BI	w
+MOTIF-CONTAINING	human	Q96L11	SOFU1	Q96L11	10	124	Sperm-oocyte fusion protein 1 (LLLL and CFNLAS motif-contain	w
+MOTIF-CONTAINING	human	Q96LD4	TRIM47	Q96LD4	40	111	E3 ubiquitin-protein ligase TRIM47 (EC 2.3.2.27) (Gene overe	w
+MOTIF-CONTAINING	human	Q96RL1	UIMC1	Q96RL1	66	319	BRCA1-A complex subunit RAP80 (Receptor-associated protein 8	w
+MOTIF-CONTAINING	human	Q9BQD3	KXD1	Q9BQD3	48	277	KxDL motif-containing protein 1	w
+MOTIF-CONTAINING	human	Q9BRZ2	TRIM56	Q9BRZ2	45	246	E3 ubiquitin-protein ligase TRIM56 (EC 2.3.2.27) (RING finge	w
+MOTIF-CONTAINING	human	Q9BSJ1	TRIM51	Q9BSJ1	35	85	Tripartite motif-containing protein 51 (SPRY domain-containi	w
+MOTIF-CONTAINING	human	Q9BVG3	TRIM62	Q9BVG3	45	151	E3 ubiquitin-protein ligase TRIM62 (EC 2.3.2.27) (Tripartite	w
+MOTIF-CONTAINING	human	Q9BWQ8	FAIM2	Q9BWQ8	9	62	Protein lifeguard 2 (Fas apoptotic inhibitory molecule 2) (N	w
+MOTIF-CONTAINING	human	Q9BYV2	TRIM54	Q9BYV2	44	331	Tripartite motif-containing protein 54 (Muscle-specific RING	w
+MOTIF-CONTAINING	human	Q9BYV6	TRIM55	Q9BYV6	59	351	Tripartite motif-containing protein 55 (EC 2.3.2.27) (Muscle	w
+MOTIF-CONTAINING	human	Q9BZY9	TRIM31	Q9BZY9	75	531	E3 ubiquitin-protein ligase TRIM31 (EC 2.3.2.27) (Tripartite	w
+MOTIF-CONTAINING	human	Q9C026	TRIM9	Q9C026	38	229	E3 ubiquitin-protein ligase TRIM9 (EC 2.3.2.27) (RING finger	w
+MOTIF-CONTAINING	human	Q9C029	TRIM7	Q9C029	44	136	E3 ubiquitin-protein ligase TRIM7 (EC 2.3.2.27) (Glycogenin-	w
+MOTIF-CONTAINING	human	Q9C030	TRIM6	Q9C030	43	149	Tripartite motif-containing protein 6 (EC 2.3.2.27) (RING fi	w
+MOTIF-CONTAINING	human	Q9C035	TRIM5	Q9C035	55	270	Tripartite motif-containing protein 5 (EC 2.3.2.27) (RING fi	w
+MOTIF-CONTAINING	human	Q9C037	TRIM4	Q9C037	57	156	E3 ubiquitin-protein ligase TRIM4 (EC 2.3.2.27) (RING finger	w
+MOTIF-CONTAINING	human	Q9C040	TRIM2	Q9C040	50	208	Tripartite motif-containing protein 2 (EC 2.3.2.27) (E3 ubiq	w
+MOTIF-CONTAINING	human	Q9HC24	TMBIM4	Q9HC24	8	49	Protein lifeguard 4 (Golgi anti-apoptotic protein) (Protein 	w
+MOTIF-CONTAINING	human	Q9HD26	GOPC	Q9HD26	66	428	Golgi-associated PDZ and coiled-coil motif-containing protei	w
+MOTIF-CONTAINING	human	Q9HD34	LYRM4	Q9HD34	29	244	LYR motif-containing protein 4	w
+MOTIF-CONTAINING	human	Q9NQ86	TRIM36	Q9NQ86	23	221	E3 ubiquitin-protein ligase TRIM36 (EC 2.3.2.27) (RING finge	w
+MOTIF-CONTAINING	human	Q9NU23	LYRM2	Q9NU23	13	73	LYR motif-containing protein 2	w
+MOTIF-CONTAINING	human	Q9P270	SLAIN2	Q9P270	55	218	SLAIN motif-containing protein 2	w
+MOTIF-CONTAINING	human	Q9P2B2	PTGFRN	Q9P2B2	30	172	Prostaglandin F2 receptor negative regulator (CD9 partner 1)	w
+MOTIF-CONTAINING	human	Q9UDY6	TRIM10	Q9UDY6	37	171	E3 ubiquitin-protein ligase TRIM10 (EC 2.3.2.27) (B30-RING f	w
+MOTIF-CONTAINING	human	Q9Y6M9	NDUFB9	Q9Y6M9	28	318	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
+MOTIF-CONTAINING	worm	O18302	gopc-1	O18302	4	42	Golgi-associated PDZ and coiled-coil motif-containing protei	w
+MOTIF-CONTAINING	worm	Q11080	tmbi-4	Q11080	1	7	Transmembrane BAX inhibitor motif-containing protein 4	w
+MOTIF-CONTAINING	worm	Q17974	mma-1	Q17974	0	20	Leucine-rich PPR motif-containing protein, mitochondrial	w
+MOTIF-CONTAINING	worm	Q20241	tag-120	Q20241	0	1	Transmembrane BAX inhibitor motif-containing protein 4	w
+MOTIF-CONTAINING	worm	Q7YWR3	etfr-1	Q7YWR3	2	7	LYR motif-containing protein 5	w
+MOTIF-CONTAINING	worm	Q95YF1	sap-140	Q95YF1	7	28	U2 snRNP-associated SURP motif-containing protein	w
+MOTIF-CONTAINING	worm	Q9XWH5	CELE_Y57A10B.6	Q9XWH5	1	9	SEC-C motif-containing protein	w
+MOTIF-CONTAINING	yeast	P38162	MIX23	P38162	0	9	Mitochondrial intermembrane space cysteine motif-containing 	w
+MOTIF-CONTAINING	yeast	Q03667	MIX17	Q03667	1	10	Mitochondrial intermembrane space cysteine motif-containing 	w
+MOTIF-CONTAINING	yeast	Q04341	MIX14	Q04341	1	4	Mitochondrial intermembrane space cysteine motif-containing 	w
+MOTIF-CONTAINING	yeast	Q3E7A9	CMC4	Q3E7A9	3	62	Cx9C motif-containing protein 4, mitochondrial	w
+MOTIF-CONTAINING	zebrafish	A0A0G2LAJ1	LOC100006839	A0A0G2LAJ1	0	1	Tripartite motif-containing protein 16	w
+MOTIF-CONTAINING	zebrafish	A0A0R4IIJ3	trim35-23	A0A0R4IIJ3	0	1	Tripartite motif-containing 35-23	w
+MOTIF-CONTAINING	zebrafish	A0A0R4IPB1	trim35-21	A0A0R4IPB1	0	1	Tripartite motif-containing 35-21	w
+MOTIF-CONTAINING	zebrafish	A0A0R4IYT1	simc1	A0A0R4IYT1	2	11	SUMO-interacting motif-containing protein 1	w
+MOTIF-CONTAINING	zebrafish	A0A0R4IZJ0	cmc4	A0A0R4IZJ0	2	91	C-x(9)-C motif-containing 4 homolog (S. cerevisiae)	w
+MOTIF-CONTAINING	zebrafish	A0A2R8Q8D7	LOC103909737	A0A2R8Q8D7	7	142	LYR motif-containing protein 4	w
+MOTIF-CONTAINING	zebrafish	A0A8M1P9M9	trim16	A0A8M1P9M9	1	30	Tripartite motif-containing protein 16	w
+MOTIF-CONTAINING	zebrafish	A0A8M1RN39	LOC100333325	A0A8M1RN39	0	1	Tripartite motif-containing protein 16-like isoform X1	w
+MOTIF-CONTAINING	zebrafish	A0A8M6Z071	trim66	A0A8M6Z071	0	4	Tripartite motif-containing 66	w
+MOTIF-CONTAINING	zebrafish	A0A8N1TT16	lrpprc	A0A8N1TT16	3	31	Leucine-rich PPR motif-containing protein, mitochondrial	w
+MOTIF-CONTAINING	zebrafish	A3KNJ8	lyrm5b	A3KNJ8	0	3	LYR motif-containing protein 5B	w
+MOTIF-CONTAINING	zebrafish	B8A5M1	trim2b	B8A5M1	0	1	Tripartite motif-containing protein 2	w
+MOTIF-CONTAINING	zebrafish	B8JLQ0	lyrm4	B8JLQ0	14	142	LYR motif-containing protein 4	w
+MOTIF-CONTAINING	zebrafish	B8JLS7	trim35-34	B8JLS7	0	1	Tripartite motif-containing 35-34	w
+MOTIF-CONTAINING	zebrafish	E7F136	trim59	E7F136	0	3	Tripartite motif-containing 59	w
+MOTIF-CONTAINING	zebrafish	E7F8R6	trim46a	E7F8R6	0	1	Tripartite motif-containing 46a	w
+MOTIF-CONTAINING	zebrafish	E9QCG7	u2surp	E9QCG7	7	26	U2 snRNP-associated SURP motif-containing protein	w
+MOTIF-CONTAINING	zebrafish	F1QFW2	trim2a	F1QFW2	5	10	Tripartite motif-containing protein 2	w
+MOTIF-CONTAINING	zebrafish	F1QMZ7	trim35-3	F1QMZ7	0	1	Tripartite motif-containing 35-3	w
+MOTIF-CONTAINING	zebrafish	F1QSW1	trim35-40	F1QSW1	0	1	Tripartite motif-containing 35-40	w
+MOTIF-CONTAINING	zebrafish	F1R9P7	trim44	F1R9P7	2	7	Tripartite motif-containing 44	w
+MOTIF-CONTAINING	zebrafish	Q1ECU9	trim109	Q1ECU9	0	1	Tripartite motif-containing 109	w
+MOTIF-CONTAINING	zebrafish	Q1L8B2	trim46b	Q1L8B2	0	1	Tripartite motif-containing 46b	w
+MOTIF-CONTAINING	zebrafish	Q1L9F9	trim35-30	Q1L9F9	0	1	Tripartite motif-containing 35-30	w
+MOTIF-CONTAINING	zebrafish	Q1LXZ7	iqch	Q1LXZ7	2	9	IQ motif-containing protein H	w
+MOTIF-CONTAINING	zebrafish	Q1MT11	trim35-22	Q1MT11	0	1	Tripartite motif-containing 35-22	w
+MOTIF-CONTAINING	zebrafish	Q503I2	trim13	Q503I2	0	3	Tripartite motif-containing 13	w
+MOTIF-CONTAINING	zebrafish	Q503U1	lyrm5a	Q503U1	1	3	LYR motif-containing protein 5A	w
+MOTIF-CONTAINING	zebrafish	Q5PRA5	iqcb1	Q5PRA5	8	58	IQ calmodulin-binding motif-containing protein 1	w
+MOTIF-CONTAINING	zebrafish	Q5RHH1	trim54	Q5RHH1	0	2	Tripartite motif-containing protein 54	w
+MOTIF-CONTAINING	zebrafish	Q5RIM0	lyrm2	Q5RIM0	1	2	LYR motif-containing protein 2	w
+MOTIF-CONTAINING	zebrafish	Q5SP50	zcrb1	Q5SP50	12	116	Zinc finger CCHC-type and RNA-binding motif-containing prote	w
+MOTIF-CONTAINING	zebrafish	Q5U3G4	rdm1	Q5U3G4	0	6	RAD52 motif-containing protein 1	w
+MOTIF-CONTAINING	zebrafish	Q5U3I5	trim35-29	Q5U3I5	0	1	Tripartite motif-containing 35-29	w
+MOTIF-CONTAINING	zebrafish	Q6DBR9	kxd1	Q6DBR9	8	123	KxDL motif-containing protein 1	w
+MOTIF-CONTAINING	zebrafish	Q6P0T3	znf207a	Q6P0T3	2	5	BUB3-interacting and GLEBS motif-containing protein ZNF207a	w
+MOTIF-CONTAINING	zebrafish	Q6PHG0	gopc	Q6PHG0	5	30	Golgi-associated PDZ and coiled-coil motif-containing protei	w
+MOTIF-CONTAINING	zebrafish	Q7SXC6	zgc:66447	Q7SXC6	8	94	SLAIN motif-containing protein-like	w
+MOTIF-CONTAINING	zebrafish	X1WGS1	tmbim1a	X1WGS1	0	6	Transmembrane BAX inhibitor motif-containing 1a	w
+MOTIF-LIKE	human	Q9NQ87	HEYL	Q9NQ87	76	390	Hairy/enhancer-of-split related with YRPW motif-like protein	w
+MOTIF-LIKE	zebrafish	Q8AXV5	heyl	Q8AXV5	4	8	Hairy/enhancer-of-split related with YRPW motif-like protein	w
+MOTIFS	fly	FBgn0036463	Reck	Q9VUJ2	1	7	FI21605p1 (Reversion-inducing-cysteine-rich protein with kaz	w
+MOTIFS	human	O15072	ADAMTS3	O15072	6	98	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	O75173	ADAMTS4	O75173	48	229	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	O95450	ADAMTS2	O95450	16	107	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	O95980	RECK	O95980	15	121	Reversion-inducing cysteine-rich protein with Kazal motifs (	w
+MOTIFS	human	P58397	ADAMTS12	P58397	13	71	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	P59510	ADAMTS20	P59510	5	25	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	P78324	SIRPA	P78324	52	347	Tyrosine-protein phosphatase non-receptor type substrate 1 (	w
+MOTIFS	human	Q76LX8	ADAMTS13	Q76LX8	19	104	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q7Z6M1	RABEPK	Q7Z6M1	18	142	Rab9 effector protein with kelch motifs (40 kDa Rab9 effecto	w
+MOTIFS	human	Q8TE56	ADAMTS17	Q8TE56	9	58	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q8TE57	ADAMTS16	Q8TE57	6	37	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q8TE58	ADAMTS15	Q8TE58	11	64	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q8TE59	ADAMTS19	Q8TE59	7	40	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q8TE60	ADAMTS18	Q8TE60	9	68	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q8WXS8	ADAMTS14	Q8WXS8	10	56	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q9H324	ADAMTS10	Q9H324	9	61	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q9P2N4	ADAMTS9	Q9P2N4	14	69	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q9UHI8	ADAMTS1	Q9UHI8	54	251	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q9UKP4	ADAMTS7	Q9UKP4	12	108	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q9UKP5	ADAMTS6	Q9UKP5	4	49	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q9UNA0	ADAMTS5	Q9UNA0	24	115	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	human	Q9UP79	ADAMTS8	Q9UP79	4	50	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	zebrafish	A0A0R4IKU3	reck	A0A0R4IKU3	0	4	Reversion-inducing cysteine-rich protein with Kazal motifs	w
+MOTIFS	zebrafish	A0A0R4ISF7	adamts2a	A0A0R4ISF7	0	1	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	zebrafish	A0A286Y999	adamts13	A0A286Y999	0	3	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	zebrafish	A0A8M2BKC8	zmp:0000001301	A0A8M2BKC8	1	38	Rab9 effector protein with kelch motifs	w
+MOTIFS	zebrafish	A2BIA3	adamts15a	A2BIA3	0	2	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS	zebrafish	Q6GQN7	rabepk	Q6GQN7	2	44	Rab9 effector protein with kelch motifs	w
+MOTIFS	zebrafish	X1WDJ8	adamts15b	X1WDJ8	0	2	A disintegrin and metalloproteinase with thrombospondin moti	w
+MOTIFS-CONTAINING	human	Q8IXQ4	GPALPP1	Q8IXQ4	9	70	GPALPP motifs-containing protein 1 (Lipopolysaccharide-speci	w
+MOTIFS-CONTAINING	human	Q92917	GPKOW	Q92917	28	239	G-patch domain and KOW motifs-containing protein (G-patch do	w
+MOTIFS-CONTAINING	worm	Q21924	gkow-1	Q21924	3	8	G-patch domain and KOW motifs-containing protein homolog 1	w
+MOTIFS-CONTAINING	zebrafish	Q90X38	gpkow	Q90X38	4	45	G-patch domain and KOW motifs-containing protein	w
+MOTIFS-LIKE	human	Q6ZMP0	THSD4	Q6ZMP0	18	76	Thrombospondin type-1 domain-containing protein 4 (A disinte	w
+MOTIL	human	Q9Y316	MEMO1	Q9Y316	13	131	Protein MEMO1 (C21orf19-like protein) (Hepatitis C virus NS5	w
+MOTILE	human	O75425	MOSPD3	O75425	19	67	Motile sperm domain-containing protein 3	w
+MOTILE	human	Q8NHP6	MOSPD2	Q8NHP6	25	208	Motile sperm domain-containing protein 2	w
+MOTILE	human	Q9UJG1	MOSPD1	Q9UJG1	13	42	Motile sperm domain-containing protein 1	w
+MOTILIN	human	O43193	MLNR	O43193	21	113	Motilin receptor (G protein-coupled receptor 38)	w
+MOTILIN	human	P12872	MLN	P12872	15	134	Promotilin [Cleaved into: Motilin; Motilin-associated peptid	w
+MOTILIN-ASSOCIATED	human	P12872	MLN	P12872	15	134	Promotilin [Cleaved into: Motilin; Motilin-associated peptid	w
+MOTILIN-LIKE	zebrafish	E9QFU1	mlnl	E9QFU1	0	1	Motilin-like	w
+MOTILIN-RELATED	human	Q9UBU3	GHRL	Q9UBU3	61	431	Appetite-regulating hormone (Growth hormone secretagogue) (G	w
+MOTILITY	human	O75330	HMMR	O75330	42	212	Hyaluronan mediated motility receptor (Intracellular hyaluro	w
+MOTILITY	human	P06744	GPI	P06744	0	288	Glucose-6-phosphate isomerase (GPI) (EC 5.3.1.9) (Autocrine 	w
+MOTILITY	human	Q8N6F7	GCSAM	Q8N6F7	14	107	Germinal center-associated signaling and motility protein (G	w
+MOTILITY	human	Q92556	ELMO1	Q92556	22	307	Engulfment and cell motility protein 1 (Protein ced-12 homol	w
+MOTILITY	human	Q96BJ8	ELMO3	Q96BJ8	15	144	Engulfment and cell motility protein 3	w
+MOTILITY	human	Q96JJ3	ELMO2	Q96JJ3	16	187	Engulfment and cell motility protein 2 (Protein ced-12 homol	w
+MOTILITY	human	Q9UKV5	AMFR	Q9UKV5	32	254	E3 ubiquitin-protein ligase AMFR (EC 2.3.2.36) (Autocrine mo	w
+MOTILITY	zebrafish	A0A1D5NS78	amfrb	A0A1D5NS78	7	39	Autocrine motility factor receptor b	w
+MOTILITY	zebrafish	A0A8M1RE25	si:dkey-56f14.7	A0A8M1RE25	1	26	Engulfment and cell motility protein 1 isoform X1	w
+MOTILITY	zebrafish	E7EYJ3	hmmr	E7EYJ3	1	9	Hyaluronan mediated motility receptor	w
+MOTILITY	zebrafish	F1QSV8	elmo3	F1QSV8	10	25	Engulfment and cell motility 3	w
+MOTILITY	zebrafish	Q6NV39	elmo1	Q6NV39	7	38	Engulfment and Cell motility 1 (Ced-12 homolog, C. elegans)	w
+MOTILITY-LIKE	human	Q5JQS6	GCSAML	Q5JQS6	10	62	Germinal center-associated signaling and motility-like prote	w
+MOTILITY-RELATED	human	P21926	CD9	P21926	35	638	CD9 antigen (5H9 antigen) (Cell growth-inhibiting gene 2 pro	w
+MOTI_HUMAN	human	P12872	MLN	P12872	15	134		
+MOTO	zebrafish	E7FFE7	moto	E7FFE7	0	4	Meiosis-specific coiled-coil domain-containing protein MEIOC	
+MOTOPSIN	human	P56730	PRSS12	P56730	4	53	Neurotrypsin (EC 3.4.21.-) (Leydin) (Motopsin) (Serine prote	w
+MOTOR	fly	FBgn0036450	Tdrd3	Q9VUH8	15	84	Survival of motor neuron-related-splicing factor 30 (Surviva	w
+MOTOR	fly	FBgn0036641	Smn	Q9VV74	37	229	Survival motor neuron protein	w
+MOTOR	fly	FBgn0039977	Spf30	Q95RI7	9	56	Survival of motor neuron-related-splicing factor 30 (Surviva	w
+MOTOR	fly	FBgn0261444	Motor	Q9W5A5	0	3	Movement modulator	
+MOTOR	human	O14893	GEMIN2	O14893	22	244	Gem-associated protein 2 (Gemin-2) (Component of gems 2) (Su	w
+MOTOR	human	O15066	KIF3B	O15066	20	146	Kinesin-like protein KIF3B (HH0048) (Microtubule plus end-di	w
+MOTOR	human	O75940	SMNDC1	O75940	29	198	Survival of motor neuron-related-splicing factor 30 (30 kDa 	w
+MOTOR	human	P50219	MNX1	P50219	119	402	Motor neuron and pancreas homeobox protein 1 (Homeobox prote	w
+MOTOR	human	P52732	KIF11	P52732	42	383	Kinesin-like protein KIF11 (Kinesin-like protein 1) (Kinesin	w
+MOTOR	human	Q12756	KIF1A	Q12756	27	450	Kinesin-like protein KIF1A (EC 5.6.1.3) (Axonal transporter 	w
+MOTOR	human	Q16637	SMN1	Q16637	70	409	Survival motor neuron protein (Component of gems 1) (Gemin-1	w
+MOTOR	human	Q6ZWJ8	KCP	Q6ZWJ8	0	4	Kielin/chordin-like protein (Cysteine-rich BMP regulator 2) 	w
+MOTOR	human	Q96Q89	KIF20B	Q96Q89	24	151	Kinesin-like protein KIF20B (Cancer/testis antigen 90) (CT90	w
+MOTOR	human	Q9NZV1	CRIM1	Q9NZV1	9	108	Cysteine-rich motor neuron 1 protein (CRIM-1) (Cysteine-rich	w
+MOTOR	human	Q9P2E2	KIF17	Q9P2E2	14	87	Kinesin-like protein KIF17 (KIF3-related motor protein)	w
+MOTOR	human	Q9Y496	KIF3A	Q9Y496	24	280	Kinesin-like protein KIF3A (EC 3.6.4.-) (Microtubule plus en	w
+MOTOR	worm	E9P841	CELE_ZC262.7	E9P841	3	15	Kinesin motor domain-containing protein	w
+MOTOR	worm	G5EBX0	klp-18	G5EBX0	2	50	Kinesin motor domain-containing protein	w
+MOTOR	worm	G5EC16	smn-1	G5EC16	1	58	Survival motor neuron protein	w
+MOTOR	worm	G5EF34	crm-1	G5EF34	1	16	Cysteine-rich motor neuron 1 protein-like	w
+MOTOR	worm	G5EGQ3	max-2	G5EGQ3	20	78	Serine/threonine-protein kinase max-2 (EC 2.7.11.1) (Motor a	w
+MOTOR	worm	O62244	myo-6	O62244	10	32	Myosin motor domain-containing protein	w
+MOTOR	worm	P91400	klp-15	P91400	5	59	Kinesin motor domain-containing protein	w
+MOTOR	worm	Q17659	C05D12.5	Q17659	0	1	Kinesin motor domain-containing protein	w
+MOTOR	worm	Q20357	hum-10	Q20357	0	64	Myosin motor domain-containing protein	w
+MOTOR	worm	Q23124	klp-17	Q23124	2	16	Kinesin motor domain-containing protein	w
+MOTOR	worm	Q965Q9	CELE_Y50D4C.3	Q965Q9	2	18	Survival of motor neuron-related-splicing factor 30	w
+MOTOR	worm	Q9TZI9	spe-15	Q9TZI9	1	8	Myosin motor domain-containing protein	w
+MOTOR	worm	Q9XWR0	nmy-3	Q9XWR0	11	25	Myosin motor domain-containing protein	w
+MOTOR	worm	U4PBY2	hum-8	U4PBY2	1	12	Myosin motor domain-containing protein	w
+MOTOR	yeast	P0CS91	SSC1	P0CS91	19	183	Import motor subunit, mitochondrial	w
+MOTOR	yeast	P36147	PAM17	P36147	3	37	Presequence translocated-associated motor subunit PAM17, mit	w
+MOTOR	zebrafish	F1RCJ6	mnx2b	F1RCJ6	2	5	Motor neuron and pancreas homeobox 2b	w
+MOTOR	zebrafish	Q7T3Q2	crim1	Q7T3Q2	5	95	Cysteine-rich motor neuron 1 protein	w
+MOTOR	zebrafish	Q7ZV80	smndc1	Q7ZV80	1	24	Survival of motor neuron-related-splicing factor 30	w
+MOTOR	zebrafish	Q9W6S8	smn1	Q9W6S8	5	42	Survival motor neuron protein 1	w
+MOTS-C	human	A0A0C5B5G6	MT-RNR1	A0A0C5B5G6	109	324	Mitochondrial-derived peptide MOTS-c (Mitochondrial open rea	w
+MOTSC_HUMAN	human	A0A0C5B5G6	MT-RNR1	A0A0C5B5G6	109	324		

@@ -1,35 +1,679 @@
-AMI1	arabidopsis-thaliana	Q9FR37	AMI1	Q9FR37	1	6	Amidase 1
-AMI1	oryza-sativa-subsp-japonica	Q7XTK3	AMI1	Q7XTK3	0	3	Amidase 1
-AMIA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Y7	amiA	Q0P8Y7	0	5	N-acetylmuramoyl-L-alanine amidase
-AMIA	escherichia-coli-83333	P36548	amiA	P36548	1	3	N-acetylmuramoyl-L-alanine amidase AmiA
-AMIA	pseudomonas-aeruginosa	Q9HT36	amiA	Q9HT36	2	18	N-acetylmuramoyl-L-alanine amidase AmiC
-AMIA	salmonella-typhimurium	P33772	amiA	P33772	0	7	N-acetylmuramoyl-L-alanine amidase AmiA
-AMIA	shigella-dysenteriae-serotype-1	Q32DB8	amiA	Q32DB8	0	8	N-acetylmuramoyl-L-alanine amidase AmiA
-AMIA	streptococcus-pneumoniae	Q8DNI1	amiA	Q8DNI1	2	33	ABC transporter substrate-binding protein-oligopeptide transport
-AMIA2	mycobacterium-tuberculosis	P9WQ99	amiA2	P9WQ99	0	8	Putative amidase AmiA2
-AMIB	escherichia-coli-83333	P26365	amiB	P26365	0	3	N-acetylmuramoyl-L-alanine amidase AmiB
-AMIB	haemophilus-influenzae	P44493	amiB	P44493	3	20	Probable N-acetylmuramoyl-L-alanine amidase AmiB
-AMIB	pseudomonas-aeruginosa	Q51416	amiB	Q51416	0	17	ATP-dependent protease ATP-binding subunit-like protein AmiB
-AMIB	pseudomonas-aeruginosa	Q9HUL7	amiB	Q9HUL7	3	58	N-acetylmuramoyl-L-alanine amidase AmiC
-AMIB	salmonella-typhimurium	P26366	amiB	P26366	2	8	N-acetylmuramoyl-L-alanine amidase AmiB
-AMIB	shigella-dysenteriae-serotype-1	Q328E8	amiB	Q328E8	2	8	N-acetylmuramoyl-L-alanine amidase AmiB
-AMIB2	mycobacterium-tuberculosis	P9WQ97	amiB2	P9WQ97	1	8	Putative amidase AmiB2
-AMIC	escherichia-coli-83333	P63883	amiC	P63883	2	12	N-acetylmuramoyl-L-alanine amidase AmiC
-AMIC	mycobacterium-leprae	O33040	amiC	O33040	1	14	Putative amidase AmiC
-AMIC	mycobacterium-tuberculosis	P9WQ95	amiC	P9WQ95	0	8	Putative amidase AmiC
-AMIC	neisseria-gonorrhoeae	Q5F6P7	amiC	Q5F6P7	1	7	N-acetylmuramoyl-L-alanine amidase AmiC
-AMIC	pseudomonas-aeruginosa	P27017	amiC	P27017	0	14	Aliphatic amidase expression-regulating protein
-AMIC	salmonella-typhimurium	Q8ZMB9	amiC	Q8ZMB9	0	11	N-acetylmuramoyl-L-alanine amidase AmiC
-AMIC	streptococcus-pneumoniae	P0A4M8	amiC	P0A4M8	5	6	Oligopeptide transport system permease protein AmiC
-AMID	mycobacterium-tuberculosis	P9WQ93	amiD	P9WQ93	0	8	Putative amidase AmiD
-AMID	streptococcus-pneumoniae	P0A4N0	amiD	P0A4N0	5	6	Oligopeptide transport system permease protein AmiD
-AMIE	helicobacter-pylori	O25067	amiE	O25067	0	6	Aliphatic amidase
-AMIE	streptococcus-pneumoniae	P0A2U9	amiE	P0A2U9	6	11	Oligopeptide transport ATP-binding protein AmiE
-AMIF	helicobacter-pylori	O25836	amiF	O25836	0	3	Formamidase
-AMIF	streptococcus-pneumoniae	Q8DNI2	amiF	Q8DNI2	7	15	ABC transporter ATP-binding protein-oligopeptide transport
-AMIGO1	mus-musculus	Q80ZD8	Amigo1	Q80ZD8	2	9	Amphoterin-induced protein 1
-AMIGO1	rattus-norvegicus	Q80ZD7	Amigo1	Q80ZD7	1	4	Amphoterin-induced protein 1
-AMIGO2	mus-musculus	Q80ZD9	Amigo2	Q80ZD9	0	4	Amphoterin-induced protein 2
-AMIGO2	rattus-norvegicus	Q7TNJ4	Amigo2	Q7TNJ4	1	8	Amphoterin-induced protein 2
-AMIGO3	mus-musculus	Q8C2S7	Amigo3	Q8C2S7	1	5	Amphoterin-induced protein 3
-AMIR	pseudomonas-aeruginosa	P10932	amiR	P10932	0	1	Aliphatic amidase regulator
+AMI1	arabidopsis-thaliana	Q9FR37	AMI1	Q9FR37	1	6	Amidase 1	
+AMI1	oryza-sativa-subsp-japonica	Q7XTK3	AMI1	Q7XTK3	0	3	Amidase 1	
+AMIA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Y7	amiA	Q0P8Y7	0	5	N-acetylmuramoyl-L-alanine amidase	
+AMIA	escherichia-coli-83333	P36548	amiA	P36548	1	3	N-acetylmuramoyl-L-alanine amidase AmiA	
+AMIA	pseudomonas-aeruginosa	Q9HT36	amiA	Q9HT36	2	18	N-acetylmuramoyl-L-alanine amidase AmiC	
+AMIA	salmonella-typhimurium	P33772	amiA	P33772	0	7	N-acetylmuramoyl-L-alanine amidase AmiA	
+AMIA	shigella-dysenteriae-serotype-1	Q32DB8	amiA	Q32DB8	0	8	N-acetylmuramoyl-L-alanine amidase AmiA	
+AMIA	streptococcus-pneumoniae	Q8DNI1	amiA	Q8DNI1	2	33	ABC transporter substrate-binding protein-oligopeptide trans	
+AMIA2	mycobacterium-tuberculosis	P9WQ99	amiA2	P9WQ99	0	8	Putative amidase AmiA2	
+AMIB	escherichia-coli-83333	P26365	amiB	P26365	0	3	N-acetylmuramoyl-L-alanine amidase AmiB	
+AMIB	haemophilus-influenzae	P44493	amiB	P44493	3	20	Probable N-acetylmuramoyl-L-alanine amidase AmiB	
+AMIB	pseudomonas-aeruginosa	Q51416	amiB	Q51416	0	17	ATP-dependent protease ATP-binding subunit-like protein AmiB	
+AMIB	pseudomonas-aeruginosa	Q9HUL7	amiB	Q9HUL7	3	58	N-acetylmuramoyl-L-alanine amidase AmiC	
+AMIB	salmonella-typhimurium	P26366	amiB	P26366	2	8	N-acetylmuramoyl-L-alanine amidase AmiB	
+AMIB	shigella-dysenteriae-serotype-1	Q328E8	amiB	Q328E8	2	8	N-acetylmuramoyl-L-alanine amidase AmiB	
+AMIB2	mycobacterium-tuberculosis	P9WQ97	amiB2	P9WQ97	1	8	Putative amidase AmiB2	
+AMIC	escherichia-coli-83333	P63883	amiC	P63883	2	12	N-acetylmuramoyl-L-alanine amidase AmiC	
+AMIC	mycobacterium-leprae	O33040	amiC	O33040	1	14	Putative amidase AmiC	
+AMIC	mycobacterium-tuberculosis	P9WQ95	amiC	P9WQ95	0	8	Putative amidase AmiC	
+AMIC	neisseria-gonorrhoeae	Q5F6P7	amiC	Q5F6P7	1	7	N-acetylmuramoyl-L-alanine amidase AmiC	
+AMIC	pseudomonas-aeruginosa	P27017	amiC	P27017	0	14	Aliphatic amidase expression-regulating protein	
+AMIC	salmonella-typhimurium	Q8ZMB9	amiC	Q8ZMB9	0	11	N-acetylmuramoyl-L-alanine amidase AmiC	
+AMIC	streptococcus-pneumoniae	P0A4M8	amiC	P0A4M8	5	6	Oligopeptide transport system permease protein AmiC	
+AMICA1	human	Q86YT9	JAML	Q86YT9	50	185		
+AMID	human	Q9BRQ8	AIFM2	Q9BRQ8	6	122		
+AMID	mycobacterium-tuberculosis	P9WQ93	amiD	P9WQ93	0	8	Putative amidase AmiD	
+AMID	streptococcus-pneumoniae	P0A4N0	amiD	P0A4N0	5	6	Oligopeptide transport system permease protein AmiD	
+AMIDASE	fly	FBgn0033050	Pngl	Q7KRR5	3	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
+AMIDASE	fly	FBgn0034046	tun	Q7K2Y9	1	5	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
+AMIDASE	fly	FBgn0037548	CG7900	Q9VHV9	0	5	Amidase domain-containing protein	w
+AMIDASE	human	Q02083	NAAA	Q02083	29	325	N-acylethanolamine-hydrolyzing acid amidase (EC 3.5.1.60) (A	w
+AMIDASE	human	Q6GMR7	FAAH2	Q6GMR7	1	30	Fatty-acid amide hydrolase 2 (EC 3.5.1.99) (Amidase domain-c	w
+AMIDASE	human	Q86X76	NIT1	Q86X76	0	113	Deaminated glutathione amidase (dGSH amidase) (EC 3.5.1.128)	w
+AMIDASE	human	Q96HA8	NTAQ1	Q96HA8	126	464	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
+AMIDASE	human	Q96IV0	NGLY1	Q96IV0	17	129	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
+AMIDASE	human	Q96PD5	PGLYRP2	Q96PD5	10	130	N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28) (Peptidogly	w
+AMIDASE	worm	O45089	faah-3	O45089	1	2	Amidase domain-containing protein	w
+AMIDASE	worm	Q9NAB7	CELE_Y53F4B.18	Q9NAB7	0	3	Amidase domain-containing protein	w
+AMIDASE	worm	Q9TW67	png-1	Q9TW67	7	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
+AMIDASE	worm	Q9U243	faah-5	Q9U243	0	6	Amidase domain-containing protein	w
+AMIDASE	worm	Q9U2I8	faah-6	Q9U2I8	2	4	Amidase domain-containing protein	w
+AMIDASE	yeast	P22580	AMD2	P22580	0	4	Probable amidase	w
+AMIDASE	yeast	P40354	NTA1	P40354	0	6	Protein N-terminal amidase	w
+AMIDASE	yeast	P47016	NIT2	P47016	0	1	Deaminated glutathione amidase	w
+AMIDASE	yeast	Q02890	PNG1	Q02890	2	18	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
+AMIDASE	zebrafish	A0AB32TTV2	nit1	A0AB32TTV2	0	4	Deaminated glutathione amidase	w
+AMIDASE	zebrafish	Q1W1Y3	pglyrp2	Q1W1Y3	0	3	N-acetylmuramoyl-L-alanine amidase	w
+AMIDASE	zebrafish	Q503I8	ngly1	Q503I8	3	27	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
+AMIDE	human	O00519	FAAH	O00519	1	52	Fatty-acid amide hydrolase 1 (EC 3.5.1.99) (Anandamide amido	w
+AMIDE	human	Q6GMR7	FAAH2	Q6GMR7	1	30	Fatty-acid amide hydrolase 2 (EC 3.5.1.99) (Amidase domain-c	w
+AMIDE	worm	Q17447	faah-2	Q17447	0	2	fatty acid amide hydrolase	w
+AMIDE	worm	Q17449	faah-1	Q17449	2	11	Fatty acid amide hydrolase 1	w
+AMIDE	yeast	Q07551	YDL124W	Q07551	0	10	NADPH-dependent alpha-keto amide reductase	w
+AMIDE	zebrafish	Q05AM4	faah2b	Q05AM4	0	9	Fatty-acid amide hydrolase 2-B	w
+AMIDE	zebrafish	Q6DH69	faah2a	Q6DH69	1	9	Fatty-acid amide hydrolase 2-A	w
+AMIDINOHYDROLASE	human	Q8N6M5	ALLC	Q8N6M5	4	34	Probable inactive allantoicase (Allantoate amidinohydrolase)	w
+AMIDINOTRANSFERASE	human	P50440	GATM	P50440	17	225	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	w
+AMIDINOTRANSFERASE	worm	Q20180	CELE_F38H4.5	Q20180	0	2	Amidinotransferase	w
+AMIDINOTRANSFERASE	worm	Q23042	CELE_T22B7.3	Q23042	0	2	Amidinotransferase	w
+AMIDINOTRANSFERASE	zebrafish	Q6PH19	gatm	Q6PH19	0	4	Glycine amidinotransferase, mitochondrial	w
+AMIDO	human	O94808	GFPT2	O94808	7	161	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+AMIDO	human	Q02083	NAAA	Q02083	29	325	N-acylethanolamine-hydrolyzing acid amidase (EC 3.5.1.60) (A	w
+AMIDO	human	Q06210	GFPT1	Q06210	9	259	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+AMIDOHYDROLASE	fly	FBgn0023023	Crmp	Q8IPQ2	2	54	Collapsin response mediator protein (EC 3.5.2.2, EC 3.5.2.-)	w
+AMIDOHYDROLASE	fly	FBgn0034046	tun	Q7K2Y9	1	5	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
+AMIDOHYDROLASE	fly	FBgn0034371	Ntan1	Q7KIS4	15	84	N-terminal amidohydrolase 1, isoform C (N-terminal amidohydr	w
+AMIDOHYDROLASE	fly	FBgn0037818	CG6465	Q9I7K3	5	24	N-acyl-aliphatic-L-amino acid amidohydrolase (EC 3.5.1.14) (	w
+AMIDOHYDROLASE	fly	FBgn0039774	CDase	Q9VA70	17	299	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.23) (Neutral	w
+AMIDOHYDROLASE	human	O00519	FAAH	O00519	1	52	Fatty-acid amide hydrolase 1 (EC 3.5.1.99) (Anandamide amido	w
+AMIDOHYDROLASE	human	O94925	GLS	O94925	16	251	Glutaminase kidney isoform, mitochondrial (GLS) (EC 3.5.1.2)	w
+AMIDOHYDROLASE	human	P0C7U1	ASAH2B	P0C7U1	2	27	Putative inactive neutral ceramidase B (ASAH2-like protein) 	w
+AMIDOHYDROLASE	human	Q03154	ACY1	Q03154	5	103	Aminoacylase-1 (ACY-1) (EC 3.5.1.14) (N-acyl-L-amino-acid am	w
+AMIDOHYDROLASE	human	Q14117	DPYS	Q14117	6	59	Dihydropyrimidinase (DHP) (DHPase) (EC 3.5.2.2) (Dihydropyri	w
+AMIDOHYDROLASE	human	Q5QJU3	ACER2	Q5QJU3	0	32	Alkaline ceramidase 2 (AlkCDase 2) (Alkaline CDase 2) (haCER	w
+AMIDOHYDROLASE	human	Q6GMR7	FAAH2	Q6GMR7	1	30	Fatty-acid amide hydrolase 2 (EC 3.5.1.99) (Amidase domain-c	w
+AMIDOHYDROLASE	human	Q86U10	ASPG	Q86U10	3	59	60 kDa lysophospholipase (LysoLP) (EC 3.1.1.5) (Lysophosphol	w
+AMIDOHYDROLASE	human	Q8TDN7	ACER1	Q8TDN7	3	28	Alkaline ceramidase 1 (AlkCDase 1) (Alkaline CDase 1) (EC 3.	w
+AMIDOHYDROLASE	human	Q96AB6	NTAN1	Q96AB6	8	72	Protein N-terminal asparagine amidohydrolase (EC 3.5.1.121) 	w
+AMIDOHYDROLASE	human	Q96HA8	NTAQ1	Q96HA8	126	464	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
+AMIDOHYDROLASE	human	Q96HD9	ACY3	Q96HD9	12	115	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
+AMIDOHYDROLASE	human	Q96NU7	AMDHD1	Q96NU7	1	54	Probable imidazolonepropionase (EC 3.5.2.7) (Amidohydrolase 	w
+AMIDOHYDROLASE	human	Q9NR71	ASAH2	Q9NR71	0	27	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.-) (EC 3.5.1	w
+AMIDOHYDROLASE	human	Q9UBR1	UPB1	Q9UBR1	0	37	Beta-ureidopropionase (EC 3.5.1.6) (BUP-1) (Beta-alanine syn	w
+AMIDOHYDROLASE	human	Q9UI32	GLS2	Q9UI32	10	143	Glutaminase liver isoform, mitochondrial (GLS) (EC 3.5.1.2) 	w
+AMIDOHYDROLASE	human	Q9Y303	AMDHD2	Q9Y303	5	62	N-acetylglucosamine-6-phosphate deacetylase (GlcNAc 6-P deac	w
+AMIDOHYDROLASE	worm	Q17898	C10C5.3	Q17898	0	2	N-acyl-aliphatic-L-amino acid amidohydrolase	w
+AMIDOHYDROLASE	worm	Q17899	C10C5.4	Q17899	0	4	N-acyl-aliphatic-L-amino acid amidohydrolase	w
+AMIDOHYDROLASE	worm	Q17900	C10C5.5	Q17900	0	2	N-acyl-aliphatic-L-amino acid amidohydrolase	w
+AMIDOHYDROLASE	worm	Q5WRS4	C06A6.4	Q5WRS4	0	4	N-acyl-aliphatic-L-amino acid amidohydrolase	w
+AMIDOHYDROLASE	zebrafish	E7EXK9	LOC100001620	E7EXK9	1	8	N-acyl-aliphatic-L-amino acid amidohydrolase	w
+AMIDOHYDROLASE	zebrafish	F1QZ04	acy1	F1QZ04	1	8	N-acyl-aliphatic-L-amino acid amidohydrolase	w
+AMIDOHYDROLASE	zebrafish	Q1LWX3	ntaq1	Q1LWX3	0	4	Protein N-terminal glutamine amidohydrolase	w
+AMIDOHYDROLASE	zebrafish	Q6DHI0	acy3.1	Q6DHI0	0	25	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
+AMIDOHYDROLASE	zebrafish	Q6DHQ3	acy3.2	Q6DHQ3	0	25	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
+AMIDOHYDROLASE-RELATED	worm	Q20166	cpin-1	Q20166	0	4	Amidohydrolase-related domain-containing protein	w
+AMIDOPHOSPHORIBOSYLTRANSFERASE	fly	FBgn0004901	Prat	Q27601	3	120	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOPHOSPHORIBOSYLTRANSFERASE	fly	FBgn0041194	Prat2	Q967S0	3	123	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOPHOSPHORIBOSYLTRANSFERASE	human	Q06203	PPAT	Q06203	2	92	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOPHOSPHORIBOSYLTRANSFERASE	worm	Q22134	ppat-1	Q22134	0	12	Amidophosphoribosyltransferase	w
+AMIDOPHOSPHORIBOSYLTRANSFERASE	yeast	P04046	ADE4	P04046	0	20	Amidophosphoribosyltransferase	w
+AMIDOTRANSFERASE	fly	FBgn0000052	Pfas	P35421	1	72	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
+AMIDOTRANSFERASE	fly	FBgn0000239	bur	Q9VIE7	4	113	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
+AMIDOTRANSFERASE	fly	FBgn0003189	r	P05990	1	98	Multifunctional protein r (Protein rudimentary) [Includes: G	w
+AMIDOTRANSFERASE	fly	FBgn0004901	Prat	Q27601	3	120	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOTRANSFERASE	fly	FBgn0041194	Prat2	Q967S0	3	123	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOTRANSFERASE	fly	FBgn0064115	GatC	Q86BL4	2	3	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
+AMIDOTRANSFERASE	fly	FBgn0260779	GatA	Q9VE09	2	18	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
+AMIDOTRANSFERASE	fly	FBgn0290399	GatB	Q9VCD0	2	26	Glutamyl-tRNA amidotransferase, subunit B	w
+AMIDOTRANSFERASE	human	H0YIV9	?	H0YIV9	2	4	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
+AMIDOTRANSFERASE	human	O15067	PFAS	O15067	5	165	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
+AMIDOTRANSFERASE	human	O43716	GATC	O43716	6	143	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
+AMIDOTRANSFERASE	human	O75879	GATB	O75879	13	173	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	w
+AMIDOTRANSFERASE	human	O94808	GFPT2	O94808	7	161	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+AMIDOTRANSFERASE	human	P49915	GMPS	P49915	5	232	GMP synthase [glutamine-hydrolyzing] (EC 6.3.5.2) (GMP synth	w
+AMIDOTRANSFERASE	human	Q06203	PPAT	Q06203	2	92	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOTRANSFERASE	human	Q06210	GFPT1	Q06210	9	259	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+AMIDOTRANSFERASE	human	Q9H0R6	QRSL1	Q9H0R6	16	146	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
+AMIDOTRANSFERASE	human	Q9Y234	LIPT1	Q9Y234	9	49	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
+AMIDOTRANSFERASE	worm	Q9BI40	Y66D12A.7	Q9BI40	2	3	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
+AMIDOTRANSFERASE	worm	Q9N5X5	C39B5.6	Q9N5X5	3	14	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	w
+AMIDOTRANSFERASE	worm	U4PC78	CELE_Y41D4A.6	U4PC78	2	7	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
+AMIDOTRANSFERASE	yeast	P33893	PET112	P33893	5	25	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	w
+AMIDOTRANSFERASE	yeast	P53260	GTF1	P53260	2	7	Glutamyl-tRNA(Gln) amidotransferase subunit F, mitochondrial	w
+AMIDOTRANSFERASE	yeast	P53871	DUG3	P53871	1	4	Probable glutamine amidotransferase DUG3	w
+AMIDOTRANSFERASE	yeast	Q03557	HER2	Q03557	2	9	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
+AMIDOTRANSFERASE	yeast	Q12288	YLR126C	Q12288	0	3	Putative glutamine amidotransferase YLR126C	w
+AMIDOTRANSFERASE	zebrafish	A2BHB7	gatc	A2BHB7	2	4	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
+AMIDOTRANSFERASE	zebrafish	F1QAJ4	qrsl1	F1QAJ4	3	32	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
+AMIDOTRANSFERASE	zebrafish	Q7T010	gatb	Q7T010	2	14	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	w
+AMIDOTRANSFERASE-LIKE	human	P0DPI2	GATD3	P0DPI2	3	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+AMIDOTRANSFERASE-LIKE	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+AMIDOTRANSFERASE-LIKE	zebrafish	F1QCN0	gatd3	F1QCN0	0	1	Glutamine amidotransferase-like class 1 domain-containing pr	w
+AMIDOTRANSFERASE-LIKE	zebrafish	Q3B7H1	gatd1	Q3B7H1	1	21	Glutamine amidotransferase-like class 1 domain-containing pr	w
+AMIDOXIME	fly	FBgn0033451	Marc	A1Z803	3	15	FI02892p (Mitochondrial amidoxime reducing component (EC 1.7	w
+AMIDOXIME	human	Q969Z3	MTARC2	Q969Z3	4	52	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
+AMIDOXIME-REDUCING	human	Q5VT66	MTARC1	Q5VT66	6	78	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
+AMIDOXIME-REDUCING	zebrafish	Q58EJ9	mtarc1	Q58EJ9	0	3	Mitochondrial amidoxime-reducing component 1	w
+AMIE	helicobacter-pylori	O25067	amiE	O25067	0	6	Aliphatic amidase	
+AMIE	streptococcus-pneumoniae	P0A2U9	amiE	P0A2U9	6	11	Oligopeptide transport ATP-binding protein AmiE	
+AMIF	helicobacter-pylori	O25836	amiF	O25836	0	3	Formamidase	
+AMIF	streptococcus-pneumoniae	Q8DNI2	amiF	Q8DNI2	7	15	ABC transporter ATP-binding protein-oligopeptide transport	
+AMIGO	human	Q86WK6	AMIGO1	Q86WK6	31	179		
+AMIGO-1	human	Q86WK6	AMIGO1	Q86WK6	31	179	Amphoterin-induced protein 1 (AMIGO-1) (Alivin-2)	w
+AMIGO-2	human	Q86SJ2	AMIGO2	Q86SJ2	25	111	Amphoterin-induced protein 2 (AMIGO-2) (Alivin-1) (Different	w
+AMIGO-3	human	Q86WK7	AMIGO3	Q86WK7	17	95	Amphoterin-induced protein 3 (AMIGO-3) (Alivin-3)	w
+AMIGO1	human	Q86WK6	AMIGO1	Q86WK6	31	179	Amphoterin-induced protein 1 (AMIGO-1) (Alivin-2)	
+AMIGO1	mus-musculus	Q80ZD8	Amigo1	Q80ZD8	2	9	Amphoterin-induced protein 1	
+AMIGO1	rattus-norvegicus	Q80ZD7	Amigo1	Q80ZD7	1	4	Amphoterin-induced protein 1	
+AMIGO2	human	Q86SJ2	AMIGO2	Q86SJ2	25	111	Amphoterin-induced protein 2 (AMIGO-2) (Alivin-1) (Different	
+AMIGO2	mus-musculus	Q80ZD9	Amigo2	Q80ZD9	0	4	Amphoterin-induced protein 2	
+AMIGO2	rattus-norvegicus	Q7TNJ4	Amigo2	Q7TNJ4	1	8	Amphoterin-induced protein 2	
+AMIGO3	human	Q86WK7	AMIGO3	Q86WK7	17	95	Amphoterin-induced protein 3 (AMIGO-3) (Alivin-3)	
+AMIGO3	mus-musculus	Q8C2S7	Amigo3	Q8C2S7	1	5	Amphoterin-induced protein 3	
+AMIGO3	zebrafish	M9MMA3	amigo3	M9MMA3	0	22	Adhesion molecule with Ig-like domain 3	
+AMILORIDE-BINDING	human	P19801	AOC1	P19801	6	138	Diamine oxidase [copper-containing] (Diamine oxidase) (EC 1.	w
+AMILORIDE-SENSITIVE	fly	FBgn0020258	ppk	Q7KT94	5	12	Amiloride-sensitive Na+ channel (FI02125p) (Pickpocket)	w
+AMILORIDE-SENSITIVE	human	P19634	SLC9A1	P19634	28	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	w
+AMILORIDE-SENSITIVE	human	P37088	SCNN1A	P37088	15	154	Epithelial sodium channel subunit alpha (Alpha-ENaC) (ENaC s	w
+AMILORIDE-SENSITIVE	human	P51168	SCNN1B	P51168	10	85	Epithelial sodium channel subunit beta (Beta-ENaC) (ENaC sub	w
+AMILORIDE-SENSITIVE	human	P51170	SCNN1G	P51170	11	89	Epithelial sodium channel subunit gamma (ENaC subunit gamma)	w
+AMILORIDE-SENSITIVE	human	P51172	SCNN1D	P51172	11	83	Epithelial sodium channel subunit delta (Delta-ENaC) (ENaCD)	w
+AMILORIDE-SENSITIVE	human	P78348	ASIC1	P78348	12	103	Acid-sensing ion channel 1 (ASIC1) (Amiloride-sensitive cati	w
+AMILORIDE-SENSITIVE	human	Q16515	ASIC2	Q16515	8	44	Acid-sensing ion channel 2 (ASIC2) (Amiloride-sensitive cati	w
+AMILORIDE-SENSITIVE	human	Q96FT7	ASIC4	Q96FT7	15	175	Acid-sensing ion channel 4 (ASIC4) (Amiloride-sensitive cati	w
+AMILORIDE-SENSITIVE	human	Q9NY37	ASIC5	Q9NY37	9	36	Bile acid-sensitive ion channel (BASIC) (Acid-sensing ion ch	w
+AMILORIDE-SENSITIVE	human	Q9UHC3	ASIC3	Q9UHC3	9	80	Acid-sensing ion channel 3 (ASIC3) (hASIC3) (Amiloride-sensi	w
+AMILORIDE-SENSITIVE	worm	P91835	del-4	P91835	13	20	Amiloride-sensitive sodium channel	w
+AMILORIDE-SENSITIVE	worm	Q8MPW0	del-6	Q8MPW0	2	14	Amiloride-sensitive sodium channel	w
+AMIN	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.4.3.21) (Amine oxi	w
+AMIN	human	Q9H2H9	SLC38A1	Q9H2H9	6	229	Sodium-coupled neutral amino acid symporter 1 (Amino acid tr	w
+AMINASE	human	Q9Y2T3	GDA	Q9Y2T3	0	108	Guanine deaminase (Guanase) (Guanine aminase) (EC 3.5.4.3) (	w
+AMINE	fly	FBgn0035943	CG5653	Q9VSR8	0	2	Amine oxidase domain-containing protein	w
+AMINE	fly	FBgn0036750	CG6034	Q9VVK2	1	6	Amine oxidase domain-containing protein	w
+AMINE	human	O14804	TAAR5	O14804	12	102	Trace amine-associated receptor 5 (TaR-5) (Trace amine recep	w
+AMINE	human	O60341	KDM1A	O60341	208	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	w
+AMINE	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.4.3.21) (Amine oxi	w
+AMINE	human	O95050	INMT	O95050	4	59	Indolethylamine N-methyltransferase (Indolamine N-methyltran	w
+AMINE	human	P19801	AOC1	P19801	6	138	Diamine oxidase [copper-containing] (Diamine oxidase) (EC 1.	w
+AMINE	human	P21397	MAOA	P21397	7	107	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	w
+AMINE	human	P27338	MAOB	P27338	6	148	Amine oxidase [flavin-containing] B (EC 1.4.3.21) (EC 1.4.3.	w
+AMINE	human	P54219	SLC18A1	P54219	3	177	Chromaffin granule amine transporter (Solute carrier family 	w
+AMINE	human	Q05940	SLC18A2	Q05940	6	203	Synaptic vesicular amine transporter (Solute carrier family 	w
+AMINE	human	Q16853	AOC3	Q16853	15	423	Amine oxidase [copper-containing] 3 (EC 1.4.3.21) (Amine oxi	w
+AMINE	human	Q8NB78	KDM1B	Q8NB78	8	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	w
+AMINE	human	Q969N4	TAAR8	Q969N4	11	42	Trace amine-associated receptor 8 (TaR-8) (Trace amine recep	w
+AMINE	human	Q96RI8	TAAR6	Q96RI8	8	59	Trace amine-associated receptor 6 (TaR-6) (Trace amine recep	w
+AMINE	human	Q96RI9	TAAR9	Q96RI9	6	65	Trace amine-associated receptor 9 (TaR-9) (Trace amine recep	w
+AMINE	human	Q96RJ0	TAAR1	Q96RJ0	6	72	Trace amine-associated receptor 1 (TaR-1) (Trace amine recep	w
+AMINE	human	Q99536	VAT1	Q99536	5	125	NADPH-dependent quinone oxidoreductase VAT1 (EC 1.6.5.5) (Mi	w
+AMINE	human	Q9BZJ8	GPR61	Q9BZJ8	4	89	G protein-coupled receptor 61 (Biogenic amine receptor-like 	w
+AMINE	human	Q9HCJ6	VAT1L	Q9HCJ6	4	66	Putative NADPH-dependent quinone oxidoreductase VAT1L (EC 1.	w
+AMINE	human	Q9P1P4	TAAR3P	Q9P1P4	2	9	Putative trace amine-associated receptor 3 (TaR-3) (Trace am	w
+AMINE	human	Q9P1P5	TAAR2	Q9P1P5	10	68	Trace amine-associated receptor 2 (TaR-2) (Trace amine recep	w
+AMINE	worm	G5ECS4	glf-1	G5ECS4	0	7	Amine oxidase domain-containing protein	w
+AMINE	worm	O76383	hpo-15	O76383	0	1	Amine oxidase domain-containing protein	w
+AMINE	zebrafish	A0A8M1N4I9	aoc2	A0A8M1N4I9	2	120	Amine oxidase	w
+AMINE	zebrafish	A0A8M1NH10	paox1	A0A8M1NH10	0	2	Amine oxidase	w
+AMINE	zebrafish	A0A8M9Q381	si:ch211-127i16.2	A0A8M9Q381	1	75	Amine oxidase	w
+AMINE	zebrafish	A0JMP5	aoc1	A0JMP5	0	121	Amine oxidase	w
+AMINE	zebrafish	F1QRA1	il4i1	F1QRA1	0	8	Amine oxidase	w
+AMINE	zebrafish	Q5QNQ3	taar12b	Q5QNQ3	0	3	Trace amine associated receptor 69	w
+AMINE	zebrafish	Q6NSN2	mao	Q6NSN2	2	76	Amine oxidase	w
+AMINE-ASSOCIATED	human	O14804	TAAR5	O14804	12	102	Trace amine-associated receptor 5 (TaR-5) (Trace amine recep	w
+AMINE-ASSOCIATED	human	Q969N4	TAAR8	Q969N4	11	42	Trace amine-associated receptor 8 (TaR-8) (Trace amine recep	w
+AMINE-ASSOCIATED	human	Q96RI8	TAAR6	Q96RI8	8	59	Trace amine-associated receptor 6 (TaR-6) (Trace amine recep	w
+AMINE-ASSOCIATED	human	Q96RI9	TAAR9	Q96RI9	6	65	Trace amine-associated receptor 9 (TaR-9) (Trace amine recep	w
+AMINE-ASSOCIATED	human	Q96RJ0	TAAR1	Q96RJ0	6	72	Trace amine-associated receptor 1 (TaR-1) (Trace amine recep	w
+AMINE-ASSOCIATED	human	Q9P1P4	TAAR3P	Q9P1P4	2	9	Putative trace amine-associated receptor 3 (TaR-3) (Trace am	w
+AMINE-ASSOCIATED	human	Q9P1P5	TAAR2	Q9P1P5	10	68	Trace amine-associated receptor 2 (TaR-2) (Trace amine recep	w
+AMINE-ASSOCIATED	zebrafish	A0A8M1NDG6	taar10d	A0A8M1NDG6	0	3	Trace amine-associated receptor 1	w
+AMINE-ASSOCIATED	zebrafish	A0AB13AAW0	taar10	A0AB13AAW0	0	3	Trace amine-associated receptor 1	w
+AMINE-ASSOCIATED	zebrafish	A0AB32TM06	LOC100535889	A0AB32TM06	0	3	Trace amine-associated receptor 1	w
+AMINE-ASSOCIATED	zebrafish	A0AB40E6I6	taar12m	A0AB40E6I6	1	3	Trace amine-associated receptor 4	w
+AMINE-ASSOCIATED	zebrafish	Q5QNM9	taar12c	Q5QNM9	0	3	Trace amine-associated receptor 12c	w
+AMINE-ASSOCIATED	zebrafish	Q5QNN0	taar12i	Q5QNN0	0	3	Trace amine-associated receptor 12i	w
+AMINE-ASSOCIATED	zebrafish	Q5QNN1	taar1b	Q5QNN1	1	3	Trace amine-associated receptor 1	w
+AMINE-ASSOCIATED	zebrafish	Q5QNN2	taar11	Q5QNN2	1	3	Trace amine-associated receptor 11	w
+AMINE-ASSOCIATED	zebrafish	Q5QNN3	taar10b	Q5QNN3	0	3	Trace amine-associated receptor 1	w
+AMINE-ASSOCIATED	zebrafish	Q5QNN7	taar12j	Q5QNN7	0	3	Trace amine-associated receptor 12j	w
+AMINE-ASSOCIATED	zebrafish	Q5QNN8	taar12h	Q5QNN8	0	3	Trace amine-associated receptor 12h	w
+AMINE-ASSOCIATED	zebrafish	Q5QNN9	taar12e	Q5QNN9	1	3	Trace amine-associated receptor 12e	w
+AMINE-ASSOCIATED	zebrafish	Q5QNP0	taar12g	Q5QNP0	1	3	Trace amine-associated receptor 12g	w
+AMINE-ASSOCIATED	zebrafish	Q5QNP1	taar12f	Q5QNP1	0	3	Trace amine-associated receptor 12f	w
+AMINE-ASSOCIATED	zebrafish	Q5QNP2	taar13c	Q5QNP2	0	3	Trace amine-associated receptor 13c	w
+AMINE-ASSOCIATED	zebrafish	Q5QNP5	taar10c	Q5QNP5	0	3	Trace amine-associated receptor 1	w
+AMINE-ASSOCIATED	zebrafish	Q5QNP6	taar10a	Q5QNP6	1	3	Trace amine-associated receptor 1	w
+AMINE-ASSOCIATED	zebrafish	Q5QNP8	taar13e	Q5QNP8	1	3	Trace amine-associated receptor 13e	w
+AMINE-ASSOCIATED	zebrafish	Q5QNP9	taar13a	Q5QNP9	0	3	Trace amine-associated receptor 13a	w
+AMINE-ASSOCIATED	zebrafish	Q5QNQ0	taar13b	Q5QNQ0	1	3	Trace amine-associated receptor 13b	w
+AMINE-ASSOCIATED	zebrafish	Q5QNQ1	taar13d	Q5QNQ1	1	3	Trace amine-associated receptor 13d	w
+AMINE-ASSOCIATED	zebrafish	Q5QNQ2	taar12a	Q5QNQ2	1	3	Trace amine-associated receptor 12a	w
+AMINO	fly	FBgn0026438	Eaat2	E1JHQ6	0	15	Amino acid transporter	w
+AMINO	fly	FBgn0026439	Eaat1	O77062	4	54	Excitatory amino acid transporter 1	w
+AMINO	fly	FBgn0028425	JhI-21	Q9VKC2	5	95	Amino acid transporter protein JHI-21 (Juvenile hormone Indu	w
+AMINO	fly	FBgn0029762	NAAT1	Q9W4C5	0	3	Sodium-dependent nutrient amino acid transporter 1 (DmNAT1)	w
+AMINO	fly	FBgn0033368	CG13743	Q8MRD1	0	2	Putative sodium-coupled neutral amino acid transporter 11 (S	w
+AMINO	fly	FBgn0035300	acs	Q9W056	0	10	Proton-coupled amino acid transporter-like protein CG1139	w
+AMINO	fly	FBgn0036007	path	Q9VT04	7	100	Proton-coupled amino acid transporter-like protein pathetic	w
+AMINO	fly	FBgn0052079	CG32079	Q9VTD5	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	fly	FBgn0052081	CG32081	Q8IQF3	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	human	A0A1B0GVQ0	SPAAR	A0A1B0GVQ0	3	12	Small regulatory polypeptide of amino acid response	w
+AMINO	human	A6NNN8	SLC38A8	A6NNN8	3	26	Solute carrier family 38 member 8 (Amino acid transporter SL	w
+AMINO	human	O00341	SLC1A7	O00341	6	46	Excitatory amino acid transporter 5 (Retinal glutamate trans	w
+AMINO	human	O43246	SLC7A4	O43246	0	31	Cationic amino acid transporter 4 (CAT-4) (CAT4) (Solute car	w
+AMINO	human	O75387	SLC43A1	O75387	3	87	Large neutral amino acids transporter small subunit 3 (L-typ	w
+AMINO	human	O75420	GIGYF1	O75420	62	207	GRB10-interacting GYF protein 1 (PERQ amino acid-rich with G	w
+AMINO	human	P04181	OAT	P04181	10	235	Ornithine aminotransferase, mitochondrial (EC 2.6.1.13) (Orn	w
+AMINO	human	P08118	MSMB	P08118	24	152	Beta-microseminoprotein (Immunoglobulin-binding factor) (IGB	w
+AMINO	human	P08195	SLC3A2	P08195	27	434	Amino acid transporter heavy chain SLC3A2 (4F2 cell-surface 	w
+AMINO	human	P09958	FURIN	P09958	87	481	Furin (EC 3.4.21.75) (Dibasic-processing enzyme) (Paired bas	w
+AMINO	human	P29122	PCSK6	P29122	31	197	Proprotein convertase subtilisin/kexin type 6 (EC 3.4.21.-) 	w
+AMINO	human	P30825	SLC7A1	P30825	12	260	High affinity cationic amino acid transporter 1 (CAT-1) (CAT	w
+AMINO	human	P39086	GRIK1	P39086	30	176	Glutamate receptor ionotropic, kainate 1 (GluK1) (Excitatory	w
+AMINO	human	P43003	SLC1A3	P43003	10	184	Excitatory amino acid transporter 1 (Sodium-dependent glutam	w
+AMINO	human	P43004	SLC1A2	P43004	8	124	Excitatory amino acid transporter 2 (Glutamate/aspartate tra	w
+AMINO	human	P43005	SLC1A1	P43005	16	236	Excitatory amino acid transporter 3 (Excitatory amino-acid c	w
+AMINO	human	P43007	SLC1A4	P43007	8	83	Neutral amino acid transporter A (Alanine/serine/cysteine/th	w
+AMINO	human	P48664	SLC1A6	P48664	6	45	Excitatory amino acid transporter 4 (Sodium-dependent glutam	w
+AMINO	human	P52569	SLC7A2	P52569	5	166	Cationic amino acid transporter 2 (CAT-2) (CAT2) (Low affini	w
+AMINO	human	P82251	SLC7A9	P82251	9	62	b(0,+)-type amino acid transporter 1 (b(0,+)AT1) (Glycoprote	w
+AMINO	human	Q01650	SLC7A5	Q01650	20	255	Large neutral amino acids transporter small subunit 1 (4F2 l	w
+AMINO	human	Q07837	SLC3A1	Q07837	11	51	Amino acid transporter heavy chain SLC3A1 (D2h) (Neutral and	w
+AMINO	human	Q08117	TLE5	Q08117	42	450	TLE family member 5 (Amino-terminal enhancer of split) (Amin	w
+AMINO	human	Q08AI6	SLC38A11	Q08AI6	2	25	Putative sodium-coupled neutral amino acid transporter 11 (S	w
+AMINO	human	Q13002	GRIK2	Q13002	28	118	Glutamate receptor ionotropic, kainate 2 (GluK2) (Excitatory	w
+AMINO	human	Q13003	GRIK3	Q13003	37	197	Glutamate receptor ionotropic, kainate 3 (GluK3) (Excitatory	w
+AMINO	human	Q14032	BAAT	Q14032	6	94	Bile acid-CoA:amino acid N-acyltransferase (BACAT) (BAT) (EC	w
+AMINO	human	Q15758	SLC1A5	Q15758	22	309	Neutral amino acid transporter B(0) (ATB(0)) (Baboon M7 viru	w
+AMINO	human	Q16099	GRIK4	Q16099	34	176	Glutamate receptor ionotropic, kainate 4 (GluK4) (Excitatory	w
+AMINO	human	Q16478	GRIK5	Q16478	24	110	Glutamate receptor ionotropic, kainate 5 (GluK5) (Excitatory	w
+AMINO	human	Q495M3	SLC36A2	Q495M3	1	33	Proton-coupled amino acid transporter 2 (Proton/amino acid t	w
+AMINO	human	Q495N2	SLC36A3	Q495N2	1	30	Proton-coupled amino acid transporter 3 (Proton/amino acid t	w
+AMINO	human	Q695T7	SLC6A19	Q695T7	4	48	Sodium-dependent neutral amino acid transporter B(0)AT1 (Sol	w
+AMINO	human	Q6IB77	GLYAT	Q6IB77	11	127	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
+AMINO	human	Q6UWK7	GPR15LG	Q6UWK7	7	60	Protein GPR15LG (Antimicrobial peptide with 57 amino acid re	w
+AMINO	human	Q6Y7W6	GIGYF2	Q6Y7W6	53	270	GRB10-interacting GYF protein 2 (PERQ amino acid-rich with G	w
+AMINO	human	Q6YBV0	SLC36A4	Q6YBV0	2	57	Neutral amino acid uniporter 4 (Solute carrier family 36 mem	w
+AMINO	human	Q6ZP29	SLC66A1	Q6ZP29	0	38	Lysosomal amino acid transporter 1 homolog (PQ-loop repeat-c	w
+AMINO	human	Q6ZQY3	GADL1	Q6ZQY3	6	99	Acidic amino acid decarboxylase GADL1 (Aspartate 1-decarboxy	w
+AMINO	human	Q7Z2H8	SLC36A1	Q7Z2H8	2	72	Proton-coupled amino acid transporter 1 (Proton/amino acid t	w
+AMINO	human	Q8IZM9	SLC38A6	Q8IZM9	1	35	Solute carrier family 38 member 6 (Amino acid transporter SL	w
+AMINO	human	Q8MH63	SLC7A5P1	Q8MH63	2	36	Putative L-type amino acid transporter 1-like protein MLAS (	w
+AMINO	human	Q8N370	SLC43A2	Q8N370	3	95	Large neutral amino acids transporter small subunit 4 (L-typ	w
+AMINO	human	Q8N8R3	SLC25A29	Q8N8R3	2	82	Mitochondrial basic amino acids transporter (Carnitine/acylc	w
+AMINO	human	Q8NBW4	SLC38A9	Q8NBW4	6	114	Neutral amino acid transporter 9 (Solute carrier family 38 m	w
+AMINO	human	Q8NE00	SLC38A12	Q8NE00	1	51	Putative sodium-coupled neutral amino acid transporter 12 (S	w
+AMINO	human	Q8TF71	SLC16A10	Q8TF71	7	95	Monocarboxylate transporter 10 (MCT 10) (Aromatic amino acid	w
+AMINO	human	Q8WUX1	SLC38A5	Q8WUX1	7	98	Sodium-coupled neutral amino acid transporter 5 (Solute carr	w
+AMINO	human	Q8WY07	SLC7A3	Q8WY07	8	94	Cationic amino acid transporter 3 (CAT-3) (CAT3) (Cationic a	w
+AMINO	human	Q92536	SLC7A6	Q92536	11	158	Y+L amino acid transporter 2 (Cationic amino acid transporte	w
+AMINO	human	Q92830	KAT2A	Q92830	84	737	Histone acetyltransferase KAT2A (EC 2.3.1.48) (General contr	w
+AMINO	human	Q969I6	SLC38A4	Q969I6	0	47	Sodium-coupled neutral amino acid transporter 4 (Amino acid 	w
+AMINO	human	Q96N87	SLC6A18	Q96N87	2	38	Inactive sodium-dependent neutral amino acid transporter B(0	w
+AMINO	human	Q96QD8	SLC38A2	Q96QD8	5	207	Sodium-coupled neutral amino acid symporter 2 (Amino acid tr	w
+AMINO	human	Q99624	SLC38A3	Q99624	2	67	Sodium-coupled neutral amino acid transporter 3 (N-system am	w
+AMINO	human	Q9GIP4	SLC7A5P2	Q9GIP4	0	23	Putative L-type amino acid transporter 1-like protein IMAA (	w
+AMINO	human	Q9H1V8	SLC6A17	Q9H1V8	3	109	Sodium-dependent neutral amino acid transporter SLC6A17 (Sod	w
+AMINO	human	Q9H2H9	SLC38A1	Q9H2H9	6	229	Sodium-coupled neutral amino acid symporter 1 (Amino acid tr	w
+AMINO	human	Q9H2J7	SLC6A15	Q9H2J7	19	253	Sodium-dependent neutral amino acid transporter B(0)AT2 (Sod	w
+AMINO	human	Q9H598	SLC32A1	Q9H598	8	164	Vesicular inhibitory amino acid transporter (GABA and glycin	w
+AMINO	human	Q9HBR0	SLC38A10	Q9HBR0	12	80	Solute carrier family 38 member 10 (Amino acid transporter S	w
+AMINO	human	Q9NQZ2	UTP3	Q9NQZ2	66	342	Something about silencing protein 10 (Charged amino acid-ric	w
+AMINO	human	Q9NS82	SLC7A10	Q9NS82	3	68	Asc-type amino acid transporter 1 (Asc-1) (Solute carrier fa	w
+AMINO	human	Q9NVC3	SLC38A7	Q9NVC3	12	115	Sodium-coupled neutral amino acid transporter 7 (Solute carr	w
+AMINO	human	Q9UHI5	SLC7A8	Q9UHI5	7	117	Large neutral amino acids transporter small subunit 2 (L-typ	w
+AMINO	human	Q9UM01	SLC7A7	Q9UM01	6	67	Y+L amino acid transporter 1 (Monocyte amino acid permease 2	w
+AMINO	human	Q9UN76	SLC6A14	Q9UN76	1	47	Sodium- and chloride-dependent neutral and basic amino acid 	w
+AMINO	human	Q9UPY5	SLC7A11	Q9UPY5	18	155	Cystine/glutamate transporter (Amino acid transport system x	w
+AMINO	worm	A0A0K3AVL7	aat-3	A0A0K3AVL7	3	4	Large neutral amino acids transporter small subunit 1	w
+AMINO	worm	G4SQY7	slc-36.2	G4SQY7	0	1	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	worm	G5EED8	tph-1	G5EED8	2	3	Biopterin-dependent aromatic amino acid hydroxylase family p	w
+AMINO	worm	H2KZG9	aat-5	H2KZG9	3	3	Amino Acid Transporter	w
+AMINO	worm	O17069	CELE_F23F1.6	O17069	0	2	Cationic amino acid transporter C-terminal domain-containing	w
+AMINO	worm	O17167	B0454.6	O17167	0	3	Cationic amino acid transporter C-terminal domain-containing	w
+AMINO	worm	O18210	glt-5	O18210	0	12	Amino acid transporter	w
+AMINO	worm	O44798	C50D2.2	O44798	0	7	Cationic amino acid transporter C-terminal domain-containing	w
+AMINO	worm	O44832	aat-7	O44832	3	3	Amino Acid Transporter	w
+AMINO	worm	O45936	slc-36.1	O45936	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	worm	Q10901	glt-1	Q10901	0	13	Excitatory amino acid transporter	w
+AMINO	worm	Q19151	aat-2	Q19151	3	3	Amino Acid Transporter	w
+AMINO	worm	Q19425	F13H10.3	Q19425	2	37	Sodium-coupled neutral amino acid transporter 9 homolog	w
+AMINO	worm	Q19676	CELE_F21D12.3	Q19676	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	worm	Q19834	aat-1	Q19834	3	4	Large neutral amino acids transporter small subunit 1	w
+AMINO	worm	Q21353	glt-3	Q21353	0	8	Putative sodium-dependent excitatory amino acid transporter 	w
+AMINO	worm	Q21652	CELE_R02F2.8	Q21652	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	worm	Q21751	glt-6	Q21751	0	6	Putative sodium-dependent excitatory amino acid transporter 	w
+AMINO	worm	Q22397	aat-6	Q22397	3	3	Amino acid transporter protein 6	w
+AMINO	worm	Q22682	glt-4	Q22682	0	6	Putative sodium-dependent excitatory amino acid transporter 	w
+AMINO	worm	Q7YXH5	aat-4	Q7YXH5	0	9	Amino acid transporter	w
+AMINO	worm	Q8I4E4	CELE_Y32F6A.4	Q8I4E4	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	worm	Q94197	aat-8	Q94197	3	3	Amino acid transporter	w
+AMINO	worm	Q95XZ6	laat-1	Q95XZ6	0	1	Lysosomal amino acid transporter 1	w
+AMINO	worm	Q9N321	CELE_Y59H11AR.4	Q9N321	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	worm	Q9NA91	aat-9	Q9NA91	1	3	Amino acid transporter	w
+AMINO	worm	Q9UAY8	glt-7	Q9UAY8	0	11	Amino acid transporter	w
+AMINO	worm	Q9UAZ9	CELE_Y4C6B.2	Q9UAZ9	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	worm	Q9XUG5	snf-9	Q9XUG5	0	4	Sodium-dependent nutrient amino acid transporter 1	w
+AMINO	worm	Q9XW19	CELE_Y18D10A.23	Q9XW19	0	2	Amino acid transporter transmembrane domain-containing prote	w
+AMINO	yeast	P25376	AGP1	P25376	0	7	General amino acid permease AGP1	w
+AMINO	yeast	P25594	VBA3	P25594	0	1	Vacuolar basic amino acid transporter 3	w
+AMINO	yeast	P32450	AUA1	P32450	0	2	Ammonia regulation of amino acid uptake protein	w
+AMINO	yeast	P36062	AVT3	P36062	0	5	Vacuolar amino acid transporter 3	w
+AMINO	yeast	P36172	VBA5	P36172	0	6	Vacuolar basic amino acid transporter 5	w
+AMINO	yeast	P38090	AGP2	P38090	0	8	General amino acid permease AGP2	w
+AMINO	yeast	P38176	AVT5	P38176	0	5	Vacuolar amino acid transporter 5	w
+AMINO	yeast	P38358	VBA2	P38358	0	3	Vacuolar basic amino acid transporter 2	w
+AMINO	yeast	P38840	ARO9	P38840	1	19	Aromatic amino acid aminotransferase 2	w
+AMINO	yeast	P39981	AVT2	P39981	0	7	Vacuolar amino acid transporter 2	w
+AMINO	yeast	P40074	AVT6	P40074	0	3	Vacuolar amino acid transporter 6	w
+AMINO	yeast	P40501	AVT7	P40501	0	3	Vacuolar amino acid transporter 7	w
+AMINO	yeast	P43548	AGP3	P43548	0	3	General amino acid permease AGP3	w
+AMINO	yeast	P47082	AVT1	P47082	0	6	Vacuolar amino acid transporter 1	w
+AMINO	yeast	P50944	AVT4	P50944	0	11	Vacuolar amino acid transporter 4	w
+AMINO	yeast	P53273	VSB1	P53273	0	18	Vacuolar basic amino acid transporter VSB1	w
+AMINO	yeast	P53388	DIP5	P53388	0	27	Dicarboxylic amino acid permease	w
+AMINO	yeast	Q04301	VBA1	Q04301	0	3	Vacuolar basic amino acid transporter 1	w
+AMINO	yeast	Q04602	VBA4	Q04602	0	10	Vacuolar basic amino acid transporter 4	w
+AMINO	yeast	Q06408	ARO10	Q06408	0	21	Transaminated amino acid decarboxylase	w
+AMINO	zebrafish	A0A0R4IAD9	slc38a3b	A0A0R4IAD9	0	4	Sodium-coupled neutral amino acid transporter 3 isoform X1	w
+AMINO	zebrafish	A0A0R4IF61	slc1a8a	A0A0R4IF61	0	1	Amino acid transporter	w
+AMINO	zebrafish	A0A0R4IFJ3	slc7a5	A0A0R4IFJ3	4	9	Large neutral amino acids transporter small subunit 1	w
+AMINO	zebrafish	A0A8M1N819	slc7a7	A0A8M1N819	4	8	Y+L amino acid transporter 1	w
+AMINO	zebrafish	A0A8M3AXC7	slc1a6	A0A8M3AXC7	0	4	Amino acid transporter	w
+AMINO	zebrafish	A0A8M6YZH0	slc38a4	A0A8M6YZH0	0	4	Sodium-coupled neutral amino acid transporter 4	w
+AMINO	zebrafish	A0A8M6Z2B2	slc7a1b	A0A8M6Z2B2	0	22	High affinity cationic amino acid transporter 1b	w
+AMINO	zebrafish	A0A8M9PMI3	slc7a8b	A0A8M9PMI3	4	9	Large neutral amino acids transporter small subunit 2	w
+AMINO	zebrafish	A0A8N7USY1	slc36a1	A0A8N7USY1	0	4	Proton-coupled amino acid transporter 1	w
+AMINO	zebrafish	A0A8N7UY59	slc66a1	A0A8N7UY59	0	1	Lysosomal amino acid transporter 1 homolog	w
+AMINO	zebrafish	A0A8N7UZX7	slc1a2b	A0A8N7UZX7	0	5	Amino acid transporter	w
+AMINO	zebrafish	A1L1T3	slc32a1	A1L1T3	1	30	Vesicular inhibitory amino acid transporter	w
+AMINO	zebrafish	A4IG22	slc7a4	A4IG22	0	9	Cationic amino acid transporter 4	w
+AMINO	zebrafish	A8KBL5	slc38a11	A8KBL5	1	4	Putative sodium-coupled neutral amino acid transporter 11	w
+AMINO	zebrafish	B0UYF2	slc7a14a	B0UYF2	0	9	Probable cationic amino acid transporter	w
+AMINO	zebrafish	C5H4R2	slc1a7a	C5H4R2	0	1	Amino acid transporter	w
+AMINO	zebrafish	D7RVR6	slc1a1	D7RVR6	0	11	Amino acid transporter	w
+AMINO	zebrafish	D7RVR8	slc1a2a	D7RVR8	0	5	Amino acid transporter	w
+AMINO	zebrafish	D7RVS0	slc1a3b	D7RVS0	0	4	Amino acid transporter	w
+AMINO	zebrafish	D7RVS5	slc1a7b	D7RVS5	0	1	Amino acid transporter	w
+AMINO	zebrafish	D7RVS7	slc1a8b	D7RVS7	0	1	Amino acid transporter	w
+AMINO	zebrafish	E7EXU6	slc7a8a	E7EXU6	4	9	Large neutral amino acids transporter small subunit 2	w
+AMINO	zebrafish	E7F8C6	slc36a4	E7F8C6	0	4	Neutral amino acid uniporter 4	w
+AMINO	zebrafish	F1QEA9	slc3a1	F1QEA9	10	48	Amino acid transporter heavy chain SLC3A1	w
+AMINO	zebrafish	F1QGJ2	slc7a9	F1QGJ2	4	8	b(0,+)-type amino acid transporter 1	w
+AMINO	zebrafish	F1QKU2	furinb	F1QKU2	0	8	Furin (paired basic amino acid cleaving enzyme) b	w
+AMINO	zebrafish	F1QNI7	slc7a3b	F1QNI7	0	10	Cationic amino acid transporter 3	w
+AMINO	zebrafish	Q08BA4	slc38a9	Q08BA4	1	33	Neutral amino acid transporter 9	w
+AMINO	zebrafish	Q503G8	slc38a6	Q503G8	0	4	Probable sodium-coupled neutral amino acid transporter 6	w
+AMINO	zebrafish	Q59I64	slc7a6	Q59I64	4	8	Y+L amino acid transporter 2	w
+AMINO	zebrafish	Q5PR34	slc7a2	Q5PR34	0	11	Cationic amino acid transporter 2	w
+AMINO	zebrafish	Q5SPB1	slc38a2	Q5SPB1	0	4	Sodium-coupled neutral amino acid symporter 2	w
+AMINO	zebrafish	Q6DEL1	slc38a7	Q6DEL1	0	4	Sodium-coupled neutral amino acid transporter 7	w
+AMINO	zebrafish	Q6P4V2	slc1a3a	Q6P4V2	0	4	Amino acid transporter	w
+AMINO	zebrafish	Q7ZZ28	slc1a4	Q7ZZ28	0	3	Amino acid transporter	w
+AMINO-2-METHYLPROPIONATE	fly	FBgn0036927	Gabat	Q9VW68	0	39	(S)-3-amino-2-methylpropionate transaminase (EC 2.6.1.19) (E	w
+AMINO-2-METHYLPROPIONATE	human	P80404	ABAT	P80404	2	89	4-aminobutyrate aminotransferase, mitochondrial (EC 2.6.1.19	w
+AMINO-2-METHYLPROPIONATE--PYRUVATE	human	Q9BYV1	AGXT2	Q9BYV1	4	71	Alanine--glyoxylate aminotransferase 2, mitochondrial (AGT 2	w
+AMINO-3-CARBOXYMUCONATE-6-SEMIALDEHYDE	human	Q8TDX5	ACMSD	Q8TDX5	1	25	2-amino-3-carboxymuconate-6-semialdehyde decarboxylase (EC 4	w
+AMINO-3-CARBOXYMUCONATE-6-SEMIALDEHYDE	worm	Q8T8B9	acsd-1	Q8T8B9	0	9	2-amino-3-carboxymuconate-6-semialdehyde decarboxylase	w
+AMINO-3-CARBOXYPROPYL	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
+AMINO-3-CARBOXYPROPYL	fly	FBgn0038272	Dph2	Q9VFE9	4	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
+AMINO-3-CARBOXYPROPYL	human	A2RUC4	TYW5	A2RUC4	1	48	tRNA wybutosine-synthesizing protein 5 (hTYW5) (tRNA yW-synt	w
+AMINO-3-CARBOXYPROPYL	human	Q6IPR3	TYW3	Q6IPR3	5	94	tRNA wybutosine-synthesizing protein 3 homolog (tRNA-yW-synt	w
+AMINO-3-CARBOXYPROPYL	human	Q9BQC3	DPH2	Q9BQC3	6	93	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2 (Dip	w
+AMINO-3-CARBOXYPROPYL	human	Q9BZG8	DPH1	Q9BZG8	14	133	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
+AMINO-3-CARBOXYPROPYL	worm	P49958	dph-1	P49958	2	11	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1	w
+AMINO-3-CARBOXYPROPYL	worm	Q09454	dph-2	Q09454	5	40	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
+AMINO-3-CARBOXYPROPYL	yeast	P32461	DPH2	P32461	3	13	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
+AMINO-3-CARBOXYPROPYL	yeast	P40487	DPH1	P40487	3	22	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1	w
+AMINO-3-CARBOXYPROPYL	zebrafish	A4QN59	dph2	A4QN59	7	10	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
+AMINO-3-CARBOXYPROPYL	zebrafish	Q567W6	dph1	Q567W6	3	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1	w
+AMINO-3-KETOBUTYRATE	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
+AMINO-3-KETOBUTYRATE	zebrafish	F6P2R4	gcat	F6P2R4	0	10	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial	w
+AMINO-5-HYDROXYMETHYL-2-METHYLPYRIMIDINE	yeast	P43534	THI5	P43534	0	1	4-amino-5-hydroxymethyl-2-methylpyrimidine phosphate synthas	w
+AMINO-5-HYDROXYMETHYL-2-METHYLPYRIMIDINE	yeast	P47183	THI11	P47183	0	4	4-amino-5-hydroxymethyl-2-methylpyrimidine phosphate synthas	w
+AMINO-ACID	fly	FBgn0263251	vnc	Q9VT75	7	59	N-terminal amino-acid N(alpha)-acetyltransferase NatA (EC 2.	w
+AMINO-ACID	human	P0DI83	RAB34	P0DI83	3	20	Ras-related protein Rab-34, isoform NARR (Nine amino-acid re	w
+AMINO-ACID	human	P43005	SLC1A1	P43005	16	236	Excitatory amino acid transporter 3 (Excitatory amino-acid c	w
+AMINO-ACID	human	Q8N159	NAGS	Q8N159	9	110	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	w
+AMINO-ACID	human	Q8N413	SLC25A45	Q8N413	0	26	Methylated amino-acid transporter SLC25A45 (Solute carrier f	w
+AMINO-ACID	human	Q92616	GCN1	Q92616	14	504	Stalled ribosome sensor GCN1 (GCN1 eIF-2-alpha kinase activa	w
+AMINO-ACID	yeast	P19145	GAP1	P19145	2	53	General amino-acid permease GAP1	w
+AMINO-ACID	yeast	P38084	BAP2	P38084	0	21	Leu/Val/Ile amino-acid permease	w
+AMINO-ACID	yeast	P38085	TAT1	P38085	1	28	Valine/tyrosine/tryptophan amino-acid permease 1	w
+AMINO-ACID	yeast	P38971	ALP1	P38971	1	1	Basic amino-acid permease	w
+AMINO-ACID	yeast	P40360	ARG2	P40360	1	7	Amino-acid acetyltransferase, mitochondrial	w
+AMINO-ACID	yeast	P41815	BAP3	P41815	0	6	Valine amino-acid permease	w
+AMINO-ACID	zebrafish	Q7T3B8	naa10	Q7T3B8	9	65	N-terminal amino-acid N(alpha)-acetyltransferase NatA	w
+AMINO-TERMINAL	human	Q08117	TLE5	Q08117	42	450	TLE family member 5 (Amino-terminal enhancer of split) (Amin	w
+AMINO-TERMINAL	zebrafish	Q7T289	tle5	Q7T289	2	27	Amino-terminal enhancer of split	w
+AMINOACETONE	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
+AMINOACYL	fly	FBgn0036515	AIMP2	Q9VUR3	7	39	Probable aminoacyl tRNA synthase complex-interacting multifu	w
+AMINOACYL	human	O43324	EEF1E1	O43324	23	201	Eukaryotic translation elongation factor 1 epsilon-1 (Aminoa	w
+AMINOACYL	human	Q12904	AIMP1	Q12904	26	255	Aminoacyl tRNA synthase complex-interacting multifunctional 	w
+AMINOACYL	human	Q13155	AIMP2	Q13155	60	435	Aminoacyl tRNA synthase complex-interacting multifunctional 	w
+AMINOACYL-TRANSFER	worm	P90831	dars-2	P90831	1	13	Aminoacyl-transfer RNA synthetases class-II family profile d	w
+AMINOACYL-TRANSFER	worm	Q95PZ8	nars-2	Q95PZ8	2	19	Aminoacyl-transfer RNA synthetases class-II family profile d	w
+AMINOACYL-TRNA	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+AMINOACYL-TRNA	human	P07814	EPRS1	P07814	17	439	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+AMINOACYLASE-1	human	Q03154	ACY1	Q03154	5	103	Aminoacylase-1 (ACY-1) (EC 3.5.1.14) (N-acyl-L-amino-acid am	w
+AMINOACYLASE-2	human	P45381	ASPA	P45381	1	88	Aspartoacylase (EC 3.5.1.15) (Aminoacylase-2) (ACY-2)	w
+AMINOACYLASE-3	human	Q96HD9	ACY3	Q96HD9	12	115	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
+AMINOACYLPROLINE	human	O43895	XPNPEP2	O43895	8	50	Xaa-Pro aminopeptidase 2 (EC 3.4.11.9) (Aminoacylproline ami	w
+AMINOACYLPROLINE	human	Q9NQW7	XPNPEP1	Q9NQW7	1	170	Xaa-Pro aminopeptidase 1 (EC 3.4.11.9) (Aminoacylproline ami	w
+AMINOADIPATE	human	Q8N5Z0	AADAT	Q8N5Z0	1	38	Kynurenine/alpha-aminoadipate aminotransferase, mitochondria	w
+AMINOADIPATE	yeast	P53090	ARO8	P53090	1	20	Aromatic/aminoadipate aminotransferase 1	w
+AMINOBUTYRATE	human	P80404	ABAT	P80404	2	89	4-aminobutyrate aminotransferase, mitochondrial (EC 2.6.1.19	w
+AMINOBUTYRATE	worm	Q21217	gta-1	Q21217	0	50	Probable 4-aminobutyrate aminotransferase, mitochondrial	w
+AMINOBUTYRATE	yeast	P17649	UGA1	P17649	0	4	4-aminobutyrate aminotransferase	w
+AMINOBUTYRATE	zebrafish	I3IRW7	abat	I3IRW7	0	1	4-aminobutyrate aminotransferase, mitochondrial	w
+AMINOCARBOXYPROPYLTRANSFE	human	Q53H54	TYW2	Q53H54	8	103	tRNA wybutosine-synthesizing protein 2 homolog (tRNA-yW-synt	w
+AMINOCARBOXYPROPYLTRANSFERASE	fly	FBgn0037492	Dtwd2	Q9VI85	0	1	tRNA-uridine aminocarboxypropyltransferase 2 (EC 2.5.1.25) (	w
+AMINOCARBOXYPROPYLTRANSFERASE	fly	FBgn0038313	CG4338	Q9VFA0	1	8	18S rRNA aminocarboxypropyltransferase (EC 2.5.1.-)	w
+AMINOCARBOXYPROPYLTRANSFERASE	fly	FBgn0039664	CG2006	Q9VAL1	0	3	tRNA-uridine aminocarboxypropyltransferase 1 (EC 2.5.1.25) (	w
+AMINOCARBOXYPROPYLTRANSFERASE	human	Q8N5C7	DTWD1	Q8N5C7	3	50	tRNA-uridine aminocarboxypropyltransferase 1 (EC 2.5.1.25) (	w
+AMINOCARBOXYPROPYLTRANSFERASE	human	Q8NBA8	DTWD2	Q8NBA8	10	108	tRNA-uridine aminocarboxypropyltransferase 2 (EC 2.5.1.25) (	w
+AMINOCARBOXYPROPYLTRANSFERASE	human	Q9UJK0	TSR3	Q9UJK0	6	63	18S rRNA aminocarboxypropyltransferase (EC 2.5.1.157) (20S S	w
+AMINOCARBOXYPROPYLTRANSFERASE	worm	B7WNB4	CELE_Y53C12A.10	B7WNB4	0	2	tRNA-uridine aminocarboxypropyltransferase 1	w
+AMINOCARBOXYPROPYLTRANSFERASE	worm	Q20240	CELE_F40F9.10	Q20240	0	3	tRNA(Phe) (4-demethylwyosine(37)-C(7)) aminocarboxypropyltra	w
+AMINOCARBOXYPROPYLTRANSFERASE	worm	Q95X18	CELE_F52C12.2	Q95X18	0	2	18S rRNA aminocarboxypropyltransferase	w
+AMINOCARBOXYPROPYLTRANSFERASE	yeast	Q12094	TSR3	Q12094	0	9	18S rRNA aminocarboxypropyltransferase	w
+AMINOCYCLOPROPANE-1-CARBOXYLATE	human	Q4AC99	ACCSL	Q4AC99	3	42	Probable inactive 1-aminocyclopropane-1-carboxylate synthase	w
+AMINOCYCLOPROPANE-1-CARBOXYLATE	human	Q96QU6	ACCS	Q96QU6	2	38	1-aminocyclopropane-1-carboxylate synthase-like protein 1 (A	w
+AMINODEOXYCHORISMATE	yeast	P37254	ABZ1	P37254	0	10	Aminodeoxychorismate synthase	w
+AMINODEOXYCHORISMATE	yeast	Q03266	ABZ2	Q03266	1	6	Aminodeoxychorismate lyase	w
+AMINOETHANETHIOL	human	Q96SZ5	ADO	Q96SZ5	9	55	2-aminoethanethiol dioxygenase (EC 1.13.11.19) (Cysteamine d	w
+AMINOGLYCOSIDE	human	A2RU49	HYKK	A2RU49	2	51	Hydroxylysine kinase (5-hydroxy-L-lysine kinase) (EC 2.7.1.8	w
+AMINOHYDROLASE	fly	FBgn0032001	CG8360	Q9VLR3	2	45	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
+AMINOHYDROLASE	fly	FBgn0032002	CG8353	Q9VLR2	2	41	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
+AMINOHYDROLASE	human	P00813	ADA	P00813	9	145	Adenosine deaminase (EC 3.5.4.4) (Adenosine aminohydrolase)	w
+AMINOHYDROLASE	human	P32320	CDA	P32320	2	148	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
+AMINOHYDROLASE	human	Q9GZX7	AICDA	Q9GZX7	29	418	Single-stranded DNA cytosine deaminase (EC 3.5.4.38) (Activa	w
+AMINOHYDROLASE	human	Q9Y2T3	GDA	Q9Y2T3	0	108	Guanine deaminase (Guanase) (Guanine aminase) (EC 3.5.4.3) (	w
+AMINOLEVULINATE	fly	FBgn0020764	Alas	O18680	2	51	5-aminolevulinate synthase (EC 2.3.1.37) (5-aminolevulinic a	w
+AMINOLEVULINATE	human	P13196	ALAS1	P13196	18	170	5-aminolevulinate synthase, non-specific, mitochondrial (ALA	w
+AMINOLEVULINATE	human	P22557	ALAS2	P22557	5	117	5-aminolevulinate synthase, erythroid-specific, mitochondria	w
+AMINOLEVULINATE	yeast	P09950	HEM1	P09950	0	17	5-aminolevulinate synthase, mitochondrial	w
+AMINOLEVULINATE	zebrafish	Q9YHT4	alas2	Q9YHT4	0	9	5-aminolevulinate synthase, erythroid-specific, mitochondria	w
+AMINOLEVULINIC	fly	FBgn0020764	Alas	O18680	2	51	5-aminolevulinate synthase (EC 2.3.1.37) (5-aminolevulinic a	w
+AMINOLEVULINIC	human	P13196	ALAS1	P13196	18	170	5-aminolevulinate synthase, non-specific, mitochondrial (ALA	w
+AMINOLEVULINIC	human	P22557	ALAS2	P22557	5	117	5-aminolevulinate synthase, erythroid-specific, mitochondria	w
+AMINOMET	human	P23378	GLDC	P23378	8	295	Glycine dehydrogenase (decarboxylating), mitochondrial (EC 1	w
+AMINOMETHYLTRANSFERASE	fly	FBgn0032287	Gcst	Q9VKR4	3	50	Aminomethyltransferase (EC 2.1.2.10) (Glycine cleavage syste	w
+AMINOMETHYLTRANSFERASE	human	P48728	AMT	P48728	6	43	Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine	w
+AMINOMETHYLTRANSFERASE	worm	G5EE11	CELE_F39H2.3	G5EE11	0	2	Aminomethyltransferase folate-binding domain-containing prot	w
+AMINOMETHYLTRANSFERASE	worm	Q22968	gcst-1	Q22968	3	14	Aminomethyltransferase	w
+AMINOMETHYLTRANSFERASE	yeast	P48015	GCV1	P48015	2	17	Aminomethyltransferase, mitochondrial	w
+AMINOMUCONIC	human	Q9H2A2	ALDH8A1	Q9H2A2	15	88	2-aminomuconic semialdehyde dehydrogenase (EC 1.2.1.32) (Ald	w
+AMINOMUCONIC	zebrafish	Q66I21	aldh8a1	Q66I21	0	1	2-aminomuconic semialdehyde dehydrogenase	w
+AMINOPELARGONIC	yeast	P53744	BIO5	P53744	0	1	7-keto 8-aminopelargonic acid transporter	w
+AMINOPEP	human	Q9UKU6	TRHDE	Q9UKU6	14	46	Thyrotropin-releasing hormone-degrading ectoenzyme (TRH-DE) 	w
+AMINOPEPTID	human	O14773	TPP1	O14773	7	201	Tripeptidyl-peptidase 1 (TPP-1) (EC 3.4.14.9) (Cell growth-i	w
+AMINOPEPTIDASE	fly	FBgn0020370	TppII	Q9V6K1	5	66	Tripeptidyl-peptidase 2 (TPP-2) (EC 3.4.14.10) (Tripeptidyl 	w
+AMINOPEPTIDASE	fly	FBgn0026150	ApepP	Q9VJG0	1	28	Xaa-Pro aminopeptidase ApepP (EC 3.4.11.9) (Aminopeptidase P	w
+AMINOPEPTIDASE	fly	FBgn0030222	CG9806	Q9W2S8	33	318	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0030223	CG2111	Q9W2S7	31	323	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0032247	CG5188	Q9VKV9	15	93	Methionine aminopeptidase (EC 3.4.11.18)	w
+AMINOPEPTIDASE	fly	FBgn0033860	S-Lap5	A1Z9G3	8	126	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0033868	S-Lap7	Q500X4	11	322	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0034132	S-Lap8	Q7K5K9	11	126	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0035915	S-Lap1	Q9VSM6	7	127	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0036186	CG6071	Q9VTL4	0	3	Aminopeptidase N	w
+AMINOPEPTIDASE	fly	FBgn0037580	DppIII	Q9VHR8	2	145	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
+AMINOPEPTIDASE	fly	FBgn0038135	CG8773	Q9VFX0	2	10	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0038136	CG8774	Q9VFW9	0	7	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0038897	CG5849	Q9VD87	0	3	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0039219	CG13630	Q9VC48	15	98	Methionine aminopeptidase (EC 3.4.11.18)	w
+AMINOPEPTIDASE	fly	FBgn0039640	superdeath	Q7KRW4	5	83	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0045770	S-Lap3	Q961W5	7	87	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0046253	CG3502	Q9W1S1	29	319	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0051198	CG31198	Q8IN25	0	18	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0051233	CG31233	Q8MRN5	5	86	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0051343	CG31343	Q8SWX4	13	163	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0051445	CG31445	Q95SR0	35	328	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0052064	S-Lap4	Q95R35	7	125	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0052351	S-Lap2	Q9VSM7	7	124	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0053108	CG33108	Q9VCE8	4	54	Actin maturation protease (EC 3.4.11.-) (Actin aminopeptidas	w
+AMINOPEPTIDASE	fly	FBgn0259237	CG42335	Q9VD85	14	236	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0259795	loopin-1	Q7K2S9	9	128	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
+AMINOPEPTIDASE	fly	FBgn0260481	CG32454	Q8IPS7	1	14	Aminopeptidase P N-terminal domain-containing protein	w
+AMINOPEPTIDASE	fly	FBgn0261243	Psa	Q8IRH1	32	282	FI19310p1 (Puromycin sensitive aminopeptidase, isoform C)	w
+AMINOPEPTIDASE	fly	FBgn0263236	SP1029	Q0KI00	33	328	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0283478	und	Q9VL89	17	134	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+AMINOPEPTIDASE	human	O43895	XPNPEP2	O43895	8	50	Xaa-Pro aminopeptidase 2 (EC 3.4.11.9) (Aminoacylproline ami	w
+AMINOPEPTIDASE	human	P09960	LTA4H	P09960	10	119	Leukotriene A-4 hydrolase (LTA-4 hydrolase) (EC 3.3.2.6) (Le	w
+AMINOPEPTIDASE	human	P15144	ANPEP	P15144	16	215	Aminopeptidase N (AP-N) (hAPN) (EC 3.4.11.2) (Alanyl aminope	w
+AMINOPEPTIDASE	human	P28838	LAP3	P28838	4	139	Cytosol aminopeptidase (EC 3.4.11.1) (Cysteinylglycine-S-con	w
+AMINOPEPTIDASE	human	P29144	TPP2	P29144	13	120	Tripeptidyl-peptidase 2 (TPP-2) (EC 3.4.14.10) (Tripeptidyl 	w
+AMINOPEPTIDASE	human	P50579	METAP2	P50579	95	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+AMINOPEPTIDASE	human	P53582	METAP1	P53582	52	232	Methionine aminopeptidase 1 (MAP 1) (MetAP 1) (EC 3.4.11.18)	w
+AMINOPEPTIDASE	human	P55786	NPEPPS	P55786	34	162	Puromycin-sensitive aminopeptidase (PSA) (EC 3.4.11.14) (Cyt	w
+AMINOPEPTIDASE	human	Q07075	ENPEP	Q07075	3	51	Glutamyl aminopeptidase (EAP) (EC 3.4.11.7) (Aminopeptidase 	w
+AMINOPEPTIDASE	human	Q5BKX5	ACTMAP	Q5BKX5	15	224	Actin maturation protease (EC 3.4.11.-) (Actin aminopeptidas	w
+AMINOPEPTIDASE	human	Q6P179	ERAP2	Q6P179	4	46	Endoplasmic reticulum aminopeptidase 2 (EC 3.4.11.-) (Leukoc	w
+AMINOPEPTIDASE	human	Q6P4A8	PLBD1	Q6P4A8	6	145	Lysosomal leucine aminopeptidase (LyLAP) (EC 3.4.11.-) (LAMA	w
+AMINOPEPTIDASE	human	Q6Q4G3	LVRN	Q6Q4G3	4	12	Aminopeptidase Q (AP-Q) (APQ) (EC 3.4.11.-) (CHL2 antigen) (	w
+AMINOPEPTIDASE	human	Q6UB28	METAP1D	Q6UB28	20	64	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	w
+AMINOPEPTIDASE	human	Q8N6M6	AOPEP	Q8N6M6	7	77	Aminopeptidase O (AP-O) (EC 3.4.11.-)	w
+AMINOPEPTIDASE	human	Q8NDH3	NPEPL1	Q8NDH3	2	64	Probable aminopeptidase NPEPL1 (EC 3.4.11.-) (Aminopeptidase	w
+AMINOPEPTIDASE	human	Q8NHP8	PLBD2	Q8NHP8	9	67	Putative aminopeptidase PLBD2 (EC 3.4.11.-) (76 kDa protein)	w
+AMINOPEPTIDASE	human	Q9H4A4	RNPEP	Q9H4A4	11	89	Aminopeptidase B (AP-B) (EC 3.4.11.6) (Arginine aminopeptida	w
+AMINOPEPTIDASE	human	Q9HAU8	RNPEPL1	Q9HAU8	4	28	Aminopeptidase RNPEPL1 (EC 3.4.11.-) (Arginyl aminopeptidase	w
+AMINOPEPTIDASE	human	Q9NQH7	XPNPEP3	Q9NQH7	5	122	Xaa-Pro aminopeptidase 3 (X-Pro aminopeptidase 3) (EC 3.4.11	w
+AMINOPEPTIDASE	human	Q9NQW7	XPNPEP1	Q9NQW7	1	170	Xaa-Pro aminopeptidase 1 (EC 3.4.11.9) (Aminoacylproline ami	w
+AMINOPEPTIDASE	human	Q9NXJ5	PGPEP1	Q9NXJ5	11	154	Pyroglutamyl-peptidase 1 (EC 3.4.19.3) (5-oxoprolyl-peptidas	w
+AMINOPEPTIDASE	human	Q9NY33	DPP3	Q9NY33	4	116	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
+AMINOPEPTIDASE	human	Q9NZ08	ERAP1	Q9NZ08	19	116	Endoplasmic reticulum aminopeptidase 1 (EC 3.4.11.-) (ARTS-1	w
+AMINOPEPTIDASE	human	Q9UHL4	DPP7	Q9UHL4	11	127	Dipeptidyl peptidase 2 (EC 3.4.14.2) (Dipeptidyl aminopeptid	w
+AMINOPEPTIDASE	human	Q9UIQ6	LNPEP	Q9UIQ6	36	227	Leucyl-cystinyl aminopeptidase (Cystinyl aminopeptidase) (EC	w
+AMINOPEPTIDASE	human	Q9ULA0	DNPEP	Q9ULA0	3	186	Aspartyl aminopeptidase (EC 3.4.11.21)	w
+AMINOPEPTIDASE	human	Q9UQQ1	NAALADL1	Q9UQQ1	12	62	Aminopeptidase NAALADL1 (EC 3.4.11.-) (100 kDa ileum brush b	w
+AMINOPEPTIDASE	virus	A0A346FRD3	AKMV-88-041	A0A346FRD3	11	214	Serine aminopeptidase S33 domain-containing protein	w
+AMINOPEPTIDASE	worm	G5EFT4	ltah-1.1	G5EFT4	0	3	Aminopeptidase ltah-1.1	w
+AMINOPEPTIDASE	worm	H1UBK1	map-2	H1UBK1	3	44	Methionine aminopeptidase 2	w
+AMINOPEPTIDASE	worm	O44183	ltah-1.2	O44183	0	3	Peptidase M1 leukotriene A4 hydrolase/aminopeptidase C-termi	w
+AMINOPEPTIDASE	worm	O44750	app-1	O44750	1	27	Xaa-Pro aminopeptidase app-1	w
+AMINOPEPTIDASE	worm	O61710	icpp-55	O61710	1	8	Aminopeptidase P N-terminal domain-containing protein	w
+AMINOPEPTIDASE	worm	P34629	lap-1	P34629	0	48	Leucine aminopeptidase 1	w
+AMINOPEPTIDASE	worm	Q19087	dnpp-1	Q19087	0	37	Aspartyl aminopeptidase	w
+AMINOPEPTIDASE	worm	Q20520	pepm-1	Q20520	0	1	Aminopeptidase N-like N-terminal domain-containing protein	w
+AMINOPEPTIDASE	worm	Q20521	CELE_F47B8.8	Q20521	1	3	Aminopeptidase N-like N-terminal domain-containing protein	w
+AMINOPEPTIDASE	worm	Q22317	anp-1	Q22317	0	1	Aminopeptidase	w
+AMINOPEPTIDASE	worm	Q27245	lap-2	Q27245	0	26	Putative aminopeptidase W07G4.4	w
+AMINOPEPTIDASE	worm	Q4TT88	pam-1	Q4TT88	0	4	Puromycin-sensitive aminopeptidase	w
+AMINOPEPTIDASE	worm	Q5FC17	CELE_Y41E3.18	Q5FC17	0	2	Serine aminopeptidase S33 domain-containing protein	w
+AMINOPEPTIDASE	worm	Q7JKU8	CELE_F01D5.7	Q7JKU8	0	25	Serine aminopeptidase S33 domain-containing protein	w
+AMINOPEPTIDASE	worm	Q965S2	abhd-12	Q965S2	0	1	Serine aminopeptidase S33 domain-containing protein	w
+AMINOPEPTIDASE	worm	Q965Y1	map-1	Q965Y1	5	29	Methionine aminopeptidase	w
+AMINOPEPTIDASE	worm	Q9XVA7	CELE_F01D5.8	Q9XVA7	0	1	Serine aminopeptidase S33 domain-containing protein	w
+AMINOPEPTIDASE	yeast	P14904	APE1	P14904	1	43	Vacuolar aminopeptidase 1	w
+AMINOPEPTIDASE	yeast	P18962	DAP2	P18962	0	13	Dipeptidyl aminopeptidase B	w
+AMINOPEPTIDASE	yeast	P32454	APE2	P32454	2	58	Aminopeptidase 2, mitochondrial	w
+AMINOPEPTIDASE	yeast	P33894	STE13	P33894	2	10	Dipeptidyl aminopeptidase A	w
+AMINOPEPTIDASE	yeast	P37302	APE3	P37302	0	10	Aminopeptidase Y	w
+AMINOPEPTIDASE	yeast	P37898	AAP1	P37898	4	139	Alanine/arginine aminopeptidase	w
+AMINOPEPTIDASE	yeast	P38174	MAP2	P38174	3	55	Methionine aminopeptidase 2	w
+AMINOPEPTIDASE	yeast	P38821	APE4	P38821	0	16	Aspartyl aminopeptidase 4	w
+AMINOPEPTIDASE	yeast	Q01662	MAP1	Q01662	14	60	Methionine aminopeptidase 1	w
+AMINOPEPTIDASE	yeast	Q04033	YDR415C	Q04033	0	7	Probable aminopeptidase YDR415C	w
+AMINOPEPTIDASE	yeast	Q07825	FRA1	Q07825	1	13	Putative Xaa-Pro aminopeptidase FRA1	w
+AMINOPEPTIDASE	yeast	Q10740	LAP2	Q10740	0	14	Leucine aminopeptidase 2	w
+AMINOPEPTIDASE	zebrafish	A0A0R4IIN9	lnpep	A0A0R4IIN9	0	16	Leucyl-cystinyl aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	A0A286YAT8	si:ch211-147g22.5	A0A286YAT8	1	11	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	A0A8M1PE71	erap1b	A0A8M1PE71	0	2	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	A0A8M2BCU9	erap2	A0A8M2BCU9	0	2	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	A0A8M3AWF2	erap1a	A0A8M3AWF2	0	1	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	A2BGQ8	naaladl1	A2BGQ8	1	7	Aminopeptidase NAALADL1	w
+AMINOPEPTIDASE	zebrafish	A2BIC6	lap3	A2BIC6	0	20	Cytosol aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	A5WVX8	metap2a	A5WVX8	5	103	Methionine aminopeptidase 2	w
+AMINOPEPTIDASE	zebrafish	B8JIB4	enpep	B8JIB4	0	15	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	E7F123	anpepa	E7F123	1	11	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	E7F2N2	anpepla	E7F2N2	2	11	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	F1QRP8	dnpep	F1QRP8	0	11	Aspartyl aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	Q1LWJ7	anpeplb	Q1LWJ7	0	8	Aminopeptidase	w
+AMINOPEPTIDASE	zebrafish	Q4QRK0	metap1	Q4QRK0	23	100	Methionine aminopeptidase 1	w
+AMINOPEPTIDASE	zebrafish	Q4VBS4	metap1d	Q4VBS4	0	1	Methionine aminopeptidase 1D, mitochondrial	w
+AMINOPEPTIDASE	zebrafish	Q6P1S3	xpnpep1	Q6P1S3	0	6	Xaa-Pro aminopeptidase 1	w
+AMINOPEPTIDASE	zebrafish	Q6ZM25	xpnpep2	Q6ZM25	0	6	X-prolyl aminopeptidase (aminopeptidase P) 2, membrane-bound	w
+AMINOPEPTIDASE-LIKE	human	A6NEC2	NPEPPSL1	A6NEC2	1	9	Puromycin-sensitive aminopeptidase-like protein (EC 3.4.11.-	w
+AMINOPEPTIDASE-LIKE	human	P42658	DPP6	P42658	5	42	A-type potassium channel modulatory protein DPP6 (DPPX) (Dip	w
+AMINOPEPTIDASE-LIKE	human	Q8NDH3	NPEPL1	Q8NDH3	2	64	Probable aminopeptidase NPEPL1 (EC 3.4.11.-) (Aminopeptidase	w
+AMINOPEPTIDASE-LIKE	human	Q9HAU8	RNPEPL1	Q9HAU8	4	28	Aminopeptidase RNPEPL1 (EC 3.4.11.-) (Arginyl aminopeptidase	w
+AMINOPEPTIDASE-LIKE	worm	Q17405	AC3.5	Q17405	0	1	Aminopeptidase-like protein AC3.5	w
+AMINOPEPTIDASE-LIKE	zebrafish	E7F5R8	dpp6b	E7F5R8	2	24	Dipeptidyl aminopeptidase-like protein 6b isoform X1	w
+AMINOPEPTIDASE-RELATED	human	P42658	DPP6	P42658	5	42	A-type potassium channel modulatory protein DPP6 (DPPX) (Dip	w
+AMINOPHOSPHOLIPID	human	O60312	ATP10A	O60312	3	43	Phospholipid-transporting ATPase VA (EC 7.6.2.1) (ATPase cla	w
+AMINOPROPYLTRANSFERASE	human	P19623	SRM	P19623	5	115	Spermidine synthase (SPDSY) (EC 2.5.1.16) (Putrescine aminop	w
+AMINOPROPYLTRANSFERASE	human	P52788	SMS	P52788	3	154	Spermine synthase (SPMSY) (EC 2.5.1.22) (Spermidine aminopro	w
+AMINOTRAN	worm	Q9N4F1	CELE_Y71H2B.5	Q9N4F1	0	5	Aminotran_5 domain-containing protein	w
+AMINOTRANSFER	human	Q6YP21	KYAT3	Q6YP21	5	77	Kynurenine--oxoglutarate transaminase 3 (EC 2.6.1.7) (Cystei	w
+AMINOTRANSFERASE	fly	FBgn0001125	Got2	Q8IPY3	18	260	Aspartate aminotransferase (EC 2.6.1.1)	w
+AMINOTRANSFERASE	fly	FBgn0014031	Agxt	Q9W3Z3	2	61	Alanine--glyoxylate aminotransferase (AGT) (EC 2.6.1.44)	w
+AMINOTRANSFERASE	fly	FBgn0014427	Psat	Q9VAN0	1	86	Probable phosphoserine aminotransferase (PSAT) (EC 2.6.1.52)	w
+AMINOTRANSFERASE	fly	FBgn0022774	Oat	Q9VW26	1	61	Ornithine aminotransferase, mitochondrial (EC 2.6.1.13) (Orn	w
+AMINOTRANSFERASE	fly	FBgn0030482	Bcat	Q9VYD5	1	53	Branched-chain-amino-acid aminotransferase (EC 2.6.1.42)	w
+AMINOTRANSFERASE	fly	FBgn0030558	Tat	Q9VY42	3	46	Tyrosine aminotransferase (TAT) (EC 2.6.1.5)	w
+AMINOTRANSFERASE	fly	FBgn0036381	CG8745	Q9VU95	0	19	Alanine--glyoxylate aminotransferase 2-like (EC 4.2.3.-)	w
+AMINOTRANSFERASE	fly	FBgn0036927	Gabat	Q9VW68	0	39	(S)-3-amino-2-methylpropionate transaminase (EC 2.6.1.19) (E	w
+AMINOTRANSFERASE	human	O15382	BCAT2	O15382	2	63	Branched-chain-amino-acid aminotransferase, mitochondrial (B	w
+AMINOTRANSFERASE	human	O94808	GFPT2	O94808	7	161	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+AMINOTRANSFERASE	human	P00505	GOT2	P00505	9	209	Aspartate aminotransferase, mitochondrial (mAspAT) (EC 2.6.1	w
+AMINOTRANSFERASE	human	P04181	OAT	P04181	10	235	Ornithine aminotransferase, mitochondrial (EC 2.6.1.13) (Orn	w
+AMINOTRANSFERASE	human	P17174	GOT1	P17174	10	318	Aspartate aminotransferase, cytoplasmic (cAspAT) (EC 2.6.1.1	w
+AMINOTRANSFERASE	human	P17735	TAT	P17735	4	52	Tyrosine aminotransferase (TAT) (EC 2.6.1.5) (L-tyrosine:2-o	w
+AMINOTRANSFERASE	human	P21549	AGXT	P21549	5	85	Alanine--glyoxylate aminotransferase (AGT) (EC 2.6.1.44) (Se	w
+AMINOTRANSFERASE	human	P24298	GPT	P24298	4	86	Alanine aminotransferase 1 (ALT1) (EC 2.6.1.2) (Glutamate py	w
+AMINOTRANSFERASE	human	P54687	BCAT1	P54687	5	100	Branched-chain-amino-acid aminotransferase, cytosolic (BCAT(	w
+AMINOTRANSFERASE	human	P80404	ABAT	P80404	2	89	4-aminobutyrate aminotransferase, mitochondrial (EC 2.6.1.19	w
+AMINOTRANSFERASE	human	Q06210	GFPT1	Q06210	9	259	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
+AMINOTRANSFERASE	human	Q6YP21	KYAT3	Q6YP21	5	77	Kynurenine--oxoglutarate transaminase 3 (EC 2.6.1.7) (Cystei	w
+AMINOTRANSFERASE	human	Q8IUZ5	PHYKPL	Q8IUZ5	4	73	5-phosphohydroxy-L-lysine phospho-lyase (EC 4.2.3.134) (Alan	w
+AMINOTRANSFERASE	human	Q8N5Z0	AADAT	Q8N5Z0	1	38	Kynurenine/alpha-aminoadipate aminotransferase, mitochondria	w
+AMINOTRANSFERASE	human	Q8NHS2	GOT1L1	Q8NHS2	3	41	Aspartate aminotransferase, cytoplasmic 2 (EC 2.6.1.1) (Glut	w
+AMINOTRANSFERASE	human	Q8TBG4	ETNPPL	Q8TBG4	4	31	Ethanolamine-phosphate phospho-lyase (EC 4.2.3.2) (Alanine--	w
+AMINOTRANSFERASE	human	Q8TD30	GPT2	Q8TD30	8	145	Alanine aminotransferase 2 (ALT2) (EC 2.6.1.2) (Glutamate py	w
+AMINOTRANSFERASE	human	Q9BYV1	AGXT2	Q9BYV1	4	71	Alanine--glyoxylate aminotransferase 2, mitochondrial (AGT 2	w
+AMINOTRANSFERASE	human	Q9Y617	PSAT1	Q9Y617	2	162	Phosphoserine aminotransferase (EC 2.6.1.52) (Phosphohydroxy	w
+AMINOTRANSFERASE	worm	O01804	got-2.1	O01804	3	20	Aspartate aminotransferase	w
+AMINOTRANSFERASE	worm	O02158	CELE_T09B4.8	O02158	0	33	Alanine--glyoxylate aminotransferase 2, mitochondrial	w
+AMINOTRANSFERASE	worm	P54688	bcat-1	P54688	2	30	Branched-chain-amino-acid aminotransferase, cytosolic	w
+AMINOTRANSFERASE	worm	P91856	F26H9.5	P91856	0	14	Probable phosphoserine aminotransferase	w
+AMINOTRANSFERASE	worm	Q17994	got-2.2	Q17994	2	61	Aspartate aminotransferase	w
+AMINOTRANSFERASE	worm	Q18040	oatr-1	Q18040	0	8	Probable ornithine aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	worm	Q21217	gta-1	Q21217	0	50	Probable 4-aminobutyrate aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	worm	Q22067	got-1.2	Q22067	2	22	Aspartate aminotransferase, cytoplasmic	w
+AMINOTRANSFERASE	worm	Q22768	CELE_T25B9.1	Q22768	0	16	Aminotransferase class I/classII large domain-containing pro	w
+AMINOTRANSFERASE	worm	Q93703	tatn-1	Q93703	0	3	Tyrosine aminotransferase	w
+AMINOTRANSFERASE	worm	Q94055	agxt-1	Q94055	0	25	Alanine--glyoxylate aminotransferase	w
+AMINOTRANSFERASE	worm	Q9XXD8	CELE_Y44A6D.5	Q9XXD8	1	3	Branched-chain-amino-acid aminotransferase	w
+AMINOTRANSFERASE	yeast	P07172	HIS5	P07172	0	11	Histidinol-phosphate aminotransferase	w
+AMINOTRANSFERASE	yeast	P07991	CAR2	P07991	0	22	Ornithine aminotransferase	w
+AMINOTRANSFERASE	yeast	P14742	GFA1	P14742	3	125	Glutamine--fructose-6-phosphate aminotransferase	w
+AMINOTRANSFERASE	yeast	P17649	UGA1	P17649	0	4	4-aminobutyrate aminotransferase	w
+AMINOTRANSFERASE	yeast	P18544	ARG8	P18544	0	5	Acetylornithine aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	yeast	P23542	AAT2	P23542	1	32	Aspartate aminotransferase, cytoplasmic	w
+AMINOTRANSFERASE	yeast	P33330	SER1	P33330	0	26	Phosphoserine aminotransferase	w
+AMINOTRANSFERASE	yeast	P38840	ARO9	P38840	1	19	Aromatic amino acid aminotransferase 2	w
+AMINOTRANSFERASE	yeast	P38891	BAT1	P38891	1	21	Branched-chain-amino-acid aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	yeast	P43567	AGX1	P43567	0	13	Alanine--glyoxylate aminotransferase 1	w
+AMINOTRANSFERASE	yeast	P47176	BAT2	P47176	1	15	Branched-chain-amino-acid aminotransferase, cytosolic	w
+AMINOTRANSFERASE	yeast	P50277	BIO3	P50277	0	11	Adenosylmethionine-8-amino-7-oxononanoate aminotransferase	w
+AMINOTRANSFERASE	yeast	P52892	ALT2	P52892	1	14	Inactive alanine aminotransferase	w
+AMINOTRANSFERASE	yeast	P52893	ALT1	P52893	2	14	Alanine aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	yeast	P53090	ARO8	P53090	1	20	Aromatic/aminoadipate aminotransferase 1	w
+AMINOTRANSFERASE	yeast	Q01802	AAT1	Q01802	2	13	Aspartate aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	zebrafish	A0A8M3AYQ7	bcat1	A0A8M3AYQ7	1	2	Branched-chain-amino-acid aminotransferase	w
+AMINOTRANSFERASE	zebrafish	E9QFU8	bcat2	E9QFU8	1	2	Branched-chain-amino-acid aminotransferase	w
+AMINOTRANSFERASE	zebrafish	F1QAI8	kyat1	F1QAI8	1	5	Kynurenine aminotransferase 1	w
+AMINOTRANSFERASE	zebrafish	F8W5L3	oat	F8W5L3	10	91	Ornithine aminotransferase	w
+AMINOTRANSFERASE	zebrafish	I3IRW7	abat	I3IRW7	0	1	4-aminobutyrate aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	zebrafish	Q6DRK9	surf6	Q6DRK9	6	37	Kynurenine aminotransferase 1	w
+AMINOTRANSFERASE	zebrafish	Q6NYL5	gpt2l	Q6NYL5	2	7	Alanine aminotransferase 2-like	w
+AMINOTRANSFERASE	zebrafish	Q6PHK4	agxtb	Q6PHK4	1	10	Alanine--glyoxylate aminotransferase	w
+AMINOTRANSFERASE	zebrafish	Q7SYK7	got2a	Q7SYK7	4	45	Aspartate aminotransferase, mitochondrial	w
+AMINOTRANSFERASE	zebrafish	Q7ZUW8	got1	Q7ZUW8	2	20	Aspartate aminotransferase	w
+AMINOTRANSFERASE	zebrafish	Q803I7	psat1	Q803I7	0	21	Phosphoserine aminotransferase	w
+AMINOTRIAZOLE	yeast	P13090	ATR1	P13090	0	6	Aminotriazole resistance protein	w
+AMIR	pseudomonas-aeruginosa	P10932	amiR	P10932	0	1	Aliphatic amidase regulator	
+AMISYN	human	Q8NFX7	STXBP6	Q8NFX7	13	110	Syntaxin-binding protein 6 (Amisyn)	w
+AMISYN	zebrafish	A0A8M1N6F3	stxbp6l	A0A8M1N6F3	4	28	Syntaxin-binding protein 6 (amisyn),-like	w

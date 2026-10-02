@@ -1,18 +1,51 @@
-SDC	arabidopsis-thaliana	Q3EBY8	SDC	Q3EBY8	2	2	F-box protein At2g17690
-SDC	arabidopsis-thaliana	Q9MA74	SDC	Q9MA74	0	2	Serine decarboxylase
-SDC1	candida-albicans-237561	A0A1D8PNX3	SDC1	A0A1D8PNX3	1	32	Sdc1p
-SDC1	mus-musculus	P18828	Sdc1	P18828	3	111	Syndecan-1
-SDC1	rattus-norvegicus	P26260	Sdc1	P26260	3	125	Syndecan-1
-SDC1	schizosaccharomyces-pombe	O74861	sdc1	O74861	4	36	Set1 complex component sdc1
-SDC2	mus-musculus	P43407	Sdc2	P43407	3	27	Syndecan-2
-SDC2	rattus-norvegicus	P34900	Sdc2	P34900	10	52	Syndecan-2
-SDC3	mus-musculus	Q64519	Sdc3	Q64519	1	34	Syndecan-3
-SDC3	rattus-norvegicus	P33671	Sdc3	P33671	1	32	Syndecan-3
-SDC4	mus-musculus	O35988	Sdc4	O35988	4	81	Syndecan-4
-SDC4	rattus-norvegicus	P34901	Sdc4	P34901	5	82	Syndecan-4
-SDCBP	mus-musculus	O08992	Sdcbp	O08992	5	89	Syntenin-1
-SDCBP	rattus-norvegicus	Q9JI92	Sdcbp	Q9JI92	5	86	Syntenin-1
-SDCBP2	mus-musculus	Q99JZ0	Sdcbp2	Q99JZ0	4	21	Syntenin-2
-SDCBP2	rattus-norvegicus	Q4KLN0	Sdcbp2	Q4KLN0	5	28	Syntenin-2
-SDCCAG8	mus-musculus	Q80UF4	Sdccag8	Q80UF4	6	12	Serologically defined colon cancer antigen 8 homolog
-SDCCAG8	rattus-norvegicus	A0A0G2JUD0	Sdccag8	A0A0G2JUD0	4	11	SHH signaling and ciliogenesis regulator SDCCAG8
+SDC	arabidopsis-thaliana	Q3EBY8	SDC	Q3EBY8	2	2	F-box protein At2g17690	
+SDC	arabidopsis-thaliana	Q9MA74	SDC	Q9MA74	0	2	Serine decarboxylase	
+SDC	fly	FBgn0010415	Sdc	E1JGQ9	948	2472	Syndecan	
+SDC	human	P18827	SDC1	P18827	40	295		
+SDC-1	worm	P24349	sdc-1	P24349	0	3	Zinc finger protein sdc-1	w
+SDC-1	worm	P24349	sdc-1	P24349	0	3	Zinc finger protein sdc-1	w
+SDC1	candida-albicans-237561	A0A1D8PNX3	SDC1	A0A1D8PNX3	1	32	Sdc1p	
+SDC1	human	P18827	SDC1	P18827	40	295	Syndecan-1 (SYND1) (CD antigen CD138)	
+SDC1	mus-musculus	P18828	Sdc1	P18828	3	111	Syndecan-1	
+SDC1	rattus-norvegicus	P26260	Sdc1	P26260	3	125	Syndecan-1	
+SDC1	schizosaccharomyces-pombe	O74861	sdc1	O74861	4	36	Set1 complex component sdc1	
+SDC1	yeast	Q03323	SDC1	Q03323	3	74	COMPASS component SDC1	
+SDC1_HUMAN	human	P18827	SDC1	P18827	40	295		
+SDC2	human	P34741	SDC2	P34741	36	221	Syndecan-2 (SYND2) (Fibroglycan) (Heparan sulfate proteoglyc	
+SDC2	mus-musculus	P43407	Sdc2	P43407	3	27	Syndecan-2	
+SDC2	rattus-norvegicus	P34900	Sdc2	P34900	10	52	Syndecan-2	
+SDC2_HUMAN	human	P34741	SDC2	P34741	36	221		
+SDC3	human	O75056	SDC3	O75056	11	111	Syndecan-3 (SYND3)	
+SDC3	mus-musculus	Q64519	Sdc3	Q64519	1	34	Syndecan-3	
+SDC3	rattus-norvegicus	P33671	Sdc3	P33671	1	32	Syndecan-3	
+SDC3_HUMAN	human	O75056	SDC3	O75056	11	111		
+SDC4	human	P31431	SDC4	P31431	42	273	Syndecan-4 (SYND4) (Amphiglycan) (Ryudocan core protein)	
+SDC4	mus-musculus	O35988	Sdc4	O35988	4	81	Syndecan-4	
+SDC4	rattus-norvegicus	P34901	Sdc4	P34901	5	82	Syndecan-4	
+SDC4	zebrafish	A0A8M1NAW7	sdc4	A0A8M1NAW7	1	43	Syndecan-4 precursor	
+SDC4_HUMAN	human	P31431	SDC4	P31431	42	273		
+SDCB1_HUMAN	human	O00560	SDCBP	O00560	23	544		
+SDCB2_HUMAN	human	Q9H190	SDCBP2	Q9H190	9	155		
+SDCBP	human	O00560	SDCBP	O00560	23	544	Syntenin-1 (Melanoma differentiation-associated protein 9) (	
+SDCBP	mus-musculus	O08992	Sdcbp	O08992	5	89	Syntenin-1	
+SDCBP	rattus-norvegicus	Q9JI92	Sdcbp	Q9JI92	5	86	Syntenin-1	
+SDCBP	zebrafish	F1QFG9	sdcbp	F1QFG9	5	34	Syndecan-binding protein (syntenin)	
+SDCBP	zebrafish	Q803J6	sdcbp2	Q803J6	5	29	Sdcbp protein	w
+SDCBP2	human	Q9H190	SDCBP2	Q9H190	9	155	Syntenin-2 (Similar to TACIP18) (SITAC) (Syndecan-binding pr	
+SDCBP2	mus-musculus	Q99JZ0	Sdcbp2	Q99JZ0	4	21	Syntenin-2	
+SDCBP2	rattus-norvegicus	Q4KLN0	Sdcbp2	Q4KLN0	5	28	Syntenin-2	
+SDCBP2	zebrafish	Q803J6	sdcbp2	Q803J6	5	29	Sdcbp protein	
+SDCCAG1	human	O60524	NEMF	O60524	20	289		
+SDCCAG10	human	Q6UX04	CWC27	Q6UX04	52	210		
+SDCCAG16	human	Q9BVJ6	UTP14A	Q9BVJ6	61	381		
+SDCCAG28	human	Q9Y365	STARD10	Q9Y365	11	86		
+SDCCAG3	human	Q96C92	ENTR1	Q96C92	68	215		
+SDCCAG33	human	Q6ZSZ6	TSHZ1	Q6ZSZ6	31	111		
+SDCCAG43	human	Q9Y3S1	WNK2	Q9Y3S1	35	92		
+SDCCAG8	human	Q86SQ7	SDCCAG8	Q86SQ7	52	133	Serologically defined colon cancer antigen 8 (Antigen NY-CO-	
+SDCCAG8	mus-musculus	Q80UF4	Sdccag8	Q80UF4	6	12	Serologically defined colon cancer antigen 8 homolog	
+SDCCAG8	rattus-norvegicus	A0A0G2JUD0	Sdccag8	A0A0G2JUD0	4	11	SHH signaling and ciliogenesis regulator SDCCAG8	
+SDCCAG8	zebrafish	B8JK76	Sdccag8	B8JK76	1	3	Serologically defined colon cancer antigen 8 homolog	
+SDCG8_HUMAN	human	Q86SQ7	SDCCAG8	Q86SQ7	52	133		
+SDCT1	human	Q13183	SLC13A2	Q13183	6	46		
+SDCT2	human	Q8WWT9	SLC13A3	Q8WWT9	4	32		

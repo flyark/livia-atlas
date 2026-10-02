@@ -1,24 +1,957 @@
-LARGE1	mus-musculus	Q9Z1M7	Large1	Q9Z1M7	1	16	Xylosyl- and glucuronyltransferase LARGE1
-LARGE1	rattus-norvegicus	A0A0G2K618	Large1	A0A0G2K618	0	15	LARGE xylosyl- and glucuronyltransferase 1
-LARGE2	mus-musculus	Q5XPT3	Large2	Q5XPT3	1	3	Xylosyl- and glucuronyltransferase LARGE2
-LARGE2	rattus-norvegicus	Q6P7A1	Large2	Q6P7A1	0	3	Xylosyl- and glucuronyltransferase LARGE2
-LARP1	mus-musculus	Q6ZQ58	Larp1	Q6ZQ58	5	79	La-related protein 1
-LARP1	rattus-norvegicus	F1M062	Larp1	F1M062	3	31	La ribonucleoprotein 1, translational regulator
-LARP1A	arabidopsis-thaliana	Q940X9	LARP1A	Q940X9	2	11	La-related protein 1A
-LARP1B	arabidopsis-thaliana	Q8RWR2	LARP1B	Q8RWR2	0	8	La-related protein 1B
-LARP1B	mus-musculus	F6U5V1	Larp1b	F6U5V1	2	4	La ribonucleoprotein 1B
-LARP1C	arabidopsis-thaliana	Q94K80	LARP1C	Q94K80	2	8	La-related protein 1C
-LARP4	mus-musculus	Q8BWW4	Larp4	Q8BWW4	8	67	La-related protein 4
-LARP4	rattus-norvegicus	A0A0G2K8A9	Larp4	A0A0G2K8A9	0	20	La ribonucleoprotein 4
-LARP4B	mus-musculus	Q6A0A2	Larp4b	Q6A0A2	0	42	La-related protein 4B
-LARP4B	rattus-norvegicus	D3ZF45	Larp4b	D3ZF45	2	38	La ribonucleoprotein 4B
-LARP6A	arabidopsis-thaliana	Q94A38	LARP6A	Q94A38	1	1	La-related protein 6A
-LARP6B	arabidopsis-thaliana	O80567	LARP6B	O80567	3	5	La-related protein 6B
-LARP6C	arabidopsis-thaliana	Q9LHL3	LARP6C	Q9LHL3	1	1	La-related protein 6C
-LARP7	mus-musculus	Q05CL8	Larp7	Q05CL8	3	30	La-related protein 7
-LARP7	rattus-norvegicus	Q5XI01	Larp7	Q5XI01	2	29	La-related protein 7
-LARP7-PS	mus-musculus	A2AMD0	Larp7-ps	A2AMD0	2	9	La ribonucleoprotein 7, transcriptional regulator, pseudogene
-LARS1	mus-musculus	Q8BMJ2	Lars1	Q8BMJ2	1	56	Leucine--tRNA ligase, cytoplasmic
-LARS1	rattus-norvegicus	Q5PPJ6	Lars1	Q5PPJ6	0	41	Leucine--tRNA ligase, cytoplasmic
-LARS2	mus-musculus	Q8VDC0	Lars2	Q8VDC0	0	38	Probable leucine--tRNA ligase, mitochondrial
-LARS2	rattus-norvegicus	A0A0G2K9E5	Lars2	A0A0G2K9E5	0	38	leucine--tRNA ligase
+LAR	fly	FBgn0000464	Lar	M9PD76	247	2869	protein-tyrosine-phosphatase (EC 3.1.3.48)	
+LAR	human	P10586	PTPRF	P10586	42	309		
+LAR-INTERACTING	human	Q13136	PPFIA1	Q13136	103	338	Liprin-alpha-1 (LAR-interacting protein 1) (LIP-1) (Protein 	w
+LAR-INTERACTING	worm	Q94071	hlb-1	Q94071	10	46	Liprin-beta homolog (LAR-interacting protein beta)	w
+LAR1B_HUMAN	human	Q659C4	LARP1B	Q659C4	18	166		
+LAR4B_HUMAN	human	Q92615	LARP4B	Q92615	51	280		
+LARC	human	P78556	CCL20	P78556	74	529		
+LARG	human	Q9NZN5	ARHGEF12	Q9NZN5	80	240		
+LARG1_HUMAN	human	O95461	LARGE1	O95461	6	94		
+LARG2_HUMAN	human	Q8N3Y3	LARGE2	Q8N3Y3	8	96		
+LARGE	fly	FBgn0000100	RpLP0	P19889	31	395	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
+LARGE	fly	FBgn0001624	dlg1	E1JJH5	28	182	Discs large 1, isoform M (EC 2.7.4.8)	w
+LARGE	fly	FBgn0001995	mRpL4	Q9V3D0	17	408	Large ribosomal subunit protein uL4m	w
+LARGE	fly	FBgn0002579	RpL36	P49630	37	305	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
+LARGE	fly	FBgn0002593	RpLP1	P08570	22	303	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
+LARGE	fly	FBgn0002626	RpL32	A0A1B3Q3R0	23	329	Large ribosomal subunit protein eL32 (60S ribosomal protein 	w
+LARGE	fly	FBgn0003274	RpLP2	P05389	21	233	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
+LARGE	fly	FBgn0003279	RpL4	P09180	46	550	Large ribosomal subunit protein uL4 (60S ribosomal protein L	w
+LARGE	fly	FBgn0003941	RpL40	P18101	16	135	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) [Cle	w
+LARGE	fly	FBgn0005411	U2af50	M9NF89	14	97	Splicing factor U2AF subunit (U2 snRNP auxiliary factor larg	w
+LARGE	fly	FBgn0005593	RpL7	P32100	29	372	Large ribosomal subunit protein uL30 (60S ribosomal protein 	w
+LARGE	fly	FBgn0010078	RpL23	P48159	47	452	Large ribosomal subunit protein uL14 (60S ribosomal protein 	w
+LARGE	fly	FBgn0010282	TfIIFalpha	Q05913	107	524	General transcription factor IIF subunit 1 (Transcription fa	w
+LARGE	fly	FBgn0010409	RpL18A	P41093	28	348	Large ribosomal subunit protein eL20 (60S ribosomal protein 	w
+LARGE	fly	FBgn0011272	RpL13	P41126	31	326	Large ribosomal subunit protein eL13 (60S ribosomal protein 	w
+LARGE	fly	FBgn0011703	RnrL	P48591	13	205	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
+LARGE	fly	FBgn0013325	RpL11	P46222	29	420	Large ribosomal subunit protein uL5 (60S ribosomal protein L	w
+LARGE	fly	FBgn0014023	mRpL47	Q8T3V6	15	242	Large ribosomal subunit protein uL29m	w
+LARGE	fly	FBgn0014026	RpL7A	P46223	31	407	Large ribosomal subunit protein eL8 (60S ribosomal protein L	w
+LARGE	fly	FBgn0015288	RpL22	P50887	41	351	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
+LARGE	fly	FBgn0015756	RpL9	P50882	29	443	Large ribosomal subunit protein uL6 (60S ribosomal protein L	w
+LARGE	fly	FBgn0015828	TfIIEalpha	O96880	70	485	GH11150p (TFIIE large subunit) (Transcription factor IIEalph	w
+LARGE	fly	FBgn0016726	RpL29	Q24154	28	230	Large ribosomal subunit protein eL29 (60S ribosomal protein 	w
+LARGE	fly	FBgn0017579	RpL14	P55841	33	310	Large ribosomal subunit protein eL14 (60S ribosomal protein 	w
+LARGE	fly	FBgn0020910	RpL3	O16797	39	466	Large ribosomal subunit protein uL3 (60S ribosomal protein L	w
+LARGE	fly	FBgn0023170	RpL39	O16130	16	284	Large ribosomal subunit protein eL39 (60S ribosomal protein 	w
+LARGE	fly	FBgn0023519	mRpL16	Q9W547	16	313	Large ribosomal subunit protein uL16m (39S ribosomal protein	w
+LARGE	fly	FBgn0024733	RpL10	O61231	81	748	Large ribosomal subunit protein uL16 (60S ribosomal protein 	w
+LARGE	fly	FBgn0027620	Acf	Q9V9T4	10	90	ATP-dependent chromatin assembly factor large subunit	w
+LARGE	fly	FBgn0028648	mRpL50	Q9V3E3	3	11	Large ribosomal subunit protein mL50 (39S ribosomal protein 	w
+LARGE	fly	FBgn0028697	RpL15	O17445	41	340	Large ribosomal subunit protein eL15 (60S ribosomal protein 	w
+LARGE	fly	FBgn0029718	mRpL30	Q9W4I3	7	174	Large ribosomal subunit protein uL30m (39S ribosomal protein	w
+LARGE	fly	FBgn0029897	RpL17	Q9W3W8	47	430	Large ribosomal subunit protein uL22 (60S ribosomal protein 	w
+LARGE	fly	FBgn0030433	mRpL49	Q9VYI3	5	201	Large ribosomal subunit protein mL49 (39S ribosomal protein 	w
+LARGE	fly	FBgn0030552	mRpL38	Q9VY48	15	118	Large ribosomal subunit protein mL38 (39S ribosomal protein 	w
+LARGE	fly	FBgn0030616	RpL37-1	Q9VXX8	19	228	Large ribosomal subunit protein eL37A (Probable 60S ribosoma	w
+LARGE	fly	FBgn0030686	mRpL3	Q9VXQ0	27	425	Large ribosomal subunit protein uL3m (39S ribosomal protein 	w
+LARGE	fly	FBgn0030786	mRpL22	Q9VXB5	20	410	Large ribosomal subunit protein uL22m (39S ribosomal protein	w
+LARGE	fly	FBgn0031231	mRpL10	Q9VPL3	21	243	Large ribosomal subunit protein uL10m (39S ribosomal protein	w
+LARGE	fly	FBgn0031252	CG13690	Q9VPP5	4	37	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	w
+LARGE	fly	FBgn0031651	mRpL24	Q9VMY1	11	362	Large ribosomal subunit protein uL24m (39S ribosomal protein	w
+LARGE	fly	FBgn0031660	mRpL28	Q9VMX0	12	147	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+LARGE	fly	FBgn0031980	RpL36A	Q9VLT7	12	238	Large ribosomal subunit protein eL42	w
+LARGE	fly	FBgn0032053	mRpL51	Q9VLJ9	6	135	Large ribosomal subunit protein mL51 (39S ribosomal protein 	w
+LARGE	fly	FBgn0032261	CG6094	Q9VKU3	13	185	Large ribosomal subunit protein mL62 (EC 3.1.1.29) (Peptidyl	w
+LARGE	fly	FBgn0032363	Dlg5	Q9VKG8	1	12	Discs large 5, isoform A (Discs large 5, isoform B) (LD32687	w
+LARGE	fly	FBgn0032518	RpL24	Q9VJY6	26	285	Large ribosomal subunit protein eL24 (60S ribosomal protein 	w
+LARGE	fly	FBgn0032720	mRpL13	Q9VJ38	23	417	Large ribosomal subunit protein uL13m (39S ribosomal protein	w
+LARGE	fly	FBgn0033208	mRpL52	Q7JWG9	12	149	Large ribosomal subunit protein mL52 (39S ribosomal protein 	w
+LARGE	fly	FBgn0033480	mRpL42	Q7K0A0	7	136	Large ribosomal subunit protein mL42	w
+LARGE	fly	FBgn0034001	mRpL41	Q7JZM8	10	196	Large ribosomal subunit protein mL41 (39S ribosomal protein 	w
+LARGE	fly	FBgn0034579	mRpL54	Q9W2M8	9	113	Large ribosomal subunit protein mL54	w
+LARGE	fly	FBgn0034822	RpL37-2	Q9W1U6	8	196	Large ribosomal subunit protein L37-2 (Large ribosomal subun	w
+LARGE	fly	FBgn0034834	LS2	Q9W1T4	11	51	Splicing factor U2AF subunit (U2 snRNP auxiliary factor larg	w
+LARGE	fly	FBgn0034837	RpL22-like	Q9W1T1	10	234	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
+LARGE	fly	FBgn0034893	mRpL43	Q9W1L1	18	247	Large ribosomal subunit protein mL43	w
+LARGE	fly	FBgn0034968	RpL12	Q9W1B9	47	414	Large ribosomal subunit protein uL11 (60S ribosomal protein 	w
+LARGE	fly	FBgn0035122	mRpL17	Q9W0S6	23	290	Large ribosomal subunit protein bL17m (39S ribosomal protein	w
+LARGE	fly	FBgn0035272	mRpL46	Q9W086	21	236	Large ribosomal subunit protein mL46 (39S ribosomal protein 	w
+LARGE	fly	FBgn0035335	mRpL23	Q9W021	7	200	Large ribosomal subunit protein uL23m (39S ribosomal protein	w
+LARGE	fly	FBgn0035422	RpL28	Q9VZS5	13	242	Large ribosomal subunit protein eL28 (60S ribosomal protein 	w
+LARGE	fly	FBgn0035753	RpL18	Q9VS34	41	340	Large ribosomal subunit protein eL18 (60S ribosomal protein 	w
+LARGE	fly	FBgn0035793	CG7546	B7Z0D3	9	34	Large proline-rich protein BAG6 (BCL2-associated athanogene 	w
+LARGE	fly	FBgn0036213	RpL10Ab	Q9VTP4	15	259	Large ribosomal subunit protein uL1 (60S ribosomal protein L	w
+LARGE	fly	FBgn0036462	mRpL39	Q9VUJ0	23	212	Large ribosomal subunit protein mL39 (39S ribosomal protein 	w
+LARGE	fly	FBgn0036825	RpL26	Q9VVU2	15	400	Large ribosomal subunit protein uL24 (60S ribosomal protein 	w
+LARGE	fly	FBgn0036853	mRpL21	Q9VVX4	7	231	Large ribosomal subunit protein bL21m	w
+LARGE	fly	FBgn0036990	mRpL15	Q9VPF6	26	399	Large ribosomal subunit protein uL15m (39S ribosomal protein	w
+LARGE	fly	FBgn0037102	CRIF	Q9VP13	11	159	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
+LARGE	fly	FBgn0037328	RpL35A	Q9VNB9	28	322	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
+LARGE	fly	FBgn0037330	mRpL44	Q9VNC1	9	200	Large ribosomal subunit protein mL44	w
+LARGE	fly	FBgn0037351	RpL13A	Q9VNE9	45	433	Large ribosomal subunit protein uL13 (60S ribosomal protein 	w
+LARGE	fly	FBgn0037566	mRpL1	Q9VHT5	25	312	Large ribosomal subunit protein uL1m	w
+LARGE	fly	FBgn0037608	mRpL19	Q9VHN6	22	266	Large ribosomal subunit protein bL19m (39S ribosomal protein	w
+LARGE	fly	FBgn0037686	RpL34b	Q9VHE5	13	252	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
+LARGE	fly	FBgn0037892	mRpL40	Q9VGP7	21	184	Large ribosomal subunit protein mL40	w
+LARGE	fly	FBgn0038234	mRpL11	Q9VFJ2	20	339	Large ribosomal subunit protein uL11m (39S ribosomal protein	w
+LARGE	fly	FBgn0038281	RpL10Aa	Q9VFE0	12	236	Large ribosomal subunit protein uL1	w
+LARGE	fly	FBgn0038319	mRpL9	Q9VF89	8	189	Large ribosomal subunit protein bL9m (39S ribosomal protein 	w
+LARGE	fly	FBgn0038678	mRpL55	Q9VE04	57	524	Large ribosomal subunit protein mL55 (39S ribosomal protein 	w
+LARGE	fly	FBgn0038923	mRpL35	Q8MS27	7	141	Large ribosomal subunit protein bL35m (39S ribosomal protein	w
+LARGE	fly	FBgn0039280	Mocs2B	Q9VBX2	16	57	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
+LARGE	fly	FBgn0039406	RpL34a	Q9VBH8	25	248	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
+LARGE	fly	FBgn0039835	mRpL32	Q9V9Z1	11	225	Large ribosomal subunit protein bL32m (39S ribosomal protein	w
+LARGE	fly	FBgn0039857	RpL6	Q9V9W3	29	302	Large ribosomal subunit protein eL6 (60S ribosomal protein L	w
+LARGE	fly	FBgn0040007	RpL38	Q9W5N2	24	321	Large ribosomal subunit protein eL38 (60S ribosomal protein 	w
+LARGE	fly	FBgn0040273	Spt5	Q9V460	40	232	Transcription elongation factor SPT5 (DRB sensitivity-induci	w
+LARGE	fly	FBgn0040389	mRpL14	Q9W4Z2	6	136	Large ribosomal subunit protein uL14m (39S ribosomal protein	w
+LARGE	fly	FBgn0040907	mRpL33	Q9W4L1	4	55	Large ribosomal subunit protein bL33m (39S ribosomal protein	w
+LARGE	fly	FBgn0050481	mRpL53	A1Z9J6	7	122	Large ribosomal subunit protein mL53 (39S ribosomal protein 	w
+LARGE	fly	FBgn0064225	RpL5	Q9W5R8	29	400	Large ribosomal subunit protein uL18 (60S ribosomal protein 	w
+LARGE	fly	FBgn0083983	mRpL34	Q0E959	1	1	Large ribosomal subunit protein bL34m (39S ribosomal protein	w
+LARGE	fly	FBgn0086710	RpL30	Q9VJ19	24	317	Large ribosomal subunit protein eL30 (60S ribosomal protein 	w
+LARGE	fly	FBgn0259676	Prim2	Q9VPH2	5	35	DNA primase large subunit (DNA polymerase subunit beta) (Sup	w
+LARGE	fly	FBgn0261380	mRpL37	Q9VGW9	2	21	Large ribosomal subunit protein mL37 (39S ribosomal protein 	w
+LARGE	fly	FBgn0261602	RpL8	Q9V3G1	15	451	Large ribosomal subunit protein uL2 (60S ribosomal protein L	w
+LARGE	fly	FBgn0261608	RpL37A	Q9VMU4	19	297	Large ribosomal subunit protein eL43 (60S ribosomal protein 	w
+LARGE	fly	FBgn0263863	mRpL45	Q9VCX3	9	132	Large ribosomal subunit protein mL45 (39S ribosomal protein 	w
+LARGE	fly	FBgn0266284	Ns3	Q9W590	5	169	Large subunit GTPase 1 homolog (EC 3.6.1.-) (Nucleostemin-3)	w
+LARGE	fly	FBgn0285948	RpL27A	P41092	21	404	Large ribosomal subunit protein uL15 (60S ribosomal protein 	w
+LARGE	fly	FBgn0285949	RpL31	Q9V597	15	346	Large ribosomal subunit protein eL31 (60S ribosomal protein 	w
+LARGE	fly	FBgn0285950	RpL19	P36241	52	334	Large ribosomal subunit protein eL19 (60S ribosomal protein 	w
+LARGE	human	A0A0A6YYL6	RPL17-C18orf32	A0A0A6YYL6	30	458	Large ribosomal subunit protein uL22	w
+LARGE	human	A8MYK1	MRPL23	A8MYK1	9	213	Large ribosomal subunit protein uL23m	w
+LARGE	human	O00267	SUPT5H	O00267	68	598	Transcription elongation factor SPT5 (hSPT5) (DRB sensitivit	w
+LARGE	human	O75387	SLC43A1	O75387	3	87	Large neutral amino acids transporter small subunit 3 (L-typ	w
+LARGE	human	O75394	MRPL33	O75394	18	424	Large ribosomal subunit protein bL33m (39S ribosomal protein	w
+LARGE	human	O75792	RNASEH2A	O75792	13	161	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	w
+LARGE	human	O95461	LARGE1	O95461	6	94		
+LARGE	human	O95835	LATS1	O95835	117	576	Serine/threonine-protein kinase LATS1 (EC 2.7.11.1) (Large t	w
+LARGE	human	O96007	MOCS2	O96007	2	31	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (MOCO	w
+LARGE	human	P05386	RPLP1	P05386	97	1003	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
+LARGE	human	P05387	RPLP2	P05387	52	702	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
+LARGE	human	P05388	RPLP0	P05388	37	847	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
+LARGE	human	P07384	CAPN1	P07384	62	353	Calpain-1 catalytic subunit (EC 3.4.22.52) (Calcium-activate	w
+LARGE	human	P08195	SLC3A2	P08195	27	434	Amino acid transporter heavy chain SLC3A2 (4F2 cell-surface 	w
+LARGE	human	P09001	MRPL3	P09001	28	678	Large ribosomal subunit protein uL3m (39S ribosomal protein 	w
+LARGE	human	P13611	VCAN	P13611	2	26	Versican core protein (Chondroitin sulfate proteoglycan core	w
+LARGE	human	P16383	GCFC2	P16383	34	91	Intron Large complex component GCFC2 (GC-rich sequence DNA-b	w
+LARGE	human	P17655	CAPN2	P17655	72	419	Calpain-2 catalytic subunit (EC 3.4.22.53) (Calcium-activate	w
+LARGE	human	P18077	RPL35A	P18077	57	771	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
+LARGE	human	P18124	RPL7	P18124	87	1153	Large ribosomal subunit protein uL30 (60S ribosomal protein 	w
+LARGE	human	P18621	RPL17	P18621	106	981	Large ribosomal subunit protein uL22 (60S ribosomal protein 	w
+LARGE	human	P22792	CPN2	P22792	25	234	Carboxypeptidase N subunit 2 (Carboxypeptidase N 83 kDa chai	w
+LARGE	human	P23921	RRM1	P23921	5	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
+LARGE	human	P26368	U2AF2	P26368	91	625	Splicing factor U2AF 65 kDa subunit (U2 auxiliary factor 65 	w
+LARGE	human	P26373	RPL13	P26373	46	906	Large ribosomal subunit protein eL13 (60S ribosomal protein 	w
+LARGE	human	P27635	RPL10	P27635	97	1286	Large ribosomal subunit protein uL16 (60S ribosomal protein 	w
+LARGE	human	P28039	AOAH	P28039	0	8	Acyloxyacyl hydrolase (EC 3.1.1.77) [Cleaved into: Acyloxyac	w
+LARGE	human	P30050	RPL12	P30050	54	731	Large ribosomal subunit protein uL11 (60S ribosomal protein 	w
+LARGE	human	P30990	NTS	P30990	38	319	Neurotensin/neuromedin N [Cleaved into: Large neuromedin N (	w
+LARGE	human	P32969	RPL9	P32969	34	855	Large ribosomal subunit protein uL6 (60S ribosomal protein L	w
+LARGE	human	P35251	RFC1	P35251	40	268	Replication factor C subunit 1 (Activator 1 140 kDa subunit)	w
+LARGE	human	P35268	RPL22	P35268	70	718	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
+LARGE	human	P36578	RPL4	P36578	77	1046	Large ribosomal subunit protein uL4 (60S ribosomal protein L	w
+LARGE	human	P39023	RPL3	P39023	69	1131	Large ribosomal subunit protein uL3 (60S ribosomal protein L	w
+LARGE	human	P40429	RPL13A	P40429	97	924	Large ribosomal subunit protein uL13 (23 kDa highly basic pr	w
+LARGE	human	P42766	RPL35	P42766	61	978	Large ribosomal subunit protein uL29 (60S ribosomal protein 	w
+LARGE	human	P46379	BAG6	P46379	80	439	Large proline-rich protein BAG6 (BAG family molecular chaper	w
+LARGE	human	P46776	RPL27A	P46776	51	767	Large ribosomal subunit protein uL15 (60S ribosomal protein 	w
+LARGE	human	P46777	RPL5	P46777	60	1005	Large ribosomal subunit protein uL18 (60S ribosomal protein 	w
+LARGE	human	P46778	RPL21	P46778	31	708	Large ribosomal subunit protein eL21 (60S ribosomal protein 	w
+LARGE	human	P46779	RPL28	P46779	22	617	Large ribosomal subunit protein eL28 (60S ribosomal protein 	w
+LARGE	human	P47914	RPL29	P47914	35	584	Large ribosomal subunit protein eL29 (60S ribosomal protein 	w
+LARGE	human	P48634	PRRC2A	P48634	77	411	Protein PRRC2A (HLA-B-associated transcript 2) (Large prolin	w
+LARGE	human	P49207	RPL34	P49207	38	717	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
+LARGE	human	P49406	MRPL19	P49406	43	467	Large ribosomal subunit protein bL19m (39S ribosomal protein	w
+LARGE	human	P49643	PRIM2	P49643	17	139	DNA primase large subunit (DNA primase 58 kDa subunit) (p58)	w
+LARGE	human	P50914	RPL14	P50914	51	746	Large ribosomal subunit protein eL14 (60S ribosomal protein 	w
+LARGE	human	P52815	MRPL12	P52815	21	442	Large ribosomal subunit protein bL12m (39S ribosomal protein	w
+LARGE	human	P55157	MTTP	P55157	2	18	Microsomal triglyceride transfer protein large subunit	w
+LARGE	human	P55899	FCGRT	P55899	66	375	IgG receptor FcRn large subunit p51 (FcRn) (IgG Fc fragment 	w
+LARGE	human	P61254	RPL26	P61254	34	795	Large ribosomal subunit protein uL24 (60S ribosomal protein 	w
+LARGE	human	P61313	RPL15	P61313	20	337	Large ribosomal subunit protein eL15 (60S ribosomal protein 	w
+LARGE	human	P61353	RPL27	P61353	39	702	Large ribosomal subunit protein eL27 (60S ribosomal protein 	w
+LARGE	human	P61513	RPL37A	P61513	47	864	Large ribosomal subunit protein eL43 (60S ribosomal protein 	w
+LARGE	human	P61927	RPL37	P61927	13	178	Large ribosomal subunit protein eL37 (60S ribosomal protein 	w
+LARGE	human	P62424	RPL7A	P62424	64	918	Large ribosomal subunit protein eL8 (60S ribosomal protein L	w
+LARGE	human	P62750	RPL23A	P62750	47	694	Large ribosomal subunit protein uL23 (60S ribosomal protein 	w
+LARGE	human	P62829	RPL23	P62829	132	1332	Large ribosomal subunit protein uL14 (60S ribosomal protein 	w
+LARGE	human	P62888	RPL30	P62888	38	877	Large ribosomal subunit protein eL30 (60S ribosomal protein 	w
+LARGE	human	P62891	RPL39	P62891	71	913	Large ribosomal subunit protein eL39 (60S ribosomal protein 	w
+LARGE	human	P62899	RPL31	P62899	40	924	Large ribosomal subunit protein eL31 (60S ribosomal protein 	w
+LARGE	human	P62906	RPL10A	P62906	38	729	Large ribosomal subunit protein uL1 (60S ribosomal protein L	w
+LARGE	human	P62910	RPL32	P62910	43	594	Large ribosomal subunit protein eL32 (60S ribosomal protein 	w
+LARGE	human	P62913	RPL11	P62913	78	727	Large ribosomal subunit protein uL5 (60S ribosomal protein L	w
+LARGE	human	P62917	RPL8	P62917	54	1001	Large ribosomal subunit protein uL2 (60S ribosomal protein L	w
+LARGE	human	P62945	RPL41	P62945	1	25	Small ribosomal subunit protein eS32 (60S ribosomal protein 	w
+LARGE	human	P62987	UBA52	P62987	368	4131	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) (Ubi	w
+LARGE	human	P63173	RPL38	P63173	88	847	Large ribosomal subunit protein eL38 (60S ribosomal protein 	w
+LARGE	human	P78352	DLG4	P78352	73	586	Disks large homolog 4 (Postsynaptic density protein 95) (PSD	w
+LARGE	human	P83731	RPL24	P83731	32	632	Large ribosomal subunit protein eL24 (60S ribosomal protein 	w
+LARGE	human	P83881	RPL36A	P83881	30	498	Large ribosomal subunit protein eL42 (60S ribosomal protein 	w
+LARGE	human	P84098	RPL19	P84098	99	990	Large ribosomal subunit protein eL19 (60S ribosomal protein 	w
+LARGE	human	Q01650	SLC7A5	Q01650	20	255	Large neutral amino acids transporter small subunit 1 (4F2 l	w
+LARGE	human	Q02108	GUCY1A1	Q02108	5	173	Guanylate cyclase soluble subunit alpha-1 (GCS-alpha-1) (EC 	w
+LARGE	human	Q02543	RPL18A	Q02543	75	820	Large ribosomal subunit protein eL20 (60S ribosomal protein 	w
+LARGE	human	Q02878	RPL6	Q02878	67	793	Large ribosomal subunit protein eL6 (60S ribosomal protein L	w
+LARGE	human	Q07020	RPL18	Q07020	85	912	Large ribosomal subunit protein eL18 (60S ribosomal protein 	w
+LARGE	human	Q12959	DLG1	Q12959	53	388	Disks large homolog 1 (Synapse-associated protein 97) (SAP-9	w
+LARGE	human	Q13084	MRPL28	Q13084	20	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+LARGE	human	Q13368	MPP3	Q13368	42	218	MAGUK p55 subfamily member 3 (Discs large homolog 3) (Protei	w
+LARGE	human	Q13405	MRPL49	Q13405	18	406	Large ribosomal subunit protein mL49 (39S ribosomal protein 	w
+LARGE	human	Q14168	MPP2	Q14168	32	173	MAGUK p55 subfamily member 2 (Discs large homolog 2) (Protei	w
+LARGE	human	Q14197	MRPL58	Q14197	20	485	Large ribosomal subunit protein mL62 (39S ribosomal protein 	w
+LARGE	human	Q15398	DLGAP5	Q15398	38	171	Disks large-associated protein 5 (DAP-5) (Discs large homolo	w
+LARGE	human	Q15700	DLG2	Q15700	20	134	Disks large homolog 2 (Channel-associated protein of synapse	w
+LARGE	human	Q16540	MRPL23	Q16540	21	415	Large ribosomal subunit protein uL23m (39S ribosomal protein	w
+LARGE	human	Q4U2R6	MRPL51	Q4U2R6	24	202	Large ribosomal subunit protein mL51 (39S ribosomal protein 	w
+LARGE	human	Q5JWF2	GNAS	Q5JWF2	127	483	Guanine nucleotide-binding protein G(s) subunit alpha isofor	w
+LARGE	human	Q5T653	MRPL2	Q5T653	35	590	Large ribosomal subunit protein uL2m (39S ribosomal protein 	w
+LARGE	human	Q68DQ2	CRYBG3	Q68DQ2	10	184	Very large A-kinase anchor protein (vlAKAP) (Beta/gamma crys	w
+LARGE	human	Q6DKI1	RPL7L1	Q6DKI1	31	586	Ribosomal protein uL30-like (60S ribosomal protein L7-like 1	w
+LARGE	human	Q6P161	MRPL54	Q6P161	13	256	Large ribosomal subunit protein mL54 (39S ribosomal protein 	w
+LARGE	human	Q6P1L8	MRPL14	Q6P1L8	15	207	Large ribosomal subunit protein uL14m (39S ribosomal protein	w
+LARGE	human	Q6P2E9	EDC4	Q6P2E9	54	244	Enhancer of mRNA-decapping protein 4 (Autoantigen Ge-1) (Aut	w
+LARGE	human	Q6P5R6	RPL22L1	Q6P5R6	45	486	Ribosomal protein eL22-like (60S ribosomal protein L22-like 	w
+LARGE	human	Q7Z2W9	MRPL21	Q7Z2W9	31	497	Large ribosomal subunit protein bL21m (39S ribosomal protein	w
+LARGE	human	Q7Z2Y8	GVINP1	Q7Z2Y8	0	1	Interferon-induced very large GTPase 1 (Interferon-induced v	w
+LARGE	human	Q7Z7F7	MRPL55	Q7Z7F7	62	554	Large ribosomal subunit protein mL55 (39S ribosomal protein 	w
+LARGE	human	Q7Z7H8	MRPL10	Q7Z7H8	27	337	Large ribosomal subunit protein uL10m (39S ribosomal protein	w
+LARGE	human	Q86TS9	MRPL52	Q86TS9	21	235	Large ribosomal subunit protein mL52 (39S ribosomal protein 	w
+LARGE	human	Q8IXM3	MRPL41	Q8IXM3	17	417	Large ribosomal subunit protein mL41 (39S ribosomal protein 	w
+LARGE	human	Q8N370	SLC43A2	Q8N370	3	95	Large neutral amino acids transporter small subunit 4 (L-typ	w
+LARGE	human	Q8N3Y3	LARGE2	Q8N3Y3	8	96	Xylosyl- and glucuronyltransferase LARGE2 (EC 2.4.-.-) (Glyc	w
+LARGE	human	Q8N5N7	MRPL50	Q8N5N7	11	253	Large ribosomal subunit protein mL50 (39S ribosomal protein 	w
+LARGE	human	Q8N983	MRPL43	Q8N983	11	101	Large ribosomal subunit protein mL43 (39S ribosomal protein 	w
+LARGE	human	Q8NHW5	RPLP0P6	Q8NHW5	11	200	Putative ribosomal protein uL10-like (60S acidic ribosomal p	w
+LARGE	human	Q8TAE8	GADD45GIP1	Q8TAE8	18	317	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
+LARGE	human	Q8TCC3	MRPL30	Q8TCC3	18	337	Large ribosomal subunit protein uL30m (39S ribosomal protein	w
+LARGE	human	Q8TDM6	DLG5	Q8TDM6	103	336	Disks large homolog 5 (Discs large protein P-dlg) (Placenta 	w
+LARGE	human	Q8WYP5	AHCTF1	Q8WYP5	47	363	Protein ELYS (Embryonic large molecule derived from yolk sac	w
+LARGE	human	Q92796	DLG3	Q92796	41	318	Disks large homolog 3 (Neuroendocrine-DLG) (Synapse-associat	w
+LARGE	human	Q92901	RPL3L	Q92901	30	601	Ribosomal protein uL3-like (60S ribosomal protein L3-like) (	w
+LARGE	human	Q969Q0	RPL36AL	Q969Q0	47	551	Ribosomal protein eL42-like (60S ribosomal protein L36a-like	w
+LARGE	human	Q96A35	MRPL24	Q96A35	32	593	Large ribosomal subunit protein uL24m (39S ribosomal protein	w
+LARGE	human	Q96DV4	MRPL38	Q96DV4	26	389	Large ribosomal subunit protein mL38 (39S ribosomal protein 	w
+LARGE	human	Q96EH3	MALSU1	Q96EH3	22	342	Mitochondrial assembly of ribosomal large subunit protein 1	w
+LARGE	human	Q96EH5	RPL39L	Q96EH5	20	368	Ribosomal protein eL39-like 2 (60S ribosomal protein L39-2) 	w
+LARGE	human	Q96EL3	MRPL53	Q96EL3	23	230	Large ribosomal subunit protein mL53 (39S ribosomal protein 	w
+LARGE	human	Q96GC5	MRPL48	Q96GC5	19	200	Large ribosomal subunit protein mL48 (39S ribosomal protein 	w
+LARGE	human	Q96JB8	MPP4	Q96JB8	13	65	MAGUK p55 subfamily member 4 (Amyotrophic lateral sclerosis 	w
+LARGE	human	Q96L21	RPL10L	Q96L21	53	864	Ribosomal protein uL16-like (60S ribosomal protein L10-like)	w
+LARGE	human	Q9BQ48	MRPL34	Q9BQ48	16	359	Large ribosomal subunit protein bL34m (39S ribosomal protein	w
+LARGE	human	Q9BQC6	MRPL57	Q9BQC6	22	235	Large ribosomal subunit protein mL63 (Mitochondrial ribosoma	w
+LARGE	human	Q9BRJ2	MRPL45	Q9BRJ2	23	180	Large ribosomal subunit protein mL45 (39S ribosomal protein 	w
+LARGE	human	Q9BYC8	MRPL32	Q9BYC8	19	417	Large ribosomal subunit protein bL32m (39S ribosomal protein	w
+LARGE	human	Q9BYC9	MRPL20	Q9BYC9	23	403	Large ribosomal subunit protein bL20m (39S ribosomal protein	w
+LARGE	human	Q9BYD1	MRPL13	Q9BYD1	31	711	Large ribosomal subunit protein uL13m (39S ribosomal protein	w
+LARGE	human	Q9BYD2	MRPL9	Q9BYD2	30	365	Large ribosomal subunit protein bL9m (39S ribosomal protein 	w
+LARGE	human	Q9BYD3	MRPL4	Q9BYD3	35	758	Large ribosomal subunit protein uL4m (39S ribosomal protein 	w
+LARGE	human	Q9BYD6	MRPL1	Q9BYD6	54	426	Large ribosomal subunit protein uL1m (39S ribosomal protein 	w
+LARGE	human	Q9BZE1	MRPL37	Q9BZE1	19	237	Large ribosomal subunit protein mL37 (39S ribosomal protein 	w
+LARGE	human	Q9H089	LSG1	Q9H089	17	400	Large subunit GTPase 1 homolog (hLsg1) (EC 3.6.5.-)	w
+LARGE	human	Q9H0U6	MRPL18	Q9H0U6	14	243	Large ribosomal subunit protein uL18m (39S ribosomal protein	w
+LARGE	human	Q9H2W6	MRPL46	Q9H2W6	36	444	Large ribosomal subunit protein mL46 (39S ribosomal protein 	w
+LARGE	human	Q9H9J2	MRPL44	Q9H9J2	23	437	Large ribosomal subunit protein mL44 (39S ribosomal protein 	w
+LARGE	human	Q9HD33	MRPL47	Q9HD33	42	476	Large ribosomal subunit protein uL29m (39S ribosomal protein	w
+LARGE	human	Q9NP92	MRPS30	Q9NP92	13	234	Large ribosomal subunit protein mL65 (39S ribosomal protein 	w
+LARGE	human	Q9NQ50	MRPL40	Q9NQ50	40	415	Large ribosomal subunit protein mL40 (39S ribosomal protein 	w
+LARGE	human	Q9NRD8	DUOX2	Q9NRD8	2	12	Dual oxidase 2 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	w
+LARGE	human	Q9NRD9	DUOX1	Q9NRD9	1	16	Dual oxidase 1 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	w
+LARGE	human	Q9NRM7	LATS2	Q9NRM7	76	425	Serine/threonine-protein kinase LATS2 (EC 2.7.11.1) (Kinase 	w
+LARGE	human	Q9NRX2	MRPL17	Q9NRX2	43	533	Large ribosomal subunit protein bL17m (39S ribosomal protein	w
+LARGE	human	Q9NVS2	MRPS18A	Q9NVS2	22	337	Large ribosomal subunit protein mL66 (39S ribosomal protein 	w
+LARGE	human	Q9NWU5	MRPL22	Q9NWU5	49	648	Large ribosomal subunit protein uL22m (39S ribosomal protein	w
+LARGE	human	Q9NX20	MRPL16	Q9NX20	38	527	Large ribosomal subunit protein uL16m (39S ribosomal protein	w
+LARGE	human	Q9NYK5	MRPL39	Q9NYK5	45	271	Large ribosomal subunit protein mL39 (39S ribosomal protein 	w
+LARGE	human	Q9NZE8	MRPL35	Q9NZE8	20	178	Large ribosomal subunit protein bL35m (39S ribosomal protein	w
+LARGE	human	Q9P015	MRPL15	Q9P015	39	438	Large ribosomal subunit protein uL15m (39S ribosomal protein	w
+LARGE	human	Q9P0J6	MRPL36	Q9P0J6	9	395	Large ribosomal subunit protein bL36m (39S ribosomal protein	w
+LARGE	human	Q9P0M9	MRPL27	Q9P0M9	19	466	Large ribosomal subunit protein bL27m (39S ribosomal protein	w
+LARGE	human	Q9UHI5	SLC7A8	Q9UHI5	7	117	Large neutral amino acids transporter small subunit 2 (L-typ	w
+LARGE	human	Q9UJJ7	RPUSD1	Q9UJJ7	9	90	Pseudouridylate synthase RPUSD1 (EC 5.4.99.-) (RNA pseudouri	w
+LARGE	human	Q9UNX3	RPL26L1	Q9UNX3	43	888	Ribosomal protein uL24-like (60S ribosomal protein L26-like 	w
+LARGE	human	Q9Y3B7	MRPL11	Q9Y3B7	43	665	Large ribosomal subunit protein uL11m (39S ribosomal protein	w
+LARGE	human	Q9Y3U8	RPL36	Q9Y3U8	73	863	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
+LARGE	human	Q9Y6G3	MRPL42	Q9Y6G3	14	273	Large ribosomal subunit protein mL42 (39S ribosomal protein 	w
+LARGE	virus	A0A024B6C0		A0A024B6C0	1	6	Large T antigen	w
+LARGE	virus	A0A060CY59	RIR1	A0A060CY59	3	78	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A060PYA7	UL39	A0A060PYA7	2	62	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A068ABT4	RIR1	A0A068ABT4	3	69	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A068EGF0	fep_193	A0A068EGF0	7	221	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A068ELR3	pepv_201	A0A068ELR3	5	240	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A077BCJ6	ORF21	A0A077BCJ6	3	76	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A097A5I9		A0A097A5I9	0	6	Large T antigen	w
+LARGE	virus	A0A0A7DPC2		A0A0A7DPC2	1	4	Large envelope protein	w
+LARGE	virus	A0A0A7MEU9		A0A0A7MEU9	6	130	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A0A7W5B8		A0A0A7W5B8	0	5	Large T antigen	w
+LARGE	virus	A0A0B4Q6S6	ORF61	A0A0B4Q6S6	2	78	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A0B5D5H9	ORF61	A0A0B5D5H9	2	94	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A0B5LB58		A0A0B5LB58	0	5	Large T antigen	w
+LARGE	virus	A0A0D5ZYE4		A0A0D5ZYE4	0	4	Large T antigen	w
+LARGE	virus	A0A0D5ZYL4		A0A0D5ZYL4	0	4	Large T antigen	w
+LARGE	virus	A0A0D5ZYM7		A0A0D5ZYM7	0	4	Large T antigen	w
+LARGE	virus	A0A0G3G2N3	RCNV-Herman-139	A0A0G3G2N3	4	195	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A0H4YFM3	SGPV125	A0A0H4YFM3	8	200	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A0K1ETR3		A0A0K1ETR3	0	6	Large T antigen	w
+LARGE	virus	A0A0M3P4Q2	wsHBV_gp3	A0A0M3P4Q2	0	3	Large envelope protein	w
+LARGE	virus	A0A0M3ZHZ9		A0A0M3ZHZ9	3	170	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A0P0HGX9		A0A0P0HGX9	0	5	Large T antigen	w
+LARGE	virus	A0A0P0HKC7		A0A0P0HKC7	0	5	Large T antigen	w
+LARGE	virus	A0A0S2EGK8		A0A0S2EGK8	0	5	Large T antigen	w
+LARGE	virus	A0A0S2VEK7	LTag	A0A0S2VEK7	0	6	Large T antigen	w
+LARGE	virus	A0A0U2U223	UL39	A0A0U2U223	6	71	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A0X9YML6	ORF61	A0A0X9YML6	2	76	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A0Y0A4L5	UL39	A0A0Y0A4L5	3	69	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A162GN70	LTAg	A0A162GN70	1	13	Large T antigen	w
+LARGE	virus	A0A193AU90	PreS	A0A193AU90	0	4	Large envelope protein	w
+LARGE	virus	A0A193AUB7	PreS	A0A193AUB7	0	4	Large envelope protein	w
+LARGE	virus	A0A193AUI9		A0A193AUI9	1	6	Large envelope protein	w
+LARGE	virus	A0A1B1MRL6	PTPV-Aus-118	A0A1B1MRL6	3	143	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A1B2FQZ4		A0A1B2FQZ4	0	5	Large T antigen	w
+LARGE	virus	A0A1C9KBW4	SKPV-WA-142	A0A1C9KBW4	9	208	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A1C9KCE7	VPXV-CA-142	A0A1C9KCE7	7	202	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A1D8BJ34		A0A1D8BJ34	0	6	Large T antigen	w
+LARGE	virus	A0A1L4AB40		A0A1L4AB40	0	7	Large T antigen	w
+LARGE	virus	A0A1L5JKF4	UL39	A0A1L5JKF4	3	68	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1P7U1C6	UL39	A0A1P7U1C6	5	107	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1R3T415	UL39	A0A1R3T415	4	82	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1S6JLL8	UL39	A0A1S6JLL8	6	62	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1V0CLV9		A0A1V0CLV9	0	5	Large T antigen	w
+LARGE	virus	A0A1V0M8I7	RIR1	A0A1V0M8I7	9	106	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1W5X9V9		A0A1W5X9V9	0	7	Large T antigen	w
+LARGE	virus	A0A1W6EU85		A0A1W6EU85	0	6	Large T antigen	w
+LARGE	virus	A0A1X9WF43	UL39	A0A1X9WF43	5	70	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1X9WFU8	UL39	A0A1X9WFU8	4	72	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1Z1NEK3	ORF61	A0A1Z1NEK3	5	71	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A1Z3GCQ9	SePPVgORF090	A0A1Z3GCQ9	6	119	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A218NK33		A0A218NK33	1	5	Large envelope protein	w
+LARGE	virus	A0A220IG74		A0A220IG74	0	5	Large T antigen	w
+LARGE	virus	A0A220T6H5	EPTV-WA-120	A0A220T6H5	9	179	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A223FMX3	Murmansk-139	A0A223FMX3	12	202	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A223PYM2	LTAg	A0A223PYM2	0	5	Large T antigen	w
+LARGE	virus	A0A223PYP4	LTAg	A0A223PYP4	0	5	Large T antigen	w
+LARGE	virus	A0A286MM41	UL39	A0A286MM41	6	79	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A288CFY4	21	A0A288CFY4	4	75	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A2C9DSS8		A0A2C9DSS8	4	160	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A2C9DT92		A0A2C9DT92	6	160	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A2D1AEV9		A0A2D1AEV9	8	74	IgG receptor FcRn large subunit p51	w
+LARGE	virus	A0A2D1AF22	RIR1	A0A2D1AF22	4	73	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A2H4X2K7	fgpv_202	A0A2H4X2K7	8	255	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A2H5BVH2		A0A2H5BVH2	1	4	Large envelope protein	w
+LARGE	virus	A0A2K9QQP3	ORF21	A0A2K9QQP3	3	75	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A2R4KZP8	S	A0A2R4KZP8	1	6	Large envelope protein	w
+LARGE	virus	A0A2S1CJH8	620T	A0A2S1CJH8	0	6	Large T antigen	w
+LARGE	virus	A0A2S1CJJ1	713T	A0A2S1CJJ1	0	8	Large T antigen	w
+LARGE	virus	A0A2S1CJK5	616T	A0A2S1CJK5	0	7	Large T antigen	w
+LARGE	virus	A0A2S1CJL7	650T	A0A2S1CJL7	1	6	Large T antigen	w
+LARGE	virus	A0A2S1CJL8	713T	A0A2S1CJL8	0	10	Large T antigen	w
+LARGE	virus	A0A2S1CJM1	667T	A0A2S1CJM1	0	10	Large T antigen	w
+LARGE	virus	A0A2S1CJM2	756T	A0A2S1CJM2	0	8	Large T antigen	w
+LARGE	virus	A0A2S1CJM7	776T	A0A2S1CJM7	1	8	Large T antigen	w
+LARGE	virus	A0A2S1CJR5	731T	A0A2S1CJR5	0	9	Large T antigen	w
+LARGE	virus	A0A2S1CJS5	719T	A0A2S1CJS5	0	6	Large T antigen	w
+LARGE	virus	A0A2U8SZJ6		A0A2U8SZJ6	0	4	Large envelope protein	w
+LARGE	virus	A0A2U9QHT4	SOPV-ELK-113	A0A2U9QHT4	3	130	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A2Z2DSM2	RatPyV2_gp4	A0A2Z2DSM2	0	5	Large T antigen	w
+LARGE	virus	A0A2Z5U6E1	ORF68	A0A2Z5U6E1	4	83	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A346FSB6	AKMV-88-154	A0A346FSB6	8	213	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A3G2KY09	OPVA142	A0A3G2KY09	5	207	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A455JNN6	UL39	A0A455JNN6	7	67	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A455JNV2	UL39	A0A455JNV2	6	67	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A510J9W9	UL39	A0A510J9W9	3	63	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A516RTN9		A0A516RTN9	0	4	Large envelope protein	w
+LARGE	virus	A0A516RTQ4		A0A516RTQ4	1	4	Large envelope protein	w
+LARGE	virus	A0A5B8FKG4	ORF61	A0A5B8FKG4	5	77	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A5P9NRD9		A0A5P9NRD9	0	7	Large T antigen	w
+LARGE	virus	A0A6G7NNZ2		A0A6G7NNZ2	0	5	Large T antigen	w
+LARGE	virus	A0A6G9LUL0	LTAg	A0A6G9LUL0	0	6	Large T antigen	w
+LARGE	virus	A0A6G9LX01	LTAg	A0A6G9LX01	1	6	Large T antigen	w
+LARGE	virus	A0A6P1E072		A0A6P1E072	0	5	Large T antigen	w
+LARGE	virus	A0A7L7YSA1	UL39	A0A7L7YSA1	2	65	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A7R5WLX1	RNRL	A0A7R5WLX1	6	187	Ribonucleotide reductase large subunit	w
+LARGE	virus	A0A7S9VM72	RIR1	A0A7S9VM72	3	77	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0A800VD85	S	A0A800VD85	2	4	Large envelope protein	w
+LARGE	virus	A0A8K1VTC5		A0A8K1VTC5	0	6	Large T antigen	w
+LARGE	virus	A0A916KPL8	CHBEV_148	A0A916KPL8	6	311	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0A916P656	AHEV_089	A0A916P656	6	243	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0AAE6D099	UL39	A0AAE6D099	4	66	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0AAE9P7J4	LTAg	A0AAE9P7J4	0	5	Large T antigen	w
+LARGE	virus	A0ABM9QKF2	CHREV_116	A0ABM9QKF2	5	286	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A0ABX6WLT3	UL39	A0ABX6WLT3	2	70	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	A0AC61LNG6		A0AC61LNG6	0	4	Large envelope protein	w
+LARGE	virus	A5HBG1		A5HBG1	0	4	Large T antigen	w
+LARGE	virus	A7XCP7	115R	A7XCP7	8	154	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	A8Y984	large T	A8Y984	0	6	Large T antigen	w
+LARGE	virus	B6E002		B6E002	0	6	Large T antigen	w
+LARGE	virus	B7FEG3	RIR1	B7FEG3	3	76	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	C6L682	PreS1/S2/S	C6L682	2	5	Large envelope protein	w
+LARGE	virus	C9X3W6	large T	C9X3W6	0	5	Large T antigen	w
+LARGE	virus	C9X3X1	large T	C9X3X1	0	5	Large T antigen	w
+LARGE	virus	D0U1Q0	ORF61	D0U1Q0	3	73	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	D1FXU3	UL39	D1FXU3	2	73	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	D3IZP8		D3IZP8	4	125	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	D3IZT4		D3IZT4	0	6	Large T antigen	w
+LARGE	virus	E0XL34		E0XL34	0	5	Large T antigen	w
+LARGE	virus	E2ESL8	T	E2ESL8	0	5	Large T antigen	w
+LARGE	virus	E2IUD0	UL39	E2IUD0	4	66	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	E5AX31	large T	E5AX31	0	5	Large T antigen	w
+LARGE	virus	E9NQ91		E9NQ91	0	5	Large T antigen	w
+LARGE	virus	G3EI19	YKV127	G3EI19	6	184	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	G3G8Y3	UL39	G3G8Y3	3	66	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	G3GR01	UL39	G3GR01	3	73	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	G8HBF3	UL39	G8HBF3	4	68	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	G8HKD7	UL39	G8HKD7	4	75	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	G9I261	UL39	G9I261	3	73	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	G9I481		G9I481	0	5	Large envelope protein	w
+LARGE	virus	G9I482		G9I482	0	5	Large envelope protein	w
+LARGE	virus	H6TAA2	COTV132	H6TAA2	5	170	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	I3QJF1	EPyV_gp4	I3QJF1	0	5	Large T antigen	w
+LARGE	virus	I6VPL7		I6VPL7	0	6	Large T antigen	w
+LARGE	virus	J3TNZ7		J3TNZ7	0	5	Large T antigen	w
+LARGE	virus	J3U5T0		J3U5T0	0	5	Large T antigen	w
+LARGE	virus	J3W7X8		J3W7X8	0	5	Large T antigen	w
+LARGE	virus	J3Z5R0		J3Z5R0	0	4	Large T antigen	w
+LARGE	virus	J3ZGN4		J3ZGN4	0	4	Large T antigen	w
+LARGE	virus	J7HD79		J7HD79	0	5	Large T antigen	w
+LARGE	virus	K7QJ79		K7QJ79	0	6	Large T antigen	w
+LARGE	virus	K7QJ82		K7QJ82	0	4	Large T antigen	w
+LARGE	virus	K7QJ84		K7QJ84	0	4	Large T antigen	w
+LARGE	virus	K7QJJ5		K7QJJ5	0	4	Large T antigen	w
+LARGE	virus	K7QJK1		K7QJK1	0	4	Large T antigen	w
+LARGE	virus	K7QK05		K7QK05	0	5	Large T antigen	w
+LARGE	virus	K7QKH4		K7QKH4	0	4	Large T antigen	w
+LARGE	virus	K7QKH9		K7QKH9	0	4	Large T antigen	w
+LARGE	virus	K7QKI1		K7QKI1	0	5	Large T antigen	w
+LARGE	virus	K7QLH1		K7QLH1	0	4	Large T antigen	w
+LARGE	virus	K9MHC1	UL39	K9MHC1	2	69	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	L0GBA5		L0GBA5	0	5	Large T antigen	w
+LARGE	virus	L0GBA8		L0GBA8	0	5	Large T antigen	w
+LARGE	virus	L0GBB8		L0GBB8	0	5	Large T antigen	w
+LARGE	virus	L0GBC3		L0GBC3	0	5	Large T antigen	w
+LARGE	virus	L0MYY5		L0MYY5	0	4	Large T antigen	w
+LARGE	virus	L0MZS0		L0MZS0	1	6	Large T antigen	w
+LARGE	virus	L0N113		L0N113	0	5	Large T antigen	w
+LARGE	virus	L0N2D5		L0N2D5	0	6	Large T antigen	w
+LARGE	virus	L0N2E1		L0N2E1	0	5	Large T antigen	w
+LARGE	virus	L7RFY1		L7RFY1	0	6	Large T antigen	w
+LARGE	virus	M1G4W2		M1G4W2	1	5	Large envelope protein	w
+LARGE	virus	M1G8S7		M1G8S7	0	5	Large envelope protein	w
+LARGE	virus	M4PSH2		M4PSH2	1	4	Large envelope protein	w
+LARGE	virus	O36411	RIR1	O36411	3	69	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	O36414	64	O36414	0	7	Large tegument protein deneddylase	w
+LARGE	virus	O41962	GAMMAHV.ORF61	O41962	2	79	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	O41965	ORF64	O41965	0	17	Large tegument protein deneddylase	w
+LARGE	virus	O71305	S	O71305	3	5	Large envelope protein	w
+LARGE	virus	P03070		P03070	0	6	Large T antigen	w
+LARGE	virus	P03071		P03071	0	6	Large T antigen	w
+LARGE	virus	P03072		P03072	0	5	Large T antigen	w
+LARGE	virus	P03138	S	P03138	1	7	Large envelope protein	w
+LARGE	virus	P03141	S	P03141	1	5	Large envelope protein	w
+LARGE	virus	P03144	S	P03144	1	5	Large envelope protein	w
+LARGE	virus	P03190	RIR1	P03190	3	91	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	P09248	RIR1	P09248	4	68	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	P0C568	L	P0C568	1	2	Large structural protein	w
+LARGE	virus	P0C6M4		P0C6M4	2	2	Large delta antigen	w
+LARGE	virus	P0DOI6		P0DOI6	0	4	Large T antigen	w
+LARGE	virus	P0DOJ4		P0DOJ4	0	6	Large T antigen	w
+LARGE	virus	P0DSR9	OPG150	P0DSR9	8	198	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	P0DSV1	OPG080	P0DSV1	3	198	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	P0DTO1	U11	P0DTO1	4	95	Large structural phosphoprotein	w
+LARGE	virus	P11213	L	P11213	0	1	Large structural protein	w
+LARGE	virus	P12848	OPG080	P12848	5	218	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	P12909	S	P12909	0	5	Large envelope protein	w
+LARGE	virus	P12911	S	P12911	2	7	Large envelope protein	w
+LARGE	virus	P13847	S	P13847	0	4	Large envelope protein	w
+LARGE	virus	P17399	S	P17399	1	5	Large envelope protein	w
+LARGE	virus	P24851		P24851	0	5	Large T antigen	w
+LARGE	virus	P28846	RIR1	P28846	3	74	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	P52340	U31	P52340	0	41	Large tegument protein deneddylase	w
+LARGE	virus	P52343	RIR1	P52343	4	98	Ribonucleoside-diphosphate reductase large subunit-like prot	w
+LARGE	virus	Q00701	U11	Q00701	5	97	Large structural phosphoprotein	w
+LARGE	virus	Q01037	RIR1	Q01037	2	74	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q01056	64	Q01056	0	11	Large tegument protein deneddylase	w
+LARGE	virus	Q06A28	RIR1	Q06A28	1	158	Ribonucleoside-diphosphate reductase large subunit-like prot	w
+LARGE	virus	Q070A5	CRV146	Q070A5	3	170	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q08FM8	DpV83gp124	Q08FM8	9	165	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q0NP66	TATV_DAH68_145	Q0NP66	8	219	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q1HTS5	A23R	Q1HTS5	2	141	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q20HX6		Q20HX6	0	6	Large T antigen	w
+LARGE	virus	Q20HY2		Q20HY2	0	6	Large T antigen	w
+LARGE	virus	Q2HR64	ORF64	Q2HR64	0	6	Large tegument protein deneddylase	w
+LARGE	virus	Q2HR67	RIR1	Q2HR67	5	84	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q2QBD7	UL39	Q2QBD7	6	72	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q2VSI0	RIR1	Q2VSI0	3	72	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q53CV1	JM119	Q53CV1	6	171	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q5Y0R3	UL39	Q5Y0R3	4	72	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q66405	S	Q66405	1	4	Large envelope protein	w
+LARGE	virus	Q66663	RIR1	Q66663	2	76	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q67852	preS	Q67852	0	3	Large envelope protein	w
+LARGE	virus	Q6RSE0		Q6RSE0	0	5	Large envelope protein	w
+LARGE	virus	Q6RSE1		Q6RSE1	0	5	Large envelope protein	w
+LARGE	virus	Q6SW84	UL48	Q6SW84	0	55	Large tegument protein deneddylase	w
+LARGE	virus	Q6SW87	RIR1	Q6SW87	6	167	Ribonucleoside-diphosphate reductase large subunit-like prot	w
+LARGE	virus	Q6TUQ4		Q6TUQ4	5	140	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q6TV88		Q6TV88	7	130	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q6TVM0		Q6TVM0	6	129	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q6UDH9	UL15b	Q6UDH9	4	70	Large terminase protein homolog UL15b	w
+LARGE	virus	Q6UDJ2	RIR1	Q6UDJ2	4	69	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q6VZ85	CNPV262	Q6VZ85	5	321	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q6X251	RIR1	Q6X251	5	70	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q77MS1	RIR1	Q77MS1	3	87	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q77Y78	U28	Q77Y78	2	83	Ribonucleoside-diphosphate reductase large subunit-like prot	w
+LARGE	virus	Q7T5D7	UL39	Q7T5D7	3	72	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q80FI2		Q80FI2	0	6	Large T antigen	w
+LARGE	virus	Q80HV2	OPG150	Q80HV2	8	218	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q8JKF1	preS1/preS2/S	Q8JKF1	1	4	Large envelope protein	w
+LARGE	virus	Q8JL91	VITF3L	Q8JL91	6	169	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q8JN07	S	Q8JN07	1	4	Large envelope protein	w
+LARGE	virus	Q8QMT0	CPXV156 CDS	Q8QMT0	8	225	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q8UYX4		Q8UYX4	0	3	Large envelope protein	w
+LARGE	virus	Q8V2N2	VITF3L	Q8V2N2	10	208	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q8V3I4	SPV112	Q8V3I4	5	145	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q8V4V4	VITF3L	Q8V4V4	4	187	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q91MP8	LSDV115	Q91MP8	5	152	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q91TP4	RIR1	Q91TP4	3	154	Ribonucleoside-diphosphate reductase large subunit-like prot	w
+LARGE	virus	Q98295	MC128R	Q98295	8	162	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q99CY1	RIR1	Q99CY1	3	78	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q9DH40	HVT047	Q9DH40	4	85	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q9DHJ8	115R	Q9DHJ8	4	150	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q9E1X7		Q9E1X7	6	68	Terminase large subunit	w
+LARGE	virus	Q9E1Z6	RIR1	Q9E1Z6	5	68	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q9EMV8	AMV091	Q9EMV8	11	278	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q9IBI3	S	Q9IBI3	1	4	Large envelope protein	w
+LARGE	virus	Q9IBL3		Q9IBL3	0	9	Large T antigen	w
+LARGE	virus	Q9J545	FPV188	Q9J545	10	248	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q9Q8I7	m113R	Q9Q8I7	4	157	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q9Q8W5	s113R	Q9Q8W5	4	152	Intermediate transcription factor 3 large subunit	w
+LARGE	virus	Q9QJ37	U31	Q9QJ37	1	38	Large tegument protein deneddylase	w
+LARGE	virus	Q9QJ39	RIR1	Q9QJ39	3	94	Ribonucleoside-diphosphate reductase large subunit-like prot	w
+LARGE	virus	Q9QSP0	L	Q9QSP0	1	3	Large structural protein	w
+LARGE	virus	Q9WFB6		Q9WFB6	1	5	Large envelope protein	w
+LARGE	virus	Q9WFB7		Q9WFB7	0	5	Large envelope protein	w
+LARGE	virus	Q9WKC4	S	Q9WKC4	1	5	Large envelope protein	w
+LARGE	virus	Q9WRN3	RIR1	Q9WRN3	3	79	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	Q9YPU4	S	Q9YPU4	1	4	Large envelope protein	w
+LARGE	virus	Q9YPU6	S	Q9YPU6	1	3	Large envelope protein	w
+LARGE	virus	Q9YPU8	S	Q9YPU8	1	4	Large envelope protein	w
+LARGE	virus	Q9YPV0	S	Q9YPV0	1	2	Large envelope protein	w
+LARGE	virus	Q9YTK6	RIR1	Q9YTK6	2	70	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	S5M0P9		S5M0P9	0	5	Large T antigen	w
+LARGE	virus	U5NM39	RIR1	U5NM39	5	81	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	virus	V5K6X6		V5K6X6	0	6	Large T antigen	w
+LARGE	worm	A0A0K3AVL7	aat-3	A0A0K3AVL7	3	4	Large neutral amino acids transporter small subunit 1	w
+LARGE	worm	A3QMC5	rpl-34	A3QMC5	9	220	Large ribosomal subunit protein eL34	w
+LARGE	worm	C0VXV6	mrpl-46	C0VXV6	0	12	Large ribosomal subunit protein mL46	w
+LARGE	worm	G5ECY0	dlg-1	G5ECY0	1	140	Disks large homolog 1	w
+LARGE	worm	G5EFZ7	mrpl-42	G5EFZ7	8	102	Large ribosomal subunit protein mL42	w
+LARGE	worm	O01504	rplp-2.1	O01504	3	143	Large ribosomal subunit protein P2	w
+LARGE	worm	O01802	rpl-7	O01802	9	252	Large ribosomal subunit protein uL30	w
+LARGE	worm	O01826	C53H9.2	O01826	5	72	Large subunit GTPase 1 homolog	w
+LARGE	worm	O01868	rpl-24	O01868	8	195	Large ribosomal subunit protein eL24	w
+LARGE	worm	O02056	rpl-4	O02056	16	347	Large ribosomal subunit protein uL4	w
+LARGE	worm	O02220	mrpl-34	O02220	8	153	Large ribosomal subunit protein mL43	w
+LARGE	worm	O02334	pri-2	O02334	4	25	DNA primase large subunit	w
+LARGE	worm	O02639	rpl-19	O02639	24	230	Large ribosomal subunit protein eL19	w
+LARGE	worm	O17005	mrpl-4	O17005	15	290	Large ribosomal subunit protein uL4m	w
+LARGE	worm	O17570	rpl-38	O17570	14	212	Large ribosomal subunit protein eL38	w
+LARGE	worm	O17839	mrpl-54	O17839	4	93	Large ribosomal subunit protein mL54	w
+LARGE	worm	O18180	mrpl-12	O18180	2	165	Mitochondrial Ribosomal Protein, Large	w
+LARGE	worm	O18199	mrpl-37	O18199	7	89	Large ribosomal subunit protein mL37	w
+LARGE	worm	O44480	rpl-18A	O44480	8	213	Large ribosomal subunit protein eL20	w
+LARGE	worm	O45110	mrpl-2	O45110	5	286	Large ribosomal subunit protein uL2 C-terminal domain-contai	w
+LARGE	worm	O45946	rpl-18	O45946	17	231	Large ribosomal subunit protein eL18	w
+LARGE	worm	O76606	mrpl-28	O76606	9	116	Large ribosomal subunit protein bL28m	w
+LARGE	worm	P34264	mrpl-11	P34264	14	234	Large ribosomal subunit protein uL11m	w
+LARGE	worm	P34334	rpl-21	P34334	10	223	Large ribosomal subunit protein eL21	w
+LARGE	worm	P34378	mrpl-18	P34378	6	126	Large ribosomal subunit protein uL18m	w
+LARGE	worm	P34384	mrpl-44	P34384	10	139	Large ribosomal subunit protein mL44	w
+LARGE	worm	P34662	rpl-35	P34662	21	252	Large ribosomal subunit protein uL29	w
+LARGE	worm	P47991	rpl-6	P47991	15	231	Large ribosomal subunit protein eL6	w
+LARGE	worm	P48158	rpl-23	P48158	24	293	Large ribosomal subunit protein uL14	w
+LARGE	worm	P48162	rpl-23A.1	P48162	10	256	Large ribosomal subunit protein uL23A	w
+LARGE	worm	P48166	rpl-36A	P48166	3	161	Large ribosomal subunit protein eL42	w
+LARGE	worm	P49180	rpl-35A	P49180	15	218	Large ribosomal subunit protein eL33	w
+LARGE	worm	P49181	rpl-36	P49181	17	219	Large ribosomal subunit protein eL36	w
+LARGE	worm	P49404	mrps-18C	P49404	9	289	Large ribosomal subunit protein uL3m	w
+LARGE	worm	P49405	rpl-5	P49405	14	269	Large ribosomal subunit protein uL18	w
+LARGE	worm	P49622	rpl-37.2	P49622	7	153	Large ribosomal subunit protein eL37	w
+LARGE	worm	P50880	rpl-3	P50880	15	307	Large ribosomal subunit protein uL3	w
+LARGE	worm	P52814	rpl-39	P52814	7	192	Large ribosomal subunit protein eL39	w
+LARGE	worm	P52819	rpl-22	P52819	10	213	Large ribosomal subunit protein eL22	w
+LARGE	worm	P61866	rpl-12	P61866	14	234	Large ribosomal subunit protein uL11	w
+LARGE	worm	P90915	CELE_K07A1.10	P90915	9	115	Large ribosomal subunit protein mL64	w
+LARGE	worm	P90993	mrpl-41	P90993	6	128	Large ribosomal subunit protein mL41	w
+LARGE	worm	P91128	rpl-13	P91128	17	226	Large ribosomal subunit protein eL13	w
+LARGE	worm	P91353	mrpl-24	P91353	15	261	Large ribosomal subunit protein uL24m	w
+LARGE	worm	P91374	rpl-15	P91374	23	222	Large ribosomal subunit protein eL15	w
+LARGE	worm	P91913	rplp-1	P91913	5	164	Large ribosomal subunit protein P1	w
+LARGE	worm	P91914	rpl-27	P91914	4	193	Large ribosomal subunit protein eL27	w
+LARGE	worm	Q03604	rnr-1	Q03604	3	41	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	worm	Q04907	mrpl-32	Q04907	10	167	Large ribosomal subunit protein bL32m	w
+LARGE	worm	Q09533	rpl-10L	Q09533	8	235	Large ribosomal subunit protein uL16	w
+LARGE	worm	Q19162	rpl-11.2	Q19162	11	233	Large ribosomal subunit protein uL5B	w
+LARGE	worm	Q19834	aat-1	Q19834	3	4	Large neutral amino acids transporter small subunit 1	w
+LARGE	worm	Q19869	rpl-26	Q19869	2	287	Large ribosomal subunit protein uL24	w
+LARGE	worm	Q20647	rpl-23A.2	Q20647	10	295	Large ribosomal subunit protein uL23B	w
+LARGE	worm	Q21083	mrpl-10	Q21083	9	123	Large ribosomal subunit protein uL10m	w
+LARGE	worm	Q21389	lge-1	Q21389	0	4	Glycosyltransferase-like protein LARGE	w
+LARGE	worm	Q21454	mrpl-35	Q21454	15	112	Large ribosomal subunit protein bL35m	w
+LARGE	worm	Q21930	rpl-28	Q21930	4	166	Large ribosomal subunit protein eL28	w
+LARGE	worm	Q21939	mrpl-49	Q21939	7	136	Large ribosomal subunit protein mL49	w
+LARGE	worm	Q22140	mrpl-16	Q22140	16	219	Large ribosomal subunit protein uL16m	w
+LARGE	worm	Q22438	mrpl-51	Q22438	8	110	Large ribosomal subunit protein mL51	w
+LARGE	worm	Q22623	mrpl-50	Q22623	0	4	Large ribosomal subunit protein mL50	w
+LARGE	worm	Q22768	CELE_T25B9.1	Q22768	0	16	Aminotransferase class I/classII large domain-containing pro	w
+LARGE	worm	Q27389	rpl-13A	Q27389	17	320	Large ribosomal subunit protein uL13	w
+LARGE	worm	Q2L6V2	mrpl-47	Q2L6V2	24	147	Large ribosomal subunit protein uL29m	w
+LARGE	worm	Q4W5T0	mrpl-39	Q4W5T0	4	101	Mitochondrial Ribosomal Protein, Large	w
+LARGE	worm	Q6A575	mrpl-21	Q6A575	5	170	Large ribosomal subunit protein bL21m	w
+LARGE	worm	Q7YX52	mrpl-53	Q7YX52	5	77	Mitochondrial Ribosomal Protein, Large	w
+LARGE	worm	Q93572	rplp-0	Q93572	6	204	Large ribosomal subunit protein uL10	w
+LARGE	worm	Q94300	rpl-11.1	Q94300	11	231	Large ribosomal subunit protein uL5A	w
+LARGE	worm	Q95QC2	mrpl-58	Q95QC2	7	157	Large ribosomal subunit protein mL62	w
+LARGE	worm	Q95X39	mrpl-9	Q95X39	7	153	Large ribosomal subunit protein bL9m	w
+LARGE	worm	Q95Y71	mrpl-45	Q95Y71	7	101	Large ribosomal subunit protein mL45	w
+LARGE	worm	Q95Y83	mrpl-19	Q95Y83	9	171	Large ribosomal subunit protein bL19m	w
+LARGE	worm	Q95Y90	rpl-9	Q95Y90	13	326	Large ribosomal subunit protein uL6	w
+LARGE	worm	Q966C6	rpl-7A	Q966C6	13	229	Large ribosomal subunit protein eL8	w
+LARGE	worm	Q9BKU5	rpl-27a	Q9BKU5	9	256	Large ribosomal subunit protein uL15	w
+LARGE	worm	Q9BL19	rpl-17	Q9BL19	15	245	Large ribosomal subunit protein uL22	w
+LARGE	worm	Q9BL86	mrpl-38	Q9BL86	11	96	Large ribosomal subunit protein mL38	w
+LARGE	worm	Q9BPN6	mrpl-15	Q9BPN6	24	226	Large ribosomal subunit protein uL15m	w
+LARGE	worm	Q9GYS9	mrpl-23	Q9GYS9	8	136	Large ribosomal subunit protein uL23m	w
+LARGE	worm	Q9N3F3	mrpl-17	Q9N3F3	32	200	Large ribosomal subunit protein bL17m	w
+LARGE	worm	Q9N4I4	rpl-10a	Q9N4I4	11	192	Large ribosomal subunit protein uL1	w
+LARGE	worm	Q9NAG2	mrpl-20	Q9NAG2	10	155	Mitochondrial Ribosomal Protein, Large	w
+LARGE	worm	Q9TZ90	mrpl-40	Q9TZ90	26	147	Large ribosomal subunit protein mL40	w
+LARGE	worm	Q9U1P7	CELE_Y95D11A.1	Q9U1P7	0	1	Large ribosomal subunit protein mL52	w
+LARGE	worm	Q9U1X9	rplp-2.2	Q9U1X9	3	116	Large ribosomal subunit protein P2	w
+LARGE	worm	Q9U2A8	rpl-37A	Q9U2A8	2	198	Large ribosomal subunit protein eL43	w
+LARGE	worm	Q9U332	rpl-31	Q9U332	4	236	Large ribosomal subunit protein eL31	w
+LARGE	worm	Q9XVE9	rpl-14	Q9XVE9	11	194	Large ribosomal subunit protein eL14	w
+LARGE	worm	Q9XVF7	rpl-8	Q9XVF7	11	278	Large ribosomal subunit protein uL2	w
+LARGE	worm	Q9XWS4	rpl-30	Q9XWS4	7	219	Large ribosomal subunit protein eL30	w
+LARGE	worm	Q9XX18	mrpl-22	Q9XX18	12	217	Large ribosomal subunit protein uL22m	w
+LARGE	yeast	O14455	RPL36B	O14455	17	289	Large ribosomal subunit protein eL36B	w
+LARGE	yeast	O14464	RTC6	O14464	2	196	Large ribosomal subunit protein bL36m	w
+LARGE	yeast	P02400	RPP2B	P02400	8	217	Large ribosomal subunit protein P2B	w
+LARGE	yeast	P02406	RPL28	P02406	12	426	Large ribosomal subunit protein uL15	w
+LARGE	yeast	P03965	CPA2	P03965	1	23	Carbamoyl phosphate synthase arginine-specific large chain	w
+LARGE	yeast	P04449	RPL24A	P04449	18	305	Large ribosomal subunit protein eL24A	w
+LARGE	yeast	P04456	RPL25	P04456	22	758	Large ribosomal subunit protein uL23	w
+LARGE	yeast	P04650	RPL39	P04650	9	309	Large ribosomal subunit protein eL39	w
+LARGE	yeast	P05317	RPP0	P05317	11	428	Large ribosomal subunit protein uL10	w
+LARGE	yeast	P05318	RPP1A	P05318	8	201	Large ribosomal subunit protein P1A	w
+LARGE	yeast	P05319	RPP2A	P05319	7	204	Large ribosomal subunit protein P2A	w
+LARGE	yeast	P05737	RPL7A	P05737	14	404	Large ribosomal subunit protein uL30A	w
+LARGE	yeast	P05738	RPL9A	P05738	11	375	Large ribosomal subunit protein uL6A	w
+LARGE	yeast	P05739	RPL6B	P05739	20	301	Large ribosomal subunit protein eL6B	w
+LARGE	yeast	P05740	RPL17A	P05740	21	417	Large ribosomal subunit protein uL22A	w
+LARGE	yeast	P05743	RPL26A	P05743	17	795	Large ribosomal subunit protein uL24A	w
+LARGE	yeast	P05744	RPL33A	P05744	7	330	Large ribosomal subunit protein eL33A	w
+LARGE	yeast	P05745	RPL36A	P05745	20	313	Large ribosomal subunit protein eL36A	w
+LARGE	yeast	P05747	RPL29	P05747	4	274	Large ribosomal subunit protein eL29	w
+LARGE	yeast	P05748	RPL15A	P05748	34	343	Large ribosomal subunit protein eL15A	w
+LARGE	yeast	P05749	RPL22A	P05749	12	302	Large ribosomal subunit protein eL22A	w
+LARGE	yeast	P0C0W9	RPL11A	P0C0W9	13	329	Large ribosomal subunit protein uL5A	w
+LARGE	yeast	P0C2H7	RPL27B	P0C2H7	7	382	Large ribosomal subunit protein eL27B	w
+LARGE	yeast	P0C2H8	RPL31A	P0C2H8	7	699	Large ribosomal subunit protein eL31A	w
+LARGE	yeast	P0C2H9	RPL31B	P0C2H9	3	277	Large ribosomal subunit protein eL31B	w
+LARGE	yeast	P0CX24	RPL20B	P0CX24	22	419	Large ribosomal subunit protein eL20B	w
+LARGE	yeast	P0CX26	RPL43B	P0CX26	16	323	Large ribosomal subunit protein eL43B	w
+LARGE	yeast	P0CX27	RPL42A	P0CX27	8	238	Large ribosomal subunit protein eL42A	w
+LARGE	yeast	P0CX28	RPL42B	P0CX28	11	215	Large ribosomal subunit protein eL42B	w
+LARGE	yeast	P0CX41	RPL23A	P0CX41	25	387	Large ribosomal subunit protein uL14A	w
+LARGE	yeast	P0CX42	RPL23B	P0CX42	25	327	Large ribosomal subunit protein uL14B	w
+LARGE	yeast	P0CX44	RPL1B	P0CX44	33	373	Large ribosomal subunit protein uL1B	w
+LARGE	yeast	P0CX45	RPL2A	P0CX45	7	424	Large ribosomal subunit protein uL2A	w
+LARGE	yeast	P0CX46	RPL2B	P0CX46	6	320	Large ribosomal subunit protein uL2B	w
+LARGE	yeast	P0CX49	RPL18A	P0CX49	18	359	Large ribosomal subunit protein eL18A	w
+LARGE	yeast	P0CX50	RPL18B	P0CX50	20	296	Large ribosomal subunit protein eL18B	w
+LARGE	yeast	P0CX54	RPL12B	P0CX54	17	384	Large ribosomal subunit protein uL11B	w
+LARGE	yeast	P0CX82	RPL19A	P0CX82	38	343	Large ribosomal subunit protein eL19A	w
+LARGE	yeast	P0CX83	RPL19B	P0CX83	28	293	Large ribosomal subunit protein eL19	w
+LARGE	yeast	P0CX85	RPL35B	P0CX85	16	383	Large ribosomal subunit protein uL29B	w
+LARGE	yeast	P10622	RPP1B	P10622	11	202	Large ribosomal subunit protein P1B	w
+LARGE	yeast	P10664	RPL4A	P10664	24	518	Large ribosomal subunit protein uL4A	w
+LARGE	yeast	P12687	MRP7	P12687	16	246	Large ribosomal subunit protein bL27m	w
+LARGE	yeast	P14063	MRPL31	P14063	6	80	Large ribosomal subunit protein mL60	w
+LARGE	yeast	P14120	RPL30	P14120	17	381	Large ribosomal subunit protein eL30	w
+LARGE	yeast	P14126	RPL3	P14126	16	494	Large ribosomal subunit protein uL3	w
+LARGE	yeast	P17076	RPL8A	P17076	15	404	Large ribosomal subunit protein eL8A	w
+LARGE	yeast	P19956	MRPL44	P19956	4	78	Large ribosomal subunit protein mL53	w
+LARGE	yeast	P20084	MRPL33	P20084	13	152	Large ribosomal subunit protein uL30m	w
+LARGE	yeast	P20457	PRI2	P20457	5	37	DNA primase large subunit	w
+LARGE	yeast	P21524	RNR1	P21524	5	35	Ribonucleoside-diphosphate reductase large chain 1	w
+LARGE	yeast	P21672	RNR3	P21672	4	19	Ribonucleoside-diphosphate reductase large chain 2	w
+LARGE	yeast	P22353	MRPL8	P22353	16	273	Large ribosomal subunit protein bL17m	w
+LARGE	yeast	P22354	MRPL20	P22354	7	101	Large ribosomal subunit protein mL58	w
+LARGE	yeast	P23369	MRPL25	P23369	10	109	Large ribosomal subunit protein mL59	w
+LARGE	yeast	P24000	RPL24B	P24000	15	261	Large ribosomal subunit protein eL24B	w
+LARGE	yeast	P25348	MRPL32	P25348	9	205	Large ribosomal subunit protein bL32m	w
+LARGE	yeast	P25626	IMG1	P25626	15	234	Large ribosomal subunit protein bL19m	w
+LARGE	yeast	P25642	IMG2	P25642	3	160	Large ribosomal subunit protein mL49	w
+LARGE	yeast	P26321	RPL5	P26321	18	445	Large ribosomal subunit protein uL18	w
+LARGE	yeast	P26784	RPL16A	P26784	36	476	Large ribosomal subunit protein uL13A	w
+LARGE	yeast	P26785	RPL16B	P26785	25	363	Large ribosomal subunit protein uL13B	w
+LARGE	yeast	P29453	RPL8B	P29453	16	386	Large ribosomal subunit protein eL8B	w
+LARGE	yeast	P31334	MRPL9	P31334	9	384	Large ribosomal subunit protein uL3m	w
+LARGE	yeast	P32387	MRP20	P32387	10	197	Large ribosomal subunit protein uL23m	w
+LARGE	yeast	P32388	MRP49	P32388	11	137	Large ribosomal subunit protein mL61	w
+LARGE	yeast	P32611	RML2	P32611	8	320	Large ribosomal subunit protein uL2m	w
+LARGE	yeast	P32773	TOA1	P32773	6	84	Transcription initiation factor IIA large subunit	w
+LARGE	yeast	P32904	MRPL6	P32904	7	312	Large ribosomal subunit protein uL6m	w
+LARGE	yeast	P35996	MRPL38	P35996	23	298	Large ribosomal subunit protein uL14m	w
+LARGE	yeast	P36105	RPL14A	P36105	24	310	Large ribosomal subunit protein eL14A	w
+LARGE	yeast	P36516	MRPL3	P36516	8	194	Large ribosomal subunit protein mL44	w
+LARGE	yeast	P36517	MRPL4	P36517	20	249	Large ribosomal subunit protein uL29m	w
+LARGE	yeast	P36519	MRPL7	P36519	14	294	Large ribosomal subunit protein uL5m	w
+LARGE	yeast	P36520	MRPL10	P36520	19	383	Large ribosomal subunit protein uL15m	w
+LARGE	yeast	P36521	MRPL11	P36521	10	165	Large ribosomal subunit protein uL10m	w
+LARGE	yeast	P36523	MRPL15	P36523	3	109	Large ribosomal subunit protein mL57	w
+LARGE	yeast	P36525	MRPL24	P36525	3	216	Large ribosomal subunit protein bL28m	w
+LARGE	yeast	P36526	MRPL27	P36526	13	167	Large ribosomal subunit protein mL41	w
+LARGE	yeast	P36527	MRPL28	P36527	10	166	Large ribosomal subunit protein mL40	w
+LARGE	yeast	P36528	MRPL17	P36528	11	225	Large ribosomal subunit protein mL46	w
+LARGE	yeast	P36531	MRPL36	P36531	12	166	Large ribosomal subunit protein bL31m	w
+LARGE	yeast	P36532	MRPL37	P36532	7	130	Large ribosomal subunit protein mL54	w
+LARGE	yeast	P36533	MRPL39	P36533	9	217	Large ribosomal subunit protein bL33m	w
+LARGE	yeast	P36534	MRPL40	P36534	13	126	Large ribosomal subunit protein uL24m	w
+LARGE	yeast	P38061	RPL32	P38061	10	329	Large ribosomal subunit protein eL32	w
+LARGE	yeast	P38064	MRPL16	P38064	16	302	Large ribosomal subunit protein uL16m	w
+LARGE	yeast	P38754	RPL14B	P38754	20	272	Large ribosomal subunit protein eL14B	w
+LARGE	yeast	P40212	RPL13B	P40212	22	315	Large ribosomal subunit protein eL13B	w
+LARGE	yeast	P40525	RPL34B	P40525	7	259	Large ribosomal subunit protein eL34B	w
+LARGE	yeast	P40858	MRPL49	P40858	5	110	Large ribosomal subunit protein bL21m	w
+LARGE	yeast	P41056	RPL33B	P41056	10	279	Large ribosomal subunit protein eL33B	w
+LARGE	yeast	P41805	RPL10	P41805	19	395	Large ribosomal subunit protein uL16	w
+LARGE	yeast	P46990	RPL17B	P46990	19	380	Large ribosomal subunit protein uL22B	w
+LARGE	yeast	P49166	RPL37A	P49166	7	343	Large ribosomal subunit protein eL37A	w
+LARGE	yeast	P49167	RPL38	P49167	17	332	Large ribosomal subunit protein eL38	w
+LARGE	yeast	P49626	RPL4B	P49626	16	456	Large ribosomal subunit protein uL4B	w
+LARGE	yeast	P51401	RPL9B	P51401	16	315	Large ribosomal subunit protein uL6B	w
+LARGE	yeast	P51402	RPL37B	P51402	7	296	Large ribosomal subunit protein eL37B	w
+LARGE	yeast	P51998	YML6	P51998	23	353	Large ribosomal subunit protein uL4m	w
+LARGE	yeast	P53145	LSG1	P53145	10	158	Large subunit GTPase 1	w
+LARGE	yeast	P53163	MNP1	P53163	4	172	Large ribosomal subunit protein bL12m	w
+LARGE	yeast	P53221	RPL26B	P53221	9	357	Large ribosomal subunit protein uL24B	w
+LARGE	yeast	P53724	MRPL50	P53724	1	83	Large ribosomal subunit protein bL9m	w
+LARGE	yeast	P53875	MRPL19	P53875	18	313	Large ribosomal subunit protein uL11m	w
+LARGE	yeast	P53881	MRPL22	P53881	10	338	Large ribosomal subunit protein uL22m	w
+LARGE	yeast	P53921	MRP35	P53921	0	86	Large ribosomal subunit protein bL35m	w
+LARGE	yeast	P54780	RPL15B	P54780	26	254	Large ribosomal subunit protein eL15B	w
+LARGE	yeast	P56628	RPL22B	P56628	16	248	Large ribosomal subunit protein eL22B	w
+LARGE	yeast	P87262	RPL34A	P87262	12	331	Large ribosomal subunit protein eL34A	w
+LARGE	yeast	Q02204	MRPL13	Q02204	8	119	Large ribosomal subunit protein mL50	w
+LARGE	yeast	Q02326	RPL6A	Q02326	20	311	Large ribosomal subunit protein eL6A	w
+LARGE	yeast	Q02753	RPL21A	Q02753	10	319	Large ribosomal subunit protein eL21A	w
+LARGE	yeast	Q04598	YDR115W	Q04598	3	166	Large ribosomal subunit protein bL34m	w
+LARGE	yeast	Q04599	MRPL1	Q04599	18	247	Large ribosomal subunit protein uL1m	w
+LARGE	yeast	Q06090	MRPL51	Q06090	11	229	Large ribosomal subunit protein mL43	w
+LARGE	yeast	Q06630	MHR1	Q06630	10	96	Large ribosomal subunit protein mL67	w
+LARGE	yeast	Q06678	MRPL35	Q06678	8	163	Large ribosomal subunit protein mL38	w
+LARGE	yeast	Q12213	RPL7B	Q12213	7	340	Large ribosomal subunit protein uL30B	w
+LARGE	yeast	Q12487	MRPL23	Q12487	7	353	Large ribosomal subunit protein uL13m	w
+LARGE	yeast	Q12672	RPL21B	Q12672	6	248	Large ribosomal subunit protein eL21B	w
+LARGE	yeast	Q12690	RPL13A	Q12690	25	334	Large ribosomal subunit protein eL13A	w
+LARGE	yeast	Q3E757	RPL11B	Q3E757	5	291	Large ribosomal subunit protein uL5B	w
+LARGE	zebrafish	A0A0G2L677	mrpl33	A0A0G2L677	6	402	Large ribosomal subunit protein bL33m	w
+LARGE	zebrafish	A0A0R4IFJ3	slc7a5	A0A0R4IFJ3	4	9	Large neutral amino acids transporter small subunit 1	w
+LARGE	zebrafish	A0A0R4IVV0	mttp	A0A0R4IVV0	4	17	Microsomal triglyceride transfer protein large subunit	w
+LARGE	zebrafish	A0A0R4IY00	mrpl3	A0A0R4IY00	39	786	Large ribosomal subunit protein uL3m	w
+LARGE	zebrafish	A0A8M1NC18	mrpl37	A0A8M1NC18	4	126	Large ribosomal subunit protein mL37	w
+LARGE	zebrafish	A0A8M1NYL4	mrpl1	A0A8M1NYL4	23	339	Large ribosomal subunit protein uL1m	w
+LARGE	zebrafish	A0A8M1P304	mrpl2	A0A8M1P304	36	774	Large ribosomal subunit protein uL2m	w
+LARGE	zebrafish	A0A8M1PVC0	gadd45gip1	A0A8M1PVC0	8	139	Large ribosomal subunit protein mL64	w
+LARGE	zebrafish	A0A8M2B6G8	dlgap3	A0A8M2B6G8	2	18	Discs, large (Drosophila) homolog-associated protein 3	w
+LARGE	zebrafish	A0A8M9PMI3	slc7a8b	A0A8M9PMI3	4	9	Large neutral amino acids transporter small subunit 2	w
+LARGE	zebrafish	A3KPW9	Bag6	A3KPW9	13	34	Large proline-rich protein BAG6	w
+LARGE	zebrafish	A7E2K4	rplp2b	A7E2K4	6	174	Large ribosomal subunit protein P2	w
+LARGE	zebrafish	A8E526	rpl14	A8E526	25	403	Large ribosomal subunit protein eL14	w
+LARGE	zebrafish	B8JIP2	prim2	B8JIP2	4	34	DNA primase large subunit	w
+LARGE	zebrafish	B8JM36	mrpl16	B8JM36	26	614	Large ribosomal subunit protein uL16m	w
+LARGE	zebrafish	E7EXU6	slc7a8a	E7EXU6	4	9	Large neutral amino acids transporter small subunit 2	w
+LARGE	zebrafish	E7F0D0	mrpl58	E7F0D0	21	198	Large ribosomal subunit protein mL62	w
+LARGE	zebrafish	E7F2E7	malsu1	E7F2E7	11	173	Mitochondrial assembly of ribosomal large subunit protein 1	w
+LARGE	zebrafish	E7F2U2	mrpl49	E7F2U2	7	257	Large ribosomal subunit protein mL49	w
+LARGE	zebrafish	E7F658	mrpl52	E7F658	9	135	Large ribosomal subunit protein mL52	w
+LARGE	zebrafish	E7F6A5	mrpl47	E7F6A5	28	451	Large ribosomal subunit protein uL29m	w
+LARGE	zebrafish	E9QEK4	mrpl45	E9QEK4	10	134	Large ribosomal subunit protein mL45	w
+LARGE	zebrafish	E9QEZ5	mrpl34	E9QEZ5	9	351	Large ribosomal subunit protein bL34m	w
+LARGE	zebrafish	F1Q839	mrpl42	F1Q839	8	115	Large ribosomal subunit protein mL42	w
+LARGE	zebrafish	F1R044	mrpl32	F1R044	9	283	Large ribosomal subunit protein bL32m	w
+LARGE	zebrafish	F1RB48	mrpl44	F1RB48	7	272	Large ribosomal subunit protein mL44	w
+LARGE	zebrafish	P79732	rrm1	P79732	3	23	Ribonucleoside-diphosphate reductase large subunit	w
+LARGE	zebrafish	Q05AN2	mrpl21	Q05AN2	10	360	Large ribosomal subunit protein bL21m	w
+LARGE	zebrafish	Q0VFW0	rpl22l1	Q0VFW0	16	396	Large ribosomal subunit protein eL22	w
+LARGE	zebrafish	Q1LWG3	mrpl36	Q1LWG3	2	289	Large ribosomal subunit protein bL36m	w
+LARGE	zebrafish	Q1LXI5	mrpl54	Q1LXI5	3	177	Large ribosomal subunit protein mL54	w
+LARGE	zebrafish	Q24JV3	rpl31	Q24JV3	10	435	Large ribosomal subunit protein eL31	w
+LARGE	zebrafish	Q502B0	mrpl41	Q502B0	13	257	Large ribosomal subunit protein mL41	w
+LARGE	zebrafish	Q502J9	mrpl30	Q502J9	8	242	Large ribosomal subunit protein uL30m	w
+LARGE	zebrafish	Q503X2	mrpl4	Q503X2	41	807	Large ribosomal subunit protein uL4m	w
+LARGE	zebrafish	Q567N5	rpl6	Q567N5	35	412	Large ribosomal subunit protein eL6	w
+LARGE	zebrafish	Q5BJB7	mrpl10	Q5BJB7	13	225	Large ribosomal subunit protein uL10m	w
+LARGE	zebrafish	Q5BJJ8	mrpl51	Q5BJJ8	4	131	Large ribosomal subunit protein mL51	w
+LARGE	zebrafish	Q5BKV9	rpl9	Q5BKV9	12	606	Large ribosomal subunit protein uL6	w
+LARGE	zebrafish	Q5PYH5	dlg1l	Q5PYH5	4	46	Discs large homolog 1-like protein	w
+LARGE	zebrafish	Q5PYH6	dlg1	Q5PYH6	9	30	Disks large homolog 1	w
+LARGE	zebrafish	Q5PYH7	dlg2	Q5PYH7	3	47	Disks large homolog 2	w
+LARGE	zebrafish	Q5TYW5	mrps18a	Q5TYW5	7	270	Large ribosomal subunit protein mL66	w
+LARGE	zebrafish	Q66I54	mrpl53	Q66I54	9	130	Large ribosomal subunit protein mL53	w
+LARGE	zebrafish	Q66I81	mrpl17	Q66I81	37	526	Large ribosomal subunit protein bL17m	w
+LARGE	zebrafish	Q66I86	mrpl40	Q66I86	21	242	Large ribosomal subunit protein mL40	w
+LARGE	zebrafish	Q6DC47	mrpl19	Q6DC47	25	447	Large ribosomal subunit protein bL19m	w
+LARGE	zebrafish	Q6DGL9	rpl38	Q6DGL9	25	420	Large ribosomal subunit protein eL38	w
+LARGE	zebrafish	Q6DGM0	rpl35a	Q6DGM0	13	424	Large ribosomal subunit protein eL33	w
+LARGE	zebrafish	Q6DGM3	mrpl15	Q6DGM3	48	796	Large ribosomal subunit protein uL15m	w
+LARGE	zebrafish	Q6DH02	mrpl24	Q6DH02	31	644	Large ribosomal subunit protein uL24m	w
+LARGE	zebrafish	Q6DH43	mrpl43	Q6DH43	16	448	Large ribosomal subunit protein mL43	w
+LARGE	zebrafish	Q6DRE6	rpl12	Q6DRE6	23	489	Large ribosomal subunit protein uL11	w
+LARGE	zebrafish	Q6IMW8	rpl39	Q6IMW8	12	365	Large ribosomal subunit protein eL39	w
+LARGE	zebrafish	Q6IQB1	rpl5b	Q6IQB1	26	444	Large ribosomal subunit protein uL18	w
+LARGE	zebrafish	Q6IQI6	rpl11	Q6IQI6	24	618	Large ribosomal subunit protein uL5	w
+LARGE	zebrafish	Q6IQQ0	rpl21	Q6IQQ0	9	394	Large ribosomal subunit protein eL21	w
+LARGE	zebrafish	Q6IQS9	mrpl23	Q6IQS9	12	366	Large ribosomal subunit protein uL23m	w
+LARGE	zebrafish	Q6NY89	lsg1	Q6NY89	6	228	Large subunit GTPase 1 homolog	w
+LARGE	zebrafish	Q6P0V6	rpl8	Q6P0V6	16	703	Large ribosomal subunit protein uL2	w
+LARGE	zebrafish	Q6P5K5	rplp1	Q6P5K5	6	200	Large ribosomal subunit protein P1	w
+LARGE	zebrafish	Q6P5L3	rpl19	Q6P5L3	38	408	Large ribosomal subunit protein eL19	w
+LARGE	zebrafish	Q6PBJ9	rplp2	Q6PBJ9	4	174	Large ribosomal subunit protein P2	w
+LARGE	zebrafish	Q6PBR7	mrpl57	Q6PBR7	11	126	Large ribosomal subunit protein mL63	w
+LARGE	zebrafish	Q6PC14	rpl23	Q6PC14	49	779	Large ribosomal subunit protein uL14	w
+LARGE	zebrafish	Q6PC69	rpl10a	Q6PC69	14	368	Large ribosomal subunit protein uL1	w
+LARGE	zebrafish	Q6Q415	rpl36	Q6Q415	18	422	Large ribosomal subunit protein eL36	w
+LARGE	zebrafish	Q6Q417	rpl7	Q6Q417	20	423	Large ribosomal subunit protein uL30	w
+LARGE	zebrafish	Q6R005	dlg4	Q6R005	13	77	Disks large homolog 4	w
+LARGE	zebrafish	Q7T1K0	rpl17	Q7T1K0	33	667	Large ribosomal subunit protein uL22	w
+LARGE	zebrafish	Q7T3F9	mrpl39	Q7T3F9	12	127	Large ribosomal subunit protein mL39	w
+LARGE	zebrafish	Q7ZUG6	rpl30	Q7ZUG6	13	494	Large ribosomal subunit protein eL30	w
+LARGE	zebrafish	Q7ZUH5	mrpl14	Q7ZUH5	3	126	Large ribosomal subunit protein uL14m	w
+LARGE	zebrafish	Q7ZUI0	rpl5a	Q7ZUI0	24	442	Large ribosomal subunit protein uL18	w
+LARGE	zebrafish	Q7ZV82	rpl27	Q7ZV82	11	368	Large ribosomal subunit protein eL27	w
+LARGE	zebrafish	Q7ZV96	rpl10	Q7ZV96	15	528	Large ribosomal subunit protein uL16	w
+LARGE	zebrafish	Q7ZWJ4	rpl18a	Q7ZWJ4	19	432	Large ribosomal subunit protein eL20	w
+LARGE	zebrafish	Q7ZWJ7	rpl34	Q7ZWJ7	12	422	Large ribosomal subunit protein eL34	w
+LARGE	zebrafish	Q8JGR4	rpl24	Q8JGR4	8	346	Large ribosomal subunit protein eL24	w
+LARGE	zebrafish	Q8JHJ1	rpl35	Q8JHJ1	29	505	Large ribosomal subunit protein uL29	w
+LARGE	zebrafish	Q90Z10	rpl13	Q90Z10	24	422	Large ribosomal subunit protein eL13	w
+LARGE	zebrafish	Q9PV90	rplp0	Q9PV90	20	433	Large ribosomal subunit protein uL10	w
+LARGE	zebrafish	X1WHQ5	mrpl12	X1WHQ5	6	173	Large ribosomal subunit protein bL12m	w
+LARGE T	virus	A8Y984	large T	A8Y984	0	6	Large T antigen	
+LARGE T	virus	C9X3W6	large T	C9X3W6	0	5	Large T antigen	
+LARGE T	virus	C9X3X1	large T	C9X3X1	0	5	Large T antigen	
+LARGE T	virus	E5AX31	large T	E5AX31	0	5	Large T antigen	
+LARGE TEGUMENT PROTEIN	virus	A0A5P9JQ92	large tegument protein	A0A5P9JQ92	0	35	A0A5P9JQ92_9ALPH	
+LARGE-ASSOCIATED	human	O14490	DLGAP1	O14490	62	285	Disks large-associated protein 1 (DAP-1) (Guanylate kinase-a	w
+LARGE-ASSOCIATED	human	O95886	DLGAP3	O95886	64	232	Disks large-associated protein 3 (DAP-3) (PSD-95/SAP90-bindi	w
+LARGE-ASSOCIATED	human	Q15398	DLGAP5	Q15398	38	171	Disks large-associated protein 5 (DAP-5) (Discs large homolo	w
+LARGE-ASSOCIATED	human	Q9P1A6	DLGAP2	Q9P1A6	78	289	Disks large-associated protein 2 (DAP-2) (PSD-95/SAP90-bindi	w
+LARGE-ASSOCIATED	human	Q9Y2H0	DLGAP4	Q9Y2H0	53	169	Disks large-associated protein 4 (DAP-4) (PSD-95/SAP90-bindi	w
+LARGE-ASSOCIATED	zebrafish	A0A8M9PPH8	dlgap2a	A0A8M9PPH8	2	10	Disks large-associated protein 2 isoform X1	w
+LARGE-ASSOCIATED	zebrafish	Q7ZYZ6	dlgap1	Q7ZYZ6	3	17	Disks large-associated protein 1	w
+LARGE1	human	O95461	LARGE1	O95461	6	94	Xylosyl- and glucuronyltransferase LARGE1 (EC 2.4.-.-) (Acet	
+LARGE1	mus-musculus	Q9Z1M7	Large1	Q9Z1M7	1	16	Xylosyl- and glucuronyltransferase LARGE1	
+LARGE1	rattus-norvegicus	A0A0G2K618	Large1	A0A0G2K618	0	15	LARGE xylosyl- and glucuronyltransferase 1	
+LARGE1	zebrafish	Q66PG2	large1	Q66PG2	1	8	Xylosyl- and glucuronyltransferase LARGE1	w
+LARGE1	zebrafish	Q66PG2	large1	Q66PG2	1	8	Xylosyl- and glucuronyltransferase LARGE1	w
+LARGE2	human	Q8N3Y3	LARGE2	Q8N3Y3	8	96	Xylosyl- and glucuronyltransferase LARGE2 (EC 2.4.-.-) (Glyc	
+LARGE2	mus-musculus	Q5XPT3	Large2	Q5XPT3	1	3	Xylosyl- and glucuronyltransferase LARGE2	
+LARGE2	rattus-norvegicus	Q6P7A1	Large2	Q6P7A1	0	3	Xylosyl- and glucuronyltransferase LARGE2	
+LARGE2	zebrafish	Q66PG1	large2	Q66PG1	1	8	Xylosyl- and glucuronyltransferase LARGE2s	
+LARGE2S	zebrafish	Q66PG1	large2	Q66PG1	1	8	Xylosyl- and glucuronyltransferase LARGE2s	w
+LARGEN	human	Q569H4	PRR16	Q569H4	16	49	Protein Largen (Mesenchymal stem cell protein DSC54) (Prolin	w
+LARGEST	fly	FBgn0003277	Polr2A	P04052	11	57	DNA-directed RNA polymerase II subunit RPB1 (RNA polymerase 	w
+LARGEST	fly	FBgn0019938	Polr1A	P91875	1	13	DNA-directed RNA polymerase I subunit RPA1 (RNA polymerase I	w
+LARGEST	human	O14802	POLR3A	O14802	38	676	DNA-directed RNA polymerase III subunit RPC1 (RNA polymerase	w
+LARGEST	human	O95602	POLR1A	O95602	20	362	DNA-directed RNA polymerase I subunit RPA1 (RNA polymerase I	w
+LARGN_HUMAN	human	Q569H4	PRR16	Q569H4	16	49		
+LARIAT	fly	FBgn0035838	ldbr	Q9VSD7	11	97	Lariat debranching enzyme (DmDBR1) (EC 3.1.4.-)	w
+LARIAT	human	Q9UK59	DBR1	Q9UK59	30	168	Lariat debranching enzyme (EC 3.1.4.-)	w
+LARIAT	worm	Q966M6	dbr-1	Q966M6	0	13	Lariat debranching enzyme	w
+LARIAT	yeast	P24309	DBR1	P24309	1	6	Lariat debranching enzyme	w
+LARIAT	zebrafish	Q7T3E4	dbr1	Q7T3E4	1	1	Lariat debranching enzyme	w
+LARK	fly	FBgn0011640	lark	Q94901	11	131	RNA-binding protein lark	w
+LARK	fly	FBgn0011640	lark	Q94901	11	131	RNA-binding protein lark	w
+LARK	human	Q9BWF3	RBM4	Q9BWF3	22	257	RNA-binding protein 4 (Lark homolog) (hLark) (RNA-binding mo	w
+LARK_287	fly	FBgn0011640	lark	Q94901	11	131		
+LARK_343	fly	FBgn0011640	lark	Q94901	11	131		
+LARP	fly	FBgn0261618	larp	Q9VAW5	12	88	La-related protein 1 (dLarp)	
+LARP	human	Q6PKG0	LARP1	Q6PKG0	71	461		
+LARP	human	Q8WYJ6	SEPTIN1	Q8WYJ6	17	56	Septin-1 (LARP) (Peanut-like protein 3) (Serologically defin	w
+LARP-1	worm	D5MCN2	larp-1	D5MCN2	0	19	La-related protein 1	
+LARP-5	worm	O44760	larp-5	O44760	3	10	HTH La-type RNA-binding domain-containing protein	
+LARP1	human	Q6PKG0	LARP1	Q6PKG0	71	461	La-related protein 1 (La ribonucleoprotein domain family mem	
+LARP1	mus-musculus	Q6ZQ58	Larp1	Q6ZQ58	5	79	La-related protein 1	
+LARP1	rattus-norvegicus	F1M062	Larp1	F1M062	3	31	La ribonucleoprotein 1, translational regulator	
+LARP1A	arabidopsis-thaliana	Q940X9	LARP1A	Q940X9	2	11	La-related protein 1A	
+LARP1B	arabidopsis-thaliana	Q8RWR2	LARP1B	Q8RWR2	0	8	La-related protein 1B	
+LARP1B	human	Q659C4	LARP1B	Q659C4	18	166	La-related protein 1B (La ribonucleoprotein domain family me	
+LARP1B	mus-musculus	F6U5V1	Larp1b	F6U5V1	2	4	La ribonucleoprotein 1B	
+LARP1B	zebrafish	F1Q931	larp1b	F1Q931	4	22	La ribonucleoprotein 1B	
+LARP1C	arabidopsis-thaliana	Q94K80	LARP1C	Q94K80	2	8	La-related protein 1C	
+LARP1_HUMAN	human	Q6PKG0	LARP1	Q6PKG0	71	461		
+LARP2	human	Q659C4	LARP1B	Q659C4	18	166		
+LARP4	human	Q71RC2	LARP4	Q71RC2	33	228	La-related protein 4 (La ribonucleoprotein domain family mem	
+LARP4	mus-musculus	Q8BWW4	Larp4	Q8BWW4	8	67	La-related protein 4	
+LARP4	rattus-norvegicus	A0A0G2K8A9	Larp4	A0A0G2K8A9	0	20	La ribonucleoprotein 4	
+LARP4AA	zebrafish	E9QDP4	larp4aa	E9QDP4	2	6	La ribonucleoprotein 4Aa	
+LARP4AB	zebrafish	A0AB32TTZ6	larp4ab	A0AB32TTZ6	1	2	La-related protein 4 isoform X7	
+LARP4B	fly	FBgn0035424	Larp4B	Q9I7T7	13	78	La-related protein Larp4B (La ribonucleoprotein domain famil	w
+LARP4B	fly	FBgn0035424	Larp4B	Q9I7T7	13	78	La-related protein Larp4B (La ribonucleoprotein domain famil	w
+LARP4B	human	Q92615	LARP4B	Q92615	51	280	La-related protein 4B (La ribonucleoprotein domain family me	
+LARP4B	mus-musculus	Q6A0A2	Larp4b	Q6A0A2	0	42	La-related protein 4B	
+LARP4B	rattus-norvegicus	D3ZF45	Larp4b	D3ZF45	2	38	La ribonucleoprotein 4B	
+LARP4B	zebrafish	Q05AJ1	larp4b	Q05AJ1	2	2	La ribonucleoprotein 4B	
+LARP4_HUMAN	human	Q71RC2	LARP4	Q71RC2	33	228		
+LARP5	human	Q92615	LARP4B	Q92615	51	280		
+LARP6	human	Q9BRS8	LARP6	Q9BRS8	8	29	La-related protein 6 (Acheron) (Achn) (La ribonucleoprotein 	
+LARP6A	arabidopsis-thaliana	Q94A38	LARP6A	Q94A38	1	1	La-related protein 6A	
+LARP6B	arabidopsis-thaliana	O80567	LARP6B	O80567	3	5	La-related protein 6B	
+LARP6C	arabidopsis-thaliana	Q9LHL3	LARP6C	Q9LHL3	1	1	La-related protein 6C	
+LARP6_HUMAN	human	Q9BRS8	LARP6	Q9BRS8	8	29		
+LARP7	fly	FBgn0260771	Larp7	Q9W362	5	31	La-related protein 7 (La ribonucleoprotein domain family mem	
+LARP7	human	Q4G0J3	LARP7	Q4G0J3	102	1044	La-related protein 7 (La ribonucleoprotein domain family mem	
+LARP7	mus-musculus	Q05CL8	Larp7	Q05CL8	3	30	La-related protein 7	
+LARP7	rattus-norvegicus	Q5XI01	Larp7	Q5XI01	2	29	La-related protein 7	
+LARP7	zebrafish	Q7ZWE3	larp7	Q7ZWE3	8	124	La-related protein 7	
+LARP7-PS	mus-musculus	A2AMD0	Larp7-ps	A2AMD0	2	9	La ribonucleoprotein 7, transcriptional regulator, pseudogen	
+LARP7_HUMAN	human	Q4G0J3	LARP7	Q4G0J3	102	1044		
+LARP_1242	fly	FBgn0261618	larp	Q9VAW5	12	88		
+LARP_1305	fly	FBgn0261618	larp	Q9VAW5	12	88		
+LARP_1317	fly	FBgn0261618	larp	Q9VAW5	12	88		
+LARS	human	Q9P2J5	LARS1	Q9P2J5	5	387		
+LARS-1	worm	Q09996	lars-1	Q09996	0	45	Leucine--tRNA ligase	
+LARS-2	worm	Q23511	lars-2	Q23511	1	33	leucine--tRNA ligase	
+LARS1	human	Q9P2J5	LARS1	Q9P2J5	5	387	Leucine--tRNA ligase, cytoplasmic (EC 6.1.1.4) (Leucyl-tRNA 	
+LARS1	mus-musculus	Q8BMJ2	Lars1	Q8BMJ2	1	56	Leucine--tRNA ligase, cytoplasmic	
+LARS1	rattus-norvegicus	Q5PPJ6	Lars1	Q5PPJ6	0	41	Leucine--tRNA ligase, cytoplasmic	
+LARS2	human	Q15031	LARS2	Q15031	7	219	Leucine--tRNA ligase, mitochondrial (EC 6.1.1.4) (Leucyl-tRN	
+LARS2	mus-musculus	Q8VDC0	Lars2	Q8VDC0	0	38	Probable leucine--tRNA ligase, mitochondrial	
+LARS2	rattus-norvegicus	A0A0G2K9E5	Lars2	A0A0G2K9E5	0	38	leucine--tRNA ligase	
+LARVA	fly	FBgn0014395	tilB	Q9VR52	1	3	Protein tilB (Touch insensitive larva B protein)	w
+LARVA	worm	P92172	daf-7	P92172	1	9	Dauer larva development regulatory growth factor daf-7	w
+LARVAE	fly	FBgn0002121	l(2)gl	P08111	6	91	Lethal(2) giant larvae protein	w
+LARVAE	human	Q15334	LLGL1	Q15334	19	158	Lethal(2) giant larvae protein homolog 1 (LLGL) (DLG4) (Hugl	w
+LARVAE	human	Q5T5C0	STXBP5	Q5T5C0	21	123	Syntaxin-binding protein 5 (Lethal(2) giant larvae protein h	w
+LARVAE	human	Q6P1M3	LLGL2	Q6P1M3	21	170	LLGL scribble cell polarity complex component 2 (HGL) (Letha	w
+LARVAE	human	Q9Y2K9	STXBP5L	Q9Y2K9	21	77	Syntaxin-binding protein 5-like (Lethal(2) giant larvae prot	w
+LARVAE	worm	A0A0K3ATN9	tom-1	A0A0K3ATN9	6	45	Lethal giant larvae homologue 2 domain-containing protein	w
+LARVAE	yeast	P38163	SRO77	P38163	6	22	Lethal(2) giant larvae protein homolog SRO77	w
+LARVAE	yeast	Q12038	SRO7	Q12038	4	23	Lethal(2) giant larvae protein homolog SRO7	w
+LARVAL	fly	FBgn0000045	Act79B	P02574	26	195	Actin, larval muscle (EC 3.6.4.-) (Actin-79B)	w
+LARVAL	fly	FBgn0002531	Lcp1	P02839	14	275	Larval cuticle protein 1 (Larval cuticle protein I)	w
+LARVAL	fly	FBgn0002533	Lcp2	P07187	12	295	Larval cuticle protein 2 (Larval cuticle protein II)	w
+LARVAL	fly	FBgn0002534	Lcp3	P07188	10	271	Larval cuticle protein 3 (Larval cuticle protein III)	w
+LARVAL	fly	FBgn0002535	Lcp4	P07189	8	281	Larval cuticle protein 4 (Larval cuticle protein IV)	w
+LARVAL	fly	FBgn0002562	Lsp1alpha	P11995	5	250	Larval serum protein 1 alpha chain (Hexamerin-1-alpha)	w
+LARVAL	fly	FBgn0002563	Lsp1beta	P11996	7	253	Larval serum protein 1 beta chain (Hexamerin-1-beta)	w
+LARVAL	fly	FBgn0002564	Lsp1gamma	P11997	2	252	Larval serum protein 1 gamma chain (Hexamerin-1-gamma)	w
+LARVAL	fly	FBgn0002565	Lsp2	Q24388	5	287	Larval serum protein 2 (LSP-2) (Hexamerin-2)	w
+LARVAL	fly	FBgn0002569	Mal-A2	P07191	18	255	Maltase A2 (EC 3.2.1.20) (Larval visceral protein D)	w
+LARVAL	fly	FBgn0002570	Mal-A1	P07190	40	263	Maltase A1 (EC 3.2.1.20) (Larval visceral protein H)	w
+LARVAL	fly	FBgn0002571	Mal-A3	P07192	31	249	Maltase A3 (EC 3.2.1.20) (Larval visceral protein L)	w
+LARVAL	fly	FBgn0020637	Lcp65Ag2	C0HL64	3	64	Larval cuticle protein 65Ag1 (Larval cuticle protein 8)	w
+LARVAL	fly	FBgn0020638	Lcp65Ag1	C0HL64	4	218	Larval cuticle protein 65Ag1 (Larval cuticle protein 8)	w
+LARVAL	fly	FBgn0020643	Lcp65Ab2	C0HL62	5	221	Larval cuticle protein 65Ab1 (Larval cuticle protein 5)	w
+LARVAL	fly	FBgn0020644	Lcp65Ab1	C0HL62	2	56	Larval cuticle protein 65Ab1 (Larval cuticle protein 5)	w
+LARVAL	fly	FBgn0025578	Lcp9	P82384	6	264	Larval cuticle protein 9 (Larval cuticle protein IX)	w
+LARVAL	fly	FBgn0086519	Cpr47Eg	Q7JZV0	13	268	Cuticular protein 47Eg (Larval cuticle protein 2A)	w
+LARVAL	fly	FBgn0086611	Lcp65Ag3	Q9I7Q6	7	265	FI01403p (Larval cuticle protein)	w
+LARVAL	fly	FBgn0268063	ltl	Q9VS84	38	249	FI03225p (Larval translucida, isoform A) (Larval translucida	w
+LARYNGEAL	human	Q9H3C7	GGNBP2	Q9H3C7	12	110	Gametogenetin-binding protein 2 (Laryngeal carcinoma-related	w
+LARYNGEAL	human	Q9UKX3	MYH13	Q9UKX3	20	90	Myosin-13 (Myosin heavy chain 13) (Myosin heavy chain, skele	w
+LARYNGEAL	human	Q9UPZ9	CILK1	Q9UPZ9	483	1284	Serine/threonine-protein kinase ICK (EC 2.7.11.1) (Ciliogene	w

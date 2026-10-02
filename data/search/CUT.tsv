@@ -1,38 +1,293 @@
-CUT1	arabidopsis-thaliana	Q9XF43	CUT1	Q9XF43	6	48	3-ketoacyl-CoA synthase 6
-CUT1	mycobacterium-tuberculosis	O06793	cut1	O06793	0	25	Probable carboxylesterase Culp5
-CUT11	schizosaccharomyces-pombe	O13961	cut11	O13961	15	374	Nuclear envelope protein ndc1
-CUT12	schizosaccharomyces-pombe	O59755	cut12	O59755	2	11	Spindle pole body-associated protein cut12
-CUT14	cladophialophora-carrionii	A0A1C1CR45	cut14	A0A1C1CR45	7	24	Structural maintenance of chromosomes protein
-CUT14	schizosaccharomyces-pombe	P41003	cut14	P41003	2	24	Structural maintenance of chromosomes protein 2
-CUT15	cladophialophora-carrionii	A0A1C1C8W0	cut15	A0A1C1C8W0	15	44	Importin subunit alpha
-CUT15	schizosaccharomyces-pombe	O14063	cut15	O14063	14	31	Importin subunit alpha-1
-CUT2	mycobacterium-tuberculosis	P9WP41	cut2	P9WP41	0	25	Probable carboxylesterase Culp2
-CUT2	schizosaccharomyces-pombe	P21135	cut2	P21135	3	4	Securin
-CUT20	schizosaccharomyces-pombe	O42839	cut20	O42839	3	53	Anaphase-promoting complex subunit 4
-CUT23	cladophialophora-carrionii	A0A1C1CVL1	cut23	A0A1C1CVL1	7	73	Anaphase-promoting complex subunit 8
-CUT23	schizosaccharomyces-pombe	O94556	cut23	O94556	9	49	Anaphase-promoting complex subunit 8
-CUT3	cladophialophora-carrionii	A0A1C1CWG2	cut3	A0A1C1CWG2	7	29	Structural maintenance of chromosomes protein
-CUT3	mycobacterium-tuberculosis	P9WP39	cut3	P9WP39	1	25	Probable carboxylesterase Culp3
-CUT3	schizosaccharomyces-pombe	P41004	cut3	P41004	7	26	Structural maintenance of chromosomes protein 4
-CUT4	schizosaccharomyces-pombe	Q9URV2	cut4	Q9URV2	9	54	Anaphase-promoting complex subunit 1
-CUT5	dictyostelium-discoideum	Q54X69	cut5	Q54X69	0	34	BRCT domain-containing protein
-CUT5A	mycobacterium-tuberculosis	Q79FA5	cut5a	Q79FA5	0	25	Probable cutinase
-CUT5B	mycobacterium-tuberculosis	Q79FA4	cut5b	Q79FA4	0	25	Probable carboxylesterase Culp7
-CUT6	mycobacterium-tuberculosis	O53581	cut6	O53581	0	55	Carboxylesterase/lipase Culp6
-CUT7	schizosaccharomyces-pombe	P24339	cut7	P24339	2	16	Kinesin-like protein cut7
-CUT8	schizosaccharomyces-pombe	P38937	cut8	P38937	0	8	Tethering factor for nuclear proteasome cut8
-CUT9	cladophialophora-carrionii	A0A1C1CB72	cut9	A0A1C1CB72	8	78	Anaphase-promoting complex subunit cut9
-CUT9	schizosaccharomyces-pombe	P41889	cut9	P41889	8	63	Anaphase-promoting complex subunit cut9
-CUTA	dictyostelium-discoideum	Q6TMJ4	cutA	Q6TMJ4	0	4	3-ketoacyl-CoA synthase
-CUTA	escherichia-coli-83333	P69488	cutA	P69488	1	2	Divalent-cation tolerance protein CutA
-CUTA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GH55	cutA	A0A0H3GH55	0	4	Divalent-cation tolerance protein CutA
-CUTA	mus-musculus	Q9CQ89	Cuta	Q9CQ89	0	8	Protein CutA
-CUTA	salmonella-typhimurium	Q7CPA2	cutA	Q7CPA2	0	2	Divalent-cation tolerance protein CutA
-CUTA	shigella-dysenteriae-serotype-1	Q328D1	cutA	Q328D1	0	3	Divalent-cation tolerance protein CutA
-CUTC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQ70	cutC	A0A0H3GQ70	0	1	PF03932 family protein CutC
-CUTC	mus-musculus	Q9D8X1	Cutc	Q9D8X1	0	8	Copper homeostasis protein cutC homolog
-CUTC	nocardia-brasiliensis	K0F1M2	cutC	K0F1M2	0	2	PF03932 family protein CutC
-CUTC	salmonella-typhimurium	Q8ZNV0	cutC	Q8ZNV0	0	1	PF03932 family protein CutC
-CUTC	shigella-dysenteriae-serotype-1	Q32H71	cutC	Q32H71	0	1	PF03932 family protein CutC
-CUTC	streptococcus-pneumoniae	Q8DPJ1	cutC	Q8DPJ1	0	1	PF03932 family protein CutC
-CUTF	shigella-dysenteriae-serotype-1	Q32JR5	cutF	Q32JR5	0	3	Copper homeostasis protein
+CUT-1	worm	Q03755	cut-1	Q03755	0	1	Cuticlin-1	
+CUT-2	worm	P34682	cut-2	P34682	0	1	Cuticlin 2	
+CUT-3	worm	Q19707	cut-3	Q19707	0	3	Cuticlin-3	
+CUT-5	worm	Q21808	cut-5	Q21808	0	1	Cuticlin-5	
+CUT-LIKE	human	O14529	CUX2	O14529	19	74	Homeobox protein cut-like 2 (Homeobox protein cux-2)	w
+CUT-LIKE	human	P39880	CUX1	P39880	48	228	Homeobox protein cut-like 1 (CCAAT displacement protein) (CD	w
+CUT-LIKE	worm	A7DTF5	CELE_Y56A3A.7	A7DTF5	2	4	Homeobox protein cut-like	w
+CUT-LIKE	worm	Q9BL02	ceh-44	Q9BL02	1	17	Homeobox protein cut-like ceh-44	w
+CUT-LIKE	zebrafish	E7F4J9	cux1a	E7F4J9	1	9	Homeobox protein cut-like	w
+CUT1	arabidopsis-thaliana	Q9XF43	CUT1	Q9XF43	6	48	3-ketoacyl-CoA synthase 6	
+CUT1	mycobacterium-tuberculosis	O06793	cut1	O06793	0	25	Probable carboxylesterase Culp5	
+CUT11	schizosaccharomyces-pombe	O13961	cut11	O13961	15	374	Nuclear envelope protein ndc1	
+CUT12	schizosaccharomyces-pombe	O59755	cut12	O59755	2	11	Spindle pole body-associated protein cut12	
+CUT14	cladophialophora-carrionii	A0A1C1CR45	cut14	A0A1C1CR45	7	24	Structural maintenance of chromosomes protein	
+CUT14	schizosaccharomyces-pombe	P41003	cut14	P41003	2	24	Structural maintenance of chromosomes protein 2	
+CUT15	cladophialophora-carrionii	A0A1C1C8W0	cut15	A0A1C1C8W0	15	44	Importin subunit alpha	
+CUT15	schizosaccharomyces-pombe	O14063	cut15	O14063	14	31	Importin subunit alpha-1	
+CUT2	mycobacterium-tuberculosis	P9WP41	cut2	P9WP41	0	25	Probable carboxylesterase Culp2	
+CUT2	schizosaccharomyces-pombe	P21135	cut2	P21135	3	4	Securin	
+CUT20	schizosaccharomyces-pombe	O42839	cut20	O42839	3	53	Anaphase-promoting complex subunit 4	
+CUT23	cladophialophora-carrionii	A0A1C1CVL1	cut23	A0A1C1CVL1	7	73	Anaphase-promoting complex subunit 8	
+CUT23	schizosaccharomyces-pombe	O94556	cut23	O94556	9	49	Anaphase-promoting complex subunit 8	
+CUT3	cladophialophora-carrionii	A0A1C1CWG2	cut3	A0A1C1CWG2	7	29	Structural maintenance of chromosomes protein	
+CUT3	mycobacterium-tuberculosis	P9WP39	cut3	P9WP39	1	25	Probable carboxylesterase Culp3	
+CUT3	schizosaccharomyces-pombe	P41004	cut3	P41004	7	26	Structural maintenance of chromosomes protein 4	
+CUT4	schizosaccharomyces-pombe	Q9URV2	cut4	Q9URV2	9	54	Anaphase-promoting complex subunit 1	
+CUT5	dictyostelium-discoideum	Q54X69	cut5	Q54X69	0	34	BRCT domain-containing protein	
+CUT5A	mycobacterium-tuberculosis	Q79FA5	cut5a	Q79FA5	0	25	Probable cutinase	
+CUT5B	mycobacterium-tuberculosis	Q79FA4	cut5b	Q79FA4	0	25	Probable carboxylesterase Culp7	
+CUT6	mycobacterium-tuberculosis	O53581	cut6	O53581	0	55	Carboxylesterase/lipase Culp6	
+CUT7	schizosaccharomyces-pombe	P24339	cut7	P24339	2	16	Kinesin-like protein cut7	
+CUT8	schizosaccharomyces-pombe	P38937	cut8	P38937	0	8	Tethering factor for nuclear proteasome cut8	
+CUT9	cladophialophora-carrionii	A0A1C1CB72	cut9	A0A1C1CB72	8	78	Anaphase-promoting complex subunit cut9	
+CUT9	schizosaccharomyces-pombe	P41889	cut9	P41889	8	63	Anaphase-promoting complex subunit cut9	
+CUTA	dictyostelium-discoideum	Q6TMJ4	cutA	Q6TMJ4	0	4	3-ketoacyl-CoA synthase	
+CUTA	escherichia-coli-83333	P69488	cutA	P69488	1	2	Divalent-cation tolerance protein CutA	
+CUTA	human	O60888	CUTA	O60888	2	73	Protein CutA (Acetylcholinesterase-associated protein) (Brai	
+CUTA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GH55	cutA	A0A0H3GH55	0	4	Divalent-cation tolerance protein CutA	
+CUTA	mus-musculus	Q9CQ89	Cuta	Q9CQ89	0	8	Protein CutA	
+CUTA	salmonella-typhimurium	Q7CPA2	cutA	Q7CPA2	0	2	Divalent-cation tolerance protein CutA	
+CUTA	shigella-dysenteriae-serotype-1	Q328D1	cutA	Q328D1	0	3	Divalent-cation tolerance protein CutA	
+CUTA	worm	Q20051	CELE_F35G12.7	Q20051	0	1	Divalent-cation tolerance protein CutA	w
+CUTANEOUS	human	Q14966	ZNF638	Q14966	92	386	Zinc finger protein 638 (Cutaneous T-cell lymphoma-associate	w
+CUTANEOUS	human	Q96PC5	MIA2	Q96PC5	18	117	Melanoma inhibitory activity protein 2 (MIA protein 2) (CTAG	w
+CUTANEOUS	human	Q9H2F9	CCDC68	Q9H2F9	34	113	Coiled-coil domain-containing protein 68 (Cutaneous T-cell l	w
+CUTANEOUS	human	Q9H2G4	TSPYL2	Q9H2G4	17	128	Testis-specific Y-encoded-like protein 2 (TSPY-like protein 	w
+CUTANEOUS	human	Q9H2K8	TAOK3	Q9H2K8	21	106	Serine/threonine-protein kinase TAO3 (EC 2.7.11.1) (Cutaneou	w
+CUTANEOUS	human	Q9HC47	CTAGE1	Q9HC47	0	7	Cutaneous T-cell lymphoma-associated antigen 1 (Protein cTAG	w
+CUTANEOUS	human	Q9ULU4	ZMYND8	Q9ULU4	90	404	MYND-type zinc finger-containing chromatin reader ZMYND8 (Cu	w
+CUTANEOUS	human	Q9Y4X3	CCL27	Q9Y4X3	59	256	C-C motif chemokine 27 (CC chemokine ILC) (Cutaneous T-cell-	w
+CUTA_HUMAN	human	O60888	CUTA	O60888	2	73		
+CUTC	fly	FBgn0038332	CG6136	Q9VF71	0	1	Copper homeostasis protein cutC homolog	w
+CUTC	human	Q9NTM9	CUTC	Q9NTM9	0	63	Copper homeostasis protein cutC homolog	
+CUTC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQ70	cutC	A0A0H3GQ70	0	1	PF03932 family protein CutC	
+CUTC	mus-musculus	Q9D8X1	Cutc	Q9D8X1	0	8	Copper homeostasis protein cutC homolog	
+CUTC	nocardia-brasiliensis	K0F1M2	cutC	K0F1M2	0	2	PF03932 family protein CutC	
+CUTC	salmonella-typhimurium	Q8ZNV0	cutC	Q8ZNV0	0	1	PF03932 family protein CutC	
+CUTC	shigella-dysenteriae-serotype-1	Q32H71	cutC	Q32H71	0	1	PF03932 family protein CutC	
+CUTC	streptococcus-pneumoniae	Q8DPJ1	cutC	Q8DPJ1	0	1	PF03932 family protein CutC	
+CUTC	worm	P34630	cutc-1	P34630	0	1	Copper homeostasis protein cutC homolog	w
+CUTC-1	worm	P34630	cutc-1	P34630	0	1	Copper homeostasis protein cutC homolog	
+CUTC_HUMAN	human	Q9NTM9	CUTC	Q9NTM9	0	63		
+CUTF	shigella-dysenteriae-serotype-1	Q32JR5	cutF	Q32JR5	0	3	Copper homeostasis protein	
+CUTI-1	worm	O02051	cuti-1	O02051	0	1	Protein cuti-1	w
+CUTI-1	worm	O02051	cuti-1	O02051	0	1	Protein cuti-1	w
+CUTICLE	fly	FBgn0000551	Edg78E	P27779	6	273	Pupal cuticle protein Edg-78E	w
+CUTICLE	fly	FBgn0000552	Edg84A	P27780	15	243	Pupal cuticle protein Edg-84A	w
+CUTICLE	fly	FBgn0002531	Lcp1	P02839	14	275	Larval cuticle protein 1 (Larval cuticle protein I)	w
+CUTICLE	fly	FBgn0002533	Lcp2	P07187	12	295	Larval cuticle protein 2 (Larval cuticle protein II)	w
+CUTICLE	fly	FBgn0002534	Lcp3	P07188	10	271	Larval cuticle protein 3 (Larval cuticle protein III)	w
+CUTICLE	fly	FBgn0002535	Lcp4	P07189	8	281	Larval cuticle protein 4 (Larval cuticle protein IV)	w
+CUTICLE	fly	FBgn0002945	nkd	Q9VVV9	12	68	Protein naked cuticle (dNkd)	w
+CUTICLE	fly	FBgn0003046	Pcp	P14484	11	255	Pupal cuticle protein	w
+CUTICLE	fly	FBgn0004554	Edg91	P27781	28	244	Pupal cuticle protein Edg-91 (Ecdysone-dependent protein 91)	w
+CUTICLE	fly	FBgn0004777	Ccp84Ag	O97064	15	302	Ccp84Ag (Cuticle protein)	w
+CUTICLE	fly	FBgn0004778	Ccp84Af	O97063	19	246	Ccp84Af (Cuticle protein) (GEO11149p1)	w
+CUTICLE	fly	FBgn0004779	Ccp84Ae	O97062	12	245	Ccp84Ae (Cuticle protein) (RE04882p)	w
+CUTICLE	fly	FBgn0004780	Ccp84Ad	O97061	20	251	Ccp84Ad (Cuticle protein)	w
+CUTICLE	fly	FBgn0004781	Ccp84Ac	O97060	25	243	Ccp84Ac (Cuticle protein) (RE27148p)	w
+CUTICLE	fly	FBgn0004782	Ccp84Ab	O97059	14	279	Ccp84Ab (Cuticle protein)	w
+CUTICLE	fly	FBgn0004783	Ccp84Aa	Q9V3L8	11	265	Ccp84Aa (Cuticle protein) (RH14104p)	w
+CUTICLE	fly	FBgn0014454	Acp1	Q26416	22	291	Adult cuticle protein 1 (dACP-1)	w
+CUTICLE	fly	FBgn0020637	Lcp65Ag2	C0HL64	3	64	Larval cuticle protein 65Ag1 (Larval cuticle protein 8)	w
+CUTICLE	fly	FBgn0020638	Lcp65Ag1	C0HL64	4	218	Larval cuticle protein 65Ag1 (Larval cuticle protein 8)	w
+CUTICLE	fly	FBgn0020639	Lcp65Af	P92194	4	256	Cuticle protein DCP7 (Lcp65Af)	w
+CUTICLE	fly	FBgn0020641	Lcp65Ad	P91939	9	270	Cuticle protein LCP65Ad (GEO09318p1) (Lcp65Ad, isoform A) (L	w
+CUTICLE	fly	FBgn0020642	Lcp65Ac	P92181	6	258	Cuticle protein DCP2 (Lcp65Ac) (GEO07648p1) (RE33063p)	w
+CUTICLE	fly	FBgn0020643	Lcp65Ab2	C0HL62	5	221	Larval cuticle protein 65Ab1 (Larval cuticle protein 5)	w
+CUTICLE	fly	FBgn0020644	Lcp65Ab1	C0HL62	2	56	Larval cuticle protein 65Ab1 (Larval cuticle protein 5)	w
+CUTICLE	fly	FBgn0020765	Acp65Aa	P91941	16	345	Adult cuticle protein 65Aa (GEO08401p1) (RH61147p)	w
+CUTICLE	fly	FBgn0025578	Lcp9	P82384	6	264	Larval cuticle protein 9 (Larval cuticle protein IX)	w
+CUTICLE	fly	FBgn0030539	CG1368	Q9VY62	8	261	Cuticle protein 16.5	w
+CUTICLE	fly	FBgn0034828	CG13545	Q9W1U0	16	245	Cuticle protein 16.5	w
+CUTICLE	fly	FBgn0035552	CG11350	Q9VZB3	5	259	Cuticle protein 16.5	w
+CUTICLE	fly	FBgn0035554	CG13721	Q9VZB1	14	251	Pupal cuticle protein Edg-91	w
+CUTICLE	fly	FBgn0036594	CG13047	Q9VV18	33	259	Cuticle protein 16.5	w
+CUTICLE	fly	FBgn0040553	CG14374	Q9VFV6	12	245	Cuticle protein 16.5	w
+CUTICLE	fly	FBgn0085234	CG34205	Q9W287	15	296	Cuticle protein 16.5-like	w
+CUTICLE	fly	FBgn0086519	Cpr47Eg	Q7JZV0	13	268	Cuticular protein 47Eg (Larval cuticle protein 2A)	w
+CUTICLE	fly	FBgn0086611	Lcp65Ag3	Q9I7Q6	7	265	FI01403p (Larval cuticle protein)	w
+CUTICLE	human	P26371	KRTAP5-9	P26371	4	203	Keratin-associated protein 5-9 (Keratin, cuticle, ultrahigh 	w
+CUTICLE	human	Q6L8H4	KRTAP5-1	Q6L8H4	0	18	Keratin-associated protein 5-1 (Keratin, cuticle, ultrahigh 	w
+CUTICLE	human	Q969F2	NKD2	Q969F2	21	80	Protein naked cuticle homolog 2 (Naked-2) (hNkd2)	w
+CUTICLE	human	Q969G9	NKD1	Q969G9	26	98	Protein naked cuticle homolog 1 (Naked-1) (hNkd) (hNkd1)	w
+CUTICLE	worm	A3QM98	col-138	A3QM98	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	E5QCF2	col-53	E5QCF2	0	1	Col_cuticle_N domain-containing protein	w
+CUTICLE	worm	O17036	col-142	O17036	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O17038	col-143	O17038	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O17209	sqt-2	O17209	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O17641	col-178	O17641	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O17642	col-179	O17642	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O18286	col-97	O18286	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O44989	col-49	O44989	0	1	Cuticle collagen 49	w
+CUTICLE	worm	O45105	col-101	O45105	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O62432	dpy-4	O62432	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	O76368	col-99	O76368	1	19	Putative cuticle collagen 99	w
+CUTICLE	worm	P08124	sqt-3	P08124	0	1	Cuticle collagen 1	w
+CUTICLE	worm	P12114	sqt-1	P12114	0	2	Cuticle collagen sqt-1	w
+CUTICLE	worm	P18831	rol-8	P18831	0	1	Cuticle collagen 6	w
+CUTICLE	worm	P18833	col-8	P18833	0	1	Cuticle collagen 8	w
+CUTICLE	worm	P18835	col-19	P18835	1	3	Cuticle collagen 19	w
+CUTICLE	worm	P34340	col-90	P34340	0	2	Putative cuticle collagen 90	w
+CUTICLE	worm	P34688	dpy-7	P34688	0	5	Cuticle collagen dpy-7	w
+CUTICLE	worm	P35799	dpy-2	P35799	2	4	Cuticle collagen dpy-2	w
+CUTICLE	worm	P35800	dpy-10	P35800	0	3	Cuticle collagen dpy-10	w
+CUTICLE	worm	P51559	bli-4	P51559	2	37	Endoprotease bli-4 (EC 3.4.21.-) (Blisterase) (Blistered cut	w
+CUTICLE	worm	P91249	col-20	P91249	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	P91250	col-73	P91250	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q09233	col-79	Q09233	0	2	Putative cuticle collagen 79	w
+CUTICLE	worm	Q09456	col-80	Q09456	0	1	Putative cuticle collagen 80	w
+CUTICLE	worm	Q09457	bli-1	Q09457	0	2	Cuticle collagen bli-1	w
+CUTICLE	worm	Q17417	col-149	Q17417	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q17418	col-150	Q17418	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q17458	col-144	Q17458	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q17459	col-145	Q17459	0	1	Putative cuticle collagen 145	w
+CUTICLE	worm	Q17460	col-10	Q17460	0	3	Cuticle collagen 10	w
+CUTICLE	worm	Q17582	col-61	Q17582	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q18302	col-125	Q18302	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q18345	dpy-8	Q18345	1	6	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q18450	col-113	Q18450	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q18799	col-119	Q18799	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q19050	col-186	Q19050	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q19063	CELE_E04F6.8	Q19063	0	6	Cuticle protein	w
+CUTICLE	worm	Q19079	dpy-3	Q19079	1	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q19470	col-184	Q19470	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q19514	col-153	Q19514	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q20135	col-81	Q20135	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q20136	ram-2	Q20136	0	3	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q20282	col-139	Q20282	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q20754	col-38	Q20754	0	1	Cuticle collagen 38	w
+CUTICLE	worm	Q20778	dpy-17	Q20778	0	3	Cuticle collagen dpy-17	w
+CUTICLE	worm	Q20805	col-154	Q20805	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q20921	col-160	Q20921	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q20922	col-159	Q20922	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q21184	col-155	Q21184	0	2	Putative cuticle collagen 155	w
+CUTICLE	worm	Q21528	col-76	Q21528	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q21556	col-129	Q21556	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q21562	col-77	Q21562	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q22183	col-122	Q22183	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q22260	col-146	Q22260	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q22369	col-41	Q22369	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q22379	col-167	Q22379	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q23150	col-181	Q23150	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q23628	lon-3	Q23628	0	1	Cuticle collagen lon-3	w
+CUTICLE	worm	Q7Z152	col-51	Q7Z152	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q86MP1	col-95	Q86MP1	0	6	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q86MP2	col-96	Q86MP2	0	6	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q86NE4	col-169	Q86NE4	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q8I4C0	col-42	Q8I4C0	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q8MXT6	col-106	Q8MXT6	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q94399	col-63	Q94399	0	2	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q966K5	col-165	Q966K5	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q9GYS2	col-56	Q9GYS2	0	3	Col_cuticle_N domain-containing protein	w
+CUTICLE	worm	Q9N4U2	col-71	Q9N4U2	0	1	Cuticle collagen 71	w
+CUTICLE	worm	Q9NAQ4	col-83	Q9NAQ4	0	4	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q9U348	col-93	Q9U348	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q9XUE9	col-133	Q9XUE9	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	worm	Q9XVX4	CELE_F13D12.8	Q9XVX4	0	1	Col_cuticle_N domain-containing protein	w
+CUTICLE	worm	Q9XVY1	col-86	Q9XVY1	0	7	Nematode cuticle collagen N-terminal domain-containing prote	w
+CUTICLE	zebrafish	A4ZNR5	nkd2l	A4ZNR5	0	5	Protein naked cuticle homolog 2-like	w
+CUTICLE	zebrafish	I3ITM9	LOC100500933	I3ITM9	0	3	Protein naked cuticle homolog	w
+CUTICLE	zebrafish	Q2TJA6	nkd1	Q2TJA6	0	5	Protein naked cuticle homolog 1	w
+CUTICLE-TANNING	fly	FBgn0038901	Burs	Q9VD83	37	248	Bursicon (Bursicon subunit alpha) (Cuticle-tanning hormone)	w
+CUTICLIN	worm	P34682	cut-2	P34682	0	1	Cuticlin 2	w
+CUTICLIN-1	worm	Q03755	cut-1	Q03755	0	1	Cuticlin-1	w
+CUTICLIN-3	worm	Q19707	cut-3	Q19707	0	3	Cuticlin-3	w
+CUTICLIN-5	worm	Q21808	cut-5	Q21808	0	1	Cuticlin-5	w
+CUTICLIN-LIKE	worm	H2KZ72	cutl-19	H2KZ72	0	5	Cuticlin-like protein 19	w
+CUTICLIN-LIKE	worm	O61834	cutl-28	O61834	0	5	CUTiclin-Like	w
+CUTICULAR	fly	FBgn0028871	Cpr35B	Q9V3P9	14	252	Cuticular protein 35B	w
+CUTICULAR	fly	FBgn0029811	Cpr5C	Q9W471	19	251	Cuticular protein 5C	w
+CUTICULAR	fly	FBgn0030394	Cpr11A	Q9VYM5	18	259	Cuticular protein 11A (RE57452p)	w
+CUTICULAR	fly	FBgn0030398	Cpr11B	Q9VYM0	9	254	CG2555-PA (Cuticular protein 11B, isoform A) (GH23965p)	w
+CUTICULAR	fly	FBgn0030494	Cpr12A	Q9VYC1	23	250	Cuticular protein 12A (LP12385p)	w
+CUTICULAR	fly	FBgn0031467	Cpr23B	Q9VQH5	18	244	Cuticular protein 23B (RE33041p)	w
+CUTICULAR	fly	FBgn0032125	Cpr30B	Q9VLB1	18	243	Cuticular protein 30B (GEO11772p1) (RT03304p)	w
+CUTICULAR	fly	FBgn0033597	Cpr47Ea	A1Z8H1	12	268	Cuticular protein 47Ea (GEO11542p1)	w
+CUTICULAR	fly	FBgn0033598	Cpr47Eb	Q7K0A2	5	258	Cuticular protein 47Eb (RE71379p)	w
+CUTICULAR	fly	FBgn0033600	Cpr47Ec	A1Z8H4	12	276	Cuticular protein 47Ec (GEO11780p1) (RT03506p)	w
+CUTICULAR	fly	FBgn0033601	Cpr47Ed	A1Z8H5	22	268	Cuticular protein 47Ed	w
+CUTICULAR	fly	FBgn0033602	Cpr47Ee	A1Z8H6	17	245	Cuticular protein 47Ee (FI11945p)	w
+CUTICULAR	fly	FBgn0033603	Cpr47Ef	A1Z8H7	17	305	Cuticular protein 47Ef, isoform C	w
+CUTICULAR	fly	FBgn0033725	Cpr49Ac	Q7JR69	35	254	Cuticular protein 49Ac, isoform C (LP08773p)	w
+CUTICULAR	fly	FBgn0033726	Cpr49Ad	A1Z8Y8	37	243	Cuticular protein 49Ad	w
+CUTICULAR	fly	FBgn0033728	Cpr49Ae	Q95RB2	10	331	Cuticular protein 49Ae (GEO04354p1) (LD46766p)	w
+CUTICULAR	fly	FBgn0033729	Cpr49Af	A1Z8Z2	9	286	Cuticular protein 49Af, isoform A (Cuticular protein 49Af, i	w
+CUTICULAR	fly	FBgn0033730	Cpr49Ag	A1Z8Z3	5	268	Cuticular protein 49Ag (GEO02325p1)	w
+CUTICULAR	fly	FBgn0033731	Cpr49Ah	A1Z8Z7	25	247	Cuticular protein 49Ah	w
+CUTICULAR	fly	FBgn0033867	Cpr50Ca	Q7JZ94	38	259	Cuticular protein 50Ca (RE53044p)	w
+CUTICULAR	fly	FBgn0033869	Cpr50Cb	Q7K2P1	15	292	Cuticular protein 50Cb (GH20904p)	w
+CUTICULAR	fly	FBgn0033942	Cpr51A	Q7JZW0	8	245	Cuticular protein 51A (GEO07308p1) (RE08808p)	w
+CUTICULAR	fly	FBgn0034499	Cpr56F	Q7JZJ3	14	295	Cuticular protein 56F (RE26879p)	w
+CUTICULAR	fly	FBgn0034517	Cpr57A	Q7K5J8	20	254	Cuticular protein 57A, isoform A (Cuticular protein 57A, iso	w
+CUTICULAR	fly	FBgn0035279	Cpr62Ba	Q9W079	8	257	Cuticular protein 62Ba, isoform B (Cuticular protein 62Ba, i	w
+CUTICULAR	fly	FBgn0035280	Cpr62Bb	Q9W078	22	288	Cuticular protein 62Bb, isoform A (Cuticular protein 62Bb, i	w
+CUTICULAR	fly	FBgn0035281	Cpr62Bc	Q9W077	16	298	Cuticular protein 62Bc, isoform A (Cuticular protein 62Bc, i	w
+CUTICULAR	fly	FBgn0035510	Cpr64Aa	Q9VZG2	18	295	Cuticular protein 64Aa (RH01578p)	w
+CUTICULAR	fly	FBgn0035511	Cpr64Ab	Q9VZG1	11	259	Cuticular protein 64Ab (GEO10707p1)	w
+CUTICULAR	fly	FBgn0035512	Cpr64Ac	Q9VZG0	9	278	Cuticular protein 64Ac	w
+CUTICULAR	fly	FBgn0035513	Cpr64Ad	Q9VZF9	13	294	Cuticular protein 64Ad (RE69226p)	w
+CUTICULAR	fly	FBgn0035686	Cpr65Az	Q9VRU9	11	245	Cuticular protein 65Az	w
+CUTICULAR	fly	FBgn0035735	Cpr65Ea	Q9VS12	18	263	Cuticular protein 65Ea	w
+CUTICULAR	fly	FBgn0035736	Cpr65Eb	Q8MZ06	16	243	Cuticular protein 65Eb (RE28679p)	w
+CUTICULAR	fly	FBgn0035737	Cpr65Ec	Q9VS14	14	259	Cuticular protein 65Ec (LP01270p)	w
+CUTICULAR	fly	FBgn0035875	Cpr66Cb	Q9VSH7	17	248	Cuticular protein 66Cb (GEO11540p1) (IP05056p)	w
+CUTICULAR	fly	FBgn0035985	Cpr67B	Q9VSY0	11	283	Cuticular protein 67B (GH12638p)	w
+CUTICULAR	fly	FBgn0036108	Cpr67Fa1	Q9VTC6	11	256	Cuticular protein 67Fa1 (GEO13290p1)	w
+CUTICULAR	fly	FBgn0036109	Cpr67Fa2	Q9VTC7	9	267	Cuticular protein 67Fa2	w
+CUTICULAR	fly	FBgn0036110	Cpr67Fb	Q9VTC8	6	259	Cuticular protein 67Fb (GEO12069p1)	w
+CUTICULAR	fly	FBgn0036617	Cpr72Ea	Q9VV44	51	310	Cuticular protein 72Ea	w
+CUTICULAR	fly	FBgn0036618	Cpr72Eb	Q9VV45	19	244	Cuticular protein 72Eb (RT03140p)	w
+CUTICULAR	fly	FBgn0036619	Cpr72Ec	Q9VV46	26	259	Cuticular protein 72Ec (GH03623p)	w
+CUTICULAR	fly	FBgn0036680	Cpr73D	Q9VVC3	24	277	Cuticular protein 73D, isoform B	w
+CUTICULAR	fly	FBgn0036878	Cpr76Ba	Q9VW02	17	258	CG9283 protein (CG9283-PA) (Cuticular protein 76Ba) (RT03232	w
+CUTICULAR	fly	FBgn0036879	Cpr76Bb	Q9VW03	9	244	Cuticular protein 76Bb (RT03811p)	w
+CUTICULAR	fly	FBgn0036880	Cpr76Bc	Q4V6L8	47	254	Cuticular protein 76Bc, isoform C (Cuticular protein 76Bc, i	w
+CUTICULAR	fly	FBgn0036881	Cpr76Bd	M9PFX4	0	14	Cuticular protein 76Bd, isoform C	w
+CUTICULAR	fly	FBgn0037067	Cpr78Ca	Q9VP56	19	269	Cuticular protein 78Ca (RT03410p)	w
+CUTICULAR	fly	FBgn0037068	Cpr78Cb	Q9VP55	15	268	Cuticular protein 78Cb, isoform A (Cuticular protein 78Cb, i	w
+CUTICULAR	fly	FBgn0037069	Cpr78Cc	Q9VP53	8	276	Cuticular protein 78Cc (GEO07638p1) (RE32113p)	w
+CUTICULAR	fly	FBgn0037114	Cpr78E	Q9VP00	12	280	Cuticular protein 78E (GEO09075p1) (LP06027p)	w
+CUTICULAR	fly	FBgn0038714	Cpr92A	Q4V480	18	267	Cuticular protein 92A (IP08564p) (IP08764p)	w
+CUTICULAR	fly	FBgn0038819	Cpr92F	Q9VDJ8	18	272	Cuticular protein 92F (FI18925p1)	w
+CUTICULAR	fly	FBgn0039480	Cpr97Ea	Q9VB82	19	257	Cuticular protein 97Ea, isoform A (FI21812p1)	w
+CUTICULAR	fly	FBgn0039481	Cpr97Eb	Q9VB81	27	294	Cuticular protein 97Eb (RE05963p)	w
+CUTICULAR	fly	FBgn0039805	Cpr100A	Q9VA32	18	291	Cuticular protein 100A (RE11283p)	w
+CUTICULAR	fly	FBgn0042118	Cpr65Ax2	Q9I7C6	5	78	Cuticular protein 65Ax1 (Cuticular protein 65Ax2, isoform A)	w
+CUTICULAR	fly	FBgn0042119	Cpr65Au	Q9I7Q5	5	310	Cuticular protein 65Au, isoform A (Cuticular protein 65Au, i	w
+CUTICULAR	fly	FBgn0050042	Cpr49Ab	A1Z8Y3	8	260	Cuticular protein 49Ab	w
+CUTICULAR	fly	FBgn0050045	Cpr49Aa	A8DRW0	12	299	Cuticular protein 49Aa	w
+CUTICULAR	fly	FBgn0050163	Cpr60D	Q8MLN7	9	258	Cuticular protein 60D, isoform A (Cuticular protein 60D, iso	w
+CUTICULAR	fly	FBgn0051876	Cpr30F	Q8IPD8	9	277	Cuticular protein 30F (GEO02645p1) (RT03505p)	w
+CUTICULAR	fly	FBgn0052029	Cpr66D	Q9VSN3	44	266	Cuticular protein 66D (RE57183p)	w
+CUTICULAR	fly	FBgn0052404	Cpr65Aw	Q9VRU7	10	262	Cuticular protein 65Aw, isoform A	w
+CUTICULAR	fly	FBgn0052405	Cpr65Av	Q8I0P8	10	264	Cuticular protein 65Av (GEO08489p1) (RE31218p)	w
+CUTICULAR	fly	FBgn0053302	Cpr31A	Q8IPD5	19	245	Cuticular protein 31A (RE37955p)	w
+CUTICULAR	fly	FBgn0085300	Cpr65Ay	A8JNL8	6	256	Cuticular protein 65Ay	w
+CUTICULAR	fly	FBgn0086519	Cpr47Eg	Q7JZV0	13	268	Cuticular protein 47Eg (Larval cuticle protein 2A)	w
+CUTICULAR	fly	FBgn0086900	Cpr65Ax1	Q9I7C6	7	202	Cuticular protein 65Ax1 (Cuticular protein 65Ax2, isoform A)	w
+CUTICULAR	human	O43790	KRT86	O43790	69	131	Keratin, type II cuticular Hb6 (Hair keratin K2.11) (Keratin	w
+CUTICULAR	human	O76009	KRT33A	O76009	64	103	Keratin, type I cuticular Ha3-I (Hair keratin, type I Ha3-I)	w
+CUTICULAR	human	O76011	KRT34	O76011	96	310	Keratin, type I cuticular Ha4 (Hair keratin, type I Ha4) (Ke	w
+CUTICULAR	human	O76013	KRT36	O76013	68	129	Keratin, type I cuticular Ha6 (Hair keratin, type I Ha6) (Ke	w
+CUTICULAR	human	O76014	KRT37	O76014	95	139	Keratin, type I cuticular Ha7 (Hair keratin, type I Ha7) (Ke	w
+CUTICULAR	human	O76015	KRT38	O76015	121	202	Keratin, type I cuticular Ha8 (Hair keratin, type I Ha8) (Ke	w
+CUTICULAR	human	P78385	KRT83	P78385	67	144	Keratin, type II cuticular Hb3 (Hair keratin K2.10) (Keratin	w
+CUTICULAR	human	P78386	KRT85	P78386	66	107	Keratin, type II cuticular Hb5 (Hair keratin K2.12) (Keratin	w
+CUTICULAR	human	Q14525	KRT33B	Q14525	68	150	Keratin, type I cuticular Ha3-II (Hair keratin, type I Ha3-I	w
+CUTICULAR	human	Q14532	KRT32	Q14532	73	96	Keratin, type I cuticular Ha2 (Hair keratin, type I Ha2) (Ke	w
+CUTICULAR	human	Q14533	KRT81	Q14533	67	122	Keratin, type II cuticular Hb1 (Hair keratin K2.9) (Keratin,	w
+CUTICULAR	human	Q15323	KRT31	Q15323	138	492	Keratin, type I cuticular Ha1 (Hair keratin, type I Ha1) (Ke	w
+CUTICULAR	human	Q92764	KRT35	Q92764	73	154	Keratin, type I cuticular Ha5 (Hair keratin, type I Ha5) (Ke	w
+CUTICULAR	human	Q9NSB2	KRT84	Q9NSB2	59	85	Keratin, type II cuticular Hb4 (Keratin-84) (K84) (Type II h	w
+CUTICULAR	human	Q9NSB4	KRT82	Q9NSB4	63	96	Keratin, type II cuticular Hb2 (Keratin-82) (K82) (Type II h	w
+CUTL-1	worm	Q9XVM7	cutl-1	Q9XVM7	0	1	ZP domain-containing protein	
+CUTL-10	worm	Q9U250	cutl-10	Q9U250	0	1	ZP domain-containing protein	
+CUTL-14	worm	O61816	cutl-14	O61816	0	11	ZP domain-containing protein	
+CUTL-15	worm	Q22627	cutl-15	Q22627	0	1	ZP domain-containing protein	
+CUTL-19	worm	H2KZ72	cutl-19	H2KZ72	0	5	Cuticlin-like protein 19	
+CUTL-2	worm	O18213	cutl-2	O18213	0	1	ZP domain-containing protein	
+CUTL-20	worm	Q9TYT4	cutl-20	Q9TYT4	0	11	ZP domain-containing protein	
+CUTL-23	worm	A0A164D3B2	cutl-23	A0A164D3B2	0	1	von Willebrand factor type A domain protein	
+CUTL-25	worm	Q7KWZ4	cutl-25	Q7KWZ4	0	1	ZP domain-containing protein	
+CUTL-26	worm	H2L015	cutl-26	H2L015	0	9	ZP domain-containing protein	
+CUTL-28	worm	O61834	cutl-28	O61834	0	5	CUTiclin-Like	
+CUTL-5	worm	Q19304	cutl-5	Q19304	0	1	ZP domain-containing protein	
+CUTL1	human	P39880	CUX1	P39880	48	228		
+CUTL1	human	Q13948	CUX1	Q13948	174	1410		
+CUTL2	human	O14529	CUX2	O14529	19	74		
+CUTLET	fly	FBgn0015376	cutlet	Q8IQ05	8	27	Chromosome transmission fidelity protein 18 homolog (CTF18) 	w
+CUTLET	fly	FBgn0015376	cutlet	Q8IQ05	8	27	Chromosome transmission fidelity protein 18 homolog (CTF18) 	w
+CUTOFF	fly	FBgn0260932	cuff	Q9V629	3	14	Protein cutoff	w
+CUTTING	yeast	Q03702	CCE1	Q03702	0	12	Cruciform cutting endonuclease 1, mitochondrial	w

@@ -1,12 +1,26 @@
-PGS1	cladophialophora-carrionii	A0A1C1CQ96	PGS1	A0A1C1CQ96	0	4	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
-PGS1	mus-musculus	Q8BHF7	Pgs1	Q8BHF7	0	2	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase, mitochondria
-PGS1	rattus-norvegicus	D4A5W8	Pgs1	D4A5W8	0	2	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
-PGS1	schizosaccharomyces-pombe	Q9HDW1	pgs1	Q9HDW1	0	4	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
-PGSA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9I7	pgsA	Q0P9I7	0	1	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
-PGSA	mycobacterium-leprae	Q7AQI9	pgsA	Q7AQI9	0	3	Phosphatidylinositol phosphate synthase
-PGSA	pseudomonas-aeruginosa	Q9I0Q2	pgsA	Q9I0Q2	0	1	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
-PGSA1	mycobacterium-tuberculosis	P9WPG7	pgsA1	P9WPG7	0	1	Phosphatidylinositol phosphate synthase
-PGSA2	mycobacterium-leprae	Q7APZ2	pgsA2	Q7APZ2	0	2	CDP-diacylglycerol-glycerol-3-phosphate
-PGSA3	mycobacterium-tuberculosis	P9WPG3	pgsA3	P9WPG3	0	1	Probable phosphatidylglycerophosphate synthase
-PGSIP7	arabidopsis-thaliana	F4JMI5	PGSIP7	F4JMI5	1	38	Putative glucuronosyltransferase PGSIP7
-PGSIP8	arabidopsis-thaliana	Q8VZP6	PGSIP8	Q8VZP6	0	39	Putative glucuronosyltransferase PGSIP8
+PGS-1	worm	Q9BL79	pgs-1	Q9BL79	0	14	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	cladophialophora-carrionii	A0A1C1CQ96	PGS1	A0A1C1CQ96	0	4	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	fly	FBgn0038649	Pgs1	Q8SYL0	0	6	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	human	Q32NB8	PGS1	Q32NB8	4	65	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	human	Q6ZTW0	TPGS1	Q6ZTW0	22	112	Tubulin polyglutamylase complex subunit 1 (PGs1)	w
+PGS1	mus-musculus	Q8BHF7	Pgs1	Q8BHF7	0	2	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	rattus-norvegicus	D4A5W8	Pgs1	D4A5W8	0	2	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	schizosaccharomyces-pombe	Q9HDW1	pgs1	Q9HDW1	0	4	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	yeast	P25578	PGS1	P25578	0	11	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1	zebrafish	F1RDT5	pgs1	F1RDT5	0	4	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGS1_HUMAN	human	P21810	BGN	P21810	34	300		
+PGS2	human	Q68CL5	TPGS2	Q68CL5	8	26	Tubulin polyglutamylase complex subunit 2 (PGs2)	w
+PGS2_HUMAN	human	P07585	DCN	P07585	31	341		
+PGS3	human	O95922	TTLL1	O95922	6	75	Polyglutamylase complex subunit TTLL1 (EC 6.3.2.-) (Tubulin 	w
+PGS5	human	Q9BSH3	NICN1	Q9BSH3	6	46	Nicolin-1 (NPCEDRG) (Tubulin polyglutamylase complex subunit	w
+PGSA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9I7	pgsA	Q0P9I7	0	1	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGSA	mycobacterium-leprae	Q7AQI9	pgsA	Q7AQI9	0	3	Phosphatidylinositol phosphate synthase	
+PGSA	pseudomonas-aeruginosa	Q9I0Q2	pgsA	Q9I0Q2	0	1	CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltrans	
+PGSA1	mycobacterium-tuberculosis	P9WPG7	pgsA1	P9WPG7	0	1	Phosphatidylinositol phosphate synthase	
+PGSA2	mycobacterium-leprae	Q7APZ2	pgsA2	Q7APZ2	0	2	CDP-diacylglycerol-glycerol-3-phosphate	
+PGSA3	mycobacterium-tuberculosis	P9WPG3	pgsA3	P9WPG3	0	1	Probable phosphatidylglycerophosphate synthase	
+PGSF1	human	Q8N6C7	MIR7-3HG	Q8N6C7	1	5		
+PGSF1_HUMAN	human	Q8N6C7	MIR7-3HG	Q8N6C7	1	5		
+PGSF2	human	Q8N6C5	IGSF1	Q8N6C5	4	37		
+PGSIP7	arabidopsis-thaliana	F4JMI5	PGSIP7	F4JMI5	1	38	Putative glucuronosyltransferase PGSIP7	
+PGSIP8	arabidopsis-thaliana	Q8VZP6	PGSIP8	Q8VZP6	0	39	Putative glucuronosyltransferase PGSIP8	

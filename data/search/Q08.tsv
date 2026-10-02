@@ -1,83 +1,643 @@
-Q08013	rattus-norvegicus	Q08013	Ssr3	Q08013	1	20	Translocon-associated protein subunit gamma
-Q08016	salmonella-typhimurium	Q08016	argI	Q08016	0	2	Ornithine carbamoyltransferase
-Q08024	mus-musculus	Q08024	Cbfb	Q08024	9	114	Core-binding factor subunit beta
-Q08047	zea-mays	Q08047	SBE1	Q08047	0	2	1,4-alpha-glucan-branching enzyme 2, chloroplastic/amyloplastic
-Q08048	mus-musculus	Q08048	Hgf	Q08048	3	92	Hepatocyte growth factor
-Q08062	zea-mays	Q08062	?	Q08062	0	11	Malate dehydrogenase, cytoplasmic
-Q08066	zea-mays	Q08066	RPL19	Q08066	49	506	Large ribosomal subunit protein eL19
-Q08068	zea-mays	Q08068	RPS20	Q08068	26	851	Small ribosomal subunit protein uS10
-Q08069	zea-mays	Q08069	RPS8	Q08069	25	512	Small ribosomal subunit protein eS8
-Q08091	mus-musculus	Q08091	Cnn1	Q08091	0	28	Calponin-1
-Q08093	mus-musculus	Q08093	Cnn2	Q08093	0	29	Calponin-2
-Q08112	arabidopsis-thaliana	Q08112	RPS15A	Q08112	33	657	Small ribosomal subunit protein uS19u
-Q08122	mus-musculus	Q08122	Tle3	Q08122	12	36	Transducin-like enhancer protein 3
-Q08125	rattus-norvegicus	Q08125	Il5	Q08125	2	28	Interleukin-5
-Q08163	rattus-norvegicus	Q08163	Cap1	Q08163	20	79	Adenylyl cyclase-associated protein 1
-Q08189	mus-musculus	Q08189	Tgm3	Q08189	0	12	Protein-glutamine gamma-glutamyltransferase E
-Q08201	rattus-norvegicus	Q08201	Abcb4	Q08201	0	22	Phosphatidylcholine translocator ABCB4
-Q08210	plasmodium-falciparum-36329	Q08210	PFF0160c	Q08210	0	1	Dihydroorotate dehydrogenase (quinone), mitochondrial
-Q08274	mus-musculus	Q08274	Dmwd	Q08274	8	52	Dystrophia myotonica WD repeat-containing protein
-Q08275	zea-mays	Q08275	HSP18	Q08275	0	4	17.0 kDa class II heat shock protein
-Q08277	zea-mays	Q08277	HSP82	Q08277	17	199	Heat shock protein 82
-Q08288	mus-musculus	Q08288	Lyar	Q08288	20	115	Cell growth-regulating nucleolar protein
-Q08290	rattus-norvegicus	Q08290	Cnn1	Q08290	1	51	Calponin-1
-Q08297	mus-musculus	Q08297	Rad51	Q08297	6	169	DNA repair protein RAD51 homolog 1
-Q08298	arabidopsis-thaliana	Q08298	RD22	Q08298	0	5	BURP domain protein RD22
-Q08326	rattus-norvegicus	Q08326	Rabif	Q08326	11	96	Guanine nucleotide exchange factor MSS4
-Q08331	mus-musculus	Q08331	Calb2	Q08331	2	17	Calretinin
-Q08346	haemophilus-influenzae	Q08346	dnaG	Q08346	2	8	DNA primase
-Q08351	mus-musculus	Q08351	Mpl	Q08351	5	13	Thrombopoietin receptor
-Q08369	mus-musculus	Q08369	Gata4	Q08369	4	74	Transcription factor GATA-4
-Q08376	mus-musculus	Q08376	Zbtb14	Q08376	6	25	Zinc finger and BTB domain-containing protein 14
-Q08406	rattus-norvegicus	Q08406	Cntfr	Q08406	7	21	Ciliary neurotrophic factor receptor subunit alpha
-Q08415	rattus-norvegicus	Q08415	Kyat1	Q08415	1	3	Kynurenine--oxoglutarate transaminase 1
-Q08420	rattus-norvegicus	Q08420	Sod3	Q08420	1	30	Extracellular superoxide dismutase
-Q08423	mus-musculus	Q08423	Tff1	Q08423	1	3	Trefoil factor 1
-Q08460	mus-musculus	Q08460	Kcnma1	Q08460	6	203	Calcium-activated potassium channel subunit alpha-1
-Q08463	rattus-norvegicus	Q08463	Fzd1	Q08463	9	48	Frizzled-1
-Q08464	rattus-norvegicus	Q08464	Fzd2	Q08464	11	68	Frizzled-2
-Q08466	arabidopsis-thaliana	Q08466	CKA2	Q08466	4	81	Casein kinase II subunit alpha-2
-Q08467	arabidopsis-thaliana	Q08467	CKA1	Q08467	5	89	Casein kinase II subunit alpha-1
-Q08479	oryza-sativa-subsp-japonica	Q08479	ADK-A	Q08479	0	10	Adenylate kinase 3
-Q08480	oryza-sativa-subsp-japonica	Q08480	ADK-B	Q08480	0	10	Adenylate kinase 4
-Q08481	mus-musculus	Q08481	Pecam1	Q08481	9	63	Platelet endothelial cell adhesion molecule
-Q08501	mus-musculus	Q08501	Prlr	Q08501	31	51	Prolactin receptor
-Q08509	mus-musculus	Q08509	Eps8	Q08509	13	117	Epidermal growth factor receptor kinase substrate 8
-Q08535	mus-musculus	Q08535	Sct	Q08535	6	18	Secretin
-Q08602	rattus-norvegicus	Q08602	Rabggta	Q08602	4	59	Geranylgeranyl transferase type-2 subunit alpha
-Q08603	rattus-norvegicus	Q08603	Rabggtb	Q08603	2	62	Geranylgeranyl transferase type-2 subunit beta
-Q08624	mus-musculus	Q08624	Hoxc4	Q08624	6	17	Homeobox protein Hox-C4
-Q08639	mus-musculus	Q08639	Tfdp1	Q08639	23	62	Transcription factor Dp-1
-Q08642	mus-musculus	Q08642	Padi2	Q08642	0	4	Protein-arginine deiminase type-2
-Q08652	mus-musculus	Q08652	Rbp2	Q08652	2	7	Retinol-binding protein 2
-Q08682	arabidopsis-thaliana	Q08682	RPSaA	Q08682	56	852	Small ribosomal subunit protein uS2z
-Q08698	salmonella-typhimurium	Q08698	nrdE	Q08698	1	7	Ribonucleoside-diphosphate reductase 2 subunit alpha
-Q08704	zea-mays	Q08704	CHI	Q08704	2	20	Chalcone--flavanone isomerase
-Q08733	arabidopsis-thaliana	Q08733	PIP1-3	Q08733	10	44	Aquaporin PIP1-3
-Q08755	rattus-norvegicus	Q08755	Insig1	Q08755	1	28	Insulin-induced gene 1 protein
-Q08761	mus-musculus	Q08761	Pros1	Q08761	3	10	Vitamin K-dependent protein S
-Q08770	arabidopsis-thaliana	Q08770	RPL10B	Q08770	19	554	Large ribosomal subunit protein uL16y
-Q08775	mus-musculus	Q08775	Runx2	Q08775	9	133	Runt-related transcription factor 2
-Q08834	rattus-norvegicus	Q08834	Mgat5	Q08834	1	4	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltransferase A
-Q08849	rattus-norvegicus	Q08849	Stx3	Q08849	12	80	Syntaxin-3
-Q08850	rattus-norvegicus	Q08850	Stx4	Q08850	10	83	Syntaxin-4
-Q08851	rattus-norvegicus	Q08851	Stx5	Q08851	25	114	Syntaxin-5
-Q08857	mus-musculus	Q08857	Cd36	Q08857	1	138	Platelet glycoprotein 4
-Q08874	mus-musculus	Q08874	Mitf	Q08874	7	32	Microphthalmia-associated transcription factor
-Q08877	rattus-norvegicus	Q08877	Dnm3	Q08877	3	71	Dynamin-3
-Q08879	mus-musculus	Q08879	Fbln1	Q08879	1	12	Fibulin-1
-Q08890	mus-musculus	Q08890	Ids	Q08890	0	9	Iduronate 2-sulfatase
-Q08891	arabidopsis-thaliana	Q08891	FAR2	Q08891	0	1	Fatty acyl-CoA reductase 2, chloroplastic
-Q08943	mus-musculus	Q08943	Ssrp1	Q08943	13	149	FACT complex subunit SSRP1
-Q08A69	arabidopsis-thaliana	Q08A69	At1g10040	Q08A69	0	1	Alpha/beta-Hydrolases superfamily protein
-Q08A71	arabidopsis-thaliana	Q08A71	PRMT6	Q08A71	2	42	Probable protein arginine N-methyltransferase 6
-Q08A72	arabidopsis-thaliana	Q08A72	EML4	Q08A72	0	6	Protein EMSY-LIKE 4
-Q08AA3	arabidopsis-thaliana	Q08AA3	At4g28690	Q08AA3	1	12	At4g28690
-Q08AA5	arabidopsis-thaliana	Q08AA5	At1g67410	Q08AA5	0	2	At1g67410
-Q08AT1	mus-musculus	Q08AT1	Rasl12	Q08AT1	0	2	Ras-like protein family member 12
-Q08AU9	mus-musculus	Q08AU9	?	Q08AU9	2	20	UPF0450 protein C17orf58 homolog
-Q08EC4	mus-musculus	Q08EC4	Cass4	Q08EC4	10	43	Cas scaffolding protein family member 4
-Q08EE8	mus-musculus	Q08EE8	Acsbg3	Q08EE8	0	6	long-chain-fatty-acid--CoA ligase
-Q08EG8	mus-musculus	Q08EG8	Krtap10-4	Q08EG8	0	3	Keratin associated protein 10-4
-Q08EN7	mus-musculus	Q08EN7	Zcwpw2	Q08EN7	3	22	Zinc finger CW-type PWWP domain protein 2 homolog
-Q08I43	schizosaccharomyces-pombe	Q08I43	eri1	Q08I43	0	10	3-5 exonuclease eri1
+Q08001	yeast	Q08001	LAM6	Q08001	6	32	Membrane-anchored lipid-binding protein LAM6	
+Q08003	yeast	Q08003	RFU1	Q08003	5	48	Regulator of free ubiquitin chains 1	
+Q08004	yeast	Q08004	BUD20	Q08004	16	176	Bud site selection protein 20	
+Q08012	fly	FBgn0004638	drk	Q08012	47	309	Growth factor receptor-bound protein 2 (Downstream of recept	
+Q08013	rattus-norvegicus	Q08013	Ssr3	Q08013	1	20	Translocon-associated protein subunit gamma	
+Q08016	salmonella-typhimurium	Q08016	argI	Q08016	0	2	Ornithine carbamoyltransferase	
+Q08018	yeast	Q08018	YLR076C	Q08018	0	2	Putative uncharacterized protein YLR076C	
+Q08023	yeast	Q08023	FMP25	Q08023	0	21	Protein FMP25, mitochondrial	
+Q08024	mus-musculus	Q08024	Cbfb	Q08024	9	114	Core-binding factor subunit beta	
+Q08032	yeast	Q08032	CDC45	Q08032	4	88	Cell division control protein 45	
+Q08043	human	Q08043	ACTN3	Q08043	19	240	Alpha-actinin-3 (Alpha-actinin skeletal muscle isoform 3) (F	
+Q08045	yeast	Q08045	LCL2	Q08045	1	4	Long chronological lifespan protein 2	
+Q08047	zea-mays	Q08047	SBE1	Q08047	0	2	1,4-alpha-glucan-branching enzyme 2, chloroplastic/amyloplas	
+Q08048	mus-musculus	Q08048	Hgf	Q08048	3	92	Hepatocyte growth factor	
+Q08050	human	Q08050	FOXM1	Q08050	39	270	Forkhead box protein M1 (Forkhead-related protein FKHL16) (H	
+Q08054	yeast	Q08054	CSI2	Q08054	0	3	Chitin synthase 3 complex protein CSI2	
+Q08058	yeast	Q08058	COQ10	Q08058	0	2	Coenzyme Q-binding protein COQ10, mitochondrial	
+Q08062	zea-mays	Q08062	?	Q08062	0	11	Malate dehydrogenase, cytoplasmic	
+Q08066	zea-mays	Q08066	RPL19	Q08066	49	506	Large ribosomal subunit protein eL19	
+Q08068	zea-mays	Q08068	RPS20	Q08068	26	851	Small ribosomal subunit protein uS10	
+Q08069	zea-mays	Q08069	RPS8	Q08069	25	512	Small ribosomal subunit protein eS8	
+Q08091	mus-musculus	Q08091	Cnn1	Q08091	0	28	Calponin-1	
+Q08093	mus-musculus	Q08093	Cnn2	Q08093	0	29	Calponin-2	
+Q08096	yeast	Q08096	RCL1	Q08096	11	165	rRNA processing protein RCL1	
+Q08108	yeast	Q08108	PLB3	Q08108	0	9	Lysophospholipase 3	
+Q08109	yeast	Q08109	HRD1	Q08109	9	69	ERAD-associated E3 ubiquitin-protein ligase HRD1	
+Q08110	yeast	Q08110	YOL014W	Q08110	0	5	Putative uncharacterized protein YOL014W	
+Q08112	arabidopsis-thaliana	Q08112	RPS15A	Q08112	33	657	Small ribosomal subunit protein uS19u	
+Q08116	human	Q08116	RGS1	Q08116	38	198	Regulator of G protein signaling 1 (RGS1) (B-cell activation	
+Q08117	human	Q08117	TLE5	Q08117	42	450	TLE family member 5 (Amino-terminal enhancer of split) (Amin	
+Q08118	yeast	Q08118	IRC10	Q08118	0	6	Uncharacterized protein IRC10	
+Q08119	yeast	Q08119	ESC8	Q08119	1	8	Protein ESC8	
+Q08122	mus-musculus	Q08122	Tle3	Q08122	12	36	Transducin-like enhancer protein 3	
+Q08125	rattus-norvegicus	Q08125	Il5	Q08125	2	28	Interleukin-5	
+Q08144	yeast	Q08144	TLG2	Q08144	15	52	t-SNARE affecting a late Golgi compartment protein 2	
+Q08157	yeast	Q08157	TOS7	Q08157	1	6	Uncharacterized membrane protein TOS7	
+Q08162	yeast	Q08162	DIS3	Q08162	3	132	Exosome complex exonuclease DIS3	
+Q08163	rattus-norvegicus	Q08163	Cap1	Q08163	20	79	Adenylyl cyclase-associated protein 1	
+Q08170	human	Q08170	SRSF4	Q08170	36	378	Serine/arginine-rich splicing factor 4 (Pre-mRNA-splicing fa	
+Q08172	yeast	Q08172	YOL024W	Q08172	0	1	Putative uncharacterized protein YOL024W	
+Q08174	human	Q08174	PCDH1	Q08174	34	210	Protocadherin-1 (Cadherin-like protein 1) (Protocadherin-42)	
+Q08176	yeast	Q08176	MIM1	Q08176	2	19	Mitochondrial import protein 1	
+Q08179	yeast	Q08179	MDM38	Q08179	0	85	Mitochondrial distribution and morphology protein 38	
+Q08180	fly	FBgn0003285	rst	Q08180	162	2405	Irregular chiasm C-roughest protein (Protein IRREC)	
+Q08182	yeast	Q08182	YAP7	Q08182	5	18	AP-1-like transcription factor YAP7	
+Q08187	yeast	Q08187	YOL029C	Q08187	0	3	Uncharacterized protein YOL029C	
+Q08188	human	Q08188	TGM3	Q08188	14	233	Protein-glutamine gamma-glutamyltransferase E (EC 2.3.2.13) 	
+Q08189	mus-musculus	Q08189	Tgm3	Q08189	0	12	Protein-glutamine gamma-glutamyltransferase E	
+Q08193	yeast	Q08193	GAS5	Q08193	1	7	1,3-beta-glucanosyltransferase GAS5	
+Q08199	yeast	Q08199	SIL1	Q08199	11	240	Nucleotide exchange factor SIL1	
+Q08201	rattus-norvegicus	Q08201	Abcb4	Q08201	0	22	Phosphatidylcholine translocator ABCB4	
+Q08202	yeast	Q08202	OPI10	Q08202	0	6	Protein OPI10	
+Q08204	yeast	Q08204	SMC5	Q08204	9	60	Structural maintenance of chromosomes protein 5	
+Q08206	yeast	Q08206	YOL036W	Q08206	0	10	Uncharacterized protein YOL036W	
+Q08207	yeast	Q08207	YOL035C	Q08207	0	1	Putative uncharacterized protein YOL035C	
+Q08208	yeast	Q08208	NOP12	Q08208	5	96	Nucleolar protein 12	
+Q08209	human	Q08209	PPP3CA	Q08209	101	376	Protein phosphatase 3 catalytic subunit alpha (EC 3.1.3.16) 	
+Q08210	plasmodium-falciparum-36329	Q08210	PFF0160c	Q08210	0	1	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+Q08211	human	Q08211	DHX9	Q08211	32	790	ATP-dependent RNA helicase A (EC 3.6.4.13) (DEAH box protein	
+Q08213	yeast	Q08213	NGL1	Q08213	1	21	RNA exonuclease NGL1	
+Q08214	yeast	Q08214	NTG2	Q08214	3	10	Endonuclease III homolog 2	
+Q08215	yeast	Q08215	PEX15	Q08215	1	21	Peroxisomal membrane protein PEX15	
+Q08216	yeast	Q08216	YOL046C	Q08216	0	1	Putative uncharacterized protein YOL046C	
+Q08217	yeast	Q08217	PSK2	Q08217	2	46	Serine/threonine-protein kinase PSK2 (EC 2.7.11.1) (PAS kina	
+Q08218	yeast	Q08218	LDS2	Q08218	0	4	Outer spore wall protein LDS2	
+Q08219	yeast	Q08219	RRT8	Q08219	0	9	Outer spore wall protein RRT8	
+Q08220	yeast	Q08220	GSH2	Q08220	0	4	Glutathione synthetase GSH2	
+Q08223	yeast	Q08223	AIM39	Q08223	0	9	Altered inheritance of mitochondria protein 39, mitochondria	
+Q08224	yeast	Q08224	THI20	Q08224	1	7	Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase THI20	
+Q08225	yeast	Q08225	YOL057W	Q08225	0	4	Probable dipeptidyl peptidase 3	
+Q08226	yeast	Q08226	CRT10	Q08226	0	27	Protein CRT10	
+Q08227	yeast	Q08227	INP54	Q08227	0	15	Phosphatidylinositol 4,5-bisphosphate 5-phosphatase INP54	
+Q08229	yeast	Q08229	NBA1	Q08229	11	28	Protein NBA1	
+Q08230	yeast	Q08230	SDH5	Q08230	2	17	Succinate dehydrogenase assembly factor 2, mitochondrial	
+Q08231	yeast	Q08231	THP1	Q08231	5	27	Nuclear mRNA export protein THP1	
+Q08232	yeast	Q08232	DSC2	Q08232	4	16	DSC E3 ubiquitin ligase complex subunit 2	
+Q08234	yeast	Q08234	YOL075C	Q08234	0	28	Uncharacterized ABC transporter ATP-binding protein/permease	
+Q08235	yeast	Q08235	BRX1	Q08235	19	172	Ribosome biogenesis protein BRX1	
+Q08236	yeast	Q08236	AVO1	Q08236	3	34	Target of rapamycin complex 2 subunit AVO1	
+Q08237	yeast	Q08237	REX4	Q08237	3	17	RNA exonuclease 4	
+Q08240	yeast	Q08240	YOL099C	Q08240	0	2	Putative uncharacterized membrane protein YOL099C	
+Q08241	yeast	Q08241	YOL106W	Q08241	0	2	Putative uncharacterized protein YOL106W	
+Q08245	yeast	Q08245	ZEO1	Q08245	0	28	Protein ZEO1	
+Q08257	human	Q08257	CRYZ	Q08257	13	202	Zeta-crystallin (NADPH:quinone reductase) (Quinone oxidoredu	
+Q08268	yeast	Q08268	MCH4	Q08268	0	7	Probable transporter MCH4	
+Q08269	yeast	Q08269	ALR1	Q08269	1	20	Magnesium transporter ALR1	
+Q08270	yeast	Q08270	YOL131W	Q08270	0	10	Uncharacterized protein YOL131W	
+Q08271	yeast	Q08271	GAS4	Q08271	0	7	1,3-beta-glucanosyltransferase GAS4	
+Q08273	yeast	Q08273	HRT1	Q08273	7	156	RING-box protein HRT1	
+Q08274	mus-musculus	Q08274	Dmwd	Q08274	8	52	Dystrophia myotonica WD repeat-containing protein	
+Q08275	zea-mays	Q08275	HSP18	Q08275	0	4	17.0 kDa class II heat shock protein	
+Q08277	zea-mays	Q08277	HSP82	Q08277	17	199	Heat shock protein 82	
+Q08278	yeast	Q08278	MED7	Q08278	12	147	Mediator of RNA polymerase II transcription subunit 7	
+Q08280	yeast	Q08280	BSC6	Q08280	1	8	Bypass of stop codon protein 6	
+Q08281	yeast	Q08281	RTC1	Q08281	5	46	Restriction of telomere capping protein 1	
+Q08282	yeast	Q08282	PPM2	Q08282	0	8	tRNA wybutosine-synthesizing protein 4	
+Q08285	yeast	Q08285	RRP40	Q08285	8	101	Exosome complex component RRP40	
+Q08287	yeast	Q08287	NOP8	Q08287	2	40	60S ribosome subunit biogenesis protein NOP8	
+Q08288	mus-musculus	Q08288	Lyar	Q08288	20	115	Cell growth-regulating nucleolar protein	
+Q08289	human	Q08289	CACNB2	Q08289	9	83	Voltage-dependent L-type calcium channel subunit beta-2 (CAB	
+Q08290	rattus-norvegicus	Q08290	Cnn1	Q08290	1	51	Calponin-1	
+Q08293	yeast	Q08293	YOL150C	Q08293	0	3	Putative uncharacterized protein YOL150C	
+Q08295	yeast	Q08295	IMA2	Q08295	0	6	Oligo-1,6-glucosidase IMA2	
+Q08297	mus-musculus	Q08297	Rad51	Q08297	6	169	DNA repair protein RAD51 homolog 1	
+Q08298	arabidopsis-thaliana	Q08298	RD22	Q08298	0	5	BURP domain protein RD22	
+Q08299	yeast	Q08299	ENB1	Q08299	0	5	Siderophore iron transporter ENB1	
+Q08300	yeast	Q08300	CSS3	Q08300	0	3	Secreted protein CSS3	
+Q08322	yeast	Q08322	PAU20	Q08322	0	3	Seripauperin-20	
+Q08326	rattus-norvegicus	Q08326	Rabif	Q08326	11	96	Guanine nucleotide exchange factor MSS4	
+Q08331	mus-musculus	Q08331	Calb2	Q08331	2	17	Calretinin	
+Q08334	human	Q08334	IL10RB	Q08334	51	417	Interleukin-10 receptor subunit beta (IL-10 receptor subunit	
+Q08345	human	Q08345	DDR1	Q08345	145	1411	Epithelial discoidin domain-containing receptor 1 (Epithelia	
+Q08346	haemophilus-influenzae	Q08346	dnaG	Q08346	2	8	DNA primase	
+Q08347	yeast	Q08347	BDS1	Q08347	0	1	Alkyl/aryl-sulfatase BDS1	
+Q08351	mus-musculus	Q08351	Mpl	Q08351	5	13	Thrombopoietin receptor	
+Q08357	human	Q08357	SLC20A2	Q08357	5	92	Sodium-dependent phosphate transporter 2 (Gibbon ape leukemi	
+Q08361	yeast	Q08361	AAD15	Q08361	0	5	Putative aryl-alcohol dehydrogenase AAD15	
+Q08369	mus-musculus	Q08369	Gata4	Q08369	4	74	Transcription factor GATA-4	
+Q08376	mus-musculus	Q08376	Zbtb14	Q08376	6	25	Zinc finger and BTB domain-containing protein 14	
+Q08378	human	Q08378	GOLGA3	Q08378	55	291	Golgin subfamily A member 3 (Golgi complex-associated protei	
+Q08379	human	Q08379	GOLGA2	Q08379	134	762	Golgin subfamily A member 2 (130 kDa cis-Golgi matrix protei	
+Q08380	human	Q08380	LGALS3BP	Q08380	43	688	Galectin-3-binding protein (Basement membrane autoantigen p1	
+Q08387	yeast	Q08387	DNL4	Q08387	4	42	DNA ligase 4	
+Q08397	human	Q08397	LOXL1	Q08397	5	58	Lysyl oxidase homolog 1 (EC 1.4.3.13) (Lysyl oxidase-like pr	
+Q08406	rattus-norvegicus	Q08406	Cntfr	Q08406	7	21	Ciliary neurotrophic factor receptor subunit alpha	
+Q08409	yeast	Q08409	AUS1	Q08409	0	28	ATP-dependent permease AUS1	
+Q08412	yeast	Q08412	CUE5	Q08412	6	24	Ubiquitin-binding protein CUE5	
+Q08415	rattus-norvegicus	Q08415	Kyat1	Q08415	1	3	Kynurenine--oxoglutarate transaminase 1	
+Q08416	yeast	Q08416	IRC23	Q08416	0	3	Increased recombination centers protein 23	
+Q08417	yeast	Q08417	RSB1	Q08417	0	6	Sphingoid long-chain base transporter RSB1	
+Q08419	yeast	Q08419	YOR050C	Q08419	0	1	Putative uncharacterized protein YOR050C	
+Q08420	rattus-norvegicus	Q08420	Sod3	Q08420	1	30	Extracellular superoxide dismutase	
+Q08421	yeast	Q08421	ETT1	Q08421	3	43	Enhancer of translation termination 1	
+Q08422	yeast	Q08422	TMC1	Q08422	1	251	AN1-type zinc finger protein TMC1	
+Q08423	mus-musculus	Q08423	Tff1	Q08423	1	3	Trefoil factor 1	
+Q08426	human	Q08426	EHHADH	Q08426	9	290	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	
+Q08428	yeast	Q08428	YOR053W	Q08428	0	1	Putative uncharacterized protein YOR053W	
+Q08431	human	Q08431	MFGE8	Q08431	20	338	Lactadherin (Breast epithelial antigen BA46) (HMFG) (MFGM) (	
+Q08438	yeast	Q08438	VHS3	Q08438	2	24	Phosphopantothenoylcysteine decarboxylase subunit VHS3	
+Q08444	yeast	Q08444	NOB1	Q08444	2	101	20S-pre-rRNA D-site endonuclease NOB1	
+Q08446	yeast	Q08446	SGT1	Q08446	4	25	Protein SGT1	
+Q08448	yeast	Q08448	LPL1	Q08448	0	13	Lipid droplet phospholipase 1	
+Q08457	yeast	Q08457	SLD7	Q08457	1	27	Mitochondrial morphogenesis protein SLD7	
+Q08460	mus-musculus	Q08460	Kcnma1	Q08460	6	203	Calcium-activated potassium channel subunit alpha-1	
+Q08462	human	Q08462	ADCY2	Q08462	12	85	Adenylate cyclase type 2 (EC 4.6.1.1) (ATP pyrophosphate-lya	
+Q08463	rattus-norvegicus	Q08463	Fzd1	Q08463	9	48	Frizzled-1	
+Q08464	rattus-norvegicus	Q08464	Fzd2	Q08464	11	68	Frizzled-2	
+Q08465	yeast	Q08465	YNG1	Q08465	6	50	Protein YNG1	
+Q08466	arabidopsis-thaliana	Q08466	CKA2	Q08466	4	81	Casein kinase II subunit alpha-2	
+Q08467	arabidopsis-thaliana	Q08467	CKA1	Q08467	5	89	Casein kinase II subunit alpha-1	
+Q08471	yeast	Q08471	MSA1	Q08471	4	13	G1-specific transcription factors activator MSA1	
+Q08473	fly	FBgn0263396	sqd	Q08473	82	535	RNA-binding protein squid (Heterogeneous nuclear ribonucleop	
+Q08474	yeast	Q08474	VAM10	Q08474	0	1	Vacuolar morphogenesis protein 10	
+Q08477	human	Q08477	CYP4F3	Q08477	5	71	Cytochrome P450 4F3 (EC 1.14.14.1) (20-hydroxyeicosatetraeno	
+Q08479	oryza-sativa-subsp-japonica	Q08479	ADK-A	Q08479	0	10	Adenylate kinase 3	
+Q08480	oryza-sativa-subsp-japonica	Q08480	ADK-B	Q08480	0	10	Adenylate kinase 4	
+Q08481	mus-musculus	Q08481	Pecam1	Q08481	9	63	Platelet endothelial cell adhesion molecule	
+Q08484	yeast	Q08484	GYP1	Q08484	8	42	GTPase-activating protein GYP1	
+Q08485	yeast	Q08485	NRT1	Q08485	0	3	Nicotinamide riboside transporter 1	
+Q08490	yeast	Q08490	SGO1	Q08490	6	30	Shugoshin	
+Q08491	yeast	Q08491	SKI7	Q08491	2	49	Superkiller protein 7	
+Q08492	yeast	Q08492	BUD21	Q08492	4	148	U3 small nucleolar RNA-associated protein 16	
+Q08493	human	Q08493	PDE4C	Q08493	9	53	3',5'-cyclic-AMP phosphodiesterase 4C (EC 3.1.4.53) (DPDE1) 	
+Q08495	human	Q08495	DMTN	Q08495	18	138	Dematin (Dematin actin-binding protein) (Erythrocyte membran	
+Q08496	yeast	Q08496	DIA2	Q08496	7	82	Protein DIA2	
+Q08498	yeast	Q08498	YOR082C	Q08498	0	1	Putative uncharacterized protein YOR082C	
+Q08499	human	Q08499	PDE4D	Q08499	55	911	3',5'-cyclic-AMP phosphodiesterase 4D (EC 3.1.4.53) (DPDE3) 	
+Q08501	mus-musculus	Q08501	Prlr	Q08501	31	51	Prolactin receptor	
+Q08503	yeast	Q08503	YOR102W	Q08503	0	1	Putative uncharacterized protein YOR102W	
+Q08504	yeast	Q08504	YOR105W	Q08504	0	1	Uncharacterized protein YOR105W	
+Q08509	mus-musculus	Q08509	Eps8	Q08509	13	117	Epidermal growth factor receptor kinase substrate 8	
+Q08521	yeast	Q08521	YOR121C	Q08521	0	1	Putative uncharacterized protein YOR121C	
+Q08533	yeast	Q08533	YOR146W	Q08533	0	1	Putative uncharacterized protein YOR146W	
+Q08535	mus-musculus	Q08535	Sct	Q08535	6	18	Secretin	
+Q08548	yeast	Q08548	ALE1	Q08548	0	10	Lysophospholipid acyltransferase	
+Q08550	yeast	Q08550	MPC54	Q08550	3	18	Meiotic plaque component protein 54	
+Q08553	yeast	Q08553	SYC1	Q08553	2	39	Protein SYC1	
+Q08554	human	Q08554	DSC1	Q08554	43	229	Desmocollin-1 (Cadherin family member 1) (Desmosomal glycopr	
+Q08558	yeast	Q08558	DCI1	Q08558	1	55	Delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase	
+Q08560	yeast	Q08560	YOR186W	Q08560	0	1	Putative uncharacterized protein YOR186W	
+Q08561	yeast	Q08561	IES4	Q08561	0	36	Ino eighty subunit 4	
+Q08579	yeast	Q08579	THI72	Q08579	0	5	Thiamine transporter THI72	
+Q08580	yeast	Q08580	PEX27	Q08580	1	7	Peroxisomal membrane protein PEX27	
+Q08581	yeast	Q08581	SLK19	Q08581	1	36	Kinetochore protein SLK19	
+Q08601	yeast	Q08601	MCA1	Q08601	1	150	Metacaspase-1	
+Q08602	rattus-norvegicus	Q08602	Rabggta	Q08602	4	59	Geranylgeranyl transferase type-2 subunit alpha	
+Q08603	rattus-norvegicus	Q08603	Rabggtb	Q08603	2	62	Geranylgeranyl transferase type-2 subunit beta	
+Q08622	yeast	Q08622	GEP3	Q08622	1	6	Genetic interactor of prohibitins 3, mitochondrial	
+Q08623	human	Q08623	PUDP	Q08623	10	186	Pseudouridine-5'-phosphatase (EC 3.1.3.96) (Haloacid dehalog	
+Q08624	mus-musculus	Q08624	Hoxc4	Q08624	6	17	Homeobox protein Hox-C4	
+Q08629	human	Q08629	SPOCK1	Q08629	15	101	Testican-1 (Protein SPOCK)	
+Q08634	yeast	Q08634	YOR238W	Q08634	1	4	Uncharacterized protein YOR238W	
+Q08639	mus-musculus	Q08639	Tfdp1	Q08639	23	62	Transcription factor Dp-1	
+Q08641	yeast	Q08641	ABP140	Q08641	0	34	tRNA(Thr) (cytosine(32)-N(3))-methyltransferase	
+Q08642	mus-musculus	Q08642	Padi2	Q08642	0	4	Protein-arginine deiminase type-2	
+Q08645	yeast	Q08645	MET7	Q08645	0	13	Folylpolyglutamate synthase	
+Q08646	yeast	Q08646	SSP2	Q08646	1	22	Sporulation-specific protein 2	
+Q08647	yeast	Q08647	PUS7	Q08647	4	74	Multisubstrate pseudouridine synthase 7	
+Q08648	human	Q08648	SPAG11B	Q08648	1	14	Sperm-associated antigen 11B (Human epididymis-specific prot	
+Q08649	yeast	Q08649	ESA1	Q08649	17	238	Histone acetyltransferase ESA1	
+Q08650	yeast	Q08650	DGA1	Q08650	0	19	Diacylglycerol O-acyltransferase 1	
+Q08651	yeast	Q08651	ENV9	Q08651	0	6	Probable oxidoreductase ENV9	
+Q08652	mus-musculus	Q08652	Rbp2	Q08652	2	7	Retinol-binding protein 2	
+Q08673	yeast	Q08673	SRL1	Q08673	0	12	Cell wall protein SRL1	
+Q08682	arabidopsis-thaliana	Q08682	RPSaA	Q08682	56	852	Small ribosomal subunit protein uS2z	
+Q08683	yeast	Q08683	APC5	Q08683	4	55	Anaphase-promoting complex subunit 5	
+Q08685	yeast	Q08685	CLP1	Q08685	2	34	mRNA cleavage and polyadenylation factor CLP1	
+Q08686	yeast	Q08686	TUM1	Q08686	0	22	Thiosulfate sulfurtransferase TUM1	
+Q08687	yeast	Q08687	TMA16	Q08687	1	75	Translation machinery-associated protein 16	
+Q08689	yeast	Q08689	NAT5	Q08689	1	82	N-alpha-acetyltransferase NAT5	
+Q08692	yeast	Q08692	OSW1	Q08692	0	2	Outer spore wall protein 1	
+Q08693	yeast	Q08693	TRE2	Q08693	2	6	Putative zinc metalloprotease TRE2	
+Q08694	fly	FBgn0004425	LysB	Q08694	32	253	Lysozyme B (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase B)	
+Q08698	salmonella-typhimurium	Q08698	nrdE	Q08698	1	7	Ribonucleoside-diphosphate reductase 2 subunit alpha	
+Q08702	yeast	Q08702	HNT3	Q08702	0	5	Aprataxin-like protein	
+Q08704	zea-mays	Q08704	CHI	Q08704	2	20	Chalcone--flavanone isomerase	
+Q08708	human	Q08708	CD300C	Q08708	14	151	CMRF35-like molecule 6 (CLM-6) (CD300 antigen-like family me	
+Q08722	human	Q08722	CD47	Q08722	113	605	Leukocyte surface antigen CD47 (Antigenic surface determinan	
+Q08723	yeast	Q08723	RPN8	Q08723	7	102	26S proteasome regulatory subunit RPN8	
+Q08726	yeast	Q08726	GPN2	Q08726	3	28	GPN-loop GTPase 2	
+Q08729	yeast	Q08729	DSE3	Q08729	2	16	Protein DSE3	
+Q08732	yeast	Q08732	HRK1	Q08732	5	60	Serine/threonine-protein kinase HRK1	
+Q08733	arabidopsis-thaliana	Q08733	PIP1-3	Q08733	10	44	Aquaporin PIP1-3	
+Q08734	yeast	Q08734	YOR268C	Q08734	0	1	Uncharacterized protein YOR268C	
+Q08741	yeast	Q08741	YOR282W	Q08741	0	1	Putative uncharacterized protein YOR282W	
+Q08742	yeast	Q08742	RDL2	Q08742	0	36	Thiosulfate sulfurtransferase RDL2, mitochondrial	
+Q08743	yeast	Q08743	YOR292C	Q08743	0	5	Vacuolar membrane protein YOR292C	
+Q08745	yeast	Q08745	RPS10A	Q08745	21	726	Small ribosomal subunit protein eS10A	
+Q08746	yeast	Q08746	RRS1	Q08746	11	177	Regulator of ribosome biosynthesis	
+Q08747	yeast	Q08747	UAF30	Q08747	2	27	Upstream activation factor subunit UAF30	
+Q08748	yeast	Q08748	YOR296W	Q08748	2	16	Uncharacterized protein YOR296W	
+Q08749	yeast	Q08749	TIM18	Q08749	2	21	Mitochondrial import inner membrane translocase subunit TIM1	
+Q08750	yeast	Q08750	MUM3	Q08750	0	4	Protein MUM3	
+Q08752	human	Q08752	PPID	Q08752	39	221	Peptidyl-prolyl cis-trans isomerase D (PPIase D) (EC 5.2.1.8	
+Q08754	yeast	Q08754	BUD7	Q08754	1	27	Bud site selection protein 7	
+Q08755	rattus-norvegicus	Q08755	Insig1	Q08755	1	28	Insulin-induced gene 1 protein	
+Q08760	yeast	Q08760	RAX1	Q08760	1	11	Bud site selection protein RAX1	
+Q08761	mus-musculus	Q08761	Pros1	Q08761	3	10	Vitamin K-dependent protein S	
+Q08770	arabidopsis-thaliana	Q08770	RPL10B	Q08770	19	554	Large ribosomal subunit protein uL16y	
+Q08773	yeast	Q08773	ISW2	Q08773	4	70	ISWI chromatin-remodeling complex ATPase ISW2	
+Q08774	yeast	Q08774	RRG7	Q08774	0	8	Required for respiratory growth protein 7, mitochondrial	
+Q08775	mus-musculus	Q08775	Runx2	Q08775	9	133	Runt-related transcription factor 2	
+Q08777	yeast	Q08777	MCH5	Q08777	1	6	Riboflavin transporter MCH5	
+Q08786	yeast	Q08786	YOR331C	Q08786	0	2	Putative uncharacterized membrane protein YOR331C	
+Q08789	yeast	Q08789	YOR333C	Q08789	0	1	Putative uncharacterized protein YOR333C	
+Q08811	yeast	Q08811	YOR345C	Q08811	0	1	Putative uncharacterized protein YOR345C	
+Q08816	yeast	Q08816	TFB6	Q08816	2	28	General transcription and DNA repair factor IIH subunit TFB6	
+Q08817	yeast	Q08817	SOG2	Q08817	4	84	Leucine-rich repeat-containing protein SOG2	
+Q08818	yeast	Q08818	MSC6	Q08818	1	10	Meiotic sister-chromatid recombination protein 6, mitochondr	
+Q08822	yeast	Q08822	CIR2	Q08822	1	11	Probable electron transfer flavoprotein-ubiquinone oxidoredu	
+Q08826	yeast	Q08826	SNX3	Q08826	0	22	Sorting nexin-3	
+Q08828	human	Q08828	ADCY1	Q08828	13	84	Adenylate cyclase type 1 (EC 4.6.1.1) (ATP pyrophosphate-lya	
+Q08830	human	Q08830	FGL1	Q08830	32	169	Fibrinogen-like protein 1 (HP-041) (Hepassocin) (HPS) (Hepat	
+Q08831	yeast	Q08831	VTS1	Q08831	11	270	RNA-binding protein VTS1	
+Q08832	fly	FBgn0010240	Lcch3	Q08832	1	6	Gamma-aminobutyric acid receptor subunit beta-like (GABA(A) 	
+Q08834	rattus-norvegicus	Q08834	Mgat5	Q08834	1	4	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	
+Q08842	yeast	Q08842	YOR364W	Q08842	0	2	Putative uncharacterized protein YOR364W	
+Q08844	yeast	Q08844	YOR365C	Q08844	0	4	Uncharacterized membrane protein YOR365C	
+Q08849	rattus-norvegicus	Q08849	Stx3	Q08849	12	80	Syntaxin-3	
+Q08850	rattus-norvegicus	Q08850	Stx4	Q08850	10	83	Syntaxin-4	
+Q08851	rattus-norvegicus	Q08851	Stx5	Q08851	25	114	Syntaxin-5	
+Q08857	mus-musculus	Q08857	Cd36	Q08857	1	138	Platelet glycoprotein 4	
+Q08872	yeast	Q08872	YOR366W	Q08872	0	1	Putative uncharacterized protein YOR366W	
+Q08873	yeast	Q08873	SCP1	Q08873	2	46	Transgelin	
+Q08874	mus-musculus	Q08874	Mitf	Q08874	7	32	Microphthalmia-associated transcription factor	
+Q08877	rattus-norvegicus	Q08877	Dnm3	Q08877	3	71	Dynamin-3	
+Q08879	mus-musculus	Q08879	Fbln1	Q08879	1	12	Fibulin-1	
+Q08881	human	Q08881	ITK	Q08881	124	1524	Tyrosine-protein kinase ITK/TSK (EC 2.7.10.2) (Interleukin-2	
+Q08886	yeast	Q08886	GPB1	Q08886	0	14	Guanine nucleotide-binding protein subunit beta 1	
+Q08887	yeast	Q08887	NDD1	Q08887	2	20	Nuclear division defective protein 1	
+Q08890	mus-musculus	Q08890	Ids	Q08890	0	9	Iduronate 2-sulfatase	
+Q08891	arabidopsis-thaliana	Q08891	FAR2	Q08891	0	1	Fatty acyl-CoA reductase 2, chloroplastic	
+Q08902	yeast	Q08902	AMF1	Q08902	0	2	Low affinity ammonium transporter	
+Q08903	yeast	Q08903	YOR379C	Q08903	0	1	Putative uncharacterized protein YOR379C	
+Q08904	yeast	Q08904	RDR1	Q08904	0	7	Protein RDR1	
+Q08905	yeast	Q08905	FRE3	Q08905	1	5	Ferric reductase transmembrane component 3	
+Q08906	yeast	Q08906	FIT2	Q08906	0	4	Facilitator of iron transport 2	
+Q08907	yeast	Q08907	FIT3	Q08907	0	8	Facilitator of iron transport 3	
+Q08908	yeast	Q08908	FRE5	Q08908	0	3	Ferric reductase transmembrane component 5	
+Q08909	yeast	Q08909	YOR385W	Q08909	1	5	Uncharacterized protein YOR385W	
+Q08910	yeast	Q08910	YOR387C	Q08910	0	2	VEL1-related protein YOR387C	
+Q08911	yeast	Q08911	FDH1	Q08911	0	3	Formate dehydrogenase 1	
+Q08912	yeast	Q08912	YOR389W	Q08912	0	4	Uncharacterized protein YOR389W	
+Q08913	yeast	Q08913	FEX1	Q08913	0	40	Fluoride export protein 1	
+Q08914	yeast	Q08914	HSP33	Q08914	2	5	Probable glutathione-independent glyoxalase HSP33	
+Q08915	yeast	Q08915	YOR392W	Q08915	0	1	Putative uncharacterized protein YOR392W	
+Q08919	yeast	Q08919	TRE1	Q08919	1	10	Uncharacterized protein TRE1	
+Q08920	yeast	Q08920	CBC2	Q08920	11	228	Nuclear cap-binding protein subunit 2	
+Q08921	yeast	Q08921	TCO89	Q08921	6	82	Target of rapamycin complex 1 subunit TCO89	
+Q08923	yeast	Q08923	CTI6	Q08923	8	49	Histone deacetylase complex subunit CTI6	
+Q08924	yeast	Q08924	RTT10	Q08924	1	16	tRNA (34-2'-O)-methyltransferase regulator RTT10	
+Q08925	yeast	Q08925	MRN1	Q08925	0	14	RNA-binding protein MRN1	
+Q08926	yeast	Q08926	UIP4	Q08926	0	17	ULP1-interacting protein 4	
+Q08929	yeast	Q08929	GUP2	Q08929	0	4	Membrane-bound O-acyltransferase GUP2	
+Q08930	yeast	Q08930	YPL191C	Q08930	1	7	Ubiquitin carboxyl-terminal hydrolase MIY1	
+Q08931	yeast	Q08931	PRM3	Q08931	0	8	Pheromone-regulated membrane protein 3	
+Q08932	yeast	Q08932	RSA1	Q08932	2	17	Ribosome assembly 1 protein	
+Q08943	mus-musculus	Q08943	Ssrp1	Q08943	13	149	FACT complex subunit SSRP1	
+Q08945	human	Q08945	SSRP1	Q08945	107	789	FACT complex subunit SSRP1 (Chromatin-specific transcription	
+Q08949	yeast	Q08949	DDC1	Q08949	8	39	DNA damage checkpoint protein 1	
+Q08951	yeast	Q08951	APL5	Q08951	12	30	AP-3 complex subunit delta	
+Q08952	yeast	Q08952	OXR1	Q08952	0	7	Oxidation resistance protein 1	
+Q08954	yeast	Q08954	NBR9	Q08954	3	15	Endonuclease NBR9	
+Q08955	yeast	Q08955	CSM4	Q08955	0	9	Chromosome segregation in meiosis protein 4	
+Q08956	yeast	Q08956	YIG1	Q08956	0	16	Protein YIG1	
+Q08957	yeast	Q08957	AFT2	Q08957	2	4	Iron-regulated transcriptional activator AFT2	
+Q08958	yeast	Q08958	YPL205C	Q08958	0	1	Putative uncharacterized protein YPL205C	
+Q08959	yeast	Q08959	PGC1	Q08959	0	4	Phosphatidylglycerol phospholipase C	
+Q08960	yeast	Q08960	TYW1	Q08960	0	17	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	
+Q08961	yeast	Q08961	RKM1	Q08961	0	13	Ribosomal lysine N-methyltransferase 1	
+Q08962	yeast	Q08962	NIP7	Q08962	10	143	60S ribosome subunit biogenesis protein NIP7	
+Q08963	yeast	Q08963	LEA1	Q08963	8	126	U2 small nuclear ribonucleoprotein A	
+Q08964	yeast	Q08964	YPL216W	Q08964	2	42	Putative ISWI chromatin-remodeling complex subunit YPL216W	
+Q08965	yeast	Q08965	BMS1	Q08965	15	197	Ribosome biogenesis protein BMS1	
+Q08966	yeast	Q08966	PCL8	Q08966	5	12	PHO85 cyclin-8	
+Q08967	yeast	Q08967	FLC1	Q08967	1	30	Flavin carrier protein 1	
+Q08968	yeast	Q08968	FMP40	Q08968	0	11	Protein adenylyltransferase SelO, mitochondrial	
+Q08969	yeast	Q08969	GRE1	Q08969	0	2	Protein GRE1	
+Q08970	yeast	Q08970	MMT2	Q08970	0	6	Mitochondrial metal transporter 2	
+Q08971	yeast	Q08971	YPL225W	Q08971	0	11	Protein PBDC1 homolog	
+Q08972	yeast	Q08972	NEW1	Q08972	4	191	NEW1_YEAST	
+Q08974	yeast	Q08974	YPL257W	Q08974	0	5	Uncharacterized membrane protein YPL257W	
+Q08975	yeast	Q08975	THI21	Q08975	1	5	Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase THI21	
+Q08977	yeast	Q08977	CUB1	Q08977	3	35	Cu(2+) suppressing and bleomycin sensitive protein 1	
+Q08979	yeast	Q08979	KEL3	Q08979	0	9	Kelch repeat-containing protein 3	
+Q08980	yeast	Q08980	YPL264C	Q08980	0	2	Probable transport protein YPL264C	
+Q08981	yeast	Q08981	ACM1	Q08981	4	12	APC/C-CDH1 modulator 1	
+Q08984	yeast	Q08984	PBI1	Q08984	0	3	PSTB2-interacting protein 1	
+Q08985	yeast	Q08985	SAM4	Q08985	0	4	Homocysteine S-methyltransferase 2	
+Q08986	yeast	Q08986	SAM3	Q08986	0	3	S-adenosylmethionine permease SAM3	
+Q08989	yeast	Q08989	YPL277C	Q08989	0	3	Uncharacterized protein YPL277C	
+Q08991	yeast	Q08991	FEX2	Q08991	0	36	Fluoride export protein 2	
+Q08992	yeast	Q08992	HSP32	Q08992	2	3	Probable glutathione-independent glyoxalase HSP32	
+Q08993	yeast	Q08993	YPR202W	Q08993	0	3	Putative uncharacterized protein YPR202W	
+Q08994	yeast	Q08994	YPR203W	Q08994	1	4	Putative uncharacterized protein YPR203W	
+Q08995	yeast	Q08995	YPR204W	Q08995	0	5	Y' element ATP-dependent helicase YPR204W	
+Q08999	human	Q08999	RBL2	Q08999	33	119	Retinoblastoma-like protein 2 (130 kDa retinoblastoma-associ	
+Q08A69	arabidopsis-thaliana	Q08A69	At1g10040	Q08A69	0	1	Alpha/beta-Hydrolases superfamily protein	
+Q08A71	arabidopsis-thaliana	Q08A71	PRMT6	Q08A71	2	42	Probable protein arginine N-methyltransferase 6	
+Q08A72	arabidopsis-thaliana	Q08A72	EML4	Q08A72	0	6	Protein EMSY-LIKE 4	
+Q08AA3	arabidopsis-thaliana	Q08AA3	At4g28690	Q08AA3	1	12	At4g28690	
+Q08AA5	arabidopsis-thaliana	Q08AA5	At1g67410	Q08AA5	0	2	At1g67410	
+Q08AD1	human	Q08AD1	CAMSAP2	Q08AD1	71	237	Calmodulin-regulated spectrin-associated protein 2 (Calmodul	
+Q08AE8	human	Q08AE8	SPIRE1	Q08AE8	25	100	Protein spire homolog 1 (Spir-1)	
+Q08AF3	human	Q08AF3	SLFN5	Q08AF3	4	56	Schlafen family member 5	
+Q08AG5	human	Q08AG5	ZNF844	Q08AG5	4	47	Zinc finger protein 844	
+Q08AG7	human	Q08AG7	MZT1	Q08AG7	19	329	Mitotic-spindle organizing protein 1 (Mitotic-spindle organi	
+Q08AH1	human	Q08AH1	ACSM1	Q08AH1	2	55	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	
+Q08AH3	human	Q08AH3	ACSM2A	Q08AH3	1	29	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	
+Q08AI6	human	Q08AI6	SLC38A11	Q08AI6	2	25	Putative sodium-coupled neutral amino acid transporter 11 (S	
+Q08AI8	human	Q08AI8	MAB21L4	Q08AI8	9	61	Protein mab-21-like 4	
+Q08AM6	human	Q08AM6	VAC14	Q08AM6	16	303	Protein VAC14 homolog (Tax1-binding protein 2)	
+Q08AN1	human	Q08AN1	ZNF616	Q08AN1	4	110	Zinc finger protein 616	
+Q08AT1	mus-musculus	Q08AT1	Rasl12	Q08AT1	0	2	Ras-like protein family member 12	
+Q08AU9	mus-musculus	Q08AU9	?	Q08AU9	2	20	UPF0450 protein C17orf58 homolog	
+Q08BA1	zebrafish	Q08BA1	atp5fa1	Q08BA1	3	138	ATP synthase subunit alpha	
+Q08BA4	zebrafish	Q08BA4	slc38a9	Q08BA4	1	33	Neutral amino acid transporter 9	
+Q08BA6	zebrafish	Q08BA6	alkbh5	Q08BA6	1	12	RNA demethylase ALKBH5	
+Q08BB1	zebrafish	Q08BB1	gfm1	Q08BB1	0	356	Elongation factor G, mitochondrial	
+Q08BB2	zebrafish	Q08BB2	pm20d1.2	Q08BB2	0	3	N-fatty-acyl-amino acid synthase/hydrolase PM20D1.2	
+Q08BB3	zebrafish	Q08BB3	dcaf12	Q08BB3	3	24	DDB1- and CUL4-associated factor 12	
+Q08BB5	zebrafish	Q08BB5	ctdspl2a	Q08BB5	3	17	CTD small phosphatase-like protein 2-A	
+Q08BB6	zebrafish	Q08BB6	ints9	Q08BB6	9	121	Integrator complex subunit 9	
+Q08BB8	zebrafish	Q08BB8	zgc:154006	Q08BB8	2	36	Occludin	
+Q08BC0	zebrafish	Q08BC0	pim1	Q08BC0	3	9	Serine/threonine-protein kinase	
+Q08BC3	zebrafish	Q08BC3	si:ch211-133n4.4	Q08BC3	0	3	Si:ch211-133n4.4	
+Q08BC4	zebrafish	Q08BC4	stpg2	Q08BC4	1	4	Sperm-tail PG-rich repeat-containing protein 2	
+Q08BC5	zebrafish	Q08BC5	hsd17b7	Q08BC5	0	45	3-keto-steroid reductase/17-beta-hydroxysteroid dehydrogenas	
+Q08BC6	zebrafish	Q08BC6	eno4	Q08BC6	5	50	Enolase 4	
+Q08BC9	zebrafish	Q08BC9	c2cd2l	Q08BC9	0	5	C2cd2-like	
+Q08BD1	zebrafish	Q08BD1	hmga1b	Q08BD1	0	12	High mobility group AT-hook 1b	
+Q08BD8	zebrafish	Q08BD8	mtfr2	Q08BD8	0	9	Mitochondrial fission regulator 2	
+Q08BE2	zebrafish	Q08BE2	rgs18	Q08BE2	14	35	Regulator of G-protein signaling 18	
+Q08BE3	zebrafish	Q08BE3	slmapa	Q08BE3	4	30	Sarcolemmal membrane-associated protein	
+Q08BF2	zebrafish	Q08BF2	slc27a1b	Q08BF2	0	177	long-chain-fatty-acid--CoA ligase	
+Q08BF4	zebrafish	Q08BF4	st3gal7	Q08BF4	0	1	Lactosylceramide alpha-2,3-sialyltransferase	
+Q08BG7	zebrafish	Q08BG7	scoca	Q08BG7	6	13	Short coiled-coil protein A	
+Q08BH5	zebrafish	Q08BH5	rbm46	Q08BH5	9	70	Probable RNA-binding protein 46	
+Q08BH7	zebrafish	Q08BH7	ube2t	Q08BH7	34	125	Ubiquitin-conjugating enzyme E2 T	
+Q08BH9	zebrafish	Q08BH9	anapc11	Q08BH9	9	140	Anaphase-promoting complex subunit 11	
+Q08BI9	zebrafish	Q08BI9	mcu	Q08BI9	1	24	Calcium uniporter protein, mitochondrial	
+Q08BJ2	zebrafish	Q08BJ2	khdrbs2	Q08BJ2	0	4	KH domain-containing, RNA-binding, signal transduction-assoc	
+Q08BJ3	zebrafish	Q08BJ3	gabra1	Q08BJ3	17	28	Gamma-aminobutyric acid receptor subunit alpha-1	
+Q08BK6	zebrafish	Q08BK6	cplx4a	Q08BK6	5	54	Complexin-4a	
+Q08BL3	zebrafish	Q08BL3	c1galt1la	Q08BL3	0	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	
+Q08BL7	zebrafish	Q08BL7	glyctk	Q08BL7	0	1	Glycerate kinase	
+Q08BL9	zebrafish	Q08BL9	klhl24a	Q08BL9	4	9	Kelch-like protein 24a	
+Q08BM0	zebrafish	Q08BM0	trmt10b	Q08BM0	0	10	tRNA methyltransferase 10 homolog B	
+Q08BM6	zebrafish	Q08BM6	lrrc8db	Q08BM6	4	25	Leucine rich repeat containing 8 VRAC subunit Db isoform X1	
+Q08BM8	zebrafish	Q08BM8	cnot7	Q08BM8	12	44	CCR4-NOT transcription complex subunit 7	
+Q08BP9	zebrafish	Q08BP9	hlfa	Q08BP9	6	22	HLF transcription factor, PAR bZIP family member a	
+Q08BR1	zebrafish	Q08BR1	dr1	Q08BR1	6	33	Protein Dr1	
+Q08BR4	zebrafish	Q08BR4	setdb1b	Q08BR4	9	51	Histone-lysine N-methyltransferase SETDB1-B	
+Q08BR9	zebrafish	Q08BR9	ppp1r12c	Q08BR9	5	8	Protein phosphatase 1 regulatory subunit 12C	
+Q08BS4	zebrafish	Q08BS4	ezh2	Q08BS4	13	144	Histone-lysine N-methyltransferase EZH2	
+Q08BU8	zebrafish	Q08BU8	rgs7bpa	Q08BU8	6	13	Regulator of G-protein signaling 7-binding protein A	
+Q08BV2	zebrafish	Q08BV2	tyw5	Q08BV2	0	2	tRNA wybutosine-synthesizing protein 5	
+Q08BV4	zebrafish	Q08BV4	gtf2a1l	Q08BV4	5	117	General transcription factor IIA, 1-like	
+Q08BV5	zebrafish	Q08BV5	rangap1a	Q08BV5	7	101	Ran GTPase-activating protein 1	
+Q08BV6	zebrafish	Q08BV6	ckba	Q08BV6	1	9	creatine kinase	
+Q08BW0	zebrafish	Q08BW0	otud5a	Q08BW0	6	14	OTU domain-containing protein 5-A	
+Q08BW5	zebrafish	Q08BW5	cisha	Q08BW5	15	50	Cytokine-inducible SH2-containing protein	
+Q08BW6	zebrafish	Q08BW6	cdin1	Q08BW6	0	4	CDAN1-interacting nuclease 1	
+Q08BX0	zebrafish	Q08BX0	rab21	Q08BX0	8	22	Ras-related protein Rab-21	
+Q08BX4	zebrafish	Q08BX4	kat7a	Q08BX4	3	84	Histone acetyltransferase KAT7a	
+Q08BX5	zebrafish	Q08BX5	bcam	Q08BX5	0	4	Basal cell adhesion molecule (Lutheran blood group)	
+Q08BX9	zebrafish	Q08BX9	im:7148473	Q08BX9	2	31	Uncharacterized protein LOC767645	
+Q08BY0	zebrafish	Q08BY0	ndufaf7	Q08BY0	3	26	Protein arginine methyltransferase NDUFAF7, mitochondrial	
+Q08BY1	zebrafish	Q08BY1	med17	Q08BY1	14	195	Mediator of RNA polymerase II transcription subunit 17	
+Q08BY5	zebrafish	Q08BY5	jmjd4	Q08BY5	0	1	2-oxoglutarate and iron-dependent oxygenase JMJD4	
+Q08BY6	zebrafish	Q08BY6	ptk6b	Q08BY6	5	47	Tyrosine-protein kinase	
+Q08BY9	zebrafish	Q08BY9	clgn	Q08BY9	4	81	Calmegin	
+Q08BZ0	zebrafish	Q08BZ0	tnfsf12	Q08BZ0	9	41	TNF superfamily member 12	
+Q08BZ1	zebrafish	Q08BZ1	dcaf5	Q08BZ1	0	33	DDB1- and CUL4-associated factor 5	
+Q08BZ4	zebrafish	Q08BZ4	mdh1b	Q08BZ4	0	9	Putative malate dehydrogenase 1B	
+Q08BZ6	zebrafish	Q08BZ6	vps4a	Q08BZ6	8	24	vesicle-fusing ATPase	
+Q08C26	zebrafish	Q08C26	btr12	Q08C26	0	2	Bloodthirsty-related gene family, member 12	
+Q08C33	zebrafish	Q08C33	isoc1	Q08C33	1	3	Isochorismatase domain-containing protein 1	
+Q08C36	zebrafish	Q08C36	extl2	Q08C36	3	5	Exostosin-like 2	
+Q08C37	zebrafish	Q08C37	clk2b	Q08C37	8	38	Serine/threonine-protein (EC 2.7.11.1)	
+Q08C37_DANRE	zebrafish	Q08C37	clk2b	Q08C37	8	38		
+Q08C38	zebrafish	Q08C38	josd1	Q08C38	1	3	Josephin-1	
+Q08C49	zebrafish	Q08C49	prkar1b	Q08C49	11	26	Protein kinase, cAMP-dependent, regulatory, type I, beta	
+Q08C53	zebrafish	Q08C53	bbof1	Q08C53	1	1	Basal body-orientation factor 1	
+Q08C57	zebrafish	Q08C57	fdx2	Q08C57	21	130	Ferredoxin-2, mitochondrial	
+Q08C60	zebrafish	Q08C60	fut11	Q08C60	0	2	GDP-fucose protein O-fucosyltransferase 4	
+Q08C62	zebrafish	Q08C62	cdh18a	Q08C62	0	21	Cadherin 18, type 2	
+Q08C69	zebrafish	Q08C69	rpusd1	Q08C69	4	134	RNA pseudouridylate synthase domain-containing protein 1	
+Q08C72	zebrafish	Q08C72	cwc22	Q08C72	21	140	Pre-mRNA-splicing factor CWC22 homolog	
+Q08C75	zebrafish	Q08C75	slc18a3a	Q08C75	0	59	Probable vesicular acetylcholine transporter-A	
+Q08C78	zebrafish	Q08C78	btf3	Q08C78	5	105	Transcription factor BTF3	
+Q08C81	zebrafish	Q08C81	med19a	Q08C81	5	125	Mediator of RNA polymerase II transcription subunit 19-A	
+Q08C84	zebrafish	Q08C84	smyd4	Q08C84	1	22	Protein-lysine N-methyltransferase SMYD4	
+Q08C88	zebrafish	Q08C88	samd13	Q08C88	0	43	Sterile alpha motif domain-containing 13	
+Q08C92	zebrafish	Q08C92	tyw1	Q08C92	0	8	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	
+Q08C93	zebrafish	Q08C93	abhd12	Q08C93	0	5	Lysophosphatidylserine lipase ABHD12	
+Q08C99	zebrafish	Q08C99	vrtn	Q08C99	0	1	Vertnin	
+Q08CA1	zebrafish	Q08CA1	gdpgp1	Q08CA1	1	41	GDP-D-glucose phosphorylase 1	
+Q08CA5	zebrafish	Q08CA5	prps1b	Q08CA5	2	5	Ribose-phosphate pyrophosphokinase 1	
+Q08CD0	zebrafish	Q08CD0	rnf220a	Q08CD0	1	1	E3 ubiquitin-protein ligase RNF220	
+Q08CD5	zebrafish	Q08CD5	rxylt1	Q08CD5	0	1	Ribitol-5-phosphate xylosyltransferase 1	
+Q08CD8	zebrafish	Q08CD8	rhebl1	Q08CD8	0	54	GTP-binding protein Rheb	
+Q08CE7	zebrafish	Q08CE7	cox7a1	Q08CE7	9	34	Cytochrome c oxidase subunit 7A1, mitochondrial	
+Q08CF1	zebrafish	Q08CF1	klc3	Q08CF1	24	116	Kinesin light chain	
+Q08CF3	zebrafish	Q08CF3	ccdc61	Q08CF3	0	3	Centrosomal protein CCDC61	
+Q08CG8	zebrafish	Q08CG8	rnf44	Q08CG8	9	21	RING finger protein 44	
+Q08CH3	zebrafish	Q08CH3	mpnd	Q08CH3	5	168	MPN domain-containing protein	
+Q08CH6	zebrafish	Q08CH6	catip	Q08CH6	1	22	Ciliogenesis-associated TTC17-interacting protein	
+Q08CH7	zebrafish	Q08CH7	rsph10b	Q08CH7	0	9	Radial spoke head 10 homolog B	
+Q08CH8	zebrafish	Q08CH8	zftraf1	Q08CH8	0	11	Zinc finger TRAF-type-containing protein 1	
+Q08CI4	zebrafish	Q08CI4	ccnyl1	Q08CI4	9	10	Cyclin-Y-like protein 1	
+Q08CI6	zebrafish	Q08CI6	senp8	Q08CI6	8	16	SUMO peptidase family member, NEDD8-specific	
+Q08CJ4	zebrafish	Q08CJ4	minpp1a	Q08CJ4	0	3	Multiple inositol polyphosphate phosphatase 1	
+Q08CJ6	zebrafish	Q08CJ6	grk4	Q08CJ6	4	32	G protein-coupled receptor kinase	
+Q08CJ7	zebrafish	Q08CJ7	arsk	Q08CJ7	0	28	Arylsulfatase K	
+Q08CK1	zebrafish	Q08CK1	ecsit	Q08CK1	1	48	Evolutionarily conserved signaling intermediate in Toll path	
+Q08CK7	zebrafish	Q08CK7	igf2bp1	Q08CK7	0	16	Insulin-like growth factor 2 mRNA-binding protein 1	
+Q08CL1	zebrafish	Q08CL1	kbtbd2	Q08CL1	0	1	Kelch repeat and BTB (POZ) domain-containing 2	
+Q08CL3	zebrafish	Q08CL3	kbtbd8	Q08CL3	18	40	Kelch repeat and BTB domain-containing protein 8	
+Q08CL8	zebrafish	Q08CL8	cnot10	Q08CL8	11	22	CCR4-NOT transcription complex subunit 10	
+Q08CM4	zebrafish	Q08CM4	lin54	Q08CM4	3	18	Protein lin-54 homolog	
+Q08CN0	zebrafish	Q08CN0	trappc2	Q08CN0	5	29	Trafficking protein particle complex subunit 2	
+Q08CN9	zebrafish	Q08CN9	znrf2	Q08CN9	0	1	E3 ubiquitin-protein ligase znrf2	
+Q08CT1	zebrafish	Q08CT1	bod1	Q08CT1	1	10	Biorientation of chromosomes in cell division 1	
+Q08CT3	zebrafish	Q08CT3	glulc	Q08CT3	0	19	Glutamine synthetase	
+Q08CV3	zebrafish	Q08CV3	gpat4	Q08CV3	2	5	Glycerol-3-phosphate acyltransferase 4	
+Q08E93	human	Q08E93	FAM27E3	Q08E93	2	10	Protein FAM27E3	
+Q08EC4	mus-musculus	Q08EC4	Cass4	Q08EC4	10	43	Cas scaffolding protein family member 4	
+Q08EE8	mus-musculus	Q08EE8	Acsbg3	Q08EE8	0	6	long-chain-fatty-acid--CoA ligase	
+Q08EG8	mus-musculus	Q08EG8	Krtap10-4	Q08EG8	0	3	Keratin associated protein 10-4	
+Q08EI0	human	Q08EI0	KDM1B	Q08EI0	2	48	AOF1 protein	
+Q08EN7	mus-musculus	Q08EN7	Zcwpw2	Q08EN7	3	22	Zinc finger CW-type PWWP domain protein 2 homolog	
+Q08ER8	human	Q08ER8	ZNF543	Q08ER8	5	65	Zinc finger protein 543	
+Q08ES4	zebrafish	Q08ES4	btg4	Q08ES4	2	2	B-cell translocation gene 4	
+Q08ET2	human	Q08ET2	SIGLEC14	Q08ET2	25	181	Sialic acid-binding Ig-like lectin 14 (Siglec-14)	
+Q08FI0	virus	Q08FI0	DpV83gp001	Q08FI0	16	165	Q08FI0_DPV83	
+Q08FI1	virus	Q08FI1	DpV83gp002	Q08FI1	7	165	Q08FI1_DPV83	
+Q08FI2	virus	Q08FI2	DpV83gp003	Q08FI2	10	164	Q08FI2_DPV83	
+Q08FI3	virus	Q08FI3	DpV83gp004	Q08FI3	5	165	Q08FI3_DPV83	
+Q08FI4	virus	Q08FI4	DpV83gp168	Q08FI4	4	165	Q08FI4_DPV83	
+Q08FI5	virus	Q08FI5	DpV83gp167	Q08FI5	4	164	Q08FI5_DPV83	
+Q08FI6	virus	Q08FI6	DpV83gp166	Q08FI6	6	165	Q08FI6_DPV83	
+Q08FI7	virus	Q08FI7	DpV83gp165	Q08FI7	4	164	Q08FI7_DPV83	
+Q08FI8	virus	Q08FI8	DpV83gp164	Q08FI8	4	165	Q08FI8_DPV83	
+Q08FI9	virus	Q08FI9	DpV83gp163	Q08FI9	3	164	Q08FI9_DPV83	
+Q08FJ0	virus	Q08FJ0	DpV83gp162	Q08FJ0	8	165	Q08FJ0_DPV83	
+Q08FJ1	virus	Q08FJ1	DpV83gp161	Q08FJ1	1	164	Q08FJ1_DPV83	
+Q08FJ2	virus	Q08FJ2	DpV83gp160	Q08FJ2	10	164	Q08FJ2_DPV83	
+Q08FJ3	virus	Q08FJ3	DpV83gp159	Q08FJ3	6	165	Q08FJ3_DPV83	
+Q08FJ4	virus	Q08FJ4	DpV83gp158	Q08FJ4	10	165	Q08FJ4_DPV83	
+Q08FJ5	virus	Q08FJ5	DpV83gp157	Q08FJ5	6	165	Q08FJ5_DPV83	
+Q08FJ6	virus	Q08FJ6	DpV83gp156	Q08FJ6	3	164	Complement control protein C3	
+Q08FJ7	virus	Q08FJ7	DpV83gp155	Q08FJ7	1	165	Host range factor p28	
+Q08FJ8	virus	Q08FJ8	DpV83gp154	Q08FJ8	10	165	Q08FJ8_DPV83	
+Q08FJ9	virus	Q08FJ9	DpV83gp153	Q08FJ9	8	165	Q08FJ9_DPV83	
+Q08FK0	virus	Q08FK0	DpV83gp152	Q08FK0	6	165	Q08FK0_DPV83	
+Q08FK1	virus	Q08FK1	DpV83gp151	Q08FK1	13	165	Q08FK1_DPV83	
+Q08FK2	virus	Q08FK2	DpV83gp150	Q08FK2	11	165	Q08FK2_DPV83	
+Q08FK3	virus	Q08FK3	DpV83gp149	Q08FK3	0	164	Protein OPG181	
+Q08FK4	virus	Q08FK4	DpV83gp148	Q08FK4	6	165	Toll/IL-receptor-like protein	
+Q08FK5	virus	Q08FK5	DpV83gp147a	Q08FK5	14	164	Soluble interferon alpha/beta receptor OPG204	
+Q08FK6	virus	Q08FK6	DpV83gp146	Q08FK6	0	125	Q08FK6_DPV83	
+Q08FK7	virus	Q08FK7	DpV83gp145	Q08FK7	9	165	DNA ligase	
+Q08FK8	virus	Q08FK8	DpV83gp144	Q08FK8	13	165	Q08FK8_DPV83	
+Q08FK9	virus	Q08FK9	DpV83gp143	Q08FK9	7	165	Q08FK9_DPV83	
+Q08FL0	virus	Q08FL0	DpV83gp142	Q08FL0	8	164	Q08FL0_DPV83	
+Q08FL1	virus	Q08FL1	DpV83gp141	Q08FL1	1	165	Q08FL1_DPV83	
+Q08FL2	virus	Q08FL2	DpV83gp140	Q08FL2	2	165	Q08FL2_DPV83	
+Q08FL3	virus	Q08FL3	DpV83gp138	Q08FL3	22	165	Q08FL3_DPV83	
+Q08FL4	virus	Q08FL4	DpV83gp139	Q08FL4	9	165	Leukocyte surface antigen CD47	
+Q08FL5	virus	Q08FL5	DpV83gp137	Q08FL5	6	164	Q08FL5_DPV83	
+Q08FL6	virus	Q08FL6	DpV83gp136	Q08FL6	3	165	Q08FL6_DPV83	
+Q08FL7	virus	Q08FL7	DpV83gp135	Q08FL7	6	165	Concanavalin-like protein	
+Q08FL8	virus	Q08FL8	DpV83gp134	Q08FL8	4	165	MHC class II presentation inhibitor	
+Q08FL9	virus	Q08FL9	DpV83gp133	Q08FL9	7	165	Q08FL9_DPV83	
+Q08FM0	virus	Q08FM0	DpV83gp132	Q08FM0	6	165	Protein OPG161	
+Q08FM1	virus	Q08FM1	DpV83gp131	Q08FM1	4	165	DNA packaging protein OPG160	
+Q08FM2	virus	Q08FM2	DpV83gp130	Q08FM2	4	165	Q08FM2_DPV83	
+Q08FM3	virus	Q08FM3	DpV83gp129	Q08FM3	1	165	Q08FM3_DPV83	
+Q08FM4	virus	Q08FM4	DpV83gp128	Q08FM4	7	165	DNA-directed RNA polymerase 35 kDa subunit	
+Q08FM5	virus	Q08FM5	DpV83gp127	Q08FM5	7	165	Q08FM5_DPV83	
+Q08FM6	virus	Q08FM6	DpV83gp126	Q08FM6	4	165	Q08FM6_DPV83	
+Q08FM7	virus	Q08FM7	DpV83gp125	Q08FM7	7	162	DNA-directed RNA polymerase	
+Q08FM8	virus	Q08FM8	DpV83gp124	Q08FM8	9	165	Intermediate transcription factor 3 large subunit	
+Q08FM9	virus	Q08FM9	DpV83gp124	Q08FM9	7	165	Q08FM9_DPV83	
+Q08FN0	virus	Q08FN0	DpV83gp121	Q08FN0	9	165	Q08FN0_DPV83	
+Q08FN1	virus	Q08FN1	DpV83gp122	Q08FN1	3	165	IMV membrane protein	
+Q08FN2	virus	Q08FN2	DpV83gp120	Q08FN2	0	165	Q08FN2_DPV83	
+Q08FN3	virus	Q08FN3	DpV83gp119	Q08FN3	2	164	Q08FN3_DPV83	
+Q08FN4	virus	Q08FN4	DpV83gp118	Q08FN4	5	165	Q08FN4_DPV83	
+Q08FN5	virus	Q08FN5	DpV83gp117	Q08FN5	12	164	Q08FN5_DPV83	
+Q08FN6	virus	Q08FN6	DpV83gp116	Q08FN6	8	165	Q08FN6_DPV83	
+Q08FN7	virus	Q08FN7	DpV83gp115	Q08FN7	2	165	Q08FN7_DPV83	
+Q08FN8	virus	Q08FN8	DpV83gp114	Q08FN8	4	165	Q08FN8_DPV83	
+Q08FN9	virus	Q08FN9	DpV83gp113	Q08FN9	8	165	Q08FN9_DPV83	
+Q08FP0	virus	Q08FP0	DpV83gp112	Q08FP0	6	165	25 kDa core protein OPG138	
+Q08FP1	virus	Q08FP1	DpV83gp111	Q08FP1	8	165	Viral membrane formation protein	
+Q08FP2	virus	Q08FP2	DpV83gp110	Q08FP2	5	164	Q08FP2_DPV83	
+Q08FP3	virus	Q08FP3	DpV83gp109	Q08FP3	0	165	Q08FP3_DPV83	
+Q08FP4	virus	Q08FP4	DpV83gp108	Q08FP4	5	164	Intermediate transcription factor 3 small subunit	
+Q08FP5	virus	Q08FP5	DpV83gp107	Q08FP5	2	164	Early transcription factor 82 kDa subunit	
+Q08FP6	virus	Q08FP6	DpV83gp106	Q08FP6	3	164	Virion morphogenesis protein	
+Q08FP7	virus	Q08FP7	DpV83gp105	Q08FP7	10	165	DNA-directed RNA polymerase 19 kDa subunit	
+Q08FP8	virus	Q08FP8	DpV83gp104	Q08FP8	6	165	39kDa core protein OPG130	
+Q08FP9	virus	Q08FP9	DpV83gp103	Q08FP9	5	165	Virion core protein 4b	
+Q08FQ0	virus	Q08FQ0	DpV83gp102	Q08FQ0	2	165	S-S bond formation pathway protein	
+Q08FQ1	virus	Q08FQ1	DpV83gp101	Q08FQ1	4	165	Viral late gene transcription factor 3	
+Q08FQ2	virus	Q08FQ2	DpV83gp100	Q08FQ2	5	165	Viral late gene transcription factor 2	
+Q08FQ3	virus	Q08FQ3	DpV83gp099	Q08FQ3	0	164	62 kDa protein	
+Q08FQ4	virus	Q08FQ4	DpV83gp098	Q08FQ4	5	164	Q08FQ4_DPV83	
+Q08FQ5	virus	Q08FQ5	DpV83gp097	Q08FQ5	1	164	Nucleoside triphosphatase I	
+Q08FQ6	virus	Q08FQ6	DpV83gp096	Q08FQ6	6	165	Q08FQ6_DPV83	
+Q08FQ7	virus	Q08FQ7	DpV83gp095	Q08FQ7	15	165	Q08FQ7_DPV83	
+Q08FQ8	virus	Q08FQ8	DpV83gp094	Q08FQ8	8	165	DNA-directed RNA polymerase 18 kDa subunit	
+Q08FQ9	virus	Q08FQ9	DpV83gp093	Q08FQ9	2	164	Early transcription factor 70 kDa subunit	
+Q08FR0	virus	Q08FR0	DpV83gp093	Q08FR0	4	164	Q08FR0_DPV83	
+Q08FR1	virus	Q08FR1	DpV83gp091	Q08FR1	9	165	Uracil-DNA glycosylase	
+Q08FR2	virus	Q08FR2	DpV83gp089	Q08FR2	7	165	Q08FR2_DPV83	
+Q08FR3	virus	Q08FR3	DpV83gp090	Q08FR3	4	165	Q08FR3_DPV83	
+Q08FR4	virus	Q08FR4	DpV83gp088	Q08FR4	4	165	mRNA-capping enzyme catalytic subunit	
+Q08FR5	virus	Q08FR5	DpV83gp087	Q08FR5	7	165	Q08FR5_DPV83	
+Q08FR6	virus	Q08FR6	DpV83gp086	Q08FR6	7	165	DNA topoisomerase	
+Q08FR7	virus	Q08FR7	DpV83gp085	Q08FR7	11	165	Q08FR7_DPV83	
+Q08FR8	virus	Q08FR8	DpV83gp084	Q08FR8	3	164	RNA polymerase-associated transcription-specificity factor R	
+Q08FR9	virus	Q08FR9	DpV83gp083	Q08FR9	3	164	Q08FR9_DPV83	
+Q08FS0	virus	Q08FS0	DpV83gp082	Q08FS0	5	165	Q08FS0_DPV83	
+Q08FS1	virus	Q08FS1	DpV83gp081	Q08FS1	11	165	Q08FS1_DPV83	
+Q08FS2	virus	Q08FS2	DpV83gp080	Q08FS2	11	162	DNA-directed RNA polymerase 147 kDa polypeptide	
+Q08FS3	virus	Q08FS3	DpV83gp079	Q08FS3	10	165	IMV membrane protein	
+Q08FS4	virus	Q08FS4	DpV83gp078	Q08FS4	4	165	DNA-directed RNA polymerase subunit	
+Q08FS5	virus	Q08FS5	DpV83gp077	Q08FS5	6	165	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	
+Q08FS6	virus	Q08FS6	DpV83gp076	Q08FS6	5	165	Q08FS6_DPV83	
+Q08FS7	virus	Q08FS7	DpV83gp075	Q08FS7	3	165	Thymidine kinase	
+Q08FS8	virus	Q08FS8	DpV83gp074	Q08FS8	2	165	Q08FS8_DPV83	
+Q08FS9	virus	Q08FS9	DpV83gp073	Q08FS9	4	165	Q08FS9_DPV83	
+Q08FT0	virus	Q08FT0	DpV83gp072	Q08FT0	4	165	Core protein VP8	
+Q08FT1	virus	Q08FT1	DpV83gp071	Q08FT1	8	165	Internal virion protein	
+Q08FT2	virus	Q08FT2	DpV83gp070	Q08FT2	3	165	Crescent formation protein	
+Q08FT3	virus	Q08FT3	DpV83gp069	Q08FT3	6	165	Q08FT3_DPV83	
+Q08FT4	virus	Q08FT4	DpV83gp068	Q08FT4	8	164	Q08FT4_DPV83	
+Q08FT5	virus	Q08FT5	DpV83gp067	Q08FT5	5	165	Late transcription factor 1	
+Q08FT6	virus	Q08FT6	DpV83gp066	Q08FT6	3	165	Assembly protein G7	
+Q08FT7	virus	Q08FT7	DpV83gp065	Q08FT7	5	165	Protein OPG091	
+Q08FT8	virus	Q08FT8	DpV83gp064	Q08FT8	7	165	DNA-directed RNA polymerase 7 kDa subunit	
+Q08FT9	virus	Q08FT9	DpV83gp063	Q08FT9	5	165	FEN1-like nuclease	
+Q08FU0	virus	Q08FU0	DpV83gp062	Q08FU0	6	165	Glutaredoxin-2	
+Q08FU1	virus	Q08FU1	DpV83gp060	Q08FU1	11	165	Late transcription elongation factor OPG087	
+Q08FU2	virus	Q08FU2	DpV83gp061	Q08FU2	4	165	Entry-fusion complex protein OPG086	
+Q08FU3	virus	Q08FU3	DpV83gp061	Q08FU3	5	164	Metalloendopeptidase	
+Q08FU4	virus	Q08FU4	DpV83gp058	Q08FU4	9	165	RNA helicase NPH-II	
+Q08FU5	virus	Q08FU5	DpV83gp057	Q08FU5	6	165	Q08FU5_DPV83	
+Q08FU6	virus	Q08FU6	DpV83gp057	Q08FU6	2	164	Telomere-binding protein	
+Q08FU7	virus	Q08FU7	DpV83gp055	Q08FU7	2	165	Q08FU7_DPV83	
+Q08FU8	virus	Q08FU8	DpV83gp054	Q08FU8	2	165	Interleukin-1 receptor antagonist protein	
+Q08FU9	virus	Q08FU9	DpV83gp053	Q08FU9	2	165	Protein OPG079	
+Q08FV0	virus	Q08FV0	DpV83gp052	Q08FV0	6	165	IMV membrane protein	
+Q08FV1	virus	Q08FV1	DpV83gp052	Q08FV1	6	164	Q08FV1_DPV83	
+Q08FV2	virus	Q08FV2	DpV83gp050	Q08FV2	0	164	Q08FV2_DPV83	
+Q08FV3	virus	Q08FV3	DpV83gp048	Q08FV3	3	165	Sulfhydryl oxidase	
+Q08FV4	virus	Q08FV4	DpV83gp047	Q08FV4	4	163	DNA polymerase	
+Q08FV5	virus	Q08FV5	DpV83gp046	Q08FV5	1	165	Protein OPG070	
+Q08FV6	virus	Q08FV6	DpV83gp045	Q08FV6	3	164	Protein E6 homolog	
+Q08FV7	virus	Q08FV7	DpV83gp044	Q08FV7	8	165	Protein OPG067	
+Q08FV8	virus	Q08FV8	DpV83gp043	Q08FV8	3	165	DNA-directed RNA polymerase 30 kDa polypeptide	
+Q08FV9	virus	Q08FV9	DpV83gp042	Q08FV9	8	165	Q08FV9_DPV83	
+Q08FW0	virus	Q08FW0	DpV83gp041	Q08FW0	4	165	IEV morphogenesis protein	
+Q08FW1	virus	Q08FW1	PAPL	Q08FW1	4	165	Poly(A) polymerase catalytic subunit	
+Q08FW2	virus	Q08FW2	DpV83gp039	Q08FW2	11	165	Q08FW2_DPV83	
+Q08FW3	virus	Q08FW3	DpV83gp038	Q08FW3	5	165	Protein OPG061	
+Q08FW4	virus	Q08FW4	DpV83gp037	Q08FW4	6	165	Q08FW4_DPV83	
+Q08FW5	virus	Q08FW5	DpV83gp036	Q08FW5	1	165	Q08FW5_DPV83	
+Q08FW6	virus	Q08FW6	DpV83gp035	Q08FW6	7	165	Q08FW6_DPV83	
+Q08FW7	virus	Q08FW7	DpV83gp034	Q08FW7	3	165	Q08FW7_DPV83	
+Q08FW8	virus	Q08FW8	DpV83gp033	Q08FW8	5	164	RhoA signalling inhibitor virus release protein	
+Q08FW9	virus	Q08FW9	DpV83gp032	Q08FW9	6	164	Serine/threonine-protein kinase	
+Q08FX0	virus	Q08FX0	DpV83gp031	Q08FX0	4	165	S-S bond formation pathway protein	
+Q08FX1	virus	Q08FX1	DpV83gp029	Q08FX1	4	165	Q08FX1_DPV83	
+Q08FX2	virus	Q08FX2	DpV83gp028	Q08FX2	3	165	Q08FX2_DPV83	
+Q08FX3	virus	Q08FX3	DpV83gp027	Q08FX3	3	165	Q08FX3_DPV83	
+Q08FX4	virus	Q08FX4	DpV83gp026	Q08FX4	4	164	Ribonucleoside-diphosphate reductase small chain	
+Q08FX5	virus	Q08FX5	DpV83gp025	Q08FX5	4	164	Q08FX5_DPV83	
+Q08FX6	virus	Q08FX6	DpV83gp024	Q08FX6	4	165	Pyrin domain-containing protein	
+Q08FX7	virus	Q08FX7	DpV83gp023	Q08FX7	2	165	Deoxyuridine 5'-triphosphate nucleotidohydrolase	
+Q08FX8	virus	Q08FX8	DPV022	Q08FX8	1	165	Apoptosis regulator DPV022	
+Q08FX9	virus	Q08FX9	DpV83gp021	Q08FX9	14	165	Q08FX9_DPV83	
+Q08FY0	virus	Q08FY0	DpV83gp020	Q08FY0	4	165	Q08FY0_DPV83	
+Q08FY1	virus	Q08FY1	DpV83gp019	Q08FY1	1	165	Q08FY1_DPV83	
+Q08FY2	virus	Q08FY2	DpV83gp018	Q08FY2	4	164	Q08FY2_DPV83	
+Q08FY3	virus	Q08FY3	DpV83gp017	Q08FY3	4	165	Early protein OPG038	
+Q08FY4	virus	Q08FY4	DpV83gp016	Q08FY4	5	165	Q08FY4_DPV83	
+Q08FY5	virus	Q08FY5	DpV83gp015	Q08FY5	7	165	Soluble interferon alpha/beta receptor OPG204	
+Q08FY6	virus	Q08FY6	DpV83gp014	Q08FY6	10	165	Q08FY6_DPV83	
+Q08FY7	virus	Q08FY7	DpV83gp013	Q08FY7	1	165	Q08FY7_DPV83	
+Q08FY8	virus	Q08FY8	DpV83gp013	Q08FY8	4	165	Q08FY8_DPV83	
+Q08FY9	virus	Q08FY9	DpV83gp011	Q08FY9	2	165	Q08FY9_DPV83	
+Q08FZ0	virus	Q08FZ0	DpV83gp010	Q08FZ0	6	165	Q08FZ0_DPV83	
+Q08FZ1	virus	Q08FZ1	DpV83gp009	Q08FZ1	5	165	Alpha amanitin sensitivity protein	
+Q08FZ2	virus	Q08FZ2	DpV83gp008	Q08FZ2	12	164	Q08FZ2_DPV83	
+Q08FZ3	virus	Q08FZ3	DpV83gp007	Q08FZ3	9	165	Fe2OG dioxygenase domain-containing protein	
+Q08FZ4	virus	Q08FZ4	DpV83gp006	Q08FZ4	4	165	Q08FZ4_DPV83	
+Q08I41	worm	Q08I41	CELE_Y40H7A.4	Q08I41	0	7	Methyltransferase FkbM domain-containing protein	
+Q08I43	schizosaccharomyces-pombe	Q08I43	eri1	Q08I43	0	10	3-5 exonuclease eri1	
+Q08J23	human	Q08J23	NSUN2	Q08J23	33	411	RNA cytosine C(5)-methyltransferase NSUN2 (EC 2.1.1.-) (Myc-	

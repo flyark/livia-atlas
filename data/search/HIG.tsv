@@ -1,17 +1,197 @@
-HIGA	escherichia-coli-83333	P67701	higA	P67701	3	24	Antitoxin HigA
-HIGA1	mycobacterium-tuberculosis	P9WJA7	higA1	P9WJA7	1	2	Antitoxin HigA1
-HIGA2	mycobacterium-tuberculosis	O53467	higA2	O53467	2	3	Putative antitoxin HigA2
-HIGA3	mycobacterium-tuberculosis	O53333	higA3	O53333	1	2	Putative antitoxin HigA3
-HIGB	escherichia-coli-83333	P64578	higB	P64578	2	23	mRNA interferase toxin HigB
-HIGB1	mycobacterium-tuberculosis	P9WJA5	higB1	P9WJA5	1	3	Probable endoribonuclease HigB1
-HIGB2	mycobacterium-tuberculosis	O53468	higB2	O53468	1	1	Putative toxin HigB2
-HIGD1A	mus-musculus	Q9JLR9	Higd1a	Q9JLR9	0	6	HIG1 domain family member 1A, mitochondrial
-HIGD1A	rattus-norvegicus	Q8VH49	Higd1a	Q8VH49	0	6	HIG1 domain family member 1A, mitochondrial
-HIGD1B	mus-musculus	Q99JY6	Higd1b	Q99JY6	0	4	HIG1 domain family member 1B
-HIGD1B	rattus-norvegicus	A0ABK0LKU4	Higd1b	A0ABK0LKU4	0	8	HIG1 hypoxia inducible domain family, member 1B
-HIGD1C	mus-musculus	Q76I25	Higd1c	Q76I25	0	2	HIG1 domain family member 1C
-HIGD1C	rattus-norvegicus	M0RBN7	Higd1c	M0RBN7	0	3	HIG1 hypoxia inducible domain family, member 1C
-HIGD2A	mus-musculus	Q9CQJ1	Higd2a	Q9CQJ1	0	1	HIG1 domain family member 2A
-HIGD2A	rattus-norvegicus	B2GV65	Higd2a	B2GV65	1	3	HIG1 hypoxia inducible domain family, member 2A
-HIGD2AL1	rattus-norvegicus	D3ZU87	Higd2al1	D3ZU87	1	3	HIG1 hypoxia inducible domain family, member 2A-like 1
-HIGLE	arabidopsis-thaliana	Q682H4	HIGLE	Q682H4	2	32	Structure-specific endonuclease subunit SLX1 homolog
+HIG	fly	FBgn0010114	hig	Q09101	40	303	Locomotion-related protein Hikaru genki	
+HIG-ANCHORING	fly	FBgn0032797	Hasp	B7YZX0	2	7	Hig-anchoring scaffold protein, isoform G (Hig-anchoring sca	w
+HIG1	human	A8MV81	HIGD1C	A8MV81	26	66	HIG1 domain family member 1C	w
+HIG1	human	Q4VC39	HIGD2B	Q4VC39	30	47	HIG1 domain family member 2B	w
+HIG1	human	Q9BW72	HIGD2A	Q9BW72	25	71	HIG1 domain family member 2A, mitochondrial (RCF1 homolog B)	w
+HIG1	human	Q9P298	HIGD1B	Q9P298	21	84	HIG1 domain family member 1B (Protein CLST 11240)	w
+HIG1	human	Q9Y241	HIGD1A	Q9Y241	49	172		
+HIG1	worm	O01257	CELE_T20D3.6	O01257	0	8	HIG1 domain-containing protein	w
+HIG1	worm	Q21524	CELE_M05D6.5	Q21524	0	4	HIG1 domain-containing protein	w
+HIG1	worm	Q8I4C6	CELE_Y54G9A.9	Q8I4C6	0	7	HIG1 domain-containing protein	w
+HIG1	zebrafish	Q566Y4	higd2a	Q566Y4	1	15	HIG1 domain family member 2A, mitochondrial	w
+HIG1	zebrafish	Q7ZZZ4	higd1a	Q7ZZZ4	0	17	HIG1 domain family member 1A, mitochondrial	w
+HIG1A_HUMAN	human	Q9Y241	HIGD1A	Q9Y241	49	172		
+HIG1B_HUMAN	human	Q9P298	HIGD1B	Q9P298	21	84		
+HIG1C_HUMAN	human	A8MV81	HIGD1C	A8MV81	26	66		
+HIG2	human	Q9Y5L2	HILPDA	Q9Y5L2	15	118		
+HIG2A_HUMAN	human	Q9BW72	HIGD2A	Q9BW72	25	71		
+HIG2B_HUMAN	human	Q4VC39	HIGD2B	Q4VC39	30	47		
+HIGA	escherichia-coli-83333	P67701	higA	P67701	3	24	Antitoxin HigA	
+HIGA1	mycobacterium-tuberculosis	P9WJA7	higA1	P9WJA7	1	2	Antitoxin HigA1	
+HIGA2	mycobacterium-tuberculosis	O53467	higA2	O53467	2	3	Putative antitoxin HigA2	
+HIGA3	mycobacterium-tuberculosis	O53333	higA3	O53333	1	2	Putative antitoxin HigA3	
+HIGB	escherichia-coli-83333	P64578	higB	P64578	2	23	mRNA interferase toxin HigB	
+HIGB1	mycobacterium-tuberculosis	P9WJA5	higB1	P9WJA5	1	3	Probable endoribonuclease HigB1	
+HIGB2	mycobacterium-tuberculosis	O53468	higB2	O53468	1	1	Putative toxin HigB2	
+HIGD1A	human	Q9Y241	HIGD1A	Q9Y241	49	172	HIG1 domain family member 1A, mitochondrial (Hypoxia-inducib	
+HIGD1A	mus-musculus	Q9JLR9	Higd1a	Q9JLR9	0	6	HIG1 domain family member 1A, mitochondrial	
+HIGD1A	rattus-norvegicus	Q8VH49	Higd1a	Q8VH49	0	6	HIG1 domain family member 1A, mitochondrial	
+HIGD1A	zebrafish	Q7ZZZ4	higd1a	Q7ZZZ4	0	17	HIG1 domain family member 1A, mitochondrial	
+HIGD1B	human	Q9P298	HIGD1B	Q9P298	21	84	HIG1 domain family member 1B (Protein CLST 11240)	
+HIGD1B	mus-musculus	Q99JY6	Higd1b	Q99JY6	0	4	HIG1 domain family member 1B	
+HIGD1B	rattus-norvegicus	A0ABK0LKU4	Higd1b	A0ABK0LKU4	0	8	HIG1 hypoxia inducible domain family, member 1B	
+HIGD1C	human	A8MV81	HIGD1C	A8MV81	26	66	HIG1 domain family member 1C	
+HIGD1C	mus-musculus	Q76I25	Higd1c	Q76I25	0	2	HIG1 domain family member 1C	
+HIGD1C	rattus-norvegicus	M0RBN7	Higd1c	M0RBN7	0	3	HIG1 hypoxia inducible domain family, member 1C	
+HIGD2A	human	Q9BW72	HIGD2A	Q9BW72	25	71	HIG1 domain family member 2A, mitochondrial (RCF1 homolog B)	
+HIGD2A	mus-musculus	Q9CQJ1	Higd2a	Q9CQJ1	0	1	HIG1 domain family member 2A	
+HIGD2A	rattus-norvegicus	B2GV65	Higd2a	B2GV65	1	3	HIG1 hypoxia inducible domain family, member 2A	
+HIGD2A	zebrafish	Q566Y4	higd2a	Q566Y4	1	15	HIG1 domain family member 2A, mitochondrial	
+HIGD2AL1	rattus-norvegicus	D3ZU87	Higd2al1	D3ZU87	1	3	HIG1 hypoxia inducible domain family, member 2A-like 1	
+HIGD2B	human	Q4VC39	HIGD2B	Q4VC39	30	47	HIG1 domain family member 2B	
+HIGD2BP	human	Q4VC39	HIGD2B	Q4VC39	30	47		
+HIGH	fly	FBgn0004362	HmgD	Q05783	67	519	High mobility group protein D (HMG-D)	w
+HIGH	fly	FBgn0010228	HmgZ	Q06943	47	403	High mobility group protein Z (HMG-Z)	w
+HIGH	fly	FBgn0026582	Hmg-2	Q9W2K8	72	446	High mobility group protein 2 (LD46483p)	w
+HIGH	fly	FBgn0038233	HtrA2	Q9VFJ3	0	20	Serine protease HTRA2, mitochondrial (EC 3.4.21.108) (High t	w
+HIGH	human	B2RPK0	HMGB1P1	B2RPK0	7	210	High mobility group protein B1-like 1 (High mobility group p	w
+HIGH	human	F5H6H0	HMGA2	F5H6H0	2	81	High mobility group AT-hook 2	w
+HIGH	human	O00479	HMGN4	O00479	47	761	High mobility group nucleosome-binding domain-containing pro	w
+HIGH	human	O15347	HMGB3	O15347	35	454	High mobility group protein B3 (High mobility group protein 	w
+HIGH	human	O15405	TOX3	O15405	72	394	TOX high mobility group box family member 3 (CAG trinucleoti	w
+HIGH	human	O15431	SLC31A1	O15431	14	211	High affinity copper uptake protein 1 (Copper transporter 1)	w
+HIGH	human	O43464	HTRA2	O43464	15	314	Serine protease HTRA2, mitochondrial (EC 3.4.21.108) (High t	w
+HIGH	human	O60381	HBP1	O60381	25	133	HMG box-containing protein 1 (HMG box transcription factor 1	w
+HIGH	human	O60658	PDE8A	O60658	7	60	High affinity cAMP-specific and IBMX-insensitive 3',5'-cycli	w
+HIGH	human	O76083	PDE9A	O76083	19	109	High affinity cGMP-specific 3',5'-cyclic phosphodiesterase 9	w
+HIGH	human	O94842	TOX4	O94842	40	201	TOX high mobility group box family member 4	w
+HIGH	human	O94900	TOX	O94900	97	450	Thymocyte selection-associated high mobility group box prote	w
+HIGH	human	O95263	PDE8B	O95263	8	71	High affinity cAMP-specific and IBMX-insensitive 3',5'-cycli	w
+HIGH	human	O95760	IL33	O95760	44	297	Interleukin-33 (IL-33) (Interleukin-1 family member 11) (IL-	w
+HIGH	human	P01042	KNG1	P01042	40	473	Kininogen-1 (Alpha-2-thiol proteinase inhibitor) (Fitzgerald	w
+HIGH	human	P04629	NTRK1	P04629	273	3619	High affinity nerve growth factor receptor (EC 2.7.10.1) (Ne	w
+HIGH	human	P05114	HMGN1	P05114	96	941	Non-histone chromosomal protein HMG-14 (High mobility group 	w
+HIGH	human	P05204	HMGN2	P05204	53	813	Non-histone chromosomal protein HMG-17 (High mobility group 	w
+HIGH	human	P09429	HMGB1	P09429	46	948	High mobility group protein B1 (High mobility group protein 	w
+HIGH	human	P0C5Y4	KRTAP1-4	P0C5Y4	1	16	Keratin-associated protein 1-4 (High sulfur keratin-associat	w
+HIGH	human	P0C7H8	KRTAP2-3	P0C7H8	3	106	Keratin-associated protein 2-3 (High sulfur keratin-associat	w
+HIGH	human	P12314	FCGR1A	P12314	81	546	High affinity immunoglobulin gamma Fc receptor I (IgG Fc rec	w
+HIGH	human	P12319	FCER1A	P12319	93	375	High affinity immunoglobulin epsilon receptor subunit alpha 	w
+HIGH	human	P13866	SLC5A1	P13866	8	89	Sodium/glucose cotransporter 1 (Na(+)/glucose cotransporter 	w
+HIGH	human	P14784	IL2RB	P14784	85	415	Interleukin-2 receptor subunit beta (IL-2 receptor subunit b	w
+HIGH	human	P17096	HMGA1	P17096	96	769	High mobility group protein HMG-I/HMG-Y (HMG-I(Y)) (High mob	w
+HIGH	human	P24588	AKAP5	P24588	28	151	A-kinase anchor protein 5 (AKAP-5) (A-kinase anchor protein 	w
+HIGH	human	P25024	CXCR1	P25024	54	208	C-X-C chemokine receptor type 1 (CXC-R1) (CXCR-1) (CDw128a) 	w
+HIGH	human	P25025	CXCR2	P25025	57	364	C-X-C chemokine receptor type 2 (CXC-R2) (CXCR-2) (CDw128b) 	w
+HIGH	human	P26583	HMGB2	P26583	30	724	High mobility group protein B2 (High mobility group protein 	w
+HIGH	human	P30273	FCER1G	P30273	107	637	High affinity immunoglobulin epsilon receptor subunit gamma 	w
+HIGH	human	P30825	SLC7A1	P30825	12	260	High affinity cationic amino acid transporter 1 (CAT-1) (CAT	w
+HIGH	human	P51858	HDGF	P51858	58	614	Hepatoma-derived growth factor (HDGF) (High mobility group p	w
+HIGH	human	P52926	HMGA2	P52926	79	443	High mobility group protein HMGI-C (High mobility group AT-h	w
+HIGH	human	P55769	SNU13	P55769	52	696	NHP2-like protein 1 (High mobility group-like nuclear protei	w
+HIGH	human	P59990	KRTAP12-1	P59990	1	72	Keratin-associated protein 12-1 (High sulfur keratin-associa	w
+HIGH	human	P59991	KRTAP12-2	P59991	1	141	Keratin-associated protein 12-2 (High sulfur keratin-associa	w
+HIGH	human	P60014	KRTAP10-10	P60014	3	42	Keratin-associated protein 10-10 (High sulfur keratin-associ	w
+HIGH	human	P60328	KRTAP12-3	P60328	4	150	Keratin-associated protein 12-3 (High sulfur keratin-associa	w
+HIGH	human	P60329	KRTAP12-4	P60329	2	54	Keratin-associated protein 12-4 (High sulfur keratin-associa	w
+HIGH	human	P60331	KRTAP10-1	P60331	8	154	Keratin-associated protein 10-1 (High sulfur keratin-associa	w
+HIGH	human	P60368	KRTAP10-2	P60368	0	22	Keratin-associated protein 10-2 (High sulfur keratin-associa	w
+HIGH	human	P60369	KRTAP10-3	P60369	21	298	Keratin-associated protein 10-3 (High sulfur keratin-associa	w
+HIGH	human	P60370	KRTAP10-5	P60370	1	72	Keratin-associated protein 10-5 (High sulfur keratin-associa	w
+HIGH	human	P60371	KRTAP10-6	P60371	2	89	Keratin-associated protein 10-6 (High sulfur keratin-associa	w
+HIGH	human	P60372	KRTAP10-4	P60372	1	24	Keratin-associated protein 10-4 (High sulfur keratin-associa	w
+HIGH	human	P60409	KRTAP10-7	P60409	16	286	Keratin-associated protein 10-7 (High sulfur keratin-associa	w
+HIGH	human	P60410	KRTAP10-8	P60410	15	383	Keratin-associated protein 10-8 (High sulfur keratin-associa	w
+HIGH	human	P60411	KRTAP10-9	P60411	16	251	Keratin-associated protein 10-9 (High sulfur keratin-associa	w
+HIGH	human	P60412	KRTAP10-11	P60412	3	64	Keratin-associated protein 10-11 (High sulfur keratin-associ	w
+HIGH	human	P60413	KRTAP10-12	P60413	0	27	Keratin-associated protein 10-12 (High sulfur keratin-associ	w
+HIGH	human	P82970	HMGN5	P82970	99	553	High mobility group nucleosome-binding domain-containing pro	w
+HIGH	human	Q00341	HDLBP	Q00341	46	793	Vigilin (High density lipoprotein-binding protein) (HDL-bind	w
+HIGH	human	Q01362	MS4A2	Q01362	46	212	High affinity immunoglobulin epsilon receptor subunit beta (	w
+HIGH	human	Q07627	KRTAP1-1	Q07627	12	213	Keratin-associated protein 1-1 (High sulfur keratin-associat	w
+HIGH	human	Q13946	PDE7A	Q13946	11	67	High affinity 3',5'-cyclic-AMP phosphodiesterase 7A (EC 3.1.	w
+HIGH	human	Q14515	SPARCL1	Q14515	12	76	SPARC-like protein 1 (High endothelial venule protein) (Hevi	w
+HIGH	human	Q15651	HMGN3	Q15651	8	56	High mobility group nucleosome-binding domain-containing pro	w
+HIGH	human	Q6P1N9	TATDN1	Q6P1N9	12	120	Deoxyribonuclease TATDN1 (EC 3.1.11.-) (EC 3.1.21.-) (DNA-(a	w
+HIGH	human	Q86SG4	HMGN2P46	Q86SG4	1	5	Putative Dresden prostate carcinoma protein 2 (D-PCa-2) (Hig	w
+HIGH	human	Q8IUB9	KRTAP19-1	Q8IUB9	2	60	Keratin-associated protein 19-1 (High tyrosine-glycine kerat	w
+HIGH	human	Q8IUC0	KRTAP13-1	Q8IUC0	3	64	Keratin-associated protein 13-1 (High sulfur keratin-associa	w
+HIGH	human	Q8IUC1	KRTAP11-1	Q8IUC1	8	147	Keratin-associated protein 11-1 (High sulfur keratin-associa	w
+HIGH	human	Q8IUC2	KRTAP8-1	Q8IUC2	4	107	Keratin-associated protein 8-1 (High glycine-tyrosine kerati	w
+HIGH	human	Q8IUC3	KRTAP7-1	Q8IUC3	0	53	Keratin-associated protein 7-1 (High tyrosine-glycine kerati	w
+HIGH	human	Q8IV16	GPIHBP1	Q8IV16	31	244	Glycosylphosphatidylinositol-anchored high density lipoprote	w
+HIGH	human	Q8NCG5	CHST4	Q8NCG5	7	60	Carbohydrate sulfotransferase 4 (EC 2.8.2.-) (Galactose/N-ac	w
+HIGH	human	Q8WW32	HMGB4	Q8WW32	17	387	High mobility group protein B4	w
+HIGH	human	Q8WWV6	FCAMR	Q8WWV6	7	29	High affinity immunoglobulin alpha and immunoglobulin mu Fc 	w
+HIGH	human	Q92637	FCGR1BP	Q92637	35	173	Putative high affinity immunoglobulin gamma Fc receptor IB (	w
+HIGH	human	Q96NM4	TOX2	Q96NM4	10	59	TOX high mobility group box family member 2 (Granulosa cell 	w
+HIGH	human	Q96QR1	SCGB3A1	Q96QR1	4	94	Secretoglobin family 3A member 1 (Cytokine HIN-1) (High in n	w
+HIGH	human	Q9BYR6	KRTAP3-3	Q9BYR6	5	95	Keratin-associated protein 3-3 (High sulfur keratin-associat	w
+HIGH	human	Q9BYR7	KRTAP3-2	Q9BYR7	5	93	Keratin-associated protein 3-2 (High sulfur keratin-associat	w
+HIGH	human	Q9BYR8	KRTAP3-1	Q9BYR8	6	103	Keratin-associated protein 3-1 (High sulfur keratin-associat	w
+HIGH	human	Q9BYR9	KRTAP2-4	Q9BYR9	1	84	Keratin-associated protein 2-4 (High sulfur keratin-associat	w
+HIGH	human	Q9BYS1	KRTAP1-5	Q9BYS1	1	48	Keratin-associated protein 1-5 (High sulfur keratin-associat	w
+HIGH	human	Q9BYT5	KRTAP2-2	Q9BYT5	0	22	Keratin-associated protein 2-2 (High sulfur keratin-associat	w
+HIGH	human	Q9BYU5	KRTAP2-1	Q9BYU5	1	7	Keratin-associated protein 2-1 (High sulfur keratin-associat	w
+HIGH	human	Q9C086	INO80B	Q9C086	44	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	w
+HIGH	human	Q9GZV3	SLC5A7	Q9GZV3	2	62	High affinity choline transporter 1 (hCHT1) (Hemicholinium-3	w
+HIGH	human	Q9NP66	HMG20A	Q9NP66	104	602	High mobility group protein 20A (HMG box-containing protein 	w
+HIGH	human	Q9NWX6	THG1L	Q9NWX6	2	66	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	w
+HIGH	human	Q9P219	CCDC88C	Q9P219	21	98	Protein Daple (Coiled-coil domain-containing protein 88C) (D	w
+HIGH	human	Q9UGU5	HMGXB4	Q9UGU5	35	157	HMG domain-containing protein 4 (HMG box-containing protein 	w
+HIGH	worm	G5ED47	hizr-1	G5ED47	8	56	High zinc activated nuclear receptor protein	w
+HIGH	worm	G5EDQ2	hmg-12	G5EDQ2	1	11	High mobility group protein hmg-12	w
+HIGH	worm	O17724	him-5	O17724	0	1	High Incidence of Males (Increased X chromosome loss)	w
+HIGH	worm	Q09390	hmg-1.2	Q09390	4	41	High mobility group protein 1.2	w
+HIGH	worm	Q22360	him-17	Q22360	0	2	High Incidence of Males (Increased X chromosome loss)	w
+HIGH	yeast	P32485	HOG1	P32485	15	168	Mitogen-activated protein kinase HOG1 (MAP kinase HOG1) (EC 	w
+HIGH	yeast	P32807	YKU70	P32807	7	59	ATP-dependent DNA helicase II subunit 1 (EC 3.6.4.12) (ATP-d	w
+HIGH	yeast	P40073	SHO1	P40073	11	129	High osmolarity signaling protein SHO1	w
+HIGH	yeast	Q03973	HMO1	Q03973	3	187	High mobility group protein 1	w
+HIGH	yeast	Q04172	SHE9	Q04172	0	31	Sensitive to high expression protein 9, mitochondrial	w
+HIGH	yeast	Q12235	YCT1	Q12235	0	4	High affinity cysteine transporter	w
+HIGH	yeast	Q12300	RGT2	Q12300	2	23	High glucose sensor RGT2	w
+HIGH	yeast	Q9URQ5	HTL1	Q9URQ5	1	38	High temperature lethal protein 1	w
+HIGH	zebrafish	A0A2R8Q9T1	tox	A0A2R8Q9T1	5	68	Thymocyte selection-associated high mobility group box	w
+HIGH	zebrafish	A0A8M1N808	hmgb2a	A0A8M1N808	1	76	High mobility group protein B2	w
+HIGH	zebrafish	A0A8M6Z2B2	slc7a1b	A0A8M6Z2B2	0	22	High affinity cationic amino acid transporter 1b	w
+HIGH	zebrafish	A3KNQ1	hmg20a	A3KNQ1	8	78	High mobility group protein 20A	w
+HIGH	zebrafish	E7EZ19	ntsr1	E7EZ19	13	33	Neurotensin receptor 1 (high affinity)	w
+HIGH	zebrafish	E7FAU5	tox3	E7FAU5	2	68	TOX high mobility group box family member 3	w
+HIGH	zebrafish	E7FFT5	hmgn6	E7FFT5	8	472	High mobility group nucleosome-binding domain 6	w
+HIGH	zebrafish	E7FGN5	si:ch211-161c3.6	E7FGN5	0	13	High mobility group AT-hook 2b	w
+HIGH	zebrafish	E9QH74	hmgn3	E9QH74	0	5	High mobility group nucleosome-binding domain-containing pro	w
+HIGH	zebrafish	E9QI01	hmgn7	E9QI01	17	465	High mobility group nucleosomal binding domain 7 isoform X1	w
+HIGH	zebrafish	F1QGP8	hmgb3a	F1QGP8	0	75	High mobility group box 3a	w
+HIGH	zebrafish	F1QXS5	tox4a	F1QXS5	2	68	TOX high mobility group box family member 4-A	w
+HIGH	zebrafish	Q08BD1	hmga1b	Q08BD1	0	12	High mobility group AT-hook 1b	w
+HIGH	zebrafish	Q3B732	hmgn2	Q3B732	15	466	High mobility group nucleosomal-binding domain 2	w
+HIGH	zebrafish	Q66IB6	hmgb2b	Q66IB6	1	75	High mobility group protein B2	w
+HIGH	zebrafish	Q6NV11	hmga1a	Q6NV11	0	13	High mobility group protein HMG-I/HMG-Y	w
+HIGH	zebrafish	Q6NX86	hmgb1a	Q6NX86	3	87	High mobility group box 1a	w
+HIGH	zebrafish	Q6NXC9	tox2	Q6NXC9	6	68	TOX high mobility group box family member 2	w
+HIGH	zebrafish	Q6P038	hmga2	Q6P038	0	15	High mobility group AT-hook 2	w
+HIGH	zebrafish	X1WFI9	hmgb1b	X1WFI9	1	76	High mobility group box 1b	w
+HIGH-AFFINITY	fly	FBgn0038641	ChT	Q9VE46	1	3	High-affinity choline transporter 1	w
+HIGH-AFFINITY	human	O76082	SLC22A5	O76082	1	79	Organic cation/carnitine transporter 2 (High-affinity sodium	w
+HIGH-AFFINITY	human	P30989	NTSR1	P30989	35	200	Neurotensin receptor type 1 (NT-R-1) (NTR1) (High-affinity l	w
+HIGH-AFFINITY	human	Q8WWT9	SLC13A3	Q8WWT9	4	32	Na(+)/dicarboxylate cotransporter 3 (NaDC-3) (hNaDC3) (Na(+)	w
+HIGH-AFFINITY	worm	Q23537	CELE_ZK593.3	Q23537	0	1	High-affinity choline transporter 1-like	w
+HIGH-AFFINITY	yeast	P12685	TRK1	P12685	0	11	High-affinity potassium transport protein	w
+HIGH-AFFINITY	yeast	P23585	HXT2	P23585	0	12	High-affinity glucose transporter HXT2	w
+HIGH-AFFINITY	yeast	P39003	HXT6	P39003	1	18	High-affinity hexose transporter HXT6	w
+HIGH-AFFINITY	yeast	P39004	HXT7	P39004	0	37	High-affinity hexose transporter HXT7	w
+HIGH-AFFINITY	yeast	P48813	GNP1	P48813	0	26	High-affinity glutamine permease	w
+HIGH-AFFINITY	yeast	P50276	MUP1	P50276	0	55	High-affinity methionine permease	w
+HIGH-AFFINITY	yeast	P53322	TNA1	P53322	0	5	High-affinity nicotinic acid transporter	w
+HIGH-GLUCOSE-REGULATED	human	Q9Y5A9	YTHDF2	Q9Y5A9	123	407	YTH domain-containing family protein 2 (DF2) (CLL-associated	w
+HIGH-MOBILITY	zebrafish	Q503Z1	hmg20b	Q503Z1	11	96	High-mobility group 20B	w
+HIGH-OSMOLARITY-INDUCED	yeast	Q03213	HOT1	Q03213	7	38	High-osmolarity-induced transcription protein 1	w
+HIGH-RISK	human	O43166	SIPA1L1	O43166	102	376	Signal-induced proliferation-associated 1-like protein 1 (SI	w
+HIGH-SULFUR	human	O75690	KRTAP5-8	O75690	0	14	Keratin-associated protein 5-8 (Keratin, ultra high-sulfur m	w
+HIGH-SULFUR	human	P26371	KRTAP5-9	P26371	4	203	Keratin-associated protein 5-9 (Keratin, cuticle, ultrahigh 	w
+HIGH-TEMPERATURE	human	P83105	HTRA4	P83105	11	262	Serine protease HTRA4 (EC 3.4.21.-) (High-temperature requir	w
+HIGH-TEMPERATURE	human	P83110	HTRA3	P83110	9	86	Serine protease HTRA3 (EC 3.4.21.-) (High-temperature requir	w
+HIGH-TEMPERATURE	human	Q92743	HTRA1	Q92743	9	239	Serine protease HTRA1 (EC 3.4.21.-) (High-temperature requir	w
+HIGHLIGHTED	human	Q8N365	CIART	Q8N365	9	28	Circadian-associated transcriptional repressor (ChIP-derived	w
+HIGHLY	human	A1L190	SYCE3	A1L190	16	137	Synaptonemal complex central element protein 3 (Testis highl	w
+HIGHLY	human	O14777	NDC80	O14777	136	443	Kinetochore protein NDC80 homolog (Highly expressed in cance	w
+HIGHLY	human	P40429	RPL13A	P40429	97	924	Large ribosomal subunit protein uL13 (23 kDa highly basic pr	w
+HIGHLY	human	Q6ZVS7	CFAP144P1	Q6ZVS7	3	14	Protein CFAP144P1 (Testis highly expressed protein 6)	w
+HIGHLY	human	Q7Z353	HDX	Q7Z353	4	35	Highly divergent homeobox	w
+HIGHLY	human	Q9UBU6	FAM8A1	Q9UBU6	14	104	Protein FAM8A1 (Autosomal highly conserved protein)	w
+HIGHLY	zebrafish	E7F5L7	hdx	E7F5L7	0	6	Highly divergent homeobox	w
+HIGHROAD	fly	FBgn0035154	hiro	Q9W0N8	5	283	GH21114p (Highroad (EC 3.4.16.-))	w
+HIGHWIRE	fly	FBgn0030600	hiw	Q9NB71	0	0	E3 ubiquitin-protein ligase highwire (EC 2.3.2.33) (Protein 	w
+HIGLE	arabidopsis-thaliana	Q682H4	HIGLE	Q682H4	2	32	Structure-specific endonuclease subunit SLX1 homolog	
+HIGR	human	Q15223	NECTIN1	Q15223	31	187	Nectin-1 (Herpes virus entry mediator C) (Herpesvirus entry 	w

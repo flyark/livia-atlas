@@ -1,20 +1,54 @@
-RHB1	candida-albicans-237561	Q5ANA9	RHB1	Q5ANA9	1	24	GTPase
-RHB1	schizosaccharomyces-pombe	O94363	rhb1	O94363	0	39	GTP-binding protein rhb1
-RHBDD1	mus-musculus	Q8BHC7	Rhbdd1	Q8BHC7	1	3	Rhomboid-related protein 4
-RHBDD1	rattus-norvegicus	Q4V8F3	Rhbdd1	Q4V8F3	1	3	Rhomboid-related protein 4
-RHBDD2	mus-musculus	Q8VEK2	Rhbdd2	Q8VEK2	0	2	Rhomboid domain-containing protein 2
-RHBDD2	rattus-norvegicus	D3ZQG3	Rhbdd2	D3ZQG3	0	3	Rhomboid domain-containing protein 2
-RHBDD3	mus-musculus	Q8BP97	Rhbdd3	Q8BP97	0	4	Rhomboid domain-containing protein 3
-RHBDD3	rattus-norvegicus	Q642B3	Rhbdd3	Q642B3	0	3	Rhomboid domain-containing protein 3
-RHBDF1	mus-musculus	Q6PIX5	Rhbdf1	Q6PIX5	1	4	Inactive rhomboid protein 1
-RHBDF1	rattus-norvegicus	Q499S9	Rhbdf1	Q499S9	2	6	Inactive rhomboid protein 1
-RHBDF2	mus-musculus	Q80WQ6	Rhbdf2	Q80WQ6	7	18	Inactive rhomboid protein 2
-RHBDF2	rattus-norvegicus	F1LWZ3	Rhbdf2	F1LWZ3	8	17	Inactive rhomboid protein
-RHBDL1	mus-musculus	Q8VC82	Rhbdl1	Q8VC82	0	1	Rhomboid-related protein 1
-RHBDL1	rattus-norvegicus	O88779	Rhbdl1	O88779	0	2	Rhomboid-related protein 1
-RHBDL2	mus-musculus	A2AGA4	Rhbdl2	A2AGA4	0	8	Rhomboid-related protein 2
-RHBDL2	rattus-norvegicus	D3ZA62	Rhbdl2	D3ZA62	0	8	Rhomboid-related protein 2
-RHBDL3	mus-musculus	P58873	Rhbdl3	P58873	2	12	Rhomboid-related protein 3
-RHBDL3	rattus-norvegicus	D4AAW6	Rhbdl3	D4AAW6	2	22	Rhomboid-related protein 3
-RHBG	mus-musculus	Q8BUX5	Rhbg	Q8BUX5	0	2	Ammonium transporter Rh type B
-RHBG	rattus-norvegicus	Q68FT6	Rhbg	Q68FT6	1	4	Ammonium transporter Rh type B
+RHB1	candida-albicans-237561	Q5ANA9	RHB1	Q5ANA9	1	24	GTPase	
+RHB1	schizosaccharomyces-pombe	O94363	rhb1	O94363	0	39	GTP-binding protein rhb1	
+RHB1	yeast	P25378	RHB1	P25378	0	43	GTP-binding protein RHB1	
+RHBD2_HUMAN	human	Q6NTF9	RHBDD2	Q6NTF9	16	140		
+RHBD3_HUMAN	human	Q9Y3P4	RHBDD3	Q9Y3P4	9	77		
+RHBDD1	human	Q8TEB9	RHBDD1	Q8TEB9	95	363	Rhomboid-related protein 4 (RRP4) (EC 3.4.21.105) (Rhomboid 	
+RHBDD1	mus-musculus	Q8BHC7	Rhbdd1	Q8BHC7	1	3	Rhomboid-related protein 4	
+RHBDD1	rattus-norvegicus	Q4V8F3	Rhbdd1	Q4V8F3	1	3	Rhomboid-related protein 4	
+RHBDD2	human	Q6NTF9	RHBDD2	Q6NTF9	16	140	Rhomboid domain-containing protein 2	
+RHBDD2	mus-musculus	Q8VEK2	Rhbdd2	Q8VEK2	0	2	Rhomboid domain-containing protein 2	
+RHBDD2	rattus-norvegicus	D3ZQG3	Rhbdd2	D3ZQG3	0	3	Rhomboid domain-containing protein 2	
+RHBDD2	zebrafish	E9QI41	rhbdd2	E9QI41	0	19	Rhomboid domain-containing 2	
+RHBDD3	human	Q9Y3P4	RHBDD3	Q9Y3P4	9	77	Rhomboid domain-containing protein 3	
+RHBDD3	mus-musculus	Q8BP97	Rhbdd3	Q8BP97	0	4	Rhomboid domain-containing protein 3	
+RHBDD3	rattus-norvegicus	Q642B3	Rhbdd3	Q642B3	0	3	Rhomboid domain-containing protein 3	
+RHBDD3	zebrafish	A5PMS4	rhbdd3	A5PMS4	0	18	Rhomboid domain-containing 3	
+RHBDF1	human	Q96CC6	RHBDF1	Q96CC6	9	52	Inactive rhomboid protein 1 (iRhom1) (Epidermal growth facto	
+RHBDF1	mus-musculus	Q6PIX5	Rhbdf1	Q6PIX5	1	4	Inactive rhomboid protein 1	
+RHBDF1	rattus-norvegicus	Q499S9	Rhbdf1	Q499S9	2	6	Inactive rhomboid protein 1	
+RHBDF1	zebrafish	Q6GMF8	rhbdf1	Q6GMF8	2	12	Inactive rhomboid protein 1	
+RHBDF1B	zebrafish	E7F9C6	rhbdf1b	E7F9C6	2	12	Inactive rhomboid protein	
+RHBDF2	human	Q6PJF5	RHBDF2	Q6PJF5	38	198	Inactive rhomboid protein 2 (iRhom2) (Rhomboid 5 homolog 2) 	
+RHBDF2	mus-musculus	Q80WQ6	Rhbdf2	Q80WQ6	7	18	Inactive rhomboid protein 2	
+RHBDF2	rattus-norvegicus	F1LWZ3	Rhbdf2	F1LWZ3	8	17	Inactive rhomboid protein	
+RHBDL	human	O75783	RHBDL1	O75783	8	57		
+RHBDL1	human	O75783	RHBDL1	O75783	8	57	Rhomboid-related protein 1 (RRP) (EC 3.4.21.105) (Rhomboid-l	
+RHBDL1	mus-musculus	Q8VC82	Rhbdl1	Q8VC82	0	1	Rhomboid-related protein 1	
+RHBDL1	rattus-norvegicus	O88779	Rhbdl1	O88779	0	2	Rhomboid-related protein 1	
+RHBDL1	zebrafish	E7FCU6	rhbdl1	E7FCU6	0	9	Rhomboid-related protein 1	
+RHBDL2	human	Q9NX52	RHBDL2	Q9NX52	7	43	Rhomboid-related protein 2 (RRP2) (EC 3.4.21.105) (Rhomboid-	
+RHBDL2	mus-musculus	A2AGA4	Rhbdl2	A2AGA4	0	8	Rhomboid-related protein 2	
+RHBDL2	rattus-norvegicus	D3ZA62	Rhbdl2	D3ZA62	0	8	Rhomboid-related protein 2	
+RHBDL2	zebrafish	F1QAX9	rhbdl2	F1QAX9	0	11	Rhomboid-related protein 2	
+RHBDL3	human	P58872	RHBDL3	P58872	14	135	Rhomboid-related protein 3 (EC 3.4.21.105) (Ventrhoid transm	
+RHBDL3	mus-musculus	P58873	Rhbdl3	P58873	2	12	Rhomboid-related protein 3	
+RHBDL3	rattus-norvegicus	D4AAW6	Rhbdl3	D4AAW6	2	22	Rhomboid-related protein 3	
+RHBDL3	zebrafish	Q2A943	rhbdl3	Q2A943	5	71	Rhomboid-related protein 3	
+RHBDL4	human	P58872	RHBDL3	P58872	14	135		
+RHBDL4	human	Q8TEB9	RHBDD1	Q8TEB9	95	363		
+RHBDL5	human	Q6PJF5	RHBDF2	Q6PJF5	38	198		
+RHBDL6	human	Q6PJF5	RHBDF2	Q6PJF5	38	198		
+RHBDL7	human	Q6NTF9	RHBDD2	Q6NTF9	16	140		
+RHBG	human	Q9H310	RHBG	Q9H310	5	35	Ammonium transporter Rh type B (Rhesus blood group family ty	
+RHBG	mus-musculus	Q8BUX5	Rhbg	Q8BUX5	0	2	Ammonium transporter Rh type B	
+RHBG	rattus-norvegicus	Q68FT6	Rhbg	Q68FT6	1	4	Ammonium transporter Rh type B	
+RHBG	zebrafish	Q7T070	rhbg	Q7T070	1	3	Ammonium transporter Rh type B	
+RHBG_HUMAN	human	Q9H310	RHBG	Q9H310	5	35		
+RHBL1_HUMAN	human	O75783	RHBDL1	O75783	8	57		
+RHBL2_HUMAN	human	Q9NX52	RHBDL2	Q9NX52	7	43		
+RHBL3_HUMAN	human	P58872	RHBDL3	P58872	14	135		
+RHBL4_HUMAN	human	Q8TEB9	RHBDD1	Q8TEB9	95	363		
+RHBT1_HUMAN	human	O94844	RHOBTB1	O94844	42	376		
+RHBT2_HUMAN	human	Q9BYZ6	RHOBTB2	Q9BYZ6	54	380		
+RHBT3_HUMAN	human	O94955	RHOBTB3	O94955	29	303		

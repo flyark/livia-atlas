@@ -1,31 +1,706 @@
-MINC	escherichia-coli-83333	P18196	minC	P18196	0	11	Septum site-determining protein MinC
-MINC	helicobacter-pylori	O25693	minC	O25693	0	7	Probable septum site-determining protein MinC
-MINC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GZY3	minC	A0A0H3GZY3	1	16	Probable septum site-determining protein MinC
-MINC	neisseria-gonorrhoeae	Q5F5V4	minC	Q5F5V4	0	2	Probable septum site-determining protein MinC
-MINC	pseudomonas-aeruginosa	Q9HYZ7	minC	Q9HYZ7	0	5	Probable septum site-determining protein MinC
-MINC	salmonella-typhimurium	P65359	minC	P65359	1	5	Septum site-determining protein MinC
-MINC	shigella-dysenteriae-serotype-1	Q32H45	minC	Q32H45	1	6	Probable septum site-determining protein MinC
-MIND	helicobacter-pylori	O25098	minD	O25098	0	5	Septum site-determining protein MinD
-MIND	pseudomonas-aeruginosa	Q9HYZ6	minD	Q9HYZ6	1	7	Septum site-determining protein MinD
-MIND	salmonella-typhimurium	Q8ZP10	minD	Q8ZP10	2	3	Septum site-determining protein MinD
-MIND	shigella-dysenteriae-serotype-1	Q32H46	minD	Q32H46	2	3	Septum site-determining protein MinD
-MIND	shigella-flexneri	P0AEZ6	minD	P0AEZ6	1	2	Septum site-determining protein MinD
-MIND1	arabidopsis-thaliana	Q9MBA2	MIND1	Q9MBA2	1	12	Septum site-determining protein minD homolog, chloroplastic
-MINDY1	mus-musculus	Q76LS9	Mindy1	Q76LS9	5	6	Ubiquitin carboxyl-terminal hydrolase MINDY-1
-MINDY1	rattus-norvegicus	Q5BJQ2	Mindy1	Q5BJQ2	5	12	Ubiquitin carboxyl-terminal hydrolase MINDY-1
-MINDY2	mus-musculus	Q6PDI6	Mindy2	Q6PDI6	5	6	Ubiquitin carboxyl-terminal hydrolase MINDY-2
-MINDY2	rattus-norvegicus	D3ZWA1	Mindy2	D3ZWA1	4	13	Ubiquitin carboxyl-terminal hydrolase
-MINDY3	mus-musculus	Q9CV28	Mindy3	Q9CV28	0	2	Ubiquitin carboxyl-terminal hydrolase MINDY-3
-MINDY3	rattus-norvegicus	D3Z916	Mindy3	D3Z916	0	4	Ubiquitin carboxyl-terminal hydrolase MINDY
-MINE	helicobacter-pylori	O25099	minE	O25099	0	3	Cell division topological specificity factor
-MINE	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GVA9	minE	A0A0H3GVA9	1	7	Cell division topological specificity factor
-MINE	neisseria-gonorrhoeae	Q5F5V5	minE	Q5F5V5	1	1	Cell division topological specificity factor
-MINE	pseudomonas-aeruginosa	Q9HYZ5	minE	Q9HYZ5	1	1	Cell division topological specificity factor
-MINE	salmonella-typhimurium	P65363	minE	P65363	1	1	Cell division topological specificity factor
-MINE	shigella-dysenteriae-serotype-1	Q32H47	minE	Q32H47	1	1	Cell division topological specificity factor
-MINE	shigella-flexneri	P0A737	minE	P0A737	1	1	Cell division topological specificity factor
-MINE1	arabidopsis-thaliana	Q9C4Z7	MINE1	Q9C4Z7	1	2	Cell division topological specificity factor homolog, chloroplastic
-MINK1	mus-musculus	Q9JM52	Mink1	Q9JM52	1	19	Misshapen-like kinase 1
-MINK1	rattus-norvegicus	F1LP90	Mink1	F1LP90	1	20	Misshapen-like kinase 1
-MINPP1	mus-musculus	Q9Z2L6	Minpp1	Q9Z2L6	0	3	Multiple inositol polyphosphate phosphatase 1
-MINPP1	rattus-norvegicus	O35217	Minpp1	O35217	1	3	Multiple inositol polyphosphate phosphatase 1
+MIN1	human	P13987	CD59	P13987	60	699		
+MIN2	human	P13987	CD59	P13987	60	699		
+MIN3	human	P13987	CD59	P13987	60	699		
+MINA	human	Q8IUF8	RIOX2	Q8IUF8	14	130		
+MINA-1	worm	Q93367	mina-1	Q93367	0	9	Messenger RNA-binding inhibitor of apoptosis 1	
+MINA53	human	Q8IUF8	RIOX2	Q8IUF8	14	130		
+MINAR1	human	Q9UPX6	MINAR1	Q9UPX6	3	20	Major intrinsically disordered Notch2-binding receptor 1 (Me	
+MINAR2	human	P59773	MINAR2	P59773	0	13	Major intrinsically disordered NOTCH2-binding receptor 1-lik	
+MINC	escherichia-coli-83333	P18196	minC	P18196	0	11	Septum site-determining protein MinC	
+MINC	helicobacter-pylori	O25693	minC	O25693	0	7	Probable septum site-determining protein MinC	
+MINC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GZY3	minC	A0A0H3GZY3	1	16	Probable septum site-determining protein MinC	
+MINC	neisseria-gonorrhoeae	Q5F5V4	minC	Q5F5V4	0	2	Probable septum site-determining protein MinC	
+MINC	pseudomonas-aeruginosa	Q9HYZ7	minC	Q9HYZ7	0	5	Probable septum site-determining protein MinC	
+MINC	salmonella-typhimurium	P65359	minC	P65359	1	5	Septum site-determining protein MinC	
+MINC	shigella-dysenteriae-serotype-1	Q32H45	minC	Q32H45	1	6	Probable septum site-determining protein MinC	
+MINCLE	human	Q9ULY5	CLEC4E	Q9ULY5	91	620		
+MIND	fly	FBgn0260386	mtg	A0A0C4DHF5	101	576	Mind the gap, isoform E	w
+MIND	fly	FBgn0263601	mib1	Q9VUX2	7	63	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
+MIND	helicobacter-pylori	O25098	minD	O25098	0	5	Septum site-determining protein MinD	
+MIND	human	Q86YT6	MIB1	Q86YT6	30	324	E3 ubiquitin-protein ligase MIB1 (EC 2.3.2.27) (DAPK-interac	w
+MIND	human	Q96AX9	MIB2	Q96AX9	15	142	E3 ubiquitin-protein ligase MIB2 (EC 2.3.2.27) (Mind bomb ho	w
+MIND	pseudomonas-aeruginosa	Q9HYZ6	minD	Q9HYZ6	1	7	Septum site-determining protein MinD	
+MIND	salmonella-typhimurium	Q8ZP10	minD	Q8ZP10	2	3	Septum site-determining protein MinD	
+MIND	shigella-dysenteriae-serotype-1	Q32H46	minD	Q32H46	2	3	Septum site-determining protein MinD	
+MIND	shigella-flexneri	P0AEZ6	minD	P0AEZ6	1	2	Septum site-determining protein MinD	
+MIND-BOMB	fly	FBgn0263601	mib1	Q9VUX2	7	63	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
+MIND-MELD	fly	FBgn0259110	mmd	X2JE21	12	54	Mind-meld, isoform J (EC 3.4.24.-)	w
+MIND1	arabidopsis-thaliana	Q9MBA2	MIND1	Q9MBA2	1	12	Septum site-determining protein minD homolog, chloroplastic	
+MINDIN	human	Q9BUD6	SPON2	Q9BUD6	4	58	Spondin-2 (Differentially expressed in cancerous and non-can	w
+MINDY	fly	FBgn0036143	CG14142	Q9VTG6	0	1	Ubiquitin carboxyl-terminal hydrolase MINDY (EC 3.4.19.12)	w
+MINDY-1	human	Q8N5J2	MINDY1	Q8N5J2	10	106	Ubiquitin carboxyl-terminal hydrolase MINDY-1 (EC 3.4.19.12)	w
+MINDY-1	zebrafish	A3KQS4	mindy1	A3KQS4	8	16	Ubiquitin carboxyl-terminal hydrolase MINDY-1	w
+MINDY-2	human	Q8NBR6	MINDY2	Q8NBR6	9	49	Ubiquitin carboxyl-terminal hydrolase MINDY-2 (EC 3.4.19.12)	w
+MINDY-3	fly	FBgn0030973	CG7332	Q9VWN5	4	58	Ubiquitin carboxyl-terminal hydrolase MINDY-3 homolog (EC 3.	w
+MINDY-3	human	Q9H8M7	MINDY3	Q9H8M7	13	103	Ubiquitin carboxyl-terminal hydrolase MINDY-3 (EC 3.4.19.12)	w
+MINDY-3	zebrafish	A0AUR5	mindy3	A0AUR5	0	2	Ubiquitin carboxyl-terminal hydrolase MINDY-3	w
+MINDY-4	human	Q4G0A6	MINDY4	Q4G0A6	18	118	Probable ubiquitin carboxyl-terminal hydrolase MINDY-4 (EC 3	w
+MINDY-4B	human	A8MYZ0	MINDY4B	A8MYZ0	5	18	Inactive ubiquitin carboxyl-terminal hydrolase MINDY-4B (Pro	w
+MINDY1	human	Q8N5J2	MINDY1	Q8N5J2	10	106	Ubiquitin carboxyl-terminal hydrolase MINDY-1 (EC 3.4.19.12)	
+MINDY1	mus-musculus	Q76LS9	Mindy1	Q76LS9	5	6	Ubiquitin carboxyl-terminal hydrolase MINDY-1	
+MINDY1	rattus-norvegicus	Q5BJQ2	Mindy1	Q5BJQ2	5	12	Ubiquitin carboxyl-terminal hydrolase MINDY-1	
+MINDY1	zebrafish	A3KQS4	mindy1	A3KQS4	8	16	Ubiquitin carboxyl-terminal hydrolase MINDY-1	
+MINDY2	human	Q8NBR6	MINDY2	Q8NBR6	9	49	Ubiquitin carboxyl-terminal hydrolase MINDY-2 (EC 3.4.19.12)	
+MINDY2	mus-musculus	Q6PDI6	Mindy2	Q6PDI6	5	6	Ubiquitin carboxyl-terminal hydrolase MINDY-2	
+MINDY2	rattus-norvegicus	D3ZWA1	Mindy2	D3ZWA1	4	13	Ubiquitin carboxyl-terminal hydrolase	
+MINDY2	zebrafish	F1RBY0	mindy2	F1RBY0	7	16	Ubiquitin carboxyl-terminal hydrolase	
+MINDY3	human	Q9H8M7	MINDY3	Q9H8M7	13	103	Ubiquitin carboxyl-terminal hydrolase MINDY-3 (EC 3.4.19.12)	
+MINDY3	mus-musculus	Q9CV28	Mindy3	Q9CV28	0	2	Ubiquitin carboxyl-terminal hydrolase MINDY-3	
+MINDY3	rattus-norvegicus	D3Z916	Mindy3	D3Z916	0	4	Ubiquitin carboxyl-terminal hydrolase MINDY	
+MINDY3	zebrafish	A0AUR5	mindy3	A0AUR5	0	2	Ubiquitin carboxyl-terminal hydrolase MINDY-3	
+MINDY4	human	Q4G0A6	MINDY4	Q4G0A6	18	118	Probable ubiquitin carboxyl-terminal hydrolase MINDY-4 (EC 3	
+MINDY4B	human	A8MYZ0	MINDY4B	A8MYZ0	5	18	Inactive ubiquitin carboxyl-terminal hydrolase MINDY-4B (Pro	
+MINE	fly	FBgn0039644	rdog	Q961D3	1	61	LD17001p (Red dog mine, isoform A (EC 3.6.1.3)) (Red dog min	w
+MINE	helicobacter-pylori	O25099	minE	O25099	0	3	Cell division topological specificity factor	
+MINE	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GVA9	minE	A0A0H3GVA9	1	7	Cell division topological specificity factor	
+MINE	neisseria-gonorrhoeae	Q5F5V5	minE	Q5F5V5	1	1	Cell division topological specificity factor	
+MINE	pseudomonas-aeruginosa	Q9HYZ5	minE	Q9HYZ5	1	1	Cell division topological specificity factor	
+MINE	salmonella-typhimurium	P65363	minE	P65363	1	1	Cell division topological specificity factor	
+MINE	shigella-dysenteriae-serotype-1	Q32H47	minE	Q32H47	1	1	Cell division topological specificity factor	
+MINE	shigella-flexneri	P0A737	minE	P0A737	1	1	Cell division topological specificity factor	
+MINE1	arabidopsis-thaliana	Q9C4Z7	MINE1	Q9C4Z7	1	2	Cell division topological specificity factor homolog, chloro	
+MINER1	human	Q8N5K1	CISD2	Q8N5K1	13	332	CDGSH iron-sulfur domain-containing protein 2 (Endoplasmic r	w
+MINER2	human	P0C7P0	CISD3	P0C7P0	21	195	CDGSH iron-sulfur domain-containing protein 3, mitochondrial	w
+MINERALIZATION	human	Q9HCJ1	ANKH	Q9HCJ1	10	137	Mineralization regulator ANKH (ATP carrier protein ANKH) (Pr	w
+MINERALIZATION	human	Q9NR12	PDLIM7	Q9NR12	47	341	PDZ and LIM domain protein 7 (LIM mineralization protein) (L	w
+MINERALOCORTICOID	human	P08235	NR3C2	P08235	75	257	Mineralocorticoid receptor (MR) (Nuclear receptor subfamily 	w
+MINERALOCORTICOID	zebrafish	A6YIH7	nr3c2	A6YIH7	8	21	Mineralocorticoid receptor	w
+MINERVA	human	Q96TA1	NIBAN2	Q96TA1	37	380	Protein Niban 2 (Meg-3) (Melanoma invasion by ERK) (MINERVA)	w
+MING	fly	FBgn0004878	cas	Q7M3M8	57	361	Transcription factor castor (Protein ming)	w
+MINI	fly	FBgn0003227	rec	Q9VF30	2	49	DNA replication licensing factor REC (Protein mini chromosom	w
+MINI	fly	FBgn0027948	msps	A0A0B4K700	4	20	Mini spindles, isoform D	w
+MINI	human	P09668	CTSH	P09668	14	193	Pro-cathepsin H [Cleaved into: Cathepsin H mini chain; Cathe	w
+MINI-CHROMOSOME	fly	FBgn0031875	CG3430	Q9VM60	8	14	Mini-chromosome maintenance complex-binding protein (MCM-BP)	w
+MINI-CHROMOSOME	human	Q9BTE3	MCMBP	Q9BTE3	22	165	Mini-chromosome maintenance complex-binding protein (MCM-BP)	w
+MINI-CHROMOSOME	human	Q9NXL9	MCM9	Q9NXL9	10	131	DNA helicase MCM9 (hMCM9) (EC 5.6.2.4) (DNA 3'-5' helicase M	w
+MINI-CHROMOSOME	zebrafish	Q803A6	mcmbp	Q803A6	7	14	Mini-chromosome maintenance complex-binding protein	w
+MINI-COLLAGEN	worm	O61783	CELE_R12E2.6	O61783	0	1	Mini-collagen	w
+MINIATURE	fly	FBgn0002577	m	Q9VYU8	0	7	Miniature (RE53556p)	w
+MINIATURE	fly	FBgn0086912	mbm	Q9VPM5	1	13	Protein mushroom body miniature	w
+MINIBRA	human	Q13627	DYRK1A	Q13627	482	1769	Dual specificity tyrosine-phosphorylation-regulated kinase 1	w
+MINIBRAIN	worm	Q8WQL7	mbk-1	Q8WQL7	25	166	Dual specificity tyrosine-phosphorylation-regulated kinase m	w
+MINIBRAIN	worm	Q9XTF3	mbk-2	Q9XTF3	28	143	Dual specificity tyrosine-phosphorylation-regulated kinase m	w
+MINIBRAIN-RELATED	human	Q9Y463	DYRK1B	Q9Y463	364	1287	Dual specificity tyrosine-phosphorylation-regulated kinase 1	w
+MINICHROMOSOME	fly	FBgn0014861	Mcm2	P49735	9	109	DNA replication licensing factor Mcm2 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	fly	FBgn0017577	Mcm5	Q9VGW6	7	75	DNA replication licensing factor Mcm5 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	fly	FBgn0020633	Mcm7	Q9XYU0	6	95	DNA replication licensing factor Mcm7 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	fly	FBgn0035227	Iml1	Q9W0E3	3	14	GATOR complex protein Iml1 (Increased minichromosome loss 1)	w
+MINICHROMOSOME	fly	FBgn0284442	Mcm3	Q9XYU1	5	80	DNA replication licensing factor Mcm3 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	human	P49736	MCM2	P49736	34	665	DNA replication licensing factor MCM2 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	human	Q4G0Z9	MCMDC2	Q4G0Z9	12	85	Minichromosome maintenance domain-containing protein 2 (MCM 	w
+MINICHROMOSOME	human	Q9NXL9	MCM9	Q9NXL9	10	131	DNA helicase MCM9 (hMCM9) (EC 5.6.2.4) (DNA 3'-5' helicase M	w
+MINICHROMOSOME	human	Q9UJA3	MCM8	Q9UJA3	8	131	DNA helicase MCM8 (EC 5.6.2.4) (DNA 3'-5' helicase MCM8) (Mi	w
+MINICHROMOSOME	worm	Q19520	ctf-4	Q19520	5	47	Minichromosome loss protein Mcl1 middle region domain-contai	w
+MINICHROMOSOME	worm	Q9N3R7	mis-12	Q9N3R7	3	27	Human/fission yeast MIS (MInichromosome Stability) homolog	w
+MINICHROMOSOME	yeast	P29496	MCM5	P29496	1	104	Minichromosome maintenance protein 5	w
+MINICHROMOSOME	yeast	P32354	MCM10	P32354	3	84	Minichromosome maintenance protein 10	w
+MINICHROMOSOME	zebrafish	A0A8M1P2I8	mcmdc2	A0A8M1P2I8	0	30	Minichromosome maintenance domain-containing protein 2	w
+MINIDISCS	fly	FBgn0002778	mnd	Q9Y1A7	2	23	LD25378p (Minidiscs) (Minidiscs, isoform C) (Minidiscs, isof	w
+MINIFLY	fly	FBgn0259937	Nop60B	O44081	14	149	H/ACA ribonucleoprotein complex subunit 4 (EC 5.4.99.-) (Nuc	w
+MINIMUM	human	Q8WWG9	KCNE4	Q8WWG9	19	103	Potassium voltage-gated channel subfamily E member 4 (MinK-r	w
+MINIMUM	human	Q9Y6H6	KCNE3	Q9Y6H6	81	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
+MINIMUM	human	Q9Y6J6	KCNE2	Q9Y6J6	22	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
+MINION	human	A0A1B0GTQ4	MYMX	A0A1B0GTQ4	7	29	Protein myomixer (Microprotein inducer of fusion) (Protein m	w
+MINK	fly	FBgn0039250	Mink	Q9VC08	1	5	LD43724p (Mitotic spindle and nuclear protein)	
+MINK	human	Q8N4C8	MINK1	Q8N4C8	70	305		
+MINK-RELATED	human	Q8WWG9	KCNE4	Q8WWG9	19	103	Potassium voltage-gated channel subfamily E member 4 (MinK-r	w
+MINK-RELATED	human	Q9Y6H6	KCNE3	Q9Y6H6	81	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
+MINK-RELATED	human	Q9Y6J6	KCNE2	Q9Y6J6	22	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
+MINK-RELATED	worm	P34394	mps-4	P34394	0	1	MinK-related peptide, potassium channel accessory subunit pr	w
+MINK1	human	Q8N4C8	MINK1	Q8N4C8	70	305	Misshapen-like kinase 1 (EC 2.7.11.1) (GCK family kinase MiN	
+MINK1	mus-musculus	Q9JM52	Mink1	Q9JM52	1	19	Misshapen-like kinase 1	
+MINK1	rattus-norvegicus	F1LP90	Mink1	F1LP90	1	20	Misshapen-like kinase 1	
+MINK1	zebrafish	A0A2R8QM71	mink1	A0A2R8QM71	1	10	non-specific serine/threonine protein kinase	
+MINK1_HUMAN	human	Q8N4C8	MINK1	Q8N4C8	70	305		
+MINO	fly	FBgn0027579	mino	Q9Y137	1	16	BcDNA.GH07066 (Minotaur, isoform A (EC 2.3.1.15)) (Minotaur,	
+MINOR	fly	FBgn0035799	mmm	Q9VS90	5	18	Missing minor mitochondria	w
+MINOR	human	A8MTL9	HMSD	A8MTL9	3	17	Serpin-like protein HMSD (Minor histocompatibility protein H	w
+MINOR	human	B0I1T2	MYO1G	B0I1T2	10	126	Unconventional myosin-Ig [Cleaved into: Minor histocompatibi	w
+MINOR	human	O97980	HMHB1	O97980	2	20	Minor histocompatibility protein HB-1 [Cleaved into: Minor h	w
+MINOR	human	P0C7T4	HMSD	P0C7T4	0	1	Minor histocompatibility protein HMSD variant form (HSMD-v) 	w
+MINOR	human	Q15397	PUM3	Q15397	23	285	Pumilio homolog 3 (HBV X-transactivated gene 5 protein) (HBV	w
+MINOR	human	Q8TCT9	HM13	Q8TCT9	6	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
+MINOR	human	Q8TDL5	BPIFB1	Q8TDL5	15	204	BPI fold-containing family B member 1 (Long palate, lung and	w
+MINOR	human	Q92570	NR4A3	Q92570	8	99		
+MINOR	human	Q92619	ARHGAP45	Q92619	49	296	Rho GTPase-activating protein 45 [Cleaved into: Minor histoc	w
+MINOR	virus	A0A024B5E3	VP2	A0A024B5E3	2	6	Minor capsid protein VP2	w
+MINOR	virus	A0A024B605	VP3	A0A024B605	1	6	Minor capsid protein VP2	w
+MINOR	virus	A0A076JU08		A0A076JU08	0	4	Minor capsid protein VP1	w
+MINOR	virus	A0A077D9M0	L2	A0A077D9M0	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A088FMH3	L2	A0A088FMH3	0	7	Minor capsid protein L2	w
+MINOR	virus	A0A097A5G1		A0A097A5G1	1	6	Minor capsid protein	w
+MINOR	virus	A0A097A5I7		A0A097A5I7	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A0A7BW04	L2	A0A0A7BW04	2	6	Minor capsid protein L2	w
+MINOR	virus	A0A0A7W5I1		A0A0A7W5I1	1	5	Minor capsid protein	w
+MINOR	virus	A0A0A7W722		A0A0A7W722	0	5	Minor capsid protein VP2	w
+MINOR	virus	A0A0B5JS20	L2	A0A0B5JS20	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A0B5KU24		A0A0B5KU24	1	5	Minor capsid protein	w
+MINOR	virus	A0A0B5KYT6		A0A0B5KYT6	0	5	Minor capsid protein	w
+MINOR	virus	A0A0C5KYB3	L2	A0A0C5KYB3	1	8	Minor capsid protein L2	w
+MINOR	virus	A0A0D5ZYC6	VP2	A0A0D5ZYC6	1	4	Minor capsid protein	w
+MINOR	virus	A0A0D5ZYE0	VP2	A0A0D5ZYE0	0	4	Minor capsid protein	w
+MINOR	virus	A0A0D5ZYF2	VP2	A0A0D5ZYF2	1	4	Minor capsid protein	w
+MINOR	virus	A0A0D5ZYP3	VP2	A0A0D5ZYP3	0	4	Minor capsid protein VP2	w
+MINOR	virus	A0A0D5ZYR0	VP2	A0A0D5ZYR0	1	4	Minor capsid protein	w
+MINOR	virus	A0A0D5ZZ30	VP2	A0A0D5ZZ30	0	4	Minor capsid protein	w
+MINOR	virus	A0A0E3X5N7	L2	A0A0E3X5N7	0	7	Minor capsid protein L2	w
+MINOR	virus	A0A0F6RAR8	L2	A0A0F6RAR8	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A0F6TNT7	L2	A0A0F6TNT7	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A0F7GHA1	L2	A0A0F7GHA1	0	7	Minor capsid protein L2	w
+MINOR	virus	A0A0H4LMJ3	L2	A0A0H4LMJ3	2	7	Minor capsid protein L2	w
+MINOR	virus	A0A0H4LNY2	L2	A0A0H4LNY2	1	7	Minor capsid protein L2	w
+MINOR	virus	A0A0H4M3P4	L2	A0A0H4M3P4	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A0H4PK86	VP3	A0A0H4PK86	0	8	Minor capsid protein	w
+MINOR	virus	A0A0H4PP32	VP2	A0A0H4PP32	1	8	Minor capsid protein	w
+MINOR	virus	A0A0K1ETW1		A0A0K1ETW1	1	6	Minor capsid protein	w
+MINOR	virus	A0A0K1EUD2		A0A0K1EUD2	0	6	Minor capsid protein	w
+MINOR	virus	A0A0S2EGJ2		A0A0S2EGJ2	1	5	Minor capsid protein	w
+MINOR	virus	A0A0S2EGJ6		A0A0S2EGJ6	0	5	Minor capsid protein	w
+MINOR	virus	A0A0S2KPP7	L2	A0A0S2KPP7	0	9	Minor capsid protein L2	w
+MINOR	virus	A0A0S2VEK6	VP3	A0A0S2VEK6	0	6	Minor capsid protein	w
+MINOR	virus	A0A0S2VF18	VP2	A0A0S2VF18	2	6	Minor capsid protein	w
+MINOR	virus	A0A0U3BGQ5		A0A0U3BGQ5	0	3	Minor capsid protein VP1	w
+MINOR	virus	A0A0U4IRM5	L2	A0A0U4IRM5	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A0X9JQ64	L2	A0A0X9JQ64	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A0Y0B7Q6	VP1	A0A0Y0B7Q6	0	5	Minor capsid protein VP1	w
+MINOR	virus	A0A140CC01	L2	A0A140CC01	0	7	Minor capsid protein L2	w
+MINOR	virus	A0A142FK19	L2	A0A142FK19	1	8	Minor capsid protein L2	w
+MINOR	virus	A0A142K3F5	L2	A0A142K3F5	1	8	Minor capsid protein L2	w
+MINOR	virus	A0A162GN45	VP2	A0A162GN45	2	13	Minor capsid protein VP2	w
+MINOR	virus	A0A162GN61	VP3	A0A162GN61	1	13	Minor capsid protein VP2	w
+MINOR	virus	A0A166FK53	L2	A0A166FK53	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A166FKB2	L2	A0A166FKB2	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A166FKG3	L2	A0A166FKG3	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A182BAF1	L2	A0A182BAF1	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A193AUM7	ORF2	A0A193AUM7	0	2	Minor capsid protein VP1	w
+MINOR	virus	A0A1B2FQW4		A0A1B2FQW4	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0A1B2FQW5		A0A1B2FQW5	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0A1B2K201	L2	A0A1B2K201	1	7	Minor capsid protein L2	w
+MINOR	virus	A0A1B2K229	L2	A0A1B2K229	1	7	Minor capsid protein L2	w
+MINOR	virus	A0A1B2K260	L2	A0A1B2K260	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A1B2K2B2	L2	A0A1B2K2B2	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A1B2K2D0	L2	A0A1B2K2D0	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A1B3IIH5	VP1	A0A1B3IIH5	0	4	Minor capsid protein VP1	w
+MINOR	virus	A0A1C9J6Q4	L2	A0A1C9J6Q4	1	10	Minor capsid protein L2	w
+MINOR	virus	A0A1D8BJ41		A0A1D8BJ41	0	6	Minor capsid protein	w
+MINOR	virus	A0A1D8BJ44		A0A1D8BJ44	0	6	Minor capsid protein	w
+MINOR	virus	A0A1D9EQ30	L2	A0A1D9EQ30	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A1I9KHZ6	L2	A0A1I9KHZ6	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A1I9KI00	L2	A0A1I9KI00	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A1L3GV85	L2	A0A1L3GV85	0	8	Minor capsid protein L2	w
+MINOR	virus	A0A1L4AB44		A0A1L4AB44	1	7	Minor capsid protein	w
+MINOR	virus	A0A1L4AB49		A0A1L4AB49	0	7	Minor capsid protein	w
+MINOR	virus	A0A1L6KTE1	L2	A0A1L6KTE1	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A1P8YVU1	L2	A0A1P8YVU1	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A1P8YVV6	L2	A0A1P8YVV6	1	6	Minor capsid protein L2	w
+MINOR	virus	A0A1S7IZZ9		A0A1S7IZZ9	1	6	Minor capsid protein VP2	w
+MINOR	virus	A0A1S7J006		A0A1S7J006	1	6	Minor capsid protein VP2	w
+MINOR	virus	A0A1S7J013		A0A1S7J013	1	6	Minor capsid protein VP2	w
+MINOR	virus	A0A1S7J015		A0A1S7J015	2	6	Minor capsid protein VP2	w
+MINOR	virus	A0A1S7J030		A0A1S7J030	0	6	Minor capsid protein	w
+MINOR	virus	A0A1S7J032		A0A1S7J032	0	6	Minor capsid protein	w
+MINOR	virus	A0A1W2KRP7	VP2	A0A1W2KRP7	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0A1W2KRP8	VP3	A0A1W2KRP8	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0A1W5PPV4	VP1	A0A1W5PPV4	0	5	Minor capsid protein VP1	w
+MINOR	virus	A0A1W5X9W2		A0A1W5X9W2	0	7	Minor capsid protein VP2	w
+MINOR	virus	A0A1W5X9W5		A0A1W5X9W5	1	7	Minor capsid protein	w
+MINOR	virus	A0A1W6EU77		A0A1W6EU77	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A1W6EU83		A0A1W6EU83	0	6	Minor capsid protein	w
+MINOR	virus	A0A1Z3FVU7	VP1	A0A1Z3FVU7	0	4	Minor capsid protein VP1	w
+MINOR	virus	A0A220IG69		A0A220IG69	1	5	Minor capsid protein	w
+MINOR	virus	A0A220IG73		A0A220IG73	1	5	Minor capsid protein	w
+MINOR	virus	A0A221LED6		A0A221LED6	0	3	Minor capsid protein VP1	w
+MINOR	virus	A0A223PYJ9	VP2	A0A223PYJ9	1	5	Minor capsid protein	w
+MINOR	virus	A0A223PYK3	VP3	A0A223PYK3	0	5	Minor capsid protein VP2	w
+MINOR	virus	A0A223PYL7	VP2	A0A223PYL7	1	5	Minor capsid protein	w
+MINOR	virus	A0A223PYL8	VP3	A0A223PYL8	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0A223PYN5	VP3	A0A223PYN5	0	5	Minor capsid protein VP2	w
+MINOR	virus	A0A223PYN6	VP2	A0A223PYN6	1	5	Minor capsid protein	w
+MINOR	virus	A0A247D722		A0A247D722	1	6	Minor capsid protein	w
+MINOR	virus	A0A247D725		A0A247D725	1	6	Minor capsid protein	w
+MINOR	virus	A0A2H4N9S6	VP1	A0A2H4N9S6	0	3	Minor capsid protein VP1	w
+MINOR	virus	A0A2R2Q213	L2	A0A2R2Q213	0	6	Minor capsid protein L2	w
+MINOR	virus	A0A2S0SYZ4		A0A2S0SYZ4	0	4	Minor capsid protein VP1	w
+MINOR	virus	A0A2S1CJF5	VP3	A0A2S1CJF5	2	9	Minor capsid protein	w
+MINOR	virus	A0A2S1CJG2	VP3	A0A2S1CJG2	1	6	Minor capsid protein	w
+MINOR	virus	A0A2S1CJH2	VP2	A0A2S1CJH2	2	9	Minor capsid protein	w
+MINOR	virus	A0A2S1CJH9	VP2	A0A2S1CJH9	2	8	Minor capsid protein VP2	w
+MINOR	virus	A0A2S1CJI2	VP2	A0A2S1CJI2	0	6	Minor capsid protein	w
+MINOR	virus	A0A2S1CJI7	VP3	A0A2S1CJI7	0	7	Minor capsid protein	w
+MINOR	virus	A0A2S1CJI8	VP2	A0A2S1CJI8	0	7	Minor capsid protein VP2	w
+MINOR	virus	A0A2S1CJK3	VP2	A0A2S1CJK3	1	8	Minor capsid protein	w
+MINOR	virus	A0A2S1CJL1	VP3	A0A2S1CJL1	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A2S1CJL3	VP2	A0A2S1CJL3	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A2S1CJL5	VP3	A0A2S1CJL5	1	8	Minor capsid protein	w
+MINOR	virus	A0A2S1CJN3	VP3	A0A2S1CJN3	0	10	Minor capsid protein VP2	w
+MINOR	virus	A0A2S1CJN9	VP2	A0A2S1CJN9	1	10	Minor capsid protein	w
+MINOR	virus	A0A2S1CJP7	VP2	A0A2S1CJP7	0	6	Minor capsid protein	w
+MINOR	virus	A0A2S1CJP9	VP2	A0A2S1CJP9	1	9	Minor capsid protein VP2	w
+MINOR	virus	A0A2S1CJQ7	VP3	A0A2S1CJQ7	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A2S1CJS0	VP3	A0A2S1CJS0	1	9	Minor capsid protein VP2	w
+MINOR	virus	A0A3G1E4J2	L2	A0A3G1E4J2	0	7	Minor capsid protein L2	w
+MINOR	virus	A0A5J6BCZ8	VP1	A0A5J6BCZ8	1	4	Minor capsid protein VP1	w
+MINOR	virus	A0A5P9NRF4		A0A5P9NRF4	1	7	Minor capsid protein VP2	w
+MINOR	virus	A0A5P9NRX5		A0A5P9NRX5	1	7	Minor capsid protein	w
+MINOR	virus	A0A6G7NNY6		A0A6G7NNY6	0	5	Minor capsid protein VP2	w
+MINOR	virus	A0A6G7NPH5		A0A6G7NPH5	0	5	Minor capsid protein	w
+MINOR	virus	A0A6G9LUF7	VP2	A0A6G9LUF7	1	4	Minor capsid protein VP2	w
+MINOR	virus	A0A6G9LUY2	VP3	A0A6G9LUY2	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A6G9LVC0	VP2	A0A6G9LVC0	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A6G9LVD0	VP3	A0A6G9LVD0	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A6G9LVE0	VP2	A0A6G9LVE0	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0A6P1E7K0	VP2	A0A6P1E7K0	1	5	Minor capsid protein	w
+MINOR	virus	A0A6P1E957	VP3	A0A6P1E957	0	5	Minor capsid protein	w
+MINOR	virus	A0A8K1S9A5		A0A8K1S9A5	0	6	Minor capsid protein	w
+MINOR	virus	A0A8K1S9A7		A0A8K1S9A7	0	6	Minor capsid protein VP2	w
+MINOR	virus	A0AAE8BDF3		A0AAE8BDF3	0	3	Minor capsid protein VP1	w
+MINOR	virus	A0AAE9P7C2	VP3	A0AAE9P7C2	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0AAE9P8Y6	VP2	A0AAE9P8Y6	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0AAE9T5E6	VP2	A0AAE9T5E6	2	5	Minor capsid protein VP2	w
+MINOR	virus	A0AAE9TAV5	VP3	A0AAE9TAV5	1	5	Minor capsid protein VP2	w
+MINOR	virus	A0EPK8	L2	A0EPK8	0	7	Minor capsid protein L2	w
+MINOR	virus	A2T937	L2	A2T937	0	6	Minor capsid protein L2	w
+MINOR	virus	A3RKM1	L2	A3RKM1	0	7	Minor capsid protein L2	w
+MINOR	virus	A4Z4U3	L2	A4Z4U3	1	7	Minor capsid protein L2	w
+MINOR	virus	A5HBE1		A5HBE1	0	4	Minor capsid protein VP2	w
+MINOR	virus	A6XA97	L2	A6XA97	0	8	Minor capsid protein L2	w
+MINOR	virus	A8R8N5	L2	A8R8N5	0	7	Minor capsid protein L2	w
+MINOR	virus	A8Y982	VP3	A8Y982	0	6	Minor capsid protein	w
+MINOR	virus	A8Y987	VP2	A8Y987	2	6	Minor capsid protein VP2	w
+MINOR	virus	A9CR04	L2	A9CR04	0	6	Minor capsid protein L2	w
+MINOR	virus	A9CR15	L2	A9CR15	1	7	Minor capsid protein L2	w
+MINOR	virus	A9XNH6	L2	A9XNH6	0	6	Minor capsid protein L2	w
+MINOR	virus	B0G0W4		B0G0W4	1	4	Minor capsid protein VP2	w
+MINOR	virus	B2KKX0	L2	B2KKX0	2	5	Minor capsid protein L2	w
+MINOR	virus	B3ST96	L2	B3ST96	0	8	Minor capsid protein L2	w
+MINOR	virus	B4XYE5	L2	B4XYE5	0	7	Minor capsid protein L2	w
+MINOR	virus	B4XYF2	L2	B4XYF2	1	7	Minor capsid protein L2	w
+MINOR	virus	B5SPY4	L2	B5SPY4	1	5	Minor capsid protein L2	w
+MINOR	virus	B5SWV0	L2	B5SWV0	0	7	Minor capsid protein L2	w
+MINOR	virus	B5SWV7	L2	B5SWV7	0	7	Minor capsid protein L2	w
+MINOR	virus	B6DZZ9		B6DZZ9	0	6	Minor capsid protein	w
+MINOR	virus	B6E000		B6E000	0	6	Minor capsid protein	w
+MINOR	virus	B7TQP2	L2	B7TQP2	0	7	Minor capsid protein L2	w
+MINOR	virus	B8R1V1	L2	B8R1V1	0	6	Minor capsid protein L2	w
+MINOR	virus	B9UYK7	VP1	B9UYK7	0	3	Minor capsid protein VP1	w
+MINOR	virus	C0ITA9	L2	C0ITA9	0	6	Minor capsid protein L2	w
+MINOR	virus	C0MHS3	L2	C0MHS3	1	5	Minor capsid protein L2	w
+MINOR	virus	C1ID89	L2	C1ID89	0	7	Minor capsid protein L2	w
+MINOR	virus	C1ID96	L2	C1ID96	0	7	Minor capsid protein L2	w
+MINOR	virus	C3PU70	L2	C3PU70	1	8	Minor capsid protein L2	w
+MINOR	virus	C3PU78	L2	C3PU78	1	8	Minor capsid protein L2	w
+MINOR	virus	C3PU86	L2	C3PU86	2	8	Minor capsid protein L2	w
+MINOR	virus	C3PU94	L2	C3PU94	1	8	Minor capsid protein L2	w
+MINOR	virus	C3PUA2	L2	C3PUA2	2	8	Minor capsid protein L2	w
+MINOR	virus	C3PUB0	L2	C3PUB0	2	8	Minor capsid protein L2	w
+MINOR	virus	C3RUC7	L2	C3RUC7	1	8	Minor capsid protein L2	w
+MINOR	virus	C3RUD5	L2	C3RUD5	3	8	Minor capsid protein L2	w
+MINOR	virus	C4PUC5	L2	C4PUC5	0	7	Minor capsid protein L2	w
+MINOR	virus	C4PUD2	L2	C4PUD2	0	6	Minor capsid protein L2	w
+MINOR	virus	C4PUD8	L2	C4PUD8	1	7	Minor capsid protein L2	w
+MINOR	virus	C4PUE5	L2	C4PUE5	0	7	Minor capsid protein L2	w
+MINOR	virus	C4PUF1	L2	C4PUF1	0	6	Minor capsid protein L2	w
+MINOR	virus	C4PUF8	L2	C4PUF8	0	7	Minor capsid protein L2	w
+MINOR	virus	C7B7D7	L2	C7B7D7	1	7	Minor capsid protein L2	w
+MINOR	virus	C7DY57	L2	C7DY57	2	6	Minor capsid protein L2	w
+MINOR	virus	C7U321	L2	C7U321	0	8	Minor capsid protein L2	w
+MINOR	virus	C8AY93	L2	C8AY93	1	6	Minor capsid protein L2	w
+MINOR	virus	C8YJK3	L2	C8YJK3	0	7	Minor capsid protein L2	w
+MINOR	virus	C8YJL0	L2	C8YJL0	1	7	Minor capsid protein L2	w
+MINOR	virus	C8YJL7	L2	C8YJL7	1	7	Minor capsid protein L2	w
+MINOR	virus	C9X3W3	VP2	C9X3W3	0	5	Minor capsid protein	w
+MINOR	virus	C9X3W4	VP3	C9X3W4	0	5	Minor capsid protein VP2	w
+MINOR	virus	C9X3W8	VP2	C9X3W8	1	5	Minor capsid protein	w
+MINOR	virus	C9X3W9	VP3	C9X3W9	0	5	Minor capsid protein VP2	w
+MINOR	virus	D2E911	L2	D2E911	0	7	Minor capsid protein L2	w
+MINOR	virus	D3IZT1		D3IZT1	1	6	Minor capsid protein	w
+MINOR	virus	D3IZT2		D3IZT2	0	6	Minor capsid protein	w
+MINOR	virus	D3VNF4	L2	D3VNF4	0	7	Minor capsid protein L2	w
+MINOR	virus	D3VNG1	L2	D3VNG1	0	7	Minor capsid protein L2	w
+MINOR	virus	D3VWC1	L2	D3VWC1	0	7	Minor capsid protein L2	w
+MINOR	virus	D3VWD0	L2	D3VWD0	1	6	Minor capsid protein L2	w
+MINOR	virus	D5FL29	L2	D5FL29	0	7	Minor capsid protein L2	w
+MINOR	virus	D6MM14	L2	D6MM14	0	6	Minor capsid protein L2	w
+MINOR	virus	D6N1C3	L2	D6N1C3	2	7	Minor capsid protein L2	w
+MINOR	virus	D6QS62		D6QS62	2	9	Minor structural protein	w
+MINOR	virus	D7P164	L2	D7P164	0	7	Minor capsid protein L2	w
+MINOR	virus	D7P171	L2	D7P171	0	7	Minor capsid protein L2	w
+MINOR	virus	D7P178	L2	D7P178	1	7	Minor capsid protein L2	w
+MINOR	virus	D7P185	L2	D7P185	0	7	Minor capsid protein L2	w
+MINOR	virus	D7P192	L2	D7P192	0	7	Minor capsid protein L2	w
+MINOR	virus	D7P199	L2	D7P199	0	7	Minor capsid protein L2	w
+MINOR	virus	D7RF53		D7RF53	0	4	Minor capsid protein VP1	w
+MINOR	virus	D9D5K7	L2	D9D5K7	1	7	Minor capsid protein L2	w
+MINOR	virus	E0XL31		E0XL31	1	5	Minor capsid protein VP2	w
+MINOR	virus	E0XL32		E0XL32	0	5	Minor capsid protein VP2	w
+MINOR	virus	E0YDP9	L2	E0YDP9	0	7	Minor capsid protein L2	w
+MINOR	virus	E1CGC2	L2	E1CGC2	0	7	Minor capsid protein L2	w
+MINOR	virus	E2ESL5	VP2	E2ESL5	0	5	Minor capsid protein	w
+MINOR	virus	E2ESL6	VP3	E2ESL6	0	5	Minor capsid protein VP2	w
+MINOR	virus	E5AX28	VP2	E5AX28	1	5	Minor capsid protein VP2	w
+MINOR	virus	E5AX29	VP3	E5AX29	2	5	Minor capsid protein VP2	w
+MINOR	virus	E5LA38		E5LA38	1	5	Minor capsid protein VP2	w
+MINOR	virus	E5LA39		E5LA39	1	5	Minor capsid protein VP2	w
+MINOR	virus	E5LA48		E5LA48	1	5	Minor capsid protein VP2	w
+MINOR	virus	E5LA49		E5LA49	1	5	Minor capsid protein VP2	w
+MINOR	virus	E5LA68		E5LA68	1	5	Minor capsid protein VP2	w
+MINOR	virus	E5LA69		E5LA69	1	5	Minor capsid protein VP2	w
+MINOR	virus	E5RUP1	VP2	E5RUP1	0	6	Minor capsid protein	w
+MINOR	virus	E5RUP2	VP3	E5RUP2	0	6	Minor capsid protein	w
+MINOR	virus	E7BQ77	L2	E7BQ77	0	7	Minor capsid protein L2	w
+MINOR	virus	E7BQ84	L2	E7BQ84	0	7	Minor capsid protein L2	w
+MINOR	virus	E7BQ91	L2	E7BQ91	1	7	Minor capsid protein L2	w
+MINOR	virus	E7BQ98	L2	E7BQ98	0	7	Minor capsid protein L2	w
+MINOR	virus	E7BQA5	L2	E7BQA5	0	7	Minor capsid protein L2	w
+MINOR	virus	E7BQB2	L2	E7BQB2	0	7	Minor capsid protein L2	w
+MINOR	virus	E7BQC7	L2	E7BQC7	1	7	Minor capsid protein L2	w
+MINOR	virus	E7BRR2	L2	E7BRR2	2	7	Minor capsid protein L2	w
+MINOR	virus	E7BRR9	L2	E7BRR9	1	7	Minor capsid protein L2	w
+MINOR	virus	E7C0H5	L2	E7C0H5	1	7	Minor capsid protein L2	w
+MINOR	virus	E9NQ88		E9NQ88	1	5	Minor capsid protein	w
+MINOR	virus	E9NQ89		E9NQ89	1	5	Minor capsid protein	w
+MINOR	virus	F2VIQ4	L2	F2VIQ4	0	6	Minor capsid protein L2	w
+MINOR	virus	F2VIR0	L2	F2VIR0	0	6	Minor capsid protein L2	w
+MINOR	virus	F2VIR6	L2	F2VIR6	0	6	Minor capsid protein L2	w
+MINOR	virus	F2VIR8	L2	F2VIR8	1	6	Minor capsid protein L2	w
+MINOR	virus	F2X1C7	L2	F2X1C7	1	7	Minor capsid protein L2	w
+MINOR	virus	F2YGH3	L2	F2YGH3	1	7	Minor capsid protein L2	w
+MINOR	virus	F2YGI0	L2	F2YGI0	0	7	Minor capsid protein L2	w
+MINOR	virus	F8QPP9	L2	F8QPP9	1	7	Minor capsid protein L2	w
+MINOR	virus	F8QPQ5	L2	F8QPQ5	1	6	Minor capsid protein L2	w
+MINOR	virus	F8QPR1	L2	F8QPR1	0	6	Minor capsid protein L2	w
+MINOR	virus	F8SIM8	L2	F8SIM8	0	7	Minor capsid protein L2	w
+MINOR	virus	F8SIN5	L2	F8SIN5	0	7	Minor capsid protein L2	w
+MINOR	virus	G1C9I7	L2	G1C9I7	0	6	Minor capsid protein L2	w
+MINOR	virus	G1CR73	L2	G1CR73	0	8	Minor capsid protein L2	w
+MINOR	virus	G1JYW8		G1JYW8	0	4	Minor capsid protein VP1	w
+MINOR	virus	G3DRE2	L2	G3DRE2	0	7	Minor capsid protein L2	w
+MINOR	virus	G3EZE3	VP1	G3EZE3	0	4	Minor capsid protein VP1	w
+MINOR	virus	G4XF67	L2	G4XF67	0	7	Minor capsid protein L2	w
+MINOR	virus	G4XF74	L2	G4XF74	1	7	Minor capsid protein L2	w
+MINOR	virus	G5ELP4	HpV126gp6	G5ELP4	1	7	Minor capsid protein L2	w
+MINOR	virus	G8EGT7	L2	G8EGT7	0	7	Minor capsid protein L2	w
+MINOR	virus	G8GMM9	L2	G8GMM9	0	7	Minor capsid protein L2	w
+MINOR	virus	G9ID12		G9ID12	0	4	Minor capsid protein VP1	w
+MINOR	virus	H6UYN6	L2	H6UYN6	1	7	Minor capsid protein L2	w
+MINOR	virus	H6UYP3	L2	H6UYP3	0	7	Minor capsid protein L2	w
+MINOR	virus	H6UYQ0	L2	H6UYQ0	0	7	Minor capsid protein L2	w
+MINOR	virus	H6UYQ7	L2	H6UYQ7	1	7	Minor capsid protein L2	w
+MINOR	virus	H6UYR0	L2	H6UYR0	0	7	Minor capsid protein L2	w
+MINOR	virus	H9CWJ6		H9CWJ6	0	6	Minor capsid protein VP1	w
+MINOR	virus	H9LC16	L2	H9LC16	1	8	Minor capsid protein L2	w
+MINOR	virus	I0E1R0	VP1	I0E1R0	0	3	Minor capsid protein VP1	w
+MINOR	virus	I3P6K8	L2	I3P6K8	0	7	Minor capsid protein L2	w
+MINOR	virus	I3P6L5	L2	I3P6L5	1	7	Minor capsid protein L2	w
+MINOR	virus	I3P6M2	L2	I3P6M2	1	7	Minor capsid protein L2	w
+MINOR	virus	I3P6M9	L2	I3P6M9	2	7	Minor capsid protein L2	w
+MINOR	virus	I3P6N6	L2	I3P6N6	1	7	Minor capsid protein L2	w
+MINOR	virus	I3P6P3	L2	I3P6P3	0	7	Minor capsid protein L2	w
+MINOR	virus	I3P6Q0	L2	I3P6Q0	0	7	Minor capsid protein L2	w
+MINOR	virus	I3P6Q7	L2	I3P6Q7	0	7	Minor capsid protein L2	w
+MINOR	virus	I3QJE8	EPyV_gp1	I3QJE8	1	5	Minor capsid protein	w
+MINOR	virus	I3QJE9	EPyV_gp2	I3QJE9	0	5	Minor capsid protein VP2	w
+MINOR	virus	I3UJL1	L2	I3UJL1	0	7	Minor capsid protein L2	w
+MINOR	virus	I3VR48	L2	I3VR48	0	5	Minor capsid protein L2	w
+MINOR	virus	I3VR60		I3VR60	0	4	Minor capsid protein VP1	w
+MINOR	virus	I6LEI7	L2	I6LEI7	0	7	Minor capsid protein L2	w
+MINOR	virus	I6LEJ4	L2	I6LEJ4	0	7	Minor capsid protein L2	w
+MINOR	virus	I6LEK1	L2	I6LEK1	1	7	Minor capsid protein L2	w
+MINOR	virus	I6MRD9	L2	I6MRD9	0	7	Minor capsid protein L2	w
+MINOR	virus	I6MRE6	L2	I6MRE6	0	7	Minor capsid protein L2	w
+MINOR	virus	I6MRF3	L2	I6MRF3	0	7	Minor capsid protein L2	w
+MINOR	virus	I6MRG0	L2	I6MRG0	0	7	Minor capsid protein L2	w
+MINOR	virus	I6MRG7	L2	I6MRG7	0	7	Minor capsid protein L2	w
+MINOR	virus	I6ULL7	VP3	I6ULL7	0	5	Minor capsid protein VP2	w
+MINOR	virus	I6UVT1	VP2	I6UVT1	1	5	Minor capsid protein	w
+MINOR	virus	I6W813		I6W813	1	6	Minor capsid protein	w
+MINOR	virus	I6WHT1		I6WHT1	0	6	Minor capsid protein	w
+MINOR	virus	I7K4Q9	L2	I7K4Q9	0	7	Minor capsid protein L2	w
+MINOR	virus	J3TP01	VP2	J3TP01	0	3	Minor capsid protein VP2	w
+MINOR	virus	J3U5S6	VP2	J3U5S6	0	5	Minor capsid protein	w
+MINOR	virus	J3W7W9	VP2	J3W7W9	2	4	Minor capsid protein VP2	w
+MINOR	virus	J3Z5R4	VP2	J3Z5R4	1	5	Minor capsid protein	w
+MINOR	virus	J3ZGP0	VP2	J3ZGP0	2	5	Minor capsid protein	w
+MINOR	virus	J7F291	L2	J7F291	0	7	Minor capsid protein L2	w
+MINOR	virus	J7FY86		J7FY86	1	5	Minor capsid protein VP2	w
+MINOR	virus	J7G4H1		J7G4H1	1	5	Minor capsid protein VP2	w
+MINOR	virus	J7H6A8	VP2	J7H6A8	1	4	Minor capsid protein VP2	w
+MINOR	virus	J7HC68	VP2	J7HC68	1	5	Minor capsid protein VP2	w
+MINOR	virus	J7HC71	VP2	J7HC71	2	4	Minor capsid protein VP2	w
+MINOR	virus	J7I367	VP3	J7I367	1	5	Minor capsid protein	w
+MINOR	virus	J7I3S9	VP3	J7I3S9	0	5	Minor capsid protein	w
+MINOR	virus	J7IAK9	VP3	J7IAK9	0	5	Minor capsid protein	w
+MINOR	virus	J7JMM7	L2	J7JMM7	1	7	Minor capsid protein L2	w
+MINOR	virus	J9R372	L2	J9R372	0	7	Minor capsid protein L2	w
+MINOR	virus	J9V4T5	L2	J9V4T5	0	8	Minor capsid protein L2	w
+MINOR	virus	K4MLH1	L2	K4MLH1	0	6	Minor capsid protein L2	w
+MINOR	virus	K4MN73	L2	K4MN73	0	6	Minor capsid protein L2	w
+MINOR	virus	K4MN96	L2	K4MN96	0	6	Minor capsid protein L2	w
+MINOR	virus	K4MNE6	L2	K4MNE6	1	7	Minor capsid protein L2	w
+MINOR	virus	K4MNH2	L2	K4MNH2	0	6	Minor capsid protein L2	w
+MINOR	virus	K4MNH8	L2	K4MNH8	0	6	Minor capsid protein L2	w
+MINOR	virus	K4MYW9	L2	K4MYW9	0	7	Minor capsid protein L2	w
+MINOR	virus	K4MZ15	L2	K4MZ15	0	6	Minor capsid protein L2	w
+MINOR	virus	K7QHA0	L2	K7QHA0	0	7	Minor capsid protein L2	w
+MINOR	virus	K7QJ81		K7QJ81	1	4	Minor capsid protein	w
+MINOR	virus	K7QJ86		K7QJ86	1	5	Minor capsid protein	w
+MINOR	virus	K7QJJ3		K7QJJ3	1	4	Minor capsid protein	w
+MINOR	virus	K7QJK0		K7QJK0	1	4	Minor capsid protein	w
+MINOR	virus	K7QK04		K7QK04	1	4	Minor capsid protein VP2	w
+MINOR	virus	K7QKH3		K7QKH3	0	6	Minor capsid protein	w
+MINOR	virus	K7QKH7		K7QKH7	0	5	Minor capsid protein	w
+MINOR	virus	K7QKH8		K7QKH8	0	4	Minor capsid protein	w
+MINOR	virus	K7QLH0		K7QLH0	0	4	Minor capsid protein	w
+MINOR	virus	K7QLH5		K7QLH5	0	4	Minor capsid protein	w
+MINOR	virus	K7QRA1	L2	K7QRA1	0	7	Minor capsid protein L2	w
+MINOR	virus	K9M8S9	L2	K9M8S9	1	7	Minor capsid protein L2	w
+MINOR	virus	K9M932	L2	K9M932	0	7	Minor capsid protein L2	w
+MINOR	virus	L0CK47	L2	L0CK47	0	6	Minor capsid protein L2	w
+MINOR	virus	L0G8L0		L0G8L0	1	5	Minor capsid protein VP2	w
+MINOR	virus	L0GAJ5		L0GAJ5	1	5	Minor capsid protein VP2	w
+MINOR	virus	L0GAJ8		L0GAJ8	3	5	Minor capsid protein VP2	w
+MINOR	virus	L0GAK1		L0GAK1	1	5	Minor capsid protein VP2	w
+MINOR	virus	L0GAK3		L0GAK3	0	5	Minor capsid protein	w
+MINOR	virus	L0GAK6		L0GAK6	1	5	Minor capsid protein	w
+MINOR	virus	L0GBC4		L0GBC4	1	5	Minor capsid protein VP2	w
+MINOR	virus	L0GCG7		L0GCG7	1	5	Minor capsid protein VP2	w
+MINOR	virus	L0GCG9		L0GCG9	2	5	Minor capsid protein VP2	w
+MINOR	virus	L0GCH3		L0GCH3	1	5	Minor capsid protein VP2	w
+MINOR	virus	L0GCH7		L0GCH7	0	5	Minor capsid protein	w
+MINOR	virus	L0GCI1		L0GCI1	1	5	Minor capsid protein	w
+MINOR	virus	L0MYW4	VP2	L0MYW4	1	5	Minor capsid protein VP2	w
+MINOR	virus	L0MZT7	VP3	L0MZT7	1	6	Minor capsid protein	w
+MINOR	virus	L0MZU2	VP3	L0MZU2	0	5	Minor capsid protein	w
+MINOR	virus	L0N138	VP2	L0N138	1	6	Minor capsid protein	w
+MINOR	virus	L0N1U5	VP3	L0N1U5	1	6	Minor capsid protein	w
+MINOR	virus	L0N1V5	VP2	L0N1V5	0	5	Minor capsid protein	w
+MINOR	virus	L0N2A5	VP3	L0N2A5	1	5	Minor capsid protein	w
+MINOR	virus	L0N2A8	VP2	L0N2A8	2	6	Minor capsid protein	w
+MINOR	virus	L0N4C1	VP2	L0N4C1	1	4	Minor capsid protein VP2	w
+MINOR	virus	L7RFK6		L7RFK6	0	6	Minor capsid protein VP2	w
+MINOR	virus	L7RJ17		L7RJ17	1	6	Minor capsid protein VP2	w
+MINOR	virus	L7X2N0	L2	L7X2N0	0	6	Minor capsid protein L2	w
+MINOR	virus	L7X3B0	L2	L7X3B0	0	7	Minor capsid protein L2	w
+MINOR	virus	L7YAW4	L2	L7YAW4	0	7	Minor capsid protein L2	w
+MINOR	virus	M1NNZ2		M1NNZ2	0	3	Minor capsid protein VP1	w
+MINOR	virus	M1V273	L2	M1V273	1	7	Minor capsid protein L2	w
+MINOR	virus	M4HWY7	L2	M4HWY7	0	7	Minor capsid protein L2	w
+MINOR	virus	M4HXI6	L2	M4HXI6	0	7	Minor capsid protein L2	w
+MINOR	virus	M5EF08	L2	M5EF08	0	7	Minor capsid protein L2	w
+MINOR	virus	O56834		O56834	0	11	Minor outer capsid protein P2	w
+MINOR	virus	O56938	L2	O56938	1	7	Minor capsid protein L2	w
+MINOR	virus	O56944	L2	O56944	0	7	Minor capsid protein L2	w
+MINOR	virus	O56950	L2	O56950	1	7	Minor capsid protein L2	w
+MINOR	virus	O56957	L2	O56957	0	7	Minor capsid protein L2	w
+MINOR	virus	O90729	L2	O90729	0	8	Minor capsid protein L2	w
+MINOR	virus	P03093		P03093	1	6	Minor capsid protein VP2	w
+MINOR	virus	P03094		P03094	0	6	Minor capsid protein VP2	w
+MINOR	virus	P03095		P03095	2	5	Minor capsid protein VP2	w
+MINOR	virus	P03105	L2	P03105	1	8	Minor capsid protein L2	w
+MINOR	virus	P03106	L2	P03106	1	9	Minor capsid protein L2	w
+MINOR	virus	P03107	L2	P03107	1	9	Minor capsid protein L2	w
+MINOR	virus	P03108	L2	P03108	0	8	Minor capsid protein L2	w
+MINOR	virus	P03109	L2	P03109	1	9	Minor capsid protein L2	w
+MINOR	virus	P03110	L2	P03110	1	8	Minor capsid protein L2	w
+MINOR	virus	P04013	L2	P04013	2	10	Minor capsid protein L2	w
+MINOR	virus	P06418	L2	P06418	0	9	Minor capsid protein L2	w
+MINOR	virus	P06419	L2	P06419	0	8	Minor capsid protein L2	w
+MINOR	virus	P06457	L2	P06457	0	10	Minor capsid protein L2	w
+MINOR	virus	P06793	L2	P06793	1	9	Minor capsid protein L2	w
+MINOR	virus	P06918	L2	P06918	0	9	Minor capsid protein L2	w
+MINOR	virus	P07297		P07297	0	3	Minor capsid protein VP1	w
+MINOR	virus	P08342	L2	P08342	1	11	Minor capsid protein L2	w
+MINOR	virus	P0DOJ2		P0DOJ2	0	4	Minor capsid protein VP2	w
+MINOR	virus	P11327	L2	P11327	0	15	Minor capsid protein L2	w
+MINOR	virus	P17389	L2	P17389	2	9	Minor capsid protein L2	w
+MINOR	virus	P22164	L2	P22164	1	8	Minor capsid protein L2	w
+MINOR	virus	P22165	L2	P22165	1	8	Minor capsid protein L2	w
+MINOR	virus	P22425	L2	P22425	0	9	Minor capsid protein L2	w
+MINOR	virus	P24839	L2	P24839	2	9	Minor capsid protein L2	w
+MINOR	virus	P24849		P24849	0	5	Minor capsid protein VP2	w
+MINOR	virus	P25487	L2	P25487	1	7	Minor capsid protein L2	w
+MINOR	virus	P26538	L2	P26538	0	9	Minor capsid protein L2	w
+MINOR	virus	P26539	L2	P26539	2	9	Minor capsid protein L2	w
+MINOR	virus	P27234	L2	P27234	1	6	Minor capsid protein L2	w
+MINOR	virus	P27235	L2	P27235	2	9	Minor capsid protein L2	w
+MINOR	virus	P27412	ORF2	P27412	0	9	Minor capsid protein VP2	w
+MINOR	virus	P27558	L2	P27558	2	11	Minor capsid protein L2	w
+MINOR	virus	P28711	ORF3	P28711	0	8	Minor capsid protein VP2	w
+MINOR	virus	P29078		P29078	1	12	Minor outer capsid protein P9	w
+MINOR	virus	P36744	L2	P36744	1	6	Minor capsid protein L2	w
+MINOR	virus	P36745	L2	P36745	2	6	Minor capsid protein L2	w
+MINOR	virus	P36746	L2	P36746	0	6	Minor capsid protein L2	w
+MINOR	virus	P36747	L2	P36747	2	7	Minor capsid protein L2	w
+MINOR	virus	P36748	L2	P36748	2	6	Minor capsid protein L2	w
+MINOR	virus	P36749	L2	P36749	0	4	Minor capsid protein L2	w
+MINOR	virus	P36750	L2	P36750	0	6	Minor capsid protein L2	w
+MINOR	virus	P36751	L2	P36751	1	6	Minor capsid protein L2	w
+MINOR	virus	P36752	L2	P36752	0	6	Minor capsid protein L2	w
+MINOR	virus	P36753	L2	P36753	0	6	Minor capsid protein L2	w
+MINOR	virus	P36754	L2	P36754	1	6	Minor capsid protein L2	w
+MINOR	virus	P36755	L2	P36755	1	6	Minor capsid protein L2	w
+MINOR	virus	P36756	L2	P36756	1	6	Minor capsid protein L2	w
+MINOR	virus	P36757	L2	P36757	0	6	Minor capsid protein L2	w
+MINOR	virus	P36758	L2	P36758	0	6	Minor capsid protein L2	w
+MINOR	virus	P36760	L2	P36760	1	6	Minor capsid protein L2	w
+MINOR	virus	P36761	L2	P36761	3	6	Minor capsid protein L2	w
+MINOR	virus	P36762	L2	P36762	0	6	Minor capsid protein L2	w
+MINOR	virus	P36763	L2	P36763	0	6	Minor capsid protein L2	w
+MINOR	virus	P36764	L2	P36764	1	5	Minor capsid protein L2	w
+MINOR	virus	P36765	L2	P36765	0	5	Minor capsid protein L2	w
+MINOR	virus	P50794	L2	P50794	0	7	Minor capsid protein L2	w
+MINOR	virus	P50795	L2	P50795	0	7	Minor capsid protein L2	w
+MINOR	virus	P50796	L2	P50796	0	7	Minor capsid protein L2	w
+MINOR	virus	P50797	L2	P50797	1	7	Minor capsid protein L2	w
+MINOR	virus	P50798	L2	P50798	0	7	Minor capsid protein L2	w
+MINOR	virus	P50799	L2	P50799	1	8	Minor capsid protein L2	w
+MINOR	virus	P50800	L2	P50800	1	8	Minor capsid protein L2	w
+MINOR	virus	P50801	L2	P50801	1	8	Minor capsid protein L2	w
+MINOR	virus	P50827	L2	P50827	0	7	Minor capsid protein L2	w
+MINOR	virus	P54636	ORF3	P54636	3	8	Minor capsid protein VP2	w
+MINOR	virus	P89682	ORF3	P89682	0	8	Minor capsid protein VP2	w
+MINOR	virus	Q02275	L2	Q02275	2	9	Minor capsid protein L2	w
+MINOR	virus	Q02276	L2	Q02276	2	8	Minor capsid protein L2	w
+MINOR	virus	Q06RH1	L2	Q06RH1	0	6	Minor capsid protein L2	w
+MINOR	virus	Q07862	L2	Q07862	0	8	Minor capsid protein L2	w
+MINOR	virus	Q07863	L2	Q07863	0	8	Minor capsid protein L2	w
+MINOR	virus	Q07875	L2	Q07875	0	8	Minor capsid protein L2	w
+MINOR	virus	Q0QIH6	L2	Q0QIH6	0	7	Minor capsid protein L2	w
+MINOR	virus	Q0QLX2	L2	Q0QLX2	1	6	Minor capsid protein L2	w
+MINOR	virus	Q1AHR8	L2	Q1AHR8	0	6	Minor capsid protein L2	w
+MINOR	virus	Q1AHS7	L2	Q1AHS7	1	8	Minor capsid protein L2	w
+MINOR	virus	Q1AHT2	L2	Q1AHT2	0	6	Minor capsid protein L2	w
+MINOR	virus	Q1I122	L2	Q1I122	0	7	Minor capsid protein L2	w
+MINOR	virus	Q1XA70	L2	Q1XA70	0	7	Minor capsid protein L2	w
+MINOR	virus	Q20HX8		Q20HX8	0	6	Minor capsid protein	w
+MINOR	virus	Q20HX9		Q20HX9	0	6	Minor capsid protein	w
+MINOR	virus	Q20HY4		Q20HY4	0	6	Minor capsid protein	w
+MINOR	virus	Q20HY5		Q20HY5	1	6	Minor capsid protein	w
+MINOR	virus	Q288N6	ORF2	Q288N6	0	8	Minor capsid protein VP2	w
+MINOR	virus	Q2VJB5	L2	Q2VJB5	1	7	Minor capsid protein L2	w
+MINOR	virus	Q2VJC2	L2	Q2VJC2	2	7	Minor capsid protein L2	w
+MINOR	virus	Q2VJC9	L2	Q2VJC9	2	8	Minor capsid protein L2	w
+MINOR	virus	Q30BI7	L2	Q30BI7	0	7	Minor capsid protein L2	w
+MINOR	virus	Q4QVZ9	L2	Q4QVZ9	1	7	Minor capsid protein L2	w
+MINOR	virus	Q5IRF1	L2	Q5IRF1	2	7	Minor capsid protein L2	w
+MINOR	virus	Q5UUY0	L2	Q5UUY0	1	7	Minor capsid protein L2	w
+MINOR	virus	Q647H6	L2	Q647H6	0	8	Minor capsid protein L2	w
+MINOR	virus	Q676U7	L2	Q676U7	1	7	Minor capsid protein L2	w
+MINOR	virus	Q69016	ORF2	Q69016	2	9	Minor capsid protein VP2	w
+MINOR	virus	Q6TY24	L2	Q6TY24	0	7	Minor capsid protein L2	w
+MINOR	virus	Q6TY31	L2	Q6TY31	0	7	Minor capsid protein L2	w
+MINOR	virus	Q705C7	L2	Q705C7	0	8	Minor capsid protein L2	w
+MINOR	virus	Q705D4	L2	Q705D4	0	7	Minor capsid protein L2	w
+MINOR	virus	Q705E4	L2	Q705E4	2	10	Minor capsid protein L2	w
+MINOR	virus	Q705F1	L2	Q705F1	0	7	Minor capsid protein L2	w
+MINOR	virus	Q705F9	L2	Q705F9	0	9	Minor capsid protein L2	w
+MINOR	virus	Q705H5	L2	Q705H5	2	10	Minor capsid protein L2	w
+MINOR	virus	Q77DV7	L2	Q77DV7	1	7	Minor capsid protein L2	w
+MINOR	virus	Q77MZ0		Q77MZ0	1	9	Minor capsid protein	w
+MINOR	virus	Q77MZ1		Q77MZ1	1	9	Minor capsid protein	w
+MINOR	virus	Q80905	L2	Q80905	0	7	Minor capsid protein L2	w
+MINOR	virus	Q80912	L2	Q80912	0	7	Minor capsid protein L2	w
+MINOR	virus	Q80918	L2	Q80918	2	7	Minor capsid protein L2	w
+MINOR	virus	Q80925	L2	Q80925	1	7	Minor capsid protein L2	w
+MINOR	virus	Q80932	L2	Q80932	0	7	Minor capsid protein L2	w
+MINOR	virus	Q80946	L2	Q80946	0	7	Minor capsid protein L2	w
+MINOR	virus	Q80953	L2	Q80953	1	7	Minor capsid protein L2	w
+MINOR	virus	Q80960	L2	Q80960	1	7	Minor capsid protein L2	w
+MINOR	virus	Q80FI4		Q80FI4	0	6	Minor capsid protein	w
+MINOR	virus	Q80FI5		Q80FI5	1	6	Minor capsid protein	w
+MINOR	virus	Q81023	L2	Q81023	1	8	Minor capsid protein L2	w
+MINOR	virus	Q81970	ORF putative L2	Q81970	0	8	Minor capsid protein L2	w
+MINOR	virus	Q82002	L2	Q82002	0	8	Minor capsid protein L2	w
+MINOR	virus	Q82009	L2	Q82009	2	6	Minor capsid protein L2	w
+MINOR	virus	Q83885	ORF3	Q83885	1	8	Minor capsid protein VP2	w
+MINOR	virus	Q84180		Q84180	0	6	Minor capsid protein	w
+MINOR	virus	Q84358	L2	Q84358	0	7	Minor capsid protein L2	w
+MINOR	virus	Q85440		Q85440	1	13	Minor outer capsid protein P9	w
+MINOR	virus	Q86281		Q86281	0	11	Putative minor structural protein VP5	w
+MINOR	virus	Q89892	L2	Q89892	1	7	Minor capsid protein L2	w
+MINOR	virus	Q8B5B1	L2	Q8B5B1	0	7	Minor capsid protein L2	w
+MINOR	virus	Q8B5W4	L2	Q8B5W4	1	8	Minor capsid protein L2	w
+MINOR	virus	Q8BDG3	L2	Q8BDG3	2	7	Minor capsid protein L2	w
+MINOR	virus	Q8BDQ9	L2	Q8BDQ9	0	9	Minor capsid protein L2	w
+MINOR	virus	Q8JN59	ORF2	Q8JN59	0	8	Minor capsid protein VP2	w
+MINOR	virus	Q8JN96	L2	Q8JN96	2	7	Minor capsid protein L2	w
+MINOR	virus	Q8JTB8	L2	Q8JTB8	1	7	Minor capsid protein L2	w
+MINOR	virus	Q8JTG3	L2	Q8JTG3	2	7	Minor capsid protein L2	w
+MINOR	virus	Q8QQB7	L2	Q8QQB7	1	7	Minor capsid protein L2	w
+MINOR	virus	Q8QQV5		Q8QQV5	0	4	Minor capsid protein VP1	w
+MINOR	virus	Q8UZ13	l2	Q8UZ13	0	8	Minor capsid protein L2	w
+MINOR	virus	Q8UZ79		Q8UZ79	1	8	Minor structural protein	w
+MINOR	virus	Q91AX1	L2	Q91AX1	0	7	Minor capsid protein L2	w
+MINOR	virus	Q91E12		Q91E12	0	13	Minor core structural protein	w
+MINOR	virus	Q98632		Q98632	0	13	Minor outer capsid protein P2	w
+MINOR	virus	Q99FW8	L2	Q99FW8	1	7	Minor capsid protein L2	w
+MINOR	virus	Q9DHD4	l2	Q9DHD4	0	7	Minor capsid protein L2	w
+MINOR	virus	Q9IR53	L2	Q9IR53	1	8	Minor capsid protein L2	w
+MINOR	virus	Q9J025	L2	Q9J025	1	9	Minor capsid protein L2	w
+MINOR	virus	Q9JH45	L2	Q9JH45	1	8	Minor capsid protein L2	w
+MINOR	virus	Q9QEJ4	ORF2	Q9QEJ4	0	8	Minor capsid protein VP2	w
+MINOR	virus	Q9WHG6	L2	Q9WHG6	1	8	Minor capsid protein L2	w
+MINOR	virus	Q9WNM5	L2	Q9WNM5	1	7	Minor capsid protein L2	w
+MINOR	virus	R4L1H5	VP1	R4L1H5	0	4	Minor capsid protein VP1	w
+MINOR	virus	R4L1I0	VP1	R4L1I0	0	4	Minor capsid protein VP1	w
+MINOR	virus	R4V8L7	L2	R4V8L7	0	8	Minor capsid protein L2	w
+MINOR	virus	R9QCJ0	L2	R9QCJ0	1	7	Minor capsid protein L2	w
+MINOR	virus	R9RYS7	L2	R9RYS7	1	7	Minor capsid protein L2	w
+MINOR	virus	S4TH18	L2	S4TH18	0	6	Minor capsid protein L2	w
+MINOR	virus	S5M639		S5M639	1	5	Minor capsid protein	w
+MINOR	virus	S5MI35		S5MI35	1	5	Minor capsid protein VP2	w
+MINOR	virus	S5RRZ6	L2	S5RRZ6	0	7	Minor capsid protein L2	w
+MINOR	virus	S6FS07	L2	S6FS07	0	6	Minor capsid protein L2	w
+MINOR	virus	T1YE43	L2	T1YE43	1	8	Minor capsid protein L2	w
+MINOR	virus	T2D2X3	L2	T2D2X3	1	6	Minor capsid protein L2	w
+MINOR	virus	T2FEJ9	AelPyV_gp3	T2FEJ9	0	5	Minor capsid protein VP2	w
+MINOR	virus	T2FFJ0	AelPyV_gp2	T2FFJ0	1	5	Minor capsid protein	w
+MINOR	virus	U5YQG2	VP1	U5YQG2	0	4	Minor capsid protein VP1	w
+MINOR	virus	U6BN93	L2	U6BN93	0	7	Minor capsid protein L2	w
+MINOR	virus	U6BNC2	L2	U6BNC2	0	6	Minor capsid protein L2	w
+MINOR	virus	U6ELD1	L2	U6ELD1	0	7	Minor capsid protein L2	w
+MINOR	virus	U6ELR9	L2	U6ELR9	1	6	Minor capsid protein L2	w
+MINOR	virus	V5K6W8	VP3	V5K6W8	0	6	Minor capsid protein	w
+MINOR	virus	V5K7D5	VP2	V5K7D5	1	6	Minor capsid protein	w
+MINOR	virus	V5W3P4	L2	V5W3P4	1	7	Minor capsid protein L2	w
+MINOR	virus	V5W3W4	L2	V5W3W4	1	6	Minor capsid protein L2	w
+MINOR	virus	V5W3Y1	L2	V5W3Y1	0	7	Minor capsid protein L2	w
+MINOR	virus	V9P889	L2	V9P889	0	5	Minor capsid protein L2	w
+MINOR	virus	W5QK84	L2	W5QK84	1	6	Minor capsid protein L2	w
+MINOR	virus	W5QK89	L2	W5QK89	0	6	Minor capsid protein L2	w
+MINOR	virus	W5QK97	L2	W5QK97	0	6	Minor capsid protein L2	w
+MINOR	virus	W5QK99	L2	W5QK99	0	6	Minor capsid protein L2	w
+MINOR	virus	W5ZT00	L2	W5ZT00	0	5	Minor capsid protein L2	w
+MINOR	virus	W8EAB7	L2	W8EAB7	0	6	Minor capsid protein L2	w
+MINOR	virus	W8EC64	L2	W8EC64	1	6	Minor capsid protein L2	w
+MINOR	virus	W8EFZ8	L2	W8EFZ8	0	6	Minor capsid protein L2	w
+MINOR	virus	W8EH50	L2	W8EH50	1	6	Minor capsid protein L2	w
+MINOR	virus	W8R5Z3	L2	W8R5Z3	0	7	Minor capsid protein L2	w
+MINOR	virus	W8ZM63	L2	W8ZM63	0	6	Minor capsid protein L2	w
+MINOR	virus	X2DBW4	L2	X2DBW4	0	6	Minor capsid protein L2	w
+MINOR	virus	X2GB93	L2	X2GB93	0	7	Minor capsid protein L2	w
+MINOR	worm	Q20724	spig-9	Q20724	0	2	Minor capsid protein	w
+MINOR	worm	Q9N412	rexd-1	Q9N412	0	2	Minor tail protein	w
+MINOR	zebrafish	Q6IQA7	hm13	Q6IQA7	0	7	Histocompatibility (minor) 13	w
+MINOS1	human	Q5TGZ0	MICOS10	Q5TGZ0	22	134		
+MINOS2	human	Q16891	IMMT	Q16891	32	456		
+MINOS3	human	Q9NX63	CHCHD3	Q9NX63	26	252		
+MINOTAUR	fly	FBgn0027579	mino	Q9Y137	1	16	BcDNA.GH07066 (Minotaur, isoform A (EC 2.3.1.15)) (Minotaur,	w
+MINP1_HUMAN	human	Q9UNW1	MINPP1	Q9UNW1	9	69		
+MINPP1	human	Q9UNW1	MINPP1	Q9UNW1	9	69	Multiple inositol polyphosphate phosphatase 1 (EC 3.1.3.62) 	
+MINPP1	mus-musculus	Q9Z2L6	Minpp1	Q9Z2L6	0	3	Multiple inositol polyphosphate phosphatase 1	
+MINPP1	rattus-norvegicus	O35217	Minpp1	O35217	1	3	Multiple inositol polyphosphate phosphatase 1	
+MINPP1A	zebrafish	Q08CJ4	minpp1a	Q08CJ4	0	3	Multiple inositol polyphosphate phosphatase 1	
+MINT	human	P0C7P0	CISD3	P0C7P0	21	195	CDGSH iron-sulfur domain-containing protein 3, mitochondrial	w
+MINT1	human	Q02410	APBA1	Q02410	46	187		
+MINT2	human	Q99767	APBA2	Q99767	37	148		
+MINT3	human	O96018	APBA3	O96018	27	118		
+MINUS	fly	FBgn0261786	mi	Q9W1N8	2	9	LD45221p (Minus)	w
+MINUS-99	human	Q9BV90	SNRNP25	Q9BV90	22	377	U11/U12 small nuclear ribonucleoprotein 25 kDa protein (U11/	w
+MINUTE	fly	FBgn0002579	RpL36	P49630	37	305	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
+MINUTE	human	O15151	MDM4	O15151	45	289	Protein Mdm4 (Double minute 4 protein) (Mdm2-like p53-bindin	w
+MINUTE	human	Q00987	MDM2	Q00987	282	903	E3 ubiquitin-protein ligase Mdm2 (EC 2.3.2.27) (Double minut	w
+MINY1_HUMAN	human	Q8N5J2	MINDY1	Q8N5J2	10	106		
+MINY2_HUMAN	human	Q8NBR6	MINDY2	Q8NBR6	9	49		
+MINY3_HUMAN	human	Q9H8M7	MINDY3	Q9H8M7	13	103		
+MINY4_HUMAN	human	Q4G0A6	MINDY4	Q4G0A6	18	118		

@@ -1,24 +1,109 @@
-RAL2	schizosaccharomyces-pombe	P15258	ral2	P15258	0	2	Protein ral2
-RALA	mus-musculus	P63321	Rala	P63321	10	48	Ras-related protein Ral-A
-RALA	rattus-norvegicus	P63322	Rala	P63322	12	63	Ras-related protein Ral-A
-RALB	mus-musculus	Q9JIW9	Ralb	Q9JIW9	7	21	Ras-related protein Ral-B
-RALB	rattus-norvegicus	P36860	Ralb	P36860	10	45	Ras-related protein Ral-B
-RALBP1	mus-musculus	Q62172	Ralbp1	Q62172	7	52	RalA-binding protein 1
-RALBP1	rattus-norvegicus	Q62796	Ralbp1	Q62796	4	22	RalA-binding protein 1
-RALF1	arabidopsis-thaliana	Q9SRY3	RALF1	Q9SRY3	3	7	Protein RALF-like 1
-RALF23	arabidopsis-thaliana	Q9LUS7	RALF23	Q9LUS7	2	4	Rapid alkalinization factor 23
-RALFL29	arabidopsis-thaliana	A8MQP2	RALFL29	A8MQP2	0	8	Protein RALF-like 29
-RALFL4	arabidopsis-thaliana	Q9FZA0	RALFL4	Q9FZA0	1	2	Protein RALF-like 4
-RALGDS	mus-musculus	Q03385	Ralgds	Q03385	11	23	Ral guanine nucleotide dissociation stimulator
-RALGDS	rattus-norvegicus	Q03386	Ralgds	Q03386	12	25	Ral guanine nucleotide dissociation stimulator
-RALGDSL1	rattus-norvegicus	A0A0G2JV91	Ralgdsl1	A0A0G2JV91	4	6	Ral guanine nucleotide dissociation stimulator like 1
-RALGDSL2	rattus-norvegicus	Q6MGC5	Ralgdsl2	Q6MGC5	0	2	Ral guanine nucleotide dissociation stimulator-like 2
-RALGPS1	mus-musculus	A2AR50	Ralgps1	A2AR50	0	4	Ras-specific guanine nucleotide-releasing factor RalGPS1
-RALGPS1	rattus-norvegicus	D3ZLR4	Ralgps1	D3ZLR4	0	11	Ras-specific guanine nucleotide-releasing factor RalGPS1
-RALGPS2	mus-musculus	Q9ERD6	Ralgps2	Q9ERD6	3	12	Ras-specific guanine nucleotide-releasing factor RalGPS2
-RALGPS2	rattus-norvegicus	A0A0G2JTI5	Ralgps2	A0A0G2JTI5	5	18	Ral GEF with PH domain and SH3 binding motif 2
-RALY	mus-musculus	Q64012	Raly	Q64012	2	18	RNA-binding protein Raly
-RALY	rattus-norvegicus	E9PTI6	Raly	E9PTI6	3	26	RALY heterogeneous nuclear ribonucleoprotein
-RALYL	mus-musculus	Q8BTF8	Ralyl	Q8BTF8	0	7	RNA-binding Raly-like protein
-RALYL	rattus-norvegicus	D3ZW44	Ralyl	D3ZW44	1	15	RALY RNA binding protein-like
-RALYL	rattus-norvegicus	F7F855	Ralyl	F7F855	0	21	RALY RNA binding protein-like
+RAL	human	P11233	RALA	P11233	85	487		
+RAL-1	worm	H2L0Q6	ral-1	H2L0Q6	10	38	small monomeric GTPase	
+RAL-2	worm	A1Z6D0	srlf-12	A1Z6D0	0	2	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	O16948	srlf-35	O16948	0	5	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	O16949	srlf-19	O16949	0	3	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	O17974	srlf-18	O17974	0	4	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	O18128	srlf-26	O18128	0	1	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	P91548	srlf-29	P91548	0	2	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q17698	srlf-1	Q17698	1	45	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q18280	srlf-3	Q18280	0	1	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q18577	srlf-7	Q18577	1	6	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q19406	srlf-14	Q19406	0	4	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q19414	srlf-13	Q19414	0	2	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q19415	srlf-11	Q19415	0	4	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q20998	srlf-16	Q20998	0	1	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q21588	srlf-17	Q21588	0	1	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q22237	srlf-24	Q22237	0	1	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q22537	idpp-1	Q22537	1	1	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q23614	srlf-31	Q23614	0	3	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q23615	srlf-32	Q23615	0	5	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q23683	srlf-34	Q23683	0	2	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q9XUH6	srlf-4	Q9XUH6	0	1	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q9XVQ5	srlf-10	Q9XVQ5	0	6	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2	worm	Q9XVQ6	srlf-9	Q9XVQ6	0	7	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	w
+RAL-2-LIKE	worm	P50437	srlf-2	P50437	0	1	SXP/RAL-2-like protein 2	w
+RAL-A	fly	FBgn0015286	Rala	P48555	19	112	Ras-related protein Ral-a (EC 3.6.5.2)	w
+RAL-A	human	P11233	RALA	P11233	85	487	Ras-related protein Ral-A (EC 3.6.5.2)	w
+RAL-B	human	P11234	RALB	P11234	54	345	Ras-related protein Ral-B (EC 3.6.5.2)	w
+RAL-GDS-RELATED	human	Q8IZJ4	RGL4	Q8IZJ4	5	17	Ral-GDS-related protein (hRGR) (Ral guanine nucleotide disso	w
+RAL-INTERACTING	fly	FBgn0026056	Rlip	Q9VDG2	12	35	RalA-binding protein 1 (RalBP1) (Ral-interacting protein 1)	w
+RAL-INTERACTING	human	Q15311	RALBP1	Q15311	66	196	RalA-binding protein 1 (RalBP1) (76 kDa Ral-interacting prot	w
+RAL2	schizosaccharomyces-pombe	P15258	ral2	P15258	0	2	Protein ral2	
+RALA	fly	FBgn0015286	Rala	P48555	19	112	Ras-related protein Ral-a (EC 3.6.5.2)	
+RALA	human	P11233	RALA	P11233	85	487	Ras-related protein Ral-A (EC 3.6.5.2)	
+RALA	human	Q86X27	RALGPS2	Q86X27	32	140	Ras-specific guanine nucleotide-releasing factor RalGPS2 (Ra	w
+RALA	mus-musculus	P63321	Rala	P63321	10	48	Ras-related protein Ral-A	
+RALA	rattus-norvegicus	P63322	Rala	P63322	12	63	Ras-related protein Ral-A	
+RALA-BINDING	fly	FBgn0026056	Rlip	Q9VDG2	12	35	RalA-binding protein 1 (RalBP1) (Ral-interacting protein 1)	w
+RALA-BINDING	human	Q15311	RALBP1	Q15311	66	196	RalA-binding protein 1 (RalBP1) (76 kDa Ral-interacting prot	w
+RALAA	zebrafish	Q7T383	ralaa	Q7T383	12	46	small monomeric GTPase	
+RALAB	zebrafish	Q5U3A3	ralab	Q5U3A3	9	46	small monomeric GTPase	
+RALA_HUMAN	human	P11233	RALA	P11233	85	487		
+RALB	human	P11234	RALB	P11234	54	345	Ras-related protein Ral-B (EC 3.6.5.2)	
+RALB	mus-musculus	Q9JIW9	Ralb	Q9JIW9	7	21	Ras-related protein Ral-B	
+RALB	rattus-norvegicus	P36860	Ralb	P36860	10	45	Ras-related protein Ral-B	
+RALBA	zebrafish	Q6DC92	ralba	Q6DC92	10	46	small monomeric GTPase	
+RALBP1	fly	FBgn0026056	Rlip	Q9VDG2	12	35	RalA-binding protein 1 (RalBP1) (Ral-interacting protein 1)	w
+RALBP1	fly	FBgn0032341	Reps	Q8MQS4	21	72	GH06923p (RALBP1 associated Eps domain containing, isoform A	w
+RALBP1	human	Q15311	RALBP1	Q15311	66	196	RalA-binding protein 1 (RalBP1) (76 kDa Ral-interacting prot	
+RALBP1	human	Q8NFH8	REPS2	Q8NFH8	25	68	RalBP1-associated Eps domain-containing protein 2 (Partner o	w
+RALBP1	mus-musculus	Q62172	Ralbp1	Q62172	7	52	RalA-binding protein 1	
+RALBP1	rattus-norvegicus	Q62796	Ralbp1	Q62796	4	22	RalA-binding protein 1	
+RALBP1-ASSOCIATED	human	Q8NFH8	REPS2	Q8NFH8	25	68	RalBP1-associated Eps domain-containing protein 2 (Partner o	w
+RALBP1-ASSOCIATED	human	Q96D71	REPS1	Q96D71	46	133	RalBP1-associated Eps domain-containing protein 1 (RalBP1-in	w
+RALBP1-ASSOCIATED	worm	Q8MYM6	reps-1	Q8MYM6	6	26	REPS (RalBP1-associated Eps domain-containing protein) homol	w
+RALBP1-ASSOCIATED	zebrafish	Q5VSI7	reps1	Q5VSI7	6	22	RALBP1-associated Eps domain-containing 1	w
+RALBP1-INTERACTING	human	Q8NFH8	REPS2	Q8NFH8	25	68	RalBP1-associated Eps domain-containing protein 2 (Partner o	w
+RALBP1-INTERACTING	human	Q96D71	REPS1	Q96D71	46	133	RalBP1-associated Eps domain-containing protein 1 (RalBP1-in	w
+RALB_HUMAN	human	P11234	RALB	P11234	54	345		
+RALDH	human	O94788	ALDH1A2	O94788	15	143	Retinal dehydrogenase 2 (RALDH 2) (RalDH2) (EC 1.2.1.36) (Al	w
+RALDH-3	human	P47895	ALDH1A3	P47895	21	181	Retinaldehyde dehydrogenase 3 (RALDH-3) (RalDH3) (EC 1.2.1.3	w
+RALDH2	human	O94788	ALDH1A2	O94788	15	143		
+RALDH3	human	P47895	ALDH1A3	P47895	21	181	Retinaldehyde dehydrogenase 3 (RALDH-3) (RalDH3) (EC 1.2.1.3	w
+RALF1	arabidopsis-thaliana	Q9SRY3	RALF1	Q9SRY3	3	7	Protein RALF-like 1	
+RALF23	arabidopsis-thaliana	Q9LUS7	RALF23	Q9LUS7	2	4	Rapid alkalinization factor 23	
+RALFL29	arabidopsis-thaliana	A8MQP2	RALFL29	A8MQP2	0	8	Protein RALF-like 29	
+RALFL4	arabidopsis-thaliana	Q9FZA0	RALFL4	Q9FZA0	1	2	Protein RALF-like 4	
+RALGAPA1	human	Q6GYQ0	RALGAPA1	Q6GYQ0	28	98	Ral GTPase-activating protein subunit alpha-1 (GAP-related-i	
+RALGAPA2	human	Q2PPJ7	RALGAPA2	Q2PPJ7	16	67	Ral GTPase-activating protein subunit alpha-2 (250 kDa subst	
+RALGAPB	human	Q86X10	RALGAPB	Q86X10	5	108	Ral GTPase-activating protein subunit beta (p170)	
+RALGDS	human	Q12967	RALGDS	Q12967	24	78	Ral guanine nucleotide dissociation stimulator (RalGDS) (Ral	
+RALGDS	mus-musculus	Q03385	Ralgds	Q03385	11	23	Ral guanine nucleotide dissociation stimulator	
+RALGDS	rattus-norvegicus	Q03386	Ralgds	Q03386	12	25	Ral guanine nucleotide dissociation stimulator	
+RALGDS	zebrafish	B0S750	ralgds	B0S750	16	46	Si:ch211-251j10.3	
+RALGDS	zebrafish	F1QJA9	rassf7b	F1QJA9	6	7	Ras association (RalGDS/AF-6) domain family (N-terminal) mem	w
+RALGDS	zebrafish	Q7T398	rassf8b	Q7T398	6	7	Ras association (RalGDS/AF-6) domain family 8	w
+RALGDS-LIKE	human	O15211	RGL2	O15211	21	84	Ral guanine nucleotide dissociation stimulator-like 2 (RalGD	w
+RALGDS-LIKE	human	Q3MIN7	RGL3	Q3MIN7	15	90	Ral guanine nucleotide dissociation stimulator-like 3 (RalGD	w
+RALGDS-LIKE	human	Q8IZJ4	RGL4	Q8IZJ4	5	17	Ral-GDS-related protein (hRGR) (Ral guanine nucleotide disso	w
+RALGDS-LIKE	human	Q9NZL6	RGL1	Q9NZL6	20	71	Ral guanine nucleotide dissociation stimulator-like 1 (RalGD	w
+RALGDSL1	rattus-norvegicus	A0A0G2JV91	Ralgdsl1	A0A0G2JV91	4	6	Ral guanine nucleotide dissociation stimulator like 1	
+RALGDSL2	rattus-norvegicus	Q6MGC5	Ralgdsl2	Q6MGC5	0	2	Ral guanine nucleotide dissociation stimulator-like 2	
+RALGEF	human	Q12967	RALGDS	Q12967	24	78	Ral guanine nucleotide dissociation stimulator (RalGDS) (Ral	w
+RALGEF	human	Q5JS13	RALGPS1	Q5JS13	8	65	Ras-specific guanine nucleotide-releasing factor RalGPS1 (Ra	w
+RALGEF2	human	Q5JS13	RALGPS1	Q5JS13	8	65		
+RALGPS	fly	FBgn0034158	RalGPS	Q0E949	13	64	Uncharacterized protein, isoform A (Uncharacterized protein,	
+RALGPS1	human	Q5JS13	RALGPS1	Q5JS13	8	65	Ras-specific guanine nucleotide-releasing factor RalGPS1 (Ra	
+RALGPS1	mus-musculus	A2AR50	Ralgps1	A2AR50	0	4	Ras-specific guanine nucleotide-releasing factor RalGPS1	
+RALGPS1	rattus-norvegicus	D3ZLR4	Ralgps1	D3ZLR4	0	11	Ras-specific guanine nucleotide-releasing factor RalGPS1	
+RALGPS1	zebrafish	B0UXH6	ralgps1	B0UXH6	1	15	Ras-specific guanine nucleotide-releasing factor RalGPS1	w
+RALGPS1	zebrafish	B0UXH6	ralgps1	B0UXH6	1	15	Ras-specific guanine nucleotide-releasing factor RalGPS1	w
+RALGPS2	human	Q86X27	RALGPS2	Q86X27	32	140	Ras-specific guanine nucleotide-releasing factor RalGPS2 (Ra	
+RALGPS2	mus-musculus	Q9ERD6	Ralgps2	Q9ERD6	3	12	Ras-specific guanine nucleotide-releasing factor RalGPS2	
+RALGPS2	rattus-norvegicus	A0A0G2JTI5	Ralgps2	A0A0G2JTI5	5	18	Ral GEF with PH domain and SH3 binding motif 2	
+RALGPS2	zebrafish	A0A8M1PH81	ralgps2	A0A8M1PH81	1	16	Ras-specific guanine nucleotide-releasing factor RalGPS2	w
+RALGPS2	zebrafish	A0A8M1PH81	ralgps2	A0A8M1PH81	1	16	Ras-specific guanine nucleotide-releasing factor RalGPS2	w
+RALP	human	Q6S5L8	SHC4	Q6S5L8	19	51	SHC-transforming protein 4 (Rai-like protein) (RaLP) (SHC-tr	w
+RALY	human	Q9UKM9	RALY	Q9UKM9	63	380	RNA-binding protein Raly (Autoantigen p542) (Heterogeneous n	
+RALY	mus-musculus	Q64012	Raly	Q64012	2	18	RNA-binding protein Raly	
+RALY	rattus-norvegicus	E9PTI6	Raly	E9PTI6	3	26	RALY heterogeneous nuclear ribonucleoprotein	
+RALY	zebrafish	F1QAY0	raly	F1QAY0	5	110	RALY heterogeneous nuclear ribonucleoprotein	w
+RALY	zebrafish	F1QAY0	raly	F1QAY0	5	110	RALY heterogeneous nuclear ribonucleoprotein	w
+RALY-LIKE	human	Q86SE5	RALYL	Q86SE5	29	116	RNA-binding Raly-like protein (hRALYL) (Heterogeneous nuclea	w
+RALYL	human	Q86SE5	RALYL	Q86SE5	29	116	RNA-binding Raly-like protein (hRALYL) (Heterogeneous nuclea	
+RALYL	mus-musculus	Q8BTF8	Ralyl	Q8BTF8	0	7	RNA-binding Raly-like protein	
+RALYL	rattus-norvegicus	D3ZW44	Ralyl	D3ZW44	1	15	RALY RNA binding protein-like	
+RALYL	rattus-norvegicus	F7F855	Ralyl	F7F855	0	21	RALY RNA binding protein-like	
+RALYL_HUMAN	human	Q86SE5	RALYL	Q86SE5	29	116		
+RALY_HUMAN	human	Q9UKM9	RALY	Q9UKM9	63	380		

@@ -1,15 +1,60 @@
-EMP1	mus-musculus	P47801	Emp1	P47801	0	10	Epithelial membrane protein 1
-EMP1	oryza-sativa-subsp-japonica	P46520	EMP1	P46520	0	15	Embryonic abundant protein 1
-EMP1	rattus-norvegicus	P54848	Emp1	P54848	0	10	Epithelial membrane protein 1
-EMP16	zea-mays	K7W070	emp16	K7W070	0	1	EMP16
-EMP2	mus-musculus	O88662	Emp2	O88662	0	1	Epithelial membrane protein 2
-EMP2	rattus-norvegicus	Q66HH2	Emp2	Q66HH2	0	1	Epithelial membrane protein 2
-EMP24	candida-albicans-237561	Q59V63	EMP24	Q59V63	3	15	Emp24p
-EMP24	cladophialophora-carrionii	A0A1C1CUM6	EMP24	A0A1C1CUM6	5	22	Endosomal protein P24B
-EMP24	schizosaccharomyces-pombe	Q9P7I9	emp24	Q9P7I9	4	36	Endosomal protein P24B
-EMP46	candida-albicans-237561	A0A1D8PTF1	EMP46	A0A1D8PTF1	0	1	Emp46p
-EMP5	zea-mays	K4LLQ8	Emp5	K4LLQ8	0	1	EMP5
-EMPA	dictyostelium-discoideum	Q769F9	empA	Q769F9	10	31	Transmembrane emp24 domain-containing protein A
-EMPB	dictyostelium-discoideum	Q54BN0	empB	Q54BN0	5	31	Transmembrane emp24 domain-containing protein B
-EMPC	dictyostelium-discoideum	Q769F7	empC	Q769F7	5	30	Emp24/gp25L/p24 family protein
-EMPD	dictyostelium-discoideum	Q769F6	empD	Q769F6	6	33	Emp24/gp25L/p24 family protein
+EMP	fly	FBgn0010435	emp	Q9W0X0	1	26	Epithelial membrane protein, isoform B	
+EMP	human	Q7L5Y9	MAEA	Q7L5Y9	24	202		
+EMP-1	human	P54849	EMP1	P54849	5	208	Epithelial membrane protein 1 (EMP-1) (CL-20) (Protein B4B) 	w
+EMP-2	human	P54851	EMP2	P54851	2	81	Epithelial membrane protein 2 (EMP-2) (Protein XMP)	w
+EMP-3	human	P54852	EMP3	P54852	13	244	Epithelial membrane protein 3 (EMP-3) (Hematopoietic neural 	w
+EMP1	human	P54849	EMP1	P54849	5	208	Epithelial membrane protein 1 (EMP-1) (CL-20) (Protein B4B) 	
+EMP1	mus-musculus	P47801	Emp1	P47801	0	10	Epithelial membrane protein 1	
+EMP1	oryza-sativa-subsp-japonica	P46520	EMP1	P46520	0	15	Embryonic abundant protein 1	
+EMP1	rattus-norvegicus	P54848	Emp1	P54848	0	10	Epithelial membrane protein 1	
+EMP16	zea-mays	K7W070	emp16	K7W070	0	1	EMP16	
+EMP1_HUMAN	human	P54849	EMP1	P54849	5	208		
+EMP2	human	P54851	EMP2	P54851	2	81	Epithelial membrane protein 2 (EMP-2) (Protein XMP)	
+EMP2	mus-musculus	O88662	Emp2	O88662	0	1	Epithelial membrane protein 2	
+EMP2	rattus-norvegicus	Q66HH2	Emp2	Q66HH2	0	1	Epithelial membrane protein 2	
+EMP2	zebrafish	F1QIK8	emp2	F1QIK8	0	1	Epithelial membrane protein 2	
+EMP24	candida-albicans-237561	Q59V63	EMP24	Q59V63	3	15	Emp24p	
+EMP24	cladophialophora-carrionii	A0A1C1CUM6	EMP24	A0A1C1CUM6	5	22	Endosomal protein P24B	
+EMP24	fly	FBgn0045866	bai	Q8SXY6	418	2417	Transmembrane emp24 domain-containing protein bai (Protein b	w
+EMP24	fly	FBgn0053105	p24-2	Q86BA5	211	2404	Transmembrane emp24 domain-containing protein eca	w
+EMP24	fly	FBgn0069242	eca	Q9I7K5	223	2408	Transmembrane emp24 domain-containing protein eca (Protein e	w
+EMP24	human	A0A0A6YYA0	TMED7-TICAM2	A0A0A6YYA0	12	125	Transmembrane emp24 domain-containing protein 7	w
+EMP24	human	P49755	TMED10	P49755	37	346	Transmembrane emp24 domain-containing protein 10 (Protein TM	w
+EMP24	human	Q13445	TMED1	Q13445	23	97	Transmembrane emp24 domain-containing protein 1 (Interleukin	w
+EMP24	human	Q15363	TMED2	Q15363	24	241	Transmembrane emp24 domain-containing protein 2 (Membrane pr	w
+EMP24	human	Q7Z7H5	TMED4	Q7Z7H5	13	106	Transmembrane emp24 domain-containing protein 4 (Endoplasmic	w
+EMP24	human	Q8WW62	TMED6	Q8WW62	17	65	Transmembrane emp24 domain-containing protein 6 (p24 family 	w
+EMP24	human	Q9BVK6	TMED9	Q9BVK6	19	190	Transmembrane emp24 domain-containing protein 9 (GMP25) (Gly	w
+EMP24	human	Q9Y3A6	TMED5	Q9Y3A6	15	81	Transmembrane emp24 domain-containing protein 5 (p24 family 	w
+EMP24	human	Q9Y3B3	TMED7	Q9Y3B3	27	290	Transmembrane emp24 domain-containing protein 7 (p24 family 	w
+EMP24	human	Q9Y3Q3	TMED3	Q9Y3Q3	22	204	Transmembrane emp24 domain-containing protein 3 (Membrane pr	w
+EMP24	schizosaccharomyces-pombe	Q9P7I9	emp24	Q9P7I9	4	36	Endosomal protein P24B	
+EMP24	worm	A4F319	tmed-12	A4F319	3	58	Transmembrane emp24 domain-containing protein eca	w
+EMP24	worm	Q20546	tmed-10	Q20546	9	123	Transmembrane emp24 domain-containing protein bai	w
+EMP24	worm	Q9U1Z4	tmed-4	Q9U1Z4	6	61	Transmembrane emp24 domain-containing protein eca	w
+EMP24	yeast	P32803	EMP24	P32803	11	68	Endosomal protein P24B	
+EMP24	zebrafish	A0A8M1MZX1	tmed4	A0A8M1MZX1	8	11	Transmembrane emp24 domain-containing protein 4 precursor	w
+EMP24	zebrafish	A0A8M9Q5S5	tmed2	A0A8M9Q5S5	13	63	Transmembrane emp24 domain-containing protein 2 isoform X1	w
+EMP24	zebrafish	B3DKM3	tmed3	B3DKM3	13	191	Transmembrane emp24 domain-containing protein 3 precursor	w
+EMP24	zebrafish	E7F154	tmed6	E7F154	5	5	Transmembrane emp24 domain-containing protein 6	w
+EMP24	zebrafish	F1QF76	tmed1b	F1QF76	5	5	Transmembrane emp24 domain-containing protein 1b isoform X1	w
+EMP24	zebrafish	F1RAM9	tmed7	F1RAM9	12	190	Transmembrane emp24 domain-containing protein 7	w
+EMP24	zebrafish	Q6DBT1	tmed1a	Q6DBT1	5	5	Transmembrane emp24 domain-containing protein 1a precursor	w
+EMP24	zebrafish	Q7T2E9	tmed5	Q7T2E9	5	5	Transmembrane emp24 domain-containing protein 5 precursor	w
+EMP2_HUMAN	human	P54851	EMP2	P54851	2	81		
+EMP3	human	P54852	EMP3	P54852	13	244	Epithelial membrane protein 3 (EMP-3) (Hematopoietic neural 	
+EMP3_HUMAN	human	P54852	EMP3	P54852	13	244		
+EMP46	candida-albicans-237561	A0A1D8PTF1	EMP46	A0A1D8PTF1	0	1	Emp46p	
+EMP46	worm	Q9N2V5	CELE_Y95B8A.4	Q9N2V5	0	1	Protein EMP46	w
+EMP46	yeast	Q12396	EMP46	Q12396	2	10	Protein EMP46	
+EMP47	yeast	P43555	EMP47	P43555	3	49	Protein EMP47	
+EMP5	zea-mays	K4LLQ8	Emp5	K4LLQ8	0	1	EMP5	
+EMP55	human	Q00013	MPP1	Q00013	38	346		
+EMP65	yeast	P40085	EMP65	P40085	1	6	Endoplasmic reticulum membrane protein 65	
+EMP70	yeast	P32802	EMP70	P32802	0	11	Transmembrane 9 superfamily member 1	
+EMPA	dictyostelium-discoideum	Q769F9	empA	Q769F9	10	31	Transmembrane emp24 domain-containing protein A	
+EMPB	dictyostelium-discoideum	Q54BN0	empB	Q54BN0	5	31	Transmembrane emp24 domain-containing protein B	
+EMPC	dictyostelium-discoideum	Q769F7	empC	Q769F7	5	30	Emp24/gp25L/p24 family protein	
+EMPD	dictyostelium-discoideum	Q769F6	empD	Q769F6	6	33	Emp24/gp25L/p24 family protein	
+EMPTY	human	Q04741	EMX1	Q04741	108	378	Homeobox protein EMX1 (Empty spiracles homolog 1) (Empty spi	w
+EMPTY	human	Q04743	EMX2	Q04743	129	445	Homeobox protein EMX2 (Empty spiracles homolog 2) (Empty spi	w

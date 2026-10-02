@@ -1,41 +1,401 @@
-PAP02	glycine-max	K7MPH5	PAP02	K7MPH5	1	1	Multiple inositol polyphosphate phosphatase 1
-PAP1	arabidopsis-thaliana	O81439	PAP1	O81439	1	13	Probable plastid-lipid-associated protein 1, chloroplastic
-PAP1	cladophialophora-carrionii	A0A1C1CMA6	PAP1	A0A1C1CMA6	8	69	Poly(A) polymerase
-PAP1	schizosaccharomyces-pombe	Q01663	pap1	Q01663	3	13	AP-1-like transcription factor
-PAP10	arabidopsis-thaliana	Q8W4F1	PAP10	Q8W4F1	0	6	Probable plastid-lipid-associated protein 10, chloroplastic
-PAP13	arabidopsis-thaliana	Q8S9M1	PAP13	Q8S9M1	0	4	Probable plastid-lipid-associated protein 13, chloroplastic
-PAP14	arabidopsis-thaliana	Q9LV04	PAP14	Q9LV04	7	238	Probable plastid-lipid-associated protein 14, chloroplastic
-PAP17	arabidopsis-thaliana	Q9SCX8	PAP17	Q9SCX8	0	6	Purple acid phosphatase 17
-PAP2	arabidopsis-thaliana	O49629	PAP2	O49629	2	10	Probable plastid-lipid-associated protein 2, chloroplastic
-PAP2	arabidopsis-thaliana	Q9LMG7	PAP2	Q9LMG7	0	1	Probable inactive purple acid phosphatase 2
-PAP2	oryza-sativa-subsp-japonica	Q6K439	PAP2	Q6K439	0	3	Probable plastid-lipid-associated protein 2, chloroplastic
-PAP3	arabidopsis-thaliana	Q8H129	PAP3	Q8H129	0	7	Purple acid phosphatase 3
-PAP4	arabidopsis-thaliana	Q8VYU7	PAP4	Q8VYU7	0	6	Purple acid phosphatase 4
-PAP6	arabidopsis-thaliana	Q9LW57	PAP6	Q9LW57	1	4	Plastid-lipid-associated protein 6, chloroplastic
-PAP7	arabidopsis-thaliana	Q8S341	PAP7	Q8S341	0	6	Purple acid phosphatase 7
-PAP8	arabidopsis-thaliana	Q8VYZ2	PAP8	Q8VYZ2	0	6	Purple acid phosphatase 8
-PAP85	arabidopsis-thaliana	Q9LUJ7	PAP85	Q9LUJ7	0	2	Vicilin-like seed storage protein At3g22640
-PAP9	arabidopsis-thaliana	Q9M2P7	PAP9	Q9M2P7	0	4	Probable plastid-lipid-associated protein 9, chloroplastic
-PAPA	candida-albicans-237561	Q9UW26	PAPA	Q9UW26	4	55	Poly(A) polymerase PAPa
-PAPA	dictyostelium-discoideum	Q54J73	papA	Q54J73	7	43	Poly(A) polymerase
-PAPA1	mycobacterium-tuberculosis	P9WIK9	papA1	P9WIK9	1	86	2'-acyl-2-O-sulfo-trehalose (hydroxy)phthioceranyltransferase PapA1
-PAPA2	mycobacterium-tuberculosis	P9WIK7	papA2	P9WIK7	0	86	Trehalose-2-sulfate acyltransferase PapA2
-PAPA3	mycobacterium-leprae	Q49618	papA3	Q49618	0	49	Condensation domain-containing protein
-PAPA3	mycobacterium-tuberculosis	P9WIK5	papA3	P9WIK5	1	86	Acyltransferase PapA3
-PAPA4	mycobacterium-tuberculosis	O53902	papA4	O53902	1	86	Probable conserved polyketide synthase associated protein PapA4
-PAPLE22	leishmania-infantum	Q9NJS2	PAPLE22	Q9NJS2	0	4	Reticulon-like protein
-PAPLN	mus-musculus	Q9EPX2	Papln	Q9EPX2	0	1	Papilin
-PAPOLA	mus-musculus	Q61183	Papola	Q61183	10	69	Poly(A) polymerase alpha
-PAPOLA	rattus-norvegicus	A0A0G2K0C9	Papola	A0A0G2K0C9	12	77	Poly(A) polymerase
-PAPOLB	mus-musculus	Q9WVP6	Papolb	Q9WVP6	9	54	Poly(A) polymerase beta
-PAPOLG	mus-musculus	Q6PCL9	Papolg	Q6PCL9	12	55	Poly(A) polymerase gamma
-PAPOLG	rattus-norvegicus	D3ZAN6	Papolg	D3ZAN6	7	73	polynucleotide adenylyltransferase
-PAPP5	arabidopsis-thaliana	Q84XU2	PAPP5	Q84XU2	4	14	Serine/threonine-protein phosphatase 5
-PAPS1	arabidopsis-thaliana	Q9LMT2	PAPS1	Q9LMT2	17	125	Nuclear poly(A) polymerase 1
-PAPS2	arabidopsis-thaliana	O82312	PAPS2	O82312	10	119	Nuclear poly(A) polymerase 2
-PAPS3	arabidopsis-thaliana	Q56XM9	PAPS3	Q56XM9	4	128	Nuclear poly(A) polymerase 3
-PAPS4	arabidopsis-thaliana	Q8VYW1	PAPS4	Q8VYW1	7	129	Nuclear poly(A) polymerase 4
-PAPSS1	mus-musculus	Q60967	Papss1	Q60967	1	8	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 1
-PAPSS1	rattus-norvegicus	A0A0G2K0L0	Papss1	A0A0G2K0L0	0	7	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 1
-PAPSS2	mus-musculus	O88428	Papss2	O88428	1	7	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 2
-PAPSS2	rattus-norvegicus	B5DFH4	Papss2	B5DFH4	0	6	3'-phosphoadenosine 5'-phosphosulfate synthase 2
+PAP	human	P51003	PAPOLA	P51003	29	212		
+PAP	human	Q06141	REG3A	Q06141	21	190		
+PAP-1	human	Q8TA86	RP9	Q8TA86	8	123	Retinitis pigmentosa 9 protein (Pim-1-associated protein) (P	w
+PAP-1	worm	Q9U2P3	pap-1	Q9U2P3	9	54	Poly(A) polymerase	
+PAP-1-ASSOCIATED	human	Q9C086	INO80B	Q9C086	44	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	w
+PAP-1B	human	Q6UW15	REG3G	Q6UW15	26	200	Regenerating islet-derived protein 3-gamma (REG-3-gamma) (Pa	w
+PAP-2	worm	Q09995	pap-2	Q09995	14	69	Poly(A) polymerase	
+PAP-2-LIKE	human	Q6T4P5	PLPPR3	Q6T4P5	3	44	Phospholipid phosphatase-related protein type 3 (Inactive ph	w
+PAP-3	worm	G5EBX5	pap-3	G5EBX5	11	55	Poly(A) polymerase	
+PAP-ALPHA	human	P51003	PAPOLA	P51003	29	212	Poly(A) polymerase alpha (PAP-alpha) (EC 2.7.7.19) (Polynucl	w
+PAP-ASSOCIATED	human	Q5XG87	TENT4A	Q5XG87	7	93	Terminal nucleotidyltransferase 4A (DNA polymerase sigma) (L	w
+PAP-ASSOCIATED	human	Q6PIY7	TENT2	Q6PIY7	5	69	Poly(A) RNA polymerase GLD2 (hGLD-2) (EC 2.7.7.19) (PAP-asso	w
+PAP-ASSOCIATED	human	Q8NDF8	TENT4B	Q8NDF8	27	196	Terminal nucleotidyltransferase 4B (Non-canonical poly(A) RN	w
+PAP-ASSOCIATED	human	Q9NVV4	MTPAP	Q9NVV4	14	139	Poly(A) RNA polymerase, mitochondrial (PAP) (EC 2.7.7.19) (P	w
+PAP-ASSOCIATED	worm	G5EFR3	gldr-2	G5EFR3	0	11	PAP-associated domain-containing protein	w
+PAP-ASSOCIATED	worm	O44768	rde-3	O44768	1	6	PAP-associated domain-containing protein	w
+PAP-ASSOCIATED	worm	P91361	pup-3	P91361	0	7	PAP-associated domain-containing protein	w
+PAP-ASSOCIATED	worm	Q09408	pup-2	Q09408	0	4	PAP-associated domain-containing protein	w
+PAP-ASSOCIATED	worm	Q19090	CELE_F01F1.11	Q19090	0	6	PAP-associated domain-containing protein	w
+PAP-ASSOCIATED	worm	Q9GR67	CELE_Y34F4.3	Q9GR67	0	3	PAP-associated domain-containing protein	w
+PAP-BETA	human	Q9NRJ5	PAPOLB	Q9NRJ5	17	75	Poly(A) polymerase beta (PAP-beta) (EC 2.7.7.19) (Polynucleo	w
+PAP-GAMMA	human	Q9BWT3	PAPOLG	Q9BWT3	26	152	Poly(A) polymerase gamma (PAP-gamma) (EC 2.7.7.19) (Neo-poly	w
+PAP-I	human	Q9NXJ5	PGPEP1	Q9NXJ5	11	154	Pyroglutamyl-peptidase 1 (EC 3.4.19.3) (5-oxoprolyl-peptidas	w
+PAP-II	human	Q9UKU6	TRHDE	Q9UKU6	14	46	Thyrotropin-releasing hormone-degrading ectoenzyme (TRH-DE) 	w
+PAP02	glycine-max	K7MPH5	PAP02	K7MPH5	1	1	Multiple inositol polyphosphate phosphatase 1	
+PAP1	arabidopsis-thaliana	O81439	PAP1	O81439	1	13	Probable plastid-lipid-associated protein 1, chloroplastic	
+PAP1	cladophialophora-carrionii	A0A1C1CMA6	PAP1	A0A1C1CMA6	8	69	Poly(A) polymerase	
+PAP1	human	Q06141	REG3A	Q06141	21	190		
+PAP1	human	Q13442	PDAP1	Q13442	21	252	28 kDa heat- and acid-stable phosphoprotein (PDGF-associated	w
+PAP1	schizosaccharomyces-pombe	Q01663	pap1	Q01663	3	13	AP-1-like transcription factor	
+PAP1	yeast	P29468	PAP1	P29468	4	61	Poly(A) polymerase	
+PAP10	arabidopsis-thaliana	Q8W4F1	PAP10	Q8W4F1	0	6	Probable plastid-lipid-associated protein 10, chloroplastic	
+PAP13	arabidopsis-thaliana	Q8S9M1	PAP13	Q8S9M1	0	4	Probable plastid-lipid-associated protein 13, chloroplastic	
+PAP14	arabidopsis-thaliana	Q9LV04	PAP14	Q9LV04	7	238	Probable plastid-lipid-associated protein 14, chloroplastic	
+PAP17	arabidopsis-thaliana	Q9SCX8	PAP17	Q9SCX8	0	6	Purple acid phosphatase 17	
+PAP1B	human	Q6UW15	REG3G	Q6UW15	26	200		
+PAP1L_HUMAN	human	Q4VXU2	PABPC1L	Q4VXU2	6	89		
+PAP1M_HUMAN	human	Q5JQF8	PABPC1L2A	Q5JQF8	4	65		
+PAP2	arabidopsis-thaliana	O49629	PAP2	O49629	2	10	Probable plastid-lipid-associated protein 2, chloroplastic	
+PAP2	arabidopsis-thaliana	Q9LMG7	PAP2	Q9LMG7	0	1	Probable inactive purple acid phosphatase 2	
+PAP2	human	Q9BWT3	PAPOLG	Q9BWT3	26	152		
+PAP2	oryza-sativa-subsp-japonica	Q6K439	PAP2	Q6K439	0	3	Probable plastid-lipid-associated protein 2, chloroplastic	
+PAP2	yeast	P53632	PAP2	P53632	8	63	Poly(A) RNA polymerase protein 2	
+PAP2-ALPHA	human	O14494	PLPP1	O14494	5	72	Phospholipid phosphatase 1 (EC 3.1.3.-) (EC 3.1.3.106) (EC 3	w
+PAP2-BETA	human	O14495	PLPP3	O14495	6	97	Phospholipid phosphatase 3 (EC 3.1.3.-) (EC 3.1.3.4) (Lipid 	w
+PAP2-G	human	O43688	PLPP2	O43688	6	57	Phospholipid phosphatase 2 (EC 3.1.3.-) (EC 3.1.3.4) (Lipid 	w
+PAP2-GAMMA	human	O43688	PLPP2	O43688	6	57	Phospholipid phosphatase 2 (EC 3.1.3.-) (EC 3.1.3.4) (Lipid 	w
+PAP21	human	Q9BSG0	PRADC1	Q9BSG0	4	35		
+PAP21-LIKE	fly	FBgn0034803	CG9849	Q9W1W9	43	248	PRADC1-like protein (PAP21-like protein)	w
+PAP2D	human	Q32ZL2	PLPPR5	Q32ZL2	6	32		
+PAP3	arabidopsis-thaliana	Q8H129	PAP3	Q8H129	0	7	Purple acid phosphatase 3	
+PAP4	arabidopsis-thaliana	Q8VYU7	PAP4	Q8VYU7	0	6	Purple acid phosphatase 4	
+PAP6	arabidopsis-thaliana	Q9LW57	PAP6	Q9LW57	1	4	Plastid-lipid-associated protein 6, chloroplastic	
+PAP7	arabidopsis-thaliana	Q8S341	PAP7	Q8S341	0	6	Purple acid phosphatase 7	
+PAP8	arabidopsis-thaliana	Q8VYZ2	PAP8	Q8VYZ2	0	6	Purple acid phosphatase 8	
+PAP85	arabidopsis-thaliana	Q9LUJ7	PAP85	Q9LUJ7	0	2	Vicilin-like seed storage protein At3g22640	
+PAP9	arabidopsis-thaliana	Q9M2P7	PAP9	Q9M2P7	0	4	Probable plastid-lipid-associated protein 9, chloroplastic	
+PAPA	candida-albicans-237561	Q9UW26	PAPA	Q9UW26	4	55	Poly(A) polymerase PAPa	
+PAPA	dictyostelium-discoideum	Q54J73	papA	Q54J73	7	43	Poly(A) polymerase	
+PAPA-1	human	Q9C086	INO80B	Q9C086	44	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	w
+PAPA1	human	Q9C086	INO80B	Q9C086	44	312		
+PAPA1	mycobacterium-tuberculosis	P9WIK9	papA1	P9WIK9	1	86	2'-acyl-2-O-sulfo-trehalose (hydroxy)phthioceranyltransferas	
+PAPA2	mycobacterium-tuberculosis	P9WIK7	papA2	P9WIK7	0	86	Trehalose-2-sulfate acyltransferase PapA2	
+PAPA3	mycobacterium-leprae	Q49618	papA3	Q49618	0	49	Condensation domain-containing protein	
+PAPA3	mycobacterium-tuberculosis	P9WIK5	papA3	P9WIK5	1	86	Acyltransferase PapA3	
+PAPA4	mycobacterium-tuberculosis	O53902	papA4	O53902	1	86	Probable conserved polyketide synthase associated protein Pa	
+PAPAIN	worm	O16288	CELE_W07B8.4	O16288	0	11	Peptidase C1A papain C-terminal domain-containing protein	w
+PAPAIN	worm	O16289	cpr-8	O16289	0	13	Peptidase C1A papain C-terminal domain-containing protein	w
+PAPAIN	worm	O45466	cpr-2	O45466	0	1	Peptidase C1A papain C-terminal domain-containing protein	w
+PAPAIN	worm	Q20950	cpr-9	Q20950	0	16	Peptidase C1A papain C-terminal domain-containing protein	w
+PAPAIN	worm	Q9BL26	CELE_Y71H2AR.2	Q9BL26	0	3	Peptidase C1A papain C-terminal domain-containing protein	w
+PAPAS_HUMAN	human	Q5QFB9	PAPPA-AS1	Q5QFB9	0	4		
+PAPD1	human	Q9NVV4	MTPAP	Q9NVV4	14	139		
+PAPD1_HUMAN	human	Q9NVV4	MTPAP	Q9NVV4	14	139		
+PAPD4	human	Q6PIY7	TENT2	Q6PIY7	5	69		
+PAPD5	human	Q8NDF8	TENT4B	Q8NDF8	27	196		
+PAPD5_HUMAN	human	Q8NDF8	TENT4B	Q8NDF8	27	196		
+PAPD7	human	Q5XG87	TENT4A	Q5XG87	7	93		
+PAPD7_HUMAN	human	Q5XG87	TENT4A	Q5XG87	7	93		
+PAPG	human	Q9BWT3	PAPOLG	Q9BWT3	26	152		
+PAPI	fly	FBgn0031401	papi	Q9VQ91	5	67	Tudor and KH domain-containing protein homolog (Partner of P	
+PAPI	virus	A0A059TAS3		A0A059TAS3	0	12	A0A059TAS3_9PAPI	w
+PAPI	virus	A0A059TAS4		A0A059TAS4	0	12	A0A059TAS4_9PAPI	w
+PAPI	virus	A0A059TAV2		A0A059TAV2	0	12	A0A059TAV2_9PAPI	w
+PAPI	virus	A0A059TAV3		A0A059TAV3	0	12	A0A059TAV3_9PAPI	w
+PAPI	virus	A0A059TAW1		A0A059TAW1	1	12	A0A059TAW1_9PAPI	w
+PAPI	virus	A0A059TB08		A0A059TB08	0	12	A0A059TB08_9PAPI	w
+PAPI	virus	A0A059TB09		A0A059TB09	0	12	A0A059TB09_9PAPI	w
+PAPI	virus	A0A059TB35		A0A059TB35	0	12	A0A059TB35_9PAPI	w
+PAPI	virus	A0A059TB37		A0A059TB37	0	12	A0A059TB37_9PAPI	w
+PAPI	virus	A0A088FQM2	E4	A0A088FQM2	1	7	A0A088FQM2_9PAPI	w
+PAPI	virus	A0A0B5JF74	E5	A0A0B5JF74	0	6	A0A0B5JF74_9PAPI	w
+PAPI	virus	A0A0C5KR79	E4	A0A0C5KR79	1	8	A0A0C5KR79_9PAPI	w
+PAPI	virus	A0A0C5L0H8	E5	A0A0C5L0H8	0	8	A0A0C5L0H8_9PAPI	w
+PAPI	virus	A0A0F7CUG2	E4	A0A0F7CUG2	1	7	A0A0F7CUG2_9PAPI	w
+PAPI	virus	A0A0H4LQW4	E4	A0A0H4LQW4	1	7	A0A0H4LQW4_9PAPI	w
+PAPI	virus	A0A0H4LSV9	E4	A0A0H4LSV9	1	7	A0A0H4LSV9_9PAPI	w
+PAPI	virus	A0A0S2KP21		A0A0S2KP21	2	9	A0A0S2KP21_9PAPI	w
+PAPI	virus	A0A0S2KP48		A0A0S2KP48	1	9	A0A0S2KP48_9PAPI	w
+PAPI	virus	A0A0S2KQ38		A0A0S2KQ38	0	9	A0A0S2KQ38_9PAPI	w
+PAPI	virus	A0A0U4IR22		A0A0U4IR22	0	6	A0A0U4IR22_9PAPI	w
+PAPI	virus	A0A140CC00	E4	A0A140CC00	1	7	A0A140CC00_9PAPI	w
+PAPI	virus	A0A142FK17	E4	A0A142FK17	0	8	A0A142FK17_9PAPI	w
+PAPI	virus	A0A182BAE9		A0A182BAE9	1	6	A0A182BAE9_9PAPI	w
+PAPI	virus	A0A1B2K204	E4	A0A1B2K204	0	7	A0A1B2K204_9PAPI	w
+PAPI	virus	A0A1B2K237	L3	A0A1B2K237	1	7	A0A1B2K237_9PAPI	w
+PAPI	virus	A0A1B2RW90		A0A1B2RW90	0	9	A0A1B2RW90_9PAPI	w
+PAPI	virus	A0A1B2RW93		A0A1B2RW93	0	9	A0A1B2RW93_9PAPI	w
+PAPI	virus	A0A1B2RWA4		A0A1B2RWA4	2	9	A0A1B2RWA4_9PAPI	w
+PAPI	virus	A0A1B2RWA6		A0A1B2RWA6	0	9	A0A1B2RWA6_9PAPI	w
+PAPI	virus	A0A1B2RWA7		A0A1B2RWA7	0	9	A0A1B2RWA7_9PAPI	w
+PAPI	virus	A0A1B2RWC0		A0A1B2RWC0	1	9	A0A1B2RWC0_9PAPI	w
+PAPI	virus	A0A1C9J6Q5		A0A1C9J6Q5	1	10	A0A1C9J6Q5_9PAPI	w
+PAPI	virus	A0A1C9J6S5	E5	A0A1C9J6S5	0	10	A0A1C9J6S5_9PAPI	w
+PAPI	virus	A0A1C9J6Z1	E1^E4	A0A1C9J6Z1	1	10	A0A1C9J6Z1_9PAPI	w
+PAPI	virus	A0A1L3GV73	E4	A0A1L3GV73	1	8	A0A1L3GV73_9PAPI	w
+PAPI	virus	A0A1L3GV90	E5	A0A1L3GV90	2	8	A0A1L3GV90_9PAPI	w
+PAPI	virus	A0A1L3GVA6	E7	A0A1L3GVA6	2	8	A0A1L3GVA6_9PAPI	w
+PAPI	virus	A0A1L6KTE4	E4	A0A1L6KTE4	1	6	A0A1L6KTE4_9PAPI	w
+PAPI	virus	A0A291PWJ5	L2	A0A291PWJ5	1	7	A0A291PWJ5_9PAPI	w
+PAPI	virus	A0A291PWK3	E9	A0A291PWK3	0	7	A0A291PWK3_9PAPI	w
+PAPI	virus	A0A291PWK8	E7	A0A291PWK8	0	7	A0A291PWK8_9PAPI	w
+PAPI	virus	A0A291PWL4	E6	A0A291PWL4	0	7	A0A291PWL4_9PAPI	w
+PAPI	virus	A0A3G1E4J7	E4	A0A3G1E4J7	0	7	A0A3G1E4J7_9PAPI	w
+PAPI	virus	A3RKM0	E4	A3RKM0	1	7	A3RKM0_9PAPI	w
+PAPI	virus	A4Z4U2	E4	A4Z4U2	1	7	A4Z4U2_9PAPI	w
+PAPI	virus	A6XA92		A6XA92	1	8	A6XA92_9PAPI	w
+PAPI	virus	A6XA95		A6XA95	0	8	A6XA95_9PAPI	w
+PAPI	virus	A6XA96		A6XA96	1	8	A6XA96_9PAPI	w
+PAPI	virus	A8R8N4	E4	A8R8N4	1	7	A8R8N4_9PAPI	w
+PAPI	virus	A9CQZ7	E5	A9CQZ7	1	6	A9CQZ7_9PAPI	w
+PAPI	virus	A9CR07	E5	A9CR07	1	7	A9CR07_9PAPI	w
+PAPI	virus	A9CR13	E4	A9CR13	1	7	A9CR13_9PAPI	w
+PAPI	virus	B3ST94		B3ST94	1	8	B3ST94_9PAPI	w
+PAPI	virus	B3ST95		B3ST95	1	8	B3ST95_9PAPI	w
+PAPI	virus	B4XYE3	E4	B4XYE3	1	7	B4XYE3_9PAPI	w
+PAPI	virus	B4XYE4	E5	B4XYE4	0	7	B4XYE4_9PAPI	w
+PAPI	virus	B4XYF0	E4	B4XYF0	1	7	B4XYF0_9PAPI	w
+PAPI	virus	B4XYF1	E5	B4XYF1	2	7	B4XYF1_9PAPI	w
+PAPI	virus	B5SWU9	E4	B5SWU9	1	7	B5SWU9_9PAPI	w
+PAPI	virus	B5SWV6	E4	B5SWV6	0	7	B5SWV6_9PAPI	w
+PAPI	virus	B6RUP1	E6	B6RUP1	0	7	B6RUP1_9PAPI	w
+PAPI	virus	B6RUP2	E7	B6RUP2	0	7	B6RUP2_9PAPI	w
+PAPI	virus	B6RUP5	E4	B6RUP5	1	7	B6RUP5_9PAPI	w
+PAPI	virus	B6RUP6	L2	B6RUP6	0	7	B6RUP6_9PAPI	w
+PAPI	virus	B6RUP8	E6	B6RUP8	0	7	B6RUP8_9PAPI	w
+PAPI	virus	B6RUP9	E7	B6RUP9	0	7	B6RUP9_9PAPI	w
+PAPI	virus	B6RUQ2	E4	B6RUQ2	1	7	B6RUQ2_9PAPI	w
+PAPI	virus	B6RUQ3	L2	B6RUQ3	1	7	B6RUQ3_9PAPI	w
+PAPI	virus	B7TQP1	E4	B7TQP1	0	7	B7TQP1_9PAPI	w
+PAPI	virus	C1ID88	E4	C1ID88	1	7	C1ID88_9PAPI	w
+PAPI	virus	C1ID95	E4	C1ID95	1	7	C1ID95_9PAPI	w
+PAPI	virus	C4PUD7	E4	C4PUD7	0	7	C4PUD7_9PAPI	w
+PAPI	virus	C4PUE4	E4	C4PUE4	0	7	C4PUE4_9PAPI	w
+PAPI	virus	C4PUF7	E4	C4PUF7	1	7	C4PUF7_9PAPI	w
+PAPI	virus	C6ZD98	E6	C6ZD98	0	8	C6ZD98_9PAPI	w
+PAPI	virus	C6ZD99	E7	C6ZD99	0	8	C6ZD99_9PAPI	w
+PAPI	virus	C6ZDA1	E9	C6ZDA1	1	8	C6ZDA1_9PAPI	w
+PAPI	virus	C6ZDA3	E4	C6ZDA3	0	8	C6ZDA3_9PAPI	w
+PAPI	virus	C6ZDA4	L2	C6ZDA4	1	8	C6ZDA4_9PAPI	w
+PAPI	virus	C7B7D6		C7B7D6	1	7	C7B7D6_9PAPI	w
+PAPI	virus	C7U316	E7	C7U316	1	8	C7U316_9PAPI	w
+PAPI	virus	C7U319	E1-E4	C7U319	2	8	C7U319_9PAPI	w
+PAPI	virus	C8YJK2		C8YJK2	0	7	C8YJK2_9PAPI	w
+PAPI	virus	C8YJK9		C8YJK9	0	7	C8YJK9_9PAPI	w
+PAPI	virus	C8YJL6		C8YJL6	0	7	C8YJL6_9PAPI	w
+PAPI	virus	D2E910	E4	D2E910	1	7	D2E910_9PAPI	w
+PAPI	virus	D3VNF3	E4	D3VNF3	0	7	D3VNF3_9PAPI	w
+PAPI	virus	D3VNG0	E4	D3VNG0	1	7	D3VNG0_9PAPI	w
+PAPI	virus	D3VWC0	E4	D3VWC0	1	7	D3VWC0_9PAPI	w
+PAPI	virus	D6N1C2		D6N1C2	1	7	D6N1C2_9PAPI	w
+PAPI	virus	D7P163	E4	D7P163	1	7	D7P163_9PAPI	w
+PAPI	virus	D7P170	E4	D7P170	1	7	D7P170_9PAPI	w
+PAPI	virus	D7P177	E4	D7P177	1	7	D7P177_9PAPI	w
+PAPI	virus	D7P184	E4	D7P184	1	7	D7P184_9PAPI	w
+PAPI	virus	D7P191	E4	D7P191	1	7	D7P191_9PAPI	w
+PAPI	virus	D7P198	E4	D7P198	0	7	D7P198_9PAPI	w
+PAPI	virus	D8L564		D8L564	1	7	D8L564_9PAPI	w
+PAPI	virus	D9D5K6	E4	D9D5K6	0	7	D9D5K6_9PAPI	w
+PAPI	virus	E0YDP6		E0YDP6	1	7	E0YDP6_9PAPI	w
+PAPI	virus	E1CGB7	E5	E1CGB7	0	7	E1CGB7_9PAPI	w
+PAPI	virus	E1CGC1	E4	E1CGC1	1	7	E1CGC1_9PAPI	w
+PAPI	virus	E7BQ76	E4	E7BQ76	1	7	E7BQ76_9PAPI	w
+PAPI	virus	E7BQ83	E4	E7BQ83	1	7	E7BQ83_9PAPI	w
+PAPI	virus	E7BQ90	E4	E7BQ90	1	7	E7BQ90_9PAPI	w
+PAPI	virus	E7BQ97	E4	E7BQ97	1	7	E7BQ97_9PAPI	w
+PAPI	virus	E7BQA4	E4	E7BQA4	1	7	E7BQA4_9PAPI	w
+PAPI	virus	E7BQB1	E4	E7BQB1	1	7	E7BQB1_9PAPI	w
+PAPI	virus	E7BQC6	E4	E7BQC6	1	7	E7BQC6_9PAPI	w
+PAPI	virus	E7BRR1	E4	E7BRR1	1	7	E7BRR1_9PAPI	w
+PAPI	virus	E7BRR8	E4	E7BRR8	1	7	E7BRR8_9PAPI	w
+PAPI	virus	E7C0H4		E7C0H4	0	7	E7C0H4_9PAPI	w
+PAPI	virus	F2VIQ3	E4	F2VIQ3	0	6	F2VIQ3_9PAPI	w
+PAPI	virus	F2VIR5	E4	F2VIR5	1	6	F2VIR5_9PAPI	w
+PAPI	virus	F2VIS3	E4	F2VIS3	1	6	F2VIS3_9PAPI	w
+PAPI	virus	F2X1C6	E4	F2X1C6	2	7	F2X1C6_9PAPI	w
+PAPI	virus	F2YGG9		F2YGG9	1	7	F2YGG9_9PAPI	w
+PAPI	virus	F2YGH0		F2YGH0	0	7	F2YGH0_9PAPI	w
+PAPI	virus	F2YGH6		F2YGH6	1	7	F2YGH6_9PAPI	w
+PAPI	virus	F2YGH7		F2YGH7	0	7	F2YGH7_9PAPI	w
+PAPI	virus	F8QPP8	E4	F8QPP8	1	7	F8QPP8_9PAPI	w
+PAPI	virus	F8QPQ4	E4	F8QPQ4	2	6	F8QPQ4_9PAPI	w
+PAPI	virus	F8SIM7	E4	F8SIM7	2	7	F8SIM7_9PAPI	w
+PAPI	virus	G1CR68	E8	G1CR68	0	8	G1CR68_9PAPI	w
+PAPI	virus	G1CR72	E4	G1CR72	1	8	G1CR72_9PAPI	w
+PAPI	virus	G1CR78	L3	G1CR78	0	8	G1CR78_9PAPI	w
+PAPI	virus	G3DRD4		G3DRD4	2	7	G3DRD4_9PAPI	w
+PAPI	virus	G3DRD5		G3DRD5	1	7	G3DRD5_9PAPI	w
+PAPI	virus	G3DRE1		G3DRE1	1	7	G3DRE1_9PAPI	w
+PAPI	virus	G4XF66		G4XF66	0	7	G4XF66_9PAPI	w
+PAPI	virus	G4XF73		G4XF73	0	7	G4XF73_9PAPI	w
+PAPI	virus	G4XF80		G4XF80	0	8	G4XF80_9PAPI	w
+PAPI	virus	G4XF81		G4XF81	1	8	G4XF81_9PAPI	w
+PAPI	virus	G5ELP3	HpV126gp5	G5ELP3	1	7	G5ELP3_9PAPI	w
+PAPI	virus	G8EGT6		G8EGT6	1	7	G8EGT6_9PAPI	w
+PAPI	virus	G8GMM8	E4	G8GMM8	1	7	G8GMM8_9PAPI	w
+PAPI	virus	H6UYN5	E4	H6UYN5	1	7	H6UYN5_9PAPI	w
+PAPI	virus	H6UYN8	L3	H6UYN8	0	7	H6UYN8_9PAPI	w
+PAPI	virus	H6UYQ6	E4	H6UYQ6	1	7	H6UYQ6_9PAPI	w
+PAPI	virus	H6UYQ9	L3	H6UYQ9	0	7	H6UYQ9_9PAPI	w
+PAPI	virus	H6UYR6	E4	H6UYR6	0	7	H6UYR6_9PAPI	w
+PAPI	virus	I3UJL0	E4	I3UJL0	1	7	I3UJL0_9PAPI	w
+PAPI	virus	I6LEI6	E4	I6LEI6	0	7	I6LEI6_9PAPI	w
+PAPI	virus	I6LEJ3	E4	I6LEJ3	1	7	I6LEJ3_9PAPI	w
+PAPI	virus	I6LEK0	E4	I6LEK0	0	7	I6LEK0_9PAPI	w
+PAPI	virus	I7KSH1	E4	I7KSH1	0	7	I7KSH1_9PAPI	w
+PAPI	virus	J7EZ09	E4	J7EZ09	1	7	J7EZ09_9PAPI	w
+PAPI	virus	J7JDV6		J7JDV6	2	7	J7JDV6_9PAPI	w
+PAPI	virus	J9QS16	E4	J9QS16	2	7	J9QS16_9PAPI	w
+PAPI	virus	J9R1H9	E7	J9R1H9	1	7	J9R1H9_9PAPI	w
+PAPI	virus	K4MKS2	E4	K4MKS2	0	7	K4MKS2_9PAPI	w
+PAPI	virus	K4MLD8	E4	K4MLD8	1	7	K4MLD8_9PAPI	w
+PAPI	virus	K7QKH2		K7QKH2	1	7	K7QKH2_9PAPI	w
+PAPI	virus	K7QT92	E4	K7QT92	0	7	K7QT92_9PAPI	w
+PAPI	virus	K9M8U6		K9M8U6	1	7	K9M8U6_9PAPI	w
+PAPI	virus	K9M8U7		K9M8U7	0	7	K9M8U7_9PAPI	w
+PAPI	virus	K9M934		K9M934	1	7	K9M934_9PAPI	w
+PAPI	virus	K9M9S8		K9M9S8	0	7	K9M9S8_9PAPI	w
+PAPI	virus	L7X3H2	E4	L7X3H2	1	6	L7X3H2_9PAPI	w
+PAPI	virus	L7X5Q0	E4	L7X5Q0	1	7	L7X5Q0_9PAPI	w
+PAPI	virus	L7YF21	E5	L7YF21	1	7	L7YF21_9PAPI	w
+PAPI	virus	M1VBM1	E4	M1VBM1	0	7	M1VBM1_9PAPI	w
+PAPI	virus	M4HX73		M4HX73	1	7	M4HX73_9PAPI	w
+PAPI	virus	M4HX86		M4HX86	0	7	M4HX86_9PAPI	w
+PAPI	virus	M5ETD0	E4	M5ETD0	1	7	M5ETD0_9PAPI	w
+PAPI	virus	O56956	E4	O56956	1	7	O56956_9PAPI	w
+PAPI	virus	O73449	E4	O73449	1	7	O73449_9PAPI	w
+PAPI	virus	O73451	E4	O73451	2	7	O73451_9PAPI	w
+PAPI	virus	Q0QIH7	E4	Q0QIH7	0	7	Q0QIH7_9PAPI	w
+PAPI	virus	Q1AHR9		Q1AHR9	2	6	Q1AHR9_9PAPI	w
+PAPI	virus	Q1AHS8		Q1AHS8	0	8	Q1AHS8_9PAPI	w
+PAPI	virus	Q1AHS9		Q1AHS9	2	8	Q1AHS9_9PAPI	w
+PAPI	virus	Q1AHT3		Q1AHT3	1	6	Q1AHT3_9PAPI	w
+PAPI	virus	Q1I123	E4	Q1I123	1	7	Q1I123_9PAPI	w
+PAPI	virus	Q1XA71		Q1XA71	0	7	Q1XA71_9PAPI	w
+PAPI	virus	Q1XA72		Q1XA72	0	7	Q1XA72_9PAPI	w
+PAPI	virus	Q2VJB6		Q2VJB6	2	7	Q2VJB6_9PAPI	w
+PAPI	virus	Q2VJC3		Q2VJC3	2	7	Q2VJC3_9PAPI	w
+PAPI	virus	Q30BI9	E4	Q30BI9	0	7	Q30BI9_9PAPI	w
+PAPI	virus	Q30BJ2	E7	Q30BJ2	1	7	Q30BJ2_9PAPI	w
+PAPI	virus	Q4QW00	E4	Q4QW00	1	7	Q4QW00_9PAPI	w
+PAPI	virus	Q5IRF2	E4	Q5IRF2	0	7	Q5IRF2_9PAPI	w
+PAPI	virus	Q5UJF6		Q5UJF6	1	8	Q5UJF6_9PAPI	w
+PAPI	virus	Q5UUY1	E4	Q5UUY1	0	7	Q5UUY1_9PAPI	w
+PAPI	virus	Q647H7		Q647H7	1	8	Q647H7_9PAPI	w
+PAPI	virus	Q6TY25		Q6TY25	0	7	Q6TY25_9PAPI	w
+PAPI	virus	Q6TY32		Q6TY32	0	7	Q6TY32_9PAPI	w
+PAPI	virus	Q705D5	E4	Q705D5	1	7	Q705D5_9PAPI	w
+PAPI	virus	Q705E0	Y	Q705E0	0	10	Q705E0_9PAPI	w
+PAPI	virus	Q705E1	X	Q705E1	0	10	Q705E1_9PAPI	w
+PAPI	virus	Q705E5	E4	Q705E5	1	10	Q705E5_9PAPI	w
+PAPI	virus	Q8BDR0	E9	Q8BDR0	1	9	Q8BDR0_9PAPI	w
+PAPI	virus	Q8JN97	E4	Q8JN97	2	7	Q8JN97_9PAPI	w
+PAPI	virus	Q8JTB9	E4	Q8JTB9	1	7	Q8JTB9_9PAPI	w
+PAPI	virus	Q8JTG4	E4	Q8JTG4	2	7	Q8JTG4_9PAPI	w
+PAPI	virus	Q8QSA0	E4	Q8QSA0	1	7	Q8QSA0_9PAPI	w
+PAPI	virus	Q9DIH3	e4	Q9DIH3	1	7	Q9DIH3_9PAPI	w
+PAPI	virus	Q9J026		Q9J026	0	9	Q9J026_9PAPI	w
+PAPI	virus	Q9J027		Q9J027	0	9	Q9J027_9PAPI	w
+PAPI	virus	Q9J031		Q9J031	1	9	Q9J031_9PAPI	w
+PAPI	virus	Q9WHG5	E5	Q9WHG5	0	8	Q9WHG5_9PAPI	w
+PAPI	virus	Q9WNM6	E4	Q9WNM6	1	7	Q9WNM6_9PAPI	w
+PAPI	virus	R4UY44		R4UY44	1	8	R4UY44_9PAPI	w
+PAPI	virus	R4V0R7		R4V0R7	1	8	R4V0R7_9PAPI	w
+PAPI	virus	R9QDL4		R9QDL4	0	7	R9QDL4_9PAPI	w
+PAPI	virus	R9RYF9	E4	R9RYF9	0	7	R9RYF9_9PAPI	w
+PAPI	virus	S5RDA5		S5RDA5	1	7	S5RDA5_9PAPI	w
+PAPI	virus	T1YCE4		T1YCE4	0	8	T1YCE4_9PAPI	w
+PAPI	virus	T1YDH2		T1YDH2	1	8	T1YDH2_9PAPI	w
+PAPI	virus	T2D3L1	E4	T2D3L1	1	6	T2D3L1_9PAPI	w
+PAPI	virus	U6BRA7	E4	U6BRA7	1	7	U6BRA7_9PAPI	w
+PAPI	virus	U6EJ46	E4	U6EJ46	0	7	U6EJ46_9PAPI	w
+PAPI	virus	V5W3F1		V5W3F1	1	7	V5W3F1_9PAPI	w
+PAPI	virus	V5W540		V5W540	0	7	V5W540_9PAPI	w
+PAPI	virus	W8E8M3	E7	W8E8M3	2	6	W8E8M3_9PAPI	w
+PAPI	virus	W8EC52	E7	W8EC52	1	6	W8EC52_9PAPI	w
+PAPI	virus	W8REA4	E4	W8REA4	1	7	W8REA4_9PAPI	w
+PAPI	virus	X2G698	E4	X2G698	2	7	X2G698_9PAPI	w
+PAPI	virus	X2JGU2		X2JGU2	0	7	X2JGU2_9PAPI	w
+PAPI	virus	X2JGU5		X2JGU5	1	7	X2JGU5_9PAPI	w
+PAPI	virus	X2JJ81		X2JJ81	0	7	X2JJ81_9PAPI	w
+PAPI	virus	X2JSD9		X2JSD9	0	7	X2JSD9_9PAPI	w
+PAPILIN	fly	FBgn0003137	Ppn	Q868Z9	3	19	Papilin	w
+PAPILIN	human	O95428	PAPLN	O95428	20	70	Papilin	w
+PAPILL	human	Q9BZE9	ASPSCR1	Q9BZE9	13	120	Tether containing UBX domain for GLUT4 (Alveolar soft part s	w
+PAPILLA-DERIVED	human	Q8TE02	ELP5	Q8TE02	27	130	Elongator complex protein 5 (Dermal papilla-derived protein 	w
+PAPILLA-DERIVED	human	Q9BRG1	VPS25	Q9BRG1	28	174	Vacuolar protein-sorting-associated protein 25 (hVps25) (Der	w
+PAPILLA-DERIVED	human	Q9H3K2	GHITM	Q9H3K2	27	159	Growth hormone-inducible transmembrane protein (Dermal papil	w
+PAPILLA-DERIVED	human	Q9H8M7	MINDY3	Q9H8M7	13	103	Ubiquitin carboxyl-terminal hydrolase MINDY-3 (EC 3.4.19.12)	w
+PAPILLA-DERIVED	human	Q9HAC7	SUGCT	Q9HAC7	2	83	Succinyl-CoA:glutarate CoA-transferase (EC 2.8.3.-) (Dermal 	w
+PAPILLA-DERIVED	human	Q9NWB7	IFT57	Q9NWB7	58	203	Intraflagellar transport protein 57 homolog (Dermal papilla-	w
+PAPILLA-DERIVED	human	Q9NWC5	TMEM45A	Q9NWC5	6	78	Transmembrane protein 45A (DNA polymerase-transactivated pro	w
+PAPILLA-DERIVED	human	Q9P0T7	TMEM9	Q9P0T7	37	282	Proton-transporting V-type ATPase complex assembly regulator	w
+PAPILLA-DERIVED	human	Q9UBW8	COPS7A	Q9UBW8	25	194	COP9 signalosome complex subunit 7a (SGN7a) (Signalosome sub	w
+PAPILLARY	human	Q16204	CCDC6	Q16204	48	180	Coiled-coil domain-containing protein 6 (Papillary thyroid c	w
+PAPILLARY	human	Q92733	PRCC	Q92733	12	131	Proline-rich protein PRCC (Papillary renal cell carcinoma tr	w
+PAPILLOMA	human	O43166	SIPA1L1	O43166	102	376	Signal-induced proliferation-associated 1-like protein 1 (SI	w
+PAPILLOMAVIRUS	human	A1YPR0	ZBTB7C	A1YPR0	12	35	Zinc finger and BTB domain-containing protein 7C (Affected b	w
+PAPILLOMAVIRUS	human	Q05086	UBE3A	Q05086	54	622	Ubiquitin-protein ligase E3A (EC 2.3.2.26) (E6AP ubiquitin-p	w
+PAPILLOMAVIRUS	human	Q15645	TRIP13	Q15645	9	331	Pachytene checkpoint protein 2 homolog (Human papillomavirus	w
+PAPILLOTE	fly	FBgn0250871	pot	Q9VYS2	1	5	GH09980p (Papillote protein) (Papillote, isoform A) (Papillo	w
+PAPL	human	Q6ZNF0	ACP7	Q6ZNF0	6	48		
+PAPL	virus	P0DTA7	PAPL	P0DTA7	5	246	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q070J7	PAPL	Q070J7	6	171	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q08FW1	PAPL	Q08FW1	4	165	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q6TUY0	PAPL	Q6TUY0	3	139	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q6VZL8	PAPL	Q6VZL8	6	319	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q8V3R4	PAPL	Q8V3R4	4	145	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q91MX5	PAPL	Q91MX5	6	152	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q98199	PAPL	Q98199	1	161	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q9DHT0	PAPL	Q9DHT0	1	150	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q9Q8R9	PAPL	Q9Q8R9	6	156	Poly(A) polymerase catalytic subunit	
+PAPL	virus	Q9Q944	PAPL	Q9Q944	6	152	Poly(A) polymerase catalytic subunit	
+PAPL-1	worm	Q19553	papl-1	Q19553	0	1	Purple acid phosphatase	
+PAPL1	human	Q6ZNF0	ACP7	Q6ZNF0	6	48		
+PAPLA1	fly	FBgn0031990	PAPLA1	Q9VLS7	2	8	LD21067p (Phosphatidic acid phospholipase A1, isoform A (EC 	
+PAPLA1_72_81	fly	FBgn0031990	PAPLA1	Q9VLS7	2	8		
+PAPLE22	leishmania-infantum	Q9NJS2	PAPLE22	Q9NJS2	0	4	Reticulon-like protein	
+PAPLN	human	O95428	PAPLN	O95428	20	70	Papilin	
+PAPLN	mus-musculus	Q9EPX2	Papln	Q9EPX2	0	1	Papilin	
+PAPOA_HUMAN	human	P51003	PAPOLA	P51003	29	212		
+PAPOB_HUMAN	human	Q9NRJ5	PAPOLB	Q9NRJ5	17	75		
+PAPOG_HUMAN	human	Q9BWT3	PAPOLG	Q9BWT3	26	152		
+PAPOLA	human	P51003	PAPOLA	P51003	29	212	Poly(A) polymerase alpha (PAP-alpha) (EC 2.7.7.19) (Polynucl	
+PAPOLA	mus-musculus	Q61183	Papola	Q61183	10	69	Poly(A) polymerase alpha	
+PAPOLA	rattus-norvegicus	A0A0G2K0C9	Papola	A0A0G2K0C9	12	77	Poly(A) polymerase	
+PAPOLA	zebrafish	Q5SNY2	papola	Q5SNY2	8	81	polynucleotide adenylyltransferase	
+PAPOLB	human	Q9NRJ5	PAPOLB	Q9NRJ5	17	75	Poly(A) polymerase beta (PAP-beta) (EC 2.7.7.19) (Polynucleo	
+PAPOLB	mus-musculus	Q9WVP6	Papolb	Q9WVP6	9	54	Poly(A) polymerase beta	
+PAPOLG	human	Q9BWT3	PAPOLG	Q9BWT3	26	152	Poly(A) polymerase gamma (PAP-gamma) (EC 2.7.7.19) (Neo-poly	
+PAPOLG	mus-musculus	Q6PCL9	Papolg	Q6PCL9	12	55	Poly(A) polymerase gamma	
+PAPOLG	rattus-norvegicus	D3ZAN6	Papolg	D3ZAN6	7	73	polynucleotide adenylyltransferase	
+PAPOLG	zebrafish	A2BGL0	papolg	A2BGL0	7	76	polynucleotide adenylyltransferase	
+PAPP-A2	human	Q9BXP8	PAPPA2	Q9BXP8	21	117	Pappalysin-2 (EC 3.4.24.-) (Pregnancy-associated plasma prot	w
+PAPP-E	human	Q9BXP8	PAPPA2	Q9BXP8	21	117	Pappalysin-2 (EC 3.4.24.-) (Pregnancy-associated plasma prot	w
+PAPP1_HUMAN	human	Q13219	PAPPA	Q13219	9	41		
+PAPP2_HUMAN	human	Q9BXP8	PAPPA2	Q9BXP8	21	117		
+PAPP5	arabidopsis-thaliana	Q84XU2	PAPP5	Q84XU2	4	14	Serine/threonine-protein phosphatase 5	
+PAPPA	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	
+PAPPA-AS1	human	Q5QFB9	PAPPA-AS1	Q5QFB9	0	4	Protein PAPPAS (DIPLA1 antisense RNA 1) (DIPLA1 antisense ge	
+PAPPA2	human	Q9BXP8	PAPPA2	Q9BXP8	21	117	Pappalysin-2 (EC 3.4.24.-) (Pregnancy-associated plasma prot	
+PAPPALYSIN-1	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	w
+PAPPALYSIN-2	human	Q9BXP8	PAPPA2	Q9BXP8	21	117	Pappalysin-2 (EC 3.4.24.-) (Pregnancy-associated plasma prot	w
+PAPPAS	human	Q5QFB9	PAPPA-AS1	Q5QFB9	0	4		
+PAPS	fly	FBgn0020389	Papss	Q8IQV1	3	100	PAPS synthetase, isoform D (EC 2.7.1.25, EC 2.7.7.4)	w
+PAPS	fly	FBgn0036695	Papst2	Q9VVD9	0	3	Adenosine 3'-phospho 5'-phosphosulfate transporter 2 (PAPS t	w
+PAPS	fly	FBgn0038524	sll	Q9VEI3	4	62	Adenosine 3'-phospho 5'-phosphosulfate transporter 1 (PAPS t	w
+PAPS	human	O43252	PAPSS1	O43252	2	156	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w
+PAPS	human	O95340	PAPSS2	O95340	2	127	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w
+PAPS	human	Q8TB61	SLC35B2	Q8TB61	6	119	Adenosine 3'-phospho 5'-phosphosulfate transporter 1 (PAPS t	w
+PAPS	human	Q9H1N7	SLC35B3	Q9H1N7	3	30	Adenosine 3'-phospho 5'-phosphosulfate transporter 2 (3'-pho	w
+PAPS	virus	Q5GF32	PAPS	Q5GF32	8	187	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	
+PAPS1	arabidopsis-thaliana	Q9LMT2	PAPS1	Q9LMT2	17	125	Nuclear poly(A) polymerase 1	
+PAPS1_HUMAN	human	O43252	PAPSS1	O43252	2	156		
+PAPS2	arabidopsis-thaliana	O82312	PAPS2	O82312	10	119	Nuclear poly(A) polymerase 2	
+PAPS2_HUMAN	human	O95340	PAPSS2	O95340	2	127		
+PAPS3	arabidopsis-thaliana	Q56XM9	PAPS3	Q56XM9	4	128	Nuclear poly(A) polymerase 3	
+PAPS4	arabidopsis-thaliana	Q8VYW1	PAPS4	Q8VYW1	7	129	Nuclear poly(A) polymerase 4	
+PAPSS	fly	FBgn0020389	Papss	Q8IQV1	3	100	PAPS synthetase, isoform D (EC 2.7.1.25, EC 2.7.7.4)	
+PAPSS	human	O43252	PAPSS1	O43252	2	156		
+PAPSS	human	O95340	PAPSS2	O95340	2	127	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w
+PAPSS1	human	O43252	PAPSS1	O43252	2	156	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	
+PAPSS1	mus-musculus	Q60967	Papss1	Q60967	1	8	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	
+PAPSS1	rattus-norvegicus	A0A0G2K0L0	Papss1	A0A0G2K0L0	0	7	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	
+PAPSS1	zebrafish	B3DJF3	papss1	B3DJF3	1	4	3'-phosphoadenosine 5'-phosphosulfate synthase 1	
+PAPSS2	human	O95340	PAPSS2	O95340	2	127	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	
+PAPSS2	mus-musculus	O88428	Papss2	O88428	1	7	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	
+PAPSS2	rattus-norvegicus	B5DFH4	Papss2	B5DFH4	0	6	3'-phosphoadenosine 5'-phosphosulfate synthase 2	
+PAPSS2B	zebrafish	Q802U9	papss2b	Q802U9	1	4	3'-phosphoadenosine 5'-phosphosulfate synthase 2	
+PAPST1	human	Q8TB61	SLC35B2	Q8TB61	6	119		
+PAPST2	fly	FBgn0036695	Papst2	Q9VVD9	0	3	Adenosine 3'-phospho 5'-phosphosulfate transporter 2 (PAPS t	
+PAPST2	human	Q9H1N7	SLC35B3	Q9H1N7	3	30		
+PAPT	human	Q9NRJ5	PAPOLB	Q9NRJ5	17	75		
+PAPVE	virus	Q84257		Q84257	0	15	Q84257_PAPVE	w
+PAPVE	virus	Q84258		Q84258	0	15	Q84258_PAPVE	w
+PAPVE	virus	Q84259	E4	Q84259	1	15	Q84259_PAPVE	w
+PAPVE	virus	Q84260	E3	Q84260	1	15	Q84260_PAPVE	w
+PAPVE	virus	Q84261		Q84261	0	15	Q84261_PAPVE	w
+PAPVE	virus	Q84262		Q84262	2	15	Q84262_PAPVE	w
+PAPVE	virus	Q84263		Q84263	0	15	Q84263_PAPVE	w
+PAPVE	virus	Q84264		Q84264	1	15	Q84264_PAPVE	w

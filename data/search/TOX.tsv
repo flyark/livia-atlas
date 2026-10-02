@@ -1,13 +1,77 @@
-TOX	mus-musculus	Q66JW3	Tox	Q66JW3	1	4	Thymocyte selection-associated high mobility group box protein TOX
-TOX	rattus-norvegicus	D4A1U5	Tox	D4A1U5	0	2	Thymocyte selection-associated high mobility group box
-TOX2	mus-musculus	E9Q0B9	Tox2	E9Q0B9	0	4	TOX high mobility group box family member 2
-TOX2	rattus-norvegicus	Q76IQ7	Tox2	Q76IQ7	0	1	TOX high mobility group box family member 2
-TOX3	mus-musculus	Q80W03	Tox3	Q80W03	1	8	TOX high mobility group box family member 3
-TOX3	rattus-norvegicus	B7SBD2	Tox3	B7SBD2	0	2	TOX high mobility group box family member 3
-TOX4	mus-musculus	Q8BU11	Tox4	Q8BU11	1	13	TOX high mobility group box family member 4
-TOX4	rattus-norvegicus	Q99PM1	Tox4	Q99PM1	2	8	TOX high mobility group box family member 4
-TOXD	cladophialophora-carrionii	A0A1C1CI25	TOXD	A0A1C1CI25	0	9	Protein TOXD
-TOXD	cladophialophora-carrionii	A0A1C1CLM5	TOXD	A0A1C1CLM5	0	9	Protein TOXD
-TOXD	cladophialophora-carrionii	A0A1C1D099	TOXD	A0A1C1D099	0	9	Protein TOXD
-TOXF	cladophialophora-carrionii	A0A1C1CD77	TOXF	A0A1C1CD77	0	2	Putative branched-chain-amino-acid aminotransferase TOXF
-TOXG	cladophialophora-carrionii	A0A1C1CL06	TOXG	A0A1C1CL06	0	8	Alanine racemase TOXG
+TOX	human	O94900	TOX	O94900	97	450	Thymocyte selection-associated high mobility group box prote	
+TOX	mus-musculus	Q66JW3	Tox	Q66JW3	1	4	Thymocyte selection-associated high mobility group box prote	
+TOX	rattus-norvegicus	D4A1U5	Tox	D4A1U5	0	2	Thymocyte selection-associated high mobility group box	
+TOX	zebrafish	A0A2R8Q9T1	tox	A0A2R8Q9T1	5	68	Thymocyte selection-associated high mobility group box	
+TOX2	human	Q96NM4	TOX2	Q96NM4	10	59	TOX high mobility group box family member 2 (Granulosa cell 	
+TOX2	mus-musculus	E9Q0B9	Tox2	E9Q0B9	0	4	TOX high mobility group box family member 2	
+TOX2	rattus-norvegicus	Q76IQ7	Tox2	Q76IQ7	0	1	TOX high mobility group box family member 2	
+TOX2	zebrafish	Q6NXC9	tox2	Q6NXC9	6	68	TOX high mobility group box family member 2	
+TOX2_HUMAN	human	Q96NM4	TOX2	Q96NM4	10	59		
+TOX3	human	O15405	TOX3	O15405	72	394	TOX high mobility group box family member 3 (CAG trinucleoti	
+TOX3	mus-musculus	Q80W03	Tox3	Q80W03	1	8	TOX high mobility group box family member 3	
+TOX3	rattus-norvegicus	B7SBD2	Tox3	B7SBD2	0	2	TOX high mobility group box family member 3	
+TOX3	zebrafish	E7FAU5	tox3	E7FAU5	2	68	TOX high mobility group box family member 3	
+TOX3_HUMAN	human	O15405	TOX3	O15405	72	394		
+TOX4	fly	FBgn0035238	Tox4	Q9W0D2	40	382	LP01188p	
+TOX4	human	O94842	TOX4	O94842	40	201	TOX high mobility group box family member 4	
+TOX4	mus-musculus	Q8BU11	Tox4	Q8BU11	1	13	TOX high mobility group box family member 4	
+TOX4	rattus-norvegicus	Q99PM1	Tox4	Q99PM1	2	8	TOX high mobility group box family member 4	
+TOX4A	zebrafish	F1QXS5	tox4a	F1QXS5	2	68	TOX high mobility group box family member 4-A	
+TOX4_HUMAN	human	O94842	TOX4	O94842	40	201		
+TOXD	cladophialophora-carrionii	A0A1C1CI25	TOXD	A0A1C1CI25	0	9	Protein TOXD	
+TOXD	cladophialophora-carrionii	A0A1C1CLM5	TOXD	A0A1C1CLM5	0	9	Protein TOXD	
+TOXD	cladophialophora-carrionii	A0A1C1D099	TOXD	A0A1C1D099	0	9	Protein TOXD	
+TOXF	cladophialophora-carrionii	A0A1C1CD77	TOXF	A0A1C1CD77	0	2	Putative branched-chain-amino-acid aminotransferase TOXF	
+TOXG	cladophialophora-carrionii	A0A1C1CL06	TOXG	A0A1C1CL06	0	8	Alanine racemase TOXG	
+TOXICITY	human	Q13158	FADD	Q13158	15	264	FAS-associated death domain protein (FAS-associating death d	w
+TOXICITY	human	Q8TD07	RAET1E	Q8TD07	24	118	Retinoic acid early transcript 1E (Lymphocyte effector toxic	w
+TOXICITY	human	Q9NS68	TNFRSF19	Q9NS68	15	93	Tumor necrosis factor receptor superfamily member 19 (TRADE)	w
+TOXIN	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
+TOXIN	human	A6NF34	ANTXRL	A6NF34	0	7	Anthrax toxin receptor-like	w
+TOXIN	human	P15153	RAC2	P15153	230	1327	Ras-related C3 botulinum toxin substrate 2 (EC 3.6.5.2) (GX)	w
+TOXIN	human	P58335	ANTXR2	P58335	14	143	Anthrax toxin receptor 2 (Capillary morphogenesis gene 2 pro	w
+TOXIN	human	P60763	RAC3	P60763	199	1229	Ras-related C3 botulinum toxin substrate 3 (EC 3.6.5.2) (p21	w
+TOXIN	human	P63000	RAC1	P63000	242	1240	Ras-related C3 botulinum toxin substrate 1 (EC 3.6.5.2) (Cel	w
+TOXIN	human	Q86VL8	SLC47A2	Q86VL8	0	19	Multidrug and toxin extrusion protein 2 (MATE-2) (hMATE-2) (	w
+TOXIN	human	Q96FL8	SLC47A1	Q96FL8	2	81	Multidrug and toxin extrusion protein 1 (MATE-1) (hMATE-1) (	w
+TOXIN	human	Q99075	HBEGF	Q99075	98	494	Proheparin-binding EGF-like growth factor [Cleaved into: Hep	w
+TOXIN	human	Q9BQC3	DPH2	Q9BQC3	6	93	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2 (Dip	w
+TOXIN	human	Q9BZG8	DPH1	Q9BZG8	14	133	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
+TOXIN	human	Q9H6X2	ANTXR1	Q9H6X2	28	276	Anthrax toxin receptor 1 (Tumor endothelial marker 8)	w
+TOXIN	worm	A0A5K1IB80	CELE_D1081.20	A0A5K1IB80	2	74	Snake toxin/toxin-like domain-containing protein	w
+TOXIN	worm	G1K0W0	CELE_ZK757.10	G1K0W0	2	69	Snake toxin/toxin-like domain-containing protein	w
+TOXIN	worm	O45596	CELE_F57C2.4	O45596	0	2	Toxin	w
+TOXIN	worm	Q21368	CELE_K08H2.3	Q21368	0	2	Immunity protein 72 of polymorphic toxin system	w
+TOXIN	worm	Q23647	hpo-40	Q23647	0	19	Hypersensitive to pore-forming toxin protein 40	w
+TOXIN	worm	Q9BKX4	spex-3	Q9BKX4	0	19	Toxin	w
+TOXIN	zebrafish	A0AB32TBQ0	slc47a1	A0AB32TBQ0	0	4	Multidrug and toxin extrusion protein	w
+TOXIN	zebrafish	A0AB32U207	antxr1b	A0AB32U207	0	9	Anthrax toxin receptor 1	w
+TOXIN	zebrafish	A1L1P9	slc47a1	A1L1P9	0	4	Multidrug and toxin extrusion protein 1	w
+TOXIN	zebrafish	E7F2W8	antxr1c	E7F2W8	0	7	Anthrax toxin receptor 1	w
+TOXIN	zebrafish	U3Q0C3	slc47a2.2	U3Q0C3	0	4	Multidrug and toxin extrusion protein	w
+TOXIN	zebrafish	X1WEU3	slc47a3	X1WEU3	0	4	Multidrug and toxin extrusion protein	w
+TOXIN-LIKE	human	O95271	TNKS	O95271	33	215	Poly [ADP-ribose] polymerase tankyrase-1 (EC 2.4.2.30) (ADP-	w
+TOXIN-LIKE	human	P09874	PARP1	P09874	43	1100	Poly [ADP-ribose] polymerase 1 (PARP-1) (EC 2.4.2.30) (ADP-r	w
+TOXIN-LIKE	human	P52961	ART1	P52961	10	75	GPI-linked NAD(P)(+)--arginine ADP-ribosyltransferase 1 (EC 	w
+TOXIN-LIKE	human	Q13508	ART3	Q13508	6	65	Ecto-ADP-ribosyltransferase 3 (EC 2.4.2.31) (ADP-ribosyltran	w
+TOXIN-LIKE	human	Q2NL67	PARP6	Q2NL67	11	254	Protein mono-ADP-ribosyltransferase PARP6 (EC 2.4.2.-) (ADP-	w
+TOXIN-LIKE	human	Q460N3	PARP15	Q460N3	1	39	Protein mono-ADP-ribosyltransferase PARP15 (EC 2.4.2.-) (ADP	w
+TOXIN-LIKE	human	Q460N5	PARP14	Q460N5	16	136	Protein mono-ADP-ribosyltransferase PARP14 (EC 2.4.2.-) (ADP	w
+TOXIN-LIKE	human	Q53GL7	PARP10	Q53GL7	9	104	Protein mono-ADP-ribosyltransferase PARP10 (EC 2.4.2.-) (ADP	w
+TOXIN-LIKE	human	Q7Z2W4	ZC3HAV1	Q7Z2W4	28	660	Zinc finger CCCH-type antiviral protein 1 (ADP-ribosyltransf	w
+TOXIN-LIKE	human	Q7Z3E1	TIPARP	Q7Z3E1	239	1521	Protein mono-ADP-ribosyltransferase TIPARP (EC 2.4.2.-) (ADP	w
+TOXIN-LIKE	human	Q8IXQ6	PARP9	Q8IXQ6	12	119	Protein mono-ADP-ribosyltransferase PARP9 (EC 2.4.2.-) (ADP-	w
+TOXIN-LIKE	human	Q8N3A8	PARP8	Q8N3A8	26	254	Protein mono-ADP-ribosyltransferase PARP8 (EC 2.4.2.-) (ADP-	w
+TOXIN-LIKE	human	Q8N5Y8	PARP16	Q8N5Y8	8	75	Protein mono-ADP-ribosyltransferase PARP16 (EC 2.4.2.-) (ADP	w
+TOXIN-LIKE	human	Q93070	ART4	Q93070	11	73	Ecto-ADP-ribosyltransferase 4 (EC 2.4.2.31) (ADP-ribosyltran	w
+TOXIN-LIKE	human	Q96L15	ART5	Q96L15	6	72	Ecto-ADP-ribosyltransferase 5 (EC 2.4.2.31) (ADP-ribosyltran	w
+TOXIN-LIKE	human	Q9H0J9	PARP12	Q9H0J9	5	111	Protein mono-ADP-ribosyltransferase PARP12 (EC 2.4.2.-) (ADP	w
+TOXIN-LIKE	human	Q9H2K2	TNKS2	Q9H2K2	24	181	Poly [ADP-ribose] polymerase tankyrase-2 (EC 2.4.2.30) (ADP-	w
+TOXIN-LIKE	human	Q9NR21	PARP11	Q9NR21	8	61	Protein mono-ADP-ribosyltransferase PARP11 (EC 2.4.2.-) (ADP	w
+TOXIN-LIKE	human	Q9UGN5	PARP2	Q9UGN5	14	276	Poly [ADP-ribose] polymerase 2 (PARP-2) (hPARP-2) (EC 2.4.2.	w
+TOXIN-LIKE	human	Q9UKK3	PARP4	Q9UKK3	4	56	Protein mono-ADP-ribosyltransferase PARP4 (EC 2.4.2.-) (193 	w
+TOXIN-LIKE	human	Q9Y6F1	PARP3	Q9Y6F1	0	58	Protein mono-ADP-ribosyltransferase PARP3 (EC 2.4.2.-) (ADP-	w
+TOXIN-LIKE	worm	A0A5K1IB80	CELE_D1081.20	A0A5K1IB80	2	74	Snake toxin/toxin-like domain-containing protein	w
+TOXIN-LIKE	worm	G1K0W0	CELE_ZK757.10	G1K0W0	2	69	Snake toxin/toxin-like domain-containing protein	w
+TOXIN-RESISTANCE	yeast	P22023	KRE5	P22023	0	11	Killer toxin-resistance protein 5	w
+TOX_HUMAN	human	O94900	TOX	O94900	97	450		

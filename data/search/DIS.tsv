@@ -1,18 +1,448 @@
-DIS1	oryza-sativa-subsp-japonica	Q10L91	DIS1	Q10L91	0	1	E3 ubiquitin-protein ligase DIS1
-DIS1	schizosaccharomyces-pombe	Q09933	dis1	Q09933	3	12	Phosphoprotein p93
-DIS2	schizosaccharomyces-pombe	P13681	dis2	P13681	13	56	Serine/threonine-protein phosphatase PP1-1
-DIS3	cladophialophora-carrionii	A0A1C1CD58	dis3	A0A1C1CD58	2	69	Chromosome disjunction protein 3
-DIS3	mus-musculus	Q9CSH3	Dis3	Q9CSH3	5	56	Exosome complex exonuclease RRP44
-DIS3	rattus-norvegicus	F7EPZ4	Dis3	F7EPZ4	3	81	Exosome complex exonuclease RRP44
-DIS3	schizosaccharomyces-pombe	P37202	dis3	P37202	6	128	Exosome complex exonuclease dis3
-DIS32	schizosaccharomyces-pombe	O14040	dis32	O14040	1	23	DIS3-like exonuclease 2
-DIS3L	mus-musculus	Q8C0S1	Dis3l	Q8C0S1	3	33	DIS3-like exonuclease 1
-DIS3L	rattus-norvegicus	Q5U2P0	Dis3l	Q5U2P0	2	73	DIS3-like exonuclease 1
-DIS3L2	mus-musculus	Q8CI75	Dis3l2	Q8CI75	1	42	DIS3-like exonuclease 2
-DIS3L2	rattus-norvegicus	A0A0G2K6W6	Dis3l2	A0A0G2K6W6	3	75	DIS3-like exonuclease 2
-DISC1	mus-musculus	Q811T9	Disc1	Q811T9	29	92	Disrupted in schizophrenia 1 homolog
-DISC1	rattus-norvegicus	Q810H6	Disc1	Q810H6	18	79	Disrupted in schizophrenia 1 homolog
-DISP2	mus-musculus	Q8CIP5	Disp2	Q8CIP5	0	3	Protein dispatched homolog 2
-DISP2	rattus-norvegicus	D3ZBZ6	Disp2	D3ZBZ6	0	3	Protein dispatched homolog 2
-DISP3	mus-musculus	A3KFU9	Disp3	A3KFU9	0	3	Protein dispatched homolog 3
-DISP3	rattus-norvegicus	D3ZW02	Disp3	D3ZW02	0	3	Protein dispatched homolog 3
+DIS	human	Q8IX12	CCAR1	Q8IX12	27	257		
+DIS-3	worm	Q17632	dis-3	Q17632	3	51	Probable exosome complex exonuclease RRP44	
+DIS1	oryza-sativa-subsp-japonica	Q10L91	DIS1	Q10L91	0	1	E3 ubiquitin-protein ligase DIS1	
+DIS1	schizosaccharomyces-pombe	Q09933	dis1	Q09933	3	12	Phosphoprotein p93	
+DIS2	schizosaccharomyces-pombe	P13681	dis2	P13681	13	56	Serine/threonine-protein phosphatase PP1-1	
+DIS3	cladophialophora-carrionii	A0A1C1CD58	dis3	A0A1C1CD58	2	69	Chromosome disjunction protein 3	
+DIS3	fly	FBgn0035111	Dis3l2	Q8IRJ7	13	89	Dis3 like 3'-5' exoribonuclease 2, isoform C (EC 3.1.13.-) (	w
+DIS3	fly	FBgn0039183	Dis3	Q9VC93	10	158	Dis3, isoform A (EC 3.1.13.-) (Dis3, isoform B)	w
+DIS3	fly	FBgn0039183	Dis3	Q9VC93	10	158	Dis3, isoform A (EC 3.1.13.-) (Dis3, isoform B)	w
+DIS3	human	Q9Y2L1	DIS3	Q9Y2L1	18	356	Exosome complex exonuclease RRP44 (EC 3.1.13.-) (EC 3.1.26.-	
+DIS3	mus-musculus	Q9CSH3	Dis3	Q9CSH3	5	56	Exosome complex exonuclease RRP44	
+DIS3	rattus-norvegicus	F7EPZ4	Dis3	F7EPZ4	3	81	Exosome complex exonuclease RRP44	
+DIS3	schizosaccharomyces-pombe	P37202	dis3	P37202	6	128	Exosome complex exonuclease dis3	
+DIS3	yeast	Q08162	DIS3	Q08162	3	132	Exosome complex exonuclease DIS3	
+DIS3	zebrafish	E7FE01	dis3	E7FE01	6	100	Exosome complex exonuclease RRP44	
+DIS3-LIKE	human	Q8IYB7	DIS3L2	Q8IYB7	14	154	DIS3-like exonuclease 2 (hDIS3L2) (EC 3.1.13.-)	w
+DIS3-LIKE	human	Q8TF46	DIS3L	Q8TF46	12	106	DIS3-like exonuclease 1 (EC 3.1.13.1)	w
+DIS3-LIKE	worm	Q09568	disl-2	Q09568	2	44	DIS3-like exonuclease 2	w
+DIS3-LIKE	zebrafish	A2RV18	dis3l	A2RV18	7	95	DIS3-like exonuclease 1	w
+DIS3-LIKE	zebrafish	E7F350	dis3l2	E7F350	4	91	DIS3-like exonuclease 2	w
+DIS32	schizosaccharomyces-pombe	O14040	dis32	O14040	1	23	DIS3-like exonuclease 2	
+DIS3L	human	Q8TF46	DIS3L	Q8TF46	12	106	DIS3-like exonuclease 1 (EC 3.1.13.1)	
+DIS3L	mus-musculus	Q8C0S1	Dis3l	Q8C0S1	3	33	DIS3-like exonuclease 1	
+DIS3L	rattus-norvegicus	Q5U2P0	Dis3l	Q5U2P0	2	73	DIS3-like exonuclease 1	
+DIS3L	zebrafish	A2RV18	dis3l	A2RV18	7	95	DIS3-like exonuclease 1	
+DIS3L1	human	Q8TF46	DIS3L	Q8TF46	12	106		
+DIS3L2	fly	FBgn0035111	Dis3l2	Q8IRJ7	13	89	Dis3 like 3'-5' exoribonuclease 2, isoform C (EC 3.1.13.-) (	
+DIS3L2	human	Q8IYB7	DIS3L2	Q8IYB7	14	154	DIS3-like exonuclease 2 (hDIS3L2) (EC 3.1.13.-)	
+DIS3L2	mus-musculus	Q8CI75	Dis3l2	Q8CI75	1	42	DIS3-like exonuclease 2	
+DIS3L2	rattus-norvegicus	A0A0G2K6W6	Dis3l2	A0A0G2K6W6	3	75	DIS3-like exonuclease 2	
+DIS3L2	zebrafish	E7F350	dis3l2	E7F350	4	91	DIS3-like exonuclease 2	
+DIS3L2_219	fly	FBgn0035111	Dis3l2	Q8IRJ7	13	89		
+DISABLED	fly	FBgn0000414	Dab	E1JI13	2	8	Disabled, isoform F	w
+DISABLED	human	O75553	DAB1	O75553	27	102	Disabled homolog 1	w
+DISABLED	human	P98082	DAB2	P98082	51	222	Disabled homolog 2 (Adaptor molecule disabled-2) (Differenti	w
+DISABLED	human	Q5VWQ8	DAB2IP	Q5VWQ8	109	353	Disabled homolog 2-interacting protein (DAB2 interaction pro	w
+DISABLED	zebrafish	E7FDZ7	rasal3	E7FDZ7	4	9	Disabled homolog 2-interacting protein	w
+DISABLED-2	human	P98082	DAB2	P98082	51	222	Disabled homolog 2 (Adaptor molecule disabled-2) (Differenti	w
+DISAGGREGASE	human	Q9H078	CLPB	Q9H078	30	309	Mitochondrial disaggregase (EC 3.6.1.-) (Suppressor of potas	w
+DISC	fly	FBgn0015929	dpa	Q26454	6	66	DNA replication licensing factor MCM4 (EC 3.6.4.12) (Protein	w
+DISC1	human	Q6ZP82	CCDC141	Q6ZP82	3	19	Coiled-coil domain-containing protein 141 (Coiled-coil prote	w
+DISC1	human	Q9NRI5	DISC1	Q9NRI5	150	605	Disrupted in schizophrenia 1 protein	
+DISC1	mus-musculus	Q811T9	Disc1	Q811T9	29	92	Disrupted in schizophrenia 1 homolog	
+DISC1	rattus-norvegicus	Q810H6	Disc1	Q810H6	18	79	Disrupted in schizophrenia 1 homolog	
+DISC1-BINDING	human	Q70YC5	ZNF365	Q70YC5	10	28	Protein ZNF365 (DISC1-binding zinc-finger protein) (Protein 	w
+DISC1_HUMAN	human	Q9NRI5	DISC1	Q9NRI5	150	605		
+DISCO	fly	FBgn0000459	disco	P23792	115	442	Protein disconnected	
+DISCO	fly	FBgn0024807	DIP1	Q9TW27	39	387	DISCO interacting protein 1, isoform D (Disco-interacting pr	w
+DISCO-INTERACTING	fly	FBgn0024806	DIP2	Q9W0S9	0	67	Disco-interacting protein 2	w
+DISCO-INTERACTING	fly	FBgn0024807	DIP1	Q9TW27	39	387	DISCO interacting protein 1, isoform D (Disco-interacting pr	w
+DISCO-INTERACTING	human	Q14689	DIP2A	Q14689	10	115	Disco-interacting protein 2 homolog A (DIP2 homolog A) (EC 6	w
+DISCO-INTERACTING	human	Q9P265	DIP2B	Q9P265	8	67	Disco-interacting protein 2 homolog B (DIP2 homolog B)	w
+DISCO-INTERACTING	human	Q9Y2E4	DIP2C	Q9Y2E4	2	15	Disco-interacting protein 2 homolog C (DIP2 homolog C)	w
+DISCO-R	fly	FBgn0285879	disco-r	Q9VXJ5	21	87	Disco-related, isoform A (Disco-related, isoform B) (Disco-r	
+DISCO-RELATED	fly	FBgn0285879	disco-r	Q9VXJ5	21	87	Disco-related, isoform A (Disco-related, isoform B) (Disco-r	w
+DISCOIDIN	fly	FBgn0053531	Ddr	Q59DZ7	124	1118	Discoidin domain receptor, isoform F (Discoidin domain recep	w
+DISCOIDIN	human	O43854	EDIL3	O43854	24	191	EGF-like repeat and discoidin I-like domain-containing prote	w
+DISCOIDIN	human	Q08345	DDR1	Q08345	145	1411	Epithelial discoidin domain-containing receptor 1 (Epithelia	w
+DISCOIDIN	human	Q16832	DDR2	Q16832	111	1459	Discoidin domain-containing receptor 2 (Discoidin domain rec	w
+DISCOIDIN	human	Q8N8Z6	DCBLD1	Q8N8Z6	6	40	Discoidin, CUB and LCCL domain-containing protein 1	w
+DISCOIDIN	human	Q96PD2	DCBLD2	Q96PD2	22	101	Discoidin, CUB and LCCL domain-containing protein 2 (CUB, LC	w
+DISCOIDIN	worm	Q18163	ddr-1	Q18163	8	35	Discoidin domain-containing receptor A	w
+DISCOIDIN	worm	Q95ZV7	ddr-2	Q95ZV7	5	28	Discoidin domain-containing receptor tyrosine kinase B (EC 2	w
+DISCOIDIN	zebrafish	A0A0R4IMA9	edil3a	A0A0R4IMA9	2	19	EGF-like repeat and discoidin I-like domain-containing prote	w
+DISCOIDIN	zebrafish	A0A8M2BDP6	ddr2a	A0A8M2BDP6	6	33	Discoidin domain-containing receptor 2 (EC 2.7.10.1) (CD167 	w
+DISCOIDIN	zebrafish	A0A8N7T7R5	ddr2l	A0A8N7T7R5	0	1	Discoidin domain-containing receptor 2	w
+DISCOIDIN	zebrafish	A0A8N7UYK1	dcbld2	A0A8N7UYK1	1	1	Discoidin, CUB and LCCL domain-containing protein 2	w
+DISCOIDIN	zebrafish	E7FFT8	ddr2a	E7FFT8	0	1	Discoidin domain-containing receptor 2	w
+DISCOIDIN	zebrafish	F1Q6J1	edil3b	F1Q6J1	2	94	EGF-like repeat and discoidin I-like domain-containing prote	w
+DISCONNECTED	fly	FBgn0000459	disco	P23792	115	442	Protein disconnected	w
+DISCONTINUOUS	fly	FBgn0015926	dah	Q24175	3	24	Discontinuous actin hexagon (LD05408p)	w
+DISCOVERED	human	Q5XXA6	ANO1	Q5XXA6	9	48	Anoctamin-1 (Discovered on gastrointestinal stromal tumors p	w
+DISCS	fly	FBgn0000139	ash2	Q94545	40	479	Set1/Ash2 histone methyltransferase complex subunit ASH2 (Ab	w
+DISCS	fly	FBgn0001624	dlg1	E1JJH5	28	182	Discs large 1, isoform M (EC 2.7.4.8)	w
+DISCS	fly	FBgn0002174	CG5504	Q27237	6	42	Protein tumorous imaginal discs, mitochondrial (Protein leth	w
+DISCS	fly	FBgn0002413	dco	O76324	195	1286	Discs overgrown protein kinase (EC 2.7.11.1) (Protein double	w
+DISCS	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8	Hyperplastic discs, isoform B	w
+DISCS	fly	FBgn0003984	vn	Q94918	59	310	Protein vein (Epidermal growth factor-like protein) (Protein	w
+DISCS	fly	FBgn0032363	Dlg5	Q9VKG8	1	12	Discs large 5, isoform A (Discs large 5, isoform B) (LD32687	w
+DISCS	fly	FBgn0261983	l(2)gd1	M9NEZ0	3	21	Lethal (2) giant discs 1, isoform B	w
+DISCS	human	O95071	UBR5	O95071	16	560	E3 ubiquitin-protein ligase UBR5 (EC 2.3.2.26) (E3 ubiquitin	w
+DISCS	human	Q13368	MPP3	Q13368	42	218	MAGUK p55 subfamily member 3 (Discs large homolog 3) (Protei	w
+DISCS	human	Q14168	MPP2	Q14168	32	173	MAGUK p55 subfamily member 2 (Discs large homolog 2) (Protei	w
+DISCS	human	Q15398	DLGAP5	Q15398	38	171	Disks large-associated protein 5 (DAP-5) (Discs large homolo	w
+DISCS	human	Q8TDM6	DLG5	Q8TDM6	103	336	Disks large homolog 5 (Discs large protein P-dlg) (Placenta 	w
+DISCS	human	Q96EY1	DNAJA3	Q96EY1	23	394	DnaJ homolog subfamily A member 3, mitochondrial (DnaJ prote	w
+DISCS	human	Q96JB8	MPP4	Q96JB8	13	65	MAGUK p55 subfamily member 4 (Amyotrophic lateral sclerosis 	w
+DISCS	zebrafish	A0A8M2B6G8	dlgap3	A0A8M2B6G8	2	18	Discs, large (Drosophila) homolog-associated protein 3	w
+DISCS	zebrafish	Q5PYH5	dlg1l	Q5PYH5	4	46	Discs large homolog 1-like protein	w
+DISEASE	fly	FBgn0027655	htt	Q9V3N4	1	6	Huntingtin, isoform A (Huntingtin, isoform B) (Huntington di	w
+DISEASE	fly	FBgn0041195	Pkd2	Q9VK95	0	7	MIP30126p (Polycystic kidney disease 2) (Polycystin-2)	w
+DISEASE	human	O00258	GET1	O00258	14	175	Guided entry of tail-anchored proteins factor 1 (Congenital 	w
+DISEASE	human	O00515	LAD1	O00515	21	78	Ladinin-1 (Lad-1) (Linear IgA disease antigen) (LADA)	w
+DISEASE	human	O60260	PRKN	O60260	112	3401	E3 ubiquitin-protein ligase parkin (Parkin) (EC 2.3.2.31) (P	w
+DISEASE	human	O60880	SH2D1A	O60880	86	272	SH2 domain-containing protein 1A (Duncan disease SH2-protein	w
+DISEASE	human	P01860	IGHG3	P01860	107	1091	Immunoglobulin heavy constant gamma 3 (HDC) (Heavy chain dis	w
+DISEASE	human	P05067	APP	P05067	552	2982	Amyloid-beta precursor protein (APP) (ABPP) (APPI) (Alzheime	w
+DISEASE	human	P12273	PIP	P12273	105	376	Prolactin-inducible protein (Gross cystic disease fluid prot	w
+DISEASE	human	P14598	NCF1	P14598	42	174	Neutrophil cytosol factor 1 (NCF-1) (47 kDa autosomal chroni	w
+DISEASE	human	P16260	SLC25A16	P16260	5	165	Mitochondrial coenzyme A transporter SLC25A16 (Graves diseas	w
+DISEASE	human	P40337	VHL	P40337	179	696	von Hippel-Lindau disease tumor suppressor (Protein G7) (pVH	w
+DISEASE	human	P42858	HTT	P42858	9	181	Huntingtin (Huntington disease protein) (HD protein) [Cleave	w
+DISEASE	human	P54252	ATXN3	P54252	41	517	Ataxin-3 (EC 3.4.19.12) (Machado-Joseph disease protein 1) (	w
+DISEASE	human	P61916	NPC2	P61916	26	147	NPC intracellular cholesterol transporter 2 (Epididymal secr	w
+DISEASE	human	Q00604	NDP	Q00604	15	318	Norrin (Norrie disease protein) (X-linked exudative vitreore	w
+DISEASE	human	Q13099	IFT88	Q13099	39	211	Intraflagellar transport protein 88 homolog (Recessive polyc	w
+DISEASE	human	Q13286	CLN3	Q13286	7	194	Battenin (Batten disease protein) (Protein CLN3)	w
+DISEASE	human	Q13563	PKD2	Q13563	30	177	Polycystin-2 (PC2) (Autosomal dominant polycystic kidney dis	w
+DISEASE	human	Q7Z442	PKD1L2	Q7Z442	2	26	Polycystin-1-like protein 2 (Polycystin-1L2) (PC1-like 2 pro	w
+DISEASE	human	Q7Z443	PKD1L3	Q7Z443	5	52	Polycystin-1-like protein 3 (Polycystin-1L3) (PC1-like 3 pro	w
+DISEASE	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+DISEASE	human	Q8TDX9	PKD1L1	Q8TDX9	1	14	Polycystin-1-like protein 1 (Polycystin-1L1) (PC1-like 1 pro	w
+DISEASE	human	Q99497	PARK7	Q99497	14	515	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
+DISEASE	human	Q9BXS0	COL25A1	Q9BXS0	7	39	Collagen alpha-1(XXV) chain (Alzheimer disease amyloid-assoc	w
+DISEASE	human	Q9H3M9	ATXN3L	Q9H3M9	9	59	Ataxin-3-like protein (EC 3.4.19.12) (Machado-Joseph disease	w
+DISEASE	human	Q9H8N7	ZNF395	Q9H8N7	180	479	Zinc finger protein 395 (HD-regulating factor 2) (HDRF-2) (H	w
+DISEASE	human	Q9HC29	NOD2	Q9HC29	12	172	Nucleotide-binding oligomerization domain-containing protein	w
+DISEASE	human	Q9NR83	SLC2A4RG	Q9NR83	147	459	SLC2A4 regulator (GLUT4 enhancer factor) (GEF) (Huntington d	w
+DISEASE	human	Q9NTG1	PKDREJ	Q9NTG1	0	11	Polycystin family receptor for egg jelly (PKD and REJ homolo	w
+DISEASE	human	Q9NZM6	PKD2L2	Q9NZM6	5	31	Polycystin-2-like protein 2 (Polycystin-2L2) (Polycystic kid	w
+DISEASE	human	Q9P0L9	PKD2L1	Q9P0L9	12	74	Polycystin-2-like protein 1 (Polycystin-2L1) (Polycystic kid	w
+DISEASE	human	Q9P266	JCAD	Q9P266	23	68	Junctional cadherin 5-associated protein (Junctional protein	w
+DISEASE	human	Q9UMD9	COL17A1	Q9UMD9	21	106	Collagen alpha-1(XVII) chain (180 kDa bullous pemphigoid ant	w
+DISEASE	worm	G5ECP0	nphp-4	G5ECP0	2	27	NePHronoPhthisis (Human kidney disease) homolog	w
+DISEASE	zebrafish	B3DHE4	vhll	B3DHE4	13	60	von Hippel-Lindau disease tumor suppressor	w
+DISEASE	zebrafish	Q5XJ36	park7	Q5XJ36	0	108	Parkinson disease protein 7 homolog	w
+DISEASE-ASSOCIATED	human	P35670	ATP7B	P35670	3	95	Copper-transporting ATPase 2 (EC 7.2.2.8) (Copper pump 2) (W	w
+DISEASE-ASSOCIATED	human	Q04656	ATP7A	Q04656	11	184	Copper-transporting ATPase 1 (EC 7.2.2.8) (Copper pump 1) (M	w
+DISEASE-ASSOCIATED	human	Q538Z0	LUZP6	Q538Z0	0	16	Leucine zipper protein 6 (Myeloproliferative disease-associa	w
+DISEASE-RELATED	human	Q9UH90	FBXO40	Q9UH90	18	102	F-box only protein 40 (Muscle disease-related protein)	w
+DISEMBODIED	fly	FBgn0000449	dib	Q9NGX9	0	2	Cytochrome P450 302a1, mitochondrial (EC 1.14.99.-) (Protein	w
+DISHEVELED-ASSOCIATED	human	Q86T65	DAAM2	Q86T65	31	155	Disheveled-associated activator of morphogenesis 2	w
+DISHEVELED-ASSOCIATED	human	Q9Y4D1	DAAM1	Q9Y4D1	54	256	Disheveled-associated activator of morphogenesis 1	w
+DISHEVELED-ASSOCIATED	zebrafish	A0A0R4IER9	daam1a	A0A0R4IER9	10	37	Disheveled-associated activator of morphogenesis 1 isoform X	w
+DISHEVELED-ASSOCIATED	zebrafish	Q5RHJ3	daam1b	Q5RHJ3	12	33	Disheveled-associated activator of morphogenesis 1b	w
+DISHEVELLED	fly	FBgn0000499	dsh	P51140	40	266	Segment polarity protein dishevelled	w
+DISHEVELLED	fly	FBgn0025641	DAAM	M9MSM5	15	72	Dishevelled associated activator of morphogenesis, isoform D	w
+DISHEVELLED	human	O14640	DVL1	O14640	39	218	Segment polarity protein dishevelled homolog DVL-1 (Dishevel	w
+DISHEVELLED	human	O14641	DVL2	O14641	92	636	Segment polarity protein dishevelled homolog DVL-2 (Dishevel	w
+DISHEVELLED	human	P54792	DVL1P1	P54792	17	81	Putative segment polarity protein dishevelled homolog DVL1P1	w
+DISHEVELLED	human	Q92997	DVL3	Q92997	56	370	Segment polarity protein dishevelled homolog DVL-3 (Dishevel	w
+DISHEVELLED	worm	A0A0K3AUI8	dsh-1	A0A0K3AUI8	10	127	DiSHevelled related	w
+DISHEVELLED	worm	Q18239	dsh-2	Q18239	8	98	DiSHevelled related	w
+DISHEVELLED	worm	Q22227	mig-5	Q22227	30	810	Segment polarity protein dishevelled homolog mig-5	w
+DISHEVELLED	zebrafish	B8JMI2	dvl3a	B8JMI2	10	48	Dishevelled segment polarity protein 3a	w
+DISHEVELLED	zebrafish	E7F737	dvl3b	E7F737	14	67	Dishevelled segment polarity protein 3b	w
+DISHEVELLED	zebrafish	F1QNA4	dvl1b	F1QNA4	11	65	Dishevelled segment polarity protein 1b	w
+DISHEVELLED-1	human	O14640	DVL1	O14640	39	218	Segment polarity protein dishevelled homolog DVL-1 (Dishevel	w
+DISHEVELLED-1-LIKE	human	P54792	DVL1P1	P54792	17	81	Putative segment polarity protein dishevelled homolog DVL1P1	w
+DISHEVELLED-2	human	O14641	DVL2	O14641	92	636	Segment polarity protein dishevelled homolog DVL-2 (Dishevel	w
+DISHEVELLED-3	human	Q92997	DVL3	Q92997	56	370	Segment polarity protein dishevelled homolog DVL-3 (Dishevel	w
+DISINT	human	Q13444	ADAM15	Q13444	29	170	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	O14672	ADAM10	O14672	25	347	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	O15072	ADAMTS3	O15072	6	98	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	O15204	ADAMDEC1	O15204	4	65	ADAM DEC1 (EC 3.4.24.-) (A disintegrin and metalloproteinase	w
+DISINTEGRIN	human	O43184	ADAM12	O43184	25	165	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	O43506	ADAM20	O43506	12	38	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	O75077	ADAM23	O75077	15	113	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	O75078	ADAM11	O75078	30	160	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	O75173	ADAMTS4	O75173	48	229	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	O95450	ADAMTS2	O95450	16	107	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	P58397	ADAMTS12	P58397	13	71	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	P59510	ADAMTS20	P59510	5	25	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	P78325	ADAM8	P78325	18	115	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	P78536	ADAM17	P78536	24	272	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q13443	ADAM9	Q13443	29	219	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q13444	ADAM15	Q13444	29	170	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q6NVV9	ADAM5	Q6NVV9	1	4	Putative disintegrin and metalloproteinase domain-containing	w
+DISINTEGRIN	human	Q6ZMP0	THSD4	Q6ZMP0	18	76	Thrombospondin type-1 domain-containing protein 4 (A disinte	w
+DISINTEGRIN	human	Q76LX8	ADAMTS13	Q76LX8	19	104	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q8TC27	ADAM32	Q8TC27	14	68	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q8TE56	ADAMTS17	Q8TE56	9	58	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q8TE57	ADAMTS16	Q8TE57	6	37	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q8TE58	ADAMTS15	Q8TE58	11	64	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q8TE59	ADAMTS19	Q8TE59	7	40	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q8TE60	ADAMTS18	Q8TE60	9	68	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q8WXS8	ADAMTS14	Q8WXS8	10	56	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q99965	ADAM2	Q99965	20	71	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9BZ11	ADAM33	Q9BZ11	31	153	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9H013	ADAM19	Q9H013	22	91	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9H2U9	ADAM7	Q9H2U9	8	75	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9H324	ADAMTS10	Q9H324	9	61	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q9P0K1	ADAM22	Q9P0K1	29	169	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9P2N4	ADAMTS9	Q9P2N4	14	69	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q9UHI8	ADAMTS1	Q9UHI8	54	251	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q9UKF2	ADAM30	Q9UKF2	20	88	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9UKF5	ADAM29	Q9UKF5	11	31	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9UKJ8	ADAM21	Q9UKJ8	23	103	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9UKP4	ADAMTS7	Q9UKP4	12	108	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q9UKP5	ADAMTS6	Q9UKP5	4	49	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q9UKQ2	ADAM28	Q9UKQ2	13	96	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	human	Q9UNA0	ADAMTS5	Q9UNA0	24	115	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q9UP79	ADAMTS8	Q9UP79	4	50	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	human	Q9Y3Q7	ADAM18	Q9Y3Q7	11	41	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	worm	G5EDW5	adm-2	G5EDW5	0	1	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	worm	G5EFD9	sup-17	G5EFD9	2	19	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	worm	Q94316	adm-4	Q94316	4	12	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	zebrafish	A0A0R4ISF7	adamts2a	A0A0R4ISF7	0	1	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	zebrafish	A0A1D5NT24	adam10a	A0A1D5NT24	6	30	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN	zebrafish	A0A286Y999	adamts13	A0A286Y999	0	3	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	zebrafish	A2BIA3	adamts15a	A2BIA3	0	2	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN	zebrafish	Q7ZYZ9	adam8a	Q7ZYZ9	0	1	A disintegrin and metalloproteinase domain 8a	w
+DISINTEGRIN	zebrafish	X1WDJ8	adamts15b	X1WDJ8	0	2	A disintegrin and metalloproteinase with thrombospondin moti	w
+DISINTEGRIN-LIKE	human	O75077	ADAM23	O75077	15	113	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN-LIKE	human	O75078	ADAM11	O75078	30	160	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN-LIKE	human	Q6NVV9	ADAM5	Q6NVV9	1	4	Putative disintegrin and metalloproteinase domain-containing	w
+DISINTEGRIN-LIKE	human	Q9P0K1	ADAM22	Q9P0K1	29	169	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN-LIKE	human	Q9UKQ2	ADAM28	Q9UKQ2	13	96	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN-LIKE	human	Q9Y3Q7	ADAM18	Q9Y3Q7	11	41	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN-METALLOPROTE	human	O14672	ADAM10	O14672	25	347	Disintegrin and metalloproteinase domain-containing protein 	w
+DISINTEGRIN-RELATED	human	Q13443	ADAM9	Q13443	29	219	Disintegrin and metalloproteinase domain-containing protein 	w
+DISK	fly	FBgn0013763	Idgf6	Q23997	21	246	Imaginal disk growth factor 6	w
+DISK	fly	FBgn0015360	Oxt	Q7KVA1	322	2503	Xylosyltransferase oxt (EC 2.4.2.26) (Imaginal disk type I) 	w
+DISK	fly	FBgn0020414	Idgf3	Q8MLZ7	13	244	Chitinase-like protein Idgf3 (Imaginal disk growth factor pr	w
+DISK	fly	FBgn0020415	Idgf2	Q9V3D4	15	246	Chitinase-like protein Idgf2 (Imaginal disk growth factor pr	w
+DISK	fly	FBgn0020416	Idgf1	Q8MM24	15	244	Chitinase-like protein Idgf1 (Imaginal disk growth factor pr	w
+DISK	fly	FBgn0026415	Idgf4	Q9W303	16	267	Chitinase-like protein Idgf4 (Imaginal disk growth factor pr	w
+DISK	fly	FBgn0064237	Idgf5	Q8T0R7	32	246	Chitinase-like protein Idgf5 (Imaginal disk growth factor pr	w
+DISK	human	Q00LT1	PRCD	Q00LT1	17	110	Photoreceptor disk component PRCD (Progressive rod-cone dege	w
+DISK	human	Q9P258	RCC2	Q9P258	14	246	Protein RCC2 (RCC1-like protein TD-60) (Telophase disk prote	w
+DISKS	fly	FBgn0005386	ash1	Q9VW15	8	22	Histone-lysine N-methyltransferase ash1 (EC 2.1.1.354) (Abse	w
+DISKS	fly	FBgn0024510	dlt	Q8T626	2	8	Protein disks lost (Codanin 1 homolog) (Protein vanaso)	w
+DISKS	fly	FBgn0031759	Kdm5	Q9VMJ7	15	77	Lysine-specific demethylase 5 (EC 1.14.11.67) (Histone demet	w
+DISKS	human	O14490	DLGAP1	O14490	62	285	Disks large-associated protein 1 (DAP-1) (Guanylate kinase-a	w
+DISKS	human	O95886	DLGAP3	O95886	64	232	Disks large-associated protein 3 (DAP-3) (PSD-95/SAP90-bindi	w
+DISKS	human	P78352	DLG4	P78352	73	586	Disks large homolog 4 (Postsynaptic density protein 95) (PSD	w
+DISKS	human	Q12959	DLG1	Q12959	53	388	Disks large homolog 1 (Synapse-associated protein 97) (SAP-9	w
+DISKS	human	Q15398	DLGAP5	Q15398	38	171	Disks large-associated protein 5 (DAP-5) (Discs large homolo	w
+DISKS	human	Q15700	DLG2	Q15700	20	134	Disks large homolog 2 (Channel-associated protein of synapse	w
+DISKS	human	Q8TDM6	DLG5	Q8TDM6	103	336	Disks large homolog 5 (Discs large protein P-dlg) (Placenta 	w
+DISKS	human	Q92796	DLG3	Q92796	41	318	Disks large homolog 3 (Neuroendocrine-DLG) (Synapse-associat	w
+DISKS	human	Q9NR48	ASH1L	Q9NR48	15	70	Histone-lysine N-methyltransferase ASH1L (EC 2.1.1.359) (EC 	w
+DISKS	human	Q9P1A6	DLGAP2	Q9P1A6	78	289	Disks large-associated protein 2 (DAP-2) (PSD-95/SAP90-bindi	w
+DISKS	human	Q9Y2H0	DLGAP4	Q9Y2H0	53	169	Disks large-associated protein 4 (DAP-4) (PSD-95/SAP90-bindi	w
+DISKS	worm	G5ECY0	dlg-1	G5ECY0	1	140	Disks large homolog 1	w
+DISKS	zebrafish	A0A8M9PPH8	dlgap2a	A0A8M9PPH8	2	10	Disks large-associated protein 2 isoform X1	w
+DISKS	zebrafish	Q5PYH6	dlg1	Q5PYH6	9	30	Disks large homolog 1	w
+DISKS	zebrafish	Q5PYH7	dlg2	Q5PYH7	3	47	Disks large homolog 2	w
+DISKS	zebrafish	Q6R005	dlg4	Q6R005	13	77	Disks large homolog 4	w
+DISKS	zebrafish	Q7ZYZ6	dlgap1	Q7ZYZ6	3	17	Disks large-associated protein 1	w
+DISL-2	worm	Q09568	disl-2	Q09568	2	44	DIS3-like exonuclease 2	
+DISMUTASE	fly	FBgn0003462	Sod1	P61851	5	152	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	w
+DISMUTASE	fly	FBgn0010213	Sod2	Q00637	10	298	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	w
+DISMUTASE	fly	FBgn0010531	Ccs	E1JH26	7	54	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	w
+DISMUTASE	fly	FBgn0033631	Sod3	A1Z8K9	36	386	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	w
+DISMUTASE	fly	FBgn0039386	Sodq	Q9VBK8	19	266	superoxide dismutase (EC 1.15.1.1)	w
+DISMUTASE	fly	FBgn0051028	Rsod	Q9VA99	0	1	superoxide dismutase (EC 1.15.1.1)	w
+DISMUTASE	human	F5H3C5	SOD2	F5H3C5	4	269	Superoxide dismutase	w
+DISMUTASE	human	O14618	CCS	O14618	12	69	Copper chaperone for superoxide dismutase (Superoxide dismut	w
+DISMUTASE	human	P00441	SOD1	P00441	16	452	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
+DISMUTASE	human	P04179	SOD2	P04179	10	423	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	w
+DISMUTASE	human	P08294	SOD3	P08294	7	91	Extracellular superoxide dismutase [Cu-Zn] (EC-SOD) (EC 1.15	w
+DISMUTASE	virus	A0A916KQ06	MYSEV_026	A0A916KQ06	9	301	superoxide dismutase	w
+DISMUTASE	virus	Q9EMF1	AMV255	Q9EMF1	2	278	superoxide dismutase	w
+DISMUTASE	worm	P31161	sod-2	P31161	1	111	Superoxide dismutase	w
+DISMUTASE	worm	P34461	sod-4	P34461	2	15	Extracellular superoxide dismutase	w
+DISMUTASE	worm	P34697	sod-1	P34697	3	62	Superoxide dismutase	w
+DISMUTASE	worm	P41977	sod-3	P41977	1	102	Superoxide dismutase	w
+DISMUTASE	worm	Q27538	sod-5	Q27538	6	16	Superoxide dismutase	w
+DISMUTASE	yeast	P00445	SOD1	P00445	2	60	Superoxide dismutase	w
+DISMUTASE	yeast	P00447	SOD2	P00447	0	66	Superoxide dismutase	w
+DISMUTASE	yeast	P40202	CCS1	P40202	2	10	Superoxide dismutase 1 copper chaperone	w
+DISMUTASE	zebrafish	E9QIM2	sod3b	E9QIM2	2	46	Superoxide dismutase	w
+DISMUTASE	zebrafish	F1QCS3	ccs	F1QCS3	2	7	Copper chaperone for superoxide dismutase	w
+DISMUTASE	zebrafish	O73872	sod1	O73872	2	50	Superoxide dismutase	w
+DISMUTASE	zebrafish	Q6P980	sod2	Q6P980	4	283	Superoxide dismutase	w
+DISMUTASE-LIKE	virus	P0DTA1	OPG175	P0DTA1	10	199	Cu-Zn superoxide dismutase-like protein OPG175	w
+DISMUTASE-LIKE	virus	P26669	OPG175	P26669	16	218	Cu-Zn superoxide dismutase-like protein OPG175	w
+DISMUTASE-LIKE	virus	Q77FQ3	CMLV165	Q77FQ3	16	208	Cu-Zn superoxide dismutase-like protein	w
+DISMUTASE-LIKE	virus	Q8JL75	EVM144	Q8JL75	16	170	Cu-Zn superoxide dismutase-like protein	w
+DISMUTASE-LIKE	virus	Q8V4T3	A46R	Q8V4T3	11	187	Cu-Zn superoxide dismutase-like protein	w
+DISMUTASE-LIKE	virus	Q91M93	OPG175	Q91M93	22	225	Cu-Zn superoxide dismutase-like protein OPG175	w
+DISORDER	human	O43933	PEX1	O43933	13	113	Peroxisomal ATPase PEX1 (EC 3.6.4.-) (Peroxin-1) (Peroxisome	w
+DISORDER	human	Q9H6U8	ALG9	Q9H6U8	7	123	Alpha-1,2-mannosyltransferase ALG9 (EC 2.4.1.259) (EC 2.4.1.	w
+DISORDER	human	Q9UBW7	ZMYM2	Q9UBW7	79	327	Zinc finger MYM-type protein 2 (Fused in myeloproliferative 	w
+DISORDER-ASSOCIATED	human	O43295	SRGAP3	O43295	31	210	SLIT-ROBO Rho GTPase-activating protein 3 (srGAP3) (Mental d	w
+DISORDERED	fly	FBgn0037617	nom	Q9VHM7	38	436	IP14660p (Numerous disordered muscles, isoform A) (Numerous 	w
+DISORDERED	human	P59773	MINAR2	P59773	0	13	Major intrinsically disordered NOTCH2-binding receptor 1-lik	w
+DISORDERED	human	Q9UPX6	MINAR1	Q9UPX6	3	20	Major intrinsically disordered Notch2-binding receptor 1 (Me	w
+DISORDERED	worm	A0A0K3AV61	idpp-2	A0A0K3AV61	0	1	Intrinsically Disordered Protein, expressed in Pharynx	w
+DISORDERED	worm	O16463	idpc-2	O16463	0	2	Intrinsically Disordered Protein, class C	w
+DISORDERED	worm	O45522	idpp-3	O45522	0	1	Intrinsically Disordered Protein, expressed in Pharynx	w
+DISORDERED	worm	P34587	idpp-15	P34587	1	21	Intrinsically disordered protein, expressed in pharynx 15	w
+DISORDERED	worm	Q18238	idpb-2	Q18238	0	5	Intrinsically Disordered Protein, class B	w
+DISORDERED	worm	Q18329	idpp-14	Q18329	0	1	Intrinsically Disordered Protein, expressed in Pharynx	w
+DISORDERED	worm	Q22048	idpb-4	Q22048	0	1	Intrinsically Disordered Protein, class B	w
+DISORDERED	worm	Q22264	idpc-7	Q22264	0	1	Intrinsically Disordered Protein, class C	w
+DISORDERED	worm	Q95QY1	idpb-1	Q95QY1	0	1	Intrinsically Disordered Protein, class B	w
+DISORDERED	worm	Q9N5B1	idpp-12	Q9N5B1	0	3	Intrinsically Disordered Protein, expressed in Pharynx	w
+DISORDERED	worm	Q9XU68	idpp-7	Q9XU68	0	2	Intrinsically Disordered Protein, expressed in Pharynx	w
+DISORDERS	human	Q9UBW7	ZMYM2	Q9UBW7	79	327	Zinc finger MYM-type protein 2 (Fused in myeloproliferative 	w
+DISORGANIZED	worm	P46012	gldi-3	P46012	0	2	Germ layers disorganized gldi-3	w
+DISORGANIZED	worm	Q18066	dim-1	Q18066	0	58	Disorganized muscle protein 1	w
+DISP	fly	FBgn0029088	disp	Q9VNJ5	3	9	Protein dispatched	
+DISP	human	Q96II8	LRCH3	Q96II8	38	126	DISP complex protein LRCH3 (Leucine-rich repeat and calponin	w
+DISP-PA	fly	FBgn0029088	disp	Q9VNJ5	3	9		
+DISP-PA_3_1123	fly	FBgn0029088	disp	Q9VNJ5	3	9		
+DISP1	human	Q96F81	DISP1	Q96F81	0	39	Protein dispatched homolog 1	
+DISP1	zebrafish	Q6R5J2	disp1	Q6R5J2	1	9	Protein dispatched homolog 1	
+DISP1_HUMAN	human	Q96F81	DISP1	Q96F81	0	39		
+DISP2	human	A7MBM2	DISP2	A7MBM2	4	45	Protein dispatched homolog 2	
+DISP2	mus-musculus	Q8CIP5	Disp2	Q8CIP5	0	3	Protein dispatched homolog 2	
+DISP2	rattus-norvegicus	D3ZBZ6	Disp2	D3ZBZ6	0	3	Protein dispatched homolog 2	
+DISP2	zebrafish	Q6R5J1	disp2	Q6R5J1	0	8	Protein dispatched homolog 2	
+DISP2_HUMAN	human	A7MBM2	DISP2	A7MBM2	4	45		
+DISP3	human	Q9P2K9	DISP3	Q9P2K9	1	63	Protein dispatched homolog 3 (Patched domain-containing prot	
+DISP3	mus-musculus	A3KFU9	Disp3	A3KFU9	0	3	Protein dispatched homolog 3	
+DISP3	rattus-norvegicus	D3ZW02	Disp3	D3ZW02	0	3	Protein dispatched homolog 3	
+DISP3_HUMAN	human	Q9P2K9	DISP3	Q9P2K9	1	63		
+DISPA	human	Q96F81	DISP1	Q96F81	0	39		
+DISPANIN	human	A6NDD5	SYNDIG1L	A6NDD5	14	131	Synapse differentiation-inducing gene protein 1-like (Capuci	w
+DISPANIN	human	A6NMD0	IFITM10	A6NMD0	14	106	Interferon-induced transmembrane protein 10 (Dispanin subfam	w
+DISPANIN	human	A6NNB3	IFITM5	A6NNB3	20	224	Interferon-induced transmembrane protein 5 (Bone-restricted 	w
+DISPANIN	human	B4DJY2	TMEM233	B4DJY2	11	69	Transmembrane protein 233 (Dispanin subfamily B member 2) (D	w
+DISPANIN	human	C9JQL5	DSA2D	C9JQL5	5	12	Putative dispanin subfamily A member 2d (DSPA2d)	w
+DISPANIN	human	P13164	IFITM1	P13164	44	608	Interferon-induced transmembrane protein 1 (Dispanin subfami	w
+DISPANIN	human	Q01628	IFITM3	Q01628	63	523	Interferon-induced transmembrane protein 3 (Dispanin subfami	w
+DISPANIN	human	Q01629	IFITM2	Q01629	8	51	Interferon-induced transmembrane protein 2 (Dispanin subfami	w
+DISPANIN	human	Q6ZNR0	TMEM91	Q6ZNR0	11	87	Transmembrane protein 91 (Dispanin subfamily C member 3) (DS	w
+DISPANIN	human	Q7Z6L0	PRRT2	Q7Z6L0	8	36	Proline-rich transmembrane protein 2 (Dispanin subfamily B m	w
+DISPANIN	human	Q8IXB3	TRARG1	Q8IXB3	32	166	Trafficking regulator of GLUT4 1 (Dispanin subfamily B membe	w
+DISPANIN	human	Q99946	PRRT1	Q99946	7	65	Proline-rich transmembrane protein 1 (Dispanin subfamily D m	w
+DISPANIN	human	Q9H7V2	SYNDIG1	Q9H7V2	8	172	Synapse differentiation-inducing gene protein 1 (SynDIG1) (D	w
+DISPANIN	zebrafish	A0A0R4IB47	si:ch73-343g19.4	A0A0R4IB47	0	4	Dispanin subfamily A member 2b-like	w
+DISPANIN	zebrafish	X1WCU7	si:rp71-77l1.2	X1WCU7	0	4	Dispanin subfamily A member 2b-like	w
+DISPANIN	zebrafish	X1WG92	si:rp71-77l1.1	X1WG92	0	4	Dispanin subfamily A member 2b	w
+DISPATCHED	fly	FBgn0029088	disp	Q9VNJ5	3	9	Protein dispatched	w
+DISPATCHED	human	A7MBM2	DISP2	A7MBM2	4	45	Protein dispatched homolog 2	w
+DISPATCHED	human	Q96F81	DISP1	Q96F81	0	39	Protein dispatched homolog 1	w
+DISPATCHED	human	Q9P2K9	DISP3	Q9P2K9	1	63	Protein dispatched homolog 3 (Patched domain-containing prot	w
+DISPATCHED	zebrafish	Q6R5J1	disp2	Q6R5J1	0	8	Protein dispatched homolog 2	w
+DISPATCHED	zebrafish	Q6R5J2	disp1	Q6R5J2	1	9	Protein dispatched homolog 1	w
+DISPB	human	A7MBM2	DISP2	A7MBM2	4	45		
+DISPERSIN	human	P07602	PSAP	P07602	31	201	Prosaposin (Proactivator polypeptide) [Cleaved into: Saposin	w
+DISPERSING	worm	G8JYC6	pdf-1	G8JYC6	0	2	Pigment dispersing factor homolog pdf-1	w
+DISPLACEMENT	human	P39880	CUX1	P39880	48	228	Homeobox protein cut-like 1 (CCAAT displacement protein) (CD	w
+DISP_5_1123	fly	FBgn0029088	disp	Q9VNJ5	3	9		
+DISRUPTED	fly	FBgn0083973	dunk	Q0E8M3	0	1	Disrupted underground network, isoform A (Disrupted undergro	w
+DISRUPTED	human	Q969H9	DIRC1	Q969H9	6	38	Disrupted in renal carcinoma protein 1 (Disrupted in renal c	w
+DISRUPTED	human	Q96SL1	SLC49A4	Q96SL1	4	102	Solute carrier family 49 member 4 (Disrupted in renal cancer	w
+DISRUPTED	human	Q9H6U8	ALG9	Q9H6U8	7	123	Alpha-1,2-mannosyltransferase ALG9 (EC 2.4.1.259) (EC 2.4.1.	w
+DISRUPTED	human	Q9NRI5	DISC1	Q9NRI5	150	605	Disrupted in schizophrenia 1 protein	w
+DISRUPTER	fly	FBgn0003009	ord	Q24434	1	3	Protein ORD (Orientation disrupter protein)	w
+DISRUPTER	human	Q9NQZ2	UTP3	Q9NQZ2	66	342	Something about silencing protein 10 (Charged amino acid-ric	w
+DISRUPTION	yeast	P53078	SDT1	P53078	0	2	Suppressor of disruption of TFIIS	w
+DISRUPTOR	human	Q8TEK3	DOT1L	Q8TEK3	96	849	Histone-lysine N-methyltransferase, H3 lysine-79 specific (E	w
+DISSATISFACTION	fly	FBgn0015381	dsf	Q9VML1	71	352	Protein dissatisfaction (Nuclear receptor subfamily 2 group 	w
+DISSOCIATING	human	A0A0U1RRE5	NBDY	A0A0U1RRE5	4	44	Negative regulator of P-body association (P-body dissociatin	w
+DISSOCIATION	fly	FBgn0004868	Gdi	Q9VLB7	18	261	Rab GDP dissociation inhibitor	w
+DISSOCIATION	fly	FBgn0022960	vimar	A1Z6S7	11	20	GTPase-GDP dissociation stimulator vimar	w
+DISSOCIATION	fly	FBgn0026376	Rgl	M9PCE9	8	28	Ral guanine nucleotide dissociation stimulator-like, isoform	w
+DISSOCIATION	fly	FBgn0260012	pds5	A1Z8S6	7	33	Precocious dissociation of sisters 5, isoform A (Precocious 	w
+DISSOCIATION	human	A0A2R8Y471	?	A0A2R8Y471	2	6	Ral guanine nucleotide dissociation stimulator	w
+DISSOCIATION	human	O15211	RGL2	O15211	21	84	Ral guanine nucleotide dissociation stimulator-like 2 (RalGD	w
+DISSOCIATION	human	P31150	GDI1	P31150	61	275	Rab GDP dissociation inhibitor alpha (Rab GDI alpha) (Guanos	w
+DISSOCIATION	human	P50395	GDI2	P50395	50	292	Rab GDP dissociation inhibitor beta (Rab GDI beta) (Guanosin	w
+DISSOCIATION	human	P52306	RAP1GDS1	P52306	58	287	Rap1 GTPase-GDP dissociation stimulator 1 (Exchange factor s	w
+DISSOCIATION	human	Q12967	RALGDS	Q12967	24	78	Ral guanine nucleotide dissociation stimulator (RalGDS) (Ral	w
+DISSOCIATION	human	Q3MIN7	RGL3	Q3MIN7	15	90	Ral guanine nucleotide dissociation stimulator-like 3 (RalGD	w
+DISSOCIATION	human	Q8IZJ4	RGL4	Q8IZJ4	5	17	Ral-GDS-related protein (hRGR) (Ral guanine nucleotide disso	w
+DISSOCIATION	human	Q9NZL6	RGL1	Q9NZL6	20	71	Ral guanine nucleotide dissociation stimulator-like 1 (RalGD	w
+DISSOCIATION	worm	Q19852	rgl-1	Q19852	11	19	Ral guanine nucleotide dissociation stimulator-like 1	w
+DISSOCIATION	worm	Q2V4S2	gdi-1	Q2V4S2	2	48	Rab GDP dissociation inhibitor	w
+DISSOCIATION	yeast	P39011	BEM4	P39011	4	37	GTPase-GDP dissociation stimulator BEM4	w
+DISSOCIATION	zebrafish	A0A0R4IED7	zgc:112334	A0A0R4IED7	11	54	Rab GDP dissociation inhibitor	w
+DISSOCIATION	zebrafish	A2AR68	gdi1	A2AR68	9	62	Rab GDP dissociation inhibitor	w
+DISSOCIATION	zebrafish	B8JK90	si:dkey-191g9.5	B8JK90	1	31	Rap1 GTPase-GDP dissociation stimulator 1-B	w
+DISSOCIATION	zebrafish	I3IT01	rgl3a	I3IT01	19	46	Ral guanine nucleotide dissociation stimulator-like 1 isofor	w
+DISSOCIATION	zebrafish	Q6P112	rgl1	Q6P112	18	46	Ral guanine nucleotide dissociation stimulator-like 1	w
+DISSOCIATION	zebrafish	Q7SZQ6	arhgdig	Q7SZQ6	16	138	Rho GDP dissociation inhibitor (GDI) gamma	w
+DIST1	human	Q96CC6	RHBDF1	Q96CC6	9	52		
+DISTAL	fly	FBgn0001148	gsb	P09082	93	412	Protein gooseberry (BSH9) (Protein gooseberry distal)	w
+DISTAL	fly	FBgn0004860	ph-d	Q9W523	22	71	Polyhomeotic distal, isoform A	w
+DISTAL	fly	FBgn0039283	danr	Q9VBW9	5	15	Protein distal antenna-related	w
+DISTAL	fly	FBgn0039286	dan	A0A0B4KI14	1	15	Distal antenna, isoform B	w
+DISTAL	fly	FBgn0050401	dany	Q9W2B0	54	372	Distal antenna-young, isoform A (Distal antenna-young, isofo	w
+DISTAL	fly	FBgn0053503	Cyp12d1-d	Q7KR10	1	48	Probable cytochrome P450 12d1 distal, mitochondrial (EC 1.14	w
+DISTAL	human	Q96GE9	DMAC1	Q96GE9	7	56	Distal membrane-arm assembly complex protein 1 (Transmembran	w
+DISTAL	human	Q99766	DMAC2L	Q99766	12	169	ATP synthase subunit s, mitochondrial (ATP synthase-coupling	w
+DISTAL	human	Q9NW81	DMAC2	Q9NW81	34	371	Distal membrane-arm assembly complex protein 2 (ATP synthase	w
+DISTAL	yeast	P38281	APD1	P38281	0	6	Actin patches distal protein 1	w
+DISTAL	zebrafish	A0A8M9Q9A8	si:dkey-88p24.11	A0A8M9Q9A8	0	2	Distal membrane-arm assembly complex protein 1	w
+DISTAL	zebrafish	R4GEM5	dmac2	R4GEM5	0	2	Distal membrane-arm assembly complex protein 2	w
+DISTAL-LESS	fly	FBgn0000157	Dll	A2VEF7	89	439	Distal-less, isoform C (IP14437p)	w
+DISTINCT	human	O95057	DIRAS1	O95057	52	320	GTP-binding protein Di-Ras1 (Distinct subgroup of the Ras fa	w
+DISTINCT	human	O95661	DIRAS3	O95661	26	340	GTP-binding protein Di-Ras3 (Distinct subgroup of the Ras fa	w
+DISTINCT	human	Q96HU8	DIRAS2	Q96HU8	27	215	GTP-binding protein Di-Ras2 (EC 3.6.5.-) (Distinct subgroup 	w
+DISTORTER	fly	FBgn0003346	RanGAP	Q9VIW3	21	169	Ran GTPase-activating protein (RanGAP) (Protein segregation 	w
+DISTRACTED	fly	FBgn0039528	dsd	Q9VB20	1	6	Distracted, isoform B (Distracted, isoform C)	w
+DISTRIBUTION	fly	FBgn0021768	nudC	Q9VVA6	11	84	Nuclear migration protein nudC (Nuclear distribution protein	w
+DISTRIBUTION	human	Q14CX7	NAA25	Q14CX7	17	100	N-alpha-acetyltransferase 25, NatB auxiliary subunit (Mitoch	w
+DISTRIBUTION	human	Q9GZM8	NDEL1	Q9GZM8	61	240	Nuclear distribution protein nudE-like 1 (Protein Nudel) (Mi	w
+DISTRIBUTION	human	Q9NXR1	NDE1	Q9NXR1	58	196	Nuclear distribution protein nudE homolog 1 (NudE)	w
+DISTRIBUTION	human	Q9Y266	NUDC	Q9Y266	33	255	Nuclear migration protein nudC (Nuclear distribution protein	w
+DISTRIBUTION	yeast	O60200	MDM35	O60200	3	13	Mitochondrial distribution and morphology protein 35	w
+DISTRIBUTION	yeast	P18409	MDM10	P18409	4	29	Mitochondrial distribution and morphology protein 10	w
+DISTRIBUTION	yeast	P38880	MDM31	P38880	1	11	Mitochondrial distribution and morphology protein 31	w
+DISTRIBUTION	yeast	P39946	PAC1	P39946	1	56	Nuclear distribution protein PAC1	w
+DISTRIBUTION	yeast	P53083	MDM34	P53083	3	56	Mitochondrial distribution and morphology protein 34	w
+DISTRIBUTION	yeast	Q05930	MDM30	Q05930	1	20	Mitochondrial distribution and morphology protein 30	w
+DISTRIBUTION	yeast	Q06568	NDL1	Q06568	5	21	Nuclear distribution protein nudE homolog 1	w
+DISTRIBUTION	yeast	Q06820	MDM36	Q06820	0	14	Mitochondrial distribution and morphology protein 36	w
+DISTRIBUTION	yeast	Q08179	MDM38	Q08179	0	85	Mitochondrial distribution and morphology protein 38	w
+DISTRIBUTION	yeast	Q12171	MDM32	Q12171	1	22	Mitochondrial distribution and morphology protein 32	w
+DISTRIBUTION	yeast	Q92328	MDM12	Q92328	2	34	Mitochondrial distribution and morphology protein 12	w
+DISTRIBUTION	zebrafish	Q7SXI6	ndel1a	Q7SXI6	4	47	Nuclear distribution protein nudE-like 1-A	w
+DISTRIBUTION	zebrafish	Q803Q2	ndel1b	Q803Q2	6	47	Nuclear distribution protein nudE-like 1-B	w
+DISULFIDE	human	P30101	PDIA3	P30101	20	445	Protein disulfide-isomerase A3 (EC 5.3.4.1) (58 kDa glucose-	w
+DISULFIDE	human	Q13087	PDIA2	Q13087	28	76	Protein disulfide-isomerase A2 (EC 5.3.4.1) (Pancreas-specif	w
+DISULFIDE	human	Q14554	PDIA5	Q14554	5	118	Protein disulfide-isomerase A5 (EC 5.3.4.1) (Protein disulfi	w
+DISULFIDE	human	Q15084	PDIA6	Q15084	25	309	Protein disulfide-isomerase A6 (EC 5.3.4.1) (Endoplasmic ret	w
+DISULFIDE	human	Q6UXH1	CRELD2	Q6UXH1	18	106	Protein disulfide isomerase CRELD2 (EC 5.3.4.1) (Cysteine-ri	w
+DISULFIDE	human	Q8IXB1	DNAJC10	Q8IXB1	16	390	Endoplasmic reticulum disulfide reductase DNAJC10 (EC 1.8.4.	w
+DISULFIDE	human	Q8TD06	AGR3	Q8TD06	35	111	Anterior gradient protein 3 (AG-3) (AG3) (hAG-3) (Anterior g	w
+DISULFIDE	human	Q96HD1	CRELD1	Q96HD1	23	223	Protein disulfide isomerase CRELD1 (EC 5.3.4.1) (Cysteine-ri	w
+DISULFIDE	worm	Q19267	crld-1	Q19267	0	1	Protein disulfide isomerase crld-1	w
+DISULFIDE	yeast	Q99316	MPD2	Q99316	1	38	Protein disulfide isomerase MPD2	w
+DISULFIDE-ISOMERASE	fly	FBgn0025678	CaBP1	Q9V438	34	358	Protein disulfide-isomerase A6 homolog (EC 5.3.4.1) (Calcium	w
+DISULFIDE-ISOMERASE	fly	FBgn0033663	ERp60	Q3YMU0	4	66	Protein disulfide-isomerase (EC 5.3.4.1)	w
+DISULFIDE-ISOMERASE	fly	FBgn0286818	Pdi	P54399	54	377	Protein disulfide-isomerase (PDI) (dPDI) (EC 5.3.4.1)	w
+DISULFIDE-ISOMERASE	human	P07237	P4HB	P07237	56	496	Protein disulfide-isomerase (PDI) (EC 5.3.4.1) (Cellular thy	w
+DISULFIDE-ISOMERASE	human	P13667	PDIA4	P13667	11	517	Protein disulfide-isomerase A4 (EC 5.3.4.1) (Endoplasmic ret	w
+DISULFIDE-ISOMERASE	human	P30101	PDIA3	P30101	20	445	Protein disulfide-isomerase A3 (EC 5.3.4.1) (58 kDa glucose-	w
+DISULFIDE-ISOMERASE	human	Q13087	PDIA2	Q13087	28	76	Protein disulfide-isomerase A2 (EC 5.3.4.1) (Pancreas-specif	w
+DISULFIDE-ISOMERASE	human	Q14554	PDIA5	Q14554	5	118	Protein disulfide-isomerase A5 (EC 5.3.4.1) (Protein disulfi	w
+DISULFIDE-ISOMERASE	human	Q15084	PDIA6	Q15084	25	309	Protein disulfide-isomerase A6 (EC 5.3.4.1) (Endoplasmic ret	w
+DISULFIDE-ISOMERASE	human	Q96DN0	ERP27	Q96DN0	11	66	Endoplasmic reticulum resident protein 27 (ER protein 27) (E	w
+DISULFIDE-ISOMERASE	human	Q96JJ7	TMX3	Q96JJ7	28	155	Protein disulfide-isomerase TMX3 (EC 5.3.4.1) (Thioredoxin d	w
+DISULFIDE-ISOMERASE	human	Q9H3N1	TMX1	Q9H3N1	57	252	Thioredoxin-related transmembrane protein 1 (Protein disulfi	w
+DISULFIDE-ISOMERASE	worm	G5ED07	pdi-3	G5ED07	4	28	Protein disulfide-isomerase	w
+DISULFIDE-ISOMERASE	worm	P34329	C14B9.2	P34329	2	33	Probable protein disulfide-isomerase A4	w
+DISULFIDE-ISOMERASE	worm	Q11067	pdi-6	Q11067	0	22	Protein disulfide-isomerase A6 homolog	w
+DISULFIDE-ISOMERASE	worm	Q17770	pdi-2	Q17770	5	36	Protein disulfide-isomerase 2	w
+DISULFIDE-ISOMERASE	worm	Q17967	pdi-1	Q17967	5	34	Protein disulfide-isomerase 1	w
+DISULFIDE-ISOMERASE	worm	Q9XTU8	CELE_Y49E10.4	Q9XTU8	2	16	protein disulfide-isomerase	w
+DISULFIDE-ISOMERASE	yeast	P17967	PDI1	P17967	1	42	Protein disulfide-isomerase	w
+DISULFIDE-ISOMERASE	yeast	P32474	EUG1	P32474	1	22	Protein disulfide-isomerase EUG1	w
+DISULFIDE-ISOMERASE	yeast	Q12404	MPD1	Q12404	1	44	Protein disulfide-isomerase MPD1	w
+DISULFIDE-ISOMERASE	zebrafish	A0A0R4IPV5	p4hb	A0A0R4IPV5	8	66	Protein disulfide-isomerase	w
+DISULFIDE-ISOMERASE	zebrafish	A0A8M1N1K6	pdia8	A0A8M1N1K6	10	49	Protein disulfide-isomerase	w
+DISULFIDE-ISOMERASE	zebrafish	A0A8M3AVN2	creld1b	A0A8M3AVN2	0	3	protein disulfide-isomerase	w
+DISULFIDE-ISOMERASE	zebrafish	B8A5M6	pdia2	B8A5M6	9	51	Protein disulfide-isomerase	w
+DISULFIDE-ISOMERASE	zebrafish	Q1ECX9	pdia4	Q1ECX9	3	57	Protein disulfide-isomerase A4	w
+DISULFIDE-ISOMERASE-LIKE	human	Q8N807	PDILT	Q8N807	8	48	Protein disulfide-isomerase-like protein of the testis	w
+DISULFIDE-THIOL	human	Q16206	ENOX2	Q16206	16	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
+DISULFIDE-THIOL	human	Q8TC92	ENOX1	Q8TC92	5	34	Ecto-NOX disulfide-thiol exchanger 1 (Candidate growth-relat	w
+DISULFIDE-THIOL	zebrafish	E7EZB6	enox2	E7EZB6	0	1	Ecto-NOX disulfide-thiol exchanger 2	w
+DISULFIDE-THIOL	zebrafish	X1WCA2	enox1	X1WCA2	0	1	Ecto-NOX disulfide-thiol exchanger 1	w

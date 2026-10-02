@@ -1,23 +1,858 @@
-G5E829	mus-musculus	G5E829	Atp2b1	G5E829	3	29	Plasma membrane calcium-transporting ATPase 1
-G5E845	mus-musculus	G5E845	Kcnk16	G5E845	13	13	Potassium channel, subfamily K, member 16
-G5E861	mus-musculus	G5E861	Sclt1	G5E861	7	54	Sodium channel and clathrin linker 1
-G5E895	mus-musculus	G5E895	Akr1b10	G5E895	0	4	aldose reductase
-G5E897	mus-musculus	G5E897	Poglut3	G5E897	0	1	Protein O-glucosyltransferase 3
-G5E8A8	mus-musculus	G5E8A8	Tekt5	G5E8A8	0	14	Tektin-5
-G5E8C2	mus-musculus	G5E8C2	Kbtbd7	G5E8C2	28	63	Kelch repeat and BTB (POZ) domain containing 7
-G5E8G2	mus-musculus	G5E8G2	Usp17ld	G5E8G2	0	6	Ubiquitin carboxyl-terminal hydrolase 17-like protein D
-G5E8H5	mus-musculus	G5E8H5	Tpte	G5E8H5	0	5	Transmembrane phosphatase with tensin homology
-G5E8I7	mus-musculus	G5E8I7	Usp17lc	G5E8I7	3	23	Ubiquitin carboxyl-terminal hydrolase 17-like protein C
-G5E8J6	mus-musculus	G5E8J6	Hrc	G5E8J6	1	29	Histidine rich calcium binding protein
-G5E8K6	mus-musculus	G5E8K6	Slc16a5	G5E8K6	1	2	Monocarboxylate transporter 6
-G5E8L3	mus-musculus	G5E8L3	Nat8f4	G5E8L3	1	5	N-acetyltransferase 8 (GCN5-related) family member 4
-G5E8P1	mus-musculus	G5E8P1	Brd1	G5E8P1	9	24	Bromodomain-containing protein 1
-G5E8Q8	mus-musculus	G5E8Q8	Adgrf5	G5E8Q8	0	2	Adhesion G protein-coupled receptor F5
-G5E8S3	mus-musculus	G5E8S3	E230025N22Rik	G5E8S3	0	1	Riken cDNA E230025N22 gene
-G5E8V9	mus-musculus	G5E8V9	Arfip1	G5E8V9	2	9	Arfaptin-1
-G5E8X2	mus-musculus	G5E8X2	Pabpc4l	G5E8X2	4	33	Polyadenylate-binding protein 5
-G5E8Z2	mus-musculus	G5E8Z2	Taf4b	G5E8Z2	27	110	Transcription initiation factor TFIID subunit 4B
-G5E8Z3	mus-musculus	G5E8Z3	Kplce	G5E8Z3	0	3	KPRP N-terminal and LCE C-terminal like protein
-G5E905	mus-musculus	G5E905	Zfp871	G5E905	1	2	Zinc finger protein 871
-G5EB01	helicobacter-pylori	G5EB01	HP_0642	G5EB01	0	1	NAD(P)H-flavin oxidoreductase
-G5EB02	helicobacter-pylori	G5EB02	HP_0525	G5EB02	0	5	VirB11 homolog
+G5E829	mus-musculus	G5E829	Atp2b1	G5E829	3	29	Plasma membrane calcium-transporting ATPase 1	
+G5E845	mus-musculus	G5E845	Kcnk16	G5E845	13	13	Potassium channel, subfamily K, member 16	
+G5E861	mus-musculus	G5E861	Sclt1	G5E861	7	54	Sodium channel and clathrin linker 1	
+G5E895	mus-musculus	G5E895	Akr1b10	G5E895	0	4	aldose reductase	
+G5E897	mus-musculus	G5E897	Poglut3	G5E897	0	1	Protein O-glucosyltransferase 3	
+G5E8A8	mus-musculus	G5E8A8	Tekt5	G5E8A8	0	14	Tektin-5	
+G5E8C2	mus-musculus	G5E8C2	Kbtbd7	G5E8C2	28	63	Kelch repeat and BTB (POZ) domain containing 7	
+G5E8G2	mus-musculus	G5E8G2	Usp17ld	G5E8G2	0	6	Ubiquitin carboxyl-terminal hydrolase 17-like protein D	
+G5E8H5	mus-musculus	G5E8H5	Tpte	G5E8H5	0	5	Transmembrane phosphatase with tensin homology	
+G5E8I7	mus-musculus	G5E8I7	Usp17lc	G5E8I7	3	23	Ubiquitin carboxyl-terminal hydrolase 17-like protein C	
+G5E8J6	mus-musculus	G5E8J6	Hrc	G5E8J6	1	29	Histidine rich calcium binding protein	
+G5E8K6	mus-musculus	G5E8K6	Slc16a5	G5E8K6	1	2	Monocarboxylate transporter 6	
+G5E8L3	mus-musculus	G5E8L3	Nat8f4	G5E8L3	1	5	N-acetyltransferase 8 (GCN5-related) family member 4	
+G5E8P1	mus-musculus	G5E8P1	Brd1	G5E8P1	9	24	Bromodomain-containing protein 1	
+G5E8Q8	mus-musculus	G5E8Q8	Adgrf5	G5E8Q8	0	2	Adhesion G protein-coupled receptor F5	
+G5E8S3	mus-musculus	G5E8S3	E230025N22Rik	G5E8S3	0	1	Riken cDNA E230025N22 gene	
+G5E8V9	mus-musculus	G5E8V9	Arfip1	G5E8V9	2	9	Arfaptin-1	
+G5E8X2	mus-musculus	G5E8X2	Pabpc4l	G5E8X2	4	33	Polyadenylate-binding protein 5	
+G5E8Z2	mus-musculus	G5E8Z2	Taf4b	G5E8Z2	27	110	Transcription initiation factor TFIID subunit 4B	
+G5E8Z3	mus-musculus	G5E8Z3	Kplce	G5E8Z3	0	3	KPRP N-terminal and LCE C-terminal like protein	
+G5E905	mus-musculus	G5E905	Zfp871	G5E905	1	2	Zinc finger protein 871	
+G5E9R7	human	G5E9R7	KRTAP4-16	G5E9R7	0	7	Keratin-associated protein 4-16	
+G5EA03	human	G5EA03	LIMCH1	G5EA03	5	54	LIM and calponin homology domains 1	
+G5EB01	helicobacter-pylori	G5EB01	HP_0642	G5EB01	0	1	NAD(P)H-flavin oxidoreductase	
+G5EB02	helicobacter-pylori	G5EB02	HP_0525	G5EB02	0	5	VirB11 homolog	
+G5EBE2	worm	G5EBE2	tbc-9	G5EBE2	8	32	Rab-GAP TBC domain-containing protein	
+G5EBE3	worm	G5EBE3	cir-1	G5EBE3	0	23	CBF1-interacting co-repressor CIR N-terminal domain-containi	
+G5EBE5	worm	G5EBE5	zip-5	G5EBE5	1	4	BZIP domain-containing protein	
+G5EBE7	worm	G5EBE7	catp-1	G5EBE7	0	6	Cation transporting ATPase	
+G5EBF0	worm	G5EBF0	glo-1	G5EBF0	3	11	Ras-related protein Rab	
+G5EBF1	worm	G5EBF1	sax-3	G5EBF1	6	47	Protein sax-3	
+G5EBF3	worm	G5EBF3	pud-2.1	G5EBF3	3	40	Up-regulated in Daf-2 domain-containing protein	
+G5EBF4	worm	G5EBF4	lgmn-1	G5EBF4	1	8	legumain	
+G5EBF5	worm	G5EBF5	rde-4	G5EBF5	3	55	DRBM domain-containing protein	
+G5EBF7	worm	G5EBF7	seb-3	G5EBF7	1	12	G_PROTEIN_RECEP_F2_4 domain-containing protein	
+G5EBF8	worm	G5EBF8	chil-23	G5EBF8	0	6	GH18 domain-containing protein	
+G5EBG0	worm	G5EBG0	him-3	G5EBG0	9	24	HORMA domain-containing protein	
+G5EBG1	worm	G5EBG1	CELE_Y57G11A.2	G5EBG1	0	2	Vitelline membrane outer layer protein 1	
+G5EBG2	worm	G5EBG2	dph-7	G5EBG2	0	2	methylated diphthine methylhydrolase	
+G5EBG3	worm	G5EBG3	cbp-2	G5EBG3	1	10	histone acetyltransferase	
+G5EBG4	worm	G5EBG4	clec-209	G5EBG4	0	5	C-type lectin domain-containing protein	
+G5EBG6	worm	G5EBG6	gei-3	G5EBG6	0	15	HMG box domain-containing protein	
+G5EBG7	worm	G5EBG7	gly-12	G5EBG7	0	4	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	
+G5EBH0	worm	G5EBH0	egl-8	G5EBH0	2	5	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase be	
+G5EBH1	worm	G5EBH1	tat-5	G5EBH1	0	2	Probable phospholipid-transporting ATPase tat-5	
+G5EBH4	worm	G5EBH4	cdr-7	G5EBH4	1	5	CaDmium Responsive	
+G5EBH7	worm	G5EBH7	calu-1	G5EBH7	0	12	Reticulocalbin-3	
+G5EBI0	worm	G5EBI0	4D656	G5EBI0	1	15	Endoplasmic reticulum transmembrane protein	
+G5EBI2	worm	G5EBI2	CELE_F31E9.6	G5EBI2	0	23	Uncharacterized protein	
+G5EBI8	worm	G5EBI8	stg-2	G5EBI8	1	12	STarGazin (Mammalian calcium channel) homolog	
+G5EBI9	worm	G5EBI9	CELE_D2023.1	G5EBI9	0	8	Serpentine Receptor, class T	
+G5EBJ4	worm	G5EBJ4	mlt-4	G5EBJ4	1	13	ANK_REP_REGION domain-containing protein	
+G5EBJ7	worm	G5EBJ7	fbp-1	G5EBJ7	0	54	Fructose-1,6-bisphosphatase isozyme 2	
+G5EBJ8	worm	G5EBJ8	CELE_Y59E9AR.1	G5EBJ8	2	2	Major sperm protein	
+G5EBJ9	worm	G5EBJ9	fmo-2	G5EBJ9	0	1	Flavin-containing monooxygenase	
+G5EBK2	worm	G5EBK2	snb-7	G5EBK2	14	108	V-SNARE coiled-coil homology domain-containing protein	
+G5EBK3	worm	G5EBK3	erm-1	G5EBK3	0	38	Moesin/ezrin/radixin homolog 1	
+G5EBK4	worm	G5EBK4	atg-7	G5EBK4	5	35	Ubiquitin-like modifier-activating enzyme ATG7	
+G5EBK5	worm	G5EBK5	nstp-8	G5EBK5	0	18	F44C8.7-like protein	
+G5EBK8	worm	G5EBK8	ras-1	G5EBK8	9	25	GTP binding protein	
+G5EBL1	worm	G5EBL1	CELE_F34D10.9	G5EBL1	2	61	CPSF_A domain-containing protein	
+G5EBL2	worm	G5EBL2	mes-1	G5EBL2	0	13	Protein mes-1	
+G5EBL4	worm	G5EBL4	B0019.2	G5EBL4	0	31	SPK domain-containing protein	
+G5EBL8	worm	G5EBL8	sas-7	G5EBL8	0	35	Spindle assembly abnormal protein 7	
+G5EBM1	worm	G5EBM1	csp-1	G5EBM1	2	24	Caspase A	
+G5EBM4	worm	G5EBM4	cln-3.1	G5EBM4	0	5	Battenin	
+G5EBM6	worm	G5EBM6	kin-21	G5EBM6	0	3	Tyrosine-protein kinase	
+G5EBM7	worm	G5EBM7	scav-2	G5EBM7	0	14	SCAVenger receptor (CD36 family) related	
+G5EBN7	worm	G5EBN7	nhx-8	G5EBN7	0	2	Sodium/hydrogen exchanger	
+G5EBN8	worm	G5EBN8	str-38	G5EBN8	0	1	Seven TM Receptor	
+G5EBN9	worm	G5EBN9	snf-3	G5EBN9	0	1	Sodium- and chloride-dependent betaine transporter	
+G5EBP0	worm	G5EBP0	CELE_K08C7.6	G5EBP0	0	2	GLPGLI family protein	
+G5EBR0	worm	G5EBR0	lir-1	G5EBR0	0	18	LIR-1A protein	
+G5EBR7	worm	G5EBR7	exo-3	G5EBR7	0	61	exodeoxyribonuclease III	
+G5EBS5	worm	G5EBS5	aex-6	G5EBS5	1	13	small monomeric GTPase	
+G5EBS6	worm	G5EBS6	fog-1	G5EBS6	1	12	FOG-1 protein	
+G5EBT1	worm	G5EBT1	sma-5	G5EBT1	1	23	Mitogen-activated protein kinase sma-5	
+G5EBT2	worm	G5EBT2	CELE_F58H1.7	G5EBT2	0	1	Prohormone-4	
+G5EBT5	worm	G5EBT5	mog-3	G5EBT5	7	64	Pre-mRNA-splicing factor CWC25 homolog	
+G5EBT7	worm	G5EBT7	cof-2	G5EBT7	1	3	Collagen/olfactomedin domain containing protein 2	
+G5EBT9	worm	G5EBT9	CELE_H27A22.1	G5EBT9	0	1	Glutaminyl-peptide cyclotransferase	
+G5EBU2	worm	G5EBU2	XG314	G5EBU2	0	2	DM13 domain-containing protein	
+G5EBU3	worm	G5EBU3	zmp-3	G5EBU3	0	6	Matrix metalloproteinase-C	
+G5EBU4	worm	G5EBU4	zag-1	G5EBU4	4	35	Zinc finger E-box-binding homeobox protein zag-1	
+G5EBU5	worm	G5EBU5	kca-1	G5EBU5	3	21	Kinesin 1 cargo adaptor alternative variant a	
+G5EBV0	worm	G5EBV0	egl-9	G5EBV0	6	34	Hypoxia-inducible factor prolyl hydroxylase	
+G5EBV3	worm	G5EBV3	mig-2	G5EBV3	16	115	Rac-like GTPase	
+G5EBV4	worm	G5EBV4	lec-10	G5EBV4	2	39	Galectin	
+G5EBV5	worm	G5EBV5	flp-12	G5EBV5	0	1	FMRF-Like Peptide	
+G5EBV6	worm	G5EBV6	pgl-3	G5EBV6	2	90	Guanyl-specific ribonuclease pgl-3	
+G5EBV8	worm	G5EBV8	osm-9	G5EBV8	5	10	Ion transport domain-containing protein	
+G5EBW2	worm	G5EBW2	usp-50	G5EBW2	6	18	ubiquitinyl hydrolase 1	
+G5EBW3	worm	G5EBW3	anoh-1	G5EBW3	0	4	Anoctamin	
+G5EBW5	worm	G5EBW5	fecl-1	G5EBW5	0	3	FErroChelatase-Like	
+G5EBX0	worm	G5EBX0	klp-18	G5EBX0	2	50	Kinesin motor domain-containing protein	
+G5EBX2	worm	G5EBX2	CELE_R07B7.2	G5EBX2	1	4	PUM-HD domain-containing protein	
+G5EBX3	worm	G5EBX3	cyl-1	G5EBX3	12	37	Cyclin L homolog cyl-1	
+G5EBX5	worm	G5EBX5	pap-3	G5EBX5	11	55	Poly(A) polymerase	
+G5EBX6	worm	G5EBX6	crn-3	G5EBX6	6	111	Exosome complex component 10 homolog	
+G5EBX8	worm	G5EBX8	ser-5	G5EBX8	1	23	G-protein coupled receptors family 1 profile domain-containi	
+G5EBX9	worm	G5EBX9	pef-1	G5EBX9	0	4	Serine/threonine-protein phosphatase with EF-hands pef-1	
+G5EBY0	worm	G5EBY0	rtfo-1	G5EBY0	14	71	RNA polymerase-associated protein RTF1 homolog	
+G5EBY4	worm	G5EBY4	CELE_ZK892.5	G5EBY4	0	5	Transmembrane protein	
+G5EBY6	worm	G5EBY6	phf-5	G5EBY6	2	90	PHD finger-like domain-containing protein 5A	
+G5EBY8	worm	G5EBY8	unc-129	G5EBY8	3	26	BMP-like protein unc-129	
+G5EBZ1	worm	G5EBZ1	xpf-1	G5EBZ1	7	67	DNA repair endonuclease XPF	
+G5EBZ8	worm	G5EBZ8	ark-1	G5EBZ8	2	5	Ack-related non-receptor tyrosine kinase	
+G5EC00	worm	G5EC00	shw-1	G5EC00	0	7	BTB domain-containing protein	
+G5EC01	worm	G5EC01	asp-19	G5EC01	0	1	Peptidase A1 domain-containing protein	
+G5EC06	worm	G5EC06	ftr-1	G5EC06	3	3	F-box domain-containing protein	
+G5EC09	worm	G5EC09	cept-1	G5EC09	1	3	diacylglycerol cholinephosphotransferase	
+G5EC10	worm	G5EC10	lec-9	G5EC10	1	18	Galectin	
+G5EC12	worm	G5EC12	oac-1	G5EC12	0	1	Acyltransferase	
+G5EC14	worm	G5EC14	epc-1	G5EC14	12	49	Enhancer of polycomb-like protein	
+G5EC16	worm	G5EC16	smn-1	G5EC16	1	58	Survival motor neuron protein	
+G5EC18	worm	G5EC18	pph-1	G5EC18	2	13	Serine/threonine-protein phosphatase	
+G5EC21	worm	G5EC21	qua-1	G5EC21	0	1	Protein qua-1	
+G5EC22	worm	G5EC22	CELE_F55G11.4	G5EC22	0	3	CUB-like domain-containing protein	
+G5EC23	worm	G5EC23	hcf-1	G5EC23	2	41	Host cell factor homolog hcf-1	
+G5EC24	worm	G5EC24	ptp-2	G5EC24	1	26	Tyrosine-protein phosphatase non-receptor type ptp-2	
+G5EC25	worm	G5EC25	cept-2	G5EC25	1	4	diacylglycerol cholinephosphotransferase	
+G5EC27	worm	G5EC27	gna-2	G5EC27	1	3	glucosamine-phosphate N-acetyltransferase	
+G5EC31	worm	G5EC31	alh-6	G5EC31	0	6	Multifunctional fusion protein	
+G5EC32	worm	G5EC32	sorb-1	G5EC32	7	74	Sorbin and SH3 domain-containing protein 1 homolog	
+G5EC33	worm	G5EC33	C28A5.6	G5EC33	0	3	Protein kinase domain-containing protein	
+G5EC36	worm	G5EC36	lim-7	G5EC36	5	34	LIM/homeobox protein lim-7	
+G5EC37	worm	G5EC37	sepa-1	G5EC37	0	10	Protein sepa-1	
+G5EC40	worm	G5EC40	tre-1	G5EC40	0	2	Trehalase	
+G5EC44	worm	G5EC44	mrt-2	G5EC44	7	30	Cell cycle checkpoint protein RAD1 homolog mrt-2	
+G5EC45	worm	G5EC45	sde-2	G5EC45	5	46	Replication stress response regulator SDE2	
+G5EC53	worm	G5EC53	mboa-3	G5EC53	0	18	Lysophospholipid acyltransferase	
+G5EC57	worm	G5EC57	svh-5	G5EC57	1	5	Ets-domain protein	
+G5EC58	worm	G5EC58	CELE_Y71A12B.12	G5EC58	1	25	Protein zer-1 homolog	
+G5EC63	worm	G5EC63	ttm-5	G5EC63	0	6	Putative sphingolipid delta(4)-desaturase/C4-monooxygenase	
+G5EC67	worm	G5EC67	2O16	G5EC67	6	46	2O16	
+G5EC69	worm	G5EC69	CELE_T13H5.1	G5EC69	0	4	Receptor-type tyrosine-protein phosphatase kappa	
+G5EC71	worm	G5EC71	gst-20	G5EC71	2	31	glutathione transferase	
+G5EC75	worm	G5EC75	clh-6	G5EC75	1	1	Chloride channel protein	
+G5EC77	worm	G5EC77	ztf-6	G5EC77	3	66	Zinc finger protein ztf-6	
+G5EC81	worm	G5EC81	CELE_Y48E1C.1	G5EC81	2	10	Centromere protein S	
+G5EC84	worm	G5EC84	cgt-2	G5EC84	1	19	Ceramide glucosyltransferase 2	
+G5EC85	worm	G5EC85	CELE_F13E6.2	G5EC85	0	1	Adenylate kinase isoenzyme 5	
+G5EC86	worm	G5EC86	oma-1	G5EC86	1	46	CCCH-type zinc finger protein oma-1	
+G5EC87	worm	G5EC87	CELE_ZK1307.8	G5EC87	1	32	Glucosidase 2 subunit beta	
+G5EC89	worm	G5EC89	ceh-17	G5EC89	7	62	Homeobox protein ceh-17	
+G5EC91	worm	G5EC91	dpy-11	G5EC91	0	20	Thioredoxin-related transmembrane protein 1	
+G5EC92	worm	G5EC92	skr-19	G5EC92	1	17	Skp1-related protein	
+G5EC93	worm	G5EC93	fdgt-2	G5EC93	0	21	Major facilitator superfamily (MFS) profile domain-containin	
+G5EC97	worm	G5EC97	cyp-29a2	G5EC97	0	4	Cytochrome P450	
+G5EC98	worm	G5EC98	ctps-1	G5EC98	0	47	CTP synthase	
+G5EC99	worm	G5EC99	CELE_F11F1.1	G5EC99	16	66	DUF148 domain-containing protein	
+G5ECA0	worm	G5ECA0	mpst-6	G5ECA0	0	7	thiosulfate sulfurtransferase	
+G5ECA2	worm	G5ECA2	CELE_F29C6.1	G5ECA2	0	1	TCTP domain-containing protein	
+G5ECA7	worm	G5ECA7	CELE_T02D1.8	G5ECA7	0	6	DUF4440 domain-containing protein	
+G5ECA8	worm	G5ECA8	hen-1	G5ECA8	0	2	HEN-1	
+G5ECB0	worm	G5ECB0	CELE_F26F2.1	G5ECB0	0	4	Trichohyalin-like	
+G5ECB1	worm	G5ECB1	zig-4	G5ECB1	0	2	Zwei Ig domain protein zig-4	
+G5ECB2	worm	G5ECB2	gbb-2	G5ECB2	5	46	Gamma-aminobutyric acid type B receptor subunit 2	
+G5ECB5	worm	G5ECB5	CELE_T04A11.2	G5ECB5	0	1	Phenazine biosynthesis-like domain-containing protein	
+G5ECB6	worm	G5ECB6	bus-8b	G5ECB6	0	5	Alpha-1,3/1,6-mannosyltransferase ALG2	
+G5ECB9	worm	G5ECB9	mex-1	G5ECB9	2	44	C3H1-type domain-containing protein	
+G5ECC0	worm	G5ECC0	klp-16	G5ECC0	4	52	Kinesin like protein	
+G5ECC1	worm	G5ECC1	CELE_F13G3.10	G5ECC1	1	8	Nascent polypeptide-associated complex subunit alpha-like UB	
+G5ECC3	worm	G5ECC3	rme-1	G5ECC3	1	34	Dynamin-type G domain-containing protein	
+G5ECC4	worm	G5ECC4	zmp-6	G5ECC4	2	2	MMP-like protein	
+G5ECC5	worm	G5ECC5	CELE_Y39C12A.9	G5ECC5	0	1	J domain-containing protein	
+G5ECC7	worm	G5ECC7	usp-48	G5ECC7	1	11	Ubiquitin carboxyl-terminal hydrolase usp-48	
+G5ECC9	worm	G5ECC9	mrps-27	G5ECC9	10	116	Ig-like domain-containing protein	
+G5ECD3	worm	G5ECD3	unc-49	G5ECD3	1	6	Gamma-aminobutyric acid receptor subunit beta	
+G5ECD4	worm	G5ECD4	CELE_W08E12.4	G5ECD4	0	1	CC domain-containing protein	
+G5ECD6	worm	G5ECD6	chs-1	G5ECD6	1	26	Chitin synthase chs-1	
+G5ECD7	worm	G5ECD7	mel-11	G5ECD7	15	29	cGMP-dependent protein kinase interacting domain-containing 	
+G5ECD9	worm	G5ECD9	aex-2	G5ECD9	0	1	G-protein coupled receptor aex-2	
+G5ECE7	worm	G5ECE7	gmap-1	G5ECE7	0	8	GM2 Activator Protein family member	
+G5ECE8	worm	G5ECE8	chhy-1	G5ECE8	0	19	Chondroitin hydrolase	
+G5ECF1	worm	G5ECF1	smg-5	G5ECF1	2	15	Nonsense-mediated mRNA decay protein	
+G5ECF2	worm	G5ECF2	ptr-25	G5ECF2	0	1	SSD domain-containing protein	
+G5ECF4	worm	G5ECF4	bmk-1	G5ECF4	1	73	Kinesin-like protein	
+G5ECF6	worm	G5ECF6	CELE_F07B7.2	G5ECF6	0	2	Retrotransposon protein	
+G5ECF8	worm	G5ECF8	nsph-4.2	G5ECF8	0	4	Nematode Specific Peptide family	
+G5ECG0	worm	G5ECG0	tac-1	G5ECG0	6	49	Transforming acid coiled-coil-containing protein 1	
+G5ECG2	worm	G5ECG2	fos-1	G5ECG2	9	41	Transcription factor fos-1	
+G5ECG7	worm	G5ECG7	dsc-4	G5ECG7	1	8	Microsomal triglyceride transfer protein homolog	
+G5ECH0	worm	G5ECH0	hda-3	G5ECH0	10	113	Histone deacetylase	
+G5ECH1	worm	G5ECH1	mog-7	G5ECH1	4	19	GCF C-terminal domain-containing protein	
+G5ECH3	worm	G5ECH3	avr-15	G5ECH3	0	1	Ig-like domain-containing protein	
+G5ECH7	worm	G5ECH7	cdk-5	G5ECH7	16	56	Cyclin-dependent-like kinase 5 (EC 2.7.11.1) (Cell division 	
+G5ECI0	worm	G5ECI0	str-115	G5ECI0	0	3	Serpentine receptor class r-10	
+G5ECI4	worm	G5ECI4	mps-3	G5ECI4	0	2	MiRP K channel accessory Subunit	
+G5ECI5	worm	G5ECI5	CELE_T26G10.8	G5ECI5	0	2	DUF4258 domain-containing protein	
+G5ECI8	worm	G5ECI8	fars-2	G5ECI8	0	7	phenylalanine--tRNA ligase	
+G5ECJ0	worm	G5ECJ0	exp-1	G5ECJ0	2	4	Gamma-aminobutyric acid receptor exp-1	
+G5ECJ3	worm	G5ECJ3	C06B8.2	G5ECJ3	0	7	Nucleotid_trans domain-containing protein	
+G5ECJ4	worm	G5ECJ4	mec-8	G5ECJ4	0	2	Mec-8 protein	
+G5ECJ5	worm	G5ECJ5	bir-2	G5ECJ5	1	29	Baculoviral IAP repeat-containing protein bir-2	
+G5ECJ6	worm	G5ECJ6	csk-1	G5ECJ6	7	41	Tyrosine-protein kinase csk-1 (EC 2.7.10.2) (C-terminal src 	
+G5ECJ7	worm	G5ECJ7	CELE_M01B2.13	G5ECJ7	0	3	Phytanoyl-CoA hydroxylase-interacting protein-like C-termina	
+G5ECJ8	worm	G5ECJ8	fmo-3	G5ECJ8	0	1	Flavin-containing monooxygenase	
+G5ECK1	worm	G5ECK1	C39B10.7	G5ECK1	0	2	Transmembrane protein	
+G5ECK3	worm	G5ECK3	mab-23	G5ECK3	2	8	DM domain-containing protein mab-23	
+G5ECK5	worm	G5ECK5	CELE_T06D8.10	G5ECK5	0	13	Peroxidase	
+G5ECK9	worm	G5ECK9	rgs-8.1	G5ECK9	0	8	RGS domain-containing protein	
+G5ECL1	worm	G5ECL1	CELE_M05D6.2	G5ECL1	0	3	T-complex protein 11-like protein 1	
+G5ECL2	worm	G5ECL2	unc-26	G5ECL2	3	27	Synaptojanin	
+G5ECL3	worm	G5ECL3	prp-21	G5ECL3	17	121	Pre-RNA processing 21	
+G5ECL4	worm	G5ECL4	bam-2	G5ECL4	0	1	Neurexin-related protein bam-2	
+G5ECL6	worm	G5ECL6	CELE_ZK938.1	G5ECL6	2	14	Serine/threonine-protein phosphatase	
+G5ECL7	worm	G5ECL7	CELE_F26D2.15	G5ECL7	0	6	DeHydrogenases, Short chain	
+G5ECL9	worm	G5ECL9	CELE_F56A4.4	G5ECL9	0	47	GST N-terminal domain-containing protein	
+G5ECM6	worm	G5ECM6	tufm-1	G5ECM6	1	96	Elongation factor Tu, mitochondrial	
+G5ECM8	worm	G5ECM8	clec-110	G5ECM8	0	2	C-type lectin domain-containing protein	
+G5ECM9	worm	G5ECM9	cpi-2	G5ECM9	0	3	Cystatin cpi-2	
+G5ECN1	worm	G5ECN1	lgc-37	G5ECN1	5	15	Ligand-Gated ion Channel	
+G5ECN2	worm	G5ECN2	CELE_F17H10.1	G5ECN2	0	4	GPI inositol-deacylase	
+G5ECN5	worm	G5ECN5	strd-1	G5ECN5	5	32	STE20-related kinase adapter protein strd-1 (STRAD STE20-rel	
+G5ECN8	worm	G5ECN8	ces-1	G5ECN8	2	41	C2H2-type domain-containing protein	
+G5ECN9	worm	G5ECN9	egl-3	G5ECN9	2	30	Neuroendocrine convertase 2	
+G5ECP0	worm	G5ECP0	nphp-4	G5ECP0	2	27	NePHronoPhthisis (Human kidney disease) homolog	
+G5ECP3	worm	G5ECP3	CELE_ZC302.3	G5ECP3	0	1	Uncharacterized protein	
+G5ECP4	worm	G5ECP4	pik-1	G5ECP4	6	31	Pelle-like serine/threonine-protein kinase pik-1 (EC 2.7.11.	
+G5ECP6	worm	G5ECP6	ztf-26	G5ECP6	0	18	C2H2-type domain-containing protein	
+G5ECQ1	worm	G5ECQ1	unc-14	G5ECQ1	1	8	RUN domain-containing protein	
+G5ECQ2	worm	G5ECQ2	cfz-2	G5ECQ2	8	22	Frizzled-2	
+G5ECQ3	worm	G5ECQ3	sel-5	G5ECQ3	23	64	Serine/threonine-protein kinase sel-5 (EC 2.7.11.1) (Suppres	
+G5ECQ4	worm	G5ECQ4	sth-1	G5ECQ4	0	1	Novel protein	
+G5ECQ5	worm	G5ECQ5	pes-2.1	G5ECQ5	0	1	F-box domain-containing protein	
+G5ECQ8	worm	G5ECQ8	cin-4	G5ECQ8	0	10	DNA topoisomerase-like protein cin-4	
+G5ECR1	worm	G5ECR1	mbd-2	G5ECR1	4	37	Methyl-CpG binding protein 2/3 C-terminal domain-containing 	
+G5ECR6	worm	G5ECR6	C01B4.6	G5ECR6	0	2	Aldose 1-epimerase	
+G5ECR7	worm	G5ECR7	elb-1	G5ECR7	6	99	RNA polymerase II transcription factor SIII p18 subunit	
+G5ECR8	worm	G5ECR8	gba-3	G5ECR8	1	16	Putative glucosylceramidase 3	
+G5ECR9	worm	G5ECR9	unc-55	G5ECR9	1	13	Nuclear hormone receptor unc-55	
+G5ECS4	worm	G5ECS4	glf-1	G5ECS4	0	7	Amine oxidase domain-containing protein	
+G5ECS9	worm	G5ECS9	cpt-2	G5ECS9	1	14	Calponin-homology (CH) domain-containing protein	
+G5ECT0	worm	G5ECT0	pbo-5	G5ECT0	1	1	Proton-gated ion channel subunit pbo-5	
+G5ECT2	worm	G5ECT2	CELE_F15E6.3	G5ECT2	0	4	Glycine-rich cell wall structural protein	
+G5ECT3	worm	G5ECT3	CELE_Y38C1AB.1	G5ECT3	8	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	
+G5ECT6	worm	G5ECT6	gpc-2	G5ECT6	4	102	G protein gamma domain-containing protein	
+G5ECT8	worm	G5ECT8	ceh-2	G5ECT8	1	12	Homeobox protein ceh-2	
+G5ECT9	worm	G5ECT9	mob-2	G5ECT9	2	13	Mps one binder kinase activator-like 2	
+G5ECU1	worm	G5ECU1	skr-1	G5ECU1	36	100	Skp1-related protein	
+G5ECU4	worm	G5ECU4	CELE_ZK829.1	G5ECU4	0	9	DeHydrogenases, Short chain	
+G5ECU5	worm	G5ECU5	CELE_F44E5.4	G5ECU5	23	67	Heat shock protein 70	
+G5ECU7	worm	G5ECU7	jun-1	G5ECU7	14	108	Transcription factor jun-1	
+G5ECU8	worm	G5ECU8	cln-3.2	G5ECU8	0	10	Battenin	
+G5ECV3	worm	G5ECV3	C03H12.1	G5ECV3	0	21	Thioredoxin domain-containing protein	
+G5ECV4	worm	G5ECV4	srbc-64	G5ECV4	0	1	SRBC-64	
+G5ECV5	worm	G5ECV5	CELE_F59G1.4	G5ECV5	0	3	F59G1.4	
+G5ECV7	worm	G5ECV7	CELE_ZK131.11	G5ECV7	0	10	TORC_N domain-containing protein	
+G5ECV9	worm	G5ECV9	alh-3	G5ECV9	0	6	10-formyltetrahydrofolate dehydrogenase	
+G5ECW0	worm	G5ECW0	ncx-3	G5ECW0	1	25	Calx-beta domain-containing protein	
+G5ECW3	worm	G5ECW3	ehbp-1	G5ECW3	9	36	EH domain-binding protein 1	
+G5ECW4	worm	G5ECW4	CELE_F07C6.4	G5ECW4	1	15	FERM domain-containing protein	
+G5ECW5	worm	G5ECW5	csp-3	G5ECW5	1	17	Non-catalytic caspase homolog csp-3	
+G5ECW6	worm	G5ECW6	twk-20	G5ECW6	27	29	Two pore potassium channel protein sup-9	
+G5ECW7	worm	G5ECW7	dpt-1	G5ECW7	0	4	Dipeptidyl peptidase 3	
+G5ECW9	worm	G5ECW9	rme-4	G5ECW9	1	5	UDENN domain-containing protein	
+G5ECX0	worm	G5ECX0	lat-2	G5ECX0	0	5	Latrophilin-like protein LAT-2	
+G5ECX2	worm	G5ECX2	lad-2	G5ECX2	1	26	Immunoglobulin domain-containing protein Y54G2A.25	
+G5ECX4	worm	G5ECX4	CELE_W06G6.21	G5ECX4	0	10	Rep_fac-A_C domain-containing protein	
+G5ECX6	worm	G5ECX6	str-267	G5ECX6	0	3	Serpentine receptor class r-10	
+G5ECX8	worm	G5ECX8	istr-1	G5ECX8	5	30	IST1 homolog	
+G5ECX9	worm	G5ECX9	cdr-2	G5ECX9	0	2	CaDmium Responsive	
+G5ECY0	worm	G5ECY0	dlg-1	G5ECY0	1	140	Disks large homolog 1	
+G5ECY2	worm	G5ECY2	srp-3	G5ECY2	0	50	Serine or cysteine protease inhibitor	
+G5ECY4	worm	G5ECY4	skr-8	G5ECY4	9	18	Skp1-related protein	
+G5ECY6	worm	G5ECY6	chn-1	G5ECY6	12	85	E3 ubiquitin-protein ligase CHIP	
+G5ECZ0	worm	G5ECZ0	hum-5	G5ECZ0	1	6	Myosin IA	
+G5ECZ3	worm	G5ECZ3	CELE_F35H10.10	G5ECZ3	0	29	CELF35-1	
+G5ECZ4	worm	G5ECZ4	dyf-2	G5ECZ4	6	56	WD repeat-containing protein dyf-2	
+G5ECZ5	worm	G5ECZ5	CELE_T10B10.8	G5ECZ5	2	12	Nucleotide-diphospho-sugar transferase	
+G5ED00	worm	G5ED00	zig-8	G5ED00	1	1	Zwei Ig domain protein zig-8	
+G5ED01	worm	G5ED01	inos-1	G5ED01	0	28	Inositol-3-phosphate synthase	
+G5ED04	worm	G5ED04	pals-14	G5ED04	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+G5ED05	worm	G5ED05	cnnm-5	G5ED05	0	9	Metal transporter cnnm-5	
+G5ED07	worm	G5ED07	pdi-3	G5ED07	4	28	Protein disulfide-isomerase	
+G5ED14	worm	G5ED14	egl-38	G5ED14	2	29	Paired box protein 5 homolog	
+G5ED17	worm	G5ED17	hpo-11	G5ED17	7	30	Protein kinase domain-containing protein	
+G5ED17_CAEEL	worm	G5ED17	hpo-11	G5ED17	7	30		
+G5ED19	worm	G5ED19	CELE_Y62H9A.14	G5ED19	0	8	CIA30 domain-containing protein	
+G5ED20	worm	G5ED20	tam-1	G5ED20	0	2	RING-type domain-containing protein	
+G5ED24	worm	G5ED24	max-1	G5ED24	0	2	MAX-1A	
+G5ED26	worm	G5ED26	mel-46	G5ED26	3	51	ATP-dependent RNA helicase	
+G5ED29	worm	G5ED29	atx-2	G5ED29	10	106	Ataxin-2 homolog	
+G5ED30	worm	G5ED30	vab-9	G5ED30	0	1	Cell junction protein VAB-9	
+G5ED34	worm	G5ED34	dli-1	G5ED34	4	109	Dynein light intermediate chain	
+G5ED35	worm	G5ED35	ttr-52	G5ED35	0	2	Transthyretin-like protein 52	
+G5ED37	worm	G5ED37	osm-5	G5ED37	10	124	Intraflagellar transport protein 88 homolog	
+G5ED39	worm	G5ED39	sep-1	G5ED39	1	28	Separin homolog sep-1	
+G5ED41	worm	G5ED41	cand-1	G5ED41	9	59	Cullin-associated NEDD8-dissociated protein 1	
+G5ED42	worm	G5ED42	twk-16	G5ED42	27	28	Potassium channel domain-containing protein	
+G5ED43	worm	G5ED43	fmo-5	G5ED43	0	1	Flavin-containing monooxygenase	
+G5ED44	worm	G5ED44	fat-5	G5ED44	0	7	Delta(9)-fatty-acid desaturase fat-5	
+G5ED45	worm	G5ED45	hyl-1	G5ED45	0	5	Ceramide synthase hyl-1	
+G5ED46	worm	G5ED46	casy-1	G5ED46	1	7	Calsyntenin-1	
+G5ED47	worm	G5ED47	hizr-1	G5ED47	8	56	High zinc activated nuclear receptor protein	
+G5ED49	worm	G5ED49	CELE_Y75B12A.2	G5ED49	0	1	Si:dkey-194e6.1	
+G5ED57	worm	G5ED57	CELE_F22E12.1	G5ED57	0	3	BPTI/Kunitz inhibitor domain-containing protein	
+G5ED58	worm	G5ED58	spd-1	G5ED58	1	7	Protein regulator of cytokinesis 1	
+G5ED60	worm	G5ED60	mcrs-1	G5ED60	4	37	FHA domain-containing protein	
+G5ED63	worm	G5ED63	CELE_K12D12.5	G5ED63	0	22	RNase H domain-containing protein	
+G5ED64	worm	G5ED64	CELE_D1086.9	G5ED64	0	14	Filaggrin-like	
+G5ED65	worm	G5ED65	ver-1	G5ED65	3	43	Protein ver-1	
+G5ED66	worm	G5ED66	pax-3	G5ED66	6	92	Paired box protein 3 homolog	
+G5ED68	worm	G5ED68	mtm-6	G5ED68	2	5	Phosphatidylinositol-3,5-bisphosphate 3-phosphatase MTMR6	
+G5ED70	worm	G5ED70	C18D11.7	G5ED70	0	3	BTB domain-containing protein	
+G5ED71	worm	G5ED71	spe-29	G5ED71	0	6	Spermiogenesis protein SPE-29	
+G5ED77	worm	G5ED77	alg-3	G5ED77	1	28	Argonaute (Plant)-Like protein	
+G5ED79	worm	G5ED79	hot-5	G5ED79	0	1	Homolog of Odr-2 (Two)	
+G5ED80	worm	G5ED80	eea-1	G5ED80	2	32	EEA1	
+G5ED81	worm	G5ED81	C09G4.4	G5ED81	0	12	C09G4.4 protein	
+G5ED82	worm	G5ED82	dhcr-7	G5ED82	1	34	7-dehydrocholesterol reductase	
+G5ED84	worm	G5ED84	kel-8	G5ED84	2	30	Kelch-like protein 8	
+G5ED85	worm	G5ED85	CELE_R06C1.6	G5ED85	5	232	Uncharacterized protein	
+G5ED87	worm	G5ED87	CELE_Y70C5C.1	G5ED87	0	1	Insulin-degrading enzyme	
+G5ED88	worm	G5ED88	nhx-5	G5ED88	0	4	Sodium/hydrogen exchanger	
+G5ED89	worm	G5ED89	dcp-66	G5ED89	4	34	Transcription factor dcp-66	
+G5ED95	worm	G5ED95	yars-1	G5ED95	0	14	Tyrosine--tRNA ligase	
+G5ED97	worm	G5ED97	tag-65	G5ED97	4	30	CID domain-containing protein	
+G5ED98	worm	G5ED98	ppk-3	G5ED98	2	30	1-phosphatidylinositol-3-phosphate 5-kinase	
+G5ED99	worm	G5ED99	prx-1	G5ED99	1	15	Peroxisomal ATPase PEX1	
+G5EDA0	worm	G5EDA0	ztf-27	G5EDA0	0	3	C2H2-type domain-containing protein	
+G5EDA3	worm	G5EDA3	hcp-4	G5EDA3	0	15	CENP-C-like protein HCP-4	
+G5EDA5	worm	G5EDA5	ksr-2	G5EDA5	3	20	Kinase suppressor of Ras B	
+G5EDA6	worm	G5EDA6	znf-706	G5EDA6	0	6	Nx	
+G5EDA8	worm	G5EDA8	CELE_Y45F10B.13	G5EDA8	0	1	Chitin-binding type-2 domain-containing protein	
+G5EDB2	worm	G5EDB2	madd-3	G5EDB2	12	32	Probable dual specificity protein kinase madd-3 (EC 2.7.11.-	
+G5EDB5	worm	G5EDB5	C01B4.8	G5EDB5	0	2	Major facilitator superfamily (MFS) profile domain-containin	
+G5EDB6	worm	G5EDB6	ppgn-1	G5EDB6	3	12	AAA+ ATPase domain-containing protein	
+G5EDB7	worm	G5EDB7	unc-25	G5EDB7	0	19	Glutamate decarboxylase 1	
+G5EDB8	worm	G5EDB8	vha-4	G5EDB8	8	64	V-type proton ATPase 21 kDa proteolipid subunit c	
+G5EDB9	worm	G5EDB9	pxf-1	G5EDB9	0	8	Rap guanine nucleotide exchange factor	
+G5EDC3	worm	G5EDC3	nhr-123	G5EDC3	0	11	Nuclear Hormone Receptor family	
+G5EDC6	worm	G5EDC6	arl-8	G5EDC6	3	26	ADP-ribosylation factor-like protein 8B	
+G5EDC7	worm	G5EDC7	prom-1	G5EDC7	0	1	F-box domain-containing protein	
+G5EDC9	worm	G5EDC9	CELE_W07A12.8	G5EDC9	0	1	DapB_N domain-containing protein	
+G5EDD1	worm	G5EDD1	ucr-2.1	G5EDD1	7	69	Peptidase_M16 domain-containing protein	
+G5EDD4	worm	G5EDD4	tba-4	G5EDD4	10	30	Tubulin alpha chain	
+G5EDD7	worm	G5EDD7	CELE_F25D1.3	G5EDD7	0	3	Interleukin-17	
+G5EDD8	worm	G5EDD8	skr-2	G5EDD8	24	65	Skp1-related protein	
+G5EDE0	worm	G5EDE0	CELE_F57A8.1	G5EDE0	0	3	Protein TSSC4	
+G5EDE1	worm	G5EDE1	pag-3	G5EDE1	1	77	Zinc finger protein GFI1 homolog pag-3	
+G5EDE2	worm	G5EDE2	hpl-2	G5EDE2	1	20	Chromobox protein homolog hpl-2	
+G5EDE4	worm	G5EDE4	casc-3	G5EDE4	2	44	Protein CASC3	
+G5EDE5	worm	G5EDE5	drag-1	G5EDE5	2	9	Repulsive guidance molecule B homolog drag-1	
+G5EDE7	worm	G5EDE7	tpxl-1	G5EDE7	2	8	TPX2 domain-containing protein	
+G5EDE8	worm	G5EDE8	ile-1	G5EDE8	9	77	ERGIC-53-like protein	
+G5EDE9	worm	G5EDE9	nfki-1	G5EDE9	1	8	ANK repeat-containing protein nipk-1	
+G5EDF0	worm	G5EDF0	grh-1	G5EDF0	7	48	Grainyhead-like protein 1 homolog	
+G5EDF1	worm	G5EDF1	acr-12	G5EDF1	9	13	AcetylCholine Receptor	
+G5EDF5	worm	G5EDF5	tufm-2	G5EDF5	3	96	protein-synthesizing GTPase	
+G5EDF6	worm	G5EDF6	osm-6	G5EDF6	9	93	Intraflagellar transport protein 52 C-terminal domain-contai	
+G5EDF7	worm	G5EDF7	sek-1	G5EDF7	14	31	Dual specificity mitogen-activated protein kinase kinase sek	
+G5EDG2	worm	G5EDG2	smrd-1	G5EDG2	0	13	SWI/SNF-related matrix-associated actin-dependent regulator 	
+G5EDG6	worm	G5EDG6	col-117	G5EDG6	0	3	COLlagen structural	
+G5EDG8	worm	G5EDG8	fmo-4	G5EDG8	0	4	Flavin-containing monooxygenase	
+G5EDG9	worm	G5EDG9	hex-3	G5EDG9	0	6	beta-N-acetylhexosaminidase	
+G5EDH0	worm	G5EDH0	kri-1	G5EDH0	3	6	FERM domain-containing protein	
+G5EDH2	worm	G5EDH2	htrl-1	G5EDH2	0	2	HtrL domain containing	
+G5EDH3	worm	G5EDH3	CELE_K01G5.8	G5EDH3	3	23	Protein FAM32A	
+G5EDH7	worm	G5EDH7	anat-1	G5EDH7	1	19	N-acetyltransferase domain-containing protein	
+G5EDH8	worm	G5EDH8	nhx-1	G5EDH8	3	4	Sodium/hydrogen exchanger	
+G5EDI3	worm	G5EDI3	ilkp-1	G5EDI3	0	14	PPM-type phosphatase domain-containing protein	
+G5EDI8	worm	G5EDI8	drh-1	G5EDI8	0	31	Dicer-related helicase	
+G5EDJ0	worm	G5EDJ0	fax-1	G5EDJ0	0	4	Nuclear hormone receptor family member fax-1	
+G5EDJ4	worm	G5EDJ4	soc-1	G5EDJ4	1	3	Multisubstrate adapter protein soc-1	
+G5EDJ6	worm	G5EDJ6	dnj-25	G5EDJ6	4	15	Auxilin	
+G5EDJ7	worm	G5EDJ7	cest-2.1	G5EDJ7	1	17	Carboxylesterase type B domain-containing protein	
+G5EDK1	worm	G5EDK1	trip-4	G5EDK1	2	7	ASC-1	
+G5EDL0	worm	G5EDL0	lin-1	G5EDL0	1	22	ETS domain-containing protein	
+G5EDL3	worm	G5EDL3	air-1	G5EDL3	5	71	Aurora kinase	
+G5EDL4	worm	G5EDL4	CELE_R05H10.3	G5EDL4	0	3	Dot/Icm T4SS effector	
+G5EDL9	worm	G5EDL9	CELE_ZK1321.4	G5EDL9	0	12	PDZ domain-containing protein	
+G5EDM5	worm	G5EDM5	CELE_F36A2.3	G5EDM5	0	5	Malate dehydrogenase	
+G5EDM6	worm	G5EDM6	srh-57	G5EDM6	0	3	Serpentine Receptor, class H	
+G5EDM7	worm	G5EDM7	daf-5	G5EDM7	2	20	Ski protein homolog	
+G5EDN0	worm	G5EDN0	acc-3	G5EDN0	0	1	Acetylcholine-gated chloride channel subunit acc-3	
+G5EDN1	worm	G5EDN1	ace-4	G5EDN1	1	5	Carboxylic ester hydrolase	
+G5EDN3	worm	G5EDN3	tim-1	G5EDN3	3	43	Protein timeless homolog	
+G5EDN4	worm	G5EDN4	end-1	G5EDN4	2	25	GATA transcription factor END-1	
+G5EDN6	worm	G5EDN6	cnb-1	G5EDN6	2	31	Protein phosphatase 2B regulatory subunit cnb-1	
+G5EDN7	worm	G5EDN7	clec-55	G5EDN7	0	4	C-type LECtin	
+G5EDN8	worm	G5EDN8	vab-19	G5EDN8	1	11	ANK_REP_REGION domain-containing protein	
+G5EDP0	worm	G5EDP0	CELE_Y32F6A.5	G5EDP0	0	5	Retinoid-inducible serine carboxypeptidase	
+G5EDP2	worm	G5EDP2	daf-22	G5EDP2	0	15	Non-specific lipid-transfer protein-like 2	
+G5EDP5	worm	G5EDP5	CELE_DH11.5	G5EDP5	1	56	C2 domain-containing protein	
+G5EDP6	worm	G5EDP6	fmo-1	G5EDP6	0	2	Flavin-containing monooxygenase	
+G5EDP7	worm	G5EDP7	gly-16	G5EDP7	0	1	GLY-16	
+G5EDP9	worm	G5EDP9	aap-1	G5EDP9	4	65	Phosphoinositide 3-kinase adapter subunit	
+G5EDQ2	worm	G5EDQ2	hmg-12	G5EDQ2	1	11	High mobility group protein hmg-12	
+G5EDQ9	worm	G5EDQ9	zig-2	G5EDQ9	0	2	Zwei Ig domain protein zig-2	
+G5EDR3	worm	G5EDR3	sur-6	G5EDR3	13	82	Serine/threonine-protein phosphatase 2A regulatory subunit s	
+G5EDR6	worm	G5EDR6	npr-34	G5EDR6	0	4	G-protein coupled receptors family 1 profile domain-containi	
+G5EDR9	worm	G5EDR9	ocr-1	G5EDR9	1	8	Ion transport domain-containing protein	
+G5EDS1	worm	G5EDS1	vab-3	G5EDS1	22	511	Paired box protein 6 homolog	
+G5EDS5	worm	G5EDS5	sulp-2	G5EDS5	0	2	Anion transporter SULP-2	
+G5EDS8	worm	G5EDS8	exos-7	G5EDS8	9	36	Ribosomal RNA-processing protein 42	
+G5EDS9	worm	G5EDS9	tag-68	G5EDS9	0	26	Mothers against decapentaplegic homolog	
+G5EDT1	worm	G5EDT1	lin-35	G5EDT1	4	60	Retinoblastoma-like protein homolog lin-35	
+G5EDT2	worm	G5EDT2	stg-1	G5EDT2	0	17	STarGazin (Mammalian calcium channel) homolog	
+G5EDT4	worm	G5EDT4	CELE_T01D3.6	G5EDT4	0	3	IgGFc-binding protein-like	
+G5EDT6	worm	G5EDT6	jkk-1	G5EDT6	0	11	Dual specificity mitogen-activated protein kinase kinase jkk	
+G5EDU0	worm	G5EDU0	oat-1	G5EDU0	0	16	Major facilitator superfamily (MFS) profile domain-containin	
+G5EDU1	worm	G5EDU1	pmr-1	G5EDU1	0	13	Calcium-transporting ATPase	
+G5EDU3	worm	G5EDU3	pld-1	G5EDU3	2	27	Phospholipase	
+G5EDU4	worm	G5EDU4	eor-1	G5EDU4	2	59	EOR-1	
+G5EDU6	worm	G5EDU6	lin-48	G5EDU6	1	18	Transcription factor ovo-like homolog lin-48	
+G5EDU9	worm	G5EDU9	CELE_Y37A1A.4	G5EDU9	0	2	FAM65 N-terminal domain-containing protein	
+G5EDV0	worm	G5EDV0	CELE_E01G4.6	G5EDV0	0	4	CPG4 domain-containing protein	
+G5EDV1	worm	G5EDV1	lin-17	G5EDV1	6	47	Frizzled-4	
+G5EDV3	worm	G5EDV3	cey-4	G5EDV3	0	86	CSD domain-containing protein	
+G5EDV9	worm	G5EDV9	ace-2	G5EDV9	1	4	Carboxylic ester hydrolase	
+G5EDW1	worm	G5EDW1	adbp-1	G5EDW1	1	2	Adr-2-binding protein 1	
+G5EDW2	worm	G5EDW2	lat-1	G5EDW2	3	93	Latrophilin-like protein 1	
+G5EDW5	worm	G5EDW5	adm-2	G5EDW5	0	1	Disintegrin and metalloproteinase domain-containing protein 	
+G5EDW7	worm	G5EDW7	lin-8	G5EDW7	1	36	Protein lin-8	
+G5EDW8	worm	G5EDW8	CELE_VF13D12L.3	G5EDW8	0	7	Malate dehydrogenase	
+G5EDW9	worm	G5EDW9	ints-7	G5EDW9	2	42	Integrator complex subunit 7	
+G5EDX1	worm	G5EDX1	kal-1	G5EDX1	1	5	WAP-type 'four-disulfide core	
+G5EDX2	worm	G5EDX2	eri-6	G5EDX2	0	4	Enhanced RNAI (RNA interference)	
+G5EDX3	worm	G5EDX3	lev-10	G5EDX3	1	4	CUB domain-containing protein	
+G5EDX4	worm	G5EDX4	egl-47	G5EDX4	0	2	Probable G-protein coupled receptor egl-47	
+G5EDX5	worm	G5EDX5	otpl-8	G5EDX5	0	1	Otopetrin-2	
+G5EDX7	worm	G5EDX7	fog-3	G5EDX7	1	4	Anti-proliferative protein domain-containing protein	
+G5EDX9	worm	G5EDX9	fbxa-101	G5EDX9	3	6	DUF38 domain-containing protein	
+G5EDY1	worm	G5EDY1	CELE_T11G6.5	G5EDY1	0	20	SET domain-containing protein	
+G5EDY2	worm	G5EDY2	wars-1	G5EDY2	0	15	Tryptophan--tRNA ligase, cytoplasmic	
+G5EDY3	worm	G5EDY3	skr-7	G5EDY3	11	21	Skp1-related protein	
+G5EDZ2	worm	G5EDZ2	umps-1	G5EDZ2	3	15	Uridine 5'-monophosphate synthase	
+G5EDZ5	worm	G5EDZ5	unc-43	G5EDZ5	9	39	Calcium/calmodulin-dependent protein kinase type II	
+G5EDZ7	worm	G5EDZ7	cdr-4	G5EDZ7	0	3	CaDmium Responsive	
+G5EDZ8	worm	G5EDZ8	cal-4	G5EDZ8	5	31	EF-hand domain-containing protein	
+G5EDZ9	worm	G5EDZ9	cpi-1	G5EDZ9	2	4	Cystatin cpi-1	
+G5EE01	worm	G5EE01	daf-18	G5EE01	0	58	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and d	
+G5EE04	worm	G5EE04	hip-1	G5EE04	5	26	STI1 domain-containing protein	
+G5EE11	worm	G5EE11	CELE_F39H2.3	G5EE11	0	2	Aminomethyltransferase folate-binding domain-containing prot	
+G5EE12	worm	G5EE12	cash-1	G5EE12	3	43	Striatin N-terminal domain-containing protein	
+G5EE14	worm	G5EE14	cua-1	G5EE14	1	12	P-type Cu(+) transporter	
+G5EE16	worm	G5EE16	C44H4.4	G5EE16	0	3	Chorein N-terminal domain-containing protein	
+G5EE18	worm	G5EE18	ceh-28	G5EE18	5	15	Homeobox protein ceh-28	
+G5EE21	worm	G5EE21	nhr-116	G5EE21	1	15	Nuclear receptor	
+G5EE23	worm	G5EE23	CELE_F10G8.8	G5EE23	0	6	PH domain-containing protein	
+G5EE25	worm	G5EE25	hasp-1	G5EE25	1	9	non-specific serine/threonine protein kinase	
+G5EE29	worm	G5EE29	trpl-4	G5EE29	0	1	Ion transport domain-containing protein	
+G5EE33	worm	G5EE33	acy-3	G5EE33	0	2	adenylate cyclase	
+G5EE34	worm	G5EE34	CELE_W04E12.7	G5EE34	0	20	Nucleoside-diphosphate kinase	
+G5EE36	worm	G5EE36	hsp-12.6	G5EE36	4	6	Heat shock protein 12.6	
+G5EE37	worm	G5EE37	icp-1	G5EE37	2	27	Incenp-like protein ICP-1	
+G5EE40	worm	G5EE40	srp-1	G5EE40	0	69	Serine or cysteine protease inhibitor	
+G5EE41	worm	G5EE41	cuc-1	G5EE41	2	44	Copper transport protein ATOX1	
+G5EE42	worm	G5EE42	CELE_ZK1098.11	G5EE42	0	3	Protein NATD1	
+G5EE46	worm	G5EE46	dhgd-1	G5EE46	1	14	D-2-hydroxyglutarate dehydrogenase, mitochondrial	
+G5EE48	worm	G5EE48	ttr-50	G5EE48	2	29	Transthyretin-like family protein	
+G5EE49	worm	G5EE49	CELE_Y43F11A.1	G5EE49	0	1	Uncharacterized protein	
+G5EE56	worm	G5EE56	src-1	G5EE56	10	123	Tyrosine protein-kinase src-1 (EC 2.7.10.2) (SRC oncogene re	
+G5EE59	worm	G5EE59	CELE_M79.2	G5EE59	0	2	Phospholipid/glycerol acyltransferase domain-containing prot	
+G5EE62	worm	G5EE62	CELE_F12F6.1	G5EE62	0	4	BEN domain-containing protein	
+G5EE65	worm	G5EE65	hsp-12.1	G5EE65	2	36	Heat-shock protein 12.1	
+G5EE66	worm	G5EE66	cogc-1	G5EE66	3	46	Conserved oligomeric Golgi complex subunit 1	
+G5EE67	worm	G5EE67	skr-3	G5EE67	18	30	Skp1-related protein	
+G5EE68	worm	G5EE68	unc-75	G5EE68	0	8	Putative RNA-binding protein	
+G5EE70	worm	G5EE70	eor-2	G5EE70	1	1	EOR-2	
+G5EE72	worm	G5EE72	mrp-5	G5EE72	0	3	Multidrug resistance-associated protein 5	
+G5EE74	worm	G5EE74	nud-1	G5EE74	1	15	Nuclear migration protein nudC	
+G5EE80	worm	G5EE80	CELE_F21D5.7	G5EE80	4	133	Signal recognition particle 54 kDa protein	
+G5EE86	worm	G5EE86	ttx-3	G5EE86	1	6	LIM/homeobox protein ttx-3	
+G5EE87	worm	G5EE87	lgc-31	G5EE87	1	1	Neur_chan_memb domain-containing protein	
+G5EE88	worm	G5EE88	skr-15	G5EE88	9	17	Skp1-related protein	
+G5EE90	worm	G5EE90	CELE_F09B9.4	G5EE90	0	1	Uncharacterized protein	
+G5EE96	worm	G5EE96	slc-25a10	G5EE96	0	7	Mitochondrial dicarboxylate carrier	
+G5EE98	worm	G5EE98	skr-20	G5EE98	13	24	Skp1-related protein	
+G5EEA1	worm	G5EEA1	lim-4	G5EEA1	3	20	LIM/homeobox protein lim-4	
+G5EEA2	worm	G5EEA2	lpr-3	G5EEA2	0	7	LiPocalin-Related protein	
+G5EEA3	worm	G5EEA3	CELE_H05L14.1	G5EEA3	0	3	Protein kinase domain-containing protein	
+G5EEA8	worm	G5EEA8	nex-1	G5EEA8	0	15	Annexin	
+G5EEB1	worm	G5EEB1	frpr-18	G5EEB1	1	1	FMRFamide peptide receptor frpr-18	
+G5EEB5	worm	G5EEB5	tbc-19	G5EEB5	0	1	TBC1 domain family member 2B	
+G5EEB6	worm	G5EEB6	dpy-14	G5EEB6	0	7	COLlagen structural	
+G5EEB8	worm	G5EEB8	lpr-2	G5EEB8	0	2	LiPocalin-Related protein	
+G5EEC2	worm	G5EEC2	flp-7	G5EEC2	1	6	FMRFamide-like neuropeptides 7	
+G5EEC6	worm	G5EEC6	CELE_F07B7.7	G5EEC6	0	1	Core protein VP7	
+G5EEC8	worm	G5EEC8	hex-5	G5EEC8	1	7	beta-N-acetylhexosaminidase	
+G5EED4	worm	G5EED4	nipi-3	G5EED4	7	47	Protein nipi-3 (No induction of peptide after drechmeria inf	
+G5EED5	worm	G5EED5	scm-1	G5EED5	0	4	Secretory carrier-associated membrane protein	
+G5EED8	worm	G5EED8	tph-1	G5EED8	2	3	Biopterin-dependent aromatic amino acid hydroxylase family p	
+G5EED9	worm	G5EED9	pitp-1	G5EED9	3	10	DDHD domain-containing protein	
+G5EEE2	worm	G5EEE2	tax-2	G5EEE2	7	22	Cyclic nucleotide-binding domain-containing protein	
+G5EEE5	worm	G5EEE5	elo-1	G5EEE5	0	8	Long chain fatty acid elongase 1	
+G5EEE7	worm	G5EEE7	vab-2	G5EEE7	3	18	Ephrin RBD domain-containing protein	
+G5EEF1	worm	G5EEF1	egl-17	G5EEF1	2	44	EGL-17	
+G5EEF2	worm	G5EEF2	CELE_H12D21.3	G5EEF2	0	1	Uncharacterized protein	
+G5EEF5	worm	G5EEF5	srg-36	G5EEF5	1	7	Serpentine receptor class gamma	
+G5EEG0	worm	G5EEG0	cal-2	G5EEG0	7	56	Calmodulin-like protein	
+G5EEG1	worm	G5EEG1	nfya-1	G5EEG1	2	18	Nuclear transcription factor Y subunit nfya-1	
+G5EEG4	worm	G5EEG4	mce-1	G5EEG4	0	24	Methylmalonyl-CoA epimerase, mitochondrial	
+G5EEG6	worm	G5EEG6	CELE_T09F3.2	G5EEG6	0	3	Carrier protein (C2)	
+G5EEG7	worm	G5EEG7	smu-1	G5EEG7	5	21	Smu-1 suppressor of mec-8 and unc-52 protein	
+G5EEG9	worm	G5EEG9	hlh-2	G5EEG9	16	30	Helix-loop-helix protein hlh-2	
+G5EEH0	worm	G5EEH0	rde-1	G5EEH0	1	27	Piwi domain-containing protein	
+G5EEH1	worm	G5EEH1	twk-43	G5EEH1	27	27	Potassium channel domain-containing protein	
+G5EEH2	worm	G5EEH2	nhr-107	G5EEH2	1	10	Nuclear Hormone Receptor family	
+G5EEH3	worm	G5EEH3	nmr-2	G5EEH3	1	15	NMDA-type ionotropic glutamate receptor NMR-2	
+G5EEH5	worm	G5EEH5	mxl-1	G5EEH5	3	11	Max-like protein 1	
+G5EEH6	worm	G5EEH6	ivd-1	G5EEH6	1	8	Isovaleryl-CoA dehydrogenase, mitochondrial	
+G5EEI1	worm	G5EEI1	lgl-1	G5EEI1	2	14	LGL-1	
+G5EEI4	worm	G5EEI4	asp-1	G5EEI4	1	7	Aspartic protease 1	
+G5EEI8	worm	G5EEI8	chp-1	G5EEI8	0	18	Cysteine and histidine-rich domain-containing protein 1	
+G5EEI9	worm	G5EEI9	CELE_K11D9.3	G5EEI9	0	3	Major facilitator superfamily (MFS) profile domain-containin	
+G5EEJ1	worm	G5EEJ1	dmd-10	G5EEJ1	3	176	Doublesex- and mab-3-related transcription factor dmd-10	
+G5EEJ2	worm	G5EEJ2	cki-2	G5EEJ2	8	32	Cyclin-dependent kinase inhibitor	
+G5EEJ7	worm	G5EEJ7	msd-2	G5EEJ7	2	15	MSP domain-containing protein	
+G5EEK0	worm	G5EEK0	aqp-4	G5EEK0	1	10	Aquaporin	
+G5EEK1	worm	G5EEK1	vglu-2	G5EEK1	0	17	Major facilitator superfamily (MFS) profile domain-containin	
+G5EEK3	worm	G5EEK3	noca-1	G5EEK3	1	21	Non-centrosomal microtubule array protein 1	
+G5EEK5	worm	G5EEK5	vet-6	G5EEK5	1	29	Very Early Transcript	
+G5EEK8	worm	G5EEK8	sca-1	G5EEK8	0	20	Calcium-transporting ATPase	
+G5EEK9	worm	G5EEK9	vha-5	G5EEK9	10	61	V-type proton ATPase 116 kDa subunit a 2	
+G5EEL2	worm	G5EEL2	plrg-1	G5EEL2	13	93	Pleiotropic regulator 1	
+G5EEL3	worm	G5EEL3	nhr-70	G5EEL3	7	81	Nuclear Hormone Receptor family	
+G5EEL5	worm	G5EEL5	dbl-1	G5EEL5	6	30	Protein dbl-1	
+G5EEL6	worm	G5EEL6	CELE_ZC455.1	G5EEL6	1	4	LIM domain protein	
+G5EEL9	worm	G5EEL9	hmg-11	G5EEL9	0	8	HMG	
+G5EEM0	worm	G5EEM0	nhr-114	G5EEM0	5	78	Nuclear hormone receptor 114	
+G5EEM1	worm	G5EEM1	gmn-1	G5EEM1	1	6	Geminin homolog	
+G5EEM5	worm	G5EEM5	zyg-9	G5EEM5	3	56	Zygote defective protein 9	
+G5EEM6	worm	G5EEM6	tap-1	G5EEM6	3	47	TGF-beta-activated kinase 1 and MAP3K7-binding protein 1	
+G5EEM9	worm	G5EEM9	ipla-1	G5EEM9	0	4	Intracellular phospholipase A1	
+G5EEN4	worm	G5EEN4	gck-3	G5EEN4	12	64	Germinal center kinase 3 (EC 2.7.11.1) (STE20-like serine/th	
+G5EEN6	worm	G5EEN6	rad-54.l	G5EEN6	1	21	DNA repair and recombination protein RAD54-like	
+G5EEN7	worm	G5EEN7	CELE_Y39A1A.3	G5EEN7	2	10	Sjogren's syndrome/scleroderma autoantigen 1 (Autoantigen p2	
+G5EEN8	worm	G5EEN8	aex-4	G5EEN8	30	73	t-SNARE protein aex-4	
+G5EEP3	worm	G5EEP3	fce-2	G5EEP3	0	7	CAAX prenyl protease 2	
+G5EEQ1	worm	G5EEQ1	CELE_F41E7.9	G5EEQ1	1	50	RING-type domain-containing protein	
+G5EEQ3	worm	G5EEQ3	scrm-2	G5EEQ3	0	24	Phospholipid scramblase	
+G5EEQ5	worm	G5EEQ5	ref-1	G5EEQ5	0	15	Regulator of fusion ref-1	
+G5EEQ8	worm	G5EEQ8	sftb-1	G5EEQ8	15	143	Splicing factor 3B subunit 1 domain-containing protein	
+G5EEQ9	worm	G5EEQ9	erg-28	G5EEQ9	2	38	Probable ergosterol biosynthetic protein 28 homolog	
+G5EER4	worm	G5EER4	ger-1	G5EER4	0	12	GDP-L-fucose synthase	
+G5EER6	worm	G5EER6	CELE_F58D5.3	G5EER6	1	11	Uncharacterized protein	
+G5EES1	worm	G5EES1	cln-3.3	G5EES1	0	5	Battenin	
+G5EES3	worm	G5EES3	alg-1	G5EES3	2	54	Protein argonaute-1	
+G5EES6	worm	G5EES6	ufd-3	G5EES6	4	37	Ubiquitin fusion degradation protein 3 homolog	
+G5EES8	worm	G5EES8	nspd-5	G5EES8	0	5	Nematode Specific Peptide family, group D	
+G5EES9	worm	G5EES9	txl-1	G5EES9	15	63	Thioredoxin-like protein	
+G5EET2	worm	G5EET2	dut-1	G5EET2	0	7	dUTP diphosphatase	
+G5EET3	worm	G5EET3	cdr-6	G5EET3	0	9	CaDmium Responsive	
+G5EET4	worm	G5EET4	CELE_F40G12.11	G5EET4	0	10	Glutamic acid-rich protein	
+G5EET5	worm	G5EET5	hpl-1	G5EET5	1	28	Chromobox protein homolog hpl-1	
+G5EET6	worm	G5EET6	efa-6	G5EET6	1	4	Exchange factor for Arf-6	
+G5EET7	worm	G5EET7	CELE_T23B5.3	G5EET7	1	10	C3H1-type domain-containing protein	
+G5EET8	worm	G5EET8	pud-1.2	G5EET8	3	56	Up-regulated in Daf-2 domain-containing protein	
+G5EEU1	worm	G5EEU1	nbet-1	G5EEU1	13	77	BET1 homolog	
+G5EEU2	worm	G5EEU2	set-25	G5EEU2	1	45	Histone-lysine N-methyltransferase set-25	
+G5EEU3	worm	G5EEU3	aex-1	G5EEU3	1	2	C2 domain-containing protein aex-1	
+G5EEV0	worm	G5EEV0	mpst-7	G5EEV0	0	7	Rhodanese domain-containing protein	
+G5EEV4	worm	G5EEV4	sym-4	G5EEV4	0	3	WD repeat-containing protein 44	
+G5EEV5	worm	G5EEV5	pud-3	G5EEV5	0	2	5C820	
+G5EEW0	worm	G5EEW0	che-14	G5EEW0	0	15	CHE-14 protein	
+G5EEW1	worm	G5EEW1	ergi-2	G5EEW1	1	3	Endoplasmic reticulum-Golgi intermediate compartment protein	
+G5EEW4	worm	G5EEW4	C27C12.3	G5EEW4	1	22	Serine/threonine-protein kinase ATR	
+G5EEW5	worm	G5EEW5	CELE_F54E12.2	G5EEW5	0	23	Transcription termination factor 2	
+G5EEW6	worm	G5EEW6	sig-7	G5EEW6	4	33	Peptidyl-prolyl cis-trans isomerase sig-7	
+G5EEW7	worm	G5EEW7	asd-1	G5EEW7	0	7	RNA-binding protein ASD-1	
+G5EEW9	worm	G5EEW9	cnk-1	G5EEW9	1	15	Connector enhancer of kinase suppressor of ras	
+G5EEX4	worm	G5EEX4	skr-13	G5EEX4	8	21	Skp1-related protein	
+G5EEX7	worm	G5EEX7	CELE_F49C12.15	G5EEX7	0	7	Serine/arginine repetitive matrix protein 2-like	
+G5EEY1	worm	G5EEY1	C05C12.6	G5EEY1	0	6	Uncharacterized protein	
+G5EEY6	worm	G5EEY6	zig-3	G5EEY6	1	6	Zwei Ig domain protein zig-3	
+G5EEZ1	worm	G5EEZ1	CELE_W09G3.7	G5EEZ1	0	17	Williams-Beuren syndrome chromosomal region 16 protein	
+G5EEZ3	worm	G5EEZ3	glc-3	G5EEZ3	0	1	Glutamate-gated chloride channel subunit	
+G5EEZ4	worm	G5EEZ4	3E324	G5EEZ4	1	3	WD repeat-containing protein 55	
+G5EEZ5	worm	G5EEZ5	thk-1	G5EEZ5	0	8	Thymidine kinase	
+G5EEZ6	worm	G5EEZ6	clp-9	G5EEZ6	0	2	Calpain catalytic domain-containing protein	
+G5EEZ8	worm	G5EEZ8	gly-15	G5EEZ8	0	1	Beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acety	
+G5EF00	worm	G5EF00	glb-30	G5EF00	0	2	Globin	
+G5EF01	worm	G5EF01	tbb-6	G5EF01	10	35	Tubulin beta chain	
+G5EF02	worm	G5EF02	spn-4	G5EF02	0	13	PIP-1	
+G5EF06	worm	G5EF06	lin-46	G5EF06	0	9	LIN-46	
+G5EF08	worm	G5EF08	ncx-1	G5EF08	0	1	Calx-beta domain-containing protein	
+G5EF09	worm	G5EF09	spe-41	G5EF09	0	19	TRP homologous cation channel protein	
+G5EF11	worm	G5EF11	efl-1	G5EF11	4	39	E2F/DP family winged-helix DNA-binding domain-containing pro	
+G5EF14	worm	G5EF14	uggt-2	G5EF14	1	6	UDP-glucose:Glycoprotein Glucosyltransferase	
+G5EF15	worm	G5EF15	pos-1	G5EF15	1	29	RNA-binding protein pos-1	
+G5EF16	worm	G5EF16	CELE_Y113G7A.13	G5EF16	0	1	USP domain-containing protein	
+G5EF22	worm	G5EF22	flp-10	G5EF22	0	1	FMRF-Like Peptide	
+G5EF25	worm	G5EF25	med-2	G5EF25	0	35	GATA-type domain-containing protein	
+G5EF26	worm	G5EF26	5N226	G5EF26	1	7	Alpha-2-macroglobulin RAP C-terminal domain-containing prote	
+G5EF30	worm	G5EF30	CELE_T01E8.1	G5EF30	0	6	F-box domain-containing protein	
+G5EF32	worm	G5EF32	npa-1	G5EF32	0	27	Nematode polyprotein allergen related, post-translationnally	
+G5EF33	worm	G5EF33	mig-13	G5EF33	0	2	Abnormal cell migration protein 13	
+G5EF34	worm	G5EF34	crm-1	G5EF34	1	16	Cysteine-rich motor neuron 1 protein-like	
+G5EF36	worm	G5EF36	srt-1	G5EF36	0	9	Serpentine Receptor, class T	
+G5EF37	worm	G5EF37	pat-10	G5EF37	4	26	EF-hand domain-containing protein	
+G5EF47	worm	G5EF47	smg-7	G5EF47	1	11	DNA/RNA-binding domain-containing protein	
+G5EF48	worm	G5EF48	fld-1	G5EF48	0	4	TLC domain-containing protein fld-1	
+G5EF49	worm	G5EF49	C34F6.10	G5EF49	0	5	Fibronectin type-III domain-containing protein	
+G5EF50	worm	G5EF50	scl-3	G5EF50	0	2	SCP domain-containing protein	
+G5EF51	worm	G5EF51	ltd-1	G5EF51	0	12	Lim and transglutaminase domain protein ltd-1	
+G5EF53	worm	G5EF53	swsn-4	G5EF53	10	71	SWI/SNF chromatin remodeling complex core catalytic subunit 	
+G5EF58	worm	G5EF58	ipla-7	G5EF58	0	2	PNPLA domain-containing protein	
+G5EF59	worm	G5EF59	popl-5	G5EF59	2	35	Ribonuclease P/MRP protein subunit POP5	
+G5EF60	worm	G5EF60	stim-1	G5EF60	1	17	Stromal interaction molecule 1	
+G5EF61	worm	G5EF61	ndg-4	G5EF61	1	11	Nose resistant-to-fluoxetine protein N-terminal domain-conta	
+G5EF62	worm	G5EF62	uig-1	G5EF62	4	10	Protein vav	
+G5EF63	worm	G5EF63	snx-14	G5EF63	0	2	Sorting nexin-12	
+G5EF65	worm	G5EF65	sqv-1	G5EF65	0	6	UDP-glucuronate decarboxylase	
+G5EF68	worm	G5EF68	taf-5	G5EF68	13	99	Transcription initiation factor TFIID subunit 5	
+G5EF71	worm	G5EF71	med-1	G5EF71	0	22	GATA-type domain-containing protein	
+G5EF74	worm	G5EF74	srd-73	G5EF74	0	1	Serpentine Receptor, class D (Delta)	
+G5EF76	worm	G5EF76	lin-22	G5EF76	1	15	Helix-loop-helix protein lin-22	
+G5EF77	worm	G5EF77	sars-2	G5EF77	1	30	serine--tRNA ligase	
+G5EF79	worm	G5EF79	pals-30	G5EF79	0	1	Protein containing ALS2cr12 (ALS2CR12) signature	
+G5EF80	worm	G5EF80	spv-1	G5EF80	2	4	F-BAR domain-containing protein	
+G5EF82	worm	G5EF82	rmh-2	G5EF82	5	27	RecQ-mediated genome instability protein 1	
+G5EF83	worm	G5EF83	tasp-1	G5EF83	0	7	TASPase homolog	
+G5EF84	worm	G5EF84	gip-2	G5EF84	1	9	Gamma-tubulin interacting protein 2	
+G5EF85	worm	G5EF85	hot-1	G5EF85	0	1	Homolog of Odr-2 (Two)	
+G5EF86	worm	G5EF86	CELE_Y48G10A.1	G5EF86	0	20	S-formylglutathione hydrolase	
+G5EF90	worm	G5EF90	CELE_K01D12.15	G5EF90	0	1	DNA-binding protein	
+G5EF96	worm	G5EF96	unc-40	G5EF96	3	19	Netrin receptor unc-40	
+G5EF97	worm	G5EF97	sfa-1	G5EF97	7	18	Branchpoint-bridging protein	
+G5EF99	worm	G5EF99	CELE_ZK1128.7	G5EF99	1	2	SHSP domain-containing protein	
+G5EFA2	worm	G5EFA2	bir-1	G5EFA2	11	51	Chromosomal passenger complex protein bir-1	
+G5EFA6	worm	G5EFA6	rab-37	G5EFA6	0	6	RAB family	
+G5EFA7	worm	G5EFA7	gadr-2	G5EFA7	2	27	Leucine-rich repeat-containing protein	
+G5EFA9	worm	G5EFA9	skr-9	G5EFA9	11	20	Skp1-related protein	
+G5EFB2	worm	G5EFB2	sulp-8	G5EFB2	0	8	Anion transporter SULP-8a	
+G5EFB5	worm	G5EFB5	cpn-1	G5EFB5	2	49	CPN-1	
+G5EFB9	worm	G5EFB9	rilp-1	G5EFB9	2	7	RILP-like protein 1	
+G5EFC1	worm	G5EFC1	rab-8	G5EFC1	11	55	Rab8	
+G5EFC3	worm	G5EFC3	egl-36	G5EFC3	0	4	Potassium voltage-gated channel protein egl-36	
+G5EFC4	worm	G5EFC4	cdc-5l	G5EFC4	17	149	Cell division cycle 5-like protein	
+G5EFC8	worm	G5EFC8	dap-3	G5EFC8	6	154	Small ribosomal subunit protein mS29	
+G5EFD2	worm	G5EFD2	ksr-1	G5EFD2	42	100	Kinase suppressor of Ras A (EC 2.7.11.1)	
+G5EFD4	worm	G5EFD4	hmt-1	G5EFD4	0	2	Heavy metal tolerance factor 1	
+G5EFD7	worm	G5EFD7	CELE_F46C5.9	G5EFD7	1	39	WD_REPEATS_REGION domain-containing protein	
+G5EFD8	worm	G5EFD8	dhhc-6	G5EFD8	0	5	Palmitoyltransferase	
+G5EFD9	worm	G5EFD9	sup-17	G5EFD9	2	19	Disintegrin and metalloproteinase domain-containing protein 	
+G5EFE1	worm	G5EFE1	rhgf-1	G5EFE1	8	22	Guanine nucleotide exchange factor	
+G5EFE3	worm	G5EFE3	CELE_H03A11.2	G5EFE3	0	5	NLPC_P60 domain-containing protein	
+G5EFE7	worm	G5EFE7	fut-8	G5EFE7	0	1	Alpha-(1,6)-fucosyltransferase	
+G5EFF1	worm	G5EFF1	asd-2	G5EFF1	1	19	RNA-binding protein asd-2	
+G5EFF2	worm	G5EFF2	CELE_F20C5.6	G5EFF2	1	5	ELKS/RAB6-interacting/CAST family member 2	
+G5EFF4	worm	G5EFF4	sem-4	G5EFF4	2	64	Spalt-like protein sem-4	
+G5EFF5	worm	G5EFF5	daf-12	G5EFF5	1	24	Nuclear hormone receptor family member daf-12	
+G5EFF7	worm	G5EFF7	ubql-1	G5EFF7	7	74	Ubiquilin	
+G5EFF9	worm	G5EFF9	eif-2bdelta	G5EFF9	3	23	Translation initiation factor eIF2B subunit delta	
+G5EFG0	worm	G5EFG0	sel-1	G5EFG0	7	80	S5 DRBM domain-containing protein	
+G5EFG4	worm	G5EFG4	abcf-2	G5EFG4	0	59	ABC transporter domain-containing protein	
+G5EFG5	worm	G5EFG5	pms-2	G5EFG5	4	39	Mismatch repair endonuclease PMS2	
+G5EFG7	worm	G5EFG7	pot-3	G5EFG7	1	20	Protection of telomeres protein 1 ssDNA-binding domain-conta	
+G5EFH0	worm	G5EFH0	CELE_W09C5.1	G5EFH0	8	158	Ribosome biogenesis protein NSA2 homolog	
+G5EFH1	worm	G5EFH1	ins-17	G5EFH1	0	13	Insulin-like peptide 17	
+G5EFH3	worm	G5EFH3	del-5	G5EFH3	11	17	DEgenerin Like	
+G5EFH4	worm	G5EFH4	srp-6	G5EFH4	0	50	Serine or cysteine protease inhibitor	
+G5EFH6	worm	G5EFH6	C17D12.3	G5EFH6	0	4	PAW domain-containing protein	
+G5EFH8	worm	G5EFH8	cbs-1	G5EFH8	0	9	Cystathionine beta-synthase cbs-1	
+G5EFI1	worm	G5EFI1	kcnl-1	G5EFI1	4	5	Calmodulin-binding domain-containing protein	
+G5EFI4	worm	G5EFI4	lec-5	G5EFI4	0	3	Galectin	
+G5EFI7	worm	G5EFI7	myrf-1	G5EFI7	2	11	Myelin regulatory factor homolog 1	
+G5EFI9	worm	G5EFI9	hus-1	G5EFI9	10	62	Checkpoint protein	
+G5EFJ4	worm	G5EFJ4	capg-1	G5EFJ4	2	46	Condensin complex subunit capg-1	
+G5EFJ8	worm	G5EFJ8	pcp-2	G5EFJ8	0	1	Peptidase S28	
+G5EFK4	worm	G5EFK4	arf-5	G5EFK4	13	94	ADP-ribosylation factor	
+G5EFK6	worm	G5EFK6	gly-14	G5EFK6	0	3	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	
+G5EFK8	worm	G5EFK8	CELE_F14B4.1	G5EFK8	0	65	EGF-like domain-containing protein	
+G5EFL0	worm	G5EFL0	gld-4	G5EFL0	1	13	Poly(A) RNA polymerase gld-4	
+G5EFL1	worm	G5EFL1	hex-2	G5EFL1	0	6	beta-N-acetylhexosaminidase	
+G5EFL5	worm	G5EFL5	alp-1	G5EFL5	2	39	PDZ and LIM domain protein Zasp	
+G5EFL7	worm	G5EFL7	CELE_E02H4.6	G5EFL7	1	7	non-specific serine/threonine protein kinase	
+G5EFL9	worm	G5EFL9	cky-1	G5EFL9	1	4	PAS domain-containing protein cky-1	
+G5EFM0	worm	G5EFM0	mdf-1	G5EFM0	3	22	MAD (Yeast Mitosis arrest DeFicient) related	
+G5EFM5	worm	G5EFM5	clec-185	G5EFM5	0	1	C-type lectin domain-containing protein	
+G5EFM7	worm	G5EFM7	CELE_F18C12.3	G5EFM7	5	79	Serum response factor-binding protein 1	
+G5EFM9	worm	G5EFM9	nekl-3	G5EFM9	1	4	Serine/threonine-protein kinase nekl-3	
+G5EFN6	worm	G5EFN6	flp-2	G5EFN6	1	1	FMRFamide-like neuropeptides 2	
+G5EFN7	worm	G5EFN7	hst-6	G5EFN7	0	1	Heparan-sulfate 6-O-sulfotransferase	
+G5EFN8	worm	G5EFN8	CELE_F58D5.8	G5EFN8	0	11	Uncharacterized protein	
+G5EFN9	worm	G5EFN9	nhr-126	G5EFN9	0	2	Nuclear Hormone Receptor family	
+G5EFP4	worm	G5EFP4	sym-1	G5EFP4	1	5	Leucine-rich repeat-containing protein let-4	
+G5EFP5	worm	G5EFP5	fut-3	G5EFP5	0	3	Alpha-(1,3)-fucosyltransferase fut-3	
+G5EFP8	worm	G5EFP8	acl-7	G5EFP8	1	4	Dihydroxyacetone phosphate acyltransferase	
+G5EFQ0	worm	G5EFQ0	gcy-18	G5EFQ0	0	2	Receptor-type guanylate cyclase gcy-18	
+G5EFQ1	worm	G5EFQ1	idi-1	G5EFQ1	0	2	isopentenyl-diphosphate Delta-isomerase	
+G5EFQ4	worm	G5EFQ4	klp-6	G5EFQ4	0	42	Kinesin-like protein	
+G5EFQ5	worm	G5EFQ5	rnt-1	G5EFQ5	6	94	Runt-related transcription factor rnt-1	
+G5EFQ6	worm	G5EFQ6	cld-9	G5EFQ6	0	2	CUB-like domain-containing protein	
+G5EFQ9	worm	G5EFQ9	mec-5	G5EFQ9	0	2	MEC-5	
+G5EFR0	worm	G5EFR0	tag-297	G5EFR0	0	13	ShKT domain-containing protein	
+G5EFR3	worm	G5EFR3	gldr-2	G5EFR3	0	11	PAP-associated domain-containing protein	
+G5EFR6	worm	G5EFR6	mca-1	G5EFR6	1	12	Plasma membrane calcium-transporting ATPase mca-1	
+G5EFR7	worm	G5EFR7	CELE_W03G11.4	G5EFR7	0	1	Uncharacterized protein	
+G5EFR8	worm	G5EFR8	prx-6	G5EFR8	1	22	Peroxisomal ATPase PEX1	
+G5EFS1	worm	G5EFS1	ikb-1	G5EFS1	0	37	Death domain-containing protein	
+G5EFS2	worm	G5EFS2	msi-1	G5EFS2	0	19	RNA-binding protein Musashi homolog 1	
+G5EFS4	worm	G5EFS4	dcs-1	G5EFS4	0	8	m7GpppX diphosphatase	
+G5EFT0	worm	G5EFT0	CELE_T12D8.9	G5EFT0	0	3	Protein PFC0760c-like	
+G5EFT4	worm	G5EFT4	ltah-1.1	G5EFT4	0	3	Aminopeptidase ltah-1.1	
+G5EFT5	worm	G5EFT5	hsf-1	G5EFT5	3	37	Heat shock transcription factor hsf-1	
+G5EFT7	worm	G5EFT7	hhat-1	G5EFT7	0	2	Protein-cysteine N-palmitoyltransferase HHAT	
+G5EFU0	worm	G5EFU0	pak-2	G5EFU0	23	80	Serine/threonine-protein kinase pak-2 (EC 2.7.11.1) (p21-act	
+G5EFU2	worm	G5EFU2	ant-1.4	G5EFU2	0	12	ADP/ATP translocase	
+G5EFV1	worm	G5EFV1	CELE_Y106G6E.1	G5EFV1	0	11	Protein kinase domain-containing protein	
+G5EFV2	worm	G5EFV2	G5EFV2_CAEEL	G5EFV2	19	48	Serine/threonine-protein (EC 2.7.11.1)	
+G5EFV2_CAEEL	worm	G5EFV2	G5EFV2_CAEEL	G5EFV2	19	48	Serine/threonine-protein (EC 2.7.11.1)	
+G5EFV3	worm	G5EFV3	rsa-2	G5EFV3	3	13	Regulator of spindle assembly protein 2	
+G5EFV4	worm	G5EFV4	hmg-1.1	G5EFV4	1	24	HMG box domain-containing protein	
+G5EFV5	worm	G5EFV5	cdk-7	G5EFV5	10	77	Cyclin-dependent kinase 7	
+G5EFV6	worm	G5EFV6	catp-4	G5EFV6	3	15	Sodium/potassium-transporting ATPase subunit alpha	
+G5EFV7	worm	G5EFV7	pif-1	G5EFV7	0	35	ATP-dependent DNA helicase PIF1	
+G5EFV8	worm	G5EFV8	vps-52	G5EFV8	8	35	Vacuolar protein sorting-associated protein 52 homolog	
+G5EFW0	worm	G5EFW0	tgn-38	G5EFW0	0	1	Trans-Golgi network integral membrane protein 2	
+G5EFW7	worm	G5EFW7	daf-10	G5EFW7	8	71	Intraflagellar transport protein 122 homolog	
+G5EFW8	worm	G5EFW8	ant-1.3	G5EFW8	0	12	ADP/ATP translocase	
+G5EFX1	worm	G5EFX1	egl-6	G5EFX1	0	2	G protein-coupled receptor EGL-6 isoform b	
+G5EFX2	worm	G5EFX2	pkn-1	G5EFX2	6	26	Serine/threonine-protein (EC 2.7.11.1)	
+G5EFX2_CAEEL	worm	G5EFX2	pkn-1	G5EFX2	6	26		
+G5EFX6	worm	G5EFX6	slt-1	G5EFX6	1	18	Slit homolog 1 protein	
+G5EFX8	worm	G5EFX8	ntl-3	G5EFX8	2	27	Not3 domain-containing protein	
+G5EFY1	worm	G5EFY1	polh-1	G5EFY1	0	28	DNA polymerase eta	
+G5EFY4	worm	G5EFY4	egl-46	G5EFY4	1	6	Transcription factor egl-46	
+G5EFY5	worm	G5EFY5	nob-1	G5EFY5	5	24	Homeobox protein nob-1	
+G5EFY6	worm	G5EFY6	sec-31	G5EFY6	3	47	WD_REPEATS_REGION domain-containing protein	
+G5EFY7	worm	G5EFY7	pqm-1	G5EFY7	6	230	Zinc finger transcription factor pqm-1	
+G5EFZ1	worm	G5EFZ1	ipgm-1	G5EFZ1	1	71	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	
+G5EFZ3	worm	G5EFZ3	ash-2	G5EFZ3	13	121	Set1/Ash2 histone methyltransferase complex subunit ash-2	
+G5EFZ6	worm	G5EFZ6	C48B4.12	G5EFZ6	1	12	Secreted protein	
+G5EFZ7	worm	G5EFZ7	mrpl-42	G5EFZ7	8	102	Large ribosomal subunit protein mL42	
+G5EG03	worm	G5EG03	pgp-8	G5EG03	1	32	p-GlycoProtein related	
+G5EG05	worm	G5EG05	egl-20	G5EG05	7	13	Protein Wnt	
+G5EG08	worm	G5EG08	srd-72	G5EG08	0	9	Serpentine Receptor, class D (Delta)	
+G5EG10	worm	G5EG10	mgl-2	G5EG10	1	33	G-protein coupled receptors family 3 profile domain-containi	
+G5EG11	worm	G5EG11	fat-4	G5EG11	0	1	Delta(5) fatty acid desaturase fat-4	
+G5EG13	worm	G5EG13	dhs-12	G5EG13	1	25	NAD(P)-binding protein	
+G5EG14	worm	G5EG14	cacn-1	G5EG14	6	27	Splicing factor Cactin	
+G5EG16	worm	G5EG16	C26D10.6	G5EG16	0	26	G protein	
+G5EG17	worm	G5EG17	smc-6	G5EG17	4	23	Structural maintenance of chromosomes protein 6 homolog smc-	
+G5EG18	worm	G5EG18	crn-2	G5EG18	0	1	Deoxyribonuclease TATDN1	
+G5EG20	worm	G5EG20	CELE_F44A6.5	G5EG20	0	1	FBA_2 domain-containing protein	
+G5EG22	worm	G5EG22	icln-1	G5EG22	8	17	Methylosome subunit pICln	
+G5EG31	worm	G5EG31	flp-4	G5EG31	0	9	FMRF-Like Peptide	
+G5EG35	worm	G5EG35	nhr-267	G5EG35	2	30	Nuclear receptor domain-containing protein	
+G5EG36	worm	G5EG36	frpr-3	G5EG36	2	10	G-protein coupled receptors family 1 profile domain-containi	
+G5EG38	worm	G5EG38	emb-27	G5EG38	16	79	Cell division cycle protein 16 homolog	
+G5EG39	worm	G5EG39	skr-10	G5EG39	11	22	Skp1-related protein	
+G5EG43	worm	G5EG43	ptp-4a2	G5EG43	2	7	Putative prenylated protein tyrosine phosphatase	
+G5EG44	worm	G5EG44	mdl-1	G5EG44	5	9	Mad-like protein 1	
+G5EG47	worm	G5EG47	gtf-2e2	G5EG47	13	82	Transcription initiation factor IIE subunit beta	
+G5EG49	worm	G5EG49	gtf-2e1	G5EG49	11	85	HTH TFE/IIEalpha-type domain-containing protein	
+G5EG51	worm	G5EG51	nrde-2	G5EG51	0	10	Nuclear exosome regulator NRDE2	
+G5EG53	worm	G5EG53	unc-34	G5EG53	7	39	UNC-34	
+G5EG54	worm	G5EG54	cpt-5	G5EG54	0	3	Choline/carnitine acyltransferase domain-containing protein	
+G5EG58	worm	G5EG58	pgp-9	G5EG58	0	23	p-GlycoProtein related	
+G5EG59	worm	G5EG59	crn-5	G5EG59	8	54	Exosome complex component RRP46 homolog	
+G5EG60	worm	G5EG60	CELE_K02E2.7	G5EG60	0	5	Cilia- and flagella-associated protein 251-like	
+G5EG61	worm	G5EG61	pgp-14	G5EG61	0	22	P-glycoprotein 14	
+G5EG62	worm	G5EG62	unc-45	G5EG62	1	14	UNC-45	
+G5EG65	worm	G5EG65	hid-1	G5EG65	1	16	HID-1	
+G5EG68	worm	G5EG68	agr-1	G5EG68	0	17	Agrin	
+G5EG72	worm	G5EG72	acr-18	G5EG72	1	1	AcetylCholine Receptor	
+G5EG74	worm	G5EG74	tag-180	G5EG74	0	10	VWFA domain-containing protein	
+G5EG78	worm	G5EG78	pxn-2	G5EG78	0	20	Peroxidasin homolog pxn-2	
+G5EG80	worm	G5EG80	trf-1	G5EG80	2	59	TNF Receptor Associated Factor (TRAF) homolog	
+G5EG86	worm	G5EG86	brc-2	G5EG86	2	24	DNA repair protein brc-2	
+G5EG87	worm	G5EG87	malt-1	G5EG87	0	5	Mucosa-associated lymphoid tissue lymphoma translocation pro	
+G5EG88	worm	G5EG88	acr-23	G5EG88	2	2	Betaine receptor acr-23	
+G5EG93	worm	G5EG93	clh-2	G5EG93	0	1	Chloride channel protein	
+G5EG96	worm	G5EG96	tre-5	G5EG96	0	1	Trehalase	
+G5EGA3	worm	G5EGA3	lem-3	G5EGA3	0	7	Ankyrin repeat and LEM domain-containing protein 1 homolog	
+G5EGA4	worm	G5EGA4	cle-1	G5EGA4	0	5	Fibronectin type-III domain-containing protein	
+G5EGA5	worm	G5EGA5	fat-2	G5EGA5	1	27	Delta(12) fatty acid desaturase fat-2	
+G5EGA6	worm	G5EGA6	dhrs-4	G5EGA6	0	10	Dehydrogenase/reductase SDR family member 4	
+G5EGA7	worm	G5EGA7	ras-2	G5EGA7	9	26	GTP binding protein	
+G5EGA9	worm	G5EGA9	sdf-9	G5EGA9	0	2	Protein sdf-9	
+G5EGB2	worm	G5EGB2	lin-29	G5EGB2	0	5	Zinc finger transcription factor lin-29	
+G5EGB3	worm	G5EGB3	ragc-1	G5EGB3	10	60	Ras-related GTP-binding protein C	
+G5EGB7	worm	G5EGB7	pqn-57	G5EGB7	0	1	Activated in Blocked Unfolded protein response	
+G5EGB9	worm	G5EGB9	abts-2	G5EGB9	0	3	Anion transporter ABTS-2	
+G5EGC1	worm	G5EGC1	CELE_DY3.8	G5EGC1	0	1	SWEET sugar transporter	
+G5EGC7	worm	G5EGC7	hrg-2	G5EGC7	0	1	Cadmium-inducible lysosomal protein CDR-5	
+G5EGC9	worm	G5EGC9	pes-1	G5EGC9	0	10	Forkhead box protein pes-1	
+G5EGD2	worm	G5EGD2	hif-1	G5EGD2	6	111	Hypoxia-inducible factor 1	
+G5EGD5	worm	G5EGD5	skr-12	G5EGD5	9	18	Skp1-related protein	
+G5EGD6	worm	G5EGD6	ipla-3	G5EGD6	1	4	phospholipase A2	
+G5EGD7	worm	G5EGD7	CELE_T08B1.4	G5EGD7	0	1	Fungal lipase-like domain-containing protein	
+G5EGE2	worm	G5EGE2	cog-1	G5EGE2	13	200	COG-1A	
+G5EGE3	worm	G5EGE3	pkn-1	G5EGE3	2	22	protein kinase C	
+G5EGE5	worm	G5EGE5	str-171	G5EGE5	0	27	Serpentine receptor class r-10	
+G5EGE7	worm	G5EGE7	lron-11	G5EGE7	0	2	1D304	
+G5EGE8	worm	G5EGE8	scpr-1	G5EGE8	0	1	S phase cyclin A-associated protein in the endoplasmic retic	
+G5EGE9	worm	G5EGE9	dpy-26	G5EGE9	2	5	Condensin complex subunit dpy-26	
+G5EGF0	worm	G5EGF0	che-2	G5EGF0	9	112	CHE-2 protein	
+G5EGF1	worm	G5EGF1	tmem-184	G5EGF1	0	1	Transmembrane protein 184B	
+G5EGF3	worm	G5EGF3	bgnt-1.3	G5EGF3	0	11	B3GNT1, Beta-1,3-N-acetylGucosamiNylTransferase 1, homolog	
+G5EGF4	worm	G5EGF4	egl-18	G5EGF4	4	49	Putative transcription factor egl-18	
+G5EGF5	worm	G5EGF5	CELE_W06D11.1	G5EGF5	0	1	Uncharacterized protein	
+G5EGF8	worm	G5EGF8	tlp-1	G5EGF8	0	3	Zinc finger protein tlp-1	
+G5EGG0	worm	G5EGG0	uso-1	G5EGG0	5	102	Uso1_p115_head domain-containing protein	
+G5EGG2	worm	G5EGG2	hpr-17	G5EGG2	4	24	Homolog of S. Pombe Rad	
+G5EGG9	worm	G5EGG9	madf-4	G5EGG9	1	36	MADF domain-containing protein	
+G5EGH0	worm	G5EGH0	ser-4	G5EGH0	2	36	G-protein coupled receptors family 1 profile domain-containi	
+G5EGH2	worm	G5EGH2	moc-1	G5EGH2	0	16	MoaB/Mog domain-containing protein	
+G5EGH6	worm	G5EGH6	fat-7	G5EGH6	0	6	Delta(9)-fatty-acid desaturase fat-7	
+G5EGI5	worm	G5EGI5	flr-1	G5EGI5	8	14	FLR-1	
+G5EGI7	worm	G5EGI7	zig-1	G5EGI7	0	3	Zwei Ig domain protein zig-1	
+G5EGI8	worm	G5EGI8	CELE_F46C5.6	G5EGI8	3	20	Serine/threonine-protein phosphatase 4 regulatory subunit 4	
+G5EGJ5	worm	G5EGJ5	ida-1	G5EGJ5	0	3	Receptor-type tyrosine-protein phosphatase-like ida-1	
+G5EGJ9	worm	G5EGJ9	dep-1	G5EGJ9	2	96	Receptor-type tyrosine-protein phosphatase dep-1	
+G5EGK3	worm	G5EGK3	CELE_H12D21.2	G5EGK3	0	2	Secreted protein	
+G5EGK5	worm	G5EGK5	cam-1	G5EGK5	11	51	Tyrosine-protein kinase receptor cam-1 (EC 2.7.10.1)	
+G5EGK8	worm	G5EGK8	let-92	G5EGK8	7	77	Serine/threonine-protein phosphatase 2A catalytic subunit	
+G5EGL2	worm	G5EGL2	CELE_T28D6.6	G5EGL2	3	56	Developmentally-regulated GTP-binding protein 1	
+G5EGL5	worm	G5EGL5	pha-1	G5EGL5	0	1	F-box domain-containing protein	
+G5EGL6	worm	G5EGL6	CELE_F45E10.2	G5EGL6	0	6	Major facilitator superfamily (MFS) profile domain-containin	
+G5EGL9	worm	G5EGL9	aff-1	G5EGL9	0	2	Cell fusion protein aff-1	
+G5EGM1	worm	G5EGM1	zmp-1	G5EGM1	0	6	Matrix metalloproteinase-A	
+G5EGM2	worm	G5EGM2	ncs-4	G5EGM2	1	14	EF-hand domain-containing protein	
+G5EGM3	worm	G5EGM3	taf-1	G5EGM3	3	15	Transcription initiation factor TFIID subunit 1 (TBP-associa	
+G5EGM4	worm	G5EGM4	CELE_M03B6.3	G5EGM4	0	2	Uncharacterized protein	
+G5EGM7	worm	G5EGM7	pes-5	G5EGM7	0	1	Patterned Expression Site	
+G5EGN2	worm	G5EGN2	fat-6	G5EGN2	1	15	Delta(9)-fatty-acid desaturase fat-6	
+G5EGN3	worm	G5EGN3	elt-6	G5EGN3	2	87	Transcription factor elt-6	
+G5EGN6	worm	G5EGN6	nlp-15	G5EGN6	0	1	Neuropeptide-Like Protein	
+G5EGN7	worm	G5EGN7	skr-17	G5EGN7	6	18	Skp1-related protein	
+G5EGN9	worm	G5EGN9	inpp-1	G5EGN9	0	9	Inositol polyphosphate-related phosphatase domain-containing	
+G5EGP2	worm	G5EGP2	nhr-73	G5EGP2	1	3	Nuclear receptor domain-containing protein	
+G5EGP4	worm	G5EGP4	vha-6	G5EGP4	10	53	V-type proton ATPase 116 kDa subunit a 3	
+G5EGP8	worm	G5EGP8	cpz-1	G5EGP8	0	65	Cathepsin Z-1	
+G5EGQ2	worm	G5EGQ2	pzf-1	G5EGQ2	0	15	Paired zinc finger protein 1	
+G5EGQ3	worm	G5EGQ3	max-2	G5EGQ3	20	78	Serine/threonine-protein kinase max-2 (EC 2.7.11.1) (Motor a	
+G5EGQ5	worm	G5EGQ5	mbr-1	G5EGQ5	2	79	Mblk-1-related factor 1	
+G5EGQ7	worm	G5EGQ7	zip-6	G5EGQ7	0	20	BZIP domain-containing protein	
+G5EGQ9	worm	G5EGQ9	nmr-1	G5EGQ9	6	35	LITAF domain-containing protein	
+G5EGR1	worm	G5EGR1	lgc-11	G5EGR1	1	1	Acetylcholine receptor (51.1 kD) (Acr-22)	
+G5EGR7	worm	G5EGR7	CELE_Y47C4A.1	G5EGR7	3	9	AAA_lid_3 domain-containing protein	
+G5EGR8	worm	G5EGR8	CELE_W02A11.1	G5EGR8	1	5	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	
+G5EGS1	worm	G5EGS1	fbxa-213	G5EGS1	1	1	F-box domain-containing protein	
+G5EGS4	worm	G5EGS4	kel-1	G5EGS4	1	5	BTB domain-containing protein	
+G5EGS7	worm	G5EGS7	sel-7	G5EGS7	0	8	Putative transcription factor sel-7	
+G5EGS8	worm	G5EGS8	syp-1	G5EGS8	1	4	Synaptonemal complex protein SYP-1	
+G5EGS9	worm	G5EGS9	CELE_W02B12.11	G5EGS9	0	1	Beta-1,4-N-acetylgalactosaminyltransferase	
+G5EGT1	worm	G5EGT1	paf-1	G5EGT1	0	2	1-alkyl-2-acetylglycerophosphocholine esterase	
+G5EGT4	worm	G5EGT4	clh-5	G5EGT4	0	5	Chloride channel protein	
+G5EGT6	worm	G5EGT6	cyp-31a2	G5EGT6	0	5	CYtochrome P450 family	
+G5EGT7	worm	G5EGT7	iffb-1	G5EGT7	2	199	Eukaryotic translation initiation factor 5B	
+G5EGT9	worm	G5EGT9	lin-18	G5EGT9	6	41	Inactive tyrosine-protein kinase RYK (Abnormal cell lineage 	
+G5EGU1	worm	G5EGU1	egl-30	G5EGU1	36	94	Guanine nucleotide-binding protein subunit alpha	
+G5EGU2	worm	G5EGU2	eak-6	G5EGU2	0	2	Tyrosine-protein phosphatase non-receptor type eak-6	
+G5EGU4	worm	G5EGU4	gpn-1	G5EGU4	3	18	GlyPicaN	
+G5EGU7	worm	G5EGU7	C29A12.6	G5EGU7	0	1	VWFA domain-containing protein	
+G5EGU9	worm	G5EGU9	szy-20	G5EGU9	0	9	Suppressor of zyg-1 protein 20	
+G5ELN9	virus	G5ELN9	HpV126gp1	G5ELN9	3	7	Protein E6	
+G5ELP0	virus	G5ELP0	HpV126gp2	G5ELP0	2	7	Protein E7	
+G5ELP1	virus	G5ELP1	HpV126gp3	G5ELP1	2	7	Replication protein E1	
+G5ELP2	virus	G5ELP2	HpV126gp4	G5ELP2	3	7	Regulatory protein E2	
+G5ELP3	virus	G5ELP3	HpV126gp5	G5ELP3	1	7	G5ELP3_9PAPI	
+G5ELP4	virus	G5ELP4	HpV126gp6	G5ELP4	1	7	Minor capsid protein L2	
+G5ELP5	virus	G5ELP5	HpV126gp7	G5ELP5	0	7	Major capsid protein L1	

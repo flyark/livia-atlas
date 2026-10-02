@@ -1,18 +1,960 @@
-CHA1	candida-albicans-237561	A0A1D8PGA8	CHA1	A0A1D8PGA8	0	3	L-serine ammonia-lyase
-CHAC1	mus-musculus	Q8R3J5	Chac1	Q8R3J5	0	7	Glutathione-specific gamma-glutamylcyclotransferase 1
-CHAC1	rattus-norvegicus	B3STU3	Chac1	B3STU3	0	7	Glutathione-specific gamma-glutamylcyclotransferase 1
-CHAC2	mus-musculus	Q9CQG1	Chac2	Q9CQG1	0	1	Putative glutathione-specific gamma-glutamylcyclotransferase 2
-CHAC2	rattus-norvegicus	Q641Z5	Chac2	Q641Z5	0	1	Putative glutathione-specific gamma-glutamylcyclotransferase 2
-CHAD	mus-musculus	O55226	Chad	O55226	0	11	Chondroadherin
-CHAD	rattus-norvegicus	O70210	Chad	O70210	1	12	Chondroadherin
-CHADL	mus-musculus	E9Q7T7	Chadl	E9Q7T7	0	2	Chondroadherin-like protein
-CHADL	rattus-norvegicus	F1LVK3	Chadl	F1LVK3	0	2	Chondroadherin-like protein
-CHAF1A	mus-musculus	Q9QWF0	Chaf1a	Q9QWF0	27	138	Chromatin assembly factor 1 subunit A
-CHAF1A	rattus-norvegicus	M0R3S3	Chaf1a	M0R3S3	6	21	Chromatin assembly factor 1 subunit A
-CHAF1B	mus-musculus	Q9D0N7	Chaf1b	Q9D0N7	3	15	Chromatin assembly factor 1 subunit B
-CHAF1B	rattus-norvegicus	Q4V8B4	Chaf1b	Q4V8B4	2	16	Chromatin assembly factor 1 subunit B
-CHAMP1	mus-musculus	Q8K327	Champ1	Q8K327	0	9	Chromosome alignment-maintaining phosphoprotein 1
-CHAMP1	rattus-norvegicus	A6IWF8	Champ1	A6IWF8	1	2	Chromosome alignment-maintaining phosphoprotein 1
-CHARK	oryza-sativa-subsp-japonica	Q2QRN7	CHARK	Q2QRN7	4	22	Probable kinase CHARK
-CHAT	mus-musculus	Q03059	Chat	Q03059	0	3	Choline O-acetyltransferase
-CHAT	rattus-norvegicus	P32738	Chat	P32738	0	2	Choline O-acetyltransferase
+CHA	human	Q9UL49	TCFL5	Q9UL49	4	22		
+CHA-1	worm	P32756	cha-1	P32756	0	1	Choline O-acetyltransferase	
+CHA1	candida-albicans-237561	A0A1D8PGA8	CHA1	A0A1D8PGA8	0	3	L-serine ammonia-lyase	
+CHA1	yeast	P25379	CHA1	P25379	1	24	Catabolic L-serine/threonine dehydratase	
+CHA4	yeast	P43634	CHA4	P43634	1	18	Activatory protein CHA4	
+CHAC	human	Q96RL7	VPS13A	Q96RL7	5	69		
+CHAC1	human	Q9BUX1	CHAC1	Q9BUX1	21	82	Glutathione-specific gamma-glutamylcyclotransferase 1 (Gamma	
+CHAC1	mus-musculus	Q8R3J5	Chac1	Q8R3J5	0	7	Glutathione-specific gamma-glutamylcyclotransferase 1	
+CHAC1	rattus-norvegicus	B3STU3	Chac1	B3STU3	0	7	Glutathione-specific gamma-glutamylcyclotransferase 1	
+CHAC1	zebrafish	Q5SPB6	chac1	Q5SPB6	0	8	Glutathione-specific gamma-glutamylcyclotransferase 1	
+CHAC1_HUMAN	human	Q9BUX1	CHAC1	Q9BUX1	21	82		
+CHAC2	human	Q8WUX2	CHAC2	Q8WUX2	12	79	Glutathione-specific gamma-glutamylcyclotransferase 2 (Gamma	
+CHAC2	mus-musculus	Q9CQG1	Chac2	Q9CQG1	0	1	Putative glutathione-specific gamma-glutamylcyclotransferase	
+CHAC2	rattus-norvegicus	Q641Z5	Chac2	Q641Z5	0	1	Putative glutathione-specific gamma-glutamylcyclotransferase	
+CHAC2	zebrafish	Q4KMJ1	chac2	Q4KMJ1	0	2	Putative glutathione-specific gamma-glutamylcyclotransferase	
+CHAC2_HUMAN	human	Q8WUX2	CHAC2	Q8WUX2	12	79		
+CHAD	human	O15335	CHAD	O15335	13	119	Chondroadherin (Cartilage leucine-rich protein)	
+CHAD	mus-musculus	O55226	Chad	O55226	0	11	Chondroadherin	
+CHAD	rattus-norvegicus	O70210	Chad	O70210	1	12	Chondroadherin	
+CHADL	human	Q6NUI6	CHADL	Q6NUI6	8	114	Chondroadherin-like protein	
+CHADL	mus-musculus	E9Q7T7	Chadl	E9Q7T7	0	2	Chondroadherin-like protein	
+CHADL	rattus-norvegicus	F1LVK3	Chadl	F1LVK3	0	2	Chondroadherin-like protein	
+CHADLA	zebrafish	E7EXH9	chadla	E7EXH9	2	23	Chondroadherin-like protein	
+CHADLB	zebrafish	F1Q881	chadlb	F1Q881	0	23	Chondroadherin-like protein	
+CHADL_HUMAN	human	Q6NUI6	CHADL	Q6NUI6	8	114		
+CHAD_HUMAN	human	O15335	CHAD	O15335	13	119		
+CHAF-1	worm	Q9U380	chaf-1	Q9U380	3	15	Chromatin assembly factor 1 subunit A dimerization domain-co	
+CHAF-2	worm	Q95XL8	chaf-2	Q95XL8	4	8	WD_REPEATS_REGION domain-containing protein	
+CHAF1A	human	Q13111	CHAF1A	Q13111	99	474	Chromatin assembly factor 1 subunit A (CAF-1 subunit A) (Chr	
+CHAF1A	mus-musculus	Q9QWF0	Chaf1a	Q9QWF0	27	138	Chromatin assembly factor 1 subunit A	
+CHAF1A	rattus-norvegicus	M0R3S3	Chaf1a	M0R3S3	6	21	Chromatin assembly factor 1 subunit A	
+CHAF1A	zebrafish	A0JMK9	chaf1a	A0JMK9	4	24	Chromatin assembly factor 1 subunit A	
+CHAF1B	human	Q13112	CHAF1B	Q13112	53	323	Chromatin assembly factor 1 subunit B (CAF-1 subunit B) (Chr	
+CHAF1B	mus-musculus	Q9D0N7	Chaf1b	Q9D0N7	3	15	Chromatin assembly factor 1 subunit B	
+CHAF1B	rattus-norvegicus	Q4V8B4	Chaf1b	Q4V8B4	2	16	Chromatin assembly factor 1 subunit B	
+CHAF1B	zebrafish	E7EYR2	chaf1b	E7EYR2	3	19	Chromatin assembly factor 1 subunit B	
+CHAI	human	P00451	F8	P00451	2	17	Coagulation factor VIII (Antihemophilic factor) (AHF) (Proco	w
+CHAIN-1	zebrafish	A0A8N7UZM3	cmlc1	A0A8N7UZM3	4	43	Cardiac myosin light chain-1	w
+CHAIN-AS	human	Q5TKA1	LIN9	Q5TKA1	113	722	Protein lin-9 homolog (HuLin-9) (hLin-9) (Beta subunit-assoc	w
+CHAIN-ASSOCIATED	fly	FBgn0040340	TRAM	Q9W5C2	3	11	Translocating chain-associated membrane protein	w
+CHAIN-ASSOCIATED	human	Q15035	TRAM2	Q15035	12	50	Translocating chain-associated membrane protein 2	w
+CHAIN-ASSOCIATED	human	Q15629	TRAM1	Q15629	10	78	Translocating chain-associated membrane protein 1 (Protein T	w
+CHAIN-ASSOCIATED	human	Q8N609	TRAM1L1	Q8N609	8	51	Translocating chain-associated membrane protein 1-like 1	w
+CHAIN-ASSOCIATED	worm	Q9XXK7	tram-1	Q9XXK7	0	1	Translocating chain-associated membrane protein	w
+CHAIN-INTERACTING	zebrafish	A0A8M3B802	atcayb	A0A8M3B802	1	25	ATCAY kinesin light chain-interacting caytaxin b	w
+CHAIN-LIKE	fly	FBgn0026059	Mhcl	Q8INC3	2	16	Myosin heavy chain-like, isoform B	w
+CHAIN-LIKE	human	A6NHL2	TUBAL3	A6NHL2	41	419	Tubulin alpha chain-like 3 (EC 3.6.5.-)	w
+CHAIN-LIKE	human	Q9NY65	TUBA8	Q9NY65	144	1280	Tubulin alpha-8 chain (EC 3.6.5.-) (Alpha-tubulin 8) (Tubuli	w
+CHAIN-LIKE	virus	O41973	GAMMAHV.M10c	O41973	0	79	Collagen alpha-1(I) chain-like	w
+CHAIN-LIKE	worm	Q965I8	CELE_T25D3.3	Q965I8	1	14	Tryptophan synthase beta chain-like PALP domain-containing p	w
+CHAIN-RELATED	human	Q96QC4	MICA	Q96QC4	3	52	MHC class I chain-related protein A	w
+CHAINS	human	Q9NRD1	FBXO6	Q9NRD1	108	766	F-box only protein 6 (F-box protein that recognizes sugar ch	w
+CHAINS	yeast	Q08003	RFU1	Q08003	5	48	Regulator of free ubiquitin chains 1	w
+CHAK1	human	Q96QT4	TRPM7	Q96QT4	39	410		
+CHAK2	human	Q9BX84	TRPM6	Q9BX84	17	169		
+CHAMEAU	fly	FBgn0036470	EAChm	Q9VUK1	50	248	Enhancer of acetyltransferase chameau (RE10167p)	w
+CHAMP	human	Q96JM3	CHAMP1	Q96JM3	26	169		
+CHAMP1	human	Q96JM3	CHAMP1	Q96JM3	26	169	Chromosome alignment-maintaining phosphoprotein 1 (Zinc fing	
+CHAMP1	mus-musculus	Q8K327	Champ1	Q8K327	0	9	Chromosome alignment-maintaining phosphoprotein 1	
+CHAMP1	rattus-norvegicus	A6IWF8	Champ1	A6IWF8	1	2	Chromosome alignment-maintaining phosphoprotein 1	
+CHAN	human	O94759	TRPM2	O94759	11	26	Transient receptor potential cation channel subfamily M memb	w
+CHAN	human	Q13698	CACNA1S	Q13698	4	37	Voltage-dependent L-type calcium channel subunit alpha-1S (C	w
+CHAN	worm	A0A2C9C387	CELE_M03F8.6	A0A2C9C387	0	2	Neur_chan_LBD domain-containing protein	w
+CHAN	worm	G5EE87	lgc-31	G5EE87	1	1	Neur_chan_memb domain-containing protein	w
+CHAN	worm	O16426	lgc-1	O16426	1	2	Neur_chan_LBD domain-containing protein	w
+CHAN	worm	V6CJ96	lgc-10	V6CJ96	1	1	Neur_chan_LBD domain-containing protein	w
+CHANN	human	P54289	CACNA2D1	P54289	6	129	Voltage-dependent calcium channel subunit alpha-2/delta-1 (V	w
+CHANN	human	Q13936	CACNA1C	Q13936	11	218	Voltage-dependent L-type calcium channel subunit alpha-1C (C	w
+CHANN	human	Q7Z3S7	CACNA2D4	Q7Z3S7	2	41	Voltage-dependent calcium channel subunit alpha-2/delta-4 (V	w
+CHANN	human	Q8IZS8	CACNA2D3	Q8IZS8	3	53	Voltage-dependent calcium channel subunit alpha-2/delta-3 (V	w
+CHANN	human	Q9H427	KCNK15	Q9H427	51	89	Potassium channel subfamily K member 15 (Acid-sensitive pota	w
+CHANN	human	Q9NY47	CACNA2D2	Q9NY47	10	113	Voltage-dependent calcium channel subunit alpha-2/delta-2 (V	w
+CHANNE	human	O14649	KCNK3	O14649	55	113	Potassium channel subfamily K member 3 (Acid-sensitive potas	w
+CHANNE	human	Q9NPC2	KCNK9	Q9NPC2	64	137	Potassium channel subfamily K member 9 (Acid-sensitive potas	w
+CHANNEL	fly	FBgn0001991	Ca-alpha1D	Q24270	1	8	Ca[2+]-channel protein alpha[[1]] subunit D	w
+CHANNEL	fly	FBgn0003011	ort	Q9VDU9	7	13	Histamine-gated chloride channel alpha1 subunit (Histamine-g	w
+CHANNEL	fly	FBgn0003353	sei	Q7JPB9	1	13	GH12235p (Putative potassium channel subunit homolog) (Seizu	w
+CHANNEL	fly	FBgn0003429	slo	A0A0B4KHT2	1	22	BK channel	w
+CHANNEL	fly	FBgn0004363	porin	Q94920	3	196	Voltage-dependent anion-selective channel (DmVDAC) (Porin)	w
+CHANNEL	fly	FBgn0005564	Shal	P17971	10	138	Potassium voltage-gated channel protein Shal (Shaker cognate	w
+CHANNEL	fly	FBgn0011589	Elk	A1ZB14	0	3	Eag-like K[+] channel, isoform A	w
+CHANNEL	fly	FBgn0017561	Ork1	X2JJC8	8	14	Open rectifier K[+] channel 1, isoform C	w
+CHANNEL	fly	FBgn0020258	ppk	Q7KT94	5	12	Amiloride-sensitive Na+ channel (FI02125p) (Pickpocket)	w
+CHANNEL	fly	FBgn0029761	SK	X2JDR8	1	2	Small conductance calcium-activated potassium channel, isofo	w
+CHANNEL	fly	FBgn0030529	Clic	Q9VY78	21	163	Chloride intracellular channel Clic	w
+CHANNEL	fly	FBgn0032593	Trpgamma	B7YZW4	3	77	Transient receptor potential cation channel gamma, isoform D	w
+CHANNEL	fly	FBgn0032706	Irk3	B7YZX2	2	11	Inwardly rectifying potassium channel 3, isoform D	w
+CHANNEL	fly	FBgn0032746	CG10470	Q9VJ11	1	84	Calcium load-activated calcium channel (CLAC channel)	w
+CHANNEL	fly	FBgn0033494	KCNQ	A1Z856	17	152	KCNQ potassium channel, isoform F	w
+CHANNEL	fly	FBgn0033755	ClC-b	Q7JZ25	1	10	Chloride channel protein	w
+CHANNEL	fly	FBgn0034636	twz	D5SHR0	1	26	BTB/POZ domain-containing protein Tiwaz (Potassium channel t	w
+CHANNEL	fly	FBgn0035113	pyx	Q9W0T5	2	6	Transient receptor potential channel pyrexia	w
+CHANNEL	fly	FBgn0035934	TrpA1	G8IQ59	2	36	TRPA1 isoform D (Transient receptor potential cation channel	w
+CHANNEL	fly	FBgn0036566	ClC-c	Q9VUY1	3	11	Chloride channel protein	w
+CHANNEL	fly	FBgn0036727	SecCl	Q9VVH4	9	15	IP12572p (IP12772p) (Secretory chloride channel, isoform A) 	w
+CHANNEL	fly	FBgn0037690	Task7	Q9VHE0	7	12	IP11374p (TWIK-related acid-sensitive K[+] channel 7)	w
+CHANNEL	fly	FBgn0037950	HisCl1	Q9VGI0	7	13	Histamine-gated chloride channel subunit 1	w
+CHANNEL	fly	FBgn0038165	Task6	Q9VFS9	7	13	Acid-sensitive two pore domain K+ channel dTASK-6 (TWIK-rela	w
+CHANNEL	fly	FBgn0038621	CG10864	Q9VE68	7	9	Potassium channel domain-containing protein	w
+CHANNEL	fly	FBgn0039081	Irk2	A0A0B4LHI9	2	34	Inwardly rectifying potassium channel 2, isoform D	w
+CHANNEL	fly	FBgn0039840	pHCl-2	Q9V9Y4	9	88	pH-sensitive chloride channel 2 (Ligand-gated chloride chann	w
+CHANNEL	fly	FBgn0051116	ClC-a	Q9VGH7	3	20	Chloride channel protein 2 (ClC-2) (DmClC-2) (Chloride chann	w
+CHANNEL	fly	FBgn0051163	SKIP	A0A0B4KHV7	5	11	Shal K[+] channel interacting protein, isoform I	w
+CHANNEL	fly	FBgn0060296	pain	Q9W0Y6	0	6	Transient receptor potential cation channel protein painless	w
+CHANNEL	fly	FBgn0069354	Porin2	Q9VKP2	2	49	GH26960p (Porin2, isoform A) (Porin2, isoform B) (Voltage-de	w
+CHANNEL	fly	FBgn0085434	NaCP60E	A0A0B4KFH8	0	1	Sodium channel protein	w
+CHANNEL	fly	FBgn0260454	CG17139	Q9VKP3	2	49	Voltage-dependent anion-selective channel	w
+CHANNEL	fly	FBgn0261361	CG42638	Q9VW35	0	3	SD02261p (Transient receptor potential cation channel, mucol	w
+CHANNEL	fly	FBgn0261612	CngA	A0A0B4JCU4	4	33	Cyclic nucleotide-gated ion channel subunit A, isoform B	w
+CHANNEL	fly	FBgn0261722	fwe	Q95T12	2	73	Calcium channel flower (3L5)	w
+CHANNEL	fly	FBgn0261999	Ca-Ma2d	Q8IP22	82	2362	Ca[2+] channel Muscle-specific alpha2/delta subunit, isoform	w
+CHANNEL	fly	FBgn0262516	Trpml	Q9VW35	0	20	SD02261p (Transient receptor potential cation channel, mucol	w
+CHANNEL	fly	FBgn0262685	CG43155	Q9VYY5	7	10	Potassium channel domain-containing protein	w
+CHANNEL	fly	FBgn0263397	Ih	A1Z9N7	1	8	I[[h]] channel, isoform E	w
+CHANNEL	fly	FBgn0264386	Ca-alpha1T	M9PGH9	0	2	Ca[2+]-channel protein alpha[[1]] subunit T, isoform F	w
+CHANNEL	fly	FBgn0264908	pHCl-1	M9PI70	8	13	PH-sensitive chloride channel 1, isoform N	w
+CHANNEL	fly	FBgn0264953	Piezo	A0A0S0WGQ9	0	1	Piezo-type mechanosensitive ion channel component	w
+CHANNEL	fly	FBgn0265042	Irk1	A0A0B4KH86	6	39	Inwardly rectifying potassium channel 1, isoform F (Inwardly	w
+CHANNEL	fly	FBgn0265194	Trpm	A8DYE2	38	722	Transient receptor potential cation channel trpm (Transient 	w
+CHANNEL	fly	FBgn0266346	CngB	Q9W2D5	4	25	Cyclic nucleotide-gated ion channel subunit B, isoform A (GH	w
+CHANNEL	fly	FBgn0267430	Pzl	A0A126GUQ2	0	0	Piezo-type mechanosensitive ion channel component	w
+CHANNEL	fly	FBgn0285944	para	M9PJP5	2	35	Sodium channel protein	w
+CHANNEL	human	A0A1W2PPA2	KCNH1	A0A1W2PPA2	0	8	Potassium voltage-gated channel subfamily H member 1	w
+CHANNEL	human	A0A1W2PRG6	KCNH1	A0A1W2PRG6	0	8	Potassium voltage-gated channel subfamily H member 1	w
+CHANNEL	human	A8K7I4	CLCA1	A8K7I4	0	14	Calcium-activated chloride channel regulator 1 (EC 3.4.-.-) 	w
+CHANNEL	human	A8MYU2	KCNU1	A8MYU2	22	53	Potassium channel subfamily U member 1 (Calcium-activated po	w
+CHANNEL	human	B1AL88	NALF1	B1AL88	1	18	NALCN channel auxiliary factor 1 (Transmembrane protein FAM1	w
+CHANNEL	human	B7U540	KCNJ18	B7U540	33	92	Inward rectifier potassium channel 18 (Inward rectifier K(+)	w
+CHANNEL	human	E9PQX1	CATSPERH	E9PQX1	12	68	Cation channel sperm-associated auxiliary subunit eta (Catio	w
+CHANNEL	human	O00180	KCNK1	O00180	28	154	Potassium channel subfamily K member 1 (Inward rectifying po	w
+CHANNEL	human	O00299	CLIC1	O00299	49	403	Chloride intracellular channel protein 1 (Chloride channel A	w
+CHANNEL	human	O00305	CACNB4	O00305	18	124	Voltage-dependent L-type calcium channel subunit beta-4 (CAB	w
+CHANNEL	human	O00555	CACNA1A	O00555	16	364	Voltage-dependent P/Q-type calcium channel subunit alpha-1A 	w
+CHANNEL	human	O14649	KCNK3	O14649	55	113	Potassium channel subfamily K member 3 (Acid-sensitive potas	w
+CHANNEL	human	O15247	CLIC2	O15247	13	108	Chloride intracellular channel protein 2 (Glutaredoxin-like 	w
+CHANNEL	human	O15554	KCNN4	O15554	52	425	Intermediate conductance calcium-activated potassium channel	w
+CHANNEL	human	O43315	AQP9	O43315	11	172	Aquaporin-9 (AQP-9) (Aquaglyceroporin-9) (Small solute chann	w
+CHANNEL	human	O43448	KCNAB3	O43448	13	118	Voltage-gated potassium channel subunit beta-3 (EC 1.1.1.-) 	w
+CHANNEL	human	O43497	CACNA1G	O43497	8	209	Voltage-dependent T-type calcium channel subunit alpha-1G (C	w
+CHANNEL	human	O43525	KCNQ3	O43525	57	244	Potassium voltage-gated channel subfamily KQT member 3 (KQT-	w
+CHANNEL	human	O43526	KCNQ2	O43526	58	279	Potassium voltage-gated channel subfamily KQT member 2 (KQT-	w
+CHANNEL	human	O60359	CACNG3	O60359	22	176	Voltage-dependent calcium channel gamma-3 subunit (Neuronal 	w
+CHANNEL	human	O60741	HCN1	O60741	37	172	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+CHANNEL	human	O60840	CACNA1F	O60840	2	29	Voltage-dependent L-type calcium channel subunit alpha-1F (V	w
+CHANNEL	human	O60928	KCNJ13	O60928	31	87	Inward rectifier potassium channel 13 (Inward rectifier K(+)	w
+CHANNEL	human	O60939	SCN2B	O60939	59	396	Sodium channel regulatory subunit beta-2	w
+CHANNEL	human	O75762	TRPA1	O75762	7	89	Transient receptor potential cation channel subfamily A memb	w
+CHANNEL	human	O75949	NALF2	O75949	2	12	NALCN channel auxiliary factor 2 (Protein TED) (Transmembran	w
+CHANNEL	human	O94759	TRPM2	O94759	11	26	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	O94886	TMEM63A	O94886	10	158	Mechanosensitive cation channel TMEM63A (Transmembrane prote	w
+CHANNEL	human	O95069	KCNK2	O95069	18	49	Potassium channel subfamily K member 2 (Outward rectifying p	w
+CHANNEL	human	O95180	CACNA1H	O95180	1	86	Voltage-dependent T-type calcium channel subunit alpha-1H (L	w
+CHANNEL	human	O95259	KCNH1	O95259	45	229	Voltage-gated delayed rectifier potassium channel KCNH1 (Eth	w
+CHANNEL	human	O95279	KCNK5	O95279	23	86	Potassium channel subfamily K member 5 (Acid-sensitive potas	w
+CHANNEL	human	O95833	CLIC3	O95833	29	141	Chloride intracellular channel protein 3 (Glutaredoxin-like 	w
+CHANNEL	human	P00846	MT-ATP6	P00846	9	129	ATP synthase F(0) complex subunit a (F-ATPase protein 6) (Pr	w
+CHANNEL	human	P13569	CFTR	P13569	41	1221	Cystic fibrosis transmembrane conductance regulator (CFTR) (	w
+CHANNEL	human	P15382	KCNE1	P15382	17	83	Potassium voltage-gated channel subfamily E member 1 (Delaye	w
+CHANNEL	human	P16389	KCNA2	P16389	61	371	Potassium voltage-gated channel subfamily A member 2 (NGK1) 	w
+CHANNEL	human	P17658	KCNA6	P17658	43	175	Potassium voltage-gated channel subfamily A member 6 (Voltag	w
+CHANNEL	human	P21796	VDAC1	P21796	3	564	Non-selective voltage-gated ion channel VDAC1 (Outer mitocho	w
+CHANNEL	human	P22001	KCNA3	P22001	56	247	Potassium voltage-gated channel subfamily A member 3 (HGK5) 	w
+CHANNEL	human	P22459	KCNA4	P22459	56	227	Potassium voltage-gated channel subfamily A member 4 (HPCN2)	w
+CHANNEL	human	P22460	KCNA5	P22460	52	240	Potassium voltage-gated channel subfamily A member 5 (HPCN1)	w
+CHANNEL	human	P29972	AQP1	P29972	13	348	Aquaporin-1 (AQP-1) (Aquaporin-CHIP) (Channel-like integral 	w
+CHANNEL	human	P29973	CNGA1	P29973	15	80	Cyclic nucleotide-gated channel alpha-1 (CNG channel alpha-1	w
+CHANNEL	human	P35498	SCN1A	P35498	7	79	Sodium channel protein type 1 subunit alpha (Sodium channel 	w
+CHANNEL	human	P35499	SCN4A	P35499	4	123	Sodium channel protein type 4 subunit alpha (SkM1) (Sodium c	w
+CHANNEL	human	P35523	CLCN1	P35523	7	83	Chloride channel protein 1 (ClC-1) (Chloride channel protein	w
+CHANNEL	human	P37088	SCNN1A	P37088	15	154	Epithelial sodium channel subunit alpha (Alpha-ENaC) (ENaC s	w
+CHANNEL	human	P41181	AQP2	P41181	13	142	Aquaporin-2 (AQP-2) (ADH water channel) (Aquaporin-CD) (AQP-	w
+CHANNEL	human	P42658	DPP6	P42658	5	42	A-type potassium channel modulatory protein DPP6 (DPPX) (Dip	w
+CHANNEL	human	P45880	VDAC2	P45880	8	500	Non-selective voltage-gated ion channel VDAC2 (VDAC-2) (hVDA	w
+CHANNEL	human	P46098	HTR3A	P46098	29	247	5-hydroxytryptamine receptor 3A (5-HT3-A) (5-HT3A) (5-hydrox	w
+CHANNEL	human	P48048	KCNJ1	P48048	27	100	ATP-sensitive inward rectifier potassium channel 1 (ATP-regu	w
+CHANNEL	human	P48050	KCNJ4	P48050	35	179	Inward rectifier potassium channel 4 (HIRK2) (HRK1) (Hippoca	w
+CHANNEL	human	P48051	KCNJ6	P48051	30	212	G protein-activated inward rectifier potassium channel 2 (GI	w
+CHANNEL	human	P48544	KCNJ5	P48544	30	116	G protein-activated inward rectifier potassium channel 4 (GI	w
+CHANNEL	human	P48547	KCNC1	P48547	32	150	Voltage-gated potassium channel KCNC1 (NGK2) (Potassium volt	w
+CHANNEL	human	P48549	KCNJ3	P48549	25	88	G protein-activated inward rectifier potassium channel 1 (GI	w
+CHANNEL	human	P48995	TRPC1	P48995	13	185	Short transient receptor potential channel 1 (TrpC1) (Transi	w
+CHANNEL	human	P51168	SCNN1B	P51168	10	85	Epithelial sodium channel subunit beta (Beta-ENaC) (ENaC sub	w
+CHANNEL	human	P51170	SCNN1G	P51170	11	89	Epithelial sodium channel subunit gamma (ENaC subunit gamma)	w
+CHANNEL	human	P51172	SCNN1D	P51172	11	83	Epithelial sodium channel subunit delta (Delta-ENaC) (ENaCD)	w
+CHANNEL	human	P51787	KCNQ1	P51787	46	233	Potassium voltage-gated channel subfamily KQT member 1 (IKs 	w
+CHANNEL	human	P51788	CLCN2	P51788	9	90	Chloride channel protein 2 (ClC-2)	w
+CHANNEL	human	P51790	CLCN3	P51790	13	133	H(+)/Cl(-) exchange transporter 3 (Chloride channel protein 	w
+CHANNEL	human	P51793	CLCN4	P51793	7	55	H(+)/Cl(-) exchange transporter 4 (Chloride channel protein 	w
+CHANNEL	human	P51795	CLCN5	P51795	12	99	H(+)/Cl(-) exchange transporter 5 (Chloride channel protein 	w
+CHANNEL	human	P51797	CLCN6	P51797	9	82	H(+)/Cl(-) exchange transporter 6 (Chloride channel protein 	w
+CHANNEL	human	P51798	CLCN7	P51798	19	220	H(+)/Cl(-) exchange transporter 7 (Chloride channel 7 alpha 	w
+CHANNEL	human	P51800	CLCNKA	P51800	6	60	Chloride channel protein ClC-Ka (Chloride channel Ka) (ClC-K	w
+CHANNEL	human	P51801	CLCNKB	P51801	6	43	Chloride channel protein ClC-Kb (Chloride channel Kb) (ClC-K	w
+CHANNEL	human	P54105	CLNS1A	P54105	50	206	Methylosome subunit pICln (Chloride channel, nucleotide sens	w
+CHANNEL	human	P54284	CACNB3	P54284	20	141	Voltage-dependent L-type calcium channel subunit beta-3 (CAB	w
+CHANNEL	human	P54289	CACNA2D1	P54289	6	129	Voltage-dependent calcium channel subunit alpha-2/delta-1 (V	w
+CHANNEL	human	P55087	AQP4	P55087	7	36	Aquaporin-4 (AQP-4) (Mercurial-insensitive water channel) (M	w
+CHANNEL	human	P56696	KCNQ4	P56696	48	186	Potassium voltage-gated channel subfamily KQT member 4 (KQT-	w
+CHANNEL	human	P57789	KCNK10	P57789	17	31	Potassium channel subfamily K member 10 (Outward rectifying 	w
+CHANNEL	human	P62955	CACNG7	P62955	37	201	Voltage-dependent calcium channel gamma-7 subunit (Neuronal 	w
+CHANNEL	human	P63252	KCNJ2	P63252	26	105	Inward rectifier potassium channel 2 (Cardiac inward rectifi	w
+CHANNEL	human	P78348	ASIC1	P78348	12	103	Acid-sensing ion channel 1 (ASIC1) (Amiloride-sensitive cati	w
+CHANNEL	human	P78508	KCNJ10	P78508	43	263	ATP-sensitive inward rectifier potassium channel 10 (ATP-dep	w
+CHANNEL	human	Q00975	CACNA1B	Q00975	13	234	Voltage-dependent N-type calcium channel subunit alpha-1B (B	w
+CHANNEL	human	Q01118	SCN7A	Q01118	2	29	Sodium channel protein type 7 subunit alpha (Atypical sodium	w
+CHANNEL	human	Q01668	CACNA1D	Q01668	8	117	Voltage-dependent L-type calcium channel subunit alpha-1D (C	w
+CHANNEL	human	Q02641	CACNB1	Q02641	16	104	Voltage-dependent L-type calcium channel subunit beta-1 (CAB	w
+CHANNEL	human	Q03721	KCNC4	Q03721	56	237	Voltage-gated potassium channel KCNC4 (KSHIIIC) (Potassium v	w
+CHANNEL	human	Q06432	CACNG1	Q06432	11	150	Voltage-dependent calcium channel gamma-1 subunit (Dihydropy	w
+CHANNEL	human	Q07699	SCN1B	Q07699	13	53	Sodium channel regulatory subunit beta-1	w
+CHANNEL	human	Q08289	CACNB2	Q08289	9	83	Voltage-dependent L-type calcium channel subunit beta-2 (CAB	w
+CHANNEL	human	Q09470	KCNA1	Q09470	61	371	Potassium voltage-gated channel subfamily A member 1 (Voltag	w
+CHANNEL	human	Q12791	KCNMA1	Q12791	21	226	Calcium-activated potassium channel subunit alpha-1 (BK chan	w
+CHANNEL	human	Q12809	KCNH2	Q12809	55	270	Voltage-gated inwardly rectifying potassium channel KCNH2 (E	w
+CHANNEL	human	Q13303	KCNAB2	Q13303	7	76	Voltage-gated potassium channel subunit beta-2 (EC 1.1.1.-) 	w
+CHANNEL	human	Q13507	TRPC3	Q13507	11	154	Short transient receptor potential channel 3 (TrpC3) (Transi	w
+CHANNEL	human	Q13698	CACNA1S	Q13698	4	37	Voltage-dependent L-type calcium channel subunit alpha-1S (C	w
+CHANNEL	human	Q13936	CACNA1C	Q13936	11	218	Voltage-dependent L-type calcium channel subunit alpha-1C (C	w
+CHANNEL	human	Q14003	KCNC3	Q14003	47	209	Voltage-gated potassium channel KCNC3 (KSHIIID) (Potassium v	w
+CHANNEL	human	Q14028	CNGB1	Q14028	13	84	Cyclic nucleotide-gated channel beta-1 (CNG channel beta-1) 	w
+CHANNEL	human	Q14500	KCNJ12	Q14500	32	87	ATP-sensitive inward rectifier potassium channel 12 (Inward 	w
+CHANNEL	human	Q14524	SCN5A	Q14524	3	53	Sodium channel protein type 5 subunit alpha (Sodium channel 	w
+CHANNEL	human	Q14571	ITPR2	Q14571	4	102	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 (IP	w
+CHANNEL	human	Q14573	ITPR3	Q14573	3	172	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 (IP	w
+CHANNEL	human	Q14643	ITPR1	Q14643	7	116	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 (IP	w
+CHANNEL	human	Q14654	KCNJ11	Q14654	27	134	ATP-sensitive inward rectifier potassium channel 11 (IKATP) 	w
+CHANNEL	human	Q14681	KCTD2	Q14681	16	214	BTB/POZ domain-containing protein KCTD2 (Potassium channel t	w
+CHANNEL	human	Q14721	KCNB1	Q14721	64	301	Potassium voltage-gated channel subfamily B member 1 (Delaye	w
+CHANNEL	human	Q14722	KCNAB1	Q14722	7	123	Voltage-gated potassium channel subunit beta-1 (EC 1.1.1.-) 	w
+CHANNEL	human	Q14CN2	CLCA4	Q14CN2	0	38	Calcium-activated chloride channel regulator 4 (EC 3.4.-.-) 	w
+CHANNEL	human	Q15842	KCNJ8	Q15842	28	135	ATP-sensitive inward rectifier potassium channel 8 (Inward r	w
+CHANNEL	human	Q15858	SCN9A	Q15858	5	42	Sodium channel protein type 9 subunit alpha (Neuroendocrine 	w
+CHANNEL	human	Q15878	CACNA1E	Q15878	13	220	Voltage-dependent R-type calcium channel subunit alpha-1E (B	w
+CHANNEL	human	Q16280	CNGA2	Q16280	11	74	Cyclic nucleotide-gated channel alpha-2 (CNG channel alpha-2	w
+CHANNEL	human	Q16281	CNGA3	Q16281	14	141	Cyclic nucleotide-gated channel alpha-3 (CNG channel alpha-3	w
+CHANNEL	human	Q16322	KCNA10	Q16322	43	175	Potassium voltage-gated channel subfamily A member 10 (Volta	w
+CHANNEL	human	Q16515	ASIC2	Q16515	8	44	Acid-sensing ion channel 2 (ASIC2) (Amiloride-sensitive cati	w
+CHANNEL	human	Q16558	KCNMB1	Q16558	18	144	Calcium-activated potassium channel subunit beta-1 (BK chann	w
+CHANNEL	human	Q17RG1	KCTD19	Q17RG1	45	431	BTB/POZ domain-containing protein KCTD19 (Potassium channel 	w
+CHANNEL	human	Q2I0M4	LRRC26	Q2I0M4	21	145	Leucine-rich repeat-containing protein 26 (BK channel auxili	w
+CHANNEL	human	Q2WGJ8	CATSPERQ	Q2WGJ8	4	36	Cation channel sperm-associated auxiliary subunit theta (Cat	w
+CHANNEL	human	Q401N2	ZACN	Q401N2	11	118	Ligand-gated cation channel ZACN (Ligand-gated ion channel z	w
+CHANNEL	human	Q4G0X4	KCTD21	Q4G0X4	15	89	BTB/POZ domain-containing protein KCTD21 (KCASH2 protein) (P	w
+CHANNEL	human	Q4KMQ2	ANO6	Q4KMQ2	12	173	Anoctamin-6 (Small-conductance calcium-activated nonselectiv	w
+CHANNEL	human	Q53TS8	CATSPERT	Q53TS8	6	73	Cation channel sperm-associated targeting subunit tau (CatSp	w
+CHANNEL	human	Q5JUK3	KCNT1	Q5JUK3	2	24	Potassium channel subfamily T member 1 (KCa4.1) (KNa1.1) (So	w
+CHANNEL	human	Q5SY80	CATSPERE	Q5SY80	7	79	Cation channel sperm-associated auxiliary subunit epsilon (C	w
+CHANNEL	human	Q5T3F8	TMEM63B	Q5T3F8	15	202	Mechanosensitive cation channel TMEM63B (Transmembrane prote	w
+CHANNEL	human	Q5VT99	LRRC38	Q5VT99	6	56	Leucine-rich repeat-containing protein 38 (BK channel auxili	w
+CHANNEL	human	Q68DU8	KCTD16	Q68DU8	4	34	BTB/POZ domain-containing protein KCTD16 (Potassium channel 	w
+CHANNEL	human	Q693B1	KCTD11	Q693B1	9	80	BTB/POZ domain-containing protein KCTD11 (KCASH1 protein) (P	w
+CHANNEL	human	Q6NSJ5	LRRC8E	Q6NSJ5	14	143	Volume-regulated anion channel subunit LRRC8E (Leucine-rich 	w
+CHANNEL	human	Q6P9F7	LRRC8B	Q6P9F7	12	86	Volume-regulated anion channel subunit LRRC8B (Leucine-rich 	w
+CHANNEL	human	Q6PIL6	KCNIP4	Q6PIL6	33	183	Kv channel-interacting protein 4 (KChIP4) (A-type potassium 	w
+CHANNEL	human	Q6PIU1	KCNV1	Q6PIU1	46	196	Potassium voltage-gated channel subfamily V member 1 (Neuron	w
+CHANNEL	human	Q6UVM3	KCNT2	Q6UVM3	3	38	Potassium channel subfamily T member 2 (KNa1.2) (Sequence li	w
+CHANNEL	human	Q6ZRH7	CATSPERG	Q6ZRH7	9	39	Cation channel sperm-associated auxiliary subunit gamma	w
+CHANNEL	human	Q6ZSA7	LRRC55	Q6ZSA7	8	100	Leucine-rich repeat-containing protein 55 (BK channel auxili	w
+CHANNEL	human	Q719H9	KCTD1	Q719H9	5	63	BTB/POZ domain-containing protein KCTD1 (Potassium channel t	w
+CHANNEL	human	Q7L1W4	LRRC8D	Q7L1W4	10	78	Volume-regulated anion channel subunit LRRC8D (Leucine-rich 	w
+CHANNEL	human	Q7RTM1	OTOP1	Q7RTM1	4	30	Proton channel OTOP1 (Otopetrin-1) (hOtop1)	w
+CHANNEL	human	Q7RTS5	OTOP3	Q7RTS5	4	52	Proton channel OTOP3 (Otopetrin-3)	w
+CHANNEL	human	Q7RTS6	OTOP2	Q7RTS6	3	33	Proton channel OTOP2 (Otopetrin-2)	w
+CHANNEL	human	Q7RTX7	CATSPER4	Q7RTX7	18	79	Cation channel sperm-associated protein 4 (CatSper4)	w
+CHANNEL	human	Q7Z2W7	TRPM8	Q7Z2W7	22	192	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	Q7Z3S7	CACNA2D4	Q7Z3S7	2	41	Voltage-dependent calcium channel subunit alpha-2/delta-4 (V	w
+CHANNEL	human	Q7Z404	TMC4	Q7Z404	9	66	Voltage-gated chloride channel TMC4 (Transmembrane channel-l	w
+CHANNEL	human	Q7Z418	KCNK18	Q7Z418	23	85	Potassium channel subfamily K member 18 (TWIK-related indivi	w
+CHANNEL	human	Q7Z4N2	TRPM1	Q7Z4N2	25	159	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	Q7Z5Y7	KCTD20	Q7Z5Y7	8	41	BTB/POZ domain-containing protein KCTD20 (Potassium channel 	w
+CHANNEL	human	Q86W47	KCNMB4	Q86W47	14	142	Calcium-activated potassium channel subunit beta-4 (BK chann	w
+CHANNEL	human	Q86WC4	OSTM1	Q86WC4	8	132	Osteopetrosis-associated transmembrane protein 1 (Chloride c	w
+CHANNEL	human	Q86XM0	CATSPERD	Q86XM0	10	95	Cation channel sperm-associated auxiliary subunit delta (Cat	w
+CHANNEL	human	Q86XQ3	CATSPER3	Q86XQ3	11	85	Cation channel sperm-associated protein 3 (CatSper3) (Ca(v)-	w
+CHANNEL	human	Q8IV77	CNGA4	Q8IV77	27	133	Cyclic nucleotide-gated channel alpha-4 (CNG channel alpha-4	w
+CHANNEL	human	Q8IWT1	SCN4B	Q8IWT1	27	251	Sodium channel regulatory subunit beta-4	w
+CHANNEL	human	Q8IWT6	LRRC8A	Q8IWT6	14	167	Volume-regulated anion channel subunit LRRC8A (Leucine-rich 	w
+CHANNEL	human	Q8IZF0	NALCN	Q8IZF0	1	109	Sodium leak channel NALCN (CanIon) (Sodium leak channel non-	w
+CHANNEL	human	Q8IZK6	MCOLN2	Q8IZK6	6	82	Mucolipin-2 (Transient receptor potential channel mucolipin 	w
+CHANNEL	human	Q8IZS8	CACNA2D3	Q8IZS8	3	53	Voltage-dependent calcium channel subunit alpha-2/delta-3 (V	w
+CHANNEL	human	Q8N350	CBARP	Q8N350	19	79	Voltage-dependent calcium channel beta subunit-associated re	w
+CHANNEL	human	Q8N4Y2	CRACR2B	Q8N4Y2	15	79	EF-hand calcium-binding domain-containing protein 4A (Calciu	w
+CHANNEL	human	Q8N5I3	KCNRG	Q8N5I3	9	155	Potassium channel regulatory protein (Potassium channel regu	w
+CHANNEL	human	Q8N7C0	LRRC52	Q8N7C0	23	112	Leucine-rich repeat-containing protein 52 (BK channel auxili	w
+CHANNEL	human	Q8NBN3	TMEM87A	Q8NBN3	15	218	Golgi-pH regulating cation channel (Elkin1)	w
+CHANNEL	human	Q8NC69	KCTD6	Q8NC69	16	112	BTB/POZ domain-containing protein KCTD6 (KCASH3 protein) (Po	w
+CHANNEL	human	Q8NCM2	KCNH5	Q8NCM2	40	195	Voltage-gated delayed rectifier potassium channel KCNH5 (Eth	w
+CHANNEL	human	Q8NEC5	CATSPER1	Q8NEC5	13	176	Cation channel sperm-associated protein 1 (CatSper1) (hCatSp	w
+CHANNEL	human	Q8NER1	TRPV1	Q8NER1	21	255	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	human	Q8NET8	TRPV3	Q8NET8	16	119	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	human	Q8NHX9	TPCN2	Q8NHX9	3	142	Two pore channel protein 2 (Two pore calcium channel protein	w
+CHANNEL	human	Q8TAE7	KCNG3	Q8TAE7	61	186	Voltage-gated potassium channel regulatory subunit KCNG3 (Po	w
+CHANNEL	human	Q8TD43	TRPM4	Q8TD43	15	171	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	Q8TDD5	MCOLN3	Q8TDD5	8	107	Mucolipin-3 (Transient receptor potential channel mucolipin 	w
+CHANNEL	human	Q8TDN1	KCNG4	Q8TDN1	58	226	Voltage-gated potassium channel regulatory subunit KCNG4 (Po	w
+CHANNEL	human	Q8TDN2	KCNV2	Q8TDN2	45	217	Potassium voltage-gated channel subfamily V member 2 (Voltag	w
+CHANNEL	human	Q8TDW0	LRRC8C	Q8TDW0	11	73	Volume-regulated anion channel subunit LRRC8C (Factor for ad	w
+CHANNEL	human	Q8TEL6	TRPC4AP	Q8TEL6	26	233	Short transient receptor potential channel 4-associated prot	w
+CHANNEL	human	Q8WWG9	KCNE4	Q8WWG9	19	103	Potassium voltage-gated channel subfamily E member 4 (MinK-r	w
+CHANNEL	human	Q8WXS4	TMEM37	Q8WXS4	8	66	Voltage-dependent calcium channel gamma-like subunit (Neuron	w
+CHANNEL	human	Q8WXS5	CACNG8	Q8WXS5	15	132	Voltage-dependent calcium channel gamma-8 subunit (Neuronal 	w
+CHANNEL	human	Q92508	PIEZO1	Q92508	1	55	Piezo-type mechanosensitive ion channel component 1 (Membran	w
+CHANNEL	human	Q92806	KCNJ9	Q92806	27	171	G protein-activated inward rectifier potassium channel 3 (GI	w
+CHANNEL	human	Q92952	KCNN1	Q92952	37	119	Small conductance calcium-activated potassium channel protei	w
+CHANNEL	human	Q92953	KCNB2	Q92953	68	300	Potassium voltage-gated channel subfamily B member 2 (Voltag	w
+CHANNEL	human	Q96D31	ORAI1	Q96D31	4	178	Calcium release-activated calcium channel protein 1 (Protein	w
+CHANNEL	human	Q96D96	HVCN1	Q96D96	15	102	Voltage-gated hydrogen channel 1 (Hydrogen voltage-gated cha	w
+CHANNEL	human	Q96ER9	CCDC51	Q96ER9	6	93	Mitochondrial potassium channel (MITOK) (Coiled-coil domain-	w
+CHANNEL	human	Q96FT7	ASIC4	Q96FT7	15	175	Acid-sensing ion channel 4 (ASIC4) (Amiloride-sensitive cati	w
+CHANNEL	human	Q96KK3	KCNS1	Q96KK3	50	262	Delayed-rectifier potassium channel regulatory subunit KCNS1	w
+CHANNEL	human	Q96L42	KCNH8	Q96L42	38	164	Voltage-gated delayed rectifier potassium channel KCNH8 (ELK	w
+CHANNEL	human	Q96NL6	SCLT1	Q96NL6	54	275	Sodium channel and clathrin linker 1 (Sodium channel-associa	w
+CHANNEL	human	Q96NY7	CLIC6	Q96NY7	3	58	Chloride intracellular channel protein 6 (Glutaredoxin-like 	w
+CHANNEL	human	Q96P56	CATSPER2	Q96P56	16	93	Cation channel sperm-associated protein 2 (CatSper2)	w
+CHANNEL	human	Q96PR1	KCNC2	Q96PR1	56	247	Voltage-gated potassium channel KCNC2 (Potassium voltage-gat	w
+CHANNEL	human	Q96QT4	TRPM7	Q96QT4	39	410	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	Q96RP8	KCNA7	Q96RP8	43	157	Potassium voltage-gated channel subfamily A member 7 (Voltag	w
+CHANNEL	human	Q96S66	CLCC1	Q96S66	13	206	Chloride channel CLIC-like protein 1 (ER anion channel 1) (E	w
+CHANNEL	human	Q96SI1	KCTD15	Q96SI1	16	113	BTB/POZ domain-containing protein KCTD15 (Potassium channel 	w
+CHANNEL	human	Q96T54	KCNK17	Q96T54	19	62	Potassium channel subfamily K member 17 (2P domain potassium	w
+CHANNEL	human	Q96T55	KCNK16	Q96T55	19	120	Potassium channel subfamily K member 16 (2P domain potassium	w
+CHANNEL	human	Q99250	SCN2A	Q99250	6	82	Sodium channel protein type 2 subunit alpha (HBSC II) (Sodiu	w
+CHANNEL	human	Q99712	KCNJ15	Q99712	27	86	ATP-sensitive inward rectifier potassium channel 15 (Inward 	w
+CHANNEL	human	Q9BQ31	KCNS3	Q9BQ31	54	234	Delayed-rectifier potassium channel regulatory subunit KCNS3	w
+CHANNEL	human	Q9BSA4	TTYH2	Q9BSA4	10	49	Protein tweety homolog 2 (hTTY2) (Volume-regulated anion cha	w
+CHANNEL	human	Q9BSA9	TMEM175	Q9BSA9	5	45	Endosomal/lysosomal proton channel TMEM175 (Potassium channe	w
+CHANNEL	human	Q9BSW2	CRACR2A	Q9BSW2	34	120	EF-hand calcium-binding domain-containing protein 4B (Calciu	w
+CHANNEL	human	Q9BVC6	TMEM109	Q9BVC6	5	189	Voltage-gated monoatomic cation channel TMEM109 (Mitsugumin-	w
+CHANNEL	human	Q9BWG6	SCNM1	Q9BWG6	36	305	Sodium channel modifier 1	w
+CHANNEL	human	Q9BX84	TRPM6	Q9BX84	17	169	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	Q9BXT2	CACNG6	Q9BXT2	5	99	Voltage-dependent calcium channel gamma-6 subunit (Neuronal 	w
+CHANNEL	human	Q9C0H2	TTYH3	Q9C0H2	17	107	Protein tweety homolog 3 (hTTY3) (Volume-regulated anion cha	w
+CHANNEL	human	Q9GZU1	MCOLN1	Q9GZU1	8	130	Mucolipin-1 (ML1) (MG-2) (Mucolipidin) (Transient receptor p	w
+CHANNEL	human	Q9H1D0	TRPV6	Q9H1D0	17	127	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	human	Q9H252	KCNH6	Q9H252	25	90	Voltage-gated inwardly rectifying potassium channel KCNH6 (E	w
+CHANNEL	human	Q9H2S1	KCNN2	Q9H2S1	36	126	Small conductance calcium-activated potassium channel protei	w
+CHANNEL	human	Q9H313	TTYH1	Q9H313	44	417	Protein tweety homolog 1 (hTTY1) (Volume-regulated anion cha	w
+CHANNEL	human	Q9H3F6	KCTD10	Q9H3F6	15	268	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+CHANNEL	human	Q9H3M0	KCNF1	Q9H3M0	45	198	Voltage-gated potassium channel regulatory subunit KCNF1 (Po	w
+CHANNEL	human	Q9H427	KCNK15	Q9H427	51	89	Potassium channel subfamily K member 15 (Acid-sensitive pota	w
+CHANNEL	human	Q9H5I5	PIEZO2	Q9H5I5	0	5	Piezo-type mechanosensitive ion channel component 2 (Protein	w
+CHANNEL	human	Q9H6F2	TMEM38A	Q9H6F2	4	38	Trimeric intracellular cation channel type A (TRIC-A) (TRICA	w
+CHANNEL	human	Q9H7T0	CATSPERB	Q9H7T0	11	86	Cation channel sperm-associated auxiliary subunit beta (CatS	w
+CHANNEL	human	Q9H813	PACC1	Q9H813	6	136	Proton-activated chloride channel (PAC) (hPAC) (Acid-sensiti	w
+CHANNEL	human	Q9HB14	KCNK13	Q9HB14	20	46	Potassium channel subfamily K member 13 (Tandem pore domain 	w
+CHANNEL	human	Q9HB15	KCNK12	Q9HB15	18	37	Potassium channel subfamily K member 12 (Tandem pore domain 	w
+CHANNEL	human	Q9HBA0	TRPV4	Q9HBA0	22	215	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	human	Q9HCF6	TRPM3	Q9HCF6	30	216	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	Q9HCX4	TRPC7	Q9HCX4	10	81	Short transient receptor potential channel 7 (TrpC7) (Transi	w
+CHANNEL	human	Q9NPA1	KCNMB3	Q9NPA1	12	93	Calcium-activated potassium channel subunit beta-3 (BK chann	w
+CHANNEL	human	Q9NPC2	KCNK9	Q9NPC2	64	137	Potassium channel subfamily K member 9 (Acid-sensitive potas	w
+CHANNEL	human	Q9NPI9	KCNJ16	Q9NPI9	24	73	Inward rectifier potassium channel 16 (Inward rectifier K(+)	w
+CHANNEL	human	Q9NQA5	TRPV5	Q9NQA5	22	151	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	human	Q9NQW8	CNGB3	Q9NQW8	9	53	Cyclic nucleotide-gated channel beta-3 (CNG channel beta-3) 	w
+CHANNEL	human	Q9NR82	KCNQ5	Q9NR82	54	158	Potassium voltage-gated channel subfamily KQT member 5 (KQT-	w
+CHANNEL	human	Q9NS40	KCNH7	Q9NS40	35	132	Voltage-gated inwardly rectifying potassium channel KCNH7 (E	w
+CHANNEL	human	Q9NS61	KCNIP2	Q9NS61	29	117	A-type potassium channel modulatory protein KCNIP2 (Cardiac 	w
+CHANNEL	human	Q9NSA2	KCND1	Q9NSA2	62	194	A-type voltage-gated potassium channel KCND1 (Potassium volt	w
+CHANNEL	human	Q9NTU4	CATSPERZ	Q9NTU4	9	72	Cation channel sperm-associated auxiliary subunit zeta (CatS	w
+CHANNEL	human	Q9NUT2	ABCB8	Q9NUT2	8	107	Mitochondrial potassium channel ATP-binding subunit (ATP-bin	w
+CHANNEL	human	Q9NVV0	TMEM38B	Q9NVV0	5	87	Trimeric intracellular cation channel type B (TRIC-B) (TRICB	w
+CHANNEL	human	Q9NY37	ASIC5	Q9NY37	9	36	Bile acid-sensitive ion channel (BASIC) (Acid-sensing ion ch	w
+CHANNEL	human	Q9NY46	SCN3A	Q9NY46	5	85	Sodium channel protein type 3 subunit alpha (Sodium channel 	w
+CHANNEL	human	Q9NY47	CACNA2D2	Q9NY47	10	113	Voltage-dependent calcium channel subunit alpha-2/delta-2 (V	w
+CHANNEL	human	Q9NY72	SCN3B	Q9NY72	71	514	Sodium channel regulatory subunit beta-3	w
+CHANNEL	human	Q9NYG8	KCNK4	Q9NYG8	21	77	Potassium channel subfamily K member 4 (TWIK-related arachid	w
+CHANNEL	human	Q9NZA1	CLIC5	Q9NZA1	9	61	Chloride intracellular channel protein 5 (Glutaredoxin-like 	w
+CHANNEL	human	Q9NZI2	KCNIP1	Q9NZI2	14	85	A-type potassium channel modulatory protein KCNIP1 (Kv chann	w
+CHANNEL	human	Q9NZQ8	TRPM5	Q9NZQ8	10	86	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	human	Q9NZV8	KCND2	Q9NZV8	72	292	A-type voltage-gated potassium channel KCND2 (Potassium volt	w
+CHANNEL	human	Q9P0J7	KCMF1	Q9P0J7	66	482	E3 ubiquitin-protein ligase KCMF1 (EC 2.3.2.27) (FGF-induced	w
+CHANNEL	human	Q9P0X4	CACNA1I	Q9P0X4	2	130	Voltage-dependent T-type calcium channel subunit alpha-1I (V	w
+CHANNEL	human	Q9P1W3	TMEM63C	Q9P1W3	4	65	Osmosensitive cation channel TMEM63C (Calcium permeable stre	w
+CHANNEL	human	Q9P1Z3	HCN3	Q9P1Z3	35	121	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+CHANNEL	human	Q9UBN1	CACNG4	Q9UBN1	16	165	Voltage-dependent calcium channel gamma-4 subunit (Neuronal 	w
+CHANNEL	human	Q9UBN4	TRPC4	Q9UBN4	20	188	Short transient receptor potential channel 4 (TrpC4) (Trp-re	w
+CHANNEL	human	Q9UF02	CACNG5	Q9UF02	23	194	Voltage-dependent calcium channel gamma-5 subunit (Neuronal 	w
+CHANNEL	human	Q9UGI6	KCNN3	Q9UGI6	49	128	Small conductance calcium-activated potassium channel protei	w
+CHANNEL	human	Q9UGQ2	CACFD1	Q9UGQ2	2	113	Calcium channel flower homolog (Calcium channel flower domai	w
+CHANNEL	human	Q9UHC3	ASIC3	Q9UHC3	9	80	Acid-sensing ion channel 3 (ASIC3) (hASIC3) (Amiloride-sensi	w
+CHANNEL	human	Q9UI33	SCN11A	Q9UI33	1	10	Sodium channel protein type 11 subunit alpha (Peripheral ner	w
+CHANNEL	human	Q9UIX4	KCNG1	Q9UIX4	57	232	Voltage-gated potassium channel regulatory subunit KCNG1 (Po	w
+CHANNEL	human	Q9UJ90	KCNE5	Q9UJ90	14	70	Potassium voltage-gated channel subfamily E regulatory beta 	w
+CHANNEL	human	Q9UJ96	KCNG2	Q9UJ96	48	169	Voltage-gated potassium channel regulatory subunit KCNG2 (Ca	w
+CHANNEL	human	Q9UK17	KCND3	Q9UK17	66	315	A-type voltage-gated potassium channel KCND3 (Potassium volt	w
+CHANNEL	human	Q9UL51	HCN2	Q9UL51	31	116	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+CHANNEL	human	Q9UL62	TRPC5	Q9UL62	29	151	Short transient receptor potential channel 5 (TrpC5) (Transi	w
+CHANNEL	human	Q9ULD8	KCNH3	Q9ULD8	38	173	Voltage-gated inwardly rectifying potassium channel KCNH3 (B	w
+CHANNEL	human	Q9ULQ1	TPCN1	Q9ULQ1	11	139	Two pore channel protein 1 (Two pore calcium channel protein	w
+CHANNEL	human	Q9ULS6	KCNS2	Q9ULS6	49	228	Delayed-rectifier potassium channel regulatory subunit KCNS2	w
+CHANNEL	human	Q9UM00	TMCO1	Q9UM00	11	209	Calcium load-activated calcium channel (CLAC channel) (GEL c	w
+CHANNEL	human	Q9UNX9	KCNJ14	Q9UNX9	25	58	ATP-sensitive inward rectifier potassium channel 14 (Inward 	w
+CHANNEL	human	Q9UPY5	SLC7A11	Q9UPY5	18	155	Cystine/glutamate transporter (Amino acid transport system x	w
+CHANNEL	human	Q9UQ05	KCNH4	Q9UQ05	34	108	Voltage-gated delayed rectifier potassium channel KCNH4 (Bra	w
+CHANNEL	human	Q9UQC9	CLCA2	Q9UQC9	1	31	Calcium-activated chloride channel regulator 2 (EC 3.4.-.-) 	w
+CHANNEL	human	Q9UQD0	SCN8A	Q9UQD0	4	103	Sodium channel protein type 8 subunit alpha (Sodium channel 	w
+CHANNEL	human	Q9Y210	TRPC6	Q9Y210	10	340	Short transient receptor potential channel 6 (TrpC6) (Transi	w
+CHANNEL	human	Q9Y244	POMP	Q9Y244	14	130	Proteasome maturation protein (Proteassemblin) (Protein UMP1	w
+CHANNEL	human	Q9Y257	KCNK6	Q9Y257	21	50	Potassium channel subfamily K member 6 (Inward rectifying po	w
+CHANNEL	human	Q9Y277	VDAC3	Q9Y277	6	476	Non-selective voltage-gated ion channel VDAC3 (VDAC-3) (hVDA	w
+CHANNEL	human	Q9Y2U2	KCNK7	Q9Y2U2	23	45	Potassium channel subfamily K member 7	w
+CHANNEL	human	Q9Y2W7	KCNIP3	Q9Y2W7	19	162	Calsenilin (A-type potassium channel modulatory protein 3) (	w
+CHANNEL	human	Q9Y3Q4	HCN4	Q9Y3Q4	50	178	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+CHANNEL	human	Q9Y5S1	TRPV2	Q9Y5S1	12	148	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	human	Q9Y5Y9	SCN10A	Q9Y5Y9	2	14	Sodium channel protein type 10 subunit alpha (Peripheral ner	w
+CHANNEL	human	Q9Y691	KCNMB2	Q9Y691	7	51	Calcium-activated potassium channel subunit beta-2 (BK chann	w
+CHANNEL	human	Q9Y696	CLIC4	Q9Y696	10	205	Chloride intracellular channel protein 4 (Glutaredoxin-like 	w
+CHANNEL	human	Q9Y698	CACNG2	Q9Y698	26	168	Voltage-dependent calcium channel gamma-2 subunit (Neuronal 	w
+CHANNEL	human	Q9Y6H6	KCNE3	Q9Y6H6	81	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
+CHANNEL	human	Q9Y6J6	KCNE2	Q9Y6J6	22	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
+CHANNEL	worm	A0A0K3AVF4	egl-2	A0A0K3AVF4	1	5	Potassium voltage-gated channel protein eag	w
+CHANNEL	worm	A0A0K3AXZ4	twk-10	A0A0K3AXZ4	27	28	Potassium channel domain-containing protein	w
+CHANNEL	worm	A0A1C3NSN6	irk-2	A0A1C3NSN6	2	13	Inward rectifier potassium channel irk-1	w
+CHANNEL	worm	A0A1N7SYW0	lgc-45	A0A1N7SYW0	0	1	Ligand-Gated ion Channel	w
+CHANNEL	worm	A1EHR5	twk-39	A1EHR5	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	B0M0M8	twk-13	B0M0M8	26	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	C0Z3L1	egl-23	C0Z3L1	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	D3NQA5	bkip-1	D3NQA5	0	2	BK channel Interacting Protein	w
+CHANNEL	worm	F5GUD1	twk-14	F5GUD1	27	29	Potassium channel domain-containing protein	w
+CHANNEL	worm	G5EBI8	stg-2	G5EBI8	1	12	STarGazin (Mammalian calcium channel) homolog	w
+CHANNEL	worm	G5EC75	clh-6	G5EC75	1	1	Chloride channel protein	w
+CHANNEL	worm	G5ECI4	mps-3	G5ECI4	0	2	MiRP K channel accessory Subunit	w
+CHANNEL	worm	G5ECN1	lgc-37	G5ECN1	5	15	Ligand-Gated ion Channel	w
+CHANNEL	worm	G5ECT0	pbo-5	G5ECT0	1	1	Proton-gated ion channel subunit pbo-5	w
+CHANNEL	worm	G5ECW6	twk-20	G5ECW6	27	29	Two pore potassium channel protein sup-9	w
+CHANNEL	worm	G5ED42	twk-16	G5ED42	27	28	Potassium channel domain-containing protein	w
+CHANNEL	worm	G5EDN0	acc-3	G5EDN0	0	1	Acetylcholine-gated chloride channel subunit acc-3	w
+CHANNEL	worm	G5EDT2	stg-1	G5EDT2	0	17	STarGazin (Mammalian calcium channel) homolog	w
+CHANNEL	worm	G5EEH1	twk-43	G5EEH1	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	G5EEZ3	glc-3	G5EEZ3	0	1	Glutamate-gated chloride channel subunit	w
+CHANNEL	worm	G5EF09	spe-41	G5EF09	0	19	TRP homologous cation channel protein	w
+CHANNEL	worm	G5EFC3	egl-36	G5EFC3	0	4	Potassium voltage-gated channel protein egl-36	w
+CHANNEL	worm	G5EG93	clh-2	G5EG93	0	1	Chloride channel protein	w
+CHANNEL	worm	G5EGT4	clh-5	G5EGT4	0	5	Chloride channel protein	w
+CHANNEL	worm	H2L0J1	clh-4	H2L0J1	0	1	Chloride channel protein	w
+CHANNEL	worm	H2L2J8	twk-40	H2L2J8	27	28	Potassium channel domain-containing protein	w
+CHANNEL	worm	O01661	ccb-1	O01661	0	10	Guanylate kinase/L-type calcium channel beta subunit domain-	w
+CHANNEL	worm	O17037	CELE_T15B7.14	O17037	0	1	Chloride channel CLIC-like protein 1	w
+CHANNEL	worm	O17185	sup-9	O17185	28	28	Two pore potassium channel protein sup-9	w
+CHANNEL	worm	O17402	lgc-39	O17402	4	12	Ligand-Gated ion Channel	w
+CHANNEL	worm	O18228	lgc-7	O18228	2	10	Ligand-Gated ion Channel	w
+CHANNEL	worm	O44773	twk-47	O44773	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	O45405	exl-1	O45405	0	3	Chloride intracellular channel exl-1	w
+CHANNEL	worm	O76791	twk-17	O76791	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	P34374	unc-36	P34374	0	10	Voltage-dependent calcium channel unc-36	w
+CHANNEL	worm	P34394	mps-4	P34394	0	1	MinK-related peptide, potassium channel accessory subunit pr	w
+CHANNEL	worm	P52192	irk-1	P52192	2	13	Inward rectifier potassium channel irk-1	w
+CHANNEL	worm	P54245	lgc-4	P54245	1	3	Ligand-gated ion channel 4	w
+CHANNEL	worm	P91835	del-4	P91835	13	20	Amiloride-sensitive sodium channel	w
+CHANNEL	worm	Q03611	tax-4	Q03611	8	28	Cyclic nucleotide-gated channel	w
+CHANNEL	worm	Q10052	lgc-56	Q10052	0	1	Ligand-gated ion channel 50	w
+CHANNEL	worm	Q17328	glc-2	Q17328	0	5	Glutamate-gated chloride channel subunit beta	w
+CHANNEL	worm	Q17374	sup-10	Q17374	1	1	Putative potassium channel regulatory protein sup-10	w
+CHANNEL	worm	Q18261	C27F2.6	Q18261	0	4	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q18297	trpa-1	Q18297	4	8	Transient receptor potential cation channel subfamily A memb	w
+CHANNEL	worm	Q18651	del-7	Q18651	8	17	Acid-sensing ion channel 1-like	w
+CHANNEL	worm	Q19351	pbo-6	Q19351	1	1	Proton-gated ion channel subunit pbo-6	w
+CHANNEL	worm	Q19525	twk-6	Q19525	26	26	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q19714	F22B5.10	Q19714	1	56	Calcium load-activated calcium channel homolog	w
+CHANNEL	worm	Q19777	degt-1	Q19777	7	17	Acid-sensing ion channel 1	w
+CHANNEL	worm	Q21005	acc-1	Q21005	1	1	Acetylcholine-gated chloride channel subunit acc-1	w
+CHANNEL	worm	Q21529	twk-3	Q21529	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q21752	vdac-1	Q21752	1	145	Probable voltage-dependent anion-selective channel	w
+CHANNEL	worm	Q22741	lgc-40	Q22741	0	1	Ligand-Gated ion Channel	w
+CHANNEL	worm	Q22940	twk-28	Q22940	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q23386	twk-4	Q23386	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q27GU3	mps-1	Q27GU3	0	3	MiRP K channel accessory Subunit	w
+CHANNEL	worm	Q65XY3	twk-49	Q65XY3	26	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q6BEQ0	lgc-8	Q6BEQ0	1	1	Ligand-Gated ion Channel	w
+CHANNEL	worm	Q6BES3	twk-24	Q6BES3	0	9	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q6BET0	lgc-36	Q6BET0	7	14	Ligand-Gated ion Channel	w
+CHANNEL	worm	Q7YWY7	twk-48	Q7YWY7	27	27	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q8I4B0	shk-1	Q8I4B0	0	7	Potassium voltage-gated channel protein shk-1	w
+CHANNEL	worm	Q8I6Y9	trp-2	Q8I6Y9	0	9	Transient receptor ion channel domain-containing protein	w
+CHANNEL	worm	Q8IG65	twk-37	Q8IG65	27	42	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q8MPW0	del-6	Q8MPW0	2	14	Amiloride-sensitive sodium channel	w
+CHANNEL	worm	Q8MQ13	CELE_F59F3.6	Q8MQ13	0	1	Potassium channel tetramerisation-type BTB domain-containing	w
+CHANNEL	worm	Q8MQC5	kqt-1	Q8MQC5	2	8	Potassium voltage-gated channel subfamily KQT member 5	w
+CHANNEL	worm	Q8WQA4	exc-4	Q8WQA4	2	15	Chloride intracellular channel exc-4	w
+CHANNEL	worm	Q93380	unc-93	Q93380	0	1	Putative potassium channel regulatory protein unc-93	w
+CHANNEL	worm	Q93533	flwr-1	Q93533	1	35	Calcium channel flower	w
+CHANNEL	worm	Q93732	twk-29	Q93732	27	28	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q93971	gon-2	Q93971	3	19	Transient receptor potential channel (Abnormal gonad develop	w
+CHANNEL	worm	Q95R11	CELE_F28B3.10	Q95R11	0	70	Chloride channel protein CLC-d	w
+CHANNEL	worm	Q95V25	slo-1	Q95V25	0	7	Calcium-activated potassium channel slo-1	w
+CHANNEL	worm	Q95Y94	lgc-12	Q95Y94	1	2	Ligand-Gated ion Channel	w
+CHANNEL	worm	Q9BL17	haf-6	Q9BL17	8	24	Mitochondrial potassium channel ATP-binding subunit	w
+CHANNEL	worm	Q9BMK9	clh-3	Q9BMK9	1	4	Chloride channel protein clh-3	w
+CHANNEL	worm	Q9N517	lgc-42	Q9N517	0	1	Ligand-Gated ion Channel	w
+CHANNEL	worm	Q9N5S5	CELE_F49H12.3	Q9N5S5	0	11	Potassium channel tetramerisation-type BTB domain-containing	w
+CHANNEL	worm	Q9NA73	tric-1B.2	Q9NA73	1	24	Trimeric intracellular cation channel type 1B.2	w
+CHANNEL	worm	Q9NA75	tric-1B.1	Q9NA75	1	1	Trimeric intracellular cation channel type 1B.1	w
+CHANNEL	worm	Q9NEV3	twk-46	Q9NEV3	27	27	Two pore potassium channel protein sup-9	w
+CHANNEL	worm	Q9U358	acc-4	Q9U358	1	1	Acetylcholine-gated ion channel acc-4	w
+CHANNEL	worm	Q9XTV6	twk-36	Q9XTV6	1	3	Potassium channel domain-containing protein	w
+CHANNEL	worm	Q9XVW6	ooc-3	Q9XVW6	0	2	Chloride channel CLIC-like protein 1	w
+CHANNEL	worm	Q9XWG9	kqt-3	Q9XWG9	1	7	Potassium voltage-gated channel subfamily KQT member 1	w
+CHANNEL	worm	Q9XXD1	kvs-4	Q9XXD1	1	5	Probable voltage-gated potassium channel subunit kvs-4	w
+CHANNEL	worm	U4PFA8	twk-1	U4PFA8	27	27	Potassium channel domain-containing protein	w
+CHANNEL	yeast	P04840	POR1	P04840	0	147	Non-selective voltage-gated ion channel 1	w
+CHANNEL	yeast	P40310	TOK1	P40310	0	7	Outward-rectifier potassium channel TOK1	w
+CHANNEL	yeast	P40478	POR2	P40478	0	25	Non-selective voltage-gated ion channel 2	w
+CHANNEL	yeast	P41821	MID1	P41821	1	61	Stretch-activated cation channel MID1	w
+CHANNEL	yeast	Q06108	RGC1	Q06108	6	84	Regulator of the glycerol channel 1	w
+CHANNEL	yeast	Q06538	CSC1	Q06538	0	10	Calcium permeable stress-gated cation channel 1	w
+CHANNEL	yeast	Q12324	YVC1	Q12324	0	11	Calcium channel YVC1	w
+CHANNEL	zebrafish	A0A098DN12	clcn2b	A0A098DN12	0	1	Chloride channel protein 2	w
+CHANNEL	zebrafish	A0A0R4IAD0	kcnj5	A0A0R4IAD0	16	36	G protein-activated inward rectifier potassium channel 4	w
+CHANNEL	zebrafish	A0A0R4ICH9	kcnj12a	A0A0R4ICH9	8	29	ATP-sensitive inward rectifier potassium channel 12	w
+CHANNEL	zebrafish	A0A0R4ID46	asic1b	A0A0R4ID46	3	8	Acid-sensing ion channel 1B	w
+CHANNEL	zebrafish	A0A0R4IM91	trpc4b	A0A0R4IM91	1	18	Short transient receptor potential channel 4b isoform X1	w
+CHANNEL	zebrafish	A0A0R4IMY7	trpm2	A0A0R4IMY7	1	4	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	zebrafish	A0A0R4INZ4	cacng2b	A0A0R4INZ4	7	52	Calcium channel, voltage-dependent, gamma subunit 2b	w
+CHANNEL	zebrafish	A0A0R4IRW0	hcn1	A0A0R4IRW0	2	2	Hyperpolarization-activated cyclic nucleotide-gated potassiu	w
+CHANNEL	zebrafish	A0A0R4ISU8	dpp6a	A0A0R4ISU8	1	24	A-type potassium channel modulatory protein DPP6	w
+CHANNEL	zebrafish	A0A0R4IYV8	orai1a	A0A0R4IYV8	4	14	Calcium release-activated calcium channel protein 1	w
+CHANNEL	zebrafish	A0A140LFQ8	kcnk17	A0A140LFQ8	9	9	Potassium channel subfamily K member 17	w
+CHANNEL	zebrafish	A0A142J9E8	kcnh4a	A0A142J9E8	0	3	Voltage-gated delayed rectifier potassium channel KCNH4	w
+CHANNEL	zebrafish	A0A2R8Q685	kcnb1	A0A2R8Q685	7	174	Potassium voltage-gated channel subfamily B member 1	w
+CHANNEL	zebrafish	A0A2R8QF91	cacng4a	A0A2R8QF91	6	52	Calcium channel, voltage-dependent, gamma subunit 4a	w
+CHANNEL	zebrafish	A0A8M1N0L7	clic2	A0A8M1N0L7	0	3	Chloride intracellular channel protein	w
+CHANNEL	zebrafish	A0A8M1N7B3	kcnk6	A0A8M1N7B3	9	9	Potassium channel subfamily K member	w
+CHANNEL	zebrafish	A0A8M1N7Z0	kcnk5a	A0A8M1N7Z0	4	4	Potassium channel subfamily K member 5a	w
+CHANNEL	zebrafish	A0A8M1N8U2	kcnh2a	A0A8M1N8U2	1	3	Voltage-gated inwardly rectifying potassium channel KCNH2	w
+CHANNEL	zebrafish	A0A8M1P6E5	trpm4a	A0A8M1P6E5	1	4	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	zebrafish	A0A8M1P8P0	cacng8a	A0A8M1P8P0	7	73	Calcium channel, voltage-dependent, gamma subunit 8a	w
+CHANNEL	zebrafish	A0A8M1RKV1	trpc6b	A0A8M1RKV1	0	12	Short transient receptor potential channel 6	w
+CHANNEL	zebrafish	A0A8M2BAM8	kcnb2a	A0A8M2BAM8	11	173	Potassium voltage-gated channel subfamily B member 2	w
+CHANNEL	zebrafish	A0A8M2BCH8	trpv4	A0A8M2BCH8	8	63	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	zebrafish	A0A8M2BJ81	trpm3	A0A8M2BJ81	4	21	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	zebrafish	A0A8M2BK33	s100p	A0A8M2BK33	0	1	Calcium-activated potassium channel subunit beta-2	w
+CHANNEL	zebrafish	A0A8M2BKC6	kcnj6	A0A8M2BKC6	16	36	G protein-activated inward rectifier potassium channel 2	w
+CHANNEL	zebrafish	A0A8M3APN3	clca5.2	A0A8M3APN3	0	8	Calcium-activated chloride channel regulator 1 isoform X1	w
+CHANNEL	zebrafish	A0A8M3B1J1	kcng4b	A0A8M3B1J1	11	167	Potassium voltage-gated channel subfamily G member 4	w
+CHANNEL	zebrafish	A0A8M6YZC2	kcnj2b	A0A8M6YZC2	1	5	ATP-sensitive inward rectifier potassium channel 14	w
+CHANNEL	zebrafish	A0A8M6Z6V7	si:dkey-43k4.5	A0A8M6Z6V7	10	168	Delayed-rectifier potassium channel regulatory subunit KCNS1	w
+CHANNEL	zebrafish	A0A8M6Z942	trpa1a	A0A8M6Z942	0	18	Transient receptor potential cation channel subfamily A memb	w
+CHANNEL	zebrafish	A0A8M9PL84	cacnb3b	A0A8M9PL84	4	22	Voltage-dependent L-type calcium channel subunit beta-3	w
+CHANNEL	zebrafish	A0A8M9PNH4	LOC101886645	A0A8M9PNH4	1	8	Calcium-activated chloride channel regulator 3A-1 isoform X2	w
+CHANNEL	zebrafish	A0A8M9PNN7	kcnip1a	A0A8M9PNN7	3	28	A-type potassium channel modulatory protein KCNIP1	w
+CHANNEL	zebrafish	A0A8M9Q887	clcn3	A0A8M9Q887	0	6	Chloride channel protein	w
+CHANNEL	zebrafish	A0A8M9QF71	cacng1a	A0A8M9QF71	3	22	Voltage-dependent calcium channel gamma-1 subunit	w
+CHANNEL	zebrafish	A0A8M9QJ67	kcng3	A0A8M9QJ67	5	164	Voltage-gated potassium channel regulatory subunit KCNG3	w
+CHANNEL	zebrafish	A0A8N7UQR8	hcn4	A0A8N7UQR8	2	2	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+CHANNEL	zebrafish	A0A8N7UV51	kcnv1	A0A8N7UV51	9	164	Potassium voltage-gated channel subfamily V member 1	w
+CHANNEL	zebrafish	A0AB13A9L7	cacnb2b	A0AB13A9L7	2	22	Voltage-dependent L-type calcium channel subunit beta-2b iso	w
+CHANNEL	zebrafish	A0AB32T5S6	kcnk4a	A0AB32T5S6	13	13	Potassium channel subfamily K member 4	w
+CHANNEL	zebrafish	A0AB32TBG7	kcnh8	A0AB32TBG7	0	4	Voltage-gated delayed rectifier potassium channel KCNH4	w
+CHANNEL	zebrafish	A0AB32TUG0	cacnb2a	A0AB32TUG0	4	24	Voltage-dependent L-type calcium channel subunit beta-2	w
+CHANNEL	zebrafish	A0AB40E9H7	kcnn1a	A0AB40E9H7	1	2	Small conductance calcium-activated potassium channel protei	w
+CHANNEL	zebrafish	A0JMD4	tpcn2	A0JMD4	2	22	Two pore channel protein 2	w
+CHANNEL	zebrafish	A2ARG8	kcnv2b	A2ARG8	9	163	Potassium voltage-gated channel subfamily V member 2	w
+CHANNEL	zebrafish	A2AWH2	nalf2	A2AWH2	0	5	NALCN channel auxiliary factor 2	w
+CHANNEL	zebrafish	A2BGV1	mcoln1a	A2BGV1	1	4	Mucolipin TRP cation channel 1a	w
+CHANNEL	zebrafish	A2BHL7	tpcn1	A2BHL7	2	30	Voltage-dependent calcium channel protein TPC1	w
+CHANNEL	zebrafish	A3KQM6	kcng4a	A3KQM6	7	168	Potassium voltage-gated channel subfamily G member 4a	w
+CHANNEL	zebrafish	A3QJX1	kcnk10a	A3QJX1	9	9	Potassium channel protein TREK2A	w
+CHANNEL	zebrafish	A5PLA5	kcnj1b	A5PLA5	2	3	ATP-sensitive inward rectifier potassium channel 1b	w
+CHANNEL	zebrafish	A5PLK0	kcnk1a	A5PLK0	11	11	Potassium channel subfamily K member	w
+CHANNEL	zebrafish	A8E7Q8	si:ch211-225p5.8	A8E7Q8	2	11	Sodium channel regulatory subunit beta-3	w
+CHANNEL	zebrafish	A8KB76	kcnk13a	A8KB76	9	9	Potassium channel subfamily K member 13a	w
+CHANNEL	zebrafish	A8WG04	kcng1	A8WG04	4	165	Potassium voltage-gated channel subfamily G member 1	w
+CHANNEL	zebrafish	A9JTD2	kcna2b	A9JTD2	0	163	Potassium voltage-gated channel subfamily A member 2	w
+CHANNEL	zebrafish	B0F0D0	cacnb4a	B0F0D0	2	22	Voltage-dependent L-type calcium channel subunit beta-2	w
+CHANNEL	zebrafish	B0F0D1	cacnb4b	B0F0D1	3	22	Voltage-dependent L-type calcium channel subunit beta-4	w
+CHANNEL	zebrafish	B0R0K2	kcnq1.1	B0R0K2	7	173	Potassium voltage-gated channel subfamily KQT member 1	w
+CHANNEL	zebrafish	B0S711	trpv1	B0S711	4	59	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	zebrafish	B0UYF4	kcnd1	B0UYF4	13	198	A-type voltage-gated potassium channel KCND1	w
+CHANNEL	zebrafish	B3DI29	kcna6a	B3DI29	0	163	Potassium voltage-gated channel subfamily A member 6a	w
+CHANNEL	zebrafish	B3DJ89	kcns3a	B3DJ89	12	169	Potassium voltage-gated channel subfamily S member 3 isoform	w
+CHANNEL	zebrafish	B3DJD2	kcnc1a	B3DJD2	3	165	Potassium voltage-gated channel subfamily C member 1a	w
+CHANNEL	zebrafish	B7ZC96	kcnma1a	B7ZC96	1	7	Calcium-activated potassium channel subunit alpha-1a	w
+CHANNEL	zebrafish	B8A573	kcnk1b	B8A573	11	11	Potassium channel subfamily K member	w
+CHANNEL	zebrafish	B8JHY6	cnga1a	B8JHY6	2	4	Cyclic nucleotide-gated channel subunit alpha 1a	w
+CHANNEL	zebrafish	C3VPM9	kcnk10b	C3VPM9	3	3	K2P10.1 potassium channel subunit	w
+CHANNEL	zebrafish	C4IXV6	tpcn3	C4IXV6	1	30	Two pore channel 3	w
+CHANNEL	zebrafish	E0R7P9	kcnc4	E0R7P9	1	165	Potassium voltage-gated channel subfamily C member 4	w
+CHANNEL	zebrafish	E1AZA4	kcnc3a	E1AZA4	0	165	Potassium voltage-gated channel subfamily C member 3a isofor	w
+CHANNEL	zebrafish	E1AZA6	kcnc3b	E1AZA6	3	165	Potassium voltage-gated channel subfamily C member 3b	w
+CHANNEL	zebrafish	E7EXE2	cacng5a	E7EXE2	8	67	Calcium channel, voltage-dependent, gamma subunit 5a	w
+CHANNEL	zebrafish	E7EY10	cacng3b	E7EY10	10	71	Voltage-dependent calcium channel gamma-3 subunit	w
+CHANNEL	zebrafish	E7EZ46	sclt1	E7EZ46	2	5	Sodium channel and clathrin linker 1	w
+CHANNEL	zebrafish	E7F1N1	kcnj3b	E7F1N1	7	30	G protein-activated inward rectifier potassium channel 1	w
+CHANNEL	zebrafish	E7F1R5	cacng1b	E7F1R5	4	22	Voltage-dependent calcium channel gamma-1 subunit	w
+CHANNEL	zebrafish	E7F2Y9	kcnj3a	E7F2Y9	2	8	G protein-activated inward rectifier potassium channel 1	w
+CHANNEL	zebrafish	E7F798	clcn6	E7F798	0	1	Chloride channel protein	w
+CHANNEL	zebrafish	E7F7K0	kcnj19b	E7F7K0	2	8	G protein-activated inward rectifier potassium channel 1	w
+CHANNEL	zebrafish	E7F807	kcnj12b	E7F807	1	5	ATP-sensitive inward rectifier potassium channel 12	w
+CHANNEL	zebrafish	E7F8M2	kcna2a	E7F8M2	0	164	Potassium voltage-gated channel subfamily A member 2	w
+CHANNEL	zebrafish	E7F9D1	kcnk3b	E7F9D1	2	5	Potassium channel subfamily K member	w
+CHANNEL	zebrafish	E7F9M5	cacng6b	E7F9M5	6	17	Calcium channel, voltage-dependent, gamma subunit 6b	w
+CHANNEL	zebrafish	E7FA39	kcna7	E7FA39	1	162	Potassium voltage-gated channel subfamily A member 2	w
+CHANNEL	zebrafish	E7FAT2	kcnn3	E7FAT2	1	2	Potassium intermediate/small conductance calcium-activated c	w
+CHANNEL	zebrafish	E7FB36	kcnh4b	E7FB36	0	4	Voltage-gated delayed rectifier potassium channel KCNH4	w
+CHANNEL	zebrafish	E7FCE2	clcn2c	E7FCE2	0	1	Chloride channel 2c	w
+CHANNEL	zebrafish	E7FD27	kcnj10a	E7FD27	13	31	ATP-sensitive inward rectifier potassium channel 10	w
+CHANNEL	zebrafish	E7FE44	mcoln3a	E7FE44	1	3	Mucolipin TRP cation channel 3a	w
+CHANNEL	zebrafish	E7FEC8	kcnq2b	E7FEC8	4	167	Potassium voltage-gated channel subfamily KQT member 2 isofo	w
+CHANNEL	zebrafish	E7FEJ3	kcna1b	E7FEJ3	0	163	Potassium voltage-gated channel subfamily A member 1	w
+CHANNEL	zebrafish	E7FFE9	kcna1a	E7FFE9	1	163	Potassium voltage-gated channel subfamily A member 1	w
+CHANNEL	zebrafish	E7FFG9	clcn5b	E7FFG9	0	5	Chloride channel protein	w
+CHANNEL	zebrafish	E7FFQ6	kcng2	E7FFQ6	4	164	Potassium voltage-gated channel subfamily G member 2	w
+CHANNEL	zebrafish	E7FGH1	kcnj2a	E7FGH1	8	29	Inward rectifier potassium channel 2	w
+CHANNEL	zebrafish	E7FGK7	cacng4b	E7FGK7	6	85	Voltage-dependent calcium channel gamma-4 subunit	w
+CHANNEL	zebrafish	E7FGL3	trpc4a	E7FGL3	0	13	Short transient receptor potential channel 4a isoform X1	w
+CHANNEL	zebrafish	E9QCW1	cacng8b	E9QCW1	7	67	Calcium channel, voltage-dependent, gamma subunit 8b	w
+CHANNEL	zebrafish	E9QGU5	kcnab2b	E9QGU5	5	61	Voltage-gated potassium channel subunit beta-1	w
+CHANNEL	zebrafish	F1Q4T7	kcnc1b	F1Q4T7	2	165	Potassium voltage-gated channel subfamily C member 1b isofor	w
+CHANNEL	zebrafish	F1Q5F4	clcn2a	F1Q5F4	0	1	Chloride channel protein 2	w
+CHANNEL	zebrafish	F1Q5K8	kcnk15	F1Q5K8	10	13	Potassium channel subfamily K member	w
+CHANNEL	zebrafish	F1Q5M3	clcn1a	F1Q5M3	0	1	Chloride channel protein 1a isoform X1	w
+CHANNEL	zebrafish	F1Q6N3	kcnv2a	F1Q6N3	3	164	Potassium voltage-gated channel subfamily V member 2	w
+CHANNEL	zebrafish	F1Q927	clcn1b	F1Q927	0	1	Chloride channel protein 1 isoform X2	w
+CHANNEL	zebrafish	F1Q929	kcna4	F1Q929	3	163	Potassium voltage-gated channel subfamily A member 4	w
+CHANNEL	zebrafish	F1QAI2	kcnk2a	F1QAI2	9	11	Potassium channel subfamily K member 2 isoform X1	w
+CHANNEL	zebrafish	F1QH85	kcnj4	F1QH85	11	37	ATP-sensitive inward rectifier potassium channel 14	w
+CHANNEL	zebrafish	F1QIE6	kcnj19a	F1QIE6	2	8	G protein-activated inward rectifier potassium channel 1	w
+CHANNEL	zebrafish	F1QN56	trpv6	F1QN56	6	60	Transient receptor potential cation channel subfamily V memb	w
+CHANNEL	zebrafish	F1QQH0	kcnj15	F1QQH0	7	29	ATP-sensitive inward rectifier potassium channel 15	w
+CHANNEL	zebrafish	F1QZV9	si:rp71-39b20.4	F1QZV9	6	163	Potassium voltage-gated channel subfamily V member 2	w
+CHANNEL	zebrafish	F1R3X8	cacna2d3	F1R3X8	0	22	Calcium channel, voltage-dependent, alpha2/delta subunit 3	w
+CHANNEL	zebrafish	F1R7M8	kcnj14	F1R7M8	3	3	G protein-activated inward rectifier potassium channel 3	w
+CHANNEL	zebrafish	F1RB62	kcnq5b	F1RB62	4	168	Potassium voltage-gated channel subfamily KQT member 5 isofo	w
+CHANNEL	zebrafish	F1RC25	trpm4b.2	F1RC25	3	4	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL	zebrafish	F1RCY2	trpc6a	F1RCY2	0	14	Short transient receptor potential channel 6a isoform X1	w
+CHANNEL	zebrafish	F6NQL8	hcn3	F6NQL8	2	2	Hyperpolarization-activated cyclic nucleotide-gated potassiu	w
+CHANNEL	zebrafish	F6NU44	cracr2ab	F6NU44	6	13	Calcium release-activated channel regulator 2Ab	w
+CHANNEL	zebrafish	F6NW67	cacng7a	F6NW67	9	69	Voltage-dependent calcium channel gamma-7 subunit	w
+CHANNEL	zebrafish	F8W4B3	scn3b	F8W4B3	1	11	Sodium channel regulatory subunit beta-3	w
+CHANNEL	zebrafish	Q06W25	scn4bb	Q06W25	0	11	Sodium channel, voltage-gated, type IV, beta b	w
+CHANNEL	zebrafish	Q06W28	scn2b	Q06W28	2	26	Sodium channel subunit beta-2	w
+CHANNEL	zebrafish	Q06W32	scn1ba	Q06W32	1	21	Sodium channel regulatory subunit beta-3	w
+CHANNEL	zebrafish	Q0GFG2	cnga2a	Q0GFG2	1	4	Cyclic nucleotide gated channel subunit alpha 2a isoform X1	w
+CHANNEL	zebrafish	Q0KIZ7	kcnj13	Q0KIZ7	0	1	Inward rectifier potassium channel 13	w
+CHANNEL	zebrafish	Q1L8I4	kcnj1a.1	Q1L8I4	2	3	ATP-sensitive inward rectifier potassium channel 1a.1 isofor	w
+CHANNEL	zebrafish	Q1L8I5	kcnj1a.2	Q1L8I5	0	1	Potassium inwardly rectifying channel subfamily J member 1a,	w
+CHANNEL	zebrafish	Q1L8I8	kcnj1a.5	Q1L8I8	0	1	Potassium inwardly rectifying channel subfamily J member 1a,	w
+CHANNEL	zebrafish	Q1L8I9	kcnj1a.6	Q1L8I9	0	1	Potassium inwardly rectifying channel subfamily J member 1a,	w
+CHANNEL	zebrafish	Q1L8R4	cacng6a	Q1L8R4	6	17	Calcium channel, voltage-dependent, gamma subunit 6a	w
+CHANNEL	zebrafish	Q1LVA7	kcne4	Q1LVA7	0	3	Potassium voltage-gated channel subfamily E member 4	w
+CHANNEL	zebrafish	Q1MT28	trpc5a	Q1MT28	1	21	Short transient receptor potential channel 5a isoform 2	w
+CHANNEL	zebrafish	Q2HX26	kcnj11	Q2HX26	1	12	ATP-sensitive inward rectifier potassium channel 11	w
+CHANNEL	zebrafish	Q2Q551	cacnb1	Q2Q551	4	24	Voltage-dependent L-type calcium channel subunit beta-1	w
+CHANNEL	zebrafish	Q2YDS5	scnm1	Q2YDS5	3	39	Sodium channel modifier 1	w
+CHANNEL	zebrafish	Q32LW7	kcns3b	Q32LW7	8	168	Potassium voltage-gated channel subfamily S member 3b	w
+CHANNEL	zebrafish	Q32LX0	kcnk2b	Q32LX0	3	5	Potassium channel subfamily K member 2b	w
+CHANNEL	zebrafish	Q561T3	kctd12.2	Q561T3	0	4	Potassium channel tetramerisation domain-containing 12.2	w
+CHANNEL	zebrafish	Q56A55	abcb8	Q56A55	1	6	Mitochondrial potassium channel ATP-binding subunit	w
+CHANNEL	zebrafish	Q58EC4	kcnab1a	Q58EC4	4	74	Voltage-gated potassium channel subunit beta-1	w
+CHANNEL	zebrafish	Q5RH88	kcnj8	Q5RH88	1	12	ATP-sensitive inward rectifier potassium channel 8	w
+CHANNEL	zebrafish	Q5SP96	kcnf1a	Q5SP96	6	163	Potassium voltage-gated channel subfamily F member 1a	w
+CHANNEL	zebrafish	Q5TZ59	kcnk3a	Q5TZ59	10	13	Potassium channel subfamily K member	w
+CHANNEL	zebrafish	Q5TZ68	cacna2d1a	Q5TZ68	1	22	Calcium channel, voltage-dependent, alpha 2/delta subunit 1a	w
+CHANNEL	zebrafish	Q5U3P5	clic5a	Q5U3P5	0	2	Chloride intracellular channel protein	w
+CHANNEL	zebrafish	Q5VSI1	kcnd2	Q5VSI1	21	199	A-type voltage-gated potassium channel KCND1	w
+CHANNEL	zebrafish	Q6DGW9	tmco1	Q6DGW9	1	64	Calcium load-activated calcium channel	w
+CHANNEL	zebrafish	Q6DHQ1	hvcn1	Q6DHQ1	0	5	Voltage-gated hydrogen channel 1	w
+CHANNEL	zebrafish	Q6NWC1	vdac1	Q6NWC1	1	137	Non-selective voltage-gated ion channel VDAC1	w
+CHANNEL	zebrafish	Q6P2T0	tmem38a	Q6P2T0	0	1	Trimeric intracellular cation channel type A	w
+CHANNEL	zebrafish	Q6P5J7	clic3	Q6P5J7	0	2	Chloride intracellular channel protein 2	w
+CHANNEL	zebrafish	Q6PFS3	cacng2a	Q6PFS3	6	52	Voltage-dependent calcium channel gamma-2 subunit	w
+CHANNEL	zebrafish	Q6TLE6	orai1	Q6TLE6	4	14	Calcium release-activated calcium channel protein 1	w
+CHANNEL	zebrafish	Q708S3	asic4b	Q708S3	0	2	Acid-sensing ion channel 4-B	w
+CHANNEL	zebrafish	Q708S4	asic4a	Q708S4	0	2	Acid-sensing ion channel 4-A	w
+CHANNEL	zebrafish	Q708S5	asic2	Q708S5	3	8	Acid-sensing ion channel 2	w
+CHANNEL	zebrafish	Q708S6	asic1c	Q708S6	3	9	Acid-sensing ion channel 1C	w
+CHANNEL	zebrafish	Q708S7	asic1a	Q708S7	3	8	Acid-sensing ion channel 1A	w
+CHANNEL	zebrafish	Q7SY31	pacc1	Q7SY31	0	2	Proton-activated chloride channel	w
+CHANNEL	zebrafish	Q7ZTT4	clic4	Q7ZTT4	0	3	Chloride intracellular channel 4	w
+CHANNEL	zebrafish	Q7ZV39	zgc:56235	Q7ZV39	0	80	Non-selective voltage-gated ion channel VDAC3	w
+CHANNEL	zebrafish	Q7ZW36	kcnd3	Q7ZW36	21	198	A-type voltage-gated potassium channel KCND1	w
+CHANNEL	zebrafish	Q8AWD0	vdac2	Q8AWD0	0	90	Non-selective voltage-gated ion channel VDAC2	w
+CHANNEL	zebrafish	X1WCL6	kcnn4	X1WCL6	0	12	Intermediate conductance calcium-activated potassium channel	w
+CHANNEL	zebrafish	X1WEB1	cacng5b	X1WEB1	6	67	Calcium channel, voltage-dependent, gamma subunit 5b	w
+CHANNEL	zebrafish	X1WEF7	clcn5a	X1WEF7	0	5	Chloride channel protein	w
+CHANNEL	zebrafish	X1WEM4	tmem63c	X1WEM4	0	2	Osmosensitive cation channel TMEM63C	w
+CHANNEL	zebrafish	X1WHI8	clca1	X1WHI8	0	8	Calcium-activated chloride channel regulator 1 isoform X2	w
+CHANNEL-A	fly	FBgn0051116	ClC-a	Q9VGH7	3	20	Chloride channel protein 2 (ClC-2) (DmClC-2) (Chloride chann	w
+CHANNEL-ACTIVATING	human	Q16651	PRSS8	Q16651	22	138	Prostasin (EC 3.4.21.-) (Channel-activating protease 1) (CAP	w
+CHANNEL-ACTIVATING	human	Q9NRS4	TMPRSS4	Q9NRS4	70	472	Transmembrane protease serine 4 (EC 3.4.21.-) (Channel-activ	w
+CHANNEL-ASSOCIATED	human	A6NFQ2	TCAF2	A6NFQ2	1	46	TRPM8 channel-associated factor 2 (TRP channel-associated fa	w
+CHANNEL-ASSOCIATED	human	Q15700	DLG2	Q15700	20	134	Disks large homolog 2 (Channel-associated protein of synapse	w
+CHANNEL-ASSOCIATED	human	Q96NL6	SCLT1	Q96NL6	54	275	Sodium channel and clathrin linker 1 (Sodium channel-associa	w
+CHANNEL-ASSOCIATED	human	Q9Y4C2	TCAF1	Q9Y4C2	8	115	TRPM8 channel-associated factor 1 (TRP channel-associated fa	w
+CHANNEL-INTERACTING	human	Q6PIL6	KCNIP4	Q6PIL6	33	183	Kv channel-interacting protein 4 (KChIP4) (A-type potassium 	w
+CHANNEL-INTERACTING	human	Q8NI35	PATJ	Q8NI35	22	110	InaD-like protein (Inadl protein) (hINADL) (Channel-interact	w
+CHANNEL-INTERACTING	human	Q9NS61	KCNIP2	Q9NS61	29	117	A-type potassium channel modulatory protein KCNIP2 (Cardiac 	w
+CHANNEL-INTERACTING	human	Q9NZI2	KCNIP1	Q9NZI2	14	85	A-type potassium channel modulatory protein KCNIP1 (Kv chann	w
+CHANNEL-INTERACTING	human	Q9Y2W7	KCNIP3	Q9Y2W7	19	162	Calsenilin (A-type potassium channel modulatory protein 3) (	w
+CHANNEL-INTERACTING	zebrafish	E7F7H4	kcnip4b	E7F7H4	3	27	Kv channel-interacting protein 4	w
+CHANNEL-KINASE	human	Q96QT4	TRPM7	Q96QT4	39	410	Transient receptor potential cation channel subfamily M memb	w
+CHANNEL-LIKE	fly	FBgn0263257	Cngl	M9NEI3	0	1	Cyclic nucleotide-gated ion channel-like, isoform E	w
+CHANNEL-LIKE	fly	FBgn0267796	Tmc	A0A0U1QT59	0	2	Transmembrane channel-like protein	w
+CHANNEL-LIKE	human	P29972	AQP1	P29972	13	348	Aquaporin-1 (AQP-1) (Aquaporin-CHIP) (Channel-like integral 	w
+CHANNEL-LIKE	human	Q6UXY8	TMC5	Q6UXY8	4	21	Transmembrane channel-like protein 5	w
+CHANNEL-LIKE	human	Q7Z402	TMC7	Q7Z402	4	26	Transmembrane channel-like protein 7	w
+CHANNEL-LIKE	human	Q7Z403	TMC6	Q7Z403	14	177	Transmembrane channel-like protein 6 (Epidermodysplasia verr	w
+CHANNEL-LIKE	human	Q7Z404	TMC4	Q7Z404	9	66	Voltage-gated chloride channel TMC4 (Transmembrane channel-l	w
+CHANNEL-LIKE	human	Q7Z5M5	TMC3	Q7Z5M5	10	44	Transmembrane channel-like protein 3	w
+CHANNEL-LIKE	human	Q86XQ3	CATSPER3	Q86XQ3	11	85	Cation channel sperm-associated protein 3 (CatSper3) (Ca(v)-	w
+CHANNEL-LIKE	human	Q8IU68	TMC8	Q8IU68	17	154	Transmembrane channel-like protein 8 (Epidermodysplasia verr	w
+CHANNEL-LIKE	human	Q8IZF0	NALCN	Q8IZF0	1	109	Sodium leak channel NALCN (CanIon) (Sodium leak channel non-	w
+CHANNEL-LIKE	human	Q8TDI7	TMC2	Q8TDI7	8	71	Transmembrane channel-like protein 2 (Transmembrane cochlear	w
+CHANNEL-LIKE	human	Q8TDI8	TMC1	Q8TDI8	9	87	Transmembrane channel-like protein 1 (Transmembrane cochlear	w
+CHANNEL-LIKE	worm	D3KZG3	tmc-1	D3KZG3	1	5	Transmembrane channel-like protein 1	w
+CHANNEL-LIKE	worm	Q11069	tmc-2	Q11069	1	5	Transmembrane channel-like protein 2	w
+CHANNEL-LIKE	worm	Q11122	kcnl-3	Q11122	3	5	Small conductance calcium-activated potassium channel-like p	w
+CHANNEL-LIKE	zebrafish	A0A0G2LAK5	tmc8	A0A0G2LAK5	0	9	Transmembrane channel-like protein	w
+CHANNEL-LIKE	zebrafish	E7F4Y3	tmc4	E7F4Y3	1	7	Transmembrane channel-like protein	w
+CHANNEL-LIKE	zebrafish	E7FDU7	tmc5	E7FDU7	0	7	Transmembrane channel-like protein	w
+CHANNEL-LIKE	zebrafish	E7FFT2	tmc2a	E7FFT2	4	16	Transmembrane channel-like protein 2-A	w
+CHANNEL-LIKE	zebrafish	F1QFU0	tmc1	F1QFU0	4	16	Transmembrane channel-like protein 1	w
+CHANNEL-LIKE	zebrafish	F1QZE9	tmc2b	F1QZE9	4	14	Transmembrane channel-like protein 2-B	w
+CHANNEL-PROTEIN-BETA-SUBUNIT	fly	FBgn0287724	Ca-beta	Q7KTE7	1	11	Ca2+-channel-protein-beta-subunit	w
+CHANNEL-RELATED	human	Q8WWG9	KCNE4	Q8WWG9	19	103	Potassium voltage-gated channel subfamily E member 4 (MinK-r	w
+CHANNEL-RELATED	human	Q9Y6H6	KCNE3	Q9Y6H6	81	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
+CHANNEL-RELATED	human	Q9Y6J6	KCNE2	Q9Y6J6	22	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
+CHANNELS	worm	P34410	twk-7	P34410	27	29	TWiK family of potassium channels protein 7	w
+CHANNELS	worm	Q19907	twk-12	Q19907	26	27	TWiK family of potassium channels protein 12	w
+CHANNELS	worm	Q23435	twk-9	Q23435	27	27	TWiK family of potassium channels protein 9	w
+CHAOPTIN	fly	FBgn0267435	chp	A0A0B4KHX5	0	6	Chaoptin, isoform D	w
+CHAOPTIN	worm	Q18902	lron-15	Q18902	0	2	Chaoptin	w
+CHAOS	fly	FBgn0087021	Spc25	Q9V3V7	9	20	Kinetochore protein Spc25 (Chromosome alignment defect 2) (M	w
+CHAOTIC	yeast	P53865	CNM67	P53865	3	81	Chaotic nuclear migration protein 67	w
+CHAP1	human	Q9UHD9	UBQLN2	Q9UHD9	85	838	Ubiquilin-2 (Chap1) (DSK2 homolog) (Protein linking IAP with	w
+CHAP1_HUMAN	human	Q96JM3	CHAMP1	Q96JM3	26	169		
+CHAPERON	human	P36776	LONP1	P36776	13	379	Lon protease homolog, mitochondrial (EC 3.4.21.53) (LONHs) (	w
+CHAPERONE	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
+CHAPERONE	fly	FBgn0004132	boca	Q8T9B6	11	176	LDLR chaperone boca	w
+CHAPERONE	fly	FBgn0011573	Cdc37	Q24276	22	134	Hsp90 co-chaperone Cdc37 (Hsp90 chaperone protein kinase-tar	w
+CHAPERONE	fly	FBgn0025712	CG13920	Q8T0T9	2	34	Novel acetylcholine receptor chaperone	w
+CHAPERONE	fly	FBgn0027509	Tbcd	Q9VQ78	2	15	Tubulin-specific chaperone D	w
+CHAPERONE	fly	FBgn0029094	asf1	Q9V464	24	79	Histone chaperone asf1 (Anti-silencing function protein 1) (	w
+CHAPERONE	fly	FBgn0030614	CG9072	Q9VXY1	4	7	Tubulin-specific chaperone A	w
+CHAPERONE	fly	FBgn0032195	Bcs1	Q9VL22	0	74	Mitochondrial chaperone BCS1 (BCS1-like protein)	w
+CHAPERONE	fly	FBgn0033055	Tbce	A1Z6J5	2	11	Tubulin-specific chaperone E (Tubulin-folding cofactor E)	w
+CHAPERONE	fly	FBgn0037378	PSMG1	Q9VNI4	17	196	Proteasome assembly chaperone 1	w
+CHAPERONE	fly	FBgn0038577	CG12321	Q9VEC2	2	53	Proteasome assembly chaperone 2	w
+CHAPERONE	fly	FBgn0039869	Tbca	Q9V9U7	7	17	Tubulin-specific chaperone A	w
+CHAPERONE	fly	FBgn0050296	RIC-3	Q9W2N4	12	53	RIC3 acetylcholine receptor chaperone, isoform C (RIC3 acety	w
+CHAPERONE	fly	FBgn0051648	Cox11	Q9VMQ6	1	16	Cytochrome c oxidase copper chaperone COX11 (RE57459p)	w
+CHAPERONE	human	A0A2R8Y809	TBCE	A0A2R8Y809	1	5	Tubulin-specific chaperone E	w
+CHAPERONE	human	O14618	CCS	O14618	12	69	Copper chaperone for superoxide dismutase (Superoxide dismut	w
+CHAPERONE	human	O75347	TBCA	O75347	25	167	Tubulin-specific chaperone A (TCP1-chaperonin cofactor A) (T	w
+CHAPERONE	human	O76031	CLPX	O76031	14	188	ATP-dependent clpX-like chaperone, mitochondrial (EC 3.6.4.1	w
+CHAPERONE	human	O95429	BAG4	O95429	55	327	BAG family molecular chaperone regulator 4 (BAG-4) (Bcl-2-as	w
+CHAPERONE	human	O95456	PSMG1	O95456	34	379	Proteasome assembly chaperone 1 (PAC-1) (Chromosome 21 leuci	w
+CHAPERONE	human	O95816	BAG2	O95816	51	689	BAG family molecular chaperone regulator 2 (BAG-2) (Bcl-2-as	w
+CHAPERONE	human	O95817	BAG3	O95817	128	706	BAG family molecular chaperone regulator 3 (BAG-3) (Bcl-2-as	w
+CHAPERONE	human	P0DN25	C1GALT1C1L	P0DN25	3	16	C1GALT1-specific chaperone 1-like protein	w
+CHAPERONE	human	P11021	HSPA5	P11021	135	1351	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
+CHAPERONE	human	P46379	BAG6	P46379	80	439	Large proline-rich protein BAG6 (BAG family molecular chaper	w
+CHAPERONE	human	P48723	HSPA13	P48723	10	176	Heat shock 70 kDa protein 13 (Heat shock protein family A me	w
+CHAPERONE	human	P55209	NAP1L1	P55209	67	439	Nucleosome assembly protein 1-like 1 (Histone H2A-H2B chaper	w
+CHAPERONE	human	Q14061	COX17	Q14061	15	111	Cytochrome c oxidase copper chaperone	w
+CHAPERONE	human	Q14696	MESD	Q14696	24	146	LRP chaperone MESD (LDLR chaperone MESD) (Mesoderm developme	w
+CHAPERONE	human	Q15813	TBCE	Q15813	16	139	Tubulin-specific chaperone E (Tubulin-folding cofactor E)	w
+CHAPERONE	human	Q15814	TBCC	Q15814	20	70	Tubulin-specific chaperone C (Tubulin-folding cofactor C) (C	w
+CHAPERONE	human	Q16342	PDCD2	Q16342	13	121	uS5 assembly chaperone PDCD2 (Programmed cell death protein 	w
+CHAPERONE	human	Q16543	CDC37	Q16543	90	679	Hsp90 co-chaperone Cdc37 (Hsp90 chaperone protein kinase-tar	w
+CHAPERONE	human	Q53FP2	TMEM35A	Q53FP2	9	100	Novel acetylcholine receptor chaperone	w
+CHAPERONE	human	Q5JS54	PSMG4	Q5JS54	2	85	Proteasome assembly chaperone 4 (PAC-4) (hPAC4) (Proteasome 	w
+CHAPERONE	human	Q5QJ74	TBCEL	Q5QJ74	4	55	Tubulin-specific chaperone cofactor E-like protein (EL) (Leu	w
+CHAPERONE	human	Q7KZ85	SUPT6H	Q7KZ85	50	484	Transcription elongation factor SPT6 (hSPT6) (Histone chaper	w
+CHAPERONE	human	Q8N5I9	NOPCHAP1	Q8N5I9	9	104	NOP protein chaperone 1	w
+CHAPERONE	human	Q8NI60	COQ8A	Q8NI60	11	230	Atypical kinase COQ8A, mitochondrial (EC 2.7.-.-) (Chaperone	w
+CHAPERONE	human	Q969U7	PSMG2	Q969U7	10	135	Proteasome assembly chaperone 2 (PAC-2) (Hepatocellular carc	w
+CHAPERONE	human	Q96EU7	C1GALT1C1	Q96EU7	3	55	C1GALT1-specific chaperone 1 (C38H2-like protein 1) (C38H2-L	w
+CHAPERONE	human	Q96M98	PACRG	Q96M98	14	182	Parkin coregulated gene protein (Molecular chaperone/chapero	w
+CHAPERONE	human	Q96NT1	NAP1L5	Q96NT1	10	149	Nucleosome assembly protein 1-like 5 (Down-regulated in live	w
+CHAPERONE	human	Q99426	TBCB	Q99426	22	123	Tubulin-folding cofactor B (Cytoskeleton-associated protein 	w
+CHAPERONE	human	Q99457	NAP1L3	Q99457	8	49	Nucleosome assembly protein 1-like 3 (Histone chaperone NAP1	w
+CHAPERONE	human	Q99733	NAP1L4	Q99733	37	256	Nucleosome assembly protein 1-like 4 (Histone chaperone NAP1	w
+CHAPERONE	human	Q99933	BAG1	Q99933	72	560	BAG family molecular chaperone regulator 1 (BAG-1) (Bcl-2-as	w
+CHAPERONE	human	Q9BQA9	CYBC1	Q9BQA9	7	133	Cytochrome b-245 chaperone 1 (Essential for reactive oxygen 	w
+CHAPERONE	human	Q9BRP1	PDCD2L	Q9BRP1	21	133	uS5 assembly chaperone PDCD2L (Programmed cell death protein	w
+CHAPERONE	human	Q9BT73	PSMG3	Q9BT73	12	192	Proteasome assembly chaperone 3 (PAC-3) (hPAC3) (Proteasome 	w
+CHAPERONE	human	Q9BTW9	TBCD	Q9BTW9	19	253	Tubulin-specific chaperone D (Beta-tubulin cofactor D) (tfcD	w
+CHAPERONE	human	Q9HA92	RSAD1	Q9HA92	27	491	Radical S-adenosyl methionine domain-containing protein 1, m	w
+CHAPERONE	human	Q9NPJ1	MKKS	Q9NPJ1	20	186	Molecular chaperone MKKS (Bardet-Biedl syndrome 6 protein) (	w
+CHAPERONE	human	Q9NPQ8	RIC8A	Q9NPQ8	20	145	Chaperone Ric-8A (Synembryn-A)	w
+CHAPERONE	human	Q9NVN3	RIC8B	Q9NVN3	10	114	Chaperone Ric-8B (Brain synembryn) (hSyn) (Synembryn-B)	w
+CHAPERONE	human	Q9NVP2	ASF1B	Q9NVP2	45	150	Histone chaperone ASF1B (Anti-silencing function protein 1 h	w
+CHAPERONE	human	Q9UL15	BAG5	Q9UL15	17	399	BAG family molecular chaperone regulator 5 (BAG-5) (Bcl-2-as	w
+CHAPERONE	human	Q9ULW6	NAP1L2	Q9ULW6	8	60	Nucleosome assembly protein 1-like 2 (Brain-specific protein	w
+CHAPERONE	human	Q9Y276	BCS1L	Q9Y276	2	241	Mitochondrial chaperone BCS1 (h-BCS1) (EC 3.6.1.-) (BCS1-lik	w
+CHAPERONE	human	Q9Y294	ASF1A	Q9Y294	83	257	Histone chaperone ASF1A (Anti-silencing function protein 1 h	w
+CHAPERONE	worm	B1GRJ8	txt-6	B1GRJ8	0	70	Transcellular chaperone signaling (X)cross tissue	w
+CHAPERONE	worm	E2JL03	C25A1.20	E2JL03	0	24	Proteasome assembly chaperone 3	w
+CHAPERONE	worm	H2KYZ5	coel-1	H2KYZ5	0	1	Tubulin-specific chaperone cofactor E-like protein	w
+CHAPERONE	worm	O44739	bag-1	O44739	5	30	BAG family molecular chaperone regulator 1	w
+CHAPERONE	worm	P20163	hsp-4	P20163	30	127	Endoplasmic reticulum chaperone BiP homolog	w
+CHAPERONE	worm	Q17603	asfl-1	Q17603	15	32	Probable histone chaperone asf-1-like protein	w
+CHAPERONE	worm	Q18485	C35D10.5	Q18485	0	3	Ubiquinol-cytochrome c chaperone domain-containing protein	w
+CHAPERONE	worm	Q19326	unc-85	Q19326	15	37	Probable histone chaperone asf-1	w
+CHAPERONE	worm	Q19493	tbcd-1	Q19493	2	3	Tubulin-specific chaperone D	w
+CHAPERONE	worm	Q20068	tbce-1	Q20068	6	8	Tubulin-specific chaperone E	w
+CHAPERONE	worm	Q20728	tbcb-1	Q20728	2	19	Tubulin-specific chaperone B	w
+CHAPERONE	worm	Q20755	bcs-1	Q20755	0	1	Mitochondrial chaperone BCS1	w
+CHAPERONE	worm	Q95XR1	tbca-1	Q95XR1	10	14	Tubulin-specific chaperone A	w
+CHAPERONE	worm	Q9GSX9	ric-8	Q9GSX9	3	6	Chaperone ric-8	w
+CHAPERONE	worm	Q9TZ68	cox-17	Q9TZ68	2	29	Cytochrome c oxidase copper chaperone	w
+CHAPERONE	yeast	P02829	HSP82	P02829	24	388	ATP-dependent molecular chaperone HSP82	w
+CHAPERONE	yeast	P11484	SSB1	P11484	30	340	Ribosome-associated molecular chaperone SSB1	w
+CHAPERONE	yeast	P15108	HSC82	P15108	17	304	ATP-dependent molecular chaperone HSC82	w
+CHAPERONE	yeast	P16474	KAR2	P16474	30	251	Endoplasmic reticulum chaperone BiP	w
+CHAPERONE	yeast	P32447	ASF1	P32447	36	194	Histone chaperone ASF1	w
+CHAPERONE	yeast	P32839	BCS1	P32839	0	17	Mitochondrial chaperone BCS1	w
+CHAPERONE	yeast	P36040	ADD66	P36040	1	26	Proteasome assembly chaperone 2	w
+CHAPERONE	yeast	P38228	TCM62	P38228	2	36	Mitochondrial chaperone TCM62	w
+CHAPERONE	yeast	P38323	MCX1	P38323	0	25	ATP-dependent clpX-like chaperone, mitochondrial	w
+CHAPERONE	yeast	P38636	ATX1	P38636	0	40	Copper chaperone ATX1	w
+CHAPERONE	yeast	P38843	CHS7	P38843	1	25	Chitin synthase export chaperone	w
+CHAPERONE	yeast	P38966	VTC5	P38966	1	18	Vacuole transporter chaperone complex subunit 5	w
+CHAPERONE	yeast	P40019	CHZ1	P40019	1	18	Histone H2A.Z-specific chaperone CHZ1	w
+CHAPERONE	yeast	P40046	VTC1	P40046	1	46	Vacuolar transporter chaperone complex subunit 1	w
+CHAPERONE	yeast	P40150	SSB2	P40150	27	310	Ribosome-associated molecular chaperone SSB2	w
+CHAPERONE	yeast	P40161	RTT106	P40161	4	69	Histone chaperone RTT106	w
+CHAPERONE	yeast	P40202	CCS1	P40202	2	10	Superoxide dismutase 1 copper chaperone	w
+CHAPERONE	yeast	P40340	YTA7	P40340	1	150	ATPase histone chaperone YTA7	w
+CHAPERONE	yeast	P40358	JEM1	P40358	3	23	DnaJ-like chaperone JEM1	w
+CHAPERONE	yeast	P43585	VTC2	P43585	2	29	Vacuolar transporter chaperone complex subunit 2	w
+CHAPERONE	yeast	P46670	CIN2	P46670	2	5	Tubulin-specific chaperone C	w
+CHAPERONE	yeast	P47075	VTC4	P47075	4	42	Vacuolar transporter chaperone complex subunit 4	w
+CHAPERONE	yeast	P48606	RBL2	P48606	2	15	Tubulin-specific chaperone A	w
+CHAPERONE	yeast	P53303	ZPR1	P53303	1	18	Zinc finger chaperone ZPR1	w
+CHAPERONE	yeast	P53904	ALF1	P53904	2	5	Tubulin-specific chaperone B	w
+CHAPERONE	yeast	Q02725	VTC3	Q02725	2	36	Vacuolar transporter chaperone 3 complex subunit 3	w
+CHAPERONE	yeast	Q03771	ACL4	Q03771	0	59	Assembly chaperone of RPL4	w
+CHAPERONE	yeast	Q05778	PBA1	Q05778	2	29	Proteasome chaperone 1	w
+CHAPERONE	yeast	Q05931	SSQ1	Q05931	16	55	Iron-sulfur cluster biogenesis chaperone, mitochondrial	w
+CHAPERONE	yeast	Q07951	IRC25	Q07951	2	14	Proteasome chaperone 3	w
+CHAPERONE	yeast	Q12245	POC4	Q12245	1	20	Proteasome chaperone 4	w
+CHAPERONE	yeast	Q12287	COX17	Q12287	3	19	Cytochrome c oxidase copper chaperone	w
+CHAPERONE	zebrafish	A0A0R4IXD9	tbcd	A0A0R4IXD9	1	4	Tubulin-specific chaperone D	w
+CHAPERONE	zebrafish	A0A2R8QNS5	psmg4	A0A2R8QNS5	1	6	Proteasome (prosome, macropain) assembly chaperone 4	w
+CHAPERONE	zebrafish	A0A8M1N1F2	bag3	A0A8M1N1F2	25	129	BAG family molecular chaperone regulator 3	w
+CHAPERONE	zebrafish	A0A8M1PFF3	bag2	A0A8M1PFF3	7	50	BAG family molecular chaperone regulator 2	w
+CHAPERONE	zebrafish	A0A8M9QBU1	clpxa	A0A8M9QBU1	0	35	ATP-dependent clpX-like chaperone, mitochondrial	w
+CHAPERONE	zebrafish	A0AB13AA08	bag5	A0AB13AA08	1	46	BAG family molecular chaperone regulator 5	w
+CHAPERONE	zebrafish	A5PLC6	bag1	A5PLC6	0	75	BAG family molecular chaperone regulator 1	w
+CHAPERONE	zebrafish	B8JJ17	bag4	B8JJ17	7	52	BAG family molecular chaperone regulator 4	w
+CHAPERONE	zebrafish	E7F9J1	clpxb	E7F9J1	0	35	ATP-dependent clpX-like chaperone, mitochondrial	w
+CHAPERONE	zebrafish	E7FBK8	c1galt1c1	E7FBK8	1	15	C1GALT1-specific chaperone 1	w
+CHAPERONE	zebrafish	F1QCS3	ccs	F1QCS3	2	7	Copper chaperone for superoxide dismutase	w
+CHAPERONE	zebrafish	F1QJC8	tbcc	F1QJC8	3	7	Tubulin-specific chaperone C	w
+CHAPERONE	zebrafish	Q1LXS2	psmg2	Q1LXS2	2	33	Proteasome assembly chaperone 2	w
+CHAPERONE	zebrafish	Q58EL2	tmem35a	Q58EL2	0	2	Novel acetylcholine receptor chaperone	w
+CHAPERONE	zebrafish	Q5RGU1	coq8a	Q5RGU1	3	20	Atypical kinase COQ8A, mitochondrial (EC 2.7.-.-) (Chaperone	w
+CHAPERONE	zebrafish	Q5U378	tbce	Q5U378	6	13	Tubulin-specific chaperone E	w
+CHAPERONE	zebrafish	Q642H7	ric8a	Q642H7	0	24	Chaperone Ric-8A	w
+CHAPERONE	zebrafish	Q66I53	cox17	Q66I53	2	6	Cytochrome c oxidase copper chaperone	w
+CHAPERONE	zebrafish	Q6DG91	psmg1	Q6DG91	15	268	Proteasome assembly chaperone 1	w
+CHAPERONE	zebrafish	Q6DGH7	psmg3	Q6DGH7	1	11	Proteasome (Prosome, macropain) assembly Chaperone 3	w
+CHAPERONE	zebrafish	Q6DRJ9	ric8b	Q6DRJ9	0	22	Chaperone Ric-8B	w
+CHAPERONE	zebrafish	Q6NY34	asf1bb	Q6NY34	13	51	Histone chaperone asf1b-B	w
+CHAPERONE	zebrafish	Q6NYY4	asf1ba	Q6NYY4	15	51	Histone chaperone asf1b-A	w
+CHAPERONE	zebrafish	Q7ZV25	tbca	Q7ZV25	7	16	Tubulin-specific chaperone A	w
+CHAPERONE	zebrafish	Q7ZV60	bcs1l	Q7ZV60	2	96	Mitochondrial chaperone BCS1	w
+CHAPERONE	zebrafish	X1WHJ8	pet100	X1WHJ8	0	4	PET100 cytochrome c oxidase chaperone	w
+CHAPERONE-ABC1-LIKE	human	Q8NI60	COQ8A	Q8NI60	11	230	Atypical kinase COQ8A, mitochondrial (EC 2.7.-.-) (Chaperone	w
+CHAPERONE-ABC1-LIKE	zebrafish	Q5RGU1	coq8a	Q5RGU1	3	20	Atypical kinase COQ8A, mitochondrial (EC 2.7.-.-) (Chaperone	w
+CHAPERONIN	fly	FBgn0003676	CCT1	P12613	8	122	T-complex protein 1 subunit alpha (TCP-1-alpha) (CCT-alpha) 	w
+CHAPERONIN	fly	FBgn0011244	Hsp60B	Q9VPS5	9	74	60 kDa heat shock protein homolog 1, mitochondrial (60 kDa c	w
+CHAPERONIN	fly	FBgn0015019	CCT3	P48605	14	259	T-complex protein 1 subunit gamma (TCP-1-gamma) (CCT-gamma) 	w
+CHAPERONIN	fly	FBgn0031728	Hsp60C	Q9VMN5	3	59	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	w
+CHAPERONIN	human	A6NM43	CCT8L1P	A6NM43	11	68	Putative T-complex protein 1 subunit theta-like 1 (Chaperoni	w
+CHAPERONIN	human	P10809	HSPD1	P10809	31	1230	60 kDa heat shock protein, mitochondrial (EC 5.6.1.7) (60 kD	w
+CHAPERONIN	human	P17987	TCP1	P17987	28	646	T-complex protein 1 subunit alpha (TCP-1-alpha) (EC 3.6.1.-)	w
+CHAPERONIN	human	P40227	CCT6A	P40227	31	623	T-complex protein 1 subunit zeta (TCP-1-zeta) (EC 3.6.1.-) (	w
+CHAPERONIN	human	P48643	CCT5	P48643	17	604	T-complex protein 1 subunit epsilon (TCP-1-epsilon) (EC 3.6.	w
+CHAPERONIN	human	P49368	CCT3	P49368	21	796	T-complex protein 1 subunit gamma (TCP-1-gamma) (EC 3.6.1.-)	w
+CHAPERONIN	human	P50990	CCT8	P50990	18	514	T-complex protein 1 subunit theta (TCP-1-theta) (EC 3.6.1.-)	w
+CHAPERONIN	human	P50991	CCT4	P50991	25	594	T-complex protein 1 subunit delta (TCP-1-delta) (EC 3.6.1.-)	w
+CHAPERONIN	human	P61604	HSPE1	P61604	18	446	10 kDa heat shock protein, mitochondrial (Hsp10) (10 kDa cha	w
+CHAPERONIN	human	P78371	CCT2	P78371	31	692	T-complex protein 1 subunit beta (TCP-1-beta) (EC 3.6.1.-) (	w
+CHAPERONIN	human	Q92526	CCT6B	Q92526	23	348	Probable T-complex protein 1 subunit zeta-2 (TCP-1-zeta-2) (	w
+CHAPERONIN	human	Q96SF2	CCT8L2	Q96SF2	25	215	T-complex protein 1 subunit theta-like 2 (Chaperonin contain	w
+CHAPERONIN	human	Q99832	CCT7	Q99832	27	631	T-complex protein 1 subunit eta (TCP-1-eta) (EC 3.6.1.-) (CC	w
+CHAPERONIN	human	Q9NPJ1	MKKS	Q9NPJ1	20	186	Molecular chaperone MKKS (Bardet-Biedl syndrome 6 protein) (	w
+CHAPERONIN	worm	P50140	hsp-60	P50140	2	93	Chaperonin homolog Hsp-60, mitochondrial	w
+CHAPERONIN-BINDING	human	Q96M98	PACRG	Q96M98	14	182	Parkin coregulated gene protein (Molecular chaperone/chapero	w
+CHAPERONIN-CONTAINING	human	Q6ZW61	BBS12	Q6ZW61	6	34	Chaperonin-containing T-complex member BBS12 (Bardet-Biedl s	w
+CHAPERONIN-CONTAINING	zebrafish	Q7ZYX4	cct6a	Q7ZYX4	2	91	Chaperonin-containing TCP1, subunit 6A (zeta 1)	w
+CHAPSYN-110	human	Q15700	DLG2	Q15700	20	134	Disks large homolog 2 (Channel-associated protein of synapse	w
+CHARCOT-LEYDEN	human	Q05315	CLC	Q05315	17	71	Galectin-10 (Gal-10) (Charcot-Leyden crystal protein) (CLC) 	w
+CHARCOT-LEYDEN	human	Q8TCE9	LGALS14	Q8TCE9	6	63	Placental protein 13-like (Charcot-Leyden crystal protein 2)	w
+CHARGE	human	O14598	VCY	O14598	2	33	Testis-specific basic protein Y 1 (Basic charge, Y-linked 1)	w
+CHARGE	human	O14599	BPY2	O14599	0	11	Testis-specific basic protein Y 2 (Basic charge, Y-linked 2)	w
+CHARGE	human	P02760	AMBP	P02760	213	1422	Protein AMBP (Protein HC) [Cleaved into: Alpha-1-microglobul	w
+CHARGE	human	Q66K74	MAP1S	Q66K74	37	160	Microtubule-associated protein 1S (MAP-1S) (BPY2-interacting	w
+CHARGE	human	Q9H320	VCX	Q9H320	3	44	Variable charge X-linked protein 1 (Variable charge protein 	w
+CHARGE	human	Q9H321	VCX3B	Q9H321	0	30	Variable charge X-linked protein 3B (Variably charged protei	w
+CHARGE	human	Q9H322	VCX2	Q9H322	6	44	Variable charge X-linked protein 2 (Variable charge protein 	w
+CHARGE	human	Q9NNX9	VCX3A	Q9NNX9	1	27	Variable charge X-linked protein 3 (Variable charge protein 	w
+CHARGED	fly	FBgn0027565	CG5498	Q9Y124	2	25	Charged multivesicular body protein 7 (Chromatin-modifying p	w
+CHARGED	fly	FBgn0035589	CHMP2B	Q9VRJ5	4	36	Charged multivesicular body protein 2b (LD36173p)	w
+CHARGED	fly	FBgn0035715	Ist1	Q9VRY6	14	61	IST1 homolog (Charged multivesicular body protein 8)	w
+CHARGED	fly	FBgn0036740	Vps60	Q9VVI9	6	73	Charged multivesicular body protein 5 (Vacuolar protein-sort	w
+CHARGED	fly	FBgn0036805	Chmp1	Q95SH2	5	51	Charged multivesicular body protein 1, isoform A (Charged mu	w
+CHARGED	fly	FBgn0037231	Vps24	Q9VN02	6	61	Charged multivesicular body protein 3 (Chromatin-modifying p	w
+CHARGED	fly	FBgn0086656	shrb	Q8T0Q4	27	238	Charged multivesicular body protein 4 (CHMP4) (ESCRT-III com	w
+CHARGED	human	O14598	VCY	O14598	2	33	Testis-specific basic protein Y 1 (Basic charge, Y-linked 1)	w
+CHARGED	human	O14599	BPY2	O14599	0	11	Testis-specific basic protein Y 2 (Basic charge, Y-linked 2)	w
+CHARGED	human	O43633	CHMP2A	O43633	19	161	Charged multivesicular body protein 2a (Chromatin-modifying 	w
+CHARGED	human	P53990	IST1	P53990	27	137	IST1 homolog (hIST1) (Charged multivesicular body protein 8)	w
+CHARGED	human	P59074	CHMP4BP1	P59074	6	20	Putative charged multivesicular body protein 4B-like protein	w
+CHARGED	human	Q7LBR1	CHMP1B	Q7LBR1	8	101	Charged multivesicular body protein 1b (CHMP1.5) (Chromatin-	w
+CHARGED	human	Q8WUX9	CHMP7	Q8WUX9	9	147	Charged multivesicular body protein 7 (Chromatin-modifying p	w
+CHARGED	human	Q96CF2	CHMP4C	Q96CF2	45	772	Charged multivesicular body protein 4c (Chromatin-modifying 	w
+CHARGED	human	Q96FZ7	CHMP6	Q96FZ7	14	127	Charged multivesicular body protein 6 (Chromatin-modifying p	w
+CHARGED	human	Q9BY43	CHMP4A	Q9BY43	21	137	Charged multivesicular body protein 4a (Chromatin-modifying 	w
+CHARGED	human	Q9H320	VCX	Q9H320	3	44	Variable charge X-linked protein 1 (Variable charge protein 	w
+CHARGED	human	Q9H321	VCX3B	Q9H321	0	30	Variable charge X-linked protein 3B (Variably charged protei	w
+CHARGED	human	Q9H322	VCX2	Q9H322	6	44	Variable charge X-linked protein 2 (Variable charge protein 	w
+CHARGED	human	Q9H444	CHMP4B	Q9H444	36	726	Charged multivesicular body protein 4b (Chromatin-modifying 	w
+CHARGED	human	Q9HD42	CHMP1A	Q9HD42	9	145	Charged multivesicular body protein 1a (Chromatin-modifying 	w
+CHARGED	human	Q9NNX9	VCX3A	Q9NNX9	1	27	Variable charge X-linked protein 3 (Variable charge protein 	w
+CHARGED	human	Q9NQZ2	UTP3	Q9NQZ2	66	342	Something about silencing protein 10 (Charged amino acid-ric	w
+CHARGED	human	Q9NZZ3	CHMP5	Q9NZZ3	21	178	Charged multivesicular body protein 5 (Chromatin-modifying p	w
+CHARGED	human	Q9UQN3	CHMP2B	Q9UQN3	11	143	Charged multivesicular body protein 2b (CHMP2.5) (Chromatin-	w
+CHARGED	human	Q9Y3E7	CHMP3	Q9Y3E7	23	197	Charged multivesicular body protein 3 (Chromatin-modifying p	w
+CHARGED	worm	O02208	C01A2.4	O02208	1	27	Charged multivesicular body protein 2b	w
+CHARGED	worm	O16458	vps-60	O16458	4	11	Charged multivesicular body protein 5	w
+CHARGED	worm	Q18886	vps-32.1	Q18886	9	39	Charged multivesicular body protein 4b	w
+CHARGED	worm	Q21959	CELE_R12C12.5	Q21959	8	34	Charged multivesicular body protein 4b	w
+CHARGED	worm	Q22718	chmp-7	Q22718	4	26	Charged multivesicular body protein 7	w
+CHARGED	worm	Q9BL60	vps-20	Q9BL60	5	33	Charged multivesicular body protein 6	w
+CHARGED	worm	Q9GYK4	vps-24	Q9GYK4	3	34	Charged multivesicular body protein 3	w
+CHARGED	worm	Q9TXI3	did-2	Q9TXI3	3	30	Charged multivesicular body protein 1b	w
+CHARGED	worm	Q9U2F6	vps-2	Q9U2F6	3	38	Charged multivesicular body protein 2a	w
+CHARGED	zebrafish	A0A0R4IS77	chmp6a	A0A0R4IS77	7	42	Charged multivesicular body protein 6 isoform X2	w
+CHARGED	zebrafish	B0UXH0	chmp2ba	B0UXH0	3	28	Charged multivesicular body protein 2Ba	w
+CHARGED	zebrafish	Q503V0	chmp6	Q503V0	8	48	Charged multivesicular body protein 6	w
+CHARGED	zebrafish	Q6IQ73	chmp4c	Q6IQ73	9	47	Charged multivesicular body protein 4c	w
+CHARGED	zebrafish	Q6NXD2	chmp2b	Q6NXD2	3	28	Charged multivesicular body protein 2b	w
+CHARGED	zebrafish	Q6NY88	chmp3	Q6NY88	8	87	Charged multivesicular body protein 3	w
+CHARGED	zebrafish	Q6PBQ2	chmp7	Q6PBQ2	0	33	Charged multivesicular body protein 7	w
+CHARGED	zebrafish	Q6PHF0	chmp1a	Q6PHF0	6	38	Charged multivesicular body protein 1a	w
+CHARGED	zebrafish	Q7T339	chmp5	Q7T339	6	20	Charged multivesicular body protein 5	w
+CHARGED	zebrafish	Q7ZVB1	chmp1b	Q7ZVB1	3	38	Charged multivesicular body protein 1b	w
+CHARGED	zebrafish	Q7ZVC4	chmp4b	Q7ZVC4	10	43	Charged multivesicular body protein 4b	w
+CHARGED	zebrafish	Q7ZW25	chmp2a	Q7ZW25	6	54	Charged multivesicular body protein 2a	w
+CHARK	oryza-sativa-subsp-japonica	Q2QRN7	CHARK	Q2QRN7	4	22	Probable kinase CHARK	
+CHARLATAN	fly	FBgn0015371	chn	A0A0B4K7A3	24	124	Charlatan, isoform F (Charlatan, isoform G)	w
+CHARON	fly	FBgn0031317	Charon	Q9VPY3	4	47	Charon (LD04951p)	w
+CHARON	fly	FBgn0031317	Charon	Q9VPY3	4	47	Charon (LD04951p)	w
+CHARYBDE	fly	FBgn0036165	chrb	Q9VTI8	6	32	Protein charybde (Protein charybdis) (Protein regulated in d	w
+CHARYBDIS	fly	FBgn0036165	chrb	Q9VTI8	6	32	Protein charybde (Protein charybdis) (Protein regulated in d	w
+CHAS	fly	FBgn0263258	chas	X2JE77	2	3	Chascon, isoform D	
+CHASCON	fly	FBgn0263258	chas	X2JE77	2	3	Chascon, isoform D	w
+CHASKI	fly	FBgn0033095	chk	Q8T043	0	7	Chaski, isoform A (Chaski, isoform B) (Chaski, isoform C) (L	w
+CHAT	fly	FBgn0000303	ChAT	P07668	2	19	Choline O-acetyltransferase (CHOACTase) (Choline acetylase) 	
+CHAT	human	P28329	CHAT	P28329	5	99	Choline O-acetyltransferase (CHOACTase) (ChAT) (Choline acet	
+CHAT	mus-musculus	Q03059	Chat	Q03059	0	3	Choline O-acetyltransferase	
+CHAT	rattus-norvegicus	P32738	Chat	P32738	0	2	Choline O-acetyltransferase	
+CHAT	zebrafish	B2ZGJ1	chat	B2ZGJ1	0	1	Choline O-acetyltransferase	
+CHAT-1	worm	H2L0H3	chat-1	H2L0H3	3	18	CDC50 family protein chat-1	w
+CHAT-1	worm	H2L0H3	chat-1	H2L0H3	3	18	CDC50 family protein chat-1	w
+CHAT-H	human	Q8N5H7	SH2D3C	Q8N5H7	55	325	SH2 domain-containing protein 3C (Cas/HEF1-associated signal	w

@@ -1,15 +1,69 @@
-CAV1	mus-musculus	P49817	Cav1	P49817	6	235	Caveolin-1
-CAV1	rattus-norvegicus	P41350	Cav1	P41350	4	174	Caveolin-1
-CAV2	mus-musculus	Q9WVC3	Cav2	Q9WVC3	3	39	Caveolin-2
-CAV2	rattus-norvegicus	Q2IBC5	Cav2	Q2IBC5	2	40	Caveolin-2
-CAV3	mus-musculus	P51637	Cav3	P51637	3	178	Caveolin-3
-CAV3	rattus-norvegicus	P51638	Cav3	P51638	3	97	Caveolin-3
-CAVBCON	schistosoma-mansoni	A0A2H4UCT2	CavBcon	A0A2H4UCT2	1	8	Voltage-operated calcium channel beta subunit
-CAVIN1	mus-musculus	O54724	Cavin1	O54724	5	63	Caveolae-associated protein 1
-CAVIN1	rattus-norvegicus	P85125	Cavin1	P85125	5	49	Caveolae-associated protein 1
-CAVIN2	mus-musculus	Q63918	Cavin2	Q63918	3	8	Caveolae-associated protein 2
-CAVIN2	rattus-norvegicus	Q66H98	Cavin2	Q66H98	3	7	Caveolae-associated protein 2
-CAVIN3	mus-musculus	Q91VJ2	Cavin3	Q91VJ2	3	13	Caveolae-associated protein 3
-CAVIN3	rattus-norvegicus	Q9Z1H9	Cavin3	Q9Z1H9	3	11	Caveolae-associated protein 3
-CAVIN4	mus-musculus	A2AMM0	Cavin4	A2AMM0	3	6	Caveolae-associated protein 4
-CAVIN4	rattus-norvegicus	B1PRL5	Cavin4	B1PRL5	3	5	Caveolae-associated protein 4
+CAV	fly	FBgn0026257	cav	Q95RV2	7	51	Telomere-binding protein cav (Anonymous fast evolving 1G5) (	
+CAV	human	Q03135	CAV1	Q03135	49	1057		
+CAV-1	worm	Q94051	cav-1	Q94051	1	71	Caveolin-1	
+CAV-2	worm	Q18879	cav-2	Q18879	3	75	Caveolin-2	
+CAV1	human	O60840	CACNA1F	O60840	2	29	Voltage-dependent L-type calcium channel subunit alpha-1F (V	w
+CAV1	human	Q03135	CAV1	Q03135	49	1057	Caveolin-1	
+CAV1	mus-musculus	P49817	Cav1	P49817	6	235	Caveolin-1	
+CAV1	rattus-norvegicus	P41350	Cav1	P41350	4	174	Caveolin-1	
+CAV1	zebrafish	Q6YLH9	cav1	Q6YLH9	9	149	Caveolin	
+CAV1_HUMAN	human	Q03135	CAV1	Q03135	49	1057		
+CAV2	human	P51636	CAV2	P51636	2	229	Caveolin-2	
+CAV2	mus-musculus	Q9WVC3	Cav2	Q9WVC3	3	39	Caveolin-2	
+CAV2	rattus-norvegicus	Q2IBC5	Cav2	Q2IBC5	2	40	Caveolin-2	
+CAV2_HUMAN	human	P51636	CAV2	P51636	2	229		
+CAV3	human	O43497	CACNA1G	O43497	8	209	Voltage-dependent T-type calcium channel subunit alpha-1G (C	w
+CAV3	human	P56539	CAV3	P56539	3	291	Caveolin-3 (M-caveolin)	
+CAV3	human	Q9P0X4	CACNA1I	Q9P0X4	2	130	Voltage-dependent T-type calcium channel subunit alpha-1I (V	w
+CAV3	mus-musculus	P51637	Cav3	P51637	3	178	Caveolin-3	
+CAV3	rattus-norvegicus	P51638	Cav3	P51638	3	97	Caveolin-3	
+CAV3	zebrafish	Q6YLH7	cav3	Q6YLH7	1	127	Caveolin	
+CAV3_HUMAN	human	P56539	CAV3	P56539	3	291		
+CAV4A	zebrafish	A0AB40EBS7	cav4a	A0AB40EBS7	0	20	Caveolin	
+CAVBCON	schistosoma-mansoni	A0A2H4UCT2	CavBcon	A0A2H4UCT2	1	8	Voltage-operated calcium channel beta subunit	
+CAVEOLAE-ASSOCIATED	human	O95810	CAVIN2	O95810	21	194	Caveolae-associated protein 2 (Cavin-2) (PS-p68) (Phosphatid	w
+CAVEOLAE-ASSOCIATED	human	Q5BKX8	CAVIN4	Q5BKX8	9	46	Caveolae-associated protein 4 (Muscle-related coiled-coil pr	w
+CAVEOLAE-ASSOCIATED	human	Q6NZI2	CAVIN1	Q6NZI2	69	434	Caveolae-associated protein 1 (Cavin-1) (Polymerase I and tr	w
+CAVEOLAE-ASSOCIATED	human	Q969G5	CAVIN3	Q969G5	31	181	Caveolae-associated protein 3 (Cavin-3) (Protein kinase C de	w
+CAVEOLAE-ASSOCIATED	zebrafish	A6NA21	cavin1b	A6NA21	3	38	Caveolae-associated protein 1b	w
+CAVEOLAE-ASSOCIATED	zebrafish	E7F0K3	cavin1a	E7F0K3	4	12	Caveolae-associated protein 1	w
+CAVEOLAE-ASSOCIATED	zebrafish	F1Q688	cavin2a	F1Q688	2	5	Caveolae-associated protein 2a	w
+CAVEOLAE-ASSOCIATED	zebrafish	F1R665	cavin2b	F1R665	2	5	Caveolae-associated protein 2b	w
+CAVEOLIN	zebrafish	A0AB40EBS7	cav4a	A0AB40EBS7	0	20	Caveolin	w
+CAVEOLIN	zebrafish	Q6YLH7	cav3	Q6YLH7	1	127	Caveolin	w
+CAVEOLIN	zebrafish	Q6YLH9	cav1	Q6YLH9	9	149	Caveolin	w
+CAVEOLIN-1	human	Q03135	CAV1	Q03135	49	1057	Caveolin-1	w
+CAVEOLIN-1	worm	Q94051	cav-1	Q94051	1	71	Caveolin-1	w
+CAVEOLIN-2	human	P51636	CAV2	P51636	2	229	Caveolin-2	w
+CAVEOLIN-2	worm	Q18879	cav-2	Q18879	3	75	Caveolin-2	w
+CAVEOLIN-3	human	P56539	CAV3	P56539	3	291	Caveolin-3 (M-caveolin)	w
+CAVERNOUS	fly	FBgn0038331	Ccm3	Q9VF70	4	31	Cerebral cavernous malformation 3 (RE18871p)	w
+CAVERNOUS	human	O00522	KRIT1	O00522	31	246	Krev interaction trapped protein 1 (Krev interaction trapped	w
+CAVERNOUS	human	Q9BSQ5	CCM2	Q9BSQ5	28	142	Cerebral cavernous malformations 2 protein (Malcavernin)	w
+CAVERNOUS	human	Q9BUL8	PDCD10	Q9BUL8	38	203	Programmed cell death protein 10 (Cerebral cavernous malform	w
+CAVERNOUS	human	Q9NUG4	CCM2L	Q9NUG4	1	9	Cerebral cavernous malformations 2 protein-like (CCM2-like)	w
+CAVERNOUS	worm	Q9TXI9	ccm-2	Q9TXI9	1	7	CCM (Cerebral Cavernous Malformation) gene homolog	w
+CAVERNOUS	zebrafish	Q6DRP4	ccm2	Q6DRP4	7	18	Cerebral cavernous malformations protein 2 homolog	w
+CAVIN-1	human	Q6NZI2	CAVIN1	Q6NZI2	69	434	Caveolae-associated protein 1 (Cavin-1) (Polymerase I and tr	w
+CAVIN-2	human	O95810	CAVIN2	O95810	21	194	Caveolae-associated protein 2 (Cavin-2) (PS-p68) (Phosphatid	w
+CAVIN-3	human	Q969G5	CAVIN3	Q969G5	31	181	Caveolae-associated protein 3 (Cavin-3) (Protein kinase C de	w
+CAVIN1	human	Q6NZI2	CAVIN1	Q6NZI2	69	434	Caveolae-associated protein 1 (Cavin-1) (Polymerase I and tr	
+CAVIN1	mus-musculus	O54724	Cavin1	O54724	5	63	Caveolae-associated protein 1	
+CAVIN1	rattus-norvegicus	P85125	Cavin1	P85125	5	49	Caveolae-associated protein 1	
+CAVIN1A	zebrafish	E7F0K3	cavin1a	E7F0K3	4	12	Caveolae-associated protein 1	
+CAVIN1B	zebrafish	A6NA21	cavin1b	A6NA21	3	38	Caveolae-associated protein 1b	
+CAVIN2	human	O95810	CAVIN2	O95810	21	194	Caveolae-associated protein 2 (Cavin-2) (PS-p68) (Phosphatid	
+CAVIN2	mus-musculus	Q63918	Cavin2	Q63918	3	8	Caveolae-associated protein 2	
+CAVIN2	rattus-norvegicus	Q66H98	Cavin2	Q66H98	3	7	Caveolae-associated protein 2	
+CAVIN2A	zebrafish	F1Q688	cavin2a	F1Q688	2	5	Caveolae-associated protein 2a	
+CAVIN2B	zebrafish	F1R665	cavin2b	F1R665	2	5	Caveolae-associated protein 2b	
+CAVIN3	human	Q969G5	CAVIN3	Q969G5	31	181	Caveolae-associated protein 3 (Cavin-3) (Protein kinase C de	
+CAVIN3	mus-musculus	Q91VJ2	Cavin3	Q91VJ2	3	13	Caveolae-associated protein 3	
+CAVIN3	rattus-norvegicus	Q9Z1H9	Cavin3	Q9Z1H9	3	11	Caveolae-associated protein 3	
+CAVIN4	human	Q5BKX8	CAVIN4	Q5BKX8	9	46	Caveolae-associated protein 4 (Muscle-related coiled-coil pr	
+CAVIN4	mus-musculus	A2AMM0	Cavin4	A2AMM0	3	6	Caveolae-associated protein 4	
+CAVIN4	rattus-norvegicus	B1PRL5	Cavin4	B1PRL5	3	5	Caveolae-associated protein 4	
+CAVN1_HUMAN	human	Q6NZI2	CAVIN1	Q6NZI2	69	434		
+CAVN2_HUMAN	human	O95810	CAVIN2	O95810	21	194		
+CAVN3_HUMAN	human	Q969G5	CAVIN3	Q969G5	31	181		
+CAVN4_HUMAN	human	Q5BKX8	CAVIN4	Q5BKX8	9	46		

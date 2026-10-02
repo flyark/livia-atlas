@@ -41,7 +41,8 @@
   "edges": "edges.tsv",
   "sequences": "seqs.fasta",
   "bundle": "b/{id}.zip",
-  "sequence": "s/{id}.fa"
+  "sequence": "s/{id}.fa",
+  "offsetShards": true
  },
  "nameKey": "id"
 }

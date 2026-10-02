@@ -1,33 +1,149 @@
-HYPA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PHP0	hypA	Q9PHP0	1	42	Hydrogenase maturation factor HypA
-HYPA	escherichia-coli-83333	P0A700	hypA	P0A700	1	12	Hydrogenase maturation factor HypA
-HYPA	helicobacter-pylori	P0A0U4	hypA	P0A0U4	2	25	Hydrogenase/urease maturation factor HypA
-HYPA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H1Y0	hypA	A0A0H3H1Y0	4	76	Hydrogenase maturation factor HypA
-HYPA	methanocaldococcus-jannaschii	Q57667	hypA	Q57667	0	5	Hydrogenase maturation factor HypA
-HYPA	salmonella-typhimurium	P64419	hypA	P64419	1	15	Hydrogenase maturation factor HypA
-HYPA	salmonella-typhimurium	Q8ZPH6	hypA	Q8ZPH6	3	13	Hydrogenase maturation factor HypA
-HYPA	shigella-dysenteriae-serotype-1	Q32CK5	hypA	Q32CK5	1	18	Hydrogenase maturation factor HypA
-HYPB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP4	hypB	Q0PAP4	1	2	Hydrogenase isoenzymes formation protein
-HYPB	escherichia-coli-83333	P0AAN3	hypB	P0AAN3	1	3	Hydrogenase maturation factor HypB
-HYPB	helicobacter-pylori	O25560	hypB	O25560	1	7	Hydrogenase/urease maturation factor HypB
-HYPB	methanocaldococcus-jannaschii	Q57884	hypB	Q57884	0	3	Probable hydrogenase maturation factor HypB
-HYPB	salmonella-typhimurium	Q8ZMI7	hypB	Q8ZMI7	3	6	Hydrogenase maturation factor HypB
-HYPB	shigella-dysenteriae-serotype-1	Q32CK4	hypB	Q32CK4	2	7	Hydrogenase maturation factor HypB
-HYPC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP3	hypC	Q0PAP3	4	100	Hydrogenase isoenzymes formation protein
-HYPC	escherichia-coli-83333	P0AAM3	hypC	P0AAM3	1	11	Hydrogenase maturation factor HypC
-HYPC	salmonella-typhimurium	Q7CPX9	hypC	Q7CPX9	1	8	Hydrogenase maturation factor HypC
-HYPC	shigella-dysenteriae-serotype-1	Q32CK3	hypC	Q32CK3	1	10	Hydrogenase maturation factor HypC
-HYPD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP2	hypD	Q0PAP2	2	6	Hydrogenase isoenzymes formation protein
-HYPD	escherichia-coli-83333	P24192	hypD	P24192	3	6	Hydrogenase maturation factor HypD
-HYPD	salmonella-typhimurium	Q8ZMI6	hypD	Q8ZMI6	4	12	Hydrogenase maturation factor
-HYPD	shigella-dysenteriae-serotype-1	Q32CK2	hypD	Q32CK2	3	8	Hydrogenase maturation factor
-HYPE	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP1	hypE	Q0PAP1	2	43	Hydrogenase isoenzymes formation protein
-HYPE	escherichia-coli-83333	P24193	hypE	P24193	2	7	Carbamoyl dehydratase HypE
-HYPE	salmonella-typhimurium	Q8ZMI5	hypE	Q8ZMI5	2	12	Hydrogenase expression/formation protein
-HYPE	shigella-dysenteriae-serotype-1	Q32CK1	hypE	Q32CK1	2	7	HypE
-HYPF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP5	hypF	Q0PAP5	1	5	Carbamoyltransferase
-HYPF	escherichia-coli-83333	P30131	hypF	P30131	1	8	Carbamoyltransferase HypF
-HYPF	methanocaldococcus-jannaschii	Q58123	hypF	Q58123	1	6	Probable carbamoyltransferase HypF
-HYPF	salmonella-typhimurium	Q8ZMJ5	hypF	Q8ZMJ5	1	12	Carbamoyltransferase HypF
-HYPF	shigella-dysenteriae-serotype-1	Q32CL6	hypF	Q32CL6	1	9	Carbamoyltransferase HypF
-HYPK	mus-musculus	Q9CR41	Hypk	Q9CR41	2	16	Huntingtin-interacting protein K
-HYPO	salmonella-typhimurium	Q7CPS8	hypO	Q7CPS8	8	12	Hydrogenase-2 small chain
+HYP	virus	A0A193CDU4	hyp	A0A193CDU4	0	3	A0A193CDU4_9VIRU	
+HYP2	yeast	P23301	HYP2	P23301	10	248	Eukaryotic translation initiation factor 5A-1	
+HYPA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PHP0	hypA	Q9PHP0	1	42	Hydrogenase maturation factor HypA	
+HYPA	escherichia-coli-83333	P0A700	hypA	P0A700	1	12	Hydrogenase maturation factor HypA	
+HYPA	helicobacter-pylori	P0A0U4	hypA	P0A0U4	2	25	Hydrogenase/urease maturation factor HypA	
+HYPA	human	O75400	PRPF40A	O75400	95	569		
+HYPA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H1Y0	hypA	A0A0H3H1Y0	4	76	Hydrogenase maturation factor HypA	
+HYPA	methanocaldococcus-jannaschii	Q57667	hypA	Q57667	0	5	Hydrogenase maturation factor HypA	
+HYPA	salmonella-typhimurium	P64419	hypA	P64419	1	15	Hydrogenase maturation factor HypA	
+HYPA	salmonella-typhimurium	Q8ZPH6	hypA	Q8ZPH6	3	13	Hydrogenase maturation factor HypA	
+HYPA	shigella-dysenteriae-serotype-1	Q32CK5	hypA	Q32CK5	1	18	Hydrogenase maturation factor HypA	
+HYPB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP4	hypB	Q0PAP4	1	2	Hydrogenase isoenzymes formation protein	
+HYPB	escherichia-coli-83333	P0AAN3	hypB	P0AAN3	1	3	Hydrogenase maturation factor HypB	
+HYPB	helicobacter-pylori	O25560	hypB	O25560	1	7	Hydrogenase/urease maturation factor HypB	
+HYPB	human	Q9BYW2	SETD2	Q9BYW2	49	312		
+HYPB	methanocaldococcus-jannaschii	Q57884	hypB	Q57884	0	3	Probable hydrogenase maturation factor HypB	
+HYPB	salmonella-typhimurium	Q8ZMI7	hypB	Q8ZMI7	3	6	Hydrogenase maturation factor HypB	
+HYPB	shigella-dysenteriae-serotype-1	Q32CK4	hypB	Q32CK4	2	7	Hydrogenase maturation factor HypB	
+HYPC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP3	hypC	Q0PAP3	4	100	Hydrogenase isoenzymes formation protein	
+HYPC	escherichia-coli-83333	P0AAM3	hypC	P0AAM3	1	11	Hydrogenase maturation factor HypC	
+HYPC	human	Q6NWY9	PRPF40B	Q6NWY9	24	169		
+HYPC	salmonella-typhimurium	Q7CPX9	hypC	Q7CPX9	1	8	Hydrogenase maturation factor HypC	
+HYPC	shigella-dysenteriae-serotype-1	Q32CK3	hypC	Q32CK3	1	10	Hydrogenase maturation factor HypC	
+HYPD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP2	hypD	Q0PAP2	2	6	Hydrogenase isoenzymes formation protein	
+HYPD	escherichia-coli-83333	P24192	hypD	P24192	3	6	Hydrogenase maturation factor HypD	
+HYPD	salmonella-typhimurium	Q8ZMI6	hypD	Q8ZMI6	4	12	Hydrogenase maturation factor	
+HYPD	shigella-dysenteriae-serotype-1	Q32CK2	hypD	Q32CK2	3	8	Hydrogenase maturation factor	
+HYPDH	human	Q9UF12	PRODH2	Q9UF12	1	38		
+HYPDH_HUMAN	human	Q9UF12	PRODH2	Q9UF12	1	38		
+HYPE	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP1	hypE	Q0PAP1	2	43	Hydrogenase isoenzymes formation protein	
+HYPE	escherichia-coli-83333	P24193	hypE	P24193	2	7	Carbamoyl dehydratase HypE	
+HYPE	human	Q9BVA6	FICD	Q9BVA6	6	27		
+HYPE	salmonella-typhimurium	Q8ZMI5	hypE	Q8ZMI5	2	12	Hydrogenase expression/formation protein	
+HYPE	shigella-dysenteriae-serotype-1	Q32CK1	hypE	Q32CK1	2	7	HypE	
+HYPERCHOLESTEROLEMIA	human	Q5SW96	LDLRAP1	Q5SW96	18	81	Low density lipoprotein receptor adapter protein 1 (Autosoma	w
+HYPEREOSINOPHILIA	human	Q6UN15	FIP1L1	Q6UN15	68	341	Pre-mRNA 3'-end-processing factor FIP1 (hFip1) (FIP1-like 1 	w
+HYPERKINETIC	fly	FBgn0263220	Hk	M9PHI0	0	11	Hyperkinetic, isoform M	w
+HYPERMETHYLATED	human	Q14526	HIC1	Q14526	15	117	Hypermethylated in cancer 1 protein (Hic-1) (Zinc finger and	w
+HYPERMETHYLATED	human	Q96JB3	HIC2	Q96JB3	25	85	Hypermethylated in cancer 2 protein (Hic-2) (HIC1-related ge	w
+HYPERMETHYLATED	zebrafish	Q70ZY9	hic1	Q70ZY9	0	5	Hypermethylated in cancer 1 protein	w
+HYPERMETHYLATED	zebrafish	Q90W33	hic2	Q90W33	0	5	Hypermethylated in cancer 2 protein	w
+HYPERPARATHYROIDISM	human	Q6P1J9	CDC73	Q6P1J9	105	675	Parafibromin (Cell division cycle protein 73 homolog) (Hyper	w
+HYPERPLASTIC	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8	Hyperplastic discs, isoform B	w
+HYPERPLASTIC	human	O95071	UBR5	O95071	16	560	E3 ubiquitin-protein ligase UBR5 (EC 2.3.2.26) (E3 ubiquitin	w
+HYPERPLASTIC	human	Q9UIK5	TMEFF2	Q9UIK5	16	60	Tomoregulin-2 (TR-2) (Hyperplastic polyposis protein 1) (Tra	w
+HYPERPOLARIZATION-ACTIVATED	human	O60741	HCN1	O60741	37	172	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+HYPERPOLARIZATION-ACTIVATED	human	Q9P1Z3	HCN3	Q9P1Z3	35	121	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+HYPERPOLARIZATION-ACTIVATED	human	Q9UL51	HCN2	Q9UL51	31	116	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+HYPERPOLARIZATION-ACTIVATED	human	Q9Y3Q4	HCN4	Q9Y3Q4	50	178	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+HYPERPOLARIZATION-ACTIVATED	zebrafish	A0A0R4IRW0	hcn1	A0A0R4IRW0	2	2	Hyperpolarization-activated cyclic nucleotide-gated potassiu	w
+HYPERPOLARIZATION-ACTIVATED	zebrafish	A0A8N7UQR8	hcn4	A0A8N7UQR8	2	2	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+HYPERPOLARIZATION-ACTIVATED	zebrafish	F6NQL8	hcn3	F6NQL8	2	2	Hyperpolarization-activated cyclic nucleotide-gated potassiu	w
+HYPERSENSITIVE	worm	Q23647	hpo-40	Q23647	0	19	Hypersensitive to pore-forming toxin protein 40	w
+HYPERSENSITIVE	yeast	P32623	UTR2	P32623	0	11	Congo red hypersensitive protein 2	w
+HYPERSENSITIVE	yeast	P53301	CRH1	P53301	0	6	Congo red hypersensitive protein 1	w
+HYPERSENSITIVITY	yeast	P39982	HHY1	P39982	0	1	Hypersensitivity to hygromycin-B protein 1	w
+HYPERTENSION-RELATED	human	Q9GZQ3	COMMD5	Q9GZQ3	37	312	COMM domain-containing protein 5 (Hypertension-related calci	w
+HYPERTREHALOSAEMIC	fly	FBgn0004552	Akh	P61855	28	272	Adipokinetic hormone (Hypertrehalosaemic hormone) (HRTH) (dA	w
+HYPERTROPHIC	human	P29279	CCN2	P29279	55	487	CCN family member 2 (Cellular communication network factor 2	w
+HYPF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAP5	hypF	Q0PAP5	1	5	Carbamoyltransferase	
+HYPF	escherichia-coli-83333	P30131	hypF	P30131	1	8	Carbamoyltransferase HypF	
+HYPF	human	Q9GZV9	FGF23	Q9GZV9	32	195		
+HYPF	methanocaldococcus-jannaschii	Q58123	hypF	Q58123	1	6	Probable carbamoyltransferase HypF	
+HYPF	salmonella-typhimurium	Q8ZMJ5	hypF	Q8ZMJ5	1	12	Carbamoyltransferase HypF	
+HYPF	shigella-dysenteriae-serotype-1	Q32CL6	hypF	Q32CL6	1	9	Carbamoyltransferase HypF	
+HYPH	human	Q8IUH5	ZDHHC17	Q8IUH5	61	319		
+HYPJ	human	O94973	AP2A2	O94973	54	415		
+HYPK	human	Q9NX55	HYPK	Q9NX55	19	197	Huntingtin-interacting protein K (Huntingtin yeast partner K	
+HYPK	mus-musculus	Q9CR41	Hypk	Q9CR41	2	16	Huntingtin-interacting protein K	
+HYPK	zebrafish	B1WB51	hypk	B1WB51	2	12	Huntingtin-interacting protein K	
+HYPK_HUMAN	human	Q9NX55	HYPK	Q9NX55	19	197		
+HYPL	human	Q96CV9	OPTN	Q96CV9	132	546		
+HYPM	human	O75409	H2AP	O75409	36	205		
+HYPM_HUMAN	human	O75409	H2AP	O75409	36	205		
+HYPO	salmonella-typhimurium	Q7CPS8	hypO	Q7CPS8	8	12	Hydrogenase-2 small chain	
+HYPOCRETIN	human	O43612	HCRT	O43612	36	288	Hypocretin neuropeptide precursor (Hypocretin) (Hcrt) (Orexi	w
+HYPOCRETIN	human	O43613	HCRTR1	O43613	11	135	Orexin/Hypocretin receptor type 1 (Hypocretin receptor type 	w
+HYPOCRETIN	human	O43614	HCRTR2	O43614	8	123	Orexin receptor type 2 (Ox-2-R) (Ox2-R) (Ox2R) (Hypocretin r	w
+HYPOCRETIN-1	human	O43612	HCRT	O43612	36	288	Hypocretin neuropeptide precursor (Hypocretin) (Hcrt) (Orexi	w
+HYPOGONADOTROPIN-1	human	Q969F8	KISS1R	Q969F8	22	95	KiSS-1 receptor (KiSS-1R) (G protein-coupled receptor 54) (G	w
+HYPOPHOSPHATEMIA-INDUCING	human	Q9GZV9	FGF23	Q9GZV9	32	195	Fibroblast growth factor 23 (FGF-23) (Phosphatonin) (Tumor-d	w
+HYPOPHOSPHATEMIC	human	P78562	PHEX	P78562	7	45	Phosphate-regulating neutral endopeptidase PHEX (EC 3.4.24.-	w
+HYPOTHETICAL	fly	FBgn0028690	Rpn5	Q9V3Z4	13	144	GH11341p (Hypothetical 55kDa protein) (Regulatory particle n	w
+HYPOTHETICAL	human	Q6ZW97	LOC389834	Q6ZW97	0	1	Hypothetical LOC389834	w
+HYPOTHETICAL	zebrafish	B3DJ19	nfil3-3	B3DJ19	5	23	Hypothetical LOC799271	w
+HYPOTHETICAL 11.7 KDA	virus	H8WQW2	hypothetical 11.7 kDa	H8WQW2	2	49	H8WQW2_9ADEN	
+HYPOTHETICAL 6.4 KDA	virus	H8WQY6	hypothetical 6.4 kDa	H8WQY6	3	49	H8WQY6_9ADEN	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JP22	hypothetical protein	A0A5P9JP22	3	81	A0A5P9JP22_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JP51	hypothetical protein	A0A5P9JP51	0	80	A0A5P9JP51_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JP69	hypothetical protein	A0A5P9JP69	1	81	A0A5P9JP69_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JPB2	hypothetical protein	A0A5P9JPB2	1	81	A0A5P9JPB2_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JPB8	hypothetical protein	A0A5P9JPB8	1	81	A0A5P9JPB8_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JQE0	hypothetical protein	A0A5P9JQE0	0	80	A0A5P9JQE0_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JQH2	hypothetical protein	A0A5P9JQH2	1	81	A0A5P9JQH2_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JR22	hypothetical protein	A0A5P9JR22	5	81	A0A5P9JR22_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JR41	hypothetical protein	A0A5P9JR41	0	81	A0A5P9JR41_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JR52	hypothetical protein	A0A5P9JR52	3	81	A0A5P9JR52_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JR54	hypothetical protein	A0A5P9JR54	0	81	A0A5P9JR54_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JR65	hypothetical protein	A0A5P9JR65	1	81	A0A5P9JR65_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JR83	hypothetical protein	A0A5P9JR83	0	80	A0A5P9JR83_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JRT2	hypothetical protein	A0A5P9JRT2	0	80	A0A5P9JRT2_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JS19	hypothetical protein	A0A5P9JS19	2	81	A0A5P9JS19_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JS37	hypothetical protein	A0A5P9JS37	1	81	A0A5P9JS37_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JSV2	hypothetical protein	A0A5P9JSV2	3	81	A0A5P9JSV2_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JSW7	hypothetical protein	A0A5P9JSW7	0	80	A0A5P9JSW7_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JTE6	hypothetical protein	A0A5P9JTE6	0	81	A0A5P9JTE6_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JTF9	hypothetical protein	A0A5P9JTF9	0	81	A0A5P9JTF9_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JTN5	hypothetical protein	A0A5P9JTN5	0	81	A0A5P9JTN5_9ALPH	
+HYPOTHETICAL PROTEIN	virus	A0A5P9JX62	hypothetical protein	A0A5P9JX62	1	81	A0A5P9JX62_9ALPH	
+HYPOX	human	P27540	ARNT	P27540	55	302	Aryl hydrocarbon receptor nuclear translocator (ARNT protein	w
+HYPOXANTHINE	worm	Q9NF11	hprt-1	Q9NF11	0	12	Hypoxanthine phosphoribosyltransferase	w
+HYPOXANTHINE	zebrafish	E7FAU2	prtfdc1a	E7FAU2	1	48	Hypoxanthine phosphoribosyltransferase	w
+HYPOXANTHINE	zebrafish	Q6IQG6	prtfdc1b	Q6IQG6	0	48	Hypoxanthine phosphoribosyltransferase	w
+HYPOXANTHINE-GUANINE	human	P00492	HPRT1	P00492	31	526	Hypoxanthine-guanine phosphoribosyltransferase (HGPRT) (HGPR	w
+HYPOXANTHINE-GUANINE	yeast	Q04178	HPT1	Q04178	1	10	Hypoxanthine-guanine phosphoribosyltransferase	w
+HYPOXIA	fly	FBgn0023529	Grp170	O46067	45	389	Hypoxia up-regulated protein 1	w
+HYPOXIA	human	Q8NDZ4	DIPK2A	Q8NDZ4	16	131	Divergent protein kinase domain 2A (Deleted in autism protei	w
+HYPOXIA	human	Q8TDB4	MGARP	Q8TDB4	17	280	Protein MGARP (Corneal endothelium-specific protein 1) (CESP	w
+HYPOXIA	human	Q9NRX3	COXFA4L2	Q9NRX3	28	124	Cytochrome c oxidase hypoxia associated subunit FA4L2 (NADH 	w
+HYPOXIA	human	Q9Y4L1	HYOU1	Q9Y4L1	37	299	Hypoxia up-regulated protein 1 (150 kDa oxygen-regulated pro	w
+HYPOXIA	worm	Q22515	CELE_T14G8.3	Q22515	4	72	Hypoxia up-regulated protein 1	w
+HYPOXIA	worm	Q22758	CELE_T24H7.2	Q22758	4	63	Hypoxia up-regulated protein 1	w
+HYPOXIA	zebrafish	A0A0R4IB28	hif1al	A0A0R4IB28	27	84	Hypoxia inducible factor 1 subunit alpha, like isoform X1	w
+HYPOXIA	zebrafish	Q7ZUW2	hyou1	Q7ZUW2	7	160	Hypoxia up-regulated protein 1	w
+HYPOXIA-INDUCED	human	P58004	SESN2	P58004	12	160	Sestrin-2 (EC 1.11.1.-) (Hypoxia-induced gene)	w
+HYPOXIA-INDUCED	human	Q69YL0	NCBP2AS2	Q69YL0	4	39	Protein NCBP2AS2 (Hypoxia-induced angiogenesis regulator) (N	w
+HYPOXIA-INDUCIBLE	fly	FBgn0264075	tgo	O15945	67	417	Aryl hydrocarbon receptor nuclear translocator homolog (dARN	w
+HYPOXIA-INDUCIBLE	fly	FBgn0264785	Hph	Q8SX21	23	83	hypoxia-inducible factor-proline dioxygenase (EC 1.14.11.29)	w
+HYPOXIA-INDUCIBLE	human	A0A590UJK7	?	A0A590UJK7	0	6	hypoxia-inducible factor-proline dioxygenase	w
+HYPOXIA-INDUCIBLE	human	Q16665	HIF1A	Q16665	117	641	Hypoxia-inducible factor 1-alpha (HIF-1-alpha) (HIF1-alpha) 	w
+HYPOXIA-INDUCIBLE	human	Q96KS0	EGLN2	Q96KS0	27	108	Prolyl hydroxylase EGLN2 (EC 1.14.11.-) (Egl nine homolog 2)	w
+HYPOXIA-INDUCIBLE	human	Q9GZT9	EGLN1	Q9GZT9	46	136	Egl nine homolog 1 (EC 1.14.11.29) (Hypoxia-inducible factor	w
+HYPOXIA-INDUCIBLE	human	Q9H6Z9	EGLN3	Q9H6Z9	502	1342	Prolyl hydroxylase EGLN3 (EC 1.14.11.-) (Egl nine homolog 3)	w
+HYPOXIA-INDUCIBLE	human	Q9NWT6	HIF1AN	Q9NWT6	64	378	Hypoxia-inducible factor 1-alpha inhibitor (EC 1.14.11.30) (	w
+HYPOXIA-INDUCIBLE	human	Q9NXG6	P4HTM	Q9NXG6	5	47	Transmembrane prolyl 4-hydroxylase (P4H-TM) (EC 1.14.11.29) 	w
+HYPOXIA-INDUCIBLE	human	Q9Y241	HIGD1A	Q9Y241	49	172	HIG1 domain family member 1A, mitochondrial (Hypoxia-inducib	w
+HYPOXIA-INDUCIBLE	human	Q9Y2N7	HIF3A	Q9Y2N7	23	98	Hypoxia-inducible factor 3-alpha (HIF-3-alpha) (HIF3-alpha) 	w
+HYPOXIA-INDUCIBLE	human	Q9Y5L2	HILPDA	Q9Y5L2	15	118	Hypoxia-inducible lipid droplet-associated protein (Hypoxia-	w
+HYPOXIA-INDUCIBLE	worm	G5EBV0	egl-9	G5EBV0	6	34	Hypoxia-inducible factor prolyl hydroxylase	w
+HYPOXIA-INDUCIBLE	worm	G5EGD2	hif-1	G5EGD2	6	111	Hypoxia-inducible factor 1	w
+HYPOXIA-INDUCIBLE	zebrafish	A0A8M2B8B7	hif1al2	A0A8M2B8B7	18	45	Hypoxia-inducible factor 1-alpha	w
+HYPOXIA-INDUCIBLE	zebrafish	E7F518	egln1a	E7F518	6	21	hypoxia-inducible factor-proline dioxygenase	w
+HYPOXIA-INDUCIBLE	zebrafish	E7F8S1	egln2	E7F8S1	6	11	hypoxia-inducible factor-proline dioxygenase	w
+HYPOXIA-INDUCIBLE	zebrafish	F1QNB9	hif1aa	F1QNB9	30	80	Hypoxia-inducible factor 1-alpha	w
+HYPOXIA-INDUCIBLE	zebrafish	F6P6J7	egln1b	F6P6J7	7	10	hypoxia-inducible factor-proline dioxygenase	w
+HYPOXIA-INDUCIBLE	zebrafish	P59723	hif1an	P59723	2	35	Hypoxia-inducible factor 1-alpha inhibitor	w
+HYPOXIA-INDUCIBLE	zebrafish	Q6EHI4	hif1ab	Q6EHI4	29	80	Hypoxia-inducible factor 1-alpha	w
+HYPOXIA-INDUCIBLE	zebrafish	Q6NY85	egln3	Q6NY85	7	23	hypoxia-inducible factor-proline dioxygenase	w
+HYPTHETICAL 9.1 KDA	virus	H8WQW5	hypthetical 9.1 kDa	H8WQW5	3	49	H8WQW5_9ADEN	

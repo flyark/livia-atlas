@@ -1,4 +1,83 @@
-GUS1	candida-albicans-237561	A0A1D8PQL8	GUS1	A0A1D8PQL8	7	116	glutamate--tRNA ligase
-GUS1	schizosaccharomyces-pombe	O13775	gus1	O13775	5	117	Probable glutamate--tRNA ligase, cytoplasmic
-GUSB	mus-musculus	P12265	Gusb	P12265	1	28	Beta-glucuronidase
-GUSB	rattus-norvegicus	P06760	Gusb	P06760	0	9	Beta-glucuronidase
+GUS	fly	FBgn0026238	gus	A1Z6E0	11	129	Protein gustavus	
+GUS1	candida-albicans-237561	A0A1D8PQL8	GUS1	A0A1D8PQL8	7	116	glutamate--tRNA ligase	
+GUS1	schizosaccharomyces-pombe	O13775	gus1	O13775	5	117	Probable glutamate--tRNA ligase, cytoplasmic	
+GUS1	yeast	P46655	GUS1	P46655	9	272	Glutamate--tRNA ligase, cytoplasmic	
+GUSB	human	P08236	GUSB	P08236	14	173	Beta-glucuronidase (EC 3.2.1.31) (Beta-G1)	
+GUSB	mus-musculus	P12265	Gusb	P12265	1	28	Beta-glucuronidase	
+GUSB	rattus-norvegicus	P06760	Gusb	P06760	0	9	Beta-glucuronidase	
+GUSB	zebrafish	F1QGS9	gusb	F1QGS9	0	5	Beta-glucuronidase	
+GUSBP1	human	Q15486	GUSBP1	Q15486	1	6	Putative inactive beta-glucuronidase-like protein SMA3	
+GUSBP11	human	Q6P575	GUSBP11	Q6P575	2	3	Putative inactive beta-glucuronidase protein GUSBP11 (Beta-g	
+GUSP1_HUMAN	human	Q15486	GUSBP1	Q15486	1	6		
+GUSTATORY	fly	FBgn0003747	Gr5a	Q9W497	1	9	Gustatory receptor 5a for trehalose (Trehalose receptor)	w
+GUSTATORY	fly	FBgn0030108	Gr8a	Q9W367	1	3	Gustatory receptor 8a	w
+GUSTATORY	fly	FBgn0030297	Gr10b	Q9VYZ2	1	1	Putative gustatory receptor 10b	w
+GUSTATORY	fly	FBgn0032416	Gr33a	Q9VKA5	1	3	Gustatory and pheromone receptor 33a	w
+GUSTATORY	fly	FBgn0033202	Grl43a	Q9V4Q0	0	3	Gustatory receptor-like 43a	w
+GUSTATORY	fly	FBgn0034683	Grl58a	Q9W2A4	0	1	Gustatory receptor	w
+GUSTATORY	fly	FBgn0035167	Gr61a	Q9W0M2	0	3	Gustatory receptor for sugar taste 61a	w
+GUSTATORY	fly	FBgn0035468	Gr63a	Q9VZL7	1	2	Gustatory receptor 63a	w
+GUSTATORY	fly	FBgn0035486	Gr64d	Q9VZJ6	0	1	Gustatory receptor for sugar taste 64d	w
+GUSTATORY	fly	FBgn0035870	Gr66a	Q9VSH2	1	5	Gustatory receptor for bitter taste 66a	w
+GUSTATORY	fly	FBgn0038440	Gr89a	Q9VEU0	0	2	Putative gustatory receptor 89a	w
+GUSTATORY	fly	FBgn0039520	Gr98a	Q9VB30	0	1	Putative gustatory receptor 98a	w
+GUSTATORY	fly	FBgn0041224	Gr97a	D3PK93	0	9	Gustatory receptor	w
+GUSTATORY	fly	FBgn0041225	Gr94a	Q8IMZ5	0	1	Putative gustatory receptor 94a	w
+GUSTATORY	fly	FBgn0041229	Gr93a	Q9VD76	28	369	Gustatory receptor for bitter taste 93a	w
+GUSTATORY	fly	FBgn0041231	Gr68a	Q9VTN0	0	2	Gustatory receptor 68a	w
+GUSTATORY	fly	FBgn0041232	Grl65a	Q8IQ72	0	1	Gustatory receptor-like 65a	w
+GUSTATORY	fly	FBgn0041233	Gr59e	Q9W1N6	0	2	Putative gustatory receptor 59e	w
+GUSTATORY	fly	FBgn0041234	Gr59f	Q9W1N5	0	4	Putative gustatory receptor 59f	w
+GUSTATORY	fly	FBgn0041235	Gr59c	Q9W1U5	1	5	Putative gustatory receptor 59c	w
+GUSTATORY	fly	FBgn0041236	Gr59d	P58985	0	2	Putative gustatory receptor 59d	w
+GUSTATORY	fly	FBgn0041237	Gr58c	Q9W2B2	0	1	Putative gustatory receptor 58c	w
+GUSTATORY	fly	FBgn0041238	Gr58b	Q9W2B1	0	2	Putative gustatory receptor 58b	w
+GUSTATORY	fly	FBgn0041239	Gr58a	P58962	0	1	Putative gustatory receptor 58a	w
+GUSTATORY	fly	FBgn0041240	Gr57a	Q9V969	1	1	Putative gustatory receptor 57a	w
+GUSTATORY	fly	FBgn0041241	Gr47b	P58961	0	1	Putative gustatory receptor 47b	w
+GUSTATORY	fly	FBgn0041242	Gr47a	A1Z881	0	1	Gustatory receptor	w
+GUSTATORY	fly	FBgn0041243	Gr43a	A0A0B4LEE5	0	4	Gustatory receptor	w
+GUSTATORY	fly	FBgn0041245	Gr39b	P58960	0	1	Putative gustatory receptor 39b	w
+GUSTATORY	fly	FBgn0041246	Gr32a	Q9VKJ7	0	5	Gustatory and pheromone receptor 32a	w
+GUSTATORY	fly	FBgn0041247	Gr28a	Q9VM09	0	2	Putative gustatory receptor 28a	w
+GUSTATORY	fly	FBgn0041248	Gr23a	P83292	0	1	Gustatory receptor 23a	w
+GUSTATORY	fly	FBgn0041249	Gr22f	P58954	0	1	Putative gustatory receptor 22f	w
+GUSTATORY	fly	FBgn0041250	Gr21a	M9PAZ2	2	5	Gustatory receptor	w
+GUSTATORY	fly	FBgn0045468	Gr93d	Q8IN22	0	1	Gustatory receptor	w
+GUSTATORY	fly	FBgn0045469	Gr93c	Q9VD74	0	2	Putative gustatory receptor 93c	w
+GUSTATORY	fly	FBgn0045470	Gr93b	Q8IN23	0	1	Putative gustatory receptor 93b	w
+GUSTATORY	fly	FBgn0045471	Gr92a	Q8IN58	0	1	Putative gustatory receptor 92a	w
+GUSTATORY	fly	FBgn0045473	Gr85a	Q8INM9	0	1	Putative gustatory receptor 85a	w
+GUSTATORY	fly	FBgn0045474	Gr77a	Q8IPU5	0	1	Putative gustatory receptor 77a	w
+GUSTATORY	fly	FBgn0045476	Gr64e	Q7KV53	0	3	Gustatory receptor	w
+GUSTATORY	fly	FBgn0045477	Gr64c	P83295	0	3	Gustatory receptor for sugar taste 64c	w
+GUSTATORY	fly	FBgn0045478	Gr64b	P83294	0	2	Gustatory receptor for sugar taste 64b	w
+GUSTATORY	fly	FBgn0045479	Gr64a	P83293	1	2	Gustatory receptor for sugar taste 64a	w
+GUSTATORY	fly	FBgn0045482	Gr59b	Q8MLS6	0	1	Gustatory receptor	w
+GUSTATORY	fly	FBgn0045483	Gr59a	Q9W1V0	0	1	Gustatory receptor	w
+GUSTATORY	fly	FBgn0045485	Gr36c	Q8INZ2	0	1	Putative gustatory receptor 36c	w
+GUSTATORY	fly	FBgn0045486	Gr36b	Q9VJF2	0	1	Putative gustatory receptor 36b	w
+GUSTATORY	fly	FBgn0045487	Gr36a	P58955	0	1	Putative gustatory receptor 36a	w
+GUSTATORY	fly	FBgn0045495	Gr28b	Q9VM08	0	5	Putative gustatory receptor 28b	w
+GUSTATORY	fly	FBgn0045497	Gr22e	P58953	1	4	Gustatory receptor for bitter taste 22e	w
+GUSTATORY	fly	FBgn0045498	Gr22d	P84181	0	2	Putative gustatory receptor 22d	w
+GUSTATORY	fly	FBgn0045500	Gr22b	P84180	0	2	Putative gustatory receptor 22b	w
+GUSTATORY	fly	FBgn0045501	Gr22a	P58951	0	1	Putative gustatory receptor 22a	w
+GUSTATORY	fly	FBgn0045502	Gr10a	P58950	0	1	Gustatory receptor 10a	w
+GUSTATORY	fly	FBgn0046885	Gr98d	Q8IMN5	0	1	Putative gustatory receptor 98d	w
+GUSTATORY	fly	FBgn0046886	Gr98c	Q8IMN6	0	1	Putative gustatory receptor 98c	w
+GUSTATORY	fly	FBgn0046887	Gr98b	Q9VB26	1	3	Putative gustatory receptor 98b	w
+GUSTATORY	fly	FBgn0046888	Grl36a	Q8INZ1	0	1	Gustatory receptor-like 36a	w
+GUSTATORY	fly	FBgn0051785	Grl36b	Q8INY2	0	2	Gustatory receptor	w
+GUSTATORY	fly	FBgn0052255	Gr64f	P83297	0	3	Gustatory receptor for sugar taste 64f	w
+GUSTATORY	fly	FBgn0052693	Gr9a	Q8IRL8	0	1	Putative gustatory receptor 9a	w
+GUSTATORY	fly	FBgn0259702	Grl62b	B7Z0I1	0	1	Gustatory receptor	w
+GUSTATORY	fly	FBgn0259703	Grl62a	B7Z0I0	1	1	Gustatory receptor	w
+GUSTATORY	fly	FBgn0264556	Gr39a	P58957	0	3	Gustatory and pheromone receptor 39a, isoform C	w
+GUSTATORY	fly	FBgn0265138	Gr22c	P58952	0	2	Putative gustatory receptor 22c	w
+GUSTATORY	fly	FBgn0265139	Gr2a	Q9W594	0	3	Putative gustatory receptor 2a	w
+GUSTATORY	worm	O18140	srr-2	O18140	0	1	Gustatory receptor	w
+GUSTATORY	worm	O45459	srr-3	O45459	0	1	Gustatory receptor	w
+GUSTATORY	worm	Q22211	srr-9	Q22211	0	1	Gustatory receptor	w
+GUSTAVUS	fly	FBgn0026238	gus	A1Z6E0	11	129	Protein gustavus	w
+GUSTDUCIN	human	A8MTJ3	GNAT3	A8MTJ3	85	213	Guanine nucleotide-binding protein G(t) subunit alpha-3 (Gus	w

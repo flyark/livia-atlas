@@ -1,9 +1,468 @@
-EAR1	mus-musculus	P97426	Ear1	P97426	1	2	Eosinophil cationic protein 1
-EAR1	rattus-norvegicus	E9PU07	Ear1	E9PU07	1	3	Eosinophil-associated, ribonuclease A family, member 1
-EAR10	mus-musculus	Q923L6	Ear10	Q923L6	1	5	Eosinophil-associated ribonuclease 10
-EAR2	mus-musculus	P97425	Ear2	P97425	1	2	Eosinophil cationic protein 2
-EAR6	mus-musculus	Q923L7	Ear6	Q923L7	1	2	Ear6 protein
-EARLI1	arabidopsis-thaliana	Q39176	EARLI1	Q39176	0	1	Lipid transfer protein EARLI 1
-EARP	pseudomonas-aeruginosa	Q9HZZ1	earP	Q9HZZ1	1	1	Protein-arginine rhamnosyltransferase
-EARS2	mus-musculus	Q9CXJ1	Ears2	Q9CXJ1	4	191	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondrial
-EARS2	rattus-norvegicus	M0RAI4	Ears2	M0RAI4	6	266	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondrial
+EAR	fly	FBgn0026441	ear	A0A0B4KG69	80	337	ENL/AF9-related, isoform B	
+EAR-1	human	P20393	NR1D1	P20393	45	145	Nuclear receptor subfamily 1 group D member 1 (Rev-erbA-alph	w
+EAR-2	human	P10588	NR2F6	P10588	82	481	Nuclear receptor subfamily 2 group F member 6 (V-erbA-relate	w
+EAR-7	human	P10827	THRA	P10827	33	172	Thyroid hormone receptor alpha (Nuclear receptor subfamily 1	w
+EAR-BINDING	human	Q8NC96	NECAP1	Q8NC96	22	125	Adaptin ear-binding coat-associated protein 1 (NECAP endocyt	w
+EAR-BINDING	human	Q9NVZ3	NECAP2	Q9NVZ3	27	103	Adaptin ear-binding coat-associated protein 2 (NECAP endocyt	w
+EAR-BINDING	zebrafish	F1RAQ5	necap2	F1RAQ5	11	44	Adaptin ear-binding coat-associated protein 2	w
+EAR-BINDING	zebrafish	Q6PC36	necap1	Q6PC36	7	52	Adaptin ear-binding coat-associated protein 1	w
+EAR-CONTAINING	human	Q9NZ52	GGA3	Q9NZ52	48	158	ADP-ribosylation factor-binding protein GGA3 (Golgi-localize	w
+EAR-CONTAINING	human	Q9UJY4	GGA2	Q9UJY4	38	121	ADP-ribosylation factor-binding protein GGA2 (Gamma-adaptin-	w
+EAR-CONTAINING	human	Q9UJY5	GGA1	Q9UJY5	40	149	ADP-ribosylation factor-binding protein GGA1 (Gamma-adaptin-	w
+EAR1	human	P20393	NR1D1	P20393	45	145		
+EAR1	mus-musculus	P97426	Ear1	P97426	1	2	Eosinophil cationic protein 1	
+EAR1	rattus-norvegicus	E9PU07	Ear1	E9PU07	1	3	Eosinophil-associated, ribonuclease A family, member 1	
+EAR1	yeast	Q03212	EAR1	Q03212	1	13	Protein EAR1	
+EAR10	mus-musculus	Q923L6	Ear10	Q923L6	1	5	Eosinophil-associated ribonuclease 10	
+EAR2	human	P10588	NR2F6	P10588	82	481		
+EAR2	mus-musculus	P97425	Ear2	P97425	1	2	Eosinophil cationic protein 2	
+EAR3	human	P10589	NR2F1	P10589	100	565		
+EAR6	mus-musculus	Q923L7	Ear6	Q923L7	1	2	Ear6 protein	
+EAR7	human	P10827	THRA	P10827	33	172		
+EARLI1	arabidopsis-thaliana	Q39176	EARLI1	Q39176	0	1	Lipid transfer protein EARLI 1	
+EARLY	fly	FBgn0000227	Elba1	Q9VR17	2	4	Early boundary activity protein 1 (Blastoderm-specific gene 	w
+EARLY	fly	FBgn0004372	aly	Q9VZW3	10	16	Always early, isoform A (Always early, isoform B)	w
+EARLY	fly	FBgn0011278	lbe	Q7KS77	111	391	Ladybird early (MIP30310p)	w
+EARLY	fly	FBgn0020445	E23	Q7KU30	1	6	Early gene at 23, isoform C (Early gene at 23, isoform D) (E	w
+EARLY	fly	FBgn0027528	goe	Q9XZ14	100	2370	Protein gone early	w
+EARLY	fly	FBgn0031435	Elba2	Q9VQD6	6	29	Early boundary activity protein 2	w
+EARLY	fly	FBgn0031621	Elba3	Q9VR19	3	28	Early boundary activity protein 3	w
+EARLY	fly	FBgn0052069	Insep	Q9VTE1	2	9	Immediate early response 3-interacting protein 1	w
+EARLY	fly	FBgn0260857	Bet1	Q9VVX6	18	80	Blocked early in transport 1, isoform A (Blocked early in tr	w
+EARLY	human	A0PJW8	DAPL1	A0PJW8	29	281	Death-associated protein-like 1 (Early epithelial differenti	w
+EARLY	human	O14901	KLF11	O14901	99	385	Krueppel-like factor 11 (Transforming growth factor-beta-ind	w
+EARLY	human	P0DMC3	APELA	P0DMC3	11	42	Apelin receptor early endogenous ligand (Protein Elabela) (E	w
+EARLY	human	P11161	EGR2	P11161	96	475	E3 SUMO-protein ligase EGR2 (EC 2.3.2.-) (AT591) (E3 SUMO-pr	w
+EARLY	human	P18146	EGR1	P18146	105	607	Early growth response protein 1 (EGR-1) (AT225) (Nerve growt	w
+EARLY	human	P20827	EFNA1	P20827	28	200	Ephrin-A1 (EPH-related receptor tyrosine kinase ligand 1) (L	w
+EARLY	human	P22736	NR4A1	P22736	171	691	Nuclear receptor subfamily 4immunitygroup A member 1 (Early 	w
+EARLY	human	P46695	IER3	P46695	30	181	Radiation-inducible immediate-early gene IEX-1 (Differentiat	w
+EARLY	human	P78364	PHC1	P78364	76	223	Polyhomeotic-like protein 1 (hPH1) (Early development regula	w
+EARLY	human	Q03060	CREM	Q03060	129	428	cAMP-responsive element modulator (Inducible cAMP early repr	w
+EARLY	human	Q05215	EGR4	Q05215	5	47	Early growth response protein 4 (EGR-4) (AT133)	w
+EARLY	human	Q06889	EGR3	Q06889	71	398	Early growth response protein 3 (EGR-3) (Zinc finger protein	w
+EARLY	human	Q07108	CD69	Q07108	87	401	Early activation antigen CD69 (Activation inducer molecule) 	w
+EARLY	human	Q08116	RGS1	Q08116	38	198	Regulator of G protein signaling 1 (RGS1) (B-cell activation	w
+EARLY	human	Q13118	KLF10	Q13118	107	413	Krueppel-like factor 10 (EGR-alpha) (Transforming growth fac	w
+EARLY	human	Q14236	DIAPH2-AS1	Q14236	0	2	Early lymphoid activation gene protein (DIAPH2 antisense RNA	w
+EARLY	human	Q14641	INSL4	Q14641	1	28	Early placenta insulin-like peptide (EPIL) (Insulin-like pep	w
+EARLY	human	Q15075	EEA1	Q15075	59	410	Early endosome antigen 1 (Endosome-associated protein p162) 	w
+EARLY	human	Q15742	NAB2	Q15742	103	506	NGFI-A-binding protein 2 (EGR-1-binding protein 2) (Melanoma	w
+EARLY	human	Q16548	BCL2A1	Q16548	90	579	Bcl-2-related protein A1 (Bcl-2-like protein 5) (Bcl2-L-5) (	w
+EARLY	human	Q5T953	IER5L	Q5T953	4	9	Immediate early response gene 5-like protein	w
+EARLY	human	Q5T9C2	EEIG1	Q5T9C2	11	29	Early estrogen-induced gene 1 protein (EEIG1)	w
+EARLY	human	Q5VY09	IER5	Q5VY09	7	27	Immediate early response gene 5 protein	w
+EARLY	human	Q5VY80	RAET1L	Q5VY80	15	76	UL16-binding protein 6 (Retinoic acid early transcript 1L pr	w
+EARLY	human	Q6H3X3	RAET1G	Q6H3X3	8	28	UL-16 binding protein 5 (Retinoic acid early transcript 1G p	w
+EARLY	human	Q7Z3K6	MIER3	Q7Z3K6	87	365	Mesoderm induction early response protein 3 (Mi-er3)	w
+EARLY	human	Q8IXK0	PHC2	Q8IXK0	87	272	Polyhomeotic-like protein 2 (hPH2) (Early development regula	w
+EARLY	human	Q8N108	MIER1	Q8N108	80	411	Mesoderm induction early response protein 1 (Early response 	w
+EARLY	human	Q8N344	MIER2	Q8N344	65	374	Mesoderm induction early response protein 2 (Mi-er2)	w
+EARLY	human	Q8NDX5	PHC3	Q8NDX5	58	197	Polyhomeotic-like protein 3 (Early development regulatory pr	w
+EARLY	human	Q8TD07	RAET1E	Q8TD07	24	118	Retinoic acid early transcript 1E (Lymphocyte effector toxic	w
+EARLY	human	Q8WU90	ZC3H15	Q8WU90	13	249	Zinc finger CCCH domain-containing protein 15 (DRG family-re	w
+EARLY	human	Q96K83	ZNF521	Q96K83	7	67	Zinc finger protein 521 (Early hematopoietic zinc finger pro	w
+EARLY	human	Q96LR9	APOLD1	Q96LR9	2	37	Apolipoprotein L domain-containing protein 1 (Vascular early	w
+EARLY	human	Q9BQW3	EBF4	Q9BQW3	9	34	Transcription factor COE4 (Early B-cell factor 4) (EBF-4) (O	w
+EARLY	human	Q9BTL4	IER2	Q9BTL4	19	74	Immediate early response gene 2 protein (Protein ETR101)	w
+EARLY	human	Q9BUJ2	HNRNPUL1	Q9BUJ2	34	361	Heterogeneous nuclear ribonucleoprotein U-like protein 1 (Ad	w
+EARLY	human	Q9BZM4	ULBP3	Q9BZM4	41	184	UL16-binding protein 3 (ALCAN-gamma) (NKG2D ligand 3) (N2DL-	w
+EARLY	human	Q9BZM5	ULBP2	Q9BZM5	43	218	UL16-binding protein 2 (ALCAN-alpha) (NKG2D ligand 2) (N2DL-	w
+EARLY	human	Q9BZM6	ULBP1	Q9BZM6	25	148	UL16-binding protein 1 (ALCAN-beta) (NKG2D ligand 1) (N2DL-1	w
+EARLY	human	Q9H0R8	GABARAPL1	Q9H0R8	91	269	Gamma-aminobutyric acid receptor-associated protein-like 1 (	w
+EARLY	human	Q9H4W6	EBF3	Q9H4W6	84	377	Transcription factor COE3 (Early B-cell factor 3) (EBF-3) (O	w
+EARLY	human	Q9HAK2	EBF2	Q9HAK2	90	428	Transcription factor COE2 (Early B-cell factor 2) (EBF-2)	w
+EARLY	human	Q9UH73	EBF1	Q9UH73	81	493	Transcription factor COE1 (O/E-1) (OE-1) (Early B-cell facto	w
+EARLY	human	Q9UKT4	FBXO5	Q9UKT4	56	456	F-box only protein 5 (Early mitotic inhibitor 1)	w
+EARLY	human	Q9Y5U9	IER3IP1	Q9Y5U9	13	101	Immediate early response 3-interacting protein 1	w
+EARLY	virus	A0A059XN88		A0A059XN88	1	30	Early E1A protein	w
+EARLY	virus	A0A068EES4	pepv_059	A0A068EES4	3	237	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A068EF55	pepv_183	A0A068EF55	8	237	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A068EG37	fep_057	A0A068EG37	2	219	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A068EH43	fep_175	A0A068EH43	5	217	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A097IWA3		A0A097IWA3	2	34	Early E1A protein	w
+EARLY	virus	A0A0A1ERM3		A0A0A1ERM3	0	15	Early E1A protein	w
+EARLY	virus	A0A0A1ERN6		A0A0A1ERN6	0	15	Early E1A protein	w
+EARLY	virus	A0A0A1ERQ0		A0A0A1ERQ0	1	15	Early E1A protein	w
+EARLY	virus	A0A0A7MA01		A0A0A7MA01	10	130	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A0G3FXQ3	RCNV-Herman-107	A0A0G3FXQ3	2	194	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A0G3FXR7	RCNV-Herman-122	A0A0G3FXR7	4	195	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A0G3G0B0	RCNV-Herman-008	A0A0G3G0B0	5	195	Early protein OPG038	w
+EARLY	virus	A0A0G3G488	RCNV-Herman-027	A0A0G3G488	3	195	Early protein OPG038	w
+EARLY	virus	A0A0H4YFK7	SGPV105	A0A0H4YFK7	5	199	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A0K0MGE8	01	A0A0K0MGE8	1	30	Early E1A protein	w
+EARLY	virus	A0A0M3PBA9		A0A0M3PBA9	8	169	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A0M4MEX3		A0A0M4MEX3	1	36	Early E1A protein	w
+EARLY	virus	A0A0M4MQM5		A0A0M4MQM5	2	36	Early E1A protein	w
+EARLY	virus	A0A0M4MTS9		A0A0M4MTS9	1	36	Early E1A protein	w
+EARLY	virus	A0A0M4NFL9		A0A0M4NFL9	0	34	Early E1A protein	w
+EARLY	virus	A0A0M5HVF6		A0A0M5HVF6	3	169	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A0M5L3X1		A0A0M5L3X1	1	36	Early E1A protein	w
+EARLY	virus	A0A1B1MRF8	PTPV-Aus-087	A0A1B1MRF8	1	143	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A1B1MRM6	PTPV-Aus-101	A0A1B1MRM6	3	143	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A1C8EG69		A0A1C8EG69	3	32	Early E1A protein	w
+EARLY	virus	A0A1C9KBI3	SKPV-WA-030	A0A1C9KBI3	3	209	Early protein OPG038	w
+EARLY	virus	A0A1C9KBQ8	SKPV-WA-110	A0A1C9KBQ8	7	207	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A1C9KC04	SKPV-WA-205	A0A1C9KC04	1	209	Early protein OPG038	w
+EARLY	virus	A0A1C9KC62	VPXV-CA-030	A0A1C9KC62	2	204	Early protein OPG038	w
+EARLY	virus	A0A1C9KCE0	VPXV-CA-110	A0A1C9KCE0	7	202	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A1J0FAN1		A0A1J0FAN1	3	32	Early E1A protein	w
+EARLY	virus	A0A1L3INV8		A0A1L3INV8	2	34	Early E1A protein	w
+EARLY	virus	A0A1P8VIZ3	ORF103	A0A1P8VIZ3	4	124	Herpesvirus intermediate/early protein 2/3 DNA-binding domai	w
+EARLY	virus	A0A1Y0B6F1		A0A1Y0B6F1	1	28	Early E1A protein	w
+EARLY	virus	A0A1Z3GCR8	SePPVgORF075	A0A1Z3GCR8	6	119	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A220T6F3	EPTV-WA-088	A0A220T6F3	6	179	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A220T6N0	EPTV-WA-173	A0A220T6N0	2	179	Early protein OPG038	w
+EARLY	virus	A0A220T6P0	EPTV-WA-171	A0A220T6P0	6	179	Early protein OPG038	w
+EARLY	virus	A0A223FMV9	Murmansk-107	A0A223FMV9	8	201	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A223FMX0	Murmansk-122	A0A223FMX0	7	201	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A223FN35	Murmansk-192	A0A223FN35	6	202	Early protein OPG038	w
+EARLY	virus	A0A2C9DSP6		A0A2C9DSP6	1	160	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A2C9DSR0		A0A2C9DSR0	10	161	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A2C9DT60		A0A2C9DT60	1	160	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A2C9DT74		A0A2C9DT74	7	160	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A2H4CK63		A0A2H4CK63	1	36	Early E1A protein	w
+EARLY	virus	A0A2H4X264	fgpv_054	A0A2H4X264	5	253	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A2H4X2J0	fgpv_184	A0A2H4X2J0	8	253	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A2H5AI89		A0A2H5AI89	2	23	Early E1A protein	w
+EARLY	virus	A0A2U9QHQ7	SOPV-ELK-096	A0A2U9QHQ7	4	130	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A2U9QHS4	SOPV-ELK-082	A0A2U9QHS4	3	130	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A346FRL2	AKMV-88-120	A0A346FRL2	7	214	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A346FRM8	AKMV-88-136	A0A346FRM8	6	213	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A346FRZ8	AKMV-88-036	A0A346FRZ8	6	214	Early protein OPG038	w
+EARLY	virus	A0A3G2KXQ5	OPVA033	A0A3G2KXQ5	1	208	Early protein OPG038	w
+EARLY	virus	A0A3G2KXX3	OPVA111	A0A3G2KXX3	5	208	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A3G2KXZ7	OPVA126	A0A3G2KXZ7	7	208	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A3G9E9S3		A0A3G9E9S3	1	30	Early E1A protein	w
+EARLY	virus	A0A3G9E9U9		A0A3G9E9U9	0	30	Early E1A protein	w
+EARLY	virus	A0A5B8MBJ6		A0A5B8MBJ6	1	29	Early E1A protein	w
+EARLY	virus	A0A5P9VI17		A0A5P9VI17	1	31	Early E1A protein	w
+EARLY	virus	A0A679A5P7		A0A679A5P7	1	36	Early E1A protein	w
+EARLY	virus	A0A7R5WF63	VETFL	A0A7R5WF63	8	187	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A916KNZ1	AHEV_106	A0A916KNZ1	8	243	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A916KPK8	CHBEV_159	A0A916KPK8	19	311	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A916NWN9	AHEV_056	A0A916NWN9	4	243	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A0A916NYH9	MYSEV_121	A0A916NYH9	16	301	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0A9W3HRJ8	E1A	A0A9W3HRJ8	0	34	Early E1A protein	w
+EARLY	virus	A0A9W3I4N6		A0A9W3I4N6	2	32	Early E1A protein	w
+EARLY	virus	A0A9W3NKR7		A0A9W3NKR7	1	32	Early E1A protein	w
+EARLY	virus	A0AAE9C1R0		A0AAE9C1R0	1	30	Early E1A protein	w
+EARLY	virus	A0ABM9QKG9	CHREV_127	A0ABM9QKG9	11	286	Early transcription factor 82 kDa subunit	w
+EARLY	virus	A0AC61M029		A0AC61M029	1	32	Early E1A protein	w
+EARLY	virus	A0MK42	E1A	A0MK42	0	35	Early E1A protein	w
+EARLY	virus	A7XCB0	9L	A7XCB0	7	154	Early protein OPG038	w
+EARLY	virus	A7XCL0	84R	A7XCL0	4	154	Early transcription factor 70 kDa subunit	w
+EARLY	virus	A7XCM7	98L	A7XCM7	1	153	Early transcription factor 82 kDa subunit	w
+EARLY	virus	B2VQE1	E1A	B2VQE1	1	35	Early E1A protein	w
+EARLY	virus	B2VQE2	E1A	B2VQE2	1	35	Early E1A protein	w
+EARLY	virus	B2VQG4	E3	B2VQG4	0	35	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	B5SNR0		B5SNR0	1	32	Early E1A protein	w
+EARLY	virus	B6DU88	E1A	B6DU88	1	37	Early E1A protein	w
+EARLY	virus	B6DU89	E1A	B6DU89	1	37	Early E1A protein	w
+EARLY	virus	B6DUB1	E3	B6DUB1	3	37	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	B9A5A5	E1A	B9A5A5	1	36	Early E1A protein	w
+EARLY	virus	B9A5A6	E1A	B9A5A6	1	36	Early E1A protein	w
+EARLY	virus	B9A5C8	E3	B9A5C8	2	36	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	B9A5P9	E1A	B9A5P9	2	38	Early E1A protein	w
+EARLY	virus	B9A5Q0	E1A	B9A5Q0	1	38	Early E1A protein	w
+EARLY	virus	B9A5S2	E3	B9A5S2	1	38	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	C4P225	E3	C4P225	0	30	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	C5HDR0	E1A	C5HDR0	0	37	Early E1A protein	w
+EARLY	virus	C5HDR1	E1A	C5HDR1	2	37	Early E1A protein	w
+EARLY	virus	C5HDS8	E3	C5HDS8	3	37	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	C7SRR2		C7SRR2	0	37	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	C7SRS4		C7SRS4	1	37	Early E1A protein	w
+EARLY	virus	C7SRS5		C7SRS5	3	37	Early E1A protein	w
+EARLY	virus	D0Z5R8	E1A	D0Z5R8	1	33	Early E1A protein	w
+EARLY	virus	D3IZN1		D3IZN1	6	125	Early transcription factor 82 kDa subunit	w
+EARLY	virus	D3X7A8		D3X7A8	1	30	Early E1A protein	w
+EARLY	virus	D4N3J9		D4N3J9	2	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	D5FLE1	VPXV-CA-125	D5FLE1	5	203	Early transcription factor 82 kDa subunit	w
+EARLY	virus	D5FLF9	SKPV-WA-125	D5FLF9	8	208	Early transcription factor 82 kDa subunit	w
+EARLY	virus	E1AI08	E1A	E1AI08	3	36	Early E1A protein	w
+EARLY	virus	E1AI09	E1A	E1AI09	0	36	Early E1A protein	w
+EARLY	virus	E1AI31	E3	E1AI31	0	36	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	E1CII8	E1A	E1CII8	2	36	Early E1A protein	w
+EARLY	virus	E1CII9	E1A	E1CII9	1	36	Early E1A protein	w
+EARLY	virus	E1CIL1	E3	E1CIL1	0	36	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	E1CIM4	E1A	E1CIM4	3	40	Early E1A protein	w
+EARLY	virus	E1CIM5	E1A	E1CIM5	5	40	Early E1A protein	w
+EARLY	virus	E1CIP7	E3	E1CIP7	2	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	E1U5L3	E1A	E1U5L3	3	54	Early E1A protein	w
+EARLY	virus	E1U5L4	E1A	E1U5L4	0	54	Early E1A protein	w
+EARLY	virus	E1U5P9	E3	E1U5P9	2	54	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	F2WTJ6		F2WTJ6	2	32	Early E1A protein	w
+EARLY	virus	F2WTM8		F2WTM8	2	32	Early E1A protein	w
+EARLY	virus	F5HCM1	UL123	F5HCM1	3	167	Immediate early protein IE1	w
+EARLY	virus	F6KST5		F6KST5	1	32	Early E1A protein	w
+EARLY	virus	G0ZAH1		G0ZAH1	2	35	Early E1A protein	w
+EARLY	virus	G1FQL5		G1FQL5	0	30	Early E1A protein	w
+EARLY	virus	G3EI00	YKV108c	G3EI00	6	183	Early transcription factor 82 kDa subunit	w
+EARLY	virus	G3EI62	YKV170	G3EI62	3	184	Early protein OPG038	w
+EARLY	virus	G3EI67	YKV175	G3EI67	1	184	Early protein OPG038	w
+EARLY	virus	G3EIH0	YKV092	G3EIH0	9	183	Early transcription factor 70 kDa subunit	w
+EARLY	virus	G5CZ71	E1A	G5CZ71	3	31	Early E1A protein	w
+EARLY	virus	G9G840		G9G840	0	31	Early E1A protein	w
+EARLY	virus	G9G862		G9G862	1	31	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	H6TA74	COTV100	H6TA74	4	170	Early transcription factor 70 kDa subunit	w
+EARLY	virus	H6TA86	COTV115	H6TA86	5	169	Early transcription factor 82 kDa subunit	w
+EARLY	virus	H6TAI1	COTV028	H6TAI1	4	170	Early protein OPG038	w
+EARLY	virus	H8PFZ0		H8PFZ0	2	29	Early E1A protein	w
+EARLY	virus	H9AA75	E1a	H9AA75	3	32	Early E1A protein	w
+EARLY	virus	K7ZLK8	E1A	K7ZLK8	3	40	Early E1A protein	w
+EARLY	virus	K7ZRS6	E3	K7ZRS6	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	K7ZRT6	E1A	K7ZRT6	2	40	Early E1A protein	w
+EARLY	virus	M0QTS2	E1A	M0QTS2	2	39	Early E1A protein	w
+EARLY	virus	M0QTS3	E1A	M0QTS3	2	39	Early E1A protein	w
+EARLY	virus	M0QTS4	E1A	M0QTS4	2	39	Early E1A protein	w
+EARLY	virus	M0QTU5	E3	M0QTU5	0	39	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QTW2	E1A	M0QTW2	2	40	Early E1A protein	w
+EARLY	virus	M0QTZ9	E1A	M0QTZ9	1	40	Early E1A protein	w
+EARLY	virus	M0QU00	E1A	M0QU00	2	40	Early E1A protein	w
+EARLY	virus	M0QU01	E1A	M0QU01	1	40	Early E1A protein	w
+EARLY	virus	M0QU22	E3	M0QU22	1	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QU73	E1A	M0QU73	1	40	Early E1A protein	w
+EARLY	virus	M0QU74	E1A	M0QU74	2	40	Early E1A protein	w
+EARLY	virus	M0QU75	E1A	M0QU75	1	40	Early E1A protein	w
+EARLY	virus	M0QU96	E3	M0QU96	2	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QUB2	E1A	M0QUB2	2	39	Early E1A protein	w
+EARLY	virus	M0QUB3	E1A	M0QUB3	2	39	Early E1A protein	w
+EARLY	virus	M0QUD5	E3	M0QUD5	0	39	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QUF0	E1A	M0QUF0	3	40	Early E1A protein	w
+EARLY	virus	M0QUF1	E1A	M0QUF1	2	40	Early E1A protein	w
+EARLY	virus	M0QUF2	E1A	M0QUF2	1	40	Early E1A protein	w
+EARLY	virus	M0QUH4	E3	M0QUH4	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QUJ0	E1A	M0QUJ0	0	40	Early E1A protein	w
+EARLY	virus	M0QUJ1	E1A	M0QUJ1	2	40	Early E1A protein	w
+EARLY	virus	M0QUJ2	E1A	M0QUJ2	2	40	Early E1A protein	w
+EARLY	virus	M0QUL3	E3	M0QUL3	1	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QUM9	E1A	M0QUM9	4	40	Early E1A protein	w
+EARLY	virus	M0QUN0	E1A	M0QUN0	1	40	Early E1A protein	w
+EARLY	virus	M0QUN1	E1A	M0QUN1	1	40	Early E1A protein	w
+EARLY	virus	M0QUQ2	E3	M0QUQ2	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QUR8	E1A	M0QUR8	1	40	Early E1A protein	w
+EARLY	virus	M0QUS6	E1A	M0QUS6	0	40	Early E1A protein	w
+EARLY	virus	M0QUS7	E1A	M0QUS7	2	40	Early E1A protein	w
+EARLY	virus	M0QUS8	E1A	M0QUS8	2	40	Early E1A protein	w
+EARLY	virus	M0QUU9	E3	M0QUU9	1	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QUW5	E1A	M0QUW5	2	40	Early E1A protein	w
+EARLY	virus	M0QUW6	E1A	M0QUW6	2	40	Early E1A protein	w
+EARLY	virus	M0QUW7	E1A	M0QUW7	2	40	Early E1A protein	w
+EARLY	virus	M0QUY9	E3	M0QUY9	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QV05	E1A	M0QV05	2	40	Early E1A protein	w
+EARLY	virus	M0QV06	E1A	M0QV06	2	40	Early E1A protein	w
+EARLY	virus	M0QV07	E1A	M0QV07	1	40	Early E1A protein	w
+EARLY	virus	M0QV28	E3	M0QV28	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QV44	E1A	M0QV44	3	40	Early E1A protein	w
+EARLY	virus	M0QV45	E1A	M0QV45	2	40	Early E1A protein	w
+EARLY	virus	M0QV46	E1A	M0QV46	2	40	Early E1A protein	w
+EARLY	virus	M0QV68	E3	M0QV68	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QV84	E1A	M0QV84	2	40	Early E1A protein	w
+EARLY	virus	M0QV85	E1A	M0QV85	2	40	Early E1A protein	w
+EARLY	virus	M0QV86	E1A	M0QV86	1	40	Early E1A protein	w
+EARLY	virus	M0QVA8	E3	M0QVA8	1	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QVC4	E1A	M0QVC4	3	40	Early E1A protein	w
+EARLY	virus	M0QVC5	E1A	M0QVC5	1	40	Early E1A protein	w
+EARLY	virus	M0QVC6	E1A	M0QVC6	2	40	Early E1A protein	w
+EARLY	virus	M0QVE7	E3	M0QVE7	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QVG3	E1A	M0QVG3	2	40	Early E1A protein	w
+EARLY	virus	M0QVG4	E1A	M0QVG4	2	40	Early E1A protein	w
+EARLY	virus	M0QVG5	E1A	M0QVG5	2	40	Early E1A protein	w
+EARLY	virus	M0QVI7	E3	M0QVI7	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QVK3	E1A	M0QVK3	4	40	Early E1A protein	w
+EARLY	virus	M0QVK4	E1A	M0QVK4	2	40	Early E1A protein	w
+EARLY	virus	M0QVK5	E1A	M0QVK5	1	40	Early E1A protein	w
+EARLY	virus	M0QVM6	E3	M0QVM6	1	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QVP2	E1A	M0QVP2	1	40	Early E1A protein	w
+EARLY	virus	M0QVP3	E1A	M0QVP3	1	40	Early E1A protein	w
+EARLY	virus	M0QVP4	E1A	M0QVP4	1	40	Early E1A protein	w
+EARLY	virus	M0QVR6	E3	M0QVR6	1	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M0QVT2	E1A	M0QVT2	1	40	Early E1A protein	w
+EARLY	virus	M0QVT3	E1A	M0QVT3	1	40	Early E1A protein	w
+EARLY	virus	M0QVV5	E3	M0QVV5	0	40	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	M9YXV2		M9YXV2	2	34	Early E1A protein	w
+EARLY	virus	M9YY14		M9YY14	2	36	Early E1A protein	w
+EARLY	virus	P03238		P03238	0	45	Early 4 ORF6/7 control protein	w
+EARLY	virus	P03239		P03239	1	45	Early 4 ORF6 protein	w
+EARLY	virus	P03240		P03240	2	45	Early 4 ORF4 protein	w
+EARLY	virus	P03241		P03241	4	45	Early 4 ORF3 protein	w
+EARLY	virus	P03242		P03242	2	45	Early 4 ORF1 protein	w
+EARLY	virus	P03250		P03250	1	45	Early 3 receptor internalization and degradation beta protei	w
+EARLY	virus	P03254		P03254	2	45	Early E1A protein	w
+EARLY	virus	P03255		P03255	1	31	Early E1A protein	w
+EARLY	virus	P03259		P03259	2	27	Early E1A protein	w
+EARLY	virus	P03287		P03287	2	45	Uncharacterized 11.6 kDa early protein	w
+EARLY	virus	P04308	OPG118	P04308	6	218	Early transcription factor 70 kDa subunit	w
+EARLY	virus	P04489		P04489	2	31	Probable early E4 11 kDa protein	w
+EARLY	virus	P04493		P04493	2	31	Early E3 14.5 kDa protein	w
+EARLY	virus	P04494		P04494	1	31	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	P06496		P06496	2	31	Early E3A 12.5 kDa protein	w
+EARLY	virus	P06497		P06497	3	31	Early E3B 10.4 kDa protein	w
+EARLY	virus	P06498		P06498	0	31	Early E3B 14.6 kDa protein	w
+EARLY	virus	P0C6L2		P0C6L2	0	6	SV40 early leader protein	w
+EARLY	virus	P0DJX0		P0DJX0	3	45	Early 4 ORF2 protein	w
+EARLY	virus	P0DOL7	OPG038	P0DOL7	4	199	Early protein OPG038	w
+EARLY	virus	P0DON9	OPG118	P0DON9	4	198	Early transcription factor 70 kDa subunit	w
+EARLY	virus	P0DOU7	OPG133	P0DOU7	8	199	Early transcription factor 82 kDa subunit	w
+EARLY	virus	P0DXM1	U18	P0DXM1	6	96	Putative immediate early glycoprotein	w
+EARLY	virus	P10541		P10541	2	34	Early E1A protein	w
+EARLY	virus	P14264		P14264	0	29	Early E1A protein	w
+EARLY	virus	P17590		P17590	2	31	Early E3A 10.5 kDa glycoprotein	w
+EARLY	virus	P20636	OPG133	P20636	4	218	Early transcription factor 82 kDa subunit	w
+EARLY	virus	P21966	VETFS	P21966	2	244	Early transcription factor 70 kDa subunit	w
+EARLY	virus	P27311		P27311	2	45	Early E3A 12.5 kDa protein	w
+EARLY	virus	P32096	VETFS	P32096	5	152	Early transcription factor 70 kDa subunit	w
+EARLY	virus	P35768		P35768	1	38	Early E3 20.3 kDa glycoprotein	w
+EARLY	virus	P35770		P35770	3	38	Early E3 20.6 kDa glycoprotein	w
+EARLY	virus	P36705		P36705	0	27	Early E3B 10.4 kDa protein	w
+EARLY	virus	P36706		P36706	2	27	Early E3A 12.1 kDa protein	w
+EARLY	virus	P36707		P36707	1	27	Early E3B 12.7 kDa protein	w
+EARLY	virus	P36708		P36708	1	27	Probable early E4 11 kDa protein	w
+EARLY	virus	P36709		P36709	2	27	Probable early E4 13 kDa protein	w
+EARLY	virus	P36710		P36710	0	27	Early E4 34 kDa protein	w
+EARLY	virus	P68959		P68959	2	29	Early E3 13.3 kDa protein	w
+EARLY	virus	P68961		P68961	1	30	Early E3 13.3 kDa protein	w
+EARLY	virus	P68976		P68976	3	45	Early 3 14.7 kDa protein	w
+EARLY	virus	P68978		P68978	1	45	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	P87568		P87568	3	29	Early E4 30 kDa protein	w
+EARLY	virus	P89083		P89083	0	39	Early E4 34 kDa protein	w
+EARLY	virus	Q03552	E3	Q03552	2	29	Early E3 14.5 kDa protein	w
+EARLY	virus	Q070C3	CRV128	Q070C3	3	169	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q070D7	CRV114	Q070D7	2	169	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q08FP5	DpV83gp107	Q08FP5	2	164	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q08FQ9	DpV83gp093	Q08FQ9	2	164	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q08FY3	DpV83gp017	Q08FY3	4	165	Early protein OPG038	w
+EARLY	virus	Q0NP83	TATV_DAH68_128	Q0NP83	7	220	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q0NP98	TATV_DAH68_113	Q0NP98	6	219	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q0NPH8	TATV_DAH68_033	Q0NPH8	3	220	Early protein OPG038	w
+EARLY	virus	Q2KRU4	E1A	Q2KRU4	0	44	Early E1A protein	w
+EARLY	virus	Q2KS87	E1A	Q2KS87	1	48	Early E1A protein	w
+EARLY	virus	Q2Y0G5	E3A	Q2Y0G5	0	46	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q32UG4	E3	Q32UG4	0	39	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q32UI8	E1A	Q32UI8	1	39	Early E1A protein	w
+EARLY	virus	Q32UI9	E1A	Q32UI9	1	39	Early E1A protein	w
+EARLY	virus	Q3ZKT5	E3	Q3ZKT5	0	46	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q3ZKW4	E1A	Q3ZKW4	0	46	Early E1A protein	w
+EARLY	virus	Q3ZKW5	E1A	Q3ZKW5	1	46	Early E1A protein	w
+EARLY	virus	Q3ZL04	E1A	Q3ZL04	2	41	Early E1A protein	w
+EARLY	virus	Q3ZL05	E1A	Q3ZL05	0	41	Early E1A protein	w
+EARLY	virus	Q49QU5	E1A	Q49QU5	0	40	Early E1A protein	w
+EARLY	virus	Q4KSJ1		Q4KSJ1	0	32	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q4KSL1		Q4KSL1	2	32	Early E1A protein	w
+EARLY	virus	Q5C8R3		Q5C8R3	1	35	Early E1A protein	w
+EARLY	virus	Q5TIZ6	E3 18.4 K	Q5TIZ6	2	39	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q64865		Q64865	3	34	Early E4 34 kDa protein	w
+EARLY	virus	Q69553	U18	Q69553	3	98	Putative immediate early glycoprotein	w
+EARLY	virus	Q6H1B5	E3	Q6H1B5	3	37	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q6H1D8	E1A	Q6H1D8	1	37	Early E1A protein	w
+EARLY	virus	Q6JGG7	E1A	Q6JGG7	1	39	Early E1A protein	w
+EARLY	virus	Q6JGG9	E1A	Q6JGG9	2	44	Early E1A protein	w
+EARLY	virus	Q6QP96		Q6QP96	1	36	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q6QPB8		Q6QPB8	0	36	Early E1A protein	w
+EARLY	virus	Q6QPD2		Q6QPD2	2	36	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q6QPF4		Q6QPF4	0	36	Early E1A protein	w
+EARLY	virus	Q6QPG8		Q6QPG8	0	36	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q6QPJ0		Q6QPJ0	0	36	Early E1A protein	w
+EARLY	virus	Q6RK99	E1A	Q6RK99	1	28	Early E1A protein	w
+EARLY	virus	Q6SW37	UL112/UL113	Q6SW37	8	167	Early phosphoprotein p84	w
+EARLY	virus	Q6SW94	UL37	Q6SW94	5	168	UL37 immediate early glycoprotein	w
+EARLY	virus	Q6TVA5		Q6TVA5	7	130	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q6TVN7		Q6TVN7	5	129	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q6TVQ1		Q6TVQ1	3	129	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q6VZA3	CNPV244	Q6VZA3	6	318	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q6VZR7	CNPV080	Q6VZR7	9	317	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q71BY7	E1a	Q71BY7	0	36	Early E1A protein	w
+EARLY	virus	Q71BY8	E1a	Q71BY8	3	36	Early E1A protein	w
+EARLY	virus	Q772X3		Q772X3	0	38	Early E3 18.5 kDa glycoprotein	w
+EARLY	virus	Q80HY2	OPG038	Q80HY2	5	218	Early protein OPG038	w
+EARLY	virus	Q8B8U9		Q8B8U9	1	38	Early E1A protein	w
+EARLY	virus	Q8B8V0		Q8B8V0	1	38	Early E1A protein	w
+EARLY	virus	Q8JLA5	EVM110	Q8JLA5	5	169	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q8JLC0	EVM095	Q8JLC0	6	169	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q8JSK3	E1A	Q8JSK3	1	46	Early E1A protein	w
+EARLY	virus	Q8JSK4	E1A	Q8JSK4	1	46	Early E1A protein	w
+EARLY	virus	Q8QMU3	CPX139 CDS	Q8QMU3	6	225	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q8QMV4	CPXV123 CDS	Q8QMV4	6	224	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q8QN22	CPXV040 CDS	Q8QN22	5	225	Early protein OPG038	w
+EARLY	virus	Q8UY93	E1A	Q8UY93	0	22	Early E1A protein	w
+EARLY	virus	Q8UY94	E1A	Q8UY94	0	22	Early E1A protein	w
+EARLY	virus	Q8V2P8		Q8V2P8	6	208	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q8V2R3		Q8V2R3	3	208	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q8V2Y8		Q8V2Y8	4	208	Early protein OPG038	w
+EARLY	virus	Q8V3K1	SPV095	Q8V3K1	3	145	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q8V3L4	SPV081	Q8V3L4	3	145	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q8V4W8	A8L	Q8V4W8	4	186	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q8V4Y2	E6R	Q8V4Y2	5	187	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q8V554	O2L	Q8V554	6	187	Early protein OPG038	w
+EARLY	virus	Q91MR5	LSDV098	Q91MR5	2	152	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q91MS8	LSDV084	Q91MS8	1	152	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q91MU6	LSDV062	Q91MU6	6	153	Early transcription protein	w
+EARLY	virus	Q96676		Q96676	1	30	Early E1A protein	w
+EARLY	virus	Q96688		Q96688	3	30	Early E3 22.1 kDa glycoprotein	w
+EARLY	virus	Q96690		Q96690	0	30	Early E4 31 kDa protein	w
+EARLY	virus	Q98262	VETFS	Q98262	2	162	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q98277	VETFL	Q98277	4	161	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q9DHL5	98L	Q9DHL5	5	150	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q9DHM9	84R	Q9DHM9	6	150	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q9DHV3	9L	Q9DHV3	6	150	Early protein OPG038	w
+EARLY	virus	Q9EMU4	AMV105	Q9EMU4	8	278	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q9J562	VETFL	Q9J562	8	247	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q9Q8F0	m154L	Q9Q8F0	2	157	Early protein OPG038	w
+EARLY	virus	Q9Q8K4	VETFL	Q9Q8K4	4	157	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q9Q8L9	VETFS	Q9Q8L9	7	156	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q9Q8T1	s154L	Q9Q8T1	2	153	Early protein OPG038	w
+EARLY	virus	Q9Q8Y2	VETFL	Q9Q8Y2	3	152	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q9QB84	VETFL	Q9QB84	1	139	Early transcription factor 82 kDa subunit	w
+EARLY	virus	Q9QB97	VETFS	Q9QB97	4	140	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q9YLA0	E1A	Q9YLA0	0	39	Early E1A protein	w
+EARLY	virus	Q9YLA1	E1A	Q9YLA1	2	39	Early E1A protein	w
+EARLY	virus	Q9YLA2	E1A	Q9YLA2	3	39	Early E1A protein	w
+EARLY	virus	Q9YVX9	VETFS	Q9YVX9	6	261	Early transcription factor 70 kDa subunit	w
+EARLY	virus	Q9YVY4	MSV108	Q9YVY4	2	261	Viral membrane associated, early morphogenesis protein (Cop-	w
+EARLY	virus	Q9YW29	VETFL	Q9YW29	6	261	Early transcription factor 82 kDa subunit	w
+EARLY	virus	R4JLS8	EPTV-WA-103	R4JLS8	4	179	Early transcription factor 82 kDa subunit	w
+EARLY	virus	U3UBD6	A7L	U3UBD6	4	141	Early transcription factor 82 kDa subunit	w
+EARLY	virus	U3UBK4	D6R	U3UBK4	1	141	Early transcription factor 70 kDa subunit	w
+EARLY	virus	W6JIZ6		W6JIZ6	3	241	Early transcription factor 82 kDa subunit	w
+EARLY	worm	A0A1X7RBL2	CELE_Y51H7C.41	A0A1X7RBL2	0	14	Immediate early response 3-interacting protein 1	w
+EARLY	worm	G5EEK5	vet-6	G5EEK5	1	29	Very Early Transcript	w
+EARLY	worm	O01861	vet-1	O01861	2	9	Very Early Transcript	w
+EARLY	worm	O61775	vet-2	O61775	0	2	Very Early Transcript	w
+EARLY	worm	P21541	zyg-11	P21541	3	30	Early embryogenesis protein zyg-11	w
+EARLY	worm	Q18250	egrh-1	Q18250	1	3	Early growth response factor homolog 1	w
+EARLY	worm	Q20631	CELE_F49E8.6	Q20631	0	3	Early nodulin-75-like	w
+EARLY	worm	Q7YTG6	CELE_W09G3.8	Q7YTG6	0	2	Immediate early response 3-interacting protein 1	w
+EARLY	worm	Q9BKQ7	eelo-1	Q9BKQ7	0	2	Early ELOngation arrest	w
+EARLY	yeast	Q04406	EMI1	Q04406	1	5	Early meiotic induction protein 1	w
+EARLY	zebrafish	A2CEP8	eeig1b	A2CEP8	0	4	Early estrogen-induced gene 1 protein isoform X3	w
+EARLY	zebrafish	B7SXM5	ier2	B7SXM5	1	2	Immediate early response gene 2 protein	w
+EARLY	zebrafish	E7F6F8	si:ch73-95l15.5	E7F6F8	1	25	Early endosome antigen 1	w
+EARLY	zebrafish	E7F7B8	ier2b	E7F7B8	0	1	Immediate early response 2b	w
+EARLY	zebrafish	E9QHV5	mier1b	E9QHV5	1	4	Mesoderm induction early response protein 1	w
+EARLY	zebrafish	F1Q4S8	mier2	F1Q4S8	1	5	Mesoderm induction early response 1, family member 2	w
+EARLY	zebrafish	F1Q9V8	mier3a	F1Q9V8	1	4	Mesoderm induction early response 1, family member 3 a	w
+EARLY	zebrafish	F1QS51	eea1	F1QS51	3	42	Early endosome antigen 1	w
+EARLY	zebrafish	P0DMC2	apela	P0DMC2	4	25	Apelin receptor early endogenous ligand	w
+EARLY	zebrafish	P26632	egr1	P26632	1	16	Early growth response protein 1	w
+EARLY	zebrafish	Q05159	egr2b	Q05159	2	13	Early growth response protein 2b	w
+EARLY	zebrafish	Q4VBI2	ier3ip1	Q4VBI2	0	7	Immediate early response 3-interacting protein 1	w
+EARLY	zebrafish	Q6NYT3	ier5l	Q6NYT3	0	1	Immediate early response gene 5-like protein	w
+EARLY-PREGNANCY	human	P61604	HSPE1	P61604	18	446	10 kDa heat shock protein, mitochondrial (Hsp10) (10 kDa cha	w
+EARMUFF	fly	FBgn0031375	erm	A0A0R4YI50	67	370	Earmuff, isoform D	w
+EARP	human	Q53HC9	EIPR1	Q53HC9	16	115	EARP and GARP complex-interacting protein 1 (Endosome-associ	w
+EARP	human	Q96JG6	VPS50	Q96JG6	21	171	Syndetin (Coiled-coil domain-containing protein 132) (EARP/G	w
+EARP	pseudomonas-aeruginosa	Q9HZZ1	earP	Q9HZZ1	1	1	Protein-arginine rhamnosyltransferase	
+EARP-INTERACTING	zebrafish	Q5XJP1	eipr1	Q5XJP1	1	6	EARP-interacting protein homolog	w
+EARS-1	worm	Q23315	ears-1	Q23315	3	136	glutamate--tRNA ligase	
+EARS-2	worm	O44413	ears-2	O44413	2	122	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	
+EARS2	fly	FBgn0036629	GluRS-m	Q9VV59	5	183	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
+EARS2	human	Q5JPH6	EARS2	Q5JPH6	19	370	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	
+EARS2	mus-musculus	Q9CXJ1	Ears2	Q9CXJ1	4	191	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	
+EARS2	rattus-norvegicus	M0RAI4	Ears2	M0RAI4	6	266	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	
+EARS2	worm	O44413	ears-2	O44413	2	122	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
+EARS2	zebrafish	Q0P499	ears2	Q0P499	6	322	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
+EARS2	zebrafish	Q0P499	ears2	Q0P499	6	322	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
+EARTHBOUND	fly	FBgn0035153	ebd1	Q9W0N9	7	21	Earthbound 1 (GH13810p)	w
+EARTHBOUND	fly	FBgn0037076	ebd2	Q9VP44	1	9	Earthbound 2, isoform A (Earthbound 2, isoform B) (MIP13624p	w
+EAR_155	fly	FBgn0026441	ear	A0A0B4KG69	80	337		
+EAR_788	fly	FBgn0026441	ear	A0A0B4KG69	80	337		

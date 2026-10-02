@@ -1,13 +1,117 @@
-URA3	schizosaccharomyces-pombe	P32747	ura3	P32747	0	3	Dihydroorotate dehydrogenase (quinone), mitochondrial
-URA4	schizosaccharomyces-pombe	P14965	ura4	P14965	0	1	Orotidine 5'-phosphate decarboxylase
-URA5	schizosaccharomyces-pombe	O94331	ura5	O94331	0	1	Orotate phosphoribosyltransferase
-URA6	candida-albicans-237561	Q59KZ3	URA6	Q59KZ3	0	4	Uridylate kinase
-URA6	cladophialophora-carrionii	A0A1C1CBW7	URA6	A0A1C1CBW7	0	5	Uridylate kinase
-URA6	oryza-sativa-subsp-japonica	Q7XI40	URA6	Q7XI40	0	12	UMP-CMP kinase 3
-URA7	candida-albicans-237561	Q5AK79	URA7	Q5AK79	1	41	CTP synthase
-URA7	cladophialophora-carrionii	A0A1C1CIH7	ura7	A0A1C1CIH7	0	63	CTP synthase
-URA7	schizosaccharomyces-pombe	O42644	ura7	O42644	0	36	CTP synthase
-URA9	candida-albicans-237561	Q874I4	URA9	Q874I4	0	6	Dihydroorotate dehydrogenase (quinone), mitochondrial
-URA9	cladophialophora-carrionii	A0A1C1CSA1	URA9	A0A1C1CSA1	0	11	Dihydroorotate dehydrogenase (quinone), mitochondrial
-URAH	mus-musculus	Q9CRB3	Urah	Q9CRB3	0	5	5-hydroxyisourate hydrolase
-URAH	rattus-norvegicus	D3ZCS9	Urah	D3ZCS9	1	8	5-hydroxyisourate hydrolase
+URA1	yeast	P28272	URA1	P28272	0	20	Dihydroorotate dehydrogenase (fumarate)	
+URA10	yeast	P30402	URA10	P30402	1	5	Orotate phosphoribosyltransferase 2	
+URA3	schizosaccharomyces-pombe	P32747	ura3	P32747	0	3	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+URA3	yeast	P03962	URA3	P03962	0	13	Orotidine 5'-phosphate decarboxylase	
+URA4	schizosaccharomyces-pombe	P14965	ura4	P14965	0	1	Orotidine 5'-phosphate decarboxylase	
+URA4	yeast	P20051	URA4	P20051	0	5	Dihydroorotase	
+URA5	schizosaccharomyces-pombe	O94331	ura5	O94331	0	1	Orotate phosphoribosyltransferase	
+URA5	yeast	P13298	URA5	P13298	2	16	Orotate phosphoribosyltransferase 1	
+URA6	candida-albicans-237561	Q59KZ3	URA6	Q59KZ3	0	4	Uridylate kinase	
+URA6	cladophialophora-carrionii	A0A1C1CBW7	URA6	A0A1C1CBW7	0	5	Uridylate kinase	
+URA6	oryza-sativa-subsp-japonica	Q7XI40	URA6	Q7XI40	0	12	UMP-CMP kinase 3	
+URA6	yeast	P15700	URA6	P15700	0	8	Uridylate kinase	
+URA7	candida-albicans-237561	Q5AK79	URA7	Q5AK79	1	41	CTP synthase	
+URA7	cladophialophora-carrionii	A0A1C1CIH7	ura7	A0A1C1CIH7	0	63	CTP synthase	
+URA7	schizosaccharomyces-pombe	O42644	ura7	O42644	0	36	CTP synthase	
+URA7	yeast	P28274	URA7	P28274	1	139	CTP synthase 1	
+URA8	yeast	P38627	URA8	P38627	1	71	CTP synthase 2	
+URA9	candida-albicans-237561	Q874I4	URA9	Q874I4	0	6	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+URA9	cladophialophora-carrionii	A0A1C1CSA1	URA9	A0A1C1CSA1	0	11	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+URACIL	fly	FBgn0026869	Tdg	Q9V4D8	16	67	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
+URACIL	fly	FBgn0035639	kri	M9PHI7	1	14	Uracil phosphoribosyltransferase homolog	w
+URACIL	fly	FBgn0036838	Trmt2a	Q9VVV7	3	19	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	w
+URACIL	human	Q13304	GPR17	Q13304	42	372	Uracil nucleotide/cysteinyl leukotriene receptor (UDP/CysLT 	w
+URACIL	human	Q53HV7	SMUG1	Q53HV7	5	145	Single-strand selective monofunctional uracil DNA glycosylas	w
+URACIL	human	Q96BW1	UPRT	Q96BW1	8	71	Uracil phosphoribosyltransferase homolog	w
+URACIL	worm	Q9N5L0	trm-2a	Q9N5L0	0	3	tRNA (uracil(54)-C(5))-methyltransferase	w
+URACIL	worm	Q9U3L5	C47B2.2	Q9U3L5	1	12	Uracil phosphoribosyltransferase homolog	w
+URACIL	yeast	P05316	FUR4	P05316	0	29	Uracil permease	w
+URACIL	yeast	P18562	FUR1	P18562	1	28	Uracil phosphoribosyltransferase	w
+URACIL	yeast	P33753	TRM2	P33753	0	5	tRNA (uracil(54)-C(5))-methyltransferase	w
+URACIL	yeast	Q04411	URC2	Q04411	0	54	Uracil catabolism protein 2	w
+URACIL	zebrafish	A0A8M9QB08	gpr17	A0A8M9QB08	9	20	Uracil nucleotide/cysteinyl leukotriene receptor	w
+URACIL	zebrafish	Q6NYU7	uprt	Q6NYU7	3	13	Uracil phosphoribosyltransferase homolog	w
+URACIL-5-	human	Q8IZ69	TRMT2A	Q8IZ69	13	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	w
+URACIL-5-	human	Q96GJ1	TRMT2B	Q96GJ1	3	67	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
+URACIL-DNA	fly	FBgn0038490	Smug	Q9VEM1	0	5	Uracil-DNA glycosylase-like domain-containing protein	w
+URACIL-DNA	fly	FBgn0039226	Ude	Q7KS11	3	10	Uracil-DNA degrading factor, isoform B (Uracil-DNA degrading	w
+URACIL-DNA	human	P13051	UNG	P13051	11	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
+URACIL-DNA	virus	A0A068EG39	fep_062	A0A068EG39	5	221	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A068EHG3	pepv_064	A0A068EHG3	13	240	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A0A7MA92		A0A0A7MA92	9	130	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A0G3FXR8	RCNV-Herman-105	A0A0G3FXR8	18	195	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A0M3ZHG0		A0A0M3ZHG0	12	170	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A1B1MRK9	PTPV-Aus-085	A0A1B1MRK9	11	143	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A1C9KBP5	SKPV-WA-108	A0A1C9KBP5	10	209	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A1C9KCD9	VPXV-CA-108	A0A1C9KCD9	20	204	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A1Z3GCT6	SePPVgORF058	A0A1Z3GCT6	8	119	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A220T6E8	EPTV-WA-086	A0A220T6E8	12	179	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A223FMU3	Murmansk-105	A0A223FMU3	28	202	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A2C9DSP4		A0A2C9DSP4	8	162	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A2C9DT58		A0A2C9DT58	8	162	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A2H4X269	fgpv_061	A0A2H4X269	16	256	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A2U9QHQ0	SOPV-ELK-080	A0A2U9QHQ0	13	130	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A346FS80	AKMV-88-118	A0A346FS80	17	214	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A3G1T4G5	BKRF3	A0A3G1T4G5	3	81	Uracil-DNA glycosylase-like domain-containing protein	w
+URACIL-DNA	virus	A0A3G2KXX0	OPVA109	A0A3G2KXX0	16	208	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A916KPT5	CHBEV_267	A0A916KPT5	7	311	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0A916P259	MYSEV_257	A0A916P259	8	301	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A0ABM9QKT6	CHREV_234	A0ABM9QKT6	8	286	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	A7XCK8	82R	A7XCK8	11	154	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	D3IZL4		D3IZL4	11	125	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	F5HFA1	ORF46	F5HFA1	4	84	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	F5HI85	UL114	F5HI85	7	168	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	G3EIG7	YKV089	G3EIG7	19	184	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	H6TA72	COTV098	H6TA72	10	170	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	O36395	46	O36395	6	69	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P04303	OPG116	P04303	20	218	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P09307	ORF59	P09307	4	68	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P0DSP7	OPG116	P0DSP7	21	199	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P12888	UNG	P12888	3	91	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P21968	UNG	P21968	13	250	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P28866	61	P28866	1	74	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P32941	UNG	P32941	10	153	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P52345	U81	P52345	2	98	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P52447	U81	P52447	3	95	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	P53765	46	P53765	5	76	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q01019	46	Q01019	2	74	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q08FR1	DpV83gp091	Q08FR1	9	165	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q0NPA0	TATV_DAH68_111	Q0NPA0	23	220	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q6TUT3		Q6TUT3	15	140	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q6TVC1		Q6TVC1	6	130	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q6TVQ3		Q6TVQ3	14	129	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q6UDG6	UL2	Q6UDG6	7	69	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q6VZR3	CNPV084	Q6VZR3	10	322	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q8JLC2	EVM093	Q8JLC2	17	170	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q8QMV6	CPXV121 CDS	Q8QMV6	20	225	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q8V2R5		Q8V2R5	20	208	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q8V3L6	SPV079	Q8V3L6	8	146	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q8V4Y4	E4R	Q8V4Y4	10	187	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q98260	MC093R	Q98260	21	161	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q9DHN1	82R	Q9DHN1	7	150	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q9E6R2	MDV014	Q9E6R2	3	87	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q9EMH5	AMV231	Q9EMH5	3	278	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	Q9Q8M1	m079R	Q9Q8M1	8	157	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	U3UBD2	D4R	U3UBD2	16	141	Uracil-DNA glycosylase	w
+URACIL-DNA	virus	W6JPJ7		W6JPJ7	7	241	Uracil-DNA glycosylase	w
+URACIL-DNA	worm	Q9U221	ung-1	Q9U221	0	14	Uracil-DNA glycosylase	w
+URACIL-DNA	yeast	P12887	UNG1	P12887	1	10	Uracil-DNA glycosylase	w
+URACIL-DNA	zebrafish	A0A0G2KZ26	smug1	A0A0G2KZ26	2	7	Single-strand-selective monofunctional uracil-DNA glycosylas	w
+URACIL-DNA	zebrafish	E9QG27	ungb	E9QG27	1	17	Uracil-DNA glycosylase	w
+URACIL-DNA GLYCOSYLASE	virus	A0A5P9JR33	uracil-DNA glycosylase	A0A5P9JR33	3	80	A0A5P9JR33_9ALPH	
+URACIL-O	fly	FBgn0037708	CG9386	Q9VHB9	0	8	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w
+URACIL-O	human	Q8IYL2	TRMT44	Q8IYL2	5	71	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w
+URACIL-O	yeast	Q02648	TRM44	Q02648	0	15	tRNA (uracil-O(2)-)-methyltransferase	w
+URAD	human	A6NGE7	URAD	A6NGE7	3	12	Putative 2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline decar	
+URAD_HUMAN	human	A6NGE7	URAD	A6NGE7	3	12		
+URAH	mus-musculus	Q9CRB3	Urah	Q9CRB3	0	5	5-hydroxyisourate hydrolase	
+URAH	rattus-norvegicus	D3ZCS9	Urah	D3ZCS9	1	8	5-hydroxyisourate hydrolase	
+URAH	zebrafish	Q06S87	urah	Q06S87	1	14	5-hydroxyisourate hydrolase	
+URAHB	zebrafish	E7F0I1	urahb	E7F0I1	1	14	5-hydroxyisourate hydrolase	
+URAS1_HUMAN	human	Q96HZ7	URB1-DT	Q96HZ7	0	4		
+URAT1	human	Q96S37	SLC22A12	Q96S37	0	48		
+URATE	fly	FBgn0003961	Uro	P16163	1	104	Uricase (EC 1.7.3.3) (Urate oxidase)	w
+URATE	human	Q96S37	SLC22A12	Q96S37	0	48	Solute carrier family 22 member 12 (Organic anion transporte	w
+URATE	human	Q9NRM0	SLC2A9	Q9NRM0	1	98	Solute carrier family 2, facilitated glucose transporter mem	w
+URATE	human	Q9Y2C5	SLC17A4	Q9Y2C5	0	22	Probable small intestine urate exporter (Solute carrier fami	w
+URAX1	human	Q96S65	CSRNP1	Q96S65	8	25	Cysteine/serine-rich nuclear protein 1 (CSRNP-1) (Axin-1 up-	w

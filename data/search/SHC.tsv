@@ -1,11 +1,43 @@
-SHC1	mus-musculus	P98083	Shc1	P98083	44	246	SHC-transforming protein 1
-SHC1	rattus-norvegicus	Q5M824	Shc1	Q5M824	47	255	SHC-transforming protein 1
-SHC2	mus-musculus	Q8BMC3	Shc2	Q8BMC3	6	12	SHC-transforming protein 2
-SHC2	rattus-norvegicus	O70142	Shc2	O70142	6	18	SHC-transforming protein 2
-SHC3	mus-musculus	Q61120	Shc3	Q61120	11	42	SHC-transforming protein 3
-SHC3	rattus-norvegicus	O70143	Shc3	O70143	22	106	SHC-transforming protein 3
-SHC4	mus-musculus	Q6S5L9	Shc4	Q6S5L9	2	8	SHC-transforming protein 4
-SHC4	rattus-norvegicus	D4A3K2	Shc4	D4A3K2	5	16	SHC adaptor protein 4
-SHCBP1	mus-musculus	Q9Z179	Shcbp1	Q9Z179	1	6	SHC SH2 domain-binding protein 1
-SHCBP1	rattus-norvegicus	A0A0G2K2J0	Shcbp1	A0A0G2K2J0	1	2	SHC SH2 domain-binding protein 1
-SHCBP1L	rattus-norvegicus	B1H291	Shcbp1l	B1H291	1	1	Testicular spindle-associated protein SHCBP1L
+SHC	fly	FBgn0015296	Shc	Q9V3C8	20	70	DShc protein (FI07258p) (SHC-adaptor protein)	
+SHC	human	P29353	SHC1	P29353	88	389		
+SHC-1	worm	Q9TYT3	shc-1	Q9TYT3	3	48	SHC-transforming protein homolog 1	
+SHC-2	worm	H2L092	shc-2	H2L092	0	1	SH2 domain-containing protein	
+SHC-ADAPTOR	fly	FBgn0015296	Shc	Q9V3C8	20	70	DShc protein (FI07258p) (SHC-adaptor protein)	w
+SHC-TRANSFORMING	human	P29353	SHC1	P29353	88	389	SHC-transforming protein 1 (SHC-transforming protein 3) (SHC	w
+SHC-TRANSFORMING	human	P98077	SHC2	P98077	19	91	SHC-transforming protein 2 (Protein Sck) (SHC-transforming p	w
+SHC-TRANSFORMING	human	Q6S5L8	SHC4	Q6S5L8	19	51	SHC-transforming protein 4 (Rai-like protein) (RaLP) (SHC-tr	w
+SHC-TRANSFORMING	human	Q92529	SHC3	Q92529	44	149	SHC-transforming protein 3 (Neuronal Shc) (N-Shc) (Protein R	w
+SHC-TRANSFORMING	worm	Q9TYT3	shc-1	Q9TYT3	3	48	SHC-transforming protein homolog 1	w
+SHC-TRANSFORMING	zebrafish	E7F3T0	shc1	E7F3T0	34	189	SHC-transforming protein 1	w
+SHC1	human	P29353	SHC1	P29353	88	389	SHC-transforming protein 1 (SHC-transforming protein 3) (SHC	
+SHC1	mus-musculus	P98083	Shc1	P98083	44	246	SHC-transforming protein 1	
+SHC1	rattus-norvegicus	Q5M824	Shc1	Q5M824	47	255	SHC-transforming protein 1	
+SHC1	yeast	P39000	SHC1	P39000	0	9	Protein SHC1	
+SHC1	zebrafish	E7F3T0	shc1	E7F3T0	34	189	SHC-transforming protein 1	
+SHC1_HUMAN	human	P29353	SHC1	P29353	88	389		
+SHC2	human	P98077	SHC2	P98077	19	91	SHC-transforming protein 2 (Protein Sck) (SHC-transforming p	
+SHC2	mus-musculus	Q8BMC3	Shc2	Q8BMC3	6	12	SHC-transforming protein 2	
+SHC2	rattus-norvegicus	O70142	Shc2	O70142	6	18	SHC-transforming protein 2	
+SHC2	zebrafish	Q1LX18	shc2	Q1LX18	7	44	SHC (Src homology 2 domain-containing)-transforming protein 	
+SHC2_HUMAN	human	P98077	SHC2	P98077	19	91		
+SHC3	human	Q92529	SHC3	Q92529	44	149	SHC-transforming protein 3 (Neuronal Shc) (N-Shc) (Protein R	
+SHC3	mus-musculus	Q61120	Shc3	Q61120	11	42	SHC-transforming protein 3	
+SHC3	rattus-norvegicus	O70143	Shc3	O70143	22	106	SHC-transforming protein 3	
+SHC3_HUMAN	human	Q92529	SHC3	Q92529	44	149		
+SHC4	human	Q6S5L8	SHC4	Q6S5L8	19	51	SHC-transforming protein 4 (Rai-like protein) (RaLP) (SHC-tr	
+SHC4	mus-musculus	Q6S5L9	Shc4	Q6S5L9	2	8	SHC-transforming protein 4	
+SHC4	rattus-norvegicus	D4A3K2	Shc4	D4A3K2	5	16	SHC adaptor protein 4	
+SHC4_HUMAN	human	Q6S5L8	SHC4	Q6S5L8	19	51		
+SHCA	human	P29353	SHC1	P29353	88	389		
+SHCAF_HUMAN	human	Q9NP50	SINHCAF	Q9NP50	37	208		
+SHCB	human	P98077	SHC2	P98077	19	91		
+SHCBP1	human	Q8NEM2	SHCBP1	Q8NEM2	12	131	SHC SH2 domain-binding protein 1	
+SHCBP1	mus-musculus	Q9Z179	Shcbp1	Q9Z179	1	6	SHC SH2 domain-binding protein 1	
+SHCBP1	rattus-norvegicus	A0A0G2K2J0	Shcbp1	A0A0G2K2J0	1	2	SHC SH2 domain-binding protein 1	
+SHCBP1	zebrafish	A0A8M1PEN2	shcbp1	A0A8M1PEN2	1	7	SHC SH2 domain-binding protein 1	
+SHCBP1L	human	Q9BZQ2	SHCBP1L	Q9BZQ2	4	65	Testicular spindle-associated protein SHCBP1L (SHC SH2 domai	
+SHCBP1L	rattus-norvegicus	B1H291	Shcbp1l	B1H291	1	1	Testicular spindle-associated protein SHCBP1L	
+SHCBP_HUMAN	human	Q8NEM2	SHCBP1	Q8NEM2	12	131		
+SHCC	human	Q92529	SHC3	Q92529	44	149		
+SHCD	human	Q6S5L8	SHC4	Q6S5L8	19	51		
+SHC_249	fly	FBgn0015296	Shc	Q9V3C8	20	70		

@@ -1,29 +1,176 @@
-CUL1	arabidopsis-thaliana	Q94AH6	CUL1	Q94AH6	39	327	Cullin-1
-CUL1	cladophialophora-carrionii	A0A1C1CXY7	CUL1	A0A1C1CXY7	11	144	Cullin-1
-CUL1	mus-musculus	Q9WTX6	Cul1	Q9WTX6	39	291	Cullin-1
-CUL1	oryza-sativa-subsp-japonica	Q0D5G1	CUL1	Q0D5G1	2	25	Elongator complex protein 1
-CUL1	oryza-sativa-subsp-japonica	Q5ZC88	CUL1	Q5ZC88	30	254	Cullin-1
-CUL1	rattus-norvegicus	A0A8I5ZSD2	Cul1	A0A8I5ZSD2	32	309	Cullin-1
-CUL1	schizosaccharomyces-pombe	O13790	cul1	O13790	8	90	Cullin-1
-CUL2	arabidopsis-thaliana	Q9SRZ0	CUL2	Q9SRZ0	46	305	Cullin-2
-CUL2	mus-musculus	Q9D4H8	Cul2	Q9D4H8	36	201	Cullin-2
-CUL2	rattus-norvegicus	A0A0G2K761	Cul2	A0A0G2K761	26	151	Cullin 2
-CUL3	mus-musculus	Q9JLV5	Cul3	Q9JLV5	83	297	Cullin-3
-CUL3	rattus-norvegicus	B5DF89	Cul3	B5DF89	83	305	Cullin-3
-CUL3	schizosaccharomyces-pombe	Q09760	cul3	Q09760	6	55	Cullin-3
-CUL3A	arabidopsis-thaliana	Q9ZVH4	CUL3A	Q9ZVH4	42	332	Cullin-3A
-CUL3B	arabidopsis-thaliana	Q9C9L0	CUL3B	Q9C9L0	40	311	Cullin-3B
-CUL3B	cladophialophora-carrionii	A0A1C1CD22	cul3b	A0A1C1CD22	13	142	Cullin-3-B
-CUL4	arabidopsis-thaliana	Q8LGH4	CUL4	Q8LGH4	16	239	Cullin-4
-CUL4A	cladophialophora-carrionii	A0A1C1C9A2	CUL4A	A0A1C1C9A2	12	95	Cullin-4A
-CUL4A	mus-musculus	Q3TCH7	Cul4a	Q3TCH7	21	212	Cullin-4A
-CUL4A	rattus-norvegicus	B2RYJ3	Cul4a	B2RYJ3	17	154	Cullin-4A
-CUL4B	mus-musculus	A2A432	Cul4b	A2A432	19	200	Cullin-4B
-CUL4B	rattus-norvegicus	D3ZK73	Cul4b	D3ZK73	12	157	Cullin-4B
-CUL5	mus-musculus	Q9D5V5	Cul5	Q9D5V5	11	120	Cullin-5
-CUL5	rattus-norvegicus	Q9JJ31	Cul5	Q9JJ31	7	91	Cullin-5
-CULA	dictyostelium-discoideum	O60999	culA	O60999	13	89	Cullin-1
-CULB	dictyostelium-discoideum	Q9XZJ3	culB	Q9XZJ3	11	88	Cullin-2
-CULC	dictyostelium-discoideum	Q54NZ5	culC	Q54NZ5	17	65	Cullin-3
-CULD	dictyostelium-discoideum	Q54CS2	culD	Q54CS2	7	114	Cullin-4
-CULE	dictyostelium-discoideum	Q54XF7	culE	Q54XF7	18	97	Cullin-5
+CUL-1	human	Q13616	CUL1	Q13616	140	979	Cullin-1 (CUL-1)	w
+CUL-1	worm	Q17389	cul-1	Q17389	27	187	Cullin-1	
+CUL-2	human	Q13617	CUL2	Q13617	87	608	Cullin-2 (CUL-2)	w
+CUL-2	worm	Q17390	cul-2	Q17390	28	91	Cullin-2	
+CUL-3	human	Q13618	CUL3	Q13618	293	2425	Cullin-3 (CUL-3)	w
+CUL-3	worm	Q17391	cul-3	Q17391	29	170	Cullin-3	
+CUL-4	worm	Q17392	cul-4	Q17392	12	100	Cullin-4	
+CUL-4A	human	Q13619	CUL4A	Q13619	93	879	Cullin-4A (CUL-4A)	w
+CUL-4B	human	Q13620	CUL4B	Q13620	91	882	Cullin-4B (CUL-4B)	w
+CUL-5	human	Q93034	CUL5	Q93034	57	512	Cullin-5 (CUL-5) (Vasopressin-activated calcium-mobilizing r	w
+CUL-5	worm	Q23639	cul-5	Q23639	11	57	Cullin-5	
+CUL-6	worm	Q21346	cul-6	Q21346	24	131	Cullin-6	
+CUL-7	human	Q14999	CUL7	Q14999	64	753	Cullin-7 (CUL-7)	w
+CUL-9	human	Q8IWT3	CUL9	Q8IWT3	23	281	Cullin-9 (CUL-9) (UbcH7-associated protein 1) (p53-associate	w
+CUL1	arabidopsis-thaliana	Q94AH6	CUL1	Q94AH6	39	327	Cullin-1	
+CUL1	cladophialophora-carrionii	A0A1C1CXY7	CUL1	A0A1C1CXY7	11	144	Cullin-1	
+CUL1	fly	FBgn0015509	Cul1	Q24311	52	320	Cullin homolog 1 (Lin-19 homolog protein)	
+CUL1	human	Q13616	CUL1	Q13616	140	979	Cullin-1 (CUL-1)	
+CUL1	mus-musculus	Q9WTX6	Cul1	Q9WTX6	39	291	Cullin-1	
+CUL1	oryza-sativa-subsp-japonica	Q0D5G1	CUL1	Q0D5G1	2	25	Elongator complex protein 1	
+CUL1	oryza-sativa-subsp-japonica	Q5ZC88	CUL1	Q5ZC88	30	254	Cullin-1	
+CUL1	rattus-norvegicus	A0A8I5ZSD2	Cul1	A0A8I5ZSD2	32	309	Cullin-1	
+CUL1	schizosaccharomyces-pombe	O13790	cul1	O13790	8	90	Cullin-1	
+CUL1A	zebrafish	Q6NYS3	cul1a	Q6NYS3	33	293	Cullin-1	
+CUL1_HUMAN	human	Q13616	CUL1	Q13616	140	979		
+CUL2	arabidopsis-thaliana	Q9SRZ0	CUL2	Q9SRZ0	46	305	Cullin-2	
+CUL2	fly	FBgn0032956	Cul2	Q9V9R2	29	136	Cullin 2, isoform A (Cullin 2, isoform B) (LD36177p)	
+CUL2	human	Q13617	CUL2	Q13617	87	608	Cullin-2 (CUL-2)	
+CUL2	mus-musculus	Q9D4H8	Cul2	Q9D4H8	36	201	Cullin-2	
+CUL2	rattus-norvegicus	A0A0G2K761	Cul2	A0A0G2K761	26	151	Cullin 2	
+CUL2	zebrafish	A0A8M9P612	cul2	A0A8M9P612	29	150	Cullin-2	
+CUL2_HUMAN	human	Q13617	CUL2	Q13617	87	608		
+CUL3	fly	FBgn0261268	Cul3	Q8IP45	32	186	Cullin 3, isoform F (FI19425p1)	
+CUL3	human	Q13618	CUL3	Q13618	293	2425	Cullin-3 (CUL-3)	
+CUL3	mus-musculus	Q9JLV5	Cul3	Q9JLV5	83	297	Cullin-3	
+CUL3	rattus-norvegicus	B5DF89	Cul3	B5DF89	83	305	Cullin-3	
+CUL3	schizosaccharomyces-pombe	Q09760	cul3	Q09760	6	55	Cullin-3	
+CUL3	yeast	P53202	CUL3	P53202	5	51	Cullin-3	
+CUL3-INTERACTING	human	Q53G59	KLHL12	Q53G59	53	242	Kelch-like protein 12 (CUL3-interacting protein 1) (DKIR hom	w
+CUL3-MEDIATED	human	Q13829	TNFAIP1	Q13829	15	155	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+CUL3-MEDIATED	human	Q8WZ19	KCTD13	Q8WZ19	13	150	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+CUL3-MEDIATED	human	Q9H3F6	KCTD10	Q9H3F6	15	268	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+CUL3-MEDIATED	zebrafish	A9ULR9	kctd13	A9ULR9	2	32	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+CUL3-MEDIATED	zebrafish	F1R5K5	tnfaip1	F1R5K5	5	32	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+CUL3-MEDIATED	zebrafish	Q6P7X5	kctd10	Q6P7X5	5	32	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+CUL3A	arabidopsis-thaliana	Q9ZVH4	CUL3A	Q9ZVH4	42	332	Cullin-3A	
+CUL3A	zebrafish	F6NVK8	cul3a	F6NVK8	77	275	Cullin-3A	
+CUL3B	arabidopsis-thaliana	Q9C9L0	CUL3B	Q9C9L0	40	311	Cullin-3B	
+CUL3B	cladophialophora-carrionii	A0A1C1CD22	cul3b	A0A1C1CD22	13	142	Cullin-3-B	
+CUL3B	zebrafish	B3DIU1	cul3b	B3DIU1	76	292	Cullin 3	
+CUL3_HUMAN	human	Q13618	CUL3	Q13618	293	2425		
+CUL4	arabidopsis-thaliana	Q8LGH4	CUL4	Q8LGH4	16	239	Cullin-4	
+CUL4	fly	FBgn0033260	Cul4	Q5BI50	24	145	Cullin 4, isoform A (Cullin 4, isoform B) (FI05474p) (LP0296	
+CUL4-	human	Q9H7D7	WDR26	Q9H7D7	39	265	WD repeat-containing protein 26 (CUL4- and DDB1-associated W	w
+CUL4-ASSOCIATED	fly	FBgn0034527	CG9945	Q7JYQ4	1	26	DDB1- and CUL4-associated factor 11 homolog	w
+CUL4-ASSOCIATED	fly	FBgn0034641	mahj	Q9W2F2	4	15	Protein mahjong (DDB1- and CUL4-associated factor-like 1) (V	w
+CUL4-ASSOCIATED	fly	FBgn0036500	CG7275	Q9VUN7	6	128	DDB1- and CUL4-associated factor 13 (WD repeat and SOF domai	w
+CUL4-ASSOCIATED	fly	FBgn0037980	DCAF12	Q9VGE3	6	69	DDB1- and CUL4-associated factor 12 homolog	w
+CUL4-ASSOCIATED	fly	FBgn0039601	CG1523	Q9VAT2	3	43	DDB1- and CUL4-associated factor 10 homolog (WD repeat-conta	w
+CUL4-ASSOCIATED	human	A6NGE4	DCAF8L1	A6NGE4	8	52	DDB1- and CUL4-associated factor 8-like protein 1 (WD repeat	w
+CUL4-ASSOCIATED	human	P0C7V8	DCAF8L2	P0C7V8	8	67	DDB1- and CUL4-associated factor 8-like protein 2 (WD repeat	w
+CUL4-ASSOCIATED	human	P61962	DCAF7	P61962	87	355	DDB1- and CUL4-associated factor 7 (WD repeat-containing pro	w
+CUL4-ASSOCIATED	human	Q3SXM0	DCAF4L1	Q3SXM0	5	58	DDB1- and CUL4-associated factor 4-like protein 1 (WD repeat	w
+CUL4-ASSOCIATED	human	Q58WW2	DCAF6	Q58WW2	31	282	DDB1- and CUL4-associated factor 6 (Androgen receptor comple	w
+CUL4-ASSOCIATED	human	Q5H9S7	DCAF17	Q5H9S7	13	108	DDB1- and CUL4-associated factor 17	w
+CUL4-ASSOCIATED	human	Q5QP82	DCAF10	Q5QP82	45	219	DDB1- and CUL4-associated factor 10 (WD repeat-containing pr	w
+CUL4-ASSOCIATED	human	Q5T6F0	DCAF12	Q5T6F0	30	206	DDB1- and CUL4-associated factor 12 (Centrosome-related prot	w
+CUL4-ASSOCIATED	human	Q5TAQ9	DCAF8	Q5TAQ9	31	207	DDB1- and CUL4-associated factor 8 (WD repeat-containing pro	w
+CUL4-ASSOCIATED	human	Q5VU92	DCAF12L1	Q5VU92	8	69	DDB1- and CUL4-associated factor 12-like protein 1 (WD repea	w
+CUL4-ASSOCIATED	human	Q5VW00	DCAF12L2	Q5VW00	11	65	DDB1- and CUL4-associated factor 12-like protein 2 (WD repea	w
+CUL4-ASSOCIATED	human	Q66K64	DCAF15	Q66K64	41	311	DDB1- and CUL4-associated factor 15	w
+CUL4-ASSOCIATED	human	Q8NA75	DCAF4L2	Q8NA75	7	85	DDB1- and CUL4-associated factor 4-like protein 2 (WD repeat	w
+CUL4-ASSOCIATED	human	Q8TEB1	DCAF11	Q8TEB1	26	216	DDB1- and CUL4-associated factor 11 (WD repeat-containing pr	w
+CUL4-ASSOCIATED	human	Q8WV16	DCAF4	Q8WV16	31	416	DDB1- and CUL4-associated factor 4 (WD repeat-containing pro	w
+CUL4-ASSOCIATED	human	Q8WWQ0	PHIP	Q8WWQ0	83	539	PH-interacting protein (PHIP) (DDB1- and CUL4-associated fac	w
+CUL4-ASSOCIATED	human	Q96JK2	DCAF5	Q96JK2	53	178	DDB1- and CUL4-associated factor 5 (Breakpoint cluster regio	w
+CUL4-ASSOCIATED	human	Q9C0C7	AMBRA1	Q9C0C7	40	368	Activating molecule in BECN1-regulated autophagy protein 1 (	w
+CUL4-ASSOCIATED	human	Q9NV06	DCAF13	Q9NV06	41	460	DDB1- and CUL4-associated factor 13 (WD repeat and SOF domai	w
+CUL4-ASSOCIATED	human	Q9NXF7	DCAF16	Q9NXF7	3	151	DDB1- and CUL4-associated factor 16	w
+CUL4-ASSOCIATED	human	Q9NZJ0	DTL	Q9NZJ0	84	355	Denticleless protein homolog (DDB1- and CUL4-associated fact	w
+CUL4-ASSOCIATED	human	Q9Y4B6	DCAF1	Q9Y4B6	46	211	DDB1- and CUL4-associated factor 1 (HIV-1 Vpr-binding protei	w
+CUL4-ASSOCIATED	worm	P90794	wdr-23	P90794	3	25	DDB1- and CUL4-associated factor 11 homolog	w
+CUL4-ASSOCIATED	worm	Q23494	dcaf-13	Q23494	4	109	DDB1- and CUL4-associated factor 13	w
+CUL4-ASSOCIATED	zebrafish	A8WHR0	dcaf17	A8WHR0	5	30	DDB1- and CUL4-associated factor 17	w
+CUL4-ASSOCIATED	zebrafish	B0QZE8	dcaf6	B0QZE8	4	33	DDB1- and CUL4-associated factor 6	w
+CUL4-ASSOCIATED	zebrafish	E7F3Z0	dcaf15	E7F3Z0	0	18	DDB1 and CUL4-associated factor 15	w
+CUL4-ASSOCIATED	zebrafish	F1QF18	dcaf8	F1QF18	2	32	DDB1 and CUL4-associated factor 8	w
+CUL4-ASSOCIATED	zebrafish	Q08BB3	dcaf12	Q08BB3	3	24	DDB1- and CUL4-associated factor 12	w
+CUL4-ASSOCIATED	zebrafish	Q08BZ1	dcaf5	Q08BZ1	0	33	DDB1- and CUL4-associated factor 5	w
+CUL4-ASSOCIATED	zebrafish	Q499B0	dcaf11	Q499B0	3	46	DDB1- and CUL4-associated factor 11	w
+CUL4-ASSOCIATED	zebrafish	Q6NWH1	dcaf10	Q6NWH1	7	65	DDB1- and CUL4-associated factor 10	w
+CUL4-ASSOCIATED	zebrafish	Q7T3E0	dcaf7	Q7T3E0	11	40	DDB1- and CUL4-associated factor 7	w
+CUL4-ASSOCIATED	zebrafish	Q803X4	dcaf13	Q803X4	5	140	DDB1- and CUL4-associated factor 13	w
+CUL4A	cladophialophora-carrionii	A0A1C1C9A2	CUL4A	A0A1C1C9A2	12	95	Cullin-4A	
+CUL4A	human	Q13619	CUL4A	Q13619	93	879	Cullin-4A (CUL-4A)	
+CUL4A	mus-musculus	Q3TCH7	Cul4a	Q3TCH7	21	212	Cullin-4A	
+CUL4A	rattus-norvegicus	B2RYJ3	Cul4a	B2RYJ3	17	154	Cullin-4A	
+CUL4A_HUMAN	human	Q13619	CUL4A	Q13619	93	879		
+CUL4B	human	Q13620	CUL4B	Q13620	91	882	Cullin-4B (CUL-4B)	
+CUL4B	mus-musculus	A2A432	Cul4b	A2A432	19	200	Cullin-4B	
+CUL4B	rattus-norvegicus	D3ZK73	Cul4b	D3ZK73	12	157	Cullin-4B	
+CUL4B	zebrafish	F8W428	cul4b	F8W428	14	149	Cullin-4B	
+CUL4B_HUMAN	human	Q13620	CUL4B	Q13620	91	882		
+CUL4_79	fly	FBgn0033260	Cul4	Q5BI50	24	145		
+CUL5	fly	FBgn0288875	Cul5	Q9VAQ0	9	63	Cullin 5	
+CUL5	human	Q93034	CUL5	Q93034	57	512	Cullin-5 (CUL-5) (Vasopressin-activated calcium-mobilizing r	
+CUL5	mus-musculus	Q9D5V5	Cul5	Q9D5V5	11	120	Cullin-5	
+CUL5	rattus-norvegicus	Q9JJ31	Cul5	Q9JJ31	7	91	Cullin-5	
+CUL5A	zebrafish	F1REN0	cul5a	F1REN0	12	97	Cullin-5	
+CUL5B	zebrafish	F1QFY1	cul5b	F1QFY1	7	77	Cullin-5	
+CUL5_HUMAN	human	Q93034	CUL5	Q93034	57	512		
+CUL6	fly	FBgn0036332	Cul6	Q9VU33	21	122	Cullin 6 (LD29662p)	
+CUL7	human	Q14999	CUL7	Q14999	64	753	Cullin-7 (CUL-7)	
+CUL7_HUMAN	human	Q14999	CUL7	Q14999	64	753		
+CUL9	human	Q8IWT3	CUL9	Q8IWT3	23	281	Cullin-9 (CUL-9) (UbcH7-associated protein 1) (p53-associate	
+CUL9_HUMAN	human	Q8IWT3	CUL9	Q8IWT3	23	281		
+CULA	dictyostelium-discoideum	O60999	culA	O60999	13	89	Cullin-1	
+CULB	dictyostelium-discoideum	Q9XZJ3	culB	Q9XZJ3	11	88	Cullin-2	
+CULC	dictyostelium-discoideum	Q54NZ5	culC	Q54NZ5	17	65	Cullin-3	
+CULD	dictyostelium-discoideum	Q54CS2	culD	Q54CS2	7	114	Cullin-4	
+CULD	fly	FBgn0035880	Culd	Q8IQA9	1	13	CUB and LDLa domain, isoform A	
+CULE	dictyostelium-discoideum	Q54XF7	culE	Q54XF7	18	97	Cullin-5	
+CULLIN	fly	FBgn0015509	Cul1	Q24311	52	320	Cullin homolog 1 (Lin-19 homolog protein)	w
+CULLIN	fly	FBgn0032956	Cul2	Q9V9R2	29	136	Cullin 2, isoform A (Cullin 2, isoform B) (LD36177p)	w
+CULLIN	fly	FBgn0033260	Cul4	Q5BI50	24	145	Cullin 4, isoform A (Cullin 4, isoform B) (FI05474p) (LP0296	w
+CULLIN	fly	FBgn0033784	SCCRO3	Q8T8S1	10	53	DCN1-like protein 3 (DCNL3) (DCUN1 domain-containing protein	w
+CULLIN	fly	FBgn0036332	Cul6	Q9VU33	21	122	Cullin 6 (LD29662p)	w
+CULLIN	fly	FBgn0036510	SCCRO	M9NDR9	16	89	Defective in cullin neddylation protein	w
+CULLIN	fly	FBgn0036967	SCCRO4	Q9VWB1	9	74	DCN1-like protein 4 (DCNL4) (DCUN1 domain-containing protein	w
+CULLIN	fly	FBgn0261268	Cul3	Q8IP45	32	186	Cullin 3, isoform F (FI19425p1)	w
+CULLIN	fly	FBgn0288875	Cul5	Q9VAQ0	9	63	Cullin 5	w
+CULLIN	human	Q6PH85	DCUN1D2	Q6PH85	18	111	DCN1-like protein 2 (DCNL2) (DCUN1 domain-containing protein	w
+CULLIN	human	Q86Y37	CACUL1	Q86Y37	36	232	CDK2-associated and cullin domain-containing protein 1 (Cdk-	w
+CULLIN	human	Q8IWE4	DCUN1D3	Q8IWE4	18	91	DCN1-like protein 3 (DCNL3) (DCUN1 domain-containing protein	w
+CULLIN	human	Q92564	DCUN1D4	Q92564	23	130	DCN1-like protein 4 (DCNL4) (DCUN1 domain-containing protein	w
+CULLIN	human	Q96GG9	DCUN1D1	Q96GG9	51	372	DCN1-like protein 1 (DCNL1) (DCUN1 domain-containing protein	w
+CULLIN	human	Q9BTE7	DCUN1D5	Q9BTE7	42	253	DCN1-like protein 5 (DCNL5) (DCUN1 domain-containing protein	w
+CULLIN	virus	A0A0A7MEP0		A0A0A7MEP0	2	130	Cullin family profile domain-containing protein	w
+CULLIN	worm	Q9U3C8	dcn-1	Q9U3C8	11	77	Defective in cullin neddylation protein 1	w
+CULLIN	yeast	Q12395	DCN1	Q12395	3	12	Defective in cullin neddylation protein 1	w
+CULLIN	zebrafish	B3DIU1	cul3b	B3DIU1	76	292	Cullin 3	w
+CULLIN-1	human	Q13616	CUL1	Q13616	140	979	Cullin-1 (CUL-1)	w
+CULLIN-1	worm	Q17389	cul-1	Q17389	27	187	Cullin-1	w
+CULLIN-1	zebrafish	Q6NYS3	cul1a	Q6NYS3	33	293	Cullin-1	w
+CULLIN-2	human	Q13617	CUL2	Q13617	87	608	Cullin-2 (CUL-2)	w
+CULLIN-2	worm	Q17390	cul-2	Q17390	28	91	Cullin-2	w
+CULLIN-2	zebrafish	A0A8M9P612	cul2	A0A8M9P612	29	150	Cullin-2	w
+CULLIN-3	human	Q13618	CUL3	Q13618	293	2425	Cullin-3 (CUL-3)	w
+CULLIN-3	worm	Q17391	cul-3	Q17391	29	170	Cullin-3	w
+CULLIN-3	yeast	P53202	CUL3	P53202	5	51	Cullin-3	w
+CULLIN-3-BINDING	human	Q9P2K6	KLHL42	Q9P2K6	25	217	Kelch-like protein 42 (Cullin-3-binding protein 9) (Ctb9) (K	w
+CULLIN-3A	zebrafish	F6NVK8	cul3a	F6NVK8	77	275	Cullin-3A	w
+CULLIN-4	worm	Q17392	cul-4	Q17392	12	100	Cullin-4	w
+CULLIN-4A	human	Q13619	CUL4A	Q13619	93	879	Cullin-4A (CUL-4A)	w
+CULLIN-4B	human	Q13620	CUL4B	Q13620	91	882	Cullin-4B (CUL-4B)	w
+CULLIN-4B	zebrafish	F8W428	cul4b	F8W428	14	149	Cullin-4B	w
+CULLIN-5	human	Q93034	CUL5	Q93034	57	512	Cullin-5 (CUL-5) (Vasopressin-activated calcium-mobilizing r	w
+CULLIN-5	worm	Q23639	cul-5	Q23639	11	57	Cullin-5	w
+CULLIN-5	zebrafish	F1QFY1	cul5b	F1QFY1	7	77	Cullin-5	w
+CULLIN-5	zebrafish	F1REN0	cul5a	F1REN0	12	97	Cullin-5	w
+CULLIN-6	worm	Q21346	cul-6	Q21346	24	131	Cullin-6	w
+CULLIN-7	human	Q14999	CUL7	Q14999	64	753	Cullin-7 (CUL-7)	w
+CULLIN-8	yeast	P47050	RTT101	P47050	5	87	Cullin-8	w
+CULLIN-9	human	Q8IWT3	CUL9	Q8IWT3	23	281	Cullin-9 (CUL-9) (UbcH7-associated protein 1) (p53-associate	w
+CULLIN-ASSOCIATED	fly	FBgn0027568	Cand1	Q9VKY2	11	195	Cullin-associated NEDD8-dissociated protein 1 (Cullin-associ	w
+CULLIN-ASSOCIATED	human	O75155	CAND2	O75155	6	122	Cullin-associated NEDD8-dissociated protein 2 (Cullin-associ	w
+CULLIN-ASSOCIATED	human	Q86VP6	CAND1	Q86VP6	25	811	Cullin-associated NEDD8-dissociated protein 1 (Cullin-associ	w
+CULLIN-ASSOCIATED	worm	G5ED41	cand-1	G5ED41	9	59	Cullin-associated NEDD8-dissociated protein 1	w
+CULLIN-ASSOCIATED	yeast	Q92325	LAG2	Q92325	1	14	Cullin-associated NEDD8-dissociated protein 1 homolog	w
+CULLIN-ASSOCIATED	zebrafish	A8E7M5	cand2	A8E7M5	5	10	Cullin-associated NEDD8-dissociated protein 2	w
+CULLINS	fly	FBgn0025638	Roc1a	B7Z114	13	260	Regulator of cullins 1a, isoform C	w
+CULLINS	fly	FBgn0040291	Roc1b	Q9NHX0	32	521	RING-box protein 1B (Regulator of cullins 1b)	w
+CULLINS	fly	FBgn0044020	Roc2	Q7JWH5	16	100	MIP07211p (RE61847p) (Regulator of cullins 2, isoform A) (Re	w
+CULLINS	human	Q9UBF6	RNF7	Q9UBF6	44	626	RING-box protein 2 (Rbx2) (EC 2.3.2.27) (EC 2.3.2.32) (CKII 	w
+CULT	worm	Q21558	CELE_M18.6	Q21558	2	30	CULT domain-containing protein	w
+CULT	worm	Q9XVW5	CELE_R08B4.3	Q9XVW5	0	15	CULT domain-containing protein	w

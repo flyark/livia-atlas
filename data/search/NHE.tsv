@@ -1,11 +1,63 @@
-NHE1	dictyostelium-discoideum	Q552S0	nhe1	Q552S0	0	2	Sodium/hydrogen exchanger 1
-NHE1	schizosaccharomyces-pombe	P36606	nhe1	P36606	0	2	Na(+)/H(+) antiporter
-NHE2	dictyostelium-discoideum	Q54TB5	nhe2	Q54TB5	0	2	Sodium/hydrogen exchanger
-NHEJ1	mus-musculus	Q3KNJ2	Nhej1	Q3KNJ2	8	51	Non-homologous end-joining factor 1
-NHEJ1	rattus-norvegicus	Q6AYI4	Nhej1	Q6AYI4	8	57	Non-homologous end-joining factor 1
-NHERF1	mus-musculus	P70441	Nherf1	P70441	15	88	Na(+)/H(+) exchange regulatory cofactor NHE-RF1
-NHERF1	rattus-norvegicus	Q9JJ19	Nherf1	Q9JJ19	10	83	Na(+)/H(+) exchange regulatory cofactor NHE-RF1
-NHERF2	mus-musculus	Q9JHL1	Nherf2	Q9JHL1	8	45	Na(+)/H(+) exchange regulatory cofactor NHE-RF2
-NHERF2	rattus-norvegicus	Q920G2	Nherf2	Q920G2	9	49	Na(+)/H(+) exchange regulatory cofactor NHE-RF2
-NHERF4	mus-musculus	Q99MJ6	Nherf4	Q99MJ6	3	12	Na(+)/H(+) exchange regulatory cofactor NHE-RF4
-NHERF4	rattus-norvegicus	D4A7C5	Nherf4	D4A7C5	1	14	Na(+)/H(+) exchange regulatory cofactor NHE-RF4
+NHE-1	human	P19634	SLC9A1	P19634	28	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	w
+NHE-10	human	Q4G0N8	SLC9C1	Q4G0N8	3	30	Solute carrier family 9 member C1 (Na(+)/H(+) exchanger 10) 	w
+NHE-11	human	Q5TAH2	SLC9C2	Q5TAH2	2	35	Sodium/hydrogen exchanger 11 (Na(+)/H(+) exchanger 11) (NHE-	w
+NHE-2	human	Q9UBY0	SLC9A2	Q9UBY0	12	64	Sodium/hydrogen exchanger 2 (Na(+)/H(+) exchanger 2) (NHE-2)	w
+NHE-3	human	P48764	SLC9A3	P48764	11	75	Sodium/hydrogen exchanger 3 (Na(+)/H(+) exchanger 3) (NHE-3)	w
+NHE-4	human	Q6AI14	SLC9A4	Q6AI14	9	47	Sodium/hydrogen exchanger 4 (Na(+)/H(+) exchanger 4) (NHE-4)	w
+NHE-5	human	Q14940	SLC9A5	Q14940	11	59	Sodium/hydrogen exchanger 5 (Na(+)/H(+) exchanger 5) (NHE-5)	w
+NHE-6	human	Q92581	SLC9A6	Q92581	17	122	Sodium/hydrogen exchanger 6 (Na(+)/H(+) exchanger 6) (NHE-6)	w
+NHE-7	human	Q96T83	SLC9A7	Q96T83	15	83	Sodium/hydrogen exchanger 7 (Na(+)/H(+) exchanger 7) (NHE-7)	w
+NHE-8	human	Q9Y2E8	SLC9A8	Q9Y2E8	7	51	Sodium/hydrogen exchanger 8 (Na(+)/H(+) exchanger 8) (NHE-8)	w
+NHE-9	human	Q8IVB4	SLC9A9	Q8IVB4	11	121	Sodium/hydrogen exchanger 9 (Na(+)/H(+) exchanger 9) (NHE-9)	w
+NHE-RF	zebrafish	Q6P2U7	nherf1a	Q6P2U7	4	29	Na(+)/H(+) exchange regulatory cofactor NHE-RF	w
+NHE-RF1	human	O14745	NHERF1	O14745	43	261	Na(+)/H(+) exchange regulatory cofactor NHE-RF1 (NHERF-1) (E	w
+NHE-RF2	human	Q15599	NHERF2	Q15599	52	239	Na(+)/H(+) exchange regulatory cofactor NHE-RF2 (NHERF-2) (N	w
+NHE-RF3	human	Q5T2W1	PDZK1	Q5T2W1	11	121	Na(+)/H(+) exchange regulatory cofactor NHE-RF3 (NHERF-3) (C	w
+NHE-RF3	zebrafish	F1QTX0	pdzk1	F1QTX0	3	31	Na(+)/H(+) exchange regulatory cofactor NHE-RF3	w
+NHE-RF4	human	Q86UT5	NHERF4	Q86UT5	5	27	Na(+)/H(+) exchange regulatory cofactor NHE-RF4 (NHERF-4) (I	w
+NHE-RF4	zebrafish	A0A8N7TAP5	nherf4a	A0A8N7TAP5	2	9	Na(+)/H(+) exchange regulatory cofactor NHE-RF4	w
+NHE1	dictyostelium-discoideum	Q552S0	nhe1	Q552S0	0	2	Sodium/hydrogen exchanger 1	
+NHE1	fly	FBgn0026787	Nhe1	Q9VPJ1	0	20	Sodium/hydrogen exchanger	
+NHE1	human	P19634	SLC9A1	P19634	28	250		
+NHE1	schizosaccharomyces-pombe	P36606	nhe1	P36606	0	2	Na(+)/H(+) antiporter	
+NHE2	dictyostelium-discoideum	Q54TB5	nhe2	Q54TB5	0	2	Sodium/hydrogen exchanger	
+NHE2	fly	FBgn0040297	Nhe2	B7YZY2	5	22	Sodium/hydrogen exchanger	
+NHE2	human	Q9UBY0	SLC9A2	Q9UBY0	12	64		
+NHE3	fly	FBgn0028703	Nhe3	Q8IPJ4	9	228	Sodium/hydrogen exchanger	
+NHE3	human	P48764	SLC9A3	P48764	11	75		
+NHE3	human	Q15599	NHERF2	Q15599	52	239	Na(+)/H(+) exchange regulatory cofactor NHE-RF2 (NHERF-2) (N	w
+NHE4	human	Q6AI14	SLC9A4	Q6AI14	9	47		
+NHE5	human	Q14940	SLC9A5	Q14940	11	59		
+NHE6	human	Q92581	SLC9A6	Q92581	17	122		
+NHE7	human	Q96T83	SLC9A7	Q96T83	15	83		
+NHE8	human	Q9Y2E8	SLC9A8	Q9Y2E8	7	51		
+NHE9	human	Q8IVB4	SLC9A9	Q8IVB4	11	121		
+NHEDC1	human	Q4ZJI4	SLC9B1	Q4ZJI4	2	15		
+NHEDC2	human	Q86UD5	SLC9B2	Q86UD5	4	22		
+NHEJ	human	Q0D2I5	IFFO1	Q0D2I5	30	75	Non-homologous end joining factor IFFO1 (NHEJ factor IFFO1) 	w
+NHEJ	human	Q6ZNX1	SHLD3	Q6ZNX1	5	19	Shieldin complex subunit 3 (REV7-interacting novel NHEJ regu	w
+NHEJ	human	Q86V20	SHLD2	Q86V20	8	90	Shieldin complex subunit 2 (Protein FAM35A) (RINN1-REV7-inte	w
+NHEJ	human	Q8IYI0	SHLD1	Q8IYI0	7	40	Shieldin complex subunit 1 (RINN1-REV7-interacting novel NHE	w
+NHEJ	human	Q9BWK5	CYREN	Q9BWK5	12	59	Cell cycle regulator of non-homologous end joining (Cell cyc	w
+NHEJ1	human	Q9H9Q4	NHEJ1	Q9H9Q4	25	159	Non-homologous end-joining factor 1 (Protein cernunnos) (XRC	
+NHEJ1	mus-musculus	Q3KNJ2	Nhej1	Q3KNJ2	8	51	Non-homologous end-joining factor 1	
+NHEJ1	rattus-norvegicus	Q6AYI4	Nhej1	Q6AYI4	8	57	Non-homologous end-joining factor 1	
+NHEJ1	zebrafish	Q6NV18	nhej1	Q6NV18	4	36	Non-homologous end-joining factor 1	
+NHEJ1_HUMAN	human	Q9H9Q4	NHEJ1	Q9H9Q4	25	159		
+NHERF	human	O14745	NHERF1	O14745	43	261		
+NHERF-1	human	O14745	NHERF1	O14745	43	261	Na(+)/H(+) exchange regulatory cofactor NHE-RF1 (NHERF-1) (E	w
+NHERF-2	human	Q15599	NHERF2	Q15599	52	239	Na(+)/H(+) exchange regulatory cofactor NHE-RF2 (NHERF-2) (N	w
+NHERF-3	human	Q5T2W1	PDZK1	Q5T2W1	11	121	Na(+)/H(+) exchange regulatory cofactor NHE-RF3 (NHERF-3) (C	w
+NHERF-4	human	Q86UT5	NHERF4	Q86UT5	5	27	Na(+)/H(+) exchange regulatory cofactor NHE-RF4 (NHERF-4) (I	w
+NHERF1	human	O14745	NHERF1	O14745	43	261	Na(+)/H(+) exchange regulatory cofactor NHE-RF1 (NHERF-1) (E	
+NHERF1	mus-musculus	P70441	Nherf1	P70441	15	88	Na(+)/H(+) exchange regulatory cofactor NHE-RF1	
+NHERF1	rattus-norvegicus	Q9JJ19	Nherf1	Q9JJ19	10	83	Na(+)/H(+) exchange regulatory cofactor NHE-RF1	
+NHERF1A	zebrafish	Q6P2U7	nherf1a	Q6P2U7	4	29	Na(+)/H(+) exchange regulatory cofactor NHE-RF	
+NHERF2	human	Q15599	NHERF2	Q15599	52	239	Na(+)/H(+) exchange regulatory cofactor NHE-RF2 (NHERF-2) (N	
+NHERF2	mus-musculus	Q9JHL1	Nherf2	Q9JHL1	8	45	Na(+)/H(+) exchange regulatory cofactor NHE-RF2	
+NHERF2	rattus-norvegicus	Q920G2	Nherf2	Q920G2	9	49	Na(+)/H(+) exchange regulatory cofactor NHE-RF2	
+NHERF3	human	Q5T2W1	PDZK1	Q5T2W1	11	121		
+NHERF4	human	Q86UT5	NHERF4	Q86UT5	5	27	Na(+)/H(+) exchange regulatory cofactor NHE-RF4 (NHERF-4) (I	
+NHERF4	mus-musculus	Q99MJ6	Nherf4	Q99MJ6	3	12	Na(+)/H(+) exchange regulatory cofactor NHE-RF4	
+NHERF4	rattus-norvegicus	D4A7C5	Nherf4	D4A7C5	1	14	Na(+)/H(+) exchange regulatory cofactor NHE-RF4	
+NHERF4A	zebrafish	A0A8N7TAP5	nherf4a	A0A8N7TAP5	2	9	Na(+)/H(+) exchange regulatory cofactor NHE-RF4	

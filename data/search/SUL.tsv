@@ -1,44 +1,465 @@
-SUL2	candida-albicans-237561	A0A1D8PLL2	SUL2	A0A1D8PLL2	0	1	Sulfate permease
-SULA	escherichia-coli-83333	P0AFZ5	sulA	P0AFZ5	1	3	Cell division inhibitor SulA
-SULA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GV56	sulA	A0A0H3GV56	1	3	Cell division inhibitor SulA
-SULA	pseudomonas-aeruginosa	Q9HZJ8	sulA	Q9HZJ8	0	4	Cell division inhibitor SulA
-SULA	salmonella-typhimurium	P0A241	sulA	P0A241	1	2	Cell division inhibitor SulA
-SULA	streptococcus-pneumoniae	P59655	sulA	P59655	0	1	Dihydropteroate synthase
-SULB	streptococcus-pneumoniae	Q8DR92	sulB	Q8DR92	0	1	tetrahydrofolate synthase
-SULD	streptococcus-pneumoniae	P59657	sulD	P59657	0	2	Bifunctional folate synthesis protein
-SULF1	mus-musculus	Q8K007	Sulf1	Q8K007	1	11	Extracellular sulfatase Sulf-1
-SULF1	rattus-norvegicus	Q8VI60	Sulf1	Q8VI60	0	12	Extracellular sulfatase Sulf-1
-SULF2	mus-musculus	Q8CFG0	Sulf2	Q8CFG0	2	14	Extracellular sulfatase Sulf-2
-SULF2	rattus-norvegicus	A6JXG7	Sulf2	A6JXG7	1	15	Extracellular sulfatase
-SULT-OR	schistosoma-mansoni	G4VLE5	SULT-OR	G4VLE5	0	62	Sulfotransferase oxamniquine resistance protein
-SULT1A1	mus-musculus	P52840	Sult1a1	P52840	4	7	Sulfotransferase 1A1
-SULT1A1	rattus-norvegicus	P17988	Sult1a1	P17988	4	6	Sulfotransferase 1A1
-SULT1B1	mus-musculus	Q9QWG7	Sult1b1	Q9QWG7	4	6	Sulfotransferase 1B1
-SULT1B1	rattus-norvegicus	P52847	Sult1b1	P52847	3	5	Sulfotransferase 1B1
-SULT1C1	mus-musculus	Q80VR3	Sult1c1	Q80VR3	0	1	Sulfotransferase 1C1
-SULT1C1	rattus-norvegicus	P50237	Sult1c1	P50237	0	1	Sulfotransferase 1C1
-SULT1C2	mus-musculus	Q9D939	Sult1c2	Q9D939	5	6	Sulfotransferase 1C2
-SULT1D1	mus-musculus	Q3UZZ6	Sult1d1	Q3UZZ6	1	3	Sulfotransferase 1 family member D1
-SULT1D1	rattus-norvegicus	G3V9R3	Sult1d1	G3V9R3	0	1	Sulfotransferase 1 family member D1
-SULT1E1	mus-musculus	P49891	Sult1e1	P49891	5	9	Sulfotransferase 1E1
-SULT1E1	rattus-norvegicus	P52844	Sult1e1	P52844	0	2	Sulfotransferase 1E1
-SULT2A1	mus-musculus	P52843	Sult2a1	P52843	0	7	Sulfotransferase 2A1
-SULT2A2	rattus-norvegicus	P50235	Sult2a2	P50235	4	5	Sulfotransferase 2A2
-SULT2B1	mus-musculus	O35400	Sult2b1	O35400	1	8	Sulfotransferase 2B1
-SULT2B1	rattus-norvegicus	Q29YR5	Sult2b1	Q29YR5	1	1	Sulfotransferase 2B1
-SULT4A1	mus-musculus	P63046	Sult4a1	P63046	4	8	Sulfotransferase 4A1
-SULT4A1	rattus-norvegicus	P63047	Sult4a1	P63047	4	4	Sulfotransferase 4A1
-SULT6B1	mus-musculus	P0CC03	Sult6b1	P0CC03	0	5	Sulfotransferase 6B1
-SULT6B1	rattus-norvegicus	M0R952	Sult6b1	M0R952	2	4	Sulfotransferase
-SULTR1	arabidopsis-thaliana	Q9FEP7	SULTR1	Q9FEP7	1	18	Sulfate transporter 1.3
-SULTR1	arabidopsis-thaliana	Q9MAX3	SULTR1	Q9MAX3	1	19	Sulfate transporter 1.2
-SULTR1	arabidopsis-thaliana	Q9SAY1	SULTR1	Q9SAY1	0	14	Sulfate transporter 1.1
-SULTR2	arabidopsis-thaliana	O04722	SULTR2	O04722	1	15	Sulfate transporter 2.1
-SULTR2	arabidopsis-thaliana	P92946	SULTR2	P92946	0	13	Sulfate transporter 2.2
-SULTR3	arabidopsis-thaliana	O04289	SULTR3	O04289	0	13	Sulfate transporter 3.2
-SULTR3	arabidopsis-thaliana	Q94LW6	SULTR3	Q94LW6	1	14	Probable sulfate transporter 3.5
-SULTR3	arabidopsis-thaliana	Q9LW86	SULTR3	Q9LW86	0	13	Probable sulfate transporter 3.4
-SULTR3	arabidopsis-thaliana	Q9SV13	SULTR3	Q9SV13	0	14	Sulfate transporter 3.1
-SULTR3	arabidopsis-thaliana	Q9SXS2	SULTR3	Q9SXS2	0	13	Probable sulfate transporter 3.3
-SULTR4	arabidopsis-thaliana	Q8GYH8	SULTR4	Q8GYH8	0	13	Probable sulfate transporter 4.2
-SULTR4	arabidopsis-thaliana	Q9FY46	SULTR4	Q9FY46	0	14	Sulfate transporter 4.1, chloroplastic
+SUL-1	worm	Q21376	sul-1	Q21376	0	9	Putative extracellular sulfatase Sulf-1 homolog	
+SUL-2	worm	Q18924	sul-2	Q18924	0	15	Sulfatase N-terminal domain-containing protein	
+SUL-3	worm	A0A4V0IJ66	sul-3	A0A4V0IJ66	0	11	Sulfatase N-terminal domain-containing protein	
+SUL1	yeast	P38359	SUL1	P38359	0	16	Sulfate permease 1	
+SUL2	candida-albicans-237561	A0A1D8PLL2	SUL2	A0A1D8PLL2	0	1	Sulfate permease	
+SUL2	yeast	Q12325	SUL2	Q12325	0	21	Sulfate permease 2	
+SULA	escherichia-coli-83333	P0AFZ5	sulA	P0AFZ5	1	3	Cell division inhibitor SulA	
+SULA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GV56	sulA	A0A0H3GV56	1	3	Cell division inhibitor SulA	
+SULA	pseudomonas-aeruginosa	Q9HZJ8	sulA	Q9HZJ8	0	4	Cell division inhibitor SulA	
+SULA	salmonella-typhimurium	P0A241	sulA	P0A241	1	2	Cell division inhibitor SulA	
+SULA	streptococcus-pneumoniae	P59655	sulA	P59655	0	1	Dihydropteroate synthase	
+SULB	streptococcus-pneumoniae	Q8DR92	sulB	Q8DR92	0	1	tetrahydrofolate synthase	
+SULD	streptococcus-pneumoniae	P59657	sulD	P59657	0	2	Bifunctional folate synthesis protein	
+SULF	fly	FBgn0020251	sfl	Q9V3L1	198	2428	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULF	worm	Q20258	clc-10	Q20258	0	3	Sulf_transp domain-containing protein	w
+SULF-1	fly	FBgn0040271	Sulf1	Q9VEX0	27	215	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	w
+SULF-1	human	Q8IWU6	SULF1	Q8IWU6	15	161	Extracellular sulfatase Sulf-1 (hSulf-1) (Arylsulfatase) (EC	w
+SULF-1	worm	Q21376	sul-1	Q21376	0	9	Putative extracellular sulfatase Sulf-1 homolog	w
+SULF-1	zebrafish	Q6EFA1	sulf1	Q6EFA1	0	28	Extracellular sulfatase Sulf-1 isoform X1	w
+SULF-2	human	Q8IWU5	SULF2	Q8IWU5	16	194	Extracellular sulfatase Sulf-2 (hSulf-2) (Arylsulfatase) (EC	w
+SULF1	fly	FBgn0040271	Sulf1	Q9VEX0	27	215	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	
+SULF1	human	Q8IWU6	SULF1	Q8IWU6	15	161	Extracellular sulfatase Sulf-1 (hSulf-1) (Arylsulfatase) (EC	
+SULF1	mus-musculus	Q8K007	Sulf1	Q8K007	1	11	Extracellular sulfatase Sulf-1	
+SULF1	rattus-norvegicus	Q8VI60	Sulf1	Q8VI60	0	12	Extracellular sulfatase Sulf-1	
+SULF1	zebrafish	Q6EFA1	sulf1	Q6EFA1	0	28	Extracellular sulfatase Sulf-1 isoform X1	
+SULF1_HUMAN	human	Q8IWU6	SULF1	Q8IWU6	15	161		
+SULF2	human	Q8IWU5	SULF2	Q8IWU5	16	194	Extracellular sulfatase Sulf-2 (hSulf-2) (Arylsulfatase) (EC	
+SULF2	mus-musculus	Q8CFG0	Sulf2	Q8CFG0	2	14	Extracellular sulfatase Sulf-2	
+SULF2	rattus-norvegicus	A6JXG7	Sulf2	A6JXG7	1	15	Extracellular sulfatase	
+SULF2A	zebrafish	A0A8M9QLI6	sulf2a	A0A8M9QLI6	1	28	Extracellular sulfatase	
+SULF2B	zebrafish	A0A8M1N1V0	sulf2b	A0A8M1N1V0	0	28	Extracellular sulfatase	
+SULF2_HUMAN	human	Q8IWU5	SULF2	Q8IWU5	16	194		
+SULFAMIDASE	human	P51688	SGSH	P51688	3	79	N-sulphoglucosamine sulphohydrolase (EC 3.10.1.1) (Sulfogluc	w
+SULFAMIDASE	zebrafish	B0V3V9	sgsh	B0V3V9	0	34	N-sulfoglucosamine sulfohydrolase (sulfamidase)	w
+SULFATASE	fly	FBgn0035445	Ids	Q9VZP8	27	250	Iduronate 2-sulfatase (EC 3.1.6.-, EC 3.1.6.13)	w
+SULFATASE	fly	FBgn0036768	CG7402	Q9VVM4	1	15	Sulfatase N-terminal domain-containing protein	w
+SULFATASE	fly	FBgn0040271	Sulf1	Q9VEX0	27	215	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	w
+SULFATASE	human	B3KWA1	IDS	B3KWA1	4	11	Iduronate 2-sulfatase (Hunter syndrome), isoform CRA_e	w
+SULFATASE	human	P08842	STS	P08842	3	110	Steryl-sulfatase (EC 3.1.6.2) (Arylsulfatase C) (ASC) (Estro	w
+SULFATASE	human	P22304	IDS	P22304	21	154	Iduronate 2-sulfatase (EC 3.1.6.13) (Alpha-L-iduronate sulfa	w
+SULFATASE	human	P34059	GALNS	P34059	12	129	N-acetylgalactosamine-6-sulfatase (EC 3.1.6.4) (Chondroitins	w
+SULFATASE	human	Q6UWY0	ARSK	Q6UWY0	9	111	Arylsulfatase K (ASK) (EC 3.1.6.1) (Glucuronate-2-sulfatase)	w
+SULFATASE	human	Q8IWU5	SULF2	Q8IWU5	16	194	Extracellular sulfatase Sulf-2 (hSulf-2) (Arylsulfatase) (EC	w
+SULFATASE	human	Q8IWU6	SULF1	Q8IWU6	15	161	Extracellular sulfatase Sulf-1 (hSulf-1) (Arylsulfatase) (EC	w
+SULFATASE	worm	A0A4V0IJ66	sul-3	A0A4V0IJ66	0	11	Sulfatase N-terminal domain-containing protein	w
+SULFATASE	worm	O62436	CELE_Y41E3.1	O62436	0	2	Sulfatase domain-containing protein	w
+SULFATASE	worm	Q18924	sul-2	Q18924	0	15	Sulfatase N-terminal domain-containing protein	w
+SULFATASE	worm	Q21167	CELE_K03A11.4	Q21167	0	1	Sulfatase domain-containing protein	w
+SULFATASE	worm	Q21376	sul-1	Q21376	0	9	Putative extracellular sulfatase Sulf-1 homolog	w
+SULFATASE	zebrafish	A0A8M1N1V0	sulf2b	A0A8M1N1V0	0	28	Extracellular sulfatase	w
+SULFATASE	zebrafish	A0A8M9QLI6	sulf2a	A0A8M9QLI6	1	28	Extracellular sulfatase	w
+SULFATASE	zebrafish	F1QB82	sts	F1QB82	0	32	Steroid sulfatase (microsomal), isozyme S	w
+SULFATASE	zebrafish	Q6EFA1	sulf1	Q6EFA1	0	28	Extracellular sulfatase Sulf-1 isoform X1	w
+SULFATASE-MODIFYING	fly	FBgn0035102	CG7049	Q9W0U6	30	295	Sulfatase-modifying factor enzyme domain-containing protein	w
+SULFATASE-MODIFYING	human	Q8NBJ7	SUMF2	Q8NBJ7	5	70	Inactive C-alpha-formylglycine-generating enzyme 2 (Paralog 	w
+SULFATASE-MODIFYING	human	Q8NBK3	SUMF1	Q8NBK3	11	83	Formylglycine-generating enzyme (FGE) (EC 1.8.3.7) (C-alpha-	w
+SULFATE	fly	FBgn0003089	pip	Q86BJ3	1538	2397	Heparan sulfate 2-O-sulfotransferase pipe (EC 2.8.2.-)	w
+SULFATE	fly	FBgn0020251	sfl	Q9V3L1	198	2428	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	fly	FBgn0024230	Hs2st	P25722	56	2375	Heparin sulfate O-sulfotransferase (EC 2.8.2.-)	w
+SULFATE	fly	FBgn0031005	Hs3st-B	Q9VWJ7	1	8	Heparan sulfate 3-O sulfotransferase-B, isoform A (Heparan s	w
+SULFATE	fly	FBgn0053147	Hs3st-A	Q8MRE7	0	2	GH20068p (Heparan sulfate 3-O sulfotransferase-A, isoform A 	w
+SULFATE	human	O14594	NCAN	O14594	22	123	Neurocan core protein (Chondroitin sulfate proteoglycan 3)	w
+SULFATE	human	O14792	HS3ST1	O14792	9	72	Heparan sulfate glucosamine 3-O-sulfotransferase 1 (EC 2.8.2	w
+SULFATE	human	O43252	PAPSS1	O43252	2	156	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w
+SULFATE	human	O43916	CHST1	O43916	9	39	Carbohydrate sulfotransferase 1 (Galactose/N-acetylglucosami	w
+SULFATE	human	O60938	KERA	O60938	7	73	Keratocan (KTN) (Keratan sulfate proteoglycan keratocan)	w
+SULFATE	human	O94923	GLCE	O94923	12	76	D-glucuronyl C5-epimerase (EC 5.1.3.17) (Heparan sulfate C5-	w
+SULFATE	human	O95196	CSPG5	O95196	19	91	Chondroitin sulfate proteoglycan 5 (Acidic leucine-rich EGF-	w
+SULFATE	human	O95340	PAPSS2	O95340	2	127	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w
+SULFATE	human	O95803	NDST3	O95803	3	18	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	human	P07602	PSAP	P07602	31	201	Prosaposin (Proactivator polypeptide) [Cleaved into: Saposin	w
+SULFATE	human	P13611	VCAN	P13611	2	26	Versican core protein (Chondroitin sulfate proteoglycan core	w
+SULFATE	human	P16070	CD44	P16070	135	876	CD44 antigen (CDw44) (Epican) (Extracellular matrix receptor	w
+SULFATE	human	P16112	ACAN	P16112	27	291	Aggrecan core protein (Cartilage-specific proteoglycan core 	w
+SULFATE	human	P17900	GM2A	P17900	13	149	Ganglioside GM2 activator (Cerebroside sulfate activator pro	w
+SULFATE	human	P22304	IDS	P22304	21	154	Iduronate 2-sulfatase (EC 3.1.6.13) (Alpha-L-iduronate sulfa	w
+SULFATE	human	P34741	SDC2	P34741	36	221	Syndecan-2 (SYND2) (Fibroglycan) (Heparan sulfate proteoglyc	w
+SULFATE	human	P50443	SLC26A2	P50443	16	149	Sulfate transporter (Diastrophic dysplasia protein) (Solute 	w
+SULFATE	human	P51884	LUM	P51884	51	572	Lumican (Keratan sulfate proteoglycan lumican) (KSPG lumican	w
+SULFATE	human	P52848	NDST1	P52848	5	59	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	human	P52849	NDST2	P52849	4	53	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	human	Q06828	FMOD	Q06828	22	207	Fibromodulin (FM) (Collagen-binding 59 kDa protein) (Keratan	w
+SULFATE	human	Q16394	EXT1	Q16394	11	167	Exostosin-1 (EC 2.4.1.225) (Exostosin glycosyltransferase 1)	w
+SULFATE	human	Q2M3T9	HYAL4	Q2M3T9	3	64	Hyaluronidase-4 (Hyal-4) (EC 3.2.1.35) (Chondroitin sulfate 	w
+SULFATE	human	Q6UVK1	CSPG4	Q6UVK1	7	150	Chondroitin sulfate proteoglycan 4 (Chondroitin sulfate prot	w
+SULFATE	human	Q70JA7	CHSY3	Q70JA7	14	62	Chondroitin sulfate synthase 3 (EC 2.4.1.175) (EC 2.4.1.226)	w
+SULFATE	human	Q7LFX5	CHST15	Q7LFX5	5	91	Carbohydrate sulfotransferase 15 (EC 2.8.2.33) (B-cell RAG-a	w
+SULFATE	human	Q7LGA3	HS2ST1	Q7LGA3	5	147	Heparan sulfate 2-O-sulfotransferase 1 (EC 2.8.2.-) (2-O-sul	w
+SULFATE	human	Q86WA9	SLC26A11	Q86WA9	6	64	Sodium-independent sulfate anion transporter (Solute carrier	w
+SULFATE	human	Q86X52	CHSY1	Q86X52	21	138	Chondroitin sulfate synthase 1 (EC 2.4.1.175) (EC 2.4.1.226)	w
+SULFATE	human	Q8IZ52	CHPF	Q8IZ52	15	81	Chondroitin polymerizing factor, non-catalytic subunit (Chon	w
+SULFATE	human	Q8IZT8	HS3ST5	Q8IZT8	1	33	Heparan sulfate glucosamine 3-O-sulfotransferase 5 (EC 2.8.2	w
+SULFATE	human	Q8N6G5	CSGALNACT2	Q8N6G5	27	158	Chondroitin sulfate N-acetylgalactosaminyltransferase 2 (EC 	w
+SULFATE	human	Q8TDX6	CSGALNACT1	Q8TDX6	8	123	Chondroitin sulfate N-acetylgalactosaminyltransferase 1 (CsG	w
+SULFATE	human	Q96GW7	BCAN	Q96GW7	31	162	Brevican core protein (Brain-enriched hyaluronan-binding pro	w
+SULFATE	human	Q96QI5	HS3ST6	Q96QI5	5	25	Heparan sulfate glucosamine 3-O-sulfotransferase 6 (EC 2.8.2	w
+SULFATE	human	Q99645	EPYC	Q99645	15	67	Epiphycan (Dermatan sulfate proteoglycan 3) (Proteoglycan-Lb	w
+SULFATE	human	Q99983	OMD	Q99983	8	77	Osteomodulin (Keratan sulfate proteoglycan osteomodulin) (KS	w
+SULFATE	human	Q9BZW2	SLC13A1	Q9BZW2	4	52	Solute carrier family 13 member 1 (Renal sodium/sulfate cotr	w
+SULFATE	human	Q9H2B4	SLC26A1	Q9H2B4	6	61	Sulfate anion transporter 1 (SAT-1) (Solute carrier family 2	w
+SULFATE	human	Q9H3R1	NDST4	Q9H3R1	4	16	N-heparan sulfate sulfotransferase 4 (NDST-4) (EC 2.8.2.8)	w
+SULFATE	human	Q9UKG4	SLC13A4	Q9UKG4	5	57	Solute carrier family 13 member 4 (Na(+)/sulfate cotransport	w
+SULFATE	human	Q9UQE7	SMC3	Q9UQE7	34	645	Structural maintenance of chromosomes protein 3 (SMC protein	w
+SULFATE	human	Q9Y278	HS3ST2	Q9Y278	7	62	Heparan sulfate glucosamine 3-O-sulfotransferase 2 (EC 2.8.2	w
+SULFATE	human	Q9Y2C2	UST	Q9Y2C2	5	57	Uronyl 2-sulfotransferase (EC 2.8.2.-) (Chondroitin sulfate 	w
+SULFATE	human	Q9Y661	HS3ST4	Q9Y661	5	33	Heparan sulfate glucosamine 3-O-sulfotransferase 4 (EC 2.8.2	w
+SULFATE	human	Q9Y662	HS3ST3B1	Q9Y662	8	31	Heparan sulfate glucosamine 3-O-sulfotransferase 3B1 (EC 2.8	w
+SULFATE	human	Q9Y663	HS3ST3A1	Q9Y663	4	16	Heparan sulfate glucosamine 3-O-sulfotransferase 3A1 (EC 2.8	w
+SULFATE	worm	O17645	hst-2	O17645	0	2	Heparan sulfate 2-O-sulfotransferase hst-2	w
+SULFATE	worm	P45895	mig-22	P45895	1	2	Chondroitin sulfate synthase mig-22	w
+SULFATE	worm	Q7Z1Z1	sqv-5	Q7Z1Z1	1	2	Chondroitin sulfate synthase sqv-5	w
+SULFATE	worm	Q8WSN8	cpg-24	Q8WSN8	0	22	Chondroitin sulfate proteoglycan 4	w
+SULFATE	worm	Q94225	sulp-3	Q94225	0	1	Sulfate permease family protein 3	w
+SULFATE	worm	Q966W3	hst-1	Q966W3	0	5	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	yeast	P08536	MET3	P08536	0	9	Sulfate adenylyltransferase	w
+SULFATE	yeast	P38359	SUL1	P38359	0	16	Sulfate permease 1	w
+SULFATE	yeast	P53394	YPR003C	P53394	0	19	Putative sulfate transporter YPR003C	w
+SULFATE	yeast	Q12325	SUL2	Q12325	0	21	Sulfate permease 2	w
+SULFATE	zebrafish	A0A0R4INR6	cspg5b	A0A0R4INR6	0	2	Chondroitin sulfate proteoglycan 5b	w
+SULFATE	zebrafish	A0A0R4IR84	ndst1b	A0A0R4IR84	3	11	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	zebrafish	A0A8M3ATV7	slc26a1	A0A8M3ATV7	0	17	Sulfate transporter	w
+SULFATE	zebrafish	A1L1P8	hs2st1a	A1L1P8	1	3	Heparan sulfate 2-O-sulfotransferase 1	w
+SULFATE	zebrafish	E7F0G2	ndst1a	E7F0G2	3	10	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	zebrafish	F1QK03	cspg4bb	F1QK03	2	7	Chondroitin sulfate proteoglycan 4-like isoform X1	w
+SULFATE	zebrafish	F1QLG4	hs2st1b	F1QLG4	1	3	Heparan sulfate 2-O-sulfotransferase 1	w
+SULFATE	zebrafish	F8W3W2	cspg5a	F8W3W2	0	1	Chondroitin sulfate proteoglycan 5 isoform X2	w
+SULFATELESS	fly	FBgn0020251	sfl	Q9V3L1	198	2428	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFHYDRASE	human	P32929	CTH	P32929	0	128	Cystathionine gamma-lyase (CGL) (CSE) (EC 4.4.1.1) (Cysteine	w
+SULFHYDRASE	human	P35520	CBS	P35520	3	206	Cystathionine beta-synthase (EC 4.2.1.22) (Beta-thionase) (S	w
+SULFHYDRYL	fly	FBgn0031068	Alr	C0PVB3	0	12	Sulfhydryl oxidase (EC 1.8.3.2)	w
+SULFHYDRYL	fly	FBgn0033814	Qsox1	Q7JQR3	26	245	Sulfhydryl oxidase (EC 1.8.3.2)	w
+SULFHYDRYL	fly	FBgn0038918	Qsox3	Q9VD62	61	244	Sulfhydryl oxidase (EC 1.8.3.2)	w
+SULFHYDRYL	fly	FBgn0038919	Qsox2	Q9VD61	57	244	Sulfhydryl oxidase (EC 1.8.3.2)	w
+SULFHYDRYL	fly	FBgn0051413	Qsox4	Q8IMY4	37	244	Sulfhydryl oxidase (EC 1.8.3.2)	w
+SULFHYDRYL	human	O00391	QSOX1	O00391	18	152	Sulfhydryl oxidase 1 (hQSOX) (EC 1.8.3.2) (Quiescin Q6)	w
+SULFHYDRYL	human	P55789	GFER	P55789	9	154	FAD-linked sulfhydryl oxidase ALR (EC 1.8.3.2) (Augmenter of	w
+SULFHYDRYL	human	Q6ZRP7	QSOX2	Q6ZRP7	14	100	Sulfhydryl oxidase 2 (EC 1.8.3.2) (Neuroblastoma-derived sul	w
+SULFHYDRYL	virus	A0A068EGW8	fep_095	A0A068EGW8	15	221	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A068ELJ6	pepv_097	A0A068ELJ6	8	240	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A0A7MC25		A0A0A7MC25	6	130	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A0G3FZZ9	RCNV-Herman-061	A0A0G3FZZ9	14	195	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A0M3ZJL0		A0A0M3ZJL0	7	170	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A1B1MRB6	PTPV-Aus-043	A0A1B1MRB6	4	143	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A1C9KBL4	SKPV-WA-064	A0A1C9KBL4	17	209	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A1C9KC74	VPXV-CA-064	A0A1C9KC74	11	204	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A223FMP2	Murmansk-061	A0A223FMP2	6	202	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A2C9DSJ9		A0A2C9DSJ9	15	162	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A2C9DT13		A0A2C9DT13	12	162	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A2H4X2A5	fgpv_095	A0A2H4X2A5	17	256	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A2U9QHK9	SOPV-ELK-038	A0A2U9QHK9	8	130	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A346FRG4	AKMV-88-072	A0A346FRG4	13	214	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A3G2KXS6	OPVA067	A0A3G2KXS6	12	208	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A0A7R5WP03	DLEV_165	A0A7R5WP03	17	187	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	A7XCF7	40R	A7XCF7	4	154	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	G3EIC2	YKV044	G3EIC2	12	184	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	H6TA33	COTV056	H6TA33	10	170	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	P0DOL5	OPG072	P0DOL5	10	199	Probable FAD-linked sulfhydryl oxidase OPG072	w
+SULFHYDRYL	virus	P23373	OPG072	P23373	14	218	Probable FAD-linked sulfhydryl oxidase OPG072	w
+SULFHYDRYL	virus	Q070J1	CRV060	Q070J1	9	172	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q08FV3	DpV83gp048	Q08FV3	3	165	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q0NPE4	TATV_DAH68_067	Q0NPE4	9	220	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q6TUX2		Q6TUX2	3	140	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q6TVG2		Q6TVG2	7	130	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q6TVU4		Q6TVU4	8	129	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q6VZM7	CNPV120	Q6VZM7	17	322	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q77ZD1	EVM050	Q77ZD1	9	170	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q8QMZ2	CPXV076 CDS	Q8QMZ2	11	225	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q8V2V6		Q8V2V6	9	208	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q8V3Q7	SPV037	Q8V3Q7	2	146	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q8V522	F9R	Q8V522	9	187	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q91MW7	LSDV040	Q91MW7	5	153	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q98208	MC040R	Q98208	8	161	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q9DHS2	40R	Q9DHS2	4	150	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q9EMT5	AMV114	Q9EMT5	18	278	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q9J5C7	FPV093	Q9J5C7	11	250	Probable FAD-linked sulfhydryl oxidase FPV093	w
+SULFHYDRYL	virus	Q9Q8R1	m035R	Q9Q8R1	4	157	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q9Q936	s035R	Q9Q936	2	153	Sulfhydryl oxidase	w
+SULFHYDRYL	virus	Q9YVZ9	MSV093	Q9YVZ9	17	261	Sulfhydryl oxidase	w
+SULFHYDRYL	worm	H2KZY5	CELE_F47B7.2	H2KZY5	0	1	Sulfhydryl oxidase	w
+SULFHYDRYL	worm	O44975	CELE_F56C11.3	O44975	0	9	Sulfhydryl oxidase	w
+SULFHYDRYL	worm	P91442	CELE_T10H10.2	P91442	0	1	Sulfhydryl oxidase	w
+SULFHYDRYL	worm	Q20063	CELE_F35G2.1	Q20063	0	1	Sulfhydryl oxidase	w
+SULFHYDRYL	yeast	P27882	ERV1	P27882	0	19	Mitochondrial FAD-linked sulfhydryl oxidase ERV1	w
+SULFHYDRYL	yeast	Q12284	ERV2	Q12284	0	7	FAD-linked sulfhydryl oxidase ERV2	w
+SULFHYDRYL	zebrafish	A4QNU9	gfer	A4QNU9	0	10	Sulfhydryl oxidase	w
+SULFHYDRYL	zebrafish	B0UXN0	qsox1	B0UXN0	0	3	Sulfhydryl oxidase	w
+SULFHYDRYL	zebrafish	F1QJL3	qsox2	F1QJL3	0	2	Sulfhydryl oxidase	w
+SULFIDE	human	H3BNX3	?	H3BNX3	0	17	Sulfide:quinone oxidoreductase, mitochondrial	w
+SULFIDE	human	P00441	SOD1	P00441	16	452	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
+SULFIDE	human	Q9Y6N5	SQOR	Q9Y6N5	9	192	Sulfide:quinone oxidoreductase, mitochondrial (SQOR) (EC 1.8	w
+SULFIDE	worm	J7SF87	CELE_Y9C9A.16	J7SF87	0	4	Sulfide:quinone oxidoreductase, mitochondrial	w
+SULFINIC	human	Q6ZQY3	GADL1	Q6ZQY3	6	99	Acidic amino acid decarboxylase GADL1 (Aspartate 1-decarboxy	w
+SULFINIC	human	Q9Y600	CSAD	Q9Y600	6	91	Cysteine sulfinic acid decarboxylase (EC 4.1.1.29) (Aspartat	w
+SULFINOALANINE	human	Q9Y600	CSAD	Q9Y600	6	91	Cysteine sulfinic acid decarboxylase (EC 4.1.1.29) (Aspartat	w
+SULFIREDOXIN	fly	FBgn0030876	Srx	Q9VX10	5	70	Sulfiredoxin (EC 1.8.98.2)	w
+SULFIREDOXIN	yeast	P36077	SRX1	P36077	0	10	Sulfiredoxin	w
+SULFIREDOXIN	zebrafish	E7FBQ8	srxn1	E7FBQ8	0	20	Sulfiredoxin	w
+SULFIREDOXIN-1	human	Q9BYN0	SRXN1	Q9BYN0	12	133	Sulfiredoxin-1 (EC 1.8.98.2)	w
+SULFITE	fly	FBgn0030966	shop	Q9VWP4	0	18	Sulfite oxidase, mitochondrial (EC 1.8.3.1) (Protein shopper	w
+SULFITE	human	P51687	SUOX	P51687	7	119	Sulfite oxidase, mitochondrial (HSO) (EC 1.8.3.1) (Nitrite r	w
+SULFITE	worm	Q9XTQ8	suox-1	Q9XTQ8	1	12	sulfite oxidase	w
+SULFITE	yeast	P39692	MET10	P39692	1	49	Sulfite reductase	w
+SULFITE	yeast	P41930	SSU1	P41930	0	2	Sulfite efflux pump SSU1	w
+SULFITE	yeast	P47169	MET5	P47169	1	16	Sulfite reductase	w
+SULFITE	zebrafish	A0A0R4IKF7	suox	A0A0R4IKF7	0	26	Sulfite oxidase, mitochondrial	w
+SULFOGLUCOSAMINE	human	P51688	SGSH	P51688	3	79	N-sulphoglucosamine sulphohydrolase (EC 3.10.1.1) (Sulfogluc	w
+SULFOHYDROLASE	fly	FBgn0038660	Sgsh	Q9VE24	16	253	N-sulfoglucosamine sulfohydrolase (EC 3.1.6.-, EC 3.1.6.14, 	w
+SULFOHYDROLASE	human	P08842	STS	P08842	3	110	Steryl-sulfatase (EC 3.1.6.2) (Arylsulfatase C) (ASC) (Estro	w
+SULFOHYDROLASE	zebrafish	B0V3V9	sgsh	B0V3V9	0	34	N-sulfoglucosamine sulfohydrolase (sulfamidase)	w
+SULFONATE	yeast	Q12358	JLP1	Q12358	0	1	Alpha-ketoglutarate-dependent sulfonate dioxygenase	w
+SULFONYLUREA	fly	FBgn0028675	Sur	A0A1W5PZ45	0	2	Sulfonylurea receptor	w
+SULFONYLUREA	human	O60706	ABCC9	O60706	2	35	ATP-binding cassette sub-family C member 9 (Sulfonylurea rec	w
+SULFONYLUREA	human	Q09428	ABCC8	Q09428	4	45	ATP-binding cassette sub-family C member 8 (Sulfonylurea rec	w
+SULFOTRA	human	O95803	NDST3	O95803	3	18	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFOTRANSFER	worm	Q19861	CELE_F28C10.1	Q19861	0	1	Sulfotransfer_1 domain-containing protein	w
+SULFOTRANSFERASE	fly	FBgn0031697	CG14024	Q9VMS3	280	2372	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
+SULFOTRANSFERASE	fly	FBgn0031826	CG9550	Q9VMC4	0	3	Sulfotransferase domain-containing protein	w
+SULFOTRANSFERASE	fly	FBgn0032618	C4st	Q9VJG5	186	2376	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
+SULFOTRANSFERASE	fly	FBgn0033887	St4	A1Z9J8	0	7	Sulfotransferase 4, isoform A (Sulfotransferase 4, isoform B	w
+SULFOTRANSFERASE	fly	FBgn0034887	St1	Q9W1L8	0	8	GH11818p (Sulfotransferase 1 (EC 2.8.2.-))	w
+SULFOTRANSFERASE	fly	FBgn0035287	CG13937	Q8IRG5	390	2378	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
+SULFOTRANSFERASE	fly	FBgn0037665	St2	Q9VHH0	0	6	MIP25022p1 (Sulfotransferase 2, isoform A (EC 2.8.2.-)) (Sul	w
+SULFOTRANSFERASE	fly	FBgn0086674	Tpst	M9PHI3	734	2389	Protein-tyrosine sulfotransferase (EC 2.8.2.20)	w
+SULFOTRANSFERASE	fly	FBgn0265052	St3	A0A0B4KF40	1	11	Sulfotransferase 3, isoform C (EC 2.8.2.-)	w
+SULFOTRANSFERASE	human	O00204	SULT2B1	O00204	20	120	Sulfotransferase 2B1 (EC 2.8.2.2) (Alcohol sulfotransferase)	w
+SULFOTRANSFERASE	human	O00338	SULT1C2	O00338	12	38	Sulfotransferase 1C2 (ST1C2) (EC 2.8.2.1) (Sulfotransferase 	w
+SULFOTRANSFERASE	human	O43529	CHST10	O43529	10	77	Carbohydrate sulfotransferase 10 (EC 2.8.2.-) (HNK-1 sulfotr	w
+SULFOTRANSFERASE	human	O43704	SULT1B1	O43704	13	36	Sulfotransferase 1B1 (ST1B1) (EC 2.8.2.1) (Sulfotransferase 	w
+SULFOTRANSFERASE	human	O43916	CHST1	O43916	9	39	Carbohydrate sulfotransferase 1 (Galactose/N-acetylglucosami	w
+SULFOTRANSFERASE	human	O60507	TPST1	O60507	5	83	Protein-tyrosine sulfotransferase 1 (EC 2.8.2.20) (Tyrosylpr	w
+SULFOTRANSFERASE	human	O60704	TPST2	O60704	8	232	Protein-tyrosine sulfotransferase 2 (EC 2.8.2.20) (Tyrosylpr	w
+SULFOTRANSFERASE	human	O75897	SULT1C4	O75897	17	143	Sulfotransferase 1C4 (ST1C4) (EC 2.8.2.1) (Sulfotransferase 	w
+SULFOTRANSFERASE	human	P0DMM9	SULT1A3	P0DMM9	5	30	Sulfotransferase 1A3 (ST1A3) (EC 2.8.2.1) (Aryl sulfotransfe	w
+SULFOTRANSFERASE	human	P0DMN0	SULT1A4	P0DMN0	19	59	Sulfotransferase 1A4 (ST1A4) (EC 2.8.2.1) (Aryl sulfotransfe	w
+SULFOTRANSFERASE	human	P49888	SULT1E1	P49888	14	47	Sulfotransferase 1E1 (ST1E1) (EC 2.8.2.4) (EST-1) (Estrogen 	w
+SULFOTRANSFERASE	human	P50225	SULT1A1	P50225	30	123	Sulfotransferase 1A1 (ST1A1) (EC 2.8.2.1) (Aryl sulfotransfe	w
+SULFOTRANSFERASE	human	P50226	SULT1A2	P50226	19	69	Sulfotransferase 1A2 (ST1A2) (EC 2.8.2.1) (Aryl sulfotransfe	w
+SULFOTRANSFERASE	human	P52848	NDST1	P52848	5	59	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFOTRANSFERASE	human	P52849	NDST2	P52849	4	53	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFOTRANSFERASE	human	Q06520	SULT2A1	Q06520	13	71	Sulfotransferase 2A1 (ST2A1) (EC 2.8.2.2) (Bile salt sulfotr	w
+SULFOTRANSFERASE	human	Q6IMI4	SULT6B1	Q6IMI4	9	24	Sulfotransferase 6B1 (ST6B1) (Thyroxine sulfotransferase) (E	w
+SULFOTRANSFERASE	human	Q6IMI6	SULT1C3	Q6IMI6	14	38	Sulfotransferase 1C3 (ST1C3) (EC 2.8.2.1) (EC 2.8.2.2)	w
+SULFOTRANSFERASE	human	Q7L1S5	CHST9	Q7L1S5	4	35	Carbohydrate sulfotransferase 9 (EC 2.8.2.-) (GalNAc-4-O-sul	w
+SULFOTRANSFERASE	human	Q7LFX5	CHST15	Q7LFX5	5	91	Carbohydrate sulfotransferase 15 (EC 2.8.2.33) (B-cell RAG-a	w
+SULFOTRANSFERASE	human	Q7LGA3	HS2ST1	Q7LGA3	5	147	Heparan sulfate 2-O-sulfotransferase 1 (EC 2.8.2.-) (2-O-sul	w
+SULFOTRANSFERASE	human	Q7LGC8	CHST3	Q7LGC8	6	64	Carbohydrate sulfotransferase 3 (EC 2.8.2.17) (EC 2.8.2.21) 	w
+SULFOTRANSFERASE	human	Q8NCG5	CHST4	Q8NCG5	7	60	Carbohydrate sulfotransferase 4 (EC 2.8.2.-) (Galactose/N-ac	w
+SULFOTRANSFERASE	human	Q8NCH0	CHST14	Q8NCH0	7	97	Carbohydrate sulfotransferase 14 (EC 2.8.2.35) (Dermatan 4-s	w
+SULFOTRANSFERASE	human	Q8NET6	CHST13	Q8NET6	7	34	Carbohydrate sulfotransferase 13 (EC 2.8.2.5) (Chondroitin 4	w
+SULFOTRANSFERASE	human	Q96A11	GAL3ST3	Q96A11	2	42	Galactose-3-O-sulfotransferase 3 (Gal3ST-3) (EC 2.8.2.-) (Be	w
+SULFOTRANSFERASE	human	Q96RP7	GAL3ST4	Q96RP7	3	18	Galactose-3-O-sulfotransferase 4 (Gal3ST-4) (EC 2.8.2.-) (Be	w
+SULFOTRANSFERASE	human	Q99999	GAL3ST1	Q99999	1	63	Galactosylceramide sulfotransferase (GalCer sulfotransferase	w
+SULFOTRANSFERASE	human	Q9BR01	SULT4A1	Q9BR01	22	60	Sulfotransferase 4A1 (ST4A1) (EC 2.8.2.-) (Brain sulfotransf	w
+SULFOTRANSFERASE	human	Q9GZS9	CHST5	Q9GZS9	11	82	Carbohydrate sulfotransferase 5 (EC 2.8.2.-) (Galactose/N-ac	w
+SULFOTRANSFERASE	human	Q9GZX3	CHST6	Q9GZX3	15	75	Carbohydrate sulfotransferase 6 (Corneal N-acetylglucosamine	w
+SULFOTRANSFERASE	human	Q9H2A9	CHST8	Q9H2A9	7	109	Carbohydrate sulfotransferase 8 (EC 2.8.2.-) (GalNAc-4-O-sul	w
+SULFOTRANSFERASE	human	Q9H3Q3	GAL3ST2	Q9H3Q3	11	49	Galactose-3-O-sulfotransferase 2 (Gal3ST-2) (EC 2.8.2.-) (Be	w
+SULFOTRANSFERASE	human	Q9H3R1	NDST4	Q9H3R1	4	16	N-heparan sulfate sulfotransferase 4 (NDST-4) (EC 2.8.2.8)	w
+SULFOTRANSFERASE	human	Q9NPF2	CHST11	Q9NPF2	10	62	Carbohydrate sulfotransferase 11 (EC 2.8.2.5) (Chondroitin 4	w
+SULFOTRANSFERASE	human	Q9NRB3	CHST12	Q9NRB3	13	120	Carbohydrate sulfotransferase 12 (EC 2.8.2.5) (Chondroitin 4	w
+SULFOTRANSFERASE	human	Q9NS84	CHST7	Q9NS84	10	44	Carbohydrate sulfotransferase 7 (EC 2.8.2.-) (EC 2.8.2.17) (	w
+SULFOTRANSFERASE	human	Q9Y2C2	UST	Q9Y2C2	5	57	Uronyl 2-sulfotransferase (EC 2.8.2.-) (Chondroitin sulfate 	w
+SULFOTRANSFERASE	human	Q9Y4C5	CHST2	Q9Y4C5	6	35	Carbohydrate sulfotransferase 2 (EC 2.8.2.-) (Galactose/N-ac	w
+SULFOTRANSFERASE	worm	O77081	tpst-1	O77081	2	24	Protein-tyrosine sulfotransferase A	w
+SULFOTRANSFERASE	worm	Q20351	tpst-2	Q20351	0	29	Putative protein-tyrosine sulfotransferase	w
+SULFOTRANSFERASE	worm	Q9U2Z2	ssu-1	Q9U2Z2	0	1	Sulfotransferase ssu-1	w
+SULFOTRANSFERASE	worm	Q9XVA5	CELE_F01D5.10	Q9XVA5	0	1	Carbohydrate sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	A0A2R8QL27	chst12a	A0A2R8QL27	0	1	Carbohydrate sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	A0A8M1RER3	chst12b.5	A0A8M1RER3	0	1	Carbohydrate sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	A4FUP0	sult2st3	A4FUP0	1	6	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	A5PM89	chst2a	A5PM89	0	1	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	B3DIF5	chst6	B3DIF5	0	1	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	B8A5X2	chst3a	B8A5X2	0	1	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	E7FD85	chst15	E7FD85	1	20	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	F1QE68	chst7	F1QE68	0	1	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	F1QYJ6	sult6b1	F1QYJ6	3	6	Sulfotransferase 6B1	w
+SULFOTRANSFERASE	zebrafish	F1RAR4	si:ch211-269c21.2	F1RAR4	0	1	Carbohydrate sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	F1RD72	sult1st7	F1RD72	5	6	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	K7DYB2	chst2b	K7DYB2	0	1	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	Q1LWC9	si:ch73-62b13.1	Q1LWC9	1	1	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	Q402B1	usta	Q402B1	0	2	Uronyl 2-sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	Q6DBY9	chst1	Q6DBY9	1	1	Carbohydrate sulfotransferase 1	w
+SULFOTRANSFERASE	zebrafish	Q6DHH8	sult1st6	Q6DHH8	4	6	Sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	Q6PH37	sult1st1	Q6PH37	5	6	Cytosolic sulfotransferase 1	w
+SULFOTRANSFERASE	zebrafish	Q7T295	tpst2	Q7T295	6	53	Protein-tyrosine sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	Q7T2V2	sult1st3	Q7T2V2	5	6	Cytosolic sulfotransferase 3	w
+SULFOTRANSFERASE	zebrafish	Q7T3S3	chst11	Q7T3S3	1	1	Carbohydrate sulfotransferase 11	w
+SULFOTRANSFERASE	zebrafish	Q7ZT02	tpst1l	Q7ZT02	4	53	Protein-tyrosine sulfotransferase	w
+SULFOTRANSFERASE	zebrafish	Q7ZUS4	sult1st2	Q7ZUS4	5	6	Cytosolic sulfotransferase 2	w
+SULFOTRANSFERASE	zebrafish	Q9PTE6	tpst1	Q9PTE6	3	53	Protein-tyrosine sulfotransferase 1	w
+SULFOTRANSFERASE-A	fly	FBgn0053147	Hs3st-A	Q8MRE7	0	2	GH20068p (Heparan sulfate 3-O sulfotransferase-A, isoform A 	w
+SULFOTRANSFERASE-B	fly	FBgn0031005	Hs3st-B	Q9VWJ7	1	8	Heparan sulfate 3-O sulfotransferase-B, isoform A (Heparan s	w
+SULFOTRANSFERASE-LIKE	human	Q9BR01	SULT4A1	Q9BR01	22	60	Sulfotransferase 4A1 (ST4A1) (EC 2.8.2.-) (Brain sulfotransf	w
+SULFOXIDE	human	Q9UJ68	MSRA	Q9UJ68	9	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
+SULFOXIDE	yeast	P25566	MXR2	P25566	2	29	Peptide methionine sulfoxide reductase 2	w
+SULFOXIDE	yeast	P40029	MXR1	P40029	0	25	Peptide methionine sulfoxide reductase	w
+SULFOXIDE	zebrafish	F1R878	msrab	F1R878	0	16	Mitochondrial peptide methionine sulfoxide reductase	w
+SULFOXIDE	zebrafish	Q5TZ05	msraa	Q5TZ05	0	16	Mitochondrial peptide methionine sulfoxide reductase	w
+SULFOXIDE-FOR	human	P08684	CYP3A4	P08684	9	79	Cytochrome P450 3A4 (EC 1.14.14.1) (1,4-cineole 2-exo-monoox	w
+SULFOXIDE-FORMING	human	P51589	CYP2J2	P51589	0	78	Cytochrome P450 2J2 (EC 1.14.14.-) (Albendazole monooxygenas	w
+SULFU	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
+SULFUR	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
+SULFUR	human	O75690	KRTAP5-8	O75690	0	14	Keratin-associated protein 5-8 (Keratin, ultra high-sulfur m	w
+SULFUR	human	O95571	ETHE1	O95571	2	90	Persulfide dioxygenase ETHE1, mitochondrial (EC 1.13.11.18) 	w
+SULFUR	human	O96033	MOCS2	O96033	399	2181	Molybdopterin synthase sulfur carrier subunit (MOCO1-A) (Mol	w
+SULFUR	human	P0C5Y4	KRTAP1-4	P0C5Y4	1	16	Keratin-associated protein 1-4 (High sulfur keratin-associat	w
+SULFUR	human	P0C7H8	KRTAP2-3	P0C7H8	3	106	Keratin-associated protein 2-3 (High sulfur keratin-associat	w
+SULFUR	human	P26371	KRTAP5-9	P26371	4	203	Keratin-associated protein 5-9 (Keratin, cuticle, ultrahigh 	w
+SULFUR	human	P59990	KRTAP12-1	P59990	1	72	Keratin-associated protein 12-1 (High sulfur keratin-associa	w
+SULFUR	human	P59991	KRTAP12-2	P59991	1	141	Keratin-associated protein 12-2 (High sulfur keratin-associa	w
+SULFUR	human	P60014	KRTAP10-10	P60014	3	42	Keratin-associated protein 10-10 (High sulfur keratin-associ	w
+SULFUR	human	P60328	KRTAP12-3	P60328	4	150	Keratin-associated protein 12-3 (High sulfur keratin-associa	w
+SULFUR	human	P60329	KRTAP12-4	P60329	2	54	Keratin-associated protein 12-4 (High sulfur keratin-associa	w
+SULFUR	human	P60331	KRTAP10-1	P60331	8	154	Keratin-associated protein 10-1 (High sulfur keratin-associa	w
+SULFUR	human	P60368	KRTAP10-2	P60368	0	22	Keratin-associated protein 10-2 (High sulfur keratin-associa	w
+SULFUR	human	P60369	KRTAP10-3	P60369	21	298	Keratin-associated protein 10-3 (High sulfur keratin-associa	w
+SULFUR	human	P60370	KRTAP10-5	P60370	1	72	Keratin-associated protein 10-5 (High sulfur keratin-associa	w
+SULFUR	human	P60371	KRTAP10-6	P60371	2	89	Keratin-associated protein 10-6 (High sulfur keratin-associa	w
+SULFUR	human	P60372	KRTAP10-4	P60372	1	24	Keratin-associated protein 10-4 (High sulfur keratin-associa	w
+SULFUR	human	P60409	KRTAP10-7	P60409	16	286	Keratin-associated protein 10-7 (High sulfur keratin-associa	w
+SULFUR	human	P60410	KRTAP10-8	P60410	15	383	Keratin-associated protein 10-8 (High sulfur keratin-associa	w
+SULFUR	human	P60411	KRTAP10-9	P60411	16	251	Keratin-associated protein 10-9 (High sulfur keratin-associa	w
+SULFUR	human	P60412	KRTAP10-11	P60412	3	64	Keratin-associated protein 10-11 (High sulfur keratin-associ	w
+SULFUR	human	P60413	KRTAP10-12	P60413	0	27	Keratin-associated protein 10-12 (High sulfur keratin-associ	w
+SULFUR	human	Q07627	KRTAP1-1	Q07627	12	213	Keratin-associated protein 1-1 (High sulfur keratin-associat	w
+SULFUR	human	Q6L8G4	KRTAP5-11	Q6L8G4	0	76	Keratin-associated protein 5-11 (Keratin-associated protein 	w
+SULFUR	human	Q6L8G5	KRTAP5-10	Q6L8G5	1	27	Keratin-associated protein 5-10 (Keratin-associated protein 	w
+SULFUR	human	Q6L8G8	KRTAP5-7	Q6L8G8	1	103	Keratin-associated protein 5-7 (Keratin-associated protein 5	w
+SULFUR	human	Q6L8G9	KRTAP5-6	Q6L8G9	0	97	Keratin-associated protein 5-6 (Keratin-associated protein 5	w
+SULFUR	human	Q6L8H1	KRTAP5-4	Q6L8H1	2	41	Keratin-associated protein 5-4 (Keratin-associated protein 5	w
+SULFUR	human	Q6L8H4	KRTAP5-1	Q6L8H4	0	18	Keratin-associated protein 5-1 (Keratin, cuticle, ultrahigh 	w
+SULFUR	human	Q701N2	KRTAP5-5	Q701N2	0	13	Keratin-associated protein 5-5 (Keratin-associated protein 5	w
+SULFUR	human	Q701N4	KRTAP5-2	Q701N4	1	58	Keratin-associated protein 5-2 (Keratin-associated protein 5	w
+SULFUR	human	Q8IUC0	KRTAP13-1	Q8IUC0	3	64	Keratin-associated protein 13-1 (High sulfur keratin-associa	w
+SULFUR	human	Q8IUC1	KRTAP11-1	Q8IUC1	8	147	Keratin-associated protein 11-1 (High sulfur keratin-associa	w
+SULFUR	human	Q9BQ66	KRTAP4-12	Q9BQ66	0	169	Keratin-associated protein 4-12 (Keratin-associated protein 	w
+SULFUR	human	Q9BYP9	KRTAP9-9	Q9BYP9	2	18	Keratin-associated protein 9-9 (Keratin-associated protein 9	w
+SULFUR	human	Q9BYQ0	KRTAP9-8	Q9BYQ0	4	116	Keratin-associated protein 9-8 (Keratin-associated protein 9	w
+SULFUR	human	Q9BYQ2	KRTAP9-4	Q9BYQ2	4	66	Keratin-associated protein 9-4 (Keratin-associated protein 9	w
+SULFUR	human	Q9BYQ3	KRTAP9-3	Q9BYQ3	4	151	Keratin-associated protein 9-3 (Keratin-associated protein 9	w
+SULFUR	human	Q9BYQ4	KRTAP9-2	Q9BYQ4	6	158	Keratin-associated protein 9-2 (Keratin-associated protein 9	w
+SULFUR	human	Q9BYQ5	KRTAP4-6	Q9BYQ5	0	24	Keratin-associated protein 4-6 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYQ6	KRTAP4-11	Q9BYQ6	1	113	Keratin-associated protein 4-11 (Keratin-associated protein 	w
+SULFUR	human	Q9BYQ7	KRTAP4-1	Q9BYQ7	0	48	Keratin-associated protein 4-1 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYQ8	KRTAP4-9	Q9BYQ8	0	25	Keratin-associated protein 4-9 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYQ9	KRTAP4-8	Q9BYQ9	0	23	Keratin-associated protein 4-8 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYR0	KRTAP4-7	Q9BYR0	0	26	Keratin-associated protein 4-7 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYR2	KRTAP4-5	Q9BYR2	0	81	Keratin-associated protein 4-5 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYR3	KRTAP4-4	Q9BYR3	1	80	Keratin-associated protein 4-4 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYR4	KRTAP4-3	Q9BYR4	1	35	Keratin-associated protein 4-3 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYR5	KRTAP4-2	Q9BYR5	3	195	Keratin-associated protein 4-2 (Keratin-associated protein 4	w
+SULFUR	human	Q9BYR6	KRTAP3-3	Q9BYR6	5	95	Keratin-associated protein 3-3 (High sulfur keratin-associat	w
+SULFUR	human	Q9BYR7	KRTAP3-2	Q9BYR7	5	93	Keratin-associated protein 3-2 (High sulfur keratin-associat	w
+SULFUR	human	Q9BYR8	KRTAP3-1	Q9BYR8	6	103	Keratin-associated protein 3-1 (High sulfur keratin-associat	w
+SULFUR	human	Q9BYR9	KRTAP2-4	Q9BYR9	1	84	Keratin-associated protein 2-4 (High sulfur keratin-associat	w
+SULFUR	human	Q9BYS1	KRTAP1-5	Q9BYS1	1	48	Keratin-associated protein 1-5 (High sulfur keratin-associat	w
+SULFUR	human	Q9BYT5	KRTAP2-2	Q9BYT5	0	22	Keratin-associated protein 2-2 (High sulfur keratin-associat	w
+SULFUR	human	Q9BYU5	KRTAP2-1	Q9BYU5	1	7	Keratin-associated protein 2-1 (High sulfur keratin-associat	w
+SULFUR	worm	Q09412	moc-6	Q09412	1	3	Molybdopterin synthase sulfur carrier subunit	w
+SULFUR	yeast	P32389	MET4	P32389	9	27	Transcriptional activator of sulfur metabolism MET4	w
+SULFUR	yeast	P40573	MET28	P40573	5	20	Transcriptional activator of sulfur metabolism MET28	w
+SULFUR	yeast	Q03020	ISU1	Q03020	4	26	Iron sulfur cluster assembly protein 1, mitochondrial	w
+SULFUR	yeast	Q12056	ISU2	Q12056	3	23	Iron sulfur cluster assembly protein 2, mitochondrial	w
+SULFUR	zebrafish	Q6PGY7	cisd1	Q6PGY7	0	5	CDGSH iron sulfur domain 1	w
+SULFURASE	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+SULFURASE	human	Q5VT66	MTARC1	Q5VT66	6	78	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
+SULFURASE	human	Q969Z3	MTARC2	Q969Z3	4	52	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
+SULFURASE	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+SULFURASE	worm	Q21657	mocs-1	Q21657	0	7	Molybdenum cofactor sulfurase	w
+SULFURTRANSFERASE	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+SULFURTRANSFERASE	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+SULFURTRANSFERASE	fly	FBgn0038080	Tst1	Q9VG33	1	126	Sulfurtransferase	w
+SULFURTRANSFERASE	human	H0UI37	TSTD3	H0UI37	6	118	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
+SULFURTRANSFERASE	human	O95396	MOCS3	O95396	7	130	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+SULFURTRANSFERASE	human	P25325	MPST	P25325	9	117	3-mercaptopyruvate sulfurtransferase (MST) (EC 2.8.1.2)	w
+SULFURTRANSFERASE	human	Q16762	TST	Q16762	5	118	Thiosulfate sulfurtransferase (EC 2.8.1.1) (Rhodanese)	w
+SULFURTRANSFERASE	human	Q5T7W7	TSTD2	Q5T7W7	4	63	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
+SULFURTRANSFERASE	human	Q8NFU3	TSTD1	Q8NFU3	8	148	Thiosulfate:glutathione sulfurtransferase (TST) (EC 2.8.1.3)	w
+SULFURTRANSFERASE	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+SULFURTRANSFERASE	worm	G5ECA0	mpst-6	G5ECA0	0	7	thiosulfate sulfurtransferase	w
+SULFURTRANSFERASE	worm	H9G340	mpst-3	H9G340	0	9	thiosulfate sulfurtransferase	w
+SULFURTRANSFERASE	worm	O17730	mpst-1	O17730	0	11	Putative thiosulfate sulfurtransferase mpst-1	w
+SULFURTRANSFERASE	worm	O44510	moc-3	O44510	1	36	Adenylyltransferase and sulfurtransferase MOCS3	w
+SULFURTRANSFERASE	worm	P91247	mpst-4	P91247	0	10	Putative thiosulfate sulfurtransferase mpst-4	w
+SULFURTRANSFERASE	yeast	P38820	UBA4	P38820	3	39	Adenylyltransferase and sulfurtransferase UBA4	w
+SULFURTRANSFERASE	yeast	Q08686	TUM1	Q08686	0	22	Thiosulfate sulfurtransferase TUM1	w
+SULFURTRANSFERASE	yeast	Q08742	RDL2	Q08742	0	36	Thiosulfate sulfurtransferase RDL2, mitochondrial	w
+SULFURTRANSFERASE	yeast	Q12305	RDL1	Q12305	3	46	Thiosulfate:glutathione sulfurtransferase	w
+SULFURTRANSFERASE	zebrafish	A0A0G2KNS1	LOC561325	A0A0G2KNS1	4	67	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
+SULFURTRANSFERASE	zebrafish	E7F1E2	tstd3	E7F1E2	4	67	Sulfurtransferase	w
+SULFURTRANSFERASE	zebrafish	Q8AWD2	mocs3	Q8AWD2	7	88	Adenylyltransferase and sulfurtransferase MOCS3	w
+SULFURYLASE	human	O43252	PAPSS1	O43252	2	156	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w
+SULFURYLASE	human	O95340	PAPSS2	O95340	2	127	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w
+SULFURYLASE	human	O95396	MOCS3	O95396	7	130	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+SULP-2	worm	G5EDS5	sulp-2	G5EDS5	0	2	Anion transporter SULP-2	w
+SULP-2	worm	G5EDS5	sulp-2	G5EDS5	0	2	Anion transporter SULP-2	w
+SULP-3	worm	Q94225	sulp-3	Q94225	0	1	Sulfate permease family protein 3	
+SULP-8	worm	G5EFB2	sulp-8	G5EFB2	0	8	Anion transporter SULP-8a	
+SULP-8A	worm	G5EFB2	sulp-8	G5EFB2	0	8	Anion transporter SULP-8a	w
+SULPHAMIDASE	human	P51688	SGSH	P51688	3	79	N-sulphoglucosamine sulphohydrolase (EC 3.10.1.1) (Sulfogluc	w
+SULPHATE	zebrafish	Q6PE27	slc13a1	Q6PE27	0	1	Solute carrier family 13 (Sodium/sulphate symporters), membe	w
+SULPHOHYDROLASE	human	P51688	SGSH	P51688	3	79	N-sulphoglucosamine sulphohydrolase (EC 3.10.1.1) (Sulfogluc	w
+SULPHUR	human	Q6L8H4	KRTAP5-1	Q6L8H4	0	18	Keratin-associated protein 5-1 (Keratin, cuticle, ultrahigh 	w
+SULPHYDRYL	human	P10599	TXN	P10599	82	630	Thioredoxin (Trx) (ATL-derived factor) (ADF) (Surface-associ	w
+SULT-OR	schistosoma-mansoni	G4VLE5	SULT-OR	G4VLE5	0	62	Sulfotransferase oxamniquine resistance protein	
+SULT1A1	human	P50225	SULT1A1	P50225	30	123	Sulfotransferase 1A1 (ST1A1) (EC 2.8.2.1) (Aryl sulfotransfe	
+SULT1A1	mus-musculus	P52840	Sult1a1	P52840	4	7	Sulfotransferase 1A1	
+SULT1A1	rattus-norvegicus	P17988	Sult1a1	P17988	4	6	Sulfotransferase 1A1	
+SULT1A2	human	P50226	SULT1A2	P50226	19	69	Sulfotransferase 1A2 (ST1A2) (EC 2.8.2.1) (Aryl sulfotransfe	
+SULT1A3	human	P0DMM9	SULT1A3	P0DMM9	5	30	Sulfotransferase 1A3 (ST1A3) (EC 2.8.2.1) (Aryl sulfotransfe	
+SULT1A4	human	P0DMN0	SULT1A4	P0DMN0	19	59	Sulfotransferase 1A4 (ST1A4) (EC 2.8.2.1) (Aryl sulfotransfe	
+SULT1B1	human	O43704	SULT1B1	O43704	13	36	Sulfotransferase 1B1 (ST1B1) (EC 2.8.2.1) (Sulfotransferase 	
+SULT1B1	mus-musculus	Q9QWG7	Sult1b1	Q9QWG7	4	6	Sulfotransferase 1B1	
+SULT1B1	rattus-norvegicus	P52847	Sult1b1	P52847	3	5	Sulfotransferase 1B1	
+SULT1B2	human	O43704	SULT1B1	O43704	13	36		
+SULT1C	human	O00338	SULT1C2	O00338	12	38	Sulfotransferase 1C2 (ST1C2) (EC 2.8.2.1) (Sulfotransferase 	w
+SULT1C	human	O75897	SULT1C4	O75897	17	143	Sulfotransferase 1C4 (ST1C4) (EC 2.8.2.1) (Sulfotransferase 	w
+SULT1C1	human	O00338	SULT1C2	O00338	12	38		
+SULT1C1	mus-musculus	Q80VR3	Sult1c1	Q80VR3	0	1	Sulfotransferase 1C1	
+SULT1C1	rattus-norvegicus	P50237	Sult1c1	P50237	0	1	Sulfotransferase 1C1	
+SULT1C2	human	O00338	SULT1C2	O00338	12	38	Sulfotransferase 1C2 (ST1C2) (EC 2.8.2.1) (Sulfotransferase 	
+SULT1C2	human	O75897	SULT1C4	O75897	17	143		
+SULT1C2	mus-musculus	Q9D939	Sult1c2	Q9D939	5	6	Sulfotransferase 1C2	
+SULT1C3	human	Q6IMI6	SULT1C3	Q6IMI6	14	38	Sulfotransferase 1C3 (ST1C3) (EC 2.8.2.1) (EC 2.8.2.2)	
+SULT1C4	human	O75897	SULT1C4	O75897	17	143	Sulfotransferase 1C4 (ST1C4) (EC 2.8.2.1) (Sulfotransferase 	
+SULT1D1	mus-musculus	Q3UZZ6	Sult1d1	Q3UZZ6	1	3	Sulfotransferase 1 family member D1	
+SULT1D1	rattus-norvegicus	G3V9R3	Sult1d1	G3V9R3	0	1	Sulfotransferase 1 family member D1	
+SULT1E1	human	P49888	SULT1E1	P49888	14	47	Sulfotransferase 1E1 (ST1E1) (EC 2.8.2.4) (EST-1) (Estrogen 	
+SULT1E1	mus-musculus	P49891	Sult1e1	P49891	5	9	Sulfotransferase 1E1	
+SULT1E1	rattus-norvegicus	P52844	Sult1e1	P52844	0	2	Sulfotransferase 1E1	
+SULT1ST1	zebrafish	Q6PH37	sult1st1	Q6PH37	5	6	Cytosolic sulfotransferase 1	
+SULT1ST2	zebrafish	Q7ZUS4	sult1st2	Q7ZUS4	5	6	Cytosolic sulfotransferase 2	
+SULT1ST3	zebrafish	Q7T2V2	sult1st3	Q7T2V2	5	6	Cytosolic sulfotransferase 3	
+SULT1ST6	zebrafish	Q6DHH8	sult1st6	Q6DHH8	4	6	Sulfotransferase	
+SULT1ST7	zebrafish	F1RD72	sult1st7	F1RD72	5	6	Sulfotransferase	
+SULT2A1	human	Q06520	SULT2A1	Q06520	13	71	Sulfotransferase 2A1 (ST2A1) (EC 2.8.2.2) (Bile salt sulfotr	
+SULT2A1	mus-musculus	P52843	Sult2a1	P52843	0	7	Sulfotransferase 2A1	
+SULT2A2	rattus-norvegicus	P50235	Sult2a2	P50235	4	5	Sulfotransferase 2A2	
+SULT2B1	human	O00204	SULT2B1	O00204	20	120	Sulfotransferase 2B1 (EC 2.8.2.2) (Alcohol sulfotransferase)	
+SULT2B1	mus-musculus	O35400	Sult2b1	O35400	1	8	Sulfotransferase 2B1	
+SULT2B1	rattus-norvegicus	Q29YR5	Sult2b1	Q29YR5	1	1	Sulfotransferase 2B1	
+SULT2ST3	zebrafish	A4FUP0	sult2st3	A4FUP0	1	6	Sulfotransferase	
+SULT4A1	human	Q9BR01	SULT4A1	Q9BR01	22	60	Sulfotransferase 4A1 (ST4A1) (EC 2.8.2.-) (Brain sulfotransf	
+SULT4A1	mus-musculus	P63046	Sult4a1	P63046	4	8	Sulfotransferase 4A1	
+SULT4A1	rattus-norvegicus	P63047	Sult4a1	P63047	4	4	Sulfotransferase 4A1	
+SULT6B1	human	Q6IMI4	SULT6B1	Q6IMI4	9	24	Sulfotransferase 6B1 (ST6B1) (Thyroxine sulfotransferase) (E	
+SULT6B1	mus-musculus	P0CC03	Sult6b1	P0CC03	0	5	Sulfotransferase 6B1	
+SULT6B1	rattus-norvegicus	M0R952	Sult6b1	M0R952	2	4	Sulfotransferase	
+SULT6B1	zebrafish	F1QYJ6	sult6b1	F1QYJ6	3	6	Sulfotransferase 6B1	
+SULTR1	arabidopsis-thaliana	Q9FEP7	SULTR1	Q9FEP7	1	18	Sulfate transporter 1.3	
+SULTR1	arabidopsis-thaliana	Q9MAX3	SULTR1	Q9MAX3	1	19	Sulfate transporter 1.2	
+SULTR1	arabidopsis-thaliana	Q9SAY1	SULTR1	Q9SAY1	0	14	Sulfate transporter 1.1	
+SULTR2	arabidopsis-thaliana	O04722	SULTR2	O04722	1	15	Sulfate transporter 2.1	
+SULTR2	arabidopsis-thaliana	P92946	SULTR2	P92946	0	13	Sulfate transporter 2.2	
+SULTR3	arabidopsis-thaliana	O04289	SULTR3	O04289	0	13	Sulfate transporter 3.2	
+SULTR3	arabidopsis-thaliana	Q94LW6	SULTR3	Q94LW6	1	14	Probable sulfate transporter 3.5	
+SULTR3	arabidopsis-thaliana	Q9LW86	SULTR3	Q9LW86	0	13	Probable sulfate transporter 3.4	
+SULTR3	arabidopsis-thaliana	Q9SV13	SULTR3	Q9SV13	0	14	Sulfate transporter 3.1	
+SULTR3	arabidopsis-thaliana	Q9SXS2	SULTR3	Q9SXS2	0	13	Probable sulfate transporter 3.3	
+SULTR4	arabidopsis-thaliana	Q8GYH8	SULTR4	Q8GYH8	0	13	Probable sulfate transporter 4.2	
+SULTR4	arabidopsis-thaliana	Q9FY46	SULTR4	Q9FY46	0	14	Sulfate transporter 4.1, chloroplastic	
+SULTX3	human	Q9BR01	SULT4A1	Q9BR01	22	60		
+SULU	worm	P46549	kin-18	P46549	1	30	Serine/threonine-protein kinase SULU (EC 2.7.11.1) (Protein 	w
+SULU	worm	P46549	kin-18	P46549	1	30	Serine/threonine-protein kinase SULU (EC 2.7.11.1) (Protein 	w
+SULU_CAEEL	worm	P46549	kin-18	P46549	1	30		

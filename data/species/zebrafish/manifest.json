@@ -8,8 +8,8 @@
  "datasets": [
   {
    "id": "zebrafish-kinase-kinase",
-   "short": "Kinase\u2013kinase",
-   "title": "Zebrafish kinase\u2013kinase screen",
+   "short": "Kinase–kinase",
+   "title": "Zebrafish kinase–kinase screen",
    "citation": "Kim AR, Perrimon N (2026). LIVIA Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. Zenodo.",
    "url": "https://doi.org/10.5281/zenodo.22964479",
    "counts": {
@@ -55,6 +55,7 @@
   "edges": "edges.tsv",
   "tested": "tested.bin",
   "biogridShards": 256,
-  "paralogs": "paralogs.json"
+  "paralogs": "paralogs.json",
+  "structsBoth": true
  }
 }

@@ -1,18 +1,73 @@
-PAK1	mus-musculus	O88643	Pak1	O88643	24	99	Serine/threonine-protein kinase PAK 1
-PAK1	rattus-norvegicus	P35465	Pak1	P35465	20	90	Serine/threonine-protein kinase PAK 1
-PAK1IP1	mus-musculus	Q9DCE5	Pak1ip1	Q9DCE5	0	10	p21-activated protein kinase-interacting protein 1
-PAK2	mus-musculus	Q8CIN4	Pak2	Q8CIN4	20	72	Serine/threonine-protein kinase PAK 2
-PAK2	rattus-norvegicus	Q64303	Pak2	Q64303	22	67	Serine/threonine-protein kinase PAK 2
-PAK3	mus-musculus	Q61036	Pak3	Q61036	18	64	Serine/threonine-protein kinase PAK 3
-PAK3	rattus-norvegicus	Q62829	Pak3	Q62829	16	58	Serine/threonine-protein kinase PAK 3
-PAK4	mus-musculus	Q8BTW9	Pak4	Q8BTW9	19	46	Serine/threonine-protein kinase PAK 4
-PAK4	rattus-norvegicus	B5DF62	Pak4	B5DF62	17	47	non-specific serine/threonine protein kinase
-PAK5	mus-musculus	Q8C015	Pak5	Q8C015	8	37	Serine/threonine-protein kinase PAK 5
-PAK5	rattus-norvegicus	D4A280	Pak5	D4A280	8	37	Serine/threonine-protein kinase PAK 5
-PAK6	mus-musculus	Q3ULB5	Pak6	Q3ULB5	13	39	Serine/threonine-protein kinase PAK 6
-PAK6	rattus-norvegicus	D3ZQ51	Pak6	D3ZQ51	9	41	non-specific serine/threonine protein kinase
-PAKA	dictyostelium-discoideum	Q55D99	pakA	Q55D99	9	21	Serine/threonine-protein kinase pakA
-PAKAP	mus-musculus	F7AA26	Pakap	F7AA26	0	3	Paralemmin A kinase anchor protein
-PAKAP	mus-musculus	O54931	Pakap	O54931	1	7	PALM2-AKAP2 fusion protein
-PAKB	dictyostelium-discoideum	Q869N2	pakB	Q869N2	10	30	Serine/threonine-protein kinase pakB
-PAKC	dictyostelium-discoideum	Q55GV3	pakC	Q55GV3	9	21	Serine/threonine-protein kinase pakC
+PAK	fly	FBgn0267698	Pak	B7Z0W0	323	1344	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+PAK-1	human	Q13153	PAK1	Q13153	326	1625	Serine/threonine-protein kinase PAK 1 (EC 2.7.11.1) (Alpha-P	w
+PAK-1	human	Q16512	PKN1	Q16512	62	392	Serine/threonine-protein kinase N1 (EC 2.7.11.13) (Protease-	w
+PAK-1	worm	Q17850	pak-1	Q17850	29	107	Serine/threonine-protein kinase pak-1 (EC 2.7.11.1) (CePAK) 	w
+PAK-1	worm	Q17850	pak-1	Q17850	29	107	Serine/threonine-protein kinase pak-1 (EC 2.7.11.1) (CePAK) 	w
+PAK-2	human	Q13177	PAK2	Q13177	326	1537	Serine/threonine-protein kinase PAK 2 (EC 2.7.11.1) (Gamma-P	w
+PAK-2	worm	G5EFU0	pak-2	G5EFU0	23	80	Serine/threonine-protein kinase pak-2 (EC 2.7.11.1) (p21-act	w
+PAK-2	worm	G5EFU0	pak-2	G5EFU0	23	80	Serine/threonine-protein kinase pak-2 (EC 2.7.11.1) (p21-act	w
+PAK-2P27	human	Q13177	PAK2	Q13177	326	1537	Serine/threonine-protein kinase PAK 2 (EC 2.7.11.1) (Gamma-P	w
+PAK-3	human	O75914	PAK3	O75914	289	1295	Serine/threonine-protein kinase PAK 3 (EC 2.7.11.1) (Beta-PA	w
+PAK-4	human	O96013	PAK4	O96013	525	1483	Serine/threonine-protein kinase PAK 4 (EC 2.7.11.1) (p21-act	w
+PAK-5	human	Q9NQU5	PAK6	Q9NQU5	419	1349	Serine/threonine-protein kinase PAK 6 (EC 2.7.11.1) (PAK-5) 	w
+PAK-5	human	Q9P286	PAK5	Q9P286	56	226	Serine/threonine-protein kinase PAK 5 (EC 2.7.11.1) (p21-act	w
+PAK-6	human	Q9NQU5	PAK6	Q9NQU5	419	1349	Serine/threonine-protein kinase PAK 6 (EC 2.7.11.1) (PAK-5) 	w
+PAK-7	human	Q9P286	PAK5	Q9P286	56	226	Serine/threonine-protein kinase PAK 5 (EC 2.7.11.1) (p21-act	w
+PAK-INTERACTING	human	Q14155	ARHGEF7	Q14155	67	335	Rho guanine nucleotide exchange factor 7 (Beta-Pix) (COOL-1)	w
+PAK-INTERACTING	human	Q15052	ARHGEF6	Q15052	66	284	Rho guanine nucleotide exchange factor 6 (Alpha-Pix) (COOL-2	w
+PAK1	human	Q13153	PAK1	Q13153	326	1625	Serine/threonine-protein kinase PAK 1 (EC 2.7.11.1) (Alpha-P	
+PAK1	human	Q16512	PKN1	Q16512	62	392		
+PAK1	mus-musculus	O88643	Pak1	O88643	24	99	Serine/threonine-protein kinase PAK 1	
+PAK1	rattus-norvegicus	P35465	Pak1	P35465	20	90	Serine/threonine-protein kinase PAK 1	
+PAK1	worm	Q17850	pak-1	Q17850	29	107	Serine/threonine-protein kinase pak-1 (EC 2.7.11.1) (CePAK) 	w
+PAK1	yeast	P38990	SAK1	P38990	3	55		
+PAK1	yeast	P40494	PRK1	P40494	18	96		
+PAK1	zebrafish	A0A8M9P9X9	pak1	A0A8M9P9X9	30	107	non-specific serine/threonine protein kinase	
+PAK1	zebrafish	Q803Z0	pak1	Q803Z0	24	67	Serine/threonine-protein (EC 2.7.11.1)	
+PAK1-INTERACTING	human	Q9NWT1	PAK1IP1	Q9NWT1	49	316	p21-activated protein kinase-interacting protein 1 (PAK/PLC-	w
+PAK1IP1	human	Q9NWT1	PAK1IP1	Q9NWT1	49	316	p21-activated protein kinase-interacting protein 1 (PAK/PLC-	
+PAK1IP1	mus-musculus	Q9DCE5	Pak1ip1	Q9DCE5	0	10	p21-activated protein kinase-interacting protein 1	
+PAK1IP1	zebrafish	Q6TNS2	pak1ip1	Q6TNS2	1	9	p21-activated protein kinase-interacting protein 1-like	
+PAK1_HUMAN	human	Q13153	PAK1	Q13153	326	1625		
+PAK2	human	Q13177	PAK2	Q13177	326	1537	Serine/threonine-protein kinase PAK 2 (EC 2.7.11.1) (Gamma-P	
+PAK2	mus-musculus	Q8CIN4	Pak2	Q8CIN4	20	72	Serine/threonine-protein kinase PAK 2	
+PAK2	rattus-norvegicus	Q64303	Pak2	Q64303	22	67	Serine/threonine-protein kinase PAK 2	
+PAK2B	zebrafish	A0A8M2BI44	pak2b	A0A8M2BI44	42	139	Serine/threonine-protein (EC 2.7.11.1)	
+PAK2_HUMAN	human	Q13177	PAK2	Q13177	326	1537		
+PAK3	fly	FBgn0044826	Pak3	A0A0B4KGS4	237	1160	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+PAK3	human	O75914	PAK3	O75914	289	1295	Serine/threonine-protein kinase PAK 3 (EC 2.7.11.1) (Beta-PA	
+PAK3	mus-musculus	Q61036	Pak3	Q61036	18	64	Serine/threonine-protein kinase PAK 3	
+PAK3	rattus-norvegicus	Q62829	Pak3	Q62829	16	58	Serine/threonine-protein kinase PAK 3	
+PAK3BP	human	Q14155	ARHGEF7	Q14155	67	335		
+PAK3_HUMAN	human	O75914	PAK3	O75914	289	1295		
+PAK4	human	O96013	PAK4	O96013	525	1483	Serine/threonine-protein kinase PAK 4 (EC 2.7.11.1) (p21-act	
+PAK4	mus-musculus	Q8BTW9	Pak4	Q8BTW9	19	46	Serine/threonine-protein kinase PAK 4	
+PAK4	rattus-norvegicus	B5DF62	Pak4	B5DF62	17	47	non-specific serine/threonine protein kinase	
+PAK4	zebrafish	F1QZR2	pak4	F1QZR2	43	119	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
+PAK4-INHIBITOR	human	Q96EL1	INKA1	Q96EL1	9	43	PAK4-inhibitor INKA1 (Induced in neural crest by AP2-alpha p	w
+PAK4-INHIBITOR	human	Q9NTI7	INKA2	Q9NTI7	15	41	PAK4-inhibitor INKA2 (Induced in neural crest by AP2-alpha p	w
+PAK4-INHIBITOR	zebrafish	F1QPR4	fam212ab	F1QPR4	3	5	PAK4-inhibitor inka2	w
+PAK4-INHIBITOR	zebrafish	F1QR98	fam212aa	F1QR98	3	5	PAK4-inhibitor inka1	w
+PAK4_HUMAN	human	O96013	PAK4	O96013	525	1483		
+PAK5	human	Q9NQU5	PAK6	Q9NQU5	419	1349		
+PAK5	human	Q9P286	PAK5	Q9P286	56	226	Serine/threonine-protein kinase PAK 5 (EC 2.7.11.1) (p21-act	
+PAK5	mus-musculus	Q8C015	Pak5	Q8C015	8	37	Serine/threonine-protein kinase PAK 5	
+PAK5	rattus-norvegicus	D4A280	Pak5	D4A280	8	37	Serine/threonine-protein kinase PAK 5	
+PAK5_HUMAN	human	Q9P286	PAK5	Q9P286	56	226		
+PAK6	human	Q8N910	PAK6-AS1	Q8N910	0	4	Putative uncharacterized protein PAK6-AS1 (PAK6 antisense RN	w
+PAK6	human	Q9NQU5	PAK6	Q9NQU5	419	1349	Serine/threonine-protein kinase PAK 6 (EC 2.7.11.1) (PAK-5) 	
+PAK6	mus-musculus	Q3ULB5	Pak6	Q3ULB5	13	39	Serine/threonine-protein kinase PAK 6	
+PAK6	rattus-norvegicus	D3ZQ51	Pak6	D3ZQ51	9	41	non-specific serine/threonine protein kinase	
+PAK6-AS1	human	Q8N910	PAK6-AS1	Q8N910	0	4	Putative uncharacterized protein PAK6-AS1 (PAK6 antisense RN	
+PAK65	human	Q13177	PAK2	Q13177	326	1537	Serine/threonine-protein kinase PAK 2 (EC 2.7.11.1) (Gamma-P	w
+PAK6A	zebrafish	E7FE80	pak6a	E7FE80	19	69	non-specific serine/threonine protein kinase	
+PAK6B	zebrafish	A5PEY8	pak6b	A5PEY8	24	69	non-specific serine/threonine protein kinase	
+PAK6_HUMAN	human	Q9NQU5	PAK6	Q9NQU5	419	1349		
+PAK7	human	Q9P286	PAK5	Q9P286	56	226		
+PAKA	dictyostelium-discoideum	Q55D99	pakA	Q55D99	9	21	Serine/threonine-protein kinase pakA	
+PAKAP	human	Q9Y2D5	PALM2AKAP2	Q9Y2D5	36	137		
+PAKAP	mus-musculus	F7AA26	Pakap	F7AA26	0	3	Paralemmin A kinase anchor protein	
+PAKAP	mus-musculus	O54931	Pakap	O54931	1	7	PALM2-AKAP2 fusion protein	
+PAKB	dictyostelium-discoideum	Q869N2	pakB	Q869N2	10	30	Serine/threonine-protein kinase pakB	
+PAKC	dictyostelium-discoideum	Q55GV3	pakC	Q55GV3	9	21	Serine/threonine-protein kinase pakC	
+PAK_25	fly	FBgn0267698	Pak	B7Z0W0	323	1344		

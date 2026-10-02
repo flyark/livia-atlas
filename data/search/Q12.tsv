@@ -1,9 +1,520 @@
-Q12126	schizosaccharomyces-pombe	Q12126	crk1	Q12126	9	81	Serine/threonine-protein kinase crk1
-Q12238	schizosaccharomyces-pombe	Q12238	uvi31	Q12238	2	2	UV-induced protein uvi31
-Q12381	schizosaccharomyces-pombe	Q12381	prp1	Q12381	10	64	Pre-mRNA-splicing factor prp1
-Q12519	schizosaccharomyces-pombe	Q12519	SPCC330.07c	Q12519	0	1	Uncharacterized MFS-type transporter C330.07c
-Q12701	schizosaccharomyces-pombe	Q12701	ksg1	Q12701	1	7	Serine/threonine-protein kinase ksg1
-Q12702	schizosaccharomyces-pombe	Q12702	pab1	Q12702	4	35	Protein phosphatase PP2A regulatory subunit B
-Q12704	schizosaccharomyces-pombe	Q12704	mip1	Q12704	0	40	DNA polymerase gamma
-Q12705	schizosaccharomyces-pombe	Q12705	ppb1	Q12705	8	32	Serine/threonine-protein phosphatase 2B catalytic subunit
-Q12706	schizosaccharomyces-pombe	Q12706	psk1	Q12706	0	7	Serine/threonine-protein kinase psk1
+Q12000	yeast	Q12000	TMA46	Q12000	14	281	Translation machinery-associated protein 46	
+Q12001	yeast	Q12001	ALG6	Q12001	1	6	Dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucosyltransfe	
+Q12003	yeast	Q12003	ENV7	Q12003	0	19	Serine/threonine-protein kinase ENV7 (EC 2.7.11.1) (Late end	
+Q12004	yeast	Q12004	TFB4	Q12004	11	137	General transcription and DNA repair factor IIH subunit TFB4	
+Q12006	yeast	Q12006	PFA4	Q12006	1	9	Palmitoyltransferase PFA4	
+Q12008	yeast	Q12008	GPM2	Q12008	0	6	Phosphoglycerate mutase 2	
+Q12009	yeast	Q12009	TRM8	Q12009	1	20	tRNA (guanine-N(7)-)-methyltransferase	
+Q12010	yeast	Q12010	YPQ1	Q12010	0	1	Vacuolar lysine transporter YPQ1	
+Q12012	yeast	Q12012	YOR289W	Q12012	0	3	Uncharacterized protein YOR289W	
+Q12013	yeast	Q12013	AKR2	Q12013	0	12	Probable palmitoyltransferase AKR2	
+Q12015	yeast	Q12015	DSC3	Q12015	1	12	DSC E3 ubiquitin ligase complex subunit 3	
+Q12016	yeast	Q12016	VPS68	Q12016	1	15	Vacuolar protein sorting-associated protein 68	
+Q12017	yeast	Q12017	PLP2	Q12017	0	18	Phosducin-like protein 2	
+Q12018	yeast	Q12018	CDC53	Q12018	12	148	Cell division control protein 53	
+Q12020	yeast	Q12020	SRL2	Q12020	0	20	Protein SRL2	
+Q12021	yeast	Q12021	RAD28	Q12021	1	65	Radiation-sensitive protein 28	
+Q12023	yeast	Q12023	YDL011C	Q12023	0	2	Putative uncharacterized protein YDL011C	
+Q12024	yeast	Q12024	YTM1	Q12024	8	224	Ribosome biogenesis protein YTM1	
+Q12025	yeast	Q12025	EMC10	Q12025	1	33	Endoplasmic reticulum membrane protein complex subunit 10	
+Q12026	yeast	Q12026	YLR053C	Q12026	0	10	Putative uncharacterized protein YLR053C	
+Q12027	yeast	Q12027	GID12	Q12027	1	11	GID complex associated protein 12	
+Q12028	yeast	Q12028	APL4	Q12028	14	49	AP-1 complex subunit gamma-1	
+Q12029	yeast	Q12029	FSF1	Q12029	0	20	Sideroflexin FSF1	
+Q12030	yeast	Q12030	TAF10	Q12030	17	150	SAGA complex/transcription factor TFIID complex subunit TAF1	
+Q12031	yeast	Q12031	ICL2	Q12031	0	4	Mitochondrial 2-methylisocitrate lyase ICL2	
+Q12032	yeast	Q12032	AIM41	Q12032	0	8	Altered inheritance of mitochondria protein 41, mitochondria	
+Q12033	yeast	Q12033	RIM20	Q12033	5	32	pH-response regulator protein palA/RIM20	
+Q12034	yeast	Q12034	SLF1	Q12034	22	519	Protein SLF1	
+Q12035	yeast	Q12035	FCF2	Q12035	5	122	rRNA-processing protein FCF2	
+Q12038	yeast	Q12038	SRO7	Q12038	4	23	Lethal(2) giant larvae protein homolog SRO7	
+Q12039	yeast	Q12039	HMI1	Q12039	0	14	ATP-dependent DNA helicase HMI1, mitochondrial	
+Q12040	yeast	Q12040	YOR283W	Q12040	0	8	Broad-specificity phosphatase YOR283W	
+Q12041	yeast	Q12041	MET32	Q12041	1	7	Transcriptional regulator MET32	
+Q12042	yeast	Q12042	YPL162C	Q12042	2	42	Vacuolar membrane protein YPL162C	
+Q12043	yeast	Q12043	TGL5	Q12043	2	33	Triacylglycerol lipase 5	
+Q12044	yeast	Q12044	RCN2	Q12044	4	13	Regulator of calcineurin 2	
+Q12045	yeast	Q12045	VIK1	Q12045	2	16	Spindle pole body-associated protein VIK1	
+Q12046	yeast	Q12046	CWC2	Q12046	4	69	Pre-mRNA-splicing factor CWC2	
+Q12048	yeast	Q12048	ATG41	Q12048	0	6	Autophagy-related protein 41	
+Q12049	yeast	Q12049	THP3	Q12049	3	24	Protein THP3	
+Q12050	yeast	Q12050	ELG1	Q12050	4	35	Telomere length regulation protein ELG1	
+Q12051	yeast	Q12051	BTS1	Q12051	1	5	Geranylgeranyl pyrophosphate synthase BTS1	
+Q12052	yeast	Q12052	TGS1	Q12052	2	11	Trimethylguanosine synthase	
+Q12055	yeast	Q12055	FAP7	Q12055	5	51	Adenylate kinase isoenzyme 6 homolog FAP7	
+Q12056	yeast	Q12056	ISU2	Q12056	3	23	Iron sulfur cluster assembly protein 2, mitochondrial	
+Q12057	yeast	Q12057	PIN2	Q12057	1	18	PIN2_YEAST	
+Q12058	yeast	Q12058	YPL251W	Q12058	0	2	Putative uncharacterized protein YPL251W	
+Q12059	yeast	Q12059	ULA1	Q12059	3	18	NEDD8-activating enzyme E1 regulatory subunit	
+Q12060	yeast	Q12060	HFI1	Q12060	12	130	SAGA complex subunit HFI1	
+Q12063	yeast	Q12063	NUS1	Q12063	2	14	Dehydrodolichyl diphosphate synthase complex subunit NUS1	
+Q12064	yeast	Q12064	BUD30	Q12064	0	2	Putative uncharacterized protein BUD30	
+Q12066	yeast	Q12066	NUR1	Q12066	3	25	Nuclear rim protein 1	
+Q12067	yeast	Q12067	ATX2	Q12067	0	2	Metal homeostasis factor ATX2	
+Q12068	yeast	Q12068	GRE2	Q12068	2	131	NADPH-dependent methylglyoxal reductase GRE2	
+Q12069	yeast	Q12069	PUS9	Q12069	0	27	tRNA pseudouridine(32) synthase, mitochondrial	
+Q12071	yeast	Q12071	VPS54	Q12071	4	31	Vacuolar protein sorting-associated protein 54	
+Q12072	yeast	Q12072	IOC2	Q12072	1	61	ISWI one complex protein 2	
+Q12074	yeast	Q12074	SPE3	Q12074	1	13	Spermidine synthase SPE3	
+Q12077	yeast	Q12077	YLR140W	Q12077	0	1	Putative uncharacterized protein YLR140W	
+Q12078	yeast	Q12078	SMF3	Q12078	0	12	Iron transporter SMF3	
+Q12079	yeast	Q12079	YPR027C	Q12079	0	2	Uncharacterized membrane protein YPR027C	
+Q12080	yeast	Q12080	NOP53	Q12080	18	200	Ribosome biogenesis protein NOP53	
+Q12082	yeast	Q12082	YDL157C	Q12082	0	6	Uncharacterized protein YDL157C, mitochondrial	
+Q12083	yeast	Q12083	MLH3	Q12083	4	47	DNA mismatch repair protein MLH3	
+Q12084	yeast	Q12084	DAS2	Q12084	2	14	Putative uridine kinase DAS2	
+Q12086	yeast	Q12086	DIN7	Q12086	0	30	DNA damage-inducible protein DIN7	
+Q12089	yeast	Q12089	AEP3	Q12089	2	21	ATPase expression protein 3	
+Q12090	yeast	Q12090	REX3	Q12090	0	9	RNA exonuclease 3	
+Q12091	yeast	Q12091	DAP1	Q12091	1	23	Damage response protein 1	
+Q12092	yeast	Q12092	ATG29	Q12092	2	20	Autophagy-related protein 29	
+Q12093	yeast	Q12093	SLM3	Q12093	0	8	Mitochondrial tRNA-specific 2-thiouridylase 1	
+Q12094	yeast	Q12094	TSR3	Q12094	0	9	18S rRNA aminocarboxypropyltransferase	
+Q12096	yeast	Q12096	GNT1	Q12096	0	9	Glucose N-acetyltransferase 1	
+Q12098	yeast	Q12098	SLX4	Q12098	7	27	Structure-specific endonuclease subunit SLX4	
+Q12099	yeast	Q12099	FAL1	Q12099	5	112	ATP-dependent RNA helicase FAL1	
+Q12100	yeast	Q12100	RTK1	Q12100	3	37	Probable serine/threonine-protein kinase RTK1	
+Q12102	yeast	Q12102	CFT2	Q12102	4	52	Cleavage factor two protein 2	
+Q12103	yeast	Q12103	YDL109C	Q12103	0	2	Putative lipase YDL109C	
+Q12104	yeast	Q12104	SWT1	Q12104	0	5	Transcriptional protein SWT1	
+Q12106	yeast	Q12106	MCP1	Q12106	0	3	Mitochondrial adapter protein MCP1	
+Q12107	yeast	Q12107	APC9	Q12107	2	34	Anaphase-promoting complex subunit 9	
+Q12108	yeast	Q12108	RTC5	Q12108	0	5	Restriction of telomere capping protein 5	
+Q12109	yeast	Q12109	WRS1	Q12109	1	26	Tryptophan--tRNA ligase, cytoplasmic	
+Q12110	yeast	Q12110	YLR049C	Q12110	0	3	Uncharacterized protein YLR049C	
+Q12114	yeast	Q12114	CHS5	Q12114	5	72	Chitin biosynthesis protein CHS5	
+Q12115	yeast	Q12115	YDL016C	Q12115	0	1	Putative uncharacterized protein YDL016C	
+Q12116	yeast	Q12116	TMS1	Q12116	0	6	Membrane protein TMS1	
+Q12117	yeast	Q12117	MRH1	Q12117	0	24	Protein MRH1	
+Q12118	yeast	Q12118	SGT2	Q12118	8	68	Small glutamine-rich tetratricopeptide repeat-containing pro	
+Q12119	yeast	Q12119	FCY22	Q12119	0	3	Purine-cytosine permease FCY22	
+Q12121	yeast	Q12121	YDL211C	Q12121	1	6	Uncharacterized protein YDL211C	
+Q12122	yeast	Q12122	LYS21	Q12122	1	25	Homocitrate synthase, mitochondrial	
+Q12123	yeast	Q12123	DCS2	Q12123	1	9	Inactive diphosphatase DCS2	
+Q12124	yeast	Q12124	MED2	Q12124	1	72	Mediator of RNA polymerase II transcription subunit 2	
+Q12125	yeast	Q12125	GET4	Q12125	3	16	Golgi to ER traffic protein 4	
+Q12126	schizosaccharomyces-pombe	Q12126	crk1	Q12126	9	81	Serine/threonine-protein kinase crk1	
+Q12127	yeast	Q12127	CCW12	Q12127	0	18	Covalently-linked cell wall protein 12	
+Q12128	yeast	Q12128	BAG7	Q12128	1	5	Rho-GTPase-activating protein BAG7	
+Q12129	yeast	Q12129	NMD4	Q12129	1	23	Nonsense-mediated decay protein 4	
+Q12132	yeast	Q12132	USV1	Q12132	0	8	Nutrient and stress factor 1	
+Q12133	yeast	Q12133	SPC3	Q12133	2	14	Signal peptidase complex subunit 3	
+Q12134	yeast	Q12134	HUA2	Q12134	0	17	Protein HUA2	
+Q12135	yeast	Q12135	YDL172C	Q12135	0	1	Putative uncharacterized protein YDL172C	
+Q12136	yeast	Q12136	SAS10	Q12136	22	154	Something about silencing protein 10	
+Q12138	yeast	Q12138	YLR125W	Q12138	0	6	Putative uncharacterized protein YLR125W	
+Q12139	yeast	Q12139	YPR022C	Q12139	0	10	Zinc finger protein YPR022C	
+Q12140	yeast	Q12140	BSC1	Q12140	0	11	Bypass of stop codon protein 1	
+Q12142	yeast	Q12142	ATG9	Q12142	4	79	Autophagy-related protein 9	
+Q12143	yeast	Q12143	NSL1	Q12143	3	50	Kinetochore-associated protein NSL1	
+Q12144	yeast	Q12144	PER33	Q12144	0	27	Pore and endoplasmic reticulum protein of 33 kDa	
+Q12145	yeast	Q12145	CMR3	Q12145	0	3	Zinc finger protein CRM3	
+Q12146	yeast	Q12146	PSF3	Q12146	4	47	DNA replication complex GINS protein PSF3	
+Q12149	yeast	Q12149	RRP6	Q12149	21	225	Exosome complex exonuclease RRP6	
+Q12151	yeast	Q12151	UPC2	Q12151	3	15	Sterol uptake control protein 2	
+Q12152	yeast	Q12152	YP150_YEAST	Q12152	13	94	Putative serine/threonine-protein kinase YPL150W (EC 2.7.11.	
+Q12153	yeast	Q12153	SSF2	Q12153	4	70	Ribosome biogenesis protein SSF2	
+Q12154	yeast	Q12154	GET3	Q12154	3	64	ATPase GET3	
+Q12155	yeast	Q12155	EMA19	Q12155	0	5	Efficient mitochondria targeting-associated protein 19	
+Q12156	yeast	Q12156	AIM7	Q12156	1	14	Protein AIM7	
+Q12157	yeast	Q12157	APC11	Q12157	11	53	Anaphase-promoting complex subunit 11	
+Q12158	yeast	Q12158	MCD1	Q12158	10	67	Sister chromatid cohesion protein 1	
+Q12159	yeast	Q12159	YRA1	Q12159	23	268	RNA annealing protein YRA1	
+Q12160	yeast	Q12160	YPR063C	Q12160	0	98	Uncharacterized protein YPR063C	
+Q12161	yeast	Q12161	PSH1	Q12161	7	68	RING finger protein PSH1	
+Q12163	yeast	Q12163	NBP2	Q12163	11	38	NAP1-binding protein 2	
+Q12164	yeast	Q12164	POM33	Q12164	1	45	Pore membrane protein of 33 kDa	
+Q12165	yeast	Q12165	ATP16	Q12165	5	48	ATP synthase subunit delta, mitochondrial	
+Q12166	yeast	Q12166	LEU9	Q12166	1	14	2-isopropylmalate synthase 2, mitochondrial	
+Q12167	yeast	Q12167	RRG1	Q12167	0	5	Required for respiratory growth protein 1, mitochondrial	
+Q12168	yeast	Q12168	ACF2	Q12168	2	29	Glucan endo-1,3-beta-D-glucosidase 2	
+Q12171	yeast	Q12171	MDM32	Q12171	1	22	Mitochondrial distribution and morphology protein 32	
+Q12172	yeast	Q12172	YRR1	Q12172	0	6	Zinc finger transcription factor YRR1	
+Q12174	yeast	Q12174	YLR123C	Q12174	0	1	Putative uncharacterized protein YLR123C	
+Q12175	yeast	Q12175	MSH5	Q12175	12	48	MutS protein homolog 5	
+Q12176	yeast	Q12176	MAK21	Q12176	19	208	Ribosome biogenesis protein MAK21	
+Q12177	yeast	Q12177	YLL056C	Q12177	0	128	Uncharacterized protein YLL056C	
+Q12178	yeast	Q12178	FCY1	Q12178	1	12	Cytosine deaminase	
+Q12179	yeast	Q12179	YPL245W	Q12179	0	13	Uncharacterized protein YPL245W	
+Q12180	yeast	Q12180	HAL9	Q12180	1	18	Halotolerance protein 9	
+Q12181	yeast	Q12181	TAH18	Q12181	3	21	NADPH-dependent diflavin oxidoreductase 1	
+Q12182	yeast	Q12182	YOR342C	Q12182	0	7	Uncharacterized protein YOR342C	
+Q12184	yeast	Q12184	YAH1	Q12184	7	66	Adrenodoxin homolog, mitochondrial	
+Q12185	yeast	Q12185	YDR018C	Q12185	0	4	Uncharacterized acyltransferase YDR018C	
+Q12186	yeast	Q12186	MSL5	Q12186	5	81	Branchpoint-bridging protein	
+Q12187	yeast	Q12187	YDL196W	Q12187	0	2	Putative uncharacterized protein YDL196W	
+Q12188	yeast	Q12188	REC8	Q12188	10	30	Meiotic recombination protein REC8	
+Q12189	yeast	Q12189	RKI1	Q12189	1	6	Ribose-5-phosphate isomerase	
+Q12191	yeast	Q12191	BUG1	Q12191	2	9	Binder of USO1 and GRH1 protein 1	
+Q12192	yeast	Q12192	RFM1	Q12192	2	11	Repression factor of MSEs protein 1	
+Q12194	yeast	Q12194	RGL1	Q12194	1	10	RHO1 GEF localizing protein 1	
+Q12196	yeast	Q12196	RIO1	Q12196	6	158	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1) (EC 3.6.1	
+Q12198	yeast	Q12198	HSU1	Q12198	0	4	Homocysteine/cysteine synthase	
+Q12199	yeast	Q12199	TIP41	Q12199	7	25	Type 2A phosphatase activator TIP41	
+Q12200	yeast	Q12200	NCR1	Q12200	0	17	NPC intracellular sterol transporter 1-related protein 1	
+Q12202	yeast	Q12202	OSW2	Q12202	0	5	Outer spore wall protein 2	
+Q12204	yeast	Q12204	YOR022C	Q12204	0	7	Probable phospholipase YOR022C, mitochondrial	
+Q12205	yeast	Q12205	MNL2	Q12205	1	5	Putative endoplasmic reticulum mannosidase MNL2	
+Q12206	yeast	Q12206	WTM2	Q12206	4	68	Transcriptional modulator WTM2	
+Q12207	yeast	Q12207	NCE102	Q12207	1	28	Non-classical export protein 2	
+Q12208	yeast	Q12208	USB1	Q12208	2	16	U6 snRNA phosphodiesterase 1	
+Q12209	yeast	Q12209	FRE8	Q12209	0	1	Probable ferric reductase transmembrane component 8	
+Q12211	yeast	Q12211	PUS1	Q12211	0	33	tRNA pseudouridine synthase 1	
+Q12212	yeast	Q12212	SIA1	Q12212	0	7	Protein SIA1	
+Q12213	yeast	Q12213	RPL7B	Q12213	7	340	Large ribosomal subunit protein uL30B	
+Q12214	yeast	Q12214	HOS1	Q12214	2	49	Histone deacetylase HOS1	
+Q12215	yeast	Q12215	WSC3	Q12215	0	25	Cell wall integrity and stress response component 3	
+Q12216	yeast	Q12216	NFI1	Q12216	8	125	E3 SUMO-protein ligase SIZ2	
+Q12218	yeast	Q12218	TIR4	Q12218	0	9	Cell wall protein TIR4	
+Q12219	yeast	Q12219	CIM1	Q12219	0	2	Mitochondrial HMG-box protein CIM1	
+Q12220	yeast	Q12220	DIP2	Q12220	14	161	U3 small nucleolar RNA-associated protein 12	
+Q12221	yeast	Q12221	PUF2	Q12221	34	1128	mRNA-binding protein PUF2	
+Q12222	yeast	Q12222	YGK3	Q12222	0	54	Glycogen synthase kinase-3 homolog YGK3	
+Q12223	yeast	Q12223	RAD59	Q12223	2	31	DNA repair protein RAD59	
+Q12224	yeast	Q12224	RLM1	Q12224	4	32	Transcription factor RLM1	
+Q12225	yeast	Q12225	YOR225W	Q12225	0	1	Putative uncharacterized protein YOR225W	
+Q12226	yeast	Q12226	AYT1	Q12226	0	9	Trichothecene 3-O-acetyltransferase	
+Q12229	yeast	Q12229	UBX3	Q12229	4	20	UBX domain-containing protein 3	
+Q12230	yeast	Q12230	LSP1	Q12230	14	117	Sphingolipid long chain base-responsive protein LSP1	
+Q12232	yeast	Q12232	SLP1	Q12232	3	5	Uncharacterized protein SLP1	
+Q12233	yeast	Q12233	ATP20	Q12233	1	35	ATP synthase subunit g, mitochondrial	
+Q12234	yeast	Q12234	RUD3	Q12234	1	19	GRIP domain-containing protein RUD3	
+Q12235	yeast	Q12235	YCT1	Q12235	0	4	High affinity cysteine transporter	
+Q12236	yeast	Q12236	PKH2	Q12236	4	22	Serine/threonine-protein kinase PKH2	
+Q12238	schizosaccharomyces-pombe	Q12238	uvi31	Q12238	2	2	UV-induced protein uvi31	
+Q12239	yeast	Q12239	YOL107W	Q12239	0	5	Transmembrane protein 115 homolog	
+Q12240	yeast	Q12240	YDR215C	Q12240	0	2	Uncharacterized protein YDR215C	
+Q12241	yeast	Q12241	VAM3	Q12241	18	56	Syntaxin VAM3	
+Q12242	yeast	Q12242	RUP1	Q12242	2	18	UBA domain-containing protein RUP1	
+Q12243	yeast	Q12243	YOR029W	Q12243	0	1	Uncharacterized protein YOR029W	
+Q12244	yeast	Q12244	YLL054C	Q12244	1	7	Uncharacterized transcriptional regulatory protein YLL054C	
+Q12245	yeast	Q12245	POC4	Q12245	1	20	Proteasome chaperone 4	
+Q12246	yeast	Q12246	LCB4	Q12246	1	15	Sphingoid long chain base kinase 4	
+Q12247	yeast	Q12247	FYV7	Q12247	1	10	rRNA-processing protein FYV7	
+Q12248	yeast	Q12248	DAD1	Q12248	8	28	DASH complex subunit DAD1	
+Q12250	yeast	Q12250	RPN5	Q12250	8	110	26S proteasome regulatory subunit RPN5	
+Q12251	yeast	Q12251	YPR011C	Q12251	0	4	Uncharacterized mitochondrial carrier YPR011C	
+Q12252	yeast	Q12252	PHM7	Q12252	0	7	Phosphate metabolism protein 7	
+Q12253	yeast	Q12253	YLR046C	Q12253	0	5	Uncharacterized membrane protein YLR046C	
+Q12254	yeast	Q12254	SVS1	Q12254	0	4	Protein SVS1	
+Q12255	yeast	Q12255	NYV1	Q12255	14	67	Vacuolar v-SNARE NYV1	
+Q12256	yeast	Q12256	TPO4	Q12256	1	23	Polyamine transporter 4	
+Q12257	yeast	Q12257	YDL177C	Q12257	0	2	IMPACT family member YDL177C	
+Q12259	yeast	Q12259	YLR108C	Q12259	0	15	BTB/POZ domain-containing protein YLR108C	
+Q12261	yeast	Q12261	YOR325W	Q12261	0	1	Putative uncharacterized protein YOR325W	
+Q12262	yeast	Q12262	MCM16	Q12262	5	69	Inner kinetochore subunit MCM16	
+Q12263	yeast	Q12263	GIN4	Q12263	11	102	Serine/threonine-protein kinase GIN4 (EC 2.7.11.1) (Growth i	
+Q12264	yeast	Q12264	YDL023C	Q12264	0	1	Putative uncharacterized protein YDL023C	
+Q12265	yeast	Q12265	PRS5	Q12265	4	26	Ribose-phosphate pyrophosphokinase 5	
+Q12267	yeast	Q12267	SMC4	Q12267	9	52	Structural maintenance of chromosomes protein 4	
+Q12270	yeast	Q12270	RBD2	Q12270	2	53	Rhomboid-type serine protease 2	
+Q12271	yeast	Q12271	INP53	Q12271	1	30	Polyphosphatidylinositol phosphatase INP53	
+Q12272	yeast	Q12272	TPT1	Q12272	0	6	tRNA 2'-phosphotransferase	
+Q12274	yeast	Q12274	YOR097C	Q12274	0	9	Uncharacterized protein YOR097C	
+Q12276	yeast	Q12276	HER1	Q12276	1	14	HMG2-induced ER-remodeling protein 1	
+Q12277	yeast	Q12277	RRP42	Q12277	12	103	Exosome complex component RRP42	
+Q12280	yeast	Q12280	IQG1	Q12280	5	67	Ras GTPase-activating-like protein IQG1	
+Q12282	yeast	Q12282	SPR2	Q12282	1	2	Sorulation-regulated protein 2	
+Q12283	yeast	Q12283	MCT1	Q12283	2	31	Malonyl CoA-acyl carrier protein transacylase, mitochondrial	
+Q12284	yeast	Q12284	ERV2	Q12284	0	7	FAD-linked sulfhydryl oxidase ERV2	
+Q12285	yeast	Q12285	MDY2	Q12285	10	131	Ubiquitin-like protein MDY2	
+Q12286	yeast	Q12286	SUT2	Q12286	0	1	Sterol uptake protein 2	
+Q12287	yeast	Q12287	COX17	Q12287	3	19	Cytochrome c oxidase copper chaperone	
+Q12288	yeast	Q12288	YLR126C	Q12288	0	3	Putative glutamine amidotransferase YLR126C	
+Q12289	yeast	Q12289	CRC1	Q12289	0	8	Mitochondrial carnitine carrier	
+Q12291	yeast	Q12291	BMT6	Q12291	0	14	25S rRNA (uridine(2843)-N(3))-methyltransferase	
+Q12292	yeast	Q12292	ATG34	Q12292	2	20	Autophagy-related protein 34	
+Q12296	yeast	Q12296	MAM3	Q12296	0	33	Protein MAM3	
+Q12297	yeast	Q12297	TAF3	Q12297	8	27	Transcription initiation factor TFIID subunit 3	
+Q12298	yeast	Q12298	YDR061W	Q12298	4	77	Uncharacterized ABC transporter ATP-binding protein YDR061W	
+Q12300	yeast	Q12300	RGT2	Q12300	2	23	High glucose sensor RGT2	
+Q12301	yeast	Q12301	YDL180W	Q12301	0	5	Uncharacterized membrane protein YDL180W	
+Q12303	yeast	Q12303	YPS3	Q12303	0	8	Aspartic proteinase yapsin-3	
+Q12305	yeast	Q12305	RDL1	Q12305	3	46	Thiosulfate:glutathione sulfurtransferase	
+Q12306	yeast	Q12306	SMT3	Q12306	35	307	Ubiquitin-like protein SMT3	
+Q12308	yeast	Q12308	TFC8	Q12308	2	11	Transcription factor tau 60 kDa subunit	
+Q12309	yeast	Q12309	CLF1	Q12309	8	113	Pre-mRNA-splicing factor CLF1	
+Q12310	yeast	Q12310	PRR2	Q12310	18	63	Serine/threonine-protein kinase PRR2 (EC 2.7.11.1) (Pheromon	
+Q12311	yeast	Q12311	NTO1	Q12311	7	23	NuA3 HAT complex component NTO1	
+Q12314	yeast	Q12314	SFM1	Q12314	0	11	Protein arginine N-methyltransferase SFM1	
+Q12315	yeast	Q12315	GLE1	Q12315	9	60	mRNA export factor GLE1	
+Q12317	yeast	Q12317	MSB4	Q12317	6	14	GTPase-activating protein MSB4	
+Q12318	yeast	Q12318	PSY3	Q12318	3	40	Platinum sensitivity protein 3	
+Q12320	yeast	Q12320	GLO4	Q12320	1	16	Hydroxyacylglutathione hydrolase, mitochondrial	
+Q12321	yeast	Q12321	MED1	Q12321	8	76	Mediator of RNA polymerase II transcription subunit 1	
+Q12322	yeast	Q12322	YOL114C	Q12322	2	102	Putative uncharacterized protein YOL114C	
+Q12324	yeast	Q12324	YVC1	Q12324	0	11	Calcium channel YVC1	
+Q12325	yeast	Q12325	SUL2	Q12325	0	21	Sulfate permease 2	
+Q12326	yeast	Q12326	GPM3	Q12326	0	8	Phosphoglycerate mutase 3	
+Q12327	yeast	Q12327	YLR124W	Q12327	0	2	Putative uncharacterized protein YLR124W	
+Q12328	yeast	Q12328	TIM22	Q12328	2	51	Mitochondrial import inner membrane translocase subunit TIM2	
+Q12329	yeast	Q12329	HSP42	Q12329	5	85	Heat shock protein 42	
+Q12330	yeast	Q12330	SME1	Q12330	13	138	Small nuclear ribonucleoprotein E	
+Q12331	yeast	Q12331	YDR262W	Q12331	6	37	FAS1 domain-containing protein YDR262W	
+Q12333	yeast	Q12333	FRE7	Q12333	0	5	Ferric/cupric reductase transmembrane component 7	
+Q12334	yeast	Q12334	SCM3	Q12334	2	26	Protein SCM3	
+Q12335	yeast	Q12335	PST2	Q12335	0	42	Protoplast secreted protein 2	
+Q12336	yeast	Q12336	YLL059C	Q12336	0	1	Putative uncharacterized protein YLL059C	
+Q12338	yeast	Q12338	RNH203	Q12338	2	9	Ribonuclease H2 subunit C	
+Q12339	yeast	Q12339	UTP23	Q12339	8	98	rRNA-processing protein UTP23	
+Q12340	yeast	Q12340	YRM1	Q12340	0	13	Zinc finger transcription factor YRM1	
+Q12341	yeast	Q12341	HAT1	Q12341	4	48	Histone acetyltransferase type B catalytic subunit	
+Q12342	yeast	Q12342	LDB17	Q12342	3	16	Protein LDB17	
+Q12343	yeast	Q12343	MED4	Q12343	7	93	Mediator of RNA polymerase II transcription subunit 4	
+Q12344	yeast	Q12344	GYP5	Q12344	8	33	GTPase-activating protein GYP5	
+Q12345	yeast	Q12345	IES3	Q12345	3	59	Ino eighty subunit 3	
+Q12346	yeast	Q12346	YPR071W	Q12346	0	7	Uncharacterized membrane protein YPR071W	
+Q12347	yeast	Q12347	HRT3	Q12347	2	19	F-box protein HRT3	
+Q12348	yeast	Q12348	RRI2	Q12348	2	37	COP9 signalosome complex subunit 10	
+Q12349	yeast	Q12349	ATP14	Q12349	3	37	ATP synthase subunit H, mitochondrial	
+Q12350	yeast	Q12350	JID1	Q12350	3	21	J domain-containing protein 1	
+Q12351	yeast	Q12351	YOR012W	Q12351	0	2	Uncharacterized protein YOR012W	
+Q12352	yeast	Q12352	YDL041W	Q12352	0	1	Putative uncharacterized protein YDL041W	
+Q12354	yeast	Q12354	YLR118C	Q12354	0	3	Acyl-protein thioesterase 1	
+Q12355	yeast	Q12355	PST1	Q12355	0	8	Cell wall mannoprotein PST1	
+Q12358	yeast	Q12358	JLP1	Q12358	0	1	Alpha-ketoglutarate-dependent sulfonate dioxygenase	
+Q12359	yeast	Q12359	ATO3	Q12359	1	8	Ammonia transport outward protein 3	
+Q12361	yeast	Q12361	GPR1	Q12361	1	20	G protein-coupled receptor GPR1	
+Q12362	yeast	Q12362	RIB2	Q12362	0	25	Bifunctional protein RIB2	
+Q12363	yeast	Q12363	WTM1	Q12363	3	70	Transcriptional modulator WTM1	
+Q12365	yeast	Q12365	BBP1	Q12365	3	34	Spindle pole component BBP1	
+Q12366	yeast	Q12366	NDJ1	Q12366	2	12	Non-disjunction protein 1	
+Q12367	yeast	Q12367	RKM5	Q12367	1	5	Ribosomal lysine N-methyltransferase 5	
+Q12368	yeast	Q12368	SNU23	Q12368	6	62	23 kDa U4/U6.U5 small nuclear ribonucleoprotein component	
+Q12369	yeast	Q12369	SFI1	Q12369	2	19	Protein SFI1	
+Q12370	yeast	Q12370	PAU17	Q12370	1	2	Seripauperin-17	
+Q12372	yeast	Q12372	MMP1	Q12372	0	3	S-methylmethionine permease 1	
+Q12373	yeast	Q12373	HIF1	Q12373	5	36	HAT1-interacting factor 1	
+Q12374	yeast	Q12374	NCA2	Q12374	0	28	Nuclear control of ATPase protein 2	
+Q12375	yeast	Q12375	ORT1	Q12375	0	9	Mitochondrial ornithine transporter 1	
+Q12377	yeast	Q12377	RPN6	Q12377	6	88	26S proteasome regulatory subunit RPN6	
+Q12378	yeast	Q12378	RTR2	Q12378	0	3	RNA polymerase II subunit B1 CTD phosphatase RTR2	
+Q12379	yeast	Q12379	SWM1	Q12379	0	29	Anaphase-promoting complex subunit SWM1	
+Q12380	yeast	Q12380	ATG5	Q12380	6	59	Autophagy protein 5	
+Q12381	schizosaccharomyces-pombe	Q12381	prp1	Q12381	10	64	Pre-mRNA-splicing factor prp1	
+Q12382	yeast	Q12382	DGK1	Q12382	0	11	CTP-dependent diacylglycerol kinase 1	
+Q12383	yeast	Q12383	TRM13	Q12383	0	2	tRNA:m(4)X modification enzyme TRM13	
+Q12385	yeast	Q12385	ICT1	Q12385	0	3	1-acylglycerol-3-phosphate O-acyltransferase ICT1	
+Q12386	yeast	Q12386	ARP8	Q12386	5	80	Actin-like protein ARP8	
+Q12387	yeast	Q12387	MDM20	Q12387	2	20	N-terminal acetyltransferase B complex subunit MDM20	
+Q12389	yeast	Q12389	DBP10	Q12389	6	131	ATP-dependent RNA helicase DBP10	
+Q12390	yeast	Q12390	GTT2	Q12390	0	21	Glutathione S-transferase 2	
+Q12393	yeast	Q12393	GEP5	Q12393	1	5	Genetic interactor of prohibitin 5, mitochondrial	
+Q12395	yeast	Q12395	DCN1	Q12395	3	12	Defective in cullin neddylation protein 1	
+Q12396	yeast	Q12396	EMP46	Q12396	2	10	Protein EMP46	
+Q12398	yeast	Q12398	HMS1	Q12398	1	21	Probable transcription factor HMS1	
+Q12400	yeast	Q12400	TRM10	Q12400	0	7	tRNA (guanine(9)-N1)-methyltransferase	
+Q12402	yeast	Q12402	YOP1	Q12402	0	44	Protein YOP1	
+Q12403	yeast	Q12403	ERP3	Q12403	10	110	Protein ERP3	
+Q12404	yeast	Q12404	MPD1	Q12404	1	44	Protein disulfide-isomerase MPD1	
+Q12405	yeast	Q12405	LPX1	Q12405	0	24	Peroxisomal membrane protein LPX1	
+Q12406	yeast	Q12406	ARP7	Q12406	5	131	Actin-related protein 7	
+Q12407	yeast	Q12407	YDL199C	Q12407	0	8	Putative metabolite transport protein YDL199C	
+Q12408	yeast	Q12408	NPC2	Q12408	1	24	Phosphatidylglycerol/phosphatidylinositol transfer protein	
+Q12411	yeast	Q12411	SPO21	Q12411	3	35	Sporulation-specific protein 21	
+Q12412	yeast	Q12412	PNS1	Q12412	0	3	Protein PNS1	
+Q12415	yeast	Q12415	TFC7	Q12415	2	29	Transcription factor tau 55 kDa subunit	
+Q12416	yeast	Q12416	WHI5	Q12416	4	29	G1-specific transcriptional repressor WHI5	
+Q12417	yeast	Q12417	PRP46	Q12417	5	95	Pre-mRNA-splicing factor PRP46	
+Q12418	yeast	Q12418	GIS3	Q12418	1	2	Protein GIS3	
+Q12420	yeast	Q12420	SNU66	Q12420	9	75	66 kDa U4/U6.U5 small nuclear ribonucleoprotein component	
+Q12421	yeast	Q12421	ATG31	Q12421	2	28	Autophagy-related protein 31	
+Q12424	yeast	Q12424	YDL206W	Q12424	0	7	Putative cation exchanger YDL206W	
+Q12425	yeast	Q12425	ISA2	Q12425	2	17	Iron-sulfur assembly protein 2	
+Q12426	yeast	Q12426	YDR010C	Q12426	0	3	Uncharacterized protein YDR010C	
+Q12427	yeast	Q12427	STB3	Q12427	0	13	Protein STB3	
+Q12428	yeast	Q12428	PDH1	Q12428	0	8	Probable 2-methylcitrate dehydratase	
+Q12429	yeast	Q12429	DPH6	Q12429	1	11	Diphthine--ammonia ligase	
+Q12431	yeast	Q12431	EMC6	Q12431	2	19	ER membrane protein complex subunit 6	
+Q12432	yeast	Q12432	EAF3	Q12432	9	113	Chromatin modification-related protein EAF3	
+Q12433	yeast	Q12433	AHC1	Q12433	6	47	Protein AHC1	
+Q12434	yeast	Q12434	RDI1	Q12434	4	31	Rho GDP-dissociation inhibitor	
+Q12436	yeast	Q12436	ZRT2	Q12436	1	13	Zinc-regulated transporter 2	
+Q12438	yeast	Q12438	GRX6	Q12438	3	13	Monothiol glutaredoxin-6	
+Q12440	yeast	Q12440	APC2	Q12440	4	45	Anaphase-promoting complex subunit 2	
+Q12442	yeast	Q12442	IZH2	Q12442	0	5	ADIPOR-like receptor IZH2	
+Q12443	yeast	Q12443	RTN2	Q12443	4	41	Reticulon-like protein 2	
+Q12445	yeast	Q12445	POM34	Q12445	4	40	Nucleoporin POM34	
+Q12446	yeast	Q12446	LAS17	Q12446	19	146	Proline-rich protein LAS17	
+Q12447	yeast	Q12447	PAA1	Q12447	4	32	Polyamine N-acetyltransferase 1	
+Q12449	yeast	Q12449	AHA1	Q12449	2	81	Hsp90 co-chaperone AHA1	
+Q12450	yeast	Q12450	ERP4	Q12450	8	42	Protein ERP4	
+Q12451	yeast	Q12451	OSH2	Q12451	3	22	Oxysterol-binding protein homolog 2	
+Q12452	yeast	Q12452	ERG27	Q12452	1	30	3-keto-steroid reductase ERG27	
+Q12453	yeast	Q12453	CEX1	Q12453	1	38	Cytoplasmic export protein 1	
+Q12454	yeast	Q12454	OCA6	Q12454	1	12	Putative tyrosine-protein phosphatase OCA6	
+Q12455	yeast	Q12455	SPE4	Q12455	1	4	Spermine synthase SPE4	
+Q12457	yeast	Q12457	NSI1	Q12457	0	17	RNA polymerase I termination factor	
+Q12458	yeast	Q12458	YPR1	Q12458	1	9	Aldehyde reductase YPR1	
+Q12459	yeast	Q12459	PRM7	Q12459	0	2	Pheromone-regulated protein PRM7	
+Q12460	yeast	Q12460	NOP56	Q12460	11	254	Nucleolar protein 56	
+Q12461	yeast	Q12461	RRD2	Q12461	4	19	Serine/threonine-protein phosphatase 2A activator 2	
+Q12462	yeast	Q12462	PEX11	Q12462	1	47	Peroxisomal membrane protein PMP27	
+Q12463	yeast	Q12463	TRM11	Q12463	1	9	tRNA (guanine(10)-N(2))-methyltransferase	
+Q12464	yeast	Q12464	RVB2	Q12464	3	459	RuvB-like protein 2	
+Q12465	yeast	Q12465	RAX2	Q12465	1	36	Bud site selection protein RAX2	
+Q12466	yeast	Q12466	TCB1	Q12466	1	29	Tricalbin-1	
+Q12467	yeast	Q12467	MRX4	Q12467	0	3	MIOREX complex component 4	
+Q12468	yeast	Q12468	RRI1	Q12468	3	64	COP9 signalosome complex subunit 5	
+Q12469	yeast	Q12469	SKM1	Q12469	5	50	Serine/threonine-protein kinase SKM1 (EC 2.7.11.1) (Protein 	
+Q12471	yeast	Q12471	PFK27	Q12471	2	15	6-phosphofructo-2-kinase 2	
+Q12473	yeast	Q12473	FRE6	Q12473	0	8	Ferric reductase transmembrane component 6	
+Q12476	yeast	Q12476	AIR2	Q12476	4	53	Protein AIR2	
+Q12477	yeast	Q12477	PCL9	Q12477	4	20	PHO85 cyclin-9	
+Q12479	yeast	Q12479	IRC11	Q12479	0	2	Putative increased recombination centers protein 11	
+Q12480	yeast	Q12480	AIM45	Q12480	2	45	Probable electron transfer flavoprotein subunit alpha, mitoc	
+Q12481	yeast	Q12481	RRP36	Q12481	8	98	rRNA biogenesis protein RRP36	
+Q12482	yeast	Q12482	AGC1	Q12482	0	8	Mitochondrial aspartate-glutamate transporter AGC1	
+Q12483	yeast	Q12483	SNF8	Q12483	4	21	Vacuolar-sorting protein SNF8	
+Q12486	yeast	Q12486	YOR131C	Q12486	1	4	Uncharacterized hydrolase YOR131C	
+Q12487	yeast	Q12487	MRPL23	Q12487	7	353	Large ribosomal subunit protein uL13m	
+Q12488	yeast	Q12488	PSF1	Q12488	5	49	DNA replication complex GINS protein PSF1	
+Q12489	yeast	Q12489	YDL012C	Q12489	0	43	Lipid-anchored protein YDL012C	
+Q12492	yeast	Q12492	YPR064W	Q12492	0	2	Uncharacterized protein YPR064W	
+Q12493	yeast	Q12493	NKP1	Q12493	4	30	Inner kinetochore subunit NKP1	
+Q12494	yeast	Q12494	KCS1	Q12494	1	15	Inositol hexakisphosphate kinase 1	
+Q12495	yeast	Q12495	RLF2	Q12495	14	170	Chromatin assembly factor 1 subunit A	
+Q12496	yeast	Q12496	YOL098C	Q12496	0	18	Uncharacterized protein YOL098C	
+Q12497	yeast	Q12497	FMP16	Q12497	0	8	Protein FMP16, mitochondrial	
+Q12498	yeast	Q12498	PRM4	Q12498	0	11	Pheromone-regulated membrane protein 4	
+Q12499	yeast	Q12499	NOP58	Q12499	8	290	Nucleolar protein 58	
+Q12500	yeast	Q12500	AVL9	Q12500	0	5	Late secretory pathway protein AVL9	
+Q12502	yeast	Q12502	LDB19	Q12502	1	16	Protein LDB19	
+Q12504	yeast	Q12504	RKM4	Q12504	0	6	Ribosomal lysine N-methyltransferase 4	
+Q12505	yeast	Q12505	SKS1	Q12505	12	58	Serine/threonine-protein kinase SKS1 (EC 2.7.11.1) (Suppress	
+Q12506	yeast	Q12506	YOR314W	Q12506	0	1	Uncharacterized protein YOR314W	
+Q12507	yeast	Q12507	SFG1	Q12507	1	12	Superficial pseudohyphal growth protein 1	
+Q12508	yeast	Q12508	RMD5	Q12508	3	17	E3 ubiquitin-protein ligase RMD5	
+Q12509	yeast	Q12509	ARP6	Q12509	6	42	Actin-like protein ARP6	
+Q12510	yeast	Q12510	CMR1	Q12510	13	400	DNA damage-binding protein CMR1	
+Q12511	yeast	Q12511	PTC5	Q12511	2	79	Phosphatase two C protein 5	
+Q12512	yeast	Q12512	ZPS1	Q12512	0	9	Protein ZPS1	
+Q12513	yeast	Q12513	TMA17	Q12513	1	12	Translation machinery-associated protein 17	
+Q12514	yeast	Q12514	NOT5	Q12514	18	135	General negative regulator of transcription subunit 5	
+Q12515	yeast	Q12515	PAR32	Q12515	0	13	Protein PAR32	
+Q12516	yeast	Q12516	SRF1	Q12516	0	10	Regulator of phospholipase D SRF1	
+Q12517	yeast	Q12517	DCP1	Q12517	12	85	mRNA-decapping enzyme subunit 1	
+Q12518	yeast	Q12518	ENT1	Q12518	2	37	Epsin-1	
+Q12519	schizosaccharomyces-pombe	Q12519	SPCC330.07c	Q12519	0	1	Uncharacterized MFS-type transporter C330.07c	
+Q12520	yeast	Q12520	HUT1	Q12520	0	9	UDP-galactose transporter homolog 1	
+Q12522	yeast	Q12522	TIF6	Q12522	7	245	Eukaryotic translation initiation factor 6	
+Q12523	yeast	Q12523	YPL247C	Q12523	2	10	WD repeat-containing protein YPL247C	
+Q12524	yeast	Q12524	PCD1	Q12524	0	17	Peroxisomal coenzyme A diphosphatase 1, peroxisomal	
+Q12525	yeast	Q12525	MHT1	Q12525	0	9	Homocysteine S-methyltransferase 1	
+Q12527	yeast	Q12527	ATG11	Q12527	4	81	Autophagy-related protein 11	
+Q12529	yeast	Q12529	SET6	Q12529	4	74	Potential protein lysine methyltransferase SET6	
+Q12530	yeast	Q12530	RMP1	Q12530	0	43	Ribonuclease MRP protein subunit RMP1	
+Q12531	yeast	Q12531	YPR015C	Q12531	0	6	Zinc finger protein YPR015C	
+Q12532	yeast	Q12532	RQC2	Q12532	5	135	Ribosome quality control complex subunit 2	
+Q12672	yeast	Q12672	RPL21B	Q12672	6	248	Large ribosomal subunit protein eL21B	
+Q12676	yeast	Q12676	FOL3	Q12676	0	6	Dihydrofolate synthetase	
+Q12690	yeast	Q12690	RPL13A	Q12690	25	334	Large ribosomal subunit protein eL13A	
+Q12691	yeast	Q12691	ENA5	Q12691	0	7	Sodium/potassium exporting P-type ATPase 5	
+Q12692	yeast	Q12692	HTZ1	Q12692	26	222	Histone H2A.Z	
+Q12697	yeast	Q12697	YPK9	Q12697	0	2	Vacuolar cation-transporting ATPase YPK9	
+Q12701	schizosaccharomyces-pombe	Q12701	ksg1	Q12701	1	7	Serine/threonine-protein kinase ksg1	
+Q12702	schizosaccharomyces-pombe	Q12702	pab1	Q12702	4	35	Protein phosphatase PP2A regulatory subunit B	
+Q12704	schizosaccharomyces-pombe	Q12704	mip1	Q12704	0	40	DNA polymerase gamma	
+Q12705	schizosaccharomyces-pombe	Q12705	ppb1	Q12705	8	32	Serine/threonine-protein phosphatase 2B catalytic subunit	
+Q12706	schizosaccharomyces-pombe	Q12706	psk1	Q12706	0	7	Serine/threonine-protein kinase psk1	
+Q12734	yeast	Q12734	CSR2	Q12734	1	12	Transcription factor CSR2	
+Q12743	yeast	Q12743	DFM1	Q12743	2	43	DER1-like family member protein 1	
+Q12744	yeast	Q12744	YML094C-A	Q12744	0	1	Putative uncharacterized protein YML094C-A	
+Q12745	yeast	Q12745	SEC39	Q12745	3	22	Protein transport protein SEC39	
+Q12746	yeast	Q12746	PGA3	Q12746	0	14	Plasma membrane-associated coenzyme Q6 reductase PGA3	
+Q12748	yeast	Q12748	CTF3	Q12748	5	37	Inner kinetochore subunit CTF3	
+Q12749	yeast	Q12749	SMC6	Q12749	16	220	Structural maintenance of chromosomes protein 6	
+Q12751	yeast	Q12751	RTP1	Q12751	0	9	RNA polymerase II assembly factor RTP1	
+Q12753	yeast	Q12753	HAA1	Q12753	0	23	Transcriptional activator HAA1	
+Q12754	yeast	Q12754	RRP12	Q12754	12	185	Ribosomal RNA-processing protein 12	
+Q12756	human	Q12756	KIF1A	Q12756	27	450	Kinesin-like protein KIF1A (EC 5.6.1.3) (Axonal transporter 	
+Q12765	human	Q12765	SCRN1	Q12765	9	110	Secernin-1	
+Q12766	human	Q12766	HMGXB3	Q12766	2	18	HMG domain-containing protein 3 (HMG box-containing protein 	
+Q12767	human	Q12767	TMEM94	Q12767	2	37	Transmembrane protein 94 (Endoplasmic reticulum magnesium AT	
+Q12768	human	Q12768	WASHC5	Q12768	11	103	WASH complex subunit 5 (Strumpellin) (WASH complex subunit s	
+Q12769	human	Q12769	NUP160	Q12769	29	335	Nuclear pore complex protein Nup160 (160 kDa nucleoporin) (N	
+Q12770	human	Q12770	SCAP	Q12770	25	176	Sterol regulatory element-binding protein cleavage-activatin	
+Q12772	human	Q12772	SREBF2	Q12772	55	363	Sterol regulatory element-binding protein 2 (SREBP-2) (Class	
+Q12774	human	Q12774	ARHGEF5	Q12774	26	94	Rho guanine nucleotide exchange factor 5 (Ephexin-3) (Guanin	
+Q12778	human	Q12778	FOXO1	Q12778	105	522	Forkhead box protein O1 (Forkhead box protein O1A) (Forkhead	
+Q12788	human	Q12788	TBL3	Q12788	81	523	Transducin beta-like protein 3 (WD repeat-containing protein	
+Q12789	human	Q12789	GTF3C1	Q12789	24	482	General transcription factor 3C polypeptide 1 (TF3C-alpha) (	
+Q12791	human	Q12791	KCNMA1	Q12791	21	226	Calcium-activated potassium channel subunit alpha-1 (BK chan	
+Q12792	human	Q12792	TWF1	Q12792	20	184	Twinfilin-1 (Protein A6) (Protein tyrosine kinase 9)	
+Q12794	human	Q12794	HYAL1	Q12794	6	103	Hyaluronidase-1 (Hyal-1) (EC 3.2.1.35) (Hyaluronoglucosamini	
+Q12796	human	Q12796	PNRC1	Q12796	14	51	Proline-rich nuclear receptor coactivator 1 (Proline-rich pr	
+Q12797	human	Q12797	ASPH	Q12797	42	341	Aspartyl/asparaginyl beta-hydroxylase (EC 1.14.11.16) (Aspar	
+Q12798	human	Q12798	CETN1	Q12798	45	200	Centrin-1 (Caltractin isoform 2)	
+Q12800	human	Q12800	TFCP2	Q12800	72	724	Alpha-globin transcription factor CP2 (SAA3 enhancer factor)	
+Q12802	human	Q12802	AKAP13	Q12802	28	79	A-kinase anchor protein 13 (AKAP-13) (AKAP-Lbc) (Breast canc	
+Q12805	human	Q12805	EFEMP1	Q12805	52	265	EGF-containing fibulin-like extracellular matrix protein 1 (	
+Q12809	human	Q12809	KCNH2	Q12809	55	270	Voltage-gated inwardly rectifying potassium channel KCNH2 (E	
+Q12815	human	Q12815	TROAP	Q12815	54	175	Tastin (Trophinin-assisting protein) (Trophinin-associated p	
+Q12816	human	Q12816	TRO	Q12816	6	120	Trophinin (MAGE-D3 antigen)	
+Q12824	human	Q12824	SMARCB1	Q12824	92	1049	SWI/SNF-related matrix-associated actin-dependent regulator 	
+Q12829	human	Q12829	RAB40B	Q12829	7	72	Ras-related protein Rab-40B (EC 3.6.5.2) (SOCS box-containin	
+Q12830	human	Q12830	BPTF	Q12830	25	254	Nucleosome-remodeling factor subunit BPTF (Bromodomain and P	
+Q12834	human	Q12834	CDC20	Q12834	111	513	Cell division cycle protein 20 homolog (p55CDC)	
+Q12836	human	Q12836	ZP4	Q12836	13	87	Zona pellucida sperm-binding protein 4 (Zona pellucida glyco	
+Q12837	human	Q12837	POU4F2	Q12837	103	433	POU domain, class 4, transcription factor 2 (Brain-specific 	
+Q12840	human	Q12840	KIF5A	Q12840	70	230	Kinesin heavy chain isoform 5A (EC 5.6.1.3) (Kinesin heavy c	
+Q12841	human	Q12841	FSTL1	Q12841	33	270	Follistatin-related protein 1 (Follistatin-like protein 1)	
+Q12846	human	Q12846	STX4	Q12846	43	446	Syntaxin-4 (Renal carcinoma antigen NY-REN-31)	
+Q12849	human	Q12849	GRSF1	Q12849	42	377	G-rich sequence factor 1 (GRSF-1)	
+Q12851	human	Q12851	MAP4K2	Q12851	35	243	Mitogen-activated protein kinase kinase kinase kinase 2 (EC 	
+Q12852	human	Q12852	MAP3K12	Q12852	28	112	Mitogen-activated protein kinase kinase kinase 12 (EC 2.7.11	
+Q12857	human	Q12857	NFIA	Q12857	111	545	Nuclear factor 1 A-type (NF1-A) (Nuclear factor 1/A) (CCAAT-	
+Q12860	human	Q12860	CNTN1	Q12860	22	165	Contactin-1 (Glycoprotein gp135) (Neural cell surface protei	
+Q12864	human	Q12864	CDH17	Q12864	19	237	Cadherin-17 (Intestinal peptide-associated transporter HPT-1	
+Q12866	human	Q12866	MERTK	Q12866	204	1418	Tyrosine-protein kinase Mer (EC 2.7.10.1) (Proto-oncogene c-	
+Q12870	human	Q12870	TCF15	Q12870	78	370	Transcription factor 15 (TCF-15) (Class A basic helix-loop-h	
+Q12872	human	Q12872	SFSWAP	Q12872	77	316	Splicing factor, suppressor of white-apricot homolog (Splici	
+Q12873	human	Q12873	CHD3	Q12873	65	744	ATP-dependent chromatin remodeler CHD3 (EC 3.6.4.-) (Chromo 	
+Q12874	human	Q12874	SF3A3	Q12874	43	444	Splicing factor 3A subunit 3 (SF3a60) (Spliceosome-associate	
+Q12879	human	Q12879	GRIN2A	Q12879	29	184	Glutamate receptor ionotropic, NMDA 2A (GluN2A) (Glutamate [	
+Q12882	human	Q12882	DPYD	Q12882	0	36	Dihydropyrimidine dehydrogenase [NADP(+)] (DHPDHase) (DPD) (	
+Q12884	human	Q12884	FAP	Q12884	26	166	Prolyl endopeptidase FAP (EC 3.4.21.26) (170 kDa melanoma me	
+Q12887	human	Q12887	COX10	Q12887	5	125	Protoheme IX farnesyltransferase, mitochondrial (EC 2.5.1.14	
+Q12888	human	Q12888	TP53BP1	Q12888	168	721	TP53-binding protein 1 (53BP1) (p53-binding protein 1) (p53B	
+Q12889	human	Q12889	OVGP1	Q12889	5	44	Oviduct-specific glycoprotein (Estrogen-dependent oviduct pr	
+Q12891	human	Q12891	HYAL2	Q12891	27	196	Hyaluronidase-2 (Hyal-2) (EC 3.2.1.35) (Hyaluronoglucosamini	
+Q12893	human	Q12893	TMEM115	Q12893	9	83	Transmembrane protein 115 (Placental protein 6) (Protein PL6	
+Q12894	human	Q12894	IFRD2	Q12894	11	232	Interferon-related developmental regulator 2 (Protein SKMC15	
+Q12899	human	Q12899	TRIM26	Q12899	49	277	Tripartite motif-containing protein 26 (EC 2.3.2.27) (Acid f	
+Q12901	human	Q12901	ZNF155	Q12901	1	74	Zinc finger protein 155	
+Q12904	human	Q12904	AIMP1	Q12904	26	255	Aminoacyl tRNA synthase complex-interacting multifunctional 	
+Q12905	human	Q12905	ILF2	Q12905	74	938	Interleukin enhancer-binding factor 2 (Nuclear factor of act	
+Q12906	human	Q12906	ILF3	Q12906	91	775	Interleukin enhancer-binding factor 3 (Double-stranded RNA-b	
+Q12907	human	Q12907	LMAN2	Q12907	32	189	Vesicular integral-membrane protein VIP36 (Glycoprotein GP36	
+Q12908	human	Q12908	SLC10A2	Q12908	4	58	Ileal sodium/bile acid cotransporter (Apical sodium-dependen	
+Q12912	human	Q12912	IRAG2	Q12912	9	29	Inositol 1,4,5-triphosphate receptor associated 2 (Lymphoid-	
+Q12913	human	Q12913	PTPRJ	Q12913	24	319	Receptor-type tyrosine-protein phosphatase eta (Protein-tyro	
+Q12918	human	Q12918	KLRB1	Q12918	147	471	Killer cell lectin-like receptor subfamily B member 1 (C-typ	
+Q12923	human	Q12923	PTPN13	Q12923	21	165	Tyrosine-protein phosphatase non-receptor type 13 (EC 3.1.3.	
+Q12926	human	Q12926	ELAVL2	Q12926	29	223	ELAV-like protein 2 (ELAV-like neuronal protein 1) (Hu-antig	
+Q12929	human	Q12929	EPS8	Q12929	59	247	Epidermal growth factor receptor kinase substrate 8	
+Q12931	human	Q12931	TRAP1	Q12931	36	567	Heat shock protein 75 kDa, mitochondrial (HSP 75) (Heat shoc	
+Q12933	human	Q12933	TRAF2	Q12933	155	722	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin	
+Q12934	human	Q12934	BFSP1	Q12934	32	60	Filensin (Beaded filament structural protein 1) (Lens fiber 	
+Q12946	human	Q12946	FOXF1	Q12946	94	455	Forkhead box protein F1 (Forkhead-related activator 1) (FREA	
+Q12947	human	Q12947	FOXF2	Q12947	116	489	Forkhead box protein F2 (Forkhead-related activator 2) (FREA	
+Q12948	human	Q12948	FOXC1	Q12948	124	626	Forkhead box protein C1 (Forkhead-related protein FKHL7) (Fo	
+Q12950	human	Q12950	FOXD4	Q12950	78	425	Forkhead box protein D4 (Forkhead-related protein FKHL9) (Fo	
+Q12951	human	Q12951	FOXI1	Q12951	72	431	Forkhead box protein I1 (Forkhead-related protein FKHL10) (F	
+Q12952	human	Q12952	FOXL1	Q12952	102	574	Forkhead box protein L1 (Forkhead-related protein FKHL11) (F	
+Q12959	human	Q12959	DLG1	Q12959	53	388	Disks large homolog 1 (Synapse-associated protein 97) (SAP-9	
+Q12962	human	Q12962	TAF10	Q12962	91	650	Transcription initiation factor TFIID subunit 10 (STAF28) (T	
+Q12965	human	Q12965	MYO1E	Q12965	41	347	Unconventional myosin-Ie (Myosin-Ic) (Unconventional myosin 	
+Q12967	human	Q12967	RALGDS	Q12967	24	78	Ral guanine nucleotide dissociation stimulator (RalGDS) (Ral	
+Q12968	human	Q12968	NFATC3	Q12968	33	217	Nuclear factor of activated T-cells, cytoplasmic 3 (NF-ATc3)	
+Q12972	human	Q12972	PPP1R8	Q12972	75	511	Nuclear inhibitor of protein phosphatase 1 (NIPP-1) (Protein	
+Q12974	human	Q12974	PTP4A2	Q12974	30	278	Protein tyrosine phosphatase type IVA 2 (EC 3.1.3.48) (HU-PP	
+Q12979	human	Q12979	ABR	Q12979	15	142	Active breakpoint cluster region-related protein	
+Q12980	human	Q12980	NPRL3	Q12980	24	132	GATOR1 complex protein NPRL3 (-14 gene protein) (Alpha-globi	
+Q12981	human	Q12981	BNIP1	Q12981	25	129	Vesicle transport protein SEC20 (BCL2/adenovirus E1B 19 kDa 	
+Q12982	human	Q12982	BNIP2	Q12982	16	131	BCL2/adenovirus E1B 19 kDa protein-interacting protein 2	
+Q12983	human	Q12983	BNIP3	Q12983	54	202	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3	
+Q12986	human	Q12986	NFX1	Q12986	74	523	Transcriptional repressor NF-X1 (EC 2.3.2.-) (Nuclear transc	
+Q12988	human	Q12988	HSPB3	Q12988	15	243	Heat shock protein beta-3 (HspB3) (Heat shock 17 kDa protein	
+Q12996	human	Q12996	CSTF3	Q12996	36	288	Cleavage stimulation factor subunit 3 (CF-1 77 kDa subunit) 	
+Q12999	human	Q12999	TSPAN31	Q12999	7	113	Tetraspanin-31 (Tspan-31) (Sarcoma-amplified sequence)	

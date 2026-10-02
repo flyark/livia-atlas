@@ -1,5 +1,355 @@
-MRN1	arabidopsis-thaliana	Q9FJV8	MRN1	Q9FJV8	0	4	Marneral synthase
-MRN17.16	arabidopsis-thaliana	F4KBD8	MRN17.16	F4KBD8	0	4	Enabled-like protein (DUF1635)
-MRNC	staphylococcus-aureus-93061	Q2G2M4	mrnC	Q2G2M4	0	27	Mini-ribonuclease 3
-MRNC	streptococcus-pneumoniae	Q8DQS7	mrnC	Q8DQS7	1	29	Mini-ribonuclease 3
-MRNIP	mus-musculus	Q9D1F5	Mrnip	Q9D1F5	14	463	MRN complex-interacting protein
+MRN	fly	FBgn0261109	mrn	Q9VUR1	12	135	General transcription factor IIH subunit 4	
+MRN-INTERACTING	human	Q6NTE8	MRNIP	Q6NTE8	35	535	MRN complex-interacting protein (MRN-interacting protein)	w
+MRN1	arabidopsis-thaliana	Q9FJV8	MRN1	Q9FJV8	0	4	Marneral synthase	
+MRN1	yeast	Q08925	MRN1	Q08925	0	14	RNA-binding protein MRN1	
+MRN17.16	arabidopsis-thaliana	F4KBD8	MRN17.16	F4KBD8	0	4	Enabled-like protein (DUF1635)	
+MRNA	fly	FBgn0015218	eIF4E1	P48598	38	257	Eukaryotic translation initiation factor 4E1 (eIF-4F 25 kDa 	w
+MRNA	fly	FBgn0019890	Smg5	Q9V414	3	23	LD36341p (SMG5 protein) (Smg5 nonsense mediated mRNA decay f	w
+MRNA	fly	FBgn0026309	aft	Q9UAS6	0	2	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 2 (EC	w
+MRNA	fly	FBgn0029693	Cmtr1	Q9W4N2	0	8	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1 (EC	w
+MRNA	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	w
+MRNA	fly	FBgn0032296	CG6729	Q9VKQ6	5	107	Nonsense-mediated mRNA decay factor SMG8 (Protein smg-8 homo	w
+MRNA	fly	FBgn0033316	Gle1	Q9V4W1	5	37	mRNA export factor Gle1 (Gle1 RNA export mediator) (Nucleopo	w
+MRNA	fly	FBgn0039972	Marf1	Q7KWG9	2	46	Meiosis regulator and mRNA stability factor 1, isoform D (Me	w
+MRNA	fly	FBgn0052695	CG32695	Q9W312	35	243	Drosophila melanogaster dromepin-6 mRNA (RH68724p)	w
+MRNA	fly	FBgn0286027	Rnmt	Q9VJQ4	3	46	mRNA cap guanine-N7 methyltransferase (EC 2.1.1.56) (mRNA (g	w
+MRNA	human	J3QRE1	?	J3QRE1	1	5	Nonsense-mediated mRNA decay factor SMG8	w
+MRNA	human	O43148	RNMT	O43148	43	159	mRNA cap guanine-N(7) methyltransferase (EC 2.1.1.56) (RG7MT	w
+MRNA	human	O60942	RNGTT	O60942	29	340	mRNA-capping enzyme (HCAP1) (HCE) [Includes: mRNA 5'-triphos	w
+MRNA	human	P06730	EIF4E	P06730	26	353	Eukaryotic translation initiation factor 4E (eIF-4E) (eIF4E)	w
+MRNA	human	P26651	ZFP36	P26651	28	241	mRNA decay activator protein ZFP36 (G0/G1 switch regulatory 	w
+MRNA	human	P47974	ZFP36L2	P47974	29	224	mRNA decay activator protein ZFP36L2 (Butyrate response fact	w
+MRNA	human	P62701	RPS4X	P62701	34	814	Small ribosomal subunit protein eS4, X isoform (40S ribosoma	w
+MRNA	human	P78406	RAE1	P78406	40	304	mRNA export factor RAE1 (Rae1 protein homolog) (mRNA-associa	w
+MRNA	human	Q07352	ZFP36L1	Q07352	16	73	mRNA decay activator protein ZFP36L1 (Butyrate response fact	w
+MRNA	human	Q107X0	KLKP1	Q107X0	0	3	Putative protein KRIP1 (Kallikrein-related in prostate prote	w
+MRNA	human	Q53GS7	GLE1	Q53GS7	31	337	mRNA export factor GLE1 (hGLE1) (GLE1 RNA export mediator) (	w
+MRNA	human	Q5RKV6	EXOSC6	Q5RKV6	20	231	Exosome complex component MTR3 (Exosome component 6) (mRNA t	w
+MRNA	human	Q6P087	RPUSD3	Q6P087	20	245	Mitochondrial mRNA pseudouridine synthase RPUSD3 (EC 5.4.99.	w
+MRNA	human	Q6ZRY4	RBPMS2	Q6ZRY4	11	104	RNA-binding protein with multiple splicing 2 (RNA binding pr	w
+MRNA	human	Q86US8	SMG6	Q86US8	42	303	Telomerase-binding protein EST1A (EC 3.1.-.-) (Ever shorter 	w
+MRNA	human	Q8IV48	ERI1	Q8IV48	9	121	3'-5' exoribonuclease 1 (EC 3.1.13.1) (3'-5' exonuclease ERI	w
+MRNA	human	Q8IYT2	CMTR2	Q8IYT2	6	65	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 2 (EC	w
+MRNA	human	Q8IZ69	TRMT2A	Q8IZ69	13	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	w
+MRNA	human	Q8N1G2	CMTR1	Q8N1G2	19	296	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1 (EC	w
+MRNA	human	Q8ND04	SMG8	Q8ND04	17	151	Nonsense-mediated mRNA decay factor SMG8 (Amplified in breas	w
+MRNA	human	Q92540	SMG7	Q92540	79	396	Nonsense-mediated mRNA decay factor SMG7 (SMG-7 homolog) (hS	w
+MRNA	human	Q92900	UPF1	Q92900	38	740	Regulator of nonsense transcripts 1 (EC 5.6.2.3) (EC 5.6.2.5	w
+MRNA	human	Q96CB9	NSUN4	Q96CB9	25	210	5-cytosine rRNA methyltransferase NSUN4 (EC 2.1.1.-) (5-cyto	w
+MRNA	human	Q96FX7	TRMT61A	Q96FX7	17	125	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
+MRNA	human	Q9BTL3	RAMAC	Q9BTL3	3	138	RNA guanine-N7 methyltransferase activating subunit (Protein	w
+MRNA	human	Q9BVS5	TRMT61B	Q9BVS5	29	304	tRNA (adenine(58)-N(1))-methyltransferase, mitochondrial (EC	w
+MRNA	human	Q9BZI7	UPF3B	Q9BZI7	35	169	Regulator of nonsense transcripts 3B (Nonsense mRNA reducing	w
+MRNA	human	Q9H0W8	SMG9	Q9H0W8	8	99	Nonsense-mediated mRNA decay factor SMG9	w
+MRNA	human	Q9H1J1	UPF3A	Q9H1J1	15	90	Regulator of nonsense transcripts 3A (Nonsense mRNA reducing	w
+MRNA	human	Q9H4Z3	PCIF1	Q9H4Z3	9	69	mRNA (2'-O-methyladenosine-N(6)-)-methyltransferase (EC 2.1.	w
+MRNA	human	Q9H825	METTL8	Q9H825	0	32	tRNA N(3)-cytidine methyltransferase METTL8, mitochondrial (	w
+MRNA	human	Q9NPA8	ENY2	Q9NPA8	31	621	Transcription and mRNA export factor ENY2 (Enhancer of yello	w
+MRNA	human	Q9UBP6	METTL1	Q9UBP6	9	108	tRNA (guanine-N(7)-)-methyltransferase (EC 2.1.1.33) (Methyl	w
+MRNA	human	Q9UBU9	NXF1	Q9UBU9	103	1106	Nuclear RNA export factor 1 (Tip-associated protein) (Tip-as	w
+MRNA	human	Q9UJA5	TRMT6	Q9UJA5	16	131	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
+MRNA	human	Q9UKD2	MRTO4	Q9UKD2	40	561	mRNA turnover protein 4 homolog (Ribosome assembly factor MR	w
+MRNA	human	Q9UPR3	SMG5	Q9UPR3	51	398	Nonsense-mediated mRNA decay factor SMG5 (EST1-like protein 	w
+MRNA	human	Q9Y235	APOBEC2	Q9Y235	5	69	C->U-editing enzyme APOBEC-2 (EC 3.5.4.36) (mRNA(cytosine(66	w
+MRNA	human	Q9Y4F3	MARF1	Q9Y4F3	10	148	Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (	w
+MRNA	virus	A0A068EEM6	fep_135	A0A068EEM6	14	221	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A068EH19	pepv_142	A0A068EH19	12	240	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A075CYF6	U42	A0A075CYF6	2	113	mRNA export factor ICP27 homolog	w
+MRNA	virus	A0A088FP04_p4f200cad5e		A0A088FP04	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	A0A0A7M9Y5		A0A0A7M9Y5	11	130	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A0G2UPE6	UL69	A0A0G2UPE6	2	81	mRNA export factor ICP27 homolog	w
+MRNA	virus	A0A0G3G027	RCNV-Herman-091	A0A0G3G027	10	195	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A0H4XWJ6	SGPV062	A0A0H4XWJ6	3	200	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A0M5HVG2		A0A0M5HVG2	6	170	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A0S1TPQ1	U42	A0A0S1TPQ1	1	108	mRNA export factor ICP27 homolog	w
+MRNA	virus	A0A191S3T4	U42	A0A191S3T4	2	82	mRNA export factor ICP27 homolog	w
+MRNA	virus	A0A1B1MRK3	PTPV-Aus-071	A0A1B1MRK3	6	143	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A1C9KBP3	SKPV-WA-094	A0A1C9KBP3	11	208	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A1C9KCA4	VPXV-CA-094	A0A1C9KCA4	9	204	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A1P8VIU9	ORF56	A0A1P8VIU9	2	128	mRNA export factor ICP27 homolog	w
+MRNA	virus	A0A1Z3GCV3	SePPVgORF043	A0A1Z3GCV3	12	119	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A220T6E0	EPTV-WA-072	A0A220T6E0	12	179	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A223FMR5	Murmansk-091	A0A223FMR5	12	202	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A2C9DSM8		A0A2C9DSM8	6	161	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A2C9DT42		A0A2C9DT42	8	160	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A2H4X2E4	fgpv_140	A0A2H4X2E4	11	256	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A2U9QHM7	SOPV-ELK-066	A0A2U9QHM7	8	130	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A346FS65	AKMV-88-103	A0A346FS65	11	213	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A3G2KXW0	OPVA095	A0A3G2KXW0	9	208	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A5B7LUG1_p73dcc4a50a		A0A5B7LUG1	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	A0A866VSN6	U42	A0A866VSN6	0	108	mRNA export factor ICP27 homolog	w
+MRNA	virus	A0A916KPK0	CHBEV_105	A0A916KPK0	5	311	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A916KQ32	MYSEV_083	A0A916KQ32	3	301	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0A916NWQ0	AHEV_057	A0A916NWQ0	1	243	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0ABM9QKB6	CHREV_082	A0ABM9QKB6	6	286	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A0MNM1_p28fc269671	nsP1234	A0MNM1	1	9	mRNA capping enzyme nsP1	w
+MRNA	virus	A1YZ45_pb2121820f2		A1YZ45	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	A7XCJ2	68R	A7XCJ2	7	154	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	A8RNT3_p5f7c9c19fa		A8RNT3	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	B7TPX6	GP69	B7TPX6	2	109	mRNA export factor ICP27 homolog	w
+MRNA	virus	C1KGU9_p531e71388f		C1KGU9	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	C9DZL0_p265bf5b02b		C9DZL0	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	D1KRD7_p28d671dc6f		D1KRD7	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	D3IZK0		D3IZK0	10	125	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	D3XDP6	M69	D3XDP6	5	158	mRNA export factor ICP27 homolog	w
+MRNA	virus	G3EIF3	YKV075	G3EIF3	6	184	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	G8H1A0	cyUL69	G8H1A0	4	273	mRNA export factor ICP27 homolog	w
+MRNA	virus	G8XSX3	UL69	G8XSX3	4	140	mRNA export factor ICP27 homolog	w
+MRNA	virus	G8XTD0	UL69	G8XTD0	4	176	mRNA export factor ICP27 homolog	w
+MRNA	virus	G8XUD4	UL69	G8XUD4	5	146	mRNA export factor ICP27 homolog	w
+MRNA	virus	H6STZ2_p89549b0efd		H6STZ2	1	7	mRNA capping enzyme nsP1	w
+MRNA	virus	H6STZ4_pf3bdf909d0		H6STZ4	1	7	mRNA capping enzyme nsP1	w
+MRNA	virus	H6STZ6_p30a15e9ac0		H6STZ6	0	7	mRNA capping enzyme nsP1	w
+MRNA	virus	H6SU00_p84b337606d		H6SU00	1	7	mRNA capping enzyme nsP1	w
+MRNA	virus	H6SU02_pd30b099126		H6SU02	0	7	mRNA capping enzyme nsP1	w
+MRNA	virus	H6SU08_p225a7f703f		H6SU08	1	7	mRNA capping enzyme nsP1	w
+MRNA	virus	H6TA58	COTV084	H6TA58	5	170	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	I3VQ60		I3VQ60	4	188	mRNA export factor ICP27 homolog	w
+MRNA	virus	J9U6E6_p5e1db775c1		J9U6E6	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	K7XWB7	E69	K7XWB7	6	137	mRNA export factor ICP27 homolog	w
+MRNA	virus	M4JU03	U42	M4JU03	1	110	mRNA export factor ICP27 homolog	w
+MRNA	virus	O56283	U42	O56283	1	83	mRNA export factor ICP27 homolog	w
+MRNA	virus	O90368_p91f76518ef		O90368	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	O90370_p46d8a2a86e		O90370	1	9	mRNA capping enzyme nsP1	w
+MRNA	virus	P03317_p0f68266a16		P03317	1	9	mRNA capping enzyme nsP1	w
+MRNA	virus	P07617	OPG102	P07617	5	218	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	P08411_pe534ab567e		P08411	2	9	mRNA capping enzyme nsP1	w
+MRNA	virus	P09269	ORF4	P09269	2	68	mRNA export factor ICP27 homolog	w
+MRNA	virus	P13199	EJRF1	P13199	1	74	mRNA export factor ICP27 homolog	w
+MRNA	virus	P13886_pb4c5f66956		P13886	1	9	mRNA capping enzyme nsP1	w
+MRNA	virus	P13896_pf7169de3ba		P13896	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	P15916	OPG102	P15916	10	250	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	P27282_p3210c6a406		P27282	0	9	mRNA capping enzyme nsP1	w
+MRNA	virus	P27283_pa786c7fe6a		P27283	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	P28939	5	P28939	4	74	mRNA export factor ICP27 homolog	w
+MRNA	virus	P33052	OPG102	P33052	5	199	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	P36327_p6a7f7fd000		P36327	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	P36328_p208d2c6f93		P36328	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	P52354	U42	P52354	2	98	mRNA export factor ICP27 homolog	w
+MRNA	virus	P52539	KA3L	P52539	2	95	mRNA export factor ICP27 homolog	w
+MRNA	virus	P68544	OPG102	P68544	7	157	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	P87515_pe555ac4f40		P87515	0	7	mRNA capping enzyme nsP1	w
+MRNA	virus	Q04360	BMLF1	Q04360	6	91	mRNA export factor ICP27 homolog	w
+MRNA	virus	Q070F5	CRV096	Q070F5	8	172	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q08FS5	DpV83gp077	Q08FS5	6	165	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q0NPB3	TATV_DAH68_098	Q0NPB3	8	219	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q306W8_p9a02cee61d		Q306W8	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q5GF32	PAPS	Q5GF32	8	187	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q5Y389_p26ee5aad37		Q5Y389	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q66580_p128b367244		Q66580	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q6SW73	UL69	Q6SW73	2	167	mRNA export factor ICP27 homolog	w
+MRNA	virus	Q6TUU7		Q6TUU7	5	140	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q6TVD5		Q6TVD5	6	130	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q6TVR7		Q6TVR7	13	129	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q6UDM4	UL54	Q6UDM4	2	69	mRNA export factor	w
+MRNA	virus	Q6VZG8	CNPV179	Q6VZG8	17	322	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q77MR3	MDV068	Q77MR3	4	87	mRNA export factor ICP27 homolog	w
+MRNA	virus	Q7TFN7		Q7TFN7	3	222	mRNA export factor ICP27 homolog	w
+MRNA	virus	Q86924_p5e6a3af8c1		Q86924	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q88978_p3c0d64c1ee		Q88978	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q8JLD6	EVM079	Q8JLD6	9	170	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q8JUX6_p8b753708de		Q8JUX6	1	10	mRNA capping enzyme nsP1	w
+MRNA	virus	Q8QL53_p4a1bdb0c49		Q8QL53	0	9	mRNA capping enzyme nsP1	w
+MRNA	virus	Q8QMW9	CPXV106 CDS	Q8QMW9	9	225	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q8QS30	UL69	Q8QS30	2	168	mRNA export factor ICP27 homolog	w
+MRNA	virus	Q8QTI7_pfa04477116		Q8QTI7	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q8QZ73_p59ad71bb6e		Q8QZ73	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q8V2S9		Q8V2S9	5	208	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q8V3N0	SPV065	Q8V3N0	4	146	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q8V4Z5	L3R	Q8V4Z5	6	187	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q91MU2	LSDV068	Q91MU2	7	152	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q91TM8		Q91TM8	1	155	mRNA export factor ICP27 homolog	w
+MRNA	virus	Q98244	MC076R	Q98244	7	161	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q9DHP5	68R	Q9DHP5	7	150	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q9DWD5	R69	Q9DWD5	3	164	mRNA export factor ICP27 homolog	w
+MRNA	virus	Q9EMT4	AMV115	Q9EMT4	1	278	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q9EMY9	AMV060	Q9EMY9	3	278	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q9JGL0_p22fc5da876		Q9JGL0	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9Q906	s065R	Q9Q906	8	153	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	Q9WJC6_p9a53e75b7b		Q9WJC6	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9WJC8_p7cfa91751a		Q9WJC8	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9WJC9_p56b0445b02		Q9WJC9	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9WJD0_p55a32f2d0e		Q9WJD0	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9WJD1_p1d6ad75f3f		Q9WJD1	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9WJD2_p1859b21fd5		Q9WJD2	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9WJD3_pdd51310db8		Q9WJD3	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9WJD4_p0f8994ab32		Q9WJD4	0	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9YJX8_p83869089ef		Q9YJX8	1	8	mRNA capping enzyme nsP1	w
+MRNA	virus	Q9YW51	MSV041	Q9YW51	5	261	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	U3GPK5	U42	U3GPK5	1	79	mRNA export factor ICP27 homolog	w
+MRNA	virus	U3UBC9	J3R	U3UBC9	8	140	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase	w
+MRNA	virus	W8REW3_p65af478782	NSP	W8REW3	0	8	mRNA capping enzyme nsP1	w
+MRNA	worm	G5ECF1	smg-5	G5ECF1	2	15	Nonsense-mediated mRNA decay protein	w
+MRNA	worm	O45146	era-1	O45146	0	2	Embryonic mRna (mRNA) Anterior	w
+MRNA	worm	O62301	smg-8	O62301	3	29	Nonsense-mediated mRNA decay factor SMG8	w
+MRNA	worm	Q22056	CELE_T01C3.2	Q22056	2	14	Transcription and mRNA export factor ENY2	w
+MRNA	worm	Q23223	mtr-4	Q23223	10	119	mRNA transport homolog 4	w
+MRNA	worm	Q93454	rae-1	Q93454	6	82	mRNA export factor rae-1	w
+MRNA	worm	Q9NAA5	cmtr-1	Q9NAA5	1	3	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1	w
+MRNA	worm	Q9XU56	ensa-1	Q9XU56	2	9	mRNA stability protein	w
+MRNA	worm	Q9XVS1	tag-72	Q9XVS1	4	35	mRNA cap guanine-N(7) methyltransferase	w
+MRNA	worm	Q9XWJ1	smg-9	Q9XWJ1	2	36	Nonsense-mediated mRNA decay factor SMG9	w
+MRNA	yeast	P03873	BI2	P03873	5	53	Cytochrome b mRNA maturase bI2	w
+MRNA	yeast	P25298	RNA14	P25298	8	54	mRNA 3'-end-processing protein RNA14	w
+MRNA	yeast	P25299	RNA15	P25299	3	60	mRNA 3'-end-processing protein RNA15	w
+MRNA	yeast	P25555	GBP2	P25555	1	113	Serine/arginine (SR)-type shuttling mRNA binding protein GBP	w
+MRNA	yeast	P32783	ABD1	P32783	2	40	mRNA cap guanine-N(7) methyltransferase	w
+MRNA	yeast	P34232	MTR2	P34232	3	34	mRNA transport regulator MTR2	w
+MRNA	yeast	P38798	NMD2	P38798	3	46	Nonsense-mediated mRNA decay protein 2	w
+MRNA	yeast	P38922	HRB1	P38922	3	88	Serine/arginine (SR)-type shuttling mRNA binding protein HRB	w
+MRNA	yeast	P39073	SSN3	P39073	2	80	Meiotic mRNA stability protein kinase SSN3 (EC 2.7.11.22) (E	w
+MRNA	yeast	P40066	GLE2	P40066	6	55	mRNA export factor GLE2	w
+MRNA	yeast	P46674	SAC3	P46674	9	85	Nuclear mRNA export protein SAC3	w
+MRNA	yeast	P46970	NMD5	P46970	0	56	Nonsense-mediated mRNA decay protein 5	w
+MRNA	yeast	P47976	CTH1	P47976	1	27	mRNA decay factor CTH1	w
+MRNA	yeast	P47977	TIS11	P47977	2	29	mRNA decay factor CTH2	w
+MRNA	yeast	P48412	UPF3	P48412	4	43	Nonsense-mediated mRNA decay protein 3	w
+MRNA	yeast	P53897	IGO1	P53897	2	38	mRNA stability protein IGO1	w
+MRNA	yeast	Q01560	NPL3	Q01560	19	158	Serine/arginine (SR)-type shuttling mRNA binding protein NPL	w
+MRNA	yeast	Q03466	EBS1	Q03466	4	65	Nonsense-mediated mRNA decay factor EBS1	w
+MRNA	yeast	Q04839	GFD1	Q04839	3	15	mRNA transport factor GFD1	w
+MRNA	yeast	Q06102	YTH1	Q06102	3	42	mRNA 3'-end-processing protein YTH1	w
+MRNA	yeast	Q08231	THP1	Q08231	5	27	Nuclear mRNA export protein THP1	w
+MRNA	yeast	Q08685	CLP1	Q08685	2	34	mRNA cleavage and polyadenylation factor CLP1	w
+MRNA	yeast	Q12315	GLE1	Q12315	9	60	mRNA export factor GLE1	w
+MRNA	yeast	Q99189	MTR10	Q99189	5	33	mRNA transport regulator MTR10	w
+MRNA	yeast	Q99257	MEX67	Q99257	11	107	mRNA export factor MEX67	w
+MRNA	yeast	Q9P305	IGO2	Q9P305	1	6	mRNA stability protein IGO2	w
+MRNA	yeast	Q9ZZW7	BI3	Q9ZZW7	7	52	Cytochrome b mRNA maturase bI3	w
+MRNA	zebrafish	A0A8M1N020	trub2	A0A8M1N020	0	43	Mitochondrial mRNA pseudouridine synthase TRUB2	w
+MRNA	zebrafish	A0A8M9QAJ1	marf1	A0A8M9QAJ1	1	35	Meiosis regulator and mRNA stability factor 1	w
+MRNA	zebrafish	E7F3S4	cb81	E7F3S4	3	24	mRNA decay activator protein ZFP36	w
+MRNA	zebrafish	E7F7F6	smg9	E7F7F6	2	11	Nonsense-mediated mRNA decay factor SMG9	w
+MRNA	zebrafish	E7FBA3	smg8	E7FBA3	2	12	Nonsense-mediated mRNA decay factor SMG8	w
+MRNA	zebrafish	F1QH59	fb92b09	F1QH59	0	20	mRNA decay activator protein ZFP36	w
+MRNA	zebrafish	F1QU82	zfp36l2	F1QU82	2	16	mRNA decay activator protein ZFP36	w
+MRNA	zebrafish	F1R7R1	smg5	F1R7R1	3	23	Nonsense-mediated mRNA decay factor SMG5	w
+MRNA	zebrafish	F1RCP3	zfp36l1a	F1RCP3	3	25	mRNA decay activator protein ZFP36	w
+MRNA	zebrafish	Q1LVF3	smg7	Q1LVF3	3	19	Nonsense-mediated mRNA decay factor SMG7	w
+MRNA	zebrafish	Q1MTD3	rnmt	Q1MTD3	6	31	mRNA cap guanine-N(7) methyltransferase	w
+MRNA	zebrafish	Q6DH42	eny2	Q6DH42	7	187	Transcription and mRNA export factor ENY2	w
+MRNA	zebrafish	Q6DRB1	gle1	Q6DRB1	4	51	mRNA export factor GLE1	w
+MRNA	zebrafish	Q6P3H0	zfp36l1b	Q6P3H0	2	24	mRNA decay activator protein ZFP36	w
+MRNA	zebrafish	Q7ZVS8	cmtr2	Q7ZVS8	0	4	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 2	w
+MRNA	zebrafish	Q7ZWF0	rae1	Q7ZWF0	6	52	mRNA export factor	w
+MRNA	zebrafish	Q803R5	cmtr1	Q803R5	1	6	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1	w
+MRNA	zebrafish	Q9PU62	cth1	Q9PU62	0	11	mRNA decay activator protein ZFP36	w
+MRNA-ASSOCIATED	human	P78406	RAE1	P78406	40	304	mRNA export factor RAE1 (Rae1 protein homolog) (mRNA-associa	w
+MRNA-BINDING	fly	FBgn0285926	Imp	M9NF14	4	139	IGF-II mRNA-binding protein, isoform L (IGF-II mRNA-binding 	w
+MRNA-BINDING	human	O00425	IGF2BP3	O00425	29	509	Insulin-like growth factor 2 mRNA-binding protein 3 (IGF2 mR	w
+MRNA-BINDING	human	Q8NC51	SERBP1	Q8NC51	68	777	SERPINE1 mRNA-binding protein 1 (PAI1 RNA-binding protein 1)	w
+MRNA-BINDING	human	Q9NZI8	IGF2BP1	Q9NZI8	25	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	w
+MRNA-BINDING	human	Q9Y6M1	IGF2BP2	Q9Y6M1	30	370	Insulin-like growth factor 2 mRNA-binding protein 2 (IGF2 mR	w
+MRNA-BINDING	worm	H2KYR1	vig-1	H2KYR1	6	158	Hyaluronan/mRNA-binding protein domain-containing protein	w
+MRNA-BINDING	worm	Q09312	fbf-2	Q09312	5	20	Fem-3 mRNA-binding factor 2	w
+MRNA-BINDING	worm	Q9N5M6	fbf-1	Q9N5M6	2	14	Fem-3 mRNA-binding factor 1	w
+MRNA-BINDING	yeast	Q07807	PUF3	Q07807	69	1793	mRNA-binding protein PUF3	w
+MRNA-BINDING	yeast	Q12221	PUF2	Q12221	34	1128	mRNA-binding protein PUF2	w
+MRNA-BINDING	zebrafish	A0A0B4J1B0	igf2bp2a	A0A0B4J1B0	0	12	Insulin-like growth factor 2 mRNA-binding protein 2a	w
+MRNA-BINDING	zebrafish	A0A0R4IVY2	igf2bp2b	A0A0R4IVY2	0	11	Insulin-like growth factor 2 mRNA-binding protein 2b	w
+MRNA-BINDING	zebrafish	E7EYQ0	serbp1b	E7EYQ0	8	179	SERPINE1 mRNA-binding protein 1 isoform X1	w
+MRNA-BINDING	zebrafish	F1Q5Q3	serbp1a	F1Q5Q3	9	182	SERPINE1 mRNA-binding protein 1 isoform X1	w
+MRNA-BINDING	zebrafish	Q08CK7	igf2bp1	Q08CK7	0	16	Insulin-like growth factor 2 mRNA-binding protein 1	w
+MRNA-BINDING	zebrafish	Q9PW80	igf2bp3	Q9PW80	0	12	Insulin-like growth factor 2 mRNA-binding protein 3	w
+MRNA-CAP	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	
+MRNA-CAPPING	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	w
+MRNA-CAPPING	human	O60942	RNGTT	O60942	29	340	mRNA-capping enzyme (HCAP1) (HCE) [Includes: mRNA 5'-triphos	w
+MRNA-CAPPING	virus	A0A068EH17	fep_147	A0A068EH17	5	218	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A068ELN3	pepv_154	A0A068ELN3	4	237	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A0A7M9R9		A0A0A7M9R9	4	130	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A0H4Y1K2	SGPV173	A0A0H4Y1K2	2	199	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A0M3ZRQ5		A0A0M3ZRQ5	4	170	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A1B1MRC8	PTPV-Aus-082	A0A1B1MRC8	4	143	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A1Z3GCT8	SePPVgORF055	A0A1Z3GCT8	4	119	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A223FMV0	Murmansk-102	A0A223FMV0	5	202	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A2C9DSP1		A0A2C9DSP1	3	160	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A2C9DT55		A0A2C9DT55	2	160	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A2H4X2F0	fgpv_152	A0A2H4X2F0	6	253	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A2U9QHS7	SOPV-ELK-077	A0A2U9QHS7	4	130	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A346FS77	AKMV-88-115	A0A346FS77	5	213	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A3G2KXX8	OPVA106	A0A3G2KXX8	5	208	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A7R5WNY2	DLEV_145	A0A7R5WNY2	17	187	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A916KP56	AHEV_190	A0A916KP56	10	243	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A916KQK7	MYSEV_178	A0A916KQK7	4	301	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0A916P1C7	CHBEV_186	A0A916P1C7	8	311	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A0ABM9QKJ3	CHREV_154	A0ABM9QKJ3	6	286	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	A7XCK5	79R	A7XCK5	6	153	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	D3IZL1		D3IZL1	5	125	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	D5FLD9	VPXV-CA-105	D5FLD9	5	204	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	D5FLE8	RCNV-Herman-102	D5FLE8	8	194	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	D5FLF7	SKPV-WA-105	D5FLF7	8	208	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	G3EIG4	YKV086	G3EIG4	5	183	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	H6TA69	COTV095	H6TA69	3	169	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	O72908	FPV051	O72908	5	250	mRNA-capping enzyme small subunit	w
+MRNA-CAPPING	virus	P04298	OPG113	P04298	6	218	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	P04318	OPG124	P04318	7	218	mRNA-capping enzyme regulatory subunit OPG124	w
+MRNA-CAPPING	virus	P0DSQ5	OPG124	P0DSQ5	5	199	mRNA-capping enzyme regulatory subunit OPG124	w
+MRNA-CAPPING	virus	P0DSX5	D1R	P0DSX5	4	198	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	P25950	D3R	P25950	6	153	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q070E2	CRV109	Q070E2	3	169	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q08FR4	DpV83gp088	Q08FR4	4	165	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q0NPA3	TATV_DAH68_108	Q0NPA3	4	220	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q1WNZ7		Q1WNZ7	1	12	Putative mRNA-capping enzyme P5	w
+MRNA-CAPPING	virus	Q6TUT6		Q6TUT6	5	139	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q6TVC4		Q6TVC4	2	130	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q6TVQ6		Q6TVQ6	4	129	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q6VZF5	CNPV192	Q6VZF5	8	320	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q85437		Q85437	1	12	Putative mRNA-capping enzyme P5	w
+MRNA-CAPPING	virus	Q8JLC5	EVM090	Q8JLC5	3	169	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q8QMV9	CPXV118	Q8QMV9	5	224	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q8V2R8	CMLV104	Q8V2R8	3	207	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q8V3L9	SPV076	Q8V3L9	3	145	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q8V4Y7	E1R	Q8V4Y7	4	186	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q91MT3	LSDV079	Q91MT3	8	152	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q98257	MC090R	Q98257	6	161	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q9DHN4	79R	Q9DHN4	6	150	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q9EMR4	AMV135	Q9EMR4	5	278	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q9J584	FPV146	Q9J584	5	244	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q9Q8M4	m076R	Q9Q8M4	6	156	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	Q9QB92	89L	Q9QB92	3	140	mRNA-capping enzyme small subunit	w
+MRNA-CAPPING	virus	Q9YW26	MSV067	Q9YW26	7	261	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	R4JNM0	EPTV-WA-083	R4JNM0	4	179	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	U3UBK1	D1R	U3UBK1	4	140	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	virus	W6JL07		W6JL07	4	240	mRNA-capping enzyme catalytic subunit	w
+MRNA-CAPPING	worm	Q17607	cel-1	Q17607	2	27	mRNA-capping enzyme	w
+MRNA-CAPPING	yeast	O13297	CET1	O13297	5	31	mRNA-capping enzyme subunit beta	w
+MRNA-CAPPING	yeast	Q01159	CEG1	Q01159	1	50	mRNA-capping enzyme subunit alpha	w
+MRNA-CAPPING	zebrafish	Q6NY98	rngtt	Q6NY98	2	37	mRNA-capping enzyme	w
+MRNA-DECAPPING	fly	FBgn0036735	Edc3	Q9VVI2	13	98	Enhancer of mRNA-decapping protein 3	w
+MRNA-DECAPPING	fly	FBgn0283682	Ge-1	Q9VKK1	10	91	Enhancer of mRNA-decapping protein 4 homolog	w
+MRNA-DECAPPING	human	Q6P2E9	EDC4	Q6P2E9	54	244	Enhancer of mRNA-decapping protein 4 (Autoantigen Ge-1) (Aut	w
+MRNA-DECAPPING	human	Q8IU60	DCP2	Q8IU60	25	195	m7GpppN-mRNA hydrolase (EC 3.6.1.62) (Nucleoside diphosphate	w
+MRNA-DECAPPING	human	Q8IZD4	DCP1B	Q8IZD4	69	158	mRNA-decapping enzyme 1B (EC 3.6.1.62)	w
+MRNA-DECAPPING	human	Q96F86	EDC3	Q96F86	29	215	Enhancer of mRNA-decapping protein 3 (LSM16 homolog) (YjeF N	w
+MRNA-DECAPPING	human	Q9NPI6	DCP1A	Q9NPI6	81	253	mRNA-decapping enzyme 1A (EC 3.6.1.62) (Smad4-interacting tr	w
+MRNA-DECAPPING	virus	P04311	OPG121	P04311	8	218	mRNA-decapping protein OPG121	w
+MRNA-DECAPPING	virus	P04312	OPG122	P04312	9	218	mRNA-decapping protein OPG122	w
+MRNA-DECAPPING	virus	P0DOU5	OPG121	P0DOU5	10	199	mRNA-decapping protein OPG121	w
+MRNA-DECAPPING	virus	P32097	D10R	P32097	7	153	mRNA-decapping protein D10	w
+MRNA-DECAPPING	virus	P32098	D9R	P32098	2	153	mRNA-decapping protein D9	w
+MRNA-DECAPPING	virus	P32817	FPV053	P32817	12	250	mRNA-decapping protein D10	w
+MRNA-DECAPPING	virus	P33071	OPG122	P33071	5	199	mRNA-decapping protein OPG122	w
+MRNA-DECAPPING	worm	Q9N363	dcap-1	Q9N363	7	71	mRNA-decapping enzyme 1	w
+MRNA-DECAPPING	yeast	P25644	PAT1	P25644	11	165	Deadenylation-dependent mRNA-decapping factor PAT1	w
+MRNA-DECAPPING	yeast	P39998	EDC3	P39998	2	59	Enhancer of mRNA-decapping protein 3	w
+MRNA-DECAPPING	yeast	P40023	EDC2	P40023	1	12	Enhancer of mRNA-decapping protein 2	w
+MRNA-DECAPPING	yeast	P53080	EDC1	P53080	1	11	Enhancer of mRNA-decapping protein 1	w
+MRNA-DECAPPING	yeast	Q12517	DCP1	Q12517	12	85	mRNA-decapping enzyme subunit 1	w
+MRNA-DECAPPING	zebrafish	Q1LUT1	edc4	Q1LUT1	8	35	Enhancer of mRNA-decapping protein 4	w
+MRNA-DECAPPING	zebrafish	Q502M5	edc3	Q502M5	11	102	Enhancer of mRNA-decapping protein 3	w
+MRNA-DIHYDROURIDINE	human	Q96G46	DUS3L	Q96G46	5	119	tRNA-dihydrouridine(47) synthase [NAD(P)(+)]-like (EC 1.3.1.	w
+MRNA-EDITING	human	P41238	APOBEC1	P41238	11	130	C->U-editing enzyme APOBEC-1 (EC 3.5.4.-) (Apolipoprotein B 	w
+MRNA-EDITING	human	Q6NTF7	APOBEC3H	Q6NTF7	9	144	DNA dC->dU-editing enzyme APOBEC-3H (EC 3.5.4.38) (APOBEC-re	w
+MRNA-EDITING	human	Q8IUX4	APOBEC3F	Q8IUX4	2	199	DNA dC->dU-editing enzyme APOBEC-3F (EC 3.5.4.38) (Apolipopr	w
+MRNA-EDITING	human	Q8WW27	APOBEC4	Q8WW27	4	19	Putative deaminase APOBEC-4 (EC 3.5.4.-) (Apolipoprotein B m	w
+MRNA-PROCESSING	zebrafish	Q6DH13	rbpms2a	Q6DH13	22	110	RNA-binding protein, mRNA-processing factor 2a	w
+MRNA-SPECIFIC	yeast	P07390	PET494	P07390	2	11	COX3 mRNA-specific translational activator PET494	w
+MRNC	staphylococcus-aureus-93061	Q2G2M4	mrnC	Q2G2M4	0	27	Mini-ribonuclease 3	
+MRNC	streptococcus-pneumoniae	Q8DQS7	mrnC	Q8DQS7	1	29	Mini-ribonuclease 3	
+MRNIP	human	Q6NTE8	MRNIP	Q6NTE8	35	535	MRN complex-interacting protein (MRN-interacting protein)	
+MRNIP	mus-musculus	Q9D1F5	Mrnip	Q9D1F5	14	463	MRN complex-interacting protein	
+MRNIP	zebrafish	Q32PP1	mrnip	Q32PP1	20	642	MRN complex-interacting protein	
+MRNIP_HUMAN	human	Q6NTE8	MRNIP	Q6NTE8	35	535		
+MRNP	human	P78406	RAE1	P78406	40	304	mRNA export factor RAE1 (Rae1 protein homolog) (mRNA-associa	w
+MRNP41	human	P78406	RAE1	P78406	40	304		
+MRNPS	human	Q5BKZ1	ZNF326	Q5BKZ1	39	283	DBIRD complex subunit ZNF326 (Zinc finger protein 326) (Zinc	w

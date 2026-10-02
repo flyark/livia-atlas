@@ -1,10 +1,1031 @@
-HYDA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Y9	hydA	Q0P8Y9	4	26	Ni/Fe-hydrogenase small chain
-HYDA	dictyostelium-discoideum	Q54FY3	hydA	Q54FY3	3	3	Aldehyde dehydrogenase
-HYDA2	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8L5	hydA2	Q0P8L5	4	130	Ni/Fe-hydrogenase small subunit
-HYDB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Z0	hydB	Q0P8Z0	4	18	Ni/Fe-hydrogenase large subunit
-HYDC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Z1	hydC	Q0P8Z1	2	4	Ni/Fe-hydrogenase B-type cytochrome subunit
-HYDD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Z2	hydD	Q0P8Z2	0	12	Hydrogenase maturation protease
-HYDG	shigella-dysenteriae-serotype-1	Q32AH7	hydG	Q32AH7	0	13	Sensor HydH response regulator of hydrogenase 3 activity
-HYDH	shigella-dysenteriae-serotype-1	Q32AH6	hydH	Q32AH6	5	43	Sensor histidine kinase ZraS
-HYDN	escherichia-coli-83333	P0AAK4	hydN	P0AAK4	0	5	Electron transport protein HydN
-HYDN	salmonella-typhimurium	Q7CPY3	hydN	Q7CPY3	1	10	Electron transport protein (FeS center) from formate to hydrogen
+HYD	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8	Hyperplastic discs, isoform B	
+HYD	human	O95071	UBR5	O95071	16	560		
+HYDA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Y9	hydA	Q0P8Y9	4	26	Ni/Fe-hydrogenase small chain	
+HYDA	dictyostelium-discoideum	Q54FY3	hydA	Q54FY3	3	3	Aldehyde dehydrogenase	
+HYDA2	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8L5	hydA2	Q0P8L5	4	130	Ni/Fe-hydrogenase small subunit	
+HYDANTOINASE	human	Q14117	DPYS	Q14117	6	59	Dihydropyrimidinase (DHP) (DHPase) (EC 3.5.2.2) (Dihydropyri	w
+HYDB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Z0	hydB	Q0P8Z0	4	18	Ni/Fe-hydrogenase large subunit	
+HYDC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Z1	hydC	Q0P8Z1	2	4	Ni/Fe-hydrogenase B-type cytochrome subunit	
+HYDD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P8Z2	hydD	Q0P8Z2	0	12	Hydrogenase maturation protease	
+HYDG	shigella-dysenteriae-serotype-1	Q32AH7	hydG	Q32AH7	0	13	Sensor HydH response regulator of hydrogenase 3 activity	
+HYDH	shigella-dysenteriae-serotype-1	Q32AH6	hydH	Q32AH6	5	43	Sensor histidine kinase ZraS	
+HYDN	escherichia-coli-83333	P0AAK4	hydN	P0AAK4	0	5	Electron transport protein HydN	
+HYDN	salmonella-typhimurium	Q7CPY3	hydN	Q7CPY3	1	10	Electron transport protein (FeS center) from formate to hydr	
+HYDR	human	Q86UD5	SLC9B2	Q86UD5	4	22	Sodium/hydrogen exchanger 9B2 (Na(+)/H(+) exchanger NHA2) (N	w
+HYDR1	fly	FBgn0033382	Hydr1	A1Z7Q7	1	9	Alpha/beta hydrolase 1, isoform A (Alpha/beta hydrolase 1, i	
+HYDR2	fly	FBgn0014906	Hydr2	Q24093	331	2376	Abhydrolase domain-containing protein 2 (EC 3.1.1.-)	
+HYDRA	fly	FBgn0031128	hydra	Q8IQ35	2	14	Hydra, isoform A (Hydra, isoform F) (Hydra, isoform J)	w
+HYDRA	fly	FBgn0031128	hydra	Q8IQ35	2	14	Hydra, isoform A (Hydra, isoform F) (Hydra, isoform J)	w
+HYDRATASE	fly	FBgn0010100	mAcon1	Q9VIE8	6	320	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
+HYDRATASE	fly	FBgn0024957	Irp-1B	Q9VGZ3	1	79	aconitate hydratase (EC 4.2.1.3)	w
+HYDRATASE	fly	FBgn0024958	Irp-1A	Q9VCV4	0	90	aconitate hydratase (EC 4.2.1.3)	w
+HYDRATASE	fly	FBgn0028479	Mtpalpha	Q9V397	1	57	enoyl-CoA hydratase (EC 4.2.1.17)	w
+HYDRATASE	fly	FBgn0029890	Fum2	Q9W3X5	2	64	fumarate hydratase (EC 4.2.1.2)	w
+HYDRATASE	fly	FBgn0030731	Mfe2	Q9VXJ0	1	190	Peroxisomal multifunctional enzyme type 2 (DmMFE-2) [Include	w
+HYDRATASE	fly	FBgn0033761	CG8778	A1Z934	0	38	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	w
+HYDRATASE	fly	FBgn0033879	Echs1	Q7JR58	0	178	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	w
+HYDRATASE	fly	FBgn0034191	CG6984	Q7K1C3	1	7	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	w
+HYDRATASE	fly	FBgn0036162	Fum3	Q9VTI5	2	70	fumarate hydratase (EC 4.2.1.2)	w
+HYDRATASE	fly	FBgn0037027	HIPP1	Q9VPB0	100	390	Enoyl-CoA hydratase, mitochondrial (Enoyl-CoA hydratase 1) (	w
+HYDRATASE	fly	FBgn0037862	mAcon2	Q8T4D6	10	359	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
+HYDRATASE	fly	FBgn0051874	Fum4	Q8IPD2	0	55	fumarate hydratase (EC 4.2.1.2)	w
+HYDRATASE	fly	FBgn0286222	Fum1	Q9W3X6	1	69	fumarate hydratase (EC 4.2.1.2)	w
+HYDRATASE	human	A0A2R8Y6G6	ENO1	A0A2R8Y6G6	4	301	phosphopyruvate hydratase	w
+HYDRATASE	human	P00915	CA1	P00915	14	163	Carbonic anhydrase 1 (EC 4.2.1.1) (Carbonate dehydratase I) 	w
+HYDRATASE	human	P00918	CA2	P00918	53	347	Carbonic anhydrase 2 (EC 4.2.1.1) (Carbonate dehydratase II)	w
+HYDRATASE	human	P07099	EPHX1	P07099	5	156	Epoxide hydrolase 1 (EC 3.3.2.9) (Epoxide hydratase) (Micros	w
+HYDRATASE	human	P07954	FH	P07954	5	240	Fumarate hydratase, mitochondrial (Fumarase) (HsFH) (EC 4.2.	w
+HYDRATASE	human	P21399	ACO1	P21399	3	214	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	w
+HYDRATASE	human	P30084	ECHS1	P30084	8	391	Enoyl-CoA hydratase, mitochondrial (mECH) (mECH1) (EC 4.2.1.	w
+HYDRATASE	human	P34913	EPHX2	P34913	5	150	Bifunctional epoxide hydrolase 2 [Includes: Cytosolic epoxid	w
+HYDRATASE	human	Q08426	EHHADH	Q08426	9	290	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	w
+HYDRATASE	human	Q13825	AUH	Q13825	5	367	Methylglutaconyl-CoA hydratase, mitochondrial (3-MG-CoA hydr	w
+HYDRATASE	human	Q86YB7	ECHDC2	Q86YB7	7	140	Enoyl-CoA hydratase domain-containing protein 2, mitochondri	w
+HYDRATASE	human	Q96DC8	ECHDC3	Q96DC8	4	42	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	w
+HYDRATASE	human	Q96N76	UROC1	Q96N76	1	90	Urocanate hydratase (Urocanase) (EC 4.2.1.49) (Imidazolonepr	w
+HYDRATASE	human	Q99798	ACO2	Q99798	5	445	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	w
+HYDRATASE	human	Q9NTX5	ECHDC1	Q9NTX5	2	178	Ethylmalonyl-CoA decarboxylase (EC 4.1.1.94) (Enoyl-CoA hydr	w
+HYDRATASE	human	Q9Y232	CDYL	Q9Y232	36	295	Chromodomain Y-like protein (CDY-like) (Crotonyl-CoA hydrata	w
+HYDRATASE	worm	D1MN80	ech-2	D1MN80	0	1	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	w
+HYDRATASE	worm	O17214	fum-1	O17214	1	66	Probable fumarate hydratase, mitochondrial	w
+HYDRATASE	worm	O17761	ech-8	O17761	1	29	Enoyl-CoA Hydratase	w
+HYDRATASE	worm	O17762	ech-9	O17762	0	12	Enoyl-CoA Hydratase	w
+HYDRATASE	worm	O45106	ech-5	O45106	0	17	Enoyl-CoA hydratase, mitochondrial	w
+HYDRATASE	worm	P34455	aco-2	P34455	0	124	Probable aconitate hydratase, mitochondrial	w
+HYDRATASE	worm	P34559	ech-6	P34559	0	26	Probable enoyl-CoA hydratase, mitochondrial	w
+HYDRATASE	worm	Q20376	ech-3	Q20376	1	21	Enoyl-CoA hydratase	w
+HYDRATASE	worm	Q23500	aco-1	Q23500	0	75	Cytoplasmic aconitate hydratase	w
+HYDRATASE	worm	Q9NAE2	Y51H4A.7	Q9NAE2	0	13	Probable urocanate hydratase	w
+HYDRATASE	worm	Q9NEZ8	ech-7	Q9NEZ8	0	14	Probable enoyl-CoA hydratase, mitochondrial	w
+HYDRATASE	yeast	P08417	FUM1	P08417	0	39	Fumarate hydratase, mitochondrial	w
+HYDRATASE	yeast	P0CH64	DDI3	P0CH64	0	2	Cyanamide hydratase DDI3	w
+HYDRATASE	yeast	P19414	ACO1	P19414	1	80	Aconitate hydratase, mitochondrial	w
+HYDRATASE	zebrafish	F1QM42	aco1	F1QM42	0	189	Cytoplasmic aconitate hydratase	w
+HYDRATASE	zebrafish	F1RDX1	auh	F1RDX1	0	119	AU RNA-binding protein/enoyl-CoA hydratase	w
+HYDRATASE	zebrafish	Q6GQM9	eno2	Q6GQM9	3	72	phosphopyruvate hydratase	w
+HYDRATASE	zebrafish	Q6PC89	eno1b	Q6PC89	3	72	phosphopyruvate hydratase	w
+HYDRATASE	zebrafish	Q7SX99	fh	Q7SX99	0	37	Fumarate hydratase, mitochondrial	w
+HYDRATASE	zebrafish	Q7ZZ04	echs1	Q7ZZ04	0	123	Enoyl-CoA hydratase, mitochondrial	w
+HYDRATASE-DEHYDROGENASE-EPIMERASE	yeast	Q02207	FOX2	Q02207	0	23	Peroxisomal hydratase-dehydrogenase-epimerase	w
+HYDRO	human	Q8NFP7	NUDT10	Q8NFP7	6	57	Diphosphoinositol polyphosphate phosphohydrolase 3-alpha (DI	w
+HYDRO	human	Q9H6Z9	EGLN3	Q9H6Z9	502	1342	Prolyl hydroxylase EGLN3 (EC 1.14.11.-) (Egl nine homolog 3)	w
+HYDRO-LYASE	fly	FBgn0000579	Eno	P15007	6	338	Enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (2	w
+HYDRO-LYASE	human	A6NNW6	ENO4	A6NNW6	5	117	Enolase 4 (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase)	w
+HYDRO-LYASE	human	P06733	ENO1	P06733	25	1544	Alpha-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lya	w
+HYDRO-LYASE	human	P09104	ENO2	P09104	21	579	Gamma-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lya	w
+HYDRO-LYASE	human	P13929	ENO3	P13929	15	371	Beta-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyas	w
+HYDRO-LYASE	human	P21399	ACO1	P21399	3	214	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	w
+HYDRO-LYASE	human	Q99798	ACO2	Q99798	5	445	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	w
+HYDROCARBON	fly	FBgn0264075	tgo	O15945	67	417	Aryl hydrocarbon receptor nuclear translocator homolog (dARN	w
+HYDROCARBON	human	A0A1B0GVI7	?	A0A1B0GVI7	11	19	Aryl hydrocarbon receptor	w
+HYDROCARBON	human	A9YTQ3	AHRR	A9YTQ3	16	35	Aryl hydrocarbon receptor repressor (AhR repressor) (AhRR) (	w
+HYDROCARBON	human	D6RE68	AHRR	D6RE68	3	17	Aryl hydrocarbon receptor repressor	w
+HYDROCARBON	human	O00327	BMAL1	O00327	46	193	Basic helix-loop-helix ARNT-like protein 1 (Aryl hydrocarbon	w
+HYDROCARBON	human	P27540	ARNT	P27540	55	302	Aryl hydrocarbon receptor nuclear translocator (ARNT protein	w
+HYDROCARBON	human	P35869	AHR	P35869	36	161	Aryl hydrocarbon receptor (Ah receptor) (AhR) (Class E basic	w
+HYDROCARBON	human	Q8WYA1	BMAL2	Q8WYA1	27	63	Basic helix-loop-helix ARNT-like protein 2 (Aryl hydrocarbon	w
+HYDROCARBON	human	Q9HBZ2	ARNT2	Q9HBZ2	35	142	Aryl hydrocarbon receptor nuclear translocator 2 (ARNT prote	w
+HYDROCARBON	human	Q9Y6Y0	IVNS1ABP	Q9Y6Y0	12	174	Influenza virus NS1A-binding protein (NS1-BP) (NS1-binding p	w
+HYDROCARBON	worm	O02219	aha-1	O02219	5	52	Aryl hydrocarbon receptor nuclear translocator homolog	w
+HYDROCARBON	worm	O44712	ahr-1	O44712	3	34	Aryl hydrocarbon receptor protein 1	w
+HYDROCARBON	zebrafish	A0A0R4IH97	bmal2	A0A0R4IH97	29	58	Aryl hydrocarbon receptor nuclear translocator-like 2	w
+HYDROCARBON	zebrafish	A0A8M2B4T8	arnt	A0A8M2B4T8	27	50	Aryl hydrocarbon receptor nuclear translocator isoform X1	w
+HYDROCARBON	zebrafish	A0AB13A9V8	ahr1a	A0AB13A9V8	11	20	Aryl hydrocarbon receptor 1a	w
+HYDROCARBON	zebrafish	Q4U3K9	ahr1b	Q4U3K9	11	20	Aryl hydrocarbon receptor	w
+HYDROCARBON	zebrafish	Q9DG12	arnt2	Q9DG12	26	51	Aryl hydrocarbon receptor nuclear translocator 2	w
+HYDROCARBON	zebrafish	Q9I879	bmal1a	Q9I879	30	58	Aryl hydrocarbon receptor nuclear translocator-like 1a	w
+HYDROGEN	fly	FBgn0026787	Nhe1	Q9VPJ1	0	20	Sodium/hydrogen exchanger	w
+HYDROGEN	fly	FBgn0028703	Nhe3	Q8IPJ4	9	228	Sodium/hydrogen exchanger	w
+HYDROGEN	fly	FBgn0031865	Nha1	Q9VM74	1	9	Na[+]/H[+] hydrogen antiporter 1, isoform A	w
+HYDROGEN	fly	FBgn0040297	Nhe2	B7YZY2	5	22	Sodium/hydrogen exchanger	w
+HYDROGEN	fly	FBgn0041789	Pax	Q2PDT4	13	115	Transforming growth factor beta-1-induced transcript 1 prote	w
+HYDROGEN	fly	FBgn0263390	Nha2	A0A0B4K6G5	1	18	Na[+]/H[+] hydrogen antiporter 2, isoform B	w
+HYDROGEN	human	P00441	SOD1	P00441	16	452	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
+HYDROGEN	human	P19634	SLC9A1	P19634	28	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	w
+HYDROGEN	human	P48764	SLC9A3	P48764	11	75	Sodium/hydrogen exchanger 3 (Na(+)/H(+) exchanger 3) (NHE-3)	w
+HYDROGEN	human	Q14940	SLC9A5	Q14940	11	59	Sodium/hydrogen exchanger 5 (Na(+)/H(+) exchanger 5) (NHE-5)	w
+HYDROGEN	human	Q4G0N8	SLC9C1	Q4G0N8	3	30	Solute carrier family 9 member C1 (Na(+)/H(+) exchanger 10) 	w
+HYDROGEN	human	Q4ZJI4	SLC9B1	Q4ZJI4	2	15	Sodium/hydrogen exchanger 9B1 (Na(+)/H(+) exchanger-like dom	w
+HYDROGEN	human	Q5TAH2	SLC9C2	Q5TAH2	2	35	Sodium/hydrogen exchanger 11 (Na(+)/H(+) exchanger 11) (NHE-	w
+HYDROGEN	human	Q6AI14	SLC9A4	Q6AI14	9	47	Sodium/hydrogen exchanger 4 (Na(+)/H(+) exchanger 4) (NHE-4)	w
+HYDROGEN	human	Q86UD5	SLC9B2	Q86UD5	4	22	Sodium/hydrogen exchanger 9B2 (Na(+)/H(+) exchanger NHA2) (N	w
+HYDROGEN	human	Q8IVB4	SLC9A9	Q8IVB4	11	121	Sodium/hydrogen exchanger 9 (Na(+)/H(+) exchanger 9) (NHE-9)	w
+HYDROGEN	human	Q92581	SLC9A6	Q92581	17	122	Sodium/hydrogen exchanger 6 (Na(+)/H(+) exchanger 6) (NHE-6)	w
+HYDROGEN	human	Q96D96	HVCN1	Q96D96	15	102	Voltage-gated hydrogen channel 1 (Hydrogen voltage-gated cha	w
+HYDROGEN	human	Q96T83	SLC9A7	Q96T83	15	83	Sodium/hydrogen exchanger 7 (Na(+)/H(+) exchanger 7) (NHE-7)	w
+HYDROGEN	human	Q9UBY0	SLC9A2	Q9UBY0	12	64	Sodium/hydrogen exchanger 2 (Na(+)/H(+) exchanger 2) (NHE-2)	w
+HYDROGEN	human	Q9Y2E8	SLC9A8	Q9Y2E8	7	51	Sodium/hydrogen exchanger 8 (Na(+)/H(+) exchanger 8) (NHE-8)	w
+HYDROGEN	worm	G5EBN7	nhx-8	G5EBN7	0	2	Sodium/hydrogen exchanger	w
+HYDROGEN	worm	G5ED88	nhx-5	G5ED88	0	4	Sodium/hydrogen exchanger	w
+HYDROGEN	worm	G5EDH8	nhx-1	G5EDH8	3	4	Sodium/hydrogen exchanger	w
+HYDROGEN	yeast	Q04121	NHX1	Q04121	0	19	Endosomal/prevacuolar sodium/hydrogen exchanger	w
+HYDROGEN	zebrafish	A0A8M3ASE1	slc9a3.2	A0A8M3ASE1	6	11	Sodium/hydrogen exchanger	w
+HYDROGEN	zebrafish	B7ZVJ6	slc9a3.1	B7ZVJ6	6	9	Sodium/hydrogen exchanger	w
+HYDROGEN	zebrafish	F1QSJ6	slc9a6a	F1QSJ6	0	7	Sodium/hydrogen exchanger	w
+HYDROGEN	zebrafish	Q6DHQ1	hvcn1	Q6DHQ1	0	5	Voltage-gated hydrogen channel 1	w
+HYDROGENASE-LIKE	human	Q9H6Q4	CIAO3	Q9H6Q4	7	219	Cytosolic iron-sulfur assembly component 3 (Cytosolic Fe-S c	w
+HYDROGENASE-LIKE	human	Q9UHQ1	NARF	Q9UHQ1	9	59	Nuclear prelamin A recognition factor (Iron-only hydrogenase	w
+HYDROL	human	A0A024RBG1	NUDT4B	A0A024RBG1	1	28	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B (DIP	w
+HYDROLASE	fly	FBgn0000592	Est-6	P08171	24	272	Esterase-6 (Est-6) (EC 3.1.1.1) (Carboxylic-ester hydrolase 	w
+HYDROLASE	fly	FBgn0000594	Est-P	P18167	49	309	Esterase P (Est-P) (EC 3.1.1.1) (Carboxylic-ester hydrolase 	w
+HYDROLASE	fly	FBgn0005632	faf	P55824	0	19	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
+HYDROLASE	fly	FBgn0010052	Jhe	A1ZA98	30	256	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0010053	Jheh1	Q7JRC3	2	6	Epoxide hydrolase (EC 3.3.2.9)	w
+HYDROLASE	fly	FBgn0010288	Uch	P35122	21	199	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12) (Ubiqui	w
+HYDROLASE	fly	FBgn0011327	Uch-L5	Q9XZ61	5	72	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0013717	not	Q9VVR1	13	70	Ubiquitin carboxyl-terminal hydrolase nonstop (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0014455	Ahcy	Q27580	3	142	Adenosylhomocysteinase (AdoHcyase) (EC 3.13.2.1) (S-adenosyl	w
+HYDROLASE	fly	FBgn0015569	alpha-Est10	A0A0B4K6L1	0	1	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0015575	alpha-Est7	Q9VIB5	4	85	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0015576	alpha-Est8	Q9VIB3	0	2	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0015577	alpha-Est9	Q9VIB1	0	5	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0016013	Faa	Q9VZI8	0	15	Fumarylacetoacetase (EC 3.7.1.2) (Fumarylacetoacetate hydrol	w
+HYDROLASE	fly	FBgn0016756	Usp47	Q24574	1	13	Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Ubi	w
+HYDROLASE	fly	FBgn0020545	kraken	O18391	0	1	Probable serine hydrolase (EC 3.1.-.-) (Kraken protein)	w
+HYDROLASE	fly	FBgn0026566	CG1307	O97067	1	28	Probable peptidyl-tRNA hydrolase 2 (PTH 2) (EC 3.1.1.29)	w
+HYDROLASE	fly	FBgn0027584	CG4757	Q9Y141	37	254	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0029690	CG6414	Q9W4N5	23	253	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0029763	Usp16-45	Q9W4C3	2	8	Ubiquitin carboxyl-terminal hydrolase 16/45 (EC 3.4.19.12) (	w
+HYDROLASE	fly	FBgn0029819	Usp30	Q9W462	8	53	Ubiquitin carboxyl-terminal hydrolase 30 homolog (dUSP30) (E	w
+HYDROLASE	fly	FBgn0029942	CG2059	Q9W3R8	0	12	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
+HYDROLASE	fly	FBgn0030038	CG1440	X2JEJ0	3	45	Bleomycin hydrolase (EC 3.4.22.40)	w
+HYDROLASE	fly	FBgn0030057	Ppt1	Q9W3C7	12	125	Palmitoyl-protein thioesterase 1 (PPT-1) (EC 3.1.2.22) (Palm	w
+HYDROLASE	fly	FBgn0030366	Usp7	Q9VYQ8	17	82	Ubiquitin carboxyl-terminal hydrolase 7 (EC 3.4.19.12) (Ubiq	w
+HYDROLASE	fly	FBgn0030370	Uch-L5R	Q9VYQ3	6	41	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0030793	Rai1	Q9VXA8	1	10	Decapping and exoribonuclease protein Rai1 (DXO) (EC 3.1.13.	w
+HYDROLASE	fly	FBgn0030969	Usp39	Q9VWP1	2	56	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0030973	CG7332	Q9VWN5	4	58	Ubiquitin carboxyl-terminal hydrolase MINDY-3 homolog (EC 3.	w
+HYDROLASE	fly	FBgn0031187	Usp2	X2JG37	16	112	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0032032	CG17294	Q9VLM9	0	3	Haloacid dehalogenase-like hydrolase domain-containing prote	w
+HYDROLASE	fly	FBgn0032131	CG3841	Q9VLA4	0	3	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0032210	CYLD	Q8IPC5	6	32	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0032216	Usp14	Q9VKZ8	10	151	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0032261	CG6094	Q9VKU3	13	185	Large ribosomal subunit protein mL62 (EC 3.1.1.29) (Peptidyl	w
+HYDROLASE	fly	FBgn0032436	CG5418	Q9VK81	0	6	Inosine/uridine-preferring nucleoside hydrolase domain-conta	w
+HYDROLASE	fly	FBgn0032721	CG10602	Q9VJ39	3	42	Leukotriene A(4) hydrolase (LTA-4 hydrolase) (EC 3.3.2.6)	w
+HYDROLASE	fly	FBgn0033382	Hydr1	A1Z7Q7	1	9	Alpha/beta hydrolase 1, isoform A (Alpha/beta hydrolase 1, i	w
+HYDROLASE	fly	FBgn0033916	Usp20-33	Q7JW61	3	45	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0034076	Jhedup	A1ZA97	15	268	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0034405	Jheh2	Q7KB18	2	8	Epoxide hydrolase (EC 3.3.2.9)	w
+HYDROLASE	fly	FBgn0034406	Jheh3	Q7K1W4	3	9	Epoxide hydrolase (EC 3.3.2.9)	w
+HYDROLASE	fly	FBgn0034513	CG13423	A1ZBU9	1	28	Bleomycin hydrolase (EC 3.4.22.40)	w
+HYDROLASE	fly	FBgn0034614	CG9752	Q9W2I2	0	5	Queuosine 5'-phosphate N-glycosylase/hydrolase (EC 3.2.2.-) 	w
+HYDROLASE	fly	FBgn0035206	sturkopf	Q9W0H3	2	21	Lipid droplet-associated hydrolase (EC 3.1.1.-) (Lipid dropl	w
+HYDROLASE	fly	FBgn0035371	AhcyL1	Q9VZX9	7	93	Adenosylhomocysteinase-like 1 (dAhcyL1) (Inactive S-adenosyl	w
+HYDROLASE	fly	FBgn0035402	Usp5	Q9VZU7	2	27	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0036143	CG14142	Q9VTG6	0	1	Ubiquitin carboxyl-terminal hydrolase MINDY (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0036180	Duba	Q9VTK7	5	10	ubiquitinyl hydrolase 1 (EC 3.4.19.12) (Deubiquitinating enz	w
+HYDROLASE	fly	FBgn0036648	CG4098	Q9VV83	20	332	Nudix hydrolase domain-containing protein	w
+HYDROLASE	fly	FBgn0037024	tzn	Q8IPU3	1	22	hydroxyacylglutathione hydrolase (EC 3.1.2.6) (Glyoxalase II	w
+HYDROLASE	fly	FBgn0037090	Est-Q	Q9VP25	0	2	Carboxylic ester hydrolase (EC 3.1.1.-)	w
+HYDROLASE	fly	FBgn0037842	CG6567	Q9VGV9	0	7	palmitoyl-protein hydrolase (EC 3.1.2.22)	w
+HYDROLASE	fly	FBgn0038107	CG17327	Q9VG06	0	7	peptidyl-tRNA hydrolase (EC 3.1.1.29)	w
+HYDROLASE	fly	FBgn0038326	Hibch	Q86BP1	15	133	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	w
+HYDROLASE	fly	FBgn0038446	CG14903	Q9VET3	92	982	peptidyl-tRNA hydrolase (EC 3.1.1.29)	w
+HYDROLASE	fly	FBgn0038771	CG4390	Q7KSB5	0	19	S-formylglutathione hydrolase (EC 3.1.2.12)	w
+HYDROLASE	fly	FBgn0038862	Usp8	Q9VDD8	5	46	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0039737	CG7920	Q9VAC1	3	131	Acetyl-CoA hydrolase (EC 3.1.2.1) (Acetyl-CoA deacylase)	w
+HYDROLASE	fly	FBgn0042138	Apt1	M9PEW1	0	8	palmitoyl-protein hydrolase (EC 3.1.2.22)	w
+HYDROLASE	fly	FBgn0050016	CG30016	A1Z8C9	1	102	5-hydroxyisourate hydrolase (HIU hydrolase) (HIUHase) (EC 3.	w
+HYDROLASE	fly	FBgn0050421	Usp15-31	Q9W117	2	44	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0052479	Usp10	Q9W0L7	9	81	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0086367	t	Q9W369	0	4	Beta-alanyl-dopamine/carcinine hydrolase	w
+HYDROLASE	fly	FBgn0260936	scny	Q9VRP5	7	46	Ubiquitin carboxyl-terminal hydrolase 36 (EC 3.4.19.12) (Deu	w
+HYDROLASE	fly	FBgn0261266	zuc	Q9VKD7	11	351	Mitochondrial cardiolipin hydrolase (EC 3.1.4.-) (Mitochondr	w
+HYDROLASE	fly	FBgn0262166	caly	Q7K5N4	9	104	Ubiquitin carboxyl-terminal hydrolase calypso (EC 3.4.19.12)	w
+HYDROLASE	fly	FBgn0262579	Sarm	M9NE45	10	73	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase (EC 3.2.2.6)	w
+HYDROLASE	fly	FBgn0263607	l(3)72Dp	Q8IQM9	29	259	folate gamma-glutamyl hydrolase (EC 3.4.19.9)	w
+HYDROLASE	fly	FBgn0263608	l(3)72Dr	Q9VV00	18	247	folate gamma-glutamyl hydrolase (EC 3.4.19.9)	w
+HYDROLASE	fly	FBgn0265271	CG14717	Q9VGJ4	0	13	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
+HYDROLASE	human	A6NCW0	USP17L3	A6NCW0	4	38	Ubiquitin carboxyl-terminal hydrolase 17-like protein 3 (EC 	w
+HYDROLASE	human	A6NCW7	USP17L4	A6NCW7	4	34	Inactive ubiquitin carboxyl-terminal hydrolase 17-like prote	w
+HYDROLASE	human	A6NGU5	GGT3P	A6NGU5	1	42	Putative glutathione hydrolase 3 proenzyme (EC 3.4.19.13) (G	w
+HYDROLASE	human	A6NNY8	USP27X	A6NNY8	19	112	Ubiquitin carboxyl-terminal hydrolase 27 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	A8MUK1	USP17L5	A8MUK1	3	41	Ubiquitin carboxyl-terminal hydrolase 17-like protein 5 (EC 	w
+HYDROLASE	human	A8MYZ0	MINDY4B	A8MYZ0	5	18	Inactive ubiquitin carboxyl-terminal hydrolase MINDY-4B (Pro	w
+HYDROLASE	human	B5MD39	GGTLC3	B5MD39	2	11	Glutathione hydrolase light chain 3 (Gamma-glutamyltransfera	w
+HYDROLASE	human	C9J2P7	USP17L15	C9J2P7	0	28	Ubiquitin carboxyl-terminal hydrolase 17-like protein 15 (EC	w
+HYDROLASE	human	C9JJH3	USP17L10	C9JJH3	5	39	Ubiquitin carboxyl-terminal hydrolase 17-like protein 10 (EC	w
+HYDROLASE	human	C9JLJ4	USP17L13	C9JLJ4	4	33	Ubiquitin carboxyl-terminal hydrolase 17-like protein 13 (EC	w
+HYDROLASE	human	C9JPN9	USP17L12	C9JPN9	5	37	Ubiquitin carboxyl-terminal hydrolase 17-like protein 12 (EC	w
+HYDROLASE	human	C9JVI0	USP17L11	C9JVI0	4	34	Ubiquitin carboxyl-terminal hydrolase 17-like protein 11 (EC	w
+HYDROLASE	human	D6R901	USP17L21	D6R901	5	34	Ubiquitin carboxyl-terminal hydrolase 17-like protein 21 (EC	w
+HYDROLASE	human	D6R9N7	USP17L18	D6R9N7	5	42	Ubiquitin carboxyl-terminal hydrolase 17-like protein 18 (EC	w
+HYDROLASE	human	D6RA61	USP17L22	D6RA61	7	62	Ubiquitin carboxyl-terminal hydrolase 17-like protein 22 (EC	w
+HYDROLASE	human	D6RBM5	USP17L23	D6RBM5	1	21	Ubiquitin carboxyl-terminal hydrolase 17-like protein 23	w
+HYDROLASE	human	D6RBQ6	USP17L17	D6RBQ6	4	34	Ubiquitin carboxyl-terminal hydrolase 17-like protein 17 (EC	w
+HYDROLASE	human	D6RCP7	USP17L19	D6RCP7	5	36	Ubiquitin carboxyl-terminal hydrolase 17-like protein 19 (EC	w
+HYDROLASE	human	D6RJB6	USP17L20	D6RJB6	4	34	Ubiquitin carboxyl-terminal hydrolase 17-like protein 20 (EC	w
+HYDROLASE	human	O00154	ACOT7	O00154	6	174	Cytosolic acyl coenzyme A thioester hydrolase (EC 3.1.2.2) (	w
+HYDROLASE	human	O00487	PSMD14	O00487	34	605	Ubiquitin C-terminal hydrolase PSMD14 (EC 3.4.19.12) (26S pr	w
+HYDROLASE	human	O00507	USP9Y	O00507	7	67	Ubiquitin carboxyl-terminal hydrolase 9Y (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	O00519	FAAH	O00519	1	52	Fatty-acid amide hydrolase 1 (EC 3.5.1.99) (Anandamide amido	w
+HYDROLASE	human	O75317	USP12	O75317	19	122	Ubiquitin carboxyl-terminal hydrolase 12 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	O75604	USP2	O75604	29	277	Ubiquitin carboxyl-terminal hydrolase 2 (EC 3.4.19.12) (41 k	w
+HYDROLASE	human	O75608	LYPLA1	O75608	7	159	Acyl-protein thioesterase 1 (APT-1) (hAPT1) (EC 3.1.2.-) (Ly	w
+HYDROLASE	human	O75884	RBBP9	O75884	10	124	Serine hydrolase RBBP9 (EC 3.1.-.-) (B5T-overexpressed gene 	w
+HYDROLASE	human	O77932	DXO	O77932	8	77	Decapping and exoribonuclease protein (DXO) (EC 3.6.1.-) (5'	w
+HYDROLASE	human	O94782	USP1	O94782	32	193	Ubiquitin carboxyl-terminal hydrolase 1 (EC 3.4.19.12) (Deub	w
+HYDROLASE	human	O94830	DDHD2	O94830	5	80	Triacylglycerol hydrolase DDHD2 (TAG hydrolase) (EC 3.1.1.3)	w
+HYDROLASE	human	O94966	USP19	O94966	22	175	Ubiquitin carboxyl-terminal hydrolase 19 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	O95372	LYPLA2	O95372	14	139	Acyl-protein thioesterase 2 (APT-2) (EC 3.1.2.-) (Lysophosph	w
+HYDROLASE	human	O95497	VNN1	O95497	7	98	Pantetheinase (EC 3.5.1.92) (Pantetheine hydrolase) (Tiff66)	w
+HYDROLASE	human	O95498	VNN2	O95498	11	157	Pantetheine hydrolase VNN2 (EC 3.5.1.92) (Glycosylphosphatid	w
+HYDROLASE	human	O95865	DDAH2	O95865	16	127	Putative hydrolase DDAH2 (EC 3.-.-.-) (DDAHII) (Inactive N(G	w
+HYDROLASE	human	O95870	ABHD16A	O95870	6	132	Phosphatidylserine lipase ABHD16A (EC 3.1.-.-) (Alpha/beta h	w
+HYDROLASE	human	O95989	NUDT3	O95989	9	136	Diphosphoinositol polyphosphate phosphohydrolase 1 (DIPP-1) 	w
+HYDROLASE	human	P07099	EPHX1	P07099	5	156	Epoxide hydrolase 1 (EC 3.3.2.9) (Epoxide hydratase) (Micros	w
+HYDROLASE	human	P08910	ABHD2	P08910	1	25	Monoacylglycerol lipase ABHD2 (EC 3.1.1.23) (2-arachidonoylg	w
+HYDROLASE	human	P09848	LCT	P09848	0	10	Lactase/phlorizin hydrolase (Lactase/glycosylceramidase) [In	w
+HYDROLASE	human	P09936	UCHL1	P09936	60	443	Ubiquitin carboxyl-terminal hydrolase isozyme L1 (UCH-L1) (E	w
+HYDROLASE	human	P09960	LTA4H	P09960	10	119	Leukotriene A-4 hydrolase (LTA-4 hydrolase) (EC 3.3.2.6) (Le	w
+HYDROLASE	human	P0C025	NUDT17	P0C025	5	16	m7GpppN-mRNA hydrolase NUDT17 (EC 3.6.1.62) (Nucleoside diph	w
+HYDROLASE	human	P0C7H9	USP17L7	P0C7H9	4	30	Inactive ubiquitin carboxyl-terminal hydrolase 17-like prote	w
+HYDROLASE	human	P0C7I0	USP17L8	P0C7I0	4	34	Inactive ubiquitin carboxyl-terminal hydrolase 17-like prote	w
+HYDROLASE	human	P10768	ESD	P10768	5	138	S-formylglutathione hydrolase (FGH) (EC 3.1.2.12) (Esterase 	w
+HYDROLASE	human	P13798	APEH	P13798	4	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	w
+HYDROLASE	human	P15374	UCHL3	P15374	27	245	Ubiquitin carboxyl-terminal hydrolase isozyme L3 (UCH-L3) (E	w
+HYDROLASE	human	P16930	FAH	P16930	1	88	Fumarylacetoacetase (FAA) (EC 3.7.1.2) (Beta-diketonase) (Fu	w
+HYDROLASE	human	P19440	GGT1	P19440	3	52	Glutathione hydrolase 1 proenzyme (EC 3.4.19.13) (Gamma-glut	w
+HYDROLASE	human	P23526	AHCY	P23526	6	239	Adenosylhomocysteinase (AdoHcyase) (EC 3.13.2.1) (S-adenosyl	w
+HYDROLASE	human	P28039	AOAH	P28039	0	8	Acyloxyacyl hydrolase (EC 3.1.1.77) [Cleaved into: Acyloxyac	w
+HYDROLASE	human	P28907	CD38	P28907	21	281	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 1 (EC 3.2.2.	w
+HYDROLASE	human	P34913	EPHX2	P34913	5	150	Bifunctional epoxide hydrolase 2 [Includes: Cytosolic epoxid	w
+HYDROLASE	human	P35125	USP6	P35125	12	133	Ubiquitin carboxyl-terminal hydrolase 6 (EC 3.4.19.12) (Deub	w
+HYDROLASE	human	P36268	GGT2P	P36268	0	22	Inactive glutathione hydrolase 2 (Gamma-glutamyltransferase 	w
+HYDROLASE	human	P36269	GGT5	P36269	4	66	Glutathione hydrolase 5 proenzyme (EC 3.4.19.13) (Gamma-glut	w
+HYDROLASE	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hydrolase (EC 3.6.1.	w
+HYDROLASE	human	P38571	LIPA	P38571	6	92	Lysosomal acid lipase/cholesteryl ester hydrolase (Acid chol	w
+HYDROLASE	human	P40818	USP8	P40818	55	225	Ubiquitin carboxyl-terminal hydrolase 8 (EC 3.4.19.12) (Deub	w
+HYDROLASE	human	P42765	ACAA2	P42765	6	247	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	w
+HYDROLASE	human	P45974	USP5	P45974	9	252	Ubiquitin carboxyl-terminal hydrolase 5 (EC 3.4.19.12) (Deub	w
+HYDROLASE	human	P49753	ACOT2	P49753	8	161	Acyl-coenzyme A thioesterase 2, mitochondrial (Acyl-CoA thio	w
+HYDROLASE	human	P49789	FHIT	P49789	2	102	Bis(5'-adenosyl)-triphosphatase (EC 3.6.1.29) (AP3A hydrolas	w
+HYDROLASE	human	P50583	NUDT2	P50583	9	131	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	w
+HYDROLASE	human	P50897	PPT1	P50897	21	234	Palmitoyl-protein thioesterase 1 (PPT-1) (EC 3.1.2.2) (EC 3.	w
+HYDROLASE	human	P51784	USP11	P51784	61	674	Ubiquitin carboxyl-terminal hydrolase 11 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	P53370	NUDT6	P53370	2	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	w
+HYDROLASE	human	P54578	USP14	P54578	57	555	Ubiquitin carboxyl-terminal hydrolase 14 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	P54922	ADPRH	P54922	4	70	ADP-ribosylhydrolase ARH1 (EC 3.2.2.19) (ADP-ribose-L-argini	w
+HYDROLASE	human	P62068	USP46	P62068	10	97	Ubiquitin carboxyl-terminal hydrolase 46 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q04609	FOLH1	Q04609	14	165	Glutamate carboxypeptidase 2 (EC 3.4.17.21) (Cell growth-inh	w
+HYDROLASE	human	Q05469	LIPE	Q05469	5	138	Hormone-sensitive lipase (HSL) (EC 3.1.1.79) (Monoacylglycer	w
+HYDROLASE	human	Q08623	PUDP	Q08623	10	186	Pseudouridine-5'-phosphatase (EC 3.1.3.96) (Haloacid dehalog	w
+HYDROLASE	human	Q0P651	ABHD18	Q0P651	3	42	Cardiolipin-specific deacylase, mitochondrial (Alpha/beta hy	w
+HYDROLASE	human	Q0WX57	USP17L24	Q0WX57	6	43	Ubiquitin carboxyl-terminal hydrolase 17-like protein 24 (EC	w
+HYDROLASE	human	Q10588	BST1	Q10588	11	112	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2 (EC 3.2.2.	w
+HYDROLASE	human	Q13107	USP4	Q13107	14	289	Ubiquitin carboxyl-terminal hydrolase 4 (EC 3.4.19.12) (Deub	w
+HYDROLASE	human	Q13510	ASAH1	Q13510	4	166	Acid ceramidase (AC) (ACDase) (Acid CDase) (EC 3.5.1.23) (Ac	w
+HYDROLASE	human	Q13867	BLMH	Q13867	1	167	Bleomycin hydrolase (BH) (BLM hydrolase) (BMH) (EC 3.4.22.40	w
+HYDROLASE	human	Q14032	BAAT	Q14032	6	94	Bile acid-CoA:amino acid N-acyltransferase (BACAT) (BAT) (EC	w
+HYDROLASE	human	Q14390	GGTLC2	Q14390	3	22	Glutathione hydrolase light chain 2 (Gamma-glutamyltransfera	w
+HYDROLASE	human	Q14694	USP10	Q14694	63	320	Ubiquitin carboxyl-terminal hydrolase 10 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q15125	EBP	Q15125	19	282	3-beta-hydroxysteroid-Delta(8),Delta(7)-isomerase (EC 5.3.3.	w
+HYDROLASE	human	Q16518	RPE65	Q16518	1	57	Retinoid isomerohydrolase (EC 3.1.1.64) (All-trans-retinyl-p	w
+HYDROLASE	human	Q16719	KYNU	Q16719	1	129	Kynureninase (EC 3.7.1.3) (L-kynurenine hydrolase)	w
+HYDROLASE	human	Q16775	HAGH	Q16775	16	142	Hydroxyacylglutathione hydrolase, mitochondrial (EC 3.1.2.6)	w
+HYDROLASE	human	Q16819	MEP1A	Q16819	5	107	Meprin A subunit alpha (EC 3.4.24.18) (Endopeptidase-2) (N-b	w
+HYDROLASE	human	Q16820	MEP1B	Q16820	10	131	Meprin A subunit beta (EC 3.4.24.63) (Endopeptidase-2) (Mepr	w
+HYDROLASE	human	Q2M3T9	HYAL4	Q2M3T9	3	64	Hyaluronidase-4 (Hyal-4) (EC 3.2.1.35) (Chondroitin sulfate 	w
+HYDROLASE	human	Q4G0A6	MINDY4	Q4G0A6	18	118	Probable ubiquitin carboxyl-terminal hydrolase MINDY-4 (EC 3	w
+HYDROLASE	human	Q504Q3	PAN2	Q504Q3	16	434	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
+HYDROLASE	human	Q53GS9	USP39	Q53GS9	25	357	Ubiquitin carboxyl-terminal hydrolase 39 (EC 3.4.19.12) (SAD	w
+HYDROLASE	human	Q5T6V5	QNG1	Q5T6V5	2	104	Queuosine 5'-phosphate N-glycosylase/hydrolase (EC 3.2.2.-) 	w
+HYDROLASE	human	Q5VST6	ABHD17B	Q5VST6	5	109	Alpha/beta hydrolase domain-containing protein 17B (Abhydrol	w
+HYDROLASE	human	Q6GMR7	FAAH2	Q6GMR7	1	30	Fatty-acid amide hydrolase 2 (EC 3.5.1.99) (Amidase domain-c	w
+HYDROLASE	human	Q6GMV3	PTRHD1	Q6GMV3	10	78	Putative peptidyl-tRNA hydrolase PTRHD1 (EC 3.1.1.29) (Pepti	w
+HYDROLASE	human	Q6GTS8	PM20D1	Q6GTS8	1	27	N-fatty-acyl-amino acid synthase/hydrolase PM20D1 (EC 3.5.1.	w
+HYDROLASE	human	Q6NVY1	HIBCH	Q6NVY1	24	281	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	w
+HYDROLASE	human	Q6P2I3	FAHD2B	Q6P2I3	2	43	Oxaloacetate tautomerase FAHD2B, mitochondrial (EC 5.3.2.2) 	w
+HYDROLASE	human	Q6P531	GGT6	Q6P531	3	24	Glutathione hydrolase 6 (EC 3.4.19.13) (Gamma-glutamyltransf	w
+HYDROLASE	human	Q6P587	FAHD1	Q6P587	4	231	Oxaloacetate tautomerase FAHD1, mitochondrial (EC 5.3.2.2) (	w
+HYDROLASE	human	Q6PCB6	ABHD17C	Q6PCB6	1	40	Alpha/beta hydrolase domain-containing protein 17C (Abhydrol	w
+HYDROLASE	human	Q6PIU2	NCEH1	Q6PIU2	4	212	Neutral cholesterol ester hydrolase 1 (NCEH) (EC 3.1.1.-) (A	w
+HYDROLASE	human	Q6QN14	USP17L6P	Q6QN14	6	23	Ubiquitin carboxyl-terminal hydrolase 17-like protein 6 (EC 	w
+HYDROLASE	human	Q6R6M4	USP17L2	Q6R6M4	7	73	Ubiquitin carboxyl-terminal hydrolase 17 (USP17) (EC 3.4.19.	w
+HYDROLASE	human	Q6SZW1	SARM1	Q6SZW1	8	143	NAD(+) hydrolase SARM1 (NADase SARM1) (hSARM1) (EC 3.2.2.6) 	w
+HYDROLASE	human	Q6UXT9	ABHD15	Q6UXT9	5	42	Protein ABHD15 (Alpha/beta hydrolase domain-containing prote	w
+HYDROLASE	human	Q70CQ1	USP49	Q70CQ1	25	156	Ubiquitin carboxyl-terminal hydrolase 49 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q70CQ3	USP30	Q70CQ3	20	160	Ubiquitin carboxyl-terminal hydrolase 30 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q70CQ4	USP31	Q70CQ4	12	117	Ubiquitin carboxyl-terminal hydrolase 31 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q70EK8	USP53	Q70EK8	37	196	Ubiquitin carboxyl-terminal hydrolase 53 (EC 3.4.19.12) (Ubi	w
+HYDROLASE	human	Q70EK9	USP51	Q70EK9	22	97	Ubiquitin carboxyl-terminal hydrolase 51 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q70EL1	USP54	Q70EL1	92	318	Ubiquitin carboxyl-terminal hydrolase 54 (EC 3.4.19.12) (Ubi	w
+HYDROLASE	human	Q70EL2	USP45	Q70EL2	16	65	Ubiquitin carboxyl-terminal hydrolase 45 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q70EL3	USP50	Q70EL3	9	94	Ubiquitin carboxyl-terminal hydrolase 50 (EC 3.4.19.12) (Ubi	w
+HYDROLASE	human	Q70EL4	USP43	Q70EL4	27	141	Ubiquitin carboxyl-terminal hydrolase 43 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q7L211	ABHD13	Q7L211	5	46	Protein ABHD13 (EC 3.-.-.-) (Alpha/beta hydrolase domain-con	w
+HYDROLASE	human	Q7RTZ2	USP17L1	Q7RTZ2	4	33	Ubiquitin carboxyl-terminal hydrolase 17-like protein 1 (EC 	w
+HYDROLASE	human	Q7Z5M8	ABHD12B	Q7Z5M8	3	20	Protein ABHD12B (EC 3.-.-.-) (Abhydrolase domain-containing 	w
+HYDROLASE	human	Q86T82	USP37	Q86T82	69	334	Ubiquitin carboxyl-terminal hydrolase 37 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q86TX2	ACOT1	Q86TX2	5	190	Acyl-coenzyme A thioesterase 1 (Acyl-CoA thioesterase 1) (EC	w
+HYDROLASE	human	Q86UV5	USP48	Q86UV5	13	250	Ubiquitin carboxyl-terminal hydrolase 48 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q86WA6	BPHL	Q86WA6	11	134	Serine hydrolase BPHL (EC 3.1.-.-) (Biphenyl hydrolase-like 	w
+HYDROLASE	human	Q86Y79	PTRH1	Q86Y79	9	65	Peptidyl-tRNA hydrolase (PTH) (EC 3.1.1.29)	w
+HYDROLASE	human	Q8IU60	DCP2	Q8IU60	25	195	m7GpppN-mRNA hydrolase (EC 3.6.1.62) (Nucleoside diphosphate	w
+HYDROLASE	human	Q8IUS5	EPHX4	Q8IUS5	3	89	Epoxide hydrolase 4 (EC 3.3.-.-) (Abhydrolase domain-contain	w
+HYDROLASE	human	Q8N2A8	PLD6	Q8N2A8	10	172	Mitochondrial cardiolipin hydrolase (EC 3.1.4.-) (Choline ph	w
+HYDROLASE	human	Q8N2K0	ABHD12	Q8N2K0	5	169	Lysophosphatidylserine lipase ABHD12 (EC 3.1.1.-) (2-arachid	w
+HYDROLASE	human	Q8N5J2	MINDY1	Q8N5J2	10	106	Ubiquitin carboxyl-terminal hydrolase MINDY-1 (EC 3.4.19.12)	w
+HYDROLASE	human	Q8NB14	USP38	Q8NB14	13	121	Ubiquitin carboxyl-terminal hydrolase 38 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q8NBR6	MINDY2	Q8NBR6	9	49	Ubiquitin carboxyl-terminal hydrolase MINDY-2 (EC 3.4.19.12)	w
+HYDROLASE	human	Q8NFA0	USP32	Q8NFA0	15	272	Ubiquitin carboxyl-terminal hydrolase 32 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q8NFV4	ABHD11	Q8NFV4	13	202	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
+HYDROLASE	human	Q8TB40	ABHD4	Q8TB40	2	67	(Lyso)-N-acylphosphatidylethanolamine lipase (EC 3.1.1.-) (A	w
+HYDROLASE	human	Q8TBE9	NANP	Q8TBE9	12	104	N-acylneuraminate-9-phosphatase (EC 3.1.3.29) (Haloacid deha	w
+HYDROLASE	human	Q8TEY7	USP33	Q8TEY7	33	242	Ubiquitin carboxyl-terminal hydrolase 33 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q8WXI4	ACOT11	Q8WXI4	5	124	Acyl-coenzyme A thioesterase 11 (Acyl-CoA thioesterase 11) (	w
+HYDROLASE	human	Q8WYK0	ACOT12	Q8WYK0	2	102	Acetyl-coenzyme A thioesterase (EC 3.1.2.1) (Acyl-CoA thioes	w
+HYDROLASE	human	Q8WZ82	OVCA2	Q8WZ82	4	45	Esterase OVCA2 (EC 3.1.1.1) (OVCA2 serine hydrolase domain-c	w
+HYDROLASE	human	Q92560	BAP1	Q92560	180	1359	Ubiquitin carboxyl-terminal hydrolase BAP1 (EC 3.4.19.12) (B	w
+HYDROLASE	human	Q92820	GGH	Q92820	21	262	Gamma-glutamyl hydrolase (EC 3.4.19.9) (Conjugase) (GH) (Gam	w
+HYDROLASE	human	Q92995	USP13	Q92995	13	172	Ubiquitin carboxyl-terminal hydrolase 13 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q93008	USP9X	Q93008	20	334	Ubiquitin carboxyl-terminal hydrolase 9X (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q93009	USP7	Q93009	111	896	Ubiquitin C-terminal hydrolase 7 (EC 3.4.19.12) (Deubiquitin	w
+HYDROLASE	human	Q96BW5	PTER	Q96BW5	1	97	N-acetyltaurine hydrolase (EC 3.1.-.-) (Phosphotriesterase-r	w
+HYDROLASE	human	Q96C86	DCPS	Q96C86	5	296	m7GpppX diphosphatase (EC 3.6.1.59) (DCS-1) (Decapping scave	w
+HYDROLASE	human	Q96G61	NUDT11	Q96G61	3	86	Diphosphoinositol polyphosphate phosphohydrolase 3-beta (DIP	w
+HYDROLASE	human	Q96GK7	FAHD2A	Q96GK7	4	80	Oxaloacetate tautomerase FAHD2A, mitochondrial (EC 5.3.2.2) 	w
+HYDROLASE	human	Q96GS6	ABHD17A	Q96GS6	1	54	Alpha/beta hydrolase domain-containing protein 17A (Abhydrol	w
+HYDROLASE	human	Q96I13	ABHD8	Q96I13	2	56	Protein ABHD8 (EC 3.-.-.-) (Alpha/beta hydrolase domain-cont	w
+HYDROLASE	human	Q96IU4	ABHD14B	Q96IU4	8	93	Putative protein-lysine deacylase ABHD14B (EC 2.3.1.-) (Alph	w
+HYDROLASE	human	Q96IZ2	ADTRP	Q96IZ2	0	12	Androgen-dependent TFPI-regulating protein (Fatty acid ester	w
+HYDROLASE	human	Q96K76	USP47	Q96K76	29	265	Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q96KP4	CNDP2	Q96KP4	2	192	Cytosolic non-specific dipeptidase (EC 3.4.13.18) (CNDP dipe	w
+HYDROLASE	human	Q96N76	UROC1	Q96N76	1	90	Urocanate hydratase (Urocanase) (EC 4.2.1.49) (Imidazolonepr	w
+HYDROLASE	human	Q96RU2	USP28	Q96RU2	39	221	Ubiquitin carboxyl-terminal hydrolase 28 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q96SE0	ABHD1	Q96SE0	0	17	Protein ABHD1 (EC 3.1.1.-) (Alpha/beta hydrolase domain-cont	w
+HYDROLASE	human	Q99519	NEU1	Q99519	12	132	Sialidase-1 (EC 3.2.1.18) (Acetylneuraminyl hydrolase) (G9 s	w
+HYDROLASE	human	Q9BQG2	NUDT12	Q9BQG2	4	53	NAD-capped RNA hydrolase NUDT12 (DeNADding enzyme NUDT12) (E	w
+HYDROLASE	human	Q9BSE5	AGMAT	Q9BSE5	2	93	Guanidino acid hydrolase, mitochondrial (EC 3.5.3.-) (Argina	w
+HYDROLASE	human	Q9BSH5	HDHD3	Q9BSH5	19	418	Haloacid dehalogenase-like hydrolase domain-containing prote	w
+HYDROLASE	human	Q9BUJ0	ABHD14A	Q9BUJ0	13	93	Protein ABHD14A (EC 3.-.-.-) (Alpha/beta hydrolase domain-co	w
+HYDROLASE	human	Q9BV23	ABHD6	Q9BV23	10	112	Monoacylglycerol lipase ABHD6 (EC 3.1.1.23) (2-arachidonoylg	w
+HYDROLASE	human	Q9BX51	GGTLC1	Q9BX51	2	16	Glutathione hydrolase light chain 1 (Gamma-glutamyltransfera	w
+HYDROLASE	human	Q9BXU7	USP26	Q9BXU7	8	73	Ubiquitin carboxyl-terminal hydrolase 26 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9BXW7	HDHD5	Q9BXW7	2	81	Haloacid dehalogenase-like hydrolase domain-containing 5 (Ca	w
+HYDROLASE	human	Q9H0E7	USP44	Q9H0E7	27	130	Ubiquitin carboxyl-terminal hydrolase 44 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9H0R4	HDHD2	Q9H0R4	2	62	Haloacid dehalogenase-like hydrolase domain-containing prote	w
+HYDROLASE	human	Q9H3Z7	ABHD16B	Q9H3Z7	2	24	ABHD16B (EC 3.1.1.111) (Alpha/beta hydrolase domain-containi	w
+HYDROLASE	human	Q9H6B9	EPHX3	Q9H6B9	0	39	Epoxide hydrolase 3 (EH3) (EC 3.3.2.10) (Abhydrolase domain-	w
+HYDROLASE	human	Q9H6V9	LDAH	Q9H6V9	1	26	Lipid droplet-associated hydrolase (EC 3.1.1.13) (Lipid drop	w
+HYDROLASE	human	Q9H8M7	MINDY3	Q9H8M7	13	103	Ubiquitin carboxyl-terminal hydrolase MINDY-3 (EC 3.4.19.12)	w
+HYDROLASE	human	Q9H9J4	USP42	Q9H9J4	18	142	Ubiquitin carboxyl-terminal hydrolase 42 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9HBJ7	USP29	Q9HBJ7	11	55	Ubiquitin carboxyl-terminal hydrolase 29 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9NPJ3	ACOT13	Q9NPJ3	4	71	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	w
+HYDROLASE	human	Q9NQC7	CYLD	Q9NQC7	97	926	Ubiquitin carboxyl-terminal hydrolase CYLD (EC 3.4.19.12) (D	w
+HYDROLASE	human	Q9NUJ1	ABHD10	Q9NUJ1	10	187	Palmitoyl-protein thioesterase ABHD10, mitochondrial (EC 3.1	w
+HYDROLASE	human	Q9NV23	OLAH	Q9NV23	4	118	S-acyl fatty acid synthase thioesterase, medium chain (EC 3.	w
+HYDROLASE	human	Q9NVE5	USP40	Q9NVE5	17	131	Ubiquitin carboxyl-terminal hydrolase 40 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9NVV5	AIG1	Q9NVV5	5	85	Androgen-induced gene 1 protein (AIG-1) (Fatty acid esters o	w
+HYDROLASE	human	Q9NZJ9	NUDT4	Q9NZJ9	2	35	Diphosphoinositol polyphosphate phosphohydrolase 2 (DIPP-2) 	w
+HYDROLASE	human	Q9P275	USP36	Q9P275	115	882	Ubiquitin carboxyl-terminal hydrolase 36 (EC 2.3.2.-) (EC 3.	w
+HYDROLASE	human	Q9P2H5	USP35	Q9P2H5	7	38	Ubiquitin carboxyl-terminal hydrolase 35 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9UHP3	USP25	Q9UHP3	34	230	Ubiquitin carboxyl-terminal hydrolase 25 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9UJ14	GGT7	Q9UJ14	22	135	Glutathione hydrolase 7 (EC 3.4.19.13) (Gamma-glutamyltransf	w
+HYDROLASE	human	Q9UK80	USP21	Q9UK80	45	222	Ubiquitin carboxyl-terminal hydrolase 21 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9UMW8	USP18	Q9UMW8	23	170	Ubl carboxyl-terminal hydrolase 18 (EC 3.4.19.12) (43 kDa IS	w
+HYDROLASE	human	Q9UPT9	USP22	Q9UPT9	35	318	Ubiquitin carboxyl-terminal hydrolase 22 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9UPU5	USP24	Q9UPU5	9	108	Ubiquitin carboxyl-terminal hydrolase 24 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9Y2K6	USP20	Q9Y2K6	50	271	Ubiquitin carboxyl-terminal hydrolase 20 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9Y305	ACOT9	Q9Y305	3	150	Acyl-coenzyme A thioesterase 9, mitochondrial (Acyl-CoA thio	w
+HYDROLASE	human	Q9Y3E5	PTRH2	Q9Y3E5	14	258	Peptidyl-tRNA hydrolase 2, mitochondrial (PTH 2) (EC 3.1.1.2	w
+HYDROLASE	human	Q9Y4E8	USP15	Q9Y4E8	40	546	Ubiquitin carboxyl-terminal hydrolase 15 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9Y5K5	UCHL5	Q9Y5K5	22	368	Ubiquitin carboxyl-terminal hydrolase isozyme L5 (UCH-L5) (E	w
+HYDROLASE	human	Q9Y5T5	USP16	Q9Y5T5	15	100	Ubiquitin carboxyl-terminal hydrolase 16 (EC 3.4.19.12) (Deu	w
+HYDROLASE	human	Q9Y6I4	USP3	Q9Y6I4	17	181	Ubiquitin carboxyl-terminal hydrolase 3 (EC 3.4.19.12) (Deub	w
+HYDROLASE	human	Q9Y6X5	ENPP4	Q9Y6X5	19	136	Bis(5'-adenosyl)-triphosphatase ENPP4 (EC 3.6.1.29) (AP3A hy	w
+HYDROLASE	virus	A0A068EGP6	pepv_034	A0A068EGP6	4	240	peptidyl-tRNA hydrolase	w
+HYDROLASE	virus	A0A068EGS2	fep_034	A0A068EGS2	7	221	peptidyl-tRNA hydrolase	w
+HYDROLASE	virus	A0A2H4X245	fgpv_028	A0A2H4X245	6	256	peptidyl-tRNA hydrolase	w
+HYDROLASE	virus	P21970	FPV054	P21970	34	250	Putative Nudix hydrolase FPV054	w
+HYDROLASE	virus	Q0NP94	TATV_DAH68_117	Q0NP94	10	220	Nudix hydrolase domain-containing protein	w
+HYDROLASE	virus	Q0NP95	TATV_DAH68_116	Q0NP95	11	219	Nudix hydrolase domain-containing protein	w
+HYDROLASE	virus	Q6VZV0	CNPV047	Q6VZV0	11	322	peptidyl-tRNA hydrolase	w
+HYDROLASE	virus	Q8V2R0		Q8V2R0	9	208	Nudix hydrolase domain-containing protein	w
+HYDROLASE	virus	Q9J5H2	FPV029	Q9J5H2	5	250	Putative peptidyl-tRNA hydrolase	w
+HYDROLASE	worm	A0A061ACY0	ath-1	A0A061ACY0	0	11	palmitoyl-protein hydrolase	w
+HYDROLASE	worm	A0A1C3NSL8	cest-26	A0A1C3NSL8	0	12	Carboxylic ester hydrolase	w
+HYDROLASE	worm	A7WK43	CELE_Y94H6A.12	A7WK43	0	6	peptidyl-tRNA hydrolase	w
+HYDROLASE	worm	B3WFZ3	C31H5.6	B3WFZ3	0	1	BAAT/acyl-CoA thioester hydrolase protein	w
+HYDROLASE	worm	G5EBW2	usp-50	G5EBW2	6	18	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	G5ECC7	usp-48	G5ECC7	1	11	Ubiquitin carboxyl-terminal hydrolase usp-48	w
+HYDROLASE	worm	G5ECE8	chhy-1	G5ECE8	0	19	Chondroitin hydrolase	w
+HYDROLASE	worm	G5EDN1	ace-4	G5EDN1	1	5	Carboxylic ester hydrolase	w
+HYDROLASE	worm	G5EDV9	ace-2	G5EDV9	1	4	Carboxylic ester hydrolase	w
+HYDROLASE	worm	G5EF86	CELE_Y48G10A.1	G5EF86	0	20	S-formylglutathione hydrolase	w
+HYDROLASE	worm	H2L010	CELE_T22F3.2	H2L010	0	2	Ubiquitin carboxyl-terminal hydrolase 36	w
+HYDROLASE	worm	O01302	cest-1.1	O01302	1	14	Carboxylic ester hydrolase	w
+HYDROLASE	worm	O01467	C04E6.5	O01467	1	4	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	O01581	CELE_K08B12.3	O01581	0	12	Haloacid dehalogenase-like hydrolase domain-containing prote	w
+HYDROLASE	worm	O16490	cest-30	O16490	0	5	Carboxylic ester hydrolase	w
+HYDROLASE	worm	O16497	cest-35.1	O16497	0	1	Carboxylic ester hydrolase	w
+HYDROLASE	worm	O17352	aagr-4	O17352	0	15	Glycoside hydrolase family 31 N-terminal domain-containing p	w
+HYDROLASE	worm	O44183	ltah-1.2	O44183	0	3	Peptidase M1 leukotriene A4 hydrolase/aminopeptidase C-termi	w
+HYDROLASE	worm	O44438	otub-4	O44438	1	6	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	O44578	ZK697.8	O44578	1	5	Probable 5-hydroxyisourate hydrolase ZK697.8	w
+HYDROLASE	worm	O44787	usp-39	O44787	2	29	Ubiquitin carboxyl-terminal hydrolase 39	w
+HYDROLASE	worm	O45069	C11D2.4	O45069	0	1	Queuosine 5'-phosphate N-glycosylase/hydrolase	w
+HYDROLASE	worm	O45298	atgp-2	O45298	7	20	Glycosyl hydrolase family 13 catalytic domain-containing pro	w
+HYDROLASE	worm	O45830	ndx-1	O45830	0	3	Putative nudix hydrolase 1	w
+HYDROLASE	worm	O61902	ndx-2	O61902	0	10	Putative nudix hydrolase 2	w
+HYDROLASE	worm	O62255	dcap-2	O62255	2	41	m7GpppN-mRNA hydrolase dcap-2	w
+HYDROLASE	worm	O62460	afmd-2	O62460	0	2	Alpha/beta hydrolase fold-3 domain-containing protein	w
+HYDROLASE	worm	O76387	C24G6.8	O76387	1	4	Probable peptidyl-tRNA hydrolase 2	w
+HYDROLASE	worm	O76632	bgal-2	O76632	0	6	Glycoside hydrolase 35 catalytic domain-containing protein	w
+HYDROLASE	worm	P34547	usp-46	P34547	3	6	Ubiquitin carboxyl-terminal hydrolase 46	w
+HYDROLASE	worm	P91148	ndx-7	P91148	0	10	Putative nudix hydrolase 7	w
+HYDROLASE	worm	P91502	usp-5	P91502	2	19	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	P92016	cest-1.2	P92016	0	13	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q09297	ndx-6	Q09297	0	5	Putative nudix hydrolase 6	w
+HYDROLASE	worm	Q09444	ubh-4	Q09444	3	72	Ubiquitin carboxyl-terminal hydrolase ubh-4	w
+HYDROLASE	worm	Q09657	CELE_ZK1320.9	Q09657	1	31	Acetyl-CoA hydrolase	w
+HYDROLASE	worm	Q09931	K02C4.3	Q09931	1	22	Probable ubiquitin carboxyl-terminal hydrolase K02C4.3	w
+HYDROLASE	worm	Q17361	usp-14	Q17361	6	73	Ubiquitin carboxyl-terminal hydrolase 14	w
+HYDROLASE	worm	Q17447	faah-2	Q17447	0	2	fatty acid amide hydrolase	w
+HYDROLASE	worm	Q17449	faah-1	Q17449	2	11	Fatty acid amide hydrolase 1	w
+HYDROLASE	worm	Q18599	acer-1	Q18599	0	7	Acetyl-CoA hydrolase	w
+HYDROLASE	worm	Q18758	klo-1	Q18758	0	6	Glycoside hydrolase family 1 protein	w
+HYDROLASE	worm	Q18926	CELE_D1022.4	Q18926	0	19	Dienelactone hydrolase domain-containing protein	w
+HYDROLASE	worm	Q19132	CELE_F07A11.4	Q19132	0	3	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	Q19278	hach-1	Q19278	5	69	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial	w
+HYDROLASE	worm	Q19427	ndx-9	Q19427	0	3	NAD-capped RNA hydrolase ndx-9	w
+HYDROLASE	worm	Q19839	trcs-1	Q19839	0	12	Alpha/beta hydrolase fold-3 domain-containing protein	w
+HYDROLASE	worm	Q21266	cest-17	Q21266	0	16	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q21662	CELE_R03E9.2	Q21662	0	2	Glycosyl hydrolase family 63 C-terminal domain-containing pr	w
+HYDROLASE	worm	Q21882	R09H10.3	Q21882	1	12	Probable 5-hydroxyisourate hydrolase R09H10.3	w
+HYDROLASE	worm	Q22240	CELE_T05H10.1	Q22240	0	5	Ubiquitin carboxyl-terminal hydrolase 47	w
+HYDROLASE	worm	Q23008	cest-28	Q23008	0	7	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q23009	cest-31	Q23009	0	9	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q23010	cest-34	Q23010	0	1	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q23068	CELE_W01A11.1	Q23068	0	3	Epoxide hydrolase	w
+HYDROLASE	worm	Q23236	ndx-3	Q23236	0	8	Nudix hydrolase 3	w
+HYDROLASE	worm	Q23384	nit-1	Q23384	0	6	CN hydrolase domain-containing protein	w
+HYDROLASE	worm	Q4LDP0	cest-24	Q4LDP0	0	19	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q7JKC3	math-33	Q7JKC3	3	41	Ubiquitin carboxyl-terminal hydrolase 7	w
+HYDROLASE	worm	Q7JLI8	duo-1	Q7JLI8	1	4	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	Q7JMM5	CELE_T09B9.1	Q7JMM5	1	12	Alpha/beta hydrolase fold-3 domain-containing protein	w
+HYDROLASE	worm	Q7JMS4	cyld-1	Q7JMS4	2	39	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	Q86DA5	tir-1	Q86DA5	0	26	NAD(+) hydrolase tir-1	w
+HYDROLASE	worm	Q86S38	cest-27	Q86S38	0	1	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q8IAA2	josd-1	Q8IAA2	2	4	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	Q8MNY0	ubh-2	Q8MNY0	1	2	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q8MQ23	cest-13	Q8MQ23	0	12	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q8WT44	cyk-3	Q8WT44	0	16	Ubiquitin carboxyl-terminal hydrolase cyk-3	w
+HYDROLASE	worm	Q93251	cest-8	Q93251	0	5	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q93595	CELE_F26A3.1	Q93595	0	1	Lipid droplet-associated hydrolase	w
+HYDROLASE	worm	Q93875	usp-33	Q93875	0	10	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q94187	CELE_F16F9.4	Q94187	0	15	Alpha/beta hydrolase fold-3 domain-containing protein	w
+HYDROLASE	worm	Q95Q77	C32E12.4	Q95Q77	1	5	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q95YC3	cest-35.2	Q95YC3	0	2	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q95YC4	cest-32	Q95YC4	0	11	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q965V9	ubh-3	Q965V9	1	10	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q9BKQ6	CELE_Y67D2.2	Q9BKQ6	5	25	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q9GRV2	usp-3	Q9GRV2	1	24	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q9N370	CELE_Y55F3AM.9	Q9N370	0	4	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q9N4T5	otub-2	Q9N4T5	1	8	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	Q9TZA0	klo-2	Q9TZA0	0	4	Glycoside hydrolase family 1 protein	w
+HYDROLASE	worm	Q9U295	ace-3	Q9U295	0	2	Carboxylic ester hydrolase	w
+HYDROLASE	worm	Q9UAV3	ubh-1	Q9UAV3	1	3	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	worm	Q9XWL5	nceh-1	Q9XWL5	2	12	Alpha/beta hydrolase fold-3 domain-containing protein	w
+HYDROLASE	worm	Q9XWN7	Y43F8C.13	Q9XWN7	0	15	Nucleoside hydrolase	w
+HYDROLASE	worm	Q9XXJ1	CELE_Y17G7B.3	Q9XXJ1	0	5	hydroxyacylglutathione hydrolase	w
+HYDROLASE	worm	U4PBM0	duo-3	U4PBM0	2	7	ubiquitinyl hydrolase 1	w
+HYDROLASE	worm	V6CJY2	usp-4	V6CJY2	1	6	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	yeast	P25037	UBP1	P25037	2	51	Ubiquitin carboxyl-terminal hydrolase 1	w
+HYDROLASE	yeast	P32316	ACH1	P32316	0	11	Acetyl-CoA hydrolase	w
+HYDROLASE	yeast	P32571	DOA4	P32571	3	28	Ubiquitin carboxyl-terminal hydrolase 4	w
+HYDROLASE	yeast	P34222	PTH2	P34222	3	12	Peptidyl-tRNA hydrolase 2	w
+HYDROLASE	yeast	P35127	YUH1	P35127	2	9	Ubiquitin carboxyl-terminal hydrolase YUH1	w
+HYDROLASE	yeast	P36026	UBP11	P36026	1	4	Ubiquitin carboxyl-terminal hydrolase 11	w
+HYDROLASE	yeast	P36151	YKR070W	P36151	0	7	Mitochondrial hydrolase YKR070W	w
+HYDROLASE	yeast	P38081	YBR056W	P38081	0	5	Uncharacterized glycosyl hydrolase YBR056W	w
+HYDROLASE	yeast	P38139	LDH1	P38139	0	16	Lipid droplet hydrolase 1	w
+HYDROLASE	yeast	P38187	UBP13	P38187	4	73	Ubiquitin carboxyl-terminal hydrolase 13	w
+HYDROLASE	yeast	P38237	UBP14	P38237	3	36	Ubiquitin carboxyl-terminal hydrolase 14	w
+HYDROLASE	yeast	P38876	PTH1	P38876	0	5	Peptidyl-tRNA hydrolase	w
+HYDROLASE	yeast	P39538	UBP12	P39538	1	85	Ubiquitin carboxyl-terminal hydrolase 12	w
+HYDROLASE	yeast	P39944	UBP5	P39944	2	17	Ubiquitin carboxyl-terminal hydrolase 5	w
+HYDROLASE	yeast	P39967	UBP9	P39967	2	22	Ubiquitin carboxyl-terminal hydrolase 9	w
+HYDROLASE	yeast	P40363	YJL068C	P40363	0	8	S-formylglutathione hydrolase	w
+HYDROLASE	yeast	P40453	UBP7	P40453	5	23	Ubiquitin carboxyl-terminal hydrolase 7	w
+HYDROLASE	yeast	P41903	TES1	P41903	0	15	Peroxisomal acyl-coenzyme A thioester hydrolase 1	w
+HYDROLASE	yeast	P43588	RPN11	P43588	13	737	Ubiquitin carboxyl-terminal hydrolase RPN11	w
+HYDROLASE	yeast	P43593	UBP6	P43593	4	68	Ubiquitin carboxyl-terminal hydrolase 6	w
+HYDROLASE	yeast	P50101	UBP15	P50101	10	123	Ubiquitin carboxyl-terminal hydrolase 15	w
+HYDROLASE	yeast	P50102	UBP8	P50102	7	184	Ubiquitin carboxyl-terminal hydrolase 8	w
+HYDROLASE	yeast	P53164	NPY1	P53164	0	8	NAD-capped RNA hydrolase NPY1	w
+HYDROLASE	yeast	P53324	SAY1	P53324	0	21	Steryl acetyl hydrolase 1	w
+HYDROLASE	yeast	P53550	DCP2	P53550	7	104	m7GpppN-mRNA hydrolase	w
+HYDROLASE	yeast	P53750	YNR064C	P53750	1	10	Uncharacterized hydrolase YNR064C	w
+HYDROLASE	yeast	P53874	UBP10	P53874	22	176	Ubiquitin carboxyl-terminal hydrolase 10	w
+HYDROLASE	yeast	Q01476	UBP2	Q01476	10	84	Ubiquitin carboxyl-terminal hydrolase 2	w
+HYDROLASE	yeast	Q01477	UBP3	Q01477	7	133	Ubiquitin carboxyl-terminal hydrolase 3	w
+HYDROLASE	yeast	Q02863	UBP16	Q02863	3	28	Ubiquitin carboxyl-terminal hydrolase 16	w
+HYDROLASE	yeast	Q05584	GLO2	Q05584	1	17	Hydroxyacylglutathione hydrolase, cytoplasmic isozyme	w
+HYDROLASE	yeast	Q05902	ECM38	Q05902	0	3	Glutathione hydrolase proenzyme	w
+HYDROLASE	yeast	Q08930	YPL191C	Q08930	1	7	Ubiquitin carboxyl-terminal hydrolase MIY1	w
+HYDROLASE	yeast	Q12320	GLO4	Q12320	1	16	Hydroxyacylglutathione hydrolase, mitochondrial	w
+HYDROLASE	yeast	Q12486	YOR131C	Q12486	1	4	Uncharacterized hydrolase YOR131C	w
+HYDROLASE	zebrafish	A0A0G2KJW7	LOC553228	A0A0G2KJW7	1	2	folate gamma-glutamyl hydrolase	w
+HYDROLASE	zebrafish	A0A0G2KLD8	bphl	A0A0G2KLD8	2	9	Biphenyl hydrolase like	w
+HYDROLASE	zebrafish	A0A0R4IB93	usp48	A0A0R4IB93	13	28	Ubiquitin carboxyl-terminal hydrolase 48	w
+HYDROLASE	zebrafish	A0A0R4IFT8	usp47	A0A0R4IFT8	0	4	Ubiquitin carboxyl-terminal hydrolase 47	w
+HYDROLASE	zebrafish	A0A0R4ILH2	ephx4	A0A0R4ILH2	0	9	Epoxide hydrolase 4	w
+HYDROLASE	zebrafish	A0A0R4IPW5	LOC100334697	A0A0R4IPW5	1	9	Carboxylic ester hydrolase	w
+HYDROLASE	zebrafish	A0A0R4ITP2	atxn3	A0A0R4ITP2	8	66	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	A0A0R4IVE2	usp10	A0A0R4IVE2	8	55	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	A0A0R4IYT8	si:ch211-71n6.4	A0A0R4IYT8	0	3	Carboxylic ester hydrolase	w
+HYDROLASE	zebrafish	A0A2R8QST4	usp31	A0A2R8QST4	3	70	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	A0A8M1N4D8	ptrh1	A0A8M1N4D8	0	9	peptidyl-tRNA hydrolase	w
+HYDROLASE	zebrafish	A0A8M1PFJ8	cel.1	A0A8M1PFJ8	0	17	Carboxylic ester hydrolase	w
+HYDROLASE	zebrafish	A0A8M1Q1F6	nceh1b.2	A0A8M1Q1F6	0	65	Neutral cholesterol ester hydrolase 1	w
+HYDROLASE	zebrafish	A0A8M9P169	usp8	A0A8M9P169	18	47	Ubiquitin carboxyl-terminal hydrolase 8	w
+HYDROLASE	zebrafish	A0A8M9Q9P3	nudt12	A0A8M9Q9P3	0	13	NAD-capped RNA hydrolase NUDT12	w
+HYDROLASE	zebrafish	A0AB12XWH9	cel.2	A0AB12XWH9	0	17	Carboxylic ester hydrolase	w
+HYDROLASE	zebrafish	A0AB32T1Z2	LOC137487223	A0AB32T1Z2	1	25	palmitoyl-CoA hydrolase	w
+HYDROLASE	zebrafish	A0AB32TL79	LOC570571	A0AB32TL79	0	9	Epoxide hydrolase 4	w
+HYDROLASE	zebrafish	A0AUR5	mindy3	A0AUR5	0	2	Ubiquitin carboxyl-terminal hydrolase MINDY-3	w
+HYDROLASE	zebrafish	A1L2G3	bap1	A1L2G3	25	110	Ubiquitin carboxyl-terminal hydrolase BAP1	w
+HYDROLASE	zebrafish	A2BGT0	usp30	A2BGT0	12	60	Ubiquitin carboxyl-terminal hydrolase 30	w
+HYDROLASE	zebrafish	A3KNW0	pld6	A3KNW0	0	6	Mitochondrial cardiolipin hydrolase	w
+HYDROLASE	zebrafish	A3KPZ6	ppt2b	A3KPZ6	0	25	palmitoyl-CoA hydrolase	w
+HYDROLASE	zebrafish	A3KQS4	mindy1	A3KQS4	8	16	Ubiquitin carboxyl-terminal hydrolase MINDY-1	w
+HYDROLASE	zebrafish	A4FUN7	usp12a	A4FUN7	10	36	Ubiquitin carboxyl-terminal hydrolase 12A	w
+HYDROLASE	zebrafish	A5PMR2	usp33	A5PMR2	7	74	Ubiquitin carboxyl-terminal hydrolase 33	w
+HYDROLASE	zebrafish	A5PN09	usp20	A5PN09	0	73	Ubiquitin carboxyl-terminal hydrolase 20	w
+HYDROLASE	zebrafish	A5WWB0	usp46	A5WWB0	11	35	Ubiquitin carboxyl-terminal hydrolase 46	w
+HYDROLASE	zebrafish	A6H8I0	usp22	A6H8I0	17	75	Ubiquitin carboxyl-terminal hydrolase 22	w
+HYDROLASE	zebrafish	A8HAL1	usp16	A8HAL1	0	12	Ubiquitin carboxyl-terminal hydrolase 16	w
+HYDROLASE	zebrafish	E7EZD6	usp4	E7EZD6	2	79	Ubiquitin carboxyl-terminal hydrolase 4	w
+HYDROLASE	zebrafish	E7F048	cyld2	E7F048	6	31	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	E7F0I1	urahb	E7F0I1	1	14	5-hydroxyisourate hydrolase	w
+HYDROLASE	zebrafish	E7F1X5	cyldl	E7F1X5	7	32	Ubiquitin carboxyl-terminal hydrolase CYLD	w
+HYDROLASE	zebrafish	E7F2W1	aadac	E7F2W1	0	65	Neutral cholesterol ester hydrolase 1	w
+HYDROLASE	zebrafish	E7F4C0	usp36	E7F4C0	0	1	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	E7F4N9	usp12b	E7F4N9	11	35	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	E7F6T8	usp37	E7F6T8	5	20	Ubiquitin carboxyl-terminal hydrolase 37	w
+HYDROLASE	zebrafish	E7FD00	usp43b	E7FD00	7	70	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	E7FEV5	cyld	E7FEV5	10	42	Ubiquitin carboxyl-terminal hydrolase CYLD	w
+HYDROLASE	zebrafish	E7FFJ7	ggt5b	E7FFJ7	0	3	Glutathione hydrolase	w
+HYDROLASE	zebrafish	E7FGL4	abhd17ab	E7FGL4	0	6	palmitoyl-protein hydrolase	w
+HYDROLASE	zebrafish	E9QFQ5	usp21	E9QFQ5	6	27	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	E9QG68	usp45	E9QG68	1	3	Ubiquitin carboxyl-terminal hydrolase 45	w
+HYDROLASE	zebrafish	F1Q6B2	ptrh2	F1Q6B2	0	3	Peptidyl-tRNA hydrolase 2, mitochondrial	w
+HYDROLASE	zebrafish	F1Q7D2	usp40	F1Q7D2	11	52	Ubiquitin carboxyl-terminal hydrolase 40	w
+HYDROLASE	zebrafish	F1QFS9	usp13	F1QFS9	9	29	Ubiquitin carboxyl-terminal hydrolase 13	w
+HYDROLASE	zebrafish	F1QPF4	usp11	F1QPF4	4	72	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	F1QPN8	otud5b	F1QPN8	7	14	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	F1QUS9	usp7	F1QUS9	13	92	Ubiquitin carboxyl-terminal hydrolase 7	w
+HYDROLASE	zebrafish	F1QWA8	sarm1	F1QWA8	0	39	NAD(+) hydrolase SARM1	w
+HYDROLASE	zebrafish	F1QY38	usp42	F1QY38	0	4	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	F1R2P1	usp2a	F1R2P1	6	19	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	F1RBA1	usp38	F1RBA1	9	35	Ubiquitin carboxyl-terminal hydrolase 38	w
+HYDROLASE	zebrafish	F1RBY0	mindy2	F1RBY0	7	16	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	F1RD68	ppt2a.1	F1RD68	2	25	palmitoyl-CoA hydrolase	w
+HYDROLASE	zebrafish	F1RDC7	usp2b	F1RDC7	6	17	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	F8W5P0	ggt1b	F8W5P0	0	1	Glutathione hydrolase	w
+HYDROLASE	zebrafish	I3ITK3	si:dkey-19e4.5	I3ITK3	0	2	peptidyl-tRNA hydrolase	w
+HYDROLASE	zebrafish	Q05AM4	faah2b	Q05AM4	0	9	Fatty-acid amide hydrolase 2-B	w
+HYDROLASE	zebrafish	Q06S87	urah	Q06S87	1	14	5-hydroxyisourate hydrolase	w
+HYDROLASE	zebrafish	Q08BB2	pm20d1.2	Q08BB2	0	3	N-fatty-acyl-amino acid synthase/hydrolase PM20D1.2	w
+HYDROLASE	zebrafish	Q0P3Z2	pter	Q0P3Z2	0	17	N-acetyltaurine hydrolase	w
+HYDROLASE	zebrafish	Q1LUZ9	ces3	Q1LUZ9	0	13	Carboxylic ester hydrolase	w
+HYDROLASE	zebrafish	Q1MTK1	usp49	Q1MTK1	13	52	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	Q32LT9	pm20d1.1	Q32LT9	0	3	N-fatty-acyl-amino acid synthase/hydrolase PM20D1.1	w
+HYDROLASE	zebrafish	Q504C0	uchl3	Q504C0	10	35	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	Q567K2	esd	Q567K2	0	1	S-formylglutathione hydrolase	w
+HYDROLASE	zebrafish	Q58EB4	hibch	Q58EB4	8	170	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial	w
+HYDROLASE	zebrafish	Q6DBR3	adprh	Q6DBR3	0	8	ADP-ribosylarginine hydrolase	w
+HYDROLASE	zebrafish	Q6DGB0	abhd17b	Q6DGB0	0	5	palmitoyl-protein hydrolase	w
+HYDROLASE	zebrafish	Q6DH69	faah2a	Q6DH69	1	9	Fatty-acid amide hydrolase 2-A	w
+HYDROLASE	zebrafish	Q6DKF1	nceh1a	Q6DKF1	1	65	Neutral cholesterol ester hydrolase 1	w
+HYDROLASE	zebrafish	Q6NWL6	uchl5	Q6NWL6	11	87	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	Q6NY42	ggh	Q6NY42	1	2	folate gamma-glutamyl hydrolase	w
+HYDROLASE	zebrafish	Q6P963	hagh	Q6P963	0	17	Hydroxyacylglutathione hydrolase, mitochondrial	w
+HYDROLASE	zebrafish	Q6PBW8	lypla2	Q6PBW8	0	3	palmitoyl-protein hydrolase	w
+HYDROLASE	zebrafish	Q6PC81	desi1a	Q6PC81	2	31	palmitoyl-protein hydrolase	w
+HYDROLASE	zebrafish	Q7T012	hdhd3	Q7T012	0	3	Haloacid dehalogenase-like hydrolase domain-containing prote	w
+HYDROLASE	zebrafish	Q7ZUM8	usp44	Q7ZUM8	12	61	Ubiquitin carboxyl-terminal hydrolase 44	w
+HYDROLASE	zebrafish	Q7ZVZ7	abhd17c	Q7ZVZ7	0	6	Alpha/beta hydrolase domain-containing protein 17C	w
+HYDROLASE	zebrafish	Q803B9	dcp2	Q803B9	8	84	m7GpppN-mRNA hydrolase	w
+HYDROLASE	zebrafish	X1WEZ5	otud7a	X1WEZ5	3	12	ubiquitinyl hydrolase 1	w
+HYDROLASE	zebrafish	X1WG21	usp3	X1WG21	9	69	Ubiquitin carboxyl-terminal hydrolase	w
+HYDROLASE	zebrafish	X1WG38	ppt2a.2	X1WG38	2	25	palmitoyl-CoA hydrolase	w
+HYDROLASE-1	fly	FBgn0035309	CG15879	Q9W048	3	6	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	fly	FBgn0265264	CG17097	E2QCS7	63	369	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	worm	A0A0S4XR75	CELE_K08D9.4	A0A0S4XR75	0	10	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	worm	O62084	C31H5.1	O62084	0	13	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	worm	Q18852	C54G4.7	Q18852	0	1	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	worm	Q9N366	abhd-14	Q9N366	1	2	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	worm	Q9N4E1	CELE_Y73C8B.2	Q9N4E1	0	7	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	worm	Q9N4E2	CELE_Y73C8B.3	Q9N4E2	0	3	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-1	worm	Q9TZ58	CELE_K01A2.5	Q9TZ58	2	59	AB hydrolase-1 domain-containing protein	w
+HYDROLASE-LIKE	fly	FBgn0035371	AhcyL1	Q9VZX9	7	93	Adenosylhomocysteinase-like 1 (dAhcyL1) (Inactive S-adenosyl	w
+HYDROLASE-LIKE	human	O43865	AHCYL1	O43865	37	417	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	w
+HYDROLASE-LIKE	human	Q6PII5	HAGHL	Q6PII5	7	74	Hydroxyacylglutathione hydrolase-like protein (EC 3.1.2.-)	w
+HYDROLASE-LIKE	human	Q6ZUV0	ACOT7L	Q6ZUV0	0	6	Cytosolic acyl coenzyme A thioester hydrolase-like (Acyl-CoA	w
+HYDROLASE-LIKE	human	Q86WA6	BPHL	Q86WA6	11	134	Serine hydrolase BPHL (EC 3.1.-.-) (Biphenyl hydrolase-like 	w
+HYDROLASE-LIKE	human	Q8NDY3	ADPRHL1	Q8NDY3	0	50	Inactive ADP-ribosyltransferase ARH2 (ADP-ribosylhydrolase-l	w
+HYDROLASE-LIKE	human	Q96HN2	AHCYL2	Q96HN2	29	217	S-adenosylhomocysteine hydrolase-like protein 2 (IP(3)Rs bin	w
+HYDROLASE-LIKE	human	Q9H4I8	SERHL2	Q9H4I8	2	21	Serine hydrolase-like protein 2 (EC 3.1.-.-)	w
+HYDROLASE-LIKE	human	Q9NQF3	SERHL	Q9NQF3	1	35	Serine hydrolase-like protein (SHL) (EC 3.1.-.-)	w
+HYDROLASE-LIKE	zebrafish	A2BGU9	serhl	A2BGU9	0	10	Serine hydrolase-like protein	w
+HYDROLASE-RELATED	fly	FBgn0037683	CG18473	Q9VHF2	1	8	Phosphotriesterase-related protein (EC 3.1.-.-) (Parathion h	w
+HYDROLASE-RELATED	human	Q6UWM7	LCTL	Q6UWM7	7	49	Lactase-like protein (Klotho/lactase-phlorizin hydrolase-rel	w
+HYDROLASE-RELATED	human	Q86WA6	BPHL	Q86WA6	11	134	Serine hydrolase BPHL (EC 3.1.-.-) (Biphenyl hydrolase-like 	w
+HYDROLASE-RELATED	human	Q8IUS5	EPHX4	Q8IUS5	3	89	Epoxide hydrolase 4 (EC 3.3.-.-) (Abhydrolase domain-contain	w
+HYDROLASE-TYPE	worm	Q9NET4	CELE_Y39B6A.7	Q9NET4	0	1	SGNH hydrolase-type esterase domain-containing protein	w
+HYDROLASE-TYPE	zebrafish	A0AB32TXB5	LOC137496372	A0AB32TXB5	0	2	SGNH hydrolase-type esterase domain-containing protein	w
+HYDROLASES	yeast	P38777	FSH1	P38777	0	5	Family of serine hydrolases 1	w
+HYDROLASES	yeast	Q05015	FSH2	Q05015	0	3	Family of serine hydrolases 2	w
+HYDROLASES	yeast	Q99369	FSH3	Q99369	0	5	Family of serine hydrolases 3	w
+HYDROLETHALUS	human	Q96M11	HYLS1	Q96M11	5	20	Centriolar and ciliogenesis-associated protein HYLS1 (Hydrol	w
+HYDROLYASE	fly	FBgn0030066	Uros1	Q9W3B3	0	8	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+HYDROLYASE	fly	FBgn0038361	Uros2	Q9VF38	0	5	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+HYDROLYASE	human	P10746	UROS	P10746	1	70	Uroporphyrinogen-III synthase (UROIIIS) (UROS) (EC 4.2.1.75)	w
+HYDROPEROXIDE	human	P36969	GPX4	P36969	17	147	Phospholipid hydroperoxide glutathione peroxidase GPX4 (PHGP	w
+HYDROPEROXIDE	human	Q9BYJ1	ALOXE3	Q9BYJ1	5	75	Hydroperoxide isomerase ALOXE3 (Epidermis-type lipoxygenase 	w
+HYDROPEROXIDE	zebrafish	A0A8M6YX78	si:dkey-17e16.9	A0A8M6YX78	0	7	Hydroperoxide isomerase ALOXE3	w
+HYDROPEROXY	human	P04798	CYP1A1	P04798	13	232	Cytochrome P450 1A1 (CYPIA1) (EC 1.14.14.1) (Cytochrome P450	w
+HYDROPEROXY	human	P05177	CYP1A2	P05177	6	104	Cytochrome P450 1A2 (EC 1.14.14.1) (CYPIA2) (Cholesterol 25-	w
+HYDROPEROXY	human	P24557	TBXAS1	P24557	11	109	Thromboxane-A synthase (TXA synthase) (TXS) (EC 5.3.99.5) (C	w
+HYDROPEROXY	human	Q16647	PTGIS	Q16647	3	97	Prostacyclin synthase (EC 5.3.99.4) (Hydroperoxy icosatetrae	w
+HYDROPEROXY	human	Q16678	CYP1B1	Q16678	20	121	Cytochrome P450 1B1 (EC 1.14.14.1) (CYPIB1) (Hydroperoxy ico	w
+HYDROPEROXY	human	Q96SQ9	CYP2S1	Q96SQ9	17	156	Cytochrome P450 2S1 (EC 1.14.14.-) (CYPIIS1) (Hydroperoxy ic	w
+HYDROPEROXY	human	Q9BYJ1	ALOXE3	Q9BYJ1	5	75	Hydroperoxide isomerase ALOXE3 (Epidermis-type lipoxygenase 	w
+HYDROPEROXYOCTADECADIENOATE	human	P08263	GSTA1	P08263	18	86	Glutathione S-transferase A1 (EC 2.5.1.18) (13-hydroperoxyoc	w
+HYDROPHILIN	yeast	P53872	YNL190W	P53872	1	12	Hydrophilin YNL190W	w
+HYDROPHOBESTIN	human	Q99674	CGREF1	Q99674	15	45	Cell growth regulator with EF hand domain protein 1 (Cell gr	w
+HYDROPHOBIC	human	Q5VXU3	CHIC1	Q5VXU3	3	18	Cysteine-rich hydrophobic domain-containing protein 1 (Brain	w
+HYDROPHOBIC	human	Q9NRP0	OSTC	Q9NRP0	13	178	Oligosaccharyltransferase complex subunit OSTC (Hydrophobic 	w
+HYDROPHOBIC	human	Q9UBV8	PEF1	Q9UBV8	20	166	Peflin (PEF protein with a long N-terminal hydrophobic domai	w
+HYDROPHOBIC	human	Q9UKJ5	CHIC2	Q9UKJ5	5	89	Cysteine-rich hydrophobic domain-containing protein 2 (BrX-l	w
+HYDROPHOBIC	virus	A0A0D3R121		A0A0D3R121	0	7	Small hydrophobic protein	w
+HYDROPHOBIC	virus	A0AAE8XBL4	SH (U2)	A0AAE8XBL4	0	8	Small hydrophobic protein	w
+HYDROPHOBIC	virus	A0AAE8XCJ6	SH (U3)	A0AAE8XCJ6	0	8	Small hydrophobic protein	w
+HYDROPHOBIC	virus	A0AAE9BMQ5	SH (U2)	A0AAE9BMQ5	1	8	Small hydrophobic protein	w
+HYDROPHOBIC	virus	A0AAE9BMR5	SH (U2)	A0AAE9BMR5	0	12	Small hydrophobic protein	w
+HYDROPHOBIC	virus	A0AAE9BMV8	SH (U2)	A0AAE9BMV8	0	7	Small hydrophobic protein	w
+HYDROPHOBIC	virus	P07577	SH	P07577	0	8	Small hydrophobic protein	w
+HYDROPHOBIC	virus	P22112	SH	P22112	1	7	Small hydrophobic protein	w
+HYDROPHOBIC	virus	P24616	SH	P24616	1	11	Small hydrophobic protein	w
+HYDROPHOBIC	virus	Q4VKV4	SH	Q4VKV4	0	7	Small hydrophobic protein	w
+HYDROQUINO	human	Q16206	ENOX2	Q16206	16	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
+HYDROQUINONE	human	Q16206	ENOX2	Q16206	16	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
+HYDROQUINONE	human	Q8TC92	ENOX1	Q8TC92	5	34	Ecto-NOX disulfide-thiol exchanger 1 (Candidate growth-relat	w
+HYDROX	human	Q16836	HADH	Q16836	6	173	Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial (HCDH) (	w
+HYDROX	human	Q9NVH6	TMLHE	Q9NVH6	2	89	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
+HYDROXY	fly	FBgn0032781	RtcB	Q9VIW7	2	14	RNA-splicing ligase RtcB homolog (EC 6.5.1.8) (3'-phosphate/	w
+HYDROXY	fly	FBgn0061356	Hao	A1Z8D3	1	19	FMN hydroxy acid dehydrogenase domain-containing protein	w
+HYDROXY	human	A2RUC4	TYW5	A2RUC4	1	48	tRNA wybutosine-synthesizing protein 5 (hTYW5) (tRNA yW-synt	w
+HYDROXY	human	O15528	CYP27B1	O15528	13	145	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial (EC 1	w
+HYDROXY	human	Q96IZ2	ADTRP	Q96IZ2	0	12	Androgen-dependent TFPI-regulating protein (Fatty acid ester	w
+HYDROXY	human	Q9HBI6	CYP4F11	Q9HBI6	3	52	Cytochrome P450 4F11 (CYPIVF11) (EC 1.14.14.1) (3-hydroxy fa	w
+HYDROXY	human	Q9NVV5	AIG1	Q9NVV5	5	85	Androgen-induced gene 1 protein (AIG-1) (Fatty acid esters o	w
+HYDROXY	human	Q9Y3I0	RTCB	Q9Y3I0	29	347	RNA-splicing ligase RTCB (EC 6.5.1.8) (3'-phosphate/5'-hydro	w
+HYDROXY	human	Q9Y471	CMAHP	Q9Y471	1	11	Inactive cytidine monophosphate-N-acetylneuraminic acid hydr	w
+HYDROXY	worm	B1GRK5	CELE_F41E6.5	B1GRK5	0	12	FMN hydroxy acid dehydrogenase domain-containing protein	w
+HYDROXY	yeast	Q05016	YMR226C	Q05016	0	11	NADP-dependent 3-hydroxy acid dehydrogenase	w
+HYDROXY-2-OXOGLUTARATE	human	Q86XE5	HOGA1	Q86XE5	2	67	4-hydroxy-2-oxoglutarate aldolase, mitochondrial (EC 4.1.3.1	w
+HYDROXY-2-OXOGLUTARATE	zebrafish	Q6NY77	zgc:77082	Q6NY77	0	1	4-hydroxy-2-oxoglutarate aldolase, mitochondrial	w
+HYDROXY-3-METHOXY-5-POLYPRENYLBENZOATE	human	Q9Y3A0	COQ4	Q9Y3A0	5	81	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial 	w
+HYDROXY-3-METHYLGLUTARATE-COA	human	P35914	HMGCL	P35914	8	130	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	w
+HYDROXY-3-METHYLGLUTARYL	fly	FBgn0010611	Hmgs	Q7K4Q9	3	141	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	w
+HYDROXY-3-METHYLGLUTARYL	human	P54868	HMGCS2	P54868	3	79	Hydroxymethylglutaryl-CoA synthase, mitochondrial (HMG-CoA s	w
+HYDROXY-3-METHYLGLUTARYL	human	Q01581	HMGCS1	Q01581	6	150	Hydroxymethylglutaryl-CoA synthase, cytoplasmic (HMG-CoA syn	w
+HYDROXY-3-METHYLGLUTARYL	worm	Q19207	hmgr-1	Q19207	2	6	3-hydroxy-3-methylglutaryl coenzyme A reductase	w
+HYDROXY-3-METHYLGLUTARYL	zebrafish	A0A8M1N4P1	hmgcrb	A0A8M1N4P1	4	16	3-hydroxy-3-methylglutaryl coenzyme A reductase	w
+HYDROXY-3-METHYLGLUTARYL	zebrafish	A9JSZ0	hmgcra	A9JSZ0	5	17	3-hydroxy-3-methylglutaryl coenzyme A reductase	w
+HYDROXY-3-METHYLGLUTARYL-COA	human	Q8TB92	HMGCLL1	Q8TB92	3	58	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic (EC 4.1.3.	w
+HYDROXY-3-METHYLGLUTARYL-COA	zebrafish	A8WG57	hmgcll1	A8WG57	0	16	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic	w
+HYDROXY-3-METHYLGLUTARYL-COENZYME	fly	FBgn0263782	Hmgcr	P14773	1	26	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	w
+HYDROXY-3-METHYLGLUTARYL-COENZYME	human	P04035	HMGCR	P04035	14	225	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	w
+HYDROXY-3-METHYLGLUTARYL-COENZYME	yeast	P12683	HMG1	P12683	4	46	3-hydroxy-3-methylglutaryl-coenzyme A reductase 1	w
+HYDROXY-3-METHYLGLUTARYL-COENZYME	yeast	P12684	HMG2	P12684	3	56	3-hydroxy-3-methylglutaryl-coenzyme A reductase 2	w
+HYDROXY-4-METHYL-2-OXOGLUTARATE	yeast	P40011	YER010C	P40011	0	19	4-hydroxy-4-methyl-2-oxoglutarate aldolase	w
+HYDROXY-5	human	O00270	GPR31	O00270	6	60	12-(S)-hydroxy-5,8,10,14-eicosatetraenoic acid receptor (12-	w
+HYDROXY-5-ENE	virus	P33794	A50L	P33794	11	199	Truncated 3-beta hydroxy-5-ene steroid dehydrogenase homolog	w
+HYDROXY-ACID	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
+HYDROXY-ACID	zebrafish	F1QCD8	hao2	F1QCD8	0	17	(S)-2-hydroxy-acid oxidase	w
+HYDROXY-DADP	human	Q6ZVK8	NUDT18	Q6ZVK8	10	93	8-oxo-dGDP phosphatase NUDT18 (EC 3.6.1.58) (EC 3.6.1.68) (E	w
+HYDROXY-DATP	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hydrolase (EC 3.6.1.	w
+HYDROXY-DELTA-5-STEROID	zebrafish	F1QSA2	hsd3b1	F1QSA2	1	208	Hydroxy-delta-5-steroid dehydrogenase, 3 beta- and steroid d	w
+HYDROXY-ECDYSONE	fly	FBgn0000546	EcR	P34021	126	506	Ecdysone receptor (20-hydroxy-ecdysone receptor) (20E recept	w
+HYDROXY-L-LYSINE	human	A2RU49	HYKK	A2RU49	2	51	Hydroxylysine kinase (5-hydroxy-L-lysine kinase) (EC 2.7.1.8	w
+HYDROXY-L-LYSINE	zebrafish	A8WFT6	hykk	A8WFT6	2	35	Hydroxylysine kinase (5-hydroxy-L-lysine kinase) (EC 2.7.1.8	w
+HYDROXY-PALMITIC	yeast	P25338	MPO1	P25338	0	1	2-hydroxy-palmitic acid dioxygenase MPO1	w
+HYDROXYACID	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
+HYDROXYACID	human	Q9UJM8	HAO1	Q9UJM8	6	52	2-Hydroxyacid oxidase 1 (HAOX1) (EC 1.1.3.15) (Glycolate oxi	w
+HYDROXYACID	yeast	P53100	YGL185C	P53100	0	4	Putative 2-hydroxyacid dehydrogenase YGL185C	w
+HYDROXYACID	yeast	Q02961	YPL113C	Q02961	0	4	Putative 2-hydroxyacid dehydrogenase YPL113C	w
+HYDROXYACID-OXOACID	fly	FBgn0017482	T3dh	Q9W265	1	14	Probable hydroxyacid-oxoacid transhydrogenase, mitochondrial	w
+HYDROXYACID-OXOACID	human	Q8IWW8	ADHFE1	Q8IWW8	0	34	Hydroxyacid-oxoacid transhydrogenase, mitochondrial (HOT) (E	w
+HYDROXYACID-OXOACID	worm	Q9U2M4	hphd-1	Q9U2M4	0	45	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	w
+HYDROXYACYL-	human	P86397	HTD2	P86397	0	16	Hydroxyacyl-thioester dehydratase type 2, mitochondrial (HsH	w
+HYDROXYACYL-COA	fly	FBgn0021765	scu	O18404	2	211	3-hydroxyacyl-CoA dehydrogenase type-2 (EC 1.1.1.35) (17-bet	w
+HYDROXYACYL-COA	fly	FBgn0030731	Mfe2	Q9VXJ0	1	190	Peroxisomal multifunctional enzyme type 2 (DmMFE-2) [Include	w
+HYDROXYACYL-COA	fly	FBgn0032394	Hacd1	Q9VKD2	5	81	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase (EC 4.2.1	w
+HYDROXYACYL-COA	fly	FBgn0032524	Hacd2	Q9VJX8	6	81	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase (EC 4.2.1	w
+HYDROXYACYL-COA	fly	FBgn0034488	Hacl	Q7K3B7	1	23	2-hydroxyacyl-CoA lyase (EC 4.1.2.63)	w
+HYDROXYACYL-COA	human	A1L0T0	HACL2	A1L0T0	10	213	2-hydroxyacyl-CoA lyase 2 (EC 4.1.2.-) (Acetolactate synthas	w
+HYDROXYACYL-COA	human	B0YJ81	HACD1	B0YJ81	7	71	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 1 (EC 4.2	w
+HYDROXYACYL-COA	human	Q5VWC8	HACD4	Q5VWC8	7	68	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 4 (EC 4.2	w
+HYDROXYACYL-COA	human	Q6Y1H2	HACD2	Q6Y1H2	8	135	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 2 (EC 4.2	w
+HYDROXYACYL-COA	human	Q92506	HSD17B8	Q92506	6	102	(3R)-3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12) (17-beta	w
+HYDROXYACYL-COA	human	Q99714	HSD17B10	Q99714	6	364	3-hydroxyacyl-CoA dehydrogenase type-2 (EC 1.1.1.35) (17-bet	w
+HYDROXYACYL-COA	human	Q9P035	HACD3	Q9P035	22	289	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 3 (EC 4.2	w
+HYDROXYACYL-COA	human	Q9UJ83	HACL1	Q9UJ83	2	49	2-hydroxyacyl-CoA lyase 1 (EC 4.1.2.63) (2-hydroxyphytanoyl-	w
+HYDROXYACYL-COA	worm	A0A163UT65	dhs-11	A0A163UT65	0	5	(3R)-3-hydroxyacyl-CoA dehydrogenase	w
+HYDROXYACYL-COA	worm	O17040	hpo-8	O17040	1	9	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase hpo-8	w
+HYDROXYACYL-COA	worm	O44608	hacd-1	O44608	0	8	3-hydroxyacyl-CoA dehydrogenase	w
+HYDROXYACYL-COA	worm	O61856	T26C12.1	O61856	0	3	2-hydroxyacyl-CoA lyase 2	w
+HYDROXYACYL-COA	worm	P34439	F54C8.1	P34439	0	6	Probable 3-hydroxyacyl-CoA dehydrogenase F54C8.1	w
+HYDROXYACYL-COA	worm	P41938	B0272.3	P41938	0	29	Probable 3-hydroxyacyl-CoA dehydrogenase B0272.3	w
+HYDROXYACYL-COA	worm	Q19102	ard-1	Q19102	0	15	3-hydroxyacyl-CoA dehydrogenase type-2	w
+HYDROXYACYL-COA	worm	Q19246	dhs-25	Q19246	0	6	(3R)-3-hydroxyacyl-CoA dehydrogenase	w
+HYDROXYACYL-COA	worm	Q19660	CELE_F21C10.10	Q19660	0	1	3-hydroxyacyl-CoA dehydrogenase NAD binding domain-containin	w
+HYDROXYACYL-COA	worm	Q21905	CELE_R10E4.9	Q21905	0	7	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase	w
+HYDROXYACYL-COA	yeast	P39994	PXP1	P39994	1	9	2-hydroxyacyl-CoA lyase	w
+HYDROXYACYL-COA	yeast	P40857	PHS1	P40857	0	18	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase PHS1	w
+HYDROXYACYL-COA	zebrafish	A0A0G2L0Q2	hacd1	A0A0G2L0Q2	2	10	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase	w
+HYDROXYACYL-COA	zebrafish	A0A8M1NVN2	hacd4	A0A8M1NVN2	0	8	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase	w
+HYDROXYACYL-COA	zebrafish	A0A8M1PG07	hacd2	A0A8M1PG07	2	10	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase	w
+HYDROXYACYL-COA	zebrafish	Q5XJS8	hsd17b10	Q5XJS8	1	27	3-hydroxyacyl-CoA dehydrogenase type-2	w
+HYDROXYACYL-COA	zebrafish	Q7SY06	hacd3	Q7SY06	0	8	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase	w
+HYDROXYACYL-COENZYME	human	Q16836	HADH	Q16836	6	173	Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial (HCDH) (	w
+HYDROXYACYL-COENZYME	zebrafish	Q6DI22	hadh	Q6DI22	0	36	Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial	w
+HYDROXYACYL-THIOESTER	human	P86397	HTD2	P86397	0	16	Hydroxyacyl-thioester dehydratase type 2, mitochondrial (HsH	w
+HYDROXYACYL-THIOESTER	yeast	P38790	HTD2	P38790	0	9	Hydroxyacyl-thioester dehydratase type 2, mitochondrial	w
+HYDROXYACYLGLUTATHIONE	fly	FBgn0037024	tzn	Q8IPU3	1	22	hydroxyacylglutathione hydrolase (EC 3.1.2.6) (Glyoxalase II	w
+HYDROXYACYLGLUTATHIONE	human	Q16775	HAGH	Q16775	16	142	Hydroxyacylglutathione hydrolase, mitochondrial (EC 3.1.2.6)	w
+HYDROXYACYLGLUTATHIONE	human	Q6PII5	HAGHL	Q6PII5	7	74	Hydroxyacylglutathione hydrolase-like protein (EC 3.1.2.-)	w
+HYDROXYACYLGLUTATHIONE	worm	Q9XXJ1	CELE_Y17G7B.3	Q9XXJ1	0	5	hydroxyacylglutathione hydrolase	w
+HYDROXYACYLGLUTATHIONE	yeast	Q05584	GLO2	Q05584	1	17	Hydroxyacylglutathione hydrolase, cytoplasmic isozyme	w
+HYDROXYACYLGLUTATHIONE	yeast	Q12320	GLO4	Q12320	1	16	Hydroxyacylglutathione hydrolase, mitochondrial	w
+HYDROXYACYLGLUTATHIONE	zebrafish	Q6P963	hagh	Q6P963	0	17	Hydroxyacylglutathione hydrolase, mitochondrial	w
+HYDROXYACYLSPHINGOSINE	human	Q16880	UGT8	Q16880	23	144	2-hydroxyacylsphingosine 1-beta-galactosyltransferase (EC 2.	w
+HYDROXYACYLSPHINGOSINE	zebrafish	A0AB40E9A7	ugt8	A0AB40E9A7	0	5	2-hydroxyacylsphingosine 1-beta-galactosyltransferase	w
+HYDROXYANTHRANILATE	human	P46952	HAAO	P46952	3	49	3-hydroxyanthranilate 3,4-dioxygenase (EC 1.13.11.6) (3-hydr	w
+HYDROXYANTHRANILATE	worm	Q19341	haao-1	Q19341	0	6	3-hydroxyanthranilate 3,4-dioxygenase	w
+HYDROXYANTHRANILATE	yeast	P47096	BNA1	P47096	0	9	3-hydroxyanthranilate 3,4-dioxygenase	w
+HYDROXYANTHRANILIC	human	P46952	HAAO	P46952	3	49	3-hydroxyanthranilate 3,4-dioxygenase (EC 1.13.11.6) (3-hydr	w
+HYDROXYBENZOATE	fly	FBgn0037574	Coq2	Q9VHS7	2	15	4-hydroxybenzoate polyprenyltransferase, mitochondrial (4-HB	w
+HYDROXYBENZOATE	human	Q96H96	COQ2	Q96H96	5	126	4-hydroxybenzoate polyprenyltransferase, mitochondrial (4-HB	w
+HYDROXYBENZOATE	yeast	P32378	COQ2	P32378	0	24	4-hydroxybenzoate polyprenyltransferase, mitochondrial	w
+HYDROXYBENZOATE	zebrafish	A3KNW5	coq2	A3KNW5	0	3	4-hydroxybenzoate polyprenyltransferase, mitochondrial	w
+HYDROXYBUTYRATE	human	Q02338	BDH1	Q02338	12	120	D-beta-hydroxybutyrate dehydrogenase, mitochondrial (EC 1.1.	w
+HYDROXYBUTYRATE	human	Q9BUT1	BDH2	Q9BUT1	4	159	Dehydrogenase/reductase SDR family member 6 (EC 1.1.1.-) ((R	w
+HYDROXYCARBOXYLIC	human	P49019	HCAR3	P49019	14	103	Hydroxycarboxylic acid receptor 3 (G protein-coupled recepto	w
+HYDROXYCARBOXYLIC	human	Q8TDS4	HCAR2	Q8TDS4	9	107	Hydroxycarboxylic acid receptor 2 (G protein-coupled recepto	w
+HYDROXYCARBOXYLIC	human	Q9BXC0	HCAR1	Q9BXC0	12	78	Hydroxycarboxylic acid receptor 1 (G protein-coupled recepto	w
+HYDROXYCHOLESTEROL	human	O75881	CYP7B1	O75881	1	72	Cytochrome P450 7B1 (24-hydroxycholesterol 7-alpha-hydroxyla	w
+HYDROXYCHOLESTEROL	human	P22680	CYP7A1	P22680	4	67	Cytochrome P450 7A1 (24-hydroxycholesterol 7-alpha-hydroxyla	w
+HYDROXYCHOLESTEROL	human	Q9NYL5	CYP39A1	Q9NYL5	1	34	24-hydroxycholesterol 7-alpha-hydroxylase (EC 1.14.14.26) (C	w
+HYDROXYCHOLESTEROL	zebrafish	Q5VSI8	cyp39a1	Q5VSI8	0	8	24-hydroxycholesterol 7-alpha-hydroxylase	w
+HYDROXYECDYSONE	fly	FBgn0001254	ImpE2	P29681	37	244	20-hydroxyecdysone protein (20-HE)	w
+HYDROXYEICOSATETRAENOIC	human	P78329	CYP4F2	P78329	1	99	Cytochrome P450 4F2 (EC 1.14.14.1) (20-hydroxyeicosatetraeno	w
+HYDROXYEICOSATETRAENOIC	human	Q02928	CYP4A11	Q02928	5	54	Cytochrome P450 4A11 (EC 1.14.14.1) (20-hydroxyeicosatetraen	w
+HYDROXYEICOSATETRAENOIC	human	Q08477	CYP4F3	Q08477	5	71	Cytochrome P450 4F3 (EC 1.14.14.1) (20-hydroxyeicosatetraeno	w
+HYDROXYINDOLE	human	P46597	ASMT	P46597	1	45	Acetylserotonin O-methyltransferase (EC 2.1.1.4) (Hydroxyind	w
+HYDROXYISOBUTYRATE	fly	FBgn0034390	Hibadh	Q9V8M5	1	18	Probable 3-hydroxyisobutyrate dehydrogenase, mitochondrial (	w
+HYDROXYISOBUTYRATE	human	P31937	HIBADH	P31937	3	223	3-hydroxyisobutyrate dehydrogenase, mitochondrial (HIBADH) (	w
+HYDROXYISOBUTYRATE	human	Q49A26	GLYR1	Q49A26	24	446	Cytokine-like nuclear factor N-PAC (NPAC) (3-hydroxyisobutyr	w
+HYDROXYISOBUTYRATE	worm	Q9XTI0	B0250.5	Q9XTI0	0	17	Probable 3-hydroxyisobutyrate dehydrogenase, mitochondrial	w
+HYDROXYISOBUTYRYL-COA	fly	FBgn0038326	Hibch	Q86BP1	15	133	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	w
+HYDROXYISOBUTYRYL-COA	human	Q6NVY1	HIBCH	Q6NVY1	24	281	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	w
+HYDROXYISOBUTYRYL-COA	worm	Q19278	hach-1	Q19278	5	69	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial	w
+HYDROXYISOBUTYRYL-COA	zebrafish	Q58EB4	hibch	Q58EB4	8	170	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial	w
+HYDROXYISOBUTYRYL-COENZYME	fly	FBgn0038326	Hibch	Q86BP1	15	133	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	w
+HYDROXYISOBUTYRYL-COENZYME	human	Q6NVY1	HIBCH	Q6NVY1	24	281	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	w
+HYDROXYISOURATE	fly	FBgn0050016	CG30016	A1Z8C9	1	102	5-hydroxyisourate hydrolase (HIU hydrolase) (HIUHase) (EC 3.	w
+HYDROXYISOURATE	worm	O44578	ZK697.8	O44578	1	5	Probable 5-hydroxyisourate hydrolase ZK697.8	w
+HYDROXYISOURATE	worm	Q21882	R09H10.3	Q21882	1	12	Probable 5-hydroxyisourate hydrolase R09H10.3	w
+HYDROXYISOURATE	zebrafish	E7F0I1	urahb	E7F0I1	1	14	5-hydroxyisourate hydrolase	w
+HYDROXYISOURATE	zebrafish	Q06S87	urah	Q06S87	1	14	5-hydroxyisourate hydrolase	w
+HYDROXYL-KINASE	fly	FBgn0034073	Nol9	A1ZA92	6	48	Polynucleotide 5'-hydroxyl-kinase NOL9 (EC 2.7.1.-) (Nucleol	w
+HYDROXYL-KINASE	human	Q5SY16	NOL9	Q5SY16	43	352	Polynucleotide 5'-hydroxyl-kinase NOL9 (EC 2.7.1.78) (Nucleo	w
+HYDROXYL-KINASE	human	Q92989	CLP1	Q92989	37	345	Polyribonucleotide 5'-hydroxyl-kinase Clp1 (EC 2.7.1.78) (Po	w
+HYDROXYL-KINASE	worm	Q9U3B6	nol-9	Q9U3B6	2	25	Polynucleotide 5'-hydroxyl-kinase nol-9	w
+HYDROXYL-KINASE	yeast	Q07845	GRC3	Q07845	2	13	Polynucleotide 5'-hydroxyl-kinase GRC3	w
+HYDROXYL-KINASE	zebrafish	E7F3I6	clp1	E7F3I6	6	54	Polyribonucleotide 5'-hydroxyl-kinase Clp1	w
+HYDROXYL-KINASE	zebrafish	E7F654	nol9	E7F654	1	14	Polynucleotide 5'-hydroxyl-kinase NOL9	w
+HYDROXYLA	human	Q96KS0	EGLN2	Q96KS0	27	108	Prolyl hydroxylase EGLN2 (EC 1.14.11.-) (Egl nine homolog 2)	w
+HYDROXYLASE	fly	FBgn0000337	cn	A1Z746	0	67	Kynurenine 3-monooxygenase (EC 1.14.13.9) (Kynurenine 3-hydr	w
+HYDROXYLASE	fly	FBgn0001208	Hn	P17276	3	46	Protein henna (EC 1.14.16.1) (EC 1.14.16.4) (Phe-4-monooxyge	w
+HYDROXYLASE	fly	FBgn0005626	ple	P18459	5	38	Tyrosine 3-monooxygenase (EC 1.14.16.2) (Protein Pale) (Tyro	w
+HYDROXYLASE	fly	FBgn0029502	Coq7	Q9W3W4	1	26	5-demethoxyubiquinone hydroxylase, mitochondrial (DMQ hydrox	w
+HYDROXYLASE	fly	FBgn0030509	CG11162	Q9VYA2	2	46	Fatty acid hydroxylase domain-containing protein	w
+HYDROXYLASE	fly	FBgn0036147	Plod	Q9VTH0	21	278	Procollagen-lysine,2-oxoglutarate 5-dioxygenase (Procollagen	w
+HYDROXYLASE	fly	FBgn0036796	CG18231	Q9VVQ7	26	53	Prolyl 4-hydroxylase alpha subunit domain-containing protein	w
+HYDROXYLASE	fly	FBgn0038795	Tmlh	Q9VDM7	3	17	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
+HYDROXYLASE	fly	FBgn0039616	CG11828	Q9VAR7	22	52	Prolyl 4-hydroxylase alpha subunit domain-containing protein	w
+HYDROXYLASE	fly	FBgn0050502	Fa2h	Q8SXY2	2	30	Fatty acid 2-hydroxylase (EC 1.-.-.-)	w
+HYDROXYLASE	fly	FBgn0051021	CG31021	Q8IMH8	25	106	Prolyl 4-hydroxylase alpha-subunit N-terminal domain-contain	w
+HYDROXYLASE	fly	FBgn0261479	nero	Q9V9U4	1	7	Deoxyhypusine hydroxylase (DOHH) (EC 1.14.99.29) (Deoxyhypus	w
+HYDROXYLASE	fly	FBgn0265189	sud1	Q9I7H9	2	16	Prolyl 3-hydroxylase sudestada1 (EC 1.14.11.-) (2-oxoglutara	w
+HYDROXYLASE	human	O00469	PLOD2	O00469	12	209	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 2 (EC 1.14.1	w
+HYDROXYLASE	human	O15229	KMO	O15229	1	82	Kynurenine 3-monooxygenase (EC 1.14.13.9) (Kynurenine 3-hydr	w
+HYDROXYLASE	human	O15460	P4HA2	O15460	41	199	Prolyl 4-hydroxylase subunit alpha-2 (4-PH alpha-2) (EC 1.14	w
+HYDROXYLASE	human	O15528	CYP27B1	O15528	13	145	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial (EC 1	w
+HYDROXYLASE	human	O43174	CYP26A1	O43174	5	80	Cytochrome P450 26A1 (CYP26A1) (EC 1.14.13.-) (Cytochrome P4	w
+HYDROXYLASE	human	O60568	PLOD3	O60568	15	213	Multifunctional procollagen lysine hydroxylase and glycosylt	w
+HYDROXYLASE	human	O75936	BBOX1	O75936	3	72	Gamma-butyrobetaine dioxygenase (EC 1.14.11.1) (Gamma-butyro	w
+HYDROXYLASE	human	O95992	CH25H	O95992	4	71	Cholesterol 25-hydroxylase (EC 1.14.99.38) (Cholesterol 25-m	w
+HYDROXYLASE	human	P05177	CYP1A2	P05177	6	104	Cytochrome P450 1A2 (EC 1.14.14.1) (CYPIA2) (Cholesterol 25-	w
+HYDROXYLASE	human	P05181	CYP2E1	P05181	2	104	Cytochrome P450 2E1 (EC 1.14.14.1) (4-nitrophenol 2-hydroxyl	w
+HYDROXYLASE	human	P07101	TH	P07101	24	142	Tyrosine 3-monooxygenase (EC 1.14.16.2) (Tyrosine 3-hydroxyl	w
+HYDROXYLASE	human	P07237	P4HB	P07237	56	496	Protein disulfide-isomerase (PDI) (EC 5.3.4.1) (Cellular thy	w
+HYDROXYLASE	human	P08686	CYP21A2	P08686	3	88	Steroid 21-hydroxylase (EC 1.14.14.16) (21-OHase) (Cytochrom	w
+HYDROXYLASE	human	P0C870	JMJD7	P0C870	5	55	Bifunctional peptidase and (3S)-lysyl hydroxylase JMJD7 (EC 	w
+HYDROXYLASE	human	P10635	CYP2D6	P10635	3	69	Cytochrome P450 2D6 (EC 1.14.14.-) (CYPIID6) (Cholesterol 25	w
+HYDROXYLASE	human	P11509	CYP2A6	P11509	3	62	Cytochrome P450 2A6 (EC 1.14.14.-) (1,4-cineole 2-exo-monoox	w
+HYDROXYLASE	human	P13674	P4HA1	P13674	55	387	Prolyl 4-hydroxylase subunit alpha-1 (4-PH alpha-1) (EC 1.14	w
+HYDROXYLASE	human	P17752	TPH1	P17752	14	89	Tryptophan 5-hydroxylase 1 (EC 1.14.16.4) (Tryptophan 5-mono	w
+HYDROXYLASE	human	Q02318	CYP27A1	Q02318	7	103	Sterol 26-hydroxylase, mitochondrial (EC 1.14.15.15) (5-beta	w
+HYDROXYLASE	human	Q02809	PLOD1	Q02809	25	275	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 (EC 1.14.1	w
+HYDROXYLASE	human	Q06278	AOX1	Q06278	1	30	Aldehyde oxidase (EC 1.2.3.1) (Aldehyde oxidase 1) (Aryl-ald	w
+HYDROXYLASE	human	Q07973	CYP24A1	Q07973	12	145	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial (24	w
+HYDROXYLASE	human	Q32P28	P3H1	Q32P28	30	203	Prolyl 3-hydroxylase 1 (EC 1.14.11.7) (Growth suppressor 1) 	w
+HYDROXYLASE	human	Q6VVX0	CYP2R1	Q6VVX0	3	79	Vitamin D 25-hydroxylase (EC 1.14.14.24) (Cytochrome P450 2R	w
+HYDROXYLASE	human	Q7L5A8	FA2H	Q7L5A8	3	97	Fatty acid 2-hydroxylase (EC 1.14.18.-) (Fatty acid alpha-hy	w
+HYDROXYLASE	human	Q7Z4N8	P4HA3	Q7Z4N8	46	141	Prolyl 4-hydroxylase subunit alpha-3 (4-PH alpha-3) (EC 1.14	w
+HYDROXYLASE	human	Q8IUF8	RIOX2	Q8IUF8	14	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	w
+HYDROXYLASE	human	Q8IVL5	P3H2	Q8IVL5	12	92	Prolyl 3-hydroxylase 2 (EC 1.14.11.7) (Leprecan-like protein	w
+HYDROXYLASE	human	Q8IVL6	P3H3	Q8IVL6	15	194	Prolyl 3-hydroxylase 3 (EC 1.14.11.7) (Leprecan-like protein	w
+HYDROXYLASE	human	Q8IWU9	TPH2	Q8IWU9	14	60	Tryptophan 5-hydroxylase 2 (EC 1.14.16.4) (Neuronal tryptoph	w
+HYDROXYLASE	human	Q8N543	OGFOD1	Q8N543	19	150	Prolyl 3-hydroxylase OGFOD1 (EC 1.14.11.-) (2-oxoglutarate a	w
+HYDROXYLASE	human	Q92791	P3H4	Q92791	18	95	Endoplasmic reticulum protein SC65 (Leprecan-like protein 4)	w
+HYDROXYLASE	human	Q96IV6	FAXDC2	Q96IV6	3	66	Fatty acid hydroxylase domain-containing protein 2	w
+HYDROXYLASE	human	Q96KS0	EGLN2	Q96KS0	27	108	Prolyl hydroxylase EGLN2 (EC 1.14.11.-) (Egl nine homolog 2)	w
+HYDROXYLASE	human	Q99807	COQ7	Q99807	11	112	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	w
+HYDROXYLASE	human	Q9BU89	DOHH	Q9BU89	28	159	Deoxyhypusine hydroxylase (hDOHH) (EC 1.14.99.29) (Deoxyhypu	w
+HYDROXYLASE	human	Q9GZT9	EGLN1	Q9GZT9	46	136	Egl nine homolog 1 (EC 1.14.11.29) (Hypoxia-inducible factor	w
+HYDROXYLASE	human	Q9H6W3	RIOX1	Q9H6W3	10	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
+HYDROXYLASE	human	Q9H6Z9	EGLN3	Q9H6Z9	502	1342	Prolyl hydroxylase EGLN3 (EC 1.14.11.-) (Egl nine homolog 3)	w
+HYDROXYLASE	human	Q9NVH6	TMLHE	Q9NVH6	2	89	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
+HYDROXYLASE	human	Q9NWT6	HIF1AN	Q9NWT6	64	378	Hypoxia-inducible factor 1-alpha inhibitor (EC 1.14.11.30) (	w
+HYDROXYLASE	human	Q9NXG6	P4HTM	Q9NXG6	5	47	Transmembrane prolyl 4-hydroxylase (P4H-TM) (EC 1.14.11.29) 	w
+HYDROXYLASE	human	Q9UJ83	HACL1	Q9UJ83	2	49	2-hydroxyacyl-CoA lyase 1 (EC 4.1.2.63) (2-hydroxyphytanoyl-	w
+HYDROXYLASE	human	Q9Y2Z9	COQ6	Q9Y2Z9	7	166	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (E	w
+HYDROXYLASE	human	Q9Y471	CMAHP	Q9Y471	1	11	Inactive cytidine monophosphate-N-acetylneuraminic acid hydr	w
+HYDROXYLASE	human	Q9Y6A2	CYP46A1	Q9Y6A2	3	66	Cholesterol 24-hydroxylase (CH24H) (EC 1.14.14.25) (Choleste	w
+HYDROXYLASE	worm	A8WHT8	CELE_K09A9.6	A8WHT8	0	11	Aspartyl/asparaginy/proline hydroxylase domain-containing pr	w
+HYDROXYLASE	worm	G5EBV0	egl-9	G5EBV0	6	34	Hypoxia-inducible factor prolyl hydroxylase	w
+HYDROXYLASE	worm	G5EED8	tph-1	G5EED8	2	3	Biopterin-dependent aromatic amino acid hydroxylase family p	w
+HYDROXYLASE	worm	P48376	clk-1	P48376	0	8	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	w
+HYDROXYLASE	worm	Q09973	C17G10.1	Q09973	0	11	uS12 prolyl 3-hydroxylase	w
+HYDROXYLASE	worm	Q10576	dpy-18	Q10576	4	15	Prolyl 4-hydroxylase subunit alpha-1	w
+HYDROXYLASE	worm	Q17949	dohh-1	Q17949	0	8	Deoxyhypusine hydroxylase	w
+HYDROXYLASE	worm	Q20065	phy-2	Q20065	5	12	Prolyl 4-hydroxylase subunit alpha-2	w
+HYDROXYLASE	worm	Q20611	drd-1	Q20611	0	9	Fatty acid hydroxylase domain-containing protein	w
+HYDROXYLASE	worm	Q20612	CELE_F49E12.10	Q20612	0	9	Fatty acid hydroxylase domain-containing protein	w
+HYDROXYLASE	worm	Q20679	let-268	Q20679	0	1	Multifunctional procollagen lysine hydroxylase and glycosylt	w
+HYDROXYLASE	worm	Q9XVS0	fath-1	Q9XVS0	0	23	Fatty acid 2-hydroxylase	w
+HYDROXYLASE	yeast	P41735	CAT5	P41735	2	23	5-demethoxyubiquinone hydroxylase, mitochondrial	w
+HYDROXYLASE	yeast	P47120	LIA1	P47120	2	20	Deoxyhypusine hydroxylase	w
+HYDROXYLASE	yeast	Q03529	SCS7	Q03529	2	56	Ceramide very long chain fatty acid hydroxylase SCS7	w
+HYDROXYLASE	zebrafish	A0A0N4SU47	cyp46a1.5	A0A0N4SU47	0	70	Cholesterol 24-hydroxylase	w
+HYDROXYLASE	zebrafish	A0AB13ABP4	fa2h	A0AB13ABP4	0	5	Fatty acid 2-hydroxylase	w
+HYDROXYLASE	zebrafish	A0AB32TCB7	jmjd7	A0AB32TCB7	0	2	Bifunctional peptidase and (3S)-lysyl hydroxylase JMJD7	w
+HYDROXYLASE	zebrafish	A1A5X6	phyhipla	A1A5X6	0	3	Phytanoyl-CoA 2-hydroxylase interacting protein-like a isofo	w
+HYDROXYLASE	zebrafish	F1QE73	ch25hl3	F1QE73	0	9	Cholesterol 25-hydroxylase	w
+HYDROXYLASE	zebrafish	F1QTC6	ogfod1	F1QTC6	3	19	Prolyl 3-hydroxylase OGFOD1	w
+HYDROXYLASE	zebrafish	F6P2A1	cyp2r1	F6P2A1	0	7	Vitamin D 25-hydroxylase	w
+HYDROXYLASE	zebrafish	Q1JPS3	cyp46a1.3	Q1JPS3	2	70	Cholesterol 24-hydroxylase	w
+HYDROXYLASE	zebrafish	Q6GML1	cmah	Q6GML1	0	2	Cytidine monophosphate-N-acetylneuraminic acid hydroxylase	w
+HYDROXYLASE	zebrafish	Q7ZUX6	dohh	Q7ZUX6	2	6	Deoxyhypusine hydroxylase	w
+HYDROXYLASE	zebrafish	Q803P4	faxdc2	Q803P4	1	11	Fatty acid hydroxylase domain-containing 2	w
+HYDROXYLASE	zebrafish	X1WG80	p4htmb	X1WG80	0	9	Transmembrane prolyl 4-hydroxylase	w
+HYDROXYLASE-ASSOCIATED	human	Q92561	PHYHIP	Q92561	21	176	Phytanoyl-CoA hydroxylase-interacting protein (Phytanoyl-CoA	w
+HYDROXYLASE-INTERACTING	human	Q92561	PHYHIP	Q92561	21	176	Phytanoyl-CoA hydroxylase-interacting protein (Phytanoyl-CoA	w
+HYDROXYLASE-INTERACTING	human	Q96FC7	PHYHIPL	Q96FC7	20	160	Phytanoyl-CoA hydroxylase-interacting protein-like	w
+HYDROXYLASE-INTERACTING	worm	G5ECJ7	CELE_M01B2.13	G5ECJ7	0	3	Phytanoyl-CoA hydroxylase-interacting protein-like C-termina	w
+HYDROXYLASE-INTERACTING	worm	G8JZJ6	CELE_T10H4.13	G8JZJ6	0	3	Phytanoyl-CoA hydroxylase-interacting protein-like C-termina	w
+HYDROXYLASE-INTERACTING	worm	Q9BPP2	CELE_Y92H12BR.7	Q9BPP2	0	3	Phytanoyl-CoA hydroxylase-interacting protein-like C-termina	w
+HYDROXYLASE-INTERACTING	zebrafish	A0A2R8QFV4	phyhip	A0A2R8QFV4	0	3	Phytanoyl-CoA hydroxylase-interacting protein	w
+HYDROXYLASE-INTERACTING	zebrafish	A4QNW7	phyhipl	A4QNW7	0	3	Phytanoyl-CoA hydroxylase-interacting protein-like	w
+HYDROXYLASE-LIKE	human	Q9Y471	CMAHP	Q9Y471	1	11	Inactive cytidine monophosphate-N-acetylneuraminic acid hydr	w
+HYDROXYLASE-LIKE	worm	Q20027	F35C8.5	Q20027	0	10	Cholesterol 25-hydroxylase-like protein	w
+HYDROXYLASE-LIKE	zebrafish	A8WGT1	ch25hl2	A8WGT1	0	11	Cholesterol 25-hydroxylase-like protein 2	w
+HYDROXYLASE-LIKE	zebrafish	Q1LX59	ch25hl1.2	Q1LX59	0	11	Cholesterol 25-hydroxylase-like protein 1, member 2	w
+HYDROXYLASE-LIKE	zebrafish	Q567X1	ch25hl1.1	Q567X1	0	11	Cholesterol 25-hydroxylase-like protein 1, member 1	w
+HYDROXYLASE-LIKE	zebrafish	Q5PRC0	ch25h	Q5PRC0	0	11	Cholesterol 25-hydroxylase-like protein	w
+HYDROXYLATING	human	P51589	CYP2J2	P51589	0	78	Cytochrome P450 2J2 (EC 1.14.14.-) (Albendazole monooxygenas	w
+HYDROXYLYSIN	human	Q8IYK4	COLGALT2	Q8IYK4	9	103	Procollagen galactosyltransferase 2 (EC 2.4.1.50) (Collagen 	w
+HYDROXYLYSIN	human	Q8NBJ5	COLGALT1	Q8NBJ5	10	176	Procollagen galactosyltransferase 1 (EC 2.4.1.50) (Collagen 	w
+HYDROXYLYSINE	fly	FBgn0086909	Hykk	Q9VJ68	84	1105	Hydroxylysine kinase (EC 2.7.1.81)	w
+HYDROXYLYSINE	human	A2RU49	HYKK	A2RU49	2	51	Hydroxylysine kinase (5-hydroxy-L-lysine kinase) (EC 2.7.1.8	w
+HYDROXYLYSINE	zebrafish	A0A2R8PV77	hykk.1	A0A2R8PV77	0	1	Hydroxylysine kinase	w
+HYDROXYLYSINE	zebrafish	A8WFT6	hykk	A8WFT6	2	35	Hydroxylysine kinase (5-hydroxy-L-lysine kinase) (EC 2.7.1.8	w
+HYDROXYMETHYL	yeast	P32771	SFA1	P32771	0	14	S-(hydroxymethyl)glutathione dehydrogenase	w
+HYDROXYMETHYL	zebrafish	Q6NXA6	adh5	Q6NXA6	4	4	S-(hydroxymethyl)glutathione dehydrogenase	w
+HYDROXYMETHYL-DUMP	human	O43598	DNPH1	O43598	7	150	5-hydroxymethyl-dUMP N-hydrolase (EC 3.2.2.-) (2'-deoxynucle	w
+HYDROXYMETHYLBILANE	fly	FBgn0010786	Hmbs	Q9W0G4	0	7	hydroxymethylbilane synthase (EC 2.5.1.61) (Hydroxymethylbil	w
+HYDROXYMETHYLBILANE	fly	FBgn0030066	Uros1	Q9W3B3	0	8	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+HYDROXYMETHYLBILANE	fly	FBgn0038361	Uros2	Q9VF38	0	5	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+HYDROXYMETHYLBILANE	human	P08397	HMBS	P08397	12	139	Porphobilinogen deaminase (PBG-D) (EC 2.5.1.61) (Hydroxymeth	w
+HYDROXYMETHYLBILANE	human	P10746	UROS	P10746	1	70	Uroporphyrinogen-III synthase (UROIIIS) (UROS) (EC 4.2.1.75)	w
+HYDROXYMETHYLCYTOSINE-BINDING	fly	FBgn0037656	CG11986	Q9VHI3	0	2	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
+HYDROXYMETHYLCYTOSINE-BINDING	human	Q96FZ2	HMCES	Q96FZ2	3	55	Abasic site processing protein HMCES (EC 4.-.-.-) (Embryonic	w
+HYDROXYMETHYLGLUT	human	P54646	PRKAA2	P54646	196	1649	5'-AMP-activated protein kinase catalytic subunit alpha-2 (A	w
+HYDROXYMETHYLGLUT	human	Q13131	PRKAA1	Q13131	205	1587	5'-AMP-activated protein kinase catalytic subunit alpha-1 (A	w
+HYDROXYMETHYLGLUTARYL-COA	fly	FBgn0010611	Hmgs	Q7K4Q9	3	141	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	w
+HYDROXYMETHYLGLUTARYL-COA	fly	FBgn0031877	Hmgcl	Q9VM58	1	32	hydroxymethylglutaryl-CoA lyase (EC 4.1.3.4)	w
+HYDROXYMETHYLGLUTARYL-COA	human	P35914	HMGCL	P35914	8	130	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	w
+HYDROXYMETHYLGLUTARYL-COA	human	P54868	HMGCS2	P54868	3	79	Hydroxymethylglutaryl-CoA synthase, mitochondrial (HMG-CoA s	w
+HYDROXYMETHYLGLUTARYL-COA	human	Q01581	HMGCS1	Q01581	6	150	Hydroxymethylglutaryl-CoA synthase, cytoplasmic (HMG-CoA syn	w
+HYDROXYMETHYLGLUTARYL-COA	worm	P54871	hmgs-1	P54871	0	23	Hydroxymethylglutaryl-CoA synthase	w
+HYDROXYMETHYLGLUTARYL-COA	worm	Q95XN1	CELE_Y71G12B.10	Q95XN1	0	14	hydroxymethylglutaryl-CoA lyase	w
+HYDROXYMETHYLGLUTARYL-COA	yeast	P54839	ERG13	P54839	1	61	Hydroxymethylglutaryl-CoA synthase	w
+HYDROXYMETHYLGLUTARYL-COA	zebrafish	A0A0R4IQG1	hmgcs1	A0A0R4IQG1	1	22	Hydroxymethylglutaryl-CoA synthase	w
+HYDROXYMETHYLPYRIMIDINE	yeast	Q08224	THI20	Q08224	1	7	Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase THI20	w
+HYDROXYMETHYLPYRIMIDINE	yeast	Q08975	THI21	Q08975	1	5	Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase THI21	w
+HYDROXYMETHYLTRANSFERASE	fly	FBgn0029823	Shmt	Q9W457	4	254	Serine hydroxymethyltransferase (EC 2.1.2.1)	w
+HYDROXYMETHYLTRANSFERASE	human	P34896	SHMT1	P34896	1	153	Serine hydroxymethyltransferase, cytosolic (SHMT) (cSHMT) (h	w
+HYDROXYMETHYLTRANSFERASE	human	P34897	SHMT2	P34897	7	662	Serine hydroxymethyltransferase, mitochondrial (SHMT) (EC 2.	w
+HYDROXYMETHYLTRANSFERASE	worm	P50432	mel-32	P50432	1	38	Serine hydroxymethyltransferase	w
+HYDROXYMETHYLTRANSFERASE	yeast	P37291	SHM2	P37291	1	57	Serine hydroxymethyltransferase, cytosolic	w
+HYDROXYMETHYLTRANSFERASE	yeast	P37292	SHM1	P37292	1	54	Serine hydroxymethyltransferase, mitochondrial	w
+HYDROXYMETHYLTRANSFERASE	yeast	P38122	ECM31	P38122	0	5	3-methyl-2-oxobutanoate hydroxymethyltransferase	w
+HYDROXYMETHYLTRANSFERASE	zebrafish	A9LDD9	shmt2	A9LDD9	0	47	glycine hydroxymethyltransferase	w
+HYDROXYPHENYLPYRUVATE	fly	FBgn0036992	Hpd	Q9VPF3	0	19	4-hydroxyphenylpyruvate dioxygenase	w
+HYDROXYPHENYLPYRUVATE	human	P32754	HPD	P32754	1	72	4-hydroxyphenylpyruvate dioxygenase (EC 1.13.11.27) (4-hydro	w
+HYDROXYPHENYLPYRUVATE	human	Q96IR7	HPDL	Q96IR7	0	48	4-hydroxyphenylpyruvate dioxygenase-like protein (HPD-like p	w
+HYDROXYPHENYLPYRUVATE	worm	Q22633	hpd-1	Q22633	2	14	4-hydroxyphenylpyruvate dioxygenase	w
+HYDROXYPHENYLPYRUVATE	zebrafish	A0A8M9PPG7	LOC110438534	A0A8M9PPG7	0	1	4-hydroxyphenylpyruvate dioxygenase	w
+HYDROXYPHENYLPYRUVATE	zebrafish	E7FH29	hpdl	E7FH29	0	1	4-hydroxyphenylpyruvate dioxygenase	w
+HYDROXYPHENYLPYRUVATE	zebrafish	Q6TGZ5	hpd	Q6TGZ5	0	9	4-hydroxyphenylpyruvate dioxygenase	w
+HYDROXYPHENYLPYRUVIC	human	P32754	HPD	P32754	1	72	4-hydroxyphenylpyruvate dioxygenase (EC 1.13.11.27) (4-hydro	w
+HYDROXYPHYTANOYL-COA	human	Q9UJ83	HACL1	Q9UJ83	2	49	2-hydroxyacyl-CoA lyase 1 (EC 4.1.2.63) (2-hydroxyphytanoyl-	w
+HYDROXYPROLINE	human	Q9UF12	PRODH2	Q9UF12	1	38	Hydroxyproline dehydrogenase (HYPDH) (EC 1.5.5.3) (Kidney an	w
+HYDROXYPROSTAGLANDIN	human	P15428	HPGD	P15428	0	121	15-hydroxyprostaglandin dehydrogenase [NAD(+)] (15-PGDH) (EC	w
+HYDROXYPROSTAGLANDIN	human	P16152	CBR1	P16152	17	285	Carbonyl reductase [NADPH] 1 (EC 1.1.1.184) (15-hydroxyprost	w
+HYDROXYPROSTAGLANDIN	zebrafish	E7F258	hpgd	E7F258	0	7	15-hydroxyprostaglandin dehydrogenase	w
+HYDROXYPROSTAGLANDIN	zebrafish	F1QBQ6	zgc:77077	F1QBQ6	0	7	15-hydroxyprostaglandin dehydrogenase	w
+HYDROXYPYRUVATE	fly	FBgn0011770	Gip	P36951	1	14	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (GIP-like p	w
+HYDROXYPYRUVATE	human	Q5T013	HYI	Q5T013	9	260	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (Endothelia	w
+HYDROXYPYRUVATE	human	Q9UBQ7	GRHPR	Q9UBQ7	7	152	Glyoxylate reductase/hydroxypyruvate reductase (EC 1.1.1.79)	w
+HYDROXYPYRUVATE	zebrafish	F1QYH7	grhprb	F1QYH7	0	4	Glyoxylate reductase/hydroxypyruvate reductase	w
+HYDROXYSTER	human	Q06520	SULT2A1	Q06520	13	71	Sulfotransferase 2A1 (ST2A1) (EC 2.8.2.2) (Bile salt sulfotr	w
+HYDROXYSTEROID	fly	FBgn0039537	Hsdl2	Q9VB10	13	233	Hydroxysteroid dehydrogenase-like protein 2	w
+HYDROXYSTEROID	human	O00204	SULT2B1	O00204	20	120	Sulfotransferase 2B1 (EC 2.8.2.2) (Alcohol sulfotransferase)	w
+HYDROXYSTEROID	human	O75881	CYP7B1	O75881	1	72	Cytochrome P450 7B1 (24-hydroxycholesterol 7-alpha-hydroxyla	w
+HYDROXYSTEROID	human	Q3SXM5	HSDL1	Q3SXM5	10	109	Inactive hydroxysteroid dehydrogenase-like protein 1 (Short 	w
+HYDROXYSTEROID	human	Q6YN16	HSDL2	Q6YN16	3	150	Hydroxysteroid dehydrogenase-like protein 2 (EC 1.-.-.-) (Sh	w
+HYDROXYSTEROID	human	Q7Z5J1	HSD11B1L	Q7Z5J1	2	13	Hydroxysteroid 11-beta-dehydrogenase 1-like protein (EC 1.1.	w
+HYDROXYSTEROID	human	Q9BPW9	DHRS9	Q9BPW9	15	48	Dehydrogenase/reductase SDR family member 9 (EC 1.1.1.209) (	w
+HYDROXYSTEROID	worm	A4UVJ7	hsd-3	A4UVJ7	1	11	3-beta hydroxysteroid dehydrogenase/isomerase domain-contain	w
+HYDROXYSTEROID	worm	Q09491	C32D5.12	Q09491	0	12	3-beta hydroxysteroid dehydrogenase/isomerase domain-contain	w
+HYDROXYSTEROID	worm	Q09979	dhs-6	Q09979	1	11	Hydroxysteroid dehydrogenase-like protein 2	w
+HYDROXYSTEROID	worm	Q18639	dhs-18	Q18639	0	7	Hydroxysteroid dehydrogenase-like protein 2	w
+HYDROXYSTEROID	worm	Q23086	hsd-2	Q23086	0	10	3-beta hydroxysteroid dehydrogenase/isomerase domain-contain	w
+HYDROXYSTEROID	zebrafish	A0A2R8Q5R7	hsd11b1lb	A0A2R8Q5R7	2	9	Hydroxysteroid (11-beta) dehydrogenase 1-like b	w
+HYDROXYSTEROID	zebrafish	A5WWC6	hsdl1	A5WWC6	0	10	Inactive hydroxysteroid dehydrogenase-like protein 1	w
+HYDROXYSTEROID	zebrafish	Q6P5L8	hsdl2	Q6P5L8	0	45	Hydroxysteroid dehydrogenase-like protein 2	w
+HYDROXYSTEROID	zebrafish	Q6PUF3	hsd11b1l	Q6PUF3	2	9	Hydroxysteroid 11-beta-dehydrogenase 1-like protein	w
+HYDROXYTRYPTAMINE	fly	FBgn0004168	5-HT1A	P28285	2	6	5-hydroxytryptamine (serotonin) receptor 1A	w
+HYDROXYTRYPTAMINE	fly	FBgn0004573	5-HT7	P20905	1	11	5-hydroxytryptamine receptor 1 (5-HT receptor) (5HT-dro) (Se	w
+HYDROXYTRYPTAMINE	fly	FBgn0087012	5-HT2A	Q8IPN2	1	27	5-hydroxytryptamine (Serotonin) receptor 2A, isoform B	w
+HYDROXYTRYPTAMINE	fly	FBgn0261929	5-HT2B	A0A0B4KFU6	0	6	5-hydroxytryptamine (Serotonin) receptor 2B, isoform E	w
+HYDROXYTRYPTAMINE	fly	FBgn0263116	5-HT1B	P28286	1	31	5-hydroxytryptamine (serotonin) receptor 1B	w
+HYDROXYTRYPTAMINE	human	A5X5Y0	HTR3E	A5X5Y0	6	63	5-hydroxytryptamine receptor 3E (5-HT3-E) (5-HT3E) (Serotoni	w
+HYDROXYTRYPTAMINE	human	O95264	HTR3B	O95264	10	103	5-hydroxytryptamine receptor 3B (5-HT3-B) (5-HT3B) (Serotoni	w
+HYDROXYTRYPTAMINE	human	P08908	HTR1A	P08908	21	186	5-hydroxytryptamine receptor 1A (5-HT-1A) (5-HT1A) (G-21) (S	w
+HYDROXYTRYPTAMINE	human	P28221	HTR1D	P28221	14	105	5-hydroxytryptamine receptor 1D (5-HT-1D) (5-HT1D) (Serotoni	w
+HYDROXYTRYPTAMINE	human	P28222	HTR1B	P28222	13	159	5-hydroxytryptamine receptor 1B (5-HT-1B) (5-HT1B) (S12) (Se	w
+HYDROXYTRYPTAMINE	human	P28223	HTR2A	P28223	11	141	5-hydroxytryptamine receptor 2A (5-HT-2) (5-HT-2A) (Serotoni	w
+HYDROXYTRYPTAMINE	human	P28335	HTR2C	P28335	22	218	5-hydroxytryptamine receptor 2C (5-HT-2C) (5-HT2C) (5-HTR2C)	w
+HYDROXYTRYPTAMINE	human	P28566	HTR1E	P28566	17	89	5-hydroxytryptamine receptor 1E (5-HT-1E) (5-HT1E) (S31) (Se	w
+HYDROXYTRYPTAMINE	human	P30939	HTR1F	P30939	12	67	5-hydroxytryptamine receptor 1F (5-HT-1F) (5-HT1F) (Serotoni	w
+HYDROXYTRYPTAMINE	human	P34969	HTR7	P34969	10	82	5-hydroxytryptamine receptor 7 (5-HT-7) (5-HT7) (5-HT-X) (Se	w
+HYDROXYTRYPTAMINE	human	P41595	HTR2B	P41595	14	131	5-hydroxytryptamine receptor 2B (5-HT-2B) (5-HT2B) (Serotoni	w
+HYDROXYTRYPTAMINE	human	P46098	HTR3A	P46098	29	247	5-hydroxytryptamine receptor 3A (5-HT3-A) (5-HT3A) (5-hydrox	w
+HYDROXYTRYPTAMINE	human	P47898	HTR5A	P47898	10	117	5-hydroxytryptamine receptor 5A (5-HT-5) (5-HT-5A) (5-HT5A) 	w
+HYDROXYTRYPTAMINE	human	P50406	HTR6	P50406	11	109	5-hydroxytryptamine receptor 6 (5-HT-6) (5-HT6) (Serotonin r	w
+HYDROXYTRYPTAMINE	human	Q13639	HTR4	Q13639	18	402	5-hydroxytryptamine receptor 4 (5-HT-4) (5-HT4) (Serotonin r	w
+HYDROXYTRYPTAMINE	human	Q70Z44	HTR3D	Q70Z44	3	52	5-hydroxytryptamine receptor 3D (5-HT3-D) (5-HT3D) (Serotoni	w
+HYDROXYTRYPTAMINE	human	Q8WXA8	HTR3C	Q8WXA8	10	159	5-hydroxytryptamine receptor 3C (5-HT3-C) (5-HT3C) (Serotoni	w
+HYDROXYTRYPTAMINE	zebrafish	A0A0G2KCZ7	LOC100334841	A0A0G2KCZ7	1	1	5-hydroxytryptamine receptor 3A isoform X1	w
+HYDROXYTRYPTAMINE	zebrafish	A0A0G2L2K4	htr7d	A0A0G2L2K4	1	10	5-hydroxytryptamine receptor 7	w
+HYDROXYTRYPTAMINE	zebrafish	A0A0R4IFY3	htr5aa	A0A0R4IFY3	1	21	5-hydroxytryptamine (serotonin) receptor 5A, Genome duplicat	w
+HYDROXYTRYPTAMINE	zebrafish	A0A0R4IHZ4	htr7c	A0A0R4IHZ4	0	10	5-hydroxytryptamine receptor 7	w
+HYDROXYTRYPTAMINE	zebrafish	A0A8M1PZA4	htr2cl2	A0A8M1PZA4	0	3	5-hydroxytryptamine receptor 2C-like	w
+HYDROXYTRYPTAMINE	zebrafish	A0A8M3ANX4	htr6	A0A8M3ANX4	0	12	5-hydroxytryptamine receptor 6	w
+HYDROXYTRYPTAMINE	zebrafish	A0A8M3B093	htr2ab	A0A8M3B093	3	28	5-hydroxytryptamine receptor 2A	w
+HYDROXYTRYPTAMINE	zebrafish	A0A8M6YWZ2	si:dkey-247m21.3	A0A8M6YWZ2	6	16	5-hydroxytryptamine receptor 4	w
+HYDROXYTRYPTAMINE	zebrafish	A0A8M6Z176	htr1fa	A0A8M6Z176	7	16	5-hydroxytryptamine (serotonin) receptor 1Fa	w
+HYDROXYTRYPTAMINE	zebrafish	A0A8M9PVG7	htr7a	A0A8M9PVG7	0	11	5-hydroxytryptamine receptor 7	w
+HYDROXYTRYPTAMINE	zebrafish	A0AB32T9Q1	htr3a	A0AB32T9Q1	1	1	5-hydroxytryptamine receptor 3A	w
+HYDROXYTRYPTAMINE	zebrafish	B0S6X1	htr1aa	B0S6X1	6	23	5-hydroxytryptamine (serotonin) receptor 1A A	w
+HYDROXYTRYPTAMINE	zebrafish	B3DK14	htr1b	B3DK14	0	5	5-hydroxytryptamine receptor 1B	w
+HYDROXYTRYPTAMINE	zebrafish	B8JII2	htr1fb	B8JII2	7	13	5-hydroxytryptamine (serotonin) receptor 1Fb	w
+HYDROXYTRYPTAMINE	zebrafish	F1QAQ7	htr1d	F1QAQ7	0	5	5-hydroxytryptamine receptor 1D	w
+HYDROXYTRYPTAMINE	zebrafish	F6PDA4	htr2cl1	F6PDA4	6	30	5-hydroxytryptamine (serotonin) receptor 2C, G protein-coupl	w
+HYDROXYTRYPTAMINE	zebrafish	Q0GH74	htr2b	Q0GH74	4	31	5-hydroxytryptamine receptor 2B	w
+HYDROXYTRYPTAMINE	zebrafish	Q7ZZ32	htr5ab	Q7ZZ32	2	18	5-hydroxytryptamine (Serotonin) receptor 5A like	w
+HYDROXYUREA	yeast	P38957	SHU2	P38957	3	36	Suppressor of hydroxyurea sensitivity protein 2	w
+HYDROXYVITAMIN	human	O15528	CYP27B1	O15528	13	145	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial (EC 1	w
+HYD_124	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8		
+HYD_1343	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8		
+HYD_650	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8		

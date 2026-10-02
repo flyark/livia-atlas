@@ -1,38 +1,732 @@
-MAT-R	oryza-sativa-subsp-japonica	Q8HCN2	mat-r	Q8HCN2	1	61	Maturase-related protein
-MAT-R	zea-mays	Q6R9F2	mat-r	Q6R9F2	2	96	Maturase
-MAT1	glycine-max	Q42447	MAT1	Q42447	0	2	Maturation protein
-MAT1A	mus-musculus	Q91X83	Mat1a	Q91X83	1	7	S-adenosylmethionine synthase isoform type-1
-MAT1A	rattus-norvegicus	P13444	Mat1a	P13444	1	5	S-adenosylmethionine synthase isoform type-1
-MAT2A	mus-musculus	Q3THS6	Mat2a	Q3THS6	1	18	S-adenosylmethionine synthase isoform type-2
-MAT2A	rattus-norvegicus	P18298	Mat2a	P18298	1	5	S-adenosylmethionine synthase isoform type-2
-MAT2B	cladophialophora-carrionii	A0A1C1CWB6	Mat2b	A0A1C1CWB6	4	59	Methionine adenosyltransferase 2 subunit beta
-MAT2B	mus-musculus	Q99LB6	Mat2b	Q99LB6	2	94	Methionine adenosyltransferase 2 subunit beta
-MAT2B	rattus-norvegicus	Q5U2R0	Mat2b	Q5U2R0	1	171	Methionine adenosyltransferase 2 subunit beta
-MAT3-MC	schizosaccharomyces-pombe	P0CY16	mat3-Mc	P0CY16	0	7	Silenced mating-type M-specific polypeptide Mc
-MAT3-MM	schizosaccharomyces-pombe	P0CY14	mat3-Mm	P0CY14	0	1	Silenced mating-type M-specific polypeptide Mi
-MATCAP2	mus-musculus	Q7TQE7	Matcap2	Q7TQE7	0	1	Putative tyrosine carboxypeptidase MATCAP2
-MATE	glycine-max	I1M503	MATE	I1M503	0	2	Protein DETOXIFICATION
-MATE13	glycine-max	A0A368UII4	MATE13	A0A368UII4	0	2	Protein DETOXIFICATION
-MATI	arabidopsis-thaliana	Q8L923	MATI	Q8L923	0	1	At3g14395
-MATK	arabidopsis-thaliana	P56784	matK	P56784	1	21	Maturase K
-MATK	glycine-max	Q9TKS6	matK	Q9TKS6	2	41	Maturase K
-MATK	mus-musculus	P41242	Matk	P41242	9	48	Megakaryocyte-associated tyrosine-protein kinase
-MATK	oryza-sativa-subsp-japonica	P0C383	matK	P0C383	3	25	Maturase K
-MATK	rattus-norvegicus	P41243	Matk	P41243	14	68	Megakaryocyte-associated tyrosine-protein kinase
-MATK	zea-mays	P48190	matK	P48190	3	24	Maturase K
-MATN1	mus-musculus	P51942	Matn1	P51942	0	4	Matrilin-1
-MATN1	rattus-norvegicus	Q5XI24	Matn1	Q5XI24	0	9	Matrilin-1
-MATN2	mus-musculus	O08746	Matn2	O08746	2	3	Matrilin-2
-MATN2	rattus-norvegicus	F1LXS3	Matn2	F1LXS3	0	11	Matrilin-2
-MATN3	mus-musculus	O35701	Matn3	O35701	2	4	Matrilin-3
-MATN3	rattus-norvegicus	A0A0G2JYF9	Matn3	A0A0G2JYF9	1	11	Matrilin-3
-MATN4	mus-musculus	O89029	Matn4	O89029	2	4	Matrilin-4
-MATN4	rattus-norvegicus	D3ZMS3	Matn4	D3ZMS3	1	11	Matrilin-4
-MATP	haemophilus-influenzae	P44161	matP	P44161	0	4	Macrodomain Ter protein
-MATP	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQT0	matP	A0A0H3GQT0	1	19	Macrodomain Ter protein
-MATP	salmonella-typhimurium	Q8ZQ68	matP	Q8ZQ68	1	11	Macrodomain Ter protein
-MATP	shigella-dysenteriae-serotype-1	Q32HV1	matP	Q32HV1	0	15	Macrodomain Ter protein
-MATP	shigella-flexneri	P0A8N2	matP	P0A8N2	0	0	Macrodomain Ter protein
-MATR	glycine-max	M1FQL7	matR	M1FQL7	8	240	Maturase
-MATR3	mus-musculus	Q8K310	Matr3	Q8K310	3	70	Matrin-3
-MATR3	rattus-norvegicus	P43244	Matr3	P43244	5	63	Matrin-3
+MAT	fly	FBgn0035176	mat	Q9W0L3	10	244	Materazzi	
+MAT	human	P24752	ACAT1	P24752	11	301		
+MAT-1	worm	Q9N593	mat-1	Q9N593	6	65	Cell division cycle protein 27 homolog	
+MAT-3	worm	Q19294	mat-3	Q19294	2	30	Cell division cycle protein 23 homolog	
+MAT-8	human	Q14802	FXYD3	Q14802	15	115	FXYD domain-containing ion transport regulator 3 (Chloride c	w
+MAT-R	oryza-sativa-subsp-japonica	Q8HCN2	mat-r	Q8HCN2	1	61	Maturase-related protein	
+MAT-R	zea-mays	Q6R9F2	mat-r	Q6R9F2	2	96	Maturase	
+MAT1	fly	FBgn0024956	Mat1	Q7KPG8	23	496	CDK-activating kinase assembly factor MAT1 (CDK7/cyclin-H as	w
+MAT1	fly	FBgn0024956	Mat1	Q7KPG8	23	496	CDK-activating kinase assembly factor MAT1 (CDK7/cyclin-H as	w
+MAT1	glycine-max	Q42447	MAT1	Q42447	0	2	Maturation protein	
+MAT1	human	P51948	MNAT1	P51948	59	641		
+MAT1	worm	O17245	mnat-1	O17245	7	82	CDK-activating kinase assembly factor MAT1	w
+MAT1A	human	Q00266	MAT1A	Q00266	5	107	S-adenosylmethionine synthase isoform type-1 (AdoMet synthas	
+MAT1A	mus-musculus	Q91X83	Mat1a	Q91X83	1	7	S-adenosylmethionine synthase isoform type-1	
+MAT1A	rattus-norvegicus	P13444	Mat1a	P13444	1	5	S-adenosylmethionine synthase isoform type-1	
+MAT1A	zebrafish	Q7ZW04	mat1a	Q7ZW04	0	6	S-adenosylmethionine synthase	
+MAT1_HUMAN	human	P51948	MNAT1	P51948	59	641		
+MAT2A	human	P31153	MAT2A	P31153	4	173	S-adenosylmethionine synthase isoform type-2 (AdoMet synthas	
+MAT2A	mus-musculus	Q3THS6	Mat2a	Q3THS6	1	18	S-adenosylmethionine synthase isoform type-2	
+MAT2A	rattus-norvegicus	P18298	Mat2a	P18298	1	5	S-adenosylmethionine synthase isoform type-2	
+MAT2AA	zebrafish	F1QYU7	mat2aa	F1QYU7	1	7	S-adenosylmethionine synthase	
+MAT2AB	zebrafish	Q58EF9	mat2ab	Q58EF9	1	7	S-adenosylmethionine synthase	
+MAT2AL	zebrafish	Q1RLT0	mat2al	Q1RLT0	0	6	S-adenosylmethionine synthase	
+MAT2B	cladophialophora-carrionii	A0A1C1CWB6	Mat2b	A0A1C1CWB6	4	59	Methionine adenosyltransferase 2 subunit beta	
+MAT2B	human	Q9NZL9	MAT2B	Q9NZL9	31	397	Methionine adenosyltransferase 2 subunit beta (Methionine ad	
+MAT2B	mus-musculus	Q99LB6	Mat2b	Q99LB6	2	94	Methionine adenosyltransferase 2 subunit beta	
+MAT2B	rattus-norvegicus	Q5U2R0	Mat2b	Q5U2R0	1	171	Methionine adenosyltransferase 2 subunit beta	
+MAT2B	zebrafish	Q5BJJ6	mat2b	Q5BJJ6	6	204	Methionine adenosyltransferase 2 subunit beta	
+MAT2B_HUMAN	human	Q9NZL9	MAT2B	Q9NZL9	31	397		
+MAT3-MC	schizosaccharomyces-pombe	P0CY16	mat3-Mc	P0CY16	0	7	Silenced mating-type M-specific polypeptide Mc	
+MAT3-MM	schizosaccharomyces-pombe	P0CY14	mat3-Mm	P0CY14	0	1	Silenced mating-type M-specific polypeptide Mi	
+MAT8	human	Q14802	FXYD3	Q14802	15	115		
+MAT89BA	fly	FBgn0261286	Mat89Ba	Q8IH00	13	160	Nucleolar protein 6 (Maternal transcript 89Ba)	
+MAT89BB	fly	FBgn0020407	asun	Q9VEX5	7	38	Protein asunder (Cell cycle regulator Mat89Bb) (Integrator c	w
+MAT89BB	human	Q9NVM9	INTS13	Q9NVM9	15	145	Integrator complex subunit 13 (Cell cycle regulator Mat89Bb 	w
+MATA1	human	Q00266	MAT1A	Q00266	5	107		
+MATA1	yeast	P0CY10	MATA1	P0CY10	2	4	Mating-type protein A1	
+MATA2	human	P31153	MAT2A	P31153	4	173		
+MATA2	yeast	P0CY12	MATA2	P0CY12	3	8	Putative mating-type protein A2	
+MATALPHA2	yeast	P0CY08	MATALPHA2	P0CY08	2	12	Mating-type protein ALPHA2	
+MATCAP	human	Q68EN5	MATCAP1	Q68EN5	6	34		
+MATCAP1	human	Q68EN5	MATCAP1	Q68EN5	6	34	Microtubule-associated tyrosine carboxypeptidase 1 (EC 3.4.1	
+MATCAP2	human	Q8NCT3	MATCAP2	Q8NCT3	0	16	Putative tyrosine carboxypeptidase MATCAP2 (EC 3.4.17.-)	
+MATCAP2	mus-musculus	Q7TQE7	Matcap2	Q7TQE7	0	1	Putative tyrosine carboxypeptidase MATCAP2	
+MATCH	fly	FBgn0085385	bma	A8JMD5	118	1099	black match	w
+MATCH	human	Q96PM5	RCHY1	Q96PM5	48	385	RING finger and CHY zinc finger domain-containing protein 1 	w
+MATE	glycine-max	I1M503	MATE	I1M503	0	2	Protein DETOXIFICATION	
+MATE-1	human	Q96FL8	SLC47A1	Q96FL8	2	81	Multidrug and toxin extrusion protein 1 (MATE-1) (hMATE-1) (	w
+MATE-2	human	Q86VL8	SLC47A2	Q86VL8	0	19	Multidrug and toxin extrusion protein 2 (MATE-2) (hMATE-2) (	w
+MATE1	human	Q96FL8	SLC47A1	Q96FL8	2	81		
+MATE13	glycine-max	A0A368UII4	MATE13	A0A368UII4	0	2	Protein DETOXIFICATION	
+MATE2	human	Q86VL8	SLC47A2	Q86VL8	0	19		
+MATER	human	P59047	NLRP5	P59047	11	99		
+MATERAZZI	fly	FBgn0035176	mat	Q9W0L3	10	244	Materazzi	w
+MATERIAL	human	Q15154	PCM1	Q15154	96	475	Pericentriolar material 1 protein (PCM-1) (hPCM-1)	w
+MATERNAL	fly	FBgn0000615	exu	P28750	9	87	Maternal protein exuperantia	w
+MATERNAL	fly	FBgn0003015	osk	P25158	13	128	Maternal effect protein oskar	w
+MATERNAL	fly	FBgn0003165	pum	P25822	13	110	Maternal protein pumilio	w
+MATERNAL	fly	FBgn0003520	stau	P25159	27	166	Maternal effect protein staufen	w
+MATERNAL	fly	FBgn0003891	tud	P25823	1	9	Maternal protein tudor	w
+MATERNAL	fly	FBgn0004419	me31B	P23128	26	444	ATP-dependent RNA helicase me31b (EC 3.6.4.13) (Maternal exp	w
+MATERNAL	fly	FBgn0020407	asun	Q9VEX5	7	38	Protein asunder (Cell cycle regulator Mat89Bb) (Integrator c	w
+MATERNAL	fly	FBgn0261286	Mat89Ba	Q8IH00	13	160	Nucleolar protein 6 (Maternal transcript 89Ba)	w
+MATERNAL	fly	FBgn0267033	mamo	Q9VY72	14	73	Maternal gene required for meiosis, isoform H (Maternal gene	w
+MATERNAL	human	P59047	NLRP5	P59047	11	99	NACHT, LRR and PYD domains-containing protein 5 (Mater prote	w
+MATERNAL	human	Q14680	MELK	Q14680	180	1353	Maternal embryonic leucine zipper kinase (hMELK) (EC 2.7.11.	w
+MATERNAL	worm	O17581	mau-2	O17581	0	8	Maternal uncoordinated protein 2	w
+MATERNAL	worm	Q94420	mel-26	Q94420	7	66	Protein maternal effect lethal 26	w
+MATERNAL	worm	U4PR86	pig-1	U4PR86	9	64	Maternal embryonic leucine zipper kinase (MELK) (EC 2.7.11.1	w
+MATERNAL	zebrafish	E7F2Z6	si:dkey-79d12.5	E7F2Z6	2	2	Maternal B9.15 protein isoform X1	w
+MATERNAL	zebrafish	F1QGZ6	melk	F1QGZ6	1	24	Maternal embryonic leucine zipper kinase	w
+MATERNAL-EFFECT	fly	FBgn0039559	NSD	Q8MT36	19	159	Nuclear receptor binding SET domain protein (EC 2.1.1.357) (	w
+MATERNAL-EMBRYONIC	human	Q96QK1	VPS35	Q96QK1	27	364	Vacuolar protein sorting-associated protein 35 (hVPS35) (Mat	w
+MATG9	human	Q7Z3C6	ATG9A	Q7Z3C6	21	464	Autophagy-related protein 9A (APG9-like 1) (mATG9)	w
+MATH	fly	FBgn0264493	rdx	Q9VFP2	24	64	Protein roadkill (Hh-induced MATH and BTB domain-containing 	w
+MATH	worm	F3NWW3	math-14	F3NWW3	0	1	MATH domain-containing protein	w
+MATH	worm	G2HK03	pqn-87	G2HK03	0	16	MATH domain-containing protein	w
+MATH	worm	O17301	math-48	O17301	0	3	MATH domain-containing protein	w
+MATH	worm	O44150	C49A9.6	O44150	0	2	MATH (Meprin-associated Traf homology) domain containing	w
+MATH	worm	O76558	math-20	O76558	0	3	MATH domain-containing protein	w
+MATH	worm	O76612	bath-47	O76612	0	12	BTB and MATH domain-containing protein 47	w
+MATH	worm	O76640	math-41	O76640	0	3	MATH domain-containing protein	w
+MATH	worm	O76642	math-39	O76642	1	38	MATH domain-containing protein	w
+MATH	worm	P34324	bath-15	P34324	2	6	BTB and MATH domain-containing protein 15	w
+MATH	worm	P34371	bath-42	P34371	7	20	BTB and MATH domain-containing protein 42	w
+MATH	worm	P41886	bath-41	P41886	5	11	BTB and MATH domain-containing protein 41	w
+MATH	worm	P91544	CELE_ZC204.12	P91544	21	731	MATH domain-containing protein	w
+MATH	worm	Q20488	CELE_F46H5.5	Q20488	0	6	MATH domain-containing protein	w
+MATH	worm	Q20681	bath-38	Q20681	0	1	BTB and MATH domain-containing protein 38	w
+MATH	worm	Q8WTL4	math-45	Q8WTL4	0	1	MATH domain-containing protein	w
+MATH	worm	Q93730	CELE_F46A9.2	Q93730	0	2	MATH (Meprin-associated Traf homology) domain containing	w
+MATH	worm	Q9N586	trf-2	Q9N586	2	47	MATH domain-containing protein	w
+MATH	worm	Q9NEQ5	CELE_Y59A8B.12	Q9NEQ5	0	40	MATH domain-containing protein	w
+MATH	worm	Q9NF14	bath-40	Q9NF14	4	16	BTB and MATH domain-containing protein 40	w
+MATH	worm	Q9XVG7	dpsm-1	Q9XVG7	0	1	MATH domain-containing protein	w
+MATH-14	worm	F3NWW3	math-14	F3NWW3	0	1	MATH domain-containing protein	
+MATH-20	worm	O76558	math-20	O76558	0	3	MATH domain-containing protein	
+MATH-33	worm	Q7JKC3	math-33	Q7JKC3	3	41	Ubiquitin carboxyl-terminal hydrolase 7	
+MATH-39	worm	O76642	math-39	O76642	1	38	MATH domain-containing protein	
+MATH-41	worm	O76640	math-41	O76640	0	3	MATH domain-containing protein	
+MATH-45	worm	Q8WTL4	math-45	Q8WTL4	0	1	MATH domain-containing protein	
+MATH-48	worm	O17301	math-48	O17301	0	3	MATH domain-containing protein	
+MATI	arabidopsis-thaliana	Q8L923	MATI	Q8L923	0	1	At3g14395	
+MATING	yeast	P01149	MF(ALPHA)1	P01149	1	34	Mating factor alpha-1	w
+MATING	yeast	P32435	MF(ALPHA)2	P32435	1	25	Mating factor alpha-2	w
+MATING	yeast	P34165	MFA1	P34165	3	8	Mating hormone A-factor 1	w
+MATING	yeast	P34166	MFA2	P34166	1	13	Mating hormone A-factor 2	w
+MATING-TYPE	yeast	P0CY07	HMLALPHA1	P0CY07	1	11	Silenced mating-type protein ALPHA1	w
+MATING-TYPE	yeast	P0CY08	MATALPHA2	P0CY08	2	12	Mating-type protein ALPHA2	w
+MATING-TYPE	yeast	P0CY10	MATA1	P0CY10	2	4	Mating-type protein A1	w
+MATING-TYPE	yeast	P0CY12	MATA2	P0CY12	3	8	Putative mating-type protein A2	w
+MATK	arabidopsis-thaliana	P56784	matK	P56784	1	21	Maturase K	
+MATK	glycine-max	Q9TKS6	matK	Q9TKS6	2	41	Maturase K	
+MATK	human	P42679	MATK	P42679	195	1296	Megakaryocyte-associated tyrosine-protein kinase (EC 2.7.10.	
+MATK	mus-musculus	P41242	Matk	P41242	9	48	Megakaryocyte-associated tyrosine-protein kinase	
+MATK	oryza-sativa-subsp-japonica	P0C383	matK	P0C383	3	25	Maturase K	
+MATK	rattus-norvegicus	P41243	Matk	P41243	14	68	Megakaryocyte-associated tyrosine-protein kinase	
+MATK	zea-mays	P48190	matK	P48190	3	24	Maturase K	
+MATK_HUMAN	human	P42679	MATK	P42679	195	1296		
+MATN1	human	P21941	MATN1	P21941	5	90	Matrilin-1 (Cartilage matrix protein)	
+MATN1	mus-musculus	P51942	Matn1	P51942	0	4	Matrilin-1	
+MATN1	rattus-norvegicus	Q5XI24	Matn1	Q5XI24	0	9	Matrilin-1	
+MATN1	zebrafish	A5WWJ4	matn1	A5WWJ4	0	16	Matrilin-1	
+MATN1_HUMAN	human	P21941	MATN1	P21941	5	90		
+MATN2	human	O00339	MATN2	O00339	15	143	Matrilin-2	
+MATN2	mus-musculus	O08746	Matn2	O08746	2	3	Matrilin-2	
+MATN2	rattus-norvegicus	F1LXS3	Matn2	F1LXS3	0	11	Matrilin-2	
+MATN2_HUMAN	human	O00339	MATN2	O00339	15	143		
+MATN3	human	O15232	MATN3	O15232	9	105	Matrilin-3	
+MATN3	mus-musculus	O35701	Matn3	O35701	2	4	Matrilin-3	
+MATN3	rattus-norvegicus	A0A0G2JYF9	Matn3	A0A0G2JYF9	1	11	Matrilin-3	
+MATN3A	zebrafish	Q68EK6	matn3a	Q68EK6	0	15	Matn3a protein	w
+MATN3A	zebrafish	Q68EK6	matn3a	Q68EK6	0	15	Matn3a protein	w
+MATN3B	zebrafish	Q5NIW0	matn3b	Q5NIW0	0	17	Matrilin-3b	
+MATN3_HUMAN	human	O15232	MATN3	O15232	9	105		
+MATN4	human	O95460	MATN4	O95460	10	108	Matrilin-4	
+MATN4	mus-musculus	O89029	Matn4	O89029	2	4	Matrilin-4	
+MATN4	rattus-norvegicus	D3ZMS3	Matn4	D3ZMS3	1	11	Matrilin-4	
+MATN4	zebrafish	Q5NJJ5	matn4	Q5NJJ5	0	16	Matrilin-4	
+MATN4_HUMAN	human	O95460	MATN4	O95460	10	108		
+MATOTOPETLI	fly	FBgn0037751	topi	Q9VH70	34	351	Testis-specific zinc finger protein topi (Protein matotopetl	w
+MATP	haemophilus-influenzae	P44161	matP	P44161	0	4	Macrodomain Ter protein	
+MATP	human	Q9UMX9	SLC45A2	Q9UMX9	4	80		
+MATP	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQT0	matP	A0A0H3GQT0	1	19	Macrodomain Ter protein	
+MATP	salmonella-typhimurium	Q8ZQ68	matP	Q8ZQ68	1	11	Macrodomain Ter protein	
+MATP	shigella-dysenteriae-serotype-1	Q32HV1	matP	Q32HV1	0	15	Macrodomain Ter protein	
+MATP	shigella-flexneri	P0A8N2	matP	P0A8N2	0	0	Macrodomain Ter protein	
+MATR	glycine-max	M1FQL7	matR	M1FQL7	8	240	Maturase	
+MATR3	human	A0A0R4J2E8	MATR3	A0A0R4J2E8	20	310	Matrin-3	
+MATR3	human	P43243	MATR3	P43243	86	689	Matrin-3	
+MATR3	mus-musculus	Q8K310	Matr3	Q8K310	3	70	Matrin-3	
+MATR3	rattus-norvegicus	P43244	Matr3	P43244	5	63	Matrin-3	
+MATR3L1.1	zebrafish	Q800H4	matr3l1.1	Q800H4	0	3	Matrin 3-like 1.1	
+MATR3L1.2	zebrafish	Q800H6	matr3l1.2	Q800H6	0	33	Matrin 3-like 1.1	
+MATR3_HUMAN	human	P43243	MATR3	P43243	86	689		
+MATRIGEL-INDUCED	human	O95274	LYPD3	O95274	25	252	Ly6/PLAUR domain-containing protein 3 (GPI-anchored metastas	w
+MATRILIN	human	Q5GFL6	VWA2	Q5GFL6	8	85	von Willebrand factor A domain-containing protein 2 (A domai	w
+MATRILIN-1	human	P21941	MATN1	P21941	5	90	Matrilin-1 (Cartilage matrix protein)	w
+MATRILIN-1	zebrafish	A5WWJ4	matn1	A5WWJ4	0	16	Matrilin-1	w
+MATRILIN-2	human	O00339	MATN2	O00339	15	143	Matrilin-2	w
+MATRILIN-3	human	O15232	MATN3	O15232	9	105	Matrilin-3	w
+MATRILIN-3B	zebrafish	Q5NIW0	matn3b	Q5NIW0	0	17	Matrilin-3b	w
+MATRILIN-4	human	O95460	MATN4	O95460	10	108	Matrilin-4	w
+MATRILIN-4	zebrafish	Q5NJJ5	matn4	Q5NJJ5	0	16	Matrilin-4	w
+MATRILYSIN	human	P09237	MMP7	P09237	12	218	Matrilysin (EC 3.4.24.23) (Matrin) (Matrix metalloproteinase	w
+MATRILYSIN-2	human	Q9NRE1	MMP26	Q9NRE1	8	80	Matrix metalloproteinase-26 (MMP-26) (EC 3.4.24.-) (Endometa	w
+MATRIMONY	fly	FBgn0010431	mtrm	Q23973	3	9	Protein matrimony (Cell cycle arrest protein D52)	w
+MATRIN	human	P09237	MMP7	P09237	12	218	Matrilysin (EC 3.4.24.23) (Matrin) (Matrix metalloproteinase	w
+MATRIN	zebrafish	Q800H4	matr3l1.1	Q800H4	0	3	Matrin 3-like 1.1	w
+MATRIN	zebrafish	Q800H6	matr3l1.2	Q800H6	0	33	Matrin 3-like 1.1	w
+MATRIN-3	human	A0A0R4J2E8	MATR3	A0A0R4J2E8	20	310	Matrin-3	w
+MATRIN-3	human	P43243	MATR3	P43243	86	689	Matrin-3	w
+MATRIN-LIKE	human	Q14966	ZNF638	Q14966	92	386	Zinc finger protein 638 (Cutaneous T-cell lymphoma-associate	w
+MATRIN-TYPE	fly	FBgn0027866	CG9776	Q9V468	12	91	Zinc finger matrin-type protein CG9776	w
+MATRIN-TYPE	fly	FBgn0035134	CG1231	Q9W0R2	1	1	Matrin-type domain-containing protein	w
+MATRIN-TYPE	human	Q5H9K5	ZMAT1	Q5H9K5	9	39	Zinc finger matrin-type protein 1	w
+MATRIN-TYPE	human	Q96NC0	ZMAT2	Q96NC0	12	248	Zinc finger matrin-type protein 2	w
+MATRIN-TYPE	human	Q9H898	ZMAT4	Q9H898	6	48	Zinc finger matrin-type protein 4	w
+MATRIN-TYPE	human	Q9HA38	ZMAT3	Q9HA38	3	57	Zinc finger matrin-type protein 3 (Zinc finger protein WIG-1	w
+MATRIN-TYPE	human	Q9UDW3	ZMAT5	Q9UDW3	15	255	Zinc finger matrin-type protein 5 (U11/U12 small nuclear rib	w
+MATRIN-TYPE	worm	P34670	snu-23	P34670	1	56	Putative zinc finger matrin-type protein snu-23	w
+MATRIN-TYPE	worm	Q22469	prp-9	Q22469	4	96	Matrin-type domain-containing protein	w
+MATRIN-TYPE	zebrafish	Q6AXL8	zmat5	Q6AXL8	7	75	Zinc finger matrin-type protein 5	w
+MATRIN-TYPE	zebrafish	Q6TLH9	zmat2	Q6TLH9	3	80	Zinc finger matrin-type protein 2	w
+MATRIPTASE	human	Q9Y5Y6	ST14	Q9Y5Y6	41	275	Suppressor of tumorigenicity 14 protein (EC 3.4.21.109) (Mat	w
+MATRIPTASE	zebrafish	A0A8M3AWU9	st14b	A0A8M3AWU9	1	8	ST14 transmembrane serine protease matriptase b	w
+MATRIPTASE-2	human	Q8IU80	TMPRSS6	Q8IU80	14	91	Transmembrane protease serine 6 (EC 3.4.21.-) (Matriptase-2)	w
+MATRIPTASE-3	human	Q7RTY8	TMPRSS7	Q7RTY8	4	11	Transmembrane protease serine 7 (EC 3.4.21.-) (Matriptase-3)	w
+MATRIX	fly	FBgn0033438	Mmp2	Q8MPP3	881	2635	Matrix metalloproteinase-2 (Dm2-MMP) (EC 3.4.24.-)	w
+MATRIX	fly	FBgn0034697	GM130	Q9W289	15	88	Golgi matrix protein 130 kD	w
+MATRIX	fly	FBgn0035049	Mmp1	Q9W122	24	260	Matrix metalloproteinase 1, isoform C (EC 3.4.24.-) (RE19818	w
+MATRIX	fly	FBgn0035253	Srrm234	A8JNI2	3	16	Serine-arginine repetitive matrix 2/3/4, isoform F	w
+MATRIX	fly	FBgn0036340	Srrm1	Q9VU43	14	140	FI04407p (Serine-arginine repetitive matrix 1)	w
+MATRIX	fly	FBgn0036702	Afg3l2	Q8T4G5	4	115	AFG3 like matrix AAA peptidase subunit 2, isoform A (EC 3.4.	w
+MATRIX	human	A6NNA2	SRRM3	A6NNA2	23	96	Serine/arginine repetitive matrix protein 3	w
+MATRIX	human	A7E2F4	GOLGA8A	A7E2F4	15	44	Golgin subfamily A member 8A (88 kDa Golgi matrix protein) (	w
+MATRIX	human	A7MD48	SRRM4	A7MD48	12	47	Serine/arginine repetitive matrix protein 4 (Medulloblastoma	w
+MATRIX	human	B3KS81	SRRM5	B3KS81	0	11	Serine/arginine repetitive matrix protein 5	w
+MATRIX	human	O14682	ENC1	O14682	41	176	Ectoderm-neural cortex protein 1 (ENC-1) (Kelch-like protein	w
+MATRIX	human	O60216	RAD21	O60216	59	454	Double-strand-break repair protein rad21 homolog (hHR21) (Nu	w
+MATRIX	human	O60882	MMP20	O60882	8	33	Matrix metalloproteinase-20 (MMP-20) (EC 3.4.24.-) (Enamel m	w
+MATRIX	human	O75690	KRTAP5-8	O75690	0	14	Keratin-associated protein 5-8 (Keratin, ultra high-sulfur m	w
+MATRIX	human	O75900	MMP23B	O75900	11	37	Matrix metalloproteinase-23 (MMP-23) (EC 3.4.24.-) (Femalysi	w
+MATRIX	human	O94769	ECM2	O94769	6	50	Extracellular matrix protein 2 (Matrix glycoprotein SC1/ECM2	w
+MATRIX	human	O95967	EFEMP2	O95967	41	217	EGF-containing fibulin-like extracellular matrix protein 2 (	w
+MATRIX	human	P03956	MMP1	P03956	32	191	Interstitial collagenase (EC 3.4.24.7) (Fibroblast collagena	w
+MATRIX	human	P08253	MMP2	P08253	29	443	72 kDa type IV collagenase (EC 3.4.24.24) (72 kDa gelatinase	w
+MATRIX	human	P08254	MMP3	P08254	26	184	Stromelysin-1 (SL-1) (EC 3.4.24.17) (Matrix metalloproteinas	w
+MATRIX	human	P08493	MGP	P08493	4	45	Matrix Gla protein (MGP) (Cell growth-inhibiting gene 36 pro	w
+MATRIX	human	P09237	MMP7	P09237	12	218	Matrilysin (EC 3.4.24.23) (Matrin) (Matrix metalloproteinase	w
+MATRIX	human	P09238	MMP10	P09238	20	142	Stromelysin-2 (SL-2) (EC 3.4.24.22) (Matrix metalloproteinas	w
+MATRIX	human	P0C091	FREM3	P0C091	3	37	FRAS1-related extracellular matrix protein 3	w
+MATRIX	human	P14780	MMP9	P14780	109	804	Matrix metalloproteinase-9 (MMP-9) (EC 3.4.24.35) (92 kDa ge	w
+MATRIX	human	P16070	CD44	P16070	135	876	CD44 antigen (CDw44) (Epican) (Extracellular matrix receptor	w
+MATRIX	human	P21941	MATN1	P21941	5	90	Matrilin-1 (Cartilage matrix protein)	w
+MATRIX	human	P22894	MMP8	P22894	25	198	Neutrophil collagenase (EC 3.4.24.34) (Matrix metalloprotein	w
+MATRIX	human	P24347	MMP11	P24347	11	91	Stromelysin-3 (SL-3) (ST3) (EC 3.4.24.-) (Matrix metalloprot	w
+MATRIX	human	P24821	TNC	P24821	22	158	Tenascin (TN) (Cytotactin) (GMEM) (GP 150-225) (Glioma-assoc	w
+MATRIX	human	P26371	KRTAP5-9	P26371	4	203	Keratin-associated protein 5-9 (Keratin, cuticle, ultrahigh 	w
+MATRIX	human	P35613	BSG	P35613	98	869	Basigin (5F7) (Collagenase stimulatory factor) (Extracellula	w
+MATRIX	human	P39900	MMP12	P39900	6	72	Macrophage metalloelastase (MME) (EC 3.4.24.65) (Macrophage 	w
+MATRIX	human	P45452	MMP13	P45452	19	182	Collagenase 3 (EC 3.4.24.-) (Matrix metalloproteinase-13) (M	w
+MATRIX	human	P49747	COMP	P49747	22	271	Cartilage oligomeric matrix protein (COMP) (Thrombospondin-5	w
+MATRIX	human	P50281	MMP14	P50281	19	233	Matrix metalloproteinase-14 (MMP-14) (EC 3.4.24.80) (MMP-X1)	w
+MATRIX	human	P51511	MMP15	P51511	10	98	Matrix metalloproteinase-15 (MMP-15) (EC 3.4.24.-) (Membrane	w
+MATRIX	human	P51512	MMP16	P51512	7	111	Matrix metalloproteinase-16 (MMP-16) (EC 3.4.24.-) (MMP-X2) 	w
+MATRIX	human	Q07507	DPT	Q07507	13	152	Dermatopontin (Tyrosine-rich acidic matrix protein) (TRAMP)	w
+MATRIX	human	Q08379	GOLGA2	Q08379	134	762	Golgin subfamily A member 2 (130 kDa cis-Golgi matrix protei	w
+MATRIX	human	Q12805	EFEMP1	Q12805	52	265	EGF-containing fibulin-like extracellular matrix protein 1 (	w
+MATRIX	human	Q13316	DMP1	Q13316	18	88	Dentin matrix acidic phosphoprotein 1 (DMP-1) (Dentin matrix	w
+MATRIX	human	Q14149	MORC3	Q14149	18	149	MORC family CW-type zinc finger protein 3 (Nuclear matrix pr	w
+MATRIX	human	Q14980	NUMA1	Q14980	49	419	Nuclear mitotic apparatus protein 1 (Nuclear matrix protein-	w
+MATRIX	human	Q16610	ECM1	Q16610	37	510	Extracellular matrix protein 1 (Secretory component p85)	w
+MATRIX	human	Q16740	CLPP	Q16740	33	574	ATP-dependent Clp protease proteolytic subunit, mitochondria	w
+MATRIX	human	Q17R60	IMPG1	Q17R60	6	18	Interphotoreceptor matrix proteoglycan 1 (Interphotoreceptor	w
+MATRIX	human	Q5H8C1	FREM1	Q5H8C1	2	54	FRAS1-related extracellular matrix protein 1 (Protein QBRICK	w
+MATRIX	human	Q5SZK8	FREM2	Q5SZK8	0	42	FRAS1-related extracellular matrix protein 2 (ECM3 homolog)	w
+MATRIX	human	Q8IXL6	FAM20C	Q8IXL6	161	1487	Extracellular serine/threonine protein kinase FAM20C (EC 2.7	w
+MATRIX	human	Q8IYB3	SRRM1	Q8IYB3	70	435	Serine/arginine repetitive matrix protein 1 (SR-related nucl	w
+MATRIX	human	Q8N119	MMP21	Q8N119	9	44	Matrix metalloproteinase-21 (MMP-21) (EC 3.4.24.-)	w
+MATRIX	human	Q8TF68	ZNF384	Q8TF68	1	98	Zinc finger protein 384 (CAG repeat protein 1) (CAS-interact	w
+MATRIX	human	Q8WWC4	MAIP1	Q8WWC4	11	131	m-AAA protease-interacting protein 1, mitochondrial (Matrix 	w
+MATRIX	human	Q96FV9	THOC1	Q96FV9	56	444	THO complex subunit 1 (Nuclear matrix protein p84) (p84N5) (	w
+MATRIX	human	Q99542	MMP19	Q99542	11	72	Matrix metalloproteinase-19 (MMP-19) (EC 3.4.24.-) (Matrix m	w
+MATRIX	human	Q9BRK3	MXRA8	Q9BRK3	15	89	Matrix remodeling-associated protein 8 (Limitrin)	w
+MATRIX	human	Q9BZV3	IMPG2	Q9BZV3	5	28	Interphotoreceptor matrix proteoglycan 2 (Interphotoreceptor	w
+MATRIX	human	Q9H239	MMP28	Q9H239	4	67	Matrix metalloproteinase-28 (MMP-28) (EC 3.4.24.-) (Epilysin	w
+MATRIX	human	Q9H306	MMP27	Q9H306	2	46	Matrix metalloproteinase-27 (MMP-27) (EC 3.4.24.-)	w
+MATRIX	human	Q9NPA2	MMP25	Q9NPA2	9	83	Matrix metalloproteinase-25 (MMP-25) (EC 3.4.24.-) (Leukolys	w
+MATRIX	human	Q9NQ76	MEPE	Q9NQ76	1	31	Matrix extracellular phosphoglycoprotein (Osteoblast/osteocy	w
+MATRIX	human	Q9NRE1	MMP26	Q9NRE1	8	80	Matrix metalloproteinase-26 (MMP-26) (EC 3.4.24.-) (Endometa	w
+MATRIX	human	Q9ULZ9	MMP17	Q9ULZ9	5	49	Matrix metalloproteinase-17 (MMP-17) (EC 3.4.24.-) (Membrane	w
+MATRIX	human	Q9UMS4	PRPF19	Q9UMS4	88	658	Pre-mRNA-processing factor 19 (EC 2.3.2.27) (Nuclear matrix 	w
+MATRIX	human	Q9UQ35	SRRM2	Q9UQ35	30	529	Serine/arginine repetitive matrix protein 2 (300 kDa nuclear	w
+MATRIX	human	Q9UQ90	SPG7	Q9UQ90	19	287	Mitochondrial inner membrane m-AAA protease component parapl	w
+MATRIX	human	Q9Y5K2	KLK4	Q9Y5K2	68	169	Kallikrein-4 (EC 3.4.21.-) (Enamel matrix serine proteinase 	w
+MATRIX	human	Q9Y5R2	MMP24	Q9Y5R2	6	57	Matrix metalloproteinase-24 (MMP-24) (EC 3.4.24.-) (Membrane	w
+MATRIX	virus	A0A024A140	M	A0A024A140	0	7	Matrix protein	w
+MATRIX	virus	A0A059U1M2		A0A059U1M2	1	6	Matrix protein	w
+MATRIX	virus	A0A068EQ10		A0A068EQ10	0	5	Matrix protein	w
+MATRIX	virus	A0A076U3J2	M	A0A076U3J2	1	5	Matrix protein	w
+MATRIX	virus	A0A096ZGS8	M	A0A096ZGS8	1	10	Matrix protein	w
+MATRIX	virus	A0A096ZGV3	M	A0A096ZGV3	0	10	Matrix protein	w
+MATRIX	virus	A0A097A5A9		A0A097A5A9	0	7	Matrix protein	w
+MATRIX	virus	A0A0A1E8U6		A0A0A1E8U6	0	4	Matrix protein	w
+MATRIX	virus	A0A0A1E8V2		A0A0A1E8V2	0	5	Matrix protein	w
+MATRIX	virus	A0A0B5JPR2	M	A0A0B5JPR2	0	8	Matrix protein	w
+MATRIX	virus	A0A0B5KEV8	M	A0A0B5KEV8	1	6	Matrix protein	w
+MATRIX	virus	A0A0B5KEZ9	M	A0A0B5KEZ9	1	5	Matrix protein	w
+MATRIX	virus	A0A0B5KF43	M	A0A0B5KF43	0	5	Matrix protein	w
+MATRIX	virus	A0A0B5KK08	M	A0A0B5KK08	0	5	Matrix protein	w
+MATRIX	virus	A0A0B5KKB5	M	A0A0B5KKB5	0	4	Matrix protein	w
+MATRIX	virus	A0A0B5KKC0	M	A0A0B5KKC0	1	4	Matrix protein	w
+MATRIX	virus	A0A0B5KKD9	M	A0A0B5KKD9	1	4	Matrix protein	w
+MATRIX	virus	A0A0B5KRM5	M	A0A0B5KRM5	1	5	Matrix protein	w
+MATRIX	virus	A0A0C4MIT7		A0A0C4MIT7	0	7	Matrix protein	w
+MATRIX	virus	A0A0C5CF27		A0A0C5CF27	1	7	Matrix protein	w
+MATRIX	virus	A0A0C5IGW2	M	A0A0C5IGW2	1	6	Matrix protein	w
+MATRIX	virus	A0A0D3R0Y0		A0A0D3R0Y0	0	6	Matrix protein	w
+MATRIX	virus	A0A0D3R125		A0A0D3R125	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R127		A0A0D3R127	0	6	Matrix protein	w
+MATRIX	virus	A0A0D3R137		A0A0D3R137	1	13	Matrix protein	w
+MATRIX	virus	A0A0D3R149		A0A0D3R149	0	8	Matrix protein	w
+MATRIX	virus	A0A0D3R172		A0A0D3R172	0	6	Matrix protein	w
+MATRIX	virus	A0A0D3R174		A0A0D3R174	0	8	Matrix protein	w
+MATRIX	virus	A0A0D3R194		A0A0D3R194	1	9	Matrix protein	w
+MATRIX	virus	A0A0D3R1B6		A0A0D3R1B6	0	7	Matrix protein	w
+MATRIX	virus	A0A0D3R1B7		A0A0D3R1B7	3	10	Matrix protein	w
+MATRIX	virus	A0A0D3R1D0		A0A0D3R1D0	1	6	Matrix protein	w
+MATRIX	virus	A0A0D3R1E3		A0A0D3R1E3	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R1E8		A0A0D3R1E8	0	4	Matrix protein	w
+MATRIX	virus	A0A0D3R1F1		A0A0D3R1F1	1	10	Matrix protein	w
+MATRIX	virus	A0A0D3R1F3		A0A0D3R1F3	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R1G3		A0A0D3R1G3	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R1H3		A0A0D3R1H3	0	10	Matrix protein	w
+MATRIX	virus	A0A0D3R1H9		A0A0D3R1H9	0	9	Matrix protein	w
+MATRIX	virus	A0A0D3R1I9		A0A0D3R1I9	0	10	Matrix protein	w
+MATRIX	virus	A0A0D3R1J2		A0A0D3R1J2	1	9	Matrix protein	w
+MATRIX	virus	A0A0D3R1J9		A0A0D3R1J9	0	10	Matrix protein	w
+MATRIX	virus	A0A0D3R1K0		A0A0D3R1K0	0	4	Matrix protein	w
+MATRIX	virus	A0A0D3R1K2		A0A0D3R1K2	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R1K9		A0A0D3R1K9	0	7	Matrix protein	w
+MATRIX	virus	A0A0D3R1M7		A0A0D3R1M7	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R1N1		A0A0D3R1N1	0	9	Matrix protein	w
+MATRIX	virus	A0A0D3R1N9		A0A0D3R1N9	0	4	Matrix protein	w
+MATRIX	virus	A0A0D3R1Q4		A0A0D3R1Q4	1	4	Matrix protein	w
+MATRIX	virus	A0A0D3R1Q5		A0A0D3R1Q5	0	6	Matrix protein	w
+MATRIX	virus	A0A0D3R1S2		A0A0D3R1S2	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R1S6		A0A0D3R1S6	1	8	Matrix protein	w
+MATRIX	virus	A0A0D3R1S8		A0A0D3R1S8	1	11	Matrix protein	w
+MATRIX	virus	A0A0D3R1V5		A0A0D3R1V5	0	6	Matrix protein	w
+MATRIX	virus	A0A0D3R252		A0A0D3R252	0	4	Matrix protein	w
+MATRIX	virus	A0A0D3R257		A0A0D3R257	1	9	Matrix protein	w
+MATRIX	virus	A0A0D3R293		A0A0D3R293	0	5	Matrix protein	w
+MATRIX	virus	A0A0D3R2F0		A0A0D3R2F0	0	8	Matrix protein	w
+MATRIX	virus	A0A0R6CHI1	M	A0A0R6CHI1	0	5	Matrix protein	w
+MATRIX	virus	A0A0S2RRC6		A0A0S2RRC6	0	5	Matrix protein	w
+MATRIX	virus	A0A140D058	M	A0A140D058	0	4	Matrix protein	w
+MATRIX	virus	A0A140D8K2	M	A0A140D8K2	0	6	Matrix protein	w
+MATRIX	virus	A0A140D8K8	M	A0A140D8K8	0	5	Matrix protein	w
+MATRIX	virus	A0A140D8M7	M	A0A140D8M7	0	5	Matrix protein	w
+MATRIX	virus	A0A140D8P5	M	A0A140D8P5	1	5	Matrix protein	w
+MATRIX	virus	A0A140D8Q0	M	A0A140D8Q0	1	6	Matrix protein	w
+MATRIX	virus	A0A173M8X3	M	A0A173M8X3	1	5	Matrix protein	w
+MATRIX	virus	A0A1I9L1X0		A0A1I9L1X0	0	4	Matrix protein	w
+MATRIX	virus	A0A1I9RGZ8	M	A0A1I9RGZ8	0	5	Matrix protein	w
+MATRIX	virus	A0A1J0F5G7	M	A0A1J0F5G7	0	8	Matrix protein	w
+MATRIX	virus	A0A1J0RI55	M	A0A1J0RI55	0	5	Matrix protein	w
+MATRIX	virus	A0A1L3KMN6		A0A1L3KMN6	1	5	Matrix protein	w
+MATRIX	virus	A0A1L3KMX7		A0A1L3KMX7	1	4	Matrix protein	w
+MATRIX	virus	A0A1L3KMY0		A0A1L3KMY0	0	5	Matrix protein	w
+MATRIX	virus	A0A1L3KMZ0		A0A1L3KMZ0	0	5	Matrix protein	w
+MATRIX	virus	A0A1L3KMZ9		A0A1L3KMZ9	0	5	Matrix protein	w
+MATRIX	virus	A0A1L3KNH6		A0A1L3KNH6	1	5	Matrix protein	w
+MATRIX	virus	A0A1L5YIM7	M	A0A1L5YIM7	1	8	Matrix protein	w
+MATRIX	virus	A0A1N7TF63		A0A1N7TF63	0	4	Matrix protein	w
+MATRIX	virus	A0A1W6R4S3	M	A0A1W6R4S3	1	6	Matrix protein	w
+MATRIX	virus	A0A1Y0KBV2		A0A1Y0KBV2	1	6	Matrix protein	w
+MATRIX	virus	A0A1Y0KBX0		A0A1Y0KBX0	2	5	Matrix protein	w
+MATRIX	virus	A0A1Y0KC56		A0A1Y0KC56	1	6	Matrix protein	w
+MATRIX	virus	A0A1Z1G749	M	A0A1Z1G749	1	5	Matrix protein	w
+MATRIX	virus	A0A220FFJ0		A0A220FFJ0	0	5	Matrix protein	w
+MATRIX	virus	A0A221LCG5	M	A0A221LCG5	0	9	Matrix protein	w
+MATRIX	virus	A0A249Y6Y8	M	A0A249Y6Y8	0	4	Matrix protein	w
+MATRIX	virus	A0A291I326	M	A0A291I326	0	4	Matrix protein	w
+MATRIX	virus	A0A2H4PJ69	M	A0A2H4PJ69	1	6	Matrix protein	w
+MATRIX	virus	A0A2I6ECF4	M	A0A2I6ECF4	1	7	Matrix protein	w
+MATRIX	virus	A0A2L2FP70	M	A0A2L2FP70	1	5	Matrix protein	w
+MATRIX	virus	A0A2P1BSX2		A0A2P1BSX2	0	5	Matrix protein	w
+MATRIX	virus	A0A2P1GJ90	M	A0A2P1GJ90	1	8	Matrix protein	w
+MATRIX	virus	A0A2P1GJA5	M	A0A2P1GJA5	1	7	Matrix protein	w
+MATRIX	virus	A0A2P1GJB3	M	A0A2P1GJB3	2	9	Matrix protein	w
+MATRIX	virus	A0A2P1GMT3		A0A2P1GMT3	0	4	Matrix protein	w
+MATRIX	virus	A0A2P1GMY4		A0A2P1GMY4	1	6	Matrix protein	w
+MATRIX	virus	A0A2Z2CF60		A0A2Z2CF60	0	5	Matrix protein	w
+MATRIX	virus	A0A336USW8		A0A336USW8	1	4	Matrix protein	w
+MATRIX	virus	A0A343EQF0	VP40	A0A343EQF0	0	9	Matrix protein VP40	w
+MATRIX	virus	A0A346M1Z9		A0A346M1Z9	0	4	Matrix protein	w
+MATRIX	virus	A0A383SA96	M	A0A383SA96	1	10	Matrix protein	w
+MATRIX	virus	A0A3G1PCZ1	M	A0A3G1PCZ1	0	5	Matrix protein	w
+MATRIX	virus	A0A3G2KTK4	M	A0A3G2KTK4	1	7	Matrix protein	w
+MATRIX	virus	A0A3G2YRZ3	M	A0A3G2YRZ3	0	5	Matrix protein	w
+MATRIX	virus	A0A3Q8TNE8	M	A0A3Q8TNE8	0	6	Matrix protein	w
+MATRIX	virus	A0A3Q8U6Q5	VP40	A0A3Q8U6Q5	1	6	Matrix protein VP40	w
+MATRIX	virus	A0A411NK50	M	A0A411NK50	0	5	Matrix protein	w
+MATRIX	virus	A0A5J6CUU3		A0A5J6CUU3	1	5	Matrix protein	w
+MATRIX	virus	A0A6F8PYW1		A0A6F8PYW1	0	4	Matrix protein	w
+MATRIX	virus	A0A6M3TYE3	M	A0A6M3TYE3	1	6	Matrix protein	w
+MATRIX	virus	A0A7D0MZ43		A0A7D0MZ43	1	9	Matrix protein	w
+MATRIX	virus	A0A7D0N1S4		A0A7D0N1S4	1	9	Matrix protein	w
+MATRIX	virus	A0A7D4X100		A0A7D4X100	0	5	Matrix protein	w
+MATRIX	virus	A0A7D5IF23	M	A0A7D5IF23	2	8	Matrix protein	w
+MATRIX	virus	A0A7G4YW80		A0A7G4YW80	0	4	Matrix protein	w
+MATRIX	virus	A0A7G9IRA0		A0A7G9IRA0	0	5	Matrix protein	w
+MATRIX	virus	A0A7S4GQR1	M	A0A7S4GQR1	0	5	Matrix protein	w
+MATRIX	virus	A0A7S5S3E7	M	A0A7S5S3E7	0	4	Matrix protein	w
+MATRIX	virus	A0A7S5S5H0	M	A0A7S5S5H0	0	4	Matrix protein	w
+MATRIX	virus	A0A875J5K3	M	A0A875J5K3	2	7	Matrix protein	w
+MATRIX	virus	A0A8A6RHF1		A0A8A6RHF1	1	5	Matrix protein	w
+MATRIX	virus	A0A8F1SXC9		A0A8F1SXC9	3	5	Matrix protein	w
+MATRIX	virus	A0A8F7CEZ0		A0A8F7CEZ0	2	9	Matrix protein	w
+MATRIX	virus	A0A8F7CGL3		A0A8F7CGL3	1	7	Matrix protein	w
+MATRIX	virus	A0A8K1J663		A0A8K1J663	0	5	Matrix protein	w
+MATRIX	virus	A0A8K1LXA3		A0A8K1LXA3	2	7	Matrix protein	w
+MATRIX	virus	A0A8K1XB72	FuRV4_gp4	A0A8K1XB72	0	5	Matrix protein	w
+MATRIX	virus	A0A8K1XB94	FFIRV1_gp3	A0A8K1XB94	0	4	Matrix protein	w
+MATRIX	virus	A0A8T9KLE7		A0A8T9KLE7	1	7	Matrix protein	w
+MATRIX	virus	A0A8T9KLH7		A0A8T9KLH7	2	7	Matrix protein	w
+MATRIX	virus	A0A8T9KLY2		A0A8T9KLY2	1	7	Matrix protein	w
+MATRIX	virus	A0A8T9KM09		A0A8T9KM09	2	4	Matrix protein	w
+MATRIX	virus	A0A8T9KM46		A0A8T9KM46	2	7	Matrix protein	w
+MATRIX	virus	A0A8T9KM89		A0A8T9KM89	2	8	Matrix protein	w
+MATRIX	virus	A0A8T9KN54		A0A8T9KN54	1	8	Matrix protein	w
+MATRIX	virus	A0A8T9KQA3		A0A8T9KQA3	3	6	Matrix protein	w
+MATRIX	virus	A0A977IVN8	M	A0A977IVN8	1	9	Matrix protein	w
+MATRIX	virus	A0A977TMT7		A0A977TMT7	0	5	Matrix protein	w
+MATRIX	virus	A0A9E7VB16	M	A0A9E7VB16	1	5	Matrix protein	w
+MATRIX	virus	A0AA48FJW5	M	A0AA48FJW5	2	8	Matrix protein	w
+MATRIX	virus	A0AA48FMY3	M	A0AA48FMY3	2	9	Matrix protein	w
+MATRIX	virus	A0AA48X998		A0AA48X998	0	5	Matrix protein	w
+MATRIX	virus	A0AA49B336		A0AA49B336	0	5	Matrix protein	w
+MATRIX	virus	A0AAC8WAD1		A0AAC8WAD1	0	3	Matrix protein	w
+MATRIX	virus	A0AAD0EWE0		A0AAD0EWE0	2	7	Matrix protein	w
+MATRIX	virus	A0AAD0MNR7		A0AAD0MNR7	0	5	Matrix protein	w
+MATRIX	virus	A0AAD3AVY7	VP40	A0AAD3AVY7	0	6	Matrix protein VP40	w
+MATRIX	virus	A0AAD3AW85	M	A0AAD3AW85	0	4	Matrix protein	w
+MATRIX	virus	A0AAE5ZN33	M	A0AAE5ZN33	0	5	Matrix protein	w
+MATRIX	virus	A0AAE6M2U9	M	A0AAE6M2U9	0	4	Matrix protein	w
+MATRIX	virus	A0AAE6XMP4	M	A0AAE6XMP4	0	4	Matrix protein	w
+MATRIX	virus	A0AAE6XNC5	M	A0AAE6XNC5	0	4	Matrix protein	w
+MATRIX	virus	A0AAE7QBZ8	M	A0AAE7QBZ8	1	7	Matrix protein	w
+MATRIX	virus	A0AAE8BGS8		A0AAE8BGS8	1	6	Matrix protein	w
+MATRIX	virus	A0AAE8XRM6		A0AAE8XRM6	1	1	Matrix protein	w
+MATRIX	virus	A0AAE8XRN8		A0AAE8XRN8	2	7	Matrix protein	w
+MATRIX	virus	A0AAE8XRP8		A0AAE8XRP8	2	4	Matrix protein	w
+MATRIX	virus	A0AAE8XRV8		A0AAE8XRV8	2	9	Matrix protein	w
+MATRIX	virus	A0AAE8XRW4		A0AAE8XRW4	2	6	Matrix protein	w
+MATRIX	virus	A0AAE8XRY1		A0AAE8XRY1	1	7	Matrix protein	w
+MATRIX	virus	A0AAE8XV98		A0AAE8XV98	1	6	Matrix protein	w
+MATRIX	virus	A0AAE9BV59		A0AAE9BV59	1	6	Matrix protein	w
+MATRIX	virus	A0AAE9BV63		A0AAE9BV63	2	4	Matrix protein	w
+MATRIX	virus	A0AAE9BVM8		A0AAE9BVM8	1	6	Matrix protein	w
+MATRIX	virus	A0AAE9C4Y8	M	A0AAE9C4Y8	0	4	Matrix protein	w
+MATRIX	virus	A0AAE9HQJ1	M	A0AAE9HQJ1	2	10	Matrix protein	w
+MATRIX	virus	A0AAE9HRA7	M	A0AAE9HRA7	1	9	Matrix protein	w
+MATRIX	virus	A0AAE9HRI3	M	A0AAE9HRI3	1	8	Matrix protein	w
+MATRIX	virus	A0AAE9HT68	M	A0AAE9HT68	2	8	Matrix protein	w
+MATRIX	virus	A0AAE9HU29	M	A0AAE9HU29	1	7	Matrix protein	w
+MATRIX	virus	A0AAE9HUK2		A0AAE9HUK2	3	7	Matrix protein	w
+MATRIX	virus	A0AAE9HWK1	M	A0AAE9HWK1	2	8	Matrix protein	w
+MATRIX	virus	A0AAE9KXA8	M	A0AAE9KXA8	2	7	Matrix protein	w
+MATRIX	virus	A0AAE9KXC7	M	A0AAE9KXC7	2	7	Matrix protein	w
+MATRIX	virus	A0AAE9KY33	M	A0AAE9KY33	2	7	Matrix protein	w
+MATRIX	virus	A0AAE9KYN1	M	A0AAE9KYN1	1	9	Matrix protein	w
+MATRIX	virus	A0AAE9KYZ1	M	A0AAE9KYZ1	2	8	Matrix protein	w
+MATRIX	virus	A0AAE9T6Q4		A0AAE9T6Q4	0	4	Matrix protein	w
+MATRIX	virus	A0AAX2ZA68		A0AAX2ZA68	1	7	Matrix protein	w
+MATRIX	virus	A0AAX3A6X0		A0AAX3A6X0	1	9	Matrix protein	w
+MATRIX	virus	A0AAX3C920	M	A0AAX3C920	2	8	Matrix protein	w
+MATRIX	virus	A0AC61TNV9	M	A0AC61TNV9	2	8	Matrix protein	w
+MATRIX	virus	A0ACD3VMI2		A0ACD3VMI2	1	8	Matrix protein VP40	w
+MATRIX	virus	A4UHQ0	M	A4UHQ0	0	5	Matrix protein	w
+MATRIX	virus	A4UHQ5	M	A4UHQ5	0	5	Matrix protein	w
+MATRIX	virus	A5H725	M	A5H725	3	9	Matrix protein	w
+MATRIX	virus	A7E3F0	M	A7E3F0	3	9	Matrix protein	w
+MATRIX	virus	A9Z0P4	M	A9Z0P4	1	5	Matrix protein	w
+MATRIX	virus	B2BX75	M	B2BX75	1	8	Matrix protein	w
+MATRIX	virus	B2X7D7	M	B2X7D7	0	9	Matrix protein	w
+MATRIX	virus	B2XXU6	M	B2XXU6	0	5	Matrix protein	w
+MATRIX	virus	B2XY01	M	B2XY01	0	4	Matrix protein	w
+MATRIX	virus	B3FRK8		B3FRK8	0	4	Matrix protein	w
+MATRIX	virus	B3FRL3		B3FRL3	0	4	Matrix protein	w
+MATRIX	virus	B4Y566	M	B4Y566	1	6	Matrix protein	w
+MATRIX	virus	B5AXP2	M	B5AXP2	1	6	Matrix protein	w
+MATRIX	virus	B5L5T7	M	B5L5T7	3	6	Matrix protein	w
+MATRIX	virus	B8XCM9	VP40	B8XCM9	1	9	Matrix protein VP40	w
+MATRIX	virus	B8XCN8	VP40	B8XCN8	0	9	Matrix protein VP40	w
+MATRIX	virus	B8XH62	M	B8XH62	1	7	Matrix protein	w
+MATRIX	virus	C0J7I2	M	C0J7I2	2	5	Matrix protein	w
+MATRIX	virus	C3TWP8	M	C3TWP8	1	5	Matrix protein	w
+MATRIX	virus	C3VM13	M	C3VM13	0	4	Matrix protein	w
+MATRIX	virus	C6FGY8	M	C6FGY8	1	6	Matrix protein	w
+MATRIX	virus	C8CAQ1	M	C8CAQ1	0	5	Matrix protein	w
+MATRIX	virus	C8CJE9	M	C8CJE9	0	5	Matrix protein	w
+MATRIX	virus	D0UFC9	Segment 6	D0UFC9	0	6	Probable matrix protein	w
+MATRIX	virus	D2E9X5	ORF3	D2E9X5	0	4	Matrix protein	w
+MATRIX	virus	D3GGL5	M	D3GGL5	1	13	Matrix protein	w
+MATRIX	virus	D3X606	M	D3X606	1	8	Matrix protein	w
+MATRIX	virus	D4NRK0	M	D4NRK0	0	5	Matrix protein	w
+MATRIX	virus	D5FGX4	M	D5FGX4	2	4	Matrix protein	w
+MATRIX	virus	D6C4E6		D6C4E6	0	7	Matrix protein	w
+MATRIX	virus	D7US58	M	D7US58	1	6	Matrix protein	w
+MATRIX	virus	D7US65	M	D7US65	1	6	Matrix protein	w
+MATRIX	virus	D8V072	M	D8V072	0	8	Matrix protein	w
+MATRIX	virus	D8V082	M	D8V082	0	8	Matrix protein	w
+MATRIX	virus	D8WJ25	M	D8WJ25	1	6	Matrix protein	w
+MATRIX	virus	D8WJ32	M	D8WJ32	1	6	Matrix protein	w
+MATRIX	virus	D8WJ39	M	D8WJ39	1	6	Matrix protein	w
+MATRIX	virus	D9IL75		D9IL75	1	6	Matrix protein	w
+MATRIX	virus	D9ZNM8	M	D9ZNM8	1	5	Matrix protein	w
+MATRIX	virus	E3P8Y9	M	E3P8Y9	0	5	Matrix protein	w
+MATRIX	virus	E3T3A6		E3T3A6	0	5	Matrix protein	w
+MATRIX	virus	E7D0U4	M	E7D0U4	1	7	Matrix protein	w
+MATRIX	virus	F8SPF3	M	F8SPF3	0	6	Matrix protein	w
+MATRIX	virus	G0ZMN7	M	G0ZMN7	0	5	Matrix protein	w
+MATRIX	virus	G9IRZ9	M	G9IRZ9	2	10	Matrix protein	w
+MATRIX	virus	H8XWF2	M	H8XWF2	1	10	Matrix protein	w
+MATRIX	virus	H8XWS7	M	H8XWS7	1	8	Matrix protein	w
+MATRIX	virus	I0B1Q5	M	I0B1Q5	2	7	Matrix protein	w
+MATRIX	virus	I0E091	M	I0E091	2	6	Matrix protein	w
+MATRIX	virus	I1SV82		I1SV82	0	5	Matrix protein	w
+MATRIX	virus	I1SV89		I1SV89	0	4	Matrix protein	w
+MATRIX	virus	I3NUX6	M	I3NUX6	1	10	Matrix protein	w
+MATRIX	virus	I6U9N2	M	I6U9N2	1	7	Matrix protein	w
+MATRIX	virus	I6UTP1		I6UTP1	1	6	Matrix protein	w
+MATRIX	virus	I7DGR0		I7DGR0	0	5	Matrix protein	w
+MATRIX	virus	J7H0J9	M	J7H0J9	1	6	Matrix protein	w
+MATRIX	virus	J7K3B8	M	J7K3B8	0	5	Matrix protein	w
+MATRIX	virus	J9UF68	M	J9UF68	2	9	Matrix protein	w
+MATRIX	virus	J9UFY8	M	J9UFY8	1	8	Matrix protein	w
+MATRIX	virus	K4FCJ4		K4FCJ4	0	5	Matrix protein	w
+MATRIX	virus	K4HHN5	M	K4HHN5	0	9	Matrix protein	w
+MATRIX	virus	K4PZ30	M	K4PZ30	1	6	Matrix protein	w
+MATRIX	virus	K7X6R3	M	K7X6R3	0	5	Matrix protein	w
+MATRIX	virus	K7XAR3	M	K7XAR3	1	7	Matrix protein	w
+MATRIX	virus	K7XBD3	M	K7XBD3	1	8	Matrix protein	w
+MATRIX	virus	K9N0L4	M	K9N0L4	1	7	Matrix protein	w
+MATRIX	virus	L7Z982	M	L7Z982	0	2	Matrix protein	w
+MATRIX	virus	L7Z986	M	L7Z986	0	4	Matrix protein	w
+MATRIX	virus	M4QRQ2	M	M4QRQ2	1	5	Matrix protein	w
+MATRIX	virus	M4VS08		M4VS08	0	5	Matrix protein	w
+MATRIX	virus	M9SZN6	M	M9SZN6	0	5	Matrix protein	w
+MATRIX	virus	O89326		O89326	3	6	Matrix protein	w
+MATRIX	virus	O89341	M	O89341	2	9	Matrix protein	w
+MATRIX	virus	P03485	M	P03485	0	13	Matrix protein 1	w
+MATRIX	virus	P03489	M	P03489	0	11	Matrix protein 1	w
+MATRIX	virus	P03493	M	P03493	1	11	Matrix protein 2	w
+MATRIX	virus	P06821	M	P06821	3	13	Matrix protein 2	w
+MATRIX	virus	P08671	M	P08671	0	4	Matrix protein	w
+MATRIX	virus	P0C571	M	P0C571	0	5	Matrix protein	w
+MATRIX	virus	P0C795	M	P0C795	0	6	Matrix protein	w
+MATRIX	virus	P16629	M	P16629	1	7	Matrix protein	w
+MATRIX	virus	P19692	M2	P19692	2	5	Matrix protein	w
+MATRIX	virus	P24266	M	P24266	1	7	Matrix protein	w
+MATRIX	virus	P24615	M	P24615	0	10	Matrix protein	w
+MATRIX	virus	P25182	M	P25182	1	7	Matrix protein	w
+MATRIX	virus	P35260	VP40	P35260	1	6	Matrix protein VP40	w
+MATRIX	virus	Q05128	VP40	Q05128	0	9	Matrix protein VP40	w
+MATRIX	virus	Q06Z38	M	Q06Z38	0	6	Matrix protein	w
+MATRIX	virus	Q1PDC8	VP40	Q1PDC8	1	7	Matrix protein VP40	w
+MATRIX	virus	Q287X6	M	Q287X6	2	10	Matrix protein	w
+MATRIX	virus	Q49HN7	M	Q49HN7	2	10	Matrix protein	w
+MATRIX	virus	Q4JFC1	M	Q4JFC1	0	6	Matrix protein	w
+MATRIX	virus	Q4VKV5	M	Q4VKV5	0	6	Matrix protein	w
+MATRIX	virus	Q5GA87	M	Q5GA87	0	5	Matrix protein	w
+MATRIX	virus	Q5K2K5	M	Q5K2K5	1	5	Matrix protein	w
+MATRIX	virus	Q5L4J7	M	Q5L4J7	2	6	Matrix protein	w
+MATRIX	virus	Q5MKM5	M	Q5MKM5	1	10	Matrix protein	w
+MATRIX	virus	Q5USA5	M	Q5USA5	0	8	Matrix protein	w
+MATRIX	virus	Q5VKP0	M	Q5VKP0	0	5	Matrix protein	w
+MATRIX	virus	Q5VKP4	M	Q5VKP4	0	5	Matrix protein	w
+MATRIX	virus	Q5XX06	VP40	Q5XX06	0	9	Matrix protein VP40	w
+MATRIX	virus	Q5ZER4	M	Q5ZER4	2	7	Matrix protein	w
+MATRIX	virus	Q629I3		Q629I3	3	6	Matrix protein	w
+MATRIX	virus	Q6E0W8	M	Q6E0W8	1	5	Matrix protein	w
+MATRIX	virus	Q6WGM2	M	Q6WGM2	2	7	Matrix protein	w
+MATRIX	virus	Q6X1D2	M	Q6X1D2	0	5	Matrix protein	w
+MATRIX	virus	Q6X1D6	M	Q6X1D6	0	5	Matrix protein	w
+MATRIX	virus	Q6YIS2	M	Q6YIS2	2	7	Matrix protein	w
+MATRIX	virus	Q709E6	M	Q709E6	3	6	Matrix protein	w
+MATRIX	virus	Q76UB6	M	Q76UB6	0	4	Matrix protein	w
+MATRIX	virus	Q77D96	Segment 6	Q77D96	1	7	Matrix protein	w
+MATRIX	virus	Q82038	M	Q82038	0	6	Matrix protein	w
+MATRIX	virus	Q82682	M	Q82682	0	6	Matrix protein	w
+MATRIX	virus	Q8B0I2	M	Q8B0I2	0	6	Matrix protein	w
+MATRIX	virus	Q8JPX9	VP40	Q8JPX9	0	8	Matrix protein VP40	w
+MATRIX	virus	Q8JVA9	M	Q8JVA9	1	7	Matrix protein	w
+MATRIX	virus	Q8QT27	M	Q8QT27	1	9	Matrix protein	w
+MATRIX	virus	Q8V3U4	Segment-8	Q8V3U4	1	9	Matrix protein 1	w
+MATRIX	virus	Q91F56	M	Q91F56	0	8	Matrix protein	w
+MATRIX	virus	Q91HJ6	M	Q91HJ6	1	6	Matrix protein	w
+MATRIX	virus	Q98664	M	Q98664	0	7	Matrix protein	w
+MATRIX	virus	Q9E785	M	Q9E785	1	12	Matrix protein	w
+MATRIX	virus	Q9E7N9	M	Q9E7N9	2	5	Matrix protein	w
+MATRIX	virus	Q9IK90	M	Q9IK90	2	9	Matrix protein	w
+MATRIX	virus	Q9J7D9		Q9J7D9	1	5	Matrix protein	w
+MATRIX	virus	Q9JFN6	M	Q9JFN6	1	7	Matrix protein	w
+MATRIX	virus	Q9JG20	M	Q9JG20	1	8	Matrix protein	w
+MATRIX	virus	Q9JGT5	M	Q9JGT5	2	8	Matrix protein	w
+MATRIX	virus	Q9QJT7	M	Q9QJT7	0	6	Matrix protein	w
+MATRIX	virus	Q9QSP2	M	Q9QSP2	0	5	Matrix protein	w
+MATRIX	virus	Q9W850	M	Q9W850	3	7	Matrix protein	w
+MATRIX	virus	R4N1G1	M	R4N1G1	3	7	Matrix protein	w
+MATRIX	virus	R4WX42		R4WX42	0	4	Matrix protein	w
+MATRIX	virus	R9ZRL9		R9ZRL9	0	4	Matrix protein	w
+MATRIX	virus	S5MFK7	M	S5MFK7	1	8	Matrix protein	w
+MATRIX	virus	U3KZF7		U3KZF7	1	9	Matrix protein	w
+MATRIX	virus	U3LZD6		U3LZD6	0	2	Matrix protein	w
+MATRIX	virus	U5NF19	M	U5NF19	0	5	Matrix protein	w
+MATRIX	virus	V5PZL9		V5PZL9	0	4	Matrix protein	w
+MATRIX	virus	W5S5I8		W5S5I8	1	6	Matrix protein	w
+MATRIX	virus	W8SIW6	M	W8SIW6	2	8	Matrix protein	w
+MATRIX	worm	A0A5E4LWF5	CELE_H11E01.3	A0A5E4LWF5	0	4	Serine/arginine repetitive matrix protein 2	w
+MATRIX	worm	G5EBU3	zmp-3	G5EBU3	0	6	Matrix metalloproteinase-C	w
+MATRIX	worm	G5EEX7	CELE_F49C12.15	G5EEX7	0	7	Serine/arginine repetitive matrix protein 2-like	w
+MATRIX	worm	G5EGM1	zmp-1	G5EGM1	0	6	Matrix metalloproteinase-A	w
+MATRIX	worm	O44836	zmp-2	O44836	0	6	Matrix metalloproteinase-B	w
+MATRIX	worm	O62071	pcmd-1	O62071	0	4	PeriCentriolar MatriX Deficient	w
+MATRIX	worm	P46557	mnp-1	P46557	0	1	Matrix non-peptidase homolog 1	w
+MATRIX	zebrafish	A0A0G2KDJ5	comp	A0A0G2KDJ5	0	26	Cartilage oligomeric matrix protein	w
+MATRIX	zebrafish	A0A0N9E2K8	mmp21	A0A0N9E2K8	0	2	Matrix metallopeptidase-21	w
+MATRIX	zebrafish	A0A0R4IB00	mmp17b	A0A0R4IB00	0	2	Matrix metallopeptidase 17b	w
+MATRIX	zebrafish	A0A0R4IIK5	ecm1b	A0A0R4IIK5	0	5	Extracellular matrix protein 1 isoform X1	w
+MATRIX	zebrafish	A0A0R4IMZ6	ecm1a	A0A0R4IMZ6	0	4	Extracellular matrix protein 1	w
+MATRIX	zebrafish	A0A2R8RUJ1	mmp28	A0A2R8RUJ1	0	3	Matrix metallopeptidase 28	w
+MATRIX	zebrafish	A0A8M1PF75	srrm1	A0A8M1PF75	8	146	Serine/arginine repetitive matrix protein 1	w
+MATRIX	zebrafish	A0A8M9P9J4	mmp15b	A0A8M9P9J4	0	19	Matrix metalloproteinase-15	w
+MATRIX	zebrafish	A0A8M9PYF1	mmp25a	A0A8M9PYF1	2	2	Matrix metalloproteinase-25 isoform X1	w
+MATRIX	zebrafish	A0AB32TZ88	mmp19	A0AB32TZ88	1	8	Matrix metalloproteinase-19	w
+MATRIX	zebrafish	B0R0I1	mmp14b	B0R0I1	0	19	Matrix metalloproteinase-14	w
+MATRIX	zebrafish	E7F1N5	mmp25b	E7F1N5	1	2	Matrix metallopeptidase 25b	w
+MATRIX	zebrafish	E7F3C3	mmp20b	E7F3C3	0	8	Matrix metallopeptidase 20b (enamelysin)	w
+MATRIX	zebrafish	E7FFQ4	mmp15a	E7FFQ4	0	2	Matrix metallopeptidase 15a	w
+MATRIX	zebrafish	E9QIX9	mmp24	E9QIX9	0	2	Matrix metallopeptidase 24	w
+MATRIX	zebrafish	F1QLP6	srrm2	F1QLP6	7	147	Serine/arginine repetitive matrix 2	w
+MATRIX	zebrafish	F1R2S9	ecm2	F1R2S9	4	24	Extracellular matrix protein 2	w
+MATRIX	zebrafish	F1R8N4	mmp16b	F1R8N4	0	2	Matrix metallopeptidase 16b (membrane-inserted)	w
+MATRIX	zebrafish	P0CB65	srrm4	P0CB65	0	2	Serine/arginine repetitive matrix protein 4	w
+MATRIX	zebrafish	Q0VIL3	otomp	Q0VIL3	0	12	Otolith matrix protein 1	w
+MATRIX	zebrafish	Q5WQV6	efemp2b	Q5WQV6	1	12	EGF-containing fibulin extracellular matrix protein 2b	w
+MATRIX-ASSOCIATED	fly	FBgn0031655	Marcal1	Q9VMX6	3	31	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	fly	FBgn0032157	Etl1	Q9VL72	2	19	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	O60264	SMARCA5	O60264	73	676	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	P28370	SMARCA1	P28370	43	373	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	P51531	SMARCA2	P51531	35	399	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	P51532	SMARCA4	P51532	39	544	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	Q12824	SMARCB1	Q12824	92	1049	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	Q6STE5	SMARCD3	Q6STE5	89	553	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	Q8N9N5	BANP	Q8N9N5	74	443	Protein BANP (BEN domain-containing protein 1) (Btg3-associa	w
+MATRIX-ASSOCIATED	human	Q8TAQ2	SMARCC2	Q8TAQ2	45	479	SWI/SNF complex subunit SMARCC2 (BRG1-associated factor 170)	w
+MATRIX-ASSOCIATED	human	Q8WVF2	UCMA	Q8WVF2	3	60	Unique cartilage matrix-associated protein [Cleaved into: Un	w
+MATRIX-ASSOCIATED	human	Q92922	SMARCC1	Q92922	47	522	SWI/SNF complex subunit SMARCC1 (BRG1-associated factor 155)	w
+MATRIX-ASSOCIATED	human	Q92925	SMARCD2	Q92925	80	589	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	Q969G3	SMARCE1	Q969G3	67	659	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	Q96GM5	SMARCD1	Q96GM5	83	789	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	Q9H4L7	SMARCAD1	Q9H4L7	25	270	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	human	Q9NRZ9	HELLS	Q9NRZ9	7	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	w
+MATRIX-ASSOCIATED	human	Q9NZC9	SMARCAL1	Q9NZC9	12	129	SNF2 related chromatin remodeling annealing helicase 1 (EC 3	w
+MATRIX-ASSOCIATED	human	Q9NZJ0	DTL	Q9NZJ0	84	355	Denticleless protein homolog (DDB1- and CUL4-associated fact	w
+MATRIX-ASSOCIATED	human	Q9P0W2	HMG20B	Q9P0W2	73	514	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	worm	G5EDG2	smrd-1	G5EDG2	0	13	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	worm	Q8MNV7	smrc-1	Q8MNV7	2	11	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	B0R061	smarcad1a	B0R061	0	9	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	B2KL77	smarcd3b	B2KL77	12	103	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	B2ZFP3	smarcal1	B2ZFP3	5	63	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	B8A552	smarca5	B8A552	6	143	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	E7EYW7	smarcd2	E7EYW7	13	102	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	E7F1C4	smarcad1b	E7F1C4	0	9	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	E9QC50	smarcd3a	E9QC50	10	95	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	Q5U379	smarcb1a	Q5U379	6	115	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	Q802C8	smarcd1	Q802C8	9	97	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-ASSOCIATED	zebrafish	Q803S1	smarce1	Q803S1	13	76	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+MATRIX-REMODELING-	human	Q9NPY3	CD93	Q9NPY3	45	259	Complement component C1q receptor (C1q/MBL/SPA receptor) (C1	w
+MATRIX-REMODELING-ASSOCIATED	fly	FBgn0037134	CG7407	Q9VNX9	9	79	Matrix-remodeling-associated protein 7	w
+MATRIX-REMODELING-ASSOCIATED	human	P23634	ATP2B4	P23634	14	362	Plasma membrane calcium-transporting ATPase 4 (PMCA4) (EC 7.	w
+MATRIX-REMODELING-ASSOCIATED	human	P84157	MXRA7	P84157	6	89	Matrix-remodeling-associated protein 7	w
+MATRIX-REMODELING-ASSOCIATED	human	Q63ZY3	KANK2	Q63ZY3	139	370	KN motif and ankyrin repeat domain-containing protein 2 (Ank	w
+MATRIX-REMODELING-ASSOCIATED	human	Q9NR99	MXRA5	Q9NR99	0	22	Matrix-remodeling-associated protein 5 (Adhesion protein wit	w
+MATRIX-REMODELING-ASSOCIATED	human	Q9NVD7	PARVA	Q9NVD7	34	195	Alpha-parvin (Actopaxin) (CH-ILKBP) (Calponin-like integrin-	w
+MATS	fly	FBgn0038965	mats	Q95RA8	85	1152	MOB kinase activator-like 1 (Mob as tumor suppressor protein	
+MATS_16_213	fly	FBgn0038965	mats	Q95RA8	85	1152		
+MATS_16_219	fly	FBgn0038965	mats	Q95RA8	85	1152		
+MATS_1_5	fly	FBgn0038965	mats	Q95RA8	85	1152		
+MATS_40_213	fly	FBgn0038965	mats	Q95RA8	85	1152		
+MATS_44_211	fly	FBgn0038965	mats	Q95RA8	85	1152		
+MATS_58_200	fly	FBgn0038965	mats	Q95RA8	85	1152		
+MATT	human	Q9BSE2	TMEM79	Q9BSE2	7	76		
+MATTRIN	human	Q9BSE2	TMEM79	Q9BSE2	7	76	Transmembrane protein 79 (Mattrin)	w
+MATURASE	yeast	P03873	BI2	P03873	5	53	Cytochrome b mRNA maturase bI2	w
+MATURASE	yeast	P03879	BI4	P03879	5	54	Intron-encoded RNA maturase bI4	w
+MATURASE	yeast	Q9ZZW7	BI3	Q9ZZW7	7	52	Cytochrome b mRNA maturase bI3	w
+MATURATION	fly	FBgn0028894	GMF	Q9VJL6	1	8	Glia maturation factor	w
+MATURATION	fly	FBgn0035714	Sbds	Q9VRY5	3	90	Ribosome maturation protein SBDS	w
+MATURATION	fly	FBgn0038427	ema	Q9VEV4	3	10	Protein CLEC16A homolog (Endosomal maturation defective prot	w
+MATURATION	fly	FBgn0053108	CG33108	Q9VCE8	4	54	Actin maturation protease (EC 3.4.11.-) (Actin aminopeptidas	w
+MATURATION	human	O60234	GMFG	O60234	13	165	Glia maturation factor gamma (GMF-gamma)	w
+MATURATION	human	P00540	MOS	P00540	174	1349	Proto-oncogene serine/threonine-protein kinase mos (EC 2.7.1	w
+MATURATION	human	P29459	IL12A	P29459	5	42	Interleukin-12 subunit alpha (IL-12A) (Cytotoxic lymphocyte 	w
+MATURATION	human	P29460	IL12B	P29460	30	152	Interleukin-12 subunit beta (IL-12B) (Cytotoxic lymphocyte m	w
+MATURATION	human	P39748	FEN1	P39748	13	278	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (DNase IV) (Flap st	w
+MATURATION	human	P60983	GMFB	P60983	21	134	Glia maturation factor beta (GMF-beta)	w
+MATURATION	human	Q02223	TNFRSF17	Q02223	66	254	Tumor necrosis factor receptor superfamily member 17 (B-cell	w
+MATURATION	human	Q1HG43	DUOXA1	Q1HG43	2	24	Dual oxidase maturation factor 1 (Dual oxidase activator 1) 	w
+MATURATION	human	Q1HG44	DUOXA2	Q1HG44	4	84	Dual oxidase maturation factor 2 (Dual oxidase activator 2)	w
+MATURATION	human	Q5BKX5	ACTMAP	Q5BKX5	15	224	Actin maturation protease (EC 3.4.11.-) (Actin aminopeptidas	w
+MATURATION	human	Q6UX34	SNORC	Q6UX34	10	86	Protein SNORC (Secondary ossification center-associated regu	w
+MATURATION	human	Q8N4L4	SPEM1	Q8N4L4	2	24	Spermatid maturation protein 1	w
+MATURATION	human	Q96S06	LMF1	Q96S06	3	80	Lipase maturation factor 1 (Transmembrane protein 112)	w
+MATURATION	human	Q9BU23	LMF2	Q9BU23	17	135	Lipase maturation factor 2 (Transmembrane protein 112B) (Tra	w
+MATURATION	human	Q9NX04	AIRIM	Q9NX04	29	343	AFG2-interacting ribosome maturation factor (Ribosome biogen	w
+MATURATION	human	Q9Y244	POMP	Q9Y244	14	130	Proteasome maturation protein (Proteassemblin) (Protein UMP1	w
+MATURATION	human	Q9Y3A5	SBDS	Q9Y3A5	14	269	Ribosome maturation protein SBDS (Shwachman-Bodian-Diamond s	w
+MATURATION	virus	Q77GB5	LSDV111	Q77GB5	4	153	Maturation protein	w
+MATURATION	worm	P34298	doxa-1	P34298	1	1	Dual oxidase maturation factor 1	w
+MATURATION	worm	P90910	CELE_K07A1.3	P90910	3	48	Actin maturation protease	w
+MATURATION	worm	Q23202	sbds-1	Q23202	1	19	Ribosome maturation protein SBDS	w
+MATURATION	worm	Q2L6Y0	CELE_K11G12.6	Q2L6Y0	0	1	Lipase maturation factor	w
+MATURATION	worm	Q93560	blmp-1	Q93560	2	37	B lymphocyte-induced maturation protein 1 homolog	w
+MATURATION	yeast	P13130	SPS100	P13130	0	1	Sporulation-specific wall maturation protein	w
+MATURATION	yeast	P21623	DIT1	P21623	0	15	Spore wall maturation protein DIT1	w
+MATURATION	yeast	P38293	UMP1	P38293	2	30	Proteasome maturation factor UMP1	w
+MATURATION	yeast	Q07953	SDO1	Q07953	4	89	Ribosome maturation protein SDO1	w
+MATURATION	zebrafish	A0A8M1PE31	sbds	A0A8M1PE31	4	128	Ribosome maturation protein SBDS	w
+MATURATION	zebrafish	A4FVI3	lto1	A4FVI3	1	5	LTO1 maturation factor of ABCE1	w
+MATURATION	zebrafish	B0V3H4	actmap	B0V3H4	4	97	Actin maturation protease	w
+MATURATION	zebrafish	Q6DGT9	pomp	Q6DGT9	3	29	Proteasome maturation protein	w
+MATURATION	zebrafish	Q7ZUD3	gmfb	Q7ZUD3	3	32	Glia maturation factor	w
+MATURATION	zebrafish	Q8JHH5	airim	Q8JHH5	2	3	AFG2-interacting ribosome maturation factor	w
+MATURATION-ASSOCIATED	human	P21145	MAL	P21145	8	176	Myelin and lymphocyte protein (T-lymphocyte maturation-assoc	w
+MATURATION-ASSOCIATED	human	Q96DZ7	TM4SF19	Q96DZ7	10	118	Transmembrane 4 L6 family member 19 (Osteoclast maturation-a	w
+MATURATION-RELATED	human	Q9H2U9	ADAM7	Q9H2U9	8	75	Disintegrin and metalloproteinase domain-containing protein 	w
+MATURE	human	P31944	CASP14	P31944	35	297	Caspase-14 (CASP-14) (EC 3.4.22.-) [Cleaved into: Caspase-14	w
+MATURE	human	P56277	CMC4	P56277	14	83	Cx9C motif-containing protein 4 (Mature T-cell proliferation	w
+MATURE	human	P56278	MTCP1	P56278	4	29	Protein p13 MTCP-1 (p13MTCP1) (Mature T-cell proliferation-1	w
+MATURE	human	Q14C87	TMEM132D	Q14C87	18	60	Transmembrane protein 132D (Mature oligodendrocytes transmem	w
+MATURE	human	Q9Y287	ITM2B	Q9Y287	43	251	Integral membrane protein 2B (Immature BRI2) (imBRI2) (Prote	w
+MATURE	virus	A0A097NZA3_pcb1d7b66f0		A0A097NZA3	0	10	Mature core protein	w
+MATURE	virus	A0A097NZB6_p1fc050181d		A0A097NZB6	0	9	Mature core protein	w
+MATURE	virus	A0A0B5HK21_p8cb3a68335		A0A0B5HK21	0	10	Mature core protein	w
+MATURE	virus	A0A0F7JH93_p87f2b7ff99		A0A0F7JH93	1	10	Mature core protein	w
+MATURE	virus	A0A247ZNN0_pd03b4308de		A0A247ZNN0	0	10	Mature core protein	w
+MATURE	virus	A8QPD9_p89842622b9		A8QPD9	0	10	Mature core protein	w
+MATURE	virus	D6P446_pf02933dd18		D6P446	1	10	Mature core protein	w
+MATURE	virus	M9UVS3_p8691da608f		M9UVS3	0	10	Mature core protein	w
+MATURE	virus	M9ZRW5_p5d57609631		M9ZRW5	0	10	Mature core protein	w
+MATURE	virus	M9ZZL8_p054e167e1e		M9ZZL8	0	10	Mature core protein	w
+MATURE	virus	N0A109_pb1d18b852f		N0A109	0	10	Mature core protein	w
+MATURE	virus	O39927_p258b5a1b56		O39927	0	10	Mature core protein	w
+MATURE	virus	O39928_pe35285a6d8		O39928	0	10	Mature core protein	w
+MATURE	virus	P26660_pc4190bdbcb		P26660	0	10	Mature core protein	w
+MATURE	virus	P26661_p936d36bd83		P26661	0	10	Mature core protein	w
+MATURE	virus	P26662_p716f7bc866		P26662	0	10	Mature core protein	w
+MATURE	virus	P26664_pf5840586e9		P26664	0	11	Mature core protein	w
+MATURE	virus	P27958_p17e3541650		P27958	0	11	Mature core protein	w
+MATURE	virus	Q68798_pa1e465442f		Q68798	0	10	Mature core protein	w
+MATURE	virus	Q68801_pd6a2bf6ed9		Q68801	0	10	Mature core protein	w
+MATURE	virus	Q81258_pc3052977dc		Q81258	0	10	Mature core protein	w
+MATURE	virus	R9QT72_pd612fd2a93		R9QT72	0	10	Mature core protein	w
+MATURE	virus	R9QTE4_p1723ff4af8		R9QTE4	0	10	Mature core protein	w
+MATURE	virus	R9QTQ6_p54390dc3ff		R9QTQ6	0	10	Mature core protein	w
+MATURE	virus	S5E367_pc9d4cc3008		S5E367	0	10	Mature core protein	w
+MATURIN	human	Q8N3F0	MTURN	Q8N3F0	16	130	Maturin (Maturin neural progenitor differentiation regulator	w

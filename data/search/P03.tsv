@@ -1,33 +1,403 @@
-P03004	escherichia-coli-83333	P03004	dnaA	P03004	1	32	Chromosomal replication initiator protein DnaA
-P03007	escherichia-coli-83333	P03007	dnaQ	P03007	2	26	DNA polymerase III subunit epsilon
-P03010	zea-mays	P03010	?	P03010	0	1	Putative AC9 transposase
-P03014	escherichia-coli-83333	P03014	pinE	P03014	0	1	Serine recombinase PinE
-P03018	escherichia-coli-83333	P03018	uvrD	P03018	1	25	DNA helicase II
-P03022	salmonella-typhimurium	P03022	araC	P03022	0	8	Arabinose operon regulatory protein
-P03023	escherichia-coli-83333	P03023	lacI	P03023	0	13	Lactose operon repressor
-P03024	escherichia-coli-83333	P03024	galR	P03024	1	14	HTH-type transcriptional regulator GalR
-P03813	escherichia-coli-83333	P03813	ygeA	P03813	0	2	Broad specificity amino-acid racemase YgeA
-P03819	escherichia-coli-83333	P03819	kefC	P03819	4	14	Glutathione-regulated potassium-efflux system protein KefC
-P03825	escherichia-coli-83333	P03825	gspB	P03825	1	1	Putative general secretion pathway protein B
-P03888	mus-musculus	P03888	Mtnd1	P03888	15	350	NADH-ubiquinone oxidoreductase chain 1
-P03889	rattus-norvegicus	P03889	Mt-nd1	P03889	15	457	NADH-ubiquinone oxidoreductase chain 1
-P03893	mus-musculus	P03893	mt-Nd2	P03893	7	154	NADH-ubiquinone oxidoreductase chain 2
-P03899	mus-musculus	P03899	mt-Nd3	P03899	5	189	NADH-ubiquinone oxidoreductase chain 3
-P03903	mus-musculus	P03903	Mtnd4l	P03903	12	143	NADH-ubiquinone oxidoreductase chain 4L
-P03911	mus-musculus	P03911	Mtnd4	P03911	17	219	NADH-ubiquinone oxidoreductase chain 4
-P03921	mus-musculus	P03921	Mtnd5	P03921	15	137	NADH-ubiquinone oxidoreductase chain 5
-P03925	mus-musculus	P03925	Mtnd6	P03925	5	117	NADH-ubiquinone oxidoreductase chain 6
-P03926	rattus-norvegicus	P03926	Mt-nd6	P03926	3	120	NADH-ubiquinone oxidoreductase chain 6
-P03930	mus-musculus	P03930	Mtatp8	P03930	8	38	ATP synthase F(0) complex subunit 8
-P03940	mus-musculus	P03940	Cyp21	P03940	0	20	Steroid 21-hydroxylase
-P03953	mus-musculus	P03953	Cfd	P03953	3	7	Complement factor D
-P03957	rattus-norvegicus	P03957	Mmp3	P03957	3	46	Stromelysin-1
-P03958	mus-musculus	P03958	Ada	P03958	0	18	Adenosine deaminase
-P03959	escherichia-coli-83333	P03959	kdpA	P03959	4	177	Potassium-transporting ATPase potassium-binding subunit
-P03960	escherichia-coli-83333	P03960	kdpB	P03960	1	177	Potassium-transporting ATPase ATP-binding subunit
-P03961	escherichia-coli-83333	P03961	kdpC	P03961	4	177	Potassium-transporting ATPase KdpC subunit
-P03966	mus-musculus	P03966	Mycn	P03966	16	56	N-myc proto-oncogene protein
-P03967	dictyostelium-discoideum	P03967	rasD	P03967	12	35	Ras-like protein rasD
-P03985	mus-musculus	P03985	?	P03985	5	32	T-cell receptor gamma chain C region C7.5
-P03994	rattus-norvegicus	P03994	Hapln1	P03994	2	11	Hyaluronan and proteoglycan link protein 1
-P03995	mus-musculus	P03995	Gfap	P03995	6	52	Glial fibrillary acidic protein
+P03004	escherichia-coli-83333	P03004	dnaA	P03004	1	32	Chromosomal replication initiator protein DnaA	
+P03007	escherichia-coli-83333	P03007	dnaQ	P03007	2	26	DNA polymerase III subunit epsilon	
+P03010	zea-mays	P03010	?	P03010	0	1	Putative AC9 transposase	
+P03014	escherichia-coli-83333	P03014	pinE	P03014	0	1	Serine recombinase PinE	
+P03018	escherichia-coli-83333	P03018	uvrD	P03018	1	25	DNA helicase II	
+P03022	salmonella-typhimurium	P03022	araC	P03022	0	8	Arabinose operon regulatory protein	
+P03023	escherichia-coli-83333	P03023	lacI	P03023	0	13	Lactose operon repressor	
+P03024	escherichia-coli-83333	P03024	galR	P03024	1	14	HTH-type transcriptional regulator GalR	
+P03069	yeast	P03069	GCN4	P03069	7	87	General control transcription factor GCN4	
+P03070	virus	P03070		P03070	0	6	Large T antigen	
+P03071	virus	P03071		P03071	0	6	Large T antigen	
+P03072	virus	P03072		P03072	0	5	Large T antigen	
+P03081	virus	P03081		P03081	0	6	Small t antigen	
+P03082	virus	P03082		P03082	0	6	Small t antigen	
+P03083	virus	P03083		P03083	1	5	Small t antigen	
+P03084	virus	P03084		P03084	1	6	Agnoprotein	
+P03085	virus	P03085		P03085	1	6	Agnoprotein	
+P03086	virus	P03086		P03086	1	5	Agnoprotein	
+P03087	virus	P03087		P03087	1	6	Major capsid protein VP1	
+P03088	virus	P03088		P03088	0	6	Major capsid protein VP1	
+P03089	virus	P03089		P03089	1	5	Major capsid protein VP1	
+P03093	virus	P03093		P03093	1	6	Minor capsid protein VP2	
+P03094	virus	P03094		P03094	0	6	Minor capsid protein VP2	
+P03095	virus	P03095		P03095	2	5	Minor capsid protein VP2	
+P03099	virus	P03099	L1	P03099	0	8	Major capsid protein L1	
+P03101	virus	P03101	L1	P03101	0	9	Major capsid protein L1	
+P03102	virus	P03102	L1	P03102	0	8	Major capsid protein L1	
+P03103	virus	P03103	L1	P03103	0	9	Major capsid protein L1	
+P03104	virus	P03104	L1	P03104	0	8	Major capsid protein L1	
+P03105	virus	P03105	L2	P03105	1	8	Minor capsid protein L2	
+P03106	virus	P03106	L2	P03106	1	9	Minor capsid protein L2	
+P03107	virus	P03107	L2	P03107	1	9	Minor capsid protein L2	
+P03108	virus	P03108	L2	P03108	0	8	Minor capsid protein L2	
+P03109	virus	P03109	L2	P03109	1	9	Minor capsid protein L2	
+P03110	virus	P03110	L2	P03110	1	8	Minor capsid protein L2	
+P03111	virus	P03111	E1	P03111	2	8	Replication protein E1	
+P03112	virus	P03112	E1	P03112	2	8	Replication protein E1	
+P03113	virus	P03113	E1	P03113	2	9	Replication protein E1	
+P03114	virus	P03114	E1	P03114	2	9	Replication protein E1	
+P03116	virus	P03116	E1	P03116	1	9	Replication protein E1	
+P03117	virus	P03117	E1	P03117	1	8	Replication protein E1	
+P03118	virus	P03118	E2	P03118	2	8	Regulatory protein E2	
+P03119	virus	P03119	E2	P03119	2	9	Regulatory protein E2	
+P03120	virus	P03120	E2	P03120	3	9	Regulatory protein E2	
+P03121	virus	P03121	E2	P03121	3	8	Regulatory protein E2	
+P03122	virus	P03122	E2	P03122	3	9	Regulatory protein E2	
+P03123	virus	P03123	E2	P03123	2	8	Regulatory protein E2	
+P03124	virus	P03124	E4	P03124	1	8	Probable protein E4	
+P03125	virus	P03125	E5	P03125	0	8	Probable protein E5	
+P03126	virus	P03126	E6	P03126	3	9	Protein E6	
+P03127	virus	P03127	E6	P03127	1	8	Protein E6	
+P03128	virus	P03128	E6	P03128	2	8	Protein E6	
+P03129	virus	P03129	E7	P03129	1	9	Protein E7	
+P03130	virus	P03130	E7	P03130	1	8	Protein E7	
+P03131	virus	P03131	E7	P03131	1	8	Protein E7	
+P03132	virus	P03132	Rep68	P03132	0	6	Protein Rep68	
+P03134	virus	P03134	NS1	P03134	0	8	Initiator protein NS1	
+P03135	virus	P03135	VP1	P03135	0	6	Capsid protein VP1	
+P03137	virus	P03137		P03137	0	8	Capsid protein VP1	
+P03138	virus	P03138	S	P03138	1	7	Large envelope protein	
+P03141	virus	P03141	S	P03141	1	5	Large envelope protein	
+P03144	virus	P03144	S	P03144	1	5	Large envelope protein	
+P03146	virus	P03146	C	P03146	2	7	Capsid protein	
+P03148	virus	P03148	C	P03148	2	5	Capsid protein	
+P03153	virus	P03153	C	P03153	2	5	External core antigen	
+P03156	virus	P03156	P	P03156	0	7	Protein P	
+P03159	virus	P03159	P	P03159	0	5	Protein P	
+P03161	virus	P03161	P	P03161	1	5	Protein P	
+P03163	virus	P03163		P03163	0	7	Putative uncharacterized 10.4 kDa protein	
+P03164	virus	P03164		P03164	0	7	Putative uncharacterized 15.3 kDa protein	
+P03165	virus	P03165	X	P03165	0	7	Protein X	
+P03168	virus	P03168	X	P03168	0	5	Protein X	
+P03177	virus	P03177	TK	P03177	5	91	Thymidine kinase	
+P03179	virus	P03179	BNRF1	P03179	1	87	Major tegument protein	
+P03180	virus	P03180	BCRF1	P03180	1	91	Viral interleukin-10 homolog	
+P03181	virus	P03181	BHLF1	P03181	0	91	Uncharacterized protein BHLF1	
+P03182	virus	P03182	BHRF1	P03182	7	91	Apoptosis regulator BHRF1	
+P03184	virus	P03184	BFLF1	P03184	2	91	Packaging protein UL32 homolog	
+P03185	virus	P03185	NEC2	P03185	1	91	Nuclear egress protein 2	
+P03187	virus	P03187	TRX1	P03187	2	91	Triplex capsid protein 1	
+P03188	virus	P03188	gB	P03188	1	91	Envelope glycoprotein B	
+P03189	virus	P03189	BOLF1	P03189	1	87	Inner tegument protein	
+P03190	virus	P03190	RIR1	P03190	3	91	Ribonucleoside-diphosphate reductase large subunit	
+P03191	virus	P03191	BMRF1	P03191	6	91	DNA polymerase processivity factor BMRF1	
+P03192	virus	P03192	BMRF2	P03192	1	91	Protein BMRF2	
+P03193	virus	P03193	BSLF1	P03193	2	91	DNA primase	
+P03195	virus	P03195	DUT	P03195	2	91	Deoxyuridine 5'-triphosphate nucleotidohydrolase	
+P03196	virus	P03196	gN	P03196	2	91	Envelope glycoprotein N	
+P03197	virus	P03197	BLRF2	P03197	2	91	Tegument protein BLRF2	
+P03198	virus	P03198	BALF5	P03198	3	88	DNA polymerase catalytic subunit	
+P03199	virus	P03199	BLLF2	P03199	1	91	Uncharacterized protein BLLF2	
+P03200	virus	P03200	BLLF1	P03200	2	90	Envelope glycoprotein GP350	
+P03203	virus	P03203	EBNA4	P03203	4	91	Epstein-Barr nuclear antigen 4	
+P03204	virus	P03204	EBNA6	P03204	1	88	Epstein-Barr nuclear antigen 6	
+P03205	virus	P03205	BZLF2	P03205	2	91	Glycoprotein 42	
+P03206	virus	P03206	BZLF1	P03206	1	91	Lytic switch protein BZLF1	
+P03207	virus	P03207	BRRF1	P03207	3	91	Transcriptional activator BRRF1	
+P03209	virus	P03209	BRLF1	P03209	3	91	Replication and transcription activator	
+P03210	virus	P03210	BRRF2	P03210	8	91	Tegument protein BRRF2	
+P03211	virus	P03211	EBNA1	P03211	3	91	Epstein-Barr nuclear antigen 1	
+P03212	virus	P03212	gL	P03212	2	91	Envelope glycoprotein L	
+P03213	virus	P03213	BBRF1	P03213	1	91	Portal protein	
+P03214	virus	P03214	HELI	P03214	5	91	DNA replication helicase	
+P03215	virus	P03215	gM	P03215	1	91	Envelope glycoprotein M	
+P03217	virus	P03217	BGLF5	P03217	0	91	Shutoff alkaline exonuclease	
+P03218	virus	P03218	BILF2	P03218	0	91	Glycoprotein BILF2	
+P03219	virus	P03219	TRM3	P03219	3	91	Tripartite terminase subunit 3	
+P03220	virus	P03220	BGLF3	P03220	5	91	Late gene expression regulator BGLF3	
+P03222	virus	P03222	CVC1	P03222	4	91	Capsid vertex component 1	
+P03224	virus	P03224	BDLF3	P03224	4	91	Glycoprotein BDLF3	
+P03225	virus	P03225	BDLF2	P03225	4	91	Protein BDLF2	
+P03226	virus	P03226	MCP	P03226	1	86	Major capsid protein	
+P03227	virus	P03227	DBP	P03227	1	90	Major DNA-binding protein	
+P03228	virus	P03228	BARF1	P03228	1	91	Secreted protein BARF1	
+P03230	virus	P03230	LMP1	P03230	1	91	Latent membrane protein 1	
+P03231	virus	P03231	gH	P03231	4	91	Envelope glycoprotein H	
+P03232	virus	P03232	BXRF1	P03232	8	91	Protein UL24 homolog	
+P03233	virus	P03233	CVC2	P03233	5	91	Capsid vertex component 2	
+P03234	virus	P03234	BVRF2/BdRF1	P03234	6	91	Capsid scaffolding protein	
+P03238	virus	P03238		P03238	0	45	Early 4 ORF6/7 control protein	
+P03239	virus	P03239		P03239	1	45	Early 4 ORF6 protein	
+P03240	virus	P03240		P03240	2	45	Early 4 ORF4 protein	
+P03241	virus	P03241		P03241	4	45	Early 4 ORF3 protein	
+P03242	virus	P03242		P03242	2	45	Early 4 ORF1 protein	
+P03243	virus	P03243		P03243	1	31	E1B 55 kDa protein	
+P03244	virus	P03244	E1B	P03244	2	45	E1B 55 kDa protein	
+P03246	virus	P03246		P03246	2	31	E1B protein, small T-antigen	
+P03247	virus	P03247	E1B	P03247	3	45	E1B protein, small T-antigen	
+P03250	virus	P03250		P03250	1	45	Early 3 receptor internalization and degradation beta protei	
+P03252	virus	P03252	L3	P03252	11	45	Protease	
+P03253	virus	P03253	L3	P03253	8	31	Protease	
+P03254	virus	P03254		P03254	2	45	Early E1A protein	
+P03255	virus	P03255		P03255	1	31	Early E1A protein	
+P03259	virus	P03259		P03259	2	27	Early E1A protein	
+P03261	virus	P03261	POL	P03261	2	44	DNA polymerase	
+P03262	virus	P03262	L1	P03262	2	45	Packaging protein 3	
+P03263	virus	P03263		P03263	1	45	I-leader protein	
+P03264	virus	P03264	DBP	P03264	1	45	DNA-binding protein	
+P03265	virus	P03265	DBP	P03265	2	31	DNA-binding protein	
+P03267	virus	P03267	L2	P03267	1	45	Core-capsid bridging protein	
+P03269	virus	P03269	PTP	P03269	2	45	Preterminal protein	
+P03271	virus	P03271	IVa2	P03271	2	31	Packaging protein 1	
+P03272	virus	P03272	IVa2	P03272	2	45	Packaging protein 1	
+P03274	virus	P03274	L3	P03274	3	45	Pre-protein VI	
+P03275	virus	P03275	L5	P03275	1	45	Fiber protein	
+P03276	virus	P03276	L2	P03276	0	45	Penton protein	
+P03277	virus	P03277	L3	P03277	1	45	Hexon protein	
+P03278	virus	P03278	L3	P03278	1	29	Hexon protein	
+P03279	virus	P03279	L1	P03279	3	45	Pre-hexon-linking protein IIIa	
+P03280	virus	P03280	L4	P03280	1	45	Pre-hexon-linking protein VIII	
+P03281	virus	P03281	IX	P03281	0	31	Hexon-interlacing protein IX	
+P03282	virus	P03282	IX	P03282	0	45	Hexon-interlacing protein IX	
+P03284	virus	P03284	IX	P03284	0	27	Hexon-interlacing protein IX	
+P03285	virus	P03285		P03285	0	45	Uncharacterized protein D-172	
+P03286	virus	P03286		P03286	2	45	Uncharacterized protein E-95	
+P03287	virus	P03287		P03287	2	45	Uncharacterized 11.6 kDa early protein	
+P03289	virus	P03289		P03289	1	45	Uncharacterized protein F-112	
+P03290	virus	P03290		P03290	1	45	Uncharacterized protein E-115	
+P03291	virus	P03291		P03291	1	45	Uncharacterized protein F-215	
+P03292	virus	P03292		P03292	1	45	Uncharacterized protein C-168	
+P03293	virus	P03293		P03293	0	45	Uncharacterized protein B-137	
+P03294	virus	P03294		P03294	1	45	Uncharacterized protein F-121	
+P03295	virus	P03295	OPG098	P03295	6	218	Core protein VP8	
+P03296	virus	P03296	VACWR010	P03296	3	218	Protein C10	
+P03300	virus	P03300_p05c8ae359e		P03300	3	12	Capsid protein VP3	
+P03300	virus	P03300_p2eb099c918		P03300	1	12	Protein 2C	
+P03300	virus	P03300_p302acb6abc		P03300	2	12	Capsid protein VP1	
+P03300	virus	P03300_p44d94a8808		P03300	0	12	Capsid protein VP4	
+P03300	virus	P03300_p64feae37a7		P03300	1	12	Protein 3A	
+P03300	virus	P03300_p8b0dbcf9e4		P03300	1	12	RNA directed RNA polymerase	
+P03300	virus	P03300_p9a99c670e2		P03300	3	12	Protease 3C	
+P03300	virus	P03300_pa648f63078		P03300	1	12	Viral protein genome linked	
+P03300	virus	P03300_pf572099afd		P03300	3	12	Capsid protein VP2	
+P03300	virus	P03300_pf86d24c679		P03300	0	12	Protease 2A	
+P03300	virus	P03300_pf90a7befe7		P03300	3	12	Protein 2B	
+P03300_P05C8AE359E	virus	P03300_p05c8ae359e		P03300	3	12	Capsid protein VP3	
+P03300_P2EB099C918	virus	P03300_p2eb099c918		P03300	1	12	Protein 2C	
+P03300_P302ACB6ABC	virus	P03300_p302acb6abc		P03300	2	12	Capsid protein VP1	
+P03300_P44D94A8808	virus	P03300_p44d94a8808		P03300	0	12	Capsid protein VP4	
+P03300_P64FEAE37A7	virus	P03300_p64feae37a7		P03300	1	12	Protein 3A	
+P03300_P8B0DBCF9E4	virus	P03300_p8b0dbcf9e4		P03300	1	12	RNA directed RNA polymerase	
+P03300_P9A99C670E2	virus	P03300_p9a99c670e2		P03300	3	12	Protease 3C	
+P03300_PA648F63078	virus	P03300_pa648f63078		P03300	1	12	Viral protein genome linked	
+P03300_PF572099AFD	virus	P03300_pf572099afd		P03300	3	12	Capsid protein VP2	
+P03300_PF86D24C679	virus	P03300_pf86d24c679		P03300	0	12	Protease 2A	
+P03300_PF90A7BEFE7	virus	P03300_pf90a7befe7		P03300	3	12	Protein 2B	
+P03301	virus	P03301_p10ef4cf4a8		P03301	2	11	Protease 2A	
+P03301	virus	P03301_p11df3defe4		P03301	1	11	Protein 2B	
+P03301	virus	P03301_p2489d89c92		P03301	2	11	Capsid protein VP2	
+P03301	virus	P03301_p2eb099c918		P03301	1	11	Protein 2C	
+P03301	virus	P03301_p64feae37a7		P03301	1	11	Protein 3A	
+P03301	virus	P03301_p692f3341d9		P03301	0	11	RNA directed RNA polymerase	
+P03301	virus	P03301_p943be205b2		P03301	3	11	Capsid protein VP3	
+P03301	virus	P03301_p9901e4d08a		P03301	3	11	Capsid protein VP1	
+P03301	virus	P03301_p9a99c670e2		P03301	3	11	Protease 3C	
+P03301	virus	P03301_pa648f63078		P03301	2	11	Viral protein genome linked	
+P03301	virus	P03301_pea28960df8		P03301	1	11	Capsid protein VP4	
+P03301_P10EF4CF4A8	virus	P03301_p10ef4cf4a8		P03301	2	11	Protease 2A	
+P03301_P11DF3DEFE4	virus	P03301_p11df3defe4		P03301	1	11	Protein 2B	
+P03301_P2489D89C92	virus	P03301_p2489d89c92		P03301	2	11	Capsid protein VP2	
+P03301_P2EB099C918	virus	P03301_p2eb099c918		P03301	1	11	Protein 2C	
+P03301_P64FEAE37A7	virus	P03301_p64feae37a7		P03301	1	11	Protein 3A	
+P03301_P692F3341D9	virus	P03301_p692f3341d9		P03301	0	11	RNA directed RNA polymerase	
+P03301_P943BE205B2	virus	P03301_p943be205b2		P03301	3	11	Capsid protein VP3	
+P03301_P9901E4D08A	virus	P03301_p9901e4d08a		P03301	3	11	Capsid protein VP1	
+P03301_P9A99C670E2	virus	P03301_p9a99c670e2		P03301	3	11	Protease 3C	
+P03301_PA648F63078	virus	P03301_pa648f63078		P03301	2	11	Viral protein genome linked	
+P03301_PEA28960DF8	virus	P03301_pea28960df8		P03301	1	11	Capsid protein VP4	
+P03302	virus	P03302_p06de2969b3		P03302	3	11	Capsid protein VP1	
+P03302	virus	P03302_p3a4fc9ed0e		P03302	1	11	Viral protein genome linked	
+P03302	virus	P03302_p5057e20ce1		P03302	0	11	RNA directed RNA polymerase	
+P03302	virus	P03302_p856a6ec98e		P03302	2	11	Protease 3C	
+P03302	virus	P03302_p964d1c5ef6		P03302	0	11	Capsid protein VP4	
+P03302	virus	P03302_p9e36ad04fb		P03302	3	11	Capsid protein VP3	
+P03302	virus	P03302_pb005c702ba		P03302	2	11	Capsid protein VP2	
+P03302	virus	P03302_pb08b201d24		P03302	1	11	Protease 2A	
+P03302	virus	P03302_pc09ac4d69f		P03302	1	11	Protein 2B	
+P03302	virus	P03302_pdc7692c3b4		P03302	1	11	Protein 3A	
+P03302	virus	P03302_pefce1164ce		P03302	0	11	Protein 2C	
+P03302_P06DE2969B3	virus	P03302_p06de2969b3		P03302	3	11	Capsid protein VP1	
+P03302_P3A4FC9ED0E	virus	P03302_p3a4fc9ed0e		P03302	1	11	Viral protein genome linked	
+P03302_P5057E20CE1	virus	P03302_p5057e20ce1		P03302	0	11	RNA directed RNA polymerase	
+P03302_P856A6EC98E	virus	P03302_p856a6ec98e		P03302	2	11	Protease 3C	
+P03302_P964D1C5EF6	virus	P03302_p964d1c5ef6		P03302	0	11	Capsid protein VP4	
+P03302_P9E36AD04FB	virus	P03302_p9e36ad04fb		P03302	3	11	Capsid protein VP3	
+P03302_PB005C702BA	virus	P03302_pb005c702ba		P03302	2	11	Capsid protein VP2	
+P03302_PB08B201D24	virus	P03302_pb08b201d24		P03302	1	11	Protease 2A	
+P03302_PC09AC4D69F	virus	P03302_pc09ac4d69f		P03302	1	11	Protein 2B	
+P03302_PDC7692C3B4	virus	P03302_pdc7692c3b4		P03302	1	11	Protein 3A	
+P03302_PEFCE1164CE	virus	P03302_pefce1164ce		P03302	0	11	Protein 2C	
+P03303	virus	P03303_p16d4980715		P03303	1	11	Capsid protein VP4	
+P03303	virus	P03303_p37fd1beffa		P03303	2	11	Protease 2A	
+P03303	virus	P03303_p3e41bc2a55		P03303	3	11	Capsid protein VP3	
+P03303	virus	P03303_p587f83d920		P03303	3	11	Protein 3A	
+P03303	virus	P03303_p5eed5fb5e0		P03303	0	11	RNA directed RNA polymerase	
+P03303	virus	P03303_p67ee1f4a0a		P03303	3	11	Protein 2C	
+P03303	virus	P03303_p75e0769b4d		P03303	2	11	Capsid protein VP1	
+P03303	virus	P03303_p9672890746		P03303	3	11	Protease 3C	
+P03303	virus	P03303_p9840a166c5		P03303	5	11	Protein 2B	
+P03303	virus	P03303_p9d7ec6ec8c		P03303	2	11	Capsid protein VP2	
+P03303	virus	P03303_pb1d1ddd525		P03303	1	11	Viral protein genome linked	
+P03303_P16D4980715	virus	P03303_p16d4980715		P03303	1	11	Capsid protein VP4	
+P03303_P37FD1BEFFA	virus	P03303_p37fd1beffa		P03303	2	11	Protease 2A	
+P03303_P3E41BC2A55	virus	P03303_p3e41bc2a55		P03303	3	11	Capsid protein VP3	
+P03303_P587F83D920	virus	P03303_p587f83d920		P03303	3	11	Protein 3A	
+P03303_P5EED5FB5E0	virus	P03303_p5eed5fb5e0		P03303	0	11	RNA directed RNA polymerase	
+P03303_P67EE1F4A0A	virus	P03303_p67ee1f4a0a		P03303	3	11	Protein 2C	
+P03303_P75E0769B4D	virus	P03303_p75e0769b4d		P03303	2	11	Capsid protein VP1	
+P03303_P9672890746	virus	P03303_p9672890746		P03303	3	11	Protease 3C	
+P03303_P9840A166C5	virus	P03303_p9840a166c5		P03303	5	11	Protein 2B	
+P03303_P9D7EC6EC8C	virus	P03303_p9d7ec6ec8c		P03303	2	11	Capsid protein VP2	
+P03303_PB1D1DDD525	virus	P03303_pb1d1ddd525		P03303	1	11	Viral protein genome linked	
+P03308	virus	P03308_p065a24e725		P03308	1	14	Protein 2C	
+P03308	virus	P03308_p0959cadd67		P03308	3	14	Capsid protein VP1	
+P03308	virus	P03308_p19de9ced02		P03308	0	14	Leader protease	
+P03308	virus	P03308_p38533a4ff8		P03308	0	14	RNA directed RNA polymerase 3D POL	
+P03308	virus	P03308_p3c1c295686		P03308	0	14	Protein 2A	
+P03308	virus	P03308_p4c501a3f98		P03308	3	14	Protein 2B	
+P03308	virus	P03308_p58df20cbc9		P03308	0	14	Protein 3B 3	
+P03308	virus	P03308_p63b6a78f44		P03308	4	14	Protease 3C	
+P03308	virus	P03308_p662d8ef89f		P03308	0	14	Capsid protein VP4	
+P03308	virus	P03308_p997dd56e8f		P03308	2	14	Protein 3A	
+P03308	virus	P03308_pa584ee8b24		P03308	0	14	Protein 3B 2	
+P03308	virus	P03308_pb7e65a48f4		P03308	0	14	Protein 3B 1	
+P03308	virus	P03308_pcd5bafa5b8		P03308	4	14	Capsid protein VP3	
+P03308	virus	P03308_pf90ec95774		P03308	3	14	Capsid protein VP2	
+P03308_P065A24E725	virus	P03308_p065a24e725		P03308	1	14	Protein 2C	
+P03308_P0959CADD67	virus	P03308_p0959cadd67		P03308	3	14	Capsid protein VP1	
+P03308_P19DE9CED02	virus	P03308_p19de9ced02		P03308	0	14	Leader protease	
+P03308_P38533A4FF8	virus	P03308_p38533a4ff8		P03308	0	14	RNA directed RNA polymerase 3D POL	
+P03308_P3C1C295686	virus	P03308_p3c1c295686		P03308	0	14	Protein 2A	
+P03308_P4C501A3F98	virus	P03308_p4c501a3f98		P03308	3	14	Protein 2B	
+P03308_P58DF20CBC9	virus	P03308_p58df20cbc9		P03308	0	14	Protein 3B 3	
+P03308_P63B6A78F44	virus	P03308_p63b6a78f44		P03308	4	14	Protease 3C	
+P03308_P662D8EF89F	virus	P03308_p662d8ef89f		P03308	0	14	Capsid protein VP4	
+P03308_P997DD56E8F	virus	P03308_p997dd56e8f		P03308	2	14	Protein 3A	
+P03308_PA584EE8B24	virus	P03308_pa584ee8b24		P03308	0	14	Protein 3B 2	
+P03308_PB7E65A48F4	virus	P03308_pb7e65a48f4		P03308	0	14	Protein 3B 1	
+P03308_PCD5BAFA5B8	virus	P03308_pcd5bafa5b8		P03308	4	14	Capsid protein VP3	
+P03308_PF90EC95774	virus	P03308_pf90ec95774		P03308	3	14	Capsid protein VP2	
+P03314	virus	P03314_p21348fb09a		P03314	1	13	RNA directed RNA polymerase Methyltransferase NS5	
+P03314	virus	P03314_p233dfdd5ff		P03314	0	13	Peptide 2k	
+P03314	virus	P03314_p2cff70a131		P03314	0	13	Peptide pr	
+P03314	virus	P03314_p31921bd40a		P03314	3	13	Serine protease NS3	
+P03314	virus	P03314_p3d1ae797b6		P03314	3	13	Serine protease subunit NS2B	
+P03314	virus	P03314_p5b5b015d06		P03314	1	13	Protein prM	
+P03314	virus	P03314_p7f3ddde28e		P03314	2	13	Non structural protein 1	
+P03314	virus	P03314_paaca2e1f76		P03314	2	13	Non structural protein 4B	
+P03314	virus	P03314_pb622868ec2		P03314	2	13	Capsid protein C	
+P03314	virus	P03314_pbf91c48bb8		P03314	1	13	Envelope protein E	
+P03314	virus	P03314_pc0c23ebe6b		P03314	0	13	Small envelope protein M	
+P03314	virus	P03314_pd85f07b18b		P03314	2	13	Non structural protein 2A	
+P03314	virus	P03314_pddbcd8474b		P03314	1	13	Non structural protein 4A	
+P03314_P21348FB09A	virus	P03314_p21348fb09a		P03314	1	13	RNA directed RNA polymerase Methyltransferase NS5	
+P03314_P233DFDD5FF	virus	P03314_p233dfdd5ff		P03314	0	13	Peptide 2k	
+P03314_P2CFF70A131	virus	P03314_p2cff70a131		P03314	0	13	Peptide pr	
+P03314_P31921BD40A	virus	P03314_p31921bd40a		P03314	3	13	Serine protease NS3	
+P03314_P3D1AE797B6	virus	P03314_p3d1ae797b6		P03314	3	13	Serine protease subunit NS2B	
+P03314_P5B5B015D06	virus	P03314_p5b5b015d06		P03314	1	13	Protein prM	
+P03314_P7F3DDDE28E	virus	P03314_p7f3ddde28e		P03314	2	13	Non structural protein 1	
+P03314_PAACA2E1F76	virus	P03314_paaca2e1f76		P03314	2	13	Non structural protein 4B	
+P03314_PB622868EC2	virus	P03314_pb622868ec2		P03314	2	13	Capsid protein C	
+P03314_PBF91C48BB8	virus	P03314_pbf91c48bb8		P03314	1	13	Envelope protein E	
+P03314_PC0C23EBE6B	virus	P03314_pc0c23ebe6b		P03314	0	13	Small envelope protein M	
+P03314_PD85F07B18B	virus	P03314_pd85f07b18b		P03314	2	13	Non structural protein 2A	
+P03314_PDDBCD8474B	virus	P03314_pddbcd8474b		P03314	1	13	Non structural protein 4A	
+P03315	virus	P03315_p28973dcb15		P03315	2	9	Spike glycoprotein E2	
+P03315	virus	P03315_p40fc3c7a21		P03315	1	9	Spike glycoprotein E1	
+P03315	virus	P03315_p58c496435c		P03315	0	9	6K protein	
+P03315	virus	P03315_p82505c75cd		P03315	0	9	Capsid protein	
+P03315	virus	P03315_pd4b47f3a54		P03315	1	9	Assembly protein E3	
+P03315_P28973DCB15	virus	P03315_p28973dcb15		P03315	2	9	Spike glycoprotein E2	
+P03315_P40FC3C7A21	virus	P03315_p40fc3c7a21		P03315	1	9	Spike glycoprotein E1	
+P03315_P58C496435C	virus	P03315_p58c496435c		P03315	0	9	6K protein	
+P03315_P82505C75CD	virus	P03315_p82505c75cd		P03315	0	9	Capsid protein	
+P03315_PD4B47F3A54	virus	P03315_pd4b47f3a54		P03315	1	9	Assembly protein E3	
+P03316	virus	P03316_p34d0ab54a6		P03316	1	9	Capsid protein	
+P03316	virus	P03316_p435d4525ee		P03316	0	9	6K protein	
+P03316	virus	P03316_p67c627cb8e		P03316	2	9	Spike glycoprotein E1	
+P03316	virus	P03316_pc13f42dccd		P03316	1	9	Assembly protein E3	
+P03316	virus	P03316_pdba25150be		P03316	2	9	Spike glycoprotein E2	
+P03316_P34D0AB54A6	virus	P03316_p34d0ab54a6		P03316	1	9	Capsid protein	
+P03316_P435D4525EE	virus	P03316_p435d4525ee		P03316	0	9	6K protein	
+P03316_P67C627CB8E	virus	P03316_p67c627cb8e		P03316	2	9	Spike glycoprotein E1	
+P03316_PC13F42DCCD	virus	P03316_pc13f42dccd		P03316	1	9	Assembly protein E3	
+P03316_PDBA25150BE	virus	P03316_pdba25150be		P03316	2	9	Spike glycoprotein E2	
+P03317	virus	P03317_p0f68266a16		P03317	1	9	mRNA capping enzyme nsP1	
+P03317	virus	P03317_p286da12c79		P03317	1	9	RNA directed RNA polymerase nsP4	
+P03317	virus	P03317_p34e46e02db		P03317	2	9	Protease nsP2	
+P03317_P0F68266A16	virus	P03317_p0f68266a16		P03317	1	9	mRNA capping enzyme nsP1	
+P03317_P286DA12C79	virus	P03317_p286da12c79		P03317	1	9	RNA directed RNA polymerase nsP4	
+P03317_P34E46E02DB	virus	P03317_p34e46e02db		P03317	2	9	Protease nsP2	
+P03372	human	P03372	ESR1	P03372	735	2633	Estrogen receptor (ER) (ER-alpha) (Estradiol receptor) (Nucl	
+P03428	virus	P03428	PB2	P03428	1	13	Polymerase basic protein 2	
+P03431	virus	P03431	PB1	P03431	4	13	RNA-directed RNA polymerase catalytic subunit	
+P03433	virus	P03433	PA	P03433	1	13	Polymerase acidic protein	
+P03452	virus	P03452	HA	P03452	0	13	Hemagglutinin	
+P03460	virus	P03460	HA	P03460	0	11	Hemagglutinin	
+P03466	virus	P03466	NP	P03466	0	13	Nucleoprotein	
+P03468	virus	P03468	NA	P03468	1	13	Neuraminidase	
+P03474	virus	P03474	NA	P03474	1	11	Neuraminidase	
+P03485	virus	P03485	M	P03485	0	13	Matrix protein 1	
+P03489	virus	P03489	M	P03489	0	11	Matrix protein 1	
+P03493	virus	P03493	M	P03493	1	11	Matrix protein 2	
+P03496	virus	P03496	NS	P03496	1	13	Non-structural protein 1	
+P03502	virus	P03502	NS	P03502	1	11	Non-structural protein 1	
+P03508	virus	P03508	NS	P03508	1	13	Nuclear export protein	
+P03511	virus	P03511	NS	P03511	1	11	Nuclear export protein	
+P03813	escherichia-coli-83333	P03813	ygeA	P03813	0	2	Broad specificity amino-acid racemase YgeA	
+P03819	escherichia-coli-83333	P03819	kefC	P03819	4	14	Glutathione-regulated potassium-efflux system protein KefC	
+P03825	escherichia-coli-83333	P03825	gspB	P03825	1	1	Putative general secretion pathway protein B	
+P03873	yeast	P03873	BI2	P03873	5	53	Cytochrome b mRNA maturase bI2	
+P03874	yeast	P03874	CBP2	P03874	1	29	Cytochrome B pre-mRNA-processing protein 2	
+P03875	yeast	P03875	AI1	P03875	1	5	Putative COX1/OXI3 intron 1 protein	
+P03876	yeast	P03876	AI2	P03876	0	3	Putative COX1/OXI3 intron 2 protein	
+P03877	yeast	P03877	AI3	P03877	0	28	Intron-encoded DNA endonuclease aI3	
+P03878	yeast	P03878	AI4	P03878	2	42	Intron-encoded DNA endonuclease aI4	
+P03879	yeast	P03879	BI4	P03879	5	54	Intron-encoded RNA maturase bI4	
+P03881	yeast	P03881	Q0255	P03881	0	2	Uncharacterized mitochondrial protein RF1	
+P03882	yeast	P03882	SCEI	P03882	0	6	Intron-encoded endonuclease I-SceI	
+P03886	human	P03886	MT-ND1	P03886	22	389	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	
+P03888	mus-musculus	P03888	Mtnd1	P03888	15	350	NADH-ubiquinone oxidoreductase chain 1	
+P03889	rattus-norvegicus	P03889	Mt-nd1	P03889	15	457	NADH-ubiquinone oxidoreductase chain 1	
+P03891	human	P03891	MT-ND2	P03891	23	220	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	
+P03893	mus-musculus	P03893	mt-Nd2	P03893	7	154	NADH-ubiquinone oxidoreductase chain 2	
+P03896	fly	FBgn0013680	mt:ND2	P03896	12	108	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	
+P03897	human	P03897	MT-ND3	P03897	12	309	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	
+P03899	mus-musculus	P03899	mt-Nd3	P03899	5	189	NADH-ubiquinone oxidoreductase chain 3	
+P03901	human	P03901	MT-ND4L	P03901	12	232	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	
+P03903	mus-musculus	P03903	Mtnd4l	P03903	12	143	NADH-ubiquinone oxidoreductase chain 4L	
+P03905	human	P03905	MT-ND4	P03905	24	324	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	
+P03911	mus-musculus	P03911	Mtnd4	P03911	17	219	NADH-ubiquinone oxidoreductase chain 4	
+P03915	human	P03915	MT-ND5	P03915	20	222	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	
+P03921	mus-musculus	P03921	Mtnd5	P03921	15	137	NADH-ubiquinone oxidoreductase chain 5	
+P03923	human	P03923	MT-ND6	P03923	6	176	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	
+P03925	mus-musculus	P03925	Mtnd6	P03925	5	117	NADH-ubiquinone oxidoreductase chain 6	
+P03926	rattus-norvegicus	P03926	Mt-nd6	P03926	3	120	NADH-ubiquinone oxidoreductase chain 6	
+P03928	human	P03928	MT-ATP8	P03928	32	136	ATP synthase F(0) complex subunit 8 (A6L) (F-ATPase subunit 	
+P03930	mus-musculus	P03930	Mtatp8	P03930	8	38	ATP synthase F(0) complex subunit 8	
+P03940	mus-musculus	P03940	Cyp21	P03940	0	20	Steroid 21-hydroxylase	
+P03949	worm	P03949	abl-1	P03949	12	96	Tyrosine-protein kinase abl-1 (EC 2.7.10.2)	
+P03950	human	P03950	ANG	P03950	30	238	Angiogenin (EC 3.1.27.-) (Ribonuclease 5) (RNase 5)	
+P03951	human	P03951	F11	P03951	19	171	Coagulation factor XI (FXI) (EC 3.4.21.27) (Plasma thrombopl	
+P03952	human	P03952	KLKB1	P03952	48	341	Plasma kallikrein (EC 3.4.21.34) (Fletcher factor) (Kininoge	
+P03953	mus-musculus	P03953	Cfd	P03953	3	7	Complement factor D	
+P03956	human	P03956	MMP1	P03956	32	191	Interstitial collagenase (EC 3.4.24.7) (Fibroblast collagena	
+P03957	rattus-norvegicus	P03957	Mmp3	P03957	3	46	Stromelysin-1	
+P03958	mus-musculus	P03958	Ada	P03958	0	18	Adenosine deaminase	
+P03959	escherichia-coli-83333	P03959	kdpA	P03959	4	177	Potassium-transporting ATPase potassium-binding subunit	
+P03960	escherichia-coli-83333	P03960	kdpB	P03960	1	177	Potassium-transporting ATPase ATP-binding subunit	
+P03961	escherichia-coli-83333	P03961	kdpC	P03961	4	177	Potassium-transporting ATPase KdpC subunit	
+P03962	yeast	P03962	URA3	P03962	0	13	Orotidine 5'-phosphate decarboxylase	
+P03965	yeast	P03965	CPA2	P03965	1	23	Carbamoyl phosphate synthase arginine-specific large chain	
+P03966	mus-musculus	P03966	Mycn	P03966	16	56	N-myc proto-oncogene protein	
+P03967	dictyostelium-discoideum	P03967	rasD	P03967	12	35	Ras-like protein rasD	
+P03971	human	P03971	AMH	P03971	25	102	Anti-Muellerian hormone (AMH) (Muellerian-inhibiting factor)	
+P03973	human	P03973	SLPI	P03973	53	315	Antileukoproteinase (ALP) (BLPI) (HUSI-1) (Mucus proteinase 	
+P03979	human	P03979	TRGV3	P03979	69	239	T cell receptor gamma variable 3 (T-cell receptor gamma V-ga	
+P03985	mus-musculus	P03985	?	P03985	5	32	T-cell receptor gamma chain C region C7.5	
+P03986	human	P03986	TRGC2	P03986	9	45	T cell receptor gamma constant 2	
+P03994	rattus-norvegicus	P03994	Hapln1	P03994	2	11	Hyaluronan and proteoglycan link protein 1	
+P03995	mus-musculus	P03995	Gfap	P03995	6	52	Glial fibrillary acidic protein	
+P03999	human	P03999	OPN1SW	P03999	13	58	Short-wave-sensitive opsin 1 (Blue cone photoreceptor pigmen	

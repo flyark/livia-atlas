@@ -1,12 +1,84 @@
-SIT1	mus-musculus	Q8C503	Sit1	Q8C503	0	4	Signaling threshold-regulating transmembrane adapter 1
-SIT1	oryza-sativa-subsp-japonica	Q6H7D2	SIT1	Q6H7D2	0	2	L-type lectin-domain containing receptor kinase SIT1
-SIT2	oryza-sativa-subsp-japonica	Q7XUN6	SIT2	Q7XUN6	0	2	L-type lectin-domain containing receptor kinase SIT2
-SIT4	candida-albicans-237561	Q59KY8	SIT4	Q59KY8	6	21	Serine/threonine-protein phosphatase SIT4
-SITA	salmonella-typhimurium	Q7CPX8	sitA	Q7CPX8	1	14	Fur regulated Salmonella iron transporter
-SITA	shigella-dysenteriae-serotype-1	Q32GF7	sitA	Q32GF7	1	7	Iron transport protein, periplasmic-binding protein
-SITB	salmonella-typhimurium	H9L493	sitB	H9L493	5	54	Fur regulated Salmonella iron transporter
-SITB	shigella-dysenteriae-serotype-1	Q32GF8	sitB	Q32GF8	3	5	Iron transport protein, ATP-binding component
-SITC	salmonella-typhimurium	H9L4A7	sitC	H9L4A7	9	55	Fur regulated Salmonella iron transporter
-SITC	shigella-dysenteriae-serotype-1	Q32GF9	sitC	Q32GF9	6	37	Iron transport protein, inner membrane component
-SITD	salmonella-typhimurium	H9L416	sitD	H9L416	4	55	Fur regulated Salmonella iron transporter
-SITD	shigella-dysenteriae-serotype-1	Q32GG0	sitD	Q32GG0	5	37	Iron transport protein, inner membrane component
+SIT	fly	FBgn0038986	sit	Q9VCY6	8	62	Elongation of very long chain fatty acids protein (EC 2.3.1.	
+SIT	human	Q9Y3P8	SIT1	Q9Y3P8	28	124		
+SIT1	human	Q9NP91	SLC6A20	Q9NP91	5	67		
+SIT1	human	Q9Y3P8	SIT1	Q9Y3P8	28	124	Signaling threshold-regulating transmembrane adapter 1 (SHP2	
+SIT1	mus-musculus	Q8C503	Sit1	Q8C503	0	4	Signaling threshold-regulating transmembrane adapter 1	
+SIT1	oryza-sativa-subsp-japonica	Q6H7D2	SIT1	Q6H7D2	0	2	L-type lectin-domain containing receptor kinase SIT1	
+SIT1	yeast	P39980	SIT1	P39980	0	10	Siderophore iron transporter 1	
+SIT1_HUMAN	human	Q9Y3P8	SIT1	Q9Y3P8	28	124		
+SIT2	oryza-sativa-subsp-japonica	Q7XUN6	SIT2	Q7XUN6	0	2	L-type lectin-domain containing receptor kinase SIT2	
+SIT4	candida-albicans-237561	Q59KY8	SIT4	Q59KY8	6	21	Serine/threonine-protein phosphatase SIT4	
+SIT4	yeast	P20604	SIT4	P20604	10	69	Serine/threonine-protein phosphatase PP1-1	
+SIT4	yeast	Q03785	VHS1	Q03785	12	78	Serine/threonine-protein kinase VHS1 (EC 2.7.11.1) (Viable i	w
+SIT4-ASSOCIATING	yeast	P36123	SAP190	P36123	3	25	SIT4-associating protein SAP190	w
+SIT4-ASSOCIATING	yeast	P40856	SAP185	P40856	8	71	SIT4-associating protein SAP185	w
+SIT4-ASSOCIATING	yeast	P43612	SAP155	P43612	5	43	SIT4-associating protein SAP155	w
+SIT4-ASSOCIATING	yeast	P53036	SAP4	P53036	3	22	SIT4-associating protein SAP4	w
+SITA	salmonella-typhimurium	Q7CPX8	sitA	Q7CPX8	1	14	Fur regulated Salmonella iron transporter	
+SITA	shigella-dysenteriae-serotype-1	Q32GF7	sitA	Q32GF7	1	7	Iron transport protein, periplasmic-binding protein	
+SITAC	human	Q9H190	SDCBP2	Q9H190	9	155	Syntenin-2 (Similar to TACIP18) (SITAC) (Syndecan-binding pr	w
+SITAC18	human	Q9H190	SDCBP2	Q9H190	9	155		
+SITB	salmonella-typhimurium	H9L493	sitB	H9L493	5	54	Fur regulated Salmonella iron transporter	
+SITB	shigella-dysenteriae-serotype-1	Q32GF8	sitB	Q32GF8	3	5	Iron transport protein, ATP-binding component	
+SITC	salmonella-typhimurium	H9L4A7	sitC	H9L4A7	9	55	Fur regulated Salmonella iron transporter	
+SITC	shigella-dysenteriae-serotype-1	Q32GF9	sitC	Q32GF9	6	37	Iron transport protein, inner membrane component	
+SITD	salmonella-typhimurium	H9L416	sitD	H9L416	4	55	Fur regulated Salmonella iron transporter	
+SITD	shigella-dysenteriae-serotype-1	Q32GG0	sitD	Q32GG0	5	37	Iron transport protein, inner membrane component	
+SITE	fly	FBgn0004584	Rrp1	B7YZZ9	6	120	DNA-(apurinic or apyrimidinic site) endonuclease (EC 3.1.-.-	w
+SITE	fly	FBgn0027864	Ogg1	Q9V3I8	0	18	N-glycosylase/DNA lyase (dOgg1) [Includes: 8-oxoguanine DNA 	w
+SITE	fly	FBgn0032907	Nthl1	Q9VIH0	10	75	Endonuclease III homolog (EC 3.2.2.-) (EC 4.2.99.18) (Bifunc	w
+SITE	fly	FBgn0035692	Sf3b6	Q9VRV7	12	105	Splicing factor 3B subunit 6 (Pre-mRNA branch site p14-like 	w
+SITE	fly	FBgn0037656	CG11986	Q9VHI3	0	2	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
+SITE	fly	FBgn0262740	Evi5	Q9VYY9	5	8	Ecotropic viral integration site 5 ortholog	w
+SITE	human	O15527	OGG1	O15527	4	42	N-glycosylase/DNA lyase [Includes: 8-oxoguanine DNA glycosyl	w
+SITE	human	O43709	BUD23	O43709	29	259	18S rRNA (guanine-N(7))-methyltransferase (EC 2.1.1.-) (Bud 	w
+SITE	human	O43739	CYTH3	O43739	36	174	Cytohesin-3 (ARF nucleotide-binding site opener 3) (Protein 	w
+SITE	human	O60447	EVI5	O60447	53	155	Ecotropic viral integration site 5 protein homolog (EVI-5) (	w
+SITE	human	P22794	EVI2A	P22794	28	110	Protein EVI2A (Ecotropic viral integration site 2A protein h	w
+SITE	human	P34910	EVI2B	P34910	34	161	Protein EVI2B (Ecotropic viral integration site 2B protein h	w
+SITE	human	P60228	EIF3E	P60228	60	418	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
+SITE	human	P78549	NTHL1	P78549	11	108	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
+SITE	human	Q03112	MECOM	Q03112	43	384	Histone-lysine N-methyltransferase MECOM (EC 2.1.1.367) (Eco	w
+SITE	human	Q17R31	TATDN3	Q17R31	5	83	Deoxyribonuclease TATDN3 (EC 3.1.11.-) (EC 3.1.21.-) (DNA-(a	w
+SITE	human	Q6P1N9	TATDN1	Q6P1N9	12	120	Deoxyribonuclease TATDN1 (EC 3.1.11.-) (EC 3.1.21.-) (DNA-(a	w
+SITE	human	Q8N157	AHI1	Q8N157	15	137	Jouberin (Abelson helper integration site 1 protein homolog)	w
+SITE	human	Q969S2	NEIL2	Q969S2	6	158	Endonuclease 8-like 2 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+SITE	human	Q96CN4	EVI5L	Q96CN4	44	116	EVI5-like protein (Ecotropic viral integration site 5-like p	w
+SITE	human	Q96FI4	NEIL1	Q96FI4	18	356	Endonuclease 8-like 1 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+SITE	human	Q96FZ2	HMCES	Q96FZ2	3	55	Abasic site processing protein HMCES (EC 4.-.-.-) (Embryonic	w
+SITE	human	Q99418	CYTH2	Q99418	38	177	Cytohesin-2 (ARF exchange factor) (ARF nucleotide-binding si	w
+SITE	human	Q9NX02	NLRP2	Q9NX02	3	88	NACHT, LRR and PYD domains-containing protein 2 (Nucleotide-	w
+SITE	human	Q9NZC7	WWOX	Q9NZC7	58	807	WW domain-containing oxidoreductase (EC 1.1.1.-) (Fragile si	w
+SITE	human	Q9UBZ4	APEX2	Q9UBZ4	4	109	DNA-(apurinic or apyrimidinic site) endonuclease 2 (EC 3.1.1	w
+SITE	human	Q9Y3B4	SF3B6	Q9Y3B4	33	321	Splicing factor 3B subunit 6 (Pre-mRNA branch site protein p	w
+SITE	worm	G5EGM7	pes-5	G5EGM7	0	1	Patterned Expression Site	w
+SITE	yeast	P25300	BUD5	P25300	3	20	Bud site selection protein 5	w
+SITE	yeast	P27637	BUD14	P27637	10	107	Bud site selection protein 14	w
+SITE	yeast	P38207	APN2	P38207	1	39	DNA-(apurinic or apyrimidinic site) endonuclease 2	w
+SITE	yeast	P41697	BUD6	P41697	10	56	Bud site selection protein 6	w
+SITE	yeast	P41698	BUD8	P41698	0	13	Bud site selection protein 8	w
+SITE	yeast	P43573	BUD27	P43573	9	78	Bud site selection protein 27	w
+SITE	yeast	P47136	BUD4	P47136	2	29	Bud site selection protein 4	w
+SITE	yeast	P53226	BUD9	P53226	0	12	Bud site selection protein 9	w
+SITE	yeast	P53323	BUD32	P53323	5	52	EKC/KEOPS complex subunit BUD32 (EC 3.6.-.-) (Atypical serin	w
+SITE	yeast	P85052	BUD25	P85052	0	1	Bud site selection protein 25	w
+SITE	yeast	Q04347	BUD22	Q04347	5	173	Bud site selection protein 22	w
+SITE	yeast	Q04471	YMR114C	Q04471	0	4	Abasic site processing protein YMR114C	w
+SITE	yeast	Q06677	SWA2	Q06677	25	92	Auxilin-like clathrin uncoating factor SWA2 (Bud site select	w
+SITE	yeast	Q08004	BUD20	Q08004	16	176	Bud site selection protein 20	w
+SITE	yeast	Q08754	BUD7	Q08754	1	27	Bud site selection protein 7	w
+SITE	yeast	Q08760	RAX1	Q08760	1	11	Bud site selection protein RAX1	w
+SITE	yeast	Q12465	RAX2	Q12465	1	36	Bud site selection protein RAX2	w
+SITE	zebrafish	F1Q4X0	dbpb	F1Q4X0	6	23	D site albumin promoter binding protein b isoform X1	w
+SITE	zebrafish	F1RA30	evi5a	F1RA30	2	5	Ecotropic viral integration site 5 protein homolog isoform X	w
+SITE-1	fly	FBgn0037105	S1P	Q9VP10	2	10	Serine endopeptidase (Site-1 protease (EC 3.4.21.-))	w
+SITE-1	human	Q14703	MBTPS1	Q14703	10	121	Membrane-bound transcription factor site-1 protease (EC 3.4.	w
+SITE-1	zebrafish	Q1LWH3	mbtps1	Q1LWH3	1	6	Membrane-bound transcription factor site-1 protease	w
+SITE-2	fly	FBgn0033656	S2P	Q7JZ56	1	5	Membrane-bound transcription factor site-2 protease (EC 3.4.	w
+SITE-2	human	O43462	MBTPS2	O43462	13	94	Membrane-bound transcription factor site-2 protease (EC 3.4.	w
+SITE-BINDING	human	Q10586	DBP	Q10586	96	369	D site-binding protein (Albumin D box-binding protein) (Albu	w
+SITE-CONTAINING	human	Q96JX3	SERAC1	Q96JX3	2	30	Protein SERAC1 (Serine active site-containing protein 1)	w
+SITES	human	Q8NI51	CTCFL	Q8NI51	4	57	Transcriptional repressor CTCFL (Brother of the regulator of	w
+SITES-BINDING	human	Q99612	KLF6	Q99612	38	478	Krueppel-like factor 6 (B-cell-derived protein 1) (Core prom	w
+SITPEC	human	Q9BQ95	ECSIT	Q9BQ95	20	232	Evolutionarily conserved signaling intermediate in Toll path	w
+SITS-BINDING	zebrafish	F1Q8T6	si:ch211-236l14.4	F1Q8T6	2	60	SITS-binding protein	w

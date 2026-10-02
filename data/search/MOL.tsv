@@ -1,5 +1,330 @@
-MOL1	arabidopsis-thaliana	Q9FGN6	MOL1	Q9FGN6	1	16	Leucine-rich repeat receptor-like protein kinase
-MOLA	haemophilus-influenzae	P44206	molA	P44206	1	4	Molybdate-binding protein MolA
-MOLB	haemophilus-influenzae	Q57130	molB	Q57130	3	4	Molybdate import system permease protein MolB
-MOLC	haemophilus-influenzae	Q57399	molC	Q57399	7	22	Molybdate import ATP-binding protein MolC
-MOLR_D	shigella-dysenteriae-serotype-1	Q32EJ2	molR_D	Q32EJ2	0	17	Regulator
+MOL	fly	FBgn0086711	mol	Q9VJQ7	1	17	LD27791p (Moladietz, isoform A) (Moladietz, isoform C) (Mola	
+MOL1	arabidopsis-thaliana	Q9FGN6	MOL1	Q9FGN6	1	16	Leucine-rich repeat receptor-like protein kinase	
+MOLA	haemophilus-influenzae	P44206	molA	P44206	1	4	Molybdate-binding protein MolA	
+MOLADIETZ	fly	FBgn0086711	mol	Q9VJQ7	1	17	LD27791p (Moladietz, isoform A) (Moladietz, isoform C) (Mola	w
+MOLASSES	fly	FBgn0043854	slam	Q9VME5	4	24	Slow as molasses, isoform B (Slow as molasses, isoform C)	w
+MOLB	haemophilus-influenzae	Q57130	molB	Q57130	3	4	Molybdate import system permease protein MolB	
+MOLC	haemophilus-influenzae	Q57399	molC	Q57399	7	22	Molybdate import ATP-binding protein MolC	
+MOLECULAR	fly	FBgn0011230	poe	Q9VLT5	0	0	Protein purity of essence (Interaction calmodulin and coloss	w
+MOLECULAR	fly	FBgn0020907	Scp2	O16158	0	19	Calcium-binding protein (Cex Ca2+-sensing low molecular weig	w
+MOLECULAR	fly	FBgn0040076	primo-2	P82891	75	1004	Low molecular weight phosphotyrosine protein phosphatase 2 (	w
+MOLECULAR	fly	FBgn0040077	primo-1	P82890	91	1005	Low molecular weight phosphotyrosine protein phosphatase 1 (	w
+MOLECULAR	human	O95429	BAG4	O95429	55	327	BAG family molecular chaperone regulator 4 (BAG-4) (Bcl-2-as	w
+MOLECULAR	human	O95816	BAG2	O95816	51	689	BAG family molecular chaperone regulator 2 (BAG-2) (Bcl-2-as	w
+MOLECULAR	human	O95817	BAG3	O95817	128	706	BAG family molecular chaperone regulator 3 (BAG-3) (Bcl-2-as	w
+MOLECULAR	human	P01042	KNG1	P01042	40	473	Kininogen-1 (Alpha-2-thiol proteinase inhibitor) (Fitzgerald	w
+MOLECULAR	human	P24666	ACP1	P24666	28	227	Low molecular weight phosphotyrosine protein phosphatase (LM	w
+MOLECULAR	human	P28062	PSMB8	P28062	26	227	Proteasome subunit beta type-8 (EC 3.4.25.1) (Low molecular 	w
+MOLECULAR	human	P28065	PSMB9	P28065	11	233	Proteasome subunit beta type-9 (EC 3.4.25.1) (Low molecular 	w
+MOLECULAR	human	P40306	PSMB10	P40306	15	214	Proteasome subunit beta type-10 (EC 3.4.25.1) (Low molecular	w
+MOLECULAR	human	P46379	BAG6	P46379	80	439	Large proline-rich protein BAG6 (BAG family molecular chaper	w
+MOLECULAR	human	Q8NEJ0	DUSP18	Q8NEJ0	7	58	Dual specificity protein phosphatase 18 (EC 3.1.3.16) (EC 3.	w
+MOLECULAR	human	Q8TCY5	MRAP	Q8TCY5	12	77	Melanocortin-2 receptor accessory protein (B27) (Fat cell-sp	w
+MOLECULAR	human	Q8WTR2	DUSP19	Q8WTR2	11	132	Dual specificity protein phosphatase 19 (EC 3.1.3.16) (EC 3.	w
+MOLECULAR	human	Q96M98	PACRG	Q96M98	14	182	Parkin coregulated gene protein (Molecular chaperone/chapero	w
+MOLECULAR	human	Q99933	BAG1	Q99933	72	560	BAG family molecular chaperone regulator 1 (BAG-1) (Bcl-2-as	w
+MOLECULAR	human	Q9BVJ7	DUSP23	Q9BVJ7	50	237	Dual specificity protein phosphatase 23 (EC 3.1.3.16) (EC 3.	w
+MOLECULAR	human	Q9H596	DUSP21	Q9H596	20	115	Dual specificity protein phosphatase 21 (EC 3.1.3.16) (EC 3.	w
+MOLECULAR	human	Q9NPJ1	MKKS	Q9NPJ1	20	186	Molecular chaperone MKKS (Bardet-Biedl syndrome 6 protein) (	w
+MOLECULAR	human	Q9UBZ9	REV1	Q9UBZ9	28	174	Translesion synthesis protein REV1 (Alpha integrin-binding p	w
+MOLECULAR	human	Q9UL15	BAG5	Q9UL15	17	399	BAG family molecular chaperone regulator 5 (BAG-5) (Bcl-2-as	w
+MOLECULAR	worm	A7WK41	CELE_Y94H6A.7	A7WK41	0	4	Low molecular weight phosphotyrosine protein phosphatase	w
+MOLECULAR	worm	O44739	bag-1	O44739	5	30	BAG family molecular chaperone regulator 1	w
+MOLECULAR	yeast	P02829	HSP82	P02829	24	388	ATP-dependent molecular chaperone HSP82	w
+MOLECULAR	yeast	P11484	SSB1	P11484	30	340	Ribosome-associated molecular chaperone SSB1	w
+MOLECULAR	yeast	P15108	HSC82	P15108	17	304	ATP-dependent molecular chaperone HSC82	w
+MOLECULAR	yeast	P40150	SSB2	P40150	27	310	Ribosome-associated molecular chaperone SSB2	w
+MOLECULAR	yeast	P40347	LTP1	P40347	1	22	Low molecular weight phosphotyrosine protein phosphatase	w
+MOLECULAR	zebrafish	A0A8M1N1F2	bag3	A0A8M1N1F2	25	129	BAG family molecular chaperone regulator 3	w
+MOLECULAR	zebrafish	A0A8M1PFF3	bag2	A0A8M1PFF3	7	50	BAG family molecular chaperone regulator 2	w
+MOLECULAR	zebrafish	A0AB13AA08	bag5	A0AB13AA08	1	46	BAG family molecular chaperone regulator 5	w
+MOLECULAR	zebrafish	A5PLC6	bag1	A5PLC6	0	75	BAG family molecular chaperone regulator 1	w
+MOLECULAR	zebrafish	B8JJ17	bag4	B8JJ17	7	52	BAG family molecular chaperone regulator 4	w
+MOLECULAR	zebrafish	F1QH99	acp1	F1QH99	1	55	Low molecular weight phosphotyrosine protein phosphatase	w
+MOLECULE	fly	FBgn0024811	Crk	Q9XYM0	30	112	Adapter molecule Crk	w
+MOLECULE	fly	FBgn0027363	Stam	Q9XTL2	326	1246	Jak pathway signal transduction adaptor molecule (LD02639p) 	w
+MOLECULE	fly	FBgn0027497	Madm	Q9Y0Y6	308	1106	Nuclear receptor-binding protein homolog (MLF1-adaptor molec	w
+MOLECULE	fly	FBgn0031561	IM33	Q9VQT8	28	273	Immune induced molecule 33, isoform A (Immune induced molecu	w
+MOLECULE	fly	FBgn0033062	Ars2	Q9V9K7	16	95	Serrate RNA effector molecule homolog (Arsenite-resistance p	w
+MOLECULE	fly	FBgn0033159	Dscam1	A0A0B4K823	2	30	Down syndrome cell adhesion molecule 1, isoform BX	w
+MOLECULE	fly	FBgn0033659	Damm	Q7KHI6	0	18	Daydream (Death associated molecule related to Mch2 caspase,	w
+MOLECULE	fly	FBgn0034709	Swim	Q7JWQ7	20	276	RE01730p (Secreted Wg-interacting molecule, isoform A) (Secr	w
+MOLECULE	fly	FBgn0039332	alrm	Q9VBR3	1	4	Astrocytic leucine-rich repeat molecule (GH14162p)	w
+MOLECULE	fly	FBgn0045073	Stim	P83094	567	2426	Stromal interaction molecule homolog	w
+MOLECULE	fly	FBgn0053543	elff	Q59E14	1	8	Neural cell adhesion molecule 2	w
+MOLECULE	fly	FBgn0053547	Rim	A0A0B4K6M2	1	9	Rab3 interacting molecule, isoform F (Rab3 interacting molec	w
+MOLECULE	fly	FBgn0261046	Dscam3	Q7KSE9	0	2	Down syndrome cell adhesion molecule 3, isoform E	w
+MOLECULE	fly	FBgn0263219	Dscam4	M9PHS6	1	7	Down syndrome cell adhesion molecule 4, isoform I (Down synd	w
+MOLECULE	fly	FBgn0265296	Dscam2	M9PEK5	429	2392	Down syndrome cell adhesion molecule 2, isoform P	w
+MOLECULE	human	A0A087WWD4	NCAM1	A0A087WWD4	14	141	Neural cell adhesion molecule 1	w
+MOLECULE	human	A0A0A0MTQ4	RGMA	A0A0A0MTQ4	4	19	Repulsive guidance molecule A	w
+MOLECULE	human	A8K4G0	CD300LB	A8K4G0	48	319	CMRF35-like molecule 7 (CLM-7) (CD300 antigen-like family me	w
+MOLECULE	human	A8MTB9	CEACAM18	A8MTB9	5	64	Cell adhesion molecule CEACAM18 (Carcinoembryonic antigen-re	w
+MOLECULE	human	O00533	CHL1	O00533	30	121	Neural cell adhesion molecule L1-like protein (Close homolog	w
+MOLECULE	human	O15394	NCAM2	O15394	27	136	Neural cell adhesion molecule 2 (N-CAM-2) (NCAM-2)	w
+MOLECULE	human	O43865	AHCYL1	O43865	37	417	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	w
+MOLECULE	human	O60469	DSCAM	O60469	49	326	Cell adhesion molecule DSCAM (CHD2) (Down syndrome cell adhe	w
+MOLECULE	human	O60504	SORBS3	O60504	87	270	Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin	w
+MOLECULE	human	O60667	FCMR	O60667	24	78	Immunoglobulin mu Fc receptor (IgM FcR) (Fas apoptotic inhib	w
+MOLECULE	human	O75618	DEDD	O75618	63	402	Death effector domain-containing protein (DEDPro1) (Death ef	w
+MOLECULE	human	O75674	TOM1L1	O75674	26	101	TOM1-like protein 1 (Src-activating and signaling molecule p	w
+MOLECULE	human	O75871	CEACAM4	O75871	73	242	Cell adhesion molecule CEACAM4 (Carcinoembryonic antigen CGM	w
+MOLECULE	human	O75886	STAM2	O75886	67	279	Signal transducing adapter molecule 2 (STAM-2) (Hrs-binding 	w
+MOLECULE	human	O94779	CNTN5	O94779	22	101	Contactin-5 (Neural recognition molecule NB-2) (hNB-2)	w
+MOLECULE	human	O94851	MICAL2	O94851	39	188	[F-actin]-monooxygenase MICAL2 (EC 1.14.13.225) (MICAL C-ter	w
+MOLECULE	human	O95150	TNFSF15	O95150	57	299	Tumor necrosis factor ligand superfamily member 15 (TNF liga	w
+MOLECULE	human	O95406	CNIH1	O95406	11	133	Protein cornichon homolog 1 (CNIH-1) (Cornichon family AMPA 	w
+MOLECULE	human	O95497	VNN1	O95497	7	98	Pantetheinase (EC 3.5.1.92) (Pantetheine hydrolase) (Tiff66)	w
+MOLECULE	human	O95498	VNN2	O95498	11	157	Pantetheine hydrolase VNN2 (EC 3.5.1.92) (Glycosylphosphatid	w
+MOLECULE	human	O95630	STAMBP	O95630	34	195	STAM-binding protein (EC 3.4.19.-) (Associated molecule with	w
+MOLECULE	human	O95727	CRTAM	O95727	35	95	Cytotoxic and regulatory T-cell molecule (Class-I MHC-restri	w
+MOLECULE	human	O95999	BCL10	O95999	31	252	B-cell lymphoma/leukemia 10 (B-cell CLL/lymphoma 10) (Bcl-10	w
+MOLECULE	human	P05362	ICAM1	P05362	159	1037	Intercellular adhesion molecule 1 (ICAM-1) (Major group rhin	w
+MOLECULE	human	P06731	CEACAM5	P06731	22	134	Cell adhesion molecule CEACAM5 (Carcinoembryonic antigen) (C	w
+MOLECULE	human	P13591	NCAM1	P13591	39	317	Neural cell adhesion molecule 1 (N-CAM-1) (NCAM-1) (CD antig	w
+MOLECULE	human	P13598	ICAM2	P13598	120	624	Intercellular adhesion molecule 2 (ICAM-2) (CD antigen CD102	w
+MOLECULE	human	P13688	CEACAM1	P13688	28	160	Cell adhesion molecule CEACAM1 (Biliary glycoprotein 1) (BGP	w
+MOLECULE	human	P14151	SELL	P14151	27	507	L-selectin (CD62 antigen-like family member L) (Leukocyte ad	w
+MOLECULE	human	P14415	ATP1B2	P14415	17	171	Sodium/potassium-transporting ATPase subunit beta-2 (Adhesio	w
+MOLECULE	human	P16109	SELP	P16109	14	235	P-selectin (CD62 antigen-like family member P) (Granule memb	w
+MOLECULE	human	P16284	PECAM1	P16284	73	490	Platelet endothelial cell adhesion molecule (PECAM-1) (EndoC	w
+MOLECULE	human	P16422	EPCAM	P16422	29	487	Epithelial cell adhesion molecule (Ep-CAM) (Adenocarcinoma-a	w
+MOLECULE	human	P16581	SELE	P16581	13	190	E-selectin (CD62 antigen-like family member E) (Endothelial 	w
+MOLECULE	human	P20273	CD22	P20273	21	270	B-cell receptor CD22 (B-lymphocyte cell adhesion molecule) (	w
+MOLECULE	human	P20701	ITGAL	P20701	56	385	Integrin alpha-L (CD11 antigen-like family member A) (Leukoc	w
+MOLECULE	human	P21246	PTN	P21246	39	370	Pleiotrophin (PTN) (Heparin-binding brain mitogen) (HBBM) (H	w
+MOLECULE	human	P31997	CEACAM8	P31997	72	357	Cell adhesion molecule CEACAM8 (CD67 antigen) (Carcinoembryo	w
+MOLECULE	human	P32004	L1CAM	P32004	50	282	Neural cell adhesion molecule L1 (N-CAM-L1) (NCAM-L1) (CD an	w
+MOLECULE	human	P32942	ICAM3	P32942	82	436	Intercellular adhesion molecule 3 (ICAM-3) (CDw50) (ICAM-R) 	w
+MOLECULE	human	P38567	SPAM1	P38567	3	66	Hyaluronidase PH-20 (Hyal-PH20) (EC 3.2.1.35) (Hyaluronogluc	w
+MOLECULE	human	P40198	CEACAM3	P40198	86	302	Cell adhesion molecule CEACAM3 (Carcinoembryonic antigen CGM	w
+MOLECULE	human	P40199	CEACAM6	P40199	99	320	Cell adhesion molecule CEACAM6 (Carcinoembryonic antigen-rel	w
+MOLECULE	human	P43121	MCAM	P43121	132	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	w
+MOLECULE	human	P46108	CRK	P46108	108	503	Adapter molecule crk (Proto-oncogene c-Crk) (p38)	w
+MOLECULE	human	P50895	BCAM	P50895	28	250	Basal cell adhesion molecule (Auberger B antigen) (B-CAM cel	w
+MOLECULE	human	P55008	AIF1	P55008	28	674	Allograft inflammatory factor 1 (AIF-1) (Ionized calcium-bin	w
+MOLECULE	human	P57087	JAM2	P57087	44	196	Junctional adhesion molecule B (JAM-B) (Junctional adhesion 	w
+MOLECULE	human	P78318	IGBP1	P78318	37	272	Immunoglobulin-binding protein 1 (B-cell signal transduction	w
+MOLECULE	human	P78324	SIRPA	P78324	52	347	Tyrosine-protein phosphatase non-receptor type substrate 1 (	w
+MOLECULE	human	P98082	DAB2	P98082	51	222	Disabled homolog 2 (Adaptor molecule disabled-2) (Differenti	w
+MOLECULE	human	Q07108	CD69	Q07108	87	401	Early activation antigen CD69 (Activation inducer molecule) 	w
+MOLECULE	human	Q08708	CD300C	Q08708	14	151	CMRF35-like molecule 6 (CLM-6) (CD300 antigen-like family me	w
+MOLECULE	human	Q13291	SLAMF1	Q13291	20	177	Signaling lymphocytic activation molecule (CDw150) (IPO-3) (	w
+MOLECULE	human	Q13477	MADCAM1	Q13477	8	85	Mucosal addressin cell adhesion molecule 1 (MAdCAM-1) (hMAdC	w
+MOLECULE	human	Q13586	STIM1	Q13586	43	429	Stromal interaction molecule 1	w
+MOLECULE	human	Q13740	ALCAM	Q13740	29	265	CD166 antigen (Activated leukocyte cell adhesion molecule) (	w
+MOLECULE	human	Q14002	CEACAM7	Q14002	75	238	Cell adhesion molecule CEACAM7 (Carcinoembryonic antigen CGM	w
+MOLECULE	human	Q14773	ICAM4	Q14773	32	106	Intercellular adhesion molecule 4 (ICAM-4) (Landsteiner-Wien	w
+MOLECULE	human	Q14982	OPCML	Q14982	16	150	Opioid-binding protein/cell adhesion molecule (OBCAM) (OPCML	w
+MOLECULE	human	Q14CZ8	HEPACAM	Q14CZ8	10	62	Hepatic and glial cell adhesion molecule (glialCAM) (Hepatoc	w
+MOLECULE	human	Q15223	NECTIN1	Q15223	31	187	Nectin-1 (Herpes virus entry mediator C) (Herpesvirus entry 	w
+MOLECULE	human	Q15326	ZMYND11	Q15326	9	137	Zinc finger MYND domain-containing protein 11 (Adenovirus 5 	w
+MOLECULE	human	Q15762	CD226	Q15762	65	651	CD226 antigen (DNAX accessory molecule 1) (DNAM-1) (CD antig	w
+MOLECULE	human	Q16186	ADRM1	Q16186	40	246	Proteasomal ubiquitin receptor ADRM1 (110 kDa cell membrane 	w
+MOLECULE	human	Q19T08	ECSCR	Q19T08	40	137	Endothelial cell-specific chemotaxis regulator (Apoptosis re	w
+MOLECULE	human	Q2WEN9	CEACAM16	Q2WEN9	11	71	Cell adhesion molecule CEACAM16 (Carcinoembryonic antigen-li	w
+MOLECULE	human	Q3KPI0	CEACAM21	Q3KPI0	70	355	Cell adhesion molecule CEACAM21 (Carcinoembryonic antigen-re	w
+MOLECULE	human	Q3ZCV2	CIMAP2	Q3ZCV2	0	13	Ciliary microtubule-associated protein 2 (Lymphocyte expansi	w
+MOLECULE	human	Q496F6	CD300E	Q496F6	11	149	CMRF35-like molecule 2 (CLM-2) (CD300 antigen-like family me	w
+MOLECULE	human	Q5QGZ9	CLEC12A	Q5QGZ9	80	326	C-type lectin domain family 12 member A (C-type lectin-like 	w
+MOLECULE	human	Q5T4B2	CERCAM	Q5T4B2	9	162	Inactive glycosyltransferase 25 family member 3 (Cerebral en	w
+MOLECULE	human	Q5TEJ8	THEMIS2	Q5TEJ8	8	90	Protein THEMIS2 (Induced by contact to basement membrane 1 p	w
+MOLECULE	human	Q5W186	CST9	Q5W186	10	79	Cystatin-9 (Cystatin-like molecule)	w
+MOLECULE	human	Q5ZPR3	CD276	Q5ZPR3	28	223	CD276 antigen (4Ig-B7-H3) (B7 homolog 3) (B7-H3) (Costimulat	w
+MOLECULE	human	Q6IA17	SIGIRR	Q6IA17	24	165	Single Ig IL-1-related receptor (Single Ig IL-1R-related mol	w
+MOLECULE	human	Q6NW40	RGMB	Q6NW40	15	90	Repulsive guidance molecule B (DRG11-responsive axonal guida	w
+MOLECULE	human	Q6PIZ9	TRAT1	Q6PIZ9	82	354	T-cell receptor-associated transmembrane adapter 1 (T-cell r	w
+MOLECULE	human	Q6UXG3	CD300LG	Q6UXG3	15	74	CMRF35-like molecule 9 (CLM-9) (CD300 antigen-like family me	w
+MOLECULE	human	Q6UXZ3	CD300LD	Q6UXZ3	51	168	CMRF35-like molecule 5 (CLM-5) (CD300 antigen-like family me	w
+MOLECULE	human	Q6UY09	CEACAM20	Q6UY09	5	32	Cell adhesion molecule CEACAM20 (Carcinoembryonic antigen-re	w
+MOLECULE	human	Q6ZMZ0	RNF19B	Q6ZMZ0	13	101	E3 ubiquitin-protein ligase RNF19B (EC 2.3.2.31) (IBR domain	w
+MOLECULE	human	Q7RTP6	MICAL3	Q7RTP6	25	177	[F-actin]-monooxygenase MICAL3 (EC 1.14.13.225) (Molecule in	w
+MOLECULE	human	Q7Z692	CEACAM19	Q7Z692	5	41	Cell adhesion molecule CEACAM19 (Carcinoembryonic antigen-li	w
+MOLECULE	human	Q86UR5	RIMS1	Q86UR5	23	63	Regulating synaptic membrane exocytosis protein 1 (Rab-3-int	w
+MOLECULE	human	Q86XR7	TICAM2	Q86XR7	25	257	TIR domain-containing adapter molecule 2 (TICAM-2) (Putative	w
+MOLECULE	human	Q86YT9	JAML	Q86YT9	50	185	Junctional adhesion molecule-like (Adhesion molecule interac	w
+MOLECULE	human	Q8IUC6	TICAM1	Q8IUC6	43	284	TIR domain-containing adapter molecule 1 (TICAM-1) (Proline-	w
+MOLECULE	human	Q8IUI8	CRLF3	Q8IUI8	9	90	Cytokine receptor-like factor 3 (Cytokine receptor-like mole	w
+MOLECULE	human	Q8IVK1	GLYCAM1	Q8IVK1	0	6	Putative glycosylation-dependent cell adhesion molecule 1 (G	w
+MOLECULE	human	Q8IVU1	IGDCC3	Q8IVU1	12	61	Immunoglobulin superfamily DCC subclass member 3 (Putative n	w
+MOLECULE	human	Q8IY33	MICALL2	Q8IY33	37	168	MICAL-like protein 2 (Junctional Rab13-binding protein) (Mol	w
+MOLECULE	human	Q8N126	CADM3	Q8N126	40	211	Cell adhesion molecule 3 (Brain immunoglobulin receptor) (Im	w
+MOLECULE	human	Q8N1K5	THEMIS	Q8N1K5	16	80	Protein THEMIS (Thymocyte-expressed molecule involved in sel	w
+MOLECULE	human	Q8N3F8	MICALL1	Q8N3F8	65	260	MICAL-like protein 1 (Molecule interacting with Rab13) (MIRa	w
+MOLECULE	human	Q8N3J6	CADM2	Q8N3J6	29	138	Cell adhesion molecule 2 (Immunoglobulin superfamily member 	w
+MOLECULE	human	Q8NET5	NFAM1	Q8NET5	27	135	NFAT activation molecule 1 (Calcineurin/NFAT-activating ITAM	w
+MOLECULE	human	Q8NFZ8	CADM4	Q8NFZ8	36	191	Cell adhesion molecule 4 (Immunoglobulin superfamily member 	w
+MOLECULE	human	Q8NG48	LINS1	Q8NG48	3	34	Protein Lines homolog 1 (Wnt-signaling molecule Lines homolo	w
+MOLECULE	human	Q8TD84	DSCAML1	Q8TD84	17	143	Cell adhesion molecule DSCAML1 (Down syndrome cell adhesion 	w
+MOLECULE	human	Q8TDQ1	CD300LF	Q8TDQ1	32	218	CMRF35-like molecule 1 (CLM-1) (CD300 antigen-like family me	w
+MOLECULE	human	Q8TDZ2	MICAL1	Q8TDZ2	23	148	[F-actin]-monooxygenase MICAL1 (EC 1.14.13.225) (EC 1.6.3.1)	w
+MOLECULE	human	Q8WUY3	PRUNE2	Q8WUY3	12	261	Protein prune homolog 2 (BNIP2 motif-containing molecule at 	w
+MOLECULE	human	Q8WWQ8	STAB2	Q8WWQ8	3	48	Stabilin-2 (FAS1 EGF-like and X-link domain-containing adhes	w
+MOLECULE	human	Q8WXF8	DEDD2	Q8WXF8	57	365	DNA-binding death effector domain-containing protein 2 (DED-	w
+MOLECULE	human	Q8WYK1	CNTNAP5	Q8WYK1	7	59	Contactin-associated protein-like 5 (Cell recognition molecu	w
+MOLECULE	human	Q8WYP5	AHCTF1	Q8WYP5	47	363	Protein ELYS (Embryonic large molecule derived from yolk sac	w
+MOLECULE	human	Q92614	MYO18A	Q92614	33	232	Unconventional myosin-XVIIIa (Molecule associated with JAK3 	w
+MOLECULE	human	Q92692	NECTIN2	Q92692	53	322	Nectin-2 (Herpes virus entry mediator B) (Herpesvirus entry 	w
+MOLECULE	human	Q92783	STAM	Q92783	53	236	Signal transducing adapter molecule 1 (STAM-1)	w
+MOLECULE	human	Q92823	NRCAM	Q92823	44	237	Neuronal cell adhesion molecule (Nr-CAM) (Neuronal surface p	w
+MOLECULE	human	Q93070	ART4	Q93070	11	73	Ecto-ADP-ribosyltransferase 4 (EC 2.4.2.31) (ADP-ribosyltran	w
+MOLECULE	human	Q96AP7	ESAM	Q96AP7	44	267	Endothelial cell-selective adhesion molecule	w
+MOLECULE	human	Q96B86	RGMA	Q96B86	14	89	Repulsive guidance molecule A (RGM domain family member A)	w
+MOLECULE	human	Q96D42	HAVCR1	Q96D42	4	48	Hepatitis A virus cellular receptor 1 (HAVcr-1) (Kidney inju	w
+MOLECULE	human	Q96FA3	PELI1	Q96FA3	12	171	E3 ubiquitin-protein ligase pellino homolog 1 (Pellino-1) (E	w
+MOLECULE	human	Q96L50	LRR1	Q96L50	94	579	Leucine-rich repeat protein 1 (4-1BB-mediated-signaling mole	w
+MOLECULE	human	Q96NU0	CNTNAP3B	Q96NU0	6	49	Contactin-associated protein-like 3B (Cell recognition molec	w
+MOLECULE	human	Q96NY8	NECTIN4	Q96NY8	26	139	Nectin-4 (Ig superfamily receptor LNIR) (Nectin cell adhesio	w
+MOLECULE	human	Q96QH2	PRAM1	Q96QH2	22	114	PML-RARA-regulated adapter molecule 1 (PRAM) (PRAM-1)	w
+MOLECULE	human	Q99731	CCL19	Q99731	82	585	C-C motif chemokine 19 (Beta-chemokine exodus-3) (CK beta-11	w
+MOLECULE	human	Q9BPU6	DPYSL5	Q9BPU6	11	119	Dihydropyrimidinase-related protein 5 (DRP-5) (CRMP3-associa	w
+MOLECULE	human	Q9BQI0	AIF1L	Q9BQI0	6	92	Allograft inflammatory factor 1-like (Ionized calcium-bindin	w
+MOLECULE	human	Q9BTN0	LRFN3	Q9BTN0	24	102	Leucine-rich repeat and fibronectin type-III domain-containi	w
+MOLECULE	human	Q9BVN2	RUSC1	Q9BVN2	51	178	AP-4 complex accessory subunit RUSC1 (New molecule containin	w
+MOLECULE	human	Q9BWQ8	FAIM2	Q9BWQ8	9	62	Protein lifeguard 2 (Fas apoptotic inhibitory molecule 2) (N	w
+MOLECULE	human	Q9BX67	JAM3	Q9BX67	48	280	Junctional adhesion molecule C (JAM-C) (JAM-2) (Junctional a	w
+MOLECULE	human	Q9BXP5	SRRT	Q9BXP5	60	410	Serrate RNA effector molecule homolog (Arsenite-resistance p	w
+MOLECULE	human	Q9BY67	CADM1	Q9BY67	77	295	Cell adhesion molecule 1 (Immunoglobulin superfamily member 	w
+MOLECULE	human	Q9BYH8	NFKBIZ	Q9BYH8	17	68	NF-kappa-B inhibitor zeta (I-kappa-B-zeta) (IkB-zeta) (Ikapp	w
+MOLECULE	human	Q9BZ76	CNTNAP3	Q9BZ76	12	147	Contactin-associated protein-like 3 (Cell recognition molecu	w
+MOLECULE	human	Q9C0A0	CNTNAP4	Q9C0A0	13	99	Contactin-associated protein-like 4 (Cell recognition molecu	w
+MOLECULE	human	Q9C0C7	AMBRA1	Q9C0C7	40	368	Activating molecule in BECN1-regulated autophagy protein 1 (	w
+MOLECULE	human	Q9GZY6	LAT2	Q9GZY6	35	146	Linker for activation of T-cells family member 2 (Linker for	w
+MOLECULE	human	Q9H400	LIME1	Q9H400	31	143	Lck-interacting transmembrane adapter 1 (Lck-interacting mem	w
+MOLECULE	human	Q9H426	RIMS4	Q9H426	10	57	Regulating synaptic membrane exocytosis protein 4 (RIM4 gamm	w
+MOLECULE	human	Q9H6B4	CLMP	Q9H6B4	11	77	CXADR-like membrane protein (Adipocyte adhesion molecule) (C	w
+MOLECULE	human	Q9HBG7	LY9	Q9HBG7	51	243	T-lymphocyte surface antigen Ly-9 (Cell surface molecule Ly-	w
+MOLECULE	human	Q9NPF0	CD320	Q9NPF0	16	90	CD320 antigen (8D6 antigen) (FDC-signaling molecule 8D6) (FD	w
+MOLECULE	human	Q9NQ30	ESM1	Q9NQ30	39	254	Endothelial cell-specific molecule 1 (ESM-1)	w
+MOLECULE	human	Q9NQS3	NECTIN3	Q9NQS3	43	154	Nectin-3 (CDw113) (Nectin cell adhesion molecule 3) (Poliovi	w
+MOLECULE	human	Q9NS62	THSD1	Q9NS62	3	23	Thrombospondin type-1 domain-containing protein 1 (Transmemb	w
+MOLECULE	human	Q9NSI5	IGSF5	Q9NSI5	3	42	Immunoglobulin superfamily member 5 (IgSF5) (Junctional adhe	w
+MOLECULE	human	Q9NVQ4	FAIM	Q9NVQ4	18	94	Fas apoptotic inhibitory molecule 1	w
+MOLECULE	human	Q9P244	LRFN1	Q9P244	40	199	Leucine-rich repeat and fibronectin type III domain-containi	w
+MOLECULE	human	Q9P246	STIM2	Q9P246	24	178	Stromal interaction molecule 2	w
+MOLECULE	human	Q9P2A4	ABI3	Q9P2A4	45	142	ABI gene family member 3 (New molecule including SH3) (Nesh)	w
+MOLECULE	human	Q9UGN4	CD300A	Q9UGN4	23	146	CMRF35-like molecule 8 (CLM-8) (CD300 antigen-like family me	w
+MOLECULE	human	Q9UHC6	CNTNAP2	Q9UHC6	18	141	Contactin-associated protein-like 2 (Cell recognition molecu	w
+MOLECULE	human	Q9UHI7	SLC23A1	Q9UHI7	1	40	Solute carrier family 23 member 1 (Na(+)/L-ascorbic acid tra	w
+MOLECULE	human	Q9UIB8	CD84	Q9UIB8	48	403	SLAM family member 5 (Cell surface antigen MAX.3) (Hly9-beta	w
+MOLECULE	human	Q9UJD0	RIMS3	Q9UJD0	8	49	Regulating synaptic membrane exocytosis protein 3 (Nim3) (RI	w
+MOLECULE	human	Q9ULH4	LRFN2	Q9ULH4	26	119	Leucine-rich repeat and fibronectin type-III domain-containi	w
+MOLECULE	human	Q9ULP0	NDRG4	Q9ULP0	13	113	Protein NDRG4 (Brain development-related molecule 1) (N-myc 	w
+MOLECULE	human	Q9UMF0	ICAM5	Q9UMF0	13	104	Intercellular adhesion molecule 5 (ICAM-5) (Telencephalin)	w
+MOLECULE	human	Q9UN19	DAPP1	Q9UN19	15	167	Dual adapter for phosphotyrosine and 3-phosphotyrosine and 3	w
+MOLECULE	human	Q9UQ26	RIMS2	Q9UQ26	15	85	Regulating synaptic membrane exocytosis protein 2 (Rab-3-int	w
+MOLECULE	human	Q9UQ52	CNTN6	Q9UQ52	26	147	Contactin-6 (Neural recognition molecule NB-3) (hNB-3)	w
+MOLECULE	human	Q9Y275	TNFSF13B	Q9Y275	73	429	Tumor necrosis factor ligand superfamily member 13B (B lymph	w
+MOLECULE	human	Q9Y286	SIGLEC7	Q9Y286	19	152	Sialic acid-binding Ig-like lectin 7 (Siglec-7) (Adhesion in	w
+MOLECULE	human	Q9Y3D7	PAM16	Q9Y3D7	18	172	Mitochondrial import inner membrane translocase subunit TIM1	w
+MOLECULE	human	Q9Y5Y4	PTGDR2	Q9Y5Y4	12	105	Prostaglandin D2 receptor 2 (Chemoattractant receptor-homolo	w
+MOLECULE	human	Q9Y624	F11R	Q9Y624	66	442	Junctional adhesion molecule A (JAM-A) (Junctional adhesion 	w
+MOLECULE	human	Q9Y6W8	ICOS	Q9Y6W8	92	301	Inducible T-cell costimulator (Activation-inducible lymphocy	w
+MOLECULE	worm	G5EDE5	drag-1	G5EDE5	2	9	Repulsive guidance molecule B homolog drag-1	w
+MOLECULE	worm	G5EF60	stim-1	G5EF60	1	17	Stromal interaction molecule 1	w
+MOLECULE	worm	O01498	stam-1	O01498	22	150	Signal transducing adapter molecule 1 (STAM-1) (Prion-like-(	w
+MOLECULE	worm	O01908	C44B11.1	O01908	3	9	Fas apoptotic inhibitory molecule 1	w
+MOLECULE	worm	Q8MQ86	ncam-1	Q8MQ86	0	4	NCAM (Neural cell adhesion molecule) homolog	w
+MOLECULE	worm	Q966L5	srrt-1	Q966L5	3	76	Serrate RNA effector molecule homolog	w
+MOLECULE	zebrafish	A0A0G2KQC0	nectin3a	A0A0G2KQC0	4	7	Nectin cell adhesion molecule 3	w
+MOLECULE	zebrafish	A0A0R4IAT9	stim1b	A0A0R4IAT9	4	27	Stromal interaction molecule 1 isoform X1	w
+MOLECULE	zebrafish	A0A0R4ICR1	nectin4b	A0A0R4ICR1	5	8	Nectin cell adhesion molecule 4b	w
+MOLECULE	zebrafish	A0A0R4ID76	cd79b	A0A0R4ID76	1	30	CD79b molecule, immunoglobulin-associated beta	w
+MOLECULE	zebrafish	A0A0R4IGV4	jam2a	A0A0R4IGV4	9	20	Junctional adhesion molecule 2A	w
+MOLECULE	zebrafish	A0A0R4IKQ6	cd248a	A0A0R4IKQ6	1	9	CD248 molecule, endosialin a	w
+MOLECULE	zebrafish	A0A0R4IT86	kirrel3l	A0A0R4IT86	1	3	Kirre like nephrin family adhesion molecule 3, like precurso	w
+MOLECULE	zebrafish	A0A8M1NAI3	cadm3	A0A8M1NAI3	1	3	Cell adhesion molecule 3 isoform 2 precursor	w
+MOLECULE	zebrafish	A0A8M1NGH6	esama	A0A8M1NGH6	3	15	Endothelial cell adhesion molecule a precursor	w
+MOLECULE	zebrafish	A0A8M6YZS5	chl1b	A0A8M6YZS5	5	10	Neural cell adhesion molecule L1-like protein	w
+MOLECULE	zebrafish	A0A8M9PLS5	crtam	A0A8M9PLS5	0	2	Cytotoxic and regulatory T-cell molecule	w
+MOLECULE	zebrafish	A0A8M9QPY5	nphs1	A0A8M9QPY5	3	38	NPHS1 adhesion molecule, nephrin	w
+MOLECULE	zebrafish	A0AB13A7G2	cd4-2.2	A0AB13A7G2	1	4	CD4-2 molecule, tandem duplicate 2 precursor	w
+MOLECULE	zebrafish	A0AB32TZ16	nfasca	A0AB32TZ16	1	14	Neural cell adhesion molecule L1	w
+MOLECULE	zebrafish	A0JMK7	cd99	A0JMK7	0	1	CD99 molecule isoform 1 precursor	w
+MOLECULE	zebrafish	A3KNL2	f11r.2	A3KNL2	6	50	Junctional adhesion molecule A	w
+MOLECULE	zebrafish	A3KPA0	jam3b	A3KPA0	7	15	Junctional adhesion molecule 3B	w
+MOLECULE	zebrafish	A8WI00	stam2	A8WI00	25	110	Signal transducing adapter molecule 2	w
+MOLECULE	zebrafish	B0CLV3	cadm4	B0CLV3	1	4	Cell adhesion molecule 4	w
+MOLECULE	zebrafish	B0V233	jam2b	B0V233	5	15	Junctional adhesion molecule 2b	w
+MOLECULE	zebrafish	B8X730	cd40	B8X730	9	52	CD40 molecule, TNF receptor superfamily member 5	w
+MOLECULE	zebrafish	E7F6D0	si:ch73-22o12.1	E7F6D0	5	23	Nectin cell adhesion molecule 3	w
+MOLECULE	zebrafish	E7F9T0	mical1	E7F9T0	2	8	Molecule interacting with CasL protein 1	w
+MOLECULE	zebrafish	E7FAG6	ambra1a	E7FAG6	1	45	Activating molecule in BECN1-regulated autophagy protein 1A	w
+MOLECULE	zebrafish	E7FDC8	esamb	E7FDC8	1	1	Endothelial cell adhesion molecule b	w
+MOLECULE	zebrafish	E7FE10	stim2b	E7FE10	4	23	Stromal interaction molecule 2	w
+MOLECULE	zebrafish	E7FEY7	stim2a	E7FEY7	3	22	Stromal interaction molecule 2 isoform X1	w
+MOLECULE	zebrafish	E9QCF0	chl1a	E9QCF0	3	10	Cell adhesion molecule L1-like a	w
+MOLECULE	zebrafish	E9QJI4	si:ch211-264f5.6	E9QJI4	1	8	Carcinoembryonic antigen-related cell adhesion molecule 5	w
+MOLECULE	zebrafish	F1QE54	alcamb	F1QE54	0	1	Activated leukocyte cell adhesion molecule b	w
+MOLECULE	zebrafish	F1QYW3	jam3a	F1QYW3	5	14	Junctional adhesion molecule 3a	w
+MOLECULE	zebrafish	F1QZ65	faim2a	F1QZ65	0	6	Fas apoptotic inhibitory molecule 2a	w
+MOLECULE	zebrafish	F1QZB1	cd4-1	F1QZB1	0	53	CD4-1 molecule	w
+MOLECULE	zebrafish	F1R1B9	pecam1a	F1R1B9	0	30	Platelet endothelial cell adhesion molecule isoform X1	w
+MOLECULE	zebrafish	F6NRL9	vcam1a	F6NRL9	4	77	Vascular cell adhesion molecule 1a	w
+MOLECULE	zebrafish	F6NYV8	cd28l	F6NYV8	1	9	Cd28-like molecule	w
+MOLECULE	zebrafish	M9MMA3	amigo3	M9MMA3	0	22	Adhesion molecule with Ig-like domain 3	w
+MOLECULE	zebrafish	Q08BX5	bcam	Q08BX5	0	4	Basal cell adhesion molecule (Lutheran blood group)	w
+MOLECULE	zebrafish	Q1LUQ2	ticam1	Q1LUQ2	7	171	TIR domain-containing adapter molecule 1	w
+MOLECULE	zebrafish	Q1LVM8	rgma	Q1LVM8	2	12	Repulsive guidance molecule A	w
+MOLECULE	zebrafish	Q1LY88	stim1a	Q1LY88	4	23	Stromal interaction molecule 1a	w
+MOLECULE	zebrafish	Q5TYT1	nrcama	Q5TYT1	1	15	Neural cell adhesion molecule L1	w
+MOLECULE	zebrafish	Q5TZ44	cd164	Q5TZ44	5	177	CD164 molecule, sialomucin	w
+MOLECULE	zebrafish	Q66I22	srrt	Q66I22	1	40	Serrate RNA effector molecule homolog	w
+MOLECULE	zebrafish	Q66I72	f11r.1	Q66I72	7	37	Junctional adhesion molecule A	w
+MOLECULE	zebrafish	Q6DEM2	crk	Q6DEM2	14	88	Adapter molecule crk	w
+MOLECULE	zebrafish	Q90478	nadl1.1	Q90478	2	10	Neural cell adhesion molecule L1.1	w
+MOLECULE	zebrafish	Q90479	nadl1.2	Q90479	0	11	Neural cell adhesion molecule L1.2	w
+MOLECULE	zebrafish	Q90YM0	ncam2	Q90YM0	1	14	Neural cell adhesion molecule 2	w
+MOLECULE	zebrafish	Q9PUT2	cd74a	Q9PUT2	13	661	CD74 molecule, major histocompatibility complex, class II in	w
+MOLECULE	zebrafish	X1WF51	ncam3	X1WF51	0	14	Neural cell adhesion molecule 1 isoform X1	w
+MOLECULE	zebrafish	X1WGE9	polr1g	X1WGE9	2	32	CD3e molecule, epsilon associated protein	w
+MOLECULE	zebrafish	X1WHY6	ambra1b	X1WHY6	1	47	Activating molecule in BECN1-regulated autophagy protein 1B	w
+MOLECULE-1	human	P19320	VCAM1	P19320	65	906	Vascular cell adhesion protein 1 (V-CAM 1) (VCAM-1) (INCAM-1	w
+MOLECULE-ASSOCIATED	human	O60880	SH2D1A	O60880	86	272	SH2 domain-containing protein 1A (Duncan disease SH2-protein	w
+MOLECULE-LIKE	human	P23352	ANOS1	P23352	30	194	Anosmin-1 (Adhesion molecule-like X-linked) (Kallmann syndro	w
+MOLECULE-LIKE	human	Q86YT9	JAML	Q86YT9	50	185	Junctional adhesion molecule-like (Adhesion molecule interac	w
+MOLECULE-LIKE	human	Q8TD84	DSCAML1	Q8TD84	17	143	Cell adhesion molecule DSCAML1 (Down syndrome cell adhesion 	w
+MOLECULE-LIKE	human	Q99445	GML	Q99445	8	90	Glycosyl-phosphatidylinositol-anchored molecule-like protein	w
+MOLECULE-RELATED	human	Q4KMG0	CDON	Q4KMG0	12	64	Cell adhesion molecule-related/down-regulated by oncogenes	w
+MOLECULE-RELATED	zebrafish	Q1L8D0	cdon	Q1L8D0	0	19	Cell adhesion molecule-related/down-regulated by oncogenes	w
+MOLESKIN	fly	FBgn0026252	msk	Q9VSD6	4	142	D-Importin 7/RanBP7 (FI03666p) (Moleskin)	w
+MOLGRAMOSTIN	human	P04141	CSF2	P04141	91	860	Granulocyte-macrophage colony-stimulating factor (GM-CSF) (C	w
+MOLO-1	worm	Q19280	molo-1	Q19280	1	9	Uncharacterized protein	
+MOLONEY	human	Q9BXT6	MOV10L1	Q9BXT6	7	72	RNA helicase Mov10l1 (EC 5.6.2.5) (Moloney leukemia virus 10	w
+MOLONEY	human	Q9HCE1	MOV10	Q9HCE1	55	1173	RNA helicase MOV-10 (EC 5.6.2.5) (Armitage homolog) (Moloney	w
+MOLR_D	shigella-dysenteriae-serotype-1	Q32EJ2	molR_D	Q32EJ2	0	17	Regulator	
+MOLT	human	Q14C87	TMEM132D	Q14C87	18	60		
+MOLTING	fly	FBgn0263490	mld	A0A0B4K7S6	1	3	Molting defective, isoform D	w
+MOLTING	worm	O76555	mlt-10	O76555	0	4	Molting protein mlt-10	w
+MOLYBDATE	human	Q6N075	SLC61A1	Q6N075	5	136	Solute carrier family 61 member 1 (Major facilitator superfa	w
+MOLYBDATE-ANION	human	Q6N075	SLC61A1	Q6N075	5	136	Solute carrier family 61 member 1 (Major facilitator superfa	w
+MOLYBDENUM	fly	FBgn0000316	cin	P39205	0	28	Molybdenum cofactor synthesis protein cinnamon [Includes: Mo	w
+MOLYBDENUM	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+MOLYBDENUM	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+MOLYBDENUM	fly	FBgn0039280	Mocs2B	Q9VBX2	16	57	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
+MOLYBDENUM	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
+MOLYBDENUM	fly	FBgn0263241	Mocs1	Q8IQF1	0	7	Molybdenum cofactor biosynthesis protein 1 [Includes: GTP 3'	w
+MOLYBDENUM	human	O95396	MOCS3	O95396	7	130	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+MOLYBDENUM	human	O96007	MOCS2	O96007	2	31	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (MOCO	w
+MOLYBDENUM	human	O96033	MOCS2	O96033	399	2181	Molybdopterin synthase sulfur carrier subunit (MOCO1-A) (Mol	w
+MOLYBDENUM	human	Q5VT66	MTARC1	Q5VT66	6	78	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
+MOLYBDENUM	human	Q969Z3	MTARC2	Q969Z3	4	52	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
+MOLYBDENUM	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+MOLYBDENUM	human	Q9NZB8	MOCS1	Q9NZB8	9	131	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	w
+MOLYBDENUM	worm	Q20624	moc-5	Q20624	0	7	Molybdenum cofactor biosynthesis protein moc-5	w
+MOLYBDENUM	worm	Q21657	mocs-1	Q21657	0	7	Molybdenum cofactor sulfurase	w
+MOLYBDENUM	zebrafish	F1R905	mocs1	F1R905	1	1	Molybdenum cofactor biosynthesis protein 1	w
+MOLYBDENUMTRANSFERASE	human	Q9NQX3	GPHN	Q9NQX3	11	149	Gephyrin [Includes: Molybdopterin adenylyltransferase (MPT a	w
+MOLYBDOPTERIN	fly	FBgn0000316	cin	P39205	0	28	Molybdenum cofactor synthesis protein cinnamon [Includes: Mo	w
+MOLYBDOPTERIN	fly	FBgn0039280	Mocs2B	Q9VBX2	16	57	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
+MOLYBDOPTERIN	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
+MOLYBDOPTERIN	human	O95396	MOCS3	O95396	7	130	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+MOLYBDOPTERIN	human	O96007	MOCS2	O96007	2	31	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (MOCO	w
+MOLYBDOPTERIN	human	O96033	MOCS2	O96033	399	2181	Molybdopterin synthase sulfur carrier subunit (MOCO1-A) (Mol	w
+MOLYBDOPTERIN	human	Q9NQX3	GPHN	Q9NQX3	11	149	Gephyrin [Includes: Molybdopterin adenylyltransferase (MPT a	w
+MOLYBDOPTERIN	worm	P91500	nmrk-1	P91500	1	17	Molybdopterin synthase catalytic subunit	w
+MOLYBDOPTERIN	worm	Q09412	moc-6	Q09412	1	3	Molybdopterin synthase sulfur carrier subunit	w
+MOLYBDOPTERIN	worm	Q23069	moc-2	Q23069	0	8	molybdopterin molybdotransferase	w
+MOLYBDOPTERIN	zebrafish	A0A8M6Z1C5	mocs2	A0A8M6Z1C5	1	7	Molybdopterin synthase catalytic subunit	w
+MOLYBDOPTERIN-SYNTHASE	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+MOLYBDOTRANSFERASE	worm	Q23069	moc-2	Q23069	0	8	molybdopterin molybdotransferase	w

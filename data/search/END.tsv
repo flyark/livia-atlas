@@ -1,18 +1,755 @@
-END	mycobacterium-tuberculosis	P9WQ13	end	P9WQ13	0	1	Probable endonuclease 4
-END3	candida-albicans-237561	Q5AJ82	END3	Q5AJ82	3	18	Actin cytoskeleton-regulatory complex protein END3
-END3	cladophialophora-carrionii	A0A1C1CHI1	end3	A0A1C1CHI1	2	35	Actin cytoskeleton-regulatory complex protein END3
-END3	schizosaccharomyces-pombe	Q9USZ7	end3	Q9USZ7	3	21	Actin cytoskeleton-regulatory complex protein end3
-END4	cladophialophora-carrionii	A0A1C1CJ72	end4	A0A1C1CJ72	2	43	Endocytosis protein end4
-END4	schizosaccharomyces-pombe	Q9P6L5	end4	Q9P6L5	0	20	Endocytosis protein end4
-ENDA	streptococcus-pneumoniae	P0A3S4	endA	P0A3S4	0	1	DNA-entry nuclease
-ENDO1	arabidopsis-thaliana	Q9SXA6	ENDO1	Q9SXA6	1	23	Endonuclease 1
-ENDO2	arabidopsis-thaliana	Q9C9G4	ENDO2	Q9C9G4	1	23	Endonuclease 2
-ENDO3	arabidopsis-thaliana	Q8LDW6	ENDO3	Q8LDW6	0	23	Endonuclease 3
-ENDO4	arabidopsis-thaliana	F4JJL0	ENDO4	F4JJL0	0	23	Endonuclease 4
-ENDO5	arabidopsis-thaliana	F4JJL3	ENDO5	F4JJL3	0	24	Endonuclease 5
-ENDOD1	mus-musculus	Q8C522	Endod1	Q8C522	0	11	Endonuclease domain-containing 1 protein
-ENDOD1	rattus-norvegicus	D3ZIP8	Endod1	D3ZIP8	0	19	Endonuclease domain containing 1
-ENDOG	mus-musculus	O08600	Endog	O08600	0	31	Endonuclease G, mitochondrial
-ENDOG	rattus-norvegicus	A6JTV7	Endog	A6JTV7	0	11	Endonuclease
-ENDOV	mus-musculus	Q8C9A2	Endov	Q8C9A2	0	7	Endonuclease V
-ENDOV	rattus-norvegicus	A0A0G2K5U3	Endov	A0A0G2K5U3	0	7	Endonuclease V
+END	human	P17813	ENG	P17813	86	556		
+END	mycobacterium-tuberculosis	P9WQ13	end	P9WQ13	0	1	Probable endonuclease 4	
+END-1	worm	G5EDN4	end-1	G5EDN4	2	25	GATA transcription factor END-1	w
+END-1	worm	G5EDN4	end-1	G5EDN4	2	25	GATA transcription factor END-1	w
+END-3	worm	Q9XUW7	end-3	Q9XUW7	3	65	GATA-type domain-containing protein	
+END-BINDING	human	Q15555	MAPRE2	Q15555	27	211	Microtubule-associated protein RP/EB family member 2 (APC-bi	w
+END-BINDING	human	Q15691	MAPRE1	Q15691	98	572	Microtubule-associated protein RP/EB family member 1 (APC-bi	w
+END-BINDING	human	Q9NUX5	POT1	Q9NUX5	78	379	Protection of telomeres protein 1 (hPot1) (POT1-like telomer	w
+END-BINDING	human	Q9UPY8	MAPRE3	Q9UPY8	58	303	Microtubule-associated protein RP/EB family member 3 (EB1 pr	w
+END-DIRECTED	human	O15066	KIF3B	O15066	20	146	Kinesin-like protein KIF3B (HH0048) (Microtubule plus end-di	w
+END-DIRECTED	human	Q9Y496	KIF3A	Q9Y496	24	280	Kinesin-like protein KIF3A (EC 3.6.4.-) (Microtubule plus en	w
+END-JOINING	human	Q9H9Q4	NHEJ1	Q9H9Q4	25	159	Non-homologous end-joining factor 1 (Protein cernunnos) (XRC	w
+END-JOINING	yeast	P53150	LIF1	P53150	3	27	Non-homologous end-joining factor LIF1	w
+END-JOINING	yeast	Q06148	NEJ1	Q06148	2	51	Non-homologous end-joining protein 1	w
+END-JOINING	zebrafish	Q6NV18	nhej1	Q6NV18	4	36	Non-homologous end-joining factor 1	w
+END-PROCESSING	human	Q6UN15	FIP1L1	Q6UN15	68	341	Pre-mRNA 3'-end-processing factor FIP1 (hFip1) (FIP1-like 1 	w
+END-PROCESSING	yeast	P25298	RNA14	P25298	8	54	mRNA 3'-end-processing protein RNA14	w
+END-PROCESSING	yeast	P25299	RNA15	P25299	3	60	mRNA 3'-end-processing protein RNA15	w
+END-PROCESSING	yeast	Q06102	YTH1	Q06102	3	42	mRNA 3'-end-processing protein YTH1	w
+END-PROCESSING	zebrafish	Q5RHJ8	fip1l1a	Q5RHJ8	5	75	Pre-mRNA 3'-end-processing factor FIP1	w
+END-PROCESSING	zebrafish	Q5XJD3	fip1l1	Q5XJD3	11	75	Pre-mRNA 3'-end-processing factor FIP1	w
+END-SPECIFIC	human	Q8IV48	ERI1	Q8IV48	9	121	3'-5' exoribonuclease 1 (EC 3.1.13.1) (3'-5' exonuclease ERI	w
+END3	candida-albicans-237561	Q5AJ82	END3	Q5AJ82	3	18	Actin cytoskeleton-regulatory complex protein END3	
+END3	cladophialophora-carrionii	A0A1C1CHI1	end3	A0A1C1CHI1	2	35	Actin cytoskeleton-regulatory complex protein END3	
+END3	schizosaccharomyces-pombe	Q9USZ7	end3	Q9USZ7	3	21	Actin cytoskeleton-regulatory complex protein end3	
+END3	yeast	P39013	END3	P39013	6	80	Actin cytoskeleton-regulatory complex protein END3	
+END4	cladophialophora-carrionii	A0A1C1CJ72	end4	A0A1C1CJ72	2	43	Endocytosis protein end4	
+END4	schizosaccharomyces-pombe	Q9P6L5	end4	Q9P6L5	0	20	Endocytosis protein end4	
+ENDA	streptococcus-pneumoniae	P0A3S4	endA	P0A3S4	0	1	DNA-entry nuclease	
+ENDD1_HUMAN	human	O94919	ENDOD1	O94919	18	239		
+ENDO	human	P08473	MME	P08473	71	311	Neprilysin (EC 3.4.24.11) (Atriopeptidase) (Common acute lym	w
+ENDO	human	Q14249	ENDOG	Q14249	10	101	Endonuclease G, mitochondrial (Endo G) (EC 3.1.30.-)	w
+ENDO	human	Q9H4B0	OSGEPL1	Q9H4B0	5	78	tRNA N6-adenosine threonylcarbamoyltransferase, mitochondria	w
+ENDO	human	Q9Y2C4	EXOG	Q9Y2C4	4	55	Nuclease EXOG, mitochondrial (EC 3.1.30.-) (Endonuclease G-l	w
+ENDO	worm	O44527	CELE_T08B6.4	O44527	0	6	Endo/exonuclease/phosphatase domain-containing protein	w
+ENDO-1	yeast	P36091	DCW1	P36091	0	10	Mannan endo-1,6-alpha-mannosidase DCW1	w
+ENDO-1	yeast	P53753	DSE4	P53753	0	7	Glucan endo-1,3-beta-D-glucosidase 1	w
+ENDO-1	yeast	Q05031	DFG5	Q05031	1	24	Mannan endo-1,6-alpha-mannosidase DFG5	w
+ENDO-1	yeast	Q12168	ACF2	Q12168	2	29	Glucan endo-1,3-beta-D-glucosidase 2	w
+ENDO-ALPHA	human	Q5SRI9	MANEA	Q5SRI9	22	114	Glycoprotein endo-alpha-1,2-mannosidase (Endo-alpha mannosid	w
+ENDO-ALPHA-1	human	Q5SRI9	MANEA	Q5SRI9	22	114	Glycoprotein endo-alpha-1,2-mannosidase (Endo-alpha mannosid	w
+ENDO-ALPHA-1	human	Q5VSG8	MANEAL	Q5VSG8	15	110	Glycoprotein endo-alpha-1,2-mannosidase-like protein (EC 3.2	w
+ENDO-ALPHA-1	zebrafish	E7EYY9	manea	E7EYY9	1	19	Glycoprotein endo-alpha-1,2-mannosidase	w
+ENDO-ALPHA-1	zebrafish	Q1L8D2	maneal	Q1L8D2	1	19	Glycoprotein endo-alpha-1,2-mannosidase-like protein	w
+ENDO-BETA-N-ACETYLGALACTOSAMINIDASE	human	Q2M3T9	HYAL4	Q2M3T9	3	64	Hyaluronidase-4 (Hyal-4) (EC 3.2.1.35) (Chondroitin sulfate 	w
+ENDO-BETA-N-ACETYLGLUCOSAMINIDASE	fly	FBgn0030839	ENGase	Q9VX51	0	4	mannosyl-glycoprotein endo-beta-N-acetylglucosaminidase (EC 	w
+ENDO-BETA-N-ACETYLGLUCOSAMINIDASE	human	Q8NFI3	ENGASE	Q8NFI3	5	46	Cytosolic endo-beta-N-acetylglucosaminidase (ENGase) (EC 3.2	w
+ENDO-GLUCORONIDASE	human	Q9Y251	HPSE	Q9Y251	11	181	Heparanase (EC 3.2.1.166) (Endo-glucoronidase) (Heparanase-1	w
+ENDO1	arabidopsis-thaliana	Q9SXA6	ENDO1	Q9SXA6	1	23	Endonuclease 1	
+ENDO180	human	Q9UBG0	MRC2	Q9UBG0	11	88		
+ENDO2	arabidopsis-thaliana	Q9C9G4	ENDO2	Q9C9G4	1	23	Endonuclease 2	
+ENDO3	arabidopsis-thaliana	Q8LDW6	ENDO3	Q8LDW6	0	23	Endonuclease 3	
+ENDO4	arabidopsis-thaliana	F4JJL0	ENDO4	F4JJL0	0	23	Endonuclease 4	
+ENDO5	arabidopsis-thaliana	F4JJL3	ENDO5	F4JJL3	0	24	Endonuclease 5	
+ENDOA	fly	FBgn0038659	EndoA	Q8T390	8	128	Endophilin-A (SH3 domain-containing GRB2-like protein)	
+ENDOB	fly	FBgn0034433	EndoB	Q8SYD9	2	43	Endophilin B, isoform A (RE65748p)	
+ENDOBREVIN	human	Q9BV40	VAMP8	Q9BV40	55	325	Vesicle-associated membrane protein 8 (VAMP-8) (Endobrevin) 	w
+ENDOCAM	human	P16284	PECAM1	P16284	73	490	Platelet endothelial cell adhesion molecule (PECAM-1) (EndoC	w
+ENDOCHITINASE	worm	Q11174	cht-1	Q11174	0	11	Probable endochitinase	w
+ENDOCHITINASE	yeast	P29029	CTS1	P29029	0	9	Endochitinase	w
+ENDOCRINE	human	P05408	SCG5	P05408	7	47	Neuroendocrine protein 7B2 (Pituitary polypeptide) (Secretog	w
+ENDOCRINE	human	Q5VUA4	ZNF318	Q5VUA4	72	337	Zinc finger protein 318 (Endocrine regulatory protein)	w
+ENDOCRINE	human	Q9NNZ3	DNAJC4	Q9NNZ3	17	112	DnaJ homolog subfamily C member 4 (DnaJ-like protein HSPF2) 	w
+ENDOCRINE-GLAND-DERIVED	human	P58294	PROK1	P58294	20	163	Prokineticin-1 (Endocrine-gland-derived vascular endothelial	w
+ENDOCRINE-SPECIFIC	human	Q5W5W9	RESP18	Q5W5W9	4	21	Regulated endocrine-specific protein 18	w
+ENDOCYTIC	human	Q6ICB4	PHETA2	Q6ICB4	7	30	Sesquipedalian-2 (Ses2) (27 kDa inositol polyphosphate phosp	w
+ENDOCYTIC	human	Q8N4B1	PHETA1	Q8N4B1	14	54	Sesquipedalian-1 (Ses1) (27 kDa inositol polyphosphate phosp	w
+ENDOCYTIC	human	Q9UBG0	MRC2	Q9UBG0	11	88	C-type mannose receptor 2 (C-type lectin domain family 13 me	w
+ENDOCYTOSIS	fly	FBgn0015477	Rme-8	A1Z7S0	1	12	Receptor mediated endocytosis 8, isoform A	w
+ENDOCYTOSIS	fly	FBgn0030286	Gapvd1	Q9VZ08	4	43	Receptor-mediated endocytosis protein 6 homolog	w
+ENDOCYTOSIS	human	O75165	DNAJC13	O75165	10	132	DnaJ homolog subfamily C member 13 (Required for receptor-me	w
+ENDOCYTOSIS	worm	Q9GYH7	rme-6	Q9GYH7	2	16	Receptor-mediated endocytosis protein 6	w
+ENDOCYTOSIS	yeast	P34216	EDE1	P34216	7	63	EH domain-containing and endocytosis protein 1	w
+ENDOCYTOSIS-ASSOCIATED	human	Q8NC96	NECAP1	Q8NC96	22	125	Adaptin ear-binding coat-associated protein 1 (NECAP endocyt	w
+ENDOCYTOSIS-ASSOCIATED	human	Q9NVZ3	NECAP2	Q9NVZ3	27	103	Adaptin ear-binding coat-associated protein 2 (NECAP endocyt	w
+ENDOD1	human	O94919	ENDOD1	O94919	18	239	Endonuclease domain-containing 1 protein (EC 3.1.30.-)	
+ENDOD1	mus-musculus	Q8C522	Endod1	Q8C522	0	11	Endonuclease domain-containing 1 protein	
+ENDOD1	rattus-norvegicus	D3ZIP8	Endod1	D3ZIP8	0	19	Endonuclease domain containing 1	
+ENDOD1	zebrafish	A5PM73	si:ch211-165i18.2	A5PM73	0	3	Novel protein similar to vertebrate endonuclease domain cont	w
+ENDODERM	fly	FBgn0046687	Tre1	X2JIG6	2	55	Trapped in endoderm 1, isoform C	w
+ENDOFIN	human	Q7Z3T8	ZFYVE16	Q7Z3T8	28	150	Zinc finger FYVE domain-containing protein 16 (Endofin) (End	w
+ENDOG	fly	FBgn0289744	EndoG	Q7JXB9	3	19	Endonuclease G	
+ENDOG	human	Q14249	ENDOG	Q14249	10	101	Endonuclease G, mitochondrial (Endo G) (EC 3.1.30.-)	
+ENDOG	mus-musculus	O08600	Endog	O08600	0	31	Endonuclease G, mitochondrial	
+ENDOG	rattus-norvegicus	A6JTV7	Endog	A6JTV7	0	11	Endonuclease	
+ENDOG	zebrafish	Q503Y0	endog	Q503Y0	0	6	Endonuclease	
+ENDOG-LIKE	fly	FBgn0037857	Tengl4	Q9VGU3	0	8	IP11331p (Testis EndoG-Like 4)	w
+ENDOG-LIKE	fly	FBgn0051679	Tengl3	Q9VQ95	1	23	Testis EndoG-Like 3 (UT01387p)	w
+ENDOG-LIKE	fly	FBgn0051682	Tengl1	Q8IPY9	3	14	MIP05340p (Testis EndoG-Like 1)	w
+ENDOGENOUS	human	B6SEH8	ERVV-1	B6SEH8	7	13	Endogenous retrovirus group V member 1 Env polyprotein (HERV	w
+ENDOGENOUS	human	B6SEH9	ERVV-2	B6SEH9	8	19	Endogenous retrovirus group V member 2 Env polyprotein (HERV	w
+ENDOGENOUS	human	M5A8F1	ERVH48-1	M5A8F1	1	5	Suppressyn (Endogenous retrovirus group 48 member 1) (NDUFV3	w
+ENDOGENOUS	human	O42043	ERVK-18	O42043	7	331	Endogenous retrovirus group K member 18 Env polyprotein (Env	w
+ENDOGENOUS	human	O71037	ERVK-19	O71037	3	90	Endogenous retrovirus group K member 19 Env polyprotein (Env	w
+ENDOGENOUS	human	P0CF75	EBLN1	P0CF75	0	12	Endogenous Bornavirus-like nucleoprotein 1 (Endogenous Borna	w
+ENDOGENOUS	human	P0DMC3	APELA	P0DMC3	11	42	Apelin receptor early endogenous ligand (Protein Elabela) (E	w
+ENDOGENOUS	human	P0DP58	LYNX1	P0DP58	29	183	Ly-6/neurotoxin-like protein 1 (Endogenous prototoxin LYNX1)	w
+ENDOGENOUS	human	P10265	ERVK-10	P10265	15	84	Endogenous retrovirus group K member 10 Pro protein (HERV-K1	w
+ENDOGENOUS	human	P10266	ERVK-10	P10266	7	11	Endogenous retrovirus group K member 10 Pol protein (HERV-K1	w
+ENDOGENOUS	human	P13985	HRES1	P13985	0	3	Putative HTLV-1-related endogenous sequence (p25)	w
+ENDOGENOUS	human	P60507	ERVFC1	P60507	5	12	Endogenous retrovirus group FC1 Env polyprotein (Envelope po	w
+ENDOGENOUS	human	P60508	ERVFRD-1	P60508	10	155	Syncytin-2 (Endogenous retrovirus group FRD member 1) (Envel	w
+ENDOGENOUS	human	P60509	ERVPABLB-1	P60509	6	10	Endogenous retrovirus group PABLB member 1 Env polyprotein (	w
+ENDOGENOUS	human	P60608	ERVFC1-1	P60608	6	8	Endogenous retrovirus group FC1 member 1 Env polyprotein (En	w
+ENDOGENOUS	human	P61550	ERVS71-1	P61550	1	11	Endogenous retrovirus group S71 member 1 Env polyprotein (En	w
+ENDOGENOUS	human	P61565	ERVK-21	P61565	4	12	Endogenous retrovirus group K member 21 Env polyprotein (Env	w
+ENDOGENOUS	human	P61566	ERVK-24	P61566	4	192	Endogenous retrovirus group K member 24 Env polyprotein (Env	w
+ENDOGENOUS	human	P61567	ERVK-7	P61567	7	164	Endogenous retrovirus group K member 7 Env polyprotein (Enve	w
+ENDOGENOUS	human	P61568	ERVK11-1	P61568	0	2	Putative endogenous retrovirus group K member 11-1 Env polyp	w
+ENDOGENOUS	human	P61570	ERVK-25	P61570	7	142	Endogenous retrovirus group K member 25 Env polyprotein (Env	w
+ENDOGENOUS	human	P61571	ERVK-21	P61571	0	3	Endogenous retrovirus group K member 21 Rec protein (HERV-K_	w
+ENDOGENOUS	human	P61572	ERVK-19	P61572	0	3	Endogenous retrovirus group K member 19 Rec protein (HERV-K(	w
+ENDOGENOUS	human	P61573	ERVK-9	P61573	1	2	Endogenous retrovirus group K member 9 Rec protein (HERV-K(C	w
+ENDOGENOUS	human	P61574	HERVK_113	P61574	3	6	Endogenous retrovirus group K member 113 Rec protein (HERV-K	w
+ENDOGENOUS	human	P61575	ERVK-8	P61575	0	9	Endogenous retrovirus group K member 8 Rec protein (HERV-K11	w
+ENDOGENOUS	human	P61576	HERV-K104	P61576	4	14	Endogenous retrovirus group K member 104 Rec protein (HERV-K	w
+ENDOGENOUS	human	P61578	ERVK-16	P61578	1	6	Endogenous retrovirus group K member 16 Rec protein (HERV-K_	w
+ENDOGENOUS	human	P61579	ERVK-25	P61579	1	5	Endogenous retrovirus group K member 25 Rec protein (Endogen	w
+ENDOGENOUS	human	P61580	ERVK-10	P61580	1	11	Endogenous retrovirus group K member 10 Np9 protein (HERV-K1	w
+ENDOGENOUS	human	P61581	ERVK-24	P61581	2	12	Endogenous retrovirus group K member 24 Np9 protein (HERV-K1	w
+ENDOGENOUS	human	P61582	ERVK-7	P61582	1	10	Endogenous retrovirus group K member 7 Np9 protein (HERV-K(I	w
+ENDOGENOUS	human	P61583	ERVK-5	P61583	1	6	Endogenous retrovirus group K member 5 Np9 protein (Endogeno	w
+ENDOGENOUS	human	P62683	ERVK-21	P62683	0	113	Endogenous retrovirus group K member 21 Gag polyprotein (HER	w
+ENDOGENOUS	human	P62684	HERVK_113	P62684	0	8	Endogenous retrovirus group K member 113 Gag polyprotein (HE	w
+ENDOGENOUS	human	P62685	ERVK-8	P62685	3	104	Endogenous retrovirus group K member 8 Gag polyprotein (HERV	w
+ENDOGENOUS	human	P63119	ERVK-21	P63119	12	87	Endogenous retrovirus group K member 21 Pro protein (HERV-K_	w
+ENDOGENOUS	human	P63120	ERVK-19	P63120	12	81	Endogenous retrovirus group K member 19 Pro protein (HERV-K(	w
+ENDOGENOUS	human	P63121	HERVK_113	P63121	10	14	Endogenous retrovirus group K member 113 Pro protein (HERV-K	w
+ENDOGENOUS	human	P63122	ERVK-8	P63122	13	81	Endogenous retrovirus group K member 8 Pro protein (HERV-K11	w
+ENDOGENOUS	human	P63123	ERVK-18	P63123	13	107	Endogenous retrovirus group K member 18 Pro protein (HERV-K(	w
+ENDOGENOUS	human	P63124	HERV-K104	P63124	11	17	Endogenous retrovirus group K member 104 Pro protein (HERV-K	w
+ENDOGENOUS	human	P63125	ERVK-25	P63125	11	90	Endogenous retrovirus group K member 25 Pro protein (HERV-K_	w
+ENDOGENOUS	human	P63126	ERVK-9	P63126	2	118	Endogenous retrovirus group K member 9 Gag polyprotein (HERV	w
+ENDOGENOUS	human	P63127	ERVK-9	P63127	13	62	Endogenous retrovirus group K member 9 Pro protein (HERV-K(C	w
+ENDOGENOUS	human	P63129	ERVK-24	P63129	16	98	Endogenous retrovirus group K member 24 Pro protein (HERV-K1	w
+ENDOGENOUS	human	P63130	ERVK-7	P63130	2	128	Endogenous retrovirus group K member 7 Gag polyprotein (HERV	w
+ENDOGENOUS	human	P63131	ERVK-7	P63131	14	98	Endogenous retrovirus group K member 7 Pro protein (HERV-K(I	w
+ENDOGENOUS	human	P63132	HERVK_113	P63132	6	28	Endogenous retrovirus group K member 113 Pol protein (HERV-K	w
+ENDOGENOUS	human	P63133	ERVK-8	P63133	8	11	Endogenous retrovirus group K member 8 Pol protein (HERV-K11	w
+ENDOGENOUS	human	P63135	ERVK-7	P63135	4	4	Endogenous retrovirus group K member 7 Pol protein (HERV-K(I	w
+ENDOGENOUS	human	P63136	ERVK-25	P63136	7	28	Endogenous retrovirus group K member 25 Pol protein (HERV-K_	w
+ENDOGENOUS	human	P63145	ERVK-24	P63145	0	9	Endogenous retrovirus group K member 24 Gag polyprotein (HER	w
+ENDOGENOUS	human	P87889	ERVK-10	P87889	2	128	Endogenous retrovirus group K member 10 Gag polyprotein (HER	w
+ENDOGENOUS	human	Q14264	ERV3-1	Q14264	8	219	Endogenous retrovirus group 3 member 1 Env polyprotein (ERV-	w
+ENDOGENOUS	human	Q4G163	FBXO43	Q4G163	25	150	F-box only protein 43 (Endogenous meiotic inhibitor 2)	w
+ENDOGENOUS	human	Q69383	ERVK-6	Q69383	0	3	Endogenous retrovirus group K member 6 Rec protein (Central 	w
+ENDOGENOUS	human	Q69384	ERVK-6	Q69384	3	132	Endogenous retrovirus group K member 6 Env polyprotein (EnvK	w
+ENDOGENOUS	human	Q6P2I7	EBLN2	Q6P2I7	2	25	Endogenous Bornavirus-like nucleoprotein 2 (Endogenous Borna	w
+ENDOGENOUS	human	Q7LDI9	ERVK-6	Q7LDI9	1	125	Endogenous retrovirus group K member 6 Gag polyprotein (HERV	w
+ENDOGENOUS	human	Q902F8	ERVK-8	Q902F8	4	108	Endogenous retrovirus group K member 8 Env polyprotein (EnvK	w
+ENDOGENOUS	human	Q902F9	HERVK_113	Q902F9	1	11	Endogenous retrovirus group K member 113 Env polyprotein (En	w
+ENDOGENOUS	human	Q9BS40	LXN	Q9BS40	15	117	Latexin (Endogenous carboxypeptidase inhibitor) (ECI) (Prote	w
+ENDOGENOUS	human	Q9BXR3	ERVK-6	Q9BXR3	7	36	Endogenous retrovirus group K member 6 Pol protein (HERV-K(C	w
+ENDOGENOUS	human	Q9H9K5	ERVMER34-1	Q9H9K5	3	20	Endogenous retroviral envelope protein HEMO (Endogenous retr	w
+ENDOGENOUS	human	Q9HAB3	SLC52A2	Q9HAB3	9	192	Solute carrier family 52, riboflavin transporter, member 2 (	w
+ENDOGENOUS	human	Q9HDB8	ERVK-5	Q9HDB8	1	31	Endogenous retrovirus group K member 5 Env polyprotein (Enve	w
+ENDOGENOUS	human	Q9HDB9	ERVK-5	Q9HDB9	0	10	Endogenous retrovirus group K member 5 Gag polyprotein (HERV	w
+ENDOGENOUS	human	Q9NWF4	SLC52A1	Q9NWF4	5	175	Solute carrier family 52, riboflavin transporter, member 1 (	w
+ENDOGENOUS	human	Q9NX77	ERVK13-1	Q9NX77	0	11	Endogenous retrovirus group K member 13-1 Env polyprotein (E	w
+ENDOGENOUS	human	Q9QC07	ERVK-18	Q9QC07	8	11	Endogenous retrovirus group K member 18 Pol protein (HERV-K(	w
+ENDOGENOUS	human	Q9UKH3	ERVK-9	Q9UKH3	4	113	Endogenous retrovirus group K member 9 Env polyprotein (EnvK	w
+ENDOGENOUS	human	Q9ULZ1	APLN	Q9ULZ1	65	227	Apelin (APJ endogenous ligand) [Cleaved into: Apelin-36; Ape	w
+ENDOGENOUS	human	Q9UM44	HHLA2	Q9UM44	12	94	HERV-H LTR-associating protein 2 (Human endogenous retroviru	w
+ENDOGENOUS	human	Q9UQF0	ERVW-1	Q9UQF0	23	292	Syncytin-1 (Endogenous retrovirus group W member 1) (Env-W) 	w
+ENDOGENOUS	human	Q9UQG0	ERVK-11	Q9UQG0	8	11	Endogenous retrovirus group K member 11 Pol protein (HERV-K_	w
+ENDOGENOUS	human	Q9WJR5	ERVK-19	Q9WJR5	5	16	Endogenous retrovirus group K member 19 Pol protein (HERV-K(	w
+ENDOGENOUS	human	Q9XRX5	ANKRD13C-DT	Q9XRX5	2	11	Putative uncharacterized protein ANKRD13C-DT (ANKRD13C diver	w
+ENDOGENOUS	human	Q9Y6I0	ERVK-6	Q9Y6I0	15	101	Endogenous retrovirus group K member 6 Pro protein (HERV-K(C	w
+ENDOGENOUS	human	Q9YNA8	ERVK-19	Q9YNA8	1	101	Endogenous retrovirus group K member 19 Gag polyprotein (HER	w
+ENDOGENOUS	zebrafish	P0DMC2	apela	P0DMC2	4	25	Apelin receptor early endogenous ligand	w
+ENDOGI	fly	FBgn0028515	EndoGI	Q9V3V9	6	233	Endonuclease G inhibitor, isoform A (Endonuclease G inhibito	
+ENDOGL1	human	Q9Y2C4	EXOG	Q9Y2C4	4	55		
+ENDOGL2	human	Q9Y2C4	EXOG	Q9Y2C4	4	55		
+ENDOGLIN	human	P17813	ENG	P17813	86	556	Endoglin (CD antigen CD105)	w
+ENDOGLYCAN	human	Q9NZ53	PODXL2	Q9NZ53	31	113	Podocalyxin-like protein 2 (Endoglycan)	w
+ENDOGLYX-1	human	Q9H8L6	MMRN2	Q9H8L6	23	167	Multimerin-2 (EMILIN-3) (Elastin microfibril interface locat	w
+ENDOKININ-A	human	Q86UU9	TAC4	Q86UU9	24	95	Tachykinin-4 (Preprotachykinin-C) (PPT-C) [Cleaved into: End	w
+ENDOKININ-C	human	Q86UU9	TAC4	Q86UU9	24	95	Tachykinin-4 (Preprotachykinin-C) (PPT-C) [Cleaved into: End	w
+ENDOLYN	human	Q04900	CD164	Q04900	25	85	Sialomucin core protein 24 (MUC-24) (Endolyn) (Multi-glycosy	w
+ENDOMANNOSIDASE	human	Q5SRI9	MANEA	Q5SRI9	22	114	Glycoprotein endo-alpha-1,2-mannosidase (Endo-alpha mannosid	w
+ENDOMEMBRANE	human	P15313	ATP6V1B1	P15313	19	246	V-type proton ATPase subunit B, kidney isoform (V-ATPase sub	w
+ENDOMEMBRANE	human	P21281	ATP6V1B2	P21281	17	330	V-type proton ATPase subunit B, brain isoform (V-ATPase subu	w
+ENDOMETASE	human	Q9NRE1	MMP26	Q9NRE1	8	80	Matrix metalloproteinase-26 (MMP-26) (EC 3.4.24.-) (Endometa	w
+ENDOMETRIAL	human	O00292	LEFTY2	O00292	10	75	Left-right determination factor 2 (Endometrial bleeding-asso	w
+ENDOMETRIAL	human	P09466	PAEP	P09466	57	241	Glycodelin (GD) (Placental protein 14) (PP14) (Pregnancy-ass	w
+ENDOMETRIUM	human	Q6FHJ7	SFRP4	Q6FHJ7	21	157	Secreted frizzled-related protein 4 (sFRP-4) (Frizzled prote	w
+ENDOMUCIN	human	Q9ULC0	EMCN	Q9ULC0	42	250	Endomucin (Endomucin-2) (Gastric cancer antigen Ga34) (Mucin	w
+ENDOMUCIN-2	human	Q9ULC0	EMCN	Q9ULC0	42	250	Endomucin (Endomucin-2) (Gastric cancer antigen Ga34) (Mucin	w
+ENDONEXIN	human	P08758	ANXA5	P08758	12	554	Annexin A5 (Anchorin CII) (Annexin V) (Annexin-5) (Calphobin	w
+ENDONEXIN	human	P09525	ANXA4	P09525	6	212	Annexin A4 (35-beta calcimedin) (Annexin IV) (Annexin-4) (Ca	w
+ENDONU	human	Q9BQ52	ELAC2	Q9BQ52	8	262	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
+ENDONUCL	human	Q9UBZ4	APEX2	Q9UBZ4	4	109	DNA-(apurinic or apyrimidinic site) endonuclease 2 (EC 3.1.1	w
+ENDONUCLEASE	fly	FBgn0000100	RpLP0	P19889	31	395	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
+ENDONUCLEASE	fly	FBgn0002707	mei-9	Q24087	11	88	DNA repair endonuclease XPF (EC 3.1.-.-) (Protein meiotic 9)	w
+ENDONUCLEASE	fly	FBgn0002909	mus312	A0A023GPN3	5	34	Structure-specific endonuclease subunit SLX4	w
+ENDONUCLEASE	fly	FBgn0004584	Rrp1	B7YZZ9	6	120	DNA-(apurinic or apyrimidinic site) endonuclease (EC 3.1.-.-	w
+ENDONUCLEASE	fly	FBgn0025832	Fen1	Q7K7A9	9	144	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (Flap structure-spe	w
+ENDONUCLEASE	fly	FBgn0026737	CG6171	A8JR14	3	19	Aprataxin and PNK-like factor (EC 3.1.1.-) (Apurinic-apyrimi	w
+ENDONUCLEASE	fly	FBgn0028426	RNaseZ	Q8MKW7	0	6	Ribonuclease Z, mitochondrial (RNase Z) (EC 3.1.26.11) (Juve	w
+ENDONUCLEASE	fly	FBgn0028515	EndoGI	Q9V3V9	6	233	Endonuclease G inhibitor, isoform A (Endonuclease G inhibito	w
+ENDONUCLEASE	fly	FBgn0032907	Nthl1	Q9VIH0	10	75	Endonuclease III homolog (EC 3.2.2.-) (EC 4.2.99.18) (Bifunc	w
+ENDONUCLEASE	fly	FBgn0036266	Tsen54	Q9VTV4	4	27	tRNA splicing endonuclease subunit 54	w
+ENDONUCLEASE	fly	FBgn0036321	CG14120	Q9VU22	0	5	DNA/RNA non-specific endonuclease domain-containing protein	w
+ENDONUCLEASE	fly	FBgn0036831	CG6839	Q9VVU9	22	245	DNA/RNA non-specific endonuclease domain-containing protein	w
+ENDONUCLEASE	fly	FBgn0037263	slx1	Q9VN41	5	24	Structure-specific endonuclease subunit SLX1 homolog (EC 3.1	w
+ENDONUCLEASE	fly	FBgn0040347	mus81	Q9V3T1	6	54	Crossover junction endonuclease MUS81 (EC 3.1.22.-)	w
+ENDONUCLEASE	fly	FBgn0050343	Tsen15	A1Z7S9	2	4	tRNA splicing endonuclease subunit 15, isoform A (EC 4.6.1.1	w
+ENDONUCLEASE	fly	FBgn0052463	Tengl2	Q8IPZ0	5	58	Endonuclease (EC 3.1.30.-)	w
+ENDONUCLEASE	fly	FBgn0053260	Tsen34	Q0E8E7	33	393	tRNA-splicing endonuclease subunit Sen34 (EC 4.6.1.16)	w
+ENDONUCLEASE	fly	FBgn0053346	CG33346	Q7KRX0	33	245	Endonuclease (EC 3.1.30.-)	w
+ENDONUCLEASE	fly	FBgn0263831	Gen	Q9VRJ0	3	63	Flap endonuclease GEN (EC 3.1.-.-) (Flap structure-specific 	w
+ENDONUCLEASE	fly	FBgn0289744	EndoG	Q7JXB9	3	19	Endonuclease G	w
+ENDONUCLEASE	human	A4GXA9	EME2	A4GXA9	8	90	Structure-specific endonuclease subunit EME2 (Essential meio	w
+ENDONUCLEASE	human	O00370	LORF2	O00370	0	2	LINE-1 retrotransposable element ORF2 protein (ORF2p) [Inclu	w
+ENDONUCLEASE	human	O94919	ENDOD1	O94919	18	239	Endonuclease domain-containing 1 protein (EC 3.1.30.-)	w
+ENDONUCLEASE	human	O95243	MBD4	O95243	15	108	Methyl-CpG-binding domain protein 4 (EC 3.2.2.-) (Methyl-CpG	w
+ENDONUCLEASE	human	P15918	RAG1	P15918	11	286	V(D)J recombination-activating protein 1 (RAG-1) (RING finge	w
+ENDONUCLEASE	human	P27695	APEX1	P27695	110	1504	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	w
+ENDONUCLEASE	human	P39748	FEN1	P39748	13	278	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (DNase IV) (Flap st	w
+ENDONUCLEASE	human	P54278	PMS2	P54278	24	194	Mismatch repair endonuclease PMS2 (EC 3.1.-.-) (DNA mismatch	w
+ENDONUCLEASE	human	P78549	NTHL1	P78549	11	108	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
+ENDONUCLEASE	human	Q14249	ENDOG	Q14249	10	101	Endonuclease G, mitochondrial (Endo G) (EC 3.1.30.-)	w
+ENDONUCLEASE	human	Q17R31	TATDN3	Q17R31	5	83	Deoxyribonuclease TATDN3 (EC 3.1.11.-) (EC 3.1.21.-) (DNA-(a	w
+ENDONUCLEASE	human	Q17RS7	GEN1	Q17RS7	12	146	Flap endonuclease GEN homolog 1 (EC 3.1.-.-)	w
+ENDONUCLEASE	human	Q2TB18	ASTE1	Q2TB18	3	103	Single-strand DNA endonuclease ASTE1 (EC 3.1.-.-) (Protein a	w
+ENDONUCLEASE	human	Q5FWF4	ZRANB3	Q5FWF4	9	92	DNA annealing helicase and endonuclease ZRANB3 (Annealing he	w
+ENDONUCLEASE	human	Q6P1N9	TATDN1	Q6P1N9	12	120	Deoxyribonuclease TATDN1 (EC 3.1.11.-) (EC 3.1.21.-) (DNA-(a	w
+ENDONUCLEASE	human	Q7L8L6	FASTKD5	Q7L8L6	53	298	Non-canonical pre-mRNAs endonuclease FASTKD5, mitochondrial 	w
+ENDONUCLEASE	human	Q7L9B9	EEPD1	Q7L9B9	13	103	Endonuclease/exonuclease/phosphatase family domain-containin	w
+ENDONUCLEASE	human	Q7Z6J9	TSEN54	Q7Z6J9	23	219	tRNA-splicing endonuclease subunit Sen54 (SEN54 homolog) (Hs	w
+ENDONUCLEASE	human	Q8IW19	APLF	Q8IW19	20	85	Aprataxin and PNK-like factor (EC 3.1.-.-) (Apurinic-apyrimi	w
+ENDONUCLEASE	human	Q8IY92	SLX4	Q8IY92	119	461	Structure-specific endonuclease subunit SLX4 (BTB/POZ domain	w
+ENDONUCLEASE	human	Q8N8Q3	ENDOV	Q8N8Q3	2	48	Endonuclease V (hEndoV) (EC 3.1.26.-) (Inosine-specific endo	w
+ENDONUCLEASE	human	Q8NAG6	ANKLE1	Q8NAG6	9	67	Structure-specific endonuclease ANKLE1 (Ankyrin repeat and L	w
+ENDONUCLEASE	human	Q8NCE0	TSEN2	Q8NCE0	38	267	tRNA-splicing endonuclease subunit Sen2 (EC 4.6.1.16) (tRNA-	w
+ENDONUCLEASE	human	Q8TAT5	NEIL3	Q8TAT5	9	226	Endonuclease 8-like 3 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+ENDONUCLEASE	human	Q8WW01	TSEN15	Q8WW01	17	107	tRNA-splicing endonuclease subunit Sen15 (SEN15 homolog) (Hs	w
+ENDONUCLEASE	human	Q8WZ79	DNASE2B	Q8WZ79	4	59	Deoxyribonuclease-2-beta (EC 3.1.22.1) (DNase II-like acid D	w
+ENDONUCLEASE	human	Q92889	ERCC4	Q92889	30	235	DNA repair endonuclease XPF (EC 3.1.-.-) (DNA excision repai	w
+ENDONUCLEASE	human	Q969S2	NEIL2	Q969S2	6	158	Endonuclease 8-like 2 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+ENDONUCLEASE	human	Q96AY2	EME1	Q96AY2	24	158	Structure-specific endonuclease subunit EME1 (Crossover junc	w
+ENDONUCLEASE	human	Q96FI4	NEIL1	Q96FI4	18	356	Endonuclease 8-like 1 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+ENDONUCLEASE	human	Q96NY9	MUS81	Q96NY9	25	222	Structure-specific endonuclease subunit MUS81 (EC 3.1.22.-) 	w
+ENDONUCLEASE	human	Q99708	RBBP8	Q99708	125	635	DNA endonuclease RBBP8 (EC 3.1.-.-) (CtBP-interacting protei	w
+ENDONUCLEASE	human	Q9BQ83	SLX1A	Q9BQ83	7	108	Structure-specific endonuclease subunit SLX1 (EC 3.1.-.-) (G	w
+ENDONUCLEASE	human	Q9BSV6	TSEN34	Q9BSV6	39	411	tRNA-splicing endonuclease subunit Sen34 (EC 4.6.1.16) (Leuk	w
+ENDONUCLEASE	human	Q9H777	ELAC1	Q9H777	0	23	Zinc phosphodiesterase ELAC protein 1 (EC 3.1.26.11) (Delete	w
+ENDONUCLEASE	human	Q9H8Y5	ANKZF1	Q9H8Y5	13	129	tRNA endonuclease ANKZF1 (EC 3.1.-.-) (Ankyrin repeat and zi	w
+ENDONUCLEASE	human	Q9UBZ4	APEX2	Q9UBZ4	4	109	DNA-(apurinic or apyrimidinic site) endonuclease 2 (EC 3.1.1	w
+ENDONUCLEASE	human	Q9Y2C4	EXOG	Q9Y2C4	4	55	Nuclease EXOG, mitochondrial (EC 3.1.30.-) (Endonuclease G-l	w
+ENDONUCLEASE	virus	A0A916KP45	AHEV_140	A0A916KP45	2	243	Probable AP endonuclease	w
+ENDONUCLEASE	virus	A0A916KPR5	CHBEV_237	A0A916KPR5	3	311	Probable AP endonuclease	w
+ENDONUCLEASE	virus	A0A916KQD2	MYSEV_233	A0A916KQD2	3	301	Probable AP endonuclease	w
+ENDONUCLEASE	virus	A0ABM9QKN3	CHREV_205	A0ABM9QKN3	0	286	Probable AP endonuclease	w
+ENDONUCLEASE	virus	Q91MP9	LSDV114	Q91MP9	9	153	Holliday junction endonuclease	w
+ENDONUCLEASE	virus	Q9EMJ6	AMV210	Q9EMJ6	3	278	Probable AP endonuclease	w
+ENDONUCLEASE	virus	Q9YVX5	MSV117	Q9YVX5	4	261	Probable AP endonuclease	w
+ENDONUCLEASE	virus	W6JJ15		W6JJ15	1	241	Probable AP endonuclease	w
+ENDONUCLEASE	virus	W6JPL4		W6JPL4	5	241	Endonuclease/exonuclease/phosphatase domain-containing prote	w
+ENDONUCLEASE	worm	A0A0M9JJ86	angl-1	A0A0M9JJ86	1	1	Endonuclease/exonuclease/phosphatase domain-containing prote	w
+ENDONUCLEASE	worm	G5EBZ1	xpf-1	G5EBZ1	7	67	DNA repair endonuclease XPF	w
+ENDONUCLEASE	worm	G5EFG5	pms-2	G5EFG5	4	39	Mismatch repair endonuclease PMS2	w
+ENDONUCLEASE	worm	O18005	pde-12	O18005	0	11	Endonuclease/exonuclease/phosphatase domain-containing prote	w
+ENDONUCLEASE	worm	P34511	vms-1	P34511	0	20	tRNA endonuclease vms-1	w
+ENDONUCLEASE	worm	P54137	nth-1	P54137	0	15	Endonuclease III homolog	w
+ENDONUCLEASE	worm	P91153	mus-81	P91153	5	86	Crossover junction endonuclease MUS81	w
+ENDONUCLEASE	worm	P91351	slx-1	P91351	3	19	Structure-specific endonuclease subunit SLX1 homolog	w
+ENDONUCLEASE	worm	Q10002	apn-1	Q10002	0	3	Apurinic-apyrimidinic endonuclease	w
+ENDONUCLEASE	worm	Q17543	C01B10.3	Q17543	0	7	Endonuclease/exonuclease/phosphatase family protein	w
+ENDONUCLEASE	worm	Q18606	com-1	Q18606	5	29	DNA endonuclease activator Ctp1 C-terminal domain-containing	w
+ENDONUCLEASE	worm	Q95NM6	cps-6	Q95NM6	0	12	Endonuclease G, mitochondrial	w
+ENDONUCLEASE	worm	Q9N3T2	crn-1	Q9N3T2	1	71	Flap endonuclease 1	w
+ENDONUCLEASE	worm	Q9TXV5	tsen-54	Q9TXV5	3	14	tRNA-splicing endonuclease subunit Sen54 N-terminal domain-c	w
+ENDONUCLEASE	yeast	P03877	AI3	P03877	0	28	Intron-encoded DNA endonuclease aI3	w
+ENDONUCLEASE	yeast	P03878	AI4	P03878	2	42	Intron-encoded DNA endonuclease aI4	w
+ENDONUCLEASE	yeast	P03882	SCEI	P03882	0	6	Intron-encoded endonuclease I-SceI	w
+ENDONUCLEASE	yeast	P09932	HO	P09932	0	31	Homothallic switching endonuclease	w
+ENDONUCLEASE	yeast	P16658	SEN2	P16658	2	24	tRNA-splicing endonuclease subunit SEN2	w
+ENDONUCLEASE	yeast	P22936	APN1	P22936	2	16	Apurinic-apyrimidinic endonuclease 1	w
+ENDONUCLEASE	yeast	P26793	RAD27	P26793	4	56	Flap endonuclease 1	w
+ENDONUCLEASE	yeast	P31378	NTG1	P31378	2	30	Endonuclease III homolog 1	w
+ENDONUCLEASE	yeast	P36075	CUE2	P36075	0	19	Endonuclease CUE2	w
+ENDONUCLEASE	yeast	P38207	APN2	P38207	1	39	DNA-(apurinic or apyrimidinic site) endonuclease 2	w
+ENDONUCLEASE	yeast	P38257	MMS4	P38257	2	31	Crossover junction endonuclease MMS4	w
+ENDONUCLEASE	yeast	P38324	SLX1	P38324	1	14	Structure-specific endonuclease subunit SLX1	w
+ENDONUCLEASE	yeast	P39707	SEN34	P39707	5	19	tRNA-splicing endonuclease subunit SEN34	w
+ENDONUCLEASE	yeast	P46946	SAE2	P46946	2	24	DNA endonuclease SAE2	w
+ENDONUCLEASE	yeast	P53153	LCL3	P53153	0	4	Probable endonuclease LCL3	w
+ENDONUCLEASE	yeast	Q02825	SEN54	Q02825	3	20	tRNA-splicing endonuclease subunit SEN54	w
+ENDONUCLEASE	yeast	Q03702	CCE1	Q03702	0	12	Cruciform cutting endonuclease 1, mitochondrial	w
+ENDONUCLEASE	yeast	Q04149	MUS81	Q04149	3	79	Crossover junction endonuclease MUS81	w
+ENDONUCLEASE	yeast	Q04311	VMS1	Q04311	5	82	tRNA endonuclease VMS1	w
+ENDONUCLEASE	yeast	Q04675	SEN15	Q04675	2	48	tRNA-splicing endonuclease subunit SEN15	w
+ENDONUCLEASE	yeast	Q08214	NTG2	Q08214	3	10	Endonuclease III homolog 2	w
+ENDONUCLEASE	yeast	Q08444	NOB1	Q08444	2	101	20S-pre-rRNA D-site endonuclease NOB1	w
+ENDONUCLEASE	yeast	Q08954	NBR9	Q08954	3	15	Endonuclease NBR9	w
+ENDONUCLEASE	yeast	Q12098	SLX4	Q12098	7	27	Structure-specific endonuclease subunit SLX4	w
+ENDONUCLEASE	yeast	Q9ZZX0	AI5_BETA	Q9ZZX0	1	32	Intron-encoded DNA endonuclease aI5 beta	w
+ENDONUCLEASE	yeast	Q9ZZX1	AI5_ALPHA	Q9ZZX1	2	40	Intron-encoded DNA endonuclease aI5 alpha	w
+ENDONUCLEASE	zebrafish	A0A0R4IVU6	si:dkey-243k1.3	A0A0R4IVU6	0	18	Endonuclease domain-containing 1 protein-like	w
+ENDONUCLEASE	zebrafish	A0A8M1QQQ0	LOC100002544	A0A8M1QQQ0	0	18	Endonuclease domain-containing 1 protein	w
+ENDONUCLEASE	zebrafish	A0A8M2B5V4	LOC101885869	A0A8M2B5V4	0	3	Endonuclease domain-containing 1 protein-like	w
+ENDONUCLEASE	zebrafish	A0AB32TUT6	si:dkey-85k7.10	A0AB32TUT6	0	16	Endonuclease domain-containing 1 protein	w
+ENDONUCLEASE	zebrafish	A0AB32U361	ercc4	A0AB32U361	12	112	DNA repair endonuclease XPF	w
+ENDONUCLEASE	zebrafish	A2BIL9	tsen34	A2BIL9	2	15	tRNA-splicing endonuclease subunit Sen34	w
+ENDONUCLEASE	zebrafish	A5PM73	si:ch211-165i18.2	A5PM73	0	3	Novel protein similar to vertebrate endonuclease domain cont	w
+ENDONUCLEASE	zebrafish	B0R0N8	si:ch211-133n4.9	B0R0N8	0	3	Endonuclease domain-containing 1 protein	w
+ENDONUCLEASE	zebrafish	B0UXL7	si:dkeyp-13a3.3	B0UXL7	4	69	Probable flap endonuclease 1 homolog	w
+ENDONUCLEASE	zebrafish	E7EXE0	zranb3	E7EXE0	5	61	DNA annealing helicase and endonuclease ZRANB3	w
+ENDONUCLEASE	zebrafish	E7F4D7	ankzf1	E7F4D7	7	80	tRNA endonuclease ANKZF1	w
+ENDONUCLEASE	zebrafish	E7F558	pms2	E7F558	3	49	Mismatch repair endonuclease PMS2	w
+ENDONUCLEASE	zebrafish	E7F6N8	eme1	E7F6N8	7	53	Crossover junction endonuclease EME1	w
+ENDONUCLEASE	zebrafish	E7FBZ9	si:ch211-141o9.10	E7FBZ9	0	1	Probable endonuclease 4 isoform X1	w
+ENDONUCLEASE	zebrafish	F1Q570	neil3	F1Q570	0	3	Endonuclease 8-like 3	w
+ENDONUCLEASE	zebrafish	F1QBP9	nthl1	F1QBP9	1	16	Endonuclease III-like protein 1	w
+ENDONUCLEASE	zebrafish	F1R983	rbbp8	F1R983	5	60	DNA endonuclease RBBP8	w
+ENDONUCLEASE	zebrafish	Q1LYL8	aste1a	Q1LYL8	0	34	Single-strand DNA endonuclease ASTE1	w
+ENDONUCLEASE	zebrafish	Q503Y0	endog	Q503Y0	0	6	Endonuclease	w
+ENDONUCLEASE	zebrafish	Q6TEQ0	eepd1	Q6TEQ0	6	72	Endonuclease/exonuclease/phosphatase family domain-containin	w
+ENDONUCLEASE	zebrafish	Q6TGW9	neil1	Q6TGW9	0	29	Endonuclease 8-like 1	w
+ENDONUCLEASE	zebrafish	Q6TNU4	fen1	Q6TNU4	7	77	Flap endonuclease 1	w
+ENDONUCLEASE	zebrafish	Q7SXA9	mus81	Q7SXA9	6	113	Structure-specific endonuclease subunit MUS81	w
+ENDOPEPTID	human	Q9BYT8	NLN	Q9BYT8	11	80	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
+ENDOPEPTIDASE	fly	FBgn0031406	Send1	Q9VQA0	14	243	GH26248p (Spermathecal endopeptidase 1 (EC 3.4.21.-))	w
+ENDOPEPTIDASE	fly	FBgn0032242	CG5355	Q9VKW5	13	165	Prolyl endopeptidase (EC 3.4.21.-)	w
+ENDOPEPTIDASE	fly	FBgn0032969	CG2528	Q9V9P5	0	1	Prolyl endopeptidase (EC 3.4.21.-)	w
+ENDOPEPTIDASE	fly	FBgn0033656	S2P	Q7JZ56	1	5	Membrane-bound transcription factor site-2 protease (EC 3.4.	w
+ENDOPEPTIDASE	fly	FBgn0037105	S1P	Q9VP10	2	10	Serine endopeptidase (Site-1 protease (EC 3.4.21.-))	w
+ENDOPEPTIDASE	fly	FBgn0037296	Prosbeta2R2	Q8T915	10	66	proteasome endopeptidase complex (EC 3.4.25.1)	w
+ENDOPEPTIDASE	fly	FBgn0039688	Kul	Q9VAI2	150	2363	ADAM10 endopeptidase (EC 3.4.24.81)	w
+ENDOPEPTIDASE	fly	FBgn0259984	kuz	Q9VJW9	68	2431	ADAM10 endopeptidase (EC 3.4.24.81)	w
+ENDOPEPTIDASE	fly	FBgn0264253	Send2	Q7KT95	35	245	Serine protease (Spermathecal endopeptidase 2 (EC 3.4.21.-))	w
+ENDOPEPTIDASE	human	O43462	MBTPS2	O43462	13	94	Membrane-bound transcription factor site-2 protease (EC 3.4.	w
+ENDOPEPTIDASE	human	P08473	MME	P08473	71	311	Neprilysin (EC 3.4.24.11) (Atriopeptidase) (Common acute lym	w
+ENDOPEPTIDASE	human	P20618	PSMB1	P20618	21	374	Proteasome subunit beta type-1 (Macropain subunit C5) (Multi	w
+ENDOPEPTIDASE	human	P25786	PSMA1	P25786	57	498	Proteasome subunit alpha type-1 (30 kDa prosomal protein) (P	w
+ENDOPEPTIDASE	human	P25787	PSMA2	P25787	23	301	Proteasome subunit alpha type-2 (Macropain subunit C3) (Mult	w
+ENDOPEPTIDASE	human	P25788	PSMA3	P25788	23	514	Proteasome subunit alpha type-3 (Macropain subunit C8) (Mult	w
+ENDOPEPTIDASE	human	P25789	PSMA4	P25789	18	342	Proteasome subunit alpha type-4 (Macropain subunit C9) (Mult	w
+ENDOPEPTIDASE	human	P28062	PSMB8	P28062	26	227	Proteasome subunit beta type-8 (EC 3.4.25.1) (Low molecular 	w
+ENDOPEPTIDASE	human	P28065	PSMB9	P28065	11	233	Proteasome subunit beta type-9 (EC 3.4.25.1) (Low molecular 	w
+ENDOPEPTIDASE	human	P28066	PSMA5	P28066	22	394	Proteasome subunit alpha type-5 (Macropain zeta chain) (Mult	w
+ENDOPEPTIDASE	human	P28070	PSMB4	P28070	27	288	Proteasome subunit beta type-4 (26 kDa prosomal protein) (Hs	w
+ENDOPEPTIDASE	human	P28072	PSMB6	P28072	22	266	Proteasome subunit beta type-6 (EC 3.4.25.1) (Macropain delt	w
+ENDOPEPTIDASE	human	P28074	PSMB5	P28074	27	342	Proteasome subunit beta type-5 (EC 3.4.25.1) (Macropain epsi	w
+ENDOPEPTIDASE	human	P40306	PSMB10	P40306	15	214	Proteasome subunit beta type-10 (EC 3.4.25.1) (Low molecular	w
+ENDOPEPTIDASE	human	P48147	PREP	P48147	24	165	Prolyl endopeptidase (PE) (EC 3.4.21.26) (Post-proline cleav	w
+ENDOPEPTIDASE	human	P49721	PSMB2	P49721	10	299	Proteasome subunit beta type-2 (Macropain subunit C7-I) (Mul	w
+ENDOPEPTIDASE	human	P52888	THOP1	P52888	29	226	Thimet oligopeptidase (EC 3.4.24.15) (Endopeptidase 24.15) (	w
+ENDOPEPTIDASE	human	P60900	PSMA6	P60900	46	387	Proteasome subunit alpha type-6 (27 kDa prosomal protein) (P	w
+ENDOPEPTIDASE	human	P67812	SEC11A	P67812	19	107	Signal peptidase complex catalytic subunit SEC11A (EC 3.4.21	w
+ENDOPEPTIDASE	human	P78562	PHEX	P78562	7	45	Phosphate-regulating neutral endopeptidase PHEX (EC 3.4.24.-	w
+ENDOPEPTIDASE	human	Q12884	FAP	Q12884	26	166	Prolyl endopeptidase FAP (EC 3.4.21.26) (170 kDa melanoma me	w
+ENDOPEPTIDASE	human	Q14703	MBTPS1	Q14703	10	121	Membrane-bound transcription factor site-1 protease (EC 3.4.	w
+ENDOPEPTIDASE	human	Q16740	CLPP	Q16740	33	574	ATP-dependent Clp protease proteolytic subunit, mitochondria	w
+ENDOPEPTIDASE	human	Q86TL0	ATG4D	Q86TL0	17	62	Cysteine protease ATG4D (EC 3.4.22.-) (AUT-like 4 cysteine e	w
+ENDOPEPTIDASE	human	Q8WYN0	ATG4A	Q8WYN0	25	111	Cysteine protease ATG4A (EC 3.4.22.-) (AUT-like 2 cysteine e	w
+ENDOPEPTIDASE	human	Q96DT6	ATG4C	Q96DT6	15	101	Cysteine protease ATG4C (EC 3.4.22.-) (AUT-like 3 cysteine e	w
+ENDOPEPTIDASE	human	Q99436	PSMB7	Q99436	19	242	Proteasome subunit beta type-7 (EC 3.4.25.1) (Macropain chai	w
+ENDOPEPTIDASE	human	Q99538	LGMN	Q99538	11	108	Legumain (EC 3.4.22.34) (Asparaginyl endopeptidase) (AEP) (P	w
+ENDOPEPTIDASE	human	Q9BYT8	NLN	Q9BYT8	11	80	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
+ENDOPEPTIDASE	human	Q9NPF4	OSGEP	Q9NPF4	32	210	tRNA N6-adenosine threonylcarbamoyltransferase (EC 2.3.1.234	w
+ENDOPEPTIDASE	human	Q9Y4P1	ATG4B	Q9Y4P1	23	189	Cysteine protease ATG4B (EC 3.4.22.-) (AUT-like 1 cysteine e	w
+ENDOPEPTIDASE	zebrafish	B8JJX2	prepl	B8JJX2	0	2	Prolyl endopeptidase	w
+ENDOPEPTIDASE	zebrafish	F1R6K1	phex	F1R6K1	0	6	Phosphate-regulating endopeptidase homolog, X-linked	w
+ENDOPEPTIDASE	zebrafish	Q503E2	prep	Q503E2	0	2	Prolyl endopeptidase	w
+ENDOPEPTIDASE-2	human	Q16819	MEP1A	Q16819	5	107	Meprin A subunit alpha (EC 3.4.24.18) (Endopeptidase-2) (N-b	w
+ENDOPEPTIDASE-2	human	Q16820	MEP1B	Q16820	10	131	Meprin A subunit beta (EC 3.4.24.63) (Endopeptidase-2) (Mepr	w
+ENDOPEPTIDASE-LIKE	human	Q4J6C6	PREPL	Q4J6C6	50	128	Prolyl endopeptidase-like (EC 3.4.21.-) (Prolylendopeptidase	w
+ENDOPHILIN	fly	FBgn0034433	EndoB	Q8SYD9	2	43	Endophilin B, isoform A (RE65748p)	w
+ENDOPHILIN	zebrafish	Q803T6	sh3gl2a	Q803T6	2	89	SH3 domain-containing GRB2-like 2a, endophilin A1	w
+ENDOPHILIN-1	human	Q99962	SH3GL2	Q99962	31	264	Endophilin-A1 (EEN-B1) (Endophilin-1) (SH3 domain protein 2A	w
+ENDOPHILIN-2	human	Q99961	SH3GL1	Q99961	31	268	Endophilin-A2 (EEN fusion partner of MLL) (Endophilin-2) (Ex	w
+ENDOPHILIN-3	human	Q99963	SH3GL3	Q99963	23	242	Endophilin-A3 (EEN-B2) (Endophilin-3) (SH3 domain protein 2C	w
+ENDOPHILIN-3-INTERACTING	human	Q9BQI5	SGIP1	Q9BQI5	27	143	SH3-containing GRB2-like protein 3-interacting protein 1 (En	w
+ENDOPHILIN-A	fly	FBgn0038659	EndoA	Q8T390	8	128	Endophilin-A (SH3 domain-containing GRB2-like protein)	w
+ENDOPHILIN-A	worm	B1V8A0	unc-57	B1V8A0	8	74	Endophilin-A homolog	w
+ENDOPHILIN-A	zebrafish	Q1MT71	sh3gl1a	Q1MT71	2	27	Endophilin-A	w
+ENDOPHILIN-A1	human	Q99962	SH3GL2	Q99962	31	264	Endophilin-A1 (EEN-B1) (Endophilin-1) (SH3 domain protein 2A	w
+ENDOPHILIN-A2	human	Q99961	SH3GL1	Q99961	31	268	Endophilin-A2 (EEN fusion partner of MLL) (Endophilin-2) (Ex	w
+ENDOPHILIN-A2	zebrafish	Q7ZVA3	sh3gl1b	Q7ZVA3	1	27	Endophilin-A2	w
+ENDOPHILIN-A3	human	Q99963	SH3GL3	Q99963	23	242	Endophilin-A3 (EEN-B2) (Endophilin-3) (SH3 domain protein 2C	w
+ENDOPHILIN-A3B	zebrafish	Q6TGT7	sh3gl3b	Q6TGT7	0	24	Endophilin-A3b	w
+ENDOPHILIN-B1	human	Q9Y371	SH3GLB1	Q9Y371	26	218	Endophilin-B1 (Bax-interacting factor 1) (Bif-1) (SH3 domain	w
+ENDOPHILIN-B1	zebrafish	B0V151	sh3glb1b	B0V151	0	14	Endophilin-B1	w
+ENDOPHILIN-B2	human	Q9NR46	SH3GLB2	Q9NR46	22	182	Endophilin-B2 (SH3 domain-containing GRB2-like protein B2)	w
+ENDOPHILIN-B2	zebrafish	A0A8M1N8K5	sh3glb2a	A0A8M1N8K5	1	22	Endophilin-B2	w
+ENDOPHILIN-B2B	zebrafish	A2CEP2	sh3glb2b	A2CEP2	3	16	Endophilin-B2b isoform X4	w
+ENDOPL	human	Q9UBS4	DNAJB11	Q9UBS4	48	440	DnaJ homolog subfamily B member 11 (APOBEC1-binding protein 	w
+ENDOPLASMIC	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
+ENDOPLASMIC	fly	FBgn0031950	Herp	Q9VLW9	1	8	Homocysteine-induced endoplasmic reticulum protein, isoform 	w
+ENDOPLASMIC	fly	FBgn0032398	CG6766	Q9VKC7	29	304	Endoplasmic reticulum lectin 1 (ER lectin)	w
+ENDOPLASMIC	fly	FBgn0033309	Lnpk	Q7K2N0	0	3	Endoplasmic reticulum junction formation protein lunapark	w
+ENDOPLASMIC	fly	FBgn0035165	CG13887	Q9W0M4	4	207	Endoplasmic reticulum transmembrane protein	w
+ENDOPLASMIC	fly	FBgn0036489	CG7011	Q9VUM3	1	16	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	fly	FBgn0037327	PEK	Q9NIV1	303	3493	Eukaryotic translation initiation factor 2-alpha kinase (EC 	w
+ENDOPLASMIC	fly	FBgn0038127	CG8476	Q9VFY1	2	9	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
+ENDOPLASMIC	fly	FBgn0261274	Ero1L	Q9V3A6	7	35	Ero1-like protein (EC 1.8.4.-) (Endoplasmic reticulum oxidor	w
+ENDOPLASMIC	fly	FBgn0263006	SERCA	P22700	4	154	Calcium-transporting ATPase sarcoplasmic/endoplasmic reticul	w
+ENDOPLASMIC	fly	FBgn0286784	TER94	Q7KN62	21	336	Transitional endoplasmic reticulum 94	w
+ENDOPLASMIC	fly	FBgn0287183	l(3)80Fg	Q7PLG1	231	2394	DnaJ homolog subfamily C member 16 (Endoplasmic reticulum DN	w
+ENDOPLASMIC	human	O14983	ATP2A1	O14983	9	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 1 (SERCA1)	w
+ENDOPLASMIC	human	O43731	KDELR3	O43731	10	113	ER lumen protein-retaining receptor 3 (KDEL endoplasmic reti	w
+ENDOPLASMIC	human	O75460	ERN1	O75460	20	216	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
+ENDOPLASMIC	human	O75477	ERLIN1	O75477	16	186	Erlin-1 (Endoplasmic reticulum lipid raft-associated protein	w
+ENDOPLASMIC	human	O94905	ERLIN2	O94905	17	329	Erlin-2 (Endoplasmic reticulum lipid raft-associated protein	w
+ENDOPLASMIC	human	O95479	H6PD	O95479	10	255	GDH/6PGL endoplasmic bifunctional protein [Includes: Hexose-	w
+ENDOPLASMIC	human	O95881	TXNDC12	O95881	29	215	Thioredoxin domain-containing protein 12 (EC 1.8.4.2) (Endop	w
+ENDOPLASMIC	human	P0DN84	STRIT1	P0DN84	27	51	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+ENDOPLASMIC	human	P11021	HSPA5	P11021	135	1351	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
+ENDOPLASMIC	human	P13667	PDIA4	P13667	11	517	Protein disulfide-isomerase A4 (EC 5.3.4.1) (Endoplasmic ret	w
+ENDOPLASMIC	human	P16615	ATP2A2	P16615	4	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 (SERCA2)	w
+ENDOPLASMIC	human	P24390	KDELR1	P24390	8	173	ER lumen protein-retaining receptor 1 (KDEL endoplasmic reti	w
+ENDOPLASMIC	human	P27797	CALR	P27797	94	768	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum res	w
+ENDOPLASMIC	human	P30040	ERP29	P30040	17	155	Endoplasmic reticulum resident protein 29 (ERp29) (Endoplasm	w
+ENDOPLASMIC	human	P30101	PDIA3	P30101	20	445	Protein disulfide-isomerase A3 (EC 5.3.4.1) (58 kDa glucose-	w
+ENDOPLASMIC	human	P33947	KDELR2	P33947	12	183	ER lumen protein-retaining receptor 2 (ERD2-like protein 1) 	w
+ENDOPLASMIC	human	P51811	XK	P51811	9	87	Endoplasmic reticulum membrane adapter protein XK (Kell comp	w
+ENDOPLASMIC	human	P55072	VCP	P55072	54	1338	Transitional endoplasmic reticulum ATPase (TER ATPase) (EC 3	w
+ENDOPLASMIC	human	P78383	SLC35B1	P78383	1	93	Solute carrier family 35 member B1 (ATP/ADP exchanger ER) (A	w
+ENDOPLASMIC	human	Q12767	TMEM94	Q12767	2	37	Transmembrane protein 94 (Endoplasmic reticulum magnesium AT	w
+ENDOPLASMIC	human	Q13217	DNAJC3	Q13217	14	250	DnaJ homolog subfamily C member 3 (Endoplasmic reticulum DNA	w
+ENDOPLASMIC	human	Q14494	NFE2L1	Q14494	33	78	Endoplasmic reticulum membrane sensor NFE2L1 (Locus control 	w
+ENDOPLASMIC	human	Q15011	HERPUD1	Q15011	18	63	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+ENDOPLASMIC	human	Q15041	ARL6IP1	Q15041	11	514	ADP-ribosylation factor-like protein 6-interacting protein 1	w
+ENDOPLASMIC	human	Q15084	PDIA6	Q15084	25	309	Protein disulfide-isomerase A6 (EC 5.3.4.1) (Endoplasmic ret	w
+ENDOPLASMIC	human	Q5T6L9	ERMARD	Q5T6L9	6	205	Endoplasmic reticulum membrane-associated RNA degradation pr	w
+ENDOPLASMIC	human	Q6P179	ERAP2	Q6P179	4	46	Endoplasmic reticulum aminopeptidase 2 (EC 3.4.11.-) (Leukoc	w
+ENDOPLASMIC	human	Q6UW63	POGLUT2	Q6UW63	3	98	Protein O-glucosyltransferase 2 (EC 2.4.1.-) (Endoplasmic re	w
+ENDOPLASMIC	human	Q76MJ5	ERN2	Q76MJ5	8	91	Serine/threonine-protein kinase/endoribonuclease IRE2 (Endop	w
+ENDOPLASMIC	human	Q7Z2K6	ERMP1	Q7Z2K6	9	153	Endoplasmic reticulum metallopeptidase 1 (EC 3.4.-.-) (Felix	w
+ENDOPLASMIC	human	Q7Z7H5	TMED4	Q7Z7H5	13	106	Transmembrane emp24 domain-containing protein 4 (Endoplasmic	w
+ENDOPLASMIC	human	Q86WV6	STING1	Q86WV6	13	216	Stimulator of interferon genes protein (hSTING) (Endoplasmic	w
+ENDOPLASMIC	human	Q86YB8	ERO1B	Q86YB8	11	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
+ENDOPLASMIC	human	Q8IWF2	FOXRED2	Q8IWF2	8	254	FAD-dependent oxidoreductase domain-containing protein 2 (En	w
+ENDOPLASMIC	human	Q8IWX8	CHERP	Q8IWX8	78	334	Calcium homeostasis endoplasmic reticulum protein (ERPROT 21	w
+ENDOPLASMIC	human	Q8IXB1	DNAJC10	Q8IXB1	16	390	Endoplasmic reticulum disulfide reductase DNAJC10 (EC 1.8.4.	w
+ENDOPLASMIC	human	Q8N5K1	CISD2	Q8N5K1	13	332	CDGSH iron-sulfur domain-containing protein 2 (Endoplasmic r	w
+ENDOPLASMIC	human	Q8N6R1	SERP2	Q8N6R1	26	84	Stress-associated endoplasmic reticulum protein 2 (Ribosome-	w
+ENDOPLASMIC	human	Q8N8F6	YIPF7	Q8N8F6	5	35	Protein YIPF7 (Five-pass transmembrane protein localizing in	w
+ENDOPLASMIC	human	Q8NBS9	TXNDC5	Q8NBS9	10	225	Thioredoxin domain-containing protein 5 (EC 1.8.4.-) (EC 5.3	w
+ENDOPLASMIC	human	Q8TB92	HMGCLL1	Q8TB92	3	58	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic (EC 4.1.3.	w
+ENDOPLASMIC	human	Q8WU39	MZB1	Q8WU39	28	176	Marginal zone B- and B1-cell-specific protein (Mesenteric es	w
+ENDOPLASMIC	human	Q8WVX3	ARLN	Q8WVX3	20	123	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+ENDOPLASMIC	human	Q92791	P3H4	Q92791	18	95	Endoplasmic reticulum protein SC65 (Leprecan-like protein 4)	w
+ENDOPLASMIC	human	Q93084	ATP2A3	Q93084	8	574	Sarcoplasmic/endoplasmic reticulum calcium ATPase 3 (SERCA3)	w
+ENDOPLASMIC	human	Q969M3	YIPF5	Q969M3	8	146	Protein YIPF5 (Five-pass transmembrane protein localizing in	w
+ENDOPLASMIC	human	Q969X5	ERGIC1	Q969X5	9	298	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	human	Q96DN0	ERP27	Q96DN0	11	66	Endoplasmic reticulum resident protein 27 (ER protein 27) (E	w
+ENDOPLASMIC	human	Q96DZ1	ERLEC1	Q96DZ1	17	173	Endoplasmic reticulum lectin 1 (ER lectin) (Erlectin) (XTP3-	w
+ENDOPLASMIC	human	Q96HE7	ERO1A	Q96HE7	10	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
+ENDOPLASMIC	human	Q96Q80	DERL3	Q96Q80	12	118	Derlin-3 (Degradation in endoplasmic reticulum protein 3) (D	w
+ENDOPLASMIC	human	Q96RQ1	ERGIC2	Q96RQ1	22	262	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	human	Q9BS26	ERP44	Q9BS26	27	211	Endoplasmic reticulum resident protein 44 (ER protein 44) (E	w
+ENDOPLASMIC	human	Q9BSE4	HERPUD2	Q9BSE4	6	33	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+ENDOPLASMIC	human	Q9BUN8	DERL1	Q9BUN8	19	457	Derlin-1 (Degradation in endoplasmic reticulum protein 1) (D	w
+ENDOPLASMIC	human	Q9BVX2	TMEM106C	Q9BVX2	20	130	Transmembrane protein 106C (Endoplasmic reticulum membrane p	w
+ENDOPLASMIC	human	Q9BY12	SCAPER	Q9BY12	8	60	S phase cyclin A-associated protein in the endoplasmic retic	w
+ENDOPLASMIC	human	Q9C0E8	LNPK	Q9C0E8	38	297	Endoplasmic reticulum junction formation protein lunapark (E	w
+ENDOPLASMIC	human	Q9GZP9	DERL2	Q9GZP9	20	234	Derlin-2 (Degradation in endoplasmic reticulum protein 2) (D	w
+ENDOPLASMIC	human	Q9H8W4	PLEKHF2	Q9H8W4	37	215	Pleckstrin homology domain-containing family F member 2 (PH 	w
+ENDOPLASMIC	human	Q9HD20	ATP13A1	Q9HD20	13	274	Endoplasmic reticulum transmembrane helix translocase (EC 7.	w
+ENDOPLASMIC	human	Q9NPA0	EMC7	Q9NPA0	15	162	Endoplasmic reticulum membrane protein complex subunit 7 (ER	w
+ENDOPLASMIC	human	Q9NZ08	ERAP1	Q9NZ08	19	116	Endoplasmic reticulum aminopeptidase 1 (EC 3.4.11.-) (ARTS-1	w
+ENDOPLASMIC	human	Q9NZJ5	EIF2AK3	Q9NZJ5	37	329	Eukaryotic translation initiation factor 2-alpha kinase 3 (E	w
+ENDOPLASMIC	human	Q9UBS3	DNAJB9	Q9UBS3	49	274	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
+ENDOPLASMIC	human	Q9UKM7	MAN1B1	Q9UKM7	18	151	Endoplasmic reticulum mannosyl-oligosaccharide 1,2-alpha-man	w
+ENDOPLASMIC	human	Q9Y282	ERGIC3	Q9Y282	9	340	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	human	Q9Y2G8	DNAJC16	Q9Y2G8	42	311	DnaJ homolog subfamily C member 16 (Endoplasmic reticulum DN	w
+ENDOPLASMIC	human	Q9Y3M2	CBY1	Q9Y3M2	36	211	Protein chibby homolog 1 (ARPP-binding protein) (Cytosolic l	w
+ENDOPLASMIC	human	Q9Y6X1	SERP1	Q9Y6X1	30	123	Stress-associated endoplasmic reticulum protein 1 (Ribosome-	w
+ENDOPLASMIC	worm	G5EBI0	4D656	G5EBI0	1	15	Endoplasmic reticulum transmembrane protein	w
+ENDOPLASMIC	worm	G5EEW1	ergi-2	G5EEW1	1	3	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	worm	G5EGE8	scpr-1	G5EGE8	0	1	S phase cyclin A-associated protein in the endoplasmic retic	w
+ENDOPLASMIC	worm	O44769	CELE_K04F10.3	O44769	0	8	Endoplasmic reticulum-like protein	w
+ENDOPLASMIC	worm	P20163	hsp-4	P20163	30	127	Endoplasmic reticulum chaperone BiP homolog	w
+ENDOPLASMIC	worm	P54811	cdc-48.1	P54811	12	81	Transitional endoplasmic reticulum ATPase homolog 1	w
+ENDOPLASMIC	worm	P54812	cdc-48.2	P54812	14	125	Transitional endoplasmic reticulum ATPase homolog 2	w
+ENDOPLASMIC	worm	Q17688	erp-44.2	Q17688	1	9	Endoplasmic reticulum resident protein 44.2	w
+ENDOPLASMIC	worm	Q19192	pek-1	Q19192	1	33	Eukaryotic translation initiation factor 2-alpha kinase pek-	w
+ENDOPLASMIC	worm	Q7YTU4	ero-1	Q7YTU4	5	17	Endoplasmic reticulum oxidoreductin-1	w
+ENDOPLASMIC	worm	Q8MXH3	serp-1.2	Q8MXH3	0	1	Stress-associated endoplasmic reticulum protein	w
+ENDOPLASMIC	worm	Q93838	serp-1.1	Q93838	0	4	Stress-associated endoplasmic reticulum protein 2	w
+ENDOPLASMIC	worm	Q93878	ergi-3	Q93878	1	4	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	worm	Q95XJ9	ergi-1	Q95XJ9	0	2	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	worm	Q9NF22	CELE_Y105E8A.2	Q9NF22	2	41	Endoplasmic reticulum lectin 1	w
+ENDOPLASMIC	yeast	P16474	KAR2	P16474	30	251	Endoplasmic reticulum chaperone BiP	w
+ENDOPLASMIC	yeast	P32361	IRE1	P32361	3	38	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
+ENDOPLASMIC	yeast	P32906	MNS1	P32906	0	13	Endoplasmic reticulum mannosyl-oligosaccharide 1,2-alpha-man	w
+ENDOPLASMIC	yeast	P35723	YET1	P35723	2	29	Endoplasmic reticulum transmembrane protein 1	w
+ENDOPLASMIC	yeast	P38307	DER1	P38307	1	30	Degradation in the endoplasmic reticulum protein 1	w
+ENDOPLASMIC	yeast	P38878	LNP1	P38878	0	22	Endoplasmic reticulum junction formation protein lunapark	w
+ENDOPLASMIC	yeast	P39986	SPF1	P39986	0	33	Endoplasmic reticulum transmembrane helix translocase	w
+ENDOPLASMIC	yeast	P40085	EMP65	P40085	1	6	Endoplasmic reticulum membrane protein 65	w
+ENDOPLASMIC	yeast	P47090	YJR015W	P47090	0	10	Uncharacterized endoplasmic reticulum membrane protein YJR01	w
+ENDOPLASMIC	yeast	P53723	YNR021W	P53723	7	93	UPF0674 endoplasmic reticulum membrane protein YNR021W	w
+ENDOPLASMIC	yeast	P53956	YNL046W	P53956	0	2	Uncharacterized endoplasmic reticulum membrane protein YNL04	w
+ENDOPLASMIC	yeast	P54837	ERV25	P54837	10	98	Endoplasmic reticulum vesicle protein 25	w
+ENDOPLASMIC	yeast	Q03103	ERO1	Q03103	4	19	Endoplasmic oxidoreductin-1	w
+ENDOPLASMIC	yeast	Q04210	YET2	Q04210	0	4	Endoplasmic reticulum transmembrane protein 2	w
+ENDOPLASMIC	yeast	Q07451	YET3	Q07451	2	41	Endoplasmic reticulum transmembrane protein 3	w
+ENDOPLASMIC	yeast	Q12025	EMC10	Q12025	1	33	Endoplasmic reticulum membrane protein complex subunit 10	w
+ENDOPLASMIC	yeast	Q12144	PER33	Q12144	0	27	Pore and endoplasmic reticulum protein of 33 kDa	w
+ENDOPLASMIC	yeast	Q12205	MNL2	Q12205	1	5	Putative endoplasmic reticulum mannosidase MNL2	w
+ENDOPLASMIC	yeast	Q3E842	YMR122W-A	Q3E842	0	7	Uncharacterized endoplasmic reticulum membrane protein YMR12	w
+ENDOPLASMIC	zebrafish	A0A0R4INE3	p3h4	A0A0R4INE3	3	4	Endoplasmic reticulum protein SC65	w
+ENDOPLASMIC	zebrafish	A0A8M1PAQ9	cherp	A0A8M1PAQ9	10	41	Calcium homeostasis endoplasmic reticulum protein	w
+ENDOPLASMIC	zebrafish	B1H1L9	scaper	B1H1L9	1	4	S phase cyclin A-associated protein in the endoplasmic retic	w
+ENDOPLASMIC	zebrafish	B3DGS0	nfe2l1a	B3DGS0	18	34	Endoplasmic reticulum membrane sensor NFE2L1	w
+ENDOPLASMIC	zebrafish	E7FGT2	h6pd	E7FGT2	1	25	GDH/6PGL endoplasmic bifunctional protein	w
+ENDOPLASMIC	zebrafish	F1R1X4	atp13a1	F1R1X4	0	13	Endoplasmic reticulum transmembrane helix translocase	w
+ENDOPLASMIC	zebrafish	L0ANA2	nfe2l1b	L0ANA2	20	34	Endoplasmic reticulum membrane sensor NFE2L1	w
+ENDOPLASMIC	zebrafish	Q29RA2	zgc:136908	Q29RA2	16	190	Transitional endoplasmic reticulum ATPase	w
+ENDOPLASMIC	zebrafish	Q4V8Y6	ergic1	Q4V8Y6	0	6	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	zebrafish	Q5TYV0	emc7	Q5TYV0	1	11	Endoplasmic reticulum membrane protein complex subunit 7	w
+ENDOPLASMIC	zebrafish	Q6DGW5	wu:fc96h11	Q6DGW5	0	1	Stress-associated endoplasmic reticulum protein	w
+ENDOPLASMIC	zebrafish	Q6NYI0	herpud2	Q6NYI0	0	5	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
+ENDOPLASMIC	zebrafish	Q6P3G9	erp44	Q6P3G9	6	39	Endoplasmic reticulum protein 44	w
+ENDOPLASMIC	zebrafish	Q7T2D4	ergic2	Q7T2D4	0	10	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	zebrafish	Q7ZU99	vcp	Q7ZU99	18	218	Transitional endoplasmic reticulum ATPase	w
+ENDOPLASMIC	zebrafish	Q803I2	ergic3	Q803I2	1	11	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIC	zebrafish	U3JAC7	tmem94	U3JAC7	0	2	Endoplasmic reticulum magnesium-transporting P-type ATPase i	w
+ENDOPLASMIC	zebrafish	U3JB19	si:ch211-225b10.3	U3JB19	1	10	Endoplasmic reticulum-Golgi intermediate compartment protein	w
+ENDOPLASMIN	human	P14625	HSP90B1	P14625	46	645	Endoplasmin (EC 3.6.4.-) (94 kDa glucose-regulated protein) 	w
+ENDOPLASMIN	worm	Q22235	enpl-1	Q22235	5	165	Endoplasmin homolog	w
+ENDOPLASMIN	zebrafish	Q7T3L3	hsp90b1	Q7T3L3	15	319	Endoplasmin	w
+ENDOPLASMIN-LIKE	human	Q58FF3	HSP90B2P	Q58FF3	5	15	Putative endoplasmin-like protein (Putative heat shock prote	w
+ENDOPOLYPHOSPHAT	human	O95989	NUDT3	O95989	9	136	Diphosphoinositol polyphosphate phosphohydrolase 1 (DIPP-1) 	w
+ENDOPOLYPHOSPHATASE	yeast	P40152	PPN2	P40152	0	26	Zinc-dependent endopolyphosphatase	w
+ENDOPOLYPHOSPHATASE	yeast	Q04119	PPN1	Q04119	1	25	Endopolyphosphatase	w
+ENDOPROTEASE	fly	FBgn0029121	Sras	Q9U1H8	3	26	CAAX prenyl protease 2 (EC 3.4.-.-) (Farnesylated proteins-c	w
+ENDOPROTEASE	fly	FBgn0038233	HtrA2	Q9VFJ3	0	20	Serine protease HTRA2, mitochondrial (EC 3.4.21.108) (High t	w
+ENDOPROTEASE	human	O43464	HTRA2	O43464	15	314	Serine protease HTRA2, mitochondrial (EC 3.4.21.108) (High t	w
+ENDOPROTEASE	human	O75844	ZMPSTE24	O75844	2	172	CAAX prenyl protease 1 homolog (EC 3.4.24.84) (Farnesylated 	w
+ENDOPROTEASE	human	P16519	PCSK2	P16519	23	203	Neuroendocrine convertase 2 (NEC 2) (EC 3.4.21.94) (KEX2-lik	w
+ENDOPROTEASE	human	Q9Y256	RCE1	Q9Y256	13	95	CAAX prenyl protease 2 (EC 3.4.26.1) (Farnesylated proteins-	w
+ENDOPROTEASE	worm	P51559	bli-4	P51559	2	37	Endoprotease bli-4 (EC 3.4.21.-) (Blisterase) (Blistered cut	w
+ENDOPROTEASE	worm	P91863	aex-5	P91863	0	1	Endoprotease aex-5	w
+ENDOREGULIN	human	P0DI80	ERLN	P0DI80	10	35	Endoregulin (ELN) (Small integral membrane protein 6)	w
+ENDORIBONUCLEASE	fly	FBgn0030251	Arlr	Q9VZ49	57	250	Endoribonuclease CG2145 (EC 4.6.1.-) (Poly(U)-specific endor	w
+ENDORIBONUCLEASE	fly	FBgn0031766	CG9117	Q9VMI8	0	11	Metallo-beta-lactamase domain-containing protein 1 (Endoribo	w
+ENDORIBONUCLEASE	fly	FBgn0034246	Dcr-2	A1ZAW0	1	102	Endoribonuclease Dcr-2 (Protein Dicer-2) (EC 3.1.26.3)	w
+ENDORIBONUCLEASE	fly	FBgn0038381	EndoU	Q9VF14	2	6	Endoribonuclease (EC 4.6.1.-)	w
+ENDORIBONUCLEASE	fly	FBgn0039016	Dcr-1	Q9VCU9	2	16	Endoribonuclease Dcr-1 (Protein dicer-1) (EC 3.1.26.3)	w
+ENDORIBONUCLEASE	human	A4D2B0	MBLAC1	A4D2B0	3	39	Metallo-beta-lactamase domain-containing protein 1 (EC 3.1.2	w
+ENDORIBONUCLEASE	human	O75460	ERN1	O75460	20	216	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
+ENDORIBONUCLEASE	human	P0C7P3	SLFN14	P0C7P3	6	28	Protein SLFN14 [Cleaved into: C-terminally truncated SLFN14 	w
+ENDORIBONUCLEASE	human	P21128	ENDOU	P21128	5	38	Uridylate-specific endoribonuclease (EC 3.1.-.-) (EC 4.6.1.-	w
+ENDORIBONUCLEASE	human	P58557	YBEY	P58557	36	369	Endoribonuclease YbeY (EC 3.1.-.-)	w
+ENDORIBONUCLEASE	human	Q53H82	LACTB2	Q53H82	10	128	Endoribonuclease LACTB2 (EC 3.1.27.-) (Beta-lactamase-like p	w
+ENDORIBONUCLEASE	human	Q5D1E8	ZC3H12A	Q5D1E8	13	88	Endoribonuclease ZC3H12A (EC 3.1.-.-) (Monocyte chemotactic 	w
+ENDORIBONUCLEASE	human	Q76MJ5	ERN2	Q76MJ5	8	91	Serine/threonine-protein kinase/endoribonuclease IRE2 (Endop	w
+ENDORIBONUCLEASE	human	Q8N8Q3	ENDOV	Q8N8Q3	2	48	Endonuclease V (hEndoV) (EC 3.1.26.-) (Inosine-specific endo	w
+ENDORIBONUCLEASE	human	Q9UPY3	DICER1	Q9UPY3	9	224	Endoribonuclease Dicer (EC 3.1.26.3) (Helicase with RNase mo	w
+ENDORIBONUCLEASE	human	Q9Y4W2	LAS1L	Q9Y4W2	27	345	Ribosomal biogenesis protein LAS1L (Endoribonuclease LAS1L) 	w
+ENDORIBONUCLEASE	worm	Q09499	ire-1	Q09499	1	28	Serine/threonine-protein kinase/endoribonuclease ire-1 (Inos	w
+ENDORIBONUCLEASE	worm	Q21109	endu-1	Q21109	0	1	Endoribonuclease endu-1	w
+ENDORIBONUCLEASE	worm	Q95YE2	rege-1	Q95YE2	0	5	Endoribonuclease rege-1	w
+ENDORIBONUCLEASE	worm	Q9GYM9	endu-2	Q9GYM9	0	5	Endoribonuclease	w
+ENDORIBONUCLEASE	yeast	P32361	IRE1	P32361	3	38	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
+ENDORIBONUCLEASE	yeast	Q06224	YSH1	Q06224	4	52	Endoribonuclease YSH1	w
+ENDORIBONUCLEASE	zebrafish	A0A2R8QTM9	ybey	A0A2R8QTM9	4	102	Endoribonuclease YbeY-like isoform X1	w
+ENDORIBONUCLEASE	zebrafish	Q6NWH8	ybey	Q6NWH8	3	102	Endoribonuclease YbeY isoform 1	w
+ENDOS	fly	FBgn0061515	endos	Q9VUB8	3	11	Endosulfine, isoform A (Endosulfine, isoform B) (Endosulfine	
+ENDOSIALIN	human	Q9HCU0	CD248	Q9HCU0	16	76	Endosialin (Tumor endothelial marker 1) (CD antigen CD248)	w
+ENDOSIALIN	zebrafish	A0A0R4IKQ6	cd248a	A0A0R4IKQ6	1	9	CD248 molecule, endosialin a	w
+ENDOSIALIN	zebrafish	E9QBZ7	cd248b	E9QBZ7	1	9	Endosialin	w
+ENDOSOMAL	fly	FBgn0026090	Lamtor5	O96824	12	73	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
+ENDOSOMAL	fly	FBgn0032642	Lamtor3	Q9VJD2	7	53	Ragulator complex protein LAMTOR3 homolog (Late endosomal/ly	w
+ENDOSOMAL	fly	FBgn0034350	Lamtor2	Q9V8I2	6	48	Ragulator complex protein LAMTOR2 homolog (Late endosomal/ly	w
+ENDOSOMAL	fly	FBgn0035236	Tmep	A1A714	0	28	IP17403p (Transmembrane endosomal protein, isoform C) (Trans	w
+ENDOSOMAL	fly	FBgn0035469	Lamtor4	M9PBM4	14	112	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
+ENDOSOMAL	fly	FBgn0036932	Lamtor1	Q9VW73	18	129	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	w
+ENDOSOMAL	fly	FBgn0037622	CG8202	Q9VHM2	4	8	VPS35 endosomal protein sorting factor-like	w
+ENDOSOMAL	fly	FBgn0038427	ema	Q9VEV4	3	10	Protein CLEC16A homolog (Endosomal maturation defective prot	w
+ENDOSOMAL	human	E7EWW0	VPS35L	E7EWW0	4	29	VPS35 endosomal protein-sorting factor-like	w
+ENDOSOMAL	human	O43504	LAMTOR5	O43504	25	224	Ragulator complex protein LAMTOR5 (Hepatitis B virus X-inter	w
+ENDOSOMAL	human	O60320	ENTREP2	O60320	3	37	Protein ENTREP2 (Endosomal transmembrane epsin interactor 2)	w
+ENDOSOMAL	human	O95825	CRYZL1	O95825	5	78	Ferry endosomal RAB5 effector complex subunit 4 (Fy-4) (Crys	w
+ENDOSOMAL	human	P42857	NSG1	P42857	41	154	Neuronal vesicle trafficking-associated protein 1 (Neuron-en	w
+ENDOSOMAL	human	P81408	ENTREP3	P81408	20	141	Protein ENTREP3 (Endosomal transmembrane epsin interactor 3)	w
+ENDOSOMAL	human	Q0VGL1	LAMTOR4	Q0VGL1	22	116	Ragulator complex protein LAMTOR4 (Late endosomal/lysosomal 	w
+ENDOSOMAL	human	Q15884	ENTREP1	Q15884	25	117	Endosomal transmembrane epsin interactor 1 (Endosomal transm	w
+ENDOSOMAL	human	Q6IAA8	LAMTOR1	Q6IAA8	53	698	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	w
+ENDOSOMAL	human	Q6UXC1	MAMDC4	Q6UXC1	4	35	Apical endosomal glycoprotein (MAM domain-containing protein	w
+ENDOSOMAL	human	Q6ZMI0	PPP1R21	Q6ZMI0	29	173	Protein phosphatase 1 regulatory subunit 21 (Coiled-coil dom	w
+ENDOSOMAL	human	Q7Z3J2	VPS35L	Q7Z3J2	6	80	VPS35 endosomal protein-sorting factor-like (Esophageal canc	w
+ENDOSOMAL	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+ENDOSOMAL	human	Q8TAF3	WDR48	Q8TAF3	60	308	WD repeat-containing protein 48 (USP1-associated factor 1) (	w
+ENDOSOMAL	human	Q8TEA7	TBCK	Q8TEA7	12	111	TBC domain-containing protein kinase-like protein (FERRY end	w
+ENDOSOMAL	human	Q9BSA9	TMEM175	Q9BSA9	5	45	Endosomal/lysosomal proton channel TMEM175 (Potassium channe	w
+ENDOSOMAL	human	Q9NQ89	FERRY3	Q9NQ89	2	46	Ferry endosomal RAB5 effector complex subunit 3 (Fy-3)	w
+ENDOSOMAL	human	Q9UHA4	LAMTOR3	Q9UHA4	17	235	Ragulator complex protein LAMTOR3 (Late endosomal/lysosomal 	w
+ENDOSOMAL	human	Q9Y2Q5	LAMTOR2	Q9Y2Q5	24	232	Ragulator complex protein LAMTOR2 (Endosomal adaptor protein	w
+ENDOSOMAL	worm	O17268	lmtr-5	O17268	3	41	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
+ENDOSOMAL	worm	Q19833	CELE_F26G1.1	Q19833	4	8	VPS35 endosomal protein sorting factor-like	w
+ENDOSOMAL	worm	Q8WQG5	lmtr-3	Q8WQG5	4	48	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
+ENDOSOMAL	worm	Q8WTM0	CELE_Y45G5AL.1	Q8WTM0	0	2	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
+ENDOSOMAL	yeast	P32803	EMP24	P32803	11	68	Endosomal protein P24B	w
+ENDOSOMAL	yeast	P38815	YPT35	P38815	0	16	Endosomal/vacuolar adapter protein YPT35	w
+ENDOSOMAL	yeast	Q04121	NHX1	Q04121	0	19	Endosomal/prevacuolar sodium/hydrogen exchanger	w
+ENDOSOMAL	zebrafish	A4VCH4	vps35l	A4VCH4	4	11	VPS35 endosomal protein-sorting factor-like	w
+ENDOSOME	human	A8MWY0	ELAPOR2	A8MWY0	8	62	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+ENDOSOME	human	Q15075	EEA1	Q15075	59	410	Early endosome antigen 1 (Endosome-associated protein p162) 	w
+ENDOSOME	human	Q6UXG2	ELAPOR1	Q6UXG2	4	23	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+ENDOSOME	human	Q8IVY1	C1orf210	Q8IVY1	16	89	Type III endosome membrane protein TEMP (TEMP)	w
+ENDOSOME	human	Q99732	LITAF	Q99732	48	429	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+ENDOSOME	yeast	P53246	ENV11	P53246	0	13	Late endosome and vacuole interface protein 11	w
+ENDOSOME	yeast	Q12003	ENV7	Q12003	0	19	Serine/threonine-protein kinase ENV7 (EC 2.7.11.1) (Late end	w
+ENDOSOME	zebrafish	A0A2R8Q613	elapor1	A0A2R8Q613	0	7	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+ENDOSOME	zebrafish	E7F6F8	si:ch73-95l15.5	E7F6F8	1	25	Early endosome antigen 1	w
+ENDOSOME	zebrafish	F1QS51	eea1	F1QS51	3	42	Early endosome antigen 1	w
+ENDOSOME-ASSOCIATED	human	O95630	STAMBP	O95630	34	195	STAM-binding protein (EC 3.4.19.-) (Associated molecule with	w
+ENDOSOME-ASSOCIATED	human	Q15075	EEA1	Q15075	59	410	Early endosome antigen 1 (Endosome-associated protein p162) 	w
+ENDOSOME-ASSOCIATED	human	Q53HC9	EIPR1	Q53HC9	16	115	EARP and GARP complex-interacting protein 1 (Endosome-associ	w
+ENDOSOME-ASSOCIATED	human	Q7Z3T8	ZFYVE16	Q7Z3T8	28	150	Zinc finger FYVE domain-containing protein 16 (Endofin) (End	w
+ENDOSOME-ASSOCIATED-TRAFFICKING	human	Q96C92	ENTR1	Q96C92	68	215	Endosome-associated-trafficking regulator 1 (Antigen NY-CO-3	w
+ENDOSOME-ASSOCIATED-TRAFFICKING	zebrafish	A2CE83	entr1	A2CE83	0	1	Endosome-associated-trafficking regulator 1	w
+ENDOSOME-LOCALIZED	yeast	Q06104	GLD1	Q06104	1	9	Golgi/endosome-localized DSC protein 1	w
+ENDOSOMES	human	Q8IWB7	WDFY1	Q8IWB7	8	135	WD repeat and FYVE domain-containing protein 1 (FYVE domain-	w
+ENDOSPANIN-1	human	O15243	LEPROT	O15243	6	68	Leptin receptor gene-related protein (Endospanin-1) (Leptin 	w
+ENDOSPANIN-2	human	O95214	LEPROTL1	O95214	8	117	Leptin receptor overlapping transcript-like 1 (Endospanin-2)	w
+ENDOSTATIN	human	P39059	COL15A1	P39059	9	59	Collagen alpha-1(XV) chain [Cleaved into: Restin (Endostatin	w
+ENDOSTATIN	human	P39060	COL18A1	P39060	22	174	Collagen alpha-1(XVIII) chain [Cleaved into: Endostatin; Non	w
+ENDOSTATIN-XV	human	P39059	COL15A1	P39059	9	59	Collagen alpha-1(XV) chain [Cleaved into: Restin (Endostatin	w
+ENDOSULFINE	fly	FBgn0061515	endos	Q9VUB8	3	11	Endosulfine, isoform A (Endosulfine, isoform B) (Endosulfine	w
+ENDOTHELIAL	human	O14786	NRP1	O14786	78	621	Neuropilin-1 (Vascular endothelial cell growth factor 165 re	w
+ENDOTHELIAL	human	O43854	EDIL3	O43854	24	191	EGF-like repeat and discoidin I-like domain-containing prote	w
+ENDOTHELIAL	human	O43915	VEGFD	O43915	30	212	Vascular endothelial growth factor D (VEGF-D) (c-Fos-induced	w
+ENDOTHELIAL	human	O60462	NRP2	O60462	40	254	Neuropilin-2 (Vascular endothelial cell growth factor 165 re	w
+ENDOTHELIAL	human	O60869	EDF1	O60869	39	663	Endothelial differentiation-related factor 1 (EDF-1) (Multip	w
+ENDOTHELIAL	human	O75628	REM1	O75628	16	176	GTP-binding protein REM 1 (GTPase-regulating endothelial cel	w
+ENDOTHELIAL	human	O95136	S1PR2	O95136	27	227	Sphingosine 1-phosphate receptor 2 (S1P receptor 2) (S1P2) (	w
+ENDOTHELIAL	human	O95150	TNFSF15	O95150	57	299	Tumor necrosis factor ligand superfamily member 15 (TNF liga	w
+ENDOTHELIAL	human	O95760	IL33	O95760	44	297	Interleukin-33 (IL-33) (Interleukin-1 family member 11) (IL-	w
+ENDOTHELIAL	human	O95977	S1PR4	O95977	18	269	Sphingosine 1-phosphate receptor 4 (S1P receptor 4) (S1P4) (	w
+ENDOTHELIAL	human	P02776	PF4	P02776	113	792	Platelet factor 4 (PF-4) (C-X-C motif chemokine 4) (Iroplact	w
+ENDOTHELIAL	human	P05121	SERPINE1	P05121	16	288	Plasminogen activator inhibitor 1 (PAI) (PAI-1) (Endothelial	w
+ENDOTHELIAL	human	P05230	FGF1	P05230	17	206	Fibroblast growth factor 1 (FGF-1) (Acidic fibroblast growth	w
+ENDOTHELIAL	human	P15692	VEGFA	P15692	14	61	Vascular endothelial growth factor A, long form (L-VEGF) (Va	w
+ENDOTHELIAL	human	P16284	PECAM1	P16284	73	490	Platelet endothelial cell adhesion molecule (PECAM-1) (EndoC	w
+ENDOTHELIAL	human	P16581	SELE	P16581	13	190	E-selectin (CD62 antigen-like family member E) (Endothelial 	w
+ENDOTHELIAL	human	P17948	FLT1	P17948	117	1516	Vascular endothelial growth factor receptor 1 (VEGFR-1) (EC 	w
+ENDOTHELIAL	human	P19971	TYMP	P19971	16	283	Thymidine phosphorylase (TP) (EC 2.4.2.4) (Gliostatin) (Plat	w
+ENDOTHELIAL	human	P21333	FLNA	P21333	35	808	Filamin-A (FLN-A) (Actin-binding protein 280) (ABP-280) (Alp	w
+ENDOTHELIAL	human	P21453	S1PR1	P21453	39	427	Sphingosine 1-phosphate receptor 1 (S1P receptor 1) (S1P1) (	w
+ENDOTHELIAL	human	P23467	PTPRB	P23467	33	240	Receptor-type tyrosine-protein phosphatase beta (Protein-tyr	w
+ENDOTHELIAL	human	P23769	GATA2	P23769	88	611	Endothelial transcription factor GATA-2 (GATA-binding protei	w
+ENDOTHELIAL	human	P25067	COL8A2	P25067	6	82	Collagen alpha-2(VIII) chain (Endothelial collagen)	w
+ENDOTHELIAL	human	P27658	COL8A1	P27658	12	178	Collagen alpha-1(VIII) chain (Endothelial collagen) [Cleaved	w
+ENDOTHELIAL	human	P29474	NOS3	P29474	9	237	Nitric oxide synthase 3 (EC 1.14.13.39) (Constitutive NOS) (	w
+ENDOTHELIAL	human	P33151	CDH5	P33151	56	414	Cadherin-5 (7B4 antigen) (Vascular endothelial cadherin) (VE	w
+ENDOTHELIAL	human	P35916	FLT4	P35916	214	1589	Vascular endothelial growth factor receptor 3 (VEGFR-3) (EC 	w
+ENDOTHELIAL	human	P35968	KDR	P35968	209	1672	Vascular endothelial growth factor receptor 2 (VEGFR-2) (EC 	w
+ENDOTHELIAL	human	P49765	VEGFB	P49765	22	139	Vascular endothelial growth factor B (VEGF-B) (VEGF-related 	w
+ENDOTHELIAL	human	P49767	VEGFC	P49767	40	337	Vascular endothelial growth factor C (VEGF-C) (Flt4 ligand) 	w
+ENDOTHELIAL	human	P51813	BMX	P51813	105	1377	Cytoplasmic tyrosine-protein kinase BMX (EC 2.7.10.2) (Bone 	w
+ENDOTHELIAL	human	P57087	JAM2	P57087	44	196	Junctional adhesion molecule B (JAM-B) (Junctional adhesion 	w
+ENDOTHELIAL	human	P58294	PROK1	P58294	20	163	Prokineticin-1 (Endocrine-gland-derived vascular endothelial	w
+ENDOTHELIAL	human	Q02763	TEK	Q02763	100	1867	Angiopoietin-1 receptor (EC 2.7.10.1) (Endothelial tyrosine 	w
+ENDOTHELIAL	human	Q12904	AIMP1	Q12904	26	255	Aminoacyl tRNA synthase complex-interacting multifunctional 	w
+ENDOTHELIAL	human	Q13201	MMRN1	Q13201	16	167	Multimerin-1 (EMILIN-4) (Elastin microfibril interface locat	w
+ENDOTHELIAL	human	Q14119	VEZF1	Q14119	21	144	Vascular endothelial zinc finger 1 (Putative transcription f	w
+ENDOTHELIAL	human	Q14162	SCARF1	Q14162	14	80	Scavenger receptor class F member 1 (Acetyl LDL receptor) (S	w
+ENDOTHELIAL	human	Q14515	SPARCL1	Q14515	12	76	SPARC-like protein 1 (High endothelial venule protein) (Hevi	w
+ENDOTHELIAL	human	Q19T08	ECSCR	Q19T08	40	137	Endothelial cell-specific chemotaxis regulator (Apoptosis re	w
+ENDOTHELIAL	human	Q5T013	HYI	Q5T013	9	260	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (Endothelia	w
+ENDOTHELIAL	human	Q5T4B2	CERCAM	Q5T4B2	9	162	Inactive glycosyltransferase 25 family member 3 (Cerebral en	w
+ENDOTHELIAL	human	Q5VY43	PEAR1	Q5VY43	8	51	Platelet endothelial aggregation receptor 1 (hPEAR1) (Multip	w
+ENDOTHELIAL	human	Q68CZ2	TNS3	Q68CZ2	62	189	Tensin-3 (EC 3.1.3.-) (Tensin-like SH2 domain-containing pro	w
+ENDOTHELIAL	human	Q6UX71	PLXDC2	Q6UX71	30	108	Plexin domain-containing protein 2 (Tumor endothelial marker	w
+ENDOTHELIAL	human	Q6UXB4	CLEC4G	Q6UXB4	16	114	C-type lectin domain family 4 member G (Liver and lymph node	w
+ENDOTHELIAL	human	Q8IUK5	PLXDC1	Q8IUK5	11	31	Plexin domain-containing protein 1 (Tumor endothelial marker	w
+ENDOTHELIAL	human	Q8N0Y2	ZNF444	Q8N0Y2	82	460	Zinc finger protein 444 (Endothelial zinc finger protein 2) 	w
+ENDOTHELIAL	human	Q8N8U9	BMPER	Q8N8U9	9	115	BMP-binding endothelial regulator protein (Bone morphogeneti	w
+ENDOTHELIAL	human	Q8NCG5	CHST4	Q8NCG5	7	60	Carbohydrate sulfotransferase 4 (EC 2.8.2.-) (Galactose/N-ac	w
+ENDOTHELIAL	human	Q8WWA0	ITLN1	Q8WWA0	11	173	Intelectin-1 (ITLN-1) (Endothelial lectin HL-1) (Galactofura	w
+ENDOTHELIAL	human	Q8WWU7	ITLN2	Q8WWU7	4	70	Intelectin-2 (Endothelial lectin HL-2)	w
+ENDOTHELIAL	human	Q96AP7	ESAM	Q96AP7	44	267	Endothelial cell-selective adhesion molecule	w
+ENDOTHELIAL	human	Q96D21	RASD2	Q96D21	20	138	GTP-binding protein Rhes (Ras homolog enriched in striatum) 	w
+ENDOTHELIAL	human	Q96GP6	SCARF2	Q96GP6	7	30	Scavenger receptor class F member 2 (SRECRP-1) (Scavenger re	w
+ENDOTHELIAL	human	Q96PD2	DCBLD2	Q96PD2	22	101	Discoidin, CUB and LCCL domain-containing protein 2 (CUB, LC	w
+ENDOTHELIAL	human	Q96PE1	ADGRA2	Q96PE1	16	84	Adhesion G protein-coupled receptor A2 (G protein-coupled re	w
+ENDOTHELIAL	human	Q96PE2	ARHGEF17	Q96PE2	26	157	Rho guanine nucleotide exchange factor 17 (164 kDa Rho-speci	w
+ENDOTHELIAL	human	Q99500	S1PR3	Q99500	14	126	Sphingosine 1-phosphate receptor 3 (S1P receptor 3) (S1P3) (	w
+ENDOTHELIAL	human	Q99527	GPER1	Q99527	13	171	G protein-coupled estrogen receptor 1 (Chemoattractant recep	w
+ENDOTHELIAL	human	Q99814	EPAS1	Q99814	66	335	Endothelial PAS domain-containing protein 1 (EPAS-1) (Basic-	w
+ENDOTHELIAL	human	Q99944	EGFL8	Q99944	27	115	Epidermal growth factor-like protein 8 (EGF-like protein 8) 	w
+ENDOTHELIAL	human	Q9H228	S1PR5	Q9H228	8	95	Sphingosine 1-phosphate receptor 5 (S1P receptor 5) (S1P5) (	w
+ENDOTHELIAL	human	Q9H6X2	ANTXR1	Q9H6X2	28	276	Anthrax toxin receptor 1 (Tumor endothelial marker 8)	w
+ENDOTHELIAL	human	Q9HCU0	CD248	Q9HCU0	16	76	Endosialin (Tumor endothelial marker 1) (CD antigen CD248)	w
+ENDOTHELIAL	human	Q9NPG4	PCDH12	Q9NPG4	14	59	Protocadherin-12 (Vascular cadherin-2) (Vascular endothelial	w
+ENDOTHELIAL	human	Q9NQ30	ESM1	Q9NQ30	39	254	Endothelial cell-specific molecule 1 (ESM-1)	w
+ENDOTHELIAL	human	Q9NQZ8	ZNF71	Q9NQZ8	2	105	Endothelial zinc finger protein induced by tumor necrosis fa	w
+ENDOTHELIAL	human	Q9UBS3	DNAJB9	Q9UBS3	49	274	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
+ENDOTHELIAL	human	Q9UNN8	PROCR	Q9UNN8	47	318	Endothelial protein C receptor (Activated protein C receptor	w
+ENDOTHELIAL	human	Q9Y5X9	LIPG	Q9Y5X9	15	132	Endothelial lipase (EC 3.1.1.3) (Endothelial cell-derived li	w
+ENDOTHELIAL	human	Q9Y5Y7	LYVE1	Q9Y5Y7	45	278	Lymphatic vessel endothelial hyaluronic acid receptor 1 (LYV	w
+ENDOTHELIAL	worm	Q21038	ver-3	Q21038	6	61	Tyrosine-protein kinase receptor ver-3 (EC 2.7.10.1) (Vascul	w
+ENDOTHELIAL	zebrafish	A0A2R8QLT6	lyve1b	A0A2R8QLT6	0	4	Lymphatic vessel endothelial hyaluronic receptor 1b	w
+ENDOTHELIAL	zebrafish	A0A8M1NGH6	esama	A0A8M1NGH6	3	15	Endothelial cell adhesion molecule a precursor	w
+ENDOTHELIAL	zebrafish	A0A8M1P9F8	vegfab	A0A8M1P9F8	10	45	Vascular endothelial growth factor Ab isoform 1 precursor	w
+ENDOTHELIAL	zebrafish	A0A8M9NZX2	si:dkeyp-97a10.2	A0A8M9NZX2	37	355	Vascular endothelial growth factor receptor 1-like	w
+ENDOTHELIAL	zebrafish	B3DJD1	epas1b	B3DJD1	26	58	Endothelial PAS domain protein 1b	w
+ENDOTHELIAL	zebrafish	E7EZR4	vegfba	E7EZR4	8	29	Vascular endothelial growth factor B	w
+ENDOTHELIAL	zebrafish	E7F0W6	ecscr	E7F0W6	10	111	Endothelial cell surface-expressed chemotaxis and apoptosis 	w
+ENDOTHELIAL	zebrafish	E7F8N2	pear1	E7F8N2	1	16	Platelet endothelial aggregation receptor 1	w
+ENDOTHELIAL	zebrafish	E7FAJ1	epas1a	E7FAJ1	21	58	Endothelial PAS domain protein 1a	w
+ENDOTHELIAL	zebrafish	E7FDC8	esamb	E7FDC8	1	1	Endothelial cell adhesion molecule b	w
+ENDOTHELIAL	zebrafish	F1QD30	gata2b	F1QD30	10	39	Endothelial transcription factor GATA-2b	w
+ENDOTHELIAL	zebrafish	F1R1B9	pecam1a	F1R1B9	0	30	Platelet endothelial cell adhesion molecule isoform X1	w
+ENDOTHELIAL	zebrafish	F1R2G7	lyve1a	F1R2G7	1	5	Lymphatic vessel endothelial hyaluronic acid receptor 1a pre	w
+ENDOTHELIAL	zebrafish	O73682	vegfaa	O73682	9	36	Vascular endothelial growth factor A-A	w
+ENDOTHELIAL	zebrafish	Q5GIT4	kdr	Q5GIT4	12	78	Vascular endothelial growth factor receptor 2 (VEGFR-2) (EC 	w
+ENDOTHELIAL	zebrafish	Q5MD89	flt4	Q5MD89	9	53	Vascular endothelial growth factor receptor 3	w
+ENDOTHELIAL	zebrafish	Q6PBY3	edf1	Q6PBY3	0	172	Endothelial differentiation-related factor 1 homolog	w
+ENDOTHELIAL	zebrafish	Q7T3G1	gata2a	Q7T3G1	2	50	Endothelial transcription factor GATA-2a	w
+ENDOTHELIAL	zebrafish	Q7T3I6	vegfc	Q7T3I6	10	42	Vascular endothelial growth factor C	w
+ENDOTHELIAL	zebrafish	Q8AXB3	kdrl	Q8AXB3	16	70	Vascular endothelial growth factor receptor kdr-like	w
+ENDOTHELIAL-DERIVED	human	Q9H204	MED28	Q9H204	31	360	Mediator of RNA polymerase II transcription subunit 28 (Endo	w
+ENDOTHELIAL-LINKED	human	Q9BX97	PLVAP	Q9BX97	15	193	Plasmalemma vesicle-associated protein (Fenestrated endothel	w
+ENDOTHELIAL-OVEREXPRESSED	human	Q8TE69	EOLA1	Q8TE69	7	38	Protein EOLA1 (Endothelial-overexpressed lipopolysaccharide-	w
+ENDOTHELIN	human	O15354	GPR37	O15354	13	163	Prosaposin receptor GPR37 (Endothelin B receptor-like protei	w
+ENDOTHELIN	human	O60883	GPR37L1	O60883	14	143	G protein-coupled receptor 37-like 1 (Endothelin B receptor-	w
+ENDOTHELIN	human	P24530	EDNRB	P24530	11	62	Endothelin receptor type B (ET-B) (ET-BR) (Endothelin recept	w
+ENDOTHELIN	human	P25101	EDNRA	P25101	25	193	Endothelin-1 receptor (Endothelin receptor type A) (ET-A) (E	w
+ENDOTHELIN	zebrafish	A0A2R8QIT0	ednrba	A0A2R8QIT0	5	171	Endothelin receptor Ba isoform X3	w
+ENDOTHELIN	zebrafish	Q1MT02	edn2	Q1MT02	3	3	Endothelin 2	w
+ENDOTHELIN	zebrafish	Q9DGM2	ednrba	Q9DGM2	5	15	Endothelin receptor type B	w
+ENDOTHELIN-1	human	P05305	EDN1	P05305	168	602	Endothelin-1 (Preproendothelin-1) (PPET1) [Cleaved into: End	w
+ENDOTHELIN-1	human	P25101	EDNRA	P25101	25	193	Endothelin-1 receptor (Endothelin receptor type A) (ET-A) (E	w
+ENDOTHELIN-1	zebrafish	A0A8M1P7F8	ednrab	A0A8M1P7F8	3	12	Endothelin-1 receptor	w
+ENDOTHELIN-1	zebrafish	B3DLG5	ednraa	B3DLG5	2	12	Endothelin-1 receptor	w
+ENDOTHELIN-2	human	P20800	EDN2	P20800	33	98	Endothelin-2 (ET-2) (Preproendothelin-2) (PPET2)	w
+ENDOTHELIN-3	human	P14138	EDN3	P14138	42	172	Endothelin-3 (ET-3) (Preproendothelin-3) (PPET3)	w
+ENDOTHELIN-3	zebrafish	E9QFS0	edn3b	E9QFS0	3	3	Endothelin-3	w
+ENDOTHELIN-CONVERTING	human	O95672	ECEL1	O95672	27	172	Endothelin-converting enzyme-like 1 (EC 3.4.24.-) (Xce prote	w
+ENDOTHELIN-CONVERTING	human	P0DPD6	ECE2	P0DPD6	16	71	Endothelin-converting enzyme 2 (ECE-2) (EC 3.4.24.71)	w
+ENDOTHELIN-CONVERTING	human	P0DPD8	EEF1AKMT4-ECE2	P0DPD8	6	12	EEF1AKMT4-ECE2 readthrough transcript protein (EC 3.4.24.71)	w
+ENDOTHELIN-CONVERTING	human	P42892	ECE1	P42892	44	202	Endothelin-converting enzyme 1 (ECE-1) (EC 3.4.24.71)	w
+ENDOTHELIUM	human	Q8TE69	EOLA1	Q8TE69	7	38	Protein EOLA1 (Endothelial-overexpressed lipopolysaccharide-	w
+ENDOTHELIUM-SPECIFIC	human	Q8TDB4	MGARP	Q8TDB4	17	280	Protein MGARP (Corneal endothelium-specific protein 1) (CESP	w
+ENDOU	fly	FBgn0038381	EndoU	Q9VF14	2	6	Endoribonuclease (EC 4.6.1.-)	
+ENDOU	human	P21128	ENDOU	P21128	5	38	Uridylate-specific endoribonuclease (EC 3.1.-.-) (EC 4.6.1.-	
+ENDOU_HUMAN	human	P21128	ENDOU	P21128	5	38		
+ENDOV	human	Q8N8Q3	ENDOV	Q8N8Q3	2	48	Endonuclease V (hEndoV) (EC 3.1.26.-) (Inosine-specific endo	
+ENDOV	mus-musculus	Q8C9A2	Endov	Q8C9A2	0	7	Endonuclease V	
+ENDOV	rattus-norvegicus	A0A0G2K5U3	Endov	A0A0G2K5U3	0	7	Endonuclease V	
+ENDOV_HUMAN	human	Q8N8Q3	ENDOV	Q8N8Q3	2	48		
+ENDOZEPINE	human	P07108	DBI	P07108	8	117	Acyl-CoA-binding protein (ACBP) (Diazepam-binding inhibitor)	w
+ENDS	fly	FBgn0016977	spen	Q8SX83	0	0	Protein split ends	w
+ENDS	fly	FBgn0285892	tea	A1Z818	4	6	Telomere ends associated, isoform E	w
+ENDU-1	worm	Q21109	endu-1	Q21109	0	1	Endoribonuclease endu-1	w
+ENDU-1	worm	Q21109	endu-1	Q21109	0	1	Endoribonuclease endu-1	w
+ENDU-2	worm	Q9GYM9	endu-2	Q9GYM9	0	5	Endoribonuclease	

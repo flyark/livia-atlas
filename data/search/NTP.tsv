@@ -1,11 +1,63 @@
-NTP1	schizosaccharomyces-pombe	O42893	ntp1	O42893	0	7	Cytosolic neutral trehalase
-NTP2	arabidopsis-thaliana	Q5BPR8	NTP2	Q5BPR8	2	22	Nucleotidyltransferase family protein
-NTP4	arabidopsis-thaliana	Q7Y216	NTP4	Q7Y216	0	18	Nucleotidyltransferase family protein
-NTP5	arabidopsis-thaliana	F4J6R3	NTP5	F4J6R3	0	20	Nucleotidyltransferase family protein
-NTP6	arabidopsis-thaliana	F4J4G2	NTP6	F4J4G2	0	23	PAP/OAS1 substrate-binding domain superfamily
-NTP7	arabidopsis-thaliana	Q7Y227	NTP7	Q7Y227	5	27	At3g56320
-NTP8	arabidopsis-thaliana	F4JFF2	NTP8	F4JFF2	3	20	Nucleotidyltransferase
-NTPA	salmonella-typhimurium	Q8ZNV3	ntpA	Q8ZNV3	0	11	dATP pyrophosphohydrolase
-NTPA	shigella-dysenteriae-serotype-1	Q32H96	ntpA	Q32H96	0	10	Dihydroneopterin triphosphate diphosphatase
-NTPCR	mus-musculus	Q9CQA9	Ntpcr	Q9CQA9	0	6	Cancer-related nucleoside-triphosphatase homolog
-NTPCR	rattus-norvegicus	D4A478	Ntpcr	D4A478	0	4	Nucleoside-triphosphatase, cancer-related
+NTP-1	worm	Q18411	ntp-1	Q18411	0	3	Nucleoside-triphosphatase ntp-1	w
+NTP-1	worm	Q18411	ntp-1	Q18411	0	3	Nucleoside-triphosphatase ntp-1	w
+NTP1	schizosaccharomyces-pombe	O42893	ntp1	O42893	0	7	Cytosolic neutral trehalase	
+NTP2	arabidopsis-thaliana	Q5BPR8	NTP2	Q5BPR8	2	22	Nucleotidyltransferase family protein	
+NTP4	arabidopsis-thaliana	Q7Y216	NTP4	Q7Y216	0	18	Nucleotidyltransferase family protein	
+NTP5	arabidopsis-thaliana	F4J6R3	NTP5	F4J6R3	0	20	Nucleotidyltransferase family protein	
+NTP6	arabidopsis-thaliana	F4J4G2	NTP6	F4J4G2	0	23	PAP/OAS1 substrate-binding domain superfamily	
+NTP7	arabidopsis-thaliana	Q7Y227	NTP7	Q7Y227	5	27	At3g56320	
+NTP8	arabidopsis-thaliana	F4JFF2	NTP8	F4JFF2	3	20	Nucleotidyltransferase	
+NTPA	salmonella-typhimurium	Q8ZNV3	ntpA	Q8ZNV3	0	11	dATP pyrophosphohydrolase	
+NTPA	shigella-dysenteriae-serotype-1	Q32H96	ntpA	Q32H96	0	10	Dihydroneopterin triphosphate diphosphatase	
+NTPASE	fly	FBgn0024947	NTPase	M9PBV2	19	183	NTPase, isoform F (EC 3.6.1.42, EC 3.6.1.6, EC 3.6.1.64)	w
+NTPASE	fly	FBgn0024947	NTPase	M9PBV2	19	183	NTPase, isoform F (EC 3.6.1.42, EC 3.6.1.6, EC 3.6.1.64)	w
+NTPASE	human	P0DJR0	GIMD1	P0DJR0	2	25	GTPase IMAP family member GIMD1 (GIMAP family P-loop NTPase 	w
+NTPASE	human	Q17RQ9	NKPD1	Q17RQ9	1	28	NTPase KAP family P-loop domain-containing protein 1	w
+NTPASE	human	Q9BSD7	NTPCR	Q9BSD7	11	190	Cancer-related nucleoside-triphosphatase (NTPase) (EC 3.6.1.	w
+NTPASE	virus	A0A023PJE6_p46ee8d447e		A0A023PJE6	0	8	NTPase	w
+NTPASE	virus	A0A076JAH1_pc67d2a9e11		A0A076JAH1	0	8	NTPase	w
+NTPASE	virus	A0A076V8N6_pcb5f2f0b93		A0A076V8N6	0	13	Protein 2A NTPase	w
+NTPASE	virus	A0A076VCM4_p8cd0e65ba8		A0A076VCM4	0	12	Protein 2A NTPase	w
+NTPASE	virus	A0A240F7S2_p9b779941f2		A0A240F7S2	1	8	NTPase	w
+NTPASE	virus	A5Y0T1_pb97454f77d		A5Y0T1	0	12	Protein 2A NTPase	w
+NTPASE	virus	A6XB61_p4c22ac4a1e		A6XB61	1	12	Protein 2A NTPase	w
+NTPASE	virus	B2Y6C9_p63f66ca9f5		B2Y6C9	1	8	NTPase	w
+NTPASE	virus	C4N5E9_pae31fe24bf		C4N5E9	0	8	NTPase	w
+NTPASE	virus	D6QS60_p4fe8a9b687		D6QS60	0	9	NTPase	w
+NTPASE	virus	E2J7X9_pa8e31d25f3		E2J7X9	1	8	NTPase	w
+NTPASE	virus	I0DHL5_pfdaf55fa60		I0DHL5	1	8	NTPase	w
+NTPASE	virus	J7EH30_pd730d65d67		J7EH30	0	8	NTPase	w
+NTPASE	virus	M4PJD6_pc4ef1d6deb		M4PJD6	0	12	Protein 2A NTPase	w
+NTPASE	virus	P27409_p195ca75575	ORF1	P27409	1	8	NTPase	w
+NTPASE	virus	P27410_p0e00886b71	ORF1	P27410	1	9	NTPase	w
+NTPASE	virus	P54634_p42227c688e	ORF1	P54634	0	8	NTPase	w
+NTPASE	virus	Q076B4_pcf19fb59ea		Q076B4	1	12	Protein 2A NTPase	w
+NTPASE	virus	Q0R5W5_p379aaf8c10		Q0R5W5	0	9	NTPase	w
+NTPASE	virus	Q288N7_pc6bc502b82	ORF1	Q288N7	0	8	NTPase	w
+NTPASE	virus	Q5IT19_pd7abe86a92		Q5IT19	1	9	NTPase	w
+NTPASE	virus	Q69014_p56253716fa	ORF1	Q69014	0	9	NTPase	w
+NTPASE	virus	Q80J95_p3aaad7a09f	ORF1	Q80J95	1	9	NTPase	w
+NTPASE	virus	Q83883_p24c89c08f5	ORF1	Q83883	0	8	NTPase	w
+NTPASE	virus	Q8JN60_p8caecb084f	ORF1	Q8JN60	0	8	NTPase	w
+NTPASE	virus	Q8UZ80_pdd6377e722		Q8UZ80	0	8	NTPase	w
+NTPASE	virus	Q8V0P3_p350b9b7937		Q8V0P3	0	8	NTPase	w
+NTPASE	virus	Q96725_pc9bb73d0c6	ORF1	Q96725	0	9	NTPase	w
+NTPASE	virus	Q9DUN3_p5c28daa384	ORF1	Q9DUN3	1	8	NTPase	w
+NTPASE	virus	Q9QEJ5_p6f0a59c292	ORF1	Q9QEJ5	0	8	NTPase	w
+NTPASE	virus	Q9YQ23_p2766700d55		Q9YQ23	0	8	NTPase	w
+NTPASE	virus	X4YD30_p9e926afe15		X4YD30	0	15	Protein 2A NTPase	w
+NTPASE	worm	A0A061AD72	kdin-1	A0A061AD72	0	9	KAP NTPase domain-containing protein	w
+NTPASE	zebrafish	E7F0N5	nkpd1	E7F0N5	1	11	NTPase KAP family P-loop domain-containing protein 1	w
+NTPCR	human	Q9BSD7	NTPCR	Q9BSD7	11	190	Cancer-related nucleoside-triphosphatase (NTPase) (EC 3.6.1.	
+NTPCR	mus-musculus	Q9CQA9	Ntpcr	Q9CQA9	0	6	Cancer-related nucleoside-triphosphatase homolog	
+NTPCR	rattus-norvegicus	D4A478	Ntpcr	D4A478	0	4	Nucleoside-triphosphatase, cancer-related	
+NTPCR_HUMAN	human	Q9BSD7	NTPCR	Q9BSD7	11	190		
+NTPDASE	human	O75354	ENTPD6	O75354	8	67	Ectonucleoside triphosphate diphosphohydrolase 6 (NTPDase 6)	w
+NTPDASE	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
+NTPDASE	human	O75356	ENTPD5	O75356	7	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	w
+NTPDASE	human	Q5MY95	ENTPD8	Q5MY95	4	36	Ectonucleoside triphosphate diphosphohydrolase 8 (E-NTPDase 	w
+NTPDASE	human	Q9NQZ7	ENTPD7	Q9NQZ7	9	63	Ectonucleoside triphosphate diphosphohydrolase 7 (NTPDase 7)	w
+NTPDASE	human	Q9Y227	ENTPD4	Q9Y227	4	47	Ectonucleoside triphosphate diphosphohydrolase 4 (NTPDase 4)	w
+NTPDASE	human	Q9Y5L3	ENTPD2	Q9Y5L3	13	167	Ectonucleoside triphosphate diphosphohydrolase 2 (E-NTPDase 	w
+NTPDASE8	human	Q5MY95	ENTPD8	Q5MY95	4	36	Ectonucleoside triphosphate diphosphohydrolase 8 (E-NTPDase 	w
+NTPH	human	Q8IWU9	TPH2	Q8IWU9	14	60		

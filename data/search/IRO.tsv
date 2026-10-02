@@ -1,7 +1,136 @@
-IRO2	oryza-sativa-subsp-japonica	Q0JFZ0	IRO2	Q0JFZ0	2	3	Protein IRON-RELATED TRANSCRIPTION FACTOR 2
-IRO3	oryza-sativa-subsp-japonica	Q10KL8	IRO3	Q10KL8	0	1	Protein IRON-RELATED TRANSCRIPTION FACTOR 3
-IROC	salmonella-typhimurium	Q8ZMN3	iroC	Q8ZMN3	0	23	ATP binding cassette (ABC) transporter
-IROC	shigella-dysenteriae-serotype-1	Q32HL5	iroC	Q32HL5	0	18	ABC transporter protein
-IROE	salmonella-typhimurium	Q8ZMN1	iroE	Q8ZMN1	0	2	Hydrolase of the alpha/beta superfamily
-IRON	salmonella-typhimurium	Q8ZMN0	iroN	Q8ZMN0	1	7	TonB-dependent siderophore receptor protein
-IRON	shigella-dysenteriae-serotype-1	Q32HL8	iroN	Q32HL8	1	18	TonB-dependent outer membrane siderophore receptor protein
+IRO2	oryza-sativa-subsp-japonica	Q0JFZ0	IRO2	Q0JFZ0	2	3	Protein IRON-RELATED TRANSCRIPTION FACTOR 2	
+IRO3	oryza-sativa-subsp-japonica	Q10KL8	IRO3	Q10KL8	0	1	Protein IRON-RELATED TRANSCRIPTION FACTOR 3	
+IROC	salmonella-typhimurium	Q8ZMN3	iroC	Q8ZMN3	0	23	ATP binding cassette (ABC) transporter	
+IROC	shigella-dysenteriae-serotype-1	Q32HL5	iroC	Q32HL5	0	18	ABC transporter protein	
+IROE	salmonella-typhimurium	Q8ZMN1	iroE	Q8ZMN1	0	2	Hydrolase of the alpha/beta superfamily	
+IRON	fly	FBgn0033096	Zip42C.1	Q7JZR2	3	25	RE15841p (Zinc/iron regulated transporter-related protein 42	w
+IRON	fly	FBgn0033097	Zip42C.2	A1Z6P0	2	17	Zinc/iron regulated transporter-related protein 42C.2	w
+IRON	fly	FBgn0036461	Zip71B	A4IJ72	3	22	IP18018p (Zinc/iron regulated transporter-related protein 71	w
+IRON	fly	FBgn0038312	Zip88E	Q9VFA2	0	20	FI24038p1 (Zinc/iron regulated transporter-related protein 8	w
+IRON	fly	FBgn0038412	Zip89B	Q9VEX1	2	21	FI18611p1 (Zinc/iron regulated transporter-related protein 8	w
+IRON	fly	FBgn0039714	Zip99C	Q9VAF0	3	27	Zinc transporter ZIP13 homolog (Zinc/iron regulated transpor	w
+IRON	fly	FBgn0039902	Zip102B	Q9V4C6	0	11	Zinc/iron regulated transporter-related protein 102B, isofor	w
+IRON	human	P21399	ACO1	P21399	3	214	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	w
+IRON	human	P48200	IREB2	P48200	1	203	Iron-responsive element-binding protein 2 (IRE-BP 2) (Iron r	w
+IRON	human	Q96A46	SLC25A28	Q96A46	2	62	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	w
+IRON	human	Q9NYZ2	SLC25A37	Q9NYZ2	0	44	Mitoferrin-1 (Mitochondrial iron transporter 1) (Mitochondri	w
+IRON	salmonella-typhimurium	Q8ZMN0	iroN	Q8ZMN0	1	7	TonB-dependent siderophore receptor protein	
+IRON	shigella-dysenteriae-serotype-1	Q32HL8	iroN	Q32HL8	1	18	TonB-dependent outer membrane siderophore receptor protein	
+IRON	worm	Q09957	zipt-3	Q09957	1	6	Zinc/iron permease	w
+IRON	yeast	P38310	FTH1	P38310	3	61	Iron transporter FTH1	w
+IRON	yeast	P38724	ARN2	P38724	0	3	Siderophore iron transporter ARN2	w
+IRON	yeast	P38731	ARN1	P38731	0	4	Siderophore iron transporter ARN1	w
+IRON	yeast	P38993	FET3	P38993	2	24	Iron transport multicopper oxidase FET3	w
+IRON	yeast	P39980	SIT1	P39980	0	10	Siderophore iron transporter 1	w
+IRON	yeast	P40088	FTR1	P40088	2	42	Plasma membrane iron permease	w
+IRON	yeast	P43561	FET5	P43561	2	15	Iron transport multicopper oxidase FET5	w
+IRON	yeast	Q03020	ISU1	Q03020	4	26	Iron sulfur cluster assembly protein 1, mitochondrial	w
+IRON	yeast	Q04433	FIT1	Q04433	0	5	Facilitator of iron transport 1	w
+IRON	yeast	Q08299	ENB1	Q08299	0	5	Siderophore iron transporter ENB1	w
+IRON	yeast	Q08906	FIT2	Q08906	0	4	Facilitator of iron transport 2	w
+IRON	yeast	Q08907	FIT3	Q08907	0	8	Facilitator of iron transport 3	w
+IRON	yeast	Q12056	ISU2	Q12056	3	23	Iron sulfur cluster assembly protein 2, mitochondrial	w
+IRON	yeast	Q12078	SMF3	Q12078	0	12	Iron transporter SMF3	w
+IRON	zebrafish	Q6PGY7	cisd1	Q6PGY7	0	5	CDGSH iron sulfur domain 1	w
+IRON-BINDING	worm	Q9BKQ9	cisd-3.2	Q9BKQ9	0	5	Iron-binding zinc finger CDGSH type domain-containing protei	w
+IRON-BINDING	worm	Q9U3A1	cisd-3.1	Q9U3A1	0	2	Iron-binding zinc finger CDGSH type domain-containing protei	w
+IRON-CONTAINING	human	Q8IWW8	ADHFE1	Q8IWW8	0	34	Hydroxyacid-oxoacid transhydrogenase, mitochondrial (HOT) (E	w
+IRON-DEPENDENT	fly	FBgn0032671	JMJD4	Q9VJ97	1	11	2-oxoglutarate and iron-dependent oxygenase JMJD4 homolog (E	w
+IRON-DEPENDENT	fly	FBgn0265189	sud1	Q9I7H9	2	16	Prolyl 3-hydroxylase sudestada1 (EC 1.14.11.-) (2-oxoglutara	w
+IRON-DEPENDENT	human	Q6N063	OGFOD2	Q6N063	9	66	2-oxoglutarate and iron-dependent oxygenase domain-containin	w
+IRON-DEPENDENT	human	Q6PK18	OGFOD3	Q6PK18	10	48	2-oxoglutarate and iron-dependent oxygenase domain-containin	w
+IRON-DEPENDENT	human	Q8N543	OGFOD1	Q8N543	19	150	Prolyl 3-hydroxylase OGFOD1 (EC 1.14.11.-) (2-oxoglutarate a	w
+IRON-DEPENDENT	human	Q9H9V9	JMJD4	Q9H9V9	16	165	2-oxoglutarate and iron-dependent oxygenase JMJD4 (EC 1.14.1	w
+IRON-DEPENDENT	zebrafish	Q08BY5	jmjd4	Q08BY5	0	1	2-oxoglutarate and iron-dependent oxygenase JMJD4	w
+IRON-INHIBITED	human	Q9UG63	ABCF2	Q9UG63	7	358	ATP-binding cassette sub-family F member 2 (Iron-inhibited A	w
+IRON-ONLY	human	Q9H6Q4	CIAO3	Q9H6Q4	7	219	Cytosolic iron-sulfur assembly component 3 (Cytosolic Fe-S c	w
+IRON-ONLY	human	Q9UHQ1	NARF	Q9UHQ1	9	59	Nuclear prelamin A recognition factor (Iron-only hydrogenase	w
+IRON-REGULATED	human	Q9NP59	SLC40A1	Q9NP59	3	156	Ferroportin (Ferroportin-1) (Iron-regulated transporter 1) (	w
+IRON-REGULATED	yeast	P22149	AFT1	P22149	5	80	Iron-regulated transcriptional activator AFT1	w
+IRON-REGULATED	yeast	Q08957	AFT2	Q08957	2	4	Iron-regulated transcriptional activator AFT2	w
+IRON-RESPONSIVE	human	P21399	ACO1	P21399	3	214	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	w
+IRON-RESPONSIVE	human	P48200	IREB2	P48200	1	203	Iron-responsive element-binding protein 2 (IRE-BP 2) (Iron r	w
+IRON-RESPONSIVE	zebrafish	F1QNR8	ireb2	F1QNR8	1	189	Iron-responsive element-binding protein 2	w
+IRON-SULFUR	fly	FBgn0014028	SdhB	P21914	13	89	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
+IRON-SULFUR	fly	FBgn0030975	SdhBL	Q9VWN3	9	64	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
+IRON-SULFUR	fly	FBgn0031021	ND-18	Q9VWI0	4	119	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
+IRON-SULFUR	fly	FBgn0031684	ND-13A	Q9VMU0	6	108	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
+IRON-SULFUR	fly	FBgn0032986	Nubpl	Q9V9M8	0	23	Iron-sulfur cluster transfer protein Nubpl (Nucleotide bindi	w
+IRON-SULFUR	fly	FBgn0033972	Ciao1	Q7K1Y4	4	19	Probable cytosolic iron-sulfur protein assembly protein Ciao	w
+IRON-SULFUR	fly	FBgn0035244	Abcb7	Q9W0C5	2	25	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+IRON-SULFUR	fly	FBgn0037637	IscU	Q9VHK6	6	49	GEO04668p1 (GH01635p) (Iron-sulfur cluster assembly enzyme)	w
+IRON-SULFUR	fly	FBgn0052857	CG32857	Q8SY96	1	1	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+IRON-SULFUR	fly	FBgn0053502	CG33502	Q8SY96	1	2	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+IRON-SULFUR	fly	FBgn0062442	Cisd	Q9VAM6	0	80	CDGSH iron-sulfur domain-containing protein 2 homolog	w
+IRON-SULFUR	fly	FBgn0266582	ND-30	Q9VZU4	14	128	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
+IRON-SULFUR	fly	FBgn0285970	CG32500	Q8SY96	3	9	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+IRON-SULFUR	human	O00217	NDUFS8	O00217	47	482	NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitoc	w
+IRON-SULFUR	human	O43181	NDUFS4	O43181	19	362	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
+IRON-SULFUR	human	O43920	NDUFS5	O43920	30	305	NADH dehydrogenase [ubiquinone] iron-sulfur protein 5 (Compl	w
+IRON-SULFUR	human	O75027	ABCB7	O75027	11	152	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+IRON-SULFUR	human	O75251	NDUFS7	O75251	47	380	NADH dehydrogenase [ubiquinone] iron-sulfur protein 7, mitoc	w
+IRON-SULFUR	human	O75306	NDUFS2	O75306	29	542	NADH dehydrogenase [ubiquinone] iron-sulfur protein 2, mitoc	w
+IRON-SULFUR	human	O75380	NDUFS6	O75380	19	422	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
+IRON-SULFUR	human	O75489	NDUFS3	O75489	38	517	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
+IRON-SULFUR	human	O76071	CIAO1	O76071	40	324	Probable cytosolic iron-sulfur protein assembly protein CIAO	w
+IRON-SULFUR	human	P0C7P0	CISD3	P0C7P0	21	195	CDGSH iron-sulfur domain-containing protein 3, mitochondrial	w
+IRON-SULFUR	human	P0C7P4	UQCRFS1P1	P0C7P4	7	49	Putative cytochrome b-c1 complex subunit Rieske-like protein	w
+IRON-SULFUR	human	P21912	SDHB	P21912	37	254	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
+IRON-SULFUR	human	P47985	UQCRFS1	P47985	38	351	Cytochrome b-c1 complex subunit Rieske, mitochondrial (EC 7.	w
+IRON-SULFUR	human	Q5T440	IBA57	Q5T440	5	96	Iron-sulfur cluster assembly factor IBA57, mitochondrial (Ir	w
+IRON-SULFUR	human	Q86U28	ISCA2	Q86U28	27	112	Iron-sulfur cluster assembly 2 homolog, mitochondrial (HESB-	w
+IRON-SULFUR	human	Q8IWL3	HSCB	Q8IWL3	52	906	Iron-sulfur cluster co-chaperone protein HscB (DnaJ homolog 	w
+IRON-SULFUR	human	Q8N5K1	CISD2	Q8N5K1	13	332	CDGSH iron-sulfur domain-containing protein 2 (Endoplasmic r	w
+IRON-SULFUR	human	Q8TB37	NUBPL	Q8TB37	8	108	Iron-sulfur cluster transfer protein NUBPL (IND1 homolog) (N	w
+IRON-SULFUR	human	Q9BUE6	ISCA1	Q9BUE6	13	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	w
+IRON-SULFUR	human	Q9H1K1	ISCU	Q9H1K1	20	200	Iron-sulfur cluster assembly enzyme ISCU (NifU-like N-termin	w
+IRON-SULFUR	human	Q9H5X1	CIAO2A	Q9H5X1	26	211	Cytosolic iron-sulfur assembly component 2A (MIP18 family pr	w
+IRON-SULFUR	human	Q9H6Q4	CIAO3	Q9H6Q4	7	219	Cytosolic iron-sulfur assembly component 3 (Cytosolic Fe-S c	w
+IRON-SULFUR	human	Q9NZ45	CISD1	Q9NZ45	8	142	CDGSH iron-sulfur domain-containing protein 1 (Cysteine tran	w
+IRON-SULFUR	human	Q9UMS0	NFU1	Q9UMS0	9	95	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial (HI	w
+IRON-SULFUR	human	Q9Y3D0	CIAO2B	Q9Y3D0	32	243	Cytosolic iron-sulfur assembly component 2B (MSS19-interacti	w
+IRON-SULFUR	worm	A5HWB2	CELE_Y39B6A.3	A5HWB2	2	9	Iron-sulfur cluster assembly 1 homolog, mitochondrial	w
+IRON-SULFUR	worm	A7LPG5	cisd-1	A7LPG5	0	4	CDGSH iron-sulfur domain-containing protein 2 homologue	w
+IRON-SULFUR	worm	G4SRS5	abtm-1	G4SRS5	1	6	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
+IRON-SULFUR	worm	Q21915	nfu-1	Q21915	2	9	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+IRON-SULFUR	worm	Q9XW12	Y18D10A.9	Q9XW12	2	12	Probable cytosolic iron-sulfur protein assembly protein CIAO	w
+IRON-SULFUR	yeast	P40416	ATM1	P40416	0	18	Iron-sulfur clusters transporter ATM1, mitochondrial	w
+IRON-SULFUR	yeast	P47158	IBA57	P47158	1	17	Iron-sulfur cluster assembly factor IBA57, mitochondrial	w
+IRON-SULFUR	yeast	Q05583	CIA1	Q05583	3	19	Cytosolic iron-sulfur protein assembly protein 1	w
+IRON-SULFUR	yeast	Q05931	SSQ1	Q05931	16	55	Iron-sulfur cluster biogenesis chaperone, mitochondrial	w
+IRON-SULFUR	yeast	Q07821	ISA1	Q07821	3	19	Iron-sulfur assembly protein 1	w
+IRON-SULFUR	yeast	Q12425	ISA2	Q12425	2	17	Iron-sulfur assembly protein 2	w
+IRON-SULFUR	zebrafish	A0A8M1N1R7	si:ch211-191d15.2	A0A8M1N1R7	6	44	Iron-sulfur cluster assembly enzyme ISCU	w
+IRON-SULFUR	zebrafish	B0S8L0	nfu1	B0S8L0	2	7	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+IRON-SULFUR	zebrafish	B0V1J6	hscb	B0V1J6	10	90	Iron-sulfur cluster co-chaperone protein HscB	w
+IRON-SULFUR	zebrafish	B8A6A3	zgc:110319	B8A6A3	3	7	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+IRON-SULFUR	zebrafish	B8JMH0	iba57	B8JMH0	0	1	Iron-sulfur cluster assembly factor IBA57, mitochondrial	w
+IRON-SULFUR	zebrafish	E7F6F7	abcb7	E7F6F7	2	10	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
+IRON-SULFUR	zebrafish	F1QM53	iscub	F1QM53	4	44	Iron-sulfur cluster assembly enzyme b	w
+IRON-SULFUR	zebrafish	Q4QRC6	isca1	Q4QRC6	2	19	Iron-sulfur cluster assembly 1 homolog, mitochondrial	w
+IRON-SULFUR	zebrafish	Q6DH61	nubpl	Q6DH61	0	12	Iron-sulfur cluster transfer protein NUBPL	w
+IRON-SULFUR	zebrafish	Q6DHF2	ciao2b	Q6DHF2	2	16	Cytosolic iron-sulfur assembly component 2B	w
+IRON-SULFUR	zebrafish	Q6P0D9	ciao1	Q6P0D9	3	21	Probable cytosolic iron-sulfur protein assembly protein ciao	w
+IRON-SULFUR	zebrafish	Q7T326	cisd2	Q7T326	0	116	CDGSH iron-sulfur domain-containing protein 2	w
+IROPLACT	human	P02776	PF4	P02776	113	792	Platelet factor 4 (PF-4) (C-X-C motif chemokine 4) (Iroplact	w
+IROQUOIS	human	P78411	IRX5	P78411	110	391	Iroquois-class homeodomain protein IRX-5 (Homeodomain protei	w
+IROQUOIS	human	P78412	IRX6	P78412	108	352	Iroquois-class homeodomain protein IRX-6 (Homeodomain protei	w
+IROQUOIS	human	P78413	IRX4	P78413	108	409	Iroquois-class homeodomain protein IRX-4 (Homeodomain protei	w
+IROQUOIS	human	P78414	IRX1	P78414	142	418	Iroquois-class homeodomain protein IRX-1 (Homeodomain protei	w
+IROQUOIS	human	P78415	IRX3	P78415	124	375	Iroquois-class homeodomain protein IRX-3 (Homeodomain protei	w
+IROQUOIS	human	Q9BZI1	IRX2	Q9BZI1	130	439	Iroquois-class homeodomain protein IRX-2 (Homeodomain protei	w
+IROQUOIS	zebrafish	Q1LWG1	irx4b	Q1LWG1	0	7	Iroquois homeobox 4b	w
+IROQUOIS	zebrafish	Q1LXU5	irx5a	Q1LXU5	0	9	Iroquois homeobox protein 5a	w
+IROQUOIS	zebrafish	Q503Z8	irx6a	Q503Z8	0	8	Iroquois homeobox protein 6a	w
+IROQUOIS	zebrafish	Q6NZU4	irx4a	Q6NZU4	0	8	Iroquois homeobox 4a	w
+IROQUOIS	zebrafish	Q90YX8	irx7	Q90YX8	1	7	Iroquois homeobox 7	w
+IROQUOIS	zebrafish	Q90Z68	irx3a	Q90Z68	0	8	Iroquois 3 homeobox protein	w
+IROQUOIS-CLASS	human	P78411	IRX5	P78411	110	391	Iroquois-class homeodomain protein IRX-5 (Homeodomain protei	w
+IROQUOIS-CLASS	human	P78412	IRX6	P78412	108	352	Iroquois-class homeodomain protein IRX-6 (Homeodomain protei	w
+IROQUOIS-CLASS	human	P78413	IRX4	P78413	108	409	Iroquois-class homeodomain protein IRX-4 (Homeodomain protei	w
+IROQUOIS-CLASS	human	P78414	IRX1	P78414	142	418	Iroquois-class homeodomain protein IRX-1 (Homeodomain protei	w
+IROQUOIS-CLASS	human	P78415	IRX3	P78415	124	375	Iroquois-class homeodomain protein IRX-3 (Homeodomain protei	w
+IROQUOIS-CLASS	human	Q9BZI1	IRX2	Q9BZI1	130	439	Iroquois-class homeodomain protein IRX-2 (Homeodomain protei	w
+IROQUOIS-CLASS	worm	Q93348	irx-1	Q93348	3	24	Putative iroquois-class homeodomain protein irx-1	w
+IROQUOIS-CLASS	zebrafish	A0A8M1PF69	irx1a	A0A8M1PF69	1	9	Iroquois-class homeodomain protein IRX-1a isoform 1	w
+IROQUOIS-CLASS	zebrafish	A0A8M1PGB3	irx3b	A0A8M1PGB3	0	7	Iroquois-class homeodomain protein IRX-3b	w

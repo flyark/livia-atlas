@@ -47,7 +47,7 @@
   "Inferred from orthologs",
   "Kinase",
   "Large-scale proteomics",
-  "Ligand\u2013receptor",
+  "Ligand–receptor",
   "Literature-derived",
   "Other",
   "Subcellular organelle"
@@ -59,7 +59,8 @@
   "bundle": "b/{id}.zip",
   "sequence": "s/{id}.fa",
   "sets": "sets.json",
-  "isoforms": "b/{id}~{k}.zip"
+  "isoforms": "b/{id}~{k}.zip",
+  "offsetShards": true
  },
  "nameKey": "id",
  "isoformNote": "Genes whose isoforms were folded separately keep one file per isoform: b/{id}.zip holds the reference and isoforms.json lists the others."

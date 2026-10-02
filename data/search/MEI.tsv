@@ -1,22 +1,172 @@
-MEI1	arabidopsis-thaliana	A0A1P8AWF3	MEI1	A0A1P8AWF3	5	73	Transcription coactivator
-MEI1	mus-musculus	Q9D4I2	Mei1	Q9D4I2	1	2	Meiosis inhibitor protein 1
-MEI1	rattus-norvegicus	D3ZSY2	Mei1	D3ZSY2	2	5	Meiotic double-stranded break formation protein 1
-MEI2	schizosaccharomyces-pombe	P08965	mei2	P08965	1	20	Meiosis protein mei2
-MEI3	schizosaccharomyces-pombe	P08090	mei3	P08090	1	3	Meiosis inducing protein mei3
-MEI4	mus-musculus	Q8BRM6	Mei4	Q8BRM6	2	7	Meiosis-specific protein MEI4
-MEI4	rattus-norvegicus	D3ZCK1	Mei4	D3ZCK1	2	9	Meiotic double-stranded break formation protein 4
-MEI4	schizosaccharomyces-pombe	O13606	mei4	O13606	0	21	Meiosis-specific transcription factor mei4
-MEIG1	mus-musculus	Q61845	Meig1	Q61845	1	3	Meiosis-expressed gene 1 protein
-MEIG1	rattus-norvegicus	A0A0G2JV95	Meig1	A0A0G2JV95	0	1	Meiosis/spermiogenesis associated 1
-MEIKIN	mus-musculus	Q5F2C3	Meikin	Q5F2C3	4	47	Meiosis-specific kinetochore protein
-MEIKIN	rattus-norvegicus	D3ZAX6	Meikin	D3ZAX6	1	1	Meiotic kinetochore factor
-MEIOB	mus-musculus	Q9D513	Meiob	Q9D513	3	43	Meiosis-specific with OB domain-containing protein
-MEIOB	rattus-norvegicus	B0BMX9	Meiob	B0BMX9	4	91	Meiosis-specific with OB domain-containing protein
-MEIOC	mus-musculus	A2AG06	Meioc	A2AG06	0	19	Meiosis-specific coiled-coil domain-containing protein MEIOC
-MEIOC	rattus-norvegicus	D4A1P7	Meioc	D4A1P7	0	1	Meiosis specific with coiled-coil domain
-MEIOSIN	mus-musculus	A0A5K7RLP0	Meiosin	A0A5K7RLP0	1	1	Meiosis initiator protein
-MEIS1	mus-musculus	Q60954	Meis1	Q60954	15	35	Homeobox protein Meis1
-MEIS2	mus-musculus	P97367	Meis2	P97367	10	27	Homeobox protein Meis2
-MEIS2	rattus-norvegicus	D4A2T5	Meis2	D4A2T5	7	30	Meis homeobox 2
-MEIS3	mus-musculus	P97368	Meis3	P97368	3	7	Homeobox protein Meis3
-MEIS3	rattus-norvegicus	D4A9U2	Meis3	D4A9U2	1	5	Meis homeobox 3
+MEI-1	worm	P34808	mei-1	P34808	4	29	Meiotic spindle formation protein mei-1	w
+MEI-1	worm	P34808	mei-1	P34808	4	29	Meiotic spindle formation protein mei-1	w
+MEI-2	worm	O44740	mei-2	O44740	2	7	Meiotic spindle formation protein 2	
+MEI-217	fly	FBgn0028581	mei-217	Q86B50	3	9	Mei-217	w
+MEI-217	fly	FBgn0028581	mei-217	Q86B50	3	9	Mei-217	w
+MEI-218	fly	FBgn0002709	mei-218	Q0KHR4	5	34	FI21203p1 (FI21627p1) (Meiotic 218, isoform B) (Meiotic 218,	
+MEI-38	fly	FBgn0260986	mei-38	A0A1Z1CH00	1	12	Meiotic 38, isoform C	
+MEI-41	fly	FBgn0004367	mei-41	Q9VXG8	51	485	Serine/threonine-protein kinase ATR (EC 2.7.11.1) (Ataxia te	
+MEI-9	fly	FBgn0002707	mei-9	Q24087	11	88	DNA repair endonuclease XPF (EC 3.1.-.-) (Protein meiotic 9)	
+MEI-P22	fly	FBgn0016036	mei-P22	Q9VS36	6	153	Meiotic recombination protein P22	
+MEI-P26	fly	FBgn0026206	mei-P26	Q9Y111	16	155	meiotic P26	
+MEI-S332	fly	FBgn0002715	mei-S332	Q24141	8	46	Shugoshin (Meiotic protein S332)	
+MEI-W68	fly	FBgn0002716	mei-W68	Q7KPA5	4	29	Meiotic recombination protein W68 (EC 5.6.2.2) (SPO11 protei	
+MEI1	arabidopsis-thaliana	A0A1P8AWF3	MEI1	A0A1P8AWF3	5	73	Transcription coactivator	
+MEI1	human	Q5TIA1	MEI1	Q5TIA1	5	33	Meiosis inhibitor protein 1 (Meiosis defective protein 1)	
+MEI1	mus-musculus	Q9D4I2	Mei1	Q9D4I2	1	2	Meiosis inhibitor protein 1	
+MEI1	rattus-norvegicus	D3ZSY2	Mei1	D3ZSY2	2	5	Meiotic double-stranded break formation protein 1	
+MEI1_HUMAN	human	Q5TIA1	MEI1	Q5TIA1	5	33		
+MEI2	schizosaccharomyces-pombe	P08965	mei2	P08965	1	20	Meiosis protein mei2	
+MEI3	schizosaccharomyces-pombe	P08090	mei3	P08090	1	3	Meiosis inducing protein mei3	
+MEI4	human	A8MW99	MEI4	A8MW99	11	83	Meiosis-specific protein MEI4	
+MEI4	mus-musculus	Q8BRM6	Mei4	Q8BRM6	2	7	Meiosis-specific protein MEI4	
+MEI4	rattus-norvegicus	D3ZCK1	Mei4	D3ZCK1	2	9	Meiotic double-stranded break formation protein 4	
+MEI4	schizosaccharomyces-pombe	O13606	mei4	O13606	0	21	Meiosis-specific transcription factor mei4	
+MEI4	yeast	P29467	MEI4	P29467	2	7	Meiosis-specific protein MEI4	
+MEI4	zebrafish	Q5PNP6	mei4	Q5PNP6	1	6	Meiosis-specific protein MEI4	w
+MEI4	zebrafish	Q5PNP6	mei4	Q5PNP6	1	6	Meiosis-specific protein MEI4	w
+MEI4_HUMAN	human	A8MW99	MEI4	A8MW99	11	83		
+MEI5	human	Q86XK3	SFR1	Q86XK3	16	102		
+MEI5	yeast	P32489	MEI5	P32489	1	10	Meiosis protein 5	
+MEICHROACIDIN	human	Q8WYR4	RSPH1	Q8WYR4	51	177	Radial spoke head 1 homolog (Cancer/testis antigen 79) (CT79	w
+MEICS	fly	FBgn0025874	Meics	O96395	33	365	LD05664p (Meiotic central spindle, isoform A) (Zinc finger m	
+MEICS_463	fly	FBgn0025874	Meics	O96395	33	365		
+MEIG1	human	Q5JSS6	MEIG1	Q5JSS6	4	50	Meiosis expressed gene 1 protein homolog	
+MEIG1	mus-musculus	Q61845	Meig1	Q61845	1	3	Meiosis-expressed gene 1 protein	
+MEIG1	rattus-norvegicus	A0A0G2JV95	Meig1	A0A0G2JV95	0	1	Meiosis/spermiogenesis associated 1	
+MEIG1	zebrafish	Q5RGE4	meig1	Q5RGE4	1	1	Meiosis expressed gene 1 protein homolog	
+MEIG1_HUMAN	human	Q5JSS6	MEIG1	Q5JSS6	4	50		
+MEIGO	fly	FBgn0250820	meigo	Q9VDD7	0	24	Solute carrier family 35 member B1 homolog (Protein medial g	
+MEIKIN	human	A0A087WXM9	MEIKIN	A0A087WXM9	3	13	Meiosis-specific kinetochore protein	
+MEIKIN	mus-musculus	Q5F2C3	Meikin	Q5F2C3	4	47	Meiosis-specific kinetochore protein	
+MEIKIN	rattus-norvegicus	D3ZAX6	Meikin	D3ZAX6	1	1	Meiotic kinetochore factor	
+MEIKN_HUMAN	human	A0A087WXM9	MEIKIN	A0A087WXM9	3	13		
+MEILB2	human	O75031	HSF2BP	O75031	146	373		
+MEIOB	human	Q8N635	MEIOB	Q8N635	3	81	Meiosis-specific with OB domain-containing protein (EC 3.1.-	
+MEIOB	mus-musculus	Q9D513	Meiob	Q9D513	3	43	Meiosis-specific with OB domain-containing protein	
+MEIOB	rattus-norvegicus	B0BMX9	Meiob	B0BMX9	4	91	Meiosis-specific with OB domain-containing protein	
+MEIOB	zebrafish	F1R891	meiob	F1R891	2	136	Meiosis-specific with OB domain-containing protein	
+MEIOB_HUMAN	human	Q8N635	MEIOB	Q8N635	3	81		
+MEIOC	human	A2RUB1	MEIOC	A2RUB1	19	79	Meiosis-specific coiled-coil domain-containing protein MEIOC	
+MEIOC	mus-musculus	A2AG06	Meioc	A2AG06	0	19	Meiosis-specific coiled-coil domain-containing protein MEIOC	
+MEIOC	rattus-norvegicus	D4A1P7	Meioc	D4A1P7	0	1	Meiosis specific with coiled-coil domain	
+MEIOC	zebrafish	E7FFE7	moto	E7FFE7	0	4	Meiosis-specific coiled-coil domain-containing protein MEIOC	w
+MEIOC_HUMAN	human	A2RUB1	MEIOC	A2RUB1	19	79		
+MEIOSIN	human	C9JSJ3	MEIOSIN	C9JSJ3	2	6	Meiosis initiator protein (Basic helix-loop-helix and HMG bo	
+MEIOSIN	mus-musculus	A0A5K7RLP0	Meiosin	A0A5K7RLP0	1	1	Meiosis initiator protein	
+MEIOSIS	fly	FBgn0014342	mia	Q9VND0	96	493	Meiosis I arrest, isoform A (Meiosis I arrest, isoform B) (M	w
+MEIOSIS	fly	FBgn0039139	Mettl3	Q9VCE6	17	111	N6-adenosine-methyltransferase MT-A70-like protein (EC 2.1.1	w
+MEIOSIS	fly	FBgn0039972	Marf1	Q7KWG9	2	46	Meiosis regulator and mRNA stability factor 1, isoform D (Me	w
+MEIOSIS	fly	FBgn0267033	mamo	Q9VY72	14	73	Maternal gene required for meiosis, isoform H (Maternal gene	w
+MEIOSIS	human	C9JSJ3	MEIOSIN	C9JSJ3	2	6	Meiosis initiator protein (Basic helix-loop-helix and HMG bo	w
+MEIOSIS	human	Q5JSS6	MEIG1	Q5JSS6	4	50	Meiosis expressed gene 1 protein homolog	w
+MEIOSIS	human	Q5TIA1	MEI1	Q5TIA1	5	33	Meiosis inhibitor protein 1 (Meiosis defective protein 1)	w
+MEIOSIS	human	Q86XK3	SFR1	Q86XK3	16	102	Swi5-dependent recombination DNA repair protein 1 homolog (M	w
+MEIOSIS	human	Q8TC57	M1AP	Q8TC57	6	60	Meiosis 1 arrest protein (Meiosis 1-arresting protein) (Meio	w
+MEIOSIS	human	Q9NXC5	MIOS	Q9NXC5	8	101	GATOR2 complex protein MIOS (Missing oocyte meiosis regulato	w
+MEIOSIS	human	Q9Y4F3	MARF1	Q9Y4F3	10	148	Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (	w
+MEIOSIS	yeast	P32489	MEI5	P32489	1	10	Meiosis protein 5	w
+MEIOSIS	yeast	P32581	IME2	P32581	4	66	Meiosis induction protein kinase IME2/SME1 (EC 2.7.11.1)	w
+MEIOSIS	yeast	P40465	CSM2	P40465	4	42	Chromosome segregation in meiosis protein 2	w
+MEIOSIS	yeast	Q04659	CSM3	Q04659	4	58	Chromosome segregation in meiosis protein 3	w
+MEIOSIS	yeast	Q08955	CSM4	Q08955	0	9	Chromosome segregation in meiosis protein 4	w
+MEIOSIS	zebrafish	A0A8M9QAJ1	marf1	A0A8M9QAJ1	1	35	Meiosis regulator and mRNA stability factor 1	w
+MEIOSIS	zebrafish	A4IG29	m1ap	A4IG29	0	1	Meiosis 1 arrest protein	w
+MEIOSIS	zebrafish	Q5RGE4	meig1	Q5RGE4	1	1	Meiosis expressed gene 1 protein homolog	w
+MEIOSIS-INDUCING	yeast	P21190	IME1	P21190	0	10	Meiosis-inducing protein 1	w
+MEIOSIS-RELATED	human	A8MT33	SYCE1L	A8MT33	22	81	Synaptonemal complex central element protein 1-like (Meiosis	w
+MEIOSIS-SPECIFIC	fly	FBgn0037581	CG7352	Q9VHR7	3	30	Meiosis-specific nuclear structural protein 1	w
+MEIOSIS-SPECIFIC	human	A0A087WXM9	MEIKIN	A0A087WXM9	3	13	Meiosis-specific kinetochore protein	w
+MEIOSIS-SPECIFIC	human	A2RUB1	MEIOC	A2RUB1	19	79	Meiosis-specific coiled-coil domain-containing protein MEIOC	w
+MEIOSIS-SPECIFIC	human	A8MW99	MEI4	A8MW99	11	83	Meiosis-specific protein MEI4	w
+MEIOSIS-SPECIFIC	human	Q8N635	MEIOB	Q8N635	3	81	Meiosis-specific with OB domain-containing protein (EC 3.1.-	w
+MEIOSIS-SPECIFIC	human	Q8NEH6	MNS1	Q8NEH6	7	119	Meiosis-specific nuclear structural protein 1	w
+MEIOSIS-SPECIFIC	yeast	P20050	HOP1	P20050	1	10	Meiosis-specific protein HOP1	w
+MEIOSIS-SPECIFIC	yeast	P23179	SPO11	P23179	3	16	Meiosis-specific protein SPO11	w
+MEIOSIS-SPECIFIC	yeast	P23624	SPO13	P23624	1	7	Meiosis-specific protein SPO13	w
+MEIOSIS-SPECIFIC	yeast	P24719	MEK1	P24719	6	59	Meiosis-specific serine/threonine-protein kinase MEK1 (EC 2.	w
+MEIOSIS-SPECIFIC	yeast	P29467	MEI4	P29467	2	7	Meiosis-specific protein MEI4	w
+MEIOSIS-SPECIFIC	yeast	P32645	ISC10	P32645	0	6	Meiosis-specific protein ISC10	w
+MEIOSIS-SPECIFIC	yeast	P38830	NDT80	P38830	1	11	Meiosis-specific transcription factor NDT80	w
+MEIOSIS-SPECIFIC	yeast	P50082	AMA1	P50082	5	65	Meiosis-specific APC/C activator protein AMA1	w
+MEIOSIS-SPECIFIC	yeast	Q03937	HED1	Q03937	1	3	Meiosis-specific protein HED1	w
+MEIOSIS-SPECIFIC	zebrafish	E7FFE7	moto	E7FFE7	0	4	Meiosis-specific coiled-coil domain-containing protein MEIOC	w
+MEIOSIS-SPECIFIC	zebrafish	F1R891	meiob	F1R891	2	136	Meiosis-specific with OB domain-containing protein	w
+MEIOSIS-SPECIFIC	zebrafish	Q5PNP6	mei4	Q5PNP6	1	6	Meiosis-specific protein MEI4	w
+MEIOSIS-SPECIFIC	zebrafish	Q6PBA8	mns1	Q6PBA8	0	57	Meiosis-specific nuclear structural protein 1	w
+MEIOSIS-TO-MITOSIS	worm	O45603	memi-3	O45603	0	60	MEiosis-to-MItosis transition associated	w
+MEIOSIS-TO-MITOSIS	worm	Q9N575	memi-1	Q9N575	1	4	MEiosis-to-MItosis transition associated	w
+MEIOSIS-TO-MITOSIS	worm	Q9U1X3	memi-2	Q9U1X3	0	47	MEiosis-to-MItosis transition associated	w
+MEIOS_HUMAN	human	C9JSJ3	MEIOSIN	C9JSJ3	2	6		
+MEIOTIC	fly	FBgn0002707	mei-9	Q24087	11	88	DNA repair endonuclease XPF (EC 3.1.-.-) (Protein meiotic 9)	w
+MEIOTIC	fly	FBgn0002709	mei-218	Q0KHR4	5	34	FI21203p1 (FI21627p1) (Meiotic 218, isoform B) (Meiotic 218,	w
+MEIOTIC	fly	FBgn0002715	mei-S332	Q24141	8	46	Shugoshin (Meiotic protein S332)	w
+MEIOTIC	fly	FBgn0002716	mei-W68	Q7KPA5	4	29	Meiotic recombination protein W68 (EC 5.6.2.2) (SPO11 protei	w
+MEIOTIC	fly	FBgn0004367	mei-41	Q9VXG8	51	485	Serine/threonine-protein kinase ATR (EC 2.7.11.1) (Ataxia te	w
+MEIOTIC	fly	FBgn0016036	mei-P22	Q9VS36	6	153	Meiotic recombination protein P22	w
+MEIOTIC	fly	FBgn0025874	Meics	O96395	33	365	LD05664p (Meiotic central spindle, isoform A) (Zinc finger m	w
+MEIOTIC	fly	FBgn0026206	mei-P26	Q9Y111	16	155	meiotic P26	w
+MEIOTIC	fly	FBgn0260986	mei-38	A0A1Z1CH00	1	12	Meiotic 38, isoform C	w
+MEIOTIC	fly	FBgn0262566	CG43106	A0A0B4K825	0	0	Meiotic from via Salaria 332	w
+MEIOTIC	human	A4GXA9	EME2	A4GXA9	8	90	Structure-specific endonuclease subunit EME2 (Essential meio	w
+MEIOTIC	human	O95072	REC8	O95072	20	121	Meiotic recombination protein REC8 homolog (Cohesin Rec8p)	w
+MEIOTIC	human	P49959	MRE11	P49959	65	430	Double-strand break repair protein MRE11 (EC 3.1.-.-) (Meiot	w
+MEIOTIC	human	Q0VDD7	BRME1	Q0VDD7	3	45	Break repair meiotic recombinase recruitment factor 1 (Pre-T	w
+MEIOTIC	human	Q14565	DMC1	Q14565	8	101	Meiotic recombination protein DMC1 homolog (EC 3.6.4.-)	w
+MEIOTIC	human	Q4G163	FBXO43	Q4G163	25	150	F-box only protein 43 (Endogenous meiotic inhibitor 2)	w
+MEIOTIC	human	Q7Z4M0	REC114	Q7Z4M0	9	120	Meiotic recombination protein REC114	w
+MEIOTIC	human	Q8N6T0	TOP6BL	Q8N6T0	2	6	Type 2 DNA topoisomerase 6 subunit B-like (TOP6B like initia	w
+MEIOTIC	human	Q8WYR4	RSPH1	Q8WYR4	51	177	Radial spoke head 1 homolog (Cancer/testis antigen 79) (CT79	w
+MEIOTIC	human	Q96AY2	EME1	Q96AY2	24	158	Structure-specific endonuclease subunit EME1 (Crossover junc	w
+MEIOTIC	human	Q9BWT6	MND1	Q9BWT6	13	100	Meiotic nuclear division protein 1 homolog	w
+MEIOTIC	human	Q9GZS3	SKIC8	Q9GZS3	54	722	Superkiller complex protein 8 (Ski8) (Meiotic recombination 	w
+MEIOTIC	human	Q9NWS8	RMND1	Q9NWS8	10	186	Required for meiotic nuclear division protein 1 homolog	w
+MEIOTIC	human	Q9Y5K1	SPO11	Q9Y5K1	3	45	Meiotic recombination protein SPO11 (EC 5.6.2.2) (Cancer/tes	w
+MEIOTIC	worm	O44740	mei-2	O44740	2	7	Meiotic spindle formation protein 2	w
+MEIOTIC	worm	P34808	mei-1	P34808	4	29	Meiotic spindle formation protein mei-1	w
+MEIOTIC	worm	Q18282	mesp-1	Q18282	0	11	MEiotic SPindle	w
+MEIOTIC	worm	Q22236	spo-11	Q22236	0	5	Meiotic recombination protein spo-11	w
+MEIOTIC	worm	Q9XUB3	rec-8	Q9XUB3	3	13	Meiotic recombination protein rec-8	w
+MEIOTIC	yeast	P16523	MER1	P16523	1	11	Meiotic recombination 1 protein	w
+MEIOTIC	yeast	P25453	DMC1	P25453	2	48	Meiotic recombination protein DMC1	w
+MEIOTIC	yeast	P32841	REC114	P32841	1	8	Meiotic recombination protein REC114	w
+MEIOTIC	yeast	P33323	REC104	P33323	0	7	Meiotic recombination protein REC104	w
+MEIOTIC	yeast	P38741	RIM4	P38741	2	44	Meiotic activator RIM4	w
+MEIOTIC	yeast	P39073	SSN3	P39073	2	80	Meiotic mRNA stability protein kinase SSN3 (EC 2.7.11.22) (E	w
+MEIOTIC	yeast	P53060	RMR1	P53060	2	18	Reduced meiotic recombination protein 1	w
+MEIOTIC	yeast	P53102	MND1	P53102	1	7	Meiotic nuclear division protein 1	w
+MEIOTIC	yeast	P53541	SPO1	P53541	0	8	Putative meiotic phospholipase SPO1	w
+MEIOTIC	yeast	Q02721	REC102	Q02721	2	9	Meiotic recombination protein REC102	w
+MEIOTIC	yeast	Q03104	MSC1	Q03104	0	5	Meiotic sister chromatid recombination protein 1	w
+MEIOTIC	yeast	Q04406	EMI1	Q04406	1	5	Early meiotic induction protein 1	w
+MEIOTIC	yeast	Q05812	MSC3	Q05812	4	40	Meiotic sister-chromatid recombination protein 3	w
+MEIOTIC	yeast	Q06201	GMC2	Q06201	1	2	Grand meiotic recombination cluster protein 2	w
+MEIOTIC	yeast	Q08550	MPC54	Q08550	3	18	Meiotic plaque component protein 54	w
+MEIOTIC	yeast	Q08818	MSC6	Q08818	1	10	Meiotic sister-chromatid recombination protein 6, mitochondr	w
+MEIOTIC	yeast	Q12188	REC8	Q12188	10	30	Meiotic recombination protein REC8	w
+MEIOTIC	zebrafish	A0A8M9P054	rmnd1	A0A8M9P054	0	2	Required for meiotic nuclear division 1 homolog	w
+MEIOTIC	zebrafish	Q6DC61	mnd1	Q6DC61	0	8	Meiotic nuclear division protein 1 homolog	w
+MEIR5	human	Q86XK3	SFR1	Q86XK3	16	102		
+MEIS1	human	O00470	MEIS1	O00470	65	412	Homeobox protein Meis1	
+MEIS1	mus-musculus	Q60954	Meis1	Q60954	15	35	Homeobox protein Meis1	
+MEIS1-RELATED	human	O14770	MEIS2	O14770	77	467	Homeobox protein Meis2 (Meis1-related protein 1)	w
+MEIS1-RELATED	human	Q99687	MEIS3	Q99687	60	361	Homeobox protein Meis3 (Meis1-related protein 2)	w
+MEIS1A	zebrafish	Q7SZP3	meis1a	Q7SZP3	6	8	Homeobox protein Meis1a	w
+MEIS1A	zebrafish	Q7SZP3	meis1a	Q7SZP3	6	8	Homeobox protein Meis1a	w
+MEIS1B	zebrafish	Q90XH2	meis1b	Q90XH2	13	23	Homeobox protein Meis1b	w
+MEIS1B	zebrafish	Q90XH2	meis1b	Q90XH2	13	23	Homeobox protein Meis1b	w
+MEIS1_HUMAN	human	O00470	MEIS1	O00470	65	412		
+MEIS2	human	O14770	MEIS2	O14770	77	467	Homeobox protein Meis2 (Meis1-related protein 1)	
+MEIS2	mus-musculus	P97367	Meis2	P97367	10	27	Homeobox protein Meis2	
+MEIS2	rattus-norvegicus	D4A2T5	Meis2	D4A2T5	7	30	Meis homeobox 2	
+MEIS2_HUMAN	human	O14770	MEIS2	O14770	77	467		
+MEIS3	human	Q99687	MEIS3	Q99687	60	361	Homeobox protein Meis3 (Meis1-related protein 2)	
+MEIS3	mus-musculus	P97368	Meis3	P97368	3	7	Homeobox protein Meis3	
+MEIS3	rattus-norvegicus	D4A9U2	Meis3	D4A9U2	1	5	Meis homeobox 3	
+MEIS3	zebrafish	Q90ZE3	meis3	Q90ZE3	7	9	Homeobox protein Meis3	w
+MEIS3	zebrafish	Q90ZE3	meis3	Q90ZE3	7	9	Homeobox protein Meis3	w
+MEIS3-LIKE	human	A6NDR6	MEIS3P1	A6NDR6	1	3	Putative homeobox protein Meis3-like 1	w
+MEIS3-LIKE	human	A8K0S8	MEIS3P2	A8K0S8	1	8	Putative homeobox protein Meis3-like 2	w
+MEIS3P1	human	A6NDR6	MEIS3P1	A6NDR6	1	3	Putative homeobox protein Meis3-like 1	
+MEIS3P2	human	A8K0S8	MEIS3P2	A8K0S8	1	8	Putative homeobox protein Meis3-like 2	
+MEIS3_HUMAN	human	Q99687	MEIS3	Q99687	60	361		

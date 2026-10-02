@@ -1,11 +1,58 @@
-NEI	escherichia-coli-83333	P50465	nei	P50465	1	3	Endonuclease 8
-NEI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GU47	nei	A0A0H3GU47	0	4	Endonuclease 8
-NEI	salmonella-typhimurium	P0CL05	nei	P0CL05	0	3	Endonuclease 8
-NEI	shigella-dysenteriae-serotype-1	Q32IL9	nei	Q32IL9	0	3	Endonuclease 8
-NEI1	mycobacterium-tuberculosis	P9WNB9	nei1	P9WNB9	0	2	Endonuclease 8 1
-NEI2	mycobacterium-tuberculosis	P9WNC1	nei2	P9WNC1	0	2	Endonuclease 8 2
-NEIL1	mus-musculus	Q8K4Q6	Neil1	Q8K4Q6	1	23	Endonuclease 8-like 1
-NEIL2	mus-musculus	Q6R2P8	Neil2	Q6R2P8	0	16	Endonuclease 8-like 2
-NEIL2	rattus-norvegicus	D4ABX3	Neil2	D4ABX3	0	16	Endonuclease 8-like 2
-NEIL3	mus-musculus	Q8K203	Neil3	Q8K203	0	5	Endonuclease 8-like 3
-NEIL3	rattus-norvegicus	D3ZKJ8	Neil3	D3ZKJ8	0	27	Endonuclease 8-like 3
+NEI	escherichia-coli-83333	P50465	nei	P50465	1	3	Endonuclease 8	
+NEI	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GU47	nei	A0A0H3GU47	0	4	Endonuclease 8	
+NEI	salmonella-typhimurium	P0CL05	nei	P0CL05	0	3	Endonuclease 8	
+NEI	shigella-dysenteriae-serotype-1	Q32IL9	nei	Q32IL9	0	3	Endonuclease 8	
+NEI-LIKE	human	Q8TAT5	NEIL3	Q8TAT5	9	226	Endonuclease 8-like 3 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+NEI1	mycobacterium-tuberculosis	P9WNB9	nei1	P9WNB9	0	2	Endonuclease 8 1	
+NEI2	mycobacterium-tuberculosis	P9WNC1	nei2	P9WNC1	0	2	Endonuclease 8 2	
+NEIGHBOR	fly	FBgn0086695	hd	Q9VNA8	1	6	Protein downstream neighbor of son homolog (Protein humpty d	w
+NEIGHBOR	fly	FBgn0260960	Baldspot	Q9VV87	7	116	Very long chain fatty acid elongase 6 (ELOVL6) (EC 2.3.1.199	w
+NEIGHBOR	human	A0A087WV53	SPEGNB	A0A087WV53	2	28	SPEG neighbor protein	w
+NEIGHBOR	human	A0A0U1RQF7	DPEP2NB	A0A0U1RQF7	0	2	DPEP2 neighbor protein	w
+NEIGHBOR	human	A0A1B0GUX0	SPMIP1	A0A1B0GUX0	5	45	Protein SPMIP1 (ATP6V1F neighbor gene protein) (Protein ATP6	w
+NEIGHBOR	human	A0A1B0GV96	CHD9NB	A0A1B0GV96	1	11	CHD9 neighbor protein	w
+NEIGHBOR	human	A0A1B0GWH6	LASP1NB	A0A1B0GWH6	2	8	LASP1 neighbor protein (Long intergenic non-protein coding R	w
+NEIGHBOR	human	A6NC62	RBAKDN	A6NC62	0	10	RBAK downstream neighbor protein	w
+NEIGHBOR	human	A6NGE7	URAD	A6NGE7	3	12	Putative 2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline decar	w
+NEIGHBOR	human	F2Z398	LMO7DN	F2Z398	0	3	LMO7 downstream neighbor protein	w
+NEIGHBOR	human	O43402	EMC8	O43402	27	220	ER membrane protein complex subunit 8 (Neighbor of COX4) (Pr	w
+NEIGHBOR	human	P0CAT3	TLX1NB	P0CAT3	0	4	Putative TLX1 neighbor protein (TLX1 divergent gene protein)	w
+NEIGHBOR	human	P56277	CMC4	P56277	14	83	Cx9C motif-containing protein 4 (Mature T-cell proliferation	w
+NEIGHBOR	human	Q06250	WT1-AS	Q06250	4	14	Putative Wilms tumor upstream neighbor 1 gene protein (WIT-1	w
+NEIGHBOR	human	Q13405	MRPL49	Q13405	18	406	Large ribosomal subunit protein mL49 (39S ribosomal protein 	w
+NEIGHBOR	human	Q14596	NBR1	Q14596	211	688	Next to BRCA1 gene 1 protein (Cell migration-inducing gene 1	w
+NEIGHBOR	human	Q3B726	POLR1F	Q3B726	58	475	DNA-directed RNA polymerase I subunit RPA43 (DNA-directed RN	w
+NEIGHBOR	human	Q6ZP68	ATP11AUN	Q6ZP68	0	6	Putative protein ATP11AUN (Putative ATP11A upstream neighbor	w
+NEIGHBOR	human	Q6ZUU3	FOXL2NB	Q6ZUU3	1	10	FOXL2 neighbor protein	w
+NEIGHBOR	human	Q7Z5D8	NANOGNB	Q7Z5D8	1	15	NANOG neighbor homeobox (Homeobox protein C14)	w
+NEIGHBOR	human	Q86VQ6	TXNRD3	Q86VQ6	6	30	Thioredoxin reductase 3 (EC 1.8.1.9) (Thioredoxin and glutat	w
+NEIGHBOR	human	Q8N0W7	FMR1NB	Q8N0W7	2	36	FMR1 neighbor protein (Cancer/testis antigen 37) (CT37) (Sar	w
+NEIGHBOR	human	Q8NCS4	TMEM35B	Q8NCS4	4	37	Transmembrane protein 35B (ZMYM6 neighbor protein)	w
+NEIGHBOR	human	Q8TDY8	IGDCC4	Q8TDY8	39	149	Immunoglobulin superfamily DCC subclass member 4 (Neighbor o	w
+NEIGHBOR	human	Q96EB1	ELP4	Q96EB1	32	507	Elongator complex protein 4 (hELP4) (PAX6 neighbor gene prot	w
+NEIGHBOR	human	Q96FH0	BORCS8	Q96FH0	15	97	BLOC-1-related complex subunit 8 (MEF2B neighbor)	w
+NEIGHBOR	human	Q9H478	KCNQ1DN	Q9H478	0	11	KCNQ1 downstream neighbor protein (Beckwith-Wiedemann region	w
+NEIGHBOR	human	Q9NYP3	DONSON	Q9NYP3	49	422	Protein downstream neighbor of Son (B17)	w
+NEIGHBOR	human	Q9ULX6	AKAP8L	Q9ULX6	30	302	A-kinase anchor protein 8-like (AKAP8-like protein) (Helicas	w
+NEIGHBOR	human	X6R8D5	CIMIP3	X6R8D5	1	16	Ciliary microtubule inner protein 3 (GUCA1A neighbor)	w
+NEIGHBOR	worm	Q95X82	dnsn-1	Q95X82	0	4	Downstream Neighbor of SoN homolog	w
+NEIGHBOR	zebrafish	Q7ZUY2	emc8	Q7ZUY2	3	11	Cox4 neighbor	w
+NEIGHBOUR	fly	FBgn0011297	Alg3	Q27333	3	13	Lethal(2)neighbour of tid protein (NOT45) (NOT56)	w
+NEIGHBOURING	human	Q96C90	PPP1R14B	Q96C90	17	71	Protein phosphatase 1 regulatory subunit 14B (Phospholipase 	w
+NEIL1	human	Q96FI4	NEIL1	Q96FI4	18	356	Endonuclease 8-like 1 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	
+NEIL1	mus-musculus	Q8K4Q6	Neil1	Q8K4Q6	1	23	Endonuclease 8-like 1	
+NEIL1	zebrafish	Q6TGW9	neil1	Q6TGW9	0	29	Endonuclease 8-like 1	
+NEIL1_HUMAN	human	Q96FI4	NEIL1	Q96FI4	18	356		
+NEIL2	human	Q969S2	NEIL2	Q969S2	6	158	Endonuclease 8-like 2 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	
+NEIL2	mus-musculus	Q6R2P8	Neil2	Q6R2P8	0	16	Endonuclease 8-like 2	
+NEIL2	rattus-norvegicus	D4ABX3	Neil2	D4ABX3	0	16	Endonuclease 8-like 2	
+NEIL2_HUMAN	human	Q969S2	NEIL2	Q969S2	6	158		
+NEIL3	human	Q8TAT5	NEIL3	Q8TAT5	9	226	Endonuclease 8-like 3 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	
+NEIL3	mus-musculus	Q8K203	Neil3	Q8K203	0	5	Endonuclease 8-like 3	
+NEIL3	rattus-norvegicus	D3ZKJ8	Neil3	D3ZKJ8	0	27	Endonuclease 8-like 3	
+NEIL3	zebrafish	F1Q570	neil3	F1Q570	0	3	Endonuclease 8-like 3	
+NEIL3_HUMAN	human	Q8TAT5	NEIL3	Q8TAT5	9	226		
+NEIT	fly	FBgn0002937	ninaB	Q9VFS2	0	5	Carotenoid isomerooxygenase (EC 1.13.11.65) (Beta-carotene 1	w
+NEITHER	fly	FBgn0002938	ninaC	P10676	115	1099	Neither inactivation nor afterpotential protein C (EC 2.7.11	w
+NEITHER	fly	FBgn0002939	ninaD	Q8INY3	3	64	FI02050p (Neither inactivation nor afterpotential D, isoform	w
+NEITHER	fly	FBgn0002940	ninaE	P06002	9	118	Opsin Rh1 (Neither inactivation nor afterpotential E protein	w

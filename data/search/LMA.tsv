@@ -1,9 +1,27 @@
-LMAIRK	leishmania-infantum	A4I3C6	LMAIRK	A4I3C6	0	32	Aurora kinase
-LMAN1	mus-musculus	Q9D0F3	Lman1	Q9D0F3	7	68	Protein ERGIC-53
-LMAN1	rattus-norvegicus	Q62902	Lman1	Q62902	6	55	Protein ERGIC-53
-LMAN1L	mus-musculus	Q8VCD3	Lman1l	Q8VCD3	4	43	Protein ERGIC-53-like
-LMAN1L	rattus-norvegicus	Q5FB95	Lman1l	Q5FB95	5	37	Protein ERGIC-53-like
-LMAN2	mus-musculus	Q9DBH5	Lman2	Q9DBH5	5	40	Vesicular integral-membrane protein VIP36
-LMAN2	rattus-norvegicus	F7FPK8	Lman2	F7FPK8	8	35	Lectin, mannose-binding 2
-LMAN2L	mus-musculus	P59481	Lman2l	P59481	2	49	VIP36-like protein
-LMAN2L	rattus-norvegicus	F7F3Z1	Lman2l	F7F3Z1	2	35	Lectin, mannose-binding 2-like
+LMA1L_HUMAN	human	Q9HAT1	LMAN1L	Q9HAT1	7	60		
+LMA2L_HUMAN	human	Q9H0V9	LMAN2L	Q9H0V9	22	173		
+LMAIRK	leishmania-infantum	A4I3C6	LMAIRK	A4I3C6	0	32	Aurora kinase	
+LMAN1	human	P49257	LMAN1	P49257	46	450	Protein ERGIC-53 (ER-Golgi intermediate compartment 53 kDa p	
+LMAN1	mus-musculus	Q9D0F3	Lman1	Q9D0F3	7	68	Protein ERGIC-53	
+LMAN1	rattus-norvegicus	Q62902	Lman1	Q62902	6	55	Protein ERGIC-53	
+LMAN1	zebrafish	A0AB13A3S9	lman1	A0AB13A3S9	4	52	Protein ERGIC-53 precursor	
+LMAN1-LIKE	human	Q9HAT1	LMAN1L	Q9HAT1	7	60	Protein ERGIC-53-like (ERGIC53-like protein) (Lectin mannose	w
+LMAN1L	human	Q9HAT1	LMAN1L	Q9HAT1	7	60	Protein ERGIC-53-like (ERGIC53-like protein) (Lectin mannose	
+LMAN1L	mus-musculus	Q8VCD3	Lman1l	Q8VCD3	4	43	Protein ERGIC-53-like	
+LMAN1L	rattus-norvegicus	Q5FB95	Lman1l	Q5FB95	5	37	Protein ERGIC-53-like	
+LMAN1_HUMAN	human	P49257	LMAN1	P49257	46	450		
+LMAN2	human	Q12907	LMAN2	Q12907	32	189	Vesicular integral-membrane protein VIP36 (Glycoprotein GP36	
+LMAN2	mus-musculus	Q9DBH5	Lman2	Q9DBH5	5	40	Vesicular integral-membrane protein VIP36	
+LMAN2	rattus-norvegicus	F7FPK8	Lman2	F7FPK8	8	35	Lectin, mannose-binding 2	
+LMAN2	zebrafish	A5PMC4	lman2	A5PMC4	7	31	Lectin, mannose-binding 2	
+LMAN2-LIKE	human	Q9H0V9	LMAN2L	Q9H0V9	22	173	VIP36-like protein (Lectin mannose-binding 2-like) (LMAN2-li	w
+LMAN2L	human	Q9H0V9	LMAN2L	Q9H0V9	22	173	VIP36-like protein (Lectin mannose-binding 2-like) (LMAN2-li	
+LMAN2L	mus-musculus	P59481	Lman2l	P59481	2	49	VIP36-like protein	
+LMAN2L	rattus-norvegicus	F7F3Z1	Lman2l	F7F3Z1	2	35	Lectin, mannose-binding 2-like	
+LMAN2_HUMAN	human	Q12907	LMAN2	Q12907	32	189		
+LMANI	fly	FBgn0032253	LManI	Q9VKV2	0	1	Alpha-mannosidase (EC 3.2.1.-)	
+LMANII	fly	FBgn0027611	LManII	Q9VKV1	8	204	Alpha-mannosidase (EC 3.2.1.-)	
+LMANIII	fly	FBgn0032066	LManIII	Q9VLI2	0	4	Alpha-mannosidase (EC 3.2.1.-)	
+LMANIV	fly	FBgn0032067	LManIV	Q9VLI1	0	12	Alpha-mannosidase (EC 3.2.1.-)	
+LMANV	fly	FBgn0032068	LManV	Q9VLI0	13	247	Alpha-mannosidase (EC 3.2.1.-)	
+LMANVI	fly	FBgn0032069	LManVI	Q9VLH9	1	4	Alpha-mannosidase (EC 3.2.1.-)	

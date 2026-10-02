@@ -1,13 +1,43 @@
-AFG1	candida-albicans-237561	A0A1D8PEE3	AFG1	A0A1D8PEE3	0	1	Afg1p
-AFG1	cladophialophora-carrionii	A0A1C1CRG3	AFG1	A0A1C1CRG3	0	6	Protein AFG1
-AFG1L	mus-musculus	Q3V384	Afg1l	Q3V384	0	2	AFG1-like ATPase
-AFG2	cladophialophora-carrionii	A0A1C1CSB2	afg2	A0A1C1CSB2	1	91	ATPase family protein 2 protein
-AFG2	schizosaccharomyces-pombe	O60058	afg2	O60058	0	48	ATPase family gene 2 protein
-AFG2A	mus-musculus	Q3UMC0	Afg2a	Q3UMC0	0	74	ATPase family gene 2 protein homolog A
-AFG2A	rattus-norvegicus	A0A0G2K0I1	Afg2a	A0A0G2K0I1	3	119	AFG2 AAA ATPase homolog A
-AFG2B	rattus-norvegicus	D4A2B7	Afg2b	D4A2B7	3	121	ATPase family gene 2 protein homolog B
-AFG3	candida-albicans-237561	Q5AJC2	AFG3	Q5AJC2	1	12	AAA family ATPase
-AFG3L1	mus-musculus	Q920A7	Afg3l1	Q920A7	4	78	Mitochondrial inner membrane m-AAA protease component AFG3L1
-AFG3L1	rattus-norvegicus	D3ZZ20	Afg3l1	D3ZZ20	5	127	AFG3 (ATPase family gene 3)-like 1
-AFG3L2	mus-musculus	Q8JZQ2	Afg3l2	Q8JZQ2	5	96	Mitochondrial inner membrane m-AAA protease component AFG3L2
-AFG3L2	rattus-norvegicus	F1LN92	Afg3l2	F1LN92	5	128	AFG3 like matrix AAA peptidase subunit 2
+AFG1	candida-albicans-237561	A0A1D8PEE3	AFG1	A0A1D8PEE3	0	1	Afg1p	
+AFG1	cladophialophora-carrionii	A0A1C1CRG3	AFG1	A0A1C1CRG3	0	6	Protein AFG1	
+AFG1	human	Q8WV93	AFG1L	Q8WV93	4	50		
+AFG1	yeast	P32317	AFG1	P32317	0	7	Protein AFG1	
+AFG1-LIKE	human	Q8WV93	AFG1L	Q8WV93	4	50	AFG1-like ATPase (Lactation elevated protein 1) (EC 3.6.-.-)	w
+AFG1-LIKE	zebrafish	X1WDT8	afg1la	X1WDT8	0	3	AFG1-like ATPase a	w
+AFG1L	human	Q8WV93	AFG1L	Q8WV93	4	50	AFG1-like ATPase (Lactation elevated protein 1) (EC 3.6.-.-)	
+AFG1L	mus-musculus	Q3V384	Afg1l	Q3V384	0	2	AFG1-like ATPase	
+AFG1LA	zebrafish	X1WDT8	afg1la	X1WDT8	0	3	AFG1-like ATPase a	
+AFG1L_HUMAN	human	Q8WV93	AFG1L	Q8WV93	4	50		
+AFG2	cladophialophora-carrionii	A0A1C1CSB2	afg2	A0A1C1CSB2	1	91	ATPase family protein 2 protein	
+AFG2	human	Q8NB90	AFG2A	Q8NB90	12	220	ATPase family gene 2 protein homolog A (EC 3.6.4.10) (AFG2 A	w
+AFG2	human	Q9BVQ7	AFG2B	Q9BVQ7	5	273	ATPase family gene 2 protein homolog B (EC 3.6.4.10) (AFG2 A	w
+AFG2	schizosaccharomyces-pombe	O60058	afg2	O60058	0	48	ATPase family gene 2 protein	
+AFG2	yeast	P32794	AFG2	P32794	3	147	ATPase family gene 2 protein	
+AFG2-INTERACTING	human	Q9NX04	AIRIM	Q9NX04	29	343	AFG2-interacting ribosome maturation factor (Ribosome biogen	w
+AFG2-INTERACTING	zebrafish	Q8JHH5	airim	Q8JHH5	2	3	AFG2-interacting ribosome maturation factor	w
+AFG2A	human	Q8NB90	AFG2A	Q8NB90	12	220	ATPase family gene 2 protein homolog A (EC 3.6.4.10) (AFG2 A	
+AFG2A	mus-musculus	Q3UMC0	Afg2a	Q3UMC0	0	74	ATPase family gene 2 protein homolog A	
+AFG2A	rattus-norvegicus	A0A0G2K0I1	Afg2a	A0A0G2K0I1	3	119	AFG2 AAA ATPase homolog A	
+AFG2A_HUMAN	human	Q8NB90	AFG2A	Q8NB90	12	220		
+AFG2B	human	Q9BVQ7	AFG2B	Q9BVQ7	5	273	ATPase family gene 2 protein homolog B (EC 3.6.4.10) (AFG2 A	
+AFG2B	rattus-norvegicus	D4A2B7	Afg2b	D4A2B7	3	121	ATPase family gene 2 protein homolog B	
+AFG2B	zebrafish	F1Q8W3	afg2b	F1Q8W3	2	173	ATPase family gene 2 protein homolog B	
+AFG2B_HUMAN	human	Q9BVQ7	AFG2B	Q9BVQ7	5	273		
+AFG3	candida-albicans-237561	Q5AJC2	AFG3	Q5AJC2	1	12	AAA family ATPase	
+AFG3	fly	FBgn0036702	Afg3l2	Q8T4G5	4	115	AFG3 like matrix AAA peptidase subunit 2, isoform A (EC 3.4.	w
+AFG3	yeast	P39925	AFG3	P39925	2	22	Mitochondrial inner membrane m-AAA protease component YTA10	
+AFG3-LIKE	human	Q9Y4W6	AFG3L2	Q9Y4W6	23	435	Mitochondrial inner membrane m-AAA protease component AFG3L2	w
+AFG3-LIKE	worm	Q9N3T5	spg-7	Q9N3T5	2	28	AFG3-like protein spg-7	w
+AFG3-LIKE	zebrafish	A9JRG9	afg3l2	A9JRG9	5	113	AFG3-like AAA ATPase 2	w
+AFG32_HUMAN	human	Q9Y4W6	AFG3L2	Q9Y4W6	23	435		
+AFG3L1	mus-musculus	Q920A7	Afg3l1	Q920A7	4	78	Mitochondrial inner membrane m-AAA protease component AFG3L1	
+AFG3L1	rattus-norvegicus	D3ZZ20	Afg3l1	D3ZZ20	5	127	AFG3 (ATPase family gene 3)-like 1	
+AFG3L1	zebrafish	E7F6D6	afg3l1	E7F6D6	5	111	Mitochondrial inner membrane m-AAA protease component AFG3L1	w
+AFG3L1	zebrafish	E7F6D6	afg3l1	E7F6D6	5	111	Mitochondrial inner membrane m-AAA protease component AFG3L1	w
+AFG3L2	fly	FBgn0036702	Afg3l2	Q8T4G5	4	115	AFG3 like matrix AAA peptidase subunit 2, isoform A (EC 3.4.	
+AFG3L2	human	Q9Y4W6	AFG3L2	Q9Y4W6	23	435	Mitochondrial inner membrane m-AAA protease component AFG3L2	
+AFG3L2	mus-musculus	Q8JZQ2	Afg3l2	Q8JZQ2	5	96	Mitochondrial inner membrane m-AAA protease component AFG3L2	
+AFG3L2	rattus-norvegicus	F1LN92	Afg3l2	F1LN92	5	128	AFG3 like matrix AAA peptidase subunit 2	
+AFG3L2	zebrafish	A9JRG9	afg3l2	A9JRG9	5	113	AFG3-like AAA ATPase 2	
+AFGF	human	O43427	FIBP	O43427	2	97	Acidic fibroblast growth factor intracellular-binding protei	w
+AFGF	human	P05230	FGF1	P05230	17	206	Fibroblast growth factor 1 (FGF-1) (Acidic fibroblast growth	w

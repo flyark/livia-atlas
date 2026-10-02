@@ -1,31 +1,900 @@
-GROEL	campylobacter-jejuni-subsp-jejuni-serotype-o-2	O69289	groEL	O69289	3	156	Chaperonin GroEL
-GROEL	escherichia-coli-83333	P0A6F5	groEL	P0A6F5	5	96	Chaperonin GroEL
-GROEL	haemophilus-influenzae	P43733	groEL	P43733	1	37	Chaperonin GroEL
-GROEL	helicobacter-pylori	P42383	groEL	P42383	2	56	Chaperonin GroEL
-GROEL	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GHX9	groEL	A0A0H3GHX9	5	317	Chaperonin GroEL
-GROEL	neisseria-gonorrhoeae	Q5F541	groEL	Q5F541	2	78	Chaperonin GroEL
-GROEL	nocardia-brasiliensis	K0EPM3	groEL	K0EPM3	4	174	Chaperonin GroEL
-GROEL	nocardia-brasiliensis	K0F819	groEL	K0F819	4	175	Chaperonin GroEL
-GROEL	pseudomonas-aeruginosa	P30718	groEL	P30718	4	141	Chaperonin GroEL
-GROEL	salmonella-typhimurium	P0A1D3	groEL	P0A1D3	2	121	Chaperonin GroEL
-GROEL	shigella-dysenteriae-serotype-1	Q328C4	groEL	Q328C4	1	103	Chaperonin GroEL
-GROEL	staphylococcus-aureus-93061	Q2FWN4	groEL	Q2FWN4	2	48	Chaperonin GroEL
-GROEL	streptococcus-pneumoniae	P0A336	groEL	P0A336	1	49	Chaperonin GroEL
-GROEL1	mycobacterium-leprae	P37578	groEL1	P37578	6	119	Chaperonin GroEL 1
-GROEL1	mycobacterium-tuberculosis	P9WPE9	groEL1	P9WPE9	3	51	Chaperonin GroEL 1
-GROEL2	mycobacterium-leprae	P09239	groEL2	P09239	7	119	Chaperonin GroEL 2
-GROEL2	mycobacterium-tuberculosis	P9WPE7	groEL2	P9WPE7	3	57	Chaperonin GroEL 2
-GROES	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P56970	groES	P56970	3	52	Co-chaperonin GroES
-GROES	escherichia-coli-83333	P0A6F9	groES	P0A6F9	1	18	Co-chaperonin GroES
-GROES	haemophilus-influenzae	P43734	groES	P43734	1	11	Co-chaperonin GroES
-GROES	helicobacter-pylori	P0A0R3	groES	P0A0R3	1	14	Co-chaperonin GroES
-GROES	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GM71	groES	A0A0H3GM71	4	120	Co-chaperonin GroES
-GROES	mycobacterium-leprae	P24301	groES	P24301	2	61	Co-chaperonin GroES
-GROES	mycobacterium-tuberculosis	P9WPE5	groES	P9WPE5	2	26	Co-chaperonin GroES
-GROES	neisseria-gonorrhoeae	Q5F542	groES	Q5F542	1	18	Co-chaperonin GroES
-GROES	nocardia-brasiliensis	K0EI16	groES	K0EI16	2	54	Co-chaperonin GroES
-GROES	pseudomonas-aeruginosa	P30720	groES	P30720	1	31	Co-chaperonin GroES
-GROES	salmonella-typhimurium	P0A1D5	groES	P0A1D5	2	26	Co-chaperonin GroES
-GROES	shigella-dysenteriae-serotype-1	Q328C5	groES	Q328C5	3	26	Co-chaperonin GroES
-GROES	staphylococcus-aureus-93061	Q2FWN3	groES	Q2FWN3	1	11	Co-chaperonin GroES
-GROES	streptococcus-pneumoniae	Q8CWN9	groES	Q8CWN9	1	10	Co-chaperonin GroES
+GRO	fly	FBgn0001139	gro	P16371	183	486	Protein groucho (Enhancer of split m9/10 protein) (E(spl)m9/	
+GRO	human	P09341	CXCL1	P09341	111	761		
+GRO-ALPHA	human	P09341	CXCL1	P09341	111	761	Growth-regulated alpha protein (C-X-C motif chemokine 1) (GR	w
+GRO-BET	human	P19875	CXCL2	P19875	80	410	C-X-C motif chemokine 2 (Growth-regulated protein beta) (Gro	w
+GRO-BETA	human	P19875	CXCL2	P19875	80	410	C-X-C motif chemokine 2 (Growth-regulated protein beta) (Gro	w
+GRO-G	human	P19876	CXCL3	P19876	64	399	C-X-C motif chemokine 3 (GRO-gamma(1-73)) (Growth-regulated 	w
+GRO-GAMMA	human	P19876	CXCL3	P19876	64	399	C-X-C motif chemokine 3 (GRO-gamma(1-73)) (Growth-regulated 	w
+GRO1	human	P09341	CXCL1	P09341	111	761		
+GRO2	human	P19875	CXCL2	P19875	80	410		
+GRO3	human	P19876	CXCL3	P19876	64	399		
+GROA	human	P09341	CXCL1	P09341	111	761		
+GROA_HUMAN	human	P09341	CXCL1	P09341	111	761		
+GROB	human	P19875	CXCL2	P19875	80	410		
+GROEL	campylobacter-jejuni-subsp-jejuni-serotype-o-2	O69289	groEL	O69289	3	156	Chaperonin GroEL	
+GROEL	escherichia-coli-83333	P0A6F5	groEL	P0A6F5	5	96	Chaperonin GroEL	
+GROEL	haemophilus-influenzae	P43733	groEL	P43733	1	37	Chaperonin GroEL	
+GROEL	helicobacter-pylori	P42383	groEL	P42383	2	56	Chaperonin GroEL	
+GROEL	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GHX9	groEL	A0A0H3GHX9	5	317	Chaperonin GroEL	
+GROEL	neisseria-gonorrhoeae	Q5F541	groEL	Q5F541	2	78	Chaperonin GroEL	
+GROEL	nocardia-brasiliensis	K0EPM3	groEL	K0EPM3	4	174	Chaperonin GroEL	
+GROEL	nocardia-brasiliensis	K0F819	groEL	K0F819	4	175	Chaperonin GroEL	
+GROEL	pseudomonas-aeruginosa	P30718	groEL	P30718	4	141	Chaperonin GroEL	
+GROEL	salmonella-typhimurium	P0A1D3	groEL	P0A1D3	2	121	Chaperonin GroEL	
+GROEL	shigella-dysenteriae-serotype-1	Q328C4	groEL	Q328C4	1	103	Chaperonin GroEL	
+GROEL	staphylococcus-aureus-93061	Q2FWN4	groEL	Q2FWN4	2	48	Chaperonin GroEL	
+GROEL	streptococcus-pneumoniae	P0A336	groEL	P0A336	1	49	Chaperonin GroEL	
+GROEL1	mycobacterium-leprae	P37578	groEL1	P37578	6	119	Chaperonin GroEL 1	
+GROEL1	mycobacterium-tuberculosis	P9WPE9	groEL1	P9WPE9	3	51	Chaperonin GroEL 1	
+GROEL2	mycobacterium-leprae	P09239	groEL2	P09239	7	119	Chaperonin GroEL 2	
+GROEL2	mycobacterium-tuberculosis	P9WPE7	groEL2	P9WPE7	3	57	Chaperonin GroEL 2	
+GROES	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P56970	groES	P56970	3	52	Co-chaperonin GroES	
+GROES	escherichia-coli-83333	P0A6F9	groES	P0A6F9	1	18	Co-chaperonin GroES	
+GROES	haemophilus-influenzae	P43734	groES	P43734	1	11	Co-chaperonin GroES	
+GROES	helicobacter-pylori	P0A0R3	groES	P0A0R3	1	14	Co-chaperonin GroES	
+GROES	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GM71	groES	A0A0H3GM71	4	120	Co-chaperonin GroES	
+GROES	mycobacterium-leprae	P24301	groES	P24301	2	61	Co-chaperonin GroES	
+GROES	mycobacterium-tuberculosis	P9WPE5	groES	P9WPE5	2	26	Co-chaperonin GroES	
+GROES	neisseria-gonorrhoeae	Q5F542	groES	Q5F542	1	18	Co-chaperonin GroES	
+GROES	nocardia-brasiliensis	K0EI16	groES	K0EI16	2	54	Co-chaperonin GroES	
+GROES	pseudomonas-aeruginosa	P30720	groES	P30720	1	31	Co-chaperonin GroES	
+GROES	salmonella-typhimurium	P0A1D5	groES	P0A1D5	2	26	Co-chaperonin GroES	
+GROES	shigella-dysenteriae-serotype-1	Q328C5	groES	Q328C5	3	26	Co-chaperonin GroES	
+GROES	staphylococcus-aureus-93061	Q2FWN3	groES	Q2FWN3	1	11	Co-chaperonin GroES	
+GROES	streptococcus-pneumoniae	Q8CWN9	groES	Q8CWN9	1	10	Co-chaperonin GroES	
+GROG	human	P19876	CXCL3	P19876	64	399		
+GROOVELESS	fly	FBgn0290559	gvl	Q8SYQ4	33	245	grooveless	w
+GROS1	human	Q32P28	P3H1	Q32P28	30	203		
+GROSS	human	P12273	PIP	P12273	105	376	Prolactin-inducible protein (Gross cystic disease fluid prot	w
+GROUCHO	fly	FBgn0001139	gro	P16371	183	486	Protein groucho (Enhancer of split m9/10 protein) (E(spl)m9/	w
+GROUCHO-LIKE	human	Q04724	TLE1	Q04724	122	308	Transducin-like enhancer protein 1 (E(Sp1) homolog) (Enhance	w
+GROUCHO-LIKE	human	Q04725	TLE2	Q04725	68	175	Transducin-like enhancer protein 2 (Enhancer of split grouch	w
+GROUCHO-LIKE	human	Q04726	TLE3	Q04726	179	420	Transducin-like enhancer protein 3 (Enhancer of split grouch	w
+GROUCHO-RELATED	human	Q04727	TLE4	Q04727	85	176	Transducin-like enhancer protein 4 (Grg-4) (Groucho-related 	w
+GROUCHO-RELATED	human	Q08117	TLE5	Q08117	42	450	TLE family member 5 (Amino-terminal enhancer of split) (Amin	w
+GROUND-LIKE	worm	A0A9S1	CELE_Y55F3BR.11	A0A9S1	0	7	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	D6VP99	grl-30	D6VP99	0	9	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	O16462	grd-5	O16462	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	O18015	grl-7	O18015	0	5	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	O44471	grd-10	O44471	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	O61947	grl-28	O61947	0	6	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	O61948	grl-29	O61948	0	6	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	O76386	grl-1	O76386	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q18880	grl-17	Q18880	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q19120	grd-12	Q19120	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q19385	CELE_F13B9.2	Q19385	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q20327	grl-4	Q20327	0	3	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q21635	CELE_R02D5.3	Q21635	0	7	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q21835	grd-1	Q21835	0	8	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q23248	grl-21	Q23248	0	7	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q3Y407	grd-7	Q3Y407	0	4	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q7YXB4	grd-15	Q7YXB4	0	16	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q8WSP0	CELE_Y34B4A.10	Q8WSP0	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q93424	grl-23	Q93424	0	6	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q95X43	grl-26	Q95X43	0	6	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q9N2Z2	grd-16	Q9N2Z2	1	24	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q9N3V3	grl-5	Q9N3V3	0	12	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q9N5U2	grl-27	Q9N5U2	0	7	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q9TXS7	grl-31	Q9TXS7	0	7	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q9U3J9	grl-24	Q9U3J9	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q9XUP5	grl-2	Q9XUP5	0	1	Ground-like domain-containing protein	w
+GROUND-LIKE	worm	Q9XV14	grd-2	Q9XV14	0	8	Ground-like domain-containing protein	w
+GROUNDHOG	worm	Q9XUV2	grd-11	Q9XUV2	0	8	GRounDhog (Hedgehog-like family)	w
+GROUP	fly	FBgn0000546	EcR	P34021	126	506	Ecdysone receptor (20-hydroxy-ecdysone receptor) (20E recept	w
+GROUP	fly	FBgn0000560	eg	P15370	102	394	Protein embryonic gonad (Nuclear receptor subfamily 0 group 	w
+GROUP	fly	FBgn0000568	Eip75B	P13055	117	396	Ecdysone-induced protein 75B, isoform B (E75-C) (Nuclear rec	w
+GROUP	fly	FBgn0001078	ftz-f1	P33244	65	194	Nuclear hormone receptor FTZ-F1 (FTZ-F1 alpha) (Nuclear rece	w
+GROUP	fly	FBgn0001323	knrl	P13054	107	365	Knirps-related protein (Nuclear receptor subfamily 0 group A	w
+GROUP	fly	FBgn0003042	Pc	P26017	126	514	Polycomb group protein Pc (Protein polycomb)	w
+GROUP	fly	FBgn0003720	tll	P18102	59	413	Protein tailless (Nuclear receptor subfamily 2 group E membe	w
+GROUP	fly	FBgn0003964	usp	P20153	36	438	Protein ultraspiracle (Chorion factor 1) (Nuclear receptor s	w
+GROUP	fly	FBgn0004362	HmgD	Q05783	67	519	High mobility group protein D (HMG-D)	w
+GROUP	fly	FBgn0004698	Xpc	Q24595	7	58	Xeroderma pigmentosum, complementation group C	w
+GROUP	fly	FBgn0004832	Xpac	P28518	7	88	DNA repair protein complementing XP-A cells homolog (Xeroder	w
+GROUP	fly	FBgn0004865	Eip78C	P45447	126	418	Ecdysone-induced protein 78C (DR-78) (Nuclear receptor subfa	w
+GROUP	fly	FBgn0005624	Psc	P35820	19	82	Polycomb group protein Psc (Protein posterior sex combs)	w
+GROUP	fly	FBgn0010228	HmgZ	Q06943	47	403	High mobility group protein Z (HMG-Z)	w
+GROUP	fly	FBgn0015239	Hr78	Q24142	77	639	Nuclear hormone receptor HR78 (dHR78) (Nuclear receptor XR78	w
+GROUP	fly	FBgn0015240	Hr96	Q24143	74	423	Nuclear hormone receptor HR96 (dHR96) (Nuclear receptor subf	w
+GROUP	fly	FBgn0015381	dsf	Q9VML1	71	352	Protein dissatisfaction (Nuclear receptor subfamily 2 group 	w
+GROUP	fly	FBgn0026582	Hmg-2	Q9W2K8	72	446	High mobility group protein 2 (LD46483p)	w
+GROUP	fly	FBgn0030013	GIIIspla2	Q9W3I8	43	315	Phospholipase A2 group III, isoform B (EC 3.1.1.4) (Phosphol	w
+GROUP	fly	FBgn0033354	FANCI	A1Z7L1	5	42	Fanconi anemia group I protein homolog (Protein FACI)	w
+GROUP	fly	FBgn0036545	GXIVsPLA2	Q9VUV6	36	254	GXIVsPLA2, isoform A (GXIVsPLA2, isoform D (EC 3.1.1.4)) (Gr	w
+GROUP	fly	FBgn0037781	Fancl	Q8T913	12	38	E3 ubiquitin-protein ligase Fancl (EC 2.3.2.27) (Fanconi ane	w
+GROUP	fly	FBgn0038827	Fancd2	Q8MYL1	152	1152	Fanconi anemia group D2 protein homolog (Protein FACD2)	w
+GROUP	fly	FBgn0038889	Fancm	Q9VDA0	3	64	DEAD-box ATP-dependent DNA helicase Fancm (EC 5.6.2.4) (Fanc	w
+GROUP	fly	FBgn0261239	Hr39	Q05192	133	370	Nuclear hormone receptor FTZ-F1 beta (Nuclear hormone recept	w
+GROUP	fly	FBgn0261885	osa	Q8IN94	7	38	Trithorax group protein osa (Protein eyelid)	w
+GROUP	fly	FBgn0262166	caly	Q7K5N4	9	104	Ubiquitin carboxyl-terminal hydrolase calypso (EC 3.4.19.12)	w
+GROUP	human	A0A2R8Y3M9	?	A0A2R8Y3M9	1	2	Group XIIA secretory phospholipase A2	w
+GROUP	human	B2RPK0	HMGB1P1	B2RPK0	7	210	High mobility group protein B1-like 1 (High mobility group p	w
+GROUP	human	B2RUZ4	SMIM1	B2RUZ4	35	138	Small integral membrane protein 1 (Vel blood group antigen)	w
+GROUP	human	B6SEH8	ERVV-1	B6SEH8	7	13	Endogenous retrovirus group V member 1 Env polyprotein (HERV	w
+GROUP	human	B6SEH9	ERVV-2	B6SEH9	8	19	Endogenous retrovirus group V member 2 Env polyprotein (HERV	w
+GROUP	human	E2RYF7	HCG22	E2RYF7	2	10	Protein PBMUCL2 (HLA complex group 22) (Panbronchiolitis-rel	w
+GROUP	human	F5H6H0	HMGA2	F5H6H0	2	81	High mobility group AT-hook 2	w
+GROUP	human	H3BT10	RHD	H3BT10	2	11	Rh blood group D antigen	w
+GROUP	human	M5A8F1	ERVH48-1	M5A8F1	1	5	Suppressyn (Endogenous retrovirus group 48 member 1) (NDUFV3	w
+GROUP	human	O00479	HMGN4	O00479	47	761	High mobility group nucleosome-binding domain-containing pro	w
+GROUP	human	O00482	NR5A2	O00482	171	550	Nuclear receptor subfamily 5 group A member 2 (Alpha-1-fetop	w
+GROUP	human	O15287	FANCG	O15287	64	283	Fanconi anemia group G protein (Protein FACG) (DNA repair pr	w
+GROUP	human	O15347	HMGB3	O15347	35	454	High mobility group protein B3 (High mobility group protein 	w
+GROUP	human	O15360	FANCA	O15360	18	212	Fanconi anemia group A protein (Protein FACA)	w
+GROUP	human	O15405	TOX3	O15405	72	394	TOX high mobility group box family member 3 (CAG trinucleoti	w
+GROUP	human	O15496	PLA2G10	O15496	10	163	Group 10 secretory phospholipase A2 (EC 3.1.1.4) (Group X se	w
+GROUP	human	O42043	ERVK-18	O42043	7	331	Endogenous retrovirus group K member 18 Env polyprotein (Env	w
+GROUP	human	O60381	HBP1	O60381	25	133	HMG box-containing protein 1 (HMG box transcription factor 1	w
+GROUP	human	O60733	PLA2G6	O60733	3	70	85/88 kDa calcium-independent phospholipase A2 (CaI-PLA2) (E	w
+GROUP	human	O71037	ERVK-19	O71037	3	90	Endogenous retrovirus group K member 19 Env polyprotein (Env	w
+GROUP	human	O75326	SEMA7A	O75326	20	214	Semaphorin-7A (CDw108) (JMH blood group antigen) (John-Milto	w
+GROUP	human	O75469	NR1I2	O75469	87	503	Nuclear receptor subfamily 1 group I member 2 (Orphan nuclea	w
+GROUP	human	O94842	TOX4	O94842	40	201	TOX high mobility group box family member 4	w
+GROUP	human	O94900	TOX	O94900	97	450	Thymocyte selection-associated high mobility group box prote	w
+GROUP	human	O95718	ESRRB	O95718	179	491	Steroid hormone receptor ERR2 (ERR beta-2) (Estrogen recepto	w
+GROUP	human	P03372	ESR1	P03372	735	2633	Estrogen receptor (ER) (ER-alpha) (Estradiol receptor) (Nucl	w
+GROUP	human	P04054	PLA2G1B	P04054	9	75	Phospholipase A2 (EC 3.1.1.4) (Group IB phospholipase A2) (P	w
+GROUP	human	P04150	NR3C1	P04150	309	1154	Glucocorticoid receptor (GR) (Nuclear receptor subfamily 3 g	w
+GROUP	human	P05114	HMGN1	P05114	96	941	Non-histone chromosomal protein HMG-14 (High mobility group 	w
+GROUP	human	P05204	HMGN2	P05204	53	813	Non-histone chromosomal protein HMG-17 (High mobility group 	w
+GROUP	human	P05362	ICAM1	P05362	159	1037	Intercellular adhesion molecule 1 (ICAM-1) (Major group rhin	w
+GROUP	human	P06401	PGR	P06401	88	372	Progesterone receptor (PR) (Nuclear receptor subfamily 3 gro	w
+GROUP	human	P08235	NR3C2	P08235	75	257	Mineralocorticoid receptor (MR) (Nuclear receptor subfamily 	w
+GROUP	human	P09429	HMGB1	P09429	46	948	High mobility group protein B1 (High mobility group protein 	w
+GROUP	human	P0C869	PLA2G4B	P0C869	1	31	Cytosolic phospholipase A2 beta (cPLA2-beta) (EC 3.1.1.4) (L	w
+GROUP	human	P10265	ERVK-10	P10265	15	84	Endogenous retrovirus group K member 10 Pro protein (HERV-K1	w
+GROUP	human	P10266	ERVK-10	P10266	7	11	Endogenous retrovirus group K member 10 Pol protein (HERV-K1	w
+GROUP	human	P10275	AR	P10275	296	1368	Androgen receptor (Dihydrotestosterone receptor) (Nuclear re	w
+GROUP	human	P10276	RARA	P10276	155	554	Retinoic acid receptor alpha (RAR-alpha) (Nuclear receptor s	w
+GROUP	human	P10588	NR2F6	P10588	82	481	Nuclear receptor subfamily 2 group F member 6 (V-erbA-relate	w
+GROUP	human	P10589	NR2F1	P10589	100	565	COUP transcription factor 1 (COUP-TF1) (COUP transcription f	w
+GROUP	human	P10826	RARB	P10826	46	112	Retinoic acid receptor beta (RAR-beta) (HBV-activated protei	w
+GROUP	human	P10827	THRA	P10827	33	172	Thyroid hormone receptor alpha (Nuclear receptor subfamily 1	w
+GROUP	human	P10828	THRB	P10828	86	280	Thyroid hormone receptor beta (Nuclear receptor subfamily 1 	w
+GROUP	human	P11473	VDR	P11473	95	456	Vitamin D3 receptor (VDR) (1,25-dihydroxyvitamin D3 receptor	w
+GROUP	human	P11474	ESRRA	P11474	214	515	Steroid hormone receptor ERR1 (Estrogen receptor-like 1) (Es	w
+GROUP	human	P13056	NR2C1	P13056	42	121	Nuclear receptor subfamily 2 group C member 1 (Orphan nuclea	w
+GROUP	human	P13631	RARG	P13631	98	272	Retinoic acid receptor gamma (RAR-gamma) (Nuclear receptor s	w
+GROUP	human	P14555	PLA2G2A	P14555	12	157	Phospholipase A2, membrane associated (EC 3.1.1.4) (GIIC sPL	w
+GROUP	human	P16442	ABO	P16442	4	38	Histo-blood group ABO system transferase (Fucosylglycoprotei	w
+GROUP	human	P17096	HMGA1	P17096	96	769	High mobility group protein HMG-I/HMG-Y (HMG-I(Y)) (High mob	w
+GROUP	human	P18577	RHCE	P18577	11	199	Blood group Rh(CE) polypeptide (Rh polypeptide 1) (RhPI) (Rh	w
+GROUP	human	P19526	FUT1	P19526	16	89	Galactoside alpha-(1,2)-fucosyltransferase 1 (Alpha(1,2)FT 1	w
+GROUP	human	P19793	RXRA	P19793	121	723	Retinoic acid receptor RXR-alpha (Nuclear receptor subfamily	w
+GROUP	human	P20393	NR1D1	P20393	45	145	Nuclear receptor subfamily 1 group D member 1 (Rev-erbA-alph	w
+GROUP	human	P23025	XPA	P23025	22	226	DNA repair protein complementing XP-A cells (Xeroderma pigme	w
+GROUP	human	P23276	KEL	P23276	29	180	Kell blood group glycoprotein (EC 3.4.24.-) (CD antigen CD23	w
+GROUP	human	P26583	HMGB2	P26583	30	724	High mobility group protein B2 (High mobility group protein 	w
+GROUP	human	P28702	RXRB	P28702	104	454	Retinoic acid receptor RXR-beta (Nuclear receptor subfamily 	w
+GROUP	human	P28715	ERCC5	P28715	20	154	DNA excision repair protein ERCC-5 (EC 3.1.-.-) (DNA repair 	w
+GROUP	human	P35226	BMI1	P35226	178	1620	Polycomb complex protein BMI-1 (Polycomb group RING finger p	w
+GROUP	human	P35227	PCGF2	P35227	89	542	Polycomb group RING finger protein 2 (DNA-binding protein Me	w
+GROUP	human	P35398	RORA	P35398	149	434	Nuclear receptor ROR-alpha (Nuclear receptor RZR-alpha) (Nuc	w
+GROUP	human	P37231	PPARG	P37231	241	1013	Peroxisome proliferator-activated receptor gamma (PPAR-gamma	w
+GROUP	human	P39877	PLA2G5	P39877	7	71	Phospholipase A2 group V (EC 3.1.1.4) (PLA2-10) (Phosphatidy	w
+GROUP	human	P41235	HNF4A	P41235	278	956	Hepatocyte nuclear factor 4-alpha (HNF-4-alpha) (Nuclear rec	w
+GROUP	human	P43354	NR4A2	P43354	125	474	Nuclear receptor subfamily 4 group A member 2 (Immediate-ear	w
+GROUP	human	P47712	PLA2G4A	P47712	4	212	Cytosolic phospholipase A2 (cPLA2) (Phospholipase A2 group I	w
+GROUP	human	P48443	RXRG	P48443	92	510	Retinoic acid receptor RXR-gamma (Nuclear receptor subfamily	w
+GROUP	human	P49116	NR2C2	P49116	271	1842	Nuclear receptor subfamily 2 group C member 2 (Orphan nuclea	w
+GROUP	human	P50895	BCAM	P50895	28	250	Basal cell adhesion molecule (Auberger B antigen) (B-CAM cel	w
+GROUP	human	P51449	RORC	P51449	189	490	Nuclear receptor ROR-gamma (Nuclear receptor RZR-gamma) (Nuc	w
+GROUP	human	P51587	BRCA2	P51587	9	117	Breast cancer type 2 susceptibility protein (Fanconi anemia 	w
+GROUP	human	P51843	NR0B1	P51843	32	143	Nuclear receptor subfamily 0 group B member 1 (DSS-AHC criti	w
+GROUP	human	P51858	HDGF	P51858	58	614	Hepatoma-derived growth factor (HDGF) (High mobility group p	w
+GROUP	human	P52926	HMGA2	P52926	79	443	High mobility group protein HMGI-C (High mobility group AT-h	w
+GROUP	human	P53816	PLAAT3	P53816	20	286	Phospholipase A and acyltransferase 3 (EC 2.3.1.-) (EC 3.1.1	w
+GROUP	human	P55055	NR1H2	P55055	158	550	Oxysterols receptor LXR-beta (Liver X receptor beta) (Nuclea	w
+GROUP	human	P60507	ERVFC1	P60507	5	12	Endogenous retrovirus group FC1 Env polyprotein (Envelope po	w
+GROUP	human	P60508	ERVFRD-1	P60508	10	155	Syncytin-2 (Endogenous retrovirus group FRD member 1) (Envel	w
+GROUP	human	P60509	ERVPABLB-1	P60509	6	10	Endogenous retrovirus group PABLB member 1 Env polyprotein (	w
+GROUP	human	P60608	ERVFC1-1	P60608	6	8	Endogenous retrovirus group FC1 member 1 Env polyprotein (En	w
+GROUP	human	P61550	ERVS71-1	P61550	1	11	Endogenous retrovirus group S71 member 1 Env polyprotein (En	w
+GROUP	human	P61565	ERVK-21	P61565	4	12	Endogenous retrovirus group K member 21 Env polyprotein (Env	w
+GROUP	human	P61566	ERVK-24	P61566	4	192	Endogenous retrovirus group K member 24 Env polyprotein (Env	w
+GROUP	human	P61567	ERVK-7	P61567	7	164	Endogenous retrovirus group K member 7 Env polyprotein (Enve	w
+GROUP	human	P61568	ERVK11-1	P61568	0	2	Putative endogenous retrovirus group K member 11-1 Env polyp	w
+GROUP	human	P61570	ERVK-25	P61570	7	142	Endogenous retrovirus group K member 25 Env polyprotein (Env	w
+GROUP	human	P61571	ERVK-21	P61571	0	3	Endogenous retrovirus group K member 21 Rec protein (HERV-K_	w
+GROUP	human	P61572	ERVK-19	P61572	0	3	Endogenous retrovirus group K member 19 Rec protein (HERV-K(	w
+GROUP	human	P61573	ERVK-9	P61573	1	2	Endogenous retrovirus group K member 9 Rec protein (HERV-K(C	w
+GROUP	human	P61574	HERVK_113	P61574	3	6	Endogenous retrovirus group K member 113 Rec protein (HERV-K	w
+GROUP	human	P61575	ERVK-8	P61575	0	9	Endogenous retrovirus group K member 8 Rec protein (HERV-K11	w
+GROUP	human	P61576	HERV-K104	P61576	4	14	Endogenous retrovirus group K member 104 Rec protein (HERV-K	w
+GROUP	human	P61578	ERVK-16	P61578	1	6	Endogenous retrovirus group K member 16 Rec protein (HERV-K_	w
+GROUP	human	P61579	ERVK-25	P61579	1	5	Endogenous retrovirus group K member 25 Rec protein (Endogen	w
+GROUP	human	P61580	ERVK-10	P61580	1	11	Endogenous retrovirus group K member 10 Np9 protein (HERV-K1	w
+GROUP	human	P61581	ERVK-24	P61581	2	12	Endogenous retrovirus group K member 24 Np9 protein (HERV-K1	w
+GROUP	human	P61582	ERVK-7	P61582	1	10	Endogenous retrovirus group K member 7 Np9 protein (HERV-K(I	w
+GROUP	human	P61583	ERVK-5	P61583	1	6	Endogenous retrovirus group K member 5 Np9 protein (Endogeno	w
+GROUP	human	P62508	ESRRG	P62508	272	583	Estrogen-related receptor gamma (ERR gamma-2) (Estrogen rece	w
+GROUP	human	P62683	ERVK-21	P62683	0	113	Endogenous retrovirus group K member 21 Gag polyprotein (HER	w
+GROUP	human	P62684	HERVK_113	P62684	0	8	Endogenous retrovirus group K member 113 Gag polyprotein (HE	w
+GROUP	human	P62685	ERVK-8	P62685	3	104	Endogenous retrovirus group K member 8 Gag polyprotein (HERV	w
+GROUP	human	P63119	ERVK-21	P63119	12	87	Endogenous retrovirus group K member 21 Pro protein (HERV-K_	w
+GROUP	human	P63120	ERVK-19	P63120	12	81	Endogenous retrovirus group K member 19 Pro protein (HERV-K(	w
+GROUP	human	P63121	HERVK_113	P63121	10	14	Endogenous retrovirus group K member 113 Pro protein (HERV-K	w
+GROUP	human	P63122	ERVK-8	P63122	13	81	Endogenous retrovirus group K member 8 Pro protein (HERV-K11	w
+GROUP	human	P63123	ERVK-18	P63123	13	107	Endogenous retrovirus group K member 18 Pro protein (HERV-K(	w
+GROUP	human	P63124	HERV-K104	P63124	11	17	Endogenous retrovirus group K member 104 Pro protein (HERV-K	w
+GROUP	human	P63125	ERVK-25	P63125	11	90	Endogenous retrovirus group K member 25 Pro protein (HERV-K_	w
+GROUP	human	P63126	ERVK-9	P63126	2	118	Endogenous retrovirus group K member 9 Gag polyprotein (HERV	w
+GROUP	human	P63127	ERVK-9	P63127	13	62	Endogenous retrovirus group K member 9 Pro protein (HERV-K(C	w
+GROUP	human	P63129	ERVK-24	P63129	16	98	Endogenous retrovirus group K member 24 Pro protein (HERV-K1	w
+GROUP	human	P63130	ERVK-7	P63130	2	128	Endogenous retrovirus group K member 7 Gag polyprotein (HERV	w
+GROUP	human	P63131	ERVK-7	P63131	14	98	Endogenous retrovirus group K member 7 Pro protein (HERV-K(I	w
+GROUP	human	P63132	HERVK_113	P63132	6	28	Endogenous retrovirus group K member 113 Pol protein (HERV-K	w
+GROUP	human	P63133	ERVK-8	P63133	8	11	Endogenous retrovirus group K member 8 Pol protein (HERV-K11	w
+GROUP	human	P63135	ERVK-7	P63135	4	4	Endogenous retrovirus group K member 7 Pol protein (HERV-K(I	w
+GROUP	human	P63136	ERVK-25	P63136	7	28	Endogenous retrovirus group K member 25 Pol protein (HERV-K_	w
+GROUP	human	P63145	ERVK-24	P63145	0	9	Endogenous retrovirus group K member 24 Gag polyprotein (HER	w
+GROUP	human	P82970	HMGN5	P82970	99	553	High mobility group nucleosome-binding domain-containing pro	w
+GROUP	human	P87889	ERVK-10	P87889	2	128	Endogenous retrovirus group K member 10 Gag polyprotein (HER	w
+GROUP	human	Q00597	FANCC	Q00597	38	173	Fanconi anemia group C protein (Protein FACC)	w
+GROUP	human	Q01831	XPC	Q01831	30	266	DNA repair protein complementing XP-C cells (Xeroderma pigme	w
+GROUP	human	Q02094	RHAG	Q02094	6	226	Ammonium transporter Rh type A (Erythrocyte membrane glycopr	w
+GROUP	human	Q02161	RHD	Q02161	4	21	Blood group Rh(D) polypeptide (RHXIII) (Rh polypeptide 2) (R	w
+GROUP	human	Q03181	PPARD	Q03181	168	721	Peroxisome proliferator-activated receptor delta (PPAR-delta	w
+GROUP	human	Q07869	PPARA	Q07869	113	552	Peroxisome proliferator-activated receptor alpha (PPAR-alpha	w
+GROUP	human	Q13133	NR1H3	Q13133	157	590	Oxysterols receptor LXR-alpha (Liver X receptor alpha) (Nucl	w
+GROUP	human	Q13285	NR5A1	Q13285	169	562	Steroidogenic factor 1 (SF-1) (STF-1) (hSF-1) (Adrenal 4-bin	w
+GROUP	human	Q14134	TRIM29	Q14134	31	319	Tripartite motif-containing protein 29 (Ataxia telangiectasi	w
+GROUP	human	Q14264	ERV3-1	Q14264	8	219	Endogenous retrovirus group 3 member 1 Env polyprotein (ERV-	w
+GROUP	human	Q14541	HNF4G	Q14541	114	408	Hepatocyte nuclear factor 4-gamma (HNF-4-gamma) (Nuclear rec	w
+GROUP	human	Q14773	ICAM4	Q14773	32	106	Intercellular adhesion molecule 4 (ICAM-4) (Landsteiner-Wien	w
+GROUP	human	Q14994	NR1I3	Q14994	102	453	Nuclear receptor subfamily 1 group I member 3 (Constitutive 	w
+GROUP	human	Q14995	NR1D2	Q14995	87	436	Nuclear receptor subfamily 1 group D member 2 (Orphan nuclea	w
+GROUP	human	Q15406	NR6A1	Q15406	80	425	Nuclear receptor subfamily 6 group A member 1 (Germ cell nuc	w
+GROUP	human	Q15466	NR0B2	Q15466	72	274	Nuclear receptor subfamily 0 group B member 2 (Orphan nuclea	w
+GROUP	human	Q15651	HMGN3	Q15651	8	56	High mobility group nucleosome-binding domain-containing pro	w
+GROUP	human	Q16570	ACKR1	Q16570	52	311	Atypical chemokine receptor 1 (Duffy antigen receptor for ch	w
+GROUP	human	Q3KNV8	PCGF3	Q3KNV8	52	497	Polycomb group RING finger protein 3 (RING finger protein 3A	w
+GROUP	human	Q3MJ16	PLA2G4E	Q3MJ16	1	29	Cytosolic phospholipase A2 epsilon (cPLA2-epsilon) (EC 3.1.1	w
+GROUP	human	Q5R387	PLA2G2C	Q5R387	0	7	Putative inactive group IIC secretory phospholipase A2 (Phos	w
+GROUP	human	Q5T6X5	GPRC6A	Q5T6X5	4	31	G protein-coupled receptor family C group 6 member A (hGPRC6	w
+GROUP	human	Q5T890	ERCC6L2	Q5T890	14	122	DNA excision repair protein ERCC-6-like 2 (EC 3.6.4.-) (DNA 	w
+GROUP	human	Q68DD2	PLA2G4F	Q68DD2	0	18	Cytosolic phospholipase A2 zeta (cPLA2-zeta) (EC 3.1.1.4) (P	w
+GROUP	human	Q69383	ERVK-6	Q69383	0	3	Endogenous retrovirus group K member 6 Rec protein (Central 	w
+GROUP	human	Q69384	ERVK-6	Q69384	3	132	Endogenous retrovirus group K member 6 Env polyprotein (EnvK	w
+GROUP	human	Q76L83	ASXL2	Q76L83	66	337	Putative Polycomb group protein ASXL2 (Additional sex combs-	w
+GROUP	human	Q7LDI9	ERVK-6	Q7LDI9	1	125	Endogenous retrovirus group K member 6 Gag polyprotein (HERV	w
+GROUP	human	Q86SE9	PCGF5	Q86SE9	60	499	Polycomb group RING finger protein 5 (RING finger protein 15	w
+GROUP	human	Q86SG4	HMGN2P46	Q86SG4	1	5	Putative Dresden prostate carcinoma protein 2 (D-PCa-2) (Hig	w
+GROUP	human	Q86XP0	PLA2G4D	Q86XP0	0	35	Cytosolic phospholipase A2 delta (cPLA2-delta) (EC 3.1.1.4) 	w
+GROUP	human	Q8IXJ9	ASXL1	Q8IXJ9	105	607	Polycomb group protein ASXL1 (Additional sex combs-like prot	w
+GROUP	human	Q8IYD8	FANCM	Q8IYD8	22	212	Fanconi anemia group M protein (Protein FACM) (EC 3.6.4.13) 	w
+GROUP	human	Q8NB91	FANCB	Q8NB91	26	255	Fanconi anemia group B protein (Protein FACB) (Fanconi anemi	w
+GROUP	human	Q8NFJ5	GPRC5A	Q8NFJ5	17	127	Retinoic acid-induced protein 3 (G protein-coupled receptor 	w
+GROUP	human	Q8WTU2	SSC4D	Q8WTU2	2	61	Scavenger receptor cysteine-rich domain-containing group B p	w
+GROUP	human	Q8WW32	HMGB4	Q8WW32	17	387	High mobility group protein B4	w
+GROUP	human	Q902F8	ERVK-8	Q902F8	4	108	Endogenous retrovirus group K member 8 Env polyprotein (EnvK	w
+GROUP	human	Q902F9	HERVK_113	Q902F9	1	11	Endogenous retrovirus group K member 113 Env polyprotein (En	w
+GROUP	human	Q92570	NR4A3	Q92570	8	99	Nuclear receptor subfamily 4 group A member 3 (Mitogen-induc	w
+GROUP	human	Q92731	ESR2	Q92731	660	2489	Estrogen receptor beta (ER-beta) (Nuclear receptor subfamily	w
+GROUP	human	Q92753	RORB	Q92753	162	464	Nuclear receptor ROR-beta (Nuclear receptor RZR-beta) (Nucle	w
+GROUP	human	Q92889	ERCC4	Q92889	30	235	DNA repair endonuclease XPF (EC 3.1.-.-) (DNA excision repai	w
+GROUP	human	Q93070	ART4	Q93070	11	73	Ecto-ADP-ribosyltransferase 4 (EC 2.4.2.31) (ADP-ribosyltran	w
+GROUP	human	Q96NM4	TOX2	Q96NM4	10	59	TOX high mobility group box family member 2 (Granulosa cell 	w
+GROUP	human	Q96PL5	ERMAP	Q96PL5	50	146	Erythroid membrane-associated protein (hERMAP) (Radin blood 	w
+GROUP	human	Q96PS1	FANCD2OS	Q96PS1	7	66	FANCD2 opposite strand protein (Fanconi anemia group D2 prot	w
+GROUP	human	Q96RI1	NR1H4	Q96RI1	78	234	Bile acid receptor (Farnesoid X-activated receptor) (Farneso	w
+GROUP	human	Q9BSM1	PCGF1	Q9BSM1	76	627	Polycomb group RING finger protein 1 (Nervous system Polycom	w
+GROUP	human	Q9BX63	BRIP1	Q9BX63	33	248	Fanconi anemia group J protein (EC 5.6.2.3) (BRCA1-associate	w
+GROUP	human	Q9BX93	PLA2G12B	Q9BX93	4	29	Group XIIB secretory phospholipase A2-like protein (Group XI	w
+GROUP	human	Q9BXR3	ERVK-6	Q9BXR3	7	36	Endogenous retrovirus group K member 6 Pol protein (HERV-K(C	w
+GROUP	human	Q9BXW9	FANCD2	Q9BXW9	54	749	Fanconi anemia group D2 protein (Protein FACD2)	w
+GROUP	human	Q9BYE7	PCGF6	Q9BYE7	84	556	Polycomb group RING finger protein 6 (Mel18 and Bmi1-like RI	w
+GROUP	human	Q9BZM1	PLA2G12A	Q9BZM1	5	75	Group XIIA secretory phospholipase A2 (GXII sPLA2) (sPLA2-XI	w
+GROUP	human	Q9BZM2	PLA2G2F	Q9BZM2	10	46	Group IIF secretory phospholipase A2 (GIIF sPLA2) (sPLA2-IIF	w
+GROUP	human	Q9C086	INO80B	Q9C086	44	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	w
+GROUP	human	Q9C0F0	ASXL3	Q9C0F0	29	256	Putative Polycomb group protein ASXL3 (Additional sex combs-	w
+GROUP	human	Q9H310	RHBG	Q9H310	5	35	Ammonium transporter Rh type B (Rhesus blood group family ty	w
+GROUP	human	Q9H9K5	ERVMER34-1	Q9H9K5	3	20	Endogenous retroviral envelope protein HEMO (Endogenous retr	w
+GROUP	human	Q9HB96	FANCE	Q9HB96	27	565	Fanconi anemia group E protein (Protein FACE)	w
+GROUP	human	Q9HDB8	ERVK-5	Q9HDB8	1	31	Endogenous retrovirus group K member 5 Env polyprotein (Enve	w
+GROUP	human	Q9HDB9	ERVK-5	Q9HDB9	0	10	Endogenous retrovirus group K member 5 Gag polyprotein (HERV	w
+GROUP	human	Q9NP66	HMG20A	Q9NP66	104	602	High mobility group protein 20A (HMG box-containing protein 	w
+GROUP	human	Q9NPI8	FANCF	Q9NPI8	14	88	Fanconi anemia group F protein (Protein FACF)	w
+GROUP	human	Q9NQ84	GPRC5C	Q9NQ84	13	165	G protein-coupled receptor family C group 5 member C (Retino	w
+GROUP	human	Q9NVI1	FANCI	Q9NVI1	22	302	Fanconi anemia group I protein (Protein FACI)	w
+GROUP	human	Q9NW38	FANCL	Q9NW38	18	152	E3 ubiquitin-protein ligase FANCL (EC 2.3.2.27) (Fanconi ane	w
+GROUP	human	Q9NX77	ERVK13-1	Q9NX77	0	11	Endogenous retrovirus group K member 13-1 Env polyprotein (E	w
+GROUP	human	Q9NZ20	PLA2G3	Q9NZ20	15	152	Group 3 secretory phospholipase A2 (EC 3.1.1.4) (Group III s	w
+GROUP	human	Q9NZD1	GPRC5D	Q9NZD1	6	104	G protein-coupled receptor family C group 5 member D	w
+GROUP	human	Q9NZH0	GPRC5B	Q9NZH0	19	163	G protein-coupled receptor family C group 5 member B (A-69G1	w
+GROUP	human	Q9NZK7	PLA2G2E	Q9NZK7	5	69	Group IIE secretory phospholipase A2 (GIIE sPLA2) (sPLA2-IIE	w
+GROUP	human	Q9QC07	ERVK-18	Q9QC07	8	11	Endogenous retrovirus group K member 18 Pol protein (HERV-K(	w
+GROUP	human	Q9UBD6	RHCG	Q9UBD6	4	57	Ammonium transporter Rh type C (Rh glycoprotein kidney) (Rhe	w
+GROUP	human	Q9UGU5	HMGXB4	Q9UGU5	35	157	HMG domain-containing protein 4 (HMG box-containing protein 	w
+GROUP	human	Q9UKH3	ERVK-9	Q9UKH3	4	113	Endogenous retrovirus group K member 9 Env polyprotein (EnvK	w
+GROUP	human	Q9UNK4	PLA2G2D	Q9UNK4	10	117	Group IID secretory phospholipase A2 (GIID sPLA2) (sPLA2-IID	w
+GROUP	human	Q9UQF0	ERVW-1	Q9UQF0	23	292	Syncytin-1 (Endogenous retrovirus group W member 1) (Env-W) 	w
+GROUP	human	Q9UQG0	ERVK-11	Q9UQG0	8	11	Endogenous retrovirus group K member 11 Pol protein (HERV-K_	w
+GROUP	human	Q9WJR5	ERVK-19	Q9WJR5	5	16	Endogenous retrovirus group K member 19 Pol protein (HERV-K(	w
+GROUP	human	Q9Y466	NR2E1	Q9Y466	101	425	Nuclear receptor subfamily 2 group E member 1 (Nuclear recep	w
+GROUP	human	Q9Y5X4	NR2E3	Q9Y5X4	74	426	Photoreceptor-specific nuclear receptor (Nuclear receptor su	w
+GROUP	human	Q9Y6I0	ERVK-6	Q9Y6I0	15	101	Endogenous retrovirus group K member 6 Pro protein (HERV-K(C	w
+GROUP	human	Q9YNA8	ERVK-19	Q9YNA8	1	101	Endogenous retrovirus group K member 19 Gag polyprotein (HER	w
+GROUP	worm	G5EDQ2	hmg-12	G5EDQ2	1	11	High mobility group protein hmg-12	w
+GROUP	worm	G5EES8	nspd-5	G5EES8	0	5	Nematode Specific Peptide family, group D	w
+GROUP	worm	O44737	xpg-1	O44737	2	35	XPG (Xeroderma Pigmentosum group G) DNA repair gene homolog	w
+GROUP	worm	O44902	nspd-1	O44902	0	4	Nematode Specific Peptide family, group D	w
+GROUP	worm	P90790	CELE_D2030.3	P90790	4	61	Fanconi anemia group I protein	w
+GROUP	worm	Q09390	hmg-1.2	Q09390	4	41	High mobility group protein 1.2	w
+GROUP	worm	Q19279	nspb-12	Q19279	0	3	Nematode Specific Peptide family, group B	w
+GROUP	worm	Q19336	mig-32	Q19336	4	85	Polycomb group RING finger protein 3 homolog mig-32	w
+GROUP	worm	Q21515	plag-15	Q21515	0	4	PhosphoLipase A2 Group	w
+GROUP	worm	Q9N4C3	xpc-1	Q9N4C3	8	92	XPC (Xeroderma Pigmentosum group C) DNA repair gene homolog	w
+GROUP	worm	Q9N4J9	CELE_F54A3.6	Q9N4J9	0	2	Trithorax group protein osa	w
+GROUP	yeast	Q03973	HMO1	Q03973	3	187	High mobility group protein 1	w
+GROUP	zebrafish	A0A0R4IVP0	nr1h3	A0A0R4IVP0	14	36	Nuclear receptor subfamily 1, group H, member 3	w
+GROUP	zebrafish	A0A2R8Q9T1	tox	A0A2R8Q9T1	5	68	Thymocyte selection-associated high mobility group box	w
+GROUP	zebrafish	A0A8M1N808	hmgb2a	A0A8M1N808	1	76	High mobility group protein B2	w
+GROUP	zebrafish	A0A8M9PKS5	nr1d4a	A0A8M9PKS5	0	15	Nuclear receptor subfamily 1, group D, member 4a isoform X1	w
+GROUP	zebrafish	A0AB13A8L2	nr0b2b	A0AB13A8L2	10	35	Nuclear receptor subfamily 0, group B, member 2b	w
+GROUP	zebrafish	A2ATX3	pcgf6	A2ATX3	18	68	Polycomb group RING finger protein 6	w
+GROUP	zebrafish	A3KNJ5	pla2g12a	A3KNJ5	0	5	Group XIIA secretory phospholipase A2	w
+GROUP	zebrafish	A3KNQ1	hmg20a	A3KNQ1	8	78	High mobility group protein 20A	w
+GROUP	zebrafish	B0S5T9	nr1h5	B0S5T9	10	30	Nuclear receptor subfamily 1, group H, member 5	w
+GROUP	zebrafish	B0S7I1	gbgt1l5	B0S7I1	0	6	Histo-blood group ABO system transferase	w
+GROUP	zebrafish	B0V1A9	fancc	B0V1A9	0	48	FA complementation group C	w
+GROUP	zebrafish	B0V1H8	nr1i2	B0V1H8	18	37	Nuclear receptor subfamily 1 group I member 2	w
+GROUP	zebrafish	B3DK16	pcgf5a	B3DK16	19	70	Polycomb group RING finger protein 5-A	w
+GROUP	zebrafish	B8A4H2	gprc5bb	B8A4H2	0	1	G protein-coupled receptor, class C, group 5, member Bb	w
+GROUP	zebrafish	E7F718	LOC101885160	E7F718	3	105	Group 3 secretory phospholipase A2	w
+GROUP	zebrafish	E7FAU5	tox3	E7FAU5	2	68	TOX high mobility group box family member 3	w
+GROUP	zebrafish	E7FFT5	hmgn6	E7FFT5	8	472	High mobility group nucleosome-binding domain 6	w
+GROUP	zebrafish	E7FGN5	si:ch211-161c3.6	E7FGN5	0	13	High mobility group AT-hook 2b	w
+GROUP	zebrafish	E9QH74	hmgn3	E9QH74	0	5	High mobility group nucleosome-binding domain-containing pro	w
+GROUP	zebrafish	E9QI01	hmgn7	E9QI01	17	465	High mobility group nucleosomal binding domain 7 isoform X1	w
+GROUP	zebrafish	F1QGP8	hmgb3a	F1QGP8	0	75	High mobility group box 3a	w
+GROUP	zebrafish	F1QIC9	nr1d2a	F1QIC9	13	24	Nuclear receptor subfamily 1 group D member 2a	w
+GROUP	zebrafish	F1QJG0	nr5a1a	F1QJG0	6	27	Nuclear receptor subfamily 5, group A, member 1a	w
+GROUP	zebrafish	F1QQB8	aqp1a.2	F1QQB8	0	30	Aquaporin 1a (Colton blood group), tandem duplicate 2	w
+GROUP	zebrafish	F1QXS5	tox4a	F1QXS5	2	68	TOX high mobility group box family member 4-A	w
+GROUP	zebrafish	F1R147	pla2g12b	F1R147	0	1	Group XIIB secretory phospholipase A2-like protein	w
+GROUP	zebrafish	F1R3B9	fanci	F1R3B9	7	72	FA complementation group I	w
+GROUP	zebrafish	F1R8N1	nr4a3	F1R8N1	0	5	Nuclear receptor subfamily 4 group A member 2	w
+GROUP	zebrafish	F1RAU6	nr1d1	F1RAU6	2	24	Nuclear receptor subfamily 1 group D member 1	w
+GROUP	zebrafish	F1RDU3	scml2	F1RDU3	5	26	Scm polycomb group protein-like 2	w
+GROUP	zebrafish	F6PDV8	nr2c2	F6PDV8	3	9	Nuclear receptor subfamily 2 group C member 2	w
+GROUP	zebrafish	F8W3A9	kel	F8W3A9	0	4	Kell blood group glycoprotein	w
+GROUP	zebrafish	F8W3I2	nr0b2a	F8W3I2	4	35	Nuclear receptor subfamily 0 group B member 2	w
+GROUP	zebrafish	Q06725	nr2f1a	Q06725	1	4	Nuclear receptor subfamily 2 group F member 1-A	w
+GROUP	zebrafish	Q06726	nr2f5	Q06726	1	3	Nuclear receptor subfamily 2 group F member 5	w
+GROUP	zebrafish	Q08BD1	hmga1b	Q08BD1	0	12	High mobility group AT-hook 1b	w
+GROUP	zebrafish	Q08BX5	bcam	Q08BX5	0	4	Basal cell adhesion molecule (Lutheran blood group)	w
+GROUP	zebrafish	Q1JPS1	pcgf5b	Q1JPS1	18	75	Polycomb group RING finger protein 5-B	w
+GROUP	zebrafish	Q3B732	hmgn2	Q3B732	15	466	High mobility group nucleosomal-binding domain 2	w
+GROUP	zebrafish	Q4V8R7	nr6a1b	Q4V8R7	0	6	Nuclear receptor subfamily 6 group A member 1-B	w
+GROUP	zebrafish	Q4VV70	rhd	Q4VV70	4	18	Rh blood group, D antigen	w
+GROUP	zebrafish	Q503Z1	hmg20b	Q503Z1	11	96	High-mobility group 20B	w
+GROUP	zebrafish	Q5RH32	nr2c1	Q5RH32	4	9	Nuclear receptor subfamily 2 group C member 1 isoform X1	w
+GROUP	zebrafish	Q5U9X3	gprc6a	Q5U9X3	2	12	G-protein coupled receptor family C group 6 member A	w
+GROUP	zebrafish	Q66IB6	hmgb2b	Q66IB6	1	75	High mobility group protein B2	w
+GROUP	zebrafish	Q6DEH0	nr2e1	Q6DEH0	1	8	Nuclear receptor subfamily 2 group E member 1	w
+GROUP	zebrafish	Q6NV11	hmga1a	Q6NV11	0	13	High mobility group protein HMG-I/HMG-Y	w
+GROUP	zebrafish	Q6NX86	hmgb1a	Q6NX86	3	87	High mobility group box 1a	w
+GROUP	zebrafish	Q6NXC9	tox2	Q6NXC9	6	68	TOX high mobility group box family member 2	w
+GROUP	zebrafish	Q6P038	hmga2	Q6P038	0	15	High mobility group AT-hook 2	w
+GROUP	zebrafish	Q6P115	nr2f6b	Q6P115	0	3	Nuclear receptor subfamily 2 group F member 6	w
+GROUP	zebrafish	Q6P117	nr2f6a	Q6P117	2	5	Nuclear receptor subfamily 2 group F member 6	w
+GROUP	zebrafish	Q6PH18	nr2f1b	Q6PH18	1	3	Nuclear receptor subfamily 2 group F member 1-B	w
+GROUP	zebrafish	Q6XFR2	gypc	Q6XFR2	0	2	Glycophorin C (Gerbich blood group)	w
+GROUP	zebrafish	Q7ZYZ7	pcgf1	Q7ZYZ7	11	65	Polycomb group RING finger protein 1	w
+GROUP	zebrafish	Q90YL6	nr5a2	Q90YL6	11	74	Nuclear receptor subfamily 5 group A member 2	w
+GROUP	zebrafish	Q9PU65	nr6a1a	Q9PU65	0	6	Nuclear receptor subfamily 6 group A member 1-A	w
+GROUP	zebrafish	X1WEL2	gprc5ba	X1WEL2	0	1	G protein-coupled receptor, class C, group 5, member Ba	w
+GROUP	zebrafish	X1WFI9	hmgb1b	X1WFI9	1	76	High mobility group box 1b	w
+GROUP-LIKE	human	P55769	SNU13	P55769	52	696	NHP2-like protein 1 (High mobility group-like nuclear protei	w
+GROUP-RELATED	human	Q5GH77	XKR3	Q5GH77	0	25	XK-related protein 3 (X Kell blood group-related 3) (XTES)	w
+GROUP-RELATED	human	Q6PP77	XKRX	Q6PP77	9	46	XK-related protein 2 (Membrane protein XPLAC) (X Kell blood 	w
+GROUP-SPECIFIC	human	P02774	GC	P02774	41	679	Vitamin D-binding protein (DBP) (VDB) (Gc protein-derived ma	w
+GROUP-SPECIFIC	worm	Q93333	C35C5.9	Q93333	0	1	Group-specific protein	w
+GROW	human	P08069	IGF1R	P08069	91	1895	Insulin-like growth factor 1 receptor (EC 2.7.10.1) (Insulin	w
+GROWTH	fly	FBgn0003731	Egfr	P04412	246	3851	Epidermal growth factor receptor (Egfr) (EC 2.7.10.1) (Droso	w
+GROWTH	fly	FBgn0003984	vn	Q94918	59	310	Protein vein (Epidermal growth factor-like protein) (Protein	w
+GROWTH	fly	FBgn0004638	drk	Q08012	47	309	Growth factor receptor-bound protein 2 (Downstream of recept	w
+GROWTH	fly	FBgn0010389	htl	Q07407	401	3628	Fibroblast growth factor receptor homolog 1 (EC 2.7.10.1) (D	w
+GROWTH	fly	FBgn0013763	Idgf6	Q23997	21	246	Imaginal disk growth factor 6	w
+GROWTH	fly	FBgn0014135	bnl	Q9VDT9	83	450	Fibroblast growth factor (FGF)	w
+GROWTH	fly	FBgn0020414	Idgf3	Q8MLZ7	13	244	Chitinase-like protein Idgf3 (Imaginal disk growth factor pr	w
+GROWTH	fly	FBgn0020415	Idgf2	Q9V3D4	15	246	Chitinase-like protein Idgf2 (Imaginal disk growth factor pr	w
+GROWTH	fly	FBgn0020416	Idgf1	Q8MM24	15	244	Chitinase-like protein Idgf1 (Imaginal disk growth factor pr	w
+GROWTH	fly	FBgn0024177	zpg	Q9VRX6	0	11	Innexin inx4 (Innexin-4) (Protein zero population growth)	w
+GROWTH	fly	FBgn0026415	Idgf4	Q9W303	16	267	Chitinase-like protein Idgf4 (Imaginal disk growth factor pr	w
+GROWTH	fly	FBgn0029667	Gas8	Q8MT08	5	13	Dynein regulatory complex subunit 4 (Growth arrest-specific 	w
+GROWTH	fly	FBgn0030945	Ing3	Q9VWS0	12	72	Inhibitor of growth protein	w
+GROWTH	fly	FBgn0031450	Hrs	Q960X8	20	113	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+GROWTH	fly	FBgn0032516	Ing5	Q9VJY8	9	60	Inhibitor of growth protein 5 (Inhibitor of growth family me	w
+GROWTH	fly	FBgn0033153	Gadd45	A1Z6W5	1	10	FI09246p (Growth arrest and DNA damage-inducible 45)	w
+GROWTH	fly	FBgn0034948	PPP1R15	Q9W1E4	7	18	GH11727p (Growth arrest and DNA damage 34 homologue) (Protei	w
+GROWTH	fly	FBgn0035060	Eps-15	Q9W111	61	368	Epidermal growth factor receptor pathway substrate clone 15,	w
+GROWTH	fly	FBgn0036373	Tgi	Q9VU85	6	9	Tondu-domain-containing growth inhibitor, isoform A	w
+GROWTH	fly	FBgn0037102	CRIF	Q9VP13	11	159	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
+GROWTH	fly	FBgn0038546	CG7379	Q9VEF5	17	68	Inhibitor of growth protein	w
+GROWTH	fly	FBgn0041789	Pax	Q2PDT4	13	115	Transforming growth factor beta-1-induced transcript 1 prote	w
+GROWTH	fly	FBgn0052055	CG32055	Q9VT89	24	246	Insulin-like growth factor-binding protein complex acid labi	w
+GROWTH	fly	FBgn0064237	Idgf5	Q8T0R7	32	246	Chitinase-like protein Idgf5 (Imaginal disk growth factor pr	w
+GROWTH	fly	FBgn0285896	btl	Q09147	564	3544	Fibroblast growth factor receptor homolog 2 (EC 2.7.10.1) (P	w
+GROWTH	human	A0A0A0MQV6	FGF2	A0A0A0MQV6	10	189	Fibroblast growth factor	w
+GROWTH	human	A0A2R8YCL1	GRB10	A0A2R8YCL1	22	132	Growth factor receptor bound protein 10	w
+GROWTH	human	A6BM72	MEGF11	A6BM72	5	21	Multiple epidermal growth factor-like domains protein 11 (Mu	w
+GROWTH	human	H3BV60	TGFBR3L	H3BV60	12	77	Transforming growth factor-beta receptor type 3-like protein	w
+GROWTH	human	O00425	IGF2BP3	O00425	29	509	Insulin-like growth factor 2 mRNA-binding protein 3 (IGF2 mR	w
+GROWTH	human	O00458	IFRD1	O00458	15	217	Interferon-related developmental regulator 1 (Nerve growth f	w
+GROWTH	human	O00622	CCN1	O00622	28	229	CCN family member 1 (Cellular communication network factor 1	w
+GROWTH	human	O14786	NRP1	O14786	78	621	Neuropilin-1 (Vascular endothelial cell growth factor 165 re	w
+GROWTH	human	O14793	MSTN	O14793	31	152	Growth/differentiation factor 8 (GDF-8) (Myostatin)	w
+GROWTH	human	O14901	KLF11	O14901	99	385	Krueppel-like factor 11 (Transforming growth factor-beta-ind	w
+GROWTH	human	O14964	HGS	O14964	95	539	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+GROWTH	human	O15520	FGF10	O15520	35	395	Fibroblast growth factor 10 (FGF-10) (Keratinocyte growth fa	w
+GROWTH	human	O43278	SPINT1	O43278	23	156	Kunitz-type protease inhibitor 1 (Hepatocyte growth factor a	w
+GROWTH	human	O43291	SPINT2	O43291	40	212	Kunitz-type protease inhibitor 2 (Hepatocyte growth factor a	w
+GROWTH	human	O43294	TGFB1I1	O43294	35	146	Transforming growth factor beta-1-induced transcript 1 prote	w
+GROWTH	human	O43318	MAP3K7	O43318	488	1751	Mitogen-activated protein kinase kinase kinase 7 (EC 2.7.11.	w
+GROWTH	human	O43320	FGF16	O43320	29	340	Fibroblast growth factor 16 (FGF-16)	w
+GROWTH	human	O43427	FIBP	O43427	2	97	Acidic fibroblast growth factor intracellular-binding protei	w
+GROWTH	human	O43559	FRS3	O43559	59	164	Fibroblast growth factor receptor substrate 3 (FGFR substrat	w
+GROWTH	human	O43639	NCK2	O43639	117	342	Cytoplasmic protein NCK2 (Growth factor receptor-bound prote	w
+GROWTH	human	O43903	GAS2	O43903	3	59	Growth arrest-specific protein 2 (GAS-2)	w
+GROWTH	human	O43915	VEGFD	O43915	30	212	Vascular endothelial growth factor D (VEGF-D) (c-Fos-induced	w
+GROWTH	human	O60258	FGF17	O60258	58	498	Fibroblast growth factor 17 (FGF-17)	w
+GROWTH	human	O60383	GDF9	O60383	18	102	Growth/differentiation factor 9 (GDF-9)	w
+GROWTH	human	O60462	NRP2	O60462	40	254	Neuropilin-2 (Vascular endothelial cell growth factor 165 re	w
+GROWTH	human	O60861	GAS7	O60861	42	411	Growth arrest-specific protein 7 (GAS-7)	w
+GROWTH	human	O75093	SLIT1	O75093	25	172	Slit homolog 1 protein (Slit-1) (Multiple epidermal growth f	w
+GROWTH	human	O75094	SLIT3	O75094	23	170	Slit homolog 3 protein (Slit-3) (Multiple epidermal growth f	w
+GROWTH	human	O75095	MEGF6	O75095	4	33	Multiple epidermal growth factor-like domains protein 6 (Mul	w
+GROWTH	human	O75096	LRP4	O75096	7	166	Low-density lipoprotein receptor-related protein 4 (LRP-4) (	w
+GROWTH	human	O75293	GADD45B	O75293	17	230	Growth arrest and DNA damage-inducible protein GADD45 beta (	w
+GROWTH	human	O75351	VPS4B	O75351	14	144	Vacuolar protein sorting-associated protein 4B (EC 3.6.4.6) 	w
+GROWTH	human	O75475	PSIP1	O75475	48	314	PC4 and SFRS1-interacting protein (CLL-associated antigen KW	w
+GROWTH	human	O75791	GRAP2	O75791	46	246	GRB2-related adapter protein 2 (Adapter protein GRID) (GRB-2	w
+GROWTH	human	O75807	PPP1R15A	O75807	29	302	Protein phosphatase 1 regulatory subunit 15A (Growth arrest 	w
+GROWTH	human	O76076	CCN5	O76076	17	101	CCN family member 5 (Connective tissue growth factor-like pr	w
+GROWTH	human	O76093	FGF18	O76093	63	492	Fibroblast growth factor 18 (FGF-18) (zFGF5)	w
+GROWTH	human	O95057	DIRAS1	O95057	52	320	GTP-binding protein Di-Ras1 (Distinct subgroup of the Ras fa	w
+GROWTH	human	O95150	TNFSF15	O95150	57	299	Tumor necrosis factor ligand superfamily member 15 (TNF liga	w
+GROWTH	human	O95257	GADD45G	O95257	27	214	Growth arrest and DNA damage-inducible protein GADD45 gamma 	w
+GROWTH	human	O95390	GDF11	O95390	26	121	Growth/differentiation factor 11 (GDF-11) (Bone morphogeneti	w
+GROWTH	human	O95750	FGF19	O95750	35	263	Fibroblast growth factor 19 (FGF-19)	w
+GROWTH	human	O95972	BMP15	O95972	20	88	Bone morphogenetic protein 15 (BMP-15) (Growth/differentiati	w
+GROWTH	human	O95995	DRC4	O95995	36	167	Dynein regulatory complex subunit 4 (Growth arrest-specific 	w
+GROWTH	human	P00533	EGFR	P00533	311	4191	Epidermal growth factor receptor (EC 2.7.10.1) (Proto-oncoge	w
+GROWTH	human	P01127	PDGFB	P01127	36	257	Platelet-derived growth factor subunit B (PDGF subunit B) (P	w
+GROWTH	human	P01133	EGF	P01133	29	489	Pro-epidermal growth factor (EGF) [Cleaved into: Epidermal g	w
+GROWTH	human	P01135	TGFA	P01135	59	597	Protransforming growth factor alpha [Cleaved into: Transform	w
+GROWTH	human	P01137	TGFB1	P01137	49	837	Transforming growth factor beta-1 proprotein [Cleaved into: 	w
+GROWTH	human	P01138	NGF	P01138	18	301	Beta-nerve growth factor (Beta-NGF)	w
+GROWTH	human	P01210	PENK	P01210	7	107	Proenkephalin-A [Cleaved into: Synenkephalin; Met-enkephalin	w
+GROWTH	human	P01241	GH1	P01241	15	128	Somatotropin (Growth hormone) (GH) (GH-N) (Growth hormone 1)	w
+GROWTH	human	P01242	GH2	P01242	4	33	Growth hormone variant (GH-V) (Growth hormone 2) (Placenta-s	w
+GROWTH	human	P01286	GHRH	P01286	34	239	Somatoliberin (Growth hormone-releasing factor) (GRF) (Growt	w
+GROWTH	human	P01344	IGF2	P01344	14	62	Insulin-like growth factor 2 (Insulin-like growth factor II)	w
+GROWTH	human	P02775	PPBP	P02775	114	654	Platelet basic protein (PBP) (C-X-C motif chemokine 7) (Leuk	w
+GROWTH	human	P02776	PF4	P02776	113	792	Platelet factor 4 (PF-4) (C-X-C motif chemokine 4) (Iroplact	w
+GROWTH	human	P04085	PDGFA	P04085	17	208	Platelet-derived growth factor subunit A (PDGF subunit A) (P	w
+GROWTH	human	P04629	NTRK1	P04629	273	3619	High affinity nerve growth factor receptor (EC 2.7.10.1) (Ne	w
+GROWTH	human	P05019	IGF1	P05019	20	178	Insulin-like growth factor 1 (Insulin-like growth factor I) 	w
+GROWTH	human	P05230	FGF1	P05230	17	206	Fibroblast growth factor 1 (FGF-1) (Acidic fibroblast growth	w
+GROWTH	human	P05231	IL6	P05231	67	947	Interleukin-6 (IL-6) (B-cell stimulatory factor 2) (BSF-2) (	w
+GROWTH	human	P05413	FABP3	P05413	24	219	Fatty acid-binding protein, heart (Fatty acid-binding protei	w
+GROWTH	human	P06703	S100A6	P06703	67	831	Protein S100-A6 (Calcyclin) (Growth factor-inducible protein	w
+GROWTH	human	P08069	IGF1R	P08069	91	1895	Insulin-like growth factor 1 receptor (EC 2.7.10.1) (Insulin	w
+GROWTH	human	P08138	NGFR	P08138	68	384	Tumor necrosis factor receptor superfamily member 16 (Gp80-L	w
+GROWTH	human	P08581	MET	P08581	123	1510	Hepatocyte growth factor receptor (HGF receptor) (EC 2.7.10.	w
+GROWTH	human	P08620	FGF4	P08620	51	464	Fibroblast growth factor 4 (FGF-4) (Heparin secretory-transf	w
+GROWTH	human	P08700	IL3	P08700	78	457	Interleukin-3 (IL-3) (Hematopoietic growth factor) (Mast cel	w
+GROWTH	human	P08833	IGFBP1	P08833	14	198	Insulin-like growth factor-binding protein 1 (IBP-1) (IGF-bi	w
+GROWTH	human	P09038	FGF2	P09038	41	354	Fibroblast growth factor 2 (FGF-2) (Basic fibroblast growth 	w
+GROWTH	human	P09341	CXCL1	P09341	111	761	Growth-regulated alpha protein (C-X-C motif chemokine 1) (GR	w
+GROWTH	human	P09565	IG2R	P09565	4	8	Putative insulin-like growth factor 2-associated protein (Ce	w
+GROWTH	human	P09619	PDGFRB	P09619	167	1604	Platelet-derived growth factor receptor beta (PDGF-R-beta) (	w
+GROWTH	human	P10600	TGFB3	P10600	22	214	Transforming growth factor beta-3 proprotein [Cleaved into: 	w
+GROWTH	human	P10721	KIT	P10721	134	1595	Mast/stem cell growth factor receptor Kit (SCFR) (EC 2.7.10.	w
+GROWTH	human	P10767	FGF6	P10767	47	413	Fibroblast growth factor 6 (FGF-6) (Heparin secretory-transf	w
+GROWTH	human	P10912	GHR	P10912	57	227	Growth hormone receptor (GH receptor) (Somatotropin receptor	w
+GROWTH	human	P11161	EGR2	P11161	96	475	E3 SUMO-protein ligase EGR2 (EC 2.3.2.-) (AT591) (E3 SUMO-pr	w
+GROWTH	human	P11362	FGFR1	P11362	226	1853	Fibroblast growth factor receptor 1 (FGFR-1) (EC 2.7.10.1) (	w
+GROWTH	human	P11487	FGF3	P11487	43	402	Fibroblast growth factor 3 (FGF-3) (Heparin-binding growth f	w
+GROWTH	human	P11717	IGF2R	P11717	16	264	Cation-independent mannose-6-phosphate receptor (CI Man-6-P 	w
+GROWTH	human	P12034	FGF5	P12034	22	294	Fibroblast growth factor 5 (FGF-5) (Heparin-binding growth f	w
+GROWTH	human	P13385	CRIPTO	P13385	13	98	Protein Cripto (Cripto, EGF-CFC family member) (Cripto-1 gro	w
+GROWTH	human	P14210	HGF	P14210	20	339	Hepatocyte growth factor (Hepatopoietin-A) (Scatter factor) 	w
+GROWTH	human	P15248	IL9	P15248	54	341	Interleukin-9 (IL-9) (Cytokine P40) (T-cell growth factor P4	w
+GROWTH	human	P15514	AREG	P15514	58	390	Amphiregulin (AR) (Colorectum cell-derived growth factor) (C	w
+GROWTH	human	P15692	VEGFA	P15692	14	61	Vascular endothelial growth factor A, long form (L-VEGF) (Va	w
+GROWTH	human	P16234	PDGFRA	P16234	194	1763	Platelet-derived growth factor receptor alpha (PDGF-R-alpha)	w
+GROWTH	human	P17936	IGFBP3	P17936	65	331	Insulin-like growth factor-binding protein 3 (IBP-3) (IGF-bi	w
+GROWTH	human	P17948	FLT1	P17948	117	1516	Vascular endothelial growth factor receptor 1 (VEGFR-1) (EC 	w
+GROWTH	human	P18065	IGFBP2	P18065	37	211	Insulin-like growth factor-binding protein 2 (IBP-2) (IGF-bi	w
+GROWTH	human	P18146	EGR1	P18146	105	607	Early growth response protein 1 (EGR-1) (AT225) (Nerve growt	w
+GROWTH	human	P19971	TYMP	P19971	16	283	Thymidine phosphorylase (TP) (EC 2.4.2.4) (Gliostatin) (Plat	w
+GROWTH	human	P20783	NTF3	P20783	20	160	Neurotrophin-3 (NT-3) (HDNF) (Nerve growth factor 2) (NGF-2)	w
+GROWTH	human	P21246	PTN	P21246	39	370	Pleiotrophin (PTN) (Heparin-binding brain mitogen) (HBBM) (H	w
+GROWTH	human	P21583	KITLG	P21583	135	819	Kit ligand (Mast cell growth factor) (MGF) (Stem cell factor	w
+GROWTH	human	P21781	FGF7	P21781	33	379	Fibroblast growth factor 7 (FGF-7) (Heparin-binding growth f	w
+GROWTH	human	P21802	FGFR2	P21802	214	1597	Fibroblast growth factor receptor 2 (FGFR-2) (EC 2.7.10.1) (	w
+GROWTH	human	P22455	FGFR4	P22455	210	1776	Fibroblast growth factor receptor 4 (FGFR-4) (EC 2.7.10.1) (	w
+GROWTH	human	P22607	FGFR3	P22607	206	1675	Fibroblast growth factor receptor 3 (FGFR-3) (EC 2.7.10.1) (	w
+GROWTH	human	P22692	IGFBP4	P22692	34	231	Insulin-like growth factor-binding protein 4 (IBP-4) (IGF-bi	w
+GROWTH	human	P24522	GADD45A	P24522	31	306	Growth arrest and DNA damage-inducible protein GADD45 alpha 	w
+GROWTH	human	P24592	IGFBP6	P24592	22	191	Insulin-like growth factor-binding protein 6 (IBP-6) (IGF-bi	w
+GROWTH	human	P24593	IGFBP5	P24593	57	397	Insulin-like growth factor-binding protein 5 (IBP-5) (IGF-bi	w
+GROWTH	human	P25713	MT3	P25713	5	116	Metallothionein-3 (MT-3) (GIFB) (GIF) (Growth inhibitory fac	w
+GROWTH	human	P26651	ZFP36	P26651	28	241	mRNA decay activator protein ZFP36 (G0/G1 switch regulatory 	w
+GROWTH	human	P26927	MST1	P26927	13	211	Hepatocyte growth factor-like protein (Macrophage stimulator	w
+GROWTH	human	P27539	GDF1	P27539	13	90	Embryonic growth/differentiation factor 1 (GDF-1)	w
+GROWTH	human	P28069	POU1F1	P28069	114	391	Pituitary-specific positive transcription factor 1 (PIT-1) (	w
+GROWTH	human	P28799	GRN	P28799	32	404	Progranulin (PGRN) (Acrogranin) (Epithelin precursor) (Glyco	w
+GROWTH	human	P29279	CCN2	P29279	55	487	CCN family member 2 (Cellular communication network factor 2	w
+GROWTH	human	P31371	FGF9	P31371	41	430	Fibroblast growth factor 9 (FGF-9) (Glia-activating factor) 	w
+GROWTH	human	P35858	IGFALS	P35858	17	252	Insulin-like growth factor-binding protein complex acid labi	w
+GROWTH	human	P35916	FLT4	P35916	214	1589	Vascular endothelial growth factor receptor 3 (VEGFR-3) (EC 	w
+GROWTH	human	P35968	KDR	P35968	209	1672	Vascular endothelial growth factor receptor 2 (VEGFR-2) (EC 	w
+GROWTH	human	P37173	TGFBR2	P37173	364	1663	TGF-beta receptor type-2 (TGFR-2) (EC 2.7.11.30) (TGF-beta t	w
+GROWTH	human	P40225	THPO	P40225	17	114	Thrombopoietin (C-mpl ligand) (ML) (Megakaryocyte colony-sti	w
+GROWTH	human	P42566	EPS15	P42566	96	332	Epidermal growth factor receptor substrate 15 (Protein Eps15	w
+GROWTH	human	P43026	GDF5	P43026	26	94	Growth/differentiation factor 5 (GDF-5) (Bone morphogenetic 	w
+GROWTH	human	P48745	CCN3	P48745	11	137	CCN family member 3 (Cellular communication network factor 3	w
+GROWTH	human	P49763	PGF	P49763	9	40	Placenta growth factor (PlGF)	w
+GROWTH	human	P49765	VEGFB	P49765	22	139	Vascular endothelial growth factor B (VEGF-B) (VEGF-related 	w
+GROWTH	human	P49767	VEGFC	P49767	40	337	Vascular endothelial growth factor C (VEGF-C) (Flt4 ligand) 	w
+GROWTH	human	P50222	MEOX2	P50222	155	1039	Homeobox protein MOX-2 (Growth arrest-specific homeobox) (Me	w
+GROWTH	human	P51858	HDGF	P51858	58	614	Hepatoma-derived growth factor (HDGF) (High mobility group p	w
+GROWTH	human	P51864	CRIPTO3	P51864	16	110	Protein CRIPTO3 (Cripto, EGF-CFC family member 3) (Cripto-3 	w
+GROWTH	human	P53370	NUDT6	P53370	2	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	w
+GROWTH	human	P54826	GAS1	P54826	3	50	Growth arrest-specific protein 1 (GAS-1)	w
+GROWTH	human	P55075	FGF8	P55075	77	558	Fibroblast growth factor 8 (FGF-8) (Androgen-induced growth 	w
+GROWTH	human	P55107	GDF10	P55107	16	64	Growth/differentiation factor 10 (GDF-10) (Bone morphogeneti	w
+GROWTH	human	P58294	PROK1	P58294	20	163	Prokineticin-1 (Endocrine-gland-derived vascular endothelial	w
+GROWTH	human	P60568	IL2	P60568	126	899	Interleukin-2 (IL-2) (T-cell growth factor) (TCGF) (Aldesleu	w
+GROWTH	human	P61278	SST	P61278	114	619	Somatostatin (Growth hormone release-inhibiting factor) [Cle	w
+GROWTH	human	P61328	FGF12	P61328	21	200	Fibroblast growth factor 12 (FGF-12) (Fibroblast growth fact	w
+GROWTH	human	P61812	TGFB2	P61812	25	377	Transforming growth factor beta-2 proprotein (Cetermin) (Gli	w
+GROWTH	human	P62993	GRB2	P62993	124	732	Growth factor receptor-bound protein 2 (Adapter protein GRB2	w
+GROWTH	human	Q00994	BEX3	Q00994	17	76	Protein BEX3 (Brain-expressed X-linked protein 3) (Nerve gro	w
+GROWTH	human	Q01453	PMP22	Q01453	5	120	Peripheral myelin protein 22 (PMP-22) (Growth arrest-specifi	w
+GROWTH	human	Q02643	GHRHR	Q02643	20	136	Growth hormone-releasing hormone receptor (GHRH receptor) (G	w
+GROWTH	human	Q03167	TGFBR3	Q03167	30	186	Transforming growth factor beta receptor type 3 (TGF-beta re	w
+GROWTH	human	Q04756	HGFAC	Q04756	50	385	Hepatocyte growth factor activator serine protease (HGF acti	w
+GROWTH	human	Q05215	EGR4	Q05215	5	47	Early growth response protein 4 (EGR-4) (AT133)	w
+GROWTH	human	Q06889	EGR3	Q06889	71	398	Early growth response protein 3 (EGR-3) (Zinc finger protein	w
+GROWTH	human	Q12929	EPS8	Q12929	59	247	Epidermal growth factor receptor kinase substrate 8	w
+GROWTH	human	Q13118	KLF10	Q13118	107	413	Krueppel-like factor 10 (EGR-alpha) (Transforming growth fac	w
+GROWTH	human	Q13219	PAPPA	Q13219	9	41	Pappalysin-1 (EC 3.4.24.79) (Insulin-like growth factor-depe	w
+GROWTH	human	Q13322	GRB10	Q13322	38	177	Growth factor receptor-bound protein 10 (GRB10 adapter prote	w
+GROWTH	human	Q13480	GAB1	Q13480	69	255	GRB2-associated-binding protein 1 (GRB2-associated binder 1)	w
+GROWTH	human	Q14392	LRRC32	Q14392	42	231	Transforming growth factor beta activator LRRC32 (Garpin) (G	w
+GROWTH	human	Q14393	GAS6	Q14393	39	318	Growth arrest-specific protein 6 (GAS-6) (AXL receptor tyros	w
+GROWTH	human	Q14449	GRB14	Q14449	30	207	Growth factor receptor-bound protein 14 (GRB14 adapter prote	w
+GROWTH	human	Q14451	GRB7	Q14451	76	496	Growth factor receptor-bound protein 7 (B47) (Epidermal grow	w
+GROWTH	human	Q14512	FGFBP1	Q14512	17	295	Fibroblast growth factor-binding protein 1 (FGF-BP) (FGF-BP1	w
+GROWTH	human	Q14520	HABP2	Q14520	25	324	Factor VII-activating protease (FSAP) (EC 3.4.21.-) (FVII ac	w
+GROWTH	human	Q14766	LTBP1	Q14766	22	213	Latent-transforming growth factor beta-binding protein 1 (LT	w
+GROWTH	human	Q14767	LTBP2	Q14767	29	170	Latent-transforming growth factor beta-binding protein 2 (LT	w
+GROWTH	human	Q14956	GPNMB	Q14956	31	222	Transmembrane glycoprotein NMB (Hematopoietic growth factor 	w
+GROWTH	human	Q15198	PDGFRL	Q15198	19	113	Platelet-derived growth factor receptor-like protein (PDGFR-	w
+GROWTH	human	Q15582	TGFBI	Q15582	32	444	Transforming growth factor-beta-induced protein ig-h3 (Beta 	w
+GROWTH	human	Q15714	TSC22D1	Q15714	25	122	TSC22 domain family protein 1 (Cerebral protein 2) (HUCEP-2)	w
+GROWTH	human	Q16270	IGFBP7	Q16270	21	275	Insulin-like growth factor-binding protein 7 (IBP-7) (IGF-bi	w
+GROWTH	human	Q16288	NTRK3	Q16288	97	1756	NT-3 growth factor receptor (EC 2.7.10.1) (GP145-TrkC) (Trk-	w
+GROWTH	human	Q16620	NTRK2	Q16620	139	1754	BDNF/NT-3 growth factors receptor (EC 2.7.10.1) (GP145-TrkB)	w
+GROWTH	human	Q16674	MIA	Q16674	12	62	Melanoma-derived growth regulatory protein (Melanoma inhibit	w
+GROWTH	human	Q2TV78	MST1L	Q2TV78	0	1	Putative macrophage stimulating 1-like protein (Brain rescue	w
+GROWTH	human	Q2WGN9	GAB4	Q2WGN9	8	21	GRB2-associated-binding protein 4 (GRB2-associated binder 2-	w
+GROWTH	human	Q32P28	P3H1	Q32P28	30	203	Prolyl 3-hydroxylase 1 (EC 1.14.11.7) (Growth suppressor 1) 	w
+GROWTH	human	Q3YBR2	TBRG1	Q3YBR2	15	63	Transforming growth factor beta regulator 1 (Nuclear interac	w
+GROWTH	human	Q5H9J7	BEX5	Q5H9J7	25	97	Protein BEX5 (Brain-expressed X-linked protein 5) (NGFRAP1-l	w
+GROWTH	human	Q5SWX8	ODR4	Q5SWX8	11	90	Protein odr-4 homolog (hODR-4) (LAG1-interacting protein) (T	w
+GROWTH	human	Q5T1H1	EYS	Q5T1H1	1	4	Protein eyes shut homolog (Epidermal growth factor-like prot	w
+GROWTH	human	Q5TC63	GRTP1	Q5TC63	17	126	Growth hormone-regulated TBC protein 1 (TBC1 domain family m	w
+GROWTH	human	Q5TC84	OGFRL1	Q5TC84	1	29	Opioid growth factor receptor-like protein 1	w
+GROWTH	human	Q5TGJ6	HDGFL1	Q5TGJ6	9	76	Hepatoma-derived growth factor-like protein 1 (PWWP domain-c	w
+GROWTH	human	Q5U4N7	GDF5-AS1	Q5U4N7	1	10	Protein GDF5-AS1, mitochondrial (GDF5 antisense RNA 1) (Grow	w
+GROWTH	human	Q5VTD9	GFI1B	Q5VTD9	54	482	Zinc finger protein Gfi-1b (Growth factor independent protei	w
+GROWTH	human	Q5VY43	PEAR1	Q5VY43	8	51	Platelet endothelial aggregation receptor 1 (hPEAR1) (Multip	w
+GROWTH	human	Q6B9Z1	IGFL4	Q6B9Z1	5	41	Insulin growth factor-like family member 4	w
+GROWTH	human	Q6KF10	GDF6	Q6KF10	20	54	Growth/differentiation factor 6 (GDF-6) (Bone morphogenetic 	w
+GROWTH	human	Q6U949	IGF2-AS	Q6U949	0	14	Putative insulin-like growth factor 2 antisense gene protein	w
+GROWTH	human	Q6UW32	IGFL1	Q6UW32	11	54	Insulin growth factor-like family member 1	w
+GROWTH	human	Q6UWQ7	IGFL2	Q6UWQ7	7	47	Insulin growth factor-like family member 2	w
+GROWTH	human	Q6UXB1	IGFL3	Q6UXB1	10	94	Insulin growth factor-like family member 3	w
+GROWTH	human	Q6UY11	DLK2	Q6UY11	32	117	Protein delta homolog 2 (DLK-2) (Epidermal growth factor-lik	w
+GROWTH	human	Q7Z3B1	NEGR1	Q7Z3B1	28	225	Neuronal growth regulator 1 (IgLON family member 4)	w
+GROWTH	human	Q7Z4P5	GDF7	Q7Z4P5	17	45	Growth/differentiation factor 7 (GDF-7)	w
+GROWTH	human	Q7Z4V5	HDGFL2	Q7Z4V5	42	185	Hepatoma-derived growth factor-related protein 2 (HDGF-relat	w
+GROWTH	human	Q7Z5L2	R3HCC1L	Q7Z5L2	16	134	Coiled-coil domain-containing protein R3HCC1L (Growth inhibi	w
+GROWTH	human	Q7Z7M0	MEGF8	Q7Z7M0	7	53	Multiple epidermal growth factor-like domains protein 8 (Mul	w
+GROWTH	human	Q86T13	CLEC14A	Q86T13	52	230	C-type lectin domain family 14 member A (Epidermal growth fa	w
+GROWTH	human	Q86XJ1	GAS2L3	Q86XJ1	1	61	GAS2-like protein 3 (Growth arrest-specific protein 2-like 3	w
+GROWTH	human	Q86XT9	TMEM219	Q86XT9	1	61	Insulin-like growth factor-binding protein 3 receptor (IGFBP	w
+GROWTH	human	Q86YC3	NRROS	Q86YC3	21	122	Transforming growth factor beta activator LRRC33 (Leucine-ri	w
+GROWTH	human	Q8IUX8	EGFL6	Q8IUX8	12	65	Epidermal growth factor-like protein 6 (EGF-like protein 6) 	w
+GROWTH	human	Q8N292	GAPT	Q8N292	20	127	Protein GAPT (GRB2-binding adapter protein, transmembrane) (	w
+GROWTH	human	Q8N2S1	LTBP4	Q8N2S1	22	91	Latent-transforming growth factor beta-binding protein 4 (LT	w
+GROWTH	human	Q8N441	FGFRL1	Q8N441	23	119	Fibroblast growth factor receptor-like 1 (FGF receptor-like 	w
+GROWTH	human	Q8NFT8	DNER	Q8NFT8	9	92	Delta and Notch-like epidermal growth factor-related recepto	w
+GROWTH	human	Q8NHY3	GAS2L2	Q8NHY3	23	86	GAS2-like protein 2 (GAS2-related protein on chromosome 17) 	w
+GROWTH	human	Q8NI99	ANGPTL6	Q8NI99	8	47	Angiopoietin-related protein 6 (Angiopoietin-like protein 6)	w
+GROWTH	human	Q8TAT2	FGFBP3	Q8TAT2	2	33	Fibroblast growth factor-binding protein 3 (FGF-BP3) (FGF-bi	w
+GROWTH	human	Q8TE67	EPS8L3	Q8TE67	6	52	Epidermal growth factor receptor kinase substrate 8-like pro	w
+GROWTH	human	Q8TE68	EPS8L1	Q8TE68	23	94	Epidermal growth factor receptor kinase substrate 8-like pro	w
+GROWTH	human	Q8TEU8	WFIKKN2	Q8TEU8	24	114	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing	w
+GROWTH	human	Q8WU20	FRS2	Q8WU20	50	170	Fibroblast growth factor receptor substrate 2 (FGFR substrat	w
+GROWTH	human	Q8WUH2	TGFBRAP1	Q8WUH2	33	127	Transforming growth factor-beta receptor-associated protein 	w
+GROWTH	human	Q8WWW8	GAB3	Q8WWW8	9	46	GRB2-associated-binding protein 3 (GRB2-associated binder 3)	w
+GROWTH	human	Q8WX77	IGFBPL1	Q8WX77	7	58	Insulin-like growth factor-binding protein-like 1 (IGFBP-rel	w
+GROWTH	human	Q8WYH8	ING5	Q8WYH8	52	256	Inhibitor of growth protein 5 (p28ING5)	w
+GROWTH	human	Q92847	GHSR	Q92847	30	146	Growth hormone secretagogue receptor type 1 (GHS-R) (GH-rele	w
+GROWTH	human	Q92896	GLG1	Q92896	5	186	Golgi apparatus protein 1 (CFR-1) (Cysteine-rich fibroblast 	w
+GROWTH	human	Q92913	FGF13	Q92913	26	206	Fibroblast growth factor 13 (FGF-13) (Fibroblast growth fact	w
+GROWTH	human	Q92914	FGF11	Q92914	50	294	Fibroblast growth factor 11 (FGF-11) (Fibroblast growth fact	w
+GROWTH	human	Q92915	FGF14	Q92915	10	62	Fibroblast growth factor 14 (FGF-14) (Fibroblast growth fact	w
+GROWTH	human	Q969H8	MYDGF	Q969H8	19	127	Myeloid-derived growth factor (MYDGF)	w
+GROWTH	human	Q969V5	MUL1	Q969V5	23	127	Mitochondrial ubiquitin ligase activator of NFKB 1 (EC 2.3.2	w
+GROWTH	human	Q969Z0	TBRG4	Q969Z0	35	410	FAST kinase domain-containing protein 4 (Cell cycle progress	w
+GROWTH	human	Q96A26	FAM162A	Q96A26	40	150	Protein FAM162A (E2-induced gene 5 protein) (Growth and tran	w
+GROWTH	human	Q96A58	RERG	Q96A58	21	110	Ras-related and estrogen-regulated growth inhibitor (EC 3.6.	w
+GROWTH	human	Q96CC6	RHBDF1	Q96CC6	9	52	Inactive rhomboid protein 1 (iRhom1) (Epidermal growth facto	w
+GROWTH	human	Q96FC9	DDX11	Q96FC9	18	393	ATP-dependent DNA helicase DDX11 (EC 5.6.2.3) (CHL1-related 	w
+GROWTH	human	Q96KG7	MEGF10	Q96KG7	9	46	Multiple epidermal growth factor-like domains protein 10 (Mu	w
+GROWTH	human	Q96NZ8	WFIKKN1	Q96NZ8	22	96	WAP, Kazal, immunoglobulin, Kunitz and NTR domain-containing	w
+GROWTH	human	Q99075	HBEGF	Q99075	98	494	Proheparin-binding EGF-like growth factor [Cleaved into: Hep	w
+GROWTH	human	Q99501	GAS2L1	Q99501	20	83	GAS2-like protein 1 (GAS2-related protein on chromosome 22) 	w
+GROWTH	human	Q99674	CGREF1	Q99674	15	45	Cell growth regulator with EF hand domain protein 1 (Cell gr	w
+GROWTH	human	Q99675	CGRRF1	Q99675	30	121	Cell growth regulator with RING finger domain protein 1 (Cel	w
+GROWTH	human	Q99684	GFI1	Q99684	66	406	Zinc finger protein Gfi-1 (Growth factor independent protein	w
+GROWTH	human	Q99944	EGFL8	Q99944	27	115	Epidermal growth factor-like protein 8 (EGF-like protein 8) 	w
+GROWTH	human	Q99988	GDF15	Q99988	38	255	Growth/differentiation factor 15 (GDF-15) (Macrophage inhibi	w
+GROWTH	human	Q9BYJ0	FGFBP2	Q9BYJ0	5	41	Fibroblast growth factor-binding protein 2 (FGF-BP2) (FGF-bi	w
+GROWTH	human	Q9BZZ5	API5	Q9BZZ5	48	345	Apoptosis inhibitor 5 (API-5) (Antiapoptosis clone 11 protei	w
+GROWTH	human	Q9C091	GREB1L	Q9C091	8	134	GREB1-like protein (Growth regulation by estrogen in breast 	w
+GROWTH	human	Q9GZP0	PDGFD	Q9GZP0	13	70	Platelet-derived growth factor D (PDGF-D) (Iris-expressed gr	w
+GROWTH	human	Q9GZP8	IMUP	Q9GZP8	10	75	Immortalization up-regulated protein (Hepatocyte growth fact	w
+GROWTH	human	Q9GZV9	FGF23	Q9GZV9	32	195	Fibroblast growth factor 23 (FGF-23) (Phosphatonin) (Tumor-d	w
+GROWTH	human	Q9H160	ING2	Q9H160	41	131	Inhibitor of growth protein 2 (Inhibitor of growth 1-like pr	w
+GROWTH	human	Q9H1U4	MEGF9	Q9H1U4	7	21	Multiple epidermal growth factor-like domains protein 9 (Mul	w
+GROWTH	human	Q9H3K2	GHITM	Q9H3K2	27	159	Growth hormone-inducible transmembrane protein (Dermal papil	w
+GROWTH	human	Q9H628	RERGL	Q9H628	15	86	Ras-related and estrogen-regulated growth inhibitor-like pro	w
+GROWTH	human	Q9H6S3	EPS8L2	Q9H6S3	42	182	Epidermal growth factor receptor kinase substrate 8-like pro	w
+GROWTH	human	Q9HC57	WFDC1	Q9HC57	3	46	WAP four-disulfide core domain protein 1 (Prostate stromal p	w
+GROWTH	human	Q9HCT0	FGF22	Q9HCT0	27	353	Fibroblast growth factor 22 (FGF-22)	w
+GROWTH	human	Q9HCU4	CELSR2	Q9HCU4	7	113	Cadherin EGF LAG seven-pass G-type receptor 2 (Cadherin fami	w
+GROWTH	human	Q9NP84	TNFRSF12A	Q9NP84	51	267	Tumor necrosis factor receptor superfamily member 12A (Fibro	w
+GROWTH	human	Q9NP95	FGF20	Q9NP95	37	364	Fibroblast growth factor 20 (FGF-20)	w
+GROWTH	human	Q9NR23	GDF3	Q9NR23	14	113	Growth/differentiation factor 3 (GDF-3)	w
+GROWTH	human	Q9NRA1	PDGFC	Q9NRA1	32	153	Platelet-derived growth factor C (PDGF-C) (Fallotein) (Spina	w
+GROWTH	human	Q9NS15	LTBP3	Q9NS15	20	94	Latent-transforming growth factor beta-binding protein 3 (LT	w
+GROWTH	human	Q9NSA1	FGF21	Q9NSA1	19	178	Fibroblast growth factor 21 (FGF-21)	w
+GROWTH	human	Q9NWD9	BEX4	Q9NWD9	10	54	Protein BEX4 (BEX1-like protein 1) (Brain-expressed X-linked	w
+GROWTH	human	Q9NXR8	ING3	Q9NXR8	62	249	Inhibitor of growth protein 3 (p47ING3)	w
+GROWTH	human	Q9NYQ7	CELSR3	Q9NYQ7	0	10	Cadherin EGF LAG seven-pass G-type receptor 3 (Cadherin fami	w
+GROWTH	human	Q9NZI8	IGF2BP1	Q9NZI8	25	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	w
+GROWTH	human	Q9NZT2	OGFR	Q9NZT2	4	73	Opioid growth factor receptor (OGFr) (Protein 7-60) (Zeta-ty	w
+GROWTH	human	Q9UBC2	EPS15L1	Q9UBC2	44	188	Epidermal growth factor receptor substrate 15-like 1 (Eps15-	w
+GROWTH	human	Q9UBU3	GHRL	Q9UBU3	61	431	Appetite-regulating hormone (Growth hormone secretagogue) (G	w
+GROWTH	human	Q9UHF1	EGFL7	Q9UHF1	38	186	Epidermal growth factor-like protein 7 (EGF-like protein 7) 	w
+GROWTH	human	Q9UJX0	OSGIN1	Q9UJX0	14	137	Oxidative stress-induced growth inhibitor 1 (EC 1.14.13.-) (	w
+GROWTH	human	Q9UK05	GDF2	Q9UK05	20	75	Growth/differentiation factor 2 (GDF-2) (Bone morphogenetic 	w
+GROWTH	human	Q9UK53	ING1	Q9UK53	58	147	Inhibitor of growth protein 1	w
+GROWTH	human	Q9UNL4	ING4	Q9UNL4	35	139	Inhibitor of growth protein 4 (p29ING4)	w
+GROWTH	human	Q9UQC2	GAB2	Q9UQC2	78	233	GRB2-associated-binding protein 2 (GRB2-associated binder 2)	w
+GROWTH	human	Q9Y236	OSGIN2	Q9Y236	3	56	Oxidative stress-induced growth inhibitor 2 (hT41)	w
+GROWTH	human	Q9Y240	CLEC11A	Q9Y240	22	166	C-type lectin domain family 11 member A (C-type lectin super	w
+GROWTH	human	Q9Y3E1	HDGFL3	Q9Y3E1	3	65	Hepatoma-derived growth factor-related protein 3 (HRP-3) (He	w
+GROWTH	human	Q9Y6M1	IGF2BP2	Q9Y6M1	30	370	Insulin-like growth factor 2 mRNA-binding protein 2 (IGF2 mR	w
+GROWTH	virus	P01136	OPG019	P01136	9	218	Pro-Viral epidermal growth factor	w
+GROWTH	virus	P08072	MGF	P08072	9	157	Growth factor	w
+GROWTH	virus	P08441	s010L	P08441	6	153	Growth factor	w
+GROWTH	virus	P0DOP9	OPG019	P0DOP9	14	199	Pro-variola growth factor	w
+GROWTH	virus	Q8V307	OPG019	Q8V307	13	208	Growth factor	w
+GROWTH	virus	Q9J524	FPV211	Q9J524	11	250	Probable growth factor FPV211	w
+GROWTH	worm	P91373	CELE_K11H12.8	P91373	0	7	Growth hormone-inducible transmembrane protein	w
+GROWTH	worm	P92172	daf-7	P92172	1	9	Dauer larva development regulatory growth factor daf-7	w
+GROWTH	worm	Q09445	tbc-6	Q09445	4	32	Growth hormone-regulated TBC protein 6	w
+GROWTH	worm	Q17796	hgrs-1	Q17796	8	70	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+GROWTH	worm	Q18250	egrh-1	Q18250	1	3	Early growth response factor homolog 1	w
+GROWTH	worm	Q18689	gasr-8	Q18689	0	2	GAS (Human Growth Arrest-Specific) Related	w
+GROWTH	worm	Q19910	osgn-1	Q19910	0	1	Oxidative stress induced growth inhibitor homolog osgn-1	w
+GROWTH	worm	Q21038	ver-3	Q21038	6	61	Tyrosine-protein kinase receptor ver-3 (EC 2.7.10.1) (Vascul	w
+GROWTH	worm	Q9N413	pvf-1	Q9N413	2	44	Platelet-derived growth factor (PDGF) family profile domain-	w
+GROWTH	worm	Q9XWJ8	ing-3	Q9XWJ8	8	72	Inhibitor of growth protein	w
+GROWTH	yeast	P12611	WHI2	P12611	5	19	Growth regulation protein	w
+GROWTH	yeast	P32831	NGR1	P32831	1	25	Negative growth regulatory protein NGR1	w
+GROWTH	yeast	P40043	RGI1	P40043	0	10	Respiratory growth induced protein 1	w
+GROWTH	yeast	P40156	RRG9	P40156	0	6	Required for respiratory growth protein 9, mitochondrial	w
+GROWTH	yeast	P40188	RGI2	P40188	0	3	Respiratory growth induced protein 2	w
+GROWTH	yeast	Q03063	DIG1	Q03063	9	87	Down-regulator of invasive growth 1	w
+GROWTH	yeast	Q03373	DIG2	Q03373	7	42	Down-regulator of invasive growth 2	w
+GROWTH	yeast	Q06109	RRG8	Q06109	3	12	Required for respiratory growth protein 8, mitochondrial	w
+GROWTH	yeast	Q07684	MFG1	Q07684	0	15	Morphogenetic regulator of filamentous growth protein 1	w
+GROWTH	yeast	Q08774	RRG7	Q08774	0	8	Required for respiratory growth protein 7, mitochondrial	w
+GROWTH	yeast	Q12167	RRG1	Q12167	0	5	Required for respiratory growth protein 1, mitochondrial	w
+GROWTH	yeast	Q12263	GIN4	Q12263	11	102	Serine/threonine-protein kinase GIN4 (EC 2.7.11.1) (Growth i	w
+GROWTH	yeast	Q12507	SFG1	Q12507	1	12	Superficial pseudohyphal growth protein 1	w
+GROWTH	zebrafish	A0A0B4J1B0	igf2bp2a	A0A0B4J1B0	0	12	Insulin-like growth factor 2 mRNA-binding protein 2a	w
+GROWTH	zebrafish	A0A0R4IID9	eps8a	A0A0R4IID9	8	22	Epidermal growth factor receptor kinase substrate 8-like pro	w
+GROWTH	zebrafish	A0A0R4IN60	fgf19	A0A0R4IN60	10	68	Fibroblast growth factor	w
+GROWTH	zebrafish	A0A0R4IVY2	igf2bp2b	A0A0R4IVY2	0	11	Insulin-like growth factor 2 mRNA-binding protein 2b	w
+GROWTH	zebrafish	A0A1D5NSJ6	gas2b	A0A1D5NSJ6	0	25	Growth arrest-specific 2b	w
+GROWTH	zebrafish	A0A2R8Q0D8	pdgfbb	A0A2R8Q0D8	9	45	Platelet-derived growth factor subunit B	w
+GROWTH	zebrafish	A0A4W4	negr1	A0A4W4	2	16	Neuronal growth regulator 1	w
+GROWTH	zebrafish	A0A8M1NAT7	ogfr2	A0A8M1NAT7	0	1	Opioid growth factor receptor 2	w
+GROWTH	zebrafish	A0A8M1NGE8	igf3	A0A8M1NGE8	0	3	Insulin-like growth factor 3	w
+GROWTH	zebrafish	A0A8M1NVW3	ifngr1l	A0A8M1NVW3	6	17	Growth/differentiation factor 10b precursor	w
+GROWTH	zebrafish	A0A8M1NYP8	fgfr2	A0A8M1NYP8	2	32	Fibroblast growth factor receptor (EC 2.7.10.1)	w
+GROWTH	zebrafish	A0A8M1P9F8	vegfab	A0A8M1P9F8	10	45	Vascular endothelial growth factor Ab isoform 1 precursor	w
+GROWTH	zebrafish	A0A8M1PIC1	igfbp7	A0A8M1PIC1	0	21	Insulin-like growth factor-binding protein 7 precursor	w
+GROWTH	zebrafish	A0A8M1RN50	grb7	A0A8M1RN50	4	59	Growth factor receptor-bound protein 7	w
+GROWTH	zebrafish	A0A8M2BBW7	frs2a	A0A8M2BBW7	17	59	Fibroblast growth factor receptor substrate 2a	w
+GROWTH	zebrafish	A0A8M3B2M7	fgf9	A0A8M3B2M7	2	36	Fibroblast growth factor	w
+GROWTH	zebrafish	A0A8M3B533	fgfr3	A0A8M3B533	5	26	Fibroblast growth factor receptor (EC 2.7.10.1)	w
+GROWTH	zebrafish	A0A8M6YTA3	si:ch211-266g18.9	A0A8M6YTA3	15	37	Transforming growth factor-beta receptor-associated protein 	w
+GROWTH	zebrafish	A0A8M9NZX2	si:dkeyp-97a10.2	A0A8M9NZX2	37	355	Vascular endothelial growth factor receptor 1-like	w
+GROWTH	zebrafish	A0A8M9PAD2	eps8b	A0A8M9PAD2	2	19	Epidermal growth factor receptor kinase substrate 8-like pro	w
+GROWTH	zebrafish	A0A8M9PPG4	fgfbp3	A0A8M9PPG4	0	4	Fibroblast growth factor-binding protein 1	w
+GROWTH	zebrafish	A0A8M9Q0I5	fgfbp1b	A0A8M9Q0I5	0	3	Fibroblast growth factor-binding protein 1	w
+GROWTH	zebrafish	A0A8M9Q3E7	pdgfba	A0A8M9Q3E7	10	25	Platelet-derived growth factor beta polypeptide a	w
+GROWTH	zebrafish	A0A8M9QGK2	tgfb5	A0A8M9QGK2	6	25	Transforming growth factor beta	w
+GROWTH	zebrafish	A0A8M9QGZ2	fgf11a	A0A8M9QGZ2	3	38	Fibroblast growth factor	w
+GROWTH	zebrafish	A0A8M9QKL5	pdgfrb	A0A8M9QKL5	10	113	Platelet-derived growth factor receptor alpha	w
+GROWTH	zebrafish	A0A8N7TD29	pdgfc	A0A8N7TD29	6	16	Platelet-derived growth factor C	w
+GROWTH	zebrafish	A0AB32TY92	megf6b	A0AB32TY92	0	7	Multiple epidermal growth factor-like domains protein 6 isof	w
+GROWTH	zebrafish	A0AB32U1L7	gfi1aa	A0AB32U1L7	0	3	Growth factor independent 1A transcription repressor a isofo	w
+GROWTH	zebrafish	A0AB32U2C4	LOC137496746	A0AB32U2C4	0	1	Opioid growth factor receptor-like protein 1	w
+GROWTH	zebrafish	A0AB32U3A0	gdf10b	A0AB32U3A0	0	4	Growth/differentiation factor 10-like	w
+GROWTH	zebrafish	A0AB40E5I1	igfbp6a	A0AB40E5I1	2	6	Insulin-like growth factor-binding protein 6a precursor	w
+GROWTH	zebrafish	A0JML1	gas1b	A0JML1	3	8	Growth arrest-specific 1b	w
+GROWTH	zebrafish	A2CEV2	si:dkey-220k22.1	A2CEV2	0	1	Multiple epidermal growth factor-like domains protein 9	w
+GROWTH	zebrafish	A4IG38	ogfr1	A4IG38	0	1	Opioid growth factor receptor 1	w
+GROWTH	zebrafish	A4IG72	tgfbrap1	A4IG72	16	38	Transforming growth factor-beta receptor-associated protein 	w
+GROWTH	zebrafish	A4K8J2	igfbp1b	A4K8J2	2	19	Insulin-like growth factor-binding protein 1	w
+GROWTH	zebrafish	A5PLA3	igfbp5a	A5PLA3	2	15	Insulin-like growth factor-binding protein 5	w
+GROWTH	zebrafish	A5PMP7	pdgfaa	A5PMP7	7	12	Platelet-derived growth factor subunit A	w
+GROWTH	zebrafish	A5WVS7	ing5a	A5WVS7	11	42	Inhibitor of growth protein	w
+GROWTH	zebrafish	A8E7N9	gdf6b	A8E7N9	8	14	Growth/differentiation factor 6-B	w
+GROWTH	zebrafish	A8WH88	ghrb	A8WH88	11	21	Growth hormone receptor b	w
+GROWTH	zebrafish	A9JRW9	hbegfa	A9JRW9	8	88	Proheparin-binding EGF-like growth factor	w
+GROWTH	zebrafish	A9Y366	ghrhr2	A9Y366	5	20	Growth hormone releasing hormone receptor 2 precursor	w
+GROWTH	zebrafish	B0S525	igfbp5b	B0S525	3	4	Insulin-like growth factor-binding protein 5	w
+GROWTH	zebrafish	B0V1I9	ghsra	B0V1I9	11	47	Growth hormone secretagogue receptor type 1	w
+GROWTH	zebrafish	B3DHR9	fgf7	B3DHR9	9	92	Fibroblast growth factor	w
+GROWTH	zebrafish	B8A5K6	kitb	B8A5K6	3	15	Mast/stem cell growth factor receptor	w
+GROWTH	zebrafish	B8A5X9	gdf10a	B8A5X9	0	4	Growth/differentiation factor 10	w
+GROWTH	zebrafish	E2DGP8	ngfrb	E2DGP8	2	10	Nerve growth factor receptor b	w
+GROWTH	zebrafish	E7EYE2	ogfrl1	E7EYE2	0	1	Opioid growth factor receptor-like 1	w
+GROWTH	zebrafish	E7EYZ3	ogfr	E7EYZ3	1	50	Opioid growth factor receptor	w
+GROWTH	zebrafish	E7EZL2	ghsrb	E7EZL2	11	34	Growth hormone secretagogue receptor type 1	w
+GROWTH	zebrafish	E7EZR4	vegfba	E7EZR4	8	29	Vascular endothelial growth factor B	w
+GROWTH	zebrafish	E7F020	frs3	E7F020	16	43	Fibroblast growth factor receptor substrate 2	w
+GROWTH	zebrafish	E7F1L9	eps8l1b	E7F1L9	5	19	Epidermal growth factor receptor kinase substrate 8-like pro	w
+GROWTH	zebrafish	E7F3K7	tbrg4	E7F3K7	5	51	FAST kinase domain-containing protein 4 (Protein TBRG4) (Tra	w
+GROWTH	zebrafish	E7F9J0	fgf11b	E7F9J0	8	38	Fibroblast growth factor	w
+GROWTH	zebrafish	E7FBX7	gfi1b	E7FBX7	0	6	Growth factor-independent 1B transcription repressor	w
+GROWTH	zebrafish	E7FDB6	si:ch73-18k18.1	E7FDB6	3	19	Transforming growth factor beta receptor type 3 precursor	w
+GROWTH	zebrafish	E7FF79	ghrhrb	E7FF79	5	20	Growth hormone-releasing hormone receptor b	w
+GROWTH	zebrafish	E7FGW0	ngfra	E7FGW0	10	66	Nerve growth factor receptor a (TNFR superfamily, member 16)	w
+GROWTH	zebrafish	E9QCS7	hgs	E9QCS7	14	71	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+GROWTH	zebrafish	E9QHW0	tgfb1b	E9QHW0	13	107	Transforming growth factor beta	w
+GROWTH	zebrafish	E9QJJ1	igfals	E9QJJ1	1	31	Insulin-like growth factor-binding protein complex acid labi	w
+GROWTH	zebrafish	E9QJQ6	megf10	E9QJQ6	0	10	Multiple epidermal growth factor-like domains protein 10	w
+GROWTH	zebrafish	F1Q5H9	frs2b	F1Q5H9	9	32	Fibroblast growth factor receptor substrate 2b	w
+GROWTH	zebrafish	F1Q691	tdgf1	F1Q691	1	13	Teratocarcinoma-derived growth factor 1	w
+GROWTH	zebrafish	F1QFX6	ltbp3	F1QFX6	0	20	Latent transforming growth factor beta binding protein 3	w
+GROWTH	zebrafish	F1QHI8	pdgfrl	F1QHI8	2	31	Platelet-derived growth factor receptor-like protein	w
+GROWTH	zebrafish	F1QIJ6	eps15	F1QIJ6	14	111	Epidermal growth factor receptor pathway substrate 15	w
+GROWTH	zebrafish	F1QK08	gdf5	F1QK08	7	18	Growth differentiation factor 5	w
+GROWTH	zebrafish	F1QLR7	met	F1QLR7	8	181	Hepatocyte growth factor receptor	w
+GROWTH	zebrafish	F1QSC3	grb10b	F1QSC3	3	56	Growth factor receptor-bound protein 10 isoform X2	w
+GROWTH	zebrafish	F1QWZ4	gdf2	F1QWZ4	6	11	Growth/differentiation factor 2	w
+GROWTH	zebrafish	F1R8Z0	gadd45aa	F1R8Z0	0	3	Growth arrest and DNA damage-inducible protein GADD45 alpha	w
+GROWTH	zebrafish	F6N9E8	igfbp6b	F6N9E8	2	6	Insulin-like growth factor-binding protein 6	w
+GROWTH	zebrafish	F6NSV0	fgf13b	F6NSV0	2	19	Fibroblast growth factor	w
+GROWTH	zebrafish	K4KDS6	gas7a	K4KDS6	13	99	Growth arrest-specific 7	w
+GROWTH	zebrafish	O42222	mstnb	O42222	1	23	Growth/differentiation factor 8	w
+GROWTH	zebrafish	O57341	fgf8a	O57341	15	79	Fibroblast growth factor 8	w
+GROWTH	zebrafish	O73682	vegfaa	O73682	9	36	Vascular endothelial growth factor A-A	w
+GROWTH	zebrafish	P26632	egr1	P26632	1	16	Early growth response protein 1	w
+GROWTH	zebrafish	P48802	fgf3	P48802	11	76	Fibroblast growth factor 3	w
+GROWTH	zebrafish	P85857	gdf6a	P85857	8	18	Growth/differentiation factor 6-A	w
+GROWTH	zebrafish	Q05159	egr2b	Q05159	2	13	Early growth response protein 2b	w
+GROWTH	zebrafish	Q08CK7	igf2bp1	Q08CK7	0	16	Insulin-like growth factor 2 mRNA-binding protein 1	w
+GROWTH	zebrafish	Q0P4D2	fgf12b	Q0P4D2	1	24	Fibroblast growth factor	w
+GROWTH	zebrafish	Q1JQ34	gh1	Q1JQ34	4	18	Growth hormone 1	w
+GROWTH	zebrafish	Q1XG75	fgf10b	Q1XG75	4	23	Fibroblast growth factor	w
+GROWTH	zebrafish	Q1XG76	fgf22	Q1XG76	8	55	Fibroblast growth factor	w
+GROWTH	zebrafish	Q208T6	vegfd	Q208T6	6	23	C-fos induced growth factor	w
+GROWTH	zebrafish	Q2HXK8	fgf16	Q2HXK8	5	59	Fibroblast growth factor 16	w
+GROWTH	zebrafish	Q2LGG1	fgf6a	Q2LGG1	1	35	Fibroblast growth factor	w
+GROWTH	zebrafish	Q2LJ24	fgf20b	Q2LJ24	6	62	Fibroblast growth factor	w
+GROWTH	zebrafish	Q38PL0	fgf20a	Q38PL0	6	32	Fibroblast growth factor	w
+GROWTH	zebrafish	Q4VBS0	ing4	Q4VBS0	11	42	Inhibitor of growth protein	w
+GROWTH	zebrafish	Q5GIT4	kdr	Q5GIT4	12	78	Vascular endothelial growth factor receptor 2 (VEGFR-2) (EC 	w
+GROWTH	zebrafish	Q5K373	fgfrl1b	Q5K373	2	36	Fibroblast growth factor receptor-like 1	w
+GROWTH	zebrafish	Q5MD89	flt4	Q5MD89	9	53	Vascular endothelial growth factor receptor 3	w
+GROWTH	zebrafish	Q5RGG3	hgfa	Q5RGG3	3	28	Hepatocyte growth factor	w
+GROWTH	zebrafish	Q5RKN6	grb2a	Q5RKN6	30	197	Growth factor receptor-bound protein 2a	w
+GROWTH	zebrafish	Q5TKR1	fgf14	Q5TKR1	3	24	Fibroblast growth factor	w
+GROWTH	zebrafish	Q5TKR2	fgf13a	Q5TKR2	2	19	Fibroblast growth factor	w
+GROWTH	zebrafish	Q5TLE1	fgf6b	Q5TLE1	3	34	Fibroblast growth factor	w
+GROWTH	zebrafish	Q5TLE2	fgf5	Q5TLE2	7	57	Fibroblast growth factor	w
+GROWTH	zebrafish	Q5XXA7	hdgfl2	Q5XXA7	1	20	Hepatoma-derived growth factor-related protein 2	w
+GROWTH	zebrafish	Q66I23	tgfb3	Q66I23	4	30	Transforming growth factor beta	w
+GROWTH	zebrafish	Q66I28	igfbp3	Q66I28	8	46	Insulin-like growth factor-binding protein 3	w
+GROWTH	zebrafish	Q68IN2	mstna	Q68IN2	0	16	Growth/differentiation factor 8	w
+GROWTH	zebrafish	Q6AXL3	nrros	Q6AXL3	2	22	Transforming growth factor beta activator LRRC33	w
+GROWTH	zebrafish	Q6DGN0	rergl	Q6DGN0	1	13	Ras-related and estrogen-regulated growth inhibitor-like pro	w
+GROWTH	zebrafish	Q6DHF1	ing2	Q6DHF1	20	56	Inhibitor of growth protein	w
+GROWTH	zebrafish	Q6GMM1	gadd45ab	Q6GMM1	0	31	Growth arrest and DNA damage-inducible protein GADD45 alpha	w
+GROWTH	zebrafish	Q6NUV6	gadd45gb.1	Q6NUV6	0	4	Growth arrest and DNA-damage-inducible, gamma b, tandem dupl	w
+GROWTH	zebrafish	Q6P021	gadd45ga	Q6P021	0	7	Growth arrest and DNA damage-inducible protein GADD45 gamma	w
+GROWTH	zebrafish	Q6PBT8	fgf1	Q6PBT8	6	69	Putative fibroblast growth factor 1	w
+GROWTH	zebrafish	Q6PBU5	grtp1a	Q6PBU5	0	35	Growth hormone-regulated TBC protein 1-A	w
+GROWTH	zebrafish	Q6PC73	grb2b	Q6PC73	35	294	Growth factor receptor-bound protein 2	w
+GROWTH	zebrafish	Q6SJP8	fgf17	Q6SJP8	14	73	Fibroblast growth factor 17	w
+GROWTH	zebrafish	Q6T938	fibpb	Q6T938	1	17	Acidic fibroblast growth factor intracellular-binding protei	w
+GROWTH	zebrafish	Q6TEM2	ing3	Q6TEM2	28	76	Inhibitor of growth protein	w
+GROWTH	zebrafish	Q6YBR5	ngf	Q6YBR5	2	31	Nerve growth factor	w
+GROWTH	zebrafish	Q7SX76	fgfrl1a	Q7SX76	4	40	Fibroblast growth factor receptor-like 1	w
+GROWTH	zebrafish	Q7T011	tgfa	Q7T011	5	84	Protransforming growth factor alpha precursor	w
+GROWTH	zebrafish	Q7T3I6	vegfc	Q7T3I6	10	42	Vascular endothelial growth factor C	w
+GROWTH	zebrafish	Q805B2	fgf8b	Q805B2	4	4	Fibroblast growth factor 8b	w
+GROWTH	zebrafish	Q8AXB3	kdrl	Q8AXB3	16	70	Vascular endothelial growth factor receptor kdr-like	w
+GROWTH	zebrafish	Q8AY90	fgf10a	Q8AY90	4	53	Fibroblast growth factor	w
+GROWTH	zebrafish	Q8JFP9	gdf11	Q8JFP9	0	19	Growth/differentiation factor 8	w
+GROWTH	zebrafish	Q8JFR5	kita	Q8JFR5	3	35	Mast/stem cell growth factor receptor kita	w
+GROWTH	zebrafish	Q8JG38	fgfr2	Q8JG38	21	76	Fibroblast growth factor receptor 2	w
+GROWTH	zebrafish	Q8JHX6	igfbp1a	Q8JHX6	3	6	Insulin-like growth factor-binding protein 1	w
+GROWTH	zebrafish	Q8JIE4	igf2b	Q8JIE4	20	72	Insulin-like growth factor 2	w
+GROWTH	zebrafish	Q90413	fgfr4	Q90413	22	74	Fibroblast growth factor receptor 4	w
+GROWTH	zebrafish	Q90VV9	igf1	Q90VV9	7	13	Insulin-like growth factor 1	w
+GROWTH	zebrafish	Q90Z00	fgfr1a	Q90Z00	22	74	Fibroblast growth factor receptor 1-A	w
+GROWTH	zebrafish	Q9DE49	pdgfra	Q9DE49	7	82	Platelet-derived growth factor receptor alpha	w
+GROWTH	zebrafish	Q9DFC9	fgf4	Q9DFC9	8	67	Fibroblast growth factor	w
+GROWTH	zebrafish	Q9I8X3	fgfr3	Q9I8X3	21	71	Fibroblast growth factor receptor 3	w
+GROWTH	zebrafish	Q9PTH3	igfbp2a	Q9PTH3	5	19	Insulin-like growth factor-binding protein 2-A	w
+GROWTH	zebrafish	Q9PW80	igf2bp3	Q9PW80	0	12	Insulin-like growth factor 2 mRNA-binding protein 3	w
+GROWTH	zebrafish	X1WBL7	pgfb	X1WBL7	11	26	Placenta growth factor	w
+GROWTH	zebrafish	X1WFM8	eps8l2	X1WFM8	3	19	Epidermal growth factor receptor kinase substrate 8-like pro	w
+GROWTH-ASSOCIATED	fly	FBgn0013467	igl	Q7JPS2	2	33	Igloo, isoform A (Vertebrate growth-associated protein GAP-4	w
+GROWTH-ASSOCIATED	fly	FBgn0034982	Naa35	Q9W1A2	4	15	N-alpha-acetyltransferase 35, NatC auxiliary subunit homolog	w
+GROWTH-ASSOCIATED	human	O95406	CNIH1	O95406	11	133	Protein cornichon homolog 1 (CNIH-1) (Cornichon family AMPA 	w
+GROWTH-ASSOCIATED	human	P17677	GAP43	P17677	12	75	Neuromodulin (Axonal membrane protein GAP-43) (Growth-associ	w
+GROWTH-ASSOCIATED	human	P21246	PTN	P21246	39	370	Pleiotrophin (PTN) (Heparin-binding brain mitogen) (HBBM) (H	w
+GROWTH-ASSOCIATED	human	Q5VZE5	NAA35	Q5VZE5	10	150	N-alpha-acetyltransferase 35, NatC auxiliary subunit (Embryo	w
+GROWTH-BLOCKING	fly	FBgn0034199	Gbp1	A1ZAQ9	35	259	GEO12066p1 (Growth-blocking peptide 1)	w
+GROWTH-BLOCKING	fly	FBgn0034200	Gbp2	Q7K533	20	270	GH14572p (Growth-blocking peptide 2, isoform A) (Growth-bloc	w
+GROWTH-BLOCKING	fly	FBgn0039031	Gbp3	Q9VCT2	29	249	GEO08278p1 (Growth-blocking peptide 3, isoform A) (Growth-bl	w
+GROWTH-INHIBITING	human	O00422	SAP18	O00422	83	408	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	w
+GROWTH-INHIBITING	human	O14773	TPP1	O14773	7	201	Tripeptidyl-peptidase 1 (TPP-1) (EC 3.4.14.9) (Cell growth-i	w
+GROWTH-INHIBITING	human	P01011	SERPINA3	P01011	30	460	Alpha-1-antichymotrypsin (ACT) (Cell growth-inhibiting gene 	w
+GROWTH-INHIBITING	human	P02788	LTF	P02788	24	661	Lactotransferrin (Lactoferrin) (EC 3.4.21.-) (Growth-inhibit	w
+GROWTH-INHIBITING	human	P08493	MGP	P08493	4	45	Matrix Gla protein (MGP) (Cell growth-inhibiting gene 36 pro	w
+GROWTH-INHIBITING	human	P09565	IG2R	P09565	4	8	Putative insulin-like growth factor 2-associated protein (Ce	w
+GROWTH-INHIBITING	human	P18077	RPL35A	P18077	57	771	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
+GROWTH-INHIBITING	human	P21926	CD9	P21926	35	638	CD9 antigen (5H9 antigen) (Cell growth-inhibiting gene 2 pro	w
+GROWTH-INHIBITING	human	P41220	RGS2	P41220	54	241	Regulator of G protein signaling 2 (RGS2) (Cell growth-inhib	w
+GROWTH-INHIBITING	human	P51153	RAB13	P51153	59	273	Ras-related protein Rab-13 (EC 3.6.5.2) (Cell growth-inhibit	w
+GROWTH-INHIBITING	human	P56645	PER3	P56645	28	113	Period circadian protein homolog 3 (hPER3) (Cell growth-inhi	w
+GROWTH-INHIBITING	human	P62736	ACTA2	P62736	116	645	Actin, aortic smooth muscle (EC 3.6.4.-) (Alpha-actin-2) (Ce	w
+GROWTH-INHIBITING	human	P83881	RPL36A	P83881	30	498	Large ribosomal subunit protein eL42 (60S ribosomal protein 	w
+GROWTH-INHIBITING	human	Q04609	FOLH1	Q04609	14	165	Glutamate carboxypeptidase 2 (EC 3.4.17.21) (Cell growth-inh	w
+GROWTH-INHIBITING	human	Q13158	FADD	Q13158	15	264	FAS-associated death domain protein (FAS-associating death d	w
+GROWTH-INHIBITING	human	Q14973	SLC10A1	Q14973	4	155	Hepatic sodium/bile acid cotransporter (Cell growth-inhibiti	w
+GROWTH-INHIBITING	human	Q9BZQ8	NIBAN1	Q9BZQ8	21	397	Protein Niban 1 (Cell growth-inhibiting gene 39 protein) (Pr	w
+GROWTH-INHIBITING	human	Q9HBA9	FOLH1B	Q9HBA9	5	24	Putative N-acetylated-alpha-linked acidic dipeptidase (NAALA	w
+GROWTH-INHIBITING	human	Q9NRQ2	PLSCR4	Q9NRQ2	4	102	Phospholipid scramblase 4 (PL scramblase 4) (Ca(2+)-dependen	w
+GROWTH-INHIBITING	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
+GROWTH-INHIBITING	human	Q9P2W9	STX18	Q9P2W9	68	196	Syntaxin-18 (Cell growth-inhibiting gene 9 protein)	w
+GROWTH-INHIBITING	human	Q9Y5T4	DNAJC15	Q9Y5T4	18	222	DnaJ homolog subfamily C member 15 (Cell growth-inhibiting g	w
+GROWTH-PROMOTING	human	Q9HCB6	SPON1	Q9HCB6	12	92	Spondin-1 (F-spondin) (Vascular smooth muscle cell growth-pr	w
+GROWTH-REGULATED	human	P09341	CXCL1	P09341	111	761	Growth-regulated alpha protein (C-X-C motif chemokine 1) (GR	w
+GROWTH-REGULATED	human	P19875	CXCL2	P19875	80	410	C-X-C motif chemokine 2 (Growth-regulated protein beta) (Gro	w
+GROWTH-REGULATED	human	P19876	CXCL3	P19876	64	399	C-X-C motif chemokine 3 (GRO-gamma(1-73)) (Growth-regulated 	w
+GROWTH-REGULATING	human	Q9NX58	LYAR	Q9NX58	135	742	Cell growth-regulating nucleolar protein	w
+GROWTH-RELATED	human	Q8TC92	ENOX1	Q8TC92	5	34	Ecto-NOX disulfide-thiol exchanger 1 (Candidate growth-relat	w
+GROWTH-STIMULATING	human	P48061	CXCL12	P48061	42	85	Stromal cell-derived factor 1 (SDF-1) (hSDF-1) (C-X-C motif 	w
+GRO_207	fly	FBgn0001139	gro	P16371	183	486		
+GRO_258	fly	FBgn0001139	gro	P16371	183	486		

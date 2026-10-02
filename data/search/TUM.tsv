@@ -1,2 +1,351 @@
-TUM1	cladophialophora-carrionii	A0A1C1CDP7	tum1	A0A1C1CDP7	0	23	Putative 3-mercaptopyruvate sulfurtransferase
-TUM1	schizosaccharomyces-pombe	Q9USJ1	tum1	Q9USJ1	0	19	Probable 3-mercaptopyruvate sulfurtransferase
+TUM	fly	FBgn0086356	tum	A1Z9I5	14	87	FI24033p1 (Tumbleweed)	
+TUM1	cladophialophora-carrionii	A0A1C1CDP7	tum1	A0A1C1CDP7	0	23	Putative 3-mercaptopyruvate sulfurtransferase	
+TUM1	schizosaccharomyces-pombe	Q9USJ1	tum1	Q9USJ1	0	19	Probable 3-mercaptopyruvate sulfurtransferase	
+TUM1	yeast	Q08686	TUM1	Q08686	0	22	Thiosulfate sulfurtransferase TUM1	
+TUMBLEWEED	fly	FBgn0086356	tum	A1Z9I5	14	87	FI24033p1 (Tumbleweed)	w
+TUMOR	fly	FBgn0001075	ft	P33450	2	7	Cadherin-related tumor suppressor (Protein fat) [Cleaved int	w
+TUMOR	fly	FBgn0002441	l(3)mbt	Q9VB52	17	103	LD05287p (Lethal (3) malignant brain tumor)	w
+TUMOR	fly	FBgn0003023	otu	P10383	7	28	Protein ovarian tumor locus	w
+TUMOR	fly	FBgn0010300	brat	M9MSJ1	16	151	Brain tumor, isoform E	w
+TUMOR	fly	FBgn0020248	stet	Q9W0E9	2	18	Stem cell tumor, isoform B (EC 3.4.21.-)	w
+TUMOR	fly	FBgn0030941	wgn	Q9VWS4	300	2408	Tumor necrosis factor receptor superfamily member wengen	w
+TUMOR	fly	FBgn0036666	TSG101	Q9VVA7	21	132	Tumor suppressor protein 101 (Tumor susceptibility gene 101)	w
+TUMOR	fly	FBgn0037874	Tctp	Q9VGS2	13	82	Translationally-controlled tumor protein homolog (TCTP)	w
+TUMOR	fly	FBgn0038965	mats	Q95RA8	85	1152	MOB kinase activator-like 1 (Mob as tumor suppressor protein	w
+TUMOR	fly	FBgn0259482	Mob3	Q9VL13	0	5	MOB kinase activator-like 3 (Mob as tumor suppressor protein	w
+TUMOR	fly	FBgn0261574	kug	Q9VW71	0	2	Fat-like cadherin-related tumor suppressor homolog (Protein 	w
+TUMOR	human	A0A0A6YY99	TNFSF12-TNFSF13	A0A0A6YY99	1	9	Tumor necrosis factor ligand superfamily member 13	w
+TUMOR	human	A1A5B4	ANO9	A1A5B4	8	51	Anoctamin-9 (Transmembrane protein 16J) (Tumor protein p53-i	w
+TUMOR	human	A6NIX2	WTIP	A6NIX2	43	397	Wilms tumor protein 1-interacting protein (WT1-interacting p	w
+TUMOR	human	B2RNN3	C1QTNF9B	B2RNN3	16	77	Complement C1q and tumor necrosis factor-related protein 9B 	w
+TUMOR	human	O00182	LGALS9	O00182	31	672	Galectin-9 (Gal-9) (Ecalectin) (Tumor antigen HOM-HD-21)	w
+TUMOR	human	O00214	LGALS8	O00214	10	192	Galectin-8 (Gal-8) (Po66 carbohydrate-binding protein) (Po66	w
+TUMOR	human	O00220	TNFRSF10A	O00220	61	344	Tumor necrosis factor receptor superfamily member 10A (Death	w
+TUMOR	human	O00300	TNFRSF11B	O00300	53	230	Tumor necrosis factor receptor superfamily member 11B (Osteo	w
+TUMOR	human	O14569	CYB561D2	O14569	12	69	Transmembrane reductase CYB561D2 (EC 7.2.1.3) (Cytochrome b5	w
+TUMOR	human	O14683	TP53I11	O14683	7	67	Tumor protein p53-inducible protein 11 (p53-induced gene 11 	w
+TUMOR	human	O14763	TNFRSF10B	O14763	66	337	Tumor necrosis factor receptor superfamily member 10B (Death	w
+TUMOR	human	O14788	TNFSF11	O14788	65	397	Tumor necrosis factor ligand superfamily member 11 (TNFSF11)	w
+TUMOR	human	O14798	TNFRSF10C	O14798	37	147	Tumor necrosis factor receptor superfamily member 10C (Antag	w
+TUMOR	human	O14836	TNFRSF13B	O14836	52	203	Tumor necrosis factor receptor superfamily member 13B (Trans	w
+TUMOR	human	O15078	CEP290	O15078	32	196	Centrosomal protein of 290 kDa (Cep290) (Bardet-Biedl syndro	w
+TUMOR	human	O15350	TP73	O15350	48	250	Tumor protein p73 (p53-like transcription factor) (p53-relat	w
+TUMOR	human	O43399	TPD52L2	O43399	22	170	Tumor protein D54 (hD54) (Tumor protein D52-like 2)	w
+TUMOR	human	O43508	TNFSF12	O43508	47	217	Tumor necrosis factor ligand superfamily member 12 (APO3 lig	w
+TUMOR	human	O43557	TNFSF14	O43557	71	460	Tumor necrosis factor ligand superfamily member 14 (Herpes v	w
+TUMOR	human	O43570	CA12	O43570	13	93	Carbonic anhydrase 12 (EC 4.2.1.1) (Carbonate dehydratase XI	w
+TUMOR	human	O60299	LZTS3	O60299	22	39	Leucine zipper putative tumor suppressor 3 (ProSAP-interacti	w
+TUMOR	human	O60858	TRIM13	O60858	35	208	E3 ubiquitin-protein ligase TRIM13 (EC 2.3.2.27) (B-cell chr	w
+TUMOR	human	O75509	TNFRSF21	O75509	37	167	Tumor necrosis factor receptor superfamily member 21 (Death 	w
+TUMOR	human	O75888	TNFSF13	O75888	45	191	Tumor necrosis factor ligand superfamily member 13 (A prolif	w
+TUMOR	human	O75896	TUSC2	O75896	22	128	Tumor suppressor candidate 2 (Fusion 1 protein) (Fus-1 prote	w
+TUMOR	human	O75973	C1QL1	O75973	20	181	C1q-related factor (C1q and tumor necrosis factor-related pr	w
+TUMOR	human	O95057	DIRAS1	O95057	52	320	GTP-binding protein Di-Ras1 (Distinct subgroup of the Ras fa	w
+TUMOR	human	O95150	TNFSF15	O95150	57	299	Tumor necrosis factor ligand superfamily member 15 (TNF liga	w
+TUMOR	human	O95379	TNFAIP8	O95379	24	165	Tumor necrosis factor alpha-induced protein 8 (TNF alpha-ind	w
+TUMOR	human	O95407	TNFRSF6B	O95407	30	166	Tumor necrosis factor receptor superfamily member 6B (Decoy 	w
+TUMOR	human	O95835	LATS1	O95835	117	576	Serine/threonine-protein kinase LATS1 (EC 2.7.11.1) (Large t	w
+TUMOR	human	P01374	LTA	P01374	25	181	Lymphotoxin-alpha (LT-alpha) (TNF-beta) (Tumor necrosis fact	w
+TUMOR	human	P01375	TNF	P01375	97	1610	Tumor necrosis factor (Cachectin) (TNF-alpha) (Tumor necrosi	w
+TUMOR	human	P04637	TP53	P04637	385	2943	Cellular tumor antigen p53 (Antigen NY-CO-13) (Phosphoprotei	w
+TUMOR	human	P08138	NGFR	P08138	68	384	Tumor necrosis factor receptor superfamily member 16 (Gp80-L	w
+TUMOR	human	P0C5K6	VENTXP1	P0C5K6	1	4	Putative tumor antigen NA88-A (Cancer/testis antigen 18) (CT	w
+TUMOR	human	P0C862	C1QTNF9	P0C862	17	57	Complement C1q and tumor necrosis factor-related protein 9A 	w
+TUMOR	human	P13693	TPT1	P13693	35	383	Translationally-controlled tumor protein (TCTP) (Fortilin) (	w
+TUMOR	human	P14625	HSP90B1	P14625	46	645	Endoplasmin (EC 3.6.4.-) (94 kDa glucose-regulated protein) 	w
+TUMOR	human	P14679	TYR	P14679	46	356	Tyrosinase (EC 1.14.18.1) (LB24-AB) (Monophenol monooxygenas	w
+TUMOR	human	P19438	TNFRSF1A	P19438	123	642	Tumor necrosis factor receptor superfamily member 1A (Tumor 	w
+TUMOR	human	P19544	WT1	P19544	55	395	Wilms tumor protein (WT33)	w
+TUMOR	human	P20333	TNFRSF1B	P20333	79	372	Tumor necrosis factor receptor superfamily member 1B (Tumor 	w
+TUMOR	human	P20827	EFNA1	P20827	28	200	Ephrin-A1 (EPH-related receptor tyrosine kinase ligand 1) (L	w
+TUMOR	human	P21580	TNFAIP3	P21580	61	577	Tumor necrosis factor alpha-induced protein 3 (TNF alpha-ind	w
+TUMOR	human	P23510	TNFSF4	P23510	81	405	Tumor necrosis factor ligand superfamily member 4 (Glycoprot	w
+TUMOR	human	P24001	IL32	P24001	14	225	Interleukin-32 (IL-32) (Natural killer cells protein 4) (Tum	w
+TUMOR	human	P25445	FAS	P25445	130	615	Tumor necrosis factor receptor superfamily member 6 (Apo-1 a	w
+TUMOR	human	P25942	CD40	P25942	110	555	Tumor necrosis factor receptor superfamily member 5 (B-cell 	w
+TUMOR	human	P26022	PTX3	P26022	12	251	Pentraxin-related protein PTX3 (Pentaxin-related protein PTX	w
+TUMOR	human	P26842	CD27	P26842	91	372	CD27 antigen (CD27L receptor) (T-cell activation antigen CD2	w
+TUMOR	human	P27635	RPL10	P27635	97	1286	Large ribosomal subunit protein uL16 (60S ribosomal protein 	w
+TUMOR	human	P28908	TNFRSF8	P28908	35	141	Tumor necrosis factor receptor superfamily member 8 (CD30L r	w
+TUMOR	human	P29965	CD40LG	P29965	94	654	CD40 ligand (CD40-L) (T-cell antigen Gp39) (TNF-related acti	w
+TUMOR	human	P30153	PPP2R1A	P30153	31	752	Serine/threonine-protein phosphatase 2A 65 kDa regulatory su	w
+TUMOR	human	P32970	CD70	P32970	20	210	CD70 antigen (CD27 ligand) (CD27-L) (Tumor necrosis factor l	w
+TUMOR	human	P32971	TNFSF8	P32971	63	402	Tumor necrosis factor ligand superfamily member 8 (CD30 liga	w
+TUMOR	human	P36941	LTBR	P36941	53	238	Tumor necrosis factor receptor superfamily member 3 (Lymphot	w
+TUMOR	human	P40337	VHL	P40337	179	696	von Hippel-Lindau disease tumor suppressor (Protein G7) (pVH	w
+TUMOR	human	P41273	TNFSF9	P41273	86	316	Tumor necrosis factor ligand superfamily member 9 (4-1BB lig	w
+TUMOR	human	P42771	CDKN2A	P42771	101	744	Cyclin-dependent kinase inhibitor 2A (Cyclin-dependent kinas	w
+TUMOR	human	P42772	CDKN2B	P42772	17	153	Cyclin-dependent kinase 4 inhibitor B (Multiple tumor suppre	w
+TUMOR	human	P43146	DCC	P43146	48	205	Netrin receptor DCC (Colorectal cancer suppressor) (Immunogl	w
+TUMOR	human	P43489	TNFRSF4	P43489	43	230	Tumor necrosis factor receptor superfamily member 4 (ACT35 a	w
+TUMOR	human	P48023	FASLG	P48023	61	509	Tumor necrosis factor ligand superfamily member 6 (Apoptosis	w
+TUMOR	human	P50502	ST13	P50502	15	210	Hsc70-interacting protein (Hip) (Aging-associated protein 2)	w
+TUMOR	human	P50591	TNFSF10	P50591	58	353	Tumor necrosis factor ligand superfamily member 10 (Apo-2 li	w
+TUMOR	human	P52756	RBM5	P52756	54	292	RNA-binding protein 5 (Protein G15) (Putative tumor suppress	w
+TUMOR	human	P55327	TPD52	P55327	10	101	Tumor protein D52 (Protein N8)	w
+TUMOR	human	P56180	TPTE	P56180	7	174	Putative tyrosine-protein phosphatase TPTE (EC 3.1.3.48) (Ca	w
+TUMOR	human	P57737	CORO7	P57737	6	100	Coronin-7 (Crn7) (70 kDa WD repeat tumor rejection antigen h	w
+TUMOR	human	P60827	C1QTNF8	P60827	10	45	Complement C1q tumor necrosis factor-related protein 8 (C1q/	w
+TUMOR	human	P61968	LMO4	P61968	80	504	LIM domain transcription factor LMO4 (Breast tumor autoantig	w
+TUMOR	human	P78524	DENND2B	P78524	12	56	DENN domain-containing protein 2B (HeLa tumor suppression 1)	w
+TUMOR	human	P81172	HAMP	P81172	40	210	Hepcidin (Liver-expressed antimicrobial peptide 1) (LEAP-1) 	w
+TUMOR	human	P98066	TNFAIP6	P98066	15	187	Tumor necrosis factor-inducible gene 6 protein (EC 3.1.1.-) 	w
+TUMOR	human	Q02223	TNFRSF17	Q02223	66	254	Tumor necrosis factor receptor superfamily member 17 (B-cell	w
+TUMOR	human	Q03169	TNFAIP2	Q03169	31	310	Tumor necrosis factor alpha-induced protein 2 (TNF alpha-ind	w
+TUMOR	human	Q06250	WT1-AS	Q06250	4	14	Putative Wilms tumor upstream neighbor 1 gene protein (WIT-1	w
+TUMOR	human	Q06643	LTB	Q06643	66	356	Lymphotoxin-beta (LT-beta) (Tumor necrosis factor C) (TNF-C)	w
+TUMOR	human	Q07011	TNFRSF9	Q07011	79	425	Tumor necrosis factor receptor superfamily member 9 (4-1BB l	w
+TUMOR	human	Q0D2I5	IFFO1	Q0D2I5	30	75	Non-homologous end joining factor IFFO1 (NHEJ factor IFFO1) 	w
+TUMOR	human	Q10571	MN1	Q10571	19	79	Transcriptional activator MN1 (Probable tumor suppressor pro	w
+TUMOR	human	Q12931	TRAP1	Q12931	36	567	Heat shock protein 75 kDa, mitochondrial (HSP 75) (Heat shoc	w
+TUMOR	human	Q12933	TRAF2	Q12933	155	722	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin	w
+TUMOR	human	Q13530	SERINC3	Q13530	2	53	Serine incorporator 3 (Tumor differentially expressed protei	w
+TUMOR	human	Q13625	TP53BP2	Q13625	137	337	Apoptosis-stimulating of p53 protein 2 (Bcl2-binding protein	w
+TUMOR	human	Q13829	TNFAIP1	Q13829	15	155	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	w
+TUMOR	human	Q13882	PTK6	Q13882	142	1398	Protein-tyrosine kinase 6 (EC 2.7.10.2) (Breast tumor kinase	w
+TUMOR	human	Q14008	CKAP5	Q14008	42	356	Cytoskeleton-associated protein 5 (Colonic and hepatic tumor	w
+TUMOR	human	Q14802	FXYD3	Q14802	15	115	FXYD domain-containing ion transport regulator 3 (Chloride c	w
+TUMOR	human	Q15007	WTAP	Q15007	60	292	Pre-mRNA-splicing regulator WTAP (Female-lethal(2)D homolog)	w
+TUMOR	human	Q15198	PDGFRL	Q15198	19	113	Platelet-derived growth factor receptor-like protein (PDGFR-	w
+TUMOR	human	Q15628	TRADD	Q15628	58	381	Tumor necrosis factor receptor type 1-associated DEATH domai	w
+TUMOR	human	Q16385	SSX2	Q16385	9	81	Protein SSX2 (Cancer/testis antigen 5.2) (CT5.2) (Synovial s	w
+TUMOR	human	Q16890	TPD52L1	Q16890	18	89	Tumor protein D53 (hD53) (Tumor protein D52-like 1)	w
+TUMOR	human	Q2NKX8	ERCC6L	Q2NKX8	15	237	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-d	w
+TUMOR	human	Q2TAM9	TUSC1	Q2TAM9	8	68	Tumor suppressor candidate gene 1 protein (TSG-9) (TSG9)	w
+TUMOR	human	Q2TBC4	PRICKLE4	Q2TBC4	13	57	Prickle-like protein 4 (Overexpressed breast tumor protein)	w
+TUMOR	human	Q4G0M1	ERFE	Q4G0M1	11	44	Erythroferrone (Complement C1q tumor necrosis factor-related	w
+TUMOR	human	Q53FA7	TP53I3	Q53FA7	3	91	Quinone oxidoreductase PIG3 (EC 1.6.5.5) (NADPH:quinone redu	w
+TUMOR	human	Q5GJ75	TNFAIP8L3	Q5GJ75	42	324	Tumor necrosis factor alpha-induced protein 8-like protein 3	w
+TUMOR	human	Q5JR59	MTUS2	Q5JR59	61	470	Microtubule-associated tumor suppressor candidate 2 (Cardiac	w
+TUMOR	human	Q5JTC6	AMER1	Q5JTC6	37	116	APC membrane recruitment protein 1 (Amer1) (Protein FAM123B)	w
+TUMOR	human	Q5T0D9	TPRG1L	Q5T0D9	3	20	Tumor protein p63-regulated gene 1-like protein (Mossy fiber	w
+TUMOR	human	Q5T7M4	C1QTNF12	Q5T7M4	7	33	Adipolin (Adipose-derived insulin-sensitizing factor) (C1q a	w
+TUMOR	human	Q5T8P6	RBM26	Q5T8P6	81	248	RNA-binding protein 26 (CTCL tumor antigen se70-2) (RNA-bind	w
+TUMOR	human	Q5VWW1	C1QL3	Q5VWW1	20	137	Complement C1q-like protein 3 (C1q and tumor necrosis factor	w
+TUMOR	human	Q658P3	STEAP3	Q658P3	7	259	Metalloreductase STEAP3 (EC 1.16.1.-) (Dudulin-2) (Six-trans	w
+TUMOR	human	Q687X5	STEAP4	Q687X5	9	111	Metalloreductase STEAP4 (EC 1.16.1.-) (Six-transmembrane epi	w
+TUMOR	human	Q68CZ2	TNS3	Q68CZ2	62	189	Tensin-3 (EC 3.1.3.-) (Tensin-like SH2 domain-containing pro	w
+TUMOR	human	Q6AI39	BICRAL	Q6AI39	17	136	BRD4-interacting chromatin-remodeling complex-associated pro	w
+TUMOR	human	Q6P589	TNFAIP8L2	Q6P589	31	328	Tumor necrosis factor alpha-induced protein 8-like protein 2	w
+TUMOR	human	Q6UX71	PLXDC2	Q6UX71	30	108	Plexin domain-containing protein 2 (Tumor endothelial marker	w
+TUMOR	human	Q6WN34	CHRDL2	Q6WN34	8	40	Chordin-like protein 2 (Breast tumor novel factor 1) (BNF-1)	w
+TUMOR	human	Q6ZUI0	TPRG1	Q6ZUI0	3	28	Tumor protein p63-regulated gene 1 protein (Protein FAM79B)	w
+TUMOR	human	Q7Z3E2	CCDC186	Q7Z3E2	23	54	Coiled-coil domain-containing protein 186 (CTCL tumor antige	w
+TUMOR	human	Q7Z3E5	ARMC9	Q7Z3E5	14	75	LisH domain-containing protein ARMC9 (Armadillo repeat-conta	w
+TUMOR	human	Q7Z5L3	C1QL2	Q7Z5L3	18	162	Complement C1q-like protein 2 (C1q and tumor necrosis factor	w
+TUMOR	human	Q86UD0	SAPCD2	Q86UD0	24	69	Suppressor APC domain-containing protein 2 (Tumor specificit	w
+TUMOR	human	Q86UY5	SACK1A	Q86UY5	20	134	Scaffolding CK1 anchoring protein A (Protein FAM83A) (Tumor 	w
+TUMOR	human	Q86YH6	PDSS2	Q86YH6	2	41	All trans-polyprenyl-diphosphate synthase PDSS2 (All-trans-d	w
+TUMOR	human	Q86Z23	C1QL4	Q86Z23	25	134	Complement C1q-like protein 4 (C1q and tumor necrosis factor	w
+TUMOR	human	Q8IUK5	PLXDC1	Q8IUK5	11	31	Plexin domain-containing protein 1 (Tumor endothelial marker	w
+TUMOR	human	Q8IVJ8	APRG1	Q8IVJ8	0	1	APRG1 tumor suppressor candidate (AP20 region protein 1)	w
+TUMOR	human	Q8IWJ2	GCC2	Q8IWJ2	19	134	GRIP and coiled-coil domain-containing protein 2 (185 kDa Go	w
+TUMOR	human	Q8IWR1	TRIM59	Q8IWR1	42	115	Tripartite motif-containing protein 59 (EC 2.3.2.27) (RING f	w
+TUMOR	human	Q8IXH6	TP53INP2	Q8IXH6	14	54	Tumor protein p53-inducible nuclear protein 2 (Diabetes and 	w
+TUMOR	human	Q8N2G4	LYPD1	Q8N2G4	15	168	Ly6/PLAUR domain-containing protein 1 (Putative HeLa tumor s	w
+TUMOR	human	Q8N726	CDKN2A	Q8N726	129	818	Tumor suppressor ARF (Alternative reading frame) (ARF) (Cycl	w
+TUMOR	human	Q8NBR0	TP53I13	Q8NBR0	13	156	Tumor protein p53-inducible protein 13 (Damage-stimulated cy	w
+TUMOR	human	Q8NET4	RTL9	Q8NET4	0	38	Retrotransposon Gag-like protein 9 (Retrotransposon gag doma	w
+TUMOR	human	Q8TEW0	PARD3	Q8TEW0	137	441	Partitioning defective 3 homolog (PAR-3) (PARD-3) (Atypical 	w
+TUMOR	human	Q8WTW4	NPRL2	Q8WTW4	29	464	GATOR1 complex protein NPRL2 (Gene 21 protein) (G21 protein)	w
+TUMOR	human	Q8WUE5	CT55	Q8WUE5	11	101	Cancer/testis antigen 55 (Tumor antigen BJ-HCC-20)	w
+TUMOR	human	Q8WVP5	TNFAIP8L1	Q8WVP5	9	105	Tumor necrosis factor alpha-induced protein 8-like protein 1	w
+TUMOR	human	Q8WWK9	CKAP2	Q8WWK9	49	195	Cytoskeleton-associated protein 2 (CTCL tumor antigen se20-1	w
+TUMOR	human	Q92544	TM9SF4	Q92544	14	172	Transmembrane 9 superfamily member 4 (Tumor cannibalism asso	w
+TUMOR	human	Q92956	TNFRSF14	Q92956	89	277	Tumor necrosis factor receptor superfamily member 14 (Herpes	w
+TUMOR	human	Q93038	TNFRSF25	Q93038	48	201	Tumor necrosis factor receptor superfamily member 25 (Apo-3)	w
+TUMOR	human	Q969F0	FATE1	Q969F0	49	168	Fetal and adult testis-expressed transcript protein (Cancer/	w
+TUMOR	human	Q969Q4	ARL11	Q969Q4	15	124	ADP-ribosylation factor-like protein 11 (ADP-ribosylation fa	w
+TUMOR	human	Q969U7	PSMG2	Q969U7	10	135	Proteasome assembly chaperone 2 (PAC-2) (Hepatocellular carc	w
+TUMOR	human	Q969Z4	RELT	Q969Z4	24	107	Tumor necrosis factor receptor superfamily member 19L (Recep	w
+TUMOR	human	Q96A56	TP53INP1	Q96A56	27	103	Tumor protein p53-inducible nuclear protein 1 (Stress-induce	w
+TUMOR	human	Q96AA8	JAKMIP2	Q96AA8	21	69	Janus kinase and microtubule-interacting protein 2 (CTCL tum	w
+TUMOR	human	Q96B49	TOMM6	Q96B49	22	113	Mitochondrial import receptor subunit TOM6 homolog (Overexpr	w
+TUMOR	human	Q96BK5	PINX1	Q96BK5	25	149	PIN2/TERF1-interacting telomerase inhibitor 1 (Liver-related	w
+TUMOR	human	Q96CJ1	EAF2	Q96CJ1	32	96	ELL-associated factor 2 (Testosterone-regulated apoptosis in	w
+TUMOR	human	Q96D21	RASD2	Q96D21	20	138	GTP-binding protein Rhes (Ras homolog enriched in striatum) 	w
+TUMOR	human	Q96G23	CERS2	Q96G23	40	571	Ceramide synthase 2 (CerS2) (LAG1 longevity assurance homolo	w
+TUMOR	human	Q96J77	TPD52L3	Q96J77	11	61	Tumor protein D55 (hD55) (Testis development protein NYD-SP2	w
+TUMOR	human	Q96PE1	ADGRA2	Q96PE1	16	84	Adhesion G protein-coupled receptor A2 (G protein-coupled re	w
+TUMOR	human	Q96PE2	ARHGEF17	Q96PE2	26	157	Rho guanine nucleotide exchange factor 17 (164 kDa Rho-speci	w
+TUMOR	human	Q96PV4	PNMA5	Q96PV4	24	93	Paraneoplastic antigen-like protein 5 (Tumor antigen BJ-HCC-	w
+TUMOR	human	Q96RJ3	TNFRSF13C	Q96RJ3	47	271	Tumor necrosis factor receptor superfamily member 13C (B-cel	w
+TUMOR	human	Q96RS6	NUDCD1	Q96RS6	11	293	NudC domain-containing protein 1 (Chronic myelogenous leukem	w
+TUMOR	human	Q96SA4	SERINC2	Q96SA4	4	97	Serine incorporator 2 (Tumor differentially expressed protei	w
+TUMOR	human	Q99732	LITAF	Q99732	48	429	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+TUMOR	human	Q99816	TSG101	Q99816	52	397	Tumor susceptibility gene 101 protein (ESCRT-I complex subun	w
+TUMOR	human	Q9BRK4	LZTS2	Q9BRK4	150	553	Leucine zipper putative tumor suppressor 2 (hLZTS2) (Protein	w
+TUMOR	human	Q9BT92	TCHP	Q9BT92	8	308	Trichoplein keratin filament-binding protein (Protein TCHP) 	w
+TUMOR	human	Q9BXI9	C1QTNF6	Q9BXI9	28	94	Complement C1q tumor necrosis factor-related protein 6	w
+TUMOR	human	Q9BXJ0	C1QTNF5	Q9BXJ0	13	73	Complement C1q tumor necrosis factor-related protein 5	w
+TUMOR	human	Q9BXJ1	C1QTNF1	Q9BXJ1	24	96	Complement C1q tumor necrosis factor-related protein 1 (G pr	w
+TUMOR	human	Q9BXJ2	C1QTNF7	Q9BXJ2	24	113	Complement C1q tumor necrosis factor-related protein 7	w
+TUMOR	human	Q9BXJ3	C1QTNF4	Q9BXJ3	15	95	Complement C1q tumor necrosis factor-related protein 4 (C1q/	w
+TUMOR	human	Q9BXJ4	C1QTNF3	Q9BXJ4	16	59	Complement C1q tumor necrosis factor-related protein 3 (Coll	w
+TUMOR	human	Q9BXJ5	C1QTNF2	Q9BXJ5	12	69	Complement C1q tumor necrosis factor-related protein 2	w
+TUMOR	human	Q9BXJ8	TMEM120A	Q9BXJ8	6	106	Transmembrane protein 120A (Protein TACAN) (Transmembrane pr	w
+TUMOR	human	Q9C0K0	BCL11B	Q9C0K0	46	196	B-cell lymphoma/leukemia 11B (BCL-11B) (B-cell CLL/lymphoma 	w
+TUMOR	human	Q9H171	ZBP1	Q9H171	8	80	Z-DNA-binding protein 1 (DNA-dependent activator of IFN-regu	w
+TUMOR	human	Q9H2G2	SLK	Q9H2G2	16	181	STE20-like serine/threonine-protein kinase (STE20-like kinas	w
+TUMOR	human	Q9H305	CDIP1	Q9H305	6	33	Cell death-inducing p53-target protein 1 (Cell death involve	w
+TUMOR	human	Q9H3D4	TP63	Q9H3D4	65	416	Tumor protein 63 (p63) (Chronic ulcerative stomatitis protei	w
+TUMOR	human	Q9H6X2	ANTXR1	Q9H6X2	28	276	Anthrax toxin receptor 1 (Tumor endothelial marker 8)	w
+TUMOR	human	Q9HAU6	TPT1P8	Q9HAU6	3	6	Putative translationally-controlled tumor protein-like prote	w
+TUMOR	human	Q9HAV5	EDA2R	Q9HAV5	9	56	Tumor necrosis factor receptor superfamily member 27 (X-link	w
+TUMOR	human	Q9HCU0	CD248	Q9HCU0	16	76	Endosialin (Tumor endothelial marker 1) (CD antigen CD248)	w
+TUMOR	human	Q9NP84	TNFRSF12A	Q9NP84	51	267	Tumor necrosis factor receptor superfamily member 12A (Fibro	w
+TUMOR	human	Q9NQG5	RPRD1B	Q9NQG5	32	247	Regulation of nuclear pre-mRNA domain-containing protein 1B 	w
+TUMOR	human	Q9NQT4	EXOSC5	Q9NQT4	25	328	Exosome complex component RRP46 (Chronic myelogenous leukemi	w
+TUMOR	human	Q9NQZ5	STARD7	Q9NQZ5	5	55	StAR-related lipid transfer protein 7, mitochondrial (STARD7	w
+TUMOR	human	Q9NQZ8	ZNF71	Q9NQZ8	2	105	Endothelial zinc finger protein induced by tumor necrosis fa	w
+TUMOR	human	Q9NRM7	LATS2	Q9NRM7	76	425	Serine/threonine-protein kinase LATS2 (EC 2.7.11.1) (Kinase 	w
+TUMOR	human	Q9NRX5	SERINC1	Q9NRX5	4	113	Serine incorporator 1 (Tumor differentially expressed protei	w
+TUMOR	human	Q9NS68	TNFRSF19	Q9NS68	15	93	Tumor necrosis factor receptor superfamily member 19 (TRADE)	w
+TUMOR	human	Q9NVM9	INTS13	Q9NVM9	15	145	Integrator complex subunit 13 (Cell cycle regulator Mat89Bb 	w
+TUMOR	human	Q9NX05	FAM120C	Q9NX05	44	232	Constitutive coactivator of PPAR-gamma-like protein 2 (Prote	w
+TUMOR	human	Q9NZM4	BICRA	Q9NZM4	28	214	BRD4-interacting chromatin-remodeling complex-associated pro	w
+TUMOR	human	Q9NZM5	NOP53	Q9NZM5	62	545	Ribosome biogenesis protein NOP53 (Glioma tumor suppressor c	w
+TUMOR	human	Q9P127	LUZP4	Q9P127	10	130	Leucine zipper protein 4 (Cancer/testis antigen 28) (CT-28) 	w
+TUMOR	human	Q9P1Q0	VPS54	Q9P1Q0	22	99	Vacuolar protein sorting-associated protein 54 (Hepatocellul	w
+TUMOR	human	Q9P2X7	DELEC1	Q9P2X7	7	34	Deleted in esophageal cancer 1 (Candidate tumor suppressor C	w
+TUMOR	human	Q9UBN6	TNFRSF10D	Q9UBN6	20	89	Tumor necrosis factor receptor superfamily member 10D (Decoy	w
+TUMOR	human	Q9UGK3	STAP2	Q9UGK3	6	34	Signal-transducing adaptor protein 2 (STAP-2) (Breast tumor 	w
+TUMOR	human	Q9UHP6	RSPH14	Q9UHP6	12	157	Radial spoke head 14 homolog (Rhabdoid tumor deletion region	w
+TUMOR	human	Q9UK61	TASOR	Q9UK61	20	168	Protein TASOR (CTCL tumor antigen se89-1) (Retinoblastoma-as	w
+TUMOR	human	Q9ULD2	MTUS1	Q9ULD2	38	176	Microtubule-associated tumor suppressor 1 (AT2 receptor-bind	w
+TUMOR	human	Q9UM63	PLAGL1	Q9UM63	1	30	Zinc finger protein PLAGL1 (Lost on transformation 1) (LOT-1	w
+TUMOR	human	Q9UNE0	EDAR	Q9UNE0	22	107	Tumor necrosis factor receptor superfamily member EDAR (Anhi	w
+TUMOR	human	Q9UNG2	TNFSF18	Q9UNG2	47	296	Tumor necrosis factor ligand superfamily member 18 (Activati	w
+TUMOR	human	Q9UNZ5	C19orf53	Q9UNZ5	18	95	Leydig cell tumor 10 kDa protein homolog	w
+TUMOR	human	Q9UQ07	MOK	Q9UQ07	256	1229	MAPK/MAK/MRK overlapping kinase (EC 2.7.11.22) (MOK protein 	w
+TUMOR	human	Q9Y250	LZTS1	Q9Y250	135	462	Leucine zipper putative tumor suppressor 1 (F37/esophageal c	w
+TUMOR	human	Q9Y275	TNFSF13B	Q9Y275	73	429	Tumor necrosis factor ligand superfamily member 13B (B lymph	w
+TUMOR	human	Q9Y2G2	CARD8	Q9Y2G2	16	139	Caspase recruitment domain-containing protein 8 (EC 3.4.-.-)	w
+TUMOR	human	Q9Y3E0	GOLT1B	Q9Y3E0	9	271	Vesicle transport protein GOT1B (Germ cell tumor 2) (Golgi t	w
+TUMOR	human	Q9Y5U5	TNFRSF18	Q9Y5U5	3	46	Tumor necrosis factor receptor superfamily member 18 (Activa	w
+TUMOR	human	Q9Y5V3	MAGED1	Q9Y5V3	53	372	Melanoma-associated antigen D1 (MAGE tumor antigen CCF) (MAG	w
+TUMOR	human	Q9Y6Q6	TNFRSF11A	Q9Y6Q6	22	98	Tumor necrosis factor receptor superfamily member 11A (Osteo	w
+TUMOR	virus	P25943	s002L	P25943	14	153	Tumor necrosis factor soluble receptor	w
+TUMOR	virus	P29825	m002L	P29825	12	156	Tumor necrosis factor soluble receptor	w
+TUMOR	worm	A0SQM0	mbtr-1	A0SQM0	0	13	Malignant brain tumor repeat protein 1	w
+TUMOR	worm	O62277	dct-18	O62277	0	6	DAF-16/FOXO Controlled, germline Tumor affecting	w
+TUMOR	worm	O76258	tsg-101	O76258	15	69	Tumor susceptibility gene 101 protein	w
+TUMOR	worm	Q17339	gld-1	Q17339	3	76	Female germline-specific tumor suppressor gld-1	w
+TUMOR	worm	Q19213	vhl-1	Q19213	11	82	von Hippel-Lindau tumor suppressor homolog	w
+TUMOR	worm	Q23190	dct-11	Q23190	0	11	DAF-16/FOXO Controlled, germline Tumor affecting	w
+TUMOR	worm	Q93573	tct-1	Q93573	8	112	Translationally-controlled tumor protein homolog	w
+TUMOR	worm	Q9N4P4	CELE_Y9C12A.1	Q9N4P4	0	2	Tumor protein p53-inducible protein 11	w
+TUMOR	worm	Q9XX55	dct-14	Q9XX55	1	8	DAF-16/FOXO Controlled, germline Tumor affecting	w
+TUMOR	worm	Q9XX57	dct-16	Q9XX57	3	46	DAF-16/FOXO Controlled, germline Tumor affecting	w
+TUMOR	yeast	P35691	TMA19	P35691	2	53	Translationally-controlled tumor protein homolog	w
+TUMOR	zebrafish	A0A0R4IT02	tnfrsf9b	A0A0R4IT02	8	17	Tumor necrosis factor receptor superfamily member 9b precurs	w
+TUMOR	zebrafish	A0A2R8Q3N4	tp53inp2b	A0A2R8Q3N4	3	4	Tumor protein p53 inducible nuclear protein 2	w
+TUMOR	zebrafish	A0A8M1N540	c1qtnf4	A0A8M1N540	1	22	Complement C1q tumor necrosis factor-related protein 4	w
+TUMOR	zebrafish	A0A8M1N906	tnfrsf21	A0A8M1N906	3	18	Tumor necrosis factor receptor superfamily member 21 precurs	w
+TUMOR	zebrafish	A0A8M1NDU3	42sp43	A0A8M1NDU3	2	2	Wilms tumor protein homolog	w
+TUMOR	zebrafish	A0A8M1PDU3	tp63	A0A8M1PDU3	6	85	Tumor protein 63 (p63)	w
+TUMOR	zebrafish	A0A8M2BHA7	c1qtnf13	A0A8M2BHA7	1	22	Complement C1q tumor necrosis factor-related protein 4	w
+TUMOR	zebrafish	A0A8M9PRR4	LOC798191	A0A8M9PRR4	2	12	Tumor necrosis factor receptor superfamily member 14-like	w
+TUMOR	zebrafish	A0A8N7TFD8	lzts1	A0A8N7TFD8	3	8	Leucine zipper putative tumor suppressor 1	w
+TUMOR	zebrafish	A0JMQ7	mtus1a	A0JMQ7	0	8	Microtubule-associated tumor suppressor 1 homolog A	w
+TUMOR	zebrafish	A0PJS8	tp53inp1	A0PJS8	4	7	Tumor protein p53-inducible nuclear protein 1	w
+TUMOR	zebrafish	A8DZE6	wtip	A8DZE6	3	28	Wilms tumor protein 1-interacting protein homolog	w
+TUMOR	zebrafish	B0S576	tp73	B0S576	11	84	Cellular tumor antigen p53	w
+TUMOR	zebrafish	B0UY56	tnfaip6	B0UY56	1	32	Tumor necrosis factor-inducible gene 6 protein	w
+TUMOR	zebrafish	B3DGL5	nf2a	B3DGL5	8	42	NF2, moesin-ezrin-radixin like (MERLIN) tumor suppressor a i	w
+TUMOR	zebrafish	B3DHE4	vhll	B3DHE4	13	60	von Hippel-Lindau disease tumor suppressor	w
+TUMOR	zebrafish	B8A4H0	si:ch211-202h22.8	B8A4H0	0	9	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+TUMOR	zebrafish	B8A4V5	tprg1l	B8A4V5	0	8	Tumor protein p63-regulated 1-like	w
+TUMOR	zebrafish	B8A6E8	lzts2a	B8A6E8	2	11	Leucine zipper putative tumor suppressor 2 homolog	w
+TUMOR	zebrafish	E7EYJ6	lzts2b	E7EYJ6	2	11	Leucine zipper putative tumor suppressor 2 homolog	w
+TUMOR	zebrafish	E7F027	tnfrsf11a	E7F027	3	12	Tumor necrosis factor receptor superfamily member 11A isofor	w
+TUMOR	zebrafish	E7F246	mtus2a	E7F246	10	27	Microtubule-associated tumor suppressor candidate 2 isoform 	w
+TUMOR	zebrafish	E7F4Y8	tsg101b	E7F4Y8	19	96	Tumor susceptibility 101b	w
+TUMOR	zebrafish	E7F804	tnfrsf18	E7F804	0	4	Tumor necrosis factor receptor superfamily member 18 isoform	w
+TUMOR	zebrafish	E7F8V4	tnfrsf9a	E7F8V4	3	17	Tumor necrosis factor receptor superfamily member 9a isoform	w
+TUMOR	zebrafish	F1QG24	fas	F1QG24	8	36	Tumor necrosis factor receptor superfamily member 6	w
+TUMOR	zebrafish	F1RAS9	tnfrsf1b	F1RAS9	10	45	Tumor necrosis factor receptor superfamily member 1B precurs	w
+TUMOR	zebrafish	F1RDH8	tnfaip2b	F1RDH8	2	27	Tumor necrosis factor alpha-induced protein 2	w
+TUMOR	zebrafish	P79734	tp53	P79734	24	532	Cellular tumor antigen p53	w
+TUMOR	zebrafish	Q0PKX7	faslg	Q0PKX7	11	136	Tumor necrosis factor ligand superfamily member 6	w
+TUMOR	zebrafish	Q503W5	tusc3	Q503W5	4	18	Tumor suppressor candidate 3	w
+TUMOR	zebrafish	Q5CZU4	tp53i11a	Q5CZU4	0	2	Tumor protein p53-inducible protein 11	w
+TUMOR	zebrafish	Q5RG40	tnfaip2a	Q5RG40	1	27	Tumor necrosis factor alpha-induced protein 2a	w
+TUMOR	zebrafish	Q6DH03	tusc2b	Q6DH03	0	1	Tumor suppressor 2, mitochondrial calcium regulator b	w
+TUMOR	zebrafish	Q6DHG9	tnfsf10	Q6DHG9	8	38	Tumor necrosis factor ligand superfamily member 10	w
+TUMOR	zebrafish	Q6GMG8	litaf	Q6GMG8	1	13	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
+TUMOR	zebrafish	Q7T364	tnfaip8l2b	Q7T364	0	2	Tumor necrosis factor, alpha-induced protein 8-like protein 	w
+TUMOR	zebrafish	Q9DGK4	tpt1	Q9DGK4	5	33	Translationally-controlled tumor protein homolog	w
+TUMOR	zebrafish	Q9I9N5	tradd	Q9I9N5	11	90	Tumor necrosis factor receptor type 1-associated DEATH domai	w
+TUMOR	zebrafish	Q9PUT7	wt1a	Q9PUT7	0	25	Wilms tumor protein homolog	w
+TUMOR-	human	Q8WWK9	CKAP2	Q8WWK9	49	195	Cytoskeleton-associated protein 2 (CTCL tumor antigen se20-1	w
+TUMOR-AMPLIFIED	human	O14965	AURKA	O14965	283	1988	Aurora kinase A (EC 2.7.11.1) (Aurora 2) (Aurora/IPL1-relate	w
+TUMOR-AMPLIFIED	human	Q5XXA6	ANO1	Q5XXA6	9	48	Anoctamin-1 (Discovered on gastrointestinal stromal tumors p	w
+TUMOR-AMPLIFIED	human	Q8WV07	LTO1	Q8WV07	31	282	Protein LTO1 homolog (Oral cancer-overexpressed protein 1) (	w
+TUMOR-ASSOCIATED	human	O60259	KLK8	O60259	40	134	Kallikrein-8 (hK8) (EC 3.4.21.118) (Neuropsin) (NP) (Ovasin)	w
+TUMOR-ASSOCIATED	human	P00995	SPINK1	P00995	50	129	Serine protease inhibitor Kazal-type 1 (Pancreatic secretory	w
+TUMOR-ASSOCIATED	human	P09758	TACSTD2	P09758	17	295	Tumor-associated calcium signal transducer 2 (Cell surface g	w
+TUMOR-ASSOCIATED	human	P15328	FOLR1	P15328	41	393	Folate receptor alpha (FR-alpha) (Adult folate-binding prote	w
+TUMOR-ASSOCIATED	human	P19075	TSPAN8	P19075	5	153	Tetraspanin-8 (Tspan-8) (Transmembrane 4 superfamily member 	w
+TUMOR-ASSOCIATED	human	P30408	TM4SF1	P30408	6	141	Transmembrane 4 L6 family member 1 (Membrane component chrom	w
+TUMOR-ASSOCIATED	human	P51572	BCAP31	P51572	26	516	B-cell receptor-associated protein 31 (BCR-associated protei	w
+TUMOR-ASSOCIATED	human	P54849	EMP1	P54849	5	208	Epithelial membrane protein 1 (EMP-1) (CL-20) (Protein B4B) 	w
+TUMOR-ASSOCIATED	human	P57058	HUNK	P57058	24	161	Hormonally up-regulated neu tumor-associated kinase (EC 2.7.	w
+TUMOR-ASSOCIATED	human	P57727	TMPRSS3	P57727	8	101	Transmembrane protease serine 3 (EC 3.4.21.-) (Serine protea	w
+TUMOR-ASSOCIATED	human	Q06250	WT1-AS	Q06250	4	14	Putative Wilms tumor upstream neighbor 1 gene protein (WIT-1	w
+TUMOR-ASSOCIATED	human	Q16206	ENOX2	Q16206	16	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
+TUMOR-ASSOCIATED	human	Q5T124	UBXN11	Q5T124	10	72	UBX domain-containing protein 11 (Colorectal tumor-associate	w
+TUMOR-ASSOCIATED	human	Q969W9	PMEPA1	Q969W9	34	193	Protein TMEPAI (Prostate transmembrane protein androgen indu	w
+TUMOR-ASSOCIATED	human	Q9BU76	MMTAG2	Q9BU76	46	309	Multiple myeloma tumor-associated protein 2 (hMMTAG2)	w
+TUMOR-ASSOCIATED	human	Q9HBW1	LRRC4	Q9HBW1	21	100	Leucine-rich repeat-containing protein 4 (Brain tumor-associ	w
+TUMOR-ASSOCIATED	human	Q9NY74	ETAA1	Q9NY74	41	198	Ewing's tumor-associated antigen 1 (Ewing's tumor-associated	w
+TUMOR-ASSOCIATED	human	Q9Y421	FAM32A	Q9Y421	21	243	Protein FAM32A (Ovarian tumor-associated gene 12) (OTAG-12)	w
+TUMOR-ASSOCIATED	zebrafish	A0A8M1NGR6	etaa1a	A0A8M1NGR6	10	83	Ewing's tumor-associated antigen 1	w
+TUMOR-ASSOCIATED	zebrafish	A0A8M1Q7V8	etaa1b	A0A8M1Q7V8	7	83	Ewing's tumor-associated antigen 1	w
+TUMOR-ASSOCIATED	zebrafish	F1QZ61	zgc:63882	F1QZ61	0	1	Multiple myeloma tumor-associated protein 2	w
+TUMOR-DERIVED	human	Q9GZV9	FGF23	Q9GZV9	32	195	Fibroblast growth factor 23 (FGF-23) (Phosphatonin) (Tumor-d	w
+TUMOR-LIKE	human	Q8NA19	L3MBTL4	Q8NA19	9	69	Lethal(3)malignant brain tumor-like protein 4 (H-l(3)mbt-lik	w
+TUMOR-LIKE	human	Q969R5	L3MBTL2	Q969R5	52	305	Lethal(3)malignant brain tumor-like protein 2 (H-l(3)mbt-lik	w
+TUMOR-LIKE	human	Q96JM7	L3MBTL3	Q96JM7	43	240	Lethal(3)malignant brain tumor-like protein 3 (H-l(3)mbt-lik	w
+TUMOR-LIKE	human	Q9Y468	L3MBTL1	Q9Y468	31	172	Lethal(3)malignant brain tumor-like protein 1 (H-l(3)mbt) (H	w
+TUMOR-LIKE	zebrafish	F1R4V8	l3mbtl2	F1R4V8	3	38	Lethal(3)malignant brain tumor-like protein 2	w
+TUMOR-OVEREXPRESSED	human	Q86YD1	PTOV1	Q86YD1	18	88	Prostate tumor-overexpressed gene 1 protein (PTOV-1) (Activa	w
+TUMOR-SPECIFIC	human	Q86UY5	SACK1A	Q86UY5	20	134	Scaffolding CK1 anchoring protein A (Protein FAM83A) (Tumor 	w
+TUMOR-SUPPRESSING	human	Q9Y5U2	TSSC4	Q9Y5U2	21	135	U5 small nuclear ribonucleoprotein TSSC4 (Tumor-suppressing 	w
+TUMOR-TRANSFORMING	human	O95997	PTTG1	O95997	36	475	Securin (Esp1-associated protein) (Pituitary tumor-transform	w
+TUMOR-TRANSFORMING	human	P53801	PTTG1IP	P53801	25	147	Pituitary tumor-transforming gene 1 protein-interacting prot	w
+TUMOR-TRANSFORMING	human	Q9NZH4	PTTG3P	Q9NZH4	0	8	Putative pituitary tumor-transforming gene 3 protein (hPTTG3	w
+TUMOR-TRANSFORMING	human	Q9NZH5	PTTG2	Q9NZH5	3	26	Securin-2 (Pituitary tumor-transforming gene 2 protein)	w
+TUMORIGENIC	human	O43423	ANP32CP	O43423	1	13	Putative uncharacterized protein ANP32CP (Acidic leucine-ric	w
+TUMORIGENIC	human	O95626	ANP32D	O95626	0	20	Acidic leucine-rich nuclear phosphoprotein 32 family member 	w
+TUMORIGENIC	human	Q13166	CATR1	Q13166	0	29	CATR tumorigenic conversion 1 protein (CATR1.3)	w
+TUMORIGENICITY	human	O60284	ST18	O60284	5	28	Suppression of tumorigenicity 18 protein (Zinc finger protei	w
+TUMORIGENICITY	human	O95980	RECK	O95980	15	121	Reversion-inducing cysteine-rich protein with Kazal motifs (	w
+TUMORIGENICITY	human	P27701	CD82	P27701	10	198	CD82 antigen (C33 antigen) (IA4) (Inducible membrane protein	w
+TUMORIGENICITY	human	P41271	NBL1	P41271	3	48	Neuroblastoma suppressor of tumorigenicity 1 (DAN domain fam	w
+TUMORIGENICITY	human	P78524	DENND2B	P78524	12	56	DENN domain-containing protein 2B (HeLa tumor suppression 1)	w
+TUMORIGENICITY	human	Q13007	IL24	Q13007	38	318	Interleukin-24 (IL-24) (Melanoma differentiation-associated 	w
+TUMORIGENICITY	human	Q8IZP2	ST13P4	Q8IZP2	3	18	Putative protein FAM10A4 (Suppression of tumorigenicity 13 p	w
+TUMORIGENICITY	human	Q8NFI4	ST13P5	Q8NFI4	3	31	Putative protein FAM10A5 (Suppression of tumorigenicity 13 p	w
+TUMORIGENICITY	human	Q8TDW4	ST7L	Q8TDW4	14	62	Suppressor of tumorigenicity 7 protein-like (ST7-related pro	w
+TUMORIGENICITY	human	Q9HBF5	ST20	Q9HBF5	4	44	Suppressor of tumorigenicity 20 protein (Human cervical canc	w
+TUMORIGENICITY	human	Q9NRC1	ST7	Q9NRC1	47	381	Suppressor of tumorigenicity 7 protein (Protein FAM4A1) (Pro	w
+TUMORIGENICITY	human	Q9Y561	LRP12	Q9Y561	17	112	Low-density lipoprotein receptor-related protein 12 (LDLR-re	w
+TUMORIGENICITY	human	Q9Y5Y6	ST14	Q9Y5Y6	41	275	Suppressor of tumorigenicity 14 protein (EC 3.4.21.109) (Mat	w
+TUMORIGENICITY	zebrafish	A5PMY0	st14a	A5PMY0	1	19	Suppressor of tumorigenicity 14 protein homolog	w
+TUMORIGENICITY	zebrafish	H9GXL1	st14	H9GXL1	2	19	Suppressor of tumorigenicity 14 protein homolog	w
+TUMORIGENICITY	zebrafish	Q6NZ13	nbl1	Q6NZ13	0	3	Neuroblastoma suppressor of tumorigenicity 1	w
+TUMOROUS	fly	FBgn0002174	CG5504	Q27237	6	42	Protein tumorous imaginal discs, mitochondrial (Protein leth	w
+TUMOROUS	fly	FBgn0052364	tut	Q8IQA2	6	29	Tumorous testis	w
+TUMOROUS	human	Q96EY1	DNAJA3	Q96EY1	23	394	DnaJ homolog subfamily A member 3, mitochondrial (DnaJ prote	w
+TUMORS	human	P78395	PRAME	P78395	18	336	Melanoma antigen preferentially expressed in tumors (Opa-int	w
+TUMORS	human	Q5XXA6	ANO1	Q5XXA6	9	48	Anoctamin-1 (Discovered on gastrointestinal stromal tumors p	w
+TUMORS	human	Q9UGM3	DMBT1	Q9UGM3	5	256	Scavenger receptor cysteine-rich domain-containing protein D	w
+TUMORS	worm	Q9XV91	clec-42	Q9XV91	1	5	Deleted in malignant brain tumors 1 protein-like	w
+TUMSTATIN	human	Q01955	COL4A3	Q01955	6	25	Collagen alpha-3(IV) chain (Goodpasture antigen) [Cleaved in	w
+TUM_124	fly	FBgn0086356	tum	A1Z9I5	14	87		
+TUM_180	fly	FBgn0086356	tum	A1Z9I5	14	87		
+TUM_218	fly	FBgn0086356	tum	A1Z9I5	14	87		
+TUM_320	fly	FBgn0086356	tum	A1Z9I5	14	87		
+TUM_591	fly	FBgn0086356	tum	A1Z9I5	14	87		
+TUM_61_605	fly	FBgn0086356	tum	A1Z9I5	14	87		

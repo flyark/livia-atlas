@@ -1,37 +1,395 @@
-CHEA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBM2	cheA	Q0PBM2	5	98	histidine kinase
-CHEA	escherichia-coli-83333	P07363	cheA	P07363	4	33	Chemotaxis protein CheA
-CHEA	salmonella-typhimurium	P09384	cheA	P09384	7	43	Chemotaxis protein CheA
-CHEAY	helicobacter-pylori	O25153	cheAY	O25153	4	58	Sensor histidine kinase CheAY
-CHEB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9X5	cheB	Q0P9X5	0	23	protein-glutamate methylesterase
-CHEB	escherichia-coli-83333	P07330	cheB	P07330	2	14	Protein-glutamate methylesterase/protein-glutamine glutaminase
-CHEB	salmonella-typhimurium	P04042	cheB	P04042	1	19	Protein-glutamate methylesterase/protein-glutamine glutaminase
-CHEB1	pseudomonas-aeruginosa	O87125	cheB1	O87125	3	27	Protein-glutamate methylesterase/protein-glutamine glutaminase 1
-CHEB2	pseudomonas-aeruginosa	Q9I6V9	cheB2	Q9I6V9	1	27	Protein-glutamate methylesterase/protein-glutamine glutaminase 2
-CHEB3	pseudomonas-aeruginosa	Q9HXT8	cheB3	Q9HXT8	2	30	Protein-glutamate methylesterase/protein-glutamine glutaminase 3
-CHEK1	mus-musculus	O35280	Chek1	O35280	6	61	Serine/threonine-protein kinase Chk1
-CHEK2	mus-musculus	Q9Z265	Chek2	Q9Z265	5	90	Serine/threonine-protein kinase Chk2
-CHEK2	rattus-norvegicus	A6J285	Chek2	A6J285	8	92	Serine/threonine-protein kinase Chk2
-CHEPEP	helicobacter-pylori	O25089	chePep	O25089	3	30	Chemotaxis regulatory protein ChePep
-CHER	escherichia-coli-83333	P07364	cheR	P07364	4	21	Chemotaxis protein methyltransferase
-CHER	salmonella-typhimurium	P07801	cheR	P07801	3	25	Chemotaxis protein methyltransferase
-CHER1	pseudomonas-aeruginosa	O87131	cheR1	O87131	1	42	Chemotaxis protein methyltransferase 1
-CHER2	pseudomonas-aeruginosa	Q9I6V7	cheR2	Q9I6V7	0	41	Chemotaxis protein methyltransferase 2
-CHERP	mus-musculus	Q8CGZ0	Cherp	Q8CGZ0	9	33	Calcium homeostasis endoplasmic reticulum protein
-CHERP	rattus-norvegicus	D3ZAX5	Cherp	D3ZAX5	8	25	Calcium homeostasis endoplasmic reticulum protein
-CHEV	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBM1	cheV	Q0PBM1	11	88	Chemotaxis protein
-CHEV1	helicobacter-pylori	O24864	cheV1	O24864	5	27	Chemotaxis protein CheV1
-CHEV2	helicobacter-pylori	O25337	cheV2	O25337	4	26	Chemotaxis protein CheV2
-CHEV3	helicobacter-pylori	O25154	cheV3	O25154	4	29	Chemotaxis protein CheV3
-CHEW	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBM3	cheW	Q0PBM3	11	24	Chemotaxis protein
-CHEW	escherichia-coli-83333	P0A964	cheW	P0A964	8	22	Chemotaxis protein CheW
-CHEW	helicobacter-pylori	O25152	cheW	O25152	6	11	Chemotaxis protein CheW
-CHEW	salmonella-typhimurium	P06110	cheW	P06110	13	27	Chemotaxis protein CheW
-CHEY	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P0C635	cheY	P0C635	3	45	Chemotaxis protein CheY homolog
-CHEY	escherichia-coli-83333	P0AE67	cheY	P0AE67	6	32	Chemotaxis protein CheY
-CHEY	pseudomonas-aeruginosa	Q51455	cheY	Q51455	15	99	Chemotaxis protein CheY
-CHEY	salmonella-typhimurium	P0A2D5	cheY	P0A2D5	5	49	Chemotaxis protein CheY
-CHEY1	helicobacter-pylori	P71403	cheY1	P71403	5	13	Chemotaxis protein CheY1
-CHEZ	escherichia-coli-83333	P0A9H9	cheZ	P0A9H9	1	10	Protein phosphatase CheZ
-CHEZ	helicobacter-pylori	O24976	cheZ	O24976	0	1	Protein phosphatase CheZ
-CHEZ	pseudomonas-aeruginosa	Q51434	cheZ	Q51434	2	37	Protein phosphatase CheZ
-CHEZ	salmonella-typhimurium	P07800	cheZ	P07800	1	11	Protein phosphatase CheZ
+CHE-1	human	Q9NY61	AATF	Q9NY61	62	464	Protein AATF (Apoptosis-antagonizing transcription factor) (	w
+CHE-1	worm	Q966L8	che-1	Q966L8	0	14	Transcription factor che-1	w
+CHE-1	worm	Q966L8	che-1	Q966L8	0	14	Transcription factor che-1	w
+CHE-11	worm	P90757	che-11	P90757	6	47	WD_REPEATS_REGION domain-containing protein	
+CHE-12	worm	Q17423	che-12	Q17423	0	2	Crescerin-like protein che-12	w
+CHE-12	worm	Q17423	che-12	Q17423	0	2	Crescerin-like protein che-12	w
+CHE-13	worm	Q93833	che-13	Q93833	25	90	Intraflagellar transport protein che-13	w
+CHE-13	worm	Q93833	che-13	Q93833	25	90	Intraflagellar transport protein che-13	w
+CHE-14	worm	G5EEW0	che-14	G5EEW0	0	15	CHE-14 protein	w
+CHE-14	worm	G5EEW0	che-14	G5EEW0	0	15	CHE-14 protein	w
+CHE-2	worm	G5EGF0	che-2	G5EGF0	9	112	CHE-2 protein	w
+CHE-2	worm	G5EGF0	che-2	G5EGF0	9	112	CHE-2 protein	w
+CHE-6	worm	O61827	che-6	O61827	7	19	Cyclic nucleotide-binding domain-containing protein	
+CHE1	human	P06276	BCHE	P06276	8	329		
+CHE1	human	Q9NY61	AATF	Q9NY61	62	464		
+CHEA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBM2	cheA	Q0PBM2	5	98	histidine kinase	
+CHEA	escherichia-coli-83333	P07363	cheA	P07363	4	33	Chemotaxis protein CheA	
+CHEA	salmonella-typhimurium	P09384	cheA	P09384	7	43	Chemotaxis protein CheA	
+CHEA29A	fly	FBgn0053194	CheA29a	Q8T0X8	28	245	Chemosensory protein A 29a (Putative pheromone response fact	
+CHEA46A	fly	FBgn0262594	CheA46a	A1Z7Y9	14	245	Chemosensory protein A 46a	
+CHEA56A	fly	FBgn0262595	CheA56a	A1ZBB5	14	245	Chemosensory protein A 56a	
+CHEA75A	fly	FBgn0036783	CheA75a	Q9VVP3	13	251	Chemosensory protein A 75a	
+CHEA7A	fly	FBgn0029948	CheA7a	Q9W3R2	15	249	Chemosensory protein A 7a	
+CHEA84A	fly	FBgn0261290	CheA84a	Q2MGK0	21	246	Chemosensory protein A 84a	
+CHEA86A	fly	FBgn0261291	CheA86a	Q4AB33	38	245	Chemosensory protein A 86a	
+CHEA87A	fly	FBgn0038142	CheA87a	Q9VFW3	0	3	Chemosensory protein A 87a	
+CHEAY	helicobacter-pylori	O25153	cheAY	O25153	4	58	Sensor histidine kinase CheAY	
+CHEB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9X5	cheB	Q0P9X5	0	23	protein-glutamate methylesterase	
+CHEB	escherichia-coli-83333	P07330	cheB	P07330	2	14	Protein-glutamate methylesterase/protein-glutamine glutamina	
+CHEB	salmonella-typhimurium	P04042	cheB	P04042	1	19	Protein-glutamate methylesterase/protein-glutamine glutamina	
+CHEB1	pseudomonas-aeruginosa	O87125	cheB1	O87125	3	27	Protein-glutamate methylesterase/protein-glutamine glutamina	
+CHEB2	pseudomonas-aeruginosa	Q9I6V9	cheB2	Q9I6V9	1	27	Protein-glutamate methylesterase/protein-glutamine glutamina	
+CHEB3	pseudomonas-aeruginosa	Q9HXT8	cheB3	Q9HXT8	2	30	Protein-glutamate methylesterase/protein-glutamine glutamina	
+CHEB38A	fly	FBgn0067312	CheB38a	Q7KT13	24	247	Chemosensory protein B 38a	
+CHEB38B	fly	FBgn0067311	CheB38b	Q7KT14	14	243	Chemosensory protein B 38b	
+CHEB38C	fly	FBgn0032888	CheB38c	Q9VIJ1	15	243	Chemosensory protein B 38c	
+CHEB42A	fly	FBgn0053348	CheB42a	Q3ZAK6	22	244	Chemosensory protein B 42a (IP03603p)	
+CHEB42B	fly	FBgn0066293	CheB42b	A1Z6S1	20	263	Chemosensory protein B 42b	
+CHEB42C	fly	FBgn0066292	CheB42c	A1Z6S2	14	244	Chemosensory protein B 42c	
+CHEB53A	fly	FBgn0261292	CheB53a	A1ZAG5	25	243	Chemosensory protein B 53a	
+CHEB53B	fly	FBgn0261293	CheB53b	A1ZAG6	19	243	Chemosensory protein B 53b	
+CHEB74A	fly	FBgn0261294	CheB74a	Q4ABJ6	33	243	Chemosensory protein B 74a	
+CHEB93A	fly	FBgn0038888	CheB93a	Q9VDA3	24	248	Chemosensory protein B 93a	
+CHEB93B	fly	FBgn0051438	CheB93b	Q8IN27	21	244	Chemosensory protein B 93b	
+CHEB98A	fly	FBgn0261289	CheB98a	Q9VAT5	21	244	Chemosensory protein A 98a	
+CHECK	yeast	P26448	BUB2	P26448	4	42	Mitotic check point protein BUB2	w
+CHECK	yeast	P47113	BFA1	P47113	4	36	Mitotic check point protein BFA1	w
+CHECKPOINT	fly	FBgn0025807	Rad9	A8JNV5	6	37	Cell cycle checkpoint control protein	w
+CHECKPOINT	fly	FBgn0026417	Hus1-like	Q9VN60	4	22	Checkpoint protein	w
+CHECKPOINT	fly	FBgn0029006	Smurf	Q9V853	19	71	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+CHECKPOINT	fly	FBgn0029504	CHES-1-like	Q9W3Q5	37	100	Checkpoint suppressor 1-like, isoform A (Checkpoint suppress	w
+CHECKPOINT	fly	FBgn0051453	pch2	Q8SX76	0	46	LD24646p (Pachytene checkpoint 2, isoform A) (Pachytene chec	w
+CHECKPOINT	human	O00409	FOXN3	O00409	111	406	Forkhead box protein N3 (Checkpoint suppressor 1)	w
+CHECKPOINT	human	O14757	CHEK1	O14757	284	1928	Serine/threonine-protein kinase Chk1 (EC 2.7.11.1) (CHK1 che	w
+CHECKPOINT	human	O43683	BUB1	O43683	63	367	Mitotic checkpoint serine/threonine-protein kinase BUB1 (hBU	w
+CHECKPOINT	human	O43684	BUB3	O43684	53	339	Mitotic checkpoint protein BUB3	w
+CHECKPOINT	human	O60566	BUB1B	O60566	70	432	Mitotic checkpoint serine/threonine-protein kinase BUB1 beta	w
+CHECKPOINT	human	O60671	RAD1	O60671	24	106	Cell cycle checkpoint protein RAD1 (hRAD1) (Rad1-like DNA da	w
+CHECKPOINT	human	O60921	HUS1	O60921	16	190	Checkpoint protein HUS1 (hHUS1)	w
+CHECKPOINT	human	O75943	RAD17	O75943	30	288	Cell cycle checkpoint protein RAD17 (hRad17) (RF-C/activator	w
+CHECKPOINT	human	O96017	CHEK2	O96017	193	1441	Serine/threonine-protein kinase Chk2 (EC 2.7.11.1) (CHK2 che	w
+CHECKPOINT	human	Q13257	MAD2L1	Q13257	118	388	Mitotic spindle assembly checkpoint protein MAD2A (HsMAD2) (	w
+CHECKPOINT	human	Q14676	MDC1	Q14676	108	488	Mediator of DNA damage checkpoint protein 1 (Nuclear factor 	w
+CHECKPOINT	human	Q15645	TRIP13	Q15645	9	331	Pachytene checkpoint protein 2 homolog (Human papillomavirus	w
+CHECKPOINT	human	Q2NKX8	ERCC6L	Q2NKX8	15	237	DNA excision repair protein ERCC-6-like (EC 3.6.4.12) (ATP-d	w
+CHECKPOINT	human	Q6WBX8	RAD9B	Q6WBX8	10	49	Cell cycle checkpoint control protein RAD9B (DNA repair exon	w
+CHECKPOINT	human	Q7Z2Z1	TICRR	Q7Z2Z1	153	960	Treslin (TopBP1-interacting checkpoint and replication regul	w
+CHECKPOINT	human	Q8NHY5	HUS1B	Q8NHY5	11	44	Checkpoint protein HUS1B (hHUS1B)	w
+CHECKPOINT	human	Q96EP1	CHFR	Q96EP1	21	148	E3 ubiquitin-protein ligase CHFR (EC 2.3.2.27) (Checkpoint w	w
+CHECKPOINT	human	Q96K21	ZFYVE19	Q96K21	28	105	Abscission/NoCut checkpoint regulator (ANCHR) (MLL partner c	w
+CHECKPOINT	human	Q99638	RAD9A	Q99638	36	167	Cell cycle checkpoint control protein RAD9A (hRAD9) (EC 3.1.	w
+CHECKPOINT	human	Q9H1A4	ANAPC1	Q9H1A4	18	481	Anaphase-promoting complex subunit 1 (APC1) (Cyclosome subun	w
+CHECKPOINT	human	Q9UI95	MAD2L2	Q9UI95	147	585	Mitotic spindle assembly checkpoint protein MAD2B (Mitotic a	w
+CHECKPOINT	human	Q9Y6D9	MAD1L1	Q9Y6D9	38	185	Mitotic spindle assembly checkpoint protein MAD1 (Mitotic ar	w
+CHECKPOINT	worm	G5EC44	mrt-2	G5EC44	7	30	Cell cycle checkpoint protein RAD1 homolog mrt-2	w
+CHECKPOINT	worm	G5EFI9	hus-1	G5EFI9	10	62	Checkpoint protein	w
+CHECKPOINT	worm	Q09535	pch-2	Q09535	1	24	Putative pachytene checkpoint protein 2	w
+CHECKPOINT	worm	Q21776	bub-1	Q21776	13	86	Mitotic checkpoint serine/threonine-protein kinase bub-1 (EC	w
+CHECKPOINT	worm	Q95Q00	such-1	Q95Q00	3	41	Suppressor of spindle checkpoint defect 1	w
+CHECKPOINT	worm	Q95Q27	hpr-9	Q95Q27	8	35	Cell cycle checkpoint protein hpr-9	w
+CHECKPOINT	worm	Q9NGT3	mdf-2	Q9NGT3	7	44	Mitotic spindle assembly checkpoint protein MAD2A	w
+CHECKPOINT	worm	Q9XWH0	bub-3	Q9XWH0	4	61	Mitotic checkpoint protein bub-3	w
+CHECKPOINT	yeast	P25588	MRC1	P25588	11	58	Mediator of replication checkpoint protein 1	w
+CHECKPOINT	yeast	P26449	BUB3	P26449	2	34	Spindle assembly checkpoint protein BUB3	w
+CHECKPOINT	yeast	P32641	RAD24	P32641	11	35	Checkpoint protein RAD24	w
+CHECKPOINT	yeast	P38110	TEL1	P38110	1	7	Serine/threonine-protein kinase TEL1 (EC 2.7.11.1) (ATM homo	w
+CHECKPOINT	yeast	P38111	MEC1	P38111	0	4	Serine/threonine-protein kinase MEC1 (EC 2.7.11.1) (ATR homo	w
+CHECKPOINT	yeast	P38126	PCH2	P38126	0	27	Pachytene checkpoint protein 2	w
+CHECKPOINT	yeast	P38147	CHK1	P38147	2	59	Serine/threonine-protein kinase CHK1 (EC 2.7.11.1) (Checkpoi	w
+CHECKPOINT	yeast	P38991	IPL1	P38991	8	109	Aurora kinase (EC 2.7.11.1) (Increase-in-ploidy protein 1) (	w
+CHECKPOINT	yeast	P40957	MAD1	P40957	3	31	Spindle assembly checkpoint component MAD1	w
+CHECKPOINT	yeast	P40958	MAD2	P40958	13	54	Mitotic spindle checkpoint component MAD2	w
+CHECKPOINT	yeast	P41695	BUB1	P41695	9	60	Spindle assembly checkpoint serine/threonine-protein kinase 	w
+CHECKPOINT	yeast	P47074	MAD3	P47074	9	47	Spindle assembly checkpoint component MAD3	w
+CHECKPOINT	yeast	P48581	RAD17	P48581	3	23	DNA damage checkpoint control protein RAD17	w
+CHECKPOINT	yeast	Q02574	MEC3	Q02574	5	36	DNA damage checkpoint control protein MEC3	w
+CHECKPOINT	yeast	Q04377	LCD1	Q04377	2	21	DNA damage checkpoint protein LCD1	w
+CHECKPOINT	yeast	Q08949	DDC1	Q08949	8	39	DNA damage checkpoint protein 1	w
+CHECKPOINT	yeast	Q6Q5K6	HUG1	Q6Q5K6	1	15	MEC1-mediated checkpoint protein HUG1	w
+CHECKPOINT	zebrafish	A2BGQ6	rad17	A2BGQ6	8	41	Cell cycle checkpoint protein RAD17	w
+CHECKPOINT	zebrafish	A3KQS1	prcc	A3KQS1	5	14	Proline-rich mitotic checkpoint control factor	w
+CHECKPOINT	zebrafish	B0S509	rad9b	B0S509	6	41	Cell cycle checkpoint control protein	w
+CHECKPOINT	zebrafish	D9IWE2	mad1l1	D9IWE2	4	16	Mitotic spindle assembly checkpoint protein MAD1	w
+CHECKPOINT	zebrafish	F1Q636	bub1ba	F1Q636	22	127	BUB1 mitotic checkpoint serine/threonine kinase Ba	w
+CHECKPOINT	zebrafish	F1QNS6	bub1	F1QNS6	20	118	BUB1 mitotic checkpoint serine/threonine kinase	w
+CHECKPOINT	zebrafish	F2Z4U5	rad9a	F2Z4U5	4	28	Cell cycle checkpoint control protein	w
+CHECKPOINT	zebrafish	Q568H3	mad2l2	Q568H3	11	50	Mitotic spindle assembly checkpoint protein MAD2B	w
+CHECKPOINT	zebrafish	Q6P2T4	rad1	Q6P2T4	8	28	Cell cycle checkpoint protein RAD1	w
+CHECKPOINT	zebrafish	Q6PH52	trip13	Q6PH52	1	55	Pachytene checkpoint protein 2 homolog	w
+CHECKPOINT	zebrafish	Q8AYG3	ttk	Q8AYG3	6	44	Dual specificity protein kinase Ttk (EC 2.7.12.1) (Mitotic c	w
+CHECKPOINT	zebrafish	U3JAH9	bub3	U3JAH9	14	123	Mitotic checkpoint protein BUB3	w
+CHED	human	Q14004	CDK13	Q14004	78	295		
+CHEDG1	human	P21453	S1PR1	P21453	39	427		
+CHEERIO	fly	FBgn0014141	cher	Q7KSF4	1	33	cheerio	w
+CHEESE	fly	FBgn0003656	sws	Q9U969	391	2390	Neuropathy target esterase sws (Swiss cheese) (DSWS) (EC 3.1	w
+CHEESE	fly	FBgn0043362	bchs	Q9VML2	4	52	Blue cheese	w
+CHEK1	human	O14757	CHEK1	O14757	284	1928	Serine/threonine-protein kinase Chk1 (EC 2.7.11.1) (CHK1 che	
+CHEK1	mus-musculus	O35280	Chek1	O35280	6	61	Serine/threonine-protein kinase Chk1	
+CHEK1	zebrafish	Q7ZVD7	chek1	Q7ZVD7	14	121	Serine/threonine-protein (EC 2.7.11.1)	
+CHEK2	human	O96017	CHEK2	O96017	193	1441	Serine/threonine-protein kinase Chk2 (EC 2.7.11.1) (CHK2 che	
+CHEK2	mus-musculus	Q9Z265	Chek2	Q9Z265	5	90	Serine/threonine-protein kinase Chk2	
+CHEK2	rattus-norvegicus	A6J285	Chek2	A6J285	8	92	Serine/threonine-protein kinase Chk2	
+CHEK2	yeast	P22216	RAD53	P22216	7	124	Serine/threonine-protein kinase RAD53 (EC 2.7.12.1) (CHEK2 h	w
+CHEK2	zebrafish	A0A8M2BC68	chek2	A0A8M2BC68	3	22	Serine/threonine-protein (EC 2.7.11.1)	
+CHEMERIN	human	P46091	CMKLR2	P46091	5	89	Chemerin-like receptor 2 (Chemerin chemokine-like receptor 2	w
+CHEMERIN	human	Q99969	RARRES2	Q99969	32	269	Retinoic acid receptor responder protein 2 (Chemerin) (RAR-r	w
+CHEMERIN-LIKE	human	P46091	CMKLR2	P46091	5	89	Chemerin-like receptor 2 (Chemerin chemokine-like receptor 2	w
+CHEMERIN-LIKE	human	Q99788	CMKLR1	Q99788	22	205	Chemerin-like receptor 1 (Chemokine-like receptor 1) (G prot	w
+CHEMERIN-LIKE	zebrafish	A0A0R4IK53	cmklr1l1	A0A0R4IK53	0	12	Chemerin-like receptor 1	w
+CHEMERIN-LIKE	zebrafish	A0A0R4IT98	cmklr2	A0A0R4IT98	0	8	Chemerin-like receptor 2	w
+CHEMERIN-LIKE	zebrafish	A0AB32TA91	LOC137487698	A0AB32TA91	1	13	Chemerin-like receptor 1	w
+CHEMERIN-LIKE	zebrafish	E7EZJ4	si:dkey-42l23.7	E7EZJ4	0	13	Chemerin-like receptor 1	w
+CHEMERIN-LIKE	zebrafish	E7FF45	fpr1	E7FF45	4	26	Chemerin-like receptor 1	w
+CHEMERIN-LIKE	zebrafish	X1WH67	si:dkey-117a8.1	X1WH67	1	13	Chemerin-like receptor 1	w
+CHEMOAT	human	O15467	CCL16	O15467	82	207	C-C motif chemokine 16 (Chemokine CC-4) (HCC-4) (Chemokine L	w
+CHEMOATTRACTANT	human	O14625	CXCL11	O14625	91	491	C-X-C motif chemokine 11 (Beta-R1) (H174) (Interferon gamma-	w
+CHEMOATTRACTANT	human	O43927	CXCL13	O43927	114	529	C-X-C motif chemokine 13 (Angie) (B cell-attracting chemokin	w
+CHEMOATTRACTANT	human	P13500	CCL2	P13500	212	1438	C-C motif chemokine 2 (HC11) (Monocyte chemoattractant prote	w
+CHEMOATTRACTANT	human	P21462	FPR1	P21462	54	375	N-formyl peptide receptor 1 (N-formylpeptide chemoattractant	w
+CHEMOATTRACTANT	human	P41597	CCR2	P41597	38	307	C-C chemokine receptor type 2 (C-C CKR-2) (CC-CKR-2) (CCR-2)	w
+CHEMOATTRACTANT	human	P80075	CCL8	P80075	121	428	C-C motif chemokine 8 (HC14) (Monocyte chemoattractant prote	w
+CHEMOATTRACTANT	human	P80098	CCL7	P80098	90	315	C-C motif chemokine 7 (Monocyte chemoattractant protein 3) (	w
+CHEMOATTRACTANT	human	Q14005	IL16	Q14005	31	237	Pro-interleukin-16 [Cleaved into: Interleukin-16 (IL-16) (Ly	w
+CHEMOATTRACTANT	human	Q15722	LTB4R	Q15722	16	134	Leukotriene B4 receptor 1 (LTB4-R 1) (LTB4-R1) (Chemoattract	w
+CHEMOATTRACTANT	human	Q99527	GPER1	Q99527	13	171	G protein-coupled estrogen receptor 1 (Chemoattractant recep	w
+CHEMOATTRACTANT	human	Q99616	CCL13	Q99616	101	296	C-C motif chemokine 13 (CK-beta-10) (Monocyte chemoattractan	w
+CHEMOATTRACTANT	human	Q9Y5Y4	PTGDR2	Q9Y5Y4	12	105	Prostaglandin D2 receptor 2 (Chemoattractant receptor-homolo	w
+CHEMOKINE	human	O00155	GPR25	O00155	7	91	C-X-C chemokine receptor GPR25 (G protein-coupled receptor 2	w
+CHEMOKINE	human	O00175	CCL24	O00175	97	329	C-C motif chemokine 24 (CK-beta-6) (Eosinophil chemotactic p	w
+CHEMOKINE	human	O00421	CCRL2	O00421	23	259	C-C chemokine receptor-like 2 (Chemokine receptor CCR11) (Ch	w
+CHEMOKINE	human	O00574	CXCR6	O00574	23	242	C-X-C chemokine receptor type 6 (CXC-R6) (CXCR-6) (CDw186) (	w
+CHEMOKINE	human	O00585	CCL21	O00585	55	267	C-C motif chemokine 21 (6Ckine) (Beta-chemokine exodus-2) (S	w
+CHEMOKINE	human	O00590	ACKR2	O00590	60	332	Atypical chemokine receptor 2 (C-C chemokine receptor D6) (C	w
+CHEMOKINE	human	O00626	CCL22	O00626	102	603	C-C motif chemokine 22 (CC chemokine STCP-1) (MDC(1-69)) (Ma	w
+CHEMOKINE	human	O14625	CXCL11	O14625	91	491	C-X-C motif chemokine 11 (Beta-R1) (H174) (Interferon gamma-	w
+CHEMOKINE	human	O15218	ACKR5	O15218	55	543	Atypical chemokine receptor 5 (G protein-coupled receptor 18	w
+CHEMOKINE	human	O15444	CCL25	O15444	38	191	C-C motif chemokine 25 (Chemokine TECK) (Small-inducible cyt	w
+CHEMOKINE	human	O15467	CCL16	O15467	82	207	C-C motif chemokine 16 (Chemokine CC-4) (HCC-4) (Chemokine L	w
+CHEMOKINE	human	O43927	CXCL13	O43927	114	529	C-X-C motif chemokine 13 (Angie) (B cell-attracting chemokin	w
+CHEMOKINE	human	O95715	CXCL14	O95715	52	378	C-X-C motif chemokine 14 (Chemokine BRAK) (MIP-2G) (Small-in	w
+CHEMOKINE	human	P02775	PPBP	P02775	114	654	Platelet basic protein (PBP) (C-X-C motif chemokine 7) (Leuk	w
+CHEMOKINE	human	P02776	PF4	P02776	113	792	Platelet factor 4 (PF-4) (C-X-C motif chemokine 4) (Iroplact	w
+CHEMOKINE	human	P02778	CXCL10	P02778	157	959	C-X-C motif chemokine 10 (10 kDa interferon gamma-induced pr	w
+CHEMOKINE	human	P09341	CXCL1	P09341	111	761	Growth-regulated alpha protein (C-X-C motif chemokine 1) (GR	w
+CHEMOKINE	human	P10145	CXCL8	P10145	159	999	Interleukin-8 (IL-8) (C-X-C motif chemokine 8) (Chemokine (C	w
+CHEMOKINE	human	P10147	CCL3	P10147	94	659	C-C motif chemokine 3 (G0/G1 switch regulatory protein 19-1)	w
+CHEMOKINE	human	P10720	PF4V1	P10720	63	368	Platelet factor 4 variant (C-X-C motif chemokine 4 variant) 	w
+CHEMOKINE	human	P13236	CCL4	P13236	56	177	C-C motif chemokine 4 (G-26 T-lymphocyte-secreted protein) (	w
+CHEMOKINE	human	P13500	CCL2	P13500	212	1438	C-C motif chemokine 2 (HC11) (Monocyte chemoattractant prote	w
+CHEMOKINE	human	P13501	CCL5	P13501	145	1268	C-C motif chemokine 5 (EoCP) (Eosinophil chemotactic cytokin	w
+CHEMOKINE	human	P16619	CCL3L1	P16619	72	374	C-C motif chemokine 3-like 1 (G0/G1 switch regulatory protei	w
+CHEMOKINE	human	P19875	CXCL2	P19875	80	410	C-X-C motif chemokine 2 (Growth-regulated protein beta) (Gro	w
+CHEMOKINE	human	P19876	CXCL3	P19876	64	399	C-X-C motif chemokine 3 (GRO-gamma(1-73)) (Growth-regulated 	w
+CHEMOKINE	human	P22362	CCL1	P22362	58	288	C-C motif chemokine 1 (Small-inducible cytokine A1) (T lymph	w
+CHEMOKINE	human	P25024	CXCR1	P25024	54	208	C-X-C chemokine receptor type 1 (CXC-R1) (CXCR-1) (CDw128a) 	w
+CHEMOKINE	human	P25025	CXCR2	P25025	57	364	C-X-C chemokine receptor type 2 (CXC-R2) (CXCR-2) (CDw128b) 	w
+CHEMOKINE	human	P25106	ACKR3	P25106	28	241	Atypical chemokine receptor 3 (C-X-C chemokine receptor type	w
+CHEMOKINE	human	P32246	CCR1	P32246	92	561	C-C chemokine receptor type 1 (C-C CKR-1) (CC-CKR-1) (CCR-1)	w
+CHEMOKINE	human	P32248	CCR7	P32248	52	362	C-C chemokine receptor type 7 (C-C CKR-7) (CC-CKR-7) (CCR-7)	w
+CHEMOKINE	human	P32302	CXCR5	P32302	32	238	C-X-C chemokine receptor type 5 (CXC-R5) (CXCR-5) (Burkitt l	w
+CHEMOKINE	human	P41597	CCR2	P41597	38	307	C-C chemokine receptor type 2 (C-C CKR-2) (CC-CKR-2) (CCR-2)	w
+CHEMOKINE	human	P42830	CXCL5	P42830	94	526	C-X-C motif chemokine 5 (ENA-78(1-78)) (Epithelial-derived n	w
+CHEMOKINE	human	P46092	CCR10	P46092	51	142	C-C chemokine receptor type 10 (C-C CKR-10) (CC-CKR-10) (CCR	w
+CHEMOKINE	human	P46094	XCR1	P46094	28	203	Chemokine XC receptor 1 (G protein-coupled receptor 5) (Lymp	w
+CHEMOKINE	human	P47992	XCL1	P47992	73	280	Lymphotactin (ATAC) (C motif chemokine 1) (Cytokine SCM-1) (	w
+CHEMOKINE	human	P48061	CXCL12	P48061	42	85	Stromal cell-derived factor 1 (SDF-1) (hSDF-1) (C-X-C motif 	w
+CHEMOKINE	human	P49238	CX3CR1	P49238	65	291	CX3C chemokine receptor 1 (C-X3-C CKR-1) (CX3CR1) (Beta chem	w
+CHEMOKINE	human	P49682	CXCR3	P49682	35	171	C-X-C chemokine receptor type 3 (CXC-R3) (CXCR-3) (CKR-L2) (	w
+CHEMOKINE	human	P51671	CCL11	P51671	104	373	Eotaxin (C-C motif chemokine 11) (Eosinophil chemotactic pro	w
+CHEMOKINE	human	P51677	CCR3	P51677	53	205	C-C chemokine receptor type 3 (C C CKR3) (C-C CKR-3) (CC-CKR	w
+CHEMOKINE	human	P51679	CCR4	P51679	49	193	C-C chemokine receptor type 4 (C-C CKR-4) (CC-CKR-4) (CCR-4)	w
+CHEMOKINE	human	P51681	CCR5	P51681	51	348	C-C chemokine receptor type 5 (C-C CKR-5) (CC-CKR-5) (CCR-5)	w
+CHEMOKINE	human	P51684	CCR6	P51684	51	306	C-C chemokine receptor type 6 (C-C CKR-6) (CC-CKR-6) (CCR-6)	w
+CHEMOKINE	human	P51685	CCR8	P51685	56	200	C-C chemokine receptor type 8 (C-C CKR-8) (CC-CKR-8) (CCR-8)	w
+CHEMOKINE	human	P51686	CCR9	P51686	46	215	C-C chemokine receptor type 9 (C-C CKR-9) (CC-CKR-9) (CCR-9)	w
+CHEMOKINE	human	P55773	CCL23	P55773	39	118	C-C motif chemokine 23 (CK-beta-8) (CKB-8) (Macrophage infla	w
+CHEMOKINE	human	P55774	CCL18	P55774	84	400	C-C motif chemokine 18 (Alternative macrophage activation-as	w
+CHEMOKINE	human	P61073	CXCR4	P61073	71	665	C-X-C chemokine receptor type 4 (CXC-R4) (CXCR-4) (FB22) (Fu	w
+CHEMOKINE	human	P78423	CX3CL1	P78423	57	378	Fractalkine (C-X3-C motif chemokine 1) (CX3C membrane-anchor	w
+CHEMOKINE	human	P78556	CCL20	P78556	74	529	C-C motif chemokine 20 (Beta-chemokine exodus-1) (CC chemoki	w
+CHEMOKINE	human	P80075	CCL8	P80075	121	428	C-C motif chemokine 8 (HC14) (Monocyte chemoattractant prote	w
+CHEMOKINE	human	P80098	CCL7	P80098	90	315	C-C motif chemokine 7 (Monocyte chemoattractant protein 3) (	w
+CHEMOKINE	human	P80162	CXCL6	P80162	80	464	C-X-C motif chemokine 6 (Chemokine alpha 3) (CKA-3) (Granulo	w
+CHEMOKINE	human	Q07325	CXCL9	Q07325	83	535	C-X-C motif chemokine 9 (Gamma-interferon-induced monokine) 	w
+CHEMOKINE	human	Q16570	ACKR1	Q16570	52	311	Atypical chemokine receptor 1 (Duffy antigen receptor for ch	w
+CHEMOKINE	human	Q16627	CCL14	Q16627	65	186	C-C motif chemokine 14 (Chemokine CC-1/CC-3) (HCC-1/HCC-3) (	w
+CHEMOKINE	human	Q16663	CCL15	Q16663	53	175	C-C motif chemokine 15 (Chemokine CC-2) (HCC-2) (Leukotactin	w
+CHEMOKINE	human	Q6UXB2	CXCL17	Q6UXB2	29	125	C-X-C motif chemokine 17 (6-Cys CXCL17) (Dendritic cell and 	w
+CHEMOKINE	human	Q8NHW4	CCL4L1	Q8NHW4	107	567	C-C motif chemokine 4-like (Lymphocyte activation gene 1 pro	w
+CHEMOKINE	human	Q92583	CCL17	Q92583	96	352	C-C motif chemokine 17 (CC chemokine TARC) (Small-inducible 	w
+CHEMOKINE	human	Q99616	CCL13	Q99616	101	296	C-C motif chemokine 13 (CK-beta-10) (Monocyte chemoattractan	w
+CHEMOKINE	human	Q99731	CCL19	Q99731	82	585	C-C motif chemokine 19 (Beta-chemokine exodus-3) (CK beta-11	w
+CHEMOKINE	human	Q9H2A7	CXCL16	Q9H2A7	48	363	C-X-C motif chemokine 16 (Scavenger receptor for phosphatidy	w
+CHEMOKINE	human	Q9NPB9	ACKR4	Q9NPB9	41	185	Atypical chemokine receptor 4 (C-C chemokine receptor type 1	w
+CHEMOKINE	human	Q9NRJ3	CCL28	Q9NRJ3	32	138	C-C motif chemokine 28 (Mucosae-associated epithelial chemok	w
+CHEMOKINE	human	Q9UBD3	XCL2	Q9UBD3	67	324	Cytokine SCM-1 beta (C motif chemokine 2) (XC chemokine liga	w
+CHEMOKINE	human	Q9Y258	CCL26	Q9Y258	78	352	C-C motif chemokine 26 (CC chemokine IMAC) (Eotaxin-3) (Macr	w
+CHEMOKINE	human	Q9Y4X3	CCL27	Q9Y4X3	59	256	C-C motif chemokine 27 (CC chemokine ILC) (Cutaneous T-cell-	w
+CHEMOKINE	virus	A0A0A7MA18		A0A0A7MA18	4	130	Chemokine binding protein	w
+CHEMOKINE	virus	A0A0A7MEV9		A0A0A7MEV9	3	130	Chemokine binding protein	w
+CHEMOKINE	virus	A0A223FN09	Murmansk-157	A0A223FN09	4	202	Chemokine binding protein	w
+CHEMOKINE	virus	D3XDV5	m131	D3XDV5	6	158	Chemokine interleukin-8-like domain-containing protein	w
+CHEMOKINE	virus	F5HA06	UL147	F5HA06	4	167	Putative viral CXC chemokine 2	w
+CHEMOKINE	virus	F5HBX1	UL146	F5HBX1	6	168	Chemokine vCXCL1	w
+CHEMOKINE	virus	G8H0S2	cy181	G8H0S2	4	274	Chemokine interleukin-8-like domain-containing protein	w
+CHEMOKINE	virus	G8H0S3	cy182	G8H0S3	6	274	Chemokine interleukin-8-like domain-containing protein	w
+CHEMOKINE	virus	G8H0S4	cy183	G8H0S4	7	274	Chemokine	w
+CHEMOKINE	virus	P21972	FPV061	P21972	1	250	Putative CC-type chemokine FPV061	w
+CHEMOKINE	virus	P21973	FPV060	P21973	9	250	Putative CC-type chemokine FPV060	w
+CHEMOKINE	virus	P52460	U83	P52460	1	99	Putative CC-type chemokine U83	w
+CHEMOKINE	virus	P52461	U83	P52461	2	96	Putative CC-type chemokine U83	w
+CHEMOKINE	zebrafish	A0A0G2KM47	cxcl11.4	A0A0G2KM47	2	10	C-X-C motif chemokine 11-6-like	w
+CHEMOKINE	zebrafish	A0A0G2KWZ2	cxcl11.3	A0A0G2KWZ2	5	15	C-X-C motif chemokine 11-6-like	w
+CHEMOKINE	zebrafish	A0A0G2KYH9	cxcl8a	A0A0G2KYH9	8	23	Chemokine (C-X-C motif) ligand 8a	w
+CHEMOKINE	zebrafish	A0A0G2L2I4	ccl36.1	A0A0G2L2I4	5	20	C-C motif chemokine	w
+CHEMOKINE	zebrafish	A0A0R4IFJ9	ccl39.6	A0A0R4IFJ9	1	10	C-C motif chemokine 22-like	w
+CHEMOKINE	zebrafish	A0A0R4INB9	cxcl11.1	A0A0R4INB9	1	12	C-X-C motif chemokine 11-1	w
+CHEMOKINE	zebrafish	A0A0R4IPJ5	ccl34b.1	A0A0R4IPJ5	0	10	Chemokine (C-C motif) ligand 34b, duplicate 1	w
+CHEMOKINE	zebrafish	A0A0R4ISV2	ccl39.2	A0A0R4ISV2	9	24	Chemokine (C-C motif) ligand 39, duplicate 2	w
+CHEMOKINE	zebrafish	A0A2R8QR67	ccl25a	A0A2R8QR67	9	27	C-C motif chemokine 21	w
+CHEMOKINE	zebrafish	A0A8M2B9G9	ackr4b	A0A8M2B9G9	9	16	Atypical chemokine receptor 4b	w
+CHEMOKINE	zebrafish	A0A8M2BAW3	LOC101887081	A0A8M2BAW3	14	29	Atypical chemokine receptor 2	w
+CHEMOKINE	zebrafish	A0A8M2BAW7	ackr4a	A0A8M2BAW7	8	10	Atypical chemokine receptor 4	w
+CHEMOKINE	zebrafish	A0A8M2BEZ8	ackr3a	A0A8M2BEZ8	1	19	Atypical chemokine receptor 3a isoform X1	w
+CHEMOKINE	zebrafish	A0A8M2BIN2	ccl20l	A0A8M2BIN2	21	55	C-C motif chemokine 20	w
+CHEMOKINE	zebrafish	A0A8M2BKR3	si:cabz01093077.1	A0A8M2BKR3	5	35	C-C chemokine receptor type 8	w
+CHEMOKINE	zebrafish	A0A8M2BKS4	cxcr3.3	A0A8M2BKS4	0	2	C-X-C chemokine receptor type 3.3 isoform X1	w
+CHEMOKINE	zebrafish	A0A8M9PE75	ccr9b	A0A8M9PE75	2	3	C-C chemokine receptor type 9	w
+CHEMOKINE	zebrafish	A0AB13AAP3	xcr1a.1	A0AB13AAP3	5	10	Chemokine (C motif) receptor 1a, duplicate 1	w
+CHEMOKINE	zebrafish	A0AB32T4R5	xcr1b.1	A0AB32T4R5	0	2	Chemokine XC receptor 1	w
+CHEMOKINE	zebrafish	A0AB32U1M6	cxcr1	A0AB32U1M6	17	48	C-X-C chemokine receptor type 1	w
+CHEMOKINE	zebrafish	A0AB40E9P0	ccr2	A0AB40E9P0	14	42	C-C chemokine receptor type 5	w
+CHEMOKINE	zebrafish	A2BHJ6	cxcl11.8	A2BHJ6	1	10	Chemokine (C-X-C motif) ligand 11, duplicate 8	w
+CHEMOKINE	zebrafish	A2BIR2	ccl19a.1	A2BIR2	9	23	C-C motif chemokine	w
+CHEMOKINE	zebrafish	A4IG54	ackr3b	A4IG54	5	19	Atypical chemokine receptor 3b	w
+CHEMOKINE	zebrafish	A5PMT9	ccr6a	A5PMT9	7	32	C-C chemokine receptor type 6a	w
+CHEMOKINE	zebrafish	A9ZPD8	ccl35.2	A9ZPD8	9	22	Chemokine (C-C motif) ligand 35, duplicate 2	w
+CHEMOKINE	zebrafish	A9ZPE0	ccl20b	A9ZPE0	10	43	C-C motif chemokine	w
+CHEMOKINE	zebrafish	A9ZPF1	cxcl19	A9ZPF1	3	16	C-X-C motif chemokine 19 precursor	w
+CHEMOKINE	zebrafish	A9ZPF3	ccl44	A9ZPF3	0	4	Chemokine (C-C motif) ligand 44	w
+CHEMOKINE	zebrafish	A9ZPF6	cxcl20	A9ZPF6	5	13	Chemokine (C-X-C motif) ligand 20	w
+CHEMOKINE	zebrafish	B0R190	cxcl11.7	B0R190	5	11	C-X-C motif chemokine	w
+CHEMOKINE	zebrafish	B0R191	cxcl11.6	B0R191	6	16	C-X-C motif chemokine 11-6	w
+CHEMOKINE	zebrafish	B0V1K7	ccr9a	B0V1K7	5	23	C-C chemokine receptor type 9a	w
+CHEMOKINE	zebrafish	B3DGJ7	ccl34a.4	B3DGJ7	2	10	Chemokine (C-C motif) ligand 34a, duplicate 4	w
+CHEMOKINE	zebrafish	B3DGM0	ccl20a.3	B3DGM0	16	55	C-C motif chemokine	w
+CHEMOKINE	zebrafish	E7F787	ccl38a.3	E7F787	7	26	C-C motif chemokine	w
+CHEMOKINE	zebrafish	E7FC87	xcr1b.2	E7FC87	0	2	Chemokine (C motif) receptor 1b, duplicate 2	w
+CHEMOKINE	zebrafish	E7FFF2	ccr8.2	E7FFF2	13	35	C-C chemokine receptor type 5	w
+CHEMOKINE	zebrafish	E9QJ73	cxcr3.2	E9QJ73	4	6	C-X-C chemokine receptor type 3-2	w
+CHEMOKINE	zebrafish	F1Q6R0	cxcr3.1	F1Q6R0	12	41	C-X-C chemokine receptor type 3	w
+CHEMOKINE	zebrafish	F1Q8T9	cxcr2	F1Q8T9	12	49	C-X-C chemokine receptor type 2	w
+CHEMOKINE	zebrafish	F1QBE9	ccl25b	F1QBE9	5	12	C-C motif chemokine 25	w
+CHEMOKINE	zebrafish	F1QYD4	ccr2	F1QYD4	19	48	C-C chemokine receptor type 5-like	w
+CHEMOKINE	zebrafish	F1R6S5	ccl27a	F1R6S5	1	1	C-C motif chemokine	w
+CHEMOKINE	zebrafish	F6P784	ccl19a.2	F6P784	12	36	C-C motif chemokine 19a.2 precursor	w
+CHEMOKINE	zebrafish	H0WFA9	ccr8.1	H0WFA9	14	35	C-C chemokine receptor type 5 isoform X1	w
+CHEMOKINE	zebrafish	N0GW19	cxcl8b.1	N0GW19	15	36	Chemokine (C-X-C motif) ligand 8b, duplicate 1	w
+CHEMOKINE	zebrafish	Q5TYP9	ccl38a.4	Q5TYP9	8	20	C-C motif chemokine	w
+CHEMOKINE	zebrafish	Q5TYQ0	ccl38a.5	Q5TYQ0	9	24	C-C motif chemokine	w
+CHEMOKINE	zebrafish	Q6DG12	ccr10	Q6DG12	4	18	C-C chemokine receptor type 10	w
+CHEMOKINE	zebrafish	Q9PTF7	cxcr4b	Q9PTF7	3	82	C-X-C chemokine receptor type 4b	w
+CHEMOKINE	zebrafish	X1WFC0	ccr6b	X1WFC0	10	32	C-C chemokine receptor type 6	w
+CHEMOKINE-BINDIN	human	O00590	ACKR2	O00590	60	332	Atypical chemokine receptor 2 (C-C chemokine receptor D6) (C	w
+CHEMOKINE-BINDING	human	O00590	ACKR2	O00590	60	332	Atypical chemokine receptor 2 (C-C chemokine receptor D6) (C	w
+CHEMOKINE-BINDING	virus	P34016	OPG001	P34016	2	199	Chemokine-binding protein	w
+CHEMOKINE-BINDING	virus	Q805H7	OPG001	Q805H7	7	218	Inactive chemokine-binding protein	w
+CHEMOKINE-LIKE	human	P46091	CMKLR2	P46091	5	89	Chemerin-like receptor 2 (Chemerin chemokine-like receptor 2	w
+CHEMOKINE-LIKE	human	Q6UXB2	CXCL17	Q6UXB2	29	125	C-X-C motif chemokine 17 (6-Cys CXCL17) (Dendritic cell and 	w
+CHEMOKINE-LIKE	human	Q7Z5A7	TAFA5	Q7Z5A7	30	155	Chemokine-like protein TAFA-5	w
+CHEMOKINE-LIKE	human	Q7Z5A8	TAFA3	Q7Z5A8	5	88	Chemokine-like protein TAFA-3	w
+CHEMOKINE-LIKE	human	Q7Z5A9	TAFA1	Q7Z5A9	19	171	Chemokine-like protein TAFA-1	w
+CHEMOKINE-LIKE	human	Q8IZ96	CMTM1	Q8IZ96	4	14	CKLF-like MARVEL transmembrane domain-containing protein 1 (	w
+CHEMOKINE-LIKE	human	Q8IZR5	CMTM4	Q8IZR5	23	106	CKLF-like MARVEL transmembrane domain-containing protein 4 (	w
+CHEMOKINE-LIKE	human	Q8IZV2	CMTM8	Q8IZV2	3	122	CKLF-like MARVEL transmembrane domain-containing protein 8 (	w
+CHEMOKINE-LIKE	human	Q8N3H0	TAFA2	Q8N3H0	11	116	Chemokine-like protein TAFA-2	w
+CHEMOKINE-LIKE	human	Q8TAZ6	CMTM2	Q8TAZ6	1	26	CKLF-like MARVEL transmembrane domain-containing protein 2 (	w
+CHEMOKINE-LIKE	human	Q96DZ9	CMTM5	Q96DZ9	7	348	CKLF-like MARVEL transmembrane domain-containing protein 5 (	w
+CHEMOKINE-LIKE	human	Q96FZ5	CMTM7	Q96FZ5	15	153	CKLF-like MARVEL transmembrane domain-containing protein 7 (	w
+CHEMOKINE-LIKE	human	Q96LR4	TAFA4	Q96LR4	11	122	Chemokine-like protein TAFA-4	w
+CHEMOKINE-LIKE	human	Q96MX0	CMTM3	Q96MX0	7	119	CKLF-like MARVEL transmembrane domain-containing protein 3 (	w
+CHEMOKINE-LIKE	human	Q99788	CMKLR1	Q99788	22	205	Chemerin-like receptor 1 (Chemokine-like receptor 1) (G prot	w
+CHEMOKINE-LIKE	human	Q9NX76	CMTM6	Q9NX76	63	229	CKLF-like MARVEL transmembrane domain-containing protein 6 (	w
+CHEMOKINE-LIKE	human	Q9UBR5	CKLF	Q9UBR5	10	45	Chemokine-like factor (C32)	w
+CHEMOKINE-LIKE	virus	Q98314	MC148	Q98314	1	162	Chemokine-like protein MC148	w
+CHEMOKINE-LIKE	zebrafish	A2BGL6	cmklr1	A2BGL6	0	12	Chemokine-like receptor 1	w
+CHEMOKINE-RELATED	human	Q1T7F1	CCB42	Q1T7F1	1	7	Putative chemokine-related protein B42	w
+CHEMOKINE-RELATED	human	Q71RG6	YH006	Q71RG6	0	1	Putative chemokine-related protein FP248 (Protein N73)	w
+CHEMOKINES	human	Q16570	ACKR1	Q16570	52	311	Atypical chemokine receptor 1 (Duffy antigen receptor for ch	w
+CHEMOSENSORY	fly	FBgn0000028	acj6	P24350	106	391	Inhibitory POU protein (I-POU) (Abnormal chemosensory jump 6	w
+CHEMOSENSORY	fly	FBgn0029948	CheA7a	Q9W3R2	15	249	Chemosensory protein A 7a	w
+CHEMOSENSORY	fly	FBgn0032888	CheB38c	Q9VIJ1	15	243	Chemosensory protein B 38c	w
+CHEMOSENSORY	fly	FBgn0035089	4Csp3	Q9W0X2	122	1329	GEO07322p1 (MIP15436p) (Pherokine 3, isoform A) (Pherokine 3	w
+CHEMOSENSORY	fly	FBgn0036783	CheA75a	Q9VVP3	13	251	Chemosensory protein A 75a	w
+CHEMOSENSORY	fly	FBgn0038142	CheA87a	Q9VFW3	0	3	Chemosensory protein A 87a	w
+CHEMOSENSORY	fly	FBgn0038888	CheB93a	Q9VDA3	24	248	Chemosensory protein B 93a	w
+CHEMOSENSORY	fly	FBgn0050172	4Csp1	Q8MLP9	25	245	GEO08457p1 (Putative chemosensory protein CSP1)	w
+CHEMOSENSORY	fly	FBgn0051438	CheB93b	Q8IN27	21	244	Chemosensory protein B 93b	w
+CHEMOSENSORY	fly	FBgn0053194	CheA29a	Q8T0X8	28	245	Chemosensory protein A 29a (Putative pheromone response fact	w
+CHEMOSENSORY	fly	FBgn0053348	CheB42a	Q3ZAK6	22	244	Chemosensory protein B 42a (IP03603p)	w
+CHEMOSENSORY	fly	FBgn0066292	CheB42c	A1Z6S2	14	244	Chemosensory protein B 42c	w
+CHEMOSENSORY	fly	FBgn0066293	CheB42b	A1Z6S1	20	263	Chemosensory protein B 42b	w
+CHEMOSENSORY	fly	FBgn0067311	CheB38b	Q7KT14	14	243	Chemosensory protein B 38b	w
+CHEMOSENSORY	fly	FBgn0067312	CheB38a	Q7KT13	24	247	Chemosensory protein B 38a	w
+CHEMOSENSORY	fly	FBgn0261289	CheB98a	Q9VAT5	21	244	Chemosensory protein A 98a	w
+CHEMOSENSORY	fly	FBgn0261290	CheA84a	Q2MGK0	21	246	Chemosensory protein A 84a	w
+CHEMOSENSORY	fly	FBgn0261291	CheA86a	Q4AB33	38	245	Chemosensory protein A 86a	w
+CHEMOSENSORY	fly	FBgn0261292	CheB53a	A1ZAG5	25	243	Chemosensory protein B 53a	w
+CHEMOSENSORY	fly	FBgn0261293	CheB53b	A1ZAG6	19	243	Chemosensory protein B 53b	w
+CHEMOSENSORY	fly	FBgn0261294	CheB74a	Q4ABJ6	33	243	Chemosensory protein B 74a	w
+CHEMOSENSORY	fly	FBgn0262594	CheA46a	A1Z7Y9	14	245	Chemosensory protein A 46a	w
+CHEMOSENSORY	fly	FBgn0262595	CheA56a	A1ZBB5	14	245	Chemosensory protein A 56a	w
+CHEMOTACTIC	human	O00175	CCL24	O00175	97	329	C-C motif chemokine 24 (CK-beta-6) (Eosinophil chemotactic p	w
+CHEMOTACTIC	human	O00626	CCL22	O00626	102	603	C-C motif chemokine 22 (CC chemokine STCP-1) (MDC(1-69)) (Ma	w
+CHEMOTACTIC	human	P10145	CXCL8	P10145	159	999	Interleukin-8 (IL-8) (C-X-C motif chemokine 8) (Chemokine (C	w
+CHEMOTACTIC	human	P13500	CCL2	P13500	212	1438	C-C motif chemokine 2 (HC11) (Monocyte chemoattractant prote	w
+CHEMOTACTIC	human	P13501	CCL5	P13501	145	1268	C-C motif chemokine 5 (EoCP) (Eosinophil chemotactic cytokin	w
+CHEMOTACTIC	human	P21730	C5AR1	P21730	53	396	C5a anaphylatoxin chemotactic receptor 1 (C5a anaphylatoxin 	w
+CHEMOTACTIC	human	P51671	CCL11	P51671	104	373	Eotaxin (C-C motif chemokine 11) (Eosinophil chemotactic pro	w
+CHEMOTACTIC	human	P80075	CCL8	P80075	121	428	C-C motif chemokine 8 (HC14) (Monocyte chemoattractant prote	w
+CHEMOTACTIC	human	P80098	CCL7	P80098	90	315	C-C motif chemokine 7 (Monocyte chemoattractant protein 3) (	w
+CHEMOTACTIC	human	P80162	CXCL6	P80162	80	464	C-X-C motif chemokine 6 (Chemokine alpha 3) (CKA-3) (Granulo	w
+CHEMOTACTIC	human	Q16581	C3AR1	Q16581	22	221	C3a anaphylatoxin chemotactic receptor (C3AR) (C3a-R)	w
+CHEMOTACTIC	human	Q5D1E8	ZC3H12A	Q5D1E8	13	88	Endoribonuclease ZC3H12A (EC 3.1.-.-) (Monocyte chemotactic 	w
+CHEMOTACTIC	human	Q99616	CCL13	Q99616	101	296	C-C motif chemokine 13 (CK-beta-10) (Monocyte chemoattractan	w
+CHEMOTACTIC	human	Q9P296	C5AR2	Q9P296	40	212	C5a anaphylatoxin chemotactic receptor 2 (Complement compone	w
+CHEMOTACTIC	zebrafish	A0A2R8QEF3	LOC101885604	A0A2R8QEF3	0	9	C3a anaphylatoxin chemotactic receptor	w
+CHEMOTACTIC	zebrafish	A0A8M9PCI4	LOC110437916	A0A8M9PCI4	2	13	C3a anaphylatoxin chemotactic receptor-like	w
+CHEMOTACTIC	zebrafish	P0C7U4	c3ar1	P0C7U4	2	20	C3a anaphylatoxin chemotactic receptor	w
+CHEMOTACTIC	zebrafish	P0C7U5	c5ar1	P0C7U5	1	9	C5a anaphylatoxin chemotactic receptor 1	w
+CHEMOTACTIC	zebrafish	X1WGH4	si:dkey-42l23.2	X1WGH4	0	2	C3a anaphylatoxin chemotactic receptor	w
+CHEMOTAXIN	human	O75829	CNMD	O75829	18	98	Leukocyte cell-derived chemotaxin 1 (Chondromodulin) [Cleave	w
+CHEMOTAXIN-2	human	O14960	LECT2	O14960	16	104	Leukocyte cell-derived chemotaxin-2 (LECT-2) (hLECT2)	w
+CHEMOTAXIN-2	worm	Q21241	lect-2	Q21241	1	8	Leukocyte cell-derived chemotaxin-2 homolog	w
+CHEMOTAXIS	human	Q19T08	ECSCR	Q19T08	40	137	Endothelial cell-specific chemotaxis regulator (Apoptosis re	w
+CHEMOTAXIS	worm	Q18848	C54G4.3	Q18848	0	9	Methyl-accepting chemotaxis protein	w
+CHEMOTAXIS	zebrafish	E7F0W6	ecscr	E7F0W6	10	111	Endothelial cell surface-expressed chemotaxis and apoptosis 	w
+CHEMOTHERAPY	human	Q92567	FAM168A	Q92567	17	167	Protein FAM168A (Tongue cancer chemotherapy resistance-assoc	w
+CHEMR1	human	P51685	CCR8	P51685	56	200	C-C chemokine receptor type 8 (C-C CKR-8) (CC-CKR-8) (CCR-8)	w
+CHEMR13	human	P51681	CCR5	P51681	51	348	C-C chemokine receptor type 5 (C-C CKR-5) (CC-CKR-5) (CCR-5)	w
+CHEMR23	human	Q99788	CMKLR1	Q99788	22	205		
+CHEPEP	helicobacter-pylori	O25089	chePep	O25089	3	30	Chemotaxis regulatory protein ChePep	
+CHER	escherichia-coli-83333	P07364	cheR	P07364	4	21	Chemotaxis protein methyltransferase	
+CHER	fly	FBgn0014141	cher	Q7KSF4	1	33	cheerio	
+CHER	salmonella-typhimurium	P07801	cheR	P07801	3	25	Chemotaxis protein methyltransferase	
+CHER1	pseudomonas-aeruginosa	O87131	cheR1	O87131	1	42	Chemotaxis protein methyltransferase 1	
+CHER2	pseudomonas-aeruginosa	Q9I6V7	cheR2	Q9I6V7	0	41	Chemotaxis protein methyltransferase 2	
+CHERP	human	Q8IWX8	CHERP	Q8IWX8	78	334	Calcium homeostasis endoplasmic reticulum protein (ERPROT 21	
+CHERP	mus-musculus	Q8CGZ0	Cherp	Q8CGZ0	9	33	Calcium homeostasis endoplasmic reticulum protein	
+CHERP	rattus-norvegicus	D3ZAX5	Cherp	D3ZAX5	8	25	Calcium homeostasis endoplasmic reticulum protein	
+CHERP	zebrafish	A0A8M1PAQ9	cherp	A0A8M1PAQ9	10	41	Calcium homeostasis endoplasmic reticulum protein	
+CHERP_HUMAN	human	Q8IWX8	CHERP	Q8IWX8	78	334		
+CHES-1-LIKE	fly	FBgn0029504	CHES-1-like	Q9W3Q5	37	100	Checkpoint suppressor 1-like, isoform A (Checkpoint suppress	
+CHES1	human	O00409	FOXN3	O00409	111	406		
+CHET	human	Q15022	SUZ12	Q15022	82	823	Polycomb protein SUZ12 (Chromatin precipitated E2F target 9 	w
+CHET9	human	Q15022	SUZ12	Q15022	82	823		
+CHETK	human	Q9Y259	CHKB	Q9Y259	15	181		
+CHETK-ALPHA	human	P35790	CHKA	P35790	93	1248	Choline kinase alpha (CK) (EC 2.7.1.32) (CHETK-alpha) (Ethan	w
+CHEV	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBM1	cheV	Q0PBM1	11	88	Chemotaxis protein	
+CHEV1	helicobacter-pylori	O24864	cheV1	O24864	5	27	Chemotaxis protein CheV1	
+CHEV2	helicobacter-pylori	O25337	cheV2	O25337	4	26	Chemotaxis protein CheV2	
+CHEV3	helicobacter-pylori	O25154	cheV3	O25154	4	29	Chemotaxis protein CheV3	
+CHEW	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBM3	cheW	Q0PBM3	11	24	Chemotaxis protein	
+CHEW	escherichia-coli-83333	P0A964	cheW	P0A964	8	22	Chemotaxis protein CheW	
+CHEW	helicobacter-pylori	O25152	cheW	O25152	6	11	Chemotaxis protein CheW	
+CHEW	salmonella-typhimurium	P06110	cheW	P06110	13	27	Chemotaxis protein CheW	
+CHEY	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P0C635	cheY	P0C635	3	45	Chemotaxis protein CheY homolog	
+CHEY	escherichia-coli-83333	P0AE67	cheY	P0AE67	6	32	Chemotaxis protein CheY	
+CHEY	pseudomonas-aeruginosa	Q51455	cheY	Q51455	15	99	Chemotaxis protein CheY	
+CHEY	salmonella-typhimurium	P0A2D5	cheY	P0A2D5	5	49	Chemotaxis protein CheY	
+CHEY1	helicobacter-pylori	P71403	cheY1	P71403	5	13	Chemotaxis protein CheY1	
+CHEZ	escherichia-coli-83333	P0A9H9	cheZ	P0A9H9	1	10	Protein phosphatase CheZ	
+CHEZ	helicobacter-pylori	O24976	cheZ	O24976	0	1	Protein phosphatase CheZ	
+CHEZ	pseudomonas-aeruginosa	Q51434	cheZ	Q51434	2	37	Protein phosphatase CheZ	
+CHEZ	salmonella-typhimurium	P07800	cheZ	P07800	1	11	Protein phosphatase CheZ	

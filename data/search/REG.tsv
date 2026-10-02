@@ -1,14 +1,1006 @@
-REG1	candida-albicans-237561	A0A1D8PGA2	REG1	A0A1D8PGA2	1	1	Protein phosphatase regulator
-REG1	mus-musculus	P43137	Reg1	P43137	0	5	Lithostathine-1
-REG3A	mus-musculus	O09037	Reg3a	O09037	1	3	Regenerating islet-derived protein 3-alpha
-REG3A	rattus-norvegicus	P35231	Reg3a	P35231	1	2	Regenerating islet-derived protein 3-alpha
-REG3B	mus-musculus	P35230	Reg3b	P35230	2	4	Regenerating islet-derived protein 3-beta
-REG3B	rattus-norvegicus	P25031	Reg3b	P25031	2	3	Regenerating islet-derived protein 3-beta
-REG3D	mus-musculus	Q9QUS9	Reg3d	Q9QUS9	1	3	Reg III delta
-REG3G	mus-musculus	O09049	Reg3g	O09049	2	3	Regenerating islet-derived protein 3-gamma
-REG3G	rattus-norvegicus	P42854	Reg3g	P42854	1	2	Regenerating islet-derived protein 3-gamma
-REG4	mus-musculus	Q9D8G5	Reg4	Q9D8G5	0	1	Regenerating islet-derived protein 4
-REG4	rattus-norvegicus	Q68AX7	Reg4	Q68AX7	0	2	Regenerating islet-derived protein 4
-REGA	dictyostelium-discoideum	Q23917	regA	Q23917	1	2	3,5-cyclic-nucleotide phosphodiesterase regA
-REGR	streptococcus-pneumoniae	Q8DR72	regR	Q8DR72	0	6	Transcription regulator, member of GalR family
-REGX3	mycobacterium-tuberculosis	P9WGL9	regX3	P9WGL9	3	30	Sensory transduction protein RegX3
+REG	fly	FBgn0029133	REG	Q9V3P3	2	91	LD45860p (Proteasome regulator dREG) (Proteasome regulator g	
+REG	human	P05451	REG1A	P05451	13	120		
+REG-1-BETA	human	P48304	REG1B	P48304	31	111	Lithostathine-1-beta (Pancreatic stone protein 2) (PSP-2) (R	w
+REG-2	fly	FBgn0016715	Reg-2	Q94915	0	3	Rhythmically expressed gene 2 protein (dREG-2)	
+REG-2	worm	O01756	CELE_F55A12.5	O01756	0	3	Telomere_reg-2 domain-containing protein	w
+REG-3-ALPHA	human	Q06141	REG3A	Q06141	21	190	Regenerating islet-derived protein 3-alpha (REG-3-alpha) (He	w
+REG-3-GAMMA	human	Q6UW15	REG3G	Q6UW15	26	200	Regenerating islet-derived protein 3-gamma (REG-3-gamma) (Pa	w
+REG-4	human	Q9BYZ8	REG4	Q9BYZ8	21	134	Regenerating islet-derived protein 4 (REG-4) (Gastrointestin	w
+REG-5	fly	FBgn0015801	Reg-5	Q94913	62	244	Rhythmically expressed gene 5 protein (dReg-5)	
+REG-ALPHA	human	Q06323	PSME1	Q06323	12	234	Proteasome activator complex subunit 1 (11S regulator comple	w
+REG-BETA	human	Q9UL46	PSME2	Q9UL46	14	253	Proteasome activator complex subunit 2 (11S regulator comple	w
+REG-GAMMA	human	P61289	PSME3	P61289	4	382	Proteasome activator complex subunit 3 (11S regulator comple	w
+REG-LIKE	human	Q9BYZ8	REG4	Q9BYZ8	21	134	Regenerating islet-derived protein 4 (REG-4) (Gastrointestin	w
+REG1	candida-albicans-237561	A0A1D8PGA2	REG1	A0A1D8PGA2	1	1	Protein phosphatase regulator	
+REG1	human	Q5D1E8	ZC3H12A	Q5D1E8	13	88	Endoribonuclease ZC3H12A (EC 3.1.-.-) (Monocyte chemotactic 	w
+REG1	mus-musculus	P43137	Reg1	P43137	0	5	Lithostathine-1	
+REG1	yeast	P07278	BCY1	P07278	11	99		
+REG1	yeast	Q00816	REG1	Q00816	6	60	Resistance to glucose repression protein 1	
+REG1A	human	P05451	REG1A	P05451	13	120	Lithostathine-1-alpha (Islet cells regeneration factor) (ICR	
+REG1A_HUMAN	human	P05451	REG1A	P05451	13	120		
+REG1B	human	P48304	REG1B	P48304	31	111	Lithostathine-1-beta (Pancreatic stone protein 2) (PSP-2) (R	
+REG1B_HUMAN	human	P48304	REG1B	P48304	31	111		
+REG2	yeast	P38232	REG2	P38232	1	17	Protein REG2	
+REG3A	human	Q06141	REG3A	Q06141	21	190	Regenerating islet-derived protein 3-alpha (REG-3-alpha) (He	
+REG3A	mus-musculus	O09037	Reg3a	O09037	1	3	Regenerating islet-derived protein 3-alpha	
+REG3A	rattus-norvegicus	P35231	Reg3a	P35231	1	2	Regenerating islet-derived protein 3-alpha	
+REG3A_HUMAN	human	Q06141	REG3A	Q06141	21	190		
+REG3B	mus-musculus	P35230	Reg3b	P35230	2	4	Regenerating islet-derived protein 3-beta	
+REG3B	rattus-norvegicus	P25031	Reg3b	P25031	2	3	Regenerating islet-derived protein 3-beta	
+REG3D	mus-musculus	Q9QUS9	Reg3d	Q9QUS9	1	3	Reg III delta	
+REG3G	human	Q6UW15	REG3G	Q6UW15	26	200	Regenerating islet-derived protein 3-gamma (REG-3-gamma) (Pa	
+REG3G	mus-musculus	O09049	Reg3g	O09049	2	3	Regenerating islet-derived protein 3-gamma	
+REG3G	rattus-norvegicus	P42854	Reg3g	P42854	1	2	Regenerating islet-derived protein 3-gamma	
+REG3G_HUMAN	human	Q6UW15	REG3G	Q6UW15	26	200		
+REG4	human	Q9BYZ8	REG4	Q9BYZ8	21	134	Regenerating islet-derived protein 4 (REG-4) (Gastrointestin	
+REG4	mus-musculus	Q9D8G5	Reg4	Q9D8G5	0	1	Regenerating islet-derived protein 4	
+REG4	rattus-norvegicus	Q68AX7	Reg4	Q68AX7	0	2	Regenerating islet-derived protein 4	
+REG4_HUMAN	human	Q9BYZ8	REG4	Q9BYZ8	21	134		
+REGA	dictyostelium-discoideum	Q23917	regA	Q23917	1	2	3,5-cyclic-nucleotide phosphodiesterase regA	
+REGAN	human	P05187	ALPP	P05187	6	163	Alkaline phosphatase, placental type (EC 3.1.3.1) (Alkaline 	w
+REGE-1	worm	Q95YE2	rege-1	Q95YE2	0	5	Endoribonuclease rege-1	w
+REGE-1	worm	Q95YE2	rege-1	Q95YE2	0	5	Endoribonuclease rege-1	w
+REGENA	fly	FBgn0017550	Rga	Q94547	54	482	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
+REGENER	human	Q12974	PTP4A2	Q12974	30	278	Protein tyrosine phosphatase type IVA 2 (EC 3.1.3.48) (HU-PP	w
+REGENERATI	human	Q6UW15	REG3G	Q6UW15	26	200	Regenerating islet-derived protein 3-gamma (REG-3-gamma) (Pa	w
+REGENERATING	fly	FBgn0024734	PRL-1	O61722	220	994	PRL-1 phosphatase (EC 3.1.3.48) (Phosphatase of regenerating	w
+REGENERATING	human	O75365	PTP4A3	O75365	17	216	Protein tyrosine phosphatase type IVA 3 (EC 3.1.3.48) (PRL-R	w
+REGENERATING	human	P05451	REG1A	P05451	13	120	Lithostathine-1-alpha (Islet cells regeneration factor) (ICR	w
+REGENERATING	human	P48304	REG1B	P48304	31	111	Lithostathine-1-beta (Pancreatic stone protein 2) (PSP-2) (R	w
+REGENERATING	human	Q06141	REG3A	Q06141	21	190	Regenerating islet-derived protein 3-alpha (REG-3-alpha) (He	w
+REGENERATING	human	Q6UW15	REG3G	Q6UW15	26	200	Regenerating islet-derived protein 3-gamma (REG-3-gamma) (Pa	w
+REGENERATING	human	Q93096	PTP4A1	Q93096	35	259	Protein tyrosine phosphatase type IVA 1 (EC 3.1.3.48) (PTP(C	w
+REGENERATING	human	Q9BYZ8	REG4	Q9BYZ8	21	134	Regenerating islet-derived protein 4 (REG-4) (Gastrointestin	w
+REGENERATION	fly	FBgn0261258	rgn	M9PFV8	3	64	Regeneration, isoform B (Regeneration, isoform C)	w
+REGENERATION	human	P05451	REG1A	P05451	13	120	Lithostathine-1-alpha (Islet cells regeneration factor) (ICR	w
+REGENERATION	human	P55789	GFER	P55789	9	154	FAD-linked sulfhydryl oxidase ALR (EC 1.8.3.2) (Augmenter of	w
+REGENERATION	human	Q6UXH9	PAMR1	Q6UXH9	7	74	Inactive serine protease PAMR1 (Peptidase domain-containing 	w
+REGENERATION-ASSOCIATED	human	Q6Q788	APOA5	Q6Q788	10	236	Apolipoprotein A-V (Apo-AV) (ApoA-V) (Apolipoprotein A5) (Re	w
+REGENERATION-ASSOCIATED	human	Q6UXH9	PAMR1	Q6UXH9	7	74	Inactive serine protease PAMR1 (Peptidase domain-containing 	w
+REGENERATION-RELATED	human	Q16612	NREP	Q16612	1	28	Neuronal regeneration-related protein (Neuronal protein 3.1)	w
+REGI	human	P01701	IGLV1-51	P01701	72	239	Immunoglobulin lambda variable 1-51 (Ig lambda chain V-I reg	w
+REGI	human	Q9UDT6	CLIP2	Q9UDT6	46	106	CAP-Gly domain-containing linker protein 2 (Cytoplasmic link	w
+REGION	fly	FBgn0016970	l(2)k10201	Q9V574	1	9	Protein lethal(2)k10201 (Wunen region B protein)	w
+REGION	fly	FBgn0020497	emb	Q9TVM2	11	168	Exportin-1 (Chromosome region maintenance 1 protein) (Protei	w
+REGION	fly	FBgn0033326	CG14743	A1Z7I2	0	4	Sodium/calcium exchanger membrane region domain-containing p	w
+REGION	fly	FBgn0033599	CG13223	A1Z8H3	0	6	Sodium/calcium exchanger membrane region domain-containing p	w
+REGION	fly	FBgn0034389	Mctp	Q7JZN2	0	2	Multiple C2 domain and transmembrane region protein	w
+REGION	fly	FBgn0038380	CG14877	Q9VF16	31	244	Receptor ligand binding region domain-containing protein	w
+REGION	fly	FBgn0038452	Ccdc114	Q9VES4	9	31	ODAD1 central coiled coil region domain-containing protein	w
+REGION	human	A0A0A6YYK7	TRAV19	A0A0A6YYK7	72	140	T cell receptor alpha variable 19 (T-cell receptor alpha cha	w
+REGION	human	A0M8Q6	IGLC7	A0M8Q6	122	447	Immunoglobulin lambda constant 7 (Ig lambda-7 chain C region	w
+REGION	human	A6NGY1	FRG2C	A6NGY1	3	16	Protein FRG2-like-2 (FSHD region gene 2 protein family membe	w
+REGION	human	A8MXV6	CDRT15L2	A8MXV6	0	3	CMT1A duplicated region transcript 15 protein-like protein	w
+REGION	human	O00534	VWA5A	O00534	4	110	von Willebrand factor A domain-containing protein 5A (Breast	w
+REGION	human	O14493	CLDN4	O14493	31	282	Claudin-4 (Clostridium perfringens enterotoxin receptor) (CP	w
+REGION	human	O14972	VPS26C	O14972	13	96	Vacuolar protein sorting-associated protein 26C (Down syndro	w
+REGION	human	O14980	XPO1	O14980	211	1568	Exportin-1 (Exp1) (Chromosome region maintenance 1 protein h	w
+REGION	human	O60296	TRAK2	O60296	39	115	Trafficking kinesin-binding protein 2 (Amyotrophic lateral s	w
+REGION	human	O75015	FCGR3B	O75015	57	361	Low affinity immunoglobulin gamma Fc region receptor III-B (	w
+REGION	human	O75531	BANF1	O75531	31	458	Barrier-to-autointegration factor (Breakpoint cluster region	w
+REGION	human	O95170	FBXW10B	O95170	2	28	F-box and WD repeat domain containing protein 10B (CMT1A dup	w
+REGION	human	O95456	PSMG1	O95456	34	379	Proteasome assembly chaperone 1 (PAC-1) (Chromosome 21 leuci	w
+REGION	human	P01593	IGKV1D-33	P01593	52	406	Immunoglobulin kappa variable 1D-33 (Ig kappa chain V-I regi	w
+REGION	human	P01594	IGKV1-33	P01594	80	260	Immunoglobulin kappa variable 1-33 (Ig kappa chain V-I regio	w
+REGION	human	P01597	IGKV1-39	P01597	52	220	Immunoglobulin kappa variable 1-39 (Ig kappa chain V-I regio	w
+REGION	human	P01599	IGKV1-17	P01599	65	175	Immunoglobulin kappa variable 1-17 (Ig kappa chain V-I regio	w
+REGION	human	P01601	IGKV1D-16	P01601	84	307	Immunoglobulin kappa variable 1D-16 (Ig kappa chain V-I regi	w
+REGION	human	P01602	IGKV1-5	P01602	80	339	Immunoglobulin kappa variable 1-5 (Ig kappa chain V-I region	w
+REGION	human	P01611	IGKV1D-12	P01611	80	269	Immunoglobulin kappa variable 1D-12 (Ig kappa chain V-I regi	w
+REGION	human	P01614	IGKV2D-40	P01614	62	94	Immunoglobulin kappa variable 2D-40 (Ig kappa chain V-II reg	w
+REGION	human	P01615	IGKV2D-28	P01615	76	233	Immunoglobulin kappa variable 2D-28 (Ig kappa chain V-II reg	w
+REGION	human	P01619	IGKV3-20	P01619	91	302	Immunoglobulin kappa variable 3-20 (Ig kappa chain V-III reg	w
+REGION	human	P01624	IGKV3-15	P01624	108	298	Immunoglobulin kappa variable 3-15 (Ig kappa chain V-III reg	w
+REGION	human	P01699	IGLV1-44	P01699	38	182	Immunoglobulin lambda variable 1-44 (Ig lambda chain V-I reg	w
+REGION	human	P01700	IGLV1-47	P01700	51	238	Immunoglobulin lambda variable 1-47 (Ig lambda chain V-I reg	w
+REGION	human	P01701	IGLV1-51	P01701	72	239	Immunoglobulin lambda variable 1-51 (Ig lambda chain V-I reg	w
+REGION	human	P01703	IGLV1-40	P01703	46	193	Immunoglobulin lambda variable 1-40 (Ig lambda chain V-I reg	w
+REGION	human	P01704	IGLV2-14	P01704	76	167	Immunoglobulin lambda variable 2-14 (Ig lambda chain V-II re	w
+REGION	human	P01705	IGLV2-23	P01705	44	149	Immunoglobulin lambda variable 2-23 (Ig lambda chain V-II re	w
+REGION	human	P01706	IGLV2-11	P01706	92	212	Immunoglobulin lambda variable 2-11 (Ig gamma lambda chain V	w
+REGION	human	P01709	IGLV2-8	P01709	99	206	Immunoglobulin lambda variable 2-8 (Ig lambda chain V-II reg	w
+REGION	human	P01714	IGLV3-19	P01714	106	283	Immunoglobulin lambda variable 3-19 (Ig lambda chain V-III r	w
+REGION	human	P01715	IGLV3-1	P01715	60	173	Immunoglobulin lambda variable 3-1 (Ig lambda chain V-IV reg	w
+REGION	human	P01717	IGLV3-25	P01717	90	234	Immunoglobulin lambda variable 3-25 (Ig lambda chain V-IV re	w
+REGION	human	P01718	IGLV3-27	P01718	111	245	Immunoglobulin lambda variable 3-27 (Ig lambda chain V-IV re	w
+REGION	human	P01721	IGLV6-57	P01721	54	146	Immunoglobulin lambda variable 6-57 (Ig lambda chain V-VI re	w
+REGION	human	P01733	TRBV12-3	P01733	92	224	T cell receptor beta variable 12-3 (T-cell receptor beta cha	w
+REGION	human	P01737	TRAV8-4	P01737	66	147	T cell receptor alpha variable 8-4 (T cell receptor alpha ch	w
+REGION	human	P01742	IGHV1-69	P01742	70	248	Immunoglobulin heavy variable 1-69 (Ig heavy chain V-I regio	w
+REGION	human	P01743	IGHV1-46	P01743	91	196	Immunoglobulin heavy variable 1-46 (Ig heavy chain V-I regio	w
+REGION	human	P01762	IGHV3-11	P01762	73	204	Immunoglobulin heavy variable 3-11 (Ig heavy chain V-III reg	w
+REGION	human	P01763	IGHV3-48	P01763	100	227	Immunoglobulin heavy variable 3-48 (Ig heavy chain V-III reg	w
+REGION	human	P01764	IGHV3-23	P01764	105	474	Immunoglobulin heavy variable 3-23 (Ig heavy chain V-III reg	w
+REGION	human	P01766	IGHV3-13	P01766	101	258	Immunoglobulin heavy variable 3-13 (Ig heavy chain V-III reg	w
+REGION	human	P01767	IGHV3-53	P01767	89	238	Immunoglobulin heavy variable 3-53 (Ig heavy chain V-III reg	w
+REGION	human	P01768	IGHV3-30	P01768	50	110	Immunoglobulin heavy variable 3-30 (Ig heavy chain V-III reg	w
+REGION	human	P01772	IGHV3-33	P01772	75	195	Immunoglobulin heavy variable 3-33 (Ig heavy chain V-III reg	w
+REGION	human	P01780	IGHV3-7	P01780	81	225	Immunoglobulin heavy variable 3-7 (Ig heavy chain V-III regi	w
+REGION	human	P01782	IGHV3-9	P01782	61	143	Immunoglobulin heavy variable 3-9 (Ig heavy chain V-III regi	w
+REGION	human	P01814	IGHV2-70	P01814	63	158	Immunoglobulin heavy variable 2-70 (Ig heavy chain V-II regi	w
+REGION	human	P01817	IGHV2-5	P01817	77	152	Immunoglobulin heavy variable 2-5 (Ig heavy chain V-II regio	w
+REGION	human	P01824	IGHV4-39	P01824	115	299	Immunoglobulin heavy variable 4-39 (Ig heavy chain V-II regi	w
+REGION	human	P01825	IGHV4-59	P01825	98	349	Immunoglobulin heavy variable 4-59 (Ig heavy chain V-II regi	w
+REGION	human	P01834	IGKC	P01834	141	559	Immunoglobulin kappa constant (Ig kappa chain C region) (Ig 	w
+REGION	human	P01854	IGHE	P01854	14	47	Immunoglobulin heavy constant epsilon (Ig epsilon chain C re	w
+REGION	human	P01857	IGHG1	P01857	173	1768	Immunoglobulin heavy constant gamma 1 (Ig gamma-1 chain C re	w
+REGION	human	P01859	IGHG2	P01859	99	968	Immunoglobulin heavy constant gamma 2 (Ig gamma-2 chain C re	w
+REGION	human	P01860	IGHG3	P01860	107	1091	Immunoglobulin heavy constant gamma 3 (HDC) (Heavy chain dis	w
+REGION	human	P01861	IGHG4	P01861	44	313	Immunoglobulin heavy constant gamma 4 (Ig gamma-4 chain C re	w
+REGION	human	P01871	IGHM	P01871	81	1680	Immunoglobulin heavy constant mu (Ig mu chain C region) (Ig 	w
+REGION	human	P01876	IGHA1	P01876	83	1226	Immunoglobulin heavy constant alpha 1 (Ig alpha-1 chain C re	w
+REGION	human	P01877	IGHA2	P01877	47	297	Immunoglobulin heavy constant alpha 2 (Ig alpha-2 chain C re	w
+REGION	human	P01880	IGHD	P01880	42	281	Immunoglobulin heavy constant delta (Ig delta chain C region	w
+REGION	human	P03979	TRGV3	P03979	69	239	T cell receptor gamma variable 3 (T-cell receptor gamma V-ga	w
+REGION	human	P04211	IGLV7-43	P04211	30	217	Immunoglobulin lambda variable 7-43 (Ig lambda chain V regio	w
+REGION	human	P04430	IGKV1-16	P04430	102	298	Immunoglobulin kappa variable 1-16 (Ig kappa chain V-I regio	w
+REGION	human	P04432	IGKV1D-39	P04432	32	84	Immunoglobulin kappa variable 1D-39 (Ig kappa chain V-I regi	w
+REGION	human	P04433	IGKV3-11	P04433	109	269	Immunoglobulin kappa variable 3-11 (Ig kappa chain V-III reg	w
+REGION	human	P06310	IGKV2-30	P06310	101	296	Immunoglobulin kappa variable 2-30 (Ig kappa chain V-II regi	w
+REGION	human	P06312	IGKV4-1	P06312	86	174	Immunoglobulin kappa variable 4-1 (Ig kappa chain V-IV regio	w
+REGION	human	P06315	IGKV5-2	P06315	54	151	Immunoglobulin kappa variable 5-2 (Ig kappa chain V region E	w
+REGION	human	P06331	IGHV4-34	P06331	144	284	Immunoglobulin heavy variable 4-34 (Ig heavy chain V-II regi	w
+REGION	human	P08637	FCGR3A	P08637	42	311	Low affinity immunoglobulin gamma Fc region receptor III-A (	w
+REGION	human	P0C854	CECR9	P0C854	0	1	Putative cat eye syndrome critical region protein 9	w
+REGION	human	P0CF74	IGLC6	P0CF74	80	309	Immunoglobulin lambda constant 6 (Ig lambda-6 chain C region	w
+REGION	human	P0CG04	IGLC1	P0CG04	92	303	Immunoglobulin lambda constant 1 (Ig lambda chain C region M	w
+REGION	human	P0DOY2	IGLC2	P0DOY2	104	319	Immunoglobulin lambda constant 2 (Ig lambda chain C region K	w
+REGION	human	P0DOY3	IGLC3	P0DOY3	85	302	Immunoglobulin lambda constant 3 (Ig lambda chain C region D	w
+REGION	human	P0DPD8	EEF1AKMT4-ECE2	P0DPD8	6	12	EEF1AKMT4-ECE2 readthrough transcript protein (EC 3.4.24.71)	w
+REGION	human	P11274	BCR	P11274	52	377	Breakpoint cluster region protein (EC 2.7.11.1) (Renal carci	w
+REGION	human	P12270	TPR	P12270	19	277	Nucleoprotein TPR (Megator) (NPC-associated intranuclear pro	w
+REGION	human	P12318	FCGR2A	P12318	81	438	Low affinity immunoglobulin gamma Fc region receptor II-a (I	w
+REGION	human	P23083	IGHV1-2	P23083	88	211	Immunoglobulin heavy variable 1-2 (Ig heavy chain V-I region	w
+REGION	human	P31994	FCGR2B	P31994	78	345	Low affinity immunoglobulin gamma Fc region receptor II-b (I	w
+REGION	human	P31995	FCGR2C	P31995	26	107	Low affinity immunoglobulin gamma Fc region receptor II-c (I	w
+REGION	human	P51843	NR0B1	P51843	32	143	Nuclear receptor subfamily 0 group B member 1 (DSS-AHC criti	w
+REGION	human	P53805	RCAN1	P53805	7	84	Calcipressin-1 (Adapt78) (Down syndrome critical region prot	w
+REGION	human	P56555	DSCR4	P56555	1	9	Down syndrome critical region protein 4 (Down syndrome criti	w
+REGION	human	P57054	PIGP	P57054	7	68	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
+REGION	human	P57055	RIPPLY3	P57055	9	146	Protein ripply3 (Down syndrome critical region protein 6)	w
+REGION	human	P59020	DSCR9	P59020	0	10	Down syndrome critical region protein 9	w
+REGION	human	P59022	DSCR10	P59022	1	3	Down syndrome critical region protein 10	w
+REGION	human	P79522	PRR3	P79522	19	344	Proline-rich protein 3 (MHC class I region proline-rich prot	w
+REGION	human	P80748	IGLV3-21	P80748	107	310	Immunoglobulin lambda variable 3-21 (Ig lambda chain V-III r	w
+REGION	human	Q01844	EWSR1	Q01844	84	811	RNA-binding protein EWS (EWS oncogene) (Ewing sarcoma breakp	w
+REGION	human	Q05066	SRY	Q05066	37	410	Sex-determining region Y protein (Testis-determining factor)	w
+REGION	human	Q0D2K0	NIPAL4	Q0D2K0	3	46	Magnesium transporter NIPA4 (Ichthyin) (NIPA-like protein 4)	w
+REGION	human	Q13769	THOC5	Q13769	43	401	THO complex subunit 5 (Functional spliceosome-associated pro	w
+REGION	human	Q14129	DGCR6	Q14129	31	112	Protein DGCR6 (DiGeorge syndrome critical region 6)	w
+REGION	human	Q14206	RCAN2	Q14206	10	57	Calcipressin-2 (Down syndrome candidate region 1-like 1) (My	w
+REGION	human	Q14331	FRG1	Q14331	12	129	Protein FRG1 (FSHD region gene 1 protein)	w
+REGION	human	Q14677	CLINT1	Q14677	40	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
+REGION	human	Q15056	EIF4H	Q15056	26	261	Eukaryotic translation initiation factor 4H (eIF-4H) (Willia	w
+REGION	human	Q15390	MTFR1	Q15390	20	106	Mitochondrial fission regulator 1 (Chondrocyte protein with 	w
+REGION	human	Q3KNT7	NSUN5P1	Q3KNT7	0	8	Putative NOL1/NOP2/Sun domain family member 5B (EC 2.1.1.-) 	w
+REGION	human	Q3MIW9	MUCL3	Q3MIW9	0	10	Mucin-like protein 3 (Diffuse panbronchiolitis critical regi	w
+REGION	human	Q53GA4	PHLDA2	Q53GA4	8	123	Pleckstrin homology-like domain family A member 2 (Beckwith-	w
+REGION	human	Q53TS8	CATSPERT	Q53TS8	6	73	Cation channel sperm-associated targeting subunit tau (CatSp	w
+REGION	human	Q5W111	SPRYD7	Q5W111	34	430	SPRY domain-containing protein 7 (Chronic lymphocytic leukem	w
+REGION	human	Q63ZY6	NSUN5P2	Q63ZY6	1	28	Putative methyltransferase NSUN5C (EC 2.1.1.-) (NOL1/NOP2/Su	w
+REGION	human	Q64ET8	FRG2	Q64ET8	2	25	Protein FRG2 (FSHD region gene 2 protein)	w
+REGION	human	Q6AI39	BICRAL	Q6AI39	17	136	BRD4-interacting chromatin-remodeling complex-associated pro	w
+REGION	human	Q6NVV3	NIPAL1	Q6NVV3	8	139	Magnesium transporter NIPA3 (NIPA-like protein 1) (Non-impri	w
+REGION	human	Q6P1L5	FAM117B	Q6P1L5	28	64	Protein FAM117B (Amyotrophic lateral sclerosis 2 chromosomal	w
+REGION	human	Q6UE05	TMEM270	Q6UE05	0	30	Transmembrane protein 270 (Williams-Beuren syndrome chromoso	w
+REGION	human	Q6UX01	LMBR1L	Q6UX01	97	975	Protein LMBR1L (Limb region 1 protein homolog-like) (Lipocal	w
+REGION	human	Q6ZS30	NBEAL1	Q6ZS30	5	61	Neurobeachin-like protein 1 (Amyotrophic lateral sclerosis 2	w
+REGION	human	Q70E73	RAPH1	Q70E73	66	201	Ras-associated and pleckstrin homology domains-containing pr	w
+REGION	human	Q7RTP0	NIPA1	Q7RTP0	5	38	Magnesium transporter NIPA1 (Non-imprinted in Prader-Willi/A	w
+REGION	human	Q86XT2	VPS37D	Q86XT2	14	80	Vacuolar protein sorting-associated protein 37D (ESCRT-I com	w
+REGION	human	Q8IVJ8	APRG1	Q8IVJ8	0	1	APRG1 tumor suppressor candidate (AP20 region protein 1)	w
+REGION	human	Q8IZS5	OFCC1	Q8IZS5	2	5	Orofacial cleft 1 candidate gene 1 protein (Orofacial clefti	w
+REGION	human	Q8N123	CPXCR1	Q8N123	1	11	CPX chromosomal region candidate gene 1 protein (Cancer/test	w
+REGION	human	Q8N187	CARF	Q8N187	4	17	Calcium-responsive transcription factor (Amyotrophic lateral	w
+REGION	human	Q8N1D0	SLC67A1-AS	Q8N1D0	0	7	Uncharacterized protein SLC67A1-AS (Beckwith-Wiedemann syndr	w
+REGION	human	Q8N6F8	METTL27	Q8N6F8	20	71	Methyltransferase-like protein 27 (Williams-Beuren syndrome 	w
+REGION	human	Q8N8Q9	NIPA2	Q8N8Q9	3	34	Magnesium transporter NIPA2 (Non-imprinted in Prader-Willi/A	w
+REGION	human	Q8N9R6	CDRT4	Q8N9R6	2	28	CMT1A duplicated region transcript 4 protein	w
+REGION	human	Q8NDH6	ICA1L	Q8NDH6	8	36	Islet cell autoantigen 1-like protein (Amyotrophic lateral s	w
+REGION	human	Q8NDN9	RCBTB1	Q8NDN9	7	68	RCC1 and BTB domain-containing protein 1 (Chronic lymphocyti	w
+REGION	human	Q8NFV5	SPDYE1	Q8NFV5	12	56	Speedy protein E1 (Williams-Beuren syndrome chromosomal regi	w
+REGION	human	Q8TEV9	SMCR8	Q8TEV9	26	218	Guanine nucleotide exchange protein SMCR8 (Smith-Magenis syn	w
+REGION	human	Q8TEW8	PARD3B	Q8TEW8	47	144	Partitioning defective 3 homolog B (Amyotrophic lateral scle	w
+REGION	human	Q8TF30	WHAMM	Q8TF30	34	112	WASP homolog-associated protein with actin, membranes and mi	w
+REGION	human	Q8WUY3	PRUNE2	Q8WUY3	12	261	Protein prune homolog 2 (BNIP2 motif-containing molecule at 	w
+REGION	human	Q8WVP7	LMBR1	Q8WVP7	9	119	Limb region 1 protein homolog (Differentiation-related gene 	w
+REGION	human	Q8WYQ5	DGCR8	Q8WYQ5	35	479	Microprocessor complex subunit DGCR8 (DiGeorge syndrome crit	w
+REGION	human	Q92973	TNPO1	Q92973	39	416	Transportin-1 (Importin beta-2) (Karyopherin beta-2) (M9 reg	w
+REGION	human	Q969J3	BORCS5	Q969J3	25	63	BLOC-1-related complex subunit 5 (Loss of heterozygosity 12 	w
+REGION	human	Q96B18	DACT3	Q96B18	9	37	Dapper homolog 3 (Antagonist of beta-catenin Dapper homolog 	w
+REGION	human	Q96BI1	SLC67A1	Q96BI1	10	129	Solute carrier family 67 member A1 (Beckwith-Wiedemann syndr	w
+REGION	human	Q96C03	MIEF2	Q96C03	7	94	Mitochondrial dynamics protein MID49 (Mitochondrial dynamics	w
+REGION	human	Q96DF8	ESS2	Q96DF8	41	300	Splicing factor ESS-2 homolog (DiGeorge syndrome critical re	w
+REGION	human	Q96I51	RCC1L	Q96I51	14	177	RCC1-like G exchanging factor-like protein (RCC1-like protei	w
+REGION	human	Q96JB8	MPP4	Q96JB8	13	65	MAGUK p55 subfamily member 4 (Amyotrophic lateral sclerosis 	w
+REGION	human	Q96JK2	DCAF5	Q96JK2	53	178	DDB1- and CUL4-associated factor 5 (Breakpoint cluster regio	w
+REGION	human	Q96LL9	DNAJC30	Q96LL9	34	240	DnaJ homolog subfamily C member 30, mitochondrial (Williams-	w
+REGION	human	Q96Q35	FLACC1	Q96Q35	6	49	Flagellum-associated coiled-coil domain-containing protein 1	w
+REGION	human	Q96Q40	CDK15	Q96Q40	167	1382	Cyclin-dependent kinase 15 (EC 2.7.11.22) (Amyotrophic later	w
+REGION	human	Q96Q42	ALS2	Q96Q42	8	49	Alsin (Amyotrophic lateral sclerosis 2 chromosomal region ca	w
+REGION	human	Q96Q45	TMEM237	Q96Q45	20	237	Transmembrane protein 237 (Amyotrophic lateral sclerosis 2 c	w
+REGION	human	Q96QC0	PPP1R10	Q96QC0	75	294	Serine/threonine-protein phosphatase 1 regulatory subunit 10	w
+REGION	human	Q96QU4	FRG2B	Q96QU4	3	45	Protein FRG2-like-1 (FSHD region gene 2 protein family membe	w
+REGION	human	Q96T59	CDRT15	Q96T59	3	13	CMT1A duplicated region transcript 15 protein	w
+REGION	human	Q96T68	SETDB2	Q96T68	18	86	Histone-lysine N-methyltransferase SETDB2 (EC 2.1.1.366) (Ch	w
+REGION	human	Q96T75	DSCR8	Q96T75	3	14	Down syndrome critical region protein 8 (Cancer/testis antig	w
+REGION	human	Q9BUJ2	HNRNPUL1	Q9BUJ2	34	361	Heterogeneous nuclear ribonucleoprotein U-like protein 1 (Ad	w
+REGION	human	Q9BWE0	REPIN1	Q9BWE0	7	149	DNA-binding protein REPIN1 (60 kDa origin-specific DNA-bindi	w
+REGION	human	Q9BXF3	CECR2	Q9BXF3	31	150	Chromatin remodeling regulator CECR2 (Cat eye syndrome criti	w
+REGION	human	Q9BXQ6	TMEM121B	Q9BXQ6	2	14	Transmembrane protein 121B (Cat eye syndrome critical region	w
+REGION	human	Q9BXW7	HDHD5	Q9BXW7	2	81	Haloacid dehalogenase-like hydrolase domain-containing 5 (Ca	w
+REGION	human	Q9BY27	DGCR6L	Q9BY27	21	86	Protein DGCR6L (DiGeorge syndrome critical region 6-like pro	w
+REGION	human	Q9BZE9	ASPSCR1	Q9BZE9	13	120	Tether containing UBX domain for GLUT4 (Alveolar soft part s	w
+REGION	human	Q9C0K7	STRADB	Q9C0K7	14	93	STE20-related kinase adapter protein beta (STRAD beta) (Amyo	w
+REGION	human	Q9GZT8	NIF3L1	Q9GZT8	1	193	NIF3-like protein 1 (Amyotrophic lateral sclerosis 2 chromos	w
+REGION	human	Q9H478	KCNQ1DN	Q9H478	0	11	KCNQ1 downstream neighbor protein (Beckwith-Wiedemann region	w
+REGION	human	Q9H8J5	MANSC1	Q9H8J5	48	194	MANSC domain-containing protein 1 (Loss of heterozygosity 12	w
+REGION	human	Q9NQG6	MIEF1	Q9NQG6	22	181	Mitochondrial dynamics protein MIEF1 (Mitochondrial dynamics	w
+REGION	human	Q9NZI8	IGF2BP1	Q9NZI8	25	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	w
+REGION	human	Q9NZK5	ADA2	Q9NZK5	3	41	Adenosine deaminase 2 (EC 3.5.4.4) (Cat eye syndrome critica	w
+REGION	human	Q9NZM4	BICRA	Q9NZM4	28	214	BRD4-interacting chromatin-remodeling complex-associated pro	w
+REGION	human	Q9NZM5	NOP53	Q9NZM5	62	545	Ribosome biogenesis protein NOP53 (Glioma tumor suppressor c	w
+REGION	human	Q9P243	ZFAT	Q9P243	4	54	Zinc finger protein ZFAT (Zinc finger gene in AITD susceptib	w
+REGION	human	Q9UHP6	RSPH14	Q9UHP6	12	157	Radial spoke head 14 homolog (Rhabdoid tumor deletion region	w
+REGION	human	Q9UKA8	RCAN3	Q9UKA8	8	73	Calcipressin-3 (Down syndrome candidate region 1-like protei	w
+REGION	human	Q9UN79	SOX13	Q9UN79	27	100	Transcription factor SOX-13 (Islet cell antigen 12) (SRY (Se	w
+REGION	human	Q9Y4P3	TBL2	Q9Y4P3	25	241	Transducin beta-like protein 2 (WS beta-transducin repeats p	w
+REGION	human	Q9Y6C7	LINC00312	Q9Y6C7	0	12	Putative uncharacterized protein encoded by LINC00312 (Loss 	w
+REGION	virus	A0A3G1T4B1	BHRF1	A0A3G1T4B1	9	81	Bcl-2 Bcl-2 homology region 1-3 domain-containing protein	w
+REGION	worm	A0A0K3AV89	nphp-2	A0A0K3AV89	1	24	ANK_REP_REGION domain-containing protein	w
+REGION	worm	A0A1N7SZG1	sox-4	A0A1N7SZG1	0	11	Sex-determining region Y protein	w
+REGION	worm	A0A2K5ATZ7	C14A11.6	A0A2K5ATZ7	0	1	ANK_REP_REGION domain-containing protein	w
+REGION	worm	A5A8P6	CELE_Y54G2A.12	A5A8P6	6	64	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	A5Z2V7	CELE_F02E9.10	A5Z2V7	5	62	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	A7DT40	CELE_F49D11.10	A7DT40	2	90	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	A9D4S6	syf-3	A9D4S6	12	87	TPR_REGION domain-containing protein	w
+REGION	worm	B1V898	poml-3	B1V898	4	6	SMP-30/Gluconolactonase/LRE-like region domain-containing pr	w
+REGION	worm	E0R7L2	CELE_Y111B2A.12	E0R7L2	1	6	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	G5EBJ4	mlt-4	G5EBJ4	1	13	ANK_REP_REGION domain-containing protein	w
+REGION	worm	G5EDN8	vab-19	G5EDN8	1	11	ANK_REP_REGION domain-containing protein	w
+REGION	worm	G5EEZ1	CELE_W09G3.7	G5EEZ1	0	17	Williams-Beuren syndrome chromosomal region 16 protein	w
+REGION	worm	G5EFD7	CELE_F46C5.9	G5EFD7	1	39	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	G5EFY6	sec-31	G5EFY6	3	47	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	O02097	snrp-40.2	O02097	9	62	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	O16318	C10B5.1	O16318	4	61	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	O16656	C03H5.5	O16656	0	89	TPR_REGION domain-containing protein	w
+REGION	worm	O17742	CELE_E03H4.8	O17742	0	9	Coatomer WD associated region domain-containing protein	w
+REGION	worm	O18152	CELE_T28D6.4	O18152	0	9	ANK_REP_REGION domain-containing protein	w
+REGION	worm	O44856	wdr-31	O44856	7	211	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	O44951	ttc-1	O44951	2	5	TPR_REGION domain-containing protein	w
+REGION	worm	O45087	dyci-1	O45087	1	57	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	O45398	CELE_F22G12.4	O45398	1	16	ANK_REP_REGION domain-containing protein	w
+REGION	worm	O62040	C08E8.2	O62040	1	11	Strictosidine synthase conserved region domain-containing pr	w
+REGION	worm	O62265	CELE_F57C2.5	O62265	1	11	Strictosidine synthase conserved region domain-containing pr	w
+REGION	worm	O62477	CELE_Y45F10D.7	O62477	5	114	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	P90757	che-11	P90757	6	47	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	P91867	thoc-3	P91867	4	41	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q17555	C01F1.6	Q17555	0	1	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q17583	mlt-2	Q17583	3	13	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q17872	npp-23	Q17872	0	43	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q18099	C18F10.7	Q18099	0	1	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q18403	swd-2.2	Q18403	0	68	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q18426	prx-5	Q18426	13	43	TPR_REGION domain-containing protein	w
+REGION	worm	Q18587	mtpn-1	Q18587	1	5	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q18888	aipr-1	Q18888	5	11	TPR_REGION domain-containing protein	w
+REGION	worm	Q18963	csa-1	Q18963	4	76	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q19520	ctf-4	Q19520	5	47	Minichromosome loss protein Mcl1 middle region domain-contai	w
+REGION	worm	Q20788	taf-7.1	Q20788	9	45	TAFII55 protein conserved region domain-containing protein	w
+REGION	worm	Q21115	sec-12	Q21115	2	8	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q21934	CELE_R11D1.1	Q21934	1	16	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q22015	CELE_R31.2	Q22015	0	7	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q22059	cdt-2	Q22059	5	34	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q22290	CELE_T07C4.3	Q22290	1	25	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q22437	CELE_T12G3.4	Q22437	0	11	Strictosidine synthase conserved region domain-containing pr	w
+REGION	worm	Q22554	ttc-17	Q22554	0	3	TPR_REGION domain-containing protein	w
+REGION	worm	Q22974	CELE_F45F2.10	Q22974	0	3	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q23595	CELE_ZK792.4	Q23595	1	25	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q86MI9	CELE_W05H9.4	Q86MI9	0	1	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q8MQB5	rmd-2	Q8MQB5	0	2	TPR_REGION domain-containing protein	w
+REGION	worm	Q8WQB4	tcab-1	Q8WQB4	0	13	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q93203	C11E4.6	Q93203	2	29	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q93349	swah-1	Q93349	3	26	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q93410	CELE_D2005.4	Q93410	0	1	TPR_REGION domain-containing protein	w
+REGION	worm	Q93758	swan-1	Q93758	1	17	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q93759	swan-2	Q93759	3	18	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q95PV7	tftc-3	Q95PV7	3	12	TPR_REGION domain-containing protein	w
+REGION	worm	Q95PW9	nck-1	Q95PW9	15	98	NCK (Non-Catalytic region of tyrosine Kinase) adaptor protei	w
+REGION	worm	Q95QI6	CELE_F26F4.12	Q95QI6	1	8	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q95XL8	chaf-2	Q95XL8	4	8	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q95XR3	CELE_Y39G10AR.9	Q95XR3	4	23	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q95ZS1	gfi-2	Q95ZS1	15	33	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q9BKR2	ttc-37	Q9BKR2	3	33	TPR_REGION domain-containing protein	w
+REGION	worm	Q9BL05	rbc-2	Q9BL05	2	31	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q9N4D2	CELE_Y75B7B.2	Q9N4D2	0	17	ANK_REP_REGION domain-containing protein	w
+REGION	worm	Q9N4T4	CELE_Y50C1A.2	Q9N4T4	1	12	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q9NAQ2	pwp-1	Q9NAQ2	2	14	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q9NEW8	taf-7.2	Q9NEW8	7	46	TAFII55 protein conserved region domain-containing protein	w
+REGION	worm	Q9TYQ4	CELE_H32C10.1	Q9TYQ4	0	2	Cat eye syndrome critical region protein 5	w
+REGION	worm	Q9U2Z4	CELE_Y106G6H.6	Q9U2Z4	0	1	TPR_REGION domain-containing protein	w
+REGION	worm	Q9XTS1	CELE_F47G4.4	Q9XTS1	1	6	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q9XUU8	CELE_K05C4.5	Q9XUU8	4	103	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	Q9XW00	ddl-3	Q9XW00	3	35	TPR_REGION domain-containing protein	w
+REGION	worm	Q9XWF9	CELE_Y54E5B.2	Q9XWF9	1	37	WD_REPEATS_REGION domain-containing protein	w
+REGION	worm	U4PBZ1	CELE_Y76B12C.6	U4PBZ1	5	78	TPR_REGION domain-containing protein	w
+REGION	zebrafish	Q6TH21	dgcr6	Q6TH21	1	4	DiGeorge syndrome critical region gene 6	w
+REGION	zebrafish	Q803C7	lmbr1l	Q803C7	0	2	Limb region 1 homolog-like protein	w
+REGION-1-BINDING	human	Q8N9N5	BANP	Q8N9N5	74	443	Protein BANP (BEN domain-containing protein 1) (Btg3-associa	w
+REGION-BINDING	human	Q9H8N7	ZNF395	Q9H8N7	180	479	Zinc finger protein 395 (HD-regulating factor 2) (HDRF-2) (H	w
+REGION-BINDING	human	Q9NR83	SLC2A4RG	Q9NR83	147	459	SLC2A4 regulator (GLUT4 enhancer factor) (GEF) (Huntington d	w
+REGION-CONTAINING	human	P49756	RBM25	P49756	69	467	RNA-binding protein 25 (Arg/Glu/Asp-rich protein of 120 kDa)	w
+REGION-CONTAINING	human	Q14498	RBM39	Q14498	189	1074	RNA-binding protein 39 (CAPER alpha) (CAPERalpha) (Hepatocel	w
+REGION-CONTAINING	human	Q86U06	RBM23	Q86U06	35	139	Probable RNA-binding protein 23 (CAPER beta) (CAPERbeta) (RN	w
+REGION-CONTAINING	human	Q96LT9	RNPC3	Q96LT9	43	318	RNA-binding region-containing protein 3 (RNA-binding motif p	w
+REGION-CONTAINING	human	Q9BX46	RBM24	Q9BX46	3	48	RNA-binding protein 24 (RNA-binding motif protein 24) (RNA-b	w
+REGION-CONTAINING	human	Q9H0Z9	RBM38	Q9H0Z9	10	66	RNA-binding protein 38 (CLL-associated antigen KW-5) (HSRNAS	w
+REGION-CONTAINING	zebrafish	F1Q8J0	rnpc3	F1Q8J0	25	222	RNA-binding region-containing protein 3	w
+REGION-FACTOR	human	Q14494	NFE2L1	Q14494	33	78	Endoplasmic reticulum membrane sensor NFE2L1 (Locus control 	w
+REGION-INTERACTING	yeast	P47068	BBC1	P47068	10	91	Myosin tail region-interacting protein MTI1	w
+REGION-RELATED	human	Q12979	ABR	Q12979	15	142	Active breakpoint cluster region-related protein	w
+REGION-RELATED	human	Q96JE7	SEC16B	Q96JE7	7	61	Protein transport protein Sec16B (Leucine zipper transcripti	w
+REGION-RELATED	zebrafish	E7F9C1	si:dkey-33c9.6	E7F9C1	0	1	Active breakpoint cluster region-related protein	w
+REGIONAL	human	A6NGB9	WIPF3	A6NGB9	13	47	WAS/WASL-interacting protein family member 3 (Corticosteroid	w
+REGIONS	human	P0DOY3	IGLC3	P0DOY3	85	302	Immunoglobulin lambda constant 3 (Ig lambda chain C region D	w
+REGL	human	P48304	REG1B	P48304	31	111		
+REGNASE	fly	FBgn0038769	Regnase-1	Q8T0D9	1	11	LD08718p (Regnase 1)	w
+REGNASE-1	fly	FBgn0038769	Regnase-1	Q8T0D9	1	11	LD08718p (Regnase 1)	
+REGNASE-1	human	Q5D1E8	ZC3H12A	Q5D1E8	13	88	Endoribonuclease ZC3H12A (EC 3.1.-.-) (Monocyte chemotactic 	w
+REGR	streptococcus-pneumoniae	Q8DR72	regR	Q8DR72	0	6	Transcription regulator, member of GalR family	
+REGRESSOR	human	P81172	HAMP	P81172	40	210	Hepcidin (Liver-expressed antimicrobial peptide 1) (LEAP-1) 	w
+REGU	fly	FBgn0029006	Smurf	Q9V853	19	71	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+REGU	human	Q9P2B2	PTGFRN	Q9P2B2	30	172	Prostaglandin F2 receptor negative regulator (CD9 partner 1)	w
+REGUCALCIN	fly	FBgn0030362	regucalcin	Q76NR6	61	463	Regucalcin, isoform D (EC 3.1.1.17)	w
+REGUCALCIN	fly	FBgn0030362	regucalcin	Q76NR6	61	463	Regucalcin, isoform D (EC 3.1.1.17)	w
+REGUCALCIN	human	Q15493	RGN	Q15493	2	56	Regucalcin (RC) (Gluconolactonase) (GNL) (EC 3.1.1.17) (Sene	w
+REGUCALCIN	human	Q96JE7	SEC16B	Q96JE7	7	61	Protein transport protein Sec16B (Leucine zipper transcripti	w
+REGUCALCIN	zebrafish	Q6TLF6	rgn	Q6TLF6	1	1	Regucalcin	w
+REGUL	human	O60264	SMARCA5	O60264	73	676	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGUL	human	P28370	SMARCA1	P28370	43	373	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGUL	human	Q8TAQ2	SMARCC2	Q8TAQ2	45	479	SWI/SNF complex subunit SMARCC2 (BRG1-associated factor 170)	w
+REGUL	human	Q8WYR1	PIK3R5	Q8WYR1	26	185	Phosphoinositide 3-kinase regulatory subunit 5 (PI3-kinase r	w
+REGUL	human	Q92922	SMARCC1	Q92922	47	522	SWI/SNF complex subunit SMARCC1 (BRG1-associated factor 155)	w
+REGULAR	fly	FBgn0267792	rgr	E1JH10	31	364	Regular, isoform C	w
+REGULAT	human	P22792	CPN2	P22792	25	234	Carboxypeptidase N subunit 2 (Carboxypeptidase N 83 kDa chai	w
+REGULAT	human	Q9H2M9	RAB3GAP2	Q9H2M9	14	154	Rab3 GTPase-activating protein non-catalytic subunit (RGAP-i	w
+REGULATING	fly	FBgn0030654	CG15643	Q9VXT6	1	3	SREBP regulating gene protein	w
+REGULATING	human	Q6NSJ0	MYORG	Q6NSJ0	6	85	Alpha-galactosidase MYORG (EC 3.2.1.22) (Myogenesis regulati	w
+REGULATING	human	Q86UR5	RIMS1	Q86UR5	23	63	Regulating synaptic membrane exocytosis protein 1 (Rab-3-int	w
+REGULATING	human	Q8NBN3	TMEM87A	Q8NBN3	15	218	Golgi-pH regulating cation channel (Elkin1)	w
+REGULATING	human	Q9H426	RIMS4	Q9H426	10	57	Regulating synaptic membrane exocytosis protein 4 (RIM4 gamm	w
+REGULATING	human	Q9H741	SPRING1	Q9H741	20	261	SREBP regulating gene protein (SREBF pathway regulator in Go	w
+REGULATING	human	Q9UJD0	RIMS3	Q9UJD0	8	49	Regulating synaptic membrane exocytosis protein 3 (Nim3) (RI	w
+REGULATING	human	Q9UQ26	RIMS2	Q9UQ26	15	85	Regulating synaptic membrane exocytosis protein 2 (Rab-3-int	w
+REGULATING	worm	Q9TW45	par-1	Q9TW45	33	71	Serine/threonine-protein kinase par-1 (EC 2.7.11.1) (Microtu	w
+REGULATING	zebrafish	A0A8M1N590	adtrp1	A0A8M1N590	0	2	Androgen dependent TFPI regulating protein 1	w
+REGULATING	zebrafish	A0A8M9PNB2	rims2a	A0A8M9PNB2	0	30	Regulating synaptic membrane exocytosis protein 2 isoform X4	w
+REGULATING	zebrafish	A5PMY1	rims3	A5PMY1	0	9	Regulating synaptic membrane exocytosis 3	w
+REGULATING	zebrafish	E7F2S0	rims4	E7F2S0	0	9	Regulating synaptic membrane exocytosis 4	w
+REGULATING	zebrafish	Q503V3	spring	Q503V3	1	1	SREBP regulating gene protein	w
+REGULATION	human	Q5VT52	RPRD2	Q5VT52	79	345	Regulation of nuclear pre-mRNA domain-containing protein 2	w
+REGULATION	human	Q86WV5	TEN1	Q86WV5	8	188	CST complex subunit TEN1 (Protein telomeric pathways with ST	w
+REGULATION	human	Q8N5G0	SMIM20	Q8N5G0	50	138	Small integral membrane protein 20 (Mitochondrial translatio	w
+REGULATION	human	Q96P16	RPRD1A	Q96P16	45	223	Regulation of nuclear pre-mRNA domain-containing protein 1A 	w
+REGULATION	human	Q9C091	GREB1L	Q9C091	8	134	GREB1-like protein (Growth regulation by estrogen in breast 	w
+REGULATION	human	Q9GZY4	COA1	Q9GZY4	11	118	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	w
+REGULATION	human	Q9NQG5	RPRD1B	Q9NQG5	32	247	Regulation of nuclear pre-mRNA domain-containing protein 1B 	w
+REGULATION	human	Q9Y2R0	COA3	Q9Y2R0	65	194	Cytochrome c oxidase assembly factor 3 homolog, mitochondria	w
+REGULATION	human	Q9Y4R8	TELO2	Q9Y4R8	35	448	Telomere length regulation protein TEL2 homolog (Protein clk	w
+REGULATION	worm	O45962	rle-1	O45962	0	2	Regulation of longevity by E3 ubiquitin-protein ligase	w
+REGULATION	worm	Q95YE9	clk-2	Q95YE9	1	17	Telomere length regulation protein clk-2	w
+REGULATION	yeast	P05085	ARG81	P05085	2	20	Arginine metabolism regulation protein II	w
+REGULATION	yeast	P07249	ARG80	P07249	2	14	Arginine metabolism regulation protein I	w
+REGULATION	yeast	P12611	WHI2	P12611	5	19	Growth regulation protein	w
+REGULATION	yeast	P23493	MBR1	P23493	0	6	Mitochondrial biogenesis regulation protein 1	w
+REGULATION	yeast	P32450	AUA1	P32450	0	2	Ammonia regulation of amino acid uptake protein	w
+REGULATION	yeast	P32607	RTG1	P32607	5	17	Retrograde regulation protein 1	w
+REGULATION	yeast	P32608	RTG2	P32608	1	42	Retrograde regulation protein 2	w
+REGULATION	yeast	P38110	TEL1	P38110	1	7	Serine/threonine-protein kinase TEL1 (EC 2.7.11.1) (ATM homo	w
+REGULATION	yeast	P38165	RTG3	P38165	3	39	Retrograde regulation protein 3	w
+REGULATION	yeast	P40893	REE1	P40893	0	6	Regulation of enolase protein 1	w
+REGULATION	yeast	P53038	TEL2	P53038	1	23	Telomere length regulation protein TEL2	w
+REGULATION	yeast	Q07921	TEN1	Q07921	2	8	Telomere length regulation protein TEN1	w
+REGULATION	yeast	Q12050	ELG1	Q12050	4	35	Telomere length regulation protein ELG1	w
+REGULATION	zebrafish	A0A8N7TCS9	rprd2b	A0A8N7TCS9	7	36	Regulation of nuclear pre-mRNA domain-containing protein 2	w
+REGULATION	zebrafish	Q7T006	telo2	Q7T006	1	32	Telomere length regulation protein TEL2 homolog	w
+REGULATION	zebrafish	Q7ZUK9	rprd1b	Q7ZUK9	5	40	Regulation of nuclear pre-mRNA domain-containing 1B	w
+REGULATION-ASSOCIATED	human	Q8NEF9	SRFBP1	Q8NEF9	47	255	Serum response factor-binding protein 1 (SRF-dependent trans	w
+REGULATION-ASSOCIATED	human	Q96KG9	SCYL1	Q96KG9	55	220	N-terminal kinase-like protein (Coated vesicle-associated ki	w
+REGULATION-ASSOCIATED	worm	O16657	C03H5.3	O16657	0	2	SRF-dependent transcription regulation-associated protein	w
+REGULATO	human	Q8TF01	PNISR	Q8TF01	20	163	Arginine/serine-rich protein PNISR (PNN-interacting serine/a	w
+REGULATOR	fly	FBgn0000662	fl(2)d	Q9Y091	22	140	Pre-mRNA-splicing regulator female-lethal(2)D (dFL(2)D)	w
+REGULATOR	fly	FBgn0002638	Rcc1	P25171	16	85	Regulator of chromosome condensation (Chromatin-binding prot	w
+REGULATOR	fly	FBgn0002774	mle	P24785	13	246	Dosage compensation regulator mle (EC 3.6.4.13) (Protein mal	w
+REGULATOR	fly	FBgn0003028	ovo	P51521	25	129	Transcriptional regulator ovo (Transcriptional repressor sha	w
+REGULATOR	fly	FBgn0003302	rux	P50445	9	74	Cell cycle negative regulator roughex	w
+REGULATOR	fly	FBgn0017550	Rga	Q94547	54	482	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
+REGULATOR	fly	FBgn0017551	Rca1	Q9VM76	43	234	GH14043p (Regulator of cyclin A1)	w
+REGULATOR	fly	FBgn0020278	loco	Q9VCX1	8	17	Regulator of G-protein signaling loco (RGS) (Locomotion defe	w
+REGULATOR	fly	FBgn0020407	asun	Q9VEX5	7	38	Protein asunder (Cell cycle regulator Mat89Bb) (Integrator c	w
+REGULATOR	fly	FBgn0021800	Reph	Q8MRQ2	3	3	GH05923p (Regulator of eph expression, isoform B)	w
+REGULATOR	fly	FBgn0024291	Sirt1	Q9VK34	115	533	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
+REGULATOR	fly	FBgn0024941	RSG7	Q9VXA3	13	31	LP21163p (Regulator of G-protein signaling 7, isoform A) (Re	w
+REGULATOR	fly	FBgn0025638	Roc1a	B7Z114	13	260	Regulator of cullins 1a, isoform C	w
+REGULATOR	fly	FBgn0029133	REG	Q9V3P3	2	91	LD45860p (Proteasome regulator dREG) (Proteasome regulator g	w
+REGULATOR	fly	FBgn0029798	Rtel1	Q9W484	5	74	Regulator of telomere elongation helicase 1 homolog (EC 3.6.	w
+REGULATOR	fly	FBgn0029816	CG12729	Q9W466	1	5	PI31 proteasome regulator N-terminal domain-containing prote	w
+REGULATOR	fly	FBgn0030354	Upf1	Q9VYS3	12	161	Regulator of nonsense transcripts 1 homolog (EC 3.6.4.12) (E	w
+REGULATOR	fly	FBgn0030623	PPYR1	Q9VXX1	47	373	AT19571p (Protein phosphatase Y regulator 1)	w
+REGULATOR	fly	FBgn0030685	Graf	X2JDY8	2	49	Rho GTPase-activating protein Graf (GTPase regulator associa	w
+REGULATOR	fly	FBgn0030800	Nprl2	Q9VXA0	42	463	GATOR complex protein NPRL2 (Nitrogen permease regulator 2-l	w
+REGULATOR	fly	FBgn0031077	THADA	Q9VWB9	0	3	tRNA (32-2'-O)-methyltransferase regulator THADA (Thyroid ad	w
+REGULATOR	fly	FBgn0031655	Marcal1	Q9VMX6	3	31	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	fly	FBgn0032157	Etl1	Q9VL72	2	19	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	fly	FBgn0033085	CG15908	Q4QPU3	21	246	Synaptic plasticity regulator PANTS (Plasticity-associated n	w
+REGULATOR	fly	FBgn0033995	GPHR	Q3ZAN1	0	7	Golgi pH regulator (LD13915p)	w
+REGULATOR	fly	FBgn0034740	nsr	Q9W224	4	44	Novel spermatogenesis regulator, isoform A (Novel spermatoge	w
+REGULATOR	fly	FBgn0035703	Bulli	Q9VRX1	2	3	Regulator of MON1-CCZ1 complex (Protein Bulli)	w
+REGULATOR	fly	FBgn0036397	Nprl3	Q9VUB4	11	85	GATOR complex protein NPRL3 (Nitrogen permease regulator 3-l	w
+REGULATOR	fly	FBgn0039338	XNP	Q9GQN5	12	172	Transcriptional regulator ATRX homolog (EC 3.6.4.12) (ATP-de	w
+REGULATOR	fly	FBgn0039972	Marf1	Q7KWG9	2	46	Meiosis regulator and mRNA stability factor 1, isoform D (Me	w
+REGULATOR	fly	FBgn0040291	Roc1b	Q9NHX0	32	521	RING-box protein 1B (Regulator of cullins 1b)	w
+REGULATOR	fly	FBgn0040344	Lztr1	M9PGD0	0	3	Leucine zipper like transcription regulator 1, isoform D	w
+REGULATOR	fly	FBgn0044020	Roc2	Q7JWH5	16	100	MIP07211p (RE61847p) (Regulator of cullins 2, isoform A) (Re	w
+REGULATOR	fly	FBgn0051694	Ifrd1	Q9VQI5	11	139	Interferon-related developmental regulator 1 (LP04564p)	w
+REGULATOR	fly	FBgn0053172	CG33172	Q86B53	2	14	tRNA (34-2'-O)-methyltransferase regulator WDR6	w
+REGULATOR	fly	FBgn0053288	CG33288	Q7KTW3	1	15	Regulator of chromosome condensation	w
+REGULATOR	fly	FBgn0062440	EMRE	Q7JX57	1	12	Essential MCU regulator, mitochondrial	w
+REGULATOR	fly	FBgn0263026	CG43321	M9NEV9	1	8	Essential MCU regulator, mitochondrial (Single-pass membrane	w
+REGULATOR	human	A0A087WZ82	FXYD6-FXYD2	A0A087WZ82	2	26	FXYD domain-containing ion transport regulator	w
+REGULATOR	human	A0A0U1RRE5	NBDY	A0A0U1RRE5	4	44	Negative regulator of P-body association (P-body dissociatin	w
+REGULATOR	human	A0A2R8Y7D0	TINCR	A0A2R8Y7D0	3	15	Ubiquitin domain-containing protein TINCR (Placenta-specific	w
+REGULATOR	human	A1A4S6	ARHGAP10	A1A4S6	46	178	Rho GTPase-activating protein 10 (GTPase regulator associate	w
+REGULATOR	human	A5PLK6	RGSL1	A5PLK6	3	44	Regulator of G protein signaling protein-like	w
+REGULATOR	human	A5YKK6	CNOT1	A5YKK6	51	476	CCR4-NOT transcription complex subunit 1 (CCR4-associated fa	w
+REGULATOR	human	A6H8Y1	BDP1	A6H8Y1	103	876	Transcription factor TFIIIB component B'' homolog (Transcrip	w
+REGULATOR	human	A6NF83	NUPR2	A6NF83	4	45	Nuclear protein 2 (Nuclear transcriptional regulator 1-like 	w
+REGULATOR	human	A6NGG8	PCARE	A6NGG8	5	40	Photoreceptor cilium actin regulator	w
+REGULATOR	human	A6NNV3	SPDYE16	A6NNV3	8	14	Speedy protein E16 (Speedy/RINGO cell cycle regulator family	w
+REGULATOR	human	A7KAX9	ARHGAP32	A7KAX9	46	236	Rho GTPase-activating protein 32 (Brain-specific Rho GTPase-	w
+REGULATOR	human	A8K010	LINC00473	A8K010	0	2	Putative transcriptional regulator encoded by LINC00473	w
+REGULATOR	human	A8K7I4	CLCA1	A8K7I4	0	14	Calcium-activated chloride channel regulator 1 (EC 3.4.-.-) 	w
+REGULATOR	human	A8MVW5	HEPACAM2	A8MVW5	12	94	HEPACAM family member 2 (Mitotic kinetics regulator)	w
+REGULATOR	human	A8MWY0	ELAPOR2	A8MWY0	8	62	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+REGULATOR	human	B7ZAQ6	GPHRA	B7ZAQ6	9	140	Golgi pH regulator A (Protein GPR89A) (Putative MAPK-activat	w
+REGULATOR	human	C0HLU2	ZNF689	C0HLU2	0	17	Transcriptional regulator SEHBP (Short ORF-encoded histone-b	w
+REGULATOR	human	C9JXX5	FREY1	C9JXX5	1	32	Protein Frey 1 (Frey regulator of sperm-oocyte fusion 1) (FR	w
+REGULATOR	human	I3L273	GFY	I3L273	8	112	Golgi-associated olfactory signaling regulator (Golgi protei	w
+REGULATOR	human	O00168	FXYD1	O00168	22	162	Phospholemman (FXYD domain-containing ion transport regulato	w
+REGULATOR	human	O00192	ARVCF	O00192	58	154	Splicing regulator ARVCF (Armadillo repeat protein deleted i	w
+REGULATOR	human	O00458	IFRD1	O00458	15	217	Interferon-related developmental regulator 1 (Nerve growth f	w
+REGULATOR	human	O14776	TCERG1	O14776	44	294	Transcription elongation regulator 1 (TATA box-binding prote	w
+REGULATOR	human	O14867	BACH1	O14867	51	167	Transcription regulator protein BACH1 (BTB and CNC homolog 1	w
+REGULATOR	human	O14921	RGS13	O14921	32	129	Regulator of G protein signaling 13 (RGS13)	w
+REGULATOR	human	O14924	RGS12	O14924	93	263	Regulator of G protein signaling 12 (RGS12)	w
+REGULATOR	human	O15492	RGS16	O15492	38	123	Regulator of G protein signaling 16 (RGS16) (A28-RGS14P) (Re	w
+REGULATOR	human	O15519	CFLAR	O15519	34	264	CASP8 and FADD-like apoptosis regulator (Caspase homolog) (C	w
+REGULATOR	human	O15539	RGS5	O15539	43	159	Regulator of G protein signaling 5 (RGS5)	w
+REGULATOR	human	O43566	RGS14	O43566	32	80	Regulator of G protein signaling 14 (RGS14)	w
+REGULATOR	human	O43660	PLRG1	O43660	51	384	Pleiotropic regulator 1	w
+REGULATOR	human	O43663	PRC1	O43663	127	1251	Protein regulator of cytokinesis 1	w
+REGULATOR	human	O43665	RGS10	O43665	40	167	Regulator of G protein signaling 10 (RGS10)	w
+REGULATOR	human	O43918	AIRE	O43918	38	173	Autoimmune regulator (Autoimmune polyendocrinopathy candidia	w
+REGULATOR	human	O60264	SMARCA5	O60264	73	676	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	O60667	FCMR	O60667	24	78	Immunoglobulin mu Fc receptor (IgM FcR) (Fas apoptotic inhib	w
+REGULATOR	human	O60759	CYTIP	O60759	26	68	Cytohesin-interacting protein (Cytohesin binder and regulato	w
+REGULATOR	human	O75167	PHACTR2	O75167	13	48	Phosphatase and actin regulator 2	w
+REGULATOR	human	O75398	DEAF1	O75398	79	387	Deformed epidermal autoregulatory factor 1 homolog (Nuclear 	w
+REGULATOR	human	O75916	RGS9	O75916	21	92	Regulator of G protein signaling 9 (RGS9)	w
+REGULATOR	human	O76081	RGS20	O76081	50	201	Regulator of G protein signaling 20 (RGS20) (Gz-selective GT	w
+REGULATOR	human	O94810	RGS11	O94810	25	226	Regulator of G protein signaling 11 (RGS11)	w
+REGULATOR	human	O94874	UFL1	O94874	79	937	E3 UFM1-protein ligase 1 (EC 2.3.2.-) (E3 UFM1-protein trans	w
+REGULATOR	human	O95199	RCBTB2	O95199	6	85	RCC1 and BTB domain-containing protein 2 (Chromosome condens	w
+REGULATOR	human	O95429	BAG4	O95429	55	327	BAG family molecular chaperone regulator 4 (BAG-4) (Bcl-2-as	w
+REGULATOR	human	O95758	PTBP3	O95758	29	401	Polypyrimidine tract-binding protein 3 (Regulator of differe	w
+REGULATOR	human	O95816	BAG2	O95816	51	689	BAG family molecular chaperone regulator 2 (BAG-2) (Bcl-2-as	w
+REGULATOR	human	O95817	BAG3	O95817	128	706	BAG family molecular chaperone regulator 3 (BAG-3) (Bcl-2-as	w
+REGULATOR	human	P0CG08	GPHRB	P0CG08	4	51	Golgi pH regulator B (Protein GPR89B)	w
+REGULATOR	human	P0DN84	STRIT1	P0DN84	27	51	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+REGULATOR	human	P10415	BCL2	P10415	60	559	Apoptosis regulator Bcl-2	w
+REGULATOR	human	P11308	ERG	P11308	138	582	Transcriptional regulator ERG (Transforming protein ERG)	w
+REGULATOR	human	P13569	CFTR	P13569	41	1221	Cystic fibrosis transmembrane conductance regulator (CFTR) (	w
+REGULATOR	human	P18754	RCC1	P18754	42	324	Regulator of chromosome condensation (Cell cycle regulatory 	w
+REGULATOR	human	P27695	APEX1	P27695	110	1504	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	w
+REGULATOR	human	P28370	SMARCA1	P28370	43	373	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	P37275	ZEB1	P37275	49	286	Zinc finger E-box-binding homeobox 1 (NIL-2-A zinc finger pr	w
+REGULATOR	human	P41220	RGS2	P41220	54	241	Regulator of G protein signaling 2 (RGS2) (Cell growth-inhib	w
+REGULATOR	human	P46100	ATRX	P46100	50	319	Chromatin remodeler ATRX (EC 3.6.4.-) (Transcriptional regul	w
+REGULATOR	human	P46379	BAG6	P46379	80	439	Large proline-rich protein BAG6 (BAG family molecular chaper	w
+REGULATOR	human	P48539	PCP4	P48539	58	235	Calmodulin regulator protein PCP4 (Brain-specific polypeptid	w
+REGULATOR	human	P49758	RGS6	P49758	13	230	Regulator of G protein signaling 6 (RGS6) (S914)	w
+REGULATOR	human	P49795	RGS19	P49795	46	257	Regulator of G protein signaling 19 (RGS19) (G-alpha-interac	w
+REGULATOR	human	P49796	RGS3	P49796	78	323	Regulator of G protein signaling 3 (RGP3) (RGS3)	w
+REGULATOR	human	P49798	RGS4	P49798	33	100	Regulator of G protein signaling 4 (RGP4) (RGS4)	w
+REGULATOR	human	P49802	RGS7	P49802	28	213	Regulator of G protein signaling 7 (RGS7)	w
+REGULATOR	human	P51531	SMARCA2	P51531	35	399	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	P51532	SMARCA4	P51532	39	544	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	P53805	RCAN1	P53805	7	84	Calcipressin-1 (Adapt78) (Down syndrome critical region prot	w
+REGULATOR	human	P54710	FXYD2	P54710	34	194	Sodium/potassium-transporting ATPase subunit gamma (Na(+)/K(	w
+REGULATOR	human	P57052	RBM11	P57052	34	254	Splicing regulator RBM11 (RNA-binding motif protein 11)	w
+REGULATOR	human	P57771	RGS8	P57771	27	75	Regulator of G protein signaling 8 (RGS8)	w
+REGULATOR	human	P58549	FXYD7	P58549	24	140	FXYD domain-containing ion transport regulator 7	w
+REGULATOR	human	P58550	FXYD6P3	P58550	9	19	Putative FXYD domain-containing ion transport regulator 8	w
+REGULATOR	human	P59103	DAOA	P59103	0	32	D-amino acid oxidase regulator (Protein G72)	w
+REGULATOR	human	P59646	FXYD4	P59646	18	96	FXYD domain-containing ion transport regulator 4	w
+REGULATOR	human	P61289	PSME3	P61289	4	382	Proteasome activator complex subunit 3 (11S regulator comple	w
+REGULATOR	human	Q06323	PSME1	Q06323	12	234	Proteasome activator complex subunit 1 (11S regulator comple	w
+REGULATOR	human	Q07812	BAX	Q07812	12	150	Apoptosis regulator BAX (Bcl-2-like protein 4) (Bcl2-L-4)	w
+REGULATOR	human	Q07817	BCL2L1	Q07817	51	330	Bcl-2-like protein 1 (Bcl2-L-1) (Apoptosis regulator Bcl-X)	w
+REGULATOR	human	Q08116	RGS1	Q08116	38	198	Regulator of G protein signaling 1 (RGS1) (B-cell activation	w
+REGULATOR	human	Q0VG73	RDUR	Q0VG73	0	6	Putative protein RDUR (RIG-I dependent antiviral response re	w
+REGULATOR	human	Q12824	SMARCB1	Q12824	92	1049	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	Q12894	IFRD2	Q12894	11	232	Interferon-related developmental regulator 2 (Protein SKMC15	w
+REGULATOR	human	Q12980	NPRL3	Q12980	24	132	GATOR1 complex protein NPRL3 (-14 gene protein) (Alpha-globi	w
+REGULATOR	human	Q13488	TCIRG1	Q13488	13	183	V-type proton ATPase 116 kDa subunit a 3 (V-ATPase 116 kDa s	w
+REGULATOR	human	Q14140	SERTAD2	Q14140	16	52	SERTA domain-containing protein 2 (Transcriptional regulator	w
+REGULATOR	human	Q14206	RCAN2	Q14206	10	57	Calcipressin-2 (Down syndrome candidate region 1-like 1) (My	w
+REGULATOR	human	Q14397	GCKR	Q14397	2	71	Glucokinase regulatory protein (GKRP) (Glucokinase regulator	w
+REGULATOR	human	Q14527	HLTF	Q14527	7	234	DNA-dependent ATPase/E3 ubiquitin-protein ligase HLTF (EC 2.	w
+REGULATOR	human	Q14802	FXYD3	Q14802	15	115	FXYD domain-containing ion transport regulator 3 (Chloride c	w
+REGULATOR	human	Q14CM0	FRMPD4	Q14CM0	65	278	FERM and PDZ domain-containing protein 4 (PDZ domain-contain	w
+REGULATOR	human	Q14CN2	CLCA4	Q14CN2	0	38	Calcium-activated chloride channel regulator 4 (EC 3.4.-.-) 	w
+REGULATOR	human	Q15007	WTAP	Q15007	60	292	Pre-mRNA-splicing regulator WTAP (Female-lethal(2)D homolog)	w
+REGULATOR	human	Q15041	ARL6IP1	Q15041	11	514	ADP-ribosylation factor-like protein 6-interacting protein 1	w
+REGULATOR	human	Q15390	MTFR1	Q15390	20	106	Mitochondrial fission regulator 1 (Chondrocyte protein with 	w
+REGULATOR	human	Q16611	BAK1	Q16611	15	159	Bcl-2 homologous antagonist/killer (Apoptosis regulator BAK)	w
+REGULATOR	human	Q19T08	ECSCR	Q19T08	40	137	Endothelial cell-specific chemotaxis regulator (Apoptosis re	w
+REGULATOR	human	Q2M5E4	RGS21	Q2M5E4	29	133	Regulator of G protein signaling 21 (RGS21)	w
+REGULATOR	human	Q2TAL8	QRICH1	Q2TAL8	36	194	Transcriptional regulator QRICH1 (Glutamine-rich protein 1)	w
+REGULATOR	human	Q3YBR2	TBRG1	Q3YBR2	15	63	Transforming growth factor beta regulator 1 (Nuclear interac	w
+REGULATOR	human	Q495M9	USH1G	Q495M9	16	65	pre-mRNA splicing regulator USH1G (Scaffold protein containi	w
+REGULATOR	human	Q5BLP8	NICOL1	Q5BLP8	4	17	NELL2-interacting cell ontogeny regulator 1 (NELL2-interacti	w
+REGULATOR	human	Q5RKV6	EXOSC6	Q5RKV6	20	231	Exosome complex component MTR3 (Exosome component 6) (mRNA t	w
+REGULATOR	human	Q5SV97	PERM1	Q5SV97	7	35	PGC-1 and ERR-induced regulator in muscle protein 1 (PPARGC1	w
+REGULATOR	human	Q5TKA1	LIN9	Q5TKA1	113	722	Protein lin-9 homolog (HuLin-9) (hLin-9) (Beta subunit-assoc	w
+REGULATOR	human	Q5VTD9	GFI1B	Q5VTD9	54	482	Zinc finger protein Gfi-1b (Growth factor independent protei	w
+REGULATOR	human	Q5VWI1	TCERG1L	Q5VWI1	137	384	Transcription elongation regulator 1-like protein	w
+REGULATOR	human	Q5VZK9	CARMIL1	Q5VZK9	16	157	F-actin-uncapping protein LRRC16A (CARMIL homolog) (Capping 	w
+REGULATOR	human	Q69YL0	NCBP2AS2	Q69YL0	4	39	Protein NCBP2AS2 (Hypoxia-induced angiogenesis regulator) (N	w
+REGULATOR	human	Q6F5E8	CARMIL2	Q6F5E8	37	91	Capping protein, Arp2/3 and myosin-I linker protein 2 (Cappi	w
+REGULATOR	human	Q6IQ49	SDE2	Q6IQ49	39	276	Splicing regulator SDE2 (Replication stress response regulat	w
+REGULATOR	human	Q6MZT1	RGS7BP	Q6MZT1	13	108	Regulator of G protein signaling 7-binding protein (R7 famil	w
+REGULATOR	human	Q6NSI8	SANBR	Q6NSI8	9	26	SANT and BTB domain regulator of class switch recombination 	w
+REGULATOR	human	Q6P444	MTFR2	Q6P444	16	88	Mitochondrial fission regulator 2 (DUF729 domain-containing 	w
+REGULATOR	human	Q6P5X5	C22orf39	Q6P5X5	10	96	Synaptic plasticity regulator PANTS (Plasticity-associated n	w
+REGULATOR	human	Q6PI77	GPRASP3	Q6PI77	11	66	G protein-coupled receptor associated sorting protein 3 (Pro	w
+REGULATOR	human	Q6STE5	SMARCD3	Q6STE5	89	553	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	Q6T4R5	NHS	Q6T4R5	35	154	Actin remodeling regulator NHS (Congenital cataracts and den	w
+REGULATOR	human	Q6UX34	SNORC	Q6UX34	10	86	Protein SNORC (Secondary ossification center-associated regu	w
+REGULATOR	human	Q6UXG2	ELAPOR1	Q6UXG2	4	23	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+REGULATOR	human	Q6YHU6	THADA	Q6YHU6	2	129	tRNA (32-2'-O)-methyltransferase regulator THADA (Gene induc	w
+REGULATOR	human	Q6ZN01	MAMSTR	Q6ZN01	18	70	MEF2-activating motif and SAP domain-containing transcriptio	w
+REGULATOR	human	Q6ZNE5	ATG14	Q6ZNE5	47	173	Beclin 1-associated autophagy-related key regulator (Barkor)	w
+REGULATOR	human	Q6ZNX1	SHLD3	Q6ZNX1	5	19	Shieldin complex subunit 3 (REV7-interacting novel NHEJ regu	w
+REGULATOR	human	Q6ZS17	RIPOR1	Q6ZS17	24	108	Rho family-interacting cell polarization regulator 1	w
+REGULATOR	human	Q6ZS82	RGS9BP	Q6ZS82	3	51	Regulator of G protein signaling 9-binding protein (RGS9-anc	w
+REGULATOR	human	Q6ZTI6	RFLNA	Q6ZTI6	1	9	Refilin-A (Regulator of filamin protein A) (RefilinA)	w
+REGULATOR	human	Q6ZTU2	EP400P1	Q6ZTU2	1	13	Putative chromatin regulator EP400P1 (EP400 N-terminal-like)	w
+REGULATOR	human	Q6ZU35	CRACD	Q6ZU35	17	65	Capping protein-inhibiting regulator of actin dynamics (Canc	w
+REGULATOR	human	Q6ZUX3	TOGARAM2	Q6ZUX3	2	40	TOG array regulator of axonemal microtubules protein 2 (Cres	w
+REGULATOR	human	Q6ZWJ8	KCP	Q6ZWJ8	0	4	Kielin/chordin-like protein (Cysteine-rich BMP regulator 2) 	w
+REGULATOR	human	Q6ZWK4	RHEX	Q6ZWK4	10	70	Regulator of hemoglobinization and erythroid cell expansion 	w
+REGULATOR	human	Q75VX8	GAREM2	Q75VX8	11	80	GRB2-associated and regulator of MAPK protein 2 (GRB2-associ	w
+REGULATOR	human	Q7Z2Z1	TICRR	Q7Z2Z1	153	960	Treslin (TopBP1-interacting checkpoint and replication regul	w
+REGULATOR	human	Q7Z3B1	NEGR1	Q7Z3B1	28	225	Neuronal growth regulator 1 (IgLON family member 4)	w
+REGULATOR	human	Q86T24	ZBTB33	Q86T24	56	237	Transcriptional regulator Kaiso (Zinc finger and BTB domain-	w
+REGULATOR	human	Q86TL2	STIMATE	Q86TL2	2	36	Store-operated calcium entry regulator STIMATE (STIM-activat	w
+REGULATOR	human	Q86V20	SHLD2	Q86V20	8	90	Shieldin complex subunit 2 (Protein FAM35A) (RINN1-REV7-inte	w
+REGULATOR	human	Q86VR2	RETREG3	Q86VR2	23	279	Reticulophagy regulator 3	w
+REGULATOR	human	Q86WS4	REDIC1	Q86WS4	4	15	Regulator of DNA class I crossover intermediates 1	w
+REGULATOR	human	Q86WX3	RPS19BP1	Q86WX3	25	238	Active regulator of SIRT1 (40S ribosomal protein S19-binding	w
+REGULATOR	human	Q86X95	CIRSR	Q86X95	52	435	Corepressor of RBPJ and splicing regulator (CBF1-interacting	w
+REGULATOR	human	Q86YC3	NRROS	Q86YC3	21	122	Transforming growth factor beta activator LRRC33 (Leucine-ri	w
+REGULATOR	human	Q8IUZ0	LRRC49	Q8IUZ0	25	162	Leucine-rich repeat-containing protein 49 (Centriolar satell	w
+REGULATOR	human	Q8IX12	CCAR1	Q8IX12	27	257	Cell division cycle and apoptosis regulator protein 1 (Cell 	w
+REGULATOR	human	Q8IXB3	TRARG1	Q8IXB3	32	166	Trafficking regulator of GLUT4 1 (Dispanin subfamily B membe	w
+REGULATOR	human	Q8IYI0	SHLD1	Q8IYI0	7	40	Shieldin complex subunit 1 (RINN1-REV7-interacting novel NHE	w
+REGULATOR	human	Q8IZ16	SPACDR	Q8IZ16	2	19	Sperm acrosome developmental regulator	w
+REGULATOR	human	Q8IZ20	ZNF683	Q8IZ20	25	355	Tissue-resident T-cell transcription regulator protein ZNF68	w
+REGULATOR	human	Q8IZ21	PHACTR4	Q8IZ21	19	129	Phosphatase and actin regulator 4	w
+REGULATOR	human	Q8N163	CCAR2	Q8N163	32	357	Cell cycle and apoptosis regulator protein 2 (Cell division 	w
+REGULATOR	human	Q8N3F0	MTURN	Q8N3F0	16	130	Maturin (Maturin neural progenitor differentiation regulator	w
+REGULATOR	human	Q8N490	PNKD	Q8N490	18	167	Probable thioesterase PNKD (EC 3.1.2.-) (Myofibrillogenesis 	w
+REGULATOR	human	Q8N4Y2	CRACR2B	Q8N4Y2	15	79	EF-hand calcium-binding domain-containing protein 4A (Calciu	w
+REGULATOR	human	Q8N5I3	KCNRG	Q8N5I3	9	155	Potassium channel regulatory protein (Potassium channel regu	w
+REGULATOR	human	Q8N5W9	RFLNB	Q8N5W9	1	23	Refilin-B (Regulator of filamin protein B) (RefilinB)	w
+REGULATOR	human	Q8N653	LZTR1	Q8N653	29	289	Leucine-zipper-like transcriptional regulator 1 (LZTR-1)	w
+REGULATOR	human	Q8N8U9	BMPER	Q8N8U9	9	115	BMP-binding endothelial regulator protein (Bone morphogeneti	w
+REGULATOR	human	Q8NC44	RETREG2	Q8NC44	15	116	Reticulophagy regulator 2	w
+REGULATOR	human	Q8NCU8	MTLN	Q8NCU8	3	23	Mitoregulin (Micropeptide in mitochondria) (Micropeptide reg	w
+REGULATOR	human	Q8ND23	CARMIL3	Q8ND23	17	86	Capping protein, Arp2/3 and myosin-I linker protein 3 (Cappi	w
+REGULATOR	human	Q8NDN9	RCBTB1	Q8NDN9	7	68	RCC1 and BTB domain-containing protein 1 (Chronic lymphocyti	w
+REGULATOR	human	Q8NE09	RGS22	Q8NE09	11	114	Regulator of G protein signaling 22 (RGS22)	w
+REGULATOR	human	Q8NFP9	NBEA	Q8NFP9	4	63	Neurobeachin (Lysosomal-trafficking regulator 2) (Protein BC	w
+REGULATOR	human	Q8NI51	CTCFL	Q8NI51	4	57	Transcriptional repressor CTCFL (Brother of the regulator of	w
+REGULATOR	human	Q8TDB4	MGARP	Q8TDB4	17	280	Protein MGARP (Corneal endothelium-specific protein 1) (CESP	w
+REGULATOR	human	Q8WTW4	NPRL2	Q8WTW4	29	464	GATOR1 complex protein NPRL2 (Gene 21 protein) (G21 protein)	w
+REGULATOR	human	Q8WUF8	ARB2A	Q8WUF8	7	36	Cotranscriptional regulator ARB2A (ARB2 cotranscriptional re	w
+REGULATOR	human	Q8WVX3	ARLN	Q8WVX3	20	123	Sarcoplasmic/endoplasmic reticulum calcium ATPase regulator 	w
+REGULATOR	human	Q8WWW0	RASSF5	Q8WWW0	22	164	Ras association domain-containing protein 5 (New ras effecto	w
+REGULATOR	human	Q8WZ73	RFFL	Q8WZ73	27	103	E3 ubiquitin-protein ligase rififylin (EC 2.3.2.27) (Caspase	w
+REGULATOR	human	Q92681	RSC1A1	Q92681	14	51	Regulatory solute carrier protein family 1 member 1 (Transpo	w
+REGULATOR	human	Q92834	RPGR	Q92834	15	125	X-linked retinitis pigmentosa GTPase regulator	w
+REGULATOR	human	Q92843	BCL2L2	Q92843	13	151	Bcl-2-like protein 2 (Bcl2-L-2) (Apoptosis regulator Bcl-W)	w
+REGULATOR	human	Q92900	UPF1	Q92900	38	740	Regulator of nonsense transcripts 1 (EC 5.6.2.3) (EC 5.6.2.5	w
+REGULATOR	human	Q92925	SMARCD2	Q92925	80	589	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	Q969G3	SMARCE1	Q969G3	67	659	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	Q969K3	RNF34	Q969K3	17	70	E3 ubiquitin-protein ligase RNF34 (EC 2.3.2.27) (Caspase reg	w
+REGULATOR	human	Q96AQ8	MCUR1	Q96AQ8	8	229	Mitochondrial calcium uniporter regulator 1 (MCU regulator 1	w
+REGULATOR	human	Q96B23	ARK2N	Q96B23	33	123	Protein ARK2N (ARKadia-like protein 1) (Arkadia (RNF111) N-t	w
+REGULATOR	human	Q96C92	ENTR1	Q96C92	68	215	Endosome-associated-trafficking regulator 1 (Antigen NY-CO-3	w
+REGULATOR	human	Q96DB5	RMDN1	Q96DB5	12	100	Regulator of microtubule dynamics protein 1 (RMD-1) (hRMD-1)	w
+REGULATOR	human	Q96DB9	FXYD5	Q96DB9	2	14	FXYD domain-containing ion transport regulator 5 (Dysadherin	w
+REGULATOR	human	Q96DM3	RMC1	Q96DM3	17	161	Regulator of MON1-CCZ1 complex (Colon cancer-associated prot	w
+REGULATOR	human	Q96E09	PABIR1	Q96E09	17	39	PPP2R1A-PPP2R2A-interacting phosphatase regulator 1 (PABIR f	w
+REGULATOR	human	Q96EL1	INKA1	Q96EL1	9	43	PAK4-inhibitor INKA1 (Induced in neural crest by AP2-alpha p	w
+REGULATOR	human	Q96GM5	SMARCD1	Q96GM5	83	789	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	Q96GV9	MACIR	Q96GV9	13	46	Macrophage immunometabolism regulator	w
+REGULATOR	human	Q96IZ0	PAWR	Q96IZ0	59	147	PRKC apoptosis WT1 regulator protein (Prostate apoptosis res	w
+REGULATOR	human	Q96JE7	SEC16B	Q96JE7	7	61	Protein transport protein Sec16B (Leucine zipper transcripti	w
+REGULATOR	human	Q96K21	ZFYVE19	Q96K21	28	105	Abscission/NoCut checkpoint regulator (ANCHR) (MLL partner c	w
+REGULATOR	human	Q96KR7	PHACTR3	Q96KR7	108	374	Phosphatase and actin regulator 3 (Scaffold-associated PP1-i	w
+REGULATOR	human	Q96LZ7	RMDN2	Q96LZ7	10	40	Regulator of microtubule dynamics protein 2 (RMD-2) (hRMD-2)	w
+REGULATOR	human	Q96QR8	PURB	Q96QR8	13	465	Transcriptional regulator protein Pur-beta (Purine-rich elem	w
+REGULATOR	human	Q96RY5	CRAMP1	Q96RY5	22	95	Protein cramped-like (Cramped chromatin regulator homolog 1)	w
+REGULATOR	human	Q96TC7	RMDN3	Q96TC7	51	338	Regulator of microtubule dynamics protein 3 (RMD-3) (hRMD-3)	w
+REGULATOR	human	Q99674	CGREF1	Q99674	15	45	Cell growth regulator with EF hand domain protein 1 (Cell gr	w
+REGULATOR	human	Q99675	CGRRF1	Q99675	30	121	Cell growth regulator with RING finger domain protein 1 (Cel	w
+REGULATOR	human	Q99856	ARID3A	Q99856	129	473	AT-rich interactive domain-containing protein 3A (ARID domai	w
+REGULATOR	human	Q99933	BAG1	Q99933	72	560	BAG family molecular chaperone regulator 1 (BAG-1) (Bcl-2-as	w
+REGULATOR	human	Q9BRJ7	NUDT16L1	Q9BRJ7	7	90	Tudor-interacting repair regulator protein (NUDT16-like prot	w
+REGULATOR	human	Q9BSJ6	PIMREG	Q9BSJ6	24	156	Protein PIMREG (CALM-interactor expressed in thymus and sple	w
+REGULATOR	human	Q9BSW2	CRACR2A	Q9BSW2	34	120	EF-hand calcium-binding domain-containing protein 4B (Calciu	w
+REGULATOR	human	Q9BWK5	CYREN	Q9BWK5	12	59	Cell cycle regulator of non-homologous end joining (Cell cyc	w
+REGULATOR	human	Q9BXF3	CECR2	Q9BXF3	31	150	Chromatin remodeling regulator CECR2 (Cat eye syndrome criti	w
+REGULATOR	human	Q9BXL5	HEMGN	Q9BXL5	19	94	Hemogen (Erythroid differentiation-associated gene protein) 	w
+REGULATOR	human	Q9BYV9	BACH2	Q9BYV9	70	193	Transcription regulator protein BACH2 (BTB and CNC homolog 2	w
+REGULATOR	human	Q9BZI7	UPF3B	Q9BZI7	35	169	Regulator of nonsense transcripts 3B (Nonsense mRNA reducing	w
+REGULATOR	human	Q9BZR8	BCL2L14	Q9BZR8	16	150	Apoptosis facilitator Bcl-2-like protein 14 (Bcl2-L-14) (Apo	w
+REGULATOR	human	Q9C0D0	PHACTR1	Q9C0D0	127	344	Phosphatase and actin regulator 1	w
+REGULATOR	human	Q9GZV5	WWTR1	Q9GZV5	136	463	WW domain-containing transcription regulator protein 1 (Tran	w
+REGULATOR	human	Q9H019	MTFR1L	Q9H019	13	79	Mitochondrial fission regulator 1-like	w
+REGULATOR	human	Q9H0Q3	FXYD6	Q9H0Q3	47	305	FXYD domain-containing ion transport regulator 6 (Phosphohip	w
+REGULATOR	human	Q9H1A4	ANAPC1	Q9H1A4	18	481	Anaphase-promoting complex subunit 1 (APC1) (Cyclosome subun	w
+REGULATOR	human	Q9H1J1	UPF3A	Q9H1J1	15	90	Regulator of nonsense transcripts 3A (Nonsense mRNA reducing	w
+REGULATOR	human	Q9H4I9	SMDT1	Q9H4I9	22	117	Essential MCU regulator, mitochondrial (Single-pass membrane	w
+REGULATOR	human	Q9H4L7	SMARCAD1	Q9H4L7	25	270	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	Q9H4X1	RGCC	Q9H4X1	17	118	Regulator of cell cycle RGCC (Response gene to complement 32	w
+REGULATOR	human	Q9H6J7	CSTPP1	Q9H6J7	13	123	Centriolar satellite-associated tubulin polyglutamylase comp	w
+REGULATOR	human	Q9H6K1	ILRUN	Q9H6K1	5	35	Protein ILRUN (Inflammation and lipid regulator with UBA-lik	w
+REGULATOR	human	Q9H6L5	RETREG1	Q9H6L5	15	184	Reticulophagy regulator 1 (Reticulophagy receptor 1)	w
+REGULATOR	human	Q9H706	GAREM1	Q9H706	23	117	GRB2-associated and regulator of MAPK protein 1 (GRB2-associ	w
+REGULATOR	human	Q9H741	SPRING1	Q9H741	20	261	SREBP regulating gene protein (SREBF pathway regulator in Go	w
+REGULATOR	human	Q9H7Z3	NRDE2	Q9H7Z3	24	313	Nuclear exosome regulator NRDE2 (Protein NRDE2 homolog)	w
+REGULATOR	human	Q9H9C1	VIPAS39	Q9H9C1	10	73	Spermatogenesis-defective protein 39 homolog (hSPE-39) (VPS3	w
+REGULATOR	human	Q9HAU5	UPF2	Q9HAU5	43	414	Regulator of nonsense transcripts 2 (Up-frameshift suppresso	w
+REGULATOR	human	Q9HCJ1	ANKH	Q9HCJ1	10	137	Mineralization regulator ANKH (ATP carrier protein ANKH) (Pr	w
+REGULATOR	human	Q9HD36	BCL2L10	Q9HD36	12	39	Bcl-2-like protein 10 (Bcl2-L-10) (Anti-apoptotic protein Bo	w
+REGULATOR	human	Q9NNW5	WDR6	Q9NNW5	15	282	tRNA (34-2'-O)-methyltransferase regulator WDR6 (WD repeat-c	w
+REGULATOR	human	Q9NQ33	ASCL3	Q9NQ33	96	363	Achaete-scute homolog 3 (ASH-3) (hASH3) (Class A basic helix	w
+REGULATOR	human	Q9NQ88	TIGAR	Q9NQ88	11	147	Fructose-2,6-bisphosphatase TIGAR (EC 3.1.3.46) (TP53-induce	w
+REGULATOR	human	Q9NQS1	AVEN	Q9NQS1	9	49	Cell death regulator Aven	w
+REGULATOR	human	Q9NR00	TCIM	Q9NR00	5	89	Transcriptional and immune response regulator (Thyroid cance	w
+REGULATOR	human	Q9NR83	SLC2A4RG	Q9NR83	147	459	SLC2A4 regulator (GLUT4 enhancer factor) (GEF) (Huntington d	w
+REGULATOR	human	Q9NRZ9	HELLS	Q9NRZ9	7	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	w
+REGULATOR	human	Q9NS28	RGS18	Q9NS28	25	138	Regulator of G protein signaling 18 (RGS18)	w
+REGULATOR	human	Q9NSG2	FIRRM	Q9NSG2	9	89	FIGNL1-interacting regulator of recombination and mitosis (F	w
+REGULATOR	human	Q9NTI7	INKA2	Q9NTI7	15	41	PAK4-inhibitor INKA2 (Induced in neural crest by AP2-alpha p	w
+REGULATOR	human	Q9NVM9	INTS13	Q9NVM9	15	145	Integrator complex subunit 13 (Cell cycle regulator Mat89Bb 	w
+REGULATOR	human	Q9NWW0	HCFC1R1	Q9NWW0	10	67	Host cell factor C1 regulator 1 (HCF-1 beta-propeller-intera	w
+REGULATOR	human	Q9NXC5	MIOS	Q9NXC5	8	101	GATOR2 complex protein MIOS (Missing oocyte meiosis regulato	w
+REGULATOR	human	Q9NZ71	RTEL1	Q9NZ71	51	292	Regulator of telomere elongation helicase 1 (EC 5.6.2.-) (No	w
+REGULATOR	human	Q9NZS9	BFAR	Q9NZS9	12	89	Bifunctional apoptosis regulator (EC 2.3.2.27) (RING finger 	w
+REGULATOR	human	Q9P0T7	TMEM9	Q9P0T7	37	282	Proton-transporting V-type ATPase complex assembly regulator	w
+REGULATOR	human	Q9P0W2	HMG20B	Q9P0W2	73	514	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	human	Q9P2B2	PTGFRN	Q9P2B2	30	172	Prostaglandin F2 receptor negative regulator (CD9 partner 1)	w
+REGULATOR	human	Q9P2G4	MAP10	Q9P2G4	9	37	Microtubule-associated protein 10 (Microtubule regulator of 	w
+REGULATOR	human	Q9UBF6	RNF7	Q9UBF6	44	626	RING-box protein 2 (Rbx2) (EC 2.3.2.27) (EC 2.3.2.32) (CKII 	w
+REGULATOR	human	Q9UGC6	RGS17	Q9UGC6	47	231	Regulator of G protein signaling 17 (RGS17)	w
+REGULATOR	human	Q9UHR5	SAP30BP	Q9UHR5	42	192	SAP30-binding protein (Transcriptional regulator protein HCN	w
+REGULATOR	human	Q9UHV2	SERTAD1	Q9UHV2	34	137	SERTA domain-containing protein 1 (CDK4-binding protein p34S	w
+REGULATOR	human	Q9UKA8	RCAN3	Q9UKA8	8	73	Calcipressin-3 (Down syndrome candidate region 1-like protei	w
+REGULATOR	human	Q9UL15	BAG5	Q9UL15	17	399	BAG family molecular chaperone regulator 5 (BAG-5) (Bcl-2-as	w
+REGULATOR	human	Q9UL46	PSME2	Q9UL46	14	253	Proteasome activator complex subunit 2 (11S regulator comple	w
+REGULATOR	human	Q9UNA1	ARHGAP26	Q9UNA1	45	211	Rho GTPase-activating protein 26 (GTPase regulator associate	w
+REGULATOR	human	Q9UQ90	SPG7	Q9UQ90	19	287	Mitochondrial inner membrane m-AAA protease component parapl	w
+REGULATOR	human	Q9UQC9	CLCA2	Q9UQC9	1	31	Calcium-activated chloride channel regulator 2 (EC 3.4.-.-) 	w
+REGULATOR	human	Q9Y4D2	DAGLA	Q9Y4D2	3	53	Diacylglycerol lipase-alpha (DAGL-alpha) (DGL-alpha) (EC 3.1	w
+REGULATOR	human	Q9Y4F3	MARF1	Q9Y4F3	10	148	Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (	w
+REGULATOR	human	Q9Y4F4	TOGARAM1	Q9Y4F4	3	37	TOG array regulator of axonemal microtubules protein 1 (Cres	w
+REGULATOR	human	Q9Y4F9	RIPOR2	Q9Y4F9	33	287	Rho family-interacting cell polarization regulator 2	w
+REGULATOR	human	Q9Y5A7	NUB1	Q9Y5A7	33	117	NEDD8 ultimate buster 1 (Negative regulator of ubiquitin-lik	w
+REGULATOR	human	Q9Y5V0	ZNF706	Q9Y5V0	18	366	Transcriptional regulator ZNF706 (Zinc finger protein 706)	w
+REGULATOR	human	Q9Y6X8	ZHX2	Q9Y6X8	51	188	Zinc fingers and homeoboxes protein 2 (Alpha-fetoprotein reg	w
+REGULATOR	virus	A0A068EE18	fep_041	A0A068EE18	9	221	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	virus	A0A068EHE4	pepv_043	A0A068EHE4	12	240	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	virus	A0A077B9F3	ORF65	A0A077B9F3	3	76	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0A0M3ZJZ2		A0A0M3ZJZ2	21	170	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	virus	A0A172ER66	US1	A0A172ER66	3	71	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0A1L5JKI7	BICP22	A0A1L5JKI7	4	68	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0A286MM88	US1	A0A286MM88	5	79	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0A2H4X256	fgpv_038	A0A2H4X256	25	255	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	virus	A0A346FS06	AKMV-88-044	A0A346FS06	12	214	Apoptosis regulator OPG045	w
+REGULATOR	virus	A0A3G1T4E5	BSLF2/BMLF1	A0A3G1T4E5	5	81	Multifunctional expression regulator	w
+REGULATOR	virus	A0A3G2KXQ0	OPVA040	A0A3G2KXQ0	11	208	Apoptosis regulator OPG045	w
+REGULATOR	virus	A0A455JL82	US1	A0A455JL82	6	67	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0A455JLE0	US1	A0A455JLE0	2	67	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0A7S9VM95		A0A7S9VM95	2	77	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0A7S9YTI4		A0A7S9YTI4	2	77	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0AAF1D226	US1	A0AAF1D226	3	66	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	A0AAX7FDV8	US1	A0AAX7FDV8	3	66	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	B7FEC6		B7FEC6	1	77	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	E9M5P0	RHVP.57	E9M5P0	4	81	Multifunctional expression regulator	w
+REGULATOR	virus	F5HC16	UL34	F5HC16	4	167	Transcriptional regulator UL34	w
+REGULATOR	virus	F5HGJ3	vBCL2	F5HGJ3	7	84	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	virus	I1V8H9	ORF65	I1V8H9	2	75	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	K4P1D2	BICP22	K4P1D2	6	71	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	O36423	A9	O36423	4	69	Putative apoptosis regulator A9	w
+REGULATOR	virus	O42087	65	O42087	3	75	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	P03182	BHRF1	P03182	7	91	Apoptosis regulator BHRF1	w
+REGULATOR	virus	P03220	BGLF3	P03220	5	91	Late gene expression regulator BGLF3	w
+REGULATOR	virus	P09255	ORF63	P09255	6	68	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	P0CK56	BDLF4	P0CK56	1	91	Late gene expression regulator BDLF4	w
+REGULATOR	virus	P0CK58	BALF1	P0CK58	12	91	Apoptosis regulator BALF1	w
+REGULATOR	virus	P0DXO7	BDLF3.5	P0DXO7	3	91	Late gene expression regulator BDLF3.5	w
+REGULATOR	virus	P14347	BFRF2	P14347	3	91	Late gene expression regulator BFRF2	w
+REGULATOR	virus	P24356	OPG045	P24356	9	218	Apoptosis regulator OPG045	w
+REGULATOR	virus	P25215	BcRF1	P25215	3	91	Late gene expression regulator BcRF1	w
+REGULATOR	virus	P89884	vBCL2	P89884	0	79	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	virus	Q01042	73	Q01042	1	75	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	Q07036	C5L	Q07036	3	199	Apoptosis regulator OPG045	w
+REGULATOR	virus	Q08FX8	DPV022	Q08FX8	1	165	Apoptosis regulator DPV022	w
+REGULATOR	virus	Q0NPH0	TATV_DAH68_041	Q0NPH0	7	220	Apoptosis regulator OPG045	w
+REGULATOR	virus	Q2HR75	ORF57	Q2HR75	2	84	Post-transcriptional regulator MTA	w
+REGULATOR	virus	Q2MG95	BVLF1	Q2MG95	8	91	Late gene expression regulator BVLF1	w
+REGULATOR	virus	Q66674	E8	Q66674	3	76	Viral CASP8 and FADD-like apoptosis regulator	w
+REGULATOR	virus	Q69362	US1	Q69362	4	73	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	Q6S6W5	IR4	Q6S6W5	2	74	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	Q6VZT9	CNPV058	Q6VZT9	13	322	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	virus	Q6X1Z6	BHV5-62	Q6X1Z6	3	70	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	Q77LS0		Q77LS0	4	68	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	Q77LS1		Q77LS1	3	65	Transcriptional regulator ICP4	w
+REGULATOR	virus	Q77MP9	MDV088	Q77MP9	2	87	Transcriptional regulator ICP22 homolog	w
+REGULATOR	virus	Q77PA8	m011L	Q77PA8	5	157	Apoptosis regulator M11L	w
+REGULATOR	virus	Q8QN17	CPXV048 CDS	Q8QN17	5	225	Apoptosis regulator OPG045	w
+REGULATOR	virus	Q8V2Y1		Q8V2Y1	6	208	Apoptosis regulator OPG045	w
+REGULATOR	virus	Q8V547	C7L	Q8V547	7	187	Apoptosis regulator OPG045	w
+REGULATOR	virus	Q98325	MC159L	Q98325	7	162	Viral CASP8 and FADD-like apoptosis regulator	w
+REGULATOR	virus	Q98329	MC163R	Q98329	2	161	Apoptosis regulator MC163R	w
+REGULATOR	virus	Q9J5G4	FPV039	Q9J5G4	14	250	Apoptosis regulator Bcl-2 homolog	w
+REGULATOR	worm	G5EC45	sde-2	G5EC45	5	46	Replication stress response regulator SDE2	w
+REGULATOR	worm	G5ED58	spd-1	G5ED58	1	7	Protein regulator of cytokinesis 1	w
+REGULATOR	worm	G5EDG2	smrd-1	G5EDG2	0	13	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	worm	G5EEL2	plrg-1	G5EEL2	13	93	Pleiotropic regulator 1	w
+REGULATOR	worm	G5EEQ5	ref-1	G5EEQ5	0	15	Regulator of fusion ref-1	w
+REGULATOR	worm	G5EFV3	rsa-2	G5EFV3	3	13	Regulator of spindle assembly protein 2	w
+REGULATOR	worm	G5EG51	nrde-2	G5EG51	0	10	Nuclear exosome regulator NRDE2	w
+REGULATOR	worm	O17589	eat-16	O17589	13	34	Regulator of G-protein signaling 7	w
+REGULATOR	worm	O44739	bag-1	O44739	5	30	BAG family molecular chaperone regulator 1	w
+REGULATOR	worm	O45523	rgs-10	O45523	1	8	Regulator of G-protein signaling rgs-10	w
+REGULATOR	worm	O45524	rgs-11	O45524	0	8	Regulator of G-protein signaling rgs-11	w
+REGULATOR	worm	O62216	CELE_F33H2.6	O62216	2	48	Regulator of microtubule dynamics protein 1	w
+REGULATOR	worm	O76512	smg-2	O76512	3	77	Regulator of nonsense transcripts 1	w
+REGULATOR	worm	P34295	rgs-1	P34295	6	9	Regulator of G-protein signaling rgs-1	w
+REGULATOR	worm	P34560	rmd-1	P34560	0	16	Regulator of microtubule dynamics protein 1	w
+REGULATOR	worm	P34815	unc-18	P34815	10	77	Acetylcholine regulator unc-18	w
+REGULATOR	worm	P41958	ced-9	P41958	11	59	Apoptosis regulator ced-9	w
+REGULATOR	worm	P49808	rgs-2	P49808	6	10	Regulator of G-protein signaling rgs-2	w
+REGULATOR	worm	P49809	egl-10	P49809	18	33	Regulator of G-protein signaling egl-10	w
+REGULATOR	worm	P91855	phac-1	P91855	1	29	Phosphatase and actin regulator 2	w
+REGULATOR	worm	Q03569	gpr-2	Q03569	1	5	G-protein regulator 2	w
+REGULATOR	worm	Q10955	rgs-5	Q10955	1	11	Regulator of G-protein signaling rgs-5	w
+REGULATOR	worm	Q17510	rmd-3	Q17510	0	1	Regulator of microtubule dynamics protein 1	w
+REGULATOR	worm	Q17912	gphr-2	Q17912	0	24	Golgi pH regulator	w
+REGULATOR	worm	Q18171	spe-44	Q18171	1	39	Transcription regulator spe-44	w
+REGULATOR	worm	Q18211	ran-3	Q18211	6	49	Regulator of chromosome condensation	w
+REGULATOR	worm	Q18312	rgs-3	Q18312	2	6	Regulator of G-protein signaling rgs-3	w
+REGULATOR	worm	Q18563	rgs-6	Q18563	6	11	Regulator of G-protein signaling rgs-6	w
+REGULATOR	worm	Q20965	CELE_F58B3.6	Q20965	4	105	Interferon-related developmental regulator N-terminal domain	w
+REGULATOR	worm	Q21018	cri-3	Q21018	2	73	Conserved regulator of innate immunity protein 3	w
+REGULATOR	worm	Q23376	rgs-9	Q23376	1	8	Regulator of G-protein signaling rgs-9	w
+REGULATOR	worm	Q5DX34	glo-4	Q5DX34	0	21	X-linked retinitis pigmentosa GTPase regulator homolog	w
+REGULATOR	worm	Q8MNV7	smrc-1	Q8MNV7	2	11	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	worm	Q8WQC0	rgs-7	Q8WQC0	7	15	Regulator of G-protein signaling rgs-7	w
+REGULATOR	worm	Q93231	C17E4.10	Q93231	0	9	PRKC apoptosis WT1 regulator protein	w
+REGULATOR	worm	Q93575	rtel-1	Q93575	1	47	Regulator of telomere elongation helicase 1 homolog	w
+REGULATOR	worm	Q95QJ7	gpr-1	Q95QJ7	3	13	G-protein regulator 1	w
+REGULATOR	worm	Q95QV2	cft-1	Q95QV2	1	40	Cystic Fibrosis Transmembrane conductance regulator homolog	w
+REGULATOR	worm	Q9U3D6	adr-1	Q9U3D6	0	11	A-to-I RNA editing regulator adr-1	w
+REGULATOR	worm	Q9U3I4	emre-1	Q9U3I4	1	15	Essential MCU regulator, mitochondrial	w
+REGULATOR	worm	Q9U7E0	xnp-1	Q9U7E0	2	41	Transcriptional regulator ATRX homolog	w
+REGULATOR	worm	Q9XWK6	sup-35	Q9XWK6	0	15	Regulator of microtubule dynamics protein 1	w
+REGULATOR	worm	W6RQZ3	nprl-2	W6RQZ3	3	16	Nitrogen permease regulator 2	w
+REGULATOR	worm	W6RTG0	CELE_Y92H12A.5	W6RTG0	1	4	tRNA (32-2'-O)-methyltransferase regulator THADA	w
+REGULATOR	yeast	P06100	CDC36	P06100	2	40	General negative regulator of transcription subunit 2	w
+REGULATOR	yeast	P06102	NOT3	P06102	6	88	General negative regulator of transcription subunit 3	w
+REGULATOR	yeast	P17157	PHO85	P17157	26	138	Cyclin-dependent protein kinase PHO85 (EC 2.7.11.22) (Negati	w
+REGULATOR	yeast	P19541	RDS2	P19541	1	9	Regulator of drug sensitivity 2	w
+REGULATOR	yeast	P23202	URE2	P23202	8	49	Transcriptional regulator URE2	w
+REGULATOR	yeast	P23250	RPI1	P23250	1	7	Negative RAS protein regulator protein	w
+REGULATOR	yeast	P25611	RDS1	P25611	0	24	Regulator of drug sensitivity 1	w
+REGULATOR	yeast	P28708	PRR1	P28708	10	75	Serine/threonine-protein kinase PRR1 (EC 2.7.11.1) (Pheromon	w
+REGULATOR	yeast	P32522	PET309	P32522	1	34	Mitochondrial COX1 translation regulator PET309	w
+REGULATOR	yeast	P32566	SMI1	P32566	3	52	Cell wall assembly regulator SMI1	w
+REGULATOR	yeast	P32862	RGT1	P32862	4	27	Glucose transport transcription regulator RGT1	w
+REGULATOR	yeast	P33314	BUD2	P33314	9	49	Inhibitory regulator protein BUD2/CLA2	w
+REGULATOR	yeast	P34072	MKS1	P34072	2	17	Negative regulator of RAS-cAMP pathway	w
+REGULATOR	yeast	P34226	SKT5	P34226	5	35	Chitin synthase regulator SKT5	w
+REGULATOR	yeast	P34232	MTR2	P34232	3	34	mRNA transport regulator MTR2	w
+REGULATOR	yeast	P34252	SLD2	P34252	4	84	DNA replication regulator SLD2	w
+REGULATOR	yeast	P34909	MOT2	P34909	12	64	General negative regulator of transcription subunit 4	w
+REGULATOR	yeast	P36044	MNN4	P36044	0	16	Mannosyltransferase regulator 4	w
+REGULATOR	yeast	P38082	NRG2	P38082	1	8	Probable transcriptional regulator NRG2	w
+REGULATOR	yeast	P38192	RRT1	P38192	0	1	Regulator of rDNA transcription protein 1	w
+REGULATOR	yeast	P38615	RIM11	P38615	4	74	Serine/threonine-protein kinase RIM11/MSD1 (EC 2.7.11.1) (Re	w
+REGULATOR	yeast	P38742	NPR3	P38742	1	32	Nitrogen permease regulator 3	w
+REGULATOR	yeast	P38850	RTT107	P38850	9	88	Regulator of Ty1 transposition protein 107	w
+REGULATOR	yeast	P39923	NPR2	P39923	2	38	Nitrogen permease regulator 2	w
+REGULATOR	yeast	P39985	POL5	P39985	2	63	rDNA transcriptional regulator POL5	w
+REGULATOR	yeast	P40002	MIT1	P40002	4	14	Transcriptional regulator MIT1	w
+REGULATOR	yeast	P40042	RRT13	P40042	0	15	Regulator of rDNA transcription protein 13	w
+REGULATOR	yeast	P40063	RTT105	P40063	3	13	Regulator of Ty1 transposition protein 105	w
+REGULATOR	yeast	P40355	MNN14	P40355	0	4	Mannosyltransferase regulator 14	w
+REGULATOR	yeast	P40470	RRT14	P40470	9	94	Regulator of rDNA transcription protein 14	w
+REGULATOR	yeast	P40850	MKT1	P40850	4	59	Post-transcriptional regulator MKT1	w
+REGULATOR	yeast	P43587	YPI1	P43587	7	18	Type 1 phosphatases regulator YPI1	w
+REGULATOR	yeast	P43607	RRT5	P43607	0	4	Regulator of rDNA transcription protein 5	w
+REGULATOR	yeast	P47027	DPB11	P47027	9	72	DNA replication regulator DPB11	w
+REGULATOR	yeast	P47043	ZAP1	P47043	0	8	Zinc-responsive transcriptional regulator ZAP1	w
+REGULATOR	yeast	P47104	RAV1	P47104	1	17	Regulator of V-ATPase in vacuolar membrane protein 1	w
+REGULATOR	yeast	P48565	RIM21	P48565	3	13	pH-response regulator protein palH/RIM21	w
+REGULATOR	yeast	P50943	RRT16	P50943	0	1	Putative regulator of rDNA transcription protein 16	w
+REGULATOR	yeast	P52960	PIP2	P52960	1	8	Peroxisome proliferation transcriptional regulator	w
+REGULATOR	yeast	P53094	MDS3	P53094	3	29	Negative regulator of sporulation MDS3	w
+REGULATOR	yeast	P53117	RRT6	P53117	2	6	Regulator of rDNA transcription protein 6	w
+REGULATOR	yeast	P53135	SLD3	P53135	3	33	DNA replication regulator SLD3	w
+REGULATOR	yeast	P53179	RIM8	P53179	3	24	pH-response regulator protein palF/RIM8	w
+REGULATOR	yeast	P53330	RTT102	P53330	2	79	Regulator of Ty1 transposition protein 102	w
+REGULATOR	yeast	P53968	CRZ1	P53968	3	40	Transcriptional regulator CRZ1	w
+REGULATOR	yeast	Q03081	MET31	Q03081	1	24	Transcriptional regulator MET31	w
+REGULATOR	yeast	Q03125	NRG1	Q03125	1	11	Transcriptional regulator NRG1	w
+REGULATOR	yeast	Q03496	TRM732	Q03496	1	10	tRNA (32-2'-O)-methyltransferase regulator TRM732	w
+REGULATOR	yeast	Q03956	RAV2	Q03956	1	15	Regulator of V-ATPase in vacuolar membrane protein 2	w
+REGULATOR	yeast	Q04734	RIM9	Q04734	2	5	pH-response regulator protein palI/RIM9	w
+REGULATOR	yeast	Q05543	RTT103	Q05543	7	50	Regulator of Ty1 transposition protein 103	w
+REGULATOR	yeast	Q06108	RGC1	Q06108	6	84	Regulator of the glycerol channel 1	w
+REGULATOR	yeast	Q06604	BSP1	Q06604	5	43	F-actin capping regulator BSP1	w
+REGULATOR	yeast	Q07684	MFG1	Q07684	0	15	Morphogenetic regulator of filamentous growth protein 1	w
+REGULATOR	yeast	Q07829	RRT7	Q07829	0	1	Regulator of rDNA transcription protein 7	w
+REGULATOR	yeast	Q08003	RFU1	Q08003	5	48	Regulator of free ubiquitin chains 1	w
+REGULATOR	yeast	Q08746	RRS1	Q08746	11	177	Regulator of ribosome biosynthesis	w
+REGULATOR	yeast	Q08924	RTT10	Q08924	1	16	tRNA (34-2'-O)-methyltransferase regulator RTT10	w
+REGULATOR	yeast	Q12033	RIM20	Q12033	5	32	pH-response regulator protein palA/RIM20	w
+REGULATOR	yeast	Q12041	MET32	Q12041	1	7	Transcriptional regulator MET32	w
+REGULATOR	yeast	Q12044	RCN2	Q12044	4	13	Regulator of calcineurin 2	w
+REGULATOR	yeast	Q12310	PRR2	Q12310	18	63	Serine/threonine-protein kinase PRR2 (EC 2.7.11.1) (Pheromon	w
+REGULATOR	yeast	Q12514	NOT5	Q12514	18	135	General negative regulator of transcription subunit 5	w
+REGULATOR	yeast	Q12516	SRF1	Q12516	0	10	Regulator of phospholipase D SRF1	w
+REGULATOR	yeast	Q3E828	MCO6	Q3E828	0	1	ERMES regulator 1	w
+REGULATOR	yeast	Q99188	RGS2	Q99188	2	24	Regulator of G-protein signaling 2	w
+REGULATOR	yeast	Q99189	MTR10	Q99189	5	33	mRNA transport regulator MTR10	w
+REGULATOR	zebrafish	A0A0H2UKQ5	pard3ba	A0A0H2UKQ5	5	19	Par-3 family cell polarity regulator beta a	w
+REGULATOR	zebrafish	A0A0J9YJ98	smdt1b	A0A0J9YJ98	1	20	Essential MCU regulator, mitochondrial	w
+REGULATOR	zebrafish	A0A0R4ICX4	si:ch211-117l17.6	A0A0R4ICX4	15	32	Regulator of G-protein signaling 21	w
+REGULATOR	zebrafish	A0A0R4IJB7	rgs13b	A0A0R4IJB7	15	32	Regulator of G-protein signaling 21	w
+REGULATOR	zebrafish	A0A0R4ILG2	fxyd2	A0A0R4ILG2	1	4	FXYD domain-containing ion transport regulator	w
+REGULATOR	zebrafish	A0A2R8Q613	elapor1	A0A2R8Q613	0	7	Endosome/lysosome-associated apoptosis and autophagy regulat	w
+REGULATOR	zebrafish	A0A2R8QK73	tcerg1l	A0A2R8QK73	16	68	Transcription elongation regulator 1 like	w
+REGULATOR	zebrafish	A0A2R8QUQ1	rgs9a	A0A2R8QUQ1	19	39	Regulator of G-protein signaling 9a	w
+REGULATOR	zebrafish	A0A4W4	negr1	A0A4W4	2	16	Neuronal growth regulator 1	w
+REGULATOR	zebrafish	A0A8M1N018	rgcc	A0A8M1N018	0	3	Regulator of cell cycle RGCC	w
+REGULATOR	zebrafish	A0A8M1N1F2	bag3	A0A8M1N1F2	25	129	BAG family molecular chaperone regulator 3	w
+REGULATOR	zebrafish	A0A8M1N2Y9	abcc4	A0A8M1N2Y9	0	16	Cystic fibrosis transmembrane conductance regulator	w
+REGULATOR	zebrafish	A0A8M1N8L5	bach1a	A0A8M1N8L5	13	13	Transcription regulator protein BACH1a	w
+REGULATOR	zebrafish	A0A8M1ND70	rgs13a	A0A8M1ND70	17	37	Regulator of G-protein signaling 13	w
+REGULATOR	zebrafish	A0A8M1P2J9	cflara	A0A8M1P2J9	4	28	CASP8 and FADD-like apoptosis regulator a	w
+REGULATOR	zebrafish	A0A8M1P943	cry3a	A0A8M1P943	3	33	Cryptochrome circadian regulator 3a	w
+REGULATOR	zebrafish	A0A8M1PAZ7	prc1b	A0A8M1PAZ7	0	30	Protein regulator of cytokinesis 1b	w
+REGULATOR	zebrafish	A0A8M1PFF3	bag2	A0A8M1PFF3	7	50	BAG family molecular chaperone regulator 2	w
+REGULATOR	zebrafish	A0A8M1RQW2	ush1ga	A0A8M1RQW2	4	13	Pre-mRNA splicing regulator USH1G	w
+REGULATOR	zebrafish	A0A8M2B3Q7	rgs17	A0A8M2B3Q7	15	32	Regulator of G-protein signaling 17 isoform X1	w
+REGULATOR	zebrafish	A0A8M2BFQ5	rgs3a	A0A8M2BFQ5	16	38	Regulator of G-protein signaling 3	w
+REGULATOR	zebrafish	A0A8M3APN3	clca5.2	A0A8M3APN3	0	8	Calcium-activated chloride channel regulator 1 isoform X1	w
+REGULATOR	zebrafish	A0A8M6YT85	auts2b	A0A8M6YT85	1	21	Activator of transcription and developmental regulator AUTS2	w
+REGULATOR	zebrafish	A0A8M9PNH4	LOC101886645	A0A8M9PNH4	1	8	Calcium-activated chloride channel regulator 3A-1 isoform X2	w
+REGULATOR	zebrafish	A0A8M9QAJ1	marf1	A0A8M9QAJ1	1	35	Meiosis regulator and mRNA stability factor 1	w
+REGULATOR	zebrafish	A0A8N7T6J6	ush1gb	A0A8N7T6J6	5	13	Pre-mRNA splicing regulator USH1G	w
+REGULATOR	zebrafish	A0AB13A449	tcimb	A0AB13A449	0	1	Transcriptional and immune response regulator b	w
+REGULATOR	zebrafish	A0AB13A814	bach1b	A0AB13A814	13	18	Transcription regulator protein BACH1b isoform 1	w
+REGULATOR	zebrafish	A0AB13A9K4	pard3ab	A0AB13A9K4	10	70	Par-3 family cell polarity regulator alpha, b isoform 1	w
+REGULATOR	zebrafish	A0AB13AA08	bag5	A0AB13AA08	1	46	BAG family molecular chaperone regulator 5	w
+REGULATOR	zebrafish	A0AB32TEG5	phactr4a	A0AB32TEG5	4	4	Phosphatase and actin regulator 4	w
+REGULATOR	zebrafish	A0AB32TP84	rgs3b	A0AB32TP84	23	39	Regulator of G-protein signaling 3 isoform X3	w
+REGULATOR	zebrafish	A0AB32TV28	mych	A0AB32TV28	2	10	Transcriptional regulator	w
+REGULATOR	zebrafish	A2CE83	entr1	A2CE83	0	1	Endosome-associated-trafficking regulator 1	w
+REGULATOR	zebrafish	A3KPZ9	si:ch211-152p11.4	A3KPZ9	16	28	Novel protein similar to vertebrate regulator of G-protein s	w
+REGULATOR	zebrafish	A5PLC6	bag1	A5PLC6	0	75	BAG family molecular chaperone regulator 1	w
+REGULATOR	zebrafish	A9C3T6	wdr6	A9C3T6	1	9	tRNA (34-2'-O)-methyltransferase regulator WDR6	w
+REGULATOR	zebrafish	B0R061	smarcad1a	B0R061	0	9	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	B0S733	upf3a	B0S733	6	36	Regulator of nonsense transcripts 3A	w
+REGULATOR	zebrafish	B2KL77	smarcd3b	B2KL77	12	103	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	B2ZFP3	smarcal1	B2ZFP3	5	63	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	B3DHS1	macir	B3DHS1	2	6	Macrophage immunometabolism regulator	w
+REGULATOR	zebrafish	B3DI13	rgs19	B3DI13	15	32	Regulator of G-protein signaling 20	w
+REGULATOR	zebrafish	B8A552	smarca5	B8A552	6	143	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	B8A5L7	rgs11	B8A5L7	18	43	Regulator of G-protein signaling 11	w
+REGULATOR	zebrafish	B8JJ17	bag4	B8JJ17	7	52	BAG family molecular chaperone regulator 4	w
+REGULATOR	zebrafish	E7EXN1	sanbr	E7EXN1	0	5	SANT and BTB domain regulator of class switch recombination	w
+REGULATOR	zebrafish	E7EYT5	rgs9bp	E7EYT5	0	13	Regulator of G-protein signaling 9-binding protein	w
+REGULATOR	zebrafish	E7EYW7	smarcd2	E7EYW7	13	102	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	E7F0U9	rps19bp1	E7F0U9	5	74	Active regulator of SIRT1	w
+REGULATOR	zebrafish	E7F0W6	ecscr	E7F0W6	10	111	Endothelial cell surface-expressed chemotaxis and apoptosis 	w
+REGULATOR	zebrafish	E7F1C4	smarcad1b	E7F1C4	0	9	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	E7F3K7	tbrg4	E7F3K7	5	51	FAST kinase domain-containing protein 4 (Protein TBRG4) (Tra	w
+REGULATOR	zebrafish	E7F4D0	auts2a	E7F4D0	7	31	Activator of transcription and developmental regulator AUTS2	w
+REGULATOR	zebrafish	E7FEN3	fxyd5	E7FEN3	1	4	FXYD domain-containing ion transport regulator	w
+REGULATOR	zebrafish	E7FEX9	nicol1	E7FEX9	2	2	NELL2-interacting cell ontogeny regulator 1	w
+REGULATOR	zebrafish	E7FGT1	ccar2	E7FGT1	0	5	Cell cycle and apoptosis regulator 2	w
+REGULATOR	zebrafish	E9QC50	smarcd3a	E9QC50	10	95	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	F1Q729	mcur1	F1Q729	0	15	Mitochondrial calcium uniporter regulator 1	w
+REGULATOR	zebrafish	F1Q9W6	rgs7a	F1Q9W6	23	43	Regulator of G protein-signaling 7a	w
+REGULATOR	zebrafish	F1QAI9	ptgfrnb	F1QAI9	6	26	Prostaglandin F2 receptor negative regulator	w
+REGULATOR	zebrafish	F1QHM9	cry5	F1QHM9	0	32	Cryptochrome circadian regulator 5	w
+REGULATOR	zebrafish	F1QIC4	phactr4a	F1QIC4	4	4	Phosphatase and actin regulator 4A	w
+REGULATOR	zebrafish	F1QM29	rpgrb	F1QM29	5	58	X-linked retinitis pigmentosa GTPase regulator	w
+REGULATOR	zebrafish	F1QNX7	upf3b	F1QNX7	6	82	Regulator of nonsense transcripts 3B	w
+REGULATOR	zebrafish	F1QV08	rgs12a	F1QV08	10	29	Regulator of G protein-signaling 12a	w
+REGULATOR	zebrafish	F1QYM7	retreg3	F1QYM7	3	106	Reticulophagy regulator 3	w
+REGULATOR	zebrafish	F1R2R7	cry4	F1R2R7	0	33	Cryptochrome circadian regulator 4	w
+REGULATOR	zebrafish	F1R340	atg14	F1R340	21	104	Beclin 1-associated autophagy-related key regulator	w
+REGULATOR	zebrafish	F1RCE7	mtfr1	F1RCE7	1	8	Mitochondrial fission regulator 1	w
+REGULATOR	zebrafish	F1RCY6	upf1	F1RCY6	5	114	Regulator of nonsense transcripts 1	w
+REGULATOR	zebrafish	F6NQ00	ccar1	F6NQ00	0	14	Cell division cycle and apoptosis regulator protein 1	w
+REGULATOR	zebrafish	F6NU44	cracr2ab	F6NU44	6	13	Calcium release-activated channel regulator 2Ab	w
+REGULATOR	zebrafish	F8W266	bcl2b	F8W266	5	96	Apoptosis regulator Bcl-2	w
+REGULATOR	zebrafish	I3ITC2	LOC100004321	I3ITC2	2	37	Apoptosis regulator BAX-like	w
+REGULATOR	zebrafish	P0C928	rtel1	P0C928	4	109	Regulator of telomere elongation helicase 1	w
+REGULATOR	zebrafish	P52160	myca	P52160	6	34	Transcriptional regulator Myc-A	w
+REGULATOR	zebrafish	Q08BD8	mtfr2	Q08BD8	0	9	Mitochondrial fission regulator 2	w
+REGULATOR	zebrafish	Q08BE2	rgs18	Q08BE2	14	35	Regulator of G-protein signaling 18	w
+REGULATOR	zebrafish	Q08BU8	rgs7bpa	Q08BU8	6	13	Regulator of G-protein signaling 7-binding protein A	w
+REGULATOR	zebrafish	Q0P3X7	?	Q0P3X7	1	1	Synaptic plasticity regulator PANTS	w
+REGULATOR	zebrafish	Q1LU99	ripor2	Q1LU99	5	96	Rho family-interacting cell polarization regulator 2	w
+REGULATOR	zebrafish	Q1LUD0	ifrd1	Q1LUD0	2	122	Interferon-related developmental regulator 1	w
+REGULATOR	zebrafish	Q1LX78	cftr	Q1LX78	0	101	Cystic fibrosis transmembrane conductance regulator	w
+REGULATOR	zebrafish	Q1LYC7	nova1	Q1LYC7	0	6	NOVA alternative-splicing regulator 1	w
+REGULATOR	zebrafish	Q307I6	wwtr1	Q307I6	29	82	WW domain-containing transcription regulator 1	w
+REGULATOR	zebrafish	Q38JL1	rgs6	Q38JL1	24	43	Regulator of G-protein signaling 6	w
+REGULATOR	zebrafish	Q4V9P3	rgs7bpb	Q4V9P3	9	13	Regulator of G-protein signaling 7-binding protein B	w
+REGULATOR	zebrafish	Q564A4	bcl2a	Q564A4	4	102	Apoptosis regulator Bcl-2	w
+REGULATOR	zebrafish	Q568M8	rgs5b	Q568M8	15	33	Regulator of G-protein signaling 5b	w
+REGULATOR	zebrafish	Q568Q4	rgs16	Q568Q4	14	33	Regulator of G-protein signaling 16	w
+REGULATOR	zebrafish	Q5BJJ4	tcima	Q5BJJ4	0	1	Transcriptional and immune response regulator a	w
+REGULATOR	zebrafish	Q5RG44	crad	Q5RG44	1	32	Capping protein inhibiting regulator of actin dynamics	w
+REGULATOR	zebrafish	Q5RG84	niban1a	Q5RG84	3	114	Niban apoptosis regulator 1a	w
+REGULATOR	zebrafish	Q5U379	smarcb1a	Q5U379	6	115	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	Q5XJ95	pawr	Q5XJ95	2	18	PRKC apoptosis WT1 regulator protein	w
+REGULATOR	zebrafish	Q6DGI0	rgs8	Q6DGI0	17	36	Regulator of G-protein signaling 8	w
+REGULATOR	zebrafish	Q6DGK9	cstpp1	Q6DGK9	1	5	Centriolar satellite-associated tubulin polyglutamylase comp	w
+REGULATOR	zebrafish	Q6DH03	tusc2b	Q6DH03	0	1	Tumor suppressor 2, mitochondrial calcium regulator b	w
+REGULATOR	zebrafish	Q6DH47	rgs20	Q6DH47	12	31	Regulator of G-protein signaling 20	w
+REGULATOR	zebrafish	Q6DI02	prc1a	Q6DI02	7	26	Protein regulator of cytokinesis 1	w
+REGULATOR	zebrafish	Q6NY65	rcc1	Q6NY65	8	65	Regulator of chromosome condensation	w
+REGULATOR	zebrafish	Q6PEI3	phactr4b	Q6PEI3	4	4	Phosphatase and actin regulator 4B	w
+REGULATOR	zebrafish	Q6PHK6	purb	Q6PHK6	0	7	Transcriptional regulator protein Pur-beta	w
+REGULATOR	zebrafish	Q6TNS1	pard6gb	Q6TNS1	20	46	Par-6 family cell polarity regulator gamma b	w
+REGULATOR	zebrafish	Q6ZM84	rgs9b	Q6ZM84	18	44	Regulator of G-protein signaling 9	w
+REGULATOR	zebrafish	Q7SXL7	wtap	Q7SXL7	4	47	Pre-mRNA-splicing regulator WTAP	w
+REGULATOR	zebrafish	Q7T293	sde2	Q7T293	6	62	Splicing regulator SDE2	w
+REGULATOR	zebrafish	Q7T2D3	rgs5a	Q7T2D3	11	34	Regulator of G-protein signaling 5a	w
+REGULATOR	zebrafish	Q7T3E8	mtfr1l	Q7T3E8	0	3	Mitochondrial fission regulator 1-like	w
+REGULATOR	zebrafish	Q7ZVS9	mycb	Q7ZVS9	2	17	Transcriptional regulator Myc-B	w
+REGULATOR	zebrafish	Q7ZVU1	garem1	Q7ZVU1	8	31	GRB2-associated and regulator of MAPK protein 1	w
+REGULATOR	zebrafish	Q802C8	smarcd1	Q802C8	9	97	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	Q803S1	smarce1	Q803S1	13	76	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+REGULATOR	zebrafish	Q9I9N4	baxa	Q9I9N4	2	35	Apoptosis regulator BAX	w
+REGULATOR	zebrafish	X1WBB9	nova2	X1WBB9	0	6	NOVA alternative-splicing regulator 2	w
+REGULATOR	zebrafish	X1WDG1	gareml	X1WDG1	4	31	GRB2-associated and regulator of MAPK protein 2	w
+REGULATOR	zebrafish	X1WHI8	clca1	X1WHI8	0	8	Calcium-activated chloride channel regulator 1 isoform X2	w
+REGULATOR	zebrafish	X1WI05	fxyd7	X1WI05	1	4	FXYD domain-containing ion transport regulator	w
+REGULATOR-INTERACTING	human	Q96KN7	RPGRIP1	Q96KN7	42	130	X-linked retinitis pigmentosa GTPase regulator-interacting p	w
+REGULATOR-LIKE	human	Q8WUX2	CHAC2	Q8WUX2	12	79	Glutathione-specific gamma-glutamylcyclotransferase 2 (Gamma	w
+REGULATOR-LIKE	human	Q9BUX1	CHAC1	Q9BUX1	21	82	Glutathione-specific gamma-glutamylcyclotransferase 1 (Gamma	w
+REGULATORY PROTEIN	virus	A0A5P9JSF3	regulatory protein	A0A5P9JSF3	1	79	A0A5P9JSF3_9ALPH	
+REGULATORY-ASSOCIATED	human	Q8N122	RPTOR	Q8N122	39	557	Regulatory-associated protein of mTOR (Raptor) (p150 target 	w
+REGULATORY-ASSOCIATED	zebrafish	A0A0R4IFI0	rptor	A0A0R4IFI0	9	198	Regulatory-associated protein of mTOR	w
+REGULATORY-LIKE	worm	O17883	strl-1	O17883	1	12	Steroidogenic acute regulatory-like protein 1	w
+REGX3	mycobacterium-tuberculosis	P9WGL9	regX3	P9WGL9	3	30	Sensory transduction protein RegX3	

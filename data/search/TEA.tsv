@@ -1,15 +1,41 @@
-TEA1	candida-albicans-237561	A0A1D8PK74	TEA1	A0A1D8PK74	0	5	Tea1p
-TEA1	schizosaccharomyces-pombe	P87061	tea1	P87061	6	192	Tip elongation aberrant protein 1
-TEA2	schizosaccharomyces-pombe	Q1MTQ1	tea2	Q1MTQ1	1	14	Kinesin-like protein tea2
-TEA3	schizosaccharomyces-pombe	O14248	tea3	O14248	2	35	Tip elongation aberrant protein 3
-TEA4	schizosaccharomyces-pombe	O60132	tea4	O60132	2	14	Tip elongation aberrant protein Tea4
-TEAD1	mus-musculus	P30051	Tead1	P30051	10	39	Transcriptional enhancer factor TEF-1
-TEAD1	rattus-norvegicus	A0A0G2K2N3	Tead1	A0A0G2K2N3	8	24	TEA domain transcription factor 1
-TEAD2	mus-musculus	P48301	Tead2	P48301	5	18	Transcriptional enhancer factor TEF-4
-TEAD2	rattus-norvegicus	A0A0G2K2S9	Tead2	A0A0G2K2S9	7	20	Transcriptional enhancer factor TEF-4
-TEAD3	mus-musculus	P70210	Tead3	P70210	4	13	Transcriptional enhancer factor TEF-5
-TEAD3	rattus-norvegicus	F7EPU7	Tead3	F7EPU7	7	18	Transcriptional enhancer factor TEF-5
-TEAD4	mus-musculus	Q62296	Tead4	Q62296	11	34	Transcriptional enhancer factor TEF-3
-TEAD4	rattus-norvegicus	F1M665	Tead4	F1M665	9	30	Transcriptional enhancer factor TEF-3
-TEAR1	arabidopsis-thaliana	Q5EAI9	TEAR1	Q5EAI9	0	1	RING-type E3 ubiquitin transferase
-TEAR2	arabidopsis-thaliana	Q94F54	TEAR2	Q94F54	0	1	RING-type E3 ubiquitin transferase
+TEA	fly	FBgn0285892	tea	A1Z818	4	6	Telomere ends associated, isoform E	
+TEA1	candida-albicans-237561	A0A1D8PK74	TEA1	A0A1D8PK74	0	5	Tea1p	
+TEA1	schizosaccharomyces-pombe	P87061	tea1	P87061	6	192	Tip elongation aberrant protein 1	
+TEA1	yeast	P47988	TEA1	P47988	0	20	TY1 enhancer activator	
+TEA2	schizosaccharomyces-pombe	Q1MTQ1	tea2	Q1MTQ1	1	14	Kinesin-like protein tea2	
+TEA3	schizosaccharomyces-pombe	O14248	tea3	O14248	2	35	Tip elongation aberrant protein 3	
+TEA4	schizosaccharomyces-pombe	O60132	tea4	O60132	2	14	Tip elongation aberrant protein Tea4	
+TEAD-1	human	P28347	TEAD1	P28347	144	684	Transcriptional enhancer factor TEF-1 (NTEF-1) (Protein GT-I	w
+TEAD-2	human	Q15562	TEAD2	Q15562	133	581	Transcriptional enhancer factor TEF-4 (TEA domain family mem	w
+TEAD-3	human	Q99594	TEAD3	Q99594	59	464	Transcriptional enhancer factor TEF-5 (DTEF-1) (TEA domain f	w
+TEAD-4	human	Q15561	TEAD4	Q15561	110	658	Transcriptional enhancer factor TEF-3 (TEA domain family mem	w
+TEAD1	human	P28347	TEAD1	P28347	144	684	Transcriptional enhancer factor TEF-1 (NTEF-1) (Protein GT-I	
+TEAD1	mus-musculus	P30051	Tead1	P30051	10	39	Transcriptional enhancer factor TEF-1	
+TEAD1	rattus-norvegicus	A0A0G2K2N3	Tead1	A0A0G2K2N3	8	24	TEA domain transcription factor 1	
+TEAD1A	zebrafish	A0A8M3B730	tead1a	A0A8M3B730	8	30	TEA domain family member 1a	
+TEAD1_HUMAN	human	P28347	TEAD1	P28347	144	684		
+TEAD2	human	Q15562	TEAD2	Q15562	133	581	Transcriptional enhancer factor TEF-4 (TEA domain family mem	
+TEAD2	mus-musculus	P48301	Tead2	P48301	5	18	Transcriptional enhancer factor TEF-4	
+TEAD2	rattus-norvegicus	A0A0G2K2S9	Tead2	A0A0G2K2S9	7	20	Transcriptional enhancer factor TEF-4	
+TEAD2_HUMAN	human	Q15562	TEAD2	Q15562	133	581		
+TEAD3	human	Q99594	TEAD3	Q99594	59	464	Transcriptional enhancer factor TEF-5 (DTEF-1) (TEA domain f	
+TEAD3	mus-musculus	P70210	Tead3	P70210	4	13	Transcriptional enhancer factor TEF-5	
+TEAD3	rattus-norvegicus	F7EPU7	Tead3	F7EPU7	7	18	Transcriptional enhancer factor TEF-5	
+TEAD3_HUMAN	human	Q99594	TEAD3	Q99594	59	464		
+TEAD4	human	Q15561	TEAD4	Q15561	110	658	Transcriptional enhancer factor TEF-3 (TEA domain family mem	
+TEAD4	mus-musculus	Q62296	Tead4	Q62296	11	34	Transcriptional enhancer factor TEF-3	
+TEAD4	rattus-norvegicus	F1M665	Tead4	F1M665	9	30	Transcriptional enhancer factor TEF-3	
+TEAD4_HUMAN	human	Q15561	TEAD4	Q15561	110	658		
+TEAD5	human	Q99594	TEAD3	Q99594	59	464		
+TEAN2_HUMAN	human	Q96MN5	TCEANC2	Q96MN5	10	177		
+TEANC_HUMAN	human	Q8N8B7	TCEANC	Q8N8B7	35	226		
+TEAR	human	P31025	LCN1	P31025	64	286	Lipocalin-1 (Tear lipocalin) (Tlc) (Tear prealbumin) (TP) (v	w
+TEAR1	arabidopsis-thaliana	Q5EAI9	TEAR1	Q5EAI9	0	1	RING-type E3 ubiquitin transferase	
+TEAR2	arabidopsis-thaliana	Q94F54	TEAR2	Q94F54	0	1	RING-type E3 ubiquitin transferase	
+TEASHIRT	fly	FBgn0003866	tsh	P22265	208	479	Protein teashirt	w
+TEASHIRT	human	Q63HK5	TSHZ3	Q63HK5	49	159	Teashirt homolog 3 (Zinc finger protein 537)	w
+TEASHIRT	human	Q6ZSZ6	TSHZ1	Q6ZSZ6	31	111	Teashirt homolog 1 (Antigen NY-CO-33) (Serologically defined	w
+TEASHIRT	human	Q9NRE2	TSHZ2	Q9NRE2	26	83	Teashirt homolog 2 (Ovarian cancer-related protein 10-2) (OV	w
+TEASHIRT	zebrafish	B3DJM5	tshz1	B3DJM5	0	4	Teashirt homolog 1	w
+TEASHIRT	zebrafish	F1QL82	tshz3a	F1QL82	0	2	Teashirt homolog 3	w
+TEASHIRT	zebrafish	F1QV43	tshz2	F1QV43	0	1	Teashirt homolog 2 isoform X2	w

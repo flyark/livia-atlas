@@ -1,16 +1,45 @@
-PNM1	arabidopsis-thaliana	Q9FME4	PNM1	Q9FME4	5	79	Small ribosomal subunit protein mL104 (rPPR9)
-PNMA1	mus-musculus	Q8C1C8	Pnma1	Q8C1C8	1	7	Paraneoplastic antigen Ma1 homolog
-PNMA1	rattus-norvegicus	Q8VHZ4	Pnma1	Q8VHZ4	0	10	Paraneoplastic antigen Ma1 homolog
-PNMA2	mus-musculus	Q8BHK0	Pnma2	Q8BHK0	1	10	Paraneoplastic antigen Ma2 homolog
-PNMA2	rattus-norvegicus	D4A068	Pnma2	D4A068	0	14	PNMA family member 2
-PNMA3	mus-musculus	Q8JZW8	Pnma3	Q8JZW8	0	1	Paraneoplastic antigen Ma3 homolog
-PNMA3	rattus-norvegicus	D3Z8Y9	Pnma3	D3Z8Y9	1	5	PNMA family member 3
-PNMA5	mus-musculus	Q5DTT8	Pnma5	Q5DTT8	0	1	Paraneoplastic antigen-like protein 5
-PNMA5	rattus-norvegicus	D4AEL1	Pnma5	D4AEL1	0	5	PNMA family member 5
-PNMA6E	mus-musculus	A0A140LIU8	Pnma6e	A0A140LIU8	0	4	PNMA family member 6E
-PNMA8A	mus-musculus	Q80VM8	Pnma8a	Q80VM8	0	1	Paraneoplastic antigen-like protein 8A
-PNMA8A	rattus-norvegicus	D3ZA53	Pnma8a	D3ZA53	0	6	PNMA family member 8A
-PNMA8B	mus-musculus	G3X9N3	Pnma8b	G3X9N3	0	16	PNMA family member 8B
-PNMA8B	rattus-norvegicus	D3ZQN3	Pnma8b	D3ZQN3	0	2	PNMA family member 8B
-PNMA8C	mus-musculus	A0A1B0GT27	Pnma8c	A0A1B0GT27	0	1	PNMA family member 8C
-PNMT	mus-musculus	P40935	Pnmt	P40935	0	1	Phenylethanolamine N-methyltransferase
+PNM1	arabidopsis-thaliana	Q9FME4	PNM1	Q9FME4	5	79	Small ribosomal subunit protein mL104 (rPPR9)	
+PNM6A_HUMAN	human	P0CW24	PNMA6A	P0CW24	6	42		
+PNM8A_HUMAN	human	Q86V59	PNMA8A	Q86V59	12	128		
+PNM8B_HUMAN	human	Q9ULN7	PNMA8B	Q9ULN7	12	200		
+PNM8C_HUMAN	human	A0A1B0GUJ8	PNMA8C	A0A1B0GUJ8	6	43		
+PNMA-LIKE	human	Q86V59	PNMA8A	Q86V59	12	128	Paraneoplastic antigen-like protein 8A (PNMA-like protein 1)	w
+PNMA-LIKE	human	Q9ULN7	PNMA8B	Q9ULN7	12	200	Paraneoplastic antigen-like protein 8B (PNMA-like protein 2)	w
+PNMA1	human	Q8ND90	PNMA1	Q8ND90	29	248	Paraneoplastic antigen Ma1 (37 kDa neuronal protein) (Neuron	
+PNMA1	mus-musculus	Q8C1C8	Pnma1	Q8C1C8	1	7	Paraneoplastic antigen Ma1 homolog	
+PNMA1	rattus-norvegicus	Q8VHZ4	Pnma1	Q8VHZ4	0	10	Paraneoplastic antigen Ma1 homolog	
+PNMA1_HUMAN	human	Q8ND90	PNMA1	Q8ND90	29	248		
+PNMA2	human	Q9UL42	PNMA2	Q9UL42	47	317	Paraneoplastic antigen Ma2 (40 kDa neuronal protein) (Oncone	
+PNMA2	mus-musculus	Q8BHK0	Pnma2	Q8BHK0	1	10	Paraneoplastic antigen Ma2 homolog	
+PNMA2	rattus-norvegicus	D4A068	Pnma2	D4A068	0	14	PNMA family member 2	
+PNMA2_HUMAN	human	Q9UL42	PNMA2	Q9UL42	47	317		
+PNMA3	human	Q9UL41	PNMA3	Q9UL41	9	87	Paraneoplastic antigen Ma3	
+PNMA3	mus-musculus	Q8JZW8	Pnma3	Q8JZW8	0	1	Paraneoplastic antigen Ma3 homolog	
+PNMA3	rattus-norvegicus	D3Z8Y9	Pnma3	D3Z8Y9	1	5	PNMA family member 3	
+PNMA3_HUMAN	human	Q9UL41	PNMA3	Q9UL41	9	87		
+PNMA4	human	Q96BY2	MOAP1	Q96BY2	13	97		
+PNMA5	human	Q96PV4	PNMA5	Q96PV4	24	93	Paraneoplastic antigen-like protein 5 (Tumor antigen BJ-HCC-	
+PNMA5	mus-musculus	Q5DTT8	Pnma5	Q5DTT8	0	1	Paraneoplastic antigen-like protein 5	
+PNMA5	rattus-norvegicus	D4AEL1	Pnma5	D4AEL1	0	5	PNMA family member 5	
+PNMA5_HUMAN	human	Q96PV4	PNMA5	Q96PV4	24	93		
+PNMA6A	human	P0CW24	PNMA6A	P0CW24	6	42	Paraneoplastic antigen-like protein 6A	
+PNMA6BL	human	A0A0J9YX94	PNMA6F	A0A0J9YX94	3	20		
+PNMA6C	human	P0CW24	PNMA6A	P0CW24	6	42		
+PNMA6E	human	A0A0J9YXQ4	PNMA6E	A0A0J9YXQ4	0	4	Paraneoplastic antigen Ma6E	
+PNMA6E	mus-musculus	A0A140LIU8	Pnma6e	A0A140LIU8	0	4	PNMA family member 6E	
+PNMA6F	human	A0A0J9YX94	PNMA6F	A0A0J9YX94	3	20	Paraneoplastic antigen Ma6F	
+PNMA8A	human	Q86V59	PNMA8A	Q86V59	12	128	Paraneoplastic antigen-like protein 8A (PNMA-like protein 1)	
+PNMA8A	mus-musculus	Q80VM8	Pnma8a	Q80VM8	0	1	Paraneoplastic antigen-like protein 8A	
+PNMA8A	rattus-norvegicus	D3ZA53	Pnma8a	D3ZA53	0	6	PNMA family member 8A	
+PNMA8B	human	Q9ULN7	PNMA8B	Q9ULN7	12	200	Paraneoplastic antigen-like protein 8B (PNMA-like protein 2)	
+PNMA8B	mus-musculus	G3X9N3	Pnma8b	G3X9N3	0	16	PNMA family member 8B	
+PNMA8B	rattus-norvegicus	D3ZQN3	Pnma8b	D3ZQN3	0	2	PNMA family member 8B	
+PNMA8C	human	A0A1B0GUJ8	PNMA8C	A0A1B0GUJ8	6	43	Paraneoplastic antigen-like protein 8C	
+PNMA8C	mus-musculus	A0A1B0GT27	Pnma8c	A0A1B0GT27	0	1	PNMA family member 8C	
+PNMAL1	human	Q86V59	PNMA8A	Q86V59	12	128		
+PNMAL2	human	Q9ULN7	PNMA8B	Q9ULN7	12	200		
+PNMT	human	P11086	PNMT	P11086	4	70	Phenylethanolamine N-methyltransferase (PNMTase) (EC 2.1.1.2	
+PNMT	human	Q9UBM1	PEMT	Q9UBM1	5	59		
+PNMT	mus-musculus	P40935	Pnmt	P40935	0	1	Phenylethanolamine N-methyltransferase	
+PNMTASE	human	P11086	PNMT	P11086	4	70	Phenylethanolamine N-methyltransferase (PNMTase) (EC 2.1.1.2	w
+PNMT_HUMAN	human	P11086	PNMT	P11086	4	70		

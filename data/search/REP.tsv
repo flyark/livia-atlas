@@ -1,25 +1,95 @@
-REP	arabidopsis-thaliana	Q8LLD4	REP	Q8LLD4	11	47	Rab escort protein 1
-REP	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PB62	rep	Q0PB62	0	17	Ribulose-phosphate 3-epimerase
-REP	escherichia-coli-83333	P09980	rep	P09980	0	24	ATP-dependent DNA helicase Rep
-REP	haemophilus-influenzae	P44804	rep	P44804	0	10	ATP-dependent DNA helicase Rep
-REP	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GKB6	rep	A0A0H3GKB6	1	39	ATP-dependent DNA helicase Rep
-REP	neisseria-gonorrhoeae	Q5F8N1	rep	Q5F8N1	0	12	ATP-dependent DNA helicase Rep
-REP	pseudomonas-aeruginosa	Q9HTQ8	rep	Q9HTQ8	0	12	ATP-dependent DNA helicase Rep
-REP	salmonella-typhimurium	Q9L6S1	rep	Q9L6S1	0	10	ATP-dependent DNA helicase Rep
-REP	shigella-dysenteriae-serotype-1	Q329V6	rep	Q329V6	0	11	ATP-dependent DNA helicase Rep
-REP1	candida-albicans-237561	A0A1D8PRN4	REP1	A0A1D8PRN4	1	1	Rep1p
-REP1	oryza-sativa-subsp-japonica	Q7F3A8	REP1	Q7F3A8	0	1	Cysteine endopeptidase Rep1
-REP15	mus-musculus	Q9D7T1	Rep15	Q9D7T1	1	6	Rab15 effector protein
-REP15	rattus-norvegicus	D4A9Z9	Rep15	D4A9Z9	0	5	RAB15 effector protein
-REP2	schizosaccharomyces-pombe	Q09824	rep2	Q09824	1	5	Transcriptional activator protein rep2
-REPA	oryza-sativa-subsp-japonica	Q7GDU7	REPA	Q7GDU7	0	1	Cysteine endopeptidase RepA
-REPB	dictyostelium-discoideum	O00835	repB	O00835	7	110	General transcription and DNA repair factor IIH helicase/translocase subunit XPB
-REPD	dictyostelium-discoideum	Q55G81	repD	Q55G81	5	106	General transcription and DNA repair factor IIH helicase subunit XPD
-REPE	dictyostelium-discoideum	B0M0P5	repE	B0M0P5	12	134	DNA damage-binding protein 1
-REPG	dictyostelium-discoideum	Q54NU0	repG	Q54NU0	1	51	Flap endonuclease 1
-REPIN1	mus-musculus	Q5U4E2	Repin1	Q5U4E2	0	7	DNA-binding protein REPIN1
-REPIN1	rattus-norvegicus	Q68H95	Repin1	Q68H95	0	5	DNA-binding protein REPIN1
-REPS1	mus-musculus	O54916	Reps1	O54916	11	43	RalBP1-associated Eps domain-containing protein 1
-REPS1	rattus-norvegicus	A0A0G2JZY3	Reps1	A0A0G2JZY3	6	33	RALBP1 associated Eps domain containing 1
-REPS2	mus-musculus	Q80XA6	Reps2	Q80XA6	12	38	RalBP1-associated Eps domain-containing protein 2
-REPS2	rattus-norvegicus	A0A0G2K1L4	Reps2	A0A0G2K1L4	13	37	RALBP1 associated Eps domain containing 2
+REP	arabidopsis-thaliana	Q8LLD4	REP	Q8LLD4	11	47	Rab escort protein 1	
+REP	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PB62	rep	Q0PB62	0	17	Ribulose-phosphate 3-epimerase	
+REP	escherichia-coli-83333	P09980	rep	P09980	0	24	ATP-dependent DNA helicase Rep	
+REP	fly	FBgn0026378	Rep	Q9V8W3	6	41	Rab proteins geranylgeranyltransferase component A (Rab esco	
+REP	haemophilus-influenzae	P44804	rep	P44804	0	10	ATP-dependent DNA helicase Rep	
+REP	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GKB6	rep	A0A0H3GKB6	1	39	ATP-dependent DNA helicase Rep	
+REP	neisseria-gonorrhoeae	Q5F8N1	rep	Q5F8N1	0	12	ATP-dependent DNA helicase Rep	
+REP	pseudomonas-aeruginosa	Q9HTQ8	rep	Q9HTQ8	0	12	ATP-dependent DNA helicase Rep	
+REP	salmonella-typhimurium	Q9L6S1	rep	Q9L6S1	0	10	ATP-dependent DNA helicase Rep	
+REP	shigella-dysenteriae-serotype-1	Q329V6	rep	Q329V6	0	11	ATP-dependent DNA helicase Rep	
+REP	virus	A0A077XL69	rep	A0A077XL69	2	3	A0A077XL69_9VIRU	
+REP	virus	A0A077XL96	Rep	A0A077XL96	1	3	A0A077XL96_9VIRU	
+REP	virus	A0A077XLW1	Rep	A0A077XLW1	2	3	A0A077XLW1_9VIRU	
+REP	virus	A0A077XLY1	Rep	A0A077XLY1	2	3	A0A077XLY1_9VIRU	
+REP	virus	A0A077XLY5	rep	A0A077XLY5	1	3	A0A077XLY5_9VIRU	
+REP	virus	A0A077XNA4	rep	A0A077XNA4	1	3	A0A077XNA4_9VIRU	
+REP	virus	A0A0A0YP18	Rep	A0A0A0YP18	1	2	A0A0A0YP18_9CIRC	
+REP	virus	A0A0A0YSC8	Rep	A0A0A0YSC8	0	2	A0A0A0YSC8_9CIRC	
+REP	virus	A0A0E3Z3S0	rep	A0A0E3Z3S0	1	4	Replication-associated protein	
+REP	virus	A0A0N9N7I3	rep	A0A0N9N7I3	0	2	Replication-associated protein	
+REP	virus	A0A0S2C4E4	Rep	A0A0S2C4E4	1	3	Replication-associated protein	
+REP	virus	A0A193CDY3	rep	A0A193CDY3	1	3	A0A193CDY3_9VIRU	
+REP	virus	A0A1Z2X291	Rep	A0A1Z2X291	0	2	Replication-associated protein	
+REP	virus	A0A1Z2X293	Rep	A0A1Z2X293	1	1	A0A1Z2X293_9VIRU	
+REP	virus	A0A1Z2X294	Rep	A0A1Z2X294	1	2	Replication-associated protein	
+REP	virus	A0A286LP77	Rep	A0A286LP77	1	2	Replication-associated protein	
+REP	virus	A0A286LP97	Rep	A0A286LP97	1	2	Replication-associated protein	
+REP	virus	A0A2K9YNB1	Rep	A0A2K9YNB1	0	2	A0A2K9YNB1_9VIRU	
+REP	virus	A0A2K9YNC5	Rep	A0A2K9YNC5	0	2	A0A2K9YNC5_9VIRU	
+REP	virus	A0A2S0D8Z2	Rep	A0A2S0D8Z2	0	3	Replication-associated protein	
+REP	virus	A0A385GHL3	rep	A0A385GHL3	0	4	A0A385GHL3_9VIRU	
+REP	virus	A0A385GIG7	rep	A0A385GIG7	0	4	A0A385GIG7_9VIRU	
+REP	virus	A0A4D6BMF8	Rep	A0A4D6BMF8	1	2	Replication-associated protein	
+REP	virus	A0A4P8W3N5	rep	A0A4P8W3N5	1	2	Replication-associated protein	
+REP	virus	A0A4P8W3N7	rep	A0A4P8W3N7	1	2	A0A4P8W3N7_9VIRU	
+REP	virus	A0A4P8W3P3	rep	A0A4P8W3P3	1	2	Replication-associated protein	
+REP	virus	A0A4P8W3S4	rep	A0A4P8W3S4	1	2	Replication-associated protein	
+REP	virus	A0A4P8W3T2	rep	A0A4P8W3T2	1	2	Replication-associated protein	
+REP	virus	A0A4P8W7B3	rep	A0A4P8W7B3	1	2	A0A4P8W7B3_9VIRU	
+REP	virus	A0A4P8W7C8	rep	A0A4P8W7C8	1	2	Replication-associated protein	
+REP	virus	A0A4P8W7D8	rep	A0A4P8W7D8	0	2	Replication-associated protein	
+REP	virus	A0A4P8W7E4	rep	A0A4P8W7E4	1	2	A0A4P8W7E4_9VIRU	
+REP	virus	A0A4P8W7F2	rep	A0A4P8W7F2	1	2	Replication-associated protein	
+REP	virus	A0A4P8W847	rep	A0A4P8W847	1	2	Replication-associated protein	
+REP	virus	A0A4P8W8C2	rep	A0A4P8W8C2	1	2	A0A4P8W8C2_9VIRU	
+REP	virus	A0A4V1FW39	rep	A0A4V1FW39	1	2	Replication-associated protein	
+REP	virus	A0A4Y5QKX1	rep	A0A4Y5QKX1	1	2	Replication-associated protein	
+REP	virus	A0A4Y5QKX2	rep	A0A4Y5QKX2	1	2	A0A4Y5QKX2_9VIRU	
+REP	virus	A0A4Y5QKX4	rep	A0A4Y5QKX4	1	2	Replication-associated protein	
+REP	virus	A0A4Y5QKX6	rep	A0A4Y5QKX6	1	2	Replication-associated protein	
+REP	virus	A0A4Y5QLV7	rep	A0A4Y5QLV7	1	2	Replication-associated protein	
+REP	virus	A0A4Y5QNC5	rep	A0A4Y5QNC5	1	2	A0A4Y5QNC5_9VIRU	
+REP	virus	A0A4Y5QND1	rep	A0A4Y5QND1	0	2	A0A4Y5QND1_9VIRU	
+REP	virus	A0A5B8PAI2	Rep	A0A5B8PAI2	1	2	Replication-associated protein	
+REP	virus	A0A5P8PNA8	rep	A0A5P8PNA8	1	2	Replication-associated protein	
+REP	virus	A0A5P8PNC1	rep	A0A5P8PNC1	1	2	Replication-associated protein	
+REP	virus	A0A5P8PNG8	rep	A0A5P8PNG8	0	2	A0A5P8PNG8_9VIRU	
+REP	virus	A0A5P8PNL1	rep	A0A5P8PNL1	1	2	Replication-associated protein	
+REP	virus	A0A6C0G9P7	Rep	A0A6C0G9P7	1	2	A0A6C0G9P7_9VIRU	
+REP	virus	A0A6C0G9R7	Rep	A0A6C0G9R7	1	2	Replication-associated protein	
+REP	virus	A0A6G5X0Z9	rep	A0A6G5X0Z9	1	2	Replication-associated protein	
+REP	virus	A0A6G8IYX4	rep	A0A6G8IYX4	1	1	Replication-associated protein	
+REP	virus	A0A7S6KV07	Rep	A0A7S6KV07	1	2	Replication-associated protein	
+REP	virus	A0A8K0ZE94	rep	A0A8K0ZE94	1	2	Replication-associated protein	
+REP	virus	A0AA48XT79	Rep	A0AA48XT79	1	2	Replication-associated protein	
+REP	virus	A0AA48XT86	Rep	A0AA48XT86	0	2	Replication-associated protein	
+REP	virus	A0AA48XTF0	rep	A0AA48XTF0	1	2	Replication-associated protein	
+REP	virus	A0AC61TD93	rep	A0AC61TD93	1	2	Replication-associated protein	
+REP	virus	A0AC61TD95	rep	A0AC61TD95	1	2	Replication-associated protein	
+REP	virus	D4N3N6	rep	D4N3N6	1	2	Replication-associated protein	
+REP	virus	D4N3N8	rep	D4N3N8	1	2	Replication-associated protein	
+REP	virus	D4N3P0	rep	D4N3P0	1	2	Replication-associated protein	
+REP	virus	D4N3P2	Rep	D4N3P2	1	2	Replication-associated protein	
+REP	virus	D4N3P6	rep	D4N3P6	1	2	Replication-associated protein	
+REP	virus	D4N3Q0	rep	D4N3Q0	1	2	Replication-associated protein	
+REP	virus	D4N3Q6	rep	D4N3Q6	1	2	Replication-associated protein	
+REP	virus	D4N3Q8	rep	D4N3Q8	1	2	Replication-associated protein	
+REP	virus	D4N3R0	rep	D4N3R0	1	2	Replication-associated protein	
+REP	virus	D4N3R2	rep	D4N3R2	1	2	Replication-associated protein	
+REP	virus	E0XJJ4	Rep	E0XJJ4	0	2	E0XJJ4_9VIRU	
+REP	virus	F6KIE0	Rep	F6KIE0	1	4	F6KIE0_9VIRU	
+REP	virus	I1TEL3	Rep	I1TEL3	1	2	Replication-associated protein	
+REP	virus	Q06J75	rep	Q06J75	0	3	Replication-associated protein	
+REP	virus	Q06J78	rep	Q06J78	1	3	Replication-associated protein	
+REP	virus	Q65443	rep	Q65443	0	4	Q65443_9VIRU	
+REP	virus	Q6DNI6	rep	Q6DNI6	1	2	Replication-associated protein	
+REP	virus	Q7T7C4	rep	Q7T7C4	1	2	Replication-associated protein	
+REP	virus	Q7TG44	Rep	Q7TG44	0	2	Q7TG44_9VIRU	
+REP	virus	Q805H4	Rep	Q805H4	1	2	Replication-associated protein	
+REP	virus	Q912W1	Rep	Q912W1	1	1	Replication-associated protein	
+REP	virus	Q91EK3	rep	Q91EK3	1	4	Replication-associated protein	
+REP	virus	Q9IG45	rep	Q9IG45	1	5	Replication-associated protein	
+REP	virus	R4L1J0	rep	R4L1J0	1	2	Replication-associated protein	
+REP	virus	R4LAH3	rep	R4LAH3	1	2	Replication-associated protein	
+REP	virus	W8SNN0	Rep	W8SNN0	1	2	Replication-associated protein	

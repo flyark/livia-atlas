@@ -1,18 +1,111 @@
-Q5Y4N8	rattus-norvegicus	Q5Y4N8	Adgre1	Q5Y4N8	1	20	Adhesion G protein-coupled receptor E2
-Q5Y4Y6	mus-musculus	Q5Y4Y6	Gsdma3	Q5Y4Y6	0	3	Gasdermin-A3
-Q5Y5T3	mus-musculus	Q5Y5T3	Zdhhc23	Q5Y5T3	0	1	Palmitoyltransferase ZDHHC23
-Q5Y5T5	mus-musculus	Q5Y5T5	Zdhhc8	Q5Y5T5	0	8	Palmitoyltransferase ZDHHC8
-Q5Y750	arabidopsis-thaliana	Q5Y750	CYP51G2	Q5Y750	2	50	Putative sterol 14-demethylase-like protein
-Q5YD48	mus-musculus	Q5YD48	A1cf	Q5YD48	1	16	APOBEC1 complementation factor
-Q5YDB5	arabidopsis-thaliana	Q5YDB5	CPL2	Q5YDB5	0	60	RNA polymerase II C-terminal domain phosphatase-like 2
-Q5YDB6	arabidopsis-thaliana	Q5YDB6	CPL1	Q5YDB6	2	73	RNA polymerase II C-terminal domain phosphatase-like 1
-Q5YGP7	arabidopsis-thaliana	Q5YGP7	PLT2	Q5YGP7	0	16	AP2-like ethylene-responsive transcription factor PLT2
-Q5YGP8	arabidopsis-thaliana	Q5YGP8	PLT1	Q5YGP8	0	14	AP2-like ethylene-responsive transcription factor PLT1
-Q5YIR8	mus-musculus	Q5YIR8	Clec4a4	Q5YIR8	0	2	C-type lectin domain family 4, member a4
-Q5YIR9	rattus-norvegicus	Q5YIR9	Clec4a1	Q5YIR9	0	2	C-type lectin domain family 4, member A1
-Q5YKV6	rattus-norvegicus	Q5YKV6	Dnajb13	Q5YKV6	6	84	DnaJ homolog subfamily B member 13
-Q5YLM1	rattus-norvegicus	Q5YLM1	Dagla	Q5YLM1	0	4	Diacylglycerol lipase-alpha
-Q5YLM2	zea-mays	Q5YLM2	rth3	Q5YLM2	0	24	COBRA-like protein 7
-Q5YLM3	zea-mays	Q5YLM3	rth1	Q5YLM3	16	91	Roothairless 1
-Q5YLY5	oryza-sativa-subsp-japonica	Q5YLY5	Os06g0724100	Q5YLY5	7	52	Os06g0724100 protein
-Q5YM05	oryza-sativa-subsp-japonica	Q5YM05	Os06g0720400	Q5YM05	0	1	Os06g0720400 protein
+Q5Y0M9	virus	Q5Y0M9	RS1	Q5Y0M9	4	69	Q5Y0M9_9ALPH	
+Q5Y0N0	virus	Q5Y0N0	US12	Q5Y0N0	0	72	ICP47 protein	
+Q5Y0N1	virus	Q5Y0N1	US11	Q5Y0N1	1	72	Q5Y0N1_9ALPH	
+Q5Y0N2	virus	Q5Y0N2	US10	Q5Y0N2	8	72	Q5Y0N2_9ALPH	
+Q5Y0N3	virus	Q5Y0N3	US9	Q5Y0N3	1	72	Q5Y0N3_9ALPH	
+Q5Y0N4	virus	Q5Y0N4	US8.5	Q5Y0N4	2	72	Q5Y0N4_9ALPH	
+Q5Y0N5	virus	Q5Y0N5	US8	Q5Y0N5	10	72	Envelope glycoprotein E	
+Q5Y0N6	virus	Q5Y0N6	US7	Q5Y0N6	3	72	Envelope glycoprotein I	
+Q5Y0N7	virus	Q5Y0N7	US6	Q5Y0N7	4	72	Q5Y0N7_9ALPH	
+Q5Y0N9	virus	Q5Y0N9	US4	Q5Y0N9	6	72	Q5Y0N9_9ALPH	
+Q5Y0P0	virus	Q5Y0P0	US3	Q5Y0P0	7	72	non-specific serine/threonine protein kinase	
+Q5Y0P1	virus	Q5Y0P1	US2	Q5Y0P1	5	72	Q5Y0P1_9ALPH	
+Q5Y0P2	virus	Q5Y0P2	US1	Q5Y0P2	3	72	Q5Y0P2_9ALPH	
+Q5Y0P4	virus	Q5Y0P4	RL2	Q5Y0P4	3	72	Q5Y0P4_9ALPH	
+Q5Y0P5	virus	Q5Y0P5	UL56	Q5Y0P5	2	72	Q5Y0P5_9ALPH	
+Q5Y0P6	virus	Q5Y0P6	UL55	Q5Y0P6	4	72	Q5Y0P6_9ALPH	
+Q5Y0P7	virus	Q5Y0P7	UL54	Q5Y0P7	4	72	Q5Y0P7_9ALPH	
+Q5Y0P8	virus	Q5Y0P8	UL53	Q5Y0P8	5	72	Envelope glycoprotein K	
+Q5Y0P9	virus	Q5Y0P9	UL52	Q5Y0P9	6	71	Q5Y0P9_9ALPH	
+Q5Y0Q0	virus	Q5Y0Q0	UL51	Q5Y0Q0	3	72	Q5Y0Q0_9ALPH	
+Q5Y0Q1	virus	Q5Y0Q1	UL50	Q5Y0Q1	3	72	Q5Y0Q1_9ALPH	
+Q5Y0Q2	virus	Q5Y0Q2	UL49A	Q5Y0Q2	2	72	Q5Y0Q2_9ALPH	
+Q5Y0Q3	virus	Q5Y0Q3	UL49	Q5Y0Q3	2	72	Tegument protein VP22	
+Q5Y0Q4	virus	Q5Y0Q4	UL48	Q5Y0Q4	5	72	Alpha trans-inducing protein	
+Q5Y0Q5	virus	Q5Y0Q5	UL47	Q5Y0Q5	6	72	Tegument protein UL47	
+Q5Y0Q6	virus	Q5Y0Q6	UL46	Q5Y0Q6	5	72	Q5Y0Q6_9ALPH	
+Q5Y0Q7	virus	Q5Y0Q7	UL45	Q5Y0Q7	3	72	Envelope protein UL45	
+Q5Y0Q8	virus	Q5Y0Q8	UL44	Q5Y0Q8	4	72	Envelope glycoprotein C	
+Q5Y0Q9	virus	Q5Y0Q9	UL43	Q5Y0Q9	0	72	Q5Y0Q9_9ALPH	
+Q5Y0R0	virus	Q5Y0R0	UL42	Q5Y0R0	3	72	DNA polymerase processivity factor	
+Q5Y0R1	virus	Q5Y0R1	UL41	Q5Y0R1	6	72	Virion host shutoff protein	
+Q5Y0R2	virus	Q5Y0R2	UL40	Q5Y0R2	3	72	ribonucleoside-diphosphate reductase	
+Q5Y0R3	virus	Q5Y0R3	UL39	Q5Y0R3	4	72	Ribonucleoside-diphosphate reductase large subunit	
+Q5Y0R4	virus	Q5Y0R4	UL38	Q5Y0R4	3	72	Q5Y0R4_9ALPH	
+Q5Y0R5	virus	Q5Y0R5	UL37	Q5Y0R5	4	68	Q5Y0R5_9ALPH	
+Q5Y0R7	virus	Q5Y0R7	UL35	Q5Y0R7	1	72	Small capsomere-interacting protein	
+Q5Y0R8	virus	Q5Y0R8	UL34	Q5Y0R8	4	72	Q5Y0R8_9ALPH	
+Q5Y0R9	virus	Q5Y0R9	UL33	Q5Y0R9	1	72	Q5Y0R9_9ALPH	
+Q5Y0S0	virus	Q5Y0S0	UL32	Q5Y0S0	5	72	Packaging protein UL32	
+Q5Y0S1	virus	Q5Y0S1	UL31	Q5Y0S1	2	72	Q5Y0S1_9ALPH	
+Q5Y0S2	virus	Q5Y0S2	UL30	Q5Y0S2	7	67	DNA polymerase	
+Q5Y0S3	virus	Q5Y0S3	UL29	Q5Y0S3	5	68	Q5Y0S3_9ALPH	
+Q5Y0S4	virus	Q5Y0S4	UL28	Q5Y0S4	5	72	Q5Y0S4_9ALPH	
+Q5Y0S5	virus	Q5Y0S5	UL27	Q5Y0S5	0	72	Q5Y0S5_9ALPH	
+Q5Y0S6	virus	Q5Y0S6	UL26.5	Q5Y0S6	7	72	Q5Y0S6_9ALPH	
+Q5Y0S7	virus	Q5Y0S7	UL26	Q5Y0S7	8	72	Capsid scaffolding protein	
+Q5Y0S8	virus	Q5Y0S8	UL25	Q5Y0S8	6	72	Q5Y0S8_9ALPH	
+Q5Y0S9	virus	Q5Y0S9	UL24	Q5Y0S9	4	72	Q5Y0S9_9ALPH	
+Q5Y0T0	virus	Q5Y0T0	UL23	Q5Y0T0	1	72	Q5Y0T0_9ALPH	
+Q5Y0T1	virus	Q5Y0T1	UL22	Q5Y0T1	7	72	Q5Y0T1_9ALPH	
+Q5Y0T2	virus	Q5Y0T2	UL21	Q5Y0T2	5	72	Q5Y0T2_9ALPH	
+Q5Y0T6	virus	Q5Y0T6	UL17	Q5Y0T6	3	72	Q5Y0T6_9ALPH	
+Q5Y0T7	virus	Q5Y0T7	UL16	Q5Y0T7	11	72	Q5Y0T7_9ALPH	
+Q5Y0T8	virus	Q5Y0T8	UL15	Q5Y0T8	7	72	Q5Y0T8_9ALPH	
+Q5Y0T9	virus	Q5Y0T9	UL14	Q5Y0T9	0	72	Q5Y0T9_9ALPH	
+Q5Y0U0	virus	Q5Y0U0	UL13	Q5Y0U0	5	72	Q5Y0U0_9ALPH	
+Q5Y0U1	virus	Q5Y0U1	UL12	Q5Y0U1	3	72	Q5Y0U1_9ALPH	
+Q5Y0U2	virus	Q5Y0U2	UL11	Q5Y0U2	2	72	Cytoplasmic envelopment protein 3	
+Q5Y0U3	virus	Q5Y0U3	UL10	Q5Y0U3	1	72	Q5Y0U3_9ALPH	
+Q5Y0U4	virus	Q5Y0U4	UL9	Q5Y0U4	2	72	Replication origin-binding protein	
+Q5Y0U5	virus	Q5Y0U5	UL8	Q5Y0U5	9	72	Q5Y0U5_9ALPH	
+Q5Y0U6	virus	Q5Y0U6	UL7	Q5Y0U6	4	72	Q5Y0U6_9ALPH	
+Q5Y0U7	virus	Q5Y0U7	UL6	Q5Y0U7	4	72	Q5Y0U7_9ALPH	
+Q5Y0U8	virus	Q5Y0U8	UL5	Q5Y0U8	3	72	Q5Y0U8_9ALPH	
+Q5Y0U9	virus	Q5Y0U9	UL4	Q5Y0U9	1	72	Q5Y0U9_9ALPH	
+Q5Y0V0	virus	Q5Y0V0	UL3	Q5Y0V0	7	72	Q5Y0V0_9ALPH	
+Q5Y0V1	virus	Q5Y0V1	UL2	Q5Y0V1	3	72	Q5Y0V1_9ALPH	
+Q5Y0V2	virus	Q5Y0V2	UL1	Q5Y0V2	5	72	Q5Y0V2_9ALPH	
+Q5Y388	virus	Q5Y388_p1f4d8475f7		Q5Y388	2	8	Spike glycoprotein E2	
+Q5Y388	virus	Q5Y388_p2ba888bc9d		Q5Y388	0	8	6K protein	
+Q5Y388	virus	Q5Y388_p30b7c62c2d		Q5Y388	1	8	Capsid protein	
+Q5Y388	virus	Q5Y388_p8b46002e4c		Q5Y388	1	8	Assembly protein E3	
+Q5Y388	virus	Q5Y388_pd4902e3368		Q5Y388	1	8	Spike glycoprotein E1	
+Q5Y388_P1F4D8475F7	virus	Q5Y388_p1f4d8475f7		Q5Y388	2	8	Spike glycoprotein E2	
+Q5Y388_P2BA888BC9D	virus	Q5Y388_p2ba888bc9d		Q5Y388	0	8	6K protein	
+Q5Y388_P30B7C62C2D	virus	Q5Y388_p30b7c62c2d		Q5Y388	1	8	Capsid protein	
+Q5Y388_P8B46002E4C	virus	Q5Y388_p8b46002e4c		Q5Y388	1	8	Assembly protein E3	
+Q5Y388_PD4902E3368	virus	Q5Y388_pd4902e3368		Q5Y388	1	8	Spike glycoprotein E1	
+Q5Y389	virus	Q5Y389_p26ee5aad37		Q5Y389	1	8	mRNA capping enzyme nsP1	
+Q5Y389	virus	Q5Y389_p5802b453c1		Q5Y389	1	8	RNA directed RNA polymerase nsP4	
+Q5Y389	virus	Q5Y389_pd201f8d59d		Q5Y389	2	8	Protease nsP2	
+Q5Y389_P26EE5AAD37	virus	Q5Y389_p26ee5aad37		Q5Y389	1	8	mRNA capping enzyme nsP1	
+Q5Y389_P5802B453C1	virus	Q5Y389_p5802b453c1		Q5Y389	1	8	RNA directed RNA polymerase nsP4	
+Q5Y389_PD201F8D59D	virus	Q5Y389_pd201f8d59d		Q5Y389	2	8	Protease nsP2	
+Q5Y4N8	rattus-norvegicus	Q5Y4N8	Adgre1	Q5Y4N8	1	20	Adhesion G protein-coupled receptor E2	
+Q5Y4Y6	mus-musculus	Q5Y4Y6	Gsdma3	Q5Y4Y6	0	3	Gasdermin-A3	
+Q5Y5T3	mus-musculus	Q5Y5T3	Zdhhc23	Q5Y5T3	0	1	Palmitoyltransferase ZDHHC23	
+Q5Y5T5	mus-musculus	Q5Y5T5	Zdhhc8	Q5Y5T5	0	8	Palmitoyltransferase ZDHHC8	
+Q5Y750	arabidopsis-thaliana	Q5Y750	CYP51G2	Q5Y750	2	50	Putative sterol 14-demethylase-like protein	
+Q5Y7H0	human	Q5Y7H0	HLA-DQA1	Q5Y7H0	18	94	HLA class II histocompatibility antigen DQ alpha chain	
+Q5Y835	zebrafish	Q5Y835	gnrh2	Q5Y835	5	117	Progonadoliberin	
+Q5Y9A9	virus	Q5Y9A9		Q5Y9A9	1	11	Non-structural protein 3	
+Q5YB40	zebrafish	Q5YB40	mfng	Q5YB40	1	17	Beta-1,3-N-acetylglucosaminyltransferase manic fringe	
+Q5YCZ2	zebrafish	Q5YCZ2	nitr1o	Q5YCZ2	1	14	Novel immune-type receptor 1n isoform X1	
+Q5YD48	mus-musculus	Q5YD48	A1cf	Q5YD48	1	16	APOBEC1 complementation factor	
+Q5YDB5	arabidopsis-thaliana	Q5YDB5	CPL2	Q5YDB5	0	60	RNA polymerase II C-terminal domain phosphatase-like 2	
+Q5YDB6	arabidopsis-thaliana	Q5YDB6	CPL1	Q5YDB6	2	73	RNA polymerase II C-terminal domain phosphatase-like 1	
+Q5YGP7	arabidopsis-thaliana	Q5YGP7	PLT2	Q5YGP7	0	16	AP2-like ethylene-responsive transcription factor PLT2	
+Q5YGP8	arabidopsis-thaliana	Q5YGP8	PLT1	Q5YGP8	0	14	AP2-like ethylene-responsive transcription factor PLT1	
+Q5YIR8	mus-musculus	Q5YIR8	Clec4a4	Q5YIR8	0	2	C-type lectin domain family 4, member a4	
+Q5YIR9	rattus-norvegicus	Q5YIR9	Clec4a1	Q5YIR9	0	2	C-type lectin domain family 4, member A1	
+Q5YKG3	zebrafish	Q5YKG3	gna13a	Q5YKG3	48	133	G-protein alpha 13a	
+Q5YKG4	zebrafish	Q5YKG4	gna12a	Q5YKG4	64	135	G-protein alpha 12	
+Q5YKI7	human	Q5YKI7	GGNBP1	Q5YKI7	2	5	Putative gametogenetin-binding protein 1	
+Q5YKV6	rattus-norvegicus	Q5YKV6	Dnajb13	Q5YKV6	6	84	DnaJ homolog subfamily B member 13	
+Q5YLG6	zebrafish	Q5YLG6	rhov	Q5YLG6	16	62	Ras homolog gene family, member V	
+Q5YLM1	rattus-norvegicus	Q5YLM1	Dagla	Q5YLM1	0	4	Diacylglycerol lipase-alpha	
+Q5YLM2	zea-mays	Q5YLM2	rth3	Q5YLM2	0	24	COBRA-like protein 7	
+Q5YLM3	zea-mays	Q5YLM3	rth1	Q5YLM3	16	91	Roothairless 1	
+Q5YLY5	oryza-sativa-subsp-japonica	Q5YLY5	Os06g0724100	Q5YLY5	7	52	Os06g0724100 protein	
+Q5YM05	oryza-sativa-subsp-japonica	Q5YM05	Os06g0720400	Q5YM05	0	1	Os06g0720400 protein	
