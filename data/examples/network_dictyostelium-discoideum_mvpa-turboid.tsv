@@ -1,5 +1,5 @@
 # Vault-proximal proteins: TurboID proximity labeling with Major Vault Protein A (MVPA-TurboID) versus cytosolic TurboID in Dictyostelium discoideum cells (label-free DIA proteomics, limma/eBayes in MS-DAP)
-# Geissler K, Kreysing JP, Wang Y, et al. 2026. The vault associates with membranes in situ. Nat Commun 17:3659. https://doi.org/10.1038/s41467-026-71837-7
+# Geißler K, Kreysing JP, Wang Y, et al. 2026. The vault associates with membranes in situ. Nat Commun 17:3659. https://doi.org/10.1038/s41467-026-71837-7
 # Source: 41467_2026_71837_MOESM4_ESM.zip, Source_data_Vault.xlsx, sheet "Fig. 5D" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13100048/supplementaryFiles)
 # Cutoff: q < 0.01 with positive log2 fold change toward MVPA-TurboID (the paper's 529 significantly enriched proteins); the two engineered constructs in the search database (X00001 MVPA-GS-TurboID, X00019 TurboID-(G4S)2-StrepII) removed, leaving 527; top 150 by log2 fold change; bait MVPA (P34118) added as row 1 without values (not in the differential table)
 # Licensed CC BY 4.0
