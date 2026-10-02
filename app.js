@@ -478,7 +478,7 @@ async function virusStruct(sp, ia, ib) {
 }
 // The link to a virus pair's model in LIVIA, wired: the database's copy, or a byte-range read of the release archive.
 // An AFDB heterodimer pair (species with one AFDB screen): its model and PAE in the heterodimer release at EBI, addresses from
-// structs/<k>.tsv (pairs past 10% FPR, sharded by the lower proteins.json row // 1000); null below the cutoff.
+// structs/<k>.tsv (pairs past 10% FPR, each under both proteins.json rows // 1000 when files.structsBoth, else under the lower one); null below the cutoff.
 const HET_URL = (tar) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers/${tar}`;
 // Each row: a, b, entity, tar, cif_off, cif_len, pae_off, pae_len, then every lis.py score in VMCOL order (build/afdb_struct_scores.py).
 function hetShard(sp, k) {
@@ -1178,8 +1178,6 @@ async function viewHome() {
     </section>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase();
-  const idle = window.requestIdleCallback || ((f) => setTimeout(f, 1500));
-  void idle;   // the search reads a name shard per query, so no species index is loaded here
 }
 async function fillThemes() {   // home: each theme's species and totals, from its members' counts
   const reg = await registry(), box = $('#themes'); if (!box) return;
