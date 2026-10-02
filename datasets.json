@@ -3,7 +3,7 @@
   {
    "id": "human",
    "label": "Human",
-   "name": "Homo sapiens",
+   "name": "Homo sapiens", "taxon": 9606,
    "base": "data/species/human/",
    "datasets": [
     "human-predictomes",
@@ -16,7 +16,7 @@
   {
    "id": "fly",
    "label": "Fly",
-   "name": "Drosophila melanogaster",
+   "name": "Drosophila melanogaster", "taxon": 7227,
    "base": "data/species/fly/",
    "datasets": [
     "flypredictome",
@@ -27,7 +27,7 @@
   {
    "id": "zebrafish",
    "label": "Zebrafish",
-   "name": "Danio rerio",
+   "name": "Danio rerio", "taxon": 7955,
    "base": "data/species/zebrafish/",
    "datasets": [
     "zebrafish-kinase-kinase",
@@ -38,7 +38,7 @@
   {
    "id": "yeast",
    "label": "Yeast",
-   "name": "Saccharomyces cerevisiae",
+   "name": "Saccharomyces cerevisiae", "taxon": 559292,
    "base": "data/species/yeast/",
    "datasets": [
     "yeast-kinase-kinase",
@@ -50,7 +50,7 @@
   {
    "id": "worm",
    "label": "C. elegans",
-   "name": "Caenorhabditis elegans",
+   "name": "Caenorhabditis elegans", "taxon": 6239,
    "base": "data/species/worm/",
    "datasets": [
     "worm-kinase-kinase",

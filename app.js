@@ -800,6 +800,22 @@ function afdbEntry(acc) {
   }).catch(() => { AFDB.delete(acc); return { failed: true }; }));   // null: AFDB has no model; failed: the request did not get through (not remembered, so it can be retried)
   return AFDB.get(acc);
 }
+// The gene's other UniProt entries (isoform and fragment entries, mostly unreviewed), for a model when the protein's own
+// accession has none: by FlyBase gene for fly, by gene symbol and taxon elsewhere. → [{acc, id, len, seq}], never the accession given.
+const SIBS = new Map();
+function siblingEntries(sp, P) {
+  const taxon = sp.reg.taxon, q = /^FBgn\d{7}$/.test(P.key) ? `xref:flybase-${P.key}` : P.gene && taxon && /^[A-Za-z0-9][\w.-]*$/.test(P.gene) ? `gene_exact:${P.gene}` : '';
+  if (!q || !taxon) return Promise.resolve([]);
+  const ck = `${q}|${taxon}`;
+  if (!SIBS.has(ck)) SIBS.set(ck, fetch(`https://rest.uniprot.org/uniprotkb/search?query=${encodeURIComponent(`(${q}) AND (organism_id:${taxon})`)}&fields=accession,id,length,sequence&format=json&size=25`)
+    .then((r) => (r.ok ? r.json() : { results: [] })).then((d) => (d.results || []).map((e) => ({ acc: e.primaryAccession, id: e.uniProtkbId || e.primaryAccession, len: e.sequence ? e.sequence.length : 0, seq: e.sequence ? e.sequence.value || '' : '' }))
+      .filter((e) => e.acc && e.acc !== P.acc)).catch(() => { SIBS.delete(ck); return []; }));
+  return SIBS.get(ck);
+}
+const USEQ = new Map();   // accession → Promise<sequence> from UniProt, for a construct whose sequence the bundle does not carry
+const uniprotSeq = (acc) => { if (!acc) return Promise.resolve('');
+  if (!USEQ.has(acc)) USEQ.set(acc, fetch(`https://rest.uniprot.org/uniprotkb/${encodeURIComponent(acc)}.fasta`).then((r) => (r.ok ? r.text() : '')).then((t) => t.split('\n').slice(1).join('').trim()).catch(() => { USEQ.delete(acc); return ''; }));
+  return USEQ.get(acc); };
 async function alphaMissense(url) {   // mean pathogenicity over all substitutions at each residue (as LIVIA's resolver)
   try {
     const lines = (await (await fetch(url)).text()).split('\n'), sum = [], cnt = [];
@@ -2500,30 +2516,55 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function recolor3D() { legend3D(); if (V.shown) applyColorsToMolstarFrame('viewer3d-frame', colorComponents(), 'mmcif'); }
   function mapStruct() {   // the clustered construct onto the AlphaFold DB model (the UniProt sequence)
     const es = S.entrySeq; if (!es) return;
-    const cLen = CQ.qLen || P.clen;
-    if (qSeq && qSeq.length === cLen) {
-      if (qSeq === es) { S.map = null; S.mapOK = true; S.mapNote = 'sequence 1:1'; }
-      else { const mi = CLIPResolver.alignMap(qSeq, es); S.map = mi.map; S.mapOK = mi.covered > 0; S.mapNote = `remapped (${mi.method}, ${Math.round(100 * mi.covered / qSeq.length)}% matched)`; }
+    const cLen = CQ.qLen || P.clen, cs = cseq();
+    if (location.search.includes('debug')) window.__struct = { qSeq: qSeq.length, cseq: cs.length, cLen, qLen: CQ.qLen, clen: P.clen, len: P.len, es: es.length, acc: S.acc || P.acc };   // a local test reads the lengths mapStruct weighs
+    if (cs) {
+      if (cs === es) { S.map = null; S.mapOK = true; S.mapNote = 'sequence 1:1'; }
+      else { const mi = CLIPResolver.alignMap(cs, es); S.map = mi.map; S.mapOK = mi.covered > 0; S.mapNote = `remapped (${mi.method}, ${Math.round(100 * mi.covered / cs.length)}% matched)`; }
     } else if (es.length === cLen) { S.map = null; S.mapOK = true; S.mapNote = 'same length'; }
     else { S.map = null; S.mapOK = false; S.mapNote = `The clustered construct (${fmtInt(cLen)} aa) differs from the model (${fmtInt(es.length)} aa), so clusters are not placed on it.`; }
-    $('#struct-badge').innerHTML = `AlphaFold DB <a href="https://alphafold.ebi.ac.uk/entry/${esc(P.acc)}" target="_blank" rel="noopener">${esc(P.acc)}</a> · ${esc(S.mapOK ? S.mapNote : 'not mapped')}`;
+    const acc = S.acc || P.acc, alt = S.alt ? ` <span class="muted">(${esc(S.alt.id)}, ${fmtInt(S.alt.len)} aa: another UniProt entry of ${esc(P.gene)}; ${P.acc ? `${esc(P.acc)} has no model` : 'this protein has no accession'})</span>` : '';
+    $('#struct-badge').innerHTML = `AlphaFold DB <a href="https://alphafold.ebi.ac.uk/entry/${esc(acc)}" target="_blank" rel="noopener">${esc(acc)}</a>${alt} · ${esc(S.mapOK ? S.mapNote : 'not mapped')}`;
+  }
+  // The clustered construct's own sequence, the one the contact residues index into: the bundle's, when its length is the
+  // construct's; else the UniProt sequence of the protein's accession when that is the construct (S.useq, fetched by loadStructure).
+  const cseq = () => { const cLen = CQ.qLen || P.clen; if (qSeq && qSeq.length === cLen) return qSeq;
+    const u = S.useq || ''; return u.length === cLen ? u : u.length === cLen + 1 && u[0] === 'M' ? u.slice(1) : '' ; };   // UniProt's copy may carry an initiator Met the folded construct lacks
+  async function siblingModel() {   // no model for the protein's own accession: the gene's other UniProt entries that have one, the closest to the clustered construct first
+    const sibs = await siblingEntries(sp, P); if (gone() || !sibs.length) return null;
+    const got = await Promise.all(sibs.slice(0, 12).map(async (e) => { const m = await afdbEntry(e.acc).catch(() => null); return m && !m.failed ? { ...e, entry: m, seq: m.seq || e.seq } : null; }));
+    if (gone()) return null;
+    const cs = cseq(), cands = got.filter(Boolean).map((c) => { const mi = cs && c.seq ? CLIPResolver.alignMap(cs, c.seq) : null;
+      return { ...c, covered: mi ? mi.covered : 0, frac: mi && cs ? mi.covered / cs.length : 0 }; }).sort((a, b) => b.covered - a.covered || Math.abs(a.len - (CQ.qLen || P.clen || 0)) - Math.abs(b.len - (CQ.qLen || P.clen || 0)));
+    const best = cands[0];
+    return best && (best.covered >= 100 || best.frac >= 0.2) ? best : null;   // close enough to place residues on: at least 100 identical residues, or a fifth of the construct
   }
   async function loadStructure() {
     const msg = (t) => { const m = $('#v3d-msg'); if (m) { m.hidden = false; m.innerHTML = t; } };
-    if (!P.acc) { S.state = 'none'; msg('No UniProt accession for this protein, so there is no AlphaFold DB model to show.'); return; }
+    const noGene = ['construct', 'other species'].includes(P.status);   // a tagged construct or a foreign protein: no gene to look up
+    if (!P.acc && noGene) { S.state = 'none'; msg('No UniProt accession for this protein, so there is no AlphaFold DB model to show.'); return; }
     try { await liviaReady(); } catch (e) { if (!gone()) { S.state = 'none'; msg(esc(e.message)); } return; }
     if (gone()) return;
-    domainsOf(P.acc).then((d) => { if (gone()) return; S.domains = d; drawFreq(); if (clustered()) renderSites(); });
-    const entry = await afdbEntry(P.acc);
+    if (P.acc) domainsOf(P.acc).then((d) => { if (gone()) return; S.domains = d; drawFreq(); if (clustered()) renderSites(); });
+    let entry = P.acc ? await afdbEntry(P.acc) : null;
     if (gone()) return;
+    if (P.acc && !(qSeq && qSeq.length === (CQ.qLen || P.clen))) { S.useq = await uniprotSeq(P.acc); if (gone()) return; }   // the bundle's sequence is not the construct's: UniProt's may be
     if (entry && entry.failed) { S.state = 'none'; msg(`The AlphaFold DB model of ${esc(P.acc)} could not be loaded (no answer from alphafold.ebi.ac.uk). Reload the page to try again.`); $('#struct-badge').textContent = ''; return; }
-    if (!entry) { S.state = 'none'; msg(`No AlphaFold DB model for ${esc(P.acc)}${(P.clen || P.len) > 2700 ? ' (the database has none for proteins longer than 2,700 residues)' : ''}.`); $('#struct-badge').textContent = ''; return; }
+    if (!entry) {   // the gene's other entries: an isoform or fragment entry with a model stands in, its residues placed by alignment
+      const why = P.acc ? `No AlphaFold DB model for ${esc(P.acc)}${(P.clen || P.len) > 2700 ? ' (the database has none for proteins longer than 2,700 residues)' : ''}` : 'No UniProt accession for this protein';
+      if (noGene) { S.state = 'none'; msg(`${why}.`); $('#struct-badge').textContent = ''; return; }
+      msg(`${why}. Looking for a model of another UniProt entry of ${esc(P.gene)}…`);
+      const alt = await siblingModel();
+      if (gone()) return;
+      if (!alt) { S.state = 'none'; msg(`${why}, and no other UniProt entry of ${esc(P.gene)} has one${cseq() ? ' close enough to this construct' : ''}.`); $('#struct-badge').textContent = ''; return; }
+      entry = alt.entry; S.acc = alt.acc; S.alt = { acc: alt.acc, id: alt.id, len: alt.len, covered: alt.covered };
+    }
     S.uniSeq = S.entrySeq = entry.seq || ''; mapStruct();
     try { S.text = await (await fetch(entry.cifUrl)).text(); } catch (e) { if (!gone()) { S.state = 'none'; msg('The AlphaFold DB model could not be downloaded.'); } return; }
     if (gone()) return;
     S.len = entry.seq.length || P.clen; S.plddt = parseBfactorsPerResidue(S.text, 'cif'); S.state = 'ready';
     if (!S.mapOK) { V.mode = 'plddt'; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === 'plddt')); }
-    drawFreq(); msg('The 3D viewer loads when this card scrolls into view.');
+    drawFreq(); msg(`${S.alt ? `Showing the AlphaFold DB model of ${esc(S.alt.id)} (${esc(S.alt.acc)}, ${fmtInt(S.alt.len)} aa), another UniProt entry of ${esc(P.gene)}, because ${P.acc ? `${esc(P.acc)} has no model` : 'this protein has no accession'}; ${S.mapOK ? `the residues are placed on it by sequence alignment, ${fmtInt(S.alt.covered)} of the construct's ${fmtInt(cseq().length)} identical` : 'the residues could not be placed on it'}. ` : ''}The 3D viewer loads when this card scrolls into view.`);
     if (V.want) show3D();
     if (entry.amUrl) alphaMissense(entry.amUrl).then((a) => { if (!a || gone()) return; S.am = a; $('#cm-am').hidden = false; drawFreq(); });
   }
