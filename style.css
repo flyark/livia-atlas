@@ -579,3 +579,6 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 #c-pt .pt td { padding: 6px 6px; }
 #c-pt .pt td.n { font-size: 12.5px; }
 #c-pt .pt th:first-child, #c-pt .pt td:first-child { padding-left: 10px; }
+/* phones: a segmented control in a control row may take two lines per button rather than clip its text */
+@media (max-width: 480px) { .controls .seg { height: auto; min-height: var(--ctl-h); } .controls .seg button { height: auto; min-height: var(--ctl-h); padding: 4px 8px; line-height: 1.25; } }
+@media (max-width: 480px) { .sp-combo { max-width: calc(100vw - 150px); } .sp-combo input.sp-combo-in { width: 100%; } .sp-combo-list { width: min(320px, calc(100vw - 40px)); } }   /* phones: the species picker stays inside its card */
