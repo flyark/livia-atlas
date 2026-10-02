@@ -1150,8 +1150,8 @@ async function viewHome() {
   const gen = ROUTE, reg = await registry();
   if (stale(gen)) return;
   const tot = (k) => `<b data-tot="${k}">…</b>`;   // filled once every species manifest has arrived; the page paints first
-  const fmtInt0 = fmtInt; { const fill = (all) => { if (stale(gen)) return; for (const el of app.querySelectorAll('[data-tot]')) el.textContent = fmtInt0(all.reduce((s, m) => s + (m.counts[el.dataset.tot] || 0), 0)); };
-    Promise.all((reg.species || []).map((x) => speciesManifest(x.id).catch(() => ({ counts: {} })))).then(fill); }
+  { const fill = (all) => { if (stale(gen)) return; const ok = all.every(Boolean); for (const el of app.querySelectorAll('[data-tot]')) el.textContent = ok ? fmtInt(all.reduce((s, m) => s + (m.counts[el.dataset.tot] || 0), 0)) : '…'; };   // a manifest that did not arrive leaves the placeholder, never a low number
+    Promise.all((reg.species || []).map((x) => speciesManifest(x.id).catch(() => null))).then(fill); }
   app.innerHTML = `
     <section class="hero hero-center">
       <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
@@ -2155,7 +2155,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const out = [];
     for (const [sp2, hits] of Object.entries(ent)) { const reg2 = (REG.species || []).find((x) => x.id === sp2); if (!reg2 || !hits.length) continue;
       const h = hits.find((x) => x[4]) || hits[0];   // the mutual best hit, else the best hit
-      out.push({ sp2, reg2, key2: h[0], pid: h[1], qcov: h[2], tcov: h[3], rbh: !!h[4], others: hits.filter((x) => x !== h) }); }
+      out.push({ sp2, reg2, key2: h[0], pid: h[1], qcov: h[2], tcov: h[3], rbh: !!h[4] }); }
     return out.sort((a, b) => (b.rbh - a.rbh) || (b.pid - a.pid));
   }
   async function orthLoad(o) {   // the ortholog's index row, predictions, cLIP at the page's cutoff, and the clustered sequence
