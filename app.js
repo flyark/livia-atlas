@@ -1943,7 +1943,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (on && bar.scrollWidth > bar.clientWidth + 1) bar.scrollTo({ left: Math.max(0, on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2), behavior: 'auto' }); };
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(spy); };
     window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(spy); }
-  app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' }); });
+  app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); });
   { const dm = $('.dmenu'), shut = (e) => { if (!dm || !dm.isConnected) { document.removeEventListener('click', shut); return; } if (dm.open && !dm.contains(e.target)) dm.open = false; }; document.addEventListener('click', shut); }
   app.querySelectorAll('[data-clip]').forEach((a) => a.onclick = async (e) => {   // a bundle inside a screen archive: read it here and hand its bytes to cLIP
     e.preventDefault(); const o = occ[+a.dataset.clip], w = window.open(`${LIVIA}clip.html?post=1`, '_blank'); if (!w) return;
@@ -2103,7 +2103,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       </tbody></table></div>
       <p class="muted" style="margin:10px 0 0;font-size:13.5px">All ${fmtInt(BA.choices.length)} together: ${fmtInt(all.n)} partners, ${fmtInt(all.p10)} past the 10% FPR cutoff.${few ? ` ${fmtInt(few)} ${few === 1 ? 'construct' : 'constructs'} folded with a single partner ${few === 1 ? 'is' : 'are'} not listed.` : ''}</p>`;
     if (!card.hidden) { const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; nav.prepend(btn);
-      btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' }); }
+      btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); }
   }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); }; });
 
@@ -3882,6 +3882,7 @@ async function trackView() {
   if (window.goatcounter && window.goatcounter.count) count(); else window.addEventListener('load', () => setTimeout(count, 0), { once: true });
 }
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
+const barsBottom = () => (document.querySelector('.top')?.offsetHeight || 0) + (document.querySelector('.subnav')?.offsetHeight || 0) + 11;   // where a section lands: under the sticky header and section bar (112 px on a desktop)
 let LAST_PATH = null, holdTimer = null, NET_SP = '';   // NET_SP: the species of the last species page, for the Network tab
 function markNav(parts) {   // the header tab of the page shown: species (their proteins and pairs too), network, datasets (and themes), about
   const sp = parts.length && REG && (REG.species || []).some((s) => s.id === parts[0]);
@@ -3898,7 +3899,7 @@ function mountSections() {
   const items = cards.map((c, i) => { if (!c.id) c.id = `sec-${i}`; const h = c.querySelector('h2'); return [c.id, ((h.childNodes[0] && h.childNodes[0].textContent) || h.textContent).trim()]; });
   const bar = el(`<nav class="subnav" aria-label="Sections">${items.map(([t, l]) => `<button data-t="${t}">${esc(l)}</button>`).join('')}</nav>`);
   cards[0].before(bar);
-  bar.querySelectorAll('button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - 112, behavior: 'auto' }); });
+  bar.querySelectorAll('button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); });
   let cur = null, raf = 0;
   const spy = () => { raf = 0; if (!bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
     const lim = bar.getBoundingClientRect().bottom + 24; let on = null;

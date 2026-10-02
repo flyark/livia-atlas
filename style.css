@@ -358,7 +358,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 @media (max-width: 720px) { .dm-pop { min-width: 0; width: calc(100vw - 40px); } .dm-row { grid-template-columns: 1fr; gap: 4px; } }
 .flags { margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }
 .flags:empty { display: none; }
-.card { scroll-margin-top: 124px; }   /* scrollIntoView leaves room for the sticky header + section bar */
+.card { scroll-margin-top: calc(var(--top-h) + 64px); }   /* scrollIntoView leaves room for the sticky header + section bar */
 /* partner table: fits the card — colored numbers instead of bars, stacked source badges, truncated names */
 .pt td.v { font-weight: 400; }   /* weight comes from the FPR band (BAND_W) */
 .pt td.srcc { white-space: normal; max-width: 130px; }
