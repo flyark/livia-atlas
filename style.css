@@ -591,3 +591,12 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 /* phones: a segmented control in a control row may take two lines per button rather than clip its text */
 @media (max-width: 480px) { .controls .seg { height: auto; min-height: var(--ctl-h); } .controls .seg button { height: auto; min-height: var(--ctl-h); padding: 4px 8px; line-height: 1.25; } }
 @media (max-width: 480px) { .sp-combo { max-width: calc(100vw - 150px); } .sp-combo input.sp-combo-in { width: 100%; } .sp-combo-list { width: min(320px, calc(100vw - 40px)); } }   /* phones: the species picker stays inside its card */
+
+/* ── orthologs: the protein's orthologs and their cLIP, aligned ── */
+.orth-list { display: flex; flex-direction: column; gap: 6px; margin: 6px 0 12px; font-size: 13.5px; }
+.orth-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.orth-grid { border-collapse: collapse; font-size: 13px; }
+.orth-grid th, .orth-grid td { padding: 3px 8px; border-bottom: 1px solid var(--line-2); text-align: right; }
+.orth-grid thead th { font-weight: 600; }
+.orth-grid tbody th { text-align: left; font-weight: 600; }
+.orth-grid td[title] { cursor: help; background: #F2F6FA; }

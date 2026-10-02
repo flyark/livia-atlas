@@ -1,0 +1,70 @@
+{
+ "species": [
+  "human",
+  "fly",
+  "zebrafish",
+  "worm",
+  "yeast"
+ ],
+ "keep": 3,
+ "method": "MMseqs2 easy-search -s 7 on the Atlas species proteins (UniProt reference proteomes); rbh = mutual best hit",
+ "rbh": {
+  "human-zebrafish": 8272,
+  "human-worm": 4380,
+  "human-fly": 5843,
+  "human-yeast": 2163,
+  "fly-human": 5841,
+  "fly-worm": 4096,
+  "fly-zebrafish": 4371,
+  "fly-yeast": 1987,
+  "zebrafish-human": 8272,
+  "zebrafish-fly": 4374,
+  "zebrafish-worm": 3473,
+  "zebrafish-yeast": 1704,
+  "worm-zebrafish": 3473,
+  "worm-human": 4380,
+  "worm-fly": 4099,
+  "worm-yeast": 1769,
+  "yeast-fly": 1988,
+  "yeast-human": 2163,
+  "yeast-worm": 1769,
+  "yeast-zebrafish": 1704
+ },
+ "coverage": {
+  "human": {
+   "index": 20526,
+   "rows_without_accession": 0,
+   "written": 20508,
+   "missing_from_proteome": 40,
+   "fetched": 22
+  },
+  "fly": {
+   "index": 13963,
+   "rows_without_accession": 74,
+   "written": 13947,
+   "missing_from_proteome": 1455,
+   "fetched": 1434
+  },
+  "zebrafish": {
+   "index": 12749,
+   "rows_without_accession": 0,
+   "written": 11570,
+   "missing_from_proteome": 4206,
+   "fetched": 3027
+  },
+  "worm": {
+   "index": 11162,
+   "rows_without_accession": 0,
+   "written": 11127,
+   "missing_from_proteome": 122,
+   "fetched": 87
+  },
+  "yeast": {
+   "index": 5762,
+   "rows_without_accession": 0,
+   "written": 5762,
+   "missing_from_proteome": 204,
+   "fetched": 204
+  }
+ }
+}
