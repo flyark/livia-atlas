@@ -3368,7 +3368,7 @@ async function viewNetwork(spId, q) {
   document.title = `Network · ${sp.reg.label} · LIVIA Atlas`;
   const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),
     ...TSs.filter(Boolean).flatMap((T) => T.list.map((x) => [x.id, x.short]))];
-  const S = { ids: q.get('ids') || '', add: q.get('add') === 'shared' ? 'link' : ['none', 'link', 'top'].includes(q.get('add')) ? q.get('add') : 'none', hops: [1, 2, 3].includes(+q.get('hops')) ? +q.get('hops') : 1, autoPick: false, k: Math.max(1, Math.min(50, +q.get('k') || 10)), kAuto: !q.get('k'),
+  const S = { ids: q.get('ids') || '', add: q.get('add') === 'shared' ? 'link' : ['none', 'link', 'top'].includes(q.get('add')) ? q.get('add') : 'link', hops: [1, 2, 3].includes(+q.get('hops')) && q.get('add') !== 'shared' ? +q.get('hops') : 1, autoPick: false, k: Math.max(1, Math.min(50, +q.get('k') || 10)), kAuto: !q.get('k'),
     cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), lay: ['fr', 'kk', 'circle'].includes(q.get('lay')) ? q.get('lay') : 'force', lone: q.get('lone') === '1', cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
     mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, minq: q.get('minq') === '1', grp: /^(comm|leiden|col:.+)$/.test(q.get('grp') || '') ? q.get('grp') : '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [] };   // exp: proteins expanded by a click (keys), in the order clicked
@@ -3552,12 +3552,12 @@ async function viewNetwork(spId, q) {
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
     $('#nw-grp').innerHTML = [['', 'none'], ['comm', 'communities · Louvain'], ['leiden', 'communities · Leiden'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join(''); showRes();
     S.ids = toks.join(','); S.add = $('#nw-add').value; if (!S.kAuto) S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 10)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
-    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (!S.kAuto && (S.add === 'top' || S.exp.length)) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.add === 'link' && S.hops !== 1) qs.set('hops', S.hops); if (S.mind !== 2) qs.set('mind', S.mind); if (S.minq) qs.set('minq', '1'); if (S.res !== 1) qs.set('res', S.res); if (S.grp) qs.set('grp', S.grp); if (S.lay !== 'force') qs.set('lay', S.lay); if (S.lone) qs.set('lone', '1'); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
+    const writeURL = () => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }); if (!S.kAuto && (S.add === 'top' || S.exp.length)) qs.set('k', S.k); qs.set('cut', S.cut); if (S.cut === 'c') qs.set('cutv', S.cutv); if (S.iptm) qs.set('iptm', S.iptm); if (S.add === 'link') qs.set('hops', S.hops); if (S.mind !== 2) qs.set('mind', S.mind); if (S.minq) qs.set('minq', '1'); if (S.res !== 1) qs.set('res', S.res); if (S.grp) qs.set('grp', S.grp); if (S.lay !== 'force') qs.set('lay', S.lay); if (S.lone) qs.set('lone', '1'); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); if (S.set) qs.set('set', S.set);
       if (S.exp.length) qs.set('exp', S.exp.join(',')); if (S.click === 'open') qs.set('click', 'open');
       history.replaceState(null, '', `#/${sp.id}/network?${qs}`); };
     writeURL();
     if (!toks.length) { status('Name at least one protein.'); $('#nw-card').hidden = true; return; }
-    if (toks.length === 1 && $('#nw-add').value === 'none' && !seed) { $('#nw-add').value = 'top'; S.add = 'top'; showK(); }   // one protein alone has no pair: show its top partners
+    if (toks.length === 1 && $('#nw-add').value !== 'top' && !seed) { $('#nw-add').value = 'top'; S.add = 'top'; showK(); }   // one protein alone has no pair: show its top partners
     const found = [], missing = [], how = new Map();
     for (const t of toks) { const h = resolveHow(sp, t, true); if (!h) { missing.push(t); continue; } how.set(h.how, (how.get(h.how) || 0) + 1); if (!found.includes(h.row)) found.push(h.row); }
     const mbox = $('#nw-miss'), mtok = String((+mbox.dataset.t || 0) + 1); mbox.dataset.t = mtok; mbox.hidden = true;   // a newer draw wins over an older explanation still loading
@@ -3572,22 +3572,12 @@ async function viewNetwork(spId, q) {
     KBN = K; EB = E; TPN = TP;
     if (stale(gen)) return;
     let autoNote = '';
-    if (S.autoPick) {   // a new list: the show mode, the cutoff and the number picked for it; any change by the reader redraws as asked
-      S.autoPick = false; const Q0 = new Set(found.map((r) => r.i)), link = Q0.size >= 10;   // a short list grows by each one's top partners, a longer one by the partners linking it
-      const pass = (e, v) => e.best >= v && (!S.iptm || (Number.isFinite(e.iptm) && e.iptm >= S.iptm));
-      const share = (v) => { let n = 0;   // the share of the proteins-of-interest that the drawing would connect at this cutoff
-        for (const i of Q0) { let ok = false;
-          for (const [j, e] of E.adj.get(i) || []) { if (!pass(e, v)) continue;
-            if (!link || Q0.has(j)) { ok = true; break; }
-            for (const [k2, e2] of E.adj.get(j) || []) if (k2 !== i && Q0.has(k2) && pass(e2, v)) { ok = true; break; }
-            if (ok) break; }
-          if (ok) n++; }
-        return n / Math.max(1, Q0.size); };
-      const tried = [1, 5, 10].map((f) => [f, share(CUT[f])]), pick = (tried.find(([, x]) => x >= 0.5) || tried.reduce((a, b) => (b[1] >= a[1] ? b : a)))[0];   // the strictest that connects half of them, else the one that connects most
-      S.cut = pick; S.add = link ? 'link' : 'top'; S.hops = 1; S.kAuto = true;
+    if (S.autoPick) {   // a new list (an example, a file, the suggestion) opens with the defaults: partners linking it through 1 other protein, at 5% FPR
+      S.autoPick = false; const one = found.length === 1;   // one protein links to nothing: its top partners instead
+      S.cut = 5; S.add = one ? 'top' : 'link'; S.hops = 1; S.kAuto = true;
       $('#nw-add').value = S.add; $('#nw-hops').value = '1'; $('#nw-kauto').checked = true; $('#nw-cutv').style.display = 'none';
-      [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === String(pick))); showK();
-      autoNote = `settings picked for this list: ${pick}% FPR, ${link ? 'partners linking them through 1 other protein' : "each one's top partners"}; change any of them to redraw`; writeURL(); }
+      [...$('#nw-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === '5')); showK();
+      autoNote = `opened with 5% FPR and ${one ? "the protein's top partners" : 'partners linking them through 1 other protein'}; change any of them to redraw`; writeURL(); }
     const c = cutV(), Q = new Set(found.map((r) => r.i)), keep = new Set(Q), grew = new Set(), expd = new Set();
     const nb = (i) => [...(E.adj.get(i) || new Map())].filter(([, e]) => passE(e));
     const srt = new Map(), nbS = (i) => { let v = srt.get(i); if (!v) { v = nb(i).sort((a, b) => b[1].best - a[1].best).map(([j]) => j); srt.set(i, v); } return v; };   // partners past the cutoff, best first
