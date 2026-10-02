@@ -3,7 +3,7 @@
 # Source: elife-52276-fig1-data1-v2.xlsx (Figure 1-source data 1), sheet "F1A_DA1 interactors" (https://cdn.elifesciences.org/articles/52276/elife-52276-fig1-data1-v2.xlsx)
 # Cutoff: rows marked significant ("+") in the sheet (paper: FDR = 0.01, S0 = 1, permutation-based FDR-corrected t-test); 32 rows, GFP tag row dropped, 31 proteins incl. DA1; sorted by Difference (log2 enrichment)
 # Licensed CC BY 4.0
-# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published.
 protein	role	description	Difference	-LOG(P-value)	uniprot
 AT1G19270	bait	DA1	6.119	4.342	
 AT3G11910	prey	UBP13	4.614	3.829	Q84WU2

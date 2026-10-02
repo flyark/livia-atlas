@@ -3,7 +3,7 @@
 # S1 Data (pbio.3000358.s006.xlsx), sheet "significant (bfdr < 0.02)": all 256 listed bait-prey pairs, collapsed to one row per protein at the authors' SAINT BFDR < 0.02, covering 197 distinct proteins including the baits. Licensed CC BY 4.0 (http://creativecommons.org/licenses/by/4.0/); values as published.
 # Name mapping: gene labels as published, assembly-22 feature names converted to their CAALFM_ equivalents, and, where the paper supplies one, its own gene-label-to-UniProt-accession table (S7 silac_hsp90_depletion).
 # Columns: gene = gene label as published; role = bait or prey; baits = the baits the prey was found with; AvgSpec = highest and BFDR = lowest published value across those baits.
-# Trimmed to 150 rows by the LIVIA Atlas: the 10 baits, then the preys with the lowest BFDR (ties by the highest AvgSpec), of the 197 distinct proteins listed.
+# Trimmed to 150 rows: the 10 baits, then the preys with the lowest BFDR (ties by the highest AvgSpec), of the 197 distinct proteins listed.
 gene	role	baits	AvgSpec	BFDR
 AHA1	bait			
 CDC37	bait			

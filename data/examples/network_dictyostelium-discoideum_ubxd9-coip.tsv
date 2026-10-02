@@ -3,7 +3,7 @@
 # Source: Data_Sheet_1.PDF, Table S1 "Significantly co-purified proteins in AX2/UBXD9-GFP versus AX2/GFP" (https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8495200/supplementaryFiles); PRIDE PXD027160, PXD027162
 # Cutoff: FC >= 1.4 and p-value <= 0.05 (the paper's cutoff); all 120 proteins kept, including the bait UBXD9 (DDB_G0279285) and p97 (DDB_G0288065); one p-value printed with a decimal comma (2,68) read as 2.68; descriptions as published, with the British spelling of "uncharacterized" changed to US spelling, and the bait labeled UBXD9 (described as an uncharacterized protein in Table S1)
 # Licensed CC BY 4.0
-# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published.
 protein	role	description	log2FC	neg_log10_pvalue	uniprot
 DDB_G0279285	bait	UBXD9	5.67	1.49	Q54X06
 DDB_G0289609	prey	CBS domain-containing protein	3.39	5.41	Q54H97

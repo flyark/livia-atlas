@@ -3,7 +3,7 @@
 # Additional file 1 (12866_2015_435_MOESM1_ESM.xlsx), Sheet1: all 81 proteins identified and quantified from at least two of three biological replicates, as published; no further cutoff applied. Licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), data under the CC0 1.0 waiver stated in the article; values as published.
 # Columns: gene = locus tag as given (NCTC 8325, the index strain, so names map directly); peptides_RNAIII and peptides_control = peptide counts as published. 67 of 81 listed proteins map to the species index.
 # Note: RNAIII is the RNA bait, not a protein; it carries no index entry.
-# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published.
 gene	role	peptides_RNAIII	peptides_control	uniprot
 RNAIII	bait			
 SAOUHSC_00769	prey	38		O06446

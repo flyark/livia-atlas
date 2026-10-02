@@ -1,6 +1,6 @@
 # Example: genes called essential by genome-wide CRISPRi-seq in both Staphylococcus aureus NCTC 8325-4 and Newman grown in rich medium.
 # Source: Liu X, de Bakker V, Heggenhougen MV, Marli MT, Froynes AH, Salehian Z, Porcellato D, Morales Angeles D, Veening J-W, Kjos M (2024) Genome-wide CRISPRi screens for high-throughput fitness quantification and identification of determinants for dalbavancin susceptibility in Staphylococcus aureus. mSystems 9:e0128923. https://doi.org/10.1128/msystems.01289-23
-# Supplemental file msystems.01289-23-s0002.xlsx, sheet S15_Newman_fitness: rows flagged essential in the Newman_essential and NCTC_essential columns (the authors' own calls); 153 sgRNA targets pass; trimmed by the LIVIA Atlas to the 150 with the most negative log2FC_NCTC (the index strain). Licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); values as published.
+# Supplemental file msystems.01289-23-s0002.xlsx, sheet S15_Newman_fitness: rows flagged essential in the Newman_essential and NCTC_essential columns (the authors' own calls); 153 sgRNA targets pass; trimmed to the 150 with the most negative log2FC_NCTC (the index strain). Licensed CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); values as published.
 # Columns: gene = NCTC 8325 locus tag as given (the index strain, so names map directly); name = common gene name as published; log2FC_NCTC and log2FC_Newman = CRISPRi fitness log2 fold changes as published.
 gene	name	log2FC_NCTC	log2FC_Newman
 SAOUHSC_01786	infC	-5.574	-5.256

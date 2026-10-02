@@ -3,7 +3,7 @@
 # Source: elife-47864-supp2-v3.xlsx (Supplementary file 2), sheet "FAMA complex candidates" (Table 4) (https://cdn.elifesciences.org/articles/47864/elife-47864-supp2-v3.xlsx)
 # Cutoff: the paper's FAMA interaction candidates (enriched in FAMA-TbID vs. WT and vs. nuclear TbID control, Perseus t-tests, and enriched over time after biotin); all 47 candidates kept; bait FAMA (AT3G24140) added as row 1; group = the paper's curated molecular function
 # Licensed CC BY 4.0
-# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published.
 protein	role	name	function	enriched_at	uniprot
 AT3G24140	bait	FAMA	bHLH transcription factor		Q56YJ8
 AT3G26744	prey	ICE1, SCRM	bHLH transcription factor	0.5h,3h	Q9LSE2

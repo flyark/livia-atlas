@@ -3,7 +3,7 @@
 # Source: 41467_2020_14477_MOESM7_ESM.xlsx (Supplementary Data 4, "The mannitol-induced kinase phosphosites from Col-0 Arabidopsis") (https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-020-14477-9/MediaObjects/41467_2020_14477_MOESM7_ESM.xlsx)
 # Cutoff: phosphosites marked significant ("+") for WT-mannitol vs WT-control in the sheet (paper: Perseus, permutation-based FDR 0.01, S0 0.2); 80 sites on 45 proteins (leading protein ID), all kept
 # Licensed CC BY 4.0
-# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published.
 protein	name	log2 difference (mannitol vs control)	-log10 p-value	site	uniprot
 AT3G50500	SnRK2.2	3.475	5.220	S177	Q39192
 AT1G67580	CDKG2, CYCLIN-DEPENDENT KINASE G2	3.418	4.473	S86	Q9CAG1

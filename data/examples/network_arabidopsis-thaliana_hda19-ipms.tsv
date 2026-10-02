@@ -3,7 +3,7 @@
 # Source: main-text Table 1 (Europe PMC full text, PMC10701890); raw per-replicate identifications are in Table_1.xlsx (Supplementary Table 1).
 # Cutoff: the paper's Table 1 (proteins identified in at least two biological replicates, control background removed, nuclear localization experimental or predicted); 52 rows, one duplicate row (UBA2, At5g06460) merged, 51 proteins incl. HDA19
 # Licensed CC BY 4.0
-# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published (added by the LIVIA Atlas).
+# uniprot column: the species-index accession of each row, looked up in UniProt by the gene ID as published.
 protein	role	description	function	uniprot
 At4g38130	bait	HDA1; HDA19; HISTONE DEACETYLASE 19	Histone deacetylation	O22446
 At5g58230	prey	MSI1; MULTICOPY SUPRESSOR OF IRA1	Chromatin remodelling	O22467
