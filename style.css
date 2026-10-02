@@ -9,6 +9,7 @@
   --sans: 'IBM Plex Sans', 'Helvetica Neue', system-ui, sans-serif;
   --mono: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
   --r: 12px; --shadow: 0 1px 2px rgba(23, 38, 58, 0.06), 0 6px 24px rgba(23, 38, 58, 0.06);
+  --top-h: 60px;   /* the header's height: what sticky bars below it sit under */
   color-scheme: light;
 }
 * { box-sizing: border-box; }
@@ -22,15 +23,22 @@ a:hover { text-decoration: underline; }
 
 /* ── top bar ── */
 .top { position: sticky; top: 0; z-index: 20; background: rgba(255, 255, 255, 0.92); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
-.top .wrap { display: flex; align-items: center; gap: 18px; height: 60px; }
+.top .wrap { display: flex; align-items: center; gap: 18px; height: var(--top-h); }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-family: var(--display); font-weight: 700; font-size: 19px; letter-spacing: -0.01em; white-space: nowrap; }
 .brand:hover { text-decoration: none; }
 .brand svg { width: 28px; height: 28px; flex: none; }
 .brand span { color: var(--ink-3); font-weight: 600; }
 .top nav { display: flex; gap: 16px; margin-left: auto; font-size: 14px; }
-.top nav a { color: var(--ink-2); }
+.top nav a { color: var(--ink-2); white-space: nowrap; }
+.top nav a[aria-current="page"] { color: var(--ink); text-decoration: underline 2px var(--blue); text-underline-offset: 7px; }
 .top-search { flex: 1; max-width: 460px; position: relative; }
-@media (max-width: 760px) { .top nav { display: none; } .brand span { display: none; } }
+@media (max-width: 760px) {   /* phones: the tabs move to a second row under the logo and the search */
+  :root { --top-h: 86px; }
+  .top .wrap { flex-wrap: wrap; align-content: center; row-gap: 4px; }
+  .top nav { order: 3; width: 100%; margin-left: 0; gap: 18px; font-size: 13px; overflow-x: auto; scrollbar-width: none; }
+  .top nav a[aria-current="page"] { text-underline-offset: 4px; }
+  .brand span { display: none; }
+}
 
 /* ── search ── */
 .search { position: relative; }
@@ -232,7 +240,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .note { background: #FFF7E6; color: #7A5200; border-radius: 8px; padding: 8px 12px; font-size: 13.5px; margin: 0 0 12px; }
 
 /* ── protein page: LIVIA cLIP report ── */
-.subnav { position: sticky; top: 60px; z-index: 15; display: flex; gap: 2px 4px; flex-wrap: wrap; justify-content: center; padding: 6px 8px; margin: 0 0 18px;
+.subnav { position: sticky; top: var(--top-h); z-index: 15; display: flex; gap: 2px 4px; flex-wrap: wrap; justify-content: center; padding: 6px 8px; margin: 0 0 18px;
   background: rgba(244, 246, 249, 0.94); backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: 12px; }
 .subnav button { all: unset; cursor: pointer; font: 500 13px var(--sans); color: var(--ink-2); padding: 5px 11px; border-radius: 8px; }
 .subnav button:hover { background: var(--blue-soft); color: var(--blue); }
@@ -317,7 +325,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .models tbody tr.on td { background: var(--blue-soft); }
 
 @media (max-width: 900px) { .seqpanels { grid-template-columns: 1fr; } }
-@media (max-width: 720px) { .viewer3d { height: 420px; } .pairwho { grid-template-columns: 1fr; } .subnav { top: 60px; } }
+@media (max-width: 720px) { .viewer3d { height: 420px; } .pairwho { grid-template-columns: 1fr; } }
 @media (max-width: 720px) { .net { height: 440px; } }
 @media (max-width: 720px) { .phead > .kpis { flex: 1 1 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } }   /* phone: the tiles fill the row */
 

@@ -3882,7 +3882,13 @@ async function trackView() {
   if (window.goatcounter && window.goatcounter.count) count(); else window.addEventListener('load', () => setTimeout(count, 0), { once: true });
 }
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
-let LAST_PATH = null, holdTimer = null;
+let LAST_PATH = null, holdTimer = null, NET_SP = '';   // NET_SP: the species of the last species page, for the Network tab
+function markNav(parts) {   // the header tab of the page shown: species (their proteins and pairs too), network, datasets (and themes), about
+  const sp = parts.length && REG && (REG.species || []).some((s) => s.id === parts[0]);
+  const on = !parts.length ? '' : parts[0] === 'about' ? 'about' : ['datasets', 'themes'].includes(parts[0]) ? 'datasets'
+    : sp && ['network', 'nested'].includes(parts[1]) ? 'network' : parts[0] === 'species' || sp ? 'species' : '';
+  document.querySelectorAll('.top nav a[data-nav]').forEach((a) => { if (a.dataset.nav === on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+}
 // Every page with three or more cards gets the section bar the protein page has: sticky, the card in view marked, a
 // click jumps to it. Built after the page renders; the protein page keeps its own.
 function mountSections() {
@@ -3939,7 +3945,10 @@ async function route() {
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'species' && parts.length === 1) await viewSpeciesList();
     else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
-    else if (await regSpecies(parts[0])) { if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (parts[0] === 'network' && parts.length === 1) {   // the header's Network tab: the network page of the species last shown, else the first species
+      location.replace(`#/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}/network${q.toString() ? `?${q}` : ''}`); return;
+    }
+    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }
@@ -3949,6 +3958,7 @@ async function route() {
     else app.innerHTML = `<div class="empty">Nothing at “${esc(parts.join('/'))}”. <a href="#/">Go to the atlas home</a></div>`;
   } catch (e) { if (!stale(gen)) app.innerHTML = `<div class="empty">${esc(e.message || e)}</div>`; console.error(e); }
   if (stale(gen)) return;
+  markNav(parts);
   if (stay) { window.scrollTo({ top: keepY, behavior: 'instant' }); holdTimer = setTimeout(() => { app.style.minHeight = ''; }, 4000); }
   if (location.hash === here) trackView();   // not for a view that redirected
   if (!stale(gen)) { mountSections(); enhanceTables(); setTimeout(() => { if (!stale(gen)) { mountSections(); enhanceTables(); } }, 2500); }   // cards and tables that fill in later
