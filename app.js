@@ -59,7 +59,7 @@ const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" dat
 // A page's citation: the page (title, link, date), the Atlas data version each of its screens is read from (the Zenodo
 // version DOI, not the concept DOI that always opens the newest), the method, and the source of each screen shown, which
 // the screens' licenses (CC BY) require.
-const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3', 23063255: '0.1.4' };   // the Atlas record's versions on Zenodo
+const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3', 23063255: '0.1.4', 23104149: '0.1.5' };   // the Atlas record's versions on Zenodo
 const archiveOf = (recs) => (recs.length ? recs.map((r) => `LIVIA Atlas version ${REC_VERSION[r] || '?'}, Zenodo, https://doi.org/10.5281/zenodo.${r}`).join('; ') : `LIVIA Atlas, Zenodo, https://doi.org/${ARCHIVE.doi}`);
 const archiveLine = () => { const recs = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(recOf).filter(Boolean))].sort();   // the versions this site reads
   return recs.map((r) => { const ids = [...new Set(REG.datasets.filter((d) => recOf(d) === r).map((d) => d.short))]; return `LIVIA Atlas version ${REC_VERSION[r] || '?'}, <i>Zenodo</i>, <a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">doi:10.5281/zenodo.${r}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi:${ARCHIVE.doi}</a>`; };

@@ -24,24 +24,24 @@
   },
   {
    "id": "human-kinase-tf",
-   "short": "Kinase\u2013TF",
-   "title": "Human kinase\u2013transcription factor screen",
-   "citation": "Kim AR, Huang K, Johnson JL, Yaron-Barir TM, Wang K, Cantley LC, Hu Y, Perrimon N (2025). A structure-guided kinase\u2013transcription factor interactome atlas reveals docking landscapes of the kinome. bioRxiv.",
+   "short": "Kinase–TF",
+   "title": "Human kinase–transcription factor screen",
+   "citation": "Kim AR, Huang K, Johnson JL, Yaron-Barir TM, Wang K, Cantley LC, Hu Y, Perrimon N (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. bioRxiv.",
    "url": "https://www.biorxiv.org/content/10.1101/2025.10.10.681672",
    "counts": {
     "proteins": 1481,
-    "pairs": 377262,
-    "predictions": 1885854,
-    "runs": 377262,
-    "pairsFpr10": 59323,
-    "pairsFpr5": 29043,
-    "pairsFpr1": 3644
+    "pairs": 376964,
+    "predictions": 1884685,
+    "runs": 376964,
+    "pairsFpr10": 59297,
+    "pairsFpr5": 29022,
+    "pairsFpr1": 3643
    }
   },
   {
    "id": "human-kinase-kinase",
-   "short": "Kinase\u2013kinase",
-   "title": "Human kinase\u2013kinase screen",
+   "short": "Kinase–kinase",
+   "title": "Human kinase–kinase screen",
    "citation": "Kim AR, Perrimon N (2026). LIVIA Atlas: AlphaFold-Multimer protein interaction screens resolved to residues. Zenodo.",
    "url": "https://doi.org/10.5281/zenodo.22964479",
    "counts": {
@@ -73,14 +73,14 @@
  ],
  "counts": {
   "proteins": 20526,
-  "pairs": 2245221,
-  "predictions": 7313462,
-  "runs": 2579371,
-  "pairsFpr10": 318275,
-  "pairsFpr5": 173162,
-  "pairsFpr1": 44978,
-  "pairsInSeveral": 339782,
-  "pairsTested": 2245221
+  "pairs": 2244928,
+  "predictions": 7312293,
+  "runs": 2579073,
+  "pairsFpr10": 318249,
+  "pairsFpr5": 173141,
+  "pairsFpr1": 44977,
+  "pairsInSeveral": 339779,
+  "pairsTested": 2244928
  },
  "files": {
   "proteins": "proteins.json",
