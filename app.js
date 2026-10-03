@@ -2376,7 +2376,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       sub.textContent = has ? `No ortholog of ${P.gene} among the Atlas proteins of ${names} in the Alliance of Genome Resources' stringent set.` : `Orthologs are listed for ${names}; ${sp.reg.label} proteins have no table yet.`;
       $('#orth-list').innerHTML = ''; $('#c-orth').classList.add('orth-none'); return; }   // nothing below the note: no empty plot, legend or tick box
     renderOrthList();
-    const auto = [...[...list.filter(orthOwn), ...list.filter((o) => !orthOwn(o) && !o.reg2.seqOnly)].slice(0, 3), ...list.filter((o) => o.sp2 === 'xenopus-tropicalis')];   // and Xenopus tropicalis (sequence only) by default   // three species open by themselves, those with screens of their own first (mouse and rat hold only AFDB pairs); the rest on a click
+    const auto = [...[...list.filter(orthOwn), ...list.filter((o) => !orthOwn(o) && !o.reg2.seqOnly && o.sp2 !== 'rattus-norvegicus')].slice(0, 3), ...list.filter((o) => o.sp2 === 'xenopus-tropicalis')];   // three species open by themselves, those with screens of their own first (mouse holds only AFDB pairs; rat never by itself), plus Xenopus tropicalis (sequence only); the rest on a click
     await Promise.all(auto.map((o) => orthOpen(o)));
   }
   async function orthOpen(o) {
