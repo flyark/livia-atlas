@@ -1,0 +1,250 @@
+{
+ "coordinates": "alignment (ali_start, ali_end), as InterPro shows them, on the UniProt sequence with that CRC64",
+ "format": "<last two characters of the accession>.json = {accession: [first 8 hex of the CRC64, start, end, Pfam number, ...]}; names.json = {Pfam number: family description}",
+ "license": "CC0",
+ "release": "38.2",
+ "source": "Pfam",
+ "species": {
+  "ajellomyces-capsulatus": {
+   "proteins": 4941,
+   "with_accession": 4941,
+   "with_pfam": 4257
+  },
+  "arabidopsis-thaliana": {
+   "proteins": 17778,
+   "with_accession": 17778,
+   "with_pfam": 16367
+  },
+  "brugia-malayi": {
+   "proteins": 4876,
+   "with_accession": 4876,
+   "with_pfam": 4274
+  },
+  "campylobacter-jejuni-subsp-jejuni-serotype-o-2": {
+   "proteins": 1498,
+   "with_accession": 1498,
+   "with_pfam": 1305
+  },
+  "candida-albicans-237561": {
+   "proteins": 3998,
+   "with_accession": 3998,
+   "with_pfam": 3733
+  },
+  "cladophialophora-carrionii": {
+   "proteins": 5939,
+   "with_accession": 5939,
+   "with_pfam": 5075
+  },
+  "dictyostelium-discoideum": {
+   "proteins": 5014,
+   "with_accession": 5014,
+   "with_pfam": 4555
+  },
+  "dracunculus-medinensis": {
+   "proteins": 6980,
+   "with_accession": 6980,
+   "with_pfam": 5978
+  },
+  "escherichia-coli-83333": {
+   "proteins": 2623,
+   "with_accession": 2623,
+   "with_pfam": 2584
+  },
+  "fly": {
+   "proteins": 14037,
+   "with_accession": 13963,
+   "with_pfam": 11050
+  },
+  "fonsecaea-pedrosoi-cbs-271-37": {
+   "proteins": 5654,
+   "with_accession": 5654,
+   "with_pfam": 4953
+  },
+  "glycine-max": {
+   "proteins": 30449,
+   "with_accession": 30449,
+   "with_pfam": 27681
+  },
+  "haemophilus-influenzae": {
+   "proteins": 1006,
+   "with_accession": 1006,
+   "with_pfam": 987
+  },
+  "helicobacter-pylori": {
+   "proteins": 1208,
+   "with_accession": 1208,
+   "with_pfam": 1033
+  },
+  "human": {
+   "proteins": 20526,
+   "with_accession": 20526,
+   "with_pfam": 19573
+  },
+  "klebsiella-pneumoniae-subsp-pneumoniae": {
+   "proteins": 3693,
+   "with_accession": 3693,
+   "with_pfam": 3611
+  },
+  "leishmania-infantum": {
+   "proteins": 3743,
+   "with_accession": 3743,
+   "with_pfam": 3158
+  },
+  "madurella-mycetomatis": {
+   "proteins": 5431,
+   "with_accession": 5431,
+   "with_pfam": 4615
+  },
+  "methanocaldococcus-jannaschii": {
+   "proteins": 745,
+   "with_accession": 745,
+   "with_pfam": 729
+  },
+  "mus-musculus": {
+   "proteins": 15476,
+   "with_accession": 15476,
+   "with_pfam": 15131
+  },
+  "mycobacterium-leprae": {
+   "proteins": 1199,
+   "with_accession": 1199,
+   "with_pfam": 1123
+  },
+  "mycobacterium-tuberculosis": {
+   "proteins": 2351,
+   "with_accession": 2351,
+   "with_pfam": 2235
+  },
+  "neisseria-gonorrhoeae": {
+   "proteins": 1154,
+   "with_accession": 1154,
+   "with_pfam": 1112
+  },
+  "nocardia-brasiliensis": {
+   "proteins": 4808,
+   "with_accession": 4808,
+   "with_pfam": 4499
+  },
+  "onchocerca-volvulus": {
+   "proteins": 6187,
+   "with_accession": 6187,
+   "with_pfam": 5451
+  },
+  "oryza-sativa-subsp-japonica": {
+   "proteins": 19297,
+   "with_accession": 19297,
+   "with_pfam": 16489
+  },
+  "paracoccidioides-lutzii": {
+   "proteins": 4993,
+   "with_accession": 4993,
+   "with_pfam": 4257
+  },
+  "plasmodium-falciparum-36329": {
+   "proteins": 2608,
+   "with_accession": 2608,
+   "with_pfam": 2159
+  },
+  "pseudomonas-aeruginosa": {
+   "proteins": 3562,
+   "with_accession": 3562,
+   "with_pfam": 3495
+  },
+  "rattus-norvegicus": {
+   "proteins": 14486,
+   "with_accession": 14486,
+   "with_pfam": 13851
+  },
+  "salmonella-typhimurium": {
+   "proteins": 2831,
+   "with_accession": 2831,
+   "with_pfam": 2786
+  },
+  "schistosoma-mansoni": {
+   "proteins": 6516,
+   "with_accession": 6516,
+   "with_pfam": 5857
+  },
+  "schizosaccharomyces-pombe": {
+   "proteins": 4248,
+   "with_accession": 4248,
+   "with_pfam": 3977
+  },
+  "shigella-dysenteriae-serotype-1": {
+   "proteins": 2289,
+   "with_accession": 2289,
+   "with_pfam": 2228
+  },
+  "shigella-flexneri": {
+   "proteins": 230,
+   "with_accession": 230,
+   "with_pfam": 227
+  },
+  "sporothrix-schenckii": {
+   "proteins": 5288,
+   "with_accession": 5288,
+   "with_pfam": 4632
+  },
+  "staphylococcus-aureus-93061": {
+   "proteins": 1288,
+   "with_accession": 1288,
+   "with_pfam": 1266
+  },
+  "streptococcus-pneumoniae": {
+   "proteins": 1103,
+   "with_accession": 1103,
+   "with_pfam": 1071
+  },
+  "strongyloides-stercoralis": {
+   "proteins": 5974,
+   "with_accession": 5974,
+   "with_pfam": 5336
+  },
+  "trichuris-trichiura": {
+   "proteins": 6481,
+   "with_accession": 6481,
+   "with_pfam": 5863
+  },
+  "trypanosoma-brucei-brucei-185431": {
+   "proteins": 3718,
+   "with_accession": 3718,
+   "with_pfam": 3051
+  },
+  "trypanosoma-cruzi": {
+   "proteins": 8111,
+   "with_accession": 8111,
+   "with_pfam": 6577
+  },
+  "virus": {
+   "proteins": 41774,
+   "with_accession": 41774,
+   "with_pfam": 12304
+  },
+  "worm": {
+   "proteins": 11162,
+   "with_accession": 11162,
+   "with_pfam": 9159
+  },
+  "wuchereria-bancrofti": {
+   "proteins": 587,
+   "with_accession": 587,
+   "with_pfam": 529
+  },
+  "yeast": {
+   "proteins": 5762,
+   "with_accession": 5762,
+   "with_pfam": 5065
+  },
+  "zea-mays": {
+   "proteins": 11093,
+   "with_accession": 11093,
+   "with_pfam": 10396
+  },
+  "zebrafish": {
+   "proteins": 12749,
+   "with_accession": 12749,
+   "with_pfam": 12398
+  }
+ },
+ "url": "https://www.ebi.ac.uk/interpro/entry/pfam/"
+}
