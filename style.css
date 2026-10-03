@@ -79,7 +79,7 @@ a:hover { text-decoration: underline; }
 .ds { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
 .ds.live { box-shadow: var(--shadow); }
 .ds h3 { margin: 0; font-family: var(--display); font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
-.ds .sp { font-size: 13px; color: var(--ink-3); font-style: italic; }
+.ds .sp { font-size: 13px; color: var(--ink-3); }   /* species names come in italics from spName; common names stay upright */
 .ds .stats { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 4px 22px; }
 .ds .stats div { display: flex; flex-direction: column; }
 .ds .stats b { font-family: var(--mono); font-size: 17px; font-weight: 600; }
@@ -453,9 +453,10 @@ table.sets { width: 100%; border-collapse: collapse; font-size: 14px; }
 .sets thead th, .sets tr.set-grp th { font-family: var(--sans); }
 .sets .set-cite { margin-left: 10px; font-size: 12.5px; font-weight: 400; }
 @media (max-width: 600px) { .sets th:nth-child(3), .sets td:nth-child(3), .sets th:nth-child(5), .sets td:nth-child(5) { display: none; } .sets .set-name { white-space: normal; } }
-@media (max-width: 600px) {   /* the theme table and the species list keep their pairs past 10% FPR on a phone: they drop predictions (theme) or the taxon and proteins (species) */
+@media (max-width: 600px) {   /* the theme table and the species list keep their pairs past 10% FPR on a phone: the theme drops proteins and predictions, the species list taxon, proteins and pairs */
   .sets.theme th:nth-child(3), .sets.theme td:nth-child(3), .sets.theme th:nth-child(5), .sets.theme td:nth-child(5), .sets.spl th:nth-child(5), .sets.spl td:nth-child(5) { display: table-cell; }
-  .sets.theme th:nth-child(4), .sets.theme td:nth-child(4), .sets.spl th:nth-child(2), .sets.spl td:nth-child(2) { display: none; } }
+  .sets.theme th, .sets.theme td { padding-left: 6px; padding-right: 6px; }   /* three columns fit a phone */
+  .sets.theme th:nth-child(2), .sets.theme td:nth-child(2), .sets.theme th:nth-child(4), .sets.theme td:nth-child(4), .sets.spl th:nth-child(2), .sets.spl td:nth-child(2), .sets.spl th:nth-child(4), .sets.spl td:nth-child(4) { display: none; } }
 .sets thead th.n { font-family: var(--sans); color: var(--ink-3); }
 @media (max-width: 600px) { .sets .set-cite { display: block; margin: 2px 0 0 19px; } }
 /* a gene's isoforms side by side (protein page) */
@@ -537,8 +538,8 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .lede span.q { color: var(--query-t); font-weight: 700; }   /* the letters that spell cLIP */
 .cite-link { font: 500 13px var(--sans); color: var(--ink-3); background: none; border: 0; padding: 6px 4px; cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; align-self: center; }
 .cite-link:hover { color: var(--blue); }
-.actions a.btn ~ .cite-link { display: inline-flex; align-items: center; height: 38px; padding: 0 16px; border-radius: 9px; font: 600 14px var(--sans); border: 1px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none; }   /* among full buttons (pair page): one of them */
-.actions a.btn ~ .cite-link:hover { border-color: var(--blue); color: var(--blue); }
+.actions .cite-link { display: inline-flex; align-items: center; height: 38px; padding: 0 16px; border-radius: 9px; font: 600 14px var(--sans); border: 1px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none; }   /* beside full buttons (protein, pair and virus pages): one of them */
+.actions .cite-link:hover { border-color: var(--blue); color: var(--blue); }
 .tbl-find { display: block; margin: 0 0 8px auto; width: 200px; }   /* a table's filter box */
 .pt th.sortable { cursor: pointer; }
 table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric: normal; } table.cuts tr.avg td, table.cuts tr.avg th { border-top: 0; }
@@ -635,7 +636,7 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .orth-aln { overflow-x: auto; margin: 0 0 10px; font: 12px/1.55 var(--mono); }   /* the site's residues across the open orthologs */
 .orth-aln .aln-block + .aln-block { margin-top: 8px; }
 .orth-aln .aln-row { display: flex; white-space: nowrap; }
-.orth-aln .aln-lab { flex: none; width: 17ch; overflow: hidden; text-overflow: ellipsis; font-family: var(--sans); color: var(--ink-2); padding-right: 1ch; }
+.orth-aln .aln-lab { flex: none; width: 15ch; overflow: hidden; text-overflow: ellipsis; font-family: var(--sans); color: var(--ink-2); padding-right: 1ch; }
 .orth-aln .aln-n { flex: none; width: 5ch; text-align: right; color: var(--ink-3); padding-right: 1ch; }
 .orth-aln .aln-n.e { text-align: left; padding: 0 0 0 1ch; }
 .orth-aln .aln-seq span { display: inline-block; width: 1.2ch; text-align: center; }
