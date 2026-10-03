@@ -2328,6 +2328,23 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (e && e.plddtUrl) fetch(e.plddtUrl).then((r) => (r.ok ? r.json() : null)).then((j) => { if (!gone() && j && Array.isArray(j.confidenceScore)) { st.pl = j.confidenceScore; drawOrth(); } }).catch(() => {});
     }).catch(() => {});
   }
+  const SIMG = ['STA', 'NEQK', 'NHQK', 'NDEQ', 'QHRK', 'MILV', 'MILF', 'HY', 'FYW'], simAA = (x, y) => SIMG.some((g) => g.includes(x) && g.includes(y));   // Clustal's strong groups
+  function orthAlign(T, c) {   // a site's residues and 5 either side, in this protein and each open ortholog, column by column on this protein's residues
+    const site = (ORTH.sites || []).find((x) => x.c === c), L = M.plen, al = T.filter((t) => t.al); if (!site || !qSeq || !al.length) return null;
+    const blocks = []; for (const [a, b] of site.runs) { const lo = Math.max(1, a - 5), hi = Math.min(L, b + 5), last = blocks[blocks.length - 1];
+      if (last && lo <= last[1] + 4) last[1] = Math.max(last[1], hi); else blocks.push([lo, hi]); }
+    const FQ = orthFreq(M, null), rows = [{ label: `${sp.reg.label} ${P.gene}`, seq: qSeq, at: (r) => r, hit: (r) => !!(FQ.byC[r] && FQ.byC[r][c]), q: true }];
+    for (const t of al) rows.push({ label: orthName(t.st), seq: t.st.seq2, at: (r) => t.al.map[r - 1] || 0, hit: (r2) => !!(t.byS[r2] && t.byS[r2][c]) });
+    const W = Math.max(...rows.map((x) => x.label.length)), txt = [], html = blocks.map(([lo, hi]) => `<div class="aln-block">${rows.map((row) => {
+      let first = 0, last = 0, cells = '', plain = '';
+      for (let r = lo; r <= hi; r++) { const r2 = row.at(r), ch = r2 ? row.seq[r2 - 1] || '?' : '-', qc = qSeq[r - 1]; if (r2) { first ||= r2; last = r2; }
+        const nx = r < hi ? row.at(r + 1) : 0, ins = !row.q && r2 && nx && nx - r2 > 1 ? nx - r2 - 1 : 0;
+        const cl = [!r2 ? 'gap' : row.q ? '' : ch === qc ? 'id' : simAA(ch, qc) ? 'sim' : '', r2 && row.hit(r2) ? 'hit' : '', ins ? 'ins' : ''].filter(Boolean).join(' ');
+        cells += `<span${cl ? ` class="${cl}"` : ''}${ins ? ` title="${ins} residue${ins === 1 ? '' : 's'} of the ortholog inserted after this one"` : ''}>${ch}</span>`; plain += ch; }
+      txt.push(`${row.label.padEnd(W)}  ${String(first || '').padStart(5)} ${plain} ${last || ''}`);
+      return `<div class="aln-row"><span class="aln-lab" title="${esc(row.label)}">${esc(row.label)}</span><span class="aln-n">${first || ''}</span><span class="aln-seq">${cells}</span><span class="aln-n e">${last || ''}</span></div>`; }).join('')}</div>`).join('');
+    return { html, text: txt.reduce((o, l, i) => o + (i && i % rows.length === 0 ? '\n' : '') + l + '\n', '') };
+  }
   function renderOrthSite(T) {   // the partners contacting one of this protein's sites, in this protein and in each ortholog; ortholog pairs in bold
     const box = $('#orth-site'); if (!box) return;
     const c = ORTH.site; if (!c || !M || c > M.k) { box.innerHTML = ''; return; }
@@ -2339,8 +2356,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       pairs.forEach((p) => { lines[0].bold.add(p.k1); });
       lines.push({ head: orthName(t.st), items: [...ks].map((k) => { const r = t.st.sp2obj.byKey.get(k); return { k, href: `#/${t.st.sp2}/${encodeURIComponent(t.st.P2.key)}/${encodeURIComponent(k)}`, name: r ? r.gene : k }; }), bold: new Set(pairs.map((p) => p.k2)) }); }
     const list = (L) => `<li><b>${esc(L.head)}</b> <span class="muted">(${fmtInt(L.items.length)})</span> ${L.items.length ? L.items.sort((a, b) => (L.bold.has(b.k) - L.bold.has(a.k)) || COLL.compare(a.name, b.name)).slice(0, 40).map((x) => `<a href="${x.href}"${L.bold.has(x.k) ? ' style="font-weight:700"' : ''}>${esc(x.name)}</a>`).join(', ') + (L.items.length > 40 ? ` and ${fmtInt(L.items.length - 40)} more` : '') : '<span class="muted">none at this cutoff</span>'}</li>`;
-    box.innerHTML = `<div class="orth-site-head"><b style="color:${clusterColor(c, M.k)}">${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· partners contacting this site in each species; partners whose ortholog contacts the same site in bold</span> <button type="button" class="more" id="orth-site-x">close</button></div><ul class="orth-pairs">${lines.map(list).join('')}</ul>`;
+    const A = orthAlign(T, c);
+    box.innerHTML = `<div class="orth-site-head"><b style="color:${clusterColor(c, M.k)}">${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· partners contacting this site in each species; partners whose ortholog contacts the same site in bold</span> <button type="button" class="more" id="orth-site-x">close</button></div>`
+      + (A ? `<div class="orth-aln-head"><b>Aligned residues</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein</span> <button type="button" class="more" id="orth-aln-copy">copy</button></div>`
+        + `<div class="orth-aln" style="--c:${clusterColor(c, M.k)}" role="img" aria-label="${esc(`${P.gene} ${clusterLabel(c)} aligned with its open orthologs`)}">${A.html}</div>` : '')
+      + `<ul class="orth-pairs">${lines.map(list).join('')}</ul>`;
     $('#orth-site-x').onclick = () => { ORTH.site = 0; box.innerHTML = ''; };
+    if (A) $('#orth-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
   async function drawOrth() {
     const host = $('#orth-wrap'); if (!host || !ORTH.list) return;
@@ -2356,6 +2378,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (a) runs.push([a, b]);
       const main = runs.reduce((m, q) => (q[1] - q[0] > m[1] - m[0] ? q : m), runs[0] || [0, -1]);
       return { c, runs, mid: runs.length ? Math.round((main[0] + main[1]) / 2) : 0 }; }).filter((s) => s.runs.length);
+    ORTH.sites = sites;   // the site panel's alignment reads the runs
     const T = open.map((st) => {   // each ortholog on this protein's axis; each of its predictions matched to the site holding half or more of its aligned contact residues
       const m2 = st.m[cut], F2 = orthFreq(m2, null), al = st.al, inv = new Map(), ins = new Map(), pSite = [], byS = new Array(F2.L + 2), keyS = new Map();
       if (al) {   // per prediction, not per cluster: a data-rich ortholog can fold many sites into one broad cluster (human CDK3: 307 predictions in 2 clusters)

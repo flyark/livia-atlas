@@ -624,6 +624,19 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .orth-none #orth-list, .orth-none #orth-wrap, .orth-none #orth-site, .orth-none #orth-key, .orth-none #orth-shared, .orth-none .xt { display: none; }
 #orth-site:not(:empty) { margin: 8px 0 4px; padding: 10px 12px; border: 1px solid var(--line-2); border-radius: 8px; font-size: 13px; }
 .orth-site-head { margin-bottom: 6px; }
+.orth-aln-head { margin: 8px 0 4px; }
+.orth-aln { overflow-x: auto; margin: 0 0 10px; font: 12px/1.55 var(--mono); }   /* the site's residues across the open orthologs */
+.orth-aln .aln-block + .aln-block { margin-top: 8px; }
+.orth-aln .aln-row { display: flex; white-space: nowrap; }
+.orth-aln .aln-lab { flex: none; width: 17ch; overflow: hidden; text-overflow: ellipsis; font-family: var(--sans); color: var(--ink-2); padding-right: 1ch; }
+.orth-aln .aln-n { flex: none; width: 5ch; text-align: right; color: var(--ink-3); padding-right: 1ch; }
+.orth-aln .aln-n.e { text-align: left; padding: 0 0 0 1ch; }
+.orth-aln .aln-seq span { display: inline-block; width: 1.2ch; text-align: center; }
+.orth-aln .aln-seq .id { background: #1A5276; color: #fff; }
+.orth-aln .aln-seq .sim { background: #CFDCE8; }
+.orth-aln .aln-seq .gap { color: var(--ink-3); }
+.orth-aln .aln-seq .hit { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 2px; text-decoration-color: var(--c); }
+.orth-aln .aln-seq .ins { box-shadow: inset -2px 0 0 #B45309; }   /* the ortholog has residues of its own after this one */
 .orth-sh { margin-top: 8px; font-size: 13.5px; }
 .orth-sh summary { cursor: pointer; padding: 2px 0; }
 .orth-sh summary:hover b { text-decoration: underline; }
