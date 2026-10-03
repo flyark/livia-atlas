@@ -2123,7 +2123,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
         <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}${commCtl('net', '', 0)}</div></div>
       <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color (or, with Communities, the color of the group they form through their pairs with each other). Edges between partners join partners
-        predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a><span id="net-open"></span></p>
+        predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open.</p>
+      <p class="net-links"><a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a><span id="net-open"></span></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
       <div class="netkey"><div class="kbkey" id="net-kbkey"></div>
         <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
@@ -3051,7 +3052,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   async function loadDomains() {   // the protein's domains on its UniProt sequence (S.uniSeq: AFDB's copy when it has a model of this accession, else UniProt's): the table's entry when Pfam annotated that sequence, else the live lookup
     const e = await afdbEntry(P.acc), seq = e && !e.failed && e.seq ? e.seq : await uniprotSeq(P.acc); if (gone()) return;   // AFDB's answer is already on its way for the 3D card
     if (seq) S.uniSeq = seq;
-    const d = await domainsOf(P.acc, seq || ''); if (gone()) return; S.domains = d; drawFreq(); drawOrth(); if (clustered()) renderSites();
+    const d = await domainsOf(P.acc, seq || ''); if (gone()) return; S.domains = d; drawFreq(); drawOrth(); if (PALN.trk) drawOrth(PCFG); if (clustered()) renderSites();
   }
   async function loadStructure() {
     const msg = (t) => { const m = $('#v3d-msg'); if (m) { m.hidden = false; m.innerHTML = t; } };
@@ -3436,7 +3437,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   async function paraAlign() {
     const out = $('#para-aln'); if (!out) return; const c = PALN.c;
     if (!c || !clustered() || !qSeq || !PARA) { out.innerHTML = ''; return; }
-    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), tok = ++PALN.tok;
+    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), akey = `${c}|${cut}|${rows.map((x) => x.k2).join(',')}`;
+    if (PALN.akey === akey && out.querySelector('.orth-aln')) return;   // already drawn for this site, cutoff and list
+    const tok = ++PALN.tok; PALN.akey = '';
     out.innerHTML = `<p class="muted">Aligning ${fmtInt(rows.length)} paralog${rows.length === 1 ? '' : 's'} and clustering their predictions…</p>`;
     const sts = await Promise.all(rows.map(async (x) => { if (!PALN.st.has(x.k2)) paraSt(x.k2);
       const st = await PALN.st.get(x.k2); if (st && !st.m[cut]) { try { await orthCluster(st); } catch (e) { return null; } } return st; }));
@@ -3454,6 +3457,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (!A) { out.innerHTML = `<p class="muted">No paralog's sequence could be aligned to ${esc(P.gene)}'s here${miss.length ? ` (${esc(miss.join(', '))})` : ''}.</p>`; return; }
     out.innerHTML = `<div class="orth-aln-head"><b><span class="mdot" style="background:${clusterColor(c, M.k)}"></span> ${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein${miss.length ? `; not aligned: ${esc(miss.join(', '))}` : ''}</span> <button type="button" class="more" id="para-aln-copy">copy</button></div>`
       + `<div class="orth-aln" style="--c:${clusterColor(c, M.k)}" tabindex="0" role="region" aria-label="${esc(`${P.gene} ${clusterLabel(c)} aligned with its paralogs`)}">${A.html}</div>`;
+    PALN.akey = akey;
     $('#para-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
   { const card = $('#c-para'); let started = false; const start = () => { if (!started) { started = true; paraInit(); } };   // the paralog table and the edge list load when the card nears the viewport
@@ -4072,7 +4076,7 @@ async function viewNetwork(spId, q) {
         <span class="ex-row" id="nw-ex"></span>
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="link" title="partners on a path between two proteins-of-interest; through 1 is a partner two of them share">+ partners linking them</option><option value="top">+ each one's top partners</option><option value="tree" title="the fewest added partners that connect your proteins-of-interest through strong pairs (a Steiner tree); with a score column, each protein joins only when its score outweighs the cost of reaching it">+ the fewest partners connecting them</option></select></label>
-        <label class="ctl" id="nw-prize-wrap" hidden title="a number column of your table as each protein-of-interest's weight: its score, ranked from 0 to 1.5 (p-values and FDRs by −log10, fold changes by size either way); a protein joins the tree only while its score outweighs the cost of the path to it; none: every protein-of-interest that can be reached joins">Score <select id="nw-prize"></select></label>
+        <label class="ctl" id="nw-prize-wrap" hidden title="a number column of your table as each protein-of-interest's weight: its score, ranked up to 1.5 (p-values and FDRs by −log10, fold changes by size either way); a protein joins the tree only while its score outweighs the cost of the path to it; none: every protein-of-interest that can be reached joins">Score <select id="nw-prize"></select></label>
         <span id="nw-hops-wrap" title="how many added partners a path between two proteins-of-interest may pass through: 1 is a partner two of them share, 2 and 3 reach further">through up to <select id="nw-hops" aria-label="Partners a path may pass through"><option value="1">1 partner</option><option value="2">2 partners</option><option value="3">3 partners</option></select></span>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein <label class="ctl" title="pick the number for you: the most partners per protein, up to 10, that keep the drawing near ${AUTO_N} proteins; typing a number turns it off"><input type="checkbox" id="nw-kauto"${S.kAuto ? ' checked' : ''}> auto</label> <button type="button" class="btn" id="nw-kscan" title="how deep each protein’s ranked partners stay shared with another protein-of-interest, compared with random lists; exploratory">Suggest <span class="tag-alpha">alpha</span></button></span>
         <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}<button data-f="c" class="${S.cut === 'c' ? 'on' : ''}" title="an iLIS cutoff of your own">custom</button></div>
@@ -4252,7 +4256,7 @@ async function viewNetwork(spId, q) {
   let tableNote = '';
   let SIG = new Map(), ENR = { key: '', html: '' };
   const bandKey = () => ({ 10: 'pos10', 5: 'pos5', 1: 'pos1' }[S.cut] || (cutV() >= CUT[1] ? 'pos1' : cutV() >= CUT[5] ? 'pos5' : 'pos10'));   // the index's partner count at the cutoff's band (a custom cutoff: the band at or below it)   // added partners' chance p and q; the last enrichment test, by list and cutoff
-  // A number column as each protein-of-interest's prize: ranked from 0 to 1 over the proteins-of-interest with a value (p-values and
+  // A number column as each protein-of-interest's prize: ranked from 1/n to 1 over the proteins-of-interest with a value (p-values and
   // FDRs by −log10, a raw fold change by log2, every column by size either way, as the colors read them), times PRIZE; no value: half.
   const PRIZE = 1.5;
   function prizes(Q) {
@@ -4306,9 +4310,10 @@ async function viewNetwork(spId, q) {
       const rset = () => { const o = new Set(); for (const q of Q) { const b = bin(q); let got = -1;
         for (let w = 0; w < 30 && got < 0; w++) for (const bb of w ? [b - w, b + w] : [b]) { const L = byBin.get(bb); if (!L) continue; for (let t = 0; t < 25; t++) { const i = L[Math.floor(rand() * L.length)]; if (!Q.has(i) && !o.has(i)) { got = i; break; } } if (got >= 0) break; }
         if (got >= 0) o.add(got); } return o; };
-      const obs = pairsIn(Q); let ge = 0, tot = 0; for (let r = 0; r < R; r++) { const x = pairsIn(rset()); tot += x; if (x >= obs) ge++; }
-      const mean = tot / R, pv = (1 + ge) / (R + 1);
-      ENR = { key, html: `Your ${fmtInt(Q.size)} proteins-of-interest share <b>${fmtInt(obs)}</b> predicted pair${obs === 1 ? '' : 's'} among themselves past iLIS ${cutV()}${S.iptm ? ` (ipTM ≥ ${S.iptm})` : ''}; ${fmtInt(R)} random lists with as many partners per protein share ${mean.toFixed(1)} on average${mean > 0 ? ` (${(obs / mean).toFixed(1)}×)` : ''} · <b>${ge ? `p = ${pv < 0.01 ? pv.toExponential(1) : pv.toFixed(3)}` : `p ≤ ${(1 / (R + 1)).toFixed(4)}`}</b> <span class="muted">(each protein swapped for one with about as many partners past ${bk === 'pos10' ? '10' : bk === 'pos5' ? '5' : '1'}% FPR in the Atlas; seeded by the list)</span>` };
+      const obs = pairsIn(Q); let ge = 0, tot = 0, nR = 0; for (let r = 0; r < R; r++) { const rs = rset(); if (rs.size < Q.size) continue; nR++; const x = pairsIn(rs); tot += x; if (x >= obs) ge++; }   // a list that could not be matched in full is not counted
+      if (!nR) { el.hidden = true; return; }
+      const mean = tot / nR, pv = (1 + ge) / (nR + 1);
+      ENR = { key, html: `Your ${fmtInt(Q.size)} proteins-of-interest share <b>${fmtInt(obs)}</b> predicted pair${obs === 1 ? '' : 's'} among themselves past iLIS ${cutV()}${S.iptm ? ` (ipTM ≥ ${S.iptm})` : ''}; ${fmtInt(nR)} random lists with as many partners per protein share ${mean.toFixed(1)} on average${mean > 0 ? ` (${(obs / mean).toFixed(1)}×)` : ''} · <b>${ge ? `p = ${pv < 0.01 ? pv.toExponential(1) : pv.toFixed(3)}` : `p ≤ ${(1 / (nR + 1)).toFixed(4)}`}</b> <span class="muted">(each protein swapped for one with about as many partners past ${bk === 'pos10' ? '10' : bk === 'pos5' ? '5' : '1'}% FPR in the Atlas; seeded by the list)</span>` };
       if (!stale(gen)) el.innerHTML = ENR.html; }, 20);
   }
   function readInput() {   // the names to draw, through readIdInput; the column picker and the note follow it
@@ -4424,7 +4429,7 @@ async function viewNetwork(spId, q) {
       + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${lone ? ` · ${fmtInt(lone)} protein${lone === 1 ? '' : 's'} with no pair hidden` : ''}${treeInfo ? ` · the fewest partners connecting them: ${fmtInt(treeInfo.added)} added, joining ${treeInfo.joined === treeInfo.of ? `all ${fmtInt(treeInfo.of)}` : `${fmtInt(treeInfo.joined)} of ${fmtInt(treeInfo.of)}`} proteins-of-interest${treeInfo.joined < treeInfo.of ? ` (the other ${fmtInt(treeInfo.of - treeInfo.joined)} ${treeInfo.prize ? 'are not worth a partner by their score, or ' : ''}were not reached by a short path; they are drawn as they are)` : ''} (a Steiner tree, each pair costing 1.05 − best iLIS, total ${treeInfo.cost.toFixed(2)}${treeInfo.prize ? `; scores from ${esc(S.prize)}` : ''})` : ''}${sigCut ? ` · ${fmtInt(sigCut)} added partner${sigCut === 1 ? '' : 's'} hidden as linking no more proteins-of-interest than chance (q > 0.05)${treeInfo ? "; the tree's own partners are kept" : ''}` : ''}${S.add === 'link' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: fewer partners in between, a higher Min. pairs or a stricter cutoff thins it` : ''}${hopCut ? ' · the search for linking partners stopped at the nearest ones in this dense network' : ''}${autoNote ? ` · ${esc(autoNote)}` : ''}</span>`);
     $('#nw-card').hidden = false;
     if (!links.length && EXPECT) { const X = EXPECT; EXPECT = null; POS0 = null; $('#nw-loaded').innerHTML = `<b>Not the saved result</b> · settings from ${esc(X.file)}: no predicted pair is drawn with these settings now.`; $('#nw-loaded').classList.add('bad'); $('#nw-loaded').hidden = false; }
-    if (!links.length) { $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pairs). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); return; }   // the matrix still shows the pairs below this cutoff
+    if (!links.length) { $('#nw-enrich').hidden = true; $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pairs). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); return; }   // the matrix still shows the pairs below this cutoff
     if (K === null) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
     if (TPN) for (const d of extra) { const k = fkey(d.source, d.target); if (!FOLD.has(k)) FOLD.set(k, TPN.has(d.source, d.target) ? { st: 'low', best: TPN.score ? TPN.score(d.source, d.target) : NaN } : { st: 'none' }); }   // the index says folded or not; the score comes on hover
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed, xo, XO);
