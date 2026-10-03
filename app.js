@@ -88,6 +88,7 @@ const REF = {
   afmlis: ['Kim et al. (2024) AFM-LIS, bioRxiv', '10.1101/2024.02.19.580970'],
   biogrid: ['Oughtred et al. 2021', '10.1002/pro.3978'],
   uniprot: ['UniProt Consortium 2025', '10.1093/nar/gkae1010'], flybase: ['Öztürk-Çolak et al. 2024', '10.1093/genetics/iyad211'],
+  alliance: ['Alliance of Genome Resources Consortium 2024', '10.1093/genetics/iyae049'],
   afdb: ['Varadi et al. 2024', '10.1093/nar/gkad1011'], alphafold: ['Jumper et al. 2021', '10.1038/s41586-021-03819-2'],
   alphamissense: ['Cheng et al. 2023', '10.1126/science.adg7492'], afm: ['Evans et al. 2021', '10.1101/2021.10.04.463034'],
   colabfold: ['Mirdita et al. 2022', '10.1038/s41592-022-01488-1'], silhouette: ['Rousseeuw 1987', '10.1016/0377-0427(87)90125-7'],
@@ -821,7 +822,8 @@ function siblingEntries(sp, P) {
   return SIBS.get(ck);
 }
 let ORTHM = null;   // data/orth/manifest.json: the species with an ortholog table
-const orthSpecies = () => { if (!ORTHM) ORTHM = getJSON('data/orth/manifest.json').then((m) => new Set(m.species || [])).catch(() => new Set()); return ORTHM; };
+const orthMan = () => { if (!ORTHM) ORTHM = getJSON('data/orth/manifest.json').catch(() => ({})); return ORTHM; };   // species, source, release
+const orthSpecies = () => orthMan().then((m) => new Set(m.species || []));
 const ORTHS = new Map();   // data/orth/<species>/<2 chars>.json: a protein's hits in the other species, by the key's last two characters
 function orthShard(spId, key, isPrefix = false) { const pre = isPrefix ? key : key.slice(-2).toLowerCase(), ck = spId + '/' + pre;
   if (!ORTHS.has(ck)) ORTHS.set(ck, getJSON(`data/orth/${spId}/${pre}.json`).catch(() => ({})));
@@ -1411,6 +1413,7 @@ async function viewAbout() {
         ${ref('alphafold', 'Those models and their pLDDT: Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. <i>Nature</i> 596, 583–589.')}
         ${ref('alphamissense', 'Missense pathogenicity on human proteins: Cheng, J. et al. (2023). Accurate proteome-wide missense variant effect prediction with AlphaMissense. <i>Science</i> 381, eadg7492.')}
         ${ref('biogrid', 'Reported physical and genetic interactions (release 5.0.261): Oughtred, R. et al. (2021). The BioGRID database: a comprehensive biomedical resource of curated protein, genetic, and chemical interactions. <i>Protein Sci.</i> 30, 187–200.')}
+        ${ref('alliance', 'Orthologs on protein pages (human, mouse, rat, zebrafish, fly, <i>C. elegans</i> and yeast; release 9.0.0, stringent set, CC BY 4.0, mapped to the Atlas proteins through its UniProt cross-references): The Alliance of Genome Resources Consortium (2024). Updates to the Alliance of Genome Resources central infrastructure. <i>Genetics</i> 227, iyae049.')}
       </ul>
       <h3 class="refs-h">Prediction, scoring and display</h3>
       <ul class="refs">
@@ -2148,7 +2151,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); drawOrth(); }; });
 
-  /* Orthologs ─ the same protein in the Atlas's other species (MMseqs2 reciprocal best hits over the Atlas's own sequences), each
+  /* Orthologs ─ the same protein in the Atlas's other species (the Alliance of Genome Resources' stringent orthologs, mapped to the Atlas proteins), each
      with its own cLIP, drawn on this protein's residues through a pairwise sequence alignment (ALIGN, affine gaps, BLOSUM62).
      Conserved binding sites line up; the identity strip says where the alignment can be trusted, and the shared partners say
      which sites the same orthologous partners contact in both species. */
@@ -2159,10 +2162,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const sh = await orthShard(sp.id, P.key), ent = sh && sh[P.key]; if (!ent) return [];
     const out = [];
     for (const [sp2, hits] of Object.entries(ent)) { const reg2 = (REG.species || []).find((x) => x.id === sp2); if (!reg2 || !hits.length) continue;
-      const h = hits.find((x) => x[4]) || hits[0];   // the mutual best hit, else the best hit
-      out.push({ sp2, reg2, key2: h[0], pid: h[1], qcov: h[2], tcov: h[3], rbh: !!h[4] }); }
-    return out.sort((a, b) => (b.rbh - a.rbh) || (b.pid - a.pid));
+      const all = hits.map((h) => ({ key2: h[0], methods: h[1], of: h[2], both: !!(h[3] && h[4]), sym: h[5] || h[0] }));   // [key2, methods, of, best, best_rev, symbol], the most methods first
+      out.push({ sp2, reg2, ...all[0], alts: all }); }
+    const own = (o) => ((o.reg2.datasets || []).some((d) => !/^afdb-het-|^viral-dimers-afdb$/.test(d)) ? 1 : 0);   // an AlphaFold-Multimer screen of its own, beyond the AFDB heterodimers
+    const ord = (o) => (REG.species || []).findIndex((x) => x.id === o.sp2);
+    return out.sort((a, b) => (own(b) - own(a)) || (b.methods / b.of - a.methods / a.of) || (b.methods - a.methods) || (b.both - a.both) || (ord(a) - ord(b)));   // mouse and rat hold only AFDB pairs: the species with screens of their own open first
   }
+  const orthOpened = () => (ORTH.list || []).map((o) => ORTH.open.get(o.sp2)).filter(Boolean);   // loaded orthologs in the list's order, whatever order they loaded in
   async function orthNames() {   // the species with tables, as the card names them: human, fly, …, Mus musculus and Rattus norvegicus
     const ids = [...(await orthSpecies())], ls = ids.map((id) => { const r = (REG.species || []).find((x) => x.id === id), l = r ? r.label : id; return /^[A-Z][a-z]+$/.test(l) ? l.toLowerCase() : l; });
     return ls.length > 1 ? `${ls.slice(0, -1).join(', ')} and ${ls[ls.length - 1]}` : ls.join('');
@@ -2187,7 +2193,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (gone()) return;
     ORTH.list = list;
     if (!list.length) { const has = (await orthSpecies()).has(sp.id), names = await orthNames(); if (gone()) return;
-      sub.textContent = has ? `No MMseqs2 hit for ${P.gene} among the Atlas proteins of ${names}. A sequence search misses orthologs that share only short stretches.` : `Orthologs are listed for ${names}; ${sp.reg.label} proteins have no table yet.`;
+      sub.textContent = has ? `No ortholog of ${P.gene} among the Atlas proteins of ${names} in the Alliance of Genome Resources' stringent set.` : `Orthologs are listed for ${names}; ${sp.reg.label} proteins have no table yet.`;
       $('#orth-list').innerHTML = ''; $('#c-orth').classList.add('orth-none'); return; }   // nothing below the note: no empty plot, legend or tick box
     renderOrthList();
     const auto = list.slice(0, 3);   // the best hit in up to three species opens by itself (mutual best hits first); the rest on a click
@@ -2203,13 +2209,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function renderOrthList() {
     const box = $('#orth-list'), sub = $('#orth-sub'); if (!box || !ORTH.list) return;
     const n = ORTH.list.length, open = [...ORTH.open.values()].filter(Boolean).length;
-    sub.textContent = `${n} ortholog${n === 1 ? '' : 's'} in the Atlas · MMseqs2 best hits over the Atlas proteins, mutual best hits in dark blue · each ortholog's own cLIP, placed on ${P.gene}'s residues by sequence alignment`;
+    sub.textContent = `${n} ortholog${n === 1 ? '' : 's'} in the Atlas · Alliance of Genome Resources orthologs (stringent set), the best score both ways in dark blue · each ortholog's own cLIP, placed on ${P.gene}'s residues by sequence alignment`;
     box.innerHTML = ORTH.list.map((o) => { const st = ORTH.open.get(o.sp2), loading = ORTH.open.has(o.sp2) && !st, fail = ORTH.fail.get(o.sp2);
       const al = st && st.al, m2 = st && st.m[cut];
-      return `<div class="orth-row"><span class="src" style="--c:${o.rbh ? '#1A5276' : '#9AA7B5'}" title="${o.rbh ? 'mutual best hit' : 'best hit, not mutual'}">${esc(o.reg2.label)}</span>
-        <a href="#/${o.sp2}/${encodeURIComponent(o.key2)}">${esc(st ? st.P2.gene : o.key2)}</a> <span class="muted">${o.pid.toFixed(0)}% identity over the hit${o.rbh ? '' : ' · not mutual'}${st ? ` · ${fmtInt(st.P2.pos10)} partners past 10% FPR` : ''}${al ? ` · aligned ${fmtInt(al.aligned)} of ${fmtInt(qSeq.length)} residues, ${Math.round(100 * al.identity)}% identical` : st && !st.seq2 ? ' · no sequence to align: its own numbering' : st && al === false ? ' · too long to align in the page: its own numbering' : ''}${m2 ? ` · ${fmtInt(m2.fingerprints.length)} predictions in ${m2.k} cluster${m2.k === 1 ? '' : 's'}` : ''}</span>
+      return `<div class="orth-row"><span class="src" style="--c:${o.both ? '#1A5276' : '#9AA7B5'}" title="${o.both ? 'the best score both ways' : 'not the best score both ways'}">${esc(o.reg2.label)}</span>
+        <a href="#/${o.sp2}/${encodeURIComponent(o.key2)}">${esc(st ? st.P2.gene : o.sym)}</a> <span class="muted">${o.methods} of ${o.of} methods${o.both ? '' : ' · not the best score both ways'}${st ? ` · ${fmtInt(st.P2.pos10)} partners past 10% FPR` : ''}${al ? ` · aligned ${fmtInt(al.aligned)} of ${fmtInt(qSeq.length)} residues, ${Math.round(100 * al.identity)}% identical` : st && !st.seq2 ? ' · no sequence to align: its own numbering' : st && al === false ? ' · too long to align in the page: its own numbering' : ''}${m2 ? ` · ${fmtInt(m2.fingerprints.length)} predictions in ${m2.k} cluster${m2.k === 1 ? '' : 's'}` : ''}</span>${o.alts.length > 1 ? ` <span class="muted">· also ${o.alts.filter((x) => x.key2 !== o.key2).map((x) => `<button type="button" class="more" data-alt="${esc(o.sp2)}" data-key="${esc(x.key2)}" title="${x.methods} of ${x.of} methods; click to draw this one instead">${esc(x.sym)}</button>`).join(', ')}</span>` : ''}
         ${st ? '' : loading ? '<span class="muted">loading…</span>' : fail ? `<span class="muted">${esc(fail)}</span>` : `<button class="btn" type="button" data-orth="${esc(o.sp2)}">Show</button>`}</div>`; }).join('');
     box.querySelectorAll('[data-orth]').forEach((b) => { b.onclick = () => { const o = ORTH.list.find((x) => x.sp2 === b.dataset.orth); if (o) orthOpen(o); }; });
+    box.querySelectorAll('[data-alt]').forEach((b) => { b.onclick = () => {   // another ortholog of the same species (one to many: yeast CDC28 has CDK3, CDK2 and CDK1): draw it instead
+      const o = ORTH.list.find((x) => x.sp2 === b.dataset.alt), a = o && o.alts.find((x) => x.key2 === b.dataset.key); if (!a) return;
+      Object.assign(o, { key2: a.key2, methods: a.methods, of: a.of, both: a.both, sym: a.sym }); ORTH.open.delete(o.sp2); ORTH.fail.delete(o.sp2); ORTH.shared.delete(o.sp2); orthOpen(o); }; });
   }
   function orthFreq(m, act) {   // contacts per residue and the most frequent cluster at each, as the frequency plot counts them
     const L = m.plen, tot = new Uint16Array(L + 2), byC = new Array(L + 2);
@@ -2219,7 +2228,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   async function drawOrth() {
     const host = $('#orth-wrap'); if (!host || !ORTH.list) return;
-    const open = [...ORTH.open.values()].filter(Boolean);
+    const open = orthOpened();
     if (!clustered() || !open.length) { host.innerHTML = ''; $('#orth-key').innerHTML = ''; return; }
     for (const st of open) if (!st.m[cut]) { await orthCluster(st); if (gone()) return; }   // a new cutoff: cluster the open orthologs again
     for (const st of open) if (st.seq2 && qSeq && st.al === null) st.al = ALIGN.align(qSeq, st.seq2) || false;   // false: too long to align in the page (ALIGN's cell cap)
@@ -2267,14 +2276,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (gone()) return;
     const SH = new Map(shards), pairs = [];
     for (const k2 of keys2) { const ent = (SH.get(k2.slice(-2).toLowerCase()) || {})[k2], hits = ent && ent[sp.id]; if (!hits) continue;
-      const h = hits.find((x) => x[4]) || hits[0], k1 = h[0]; if (!partnerCluster.has(k1)) continue;
-      pairs.push({ k1, k2, c1: partnerCluster.get(k1), c2: best2.get(k2).c, rbh: !!h[4] }); }
+      const k1 = hits[0][0]; if (!partnerCluster.has(k1)) continue;
+      pairs.push({ k1, k2, c1: partnerCluster.get(k1), c2: best2.get(k2).c }); }
     ORTH.shared.set(sp2, { n2: keys2.length, pairs });
     renderOrthShared();
   }
   function renderOrthShared() {   // one line per ortholog; its shared sites open in place on a click (author, 2026-10-03: no table on the main page)
     const box = $('#orth-shared'); if (!box) return;
-    const open = [...ORTH.open.values()].filter(Boolean).filter((st) => ORTH.shared.has(st.sp2) && ORTH.shared.get(st.sp2).n2 > 0); if (!open.length || !clustered()) { box.innerHTML = ''; return; }   // an ortholog with no partner past the cutoff has nothing to share
+    const open = orthOpened().filter((st) => ORTH.shared.has(st.sp2) && ORTH.shared.get(st.sp2).n2 > 0); if (!open.length || !clustered()) { box.innerHTML = ''; return; }   // an ortholog with no partner past the cutoff has nothing to share
     box.innerHTML = open.map((st) => { const sh = ORTH.shared.get(st.sp2), m2 = st.m[cut], cell = new Map();
       for (const p of sh.pairs) { const k = p.c1 + '|' + p.c2; if (!cell.has(k)) cell.set(k, []); cell.get(k).push(p); }   // both partners are clustered: orthShared keeps only those
       const name1 = (k) => esc(gname(k)), name2 = (k) => { const r = st.sp2obj.byKey.get(k); return esc(r ? r.gene : k); };

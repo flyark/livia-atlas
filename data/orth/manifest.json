@@ -3,68 +3,103 @@
   "human",
   "fly",
   "zebrafish",
+  "yeast",
   "worm",
-  "yeast"
+  "mus-musculus",
+  "rattus-norvegicus"
  ],
- "keep": 3,
- "method": "MMseqs2 easy-search -s 7 on the Atlas species proteins (UniProt reference proteomes); rbh = mutual best hit",
- "rbh": {
-  "human-zebrafish": 8272,
-  "human-worm": 4380,
-  "human-fly": 5824,
-  "human-yeast": 2163,
-  "fly-human": 5824,
-  "fly-worm": 4081,
-  "fly-zebrafish": 4356,
-  "fly-yeast": 1978,
-  "zebrafish-human": 8272,
-  "zebrafish-fly": 4356,
-  "zebrafish-worm": 3473,
-  "zebrafish-yeast": 1704,
-  "worm-zebrafish": 3473,
-  "worm-human": 4380,
-  "worm-fly": 4081,
-  "worm-yeast": 1769,
-  "yeast-fly": 1978,
-  "yeast-human": 2163,
-  "yeast-worm": 1769,
-  "yeast-zebrafish": 1704
- },
+ "source": "Alliance of Genome Resources",
+ "release": "9.0.0",
+ "filter": "Stringent",
+ "license": "CC BY 4.0",
+ "columns": [
+  "key2",
+  "methods",
+  "of",
+  "best",
+  "best_rev",
+  "symbol"
+ ],
+ "keep": 5,
  "coverage": {
   "human": {
    "index": 20526,
-   "rows_without_accession": 0,
-   "written": 20508,
-   "missing_from_proteome": 40,
-   "fetched": 22
+   "mapped": 20082,
+   "with_ortholog": 17459
   },
   "fly": {
-   "index": 13963,
-   "rows_without_accession": 74,
-   "written": 13947,
-   "missing_from_proteome": 1455,
-   "fetched": 1434
+   "index": 14037,
+   "mapped": 13949,
+   "with_ortholog": 9087
   },
   "zebrafish": {
    "index": 12749,
-   "rows_without_accession": 0,
-   "written": 11570,
-   "missing_from_proteome": 4206,
-   "fetched": 3027
-  },
-  "worm": {
-   "index": 11162,
-   "rows_without_accession": 0,
-   "written": 11127,
-   "missing_from_proteome": 122,
-   "fetched": 87
+   "mapped": 12430,
+   "with_ortholog": 11348
   },
   "yeast": {
    "index": 5762,
-   "rows_without_accession": 0,
-   "written": 5762,
-   "missing_from_proteome": 204,
-   "fetched": 204
+   "mapped": 5755,
+   "with_ortholog": 3383
+  },
+  "worm": {
+   "index": 11162,
+   "mapped": 11117,
+   "with_ortholog": 6982
+  },
+  "mus-musculus": {
+   "index": 15476,
+   "mapped": 15447,
+   "with_ortholog": 15208
+  },
+  "rattus-norvegicus": {
+   "index": 14486,
+   "mapped": 14257,
+   "with_ortholog": 13988
   }
+ },
+ "pairs": {
+  "mus-musculus-yeast": 4027,
+  "mus-musculus-fly": 9164,
+  "mus-musculus-human": 14869,
+  "mus-musculus-rattus-norvegicus": 13184,
+  "human-yeast": 4430,
+  "human-fly": 10737,
+  "human-rattus-norvegicus": 13830,
+  "human-mus-musculus": 14907,
+  "human-worm": 8629,
+  "worm-yeast": 3011,
+  "worm-fly": 5800,
+  "worm-zebrafish": 4211,
+  "worm-human": 6241,
+  "worm-rattus-norvegicus": 5524,
+  "worm-mus-musculus": 5824,
+  "zebrafish-yeast": 2699,
+  "zebrafish-fly": 6114,
+  "zebrafish-human": 11004,
+  "zebrafish-rattus-norvegicus": 7583,
+  "zebrafish-worm": 5266,
+  "zebrafish-mus-musculus": 10108,
+  "fly-yeast": 3593,
+  "fly-zebrafish": 5142,
+  "fly-human": 8275,
+  "fly-rattus-norvegicus": 7009,
+  "fly-worm": 6078,
+  "fly-mus-musculus": 7439,
+  "rattus-norvegicus-yeast": 3834,
+  "rattus-norvegicus-fly": 8557,
+  "rattus-norvegicus-worm": 7309,
+  "rattus-norvegicus-zebrafish": 7183,
+  "rattus-norvegicus-human": 13690,
+  "rattus-norvegicus-mus-musculus": 13117,
+  "mus-musculus-zebrafish": 9118,
+  "mus-musculus-worm": 7787,
+  "human-zebrafish": 10088,
+  "yeast-fly": 2937,
+  "yeast-zebrafish": 2122,
+  "yeast-human": 3181,
+  "yeast-mus-musculus": 2988,
+  "yeast-rattus-norvegicus": 2816,
+  "yeast-worm": 2683
  }
 }
