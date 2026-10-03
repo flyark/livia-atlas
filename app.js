@@ -560,7 +560,7 @@ function speciesCombo(sel, reg) {
     shown.sort((a, b) => order.indexOf(grp(a)) - order.indexOf(grp(b)) || (grp(a) === 'Model organisms' ? 0 : a.name.localeCompare(b.name)));
     let g = '', h = '';
     shown.forEach((x, n) => { if (grp(x) !== g) { g = grp(x); h += `<div class="sp-combo-g">${esc(g)}</div>`; }
-      h += `<div class="sp-combo-o${x.id === sel.value ? ' cur' : ''}${n === act ? ' act' : ''}" role="option" id="${box.id}-${n}" data-n="${n}" aria-selected="${x.id === sel.value}">${esc(x.label)}${x.name && x.name !== x.label ? ` <i>${esc(x.name)}</i>` : ''}</div>`; });
+      h += `<div class="sp-combo-o${x.id === sel.value ? ' cur' : ''}${n === act ? ' act' : ''}" role="option" id="${box.id}-${n}" data-n="${n}" aria-selected="${x.id === sel.value}">${esc(x.label)}${x.name && x.name !== x.label ? ` ${spName(x.name)}` : ''}</div>`; });
     box.innerHTML = h || '<div class="sp-combo-none">No species matches</div>';
     const a = act >= 0 && box.querySelector(`[data-n="${act}"]`);
     if (a) { a.scrollIntoView({ block: 'nearest' }); inp.setAttribute('aria-activedescendant', a.id); } else inp.removeAttribute('aria-activedescendant');
@@ -1570,8 +1570,8 @@ async function viewSet(dsId, setId) {
       <a href="https://github.com/flyark/livia-atlas/blob/main/tools/extract_set.py" target="_blank" rel="noopener">extract_set.py ↗</a> pulls out just this set as a table.</p></div>`;
   mountSearch($('#set-search'), { spId: sp.id, only: keys, set: S.id });
 }
-const spName = (nm) => { const m = /^(.*?)( \((?:taxon|strain) [^)]*\))?$/.exec(nm || ''), bin = /^([A-Z][a-z]+ [a-z]|[A-Z]\. [a-z])/.test(m[1]);   // a species name in italics, its "(taxon N)" upright; a common name (Human, Fly) upright
-  return bin ? `<i>${esc(m[1])}</i>${m[2] ? esc(m[2]) : ''}` : esc(nm || ''); };
+const spName = (nm) => { const m = /^(.*?)( \((?:taxon|strain) [^)]*\))?$/.exec(nm || ''), b = /^(?!Viruses )((?:[A-Z][a-z]+|[A-Z]\.) [a-z]{3,}(?: subsp\. [a-z]{3,})?)(.*)$/.exec(m[1]);   // genus and species in italics; a strain, serotype or
+  return b ? `<i>${esc(b[1])}</i>${esc(b[2])}${m[2] ? esc(m[2]) : ''}` : esc(nm || ''); };   // "(taxon N)" upright, and a common name (Human, Fly) or a group (Viruses in …) upright
 async function viewDatasetOff(d, gen = ROUTE) {   // a set the Atlas does not search (in the record only, a separate site, or planned): what it is and where it is
   const rec = d.status === 'record' && d.zip && d.zip.record, spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
   let m = null; if (d.base) try { m = await getJSON(d.base + 'manifest.json'); } catch (e) { /* the registry's lines stand */ }
