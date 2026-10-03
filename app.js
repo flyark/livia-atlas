@@ -165,9 +165,10 @@ const primarySet = (tags) => (tags && tags.length ? tags.find((s) => s.type === 
 // A screen's per-protein files: in its folder, or — for a screen kept as one uncompressed zip (Zenodo) — one HTTP Range
 // read each, at the byte range the offsets map kept with the site gives. Never the whole archive.
 const OFFS = new Map();
-// Zenodo can answer slowly or stall, and a large interactome takes seconds to cluster. Each archive read and each clustering
-// shows in a status pill (what, how long, a note when slow). A read times out after 45 s and is tried twice; then the pill
-// says Zenodo did not answer, with a button to try again (a clustering failure is reported on its card).
+// A data read can answer slowly or stall, and a large interactome takes seconds to cluster. Each read and each clustering
+// shows in a status pill: "Loading data" for reads (never where the data come from), the task for a clustering, how long,
+// a note when slow. A read times out after 45 s and is tried twice; then the pill says the data did not load, with a button
+// to try again (a clustering failure is reported on its card).
 const LOADS = new Map(); let LOADN = 0, LOADT = null, LOADFAIL = '';
 function loadBar() { let el = document.getElementById('loadbar'); if (!el) { el = document.createElement('div'); el.id = 'loadbar'; el.setAttribute('role', 'status'); el.setAttribute('aria-live', 'polite'); el.hidden = true; document.body.appendChild(el); } return el; }
 function paintLoads() {
@@ -177,16 +178,16 @@ function paintLoads() {
     else el.hidden = true;
     return; }
   const now = Date.now(), sec = Math.round((now - Math.min(...list.map((x) => x.t0))) / 1000);
-  const reads = [...new Set(list.filter((x) => x.kind === 'zenodo').map((x) => x.what))], tasks = [...new Set(list.filter((x) => x.kind !== 'zenodo').map((x) => x.what))];
-  const slowRead = list.some((x) => x.kind === 'zenodo' && now - x.t0 >= 12000), slowTask = list.some((x) => x.kind !== 'zenodo' && now - x.t0 >= 8000);
-  const text = [...(reads.length ? [`Reading ${reads.join(', ')} from Zenodo`] : []), ...tasks].join(' · ');
+  const reads = list.filter((x) => x.kind === 'read'), tasks = [...new Set(list.filter((x) => x.kind !== 'read').map((x) => x.what))];
+  const slowRead = reads.some((x) => now - x.t0 >= 12000), slowTask = list.some((x) => x.kind !== 'read' && now - x.t0 >= 8000);
+  const text = [...(reads.length ? ['Loading data'] : []), ...tasks].join(' · ');
   el.hidden = false; el.className = slowRead ? 'slow' : '';
-  el.innerHTML = `<span class="spin" aria-hidden="true"></span>${esc(text)} · ${sec} s${slowRead ? '<br><small>Zenodo is answering slowly. The page fills in as soon as the data arrive.</small>'
+  el.innerHTML = `<span class="spin" aria-hidden="true"></span>${esc(text)} · ${sec} s${slowRead ? '<br><small>This is taking longer than usual. The page fills in as soon as the data arrive.</small>'
     : slowTask ? '<br><small>A large interactome takes a little longer to cluster; the page fills in when it is done.</small>' : ''}`;
 }
-function trackLoad(what, job, kind = 'zenodo') {   // kind 'zenodo': "Reading <what> from Zenodo"; any other kind: <what> as written
-  const id = ++LOADN; if (kind === 'zenodo') LOADFAIL = ''; LOADS.set(id, { what, kind, t0: Date.now() }); if (!LOADT) LOADT = setInterval(paintLoads, 1000); paintLoads();
-  return job.then((v) => { LOADS.delete(id); paintLoads(); return v; }, (e) => { LOADS.delete(id); if (kind === 'zenodo') LOADFAIL = e.message; paintLoads(); throw e; });
+function trackLoad(what, job, kind = 'read') {   // kind 'read': a data read, shown as "Loading data" and never where from (user, 2026-10-02); any other kind: <what> as written
+  const id = ++LOADN; if (kind === 'read') LOADFAIL = ''; LOADS.set(id, { what, kind, t0: Date.now() }); if (!LOADT) LOADT = setInterval(paintLoads, 1000); paintLoads();
+  return job.then((v) => { LOADS.delete(id); paintLoads(); return v; }, (e) => { LOADS.delete(id); if (kind === 'read') LOADFAIL = e.message; paintLoads(); throw e; });
 }
 async function rangeRead(url, range) {   // → the bytes of one Range read, or null when the host did not answer 206
   for (let i = 1; ; i++) {
@@ -195,7 +196,7 @@ async function rangeRead(url, range) {   // → the bytes of one Range read, or 
       const res = await fetch(url, { headers: { Range: range }, signal: ac.signal });
       if (res.status !== 206) { try { if (res.body) res.body.cancel(); } catch (e) { /* nothing to cancel */ } return null; }
       return await res.arrayBuffer();   // the body under the same clock: a read can stall after the headers
-    } catch (e) { if (i >= 2) throw new Error(`Zenodo did not answer in time (tried twice). It is often slow for a few minutes.`); }
+    } catch (e) { if (i >= 2) throw Object.assign(new Error('The data did not load in time (tried twice). It usually works again within a few minutes.'), { timeout: true }); }
     finally { clearTimeout(t); }
   }
 }
@@ -207,8 +208,7 @@ async function screenFile(ds, rel) {
     if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets.replace(/offsets\.json$/, `offsets/${xx}.json`), location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))); }
   else if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets, location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
   const at = (await OFFS.get(ok))[rel]; if (!at) return null;
-  const t = ds.reg.title || ds.id, what = /^(Human|Zebrafish|Yeast|Fly|Worm)\b/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t;   // “the human kinase–kinase screen”, “C. elegans …”, “FlyPredictome”
-  const buf = await trackLoad(what, rangeRead(DEV && z.dev ? new URL(z.dev, location.href).href : z.url, `bytes=${at[0]}-${at[0] + at[1] - 1}`));
+  const buf = await trackLoad('data', rangeRead(DEV && z.dev ? new URL(z.dev, location.href).href : z.url, `bytes=${at[0]}-${at[0] + at[1] - 1}`));
   return buf ? new Response(buf) : null;
 }
 async function datasetRows(ds) {
@@ -430,7 +430,7 @@ function merged(sp, P, scope = '', whole = false) {   // scope: one screen of th
       const errs = [], parts = (await Promise.all(P.occ.filter((o) => onlyDi < 0 || o.di === onlyDi).map(async (o) => {   // a screen that cannot be reached is left out
         try { const ds = await dataset(sp.dsIds[o.di]); return { di: o.di, name: o.name, ds, raw: await bundleRaw(ds, o.name), TS: await setsOf(ds) }; } catch (e) { errs.push(e); return null; }
       }))).filter(Boolean);
-      if (!parts.length) throw (errs.find((e) => /Zenodo/.test(e.message)) || new Error(`No interaction data for ${P.gene}.`));
+      if (!parts.length) throw (errs.find((e) => e.timeout) || new Error(`No interaction data for ${P.gene}.`));
       const split = parts.find((x) => x.raw.isoforms) || null;   // atlas v1.2: this gene's other isoforms are files of their own
       if (split && whole) parts.push(...await Promise.all(split.raw.isoforms.choices.map(async (c) => ({ ...split, name: c.file, raw: await bundleRaw(split.ds, c.file) }))));
       const all = await assemble(sp, P, parts, scope, onlyDi, setId);
@@ -2165,7 +2165,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   async function orthLoad(o) {   // the ortholog's index row, predictions, cLIP at the page's cutoff, and the clustered sequence
     const sp2 = await species(o.sp2), P2 = sp2.byKey.get(o.key2); if (!P2) throw new Error(`${o.key2} is not in the ${sp2.reg.label.toLowerCase()} index`);
-    const B2 = await trackLoad(`${sp2.reg.label} ${P2.gene}`, merged(sp2, P2));
+    const B2 = await trackLoad('data', merged(sp2, P2));
     let seq2 = await seqOf(sp2, P2, B2); if (B2.cons && B2.cons.size && B2.C0.qName) seq2 = B2.seqs.get(B2.C0.qName) || seq2;
     const st = { ...o, sp2obj: sp2, P2, B2, seq2, m: {}, al: null };
     await orthCluster(st); return st;
