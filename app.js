@@ -2318,7 +2318,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (!card.hidden) { const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; nav.prepend(btn);
       btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); }
   }
-  app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); drawOrth(); }; });
+  app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); drawOrth(); if (PALN.trk) drawOrth(PCFG); }; });
 
   /* Orthologs ─ the same protein in the Atlas's other species (the Alliance of Genome Resources' stringent orthologs, mapped to the Atlas proteins), each
      with its own cLIP, drawn on this protein's residues through a pairwise sequence alignment (ALIGN, affine gaps, BLOSUM62).
@@ -2664,7 +2664,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function toggleCluster(c) {   // as clip.html: from "all", a click isolates that cluster; further clicks add or remove
     if (c === 'all') ACTIVE = new Set(range(M.k));
     else { const id = +c; if (allOn()) ACTIVE = new Set([id]); else if (ACTIVE.has(id)) { ACTIVE.delete(id); if (!ACTIVE.size) ACTIVE = new Set(range(M.k)); } else ACTIVE.add(id); }
-    paintChips(); renderSites(); drawFreq(); drawHeatmap(); recolor3D();
+    paintChips(); renderSites(); drawFreq(); drawHeatmap(); recolor3D(); drawOrth(); if (PALN.trk) drawOrth(PCFG);   // both plots' sites follow the clusters shown
   }
   function paintChips() {
     const all = allOn();
@@ -3437,7 +3437,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   async function paraAlign() {
     const out = $('#para-aln'); if (!out) return; const c = PALN.c;
     if (!c || !clustered() || !qSeq || !PARA) { out.innerHTML = ''; return; }
-    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), akey = `${c}|${cut}|${rows.map((x) => x.k2).join(',')}`;
+    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), akey = `${c}|${cut}|${allOn() ? 'all' : [...ACTIVE].sort((a, b) => a - b).join('.')}|${rows.map((x) => x.k2).join(',')}`;
     if (PALN.akey === akey && out.querySelector('.orth-aln')) return;   // already drawn for this site, cutoff and list
     const tok = ++PALN.tok; PALN.akey = '';
     out.innerHTML = `<p class="muted">Aligning ${fmtInt(rows.length)} paralog${rows.length === 1 ? '' : 's'} and clustering their predictions…</p>`;
@@ -3461,7 +3461,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     $('#para-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
   { const card = $('#c-para'); let started = false; const start = () => { if (!started) { started = true; paraInit(); } };   // the paralog table and the edge list load when the card nears the viewport
-    if (card) { new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) start(); }, { rootMargin: '300px' }).observe(card); $('#para-low').onchange = () => { if (PARA) paraInit(); }; } }
+    if (card) { new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) start(); }, { rootMargin: '300px' }).observe(card); $('#para-low').onchange = () => { if (PARA) { PALN.trk = null; paraInit(); } }; } }
   let rsz, rszW = window.innerWidth; window.onresize = () => { if (window.innerWidth === rszW) return; rszW = window.innerWidth; clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
 }
 
