@@ -30,7 +30,7 @@ const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.
 const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442], iLISA: [40.0, 101.7, 332.0], LIS: [0.057, 0.096, 0.201], cLIS: [0.084, 0.158, 0.358],
   ipSAE: [0.039, 0.085, 0.241], actifpTM: [0.419, 0.504, 0.738], pDockQ: [0.288, 0.343, 0.438], LIpDockQ: [0.041, 0.064, 0.128], pDockQ2: [0.014, 0.019, 0.052], LIpDockQ2: [0.025, 0.044, 0.131] };   // mean of five models, same benchmark
 // A UniProt domain box under the pointer: its name and span (the plots draw D1, D2 … or a clipped name)
-const domTip = (d) => { const a = d.s != null ? d.s : d.start, z = d.e != null ? d.e : d.end; return `<b>${d.idx ? `D${d.idx} ` : ''}${esc(d.name)}</b><br>residues ${a}–${z} (${z - a + 1} aa) · UniProt domain`; };
+const domTip = (d) => { const a = d.s != null ? d.s : d.start, z = d.e != null ? d.e : d.end; return `<b>${d.idx ? `D${d.idx} ` : ''}${esc(d.name)}</b><br>residues ${a}–${z} (${z - a + 1} aa) · ${d.src === 'Pfam' ? 'Pfam domain (InterPro)' : 'UniProt domain'}`; };
 // Each screen's run settings (registry: models, recycles). The cutoffs were calibrated on five models with five recycles
 // per pair; a screen run otherwise says so where its settings are shown.
 const CALIB = 'Cutoffs and average-iLIS cutoffs were calibrated on AlphaFold-Multimer runs with five models and five recycles per pair. For screens run with fewer models or other settings, they are a guide rather than a measured error rate.';
@@ -78,7 +78,7 @@ const refOf = (id) => { const d = ((REG && REG.datasets) || []).find((x) => x.id
 const citeText = (title, ids = []) => {
   const ds = ids.map((id) => ((REG && REG.datasets) || []).find((d) => d.id === id)).filter(Boolean);
   const recs = [...new Set(ds.map(recOf).filter(Boolean))];
-  const src = [...new Set(ds.filter((d) => d.paper && !d.paper.includes(ARCHIVE.doi)).map((d) => `${d.source.replace(' · ', ', ')}, ${doiUrl(d.paper)}`))];
+  const src = [...new Set(ds.filter((d) => d.paper && !d.paper.includes(ARCHIVE.doi) && !d.paper.includes(REF.livia[1])).map((d) => `${d.source.replace(' · ', ', ')}, ${doiUrl(d.paper)}`))];
   return `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (accessed ${new Date().toISOString().slice(0, 10)}). `
     + `Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}. `
     + `Data archive: ${archiveOf(recs)}.` + (src.length ? ` Screens: ${src.join('; ')}.` : '');
@@ -808,8 +808,9 @@ function liviaScript(path) {
 }
 const liviaReady = () => Promise.all([liviaScript('js/clip-resolver.js'), liviaScript('js/livia-viewer.js')]);
 const exportsReady = () => liviaScript('js/canvas2svg.js').then(() => liviaScript('js/livia-maps.js'));
-const DOMS = new Map();   // accession → Promise<[{start, end, name}]> (UniProt Domain / DNA binding / Zinc finger, as clip.html)
-const domainsOf = (acc) => { if (!DOMS.has(acc)) DOMS.set(acc, liviaReady().then(() => CLIPResolver.fetchDomains(acc)).catch(() => [])); return DOMS.get(acc); };
+const DOMS = new Map();   // accession → Promise<[{start, end, name, src}]>: Pfam (InterPro) for every protein, so orthologs carry the same names; UniProt's Domain / DNA-binding / zinc-finger features only where Pfam has none
+const domainsOf = (acc) => { if (!DOMS.has(acc)) DOMS.set(acc, liviaReady().then(async () => { const pf = await CLIPResolver.fetchPfam(acc); if (pf.length) return pf.map((d) => ({ ...d, src: 'Pfam' }));
+  return (await CLIPResolver.fetchDomains(acc)).map((d) => ({ ...d, src: 'UniProt' })); }).catch(() => [])); return DOMS.get(acc); };
 const AFDB = new Map();   // accession → Promise<{cifUrl, seq, amUrl} | null>
 function afdbEntry(acc) {
   if (!AFDB.has(acc)) AFDB.set(acc, fetch(`https://alphafold.ebi.ac.uk/api/prediction/${encodeURIComponent(acc)}`).then((r) => {
@@ -2202,6 +2203,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     return m2;
   }
   const orthName = (o) => `${o.reg2.label} ${o.P2 ? o.P2.gene : o.key2}`, orthLabel = (o) => esc(orthName(o));   // orthName for canvas text, orthLabel for HTML
+  const spShort = (reg) => { const m = /^([A-Z])[a-z]+ ([a-z]+)$/.exec(reg.label); return m ? `${m[1]}. ${m[2]}` : reg.label; };   // the mark rows name each species: Mus musculus as M. musculus; Human, Fly, C. elegans as they are
   async function orthInit() {
     const sub = $('#orth-sub'); if (!sub) return; sub.textContent = 'Looking for orthologs in the Atlas\'s other species…';
     let list; try { list = await orthList(); } catch (e) { list = []; }
@@ -2241,11 +2243,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const dom = (r) => { let d = 1, b = -1; const cc = byC[r] || {}; for (const c in cc) if (cc[c] > b) { b = cc[c]; d = +c; } return d; };
     return { L, tot, byC, dom };
   }
-  function orthExtras(st) {   // the ortholog's UniProt domains and AlphaFold DB pLDDT, used only when they sit on the sequence that was aligned; drawn when they arrive
+  function orthExtras(st) {   // the ortholog's domains and AlphaFold DB pLDDT sit on its UniProt sequence: used when that is the aligned sequence, or through an alignment when the construct is another isoform; drawn when they arrive
     const acc2 = st.P2.acc || ''; if (!acc2 || !st.seq2) return;
-    Promise.all([domainsOf(acc2), uniprotSeq(acc2)]).then(([ds, u]) => { if (gone() || !ds || !ds.length || u !== st.seq2) return; st.doms = ds; drawOrth(); }).catch(() => {});
-    afdbEntry(acc2).then((e) => (e && e.plddtUrl && e.seq === st.seq2 ? fetch(e.plddtUrl).then((r) => (r.ok ? r.json() : null)) : null))
-      .then((j) => { if (gone() || !j || !Array.isArray(j.confidenceScore)) return; st.pl = j.confidenceScore; drawOrth(); }).catch(() => {});
+    afdbEntry(acc2).then(async (e) => {
+      const ref = e && !e.failed && e.seq ? e.seq : await uniprotSeq(acc2);   // AFDB's copy of the UniProt sequence when it has a model: no second request
+      if (gone() || !ref) return;
+      if (ref !== st.seq2) { const mi = CLIPResolver.alignMap(ref, st.seq2); if (!mi || mi.covered < 0.8 * Math.min(ref.length, st.seq2.length)) return;
+        st.fromRef = mi.map; st.toRef = []; mi.map.forEach((r2, u) => { if (r2) st.toRef[r2 - 1] = u + 1; }); }   // UniProt residue ↔ construct residue
+      domainsOf(acc2).then((ds) => { if (!gone() && ds && ds.length) { st.doms = ds; drawOrth(); } });
+      if (e && e.plddtUrl) fetch(e.plddtUrl).then((r) => (r.ok ? r.json() : null)).then((j) => { if (!gone() && j && Array.isArray(j.confidenceScore)) { st.pl = j.confidenceScore; drawOrth(); } }).catch(() => {});
+    }).catch(() => {});
   }
   function renderOrthSite(T) {   // the partners contacting one of this protein's sites, in this protein and in each ortholog; ortholog pairs in bold
     const box = $('#orth-site'); if (!box) return;
@@ -2268,7 +2275,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     for (const st of open) if (!st.m[cut]) { await orthCluster(st); if (gone()) return; }   // a new cutoff: cluster the open orthologs again
     for (const st of open) if (st.seq2 && qSeq && st.al === null) st.al = ALIGN.align(qSeq, st.seq2) || false;   // false: too long to align in the page (ALIGN's cell cap)
     if (!$('#orth-cv', host)) host.innerHTML = '<canvas id="orth-cv"></canvas>';
-    const cv = $('#orth-cv', host), L = M.plen, W = host.clientWidth, bw = (W - AXL - AXR) / L, xOf = (r) => AXL + (r - 1) * bw, xc = (r) => xOf(r) + bw / 2;
+    const cv = $('#orth-cv', host), L = M.plen, W = host.clientWidth, AX = W < 640 ? AXL : 108, bw = (W - AX - AXR) / L, xOf = (r) => AX + (r - 1) * bw, xc = (r) => xOf(r) + bw / 2;
     const narrow = W < 640, FQ = orthFreq(M, allOn() ? null : ACTIVE), siteOf = (r) => (r >= 1 && r <= L && FQ.tot[r] ? FQ.dom(r) : 0);
     const sites = range(M.k).map((c) => { const runs = []; let a = 0, b = 0;   // a site: the residues where cluster c is the most frequent, in runs (gaps of up to 3 residues joined)
       for (let r = 1; r <= L; r++) if (siteOf(r) === c) { if (a && r - b <= 4) b = r; else { if (a) runs.push([a, b]); a = b = r; } }
@@ -2290,7 +2297,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const siteAt = (r2) => { const cc = byS[r2] || {}; let bs = 0, bn = 0; for (const s in cc) if (+s && cc[s] > bn) { bn = cc[s]; bs = +s; } return bs; };   // the site most of the residue's matched predictions fall on; 0 when none of them matched
       const partners = new Set(m2.preds.map((p) => p.partner)).size, sh = ORTH.shared.get(st.sp2);
       const hit = new Set(pSite.filter(Boolean)), inter = new Set(((sh && sh.pairs) || []).filter((p) => (keyS.get(p.k2) || new Set()).has(p.c1)).map((p) => p.c1));
-      const doms = al && st.doms ? st.doms.map((d) => { let s = 0, e = 0; for (let r2 = d.start; r2 <= d.end; r2++) { const q = inv.get(r2); if (q) { if (!s || q < s) s = q; if (q > e) e = q; } } return s ? { name: d.name, start: d.start, end: d.end, s, e } : null; }).filter(Boolean) : [];
+      const doms = al && st.doms ? st.doms.map((d) => { let s = 0, e = 0; for (let u = d.start; u <= d.end; u++) { const r2 = st.fromRef ? st.fromRef[u - 1] : u, q = r2 && inv.get(r2); if (q) { if (!s || q < s) s = q; if (q > e) e = q; } } return s ? { name: d.name, start: d.start, end: d.end, s, e, src: d.src } : null; }).filter(Boolean) : [];
       return { st, m2, F2, al, inv, ins, pSite, byS, siteAt, keyS, partners, call: partners >= 5, hit, inter, doms };   // call: with fewer than 5 partners past the cutoff an empty site says nothing
     });
     const DRH = 13, IH = 8, TH = 58, PLH = 22, MR = 13, LBL = 17;   // domain lane, identity strip, bars, pLDDT strip, mark row, label row
@@ -2301,10 +2308,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const blockO = (t) => LBL + (t.al ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + TH + 4 + (t.pl ? PLH + 6 : 0) + 20 + 8;
     const H = 6 + blockS + blockQ + T.reduce((a, t) => a + blockO(t), 0) + 4;
     const g = canvasCtx(cv, W, H), rows = [], hits = [];   // rows: hover areas of the tracks; hits: the sites and marks, hover and click
-    const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
-    const label = (text, y, color = '#17263A') => { g.fillStyle = color; g.font = '600 11.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillText(text, AXL, y); };
-    const side = (text, y, color = '#5A697C') => { g.fillStyle = color; g.font = '10.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'right'; g.textBaseline = 'middle'; let s = text; while (s.length > 3 && g.measureText(s + '…').width > AXL - 10) s = s.slice(0, -1); g.fillText(s === text ? s : s + '…', AXL - 6, y); };
-    const yTicks = (max, y1, h) => { g.fillStyle = '#5A697C'; g.font = '10px "IBM Plex Mono", ui-monospace, monospace'; g.textAlign = 'right'; g.textBaseline = 'middle'; for (const v of [...new Set([0, Math.round(max / 2), max])]) g.fillText(String(v), AXL - 5, y1 - v / max * h); };
+    const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AX, y0, W - AX - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AX + 0.5, y0); g.lineTo(AX + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
+    const label = (text, y, color = '#17263A') => { g.fillStyle = color; g.font = '600 11.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillText(text, AX, y); };
+    const side = (text, y, color = '#5A697C') => { g.fillStyle = color; g.font = '10.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'right'; g.textBaseline = 'middle'; let s = text; while (s.length > 3 && g.measureText(s + '…').width > AX - 10) s = s.slice(0, -1); g.fillText(s === text ? s : s + '…', AX - 6, y); };
+    const yTicks = (max, y1, h) => { g.fillStyle = '#5A697C'; g.font = '10px "IBM Plex Mono", ui-monospace, monospace'; g.textAlign = 'right'; g.textBaseline = 'middle'; for (const v of [...new Set([0, Math.round(max / 2), max])]) g.fillText(String(v), AX - 5, y1 - v / max * h); };
     const domBoxes = (ds, y0) => { for (const d of ds) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = y0 + d.lane * DRH;
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 10); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, y + 0.3, x1 - x0 - 0.6, 9.4);
       g.fillStyle = '#34445A'; g.font = '9.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
@@ -2322,9 +2329,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       label(narrow ? `${P.gene}'s sites` : `${P.gene}'s sites in each ortholog · click a site for its partners`, y + 12); y += LBL;
       for (const s of sites) { for (const [a, b] of s.runs) { g.fillStyle = clusterColor(s.c, M.k); g.fillRect(xOf(a), y, Math.max(2, xOf(b + 1) - xOf(a)), 8); }
         hits.push({ c: s.c, x0: xOf(s.runs[0][0]) - 2, x1: xOf(s.runs[s.runs.length - 1][1] + 1) + 2, y0: y - 2, y1: y + 10 }); }
-      side(P.gene, y + 4, '#17263A'); y += 12;
+      side(narrow ? spShort(sp.reg) : `${spShort(sp.reg)} ${P.gene}`, y + 4, '#17263A'); y += 12;
       const mids = sites.map((s) => xc(s.mid)).sort((p, q) => p - q), k = mids.slice(1).reduce((m, x, i) => Math.min(m, x - mids[i]), Infinity) < 11 ? 0.65 : 1;   // marks shrink where sites sit close together
-      for (const t of T) { const ym = y + MR / 2; side(t.st.P2.gene, ym);
+      for (const t of T) { const ym = y + MR / 2; side(narrow ? spShort(t.st.reg2) : `${spShort(t.st.reg2)} ${t.st.P2.gene}`, ym);
         for (const s of sites) { const x = xc(s.mid), col = clusterColor(s.c, M.k);
           if (t.inter.has(s.c)) { g.fillStyle = col; g.beginPath(); g.moveTo(x, ym - 5 * k); g.lineTo(x + 5 * k, ym); g.lineTo(x, ym + 5 * k); g.lineTo(x - 5 * k, ym); g.closePath(); g.fill(); }
           else if (t.hit.has(s.c)) { g.fillStyle = col; g.beginPath(); g.arc(x, ym, 4 * k, 0, 2 * Math.PI); g.fill(); }
@@ -2339,24 +2346,24 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     frame(y, y + TH); yTicks(bars(FQ, y + TH, TH - 4, (r) => xOf(r), (r) => clusterColor(FQ.dom(r), M.k)), y + TH, TH - 4);
     rows.push({ kind: 'q', F: FQ, y0: y, y1: y + TH }); y += TH + 4;
     if (qpl) { plLine((r) => { const sr = toStruct(r), v = sr ? S.plddt.get('A:' + sr) : null; return v == null ? null : v; }, y); y += PLH + 6; }
-    drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), y, xc, W); y += 22;
+    drawTicks(g, resTicks(L, W - AX - AXR, xtWant()), y, xc, W); y += 22;
     for (const t of T) {
       const { st, m2, F2, al, inv, ins, siteAt } = t;
       const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
       label(`${orthName(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
       const yTop = y;
-      if (al) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#F1D7D7'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, pink = unaligned here
+      if (al) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#E8ECF0'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, light gray = nothing of the ortholog aligned here
       if (t.dL) { domBoxes(t.doms, y); for (const d of t.doms) rows.push({ kind: 'dom', d, st, y0: y + d.lane * DRH, y1: y + d.lane * DRH + 10 }); y += t.dL * DRH + 4; }
       frame(y, y + TH);
       const colorAt = al ? ((r2) => { const s = siteAt(r2); return s ? clusterColor(s, M.k) : '#B9C2CE'; }) : ((r2) => clusterColor(F2.dom(r2), m2.k));   // aligned: this protein's site colors, gray where no prediction matches a site
       yTicks(bars(F2, y + TH, TH - 4, xAt, colorAt), y + TH, TH - 4);
-      if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AXL; g.fillStyle = '#B45309'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
+      if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AX; g.fillStyle = '#B45309'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
       rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: y + TH }); y += TH + 4;
-      if (t.pl) { const pl2 = st.pl; plLine((r) => { const r2 = al.map[r - 1]; return r2 != null && pl2[r2 - 1] != null ? pl2[r2 - 1] : null; }, y); y += PLH + 6; }
-      if (al) { const on = [...inv.keys()].sort((p, q) => p - q), tk = [...new Set([on[0], ...resTicks(F2.L, W - AXL - AXR, xtWant()).filter((r2) => inv.has(r2)), on[on.length - 1]])].filter((r2) => r2 != null).sort((p, q) => p - q);   // its own residue numbers, where they align
+      if (t.pl) { const pl2 = st.pl; plLine((r) => { const r2 = al.map[r - 1], u = r2 != null ? (st.toRef ? st.toRef[r2 - 1] : r2) : null; return u && pl2[u - 1] != null ? pl2[u - 1] : null; }, y); y += PLH + 6; }
+      if (al) { const on = [...inv.keys()].sort((p, q) => p - q), tk = [...new Set([on[0], ...resTicks(F2.L, W - AX - AXR, xtWant()).filter((r2) => inv.has(r2)), on[on.length - 1]])].filter((r2) => r2 != null).sort((p, q) => p - q);   // its own residue numbers, where they align
         const kept = []; for (const r2 of tk) if (!kept.length || xc(inv.get(r2)) - xc(inv.get(kept[kept.length - 1])) > 26) kept.push(r2);   // labels at least 26 px apart
         drawTicks(g, kept, y, (r2) => xc(inv.get(r2)), W); }
-      else drawTicks(g, resTicks(Math.min(F2.L, L), W - AXL - AXR, xtWant()), y, xc, W);
+      else drawTicks(g, resTicks(Math.min(F2.L, L), W - AX - AXR, xtWant()), y, xc, W);
       y += 20 + 8;
     }
     const siteTip = (c) => { const s = sites.find((x) => x.c === c);
@@ -2364,7 +2371,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const at = (e) => { const b = cv.getBoundingClientRect(); return { mx: e.clientX - b.left, my: e.clientY - b.top }; };
     cv.onmousemove = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); cv.style.cursor = h ? 'pointer' : '';
       if (h) return showTip(siteTip(h.c), e.clientX, e.clientY);
-      const r = Math.floor((mx - AXL) / bw) + 1; if (r < 1 || r > L) return hideTip();
+      const r = Math.floor((mx - AX) / bw) + 1; if (r < 1 || r > L) return hideTip();
       const row = rows.find((x) => my >= x.y0 && my <= x.y1 && (x.kind !== 'dom' || (r >= x.d.s && r <= x.d.e))); if (!row) return hideTip();
       if (row.kind === 'dom') return showTip(`<b>${esc(row.d.name)}</b> · ${row.st ? `${orthLabel(row.st)} ${row.d.start}–${row.d.end}, on ${esc(P.gene)} ${row.d.s}–${row.d.e}` : `${row.d.start}–${row.d.end}`}`, e.clientX, e.clientY);
       if (row.kind === 'q') { const cc = row.F.byC[r] || {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => `<span style="color:${clusterColor(c, M.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`).join(' · ');
@@ -2373,13 +2380,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const cc = r2 ? (t.al ? t.byS[r2] : row.F.byC[r2]) || {} : {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => (t.al
         ? `<span style="color:${c ? clusterColor(c, M.k) : '#9AA7B5'}">●</span> ${c ? `${esc(P.gene)} ${clusterLabel(c, true)}` : 'no site'} ${cc[c]}`
         : `<span style="color:${clusterColor(c, m2.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`)).join(' · ');
-      const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', insN = t.al ? t.ins.get(r) : 0, plv = t.pl && r2 ? st.pl[r2 - 1] : null;
+      const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', insN = t.al ? t.ins.get(r) : 0, ur = r2 && (st.toRef ? st.toRef[r2 - 1] : r2), plv = t.pl && ur ? st.pl[ur - 1] : null;
       showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${orthLabel(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : 'no residue of the ortholog aligns here'}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; ORTH.site = ORTH.site === h.c ? 0 : h.c; renderOrthSite(T); };
     if (ORTH.site && !sites.some((s) => s.c === ORTH.site)) ORTH.site = 0;
     renderOrthSite(T);
-    $('#orth-key').innerHTML = `<span>bars: predictions contacting each residue (y axis); an ortholog's bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> contacted by a partner whose ortholog contacts the same site · <b>○</b> not contacted · <b>·</b> fewer than 5 partners past the cutoff, no call</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#F1D7D7"></i>no residue of the ortholog aligned</span><span><i style="background:#B45309"></i>contacts on the ortholog's inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>UniProt domains</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
+    $('#orth-key').innerHTML = `<span>bars: predictions contacting each residue (y axis); an ortholog's bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> contacted by a partner whose ortholog contacts the same site · <b>○</b> not contacted · <b>·</b> fewer than 5 partners past the cutoff, no call</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#E8ECF0;border:1px solid #CBD3DC"></i>no residue of the ortholog aligned</span><span><i style="background:#B45309"></i>contacts on the ortholog's inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam (InterPro), UniProt where Pfam has none</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
     attachExport('orth-cv', `atlas_${P.gene}_orthologs`, drawOrth); renderOrthList();   // the list carries each alignment's numbers once it exists
   }
   async function orthShared(sp2) {   // which of the ortholog's partners have an ortholog among this protein's partners, and the sites both contact
@@ -2475,9 +2482,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const mi = CLIPResolver.alignMap(S.uniSeq, qSeq); if (!mi || mi.covered < 0.8 * Math.min(S.uniSeq.length, L)) return [];   // most of UniProt's sequence must line up
       map = mi.map;   // UniProt residue → construct residue
     }
-    return S.domains.map((d) => { if (!map) return { name: d.name, start: d.start, end: d.end, s: d.start, e: d.end };
+    return S.domains.map((d) => { if (!map) return { name: d.name, start: d.start, end: d.end, s: d.start, e: d.end, src: d.src };
       let s = 0, e = 0; for (let u = d.start; u <= d.end; u++) { const c = map[u - 1]; if (c) { if (!s || c < s) s = c; if (c > e) e = c; } }
-      return s ? { name: d.name, start: d.start, end: d.end, s, e } : null; }).filter((d) => d && d.e >= 1 && d.s <= L).sort((a, b) => a.s - b.s);
+      return s ? { name: d.name, start: d.start, end: d.end, s, e, src: d.src } : null; }).filter((d) => d && d.e >= 1 && d.s <= L).sort((a, b) => a.s - b.s);
   }
 
   function drawFreq() {
@@ -2521,7 +2528,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const sr = toStruct(r), plv = pl && sr ? S.plddt.get('A:' + sr) : null, amv = am && sr ? S.am[sr] : null, dom = doms.filter((d) => r >= d.s && r <= d.e).map((d) => d.name).join(', ');
       showTip(`<b>${qSeq[r - 1] || ''}${r}</b> · ${tot[r]} prediction${tot[r] === 1 ? '' : 's'}${parts ? '<br>' + parts : ''}${dom ? `<br>${esc(dom)}` : ''}${plv != null ? `<br>pLDDT ${plv.toFixed(0)}` : ''}${amv != null ? `${plv != null ? ' · ' : '<br>'}AM ${amv.toFixed(2)}` : ''}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
-    $('#freq-domains').innerHTML = doms.length ? `<b>Domains</b> ${doms.map((d) => `<span><b>D${d.idx}</b> ${esc(d.name)} <span class="muted">(${d.start}–${d.end}${d.s !== d.start || d.e !== d.end ? ` in UniProt, ${d.s}–${d.e} here` : ''})</span></span>`).join('')}${P.acc ? uniprotLink(P.acc, `UniProt ${esc(P.acc)} ↗`) : ''}` : '';
+    $('#freq-domains').innerHTML = doms.length ? `<b>Domains</b> ${doms.map((d) => `<span><b>D${d.idx}</b> ${esc(d.name)} <span class="muted">(${d.start}–${d.end}${d.s !== d.start || d.e !== d.end ? ` in UniProt, ${d.s}–${d.e} here` : ''})</span></span>`).join('')}${P.acc ? (doms[0].src === 'Pfam' ? `<a href="https://www.ebi.ac.uk/interpro/protein/UniProt/${esc(P.acc)}/" target="_blank" rel="noopener">Pfam via InterPro ↗</a>` : uniprotLink(P.acc, `UniProt ${esc(P.acc)} ↗`)) : ''}` : '';
     const hot = range(L).filter((r) => tot[r]).sort((a, b) => tot[b] - tot[a]).slice(0, 12);
     $('#hot').innerHTML = hot.length ? `<span class="hot-lbl">Most contacted</span>${hot.map((r) => `<span title="${tot[r]} predictions">${qSeq[r - 1] || ''}${r} · ${tot[r]}</span>`).join('')}` : '';
     attachExport('freq', `atlas_${P.gene}_frequency`, drawFreq);
