@@ -2136,7 +2136,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>
     <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div>${xticks}</div>
-      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
+      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-sites"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
     <div class="card" id="c-para"><div class="card-head"><div><h2>Paralogs <span class="tag-alpha">alpha</span></h2><div class="muted" id="para-sub">The paralogs load when this card scrolls into view.</div></div>
       <div class="controls" style="margin:0"><label class="ctl" title="also list the paralogs that few prediction methods call (the Alliance's low confidence)"><input type="checkbox" id="para-low"> low-confidence paralogs too</label></div></div>
       <div id="para-body"></div></div>`;
@@ -2431,6 +2431,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   function renderOrthSite(T) {   // the partners contacting one of this protein's sites, in this protein and in each ortholog; ortholog pairs in bold
     const box = $('#orth-site'); if (!box) return;
+    ORTH.lastT = T; const chips = $('#orth-sites'), sites = ORTH.sites || [];   // the sites as chips too, as in the Paralogs card: the panel without finding the plot's marks
+    if (chips) { chips.innerHTML = M && sites.length && T.some((t) => t.al) ? `<div class="para-site-row"><b>Aligned residues and partners at a site</b> <span class="muted">· ${esc(P.gene)}'s sites:</span> ${sites.map((x) => `<button type="button" class="para-chip${x.c === ORTH.site ? ' on' : ''}" data-c="${x.c}" aria-pressed="${x.c === ORTH.site}"><span class="mdot" style="background:${clusterColor(x.c, M.k)}"></span>${clusterLabel(x.c)}</button>`).join('')}</div>` : '';
+      chips.querySelectorAll('button[data-c]').forEach((b) => { b.onclick = () => { ORTH.site = ORTH.site === +b.dataset.c ? 0 : +b.dataset.c; renderOrthSite(ORTH.lastT); }; }); }
     const c = ORTH.site; if (!c || !M || c > M.k) { box.innerHTML = ''; return; }
     const q = [...partnerCluster].filter(([, v]) => v === c).map(([k]) => k);
     const lines = [{ head: `${sp.reg.label} ${P.gene}`, headH: `${spName(sp.reg.label)} ${esc(P.gene)}`, items: q.map((k) => ({ k, href: `#/${sp.id}/${P.key}/${k}${scopeQ}`, name: gname(k) })), bold: new Set() }];
@@ -2445,7 +2448,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       + (A ? `<div class="orth-aln-head"><b>Aligned residues</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein</span> <button type="button" class="more" id="orth-aln-copy">copy</button></div>`
         + `<div class="orth-aln" style="--c:${clusterColor(c, M.k)}" tabindex="0" role="region" aria-label="${esc(`${P.gene} ${clusterLabel(c)} aligned with its open orthologs`)}">${A.html}</div>` : '')
       + `<ul class="orth-pairs">${lines.map(list).join('')}</ul>`;
-    $('#orth-site-x').onclick = () => { ORTH.site = 0; box.innerHTML = ''; };
+    $('#orth-site-x').onclick = () => { ORTH.site = 0; renderOrthSite(T); };
     if (A) $('#orth-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
   const OCFG = { host: '#orth-wrap', cvId: 'orth-cv', key: '#orth-key', aria: 'Predictions contacting each residue of this protein and of its orthologs, aligned residue by residue',
@@ -2453,7 +2456,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     side: (st, narrow) => (narrow ? spShort(st.reg2) : `${spShort(st.reg2)} ${st.P2.gene}`), qside: (narrow) => (narrow ? spShort(sp.reg) : `${spShort(sp.reg)} ${P.gene}`),
     inter: (st, keyS) => { const sh = ORTH.shared.get(st.sp2); return new Set(((sh && sh.pairs) || []).filter((p) => (keyS.get(p.k2) || new Set()).has(p.c1)).map((p) => p.c1)); },
     site: () => ORTH.site, setSite: (c) => { ORTH.site = c; }, onSites: (x) => { ORTH.sites = x; }, renderSite: (T) => renderOrthSite(T), after: () => renderOrthList(),
-    get siteHead() { return `${P.gene}'s sites in each ortholog · click a site for its partners`; }, get exportName() { return `atlas_${P.gene}_orthologs`; },
+    get siteHead() { return `${P.gene}'s sites in each ortholog · click a site for its partners and aligned residues`; }, get exportName() { return `atlas_${P.gene}_orthologs`; },
     pairWord: 'by an ortholog pair', clickWord: 'click for the partners in each species', diamond: 'contacted by a partner whose ortholog contacts the same site' };
   // The Paralogs card's plot: the loaded paralogs (same species, through orthLoad), each named by its gene; ◆ where a partner contacts
   // the same site of both proteins; a click on a site opens the aligned residues under the plot.
