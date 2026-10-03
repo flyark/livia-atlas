@@ -2152,7 +2152,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
      with its own cLIP, drawn on this protein's residues through a pairwise sequence alignment (ALIGN, affine gaps, BLOSUM62).
      Conserved binding sites line up; the identity strip says where the alignment can be trusted, and the shared partners say
      which sites the same orthologous partners contact in both species. */
-  const ORTH = { list: null, open: new Map(), fail: new Map(), shared: new Map() };   // open: species id → loaded ortholog; shared: species id → shared-partner table
+  const ORTH = { list: null, open: new Map(), fail: new Map(), shared: new Map(), shOpen: new Set() };   // open: species id → loaded ortholog; shared: species id → shared-partner table; shOpen: its line opened by the reader
   const orthHost = () => $('#c-orth');
   async function orthList() {
     if (!(await orthSpecies()).has(sp.id)) return [];   // no table for this species: no request
@@ -2162,6 +2162,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const h = hits.find((x) => x[4]) || hits[0];   // the mutual best hit, else the best hit
       out.push({ sp2, reg2, key2: h[0], pid: h[1], qcov: h[2], tcov: h[3], rbh: !!h[4] }); }
     return out.sort((a, b) => (b.rbh - a.rbh) || (b.pid - a.pid));
+  }
+  async function orthNames() {   // the species with tables, as the card names them: human, fly, …, Mus musculus and Rattus norvegicus
+    const ids = [...(await orthSpecies())], ls = ids.map((id) => { const r = (REG.species || []).find((x) => x.id === id), l = r ? r.label : id; return /^[A-Z][a-z]+$/.test(l) ? l.toLowerCase() : l; });
+    return ls.length > 1 ? `${ls.slice(0, -1).join(', ')} and ${ls[ls.length - 1]}` : ls.join('');
   }
   async function orthLoad(o) {   // the ortholog's index row, predictions, cLIP at the page's cutoff, and the clustered sequence
     const sp2 = await species(o.sp2), P2 = sp2.byKey.get(o.key2); if (!P2) throw new Error(`${o.key2} is not in the ${sp2.reg.label.toLowerCase()} index`);
@@ -2182,8 +2186,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     let list; try { list = await orthList(); } catch (e) { list = []; }
     if (gone()) return;
     ORTH.list = list;
-    if (!list.length) { const has = (await orthSpecies()).has(sp.id); if (gone()) return;
-      sub.textContent = has ? `No ortholog of ${P.gene} found among the Atlas's other species (MMseqs2 best hits over the Atlas proteins, human, fly, zebrafish, worm and yeast).` : `Orthologs are listed for human, fly, zebrafish, worm and yeast; ${esc(sp.reg.label)} proteins have no table yet.`; $('#orth-list').innerHTML = ''; return; }
+    if (!list.length) { const has = (await orthSpecies()).has(sp.id), names = await orthNames(); if (gone()) return;
+      sub.textContent = has ? `No MMseqs2 hit for ${P.gene} among the Atlas proteins of ${names}. A sequence search misses orthologs that share only short stretches.` : `Orthologs are listed for ${names}; ${sp.reg.label} proteins have no table yet.`;
+      $('#orth-list').innerHTML = ''; $('#c-orth').classList.add('orth-none'); return; }   // nothing below the note: no empty plot, legend or tick box
     renderOrthList();
     const auto = list.slice(0, 3);   // the best hit in up to three species opens by itself (mutual best hits first); the rest on a click
     await Promise.all(auto.map((o) => orthOpen(o)));
@@ -2267,17 +2272,27 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     ORTH.shared.set(sp2, { n2: keys2.length, pairs });
     renderOrthShared();
   }
-  function renderOrthShared() {
+  function renderOrthShared() {   // one line per ortholog; its shared sites open in place on a click (author, 2026-10-03: no table on the main page)
     const box = $('#orth-shared'); if (!box) return;
-    const open = [...ORTH.open.values()].filter(Boolean).filter((st) => ORTH.shared.has(st.sp2)); if (!open.length || !clustered()) { box.innerHTML = ''; return; }
+    const open = [...ORTH.open.values()].filter(Boolean).filter((st) => ORTH.shared.has(st.sp2) && ORTH.shared.get(st.sp2).n2 > 0); if (!open.length || !clustered()) { box.innerHTML = ''; return; }   // an ortholog with no partner past the cutoff has nothing to share
     box.innerHTML = open.map((st) => { const sh = ORTH.shared.get(st.sp2), m2 = st.m[cut], cell = new Map();
-      for (const p of sh.pairs) { const k = p.c1 + '|' + p.c2; if (!cell.has(k)) cell.set(k, []); cell.get(k).push(p); }
-      const c1s = range(M.k), c2s = range(m2.k);
-      const head = `<h3 style="margin:14px 0 4px">Shared partners with ${orthLabel(st)}</h3><div class="muted" style="margin-bottom:6px">${fmtInt(sh.pairs.length)} of its ${fmtInt(sh.n2)} partners past the cutoff have an ortholog among ${esc(P.gene)}'s partners past the cutoff · rows: ${esc(P.gene)}'s sites, columns: ${esc(st.P2.gene)}'s sites, cells: partner pairs contacting both</div>`;
-      if (!sh.pairs.length) return head;
+      for (const p of sh.pairs) { const k = p.c1 + '|' + p.c2; if (!cell.has(k)) cell.set(k, []); cell.get(k).push(p); }   // both partners are clustered: orthShared keeps only those
       const name1 = (k) => esc(gname(k)), name2 = (k) => { const r = st.sp2obj.byKey.get(k); return esc(r ? r.gene : k); };
-      return head + `<div class="tbl-wrap"><table class="orth-grid"><thead><tr><th></th>${c2s.map((c2) => `<th class="n" style="color:${clusterColor(c2, m2.k)}">${clusterLabel(c2, true)}</th>`).join('')}</tr></thead><tbody>${c1s.map((c1) => `<tr><th style="color:${clusterColor(c1, M.k)}">${clusterLabel(c1, true)}</th>${c2s.map((c2) => { const ps = cell.get(c1 + '|' + c2) || []; return `<td class="n"${ps.length ? ` title="${ps.map((p) => `${name1(p.k1)} ↔ ${name2(p.k2)}`).join(', ')}"` : ''}>${ps.length ? `<b>${ps.length}</b>` : ''}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
-        <div class="muted" style="margin-top:4px">${sh.pairs.slice(0, 40).map((p) => `<a href="#/${sp.id}/${P.key}/${p.k1}${scopeQ}">${name1(p.k1)}</a> ↔ <a href="#/${st.sp2}/${encodeURIComponent(st.P2.key)}/${encodeURIComponent(p.k2)}">${name2(p.k2)}</a>`).join(' · ')}${sh.pairs.length > 40 ? ` · and ${fmtInt(sh.pairs.length - 40)} more` : ''}</div>`; }).join('');
+      const link = (p) => `<a href="#/${sp.id}/${P.key}/${p.k1}${scopeQ}">${name1(p.k1)}</a> ↔ <a href="#/${st.sp2}/${encodeURIComponent(st.P2.key)}/${encodeURIComponent(p.k2)}">${name2(p.k2)}</a>`;
+      const cells = [...cell].map(([k, ps]) => { const [c1, c2] = k.split('|').map(Number); return { c1, c2, ps }; }).sort((a, b) => b.ps.length - a.ps.length || a.c1 - b.c1 || a.c2 - b.c2);
+      const LIST = cells.length <= 4;   // a few filled cells read as lines; a grid only when there is something to cross
+      const title = `<b>Shared partners with ${orthLabel(st)}</b> <span class="muted">· ${fmtInt(sh.pairs.length)} of its ${fmtInt(sh.n2)} partners past the cutoff ${sh.pairs.length === 1 ? 'has' : 'have'} an ortholog among ${esc(P.gene)}'s partners past the cutoff</span>`;
+      if (!sh.pairs.length) return `<div class="orth-sh">${title}</div>`;
+      const how = LIST ? `Each line: a site of ${esc(P.gene)} and a site of ${esc(st.P2.gene)}, and the partner pairs that contact them.` : `Rows: ${esc(P.gene)}'s sites, columns: ${esc(st.P2.gene)}'s sites, cells: partner pairs contacting both; sites without a shared partner are left out.`;
+      const site = (c, k, gene) => `<b style="color:${clusterColor(c, k)}">${esc(gene)} ${clusterLabel(c, true)}</b>`;
+      let body;
+      if (LIST) body = `<ul class="orth-pairs">${cells.map((x) => `<li>${site(x.c1, M.k, P.gene)} ↔ ${site(x.c2, m2.k, st.P2.gene)} <span class="muted">· ${x.ps.length} partner pair${x.ps.length === 1 ? '' : 's'}:</span> ${x.ps.slice(0, 12).map(link).join(', ')}${x.ps.length > 12 ? ` and ${fmtInt(x.ps.length - 12)} more` : ''}</li>`).join('')}</ul>`;
+      else {
+        const c1s = [...new Set(cells.map((x) => x.c1))].sort((a, b) => a - b), c2s = [...new Set(cells.map((x) => x.c2))].sort((a, b) => a - b);
+        body = `<div class="tbl-wrap"><table class="orth-grid"><thead><tr><th></th>${c2s.map((c2) => `<th class="n" style="color:${clusterColor(c2, m2.k)}">${clusterLabel(c2, true)}</th>`).join('')}</tr></thead><tbody>${c1s.map((c1) => `<tr><th style="color:${clusterColor(c1, M.k)}">${clusterLabel(c1, true)}</th>${c2s.map((c2) => { const ps = cell.get(c1 + '|' + c2) || []; return `<td class="n"${ps.length ? ` title="${ps.map((p) => `${name1(p.k1)} ↔ ${name2(p.k2)}`).join(', ')}"` : ''}>${ps.length ? `<b>${ps.length}</b>` : ''}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
+        <div class="muted" style="margin-top:4px">${sh.pairs.slice(0, 40).map(link).join(' · ')}${sh.pairs.length > 40 ? ` · and ${fmtInt(sh.pairs.length - 40)} more` : ''}</div>`; }
+      return `<details class="orth-sh" data-sp="${esc(st.sp2)}"${ORTH.shOpen.has(st.sp2) ? ' open' : ''}><summary>${title}</summary><div class="muted" style="margin:6px 0">${how}</div>${body}</details>`; }).join('');
+    box.querySelectorAll('details.orth-sh').forEach((d) => { d.ontoggle = () => { if (d.open) ORTH.shOpen.add(d.dataset.sp); else ORTH.shOpen.delete(d.dataset.sp); }; });   // an opened line stays open across a cutoff change
   }
 
   /* cLIP ─ clustering + everything drawn from it */
