@@ -2406,8 +2406,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (gone() || !ref) return;
       if (ref !== st.seq2) { const mi = CLIPResolver.alignMap(ref, st.seq2); if (!mi || mi.covered < 0.8 * Math.min(ref.length, st.seq2.length)) return;
         st.fromRef = mi.map; st.toRef = []; mi.map.forEach((r2, u) => { if (r2) st.toRef[r2 - 1] = u + 1; }); }   // UniProt residue ↔ construct residue
-      domainsOf(acc2, ref).then((ds) => { if (!gone() && ds && ds.length) { st.doms = ds; drawOrth(); } });
-      if (e && e.plddtUrl) fetch(e.plddtUrl).then((r) => (r.ok ? r.json() : null)).then((j) => { if (!gone() && j && Array.isArray(j.confidenceScore)) { st.pl = j.confidenceScore; drawOrth(); } }).catch(() => {});
+      domainsOf(acc2, ref).then((ds) => { if (!gone() && ds && ds.length) { st.doms = ds; (st.redraw || drawOrth)(); } });
+      if (e && e.plddtUrl) fetch(e.plddtUrl).then((r) => (r.ok ? r.json() : null)).then((j) => { if (!gone() && j && Array.isArray(j.confidenceScore)) { st.pl = j.confidenceScore; (st.redraw || drawOrth)(); } }).catch(() => {});
     }).catch(() => {});
   }
   const SIMG = ['STA', 'NEQK', 'NHQK', 'NDEQ', 'QHRK', 'MILV', 'MILF', 'HY', 'FYW'], simAA = (x, y) => SIMG.some((g) => g.includes(x) && g.includes(y));   // Clustal's strong groups
@@ -2446,21 +2446,38 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     $('#orth-site-x').onclick = () => { ORTH.site = 0; box.innerHTML = ''; };
     if (A) $('#orth-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
-  async function drawOrth() {
-    const host = $('#orth-wrap'); if (!host || !ORTH.list) return;
-    const open = orthOpened();
-    if (!clustered() || !open.length) { host.innerHTML = ''; $('#orth-key').innerHTML = ''; ORTH.site = 0; renderOrthSite([]); return; }
+  const OCFG = { host: '#orth-wrap', cvId: 'orth-cv', key: '#orth-key', aria: 'Predictions contacting each residue of this protein and of its orthologs, aligned residue by residue',
+    ready: () => !!ORTH.list, tracks: () => orthOpened(), word: 'ortholog', name: (st) => orthName(st), lab: (st) => orthLabel(st),
+    side: (st, narrow) => (narrow ? spShort(st.reg2) : `${spShort(st.reg2)} ${st.P2.gene}`), qside: (narrow) => (narrow ? spShort(sp.reg) : `${spShort(sp.reg)} ${P.gene}`),
+    inter: (st, keyS) => { const sh = ORTH.shared.get(st.sp2); return new Set(((sh && sh.pairs) || []).filter((p) => (keyS.get(p.k2) || new Set()).has(p.c1)).map((p) => p.c1)); },
+    site: () => ORTH.site, setSite: (c) => { ORTH.site = c; }, onSites: (x) => { ORTH.sites = x; }, renderSite: (T) => renderOrthSite(T), after: () => renderOrthList(),
+    get siteHead() { return `${P.gene}'s sites in each ortholog · click a site for its partners`; }, get exportName() { return `atlas_${P.gene}_orthologs`; },
+    pairWord: 'by an ortholog pair', clickWord: 'click for the partners in each species', diamond: 'contacted by a partner whose ortholog contacts the same site' };
+  // The Paralogs card's plot: the loaded paralogs (same species, through orthLoad), each named by its gene; ◆ where a partner contacts
+  // the same site of both proteins; a click on a site opens the aligned residues under the plot.
+  const PCFG = { host: '#para-wrap', cvId: 'para-cv', key: '#para-key', aria: 'Predictions contacting each residue of this protein and of its paralogs, aligned residue by residue',
+    ready: () => !!PARA, tracks: () => PALN.trk || [], word: 'paralog', name: (st) => st.P2.gene, lab: (st) => esc(st.P2.gene), side: (st) => st.P2.gene, qside: () => P.gene,
+    inter: (st, keyS) => { const o = new Set(); for (const [k, ss] of keyS) { const c = partnerCluster.get(k); if (c && ss.has(c)) o.add(c); } return o; },
+    site: () => PALN.c, setSite: (c) => { PALN.c = c; }, onSites: () => {}, renderSite: () => { paraSites(); paraAlign(); }, after: () => {},
+    get siteHead() { return `${P.gene}'s sites in each paralog · click a site for the aligned residues`; }, get exportName() { return `atlas_${P.gene}_paralogs`; },
+    get pairWord() { return `by a partner that also contacts this site of ${P.gene}`; }, clickWord: 'click for the aligned residues', get diamond() { return `contacted by a partner that also contacts this site of ${P.gene}`; } };
+  // The plot of the Orthologs card, and of the Paralogs card with its own settings (cfg): which tracks, their names, the marks' pairs,
+  // and what a click on a site opens.
+  async function drawOrth(cfg = null) {
+    const C = cfg || OCFG, host = $(C.host); if (!host || !C.ready()) return;
+    const open = C.tracks();
+    if (!clustered() || !open.length) { host.innerHTML = ''; $(C.key).innerHTML = ''; C.setSite(0); C.renderSite([]); return; }
     for (const st of open) if (!st.m[cut]) { await orthCluster(st); if (gone()) return; }   // a new cutoff: cluster the open orthologs again
     for (const st of open) if (st.seq2 && qSeq && st.al === null) st.al = ALIGN.align(qSeq, st.seq2) || false;   // false: too long to align in the page (ALIGN's cell cap)
-    if (!$('#orth-cv', host)) host.innerHTML = '<canvas id="orth-cv" role="img" aria-label="Predictions contacting each residue of this protein and of its orthologs, aligned residue by residue"></canvas>';
-    const cv = $('#orth-cv', host), L = M.plen, W = host.clientWidth, AX = W < 640 ? AXL : 108, bw = (W - AX - AXR) / L, xOf = (r) => AX + (r - 1) * bw, xc = (r) => xOf(r) + bw / 2;
+    if (!$(`#${C.cvId}`, host)) host.innerHTML = `<canvas id="${C.cvId}" role="img" aria-label="${C.aria}"></canvas>`;
+    const cv = $(`#${C.cvId}`, host), L = M.plen, W = host.clientWidth, AX = W < 640 ? AXL : 108, bw = (W - AX - AXR) / L, xOf = (r) => AX + (r - 1) * bw, xc = (r) => xOf(r) + bw / 2;
     const narrow = W < 640, FQ = orthFreq(M, allOn() ? null : ACTIVE), siteOf = (r) => (r >= 1 && r <= L && FQ.tot[r] ? FQ.dom(r) : 0);
     const sites = range(M.k).map((c) => { const runs = []; let a = 0, b = 0;   // a site: the residues where cluster c is the most frequent, in runs (gaps of up to 3 residues joined)
       for (let r = 1; r <= L; r++) if (siteOf(r) === c) { if (a && r - b <= 4) b = r; else { if (a) runs.push([a, b]); a = b = r; } }
       if (a) runs.push([a, b]);
       const main = runs.reduce((m, q) => (q[1] - q[0] > m[1] - m[0] ? q : m), runs[0] || [0, -1]);
       return { c, runs, mid: runs.length ? Math.round((main[0] + main[1]) / 2) : 0 }; }).filter((s) => s.runs.length);
-    ORTH.sites = sites;   // the site panel's alignment reads the runs
+    C.onSites(sites);   // the site panel's alignment reads the runs
     const T = open.map((st) => {   // each ortholog on this protein's axis; each of its predictions matched to the site holding half or more of its aligned contact residues
       const m2 = st.m[cut], F2 = orthFreq(m2, null), al = st.al, inv = new Map(), ins = new Map(), pSite = [], byS = new Array(F2.L + 2), keyS = new Map();
       if (al) {   // per prediction, not per cluster: a data-rich ortholog can fold many sites into one broad cluster (human CDK3: 307 predictions in 2 clusters)
@@ -2474,8 +2491,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           if (s) { const w = st.B2.labels.get(m2.preds[i].partner), k2 = w ? w.key : m2.preds[i].partner; if (!keyS.has(k2)) keyS.set(k2, new Set()); keyS.get(k2).add(s); } });
       }
       const siteAt = (r2) => { const cc = byS[r2] || {}; let bs = 0, bn = 0; for (const s in cc) if (+s && cc[s] > bn) { bn = cc[s]; bs = +s; } return bs; };   // the site most of the residue's matched predictions fall on; 0 when none of them matched
-      const partners = new Set(m2.preds.map((p) => p.partner)).size, sh = ORTH.shared.get(st.sp2);
-      const hit = new Set(pSite.filter(Boolean)), inter = new Set(((sh && sh.pairs) || []).filter((p) => (keyS.get(p.k2) || new Set()).has(p.c1)).map((p) => p.c1));
+      const partners = new Set(m2.preds.map((p) => p.partner)).size;
+      const hit = new Set(pSite.filter(Boolean)), inter = C.inter(st, keyS);
       const doms = al && st.doms ? st.doms.map((d) => { let s = 0, e = 0; for (let u = d.start; u <= d.end; u++) { const r2 = st.fromRef ? st.fromRef[u - 1] : u, q = r2 && inv.get(r2); if (q) { if (!s || q < s) s = q; if (q > e) e = q; } } return s ? { name: d.name, start: d.start, end: d.end, s, e, src: d.src } : null; }).filter(Boolean) : [];
       return { st, m2, F2, al, inv, ins, pSite, byS, siteAt, keyS, partners, call: partners >= 5, hit, inter, doms };   // call: with fewer than 5 partners past the cutoff an empty site says nothing
     });
@@ -2505,12 +2522,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       return max; };
     let y = 6;
     if (sites.length) {   // this protein's sites and, per ortholog, whether it contacts them: ● contacted, ◆ by an ortholog pair, ○ not contacted, · too few partners to say
-      label(narrow ? `${P.gene}'s sites` : `${P.gene}'s sites in each ortholog · click a site for its partners`, y + 12); y += LBL;
+      label(narrow ? `${P.gene}'s sites` : C.siteHead, y + 12); y += LBL;
       for (const s of sites) { for (const [a, b] of s.runs) { g.fillStyle = clusterColor(s.c, M.k); g.fillRect(xOf(a), y, Math.max(2, xOf(b + 1) - xOf(a)), 8); }
         hits.push({ c: s.c, x0: xOf(s.runs[0][0]) - 2, x1: xOf(s.runs[s.runs.length - 1][1] + 1) + 2, y0: y - 2, y1: y + 10 }); }
-      side(narrow ? spShort(sp.reg) : `${spShort(sp.reg)} ${P.gene}`, y + 4, '#17263A'); y += 12;
+      side(C.qside(narrow), y + 4, '#17263A'); y += 12;
       const mids = sites.map((s) => xc(s.mid)).sort((p, q) => p - q), k = mids.slice(1).reduce((m, x, i) => Math.min(m, x - mids[i]), Infinity) < 11 ? 0.65 : 1;   // marks shrink where sites sit close together
-      for (const t of T) { const ym = y + MR / 2; side(narrow ? spShort(t.st.reg2) : `${spShort(t.st.reg2)} ${t.st.P2.gene}`, ym);
+      for (const t of T) { const ym = y + MR / 2; side(C.side(t.st, narrow), ym);
         for (const s of sites) { const x = xc(s.mid), col = clusterColor(s.c, M.k);
           if (t.inter.has(s.c)) { g.fillStyle = col; g.beginPath(); g.moveTo(x, ym - 5 * k); g.lineTo(x + 5 * k, ym); g.lineTo(x, ym + 5 * k); g.lineTo(x - 5 * k, ym); g.closePath(); g.fill(); }
           else if (t.hit.has(s.c)) { g.fillStyle = col; g.beginPath(); g.arc(x, ym, 4 * k, 0, 2 * Math.PI); g.fill(); }
@@ -2529,7 +2546,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     for (const t of T) {
       const { st, m2, F2, al, inv, ins, siteAt } = t;
       const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
-      label(`${orthName(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
+      label(`${C.name(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
       const yTop = y;
       if (al) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#E8ECF0'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, light gray = nothing of the ortholog aligned here
       if (t.dL) { domBoxes(t.doms, y); for (const d of t.doms) rows.push({ kind: 'dom', d, st, y0: y + d.lane * DRH, y1: y + d.lane * DRH + 10 }); y += t.dL * DRH + 4; }
@@ -2546,13 +2563,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       y += 20 + 8;
     }
     const siteTip = (c) => { const s = sites.find((x) => x.c === c);
-      return `<b>${esc(P.gene)} ${clusterLabel(c)}</b> · residues ${s.runs.map(([a, b]) => (a === b ? a : `${a}–${b}`)).join(', ')}<br>${T.map((t) => `${orthLabel(t.st)}: ${!t.al ? 'not aligned' : t.inter.has(c) ? 'contacted, by an ortholog pair' : t.hit.has(c) ? 'contacted' : t.call ? 'not contacted' : `too few partners past the cutoff to say (${t.partners})`}`).join('<br>')}<br><span class="muted">click for the partners in each species</span>`; };
+      return `<b>${esc(P.gene)} ${clusterLabel(c)}</b> · residues ${s.runs.map(([a, b]) => (a === b ? a : `${a}–${b}`)).join(', ')}<br>${T.map((t) => `${C.lab(t.st)}: ${!t.al ? 'not aligned' : t.inter.has(c) ? `contacted, ${C.pairWord}` : t.hit.has(c) ? 'contacted' : t.call ? 'not contacted' : `too few partners past the cutoff to say (${t.partners})`}`).join('<br>')}<br><span class="muted">${C.clickWord}</span>`; };
     const at = (e) => { const b = cv.getBoundingClientRect(); return { mx: e.clientX - b.left, my: e.clientY - b.top }; };
     cv.onmousemove = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); cv.style.cursor = h ? 'pointer' : '';
       if (h) return showTip(siteTip(h.c), e.clientX, e.clientY);
       const r = Math.floor((mx - AX) / bw) + 1; if (r < 1 || r > L) return hideTip();
       const row = rows.find((x) => my >= x.y0 && my <= x.y1 && (x.kind !== 'dom' || (r >= x.d.s && r <= x.d.e))); if (!row) return hideTip();
-      if (row.kind === 'dom') return showTip(`<b>${esc(row.d.name)}</b> · ${row.st ? `${orthLabel(row.st)} ${row.d.start}–${row.d.end}, on ${esc(P.gene)} ${row.d.s}–${row.d.e}` : `residues ${row.d.s}–${row.d.e}${domUni(row.d) ? ` (${domUni(row.d)})` : ''}`} · ${row.d.src === 'Pfam' ? 'Pfam domain' : 'UniProt domain'}`, e.clientX, e.clientY);
+      if (row.kind === 'dom') return showTip(`<b>${esc(row.d.name)}</b> · ${row.st ? `${C.lab(row.st)} ${row.d.start}–${row.d.end}, on ${esc(P.gene)} ${row.d.s}–${row.d.e}` : `residues ${row.d.s}–${row.d.e}${domUni(row.d) ? ` (${domUni(row.d)})` : ''}`} · ${row.d.src === 'Pfam' ? 'Pfam domain' : 'UniProt domain'}`, e.clientX, e.clientY);
       if (row.kind === 'q') { const cc = row.F.byC[r] || {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => `<span style="color:${clusterColor(c, M.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`).join(' · ');
         return showTip(`<b>${esc(P.gene)} ${qSeq[r - 1] || ''}${r}</b> · ${row.F.tot[r]} prediction${row.F.tot[r] === 1 ? '' : 's'}${parts ? '<br>' + parts : ''}`, e.clientX, e.clientY); }
       const t = row.t, st = t.st, m2 = t.m2; let r2 = null; if (t.al) { if (t.al.map[r - 1] != null) r2 = t.al.map[r - 1]; } else if (r <= row.F.L) r2 = r;
@@ -2560,13 +2577,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         ? `<span style="color:${c ? clusterColor(c, M.k) : '#9AA7B5'}">●</span> ${c ? `${esc(P.gene)} ${clusterLabel(c, true)}` : 'no site'} ${cc[c]}`
         : `<span style="color:${clusterColor(c, m2.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`)).join(' · ');
       const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', insN = t.al ? t.ins.get(r) : 0, ur = r2 && (st.toRef ? st.toRef[r2 - 1] : r2), plv = t.pl && ur ? st.pl[ur - 1] : null;
-      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${orthLabel(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : 'no residue of the ortholog aligns here'}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`, e.clientX, e.clientY); };
+      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${C.lab(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : `no residue of the ${C.word} aligns here`}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
-    cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; ORTH.site = ORTH.site === h.c ? 0 : h.c; renderOrthSite(T); };
-    if (ORTH.site && !sites.some((s) => s.c === ORTH.site)) ORTH.site = 0;
-    renderOrthSite(T);
-    $('#orth-key').innerHTML = `<span>bars: predictions contacting each residue (y axis); an ortholog's bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> contacted by a partner whose ortholog contacts the same site · <b>○</b> not contacted · <b>·</b> fewer than 5 partners past the cutoff, no call</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#E8ECF0;border:1px solid #CBD3DC"></i>no residue of the ortholog aligned</span><span><i style="background:#B45309"></i>contacts on the ortholog's inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam, UniProt's where Pfam has none; an ortholog's drawn where its residues align</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
-    attachExport('orth-cv', `atlas_${P.gene}_orthologs`, drawOrth); renderOrthList();   // the list carries each alignment's numbers once it exists
+    cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; C.setSite(C.site() === h.c ? 0 : h.c); C.renderSite(T); };
+    if (C.site() && !sites.some((s) => s.c === C.site())) C.setSite(0);
+    C.renderSite(T);
+    $(C.key).innerHTML = `<span>bars: predictions contacting each residue (y axis); ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> ${C.diamond} · <b>○</b> not contacted · <b>·</b> fewer than 5 partners past the cutoff, no call</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#E8ECF0;border:1px solid #CBD3DC"></i>no residue of the ${C.word} aligned</span><span><i style="background:#B45309"></i>contacts on the ${C.word}'s inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam, UniProt's where Pfam has none; ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s drawn where its residues align</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
+    attachExport(C.cvId, C.exportName, () => drawOrth(cfg)); C.after();   // the list carries each alignment's numbers once it exists
   }
   async function orthShared(sp2) {   // which of the ortholog's partners have an ortholog among this protein's partners, and the sites both contact
     const st = ORTH.open.get(sp2), box = $('#orth-shared'); if (!st || !box) return;
@@ -2630,7 +2647,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : `${n ? 'Only one prediction' : 'No predictions'} past the ${cut}% FPR cutoff, so there is nothing to cluster.`;
     const want = !clustered() && V.mode === 'cluster' ? 'plddt' : clustered() && V.auto && S.mapOK ? 'cluster' : null;   // no clusters: show pLDDT until there are
     if (want) { V.auto = want === 'plddt'; V.mode = want; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === want)); }
-    paraSites(); if (PALN.c) paraAlign();
+    if (PALN.trk) drawOrth(PCFG); else { paraSites(); if (PALN.c) paraAlign(); }
     renderChips(); renderSites(); drawFreq(); drawHeatmap(); renderClusterInfo(); recolor3D(); drawScatter(); drawTopList(); drawTable(); fillPartners(); if (NET) NET.recolor(); drawOrth().then(() => { for (const id of ORTH.open.keys()) orthShared(id); });
   }
   function renderChips() {
@@ -3386,13 +3403,21 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         + `<td class="num">${x.shared == null ? '–' : x.shared ? `<a href="#/${sp.id}/network?ids=${encodeURIComponent(`${P.key},${x.k2}`)}&add=link&hops=1&cut=10" title="draw ${esc(P.gene)}, ${esc(x.r.gene)} and the partners they share">${fmtInt(x.shared)}</a> <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>` : `0 <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>`}</td>`
         + `<td class="num">${x.pair != null ? `<a href="#/${sp.id}/${esc(P.key)}/${esc(x.k2)}"><span class="para-ilis">iLIS </span>${x.pair.toFixed(3)}</a>` : '–'}</td></tr>`).join('') + '</tbody></table></div>'
       + `<p class="muted" style="margin:6px 0 0;font-size:12.5px">Shared partners: the number both have, of ${esc(P.gene)}'s ${fmtInt(PARA.mine.size)} and the paralog's own count past 10% FPR.</p>`
-      + '<div id="para-sites"></div><div id="para-aln"></div>';
-    paraSites(); if (PALN.c) paraAlign();
+      + '<div class="plot" id="para-wrap"></div><div class="legend" id="para-key"></div><div id="para-sites"></div><div id="para-aln"></div>';
+    paraSites(); if (PALN.c) paraAlign(); paraLoad();
   }
   // Aligned residues at one of this protein's sites across its paralogs, as the Orthologs card does for orthologs: each paralog's
   // sequence aligned to this protein's, its own predictions clustered (cLIP at this cutoff) and each matched to the site holding
   // half or more of its aligned contact residues, so an underlined residue is contacted there by that paralog's predictions.
   // The paralogs listed in the table (the first 6 in the Atlas index) load on the first click.
+  const paraSt = (k) => { if (!PALN.st.has(k)) PALN.st.set(k, orthLoad({ sp2: sp.id, key2: k, reg2: sp.reg, redraw: () => drawOrth(PCFG) }).catch(() => null)); return PALN.st.get(k); };
+  async function paraLoad() {   // the paralogs listed (the first 6 in the Atlas index): predictions, cLIP, sequence; then the plot
+    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), host = $('#para-wrap'); if (!host) return;
+    if (!rows.length) { PALN.trk = []; host.innerHTML = ''; $('#para-key').innerHTML = ''; return; }
+    if (!PALN.trk) host.innerHTML = `<p class="muted">Clustering the predictions of ${fmtInt(rows.length)} paralog${rows.length === 1 ? '' : 's'}…</p>`;
+    const sts = await Promise.all(rows.map((x) => paraSt(x.k2))); if (gone()) return;
+    PALN.trk = sts.filter(Boolean); drawOrth(PCFG);
+  }
   function paraSitesOf() {   // this protein's sites: the residues where a cluster is the most frequent, in runs (gaps of up to 3 joined), as in drawOrth
     const FQ = orthFreq(M, null), L = M.plen, siteOf = (r) => (r >= 1 && r <= L && FQ.tot[r] ? FQ.dom(r) : 0);
     const sites = range(M.k).map((c) => { const runs = []; let a = 0, b = 0;
@@ -3413,7 +3438,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (!c || !clustered() || !qSeq || !PARA) { out.innerHTML = ''; return; }
     const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), tok = ++PALN.tok;
     out.innerHTML = `<p class="muted">Aligning ${fmtInt(rows.length)} paralog${rows.length === 1 ? '' : 's'} and clustering their predictions…</p>`;
-    const sts = await Promise.all(rows.map(async (x) => { if (!PALN.st.has(x.k2)) PALN.st.set(x.k2, orthLoad({ sp2: sp.id, key2: x.k2, reg2: sp.reg }).catch(() => null));
+    const sts = await Promise.all(rows.map(async (x) => { if (!PALN.st.has(x.k2)) paraSt(x.k2);
       const st = await PALN.st.get(x.k2); if (st && !st.m[cut]) { try { await orthCluster(st); } catch (e) { return null; } } return st; }));
     if (gone() || tok !== PALN.tok || c !== PALN.c) return;
     const { sites, siteOf } = paraSitesOf(), T = [], miss = [];
@@ -4047,7 +4072,7 @@ async function viewNetwork(spId, q) {
         <span class="ex-row" id="nw-ex"></span>
         <label id="nw-col-wrap" hidden>Names in <select id="nw-col"></select></label><span class="muted" id="nw-table"></span></div>
       <div class="controls" style="margin-top:10px"><label>Show <select id="nw-add"><option value="none">only these proteins</option><option value="link" title="partners on a path between two proteins-of-interest; through 1 is a partner two of them share">+ partners linking them</option><option value="top">+ each one's top partners</option><option value="tree" title="the fewest added partners that connect your proteins-of-interest through strong pairs (a Steiner tree); with a score column, each protein joins only when its score outweighs the cost of reaching it">+ the fewest partners connecting them</option></select></label>
-        <label class="ctl" id="nw-prize-wrap" hidden title="a number column of your table as each protein-of-interest's weight (its prize): ranked from 0 to 1 (p-values and FDRs by −log10, fold changes by size either way), a protein joins the tree only while its prize outweighs the cost of the path to it; none: every protein-of-interest that can be reached joins">Score <select id="nw-prize"></select></label>
+        <label class="ctl" id="nw-prize-wrap" hidden title="a number column of your table as each protein-of-interest's weight: its score, ranked from 0 to 1.5 (p-values and FDRs by −log10, fold changes by size either way); a protein joins the tree only while its score outweighs the cost of the path to it; none: every protein-of-interest that can be reached joins">Score <select id="nw-prize"></select></label>
         <span id="nw-hops-wrap" title="how many added partners a path between two proteins-of-interest may pass through: 1 is a partner two of them share, 2 and 3 reach further">through up to <select id="nw-hops" aria-label="Partners a path may pass through"><option value="1">1 partner</option><option value="2">2 partners</option><option value="3">3 partners</option></select></span>
         <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein <label class="ctl" title="pick the number for you: the most partners per protein, up to 10, that keep the drawing near ${AUTO_N} proteins; typing a number turns it off"><input type="checkbox" id="nw-kauto"${S.kAuto ? ' checked' : ''}> auto</label> <button type="button" class="btn" id="nw-kscan" title="how deep each protein’s ranked partners stay shared with another protein-of-interest, compared with random lists; exploratory">Suggest <span class="tag-alpha">alpha</span></button></span>
         <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}<button data-f="c" class="${S.cut === 'c' ? 'on' : ''}" title="an iLIS cutoff of your own">custom</button></div>
@@ -4262,7 +4287,7 @@ async function viewNetwork(spId, q) {
       cost += found.get(pick); terms.delete(pick); joined++;
     }
     for (const u of inT) keep.add(u);
-    return { joined, of: Q.size, added: [...inT].filter((u) => !Q.has(u)).length, cost, prize: !!prize };
+    return { joined, of: Q.size, added: [...inT].filter((u) => !Q.has(u)).length, cost, prize: !!prize, nodes: inT };
   }
   // Are the proteins-of-interest paired with each other more than chance? Their predicted pairs among themselves against random lists
   // in which each protein is swapped for one with about as many partners past the cutoff (the same log2 bin), drawn with a seed from
@@ -4283,7 +4308,7 @@ async function viewNetwork(spId, q) {
         if (got >= 0) o.add(got); } return o; };
       const obs = pairsIn(Q); let ge = 0, tot = 0; for (let r = 0; r < R; r++) { const x = pairsIn(rset()); tot += x; if (x >= obs) ge++; }
       const mean = tot / R, pv = (1 + ge) / (R + 1);
-      ENR = { key, html: `Your ${fmtInt(Q.size)} proteins-of-interest share <b>${fmtInt(obs)}</b> predicted pair${obs === 1 ? '' : 's'} among themselves past iLIS ${cutV()}${S.iptm ? ` (ipTM ≥ ${S.iptm})` : ''}; ${fmtInt(R)} random lists with as many partners per protein share ${mean.toFixed(1)} on average${mean > 0 ? ` (${(obs / mean).toFixed(1)}×)` : ''} · <b>${ge ? `p = ${pv < 0.01 ? pv.toExponential(1) : pv.toFixed(3)}` : `p < ${(1 / (R + 1)).toFixed(4)}`}</b> <span class="muted">(each protein swapped for one with about as many partners past ${bk === 'pos10' ? '10' : bk === 'pos5' ? '5' : '1'}% FPR in the Atlas; seeded by the list)</span>` };
+      ENR = { key, html: `Your ${fmtInt(Q.size)} proteins-of-interest share <b>${fmtInt(obs)}</b> predicted pair${obs === 1 ? '' : 's'} among themselves past iLIS ${cutV()}${S.iptm ? ` (ipTM ≥ ${S.iptm})` : ''}; ${fmtInt(R)} random lists with as many partners per protein share ${mean.toFixed(1)} on average${mean > 0 ? ` (${(obs / mean).toFixed(1)}×)` : ''} · <b>${ge ? `p = ${pv < 0.01 ? pv.toExponential(1) : pv.toFixed(3)}` : `p ≤ ${(1 / (R + 1)).toFixed(4)}`}</b> <span class="muted">(each protein swapped for one with about as many partners past ${bk === 'pos10' ? '10' : bk === 'pos5' ? '5' : '1'}% FPR in the Atlas; seeded by the list)</span>` };
       if (!stale(gen)) el.innerHTML = ENR.html; }, 20);
   }
   function readInput() {   // the names to draw, through readIdInput; the column picker and the note follow it
@@ -4368,8 +4393,8 @@ async function viewNetwork(spId, q) {
         const posKey = bandKey(), fpr = { pos10: 0.1, pos5: 0.05, pos1: 0.01 }[posKey];
         const pcOf = (i) => { const r = sp.rows[i]; return r.partners ? ((r[posKey] || 0) + 20 * fpr) / (r.partners + 20) : fpr; }, TPx = S.set ? null : TPN;   // as the nested network: shrunk toward the benchmark rate
         const rows = cand.map((j) => { let k = 0, m = 0; const mj = E.adj.get(j) || new Map(); for (const q of Q) { const e = mj.get(q); if (e && passE(e)) k++; if (!TPx || TPx.has(j, q)) m++; } m = Math.max(m, k); return { j, k, m, p: binomTail(m, pcOf(j), k) }; });
-        const qv = bhQ(rows.map((x) => x.p)); rows.forEach((x, n) => SIG.set(x.j, { k: x.k, m: x.m, p: x.p, q: qv[n] }));
-        if (S.sig) for (const x of rows) if (SIG.get(x.j).q > 0.05) { keep.delete(x.j); sigCut++; } } }
+        const qv = bhQ(rows.map((x) => x.p)); rows.forEach((x, n) => SIG.set(x.j, { k: x.k, m: x.m, p: x.p, q: qv[n], t: !!TPx }));
+        if (S.sig) for (const x of rows) if (SIG.get(x.j).q > 0.05 && !(treeInfo && treeInfo.nodes.has(x.j))) { keep.delete(x.j); sigCut++; } } }   // the tree's partners stay: it is drawn whole
     let links = [];
     for (const a of keep) for (const [b, e] of E.adj.get(a) || []) if (b > a && keep.has(b) && passE(e)) links.push({ source: a, target: b, ...e, pubs: K ? K.pubs(a, b) : 0, gen: K ? K.gen(a, b) : 0 });
     let pruned = 0;   // Min. pairs: drop added partners with fewer pairs in the drawing, again until none is left below it (a k-core)
@@ -4396,7 +4421,7 @@ async function viewNetwork(spId, q) {
     status(`${fmtInt(Q.size)} proteins-of-interest${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}${xoNote}`
       + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : K === null ? ' · no BioGRID records for this species' : ''}`
       + `${missing.length ? ` · not in the Atlas index: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.slice(0, 30).join(', '))}${alone.length > 30 ? ` and ${fmtInt(alone.length - 30)} more` : ''}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
-      + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${lone ? ` · ${fmtInt(lone)} protein${lone === 1 ? '' : 's'} with no pair hidden` : ''}${treeInfo ? ` · the fewest partners connecting them: ${fmtInt(treeInfo.added)} added, joining ${treeInfo.joined === treeInfo.of ? `all ${fmtInt(treeInfo.of)}` : `${fmtInt(treeInfo.joined)} of ${fmtInt(treeInfo.of)}`} proteins-of-interest${treeInfo.joined < treeInfo.of ? ` (the other ${fmtInt(treeInfo.of - treeInfo.joined)} ${treeInfo.prize ? 'are not worth a partner by their score, or ' : ''}are not reached through 3 or fewer partners; they are drawn as they are)` : ''} (a Steiner tree, each pair costing 1.05 − best iLIS, total ${treeInfo.cost.toFixed(2)}${treeInfo.prize ? `; prizes from ${esc(S.prize)}` : ''})` : ''}${sigCut ? ` · ${fmtInt(sigCut)} added partner${sigCut === 1 ? '' : 's'} hidden as linking no more proteins-of-interest than chance (q > 0.05)` : ''}${S.add === 'link' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: fewer partners in between, a higher Min. pairs or a stricter cutoff thins it` : ''}${hopCut ? ' · the search for linking partners stopped at the nearest ones in this dense network' : ''}${autoNote ? ` · ${esc(autoNote)}` : ''}</span>`);
+      + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${lone ? ` · ${fmtInt(lone)} protein${lone === 1 ? '' : 's'} with no pair hidden` : ''}${treeInfo ? ` · the fewest partners connecting them: ${fmtInt(treeInfo.added)} added, joining ${treeInfo.joined === treeInfo.of ? `all ${fmtInt(treeInfo.of)}` : `${fmtInt(treeInfo.joined)} of ${fmtInt(treeInfo.of)}`} proteins-of-interest${treeInfo.joined < treeInfo.of ? ` (the other ${fmtInt(treeInfo.of - treeInfo.joined)} ${treeInfo.prize ? 'are not worth a partner by their score, or ' : ''}were not reached by a short path; they are drawn as they are)` : ''} (a Steiner tree, each pair costing 1.05 − best iLIS, total ${treeInfo.cost.toFixed(2)}${treeInfo.prize ? `; scores from ${esc(S.prize)}` : ''})` : ''}${sigCut ? ` · ${fmtInt(sigCut)} added partner${sigCut === 1 ? '' : 's'} hidden as linking no more proteins-of-interest than chance (q > 0.05)${treeInfo ? "; the tree's own partners are kept" : ''}` : ''}${S.add === 'link' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: fewer partners in between, a higher Min. pairs or a stricter cutoff thins it` : ''}${hopCut ? ' · the search for linking partners stopped at the nearest ones in this dense network' : ''}${autoNote ? ` · ${esc(autoNote)}` : ''}</span>`);
     $('#nw-card').hidden = false;
     if (!links.length && EXPECT) { const X = EXPECT; EXPECT = null; POS0 = null; $('#nw-loaded').innerHTML = `<b>Not the saved result</b> · settings from ${esc(X.file)}: no predicted pair is drawn with these settings now.`; $('#nw-loaded').classList.add('bad'); $('#nw-loaded').hidden = false; }
     if (!links.length) { $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pairs). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); return; }   // the matrix still shows the pairs below this cutoff
@@ -4577,7 +4602,7 @@ async function viewNetwork(spId, q) {
     const recolor = () => { const nc = nodeColors(); node.select('circle.nfill').attr('fill', nc.fill); $('#nw-nkey').innerHTML = nc.key; }; recolor();
     const placeLabels = liftLabels(g, node);
     hullLabG.raise();   // group names above the protein-name layer too
-    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas${SIG.has(d.id) ? (() => { const x = SIG.get(d.id), f = (v) => (v < 0.001 ? v.toExponential(1) : v.toFixed(3)); return `<br>pairs with ${fmtInt(x.k)} of the ${fmtInt(x.m)} proteins-of-interest it was folded with · p ${f(x.p)}, q ${f(x.q)}${x.q <= 0.05 ? ' (more than chance)' : ''}`; })() : ''}${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partners · ⌘ or Ctrl-click opens its page in a new tab` : 'click for its page'}`, ev.clientX, ev.clientY))
+    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas${SIG.has(d.id) ? (() => { const x = SIG.get(d.id), f = (v) => (v < 0.001 ? v.toExponential(1) : v.toFixed(3)); return `<br>pairs with ${fmtInt(x.k)} of the ${fmtInt(x.m)} proteins-of-interest${x.t ? ' it was folded with' : ''} · p ${f(x.p)}, q ${f(x.q)}${x.q <= 0.05 ? ' (more than chance)' : ''}`; })() : ''}${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partners · ⌘ or Ctrl-click opens its page in a new tab` : 'click for its page'}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, d) => { if (ev.defaultPrevented) return; hideTip();
         if (ev.metaKey || ev.ctrlKey) { window.open(`#/${sp.id}/${d.row.key}`, '_blank'); return; }   // a new tab, as for a link
         if (S.click === 'open') { location.hash = `#/${sp.id}/${d.row.key}`; return; }
@@ -4719,7 +4744,7 @@ async function viewNetwork(spId, q) {
   const dataOf = () => { const used = !S.set ? sp.dsIds : sp.dsIds.includes(S.set) ? [S.set] : sp.dsIds.filter((id, i) => TSs[i] && TSs[i].list.some((x) => x.id === S.set));
     return used.map((id) => { const d = REG.datasets.find((x) => x.id === id) || { id }, r = recOf(d); return { screen: id, name: d.short || id, record: r ? `https://doi.org/10.5281/zenodo.${r}` : '', version: r ? REC_VERSION[r] || '' : '' }; }); };
   const DISP = ['shade', 'kb', 'ev', 'unpred', 'heat-show', 'heat-cs'];
-  const MEANING = { ids: 'proteins-of-interest, as the Atlas resolved them', add: "none: only these proteins; link: + partners linking them; top: + each one's top partners; tree: + the fewest partners connecting them (a Steiner tree, each pair costing 1.05 − best iLIS)", prize: 'tree: the table column whose numbers weigh each protein-of-interest (blank: none, every reachable one joins)', sig: '1: only added partners linking more proteins-of-interest than chance (BH q ≤ 0.05)', hops: 'partners a linking path may pass through (add = link)',
+  const MEANING = { ids: 'proteins-of-interest, as the Atlas resolved them', add: "none: only these proteins; link: + partners linking them; top: + each one's top partners; tree: + the fewest partners connecting them (a Steiner tree, each pair costing 1.05 − best iLIS)", prize: 'tree: the table column whose numbers score each protein-of-interest (blank: none, every reachable one joins)', sig: '1: only added partners linking more proteins-of-interest than chance (BH q ≤ 0.05)', hops: 'partners a linking path may pass through (add = link)',
     k: 'partners per protein (add = top, and per click); absent: picked for you', cut: 'cutoff: 10, 5 or 1 (% FPR), or c for the custom iLIS in cutv', cutv: 'custom iLIS cutoff (cut = c)', iptm: 'also require a best ipTM of at least this (0: none)',
     set: 'the screens used (blank: every screen)', mind: 'Min. pairs: added partners with fewer pairs in the drawing are hidden, repeatedly', minq: '1: Min. pairs applies to proteins-of-interest too', lone: '1: proteins with no pair are hidden',
     color: 'the table column the proteins are colored by', exp: 'proteins expanded by clicks, in the order clicked', click: 'what a click on a protein does',
