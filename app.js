@@ -805,7 +805,7 @@ function afdbEntry(acc) {
     if (r.status === 404) return null; if (!r.ok) throw new Error(`AlphaFold DB answered ${r.status}`); return r.json(); }).then((d) => {
     const list = Array.isArray(d) ? d : d ? [d] : [];
     const e = list.find((x) => (x.uniprotAccession === acc) && (x.uniprotStart || x.sequenceStart || 1) === 1) || list[0];
-    return e && e.cifUrl ? { cifUrl: e.cifUrl, seq: e.uniprotSequence || e.sequence || '', amUrl: e.amAnnotationsUrl || null } : null;
+    return e && e.cifUrl ? { cifUrl: e.cifUrl, seq: e.uniprotSequence || e.sequence || '', amUrl: e.amAnnotationsUrl || null, plddtUrl: e.plddtDocUrl || null } : null;
   }).catch(() => { AFDB.delete(acc); return { failed: true }; }));   // null: AFDB has no model; failed: the request did not get through (not remembered, so it can be retried)
   return AFDB.get(acc);
 }
@@ -1413,7 +1413,7 @@ async function viewAbout() {
         ${ref('alphafold', 'Those models and their pLDDT: Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. <i>Nature</i> 596, 583–589.')}
         ${ref('alphamissense', 'Missense pathogenicity on human proteins: Cheng, J. et al. (2023). Accurate proteome-wide missense variant effect prediction with AlphaMissense. <i>Science</i> 381, eadg7492.')}
         ${ref('biogrid', 'Reported physical and genetic interactions (release 5.0.261): Oughtred, R. et al. (2021). The BioGRID database: a comprehensive biomedical resource of curated protein, genetic, and chemical interactions. <i>Protein Sci.</i> 30, 187–200.')}
-        ${ref('alliance', 'Orthologs on protein pages (human, mouse, rat, zebrafish, fly, <i>C. elegans</i> and yeast; release 9.0.0, stringent set, CC BY 4.0, mapped to the Atlas proteins through its UniProt cross-references): The Alliance of Genome Resources Consortium (2024). Updates to the Alliance of Genome Resources central infrastructure. <i>Genetics</i> 227, iyae049.')}
+        ${ref('alliance', 'Orthologs on protein pages (human, fly, zebrafish, yeast, <i>C. elegans</i>, <i>Mus musculus</i> and <i>Rattus norvegicus</i>; release 9.0.0, stringent set, CC BY 4.0, mapped to the Atlas proteins through its UniProt cross-references): The Alliance of Genome Resources Consortium (2024). Updates to the Alliance of Genome Resources central infrastructure. <i>Genetics</i> 227, iyae049.')}
       </ul>
       <h3 class="refs-h">Prediction, scoring and display</h3>
       <ul class="refs">
@@ -1942,7 +1942,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a variant (for example <span id="res-eg">T983A</span>) to see which
         predictions, partners and sites contact it; the link keeps it.</p><p class="note" id="clip-aside" hidden></p></div>
     <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div>${xticks}</div>
-      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
+      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
     <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
       <p class="muted" style="margin:2px 0 6px">${esc(P.gene)} as predicted alone in the AlphaFold Database, residues colored by the cluster that consensus-contacts them · click clusters to isolate.
@@ -2155,7 +2155,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
      with its own cLIP, drawn on this protein's residues through a pairwise sequence alignment (ALIGN, affine gaps, BLOSUM62).
      Conserved binding sites line up; the identity strip says where the alignment can be trusted, and the shared partners say
      which sites the same orthologous partners contact in both species. */
-  const ORTH = { list: null, open: new Map(), fail: new Map(), shared: new Map(), shOpen: new Set() };   // open: species id → loaded ortholog; shared: species id → shared-partner table; shOpen: its line opened by the reader
+  const ORTH = { list: null, open: new Map(), fail: new Map(), shared: new Map(), shOpen: new Set(), site: 0 };   // open: species id → loaded ortholog; shared: species id → shared-partner table; shOpen: its line opened by the reader
   const orthHost = () => $('#c-orth');
   async function orthList() {
     if (!(await orthSpecies()).has(sp.id)) return [];   // no table for this species: no request
@@ -2169,7 +2169,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     return out.sort((a, b) => (own(b) - own(a)) || (b.methods / b.of - a.methods / a.of) || (b.methods - a.methods) || (b.both - a.both) || (ord(a) - ord(b)));   // mouse and rat hold only AFDB pairs: the species with screens of their own open first
   }
   const orthOpened = () => (ORTH.list || []).map((o) => ORTH.open.get(o.sp2)).filter(Boolean);   // loaded orthologs in the list's order, whatever order they loaded in
-  async function orthNames() {   // the species with tables, as the card names them: human, fly, …, Mus musculus and Rattus norvegicus
+  async function orthNames() {   // the species with tables, named as on the species pages (one-word labels in lower case)
     const ids = [...(await orthSpecies())], ls = ids.map((id) => { const r = (REG.species || []).find((x) => x.id === id), l = r ? r.label : id; return /^[A-Z][a-z]+$/.test(l) ? l.toLowerCase() : l; });
     return ls.length > 1 ? `${ls.slice(0, -1).join(', ')} and ${ls[ls.length - 1]}` : ls.join('');
   }
@@ -2177,8 +2177,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const sp2 = await species(o.sp2), P2 = sp2.byKey.get(o.key2); if (!P2) throw new Error(`${o.key2} is not in the ${sp2.reg.label.toLowerCase()} index`);
     const B2 = await trackLoad('data', merged(sp2, P2));
     let seq2 = await seqOf(sp2, P2, B2); if (B2.cons && B2.cons.size && B2.C0.qName) seq2 = B2.seqs.get(B2.C0.qName) || seq2;
-    const st = { ...o, sp2obj: sp2, P2, B2, seq2, m: {}, al: null };
-    await orthCluster(st); return st;
+    const st = { ...o, sp2obj: sp2, P2, B2, seq2, m: {}, al: null, doms: null, pl: null };
+    orthExtras(st); await orthCluster(st); return st;
   }
   async function orthCluster(st) {   // cLIP at the current cutoff, once per cutoff
     if (st.m[cut]) return st.m[cut];
@@ -2196,7 +2196,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       sub.textContent = has ? `No ortholog of ${P.gene} among the Atlas proteins of ${names} in the Alliance of Genome Resources' stringent set.` : `Orthologs are listed for ${names}; ${sp.reg.label} proteins have no table yet.`;
       $('#orth-list').innerHTML = ''; $('#c-orth').classList.add('orth-none'); return; }   // nothing below the note: no empty plot, legend or tick box
     renderOrthList();
-    const auto = list.slice(0, 3);   // the best hit in up to three species opens by itself (mutual best hits first); the rest on a click
+    const auto = list.slice(0, 3);   // the first three species open by themselves (species with screens of their own first, then method agreement); the rest on a click
     await Promise.all(auto.map((o) => orthOpen(o)));
   }
   async function orthOpen(o) {
@@ -2214,7 +2214,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const al = st && st.al, m2 = st && st.m[cut];
       return `<div class="orth-row"><span class="src" style="--c:${o.both ? '#1A5276' : '#9AA7B5'}" title="${o.both ? 'the best score both ways' : 'not the best score both ways'}">${esc(o.reg2.label)}</span>
         <a href="#/${o.sp2}/${encodeURIComponent(o.key2)}">${esc(st ? st.P2.gene : o.sym)}</a> <span class="muted">${o.methods} of ${o.of} methods${o.both ? '' : ' · not the best score both ways'}${st ? ` · ${fmtInt(st.P2.pos10)} partners past 10% FPR` : ''}${al ? ` · aligned ${fmtInt(al.aligned)} of ${fmtInt(qSeq.length)} residues, ${Math.round(100 * al.identity)}% identical` : st && !st.seq2 ? ' · no sequence to align: its own numbering' : st && al === false ? ' · too long to align in the page: its own numbering' : ''}${m2 ? ` · ${fmtInt(m2.fingerprints.length)} predictions in ${m2.k} cluster${m2.k === 1 ? '' : 's'}` : ''}</span>${o.alts.length > 1 ? ` <span class="muted">· also ${o.alts.filter((x) => x.key2 !== o.key2).map((x) => `<button type="button" class="more" data-alt="${esc(o.sp2)}" data-key="${esc(x.key2)}" title="${x.methods} of ${x.of} methods; click to draw this one instead">${esc(x.sym)}</button>`).join(', ')}</span>` : ''}
-        ${st ? '' : loading ? '<span class="muted">loading…</span>' : fail ? `<span class="muted">${esc(fail)}</span>` : `<button class="btn" type="button" data-orth="${esc(o.sp2)}">Show</button>`}</div>`; }).join('');
+        ${st ? '' : loading ? '<span class="muted">loading…</span>' : fail ? `<span class="muted">${esc(fail)}</span>` : `<button class="more" type="button" data-orth="${esc(o.sp2)}">show</button>`}</div>`; }).join('');
     box.querySelectorAll('[data-orth]').forEach((b) => { b.onclick = () => { const o = ORTH.list.find((x) => x.sp2 === b.dataset.orth); if (o) orthOpen(o); }; });
     box.querySelectorAll('[data-alt]').forEach((b) => { b.onclick = () => {   // another ortholog of the same species (one to many: yeast CDC28 has CDK3, CDK2 and CDK1): draw it instead
       const o = ORTH.list.find((x) => x.sp2 === b.dataset.alt), a = o && o.alts.find((x) => x.key2 === b.dataset.key); if (!a) return;
@@ -2226,45 +2226,142 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const dom = (r) => { let d = 1, b = -1; const cc = byC[r] || {}; for (const c in cc) if (cc[c] > b) { b = cc[c]; d = +c; } return d; };
     return { L, tot, byC, dom };
   }
+  function orthExtras(st) {   // the ortholog's UniProt domains and AlphaFold DB pLDDT, used only when they sit on the sequence that was aligned; drawn when they arrive
+    const acc2 = st.P2.acc || ''; if (!acc2 || !st.seq2) return;
+    Promise.all([domainsOf(acc2), uniprotSeq(acc2)]).then(([ds, u]) => { if (gone() || !ds || !ds.length || u !== st.seq2) return; st.doms = ds; drawOrth(); }).catch(() => {});
+    afdbEntry(acc2).then((e) => (e && e.plddtUrl && e.seq === st.seq2 ? fetch(e.plddtUrl).then((r) => (r.ok ? r.json() : null)) : null))
+      .then((j) => { if (gone() || !j || !Array.isArray(j.confidenceScore)) return; st.pl = j.confidenceScore; drawOrth(); }).catch(() => {});
+  }
+  function renderOrthSite(T) {   // the partners contacting one of this protein's sites, in this protein and in each ortholog; ortholog pairs in bold
+    const box = $('#orth-site'); if (!box) return;
+    const c = ORTH.site; if (!c || !M || c > M.k) { box.innerHTML = ''; return; }
+    const q = [...partnerCluster].filter(([, v]) => v === c).map(([k]) => k);
+    const lines = [{ head: `${sp.reg.label} ${P.gene}`, items: q.map((k) => ({ k, href: `#/${sp.id}/${P.key}/${k}${scopeQ}`, name: gname(k) })), bold: new Set() }];
+    for (const t of T) { if (!t.al) continue;
+      const ks = new Set([...t.keyS].filter(([, s]) => s.has(c)).map(([k]) => k)); ks.delete(t.st.P2.key);
+      const sh = ORTH.shared.get(t.st.sp2), pairs = ((sh && sh.pairs) || []).filter((p) => p.c1 === c && (t.keyS.get(p.k2) || new Set()).has(c));
+      pairs.forEach((p) => { lines[0].bold.add(p.k1); });
+      lines.push({ head: orthName(t.st), items: [...ks].map((k) => { const r = t.st.sp2obj.byKey.get(k); return { k, href: `#/${t.st.sp2}/${encodeURIComponent(t.st.P2.key)}/${encodeURIComponent(k)}`, name: r ? r.gene : k }; }), bold: new Set(pairs.map((p) => p.k2)) }); }
+    const list = (L) => `<li><b>${esc(L.head)}</b> <span class="muted">(${fmtInt(L.items.length)})</span> ${L.items.length ? L.items.sort((a, b) => (L.bold.has(b.k) - L.bold.has(a.k)) || COLL.compare(a.name, b.name)).slice(0, 40).map((x) => `<a href="${x.href}"${L.bold.has(x.k) ? ' style="font-weight:700"' : ''}>${esc(x.name)}</a>`).join(', ') + (L.items.length > 40 ? ` and ${fmtInt(L.items.length - 40)} more` : '') : '<span class="muted">none at this cutoff</span>'}</li>`;
+    box.innerHTML = `<div class="orth-site-head"><b style="color:${clusterColor(c, M.k)}">${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· partners contacting this site in each species; partners whose ortholog contacts the same site in bold</span> <button type="button" class="more" id="orth-site-x">close</button></div><ul class="orth-pairs">${lines.map(list).join('')}</ul>`;
+    $('#orth-site-x').onclick = () => { ORTH.site = 0; box.innerHTML = ''; };
+  }
   async function drawOrth() {
     const host = $('#orth-wrap'); if (!host || !ORTH.list) return;
     const open = orthOpened();
-    if (!clustered() || !open.length) { host.innerHTML = ''; $('#orth-key').innerHTML = ''; return; }
+    if (!clustered() || !open.length) { host.innerHTML = ''; $('#orth-key').innerHTML = ''; ORTH.site = 0; renderOrthSite([]); return; }
     for (const st of open) if (!st.m[cut]) { await orthCluster(st); if (gone()) return; }   // a new cutoff: cluster the open orthologs again
     for (const st of open) if (st.seq2 && qSeq && st.al === null) st.al = ALIGN.align(qSeq, st.seq2) || false;   // false: too long to align in the page (ALIGN's cell cap)
     if (!$('#orth-cv', host)) host.innerHTML = '<canvas id="orth-cv"></canvas>';
     const cv = $('#orth-cv', host), L = M.plen, W = host.clientWidth, bw = (W - AXL - AXR) / L, xOf = (r) => AXL + (r - 1) * bw, xc = (r) => xOf(r) + bw / 2;
-    const TH = 64, GAP = 30, IH = 9, top0 = 8, H = top0 + (TH + GAP) + open.length * (TH + GAP) + 24;
-    const g = canvasCtx(cv, W, H), rows = [];
-    const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.strokeRect(AXL + 0.5, y0 + 0.5, W - AXL - AXR - 1, y1 - y0 - 1); };
-    const label = (text, y, color = '#17263A', bold = true) => { g.fillStyle = color; g.font = `${bold ? '600 ' : ''}11.5px "IBM Plex Sans", system-ui, sans-serif`; g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillText(text, AXL, y); };
-    const bars = (F, y1, h, xAt, k) => { let max = 1; for (let r = 1; r <= F.L; r++) if (F.tot[r] > max) max = F.tot[r];
-      for (let r = 1; r <= F.L; r++) { if (!F.tot[r]) continue; const x = xAt(r); if (x == null) continue; const hh = F.tot[r] / max * h; g.fillStyle = clusterColor(F.dom(r), k); g.fillRect(x, y1 - hh, Math.max(1, bw), hh); } return max; };
-    // this protein: its own frequency plot, the yardstick
-    const narrow = W < 640;   // a phone: the gene and its length only, the rest is in the list above
-    const FQ = orthFreq(M, allOn() ? null : ACTIVE); let y = top0; label(`${P.gene} (${sp.reg.label.toLowerCase()}, ${fmtInt(L)} aa)${narrow ? '' : ` · ${fmtInt(M.fingerprints.length)} predictions, ${M.k} clusters`}`, y + 12); y += 18;
-    frame(y, y + TH); const maxQ = bars(FQ, y + TH, TH - 4, (r) => xOf(r), M.k); rows.push({ y0: y, y1: y + TH, kind: 'q', F: FQ, max: maxQ }); y += TH + GAP - 18;
-    for (const st of open) {
-      const m2 = st.m[cut], F2 = orthFreq(m2, null), al = st.al, inv = new Map(), ins = new Map();   // inv: ortholog residue → this protein's residue; ins: insertions, by the residue before them
-      if (al) { let last = 0; for (let i = 0; i < al.map.length; i++) if (al.map[i] != null) { inv.set(al.map[i], i + 1); } for (let r2 = 1; r2 <= F2.L; r2++) { if (inv.has(r2)) last = inv.get(r2); else if (F2.tot[r2]) ins.set(last, (ins.get(last) || 0) + F2.tot[r2]); } }
-      const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
-      label(`${orthName(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += 18;
-      if (al) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#F1D7D7'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, pink = unaligned here
-      frame(y, y + TH); const max2 = bars(F2, y + TH, TH - 4, xAt, m2.k);
-      if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AXL; g.fillStyle = '#B45309'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
-      rows.push({ y0: y - (al ? IH + 3 : 0), y1: y + TH, kind: 'o', st, F: F2, max: max2, inv, ins, al }); y += TH + GAP - 18;
+    const narrow = W < 640, FQ = orthFreq(M, allOn() ? null : ACTIVE), siteOf = (r) => (r >= 1 && r <= L && FQ.tot[r] ? FQ.dom(r) : 0);
+    const sites = range(M.k).map((c) => { const runs = []; let a = 0, b = 0;   // a site: the residues where cluster c is the most frequent, in runs (gaps of up to 3 residues joined)
+      for (let r = 1; r <= L; r++) if (siteOf(r) === c) { if (a && r - b <= 4) b = r; else { if (a) runs.push([a, b]); a = b = r; } }
+      if (a) runs.push([a, b]);
+      const main = runs.reduce((m, q) => (q[1] - q[0] > m[1] - m[0] ? q : m), runs[0] || [0, -1]);
+      return { c, runs, mid: runs.length ? Math.round((main[0] + main[1]) / 2) : 0 }; }).filter((s) => s.runs.length);
+    const T = open.map((st) => {   // each ortholog on this protein's axis; each of its predictions matched to the site holding half or more of its aligned contact residues
+      const m2 = st.m[cut], F2 = orthFreq(m2, null), al = st.al, inv = new Map(), ins = new Map(), pSite = [], byS = new Array(F2.L + 2), keyS = new Map();
+      if (al) {   // per prediction, not per cluster: a data-rich ortholog can fold many sites into one broad cluster (human CDK3: 307 predictions in 2 clusters)
+        let last = 0; for (let i = 0; i < al.map.length; i++) if (al.map[i] != null) inv.set(al.map[i], i + 1);
+        for (let r2 = 1; r2 <= F2.L; r2++) { if (inv.has(r2)) last = inv.get(r2); else if (F2.tot[r2]) ins.set(last, (ins.get(last) || 0) + F2.tot[r2]); }
+        m2.fingerprints.forEach((f, i) => { const cnt = new Map(); let n = 0;
+          for (const r2 of f) { const q = inv.get(r2); if (!q) continue; n++; const s = siteOf(q); if (s) cnt.set(s, (cnt.get(s) || 0) + 1); }
+          let bs = 0, bn = 0; for (const [s, k] of cnt) if (k > bn) { bn = k; bs = s; }
+          const s = n && bn * 2 >= n ? bs : 0; pSite[i] = s;
+          for (const r2 of f) if (r2 >= 1 && r2 <= F2.L) (byS[r2] ||= {})[s] = (byS[r2][s] || 0) + 1;
+          if (s) { const w = st.B2.labels.get(m2.preds[i].partner), k2 = w ? w.key : m2.preds[i].partner; if (!keyS.has(k2)) keyS.set(k2, new Set()); keyS.get(k2).add(s); } });
+      }
+      const siteAt = (r2) => { const cc = byS[r2] || {}; let bs = 0, bn = 0; for (const s in cc) if (+s && cc[s] > bn) { bn = cc[s]; bs = +s; } return bs; };   // the site most of the residue's matched predictions fall on; 0 when none of them matched
+      const partners = new Set(m2.preds.map((p) => p.partner)).size, sh = ORTH.shared.get(st.sp2);
+      const hit = new Set(pSite.filter(Boolean)), inter = new Set(((sh && sh.pairs) || []).filter((p) => (keyS.get(p.k2) || new Set()).has(p.c1)).map((p) => p.c1));
+      const doms = al && st.doms ? st.doms.map((d) => { let s = 0, e = 0; for (let r2 = d.start; r2 <= d.end; r2++) { const q = inv.get(r2); if (q) { if (!s || q < s) s = q; if (q > e) e = q; } } return s ? { name: d.name, start: d.start, end: d.end, s, e } : null; }).filter(Boolean) : [];
+      return { st, m2, F2, al, inv, ins, pSite, byS, siteAt, keyS, partners, call: partners >= 5, hit, inter, doms };   // call: with fewer than 5 partners past the cutoff an empty site says nothing
+    });
+    const DRH = 13, IH = 8, TH = 58, PLH = 22, MR = 13, LBL = 17;   // domain lane, identity strip, bars, pLDDT strip, mark row, label row
+    const laneN = (ds) => (ds.length ? lanes(ds, (d) => xOf(Math.max(1, d.s)), (d) => Math.max(xOf(Math.max(1, d.s)) + 2, xOf(Math.min(L, d.e) + 1))) : 0);
+    const qd = qDomains(L), qdL = laneN(qd), qpl = !!(S.plddt && S.mapOK);
+    T.forEach((t) => { t.dL = laneN(t.doms); t.pl = !!(t.al && t.st.pl); });
+    const blockS = sites.length ? LBL + 12 + T.length * MR + 14 : 0, blockQ = LBL + (qdL ? qdL * DRH + 4 : 0) + TH + 4 + (qpl ? PLH + 6 : 0) + 22;
+    const blockO = (t) => LBL + (t.al ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + TH + 4 + (t.pl ? PLH + 6 : 0) + 10;
+    const H = 6 + blockS + blockQ + T.reduce((a, t) => a + blockO(t), 0) + 24;
+    const g = canvasCtx(cv, W, H), rows = [], hits = [];   // rows: hover areas of the tracks; hits: the sites and marks, hover and click
+    const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
+    const label = (text, y, color = '#17263A') => { g.fillStyle = color; g.font = '600 11.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillText(text, AXL, y); };
+    const side = (text, y, color = '#5A697C') => { g.fillStyle = color; g.font = '10.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'right'; g.textBaseline = 'middle'; let s = text; while (s.length > 3 && g.measureText(s + '…').width > AXL - 10) s = s.slice(0, -1); g.fillText(s === text ? s : s + '…', AXL - 6, y); };
+    const yTicks = (max, y1, h) => { g.fillStyle = '#5A697C'; g.font = '10px "IBM Plex Mono", ui-monospace, monospace'; g.textAlign = 'right'; g.textBaseline = 'middle'; for (const v of [...new Set([0, Math.round(max / 2), max])]) g.fillText(String(v), AXL - 5, y1 - v / max * h); };
+    const domBoxes = (ds, y0) => { for (const d of ds) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = y0 + d.lane * DRH;
+      g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 10); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, y + 0.3, x1 - x0 - 0.6, 9.4);
+      g.fillStyle = '#34445A'; g.font = '9.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      let s = d.name; while (s.length > 2 && g.measureText(s + '…').width > x1 - x0 - 4) s = s.slice(0, -1);
+      if (g.measureText(s === d.name ? s : s + '…').width <= x1 - x0 - 4) g.fillText(s === d.name ? s : s + '…', (x0 + x1) / 2, y + 5.5); } };
+    const plLine = (valAt, y0) => { frame(y0, y0 + PLH); const yOf = (v) => y0 + PLH - v / 100 * PLH; let prev = null; g.lineWidth = 1.3;
+      for (let r = 1; r <= L; r++) { const v = valAt(r); if (v == null) { prev = null; continue; } const x = xc(r), y = yOf(v);
+        if (prev) { g.strokeStyle = plddtCol((prev.v + v) / 2); g.beginPath(); g.moveTo(prev.x, prev.y); g.lineTo(x, y); g.stroke(); } prev = { x, y, v }; }
+      side('pLDDT', y0 + PLH / 2, '#2F6FA8'); };
+    const bars = (F, y1, h, xAt, colorAt) => { let max = 1; for (let r = 1; r <= F.L; r++) if (F.tot[r] > max) max = F.tot[r];
+      for (let r = 1; r <= F.L; r++) { if (!F.tot[r]) continue; const x = xAt(r); if (x == null) continue; const hh = F.tot[r] / max * h; g.fillStyle = colorAt(r); g.fillRect(x, y1 - hh, Math.max(1, bw), hh); }
+      return max; };
+    let y = 6;
+    if (sites.length) {   // this protein's sites and, per ortholog, whether it contacts them: ● contacted, ◆ by an ortholog pair, ○ not contacted, · too few partners to say
+      label(narrow ? `${P.gene}'s sites` : `${P.gene}'s sites in each ortholog · click a site for its partners`, y + 12); y += LBL;
+      for (const s of sites) { for (const [a, b] of s.runs) { g.fillStyle = clusterColor(s.c, M.k); g.fillRect(xOf(a), y, Math.max(2, xOf(b + 1) - xOf(a)), 8); }
+        hits.push({ c: s.c, x0: xOf(s.runs[0][0]) - 2, x1: xOf(s.runs[s.runs.length - 1][1] + 1) + 2, y0: y - 2, y1: y + 10 }); }
+      side(P.gene, y + 4, '#17263A'); y += 12;
+      const mids = sites.map((s) => xc(s.mid)).sort((p, q) => p - q), k = mids.slice(1).reduce((m, x, i) => Math.min(m, x - mids[i]), Infinity) < 11 ? 0.65 : 1;   // marks shrink where sites sit close together
+      for (const t of T) { const ym = y + MR / 2; side(t.st.P2.gene, ym);
+        for (const s of sites) { const x = xc(s.mid), col = clusterColor(s.c, M.k);
+          if (t.inter.has(s.c)) { g.fillStyle = col; g.beginPath(); g.moveTo(x, ym - 5 * k); g.lineTo(x + 5 * k, ym); g.lineTo(x, ym + 5 * k); g.lineTo(x - 5 * k, ym); g.closePath(); g.fill(); }
+          else if (t.hit.has(s.c)) { g.fillStyle = col; g.beginPath(); g.arc(x, ym, 4 * k, 0, 2 * Math.PI); g.fill(); }
+          else if (t.call && t.al) { g.strokeStyle = '#9AA7B5'; g.lineWidth = 1.2; g.beginPath(); g.arc(x, ym, 3.5 * k, 0, 2 * Math.PI); g.stroke(); }
+          else { g.fillStyle = '#B9C2CE'; g.beginPath(); g.arc(x, ym, 1.4, 0, 2 * Math.PI); g.fill(); }
+          hits.push({ c: s.c, x0: x - 6, x1: x + 6, y0: ym - 6, y1: ym + 6 }); }
+        y += MR; }
+      y += 14;
     }
-    drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), y + 2, xc, W);
-    cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), r = Math.floor((e.clientX - b.left - AXL) / bw) + 1, my = e.clientY - b.top; if (r < 1 || r > L) return hideTip();
-      const row = rows.find((x) => my >= x.y0 && my <= x.y1); if (!row) return hideTip();
+    label(`${P.gene} (${sp.reg.label.toLowerCase()}, ${fmtInt(L)} aa)${narrow ? '' : ` · ${fmtInt(M.fingerprints.length)} predictions, ${M.k} clusters`}`, y + 12); y += LBL;   // this protein: its own frequency plot, the yardstick
+    if (qdL) { domBoxes(qd, y); for (const d of qd) rows.push({ kind: 'dom', d, y0: y + d.lane * DRH, y1: y + d.lane * DRH + 10 }); y += qdL * DRH + 4; }
+    frame(y, y + TH); yTicks(bars(FQ, y + TH, TH - 4, (r) => xOf(r), (r) => clusterColor(FQ.dom(r), M.k)), y + TH, TH - 4);
+    rows.push({ kind: 'q', F: FQ, y0: y, y1: y + TH }); y += TH + 4;
+    if (qpl) { plLine((r) => { const sr = toStruct(r), v = sr ? S.plddt.get('A:' + sr) : null; return v == null ? null : v; }, y); y += PLH + 6; }
+    drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), y, xc, W); y += 22;
+    for (const t of T) {
+      const { st, m2, F2, al, inv, ins, siteAt } = t;
+      const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
+      label(`${orthName(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
+      const yTop = y;
+      if (al) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#F1D7D7'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, pink = unaligned here
+      if (t.dL) { domBoxes(t.doms, y); for (const d of t.doms) rows.push({ kind: 'dom', d, st, y0: y + d.lane * DRH, y1: y + d.lane * DRH + 10 }); y += t.dL * DRH + 4; }
+      frame(y, y + TH);
+      const colorAt = al ? ((r2) => { const s = siteAt(r2); return s ? clusterColor(s, M.k) : '#B9C2CE'; }) : ((r2) => clusterColor(F2.dom(r2), m2.k));   // aligned: this protein's site colors, gray where no prediction matches a site
+      yTicks(bars(F2, y + TH, TH - 4, xAt, colorAt), y + TH, TH - 4);
+      if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AXL; g.fillStyle = '#B45309'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
+      rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: y + TH }); y += TH + 4;
+      if (t.pl) { const pl2 = st.pl; plLine((r) => { const r2 = al.map[r - 1]; return r2 != null && pl2[r2 - 1] != null ? pl2[r2 - 1] : null; }, y); y += PLH + 6; }
+      y += 10;
+    }
+    drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), y, xc, W);
+    const siteTip = (c) => { const s = sites.find((x) => x.c === c);
+      return `<b>${esc(P.gene)} ${clusterLabel(c)}</b> · residues ${s.runs.map(([a, b]) => (a === b ? a : `${a}–${b}`)).join(', ')}<br>${T.map((t) => `${orthLabel(t.st)}: ${!t.al ? 'not aligned' : t.inter.has(c) ? 'contacted, by an ortholog pair' : t.hit.has(c) ? 'contacted' : t.call ? 'not contacted' : `too few partners past the cutoff to say (${t.partners})`}`).join('<br>')}<br><span class="muted">click for the partners in each species</span>`; };
+    const at = (e) => { const b = cv.getBoundingClientRect(); return { mx: e.clientX - b.left, my: e.clientY - b.top }; };
+    cv.onmousemove = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); cv.style.cursor = h ? 'pointer' : '';
+      if (h) return showTip(siteTip(h.c), e.clientX, e.clientY);
+      const r = Math.floor((mx - AXL) / bw) + 1; if (r < 1 || r > L) return hideTip();
+      const row = rows.find((x) => my >= x.y0 && my <= x.y1 && (x.kind !== 'dom' || (r >= x.d.s && r <= x.d.e))); if (!row) return hideTip();
+      if (row.kind === 'dom') return showTip(`<b>${esc(row.d.name)}</b> · ${row.st ? `${orthLabel(row.st)} ${row.d.start}–${row.d.end}, on ${esc(P.gene)} ${row.d.s}–${row.d.e}` : `${row.d.start}–${row.d.end}`}`, e.clientX, e.clientY);
       if (row.kind === 'q') { const cc = row.F.byC[r] || {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => `<span style="color:${clusterColor(c, M.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`).join(' · ');
         return showTip(`<b>${esc(P.gene)} ${qSeq[r - 1] || ''}${r}</b> · ${row.F.tot[r]} prediction${row.F.tot[r] === 1 ? '' : 's'}${parts ? '<br>' + parts : ''}`, e.clientX, e.clientY); }
-      const st = row.st, m2 = st.m[cut]; let r2 = null; if (row.al) { if (row.al.map[r - 1] != null) r2 = row.al.map[r - 1]; } else if (r <= row.F.L) r2 = r;
-      const cc = r2 ? row.F.byC[r2] || {} : {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => `<span style="color:${clusterColor(c, m2.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`).join(' · ');
-      const idn = row.al ? ` · identity ±10: ${Math.round(100 * row.al.ident(r - 1, 10))}%` : '', insN = row.ins ? row.ins.get(r) : 0;
-      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${orthLabel(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : 'no residue of the ortholog aligns here'}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`, e.clientX, e.clientY); };
+      const t = row.t, st = t.st, m2 = t.m2; let r2 = null; if (t.al) { if (t.al.map[r - 1] != null) r2 = t.al.map[r - 1]; } else if (r <= row.F.L) r2 = r;
+      const cc = r2 ? (t.al ? t.byS[r2] : row.F.byC[r2]) || {} : {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => (t.al
+        ? `<span style="color:${c ? clusterColor(c, M.k) : '#9AA7B5'}">●</span> ${c ? `${esc(P.gene)} ${clusterLabel(c, true)}` : 'no site'} ${cc[c]}`
+        : `<span style="color:${clusterColor(c, m2.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`)).join(' · ');
+      const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', insN = t.al ? t.ins.get(r) : 0, plv = t.pl && r2 ? st.pl[r2 - 1] : null;
+      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${orthLabel(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : 'no residue of the ortholog aligns here'}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
-    $('#orth-key').innerHTML = `<span>bars: predictions contacting each residue, colored by that protein's own clusters (cluster numbers are per protein)</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#F1D7D7"></i>no residue of the ortholog aligned</span><span><i style="background:#B45309"></i>contacts on the ortholog's inserted residues</span>`;
+    cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; ORTH.site = ORTH.site === h.c ? 0 : h.c; renderOrthSite(T); };
+    if (ORTH.site && !sites.some((s) => s.c === ORTH.site)) ORTH.site = 0;
+    renderOrthSite(T);
+    $('#orth-key').innerHTML = `<span>bars: predictions contacting each residue (y axis); an ortholog's bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> contacted by a partner whose ortholog contacts the same site · <b>○</b> not contacted · <b>·</b> fewer than 5 partners past the cutoff, no call</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#F1D7D7"></i>no residue of the ortholog aligned</span><span><i style="background:#B45309"></i>contacts on the ortholog's inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>UniProt domains</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
     attachExport('orth-cv', `atlas_${P.gene}_orthologs`, drawOrth); renderOrthList();   // the list carries each alignment's numbers once it exists
   }
   async function orthShared(sp2) {   // which of the ortholog's partners have an ortholog among this protein's partners, and the sites both contact
@@ -2279,7 +2376,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const k1 = hits[0][0]; if (!partnerCluster.has(k1)) continue;
       pairs.push({ k1, k2, c1: partnerCluster.get(k1), c2: best2.get(k2).c }); }
     ORTH.shared.set(sp2, { n2: keys2.length, pairs });
-    renderOrthShared();
+    renderOrthShared(); drawOrth();   // the marks show which sites an ortholog pair shares
   }
   function renderOrthShared() {   // one line per ortholog; its shared sites open in place on a click (author, 2026-10-03: no table on the main page)
     const box = $('#orth-shared'); if (!box) return;
@@ -2743,7 +2840,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (gone()) return;
     S.len = entry.seq.length || P.clen; S.plddt = parseBfactorsPerResidue(S.text, 'cif'); S.state = 'ready';
     if (!S.mapOK) { V.mode = 'plddt'; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === 'plddt')); }
-    drawFreq(); msg(`${S.alt ? `Showing the AlphaFold DB model of ${esc(S.alt.id)} (${esc(S.alt.acc)}, ${fmtInt(S.alt.len)} aa), another UniProt entry of ${esc(P.gene)}, because ${P.acc ? `${esc(P.acc)} has no model` : 'this protein has no accession'}; ${S.mapOK ? `the residues are placed on it by sequence alignment, ${fmtInt(S.alt.covered)} of the construct's ${fmtInt(cseq().length)} identical` : 'the residues could not be placed on it'}. ` : ''}The 3D viewer loads when this card scrolls into view.`);
+    drawFreq(); drawOrth(); msg(`${S.alt ? `Showing the AlphaFold DB model of ${esc(S.alt.id)} (${esc(S.alt.acc)}, ${fmtInt(S.alt.len)} aa), another UniProt entry of ${esc(P.gene)}, because ${P.acc ? `${esc(P.acc)} has no model` : 'this protein has no accession'}; ${S.mapOK ? `the residues are placed on it by sequence alignment, ${fmtInt(S.alt.covered)} of the construct's ${fmtInt(cseq().length)} identical` : 'the residues could not be placed on it'}. ` : ''}The 3D viewer loads when this card scrolls into view.`);
     if (V.want) show3D();
     if (entry.amUrl) alphaMissense(entry.amUrl).then((a) => { if (!a || gone()) return; S.am = a; $('#cm-am').hidden = false; drawFreq(); });
   }
