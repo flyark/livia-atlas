@@ -658,3 +658,13 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .orth-sh[open] summary { margin-bottom: 4px; }
 .cite, .dshead .pname { overflow-wrap: anywhere; }   /* a citation's FTP path or a long model name wraps on a phone instead of widening the page */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }   /* a heading for screen readers on pages whose visible title is a section heading */
+/* protein page: the Paralogs table; low-confidence paralogs in a lighter ink */
+.para-tbl th.num, .para-tbl td.num { text-align: right; white-space: nowrap; }
+.para-tbl tr.para-low td { color: var(--ink-2); }
+.para-tbl th.num { font-family: inherit; }
+@media (max-width: 600px) {   /* phones: name, identity, confidence, shared partners and the pair; the rest on wider screens */
+  .para-tbl th:nth-child(3), .para-tbl td:nth-child(3), .para-tbl th:nth-child(4), .para-tbl td:nth-child(4), .para-tbl th:nth-child(5), .para-tbl td:nth-child(5) { display: none; }
+  .para-tbl td:first-child .muted, .para-tbl td.num .muted, .para-ilis { display: none; }
+  .para-tbl th.num { white-space: normal; }
+  .pt.para-tbl th, .pt.para-tbl td { padding-left: 4px; padding-right: 4px; }
+}

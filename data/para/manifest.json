@@ -1,0 +1,62 @@
+{
+ "columns": [
+  "key2",
+  "rank",
+  "identity",
+  "similarity",
+  "length",
+  "methods",
+  "confidence"
+ ],
+ "confidence": {
+  "0": "low",
+  "1": "moderate",
+  "2": "high"
+ },
+ "counts": {
+  "fly": {
+   "pairs_in_file": 102724,
+   "proteins": 8504
+  },
+  "human": {
+   "pairs_in_file": 325122,
+   "proteins": 15939
+  },
+  "mus-musculus": {
+   "pairs_in_file": 599488,
+   "proteins": 12167
+  },
+  "rattus-norvegicus": {
+   "pairs_in_file": 385014,
+   "proteins": 11009
+  },
+  "worm": {
+   "pairs_in_file": 379185,
+   "proteins": 7041
+  },
+  "yeast": {
+   "pairs_in_file": 1144,
+   "proteins": 1040
+  },
+  "zebrafish": {
+   "pairs_in_file": 309927,
+   "proteins": 9698
+  }
+ },
+ "keep": 10,
+ "keep_low": 5,
+ "license": "CC BY 4.0",
+ "release": [
+  "9.0"
+ ],
+ "source": "Alliance of Genome Resources, paralogy (DIOPT)",
+ "species": [
+  "fly",
+  "human",
+  "mus-musculus",
+  "rattus-norvegicus",
+  "worm",
+  "yeast",
+  "zebrafish"
+ ]
+}

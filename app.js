@@ -2056,7 +2056,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs']];   // answers first (who, where, which share), then evidence, then tools
+  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs']];   // answers first (who, where, which share), then evidence, then tools
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -2134,7 +2134,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>
     <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div>${xticks}</div>
-      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>`;
+      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
+    <div class="card" id="c-para"><div class="card-head"><div><h2>Paralogs <span class="tag-alpha">alpha</span></h2><div class="muted" id="para-sub">The paralogs load when this card scrolls into view.</div></div>
+      <div class="controls" style="margin:0"><label class="ctl" title="also list the paralogs that few prediction methods call (the Alliance's low confidence)"><input type="checkbox" id="para-low"> low-confidence paralogs too</label></div></div>
+      <div id="para-body"></div></div>`;
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
       const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
@@ -3354,6 +3357,36 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   cluster();
   { const card = $('#c-orth'); let started = false; const start = () => { if (!started) { started = true; orthInit(); } };   // the orthologs (other species' indexes and bundles) load when the card nears the viewport
     if (card) { new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) start(); }, { rootMargin: '300px' }).observe(card); } }
+  // Paralogs (data/para: the Alliance of Genome Resources' paralogy, DIOPT-based, build/paralogs_alliance.py): this species' genes
+  // related to this one by duplication, closest first (the Alliance's rank), with identity and similarity over the aligned length,
+  // how many methods call each and their confidence; for each, the predicted partners it shares with this protein past 10% FPR and
+  // whether the two are themselves a predicted pair. Low-confidence paralogs only when the box is ticked.
+  let PARA = null;
+  async function paraInit() {
+    const sub = $('#para-sub'), host = $('#para-body'), low = $('#para-low'); if (!host) return;
+    if (!PARA) { let man = null, sh = null, E = null;
+      try { [man, sh] = await Promise.all([getJSON('data/para/manifest.json'), getJSON(`data/para/${sp.id}/${P.key.slice(-2).toLowerCase()}.json`).catch(() => ({}))]); } catch (e) { man = null; }
+      if (gone()) return;
+      if (!man || !(man.species || []).includes(sp.id)) { sub.textContent = `No paralog table for ${sp.reg.label}: the Alliance of Genome Resources covers human, mouse, rat, zebrafish, fly, C. elegans and yeast.`; low.closest('label').hidden = true; return; }
+      try { E = await edges(sp, B.setId); } catch (e) { E = null; }
+      if (gone()) return;
+      const part = (i) => new Set([...((E && E.adj.get(i)) || new Map())].filter(([j, e]) => j !== i && e.best >= CUT[10]).map(([j]) => j)), mine = P.i != null ? part(P.i) : new Set();
+      PARA = { man, mine, rows: ((sh || {})[P.key] || []).map(([k2, rank, id, sim, len, meth, conf]) => { const r = sp.byKey.get(k2), theirs = r ? part(r.i) : null, pe = r && E && P.i != null ? (E.adj.get(P.i) || new Map()).get(r.i) : null;
+        return { k2, rank, id, sim, len, meth, conf, r, shared: theirs ? [...theirs].filter((j) => mine.has(j)).length : null, theirs: theirs ? theirs.size : null, pair: pe && pe.best >= CUT[10] ? pe.best : null }; }) }; }
+    const all = PARA.rows, nLow = all.filter((x) => !x.conf).length, rows = low.checked ? all : all.filter((x) => x.conf);
+    low.closest('label').hidden = !nLow;
+    sub.innerHTML = `${esc(sp.reg.label)} genes related to ${esc(P.gene)} by duplication, closest first: <a href="https://www.alliancegenome.org" target="_blank" rel="noopener">Alliance of Genome Resources</a> paralogy (DIOPT, release ${esc((PARA.man.release || []).join(', '))}, ${esc(PARA.man.license || 'CC BY 4.0')}). Shared partners: predicted partners of both past 10% FPR${B.setId ? ' in this scope' : ''}.`;
+    if (!rows.length) { host.innerHTML = `<p class="muted" style="margin:6px 0 0">${all.length ? `No high- or moderate-confidence paralogs of ${esc(P.gene)}; tick “low-confidence paralogs too” for ${fmtInt(nLow)} more.` : `No paralogs of ${esc(P.gene)} in the Alliance set.`}</p>`; return; }
+    const CONFW = ['low', 'moderate', 'high'];
+    host.innerHTML = `<div class="tbl-wrap"><table class="pt compact para-tbl"><thead><tr><th>Paralog</th><th class="num" title="identical residues over the aligned length">Identity</th><th class="num" title="similar residues over the aligned length">Similarity</th><th class="num">Aligned</th><th class="num" title="how many of the Alliance's prediction methods call the pair">Methods</th><th>Confidence</th><th class="num" title="predicted partners of both proteins past 10% FPR; the link draws them">Shared partners</th><th class="num" title="the two proteins as a predicted pair past 10% FPR: its best iLIS">As a pair</th></tr></thead><tbody>`
+      + rows.map((x) => `<tr${x.conf ? '' : ' class="para-low"'}><td>${x.r ? `<a href="#/${sp.id}/${esc(x.k2)}">${esc(x.r.gene)}</a>${x.r.name ? ` <span class="muted">${esc(short(x.r.name))}</span>` : ''}` : `${esc(x.k2)} <span class="muted">not in the Atlas index</span>`}</td>`
+        + `<td class="num">${x.id}%</td><td class="num">${x.sim}%</td><td class="num">${fmtInt(x.len)} aa</td><td class="num">${x.meth}</td><td>${CONFW[x.conf]}</td>`
+        + `<td class="num">${x.shared == null ? '–' : x.shared ? `<a href="#/${sp.id}/network?ids=${encodeURIComponent(`${P.key},${x.k2}`)}&add=link&hops=1&cut=10" title="draw ${esc(P.gene)}, ${esc(x.r.gene)} and the partners they share">${fmtInt(x.shared)}</a> <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>` : `0 <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>`}</td>`
+        + `<td class="num">${x.pair != null ? `<a href="#/${sp.id}/${esc(P.key)}/${esc(x.k2)}"><span class="para-ilis">iLIS </span>${x.pair.toFixed(3)}</a>` : '–'}</td></tr>`).join('') + '</tbody></table></div>'
+      + `<p class="muted" style="margin:6px 0 0;font-size:12.5px">Shared partners: the number both have, of ${esc(P.gene)}'s ${fmtInt(PARA.mine.size)} and the paralog's own count past 10% FPR.</p>`;
+  }
+  { const card = $('#c-para'); let started = false; const start = () => { if (!started) { started = true; paraInit(); } };   // the paralog table and the edge list load when the card nears the viewport
+    if (card) { new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) start(); }, { rootMargin: '300px' }).observe(card); $('#para-low').onchange = () => { if (PARA) paraInit(); }; } }
   let rsz, rszW = window.innerWidth; window.onresize = () => { if (window.innerWidth === rszW) return; rszW = window.innerWidth; clearTimeout(rsz); rsz = setTimeout(() => { if (clustered()) renderSites(); drawFreq(); drawHeatmap(); drawScatter(); const rb = $('#res-body'); if (rb && rb._redraw) rb._redraw(); }, 150); };
 }
 
