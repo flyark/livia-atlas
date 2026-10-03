@@ -1717,6 +1717,19 @@ function mcl(n, edges, inflation = 2, iters = 100) {
   M.forEach((c, j) => { for (const [i, x] of c) if (x > 1e-4) { const a = find(i), b = find(j); if (a !== b) p[Math.max(a, b)] = Math.min(a, b); } });   // a protein joins the attractors its walk ends in
   return bySize(n, find);
 }
+// The community menu every network card offers (the network builder adds finer settings): Leiden, Louvain, MCL or connected
+// parts, pairs weighted by best iLIS, and one seed for the visiting order and the layout's start (0: the fixed ones).
+const COMM_OPTS = [['leiden', 'Leiden'], ['comm', 'Louvain'], ['mcl', 'MCL'], ['cc', 'connected parts']];
+const communitiesBy = (m, n, E, seed = 0) => (m === 'cc' ? components(n, E) : m === 'mcl' ? mcl(n, E) : (m === 'leiden' ? leiden : louvain)(n, E, 1, seed ? seededRandom(seed) : null));
+const commCtl = (id, m, seed) => `<label class="ctl" title="groups of proteins predicted to pair with each other more than with the rest: Leiden, Louvain, MCL (Markov clustering) or the connected parts, pairs weighted by best iLIS">Communities <select id="${id}-cm">${[['', 'none'], ...COMM_OPTS].map(([v, l]) => `<option value="${v}"${v === m ? ' selected' : ''}>${l}</option>`).join('')}</select></label>`
+  + `<span class="ctl" title="0: the fixed visiting order and starting places; any other number gives another order and arrangement, the same every time for the same number">Seed <input type="number" id="${id}-seed" min="0" max="999999" step="1" value="${seed}" style="width:76px" aria-label="Seed"><button class="btn seed-new" id="${id}-seed-new" type="button" aria-label="New seed" title="a new random seed">↻</button></span>`;
+function bindCommCtl(id, onChange) {   // the menu and the seed box redraw (a typed seed after a pause); ↻ draws a new seed. Returns the current choice
+  const sel = $(`#${id}-cm`), box = $(`#${id}-seed`); let t = 0;
+  sel.onchange = () => onChange(); box.oninput = () => { const v = parseInt(box.value, 10); if (box.value.trim() !== '' && !(v >= 0 && v <= 999999)) return; clearTimeout(t); t = setTimeout(onChange, 400); };
+  $(`#${id}-seed-new`).onclick = () => { box.value = 1 + Math.floor(Math.random() * 999998); onChange(); };
+  return () => ({ m: sel.value, seed: Math.max(0, parseInt(box.value, 10) || 0) });
+}
+const commWord = (m, n) => (m === 'cc' ? `part ${n}` : `community ${n}`);
 // Communities of a small network by Louvain (modularity, resolution 1): nodes 0..n-1, edges [u, v, weight]. Deterministic
 // (nodes visited in index order, or in a seeded order with rand), so the same network always gives the same grouping. Returns
 // a community index per node, communities numbered by size, largest first; isolated nodes get their own.
@@ -2108,8 +2121,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
-        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}</div></div>
-      <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color. Edges between partners join partners
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}${commCtl('net', '', 0)}</div></div>
+      <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color (or, with Communities, the color of the group they form through their pairs with each other). Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open. <a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a><span id="net-open"></span></p>
       <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
       <div class="netkey"><div class="kbkey" id="net-kbkey"></div>
@@ -3262,6 +3275,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
   io.observe(netBox);
   $('#net-n').onchange = drawNet; $('#net-cut').onchange = drawNet;
+  const netComm = bindCommCtl('net', () => drawNet());
   async function drawNet() {
     let E, K; try { [E, K] = await Promise.all([edges(sp, B.setId), reported(sp)]); } catch (e) { if (!gone()) netBox.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     if (gone()) return;
@@ -3302,8 +3316,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', (d) => (d.q ? 4 : 3)).attr('stroke-linejoin', 'round');
     node.filter((d) => d.q).raise();
     const placeLabels = liftLabels(g, node);
+    const C = netComm(), pix = new Map(nodes.slice(1).map((d, n) => [d.id, n])), cgrp = new Map(), csize = new Map(); let big = [];   // communities among the partners, through their pairs with each other (every partner pairs with the center)
+    if (C.m) { const cm = communitiesBy(C.m, nodes.length - 1, links.filter((l) => !l.q).map((l) => [pix.get(l.source), pix.get(l.target), l.best]), C.seed); cm.forEach((x) => csize.set(x, (csize.get(x) || 0) + 1));
+      big = [...csize].filter(([, z]) => z >= 2).sort((a, b) => b[1] - a[1] || a[0] - b[0]).map(([x]) => x); nodes.slice(1).forEach((d, n) => { const b = big.indexOf(cm[n]); if (b >= 0) cgrp.set(d.id, b); }); }
     NET = { link, restyle, recolor() {
       const k = M ? M.k : 1;
+      if (C.m) {   // partners by community: the groups of two or more, largest first
+        circle.attr('fill', (d) => (d.q ? '#1A5276' : cgrp.has(d.id) && cgrp.get(d.id) < TAB10.length ? TAB10[cgrp.get(d.id)] : '#C3CCD6'));
+        $('#net-legend').innerHTML = (big.length ? big.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(x))})</span>`).join('') + (big.length > TAB10.length ? `<span class="muted">+${big.length - TAB10.length} smaller</span>` : '') : '<span class="muted">no group of two or more partners pairing with each other</span>')
+          + '<span><i style="background:#C3CCD6;border-radius:50%"></i>in no group</span>';
+        return; }
       circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
       const used = [...new Set(nodes.filter((d) => !d.q).map((d) => partnerCluster.get(d.row.key)).filter(Boolean))].sort((a, b) => a - b);
       $('#net-legend').innerHTML = (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '') + (homo.size ? homoKey(homo.size) : '');
@@ -3314,6 +3336,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       .on('click', (ev, d) => { if (!d.q && !ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}${scopeQ}`; });
     const q = nodes[0]; q.fx = W / 2; q.fy = H / 2;
     const R = Math.min(W, H) * 0.42;
+    if (C.seed) { const sr = seededRandom(C.seed); nodes.slice(1).forEach((d) => { const t = sr() * 2 * Math.PI, rr = R * (0.4 + 0.6 * sr()); d.x = W / 2 + rr * Math.cos(t); d.y = H / 2 + rr * Math.sin(t); }); }   // a seed: seeded starting places
     const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => (l.q ? R * (1.15 - 0.55 * Math.min(1, l.best)) : 60)).strength((l) => (l.q ? 0.5 : 0.35)))
       .force('charge', d3.forceManyBody().strength(-340)).force('collide', d3.forceCollide().radius((d) => r(d) + 14)).force('x', d3.forceX(W / 2).strength(0.04)).force('y', d3.forceY(H / 2).strength(0.05))
       .on('tick', () => { placeLabels(); for (const sel of [link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
@@ -3490,6 +3513,7 @@ async function viewVirus(spId, taxid) {
   let text; try { text = await getText(sp.base + `pairs/${v.taxid}.tsv`); } catch (e) { if (!stale(gen)) app.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
   if (stale(gen)) return;
   const q = hashPath().q; let cut = [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, topk = q.has('top') ? Math.max(0, +q.get('top') || 0) : 0;   // defaults: 5% FPR, every edge
+  const cm0 = q.has('cm') ? (COMM_OPTS.some(([x]) => x === q.get('cm')) ? q.get('cm') : '') : 'comm', seed0 = Math.min(999999, Math.max(0, parseInt(q.get('seed'), 10) || 0));   // communities: Louvain unless the link says otherwise (cm=none: none)
   const R = (i) => sp.rows[i], lines = text.trim().split('\n'), head = lines[0].split('\t');
   const DUPG = (() => { const c = new Map(); for (const i of v.members) c.set(R(i).gene, (c.get(R(i).gene) || 0) + 1); return new Set([...c].filter(([, n]) => n > 1).map(([g]) => g)); })();
   const G = (i) => (DUPG.has(R(i).gene) ? `${R(i).gene} · ${R(i).key}` : R(i).gene);   // a name that repeats within the virus (three ORF1s) carries its accession
@@ -3515,9 +3539,9 @@ async function viewVirus(spId, taxid) {
       <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR${cutNote(10)}</span></div>
         <div class="kpi"><b>${fmtInt(v.mpos)}</b><span>homodimers past 10% FPR${cutNote(10)}</span></div><div class="kpi"><b>${fmtInt(v.pwp)}</b><span>proteins with a partner</span></div></div></div>
     <div class="card" id="vn-card"><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label class="ctl" title="a large virus is easier to read with each protein's strongest pairs only; the pairs table lists every pair">Edges<select id="vn-top"><option value="0">all</option><option value="5">top 5 per protein</option><option value="3">top 3 per protein</option><option value="1">top 1 per protein</option></select></label>
-        <label class="ctl" title="find groups of proteins predicted to bind each other more than the rest (Louvain communities, iLIS-weighted) and lay each group out apart"><input type="checkbox" id="vn-comm" checked> Group by community</label>
+        ${commCtl('vn', cm0, seed0)}
         <div class="ctl"><span>Cutoff</span><div class="seg" id="vn-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
-      <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, shaded in gray by its iLIS (darker is higher), its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. Grouped by community, proteins predicted to bind each other more than the rest sit together, one color per group. Click a protein for its page, an edge for the pair.</p>
+      <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, shaded in gray by its iLIS (darker is higher), its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. With communities (Louvain unless you choose another method), proteins predicted to pair with each other more than with the rest sit together, one color per group; the same seed always gives the same drawing. Click a protein for its page, an edge for the pair.</p>
       <div class="net" id="vn-net"></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
     <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">≥ 10% FPR</option><option value="5">≥ 5% FPR</option><option value="1">≥ 1% FPR</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
       <div id="vm-heat" style="width:100%"></div><div class="legend" id="vm-key"></div></div>
@@ -3563,14 +3587,16 @@ async function viewVirus(spId, taxid) {
     const nodes = v.members.map((i) => ({ id: i, row: R(i) })), links = shown.map((x) => ({ source: x.a, target: x.b, best: x.best, avg: x.avg, x }));
     const r = (d) => 5 + Math.min(9, Math.sqrt(deg.get(d.id) || 0) * 1.7);
     // communities on every pair past the cutoff (not only the edges drawn); groups of three or more get a color and a place of their own
-    const idx = new Map(nodes.map((d, n) => [d.id, n])), cm = louvain(nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]));
+    const C = commNow(), grouped = !!C.m, idx = new Map(nodes.map((d, n) => [d.id, n])), cm = grouped ? communitiesBy(C.m, nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]), C.seed) : nodes.map(() => 0);
     const csize = new Map(); nodes.forEach((d, n) => { d.c = cm[n]; csize.set(d.c, (csize.get(d.c) || 0) + 1); });
-    const big = [...csize].filter(([c, sz]) => sz >= 3).map(([c]) => c).sort((a, b) => a - b), grouped = $('#vn-comm').checked;
+    const big = [...csize].filter(([c, sz]) => sz >= 3).map(([c]) => c).sort((a, b) => a - b);
     const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : grouped && big.includes(d.c) && big.indexOf(d.c) < TAB10.length ? TAB10[big.indexOf(d.c)] : '#1A5276');
     const center = new Map();   // each group's place: groups on a ring around the largest, spaced by their size
     if (grouped) { const R0 = Math.min(W, H) * 0.42; big.forEach((c, n) => { if (n === 0) center.set(c, [W / 2, H / 2]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [W / 2 + R0 * Math.cos(t), H / 2 + R0 * 0.8 * Math.sin(t)]); } }); }
     const home = (d) => center.get(d.c) || [W / 2, H / 2];
-    if (grouped) nodes.forEach((d, n) => { const [cx, cy] = home(d); d.x = cx + 30 * Math.cos(n); d.y = cy + 30 * Math.sin(n); });   // each node starts at its group's place
+    const sr = C.seed ? seededRandom(C.seed) : null;   // a seed: random starting places (near the group's place when grouped)
+    if (sr) nodes.forEach((d) => { const [cx, cy] = home(d); d.x = cx + (sr() - 0.5) * (grouped ? 90 : W * 0.8); d.y = cy + (sr() - 0.5) * (grouped ? 90 : H * 0.8); });
+    else if (grouped) nodes.forEach((d, n) => { const [cx, cy] = home(d); d.x = cx + 30 * Math.cos(n); d.y = cy + 30 * Math.sin(n); });   // each node starts at its group's place
     const rank = new Map([...nodes].sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0) || (homo.has(b.id) - homo.has(a.id))).map((d, n) => [d.id, n]));   // label priority: most partners first
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', (d) => EGRAY(d.best)).attr('stroke-width', (d) => EWID(d.best)).attr('stroke-opacity', 0.85).attr('stroke-linecap', 'round').style('cursor', 'pointer');
     link.on('mousemove', (ev, d) => showTip(`<b>${esc(d.x && G(d.x.a))}</b> × <b>${esc(d.x && G(d.x.b))}</b> · iLIS ${d.best.toFixed(3)} · ${bandLabel[bandOf(d.best)]}${Number.isFinite(d.x.iptm) ? ` · ipTM ${d.x.iptm.toFixed(2)}` : ''}<br>click for the pair`, ev.clientX, ev.clientY))
@@ -3601,7 +3627,7 @@ async function viewVirus(spId, taxid) {
       fitK = k; svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k)); });
     $('#vn-legend').innerHTML = (k ? `<span class="muted">${fmtInt(links.length)} of ${fmtInt(het.length)} edges drawn: each protein's ${k} strongest</span>` : '')
       + '<span><i style="background:linear-gradient(90deg, #C5CCD4, #1E2A38);height:4px;width:60px;border-radius:2px"></i>iLIS, 0.223 to 0.85+</span>'
-      + (grouped && big.length ? big.slice(0, TAB10.length).map((c, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>community ${n + 1} (${fmtInt(csize.get(c))})</span>`).join('') + (big.length > TAB10.length ? `<span class="muted">+${big.length - TAB10.length} smaller communities in dark blue</span>` : '') : '')
+      + (grouped && big.length ? big.slice(0, TAB10.length).map((c, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(c))})</span>`).join('') + (big.length > TAB10.length ? `<span class="muted">+${big.length - TAB10.length} smaller communities in dark blue</span>` : '') : '')
       + `${homoKey(homo.size)}<span><i style="background:#C3CCD6;border-radius:50%"></i>no partner at this cutoff (${fmtInt(v.members.filter((i) => !deg.get(i)).length)})</span>`
       + `<span class="muted">counts at the network's cutoff, ${cut}% FPR${cut !== 10 ? '; the tiles above count at 10%' : ''}</span>`;   // the network opens at 5%, the tiles keep 10%
     svgExport($('#vn-x'), `atlas_virus_${v.taxid}_network`, () => $('svg', box));
@@ -3643,7 +3669,8 @@ async function viewVirus(spId, taxid) {
   }
   $('#vn-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#vn-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); cut === 5 ? u.delete('cut') : u.set('cut', cut); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); shownPairs = 60; draw(); };
-  $('#vn-comm').onchange = () => draw();
+  const commNow = bindCommCtl('vn', () => { const c = commNow(), [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || '');   // the choice goes in the link
+    c.m === 'comm' ? u.delete('cm') : u.set('cm', c.m || 'none'); c.seed ? u.set('seed', c.seed) : u.delete('seed'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); });
   $('#vm-cs').onchange = () => draw(); $('#vm-show').onchange = () => draw();
   $('#vn-top').onchange = (e) => { topk = +e.target.value; const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); topk ? u.set('top', topk) : u.delete('top'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); };
   $('#vp-homo').onchange = () => { shownPairs = 60; tables(); };
@@ -3697,7 +3724,8 @@ async function viewNested(spId, q) {
   const gen = ROUTE, sp = await species(spId); if (stale(gen)) return;
   document.title = `Nested network · ${sp.reg.label} · LIVIA Atlas`;
   const S = { baits: q.get('baits') || '', ids: q.get('ids') || '', cut: [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 10, k: [1, 2, 3].includes(+q.get('k')) ? +q.get('k') : 2,
-    rounds: [1, 2, 3].includes(+q.get('rounds')) ? +q.get('rounds') : 3, strict: q.get('strict') === '1', para: q.get('para') === '1', hidden: false, col: null };
+    rounds: [1, 2, 3].includes(+q.get('rounds')) ? +q.get('rounds') : 3, strict: q.get('strict') === '1', para: q.get('para') === '1', hidden: false, col: null,
+    cm: COMM_OPTS.some(([x]) => x === q.get('cm')) ? q.get('cm') : '', seed: Math.min(999999, Math.max(0, parseInt(q.get('seed'), 10) || 0)) };   // communities color the proteins (columns stay rounds)
   const G = sp.manifest.keyedBy ? 'genes' : 'proteins';
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/network">Network</a> / <a href="${esc(location.hash)}">Nested</a></div>
     <div class="dshead"><h1>Nested network <span class="tag-alpha">alpha</span></h1><div class="pname">${esc(sp.reg.label)} · baits, then the candidates predicted to join them, round by round</div></div>
@@ -3715,7 +3743,7 @@ async function viewNested(spId, q) {
       <p class="muted" id="ns-status" style="margin:10px 0 0"></p><div class="miss" id="ns-miss" hidden></div></div>
     <div class="card" id="ns-card" hidden><div class="card-head"><h2>Rounds</h2></div><div class="tbl-wrap"><table class="pt compact" id="ns-rounds-t"></table></div><p class="muted" id="ns-base" style="margin:8px 0 0"></p>
       <p class="legend-text">p: the chance of at least that many connections by chance, from the candidate's own share of partners past the cutoff and the accepted network's size (m). Expected false positives: the sum of those chances over every candidate tested in the round; since each candidate's share of partners past the cutoff includes its real partners, this errs high (compare the random networks below). The cutoffs are benchmarked on the top-ranked model's iLIS while an edge takes the best iLIS over every model, so the nominal false positive rate is a lower bound. m is how many of the accepted network the candidate was folded with (from the index of tested pairs; for a species without it, the baits in round 1 and the network's size after).</p></div>
-    <div class="card" id="ns-ncard" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label><input type="checkbox" id="ns-hidden"> show hidden candidates</label>
+    <div class="card" id="ns-ncard" hidden><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label><input type="checkbox" id="ns-hidden"> show hidden candidates</label>${commCtl('ns', S.cm, S.seed)}
       <button class="btn" id="ns-csv" type="button">↓ CSV</button><button class="btn" id="ns-graphml" type="button">↓ GraphML</button></div></div>
       <p class="muted" style="margin:2px 0 10px">Columns by round: baits at the left, then each round's accepted ${G}. An edge is a predicted pair past the cutoff, colored by the round of the later ${G.slice(0, -1)}. Click a ${G.slice(0, -1)} for its page, an edge for the pair.</p>
       <div class="net" id="ns-net"></div><div class="legend" id="ns-legend"></div><div id="ns-x"></div></div>
@@ -3727,6 +3755,8 @@ async function viewNested(spId, q) {
   if (!(sp.manifest.files || {}).paralogs) $('#ns-para-wrap').style.display = 'none';
   ['#ns-k', '#ns-rounds', '#ns-strict', '#ns-para'].forEach((s) => { $(s).onchange = () => { if (res) run(); }; });
   $('#ns-hidden').onchange = () => { if (last) drawNet(last); };
+  const nsComm = bindCommCtl('ns', () => { const c = nsComm(); S.cm = c.m; S.seed = c.seed; const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || '');   // in the link too
+    S.cm ? u.set('cm', S.cm) : u.delete('cm'); S.seed ? u.set('seed', S.seed) : u.delete('seed'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); if (last) drawNet(last); });
   $('#ns-go').onclick = () => run();
   $('#ns-filebtn').onclick = () => $('#ns-file').click();
   const nsTable = tableInput({ card: $('#ns-in'), file: $('#ns-file'), sheetWrap: $('#ns-sheet-wrap'), sheet: $('#ns-sheet'), onStatus: status,
@@ -3741,6 +3771,7 @@ async function viewNested(spId, q) {
     const B = res1(Rb.toks), C = res1(Rc.toks); S.k = +$('#ns-k').value; S.rounds = +$('#ns-rounds').value; S.strict = $('#ns-strict').checked; S.para = $('#ns-para').checked;
     const cands = C.ok.filter((i) => !B.ok.includes(i));
     const qs = new URLSearchParams({ baits: B.ok.map((i) => sp.rows[i].key).join(','), cut: S.cut, k: S.k, rounds: S.rounds }); if (S.strict) qs.set('strict', '1'); if (S.para) qs.set('para', '1'); if (Rc.toks.length <= 400) qs.set('ids', Rc.toks.join(','));
+    if (S.cm) qs.set('cm', S.cm); if (S.seed) qs.set('seed', S.seed);
     history.replaceState(null, '', `#/${sp.id}/nested?${qs}`);
     { const mbox = $('#ns-miss'), mtok = String((+mbox.dataset.t || 0) + 1), miss = [...B.miss, ...C.miss]; mbox.dataset.t = mtok; mbox.hidden = true;   // why names were not found, as in the builder
       if (miss.length) explainMissing(sp, miss).then((L) => { if (mbox.dataset.t !== mtok || !L.length) return; mbox.innerHTML = `<b>${fmtInt(new Set(miss).size)} name${new Set(miss).size === 1 ? '' : 's'} not used${L.head ? `: ${L.head}` : ''}</b>` + L.map((x) => `<div>${x}</div>`).join(''); mbox.hidden = false; }); }
@@ -3791,6 +3822,9 @@ async function viewNested(spId, q) {
     const W = box.clientWidth, H = box.clientHeight, nc = Math.max(...ids.map(col)) + 1, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
     let lab = null; svg.call(d3.zoom().scaleExtent([0.2, 6]).on('zoom', (ev) => { g.attr('transform', ev.transform); if (lab) lab.attr('display', (i) => (ev.transform.k >= 1.6 || !many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01) ? null : 'none')).attr('font-size', 10.5 / Math.max(1, ev.transform.k)); }));   // zoomed in, every label
     const links = []; for (const a of ids) for (const [b, e] of E.adj.get(a) || []) if (b > a && set.has(b) && e.best >= o.c) links.push({ a, b, e, r: Math.max(col(a), col(b)) });
+    const cgrp = new Map(), csz = new Map(); let cbig = [];   // Communities: the proteins filled by community (groups of three or more), outlined by round
+    if (S.cm) { const ix = new Map(ids.map((i, n) => [i, n])), cm = communitiesBy(S.cm, ids.length, links.map((l) => [ix.get(l.a), ix.get(l.b), l.e.best]), S.seed); cm.forEach((x) => csz.set(x, (csz.get(x) || 0) + 1));
+      cbig = [...csz].filter(([, z]) => z >= 3).sort((x, y) => y[1] - x[1] || x[0] - y[0]).map(([x]) => x); ids.forEach((i, n) => { const b = cbig.indexOf(cm[n]); if (b >= 0 && b < TAB10.length) cgrp.set(i, b); }); }
     const byCol = d3.range(nc).map((k) => ids.filter((i) => col(i) === k)), y = new Map();
     byCol.forEach((xs) => xs.forEach((i, n) => y.set(i, (n + 1) / (xs.length + 1))));
     const nbs = new Map(ids.map((i) => [i, []])); for (const l of links) { nbs.get(l.a).push(l.b); nbs.get(l.b).push(l.a); }
@@ -3803,13 +3837,14 @@ async function viewNested(spId, q) {
       .on('mousemove', (ev, d) => showTip(`<b>${esc(gname(d.a))}</b> × <b>${esc(gname(d.b))}</b> · iLIS ${d.e.best.toFixed(3)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip)
       .on('click', (ev, d) => { hideTip(); location.hash = `#/${sp.id}/${sp.rows[d.a].key}/${sp.rows[d.b].key}`; });
     const many = ids.length > 90, node = g.append('g').selectAll('g').data(ids).join('g').attr('transform', (i) => `translate(${X(i)},${Y(i)})`).style('cursor', 'pointer');
-    node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : RC[Math.min(col(i), RC.length - 1)]))
+    node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : S.cm ? (cgrp.has(i) ? TAB10[cgrp.get(i)] : '#C3CCD6') : RC[Math.min(col(i), RC.length - 1)]))
       .attr('stroke', (i) => RC[Math.min(col(i), RC.length - 1)]).attr('stroke-width', 1.6).attr('stroke-dasharray', (i) => (res.info.get(i) && res.info.get(i).hidden ? '2 2' : null));
     lab = node.append('text').attr('display', (i) => (!many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01) ? null : 'none')).text(gname).attr('x', 9).attr('dy', '0.32em').attr('font-size', 10.5)
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', (i) => (col(i) === 0 ? 700 : 600)).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3);
     node.on('mousemove', (ev, i) => { const x = res.info.get(i); showTip(`<b>${esc(gname(i))}</b> · ${col(i) === 0 ? 'bait' : `${x.hidden ? 'hidden, ' : ''}round ${x.r}`}${x ? `<br>${fmtInt(x.n)} connection${x.n === 1 ? '' : 's'} into the network · p ${x.p.toExponential(1)} · q ${x.q.toFixed(3)}` : ''}`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, i) => { location.hash = `#/${sp.id}/${sp.rows[i].key}`; });
-    $('#ns-legend').innerHTML = RC.slice(0, nc).map((cc, k) => `<span><i style="background:${cc};border-radius:50%"></i>${k === 0 ? 'baits' : `round ${k}`} (${fmtInt(byCol[k].filter((i) => !(res.info.get(i) || {}).hidden).length)})</span>`).join('')
+    $('#ns-legend').innerHTML = RC.slice(0, nc).map((cc, k) => `<span><i style="${S.cm ? `background:#fff;border:2px solid ${cc}` : `background:${cc}`};border-radius:50%"></i>${k === 0 ? 'baits' : `round ${k}`} (${fmtInt(byCol[k].filter((i) => !(res.info.get(i) || {}).hidden).length)})</span>`).join('')
+      + (S.cm ? cbig.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(S.cm, n + 1)} (${fmtInt(csz.get(x))})</span>`).join('') + `<span><i style="background:#C3CCD6;border-radius:50%"></i>in no ${S.cm === 'cc' ? 'part' : 'community'} of three or more</span><span class="muted">fill: ${S.cm === 'cc' ? 'connected part' : 'community'}; outline and column: round</span>` : '')
       + (showH && [...res.info.values()].some((x) => x.hidden) ? '<span><i style="background:#fff;border:1.5px dashed #5B6573;border-radius:50%"></i>hidden: below the rule</span>' : '') + (ids.length >= 400 ? '<span class="muted">capped at 400, kept by p, then connections</span>' : '');
     svgExport($('#ns-x'), `atlas_${sp.id}_nested`, () => $('svg', box));
   }
