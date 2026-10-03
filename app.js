@@ -3983,6 +3983,7 @@ async function viewNetwork(spId, q) {
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
     mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, minq: q.get('minq') === '1', grp: /^(comm|leiden|mcl|cc|col:.+)$/.test(q.get('grp') || '') ? q.get('grp') : '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [],   // exp: proteins expanded by a click (keys), in the order clicked
     lseed: numIn(q.get('lseed'), 0, 999999, 0, true), liter: numIn(q.get('iters'), 0, 5000, 0, true), lspace: numIn(q.get('space'), 0.3, 3, 1), lrep: numIn(q.get('rep'), 0.2, 5, 1), lwt: q.get('wpull') !== '0',   // layout: seed (0: the fixed start), rounds (0: the layout's own number), spacing, repulsion, stronger pairs closer
+    xsp: /^(all|[a-z0-9-]+)$/.test(q.get('xsp') || '') ? q.get('xsp') : '', xo: q.has('xo') ? (['never', 'below'].includes(q.get('xo')) ? q.get('xo') : '') : 'never',   // orthologs: the species checked, and the ortholog-only pairs drawn (dashed)
     infl: numIn(q.get('infl'), 1.2, 6, 2), cwt: ['iptm', 'eq'].includes(q.get('cw')) ? q.get('cw') : 'ilis', cruns: numIn(q.get('runs'), 1, 50, 1, true), cseed: numIn(q.get('cseed'), 0, 999999, 0, true), cmin: numIn(q.get('cmin'), 2, 50, 3, true) };   // communities: MCL inflation, pair weight, runs kept by modularity, seed (0: node order), smallest outlined
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
@@ -4008,7 +4009,9 @@ async function viewNetwork(spId, q) {
       <div class="optgrid">
         <span class="optlab">Pairs</span><div class="controls">${edgeCtl('nw')}
           <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
-          <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button></div>
+          <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button>
+          <span class="ctl" id="nw-xsp-wrap" hidden><label class="ctl" title="check every pair against the predictions between the two proteins' orthologs in other species (Alliance stringent orthologs, the same iLIS cutoff): a pair predicted here and between the orthologs is conserved, drawn with a gold halo">Orthologs in <select id="nw-xsp"></select></label>
+            <label class="ctl" id="nw-xo-wrap" title="also draw, dashed in teal, the pairs predicted between the orthologs that this species has no prediction for">+ ortholog-only pairs <select id="nw-xo"><option value="">off</option><option value="never">where never folded here</option><option value="below">also where scored below the cutoff here</option></select></label></span></div>
         <span class="optlab">Proteins</span><div class="controls"><label class="ctl" id="nw-ncol-wrap" style="display:none" title="color the proteins by a column of the table you gave">Color proteins by<select id="nw-ncol"></select></label>
           <label class="ctl" title="hide added partners with fewer predicted pairs than this in the drawing (repeated until every one left has at least this many); proteins-of-interest stay unless the box beside it is ticked">Min. pairs <select id="nw-mind">${[0, 1, 2, 3].map((n) => `<option value="${n}"${n === S.mind ? ' selected' : ''}>${n ? `${n}+` : 'any'}</option>`).join('')}</select></label><label class="ctl" title="apply Min. pairs to your proteins-of-interest too, not only to the added partners"><input type="checkbox" id="nw-minq"${S.minq ? ' checked' : ''}> also proteins-of-interest</label>
           <label class="ctl" title="leave out every protein with no predicted pair in the drawing, proteins-of-interest too; they are listed in the status line"><input type="checkbox" id="nw-lone"${S.lone ? ' checked' : ''}> hide proteins with no pair</label></div>
@@ -4050,7 +4053,7 @@ async function viewNetwork(spId, q) {
   // The settings in the page's link: only those away from their defaults (all of them with all = true, for the settings file)
   const params = (all = false) => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }), put = (k, v, def) => { if (all || v !== def) qs.set(k, typeof v === 'boolean' ? (v ? '1' : '0') : v); };
     if (!S.kAuto && (all || S.add === 'top' || S.exp.length)) qs.set('k', S.k); qs.set('cut', S.cut); if (all || S.cut === 'c') qs.set('cutv', S.cutv); put('iptm', S.iptm, 0); if (all || S.add === 'link') qs.set('hops', S.hops);
-    put('mind', S.mind, 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'add');
+    put('mind', S.mind, 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); put('xsp', S.xsp, ''); if (S.xsp || all) put('xo', S.xo, 'never'); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'add');
     put('lay', S.lay, 'force'); put('lseed', S.lseed, 0); put('iters', S.liter, 0); put('space', S.lspace, 1); put('rep', S.lrep, 1); put('wpull', S.lwt, true);
     put('grp', S.grp, ''); put('res', S.res, 1); put('infl', S.infl, 2); put('cw', S.cwt, 'ilis'); put('runs', S.cruns, 1); put('cseed', S.cseed, 0); put('cmin', S.cmin, 3);
     return qs; };
@@ -4254,7 +4257,16 @@ async function viewNetwork(spId, q) {
       for (let x = 0; x < ks.length; x++) for (let y = x + 1; y < ks.length; y++) { const a = Math.min(ks[x], ks[y]), b = Math.max(ks[x], ks[y]), n = K.pubs(a, b), gg = K.gen(a, b);
         if ((n || gg) && !has.has(a * sp.rows.length + b)) extra.push({ source: a, target: b, pubs: n, gen: gg, unpred: true }); } }
     const Qin = [...Q].filter((i) => keep.has(i)), added = keep.size - Qin.length, alone = Qin.filter((i) => !links.some((l) => l.source === i || l.target === i)).map(gname);
-    status(`${fmtInt(Q.size)} proteins-of-interest${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}`
+    let XO = null, nCons = 0, xoNote = ''; const xo = [];   // orthologs in other species: conserved pairs (gold halo) and ortholog-only pairs (teal, dashed)
+    if (S.xsp && keep.size) { status('Reading the predictions between the orthologs in other species…'); try { XO = await orthPairs([...keep], c); } catch (e) { XO = null; xoNote = ` · the orthologs' predictions did not load (${esc(e.message)})`; } if (stale(gen)) return;
+      if (XO) { for (const l of links) { const ev = XO.ev.get(pk(l.source, l.target)); if (ev) { l.cons = ev; nCons++; } }
+        if (S.xo) { const has = new Set(links.map((l) => pk(l.source, l.target)));
+          if (!S.set && TPN == null) { try { TPN = await tested(sp); } catch (e) { TPN = null; } if (stale(gen)) return; }
+          for (const [k, ev] of XO.ev) { if (has.has(k)) continue; const [a, b] = k.split(',').map(Number), folded = TPN && !S.set ? TPN.has(a, b) : null;
+            if (S.xo === 'never' && folded !== false) continue; xo.push({ source: a, target: b, xo: ev, folded, unpred: true }); }
+          if (S.xo === 'never' && S.set) xoNote = ' · ortholog-only pairs need every screen (whether a pair was folded is known for all screens together)'; }
+        xoNote = ` · ${fmtInt(nCons)} of the predicted pairs conserved (also predicted between the orthologs in ${XO.names})${xo.length ? `, plus ${fmtInt(xo.length)} predicted only between the orthologs (dashed teal)` : ''}${XO.skipped ? `; ${XO.skipped}` : ''}` + xoNote; } }
+    status(`${fmtInt(Q.size)} proteins-of-interest${added ? `, ${fmtInt(added)} added partner${added === 1 ? '' : 's'}` : ''} · ${fmtInt(links.length)} predicted pair${links.length === 1 ? '' : 's'} past iLIS ${c} (${cutLab()})${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}${xoNote}`
       + `${K ? ` · ${fmtInt(nRep)} of them reported in BioGRID ${K.release}${extra.length ? `, plus ${fmtInt(extra.length)} reported pair${extra.length === 1 ? '' : 's'} not predicted (dashed)` : ''}` : K === null ? ' · no BioGRID records for this species' : ''}`
       + `${missing.length ? ` · not in the Atlas index: ${esc(missing.slice(0, 30).join(', '))}${missing.length > 30 ? ` and ${fmtInt(missing.length - 30)} more` : ''}${missing.some((t) => /^ENS[A-Z]*[GTP]\d{6,}/i.test(t) || /^\d+$/.test(t)) ? ' (Ensembl and Entrez IDs are not in the Atlas index; use gene symbols or UniProt accessions)' : ''}` : ''}${alone.length && links.length ? ` · no pair here for ${esc(alone.slice(0, 30).join(', '))}${alone.length > 30 ? ` and ${fmtInt(alone.length - 30)} more` : ''}` : ''}${keep.size >= CAP ? ` · capped at ${CAP} proteins; open it in LIVIA Network for more` : ''}${expNote}`
       + `<br><span class="muted">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} proteins drawn` : ''}${tableNote ? ` · ${esc(tableNote)}` : ''}${pruned ? ` · ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${lone ? ` · ${fmtInt(lone)} protein${lone === 1 ? '' : 's'} with no pair hidden` : ''}${S.add === 'link' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: fewer partners in between, a higher Min. pairs or a stricter cutoff thins it` : ''}${hopCut ? ' · the search for linking partners stopped at the nearest ones in this dense network' : ''}${autoNote ? ` · ${esc(autoNote)}` : ''}</span>`);
@@ -4263,7 +4275,27 @@ async function viewNetwork(spId, q) {
     if (!links.length) { $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pairs). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); return; }   // the matrix still shows the pairs below this cutoff
     if (K === null) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
     if (TPN) for (const d of extra) { const k = fkey(d.source, d.target); if (!FOLD.has(k)) FOLD.set(k, TPN.has(d.source, d.target) ? { st: 'low', best: TPN.score ? TPN.score(d.source, d.target) : NaN } : { st: 'none' }); }   // the index says folded or not; the score comes on hover
-    graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed);
+    graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed, xo, XO);
+  }
+  // Pairs predicted between orthologs (data/orth: the Alliance's stringent orthologs; each species' own edge list, past the same
+  // iLIS cutoff, one calibration for all). For the drawn proteins: pair key → [{ y: species, a2, b2 (names), k2 (that pair's
+  // link), best }], one entry per species, its best ortholog pair. Species tables are read once and kept.
+  const pk = (a, b) => (a < b ? `${a},${b}` : `${b},${a}`);
+  async function orthPairs(ids, c) {
+    const have = await orthSpecies(), ys = (S.xsp === 'all' ? [...have] : [S.xsp]).filter((y) => y !== sp.id && have.has(y) && (REG.species || []).some((s) => s.id === y));
+    const pres = [...new Set(ids.map((i) => sp.rows[i].key.slice(-2).toLowerCase()))], sh = new Map(await Promise.all(pres.map(async (p) => [p, await orthShard(sp.id, p, true)])));
+    const orthOf = (i) => { const k = sp.rows[i].key, s = sh.get(k.slice(-2).toLowerCase()); return (s && s[k]) || {}; };
+    const ev = new Map(), used = [], failed = [];
+    for (const y of ys) {
+      let spY, EY; try { spY = await species(y); EY = await edges(spY, ''); } catch (e) { failed.push(y); continue; }
+      const inv = new Map();   // that species' protein → the drawn proteins it is an ortholog of
+      for (const i of ids) for (const [k2] of orthOf(i)[y] || []) { const r = spY.byKey.get(k2); if (!r) continue; if (!inv.has(r.i)) inv.set(r.i, []); inv.get(r.i).push(i); }
+      if (inv.size) used.push(y);
+      for (const [ya, as] of inv) for (const [yb, e] of EY.adj.get(ya) || []) { if (yb <= ya || e.best < c) continue; const bs = inv.get(yb); if (!bs) continue;
+        for (const a of as) for (const b of bs) { if (a === b) continue; const k = pk(a, b); if (!ev.has(k)) ev.set(k, []); const L = ev.get(k), x = L.find((z) => z.y === y), v = { y, a2: spY.rows[ya].gene, b2: spY.rows[yb].gene, k2: `${spY.rows[ya].key}/${spY.rows[yb].key}`, best: e.best };
+          if (!x) L.push(v); else if (e.best > x.best) Object.assign(x, v); } } }
+    const lab = (y) => spName(((REG.species || []).find((s) => s.id === y) || {}).label || y);
+    return { ev, ys: used, names: used.length ? used.map(lab).join(', ') : 'no species', lab, skipped: failed.length ? `the predictions of ${failed.map(lab).join(', ')} did not load` : '' };
   }
   let heatArgs = null, heatSeen = false;
   new IntersectionObserver((es) => { if (!heatSeen && heatArgs && es.some((e) => e.isIntersecting)) { heatSeen = true; heatmap(...heatArgs); } }, { rootMargin: '400px' }).observe($('#nw-heat-wrap'));
@@ -4311,7 +4343,7 @@ async function viewNetwork(spId, q) {
       if (Math.abs(f - (box.__tick || tick)) < 0.5) return; box.__tick = f; P.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f }); });
     box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; if (e2.metaKey || e2.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
   }
-  function graph(nodes, links, extra = [], seed = null) {
+  function graph(nodes, links, extra = [], seed = null, xo = [], XO = null) {
     const box = $('#nw-net'); box.innerHTML = '<svg></svg>';
     const W = box.clientWidth, H = box.clientHeight, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
     let label = null, rank = null, fitK = seed ? seed.t.k : 1;   // labels: set once the nodes are drawn; relabel() shows more as the view zooms in
@@ -4359,6 +4391,8 @@ async function viewNetwork(spId, q) {
       const tx = hullTxt.filter((kk) => kk === k).attr('display', h ? null : 'none');
       if (h) { const top = h.reduce((a, b) => (b[1] < a[1] ? b : a)); const cx = d3.mean(h, (p) => p[0]); tx.attr('x', cx).attr('y', top[1] - 6); } }); };
     const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
+    const halo = g.append('g').style('pointer-events', 'none').selectAll('line').data(links.filter((l) => l.cons)).join('line').attr('stroke', '#E0A526').attr('stroke-opacity', 0.5).attr('stroke-width', (d) => EWID(d.best) + 7).attr('stroke-linecap', 'round');   // conserved: a gold halo under the edge
+    const xol = g.append('g').selectAll('line').data(xo).join('line').attr('stroke', '#1F8A80').attr('stroke-opacity', 0.85).attr('stroke-width', 1.6).attr('stroke-dasharray', '6 3').style('cursor', 'pointer');   // predicted only between the orthologs
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && passE(e); }).map((d) => d.id));
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
@@ -4369,12 +4403,16 @@ async function viewNetwork(spId, q) {
       dash.attr('stroke-dasharray', (d) => ((fo(d) || {}).st === 'none' ? '1.2 4.5' : '5 4')).attr('stroke-opacity', (d) => ((fo(d) || {}).st === 'none' ? 0.55 : 0.75));
       const nf = (s) => shownExtra.filter((d) => (fo(d) || {}).st === s).length, nck = shownExtra.filter((d) => fo(d)).length;
       const foldKey = shownExtra.length && nck ? `<div class="kbrow"><span class="muted">reported, not predicted (${fmtInt(shownExtra.length)}):</span><span><i class="kb-dash"></i>folded, scored below the cutoff (${fmtInt(nf('low'))})</span><span><i class="kb-dot"></i>never folded in these screens (${fmtInt(nf('none'))})</span>${nck < shownExtra.length ? `<span class="muted">not checked (${fmtInt(shownExtra.length - nck)})</span>` : ''}${nf('err') ? `<span class="muted">could not be checked (${fmtInt(nf('err'))})</span>` : ''}</div>` : '';
-      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra) + foldKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
+      const xoKey = XO ? `<div class="kbrow"><span class="muted">orthologs in ${XO.names}:</span><span><i class="kb-cons"></i>conserved: also predicted between the orthologs (${fmtInt(halo.size())})</span>${S.xo ? `<span><i class="kb-xo"></i>predicted only between the orthologs, ${S.xo === 'never' ? 'never folded here' : 'not predicted here'} (${fmtInt(xo.length)})</span>` : ''}</div>` : '';
+      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra) + foldKey + xoKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
       const cb = $('#nw-check'); cb.style.display = shownExtra.length ? '' : 'none'; if (!cb.dataset.busy) cb.textContent = nck && nck === shownExtra.length ? 'Checked: which were folded' : 'Check which were folded'; };
     restyle();
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
-    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interaction residues`, ev.clientX, ev.clientY); })
+    const consText = (ev) => ev.map((x) => `${XO ? XO.lab(x.y) : esc(x.y)}: ${esc(x.a2)} × ${esc(x.b2)}, iLIS ${x.best.toFixed(3)}`).join('<br>');
+    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interaction residues${d.cons ? `<br><b>conserved</b>, also predicted between the orthologs in<br>${consText(d.cons)}` : ''}`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d), u = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; if (ev.metaKey || ev.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
+    xol.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>: ${d.folded === false ? 'never folded in these screens' : `not predicted past iLIS ${cutV()} here`}<br>predicted between the orthologs in<br>${consText(d.xo)}<br>click for the strongest of those pairs`, ev.clientX, ev.clientY); })
+      .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const x = [...d.xo].sort((p, q) => q.best - p.best)[0], u = `#/${x.y}/${x.k2}`; if (ev.metaKey || ev.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
     dash.on('mousemove', (ev, d) => { const [a, b] = ends(d), f = FOLD.get(fkey(a, b));
         showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${cutV()}${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}: ${esc(foldText(f))}<br>click for the pair's predictions`, ev.clientX, ev.clientY);
         if ((!f || (f.st === 'low' && !Number.isFinite(f.best))) && !d.checking) { d.checking = true; if (f) FOLD.delete(fkey(a, b)); checkFolded([[a, b]]).then(() => { d.checking = false; restyle(); }); } })
@@ -4418,10 +4456,10 @@ async function viewNetwork(spId, q) {
         S.exp.push(d.row.key);   // a second click on the same protein adds its next partners
         draw({ at: d.id, t: d3.zoomTransform(svg.node()), pos: new Map(nodes.map((x) => [x.id, [x.x, x.y]])) }); });
     const sim = d3.forceSimulation(nodes).alphaDecay(1 - Math.pow(0.001, 1 / (S.liter || 300)))   // the number of rounds before the layout stops
-      .force('link', d3.forceLink([...links, ...extra]).id((d) => d.id).distance((l) => (S.lwt ? 70 + 60 * (1 - Math.min(1, l.best || 0)) : 100) * S.lspace).strength((l) => (l.unpred ? 0 : 0.4)))
+      .force('link', d3.forceLink([...links, ...extra, ...xo]).id((d) => d.id).distance((l) => (S.lwt ? 70 + 60 * (1 - Math.min(1, l.best || 0)) : 100) * S.lspace).strength((l) => (l.unpred ? 0 : 0.4)))
       .force('charge', d3.forceManyBody().strength((groups.length ? -140 : -260) * S.lrep)).force('collide', d3.forceCollide().radius((d) => r(d) + 10))
       .force('x', d3.forceX((d) => (home(d) || [FW / 2])[0]).strength((d) => (home(d) ? 0.35 : 0.05))).force('y', d3.forceY((d) => (home(d) || [0, FH / 2])[1]).strength((d) => (home(d) ? 0.35 : 0.06)))
-      .on('tick', () => { placeLabels(); drawHulls(); for (const sel of [dash, link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); drawHulls(); for (const sel of [dash, link, halo, xol]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     if (lr) sim.randomSource(seededRandom(S.lseed + 1));   // d3's own small random nudges, seeded too
     if (seed) sim.alpha(0.35);   // settle the new nodes without reshuffling the rest
     if (S.lay !== 'force') {   // a fixed layout: every protein pinned where the layout puts it, groups kept together on the circle
@@ -4452,7 +4490,7 @@ async function viewNetwork(spId, q) {
       g.selectAll('circle.nw-found').remove();
       const ring = g.append('circle').attr('class', 'nw-found').attr('cx', d.x).attr('cy', d.y).attr('r', r(d) + 6).attr('fill', 'none').attr('stroke', '#E4572E').attr('stroke-width', 3).style('pointer-events', 'none');
       ring.transition().delay(550).duration(900).attr('r', r(d) + 16).attr('stroke-opacity', 0.2).transition().duration(600).attr('r', r(d) + 6).attr('stroke-opacity', 1); };
-    net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote };
+    net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote, xo, XO };
     if (EXPECT) { const X = EXPECT; EXPECT = null; checkLoaded(X); }   // loaded settings: does this drawing match the saved one?
     heatArgs = [nodes, links, gk, groups, gname2, deg]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
   }
@@ -4480,6 +4518,14 @@ async function viewNetwork(spId, q) {
   $('#nw-cwt').onchange = (e) => { S.cwt = e.target.value; redraw(); };
   $('#nw-cmin').onchange = (e) => { S.cmin = +e.target.value; redraw(); };
   $('#nw-lone').onchange = (e) => { S.lone = e.target.checked; draw(); };
+  // Orthologs in: the species with an ortholog table (the Alliance's seven); shown only when this species has one too
+  orthSpecies().then((have) => { if (stale(gen) || !have.has(sp.id)) { S.xsp = ''; return; }
+    const ys = [...have].filter((y) => y !== sp.id && (REG.species || []).some((s) => s.id === y)), lab = (y) => ((REG.species || []).find((s) => s.id === y) || {}).label || y;
+    if (S.xsp && S.xsp !== 'all' && !ys.includes(S.xsp)) S.xsp = '';
+    $('#nw-xsp').innerHTML = [['', 'none'], ['all', `every species with orthologs (${ys.length})`], ...ys.map((y) => [y, lab(y)])].map(([v, l]) => `<option value="${esc(v)}"${v === S.xsp ? ' selected' : ''}>${esc(l)}</option>`).join('');
+    $('#nw-xo').value = S.xo; $('#nw-xsp-wrap').hidden = false; $('#nw-xo-wrap').hidden = !S.xsp; });
+  $('#nw-xsp').onchange = (e) => { S.xsp = e.target.value; $('#nw-xo-wrap').hidden = !S.xsp; redraw(); };
+  $('#nw-xo').onchange = (e) => { S.xo = e.target.value; redraw(); };
   speciesCombo($('#nw-sp'), REG);
   $('#nw-sp').onchange = (e) => { const raw = $('#nw-ids').value, ids = S.ids || (/\t/.test(raw) ? '' : raw.split(/[\s,;]+/).filter(Boolean).join(',')); location.hash = `#/${e.target.value}/network?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };   // the names drawn last; a pasted table is not split into its cells
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
@@ -4511,19 +4557,23 @@ async function viewNetwork(spId, q) {
     const fly = !!sp.manifest.keyedBy, ids = (i) => (fly ? [sp.rows[i].key, sp.rows[i].acc || ''] : [sp.rows[i].acc || sp.rows[i].key]);   // which protein: the UniProt accession (fly: FlyBase gene and UniProt)
     const rep = (net ? net.extra : []).map((l) => { const [a, b] = e2(l), f = FOLD.get(fkey(a, b)); return [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), f && Number.isFinite(f.best) ? f.best.toFixed(3) : '', '', '', '', '', '', l.pubs || 0, l.gen || 0, csvq(f ? (f.st === 'none' ? 'reported, never folded' : 'reported, folded below the cutoff') : 'reported, not predicted')].join(','); });
     const idHead = fly ? 'FlyBase_1,UniProt_1,FlyBase_2,UniProt_2' : 'UniProt_1,UniProt_2';
-    const text = `Protein_1,Protein_2,${idHead},iLIS_best,iLIS_avg,ipTM_best,ipTM_avg,screens,reference,BioGRID_physical,BioGRID_genetic,type\n` + rowsOut().map(({ a, b, l }) => [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), l.best.toFixed(3), Number.isFinite(l.avg) ? l.avg.toFixed(3) : '', Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : '', Number.isFinite(l.ipta) ? l.ipta.toFixed(2) : '', csvq(screens(l.src)), csvq(refs(l.src)), l.pubs || 0, l.gen || 0, 'predicted'].join(','))
-      .concat(rep).join('\n') + '\n';
+    const orthCol = (ev) => (ev ? csvq(ev.map((x) => `${((REG.species || []).find((z) => z.id === x.y) || {}).label || x.y}: ${x.a2} × ${x.b2} (${x.best.toFixed(3)})`).join('; ')) : '');   // the pairs between orthologs, per species
+    const xoRows = (net ? net.xo || [] : []).map((l) => { const [a, b] = e2(l); return [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), '', '', '', '', '', '', '', '', csvq(`predicted only between the orthologs; ${l.folded === false ? 'never folded here' : 'not predicted here'}`), orthCol(l.xo)].join(','); });
+    const text = `Protein_1,Protein_2,${idHead},iLIS_best,iLIS_avg,ipTM_best,ipTM_avg,screens,reference,BioGRID_physical,BioGRID_genetic,type,orthologs\n` + rowsOut().map(({ a, b, l }) => [csvq(gname(a)), csvq(gname(b)), ...ids(a), ...ids(b), l.best.toFixed(3), Number.isFinite(l.avg) ? l.avg.toFixed(3) : '', Number.isFinite(l.iptm) ? l.iptm.toFixed(2) : '', Number.isFinite(l.ipta) ? l.ipta.toFixed(2) : '', csvq(screens(l.src)), csvq(refs(l.src)), l.pubs || 0, l.gen || 0, 'predicted', orthCol(l.cons)].join(','))
+      .concat(rep.map((r) => r + ','), xoRows).join('\n') + '\n';
     const u = URL.createObjectURL(new Blob(['\ufeff' + text], { type: 'text/csv;charset=utf-8' })), d = document.createElement('a'); d.href = u; d.download = `atlas_${sp.id}_network.csv`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   $('#nw-graphml').onclick = () => { if (!net) return;
     const x = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     const deg = new Map(); rowsOut().forEach(({ a, b }) => { deg.set(a, (deg.get(a) || 0) + 1); deg.set(b, (deg.get(b) || 0) + 1); });
     const keys = [['gene', 'node', 'string'], ['key', 'node', 'string'], ['accession', 'node', 'string'], ['group', 'node', 'string'], ['degree', 'node', 'int'], ...(net.groups.length ? [['community', 'node', 'string']] : []),
       ...(S.data || []).map((x, n) => [`data${n}`, 'node', x.kind === 'num' ? 'double' : 'string', x.name]),
-      ['type', 'edge', 'string'], ['iLIS_best', 'edge', 'double'], ['iLIS_avg', 'edge', 'double'], ['ipTM_best', 'edge', 'double'], ['ipTM_avg', 'edge', 'double'], ['screens', 'edge', 'string'], ['reference', 'edge', 'string'], ['BioGRID_physical', 'edge', 'int'], ['BioGRID_genetic', 'edge', 'int']];
+      ['type', 'edge', 'string'], ['iLIS_best', 'edge', 'double'], ['iLIS_avg', 'edge', 'double'], ['ipTM_best', 'edge', 'double'], ['ipTM_avg', 'edge', 'double'], ['screens', 'edge', 'string'], ['reference', 'edge', 'string'], ['BioGRID_physical', 'edge', 'int'], ['BioGRID_genetic', 'edge', 'int'], ...(net.XO ? [['orthologs', 'edge', 'string']] : [])];
+    const orthTxt = (ev) => (ev ? ev.map((x) => `${((REG.species || []).find((z) => z.id === x.y) || {}).label || x.y}: ${x.a2} × ${x.b2} (${x.best.toFixed(3)})`).join('; ') : '');
     const d = (k, v) => (v === '' || v == null || (typeof v === 'number' && !Number.isFinite(v)) ? '' : `<data key="${k}">${x(v)}</data>`);
     const nodesX = net.nodes.map((n) => `<node id="n${n.id}">${d('gene', n.row.gene)}${d('key', n.row.key)}${d('accession', n.row.acc || '')}${d('group', n.q ? 'query' : n.grew ? 'added by a click' : 'added partner')}${d('degree', deg.get(n.id) || 0)}${net.groups.length ? d('community', net.gk.has(n.id) ? net.gname2.get(net.gk.get(n.id)) || '' : '') : ''}${(S.data || []).map((c2, k) => (c2.vals.has(n.id) ? d(`data${k}`, c2.vals.get(n.id)) : '')).join('')}</node>`);
     const ends = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
-    const edgesX = [...rowsOut().map(({ a, b, l }) => `<edge source="n${a}" target="n${b}">${d('type', 'predicted')}${d('iLIS_best', +l.best.toFixed(3))}${d('iLIS_avg', Number.isFinite(l.avg) ? +l.avg.toFixed(3) : '')}${d('ipTM_best', Number.isFinite(l.iptm) ? +l.iptm.toFixed(2) : '')}${d('ipTM_avg', Number.isFinite(l.ipta) ? +l.ipta.toFixed(2) : '')}${d('screens', screens(l.src))}${d('reference', refs(l.src))}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`),
+    const edgesX = [...rowsOut().map(({ a, b, l }) => `<edge source="n${a}" target="n${b}">${d('type', 'predicted')}${d('iLIS_best', +l.best.toFixed(3))}${d('iLIS_avg', Number.isFinite(l.avg) ? +l.avg.toFixed(3) : '')}${d('ipTM_best', Number.isFinite(l.iptm) ? +l.iptm.toFixed(2) : '')}${d('ipTM_avg', Number.isFinite(l.ipta) ? +l.ipta.toFixed(2) : '')}${d('screens', screens(l.src))}${d('reference', refs(l.src))}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}${net.XO ? d('orthologs', orthTxt(l.cons)) : ''}</edge>`),
+      ...(net.xo || []).map((l) => { const [a, b] = ends(l); return `<edge source="n${a}" target="n${b}">${d('type', `predicted only between the orthologs; ${l.folded === false ? 'never folded here' : 'not predicted here'}`)}${d('orthologs', orthTxt(l.xo))}</edge>`; }),
       ...net.extra.map((l) => { const [a, b] = ends(l); const f = FOLD.get(fkey(a, b)); return `<edge source="n${a}" target="n${b}">${d('type', `reported, not predicted${!f ? '' : f.st === 'low' ? '; folded, below the cutoff' : f.st === 'none' ? '; never folded in these screens' : ''}`)}${f && f.st === 'low' ? d('iLIS_best', +f.best.toFixed(3)) : ''}${d('BioGRID_physical', l.pubs || 0)}${d('BioGRID_genetic', l.gen || 0)}</edge>`; })];
     const text = `<?xml version="1.0" encoding="UTF-8"?>\n<graphml xmlns="http://graphml.graphdrawing.org/xmlns">\n${keys.map(([id, f, t, nm]) => `<key id="${id}" for="${f}" attr.name="${x(nm || id)}" attr.type="${t}"/>`).join('\n')}\n`
       + `<graph id="atlas_${sp.id}_network" edgedefault="undirected">\n${nodesX.join('\n')}\n${edgesX.join('\n')}\n</graph>\n</graphml>\n`;
@@ -4545,7 +4595,8 @@ async function viewNetwork(spId, q) {
     color: 'the table column the proteins are colored by', exp: 'proteins expanded by clicks, in the order clicked', click: 'what a click on a protein does',
     lay: 'layout: force, fr (spring, Fruchterman-Reingold), kk (Kamada-Kawai) or circle', lseed: 'layout seed (0: the fixed start)', iters: "layout rounds (0: the layout's own number)", space: 'spacing (force, spring)', rep: 'repulsion (force)', wpull: '1: stronger pairs closer (force, spring)',
     grp: 'groups: leiden, comm (Louvain), mcl (MCL), cc (connected parts) or col:<table column>', res: 'resolution (Leiden, Louvain)', infl: 'inflation (MCL)', cw: 'pair weight for communities: ilis (best iLIS), iptm (best ipTM) or eq (equal)',
-    runs: 'runs, the highest modularity kept (Leiden, Louvain)', cseed: 'community seed (0: the order of the list)', cmin: 'the smallest group outlined' };
+    runs: 'runs, the highest modularity kept (Leiden, Louvain)', cseed: 'community seed (0: the order of the list)', cmin: 'the smallest group outlined',
+    xsp: 'orthologs: the species (or all) whose predictions between the orthologs are checked (blank: none)', xo: "ortholog-only pairs drawn dashed: never (where never folded here), below (also where scored below the cutoff here), blank: none" };
   const endsOf = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
   const groupsNow = () => net.groups.map((k) => ({ name: net.gname2.get(k) || k, proteins: net.nodes.filter((d) => net.gk.get(d.id) === k).map((d) => d.row.key) }));
   $('#nw-save').onclick = () => { if (!net) return;

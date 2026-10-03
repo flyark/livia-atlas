@@ -518,6 +518,8 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .kbkey .kbrow i { display: inline-block; width: 26px; height: 4px; border-radius: 2px; }
 .kbkey .kbrow i.kb-dash { height: 0; border-top: 1.5px dashed #5B6573; border-radius: 0; }
 .kbkey .kbrow i.kb-dot { height: 0; border-top: 2px dotted #5B6573; border-radius: 0; opacity: 0.8; }
+.kbkey .kbrow i.kb-cons { height: 4px; background: #50637A; border-radius: 3px; box-shadow: 0 0 0 3.5px rgba(224, 165, 38, 0.5); }   /* conserved: an edge in its gold halo */
+.kbkey .kbrow i.kb-xo { height: 0; border-top: 1.6px dashed #1F8A80; border-radius: 0; }   /* predicted only between the orthologs */
 .kbkey .kbrow i.kb-grad { width: 70px; background: linear-gradient(90deg, #C5CCD4, #1E2A38); }
 
 #sites-answer a, .res-look a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in running text are not told apart by color alone */
