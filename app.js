@@ -3412,7 +3412,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   // sequence aligned to this protein's, its own predictions clustered (cLIP at this cutoff) and each matched to the site holding
   // half or more of its aligned contact residues, so an underlined residue is contacted there by that paralog's predictions.
   // The paralogs listed in the table (the first 6 in the Atlas index) load on the first click.
-  const paraSt = (k) => { if (!PALN.st.has(k)) PALN.st.set(k, orthLoad({ sp2: sp.id, key2: k, reg2: sp.reg, redraw: () => drawOrth(PCFG) }).catch(() => null)); return PALN.st.get(k); };
+  const paraSt = (k) => { if (!PALN.st.has(k)) PALN.st.set(k, orthLoad({ sp2: sp.id, key2: k, reg2: sp.reg, redraw: () => { if (PALN.trk) drawOrth(PCFG); } }).catch(() => null)); return PALN.st.get(k); };
   async function paraLoad() {   // the paralogs listed (the first 6 in the Atlas index): predictions, cLIP, sequence; then the plot
     const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), host = $('#para-wrap'), tok = (PALN.ltok = (PALN.ltok || 0) + 1); if (!host) return;
     if (!rows.length) { PALN.trk = []; host.innerHTML = ''; $('#para-key').innerHTML = ''; return; }
@@ -4328,7 +4328,7 @@ async function viewNetwork(spId, q) {
     if (!EXPECT) $('#nw-loaded').hidden = true;   // the loaded file's check holds for its own drawing only
     const scanWas = !$('#nw-kscan-out').hidden && SCAN ? SCAN.key : null; SCAN = null; $('#nw-kscan-out').hidden = true; $('#nw-khint').textContent = '';   // a draw that stops early leaves no list to suggest for
     hideTip(); const toks = readInput();
-    const ns = $('#nw-ncol'), commG = ['leiden', 'comm', 'mcl', 'cc'].includes(S.grp); if (S.ncol && S.ncol !== 'comm:' && !(S.data || []).some((x) => x.name === S.ncol)) S.ncol = '';
+    const ns = $('#nw-ncol'), commG = ['leiden', 'comm', 'mcl', 'cc'].includes(S.grp); if (S.ncol && !(S.ncol === 'comm:' ? commG : (S.data || []).some((x) => x.name === S.ncol))) S.ncol = '';
     if (!S.ncolUser) S.ncol = autoColor(S.data || []) || (commG ? 'comm:' : '');   // chosen for the reader until they pick one: a table column, else the communities (as LIVIA's network page)
     { const nums = (S.data || []).filter((x) => x.kind === 'num'); if (S.prize && !nums.some((x) => x.name === S.prize)) S.prize = '';   // Score: the table's number columns
       $('#nw-prize').innerHTML = '<option value="">none: every protein-of-interest</option>' + nums.map((x) => `<option value="${esc(x.name)}"${x.name === S.prize ? ' selected' : ''}>${esc(x.name)}</option>`).join(''); $('#nw-prize-wrap').hidden = $('#nw-add').value !== 'tree' || !nums.length; }
