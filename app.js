@@ -2338,7 +2338,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const count = new Map(); for (const o of out) { const k = o.sym.toLowerCase(); count.set(k, (count.get(k) || 0) + 1); }   // one family, one name: a runner-up within one method of the top call that carries the symbol most species' top calls carry is drawn instead (fly yki: rat Yap1 5/9 over Wwtr1 6/9)
     for (const o of out) { const top = count.get(o.sym.toLowerCase()) || 0, alt = o.alts.find((x) => x.key2 !== o.key2 && o.methods - x.methods <= 1 && (count.get(x.sym.toLowerCase()) || 0) > top);
       if (alt) Object.assign(o, { key2: alt.key2, methods: alt.methods, of: alt.of, both: alt.both, sym: alt.sym, xb: alt.xb }); }
-    const order = (await orthMan()).species || [], ord = (o) => { const i = order.indexOf(o.sp2); return i < 0 ? 99 : i; };
+    const order = (await orthMan()).species || [], ord = (o) => { if (o.reg2.seqOnly) { const z = order.indexOf('zebrafish'); return (z < 0 ? 98 : z - 0.5) + (o.sp2 === 'xenopus-laevis' ? 0.1 : 0); } const i = order.indexOf(o.sp2); return i < 0 ? 99 : i; };   // Xenopus among the vertebrates, before zebrafish
     return out.sort((a, b) => ord(a) - ord(b));   // the Alliance's species order (mammals, zebrafish, fly, worm, yeast), read from its file by the build
   }
   const orthOwn = (o) => (o.reg2.datasets || []).some((d) => !/^afdb-het-|^viral-dimers-afdb$/.test(d));   // an AlphaFold-Multimer screen of its own, beyond the AFDB heterodimers
@@ -2390,7 +2390,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const box = $('#orth-list'), sub = $('#orth-sub'); if (!box || !ORTH.list) return;
     const n = ORTH.list.length, open = [...ORTH.open.values()].filter(Boolean).length;
     const nS = ORTH.list.filter((o) => o.reg2.seqOnly).length, nA = n - nS;   // Xenopus rows: sequence only
-    sub.textContent = `${nA} ortholog${nA === 1 ? '' : 's'} in the Atlas${nS ? ` and ${nS} in Xenopus (sequence only, no predictions; Xenbase)` : ''} · Alliance of Genome Resources orthologs (stringent set), the best score both ways in dark blue · each ortholog's own cLIP, placed on ${P.gene}'s residues by sequence alignment`;
+    sub.textContent = `${nA} ortholog${nA === 1 ? '' : 's'} in the Atlas${nS ? ` and ${nS} Xenopus ortholog${nS === 1 ? '' : 's'} (sequence only, no predictions; Xenbase)` : ''} · Alliance of Genome Resources orthologs (stringent set), the best score both ways in dark blue · each ortholog's own cLIP, placed on ${P.gene}'s residues by sequence alignment`;
     box.innerHTML = ORTH.list.map((o) => { const st = ORTH.open.get(o.sp2), loading = ORTH.open.has(o.sp2) && !st, fail = ORTH.fail.get(o.sp2);
       const al = st && st.al, m2 = st && st.m[cut];
       return `<div class="orth-row"><span class="src" style="--c:${o.both ? '#1A5276' : '#627085'}" title="${o.both ? 'the best score both ways' : 'not the best score both ways'}">${spName(o.reg2.label)}</span>
@@ -2594,7 +2594,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         ? `<span style="color:${c ? clusterColor(c, M.k) : '#9AA7B5'}">●</span> ${c ? `${esc(P.gene)} ${clusterLabel(c, true)}` : 'no site'} ${cc[c]}`
         : `<span style="color:${clusterColor(c, m2.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`)).join(' · ');
       const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', insN = t.al ? t.ins.get(r) : 0, ur = r2 && (st.toRef ? st.toRef[r2 - 1] : r2), plv = t.pl && ur ? st.pl[ur - 1] : null;
-      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${C.lab(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : `no residue of the ${C.word} aligns here`}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`, e.clientX, e.clientY); };
+      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${C.lab(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : `no residue of the ${C.word} aligns here`}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`.replace(/<br>0 predictions(?= ·|<br>|$)/, st.seqOnly ? '<br>no predictions (sequence only)' : '<br>0 predictions'), e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; C.setSite(C.site() === h.c ? 0 : h.c); C.renderSite(T); };
     if (C.site() && !sites.some((s) => s.c === C.site())) C.setSite(0);
@@ -3403,7 +3403,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (!PARA) { let man = null, sh = null, E = null;
       try { [man, sh] = await Promise.all([getJSON('data/para/manifest.json'), getJSON(`data/para/${sp.id}/${P.key.slice(-2).toLowerCase()}.json`).catch(() => ({}))]); } catch (e) { man = null; }
       if (gone()) return;
-      if (!man || !(man.species || []).includes(sp.id)) { sub.textContent = `No paralog table for ${sp.reg.label}: the Alliance of Genome Resources covers human, mouse, rat, zebrafish, fly, C. elegans and yeast.`; low.closest('label').hidden = true; return; }
+      if (!man || !(man.species || []).includes(sp.id)) { sub.textContent = `No paralog table for ${sp.reg.label}: the Alliance of Genome Resources covers human, mouse, rat, zebrafish, fly, C. elegans and yeast.`; low.closest('label').hidden = true; $('#c-para .orth-show').hidden = true; return; }
       try { E = await edges(sp, B.setId); } catch (e) { E = null; }
       if (gone()) return;
       const part = (i) => new Set([...((E && E.adj.get(i)) || new Map())].filter(([j, e]) => j !== i && e.best >= CUT[10]).map(([j]) => j)), mine = P.i != null ? part(P.i) : new Set();
@@ -3411,7 +3411,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         return { k2, rank, id, sim, len, meth, conf, r, shared: theirs ? [...theirs].filter((j) => mine.has(j)).length : null, theirs: theirs ? theirs.size : null, pair: pe && pe.best >= CUT[10] ? pe.best : null }; }) }; }
     const all = PARA.rows, nLow = all.filter((x) => !x.conf).length, rows = low.checked ? [...all].sort((a, b) => a.rank - b.rank || b.conf - a.conf) : all.filter((x) => x.conf);   // closest first (the Alliance's rank), with the low ones too
     PARA.shown = rows;
-    low.closest('label').hidden = !nLow;
+    low.closest('label').hidden = !nLow; $('#c-para .orth-show').hidden = !all.some((x) => x.r);   // the Show switches only with a paralog in the Atlas to draw
     sub.innerHTML = `${esc(sp.reg.label)} genes related to ${esc(P.gene)} by duplication, closest first: <a href="https://www.alliancegenome.org" target="_blank" rel="noopener">Alliance of Genome Resources</a> paralogy (DIOPT, release ${esc((PARA.man.release || []).join(', '))}, ${esc(PARA.man.license || 'CC BY 4.0')}). Shared partners: predicted partners of both past 10% FPR${B.setId ? ' in this scope' : ''}.`;
     if (!rows.length) { host.innerHTML = `<p class="muted" style="margin:6px 0 0">${all.length ? `No high- or moderate-confidence paralogs of ${esc(P.gene)}; tick “low-confidence paralogs too” for ${fmtInt(nLow)} more.` : `No paralogs of ${esc(P.gene)} in the Alliance set.`}</p>`; return; }
     const CONFW = ['low', 'moderate', 'high'];
