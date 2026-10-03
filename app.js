@@ -137,14 +137,18 @@ function showTip(html, x, y) {
   TIP.style.left = left + 'px'; TIP.style.top = top + 'px';
 }
 const hideTip = () => { TIP.hidden = true; };
-// A note that explains itself (data-tip): its text in the site tooltip on hover, keyboard focus and tap, so a phone reaches it too
-{ let open = null; const tipOf = (e) => e.target.closest && e.target.closest('[data-tip]');
+// A note that explains itself (data-tip): its text in the site tooltip on mouse hover, keyboard focus and tap, so a phone reaches it
+// too. A second tap closes it, as does a tap elsewhere or a scroll; a tap on a note inside a sortable header shows the note and does not sort.
+{ let open = null, lastType = 'mouse', downAt = 0; const tipOf = (e) => e.target.closest && e.target.closest('[data-tip]');
   const near = (k) => { open = k; const b = k.getBoundingClientRect(); showTip(esc(k.dataset.tip), b.left + b.width / 2, b.top); }, close = () => { if (open) { open = null; hideTip(); } };   // close only a note's tip
-  document.addEventListener('mouseover', (e) => { const k = tipOf(e); if (k) near(k); });
-  document.addEventListener('mouseout', (e) => { if (tipOf(e)) close(); });
-  document.addEventListener('focusin', (e) => { const k = tipOf(e); if (k) near(k); });
+  document.addEventListener('pointerdown', (e) => { lastType = e.pointerType || 'mouse'; downAt = Date.now(); }, true);
+  document.addEventListener('pointerover', (e) => { if (e.pointerType !== 'mouse') return; const k = tipOf(e); if (k) near(k); });
+  document.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse' && tipOf(e)) close(); });
+  document.addEventListener('focusin', (e) => { const k = tipOf(e); if (k && Date.now() - downAt > 500) near(k); });   // keyboard focus; a tap's own focus is left to its click
   document.addEventListener('focusout', (e) => { if (tipOf(e)) close(); });
-  document.addEventListener('click', (e) => { const k = tipOf(e); if (k) near(k); else close(); });
+  document.addEventListener('click', (e) => { const k = tipOf(e); if (!k) { close(); return; }
+    e.stopPropagation(); e.preventDefault();   // the note explains; the header around it does not sort
+    if (lastType !== 'mouse' && open === k) close(); else near(k); }, true);
   window.addEventListener('scroll', close, { passive: true }); }
 const uniprotLink = (acc, label) => (acc ? `<a href="https://www.uniprot.org/uniprotkb/${esc(acc)}" target="_blank" rel="noopener">${label || 'UniProt ' + esc(acc)}</a>` : '');
 
@@ -832,7 +836,7 @@ const exportsReady = () => liviaScript('js/canvas2svg.js').then(() => liviaScrip
 // site's tables (data/dom/<last two characters of the accession>.json and names.json, built from the Pfam release by
 // build/domains_pfam.py) answer first; given the sequence the domains will be placed on, a table entry is used only when that
 // sequence is the one Pfam annotated (its CRC64). Otherwise, and for a protein the tables lack, a live lookup: Pfam through InterPro, UniProt's
-// Domain / DNA-binding / zinc-finger features where Pfam has none.
+// Domain / DNA-binding / zinc-finger features where Pfam has none. Without a sequence to place them on, none are drawn.
 const DOMT = new Map(), DOMS = new Map(), DOML = new Map();   // table file → Promise; accession → table entry; accession → live lookup
 const domShard = (k) => { if (!DOMT.has(k)) DOMT.set(k, getJSON(`data/dom/${k}.json`).catch((e) => { if (!/HTTP 404/.test(e.message)) DOMT.delete(k); return null; })); return DOMT.get(k); };   // no file for the suffix: remembered; a failed read: tried again later
 let DOMN = null;   // data/dom/names.json: Pfam number → family description, read once for every shard
@@ -843,7 +847,8 @@ const domTable = (acc) => { if (!DOMS.has(acc)) DOMS.set(acc, Promise.all([domSh
   return { crc: h[0], doms }; })); return DOMS.get(acc); };
 const domLive = (acc) => { if (!DOML.has(acc)) DOML.set(acc, liviaReady().then(async () => { const pf = await CLIPResolver.fetchPfam(acc); if (pf.length) return pf.map((d) => ({ ...d, src: 'Pfam' }));
   return (await CLIPResolver.fetchDomains(acc)).map((d) => ({ ...d, src: 'UniProt' })); }).catch(() => [])); return DOML.get(acc); };
-async function domainsOf(acc, seq) { const t = await domTable(acc); if (!t) return domLive(acc); if (!seq) return t.doms;
+async function domainsOf(acc, seq) { if (!seq) return [];   // no sequence to place them on (AFDB and UniProt did not answer): none drawn rather than unchecked ones
+  const t = await domTable(acc); if (!t) return domLive(acc);
   try { await liviaReady(); } catch (e) { return t.doms; }   // no checksum without LIVIA's resolver: the table stands
   return CLIPResolver.crc64(seq).slice(0, 8) === t.crc ? t.doms : domLive(acc); }
 const AFDB = new Map();   // accession → Promise<{cifUrl, seq, amUrl} | null>
