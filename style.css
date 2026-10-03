@@ -431,8 +431,8 @@ select { max-width: 100%; }
 .scope-chip .n { font-family: var(--mono); font-size: 11px; color: var(--ink-2); margin-left: 3px; }   /* ink, not the chip color: readable on every chip */
 .scope-chip.on .n { color: inherit; }
 .scope-chip.all { --c: #5B6B7F; }
-.scope-chip.on { background: var(--c); color: #fff; }
-.scope-chip.on .n { opacity: .9; }
+.scope-chip.on { background: color-mix(in srgb, var(--c) 80%, black); color: #fff; }   /* the chosen screen: a shade darker, so its white label keeps 4.5:1 */
+.scope-chip.on .n { opacity: 1; }
 .scope-chip:not(.on):hover { box-shadow: inset 0 0 0 1px var(--c); }
 .scope-chip:focus-visible { outline: 2px solid var(--c); outline-offset: 1px; }
 .setbar[hidden] { display: none; }
@@ -453,10 +453,14 @@ table.sets { width: 100%; border-collapse: collapse; font-size: 14px; }
 .sets thead th, .sets tr.set-grp th { font-family: var(--sans); }
 .sets .set-cite { margin-left: 10px; font-size: 12.5px; font-weight: 400; }
 @media (max-width: 600px) { .sets th:nth-child(3), .sets td:nth-child(3), .sets th:nth-child(5), .sets td:nth-child(5) { display: none; } .sets .set-name { white-space: normal; } }
+@media (max-width: 600px) {   /* the theme table and the species list keep their pairs past 10% FPR on a phone: they drop predictions (theme) or the taxon and proteins (species) */
+  .sets.theme th:nth-child(3), .sets.theme td:nth-child(3), .sets.theme th:nth-child(5), .sets.theme td:nth-child(5), .sets.spl th:nth-child(5), .sets.spl td:nth-child(5) { display: table-cell; }
+  .sets.theme th:nth-child(4), .sets.theme td:nth-child(4), .sets.spl th:nth-child(2), .sets.spl td:nth-child(2) { display: none; } }
 .sets thead th.n { font-family: var(--sans); color: var(--ink-3); }
 @media (max-width: 600px) { .sets .set-cite { display: block; margin: 2px 0 0 19px; } }
 /* a gene's isoforms side by side (protein page) */
 .isotbl tbody tr.on td, .isotbl tbody tr.on:hover td { background: var(--blue-soft); }
+.isotbl tbody tr.on .muted, .isotbl tbody tr.on .iso-top .num, .models tbody tr.on .muted { color: var(--ink-2); }   /* muted text on the highlight keeps 4.5:1 */
 .isotbl .iso-top { font-size: 13px; color: var(--ink-2); min-width: 220px; }
 .isotbl .iso-top a { font-weight: 500; }
 .isotbl .iso-top .num { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
@@ -523,6 +527,7 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .pt.ref-tbl { width: 100%; table-layout: fixed; }
 .pt.ref-tbl th:nth-child(1) { width: 90px; } .pt.ref-tbl th:nth-child(2) { width: 150px; } .pt.ref-tbl th:nth-child(4) { width: 170px; } .pt.ref-tbl th:nth-child(5) { width: 64px; }
 .pt.ref-tbl td.t, .pt.ref-tbl td.a { white-space: normal; line-height: 1.4; }
+@media (max-width: 600px) { .pt.ref-tbl { table-layout: auto; min-width: 560px; } .pt.ref-tbl th:nth-child(n) { width: auto; } }   /* phones: the table keeps a readable width and scrolls in its wrapper instead of squeezing the titles under the authors */
 
 .lede-src { margin: -6px auto 18px; max-width: 640px; font-size: 13.5px; color: var(--ink-3); text-align: center; }   /* the source line under the home lede */
 .lede a, .lede-src a { text-decoration: underline; text-underline-offset: 2px; }   /* links in running text */
@@ -532,6 +537,8 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .lede span.q { color: var(--query-t); font-weight: 700; }   /* the letters that spell cLIP */
 .cite-link { font: 500 13px var(--sans); color: var(--ink-3); background: none; border: 0; padding: 6px 4px; cursor: pointer; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; align-self: center; }
 .cite-link:hover { color: var(--blue); }
+.actions a.btn ~ .cite-link { display: inline-flex; align-items: center; height: 38px; padding: 0 16px; border-radius: 9px; font: 600 14px var(--sans); border: 1px solid var(--line); background: var(--card); color: var(--ink); text-decoration: none; }   /* among full buttons (pair page): one of them */
+.actions a.btn ~ .cite-link:hover { border-color: var(--blue); color: var(--blue); }
 .tbl-find { display: block; margin: 0 0 8px auto; width: 200px; }   /* a table's filter box */
 .pt th.sortable { cursor: pointer; }
 table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric: normal; } table.cuts tr.avg td, table.cuts tr.avg th { border-top: 0; }
