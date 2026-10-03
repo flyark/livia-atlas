@@ -2435,6 +2435,20 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       return `<div class="aln-row"><span class="aln-lab" title="${esc(row.label)}">${row.lab}</span><span class="aln-n">${first || ''}</span><span class="aln-seq">${cells}</span><span class="aln-n e">${last || ''}</span></div>`; }).join('')}</div>`).join('');
     return { html, text: txt.reduce((o, l, i) => o + (i && i % rows.length === 0 ? '\n' : '') + l + '\n', '') };
   }
+  // The panel's proteins as FASTA: aligned (this protein's full length, each other protein's residues where the page's pairwise
+  // alignment puts them, '-' where none; inserted residues left out, as in the panel) or their full sequences, unaligned. Headers:
+  // gene, species, UniProt accession; this protein's names the site's residues.
+  function alnFasta(T, c, sites, aligned, what) {
+    const site = (sites || []).find((x) => x.c === c), wrap = (x) => x.replace(/(.{60})/g, '$1\n').replace(/\n$/, ''), al = T.filter((t) => t.al && t.st.seq2);
+    const head = (g, lab, acc, extra) => `>${g} ${lab}${acc ? ` ${acc}` : ''}${extra ? ` | ${extra}` : ''}`;
+    const out = [head(P.gene, sp.reg.label, P.acc || P.key, `${clusterLabel(c)} residues ${site ? site.runs.map(([a, b]) => (a === b ? a : `${a}-${b}`)).join(',') : ''}${aligned ? `; ${what} aligned to it by the LIVIA Atlas (pairwise, query-anchored; inserted residues left out)` : ''}`), wrap(qSeq)];
+    for (const t of al) { const st = t.st, s2 = aligned ? [...qSeq].map((_, i) => { const r2 = t.al.map[i]; return r2 ? st.seq2[r2 - 1] || 'X' : '-'; }).join('') : st.seq2;
+      out.push(head(st.P2.gene || st.key2, (st.reg2 || sp.reg).label, st.P2.acc || st.P2.key, aligned ? `${Math.round(100 * t.al.identity)}% identical over ${t.al.aligned} residues` : `${st.seq2.length} aa`), wrap(s2)); }
+    return out.join('\n') + '\n';
+  }
+  const fastaButtons = (id) => `<button type="button" class="more" id="${id}-fa" title="this protein and the others, aligned on its full length (opens in Jalview)">↓ FASTA aligned</button> <button type="button" class="more" id="${id}-fs" title="the full sequences, unaligned (for MAFFT or Clustal)">↓ FASTA sequences</button>`;
+  const wireFasta = (id, T, c, sites, what, name) => { const dl = (aligned) => { const u = URL.createObjectURL(new Blob([alnFasta(T, c, sites, aligned, what)], { type: 'text/plain' })), a = document.createElement('a'); a.href = u; a.download = `atlas_${P.gene}_${name}_${aligned ? `site${c}_aligned` : 'sequences'}.fasta`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
+    const fa = $(`#${id}-fa`), fs = $(`#${id}-fs`); if (fa) fa.onclick = () => dl(true); if (fs) fs.onclick = () => dl(false); };
   function renderOrthSite(T) {   // the partners contacting one of this protein's sites, in this protein and in each ortholog; ortholog pairs in bold
     const box = $('#orth-site'); if (!box) return;
     ORTH.lastT = T; const chips = $('#orth-sites'), sites = ORTH.sites || [];   // the sites as chips too, as in the Paralogs card: the panel without finding the plot's marks
@@ -2451,10 +2465,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const list = (L) => `<li><b>${L.headH || esc(L.head)}</b> <span class="muted">(${fmtInt(L.items.length)})</span> ${L.items.length ? L.items.sort((a, b) => (L.bold.has(b.k) - L.bold.has(a.k)) || COLL.compare(a.name, b.name)).slice(0, 40).map((x) => `<a href="${x.href}"${L.bold.has(x.k) ? ' style="font-weight:700"' : ''}>${esc(x.name)}</a>`).join(', ') + (L.items.length > 40 ? ` and ${fmtInt(L.items.length - 40)} more` : '') : L.so ? '<span class="muted">sequence only: no predictions in the Atlas</span>' : '<span class="muted">none at this cutoff</span>'}</li>`;
     const A = orthAlign(T, c);
     box.innerHTML = `<div class="orth-site-head"><b><span class="mdot" style="background:${clusterColor(c, M.k)}"></span> ${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· partners contacting this site in each species; partners whose ortholog contacts the same site in bold</span> <button type="button" class="more" id="orth-site-x">close</button></div>`
-      + (A ? `<div class="orth-aln-head"><b>Aligned residues</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein</span> <button type="button" class="more" id="orth-aln-copy">copy</button></div>`
+      + (A ? `<div class="orth-aln-head"><b>Aligned residues</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein</span> <button type="button" class="more" id="orth-aln-copy">copy</button> ${fastaButtons('orth-aln')}</div>`
         + `<div class="orth-aln" style="--c:${clusterColor(c, M.k)}" tabindex="0" role="region" aria-label="${esc(`${P.gene} ${clusterLabel(c)} aligned with its open orthologs`)}">${A.html}</div>` : '')
       + `<ul class="orth-pairs">${lines.map(list).join('')}</ul>`;
     $('#orth-site-x').onclick = () => { ORTH.site = 0; renderOrthSite(T); };
+    if (A) wireFasta('orth-aln', T, c, ORTH.sites, 'its orthologs', 'orthologs');
     if (A) $('#orth-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
   const PLOTSHOW = (() => { const d = { dom: true, id: true, pl: true }; try { return { ...d, ...JSON.parse(localStorage.getItem('atlas-plot-show') || '{}') }; } catch (e) { return d; } })();   // one setting for both plots, kept in this browser
@@ -3472,9 +3487,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       T.push({ st, al: st.al, byS }); });
     const A = T.length ? orthAlign(T, c, sites, false) : null;
     if (!A) { out.innerHTML = `<p class="muted">No paralog's sequence could be aligned to ${esc(P.gene)}'s here${miss.length ? ` (${esc(miss.join(', '))})` : ''}.</p>`; return; }
-    out.innerHTML = `<div class="orth-aln-head"><b><span class="mdot" style="background:${clusterColor(c, M.k)}"></span> ${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein${miss.length ? `; not aligned: ${esc(miss.join(', '))}` : ''}</span> <button type="button" class="more" id="para-aln-copy">copy</button></div>`
+    out.innerHTML = `<div class="orth-aln-head"><b><span class="mdot" style="background:${clusterColor(c, M.k)}"></span> ${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein${miss.length ? `; not aligned: ${esc(miss.join(', '))}` : ''}</span> <button type="button" class="more" id="para-aln-copy">copy</button> ${fastaButtons('para-aln')}</div>`
       + `<div class="orth-aln" style="--c:${clusterColor(c, M.k)}" tabindex="0" role="region" aria-label="${esc(`${P.gene} ${clusterLabel(c)} aligned with its paralogs`)}">${A.html}</div>`;
-    PALN.akey = akey;
+    PALN.akey = akey; wireFasta('para-aln', T, c, sites, 'its paralogs', 'paralogs');
     $('#para-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
   { const card = $('#c-para'); let started = false; const start = () => { if (!started) { started = true; paraInit(); } };   // the paralog table and the edge list load when the card nears the viewport
