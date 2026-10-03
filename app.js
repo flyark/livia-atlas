@@ -1719,6 +1719,7 @@ function mcl(n, edges, inflation = 2, iters = 100) {
 }
 // The community menu every network card offers (the network builder adds finer settings): Leiden, Louvain, MCL or connected
 // parts, pairs weighted by best iLIS, and one seed for the visiting order and the layout's start (0: the fixed ones).
+const commHue = (n) => { if (n < TAB10.length) return TAB10[n]; const h = (n * 137.508) % 360, s = (62 + (n % 2) * 14) / 100, l = (50 + (n % 3) * 10) / 100, a = s * Math.min(l, 1 - l), f = (k0) => { const k = (k0 + h / 30) % 12; return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); }; return `#${f(0)}${f(8)}${f(4)}`; };   // ten Tableau colors, then golden-angle hues as LIVIA's network page
 const COMM_OPTS = [['leiden', 'Leiden'], ['comm', 'Louvain'], ['mcl', 'MCL'], ['cc', 'connected parts']];
 const communitiesBy = (m, n, E, seed = 0) => (m === 'cc' ? components(n, E) : m === 'mcl' ? mcl(n, E) : (m === 'leiden' ? leiden : louvain)(n, E, 1, seed ? seededRandom(seed) : null));
 const commCtl = (id, m, seed, lay = true) => `<label class="ctl" title="groups of proteins predicted to pair with each other more than with the rest: Leiden, Louvain, MCL (Markov clustering) or the connected parts, pairs weighted by best iLIS">Communities <select id="${id}-cm">${[['', 'none'], ...COMM_OPTS].map(([v, l]) => `<option value="${v}"${v === m ? ' selected' : ''}>${l}</option>`).join('')}</select></label>`
@@ -4062,7 +4063,8 @@ async function viewNetwork(spId, q) {
   const S = { ids: q.get('ids') || '', add: q.get('add') === 'shared' ? 'link' : ['none', 'link', 'top', 'tree'].includes(q.get('add')) ? q.get('add') : 'link', prize: q.get('prize') || '', sig: q.get('sig') === '1', hops: [1, 2, 3].includes(+q.get('hops')) && q.get('add') !== 'shared' ? +q.get('hops') : 1, autoPick: false, k: Math.max(1, Math.min(50, +q.get('k') || 10)), kAuto: !q.get('k'),
     cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), lay: ['fr', 'kk', 'circle'].includes(q.get('lay')) ? q.get('lay') : 'force', lone: q.get('lone') === '1', cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
-    mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, minq: q.get('minq') === '1', grp: /^(comm|leiden|mcl|cc|col:.+)$/.test(q.get('grp') || '') ? q.get('grp') : '', ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [],   // exp: proteins expanded by a click (keys), in the order clicked
+    mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, minq: q.get('minq') === '1', grp: !q.has('grp') ? 'leiden' : /^(comm|leiden|mcl|cc|col:.+)$/.test(q.get('grp')) ? q.get('grp') : '',   // Leiden communities unless the link says otherwise (grp=none), as LIVIA's network page
+    ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: q.get('click') === 'open' ? 'open' : 'add', col: null, data: [],   // exp: proteins expanded by a click (keys), in the order clicked
     lseed: numIn(q.get('lseed'), 0, 999999, 0, true), liter: numIn(q.get('iters'), 0, 5000, 0, true), lspace: numIn(q.get('space'), 0.3, 3, 1), lrep: numIn(q.get('rep'), 0.2, 5, 1), lwt: q.get('wpull') !== '0',   // layout: seed (0: the fixed start), rounds (0: the layout's own number), spacing, repulsion, stronger pairs closer
     xsp: /^(all|[a-z0-9-]+)$/.test(q.get('xsp') || '') ? q.get('xsp') : '', xo: q.has('xo') ? (['never', 'below'].includes(q.get('xo')) ? q.get('xo') : '') : 'never',   // orthologs: the species checked, and the ortholog-only pairs drawn (dashed)
     infl: numIn(q.get('infl'), 1.2, 6, 2), cwt: ['iptm', 'eq'].includes(q.get('cw')) ? q.get('cw') : 'ilis', cruns: numIn(q.get('runs'), 1, 50, 1, true), cseed: numIn(q.get('cseed'), 0, 999999, 0, true), cmin: numIn(q.get('cmin'), 2, 50, 3, true) };   // communities: MCL inflation, pair weight, runs kept by modularity, seed (0: node order), smallest outlined
@@ -4118,7 +4120,7 @@ async function viewNetwork(spId, q) {
         <span class="optlab">Explore</span><div class="controls"><label class="ctl" title="find a protein in this network: it is centered and marked">Find <input type="search" id="nw-find" placeholder="a protein in the network" aria-label="Find a protein in the network" style="width:190px"></label><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click opens its page in a new tab">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
           <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
       </div>
-      <p class="muted" style="margin:2px 0 12px">Proteins-of-interest are large and dark, added partners small and light; a ring of dashes marks a protein you expanded. Click an edge for the interaction residues of the pair. Drag to move, scroll to zoom.</p>
+      <p class="muted" style="margin:2px 0 12px">Proteins-of-interest are large, added partners small; they are colored by community (Group by), or as you choose under Color proteins by; a ring of dashes marks a protein you expanded. Click an edge for the interaction residues of the pair. Drag to move, scroll to zoom.</p>
       <div class="net" id="nw-net"></div>
 
       <div class="netkey"><div class="kbkey" id="nw-key"></div><div class="kbkey" id="nw-nkey"></div>
@@ -4138,7 +4140,7 @@ async function viewNetwork(spId, q) {
     if (!S.kAuto && (all || S.add === 'top' || S.exp.length)) qs.set('k', S.k); qs.set('cut', S.cut); if (all || S.cut === 'c') qs.set('cutv', S.cutv); put('iptm', S.iptm, 0); if (all || S.add === 'link') qs.set('hops', S.hops);
     put('mind', S.mind, 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); put('xsp', S.xsp, ''); if (S.xsp || all) put('xo', S.xo, 'never'); put('sig', S.sig, false); if (S.add === 'tree' || all) put('prize', S.prize, ''); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'add');
     put('lay', S.lay, 'force'); put('lseed', S.lseed, 0); put('iters', S.liter, 0); put('space', S.lspace, 1); put('rep', S.lrep, 1); put('wpull', S.lwt, true);
-    put('grp', S.grp, ''); put('res', S.res, 1); put('infl', S.infl, 2); put('cw', S.cwt, 'ilis'); put('runs', S.cruns, 1); put('cseed', S.cseed, 0); put('cmin', S.cmin, 3);
+    if (all || S.grp !== 'leiden') qs.set('grp', S.grp || 'none'); put('res', S.res, 1); put('infl', S.infl, 2); put('cw', S.cwt, 'ilis'); put('runs', S.cruns, 1); put('cseed', S.cseed, 0); put('cmin', S.cmin, 3);
     return qs; };
   // Suggest a number of partners per protein (exploratory). For ranks 1-2, 3-5, 6-10 ... 51-100: the share of each protein's
   // partner at that rank that is itself a protein-of-interest or has a predicted pair with another one, against 100 random
@@ -4326,12 +4328,12 @@ async function viewNetwork(spId, q) {
     if (!EXPECT) $('#nw-loaded').hidden = true;   // the loaded file's check holds for its own drawing only
     const scanWas = !$('#nw-kscan-out').hidden && SCAN ? SCAN.key : null; SCAN = null; $('#nw-kscan-out').hidden = true; $('#nw-khint').textContent = '';   // a draw that stops early leaves no list to suggest for
     hideTip(); const toks = readInput();
-    const ns = $('#nw-ncol'); if (S.ncol && !(S.data || []).some((x) => x.name === S.ncol)) S.ncol = '';
-    if (!S.ncolUser) S.ncol = autoColor(S.data || []);   // chosen for the reader until they pick one
+    const ns = $('#nw-ncol'), commG = ['leiden', 'comm', 'mcl', 'cc'].includes(S.grp); if (S.ncol && S.ncol !== 'comm:' && !(S.data || []).some((x) => x.name === S.ncol)) S.ncol = '';
+    if (!S.ncolUser) S.ncol = autoColor(S.data || []) || (commG ? 'comm:' : '');   // chosen for the reader until they pick one: a table column, else the communities (as LIVIA's network page)
     { const nums = (S.data || []).filter((x) => x.kind === 'num'); if (S.prize && !nums.some((x) => x.name === S.prize)) S.prize = '';   // Score: the table's number columns
       $('#nw-prize').innerHTML = '<option value="">none: every protein-of-interest</option>' + nums.map((x) => `<option value="${esc(x.name)}"${x.name === S.prize ? ' selected' : ''}>${esc(x.name)}</option>`).join(''); $('#nw-prize-wrap').hidden = $('#nw-add').value !== 'tree' || !nums.length; }
-    ns.innerHTML = `<option value="">proteins-of-interest · added partners</option>` + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
-    $('#nw-ncol-wrap').style.display = (S.data || []).length ? '' : 'none';
+    ns.innerHTML = `<option value="">proteins-of-interest · added partners</option>` + (commG ? `<option value="comm:"${S.ncol === 'comm:' ? ' selected' : ''}>${S.grp === 'cc' ? 'connected parts' : 'communities'}</option>` : '') + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
+    $('#nw-ncol-wrap').style.display = (S.data || []).length || commG ? '' : 'none';
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
     $('#nw-grp').innerHTML = [['', 'none'], ['leiden', 'communities · Leiden'], ['comm', 'communities · Louvain'], ['mcl', 'communities · MCL'], ['cc', 'connected parts'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join(''); showRes();
     S.ids = toks.join(','); S.add = $('#nw-add').value; if (!S.kAuto) S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 10)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
@@ -4540,7 +4542,7 @@ async function viewNetwork(spId, q) {
     if (lr) nodes.forEach((d) => { const h = home(d); if (h) { d.x = h[0] + (lr() - 0.5) * 120; d.y = h[1] + (lr() - 0.5) * 120; } else { d.x = FW * (0.1 + 0.8 * lr()); d.y = FH * (0.1 + 0.8 * lr()); } });
     else if (groups.length && !seed) nodes.forEach((d, n) => { const h = home(d); if (h) { d.x = h[0] + 20 * Math.cos(n); d.y = h[1] + 20 * Math.sin(n); } });
     const catOrder = S.grp.startsWith('col:') ? [...gname2.keys()].sort((a, b) => a.localeCompare(b)) : null;   // the same order nodeColors gives a category column
-    const hullG = g.append('g').attr('class', 'nw-hulls').style('pointer-events', 'none'), GCOL = (n) => TAB10[(catOrder ? catOrder.indexOf(groups[n]) : n) % TAB10.length];
+    const hullG = g.append('g').attr('class', 'nw-hulls').style('pointer-events', 'none'), GCOL = (n) => (catOrder ? TAB10[catOrder.indexOf(groups[n]) % TAB10.length] : commHue(n));
     const hulls = hullG.selectAll('g').data(groups).join('g');
     hulls.append('path').attr('fill', (k, n) => GCOL(n)).attr('fill-opacity', 0.07).attr('stroke', (k, n) => GCOL(n)).attr('stroke-opacity', 0.45).attr('stroke-width', 1.5).attr('stroke-linejoin', 'round');
     const drawHulls = () => { if (!groups.length) return; hulls.each(function (k) { const pts = []; for (const d of nodes) if (gk.get(d.id) === k && d.x != null) { const rr = r(d) + 14; for (let a = 0; a < 6; a++) pts.push([d.x + rr * Math.cos(a * Math.PI / 3), d.y + rr * Math.sin(a * Math.PI / 3)]); }
@@ -4555,14 +4557,15 @@ async function viewNetwork(spId, q) {
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && passE(e); }).map((d) => d.id));
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
-      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
+      const byC = S.ncol === 'comm:' && groups.length && !catOrder, gOf = (d) => { const [a, b] = ends(d), x = gk.get(a); return x != null && x === gk.get(b) ? x : null; };   // as LIVIA's network page: an edge inside a community in its color, between communities light gray
+      link.attr('stroke', (d) => (st.hit(d) || !byC ? st.color(d) : gOf(d) != null ? GCOL(groups.indexOf(gOf(d))) : '#C7CED6')).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : byC ? (gOf(d) != null ? 0.75 : 0.35) : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
       const fo = (d) => FOLD.get(fkey(...ends(d)));
       dash.attr('stroke-dasharray', (d) => ((fo(d) || {}).st === 'none' ? '1.2 4.5' : '5 4')).attr('stroke-opacity', (d) => ((fo(d) || {}).st === 'none' ? 0.55 : 0.75));
       const nf = (s) => shownExtra.filter((d) => (fo(d) || {}).st === s).length, nck = shownExtra.filter((d) => fo(d)).length;
       const foldKey = shownExtra.length && nck ? `<div class="kbrow"><span class="muted">reported, not predicted (${fmtInt(shownExtra.length)}):</span><span><i class="kb-dash"></i>folded, scored below the cutoff (${fmtInt(nf('low'))})</span><span><i class="kb-dot"></i>never folded in these screens (${fmtInt(nf('none'))})</span>${nck < shownExtra.length ? `<span class="muted">not checked (${fmtInt(shownExtra.length - nck)})</span>` : ''}${nf('err') ? `<span class="muted">could not be checked (${fmtInt(nf('err'))})</span>` : ''}</div>` : '';
       const xoKey = XO ? `<div class="kbrow"><span class="muted">orthologs in ${XO.names}:</span><span><i class="kb-cons"></i>conserved: also predicted between the orthologs (${fmtInt(halo.size())})</span>${S.xo ? `<span><i class="kb-xo"></i>predicted only between the orthologs, ${S.xo === 'never' ? 'never folded here' : S.set ? 'not predicted in this scope' : 'not predicted here'} (${fmtInt(xo.length)})</span>` : ''}</div>` : '';
-      $('#nw-key').innerHTML = edgeKey(st, K, links, shownExtra) + foldKey + xoKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
+      $('#nw-key').innerHTML = (byC ? `<div class="kbrow"><span class="muted">edges inside a ${S.grp === 'cc' ? 'connected part' : 'community'} in its color, between them light gray; width: best iLIS${st.kb ? '; BioGRID-reported pairs keep their colors' : ''}</span></div>` : edgeKey(st, K, links, shownExtra)) + foldKey + xoKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
       const cb = $('#nw-check'); cb.style.display = shownExtra.length ? '' : 'none'; if (!cb.dataset.busy) cb.textContent = nck && nck === shownExtra.length ? 'Checked: which were folded' : 'Check which were folded'; };
     restyle();
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
@@ -4604,7 +4607,10 @@ async function viewNetwork(spId, q) {
     const hullLabG = g.append('g').attr('class', 'nw-hull-labels').style('pointer-events', 'none'), hullTxt = hullLabG.selectAll('text').data(groups).join('text')
       .text((k) => `${gname2.get(k) || k} (${fmtInt(gsize.get(k))})`).attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', 12).attr('font-weight', 700)
       .attr('fill', (k, n) => GCOL(n)).attr('text-anchor', 'middle').attr('stroke', '#fff').attr('stroke-width', 3).attr('stroke-linejoin', 'round').attr('paint-order', 'stroke');
-    const recolor = () => { const nc = nodeColors(); node.select('circle.nfill').attr('fill', nc.fill); $('#nw-nkey').innerHTML = nc.key; }; recolor();
+    const recolor = () => { if (S.ncol === 'comm:' && groups.length && !catOrder) {   // proteins by community: groups below the outline size gray; proteins-of-interest stay larger
+        node.select('circle.nfill').attr('fill', (d) => (gk.has(d.id) ? GCOL(groups.indexOf(gk.get(d.id))) : '#C3CCD6'));
+        $('#nw-nkey').innerHTML = `<div class="kbrow"><span class="muted">proteins by ${S.grp === 'cc' ? 'connected part' : 'community'} (proteins-of-interest larger):</span>${groups.slice(0, 12).map((k, n) => `<span><i style="background:${GCOL(n)};width:10px;height:10px;border-radius:50%"></i>${esc(gname2.get(k) || k)} (${fmtInt(gsize.get(k))})</span>`).join('')}${groups.length > 12 ? `<span class="muted">+${groups.length - 12} more</span>` : ''}<span><i style="background:#C3CCD6;width:10px;height:10px;border-radius:50%"></i>in a smaller one</span></div>`; restyle(); return; }
+      const nc = nodeColors(); node.select('circle.nfill').attr('fill', nc.fill); $('#nw-nkey').innerHTML = nc.key; restyle(); }; recolor();
     const placeLabels = liftLabels(g, node);
     hullLabG.raise();   // group names above the protein-name layer too
     node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas${SIG.has(d.id) ? (() => { const x = SIG.get(d.id), f = (v) => (v < 0.001 ? v.toExponential(1) : v.toFixed(3)); return `<br>pairs with ${fmtInt(x.k)} of the ${fmtInt(x.m)} proteins-of-interest${x.t ? ' it was folded with' : ''} · p ${f(x.p)}, q ${f(x.q)}${x.q <= 0.05 ? ' (more than chance)' : ''}`; })() : ''}${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partners · ⌘ or Ctrl-click opens its page in a new tab` : 'click for its page'}`, ev.clientX, ev.clientY))
@@ -4752,9 +4758,9 @@ async function viewNetwork(spId, q) {
   const MEANING = { ids: 'proteins-of-interest, as the Atlas resolved them', add: "none: only these proteins; link: + partners linking them; top: + each one's top partners; tree: + the fewest partners connecting them (a Steiner tree, each pair costing 1.05 − best iLIS)", prize: 'tree: the table column whose numbers score each protein-of-interest (blank: none, every reachable one joins)', sig: '1: only added partners linking more proteins-of-interest than chance (BH q ≤ 0.05)', hops: 'partners a linking path may pass through (add = link)',
     k: 'partners per protein (add = top, and per click); absent: picked for you', cut: 'cutoff: 10, 5 or 1 (% FPR), or c for the custom iLIS in cutv', cutv: 'custom iLIS cutoff (cut = c)', iptm: 'also require a best ipTM of at least this (0: none)',
     set: 'the screens used (blank: every screen)', mind: 'Min. pairs: added partners with fewer pairs in the drawing are hidden, repeatedly', minq: '1: Min. pairs applies to proteins-of-interest too', lone: '1: proteins with no pair are hidden',
-    color: 'the table column the proteins are colored by', exp: 'proteins expanded by clicks, in the order clicked', click: 'what a click on a protein does',
+    color: 'what the proteins are colored by: a table column, or comm: for the communities', exp: 'proteins expanded by clicks, in the order clicked', click: 'what a click on a protein does',
     lay: 'layout: force, fr (spring, Fruchterman-Reingold), kk (Kamada-Kawai) or circle', lseed: 'layout seed (0: the fixed start)', iters: "layout rounds (0: the layout's own number)", space: 'spacing (force, spring)', rep: 'repulsion (force)', wpull: '1: stronger pairs closer (force, spring)',
-    grp: 'groups: leiden, comm (Louvain), mcl (MCL), cc (connected parts) or col:<table column>', res: 'resolution (Leiden, Louvain)', infl: 'inflation (MCL)', cw: 'pair weight for communities: ilis (best iLIS), iptm (best ipTM) or eq (equal)',
+    grp: 'groups: leiden (the default), comm (Louvain), mcl (MCL), cc (connected parts), col:<table column> or none', res: 'resolution (Leiden, Louvain)', infl: 'inflation (MCL)', cw: 'pair weight for communities: ilis (best iLIS), iptm (best ipTM) or eq (equal)',
     runs: 'runs, the highest modularity kept (Leiden, Louvain)', cseed: 'community seed (0: the order of the list)', cmin: 'the smallest group outlined',
     xsp: 'orthologs: the species (or all) whose predictions between the orthologs are checked (blank: none)', xo: "ortholog-only pairs drawn dashed: never (where never folded here), below (also where scored below the cutoff here), blank: none" };
   const endsOf = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
@@ -4774,7 +4780,7 @@ async function viewNetwork(spId, q) {
     let X = null; try { X = JSON.parse(await f.text()); } catch (err) { X = null; }
     if (!X || X.format !== 'livia-atlas-network-settings' || !X.settings || typeof X.settings !== 'object') { status(`${esc(f.name)} is not a settings file from this page (saved with ↓ Settings).`); return; }
     if (!((REG && REG.species) || []).some((s) => s.id === X.species)) { status(`${esc(f.name)} is for a species the Atlas does not have (“${esc(String(X.species))}”).`); return; }
-    const qs = new URLSearchParams(); for (const [k, v] of Object.entries(X.settings)) if (v != null && v !== '' && typeof v !== 'object') qs.set(k, String(v));
+    const qs = new URLSearchParams(); for (const [k, v] of Object.entries(X.settings)) if (v != null && v !== '' && typeof v !== 'object') qs.set(k, String(v)); else if (k === 'grp' && v === '') qs.set('grp', 'none');   // a file from before Leiden was the default
     NW_PENDING = { sp: X.species, file: f.name, X }; const h = `#/${X.species}/network?${qs}`;
     if (location.hash === h) route(); else location.hash = h; };
   let POS0 = null, EXPECT = null;   // from a loaded settings file: where each protein was drawn, and the result to compare with
