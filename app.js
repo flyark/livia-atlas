@@ -2331,13 +2331,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   async function orthList() {
     if (!(await orthSpecies()).has(sp.id)) return [];   // no table for this species: no request
     const sh = await orthShard(sp.id, P.key), ent = sh && sh[P.key]; if (!ent) return [];
-    const out = [];
-    for (const [sp2, hits] of Object.entries(ent)) { const reg2 = (REG.species || []).find((x) => x.id === sp2); if (!reg2 || !hits.length) continue;
-      const all = hits.map((h) => ({ key2: h[0], methods: h[1], of: h[2], both: !!(h[3] && h[4]), sym: h[5] || h[0] }));   // [key2, methods, of, best, best_rev, symbol], the most methods first
+    const out = [], so = (await orthMan()).seqonly || {};   // sequence-only species (Xenopus): no predictions in the Atlas, the sequence aligned
+    for (const [sp2, hits] of Object.entries(ent)) { const reg2 = (REG.species || []).find((x) => x.id === sp2) || (so[sp2] && { id: sp2, label: so[sp2].label, seqOnly: true }); if (!reg2 || !hits.length) continue;
+      const all = hits.map((h) => ({ key2: h[0], methods: h[1], of: h[2], both: !!(h[3] && h[4]), sym: h[5] || h[0], xb: h[6] || '' }));   // [key2, methods, of, best, best_rev, symbol], the most methods first
       out.push({ sp2, reg2, ...all[0], alts: all }); }
     const count = new Map(); for (const o of out) { const k = o.sym.toLowerCase(); count.set(k, (count.get(k) || 0) + 1); }   // one family, one name: a runner-up within one method of the top call that carries the symbol most species' top calls carry is drawn instead (fly yki: rat Yap1 5/9 over Wwtr1 6/9)
     for (const o of out) { const top = count.get(o.sym.toLowerCase()) || 0, alt = o.alts.find((x) => x.key2 !== o.key2 && o.methods - x.methods <= 1 && (count.get(x.sym.toLowerCase()) || 0) > top);
-      if (alt) Object.assign(o, { key2: alt.key2, methods: alt.methods, of: alt.of, both: alt.both, sym: alt.sym }); }
+      if (alt) Object.assign(o, { key2: alt.key2, methods: alt.methods, of: alt.of, both: alt.both, sym: alt.sym, xb: alt.xb }); }
     const order = (await orthMan()).species || [], ord = (o) => { const i = order.indexOf(o.sp2); return i < 0 ? 99 : i; };
     return out.sort((a, b) => ord(a) - ord(b));   // the Alliance's species order (mammals, zebrafish, fly, worm, yeast), read from its file by the build
   }
@@ -2348,6 +2348,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     return ls.length > 1 ? `${ls.slice(0, -1).join(', ')} and ${ls[ls.length - 1]}` : ls.join('');
   }
   async function orthLoad(o) {   // the ortholog's index row, predictions, cLIP at the page's cutoff, and the clustered sequence
+    if (o.reg2.seqOnly) {   // a species without predictions in the Atlas (Xenopus): its UniProt sequence only, for the alignment, domains and pLDDT
+      const e = await afdbEntry(o.key2).catch(() => null), seq2 = e && !e.failed && e.seq ? e.seq : await uniprotSeq(o.key2); if (!seq2) throw new Error(`no sequence for ${o.key2} at UniProt`);
+      const st = { ...o, seqOnly: true, P2: { gene: o.sym, key: o.key2, acc: o.key2, xb: o.xb }, B2: null, seq2, m: {}, al: null, doms: null, pl: null };
+      orthExtras(st); await orthCluster(st); return st; }
     const sp2 = await species(o.sp2), P2 = sp2.byKey.get(o.key2); if (!P2) throw new Error(`${o.key2} is not in the ${spLow(sp2.reg.label)} index`);
     const B2 = await trackLoad('data', merged(sp2, P2));
     let seq2 = await seqOf(sp2, P2, B2); if (B2.cons && B2.cons.size && B2.C0.qName) seq2 = B2.seqs.get(B2.C0.qName) || seq2;
@@ -2356,6 +2360,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   async function orthCluster(st) {   // cLIP at the current cutoff, once per cutoff
     if (st.m[cut]) return st.m[cut];
+    if (st.seqOnly) return (st.m[cut] = { fingerprints: [], labels: [], preds: [], k: 0, plen: st.seq2.length });   // no predictions: an empty clustering on its own length
     const m2 = await trackLoad(`Clustering ${st.P2.gene}'s partners (${cut}% FPR)`, runClip(st.B2.C0.rows, st.B2.qLabel, CUT[cut]), 'task'); st.m[cut] = m2;
     if (st.seq2 && m2.plen && st.seq2.length !== m2.plen) st.seq2 = '';   // the bundle's sequence is not the clustered construct's: no alignment, native numbering
     return m2;
@@ -2371,7 +2376,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       sub.textContent = has ? `No ortholog of ${P.gene} among the Atlas proteins of ${names} in the Alliance of Genome Resources' stringent set.` : `Orthologs are listed for ${names}; ${sp.reg.label} proteins have no table yet.`;
       $('#orth-list').innerHTML = ''; $('#c-orth').classList.add('orth-none'); return; }   // nothing below the note: no empty plot, legend or tick box
     renderOrthList();
-    const auto = [...list.filter(orthOwn), ...list.filter((o) => !orthOwn(o))].slice(0, 3);   // three species open by themselves, those with screens of their own first (mouse and rat hold only AFDB pairs); the rest on a click
+    const auto = [...[...list.filter(orthOwn), ...list.filter((o) => !orthOwn(o) && !o.reg2.seqOnly)].slice(0, 3), ...list.filter((o) => o.sp2 === 'xenopus-tropicalis')];   // and Xenopus tropicalis (sequence only) by default   // three species open by themselves, those with screens of their own first (mouse and rat hold only AFDB pairs); the rest on a click
     await Promise.all(auto.map((o) => orthOpen(o)));
   }
   async function orthOpen(o) {
@@ -2384,16 +2389,17 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function renderOrthList() {
     const box = $('#orth-list'), sub = $('#orth-sub'); if (!box || !ORTH.list) return;
     const n = ORTH.list.length, open = [...ORTH.open.values()].filter(Boolean).length;
-    sub.textContent = `${n} ortholog${n === 1 ? '' : 's'} in the Atlas · Alliance of Genome Resources orthologs (stringent set), the best score both ways in dark blue · each ortholog's own cLIP, placed on ${P.gene}'s residues by sequence alignment`;
+    const nS = ORTH.list.filter((o) => o.reg2.seqOnly).length, nA = n - nS;   // Xenopus rows: sequence only
+    sub.textContent = `${nA} ortholog${nA === 1 ? '' : 's'} in the Atlas${nS ? ` and ${nS} in Xenopus (sequence only, no predictions; Xenbase)` : ''} · Alliance of Genome Resources orthologs (stringent set), the best score both ways in dark blue · each ortholog's own cLIP, placed on ${P.gene}'s residues by sequence alignment`;
     box.innerHTML = ORTH.list.map((o) => { const st = ORTH.open.get(o.sp2), loading = ORTH.open.has(o.sp2) && !st, fail = ORTH.fail.get(o.sp2);
       const al = st && st.al, m2 = st && st.m[cut];
       return `<div class="orth-row"><span class="src" style="--c:${o.both ? '#1A5276' : '#627085'}" title="${o.both ? 'the best score both ways' : 'not the best score both ways'}">${spName(o.reg2.label)}</span>
-        <a href="#/${o.sp2}/${encodeURIComponent(o.key2)}">${esc(st ? st.P2.gene : o.sym)}</a> <span class="muted">${o.methods} of ${o.of} methods${o.both ? '' : ' · not the best score both ways'}${st ? ` · ${fmtInt(st.P2.pos10)} partners past 10% FPR` : ''}${al ? ` · aligned ${fmtInt(al.aligned)} of ${fmtInt(qSeq.length)} residues, ${Math.round(100 * al.identity)}% identical` : st && !st.seq2 ? ' · no sequence to align: its own numbering' : st && al === false ? ' · too long to align in the page: its own numbering' : ''}${m2 ? ` · ${fmtInt(m2.fingerprints.length)} predictions in ${m2.k} cluster${m2.k === 1 ? '' : 's'}` : ''}</span>${o.alts.length > 1 ? ` <span class="muted">· also ${o.alts.filter((x) => x.key2 !== o.key2).map((x) => `<button type="button" class="more" data-alt="${esc(o.sp2)}" data-key="${esc(x.key2)}" title="${x.methods} of ${x.of} methods; click to draw this one instead">${esc(x.sym)}</button>`).join(', ')}</span>` : ''}
+        ${o.reg2.seqOnly ? `<a href="https://www.xenbase.org/xenbase/gene/showgene.do?method=display&geneId=${encodeURIComponent(o.xb)}" target="_blank" rel="noopener" title="its Xenbase page">${esc(o.sym)} ↗</a>` : `<a href="#/${o.sp2}/${encodeURIComponent(o.key2)}">${esc(st ? st.P2.gene : o.sym)}</a>`} <span class="muted">${o.methods} of ${o.of} methods${o.both ? '' : ' · not the best score both ways'}${o.reg2.seqOnly ? ` · ${esc(o.key2)} · sequence only, no predictions in the Atlas` : st ? ` · ${fmtInt(st.P2.pos10)} partners past 10% FPR` : ''}${al ? ` · aligned ${fmtInt(al.aligned)} of ${fmtInt(qSeq.length)} residues, ${Math.round(100 * al.identity)}% identical` : st && !st.seq2 ? ' · no sequence to align: its own numbering' : st && al === false ? ' · too long to align in the page: its own numbering' : ''}${m2 && !o.reg2.seqOnly ? ` · ${fmtInt(m2.fingerprints.length)} predictions in ${m2.k} cluster${m2.k === 1 ? '' : 's'}` : ''}</span>${o.alts.length > 1 ? ` <span class="muted">· also ${o.alts.filter((x) => x.key2 !== o.key2).map((x) => `<button type="button" class="more" data-alt="${esc(o.sp2)}" data-key="${esc(x.key2)}" title="${x.methods} of ${x.of} methods; click to draw this one instead">${esc(x.sym)}</button>`).join(', ')}</span>` : ''}
         ${st ? '' : loading ? '<span class="muted">loading…</span>' : fail ? `<span class="muted">${esc(fail)}</span>` : `<button class="more" type="button" data-orth="${esc(o.sp2)}">show</button>`}</div>`; }).join('');
     box.querySelectorAll('[data-orth]').forEach((b) => { b.onclick = () => { const o = ORTH.list.find((x) => x.sp2 === b.dataset.orth); if (o) orthOpen(o); }; });
     box.querySelectorAll('[data-alt]').forEach((b) => { b.onclick = () => {   // another ortholog of the same species (one to many: yeast CDC28 has CDK3, CDK2 and CDK1): draw it instead
       const o = ORTH.list.find((x) => x.sp2 === b.dataset.alt), a = o && o.alts.find((x) => x.key2 === b.dataset.key); if (!a) return;
-      Object.assign(o, { key2: a.key2, methods: a.methods, of: a.of, both: a.both, sym: a.sym }); ORTH.open.delete(o.sp2); ORTH.fail.delete(o.sp2); ORTH.shared.delete(o.sp2); orthOpen(o); }; });
+      Object.assign(o, { key2: a.key2, methods: a.methods, of: a.of, both: a.both, sym: a.sym, xb: a.xb }); ORTH.open.delete(o.sp2); ORTH.fail.delete(o.sp2); ORTH.shared.delete(o.sp2); orthOpen(o); }; });
   }
   function orthFreq(m, act) {   // contacts per residue and the most frequent cluster at each, as the frequency plot counts them
     const L = m.plen, tot = new Uint16Array(L + 2), byC = new Array(L + 2);
@@ -2441,8 +2447,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const ks = new Set([...t.keyS].filter(([, s]) => s.has(c)).map(([k]) => k)); ks.delete(t.st.P2.key);
       const sh = ORTH.shared.get(t.st.sp2), pairs = ((sh && sh.pairs) || []).filter((p) => p.c1 === c && (t.keyS.get(p.k2) || new Set()).has(c));
       pairs.forEach((p) => { lines[0].bold.add(p.k1); });
-      lines.push({ head: orthName(t.st), headH: orthLabel(t.st), items: [...ks].map((k) => { const r = t.st.sp2obj.byKey.get(k); return { k, href: `#/${t.st.sp2}/${encodeURIComponent(t.st.P2.key)}/${encodeURIComponent(k)}`, name: r ? r.gene : k }; }), bold: new Set(pairs.map((p) => p.k2)) }); }
-    const list = (L) => `<li><b>${L.headH || esc(L.head)}</b> <span class="muted">(${fmtInt(L.items.length)})</span> ${L.items.length ? L.items.sort((a, b) => (L.bold.has(b.k) - L.bold.has(a.k)) || COLL.compare(a.name, b.name)).slice(0, 40).map((x) => `<a href="${x.href}"${L.bold.has(x.k) ? ' style="font-weight:700"' : ''}>${esc(x.name)}</a>`).join(', ') + (L.items.length > 40 ? ` and ${fmtInt(L.items.length - 40)} more` : '') : '<span class="muted">none at this cutoff</span>'}</li>`;
+      lines.push({ so: t.st.seqOnly, head: orthName(t.st), headH: orthLabel(t.st), items: [...ks].map((k) => { const r = t.st.sp2obj.byKey.get(k); return { k, href: `#/${t.st.sp2}/${encodeURIComponent(t.st.P2.key)}/${encodeURIComponent(k)}`, name: r ? r.gene : k }; }), bold: new Set(pairs.map((p) => p.k2)) }); }
+    const list = (L) => `<li><b>${L.headH || esc(L.head)}</b> <span class="muted">(${fmtInt(L.items.length)})</span> ${L.items.length ? L.items.sort((a, b) => (L.bold.has(b.k) - L.bold.has(a.k)) || COLL.compare(a.name, b.name)).slice(0, 40).map((x) => `<a href="${x.href}"${L.bold.has(x.k) ? ' style="font-weight:700"' : ''}>${esc(x.name)}</a>`).join(', ') + (L.items.length > 40 ? ` and ${fmtInt(L.items.length - 40)} more` : '') : L.so ? '<span class="muted">sequence only: no predictions in the Atlas</span>' : '<span class="muted">none at this cutoff</span>'}</li>`;
     const A = orthAlign(T, c);
     box.innerHTML = `<div class="orth-site-head"><b><span class="mdot" style="background:${clusterColor(c, M.k)}"></span> ${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· partners contacting this site in each species; partners whose ortholog contacts the same site in bold</span> <button type="button" class="more" id="orth-site-x">close</button></div>`
       + (A ? `<div class="orth-aln-head"><b>Aligned residues</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein</span> <button type="button" class="more" id="orth-aln-copy">copy</button></div>`
@@ -2510,7 +2516,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const qd = PLOTSHOW.dom ? qDomains(L) : [], qdL = laneN(qd), qpl = !!(PLOTSHOW.pl && S.plddt && S.mapOK);   // the Show switches: domains, identity strip, pLDDT
     T.forEach((t) => { t.dL = PLOTSHOW.dom ? laneN(t.doms) : 0; t.pl = !!(PLOTSHOW.pl && t.al && t.st.pl); });
     const blockS = sites.length ? LBL + 12 + T.length * MR + 14 : 0, blockQ = LBL + (qdL ? qdL * DRH + 4 : 0) + TH + 4 + (qpl ? PLH + 6 : 0) + 22;
-    const blockO = (t) => LBL + (t.al && PLOTSHOW.id ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + TH + 4 + (t.pl ? PLH + 6 : 0) + 20 + 8;
+    const blockO = (t) => LBL + (t.al && PLOTSHOW.id ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + (t.st.seqOnly ? 0 : TH + 4) + (t.pl ? PLH + 6 : 0) + 20 + 8;
     const H = 6 + blockS + blockQ + T.reduce((a, t) => a + blockO(t), 0) + 4;
     const g = canvasCtx(cv, W, H), rows = [], hits = [];   // rows: hover areas of the tracks; hits: the sites and marks, hover and click
     const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AX, y0, W - AX - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AX + 0.5, y0); g.lineTo(AX + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
@@ -2555,15 +2561,17 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     for (const t of T) {
       const { st, m2, F2, al, inv, ins, siteAt } = t;
       const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
-      label(`${C.name(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
+      label(`${C.name(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : `${st.seqOnly ? ' · sequence only, no predictions in the Atlas' : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters`}${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
       const yTop = y;
       if (al && PLOTSHOW.id) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#E8ECF0'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, light gray = nothing of the ortholog aligned here
       if (t.dL) { domBoxes(t.doms, y); for (const d of t.doms) rows.push({ kind: 'dom', d, st, y0: y + d.lane * DRH, y1: y + d.lane * DRH + 10 }); y += t.dL * DRH + 4; }
+      if (st.seqOnly) rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: Math.max(y, yTop + IH) });   // no predictions: no bars, the strips only
+      else {
       frame(y, y + TH);
       const colorAt = al ? ((r2) => { const s = siteAt(r2); return s ? clusterColor(s, M.k) : '#B9C2CE'; }) : ((r2) => clusterColor(F2.dom(r2), m2.k));   // aligned: this protein's site colors, gray where no prediction matches a site
       yTicks(bars(F2, y + TH, TH - 4, xAt, colorAt), y + TH, TH - 4);
       if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AX; g.fillStyle = '#B45309'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
-      rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: y + TH }); y += TH + 4;
+      rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: y + TH }); y += TH + 4; }
       if (t.pl) { const pl2 = st.pl; plLine((r) => { const r2 = al.map[r - 1], u = r2 != null ? (st.toRef ? st.toRef[r2 - 1] : r2) : null; return u && pl2[u - 1] != null ? pl2[u - 1] : null; }, y); y += PLH + 6; }
       if (al) { const on = [...inv.keys()].sort((p, q) => p - q), tk = [...new Set([on[0], ...resTicks(F2.L, W - AX - AXR, xtWant()).filter((r2) => inv.has(r2)), on[on.length - 1]])].filter((r2) => r2 != null).sort((p, q) => p - q);   // its own residue numbers, where they align
         const kept = []; for (const r2 of tk) if (!kept.length || xc(inv.get(r2)) - xc(inv.get(kept[kept.length - 1])) > 26) kept.push(r2);   // labels at least 26 px apart
@@ -2572,7 +2580,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       y += 20 + 8;
     }
     const siteTip = (c) => { const s = sites.find((x) => x.c === c);
-      return `<b>${esc(P.gene)} ${clusterLabel(c)}</b> · residues ${s.runs.map(([a, b]) => (a === b ? a : `${a}–${b}`)).join(', ')}<br>${T.map((t) => `${C.lab(t.st)}: ${!t.al ? 'not aligned' : t.inter.has(c) ? `contacted, ${C.pairWord}` : t.hit.has(c) ? 'contacted' : t.call ? 'not contacted' : `too few partners past the cutoff to say (${t.partners})`}`).join('<br>')}<br><span class="muted">${C.clickWord}</span>`; };
+      return `<b>${esc(P.gene)} ${clusterLabel(c)}</b> · residues ${s.runs.map(([a, b]) => (a === b ? a : `${a}–${b}`)).join(', ')}<br>${T.map((t) => `${C.lab(t.st)}: ${!t.al ? 'not aligned' : t.inter.has(c) ? `contacted, ${C.pairWord}` : t.hit.has(c) ? 'contacted' : t.st.seqOnly ? 'sequence only, no predictions' : t.call ? 'not contacted' : `too few partners past the cutoff to say (${t.partners})`}`).join('<br>')}<br><span class="muted">${C.clickWord}</span>`; };
     const at = (e) => { const b = cv.getBoundingClientRect(); return { mx: e.clientX - b.left, my: e.clientY - b.top }; };
     cv.onmousemove = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); cv.style.cursor = h ? 'pointer' : '';
       if (h) return showTip(siteTip(h.c), e.clientX, e.clientY);
@@ -2591,11 +2599,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; C.setSite(C.site() === h.c ? 0 : h.c); C.renderSite(T); };
     if (C.site() && !sites.some((s) => s.c === C.site())) C.setSite(0);
     C.renderSite(T);
-    $(C.key).innerHTML = `<span>bars: predictions contacting each residue (y axis); ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> ${C.diamond} · <b>○</b> not contacted · <b>·</b> fewer than 5 partners past the cutoff, no call</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#E8ECF0;border:1px solid #CBD3DC"></i>no residue of the ${C.word} aligned</span><span><i style="background:#B45309"></i>contacts on the ${C.word}'s inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam, UniProt's where Pfam has none; ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s drawn where its residues align</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
+    $(C.key).innerHTML = `<span>bars: predictions contacting each residue (y axis); ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> ${C.diamond} · <b>○</b> not contacted · <b>·</b> no call: fewer than 5 partners past the cutoff, or no predictions (sequence only)</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#E8ECF0;border:1px solid #CBD3DC"></i>no residue of the ${C.word} aligned</span><span><i style="background:#B45309"></i>contacts on the ${C.word}'s inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam, UniProt's where Pfam has none; ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s drawn where its residues align</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
     attachExport(C.cvId, C.exportName, () => drawOrth(cfg)); C.after();   // the list carries each alignment's numbers once it exists
   }
   async function orthShared(sp2) {   // which of the ortholog's partners have an ortholog among this protein's partners, and the sites both contact
-    const st = ORTH.open.get(sp2), box = $('#orth-shared'); if (!st || !box) return;
+    const st = ORTH.open.get(sp2), box = $('#orth-shared'); if (!st || !box || st.seqOnly) return;
     const m2 = st.m[cut]; if (!m2 || !clustered()) return;
     const best2 = new Map();   // the ortholog's partners in its sites (clustered: rank-1 model past the cutoff): key2 → its cluster (by the best model)
     m2.preds.forEach((p, i) => { const w = st.B2.labels.get(p.partner), k2 = w ? w.key : p.partner; if (k2 === st.P2.key) return; const b = best2.get(k2); if (!b || p.iLIS > b.iLIS) best2.set(k2, { iLIS: p.iLIS, c: m2.labels[i] }); });
