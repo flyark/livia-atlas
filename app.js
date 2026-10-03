@@ -782,16 +782,17 @@ const runColor = (sp, p) => (p.set ? SET_COL[p.set] || '#5B6B7F' : sp.dsColor[p.
 const SEQS = new Map();
 function seqOf(sp, R, B) {
   if (!R) return Promise.resolve('');
-  const s = B && B.seqs.get(R.key); if (s) return Promise.resolve(s);
+  const s = B && B.seqs.get(R.key), want = R.clen || 0; if (s && (!want || s.length === want)) return Promise.resolve(s);   // a bundle can carry another isoform under the gene's key (fly yki: 395 aa there, 418 aa folded)
   return (async () => {
+    let first = '';
     for (const o of R.occ || []) {
       let ds; try { ds = await dataset(sp.dsIds[o.di]); } catch (e) { continue; }
       const f = ds.manifest.files && ds.manifest.files.sequence; if (!f) continue;
       const rel = f.replace('{id}', o.name), ck = ds.id + '|' + rel;
       if (!SEQS.has(ck)) SEQS.set(ck, screenFile(ds, rel).then((r) => (r ? r.text() : '')).then((t) => [...parseFasta(t).values()][0] || '').catch(() => ''));
-      const seq = await SEQS.get(ck); if (seq) return seq;
+      const seq = await SEQS.get(ck); if (seq && (!want || seq.length === want)) return seq; if (seq && !first) first = seq;
     }
-    return '';
+    return s || first || '';   // no file holds the folded length: the bundle's sequence as before, or the first file's
   })();
 }
 
@@ -2175,10 +2176,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     for (const [sp2, hits] of Object.entries(ent)) { const reg2 = (REG.species || []).find((x) => x.id === sp2); if (!reg2 || !hits.length) continue;
       const all = hits.map((h) => ({ key2: h[0], methods: h[1], of: h[2], both: !!(h[3] && h[4]), sym: h[5] || h[0] }));   // [key2, methods, of, best, best_rev, symbol], the most methods first
       out.push({ sp2, reg2, ...all[0], alts: all }); }
-    const own = (o) => ((o.reg2.datasets || []).some((d) => !/^afdb-het-|^viral-dimers-afdb$/.test(d)) ? 1 : 0);   // an AlphaFold-Multimer screen of its own, beyond the AFDB heterodimers
-    const ord = (o) => (REG.species || []).findIndex((x) => x.id === o.sp2);
-    return out.sort((a, b) => (own(b) - own(a)) || (b.methods / b.of - a.methods / a.of) || (b.methods - a.methods) || (b.both - a.both) || (ord(a) - ord(b)));   // mouse and rat hold only AFDB pairs: the species with screens of their own open first
+    const count = new Map(); for (const o of out) { const k = o.sym.toLowerCase(); count.set(k, (count.get(k) || 0) + 1); }   // one family, one name: a runner-up within one method of the top call that carries the symbol most species' top calls carry is drawn instead (fly yki: rat Yap1 5/9 over Wwtr1 6/9)
+    for (const o of out) { const top = count.get(o.sym.toLowerCase()) || 0, alt = o.alts.find((x) => x.key2 !== o.key2 && o.methods - x.methods <= 1 && (count.get(x.sym.toLowerCase()) || 0) > top);
+      if (alt) Object.assign(o, { key2: alt.key2, methods: alt.methods, of: alt.of, both: alt.both, sym: alt.sym }); }
+    const order = (await orthMan()).species || [], ord = (o) => { const i = order.indexOf(o.sp2); return i < 0 ? 99 : i; };
+    return out.sort((a, b) => ord(a) - ord(b));   // the Alliance's species order (mammals, zebrafish, fly, worm, yeast), read from its file by the build
   }
+  const orthOwn = (o) => (o.reg2.datasets || []).some((d) => !/^afdb-het-|^viral-dimers-afdb$/.test(d));   // an AlphaFold-Multimer screen of its own, beyond the AFDB heterodimers
   const orthOpened = () => (ORTH.list || []).map((o) => ORTH.open.get(o.sp2)).filter(Boolean);   // loaded orthologs in the list's order, whatever order they loaded in
   async function orthNames() {   // the species with tables, named as on the species pages (one-word labels in lower case)
     const ids = [...(await orthSpecies())], ls = ids.map((id) => { const r = (REG.species || []).find((x) => x.id === id), l = r ? r.label : id; return /^[A-Z][a-z]+$/.test(l) ? l.toLowerCase() : l; });
@@ -2207,7 +2211,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       sub.textContent = has ? `No ortholog of ${P.gene} among the Atlas proteins of ${names} in the Alliance of Genome Resources' stringent set.` : `Orthologs are listed for ${names}; ${sp.reg.label} proteins have no table yet.`;
       $('#orth-list').innerHTML = ''; $('#c-orth').classList.add('orth-none'); return; }   // nothing below the note: no empty plot, legend or tick box
     renderOrthList();
-    const auto = list.slice(0, 3);   // the first three species open by themselves (species with screens of their own first, then method agreement); the rest on a click
+    const auto = [...list.filter(orthOwn), ...list.filter((o) => !orthOwn(o))].slice(0, 3);   // three species open by themselves, those with screens of their own first (mouse and rat hold only AFDB pairs); the rest on a click
     await Promise.all(auto.map((o) => orthOpen(o)));
   }
   async function orthOpen(o) {
@@ -2294,8 +2298,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const qd = qDomains(L), qdL = laneN(qd), qpl = !!(S.plddt && S.mapOK);
     T.forEach((t) => { t.dL = laneN(t.doms); t.pl = !!(t.al && t.st.pl); });
     const blockS = sites.length ? LBL + 12 + T.length * MR + 14 : 0, blockQ = LBL + (qdL ? qdL * DRH + 4 : 0) + TH + 4 + (qpl ? PLH + 6 : 0) + 22;
-    const blockO = (t) => LBL + (t.al ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + TH + 4 + (t.pl ? PLH + 6 : 0) + 10;
-    const H = 6 + blockS + blockQ + T.reduce((a, t) => a + blockO(t), 0) + 24;
+    const blockO = (t) => LBL + (t.al ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + TH + 4 + (t.pl ? PLH + 6 : 0) + 20 + 8;
+    const H = 6 + blockS + blockQ + T.reduce((a, t) => a + blockO(t), 0) + 4;
     const g = canvasCtx(cv, W, H), rows = [], hits = [];   // rows: hover areas of the tracks; hits: the sites and marks, hover and click
     const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
     const label = (text, y, color = '#17263A') => { g.fillStyle = color; g.font = '600 11.5px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.fillText(text, AXL, y); };
@@ -2349,9 +2353,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AXL; g.fillStyle = '#B45309'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
       rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: y + TH }); y += TH + 4;
       if (t.pl) { const pl2 = st.pl; plLine((r) => { const r2 = al.map[r - 1]; return r2 != null && pl2[r2 - 1] != null ? pl2[r2 - 1] : null; }, y); y += PLH + 6; }
-      y += 10;
+      if (al) { const on = [...inv.keys()].sort((p, q) => p - q), tk = [...new Set([on[0], ...resTicks(F2.L, W - AXL - AXR, xtWant()).filter((r2) => inv.has(r2)), on[on.length - 1]])].filter((r2) => r2 != null).sort((p, q) => p - q);   // its own residue numbers, where they align
+        const kept = []; for (const r2 of tk) if (!kept.length || xc(inv.get(r2)) - xc(inv.get(kept[kept.length - 1])) > 26) kept.push(r2);   // labels at least 26 px apart
+        drawTicks(g, kept, y, (r2) => xc(inv.get(r2)), W); }
+      else drawTicks(g, resTicks(Math.min(F2.L, L), W - AXL - AXR, xtWant()), y, xc, W);
+      y += 20 + 8;
     }
-    drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), y, xc, W);
     const siteTip = (c) => { const s = sites.find((x) => x.c === c);
       return `<b>${esc(P.gene)} ${clusterLabel(c)}</b> · residues ${s.runs.map(([a, b]) => (a === b ? a : `${a}–${b}`)).join(', ')}<br>${T.map((t) => `${orthLabel(t.st)}: ${!t.al ? 'not aligned' : t.inter.has(c) ? 'contacted, by an ortholog pair' : t.hit.has(c) ? 'contacted' : t.call ? 'not contacted' : `too few partners past the cutoff to say (${t.partners})`}`).join('<br>')}<br><span class="muted">click for the partners in each species</span>`; };
     const at = (e) => { const b = cv.getBoundingClientRect(); return { mx: e.clientX - b.left, my: e.clientY - b.top }; };
@@ -2460,10 +2467,17 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (c === 'all') b.classList.toggle('sel', all); else { b.classList.toggle('sel', !all && ACTIVE.has(+c)); b.classList.toggle('off', !all && !ACTIVE.has(+c)); } });
   }
   function emptyPlot(host, msg) { host.innerHTML = `<div class="plot-empty">${msg}</div>`; }
-  function qDomains(L) {   // UniProt domains sit on the current UniProt sequence: drawn only when the predicted construct is that sequence's length
-    if (!S.domains || !S.domains.length || !(P.len && P.len === L)) return [];
-    if (sp.manifest.keyedBy && !(qSeq && S.uniSeq === qSeq)) return [];   // fly: only when the FlyBase reference is UniProt's sequence
-    return S.domains.map((d) => ({ name: d.name, start: d.start, end: d.end, s: d.start, e: d.end })).filter((d) => d.e >= 1 && d.s <= L).sort((a, b) => a.s - b.s);
+  function qDomains(L) {   // UniProt domains sit on the UniProt sequence: placed directly when the clustered construct is that sequence, through an alignment when it is another isoform (fly yki: 418 aa folded, UniProt 395 aa)
+    if (!S.domains || !S.domains.length) return [];
+    let map = null;
+    if (!(P.len && P.len === L) || (sp.manifest.keyedBy && !(qSeq && S.uniSeq === qSeq))) {
+      if (!qSeq || qSeq.length !== L || !S.uniSeq || S.uniSeq === qSeq) return [];
+      const mi = CLIPResolver.alignMap(S.uniSeq, qSeq); if (!mi || mi.covered < 0.8 * Math.min(S.uniSeq.length, L)) return [];   // most of UniProt's sequence must line up
+      map = mi.map;   // UniProt residue → construct residue
+    }
+    return S.domains.map((d) => { if (!map) return { name: d.name, start: d.start, end: d.end, s: d.start, e: d.end };
+      let s = 0, e = 0; for (let u = d.start; u <= d.end; u++) { const c = map[u - 1]; if (c) { if (!s || c < s) s = c; if (c > e) e = c; } }
+      return s ? { name: d.name, start: d.start, end: d.end, s, e } : null; }).filter((d) => d && d.e >= 1 && d.s <= L).sort((a, b) => a.s - b.s);
   }
 
   function drawFreq() {
@@ -2507,7 +2521,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const sr = toStruct(r), plv = pl && sr ? S.plddt.get('A:' + sr) : null, amv = am && sr ? S.am[sr] : null, dom = doms.filter((d) => r >= d.s && r <= d.e).map((d) => d.name).join(', ');
       showTip(`<b>${qSeq[r - 1] || ''}${r}</b> · ${tot[r]} prediction${tot[r] === 1 ? '' : 's'}${parts ? '<br>' + parts : ''}${dom ? `<br>${esc(dom)}` : ''}${plv != null ? `<br>pLDDT ${plv.toFixed(0)}` : ''}${amv != null ? `${plv != null ? ' · ' : '<br>'}AM ${amv.toFixed(2)}` : ''}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
-    $('#freq-domains').innerHTML = doms.length ? `<b>Domains</b> ${doms.map((d) => `<span><b>D${d.idx}</b> ${esc(d.name)} <span class="muted">(${d.start}–${d.end})</span></span>`).join('')}${P.acc ? uniprotLink(P.acc, `UniProt ${esc(P.acc)} ↗`) : ''}` : '';
+    $('#freq-domains').innerHTML = doms.length ? `<b>Domains</b> ${doms.map((d) => `<span><b>D${d.idx}</b> ${esc(d.name)} <span class="muted">(${d.start}–${d.end}${d.s !== d.start || d.e !== d.end ? ` in UniProt, ${d.s}–${d.e} here` : ''})</span></span>`).join('')}${P.acc ? uniprotLink(P.acc, `UniProt ${esc(P.acc)} ↗`) : ''}` : '';
     const hot = range(L).filter((r) => tot[r]).sort((a, b) => tot[b] - tot[a]).slice(0, 12);
     $('#hot').innerHTML = hot.length ? `<span class="hot-lbl">Most contacted</span>${hot.map((r) => `<span title="${tot[r]} predictions">${qSeq[r - 1] || ''}${r} · ${tot[r]}</span>`).join('')}` : '';
     attachExport('freq', `atlas_${P.gene}_frequency`, drawFreq);
