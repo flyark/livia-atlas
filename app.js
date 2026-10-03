@@ -1911,7 +1911,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-orth', 'Orthologs'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners']];   // answers first (who, where, which share), then evidence, then tools
+  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs']];   // answers first (who, where, which share), then evidence, then tools
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -1952,8 +1952,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
         show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a variant (for example <span id="res-eg">T983A</span>) to see which
         predictions, partners and sites contact it; the link keeps it.</p><p class="note" id="clip-aside" hidden></p></div>
-    <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div>${xticks}</div>
-      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
     <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners of each binding site · Cluster n (proteins / predictions) · largest first</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
       <p class="muted" style="margin:2px 0 6px">${esc(P.gene)} as predicted alone in the AlphaFold Database, residues colored by the cluster that consensus-contacts them · click clusters to isolate.
@@ -1989,7 +1987,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="controls" style="margin:0"><select id="pt-src" aria-label="Which screens"><option value="0">all screens</option>${sp.dsIds.map((_, di) => (P.src & (1 << di) ? `<option value="${1 << di}">${esc(sp.dsShort[di])}</option>` : '')).join('')}</select>
         <select id="pt-band" aria-label="Which partners, by FPR band"><option value="10">past 10% FPR (iLIS ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ${CUT[1]})</option><option value="0">all predicted</option></select>
         <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
-      <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>`;
+      <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>
+    <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div>${xticks}</div>
+      <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>`;
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
       const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
