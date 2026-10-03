@@ -139,17 +139,18 @@ function showTip(html, x, y) {
 const hideTip = () => { TIP.hidden = true; };
 // A note that explains itself (data-tip): its text in the site tooltip on mouse hover, keyboard focus and tap, so a phone reaches it
 // too. A second tap closes it, as does a tap elsewhere or a scroll; a tap on a note inside a sortable header shows the note and does not sort.
-{ let open = null, lastType = 'mouse', downAt = 0; const tipOf = (e) => e.target.closest && e.target.closest('[data-tip]');
-  const near = (k) => { open = k; const b = k.getBoundingClientRect(); showTip(esc(k.dataset.tip), b.left + b.width / 2, b.top); }, close = () => { if (open) { open = null; hideTip(); } };   // close only a note's tip
+{ let open = null, lastType = 'mouse', downAt = 0, shownAt = 0; const tipOf = (e) => e.target.closest && e.target.closest('[data-tip]');
+  const near = (k) => { open = k; shownAt = Date.now(); const b = k.getBoundingClientRect(); showTip(esc(k.dataset.tip), b.left + b.width / 2, b.top); }, close = () => { if (open) { open = null; hideTip(); } };   // close only a note's tip
   document.addEventListener('pointerdown', (e) => { lastType = e.pointerType || 'mouse'; downAt = Date.now(); }, true);
+  document.addEventListener('keydown', () => { lastType = 'keyboard'; }, true);   // Enter or Space on a focused note clicks it with no pointer: keep it open
   document.addEventListener('pointerover', (e) => { if (e.pointerType !== 'mouse') return; const k = tipOf(e); if (k) near(k); });
   document.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse' && tipOf(e)) close(); });
   document.addEventListener('focusin', (e) => { const k = tipOf(e); if (k && Date.now() - downAt > 500) near(k); });   // keyboard focus; a tap's own focus is left to its click
   document.addEventListener('focusout', (e) => { if (tipOf(e)) close(); });
   document.addEventListener('click', (e) => { const k = tipOf(e); if (!k) { close(); return; }
     e.stopPropagation(); e.preventDefault();   // the note explains; the header around it does not sort
-    if (lastType !== 'mouse' && open === k) close(); else near(k); }, true);
-  window.addEventListener('scroll', close, { passive: true }); }
+    if ((lastType === 'touch' || lastType === 'pen') && open === k) close(); else near(k); }, true);
+  window.addEventListener('scroll', () => { if (Date.now() - shownAt > 400) close(); }, { passive: true }); }   // not the scroll that keyboard focus itself causes
 const uniprotLink = (acc, label) => (acc ? `<a href="https://www.uniprot.org/uniprotkb/${esc(acc)}" target="_blank" rel="noopener">${label || 'UniProt ' + esc(acc)}</a>` : '');
 
 /* ── data: registry, screens, species, merged bundles, sequences ──────────────────────────────────────── */
@@ -1252,7 +1253,7 @@ function dsCard(d) {
   const rec = d.status === 'record' && d.zip && d.zip.record;   // in the Zenodo record only: in nearly all of its pairs one protein belongs to another taxon (95% or more in every such set), so no species page; its own short page
   const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : d.status === 'record' ? 'Zenodo record' : 'Planned'}</span>
     <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : rec ? `<a href="#/datasets/${esc(d.id)}" title="in the LIVIA Atlas record on Zenodo; in nearly all of its pairs one protein belongs to another taxon, so the Atlas has no species page for it">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
-    <div class="sp">${esc(spx ? spx.name : d.speciesName || d.species || '')}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
+    <div class="sp">${spName(spx ? spx.name : d.speciesName || d.species || '')}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
   const src = d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source);   // every paper reference links to the paper
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
     <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div></div>`;
@@ -1388,7 +1389,7 @@ async function setCards(gen, reg) {
       const src = cite ? (cite.paper ? `<a href="${esc(cite.paper)}" target="_blank" rel="noopener">${esc(cite.source)} ↗</a>` : esc(cite.source)) : '';
       const card = `<div class="ds live" data-set="${d.id}/${s.id}"><span class="badge on">Searchable</span>
         <h3><a href="#/datasets/${d.id}/${s.id}">${esc(spx ? spx.label : d.species)} ${esc(s.title.charAt(0).toLowerCase() + s.title.slice(1))}</a></h3>
-        <div class="sp">${esc(spx ? spx.name : d.species)} · <span class="src" style="--c:${s.color}">${esc(s.short)}</span></div>${d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}
+        <div class="sp">${spName(spx ? spx.name : d.species)} · <span class="src" style="--c:${s.color}">${esc(s.short)}</span></div>${d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}
         <div class="stats"><div><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div><b>${fmtInt(k.pairsFpr10)}</b><span>past 10% FPR${cutNote(10)}</span></div></div>
         <div class="src-line">${src}${src ? ' · ' : ''}a set within <a href="#/datasets/${d.id}">${esc(d.title)}</a></div></div>`;
       const after = kin.map((x) => box.querySelector(`[data-ds="${x.id}"]`)).filter(Boolean)[0];
@@ -1403,7 +1404,7 @@ async function viewSpeciesList() {   // every species: model organisms (the Atla
   const byName = (a, b) => a.name.localeCompare(b.name), inGroup = (g) => list.filter((x) => x.group === g).sort(byName);
   const groups = [['Model organisms', [...coreSpecies(reg).filter((x) => !x.heading), ...inGroup('Model organisms')]], ['Other species', inGroup('Other species')], ['Viral proteomes', coreSpecies(reg).filter((x) => x.heading)]];
   const AFDB_NOTE = 'One AlphaFold Database heterodimer screen per species, one AlphaFold-Multimer model per pair, rescored with lis.py.';
-  const row = (x) => `<tr><td><a href="#/${x.id}"><i>${esc(x.name)}</i></a>${x.label !== x.name ? ` <span class="muted">${esc(x.label)}</span>` : ''}${x.group === 'Model organisms' ? ' <span class="tag-afdb" title="' + AFDB_NOTE + '">AFDB, one model per pair</span>' : ''}</td><td class="n" data-tx>${x.taxon || ''}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`;
+  const row = (x) => `<tr><td><a href="#/${x.id}">${spName(x.name)}</a>${x.label !== x.name ? ` <span class="muted">${esc(x.label)}</span>` : ''}${x.group === 'Model organisms' ? ' <span class="tag-afdb" title="' + AFDB_NOTE + '">AFDB, one model per pair</span>' : ''}</td><td class="n" data-tx>${x.taxon || ''}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`;
   const note = (xs) => (xs.every((x) => x.group) ? AFDB_NOTE : xs.some((x) => x.group) ? 'Species marked AFDB have one AlphaFold Database heterodimer screen, one AlphaFold-Multimer model per pair, rescored with lis.py; the others are the Atlas\'s interactome screens.' : '');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / Species</div>
     <div class="card"><h1 style="margin:0">Species</h1>
@@ -1557,7 +1558,7 @@ async function viewSet(dsId, setId) {
   const link = (u, t) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a> / <a href="#/datasets/${ds.id}/${S.id}">${esc(S.short)}</a></div>
     <div class="dshead"><h1>${esc(S.title)}</h1>
-      <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} within ${esc(ds.reg.title)} · <i>${esc(m.species.name)}</i></div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
+      <div class="pname"><span class="src" style="--c:${S.color}">${esc(S.short)}</span> ${S.type === 'screen' ? 'A screen' : 'A source category'} within ${esc(ds.reg.title)} · ${spName(m.species.name)}</div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
       ${S.source ? `<div class="cite">${link(S.source.url, `${S.source.citation} doi:${S.source.doi}`)}</div>` : ''}
       <div class="cite">Part of ${m.source.url ? link(m.source.url, m.source.citation) : esc(m.source.citation)}</div></div>
     ${kpiRow(k)}
@@ -1569,7 +1570,8 @@ async function viewSet(dsId, setId) {
       <a href="https://github.com/flyark/livia-atlas/blob/main/tools/extract_set.py" target="_blank" rel="noopener">extract_set.py ↗</a> pulls out just this set as a table.</p></div>`;
   mountSearch($('#set-search'), { spId: sp.id, only: keys, set: S.id });
 }
-const spName = (nm) => { const m = /^(.*?)( \((?:taxon|strain) [^)]*\))?$/.exec(nm || ''); return `<i>${esc(m[1])}</i>${m[2] ? esc(m[2]) : ''}`; };   // a species name in italics, its "(taxon N)" upright
+const spName = (nm) => { const m = /^(.*?)( \((?:taxon|strain) [^)]*\))?$/.exec(nm || ''), bin = /^([A-Z][a-z]+ [a-z]|[A-Z]\. [a-z])/.test(m[1]);   // a species name in italics, its "(taxon N)" upright; a common name (Human, Fly) upright
+  return bin ? `<i>${esc(m[1])}</i>${m[2] ? esc(m[2]) : ''}` : esc(nm || ''); };
 async function viewDatasetOff(d, gen = ROUTE) {   // a set the Atlas does not search (in the record only, a separate site, or planned): what it is and where it is
   const rec = d.status === 'record' && d.zip && d.zip.record, spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
   let m = null; if (d.base) try { m = await getJSON(d.base + 'manifest.json'); } catch (e) { /* the registry's lines stand */ }
@@ -2301,7 +2303,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     sub.textContent = `${n} ortholog${n === 1 ? '' : 's'} in the Atlas · Alliance of Genome Resources orthologs (stringent set), the best score both ways in dark blue · each ortholog's own cLIP, placed on ${P.gene}'s residues by sequence alignment`;
     box.innerHTML = ORTH.list.map((o) => { const st = ORTH.open.get(o.sp2), loading = ORTH.open.has(o.sp2) && !st, fail = ORTH.fail.get(o.sp2);
       const al = st && st.al, m2 = st && st.m[cut];
-      return `<div class="orth-row"><span class="src" style="--c:${o.both ? '#1A5276' : '#627085'}" title="${o.both ? 'the best score both ways' : 'not the best score both ways'}">${esc(o.reg2.label)}</span>
+      return `<div class="orth-row"><span class="src" style="--c:${o.both ? '#1A5276' : '#627085'}" title="${o.both ? 'the best score both ways' : 'not the best score both ways'}">${spName(o.reg2.label)}</span>
         <a href="#/${o.sp2}/${encodeURIComponent(o.key2)}">${esc(st ? st.P2.gene : o.sym)}</a> <span class="muted">${o.methods} of ${o.of} methods${o.both ? '' : ' · not the best score both ways'}${st ? ` · ${fmtInt(st.P2.pos10)} partners past 10% FPR` : ''}${al ? ` · aligned ${fmtInt(al.aligned)} of ${fmtInt(qSeq.length)} residues, ${Math.round(100 * al.identity)}% identical` : st && !st.seq2 ? ' · no sequence to align: its own numbering' : st && al === false ? ' · too long to align in the page: its own numbering' : ''}${m2 ? ` · ${fmtInt(m2.fingerprints.length)} predictions in ${m2.k} cluster${m2.k === 1 ? '' : 's'}` : ''}</span>${o.alts.length > 1 ? ` <span class="muted">· also ${o.alts.filter((x) => x.key2 !== o.key2).map((x) => `<button type="button" class="more" data-alt="${esc(o.sp2)}" data-key="${esc(x.key2)}" title="${x.methods} of ${x.of} methods; click to draw this one instead">${esc(x.sym)}</button>`).join(', ')}</span>` : ''}
         ${st ? '' : loading ? '<span class="muted">loading…</span>' : fail ? `<span class="muted">${esc(fail)}</span>` : `<button class="more" type="button" data-orth="${esc(o.sp2)}">show</button>`}</div>`; }).join('');
     box.querySelectorAll('[data-orth]').forEach((b) => { b.onclick = () => { const o = ORTH.list.find((x) => x.sp2 === b.dataset.orth); if (o) orthOpen(o); }; });
@@ -3345,7 +3347,7 @@ async function viewSpecies(spId) {
   if (stale(gen)) return;
   document.title = `${sp.reg.label} · LIVIA Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a></div>
-    <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname"><i>${esc(sp.reg.name)}</i> · from the available interactome datasets, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
+    <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname">${spName(sp.reg.name)} · from the available interactome datasets, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
     ${sp.viruses ? `<div class="card" id="vir-card"><div class="card-head"><div><h2>Viruses</h2><div class="muted">${fmtInt(sp.viruses.length)} viruses; in each, every pair of its proteins was folded. Open one for its network.</div></div>
