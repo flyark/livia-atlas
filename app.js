@@ -2105,6 +2105,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   catch (e) { if (!gone()) $('#clip-sub').textContent = e.message; return; }
   if (gone()) return;
   const scopeQ = SET ? `?set=${encodeURIComponent(SET.id)}` : '';
+  { const cb = app.querySelector('.phead .cite-link'); if (cb) cb.dataset.ds = (SET && SET.type === 'dataset' ? [SET.id] : SET && TS0 ? [TS0.ds.id] : sp.dsIds.filter((_, i) => P.src & (1 << i))).join(','); }   // Cite: the scope's screen (a set's own screen), or every screen when no scope applies
   // Isoforms folded separately (a construct too unlike the reference to be drawn on it): the page shows one at a time,
   // every card on its predictions; the "Isoform" row switches, the Isoforms card compares them. BA keeps them all.
   const BA = B, pick = BA.choices && (BA.choices.length > 1 || (BA.split && BA.choices[0] && BA.choices[0].id));   // a split gene in a set with isoform models only opens on one
