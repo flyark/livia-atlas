@@ -3413,14 +3413,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   // The paralogs listed in the table (the first 6 in the Atlas index) load on the first click.
   const paraSt = (k) => { if (!PALN.st.has(k)) PALN.st.set(k, orthLoad({ sp2: sp.id, key2: k, reg2: sp.reg, redraw: () => drawOrth(PCFG) }).catch(() => null)); return PALN.st.get(k); };
   async function paraLoad() {   // the paralogs listed (the first 6 in the Atlas index): predictions, cLIP, sequence; then the plot
-    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), host = $('#para-wrap'); if (!host) return;
+    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), host = $('#para-wrap'), tok = (PALN.ltok = (PALN.ltok || 0) + 1); if (!host) return;
     if (!rows.length) { PALN.trk = []; host.innerHTML = ''; $('#para-key').innerHTML = ''; return; }
     if (!PALN.trk) host.innerHTML = `<p class="muted">Clustering the predictions of ${fmtInt(rows.length)} paralog${rows.length === 1 ? '' : 's'}…</p>`;
-    const sts = await Promise.all(rows.map((x) => paraSt(x.k2))); if (gone()) return;
+    const sts = await Promise.all(rows.map((x) => paraSt(x.k2))); if (gone() || tok !== PALN.ltok) return;   // a newer list (the low-confidence box) wins
     PALN.trk = sts.filter(Boolean); drawOrth(PCFG);
   }
   function paraSitesOf() {   // this protein's sites: the residues where a cluster is the most frequent, in runs (gaps of up to 3 joined), as in drawOrth
-    const FQ = orthFreq(M, null), L = M.plen, siteOf = (r) => (r >= 1 && r <= L && FQ.tot[r] ? FQ.dom(r) : 0);
+    const FQ = orthFreq(M, allOn() ? null : ACTIVE), L = M.plen, siteOf = (r) => (r >= 1 && r <= L && FQ.tot[r] ? FQ.dom(r) : 0);   // the clusters shown, as the plot
     const sites = range(M.k).map((c) => { const runs = []; let a = 0, b = 0;
       for (let r = 1; r <= L; r++) if (siteOf(r) === c) { if (a && r - b <= 4) b = r; else { if (a) runs.push([a, b]); a = b = r; } }
       if (a) runs.push([a, b]); return { c, runs }; }).filter((x) => x.runs.length);
@@ -4254,8 +4254,8 @@ async function viewNetwork(spId, q) {
   const status = (t) => { $('#nw-status').innerHTML = t; };
   const gname = (i) => sp.rows[i].gene, screens = (m) => sp.dsShort.filter((_, di) => m & (1 << di)).join(' + '), refs = (m) => [...new Set(sp.dsIds.filter((_, di) => m & (1 << di)).map(refOf).filter(Boolean))].join('; ');
   let tableNote = '';
-  let SIG = new Map(), ENR = { key: '', html: '' };
-  const bandKey = () => ({ 10: 'pos10', 5: 'pos5', 1: 'pos1' }[S.cut] || (cutV() >= CUT[1] ? 'pos1' : cutV() >= CUT[5] ? 'pos5' : 'pos10'));   // the index's partner count at the cutoff's band (a custom cutoff: the band at or below it)   // added partners' chance p and q; the last enrichment test, by list and cutoff
+  let SIG = new Map(), ENR = { key: '', html: '' };   // added partners' chance p and q; the last enrichment test, by list and cutoff
+  const bandKey = () => ({ 10: 'pos10', 5: 'pos5', 1: 'pos1' }[S.cut] || (cutV() >= CUT[1] ? 'pos1' : cutV() >= CUT[5] ? 'pos5' : 'pos10'));   // the index's partner count at the cutoff's band (a custom cutoff: the band at or below it)
   // A number column as each protein-of-interest's prize: ranked from 1/n to 1 over the proteins-of-interest with a value (p-values and
   // FDRs by −log10, a raw fold change by log2, every column by size either way, as the colors read them), times PRIZE; no value: half.
   const PRIZE = 1.5;
@@ -4380,7 +4380,7 @@ async function viewNetwork(spId, q) {
       [...D].filter(([, t]) => t.d1 + t.d2 <= h + 1).sort((a, b) => (a[1].d1 + a[1].d2) - (b[1].d1 + b[1].d2) || b[1].n - a[1].n || gname(a[0]).localeCompare(gname(b[0])))
         .slice(0, CAP - keep.size).forEach(([j]) => keep.add(j)); }
     else if (S.add === 'top') expandTop(Q, S.k, keep);
-    let treeInfo = null; if (S.add === 'tree') treeInfo = steinerAdd(Q, keep, E, CAP);
+    let treeInfo = null; if (S.add === 'tree') treeInfo = Q.size >= 2 ? steinerAdd(Q, keep, E, CAP) : null;
     let expNote = '', lastFresh = 0, lastAdded = 0;   // what the latest click could add, and did
     for (const key of S.exp) {   // clicks: each expanded protein's top partners, in the order clicked, while under the cap
       const r = sp.byKey.get(key); if (!r || !keep.has(r.i)) continue; expd.add(r.i);
