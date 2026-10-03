@@ -2323,6 +2323,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
      with its own cLIP, drawn on this protein's residues through a pairwise sequence alignment (ALIGN, affine gaps, BLOSUM62).
      Conserved binding sites line up; the identity strip says where the alignment can be trusted, and the shared partners say
      which sites the same orthologous partners contact in both species. */
+  let PARA = null; const PALN = { st: new Map(), c: 0, tok: 0 };   // the Paralogs card: its table, and the loaded paralogs and chosen site of its aligned residues
   const ORTH = { list: null, open: new Map(), fail: new Map(), shared: new Map(), shOpen: new Set(), site: 0 };   // open: species id → loaded ortholog; shared: species id → shared-partner table; shOpen: its line opened by the reader
   const orthHost = () => $('#c-orth');
   async function orthList() {
@@ -2410,12 +2411,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     }).catch(() => {});
   }
   const SIMG = ['STA', 'NEQK', 'NHQK', 'NDEQ', 'QHRK', 'MILV', 'MILF', 'HY', 'FYW'], simAA = (x, y) => SIMG.some((g) => g.includes(x) && g.includes(y));   // Clustal's strong groups
-  function orthAlign(T, c) {   // a site's residues and 5 either side, in this protein and each open ortholog, column by column on this protein's residues
-    const site = (ORTH.sites || []).find((x) => x.c === c), L = M.plen, al = T.filter((t) => t.al); if (!site || !qSeq || !al.length) return null;
+  function orthAlign(T, c, sites = ORTH.sites, named = true) {   // named: rows start with the species (orthologs); paralogs share this protein's   // a site's residues and 5 either side, in this protein and each open ortholog (or paralog), column by column on this protein's residues
+    const site = (sites || []).find((x) => x.c === c), L = M.plen, al = T.filter((t) => t.al); if (!site || !qSeq || !al.length) return null;
     const blocks = []; for (const [a, b] of site.runs) { const lo = Math.max(1, a - 5), hi = Math.min(L, b + 5), last = blocks[blocks.length - 1];
       if (last && lo <= last[1] + 4) last[1] = Math.max(last[1], hi); else blocks.push([lo, hi]); }
-    const FQ = orthFreq(M, null), rows = [{ label: `${spShort(sp.reg)} ${P.gene}`, lab: `${spName(spShort(sp.reg))} ${esc(P.gene)}`, seq: qSeq, at: (r) => r, hit: (r) => !!(FQ.byC[r] && FQ.byC[r][c]), q: true }];   // short species names, as on the canvas
-    for (const t of al) { const g = t.st.P2 ? t.st.P2.gene : t.st.key2; rows.push({ label: `${spShort(t.st.reg2)} ${g}`, lab: `${spName(spShort(t.st.reg2))} ${esc(g)}`, seq: t.st.seq2, at: (r) => t.al.map[r - 1] || 0, hit: (r2) => !!(t.byS[r2] && t.byS[r2][c]) }); }
+    const FQ = orthFreq(M, null), rows = [{ label: named ? `${spShort(sp.reg)} ${P.gene}` : P.gene, lab: named ? `${spName(spShort(sp.reg))} ${esc(P.gene)}` : esc(P.gene), seq: qSeq, at: (r) => r, hit: (r) => !!(FQ.byC[r] && FQ.byC[r][c]), q: true }];   // short species names, as on the canvas
+    for (const t of al) { const g = t.st.P2 ? t.st.P2.gene : t.st.key2; rows.push({ label: named ? `${spShort(t.st.reg2)} ${g}` : g, lab: named ? `${spName(spShort(t.st.reg2))} ${esc(g)}` : esc(g), seq: t.st.seq2, at: (r) => t.al.map[r - 1] || 0, hit: (r2) => !!(t.byS[r2] && t.byS[r2][c]) }); }
     const W = Math.max(...rows.map((x) => x.label.length)), txt = [], html = blocks.map(([lo, hi]) => `<div class="aln-block">${rows.map((row) => {
       let first = 0, last = 0, cells = '', plain = '';
       for (let r = lo; r <= hi; r++) { const r2 = row.at(r), ch = r2 ? row.seq[r2 - 1] || '?' : '-', qc = qSeq[r - 1]; if (r2) { first ||= r2; last = r2; }
@@ -2629,6 +2630,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : `${n ? 'Only one prediction' : 'No predictions'} past the ${cut}% FPR cutoff, so there is nothing to cluster.`;
     const want = !clustered() && V.mode === 'cluster' ? 'plddt' : clustered() && V.auto && S.mapOK ? 'cluster' : null;   // no clusters: show pLDDT until there are
     if (want) { V.auto = want === 'plddt'; V.mode = want; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === want)); }
+    paraSites(); if (PALN.c) paraAlign();
     renderChips(); renderSites(); drawFreq(); drawHeatmap(); renderClusterInfo(); recolor3D(); drawScatter(); drawTopList(); drawTable(); fillPartners(); if (NET) NET.recolor(); drawOrth().then(() => { for (const id of ORTH.open.keys()) orthShared(id); });
   }
   function renderChips() {
@@ -3361,7 +3363,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   // related to this one by duplication, closest first (the Alliance's rank), with identity and similarity over the aligned length,
   // how many methods call each and their confidence; for each, the predicted partners it shares with this protein past 10% FPR and
   // whether the two are themselves a predicted pair. Low-confidence paralogs only when the box is ticked.
-  let PARA = null;
   async function paraInit() {
     const sub = $('#para-sub'), host = $('#para-body'), low = $('#para-low'); if (!host) return;
     if (!PARA) { let man = null, sh = null, E = null;
@@ -3374,6 +3375,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       PARA = { man, mine, rows: ((sh || {})[P.key] || []).map(([k2, rank, id, sim, len, meth, conf]) => { const r = sp.byKey.get(k2), theirs = r ? part(r.i) : null, pe = r && E && P.i != null ? (E.adj.get(P.i) || new Map()).get(r.i) : null;
         return { k2, rank, id, sim, len, meth, conf, r, shared: theirs ? [...theirs].filter((j) => mine.has(j)).length : null, theirs: theirs ? theirs.size : null, pair: pe && pe.best >= CUT[10] ? pe.best : null }; }) }; }
     const all = PARA.rows, nLow = all.filter((x) => !x.conf).length, rows = low.checked ? [...all].sort((a, b) => a.rank - b.rank || b.conf - a.conf) : all.filter((x) => x.conf);   // closest first (the Alliance's rank), with the low ones too
+    PARA.shown = rows;
     low.closest('label').hidden = !nLow;
     sub.innerHTML = `${esc(sp.reg.label)} genes related to ${esc(P.gene)} by duplication, closest first: <a href="https://www.alliancegenome.org" target="_blank" rel="noopener">Alliance of Genome Resources</a> paralogy (DIOPT, release ${esc((PARA.man.release || []).join(', '))}, ${esc(PARA.man.license || 'CC BY 4.0')}). Shared partners: predicted partners of both past 10% FPR${B.setId ? ' in this scope' : ''}.`;
     if (!rows.length) { host.innerHTML = `<p class="muted" style="margin:6px 0 0">${all.length ? `No high- or moderate-confidence paralogs of ${esc(P.gene)}; tick “low-confidence paralogs too” for ${fmtInt(nLow)} more.` : `No paralogs of ${esc(P.gene)} in the Alliance set.`}</p>`; return; }
@@ -3383,7 +3385,51 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         + `<td class="num">${x.id}%</td><td class="num">${x.sim}%</td><td class="num">${fmtInt(x.len)} aa</td><td class="num">${x.meth}</td><td>${CONFW[x.conf]}</td>`
         + `<td class="num">${x.shared == null ? '–' : x.shared ? `<a href="#/${sp.id}/network?ids=${encodeURIComponent(`${P.key},${x.k2}`)}&add=link&hops=1&cut=10" title="draw ${esc(P.gene)}, ${esc(x.r.gene)} and the partners they share">${fmtInt(x.shared)}</a> <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>` : `0 <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>`}</td>`
         + `<td class="num">${x.pair != null ? `<a href="#/${sp.id}/${esc(P.key)}/${esc(x.k2)}"><span class="para-ilis">iLIS </span>${x.pair.toFixed(3)}</a>` : '–'}</td></tr>`).join('') + '</tbody></table></div>'
-      + `<p class="muted" style="margin:6px 0 0;font-size:12.5px">Shared partners: the number both have, of ${esc(P.gene)}'s ${fmtInt(PARA.mine.size)} and the paralog's own count past 10% FPR.</p>`;
+      + `<p class="muted" style="margin:6px 0 0;font-size:12.5px">Shared partners: the number both have, of ${esc(P.gene)}'s ${fmtInt(PARA.mine.size)} and the paralog's own count past 10% FPR.</p>`
+      + '<div id="para-sites"></div><div id="para-aln"></div>';
+    paraSites(); if (PALN.c) paraAlign();
+  }
+  // Aligned residues at one of this protein's sites across its paralogs, as the Orthologs card does for orthologs: each paralog's
+  // sequence aligned to this protein's, its own predictions clustered (cLIP at this cutoff) and each matched to the site holding
+  // half or more of its aligned contact residues, so an underlined residue is contacted there by that paralog's predictions.
+  // The paralogs listed in the table (the first 6 in the Atlas index) load on the first click.
+  function paraSitesOf() {   // this protein's sites: the residues where a cluster is the most frequent, in runs (gaps of up to 3 joined), as in drawOrth
+    const FQ = orthFreq(M, null), L = M.plen, siteOf = (r) => (r >= 1 && r <= L && FQ.tot[r] ? FQ.dom(r) : 0);
+    const sites = range(M.k).map((c) => { const runs = []; let a = 0, b = 0;
+      for (let r = 1; r <= L; r++) if (siteOf(r) === c) { if (a && r - b <= 4) b = r; else { if (a) runs.push([a, b]); a = b = r; } }
+      if (a) runs.push([a, b]); return { c, runs }; }).filter((x) => x.runs.length);
+    return { sites, siteOf };
+  }
+  function paraSites() {
+    const box = $('#para-sites'); if (!box || !PARA) return; const rows = (PARA.shown || []).filter((x) => x.r);
+    if (!rows.length) { box.innerHTML = ''; return; }
+    if (!clustered()) { box.innerHTML = `<p class="muted para-site-row">Aligned residues at each of ${esc(P.gene)}'s sites appear once its predictions are clustered.</p>`; return; }
+    const { sites } = paraSitesOf(); if (PALN.c && !sites.some((x) => x.c === PALN.c)) PALN.c = 0;
+    box.innerHTML = `<div class="para-site-row"><b>Aligned residues at a site</b> <span class="muted">· the paralogs' sequences on ${esc(P.gene)}'s, at one of its sites:</span> ${sites.map((x) => `<button type="button" class="para-chip${x.c === PALN.c ? ' on' : ''}" data-c="${x.c}" aria-pressed="${x.c === PALN.c}"><span class="mdot" style="background:${clusterColor(x.c, M.k)}"></span>${clusterLabel(x.c)}</button>`).join('')}</div>`;
+    box.querySelectorAll('button[data-c]').forEach((b) => { b.onclick = () => { PALN.c = PALN.c === +b.dataset.c ? 0 : +b.dataset.c; paraSites(); paraAlign(); }; });
+  }
+  async function paraAlign() {
+    const out = $('#para-aln'); if (!out) return; const c = PALN.c;
+    if (!c || !clustered() || !qSeq || !PARA) { out.innerHTML = ''; return; }
+    const rows = (PARA.shown || []).filter((x) => x.r).slice(0, 6), tok = ++PALN.tok;
+    out.innerHTML = `<p class="muted">Aligning ${fmtInt(rows.length)} paralog${rows.length === 1 ? '' : 's'} and clustering their predictions…</p>`;
+    const sts = await Promise.all(rows.map(async (x) => { if (!PALN.st.has(x.k2)) PALN.st.set(x.k2, orthLoad({ sp2: sp.id, key2: x.k2, reg2: sp.reg }).catch(() => null));
+      const st = await PALN.st.get(x.k2); if (st && !st.m[cut]) { try { await orthCluster(st); } catch (e) { return null; } } return st; }));
+    if (gone() || tok !== PALN.tok || c !== PALN.c) return;
+    const { sites, siteOf } = paraSitesOf(), T = [], miss = [];
+    sts.forEach((st, n) => { if (!st || !st.seq2) { miss.push(rows[n].r.gene); return; } if (st.al == null) st.al = ALIGN.align(qSeq, st.seq2) || false; if (!st.al) { miss.push(rows[n].r.gene); return; }
+      const m2 = st.m[cut], F2 = orthFreq(m2, null), inv = new Map(), byS = new Array(F2.L + 2);
+      for (let i = 0; i < st.al.map.length; i++) if (st.al.map[i] != null) inv.set(st.al.map[i], i + 1);
+      m2.fingerprints.forEach((f) => { const cnt = new Map(); let k = 0;
+        for (const r2 of f) { const q = inv.get(r2); if (!q) continue; k++; const x = siteOf(q); if (x) cnt.set(x, (cnt.get(x) || 0) + 1); }
+        let bs = 0, bn = 0; for (const [x, v] of cnt) if (v > bn) { bn = v; bs = x; } const x = k && bn * 2 >= k ? bs : 0;
+        for (const r2 of f) if (r2 >= 1 && r2 <= F2.L) (byS[r2] ||= {})[x] = (byS[r2][x] || 0) + 1; });
+      T.push({ st, al: st.al, byS }); });
+    const A = T.length ? orthAlign(T, c, sites, false) : null;
+    if (!A) { out.innerHTML = `<p class="muted">No paralog's sequence could be aligned to ${esc(P.gene)}'s here${miss.length ? ` (${esc(miss.join(', '))})` : ''}.</p>`; return; }
+    out.innerHTML = `<div class="orth-aln-head"><b><span class="mdot" style="background:${clusterColor(c, M.k)}"></span> ${esc(P.gene)} ${clusterLabel(c)}</b> <span class="muted">· the site and 5 residues either side; dark: identical to ${esc(P.gene)}, light: similar; underlined: contacted by that protein's predictions in this site; each row numbered in its own protein${miss.length ? `; not aligned: ${esc(miss.join(', '))}` : ''}</span> <button type="button" class="more" id="para-aln-copy">copy</button></div>`
+      + `<div class="orth-aln" style="--c:${clusterColor(c, M.k)}" tabindex="0" role="region" aria-label="${esc(`${P.gene} ${clusterLabel(c)} aligned with its paralogs`)}">${A.html}</div>`;
+    $('#para-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
   { const card = $('#c-para'); let started = false; const start = () => { if (!started) { started = true; paraInit(); } };   // the paralog table and the edge list load when the card nears the viewport
     if (card) { new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) start(); }, { rootMargin: '300px' }).observe(card); $('#para-low').onchange = () => { if (PARA) paraInit(); }; } }
