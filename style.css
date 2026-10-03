@@ -678,3 +678,6 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .para-chip:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 /* the protein page's network card: its links on their own line under the description */
 .net-links { margin: -4px 0 12px; font-size: 13px; }
+/* Orthologs and Paralogs: what the plot draws besides the bars */
+.orth-show { gap: 10px; flex-wrap: wrap; }
+.orth-show label { display: inline-flex; align-items: center; gap: 4px; }

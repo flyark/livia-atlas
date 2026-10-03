@@ -2135,10 +2135,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <select id="pt-band" aria-label="Which partners, by FPR band"><option value="10">past 10% FPR (iLIS ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ${CUT[1]})</option><option value="0">all predicted</option></select>
         <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"></div></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>
-    <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div>${xticks}</div>
+    <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs <span class="tag-alpha">alpha</span></h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div><div class="controls" style="margin:0">${xticks}<span class="ctl orth-show" title="what the plot draws besides the bars">Show <label><input type="checkbox" data-o="dom"> domains</label><label><input type="checkbox" data-o="id"> identity</label><label><input type="checkbox" data-o="pl"> pLDDT</label></span></div></div>
       <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-sites"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
     <div class="card" id="c-para"><div class="card-head"><div><h2>Paralogs <span class="tag-alpha">alpha</span></h2><div class="muted" id="para-sub">The paralogs load when this card scrolls into view.</div></div>
-      <div class="controls" style="margin:0"><label class="ctl" title="also list the paralogs that few prediction methods call (the Alliance's low confidence)"><input type="checkbox" id="para-low"> low-confidence paralogs too</label></div></div>
+      <div class="controls" style="margin:0"><label class="ctl" title="also list the paralogs that few prediction methods call (the Alliance's low confidence)"><input type="checkbox" id="para-low"> low-confidence paralogs too</label><span class="ctl orth-show" title="what the plot draws besides the bars">Show <label><input type="checkbox" data-o="dom"> domains</label><label><input type="checkbox" data-o="id"> identity</label><label><input type="checkbox" data-o="pl"> pLDDT</label></span></div></div>
       <div id="para-body"></div></div>`;
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
@@ -2451,6 +2451,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     $('#orth-site-x').onclick = () => { ORTH.site = 0; renderOrthSite(T); };
     if (A) $('#orth-aln-copy').onclick = (e) => { navigator.clipboard.writeText(A.text).then(() => { e.target.textContent = 'copied'; setTimeout(() => { e.target.textContent = 'copy'; }, 1500); }).catch(() => {}); };
   }
+  const PLOTSHOW = (() => { const d = { dom: true, id: true, pl: true }; try { return { ...d, ...JSON.parse(localStorage.getItem('atlas-plot-show') || '{}') }; } catch (e) { return d; } })();   // one setting for both plots, kept in this browser
+  const wireShow = () => app.querySelectorAll('.orth-show input[data-o]').forEach((i) => { i.checked = !!PLOTSHOW[i.dataset.o];
+    i.onchange = () => { PLOTSHOW[i.dataset.o] = i.checked; try { localStorage.setItem('atlas-plot-show', JSON.stringify(PLOTSHOW)); } catch (e) { /* private window */ }
+      app.querySelectorAll(`.orth-show input[data-o="${i.dataset.o}"]`).forEach((o) => { o.checked = i.checked; }); drawOrth(); if (PALN.trk) drawOrth(PCFG); }; });
   const OCFG = { host: '#orth-wrap', cvId: 'orth-cv', key: '#orth-key', aria: 'Predictions contacting each residue of this protein and of its orthologs, aligned residue by residue',
     ready: () => !!ORTH.list, tracks: () => orthOpened(), word: 'ortholog', name: (st) => orthName(st), lab: (st) => orthLabel(st),
     side: (st, narrow) => (narrow ? spShort(st.reg2) : `${spShort(st.reg2)} ${st.P2.gene}`), qside: (narrow) => (narrow ? spShort(sp.reg) : `${spShort(sp.reg)} ${P.gene}`),
@@ -2503,10 +2507,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     });
     const DRH = 13, IH = 8, TH = 58, PLH = 22, MR = 13, LBL = 17;   // domain lane, identity strip, bars, pLDDT strip, mark row, label row
     const laneN = (ds) => (ds.length ? lanes(ds, (d) => xOf(Math.max(1, d.s)), (d) => Math.max(xOf(Math.max(1, d.s)) + 2, xOf(Math.min(L, d.e) + 1))) : 0);
-    const qd = qDomains(L), qdL = laneN(qd), qpl = !!(S.plddt && S.mapOK);
-    T.forEach((t) => { t.dL = laneN(t.doms); t.pl = !!(t.al && t.st.pl); });
+    const qd = PLOTSHOW.dom ? qDomains(L) : [], qdL = laneN(qd), qpl = !!(PLOTSHOW.pl && S.plddt && S.mapOK);   // the Show switches: domains, identity strip, pLDDT
+    T.forEach((t) => { t.dL = PLOTSHOW.dom ? laneN(t.doms) : 0; t.pl = !!(PLOTSHOW.pl && t.al && t.st.pl); });
     const blockS = sites.length ? LBL + 12 + T.length * MR + 14 : 0, blockQ = LBL + (qdL ? qdL * DRH + 4 : 0) + TH + 4 + (qpl ? PLH + 6 : 0) + 22;
-    const blockO = (t) => LBL + (t.al ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + TH + 4 + (t.pl ? PLH + 6 : 0) + 20 + 8;
+    const blockO = (t) => LBL + (t.al && PLOTSHOW.id ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + TH + 4 + (t.pl ? PLH + 6 : 0) + 20 + 8;
     const H = 6 + blockS + blockQ + T.reduce((a, t) => a + blockO(t), 0) + 4;
     const g = canvasCtx(cv, W, H), rows = [], hits = [];   // rows: hover areas of the tracks; hits: the sites and marks, hover and click
     const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AX, y0, W - AX - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AX + 0.5, y0); g.lineTo(AX + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
@@ -2553,7 +2557,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
       label(`${C.name(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
       const yTop = y;
-      if (al) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#E8ECF0'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, light gray = nothing of the ortholog aligned here
+      if (al && PLOTSHOW.id) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#E8ECF0'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, light gray = nothing of the ortholog aligned here
       if (t.dL) { domBoxes(t.doms, y); for (const d of t.doms) rows.push({ kind: 'dom', d, st, y0: y + d.lane * DRH, y1: y + d.lane * DRH + 10 }); y += t.dL * DRH + 4; }
       frame(y, y + TH);
       const colorAt = al ? ((r2) => { const s = siteAt(r2); return s ? clusterColor(s, M.k) : '#B9C2CE'; }) : ((r2) => clusterColor(F2.dom(r2), m2.k));   // aligned: this protein's site colors, gray where no prediction matches a site
@@ -3379,6 +3383,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
   loadStructure();
   cluster();
+  wireShow();
   { const card = $('#c-orth'); let started = false; const start = () => { if (!started) { started = true; orthInit(); } };   // the orthologs (other species' indexes and bundles) load when the card nears the viewport
     if (card) { new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) start(); }, { rootMargin: '300px' }).observe(card); } }
   // Paralogs (data/para: the Alliance of Genome Resources' paralogy, DIOPT-based, build/paralogs_alliance.py): this species' genes
