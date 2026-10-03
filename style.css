@@ -593,11 +593,18 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .optgrid { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 8px 14px; align-items: center; margin: 10px 0 8px; }
 .optgrid .controls { margin: 0; }
 .optlab { font: 600 11px var(--sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
-@media (max-width: 640px) { .optgrid { grid-template-columns: minmax(0, 1fr); gap: 4px; } .optlab { margin-top: 6px; } }
+.optgrid > .optlab { align-self: start; line-height: var(--ctl-h); }   /* beside the first line of its controls when they wrap */
+@media (max-width: 640px) { .optgrid { grid-template-columns: minmax(0, 1fr); gap: 4px; } .optlab { margin-top: 6px; } .optgrid > .optlab { line-height: 1.4; } }
 
 /* network: the partner count, its unit, auto and Suggest in one evenly spaced group */
 #nw-k-wrap { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 #nw-k-wrap .ctl { gap: 4px; }
+/* network: a seed box and its new-seed button; the groups' summary on its own line; a loaded settings file's check */
+#nw-lseed-new, #nw-cseed-new { padding: 0 10px; font-size: 15px; }
+.nw-gnote { flex-basis: 100%; font-size: 12.5px; line-height: 1.45; }
+.nw-gnote:empty { display: none; }
+.nw-loaded { margin: 8px 0 0; padding: 7px 10px; border-radius: 8px; font-size: 13px; color: var(--ink); background: color-mix(in srgb, #2E7D4F 9%, #fff); border: 1px solid color-mix(in srgb, #2E7D4F 35%, #fff); }
+.nw-loaded.bad { background: color-mix(in srgb, #B5651D 9%, #fff); border-color: color-mix(in srgb, #B5651D 40%, #fff); }
 
 .miss[hidden] { display: none !important; }   /* the not-found box keeps its own display rule; hidden must still win */
 /* the network page's species picker: a search box over a scrolling, grouped list */
