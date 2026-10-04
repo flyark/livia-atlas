@@ -301,7 +301,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .cl-row { display: grid; grid-template-columns: 14px 1fr; gap: 10px; padding: 8px 12px; border: 1px solid var(--line-2); border-radius: 10px; background: #FBFCFD; }
 .cl-names { margin-top: 2px; }   /* the partner names on their own line, under the cluster's summary */
 .cl-row > i { width: 13px; height: 13px; border-radius: 3px; margin-top: 5px; }
-/* reported in BioGRID: a highlighter mark in the network's colors, light (physical red, genetic green, both purple) */
+/* reported in BioGRID: a highlighter mark in the network's colors, light (physical blue, genetic orange, both plum) */
 .clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g, .kb-mark { padding: 1px 5px; border-radius: 4px; text-decoration: none; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .clinfo a.kb-p, #c-pt .pt td.g a.kb-p, .kb-mark.kb-p { background: #DCEBF7; }   /* physical: light blue, genetic: light orange, both: light plum (the BioGRID edge colors, light; apart with red-green color blindness) */
 .clinfo a.kb-g, #c-pt .pt td.g a.kb-g, .kb-mark.kb-g { background: #FCE3CF; }

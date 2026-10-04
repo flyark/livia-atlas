@@ -1674,7 +1674,7 @@ const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
 // Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS on a color
 // scale the reader picks (light at the 10% FPR cutoff, dark at 0.85 and above; or one flat gray) and, when chosen, the
-// pairs reported in BioGRID colored by what was reported: physical blue, genetic orange, both black (colors that stay
+// pairs reported in BioGRID colored by what was reported: physical blue, genetic orange, both plum (colors that stay
 // distinct for red-green color-blind readers), the unreported pairs then light gray. Edge width is the best iLIS (the species file holds
 // no average across screens).
 const ESCALE = { gray: ['#C5CCD4', '#1E2A38'], blue: ['#C6DBEF', '#08306B'], brown: ['#E8D9C4', '#5B3A1A'] };
@@ -1687,7 +1687,7 @@ const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.p
 const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
 const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
 const edgeCtl = (id, kbOn = false) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above">iLIS scale<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
-  <label class="ctl" title="color the pairs reported in BioGRID: physical blue, genetic orange, both black; the other pairs turn light gray"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
+  <label class="ctl" title="color the pairs reported in BioGRID: physical blue, genetic orange, both plum; the other pairs turn light gray"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
 function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a reported one
   const sc = $(`#${id}-shade`).value, shade = sc !== 'flat', kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
   const ramp = escale(sc);
