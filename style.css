@@ -710,3 +710,22 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .hd-note { font-size: 13px; margin: 8px 0 0; }
 @media (max-width: 640px) { .hd-lane { grid-template-columns: 1fr; gap: 2px; } .hd-lab { text-align: left; } .hd-axis .hd-lab { display: none; } }
 .subnav button[hidden] { display: none; }   /* all: unset above clears the browser's [hidden] rule */
+/* network builder, as LIVIA's network page: a stats row, the drawing with a Communities list beside it */
+.nw-stats { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: baseline; margin: 0 0 10px; font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.nw-stats b { color: var(--ink); font-size: 16px; font-weight: 700; }
+.nw-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 14px; align-items: start; }
+.nw-body > .net { height: 680px; }
+.nw-mods { max-height: 680px; overflow-y: auto; padding-right: 4px; }
+.nw-mods[hidden] { display: none; }
+.nw-body:has(.nw-mods[hidden]) { grid-template-columns: minmax(0, 1fr); }
+.nw-mods h3 { margin: 0 0 8px; font-size: 15px; }
+.nw-mods h3 .muted { font-size: 12.5px; font-weight: 500; }
+.nw-mod { border: 1px solid var(--line-2); border-radius: 8px; padding: 9px 11px; margin-bottom: 8px; background: #fff; }
+.nw-mod .hd { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; color: var(--ink); }
+.nw-mod .hd input[type=color] { width: 20px; height: 16px; padding: 0; border: 1px solid var(--line-2); border-radius: 3px; background: none; cursor: pointer; flex: none; }
+.nw-mod .hd .hub { margin-left: auto; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.nw-mod .st { font-size: 12px; color: var(--ink-2); margin: 3px 0 4px; font-variant-numeric: tabular-nums; }
+.nw-mod .mem { font-size: 12px; line-height: 1.45; color: var(--ink-2); }
+.nw-mod .mem a { color: var(--ink-2); }
+#nw-disp input[type=color] { width: 30px; height: 22px; padding: 0; border: 1px solid var(--line-2); border-radius: 4px; vertical-align: middle; background: none; }
+@media (max-width: 900px) { .nw-body { grid-template-columns: minmax(0, 1fr); } .nw-body > .net { height: 460px; } .nw-mods { max-height: 420px; } }
