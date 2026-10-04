@@ -2587,5 +2587,26 @@
     }
    ]
   }
- ]
+ ],
+ "homodimers": {
+  "title": "AlphaFold Database homodimers",
+  "source": "Han et al. 2026 \u00b7 bioRxiv",
+  "paper": "https://doi.org/10.64898/2026.03.27.714458",
+  "base": "https://www.flyrnai.org/livia-atlas/live/homodimers/",
+  "structBase": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/homodimers/",
+  "selection": "the higher of its two directions passes ipSAE \u2265 0.60 and pDockQ2 \u2265 0.23",
+  "species": {
+   "human": {"file": "homodimer_lis_human.csv.gz", "entries": 4802},
+   "mus-musculus": {"file": "homodimer_lis_mouse.csv.gz", "entries": 3209},
+   "rattus-norvegicus": {"file": "homodimer_lis_rat.csv.gz", "entries": 3699},
+   "fly": {"file": "homodimer_lis_fly.csv.gz", "entries": 1613},
+   "worm": {"file": "homodimer_lis_worm.csv.gz", "entries": 1707},
+   "zebrafish": {"file": "homodimer_lis_zebrafish.csv.gz", "entries": 3140},
+   "yeast": {"file": "homodimer_lis_budding_yeast.csv.gz", "entries": 653},
+   "schizosaccharomyces-pombe": {"file": "homodimer_lis_fission_yeast.csv.gz", "entries": 578},
+   "arabidopsis-thaliana": {"file": "homodimer_lis_arabidopsis.csv.gz", "entries": 3597},
+   "dictyostelium-discoideum": {"file": "homodimer_lis_dictyostelium.csv.gz", "entries": 876},
+   "escherichia-coli-83333": {"file": "homodimer_lis_ecoli_k12.csv.gz", "entries": 1206}
+  }
+ }
 }

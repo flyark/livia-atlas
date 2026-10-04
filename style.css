@@ -692,3 +692,20 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .build { flex-basis: 100%; font-size: 12px; }
 /* a table wider than its card: a cue that it scrolls sideways */
 .tbl-wrap[data-reg]::before { content: 'scroll sideways for more columns →'; display: block; position: sticky; left: 0; width: max-content; padding: 2px 6px; font-size: 11.5px; color: var(--ink-3); }
+/* Homodimer card: scores only, no FPR band; interaction residues in neutral gray, contact residues in the query's dark teal */
+.hd-line { margin: 2px 0 10px; font-size: 14px; }
+.hd-line .flag { margin: 0; }
+.hd-scores .kpi b { font-size: 18px; }
+.hd-track { display: flex; flex-direction: column; gap: 6px; margin: 14px 0 8px; }
+.hd-lane { display: grid; grid-template-columns: 190px 1fr; align-items: center; gap: 10px; }
+.hd-lab { font-size: 12.5px; color: var(--ink-3); text-align: right; }
+.hd-svg { display: block; width: 100%; height: 16px; }
+.hd-bg { fill: #EEF1F4; }
+.hd-lir { fill: #7A8594; }
+.hd-clir { fill: #00776B; }
+.hd-ticks { position: relative; height: 16px; font: 11px var(--mono); color: var(--ink-3); }
+.hd-ticks span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
+.hd-ticks span:first-child { transform: none; }
+.hd-ticks span.end { transform: none; }
+.hd-note { font-size: 13px; margin: 8px 0 0; }
+@media (max-width: 640px) { .hd-lane { grid-template-columns: 1fr; gap: 2px; } .hd-lab { text-align: left; } .hd-axis .hd-lab { display: none; } }

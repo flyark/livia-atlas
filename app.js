@@ -621,15 +621,71 @@ function structLink(host, x, cls) {
 async function openFromArchive(model, ad, link) {
   const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
   const txt = link.textContent; link.textContent = 'reading…';
-  const get = async (o, n) => { for (let t = 0; ; t++) { try { const r = await fetch(ad.tar ? HET_URL(ad.tar) : ARCH_URL(ad.chunk), { headers: { Range: `bytes=${o}-${o + n - 1}` } });
+  const get = async (o, n) => { for (let t = 0; ; t++) { try { const r = await fetch(ad.hd ? HOMO_URL(ad.tar) : ad.tar ? HET_URL(ad.tar) : ARCH_URL(ad.chunk), { headers: { Range: `bytes=${o}-${o + n - 1}` } });
     if (r.status !== 206) throw new Error(`the archive answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; }
     catch (e) { if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1))); } } };   // EBI sometimes refuses a connection: retry
   try {
     const [[{ decompress }, { zipSync }], cif, pae] = await Promise.all([Promise.all([import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm'), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]),
       get(ad.cif_off, ad.cif_len), get(ad.pae_off, ad.pae_len)]);
     const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) });
-    handTo(w, { type: 'livia-load', name: `${model}_${ad.tar ? 'afdb' : 'viral'}.zip`, data: zip.buffer }); link.textContent = txt;
+    handTo(w, { type: 'livia-load', name: `${model}_${ad.hd ? 'homodimer' : ad.tar ? 'afdb' : 'viral'}.zip`, data: zip.buffer }); link.textContent = txt;
   } catch (e) { link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`; try { w.close(); } catch (_) {} }
+}
+// Homodimers (REG.homodimers): the AlphaFold Database homodimer release rescored with lis.py, one gzip CSV per species, read
+// whole once and kept. One model per entry, and the iLIS cutoffs were calibrated on pairs of two different proteins, so the
+// card shows scores only: no interaction call, no FPR band.
+const HOMO = new Map(), HOMO_COLS = ['entry', 'uniprot_A', 'gene_A', 'len_i', 'iLIS', 'iLISA', 'ipSAE', 'actifpTM', 'ipTM', 'pLDDT', 'pDockQ2', 'LIR_i', 'cLIR_i', 'LIR_indices_i', 'cLIR_indices_i', 'src_tar', 'cif_offset', 'cif_size', 'pae_offset', 'pae_size'];
+const HOMO_URL = (tar) => `${REG.homodimers.structBase}${tar}${/\.tar$/.test(tar) ? '' : '.tar'}`;
+function homoRows(spId) {
+  const H = REG && REG.homodimers, f = H && H.species && H.species[spId];
+  if (!f) return Promise.resolve([]);
+  if (!HOMO.has(spId)) HOMO.set(spId, fetch(H.base + f.file).then(async (res) => {
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const b = new Uint8Array(await res.arrayBuffer());   // gzip bytes, or text when something on the way already unpacked them
+    const text = b[0] === 0x1f && b[1] === 0x8b ? await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream('gzip'))).text() : new TextDecoder().decode(b);
+    const rows = parseCSV(text), hdr = rows.shift() || [], ix = Object.fromEntries(hdr.map((k, i) => [k, i]));
+    return rows.filter((r) => r.length > 1).map((r) => Object.fromEntries(HOMO_COLS.filter((k) => ix[k] != null).map((k) => [k, r[ix[k]]])));
+  }).catch(() => { HOMO.delete(spId); return []; }));
+  return HOMO.get(spId);
+}
+// A protein page's entries: its own accession first, then its isoforms (P49771-2 on P49771's page, labeled as such).
+function homoFor(rows, P) {
+  const ids = new Set([P.key, P.acc, ...String(P.acc || '').split(/\s+/)].filter(Boolean));
+  return rows.filter((r) => ids.has(r.uniprot_A) || ids.has(String(r.uniprot_A).split('-')[0]))
+    .map((r) => ({ ...r, iso: !ids.has(r.uniprot_A) })).sort((a, b) => a.iso - b.iso || (+String(a.uniprot_A).split('-')[1] || 0) - (+String(b.uniprot_A).split('-')[1] || 0));
+}
+const idxRuns = (s) => {   // "[2-7,9,11-12]" → [[2, 7], [9, 9], [11, 12]]
+  const out = []; for (const t of String(s || '').replace(/[[\]\s"]/g, '').split(',')) { if (!t) continue; const [a, b] = t.split('-').map(Number); if (Number.isFinite(a)) out.push([a, Number.isFinite(b) ? b : a]); }
+  return out; };
+function homoTrack(e) {
+  const L = +e.len_i || 1, step = [10, 20, 50, 100, 200, 250, 500, 1000, 2000].find((s) => L / s <= 8) || 5000;
+  const lane = (label, runs, cls, what) => `<div class="hd-lane"><span class="hd-lab">${label}</span><svg class="hd-svg" viewBox="0 0 ${L} 1" preserveAspectRatio="none" role="img" aria-label="${esc(label)}"><rect x="0" y="0" width="${L}" height="1" class="hd-bg"></rect>${runs.map(([a, b]) => `<rect x="${a - 1}" y="0" width="${b - a + 1}" height="1" class="${cls}"><title>${what} ${a === b ? a : `${a}–${b}`}</title></rect>`).join('')}</svg></div>`;
+  const ticks = []; for (let t = step; t < L - 0.4 * step; t += step) ticks.push(t);   // none crowding the last residue's label
+  return `<div class="hd-track">${lane('interaction residues (LIR)', idxRuns(e.LIR_indices_i), 'hd-lir', 'interaction residues')}${lane('contact residues (cLIR)', idxRuns(e.cLIR_indices_i), 'hd-clir', 'contact residues')}
+    <div class="hd-lane hd-axis"><span class="hd-lab"></span><div class="hd-ticks"><span style="left:0">1</span>${ticks.map((t) => `<span style="left:${(100 * (t - 1)) / L}%">${fmtInt(t)}</span>`).join('')}<span class="end" style="right:0">${fmtInt(L)}</span></div></div></div>`;
+}
+async function homoCard(sp, P, gone) {
+  const card = $('#c-homo'), H = REG && REG.homodimers;
+  if (!card || !H || !H.species || !H.species[sp.id]) return;
+  const list = homoFor(await homoRows(sp.id), P);
+  if (gone() || !list.length || !card.isConnected) return;
+  card.hidden = false; const nb = app.querySelector('.subnav button[data-t="c-homo"]'); if (nb) nb.hidden = false;
+  const src = `<a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a>`;
+  $('#homo-sub').innerHTML = `${esc(P.gene)} paired with itself, from the AlphaFold Database homodimer release (${src}), rescored with lis.py · one model per protein`;
+  const ctl = $('#homo-ctl');
+  ctl.innerHTML = list.length > 1 ? `<label class="ctl">Entry <select id="homo-pick" aria-label="Homodimer entry">${list.map((e, n) => `<option value="${n}">${esc(e.uniprot_A)}${e.iso ? ' (isoform)' : ''}</option>`).join('')}</select></label>` : '';
+  const show = (e) => {
+    const sc = [['iLIS', 'iLIS'], ['iLISA', 'iLISA'], ['ipSAE', 'ipSAE'], ['ipTM', 'ipTM'], ['pDockQ2', 'pDockQ2'], ['actifpTM', 'actifpTM (approx.)']];
+    const num = (k) => vmfmt(k, e[k] === '' || e[k] == null ? NaN : +e[k]);
+    $('#homo-body').innerHTML = `<p class="hd-line"><b>${esc(e.entry)}</b>${e.iso ? ` · <span class="flag">isoform ${esc(e.uniprot_A)}</span>` : ` · ${esc(e.uniprot_A)}`} · ${fmtInt(+e.len_i)} aa per copy${e.pLDDT !== '' ? ` · pLDDT ${(+e.pLDDT).toFixed(1)}` : ''} <span id="homo-struct"></span></p>
+      <div class="kpis hd-scores">${sc.map(([k, l]) => `<div class="kpi"><b>${num(k)}</b><span>${l}</span></div>`).join('')}<div class="kpi"><b>${fmtInt(+e.LIR_i || 0)} / ${fmtInt(+e.cLIR_i || 0)}</b><span>LIR / cLIR residues</span></div></div>
+      ${homoTrack(e)}
+      <p class="muted hd-note">Scores only. The release lists a homodimer only when ${esc(H.selection)}, and the iLIS cutoffs were calibrated on pairs of two different proteins, so this card makes no interaction call and shows no false-positive-rate band. Interaction residues (LIR) have a confident predicted aligned error to the other copy; contact residues (cLIR) are also within 8 Å of it (Cβ). The track shows the first copy (chain A), numbered from its first residue; the second copy is the same protein.</p>`;
+    const ad = { hd: true, tar: e.src_tar, cif_off: +e.cif_offset, cif_len: +e.cif_size, pae_off: +e.pae_offset, pae_len: +e.pae_size };
+    if (e.src_tar && [ad.cif_off, ad.cif_len, ad.pae_off, ad.pae_len].every(Number.isFinite)) structLink($('#homo-struct'), { model: e.entry, shown: false, addr: ad }, 'hd-open');
+  };
+  show(list[0]);
+  const pick = $('#homo-pick'); if (pick) pick.onchange = () => show(list[+pick.value]);
 }
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
@@ -1298,6 +1354,14 @@ function dsCard(d) {
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
     <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div></div>`;
 }
+function homoDsCard(reg) {   // the homodimer release: on protein pages, scores only, so its card counts proteins and nothing past a cutoff
+  const H = reg.homodimers; if (!H || !H.species) return '';
+  const sps = Object.keys(H.species), n = sps.reduce((a, k) => a + (H.species[k].entries || 0), 0);
+  return `<div class="ds live" data-ds="homodimers"><span class="badge on">On protein pages</span><h3>${esc(H.title)}</h3>
+    <div class="sp">${fmtInt(sps.length)} species · one model per protein · scores only</div>
+    <div class="stats"><div><b>${fmtInt(n)}</b><span>proteins</span></div></div>
+    <div class="src-line"><a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a> — listed only when ${esc(H.selection)}; the iLIS cutoffs were not calibrated for homodimers, so no interaction calls</div></div>`;
+}
 async function fillDsStats() {
   const live = (await registry()).datasets.filter((x) => x.status === 'live');
   const got = await Promise.all(live.map((d) => dataset(d.id).catch(() => null)));   // every manifest at once, then the cards in order
@@ -1411,7 +1475,7 @@ async function viewDatasets() {
     ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
     <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo ↗</a>, under CC BY 4.0; each dataset page links the version that holds its files. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Zenodo record are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the record.</p>
-    <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}</div>`;
+    <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}${homoDsCard(reg)}</div>`;
   fillDsStats(); fillThemes(); setCards(gen, reg);
 }
 // A screen kept as a set inside a larger dataset (the fly kinase–kinase and kinase–TF screens in FlyPredictome) gets its
@@ -1501,7 +1565,8 @@ async function viewAbout() {
     <div class="card" id="about-limits"><h2>How the pages count, and their limits</h2>
       <p><b>Three ways a partner is counted past a cutoff.</b> The header tiles and the partner lists count a partner when its <i>best model</i>, over every model of every screen, passes. Predicted binding sites (cLIP) cluster each pair's <i>top-ranked model</i>, so a partner that passes only in a lower-ranked model is listed apart. Top partners ranks by the <i>share of a pair's models</i> that pass, so a pair past the cutoff in all its models comes before one past it in one. The cards say which rule they use.</p>
       <p><b>What the false-positive rates mean.</b> The cutoffs were calibrated on the top-ranked of five models per pair (the reference sets above). The Atlas applies them to a pair's best model, which on that set gives 10.4%, 5.3% and 1.1%. A pair folded in several runs or constructs has more models to choose its best from (up to sixteen, e.g. yki with sd), so for it the stated rate is a lower bound. In a one-model screen (the AlphaFold Database heterodimers, viral dimers included) the best model is the only model, which was not the setting of the calibration either, so there the rates are a guide. The cutoffs were not calibrated separately for bacteria, plants or viruses.</p>
-      <p><b>Limits.</b> Every interaction here is a prediction, not an experiment. BioGRID marks depend on which proteins have been studied and on how each screen chose its pairs (a literature-derived set is reported by design), so a reported share is not a measure of accuracy. A site contacted by many partners can be a surface many proteins are predicted to touch (a DNA-binding face, a kinase domain in a kinase screen) rather than a specific binding site; its partner list and the screens they come from can help tell them apart. Paralogs that share an oligomerization domain can be predicted to pair through it whether or not they do in cells. Contacts in disordered regions count only where the predicted aligned error is at most 12 Å, but they remain the least certain. Network chance tests compare only pairs that were folded where the Atlas knows which were.</p></div>
+      <p><b>Limits.</b> Every interaction here is a prediction, not an experiment. BioGRID marks depend on which proteins have been studied and on how each screen chose its pairs (a literature-derived set is reported by design), so a reported share is not a measure of accuracy. A site contacted by many partners can be a surface many proteins are predicted to touch (a DNA-binding face, a kinase domain in a kinase screen) rather than a specific binding site; its partner list and the screens they come from can help tell them apart. Paralogs that share an oligomerization domain can be predicted to pair through it whether or not they do in cells. Contacts in disordered regions count only where the predicted aligned error is at most 12 Å, but they remain the least certain. Network chance tests compare only pairs that were folded where the Atlas knows which were.</p>
+      <p><b>Homodimers.</b> A protein page can show its homodimer from the AlphaFold Database homodimer release, rescored with lis.py. The release lists a homodimer only when ${esc((reg.homodimers || {}).selection || 'it passes the database\'s confidence filter')}, so nearly every listed homodimer scores high, and the iLIS cutoffs were calibrated on pairs of two different proteins. The Homodimer card therefore shows scores and residues only, with no interaction call and no false-positive-rate band. It has one model per protein and does not enter the partner counts, binding sites or networks.</p></div>
     <div class="card"><h2>Cite</h2>
       <ul class="refs">
         ${ref('livia', 'LIVIA: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.')}
@@ -1511,7 +1576,7 @@ async function viewAbout() {
       </ul>
       <p class="muted" style="font-size:14px;margin-bottom:0">Please also cite the source of each screen you use, and the resources below that your work draws on.</p></div>
     <div class="card"><h2>Screens</h2>
-      <ul class="refs">${screenList}</ul></div>
+      <ul class="refs">${screenList}${reg.homodimers ? ref('han2026', '<b>AlphaFold Database homodimers</b> (the Homodimer card of protein pages, scores only): Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>.') : ''}</ul></div>
     <div class="card"><h2>Data and software</h2>
       <h3 class="refs-h">Structures and annotations</h3>
       <ul class="refs">
@@ -2092,7 +2157,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs']];   // answers first (who, where, which share), then evidence, then tools
+  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs'], ['c-homo', 'Homodimer']];   // answers first (who, where, which share), then evidence, then tools
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -2111,7 +2176,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
-    <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}">${l}</button>`).join('')}</nav>
+    <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
     <div class="card" id="c-partners"><div class="card-head"><div><h2>Overview</h2><div class="muted">each partner by its best model</div></div>
         <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
@@ -2174,7 +2239,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="orth-list" id="orth-list"></div><div class="plot" id="orth-wrap"></div><div id="orth-sites"></div><div id="orth-site"></div><div class="legend" id="orth-key"></div><div id="orth-shared"></div></div>
     <div class="card" id="c-para"><div class="card-head"><div><h2>Paralogs <span class="tag-alpha">alpha</span></h2><div class="muted" id="para-sub">The paralogs load when this card scrolls into view.</div></div>
       <div class="controls" style="margin:0"><label class="ctl" title="also list the paralogs that few prediction methods call (the Alliance's low confidence)"><input type="checkbox" id="para-low"> low-confidence paralogs too</label><span class="ctl orth-show" title="what the plot draws besides the bars">Show <label><input type="checkbox" data-o="dom"> domains</label><label><input type="checkbox" data-o="id"> identity</label><label><input type="checkbox" data-o="pl"> pLDDT</label></span></div></div>
-      <div id="para-body"></div></div>`;
+      <div id="para-body"></div></div>
+    <div class="card" id="c-homo" hidden><div class="card-head"><div><h2>Homodimer <span class="tag-alpha">alpha</span></h2><div class="muted" id="homo-sub"></div></div><div class="controls" style="margin:0" id="homo-ctl"></div></div>
+      <div id="homo-body"></div></div>`;
+  setTimeout(() => homoCard(sp, P, gone), 1200);   /* the species' homodimer table, after the page's own reads have started */
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
       const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
