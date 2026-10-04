@@ -48,17 +48,29 @@ const runSettings = (d) => { if (!d || !d.models) return '';
   const off = !(d.models === 5 && d.recycles === 5), t = `${d.models} model${d.models === 1 ? '' : 's'}${d.recycles ? ` × ${d.recycles} recycles` : ''} per pair${d.modelsNote ? ` (${d.modelsNote})` : ''}`;
   return `<span class="runset${off ? ' off' : ''}"${off ? ` title="${esc(CALIB)}"` : ''}>${esc(t)}</span>`; };
 // A pair folded in several runs counts once, by its run with the highest iLIS: which run a view shows, and what else holds it.
-function overlapNote(sp, B, preds, P) {
+// Up to three runs: each one inline. More: a summary (runs per screen and set, the run with the highest iLIS), and with html
+// every run in a list that opens on request, highest iLIS first (author, 2026-10-04: a pair folded in 60 runs was a wall of text).
+function overlapNote(sp, B, preds, P, html) {
   const by = new Map();
-  for (const p of preds) { if (!by.has(p.run)) by.set(p.run, { n: 0, best: 0, sum: 0, rep: p.rep, di: p.di }); const r = by.get(p.run); r.n++; r.sum += p.iLIS || 0; r.best = Math.max(r.best, p.iLIS || 0); }
+  for (const p of preds) { if (!by.has(p.run)) by.set(p.run, { n: 0, best: 0, sum: 0, rep: p.rep, di: p.di, set: p.set || '' }); const r = by.get(p.run); r.n++; r.sum += p.iLIS || 0; r.best = Math.max(r.best, p.iLIS || 0); if (!r.set && p.set) r.set = p.set; }
   if (by.size < 2) return '';
   const lab = ([rid, r]) => `${runLabel(sp, B, rid, P)} (${r.n} model${r.n === 1 ? '' : 's'}; highest iLIS ${r.best.toFixed(3)}${r.n > 1 ? `, average ${(r.sum / r.n).toFixed(3)}` : ''})`;
   const scr = new Map(); for (const r of by.values()) scr.set(r.di, Math.max(scr.get(r.di) || 0, r.best));   // each screen's best: does it pass on its own?
   const agree = scr.size > 1 ? ` Past the 10% FPR cutoff in ${[...scr.values()].filter((b) => b >= CUT[10]).length} of ${scr.size} screens.` : '';
   const shown = [...by].filter(([, r]) => !r.rep), also = [...by].filter(([, r]) => r.rep);
   if (!shown.length) return '';
-  if (!also.length) return `Folded in ${shown.map(lab).join(', ')}.${agree}`;
-  return `Shown: ${shown.map(lab).join(', ')}. Also in: ${also.map(lab).join(', ')}, listed as ${also.length === 1 ? 'a repeat' : 'repeats'}. A pair folded more than once counts once, by its run with the highest iLIS.${agree}`;
+  const out = (t) => (html ? esc(t) : t);
+  if (by.size <= 3) {
+    if (!also.length) return out(`Folded in ${shown.map(lab).join(', ')}.${agree}`);
+    return out(`Shown: ${shown.map(lab).join(', ')}. Also in: ${also.map(lab).join(', ')}, listed as ${also.length === 1 ? 'a repeat' : 'repeats'}. A pair folded more than once counts once, by its run with the highest iLIS.${agree}`);
+  }
+  const per = new Map(); for (const r of by.values()) { const s = per.get(r.di) || { n: 0, sets: new Map() }; s.n++; if (r.set) s.sets.set(r.set, (s.sets.get(r.set) || 0) + 1); per.set(r.di, s); }
+  const screens = [...per].sort((a, b) => b[1].n - a[1].n || a[0] - b[0]).map(([di, s]) => `${sp.dsShort[di]} ${fmtInt(s.n)}${s.sets.size ? ` (${[...s.sets].sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1)).map(([k, n]) => `${k} ${fmtInt(n)}`).join(', ')})` : ''}`);
+  const top = [...by].sort((a, b) => b[1].best - a[1].best)[0], setOf = ([rid, r]) => (r.set && !runLabel(sp, B, rid, P).startsWith(r.set) ? ` (${r.set})` : '');   // the set, unless the run's label already names it
+  const sum = `Folded in ${fmtInt(by.size)} runs: ${screens.join(', ')}. Highest iLIS ${top[1].best.toFixed(3)}: ${runLabel(sp, B, top[0], P)}${setOf(top)}.${agree}${also.length ? ' A pair folded more than once counts once, by its run with the highest iLIS.' : ''}`;
+  if (!html) return sum;
+  const rows = [...by].sort((a, b) => b[1].best - a[1].best).map((x) => `<li>${esc(lab(x))}${esc(setOf(x))}${x[1].rep ? ' <span class="rep-tag">repeat</span>' : ''}</li>`).join('');
+  return `${esc(sum)}<details class="ovl-all"><summary>All ${fmtInt(by.size)} runs</summary><ol>${rows}</ol></details>`;
 }
 const bandIn = (cuts, v) => (v >= cuts[2] ? 1 : v >= cuts[1] ? 5 : v >= cuts[0] ? 10 : 0);
 // Text shades of the band colors, at least 4.5:1 on white and on the light band chips (BAND itself stays for plots and swatches)
@@ -3587,7 +3599,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.innerHTML = `${crumbs}
     <div class="phead"><div><h1><span style="color:var(--query-t)">${esc(P.gene)}</span> <span style="color:var(--ink-3);font-weight:600">×</span> <span style="color:var(--partner-t)">${esc(O.gene)}</span></h1>
         <div class="pairwho">${who(P, P.clen, 'var(--query-t)')}${who(O, oLen, 'var(--partner-t)')}</div>
-        <div class="srcs">Predicted in ${srcBadges(sp, part.src)}${part.sets.length ? ` <span class="muted">· sets:</span> ${setBadges(part.sets)}` : ''}${(() => { const t = srcPapers(sp, part.src); return t ? ` <span class="muted">· ${t}</span>` : ''; })()}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P); return t ? `<div class="srcs muted ovl">${esc(t)}</div>` : ''; })()}
+        <div class="srcs">Predicted in ${srcBadges(sp, part.src)}${part.sets.length ? ` <span class="muted">· sets:</span> ${setBadges(part.sets)}` : ''}${(() => { const t = srcPapers(sp, part.src); return t ? ` <span class="muted">· ${t}</span>` : ''; })()}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P, true); return t ? `<div class="srcs muted ovl">${t}</div>` : ''; })()}
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => part.src & (1 << i)))}<span id="pair-struct"></span></div></div>
       ${(() => { const nAll = part.counted.length, many = new Set(part.counted.map((x) => x.run)).size > 1, bestOf = one ? '' : many ? ` best of ${fmtInt(nAll)} models${part.preds.length > nAll ? ' (repeats not counted)' : ''}` : ' best', ofRun = part.avgOther ? ` of its ${sp.dsShort[part.avgDi]} run (the best model came from a one-model run)` : many ? ' of the run with the highest iLIS' : '';   // folded in several runs: say which models each tile covers
       return `<div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${bestOf} ${bandChip(b)}</span></div>

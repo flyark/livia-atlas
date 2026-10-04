@@ -107,6 +107,11 @@ a:hover { text-decoration: underline; }
 .runset { font-style: normal; color: var(--ink-3); }
 .runset.off { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
 .srcs.ovl { font-size: 13px; margin-top: 4px; }
+.ovl-all { margin-top: 4px; }
+.ovl-all summary { cursor: pointer; color: var(--blue); width: max-content; }
+.ovl-all ol { margin: 6px 0 2px; padding-left: 30px; max-height: 260px; overflow-y: auto; font-variant-numeric: tabular-nums; }
+.ovl-all li { margin: 1px 0; overflow-wrap: anywhere; }
+.rep-tag { font-size: 11px; padding: 0 5px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink-3); }
 .kc { display: block; font-style: normal; font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--ink-3); letter-spacing: 0; margin-top: 1px; cursor: help; }   /* the iLIS cutoff under a count; its scope on hover */
 .bchip { display: inline-block; font-style: normal; font-size: 10.5px; font-weight: 600; line-height: 1.5; padding: 0 6px; border-radius: 8px; color: #fff; white-space: nowrap; vertical-align: 1px; }
 .bchip.b1 { background: var(--fpr1); } .bchip.b5 { background: var(--fpr5); } .bchip.b10 { background: var(--fpr10); } .bchip.b0 { background: var(--below); color: #17263A; }
