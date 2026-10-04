@@ -1483,7 +1483,7 @@ async function viewAbout() {
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
       accession, official symbol or systematic name. In networks, edges are shaded in gray by the pair's best iLIS, and the pairs BioGRID reports
-      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both black, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
+      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both plum, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
       with a reported physical interaction is ringed in the Overview, and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
     <div class="card" id="about-limits"><h2>How the pages count, and their limits</h2>
@@ -1667,7 +1667,7 @@ const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM:
 // no average across screens).
 const ESCALE = { gray: ['#C5CCD4', '#1E2A38'], blue: ['#C6DBEF', '#08306B'], brown: ['#E8D9C4', '#5B3A1A'] };
 const ESCALE_LBL = { gray: 'gray', blue: 'blue', brown: 'brown', flat: 'off (one gray)' };
-const EFLAT = '#9AA5B1', KB_COL = { p: '#0072B2', g: '#D55E00', pg: '#111111' }, KB_DIM = '#C3CCD6';   // Okabe-Ito blue and vermillion, at least 3.8:1 on white; KB_DIM: unreported pairs while BioGRID is on
+const EFLAT = '#9AA5B1', KB_COL = { p: '#2166AC', g: '#E66100', pg: '#8F2D56' }, KB_DIM = '#C3CCD6';   // blue, orange and plum (both: a blue and red mix), apart with color blindness and from the gray, at least 3.4:1 on white; KB_DIM: unreported pairs while BioGRID is on
 const escale = (k) => d3.scaleLinear().domain([CUT[10], 0.85]).range(ESCALE[k] || ESCALE.gray).clamp(true);
 const EGRAY = escale('gray');   // the fixed gray scale of the virus networks
 const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');

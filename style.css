@@ -298,9 +298,9 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .cl-row > i { width: 13px; height: 13px; border-radius: 3px; margin-top: 5px; }
 /* reported in BioGRID: a highlighter mark in the network's colors, light (physical red, genetic green, both purple) */
 .clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g, .kb-mark { padding: 1px 5px; border-radius: 4px; text-decoration: none; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-.clinfo a.kb-p, #c-pt .pt td.g a.kb-p, .kb-mark.kb-p { background: #DCEBF7; }   /* physical: light blue, genetic: light sand (the BioGRID edge blue and orange; apart with red-green color blindness) */
-.clinfo a.kb-g, #c-pt .pt td.g a.kb-g, .kb-mark.kb-g { background: #FBEBC8; }
-.clinfo a.kb-p.kb-g, #c-pt .pt td.g a.kb-p.kb-g, .kb-mark.kb-p.kb-g { background: linear-gradient(135deg, #DCEBF7 50%, #FBEBC8 50%); }   /* both: half of each */
+.clinfo a.kb-p, #c-pt .pt td.g a.kb-p, .kb-mark.kb-p { background: #DCEBF7; }   /* physical: light blue, genetic: light orange, both: light plum (the BioGRID edge colors, light; apart with red-green color blindness) */
+.clinfo a.kb-g, #c-pt .pt td.g a.kb-g, .kb-mark.kb-g { background: #FCE3CF; }
+.clinfo a.kb-p.kb-g, #c-pt .pt td.g a.kb-p.kb-g, .kb-mark.kb-p.kb-g { background: #F1DDE7; }   /* both: light plum */
 .legend i.kb-ring, .tl-name i.kb-ring { display: inline-block; flex: none; width: 11px; height: 11px; border-radius: 50%; border: 1.6px solid rgba(23, 38, 58, 0.6); background: none; box-sizing: border-box; }
 .tl-name i.kb-ring { width: 9px; height: 9px; border-width: 1.4px; }
 .legend .kb-toggle { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
@@ -549,7 +549,7 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .pt th.sortable { cursor: pointer; }
 table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric: normal; } table.cuts tr.avg td, table.cuts tr.avg th { border-top: 0; }
 .clinfo a.kb-p, .clinfo a.kb-g { padding: 0 3px; margin: 0 -1px; }   /* in running lists, a tighter mark, so the comma stays next to the name */
-.clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g { color: #1A5276; }   /* a name on a reported-pair mark: the darker blue keeps 4.5:1 on the blue and the sand (6.9 and 7.1) */
+.clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g { color: #1A5276; }   /* a name on a reported-pair mark: the darker blue keeps 4.5:1 on the blue, orange and plum tints (6.9, 6.8 and 6.5) */
 .kb-mark { color: var(--ink-2); }
 .inl a, .clinfo a, .clinfo a.kb-p, .clinfo a.kb-g { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: 2px; }   /* names in running lists: told apart from the text by more than color */
 
