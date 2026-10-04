@@ -4044,7 +4044,7 @@ async function viewVirus(spId, taxid) {
   $('#vn-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#vn-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); cut === 5 ? u.delete('cut') : u.set('cut', cut); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); shownPairs = 60; draw(); };
   const commNow = bindCommCtl('vn', () => { const c = commNow(), [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || '');   // the choice goes in the link
-    c.m === 'comm' ? u.delete('cm') : u.set('cm', c.m || 'none'); c.seed ? u.set('seed', c.seed) : u.delete('seed'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); });
+    c.m === 'leiden' ? u.delete('cm') : u.set('cm', c.m || 'none'); c.seed ? u.set('seed', c.seed) : u.delete('seed'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); });
   $('#vm-cs').onchange = () => draw(); $('#vm-show').onchange = () => draw();
   $('#vn-top').onchange = (e) => { topk = +e.target.value; const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); topk ? u.set('top', topk) : u.delete('top'); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); draw(); };
   $('#vp-homo').onchange = () => { shownPairs = 60; tables(); };
