@@ -262,7 +262,8 @@ async function rangeRead(url, range, ms = 45000, tries = 2) {   // → the bytes
 const zkey = (u) => `?z=${encodeURIComponent((u || '').split('/').slice(-2).join('/'))}`;   // the offsets are read for one zip: a new zip address is a new offsets address, so no cached map outlives its zip
 // The safety net: a screen's files are read from the lab's web server (flyrnai.org); when it does not answer (maintenance, an
 // outage, a bot check), the same files are read from their archived copy on Zenodo (zip.fallback, with its own offsets when its
-// bytes differ), and the server is skipped for ten minutes so later reads do not wait on it again.
+// bytes differ), and the server is skipped for ten minutes so later reads do not wait on it again. Its first try waits
+// 12 s plus 1 s per 100 KB of the read, so a large bundle on a slow line does not count as an outage.
 const HOST_DOWN = new Map(), hostOf = (u) => { try { return new URL(u).host; } catch (e) { return ''; } };
 const isDown = (u) => (HOST_DOWN.get(hostOf(u)) || 0) > Date.now();
 async function offAt(ds, path, zurl, rel) {   // a bundle's [offset, length] in one zip: the screen's map, or its shard (files.offsetShards: <map>/<last two characters of the name>.json)
@@ -282,7 +283,7 @@ async function screenFile(ds, rel) {
   if (fb && url === z.url && isDown(url)) read = fromFb();
   else { const at = await offAt(ds, z.offsets, z.url, rel); if (!at) return null;
     read = !fb || url !== z.url ? rangeRead(url, rng(at))
-      : rangeRead(url, rng(at), 12000, 1).catch(() => null).then((v) => { if (v) return v; HOST_DOWN.set(hostOf(url), Date.now() + 600000); return fromFb(); }); }
+      : rangeRead(url, rng(at), 12000 + Math.round(at[1] / 100), 1).catch(() => null).then((v) => { if (v) return v; HOST_DOWN.set(hostOf(url), Date.now() + 600000); return fromFb(); }); }
   const buf = await trackLoad('data', read);
   return buf ? new Response(buf) : null;
 }
