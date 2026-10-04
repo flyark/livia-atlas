@@ -1586,7 +1586,7 @@ async function viewAbout() {
       contacts are drawn in the gene's residue numbering. An isoform too unlike the reference to be placed is shown on its own: its page has an
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
-      accession, official symbol or systematic name. In networks, a pair inside a community (or, on a protein page, a binding-site cluster when chosen) is drawn in its color and the others light gray, and the pairs BioGRID reports
+      accession, official symbol or systematic name. In networks, a pair inside a community (on a protein page, inside a binding-site cluster, or a community when chosen) is drawn in its color and the others light gray, and the pairs BioGRID reports
       (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both orchid purple, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
       with a reported physical interaction is ringed in the Overview, and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
@@ -2251,7 +2251,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
         <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', false)}
-        <label class="ctl" title="color the partners by the community they form through their pairs with each other (as LIVIA's network page), or by the binding-site cluster their contacts on ${esc(P.gene)} fall in">Color partners by <select id="net-col"><option value="comm" selected>communities</option><option value="cluster">binding-site clusters</option></select></label>${commCtl('net', 'leiden', 0)}</div></div>
+        <label class="ctl" title="color the partners by the binding-site cluster their contacts on ${esc(P.gene)} fall in (the clusters of the Binding sites card), or by the community they form through their pairs with each other (as LIVIA's network page)">Color partners by <select id="net-col"><option value="cluster" selected>binding-site clusters</option><option value="comm">communities</option></select></label>${commCtl('net', 'leiden', 0)}</div></div>
       <div class="controls net-disp" id="net-disp"><span class="optlab">Display</span>
         <label class="ctl" title="partner size: grows with the square root of its pairs with the other partners; ${esc(P.gene)} stays larger">Protein size <input type="number" id="net-nsize" min="0.3" max="3" step="0.1" value="1" style="width:56px"></label>
         <label class="ctl" title="pair width, by best iLIS; 1 is the default">Pair width <input type="number" id="net-ew" min="0.2" max="3" step="0.1" value="1" style="width:56px"></label>
@@ -2262,7 +2262,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <label class="ctl" title="name color">Name color <input type="color" id="net-lbcol" value="#17263A" aria-label="Name color"></label>
         <label class="ctl"><input type="checkbox" id="net-nbord" checked> protein border</label>
         <label class="ctl" title="draw only each partner's strongest pairs with the other partners (kept when strong for either); 0 draws every pair. Every partner keeps its pair with ${esc(P.gene)}">Strongest <input type="number" id="net-topk" min="0" max="50" step="1" value="0" style="width:52px"> pairs per protein</label></div>
-      <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with the color of the community they form through their pairs with each other (or, as you choose, their binding-site cluster). Pairs inside a group are drawn in its color, the others light gray. Edges between partners join partners
+      <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with the color of their binding-site cluster (or, as you choose, of the community they form through their pairs with each other). Pairs inside a group are drawn in its color, the others light gray. Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open.</p>
       <p class="net-links"><a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a><span id="net-open"></span></p>
       <div class="nw-stats" id="net-stats"></div>
