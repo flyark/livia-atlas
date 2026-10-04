@@ -22,84 +22,67 @@
   "xenbase (sequence-only species)"
  ],
  "keep": 5,
- "seqonly": {
-  "xenopus-tropicalis": {
-   "label": "Xenopus tropicalis",
-   "taxon": 8364,
-   "source": "Xenbase"
-  },
-  "xenopus-laevis": {
-   "label": "Xenopus laevis",
-   "taxon": 8355,
-   "source": "Xenbase"
-  }
- },
+ "seqonly": {},
  "coverage": {
   "human": {
    "index": 20526,
    "mapped": 20082,
-   "with_ortholog": 18555
+   "with_ortholog": 17459
   },
   "fly": {
    "index": 14037,
    "mapped": 13949,
-   "with_ortholog": 9220
+   "with_ortholog": 9087
   },
   "zebrafish": {
    "index": 12749,
    "mapped": 12430,
-   "with_ortholog": 11463
+   "with_ortholog": 11348
   },
   "yeast": {
    "index": 5762,
    "mapped": 5755,
-   "with_ortholog": 3401
+   "with_ortholog": 3383
   },
   "worm": {
    "index": 11162,
    "mapped": 11117,
-   "with_ortholog": 7043
+   "with_ortholog": 6982
   },
   "mus-musculus": {
    "index": 15476,
    "mapped": 15447,
-   "with_ortholog": 15252
+   "with_ortholog": 15208
   },
   "rattus-norvegicus": {
    "index": 14486,
    "mapped": 14257,
-   "with_ortholog": 14000
+   "with_ortholog": 13988
   }
  },
  "pairs": {
   "mus-musculus-yeast": 4027,
   "mus-musculus-fly": 9164,
-  "mus-musculus-xenopus-tropicalis": 13205,
   "mus-musculus-human": 14869,
   "mus-musculus-rattus-norvegicus": 13184,
   "human-yeast": 4430,
   "human-fly": 10737,
-  "human-xenopus-tropicalis": 16145,
   "human-rattus-norvegicus": 13830,
   "human-mus-musculus": 14907,
-  "human-xenopus-laevis": 12380,
   "human-worm": 8629,
   "worm-yeast": 3011,
   "worm-fly": 5800,
-  "worm-xenopus-tropicalis": 6177,
   "worm-zebrafish": 4211,
   "worm-human": 6241,
   "worm-rattus-norvegicus": 5524,
   "worm-mus-musculus": 5824,
   "zebrafish-yeast": 2699,
   "zebrafish-fly": 6114,
-  "zebrafish-xenopus-tropicalis": 8221,
   "zebrafish-human": 11004,
   "zebrafish-rattus-norvegicus": 7583,
   "zebrafish-worm": 5266,
   "zebrafish-mus-musculus": 10108,
   "fly-yeast": 3593,
-  "fly-xenopus-tropicalis": 8144,
   "fly-zebrafish": 5142,
   "fly-human": 8275,
   "fly-rattus-norvegicus": 7009,
@@ -111,12 +94,10 @@
   "rattus-norvegicus-zebrafish": 7183,
   "rattus-norvegicus-human": 13690,
   "rattus-norvegicus-mus-musculus": 13117,
-  "rattus-norvegicus-xenopus-tropicalis": 12196,
   "mus-musculus-zebrafish": 9118,
   "mus-musculus-worm": 7787,
   "human-zebrafish": 10088,
   "yeast-fly": 2937,
-  "yeast-xenopus-tropicalis": 3141,
   "yeast-zebrafish": 2122,
   "yeast-human": 3181,
   "yeast-mus-musculus": 2988,
