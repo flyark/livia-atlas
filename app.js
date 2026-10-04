@@ -88,7 +88,7 @@ const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 2298478
 const archiveOf = (recs) => (recs.length ? recs.map((r) => `LIVIA Atlas version ${REC_VERSION[r] || '?'}, Zenodo, https://doi.org/10.5281/zenodo.${r}`).join('; ') : `LIVIA Atlas, Zenodo, https://doi.org/${ARCHIVE.doi}`);
 const archiveLine = () => { const recs = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(recOf).filter(Boolean))].sort();   // the versions this site reads
   return recs.map((r) => { const ids = [...new Set(REG.datasets.filter((d) => recOf(d) === r).map((d) => d.short))]; return `LIVIA Atlas version ${REC_VERSION[r] || '?'}, <i>Zenodo</i>, <a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">doi:10.5281/zenodo.${r}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi:${ARCHIVE.doi}</a>`; };
-const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && d.zip.url) || ''); return m ? m[1] : null; };
+const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && (d.zip.zenodo || d.zip.url)) || ''); return m ? m[1] : null; };   // a screen served from flyrnai.org keeps its Zenodo record in zip.zenodo
 const recLink = (d) => { const r = recOf(d);   // the record version that holds a screen's files (the concept DOI opens the newest version, which may not)
   return r ? `<a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo, version ${REC_VERSION[r] || '?'} (doi:10.5281/zenodo.${r}) ↗</a>`
     : `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo (doi:${ARCHIVE.doi}) ↗</a>`; };
@@ -254,7 +254,9 @@ async function screenFile(ds, rel) {
     if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets.replace(/offsets\.json$/, `offsets/${xx}.json`), location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))); }
   else if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets, location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
   const at = (await OFFS.get(ok))[rel]; if (!at) return null;
-  const buf = await trackLoad('data', rangeRead(DEV && z.dev ? new URL(z.dev, location.href).href : z.url, `bytes=${at[0]}-${at[0] + at[1] - 1}`));
+  const range = `bytes=${at[0]}-${at[0] + at[1] - 1}`, url = DEV && z.dev ? new URL(z.dev, location.href).href : z.url;
+  const read = z.zenodo && url === z.url ? rangeRead(url, range).catch(() => null).then((v) => v || rangeRead(z.zenodo, range)) : rangeRead(url, range);   // flyrnai.org first, the same bytes on Zenodo if it fails
+  const buf = await trackLoad('data', read);
   return buf ? new Response(buf) : null;
 }
 async function datasetRows(ds) {
