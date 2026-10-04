@@ -455,9 +455,9 @@ const bundleUrl = (ds, name) => new URL(bundleRel(ds, name).split('/').map(encod
 // A gene-keyed bundle names its constructs: name → gene key, kind, label, length, offset on the gene's reference sequence
 function parseCons(text) {
   const m = new Map();
-  for (const line of text.split('\n').slice(1)) { if (!line) continue; const [name, key, kind, label, len, off, exact, mut, seg] = line.split('\t');
+  for (const line of text.split('\n').slice(1)) { if (!line) continue; const [name, key, kind, label, len, off, exact, mut, seg, seq] = line.split('\t');   // seq: the folded sequence, given when it is not the reference's (an X kept where it was folded)
     m.set(name, { key, kind, label, len: +len, off: off === '' || off == null ? null : +off, exact: exact === 'y', mut: mut || '',
-      seg: seg ? seg.split(',').map((t) => t.split(':').map(Number)) : null }); }
+      seg: seg ? seg.split(',').map((t) => t.split(':').map(Number)) : null, seq: seq || '' }); }
   return m;
 }
 function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: lis.py rows + FASTA (+ its construct table)
@@ -1263,7 +1263,7 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   host._redraw = () => drawIfaceTracks(cv, T);
   host._redraw();
   attachExport(canvasId, `atlas_${P.gene}_vs_${O.gene}_residues`, host._redraw);
-  const seqFor = (R, s) => (s.own ? Promise.resolve(B.seqs.get(s.name) || '') : seqOf(sp, R, B));   // the reference, or the construct's own
+  const seqFor = (R, s) => (s.own ? Promise.resolve(B.seqs.get(s.name) || ((B.cons && B.cons.get(s.name)) || {}).seq || '') : seqOf(sp, R, B));   // the reference, or the construct's own (from the bundle FASTA or its constructs.tsv seq)
   const [qs, os] = await Promise.all([seqFor(P, q), seqFor(O, o)]);
   if (host._tok !== tok) return;
   T[0].seq = qs; T[1].seq = os;
