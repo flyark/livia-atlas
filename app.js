@@ -3596,6 +3596,10 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   const num = (v, d) => `<td class="n">${fmtNum(v, d)}</td>`;
   const band = (cuts, v, d) => `<td class="n" style="${bandSty(cuts, v)}">${fmtNum(v, d)}</td>`;   // a score in the color of the FPR band it passes
   const lab = (p) => runLabel(sp, B, p.run, P) + (p.rep ? ` · repeat of ${runLabel(sp, B, B.runs.get(p.run).repeatOf, P)}` : '');
+  // Ranked models: a long table opens on the models past the link's cutoff (10% unless cut=5 or cut=1) and the best model;
+  // the rest open on request. All shown when every model or none passes, or when there are 10 rows or fewer.
+  const CUTP = [5, 1].includes(+hashPath().q.get('cut')) ? +hashPath().q.get('cut') : 10, nPass = part.preds.filter((p) => p.iLIS >= CUT[CUTP]).length;
+  const fold = part.preds.length > 10 && nPass > 0 && nPass < part.preds.length, nBelow = part.preds.filter((p) => !(p.iLIS >= CUT[CUTP] || p === best)).length;
   app.innerHTML = `${crumbs}
     <div class="phead"><div><h1><span style="color:var(--query-t)">${esc(P.gene)}</span> <span style="color:var(--ink-3);font-weight:600">×</span> <span style="color:var(--partner-t)">${esc(O.gene)}</span></h1>
         <div class="pairwho">${who(P, P.clen, 'var(--query-t)')}${who(O, oLen, 'var(--partner-t)')}</div>
@@ -3613,15 +3617,20 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
         <tr><th rowspan="2">Source</th><th rowspan="2" title="The model's rank within its prediction: the predictor's own ipTM-based order, not the iLIS order">Rank</th><th rowspan="2" class="n">iLIS</th><th rowspan="2" class="n">iLISA</th><th rowspan="2" class="n">ipTM</th><th rowspan="2" class="n">LIS</th><th rowspan="2" class="n">cLIS</th>
           <th colspan="2" class="grp" title="PAE ≤ 12 Å">Local interaction residues (LIR)</th><th colspan="2" class="grp" title="the interaction residues that also have Cβ ≤ 8 Å">Contact residues (cLIR)</th></tr>
         <tr><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th></tr></thead>
-        <tbody>${part.preds.map((p, i) => `<tr data-i="${i}"><td><span class="src" style="--c:${runColor(sp, p)}">${esc(lab(p))}</span></td><td>${p.rank}</td>
+        <tbody>${part.preds.map((p, i) => `<tr data-i="${i}"${fold && !(p.iLIS >= CUT[CUTP] || p === best) ? ' class="below" hidden' : ''}><td><span class="src" style="--c:${runColor(sp, p)}">${esc(lab(p))}</span></td><td>${p.rank}</td>
           <td class="n">${fmtNum(p.iLIS, 3)} <span class="band b${bandOf(p.iLIS)}">${bandLabel[bandOf(p.iLIS)]}</span></td>
-          ${band(FPR.iLISA, p.iLISA, 1)}${band(FPR.ipTM, p.ipTM, 2)}${band(FPR.LIS, p.LIS, 3)}${band(FPR.cLIS, p.cLIS, 3)}${num(p.qLIR, 0)}${num(p.pLIR, 0)}${num(p.qcLIR, 0)}${num(p.pcLIR, 0)}</tr>`).join('')}</tbody></table></div></div>
+          ${band(FPR.iLISA, p.iLISA, 1)}${band(FPR.ipTM, p.ipTM, 2)}${band(FPR.LIS, p.LIS, 3)}${band(FPR.cLIS, p.cLIS, 3)}${num(p.qLIR, 0)}${num(p.pLIR, 0)}${num(p.qcLIR, 0)}${num(p.pcLIR, 0)}</tr>`).join('')}</tbody></table></div>
+      ${fold ? `<div class="pager"><button class="more" type="button" id="models-more" aria-expanded="false">Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})</button></div>` : ''}</div>
     <div class="card"><div class="card-head"><h2>Interaction Residues</h2><select id="model-pick" aria-label="Model" style="font:13px var(--sans);padding:5px 8px;border:1px solid var(--line);border-radius:7px">${part.preds.map((p, i) =>
         `<option value="${i}">${esc(lab(p))} · rank ${p.rank} · iLIS ${fmtNum(p.iLIS, 3)}</option>`).join('')}</select></div>
       <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not an interaction residue</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interaction residue (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span><span class="muted">LIR needs only PAE ≤ 12 Å to the partner, not contact, so in a confident complex most of a chain can qualify</span></div>
       <div id="iface"></div></div>`;
+  const more = $('#models-more'), setOpen = (on) => { app.querySelectorAll('.models tbody tr.below').forEach((x) => { x.hidden = !on; }); more.setAttribute('aria-expanded', String(on));
+    more.textContent = on ? `Hide the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the cutoff` : `Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})`; };
+  if (more) more.onclick = () => setOpen(more.getAttribute('aria-expanded') !== 'true');
   const pick = (i) => {
     $('#model-pick').value = String(i);
+    { const tr = app.querySelector(`.models tbody tr[data-i="${i}"]`); if (tr && tr.hidden && more) setOpen(true); }   // a model below the cutoff chosen from the list: open the rest
     app.querySelectorAll('.models tbody tr').forEach((x) => x.classList.toggle('on', +x.dataset.i === i));
     ifaceView($('#iface'), { sp, P, O, pred: part.preds[i], B, canvasId: 'iface-canvas' });
   };
