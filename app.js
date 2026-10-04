@@ -1495,7 +1495,7 @@ async function viewAbout() {
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
       accession, official symbol or systematic name. In networks, edges are shaded in gray by the pair's best iLIS, and the pairs BioGRID reports
-      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both plum, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
+      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both striped blue and orange, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
       with a reported physical interaction is ringed in the Overview, and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
     <div class="card" id="about-limits"><h2>How the pages count, and their limits</h2>
@@ -1674,12 +1674,12 @@ const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
 // Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS on a color
 // scale the reader picks (light at the 10% FPR cutoff, dark at 0.85 and above; or one flat gray) and, when chosen, the
-// pairs reported in BioGRID colored by what was reported: physical blue, genetic orange, both plum (colors that stay
+// pairs reported in BioGRID colored by what was reported: physical blue, genetic orange, both striped blue and orange (colors that stay
 // distinct for red-green color-blind readers), the unreported pairs then light gray. Edge width is the best iLIS (the species file holds
 // no average across screens).
 const ESCALE = { gray: ['#C5CCD4', '#1E2A38'], blue: ['#C6DBEF', '#08306B'], brown: ['#E8D9C4', '#5B3A1A'] };
 const ESCALE_LBL = { gray: 'gray', blue: 'blue', brown: 'brown', flat: 'off (one gray)' };
-const EFLAT = '#9AA5B1', KB_COL = { p: '#2166AC', g: '#E66100', pg: '#8F2D56' }, KB_DIM = '#C3CCD6';   // blue, orange and plum (both: a blue and red mix), apart with color blindness and from the gray, at least 3.4:1 on white; KB_DIM: unreported pairs while BioGRID is on
+const EFLAT = '#9AA5B1', KB_COL = { p: '#2166AC', g: '#E66100', pg: '#E66100' }, KB_DIM = '#C3CCD6', KB_STRIPE = '6 6';   // blue and orange; both: orange under blue stripes (KB_STRIPE), so it needs no third color; apart with color blindness and from the gray, at least 3.4:1 on white; KB_DIM: unreported pairs while BioGRID is on
 const escale = (k) => d3.scaleLinear().domain([CUT[10], 0.85]).range(ESCALE[k] || ESCALE.gray).clamp(true);
 const EGRAY = escale('gray');   // the fixed gray scale of the virus networks
 const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');
@@ -1687,7 +1687,7 @@ const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.p
 const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
 const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
 const edgeCtl = (id, kbOn = false) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above">iLIS scale<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
-  <label class="ctl" title="color the pairs reported in BioGRID: physical blue, genetic orange, both plum; the other pairs turn light gray"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
+  <label class="ctl" title="color the pairs reported in BioGRID: physical blue, genetic orange, both striped blue and orange; the other pairs turn light gray"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
 function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a reported one
   const sc = $(`#${id}-shade`).value, shade = sc !== 'flat', kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
   const ramp = escale(sc);
@@ -1701,7 +1701,7 @@ function edgeKey(st, K, links, extra = []) {   // the key under a network: the i
     : K && st.kb ? `<span class="muted">reported in BioGRID ${esc(K.release)} (${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
       + (st.ev !== 'g' ? `<span><i style="background:${KB_COL.p}"></i>physical (${n((d) => d.pubs > 0 && !(d.gen > 0))})</span>` : '')
       + (st.ev !== 'p' ? `<span><i style="background:${KB_COL.g}"></i>genetic (${n((d) => d.gen > 0 && !(d.pubs > 0))})</span>` : '')
-      + `<span><i style="background:${KB_COL.pg}"></i>both (${n((d) => d.pubs > 0 && d.gen > 0)})</span>`
+      + `<span><i style="background:repeating-linear-gradient(90deg, ${KB_COL.p} 0 6px, ${KB_COL.g} 6px 12px)"></i>both (${n((d) => d.pubs > 0 && d.gen > 0)})</span>`
       + (extra.length ? `<span><i class="kb-dash"></i>reported, not predicted, dashed in the same colors (${fmtInt(extra.length)})</span>` : '') : '';
   return `<span class="kbhead">Edge color</span><div class="kbrow">${base}${red}</div>`;
 }
@@ -3393,8 +3393,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     svg.call(zoom);
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best)).attr('stroke-linecap', 'round');
     link.filter((d) => !d.q).raise();
+    const both = g.append('g').style('pointer-events', 'none').selectAll('line').data(links.filter((d) => d.pubs > 0 && d.gen > 0)).join('line').attr('stroke', KB_COL.p).attr('stroke-width', (d) => EWID(d.best)).attr('stroke-dasharray', KB_STRIPE);   // reported both ways: blue stripes over the orange line
     const restyle = () => { const st = edgeStyle('net', K);   // recolor in place: no new layout
       link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
+      both.attr('display', (d) => (st.hit(d) ? null : 'none'));
       $('#net-kbkey').innerHTML = edgeKey(st, K, links); };
     restyle();
     link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS ${ONE ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
@@ -3432,7 +3434,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (C.seed) { const sr = seededRandom(C.seed); nodes.slice(1).forEach((d) => { const t = sr() * 2 * Math.PI, rr = R * (0.4 + 0.6 * sr()); d.x = W / 2 + rr * Math.cos(t); d.y = H / 2 + rr * Math.sin(t); }); }   // a seed: seeded starting places
     const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => (l.q ? R * (1.15 - 0.55 * Math.min(1, l.best)) : 60)).strength((l) => (l.q ? 0.5 : 0.35)))
       .force('charge', d3.forceManyBody().strength(-340)).force('collide', d3.forceCollide().radius((d) => r(d) + 14)).force('x', d3.forceX(W / 2).strength(0.04)).force('y', d3.forceY(H / 2).strength(0.05))
-      .on('tick', () => { placeLabels(); for (const sel of [link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); for (const sel of [link, both]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     let fitted = false;   // once the layout settles, zoom so every node and label fits the box (the zoom stays free afterwards)
     sim.on('end', () => { if (fitted) return; fitted = true;
       const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y);
@@ -4646,11 +4648,13 @@ async function viewNetwork(spId, q) {
     const halo = g.append('g').style('pointer-events', 'none').selectAll('line').data(links.filter((l) => l.cons)).join('line').attr('stroke', '#F2C14E').attr('stroke-opacity', 0.8).attr('stroke-width', (d) => EWID(d.best) + 7).attr('stroke-linecap', 'round');   // conserved: a gold halo under the edge
     const xol = g.append('g').selectAll('line').data(xo).join('line').attr('stroke', '#1F8A80').attr('stroke-opacity', 0.85).attr('stroke-width', 1.6).attr('stroke-dasharray', '6 3').style('cursor', 'pointer');   // predicted only between the orthologs
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
+    const both = g.append('g').style('pointer-events', 'none').selectAll('line').data(links).join('line').attr('stroke', KB_COL.p).attr('stroke-width', (d) => EWID(d.best)).attr('stroke-dasharray', KB_STRIPE);   // reported both ways: blue stripes over the orange line
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && passE(e); }).map((d) => d.id));
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
       const byC = S.ncol === 'comm:' && groups.length && !catOrder, gOf = (d) => { const [a, b] = ends(d), x = gk.get(a); return x != null && x === gk.get(b) ? x : null; };   // as LIVIA's network page: an edge inside a community in its color, between communities light gray
       link.attr('stroke', (d) => (st.hit(d) || !byC || st.kb ? st.color(d) : gOf(d) != null ? GCOL(groups.indexOf(gOf(d))) : '#C7CED6')).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : byC && !st.kb ? (gOf(d) != null ? 0.75 : 0.35) : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
+      both.attr('display', (d) => (st.hit(d) && d.pubs > 0 && d.gen > 0 ? null : 'none'));
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
       const fo = (d) => FOLD.get(fkey(...ends(d)));
       dash.attr('stroke-dasharray', (d) => ((fo(d) || {}).st === 'none' ? '1.2 4.5' : '5 4')).attr('stroke-opacity', (d) => ((fo(d) || {}).st === 'none' ? 0.55 : 0.75));
@@ -4715,7 +4719,7 @@ async function viewNetwork(spId, q) {
       .force('link', d3.forceLink([...links, ...extra, ...xo]).id((d) => d.id).distance((l) => (S.lwt ? 70 + 60 * (1 - Math.min(1, l.best || 0)) : 100) * S.lspace).strength((l) => (l.unpred ? 0 : 0.4)))
       .force('charge', d3.forceManyBody().strength((groups.length ? -140 : -260) * S.lrep)).force('collide', d3.forceCollide().radius((d) => r(d) + 10))
       .force('x', d3.forceX((d) => (home(d) || [FW / 2])[0]).strength((d) => (home(d) ? 0.35 : 0.05))).force('y', d3.forceY((d) => (home(d) || [0, FH / 2])[1]).strength((d) => (home(d) ? 0.35 : 0.06)))
-      .on('tick', () => { placeLabels(); drawHulls(); for (const sel of [dash, link, halo, xol]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); drawHulls(); for (const sel of [dash, link, halo, xol, both]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     if (lr) sim.randomSource(seededRandom(S.lseed + 1));   // d3's own small random nudges, seeded too
     if (seed) sim.alpha(0.35);   // settle the new nodes without reshuffling the rest
     if (S.lay !== 'force') {   // a fixed layout: every protein pinned where the layout puts it, groups kept together on the circle
