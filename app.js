@@ -3501,7 +3501,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg }); } }
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); l.pubs = K ? K.pubs(l.source, l.target) : 0; l.gen = K ? K.gen(l.source, l.target) : 0; });
     if (!K) { $('#net-kb').checked = false; $('#net-kb').disabled = true; $('#net-ev').disabled = true; }
-    { const mb = $('#net-mods'); if (mb) mb.hidden = false; }   // the list's column is in place before the drawing measures its box
+    { const mb = $('#net-mods'); if (mb) mb.hidden = false; }   // the list's column is in place before the drawing measures its box, and stays (a message when it has no group)
     const svg = d3.select(netBox).select('svg'), W = netBox.clientWidth, H = netBox.clientHeight;
     svg.attr('width', W).attr('height', H);
     const g = svg.append('g');
@@ -3545,7 +3545,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const mods = (groups) => {   // the numbers above the drawing and one card per group of 3 or more partners beside it, as LIVIA's network page
       const st = $('#net-stats'), box2 = $('#net-mods'), nPairs = links.filter((l) => !l.q).length, list = groups.filter((x) => x.mem.length >= 3);
       if (st) st.innerHTML = `<span><b>${fmtInt(nodes.length - 1)}</b> partners</span><span><b>${fmtInt(nPairs)}</b> pairs among them</span><span><b>${fmtInt(list.length)}</b> ${ND.col === 'cluster' ? 'clusters' : 'communities'} of 3+</span><span>iLIS ≥ <b>${c}</b></span>${ND.col !== 'cluster' && cms != null ? `<span>${COMM_OPTS.find(([v]) => v === C.m)[1]} <b>${Math.round(cms)} ms</b></span>` : ''}`;
-      if (!box2) return; box2.hidden = !list.length; if (!list.length) { box2.innerHTML = ''; return; }
+      if (!box2) return; box2.hidden = false; if (!list.length) { box2.innerHTML = `<h3>${ND.col === 'cluster' ? 'Binding-site clusters' : 'Communities'}</h3><p class="muted">No ${ND.col === 'cluster' ? 'cluster' : 'community'} of 3 or more partners${ND.col !== 'cluster' && !C.m ? ' (pick a community method)' : ''}.</p>`; return; }
       box2.innerHTML = `<h3>${ND.col === 'cluster' ? 'Binding-site clusters' : 'Communities'} <span class="muted">${fmtInt(list.length)}, of 3 or more partners</span></h3>` + list.map((x) => {
         const mean = x.mem.reduce((t, d) => t + d.e.best, 0) / x.mem.length;
         return `<div class="nw-mod"><div class="hd"><i style="display:inline-block;width:14px;height:14px;border-radius:50%;background:${x.col};border:1px solid #17263A;flex:none"></i>${esc(x.name)}${x.cl ? `<a class="hub" href="#c-sites" data-cl="${x.cl}" title="show this cluster's binding site">binding site →</a>` : ''}</div>
@@ -3928,7 +3928,7 @@ async function viewVirus(spId, taxid) {
   }
   let VN = null;   // the drawn network's in-place restyle
   function draw() {
-    const { P, deg, homo } = tables(), box = $('#vn-net'); box.innerHTML = '<svg></svg>'; { const mb = $('#vn-mods'); if (mb) mb.hidden = false; }   // the list's column in place before the box is measured
+    const { P, deg, homo } = tables(), box = $('#vn-net'); box.innerHTML = '<svg></svg>'; { const mb = $('#vn-mods'); if (mb) mb.hidden = !commNow().m; }   // the list's column decided before the box is measured (none without communities)
     const W = box.clientWidth, H = box.clientHeight, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
     const zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', (ev) => { g.attr('transform', ev.transform); relabel(ev.transform.k); }); svg.call(zoom);
     const het = P.filter((x) => x.a !== x.b), k = topk; $('#vn-top').value = String(k);
@@ -3993,8 +3993,8 @@ async function viewVirus(spId, taxid) {
     { const withP = nodes.filter((d) => deg.get(d.id)).length, mods = grouped ? big.map((c, n) => { const mem = nodes.filter((d) => d.c === c).sort((a, b) => ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || lab(a.row).localeCompare(lab(b.row)));
         const ins = het.filter((x) => nodes[idx.get(x.a)].c === c && nodes[idx.get(x.b)].c === c); return { n, c, mem, e: ins.length, mean: ins.length ? ins.reduce((t, x) => t + x.best, 0) / ins.length : 0 }; }) : [];
       $('#vn-stats').innerHTML = `<span><b>${fmtInt(nodes.length)}</b> proteins</span><span><b>${fmtInt(withP)}</b> with a partner</span><span><b>${fmtInt(het.length)}</b> pairs</span>${grouped ? `<span><b>${fmtInt(big.length)}</b> communities of 3+</span>` : ''}<span>iLIS ≥ <b>${CUT[cut]}</b></span>${grouped ? `<span>${COMM_OPTS.find(([x]) => x === C.m)[1]} <b>${Math.round(cms)} ms</b></span>` : ''}`;
-      const box2 = $('#vn-mods'); box2.hidden = !mods.length;
-      box2.innerHTML = !mods.length ? '' : `<h3>Communities <span class="muted">${fmtInt(mods.length)}, of 3 or more proteins</span></h3>` + mods.map((m) => `<div class="nw-mod"><div class="hd"><i style="display:inline-block;width:14px;height:14px;border-radius:50%;background:${ccol(m.mem[0])};border:1px solid #17263A;flex:none"></i>${esc(commWord(C.m, m.n + 1).replace(/^./, (ch) => ch.toUpperCase()))}<a class="hub" href="#/${sp.id}/${m.mem[0].row.key}" title="the protein with the most partners here">${esc(lab(m.mem[0].row))} →</a></div>
+      const box2 = $('#vn-mods'); box2.hidden = !grouped;   // the same as before the box was measured, so the drawing keeps its width
+      box2.innerHTML = !mods.length ? '<h3>Communities</h3><p class="muted">No community of 3 or more proteins at this cutoff.</p>' : `<h3>Communities <span class="muted">${fmtInt(mods.length)}, of 3 or more proteins</span></h3>` + mods.map((m) => `<div class="nw-mod"><div class="hd"><i style="display:inline-block;width:14px;height:14px;border-radius:50%;background:${ccol(m.mem[0])};border:1px solid #17263A;flex:none"></i>${esc(commWord(C.m, m.n + 1).replace(/^./, (ch) => ch.toUpperCase()))}<a class="hub" href="#/${sp.id}/${m.mem[0].row.key}" title="the protein with the most partners here">${esc(lab(m.mem[0].row))} →</a></div>
         <div class="st">${fmtInt(m.mem.length)} proteins · ${fmtInt(m.e)} pairs · mean iLIS ${m.mean.toFixed(3)}</div>
         <div class="mem">${m.mem.slice(0, 24).map((d) => `<a href="#/${sp.id}/${d.row.key}">${esc(lab(d.row))}</a>`).join(', ')}${m.mem.length > 24 ? ` <span class="muted">+${fmtInt(m.mem.length - 24)} more</span>` : ''}</div></div>`).join(''); }
     VN = { disp() { Object.assign(ND, vnDisp()); circle.attr('r', rd).attr('stroke', ND.nbord ? '#17263A' : 'none'); hring.attr('r', (d) => rd(d) + 3);   // a Display option changed: restyle in place, nothing moves

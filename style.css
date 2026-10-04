@@ -735,3 +735,6 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 #c-net .nw-body > .net { height: 600px; }
 #c-net .nw-mods { max-height: 600px; }
 @media (max-width: 900px) { #c-net .nw-body > .net { height: 440px; } #c-net .nw-mods { max-height: 420px; } }
+#vn-card .nw-body > .net { height: 600px; }
+#vn-card .nw-mods { max-height: 600px; }
+@media (max-width: 900px) { #vn-card .nw-body > .net { height: 440px; } #vn-card .nw-mods { max-height: 420px; } }
