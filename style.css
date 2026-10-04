@@ -505,7 +505,7 @@ button.iso-tag:focus-visible { outline: 2px solid var(--blue); outline-offset: 1
 .sites-answer { font-size: 15px; line-height: 1.6; margin: 2px 0 12px; }
 .sites-note { margin: 10px 0 0; font-size: 12.5px; }
 
-/* status of reads from Zenodo: bottom center, above the page */
+/* status of data reads: bottom center, above the page */
 #loadbar { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 60; max-width: min(560px, calc(100vw - 32px)); padding: 9px 14px; border-radius: 10px;
   background: #1F2B3A; color: #F2F5F8; font-size: 13px; line-height: 1.5; box-shadow: 0 6px 20px rgba(20, 30, 45, 0.25); }
 #loadbar small { color: #C9D3DD; font-size: 12px; }

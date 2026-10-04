@@ -5,7 +5,7 @@
  * interaction fingerprint, cluster info, interaction residues, 3D structure, interaction scatter plot) and adds a
  * partner overview, a network and a partner table.
  * Static: each screen is a folder (manifest.json, proteins.json, edges.tsv, b/<id>.zip, s/<id>.fa) — or one
- * uncompressed zip read by byte range (Zenodo) — and each species an index over its screens (proteins.json keyed by
+ * uncompressed zip read by byte range (flyrnai.org) — and each species an index over its screens (proteins.json keyed by
  * UniProt accession, or by FlyBase gene for fly, whose bundles gather every construct of a gene), all in datasets.json. */
 
 const DEV = location.hostname === 'localhost' || location.hostname === '127.0.0.1';   // local preview: LIVIA on :8000, screens from ../data/
@@ -90,30 +90,31 @@ const avgView = (cuts, v, n, digits, what) => (n >= 5 ? { txt: v.toFixed(digits)
   : n >= 2 ? { txt: v.toFixed(digits), sty: 'color:#5F6771;font-style:italic', band: 'no band', tip: `${what} of ${n} models; the average cutoffs were set on five-model runs, so no band` }
   : { txt: '—', sty: 'color:#5F6771', band: '', tip: 'one model: no average' });
 const AUTO_N = 250;   // the network's auto partner count keeps the drawing near this many proteins
-const ARCHIVE = { doi: '10.5281/zenodo.22964479', url: 'https://doi.org/10.5281/zenodo.22964479' };   // the atlas's data record: the concept DOI, always the latest version
+const DATA = 'https://www.flyrnai.org/livia-atlas/';   // the Atlas data files: versions/<name>/ frozen, live/ what the site reads
+const verUrl = (v) => (v ? `${DATA}versions/${v}/md5s.txt` : `${DATA}live/LIVE.json`);   // the server lists no folders: a version's file list (names and md5s), or the live files
 // "Cite this view": the page, its link and the date, with the Atlas data record, copied for a methods section or a legend
 const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" data-cite="${esc(title)}" data-ds="${esc(ds.join(','))}" title="copy a citation of this page: its title, link and date, the Atlas data version it reads, and the screens its predictions come from">Cite</button>`;
-// A page's citation: the page (title, link, date), the Atlas data version each of its screens is read from (the Zenodo
-// version DOI, not the concept DOI that always opens the newest), the method, and the source of each screen shown, which
-// the screens' licenses (CC BY) require.
+// A page's citation: the page (title, link, date), the Atlas data version each of its screens is read from (a frozen
+// versions/<name>/ folder of the data files), the method, and the source of each screen shown, which the screens'
+// licenses (CC BY) require.
 const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3', 23063255: '0.1.4', 23104149: '0.1.5' };   // the Atlas record's versions on Zenodo
-const archiveOf = (recs) => (recs.length ? recs.map((r) => `LIVIA Atlas version ${REC_VERSION[r] || '?'}, Zenodo, https://doi.org/10.5281/zenodo.${r}`).join('; ') : `LIVIA Atlas, Zenodo, https://doi.org/${ARCHIVE.doi}`);
-const archiveLine = () => { const recs = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(recOf).filter(Boolean))].sort();   // the versions this site reads
-  return recs.map((r) => { const ids = [...new Set(REG.datasets.filter((d) => recOf(d) === r).map((d) => d.short))]; return `LIVIA Atlas version ${REC_VERSION[r] || '?'}, <i>Zenodo</i>, <a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">doi:10.5281/zenodo.${r}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">doi:${ARCHIVE.doi}</a>`; };
+const verOf = (d) => { const u = (d && d.zip && d.zip.url) || '', m = /\/versions\/([^/]+)\//.exec(u); if (m) return m[1]; const r = recOf(d); return r && REC_VERSION[r] ? `v${REC_VERSION[r]}` : ''; };   // the data version a screen is read from
+const archiveOf = (vers) => (vers.length ? vers.map((v) => `LIVIA Atlas data ${v}, ${verUrl(v)}`).join('; ') : `LIVIA Atlas data, ${verUrl()}`);
+const archiveLine = () => { const vers = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(verOf).filter(Boolean))].sort();   // the versions this site reads
+  return vers.map((v) => { const ids = [...new Set(REG.datasets.filter((d) => verOf(d) === v).map((d) => d.short))]; return `LIVIA Atlas data <a href="${verUrl(v)}" target="_blank" rel="noopener">${esc(v)}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data</a>`; };
 const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && (d.zip.zenodo || d.zip.url)) || ''); return m ? m[1] : null; };   // a screen served from flyrnai.org keeps its Zenodo record in zip.zenodo
-const recLink = (d) => { const r = recOf(d);   // the record version that holds a screen's files (the concept DOI opens the newest version, which may not)
-  return r ? `<a href="https://doi.org/10.5281/zenodo.${r}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo, version ${REC_VERSION[r] || '?'} (doi:10.5281/zenodo.${r}) ↗</a>`
-    : `<a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo (doi:${ARCHIVE.doi}) ↗</a>`; };
+const recLink = (d) => { const v = verOf(d);   // the frozen data version that holds a screen's files
+  return v ? `<a href="${verUrl(v)}" target="_blank" rel="noopener">LIVIA Atlas data files, ${esc(v)} ↗</a>` : `<a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data files ↗</a>`; };
 const doiUrl = (u) => { const m = /(10\.\d{4,9}\/[^\s?#]+?)(v\d+)?(\.full(\.pdf)?)?$/.exec(u || ''); return m && !/^http.*nvidia/.test(u) ? `https://doi.org/${m[1]}` : u; };   // a preprint cited by its DOI
 const refOf = (id) => { const d = ((REG && REG.datasets) || []).find((x) => x.id === id); return d ? `${d.source.replace(' · ', ', ')}${d.paper ? `, ${doiUrl(d.paper)}` : ''}` : ''; };   // a screen's source, for exported tables
 const BUILD = ((document.querySelector('script[src*="app.js"]') || {}).src || '').replace(/^.*[?&]v=([^&]+).*$/, '$1') || 'unknown';   // the page's build: its app.js version token
 const citeText = (title, ids = []) => {
   const ds = ids.map((id) => ((REG && REG.datasets) || []).find((d) => d.id === id)).filter(Boolean);
-  const recs = [...new Set(ds.map(recOf).filter(Boolean))];
-  const src = [...new Set(ds.filter((d) => d.paper && !d.paper.includes(ARCHIVE.doi) && !d.paper.includes(REF.livia[1])).map((d) => `${d.source.replace(' · ', ', ')}, ${doiUrl(d.paper)}`))];
+  const vers = [...new Set(ds.map(verOf).filter(Boolean))];
+  const src = [...new Set(ds.filter((d) => d.paper && !/zenodo/.test(d.paper) && !d.paper.includes(REF.livia[1])).map((d) => `${d.source.replace(' · ', ', ')}, ${doiUrl(d.paper)}`))];
   return `${title}. LIVIA Atlas, ${location.origin}${location.pathname.replace(/index\.html$/, '')}${location.hash} (page build ${BUILD}, accessed ${new Date().toLocaleDateString('en-CA')}). `
     + `Kim, A.-R. & Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. https://doi.org/${REF.livia[1]}. `
-    + `Data archive: ${archiveOf(recs)}.` + (src.length ? ` Screens: ${src.join('; ')}.` : '');
+    + `Data: ${archiveOf(vers)}.` + (src.length ? ` Screens: ${src.join('; ')}.` : '');
 };
 document.addEventListener('click', async (e) => {
   const b = e.target.closest && e.target.closest('[data-cite]'); if (!b) return;
@@ -135,7 +136,7 @@ const REF = {
   alphamissense: ['Cheng et al. 2023', '10.1126/science.adg7492'], afm: ['Evans et al. 2021', '10.1101/2021.10.04.463034'],
   colabfold: ['Mirdita et al. 2022', '10.1038/s41592-022-01488-1'], silhouette: ['Rousseeuw 1987', '10.1016/0377-0427(87)90125-7'],
   molstar: ['Sehnal et al. 2021', '10.1093/nar/gkab314'], d3: ['Bostock et al. 2011', '10.1109/TVCG.2011.185'],
-  leiden: ['Traag et al. 2019', '10.1038/s41598-019-41695-z'], zenodo: ['Zenodo', '10.25495/7GXK-RD71'],
+  leiden: ['Traag et al. 2019', '10.1038/s41598-019-41695-z'],
   schmid2025: ['Schmid et al. 2025', '10.1101/2025.11.10.687652'], kim2025: ['Kim et al. 2025', '10.1101/2025.10.10.681672'],
   han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'],
 };
@@ -219,7 +220,7 @@ function setsOf(ds) {
   return ds.setsJob;
 }
 const primarySet = (tags) => (tags && tags.length ? tags.find((s) => s.type === 'screen') || tags[0] : null);   // a named screen before its category
-// A screen's per-protein files: in its folder, or — for a screen kept as one uncompressed zip (Zenodo) — one HTTP Range
+// A screen's per-protein files: in its folder, or — for a screen kept as one uncompressed zip (flyrnai.org) — one HTTP Range
 // read each, at the byte range the offsets map kept with the site gives. Never the whole archive.
 const OFFS = new Map();
 // A data read can answer slowly or stall, and a large interactome takes seconds to cluster. Each read and each clustering
@@ -1359,9 +1360,9 @@ async function fillThemes() {   // home: each theme's species and totals, from i
 }
 function dsCard(d) {
   const live = d.status === 'live', spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
-  const rec = d.status === 'record' && d.zip && d.zip.record;   // in the Zenodo record only: in nearly all of its pairs one protein belongs to another taxon (95% or more in every such set), so no species page; its own short page
-  const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : d.status === 'record' ? 'Zenodo record' : 'Planned'}</span>
-    <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : rec ? `<a href="#/datasets/${esc(d.id)}" title="in the LIVIA Atlas record on Zenodo; in nearly all of its pairs one protein belongs to another taxon, so the Atlas has no species page for it">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
+  const rec = d.status === 'record' && d.zip && d.zip.record;   // in the data files only: in nearly all of its pairs one protein belongs to another taxon (95% or more in every such set), so no species page; its own short page
+  const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : d.status === 'record' ? 'Data files only' : 'Planned'}</span>
+    <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : rec ? `<a href="#/datasets/${esc(d.id)}" title="in the LIVIA Atlas data files only; in nearly all of its pairs one protein belongs to another taxon, so the Atlas has no species page for it">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
     <div class="sp">${spName(spx ? spx.name : d.speciesName || d.species || '')}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
   const src = d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source);   // every paper reference links to the paper
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
@@ -1487,7 +1488,7 @@ async function viewDatasets() {
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div><h1 class="sr-only">Datasets</h1>
     ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
-    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the <a href="${ARCHIVE.url}" target="_blank" rel="noopener">LIVIA Atlas record on Zenodo ↗</a>, under CC BY 4.0; each dataset page links the version that holds its files. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Zenodo record are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the record.</p>
+    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the <a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data files ↗</a>, under CC BY 4.0; each dataset page links the version that holds its files. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Data files only are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the data files.</p>
     <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}${homoDsCard(reg)}</div>`;
   fillDsStats(); fillThemes(); setCards(gen, reg);
 }
@@ -1542,7 +1543,7 @@ async function viewAbout() {
     'human-kinase-tf': ['kim2025', 'Kim, A.-R. et al. (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. <i>bioRxiv</i>.'],
     flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'] };
   const HAN = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>.'];   // every AFDB heterodimer screen
-  const kk = 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>. The predictions are in the LIVIA Atlas record on Zenodo, cited above.';
+  const kk = 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>. The predictions are in the LIVIA Atlas data files, cited above.';
   const groups = new Map();
   for (const d of (reg.datasets || []).filter((x) => x.status === 'live')) {
     const [k, text] = SRC[d.id] || (/^afdb-het-/.test(d.id) ? HAN : /kinase-kinase$/.test(d.id) ? ['livia', kk] : [null, `${esc(d.source || '')}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`]);
@@ -1613,7 +1614,7 @@ async function viewAbout() {
         ${ref('d3', 'Plots and networks, D3 7.9: Bostock, M., Ogievetsky, V. &amp; Heer, J. (2011). D³ data-driven documents. <i>IEEE Trans. Vis. Comput. Graph.</i> 17, 2301–2309.')}
         ${ref('leiden', 'Communities in LIVIA\'s network page: Traag, V. A., Waltman, L. &amp; van Eck, N. J. (2019). From Louvain to Leiden: guaranteeing well-connected communities. <i>Sci. Rep.</i> 9, 5233.')}
         <li>Reading prediction bundles in the browser: JSZip 3.10. <a href="https://stuk.github.io/jszip/" target="_blank" rel="noopener">stuk.github.io/jszip</a></li>
-        ${ref('zenodo', 'Hosting: the site and some screens on GitHub Pages; the others in the LIVIA Atlas record on Zenodo, read by byte range, so a page loads only its own bundles. European Organization for Nuclear Research &amp; OpenAIRE (2013). <i>Zenodo</i>. CERN.')}
+        <li>Hosting: the site on GitHub Pages; the screens' data files on the Perrimon lab's web server (<a href="${verUrl()}" target="_blank" rel="noopener">flyrnai.org/livia-atlas</a>), read by byte range, so a page loads only its own bundles.</li>
         <li>Visits are counted with GoatCounter, without cookies.</li>
       </ul></div></div>`;
 }
@@ -3804,7 +3805,7 @@ async function viewVirus(spId, taxid) {
     <div class="phead vh"><div><h1>${esc(v.name)}</h1>
       <div class="pname">${virFolded(v)} with AlphaFold-Multimer (one model each) and scored with lis.py</div>
       ${v.family ? `<div class="pname">${esc(v.family)}${v.genus ? ` · <i>${esc(v.genus)}</i>` : ''}${v.species ? ` · species <i>${esc(v.species)}</i>` : ''}${v.host ? ` · host: ${esc(v.host)}` : ''} <span class="muted">(ICTV VMR MSL40)</span></div>` : ''}
-      ${(() => { const d = ((REG && REG.datasets) || []).find((x) => x.id === 'viral-dimers-afdb'); return d ? `<div class="pname vsrc inl">Predictions from the AlphaFold Database release of viral protein complexes (EMBL-EBI, Google DeepMind, NVIDIA and collaborators; models CC BY 4.0): <a href="${esc(d.paper)}" target="_blank" rel="noopener">Han, Narain et al. 2026 ↗</a> · data: <a href="https://doi.org/10.5281/zenodo.${recOf(d) || ''}" target="_blank" rel="noopener">LIVIA Atlas on Zenodo ↗</a></div>` : ''; })()}
+      ${(() => { const d = ((REG && REG.datasets) || []).find((x) => x.id === 'viral-dimers-afdb'); return d ? `<div class="pname vsrc inl">Predictions from the AlphaFold Database release of viral protein complexes (EMBL-EBI, Google DeepMind, NVIDIA and collaborators; models CC BY 4.0): <a href="${esc(d.paper)}" target="_blank" rel="noopener">Han, Narain et al. 2026 ↗</a> · data: ${recLink(d)}</div>` : ''; })()}
       <div class="ids"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${v.taxid}" target="_blank" rel="noopener">NCBI taxon ${v.taxid}</a><span>${fmtInt(v.het)} heterodimers · ${fmtInt(v.hom)} homodimers folded</span></div>
       <div class="actions">${citeBtn(`${v.name} (virus)`, sp.dsIds)}</div></div>
       <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR${cutNote(10)}</span></div>
@@ -4931,7 +4932,7 @@ async function viewNetwork(spId, q) {
   // loaded file redraws the same network and can say whether the new drawing matches the saved one.
   const appVer = () => { const s = document.querySelector('script[src*="app.js"]'); return (s && (/[?&]v=([^&]+)/.exec(s.src) || [])[1]) || ''; };
   const dataOf = () => { const used = !S.set ? sp.dsIds : sp.dsIds.includes(S.set) ? [S.set] : sp.dsIds.filter((id, i) => TSs[i] && TSs[i].list.some((x) => x.id === S.set));
-    return used.map((id) => { const d = REG.datasets.find((x) => x.id === id) || { id }, r = recOf(d); return { screen: id, name: d.short || id, record: r ? `https://doi.org/10.5281/zenodo.${r}` : '', version: r ? REC_VERSION[r] || '' : '' }; }); };
+    return used.map((id) => { const d = REG.datasets.find((x) => x.id === id) || { id }, v = verOf(d); return { screen: id, name: d.short || id, data: verUrl(v), version: v }; }); };
   const DISP = ['shade', 'kb', 'ev', 'unpred', 'heat-show', 'heat-cs'];
   const MEANING = { ids: 'proteins-of-interest, as the Atlas resolved them', add: "none: only these proteins; link: + partners linking them; top: + each one's top partners; tree: + the fewest partners connecting them (a Steiner tree, each pair costing 1.05 − best iLIS)", prize: 'tree: the table column whose numbers score each protein-of-interest (blank: none, every reachable one joins)', sig: '1: only added partners linking more proteins-of-interest than chance (BH q ≤ 0.05)', hops: 'partners a linking path may pass through (add = link)',
     k: 'partners per protein (add = top, and per click); absent: picked for you', cut: 'cutoff: 10, 5 or 1 (% FPR), or c for the custom iLIS in cutv', cutv: 'custom iLIS cutoff (cut = c)', iptm: 'also require a best ipTM of at least this (0: none)',
@@ -4973,8 +4974,8 @@ async function viewNetwork(spId, q) {
     const now = new Set(net.nodes.map((d) => d.row.key)), was = new Set(R.proteins || []), lost = [...was].filter((k) => !now.has(k)).length, gained = [...now].filter((k) => !was.has(k)).length;
     const nowP = new Set(net.links.map((l) => pk(...endsOf(l).map((i) => sp.rows[i].key)))), wasP = new Set((R.pairs || []).map((p) => pk(p[0], p[1]))), pDiff = [...wasP].filter((k) => !nowP.has(k)).length + [...nowP].filter((k) => !wasP.has(k)).length;
     const part = (gs) => new Set(gs.map((g) => [...(g.proteins || [])].sort().join(','))), gNow = part(groupsNow()), gWas = part(R.groups || []), gSame = gNow.size === gWas.size && [...gNow].every((s) => gWas.has(s));
-    const dNow = dataOf().map((d) => d.record).join(' '), dWas = ((X.atlas && X.atlas.data) || []).map((d) => d.record).join(' '), app = (X.atlas && X.atlas.app) || '';
-    const why = [dWas && dWas !== dNow ? 'the data record changed since it was saved' : '', app && app !== appVer() ? `it was saved with an earlier version of this page (${esc(app)})` : ''].filter(Boolean);
+    const dv = (d) => `${d.screen}:${String(d.version || '').replace(/^v/, '')}`, dNow = dataOf().map(dv).join(' '), dWas = ((X.atlas && X.atlas.data) || []).map(dv).join(' '), app = (X.atlas && X.atlas.app) || '';
+    const why = [dWas && dWas !== dNow ? 'the data version changed since it was saved' : '', app && app !== appVer() ? `it was saved with an earlier version of this page (${esc(app)})` : ''].filter(Boolean);
     const same = !lost && !gained && !pDiff && gSame;
     el.innerHTML = `<b>${same ? 'Same result as saved' : 'Not the saved result'}</b> · settings from ${esc(file)}${X.saved ? `, saved ${esc(String(X.saved).slice(0, 10))}` : ''}: `
       + (same ? `the same ${fmtInt(now.size)} proteins and ${fmtInt(nowP.size)} pairs${gNow.size ? `, in the same ${fmtInt(gNow.size)} group${gNow.size === 1 ? '' : 's'}` : ''}.`
@@ -5064,7 +5065,7 @@ async function route() {
   try {
     await registry();
     if (stale(gen)) return;
-    { const f = document.getElementById('build'); if (f && !f.textContent) { const v = [...new Set((REG.datasets || []).map(recOf).filter(Boolean))].sort().map((r) => REC_VERSION[r] || r); f.innerHTML = `Build ${esc(BUILD)} · data: LIVIA Atlas record on Zenodo, version${v.length === 1 ? '' : 's'} ${esc(v.join(' and '))} · <a href="https://github.com/flyark/livia-atlas/commits/main" target="_blank" rel="noopener">changes ↗</a>`; } }   // the footer says which build and which data a reader sees
+    { const f = document.getElementById('build'); if (f && !f.textContent) { const v = [...new Set((REG.datasets || []).map(verOf).filter(Boolean))].sort(); f.innerHTML = `Build ${esc(BUILD)} · data: LIVIA Atlas data ${esc(v.join(', '))} · <a href="https://github.com/flyark/livia-atlas/commits/main" target="_blank" rel="noopener">changes ↗</a>`; } }   // the footer says which build and which data a reader sees
     if (!parts.length) await viewHome();
     else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
