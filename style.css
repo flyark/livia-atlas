@@ -709,3 +709,4 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .hd-ticks span.end { transform: none; }
 .hd-note { font-size: 13px; margin: 8px 0 0; }
 @media (max-width: 640px) { .hd-lane { grid-template-columns: 1fr; gap: 2px; } .hd-lab { text-align: left; } .hd-axis .hd-lab { display: none; } }
+.subnav button[hidden] { display: none; }   /* all: unset above clears the browser's [hidden] rule */

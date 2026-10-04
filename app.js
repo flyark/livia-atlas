@@ -614,7 +614,7 @@ function structLink(host, x, cls) {
   if (!x || !x.model || !(x.shown || x.addr)) return;
   const a = document.createElement('a'); a.className = cls; a.textContent = 'Structure in LIVIA ↗';
   if (x.shown) { a.href = `${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}`; a.target = '_blank'; a.rel = 'noopener'; a.title = `${x.model} in LIVIA, from the AlphaFold Database`; }
-  else { a.href = '#'; a.title = `${x.model} in LIVIA, read from the release archive at EBI (${((x.addr.cif_len + x.addr.pae_len) / 1048576).toFixed(1)} MB; not displayed by the AlphaFold Database)`;
+  else { a.href = '#'; a.title = `${x.model} in LIVIA, read from the release archive at EBI (${((x.addr.cif_len + x.addr.pae_len) / 1048576).toFixed(1)} MB${x.addr.hd ? '' : '; not displayed by the AlphaFold Database'})`;
     a.onclick = (e) => { e.preventDefault(); openFromArchive(x.model, x.addr, a); }; }
   host.appendChild(a);
 }
@@ -677,7 +677,7 @@ async function homoCard(sp, P, gone) {
   const show = (e) => {
     const sc = [['iLIS', 'iLIS'], ['iLISA', 'iLISA'], ['ipSAE', 'ipSAE'], ['ipTM', 'ipTM'], ['pDockQ2', 'pDockQ2'], ['actifpTM', 'actifpTM (approx.)']];
     const num = (k) => vmfmt(k, e[k] === '' || e[k] == null ? NaN : +e[k]);
-    $('#homo-body').innerHTML = `<p class="hd-line"><b>${esc(e.entry)}</b>${e.iso ? ` · <span class="flag">isoform ${esc(e.uniprot_A)}</span>` : ` · ${esc(e.uniprot_A)}`} · ${fmtInt(+e.len_i)} aa per copy${e.pLDDT !== '' ? ` · pLDDT ${(+e.pLDDT).toFixed(1)}` : ''} <span id="homo-struct"></span></p>
+    $('#homo-body').innerHTML = `<p class="hd-line"><b>${esc(e.entry)}</b>${e.iso ? ` · <span class="flag">isoform ${esc(e.uniprot_A)}</span>` : ` · ${esc(e.uniprot_A)}`} · ${fmtInt(+e.len_i)} aa per copy${Number.isFinite(parseFloat(e.pLDDT)) ? ` · pLDDT ${(+e.pLDDT).toFixed(1)}` : ''} <span id="homo-struct"></span></p>
       <div class="kpis hd-scores">${sc.map(([k, l]) => `<div class="kpi"><b>${num(k)}</b><span>${l}</span></div>`).join('')}<div class="kpi"><b>${fmtInt(+e.LIR_i || 0)} / ${fmtInt(+e.cLIR_i || 0)}</b><span>LIR / cLIR residues</span></div></div>
       ${homoTrack(e)}
       <p class="muted hd-note">Scores only. The release lists a homodimer only when ${esc(H.selection)}, and the iLIS cutoffs were calibrated on pairs of two different proteins, so this card makes no interaction call and shows no false-positive-rate band. Interaction residues (LIR) have a confident predicted aligned error to the other copy; contact residues (cLIR) also lie at Cβ ≤ 8 Å from it. The track shows the first copy (chain A), numbered from its first residue; the second copy is the same protein.</p>`;
@@ -1354,12 +1354,12 @@ function dsCard(d) {
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
     <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div></div>`;
 }
-function homoDsCard(reg) {   // the homodimer release: on protein pages, scores only, so its card counts proteins and nothing past a cutoff
+function homoDsCard(reg) {   // the homodimer release: on protein pages, scores only, so its card counts entries (isoforms included) and nothing past a cutoff
   const H = reg.homodimers; if (!H || !H.species) return '';
   const sps = Object.keys(H.species), n = sps.reduce((a, k) => a + (H.species[k].entries || 0), 0);
   return `<div class="ds live" data-ds="homodimers"><span class="badge on">On protein pages</span><h3>${esc(H.title)}</h3>
     <div class="sp">${fmtInt(sps.length)} species · one model per protein · scores only</div>
-    <div class="stats"><div><b>${fmtInt(n)}</b><span>proteins</span></div></div>
+    <div class="stats"><div><b>${fmtInt(n)}</b><span>entries</span></div></div>
     <div class="src-line"><a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a> — listed only when ${esc(H.selection)}; the iLIS cutoffs were not calibrated for homodimers, so no interaction calls</div></div>`;
 }
 async function fillDsStats() {
@@ -1566,7 +1566,7 @@ async function viewAbout() {
       <p><b>Three ways a partner is counted past a cutoff.</b> The header tiles and the partner lists count a partner when its <i>best model</i>, over every model of every screen, passes. Predicted binding sites (cLIP) cluster each pair's <i>top-ranked model</i>, so a partner that passes only in a lower-ranked model is listed apart. Top partners ranks by the <i>share of a pair's models</i> that pass, so a pair past the cutoff in all its models comes before one past it in one. The cards say which rule they use.</p>
       <p><b>What the false-positive rates mean.</b> The cutoffs were calibrated on the top-ranked of five models per pair (the reference sets above). The Atlas applies them to a pair's best model, which on that set gives 10.4%, 5.3% and 1.1%. A pair folded in several runs or constructs has more models to choose its best from (up to sixteen, e.g. yki with sd), so for it the stated rate is a lower bound. In a one-model screen (the AlphaFold Database heterodimers, viral dimers included) the best model is the only model, which was not the setting of the calibration either, so there the rates are a guide. The cutoffs were not calibrated separately for bacteria, plants or viruses.</p>
       <p><b>Limits.</b> Every interaction here is a prediction, not an experiment. BioGRID marks depend on which proteins have been studied and on how each screen chose its pairs (a literature-derived set is reported by design), so a reported share is not a measure of accuracy. A site contacted by many partners can be a surface many proteins are predicted to touch (a DNA-binding face, a kinase domain in a kinase screen) rather than a specific binding site; its partner list and the screens they come from can help tell them apart. Paralogs that share an oligomerization domain can be predicted to pair through it whether or not they do in cells. Contacts in disordered regions count only where the predicted aligned error is at most 12 Å, but they remain the least certain. Network chance tests compare only pairs that were folded where the Atlas knows which were.</p>
-      <p><b>Homodimers.</b> A protein page can show its homodimer from the AlphaFold Database homodimer release, rescored with lis.py. The release lists a homodimer only when ${esc((reg.homodimers || {}).selection || 'it passes the database\'s confidence filter')}, so nearly every listed homodimer scores high, and the iLIS cutoffs were calibrated on pairs of two different proteins. The Homodimer card therefore shows scores and residues only, with no interaction call and no false-positive-rate band. It has one model per protein and does not enter the partner counts, binding sites or networks.</p></div>
+      <p><b>Homodimers.</b> A protein page can show its homodimer from the AlphaFold Database homodimer release, rescored with lis.py. The release lists a homodimer only when ${esc((reg.homodimers || {}).selection || 'it passes the database\'s confidence filter')}, and the iLIS cutoffs were calibrated on pairs of two different proteins. The Homodimer card therefore shows scores and residues only, with no interaction call and no false-positive-rate band. It has one model per protein and does not enter the partner counts, binding sites or networks.</p></div>
     <div class="card"><h2>Cite</h2>
       <ul class="refs">
         ${ref('livia', 'LIVIA: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.')}
