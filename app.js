@@ -258,13 +258,14 @@ async function rangeRead(url, range) {   // → the bytes of one Range read, or 
     finally { clearTimeout(t); }
   }
 }
+const zkey = (z) => `?z=${encodeURIComponent((z.url || '').split('/').slice(-2).join('/'))}`;   // the offsets are read for one zip: a new zip address is a new offsets address, so no cached map outlives its zip
 async function screenFile(ds, rel) {
   const z = ds.reg.zip;
   if (!z) { const res = await fetch(new URL(rel.split('/').map(encodeURIComponent).join('/'), ds.manifest.bundleBase || ds.base).href); return res.ok ? res : null; }
   let ok = ds.id;   // the map, or the shard that holds this bundle (files.offsetShards: offsets/<last two characters of the name>.json)
   if ((ds.manifest.files || {}).offsetShards) { const nm = rel.split('/').pop().replace(/\.[^.]+$/, ''), xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_'); ok = `${ds.id}/${xx}`;
-    if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets.replace(/offsets\.json$/, `offsets/${xx}.json`), location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))); }
-  else if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets, location.href).href).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+    if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets.replace(/offsets\.json$/, `offsets/${xx}.json`), location.href).href + zkey(z)).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))); }
+  else if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets, location.href).href + zkey(z)).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
   const at = (await OFFS.get(ok))[rel]; if (!at) return null;
   const range = `bytes=${at[0]}-${at[0] + at[1] - 1}`, url = DEV && z.dev ? new URL(z.dev, location.href).href : z.url;
   const read = z.zenodo && url === z.url ? rangeRead(url, range).catch(() => null).then((v) => v || rangeRead(z.zenodo, range)) : rangeRead(url, range);   // flyrnai.org first, the same bytes on Zenodo if it fails
@@ -453,11 +454,20 @@ function parseFasta(text) { const m = new Map(); let id = null, buf = [];
 const bundleRel = (ds, name) => (ds.manifest.files.bundle || 'b/{id}.zip').replace('{id}', name);
 const bundleUrl = (ds, name) => new URL(bundleRel(ds, name).split('/').map(encodeURIComponent).join('/'), ds.manifest.bundleBase || ds.base).href;
 // A gene-keyed bundle names its constructs: name → gene key, kind, label, length, offset on the gene's reference sequence
-function parseCons(text) {
+function parseCons(text, seqs) {   // seqs: the bundle's FASTA, to read a fragment's reference range past an X
   const m = new Map();
   for (const line of text.split('\n').slice(1)) { if (!line) continue; const [name, key, kind, label, len, off, exact, mut, seg, seq] = line.split('\t');   // seq: the folded sequence, given when it is not the reference's (an X kept where it was folded)
     m.set(name, { key, kind, label, len: +len, off: off === '' || off == null ? null : +off, exact: exact === 'y', mut: mut || '',
       seg: seg ? seg.split(',').map((t) => t.split(':').map(Number)) : null, seq: seq || '' }); }
+  // A construct placed by segments (its folded sequence differs from the reference, e.g. an X kept where it was folded)
+  // is labeled as one placed by an offset: a gene by its symbol, a fragment by its symbol and reference range.
+  const bare = (l) => { const w = l.replace(/ \([\d,]+ aa\)$/, '').split(' '); return w.length === 2 && w[0] === w[1] ? w[0] : w.join(' '); };
+  const sym = new Map(); for (const c of m.values()) if (c.kind === 'gene' && c.off != null && !sym.has(c.key)) sym.set(c.key, c.label);
+  for (const c of m.values()) if (c.seg && c.off == null && c.kind === 'gene') { c.label = bare(c.label); if (!sym.has(c.key)) sym.set(c.key, c.label); }
+  for (const [name, c] of m) if (c.seg && c.off == null && c.kind === 'fragment') {
+    const f = c.seg[0], q = (seqs && seqs.get(name)) || '', g = sym.get(c.key) || name.split('_')[0];
+    const ins = q.length === c.len ? (q.match(/[XUO]/g) || []).length : c.seg.slice(1).reduce((t, [a, b], i) => { const [a0, b0, n0] = c.seg[i]; return t + (a - a0 - n0) - (b - b0 - n0); }, 0);   // residues with no reference position: the X's in its sequence, else the gaps between its blocks
+    c.label = `${g} ${f[1]}–${f[1] - f[0] + c.len - ins}`; }
   return m;
 }
 function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: lis.py rows + FASTA (+ its construct table)
@@ -470,9 +480,11 @@ function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: li
       const csvName = files.find((f) => /\.csv$/i.test(f) && !/identity[_-]?map/i.test(f)), faName = files.find((f) => /\.(fa|fasta)$/i.test(f));
       const conName = files.find((f) => /(^|\/)constructs\.tsv$/.test(f));
       return { rel, bytes, csvName, faName, ...(await csvRows(zip, csvName)),
-        seqs: parseFasta(faName ? await zip.file(faName).async('string') : ''), cons: conName ? parseCons(await zip.file(conName).async('string')) : null,
+        seqs: parseFasta(faName ? await zip.file(faName).async('string') : ''), cons: conName ? parseCons(await zip.file(conName).async('string'), parseFasta(faName ? await zip.file(faName).async('string') : '')) : null,
         isoforms: files.includes('isoforms.json') ? JSON.parse(await zip.file('isoforms.json').async('string')) : null };   // v1.2: its other isoforms are files of their own
-    })();
+    })().then((raw) => {   // a FASTA that also holds partners' folded sequences (fly 0.1.6): the query's stay in seqs, a partner's go to its construct
+      if (raw.cons) for (const [nm, q] of [...raw.seqs]) { const c = raw.cons.get(nm); if (c && !c.seq) c.seq = q; if (nm !== name && (!c || c.key !== name)) raw.seqs.delete(nm); }   // every construct keeps its own folded sequence (another screen can file an isoform under the same gene key)
+      return raw; });
     ds.raw.set(rel, job); job.catch(() => ds.raw.delete(rel));
     while (ds.raw.size > 16) ds.raw.delete(ds.raw.keys().next().value);   // the most recent bundles only
   } else { const job = ds.raw.get(rel); ds.raw.delete(rel); ds.raw.set(rel, job); }
@@ -1263,7 +1275,8 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   host._redraw = () => drawIfaceTracks(cv, T);
   host._redraw();
   attachExport(canvasId, `atlas_${P.gene}_vs_${O.gene}_residues`, host._redraw);
-  const seqFor = (R, s) => (s.own ? Promise.resolve(B.seqs.get(s.name) || ((B.cons && B.cons.get(s.name)) || {}).seq || '') : seqOf(sp, R, B));   // the reference, or the construct's own (from the bundle FASTA or its constructs.tsv seq)
+  const ownSeq = (s) => [B.seqs.get(s.name), ((B.cons && B.cons.get(s.name)) || {}).seq].find((q) => q && q.length === s.len) || B.seqs.get(s.name) || '';   // the one of the folded length
+  const seqFor = (R, s) => (s.own ? Promise.resolve(ownSeq(s)) : !s.span && [B.seqs.get(s.name), ((B.cons && B.cons.get(s.name)) || {}).seq].some((q) => q && q.length === s.len) ? Promise.resolve(ownSeq(s)) : seqOf(sp, s.len === R.len && R.len !== R.clen ? { ...R, clen: R.len } : R, B));   // drawn on the reference: its length, not the folded one   // the reference, or the construct's own (from the bundle FASTA or its constructs.tsv seq)
   const [qs, os] = await Promise.all([seqFor(P, q), seqFor(O, o)]);
   if (host._tok !== tok) return;
   T[0].seq = qs; T[1].seq = os;
