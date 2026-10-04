@@ -3852,7 +3852,7 @@ async function viewVirus(spId, taxid) {
   let text; try { text = await getText(sp.base + `pairs/${v.taxid}.tsv`); } catch (e) { if (!stale(gen)) app.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
   if (stale(gen)) return;
   const q = hashPath().q; let cut = [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, topk = q.has('top') ? Math.max(0, +q.get('top') || 0) : 0;   // defaults: 5% FPR, every edge
-  const cm0 = q.has('cm') ? (COMM_OPTS.some(([x]) => x === q.get('cm')) ? q.get('cm') : '') : 'comm', seed0 = Math.min(999999, Math.max(0, parseInt(q.get('seed'), 10) || 0));   // communities: Louvain unless the link says otherwise (cm=none: none)
+  const cm0 = q.has('cm') ? (COMM_OPTS.some(([x]) => x === q.get('cm')) ? q.get('cm') : '') : 'leiden', seed0 = Math.min(999999, Math.max(0, parseInt(q.get('seed'), 10) || 0));   // communities: Leiden (as LIVIA's network page) unless the link says otherwise (cm=none: none)
   const R = (i) => sp.rows[i], lines = text.trim().split('\n'), head = lines[0].split('\t');
   const DUPG = (() => { const c = new Map(); for (const i of v.members) c.set(R(i).gene, (c.get(R(i).gene) || 0) + 1); return new Set([...c].filter(([, n]) => n > 1).map(([g]) => g)); })();
   const G = (i) => (DUPG.has(R(i).gene) ? `${R(i).gene} · ${R(i).key}` : R(i).gene);   // a name that repeats within the virus (three ORF1s) carries its accession
@@ -3880,8 +3880,19 @@ async function viewVirus(spId, taxid) {
     <div class="card" id="vn-card"><div class="card-head"><h2>Network</h2><div class="controls" style="margin:0"><label class="ctl" title="a large virus is easier to read with each protein's strongest pairs only; the pairs table lists every pair">Edges<select id="vn-top"><option value="0">all</option><option value="5">top 5 per protein</option><option value="3">top 3 per protein</option><option value="1">top 1 per protein</option></select></label>
         ${commCtl('vn', cm0, seed0)}
         <div class="ctl"><span>Cutoff</span><div class="seg" id="vn-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
-      <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, shaded in gray by its iLIS (darker is higher), its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. With communities (Louvain unless you choose another method), proteins predicted to pair with each other more than with the rest sit together, one color per group; the same seed always gives the same drawing. Click a protein for its page, an edge for the pair.</p>
-      <div class="net" id="vn-net"></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
+      <div class="controls net-disp" id="vn-disp"><span class="optlab">Display</span>
+        <label class="ctl" title="protein size: grows with the square root of its partners at this cutoff; 1 is the default">Protein size <input type="number" id="vn-nsize" min="0.3" max="3" step="0.1" value="1" style="width:56px"></label>
+        <label class="ctl" title="pair width, by iLIS; 1 is the default">Pair width <input type="number" id="vn-ew" min="0.2" max="3" step="0.1" value="1" style="width:56px"></label>
+        <label class="ctl" title="name the proteins with at least this many partners (0 names every protein; names that would crowd a large virus appear as you zoom in)">Names from <input type="number" id="vn-lbdeg" min="0" max="50" step="1" value="0" style="width:52px"> partners</label>
+        <label class="ctl" title="name only this many proteins, those with the most partners; 0 for every protein above">Top <input type="number" id="vn-lbtop" min="0" max="500" step="1" value="0" style="width:56px"> names</label>
+        <label class="ctl" title="name size in points">Name size <input type="number" id="vn-lbsize" min="6" max="24" step="1" value="11" style="width:52px"></label>
+        <label class="ctl"><input type="checkbox" id="vn-lbout" checked> name outline</label>
+        <label class="ctl" title="name color">Name color <input type="color" id="vn-lbcol" value="#17263A" aria-label="Name color"></label>
+        <label class="ctl"><input type="checkbox" id="vn-nbord" checked> protein border</label>
+        <label class="ctl"><input type="checkbox" id="vn-intra"> only pairs inside a community</label></div>
+      <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. With communities (Leiden unless you choose another method, as LIVIA's network page), proteins predicted to pair with each other more than with the rest sit together, one color per group, and a pair inside a group is drawn in its color, the others light gray; without communities, pairs are shaded in gray by iLIS (darker is higher); the same seed always gives the same drawing. Click a protein for its page, an edge for the pair.</p>
+      <div class="nw-stats" id="vn-stats"></div>
+      <div class="nw-body"><div class="net" id="vn-net"></div><aside class="nw-mods" id="vn-mods" hidden aria-label="Communities"></aside></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
     <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">≥ 10% FPR</option><option value="5">≥ 5% FPR</option><option value="1">≥ 1% FPR</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
       <div id="vm-heat" style="width:100%"></div><div class="legend" id="vm-key"></div></div>
     <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="list each protein's pair with itself as well"><input type="checkbox" id="vp-homo"> Homodimers</label><input type="search" id="vp-find" placeholder="Filter pairs" aria-label="Filter pairs by protein" style="width:170px"><button class="btn" id="vp-csv" type="button">↓ CSV</button></div></div>
@@ -3915,8 +3926,9 @@ async function viewVirus(spId, taxid) {
         <td class="n">${fmtInt(deg.get(i) || 0)}</td><td>${homo.has(i) ? 'predicted' : '<span class="muted">—</span>'}</td></tr>`).join('')}</tbody>`;
     return { P, deg, homo };
   }
+  let VN = null;   // the drawn network's in-place restyle
   function draw() {
-    const { P, deg, homo } = tables(), box = $('#vn-net'); box.innerHTML = '<svg></svg>';
+    const { P, deg, homo } = tables(), box = $('#vn-net'); box.innerHTML = '<svg></svg>'; { const mb = $('#vn-mods'); if (mb) mb.hidden = false; }   // the list's column in place before the box is measured
     const W = box.clientWidth, H = box.clientHeight, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
     const zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', (ev) => { g.attr('transform', ev.transform); relabel(ev.transform.k); }); svg.call(zoom);
     const het = P.filter((x) => x.a !== x.b), k = topk; $('#vn-top').value = String(k);
@@ -3924,9 +3936,10 @@ async function viewVirus(spId, taxid) {
     if (k) { const keep = new Set(), per = new Map(); for (const x of het) { for (const i of [x.a, x.b]) { if (!per.has(i)) per.set(i, []); per.get(i).push(x); } }
       for (const xs of per.values()) xs.sort((a, b) => b.best - a.best).slice(0, k).forEach((x) => keep.add(x)); shown = het.filter((x) => keep.has(x)); }   // an edge stays if it is among either end's k strongest
     const nodes = v.members.map((i) => ({ id: i, row: R(i) })), links = shown.map((x) => ({ source: x.a, target: x.b, best: x.best, avg: x.avg, x }));
-    const r = (d) => 5 + Math.min(9, Math.sqrt(deg.get(d.id) || 0) * 1.7);
+    const r = (d) => 5 + Math.min(9, Math.sqrt(deg.get(d.id) || 0) * 1.7);   // the layout's spacing (collisions), kept so a seed repeats the same drawing
+    const ND = vnDisp(), dmax = Math.max(1, ...nodes.map((d) => deg.get(d.id) || 0)), rd = (d) => (3 + 12 * Math.sqrt((deg.get(d.id) || 0) / dmax)) * ND.nsize;   // drawn size, as LIVIA's network page
     // communities on every pair past the cutoff (not only the edges drawn); groups of three or more get a color and a place of their own
-    const C = commNow(), grouped = !!C.m, idx = new Map(nodes.map((d, n) => [d.id, n])), cm = grouped ? communitiesBy(C.m, nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]), C.seed) : nodes.map(() => 0);
+    const C = commNow(), grouped = !!C.m, idx = new Map(nodes.map((d, n) => [d.id, n])), t0 = performance.now(), cm = grouped ? communitiesBy(C.m, nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]), C.seed) : nodes.map(() => 0), cms = performance.now() - t0;
     const csize = new Map(); nodes.forEach((d, n) => { d.c = cm[n]; csize.set(d.c, (csize.get(d.c) || 0) + 1); });
     const big = [...csize].filter(([c, sz]) => sz >= 3).map(([c]) => c).sort((a, b) => a - b);
     const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : !grouped ? '#1A5276' : big.includes(d.c) && big.indexOf(d.c) < TAB10.length ? TAB10[big.indexOf(d.c)] : SMALL_C);
@@ -3937,20 +3950,25 @@ async function viewVirus(spId, taxid) {
     if (sr) nodes.forEach((d) => { const [cx, cy] = home(d); d.x = cx + (sr() - 0.5) * (grouped ? 90 : W * 0.8); d.y = cy + (sr() - 0.5) * (grouped ? 90 : H * 0.8); });
     else if (grouped) nodes.forEach((d, n) => { const [cx, cy] = home(d); d.x = cx + 30 * Math.cos(n); d.y = cy + 30 * Math.sin(n); });   // each node starts at its group's place
     const rank = new Map([...nodes].sort((a, b) => (deg.get(b.id) || 0) - (deg.get(a.id) || 0) || (homo.has(b.id) - homo.has(a.id))).map((d, n) => [d.id, n]));   // label priority: most partners first
-    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke', (d) => EGRAY(d.best)).attr('stroke-width', (d) => EWID(d.best)).attr('stroke-opacity', 0.85).attr('stroke-linecap', 'round').style('cursor', 'pointer');
+    const inC = (l) => { const a = typeof l.source === 'object' ? l.source : nodes[idx.get(l.source)], b2 = typeof l.target === 'object' ? l.target : nodes[idx.get(l.target)]; return grouped && a.c === b2.c && big.includes(a.c) ? a : null; };   // a pair inside a community of 3+
+    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-linecap', 'round').style('cursor', 'pointer');
+    const ecol = () => { link.attr('stroke', (d) => (!grouped ? EGRAY(d.best) : inC(d) ? ccol(inC(d)) : '#C7CED6')).attr('stroke-opacity', (d) => (!grouped ? 0.85 : inC(d) ? 0.8 : 0.3)).attr('stroke-width', (d) => EWID(d.best) * ND.ewid)
+      .attr('display', (d) => (ND.intra && grouped && !inC(d) ? 'none' : null)); link.filter((d) => grouped && inC(d)).raise(); };
     link.on('mousemove', (ev, d) => showTip(`<b>${esc(d.x && G(d.x.a))}</b> × <b>${esc(d.x && G(d.x.b))}</b> · iLIS ${d.best.toFixed(3)} · ${bandLabel[bandOf(d.best)]}${Number.isFinite(d.x.iptm) ? ` · ipTM ${d.x.iptm.toFixed(2)}` : ''}<br>click for the pair`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); location.hash = pairHref(d.x); });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
         .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
-    node.append('circle').attr('r', r).attr('fill', ccol).attr('stroke', (d) => (homo.has(d.id) ? HOMO_RING : '#fff')).attr('stroke-width', (d) => (homo.has(d.id) ? 3 : 1.5));
+    const hring = node.filter((d) => homo.has(d.id)).append('circle').attr('r', (d) => rd(d) + 3).attr('fill', '#fff').attr('stroke', HOMO_RING).attr('stroke-width', 1.8);   // homodimer: a ring outside the border
+    const circle = node.append('circle').attr('r', rd).attr('fill', ccol).attr('stroke', ND.nbord ? '#17263A' : 'none').attr('stroke-width', 1.2);   // a dark border, as LIVIA's network page
     const label = node.append('text').text((d) => lab(d.row)).attr('text-anchor', 'middle')
-      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', 600).attr('fill', '#17263A')
-      .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-linejoin', 'round');
+      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', 600).attr('fill', ND.lbcol)
+      .attr('paint-order', 'stroke').attr('stroke', ND.lbout ? 'rgba(255,255,255,0.92)' : 'none').attr('stroke-linejoin', 'round');
+    ecol();
     const placeLabels = liftLabels(g, node);
     function relabel(z) {   // zoomed in, more labels; each at the same size on screen. About 40 labels at the fitted view of a large virus, every label for a small one
-      const budget = nodes.length <= 60 ? Infinity : 40 * z * z / Math.max(0.2, fitK * fitK);
-      label.attr('display', (d) => (rank.get(d.id) < budget ? null : 'none')).attr('font-size', 10.5 / z).attr('stroke-width', 3 / z).attr('dy', (d) => -r(d) - 5 / z);
+      const budget = nodes.length <= 60 ? Infinity : 40 * z * z / Math.max(0.2, fitK * fitK), named = (d) => (ND.lbtop > 0 ? rank.get(d.id) < ND.lbtop : (deg.get(d.id) || 0) >= ND.lbdeg);   // Top names, else Names from
+      label.attr('display', (d) => (named(d) && rank.get(d.id) < budget ? null : 'none')).attr('font-size', (ND.lbsize - 0.5) / z).attr('stroke-width', 3 / z).attr('dy', (d) => -rd(d) - 5 / z);
     }
     let fitK = 1; relabel(1);
     node.on('mousemove', (ev, d) => showTip(`<b>${esc(G(d.id))}</b>${d.row.name && d.row.name !== d.row.gene ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} partner${(deg.get(d.id) || 0) === 1 ? '' : 's'} in the virus at this cutoff${homo.has(d.id) ? ' · predicted homodimer' : ''}`, ev.clientX, ev.clientY))
@@ -3964,11 +3982,23 @@ async function viewVirus(spId, taxid) {
     sim.on('end', () => { if (fitted) return; fitted = true; const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y), pad = 40;
       const x0 = Math.min(...xs) - pad, x1 = Math.max(...xs) + pad, y0 = Math.min(...ys) - pad - 12, y1 = Math.max(...ys) + pad, k = Math.min(2, W / (x1 - x0), H / (y1 - y0));
       fitK = k; svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k)); });
+    const small = nodes.filter((d) => ccol(d) === SMALL_C).length;
     $('#vn-legend').innerHTML = (k ? `<span class="muted">${fmtInt(links.length)} of ${fmtInt(het.length)} edges drawn: each protein's ${k} strongest</span>` : '')
-      + '<span><i style="background:linear-gradient(90deg, #C5CCD4, #1E2A38);height:4px;width:60px;border-radius:2px"></i>iLIS, 0.223 to 0.85+</span>'
-      + (grouped ? big.slice(0, TAB10.length).map((c, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(c))})</span>`).join('') + (() => { const n = nodes.filter((d) => ccol(d) === SMALL_C).length; return n ? `<span><i style="background:${SMALL_C};border-radius:50%"></i>in a smaller ${C.m === 'cc' ? 'part' : 'community'} (${fmtInt(n)})</span>` : ''; })() : '')
+      + (grouped ? '<span class="muted">pairs inside a community in its color, the others light gray; width: iLIS</span>' : '<span><i style="background:linear-gradient(90deg, #C5CCD4, #1E2A38);height:4px;width:60px;border-radius:2px"></i>iLIS, 0.223 to 0.85+</span>')
+      + (grouped && small ? (() => { const past = nodes.filter((d) => ccol(d) === SMALL_C && big.includes(d.c)).length, sm = small - past;   // the one gray-blue: groups of two, and communities past the palette
+        return `<span><i style="background:${SMALL_C};border-radius:50%"></i>${sm && past ? `in a smaller community, or one past the first ${TAB10.length}` : sm ? 'in a smaller community' : `in a community past the first ${TAB10.length}`} (${fmtInt(small)})</span>`; })() : '')
       + `${homoKey(homo.size)}<span><i style="background:#C3CCD6;border-radius:50%"></i>no partner at this cutoff (${fmtInt(v.members.filter((i) => !deg.get(i)).length)})</span>`
       + `<span class="muted">counts at the network's cutoff, ${cut}% FPR${cut !== 10 ? '; the tiles above count at 10%' : ''}</span>`;   // the network opens at 5%, the tiles keep 10%
+    // the numbers above the drawing and the Communities list beside it, as LIVIA's network page
+    { const withP = nodes.filter((d) => deg.get(d.id)).length, mods = grouped ? big.map((c, n) => { const mem = nodes.filter((d) => d.c === c).sort((a, b) => ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || lab(a.row).localeCompare(lab(b.row)));
+        const ins = het.filter((x) => nodes[idx.get(x.a)].c === c && nodes[idx.get(x.b)].c === c); return { n, c, mem, e: ins.length, mean: ins.length ? ins.reduce((t, x) => t + x.best, 0) / ins.length : 0 }; }) : [];
+      $('#vn-stats').innerHTML = `<span><b>${fmtInt(nodes.length)}</b> proteins</span><span><b>${fmtInt(withP)}</b> with a partner</span><span><b>${fmtInt(het.length)}</b> pairs</span>${grouped ? `<span><b>${fmtInt(big.length)}</b> communities of 3+</span>` : ''}<span>iLIS ≥ <b>${CUT[cut]}</b></span>${grouped ? `<span>${COMM_OPTS.find(([x]) => x === C.m)[1]} <b>${Math.round(cms)} ms</b></span>` : ''}`;
+      const box2 = $('#vn-mods'); box2.hidden = !mods.length;
+      box2.innerHTML = !mods.length ? '' : `<h3>Communities <span class="muted">${fmtInt(mods.length)}, of 3 or more proteins</span></h3>` + mods.map((m) => `<div class="nw-mod"><div class="hd"><i style="display:inline-block;width:14px;height:14px;border-radius:50%;background:${ccol(m.mem[0])};border:1px solid #17263A;flex:none"></i>${esc(commWord(C.m, m.n + 1).replace(/^./, (ch) => ch.toUpperCase()))}<a class="hub" href="#/${sp.id}/${m.mem[0].row.key}" title="the protein with the most partners here">${esc(lab(m.mem[0].row))} →</a></div>
+        <div class="st">${fmtInt(m.mem.length)} proteins · ${fmtInt(m.e)} pairs · mean iLIS ${m.mean.toFixed(3)}</div>
+        <div class="mem">${m.mem.slice(0, 24).map((d) => `<a href="#/${sp.id}/${d.row.key}">${esc(lab(d.row))}</a>`).join(', ')}${m.mem.length > 24 ? ` <span class="muted">+${fmtInt(m.mem.length - 24)} more</span>` : ''}</div></div>`).join(''); }
+    VN = { disp() { Object.assign(ND, vnDisp()); circle.attr('r', rd).attr('stroke', ND.nbord ? '#17263A' : 'none'); hring.attr('r', (d) => rd(d) + 3);   // a Display option changed: restyle in place, nothing moves
+      label.attr('fill', ND.lbcol).attr('stroke', ND.lbout ? 'rgba(255,255,255,0.92)' : 'none'); ecol(); relabel(d3.zoomTransform(svg.node()).k); } };
     svgExport($('#vn-x'), `atlas_virus_${v.taxid}_network`, () => $('svg', box));
     vmatrix(nodes, all, grouped ? (d) => (big.includes(d.c) ? big.indexOf(d.c) : big.length) : () => 0, deg);   // every pair of the virus, whatever the page's cutoff
   }
@@ -4006,6 +4036,11 @@ async function viewVirus(spId, taxid) {
     box.on('plotly_relayout', (ev) => { const xr = ev['xaxis.range[0]'] != null ? [ev['xaxis.range[0]'], ev['xaxis.range[1]']] : Array.isArray(ev['xaxis.range']) ? ev['xaxis.range'] : ev['xaxis.autorange'] ? [-0.5, n - 0.5] : null;
       if (!xr) return; const f = Math.max(6, Math.min(14, 520 / Math.max(1, Math.abs(xr[1] - xr[0])))); if (Math.abs(f - (box.__tick || tick)) < 0.5) return; box.__tick = f; Pl.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f }); });
   }
+  const vnum = (id, lo, hi, d) => { const x = parseFloat($(id).value); return Number.isFinite(x) ? Math.min(hi, Math.max(lo, x)) : d; };
+  function vnDisp() { return { nsize: vnum('#vn-nsize', 0.3, 3, 1), ewid: vnum('#vn-ew', 0.2, 3, 1), lbdeg: vnum('#vn-lbdeg', 0, 50, 0), lbtop: vnum('#vn-lbtop', 0, 500, 0), lbsize: vnum('#vn-lbsize', 6, 24, 11),
+    lbout: $('#vn-lbout').checked, lbcol: $('#vn-lbcol').value, nbord: $('#vn-nbord').checked, intra: $('#vn-intra').checked }; }   // the network's Display options (this page only)
+  ['#vn-nsize', '#vn-ew', '#vn-lbdeg', '#vn-lbtop', '#vn-lbsize', '#vn-lbcol'].forEach((q2) => { $(q2).oninput = () => { if (VN) VN.disp(); }; });
+  ['#vn-lbout', '#vn-nbord', '#vn-intra'].forEach((q2) => { $(q2).onchange = () => { if (VN) VN.disp(); }; });
   $('#vn-cut').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#vn-cut').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); cut === 5 ? u.delete('cut') : u.set('cut', cut); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); shownPairs = 60; draw(); };
   const commNow = bindCommCtl('vn', () => { const c = commNow(), [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || '');   // the choice goes in the link
