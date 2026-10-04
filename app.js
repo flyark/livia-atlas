@@ -2250,7 +2250,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
-        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', false)}
         <label class="ctl" title="color the partners by the community they form through their pairs with each other (as LIVIA's network page), or by the binding-site cluster their contacts on ${esc(P.gene)} fall in">Color partners by <select id="net-col"><option value="comm" selected>communities</option><option value="cluster">binding-site clusters</option></select></label>${commCtl('net', 'leiden', 0)}</div></div>
       <div class="controls net-disp" id="net-disp"><span class="optlab">Display</span>
         <label class="ctl" title="partner size: grows with the square root of its pairs with the other partners; ${esc(P.gene)} stays larger">Protein size <input type="number" id="net-nsize" min="0.3" max="3" step="0.1" value="1" style="width:56px"></label>
