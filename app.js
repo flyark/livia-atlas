@@ -4712,7 +4712,7 @@ async function viewNetwork(spId, q) {
     box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; if (e2.metaKey || e2.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
   }
   function graph(nodes, links, extra = [], seed = null, xo = [], XO = null) {
-    const box = $('#nw-net'); box.innerHTML = '<svg></svg>';
+    const box = $('#nw-net'); box.innerHTML = '<svg></svg>'; if (!seed) GC.clear();   // communities are found again: picked colors start over (a click that adds partners keeps them)
     const W = box.clientWidth, H = box.clientHeight, svg = d3.select(box).select('svg').attr('width', W).attr('height', H), g = svg.append('g');
     let label = null, rank = null, fitK = seed ? seed.t.k : 1;   // labels: set once the nodes are drawn; relabel() shows more as the view zooms in
     const zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', (ev) => { g.attr('transform', ev.transform); relabel(ev.transform.k); }); svg.call(zoom);
@@ -4840,10 +4840,10 @@ async function viewNetwork(spId, q) {
       if (!box2) return;
       if (!commOn) { box2.innerHTML = ''; box2.hidden = true; return; }
       const gl = groups.map((k, n) => { const mem = nodes.filter((d) => gk.get(d.id) === k).sort((a, b) => ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || (a.row.gene < b.row.gene ? -1 : 1)); let e = 0, sum = 0;
-        for (const l of links) { const [a, b] = ends(l); if (gk.get(a) === k && gk.get(b) === k) { e++; sum += l.best; } } return { k, n, mem, e, mean: e ? sum / e : 0 }; }).filter((m) => m.mem.length >= 3);
+        for (const l of links) { const [a, b] = ends(l); if (gk.get(a) === k && gk.get(b) === k) { e++; sum += l.best; } } return { k, n, mem, e, mean: e ? sum / e : 0 }; }).filter((m) => m.mem.length >= S.cmin);
       const nm = (k) => { const t = gname2.get(k) || k; return t.charAt(0).toUpperCase() + t.slice(1); };
       box2.hidden = false;
-      box2.innerHTML = `<h3>Communities <span class="muted">${fmtInt(gl.length)}, of 3 or more proteins</span></h3>` + (gl.length ? '' : '<p class="muted">No community of 3 or more proteins.</p>') + gl.map((m) => { const hub = m.mem[0];
+      box2.innerHTML = `<h3>Communities <span class="muted">${fmtInt(gl.length)}, of ${S.cmin} or more proteins</span></h3>` + (gl.length ? '' : `<p class="muted">No community of ${S.cmin} or more proteins.</p>`) + gl.map((m) => { const hub = m.mem[0];
         return `<div class="nw-mod"><div class="hd"><input type="color" value="${GCOL(m.n)}" data-k="${esc(m.k)}" aria-label="color of ${esc(nm(m.k))}" title="community color">${esc(nm(m.k))}<a class="hub" href="#/${sp.id}/${hub.row.key}" title="the protein with the most pairs here: its page, with its partners and predicted binding sites">${esc(hub.row.gene)} →</a></div>
           <div class="st">${fmtInt(m.mem.length)} proteins · ${fmtInt(m.e)} pairs · mean iLIS ${m.mean.toFixed(3)}</div>
           <div class="mem">${m.mem.slice(0, 24).map((d) => `<a href="#/${sp.id}/${d.row.key}">${esc(d.row.gene)}</a>`).join(', ')}${m.mem.length > 24 ? ` <span class="muted">+${fmtInt(m.mem.length - 24)} more</span>` : ''}</div></div>`; }).join('');
