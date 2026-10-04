@@ -4537,7 +4537,7 @@ async function viewNetwork(spId, q) {
     const scanWas = !$('#nw-kscan-out').hidden && SCAN ? SCAN.key : null; SCAN = null; $('#nw-kscan-out').hidden = true; $('#nw-khint').textContent = '';   // a draw that stops early leaves no list to suggest for
     hideTip(); const toks = readInput();
     const ns = $('#nw-ncol'), commG = ['leiden', 'comm', 'mcl', 'cc'].includes(S.grp); if (S.ncol && !(S.ncol === 'comm:' ? commG : (S.data || []).some((x) => x.name === S.ncol))) S.ncol = '';
-    if (!S.ncolUser) S.ncol = autoColor(S.data || []) || (commG ? 'comm:' : '');   // chosen for the reader until they pick one: a table column, else the communities (as LIVIA's network page)
+    if (!S.ncolUser) S.ncol = commG ? 'comm:' : autoColor(S.data || []) || '';   // until the reader (or the link, or a settings file) picks one: the communities, as LIVIA's network page; a table column only without communities
     { const nums = (S.data || []).filter((x) => x.kind === 'num'); if (S.prize && !nums.some((x) => x.name === S.prize)) S.prize = '';   // Score: the table's number columns
       $('#nw-prize').innerHTML = '<option value="">none: every protein-of-interest</option>' + nums.map((x) => `<option value="${esc(x.name)}"${x.name === S.prize ? ' selected' : ''}>${esc(x.name)}</option>`).join(''); $('#nw-prize-wrap').hidden = $('#nw-add').value !== 'tree' || !nums.length; }
     ns.innerHTML = `<option value="">proteins-of-interest · added partners</option>` + (commG ? `<option value="comm:"${S.ncol === 'comm:' ? ' selected' : ''}>${S.grp === 'cc' ? 'connected parts' : 'communities'}</option>` : '') + (S.data || []).map((x) => `<option value="${esc(x.name)}"${x.name === S.ncol ? ' selected' : ''}>${esc(x.name)}${x.kind === 'cat' ? ' (groups)' : ''}</option>`).join('');
@@ -4949,7 +4949,7 @@ async function viewNetwork(spId, q) {
   $('#nw-sp').onchange = (e) => { const raw = $('#nw-ids').value, ids = S.ids || (/\t/.test(raw) ? '' : raw.split(/[\s,;]+/).filter(Boolean).join(',')); location.hash = `#/${e.target.value}/network?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };   // the names drawn last; a pasted table is not split into its cells
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
   $('#nw-heat-show').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
-  $('#nw-ncol').onchange = (e) => { S.ncol = e.target.value; S.ncolUser = true; if (net && net.recolor) net.recolor(); };
+  $('#nw-ncol').onchange = (e) => { S.ncol = e.target.value; S.ncolUser = true; history.replaceState(null, '', `#/${sp.id}/network?${params()}`); if (net && net.recolor) net.recolor(); };   // the link keeps the choice at once
   $('#nw-check').onclick = async () => { if (!net || !net.extra.length) return; const b = $('#nw-check'); if (b.dataset.busy) return; b.dataset.busy = '1';
     const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
     b.textContent = 'Checking…'; await checkFolded(net.extra.map(e2), (n, of) => { b.textContent = `Checking ${n} of ${of} proteins…`; });
