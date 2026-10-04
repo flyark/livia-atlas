@@ -1586,7 +1586,7 @@ async function viewAbout() {
       contacts are drawn in the gene's residue numbering. An isoform too unlike the reference to be placed is shown on its own: its page has an
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
-      accession, official symbol or systematic name. In networks, edges are shaded in gray by the pair's best iLIS, and the pairs BioGRID reports
+      accession, official symbol or systematic name. In networks, a pair inside a community (or, on a protein page, a binding-site cluster when chosen) is drawn in its color and the others light gray, and the pairs BioGRID reports
       (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both orchid purple, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
       with a reported physical interaction is ringed in the Overview, and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
