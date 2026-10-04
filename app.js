@@ -90,7 +90,7 @@ const avgView = (cuts, v, n, digits, what) => (n >= 5 ? { txt: v.toFixed(digits)
   : n >= 2 ? { txt: v.toFixed(digits), sty: 'color:#5F6771;font-style:italic', band: 'no band', tip: `${what} of ${n} models; the average cutoffs were set on five-model runs, so no band` }
   : { txt: '—', sty: 'color:#5F6771', band: '', tip: 'one model: no average' });
 const AUTO_N = 250;   // the network's auto partner count keeps the drawing near this many proteins
-const DATA = 'https://www.flyrnai.org/livia-atlas/';   // the Atlas data files: versions/<name>/ frozen, live/ what the site reads
+const DATA = 'https://www.flyrnai.org/livia-atlas/', ARCHIVE = 'https://doi.org/10.5281/zenodo.22964479';   // the Atlas data files: versions/<name>/ frozen, live/ what the site reads
 const verUrl = (v) => (v ? `${DATA}versions/${v}/md5s.txt` : `${DATA}live/LIVE.json`);   // the server lists no folders: a version's file list (names and md5s), or the live files
 // "Cite this view": the page, its link and the date, with the Atlas data record, copied for a methods section or a legend
 const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" data-cite="${esc(title)}" data-ds="${esc(ds.join(','))}" title="copy a citation of this page: its title, link and date, the Atlas data version it reads, and the screens its predictions come from">Cite</button>`;
@@ -102,7 +102,7 @@ const verOf = (d) => { const u = (d && d.zip && d.zip.url) || '', m = /\/version
 const archiveOf = (vers) => (vers.length ? vers.map((v) => `LIVIA Atlas data ${v}, ${verUrl(v)}`).join('; ') : `LIVIA Atlas data, ${verUrl()}`);
 const archiveLine = () => { const vers = [...new Set(((REG && REG.datasets) || []).filter((d) => d.status === 'live').map(verOf).filter(Boolean))].sort();   // the versions this site reads
   return vers.map((v) => { const ids = [...new Set(REG.datasets.filter((d) => verOf(d) === v).map((d) => d.short))]; return `LIVIA Atlas data <a href="${verUrl(v)}" target="_blank" rel="noopener">${esc(v)}</a> (${ids.map(esc).join(', ')})`; }).join('; ') || `<a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data</a>`; };
-const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && (d.zip.zenodo || d.zip.url)) || ''); return m ? m[1] : null; };   // a screen served from flyrnai.org keeps its Zenodo record in zip.zenodo
+const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && ((d.zip.fallback || {}).url || d.zip.zenodo || d.zip.url)) || ''); return m ? m[1] : null; };   // a screen served from flyrnai.org keeps its Zenodo record in zip.zenodo
 const recLink = (d) => { const v = verOf(d);   // the frozen data version that holds a screen's files
   return v ? `<a href="${verUrl(v)}" target="_blank" rel="noopener">LIVIA Atlas data files, ${esc(v)} ↗</a>` : `<a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data files ↗</a>`; };
 const doiUrl = (u) => { const m = /(10\.\d{4,9}\/[^\s?#]+?)(v\d+)?(\.full(\.pdf)?)?$/.exec(u || ''); return m && !/^http.*nvidia/.test(u) ? `https://doi.org/${m[1]}` : u; };   // a preprint cited by its DOI
@@ -247,29 +247,42 @@ function trackLoad(what, job, kind = 'read') {   // kind 'read': a data read, sh
   const id = ++LOADN; if (kind === 'read') LOADFAIL = ''; LOADS.set(id, { what, kind, t0: Date.now() }); if (!LOADT) LOADT = setInterval(paintLoads, 1000); paintLoads();
   return job.then((v) => { LOADS.delete(id); paintLoads(); return v; }, (e) => { LOADS.delete(id); if (kind === 'read') LOADFAIL = e.message; paintLoads(); throw e; });
 }
-async function rangeRead(url, range) {   // → the bytes of one Range read, or null when the host did not answer 206
+async function rangeRead(url, range, ms = 45000, tries = 2) {   // → the bytes of one Range read, or null when the host did not answer 206
   for (let i = 1; ; i++) {
-    const ac = new AbortController(), t = setTimeout(() => ac.abort(), 45000);
+    const ac = new AbortController(), t = setTimeout(() => ac.abort(), ms);
     try {
       const res = await fetch(url, { headers: { Range: range }, signal: ac.signal });
       if (res.status !== 206) { try { if (res.body) res.body.cancel(); } catch (e) { /* nothing to cancel */ } return null; }
       return await res.arrayBuffer();   // the body under the same clock: a read can stall after the headers
-    } catch (e) { if (i >= 2) throw Object.assign(new Error(e.name === 'AbortError' ? 'The data did not load in time (tried twice). It usually works again within a few minutes.'   // our 45 s clock ran out
+    } catch (e) { if (i >= tries) throw Object.assign(new Error(e.name === 'AbortError' ? 'The data did not load in time (tried twice). It usually works again within a few minutes.'   // our 45 s clock ran out
       : 'The data could not be read: the connection failed or the server refused it (tried twice). It usually works again within a few minutes.'), { timeout: true }); }
     finally { clearTimeout(t); }
   }
 }
-const zkey = (z) => `?z=${encodeURIComponent((z.url || '').split('/').slice(-2).join('/'))}`;   // the offsets are read for one zip: a new zip address is a new offsets address, so no cached map outlives its zip
+const zkey = (u) => `?z=${encodeURIComponent((u || '').split('/').slice(-2).join('/'))}`;   // the offsets are read for one zip: a new zip address is a new offsets address, so no cached map outlives its zip
+// The safety net: a screen's files are read from the lab's web server (flyrnai.org); when it does not answer (maintenance, an
+// outage, a bot check), the same files are read from their archived copy on Zenodo (zip.fallback, with its own offsets when its
+// bytes differ), and the server is skipped for ten minutes so later reads do not wait on it again.
+const HOST_DOWN = new Map(), hostOf = (u) => { try { return new URL(u).host; } catch (e) { return ''; } };
+const isDown = (u) => (HOST_DOWN.get(hostOf(u)) || 0) > Date.now();
+async function offAt(ds, path, zurl, rel) {   // a bundle's [offset, length] in one zip: the screen's map, or its shard (files.offsetShards: <map>/<last two characters of the name>.json)
+  let k = path, u = new URL(path, location.href).href;
+  if ((ds.manifest.files || {}).offsetShards) { const nm = rel.split('/').pop().replace(/\.[^.]+$/, ''), xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_');
+    k = `${path}|${xx}`; u = new URL(path.replace(/\.json$/, `/${xx}.json`), location.href).href; }
+  if (!OFFS.has(k)) OFFS.set(k, fetch(u + zkey(zurl)).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
+  return (await OFFS.get(k))[rel] || null;
+}
 async function screenFile(ds, rel) {
   const z = ds.reg.zip;
   if (!z) { const res = await fetch(new URL(rel.split('/').map(encodeURIComponent).join('/'), ds.manifest.bundleBase || ds.base).href); return res.ok ? res : null; }
-  let ok = ds.id;   // the map, or the shard that holds this bundle (files.offsetShards: offsets/<last two characters of the name>.json)
-  if ((ds.manifest.files || {}).offsetShards) { const nm = rel.split('/').pop().replace(/\.[^.]+$/, ''), xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_'); ok = `${ds.id}/${xx}`;
-    if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets.replace(/offsets\.json$/, `offsets/${xx}.json`), location.href).href + zkey(z)).then((r) => (r.ok ? r.json() : {})).catch(() => ({}))); }
-  else if (!OFFS.has(ok)) OFFS.set(ok, fetch(new URL(z.offsets, location.href).href + zkey(z)).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
-  const at = (await OFFS.get(ok))[rel]; if (!at) return null;
-  const range = `bytes=${at[0]}-${at[0] + at[1] - 1}`, url = DEV && z.dev ? new URL(z.dev, location.href).href : z.url;
-  const read = z.zenodo && url === z.url ? rangeRead(url, range).catch(() => null).then((v) => v || rangeRead(z.zenodo, range)) : rangeRead(url, range);   // flyrnai.org first, the same bytes on Zenodo if it fails
+  const rng = (at) => `bytes=${at[0]}-${at[0] + at[1] - 1}`, fb = z.fallback || (z.zenodo ? { url: z.zenodo } : null);
+  const url = DEV && z.dev ? new URL(z.dev, location.href).href : z.url;
+  const fromFb = async () => { const at = await offAt(ds, fb.offsets || z.offsets, fb.offsets ? fb.url : z.url, rel); return at ? rangeRead(fb.url, rng(at)) : null; };
+  let read;
+  if (fb && url === z.url && isDown(url)) read = fromFb();
+  else { const at = await offAt(ds, z.offsets, z.url, rel); if (!at) return null;
+    read = !fb || url !== z.url ? rangeRead(url, rng(at))
+      : rangeRead(url, rng(at), 12000, 1).catch(() => null).then((v) => { if (v) return v; HOST_DOWN.set(hostOf(url), Date.now() + 600000); return fromFb(); }); }
   const buf = await trackLoad('data', read);
   return buf ? new Response(buf) : null;
 }
@@ -1488,7 +1501,7 @@ async function viewDatasets() {
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div><h1 class="sr-only">Datasets</h1>
     ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
-    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the <a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data files ↗</a>, under CC BY 4.0; each dataset page links the version that holds its files. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Data files only are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the data files.</p>
+    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the <a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data files ↗</a>, under CC BY 4.0; each dataset page links the version that holds its files. A copy is also archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Data files only are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the data files.</p>
     <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}${homoDsCard(reg)}</div>`;
   fillDsStats(); fillThemes(); setCards(gen, reg);
 }
@@ -1573,7 +1586,7 @@ async function viewAbout() {
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
       accession, official symbol or systematic name. In networks, edges are shaded in gray by the pair's best iLIS, and the pairs BioGRID reports
-      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both striped blue and orange, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
+      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both orchid purple, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
       with a reported physical interaction is ringed in the Overview, and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
     <div class="card" id="about-limits"><h2>How the pages count, and their limits</h2>
@@ -1614,7 +1627,7 @@ async function viewAbout() {
         ${ref('d3', 'Plots and networks, D3 7.9: Bostock, M., Ogievetsky, V. &amp; Heer, J. (2011). D³ data-driven documents. <i>IEEE Trans. Vis. Comput. Graph.</i> 17, 2301–2309.')}
         ${ref('leiden', 'Communities in LIVIA\'s network page: Traag, V. A., Waltman, L. &amp; van Eck, N. J. (2019). From Louvain to Leiden: guaranteeing well-connected communities. <i>Sci. Rep.</i> 9, 5233.')}
         <li>Reading prediction bundles in the browser: JSZip 3.10. <a href="https://stuk.github.io/jszip/" target="_blank" rel="noopener">stuk.github.io/jszip</a></li>
-        <li>Hosting: the site on GitHub Pages; the screens' data files on the Perrimon lab's web server (<a href="${verUrl()}" target="_blank" rel="noopener">flyrnai.org/livia-atlas</a>), read by byte range, so a page loads only its own bundles.</li>
+        <li>Hosting: the site on GitHub Pages; the screens' data files on the Perrimon lab's web server (<a href="${verUrl()}" target="_blank" rel="noopener">flyrnai.org/livia-atlas</a>), read by byte range, so a page loads only its own bundles. A copy is archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo</a>; when the lab's server does not answer, the pages read that copy instead (for the fly screen, its previous version).</li>
         <li>Visits are counted with GoatCounter, without cookies.</li>
       </ul></div></div>`;
 }
@@ -1753,12 +1766,12 @@ const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
 // Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS on a color
 // scale the reader picks (light at the 10% FPR cutoff, dark at 0.85 and above; or one flat gray) and, when chosen, the
-// pairs reported in BioGRID colored by what was reported: physical blue, genetic orange, both striped blue and orange (colors that stay
+// pairs reported in BioGRID colored by what was reported: physical blue, genetic orange, both orchid purple (colors that stay
 // distinct for red-green color-blind readers), the unreported pairs then light gray. Edge width is the best iLIS (the species file holds
 // no average across screens).
 const ESCALE = { gray: ['#C5CCD4', '#1E2A38'], blue: ['#C6DBEF', '#08306B'], brown: ['#E8D9C4', '#5B3A1A'] };
 const ESCALE_LBL = { gray: 'gray', blue: 'blue', brown: 'brown', flat: 'off (one gray)' };
-const EFLAT = '#9AA5B1', KB_COL = { p: '#2166AC', g: '#E66100', pg: '#E66100' }, KB_DIM = '#C3CCD6', KB_STRIPE = '6 6';   // blue and orange; both: orange under blue stripes (KB_STRIPE), so it needs no third color; apart with color blindness and from the gray, at least 3.4:1 on white; KB_DIM: unreported pairs while BioGRID is on
+const EFLAT = '#9AA5B1', KB_COL = { p: '#2166AC', g: '#E66100', pg: '#C04ACB' }, KB_DIM = '#C3CCD6';   // blue, orange and, for both, an orchid purple between them; apart with color blindness and from the gray, at least 3.4:1 on white; KB_DIM: unreported pairs while BioGRID is on
 const escale = (k) => d3.scaleLinear().domain([CUT[10], 0.85]).range(ESCALE[k] || ESCALE.gray).clamp(true);
 const EGRAY = escale('gray');   // the fixed gray scale of the virus networks
 const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');
@@ -1766,7 +1779,7 @@ const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.p
 const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
 const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
 const edgeCtl = (id, kbOn = false) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above">iLIS scale<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
-  <label class="ctl" title="color the pairs reported in BioGRID: physical blue, genetic orange, both striped blue and orange; the other pairs turn light gray"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
+  <label class="ctl" title="color the pairs reported in BioGRID: physical blue, genetic orange, both orchid purple; the other pairs turn light gray"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
 function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a reported one
   const sc = $(`#${id}-shade`).value, shade = sc !== 'flat', kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
   const ramp = escale(sc);
@@ -1780,7 +1793,7 @@ function edgeKey(st, K, links, extra = []) {   // the key under a network: the i
     : K && st.kb ? `<span class="muted">reported in BioGRID ${esc(K.release)} (${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
       + (st.ev !== 'g' ? `<span><i style="background:${KB_COL.p}"></i>physical (${n((d) => d.pubs > 0 && !(d.gen > 0))})</span>` : '')
       + (st.ev !== 'p' ? `<span><i style="background:${KB_COL.g}"></i>genetic (${n((d) => d.gen > 0 && !(d.pubs > 0))})</span>` : '')
-      + `<span><i style="background:repeating-linear-gradient(90deg, ${KB_COL.p} 0 6px, ${KB_COL.g} 6px 12px)"></i>both (${n((d) => d.pubs > 0 && d.gen > 0)})</span>`
+      + `<span><i style="background:${KB_COL.pg}"></i>both (${n((d) => d.pubs > 0 && d.gen > 0)})</span>`
       + (extra.length ? `<span><i class="kb-dash"></i>reported, not predicted, dashed in the same colors (${fmtInt(extra.length)})</span>` : '') : '';
   return `<span class="kbhead">Edge color</span><div class="kbrow">${base}${red}</div>`;
 }
@@ -3475,10 +3488,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     svg.call(zoom);
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best)).attr('stroke-linecap', 'round');
     link.filter((d) => !d.q).raise();
-    const both = g.append('g').style('pointer-events', 'none').selectAll('line').data(links.filter((d) => d.pubs > 0 && d.gen > 0)).join('line').attr('stroke', KB_COL.p).attr('stroke-width', (d) => EWID(d.best)).attr('stroke-dasharray', KB_STRIPE);   // reported both ways: blue stripes over the orange line
     const restyle = () => { const st = edgeStyle('net', K);   // recolor in place: no new layout
       link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
-      both.attr('display', (d) => (st.hit(d) ? null : 'none'));
       $('#net-kbkey').innerHTML = edgeKey(st, K, links); };
     restyle();
     link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS ${ONE ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
@@ -3516,7 +3527,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (C.seed) { const sr = seededRandom(C.seed); nodes.slice(1).forEach((d) => { const t = sr() * 2 * Math.PI, rr = R * (0.4 + 0.6 * sr()); d.x = W / 2 + rr * Math.cos(t); d.y = H / 2 + rr * Math.sin(t); }); }   // a seed: seeded starting places
     const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => (l.q ? R * (1.15 - 0.55 * Math.min(1, l.best)) : 60)).strength((l) => (l.q ? 0.5 : 0.35)))
       .force('charge', d3.forceManyBody().strength(-340)).force('collide', d3.forceCollide().radius((d) => r(d) + 14)).force('x', d3.forceX(W / 2).strength(0.04)).force('y', d3.forceY(H / 2).strength(0.05))
-      .on('tick', () => { placeLabels(); for (const sel of [link, both]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); for (const sel of [link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     let fitted = false;   // once the layout settles, zoom so every node and label fits the box (the zoom stays free afterwards)
     sim.on('end', () => { if (fitted) return; fitted = true;
       const xs = nodes.map((d) => d.x), ys = nodes.map((d) => d.y);
@@ -4730,13 +4741,11 @@ async function viewNetwork(spId, q) {
     const halo = g.append('g').style('pointer-events', 'none').selectAll('line').data(links.filter((l) => l.cons)).join('line').attr('stroke', '#F2C14E').attr('stroke-opacity', 0.8).attr('stroke-width', (d) => EWID(d.best) + 7).attr('stroke-linecap', 'round');   // conserved: a gold halo under the edge
     const xol = g.append('g').selectAll('line').data(xo).join('line').attr('stroke', '#1F8A80').attr('stroke-opacity', 0.85).attr('stroke-width', 1.6).attr('stroke-dasharray', '6 3').style('cursor', 'pointer');   // predicted only between the orthologs
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
-    const both = g.append('g').style('pointer-events', 'none').selectAll('line').data(links).join('line').attr('stroke', KB_COL.p).attr('stroke-width', (d) => EWID(d.best)).attr('stroke-dasharray', KB_STRIPE);   // reported both ways: blue stripes over the orange line
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && passE(e); }).map((d) => d.id));
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
       const byC = S.ncol === 'comm:' && groups.length && !catOrder, gOf = (d) => { const [a, b] = ends(d), x = gk.get(a); return x != null && x === gk.get(b) ? x : null; };   // as LIVIA's network page: an edge inside a community in its color, between communities light gray
       link.attr('stroke', (d) => (st.hit(d) || !byC || st.kb ? st.color(d) : gOf(d) != null ? GCOL(groups.indexOf(gOf(d))) : '#C7CED6')).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : byC && !st.kb ? (gOf(d) != null ? 0.75 : 0.35) : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
-      both.attr('display', (d) => (st.hit(d) && d.pubs > 0 && d.gen > 0 ? null : 'none'));
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
       const fo = (d) => FOLD.get(fkey(...ends(d)));
       dash.attr('stroke-dasharray', (d) => ((fo(d) || {}).st === 'none' ? '1.2 4.5' : '5 4')).attr('stroke-opacity', (d) => ((fo(d) || {}).st === 'none' ? 0.55 : 0.75));
@@ -4801,7 +4810,7 @@ async function viewNetwork(spId, q) {
       .force('link', d3.forceLink([...links, ...extra, ...xo]).id((d) => d.id).distance((l) => (S.lwt ? 70 + 60 * (1 - Math.min(1, l.best || 0)) : 100) * S.lspace).strength((l) => (l.unpred ? 0 : 0.4)))
       .force('charge', d3.forceManyBody().strength((groups.length ? -140 : -260) * S.lrep)).force('collide', d3.forceCollide().radius((d) => r(d) + 10))
       .force('x', d3.forceX((d) => (home(d) || [FW / 2])[0]).strength((d) => (home(d) ? 0.35 : 0.05))).force('y', d3.forceY((d) => (home(d) || [0, FH / 2])[1]).strength((d) => (home(d) ? 0.35 : 0.06)))
-      .on('tick', () => { placeLabels(); drawHulls(); for (const sel of [dash, link, halo, xol, both]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
+      .on('tick', () => { placeLabels(); drawHulls(); for (const sel of [dash, link, halo, xol]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     if (lr) sim.randomSource(seededRandom(S.lseed + 1));   // d3's own small random nudges, seeded too
     if (seed) sim.alpha(0.35);   // settle the new nodes without reshuffling the rest
     if (S.lay !== 'force') {   // a fixed layout: every protein pinned where the layout puts it, groups kept together on the circle
