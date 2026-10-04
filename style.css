@@ -729,3 +729,9 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .nw-mod .mem a { color: var(--ink-2); }
 #nw-disp input[type=color] { width: 30px; height: 22px; padding: 0; border: 1px solid var(--line-2); border-radius: 4px; vertical-align: middle; background: none; }
 @media (max-width: 900px) { .nw-body { grid-template-columns: minmax(0, 1fr); } .nw-body > .net { height: 460px; } .nw-mods { max-height: 420px; } }
+.net-disp { margin: 0 0 8px; }
+.net-disp .optlab { font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); margin-right: 4px; }
+.net-disp input[type=color] { width: 30px; height: 22px; padding: 0; border: 1px solid var(--line-2); border-radius: 4px; vertical-align: middle; background: none; }
+#c-net .nw-body > .net { height: 600px; }
+#c-net .nw-mods { max-height: 600px; }
+@media (max-width: 900px) { #c-net .nw-body > .net { height: 440px; } #c-net .nw-mods { max-height: 420px; } }

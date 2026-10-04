@@ -2250,11 +2250,23 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="res-body"></div></div>
     <div class="card" id="c-net"><div class="card-head"><h2>Network</h2>
       <div class="controls" style="margin:0"><label class="ctl">Partners<select id="net-n"><option>30</option><option>60</option><option selected>100</option><option>200</option></select></label>
-        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}${commCtl('net', '', 0)}</div></div>
-      <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with their cluster color (or, with Communities, the color of the group they form through their pairs with each other). Edges between partners join partners
+        <label class="ctl">Cutoff<select id="net-cut"><option value="10">10% FPR · iLIS ${CUT[10]}</option><option value="5">5% FPR · iLIS ${CUT[5]}</option><option value="1">1% FPR · iLIS ${CUT[1]}</option></select></label>${edgeCtl('net', true)}
+        <label class="ctl" title="color the partners by the community they form through their pairs with each other (as LIVIA's network page), or by the binding-site cluster their contacts on ${esc(P.gene)} fall in">Color partners by <select id="net-col"><option value="comm" selected>communities</option><option value="cluster">binding-site clusters</option></select></label>${commCtl('net', 'leiden', 0)}</div></div>
+      <div class="controls net-disp" id="net-disp"><span class="optlab">Display</span>
+        <label class="ctl" title="partner size: grows with the square root of its pairs with the other partners; ${esc(P.gene)} stays larger">Protein size <input type="number" id="net-nsize" min="0.3" max="3" step="0.1" value="1" style="width:56px"></label>
+        <label class="ctl" title="pair width, by best iLIS; 1 is the default">Pair width <input type="number" id="net-ew" min="0.2" max="3" step="0.1" value="1" style="width:56px"></label>
+        <label class="ctl" title="name the partners with at least this many pairs with the other partners (0 names every partner)">Names from <input type="number" id="net-lbdeg" min="0" max="50" step="1" value="0" style="width:52px"> pairs</label>
+        <label class="ctl" title="name only this many partners, those with the most pairs with the others; 0 for every partner above">Top <input type="number" id="net-lbtop" min="0" max="500" step="1" value="0" style="width:56px"> names</label>
+        <label class="ctl" title="name size in points">Name size <input type="number" id="net-lbsize" min="6" max="24" step="1" value="12" style="width:52px"></label>
+        <label class="ctl"><input type="checkbox" id="net-lbout" checked> name outline</label>
+        <label class="ctl" title="name color">Name color <input type="color" id="net-lbcol" value="#17263A" aria-label="Name color"></label>
+        <label class="ctl"><input type="checkbox" id="net-nbord" checked> protein border</label>
+        <label class="ctl" title="draw only each partner's strongest pairs with the other partners (kept when strong for either); 0 draws every pair. Every partner keeps its pair with ${esc(P.gene)}">Strongest <input type="number" id="net-topk" min="0" max="50" step="1" value="0" style="width:52px"> pairs per protein</label></div>
+      <p class="muted" style="margin:2px 0 12px">${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with the color of the community they form through their pairs with each other (or, as you choose, their binding-site cluster). Pairs inside a group are drawn in its color, the others light gray. Edges between partners join partners
         predicted to bind each other, in any screen. Drag to move, scroll to zoom, click to open.</p>
       <p class="net-links"><a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a><span id="net-open"></span></p>
-      <div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div>
+      <div class="nw-stats" id="net-stats"></div>
+      <div class="nw-body"><div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div><aside class="nw-mods" id="net-mods" hidden aria-label="Groups of partners"></aside></div>
       <div class="netkey"><div class="kbkey" id="net-kbkey"></div>
         <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
       <div class="legend" id="net-legend"></div><div id="net-x"></div></div>
@@ -3465,6 +3477,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   io.observe(netBox);
   $('#net-n').onchange = drawNet; $('#net-cut').onchange = drawNet;
   const netComm = bindCommCtl('net', () => drawNet());
+  const num = (id, lo, hi, d) => { const v = parseFloat($(id).value); return Number.isFinite(v) ? Math.min(hi, Math.max(lo, v)) : d; };
+  const netDisp = () => ({ col: $('#net-col').value, nsize: num('#net-nsize', 0.3, 3, 1), ewid: num('#net-ew', 0.2, 3, 1), lbdeg: num('#net-lbdeg', 0, 50, 0), lbtop: num('#net-lbtop', 0, 500, 0), lbsize: num('#net-lbsize', 6, 24, 12),
+    lbout: $('#net-lbout').checked, lbcol: $('#net-lbcol').value, nbord: $('#net-nbord').checked, topk: num('#net-topk', 0, 50, 0) });   // the card's Display options (this page only)
+  ['#net-nsize', '#net-ew', '#net-lbdeg', '#net-lbtop', '#net-lbsize', '#net-topk', '#net-lbcol'].forEach((q) => { $(q).oninput = () => { if (NET && NET.disp) NET.disp(); }; });
+  ['#net-lbout', '#net-nbord'].forEach((q) => { $(q).onchange = () => { if (NET && NET.disp) NET.disp(); }; });
+  $('#net-col').onchange = () => { if (NET && NET.recolor) { NET.disp(); NET.recolor(); } };
+  { const lb = $('#net-shade') && $('#net-shade').closest('label'); if (lb) lb.hidden = true; }   // pairs are colored by group or by BioGRID here; the width carries the iLIS
   async function drawNet() {
     let E, K; try { [E, K] = await Promise.all([edges(sp, B.setId), reported(sp)]); } catch (e) { if (!gone()) netBox.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     if (gone()) return;
@@ -3482,43 +3501,79 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg }); } }
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); l.pubs = K ? K.pubs(l.source, l.target) : 0; l.gen = K ? K.gen(l.source, l.target) : 0; });
     if (!K) { $('#net-kb').checked = false; $('#net-kb').disabled = true; $('#net-ev').disabled = true; }
+    { const mb = $('#net-mods'); if (mb) mb.hidden = false; }   // the list's column is in place before the drawing measures its box
     const svg = d3.select(netBox).select('svg'), W = netBox.clientWidth, H = netBox.clientHeight;
     svg.attr('width', W).attr('height', H);
     const g = svg.append('g');
     const zoom = d3.zoom().scaleExtent([0.2, 4]).on('zoom', (ev) => g.attr('transform', ev.transform));
     svg.call(zoom);
-    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best)).attr('stroke-linecap', 'round');
+    // drawn as LIVIA's network page: sizes by pairs, a dark border, pairs inside a group in its color and the others light gray,
+    // the center's pairs in a quiet gray; BioGRID, when on, colors every pair by what was reported (blue, orange, orchid, the rest gray)
+    const ND = netDisp(), pdeg = new Map(); links.forEach((l) => { if (!l.q) { pdeg.set(l.source, (pdeg.get(l.source) || 0) + 1); pdeg.set(l.target, (pdeg.get(l.target) || 0) + 1); } });
+    const pmax = Math.max(1, ...pdeg.values()), rd = (d) => (d.q ? 15 : 4 + 11 * Math.sqrt((pdeg.get(d.id) || 0) / pmax)) * ND.nsize;
+    const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best) * ND.ewid).attr('stroke-linecap', 'round');
     link.filter((d) => !d.q).raise();
-    const restyle = () => { const st = edgeStyle('net', K);   // recolor in place: no new layout
-      link.attr('stroke', st.color).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
-      $('#net-kbkey').innerHTML = edgeKey(st, K, links); };
-    restyle();
+    let grpOf = () => null, grpCol = () => '#C3CCD6';   // a partner's group (community or cluster) and its color, set by recolor()
+    const shown = () => { if (!(ND.topk > 0)) return () => true; const by = new Map(), kept = new Set();   // each partner's strongest pairs with the other partners; the center's pairs always
+      for (const l of links) if (!l.q) for (const x of [l.source, l.target].map((v) => (typeof v === 'object' ? v.id : v))) { if (!by.has(x)) by.set(x, []); by.get(x).push(l); }
+      for (const ls of by.values()) ls.sort((p, q2) => q2.best - p.best).slice(0, ND.topk).forEach((l) => kept.add(l)); return (l) => l.q || kept.has(l); };
+    const restyle = () => { const st = edgeStyle('net', K), sid = (v) => (typeof v === 'object' ? v.id : v);   // recolor in place: no new layout
+      const same = (d) => { const a = grpOf(sid(d.source)), b = grpOf(sid(d.target)); return a != null && a === b ? a : null; };
+      link.attr('stroke', (d) => (st.kb ? st.color(d) : d.q ? '#C7CED6' : same(d) != null ? grpCol(same(d)) : '#C7CED6'))
+        .attr('stroke-opacity', (d) => (st.kb ? (st.hit(d) ? 0.95 : d.q ? 0.55 : 0.8) : d.q ? 0.5 : same(d) != null ? 0.8 : 0.3));
+      link.filter((d) => !st.kb && !d.q && same(d) != null).raise(); link.filter(st.hit).raise();   // group pairs, then reported pairs, on top
+      const keep = shown(); link.attr('display', (d) => (keep(d) ? null : 'none'));
+      $('#net-kbkey').innerHTML = st.kb ? edgeKey(st, K, links) : `<div class="kbrow"><span class="muted">pairs inside a ${ND.col === 'cluster' ? 'cluster' : 'community'} in its color, the others and ${esc(P.gene)}'s own pairs light gray; width: ${ONE ? 'iLIS' : 'best iLIS'}</span></div>`; };
     link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS ${ONE ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
-    const r = (d) => (d.q ? 18 : 6 + Math.min(10, Math.sqrt(deg.get(d.id) || 1) * 1.6));
+    const r = (d) => (d.q ? 18 : 6 + Math.min(10, Math.sqrt(deg.get(d.id) || 1) * 1.6));   // the layout's spacing (collisions), kept so a seed repeats the same drawing
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
         .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); if (!d.q) { d.fx = null; d.fy = null; } }));
     const homo = new Set(nodes.filter((d) => homoOf(d.id)).map((d) => d.id));
-    const circle = node.append('circle').attr('r', r).attr('stroke', (d) => (homo.has(d.id) ? HOMO_RING : '#fff')).attr('stroke-width', (d) => (homo.has(d.id) ? 3.2 : d.q ? 2.5 : 1.8));
-    node.append('text').text((d) => d.row.gene).attr('text-anchor', 'middle').attr('dy', (d) => -r(d) - 6)   // every label, the center one too: dark text on a white edge
-      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? 14 : 11)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', '#17263A')
-      .attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', (d) => (d.q ? 4 : 3)).attr('stroke-linejoin', 'round');
+    const hring = node.filter((d) => homo.has(d.id)).append('circle').attr('r', (d) => rd(d) + 3).attr('fill', '#fff').attr('stroke', HOMO_RING).attr('stroke-width', 1.8);   // homodimer: a ring outside the border
+    const circle = node.append('circle').attr('r', rd).attr('stroke', ND.nbord ? '#17263A' : 'none').attr('stroke-width', (d) => (d.q ? 2 : 1.2));
+    const rank = new Map(nodes.slice(1).sort((a, b) => ((pdeg.get(b.id) || 0) - (pdeg.get(a.id) || 0)) || (b.e.best - a.e.best)).map((d, n) => [d.id, n]));
+    const named = (d) => d.q || (ND.lbtop > 0 ? rank.get(d.id) < ND.lbtop : (pdeg.get(d.id) || 0) >= ND.lbdeg);
+    const label = node.append('text').text((d) => d.row.gene).attr('text-anchor', 'middle').attr('dy', (d) => -rd(d) - 6)   // dark text on a white edge
+      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', (d) => (d.q ? ND.lbsize + 2 : ND.lbsize - 1)).attr('font-weight', (d) => (d.q ? 700 : 600)).attr('fill', ND.lbcol)
+      .attr('paint-order', 'stroke').attr('stroke', ND.lbout ? 'rgba(255,255,255,0.92)' : 'none').attr('stroke-width', (d) => (d.q ? 4 : 3)).attr('stroke-linejoin', 'round').attr('display', (d) => (named(d) ? null : 'none'));
     node.filter((d) => d.q).raise();
     const placeLabels = liftLabels(g, node);
-    const C = netComm(), pix = new Map(nodes.slice(1).map((d, n) => [d.id, n])), cgrp = new Map(), csize = new Map(); let big = [];   // communities among the partners, through their pairs with each other (every partner pairs with the center)
-    if (C.m) { const cm = communitiesBy(C.m, nodes.length - 1, links.filter((l) => !l.q).map((l) => [pix.get(l.source), pix.get(l.target), l.best]), C.seed); cm.forEach((x) => csize.set(x, (csize.get(x) || 0) + 1));
+    const C = netComm(), pix = new Map(nodes.slice(1).map((d, n) => [d.id, n])), cgrp = new Map(), csize = new Map(); let big = [], cms = null;   // communities among the partners, through their pairs with each other (every partner pairs with the center)
+    if (C.m) { const t0 = performance.now(), cm = communitiesBy(C.m, nodes.length - 1, links.filter((l) => !l.q).map((l) => [pix.get(l.source), pix.get(l.target), l.best]), C.seed); cms = performance.now() - t0; cm.forEach((x) => csize.set(x, (csize.get(x) || 0) + 1));
       big = [...csize].filter(([, z]) => z >= 2).sort((a, b) => b[1] - a[1] || a[0] - b[0]).map(([x]) => x); nodes.slice(1).forEach((d, n) => { const b = big.indexOf(cm[n]); if (b >= 0) cgrp.set(d.id, b); }); }
+    const mods = (groups) => {   // the numbers above the drawing and one card per group of 3 or more partners beside it, as LIVIA's network page
+      const st = $('#net-stats'), box2 = $('#net-mods'), nPairs = links.filter((l) => !l.q).length, list = groups.filter((x) => x.mem.length >= 3);
+      if (st) st.innerHTML = `<span><b>${fmtInt(nodes.length - 1)}</b> partners</span><span><b>${fmtInt(nPairs)}</b> pairs among them</span><span><b>${fmtInt(list.length)}</b> ${ND.col === 'cluster' ? 'clusters' : 'communities'} of 3+</span><span>iLIS ≥ <b>${c}</b></span>${ND.col !== 'cluster' && cms != null ? `<span>${COMM_OPTS.find(([v]) => v === C.m)[1]} <b>${Math.round(cms)} ms</b></span>` : ''}`;
+      if (!box2) return; box2.hidden = !list.length; if (!list.length) { box2.innerHTML = ''; return; }
+      box2.innerHTML = `<h3>${ND.col === 'cluster' ? 'Binding-site clusters' : 'Communities'} <span class="muted">${fmtInt(list.length)}, of 3 or more partners</span></h3>` + list.map((x) => {
+        const mean = x.mem.reduce((t, d) => t + d.e.best, 0) / x.mem.length;
+        return `<div class="nw-mod"><div class="hd"><i style="display:inline-block;width:14px;height:14px;border-radius:50%;background:${x.col};border:1px solid #17263A;flex:none"></i>${esc(x.name)}${x.cl ? `<a class="hub" href="#c-sites" data-cl="${x.cl}" title="show this cluster's binding site">binding site →</a>` : ''}</div>
+          <div class="st">${fmtInt(x.mem.length)} partners · mean iLIS with ${esc(P.gene)} ${mean.toFixed(3)}</div>
+          <div class="mem">${x.mem.slice(0, 24).map((d) => `<a href="#/${sp.id}/${d.row.key}${scopeQ}">${esc(d.row.gene)}</a>`).join(', ')}${x.mem.length > 24 ? ` <span class="muted">+${fmtInt(x.mem.length - 24)} more</span>` : ''}</div></div>`; }).join('');
+      box2.querySelectorAll('a[data-cl]').forEach((a) => { a.onclick = (e) => { e.preventDefault(); if (clustered()) { toggleCluster('all'); toggleCluster(a.dataset.cl); } const t = $('#c-sites'); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }; }); };
+    const byRank = (a, b) => ((pdeg.get(b.id) || 0) - (pdeg.get(a.id) || 0)) || (b.e.best - a.e.best);
     NET = { link, restyle, recolor() {
       const k = M ? M.k : 1;
-      if (C.m) {   // partners by community: the groups of two or more, largest first
-        circle.attr('fill', (d) => (d.q ? '#1A5276' : cgrp.has(d.id) ? (cgrp.get(d.id) < TAB10.length ? TAB10[cgrp.get(d.id)] : SMALL_C) : '#C3CCD6'));
-        $('#net-legend').innerHTML = (big.length ? big.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(x))})</span>`).join('') + smallKey(big.length - TAB10.length, 'groups') : '<span class="muted">no group of two or more partners pairing with each other</span>')
-          + '<span><i style="background:#C3CCD6;border-radius:50%"></i>in no group</span>';
-        return; }
-      circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
-      const used = [...new Set(nodes.filter((d) => !d.q).map((d) => partnerCluster.get(d.row.key)).filter(Boolean))].sort((a, b) => a - b);
-      $('#net-legend').innerHTML = (used.length ? used.map((cl) => `<span><i style="background:${clusterColor(cl, k)};border-radius:50%"></i>${clusterLabel(cl)}</span>`).join('') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '') + (homo.size ? homoKey(homo.size) : '');
-    } };
+      if (ND.col !== 'cluster') {   // partners by community: the groups of two or more, largest first, in the shared community colors
+        grpOf = (id) => (cgrp.has(id) ? cgrp.get(id) : null); grpCol = (g2) => commHue(g2);
+        circle.attr('fill', (d) => (d.q ? '#1A5276' : cgrp.has(d.id) ? commHue(cgrp.get(d.id)) : '#C3CCD6'));
+        $('#net-legend').innerHTML = !C.m ? '<span class="muted">pick a community method to color the partners by community</span>' : big.length ? (big.some((x) => csize.get(x) < 3) ? `<span class="muted">groups of two partners colored too; the list beside the drawing has those of 3 or more</span>` : '') + '<span><i style="background:#C3CCD6;border-radius:50%"></i>in no group</span>' : '<span class="muted">no group of two or more partners pairing with each other</span>';
+        mods(big.map((x, n) => ({ name: commWord(C.m, n + 1).replace(/^./, (ch) => ch.toUpperCase()), col: commHue(n), mem: nodes.filter((d) => cgrp.get(d.id) === n).sort(byRank) })));
+      } else {
+        grpOf = (id) => { const d = nodes.find((x) => x.id === id); return d && !d.q ? partnerCluster.get(d.row.key) || null : null; }; grpCol = (cl) => clusterColor(cl, k);
+        circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
+        const used = [...new Set(nodes.filter((d) => !d.q).map((d) => partnerCluster.get(d.row.key)).filter(Boolean))].sort((a, b) => a - b);
+        $('#net-legend').innerHTML = (used.length ? '<span><i style="background:#C3CCD6;border-radius:50%"></i>not clustered at this cutoff</span>' : '') + (homo.size ? homoKey(homo.size) : '');
+        mods(used.map((cl) => ({ name: clusterLabel(cl), col: clusterColor(cl, k), cl, mem: nodes.filter((d) => !d.q && partnerCluster.get(d.row.key) === cl).sort(byRank) })));
+      }
+      if (ND.col !== 'cluster' && homo.size) $('#net-legend').insertAdjacentHTML('beforeend', homoKey(homo.size));
+      restyle();
+    }, disp() {   // a Display option changed: restyle in place, nothing moves
+      Object.assign(ND, netDisp()); circle.attr('r', rd).attr('stroke', ND.nbord ? '#17263A' : 'none'); hring.attr('r', (d) => rd(d) + 3);
+      link.attr('stroke-width', (d) => EWID(d.best) * ND.ewid);
+      label.attr('dy', (d) => -rd(d) - 6).attr('font-size', (d) => (d.q ? ND.lbsize + 2 : ND.lbsize - 1)).attr('fill', ND.lbcol).attr('stroke', ND.lbout ? 'rgba(255,255,255,0.92)' : 'none').attr('display', (d) => (named(d) ? null : 'none'));
+      restyle(); } };
     NET.recolor();
     node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR` : `<b>${esc(d.row.gene)}</b> · iLIS ${ONE ? d.e.best.toFixed(3) : `best ${d.e.best.toFixed(3)}${Number.isFinite(d.e.avg) ? ` · average ${d.e.avg.toFixed(3)}` : ''}`} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip)
