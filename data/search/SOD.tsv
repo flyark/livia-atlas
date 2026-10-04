@@ -9,7 +9,7 @@ SOD-4	onchocerca-volvulus	Q07449	sod-4	Q07449	1	29	Extracellular superoxide dism
 SOD-4	worm	P34461	sod-4	P34461	2	15	Extracellular superoxide dismutase	
 SOD-5	worm	Q27538	sod-5	Q27538	6	16	Superoxide dismutase	
 SOD1	candida-albicans-237561	A0A1D8PLJ3	SOD1	A0A1D8PLJ3	1	18	Superoxide dismutase	
-SOD1	fly	FBgn0003462	Sod1	P61851	5	152	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	
+SOD1	fly	FBgn0003462	Sod1	P61851	6	156	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	
 SOD1	glycine-max	Q7M1R5	SOD1	Q7M1R5	2	98	Superoxide dismutase	
 SOD1	human	P00441	SOD1	P00441	16	452	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	
 SOD1	mus-musculus	P08228	Sod1	P08228	3	62	Superoxide dismutase	
@@ -22,7 +22,7 @@ SOD2	cladophialophora-carrionii	A0A1C1C8U4	SOD2	A0A1C1C8U4	0	2	Na(+)/H(+) antipo
 SOD2	cladophialophora-carrionii	A0A1C1CUU0	sod2	A0A1C1CUU0	0	2	Na(+)/H(+) antiporter	
 SOD2	cladophialophora-carrionii	A0A1C1D0I2	SOD2	A0A1C1D0I2	1	83	Superoxide dismutase	
 SOD2	dictyostelium-discoideum	Q55BJ9	sod2	Q55BJ9	2	76	Superoxide dismutase	
-SOD2	fly	FBgn0010213	Sod2	Q00637	10	298	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
+SOD2	fly	FBgn0010213	Sod2	Q00637	10	297	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
 SOD2	human	F5H3C5	SOD2	F5H3C5	4	269	Superoxide dismutase	
 SOD2	human	P04179	SOD2	P04179	10	423	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
 SOD2	mus-musculus	P09671	Sod2	P09671	1	276	Superoxide dismutase	
@@ -94,9 +94,9 @@ SODH-2	fly	FBgn0022359	Sord2	O96299	2	16
 SODH-2	worm	O45687	sodh-2	O45687	3	11	Alcohol dehydrogenase 2	
 SODI	human	Q9NY46	SCN3A	Q9NY46	5	85	Sodium channel protein type 3 subunit alpha (Sodium channel 	w
 SODIU	human	Q9Y5Y9	SCN10A	Q9Y5Y9	2	14	Sodium channel protein type 10 subunit alpha (Peripheral ner	w
-SODIUM	fly	FBgn0002921	Atpalpha	P13607	10	174	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	w
-SODIUM	fly	FBgn0015776	nrv1	Q24046	196	2408	Sodium/potassium-transporting ATPase subunit beta-1 (Protein	w
-SODIUM	fly	FBgn0015777	nrv2	Q24048	223	2413	Sodium/potassium-transporting ATPase subunit beta-2 (Protein	w
+SODIUM	fly	FBgn0002921	Atpalpha	P13607	10	176	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	w
+SODIUM	fly	FBgn0015776	nrv1	Q24046	196	2419	Sodium/potassium-transporting ATPase subunit beta-1 (Protein	w
+SODIUM	fly	FBgn0015777	nrv2	Q24048	224	2418	Sodium/potassium-transporting ATPase subunit beta-2 (Protein	w
 SODIUM	fly	FBgn0025709	CNT2	Q7K4A1	0	9	Sodium/nucleoside cotransporter	w
 SODIUM	fly	FBgn0026787	Nhe1	Q9VPJ1	0	20	Sodium/hydrogen exchanger	w
 SODIUM	fly	FBgn0028703	Nhe3	Q8IPJ4	9	228	Sodium/hydrogen exchanger	w
@@ -111,7 +111,7 @@ SODIUM	fly	FBgn0051547	NKCC	Q9VNC7	0	4	GH09711p (Sodium potassium chloride cotra
 SODIUM	fly	FBgn0085434	NaCP60E	A0A0B4KFH8	0	1	Sodium channel protein	w
 SODIUM	fly	FBgn0085442	NKAIN	A6MHQ4	3	10	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
 SODIUM	fly	FBgn0267363	JYalpha	A8QI34	6	10	Sodium/potassium-transporting ATPase subunit alpha	w
-SODIUM	fly	FBgn0285944	para	M9PJP5	2	35	Sodium channel protein	w
+SODIUM	fly	FBgn0285944	para	M9PJP5	2	37	Sodium channel protein	w
 SODIUM	human	A0PJK1	SLC5A10	A0PJK1	6	38	Sodium/mannose cotransporter SLC5A10 (Sodium/glucose cotrans	w
 SODIUM	human	O00168	FXYD1	O00168	22	162	Phospholemman (FXYD domain-containing ion transport regulato	w
 SODIUM	human	O00337	SLC28A1	O00337	2	23	Sodium/nucleoside cotransporter 1 (Concentrative nucleoside 	w
@@ -256,7 +256,7 @@ SODIUM	zebrafish	Q9DEY4	atp1b1b	Q9DEY4	3	44	Sodium/potassium-transporting ATPase
 SODIUM	zebrafish	Q9DGI4	atp1b3b	Q9DGI4	3	31	Sodium/potassium-transporting ATPase subunit beta	w
 SODIUM	zebrafish	Q9DGL2	atp1b2a	Q9DGL2	2	28	Sodium/potassium-transporting ATPase subunit beta	w
 SODIUM	zebrafish	Q9DGL6	atp1a1a.1	Q9DGL6	9	17	Sodium/potassium-transporting ATPase subunit alpha	w
-SODIUM-	fly	FBgn0011603	ine	Q9VR07	0	9	Sodium- and chloride-dependent GABA transporter ine (Protein	w
+SODIUM-	fly	FBgn0011603	ine	Q9VR07	2	18	Sodium- and chloride-dependent GABA transporter ine (Protein	w
 SODIUM-	human	P30531	SLC6A1	P30531	11	170	Sodium- and chloride-dependent GABA transporter 1 (GAT-1) (S	w
 SODIUM-	human	P31641	SLC6A6	P31641	2	92	Sodium- and chloride-dependent taurine transporter (Solute c	w
 SODIUM-	human	P48029	SLC6A8	P48029	15	219	Sodium- and chloride-dependent creatine transporter 1 (CT1) 	w
@@ -299,7 +299,7 @@ SODIUM-COUPLED	zebrafish	Q503G8	slc38a6	Q503G8	0	4	Probable sodium-coupled neutr
 SODIUM-COUPLED	zebrafish	Q5SPB1	slc38a2	Q5SPB1	0	4	Sodium-coupled neutral amino acid symporter 2	w
 SODIUM-COUPLED	zebrafish	Q6DEL1	slc38a7	Q6DEL1	0	4	Sodium-coupled neutral amino acid transporter 7	w
 SODIUM-DEPENDENT	fly	FBgn0029762	NAAT1	Q9W4C5	0	3	Sodium-dependent nutrient amino acid transporter 1 (DmNAT1)	w
-SODIUM-DEPENDENT	fly	FBgn0034049	bdg	Q0E961	1	23	Sodium-dependent transporter bedraggled	w
+SODIUM-DEPENDENT	fly	FBgn0034049	bdg	Q0E961	3	27	Sodium-dependent transporter bedraggled	w
 SODIUM-DEPENDENT	fly	FBgn0039873	Smvt	Q9V9U1	0	2	FI02923p (Sodium-dependent multivitamin transporter)	w
 SODIUM-DEPENDENT	fly	FBgn0052669	CG32669	P83740	1	22	Putative sodium-dependent multivitamin transporter (Na(+)-de	w
 SODIUM-DEPENDENT	human	O00476	SLC17A3	O00476	0	13	Sodium-dependent phosphate transport protein 4 (Na(+)/PI cot	w

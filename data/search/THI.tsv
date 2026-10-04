@@ -27,7 +27,7 @@ THIALYSINE	worm	O17731	D2023.4	O17731	0	8	Thialysine N-epsilon-acetyltransferase
 THIAMIN	human	Q9H3S4	TPK1	Q9H3S4	0	58	Thiamine pyrophosphokinase 1 (hTPK1) (EC 2.7.6.-) (Placental	w
 THIAMIN	worm	P30636	tpk-1	P30636	0	5	Thiamin pyrophosphokinase 1	w
 THIAMINE	fly	FBgn0035078	Tpc2	Q9W0Y9	0	1	Mitochondrial thiamine pyrophosphate carrier (Solute carrier	w
-THIAMINE	fly	FBgn0037852	Tpc1	Q7K0L7	0	21	Mitochondrial thiamine pyrophosphate carrier (Solute carrier	w
+THIAMINE	fly	FBgn0037852	Tpc1	Q7K0L7	0	24	Mitochondrial thiamine pyrophosphate carrier (Solute carrier	w
 THIAMINE	fly	FBgn0037942	CG14721	Q8T4A5	1	35	thiamine diphosphokinase (EC 2.7.6.2)	w
 THIAMINE	human	O60779	SLC19A2	O60779	2	98	Thiamine transporter 1 (ThTr-1) (ThTr1) (Solute carrier fami	w
 THIAMINE	human	Q53GD3	SLC44A4	Q53GD3	1	32	Choline transporter-like protein 4 (Solute carrier family 44	w
@@ -158,18 +158,18 @@ THIOESTER-CONTAINING	fly	FBgn0041180	Tep4	M9PDR0	0	46	Thioester-containing prote
 THIOESTER-CONTAINING	fly	FBgn0041181	Tep3	Q9VLY7	0	10	GH05679p (Thioester-containing protein 3)	w
 THIOESTER-CONTAINING	fly	FBgn0041182	Tep2	Q9NFV7	1	34	GH01829p (TEP2 protein) (Thioester-containing protein 2, iso	w
 THIOESTER-CONTAINING	fly	FBgn0041183	Tep1	Q9NFV8	0	25	TEP1 protein (Thioester-containing protein 1)	w
-THIOESTERASE	fly	FBgn0005632	faf	P55824	0	19	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
-THIOESTERASE	fly	FBgn0010288	Uch	P35122	21	199	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12) (Ubiqui	w
+THIOESTERASE	fly	FBgn0005632	faf	P55824	1	22	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
+THIOESTERASE	fly	FBgn0010288	Uch	P35122	21	202	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12) (Ubiqui	w
 THIOESTERASE	fly	FBgn0013717	not	Q9VVR1	13	70	Ubiquitin carboxyl-terminal hydrolase nonstop (EC 3.4.19.12)	w
-THIOESTERASE	fly	FBgn0016756	Usp47	Q24574	1	13	Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Ubi	w
-THIOESTERASE	fly	FBgn0029819	Usp30	Q9W462	8	53	Ubiquitin carboxyl-terminal hydrolase 30 homolog (dUSP30) (E	w
+THIOESTERASE	fly	FBgn0016756	Usp47	Q24574	6	27	Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Ubi	w
+THIOESTERASE	fly	FBgn0029819	Usp30	Q9W462	9	57	Ubiquitin carboxyl-terminal hydrolase 30 homolog (dUSP30) (E	w
 THIOESTERASE	fly	FBgn0030057	Ppt1	Q9W3C7	12	125	Palmitoyl-protein thioesterase 1 (PPT-1) (EC 3.1.2.22) (Palm	w
-THIOESTERASE	fly	FBgn0030366	Usp7	Q9VYQ8	17	82	Ubiquitin carboxyl-terminal hydrolase 7 (EC 3.4.19.12) (Ubiq	w
+THIOESTERASE	fly	FBgn0030366	Usp7	Q9VYQ8	21	96	Ubiquitin carboxyl-terminal hydrolase 7 (EC 3.4.19.12) (Ubiq	w
 THIOESTERASE	fly	FBgn0032214	CG4968	Q9VL00	22	50	Ubiquitin thioesterase otubain-like (EC 3.4.19.12) (Ubiquiti	w
 THIOESTERASE	fly	FBgn0032358	Ppt2	Q9VKH6	5	93	Lysosomal thioesterase PPT2 homolog (PPT-2) (EC 3.1.2.-)	w
 THIOESTERASE	fly	FBgn0035593	Yod1	M9PED6	7	33	Ubiquitin thioesterase OTU (EC 3.4.19.12)	w
 THIOESTERASE	fly	FBgn0037734	trbd	Q9VH90	7	39	Ubiquitin thioesterase trabid (dTrbd) (EC 3.4.19.12)	w
-THIOESTERASE	fly	FBgn0260936	scny	Q9VRP5	7	46	Ubiquitin carboxyl-terminal hydrolase 36 (EC 3.4.19.12) (Deu	w
+THIOESTERASE	fly	FBgn0260936	scny	Q9VRP5	8	48	Ubiquitin carboxyl-terminal hydrolase 36 (EC 3.4.19.12) (Deu	w
 THIOESTERASE	human	A6NCW0	USP17L3	A6NCW0	4	38	Ubiquitin carboxyl-terminal hydrolase 17-like protein 3 (EC 	w
 THIOESTERASE	human	A6NNY8	USP27X	A6NNY8	19	112	Ubiquitin carboxyl-terminal hydrolase 27 (EC 3.4.19.12) (Deu	w
 THIOESTERASE	human	A8MUK1	USP17L5	A8MUK1	3	41	Ubiquitin carboxyl-terminal hydrolase 17-like protein 5 (EC 	w
@@ -316,7 +316,7 @@ THIOLASE	worm	P34255	hadb-1	P34255	3	36	Probable 3-ketoacyl-CoA thiolase	w
 THIOLASE	yeast	P27796	POT1	P27796	1	32	3-ketoacyl-CoA thiolase, peroxisomal	w
 THIOLASE	zebrafish	A0A8M3APK4	LOC103910030	A0A8M3APK4	2	21	3-ketoacyl-CoA thiolase, mitochondrial-like	w
 THIOLASE	zebrafish	Q6GQN6	acaa1	Q6GQN6	1	34	3-ketoacyl-CoA thiolase, peroxisomal	w
-THIOLATION	fly	FBgn0032793	Ctu2	Q9VIV3	2	16	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
+THIOLATION	fly	FBgn0032793	Ctu2	Q9VIV3	2	18	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
 THIOLATION	fly	FBgn0033375	Ctu1	Q7JWW5	1	14	Cytoplasmic tRNA 2-thiolation protein 1 (EC 2.7.7.-) (Cytopl	w
 THIOLATION	human	Q2VPK5	CTU2	Q2VPK5	11	169	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
 THIOLATION	human	Q7Z7A3	CTU1	Q7Z7A3	9	176	Cytoplasmic tRNA 2-thiolation protein 1 (EC 2.7.7.-) (ATP-bi	w
@@ -333,12 +333,12 @@ THIOPURINE	zebrafish	F8W621	tpmt.2	F8W621	0	14	thiopurine S-methyltransferase	w
 THIOPURINE	zebrafish	Q504A5	tpmt	Q504A5	0	14	Probable thiopurine S-methyltransferase	w
 THIOR	human	Q06830	PRDX1	Q06830	10	488	Peroxiredoxin-1 (EC 1.11.1.24) (Natural killer cell-enhancin	w
 THIOREDOXIN	fly	FBgn0000318	cl	Q9VMQ9	1	6	Thioredoxin domain-containing protein 17	w
-THIOREDOXIN	fly	FBgn0020653	Trxr1	P91938	15	219	Thioredoxin reductase 1, mitochondrial (EC 1.8.1.9)	w
+THIOREDOXIN	fly	FBgn0020653	Trxr1	P91938	16	224	Thioredoxin reductase 1, mitochondrial (EC 1.8.1.9)	w
 THIOREDOXIN	fly	FBgn0030329	prtp	Q9VYV3	7	167	Thioredoxin domain-containing protein 5 homolog (Protein pre	w
 THIOREDOXIN	fly	FBgn0031670	SelT	Q9VMV6	1	31	Thioredoxin reductase-like selenoprotein T homolog CG3887 (E	w
-THIOREDOXIN	fly	FBgn0034455	Tmx2	Q7JW12	368	2377	Thioredoxin-related transmembrane protein 2 homolog (Thiored	w
+THIOREDOXIN	fly	FBgn0034455	Tmx2	Q7JW12	373	2388	Thioredoxin-related transmembrane protein 2 homolog (Thiored	w
 THIOREDOXIN	fly	FBgn0037170	Trxr2	Q9VNT5	10	58	Thioredoxin reductase 2, mitochondrial (EC 1.8.1.9)	w
-THIOREDOXIN	fly	FBgn0040309	Prx2	Q9V3P0	2	143	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
+THIOREDOXIN	fly	FBgn0040309	Prx2	Q9V3P0	3	152	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
 THIOREDOXIN	fly	FBgn0040396	CG3939	Q9U1K7	3	18	Thioredoxin domain-containing protein 17	w
 THIOREDOXIN	human	O14530	TXNDC9	O14530	36	207	Thioredoxin domain-containing protein 9 (ATP-binding protein	w
 THIOREDOXIN	human	O76003	GLRX3	O76003	18	236	Glutaredoxin-3 (PKC-interacting cousin of thioredoxin) (PICO	w
@@ -413,11 +413,11 @@ THIOREDOXIN-3	human	Q6A555	TXNDC8	Q6A555	5	47	Thioredoxin domain-containing prot
 THIOREDOXIN-3	yeast	P25372	TRX3	P25372	0	25	Thioredoxin-3, mitochondrial	w
 THIOREDOXIN-6	human	Q6A555	TXNDC8	Q6A555	5	47	Thioredoxin domain-containing protein 8 (Spermatid-specific 	w
 THIOREDOXIN-BINDING	human	Q9H3M7	TXNIP	Q9H3M7	36	342	Thioredoxin-interacting protein (Thioredoxin-binding protein	w
-THIOREDOXIN-DEPENDE	fly	FBgn0040309	Prx2	Q9V3P0	2	143	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
+THIOREDOXIN-DEPENDE	fly	FBgn0040309	Prx2	Q9V3P0	3	152	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
 THIOREDOXIN-DEPENDENT	fly	FBgn0036490	Prx1	Q9VUM4	15	264	thioredoxin-dependent peroxiredoxin (EC 1.11.1.24)	w
 THIOREDOXIN-DEPENDENT	fly	FBgn0038519	Prx3	Q9VEJ0	1	27	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
 THIOREDOXIN-DEPENDENT	fly	FBgn0040308	Prx4	Q9V3Q4	9	299	thioredoxin-dependent peroxiredoxin (EC 1.11.1.24)	w
-THIOREDOXIN-DEPENDENT	fly	FBgn0040309	Prx2	Q9V3P0	2	143	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
+THIOREDOXIN-DEPENDENT	fly	FBgn0040309	Prx2	Q9V3P0	3	152	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
 THIOREDOXIN-DEPENDENT	human	P30048	PRDX3	P30048	8	315	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
 THIOREDOXIN-DEPENDENT	human	Q13162	PRDX4	Q13162	18	257	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
 THIOREDOXIN-INTERACTING	human	Q9H3M7	TXNIP	Q9H3M7	36	342	Thioredoxin-interacting protein (Thioredoxin-binding protein	w
@@ -441,7 +441,7 @@ THIOREDOXIN-LIKE	worm	L8E6I4	dib-1	L8E6I4	7	57	Thioredoxin-like protein	w
 THIOREDOXIN-LIKE	worm	Q9U1X7	mau-8	Q9U1X7	2	19	Phosducin thioredoxin-like domain-containing protein	w
 THIOREDOXIN-LIKE	zebrafish	F6NTA0	txnl1	F6NTA0	7	41	Thioredoxin-like 1	w
 THIOREDOXIN-LIKE	zebrafish	Q3B728	txnl4b	Q3B728	4	75	Thioredoxin-like protein	w
-THIOREDOXIN-RELATED	fly	FBgn0034455	Tmx2	Q7JW12	368	2377	Thioredoxin-related transmembrane protein 2 homolog (Thiored	w
+THIOREDOXIN-RELATED	fly	FBgn0034455	Tmx2	Q7JW12	373	2388	Thioredoxin-related transmembrane protein 2 homolog (Thiored	w
 THIOREDOXIN-RELATED	fly	FBgn0036579	Tmx3	Q961B9	1	10	LD24073p (Thioredoxin-related transmembrane protein 3 (EC 5.	w
 THIOREDOXIN-RELATED	human	O43396	TXNL1	O43396	51	257	Thioredoxin-like protein 1 (32 kDa thioredoxin-related prote	w
 THIOREDOXIN-RELATED	human	Q96JJ7	TMX3	Q96JJ7	28	155	Protein disulfide-isomerase TMX3 (EC 5.3.4.1) (Thioredoxin d	w
@@ -467,7 +467,7 @@ THIOSULFATE	yeast	Q08686	TUM1	Q08686	0	22	Thiosulfate sulfurtransferase TUM1	w
 THIOSULFATE	yeast	Q08742	RDL2	Q08742	0	36	Thiosulfate sulfurtransferase RDL2, mitochondrial	w
 THIOSULFATE	yeast	Q12305	RDL1	Q12305	3	46	Thiosulfate:glutathione sulfurtransferase	w
 THIOSULFATE	zebrafish	A0A0G2KNS1	LOC561325	A0A0G2KNS1	4	67	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
-THIOURIDYLASE	fly	FBgn0032793	Ctu2	Q9VIV3	2	16	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
+THIOURIDYLASE	fly	FBgn0032793	Ctu2	Q9VIV3	2	18	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
 THIOURIDYLASE	fly	FBgn0040337	CG3021	Q9W5B6	2	30	Mitochondrial tRNA-specific 2-thiouridylase 1 (EC 2.8.1.14)	w
 THIOURIDYLASE	human	O75648	TRMU	O75648	13	136	Mitochondrial tRNA-specific 2-thiouridylase 1 (EC 2.8.1.14) 	w
 THIOURIDYLASE	human	Q2VPK5	CTU2	Q2VPK5	11	169	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w

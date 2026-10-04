@@ -175,7 +175,7 @@ P40259	human	P40259	CD79B	P40259	87	485	B-cell antigen receptor complex-associat
 P40260	yeast	P40260	MEP1	P40260	2	17	Ammonium transporter MEP1	
 P40261	human	P40261	NNMT	P40261	19	242	Nicotinamide N-methyltransferase (EC 2.1.1.1)	
 P40283	arabidopsis-thaliana	P40283	At5g59910	P40283	25	175	Histone H2B.11	
-P40301	fly	FBgn0086134	Prosalpha2	P40301	12	159	Proteasome subunit alpha type-2 (PROS-Dm25) (Proteasome 25 k	
+P40301	fly	FBgn0086134	Prosalpha2	P40301	13	163	Proteasome subunit alpha type-2 (PROS-Dm25) (Proteasome 25 k	
 P40302	yeast	P40302	PRE5	P40302	1	67	Proteasome subunit alpha type-6	
 P40303	yeast	P40303	PRE6	P40303	1	81	Proteasome subunit alpha type-4	
 P40304	fly	FBgn0002284	Prosbeta6	P40304	10	168	Proteasome subunit beta type-1 (Proteasome 26 kDa subunit)	
@@ -258,7 +258,7 @@ P40395	yeast	P40395	RIC1	P40395	2	23	Guanine nucleotide exchange factor subunit 
 P40413	yeast	P40413	CCT5	P40413	3	71	T-complex protein 1 subunit epsilon	
 P40414	yeast	P40414	TPM2	P40414	6	34	Tropomyosin-2	
 P40416	yeast	P40416	ATM1	P40416	0	18	Iron-sulfur clusters transporter ATM1, mitochondrial	
-P40417	fly	FBgn0003256	rl	P40417	283	1244	Mitogen-activated protein kinase ERK-A (EC 2.7.11.24) (Extra	
+P40417	fly	FBgn0003256	rl	P40417	474	1707	Mitogen-activated protein kinase ERK-A (EC 2.7.11.24) (Extra	
 P40421	fly	FBgn0265959	rdgC	P40421	54	923	retinal degeneration C	
 P40422	yeast	P40422	RPC10	P40422	9	175	DNA-directed RNA polymerases I, II, and III subunit RPABC4	
 P40423	fly	FBgn0003514	sqh	P40423	7	133	Myosin regulatory light chain sqh (Myosin regulatory light c	
@@ -401,7 +401,7 @@ P40583	yeast	P40583	YPS6	P40583	0	6	Aspartic proteinase yapsin-6
 P40584	yeast	P40584	YIR040C	P40584	0	2	Putative UPF0377 protein YIR040C	
 P40585	yeast	P40585	PAU15	P40585	0	3	Seripauperin-15	
 P40586	yeast	P40586	YIR042C	P40586	0	3	Uncharacterized protein YIR042C	
-P40589	fly	FBgn0010453	Wnt4	P40589	70	303	Protein Wnt-4 (dWnt-4)	
+P40589	fly	FBgn0010453	Wnt4	P40589	72	306	Protein Wnt-4 (dWnt-4)	
 P40602	arabidopsis-thaliana	P40602	APG	P40602	0	10	Anther-specific proline-rich protein APG	
 P40612	salmonella-typhimurium	P40612	spaM	P40612	0	3	Surface presentation of antigens protein SpaM	
 P40613	salmonella-typhimurium	P40613	spaN	P40613	0	5	Surface presentation of antigens protein SpaN	
@@ -416,7 +416,7 @@ P40656	fly	FBgn0005612	Sox14	P40656	52	371	Putative transcription factor SOX-14
 P40657	fly	FBgn0005613	Sox15	P40657	87	362	Putative transcription factor SOX-15 (Sox50E)	
 P40677	salmonella-typhimurium	P40677	yjaB	P40677	0	4	Peptidyl-lysine N-acetyltransferase YjaB	
 P40687	salmonella-typhimurium	P40687	topB	P40687	0	9	DNA topoisomerase 3	
-P40688	fly	FBgn0003655	swa	P40688	2	10	Protein swallow	
+P40688	fly	FBgn0003655	swa	P40688	2	12	Protein swallow	
 P40689	fly	FBgn0003867	tsl	P40689	59	254	Torso-like protein	
 P40692	human	P40692	MLH1	P40692	50	342	DNA mismatch repair protein Mlh1 (MutL protein homolog 1)	
 P40693	yeast	P40693	RLP7	P40693	40	420	Ribosome biogenesis protein RLP7	
@@ -445,14 +445,14 @@ P40763	human	P40763	STAT3	P40763	96	1586	Signal transducer and activator of tran
 P40764	mus-musculus	P40764	Dlx2	P40764	1	29	Homeobox protein DLX-2	
 P40783	salmonella-typhimurium	P40783	qor	P40783	0	6	Quinone oxidoreductase	
 P40790	salmonella-typhimurium	P40790	potA	P40790	26	58	Spermidine/putrescine import ATP-binding protein PotA	
-P40791	fly	FBgn0011656	Mef2	A0A0B4KFI1	113	529		
+P40791	fly	FBgn0011656	Mef2	A0A0B4KFI1	115	531		
 P40792	fly	FBgn0010333	Rac1	P40792	55	295	Ras-related protein Rac1	
 P40793	fly	FBgn0010341	Cdc42	P40793	72	424	Cdc42 homolog (EC 3.6.5.2)	
-P40794	fly	FBgn0004389	bnk	P40794	0	1	Protein bottleneck	
+P40794	fly	FBgn0004389	bnk	P40794	1	5	Protein bottleneck	
 P40795	fly	FBgn0000719	fog	P40795	69	303	Protein folded gastrulation [Cleaved into: Protein folded ga	
-P40796	fly	FBgn0011638	La	P40796	5	46	La protein homolog (La autoantigen homolog) (La ribonucleopr	
-P40797	fly	FBgn0013726	pnut	P40797	49	914	Protein peanut	
-P40798	fly	FBgn0001978	stc	P40798	27	183	Protein shuttle craft	
+P40796	fly	FBgn0011638	La	P40796	6	53	La protein homolog (La autoantigen homolog) (La ribonucleopr	
+P40797	fly	FBgn0013726	pnut	P40797	52	922	Protein peanut	
+P40798	fly	FBgn0001978	stc	P40798	32	191	Protein shuttle craft	
 P40800	salmonella-typhimurium	P40800	ygiK	P40800	3	3	Uncharacterized protein YgiK	
 P40807	fly	FBgn0013307	Odc1	P40807	3	143	Ornithine decarboxylase 1 (ODC) (EC 4.1.1.17)	
 P40808	fly	FBgn0013308	Odc2	P40808	2	129	Ornithine decarboxylase 2 (ODC) (EC 4.1.1.17) (dODC2)	

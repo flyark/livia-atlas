@@ -24,7 +24,7 @@ STE20	human	Q9Y4K4	MAP4K5	Q9Y4K4	122	1387	Mitogen-activated protein kinase kinas
 STE20	schizosaccharomyces-pombe	Q09743	ste20	Q09743	4	26	Target of rapamycin complex 2 subunit ste20	
 STE20	yeast	Q03497	STE20	Q03497	17	140	Serine/threonine-protein kinase STE20 (EC 2.7.11.1)	
 STE20-LIKE	fly	FBgn0046692	Stlk	P83098	78	1116	Putative serine/threonine-protein kinase STE20-like (EC 2.7.	w
-STE20-LIKE	fly	FBgn0261456	hpo	Q8T0S6	187	1211	Serine/threonine-protein kinase hippo (EC 2.7.11.1) (Drosoph	w
+STE20-LIKE	fly	FBgn0261456	hpo	Q8T0S6	224	1417	Serine/threonine-protein kinase hippo (EC 2.7.11.1) (Drosoph	w
 STE20-LIKE	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
 STE20-LIKE	human	Q13043	STK4	Q13043	166	1434	Serine/threonine-protein kinase 4 (EC 2.7.11.1) (Mammalian S	w
 STE20-LIKE	human	Q13188	STK3	Q13188	175	1466	Serine/threonine-protein kinase 3 (EC 2.7.11.1) (Mammalian S	w
@@ -103,7 +103,7 @@ STEAROYL-COA	zebrafish	F1QG70	scd	F1QG70	0	22	stearoyl-CoA 9-desaturase	w
 STEAROYL-COA	zebrafish	Q501V8	scdb	Q501V8	1	22	stearoyl-CoA 9-desaturase	w
 STEAROYLTRANSFERASE	human	Q9H6R6	ZDHHC6	Q9H6R6	13	79	Palmitoyltransferase ZDHHC6 (EC 2.3.1.225) (Stearoyltransfer	w
 STEC	salmonella-typhimurium	Q8ZP57	steC	Q8ZP57	0	1	Secreted effector kinase SteC	
-STEEP	fly	FBgn0028919	CG16865	Q9V412	3	15	STING ER exit protein (STEEP)	w
+STEEP	fly	FBgn0028919	CG16865	Q9V412	3	17	STING ER exit protein (STEEP)	w
 STEEP	human	Q9H5V9	STEEP1	Q9H5V9	31	202	STING ER exit protein (STEEP)	w
 STEEP1	human	Q9H5V9	STEEP1	Q9H5V9	31	202	STING ER exit protein (STEEP)	
 STEEP1	mus-musculus	Q8VDP2	Steep1	Q8VDP2	1	36	STING ER exit protein	
@@ -133,7 +133,7 @@ STELLATE	fly	FBgn0053245	Ste:CG33245	Q7KV12	0	0	Stellate protein CG33236/CG33240
 STELLATE	fly	FBgn0053246	Ste:CG33246	Q7KV22	11	14	Stellate protein CG33246	w
 STELLATE	fly	FBgn0053247	Ste:CG33247	Q7KV23	11	14	Stellate protein CG33247	w
 STEM	fly	FBgn0020248	stet	Q9W0E9	2	18	Stem cell tumor, isoform B (EC 3.4.21.-)	w
-STEM	fly	FBgn0037656	CG11986	Q9VHI3	0	2	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
+STEM	fly	FBgn0037656	CG11986	Q9VHI3	1	6	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
 STEM	fly	FBgn0061198	HSPC300	Q8MLQ0	18	46	FI14118p (GEO02618p1) (Haematopoietic stem/progenitor cell p	w
 STEM	human	A6NC42	DPPA5	A6NC42	13	67	Developmental pluripotency-associated 5 protein (hDPPA5) (Em	w
 STEM	human	O43653	PSCA	O43653	29	189	Prostate stem cell antigen	w
@@ -164,7 +164,7 @@ STEM	zebrafish	F1QUD8	tal2	F1QUD8	1	2	Stem cell protein	w
 STEM	zebrafish	Q8JFR5	kita	Q8JFR5	3	35	Mast/stem cell growth factor receptor kita	w
 STEM-LOOP	fly	FBgn0037602	SLIRP2	Q9VHP3	3	13	GEO11133p1 (IP20249p) (IP20549p) (SRA stem-loop interacting 	w
 STEM-LOOP	fly	FBgn0064117	SLIRP1	Q0KHQ1	0	10	GEO13361p1 (SRA stem-loop interacting RNA binding protein 1,	w
-STEM-LOOP-BINDING	fly	FBgn0041186	Slbp	Q9VAN6	8	56	Histone RNA hairpin-binding protein (Histone stem-loop-bindi	w
+STEM-LOOP-BINDING	fly	FBgn0041186	Slbp	Q9VAN6	10	64	Histone RNA hairpin-binding protein (Histone stem-loop-bindi	w
 STEM-LOOP-BINDING	human	Q14493	SLBP	Q14493	35	173	Histone RNA hairpin-binding protein (Histone stem-loop-bindi	w
 STEM-LOOP-BINDING	zebrafish	A1L2F4	slbp2	A1L2F4	1	17	Stem-loop-binding protein 2	w
 STEM-LOOP-INTERACTING	human	Q9GZT3	SLIRP	Q9GZT3	32	342	SRA stem-loop-interacting RNA-binding protein, mitochondrial	w
@@ -178,15 +178,15 @@ STEREOCILIA	human	Q8TAF8	LHFPL5	Q8TAF8	13	203	LHFPL tetraspan subfamily member 5
 STEREOCILIN	human	A6NGW2	STRCP1	A6NGW2	7	42	Putative stereocilin-like protein (Stereocilin pseudogene 1)	w
 STEREOCILIN	human	Q7RTU9	STRC	Q7RTU9	1	42	Stereocilin	w
 STEREOCILIN-LIKE	human	A6NGW2	STRCP1	A6NGW2	7	42	Putative stereocilin-like protein (Stereocilin pseudogene 1)	w
-STERILE	fly	FBgn0000810	fs(1)K10	P13468	7	61	DNA-binding protein K10 (Female sterile protein K10)	w
+STERILE	fly	FBgn0000810	fs(1)K10	P13468	7	64	DNA-binding protein K10 (Female sterile protein K10)	w
 STERILE	fly	FBgn0002838	ms(3)K81	Q9VBA8	1	3	IP06580p (Male sterile (3) K81)	w
 STERILE	fly	FBgn0004650	fs(1)N	O76904	0	3	EG:8D8.1 protein (Female sterile (1) nasrat) (RE10379p)	w
-STERILE	fly	FBgn0004656	fs(1)h	M9PJC7	217	721	Female sterile (1) homeotic, isoform G	w
+STERILE	fly	FBgn0004656	fs(1)h	M9PJC7	221	722	Female sterile (1) homeotic, isoform G	w
 STERILE	fly	FBgn0005390	fs(1)M3	Q9W451	0	5	Female sterile (1) M3	w
 STERILE	fly	FBgn0011239	ms(2)35Ci	Q8MZ67	3	18	AT28918p (GEO08806p1) (Male sterile (2) 35Ci, isoform A) (Ma	w
 STERILE	fly	FBgn0016041	Tom40	Q9U4L6	5	37	Mitochondrial import receptor subunit TOM40 homolog 1 (dtom4	w
 STERILE	fly	FBgn0036868	ms(3)76Ba	Q9VVZ0	0	0	Male sterile (3) 76Ba	w
-STERILE	fly	FBgn0036895	ms(3)76Cc	Q9VW23	4	16	Male sterile (3) 76Cc	w
+STERILE	fly	FBgn0036895	ms(3)76Cc	Q9VW23	5	20	Male sterile (3) 76Cc	w
 STERILE	fly	FBgn0036905	Vtld	Q9VW36	5	7	Male sterile (3) 76Ca	w
 STERILE	fly	FBgn0039559	NSD	Q8MT36	19	159	Nuclear receptor binding SET domain protein (EC 2.1.1.357) (	w
 STERILE	fly	FBgn0260434	CG42529	Q9VW36	0	3	Male sterile (3) 76Ca	w
@@ -219,7 +219,7 @@ STERILE	zebrafish	A0A8M3B7T1	samd7	A0A8M3B7T1	0	1	Sterile alpha motif domain-con
 STERILE	zebrafish	A0A8M6Z1Y1	sb:cb1081	A0A8M6Z1Y1	0	10	Sterile alpha motif domain-containing protein 9	w
 STERILE	zebrafish	A5PMU4	anks1b	A5PMU4	1	2	Ankyrin repeat and sterile alpha motif domain-containing pro	w
 STERILE	zebrafish	Q08C88	samd13	Q08C88	0	43	Sterile alpha motif domain-containing 13	w
-STERILE20-LIKE	fly	FBgn0035001	Slik	Q9W179	115	1003	Sterile20-like kinase, isoform B (Sterile20-like kinase, iso	w
+STERILE20-LIKE	fly	FBgn0035001	Slik	Q9W179	116	1003	Sterile20-like kinase, isoform B (Sterile20-like kinase, iso	w
 STERILITY	fly	FBgn0004465	mPges2	Q9V420	0	14	FI02878p (Suppressor of ref(2)P sterility (EC 1.8.1.7, EC 5.	w
 STERILITY	human	Q8WVX9	FAR1	Q8WVX9	11	121	Fatty acyl-CoA reductase 1 (FAR1) (EC 1.2.1.84) (Male steril	w
 STERILITY	human	Q96K12	FAR2	Q96K12	3	66	Fatty acyl-CoA reductase 2 (FAR2) (EC 1.2.1.84) (Male steril	w

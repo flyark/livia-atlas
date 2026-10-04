@@ -6,7 +6,7 @@ ARF-1.1	worm	Q94231	arf-1.1	Q94231	12	68	ADP-ribosylation factor 1-like 1
 ARF-5	worm	G5EFK4	arf-5	G5EFK4	13	94	ADP-ribosylation factor	
 ARF-6	worm	G5EET6	efa-6	G5EET6	1	4	Exchange factor for Arf-6	w
 ARF-6	worm	Q9U2S4	arf-6	Q9U2S4	8	54	ADP-ribosylation factor 6	
-ARF-BINDING	fly	FBgn0030141	Gga	Q9W329	5	22	Golgi-localized, gamma-adaptin ear containing, ARF binding p	w
+ARF-BINDING	fly	FBgn0030141	Gga	Q9W329	6	28	Golgi-localized, gamma-adaptin ear containing, ARF binding p	w
 ARF-BINDING	human	Q96JB5	CDK5RAP3	Q96JB5	19	171	CDK5 regulatory subunit-associated protein 3 (CDK5 activator	w
 ARF-BINDING	human	Q9NZ52	GGA3	Q9NZ52	48	158	ADP-ribosylation factor-binding protein GGA3 (Golgi-localize	w
 ARF-BINDING	human	Q9UJY4	GGA2	Q9UJY4	38	121	ADP-ribosylation factor-binding protein GGA2 (Gamma-adaptin-	w
@@ -53,7 +53,7 @@ ARF-RELATED	human	Q9NXU5	ARL15	Q9NXU5	42	263	ADP-ribosylation factor-like protei
 ARF1	arabidopsis-thaliana	P36397	ARF1	P36397	13	88	ADP-ribosylation factor 1	
 ARF1	arabidopsis-thaliana	Q8L7G0	ARF1	Q8L7G0	16	119	Auxin response factor 1	
 ARF1	candida-albicans-237561	P22274	ARF1	P22274	9	58	ADP-ribosylation factor	
-ARF1	fly	FBgn0010348	Arf1	P61209	23	174	ADP-ribosylation factor 1 (EC 3.6.5.2)	
+ARF1	fly	FBgn0010348	Arf1	P61209	23	179	ADP-ribosylation factor 1 (EC 3.6.5.2)	
 ARF1	human	P84077	ARF1	P84077	132	748	ADP-ribosylation factor 1 (EC 3.6.5.2)	
 ARF1	human	Q8N6T3	ARFGAP1	Q8N6T3	19	121	ADP-ribosylation factor GTPase-activating protein 1 (ARF GAP	w
 ARF1	human	Q9ULH1	ASAP1	Q9ULH1	55	235	Arf-GAP with SH3 domain, ANK repeat and PH domain-containing	w
@@ -163,9 +163,9 @@ ARF7	human	Q8N8R7	ARL14EP	Q8N8R7	14	74	ARL14 effector protein (ARF7 effector pro
 ARF7	oryza-sativa-subsp-japonica	Q6YVY0	ARF7	Q6YVY0	14	209	Auxin response factor 7	
 ARF7	worm	H2KY75	arle-14	H2KY75	1	3	ARF7 effector protein C-terminal domain-containing protein	w
 ARF70	arabidopsis-thaliana	Q8RV83	ARF70	Q8RV83	0	7	B3 domain-containing protein At2g31720	
-ARF79F	fly	FBgn0010348	Arf1	P61209	23	174		
-ARF79F_11_182	fly	FBgn0010348	Arf1	P61209	23	174		
-ARF79F_18_173	fly	FBgn0010348	Arf1	P61209	23	174		
+ARF79F	fly	FBgn0010348	Arf1	P61209	23	179		
+ARF79F_11_182	fly	FBgn0010348	Arf1	P61209	23	179		
+ARF79F_18_173	fly	FBgn0010348	Arf1	P61209	23	179		
 ARF7EP	human	Q8N8R7	ARL14EP	Q8N8R7	14	74		
 ARF8	arabidopsis-thaliana	Q9FGV1	ARF8	Q9FGV1	11	140	Auxin response factor 8	
 ARF8	oryza-sativa-subsp-japonica	Q6K223	ARF8	Q6K223	1	2	Auxin response factor 8	
@@ -181,7 +181,7 @@ ARFA	mycobacterium-tuberculosis	P9WIU5	arfA	P9WIU5	1	70	Peptidoglycan-binding pr
 ARFA1B	arabidopsis-thaliana	Q9LYJ3	ARFA1B	Q9LYJ3	15	85	ADP-ribosylation factor	
 ARFA1E	arabidopsis-thaliana	Q9M1P5	ARFA1E	Q9M1P5	15	85	ADP-ribosylation factor	
 ARFA1F	arabidopsis-thaliana	Q6ID97	ARFA1F	Q6ID97	13	88	ADP-ribosylation factor	
-ARFAPTIN	fly	FBgn0037884	Arfip	Q9VGQ8	2	16	Arfaptin (LD44124p)	w
+ARFAPTIN	fly	FBgn0037884	Arfip	Q9VGQ8	3	25	Arfaptin (LD44124p)	w
 ARFAPTIN	zebrafish	Q7SYK6	arfip1	Q7SYK6	2	10	ADP-ribosylation factor-interacting protein 1 (arfaptin 1)	w
 ARFAPTIN-1	human	P53367	ARFIP1	P53367	30	213	Arfaptin-1 (ADP-ribosylation factor-interacting protein 1)	w
 ARFAPTIN-2	human	P53365	ARFIP2	P53365	22	151	Arfaptin-2 (ADP-ribosylation factor-interacting protein 2) (	w
@@ -196,9 +196,9 @@ ARFD1B	arabidopsis-thaliana	F4HXI4	ARFD1B	F4HXI4	4	85	ADP-ribosylation factor D1
 ARFG1_HUMAN	human	Q8N6T3	ARFGAP1	Q8N6T3	19	121		
 ARFG2_HUMAN	human	Q8N6H7	ARFGAP2	Q8N6H7	41	157		
 ARFG3_HUMAN	human	Q9NP61	ARFGAP3	Q9NP61	27	125		
-ARFGAP	fly	FBgn0033539	Git	Q95RG8	21	78	ARF GTPase-activating protein Git (ARF GAP GIT) (dGIT protei	w
-ARFGAP	fly	FBgn0050372	Asap	A1Z7A6	6	29	ArfGAP with SH3 domain, ANK repeat and PH domain-containing 	w
-ARFGAP1	fly	FBgn0020655	ArfGAP1	Q9VTX5	11	95	ADP-ribosylation factor GTPase activating protein 1, isoform	
+ARFGAP	fly	FBgn0033539	Git	Q95RG8	21	81	ARF GTPase-activating protein Git (ARF GAP GIT) (dGIT protei	w
+ARFGAP	fly	FBgn0050372	Asap	A1Z7A6	18	51	ArfGAP with SH3 domain, ANK repeat and PH domain-containing 	w
+ARFGAP1	fly	FBgn0020655	ArfGAP1	Q9VTX5	15	108	ADP-ribosylation factor GTPase activating protein 1, isoform	
 ARFGAP1	human	Q8N6T3	ARFGAP1	Q8N6T3	19	121	ADP-ribosylation factor GTPase-activating protein 1 (ARF GAP	
 ARFGAP1	human	Q9NP61	ARFGAP3	Q9NP61	27	125		
 ARFGAP1	mus-musculus	Q9EPJ9	Arfgap1	Q9EPJ9	5	36	ADP-ribosylation factor GTPase-activating protein 1	
@@ -206,12 +206,12 @@ ARFGAP1	rattus-norvegicus	Q62848	Arfgap1	Q62848	3	40	ADP-ribosylation factor GTP
 ARFGAP2	human	Q8N6H7	ARFGAP2	Q8N6H7	41	157	ADP-ribosylation factor GTPase-activating protein 2 (ARF GAP	
 ARFGAP2	mus-musculus	Q99K28	Arfgap2	Q99K28	9	31	ADP-ribosylation factor GTPase-activating protein 2	
 ARFGAP2	rattus-norvegicus	Q3MID3	Arfgap2	Q3MID3	9	29	ADP-ribosylation factor GTPase-activating protein 2	
-ARFGAP3	fly	FBgn0037182	ArfGAP3	A8JNX0	16	62	ADP-ribosylation factor GTPase activating protein 3, isoform	
+ARFGAP3	fly	FBgn0037182	ArfGAP3	A8JNX0	19	77	ADP-ribosylation factor GTPase activating protein 3, isoform	
 ARFGAP3	human	Q9NP61	ARFGAP3	Q9NP61	27	125	ADP-ribosylation factor GTPase-activating protein 3 (ARF GAP	
 ARFGAP3	mus-musculus	Q9D8S3	Arfgap3	Q9D8S3	8	31	ADP-ribosylation factor GTPase-activating protein 3	
 ARFGAP3	rattus-norvegicus	Q4KLN7	Arfgap3	Q4KLN7	6	31	ADP-ribosylation factor GTPase-activating protein 3	
-ARFGAP3_377	fly	FBgn0037182	ArfGAP3	A8JNX0	16	62		
-ARFGAP3_507	fly	FBgn0037182	ArfGAP3	A8JNX0	16	62		
+ARFGAP3_377	fly	FBgn0037182	ArfGAP3	A8JNX0	19	77		
+ARFGAP3_507	fly	FBgn0037182	ArfGAP3	A8JNX0	19	77		
 ARFGEF	human	Q5TH69	ARFGEF3	Q5TH69	4	85	Brefeldin A-inhibited guanine nucleotide-exchange protein 3 	w
 ARFGEF1	human	Q9Y6D6	ARFGEF1	Q9Y6D6	15	183	Brefeldin A-inhibited guanine nucleotide-exchange protein 1 	
 ARFGEF2	human	Q9Y6D5	ARFGEF2	Q9Y6D5	12	147	Brefeldin A-inhibited guanine nucleotide-exchange protein 2 	
@@ -219,7 +219,7 @@ ARFGEF3	human	Q5TH69	ARFGEF3	Q5TH69	4	85	Brefeldin A-inhibited guanine nucleotid
 ARFGEP1	human	Q9Y6D6	ARFGEF1	Q9Y6D6	15	183		
 ARFGEP100	human	Q6DN90	IQSEC1	Q6DN90	44	181		
 ARFGEP2	human	Q9Y6D5	ARFGEF2	Q9Y6D5	12	147		
-ARFIP	fly	FBgn0037884	Arfip	Q9VGQ8	2	16	Arfaptin (LD44124p)	
+ARFIP	fly	FBgn0037884	Arfip	Q9VGQ8	3	25	Arfaptin (LD44124p)	
 ARFIP1	human	P53367	ARFIP1	P53367	30	213	Arfaptin-1 (ADP-ribosylation factor-interacting protein 1)	
 ARFIP1	mus-musculus	G5E8V9	Arfip1	G5E8V9	2	9	Arfaptin-1	
 ARFIP1	rattus-norvegicus	Q9JHU5	Arfip1	Q9JHU5	2	11	Arfaptin-1	

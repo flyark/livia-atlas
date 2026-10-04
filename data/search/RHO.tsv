@@ -33,7 +33,7 @@ RHO-ACTIVATING	human	Q8N0Z2	ABRA	Q8N0Z2	12	58	Actin-binding Rho-activating prote
 RHO-ACTIVATING	worm	O62234	CELE_F36F2.1	O62234	0	5	Actin-binding Rho-activating protein	w
 RHO-ACTIVATING	zebrafish	A0A8N7UW36	abraa	A0A8N7UW36	0	2	Actin-binding Rho-activating protein	w
 RHO-ACTIVATING	zebrafish	F6NWN8	si:dkey-29b11.3	F6NWN8	0	2	Actin-binding Rho-activating protein	w
-RHO-ASSOCIATED	fly	FBgn0026181	Rok	Q9VXE3	241	1189	Rho-associated protein kinase (EC 2.7.11.1)	w
+RHO-ASSOCIATED	fly	FBgn0026181	Rok	Q9VXE3	290	1474	Rho-associated protein kinase (EC 2.7.11.1)	w
 RHO-ASSOCIATED	human	O75116	ROCK2	O75116	92	489	Rho-associated protein kinase 2 (EC 2.7.11.39) (Rho kinase 2	w
 RHO-ASSOCIATED	human	Q13464	ROCK1	Q13464	360	1585	Rho-associated protein kinase 1 (EC 2.7.11.39) (Renal carcin	w
 RHO-ASSOCIATED	worm	P92199	let-502	P92199	5	37	Rho-associated protein kinase let-502 (EC 2.7.11.1) (Lethal 	w
@@ -71,7 +71,7 @@ RHO-PA	fly	FBgn0004635	rho	P20350	7	64
 RHO-PA_195_326	fly	FBgn0004635	rho	P20350	7	64		
 RHO-PA_94_331	fly	FBgn0004635	rho	P20350	7	64		
 RHO-PA_99_316	fly	FBgn0004635	rho	P20350	7	64		
-RHO-RELATED	fly	FBgn0036980	RhoBTB	M9PG08	4	17	Rho-related BTB domain containing, isoform B	w
+RHO-RELATED	fly	FBgn0036980	RhoBTB	M9PG08	7	22	Rho-related BTB domain containing, isoform B	w
 RHO-RELATED	human	O00212	RHOD	O00212	143	779	Rho-related GTP-binding protein RhoD (EC 3.6.5.2) (Rho-relat	w
 RHO-RELATED	human	O94844	RHOBTB1	O94844	42	376	Rho-related BTB domain-containing protein 1 (EC 3.6.5.2)	w
 RHO-RELATED	human	O94955	RHOBTB3	O94955	29	303	Rho-related BTB domain-containing protein 3 (EC 3.6.1.-)	w
@@ -110,7 +110,7 @@ RHO-RELATED	zebrafish	Q803F2	rhogb	Q803F2	19	86	Rho-related GTP-binding protein 
 RHO-RELATED	zebrafish	Q803L7	rhogc	Q803L7	17	49	Rho-related GTP-binding protein RhoG	w
 RHO-SPECIFIC	human	Q6ZSZ5	ARHGEF18	Q6ZSZ5	35	86	Rho guanine nucleotide exchange factor 18 (114 kDa Rho-speci	w
 RHO-SPECIFIC	human	Q96PE2	ARHGEF17	Q96PE2	26	157	Rho guanine nucleotide exchange factor 17 (164 kDa Rho-speci	w
-RHO-TYPE	fly	FBgn0015803	RtGEF	A8DZ19	10	65	Rho-type guanine nucleotide exchange factor, isoform F (Rho-	w
+RHO-TYPE	fly	FBgn0015803	RtGEF	A8DZ19	11	72	Rho-type guanine nucleotide exchange factor, isoform F (Rho-	w
 RHO-TYPE	human	A1A4S6	ARHGAP10	A1A4S6	46	178	Rho GTPase-activating protein 10 (GTPase regulator associate	w
 RHO-TYPE	human	A6NI28	ARHGAP42	A6NI28	32	146	Rho GTPase-activating protein 42 (Rho GTPase-activating prot	w
 RHO-TYPE	human	O14559	ARHGAP33	O14559	6	32	Rho GTPase-activating protein 33 (Rho-type GTPase-activating	w
@@ -204,7 +204,7 @@ RHOB	human	P62745	RHOB	P62745	245	1308	Rho-related GTP-binding protein RhoB (EC 
 RHOB	human	Q8IUC4	RHPN2	Q8IUC4	14	84	Rhophilin-2 (76 kDa RhoB effector protein) (GTP-Rho-binding 	w
 RHOB	mus-musculus	P62746	Rhob	P62746	25	78	Rho-related GTP-binding protein RhoB	
 RHOB	rattus-norvegicus	P62747	Rhob	P62747	32	91	Rho-related GTP-binding protein RhoB	
-RHOBTB	fly	FBgn0036980	RhoBTB	M9PG08	4	17	Rho-related BTB domain containing, isoform B	
+RHOBTB	fly	FBgn0036980	RhoBTB	M9PG08	7	22	Rho-related BTB domain containing, isoform B	
 RHOBTB1	human	O94844	RHOBTB1	O94844	42	376	Rho-related BTB domain-containing protein 1 (EC 3.6.5.2)	
 RHOBTB1	mus-musculus	Q9DAK3	Rhobtb1	Q9DAK3	2	40	Rho-related BTB domain-containing protein 1	
 RHOBTB1	rattus-norvegicus	A0A0G2JWZ1	Rhobtb1	A0A0G2JWZ1	3	50	Rho-related BTB domain containing 1	
@@ -279,32 +279,32 @@ RHOGAP	zebrafish	B0R0B4	si:dkey-91m11.5	B0R0B4	0	1	PH_BCR_vertebrate and RhoGAP_
 RHOGAP-100F	fly	FBgn0039883	RhoGAP100F	Q9V9S7	4	10	Rho GTPase-activating protein 100F (RhoGAP-100F) (Synapse de	w
 RHOGAP1	human	Q07960	ARHGAP1	Q07960	23	236		
 RHOGAP100F	fly	FBgn0039883	RhoGAP100F	Q9V9S7	4	10	Rho GTPase-activating protein 100F (RhoGAP-100F) (Synapse de	
-RHOGAP102A	fly	FBgn0259216	RhoGAP102A	H9XVN1	0	0	Rho GTPase activating protein at 102A, isoform D	
+RHOGAP102A	fly	FBgn0259216	RhoGAP102A	H9XVN1	0	1	Rho GTPase activating protein at 102A, isoform D	
 RHOGAP15B	fly	FBgn0030808	RhoGAP15B	Q9VX92	1	5	Rho GTPase activating protein at 15B, isoform C	
 RHOGAP16F	fly	FBgn0030893	RhoGAP16F	X2JCF3	2	4	Rho GTPase activating protein at 16F, isoform E	
-RHOGAP18B	fly	FBgn0261461	RhoGAP18B	Q9VWL7	14	53	Rho GTPase activating protein at 18B, isoform C	
-RHOGAP18B_209	fly	FBgn0261461	RhoGAP18B	Q9VWL7	14	53		
-RHOGAP18B_211	fly	FBgn0261461	RhoGAP18B	Q9VWL7	14	53		
+RHOGAP18B	fly	FBgn0261461	RhoGAP18B	Q9VWL7	18	59	Rho GTPase activating protein at 18B, isoform C	
+RHOGAP18B_209	fly	FBgn0261461	RhoGAP18B	Q9VWL7	18	59		
+RHOGAP18B_211	fly	FBgn0261461	RhoGAP18B	Q9VWL7	18	59		
 RHOGAP19D	fly	FBgn0031118	RhoGAP19D	X2JEI9	1	6	Rho GTPase activating protein at 19D, isoform D	
 RHOGAP1A	fly	FBgn0025836	RhoGAP1A	X2JC00	0	7	Rho GTPase activating protein at 1A, isoform E	
 RHOGAP2	human	Q7Z5H3	ARHGAP22	Q7Z5H3	42	153		
 RHOGAP4	human	P98171	ARHGAP4	P98171	34	198		
 RHOGAP5	human	Q13017	ARHGAP5	Q13017	30	93		
-RHOGAP54D	fly	FBgn0034249	RhoGAP54D	A1ZAW3	1	13	FI17823p1 (Rho GTPase activating protein at 54D, isoform A) 	
-RHOGAP54D_769	fly	FBgn0034249	RhoGAP54D	A1ZAW3	1	13		
-RHOGAP5A	fly	FBgn0029778	RhoGAP5A	Q9W4A9	1	33	Rho GTPase activating protein at 5A, isoform A	
+RHOGAP54D	fly	FBgn0034249	RhoGAP54D	A1ZAW3	6	24	FI17823p1 (Rho GTPase activating protein at 54D, isoform A) 	
+RHOGAP54D_769	fly	FBgn0034249	RhoGAP54D	A1ZAW3	6	24		
+RHOGAP5A	fly	FBgn0029778	RhoGAP5A	Q9W4A9	1	34	Rho GTPase activating protein at 5A, isoform A	
 RHOGAP6	human	O43182	ARHGAP6	O43182	24	112		
-RHOGAP68F	fly	FBgn0036257	RhoGAP68F	Q9VTU3	14	77	Rho GTPase-activating protein 68F	
+RHOGAP68F	fly	FBgn0036257	RhoGAP68F	Q9VTU3	15	82	Rho GTPase-activating protein 68F	
 RHOGAP71E	fly	FBgn0036518	RhoGAP71E	B7Z058	0	1	Rho GTPase activating protein at 71E, isoform D	
-RHOGAP92B	fly	FBgn0038747	RhoGAP92B	Q9VDS5	4	45	Rho GTPase-activating protein 92B	
-RHOGAP92B_601	fly	FBgn0038747	RhoGAP92B	Q9VDS5	4	45		
-RHOGAP92B_603	fly	FBgn0038747	RhoGAP92B	Q9VDS5	4	45		
-RHOGAP93B	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28	FI04035p (Rho GTPase activating protein at 93B)	
-RHOGAP93B_238	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28		
-RHOGAP93B_348	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28		
-RHOGAP93B_562	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28		
-RHOGAPP190	fly	FBgn0026375	RhoGAPp190	M9PHV3	4	24	Rho GTPase activating protein p190, isoform F	
-RHOGAPP190_1050	fly	FBgn0026375	RhoGAPp190	M9PHV3	4	24		
+RHOGAP92B	fly	FBgn0038747	RhoGAP92B	Q9VDS5	13	64	Rho GTPase-activating protein 92B	
+RHOGAP92B_601	fly	FBgn0038747	RhoGAP92B	Q9VDS5	13	64		
+RHOGAP92B_603	fly	FBgn0038747	RhoGAP92B	Q9VDS5	13	64		
+RHOGAP93B	fly	FBgn0038853	RhoGAP93B	Q9VDE9	16	44	FI04035p (Rho GTPase activating protein at 93B)	
+RHOGAP93B_238	fly	FBgn0038853	RhoGAP93B	Q9VDE9	16	44		
+RHOGAP93B_348	fly	FBgn0038853	RhoGAP93B	Q9VDE9	16	44		
+RHOGAP93B_562	fly	FBgn0038853	RhoGAP93B	Q9VDE9	16	44		
+RHOGAPP190	fly	FBgn0026375	RhoGAPp190	M9PHV3	7	35	Rho GTPase activating protein p190, isoform F	
+RHOGAPP190_1050	fly	FBgn0026375	RhoGAPp190	M9PHV3	7	35		
 RHOGAPX-1	human	O43182	ARHGAP6	O43182	24	112	Rho GTPase-activating protein 6 (Rho-type GTPase-activating 	w
 RHOGB	zebrafish	Q803F2	rhogb	Q803F2	19	86	Rho-related GTP-binding protein RhoG	
 RHOGC	zebrafish	Q803L7	rhogc	Q803L7	17	49	Rho-related GTP-binding protein RhoG	
@@ -327,17 +327,17 @@ RHOGEF	zebrafish	A0A8M9QLY3	fgd5a	A0A8M9QLY3	2	8	FYVE, RhoGEF and PH domain-cont
 RHOGEF	zebrafish	A5WUN5	abr	A5WUN5	0	1	ABR activator of RhoGEF and GTPase	w
 RHOGEF	zebrafish	F1Q9E9	bcr	F1Q9E9	1	3	BCR activator of RhoGEF and GTPase	w
 RHOGEF	zebrafish	Q5RH33	fgd6	Q5RH33	0	8	FYVE, RhoGEF and PH domain-containing 6	w
-RHOGEF2	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18	Rho guanine nucleotide exchange factor 2, isoform D (Rho gua	
-RHOGEF2_114	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18		
-RHOGEF2_1261	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18		
-RHOGEF2_1887	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18		
-RHOGEF2_345	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18		
-RHOGEF2_371	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18		
-RHOGEF2_800	fly	FBgn0023172	RhoGEF2	A1ZAN6	6	18		
+RHOGEF2	fly	FBgn0023172	RhoGEF2	A1ZAN6	19	41	Rho guanine nucleotide exchange factor 2, isoform D (Rho gua	
+RHOGEF2_114	fly	FBgn0023172	RhoGEF2	A1ZAN6	19	41		
+RHOGEF2_1261	fly	FBgn0023172	RhoGEF2	A1ZAN6	19	41		
+RHOGEF2_1887	fly	FBgn0023172	RhoGEF2	A1ZAN6	19	41		
+RHOGEF2_345	fly	FBgn0023172	RhoGEF2	A1ZAN6	19	41		
+RHOGEF2_371	fly	FBgn0023172	RhoGEF2	A1ZAN6	19	41		
+RHOGEF2_800	fly	FBgn0023172	RhoGEF2	A1ZAN6	19	41		
 RHOGEF3	fly	FBgn0264707	RhoGEF3	Q9W0S2	0	1	Rho guanine nucleotide exchange factor 3, isoform L	
 RHOGEF4	fly	FBgn0035761	RhoGEF4	Q9VS45	1	7	LD03170p (Rho guanine nucleotide exchange factor 4)	
-RHOGEF64C	fly	FBgn0035574	RhoGEF64C	Q9VZ85	4	20	Rho guanine nucleotide exchange factor at 64C, isoform A (Rh	
-RHOGEF64C_15	fly	FBgn0035574	RhoGEF64C	Q9VZ85	4	20		
+RHOGEF64C	fly	FBgn0035574	RhoGEF64C	Q9VZ85	6	29	Rho guanine nucleotide exchange factor at 64C, isoform A (Rh	
+RHOGEF64C_15	fly	FBgn0035574	RhoGEF64C	Q9VZ85	6	29		
 RHOG_HUMAN	human	P84095	RHOG	P84095	191	1108		
 RHOH	human	Q15669	RHOH	Q15669	188	696	Rho-related GTP-binding protein RhoH (EC 3.6.5.2) (GTP-bindi	
 RHOH	mus-musculus	Q9D3G9	Rhoh	Q9D3G9	10	45	Rho-related GTP-binding protein RhoH	

@@ -1,11 +1,11 @@
 FOR	cladophialophora-carrionii	A0A1C1CX29	for	A0A1C1CX29	0	21	Serine hydroxymethyltransferase	
-FOR	fly	FBgn0000721	for	Q03043	122	1118	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	
+FOR	fly	FBgn0000721	for	Q03043	134	1257	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	
 FOR	human	Q9NZC7	WWOX	Q9NZC7	58	807		
 FOR1	oryza-sativa-subsp-japonica	Q8GT95	FOR1	Q8GT95	0	2	Polygalacturonase inhibitor 1	
 FOR20	human	Q96NB1	CEP20	Q96NB1	4	47		
 FOR3	schizosaccharomyces-pombe	O94532	for3	O94532	0	15	Formin-3	
 FORA	dictyostelium-discoideum	Q54WH2	forA	Q54WH2	1	1	Formin-A	
-FORAGING	fly	FBgn0000721	for	Q03043	122	1118	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	w
+FORAGING	fly	FBgn0000721	for	Q03043	134	1257	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	w
 FORB	dictyostelium-discoideum	Q54SP2	forB	Q54SP2	1	5	Formin-B	
 FORC	dictyostelium-discoideum	Q54KF1	forC	Q54KF1	0	5	Formin-C	
 FORCE	human	Q6WRI0	IGSF10	Q6WRI0	2	46	Immunoglobulin superfamily member 10 (IgSF10) (Calvaria mech	w
@@ -18,7 +18,7 @@ FORH	dictyostelium-discoideum	Q54N00	forH	Q54N00	1	7	Formin-H
 FORI	dictyostelium-discoideum	Q54PI9	forI	Q54PI9	0	1	Formin-I	
 FORK	fly	FBgn0000659	fkh	A0A0B4KHC0	108	441	Fork head, isoform C	w
 FORK	fly	FBgn0003430	slp1	P32030	47	409	Fork head domain transcription factor slp1 (Sloppy paired lo	w
-FORK	fly	FBgn0004567	slp2	P32031	89	414	Fork head domain transcription factor slp2 (Sloppy paired lo	w
+FORK	fly	FBgn0004567	slp2	P32031	90	414	Fork head domain transcription factor slp2 (Sloppy paired lo	w
 FORK	fly	FBgn0004895	FoxL1	Q02360	68	396	Fork head domain-containing protein L1	w
 FORK	fly	FBgn0004896	fd59A	Q02361	69	417	Fork head domain-containing protein FD3	w
 FORK	fly	FBgn0004897	fd96Ca	P32028	65	374	Fork head domain-containing protein FD4	w
@@ -39,13 +39,13 @@ FORK-HEAD	worm	Q18419	C34B4.2	Q18419	0	1	Fork-head domain-containing protein	w
 FORK-HEAD	worm	Q22826	CELE_T27A8.2	Q22826	2	22	Fork-head domain-containing protein	w
 FORK-HEAD	worm	Q86MF0	fkh-7	Q86MF0	0	29	Fork-head domain-containing protein	w
 FORKED	fly	FBgn0003559	su(f)	P25991	6	52	Protein suppressor of forked	w
-FORKED	fly	FBgn0030090	fend	Q9GNL3	273	2376	Transmembrane protein fend (Protein forked end)	w
+FORKED	fly	FBgn0030090	fend	Q9GNL3	273	2387	Transmembrane protein fend (Protein forked end)	w
 FORKED	fly	FBgn0262111	f	Q0KHR2	1	8	Forked, isoform F	w
 FORKED	worm	Q19866	suf-1	Q19866	5	51	Suppressor of forked domain-containing protein	w
 FORKED	worm	Q22961	prp-39	Q22961	0	47	Suppressor of forked domain-containing protein	w
 FORKHEAD	fly	FBgn0031086	fd19B	Q9W5X5	31	394	Forkhead domain 19B	w
 FORKHEAD	fly	FBgn0036134	FoxK	M9PF47	102	368	Forkhead box K, isoform N	w
-FORKHEAD	fly	FBgn0038197	foxo	A0A0B4KGN1	147	652	Forkhead box protein O	w
+FORKHEAD	fly	FBgn0038197	foxo	A0A0B4KGN1	149	652	Forkhead box protein O	w
 FORKHEAD	fly	FBgn0039937	fd102C	Q9V481	72	373	Forkhead domain 102C (IP01059p)	w
 FORKHEAD	fly	FBgn0045759	bin	Q9VS05	83	421	Forkhead box protein biniou (Forkhead box protein FoxF) (DmF	w
 FORKHEAD	fly	FBgn0262477	FoxP	A0A0B4K6N2	73	403	Forkhead box P, isoform C	w
@@ -183,10 +183,10 @@ FORKHEAD-RELATED	human	Q99958	FOXC2	Q99958	102	453	Forkhead box protein C2 (Fork
 FORKHEAD-RELATED	worm	Q19802	fkh-5	Q19802	0	11	Putative forkhead-related transcription factor fkh-5	w
 FORM	fly	FBgn0000542	ec	Q1W9P9	6	10	Echinus splice form 3 (Echinus, isoform C)	w
 FORM	fly	FBgn0003149	Prm	P35415	10	172	Paramyosin, long form	w
-FORM	fly	FBgn0004859	ci	P19538	128	514	Transcriptional activator cubitus interruptus (Transcription	w
-FORM	fly	FBgn0027570	Nep2	A0A0B4K692	364	2596	Neprilysin-2 (EC 3.4.24.11) [Cleaved into: Neprilysin-2, sol	w
-FORM	fly	FBgn0027621	Pfrx	Q9VWH7	7	84	6-phosphofructo 2-kinase/fructose 2,6-bisphosphatase long fo	w
-FORM	fly	FBgn0033483	egr	Q8MUJ1	401	2718	Protein eiger [Cleaved into: Protein eiger, membrane form; P	w
+FORM	fly	FBgn0004859	ci	P19538	128	515	Transcriptional activator cubitus interruptus (Transcription	w
+FORM	fly	FBgn0027570	Nep2	A0A0B4K692	365	2601	Neprilysin-2 (EC 3.4.24.11) [Cleaved into: Neprilysin-2, sol	w
+FORM	fly	FBgn0027621	Pfrx	Q9VWH7	7	87	6-phosphofructo 2-kinase/fructose 2,6-bisphosphatase long fo	w
+FORM	fly	FBgn0033483	egr	Q8MUJ1	404	2725	Protein eiger [Cleaved into: Protein eiger, membrane form; P	w
 FORM	fly	FBgn0039044	p53	Q8IMZ4	82	635	p53 protein long form variant 1 (p53, isoform B)	w
 FORM	human	A4D1B5	GSAP	A4D1B5	4	36	Gamma-secretase-activating protein (GSAP) (Protein pigeon ho	w
 FORM	human	E9PAV3	NACA	E9PAV3	46	301	Nascent polypeptide-associated complex subunit alpha, muscle	w
@@ -252,7 +252,7 @@ FORM	human	Q9UPZ6	THSD7A	Q9UPZ6	7	55	Thrombospondin type-1 domain-containing pro
 FORM	human	Q9Y287	ITM2B	Q9Y287	43	251	Integral membrane protein 2B (Immature BRI2) (imBRI2) (Prote	w
 FORM3	fly	FBgn0053556	form3	A8JNM1	0	0	Formin 3, isoform B	
 FORMACTIN-2	human	Q2V2M9	FHOD3	Q2V2M9	9	87	FH1/FH2 domain-containing protein 3 (Formactin-2) (Formin ho	w
-FORMALDEHYDE	fly	FBgn0011768	Fdh	P46415	1	71	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
+FORMALDEHYDE	fly	FBgn0011768	Fdh	P46415	1	80	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
 FORMALDEHYDE-FORMING	worm	Q8WSW2	C15B12.8	Q8WSW2	0	2	sarcosine oxidasee (formaldehyde-forming)	w
 FORMAMIDASE	fly	FBgn0287695	Kfase	Q9VMC9	4	46	Kynurenine formamidase (KFA) (KFase) (EC 3.5.1.9) (Arylforma	w
 FORMAMIDASE	human	Q63HM1	AFMID	Q63HM1	2	74	Kynurenine formamidase (KFA) (KFase) (EC 3.5.1.9) (Arylforma	w
@@ -310,8 +310,8 @@ FORMIMINOTRANSFERASE	zebrafish	A0AB32U0I8	ftcdnl1	A0AB32U0I8	0	1	Formiminotransf
 FORMIMINOTRANSFERASE-CYCLODEAMINASE	human	E5RQL4	FTCDNL1	E5RQL4	1	11	Formiminotransferase N-terminal subdomain-containing protein	w
 FORMIMINOTRANSFERASE-CYCLODEAMINASE	human	O95954	FTCD	O95954	2	54	Formimidoyltransferase-cyclodeaminase (Formiminotransferase-	w
 FORMIN	fly	FBgn0053556	form3	A8JNM1	0	0	Formin 3, isoform B	w
-FORMIN	fly	FBgn0266084	Fhos	E1JI78	1	8	Formin homology 2 domain containing, isoform I (Formin homol	w
-FORMIN	fly	FBgn0267795	Frl	Q9VUC6	28	168	Formin-like protein (Formin related in leukocytes)	w
+FORMIN	fly	FBgn0266084	Fhos	E1JI78	1	13	Formin homology 2 domain containing, isoform I (Formin homol	w
+FORMIN	fly	FBgn0267795	Frl	Q9VUC6	30	173	Formin-like protein (Formin related in leukocytes)	w
 FORMIN	human	O95466	FMNL1	O95466	51	227	Formin-like protein 1 (CLL-associated antigen KW-13) (Leukoc	w
 FORMIN	human	Q2V2M9	FHOD3	Q2V2M9	9	87	FH1/FH2 domain-containing protein 3 (Formactin-2) (Formin ho	w
 FORMIN	human	Q8IVF7	FMNL3	Q8IVF7	45	210	Formin-like protein 3 (Formin homology 2 domain-containing p	w
@@ -338,7 +338,7 @@ FORMIN-BINDING	human	Q96RU3	FNBP1	Q96RU3	49	215	Formin-binding protein 1 (Formin
 FORMIN-BINDING	zebrafish	B0UXI0	fnbp1a	B0UXI0	2	27	Formin-binding protein 1a	w
 FORMIN-BINDING	zebrafish	F1QGN0	fnbp4	F1QGN0	4	49	Formin-binding protein 4	w
 FORMIN-HOMOLOGY	worm	P34489	fozi-1	P34489	0	48	Formin-homology and zinc finger domains protein 1	w
-FORMIN-LIKE	fly	FBgn0267795	Frl	Q9VUC6	28	168	Formin-like protein (Formin related in leukocytes)	w
+FORMIN-LIKE	fly	FBgn0267795	Frl	Q9VUC6	30	173	Formin-like protein (Formin related in leukocytes)	w
 FORMIN-LIKE	human	O95466	FMNL1	O95466	51	227	Formin-like protein 1 (CLL-associated antigen KW-13) (Leukoc	w
 FORMIN-LIKE	human	Q8IVF7	FMNL3	Q8IVF7	45	210	Formin-like protein 3 (Formin homology 2 domain-containing p	w
 FORMIN-LIKE	human	Q96PY5	FMNL2	Q96PY5	39	198	Formin-like protein 2 (Formin homology 2 domain-containing p	w
@@ -347,10 +347,10 @@ FORMIN-LIKE	zebrafish	I3ITQ8	fmnl1a	I3ITQ8	14	24	Formin-like 1a	w
 FORMIN-LIKE	zebrafish	Q6NXC0	fmnl3	Q6NXC0	18	25	Formin-like protein 3	w
 FORMING	yeast	P22204	DBF2	P22204	12	113	Cell cycle protein kinase DBF2 (EC 2.7.11.1) (Dumbbell formi	w
 FORMING	yeast	P40580	IRC24	P40580	0	5	Benzil reductase ((S)-benzoin forming) IRC24	w
-FORMS	fly	FBgn0000721	for	Q03043	122	1118	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	w
+FORMS	fly	FBgn0000721	for	Q03043	134	1257	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	w
 FORMYL	human	P25089	FPR3	P25089	24	137	N-formyl peptide receptor 3 (FMLP-related receptor II) (FMLP	w
 FORMYL	human	P25090	FPR2	P25090	41	321	N-formyl peptide receptor 2 (FMLP-related receptor I) (FMLP-	w
-FORMYLGLYCINAMIDE	fly	FBgn0000052	Pfas	P35421	1	72	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
+FORMYLGLYCINAMIDE	fly	FBgn0000052	Pfas	P35421	2	76	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
 FORMYLGLYCINAMIDE	human	O15067	PFAS	O15067	5	165	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
 FORMYLGLYCINE-GENERATING	human	Q8NBJ7	SUMF2	Q8NBJ7	5	70	Inactive C-alpha-formylglycine-generating enzyme 2 (Paralog 	w
 FORMYLGLYCINE-GENERATING	human	Q8NBK3	SUMF1	Q8NBK3	11	83	Formylglycine-generating enzyme (FGE) (EC 1.8.3.7) (C-alpha-	w
@@ -373,4 +373,4 @@ FORMYLTRANSFERASE	yeast	P32785	FMT1	P32785	1	9	Methionyl-tRNA formyltransferase,
 FORSSMAN	human	Q8N5D6	GBGT1	Q8N5D6	3	71	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1 (EC 	w
 FORTILIN	human	P13693	TPT1	P13693	35	383	Translationally-controlled tumor protein (TCTP) (Fortilin) (	w
 FORTY-TWO-THREE	human	Q96QD9	FYTTD1	Q96QD9	40	230	UAP56-interacting factor (Forty-two-three domain-containing 	w
-FOR_934	fly	FBgn0000721	for	Q03043	122	1118		
+FOR_934	fly	FBgn0000721	for	Q03043	134	1257		

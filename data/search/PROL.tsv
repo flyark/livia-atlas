@@ -33,7 +33,7 @@ PROLIFERATING	worm	O02115	pcn-1	O02115	29	110	Proliferating cell nuclear antigen
 PROLIFERATING	yeast	P15873	POL30	P15873	22	102	Proliferating cell nuclear antigen	w
 PROLIFERATING	zebrafish	Q9PTP1	pcna	Q9PTP1	41	211	Proliferating cell nuclear antigen	w
 PROLIFERATING-CELL	human	P46087	NOP2	P46087	81	469	28S rRNA (cytosine(4447)-C(5))-methyltransferase (EC 2.1.1.-	w
-PROLIFERATION	fly	FBgn0015929	dpa	Q26454	6	66	DNA replication licensing factor MCM4 (EC 3.6.4.12) (Protein	w
+PROLIFERATION	fly	FBgn0015929	dpa	Q26454	9	78	DNA replication licensing factor MCM4 (EC 3.6.4.12) (Protein	w
 PROLIFERATION	human	P46013	MKI67	P46013	29	176	Proliferation marker protein Ki-67 (Antigen identified by mo	w
 PROLIFERATION	human	P56277	CMC4	P56277	14	83	Cx9C motif-containing protein 4 (Mature T-cell proliferation	w
 PROLIFERATION	human	Q14137	BOP1	Q14137	55	583	Ribosome biogenesis protein BOP1 (Block of proliferation 1 p	w
@@ -143,8 +143,8 @@ PROLINE-	human	Q8IZL8	PELP1	Q8IZL8	51	248	Proline-, glutamic acid- and leucine-r
 PROLINE-	human	Q8WV24	PHLDA1	Q8WV24	10	105	Pleckstrin homology-like domain family A member 1 (Apoptosis	w
 PROLINE-	zebrafish	A0A8M1PEX4	sfpq	A0A8M1PEX4	2	13	Splicing factor, proline- and glutamine-rich	w
 PROLINE-	zebrafish	F1RE30	pelp1	F1RE30	6	33	Proline-, glutamic acid- and leucine-rich protein 1	w
-PROLINE--TRNA	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
-PROLINE--TRNA	fly	FBgn0027082	ProRS-m	Q9VZY9	1	42	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
+PROLINE--TRNA	fly	FBgn0005674	GluProRS	P28668	9	107	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+PROLINE--TRNA	fly	FBgn0027082	ProRS-m	Q9VZY9	1	43	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
 PROLINE--TRNA	human	P07814	EPRS1	P07814	17	439	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 PROLINE--TRNA	human	Q7L3T8	PARS2	Q7L3T8	11	114	Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (	w
 PROLINE--TRNA	worm	O45869	pars-2	O45869	2	34	Probable proline--tRNA ligase, mitochondrial	w
@@ -157,7 +157,7 @@ PROLINE-ENRICHED	human	Q32P28	P3H1	Q32P28	30	203	Prolyl 3-hydroxylase 1 (EC 1.14
 PROLINE-GLUTAMATE	human	O94885	SASH1	O94885	72	186	SAM and SH3 domain-containing protein 1 (Proline-glutamate r	w
 PROLINE-RIC	human	Q7Z5R6	APBB1IP	Q7Z5R6	34	189	Amyloid beta A4 precursor protein-binding family B member 1-	w
 PROLINE-RICH	fly	FBgn0031617	CG15635	Q9VR13	37	196	Basic proline-rich protein-like	w
-PROLINE-RICH	fly	FBgn0035793	CG7546	B7Z0D3	9	34	Large proline-rich protein BAG6 (BCL2-associated athanogene 	w
+PROLINE-RICH	fly	FBgn0035793	CG7546	B7Z0D3	10	37	Large proline-rich protein BAG6 (BCL2-associated athanogene 	w
 PROLINE-RICH	fly	FBgn0036717	CG13731	Q9VVG2	14	263	Proline-rich extensin-like protein EPR1	w
 PROLINE-RICH	fly	FBgn0083961	CG34125	Q0E8T6	1	36	DAZ-associated protein 2 (Deleted in azoospermia-associated 	w
 PROLINE-RICH	fly	FBgn0267824	PRAS40	Q7JXA2	4	23	LOBE (Proline-rich Akt substrate 40 kDa) (RE53130p)	w
@@ -301,7 +301,7 @@ PROLINE-SERINE-THREONINE	zebrafish	Q1LX61	pstpip1a	Q1LX61	5	39	Proline-serine-th
 PROLINE-SPECIFIC	yeast	P15380	PUT4	P15380	0	6	Proline-specific permease	w
 PROLONGED	fly	FBgn0038966	pinta	Q9VD09	1	4	Retinol-binding protein pinta (Prolonged depolarization afte	w
 PROLYL	fly	FBgn0032242	CG5355	Q9VKW5	13	165	Prolyl endopeptidase (EC 3.4.21.-)	w
-PROLYL	fly	FBgn0032969	CG2528	Q9V9P5	0	1	Prolyl endopeptidase (EC 3.4.21.-)	w
+PROLYL	fly	FBgn0032969	CG2528	Q9V9P5	0	4	Prolyl endopeptidase (EC 3.4.21.-)	w
 PROLYL	fly	FBgn0036796	CG18231	Q9VVQ7	26	53	Prolyl 4-hydroxylase alpha subunit domain-containing protein	w
 PROLYL	fly	FBgn0039616	CG11828	Q9VAR7	22	52	Prolyl 4-hydroxylase alpha subunit domain-containing protein	w
 PROLYL	fly	FBgn0051021	CG31021	Q8IMH8	25	106	Prolyl 4-hydroxylase alpha-subunit N-terminal domain-contain	w
@@ -334,7 +334,7 @@ PROLYL	zebrafish	B8JJX2	prepl	B8JJX2	0	2	Prolyl endopeptidase	w
 PROLYL	zebrafish	F1QTC6	ogfod1	F1QTC6	3	19	Prolyl 3-hydroxylase OGFOD1	w
 PROLYL	zebrafish	Q503E2	prep	Q503E2	0	2	Prolyl endopeptidase	w
 PROLYL	zebrafish	X1WG80	p4htmb	X1WG80	0	9	Transmembrane prolyl 4-hydroxylase	w
-PROLYL-TRNA	fly	FBgn0027082	ProRS-m	Q9VZY9	1	42	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
+PROLYL-TRNA	fly	FBgn0027082	ProRS-m	Q9VZY9	1	43	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
 PROLYL-TRNA	human	A6NEY8	PRORSD1P	A6NEY8	8	39	Putative prolyl-tRNA synthetase associated domain-containing	w
 PROLYL-TRNA	human	Q7L3T8	PARS2	Q7L3T8	11	114	Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (	w
 PROLYLCARBOXYPEPTIDASE	human	P42785	PRCP	P42785	10	78	Lysosomal Pro-X carboxypeptidase (EC 3.4.16.2) (Angiotensina	w

@@ -31,11 +31,11 @@ TETRA-PEPTIDE	human	Q8N7U7	TPRX1	Q8N7U7	62	350	Tetra-peptide repeat homeobox pro
 TETRACYCLINE	fly	FBgn0028468	rtet	Q9V395	0	11	BcDNA.LD28419 (Tetracycline resistance)	w
 TETRACYCLINE	human	Q14728	SLC75A1	Q14728	3	92	Solute carrier family 75 member 1 (Major facilitator superfa	w
 TETRACYCLINE	human	Q96MC6	SLC71A1	Q96MC6	0	45	Solute carrier family 71 member 1 (Hippocampus abundant tran	w
-TETRAHYDROBIOPTERIN	fly	FBgn0003141	pr	P48611	1	64	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
+TETRAHYDROBIOPTERIN	fly	FBgn0003141	pr	P48611	3	72	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
 TETRAHYDROBIOPTERIN	human	Q03393	PTS	Q03393	1	130	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
 TETRAHYDROBIOPTERIN	worm	O02058	ptps-1	O02058	1	10	Putative 6-pyruvoyl tetrahydrobiopterin synthase	w
 TETRAHYDROFOLATE	human	Q05932	FPGS	Q05932	5	74	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
-TETRAHYDROFOLYLPOLYGLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
+TETRAHYDROFOLYLPOLYGLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	1	15	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
 TETRAHYDROFOLYLPOLYGLUTAMATE	human	Q05932	FPGS	Q05932	5	74	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
 TETRAKISPHOSPHATE	human	Q15735	INPP5J	Q15735	2	80	Phosphatidylinositol 4,5-bisphosphate 5-phosphatase A (EC 3.	w
 TETRAKISPHOSPHATE	human	Q8NFU5	IPMK	Q8NFU5	5	69	Inositol polyphosphate multikinase (EC 2.7.1.140) (EC 2.7.1.	w
@@ -61,7 +61,7 @@ TETRAPHOSPHATASE	fly	FBgn0287788	Datp	Q4V6M1	0	10	Diadenosine tetraphosphatase	w
 TETRAPHOSPHATASE	human	P50583	NUDT2	P50583	9	131	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	w
 TETRAPHOSPHATASE	worm	Q9U2M7	ndx-4	Q9U2M7	0	10	Bis(5'-nucleosyl)-tetraphosphatase	w
 TETRAPHOSPHATASE	zebrafish	Q6DG97	nudt2	Q6DG97	0	12	Bis(5'-nucleosyl)-tetraphosphatase	w
-TETRAPHOSPHATE	fly	FBgn0027088	GlyRS	Q9VUK8	0	70	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+TETRAPHOSPHATE	fly	FBgn0027088	GlyRS	Q9VUK8	0	73	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 TETRAPHOSPHATE	human	P41250	GARS1	P41250	6	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 TETRASPAN	fly	FBgn0262624	Tmhs	Q9W068	0	7	LP10272p (Tetraspan membrane protein in hair cell stereocili	w
 TETRASPAN	human	O14894	TM4SF5	O14894	0	135	Transmembrane 4 L6 family member 5 (Tetraspan transmembrane 	w
@@ -118,9 +118,9 @@ TETRASPANIN	fly	FBgn0036769	Tsp74F	Q7JZI2	4	140	Tetraspanin	w
 TETRASPANIN	fly	FBgn0037848	Tsp86D	A0A0B4KFQ5	2	11	Tetraspanin 86D, isoform C	w
 TETRASPANIN	fly	FBgn0039465	Tsp97E	Q9VB99	0	8	LD03691p (Tetraspanin 97E) (Tetraspanin 97E, isoform E) (Tet	w
 TETRASPANIN	fly	FBgn0040334	Tsp3A	Q9W4X6	2	4	Tetraspanin	w
-TETRASPANIN	fly	FBgn0042086	Tsp42Eb	Q7K2V7	0	3	Tetraspanin	w
+TETRASPANIN	fly	FBgn0042086	Tsp42Eb	Q7K2V7	0	9	Tetraspanin	w
 TETRASPANIN	fly	FBgn0043550	Tsp68C	Q8IQK9	0	8	Tetraspanin 68C, isoform A (Tetraspanin 68C, isoform C)	w
-TETRASPANIN	fly	FBgn0050160	CG30160	Q7K2V7	0	9	Tetraspanin	w
+TETRASPANIN	fly	FBgn0050160	CG30160	Q7K2V7	0	12	Tetraspanin	w
 TETRASPANIN	human	O43657	TSPAN6	O43657	7	168	Tetraspanin-6 (Tspan-6) (A15 homolog) (Putative NF-kappa-B-a	w
 TETRASPANIN	human	O60635	TSPAN1	O60635	4	101	Tetraspanin-1 (Tspan-1) (Tetraspan NET-1) (Tetraspanin TM4-C	w
 TETRASPANIN	human	O60637	TSPAN3	O60637	13	208	Tetraspanin-3 (Tspan-3) (Tetraspanin TM4-A) (Transmembrane 4	w
@@ -214,12 +214,12 @@ TETRATRICOPEPTIDE	fly	FBgn0020312	Tmtc3	Q7K4B6	2	17	Protein O-mannosyl-transfera
 TETRATRICOPEPTIDE	fly	FBgn0021847	Ttc7	Q7KN74	2	5	Tetratricopeptide repeat domain 7, isoform A	w
 TETRATRICOPEPTIDE	fly	FBgn0028481	Tmtc2	Q9V3X5	3	18	Protein O-mannosyl-transferase Tmtc2 (EC 2.4.1.109) (Transme	w
 TETRATRICOPEPTIDE	fly	FBgn0032470	Ttc30	Q9VK41	7	32	Tetratricopeptide repeat protein 30 homolog (TPR repeat prot	w
-TETRATRICOPEPTIDE	fly	FBgn0032586	Tpr2	Q9V3W1	6	17	Tetratricopeptide repeat protein 2 (Tetratricopeptide repeat	w
-TETRATRICOPEPTIDE	fly	FBgn0032640	Sgt	Q9VJD4	33	173	LD24721p (MIP20650p) (Small glutamine-rich tetratricopeptide	w
+TETRATRICOPEPTIDE	fly	FBgn0032586	Tpr2	Q9V3W1	6	21	Tetratricopeptide repeat protein 2 (Tetratricopeptide repeat	w
+TETRATRICOPEPTIDE	fly	FBgn0032640	Sgt	Q9VJD4	33	177	LD24721p (MIP20650p) (Small glutamine-rich tetratricopeptide	w
 TETRATRICOPEPTIDE	fly	FBgn0032744	Ttc19	Q8SYD0	12	25	Tetratricopeptide repeat protein 19 homolog, mitochondrial	w
 TETRATRICOPEPTIDE	fly	FBgn0034692	CG13502	Q9W295	4	24	Outer dynein arm-docking complex subunit 4 (Tetratricopeptid	w
 TETRATRICOPEPTIDE	fly	FBgn0036359	CG14105	Q9VU70	1	3	Tetratricopeptide repeat protein 36 homolog (TPR repeat prot	w
-TETRATRICOPEPTIDE	fly	FBgn0037855	CG6621	Q9VGU5	1	7	Tetratricopeptide repeat protein 14 homolog (TPR repeat prot	w
+TETRATRICOPEPTIDE	fly	FBgn0037855	CG6621	Q9VGU5	7	16	Tetratricopeptide repeat protein 14 homolog (TPR repeat prot	w
 TETRATRICOPEPTIDE	fly	FBgn0038324	Tmtc4	Q9VF81	3	18	Protein O-mannosyl-transferase Tmtc4 (EC 2.4.1.109) (Transme	w
 TETRATRICOPEPTIDE	fly	FBgn0038358	Ttc26	Q9VF41	4	31	GH11140p (Tetratricopeptide repeat domain 26)	w
 TETRATRICOPEPTIDE	fly	FBgn0051690	Tmtc1	Q9VQE9	2	16	Protein O-mannosyl-transferase Tmtc1 (EC 2.4.1.109) (Transme	w

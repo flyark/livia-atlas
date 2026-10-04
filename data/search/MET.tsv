@@ -75,12 +75,12 @@ MET6	candida-albicans-237561	P82610	MET6	P82610	0	8	5-methyltetrahydropteroyltri
 MET6	yeast	P05694	MET6	P05694	0	47	5-methyltetrahydropteroyltriglutamate--homocysteine methyltr	
 MET7	schizosaccharomyces-pombe	O74742	met7	O74742	0	1	Probable folylpolyglutamate synthase	
 MET7	yeast	Q08645	MET7	Q08645	0	13	Folylpolyglutamate synthase	
-MET75CA	fly	FBgn0028415	Met75Cb	Q9V449	18	76	Met75Ca (Met75Cb)	w
-MET75CA	fly	FBgn0028416	Met75Ca	Q9V449	36	225	Met75Ca (Met75Cb)	w
-MET75CA	fly	FBgn0028416	Met75Ca	Q9V449	36	225	Met75Ca (Met75Cb)	w
-MET75CB	fly	FBgn0028415	Met75Cb	Q9V449	18	76	Met75Ca (Met75Cb)	w
-MET75CB	fly	FBgn0028415	Met75Cb	Q9V449	18	76	Met75Ca (Met75Cb)	w
-MET75CB	fly	FBgn0028416	Met75Ca	Q9V449	36	225	Met75Ca (Met75Cb)	w
+MET75CA	fly	FBgn0028415	Met75Cb	Q9V449	38	263	Met75Ca (Met75Cb)	w
+MET75CA	fly	FBgn0028416	Met75Ca	Q9V449	39	264	Met75Ca (Met75Cb)	w
+MET75CA	fly	FBgn0028416	Met75Ca	Q9V449	39	264	Met75Ca (Met75Cb)	w
+MET75CB	fly	FBgn0028415	Met75Cb	Q9V449	38	263	Met75Ca (Met75Cb)	w
+MET75CB	fly	FBgn0028415	Met75Cb	Q9V449	38	263	Met75Ca (Met75Cb)	w
+MET75CB	fly	FBgn0028416	Met75Ca	Q9V449	39	264	Met75Ca (Met75Cb)	w
 MET8	yeast	P15807	MET8	P15807	0	3	Siroheme biosynthesis protein MET8	
 MET9	cladophialophora-carrionii	A0A1C1CR04	met9	A0A1C1CR04	1	2	Methylenetetrahydrofolate reductase 1	
 MET9	schizosaccharomyces-pombe	Q10258	met9	Q10258	1	1	Methylenetetrahydrofolate reductase 1	
@@ -115,8 +115,8 @@ METABOLITE	yeast	P38142	YBR241C	P38142	0	9	Probable metabolite transport protein
 METABOLITE	yeast	P43562	YFL040W	P43562	0	5	Probable metabolite transport protein YFL040W	w
 METABOLITE	yeast	Q04162	YDR387C	Q04162	0	4	Probable metabolite transport protein YDR387C	w
 METABOLITE	yeast	Q12407	YDL199C	Q12407	0	8	Putative metabolite transport protein YDL199C	w
-METABOTROPIC	fly	FBgn0019985	mGluR	P91685	7	99	Metabotropic glutamate receptor (DmGluRA)	w
-METABOTROPIC	fly	FBgn0027575	GABA-B-R2	A0A0B4LHR4	6	35	Metabotropic GABA-B receptor subtype 2, isoform C	w
+METABOTROPIC	fly	FBgn0019985	mGluR	P91685	7	100	Metabotropic glutamate receptor (DmGluRA)	w
+METABOTROPIC	fly	FBgn0027575	GABA-B-R2	A0A0B4LHR4	8	37	Metabotropic GABA-B receptor subtype 2, isoform C	w
 METABOTROPIC	fly	FBgn0031275	GABA-B-R3	Q9VPS7	10	95	Metabotropic GABA-B receptor subtype 3, isoform A (Metabotro	w
 METABOTROPIC	fly	FBgn0260446	GABA-B-R1	Q9V3Q9	6	68	IP03705p (Metabotropic GABA-B receptor subtype 1, isoform B)	w
 METABOTROPIC	human	A0A9L9PYG5	GRM8	A0A9L9PYG5	7	57	Glutamate metabotropic receptor 8	w
@@ -145,7 +145,7 @@ METACASPASE-1	yeast	Q08601	MCA1	Q08601	1	150	Metacaspase-1	w
 METADHERIN	human	Q86UE4	MTDH	Q86UE4	39	453	Protein LYRIC (3D3/LYRIC) (Astrocyte elevated gene-1 protein	w
 METADHERIN	zebrafish	A8DZ70	mtdha	A8DZ70	1	3	Metadherin a	w
 METADHERIN	zebrafish	F1QAS0	mtdhb	F1QAS0	1	3	Metadherin b	w
-METAL	fly	FBgn0040305	MTF-1	A8JNP3	45	354	Metal response element-binding transcription Factor-1, isofo	w
+METAL	fly	FBgn0040305	MTF-1	A8JNP3	48	356	Metal response element-binding transcription Factor-1, isofo	w
 METAL	fly	FBgn0052446	Atox1	M9PD88	3	5	Copper transport protein ATOX1 (Metal transport protein ATX1	w
 METAL	fly	FBgn0262124	uex	A0A0B7P9G0	5	65	Unextended protein (Putative metal transporter uex)	w
 METAL	human	O00244	ATOX1	O00244	31	280	Copper transport protein ATOX1 (Metal transport protein ATX1	w
@@ -178,7 +178,7 @@ METAL	zebrafish	F1QIW8	cnnm2b	F1QIW8	5	6	Metal transporter	w
 METAL-BINDING	human	P02787	TF	P02787	33	566	Serotransferrin (Transferrin) (Beta-1 metal-binding globulin	w
 METAL-BINDING	yeast	P35192	MAC1	P35192	0	13	Metal-binding activator 1	w
 METAL-RESPONSE	human	Q9Y483	MTF2	Q9Y483	98	567	Metal-response element-binding transcription factor 2 (Metal	w
-METALLO-BETA-LACTAMASE	fly	FBgn0031766	CG9117	Q9VMI8	0	11	Metallo-beta-lactamase domain-containing protein 1 (Endoribo	w
+METALLO-BETA-LACTAMASE	fly	FBgn0031766	CG9117	Q9VMI8	0	12	Metallo-beta-lactamase domain-containing protein 1 (Endoribo	w
 METALLO-BETA-LACTAMASE	human	A4D2B0	MBLAC1	A4D2B0	3	39	Metallo-beta-lactamase domain-containing protein 1 (EC 3.1.2	w
 METALLO-BETA-LACTAMASE	human	Q68D91	MBLAC2	Q68D91	12	118	Acyl-coenzyme A thioesterase MBLAC2 (Acyl-CoA thioesterase M	w
 METALLO-BETA-LACTAMASE	worm	H2KYX6	C23H3.9	H2KYX6	1	20	Metallo-beta-lactamase domain-containing protein	w
@@ -188,7 +188,7 @@ METALLO-BETA-LACTAMASE	worm	Q8WT45	B0432.9	Q8WT45	0	1	Metallo-beta-lactamase dom
 METALLO-BETA-LACTAMASE	zebrafish	F6NM08	pnkd	F6NM08	1	17	PNKD metallo-beta-lactamase domain-containing	w
 METALLO-ENDOPEPTIDASE-LIKE	human	Q495T6	MMEL1	Q495T6	17	56	Membrane metallo-endopeptidase-like 1 (EC 3.4.24.11) (Membra	w
 METALLO-ENDOPEPTIDASE-LIKE	zebrafish	A0A140LH71	mmel1	A0A140LH71	0	6	Membrane metallo-endopeptidase-like 1	w
-METALLOCARBOXYPEPTIDASE	fly	FBgn0004648	svr	X2J9Z1	475	2406	Carboxypeptidase D (EC 3.4.17.22) (Metallocarboxypeptidase D	w
+METALLOCARBOXYPEPTIDASE	fly	FBgn0004648	svr	X2J9Z1	382	2409	Carboxypeptidase D (EC 3.4.17.22) (Metallocarboxypeptidase D	w
 METALLOCARBOXYPEPTIDASE	human	O75976	CPD	O75976	9	233	Carboxypeptidase D (EC 3.4.17.22) (Metallocarboxypeptidase D	w
 METALLOCARBOXYPEPTIDASE	human	Q96SM3	CPXM1	Q96SM3	4	27	Probable carboxypeptidase X1 (EC 3.4.17.-) (Metallocarboxype	w
 METALLOCARBOXYPEPTIDASE	yeast	P38836	ECM14	P38836	0	11	Inactive metallocarboxypeptidase ECM14	w
@@ -304,8 +304,8 @@ METALLOPR	human	Q9NPA2	MMP25	Q9NPA2	9	83	Matrix metalloproteinase-25 (MMP-25) (E
 METALLOPRO	human	P01033	TIMP1	P01033	80	653	Metalloproteinase inhibitor 1 (Erythroid-potentiating activi	w
 METALLOPRO	human	P14780	MMP9	P14780	109	804	Matrix metalloproteinase-9 (MMP-9) (EC 3.4.24.35) (92 kDa ge	w
 METALLOPROTE	human	P50281	MMP14	P50281	19	233	Matrix metalloproteinase-14 (MMP-14) (EC 3.4.24.80) (MMP-X1)	w
-METALLOPROTEASE	fly	FBgn0028944	Semp1	Q9VJN9	27	245	Seminal metalloprotease 1 (EC 3.4.24.-)	w
-METALLOPROTEASE	fly	FBgn0033235	Mppa	Q7K3W2	22	174	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
+METALLOPROTEASE	fly	FBgn0028944	Semp1	Q9VJN9	28	247	Seminal metalloprotease 1 (EC 3.4.24.-)	w
+METALLOPROTEASE	fly	FBgn0033235	Mppa	Q7K3W2	22	179	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
 METALLOPROTEASE	fly	FBgn0034792	YME1L	F3YDF1	3	84	ATP-dependent zinc metalloprotease YME1L (EC 3.4.24.-) (YME1	w
 METALLOPROTEASE	fly	FBgn0265140	Meltrin	Q6QU65	2	37	ADAM metalloprotease (Meltrin, isoform C (EC 3.4.24.-))	w
 METALLOPROTEASE	human	A6NFA1	TRABD2B	A6NFA1	4	5	Metalloprotease TIKI2 (EC 3.4.-.-) (Heart, kidney and adipos	w
@@ -435,7 +435,7 @@ METALLOPROTEINASE-17	human	Q9ULZ9	MMP17	Q9ULZ9	5	49	Matrix metalloproteinase-17 
 METALLOPROTEINASE-18	human	Q99542	MMP19	Q99542	11	72	Matrix metalloproteinase-19 (MMP-19) (EC 3.4.24.-) (Matrix m	w
 METALLOPROTEINASE-19	human	Q99542	MMP19	Q99542	11	72	Matrix metalloproteinase-19 (MMP-19) (EC 3.4.24.-) (Matrix m	w
 METALLOPROTEINASE-19	zebrafish	A0AB32TZ88	mmp19	A0AB32TZ88	1	8	Matrix metalloproteinase-19	w
-METALLOPROTEINASE-2	fly	FBgn0033438	Mmp2	Q8MPP3	881	2635	Matrix metalloproteinase-2 (Dm2-MMP) (EC 3.4.24.-)	w
+METALLOPROTEINASE-2	fly	FBgn0033438	Mmp2	Q8MPP3	882	2640	Matrix metalloproteinase-2 (Dm2-MMP) (EC 3.4.24.-)	w
 METALLOPROTEINASE-2	human	P08253	MMP2	P08253	29	443	72 kDa type IV collagenase (EC 3.4.24.24) (72 kDa gelatinase	w
 METALLOPROTEINASE-20	human	O60882	MMP20	O60882	8	33	Matrix metalloproteinase-20 (MMP-20) (EC 3.4.24.-) (Enamel m	w
 METALLOPROTEINASE-21	human	O75900	MMP23B	O75900	11	37	Matrix metalloproteinase-23 (MMP-23) (EC 3.4.24.-) (Femalysi	w
@@ -517,7 +517,7 @@ METALLOTHIONEIN-IM	human	Q8N339	MT1M	Q8N339	12	56	Metallothionein-1M (MT-1M) (Me
 METALLOTHIONEIN-IV	human	P47944	MT4	P47944	14	37	Metallothionein-4 (MT-4) (Metallothionein-IV) (MT-IV)	w
 METALLOTHIONEIN-IX	human	P80297	MT1X	P80297	16	90	Metallothionein-1X (MT-1X) (Metallothionein-IX) (MT-IX)	w
 METALLOTHIONEIN-LIKE	human	Q9Y4I5	TESMIN	Q9Y4I5	41	380	Tesmin (Metallothionein-like 5, testis-specific) (Testis-spe	w
-METAP	fly	FBgn0283478	und	Q9VL89	17	134	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+METAP	fly	FBgn0283478	und	Q9VL89	17	138	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
 METAP	human	P50579	METAP2	P50579	95	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
 METAP	human	P53582	METAP1	P53582	52	232	Methionine aminopeptidase 1 (MAP 1) (MetAP 1) (EC 3.4.11.18)	w
 METAP	human	Q6UB28	METAP1D	Q6UB28	20	64	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	w
@@ -543,7 +543,7 @@ METAS	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GKU1	metAS	A0A0H3GKU1	1	42	Ho
 METAS	salmonella-typhimurium	P37413	metAS	P37413	0	1	Homoserine O-succinyltransferase	
 METAS	shigella-dysenteriae-serotype-1	Q328N3	metAS	Q328N3	0	1	Homoserine O-succinyltransferase	
 METASTASIN	human	P26447	S100A4	P26447	116	1165	Protein S100-A4 (Calvasculin) (Metastasin) (Placental calciu	w
-METASTASIS	fly	FBgn0027951	MTA1-like	A0A0B4KG70	30	404	Metastasis associated 1-like, isoform D	w
+METASTASIS	fly	FBgn0027951	MTA1-like	A0A0B4KG70	35	405	Metastasis associated 1-like, isoform D	w
 METASTASIS	human	O43312	MTSS1	O43312	27	171	Protein MTSS 1 (Metastasis suppressor YGL-1) (Metastasis sup	w
 METASTASIS	human	O60356	NUPR1	O60356	127	1026	Nuclear protein 1 (Candidate of metastasis 1) (Protein p8)	w
 METASTASIS	human	O75691	UTP20	O75691	18	827	Small subunit processome component 20 homolog (Down-regulate	w
@@ -678,12 +678,12 @@ METHENYLTETRAHYDROFOLATE	fly	FBgn0020385	pug	O96553	2	19	C-1-tetrahydrofolate sy
 METHENYLTETRAHYDROFOLATE	human	Q2M296	MTHFSD	Q2M296	11	54	Methenyltetrahydrofolate synthase domain-containing protein	w
 METHIONINAMIDE	human	P01282	VIP	P01282	44	403	VIP peptides [Cleaved into: Intestinal peptide PHV-42 (Pepti	w
 METHIONINE	fly	FBgn0005278	Sams	P40320	1	104	S-adenosylmethionine synthase (AdoMet synthase) (EC 2.5.1.6)	w
-METHIONINE	fly	FBgn0031043	Naa20A	M9PI14	4	32	N-alpha-acetyltransferase 20 (EC 2.3.1.254) (Methionine N-ac	w
+METHIONINE	fly	FBgn0031043	Naa20A	M9PI14	4	33	N-alpha-acetyltransferase 20 (EC 2.3.1.254) (Methionine N-ac	w
 METHIONINE	fly	FBgn0032247	CG5188	Q9VKV9	15	93	Methionine aminopeptidase (EC 3.4.11.18)	w
-METHIONINE	fly	FBgn0039219	CG13630	Q9VC48	15	98	Methionine aminopeptidase (EC 3.4.11.18)	w
+METHIONINE	fly	FBgn0039219	CG13630	Q9VC48	15	99	Methionine aminopeptidase (EC 3.4.11.18)	w
 METHIONINE	fly	FBgn0051730	CG31730	Q8IP77	3	23	N-alpha-acetyltransferase 20 (EC 2.3.1.254) (Methionine N-ac	w
 METHIONINE	fly	FBgn0051851	Naa20B	Q8IP78	2	20	N-alpha-acetyltransferase 20 (EC 2.3.1.254) (Methionine N-ac	w
-METHIONINE	fly	FBgn0283478	und	Q9VL89	17	134	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+METHIONINE	fly	FBgn0283478	und	Q9VL89	17	138	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
 METHIONINE	human	P31153	MAT2A	P31153	4	173	S-adenosylmethionine synthase isoform type-2 (AdoMet synthas	w
 METHIONINE	human	P50579	METAP2	P50579	95	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
 METHIONINE	human	P53582	METAP1	P53582	52	232	Methionine aminopeptidase 1 (MAP 1) (MetAP 1) (EC 3.4.11.18)	w
@@ -720,7 +720,7 @@ METHIONINE	zebrafish	Q4VBS4	metap1d	Q4VBS4	0	1	Methionine aminopeptidase 1D, mit
 METHIONINE	zebrafish	Q5BJJ6	mat2b	Q5BJJ6	6	204	Methionine adenosyltransferase 2 subunit beta	w
 METHIONINE	zebrafish	Q5TZ05	msraa	Q5TZ05	0	16	Mitochondrial peptide methionine sulfoxide reductase	w
 METHIONINE--TRNA	fly	FBgn0027083	MetRS-m	Q9VFL5	1	42	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Mitoch	w
-METHIONINE--TRNA	fly	FBgn0034401	MetRS	A1ZBE9	7	56	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
+METHIONINE--TRNA	fly	FBgn0034401	MetRS	A1ZBE9	7	65	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
 METHIONINE--TRNA	human	P56192	MARS1	P56192	25	377	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
 METHIONINE--TRNA	human	Q96GW9	MARS2	Q96GW9	5	149	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Methio	w
 METHIONINE--TRNA	worm	B3KYC0	CELE_Y105E8A.20	B3KYC0	0	42	Methionine--tRNA ligase, mitochondrial	w
@@ -729,7 +729,7 @@ METHIONINE--TRNA	yeast	P00958	MES1	P00958	2	71	Methionine--tRNA ligase, cytoplas
 METHIONINE--TRNA	yeast	P22438	MSM1	P22438	0	34	Methionine--tRNA ligase, mitochondrial	w
 METHIONINE--TRNA	zebrafish	A0A8M1PDZ5	mars1	A0A8M1PDZ5	6	58	Methionine--tRNA ligase, cytoplasmic	w
 METHIONINE--TRNA	zebrafish	E7F5M3	mars2	E7F5M3	0	34	Methionine--tRNA ligase, mitochondrial	w
-METHIONINE-R-SULFOXIDE	fly	FBgn0267376	SelR	Q8INK9	4	49	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	w
+METHIONINE-R-SULFOXIDE	fly	FBgn0267376	SelR	Q8INK9	6	66	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	w
 METHIONINE-R-SULFOXIDE	human	Q8IXL7	MSRB3	Q8IXL7	47	180	Methionine-R-sulfoxide reductase B3 (MsrB3) (EC 1.8.4.12) (E	w
 METHIONINE-R-SULFOXIDE	human	Q9NZV6	MSRB1	Q9NZV6	0	15	Methionine-R-sulfoxide reductase B1 (MsrB1) (EC 1.8.4.12) (E	w
 METHIONINE-R-SULFOXIDE	human	Q9Y3D2	MSRB2	Q9Y3D2	28	160	Methionine-R-sulfoxide reductase B2, mitochondrial (MsrB2) (	w
@@ -739,7 +739,7 @@ METHIONINE-R-SULFOXIDE	zebrafish	Q6NW52	msrb2	Q6NW52	3	40	Methionine-R-sulfoxide
 METHIONYL	human	Q6UB28	METAP1D	Q6UB28	20	64	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	w
 METHIONYL	human	Q9HAU8	RNPEPL1	Q9HAU8	4	28	Aminopeptidase RNPEPL1 (EC 3.4.11.-) (Arginyl aminopeptidase	w
 METHIONYL-TRNA	fly	FBgn0027083	MetRS-m	Q9VFL5	1	42	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Mitoch	w
-METHIONYL-TRNA	fly	FBgn0034401	MetRS	A1ZBE9	7	56	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
+METHIONYL-TRNA	fly	FBgn0034401	MetRS	A1ZBE9	7	65	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
 METHIONYL-TRNA	fly	FBgn0039836	CG1750	Q9V9Z0	0	12	Methionyl-tRNA formyltransferase, mitochondrial (EC 2.1.2.9)	w
 METHIONYL-TRNA	human	P56192	MARS1	P56192	25	377	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
 METHIONYL-TRNA	human	Q96DP5	MTFMT	Q96DP5	10	152	Methionyl-tRNA formyltransferase, mitochondrial (MtFMT) (EC 	w
@@ -752,7 +752,7 @@ METHOXY-6-POLYPRENYL-1	human	Q5HYK3	COQ5	Q5HYK3	8	193	2-methoxy-6-polyprenyl-1,4
 METHOXY-6-POLYPRENYL-1	worm	P34666	coq-5	P34666	1	12	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
 METHOXY-6-POLYPRENYL-1	yeast	P49017	COQ5	P49017	3	30	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
 METHOXY-6-POLYPRENYL-1	zebrafish	Q66L51	coq5	Q66L51	1	6	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
-METHUSELAH	fly	FBgn0023000	mth	O97148	0	19	methuselah	w
+METHUSELAH	fly	FBgn0023000	mth	O97148	0	25	methuselah	w
 METHUSELAH-LIKE	fly	FBgn0028956	mthl3	Q9V818	0	5	Probable G-protein coupled receptor Mth-like 3 (Protein meth	w
 METHUSELAH-LIKE	fly	FBgn0030766	mthl1	Q9VXD9	3	10	Probable G-protein coupled receptor Mth-like 1 (Protein meth	w
 METHUSELAH-LIKE	fly	FBgn0034219	mthl4	Q9V817	0	3	Probable G-protein coupled receptor Mth-like 4 (Protein meth	w
@@ -837,7 +837,7 @@ METHYLATION-CONTROLLED	human	Q9Y5T4	DNAJC15	Q9Y5T4	18	222	DnaJ homolog subfamily
 METHYLBU	human	P45954	ACADSB	P45954	11	119	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
 METHYLBUTYRYL-COENZYME	fly	FBgn0036824	CG3902	Q9VVU1	3	25	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	w
 METHYLCITRATE	yeast	Q12428	PDH1	Q12428	0	8	Probable 2-methylcitrate dehydratase	w
-METHYLCROTONOYL-COA	fly	FBgn0039877	Mccc1	Q9V9T5	7	77	GM14617p (Methylcrotonoyl-CoA carboxylase 1, isoform A) (Met	w
+METHYLCROTONOYL-COA	fly	FBgn0039877	Mccc1	Q9V9T5	8	92	GM14617p (Methylcrotonoyl-CoA carboxylase 1, isoform A) (Met	w
 METHYLCROTONOYL-COA	fly	FBgn0042083	Mccc2	Q9V9A7	1	26	Probable methylcrotonoyl-CoA carboxylase beta chain, mitocho	w
 METHYLCROTONOYL-COA	human	Q96RQ3	MCCC1	Q96RQ3	19	240	Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial	w
 METHYLCROTONOYL-COA	human	Q9HCC0	MCCC2	Q9HCC0	13	180	Methylcrotonoyl-CoA carboxylase beta chain, mitochondrial (M	w
@@ -856,7 +856,7 @@ METHYLCYTIDINE	worm	Q2MDF2	metl-2	Q2MDF2	0	11	tRNA N(3)-methylcytidine methyltra
 METHYLCYTOSINE	human	O43151	TET3	O43151	18	128	Methylcytosine dioxygenase TET3 (EC 1.14.11.80)	w
 METHYLCYTOSINE	human	Q6N021	TET2	Q6N021	25	257	Methylcytosine dioxygenase TET2 (EC 1.14.11.80)	w
 METHYLCYTOSINE	human	Q8NFU7	TET1	Q8NFU7	15	220	Methylcytosine dioxygenase TET1 (EC 1.14.11.80) (CXXC-type z	w
-METHYLENETETRAHYDROFOLATE	fly	FBgn0010222	Nmdmc	Q04448	1	14	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	w
+METHYLENETETRAHYDROFOLATE	fly	FBgn0010222	Nmdmc	Q04448	2	20	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	w
 METHYLENETETRAHYDROFOLATE	fly	FBgn0020385	pug	O96553	2	19	C-1-tetrahydrofolate synthase, cytoplasmic (C1-THF synthase)	w
 METHYLENETETRAHYDROFOLATE	human	P13995	MTHFD2	P13995	13	133	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	w
 METHYLENETETRAHYDROFOLATE	human	P42898	MTHFR	P42898	10	149	Methylenetetrahydrofolate reductase (NADPH) (EC 1.5.1.53)	w
@@ -867,17 +867,17 @@ METHYLENETETRAHYDROFOLATE	yeast	P53128	MET13	P53128	1	8	Methylenetetrahydrofolat
 METHYLENETETRAHYDROFOLATE	yeast	Q02046	MTD1	Q02046	0	13	Methylenetetrahydrofolate dehydrogenase	w
 METHYLENETETRAHYDROFOLATE	zebrafish	B0V153	mthfr	B0V153	0	7	Methylenetetrahydrofolate reductase (NADPH)	w
 METHYLENETETRAHYDROFOLATE	zebrafish	Q6GMK2	mthfd2	Q6GMK2	2	9	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	w
-METHYLESTERASE	fly	FBgn0035951	CG5068	Q95R98	3	14	Protein phosphatase methylesterase 1 (PME-1) (EC 3.1.1.-)	w
+METHYLESTERASE	fly	FBgn0035951	CG5068	Q95R98	3	16	Protein phosphatase methylesterase 1 (PME-1) (EC 3.1.1.-)	w
 METHYLESTERASE	human	Q9Y570	PPME1	Q9Y570	76	574	Protein phosphatase methylesterase 1 (PME-1) (EC 3.1.1.89)	w
 METHYLESTERASE	worm	Q9BIB3	B0464.9	Q9BIB3	1	10	Probable protein phosphatase methylesterase 1	w
 METHYLESTERASE	yeast	P38796	PPE1	P38796	4	42	Protein phosphatase methylesterase 1	w
 METHYLESTERASE	zebrafish	Q7ZV37	ppme1	Q7ZV37	7	18	Protein phosphatase methylesterase 1	w
 METHYLGLUTACONYL-COA	human	Q13825	AUH	Q13825	5	367	Methylglutaconyl-CoA hydratase, mitochondrial (3-MG-CoA hydr	w
-METHYLGLYOXAL	fly	FBgn0283450	Glo1	A1Z6X6	1	42	lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Keto	w
+METHYLGLYOXAL	fly	FBgn0283450	Glo1	A1Z6X6	1	44	lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Keto	w
 METHYLGLYOXAL	human	P60174	TPI1	P60174	2	290	Triosephosphate isomerase (TIM) (EC 5.3.1.1) (Methylglyoxal 	w
 METHYLGLYOXAL	human	Q04760	GLO1	Q04760	8	200	Lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Glyo	w
 METHYLGLYOXAL	yeast	Q12068	GRE2	Q12068	2	131	NADPH-dependent methylglyoxal reductase GRE2	w
-METHYLGLYOXALASE	fly	FBgn0283450	Glo1	A1Z6X6	1	42	lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Keto	w
+METHYLGLYOXALASE	fly	FBgn0283450	Glo1	A1Z6X6	1	44	lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Keto	w
 METHYLGLYOXALASE	human	Q04760	GLO1	Q04760	8	200	Lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Glyo	w
 METHYLGU	fly	FBgn0034988	cN-IIIB	Q9W197	3	70	7-methylguanosine phosphate-specific 5'-nucleotidase (7-meth	w
 METHYLGUANINE-INDUCED	human	Q5TH74	STPG1	Q5TH74	3	40	O(6)-methylguanine-induced apoptosis 2 (MAPO2) (Sperm-tail P	w
@@ -888,7 +888,7 @@ METHYLGUANOSINE	zebrafish	A0A8M9Q0R5	dcp1b	A0A8M9Q0R5	12	81	5'-(N(7)-methylguano
 METHYLHYDROLASE	fly	FBgn0029892	Dph7	Q9W3X3	0	5	methylated diphthine methylhydrolase (EC 3.1.1.97)	w
 METHYLHYDROLASE	worm	G5EBG2	dph-7	G5EBG2	0	2	methylated diphthine methylhydrolase	w
 METHYLISOCITRATE	yeast	Q12031	ICL2	Q12031	0	4	Mitochondrial 2-methylisocitrate lyase ICL2	w
-METHYLMALONATE-SEMIALDEHYDE	fly	FBgn0023537	CG17896	Q7KW39	1	10	Probable methylmalonate-semialdehyde/malonate-semialdehyde d	w
+METHYLMALONATE-SEMIALDEHYDE	fly	FBgn0023537	CG17896	Q7KW39	1	13	Probable methylmalonate-semialdehyde/malonate-semialdehyde d	w
 METHYLMALONATE-SEMIALDEHYDE	human	Q02252	ALDH6A1	Q02252	8	95	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	w
 METHYLMALONATE-SEMIALDEHYDE	worm	P52713	alh-8	P52713	1	62	Probable methylmalonate-semialdehyde/malonate-semialdehyde d	w
 METHYLMALONATE-SEMIALDEHYDE	zebrafish	Q6DHT4	aldh6a1	Q6DHT4	0	1	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	w
@@ -929,7 +929,7 @@ METHYLTHIORIBULOSE-1-PHOSPHATE	fly	FBgn0030518	CG11134	Q9VY93	1	45	Probable meth
 METHYLTHIORIBULOSE-1-PHOSPHATE	human	Q96GX9	APIP	Q96GX9	2	84	Methylthioribulose-1-phosphate dehydratase (MTRu-1-P dehydra	w
 METHYLTHIORIBULOSE-1-PHOSPHATE	worm	Q23261	ZC373.5	Q23261	0	5	Probable methylthioribulose-1-phosphate dehydratase	w
 METHYLTHIORIBULOSE-1-PHOSPHATE	yeast	P47095	MDE1	P47095	0	6	Methylthioribulose-1-phosphate dehydratase	w
-METHYLTHIOTRANSFERASE	fly	FBgn0034214	CG6550	Q7K4W1	2	17	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
+METHYLTHIOTRANSFERASE	fly	FBgn0034214	CG6550	Q7K4W1	2	19	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
 METHYLTHIOTRANSFERASE	human	Q5VV42	CDKAL1	Q5VV42	20	245	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
 METHYLTHIOTRANSFERASE	human	Q96SZ6	CDK5RAP1	Q96SZ6	10	144	Mitochondrial tRNA methylthiotransferase CDK5RAP1 (EC 2.8.4.	w
 METHYLTHIOTRANSFERASE	worm	Q8MXQ7	Y92H12BL.1	Q8MXQ7	0	1	Threonylcarbamoyladenosine tRNA methylthiotransferase	w
@@ -945,48 +945,48 @@ METHYLTRANSF	worm	Q94259	CELE_K04A8.1	Q94259	0	2	Methyltransf_11 domain-containi
 METHYLTRANSFER	fly	FBgn0032922	Coq3	Q9VIF3	1	9	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	w
 METHYLTRANSFER	human	A6NJ78	METTL15	A6NJ78	28	302	12S rRNA N(4)-cytidine methyltransferase METTL15 (12S rRNA m	w
 METHYLTRANSFERASE	fly	FBgn0000139	ash2	Q94545	40	479	Set1/Ash2 histone methyltransferase complex subunit ASH2 (Ab	w
-METHYLTRANSFERASE	fly	FBgn0003062	Fib	Q9W1V3	19	166	rRNA 2'-O-methyltransferase fibrillarin (EC 2.1.1.-) (Histon	w
+METHYLTRANSFERASE	fly	FBgn0003062	Fib	Q9W1V3	19	165	rRNA 2'-O-methyltransferase fibrillarin (EC 2.1.1.-) (Histon	w
 METHYLTRANSFERASE	fly	FBgn0003862	trx	P20659	2	6	Histone-lysine N-methyltransferase trithorax (EC 2.1.1.355) 	w
 METHYLTRANSFERASE	fly	FBgn0024912	agt	O76339	1	11	Methylated-DNA--protein-cysteine methyltransferase (EC 2.1.1	w
 METHYLTRANSFERASE	fly	FBgn0025629	Mettl1	O77263	4	36	tRNA (guanine-N(7)-)-methyltransferase (EC 2.1.1.33) (tRNA (	w
 METHYLTRANSFERASE	fly	FBgn0026079	Nsun2	Q9W4M9	5	134	tRNA (cytosine(34)-C(5))-methyltransferase (EC 2.1.1.203) (N	w
 METHYLTRANSFERASE	fly	FBgn0026309	aft	Q9UAS6	0	2	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 2 (EC	w
 METHYLTRANSFERASE	fly	FBgn0028507	CG3793	M9NF32	7	36	Leucine carboxyl methyltransferase 1 (EC 2.1.1.233)	w
-METHYLTRANSFERASE	fly	FBgn0028707	Mt2	Q9VKB3	0	6	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
+METHYLTRANSFERASE	fly	FBgn0028707	Mt2	Q9VKB3	0	7	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
 METHYLTRANSFERASE	fly	FBgn0028841	jhamt	Q9VJK8	0	14	Juvenile hormone acid O-methyltransferase (EC 2.1.1.325) (Ju	w
 METHYLTRANSFERASE	fly	FBgn0029693	Cmtr1	Q9W4N2	0	8	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1 (EC	w
-METHYLTRANSFERASE	fly	FBgn0029714	CG3527	Q9W4J5	8	162	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
-METHYLTRANSFERASE	fly	FBgn0029857	wuho	Q9W415	4	37	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
+METHYLTRANSFERASE	fly	FBgn0029714	CG3527	Q9W4J5	8	161	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
+METHYLTRANSFERASE	fly	FBgn0029857	wuho	Q9W415	6	41	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	w
 METHYLTRANSFERASE	fly	FBgn0030460	Coq5	Q9VYF8	1	14	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
-METHYLTRANSFERASE	fly	FBgn0030720	CG8939	Q9VXK5	39	150	Putative rRNA methyltransferase (EC 2.1.1.-) (2'-O-ribose RN	w
-METHYLTRANSFERASE	fly	FBgn0031077	THADA	Q9VWB9	0	3	tRNA (32-2'-O)-methyltransferase regulator THADA (Thyroid ad	w
+METHYLTRANSFERASE	fly	FBgn0030720	CG8939	Q9VXK5	39	152	Putative rRNA methyltransferase (EC 2.1.1.-) (2'-O-ribose RN	w
+METHYLTRANSFERASE	fly	FBgn0031077	THADA	Q9VWB9	1	8	tRNA (32-2'-O)-methyltransferase regulator THADA (Thyroid ad	w
 METHYLTRANSFERASE	fly	FBgn0031189	Trmt10A	Q9VR56	0	9	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	w
 METHYLTRANSFERASE	fly	FBgn0031454	HemK2	Q9VQF8	1	16	GH13185p2 (HemK methyltransferase 2)	w
 METHYLTRANSFERASE	fly	FBgn0031592	Art2	Q9VQX9	1	7	Arginine methyltransferase 2, isoform A (Arginine methyltran	w
 METHYLTRANSFERASE	fly	FBgn0031817	HemK1	Q9VMD3	1	11	peptide chain release factor N(5)-glutamine methyltransferas	w
 METHYLTRANSFERASE	fly	FBgn0031832	Trmt6	Q8MS69	3	23	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
-METHYLTRANSFERASE	fly	FBgn0032329	Art8	Q8SX32	6	34	Arginine methyltransferase 8 (RE49877p)	w
-METHYLTRANSFERASE	fly	FBgn0032430	Trm1	Q9VK89	0	24	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
+METHYLTRANSFERASE	fly	FBgn0032329	Art8	Q8SX32	6	35	Arginine methyltransferase 8 (RE49877p)	w
+METHYLTRANSFERASE	fly	FBgn0032430	Trm1	Q9VK89	0	26	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
 METHYLTRANSFERASE	fly	FBgn0032873	CG2614	Q9VIK9	2	20	eEF1A lysine and N-terminal methyltransferase homolog [Inclu	w
 METHYLTRANSFERASE	fly	FBgn0033457	Ntmt	Q6NN40	6	12	N-terminal methyltransferase	w
 METHYLTRANSFERASE	fly	FBgn0033686	Hen1	Q7K175	1	4	Small RNA 2'-O-methyltransferase (EC 2.1.1.386) (HEN1 methyl	w
 METHYLTRANSFERASE	fly	FBgn0033891	CG8067	Q7K1S1	2	35	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
-METHYLTRANSFERASE	fly	FBgn0033994	CG7544	Q7K3B9	1	16	U6 small nuclear RNA (adenine-(43)-N(6))-methyltransferase (	w
+METHYLTRANSFERASE	fly	FBgn0033994	CG7544	Q7K3B9	1	19	U6 small nuclear RNA (adenine-(43)-N(6))-methyltransferase (	w
 METHYLTRANSFERASE	fly	FBgn0034351	rswl	Q7JUX9	2	29	Mitochondrial ribonuclease P protein 1 homolog (Mitochondria	w
-METHYLTRANSFERASE	fly	FBgn0034537	DMAP1	Q7K3D8	22	112	DNA methyltransferase 1-associated protein 1	w
+METHYLTRANSFERASE	fly	FBgn0034537	DMAP1	Q7K3D8	22	115	DNA methyltransferase 1-associated protein 1	w
 METHYLTRANSFERASE	fly	FBgn0035035	CG3570	Q9W138	0	1	S-adenosylmethionine sensor upstream of mTORC1 (dSamtor) (Pr	w
 METHYLTRANSFERASE	fly	FBgn0035247	Mettl2	Q86BS6	4	40	tRNA N(3)-methylcytidine methyltransferase Mettl2 (EC 2.1.1.	w
 METHYLTRANSFERASE	fly	FBgn0035537	CG11342	Q9VZD2	0	8	Probable RNA methyltransferase CG11342 (EC 2.1.1.-)	w
-METHYLTRANSFERASE	fly	FBgn0036838	Trmt2a	Q9VVV7	3	19	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	w
+METHYLTRANSFERASE	fly	FBgn0036838	Trmt2a	Q9VVV7	3	22	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	w
 METHYLTRANSFERASE	fly	FBgn0036889	CG14100	Q9VW14	3	84	rRNA methyltransferase 3, mitochondrial (EC 2.1.1.-) (RNA me	w
 METHYLTRANSFERASE	fly	FBgn0037061	Trmt112	Q9VP65	6	76	Multifunctional methyltransferase subunit TRM112-like protei	w
-METHYLTRANSFERASE	fly	FBgn0037250	CG1074	Q960G1	2	12	tRNA (guanine(10)-N2)-methyltransferase homolog (tRNA guanos	w
+METHYLTRANSFERASE	fly	FBgn0037250	CG1074	Q960G1	2	16	tRNA (guanine(10)-N2)-methyltransferase homolog (tRNA guanos	w
 METHYLTRANSFERASE	fly	FBgn0037368	Amus	Q9VNH1	14	67	Probable RNA methyltransferase CG1239 (EC 2.1.1.-)	w
 METHYLTRANSFERASE	fly	FBgn0037708	CG9386	Q9VHB9	0	8	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w
 METHYLTRANSFERASE	fly	FBgn0037770	Art4	Q9VH48	2	77	Probable histone-arginine methyltransferase CARMER (EC 2.1.1	w
-METHYLTRANSFERASE	fly	FBgn0037834	Art1	Q9VGW7	3	61	Arginine methyltransferase 1 (EC 2.1.1.319, EC 2.1.1.321, EC	w
+METHYLTRANSFERASE	fly	FBgn0037834	Art1	Q9VGW7	3	71	Arginine methyltransferase 1 (EC 2.1.1.319, EC 2.1.1.321, EC	w
 METHYLTRANSFERASE	fly	FBgn0037880	CG17726	Q9VGR2	2	35	Protein arginine methyltransferase NDUFAF7 homolog, mitochon	w
-METHYLTRANSFERASE	fly	FBgn0038090	CG10909	Q9VG21	10	139	Histone-glutamine methyltransferase	w
+METHYLTRANSFERASE	fly	FBgn0038090	CG10909	Q9VG21	10	146	Histone-glutamine methyltransferase	w
 METHYLTRANSFERASE	fly	FBgn0038188	Art9	Q9VFP9	2	9	Arginine methyltransferase 9 (EC 2.1.1.321)	w
 METHYLTRANSFERASE	fly	FBgn0038189	Art6	Q9VFP8	1	12	Arginine methyltransferase 6 (EC 2.1.1.321) (IP11481p)	w
 METHYLTRANSFERASE	fly	FBgn0038306	Art3	Q9VFB3	1	10	Arginine methyltransferase 3, isoform A (EC 2.1.1.321) (LD34	w
@@ -998,7 +998,7 @@ METHYLTRANSFERASE	fly	FBgn0053172	CG33172	Q86B53	2	14	tRNA (34-2'-O)-methyltrans
 METHYLTRANSFERASE	fly	FBgn0085224	CG34195	A1ZAY5	1	17	tRNA N(3)-methylcytidine methyltransferase (EC 2.1.1.-)	w
 METHYLTRANSFERASE	fly	FBgn0086768	Pcmt	Q27869	0	7	Protein-L-isoaspartate(D-aspartate) O-methyltransferase (PIM	w
 METHYLTRANSFERASE	fly	FBgn0259704	Nsun5	Q9VDZ4	1	51	28S rRNA (cytosine-C(5))-methyltransferase (EC 2.1.1.-) (NOL	w
-METHYLTRANSFERASE	fly	FBgn0286027	Rnmt	Q9VJQ4	3	46	mRNA cap guanine-N7 methyltransferase (EC 2.1.1.56) (mRNA (g	w
+METHYLTRANSFERASE	fly	FBgn0286027	Rnmt	Q9VJQ4	3	49	mRNA cap guanine-N7 methyltransferase (EC 2.1.1.56) (mRNA (g	w
 METHYLTRANSFERASE	fly	FBgn0290420	Trmt61	Q9VBH7	4	17	tRNA methyltransferase 61	w
 METHYLTRANSFERASE	human	A6NJ78	METTL15	A6NJ78	28	302	12S rRNA N(4)-cytidine methyltransferase METTL15 (12S rRNA m	w
 METHYLTRANSFERASE	human	H0YIJ7	?	H0YIJ7	1	5	EEF1A lysine methyltransferase 3	w
@@ -1393,8 +1393,8 @@ METHYLTRANSFERASE	zebrafish	R4GEK9	trmo	R4GEK9	0	2	tRNA (adenine(37)-N6)-methylt
 METHYLTRANSFERASE	zebrafish	X1WE47	vcpkmt	X1WE47	0	7	Protein N-lysine methyltransferase METTL21D isoform X1	w
 METHYLTRANSFERASE	zebrafish	X1WF30	trmt61b	X1WF30	3	6	tRNA (adenine(58)-N(1))-methyltransferase	w
 METHYLTRANSFERASE-ACTIVATING	human	A0A3B3IU46	RAMACL	A0A3B3IU46	1	46	RNA guanine-N7 methyltransferase-activating subunit-like pro	w
-METHYLTRANSFERASE-LIKE	fly	FBgn0028707	Mt2	Q9VKB3	0	6	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
-METHYLTRANSFERASE-LIKE	fly	FBgn0032016	Mettl14	Q9VLP7	84	523	N6-adenosine-methyltransferase non-catalytic subunit (Karyog	w
+METHYLTRANSFERASE-LIKE	fly	FBgn0028707	Mt2	Q9VKB3	0	7	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
+METHYLTRANSFERASE-LIKE	fly	FBgn0032016	Mettl14	Q9VLP7	87	523	N6-adenosine-methyltransferase non-catalytic subunit (Karyog	w
 METHYLTRANSFERASE-LIKE	fly	FBgn0035247	Mettl2	Q86BS6	4	40	tRNA N(3)-methylcytidine methyltransferase Mettl2 (EC 2.1.1.	w
 METHYLTRANSFERASE-LIKE	fly	FBgn0036856	Mettl5	Q8MSW4	2	15	rRNA N6-adenosine-methyltransferase Mettl5 (EC 2.1.1.-) (Met	w
 METHYLTRANSFERASE-LIKE	fly	FBgn0036889	CG14100	Q9VW14	3	84	rRNA methyltransferase 3, mitochondrial (EC 2.1.1.-) (RNA me	w
@@ -1516,7 +1516,7 @@ METRNL	zebrafish	Q7ZV46	metrnl	Q7ZV46	0	7	Meteorin-like protein
 METRNLB	zebrafish	A0A8M1PVC4	metrnlb	A0A8M1PVC4	0	7	Meteorin-like protein	
 METRN_HUMAN	human	Q9UJH8	METRN	Q9UJH8	23	101		
 METRO	fly	FBgn0050021	metro	A1Z8G0	7	25	Menage a trois, isoform A	
-METRS	fly	FBgn0034401	MetRS	A1ZBE9	7	56	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	
+METRS	fly	FBgn0034401	MetRS	A1ZBE9	7	65	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	
 METRS	human	P56192	MARS1	P56192	25	377	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
 METRS-M	fly	FBgn0027083	MetRS-m	Q9VFL5	1	42	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Mitoch	
 METS	dictyostelium-discoideum	Q54X95	metS	Q54X95	0	43	Probable methionine--tRNA ligase, cytoplasmic	
@@ -1538,8 +1538,8 @@ METTL12	human	A8MUP2	CSKMT	A8MUP2	13	61
 METTL13	human	Q8N6R0	METTL13	Q8N6R0	17	121	eEF1A lysine and N-terminal methyltransferase (eEF1A-KNMT) (	
 METTL13	mus-musculus	Q91YR5	Mettl13	Q91YR5	1	12	eEF1A lysine and N-terminal methyltransferase	
 METTL13	zebrafish	A5WVX1	mettl13	A5WVX1	0	11	eEF1A lysine and N-terminal methyltransferase	
-METTL14	fly	FBgn0032016	Mettl14	Q9VLP7	84	523	N6-adenosine-methyltransferase non-catalytic subunit (Karyog	
-METTL14	fly	FBgn0032016	Mettl14	Q9VLP7	84	523	N6-adenosine-methyltransferase non-catalytic subunit (Karyog	
+METTL14	fly	FBgn0032016	Mettl14	Q9VLP7	87	523	N6-adenosine-methyltransferase non-catalytic subunit (Karyog	
+METTL14	fly	FBgn0032016	Mettl14	Q9VLP7	87	523	N6-adenosine-methyltransferase non-catalytic subunit (Karyog	
 METTL14	human	Q9HCE5	METTL14	Q9HCE5	145	983	N(6)-adenosine-methyltransferase non-catalytic subunit METTL	
 METTL14	mus-musculus	Q3UIK4	Mettl14	Q3UIK4	2	43	N(6)-adenosine-methyltransferase non-catalytic subunit METTL	
 METTL14	rattus-norvegicus	A6HVI9	Mettl14	A6HVI9	8	56	N(6)-adenosine-methyltransferase non-catalytic subunit METTL	

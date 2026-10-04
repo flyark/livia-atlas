@@ -16,8 +16,8 @@ PDE10A	human	Q9Y233	PDE10A	Q9Y233	10	79	cAMP and cAMP-inhibited cGMP 3',5'-cycli
 PDE10A	mus-musculus	Q8CA95	Pde10a	Q8CA95	1	12	cAMP and cAMP-inhibited cGMP 3,5-cyclic phosphodiesterase 10	
 PDE10A	rattus-norvegicus	Q9QYJ6	Pde10a	Q9QYJ6	1	3	cAMP and cAMP-inhibited cGMP 3,5-cyclic phosphodiesterase 10	
 PDE10_HUMAN	human	Q9Y233	PDE10A	Q9Y233	10	79		
-PDE11	fly	FBgn0085370	Pde11	Q9VJ79	3	76	Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11 (EC 3.1.	w
-PDE11	fly	FBgn0085370	Pde11	Q9VJ79	3	76	Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11 (EC 3.1.	w
+PDE11	fly	FBgn0085370	Pde11	Q9VJ79	4	78	Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11 (EC 3.1.	w
+PDE11	fly	FBgn0085370	Pde11	Q9VJ79	4	78	Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11 (EC 3.1.	w
 PDE11	schistosoma-mansoni	A0A3Q0KTP4	PDE11	A0A3Q0KTP4	0	5	Phosphodiesterase	
 PDE11A	human	Q9HCR9	PDE11A	Q9HCR9	10	91	Dual 3',5'-cyclic-AMP and -GMP phosphodiesterase 11A (EC 3.1	
 PDE11A	mus-musculus	P0C1Q2	Pde11a	P0C1Q2	1	4	Dual 3,5-cyclic-AMP and -GMP phosphodiesterase 11A	
@@ -67,7 +67,7 @@ PDE3B	rattus-norvegicus	Q63085	Pde3b	Q63085	2	21	cGMP-inhibited 3,5-cyclic phosp
 PDE3B	zebrafish	A0A1D5NSM7	pde3b	A0A1D5NSM7	0	4	Phosphodiesterase	
 PDE3B_HUMAN	human	Q13370	PDE3B	Q13370	23	191		
 PDE4	dictyostelium-discoideum	Q86H13	Pde4	Q86H13	1	2	3,5-cyclic-AMP phosphodiesterase 4	
-PDE4	fly	FBgn0000479	Pde4	Q9W4T4	9	115	3',5'-cyclic-AMP phosphodiesterase, isoform I (EC 3.1.4.53) 	
+PDE4	fly	FBgn0000479	Pde4	Q9W4T4	9	127	3',5'-cyclic-AMP phosphodiesterase, isoform I (EC 3.1.4.53) 	
 PDE43	human	Q08499	PDE4D	Q08499	55	911	3',5'-cyclic-AMP phosphodiesterase 4D (EC 3.1.4.53) (DPDE3) 	w
 PDE46	human	P27815	PDE4A	P27815	17	98	3',5'-cyclic-AMP phosphodiesterase 4A (EC 3.1.4.53) (DPDE2) 	w
 PDE4A	human	P27815	PDE4A	P27815	17	98	3',5'-cyclic-AMP phosphodiesterase 4A (EC 3.1.4.53) (DPDE2) 	
@@ -132,7 +132,7 @@ PDE7A_HUMAN	human	Q13946	PDE7A	Q13946	11	67
 PDE7B	human	Q9NP56	PDE7B	Q9NP56	10	84	3',5'-cyclic-AMP phosphodiesterase 7B (EC 3.1.4.53) (cAMP-sp	
 PDE7B	rattus-norvegicus	Q8VIE2	Pde7b	Q8VIE2	0	1	Phosphodiesterase	
 PDE7B_HUMAN	human	Q9NP56	PDE7B	Q9NP56	10	84		
-PDE8	fly	FBgn0266377	Pde8	Q8IGT9	5	85	Phosphodiesterase 8	
+PDE8	fly	FBgn0266377	Pde8	Q8IGT9	10	90	Phosphodiesterase 8	
 PDE8A	human	O60658	PDE8A	O60658	7	60	High affinity cAMP-specific and IBMX-insensitive 3',5'-cycli	
 PDE8A	mus-musculus	O88502	Pde8a	O88502	0	13	High affinity cAMP-specific and IBMX-insensitive 3,5-cyclic 	
 PDE8A	rattus-norvegicus	Q76KC6	Pde8a	Q76KC6	0	2	Phosphodiesterase	
@@ -140,7 +140,7 @@ PDE8A_HUMAN	human	O60658	PDE8A	O60658	7	60
 PDE8B	human	A0A2R8Y4E6	PDE8B	A0A2R8Y4E6	0	7	Phosphodiesterase	
 PDE8B	human	O95263	PDE8B	O95263	8	71	High affinity cAMP-specific and IBMX-insensitive 3',5'-cycli	
 PDE8B_HUMAN	human	O95263	PDE8B	O95263	8	71		
-PDE9	fly	FBgn0259171	Pde9	Q9VYJ0	3	62	Phosphodiesterase (EC 3.1.4.-)	
+PDE9	fly	FBgn0259171	Pde9	Q9VYJ0	5	64	Phosphodiesterase (EC 3.1.4.-)	
 PDE9A	human	O76083	PDE9A	O76083	19	109	High affinity cGMP-specific 3',5'-cyclic phosphodiesterase 9	
 PDE9A	mus-musculus	O70628	Pde9a	O70628	0	4	High affinity cGMP-specific 3,5-cyclic phosphodiesterase 9A	
 PDE9A	rattus-norvegicus	Q8QZV1	Pde9a	Q8QZV1	1	4	High affinity cGMP-specific 3,5-cyclic phosphodiesterase 9A	
@@ -148,7 +148,7 @@ PDE9AA	zebrafish	A0A8M3AW03	pde9aa	A0A8M3AW03	0	2	Phosphodiesterase
 PDE9AB	zebrafish	A0A286YAM0	pde9ab	A0A286YAM0	0	2	Phosphodiesterase	
 PDE9AC	zebrafish	A0A8N7UT66	pde9ac	A0A8N7UT66	0	2	Phosphodiesterase	
 PDE9A_HUMAN	human	O76083	PDE9A	O76083	19	109		
-PDE9_474	fly	FBgn0259171	Pde9	Q9VYJ0	3	62		
+PDE9_474	fly	FBgn0259171	Pde9	Q9VYJ0	5	64		
 PDEA	escherichia-coli-83333	P23842	pdeA	P23842	1	15	Probable cyclic di-GMP phosphodiesterase PdeA	
 PDEA	human	P16499	PDE6A	P16499	14	66		
 PDEA	leishmania-infantum	A4HXY3	PDEA	A4HXY3	0	1	Phosphodiesterase	

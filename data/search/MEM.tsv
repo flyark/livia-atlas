@@ -17,7 +17,7 @@ MEMB12	arabidopsis-thaliana	Q9FK28	MEMB12	Q9FK28	8	74	Membrin-12
 MEMBE	human	Q14568	HSP90AA2P	Q14568	5	8	Heat shock protein HSP 90-alpha A2 (Heat shock 90 kDa protei	w
 MEMBER-ASSOCIATED	human	Q92844	TANK	Q92844	88	320	TRAF family member-associated NF-kappa-B activator (TRAF-int	w
 MEMBER-LIKE	zebrafish	A0AB13A8A4	si:ch73-308m11.1	A0AB13A8A4	0	8	GTPase IMAP family member-like protein	w
-MEMBERS	fly	FBgn0026207	mbo	Q9GYU8	11	75	Nuclear pore complex protein Nup88 (88 kDa nuclear pore comp	w
+MEMBERS	fly	FBgn0026207	mbo	Q9GYU8	11	77	Nuclear pore complex protein Nup88 (88 kDa nuclear pore comp	w
 MEMBRALIN	human	Q4ZIN3	TMEM259	Q4ZIN3	14	109	Membralin (Transmembrane protein 259)	w
 MEMBRALIN	worm	Q9TZC7	CELE_Y59C2A.2	Q9TZC7	1	1	Membralin	w
 MEMBRALIN	zebrafish	E7FCD1	tmem259	E7FCD1	1	5	Membralin isoform X1	w
@@ -38,10 +38,10 @@ MEMBRANE	fly	FBgn0030480	Tim9a	Q9VYD7	9	49	Mitochondrial import inner membrane t
 MEMBRANE	fly	FBgn0030669	Immp1	Q9VXR8	2	18	Mitochondrial inner membrane protease subunit (EC 3.4.21.-)	w
 MEMBRANE	fly	FBgn0030703	MSBP	Q9VXM4	0	17	LD12946p (Membrane steroid binding protein, isoform A) (Memb	w
 MEMBRANE	fly	FBgn0030768	Nemp	Q9VXD6	3	16	Nuclear envelope integral membrane protein	w
-MEMBRANE	fly	FBgn0031069	Abcd3	Q9VWC8	1	45	LD11581p (Peroxisomal membrane protein 70 kDa, isoform A) (P	w
+MEMBRANE	fly	FBgn0031069	Abcd3	Q9VWC8	3	50	LD11581p (Peroxisomal membrane protein 70 kDa, isoform A) (P	w
 MEMBRANE	fly	FBgn0031108	CG15459	Q9VR92	4	40	ATP synthase membrane subunit K, mitochondrial	w
-MEMBRANE	fly	FBgn0031285	CG3662	Q9VPT9	474	2646	Integral membrane protein 2	w
-MEMBRANE	fly	FBgn0031708	CG7382	Q9VMR0	6	33	Mitochondrial import inner membrane translocase subunit Tim2	w
+MEMBRANE	fly	FBgn0031285	CG3662	Q9VPT9	476	2654	Integral membrane protein 2	w
+MEMBRANE	fly	FBgn0031708	CG7382	Q9VMR0	6	34	Mitochondrial import inner membrane translocase subunit Tim2	w
 MEMBRANE	fly	FBgn0032292	EMC3	Q9VKR0	6	22	ER membrane protein complex subunit 3	w
 MEMBRANE	fly	FBgn0032397	Tom70	Q9VKC8	12	54	FI03495p (Translocase of outer membrane 70, isoform A) (Tran	w
 MEMBRANE	fly	FBgn0032644	CG5131	Q9VJD0	3	28	Mitochondrial inner membrane protease ATP23 (EC 3.4.24.-)	w
@@ -50,7 +50,7 @@ MEMBRANE	fly	FBgn0032971	ttm3	Q9V9P3	3	33	Mitochondrial import inner membrane tr
 MEMBRANE	fly	FBgn0033074	tomboy40	A1Z6L1	4	29	Mitochondrial import receptor subunit TOM40 homolog 2 (Trans	w
 MEMBRANE	fly	FBgn0033326	CG14743	A1Z7I2	0	4	Sodium/calcium exchanger membrane region domain-containing p	w
 MEMBRANE	fly	FBgn0033357	Tom7	Q7K036	3	25	Mitochondrial import receptor subunit TOM7 homolog (Transloc	w
-MEMBRANE	fly	FBgn0033483	egr	Q8MUJ1	401	2718	Protein eiger [Cleaved into: Protein eiger, membrane form; P	w
+MEMBRANE	fly	FBgn0033483	egr	Q8MUJ1	404	2725	Protein eiger [Cleaved into: Protein eiger, membrane form; P	w
 MEMBRANE	fly	FBgn0033599	CG13223	A1Z8H3	0	6	Sodium/calcium exchanger membrane region domain-containing p	w
 MEMBRANE	fly	FBgn0033812	Pex13	Q7JRD4	3	61	Peroxisomal membrane protein PEX13 (Peroxin-13)	w
 MEMBRANE	fly	FBgn0034066	EMC7	A1ZA83	3	16	ER membrane protein complex subunit 7	w
@@ -58,7 +58,7 @@ MEMBRANE	fly	FBgn0034275	neat	Q7K4I4	0	9	LD38576p (SLC26 membrane transporter pr
 MEMBRANE	fly	FBgn0034535	Immp2	Q4QQ12	5	23	Mitochondrial inner membrane protease subunit 2	w
 MEMBRANE	fly	FBgn0034791	EMC8-9	Q9W1Y1	5	16	ER membrane protein complex subunit 8/9 homolog	w
 MEMBRANE	fly	FBgn0034962	MAN1	Q7JRE4	4	21	Inner nuclear membrane protein Man1 (LEM domain-containing p	w
-MEMBRANE	fly	FBgn0035124	ttm2	Q9W0S3	8	26	Mitochondrial import inner membrane translocase subunit TIM5	w
+MEMBRANE	fly	FBgn0035124	ttm2	Q9W0S3	8	27	Mitochondrial import inner membrane translocase subunit TIM5	w
 MEMBRANE	fly	FBgn0035444	CG12012	Q9VZP9	1	18	Membrane protein BRI3 (Brain protein I3)	w
 MEMBRANE	fly	FBgn0035815	Snmp2	E1JI63	1	22	Sensory neuron membrane protein 2 (SNMP2Dmel)	w
 MEMBRANE	fly	FBgn0035944	CG5021	Q8IQC1	3	15	Uncharacterized Golgi apparatus membrane protein-like protei	w
@@ -69,9 +69,9 @@ MEMBRANE	fly	FBgn0036998	CG5969	Q9VPE4	6	13	Vacuolar ATPase assembly integral me
 MEMBRANE	fly	FBgn0037019	Pex16	Q9VPB9	1	3	Peroxisomal membrane protein PEX16	w
 MEMBRANE	fly	FBgn0037020	Pex14	Q9VPB8	7	91	Peroxisomal membrane protein PEX14 (Peroxin-14)	w
 MEMBRANE	fly	FBgn0037199	EMC4	Q9VNQ3	5	21	ER membrane protein complex subunit 4	w
-MEMBRANE	fly	FBgn0037307	Tim17a2	Q9VN97	3	30	Probable mitochondrial import inner membrane translocase sub	w
+MEMBRANE	fly	FBgn0037307	Tim17a2	Q9VN97	3	34	Probable mitochondrial import inner membrane translocase sub	w
 MEMBRANE	fly	FBgn0037310	Tim17b1	Q9VNA0	6	28	Probable mitochondrial import inner membrane translocase sub	w
-MEMBRANE	fly	FBgn0037530	EMC1	Q9VHY6	126	2391	ER membrane protein complex subunit 1	w
+MEMBRANE	fly	FBgn0037530	EMC1	Q9VHY6	127	2399	ER membrane protein complex subunit 1	w
 MEMBRANE	fly	FBgn0037710	CG9393	Q9VHB6	5	35	Metaxin-1 homolog (Mitochondrial outer membrane import compl	w
 MEMBRANE	fly	FBgn0038018	Tim17a1	Q9VGA2	4	27	Probable mitochondrial import inner membrane translocase sub	w
 MEMBRANE	fly	FBgn0038387	blp	Q9VF08	8	36	Mitochondrial import inner membrane translocase subunit Tim1	w
@@ -84,9 +84,9 @@ MEMBRANE	fly	FBgn0040285	Scamp	Q9VXV6	5	63	Secretory carrier-associated membrane
 MEMBRANE	fly	FBgn0040340	TRAM	Q9W5C2	3	11	Translocating chain-associated membrane protein	w
 MEMBRANE	fly	FBgn0040651	CG15458	Q9VR93	2	26	ATP synthase membrane subunit K, mitochondrial	w
 MEMBRANE	fly	FBgn0051229	CG31229	Q8IN78	3	104	Mitochondrial import inner membrane translocase subunit Tim2	w
-MEMBRANE	fly	FBgn0052225	CG32225	Q8IQV4	431	2373	Lysosome-associated membrane glycoprotein 2-like luminal dom	w
+MEMBRANE	fly	FBgn0052225	CG32225	Q8IQV4	432	2384	Lysosome-associated membrane glycoprotein 2-like luminal dom	w
 MEMBRANE	fly	FBgn0052250	PMP34	Q9VZD9	0	3	Peroxisomal membrane protein 34, isoform A (Peroxisomal memb	w
-MEMBRANE	fly	FBgn0052441	EMC10	Q8IPT0	375	2382	ER membrane protein complex subunit 10	w
+MEMBRANE	fly	FBgn0052441	EMC10	Q8IPT0	377	2392	ER membrane protein complex subunit 10	w
 MEMBRANE	fly	FBgn0052448	CG32448	Q8IPS9	0	1	Small integral membrane protein 8	w
 MEMBRANE	fly	FBgn0052736	sloth1	Q9W3T5	1	4	Small integral membrane protein 4	w
 MEMBRANE	fly	FBgn0053169	CG33169	Q8SY72	9	26	Single-pass membrane and coiled-coil domain-containing prote	w
@@ -101,7 +101,7 @@ MEMBRANE	fly	FBgn0262624	Tmhs	Q9W068	0	7	LP10272p (Tetraspan membrane protein in
 MEMBRANE	fly	FBgn0263026	CG43321	M9NEV9	1	8	Essential MCU regulator, mitochondrial (Single-pass membrane	w
 MEMBRANE	fly	FBgn0263977	Tim17b	Q7PLT4	6	30	Translocase of the inner mitochondrial membrane 17b, isoform	w
 MEMBRANE	fly	FBgn0266186	Vamp7	Q7JYX5	28	117	Vesicle-associated membrane protein 7 (Synaptobrevin-like pr	w
-MEMBRANE	fly	FBgn0266580	Gp210	A1Z6H7	8	261	Nuclear pore membrane glycoprotein 210 (Nuclear pore protein	w
+MEMBRANE	fly	FBgn0266580	Gp210	A1Z6H7	8	267	Nuclear pore membrane glycoprotein 210 (Nuclear pore protein	w
 MEMBRANE	fly	FBgn0267976	Tim23	Q8MRW1	10	55	SD19278p (Translocase of inner mitochondrial membrane 23)	w
 MEMBRANE	human	A0A096LP01	SMIM26	A0A096LP01	7	59	Small integral membrane protein 26	w
 MEMBRANE	human	A0A1B0GU29	SMIM28	A0A1B0GU29	14	43	Small integral membrane protein 28	w
@@ -952,11 +952,11 @@ MEMBRANE-ASSOC	human	Q5T0T0	MARCHF8	Q5T0T0	12	85	E3 ubiquitin-protein ligase MAR
 MEMBRANE-ASSOCI	human	Q96T49	PPP1R16B	Q96T49	38	122	Protein phosphatase 1 regulatory inhibitor subunit 16B (Anky	w
 MEMBRANE-ASSOCIA	human	O00562	PITPNM1	O00562	11	84	Membrane-associated phosphatidylinositol transfer protein 1 	w
 MEMBRANE-ASSOCIATED	fly	FBgn0000426	SmF	Q24297	31	222	Small nuclear ribonucleoprotein F (snRNP-F) (Membrane-associ	w
-MEMBRANE-ASSOCIATED	fly	FBgn0011771	Hem	P55162	2	61	Membrane-associated protein Hem (dHem-2)	w
-MEMBRANE-ASSOCIATED	fly	FBgn0015737	Hmu	Q9VB46	31	256	Adipocyte plasma membrane-associated protein Hemomucin (Prot	w
+MEMBRANE-ASSOCIATED	fly	FBgn0011771	Hem	P55162	2	63	Membrane-associated protein Hem (dHem-2)	w
+MEMBRANE-ASSOCIATED	fly	FBgn0015737	Hmu	Q9VB46	31	261	Adipocyte plasma membrane-associated protein Hemomucin (Prot	w
 MEMBRANE-ASSOCIATED	fly	FBgn0029661	CG16781	M9PDP1	1	18	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MEMBRANE-ASSOCIATED	fly	FBgn0030015	CG10761	Q9W3I6	0	9	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-MEMBRANE-ASSOCIATED	fly	FBgn0031735	CG11029	Q9VMM8	485	2595	Phospholipase B1, membrane-associated (EC 3.1.1.3) (EC 3.1.1	w
+MEMBRANE-ASSOCIATED	fly	FBgn0031735	CG11029	Q9VMM8	487	2606	Phospholipase B1, membrane-associated (EC 3.1.1.3) (EC 3.1.1	w
 MEMBRANE-ASSOCIATED	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MEMBRANE-ASSOCIATED	fly	FBgn0039498	CG17991	Q9VB61	1	20	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MEMBRANE-ASSOCIATED	fly	FBgn0040298	Myt1	Q9NI63	151	1158	Membrane-associated tyrosine- and threonine-specific cdc2-in	w
@@ -1121,6 +1121,6 @@ MEMO1	yeast	P47085	MHO1	P47085	0	4	MEMO1 family protein MHO1	w
 MEMO1	zebrafish	Q803S3	memo1	Q803S3	0	7	Protein MEMO1	w
 MEMO1	zebrafish	Q803S3	memo1	Q803S3	0	7	Protein MEMO1	w
 MEMO1_HUMAN	human	Q9Y316	MEMO1	Q9Y316	13	131		
-MEMORY	fly	FBgn0000479	Pde4	Q9W4T4	9	115	3',5'-cyclic-AMP phosphodiesterase, isoform I (EC 3.1.4.53) 	w
+MEMORY	fly	FBgn0000479	Pde4	Q9W4T4	9	127	3',5'-cyclic-AMP phosphodiesterase, isoform I (EC 3.1.4.53) 	w
 MEMORY	fly	FBgn0037358	elm	Q9VNF9	4	11	Ethanol sensitive with low memory, isoform A (Ethanol sensit	w
 MEMORY	fly	FBgn0261673	nemy	Q7JR72	0	10	No extended memory, isoform A (EC 1.-.-.-, EC 1.16.1.7) (RE0	w

@@ -11,24 +11,24 @@ RECO	salmonella-typhimurium	P0A285	recO	P0A285	2	7	DNA repair protein RecO
 RECO	shigella-dysenteriae-serotype-1	Q32CV6	recO	Q32CV6	2	6	DNA repair protein RecO	
 RECO	staphylococcus-aureus-93061	Q2FY07	recO	Q2FY07	1	3	DNA repair protein RecO	
 RECO	streptococcus-pneumoniae	Q8DRN4	recO	Q8DRN4	1	5	DNA repair protein RecO	
-RECOGNITION	fly	FBgn0005654	Orc3	Q7K2L1	6	40	Origin recognition complex subunit 3	w
-RECOGNITION	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+RECOGNITION	fly	FBgn0005654	Orc3	Q7K2L1	7	44	Origin recognition complex subunit 3	w
+RECOGNITION	fly	FBgn0010278	Ssrp	Q05344	66	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
 RECOGNITION	fly	FBgn0010391	SrpRalpha	Q9U5L1	32	310	Signal recognition particle receptor subunit alpha homolog (	w
-RECOGNITION	fly	FBgn0010747	Srp54k	Q9V3D9	6	166	Signal recognition particle 54 kDa protein	w
-RECOGNITION	fly	FBgn0011509	SrpRbeta	Q9VSN9	13	337	Signal recognition particle receptor subunit beta	w
-RECOGNITION	fly	FBgn0015270	Orc2	Q24168	12	51	Origin recognition complex subunit 2 (DmORC2)	w
+RECOGNITION	fly	FBgn0010747	Srp54k	Q9V3D9	6	165	Signal recognition particle 54 kDa protein	w
+RECOGNITION	fly	FBgn0011509	SrpRbeta	Q9VSN9	13	349	Signal recognition particle receptor subunit beta	w
+RECOGNITION	fly	FBgn0015270	Orc2	Q24168	17	62	Origin recognition complex subunit 2 (DmORC2)	w
 RECOGNITION	fly	FBgn0015271	Orc5	Q24169	6	35	Origin recognition complex subunit 5	w
-RECOGNITION	fly	FBgn0015298	Srp19	P49963	8	148	Signal recognition particle 19 kDa protein (SRP19)	w
+RECOGNITION	fly	FBgn0015298	Srp19	P49963	9	151	Signal recognition particle 19 kDa protein (SRP19)	w
 RECOGNITION	fly	FBgn0023180	Orc6	Q9Y1B2	2	35	Origin recognition complex subunit 6	w
 RECOGNITION	fly	FBgn0023181	Orc4	Q9W102	5	45	Origin recognition complex subunit 4	w
-RECOGNITION	fly	FBgn0035827	Srp9	Q9VSC1	10	154	Signal recognition particle 9 kDa protein (SRP9)	w
-RECOGNITION	fly	FBgn0035947	Srp68	Q9VSS2	8	240	Signal recognition particle subunit SRP68 (SRP68) (Signal re	w
+RECOGNITION	fly	FBgn0035827	Srp9	Q9VSC1	10	153	Signal recognition particle 9 kDa protein (SRP9)	w
+RECOGNITION	fly	FBgn0035947	Srp68	Q9VSS2	10	248	Signal recognition particle subunit SRP68 (SRP68) (Signal re	w
 RECOGNITION	fly	FBgn0037906	PGRP-LB	A0A0B4K741	40	254	Peptidoglycan recognition protein LB, isoform D (EC 3.5.1.28	w
 RECOGNITION	fly	FBgn0038808	Srp14	Q9VDL0	6	118	Signal recognition particle 14 kDa protein (SRP14)	w
-RECOGNITION	fly	FBgn0038810	Srp72	Q9VDK7	59	157	Signal recognition particle subunit SRP72	w
+RECOGNITION	fly	FBgn0038810	Srp72	Q9VDK7	61	161	Signal recognition particle subunit SRP72	w
 RECOGNITION	fly	FBgn0043577	PGRP-SB2	M9PFJ1	35	246	Peptidoglycan recognition protein SB2, isoform B (EC 3.5.1.2	w
 RECOGNITION	fly	FBgn0260458	PGRP-LD	B7Z0C3	0	3	Peptidoglycan recognition protein LD, isoform D	w
-RECOGNITION	fly	FBgn0286788	Orc1	O16810	5	58	Origin recognition complex subunit 1 (DmORC1)	w
+RECOGNITION	fly	FBgn0286788	Orc1	O16810	10	69	Origin recognition complex subunit 1 (DmORC1)	w
 RECOGNITION	human	O43913	ORC5	O43913	17	258	Origin recognition complex subunit 5	w
 RECOGNITION	human	O43929	ORC4	O43929	17	324	Origin recognition complex subunit 4	w
 RECOGNITION	human	O75594	PGLYRP1	O75594	62	522	Peptidoglycan recognition protein 1 (Peptidoglycan recogniti	w
@@ -120,10 +120,10 @@ RECOMBINASE	fly	FBgn0033389	Rad51D	A1Z7R8	3	62	Rad51 recombinase D	w
 RECOMBINASE	human	Q0VDD7	BRME1	Q0VDD7	3	45	Break repair meiotic recombinase recruitment factor 1 (Pre-T	w
 RECOMBINASE	virus	A0A916P7H4	MYSEV_153	A0A916P7H4	9	301	Tyr recombinase domain-containing protein	w
 RECOMBINASE	worm	Q20104	CELE_F36D4.6	Q20104	0	17	Resolvase/invertase-type recombinase catalytic domain-contai	w
-RECOMBINATION	fly	FBgn0002716	mei-W68	Q7KPA5	4	29	Meiotic recombination protein W68 (EC 5.6.2.2) (SPO11 protei	w
-RECOMBINATION	fly	FBgn0002989	okr	O76460	2	47	DNA repair and recombination protein RAD54-like (DmRAD54) (E	w
-RECOMBINATION	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
-RECOMBINATION	fly	FBgn0016036	mei-P22	Q9VS36	6	153	Meiotic recombination protein P22	w
+RECOMBINATION	fly	FBgn0002716	mei-W68	Q7KPA5	4	32	Meiotic recombination protein W68 (EC 5.6.2.2) (SPO11 protei	w
+RECOMBINATION	fly	FBgn0002989	okr	O76460	6	53	DNA repair and recombination protein RAD54-like (DmRAD54) (E	w
+RECOMBINATION	fly	FBgn0010278	Ssrp	Q05344	66	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+RECOMBINATION	fly	FBgn0016036	mei-P22	Q9VS36	11	162	Meiotic recombination protein P22	w
 RECOMBINATION	fly	FBgn0031540	Pif1	Q9VQR3	1	22	ATP-dependent DNA helicase PIF1 (EC 3.6.4.12) (DNA repair an	w
 RECOMBINATION	human	O95072	REC8	O95072	20	121	Meiotic recombination protein REC8 homolog (Cohesin Rec8p)	w
 RECOMBINATION	human	P49959	MRE11	P49959	65	430	Double-strand break repair protein MRE11 (EC 3.1.-.-) (Meiot	w
@@ -179,7 +179,7 @@ RECOMBINATION-ACTIVATING	human	P15918	RAG1	P15918	11	286	V(D)J recombination-act
 RECOMBINATION-ACTIVATING	human	P55895	RAG2	P55895	12	143	V(D)J recombination-activating protein 2 (RAG-2)	w
 RECOMBINATION-ACTIVATING	zebrafish	O13033	rag1	O13033	6	108	V(D)J recombination-activating protein 1	w
 RECOMBINATION-ACTIVATING	zebrafish	O13034	rag2	O13034	2	26	V(D)J recombination-activating protein 2	w
-RECOMBINATION-DEFECTIVE	fly	FBgn0003227	rec	Q9VF30	2	49	DNA replication licensing factor REC (Protein mini chromosom	w
+RECOMBINATION-DEFECTIVE	fly	FBgn0003227	rec	Q9VF30	2	54	DNA replication licensing factor REC (Protein mini chromosom	w
 RECOMBINING	human	Q06330	RBPJ	Q06330	112	821	Recombining binding protein suppressor of hairless (CBF-1) (	w
 RECOMBINING	human	Q9UBG7	RBPJL	Q9UBG7	28	429	Recombining binding protein suppressor of hairless-like prot	w
 RECOVERIN	human	P35243	RCVRN	P35243	13	140	Recoverin (Cancer-associated retinopathy protein) (Protein C	w

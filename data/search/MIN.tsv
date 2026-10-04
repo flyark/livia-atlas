@@ -15,7 +15,7 @@ MINC	salmonella-typhimurium	P65359	minC	P65359	1	5	Septum site-determining prote
 MINC	shigella-dysenteriae-serotype-1	Q32H45	minC	Q32H45	1	6	Probable septum site-determining protein MinC	
 MINCLE	human	Q9ULY5	CLEC4E	Q9ULY5	91	620		
 MIND	fly	FBgn0260386	mtg	A0A0C4DHF5	101	576	Mind the gap, isoform E	w
-MIND	fly	FBgn0263601	mib1	Q9VUX2	7	63	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
+MIND	fly	FBgn0263601	mib1	Q9VUX2	8	69	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
 MIND	helicobacter-pylori	O25098	minD	O25098	0	5	Septum site-determining protein MinD	
 MIND	human	Q86YT6	MIB1	Q86YT6	30	324	E3 ubiquitin-protein ligase MIB1 (EC 2.3.2.27) (DAPK-interac	w
 MIND	human	Q96AX9	MIB2	Q96AX9	15	142	E3 ubiquitin-protein ligase MIB2 (EC 2.3.2.27) (Mind bomb ho	w
@@ -23,7 +23,7 @@ MIND	pseudomonas-aeruginosa	Q9HYZ6	minD	Q9HYZ6	1	7	Septum site-determining prote
 MIND	salmonella-typhimurium	Q8ZP10	minD	Q8ZP10	2	3	Septum site-determining protein MinD	
 MIND	shigella-dysenteriae-serotype-1	Q32H46	minD	Q32H46	2	3	Septum site-determining protein MinD	
 MIND	shigella-flexneri	P0AEZ6	minD	P0AEZ6	1	2	Septum site-determining protein MinD	
-MIND-BOMB	fly	FBgn0263601	mib1	Q9VUX2	7	63	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
+MIND-BOMB	fly	FBgn0263601	mib1	Q9VUX2	8	69	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
 MIND-MELD	fly	FBgn0259110	mmd	X2JE21	12	54	Mind-meld, isoform J (EC 3.4.24.-)	w
 MIND1	arabidopsis-thaliana	Q9MBA2	MIND1	Q9MBA2	1	12	Septum site-determining protein minD homolog, chloroplastic	
 MINDIN	human	Q9BUD6	SPON2	Q9BUD6	4	58	Spondin-2 (Differentially expressed in cancerous and non-can	w
@@ -67,8 +67,8 @@ MINERALOCORTICOID	human	P08235	NR3C2	P08235	75	257	Mineralocorticoid receptor (M
 MINERALOCORTICOID	zebrafish	A6YIH7	nr3c2	A6YIH7	8	21	Mineralocorticoid receptor	w
 MINERVA	human	Q96TA1	NIBAN2	Q96TA1	37	380	Protein Niban 2 (Meg-3) (Melanoma invasion by ERK) (MINERVA)	w
 MING	fly	FBgn0004878	cas	Q7M3M8	57	361	Transcription factor castor (Protein ming)	w
-MINI	fly	FBgn0003227	rec	Q9VF30	2	49	DNA replication licensing factor REC (Protein mini chromosom	w
-MINI	fly	FBgn0027948	msps	A0A0B4K700	4	20	Mini spindles, isoform D	w
+MINI	fly	FBgn0003227	rec	Q9VF30	2	54	DNA replication licensing factor REC (Protein mini chromosom	w
+MINI	fly	FBgn0027948	msps	A0A0B4K700	6	29	Mini spindles, isoform D	w
 MINI	human	P09668	CTSH	P09668	14	193	Pro-cathepsin H [Cleaved into: Cathepsin H mini chain; Cathe	w
 MINI-CHROMOSOME	fly	FBgn0031875	CG3430	Q9VM60	8	14	Mini-chromosome maintenance complex-binding protein (MCM-BP)	w
 MINI-CHROMOSOME	human	Q9BTE3	MCMBP	Q9BTE3	22	165	Mini-chromosome maintenance complex-binding protein (MCM-BP)	w
@@ -76,16 +76,16 @@ MINI-CHROMOSOME	human	Q9NXL9	MCM9	Q9NXL9	10	131	DNA helicase MCM9 (hMCM9) (EC 5.
 MINI-CHROMOSOME	zebrafish	Q803A6	mcmbp	Q803A6	7	14	Mini-chromosome maintenance complex-binding protein	w
 MINI-COLLAGEN	worm	O61783	CELE_R12E2.6	O61783	0	1	Mini-collagen	w
 MINIATURE	fly	FBgn0002577	m	Q9VYU8	0	7	Miniature (RE53556p)	w
-MINIATURE	fly	FBgn0086912	mbm	Q9VPM5	1	13	Protein mushroom body miniature	w
+MINIATURE	fly	FBgn0086912	mbm	Q9VPM5	3	17	Protein mushroom body miniature	w
 MINIBRA	human	Q13627	DYRK1A	Q13627	482	1769	Dual specificity tyrosine-phosphorylation-regulated kinase 1	w
 MINIBRAIN	worm	Q8WQL7	mbk-1	Q8WQL7	25	166	Dual specificity tyrosine-phosphorylation-regulated kinase m	w
 MINIBRAIN	worm	Q9XTF3	mbk-2	Q9XTF3	28	143	Dual specificity tyrosine-phosphorylation-regulated kinase m	w
 MINIBRAIN-RELATED	human	Q9Y463	DYRK1B	Q9Y463	364	1287	Dual specificity tyrosine-phosphorylation-regulated kinase 1	w
-MINICHROMOSOME	fly	FBgn0014861	Mcm2	P49735	9	109	DNA replication licensing factor Mcm2 (EC 3.6.4.12) (Minichr	w
-MINICHROMOSOME	fly	FBgn0017577	Mcm5	Q9VGW6	7	75	DNA replication licensing factor Mcm5 (EC 3.6.4.12) (Minichr	w
-MINICHROMOSOME	fly	FBgn0020633	Mcm7	Q9XYU0	6	95	DNA replication licensing factor Mcm7 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	fly	FBgn0014861	Mcm2	P49735	15	119	DNA replication licensing factor Mcm2 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	fly	FBgn0017577	Mcm5	Q9VGW6	7	77	DNA replication licensing factor Mcm5 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	fly	FBgn0020633	Mcm7	Q9XYU0	9	105	DNA replication licensing factor Mcm7 (EC 3.6.4.12) (Minichr	w
 MINICHROMOSOME	fly	FBgn0035227	Iml1	Q9W0E3	3	14	GATOR complex protein Iml1 (Increased minichromosome loss 1)	w
-MINICHROMOSOME	fly	FBgn0284442	Mcm3	Q9XYU1	5	80	DNA replication licensing factor Mcm3 (EC 3.6.4.12) (Minichr	w
+MINICHROMOSOME	fly	FBgn0284442	Mcm3	Q9XYU1	10	86	DNA replication licensing factor Mcm3 (EC 3.6.4.12) (Minichr	w
 MINICHROMOSOME	human	P49736	MCM2	P49736	34	665	DNA replication licensing factor MCM2 (EC 3.6.4.12) (Minichr	w
 MINICHROMOSOME	human	Q4G0Z9	MCMDC2	Q4G0Z9	12	85	Minichromosome maintenance domain-containing protein 2 (MCM 	w
 MINICHROMOSOME	human	Q9NXL9	MCM9	Q9NXL9	10	131	DNA helicase MCM9 (hMCM9) (EC 5.6.2.4) (DNA 3'-5' helicase M	w
@@ -101,7 +101,7 @@ MINIMUM	human	Q8WWG9	KCNE4	Q8WWG9	19	103	Potassium voltage-gated channel subfami
 MINIMUM	human	Q9Y6H6	KCNE3	Q9Y6H6	81	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
 MINIMUM	human	Q9Y6J6	KCNE2	Q9Y6J6	22	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
 MINION	human	A0A1B0GTQ4	MYMX	A0A1B0GTQ4	7	29	Protein myomixer (Microprotein inducer of fusion) (Protein m	w
-MINK	fly	FBgn0039250	Mink	Q9VC08	1	5	LD43724p (Mitotic spindle and nuclear protein)	
+MINK	fly	FBgn0039250	Mink	Q9VC08	2	6	LD43724p (Mitotic spindle and nuclear protein)	
 MINK	human	Q8N4C8	MINK1	Q8N4C8	70	305		
 MINK-RELATED	human	Q8WWG9	KCNE4	Q8WWG9	19	103	Potassium voltage-gated channel subfamily E member 4 (MinK-r	w
 MINK-RELATED	human	Q9Y6H6	KCNE3	Q9Y6H6	81	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
@@ -695,9 +695,9 @@ MINT	human	P0C7P0	CISD3	P0C7P0	21	195	CDGSH iron-sulfur domain-containing protei
 MINT1	human	Q02410	APBA1	Q02410	46	187		
 MINT2	human	Q99767	APBA2	Q99767	37	148		
 MINT3	human	O96018	APBA3	O96018	27	118		
-MINUS	fly	FBgn0261786	mi	Q9W1N8	2	9	LD45221p (Minus)	w
+MINUS	fly	FBgn0261786	mi	Q9W1N8	6	23	LD45221p (Minus)	w
 MINUS-99	human	Q9BV90	SNRNP25	Q9BV90	22	377	U11/U12 small nuclear ribonucleoprotein 25 kDa protein (U11/	w
-MINUTE	fly	FBgn0002579	RpL36	P49630	37	305	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
+MINUTE	fly	FBgn0002579	RpL36	P49630	37	306	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
 MINUTE	human	O15151	MDM4	O15151	45	289	Protein Mdm4 (Double minute 4 protein) (Mdm2-like p53-bindin	w
 MINUTE	human	Q00987	MDM2	Q00987	282	903	E3 ubiquitin-protein ligase Mdm2 (EC 2.3.2.27) (Double minut	w
 MINY1_HUMAN	human	Q8N5J2	MINDY1	Q8N5J2	10	106		

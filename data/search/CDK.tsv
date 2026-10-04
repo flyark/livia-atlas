@@ -21,8 +21,8 @@ CDK-ASSOCIATED	human	Q86Y37	CACUL1	Q86Y37	36	232	CDK2-associated and cullin doma
 CDK-ASSOCIATED	human	Q9P287	BCCIP	Q9P287	27	202	BRCA2 and CDKN1A-interacting protein (P21- and CDK-associate	w
 CDK-INTERACTING	human	P38936	CDKN1A	P38936	65	565	Cyclin-dependent kinase inhibitor 1 (CDK-interacting protein	w
 CDK1	dictyostelium-discoideum	P34112	cdk1	P34112	9	80	Cyclin-dependent kinase 1	
-CDK1	fly	FBgn0004106	Cdk1	P23572	134	1267	Cyclin-dependent kinase 1 (CDK1) (EC 2.7.11.22) (EC 2.7.11.2	w
-CDK1	fly	FBgn0004106	Cdk1	P23572	134	1267	Cyclin-dependent kinase 1 (CDK1) (EC 2.7.11.22) (EC 2.7.11.2	w
+CDK1	fly	FBgn0004106	Cdk1	P23572	150	1452	Cyclin-dependent kinase 1 (CDK1) (EC 2.7.11.22) (EC 2.7.11.2	w
+CDK1	fly	FBgn0004106	Cdk1	P23572	150	1452	Cyclin-dependent kinase 1 (CDK1) (EC 2.7.11.22) (EC 2.7.11.2	w
 CDK1	human	P06493	CDK1	P06493	246	1968	Cyclin-dependent kinase 1 (CDK1) (EC 2.7.11.22) (EC 2.7.11.2	
 CDK1	mus-musculus	P11440	Cdk1	P11440	39	211	Cyclin-dependent kinase 1	
 CDK1	rattus-norvegicus	P39951	Cdk1	P39951	33	216	Cyclin-dependent kinase 1	
@@ -92,7 +92,7 @@ CDK19_HUMAN	human	Q9BWU1	CDK19	Q9BWU1	176	1625
 CDK1_CAEEL	worm	P34556	cdk-1	P34556	31	103		
 CDK1_HUMAN	human	P06493	CDK1	P06493	246	1968		
 CDK1_YEAST	yeast	P00546	CDC28	P00546	30	407		
-CDK2	fly	FBgn0004107	Cdk2	P23573	81	1304	Cyclin-dependent kinase 2 (EC 2.7.11.22) (EC 2.7.11.23) (Cel	
+CDK2	fly	FBgn0004107	Cdk2	P23573	185	2159	Cyclin-dependent kinase 2 (EC 2.7.11.22) (EC 2.7.11.23) (Cel	
 CDK2	human	P24941	CDK2	P24941	213	1977	Cyclin-dependent kinase 2 (EC 2.7.11.22) (Cell division prot	
 CDK2	mus-musculus	P97377	Cdk2	P97377	34	192	Cyclin-dependent kinase 2	
 CDK2	rattus-norvegicus	Q63699	Cdk2	Q63699	36	187	Cyclin-dependent kinase 2	
@@ -135,7 +135,7 @@ CDK4I	human	P42771	CDKN2A	P42771	101	744	Cyclin-dependent kinase inhibitor 2A (C
 CDK4_CAEEL	worm	Q9XTR1	cdk-4	Q9XTR1	22	116		
 CDK4_HUMAN	human	P11802	CDK4	P11802	82	1601		
 CDK5	dictyostelium-discoideum	P34117	cdk5	P34117	6	40	Cyclin-dependent kinase 5 homolog	
-CDK5	fly	FBgn0013762	Cdk5	P48609	119	1181	Cyclin-dependent kinase 5 homolog (EC 2.7.11.22) (Cell divis	
+CDK5	fly	FBgn0013762	Cdk5	P48609	158	1370	Cyclin-dependent kinase 5 homolog (EC 2.7.11.22) (Cell divis	
 CDK5	human	Q00535	CDK5	Q00535	153	1538	Cyclin-dependent kinase 5 (EC 2.7.11.1) (Cell division prote	
 CDK5	human	Q13319	CDK5R2	Q13319	11	40	Cyclin-dependent kinase 5 activator 2 (CDK5 activator 2) (Cy	w
 CDK5	human	Q15078	CDK5R1	Q15078	75	184	Cyclin-dependent kinase 5 activator 1 (CDK5 activator 1) (Cy	w
@@ -168,7 +168,7 @@ CDK5RAP1	dictyostelium-discoideum	Q54KV4	cdk5rap1	Q54KV4	0	1	CDK5RAP1-like prote
 CDK5RAP1	human	Q96SZ6	CDK5RAP1	Q96SZ6	10	144	Mitochondrial tRNA methylthiotransferase CDK5RAP1 (EC 2.8.4.	
 CDK5RAP1	mus-musculus	Q8BTW8	Cdk5rap1	Q8BTW8	0	5	Mitochondrial tRNA methylthiotransferase CDK5RAP1	
 CDK5RAP1	rattus-norvegicus	Q9JLH6	Cdk5rap1	Q9JLH6	0	5	Mitochondrial tRNA methylthiotransferase CDK5RAP1	
-CDK5RAP1-LIKE	fly	FBgn0037816	CG6345	Q9VGZ1	0	3	CDK5RAP1-like protein	w
+CDK5RAP1-LIKE	fly	FBgn0037816	CG6345	Q9VGZ1	0	5	CDK5RAP1-like protein	w
 CDK5RAP1-LIKE	worm	Q09316	F25B5.5	Q09316	0	5	CDK5RAP1-like protein	w
 CDK5RAP2	human	Q96SN8	CDK5RAP2	Q96SN8	56	199	CDK5 regulatory subunit-associated protein 2 (CDK5 activator	
 CDK5RAP3	human	Q96JB5	CDK5RAP3	Q96JB5	19	171	CDK5 regulatory subunit-associated protein 3 (CDK5 activator	
@@ -186,7 +186,7 @@ CDK6	zebrafish	I3IT74	cdk6	I3IT74	26	147	cyclin-dependent kinase
 CDK6_HUMAN	human	Q00534	CDK6	Q00534	98	1564		
 CDK7	dictyostelium-discoideum	P54685	cdk7	P54685	5	78	Cyclin-dependent kinase 7	
 CDK7	fly	FBgn0024956	Mat1	Q7KPG8	23	496	CDK-activating kinase assembly factor MAT1 (CDK7/cyclin-H as	w
-CDK7	fly	FBgn0263237	Cdk7	Q24216	149	1267	Cyclin-dependent kinase 7 (EC 2.7.11.23) (Cell division prot	
+CDK7	fly	FBgn0263237	Cdk7	Q24216	149	1280	Cyclin-dependent kinase 7 (EC 2.7.11.23) (Cell division prot	
 CDK7	human	P50613	CDK7	P50613	234	1966	Cyclin-dependent kinase 7 (EC 2.7.11.22) (EC 2.7.11.23) (39 	
 CDK7	human	P51948	MNAT1	P51948	59	641	CDK-activating kinase assembly factor MAT1 (CDK7/cyclin-H as	w
 CDK7	mus-musculus	Q03147	Cdk7	Q03147	12	137	Cyclin-dependent kinase 7	
@@ -224,7 +224,7 @@ CDKAL1	human	Q5VV42	CDKAL1	Q5VV42	20	245	Threonylcarbamoyladenosine tRNA methylt
 CDKAL1	mus-musculus	Q91WE6	Cdkal1	Q91WE6	0	7	Threonylcarbamoyladenosine tRNA methylthiotransferase	
 CDKAL1	rattus-norvegicus	F1LV76	Cdkal1	F1LV76	0	3	tRNA-t(6)A37 methylthiotransferase	
 CDKAL1	zebrafish	Q6PG34	cdkal1	Q6PG34	0	8	Threonylcarbamoyladenosine tRNA methylthiotransferase	
-CDKAL1-LIKE	fly	FBgn0034214	CG6550	Q7K4W1	2	17	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
+CDKAL1-LIKE	fly	FBgn0034214	CG6550	Q7K4W1	2	19	Threonylcarbamoyladenosine tRNA methylthiotransferase (EC 2.	w
 CDKAL_HUMAN	human	Q5VV42	CDKAL1	Q5VV42	20	245		
 CDKAP1	human	O14519	CDK2AP1	O14519	26	150		
 CDKB1-1	arabidopsis-thaliana	P25859	CDKB1-1	P25859	56	206	Cyclin-dependent kinase B1-1	

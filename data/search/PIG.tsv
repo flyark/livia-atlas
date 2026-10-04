@@ -9,7 +9,7 @@ PIG-F	fly	FBgn0036893	PIG-F	Q9VW21	2	20	Phosphatidylinositol glycan anchor biosy
 PIG-G	fly	FBgn0033187	PIG-G	A1Z705	1	8	GPI ethanolamine phosphate transferase 2	
 PIG-H	fly	FBgn0037535	PIG-H	Q9VHX6	8	65	IP07787p (Phosphatidylinositol glycan anchor biosynthesis cl	
 PIG-H	human	Q14442	PIGH	Q14442	17	201	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
-PIG-K	fly	FBgn0023545	PIG-K	Q8T4E1	13	69	Putative GPI-anchor transamidase (GPI transamidase) (EC 3.-.	
+PIG-K	fly	FBgn0023545	PIG-K	Q8T4E1	14	70	Putative GPI-anchor transamidase (GPI transamidase) (EC 3.-.	
 PIG-L	fly	FBgn0038763	PIG-L	A0A0B4K6Q5	1	11	N-acetylglucosaminylphosphatidylinositol deacetylase (EC 3.5	
 PIG-L	human	Q9Y2B2	PIGL	Q9Y2B2	3	61	N-acetylglucosaminyl-phosphatidylinositol de-N-acetylase (EC	w
 PIG-M	fly	FBgn0034649	PIG-M	Q9W2E4	2	13	GPI mannosyltransferase 1 (EC 2.4.1.-) (GPI mannosyltransfer	
@@ -18,7 +18,7 @@ PIG-O	fly	FBgn0034346	PIG-O	A1ZB84	2	11	GPI ethanolamine phosphate transferase 3
 PIG-O	human	Q8TEQ8	PIGO	Q8TEQ8	6	111	GPI ethanolamine phosphate transferase 3, catalytic subunit 	w
 PIG-P	fly	FBgn0039405	PIG-P	Q8MSE4	4	17	GM30016p2 (Phosphatidylinositol glycan anchor biosynthesis c	
 PIG-P	worm	A0A2R8F5A2	CELE_Y48E1B.17	A0A2R8F5A2	0	1	PIG-P domain-containing protein	w
-PIG-Q	fly	FBgn0086448	PIG-Q	Q8IR17	1	16	Phosphatidylinositol glycan anchor biosynthesis class Q, iso	
+PIG-Q	fly	FBgn0086448	PIG-Q	Q8IR17	1	21	Phosphatidylinositol glycan anchor biosynthesis class Q, iso	
 PIG-S	fly	FBgn0265190	PIG-S	Q9VC10	5	24	Phosphatidylinositol glycan anchor biosynthesis class S (SD1	
 PIG-S	worm	Q22496	pigs-1	Q22496	3	6	GPI transamidase component PIG-S	w
 PIG-S	zebrafish	I3ISB5	pigs	I3ISB5	2	5	GPI transamidase component PIG-S isoform X2	w
@@ -78,8 +78,8 @@ PIGC-1	worm	O01259	pigc-1	O01259	2	12	Phosphatidylinositol N-acetylglucosaminylt
 PIGC_HUMAN	human	Q92535	PIGC	Q92535	5	42		
 PIGE	pseudomonas-aeruginosa	O69006	pigE	O69006	2	5	Sigma factor regulator, VreR	
 PIGEA-14	human	Q9Y3M2	CBY1	Q9Y3M2	36	211	Protein chibby homolog 1 (ARPP-binding protein) (Cytosolic l	w
-PIGEON	fly	FBgn0010309	pigeon	Q24118	2	24	Protein pigeon (Protein linotte)	w
-PIGEON	fly	FBgn0010309	pigeon	Q24118	2	24	Protein pigeon (Protein linotte)	w
+PIGEON	fly	FBgn0010309	pigeon	Q24118	2	25	Protein pigeon (Protein linotte)	w
+PIGEON	fly	FBgn0010309	pigeon	Q24118	2	25	Protein pigeon (Protein linotte)	w
 PIGEON	human	A4D1B5	GSAP	A4D1B5	4	36	Gamma-secretase-activating protein (GSAP) (Protein pigeon ho	w
 PIGF	dictyostelium-discoideum	Q54PB0	pigF	Q54PB0	2	3	Phosphatidylinositol glycan, class F	
 PIGF	human	Q07326	PIGF	Q07326	3	47	GPI ethanolamine phosphate transferase, stabilizing subunit 	
@@ -146,7 +146,7 @@ PIGMENTOSA	human	Q92834	RPGR	Q92834	15	125	X-linked retinitis pigmentosa GTPase 
 PIGMENTOSA	human	Q96KN7	RPGRIP1	Q96KN7	42	130	X-linked retinitis pigmentosa GTPase regulator-interacting p	w
 PIGMENTOSA	worm	Q5DX34	glo-4	Q5DX34	0	21	X-linked retinitis pigmentosa GTPase regulator homolog	w
 PIGMENTOSA	zebrafish	F1QM29	rpgrb	F1QM29	5	58	X-linked retinitis pigmentosa GTPase regulator	w
-PIGMENTOSUM	fly	FBgn0004698	Xpc	Q24595	7	58	Xeroderma pigmentosum, complementation group C	w
+PIGMENTOSUM	fly	FBgn0004698	Xpc	Q24595	11	69	Xeroderma pigmentosum, complementation group C	w
 PIGMENTOSUM	fly	FBgn0004832	Xpac	P28518	7	88	DNA repair protein complementing XP-A cells homolog (Xeroder	w
 PIGMENTOSUM	human	P23025	XPA	P23025	22	226	DNA repair protein complementing XP-A cells (Xeroderma pigme	w
 PIGMENTOSUM	human	P28715	ERCC5	P28715	20	154	DNA excision repair protein ERCC-5 (EC 3.1.-.-) (DNA repair 	w
@@ -192,7 +192,7 @@ PIGR-3	human	Q8IYS5	OSCAR	Q8IYS5	14	124	Osteoclast-associated immunoglobulin-lik
 PIGR3	human	Q8IYS5	OSCAR	Q8IYS5	14	124	Osteoclast-associated immunoglobulin-like receptor (Osteocla	w
 PIGR_HUMAN	human	P01833	PIGR	P01833	81	563		
 PIGS	dictyostelium-discoideum	Q54HE1	pigS	Q54HE1	3	5	Phosphatidylinositol glycan, class S	
-PIGS	fly	FBgn0029881	pigs	Q9W3Y4	1	8	GAS2-like protein pickled eggs	
+PIGS	fly	FBgn0029881	pigs	Q9W3Y4	2	9	GAS2-like protein pickled eggs	
 PIGS	human	Q96S52	PIGS	Q96S52	19	174	GPI-anchor transamidase component PIGS (Phosphatidylinositol	
 PIGS	mus-musculus	Q6PD26	Pigs	Q6PD26	3	15	GPI-anchor transamidase component PIGS	
 PIGS	rattus-norvegicus	Q5XI31	Pigs	Q5XI31	3	14	GPI-anchor transamidase component PIGS	

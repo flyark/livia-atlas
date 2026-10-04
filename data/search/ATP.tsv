@@ -5,7 +5,7 @@ ATP-3	worm	Q7JNG1	atp-3	Q7JNG1	3	62	Oligomycin sensitivity conferral protein
 ATP-4	worm	O16517	atp-4	O16517	3	45	ATP synthase-coupling factor 6, mitochondrial	
 ATP-5	worm	Q17763	atp-5	Q17763	6	103	ATP synthase subunit d, mitochondrial	
 ATP-6	worm	P24888	atp-6	P24888	1	40	ATP synthase subunit a	
-ATP-AMP	fly	FBgn0283494	Ak2	Q9U915	11	181	Adenylate kinase (EC 2.7.4.3) (ATP-AMP transphosphorylase) (	w
+ATP-AMP	fly	FBgn0283494	Ak2	Q9U915	11	182	Adenylate kinase (EC 2.7.4.3) (ATP-AMP transphosphorylase) (	w
 ATP-AMP	human	P00568	AK1	P00568	1	288	Adenylate kinase isoenzyme 1 (AK 1) (EC 2.7.4.3) (EC 2.7.4.4	w
 ATP-AMP	human	P54819	AK2	P54819	20	317	Adenylate kinase 2, mitochondrial (AK 2) (EC 2.7.4.3) (ATP-A	w
 ATP-AMP	human	Q96M32	AK7	Q96M32	4	55	Adenylate kinase 7 (AK 7) (EC 2.7.4.3) (EC 2.7.4.6) (ATP-AMP	w
@@ -15,11 +15,11 @@ ATP-B	human	Q99758	ABCA3	Q99758	2	85	Phospholipid-transporting ATPase ABCA3 (EC 
 ATP-BINDING	fly	FBgn0000241	bw	P12428	3	26	Protein brown (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
 ATP-BINDING	fly	FBgn0003515	st	P45843	1	6	Protein scarlet (EC 7.6.2.-) (ATP-binding cassette transport	w
 ATP-BINDING	fly	FBgn0003996	w	P10090	4	54	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
-ATP-BINDING	fly	FBgn0030336	Dph6	Q8MRI4	0	12	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
-ATP-BINDING	fly	FBgn0035244	Abcb7	Q9W0C5	2	25	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+ATP-BINDING	fly	FBgn0030336	Dph6	Q8MRI4	1	20	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
+ATP-BINDING	fly	FBgn0035244	Abcb7	Q9W0C5	2	31	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
 ATP-BINDING	fly	FBgn0038376	Hmt-1	Q9VF20	11	288	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
 ATP-BINDING	fly	FBgn0039890	Abcd1	Q7JUN3	1	16	ATP-binding cassette sub-family D member 1 (EC 7.6.2.4)	w
-ATP-BINDING	fly	FBgn0086706	pix	Q9VSS1	7	192	Protein Pixie (ATP-binding cassette sub-family E member 1)	w
+ATP-BINDING	fly	FBgn0086706	pix	Q9VSS1	7	191	Protein Pixie (ATP-binding cassette sub-family E member 1)	w
 ATP-BINDING	human	O14530	TXNDC9	O14530	36	207	Thioredoxin domain-containing protein 9 (ATP-binding protein	w
 ATP-BINDING	human	O14678	ABCD4	O14678	2	81	Lysosomal cobalamin transporter ABCD4 (EC 7.6.2.8) (ATP-bind	w
 ATP-BINDING	human	O15438	ABCC3	O15438	4	51	ATP-binding cassette sub-family C member 3 (EC 7.6.2.-) (EC 	w
@@ -105,7 +105,7 @@ ATP-BINDING	zebrafish	Q2Q444	abcg2d	Q2Q444	1	22	Broad substrate specificity ATP-
 ATP-BINDING	zebrafish	Q56A55	abcb8	Q56A55	1	6	Mitochondrial potassium channel ATP-binding subunit	w
 ATP-BINDING	zebrafish	Q6TNW3	abce1	Q6TNW3	7	183	ATP-binding cassette sub-family E member 1	w
 ATP-BL	human	Q9Y2B5	VPS9D1	Q9Y2B5	11	84	VPS9 domain-containing protein 1 (Protein ATP-BL)	w
-ATP-CITRATE	fly	FBgn0020236	Acly	Q7KN85	0	162	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
+ATP-CITRATE	fly	FBgn0020236	Acly	Q7KN85	0	163	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
 ATP-CITRATE	human	P53396	ACLY	P53396	4	283	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
 ATP-CITRATE	worm	P53585	acly-1	P53585	1	21	Probable ATP-citrate synthase	w
 ATP-CITRATE	worm	P90731	acly-2	P90731	1	24	ATP-citrate synthase	w
@@ -113,28 +113,28 @@ ATP-CITRATE	zebrafish	A0A8M1N0U7	aclya	A0A8M1N0U7	1	24	ATP-citrate synthase	w
 ATP-CITRATE	zebrafish	R4GEU0	aclyb	R4GEU0	1	24	ATP-citrate synthase	w
 ATP-DEPENDENT	fly	FBgn0001179	hay	Q02870	23	493	General transcription and DNA repair factor IIH helicase/tra	w
 ATP-DEPENDENT	fly	FBgn0001330	kz	O46072	11	91	Probable ATP-dependent RNA helicase kurz (EC 3.6.4.13)	w
-ATP-DEPENDENT	fly	FBgn0001942	eIF4A	Q02748	14	204	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
-ATP-DEPENDENT	fly	FBgn0003071	Pfk	A0A0B4K7L1	7	227	ATP-dependent 6-phosphofructokinase (ATP-PFK) (Phosphofructo	w
-ATP-DEPENDENT	fly	FBgn0003261	Rm62	P19109	12	152	ATP-dependent RNA helicase p62 (EC 3.6.4.13)	w
+ATP-DEPENDENT	fly	FBgn0001942	eIF4A	Q02748	14	206	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
+ATP-DEPENDENT	fly	FBgn0003071	Pfk	A0A0B4K7L1	7	231	ATP-dependent 6-phosphofructokinase (ATP-PFK) (Phosphofructo	w
+ATP-DEPENDENT	fly	FBgn0003261	Rm62	P19109	14	162	ATP-dependent RNA helicase p62 (EC 3.6.4.13)	w
 ATP-DEPENDENT	fly	FBgn0003483	spn-E	Q9VF26	5	29	Probable ATP-dependent RNA helicase spindle-E (EC 3.6.4.13) 	w
-ATP-DEPENDENT	fly	FBgn0004419	me31B	P23128	26	444	ATP-dependent RNA helicase me31b (EC 3.6.4.13) (Maternal exp	w
+ATP-DEPENDENT	fly	FBgn0004419	me31B	P23128	27	449	ATP-dependent RNA helicase me31b (EC 3.6.4.13) (Maternal exp	w
 ATP-DEPENDENT	fly	FBgn0004556	Dbp73D	P26802	5	50	Probable ATP-dependent RNA helicase Dbp73D (DEAD box protein	w
 ATP-DEPENDENT	fly	FBgn0010220	Dbp45A	Q07886	2	57	Probable ATP-dependent RNA helicase Dbp45A (DEAD box protein	w
 ATP-DEPENDENT	fly	FBgn0011774	Irbp	Q23976	145	1181	ATP-dependent DNA helicase 2 subunit 1 (EC 3.6.4.12) (ATP-de	w
-ATP-DEPENDENT	fly	FBgn0014189	Hel25E	Q27268	19	146	ATP-dependent RNA helicase WM6 (DEAD box protein UAP56) (Dmr	w
-ATP-DEPENDENT	fly	FBgn0015075	Ddx1	Q9VNV3	3	38	ATP-dependent RNA helicase Ddx1 (DEAD box protein 1) (EC 3.6	w
+ATP-DEPENDENT	fly	FBgn0014189	Hel25E	Q27268	19	155	ATP-dependent RNA helicase WM6 (DEAD box protein UAP56) (Dmr	w
+ATP-DEPENDENT	fly	FBgn0015075	Ddx1	Q9VNV3	3	39	ATP-dependent RNA helicase Ddx1 (DEAD box protein 1) (EC 3.6	w
 ATP-DEPENDENT	fly	FBgn0015331	abs	Q9V3C0	1	26	ATP-dependent RNA helicase abstrakt (DEAD box protein abstra	w
 ATP-DEPENDENT	fly	FBgn0023395	Chd3	O16102	14	383	Chromodomain-helicase-DNA-binding protein 3 (EC 3.6.4.12) (A	w
-ATP-DEPENDENT	fly	FBgn0027602	CG8611	Q86B47	4	71	Probable ATP-dependent RNA helicase CG8611 (EC 3.6.4.13)	w
-ATP-DEPENDENT	fly	FBgn0027620	Acf	Q9V9T4	10	90	ATP-dependent chromatin assembly factor large subunit	w
+ATP-DEPENDENT	fly	FBgn0027602	CG8611	Q86B47	5	75	Probable ATP-dependent RNA helicase CG8611 (EC 3.6.4.13)	w
+ATP-DEPENDENT	fly	FBgn0027620	Acf	Q9V9T4	11	100	ATP-dependent chromatin assembly factor large subunit	w
 ATP-DEPENDENT	fly	FBgn0029880	CG14443	Q9W3Y5	3	22	Putative ATP-dependent RNA helicase CG14443 (EC 3.6.4.13)	w
-ATP-DEPENDENT	fly	FBgn0030631	Prp5	Q9VXW2	10	65	ATP-dependent RNA helicase (EC 3.6.4.13)	w
-ATP-DEPENDENT	fly	FBgn0030855	CG5800	Q9VX34	6	68	ATP-dependent RNA helicase (EC 3.6.4.13)	w
+ATP-DEPENDENT	fly	FBgn0030631	Prp5	Q9VXW2	12	71	ATP-dependent RNA helicase (EC 3.6.4.13)	w
+ATP-DEPENDENT	fly	FBgn0030855	CG5800	Q9VX34	7	73	ATP-dependent RNA helicase (EC 3.6.4.13)	w
 ATP-DEPENDENT	fly	FBgn0031540	Pif1	Q9VQR3	1	22	ATP-dependent DNA helicase PIF1 (EC 3.6.4.12) (DNA repair an	w
 ATP-DEPENDENT	fly	FBgn0032194	ath	Q9VL25	6	63	ATP-dependent RNA helicase DHX33 (EC 3.6.4.13) (DEAH box pro	w
 ATP-DEPENDENT	fly	FBgn0032229	ClpP	Q9VKY3	7	65	ATP-dependent Clp protease proteolytic subunit (EC 3.4.21.92	w
 ATP-DEPENDENT	fly	FBgn0032919	pths	Q9VIF6	9	120	ATP-dependent RNA helicase DDX47 (EC 3.6.4.13) (DEAD box pro	w
-ATP-DEPENDENT	fly	FBgn0033160	Dhx15	Q7K3M5	23	166	ATP-dependent RNA helicase DHX15 homolog (EC 3.6.4.13)	w
+ATP-DEPENDENT	fly	FBgn0033160	Dhx15	Q7K3M5	24	172	ATP-dependent RNA helicase DHX15 homolog (EC 3.6.4.13)	w
 ATP-DEPENDENT	fly	FBgn0034792	YME1L	F3YDF1	3	84	ATP-dependent zinc metalloprotease YME1L (EC 3.4.24.-) (YME1	w
 ATP-DEPENDENT	fly	FBgn0036754	ais	Q9VVK8	1	29	Probable ATP-dependent RNA helicase DDX52 (EC 3.6.4.13) (DEA	w
 ATP-DEPENDENT	fly	FBgn0036848	Naxd	Q9VVW8	5	60	ATP-dependent (S)-NAD(P)H-hydrate dehydratase (EC 4.2.1.93) 	w
@@ -142,10 +142,10 @@ ATP-DEPENDENT	fly	FBgn0037205	BoYb	Q9VNP5	1	37	Putative ATP-dependent RNA helica
 ATP-DEPENDENT	fly	FBgn0037232	Suv3	Q9VN03	0	42	ATP-dependent RNA helicase SUV3 homolog, mitochondrial (EC 3	w
 ATP-DEPENDENT	fly	FBgn0037561	CG9630	Q9VHU1	7	122	Probable ATP-dependent RNA helicase DDX55 homolog (DEAD box 	w
 ATP-DEPENDENT	fly	FBgn0038889	Fancm	Q9VDA0	3	64	DEAD-box ATP-dependent DNA helicase Fancm (EC 5.6.2.4) (Fanc	w
-ATP-DEPENDENT	fly	FBgn0039338	XNP	Q9GQN5	12	172	Transcriptional regulator ATRX homolog (EC 3.6.4.12) (ATP-de	w
+ATP-DEPENDENT	fly	FBgn0039338	XNP	Q9GQN5	16	182	Transcriptional regulator ATRX homolog (EC 3.6.4.12) (ATP-de	w
 ATP-DEPENDENT	fly	FBgn0041627	Ku80	Q9I7M8	9	109	ATP-dependent DNA helicase II subunit 2 (EC 3.6.4.12)	w
 ATP-DEPENDENT	fly	FBgn0051755	SoYb	Q9VL52	6	51	Putative ATP-dependent RNA helicase SoYb (EC 3.6.4.13) (Sist	w
-ATP-DEPENDENT	fly	FBgn0086895	pea	A1Z9L3	7	86	ATP-dependent RNA helicase DHX8 (EC 3.6.4.13) (Peanuts)	w
+ATP-DEPENDENT	fly	FBgn0086895	pea	A1Z9L3	9	92	ATP-dependent RNA helicase DHX8 (EC 3.6.4.13) (Peanuts)	w
 ATP-DEPENDENT	fly	FBgn0266581	pit	Q9VD51	22	173	Probable ATP-dependent RNA helicase pitchoune (EC 3.6.4.13)	w
 ATP-DEPENDENT	fly	FBgn0283442	vas	P09052	5	67	ATP-dependent RNA helicase vasa (EC 3.6.4.13) (Antigen Mab46	w
 ATP-DEPENDENT	human	A2PYH4	HFM1	A2PYH4	9	150	Probable ATP-dependent DNA helicase HFM1 (EC 5.6.2.4) (DNA 3	w
@@ -419,7 +419,7 @@ ATP-MG	human	Q6NUK1	SLC25A24	Q6NUK1	1	231	Mitochondrial adenyl nucleotide antipo
 ATP-MG	human	Q8N5S1	SLC25A41	Q8N5S1	6	170	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	w
 ATP-MG	human	Q9BV35	SLC25A23	Q9BV35	0	127	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	w
 ATP-NADH	yeast	P32622	YEF1	P32622	1	9	ATP-NADH kinase YEF1	w
-ATP-PFK	fly	FBgn0003071	Pfk	A0A0B4K7L1	7	227	ATP-dependent 6-phosphofructokinase (ATP-PFK) (Phosphofructo	w
+ATP-PFK	fly	FBgn0003071	Pfk	A0A0B4K7L1	7	231	ATP-dependent 6-phosphofructokinase (ATP-PFK) (Phosphofructo	w
 ATP-PFK	human	P08237	PFKM	P08237	4	184	ATP-dependent 6-phosphofructokinase, muscle type (ATP-PFK) (	w
 ATP-PFK	human	P17858	PFKL	P17858	5	212	ATP-dependent 6-phosphofructokinase, liver type (ATP-PFK) (P	w
 ATP-PFK	human	Q01813	PFKP	Q01813	5	389	ATP-dependent 6-phosphofructokinase, platelet type (ATP-PFK)	w
@@ -443,7 +443,7 @@ ATP-SENSITIVE	zebrafish	F1QQH0	kcnj15	F1QQH0	7	29	ATP-sensitive inward rectifier
 ATP-SENSITIVE	zebrafish	Q1L8I4	kcnj1a.1	Q1L8I4	2	3	ATP-sensitive inward rectifier potassium channel 1a.1 isofor	w
 ATP-SENSITIVE	zebrafish	Q2HX26	kcnj11	Q2HX26	1	12	ATP-sensitive inward rectifier potassium channel 11	w
 ATP-SENSITIVE	zebrafish	Q5RH88	kcnj8	Q5RH88	1	12	ATP-sensitive inward rectifier potassium channel 8	w
-ATP-SPECIFIC	fly	FBgn0037643	ScsbetaA	Q95U38	12	159	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+ATP-SPECIFIC	fly	FBgn0037643	ScsbetaA	Q95U38	12	160	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
 ATP-SPECIFIC	human	Q9P2R7	SUCLA2	Q9P2R7	21	271	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
 ATP-SYNTHESIS	human	Q9UKK9	NUDT5	Q9UKK9	13	127	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	w
 ATP-UTILIZING	human	Q9NRL2	BAZ1A	Q9NRL2	40	201	Bromodomain adjacent to zinc finger domain protein 1A (ATP-d	w
@@ -791,7 +791,7 @@ ATP6AP1L	human	Q52LC2	ATP6AP1L	Q52LC2	7	65	V-type proton ATPase subunit S1-like 
 ATP6AP1L	mus-musculus	D3Z5W0	Atp6ap1l	D3Z5W0	1	36	V-type proton ATPase subunit S1	
 ATP6AP1L	rattus-norvegicus	D3ZA00	Atp6ap1l	D3ZA00	1	36	V-type proton ATPase subunit S1	
 ATP6AP1LA	zebrafish	A0AB13AAZ5	atp6ap1la	A0AB13AAZ5	1	33	ATPase H+ transporting accessory protein 1 like a precursor	
-ATP6AP2	fly	FBgn0037671	ATP6AP2	Q9VHG4	374	2641	ATPase H(+)-transporting accessory protein 2 (Renin homolog 	
+ATP6AP2	fly	FBgn0037671	ATP6AP2	Q9VHG4	377	2652	ATPase H(+)-transporting accessory protein 2 (Renin homolog 	
 ATP6AP2	human	O75787	ATP6AP2	O75787	22	343	Renin receptor (ATPase H(+)-transporting lysosomal accessory	
 ATP6AP2	mus-musculus	Q9CYN9	Atp6ap2	Q9CYN9	4	57	Renin receptor	
 ATP6AP2	rattus-norvegicus	Q6AXS4	Atp6ap2	Q6AXS4	2	55	Renin receptor	
@@ -938,7 +938,7 @@ ATP8	human	Q9Y2Q0	ATP8A1	Q9Y2Q0	12	80	Phospholipid-transporting ATPase IA (EC 7.
 ATP8	schizosaccharomyces-pombe	P21536	atp8	P21536	5	22	ATP synthase protein 8	
 ATP8	yeast	P00856	ATP8	P00856	3	31	ATP synthase protein 8	
 ATP8	zea-mays	Q6R9G5	atp8	Q6R9G5	5	33	H(+)-transporting two-sector ATPase	
-ATP8A	fly	FBgn0259221	ATP8A	B7YZF8	3	21	Phospholipid-transporting ATPase (EC 7.6.2.1)	
+ATP8A	fly	FBgn0259221	ATP8A	B7YZF8	3	28	Phospholipid-transporting ATPase (EC 7.6.2.1)	
 ATP8A1	human	Q9Y2Q0	ATP8A1	Q9Y2Q0	12	80	Phospholipid-transporting ATPase IA (EC 7.6.2.1) (ATPase cla	
 ATP8A1	mus-musculus	P70704	Atp8a1	P70704	3	30	Phospholipid-transporting ATPase IA	
 ATP8A1	rattus-norvegicus	D3ZJK8	Atp8a1	D3ZJK8	3	16	P-type ATPase N-terminal domain-containing protein	
@@ -1016,15 +1016,15 @@ ATPAF2	human	Q8N5M1	ATPAF2	Q8N5M1	17	132	ATP synthase mitochondrial F1 complex a
 ATPAF2	mus-musculus	Q91YY4	Atpaf2	Q91YY4	2	5	ATP synthase mitochondrial F1 complex assembly factor 2	
 ATPAF2	rattus-norvegicus	D3ZTW7	Atpaf2	D3ZTW7	3	4	ATP synthase mitochondrial F1 complex assembly factor 2	
 ATPAF2	zebrafish	A3KP55	atpaf2	A3KP55	3	9	ATP synthase mitochondrial F1 complex assembly factor 2	
-ATPALPHA	fly	FBgn0002921	Atpalpha	P13607	10	174	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	
-ATPALPHA_108_1041	fly	FBgn0002921	Atpalpha	P13607	10	174		
-ATPASE	fly	FBgn0000346	comt	P46461	5	90	Vesicle-fusing ATPase 1 (EC 3.6.4.6) (N-ethylmaleimide-sensi	w
-ATPASE	fly	FBgn0002921	Atpalpha	P13607	10	174	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	w
-ATPASE	fly	FBgn0005671	Vha55	P31409	13	206	V-type proton ATPase subunit B (V-ATPase subunit B) (V-ATPas	w
-ATPASE	fly	FBgn0011604	Iswi	Q24368	23	231	Chromatin-remodeling complex ATPase chain Iswi (EC 3.6.4.-) 	w
+ATPALPHA	fly	FBgn0002921	Atpalpha	P13607	10	176	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	
+ATPALPHA_108_1041	fly	FBgn0002921	Atpalpha	P13607	10	176		
+ATPASE	fly	FBgn0000346	comt	P46461	5	95	Vesicle-fusing ATPase 1 (EC 3.6.4.6) (N-ethylmaleimide-sensi	w
+ATPASE	fly	FBgn0002921	Atpalpha	P13607	10	176	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	w
+ATPASE	fly	FBgn0005671	Vha55	P31409	13	214	V-type proton ATPase subunit B (V-ATPase subunit B) (V-ATPas	w
+ATPASE	fly	FBgn0011604	Iswi	Q24368	24	234	Chromatin-remodeling complex ATPase chain Iswi (EC 3.6.4.-) 	w
 ATPASE	fly	FBgn0013563	Pex1	Q9VUC7	2	22	Peroxisomal ATPase PEX1 (Peroxin-1)	w
-ATPASE	fly	FBgn0015776	nrv1	Q24046	196	2408	Sodium/potassium-transporting ATPase subunit beta-1 (Protein	w
-ATPASE	fly	FBgn0015777	nrv2	Q24048	223	2413	Sodium/potassium-transporting ATPase subunit beta-2 (Protein	w
+ATPASE	fly	FBgn0015776	nrv1	Q24046	196	2419	Sodium/potassium-transporting ATPase subunit beta-1 (Protein	w
+ATPASE	fly	FBgn0015777	nrv2	Q24048	224	2418	Sodium/potassium-transporting ATPase subunit beta-2 (Protein	w
 ATPASE	fly	FBgn0016119	ATPsynCF6	Q24407	9	135	ATP synthase-coupling factor 6, mitochondrial (ATPase subuni	w
 ATPASE	fly	FBgn0016120	ATPsynD	Q24251	6	158	ATP synthase subunit d, mitochondrial (ATPase subunit d)	w
 ATPASE	fly	FBgn0019644	ATPsynB	Q94516	13	129	ATP synthase subunit b, mitochondrial (ATPase subunit b) (FO	w
@@ -1033,15 +1033,15 @@ ATPASE	fly	FBgn0027779	VhaSFD	Q9V3J1	7	97	Vacuolar H[+]-ATPase SFD subunit	w
 ATPASE	fly	FBgn0028662	VhaPPA1-1	Q9VFE3	11	89	V-type proton ATPase 16 kDa proteolipid subunit c (Vacuolar 	w
 ATPASE	fly	FBgn0028663	VhaM9.7-b	Q9VP18	9	74	V-type proton ATPase subunit	w
 ATPASE	fly	FBgn0028664	VhaM9.7-c	Q9VZG7	10	77	V-type proton ATPase subunit	w
-ATPASE	fly	FBgn0028667	Vha16-3	Q8IQG3	11	139	V-type proton ATPase proteolipid subunit	w
+ATPASE	fly	FBgn0028667	Vha16-3	Q8IQG3	12	147	V-type proton ATPase proteolipid subunit	w
 ATPASE	fly	FBgn0028668	Vha16-2	Q9VTI6	11	106	V-type proton ATPase proteolipid subunit	w
 ATPASE	fly	FBgn0028669	Vha100-3	A1ZBF7	17	66	V-type proton ATPase subunit a	w
-ATPASE	fly	FBgn0028670	Vha100-2	Q9VE75	16	106	V-type proton ATPase subunit a	w
+ATPASE	fly	FBgn0028670	Vha100-2	Q9VE75	16	109	V-type proton ATPase subunit a	w
 ATPASE	fly	FBgn0028671	Vha100-1	Q9XZ10	18	109	V-type proton ATPase subunit a	w
-ATPASE	fly	FBgn0028684	Rpt5	Q9V3V6	14	192	26S proteasome regulatory complex subunit p50 (GH12068p) (Re	w
+ATPASE	fly	FBgn0028684	Rpt5	Q9V3V6	14	193	26S proteasome regulatory complex subunit p50 (GH12068p) (Re	w
 ATPASE	fly	FBgn0028685	Rpt4	Q9W414	10	192	Regulatory particle triple-A ATPase 4 (EC 3.6.1.3)	w
-ATPASE	fly	FBgn0028686	Rpt3	Q9V405	9	141	26S proteasome regulatory complex subunit p48A (CG16916 prot	w
-ATPASE	fly	FBgn0028687	Rpt1	Q7KMQ0	16	262	26S proteasome regulatory subunit 7 (Proteasome 26S subunit 	w
+ATPASE	fly	FBgn0028686	Rpt3	Q9V405	10	154	26S proteasome regulatory complex subunit p48A (CG16916 prot	w
+ATPASE	fly	FBgn0028687	Rpt1	Q7KMQ0	17	262	26S proteasome regulatory subunit 7 (Proteasome 26S subunit 	w
 ATPASE	fly	FBgn0030746	CG9981	Q9VXG7	1	3	Phospholipid-transporting ATPase (EC 7.6.2.1)	w
 ATPASE	fly	FBgn0030747	CG4301	Q9VXG6	1	4	Phospholipid-transporting ATPase (EC 7.6.2.1)	w
 ATPASE	fly	FBgn0032120	CG33298	Q7KTG6	1	12	Phospholipid-transporting ATPase (EC 7.6.2.1)	w
@@ -1050,15 +1050,15 @@ ATPASE	fly	FBgn0032373	Vha100-5	Q9VKF6	15	65	V-type proton ATPase subunit a	w
 ATPASE	fly	FBgn0032464	Vha68-3	Q9VK47	5	55	H(+)-transporting two-sector ATPase (EC 7.1.2.2)	w
 ATPASE	fly	FBgn0033191	CG1598	Q7JWD3	2	48	ATPase ASNA1 homolog (EC 3.6.-.-) (Arsenical pump-driving AT	w
 ATPASE	fly	FBgn0033706	Vha36-2	A1Z8V7	8	48	FI16532p1 (Vacuolar H[+] ATPase 36kD subunit 2)	w
-ATPASE	fly	FBgn0033754	Ak6	Q7JYV7	16	104	Adenylate kinase isoenzyme 6 homolog (AK6) (DAK6) (EC 2.7.4.	w
+ATPASE	fly	FBgn0033754	Ak6	Q7JYV7	16	106	Adenylate kinase isoenzyme 6 homolog (AK6) (DAK6) (EC 2.7.4.	w
 ATPASE	fly	FBgn0034792	YME1L	F3YDF1	3	84	ATP-dependent zinc metalloprotease YME1L (EC 3.4.24.-) (YME1	w
-ATPASE	fly	FBgn0035443	CG12010	Q8IRD1	2	93	AAA+ ATPase domain-containing protein	w
+ATPASE	fly	FBgn0035443	CG12010	Q8IRD1	2	94	AAA+ ATPase domain-containing protein	w
 ATPASE	fly	FBgn0035521	VhaM9.7-a	Q9VZE9	11	74	V-type proton ATPase subunit	w
-ATPASE	fly	FBgn0036224	Rpt4R	Q9VTQ9	6	75	AT06668p (Regulatory particle triple-A ATPase 4-related, iso	w
+ATPASE	fly	FBgn0036224	Rpt4R	Q9VTQ9	6	74	AT06668p (Regulatory particle triple-A ATPase 4-related, iso	w
 ATPASE	fly	FBgn0036998	CG5969	Q9VPE4	6	13	Vacuolar ATPase assembly integral membrane protein VMA21 hom	w
 ATPASE	fly	FBgn0037402	Vha14-2	Q9VNL3	4	52	V-type proton ATPase subunit F 2 (V-ATPase subunit F 2) (Vac	w
-ATPASE	fly	FBgn0037671	ATP6AP2	Q9VHG4	374	2641	ATPase H(+)-transporting accessory protein 2 (Renin homolog 	w
-ATPASE	fly	FBgn0037742	Rpt3R	Q9VH79	5	70	RE01104p (Regulatory particle triple-A ATPase 3-related, iso	w
+ATPASE	fly	FBgn0037671	ATP6AP2	Q9VHG4	377	2652	ATPase H(+)-transporting accessory protein 2 (Renin homolog 	w
+ATPASE	fly	FBgn0037742	Rpt3R	Q9VH79	5	69	RE01104p (Regulatory particle triple-A ATPase 3-related, iso	w
 ATPASE	fly	FBgn0037989	ATP8B	Q9VGD4	0	8	Phospholipid-transporting ATPase (EC 7.6.2.1)	w
 ATPASE	fly	FBgn0038458	VhaM9.7-d	Q9VEQ6	12	72	V-type proton ATPase subunit	w
 ATPASE	fly	FBgn0038613	Vha100-4	Q9VE77	17	68	V-type proton ATPase subunit a	w
@@ -1067,17 +1067,17 @@ ATPASE	fly	FBgn0039830	ATPsynC	Q6NN09	12	165	ATPase protein 9 (ATPase subunit c)
 ATPASE	fly	FBgn0040377	Vha36-3	Q9NEF6	5	44	V-type proton ATPase subunit D 2 (V-ATPase subunit D 2) (Vac	w
 ATPASE	fly	FBgn0051495	CG31495	Q8ING5	5	120	Vesicle-fusing ATPase (EC 3.6.4.6)	w
 ATPASE	fly	FBgn0051729	CG31729	Q9VK06	10	65	Phospholipid-transporting ATPase (EC 7.6.2.1)	w
-ATPASE	fly	FBgn0052000	anne	A8DZ26	0	16	Cation-transporting ATPase (EC 7.2.2.-)	w
+ATPASE	fly	FBgn0052000	anne	A8DZ26	0	18	Cation-transporting ATPase (EC 7.2.2.-)	w
 ATPASE	fly	FBgn0085442	NKAIN	A6MHQ4	3	10	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
 ATPASE	fly	FBgn0259214	PMCA	Q59DP9	4	63	Calcium-transporting ATPase (EC 7.2.2.10)	w
-ATPASE	fly	FBgn0259221	ATP8A	B7YZF8	3	21	Phospholipid-transporting ATPase (EC 7.6.2.1)	w
-ATPASE	fly	FBgn0262512	Vha14-1	Q24583	5	75	V-type proton ATPase subunit F 1 (V-ATPase subunit F 1) (V-A	w
+ATPASE	fly	FBgn0259221	ATP8A	B7YZF8	3	28	Phospholipid-transporting ATPase (EC 7.6.2.1)	w
+ATPASE	fly	FBgn0262512	Vha14-1	Q24583	5	78	V-type proton ATPase subunit F 1 (V-ATPase subunit F 1) (V-A	w
 ATPASE	fly	FBgn0262513	Vha16-4	A1ZAL7	6	93	V-type proton ATPase proteolipid subunit	w
 ATPASE	fly	FBgn0262514	VhaPPA1-2	Q9VFE5	12	85	V-type proton ATPase 16 kDa proteolipid subunit c (Vacuolar 	w
-ATPASE	fly	FBgn0262515	VhaAC45	Q7JR49	258	2427	V-type proton ATPase subunit S1 (Vacuolar H(+) ATPase AC45 a	w
+ATPASE	fly	FBgn0262515	VhaAC45	Q7JR49	260	2438	V-type proton ATPase subunit S1 (Vacuolar H(+) ATPase AC45 a	w
 ATPASE	fly	FBgn0262736	Vha16-1	P23380	11	130	V-type proton ATPase 16 kDa proteolipid subunit c (V-ATPase 	w
 ATPASE	fly	FBgn0263006	SERCA	P22700	4	154	Calcium-transporting ATPase sarcoplasmic/endoplasmic reticul	w
-ATPASE	fly	FBgn0263598	Vha68-2	Q27331	9	346	V-type proton ATPase catalytic subunit A isoform 2 (V-ATPase	w
+ATPASE	fly	FBgn0263598	Vha68-2	Q27331	10	351	V-type proton ATPase catalytic subunit A isoform 2 (V-ATPase	w
 ATPASE	fly	FBgn0265262	Vha68-1	P48602	4	100	V-type proton ATPase catalytic subunit A isoform 1 (V-ATPase	w
 ATPASE	fly	FBgn0266433	CG45063	A0A0B4LGC2	0	1	Cation-transporting P-type ATPase N-terminal domain-containi	w
 ATPASE	fly	FBgn0267363	JYalpha	A8QI34	6	10	Sodium/potassium-transporting ATPase subunit alpha	w
@@ -1423,7 +1423,7 @@ ATPASE-1A	human	O14656	TOR1A	O14656	9	124	Torsin-1A (Dystonia 1 protein) (Torsin
 ATPASE-1B	human	O14657	TOR1B	O14657	11	97	Torsin-1B (Torsin ATPase-1B) (EC 3.6.4.-) (Torsin family 1 m	w
 ATPASE-ASSOCIATED	human	Q9BRP4	PAAF1	Q9BRP4	11	86	Proteasomal ATPase-associated factor 1 (Protein G-16) (WD re	w
 ATPASE-CONTAINING	fly	FBgn0037375	kat-60L1	Q4QPP5	5	79	Katanin p60 ATPase-containing subunit A1 (Katanin p60 subuni	w
-ATPASE-CONTAINING	fly	FBgn0040208	Kat60	A0A0B4KFL3	2	31	Katanin p60 ATPase-containing subunit A1 (Katanin p60 subuni	w
+ATPASE-CONTAINING	fly	FBgn0040208	Kat60	A0A0B4KFL3	8	38	Katanin p60 ATPase-containing subunit A1 (Katanin p60 subuni	w
 ATPASE-CONTAINING	human	O75449	KATNA1	O75449	23	151	Katanin p60 ATPase-containing subunit A1 (Katanin p60 subuni	w
 ATPASE-CONTAINING	human	Q8IYT4	KATNAL2	Q8IYT4	6	153	Katanin p60 ATPase-containing subunit A-like 2 (Katanin p60 	w
 ATPASE-CONTAINING	human	Q9BW62	KATNAL1	Q9BW62	23	111	Katanin p60 ATPase-containing subunit A-like 1 (Katanin p60 	w
@@ -1484,7 +1484,7 @@ ATPC	staphylococcus-aureus-93061	Q2FWF1	atpC	Q2FWF1	1	19	ATP synthase epsilon ch
 ATPC	streptococcus-pneumoniae	P63668	atpC	P63668	2	20	ATP synthase epsilon chain	
 ATPC1	arabidopsis-thaliana	Q01908	ATPC1	Q01908	8	97	ATP synthase gamma chain 1, chloroplastic	
 ATPC2	arabidopsis-thaliana	Q01909	ATPC2	Q01909	12	89	ATP synthase gamma chain 2, chloroplastic	
-ATPCL	fly	FBgn0020236	Acly	Q7KN85	0	162		
+ATPCL	fly	FBgn0020236	Acly	Q7KN85	0	163		
 ATPD	arabidopsis-thaliana	Q9SSS9	ATPD	Q9SSS9	14	90	ATP synthase subunit delta, chloroplastic	
 ATPD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PC30	atpD	Q0PC30	3	50	ATP synthase subunit beta	
 ATPD	escherichia-coli-83333	P0ABB4	atpD	P0ABB4	1	33	ATP synthase subunit beta	
@@ -1623,7 +1623,7 @@ ATPSCKMT	zebrafish	E7EXV0	atpsckmt	E7EXV0	0	13	ATP synthase subunit C lysine N-m
 ATPSK1	human	O43252	PAPSS1	O43252	2	156		
 ATPSK2	human	O95340	PAPSS2	O95340	2	127		
 ATPSYNB	fly	FBgn0019644	ATPsynB	Q94516	13	129	ATP synthase subunit b, mitochondrial (ATPase subunit b) (FO	
-ATPSYNBETA	fly	FBgn0010217	ATPsynbeta	L0MQ04	11	231	ATP synthase subunit beta (EC 7.1.2.2)	
+ATPSYNBETA	fly	FBgn0010217	ATPsynbeta	L0MQ04	11	232	ATP synthase subunit beta (EC 7.1.2.2)	
 ATPSYNBETAL	fly	FBgn0036568	ATPsynbetaL	Q8T4C4	3	66	ATP synthase subunit beta (EC 7.1.2.2)	
 ATPSYNC	fly	FBgn0039830	ATPsynC	Q6NN09	12	165	ATPase protein 9 (ATPase subunit c)	
 ATPSYNCF6	fly	FBgn0016119	ATPsynCF6	Q24407	9	135	ATP synthase-coupling factor 6, mitochondrial (ATPase subuni	

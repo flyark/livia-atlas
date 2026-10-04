@@ -82,7 +82,7 @@ SPECIES	worm	A8DZ48	CELE_Y94A7B.11	A8DZ48	0	11	Reactive oxygen species modulator
 SPECIES	worm	Q93511	romo-1	Q93511	1	20	Reactive oxygen species modulator 1	w
 SPECIES	zebrafish	Q6NYD1	romo1	Q6NYD1	1	19	Reactive oxygen species modulator 1	w
 SPECIFIC-1	fly	FBgn0054027	CG34027	Q2PDQ0	0	1	Generative cell specific-1/HAP2 domain-containing protein	w
-SPECIFICALLY	fly	FBgn0038320	Cyfip	Q9VF87	10	70	Cytoplasmic FMR1-interacting protein (Specifically Rac1-asso	w
+SPECIFICALLY	fly	FBgn0038320	Cyfip	Q9VF87	13	79	Cytoplasmic FMR1-interacting protein (Specifically Rac1-asso	w
 SPECIFICALLY	human	Q7L576	CYFIP1	Q7L576	21	256	Cytoplasmic FMR1-interacting protein 1 (Specifically Rac1-as	w
 SPECIFICALLY	human	Q9BW04	SARG	Q9BW04	11	48	Specifically androgen-regulated gene protein	w
 SPECIFICALLY	human	Q9HD26	GOPC	Q9HD26	66	428	Golgi-associated PDZ and coiled-coil motif-containing protei	w
@@ -90,15 +90,15 @@ SPECIFICALLY-INDUCED	human	Q96BA8	CREB3L1	Q96BA8	106	548	Cyclic AMP-responsive e
 SPECIFICITY	fly	FBgn0000241	bw	P12428	3	26	Protein brown (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
 SPECIFICITY	fly	FBgn0003515	st	P45843	1	6	Protein scarlet (EC 7.6.2.-) (ATP-binding cassette transport	w
 SPECIFICITY	fly	FBgn0003996	w	P10090	4	54	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
-SPECIFICITY	fly	FBgn0010269	Dsor1	Q24324	111	1267	Dual specificity mitogen-activated protein kinase kinase dSO	w
-SPECIFICITY	fly	FBgn0015621	Clp	Q9VPT8	8	90	Cleavage and polyadenylation specificity factor subunit 4 (E	w
+SPECIFICITY	fly	FBgn0010269	Dsor1	Q24324	112	1268	Dual specificity mitogen-activated protein kinase kinase dSO	w
+SPECIFICITY	fly	FBgn0015621	Clp	Q9VPT8	9	91	Cleavage and polyadenylation specificity factor subunit 4 (E	w
 SPECIFICITY	fly	FBgn0024698	Cpsf160	Q9V726	6	79	Cleavage and polyadenylation specificity factor subunit 1 (C	w
 SPECIFICITY	fly	FBgn0027101	Dyrk3	P83102	330	1103	Putative dual specificity tyrosine-phosphorylation-regulated	w
 SPECIFICITY	fly	FBgn0027873	Cpsf100	Q9V3D6	13	63	Probable cleavage and polyadenylation specificity factor sub	w
 SPECIFICITY	fly	FBgn0030976	CG7378	X2JEB8	130	988	Dual specificity protein phosphatase (EC 3.1.3.16) (EC 3.1.3	w
 SPECIFICITY	fly	FBgn0031044	MKP-4	Q9VWF4	157	969	Dual specificity protein phosphatase MPK-4 (EC 3.1.3.16) (EC	w
-SPECIFICITY	fly	FBgn0035872	Cpsf6	Q9VSH4	22	128	Cleavage and polyadenylation specificity factor subunit 6	w
-SPECIFICITY	fly	FBgn0261065	Cpsf73	Q9VE51	9	59	Cleavage and polyadenylation specificity factor 73 (EC 3.1.2	w
+SPECIFICITY	fly	FBgn0035872	Cpsf6	Q9VSH4	25	133	Cleavage and polyadenylation specificity factor subunit 6	w
+SPECIFICITY	fly	FBgn0261065	Cpsf73	Q9VE51	9	60	Cleavage and polyadenylation specificity factor 73 (EC 3.1.2	w
 SPECIFICITY	human	A4D256	CDC14C	A4D256	3	13	Dual specificity protein phosphatase CDC14C (EC 3.1.3.16) (E	w
 SPECIFICITY	human	A6NMK7	CPSF4L	A6NMK7	5	90	Putative cleavage and polyadenylation specificity factor sub	w
 SPECIFICITY	human	O14733	MAP2K7	O14733	147	1500	Dual specificity mitogen-activated protein kinase kinase 7 (	w
@@ -268,8 +268,8 @@ SPECKLED	human	Q13342	SP140	Q13342	20	92	Nuclear body protein SP140 (Lymphoid-re
 SPECKLED	human	Q9HB58	SP110	Q9HB58	31	168	Sp110 nuclear body protein (Interferon-induced protein 41/75	w
 SPECKLED-LIKE	human	Q68CJ6	NUGGC	Q68CJ6	1	18	Nuclear GTPase SLIP-GC (EC 3.6.1.-) (Speckled-like pattern i	w
 SPECKLES	human	O75475	PSIP1	O75475	48	314	PC4 and SFRS1-interacting protein (CLL-associated antigen KW	w
-SPECTRIN	fly	FBgn0250788	beta-Spec	M9PF16	3	18	Spectrin beta chain	w
-SPECTRIN	fly	FBgn0250789	alpha-Spec	M9PGV6	2	31	Alpha spectrin, isoform B	w
+SPECTRIN	fly	FBgn0250788	beta-Spec	M9PF16	6	33	Spectrin beta chain	w
+SPECTRIN	fly	FBgn0250789	alpha-Spec	M9PGV6	5	51	Alpha spectrin, isoform B	w
 SPECTRIN	human	O15020	SPTBN2	O15020	11	243	Spectrin beta chain, non-erythrocytic 2 (Beta-III spectrin) 	w
 SPECTRIN	human	P02549	SPTA1	P02549	24	382	Spectrin alpha chain, erythrocytic 1 (Erythroid alpha-spectr	w
 SPECTRIN	human	P11277	SPTB	P11277	15	317	Spectrin beta chain, erythrocytic (Beta-I spectrin)	w
@@ -337,8 +337,8 @@ SPEGNB	human	A0A087WV53	SPEGNB	A0A087WV53	2	28	SPEG neighbor protein
 SPEGN_HUMAN	human	A0A087WV53	SPEGNB	A0A087WV53	2	28		
 SPEG_HUMAN	human	Q15772	SPEG	Q15772	0	11		
 SPEH	pseudomonas-aeruginosa	Q9HV35	speH	Q9HV35	1	1	S-adenosylmethionine decarboxylase proenzyme	
-SPEL1	fly	FBgn0015546	spel1	P43248	6	71	DNA mismatch repair protein spellchecker 1	
-SPELLCHECKER	fly	FBgn0015546	spel1	P43248	6	71	DNA mismatch repair protein spellchecker 1	w
+SPEL1	fly	FBgn0015546	spel1	P43248	6	80	DNA mismatch repair protein spellchecker 1	
+SPELLCHECKER	fly	FBgn0015546	spel1	P43248	6	80	DNA mismatch repair protein spellchecker 1	w
 SPEM1	human	Q8N4L4	SPEM1	Q8N4L4	2	24	Spermatid maturation protein 1	
 SPEM1	mus-musculus	Q5F289	Spem1	Q5F289	0	2	Spermatid maturation protein 1	
 SPEM1	rattus-norvegicus	D3ZZ79	Spem1	D3ZZ79	0	10	Spermatid maturation 1	
@@ -348,12 +348,12 @@ SPEM2	rattus-norvegicus	Q68FV4	Spem2	Q68FV4	0	7	Uncharacterized protein SPEM2
 SPEM2_HUMAN	human	Q0P670	SPEM2	Q0P670	1	14		
 SPEM3	human	A0A1B0GUW6	SPEM3	A0A1B0GUW6	0	3	Uncharacterized protein SPEM3	
 SPEM3_HUMAN	human	A0A1B0GUW6	SPEM3	A0A1B0GUW6	0	3		
-SPEN	fly	FBgn0016977	spen	Q8SX83	0	0	Protein split ends	
+SPEN	fly	FBgn0016977	spen	Q8SX83	15	19	Protein split ends	
 SPEN	worm	A0A0K3AUY4	CELE_Y66D12A.16	A0A0K3AUY4	0	1	Spen family transcriptional repressor	w
-SPENITO	fly	FBgn0027548	nito	Q7KMJ6	40	140	RNA-binding protein spenito	w
-SPEN_1137	fly	FBgn0016977	spen	Q8SX83	0	0		
-SPEN_1167	fly	FBgn0016977	spen	Q8SX83	0	0		
-SPEN_3152	fly	FBgn0016977	spen	Q8SX83	0	0		
+SPENITO	fly	FBgn0027548	nito	Q7KMJ6	49	155	RNA-binding protein spenito	w
+SPEN_1137	fly	FBgn0016977	spen	Q8SX83	15	19		
+SPEN_1167	fly	FBgn0016977	spen	Q8SX83	15	19		
+SPEN_3152	fly	FBgn0016977	spen	Q8SX83	15	19		
 SPER	human	O14556	GAPDHS	O14556	37	418	Glyceraldehyde-3-phosphate dehydrogenase, testis-specific (E	w
 SPERGEN-1	human	Q7Z5L4	SPATA19	Q7Z5L4	11	61	Spermatogenesis-associated protein 19, mitochondrial (Sperma	w
 SPERGEN1	human	Q7Z5L4	SPATA19	Q7Z5L4	11	61		
@@ -364,7 +364,7 @@ SPERM	fly	FBgn0002862	Mst87F	P08175	0	40	Male-specific sperm protein Mst87F	w
 SPERM	fly	FBgn0004171	Mst98Cb	Q24404	1	54	LP10995p (Male-specific RNA 98Cb) (Sperm protein)	w
 SPERM	fly	FBgn0004172	Mst84Da	Q01642	0	21	Male-specific sperm protein Mst84Da	w
 SPERM	fly	FBgn0004173	Mst84Db	Q01643	0	33	Male-specific sperm protein Mst84Db	w
-SPERM	fly	FBgn0004174	Mst84Dc	Q01644	0	36	Male-specific sperm protein Mst84Dc	w
+SPERM	fly	FBgn0004174	Mst84Dc	Q01644	0	37	Male-specific sperm protein Mst84Dc	w
 SPERM	fly	FBgn0004175	Mst84Dd	Q01645	0	12	Male-specific sperm protein Mst84Dd	w
 SPERM	fly	FBgn0031347	nis	Q9VQ22	1	6	LP24076p (No individualized sperm)	w
 SPERM	human	A0A0G2JN59	SPAG11B	A0A0G2JN59	0	3	Sperm associated antigen 11B	w

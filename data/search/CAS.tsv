@@ -49,7 +49,7 @@ CASC10	human	Q5T4H9	MIR1915HG	Q5T4H9	0	4
 CASC13	human	A8K830	POU2AF3	A8K830	4	7		
 CASC2	human	Q8IU53	CASC2	Q8IU53	7	46	Protein CASC2, isoforms 1/2 (Cancer susceptibility candidate	
 CASC2_HUMAN	human	Q8IU53	CASC2	Q8IU53	7	46		
-CASC3	fly	FBgn0045862	btz	A0A0B4KH64	21	73	Protein CASC3	w
+CASC3	fly	FBgn0045862	btz	A0A0B4KH64	26	85	Protein CASC3	w
 CASC3	human	O15234	CASC3	O15234	39	214	Protein CASC3 (Cancer susceptibility candidate gene 3 protei	
 CASC3	mus-musculus	Q8K3W3	Casc3	Q8K3W3	4	99	Protein CASC3	
 CASC3	rattus-norvegicus	Q8K3X0	Casc3	Q8K3X0	1	83	Protein CASC3	
@@ -65,9 +65,9 @@ CASD1	mus-musculus	Q7TN73	Casd1	Q7TN73	0	1	N-acetylneuraminate (7)9-O-acetyltran
 CASD1_HUMAN	human	Q96PB1	CASD1	Q96PB1	0	6		
 CASE	escherichia-coli-83333	Q46897	casE	Q46897	0	7	CRISPR system Cascade subunit CasE	
 CASEIN	fly	FBgn0000259	CkIIbeta	P08182	201	1190	Casein kinase II subunit beta (CK II beta)	w
-CASEIN	fly	FBgn0015024	CkIalpha	P54367	162	1143	Casein kinase I isoform alpha (CKI-alpha) (DmCK1) (EC 2.7.11	w
+CASEIN	fly	FBgn0015024	CkIalpha	P54367	224	1435	Casein kinase I isoform alpha (CKI-alpha) (DmCK1) (EC 2.7.11	w
 CASEIN	fly	FBgn0026136	CkIIbeta2	O96863	104	1118	Casein kinase II subunit beta' (CK II beta') (DmCKII-beta')	w
-CASEIN	fly	FBgn0264492	CkIIalpha	P08181	143	1349	Casein kinase II subunit alpha (CK II subunit alpha) (EC 2.7	w
+CASEIN	fly	FBgn0264492	CkIIalpha	P08181	358	1931	Casein kinase II subunit alpha (CK II subunit alpha) (EC 2.7	w
 CASEIN	human	A0A5F9W493	CSNK1A1	A0A5F9W493	19	250	Casein kinase I isoform alpha	w
 CASEIN	human	N0E472	CSNK2B	N0E472	3	16	Casein kinase II subunit beta	w
 CASEIN	human	P19784	CSNK2A2	P19784	201	1990	Casein kinase II subunit alpha' (CK II alpha') (EC 2.7.11.1)	w
@@ -152,7 +152,7 @@ CASL_HUMAN	human	Q14511	NEDD9	Q14511	88	262
 CASM	human	O15116	LSM1	O15116	24	187		
 CASOXIN-D	human	P47710	CSN1S1	P47710	8	86	Alpha-S1-casein [Cleaved into: Casoxin-D]	w
 CASP	arabidopsis-thaliana	Q9LS42	CASP	Q9LS42	1	2	Protein CASP	
-CASP	fly	FBgn0034068	casp	Q7JUP3	4	52	Caspar, isoform A (Caspar, isoform B) (LD03368p)	
+CASP	fly	FBgn0034068	casp	Q7JUP3	5	59	Caspar, isoform A (Caspar, isoform B) (LD03368p)	
 CASP	human	O60759	CYTIP	O60759	26	68	Cytohesin-interacting protein (Cytohesin binder and regulato	w
 CASP	human	O75718	CRTAP	O75718	29	114		
 CASP	human	Q13948	CUX1	Q13948	174	1410	Protein CASP	w
@@ -234,13 +234,13 @@ CASP9	rattus-norvegicus	Q9JHK1	Casp9	Q9JHK1	16	79	Caspase-9
 CASP9	zebrafish	F1QSB1	casp9	F1QSB1	9	65	Caspase-9	
 CASP9_HUMAN	human	P55211	CASP9	P55211	49	261		
 CASPA	zebrafish	Q9I9L7	caspa	Q9I9L7	4	24	Caspase a	
-CASPAR	fly	FBgn0034068	casp	Q7JUP3	4	52	Caspar, isoform A (Caspar, isoform B) (LD03368p)	w
+CASPAR	fly	FBgn0034068	casp	Q7JUP3	5	59	Caspar, isoform A (Caspar, isoform B) (LD03368p)	w
 CASPAS	human	P55212	CASP6	P55212	14	134	Caspase-6 (CASP-6) (CSP-6) (EC 3.4.22.59) (Apoptotic proteas	w
 CASPASE	fly	FBgn0019972	Drice	O01382	6	44	Caspase (EC 3.4.22.-) (drICE) [Cleaved into: Caspase subunit	w
-CASPASE	fly	FBgn0026404	Dronc	Q9XYF4	17	128	Caspase Dronc (EC 3.4.22.-) (NEDD2-like caspase) [Cleaved in	w
+CASPASE	fly	FBgn0026404	Dronc	Q9XYF4	18	129	Caspase Dronc (EC 3.4.22.-) (NEDD2-like caspase) [Cleaved in	w
 CASPASE	fly	FBgn0028381	Decay	Q9VET9	5	25	AT03047p (DECAY) (Death executioner caspase related to Apopa	w
 CASPASE	fly	FBgn0030410	Aven	Q9VYK8	2	5	Apoptosis and caspase activation inhibitor, isoform A (Apopt	w
-CASPASE	fly	FBgn0033051	Strica	Q7KHK9	3	31	DREAM (LD13366p) (STRICA) (Ser/Thr-rich caspase, isoform A (	w
+CASPASE	fly	FBgn0033051	Strica	Q7KHK9	3	32	DREAM (LD13366p) (STRICA) (Ser/Thr-rich caspase, isoform A (	w
 CASPASE	fly	FBgn0033659	Damm	Q7KHI6	0	18	Daydream (Death associated molecule related to Mch2 caspase,	w
 CASPASE	fly	FBgn0263864	Dark	Q7KLI1	2	60	Apaf-1 related killer DARK (Apaf-1/CED-4-related caspase act	w
 CASPASE	human	O15519	CFLAR	O15519	34	264	CASP8 and FADD-like apoptosis regulator (Caspase homolog) (C	w
@@ -276,7 +276,7 @@ CASPASE	zebrafish	F1R220	aven	F1R220	0	7	Apoptosis, caspase activation inhibitor
 CASPASE	zebrafish	F1R8I1	card19	F1R8I1	1	2	Caspase recruitment domain-containing protein 19	w
 CASPASE	zebrafish	Q504J1	caspb	Q504J1	3	23	Caspase b	w
 CASPASE	zebrafish	Q9I9L7	caspa	Q9I9L7	4	24	Caspase a	w
-CASPASE-1	fly	FBgn0010501	Dcp-1	O02002	7	68	Caspase-1 (EC 3.4.22.-) [Cleaved into: Caspase-1 subunit p22	w
+CASPASE-1	fly	FBgn0010501	Dcp-1	O02002	7	71	Caspase-1 (EC 3.4.22.-) [Cleaved into: Caspase-1 subunit p22	w
 CASPASE-1	human	P29466	CASP1	P29466	33	259	Caspase-1 (CASP-1) (EC 3.4.22.36) (Interleukin-1 beta conver	w
 CASPASE-1	human	P57730	CARD18	P57730	5	80	Caspase recruitment domain-containing protein 18 (Caspase-1 	w
 CASPASE-1	human	Q5EG05	CARD16	Q5EG05	17	127	Caspase recruitment domain-containing protein 16 (Caspase re	w
@@ -320,7 +320,7 @@ CASPR3	human	Q9BZ76	CNTNAP3	Q9BZ76	12	147
 CASPR3B	human	Q96NU0	CNTNAP3B	Q96NU0	6	49		
 CASPR4	human	Q9C0A0	CNTNAP4	Q9C0A0	13	99		
 CASPR5	human	Q8WYK1	CNTNAP5	Q8WYK1	7	59		
-CASP_588	fly	FBgn0034068	casp	Q7JUP3	4	52		
+CASP_588	fly	FBgn0034068	casp	Q7JUP3	5	59		
 CASP_HUMAN	human	Q13948	CUX1	Q13948	174	1410		
 CASQ	human	P31415	CASQ1	P31415	6	95		
 CASQ1	human	P31415	CASQ1	P31415	6	95	Calsequestrin-1 (Calmitine) (Calsequestrin, skeletal muscle 	
@@ -339,7 +339,7 @@ CASR	mus-musculus	Q9QY96	Casr	Q9QY96	7	39	Extracellular calcium-sensing receptor
 CASR	rattus-norvegicus	P48442	Casr	P48442	6	26	Extracellular calcium-sensing receptor	
 CASR	zebrafish	A0A8M1P4E9	casr	A0A8M1P4E9	3	19	Extracellular calcium-sensing receptor	
 CASR_HUMAN	human	P41180	CASR	P41180	25	231		
-CASS	fly	FBgn0286781	cass	Q9V431	2	5	Apoptosis inhibitor 5 homolog (API-5) (Antiapoptosis clone 1	
+CASS	fly	FBgn0286781	cass	Q9V431	3	13	Apoptosis inhibitor 5 homolog (API-5) (Antiapoptosis clone 1	
 CASS1	human	P56945	BCAR1	P56945	177	576		
 CASS2	human	Q14511	NEDD9	Q14511	88	262	Enhancer of filamentation 1 (hEF1) (CRK-associated substrate	w
 CASS3	human	O43281	EFS	O43281	42	198		
@@ -353,10 +353,10 @@ CASSETTE	fly	FBgn0000241	bw	P12428	3	26	Protein brown (EC 7.6.2.-) (EC 7.6.2.6) 
 CASSETTE	fly	FBgn0003515	st	P45843	1	6	Protein scarlet (EC 7.6.2.-) (ATP-binding cassette transport	w
 CASSETTE	fly	FBgn0003996	w	P10090	4	54	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
 CASSETTE	fly	FBgn0031170	Abca3	Q9VRG4	0	13	ATP binding cassette subfamily A, isoform B (EC 3.6.1.3)	w
-CASSETTE	fly	FBgn0035244	Abcb7	Q9W0C5	2	25	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+CASSETTE	fly	FBgn0035244	Abcb7	Q9W0C5	2	31	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
 CASSETTE	fly	FBgn0038376	Hmt-1	Q9VF20	11	288	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
 CASSETTE	fly	FBgn0039890	Abcd1	Q7JUN3	1	16	ATP-binding cassette sub-family D member 1 (EC 7.6.2.4)	w
-CASSETTE	fly	FBgn0086706	pix	Q9VSS1	7	192	Protein Pixie (ATP-binding cassette sub-family E member 1)	w
+CASSETTE	fly	FBgn0086706	pix	Q9VSS1	7	191	Protein Pixie (ATP-binding cassette sub-family E member 1)	w
 CASSETTE	human	O14678	ABCD4	O14678	2	81	Lysosomal cobalamin transporter ABCD4 (EC 7.6.2.8) (ATP-bind	w
 CASSETTE	human	O15438	ABCC3	O15438	4	51	ATP-binding cassette sub-family C member 3 (EC 7.6.2.-) (EC 	w
 CASSETTE	human	O15439	ABCC4	O15439	3	158	ATP-binding cassette sub-family C member 4 (EC 7.6.2.-) (EC 	w
@@ -422,8 +422,8 @@ CASSETTE	zebrafish	F1RBC8	abcd1	F1RBC8	1	9	ATP-binding cassette sub-family D mem
 CASSETTE	zebrafish	F8W557	abcc12	F8W557	0	16	ATP-binding cassette sub-family C member 5	w
 CASSETTE	zebrafish	Q2Q444	abcg2d	Q2Q444	1	22	Broad substrate specificity ATP-binding cassette transporter	w
 CASSETTE	zebrafish	Q6TNW3	abce1	Q6TNW3	7	183	ATP-binding cassette sub-family E member 1	w
-CASSOWARY	fly	FBgn0286781	cass	Q9V431	2	5	Apoptosis inhibitor 5 homolog (API-5) (Antiapoptosis clone 1	w
-CASS_486	fly	FBgn0286781	cass	Q9V431	2	5		
+CASSOWARY	fly	FBgn0286781	cass	Q9V431	3	13	Apoptosis inhibitor 5 homolog (API-5) (Antiapoptosis clone 1	w
+CASS_486	fly	FBgn0286781	cass	Q9V431	3	13		
 CAST	human	O15446	POLR1G	O15446	63	562		
 CAST	human	P20810	CAST	P20810	12	132	Calpastatin (Calpain inhibitor) (Sperm BS-17 component)	
 CAST	human	Q8IUD2	ERC1	Q8IUD2	106	276	ELKS/Rab6-interacting/CAST family member 1 (ERC-1) (Rab6-int	w

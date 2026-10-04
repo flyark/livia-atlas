@@ -128,7 +128,7 @@ CHOLINE	zebrafish	B2ZGJ1	chat	B2ZGJ1	0	1	Choline O-acetyltransferase	w
 CHOLINE	zebrafish	B8JLM0	cept1a	B8JLM0	2	2	Choline/ethanolaminephosphotransferase 1	w
 CHOLINE	zebrafish	F1Q9M4	slc44a1a	F1Q9M4	0	2	Choline transporter-like protein	w
 CHOLINE-PHOSPHATE	fly	FBgn0035231	Pcyt2	Q9W0D9	2	46	choline-phosphate cytidylyltransferase (EC 2.7.7.15)	w
-CHOLINE-PHOSPHATE	fly	FBgn0041342	Pcyt1	Q7K4C7	3	46	choline-phosphate cytidylyltransferase (EC 2.7.7.15)	w
+CHOLINE-PHOSPHATE	fly	FBgn0041342	Pcyt1	Q7K4C7	8	55	choline-phosphate cytidylyltransferase (EC 2.7.7.15)	w
 CHOLINE-PHOSPHATE	human	P49585	PCYT1A	P49585	6	74	Choline-phosphate cytidylyltransferase A (EC 2.7.7.15) (CCT-	w
 CHOLINE-PHOSPHATE	human	Q9Y5K3	PCYT1B	Q9Y5K3	4	35	Choline-phosphate cytidylyltransferase B (EC 2.7.7.15) (CCT-	w
 CHOLINE-PHOSPHATE	worm	P49583	pcyt-1	P49583	1	3	Putative choline-phosphate cytidylyltransferase	w
@@ -178,7 +178,7 @@ CHONDROCALCIN	human	P02458	COL2A1	P02458	30	166	Collagen alpha-1(II) chain (Alph
 CHONDROCYTE	human	Q15390	MTFR1	Q15390	20	106	Mitochondrial fission regulator 1 (Chondrocyte protein with 	w
 CHONDROCYTE	human	Q15782	CHI3L2	Q15782	5	90	Chitinase-3-like protein 2 (Chondrocyte protein 39) (YKL-39)	w
 CHONDROCYTE	human	Q6UX34	SNORC	Q6UX34	10	86	Protein SNORC (Secondary ossification center-associated regu	w
-CHONDROCYTE-DERIVED	fly	FBgn0265082	Cdep	A8JQT5	1	1	Chondrocyte-derived ezrin-like domain containing protein, is	w
+CHONDROCYTE-DERIVED	fly	FBgn0265082	Cdep	A8JQT5	2	4	Chondrocyte-derived ezrin-like domain containing protein, is	w
 CHONDROCYTE-DERIVED	human	Q9Y4F1	FARP1	Q9Y4F1	39	329	FERM, ARHGEF and pleckstrin domain-containing protein 1 (Cho	w
 CHONDROCYTE-EXPRESSED	human	Q9NQ79	CRTAC1	Q9NQ79	11	128	Cartilage acidic protein 1 (68 kDa chondrocyte-expressed pro	w
 CHONDROCYTE-SPECIFIC	human	P29279	CCN2	P29279	55	487	CCN family member 2 (Cellular communication network factor 2	w
@@ -235,8 +235,8 @@ CHONDROSURFACTANT	human	O75829	CNMD	O75829	18	98	Leukocyte cell-derived chemotax
 CHOP	human	P35638	DDIT3	P35638	102	465		
 CHOP-10	human	P35638	DDIT3	P35638	102	465	DNA damage-inducible transcript 3 protein (DDIT-3) (C/EBP ze	w
 CHOP10	human	P35638	DDIT3	P35638	102	465		
-CHOP24	fly	FBgn0029709	CHOp24	Q9W4K0	302	2415	CHOp24, isoform A (CHOp24, isoform B) (GH04989p)	w
-CHOP24	fly	FBgn0029709	CHOp24	Q9W4K0	302	2415	CHOp24, isoform A (CHOp24, isoform B) (GH04989p)	w
+CHOP24	fly	FBgn0029709	CHOp24	Q9W4K0	304	2426	CHOp24, isoform A (CHOp24, isoform B) (GH04989p)	w
+CHOP24	fly	FBgn0029709	CHOp24	Q9W4K0	304	2426	CHOp24, isoform A (CHOp24, isoform B) (GH04989p)	w
 CHORD	fly	FBgn0290396	mora	Q9VCC0	2	19		
 CHORD	human	Q9UHD1	CHORDC1	Q9UHD1	12	150	Cysteine and histidine-rich domain-containing protein 1 (CHO	w
 CHORD-CONTAINING	human	Q9UHD1	CHORDC1	Q9UHD1	12	150	Cysteine and histidine-rich domain-containing protein 1 (CHO	w
@@ -268,17 +268,17 @@ CHORION	fly	FBgn0000286	Cf2	P20385	68	412	Chorion factor 2	w
 CHORION	fly	FBgn0000355	Cp15	P07185	15	269	Chorion protein S15	w
 CHORION	fly	FBgn0000356	Cp16	P22977	14	260	Chorion protein S16	w
 CHORION	fly	FBgn0000357	Cp18	P07184	23	246	Chorion protein S18	w
-CHORION	fly	FBgn0000358	Cp19	P07186	19	246	Chorion protein S19	w
+CHORION	fly	FBgn0000358	Cp19	P07186	20	250	Chorion protein S19	w
 CHORION	fly	FBgn0000359	Cp36	P07182	18	275	Chorion protein S36	w
 CHORION	fly	FBgn0000360	Cp38	P07183	22	279	Chorion protein S38	w
-CHORION	fly	FBgn0000427	dec	P18171	0	6	Defective chorion protein, FC177 isoform	w
+CHORION	fly	FBgn0000427	dec	P18171	0	11	Defective chorion protein, FC177 isoform	w
 CHORION	fly	FBgn0003964	usp	P20153	36	438	Protein ultraspiracle (Chorion factor 1) (Nuclear receptor s	w
 CHORION	fly	FBgn0004577	Pxd	Q01603	37	246	Peroxidase (DmPO) (EC 1.11.1.7) (Chorion peroxidase)	w
 CHORION	fly	FBgn0014464	Cp7Fa	Q5BI73	24	243	Chorion protein a at 7F	w
 CHORION	fly	FBgn0014465	Cp7Fb	Q9W3E8	44	245	Chorion protein b at 7F, isoform A	w
 CHORION	fly	FBgn0014466	Cp7Fc	Q9W3E7	54	247	Chorion protein c at 7F (IP19624p)	w
 CHORION	fly	FBgn0261987	Pxt	Q9VEG6	19	258	Chorion peroxidase (EC 1.11.1.7) (Peroxinectin-related prote	w
-CHORION-FACTOR	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+CHORION-FACTOR	fly	FBgn0010278	Ssrp	Q05344	66	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
 CHORION-SPECIFIC	human	O75603	GCM2	O75603	58	371	Chorion-specific transcription factor GCMb (hGCMb) (GCM moti	w
 CHORION-SPECIFIC	human	Q9NP62	GCM1	Q9NP62	78	405	Chorion-specific transcription factor GCMa (hGCMa) (GCM moti	w
 CHORIONIC	human	A6NFB4	CSH1	A6NFB4	2	33	Chorionic somatomammotropin hormone 1	w

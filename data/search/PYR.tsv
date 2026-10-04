@@ -79,7 +79,7 @@ PYRE	shigella-dysenteriae-serotype-1	Q329L4	pyrE	Q329L4	0	1	Orotate phosphoribos
 PYRE	staphylococcus-aureus-93061	Q2FZ70	pyrE	Q2FZ70	0	2	Orotate phosphoribosyltransferase	
 PYRE	streptococcus-pneumoniae	Q8DQL5	pyrE	Q8DQL5	0	2	Orotate phosphoribosyltransferase	
 PYRE-F	arabidopsis-thaliana	Q42586	PYRE-F	Q42586	0	4	Uridine 5'-monophosphate synthase	
-PYREXIA	fly	FBgn0035113	pyx	Q9W0T5	2	6	Transient receptor potential channel pyrexia	w
+PYREXIA	fly	FBgn0035113	pyx	Q9W0T5	2	13	Transient receptor potential channel pyrexia	w
 PYRF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIC1	pyrF	Q9PIC1	0	25	Orotidine 5'-phosphate decarboxylase	
 PYRF	escherichia-coli-83333	P08244	pyrF	P08244	0	2	Orotidine 5'-phosphate decarboxylase	
 PYRF	haemophilus-influenzae	P43812	pyrF	P43812	0	2	Orotidine 5'-phosphate decarboxylase	
@@ -140,8 +140,8 @@ PYRIDINE	worm	Q18213	C26D10.3	Q18213	0	2	Pyridine nucleotide-disulfide oxidoredu
 PYRIDINE	zebrafish	F1Q815	pyroxd2	F1Q815	0	1	Pyridine nucleotide-disulfide oxidoreductase domain-containi	w
 PYRIDINE	zebrafish	Q6PBT5	pyroxd1	Q6PBT5	1	46	Pyridine nucleotide-disulfide oxidoreductase domain-containi	w
 PYRIDOXAL	fly	FBgn0030029	CG15343	Q9W3G8	0	5	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
-PYRIDOXAL	fly	FBgn0039751	CG1983	Q9VA97	0	9	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
-PYRIDOXAL	fly	FBgn0051472	sgll	Q9VHZ5	1	25	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
+PYRIDOXAL	fly	FBgn0039751	CG1983	Q9VA97	0	15	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
+PYRIDOXAL	fly	FBgn0051472	sgll	Q9VHZ5	1	28	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
 PYRIDOXAL	fly	FBgn0051473	CG31473	Q8INR5	2	3	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
 PYRIDOXAL	fly	FBgn0085484	Pdxk	Q7KUC2	1	8	Pyridoxal kinase (EC 2.7.1.35) (Pyridoxine kinase)	w
 PYRIDOXAL	human	O00764	PDXK	O00764	0	105	Pyridoxal kinase (EC 2.7.1.35) (Pyridoxine kinase)	w
@@ -215,15 +215,15 @@ PYROGLUTAMYL-PEPTIDASE	worm	P90933	CELE_M04C9.3	P90933	0	2	Pyroglutamyl-peptidas
 PYROGLUTAMYL-PEPTIDASE	zebrafish	Q504F8	pgpep1	Q504F8	0	2	Pyroglutamyl-peptidase I	w
 PYROGLUTAMYLATED	human	P83859	QRFP	P83859	12	141	Orexigenic neuropeptide QRFP (P518) [Cleaved into: QRF-amide	w
 PYROGLUTAMYLATED	human	Q96P65	QRFPR	Q96P65	18	58	Pyroglutamylated RF-amide peptide receptor (AQ27) (G protein	w
-PYROKININ	fly	FBgn0038139	PK2-R2	Q9VFW6	3	24	Pyrokinin 2 receptor 2, isoform A (Pyrokinin 2 receptor 2, i	w
+PYROKININ	fly	FBgn0038139	PK2-R2	Q9VFW6	4	24	Pyrokinin 2 receptor 2, isoform A (Pyrokinin 2 receptor 2, i	w
 PYROKININ	fly	FBgn0038140	PK2-R1	Q9VFW5	6	24	Pyrokinin 2 receptor 1	w
 PYROKININ-1	fly	FBgn0038201	PK1-R	Q8ITC9	4	22	Pyrokinin-1 receptor	w
 PYROKININ-2	fly	FBgn0028374	Hug	Q9VG55	35	248	Protein hugin [Cleaved into: Hug-gamma; Hug-peptide; PK-2 (D	w
 PYROPHO	human	Q9BY32	ITPA	Q9BY32	7	146	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
-PYROPHOS	fly	FBgn0031663	CG8891	Q9VMW7	1	141	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
-PYROPHOSPHATASE	fly	FBgn0016687	Nurf-38	O77460	34	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
-PYROPHOSPHATASE	fly	FBgn0031663	CG8891	Q9VMW7	1	141	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
-PYROPHOSPHATASE	fly	FBgn0250837	dUTPase	Q9V3I1	7	189	Deoxyuridine 5'-triphosphate nucleotidohydrolase (dUTPase) (	w
+PYROPHOS	fly	FBgn0031663	CG8891	Q9VMW7	1	142	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
+PYROPHOSPHATASE	fly	FBgn0016687	Nurf-38	O77460	37	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
+PYROPHOSPHATASE	fly	FBgn0031663	CG8891	Q9VMW7	1	142	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
+PYROPHOSPHATASE	fly	FBgn0250837	dUTPase	Q9V3I1	7	194	Deoxyuridine 5'-triphosphate nucleotidohydrolase (dUTPase) (	w
 PYROPHOSPHATASE	human	O14638	ENPP3	O14638	3	22	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	w
 PYROPHOSPHATASE	human	O95671	ASMTL	O95671	5	110	Probable bifunctional dTTP/UTP pyrophosphatase/methyltransfe	w
 PYROPHOSPHATASE	human	O95848	NUDT14	O95848	2	64	Uridine diphosphate glucose pyrophosphatase NUDT14 (UDPG pyr	w
@@ -266,13 +266,13 @@ PYROPHOSPHATASE	zebrafish	Q1LXZ5	nudt14	Q1LXZ5	0	12	Uridine diphosphate glucose 
 PYROPHOSPHATASE	zebrafish	Q6IQ66	nudt5	Q6IQ66	0	21	ADP-sugar pyrophosphatase	w
 PYROPHOSPHATASE	zebrafish	Q6PGY9	enpp2	Q6PGY9	0	5	Ectonucleotide pyrophosphatase/phosphodiesterase 2	w
 PYROPHOSPHATASE	zebrafish	Q7T009	dctpp1	Q7T009	0	10	dCTP pyrophosphatase 1	w
-PYROPHOSPHATE	fly	FBgn0016687	Nurf-38	O77460	34	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
-PYROPHOSPHATE	fly	FBgn0025373	Fpps	Q7KN61	2	35	Farnesyl pyrophosphate synthase	w
+PYROPHOSPHATE	fly	FBgn0016687	Nurf-38	O77460	37	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
+PYROPHOSPHATE	fly	FBgn0025373	Fpps	Q7KN61	2	36	Farnesyl pyrophosphate synthase	w
 PYROPHOSPHATE	fly	FBgn0029906	xit	Q9W3V8	1	7	Probable dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-gl	w
 PYROPHOSPHATE	fly	FBgn0032234	gny	Q9VKX7	1	12	Probable dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucos	w
 PYROPHOSPHATE	fly	FBgn0035078	Tpc2	Q9W0Y9	0	1	Mitochondrial thiamine pyrophosphate carrier (Solute carrier	w
-PYROPHOSPHATE	fly	FBgn0036030	Prps	Q9VT33	1	114	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (Phosphori	w
-PYROPHOSPHATE	fly	FBgn0037852	Tpc1	Q7K0L7	0	21	Mitochondrial thiamine pyrophosphate carrier (Solute carrier	w
+PYROPHOSPHATE	fly	FBgn0036030	Prps	Q9VT33	2	122	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (Phosphori	w
+PYROPHOSPHATE	fly	FBgn0037852	Tpc1	Q7K0L7	0	24	Mitochondrial thiamine pyrophosphate carrier (Solute carrier	w
 PYROPHOSPHATE	human	O60256	PRPSAP2	O60256	9	201	Phosphoribosyl pyrophosphate synthase-associated protein 2 (	w
 PYROPHOSPHATE	human	O95749	GGPS1	O95749	1	134	Geranylgeranyl pyrophosphate synthase (GGPP synthase) (GGPPS	w
 PYROPHOSPHATE	human	P11908	PRPS2	P11908	12	437	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (5-phospho	w
@@ -307,7 +307,7 @@ PYROPHOSPHATE	yeast	Q12051	BTS1	Q12051	1	5	Geranylgeranyl pyrophosphate synthase
 PYROPHOSPHATE	zebrafish	A0A8M6Z9I5	ggps1	A0A8M6Z9I5	0	4	Geranylgeranyl pyrophosphate synthase	w
 PYROPHOSPHATE	zebrafish	A5PLK2	lhpp	A5PLK2	0	4	Phospholysine phosphohistidine inorganic pyrophosphate phosp	w
 PYROPHOSPHATE	zebrafish	Q803V2	prpsap2	Q803V2	3	7	Phosphoribosyl pyrophosphate synthase-associated protein 2	w
-PYROPHOSPHATE-LYASE	fly	FBgn0003301	Adcy1	P32870	2	27	Ca(2+)/calmodulin-responsive adenylate cyclase (EC 4.6.1.1) 	w
+PYROPHOSPHATE-LYASE	fly	FBgn0003301	Adcy1	P32870	2	29	Ca(2+)/calmodulin-responsive adenylate cyclase (EC 4.6.1.1) 	w
 PYROPHOSPHATE-LYASE	human	O43306	ADCY6	O43306	17	161	Adenylate cyclase type 6 (EC 4.6.1.1) (ATP pyrophosphate-lya	w
 PYROPHOSPHATE-LYASE	human	O60266	ADCY3	O60266	19	134	Adenylate cyclase type 3 (EC 4.6.1.1) (ATP pyrophosphate-lya	w
 PYROPHOSPHATE-LYASE	human	O60503	ADCY9	O60503	17	211	Adenylate cyclase type 9 (EC 4.6.1.1) (ATP pyrophosphate-lya	w
@@ -323,7 +323,7 @@ PYROPHOSPHOHYDROLASE	fly	FBgn0039650	Mesh1	Q9VAM9	3	160	Guanosine-3',5'-bis(diph
 PYROPHOSPHOHYDROLASE	human	Q8N4P3	HDDC3	Q8N4P3	16	219	Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase MES	w
 PYROPHOSPHOHYDROLASE	worm	O18307	CELE_ZK909.3	O18307	8	138	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase MESH1	w
 PYROPHOSPHOHYDROLASE	zebrafish	Q568P1	hddc3	Q568P1	3	62	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase MESH1	w
-PYROPHOSPHOKINASE	fly	FBgn0036030	Prps	Q9VT33	1	114	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (Phosphori	w
+PYROPHOSPHOKINASE	fly	FBgn0036030	Prps	Q9VT33	2	122	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (Phosphori	w
 PYROPHOSPHOKINASE	human	P11908	PRPS2	P11908	12	437	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (5-phospho	w
 PYROPHOSPHOKINASE	human	P21108	PRPS1L1	P21108	4	162	Ribose-phosphate pyrophosphokinase 3 (EC 2.7.6.1) (Phosphori	w
 PYROPHOSPHOKINASE	human	P60891	PRPS1	P60891	18	421	Ribose-phosphate pyrophosphokinase 1 (EC 2.7.6.1) (PPRibP) (	w
@@ -341,7 +341,7 @@ PYROPHOSPHOKINASE	zebrafish	Q08CA5	prps1b	Q08CA5	2	5	Ribose-phosphate pyrophosph
 PYROPHOSPHOKINASE	zebrafish	Q4KME9	prps1a	Q4KME9	2	5	Ribose-phosphate pyrophosphokinase 1	w
 PYROPHOSPHORYLASE	fly	FBgn0030431	Flad1	Q9VYI5	5	34	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	w
 PYROPHOSPHORYLASE	fly	FBgn0032522	Flad2	Q9VJY1	1	3	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	w
-PYROPHOSPHORYLASE	fly	FBgn0037279	Gmppb	Q7JZB4	2	62	Mannose-1-phosphate guanyltransferase beta (EC 2.7.7.13) (GD	w
+PYROPHOSPHORYLASE	fly	FBgn0037279	Gmppb	Q7JZB4	2	64	Mannose-1-phosphate guanyltransferase beta (EC 2.7.7.13) (GD	w
 PYROPHOSPHORYLASE	human	O14772	FPGT	O14772	0	61	Fucose-1-phosphate guanylyltransferase (EC 2.7.7.30) (GDP-L-	w
 PYROPHOSPHORYLASE	human	Q13057	COASY	Q13057	10	132	Bifunctional coenzyme A synthase (CoA synthase) (NBP) (POV-2	w
 PYROPHOSPHORYLASE	human	Q15274	QPRT	Q15274	5	152	Nicotinate-nucleotide pyrophosphorylase [carboxylating] (EC 	w
@@ -390,21 +390,21 @@ PYRROLINE-5-CARBOXYLATE	yeast	P32263	PRO3	P32263	0	47	Pyrroline-5-carboxylate re
 PYRROLINE-5-CARBOXYLATE	zebrafish	F1RDD0	pycr1b	F1RDD0	2	12	Pyrroline-5-carboxylate reductase	w
 PYRROLINE-5-CARBOXYLATE	zebrafish	Q5SPD7	pycr3	Q5SPD7	2	9	Pyrroline-5-carboxylate reductase 3	w
 PYRROLINE-5-CARBOXYLATE	zebrafish	Q6P971	pycr1a	Q6P971	2	11	Pyrroline-5-carboxylate reductase	w
-PYRUVATE	fly	FBgn0027580	Pcb	Q0E9E2	1	159	Pyruvate carboxylase (EC 6.4.1.1)	w
-PYRUVATE	fly	FBgn0028325	Pdha1	Q7KVX1	14	160	Pyruvate dehydrogenase E1 component subunit alpha (EC 1.2.4.	w
+PYRUVATE	fly	FBgn0027580	Pcb	Q0E9E2	1	160	Pyruvate carboxylase (EC 6.4.1.1)	w
+PYRUVATE	fly	FBgn0028325	Pdha1	Q7KVX1	15	166	Pyruvate dehydrogenase E1 component subunit alpha (EC 1.2.4.	w
 PYRUVATE	fly	FBgn0029722	Pdha2	Q9W4H4	7	97	Pyruvate dehydrogenase E1 component subunit alpha (EC 1.2.4.	w
 PYRUVATE	fly	FBgn0029958	Pdp	Q9W3Q1	390	968	GM14286p (Pyruvate dehydrogenase phosphatase, isoform A (EC 	w
-PYRUVATE	fly	FBgn0030612	Dbct	Q9VXY3	2	63	Dihydrolipoamide acetyltransferase component of pyruvate deh	w
+PYRUVATE	fly	FBgn0030612	Dbct	Q9VXY3	3	71	Dihydrolipoamide acetyltransferase component of pyruvate deh	w
 PYRUVATE	fly	FBgn0031462	Pykl2	Q9VQH0	7	172	Pyruvate kinase (EC 2.7.1.40)	w
 PYRUVATE	fly	FBgn0037714	Mpc2b	Q9VHB2	2	11	Mitochondrial pyruvate carrier	w
 PYRUVATE	fly	FBgn0037715	Mpc2a	Q9VHB1	1	16	Mitochondrial pyruvate carrier	w
 PYRUVATE	fly	FBgn0038258	Pykl3	Q9VFG4	12	171	pyruvate kinase (EC 2.7.1.40)	w
 PYRUVATE	fly	FBgn0038662	Mpc1	Q7KSC4	4	13	Mitochondrial pyruvate carrier 1 (MPC1)	w
-PYRUVATE	fly	FBgn0038952	Pykl1	Q9VD23	7	176	Pyruvate kinase (EC 2.7.1.40)	w
+PYRUVATE	fly	FBgn0038952	Pykl1	Q9VD23	7	177	Pyruvate kinase (EC 2.7.1.40)	w
 PYRUVATE	fly	FBgn0039635	Pdhb	Q7K5K3	24	548	Pyruvate dehydrogenase E1 component subunit beta, mitochondr	w
 PYRUVATE	fly	FBgn0052832	Mpc2c	Q8INZ7	1	4	Mitochondrial pyruvate carrier	w
-PYRUVATE	fly	FBgn0267385	Pyk	O62619	6	601	Pyruvate kinase (PK) (EC 2.7.1.40)	w
-PYRUVATE	fly	FBgn0283658	Dlat	Q9VM14	9	125	dihydrolipoyllysine-residue acetyltransferase (EC 2.3.1.12) 	w
+PYRUVATE	fly	FBgn0267385	Pyk	O62619	7	603	Pyruvate kinase (PK) (EC 2.7.1.40)	w
+PYRUVATE	fly	FBgn0283658	Dlat	Q9VM14	9	127	dihydrolipoyllysine-residue acetyltransferase (EC 2.3.1.12) 	w
 PYRUVATE	human	O00330	PDHX	O00330	17	145	Pyruvate dehydrogenase protein X component, mitochondrial (D	w
 PYRUVATE	human	O95563	MPC2	O95563	3	127	Mitochondrial pyruvate carrier 2 (Brain protein 44)	w
 PYRUVATE	human	P08559	PDHA1	P08559	50	729	Pyruvate dehydrogenase E1 component subunit alpha, somatic f	w
@@ -463,6 +463,6 @@ PYRUVATE	zebrafish	Q7T368	pdhb	Q7T368	4	34	Pyruvate dehydrogenase E1 component s
 PYRUVATE	zebrafish	Q7ZVT2	pkma	Q7ZVT2	1	115	Pyruvate kinase	w
 PYRUVATE-LYASE	human	Q9BXD5	NPL	Q9BXD5	1	36	N-acetylneuraminate lyase (NALase) (EC 4.1.3.3) (N-acetylneu	w
 PYRUVIC	human	P11498	PC	P11498	8	286	Pyruvate carboxylase, mitochondrial (EC 6.4.1.1) (Pyruvic ca	w
-PYRUVOYL	fly	FBgn0003141	pr	P48611	1	64	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
+PYRUVOYL	fly	FBgn0003141	pr	P48611	3	72	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
 PYRUVOYL	human	Q03393	PTS	Q03393	1	130	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
 PYRUVOYL	worm	O02058	ptps-1	O02058	1	10	Putative 6-pyruvoyl tetrahydrobiopterin synthase	w

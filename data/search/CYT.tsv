@@ -58,7 +58,7 @@ CYTIDINE	fly	FBgn0032001	CG8360	Q9VLR3	2	45	Cytidine deaminase (EC 3.5.4.5) (Cyt
 CYTIDINE	fly	FBgn0032002	CG8353	Q9VLR2	2	41	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
 CYTIDINE	fly	FBgn0038471	Trm7-32	Q9VEP1	9	60	tRNA (cytidine(32)-2'-O)-methyltransferase (EC 2.1.1.205) (2	w
 CYTIDINE	fly	FBgn0263398	Uck	B7Z0P8	3	69	uridine/cytidine kinase (EC 2.7.1.48)	w
-CYTIDINE	fly	FBgn0290421	Cmpk	Q9VBI2	1	49	Cytidine/uridine monophosphate kinase	w
+CYTIDINE	fly	FBgn0290421	Cmpk	Q9VBI2	1	53	Cytidine/uridine monophosphate kinase	w
 CYTIDINE	human	A6NJ78	METTL15	A6NJ78	28	302	12S rRNA N(4)-cytidine methyltransferase METTL15 (12S rRNA m	w
 CYTIDINE	human	P30085	CMPK1	P30085	4	193	UMP-CMP kinase (EC 2.7.4.14) (Deoxycytidylate kinase) (CK) (	w
 CYTIDINE	human	P32320	CDA	P32320	2	148	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
@@ -90,9 +90,9 @@ CYTIDINE	zebrafish	Q6GML1	cmah	Q6GML1	0	2	Cytidine monophosphate-N-acetylneurami
 CYTIDINE	zebrafish	Q6P0R4	cdab	Q6P0R4	0	1	Cytidine deaminase	w
 CYTIDYLTRANSFERASE-LIKE	worm	Q9BL56	CELE_Y65B4A.8	Q9BL56	0	3	Cytidyltransferase-like domain-containing protein	w
 CYTIDYLYLTRANSFERASE	fly	FBgn0010350	Cds	P56079	3	30	Phosphatidate cytidylyltransferase, photoreceptor-specific (	w
-CYTIDYLYLTRANSFERASE	fly	FBgn0032482	Pect	Q9VK25	1	23	ethanolamine-phosphate cytidylyltransferase (EC 2.7.7.14) (C	w
+CYTIDYLYLTRANSFERASE	fly	FBgn0032482	Pect	Q9VK25	3	28	ethanolamine-phosphate cytidylyltransferase (EC 2.7.7.14) (C	w
 CYTIDYLYLTRANSFERASE	fly	FBgn0035231	Pcyt2	Q9W0D9	2	46	choline-phosphate cytidylyltransferase (EC 2.7.7.15)	w
-CYTIDYLYLTRANSFERASE	fly	FBgn0041342	Pcyt1	Q7K4C7	3	46	choline-phosphate cytidylyltransferase (EC 2.7.7.15)	w
+CYTIDYLYLTRANSFERASE	fly	FBgn0041342	Pcyt1	Q7K4C7	8	55	choline-phosphate cytidylyltransferase (EC 2.7.7.15)	w
 CYTIDYLYLTRANSFERASE	fly	FBgn0067628	CG33331	Q8INF2	0	6	Phosphatidate cytidylyltransferase, mitochondrial (EC 2.7.7.	w
 CYTIDYLYLTRANSFERASE	human	A4D126	CRPPA	A4D126	1	87	D-ribitol-5-phosphate cytidylyltransferase (EC 2.7.7.40) (2-	w
 CYTIDYLYLTRANSFERASE	human	O95674	CDS2	O95674	7	123	Phosphatidate cytidylyltransferase 2 (EC 2.7.7.41) (CDP-DAG 	w
@@ -138,7 +138,7 @@ CYTOCHROME	fly	FBgn0000449	dib	Q9NGX9	0	2	Cytochrome P450 302a1, mitochondrial (
 CYTOCHROME	fly	FBgn0001992	Cyp303a1	Q9V399	0	4	Probable cytochrome P450 303a1 (EC 1.14.-.-) (CYPCCCIIIA1)	w
 CYTOCHROME	fly	FBgn0002354	l(3)87Df	Q9VG00	0	13	Cytochrome c oxidase assembly protein COX20, mitochondrial	w
 CYTOCHROME	fly	FBgn0003312	sad	Q9VGH1	1	4	Cytochrome P450 315a1, mitochondrial (EC 1.14.99.-) (CYPCCCX	w
-CYTOCHROME	fly	FBgn0003388	shd	Q9VUF8	0	9	Ecdysone 20-monooxygenase (E20MO) (EC 1.14.99.22) (CYPCCCXIV	w
+CYTOCHROME	fly	FBgn0003388	shd	Q9VUF8	0	12	Ecdysone 20-monooxygenase (E20MO) (EC 1.14.99.22) (CYPCCCXIV	w
 CYTOCHROME	fly	FBgn0003486	spo	Q9VRM7	0	8	Cytochrome P450 307a1 (EC 1.14.-.-) (CYPCCCVIIA1) (Protein s	w
 CYTOCHROME	fly	FBgn0004959	phtm	Q9VWR5	1	13	Cytochrome P450 306a1 (CYPCCCVIA1) (EC 1.14.-.-) (Protein ph	w
 CYTOCHROME	fly	FBgn0005670	Cyp4d1	P33269	0	5	Cytochrome P450 4d1 (EC 1.14.-.-) (CYPIVD1)	w
@@ -152,7 +152,7 @@ CYTOCHROME	fly	FBgn0013676	mt:CoIII	P00417	10	87	Cytochrome c oxidase subunit 3 
 CYTOCHROME	fly	FBgn0013678	mt:Cyt-b	P18935	9	139	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
 CYTOCHROME	fly	FBgn0013771	Cyp6a9	Q27594	0	7	Cytochrome P450 6a9 (EC 1.14.-.-) (CYPVIA9)	w
 CYTOCHROME	fly	FBgn0013772	Cyp6a8	Q27593	0	4	Cytochrome P450 6a8 (EC 1.14.-.-) (CYPVIA8)	w
-CYTOCHROME	fly	FBgn0013773	Cyp6a22	Q9V769	0	5	Cytochrome P450 6a22 (EC 1.14.-.-) (CYPVIA22)	w
+CYTOCHROME	fly	FBgn0013773	Cyp6a22	Q9V769	0	6	Cytochrome P450 6a22 (EC 1.14.-.-) (CYPVIA22)	w
 CYTOCHROME	fly	FBgn0014469	Cyp4e2	Q27606	0	11	Cytochrome P450 4e2 (EC 1.14.-.-) (CYPIVE2)	w
 CYTOCHROME	fly	FBgn0015031	cype	Q9VMS1	20	101	Cyclope, isoform A (Cyclope, isoform B) (Cyclope, isoform C)	w
 CYTOCHROME	fly	FBgn0015032	Cyp4c3	Q9VA27	0	22	Cytochrome P450 4c3 (EC 1.14.-.-) (CYPIVC3)	w
@@ -172,13 +172,13 @@ CYTOCHROME	fly	FBgn0028940	Cyp28a5	Q9V419	0	8	Probable cytochrome P450 28a5 (EC 
 CYTOCHROME	fly	FBgn0029594	Coa8	Q9W549	4	8	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
 CYTOCHROME	fly	FBgn0030099	CG12056	Q9W376	15	246	Neuferricin homolog (Cytochrome b5 domain-containing protein	w
 CYTOCHROME	fly	FBgn0030304	Cyp4g15	Q9VYY4	1	7	Cytochrome P450 4g15 (EC 1.14.-.-) (CYPIVG15)	w
-CYTOCHROME	fly	FBgn0030339	Cyp28c1	Q9VYT8	0	5	Probable cytochrome P450 28c1 (EC 1.14.-.-) (CYPXXVIIIC1)	w
+CYTOCHROME	fly	FBgn0030339	Cyp28c1	Q9VYT8	0	7	Probable cytochrome P450 28c1 (EC 1.14.-.-) (CYPXXVIIIC1)	w
 CYTOCHROME	fly	FBgn0030367	Cyp311a1	Q9VYQ7	0	1	Probable cytochrome P450 311a1 (EC 1.14.-.-) (CYPCCCXIA1)	w
-CYTOCHROME	fly	FBgn0030369	Cyp318a1	Q9VYQ5	1	5	Probable cytochrome P450 318a1 (EC 1.14.-.-) (CYPCCCXVIIIA1)	w
+CYTOCHROME	fly	FBgn0030369	Cyp318a1	Q9VYQ5	1	6	Probable cytochrome P450 318a1 (EC 1.14.-.-) (CYPCCCXVIIIA1)	w
 CYTOCHROME	fly	FBgn0030615	Cyp4s3	Q9VXY0	0	2	Probable cytochrome P450 4s3 (EC 1.14.-.-) (CYPIVS3)	w
 CYTOCHROME	fly	FBgn0030733	UQCR-14	Q9VXI6	7	96	Cytochrome b-c1 complex subunit 7	w
 CYTOCHROME	fly	FBgn0030949	Cyp308a1	Q9VWR2	0	1	Probable cytochrome P450 308a1 (EC 1.14.-.-) (CYPCCCVIIIA1)	w
-CYTOCHROME	fly	FBgn0031066	COX6B	Q9VWD1	4	120	Cytochrome c oxidase subunit	w
+CYTOCHROME	fly	FBgn0031066	COX6B	Q9VWD1	4	122	Cytochrome c oxidase subunit	w
 CYTOCHROME	fly	FBgn0031126	Cyp6v1	Q9VRB3	0	8	Probable cytochrome P450 6v1 (EC 1.14.-.-) (CYPVIV1)	w
 CYTOCHROME	fly	FBgn0031182	Cyp6t1	Q9VRI9	2	3	Probable cytochrome P450 6t1 (EC 1.14.-.-) (CYPVIT1)	w
 CYTOCHROME	fly	FBgn0031432	Cyp309a1	Q9VQD2	1	4	Probable cytochrome P450 309a1 (EC 1.14.-.-) (CYPCCCIXA1)	w
@@ -197,17 +197,17 @@ CYTOCHROME	fly	FBgn0032833	COX4	Q9VIQ8	8	143	Cytochrome c oxidase subunit 4	w
 CYTOCHROME	fly	FBgn0033020	COX4L	Q8T4H8	7	97	Cytochrome c oxidase subunit 4	w
 CYTOCHROME	fly	FBgn0033065	Cyp6w1	Q9V9L1	0	3	Probable cytochrome P450 6w1 (EC 1.14.-.-) (CYPVIW1)	w
 CYTOCHROME	fly	FBgn0033121	Cyp6u1	Q9V979	0	2	Probable cytochrome P450 6u1 (EC 1.14.-.-) (CYPVIU1)	w
-CYTOCHROME	fly	FBgn0033292	Cyp4ad1	Q9V4T3	0	2	Probable cytochrome P450 4ad1 (EC 1.14.-.-) (CYPIVAD1)	w
+CYTOCHROME	fly	FBgn0033292	Cyp4ad1	Q9V4T3	0	4	Probable cytochrome P450 4ad1 (EC 1.14.-.-) (CYPIVAD1)	w
 CYTOCHROME	fly	FBgn0033302	Cyp6a14	Q9V4U7	0	2	Probable cytochrome P450 6a14 (EC 1.14.-.-) (CYPVIA14)	w
 CYTOCHROME	fly	FBgn0033304	Cyp6a13	Q9V4U9	0	29	Probable cytochrome P450 6a13 (EC 1.14.-.-) (CYPVIA13)	w
 CYTOCHROME	fly	FBgn0033395	Cyp4p2	Q9V557	1	8	Probable cytochrome P450 4p2 (EC 1.14.-.-) (CYPIVP2)	w
 CYTOCHROME	fly	FBgn0033397	Cyp4p3	Q9V559	0	4	Probable cytochrome P450 4p3 (EC 1.14.-.-) (CYPIVP3)	w
 CYTOCHROME	fly	FBgn0033524	Cyp49a1	Q9V5L3	0	3	Probable cytochrome P450 49a1 (EC 1.14.-.-) (CYPXLIXA1)	w
-CYTOCHROME	fly	FBgn0033696	Cyp6g2	Q9V675	0	3	Probable cytochrome P450 6g2 (EC 1.14.-.-) (CYPVIG2)	w
+CYTOCHROME	fly	FBgn0033696	Cyp6g2	Q9V675	0	4	Probable cytochrome P450 6g2 (EC 1.14.-.-) (CYPVIG2)	w
 CYTOCHROME	fly	FBgn0033697	Cyp6t3	Q9V676	0	10	Probable cytochrome P450 6t3 (EC 1.14.-.-) (CYPVIT3)	w
 CYTOCHROME	fly	FBgn0033753	Cyp301a1	Q9V6D6	0	2	Probable cytochrome P450 301a1, mitochondrial (EC 1.14.-.-) 	w
 CYTOCHROME	fly	FBgn0033775	Cyp9h1	Q9V6H1	0	3	Probable cytochrome P450 9h1 (EC 1.14.-.-) (CYPIXH1)	w
-CYTOCHROME	fly	FBgn0033978	Cyp6a23	Q9V771	1	6	Probable cytochrome P450 6a23 (EC 1.14.-.-) (CYPVIA23)	w
+CYTOCHROME	fly	FBgn0033978	Cyp6a23	Q9V771	1	9	Probable cytochrome P450 6a23 (EC 1.14.-.-) (CYPVIA23)	w
 CYTOCHROME	fly	FBgn0033979	Cyp6a19	P82711	0	5	Probable cytochrome P450 6a19 (EC 1.14.-.-) (CYPVIA19)	w
 CYTOCHROME	fly	FBgn0033980	Cyp6a20	Q9V773	0	10	Probable cytochrome P450 6a20 (EC 1.14.-.-) (CYPVIA20)	w
 CYTOCHROME	fly	FBgn0033982	Cyp317a1	Q9V776	0	2	Probable cytochrome P450 317a1 (EC 1.14.-.-) (CYPCCCXVIIA1)	w
@@ -229,9 +229,9 @@ CYTOCHROME	fly	FBgn0038005	Cyp313a5	Q9VGB5	0	5	Probable cytochrome P450 313a5 (E
 CYTOCHROME	fly	FBgn0038006	Cyp313a2	Q9VGB4	1	5	Probable cytochrome P450 313a2 (EC 1.14.-.-) (CYPCCCXIIIA2)	w
 CYTOCHROME	fly	FBgn0038007	Cyp313a3	Q9VGB3	1	5	Probable cytochrome P450 313a3 (EC 1.14.-.-) (CYPCCCXIIIA3)	w
 CYTOCHROME	fly	FBgn0038034	Cyp9f3	A0A2U8U1P3	0	1	Cytochrome P450 9f3	w
-CYTOCHROME	fly	FBgn0038037	Cyp9f2	Q9VG82	1	29	Probable cytochrome P450 9f2 (EC 1.14.-.-) (CYPIXF2)	w
+CYTOCHROME	fly	FBgn0038037	Cyp9f2	Q9VG82	1	31	Probable cytochrome P450 9f2 (EC 1.14.-.-) (CYPIXF2)	w
 CYTOCHROME	fly	FBgn0038076	Cyp313a4	Q9VG40	1	5	Probable cytochrome P450 313a4 (EC 1.14.-.-) (CYPCCCXIIIA4)	w
-CYTOCHROME	fly	FBgn0038095	Cyp304a1	Q9VG17	0	1	Probable cytochrome P450 304a1 (EC 1.14.-.-) (CYPCCCIVA1)	w
+CYTOCHROME	fly	FBgn0038095	Cyp304a1	Q9VG17	1	11	Probable cytochrome P450 304a1 (EC 1.14.-.-) (CYPCCCIVA1)	w
 CYTOCHROME	fly	FBgn0038194	Cyp6d5	Q9VFP1	1	5	Probable cytochrome P450 6d5 (EC 1.14.-.-) (CYPVID5)	w
 CYTOCHROME	fly	FBgn0038236	Cyp313a1	Q9VFJ0	2	6	Probable cytochrome P450 313a1 (EC 1.14.-.-) (CYPCCCXIIIA1)	w
 CYTOCHROME	fly	FBgn0038680	Cyp12a5	Q9VE01	0	6	Probable cytochrome P450 12a5, mitochondrial (EC 1.14.-.-) (	w
@@ -256,7 +256,7 @@ CYTOCHROME	fly	FBgn0085201	COX7AL2	Q6IHY5	14	84	Cytochrome c oxidase subunit 7A-
 CYTOCHROME	fly	FBgn0086907	Cyt-c-d	P04657	3	108	Cytochrome c-1 (Cytochrome c-distal)	w
 CYTOCHROME	fly	FBgn0260008	UQCR-11	A8Y535	2	88	Cytochrome b-c1 complex subunit 6	w
 CYTOCHROME	fly	FBgn0261353	Ccdc56	P0DKM0	0	10	Cytochrome c oxidase assembly factor 3, mitochondrial (Coile	w
-CYTOCHROME	fly	FBgn0262467	Scox	Q9VMX4	4	27	AT19154p (Synthesis of cytochrome c oxidase)	w
+CYTOCHROME	fly	FBgn0262467	Scox	Q9VMX4	5	42	AT19154p (Synthesis of cytochrome c oxidase)	w
 CYTOCHROME	fly	FBgn0263911	COX8	Q9VP19	16	40	Cytochrome c oxidase subunit 8, isoform A (Cytochrome c oxid	w
 CYTOCHROME	fly	FBgn0264294	Cyt-b5	Q9V4N3	1	47	Cytochrome b5 (CYTB5)	w
 CYTOCHROME	fly	FBgn0284248	Cyt-c-p	P84029	12	144	Cytochrome c-2 (Cytochrome c-proximal)	w
@@ -711,9 +711,9 @@ CYTOKERATIN-9	human	P35527	KRT9	P35527	104	390	Keratin, type I cytoskeletal 9 (C
 CYTOKERATIN-ASSOCIATED	human	Q2I0M4	LRRC26	Q2I0M4	21	145	Leucine-rich repeat-containing protein 26 (BK channel auxili	w
 CYTOKI	human	P55773	CCL23	P55773	39	118	C-C motif chemokine 23 (CK-beta-8) (CKB-8) (Macrophage infla	w
 CYTOKINE	fly	FBgn0030869	Socs16D	M9PHY7	6	65	Suppressor of cytokine signaling at 16D, isoform B	w
-CYTOKINE	fly	FBgn0033266	Socs44A	Q7JVF1	4	23	LP02169p (Suppressor of cytokine signaling at 44A)	w
-CYTOKINE	fly	FBgn0041184	Socs36E	Q8INY1	4	25	Suppressor of cytokine signaling at 36E, isoform D	w
-CYTOKINE	fly	FBgn0043903	dome	Q9VWE0	221	3112	Cytokine receptor (Protein domeless)	w
+CYTOKINE	fly	FBgn0033266	Socs44A	Q7JVF1	4	26	LP02169p (Suppressor of cytokine signaling at 44A)	w
+CYTOKINE	fly	FBgn0041184	Socs36E	Q8INY1	5	25	Suppressor of cytokine signaling at 36E, isoform D	w
+CYTOKINE	fly	FBgn0043903	dome	Q9VWE0	222	3123	Cytokine receptor (Protein domeless)	w
 CYTOKINE	human	O00175	CCL24	O00175	97	329	C-C motif chemokine 24 (CK-beta-6) (Eosinophil chemotactic p	w
 CYTOKINE	human	O00585	CCL21	O00585	55	267	C-C motif chemokine 21 (6Ckine) (Beta-chemokine exodus-2) (S	w
 CYTOKINE	human	O00626	CCL22	O00626	102	603	C-C motif chemokine 22 (CC chemokine STCP-1) (MDC(1-69)) (Ma	w
@@ -817,7 +817,7 @@ CYTOKINE-INDUCIBLE	human	Q9H4B4	PLK3	Q9H4B4	98	1313	Serine/threonine-protein kin
 CYTOKINE-INDUCIBLE	human	Q9NSE2	CISH	Q9NSE2	40	194	Cytokine-inducible SH2-containing protein (CIS) (CIS-1) (Pro	w
 CYTOKINE-INDUCIBLE	zebrafish	L0N8L8	cishb	L0N8L8	7	45	Cytokine-inducible SH2-containing protein	w
 CYTOKINE-INDUCIBLE	zebrafish	Q08BW5	cisha	Q08BW5	15	50	Cytokine-inducible SH2-containing protein	w
-CYTOKINE-LIKE	fly	FBgn0043456	Ndf	M9MRG2	16	137	Cytokine-like nuclear factor N-PAC (Glyoxylate reductase 1 h	w
+CYTOKINE-LIKE	fly	FBgn0043456	Ndf	M9MRG2	21	154	Cytokine-like nuclear factor N-PAC (Glyoxylate reductase 1 h	w
 CYTOKINE-LIKE	human	O75462	CRLF1	O75462	32	128	Cytokine receptor-like factor 1 (Cytokine-like factor 1) (CL	w
 CYTOKINE-LIKE	human	P58499	FAM3B	P58499	13	76	Protein FAM3B (Cytokine-like protein 2-21) (Pancreatic-deriv	w
 CYTOKINE-LIKE	human	P98173	FAM3A	P98173	7	37	Protein FAM3A (Cytokine-like protein 2-19)	w
@@ -845,32 +845,32 @@ CYTOKINESIS	yeast	Q05080	HOF1	Q05080	11	98	Cytokinesis protein 2	w
 CYTOKINESIS	yeast	Q07533	CYK3	Q07533	4	31	Cytokinesis protein 3	w
 CYTOKINESIS	zebrafish	A0A8M1PAZ7	prc1b	A0A8M1PAZ7	0	30	Protein regulator of cytokinesis 1b	w
 CYTOKINESIS	zebrafish	Q6DI02	prc1a	Q6DI02	7	26	Protein regulator of cytokinesis 1	w
-CYTOLOGICAL	fly	FBgn0030268	Klp10A	Q960Z0	3	58	Kinesin-like protein Klp10A (Kinesin-like protein at cytolog	w
-CYTOLOGICAL	fly	FBgn0034824	Klp59C	Q9W1U4	1	38	Kinesin-like protein Klp59C (Kinesin-like protein at cytolog	w
+CYTOLOGICAL	fly	FBgn0030268	Klp10A	Q960Z0	10	75	Kinesin-like protein Klp10A (Kinesin-like protein at cytolog	w
+CYTOLOGICAL	fly	FBgn0034824	Klp59C	Q9W1U4	1	39	Kinesin-like protein Klp59C (Kinesin-like protein at cytolog	w
 CYTOLYSIN	human	P14222	PRF1	P14222	40	441	Perforin-1 (P1) (Cytolysin) (Lymphocyte pore-forming protein	w
 CYTOLYSIS	human	P10909	CLU	P10909	102	1070	Clusterin (Aging-associated gene 4 protein) (Apolipoprotein 	w
 CYTOMEGALOVIRUS	human	Q6NXT6	TAPT1	Q6NXT6	6	62	Transmembrane anterior posterior transformation protein 1 ho	w
 CYTOMEGALOVIRUS-INDUCED	human	Q8WXG1	RSAD2	Q8WXG1	14	118	S-adenosylmethionine-dependent nucleotide dehydratase RSAD2 	w
 CYTOPLAS	human	P11586	MTHFD1	P11586	8	307	C-1-tetrahydrofolate synthase, cytoplasmic (C1-THF synthase)	w
 CYTOPLASM	yeast	P53104	ATG1	P53104	4	134	Serine/threonine-protein kinase ATG1 (EC 2.7.11.1) (Autophag	w
-CYTOPLASMIC	fly	FBgn0002069	AspRS	Q7K0E6	7	163	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
+CYTOPLASMIC	fly	FBgn0002069	AspRS	Q7K0E6	8	175	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
 CYTOPLASMIC	fly	FBgn0003654	sw	Q24246	30	151	Cytoplasmic dynein 1 intermediate chain (DH IC) (Dynein inte	w
-CYTOPLASMIC	fly	FBgn0004687	Mlc-c	M9NEW1	13	67	Myosin light chain cytoplasmic, isoform B	w
+CYTOPLASMIC	fly	FBgn0004687	Mlc-c	M9NEW1	13	68	Myosin light chain cytoplasmic, isoform B	w
 CYTOPLASMIC	fly	FBgn0011725	twin	Q8IMX1	43	476	poly(A)-specific ribonuclease (EC 3.1.13.4) (Carbon cataboli	w
 CYTOPLASMIC	fly	FBgn0020385	pug	O96553	2	19	C-1-tetrahydrofolate synthase, cytoplasmic (C1-THF synthase)	w
-CYTOPLASMIC	fly	FBgn0020503	CLIP-190	Q9VJE5	2	9	Cytoplasmic linker protein 190	w
+CYTOPLASMIC	fly	FBgn0020503	CLIP-190	Q9VJE5	11	36	Cytoplasmic linker protein 190	w
 CYTOPLASMIC	fly	FBgn0026141	Cdlc2	O96860	32	102	Dynein light chain 2, cytoplasmic (8 kDa dynein light chain)	w
-CYTOPLASMIC	fly	FBgn0027091	CysRS	Q7KN90	1	21	Cysteine--tRNA ligase, cytoplasmic (EC 6.1.1.16) (Cysteinyl-	w
+CYTOPLASMIC	fly	FBgn0027091	CysRS	Q7KN90	1	22	Cysteine--tRNA ligase, cytoplasmic (EC 6.1.1.16) (Cysteinyl-	w
 CYTOPLASMIC	fly	FBgn0027093	ArgRS	Q9VXN4	4	96	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
-CYTOPLASMIC	fly	FBgn0027094	AlaRS	Q9VLM8	2	121	Alanine--tRNA ligase, cytoplasmic (EC 6.1.1.7) (Alanyl-tRNA 	w
-CYTOPLASMIC	fly	FBgn0027872	rdgBbeta	Q9U9P7	0	4	Cytoplasmic phosphatidylinositol transfer protein 1 (Retinal	w
+CYTOPLASMIC	fly	FBgn0027094	AlaRS	Q9VLM8	3	125	Alanine--tRNA ligase, cytoplasmic (EC 6.1.1.7) (Alanyl-tRNA 	w
+CYTOPLASMIC	fly	FBgn0027872	rdgBbeta	Q9U9P7	1	9	Cytoplasmic phosphatidylinositol transfer protein 1 (Retinal	w
 CYTOPLASMIC	fly	FBgn0032119	CG3769	Q9VLB9	0	33	Cytoplasmic dynein 2 light intermediate chain 1	w
-CYTOPLASMIC	fly	FBgn0032250	holn1	Q9VKV5	8	40	CD2 antigen cytoplasmic tail-binding protein 2 homolog (Prot	w
-CYTOPLASMIC	fly	FBgn0032793	Ctu2	Q9VIV3	2	16	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
+CYTOPLASMIC	fly	FBgn0032250	holn1	Q9VKV5	9	48	CD2 antigen cytoplasmic tail-binding protein 2 homolog (Prot	w
+CYTOPLASMIC	fly	FBgn0032793	Ctu2	Q9VIV3	2	18	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
 CYTOPLASMIC	fly	FBgn0033375	Ctu1	Q7JWW5	1	14	Cytoplasmic tRNA 2-thiolation protein 1 (EC 2.7.7.-) (Cytopl	w
-CYTOPLASMIC	fly	FBgn0034401	MetRS	A1ZBE9	7	56	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
-CYTOPLASMIC	fly	FBgn0038320	Cyfip	Q9VF87	10	70	Cytoplasmic FMR1-interacting protein (Specifically Rac1-asso	w
-CYTOPLASMIC	fly	FBgn0086443	AsnRS	Q9V434	3	125	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
+CYTOPLASMIC	fly	FBgn0034401	MetRS	A1ZBE9	7	65	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
+CYTOPLASMIC	fly	FBgn0038320	Cyfip	Q9VF87	13	79	Cytoplasmic FMR1-interacting protein (Specifically Rac1-asso	w
+CYTOPLASMIC	fly	FBgn0086443	AsnRS	Q9V434	3	136	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
 CYTOPLASMIC	human	A0A1W2PPK0	CPHXL2	A0A1W2PPK0	1	9	Cytoplasmic polyadenylated homeobox-like protein 2	w
 CYTOPLASMIC	human	A0A1W2PPM1	CPHXL	A0A1W2PPM1	29	334	Cytoplasmic polyadenylated homeobox-like protein (Cytoplasmi	w
 CYTOPLASMIC	human	A0A8I5QEB2	KIR3DL3	A0A8I5QEB2	0	20	Killer cell immunoglobulin like receptor, three Ig domains a	w
@@ -1147,7 +1147,7 @@ CYTOR4	human	Q8IUI8	CRLF3	Q8IUI8	9	90
 CYTOSIN	human	Q96CB9	NSUN4	Q96CB9	25	210	5-cytosine rRNA methyltransferase NSUN4 (EC 2.1.1.-) (5-cyto	w
 CYTOSINE	fly	FBgn0026079	Nsun2	Q9W4M9	5	134	tRNA (cytosine(34)-C(5))-methyltransferase (EC 2.1.1.203) (N	w
 CYTOSINE	fly	FBgn0027330	l(1)G0020	Q9W3C1	13	170	RNA cytidine acetyltransferase (EC 2.3.1.-) (18S rRNA cytosi	w
-CYTOSINE	fly	FBgn0028707	Mt2	Q9VKB3	0	6	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
+CYTOSINE	fly	FBgn0028707	Mt2	Q9VKB3	0	7	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
 CYTOSINE	human	O14717	TRDMT1	O14717	1	62	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
 CYTOSINE	human	P46087	NOP2	P46087	81	469	28S rRNA (cytosine(4447)-C(5))-methyltransferase (EC 2.1.1.-	w
 CYTOSINE	human	Q08J23	NSUN2	Q08J23	33	411	RNA cytosine C(5)-methyltransferase NSUN2 (EC 2.1.1.-) (Myc-	w
@@ -1166,7 +1166,7 @@ CYTOSINE	yeast	Q12178	FCY1	Q12178	1	12	Cytosine deaminase	w
 CYTOSINE	zebrafish	A0A8M1P6F7	nop2	A0A8M1P6F7	8	115	28S rRNA (Cytosine(4447)-C(5))-methyltransferase isoform X1	w
 CYTOSINE	zebrafish	Q4KMK0	nsun3	Q4KMK0	1	118	tRNA (cytosine(34)-C(5))-methyltransferase, mitochondrial	w
 CYTOSINE	zebrafish	Q588C1	trdmt1	Q588C1	0	7	tRNA (cytosine(38)-C(5))-methyltransferase	w
-CYTOSINE-5	fly	FBgn0028707	Mt2	Q9VKB3	0	6	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
+CYTOSINE-5	fly	FBgn0028707	Mt2	Q9VKB3	0	7	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
 CYTOSINE-5	human	O14717	TRDMT1	O14717	1	62	tRNA (cytosine(38)-C(5))-methyltransferase (EC 2.1.1.204) (D	w
 CYTOSINE-5	human	P26358	DNMT1	P26358	16	368	DNA (cytosine-5)-methyltransferase 1 (Dnmt1) (EC 2.1.1.37) (	w
 CYTOSINE-5	human	Q9UBC3	DNMT3B	Q9UBC3	142	632	DNA (cytosine-5)-methyltransferase 3B (Dnmt3b) (EC 2.1.1.37)	w
@@ -1262,15 +1262,15 @@ CYTOSOL	zebrafish	A2VCY2	ncf2	A2VCY2	9	22	Neutrophil cytosol factor 2	w
 CYTOSOL	zebrafish	Q1LUW2	ncf4	Q1LUW2	4	38	Neutrophil cytosol factor 4	w
 CYTOSOLIC	fly	FBgn0003654	sw	Q24246	30	151	Cytoplasmic dynein 1 intermediate chain (DH IC) (Dynein inte	w
 CYTOSOLIC	fly	FBgn0032597	Nubp1	Q9VJI9	2	15	Cytosolic Fe-S cluster assembly factor Nubp1 homolog	w
-CYTOSOLIC	fly	FBgn0032793	Ctu2	Q9VIV3	2	16	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
+CYTOSOLIC	fly	FBgn0032793	Ctu2	Q9VIV3	2	18	Cytoplasmic tRNA 2-thiolation protein 2 (Cytosolic thiouridy	w
 CYTOSOLIC	fly	FBgn0033972	Ciao1	Q7K1Y4	4	19	Probable cytosolic iron-sulfur protein assembly protein Ciao	w
 CYTOSOLIC	fly	FBgn0034988	cN-IIIB	Q9W197	3	70	7-methylguanosine phosphate-specific 5'-nucleotidase (7-meth	w
 CYTOSOLIC	fly	FBgn0037011	Nubp2	Q9VPD2	4	31	Cytosolic Fe-S cluster assembly factor Nubp2 homolog	w
 CYTOSOLIC	fly	FBgn0040076	primo-2	P82891	75	1004	Low molecular weight phosphotyrosine protein phosphatase 2 (	w
 CYTOSOLIC	fly	FBgn0040077	primo-1	P82890	91	1005	Low molecular weight phosphotyrosine protein phosphatase 1 (	w
-CYTOSOLIC	fly	FBgn0040309	Prx2	Q9V3P0	2	143	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
+CYTOSOLIC	fly	FBgn0040309	Prx2	Q9V3P0	3	152	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
 CYTOSOLIC	fly	FBgn0262115	CG17683	Q8SYS7	3	26	Probable cytosolic Fe-S cluster assembly factor CG17683	w
-CYTOSOLIC	fly	FBgn0283494	Ak2	Q9U915	11	181	Adenylate kinase (EC 2.7.4.3) (ATP-AMP transphosphorylase) (	w
+CYTOSOLIC	fly	FBgn0283494	Ak2	Q9U915	11	182	Adenylate kinase (EC 2.7.4.3) (ATP-AMP transphosphorylase) (	w
 CYTOSOLIC	human	A0A1B0GUV8	LOC102723971	A0A1B0GUV8	0	3	Lipocalin/cytosolic fatty-acid binding domain-containing pro	w
 CYTOSOLIC	human	A6NHX0	CASTOR2	A6NHX0	11	80	Cytosolic arginine sensor for mTORC1 subunit 2 (Cellular arg	w
 CYTOSOLIC	human	H7C1Q1	?	H7C1Q1	0	2	Cytosolic arginine sensor for mTORC1 subunit 1	w

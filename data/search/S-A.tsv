@@ -4,7 +4,7 @@ S-ACP-DES5	arabidopsis-thaliana	Q9M879	S-ACP-DES5	Q9M879	0	8	Stearoyl-
 S-ACP-DES6	arabidopsis-thaliana	Q84VY3	S-ACP-DES6	Q84VY3	0	2	Stearoyl-	
 S-ACYL	human	Q9NV23	OLAH	Q9NV23	4	118	S-acyl fatty acid synthase thioesterase, medium chain (EC 3.	w
 S-ACYL	zebrafish	Q29R98	olah	Q29R98	10	168	S-acyl fatty acid synthase thioesterase, medium chain	w
-S-ACYLTRANSFERASE	fly	FBgn0031239	CG17075	Q9VPM2	0	13	protein S-acyltransferase (EC 2.3.1.225)	w
+S-ACYLTRANSFERASE	fly	FBgn0031239	CG17075	Q9VPM2	1	22	protein S-acyltransferase (EC 2.3.1.225)	w
 S-ADENOSYL	human	Q6NUM6	TYW1B	Q6NUM6	4	42	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
 S-ADENOSYL	human	Q8WXG1	RSAD2	Q8WXG1	14	118	S-adenosylmethionine-dependent nucleotide dehydratase RSAD2 	w
 S-ADENOSYL	human	Q9HA92	RSAD1	Q9HA92	27	491	Radical S-adenosyl methionine domain-containing protein 1, m	w
@@ -12,7 +12,7 @@ S-ADENOSYL	human	Q9NV66	TYW1	Q9NV66	6	142	S-adenosyl-L-methionine-dependent tRNA
 S-ADENOSYL	zebrafish	A4IGH2	rsad1	A4IGH2	22	533	Radical S-adenosyl methionine domain-containing protein 1, m	w
 S-ADENOSYL-	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 S-ADENOSYL-L-HOMOCYSTEINE	fly	FBgn0014455	Ahcy	Q27580	3	142	Adenosylhomocysteinase (AdoHcyase) (EC 3.13.2.1) (S-adenosyl	w
-S-ADENOSYL-L-HOMOCYSTEINE	fly	FBgn0035371	AhcyL1	Q9VZX9	7	93	Adenosylhomocysteinase-like 1 (dAhcyL1) (Inactive S-adenosyl	w
+S-ADENOSYL-L-HOMOCYSTEINE	fly	FBgn0035371	AhcyL1	Q9VZX9	8	98	Adenosylhomocysteinase-like 1 (dAhcyL1) (Inactive S-adenosyl	w
 S-ADENOSYL-L-HOMOCYSTEINE	human	P23526	AHCY	P23526	6	239	Adenosylhomocysteinase (AdoHcyase) (EC 3.13.2.1) (S-adenosyl	w
 S-ADENOSYL-L-METHIONINE	human	Q9BQC3	DPH2	Q9BQC3	6	93	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2 (Dip	w
 S-ADENOSYL-L-METHIONINE	human	Q9HBK9	AS3MT	Q9HBK9	2	116	Arsenite methyltransferase (EC 2.1.1.137) (Methylarsonite me	w
@@ -20,7 +20,7 @@ S-ADENOSYL-L-METHIONINE-DEPENDENT	human	Q6NUM6	TYW1B	Q6NUM6	4	42	S-adenosyl-L-me
 S-ADENOSYL-L-METHIONINE-DEPENDENT	human	Q9NV66	TYW1	Q9NV66	6	142	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
 S-ADENOSYL-L-METHIONINE-DEPENDENT	yeast	Q08960	TYW1	Q08960	0	17	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
 S-ADENOSYL-L-METHIONINE-DEPENDENT	zebrafish	Q08C92	tyw1	Q08C92	0	8	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	w
-S-ADENOSYLHOMOCYSTEINE	fly	FBgn0035371	AhcyL1	Q9VZX9	7	93	Adenosylhomocysteinase-like 1 (dAhcyL1) (Inactive S-adenosyl	w
+S-ADENOSYLHOMOCYSTEINE	fly	FBgn0035371	AhcyL1	Q9VZX9	8	98	Adenosylhomocysteinase-like 1 (dAhcyL1) (Inactive S-adenosyl	w
 S-ADENOSYLHOMOCYSTEINE	human	O43865	AHCYL1	O43865	37	417	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	w
 S-ADENOSYLHOMOCYSTEINE	human	Q96HN2	AHCYL2	Q96HN2	29	217	S-adenosylhomocysteine hydrolase-like protein 2 (IP(3)Rs bin	w
 S-ADENOSYLMETHIONIN	fly	FBgn0019932	SamDC	P91931	4	93	S-adenosylmethionine decarboxylase proenzyme (AdoMetDC) (SAM	w
@@ -29,7 +29,7 @@ S-ADENOSYLMETHIONINE	fly	FBgn0005278	Sams	P40320	1	104	S-adenosylmethionine synt
 S-ADENOSYLMETHIONINE	fly	FBgn0019932	SamDC	P91931	4	93	S-adenosylmethionine decarboxylase proenzyme (AdoMetDC) (SAM	w
 S-ADENOSYLMETHIONINE	fly	FBgn0035035	CG3570	Q9W138	0	1	S-adenosylmethionine sensor upstream of mTORC1 (dSamtor) (Pr	w
 S-ADENOSYLMETHIONINE	fly	FBgn0037778	mtTFB2	Q9VH38	16	379	Dimethyladenosine transferase 2, mitochondrial (EC 2.1.1.-) 	w
-S-ADENOSYLMETHIONINE	fly	FBgn0261381	mtTFB1	Q9VTM5	1	114	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
+S-ADENOSYLMETHIONINE	fly	FBgn0261381	mtTFB1	Q9VTM5	1	113	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
 S-ADENOSYLMETHIONINE	human	P17707	AMD1	P17707	18	201	S-adenosylmethionine decarboxylase proenzyme (AdoMetDC) (SAM	w
 S-ADENOSYLMETHIONINE	human	P31153	MAT2A	P31153	4	173	S-adenosylmethionine synthase isoform type-2 (AdoMet synthas	w
 S-ADENOSYLMETHIONINE	human	Q00266	MAT1A	Q00266	5	107	S-adenosylmethionine synthase isoform type-1 (AdoMet synthas	w

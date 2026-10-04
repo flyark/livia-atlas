@@ -61,7 +61,7 @@ AMIDINOTRANSFERASE	zebrafish	Q6PH19	gatm	Q6PH19	0	4	Glycine amidinotransferase, 
 AMIDO	human	O94808	GFPT2	O94808	7	161	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
 AMIDO	human	Q02083	NAAA	Q02083	29	325	N-acylethanolamine-hydrolyzing acid amidase (EC 3.5.1.60) (A	w
 AMIDO	human	Q06210	GFPT1	Q06210	9	259	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
-AMIDOHYDROLASE	fly	FBgn0023023	Crmp	Q8IPQ2	2	54	Collapsin response mediator protein (EC 3.5.2.2, EC 3.5.2.-)	w
+AMIDOHYDROLASE	fly	FBgn0023023	Crmp	Q8IPQ2	2	62	Collapsin response mediator protein (EC 3.5.2.2, EC 3.5.2.-)	w
 AMIDOHYDROLASE	fly	FBgn0034046	tun	Q7K2Y9	1	5	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
 AMIDOHYDROLASE	fly	FBgn0034371	Ntan1	Q7KIS4	15	84	N-terminal amidohydrolase 1, isoform C (N-terminal amidohydr	w
 AMIDOHYDROLASE	fly	FBgn0037818	CG6465	Q9I7K3	5	24	N-acyl-aliphatic-L-amino acid amidohydrolase (EC 3.5.1.14) (	w
@@ -93,16 +93,16 @@ AMIDOHYDROLASE	zebrafish	Q1LWX3	ntaq1	Q1LWX3	0	4	Protein N-terminal glutamine am
 AMIDOHYDROLASE	zebrafish	Q6DHI0	acy3.1	Q6DHI0	0	25	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
 AMIDOHYDROLASE	zebrafish	Q6DHQ3	acy3.2	Q6DHQ3	0	25	N-acyl-aromatic-L-amino acid amidohydrolase (carboxylate-for	w
 AMIDOHYDROLASE-RELATED	worm	Q20166	cpin-1	Q20166	0	4	Amidohydrolase-related domain-containing protein	w
-AMIDOPHOSPHORIBOSYLTRANSFERASE	fly	FBgn0004901	Prat	Q27601	3	120	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
-AMIDOPHOSPHORIBOSYLTRANSFERASE	fly	FBgn0041194	Prat2	Q967S0	3	123	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOPHOSPHORIBOSYLTRANSFERASE	fly	FBgn0004901	Prat	Q27601	3	126	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOPHOSPHORIBOSYLTRANSFERASE	fly	FBgn0041194	Prat2	Q967S0	3	124	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
 AMIDOPHOSPHORIBOSYLTRANSFERASE	human	Q06203	PPAT	Q06203	2	92	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
 AMIDOPHOSPHORIBOSYLTRANSFERASE	worm	Q22134	ppat-1	Q22134	0	12	Amidophosphoribosyltransferase	w
 AMIDOPHOSPHORIBOSYLTRANSFERASE	yeast	P04046	ADE4	P04046	0	20	Amidophosphoribosyltransferase	w
-AMIDOTRANSFERASE	fly	FBgn0000052	Pfas	P35421	1	72	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
-AMIDOTRANSFERASE	fly	FBgn0000239	bur	Q9VIE7	4	113	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
-AMIDOTRANSFERASE	fly	FBgn0003189	r	P05990	1	98	Multifunctional protein r (Protein rudimentary) [Includes: G	w
-AMIDOTRANSFERASE	fly	FBgn0004901	Prat	Q27601	3	120	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
-AMIDOTRANSFERASE	fly	FBgn0041194	Prat2	Q967S0	3	123	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOTRANSFERASE	fly	FBgn0000052	Pfas	P35421	2	76	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
+AMIDOTRANSFERASE	fly	FBgn0000239	bur	Q9VIE7	4	119	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
+AMIDOTRANSFERASE	fly	FBgn0003189	r	P05990	4	117	Multifunctional protein r (Protein rudimentary) [Includes: G	w
+AMIDOTRANSFERASE	fly	FBgn0004901	Prat	Q27601	3	126	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+AMIDOTRANSFERASE	fly	FBgn0041194	Prat2	Q967S0	3	124	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
 AMIDOTRANSFERASE	fly	FBgn0064115	GatC	Q86BL4	2	3	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
 AMIDOTRANSFERASE	fly	FBgn0260779	GatA	Q9VE09	2	18	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
 AMIDOTRANSFERASE	fly	FBgn0290399	GatB	Q9VCD0	2	26	Glutamyl-tRNA amidotransferase, subunit B	w
@@ -397,7 +397,7 @@ AMINO-2-METHYLPROPIONATE--PYRUVATE	human	Q9BYV1	AGXT2	Q9BYV1	4	71	Alanine--glyox
 AMINO-3-CARBOXYMUCONATE-6-SEMIALDEHYDE	human	Q8TDX5	ACMSD	Q8TDX5	1	25	2-amino-3-carboxymuconate-6-semialdehyde decarboxylase (EC 4	w
 AMINO-3-CARBOXYMUCONATE-6-SEMIALDEHYDE	worm	Q8T8B9	acsd-1	Q8T8B9	0	9	2-amino-3-carboxymuconate-6-semialdehyde decarboxylase	w
 AMINO-3-CARBOXYPROPYL	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
-AMINO-3-CARBOXYPROPYL	fly	FBgn0038272	Dph2	Q9VFE9	4	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
+AMINO-3-CARBOXYPROPYL	fly	FBgn0038272	Dph2	Q9VFE9	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
 AMINO-3-CARBOXYPROPYL	human	A2RUC4	TYW5	A2RUC4	1	48	tRNA wybutosine-synthesizing protein 5 (hTYW5) (tRNA yW-synt	w
 AMINO-3-CARBOXYPROPYL	human	Q6IPR3	TYW3	Q6IPR3	5	94	tRNA wybutosine-synthesizing protein 3 homolog (tRNA-yW-synt	w
 AMINO-3-CARBOXYPROPYL	human	Q9BQC3	DPH2	Q9BQC3	6	93	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2 (Dip	w
@@ -412,7 +412,7 @@ AMINO-3-KETOBUTYRATE	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenz
 AMINO-3-KETOBUTYRATE	zebrafish	F6P2R4	gcat	F6P2R4	0	10	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial	w
 AMINO-5-HYDROXYMETHYL-2-METHYLPYRIMIDINE	yeast	P43534	THI5	P43534	0	1	4-amino-5-hydroxymethyl-2-methylpyrimidine phosphate synthas	w
 AMINO-5-HYDROXYMETHYL-2-METHYLPYRIMIDINE	yeast	P47183	THI11	P47183	0	4	4-amino-5-hydroxymethyl-2-methylpyrimidine phosphate synthas	w
-AMINO-ACID	fly	FBgn0263251	vnc	Q9VT75	7	59	N-terminal amino-acid N(alpha)-acetyltransferase NatA (EC 2.	w
+AMINO-ACID	fly	FBgn0263251	vnc	Q9VT75	7	60	N-terminal amino-acid N(alpha)-acetyltransferase NatA (EC 2.	w
 AMINO-ACID	human	P0DI83	RAB34	P0DI83	3	20	Ras-related protein Rab-34, isoform NARR (Nine amino-acid re	w
 AMINO-ACID	human	P43005	SLC1A1	P43005	16	236	Excitatory amino acid transporter 3 (Excitatory amino-acid c	w
 AMINO-ACID	human	Q8N159	NAGS	Q8N159	9	110	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	w
@@ -434,7 +434,7 @@ AMINOACYL	human	Q12904	AIMP1	Q12904	26	255	Aminoacyl tRNA synthase complex-inter
 AMINOACYL	human	Q13155	AIMP2	Q13155	60	435	Aminoacyl tRNA synthase complex-interacting multifunctional 	w
 AMINOACYL-TRANSFER	worm	P90831	dars-2	P90831	1	13	Aminoacyl-transfer RNA synthetases class-II family profile d	w
 AMINOACYL-TRANSFER	worm	Q95PZ8	nars-2	Q95PZ8	2	19	Aminoacyl-transfer RNA synthetases class-II family profile d	w
-AMINOACYL-TRNA	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+AMINOACYL-TRNA	fly	FBgn0005674	GluProRS	P28668	9	107	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 AMINOACYL-TRNA	human	P07814	EPRS1	P07814	17	439	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 AMINOACYLASE-1	human	Q03154	ACY1	Q03154	5	103	Aminoacylase-1 (ACY-1) (EC 3.5.1.14) (N-acyl-L-amino-acid am	w
 AMINOACYLASE-2	human	P45381	ASPA	P45381	1	88	Aspartoacylase (EC 3.5.1.15) (Aminoacylase-2) (ACY-2)	w
@@ -489,7 +489,7 @@ AMINOMUCONIC	zebrafish	Q66I21	aldh8a1	Q66I21	0	1	2-aminomuconic semialdehyde deh
 AMINOPELARGONIC	yeast	P53744	BIO5	P53744	0	1	7-keto 8-aminopelargonic acid transporter	w
 AMINOPEP	human	Q9UKU6	TRHDE	Q9UKU6	14	46	Thyrotropin-releasing hormone-degrading ectoenzyme (TRH-DE) 	w
 AMINOPEPTID	human	O14773	TPP1	O14773	7	201	Tripeptidyl-peptidase 1 (TPP-1) (EC 3.4.14.9) (Cell growth-i	w
-AMINOPEPTIDASE	fly	FBgn0020370	TppII	Q9V6K1	5	66	Tripeptidyl-peptidase 2 (TPP-2) (EC 3.4.14.10) (Tripeptidyl 	w
+AMINOPEPTIDASE	fly	FBgn0020370	TppII	Q9V6K1	6	72	Tripeptidyl-peptidase 2 (TPP-2) (EC 3.4.14.10) (Tripeptidyl 	w
 AMINOPEPTIDASE	fly	FBgn0026150	ApepP	Q9VJG0	1	28	Xaa-Pro aminopeptidase ApepP (EC 3.4.11.9) (Aminopeptidase P	w
 AMINOPEPTIDASE	fly	FBgn0030222	CG9806	Q9W2S8	33	318	Aminopeptidase (EC 3.4.11.-)	w
 AMINOPEPTIDASE	fly	FBgn0030223	CG2111	Q9W2S7	31	323	Aminopeptidase (EC 3.4.11.-)	w
@@ -499,12 +499,12 @@ AMINOPEPTIDASE	fly	FBgn0033868	S-Lap7	Q500X4	11	322	Cysteinylglycine-S-conjugate
 AMINOPEPTIDASE	fly	FBgn0034132	S-Lap8	Q7K5K9	11	126	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 AMINOPEPTIDASE	fly	FBgn0035915	S-Lap1	Q9VSM6	7	127	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 AMINOPEPTIDASE	fly	FBgn0036186	CG6071	Q9VTL4	0	3	Aminopeptidase N	w
-AMINOPEPTIDASE	fly	FBgn0037580	DppIII	Q9VHR8	2	145	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
+AMINOPEPTIDASE	fly	FBgn0037580	DppIII	Q9VHR8	3	149	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
 AMINOPEPTIDASE	fly	FBgn0038135	CG8773	Q9VFX0	2	10	Aminopeptidase (EC 3.4.11.-)	w
 AMINOPEPTIDASE	fly	FBgn0038136	CG8774	Q9VFW9	0	7	Aminopeptidase (EC 3.4.11.-)	w
 AMINOPEPTIDASE	fly	FBgn0038897	CG5849	Q9VD87	0	3	Aminopeptidase (EC 3.4.11.-)	w
-AMINOPEPTIDASE	fly	FBgn0039219	CG13630	Q9VC48	15	98	Methionine aminopeptidase (EC 3.4.11.18)	w
-AMINOPEPTIDASE	fly	FBgn0039640	superdeath	Q7KRW4	5	83	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0039219	CG13630	Q9VC48	15	99	Methionine aminopeptidase (EC 3.4.11.18)	w
+AMINOPEPTIDASE	fly	FBgn0039640	superdeath	Q7KRW4	5	84	Aminopeptidase (EC 3.4.11.-)	w
 AMINOPEPTIDASE	fly	FBgn0045770	S-Lap3	Q961W5	7	87	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 AMINOPEPTIDASE	fly	FBgn0046253	CG3502	Q9W1S1	29	319	Aminopeptidase (EC 3.4.11.-)	w
 AMINOPEPTIDASE	fly	FBgn0051198	CG31198	Q8IN25	0	18	Aminopeptidase (EC 3.4.11.-)	w
@@ -514,12 +514,12 @@ AMINOPEPTIDASE	fly	FBgn0051445	CG31445	Q95SR0	35	328	Aminopeptidase (EC 3.4.11.-
 AMINOPEPTIDASE	fly	FBgn0052064	S-Lap4	Q95R35	7	125	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 AMINOPEPTIDASE	fly	FBgn0052351	S-Lap2	Q9VSM7	7	124	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 AMINOPEPTIDASE	fly	FBgn0053108	CG33108	Q9VCE8	4	54	Actin maturation protease (EC 3.4.11.-) (Actin aminopeptidas	w
-AMINOPEPTIDASE	fly	FBgn0259237	CG42335	Q9VD85	14	236	Aminopeptidase (EC 3.4.11.-)	w
+AMINOPEPTIDASE	fly	FBgn0259237	CG42335	Q9VD85	14	242	Aminopeptidase (EC 3.4.11.-)	w
 AMINOPEPTIDASE	fly	FBgn0259795	loopin-1	Q7K2S9	9	128	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 AMINOPEPTIDASE	fly	FBgn0260481	CG32454	Q8IPS7	1	14	Aminopeptidase P N-terminal domain-containing protein	w
-AMINOPEPTIDASE	fly	FBgn0261243	Psa	Q8IRH1	32	282	FI19310p1 (Puromycin sensitive aminopeptidase, isoform C)	w
+AMINOPEPTIDASE	fly	FBgn0261243	Psa	Q8IRH1	32	283	FI19310p1 (Puromycin sensitive aminopeptidase, isoform C)	w
 AMINOPEPTIDASE	fly	FBgn0263236	SP1029	Q0KI00	33	328	Aminopeptidase (EC 3.4.11.-)	w
-AMINOPEPTIDASE	fly	FBgn0283478	und	Q9VL89	17	134	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+AMINOPEPTIDASE	fly	FBgn0283478	und	Q9VL89	17	138	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
 AMINOPEPTIDASE	human	O43895	XPNPEP2	O43895	8	50	Xaa-Pro aminopeptidase 2 (EC 3.4.11.9) (Aminoacylproline ami	w
 AMINOPEPTIDASE	human	P09960	LTA4H	P09960	10	119	Leukotriene A-4 hydrolase (LTA-4 hydrolase) (EC 3.3.2.6) (Le	w
 AMINOPEPTIDASE	human	P15144	ANPEP	P15144	16	215	Aminopeptidase N (AP-N) (hAPN) (EC 3.4.11.2) (Alanyl aminope	w
@@ -608,8 +608,8 @@ AMINOPROPYLTRANSFERASE	human	P52788	SMS	P52788	3	154	Spermine synthase (SPMSY) (
 AMINOTRAN	worm	Q9N4F1	CELE_Y71H2B.5	Q9N4F1	0	5	Aminotran_5 domain-containing protein	w
 AMINOTRANSFER	human	Q6YP21	KYAT3	Q6YP21	5	77	Kynurenine--oxoglutarate transaminase 3 (EC 2.6.1.7) (Cystei	w
 AMINOTRANSFERASE	fly	FBgn0001125	Got2	Q8IPY3	18	260	Aspartate aminotransferase (EC 2.6.1.1)	w
-AMINOTRANSFERASE	fly	FBgn0014031	Agxt	Q9W3Z3	2	61	Alanine--glyoxylate aminotransferase (AGT) (EC 2.6.1.44)	w
-AMINOTRANSFERASE	fly	FBgn0014427	Psat	Q9VAN0	1	86	Probable phosphoserine aminotransferase (PSAT) (EC 2.6.1.52)	w
+AMINOTRANSFERASE	fly	FBgn0014031	Agxt	Q9W3Z3	2	66	Alanine--glyoxylate aminotransferase (AGT) (EC 2.6.1.44)	w
+AMINOTRANSFERASE	fly	FBgn0014427	Psat	Q9VAN0	1	94	Probable phosphoserine aminotransferase (PSAT) (EC 2.6.1.52)	w
 AMINOTRANSFERASE	fly	FBgn0022774	Oat	Q9VW26	1	61	Ornithine aminotransferase, mitochondrial (EC 2.6.1.13) (Orn	w
 AMINOTRANSFERASE	fly	FBgn0030482	Bcat	Q9VYD5	1	53	Branched-chain-amino-acid aminotransferase (EC 2.6.1.42)	w
 AMINOTRANSFERASE	fly	FBgn0030558	Tat	Q9VY42	3	46	Tyrosine aminotransferase (TAT) (EC 2.6.1.5)	w

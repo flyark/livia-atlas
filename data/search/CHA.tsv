@@ -43,7 +43,7 @@ CHAIN-ASSOCIATED	human	Q15629	TRAM1	Q15629	10	78	Translocating chain-associated 
 CHAIN-ASSOCIATED	human	Q8N609	TRAM1L1	Q8N609	8	51	Translocating chain-associated membrane protein 1-like 1	w
 CHAIN-ASSOCIATED	worm	Q9XXK7	tram-1	Q9XXK7	0	1	Translocating chain-associated membrane protein	w
 CHAIN-INTERACTING	zebrafish	A0A8M3B802	atcayb	A0A8M3B802	1	25	ATCAY kinesin light chain-interacting caytaxin b	w
-CHAIN-LIKE	fly	FBgn0026059	Mhcl	Q8INC3	2	16	Myosin heavy chain-like, isoform B	w
+CHAIN-LIKE	fly	FBgn0026059	Mhcl	Q8INC3	3	19	Myosin heavy chain-like, isoform B	w
 CHAIN-LIKE	human	A6NHL2	TUBAL3	A6NHL2	41	419	Tubulin alpha chain-like 3 (EC 3.6.5.-)	w
 CHAIN-LIKE	human	Q9NY65	TUBA8	Q9NY65	144	1280	Tubulin alpha-8 chain (EC 3.6.5.-) (Alpha-tubulin 8) (Tubuli	w
 CHAIN-LIKE	virus	O41973	GAMMAHV.M10c	O41973	0	79	Collagen alpha-1(I) chain-like	w
@@ -82,14 +82,14 @@ CHANNEL	fly	FBgn0011589	Elk	A1ZB14	0	3	Eag-like K[+] channel, isoform A	w
 CHANNEL	fly	FBgn0017561	Ork1	X2JJC8	8	14	Open rectifier K[+] channel 1, isoform C	w
 CHANNEL	fly	FBgn0020258	ppk	Q7KT94	5	12	Amiloride-sensitive Na+ channel (FI02125p) (Pickpocket)	w
 CHANNEL	fly	FBgn0029761	SK	X2JDR8	1	2	Small conductance calcium-activated potassium channel, isofo	w
-CHANNEL	fly	FBgn0030529	Clic	Q9VY78	21	163	Chloride intracellular channel Clic	w
+CHANNEL	fly	FBgn0030529	Clic	Q9VY78	21	166	Chloride intracellular channel Clic	w
 CHANNEL	fly	FBgn0032593	Trpgamma	B7YZW4	3	77	Transient receptor potential cation channel gamma, isoform D	w
 CHANNEL	fly	FBgn0032706	Irk3	B7YZX2	2	11	Inwardly rectifying potassium channel 3, isoform D	w
 CHANNEL	fly	FBgn0032746	CG10470	Q9VJ11	1	84	Calcium load-activated calcium channel (CLAC channel)	w
 CHANNEL	fly	FBgn0033494	KCNQ	A1Z856	17	152	KCNQ potassium channel, isoform F	w
-CHANNEL	fly	FBgn0033755	ClC-b	Q7JZ25	1	10	Chloride channel protein	w
+CHANNEL	fly	FBgn0033755	ClC-b	Q7JZ25	1	11	Chloride channel protein	w
 CHANNEL	fly	FBgn0034636	twz	D5SHR0	1	26	BTB/POZ domain-containing protein Tiwaz (Potassium channel t	w
-CHANNEL	fly	FBgn0035113	pyx	Q9W0T5	2	6	Transient receptor potential channel pyrexia	w
+CHANNEL	fly	FBgn0035113	pyx	Q9W0T5	2	13	Transient receptor potential channel pyrexia	w
 CHANNEL	fly	FBgn0035934	TrpA1	G8IQ59	2	36	TRPA1 isoform D (Transient receptor potential cation channel	w
 CHANNEL	fly	FBgn0036566	ClC-c	Q9VUY1	3	11	Chloride channel protein	w
 CHANNEL	fly	FBgn0036727	SecCl	Q9VVH4	9	15	IP12572p (IP12772p) (Secretory chloride channel, isoform A) 	w
@@ -100,7 +100,7 @@ CHANNEL	fly	FBgn0038621	CG10864	Q9VE68	7	9	Potassium channel domain-containing p
 CHANNEL	fly	FBgn0039081	Irk2	A0A0B4LHI9	2	34	Inwardly rectifying potassium channel 2, isoform D	w
 CHANNEL	fly	FBgn0039840	pHCl-2	Q9V9Y4	9	88	pH-sensitive chloride channel 2 (Ligand-gated chloride chann	w
 CHANNEL	fly	FBgn0051116	ClC-a	Q9VGH7	3	20	Chloride channel protein 2 (ClC-2) (DmClC-2) (Chloride chann	w
-CHANNEL	fly	FBgn0051163	SKIP	A0A0B4KHV7	5	11	Shal K[+] channel interacting protein, isoform I	w
+CHANNEL	fly	FBgn0051163	SKIP	A0A0B4KHV7	6	13	Shal K[+] channel interacting protein, isoform I	w
 CHANNEL	fly	FBgn0060296	pain	Q9W0Y6	0	6	Transient receptor potential cation channel protein painless	w
 CHANNEL	fly	FBgn0069354	Porin2	Q9VKP2	2	49	GH26960p (Porin2, isoform A) (Porin2, isoform B) (Voltage-de	w
 CHANNEL	fly	FBgn0085434	NaCP60E	A0A0B4KFH8	0	1	Sodium channel protein	w
@@ -108,10 +108,10 @@ CHANNEL	fly	FBgn0260454	CG17139	Q9VKP3	2	49	Voltage-dependent anion-selective ch
 CHANNEL	fly	FBgn0261361	CG42638	Q9VW35	0	3	SD02261p (Transient receptor potential cation channel, mucol	w
 CHANNEL	fly	FBgn0261612	CngA	A0A0B4JCU4	4	33	Cyclic nucleotide-gated ion channel subunit A, isoform B	w
 CHANNEL	fly	FBgn0261722	fwe	Q95T12	2	73	Calcium channel flower (3L5)	w
-CHANNEL	fly	FBgn0261999	Ca-Ma2d	Q8IP22	82	2362	Ca[2+] channel Muscle-specific alpha2/delta subunit, isoform	w
-CHANNEL	fly	FBgn0262516	Trpml	Q9VW35	0	20	SD02261p (Transient receptor potential cation channel, mucol	w
+CHANNEL	fly	FBgn0261999	Ca-Ma2d	Q8IP22	82	2373	Ca[2+] channel Muscle-specific alpha2/delta subunit, isoform	w
+CHANNEL	fly	FBgn0262516	Trpml	Q9VW35	0	21	SD02261p (Transient receptor potential cation channel, mucol	w
 CHANNEL	fly	FBgn0262685	CG43155	Q9VYY5	7	10	Potassium channel domain-containing protein	w
-CHANNEL	fly	FBgn0263397	Ih	A1Z9N7	1	8	I[[h]] channel, isoform E	w
+CHANNEL	fly	FBgn0263397	Ih	A1Z9N7	1	9	I[[h]] channel, isoform E	w
 CHANNEL	fly	FBgn0264386	Ca-alpha1T	M9PGH9	0	2	Ca[2+]-channel protein alpha[[1]] subunit T, isoform F	w
 CHANNEL	fly	FBgn0264908	pHCl-1	M9PI70	8	13	PH-sensitive chloride channel 1, isoform N	w
 CHANNEL	fly	FBgn0264953	Piezo	A0A0S0WGQ9	0	1	Piezo-type mechanosensitive ion channel component	w
@@ -119,7 +119,7 @@ CHANNEL	fly	FBgn0265042	Irk1	A0A0B4KH86	6	39	Inwardly rectifying potassium chann
 CHANNEL	fly	FBgn0265194	Trpm	A8DYE2	38	722	Transient receptor potential cation channel trpm (Transient 	w
 CHANNEL	fly	FBgn0266346	CngB	Q9W2D5	4	25	Cyclic nucleotide-gated ion channel subunit B, isoform A (GH	w
 CHANNEL	fly	FBgn0267430	Pzl	A0A126GUQ2	0	0	Piezo-type mechanosensitive ion channel component	w
-CHANNEL	fly	FBgn0285944	para	M9PJP5	2	35	Sodium channel protein	w
+CHANNEL	fly	FBgn0285944	para	M9PJP5	2	37	Sodium channel protein	w
 CHANNEL	human	A0A1W2PPA2	KCNH1	A0A1W2PPA2	0	8	Potassium voltage-gated channel subfamily H member 1	w
 CHANNEL	human	A0A1W2PRG6	KCNH1	A0A1W2PRG6	0	8	Potassium voltage-gated channel subfamily H member 1	w
 CHANNEL	human	A8K7I4	CLCA1	A8K7I4	0	14	Calcium-activated chloride channel regulator 1 (EC 3.4.-.-) 	w
@@ -726,15 +726,15 @@ CHAP1	human	Q9UHD9	UBQLN2	Q9UHD9	85	838	Ubiquilin-2 (Chap1) (DSK2 homolog) (Prot
 CHAP1_HUMAN	human	Q96JM3	CHAMP1	Q96JM3	26	169		
 CHAPERON	human	P36776	LONP1	P36776	13	379	Lon protease homolog, mitochondrial (EC 3.4.21.53) (LONHs) (	w
 CHAPERONE	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
-CHAPERONE	fly	FBgn0004132	boca	Q8T9B6	11	176	LDLR chaperone boca	w
-CHAPERONE	fly	FBgn0011573	Cdc37	Q24276	22	134	Hsp90 co-chaperone Cdc37 (Hsp90 chaperone protein kinase-tar	w
+CHAPERONE	fly	FBgn0004132	boca	Q8T9B6	11	177	LDLR chaperone boca	w
+CHAPERONE	fly	FBgn0011573	Cdc37	Q24276	27	141	Hsp90 co-chaperone Cdc37 (Hsp90 chaperone protein kinase-tar	w
 CHAPERONE	fly	FBgn0025712	CG13920	Q8T0T9	2	34	Novel acetylcholine receptor chaperone	w
-CHAPERONE	fly	FBgn0027509	Tbcd	Q9VQ78	2	15	Tubulin-specific chaperone D	w
-CHAPERONE	fly	FBgn0029094	asf1	Q9V464	24	79	Histone chaperone asf1 (Anti-silencing function protein 1) (	w
+CHAPERONE	fly	FBgn0027509	Tbcd	Q9VQ78	2	20	Tubulin-specific chaperone D	w
+CHAPERONE	fly	FBgn0029094	asf1	Q9V464	24	81	Histone chaperone asf1 (Anti-silencing function protein 1) (	w
 CHAPERONE	fly	FBgn0030614	CG9072	Q9VXY1	4	7	Tubulin-specific chaperone A	w
 CHAPERONE	fly	FBgn0032195	Bcs1	Q9VL22	0	74	Mitochondrial chaperone BCS1 (BCS1-like protein)	w
 CHAPERONE	fly	FBgn0033055	Tbce	A1Z6J5	2	11	Tubulin-specific chaperone E (Tubulin-folding cofactor E)	w
-CHAPERONE	fly	FBgn0037378	PSMG1	Q9VNI4	17	196	Proteasome assembly chaperone 1	w
+CHAPERONE	fly	FBgn0037378	PSMG1	Q9VNI4	17	195	Proteasome assembly chaperone 1	w
 CHAPERONE	fly	FBgn0038577	CG12321	Q9VEC2	2	53	Proteasome assembly chaperone 2	w
 CHAPERONE	fly	FBgn0039869	Tbca	Q9V9U7	7	17	Tubulin-specific chaperone A	w
 CHAPERONE	fly	FBgn0050296	RIC-3	Q9W2N4	12	53	RIC3 acetylcholine receptor chaperone, isoform C (RIC3 acety	w
@@ -860,10 +860,10 @@ CHAPERONE	zebrafish	Q7ZV60	bcs1l	Q7ZV60	2	96	Mitochondrial chaperone BCS1	w
 CHAPERONE	zebrafish	X1WHJ8	pet100	X1WHJ8	0	4	PET100 cytochrome c oxidase chaperone	w
 CHAPERONE-ABC1-LIKE	human	Q8NI60	COQ8A	Q8NI60	11	230	Atypical kinase COQ8A, mitochondrial (EC 2.7.-.-) (Chaperone	w
 CHAPERONE-ABC1-LIKE	zebrafish	Q5RGU1	coq8a	Q5RGU1	3	20	Atypical kinase COQ8A, mitochondrial (EC 2.7.-.-) (Chaperone	w
-CHAPERONIN	fly	FBgn0003676	CCT1	P12613	8	122	T-complex protein 1 subunit alpha (TCP-1-alpha) (CCT-alpha) 	w
+CHAPERONIN	fly	FBgn0003676	CCT1	P12613	8	131	T-complex protein 1 subunit alpha (TCP-1-alpha) (CCT-alpha) 	w
 CHAPERONIN	fly	FBgn0011244	Hsp60B	Q9VPS5	9	74	60 kDa heat shock protein homolog 1, mitochondrial (60 kDa c	w
-CHAPERONIN	fly	FBgn0015019	CCT3	P48605	14	259	T-complex protein 1 subunit gamma (TCP-1-gamma) (CCT-gamma) 	w
-CHAPERONIN	fly	FBgn0031728	Hsp60C	Q9VMN5	3	59	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	w
+CHAPERONIN	fly	FBgn0015019	CCT3	P48605	14	261	T-complex protein 1 subunit gamma (TCP-1-gamma) (CCT-gamma) 	w
+CHAPERONIN	fly	FBgn0031728	Hsp60C	Q9VMN5	3	62	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	w
 CHAPERONIN	human	A6NM43	CCT8L1P	A6NM43	11	68	Putative T-complex protein 1 subunit theta-like 1 (Chaperoni	w
 CHAPERONIN	human	P10809	HSPD1	P10809	31	1230	60 kDa heat shock protein, mitochondrial (EC 5.6.1.7) (60 kD	w
 CHAPERONIN	human	P17987	TCP1	P17987	28	646	T-complex protein 1 subunit alpha (TCP-1-alpha) (EC 3.6.1.-)	w
@@ -896,8 +896,8 @@ CHARGE	human	Q9NNX9	VCX3A	Q9NNX9	1	27	Variable charge X-linked protein 3 (Variab
 CHARGED	fly	FBgn0027565	CG5498	Q9Y124	2	25	Charged multivesicular body protein 7 (Chromatin-modifying p	w
 CHARGED	fly	FBgn0035589	CHMP2B	Q9VRJ5	4	36	Charged multivesicular body protein 2b (LD36173p)	w
 CHARGED	fly	FBgn0035715	Ist1	Q9VRY6	14	61	IST1 homolog (Charged multivesicular body protein 8)	w
-CHARGED	fly	FBgn0036740	Vps60	Q9VVI9	6	73	Charged multivesicular body protein 5 (Vacuolar protein-sort	w
-CHARGED	fly	FBgn0036805	Chmp1	Q95SH2	5	51	Charged multivesicular body protein 1, isoform A (Charged mu	w
+CHARGED	fly	FBgn0036740	Vps60	Q9VVI9	6	81	Charged multivesicular body protein 5 (Vacuolar protein-sort	w
+CHARGED	fly	FBgn0036805	Chmp1	Q95SH2	6	52	Charged multivesicular body protein 1, isoform A (Charged mu	w
 CHARGED	fly	FBgn0037231	Vps24	Q9VN02	6	61	Charged multivesicular body protein 3 (Chromatin-modifying p	w
 CHARGED	fly	FBgn0086656	shrb	Q8T0Q4	27	238	Charged multivesicular body protein 4 (CHMP4) (ESCRT-III com	w
 CHARGED	human	O14598	VCY	O14598	2	33	Testis-specific basic protein Y 1 (Basic charge, Y-linked 1)	w
@@ -947,8 +947,8 @@ CHARON	fly	FBgn0031317	Charon	Q9VPY3	4	47	Charon (LD04951p)	w
 CHARON	fly	FBgn0031317	Charon	Q9VPY3	4	47	Charon (LD04951p)	w
 CHARYBDE	fly	FBgn0036165	chrb	Q9VTI8	6	32	Protein charybde (Protein charybdis) (Protein regulated in d	w
 CHARYBDIS	fly	FBgn0036165	chrb	Q9VTI8	6	32	Protein charybde (Protein charybdis) (Protein regulated in d	w
-CHAS	fly	FBgn0263258	chas	X2JE77	2	3	Chascon, isoform D	
-CHASCON	fly	FBgn0263258	chas	X2JE77	2	3	Chascon, isoform D	w
+CHAS	fly	FBgn0263258	chas	X2JE77	5	6	Chascon, isoform D	
+CHASCON	fly	FBgn0263258	chas	X2JE77	5	6	Chascon, isoform D	w
 CHASKI	fly	FBgn0033095	chk	Q8T043	0	7	Chaski, isoform A (Chaski, isoform B) (Chaski, isoform C) (L	w
 CHAT	fly	FBgn0000303	ChAT	P07668	2	19	Choline O-acetyltransferase (CHOACTase) (Choline acetylase) 	
 CHAT	human	P28329	CHAT	P28329	5	99	Choline O-acetyltransferase (CHOACTase) (ChAT) (Choline acet	

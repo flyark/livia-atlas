@@ -11,14 +11,14 @@ SULA	salmonella-typhimurium	P0A241	sulA	P0A241	1	2	Cell division inhibitor SulA
 SULA	streptococcus-pneumoniae	P59655	sulA	P59655	0	1	Dihydropteroate synthase	
 SULB	streptococcus-pneumoniae	Q8DR92	sulB	Q8DR92	0	1	tetrahydrofolate synthase	
 SULD	streptococcus-pneumoniae	P59657	sulD	P59657	0	2	Bifunctional folate synthesis protein	
-SULF	fly	FBgn0020251	sfl	Q9V3L1	198	2428	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULF	fly	FBgn0020251	sfl	Q9V3L1	129	2437	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
 SULF	worm	Q20258	clc-10	Q20258	0	3	Sulf_transp domain-containing protein	w
-SULF-1	fly	FBgn0040271	Sulf1	Q9VEX0	27	215	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	w
+SULF-1	fly	FBgn0040271	Sulf1	Q9VEX0	27	218	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	w
 SULF-1	human	Q8IWU6	SULF1	Q8IWU6	15	161	Extracellular sulfatase Sulf-1 (hSulf-1) (Arylsulfatase) (EC	w
 SULF-1	worm	Q21376	sul-1	Q21376	0	9	Putative extracellular sulfatase Sulf-1 homolog	w
 SULF-1	zebrafish	Q6EFA1	sulf1	Q6EFA1	0	28	Extracellular sulfatase Sulf-1 isoform X1	w
 SULF-2	human	Q8IWU5	SULF2	Q8IWU5	16	194	Extracellular sulfatase Sulf-2 (hSulf-2) (Arylsulfatase) (EC	w
-SULF1	fly	FBgn0040271	Sulf1	Q9VEX0	27	215	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	
+SULF1	fly	FBgn0040271	Sulf1	Q9VEX0	27	218	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	
 SULF1	human	Q8IWU6	SULF1	Q8IWU6	15	161	Extracellular sulfatase Sulf-1 (hSulf-1) (Arylsulfatase) (EC	
 SULF1	mus-musculus	Q8K007	Sulf1	Q8K007	1	11	Extracellular sulfatase Sulf-1	
 SULF1	rattus-norvegicus	Q8VI60	Sulf1	Q8VI60	0	12	Extracellular sulfatase Sulf-1	
@@ -32,9 +32,9 @@ SULF2B	zebrafish	A0A8M1N1V0	sulf2b	A0A8M1N1V0	0	28	Extracellular sulfatase
 SULF2_HUMAN	human	Q8IWU5	SULF2	Q8IWU5	16	194		
 SULFAMIDASE	human	P51688	SGSH	P51688	3	79	N-sulphoglucosamine sulphohydrolase (EC 3.10.1.1) (Sulfogluc	w
 SULFAMIDASE	zebrafish	B0V3V9	sgsh	B0V3V9	0	34	N-sulfoglucosamine sulfohydrolase (sulfamidase)	w
-SULFATASE	fly	FBgn0035445	Ids	Q9VZP8	27	250	Iduronate 2-sulfatase (EC 3.1.6.-, EC 3.1.6.13)	w
+SULFATASE	fly	FBgn0035445	Ids	Q9VZP8	27	256	Iduronate 2-sulfatase (EC 3.1.6.-, EC 3.1.6.13)	w
 SULFATASE	fly	FBgn0036768	CG7402	Q9VVM4	1	15	Sulfatase N-terminal domain-containing protein	w
-SULFATASE	fly	FBgn0040271	Sulf1	Q9VEX0	27	215	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	w
+SULFATASE	fly	FBgn0040271	Sulf1	Q9VEX0	27	218	Extracellular sulfatase SULF-1 homolog (DmSulf-1) (EC 3.1.6.	w
 SULFATASE	human	B3KWA1	IDS	B3KWA1	4	11	Iduronate 2-sulfatase (Hunter syndrome), isoform CRA_e	w
 SULFATASE	human	P08842	STS	P08842	3	110	Steryl-sulfatase (EC 3.1.6.2) (Arylsulfatase C) (ASC) (Estro	w
 SULFATASE	human	P22304	IDS	P22304	21	154	Iduronate 2-sulfatase (EC 3.1.6.13) (Alpha-L-iduronate sulfa	w
@@ -54,9 +54,9 @@ SULFATASE	zebrafish	Q6EFA1	sulf1	Q6EFA1	0	28	Extracellular sulfatase Sulf-1 isof
 SULFATASE-MODIFYING	fly	FBgn0035102	CG7049	Q9W0U6	30	295	Sulfatase-modifying factor enzyme domain-containing protein	w
 SULFATASE-MODIFYING	human	Q8NBJ7	SUMF2	Q8NBJ7	5	70	Inactive C-alpha-formylglycine-generating enzyme 2 (Paralog 	w
 SULFATASE-MODIFYING	human	Q8NBK3	SUMF1	Q8NBK3	11	83	Formylglycine-generating enzyme (FGE) (EC 1.8.3.7) (C-alpha-	w
-SULFATE	fly	FBgn0003089	pip	Q86BJ3	1538	2397	Heparan sulfate 2-O-sulfotransferase pipe (EC 2.8.2.-)	w
-SULFATE	fly	FBgn0020251	sfl	Q9V3L1	198	2428	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
-SULFATE	fly	FBgn0024230	Hs2st	P25722	56	2375	Heparin sulfate O-sulfotransferase (EC 2.8.2.-)	w
+SULFATE	fly	FBgn0003089	pip	Q86BJ3	504	2402	Heparan sulfate 2-O-sulfotransferase pipe (EC 2.8.2.-)	w
+SULFATE	fly	FBgn0020251	sfl	Q9V3L1	129	2437	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATE	fly	FBgn0024230	Hs2st	P25722	56	2386	Heparin sulfate O-sulfotransferase (EC 2.8.2.-)	w
 SULFATE	fly	FBgn0031005	Hs3st-B	Q9VWJ7	1	8	Heparan sulfate 3-O sulfotransferase-B, isoform A (Heparan s	w
 SULFATE	fly	FBgn0053147	Hs3st-A	Q8MRE7	0	2	GH20068p (Heparan sulfate 3-O sulfotransferase-A, isoform A 	w
 SULFATE	human	O14594	NCAN	O14594	22	123	Neurocan core protein (Chondroitin sulfate proteoglycan 3)	w
@@ -124,7 +124,7 @@ SULFATE	zebrafish	E7F0G2	ndst1a	E7F0G2	3	10	Bifunctional heparan sulfate N-deace
 SULFATE	zebrafish	F1QK03	cspg4bb	F1QK03	2	7	Chondroitin sulfate proteoglycan 4-like isoform X1	w
 SULFATE	zebrafish	F1QLG4	hs2st1b	F1QLG4	1	3	Heparan sulfate 2-O-sulfotransferase 1	w
 SULFATE	zebrafish	F8W3W2	cspg5a	F8W3W2	0	1	Chondroitin sulfate proteoglycan 5 isoform X2	w
-SULFATELESS	fly	FBgn0020251	sfl	Q9V3L1	198	2428	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
+SULFATELESS	fly	FBgn0020251	sfl	Q9V3L1	129	2437	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
 SULFHYDRASE	human	P32929	CTH	P32929	0	128	Cystathionine gamma-lyase (CGL) (CSE) (EC 4.4.1.1) (Cysteine	w
 SULFHYDRASE	human	P35520	CBS	P35520	3	206	Cystathionine beta-synthase (EC 4.2.1.22) (Beta-thionase) (S	w
 SULFHYDRYL	fly	FBgn0031068	Alr	C0PVB3	0	12	Sulfhydryl oxidase (EC 1.8.3.2)	w
@@ -213,14 +213,14 @@ SULFONYLUREA	human	O60706	ABCC9	O60706	2	35	ATP-binding cassette sub-family C me
 SULFONYLUREA	human	Q09428	ABCC8	Q09428	4	45	ATP-binding cassette sub-family C member 8 (Sulfonylurea rec	w
 SULFOTRA	human	O95803	NDST3	O95803	3	18	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
 SULFOTRANSFER	worm	Q19861	CELE_F28C10.1	Q19861	0	1	Sulfotransfer_1 domain-containing protein	w
-SULFOTRANSFERASE	fly	FBgn0031697	CG14024	Q9VMS3	280	2372	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
+SULFOTRANSFERASE	fly	FBgn0031697	CG14024	Q9VMS3	284	2383	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
 SULFOTRANSFERASE	fly	FBgn0031826	CG9550	Q9VMC4	0	3	Sulfotransferase domain-containing protein	w
-SULFOTRANSFERASE	fly	FBgn0032618	C4st	Q9VJG5	186	2376	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
+SULFOTRANSFERASE	fly	FBgn0032618	C4st	Q9VJG5	186	2387	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
 SULFOTRANSFERASE	fly	FBgn0033887	St4	A1Z9J8	0	7	Sulfotransferase 4, isoform A (Sulfotransferase 4, isoform B	w
 SULFOTRANSFERASE	fly	FBgn0034887	St1	Q9W1L8	0	8	GH11818p (Sulfotransferase 1 (EC 2.8.2.-))	w
-SULFOTRANSFERASE	fly	FBgn0035287	CG13937	Q8IRG5	390	2378	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
+SULFOTRANSFERASE	fly	FBgn0035287	CG13937	Q8IRG5	390	2384	Carbohydrate sulfotransferase (EC 2.8.2.-)	w
 SULFOTRANSFERASE	fly	FBgn0037665	St2	Q9VHH0	0	6	MIP25022p1 (Sulfotransferase 2, isoform A (EC 2.8.2.-)) (Sul	w
-SULFOTRANSFERASE	fly	FBgn0086674	Tpst	M9PHI3	734	2389	Protein-tyrosine sulfotransferase (EC 2.8.2.20)	w
+SULFOTRANSFERASE	fly	FBgn0086674	Tpst	M9PHI3	569	2396	Protein-tyrosine sulfotransferase (EC 2.8.2.20)	w
 SULFOTRANSFERASE	fly	FBgn0265052	St3	A0A0B4KF40	1	11	Sulfotransferase 3, isoform C (EC 2.8.2.-)	w
 SULFOTRANSFERASE	human	O00204	SULT2B1	O00204	20	120	Sulfotransferase 2B1 (EC 2.8.2.2) (Alcohol sulfotransferase)	w
 SULFOTRANSFERASE	human	O00338	SULT1C2	O00338	12	38	Sulfotransferase 1C2 (ST1C2) (EC 2.8.2.1) (Sulfotransferase 	w
@@ -362,12 +362,12 @@ SULFUR	yeast	P40573	MET28	P40573	5	20	Transcriptional activator of sulfur metabo
 SULFUR	yeast	Q03020	ISU1	Q03020	4	26	Iron sulfur cluster assembly protein 1, mitochondrial	w
 SULFUR	yeast	Q12056	ISU2	Q12056	3	23	Iron sulfur cluster assembly protein 2, mitochondrial	w
 SULFUR	zebrafish	Q6PGY7	cisd1	Q6PGY7	0	5	CDGSH iron sulfur domain 1	w
-SULFURASE	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+SULFURASE	fly	FBgn0002641	mal	Q9VRA2	0	14	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 SULFURASE	human	Q5VT66	MTARC1	Q5VT66	6	78	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
 SULFURASE	human	Q969Z3	MTARC2	Q969Z3	4	52	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
 SULFURASE	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 SULFURASE	worm	Q21657	mocs-1	Q21657	0	7	Molybdenum cofactor sulfurase	w
-SULFURTRANSFERASE	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
+SULFURTRANSFERASE	fly	FBgn0002641	mal	Q9VRA2	0	14	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 SULFURTRANSFERASE	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
 SULFURTRANSFERASE	fly	FBgn0038080	Tst1	Q9VG33	1	126	Sulfurtransferase	w
 SULFURTRANSFERASE	human	H0UI37	TSTD3	H0UI37	6	118	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w

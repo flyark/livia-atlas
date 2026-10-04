@@ -23,7 +23,7 @@ MIC12	yeast	P38341	MIC12	P38341	0	36	MICOS complex subunit MIC12
 MIC13	fly	FBgn0030215	CG15296	Q9W2T5	1	17	MICOS complex subunit MIC13	w
 MIC13	fly	FBgn0032365	CG14929	Q9VKG6	12	253	MICOS complex subunit MIC13	w
 MIC13	fly	FBgn0036726	QIL1	Q9VVH3	0	20	MICOS complex subunit MIC13 homolog QIL1	w
-MIC13	fly	FBgn0263032	CG43327	A0A0B4K829	1	14	MICOS complex subunit MIC13	w
+MIC13	fly	FBgn0263032	CG43327	A0A0B4K829	1	15	MICOS complex subunit MIC13	w
 MIC13	fly	FBgn0263033	CG43328	B9ER12	1	15	MICOS complex subunit MIC13	w
 MIC13	human	Q5XKP0	MICOS13	Q5XKP0	12	143		
 MIC13	worm	Q9TZE0	CELE_W04C9.2	Q9TZE0	0	15	MICOS complex subunit MIC13	w
@@ -73,7 +73,7 @@ MICA	human	Q96QC4	MICA	Q96QC4	3	52	MHC class I chain-related protein A
 MICA1_HUMAN	human	Q8TDZ2	MICAL1	Q8TDZ2	23	148		
 MICA2_HUMAN	human	O94851	MICAL2	O94851	39	188		
 MICA3_HUMAN	human	Q7RTP6	MICAL3	Q7RTP6	25	177		
-MICAL	fly	FBgn0053208	Mical	A0A0B4K6D5	1	2	F-actin monooxygenase (EC 1.14.13.225)	
+MICAL	fly	FBgn0053208	Mical	A0A0B4K6D5	2	13	F-actin monooxygenase (EC 1.14.13.225)	
 MICAL	human	O94851	MICAL2	O94851	39	188	[F-actin]-monooxygenase MICAL2 (EC 1.14.13.225) (MICAL C-ter	w
 MICAL	human	Q8TDZ2	MICAL1	Q8TDZ2	23	148		
 MICAL-1	human	Q8TDZ2	MICAL1	Q8TDZ2	23	148	[F-actin]-monooxygenase MICAL1 (EC 1.14.13.225) (EC 1.6.3.1)	w
@@ -81,15 +81,15 @@ MICAL-2	human	O94851	MICAL2	O94851	39	188	[F-actin]-monooxygenase MICAL2 (EC 1.1
 MICAL-3	human	Q7RTP6	MICAL3	Q7RTP6	25	177	[F-actin]-monooxygenase MICAL3 (EC 1.14.13.225) (Molecule in	w
 MICAL-CL	human	O94851	MICAL2	O94851	39	188	[F-actin]-monooxygenase MICAL2 (EC 1.14.13.225) (MICAL C-ter	w
 MICAL-L2	human	Q8IY33	MICALL2	Q8IY33	37	168	MICAL-like protein 2 (Junctional Rab13-binding protein) (Mol	w
-MICAL-LIKE	fly	FBgn0036333	MICAL-like	Q9VU34	2	23	LD45758p (MICAL-like)	w
-MICAL-LIKE	fly	FBgn0036333	MICAL-like	Q9VU34	2	23	LD45758p (MICAL-like)	w
+MICAL-LIKE	fly	FBgn0036333	MICAL-like	Q9VU34	5	33	LD45758p (MICAL-like)	w
+MICAL-LIKE	fly	FBgn0036333	MICAL-like	Q9VU34	5	33	LD45758p (MICAL-like)	w
 MICAL-LIKE	human	Q8IY33	MICALL2	Q8IY33	37	168	MICAL-like protein 2 (Junctional Rab13-binding protein) (Mol	w
 MICAL-LIKE	human	Q8N3F8	MICALL1	Q8N3F8	65	260	MICAL-like protein 1 (Molecule interacting with Rab13) (MIRa	w
 MICAL-LIKE	zebrafish	A0A0R4INF7	micall2a	A0A0R4INF7	0	12	MICAL-like protein 2a	w
 MICAL-LIKE	zebrafish	E7FA45	micall1a	E7FA45	2	7	MICAL-like 1a	w
 MICAL-LIKE	zebrafish	E7FEL3	micall1b.2	E7FEL3	17	150	MICAL-like 1b, duplicate 2	w
 MICAL-LIKE	zebrafish	F1QAZ3	micall2b	F1QAZ3	3	12	MICAL-like protein 1	w
-MICAL-LIKE_589	fly	FBgn0036333	MICAL-like	Q9VU34	2	23		
+MICAL-LIKE_589	fly	FBgn0036333	MICAL-like	Q9VU34	5	33		
 MICAL1	human	Q8TDZ2	MICAL1	Q8TDZ2	23	148	[F-actin]-monooxygenase MICAL1 (EC 1.14.13.225) (EC 1.6.3.1)	
 MICAL1	mus-musculus	Q8VDP3	Mical1	Q8VDP3	6	19	Molecule interacting with CasL protein 1	
 MICAL1	rattus-norvegicus	D3ZBP4	Mical1	D3ZBP4	4	12	Molecule interacting with CasL protein 1	
@@ -109,7 +109,7 @@ MICALL2	mus-musculus	Q3TN34	Micall2	Q3TN34	3	10	MICAL-like protein 2
 MICALL2	rattus-norvegicus	D3ZEN0	Micall2	D3ZEN0	1	11	MICAL-like protein 2	
 MICALL2A	zebrafish	A0A0R4INF7	micall2a	A0A0R4INF7	0	12	MICAL-like protein 2a	
 MICALL2B	zebrafish	F1QAZ3	micall2b	F1QAZ3	3	12	MICAL-like protein 1	
-MICAL_558	fly	FBgn0053208	Mical	A0A0B4K6D5	1	2		
+MICAL_558	fly	FBgn0053208	Mical	A0A0B4K6D5	2	13		
 MICA_HUMAN	human	Q29983	MICA	Q29983	14	116		
 MICB	human	Q29980	MICB	Q29980	43	316	MHC class I polypeptide-related sequence B (MIC-B)	
 MICB_HUMAN	human	Q29980	MICB	Q29980	43	316		
@@ -122,7 +122,7 @@ MICOS	fly	FBgn0036726	QIL1	Q9VVH3	0	20	MICOS complex subunit MIC13 homolog QIL1	
 MICOS	fly	FBgn0038400	Mic26-27	Q9VEY5	3	25	MICOS complex subunit	w
 MICOS	fly	FBgn0040871	Mic10a	Q9VY65	0	15	MICOS complex subunit MIC10	w
 MICOS	fly	FBgn0069923	Mic10b	Q8SY69	0	15	MICOS complex subunit MIC10	w
-MICOS	fly	FBgn0263032	CG43327	A0A0B4K829	1	14	MICOS complex subunit MIC13	w
+MICOS	fly	FBgn0263032	CG43327	A0A0B4K829	1	15	MICOS complex subunit MIC13	w
 MICOS	fly	FBgn0263033	CG43328	B9ER12	1	15	MICOS complex subunit MIC13	w
 MICOS	human	Q16891	IMMT	Q16891	32	456	MICOS complex subunit MIC60 (Cell proliferation-inducing gen	w
 MICOS	human	Q5TGZ0	MICOS10	Q5TGZ0	22	134	MICOS complex subunit MIC10 (Mitochondrial inner membrane or	w
@@ -158,7 +158,7 @@ MICOS13	mus-musculus	Q8R404	Micos13	Q8R404	2	16	MICOS complex subunit MIC13
 MICOS13	rattus-norvegicus	M0R719	Micos13	M0R719	1	7	MICOS complex subunit MIC13	
 MICOS13	zebrafish	Q1LUK1	micos13	Q1LUK1	3	30	MICOS complex subunit MIC13	
 MICRO-COFACTOR	human	E9PRG8	RSMC	E9PRG8	3	57	28S rRNA/ribosome and sororin micro-cofactor	w
-MICROCEPHALIN	fly	FBgn0260959	MCPH1	E1JH39	10	98	Microcephalin, isoform D	w
+MICROCEPHALIN	fly	FBgn0260959	MCPH1	E1JH39	13	108	Microcephalin, isoform D	w
 MICROCEPHALIN	human	Q8NEM0	MCPH1	Q8NEM0	41	160	Microcephalin	w
 MICROCEPHALIN	zebrafish	F8W5H6	mcph1	F8W5H6	5	73	Microcephalin 1	w
 MICROCEPHALY-ASSOCIATED	human	Q8IZT6	ASPM	Q8IZT6	2	16	Abnormal spindle-like microcephaly-associated protein (Abnor	w
@@ -186,7 +186,7 @@ MICROFIBRIL-ASSOCIATED	zebrafish	F1RA44	mfap4.12	F1RA44	0	1	Microfibril-associat
 MICROFIBRIL-ASSOCIATED	zebrafish	F8W539	mfap4.13	F8W539	0	1	Microfibril-associated glycoprotein 4-like precursor	w
 MICROFIBRIL-ASSOCIATED	zebrafish	R4GEQ7	mfap4.8	R4GEQ7	0	1	Microfibril-associated glycoprotein 4 isoform X1	w
 MICROFIBRIL-ASSOCIATED	zebrafish	R4GES4	mfap4.7	R4GES4	0	1	Microfibril-associated glycoprotein 4-like	w
-MICROFIBRILLAR-ASSOCIATED	fly	FBgn0035294	Mfap1	Q9W062	16	110	Microfibrillar-associated protein 1 (Spliceosome B complex p	w
+MICROFIBRILLAR-ASSOCIATED	fly	FBgn0035294	Mfap1	Q9W062	17	114	Microfibrillar-associated protein 1 (Spliceosome B complex p	w
 MICROFIBRILLAR-ASSOCIATED	human	O75121	MFAP3L	O75121	3	27	Microfibrillar-associated protein 3-like (Testis development	w
 MICROFIBRILLAR-ASSOCIATED	human	P55001	MFAP2	P55001	19	87	Microfibrillar-associated protein 2 (MFAP-2) (Microfibril-as	w
 MICROFIBRILLAR-ASSOCIATED	human	P55081	MFAP1	P55081	73	533	Microfibrillar-associated protein 1 (Spliceosome B complex p	w
@@ -207,8 +207,8 @@ MICROPROTEIN	human	Q1L6U9	MSMP	Q1L6U9	4	28	Prostate-associated microseminoprotei
 MICROPROTEIN	human	Q96GX8	CLMB	Q96GX8	11	60	Calcimembrin (Microprotein for thermogenesis 1)	w
 MICRORNA	human	Q75NE6	MIR17HG	Q75NE6	0	13	Putative microRNA 17 host gene protein (Putative microRNA ho	w
 MICROSEMINOPROTEIN	human	Q1L6U9	MSMP	Q1L6U9	4	28	Prostate-associated microseminoprotein (PC3-secreted micropr	w
-MICROSOMAL	fly	FBgn0030306	Spase25	Q9VYY2	4	36	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
-MICROSOMAL	fly	FBgn0039172	Spase22-23	Q9VCA9	259	2384	Signal peptidase complex subunit 3 (Microsomal signal peptid	w
+MICROSOMAL	fly	FBgn0030306	Spase25	Q9VYY2	4	44	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
+MICROSOMAL	fly	FBgn0039172	Spase22-23	Q9VCA9	261	2395	Signal peptidase complex subunit 3 (Microsomal signal peptid	w
 MICROSOMAL	fly	FBgn0040623	Spase12	Q9VAL0	1	13	Signal peptidase complex subunit 1 (Microsomal signal peptid	w
 MICROSOMAL	fly	FBgn0266369	Mtp	Q9VIH3	36	350	Microsomal triacylglycerol transfer protein (MTP)	w
 MICROSOMAL	human	O14684	PTGES	O14684	9	429	Prostaglandin E synthase (EC 5.3.99.3) (Glutathione peroxida	w
@@ -240,7 +240,7 @@ MICROSOME-ASSOCIATE	human	P48723	HSPA13	P48723	10	176	Heat shock 70 kDa protein 
 MICROSPHERULE	human	Q96EZ8	MCRS1	Q96EZ8	110	456	Microspherule protein 1 (58 kDa microspherule protein) (Cell	w
 MICROSPHERULE	zebrafish	Q6P0E3	mcrs1	Q6P0E3	12	69	Microspherule protein 1	w
 MICROTU	human	Q15643	TRIP11	Q15643	35	234	Thyroid receptor-interacting protein 11 (TR-interacting prot	w
-MICROTUBULE	fly	FBgn0000283	Cp190	Q24478	47	177	Centrosome-associated zinc finger protein Cp190 (Centrosomal	w
+MICROTUBULE	fly	FBgn0000283	Cp190	Q24478	54	194	Centrosome-associated zinc finger protein Cp190 (Centrosomal	w
 MICROTUBULE	fly	FBgn0004177	mts	P23696	235	1200	Serine/threonine-protein phosphatase PP2A (EC 3.1.3.16) (Pro	w
 MICROTUBULE	human	A0A087WZ40	MAP7	A0A087WZ40	3	71	Microtubule associated protein 7	w
 MICROTUBULE	human	A0A1B0GTD5	SPMIP11	A0A1B0GTD5	0	13	Sperm microtubule inner protein 11 (Testis-expressed protein	w
@@ -307,12 +307,12 @@ MICROTUBULE	zebrafish	E9QE51	tpx2	E9QE51	8	122	TPX2 microtubule nucleation facto
 MICROTUBULE	zebrafish	F1Q6E4	jpt2	F1Q6E4	0	1	Jupiter microtubule associated homolog 2	w
 MICROTUBULE	zebrafish	R4GEN1	mark4b	R4GEN1	1	2	MAP/microtubule affinity-regulating kinase 3	w
 MICROTUBULE-ASSOCIATED	fly	FBgn0002645	Map205	Q8IMF5	17	81	Microtubule-associated protein 205, isoform B	w
-MICROTUBULE-ASSOCIATED	fly	FBgn0010342	Map60	Q7K180	6	31	LD02709p (Microtubule-associated protein 60)	w
-MICROTUBULE-ASSOCIATED	fly	FBgn0027287	Gmap	Q9VXU1	2	7	Golgi microtubule-associated protein	w
+MICROTUBULE-ASSOCIATED	fly	FBgn0010342	Map60	Q7K180	12	45	LD02709p (Microtubule-associated protein 60)	w
+MICROTUBULE-ASSOCIATED	fly	FBgn0027287	Gmap	Q9VXU1	2	8	Golgi microtubule-associated protein	w
 MICROTUBULE-ASSOCIATED	fly	FBgn0039859	Mnat9	Q9V9V9	38	410	Alpha/beta-tubulin-N-acetyltransferase 9 (EC 2.3.1.308) (Mic	w
-MICROTUBULE-ASSOCIATED	fly	FBgn0051363	Jupiter	Q9I7K0	25	106	Microtubule-associated protein Jupiter	w
+MICROTUBULE-ASSOCIATED	fly	FBgn0051363	Jupiter	Q9I7K0	33	122	Microtubule-associated protein Jupiter	w
 MICROTUBULE-ASSOCIATED	fly	FBgn0259108	futsch	Q9W596	0	2	Microtubule-associated protein futsch (MAP1B homolog) [Cleav	w
-MICROTUBULE-ASSOCIATED	fly	FBgn0260399	gwl	Q95TN8	242	1106	Serine/threonine-protein kinase greatwall (EC 2.7.11.1) (Mic	w
+MICROTUBULE-ASSOCIATED	fly	FBgn0260399	gwl	Q95TN8	247	1107	Serine/threonine-protein kinase greatwall (EC 2.7.11.1) (Mic	w
 MICROTUBULE-ASSOCIATED	fly	FBgn0266579	tau	Q9VB15	4	40	Microtubule-associated protein	w
 MICROTUBULE-ASSOCIATED	human	A6NCE7	MAP1LC3B2	A6NCE7	37	169	Microtubule-associated protein 1 light chain 3 beta 2 (Micro	w
 MICROTUBULE-ASSOCIATED	human	O00423	EML1	O00423	46	177	Echinoderm microtubule-associated protein-like 1 (EMAP-1) (H	w

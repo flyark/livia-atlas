@@ -1,7 +1,7 @@
 DEA2	schizosaccharomyces-pombe	Q9P6I7	dea2	Q9P6I7	0	4	Adenine deaminase	
 DEACETYLA	human	Q6PIU2	NCEH1	Q6PIU2	4	212	Neutral cholesterol ester hydrolase 1 (NCEH) (EC 3.1.1.-) (A	w
-DEACETYLASE	fly	FBgn0015805	HDAC1	Q94517	134	770	Histone deacetylase HDAC1 (HD) (EC 3.5.1.98)	w
-DEACETYLASE	fly	FBgn0024291	Sirt1	Q9VK34	115	533	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
+DEACETYLASE	fly	FBgn0015805	HDAC1	Q94517	136	771	Histone deacetylase HDAC1 (HD) (EC 3.5.1.98)	w
+DEACETYLASE	fly	FBgn0024291	Sirt1	Q9VK34	117	536	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
 DEACETYLASE	fly	FBgn0024491	Bin1	Q9VEX9	13	76	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	w
 DEACETYLASE	fly	FBgn0025825	HDAC3	Q7KTS4	26	182	Histone deacetylase (EC 3.5.1.98)	w
 DEACETYLASE	fly	FBgn0026428	HDAC6	M9PJN5	1	33	Histone deacetylase 6, isoform G (EC 3.5.1.98)	w
@@ -9,7 +9,7 @@ DEACETYLASE	fly	FBgn0030788	Sap30	Q9VXB3	64	405	Histone deacetylase complex subu
 DEACETYLASE	fly	FBgn0032598	ChLD3	Q9VJI8	27	243	Chitin and LDLR binding deacetylase 3 (RE01566p)	w
 DEACETYLASE	fly	FBgn0038763	PIG-L	A0A0B4K6Q5	1	11	N-acetylglucosaminylphosphatidylinositol deacetylase (EC 3.5	w
 DEACETYLASE	fly	FBgn0039631	Sirt7	Q9VAQ1	38	370	NAD-dependent protein deacetylase Sirt7 (EC 2.3.1.286) (Regu	w
-DEACETYLASE	fly	FBgn0041210	HDAC4	M9PHQ2	5	56	Histone deacetylase 4, isoform G (EC 3.5.1.98)	w
+DEACETYLASE	fly	FBgn0041210	HDAC4	M9PHQ2	13	72	Histone deacetylase 4, isoform G (EC 3.5.1.98)	w
 DEACETYLASE	fly	FBgn0051119	HDAC11	Q9VC26	2	23	Histone deacetylase 11, isoform A (EC 3.5.1.98) (Histone dea	w
 DEACETYLASE	human	A0A3B3IRV1	?	A0A3B3IRV1	4	38	Histone deacetylase 8	w
 DEACETYLASE	human	A1Z1Q3	MACROD2	A1Z1Q3	3	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	w
@@ -138,10 +138,10 @@ DEACYLASE	zebrafish	Q7T387	abhd14b	Q7T387	0	8	Putative protein-lysine deacylase 
 DEAD	fly	FBgn0004556	Dbp73D	P26802	5	50	Probable ATP-dependent RNA helicase Dbp73D (DEAD box protein	w
 DEAD	fly	FBgn0004795	retn	Q24573	104	414	Protein dead ringer (Protein retained)	w
 DEAD	fly	FBgn0010220	Dbp45A	Q07886	2	57	Probable ATP-dependent RNA helicase Dbp45A (DEAD box protein	w
-DEAD	fly	FBgn0014189	Hel25E	Q27268	19	146	ATP-dependent RNA helicase WM6 (DEAD box protein UAP56) (Dmr	w
-DEAD	fly	FBgn0015075	Ddx1	Q9VNV3	3	38	ATP-dependent RNA helicase Ddx1 (DEAD box protein 1) (EC 3.6	w
+DEAD	fly	FBgn0014189	Hel25E	Q27268	19	155	ATP-dependent RNA helicase WM6 (DEAD box protein UAP56) (Dmr	w
+DEAD	fly	FBgn0015075	Ddx1	Q9VNV3	3	39	ATP-dependent RNA helicase Ddx1 (DEAD box protein 1) (EC 3.6	w
 DEAD	fly	FBgn0015331	abs	Q9V3C0	1	26	ATP-dependent RNA helicase abstrakt (DEAD box protein abstra	w
-DEAD	fly	FBgn0032157	Etl1	Q9VL72	2	19	SWI/SNF-related matrix-associated actin-dependent regulator 	w
+DEAD	fly	FBgn0032157	Etl1	Q9VL72	2	23	SWI/SNF-related matrix-associated actin-dependent regulator 	w
 DEAD	fly	FBgn0032314	CG7309	Q7KTF1	0	4	Protein I'm not dead yet	w
 DEAD	fly	FBgn0032919	pths	Q9VIF6	9	120	ATP-dependent RNA helicase DDX47 (EC 3.6.4.13) (DEAD box pro	w
 DEAD	fly	FBgn0036754	ais	Q9VVK8	1	29	Probable ATP-dependent RNA helicase DDX52 (EC 3.6.4.13) (DEA	w
@@ -223,14 +223,14 @@ DEADBEAT	fly	FBgn0284444	ddbt	A2VEN4	0	0	Deadbeat, isoform B (Deadbeat, isoform 
 DEADC1	human	Q7Z6V5	ADAT2	Q7Z6V5	11	170		
 DEADENYLASE	fly	FBgn0011725	twin	Q8IMX1	43	476	poly(A)-specific ribonuclease (EC 3.1.13.4) (Carbon cataboli	w
 DEADENYLASE	human	Q6L8Q7	PDE12	Q6L8Q7	11	134	2',5'-phosphodiesterase 12 (2'-PDE) (2-PDE) (EC 3.1.4.-) (Mi	w
-DEADENYLATI	fly	FBgn0035397	PAN3	Q95RR8	86	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
+DEADENYLATI	fly	FBgn0035397	PAN3	Q95RR8	87	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATI	human	Q58A45	PAN3	Q58A45	10	143	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATI	worm	P34653	panl-3	P34653	5	30	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATI	yeast	P36102	PAN3	P36102	2	36	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATI	zebrafish	E7EXP6	pan3	E7EXP6	8	43	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATING	human	O95453	PARN	O95453	20	210	Poly(A)-specific ribonuclease PARN (EC 3.1.13.4) (Deadenylat	w
-DEADENYLATION	fly	FBgn0033352	PAN2	A1Z7K9	8	84	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
-DEADENYLATION	fly	FBgn0035397	PAN3	Q95RR8	86	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
+DEADENYLATION	fly	FBgn0033352	PAN2	A1Z7K9	8	89	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
+DEADENYLATION	fly	FBgn0035397	PAN3	Q95RR8	87	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATION	human	O95453	PARN	O95453	20	210	Poly(A)-specific ribonuclease PARN (EC 3.1.13.4) (Deadenylat	w
 DEADENYLATION	human	Q504Q3	PAN2	Q504Q3	16	434	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
 DEADENYLATION	human	Q58A45	PAN3	Q58A45	10	143	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
@@ -244,7 +244,7 @@ DEADHEAD	fly	FBgn0011761	dhd	P47938	4	33	Thioredoxin-1 (DmTrx-1) (Protein deadhe
 DEADLOCK	fly	FBgn0086251	del	Q9VIF5	2	8	Protein deadlock	w
 DEADPAN	fly	FBgn0010109	dpn	Q26263	72	396	Protein deadpan	w
 DEADPAN	fly	FBgn0032741	Sidpn	Q9VJ16	99	374	GH26014p (Similar to deadpan)	w
-DEAF	fly	FBgn0033166	Eaf	Q7JRJ1	22	90	Ell-associated factor Eaf (dEaf)	w
+DEAF	fly	FBgn0033166	Eaf	Q7JRJ1	22	94	Ell-associated factor Eaf (dEaf)	w
 DEAF-1	fly	FBgn0013799	Deaf1	Q24180	92	461	Deformed epidermal autoregulatory factor 1 (Protein DEAF-1)	w
 DEAF-1-RELATED	human	O75398	DEAF1	O75398	79	387	Deformed epidermal autoregulatory factor 1 homolog (Nuclear 	w
 DEAF1	fly	FBgn0013799	Deaf1	Q24180	92	461	Deformed epidermal autoregulatory factor 1 (Protein DEAF-1)	
@@ -282,7 +282,7 @@ DEAL	human	P50748	KNTC1	P50748	6	115	Kinetochore-associated protein 1 (Rough dea
 DEALKYLASE	human	Q9Y4U1	MMACHC	Q9Y4U1	15	88	Cyanocobalamin reductase / alkylcobalamin dealkylase (Alkylc	w
 DEALKYLASE	zebrafish	Q5RFU5	mmachc	Q5RFU5	1	4	Cyanocobalamin reductase / alkylcobalamin dealkylase	w
 DEAMIDASE	fly	FBgn0034046	tun	Q7K2Y9	1	5	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
-DEAMIDASE	fly	FBgn0051216	Naam	Q9VDU7	1	5	nicotinamidase (EC 3.5.1.19) (Nicotinamide deamidase)	w
+DEAMIDASE	fly	FBgn0051216	Naam	Q9VDU7	1	7	nicotinamidase (EC 3.5.1.19) (Nicotinamide deamidase)	w
 DEAMIDASE	human	P17812	CTPS1	P17812	23	598	CTP synthase 1 (EC 6.3.4.2) (CTP synthetase 1) (Protein-aspa	w
 DEAMIDASE	human	Q96AB6	NTAN1	Q96AB6	8	72	Protein N-terminal asparagine amidohydrolase (EC 3.5.1.121) 	w
 DEAMIDASE	human	Q96HA8	NTAQ1	Q96HA8	126	464	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
@@ -293,17 +293,17 @@ DEAMINASE	fly	FBgn0031717	Gnpda	Q9VMP9	1	77	Glucosamine-6-phosphate isomerase (E
 DEAMINASE	fly	FBgn0032001	CG8360	Q9VLR3	2	45	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
 DEAMINASE	fly	FBgn0032002	CG8353	Q9VLR2	2	41	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
 DEAMINASE	fly	FBgn0032003	CG8349	Q7KTJ2	2	48	CMP/dCMP-type deaminase domain-containing protein	w
-DEAMINASE	fly	FBgn0033952	Adgf-E	Q7KGG1	20	330	adenosine deaminase (EC 3.5.4.4)	w
-DEAMINASE	fly	FBgn0034360	CG10927	Q7K157	3	22	tRNA-specific adenosine deaminase 2 (Deaminase domain-contai	w
+DEAMINASE	fly	FBgn0033952	Adgf-E	Q7KGG1	20	331	adenosine deaminase (EC 3.5.4.4)	w
+DEAMINASE	fly	FBgn0034360	CG10927	Q7K157	4	23	tRNA-specific adenosine deaminase 2 (Deaminase domain-contai	w
 DEAMINASE	fly	FBgn0036751	Adgf-B	Q9VVK4	24	329	adenosine deaminase (EC 3.5.4.4)	w
 DEAMINASE	fly	FBgn0036752	Adgf-A	Q9VVK5	22	340	adenosine deaminase (EC 3.5.4.4)	w
-DEAMINASE	fly	FBgn0036959	CG6951	Q9VWA2	0	42	Probable deoxycytidylate deaminase (EC 3.5.4.12) (dCMP deami	w
+DEAMINASE	fly	FBgn0036959	CG6951	Q9VWA2	0	43	Probable deoxycytidylate deaminase (EC 3.5.4.12) (dCMP deami	w
 DEAMINASE	fly	FBgn0037684	Srr	Q9VHF0	2	47	L-serine deaminase (L-threonine dehydratase)	w
-DEAMINASE	fly	FBgn0038172	Adgf-D	Q9VFS1	33	386	adenosine deaminase (EC 3.5.4.4)	w
-DEAMINASE	fly	FBgn0038173	Adgf-C	Q9VFS0	31	328	adenosine deaminase (EC 3.5.4.4)	w
-DEAMINASE	fly	FBgn0043025	Adgf-A2	Q8IQR3	39	327	adenosine deaminase (EC 3.5.4.4)	w
-DEAMINASE	fly	FBgn0052626	AMPdeam	X2JEY5	4	113	AMP deaminase (EC 3.5.4.6)	w
-DEAMINASE	fly	FBgn0261436	DhpD	Q9VMY9	0	94	Guanine deaminase (EC 3.5.4.3) (Dihydropterin deaminase) (EC	w
+DEAMINASE	fly	FBgn0038172	Adgf-D	Q9VFS1	33	387	adenosine deaminase (EC 3.5.4.4)	w
+DEAMINASE	fly	FBgn0038173	Adgf-C	Q9VFS0	31	329	adenosine deaminase (EC 3.5.4.4)	w
+DEAMINASE	fly	FBgn0043025	Adgf-A2	Q8IQR3	39	328	adenosine deaminase (EC 3.5.4.4)	w
+DEAMINASE	fly	FBgn0052626	AMPdeam	X2JEY5	7	124	AMP deaminase (EC 3.5.4.6)	w
+DEAMINASE	fly	FBgn0261436	DhpD	Q9VMY9	1	100	Guanine deaminase (EC 3.5.4.3) (Dihydropterin deaminase) (EC	w
 DEAMINASE	human	P00813	ADA	P00813	9	145	Adenosine deaminase (EC 3.5.4.4) (Adenosine aminohydrolase)	w
 DEAMINASE	human	P08397	HMBS	P08397	12	139	Porphobilinogen deaminase (PBG-D) (EC 2.5.1.61) (Hydroxymeth	w
 DEAMINASE	human	P20132	SDS	P20132	8	46	L-serine dehydratase/L-threonine deaminase (SDH) (EC 4.3.1.1	w
@@ -375,7 +375,7 @@ DEAMINASE	zebrafish	Q6AXL2	rida	Q6AXL2	0	15	2-iminobutanoate/2-iminopropanoate d
 DEAMINASE	zebrafish	Q6DG22	ada	Q6DG22	1	18	Adenosine deaminase	w
 DEAMINASE	zebrafish	Q6P0R4	cdab	Q6P0R4	0	1	Cytidine deaminase	w
 DEAMINASE	zebrafish	Q6P3G5	ampd1	Q6P3G5	1	4	AMP deaminase	w
-DEAMINASE-LIKE	fly	FBgn0037661	Ada	Q9VHH7	0	9	Adenosine deaminase-like protein (EC 3.5.4.-)	w
+DEAMINASE-LIKE	fly	FBgn0037661	Ada	Q9VHH7	0	14	Adenosine deaminase-like protein (EC 3.5.4.-)	w
 DEAMINASE-LIKE	human	Q6DHV7	MAPDA	Q6DHV7	6	61	N6-Methyl-AMP deaminase (EC 3.5.4.-) (Adenosine deaminase-li	w
 DEAMINASE-LIKE	worm	Q8IG39	adal-1	Q8IG39	0	1	Adenosine deaminase-like protein	w
 DEAMINASE-LIKE	zebrafish	Q8JFW4	adat3	Q8JFW4	1	5	Probable inactive tRNA-specific adenosine deaminase-like pro	w
@@ -388,11 +388,11 @@ DEATH	fly	FBgn0011706	rpr	Q24475	6	101	Cell death protein rpr (Protein reaper)	w
 DEATH	fly	FBgn0015946	grim	Q24570	2	50	Cell death protein Grim	w
 DEATH	fly	FBgn0028381	Decay	Q9VET9	5	25	AT03047p (DECAY) (Death executioner caspase related to Apopa	w
 DEATH	fly	FBgn0029131	Debcl	Q9V9C8	89	418	BG1 (Bcl-2 ortholog dBorg-1) (Death executioner Bcl-2) (Drob	w
-DEATH	fly	FBgn0030520	Pdcd4	Q9VY91	2	20	LD21074p (Programmed cell death 4, isoform A) (Programmed ce	w
-DEATH	fly	FBgn0030613	Rab3-GEF	M9PEM6	0	4	MAP kinase-activating death domain protein	w
-DEATH	fly	FBgn0033188	Drat	Q961L4	1	10	Death resistor Adh domain containing target, isoform C (EC 1	w
+DEATH	fly	FBgn0030520	Pdcd4	Q9VY91	10	35	LD21074p (Programmed cell death 4, isoform A) (Programmed ce	w
+DEATH	fly	FBgn0030613	Rab3-GEF	M9PEM6	0	5	MAP kinase-activating death domain protein	w
+DEATH	fly	FBgn0033188	Drat	Q961L4	2	21	Death resistor Adh domain containing target, isoform C (EC 1	w
 DEATH	fly	FBgn0033659	Damm	Q7KHI6	0	18	Daydream (Death associated molecule related to Mch2 caspase,	w
-DEATH	fly	FBgn0036580	PDCD-5	Q9VUZ8	1	9	GEO07442p1 (Programmed cell death 5) (Programmed cell death 	w
+DEATH	fly	FBgn0036580	PDCD-5	Q9VUZ8	3	12	GEO07442p1 (Programmed cell death 5) (Programmed cell death 	w
 DEATH	fly	FBgn0038928	Fadd	Q9V3B4	10	117	Fas-associated death domain protein (Death domain-containing	w
 DEATH	fly	FBgn0263864	Dark	Q7KLI1	2	60	Apaf-1 related killer DARK (Apaf-1/CED-4-related caspase act	w
 DEATH	human	A4D1F6	LRRD1	A4D1F6	9	110	Leucine-rich repeat and death domain-containing protein 1	w

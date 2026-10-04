@@ -11,8 +11,8 @@ INO2	yeast	P26798	INO2	P26798	5	20	Protein INO2
 INO4	candida-albicans-237561	A0A1D8PH18	INO4	A0A1D8PH18	1	6	Ino4p	
 INO4	yeast	P13902	INO4	P13902	8	21	Protein INO4	
 INO80	candida-albicans-237561	Q59KI4	INO80	Q59KI4	4	21	Chromatin-remodeling ATPase INO80	
-INO80	fly	FBgn0289122	Ino80	Q9VDY1	0	6	INO80 complex subunit	w
-INO80	fly	FBgn0289122	Ino80	Q9VDY1	0	6	INO80 complex subunit	w
+INO80	fly	FBgn0289122	Ino80	Q9VDY1	3	11	INO80 complex subunit	w
+INO80	fly	FBgn0289122	Ino80	Q9VDY1	3	11	INO80 complex subunit	w
 INO80	human	K7ENP7	?	K7ENP7	0	7	INO80 complex subunit C	w
 INO80	human	O96019	ACTL6A	O96019	106	835	Actin-like protein 6A (53 kDa BRG1-associated factor A) (Act	w
 INO80	human	P0C1Z6	TFPT	P0C1Z6	44	264	TCF3 fusion partner (INO80 complex subunit F) (Protein FB1)	w
@@ -60,7 +60,7 @@ INO80S	human	P25490	YY1	P25490	127	917
 INO80_HUMAN	human	Q9ULG1	INO80	Q9ULG1	24	301		
 INOC1	human	Q9ULG1	INO80	Q9ULG1	24	301		
 INORGANIC	fly	FBgn0016684	NaPi-T	Q7JZR4	3	25	Na[+]-dependent inorganic phosphate cotransporter, isoform A	w
-INORGANIC	fly	FBgn0016687	Nurf-38	O77460	34	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
+INORGANIC	fly	FBgn0016687	Nurf-38	O77460	37	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
 INORGANIC	fly	FBgn0024315	Picot	Q9V7S5	0	9	Putative inorganic phosphate cotransporter	w
 INORGANIC	fly	FBgn0035649	PXo	Q9VRR2	4	25	Solute carrier family 53 member 1 (Inorganic phosphate-sensi	w
 INORGANIC	human	Q15181	PPA1	Q15181	43	559	Inorganic pyrophosphatase (EC 3.6.1.1) (Pyrophosphate phosph	w
@@ -78,15 +78,15 @@ INORGANIC	yeast	P28239	PPA2	P28239	1	17	Inorganic pyrophosphatase, mitochondrial
 INORGANIC	yeast	P46956	PHO86	P46956	1	32	Inorganic phosphate transporter PHO86	w
 INORGANIC	zebrafish	A0A0R4IRJ2	ppa2	A0A0R4IRJ2	0	8	inorganic diphosphatase	w
 INORGANIC	zebrafish	A5PLK2	lhpp	A5PLK2	0	4	Phospholysine phosphohistidine inorganic pyrophosphate phosp	w
-INOS	fly	FBgn0025885	Inos	O97477	1	198	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	
+INOS	fly	FBgn0025885	Inos	O97477	3	216	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	
 INOS	human	P35228	NOS2	P35228	12	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
 INOS	human	Q14571	ITPR2	Q14571	4	102	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 (IP	w
 INOS-1	worm	G5ED01	inos-1	G5ED01	0	28	Inositol-3-phosphate synthase	
 INOSI	human	Q9NX62	BPNT2	Q9NX62	4	76	Golgi-resident adenosine 3',5'-bisphosphate 3'-phosphatase (	w
-INOSINE	fly	FBgn0031663	CG8891	Q9VMW7	1	141	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
+INOSINE	fly	FBgn0031663	CG8891	Q9VMW7	1	142	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
 INOSINE	fly	FBgn0032436	CG5418	Q9VK81	0	6	Inosine/uridine-preferring nucleoside hydrolase domain-conta	w
-INOSINE	fly	FBgn0035348	CG16758	M9PE19	7	97	Purine nucleoside phosphorylase (EC 2.4.2.1) (Inosine phosph	w
-INOSINE	fly	FBgn0039241	Atic	Q9VC18	0	103	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
+INOSINE	fly	FBgn0035348	CG16758	M9PE19	7	98	Purine nucleoside phosphorylase (EC 2.4.2.1) (Inosine phosph	w
+INOSINE	fly	FBgn0039241	Atic	Q9VC18	0	110	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
 INOSINE	human	P00491	PNP	P00491	1	163	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine 	w
 INOSINE	human	P31939	ATIC	P31939	0	219	Bifunctional purine biosynthesis protein ATIC (AICAR transfo	w
 INOSINE	human	Q96DE0	NUDT16	Q96DE0	3	55	U8 snoRNA-decapping enzyme (EC 3.6.1.62) (IDP phosphatase) (	w
@@ -105,16 +105,16 @@ INOSINE-5	yeast	P50095	IMD3	P50095	1	166	Inosine-5'-monophosphate dehydrogenase 
 INOSINE-5	zebrafish	B0UXP9	impdh2	B0UXP9	0	14	Inosine-5'-monophosphate dehydrogenase 2	w
 INOSINE-5	zebrafish	Q5RGV1	impdh1b	Q5RGV1	0	14	Inosine-5'-monophosphate dehydrogenase 1b	w
 INOSINE-5	zebrafish	Q6GMG5	impdh1a	Q6GMG5	0	14	Inosine-5'-monophosphate dehydrogenase 1a	w
-INOSINE-GUANOSINE	fly	FBgn0034898	CG18128	Q9W1K6	3	94	purine-nucleoside phosphorylase (EC 2.4.2.1) (Inosine-guanos	w
-INOSINE-GUANOSINE	fly	FBgn0035348	CG16758	M9PE19	7	97	Purine nucleoside phosphorylase (EC 2.4.2.1) (Inosine phosph	w
+INOSINE-GUANOSINE	fly	FBgn0034898	CG18128	Q9W1K6	3	95	purine-nucleoside phosphorylase (EC 2.4.2.1) (Inosine-guanos	w
+INOSINE-GUANOSINE	fly	FBgn0035348	CG16758	M9PE19	7	98	Purine nucleoside phosphorylase (EC 2.4.2.1) (Inosine phosph	w
 INOSINE-GUANOSINE	human	P00491	PNP	P00491	1	163	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine 	w
 INOSINE-SPECIFIC	human	Q8N8Q3	ENDOV	Q8N8Q3	2	48	Endonuclease V (hEndoV) (EC 3.1.26.-) (Inosine-specific endo	w
-INOSITOL	fly	FBgn0010051	Itpr	P29993	1	16	Inositol 1,4,5,-trisphosphate receptor	w
+INOSITOL	fly	FBgn0010051	Itpr	P29993	4	31	Inositol 1,4,5,-trisphosphate receptor	w
 INOSITOL	fly	FBgn0016672	Ipp	Q9VFP6	0	19	Inositol polyphosphate 1-phosphatase (EC 3.1.3.57) (RE60387p	w
 INOSITOL	fly	FBgn0026060	Mipp2	Q9W438	33	304	Multiple inositol polyphosphate phosphatase 1 (EC 3.1.3.62) 	w
 INOSITOL	fly	FBgn0026061	Mipp1	Q9VV72	84	509	Multiple inositol polyphosphate phosphatase 1 (EC 3.1.3.62) 	w
 INOSITOL	fly	FBgn0030465	Bpnt2	Q9VYF2	0	7	Putative inositol monophosphatase 3 (IMP 3) (IMPase 3) (EC 3	w
-INOSITOL	fly	FBgn0031768	IPIP	Q9VMI6	15	72	Inositol phosphatase interacting protein, isoform A (Inosito	w
+INOSITOL	fly	FBgn0031768	IPIP	Q9VMI6	18	79	Inositol phosphatase interacting protein, isoform A (Inosito	w
 INOSITOL	fly	FBgn0036262	Miox	Q9VTU9	0	6	Inositol oxygenase (EC 1.13.99.1) (Myo-inositol oxygenase)	w
 INOSITOL	fly	FBgn0036273	INPP5E	Q9VTW2	0	11	Inositol polyphosphate 5-phosphatase E (EC 3.1.3.36) (Phosph	w
 INOSITOL	human	O14732	IMPA2	O14732	5	140	Inositol monophosphatase 2 (IMP 2) (IMPase 2) (EC 3.1.3.25) 	w
@@ -195,7 +195,7 @@ INOSITOL-1-MONOPHOSPHATASE	fly	FBgn0036553	CG17027	Q9VUW4	5	12	Inositol-1-monoph
 INOSITOL-1-MONOPHOSPHATASE	fly	FBgn0037063	CG9391	Q7KTW5	8	124	Inositol-1-monophosphatase (EC 3.1.3.25)	w
 INOSITOL-1-MONOPHOSPHATASE	zebrafish	Q503S9	impa2	Q503S9	1	12	Inositol-1-monophosphatase	w
 INOSITOL-1-MONOPHOSPHATASE	zebrafish	Q6DGB2	impa1	Q6DGB2	1	12	Inositol-1-monophosphatase	w
-INOSITOL-3-PHOSPHATE	fly	FBgn0025885	Inos	O97477	1	198	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	w
+INOSITOL-3-PHOSPHATE	fly	FBgn0025885	Inos	O97477	3	216	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	w
 INOSITOL-3-PHOSPHATE	human	Q9NPH2	ISYNA1	Q9NPH2	1	110	Inositol-3-phosphate synthase 1 (IPS 1) (EC 5.5.1.4) (Myo-in	w
 INOSITOL-3-PHOSPHATE	worm	G5ED01	inos-1	G5ED01	0	28	Inositol-3-phosphate synthase	w
 INOSITOL-3-PHOSPHATE	yeast	P11986	INO1	P11986	0	24	Inositol-3-phosphate synthase	w
@@ -211,7 +211,7 @@ INOSITOL-PENTAKISPHOSPHATE	yeast	Q06667	IPK1	Q06667	1	10	Inositol-pentakisphosph
 INOSITOL-PENTAKISPHOSPHATE	zebrafish	Q4JL91	ippk	Q4JL91	0	1	Inositol-pentakisphosphate 2-kinase	w
 INOSITOL-PHOSPHATE	fly	FBgn0037064	CG9389	Q9VP62	7	12	inositol-phosphate phosphatase (EC 3.1.3.25)	w
 INOSITOL-POLYPHOSPHATE	fly	FBgn0039698	Bpnt1	Q9VAG9	0	12	3'(2'),5'-bisphosphate nucleotidase 1 (EC 3.1.3.57) (3'-phos	w
-INOSITOL-POLYPHOSPHATE	fly	FBgn0259178	5PtaseI	B7Z0Q2	0	6	inositol-polyphosphate 5-phosphatase (EC 3.1.3.56)	w
+INOSITOL-POLYPHOSPHATE	fly	FBgn0259178	5PtaseI	B7Z0Q2	2	10	inositol-polyphosphate 5-phosphatase (EC 3.1.3.56)	w
 INOSITOL-REQUIRING	human	O75460	ERN1	O75460	20	216	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
 INOSITOL-REQUIRING	human	Q76MJ5	ERN2	Q76MJ5	8	91	Serine/threonine-protein kinase/endoribonuclease IRE2 (Endop	w
 INOSITOL-REQUIRING	worm	Q09499	ire-1	Q09499	1	28	Serine/threonine-protein kinase/endoribonuclease ire-1 (Inos	w
@@ -225,4 +225,4 @@ INOSITOL-TRISPHOSPHATE	human	Q96DU7	ITPKC	Q96DU7	8	56	Inositol-trisphosphate 3-k
 INOSITOL-TRISPHOSPHATE	worm	Q95Q62	lfe-2	Q95Q62	0	3	Inositol-trisphosphate 3-kinase homolog	w
 INOSITOLPHO	human	Q9HCC8	GDPD2	Q9HCC8	3	53	Glycerophosphodiester phosphodiesterase 3 (EC 3.1.4.-) (Glyc	w
 INOSITOLPHOSPHOTRANSFERASE	yeast	P38954	IPT1	P38954	0	12	Inositolphosphotransferase 1	w
-INOS_333_420	fly	FBgn0025885	Inos	O97477	1	198		
+INOS_333_420	fly	FBgn0025885	Inos	O97477	3	216		

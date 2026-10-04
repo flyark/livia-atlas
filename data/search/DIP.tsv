@@ -12,7 +12,7 @@ DIP-IOTA	fly	FBgn0031837	DIP-iota	Q4V3F0	6	16	Dpr-interacting protein iota (IP10
 DIP-KAPPA	fly	FBgn0051814	DIP-kappa	Q8IP70	3	12	Dpr-interacting protein kappa, isoform A (RE42927p)	
 DIP-LAMBDA	fly	FBgn0267428	DIP-lambda	Q7PLL7	3	12	Dpr-interacting protein lambda (IP04839p)	
 DIP-THETA	fly	FBgn0051646	DIP-theta	Q9VMN6	12	21	Dpr-interacting protein theta (FI23919p1)	
-DIP-ZETA	fly	FBgn0051708	DIP-zeta	Q9VLF0	11	24	Dpr-interacting protein zeta, isoform A (Dpr-interacting pro	
+DIP-ZETA	fly	FBgn0051708	DIP-zeta	Q9VLF0	13	29	Dpr-interacting protein zeta, isoform A (Dpr-interacting pro	
 DIP1	fly	FBgn0024807	DIP1	Q9TW27	39	387	DISCO interacting protein 1, isoform D (Disco-interacting pr	
 DIP1	human	O95273	CCNDBP1	O95273	25	213		
 DIP1	human	Q86YT6	MIB1	Q86YT6	30	324		
@@ -24,7 +24,7 @@ DIP13A	human	Q9UKG1	APPL1	Q9UKG1	39	383
 DIP13B	human	Q8NEU8	APPL2	Q8NEU8	27	252		
 DIP2	arabidopsis-thaliana	Q9FYM8	DIP2	Q9FYM8	0	2	Arabidopsis thaliana genomic DNA, chromosome 5, P1 clone:MOK	
 DIP2	candida-albicans-237561	Q5A756	DIP2	Q5A756	5	108	SnoRNA-binding rRNA-processing protein	
-DIP2	fly	FBgn0024806	DIP2	Q9W0S9	0	67	Disco-interacting protein 2	
+DIP2	fly	FBgn0024806	DIP2	Q9W0S9	9	79	Disco-interacting protein 2	
 DIP2	human	Q14689	DIP2A	Q14689	10	115		
 DIP2	human	Q9P265	DIP2B	Q9P265	8	67	Disco-interacting protein 2 homolog B (DIP2 homolog B)	w
 DIP2	human	Q9Y2E4	DIP2C	Q9Y2E4	2	15	Disco-interacting protein 2 homolog C (DIP2 homolog C)	w
@@ -37,7 +37,7 @@ DIP2C	human	Q8N8Z3	DIP2C-AS1	Q8N8Z3	0	3	Putative uncharacterized protein DIP2C-A
 DIP2C	human	Q9Y2E4	DIP2C	Q9Y2E4	2	15	Disco-interacting protein 2 homolog C (DIP2 homolog C)	
 DIP2C-AS1	human	Q8N8Z3	DIP2C-AS1	Q8N8Z3	0	3	Putative uncharacterized protein DIP2C-AS1 (DIP2C antisense 	
 DIP2C_HUMAN	human	Q9Y2E4	DIP2C	Q9Y2E4	2	15		
-DIP2_184	fly	FBgn0024806	DIP2	Q9W0S9	0	67		
+DIP2_184	fly	FBgn0024806	DIP2	Q9W0S9	9	79		
 DIP5	yeast	P53388	DIP5	P53388	0	27	Dicarboxylic amino acid permease	
 DIPA	human	Q15834	CCDC85B	Q15834	46	214		
 DIPAS	human	Q5QFB9	PAPPA-AS1	Q5QFB9	0	4		
@@ -47,7 +47,7 @@ DIPEPTID	human	Q9UHL4	DPP7	Q9UHL4	11	127	Dipeptidyl peptidase 2 (EC 3.4.14.2) (D
 DIPEPTIDASE	fly	FBgn0000454	Dip-B	Q9VFQ9	0	101	Dipeptidase B, isoform A (Dipeptidase B, isoform B) (Dipepti	w
 DIPEPTIDASE	fly	FBgn0000455	Dip-C	Q9VG79	3	31	Xaa-Pro dipeptidase (EC 3.4.13.9) (Imidodipeptidase) (Peptid	w
 DIPEPTIDASE	fly	FBgn0030447	CG2200	Q9VYH3	0	11	Probable alpha-aspartyl dipeptidase (EC 3.4.13.21) (Asp-spec	w
-DIPEPTIDASE	fly	FBgn0030653	CG7860	Q9VXT7	1	34	Probable isoaspartyl peptidase/L-asparaginase CG7860 (EC 3.4	w
+DIPEPTIDASE	fly	FBgn0030653	CG7860	Q9VXT7	3	38	Probable isoaspartyl peptidase/L-asparaginase CG7860 (EC 3.4	w
 DIPEPTIDASE	fly	FBgn0033860	S-Lap5	A1Z9G3	8	126	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 DIPEPTIDASE	fly	FBgn0033868	S-Lap7	Q500X4	11	322	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
 DIPEPTIDASE	fly	FBgn0034132	S-Lap8	Q7K5K9	11	126	Cysteinylglycine-S-conjugate dipeptidase (EC 3.4.11.5) (EC 3	w
@@ -85,8 +85,8 @@ DIPEPTIDE	human	Q9P2R6	RERE	Q9P2R6	30	160	Arginine-glutamic acid dipeptide repea
 DIPEPTIDE	human	Q9UJ70	NAGK	Q9UJ70	1	208	N-acetyl-D-glucosamine kinase (N-acetylglucosamine kinase) (	w
 DIPEPTIDE	zebrafish	E7FCG5	rereb	E7FCG5	4	25	Arginine-glutamic acid dipeptide repeats protein	w
 DIPEPTIDYL	fly	FBgn0012037	Ance	Q10714	19	250	Angiotensin-converting enzyme (EC 3.4.15.1) (Dipeptidyl carb	w
-DIPEPTIDYL	fly	FBgn0031835	Dpp10	X2J9P4	145	2367	Dipeptidyl peptidase 10, isoform B (EC 3.4.14.1, EC 3.4.14.2	w
-DIPEPTIDYL	fly	FBgn0037580	DppIII	Q9VHR8	2	145	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
+DIPEPTIDYL	fly	FBgn0031835	Dpp10	X2J9P4	147	2377	Dipeptidyl peptidase 10, isoform B (EC 3.4.14.1, EC 3.4.14.2	w
+DIPEPTIDYL	fly	FBgn0037580	DppIII	Q9VHR8	3	149	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
 DIPEPTIDYL	human	P12821	ACE	P12821	14	283	Angiotensin-converting enzyme (ACE) (EC 3.4.15.1) (Dipeptidy	w
 DIPEPTIDYL	human	P27487	DPP4	P27487	58	679	Dipeptidyl peptidase 4 (EC 3.4.14.5) (ADABP) (Adenosine deam	w
 DIPEPTIDYL	human	P42658	DPP6	P42658	5	42	A-type potassium channel modulatory protein DPP6 (DPPX) (Dip	w
@@ -114,13 +114,13 @@ DIPEPTIDYL	zebrafish	Q5CZT1	dpp7	Q5CZT1	0	2	Dipeptidyl peptidase 2	w
 DIPEPTIDYL	zebrafish	Q6DI20	dpp3	Q6DI20	0	7	Dipeptidyl peptidase 3	w
 DIPEPTIDYLPEPTIDASE	human	Q9UQQ1	NAALADL1	Q9UQQ1	12	62	Aminopeptidase NAALADL1 (EC 3.4.11.-) (100 kDa ileum brush b	w
 DIPH	human	P53370	NUDT6	P53370	2	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	w
-DIPHENOL	fly	FBgn0261363	PPO3	Q9W1V6	11	250	Phenoloxidase 3 (EC 1.14.18.1) (Diphenol oxidase A3) (Diphen	w
-DIPHENOL	fly	FBgn0261396	Rpn3	P25161	13	146	Probable 26S proteasome non-ATPase regulatory subunit 3 (26S	w
-DIPHENOLOXIDASE	fly	FBgn0261363	PPO3	Q9W1V6	11	250	Phenoloxidase 3 (EC 1.14.18.1) (Diphenol oxidase A3) (Diphen	w
+DIPHENOL	fly	FBgn0261363	PPO3	Q9W1V6	12	253	Phenoloxidase 3 (EC 1.14.18.1) (Diphenol oxidase A3) (Diphen	w
+DIPHENOL	fly	FBgn0261396	Rpn3	P25161	13	145	Probable 26S proteasome non-ATPase regulatory subunit 3 (26S	w
+DIPHENOLOXIDASE	fly	FBgn0261363	PPO3	Q9W1V6	12	253	Phenoloxidase 3 (EC 1.14.18.1) (Diphenol oxidase A3) (Diphen	w
 DIPHOS	human	Q9NZJ9	NUDT4	Q9NZJ9	2	35	Diphosphoinositol polyphosphate phosphohydrolase 2 (DIPP-2) 	w
 DIPHOSPHATAS	human	Q8NFF5	FLAD1	Q8NFF5	12	148	Bifunctional FAD diphosphatase/FAD synthase [Includes: FAD d	w
 DIPHOSPHATASE	fly	FBgn0036111	Aps	Q7JVG2	2	19	diphosphoinositol-polyphosphate diphosphatase (EC 3.6.1.52)	w
-DIPHOSPHATASE	fly	FBgn0037372	Dcps	Q9VNH5	1	21	m7GpppX diphosphatase (EC 3.6.1.59)	w
+DIPHOSPHATASE	fly	FBgn0037372	Dcps	Q9VNH5	2	27	m7GpppX diphosphatase (EC 3.6.1.59)	w
 DIPHOSPHATASE	human	A8MXV4	NUDT19	A8MXV4	13	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
 DIPHOSPHATASE	human	P0C024	NUDT7	P0C024	4	33	Peroxisomal coenzyme A diphosphatase NUDT7 (EC 3.6.1.-) (EC 	w
 DIPHOSPHATASE	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hydrolase (EC 3.6.1.	w
@@ -189,12 +189,12 @@ DIPHOSPHATASE	zebrafish	Q1L8L1	nudt4a	Q1L8L1	1	14	diphosphoinositol-polyphosphat
 DIPHOSPHATASE	zebrafish	Q5XJC2	nudt3b	Q5XJC2	1	17	diphosphoinositol-polyphosphate diphosphatase	w
 DIPHOSPHATASE	zebrafish	Q66JN9	nudt4b	Q66JN9	1	16	diphosphoinositol-polyphosphate diphosphatase	w
 DIPHOSPHATASE	zebrafish	Q7T291	adprm	Q7T291	1	5	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase	w
-DIPHOSPHATE	fly	FBgn0000150	awd	A0A0B4LHX6	24	655	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
-DIPHOSPHATE	fly	FBgn0030573	nmdyn-D6	Q9VY27	4	188	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
+DIPHOSPHATE	fly	FBgn0000150	awd	A0A0B4LHX6	24	656	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
+DIPHOSPHATE	fly	FBgn0030573	nmdyn-D6	Q9VY27	4	189	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
 DIPHOSPHATE	fly	FBgn0031312	Tango14	Q9VPX8	1	8	ditrans,polycis-polyprenyl diphosphate synthase [(2E,6E)-far	w
 DIPHOSPHATE	fly	FBgn0037044	Pdss2	Q9VP87	3	30	Decaprenyl diphosphate synthase subunit 2, isoform A (Decapr	w
 DIPHOSPHATE	fly	FBgn0039650	Mesh1	Q9VAM9	3	160	Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase MES	w
-DIPHOSPHATE	fly	FBgn0039809	CG15547	Q9VA28	9	189	Nucleoside diphosphate kinase-like domain-containing protein	w
+DIPHOSPHATE	fly	FBgn0039809	CG15547	Q9VA28	9	190	Nucleoside diphosphate kinase-like domain-containing protein	w
 DIPHOSPHATE	human	O00746	NME4	O00746	18	283	Nucleoside diphosphate kinase D, mitochondrial (NDPK-D) (EC 	w
 DIPHOSPHATE	human	O75356	ENTPD5	O75356	7	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	w
 DIPHOSPHATE	human	O75414	NME6	O75414	7	144	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	w
@@ -294,7 +294,7 @@ DIPHOSPHOMEVALONATE	yeast	P32377	MVD1	P32377	0	13	Diphosphomevalonate decarboxyl
 DIPHOSPHORIBOSE	human	Q9BW91	NUDT9	Q9BW91	5	56	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	w
 DIPHOSPHORYLASE	fly	FBgn0259749	mmy	Q9Y0Z0	0	16	UDP-N-acetylglucosamine diphosphorylase (EC 2.7.7.23)	w
 DIPHOSPHORYLASE	human	O14772	FPGT	O14772	0	61	Fucose-1-phosphate guanylyltransferase (EC 2.7.7.30) (GDP-L-	w
-DIPHTHAMIDE	fly	FBgn0030336	Dph6	Q8MRI4	0	12	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
+DIPHTHAMIDE	fly	FBgn0030336	Dph6	Q8MRI4	1	20	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
 DIPHTHAMIDE	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 DIPHTHAMIDE	fly	FBgn0037883	Dph3	Q9VGQ9	2	26	Diphthamide biosynthesis protein 3	w
 DIPHTHAMIDE	human	Q6P3W2	DNAJC24	Q6P3W2	15	125	DnaJ homolog subfamily C member 24 (CSL-type zinc finger-con	w
@@ -339,7 +339,7 @@ DIPHTHINE	yeast	P32469	DPH5	P32469	0	14	Diphthine methyl ester synthase	w
 DIPHTHINE	yeast	P38332	RRT2	P38332	0	5	Diphthine methyltransferase	w
 DIPHTHINE	zebrafish	A0A0R4IU56	dph5	A0A0R4IU56	0	1	diphthine methyl ester synthase	w
 DIPHTHINE	zebrafish	A3KNN6	dph7	A3KNN6	0	1	Diphthine methyltransferase	w
-DIPHTHINE--AMMONIA	fly	FBgn0030336	Dph6	Q8MRI4	0	12	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
+DIPHTHINE--AMMONIA	fly	FBgn0030336	Dph6	Q8MRI4	1	20	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
 DIPHTHINE--AMMONIA	human	Q7L8W6	DPH6	Q7L8W6	14	189	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
 DIPHTHINE--AMMONIA	worm	Q966L4	dph-6	Q966L4	0	1	Diphthine--ammonia ligase	w
 DIPHTHINE--AMMONIA	yeast	Q12429	DPH6	Q12429	1	11	Diphthine--ammonia ligase	w

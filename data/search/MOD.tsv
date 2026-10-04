@@ -1,5 +1,5 @@
-MOD	fly	FBgn0002780	mod	P13469	6	125	DNA-binding protein modulo	
-MOD(MDG4)	fly	FBgn0002781	mod(mdg4)	Q86B87	35	163	Modifier of mdg4	
+MOD	fly	FBgn0002780	mod	P13469	12	136	DNA-binding protein modulo	
+MOD(MDG4)	fly	FBgn0002781	mod(mdg4)	Q86B87	39	175	Modifier of mdg4	
 MOD-5	worm	Q9N3C7	mod-5	Q9N3C7	0	3	Transporter	
 MOD1	arabidopsis-thaliana	Q9SLA8	MOD1	Q9SLA8	1	20	Enoyl-	
 MOD1	zea-mays	P16243	MOD1	P16243	0	4	NADP-dependent malic enzyme, chloroplastic	
@@ -49,7 +49,7 @@ MODIFICATION	worm	Q9XW93	CELE_Y49A3A.3	Q9XW93	0	4	tRNA:m(4)X modification enzyme
 MODIFICATION	yeast	P32559	MSS1	P32559	1	57	tRNA modification GTPase MSS1, mitochondrial	w
 MODIFICATION	yeast	P41912	SHR5	P41912	1	29	Ras modification protein ERF4	w
 MODIFICATION	yeast	Q12383	TRM13	Q12383	0	2	tRNA:m(4)X modification enzyme TRM13	w
-MODIFICATION-RELATED	fly	FBgn0035624	Eaf6	Q9VRN3	5	51	Chromatin modification-related protein MEAF6 (Esa1-associate	w
+MODIFICATION-RELATED	fly	FBgn0035624	Eaf6	Q9VRN3	5	54	Chromatin modification-related protein MEAF6 (Esa1-associate	w
 MODIFICATION-RELATED	human	Q9HAF1	MEAF6	Q9HAF1	30	171	Chromatin modification-related protein MEAF6 (MYST/Esa1-asso	w
 MODIFICATION-RELATED	worm	Q8WQC3	B0025.4	Q8WQC3	4	36	Chromatin modification-related protein MEAF6	w
 MODIFICATION-RELATED	yeast	P38806	YNG2	P38806	5	42	Chromatin modification-related protein YNG2	w
@@ -59,13 +59,13 @@ MODIFICATION-RELATED	yeast	P53911	EAF7	P53911	4	39	Chromatin modification-relate
 MODIFICATION-RELATED	yeast	Q06337	EAF1	Q06337	6	69	Chromatin modification-related protein EAF1	w
 MODIFICATION-RELATED	yeast	Q12432	EAF3	Q12432	9	113	Chromatin modification-related protein EAF3	w
 MODIFICATION-RELATED	zebrafish	Q6AZD3	meaf6	Q6AZD3	23	97	Chromatin modification-related protein MEAF6	w
-MODIFIER	fly	FBgn0002781	mod(mdg4)	Q86B87	35	163	Modifier of mdg4	w
-MODIFIER	fly	FBgn0027609	morgue	Q9Y165	14	81	BcDNA.GH02435 (F box/ubiquitin conjugase) (Modifier of rpr a	w
-MODIFIER	fly	FBgn0032929	Mcm10	Q9VIE6	4	70	Protein MCM10 homolog (Sensitized chromosome inheritance mod	w
+MODIFIER	fly	FBgn0002781	mod(mdg4)	Q86B87	39	175	Modifier of mdg4	w
+MODIFIER	fly	FBgn0027609	morgue	Q9Y165	15	93	BcDNA.GH02435 (F box/ubiquitin conjugase) (Modifier of rpr a	w
+MODIFIER	fly	FBgn0032929	Mcm10	Q9VIE6	4	73	Protein MCM10 homolog (Sensitized chromosome inheritance mod	w
 MODIFIER	fly	FBgn0046114	Gclm	Q9VCW6	5	114	GCS light chain (Gamma-ECS regulatory subunit) (Gamma-glutam	w
 MODIFIER	fly	FBgn0053276	Urm1	Q7KU86	48	288	Ubiquitin-related modifier 1 homolog	w
 MODIFIER	fly	FBgn0085220	Ufm1	A8DYH2	4	10	Ubiquitin-fold modifier 1	w
-MODIFIER	fly	FBgn0264922	Sumo	O97102	93	387	Small ubiquitin-related modifier (SUMO)	w
+MODIFIER	fly	FBgn0264922	Sumo	O97102	93	389	Small ubiquitin-related modifier (SUMO)	w
 MODIFIER	human	G2XKQ0	SUMO1P1	G2XKQ0	23	95	Small ubiquitin-related modifier 5 (SUMO-5) (SUMO1 pseudogen	w
 MODIFIER	human	O75920	SERF1A	O75920	29	90	Small EDRK-rich factor 1 (Protein 4F5) (h4F5) (SMA modifier 	w
 MODIFIER	human	P55854	SUMO3	P55854	76	310	Small ubiquitin-related modifier 3 (SUMO-3) (SMT3 homolog 1)	w
@@ -96,7 +96,7 @@ MODIFIER	zebrafish	Q6NV25	sumo3l	Q6NV25	34	111	Small ubiquitin-related modifier 
 MODIFIER	zebrafish	Q7SZR5	sumo1	Q7SZR5	40	163	Small ubiquitin-related modifier 1	w
 MODIFIER	zebrafish	Q803Y4	ufm1	Q803Y4	6	14	Ubiquitin-fold modifier 1	w
 MODIFIER-ACTIVA	human	Q9UBT2	UBA2	Q9UBT2	40	306	SUMO-activating enzyme subunit 2 (EC 2.3.2.-) (Anthracycline	w
-MODIFIER-ACTIVATING	fly	FBgn0030305	Uba5	Q9VYY3	6	85	Ubiquitin-like modifier-activating enzyme 5 (Ubiquitin-activ	w
+MODIFIER-ACTIVATING	fly	FBgn0030305	Uba5	Q9VYY3	6	90	Ubiquitin-like modifier-activating enzyme 5 (Ubiquitin-activ	w
 MODIFIER-ACTIVATING	fly	FBgn0034366	Atg7	Q7JY94	7	69	Ubiquitin-like modifier-activating enzyme ATG7 (Autophagy-re	w
 MODIFIER-ACTIVATING	human	A0AVT1	UBA6	A0AVT1	31	227	Ubiquitin-like modifier-activating enzyme 6 (Ubiquitin-activ	w
 MODIFIER-ACTIVATING	human	O95352	ATG7	O95352	35	492	Ubiquitin-like modifier-activating enzyme ATG7 (ATG12-activa	w
@@ -117,16 +117,16 @@ MODIFYING	human	A0A7P0TBJ1	HAPSTR2	A0A7P0TBJ1	2	8	HUWE1-associated protein modif
 MODIFYING	human	Q14CZ0	HAPSTR1	Q14CZ0	26	559	HUWE1-associated protein modifying stress responses 1 (Telom	w
 MODIFYING	zebrafish	Q0GKC4	bmf2	Q0GKC4	8	15	BCL2 modifying factor 2 isoform X1	w
 MODIGLIANI	fly	FBgn0261019	moi	B7Z0L8	2	9	Protein modigliani	w
-MODSP	fly	FBgn0051217	modSP	Q9VER6	23	253	Modular serine protease (EC 3.4.21.-) [Cleaved into: Modular	
-MODSP_288	fly	FBgn0051217	modSP	Q9VER6	23	253		
-MODSP_289	fly	FBgn0051217	modSP	Q9VER6	23	253		
-MODULAR	fly	FBgn0051217	modSP	Q9VER6	23	253	Modular serine protease (EC 3.4.21.-) [Cleaved into: Modular	w
+MODSP	fly	FBgn0051217	modSP	Q9VER6	23	257	Modular serine protease (EC 3.4.21.-) [Cleaved into: Modular	
+MODSP_288	fly	FBgn0051217	modSP	Q9VER6	23	257		
+MODSP_289	fly	FBgn0051217	modSP	Q9VER6	23	257		
+MODULAR	fly	FBgn0051217	modSP	Q9VER6	23	257	Modular serine protease (EC 3.4.21.-) [Cleaved into: Modular	w
 MODULAR	human	Q9H3U7	SMOC2	Q9H3U7	12	57	SPARC-related modular calcium-binding protein 2 (Secreted mo	w
 MODULAR	human	Q9H4F8	SMOC1	Q9H4F8	10	77	SPARC-related modular calcium-binding protein 1 (Secreted mo	w
 MODULATING	human	A6NL88	SHISA7	A6NL88	3	56	Protein shisa-7 (Cystine-knot AMPAR modulating protein of 59	w
 MODULATING	human	Q19T08	ECSCR	Q19T08	40	137	Endothelial cell-specific chemotaxis regulator (Apoptosis re	w
 MODULATOR	fly	FBgn0031116	CG1695	Q8IQ31	2	3	Small G protein signaling modulator 2	w
-MODULATOR	fly	FBgn0033482	CG1371	A1Z843	155	2404	Nodal modulator 3	w
+MODULATOR	fly	FBgn0033482	CG1371	A1Z843	156	2415	Nodal modulator 3	w
 MODULATOR	fly	FBgn0036488	CG6878	Q9VUM2	5	34	Reactive oxygen species modulator 1 (Protein MGR2 homolog)	w
 MODULATOR	fly	FBgn0260464	CG9288	Q9VFR1	2	5	Protein Abitram (Actin-binding transcription modulator)	w
 MODULATOR	fly	FBgn0261444	Motor	Q9W5A5	0	3	Movement modulator	w
@@ -217,8 +217,8 @@ MODULE-CONTAINING	human	Q86SQ3	ADGRE4P	Q86SQ3	1	4	Putative adhesion G protein-co
 MODULE-CONTAINING	human	Q9BY15	ADGRE3	Q9BY15	14	112	Adhesion G protein-coupled receptor E3 (EGF-like module rece	w
 MODULE-CONTAINING	human	Q9H1C7	CYSTM1	Q9H1C7	33	173	Cysteine-rich transmembrane module-containing protein 1	w
 MODULE-CONTAINING	human	Q9UHX3	ADGRE2	Q9UHX3	27	260	Adhesion G protein-coupled receptor E2 (EGF-like module rece	w
-MODULO	fly	FBgn0002780	mod	P13469	6	125	DNA-binding protein modulo	w
-MOD_304	fly	FBgn0002780	mod	P13469	6	125		
-MOD_MDG4	fly	FBgn0002781	mod(mdg4)	Q86B87	35	163		
-MOD_MDG4_	fly	FBgn0002781	mod(mdg4)	Q86B87	35	163		
-MOD_MDG4__502	fly	FBgn0002781	mod(mdg4)	Q86B87	35	163		
+MODULO	fly	FBgn0002780	mod	P13469	12	136	DNA-binding protein modulo	w
+MOD_304	fly	FBgn0002780	mod	P13469	12	136		
+MOD_MDG4	fly	FBgn0002781	mod(mdg4)	Q86B87	39	175		
+MOD_MDG4_	fly	FBgn0002781	mod(mdg4)	Q86B87	39	175		
+MOD_MDG4__502	fly	FBgn0002781	mod(mdg4)	Q86B87	39	175		

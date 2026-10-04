@@ -39,7 +39,7 @@ RESILIN	fly	FBgn0034157	resilin	Q9V7U0	13	247	Pro-resilin
 RESISTA	human	Q9UNQ0	ABCG2	Q9UNQ0	8	238	Broad substrate specificity ATP-binding cassette transporter	w
 RESISTAN	human	P20591	MX1	P20591	11	286	Interferon-induced GTP-binding protein Mx1 (Interferon-induc	w
 RESISTANCE	fly	FBgn0004512	Mdr49	Q00449	0	32	Multidrug resistance protein homolog 49 (EC 7.6.2.2) (P-glyc	w
-RESISTANCE	fly	FBgn0004513	Mdr65	Q00748	2	35	Multidrug resistance protein homolog 65 (EC 7.6.2.2) (P-glyc	w
+RESISTANCE	fly	FBgn0004513	Mdr65	Q00748	3	38	Multidrug resistance protein homolog 65 (EC 7.6.2.2) (P-glyc	w
 RESISTANCE	fly	FBgn0010241	Mdr50	Q5BI62	0	34	LP14331p (Multi drug resistance 50 (EC 3.6.1.3))	w
 RESISTANCE	fly	FBgn0013576	mtd	A0A0B4K620	3	18	Oxidation resistance protein 1	w
 RESISTANCE	fly	FBgn0028468	rtet	Q9V395	0	11	BcDNA.LD28419 (Tetracycline resistance)	w
@@ -129,7 +129,7 @@ RESISTANT-TO-FLUOXETINE	worm	Q8IG66	oac-9	Q8IG66	0	17	Nose resistant-to-fluoxeti
 RESISTANT-TO-FLUOXETINE	worm	Q9UAQ8	oac-31	Q9UAQ8	0	1	Nose resistant-to-fluoxetine protein N-terminal domain-conta	w
 RESISTIN	human	Q9HD89	RETN	Q9HD89	13	209	Resistin (Adipose tissue-specific secretory factor) (ADSF) (	w
 RESISTIN-LIKE	human	Q9BQ08	RETNLB	Q9BQ08	39	559	Resistin-like beta (Colon and small intestine-specific cyste	w
-RESISTOR	fly	FBgn0033188	Drat	Q961L4	1	10	Death resistor Adh domain containing target, isoform C (EC 1	w
+RESISTOR	fly	FBgn0033188	Drat	Q961L4	2	21	Death resistor Adh domain containing target, isoform C (EC 1	w
 RESOLVASE	virus	A0A068EEG4	fep_192	A0A068EEG4	5	221	Holliday junction resolvase	w
 RESOLVASE	virus	A0A068EFI2	pepv_200	A0A068EFI2	5	240	Holliday junction resolvase	w
 RESOLVASE	virus	A0A0M3ZHM7		A0A0M3ZHM7	6	170	Holliday junction resolvase	w
@@ -163,9 +163,9 @@ RESPONDER	human	P49788	RARRES1	P49788	30	133	Retinoic acid receptor responder pr
 RESPONDER	human	Q99969	RARRES2	Q99969	32	269	Retinoic acid receptor responder protein 2 (Chemerin) (RAR-r	w
 RESPONDER	zebrafish	A0A0R4INS8	rarres3	A0A0R4INS8	3	131	Retinoic acid receptor responder 3	w
 RESPONDER	zebrafish	Q6DHK9	rarres3l	Q6DHK9	4	131	Retinoic acid receptor responder 3-like	w
-RESPONSE	fly	FBgn0004101	bs	Q24535	46	447	Serum response factor homolog (dSRF) (Protein blistered)	w
+RESPONSE	fly	FBgn0004101	bs	Q24535	48	447	Serum response factor homolog (dSRF) (Protein blistered)	w
 RESPONSE	fly	FBgn0004396	CrebA	P29747	92	386	Cyclic AMP response element-binding protein A (cAMP response	w
-RESPONSE	fly	FBgn0023023	Crmp	Q8IPQ2	2	54	Collapsin response mediator protein (EC 3.5.2.2, EC 3.5.2.-)	w
+RESPONSE	fly	FBgn0023023	Crmp	Q8IPQ2	2	62	Collapsin response mediator protein (EC 3.5.2.2, EC 3.5.2.-)	w
 RESPONSE	fly	FBgn0029974	dpr14	Q9W3N2	3	7	Defective proboscis extension response 14, isoform A (Defect	w
 RESPONSE	fly	FBgn0030051	spirit	Q7K3Y1	44	244	GH03360p (Serine protease immune response integrator, isofor	w
 RESPONSE	fly	FBgn0030723	dpr18	Q9VXK1	2	4	Defective proboscis extension response 18 (RE24718p)	w
@@ -173,13 +173,13 @@ RESPONSE	fly	FBgn0032233	dpr19	Q9VKX8	4	7	Defective proboscis extension response
 RESPONSE	fly	FBgn0034286	dpr13	A1ZB15	3	6	Defective proboscis extension response 13, isoform B (IP0431	w
 RESPONSE	fly	FBgn0034647	pirk	Q9W2E6	4	10	Poor Imd response upon knock-in, isoform A (Poor Imd respons	w
 RESPONSE	fly	FBgn0035170	dpr20	Q9W0L9	2	4	Defective proboscis extension response 20 (GH16485p)	w
-RESPONSE	fly	FBgn0035976	PGRP-LC	Q9GNK5	1260	2818	Peptidoglycan-recognition protein LC (Immune response defici	w
+RESPONSE	fly	FBgn0035976	PGRP-LC	Q9GNK5	601	2820	Peptidoglycan-recognition protein LC (Immune response defici	w
 RESPONSE	fly	FBgn0036165	chrb	Q9VTI8	6	32	Protein charybde (Protein charybdis) (Protein regulated in d	w
 RESPONSE	fly	FBgn0037295	dpr16	A0A0B4LGN7	4	6	Defective proboscis extension response 16, isoform C	w
 RESPONSE	fly	FBgn0037908	dpr5	Q961T8	4	10	Defective proboscis extension response 5, isoform A (GH08163	w
 RESPONSE	fly	FBgn0037993	dpr15	Q9VGD0	58	246	Defective proboscis extension response 15, isoform A (Defect	w
 RESPONSE	fly	FBgn0038282	dpr9	Q9VFD9	6	17	Defective proboscis extension response 9, isoform A (Defecti	w
-RESPONSE	fly	FBgn0040305	MTF-1	A8JNP3	45	354	Metal response element-binding transcription Factor-1, isofo	w
+RESPONSE	fly	FBgn0040305	MTF-1	A8JNP3	48	356	Metal response element-binding transcription Factor-1, isofo	w
 RESPONSE	fly	FBgn0040726	dpr1	A1ZBY3	6	8	Defective proboscis extension response 1, isoform A (Defecti	w
 RESPONSE	fly	FBgn0040823	dpr6	X2J8X8	44	253	Defective proboscis extension response 6, isoform F	w
 RESPONSE	fly	FBgn0041094	scyl	Q9VTH4	6	32	Protein scylla (Protein regulated in development and DNA dam	w

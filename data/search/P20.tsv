@@ -4,12 +4,12 @@ P200	human	P39880	CUX1	P39880	48	228	Homeobox protein cut-like 1 (CCAAT displace
 P200	human	Q8N3C0	ASCC3	Q8N3C0	19	190	Activating signal cointegrator 1 complex subunit 3 (EC 5.6.2	w
 P200	human	Q9P2D3	HEATR5B	Q9P2D3	7	54		
 P200	human	Q9Y6D6	ARFGEF1	Q9Y6D6	15	183	Brefeldin A-inhibited guanine nucleotide-exchange protein 1 	w
-P20007	fly	FBgn0003067	Pepck1	P20007	2	102	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
+P20007	fly	FBgn0003067	Pepck1	P20007	2	103	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
 P20009	fly	FBgn0000157	Dll	A2VEF7	89	439		
 P20020	human	P20020	ATP2B1	P20020	19	329	Plasma membrane calcium-transporting ATPase 1 (EC 7.2.2.10) 	
 P20023	human	P20023	CR2	P20023	18	135	Complement receptor type 2 (Cr2) (Complement C3d receptor) (	
 P20024	zea-mays	P20024	?	P20024	0	8	Myb-related protein Zm1	
-P20028	fly	FBgn0003278	Polr1B	P20028	11	155	DNA-directed RNA polymerase I subunit RPA2 (RNA polymerase I	
+P20028	fly	FBgn0003278	Polr1B	P20028	11	154	DNA-directed RNA polymerase I subunit RPA2 (RNA polymerase I	
 P20029	mus-musculus	P20029	Hspa5	P20029	44	320	Endoplasmic reticulum chaperone BiP	
 P20033	mus-musculus	P20033	Pdgfa	P20033	10	68	Platelet-derived growth factor subunit A	
 P20036	human	P20036	HLA-DPA1	P20036	120	563	HLA class II histocompatibility antigen, DP alpha 1 chain (D	
@@ -65,7 +65,7 @@ P20231	human	P20231	TPSB2	P20231	21	109	Tryptase beta-2 (Tryptase-2) (EC 3.4.21.
 P20232	fly	FBgn0010422	TfIIS	P20232	58	507	Transcription elongation factor S-II (RNA polymerase II elon	
 P20236	rattus-norvegicus	P20236	Gabra3	P20236	15	30	Gamma-aminobutyric acid receptor subunit alpha-3	
 P20239	mus-musculus	P20239	Zp2	P20239	3	10	Zona pellucida sperm-binding protein 2	
-P20240	fly	FBgn0266420	Ote	P20240	9	61	Otefin (LEM domain-containing protein Otefin)	
+P20240	fly	FBgn0266420	Ote	P20240	16	76	Otefin (LEM domain-containing protein Otefin)	
 P20248	human	P20248	CCNA2	P20248	155	477	Cyclin-A2 (Cyclin-A) (Cyclin A)	
 P20263	mus-musculus	P20263	Pou5f1	P20263	33	324	POU domain, class 5, transcription factor 1	
 P20264	human	P20264	POU3F3	P20264	137	391	POU domain, class 3, transcription factor 3 (Brain-specific 	
@@ -98,7 +98,7 @@ P20350	fly	FBgn0004635	rho	P20350	7	64	Protein rhomboid (EC 3.4.21.105) (Protein
 P20351	fly	FBgn0003965	v	P20351	0	2	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Protein ve	
 P20352	mus-musculus	P20352	F3	P20352	4	40	Tissue factor	
 P20353	fly	FBgn0001104	Galphai	P20353	50	216	G protein alpha i subunit (Guanine nucleotide-binding protei	
-P20354	fly	FBgn0001123	Galphas	P20354	58	326	G protein alpha s subunit (Adenylate cyclase-stimulating G a	
+P20354	fly	FBgn0001123	Galphas	P20354	58	329	G protein alpha s subunit (Adenylate cyclase-stimulating G a	
 P20366	human	P20366	TAC1	P20366	93	705	Protachykinin-1 (PPT) [Cleaved into: Substance P; Neurokinin	
 P20382	human	P20382	PMCH	P20382	77	311	Pro-MCH [Cleaved into: Neuropeptide-glycine-glutamic acid (N	
 P20385	fly	FBgn0000286	Cf2	P20385	68	412	Chorion factor 2	
@@ -119,7 +119,7 @@ P20435	yeast	P20435	RPO26	P20435	14	236	DNA-directed RNA polymerases I, II, and 
 P20436	yeast	P20436	RPB8	P20436	5	198	DNA-directed RNA polymerases I, II, and III subunit RPABC3	
 P20437	yeast	P20437	CLN1	P20437	7	25	G1/S-specific cyclin CLN1	
 P20438	yeast	P20438	CLN2	P20438	6	52	G1/S-specific cyclin CLN2	
-P20439	fly	FBgn0000405	CycB	P20439	47	193	G2/mitotic-specific cyclin-B	
+P20439	fly	FBgn0000405	CycB	P20439	50	203	G2/mitotic-specific cyclin-B	
 P20443	mus-musculus	P20443	Sag	P20443	9	50	S-arrestin	
 P20444	mus-musculus	P20444	Prkca	P20444	8	101	Protein kinase C alpha type	
 P20447	yeast	P20447	DBP3	P20447	3	141	ATP-dependent RNA helicase DBP3	
@@ -128,9 +128,9 @@ P20449	yeast	P20449	DBP5	P20449	5	58	ATP-dependent RNA helicase DBP5
 P20457	yeast	P20457	PRI2	P20457	5	37	DNA primase large subunit	
 P20459	yeast	P20459	SUI2	P20459	4	157	Eukaryotic translation initiation factor 2 subunit alpha	
 P20472	human	P20472	PVALB	P20472	0	195	Parvalbumin alpha (Alpha-parvalbumin) (Alpha-PV)	
-P20477	fly	FBgn0001142	Gs1	P20477	3	161	Glutamine synthetase 1, mitochondrial (EC 6.3.1.2) (Glutamat	
-P20478	fly	FBgn0001145	Gs2	X2JDA5	0	62		
-P20480	fly	FBgn0002924	ncd	P20480	11	130	Protein claret segregational (EC 3.6.4.-) (Kinesin-14)	
+P20477	fly	FBgn0001142	Gs1	P20477	3	163	Glutamine synthetase 1, mitochondrial (EC 6.3.1.2) (Glutamat	
+P20478	fly	FBgn0001145	Gs2	X2JDA5	0	64		
+P20480	fly	FBgn0002924	ncd	P20480	20	146	Protein claret segregational (EC 3.6.4.-) (Kinesin-14)	
 P20482	fly	FBgn0262975	cnc	A0A0B4KHP5	45	191		
 P20483	fly	FBgn0003525	stg	P20483	164	1029	M-phase inducer phosphatase (EC 3.1.3.48) (Cdc25-like protei	
 P20484	yeast	P20484	MAK11	P20484	5	56	Protein MAK11	

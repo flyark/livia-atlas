@@ -1,4 +1,4 @@
-RAN	fly	FBgn0020255	Ran	Q9VZ23	20	104	GTP-binding nuclear protein Ran (Ras-related nuclear protein	
+RAN	fly	FBgn0020255	Ran	Q9VZ23	22	112	GTP-binding nuclear protein Ran (Ras-related nuclear protein	
 RAN	human	P62826	RAN	P62826	97	702	GTP-binding nuclear protein Ran (EC 3.6.5.-) (Androgen recep	
 RAN	mus-musculus	P62827	Ran	P62827	25	86	GTP-binding nuclear protein Ran	
 RAN	rattus-norvegicus	P62828	Ran	P62828	22	64	GTP-binding nuclear protein Ran	
@@ -11,9 +11,9 @@ RAN-3	worm	Q18211	ran-3	Q18211	6	49	Regulator of chromosome condensation
 RAN-4	worm	Q21735	ran-4	Q21735	2	50	Probable nuclear transport factor 2	
 RAN-5	worm	Q21961	ran-5	Q21961	4	37	RanBD1 domain-containing protein	
 RAN-BIN	human	Q8IWJ2	GCC2	Q8IWJ2	19	134	GRIP and coiled-coil domain-containing protein 2 (185 kDa Go	w
-RAN-BINDING	fly	FBgn0034750	CG3732	Q9W230	0	17	Zinc finger Ran-binding domain-containing protein 2	w
-RAN-BINDING	fly	FBgn0037894	Ipo9	Q9VGP4	2	131	Importin-9 (Ran-binding protein 9)	w
-RAN-BINDING	fly	FBgn0262114	RanBPM	A0A126GUM4	22	112	Ran-binding protein M, isoform G	w
+RAN-BINDING	fly	FBgn0034750	CG3732	Q9W230	0	19	Zinc finger Ran-binding domain-containing protein 2	w
+RAN-BINDING	fly	FBgn0037894	Ipo9	Q9VGP4	2	135	Importin-9 (Ran-binding protein 9)	w
+RAN-BINDING	fly	FBgn0262114	RanBPM	A0A126GUM4	29	129	Ran-binding protein M, isoform G	w
 RAN-BINDING	human	O00410	IPO5	O00410	48	486	Importin-5 (Imp5) (Importin subunit beta-3) (Karyopherin bet	w
 RAN-BINDING	human	O14715	RGPD8	O14715	23	95	RANBP2-like and GRIP domain-containing protein 8 (Ran-bindin	w
 RAN-BINDING	human	O15397	IPO8	O15397	7	328	Importin-8 (Imp8) (Ran-binding protein 8) (RanBP8)	w
@@ -97,7 +97,7 @@ RANBP17	rattus-norvegicus	D3ZYN8	Ranbp17	D3ZYN8	0	3	RAN binding protein 17
 RANBP1A	arabidopsis-thaliana	Q9LMK7	RANBP1A	Q9LMK7	15	91	Ran-binding protein 1 homolog a	
 RANBP1B	arabidopsis-thaliana	Q8RWG8	RANBP1B	Q8RWG8	10	91	Ran-binding protein 1 homolog b	
 RANBP1C	arabidopsis-thaliana	P92985	RANBP1C	P92985	6	91	Ran-binding protein 1 homolog c	
-RANBP2	fly	FBgn0039302	Nup358	A0A0B4K7J2	1	27	E3 SUMO-protein ligase RanBP2 (EC 2.3.2.-) (358 kDa nucleopo	w
+RANBP2	fly	FBgn0039302	Nup358	A0A0B4K7J2	3	44	E3 SUMO-protein ligase RanBP2 (EC 2.3.2.-) (358 kDa nucleopo	w
 RANBP2	human	P49792	RANBP2	P49792	9	226	E3 SUMO-protein ligase RanBP2 (EC 2.3.2.-) (358 kDa nucleopo	
 RANBP2-LIKE	human	A6NKT7	RGPD3	A6NKT7	12	85	RanBP2-like and GRIP domain-containing protein 3	w
 RANBP2-LIKE	human	O14715	RGPD8	O14715	23	95	RANBP2-like and GRIP domain-containing protein 8 (Ran-bindin	w
@@ -109,8 +109,8 @@ RANBP2-TYPE	worm	P91457	npp-7	P91457	6	55	RanBP2-type domain-containing protein	
 RANBP2-TYPE	worm	Q18861	tag-294	Q18861	1	13	RanBP2-type domain-containing protein	w
 RANBP2-TYPE	worm	Q9N582	CELE_Y119C1A.1	Q9N582	1	3	RanBP2-type domain-containing protein	w
 RANBP20	human	Q96QU8	XPO6	Q96QU8	9	161		
-RANBP21	fly	FBgn0031051	Ranbp21	Q9VWE7	2	43	LD26789p (Ranbp21, isoform A) (Ranbp21, isoform B)	w
-RANBP21	fly	FBgn0031051	Ranbp21	Q9VWE7	2	43	LD26789p (Ranbp21, isoform A) (Ranbp21, isoform B)	w
+RANBP21	fly	FBgn0031051	Ranbp21	Q9VWE7	2	46	LD26789p (Ranbp21, isoform A) (Ranbp21, isoform B)	w
+RANBP21	fly	FBgn0031051	Ranbp21	Q9VWE7	2	46	LD26789p (Ranbp21, isoform A) (Ranbp21, isoform B)	w
 RANBP21	human	Q9HAV4	XPO5	Q9HAV4	14	324		
 RANBP2ALPHA	human	O14715	RGPD8	O14715	23	95		
 RANBP2L1	human	O14715	RGPD8	O14715	23	95		
@@ -134,25 +134,25 @@ RANBP5	human	O00410	IPO5	O00410	48	486
 RANBP6	human	O60518	RANBP6	O60518	10	234	Ran-binding protein 6 (RanBP6)	
 RANBP6	mus-musculus	Q8BIV3	Ranbp6	Q8BIV3	3	39	Ran-binding protein 6	
 RANBP6	rattus-norvegicus	D4A634	Ranbp6	D4A634	3	45	Ran-binding protein 6	
-RANBP7	fly	FBgn0026252	msk	Q9VSD6	4	142	D-Importin 7/RanBP7 (FI03666p) (Moleskin)	w
+RANBP7	fly	FBgn0026252	msk	Q9VSD6	5	144	D-Importin 7/RanBP7 (FI03666p) (Moleskin)	w
 RANBP7	human	O95373	IPO7	O95373	22	464		
 RANBP7	human	Q96S59	RANBP9	Q96S59	64	448	Ran-binding protein 9 (RanBP9) (BPM-L) (BPM90) (Ran-binding 	w
 RANBP8	human	O15397	IPO8	O15397	7	328		
 RANBP9	cladophialophora-carrionii	A0A1C1CNG7	ranbp9	A0A1C1CNG7	3	12	Protein FYV10	
-RANBP9	fly	FBgn0037894	Ipo9	Q9VGP4	2	131		
+RANBP9	fly	FBgn0037894	Ipo9	Q9VGP4	2	135		
 RANBP9	human	Q96P70	IPO9	Q96P70	16	268		
 RANBP9	human	Q96S59	RANBP9	Q96S59	64	448	Ran-binding protein 9 (RanBP9) (BPM-L) (BPM90) (Ran-binding 	
 RANBP9	mus-musculus	P69566	Ranbp9	P69566	8	41	Ran-binding protein 9	
 RANBP9	rattus-norvegicus	F1LVV3	Ranbp9	F1LVV3	8	29	RAN binding protein 9	
 RANBP9	zebrafish	A1L252	ranbp9	A1L252	8	47	Ran-binding protein 9	
-RANBP9_890	fly	FBgn0037894	Ipo9	Q9VGP4	2	131		
+RANBP9_890	fly	FBgn0037894	Ipo9	Q9VGP4	2	135		
 RANBPM	arabidopsis-thaliana	F4HYD7	RANBPM	F4HYD7	10	39	Ran-binding protein M homolog	
-RANBPM	fly	FBgn0262114	RanBPM	A0A126GUM4	22	112	Ran-binding protein M, isoform G	
+RANBPM	fly	FBgn0262114	RanBPM	A0A126GUM4	29	129	Ran-binding protein M, isoform G	
 RANBPM	human	Q96S59	RANBP9	Q96S59	64	448		
 RANBPM	human	Q99549	MPHOSPH8	Q99549	62	241	M-phase phosphoprotein 8 (Two hybrid-associated protein 3 wi	w
 RANBPM	human	Q9NWU2	GID8	Q9NWU2	23	167	Glucose-induced degradation protein 8 homolog (Two hybrid-as	w
-RANBPM_305	fly	FBgn0262114	RanBPM	A0A126GUM4	22	112		
-RANBPM_387	fly	FBgn0262114	RanBPM	A0A126GUM4	22	112		
+RANBPM_305	fly	FBgn0262114	RanBPM	A0A126GUM4	29	129		
+RANBPM_387	fly	FBgn0262114	RanBPM	A0A126GUM4	29	129		
 RANGAP	fly	FBgn0003346	RanGAP	Q9VIW3	21	169	Ran GTPase-activating protein (RanGAP) (Protein segregation 	w
 RANGAP	fly	FBgn0003346	RanGAP	Q9VIW3	21	169	Ran GTPase-activating protein (RanGAP) (Protein segregation 	w
 RANGAP1	arabidopsis-thaliana	Q9LE82	RANGAP1	Q9LE82	12	116	RAN GTPase-activating protein 1	
@@ -200,7 +200,7 @@ RANO	zebrafish	A0A0R4ISW2	mhc2d8.37b2	A0A0R4ISW2	16	54	Rano class II histocompat
 RANSHI	fly	FBgn0037620	ranshi	Q9VHM4	34	389	Ranshi	w
 RANSHI	fly	FBgn0037620	ranshi	Q9VHM4	34	389	Ranshi	w
 RANTES	human	Q9Y2Y9	KLF13	Q9Y2Y9	56	384	Krueppel-like factor 13 (Basic transcription element-binding	w
-RAN_10_168	fly	FBgn0020255	Ran	Q9VZ23	20	104		
-RAN_3_209	fly	FBgn0020255	Ran	Q9VZ23	20	104		
-RAN_9_176	fly	FBgn0020255	Ran	Q9VZ23	20	104		
+RAN_10_168	fly	FBgn0020255	Ran	Q9VZ23	22	112		
+RAN_3_209	fly	FBgn0020255	Ran	Q9VZ23	22	112		
+RAN_9_176	fly	FBgn0020255	Ran	Q9VZ23	22	112		
 RAN_HUMAN	human	P62826	RAN	P62826	97	702		
