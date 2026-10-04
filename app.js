@@ -27,6 +27,9 @@ const cutNote = (f) => `<i class="kc" tabindex="0" role="note" data-tip="the iLI
 const BAND = { 1: '#6B21A8', 5: '#0C735C', 10: '#875F00', 0: '#A7B2BF' };   // LIVIA's band colors (js/livia-core.js ilisColor)
 const bandOf = (v) => (v >= CUT[1] ? 1 : v >= CUT[5] ? 5 : v >= CUT[10] ? 10 : 0);
 const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
+// A band as a filled chip, for the pair page's tiles: there the 5% green sits beside the query's teal name, so the band is told by
+// shape (a filled chip) as well as by hue. White on the band colors is 5.7:1 or more; 'below' is ink on gray.
+const bandChip = (b) => `<em class="bchip b${b}">${bandLabel[b]}</em>`;
 // Benchmarked cutoffs at 10 / 5 / 1% FPR for single models and for the average over a pair's models: AFM-LIS
 // thresholds_data_yfh_lipdockq.xlsx ("total group"; Y2H reference sets in yeast, fly and human — Kim et al. 2026, FlyPredictome).
 const FPR = { iLIS: [0.223, 0.339, 0.551], ipTM: [0.48, 0.59, 0.72], iLIA: [620.3, 1247.4, 3078.8], iLISA: [143.9, 360.6, 1241.0],
@@ -1045,17 +1048,19 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
 }
 
 /* ── shared drawing: cluster palette (LIVIA cLIP's 'auto'), residue axes, interface tracks, sequences ──── */
-const TAB10 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'];
-const TAB20 = ['#1f77b4', '#aec7e8', '#ff7f0e', '#ffbb78', '#2ca02c', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5'];
+const TAB10 = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#bcbd22', '#17becf'];   // Tableau 10 without its gray, so no cluster reads as "not clustered"
+const TAB20 = ['#1f77b4', '#aec7e8', '#ff7f0e', '#ffbb78', '#2ca02c', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5'];
 const TAB20B = ['#393b79', '#5254a3', '#6b6ecf', '#9c9ede', '#637939', '#8ca252', '#b5cf6b', '#cedb9c', '#8c6d31', '#bd9e39', '#e7ba52', '#e7cb94', '#843c39', '#ad494a', '#d6616b', '#e7969c', '#7b4173', '#a55194', '#ce6dbd', '#de9ed6'];
-const TAB20C = ['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#e6550d', '#fd8d3c', '#fdae6b', '#fdd0a2', '#31a354', '#74c476', '#a1d99b', '#c7e9c0', '#756bb1', '#9e9ac8', '#bcbddc', '#dadaeb', '#636363', '#969696', '#bdbdbd', '#d9d9d9'];
+const TAB20C = ['#3182bd', '#6baed6', '#9ecae1', '#c6dbef', '#e6550d', '#fd8d3c', '#fdae6b', '#fdd0a2', '#31a354', '#74c476', '#a1d99b', '#c7e9c0', '#756bb1', '#9e9ac8', '#bcbddc', '#dadaeb'];
 const TAB60 = TAB20.concat(TAB20B, TAB20C);
 function hslDistinct(i) {   // hex, so Mol* (MVS) can take it too
   const h = (i * 137.508) % 360, s = (62 + (i % 2) * 16) / 100, l = (42 + (i % 3) * 13) / 100, a = s * Math.min(l, 1 - l);
   const f = (n) => { const k = (n + h / 30) % 12, c = l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)); return Math.round(255 * c).toString(16).padStart(2, '0'); };
   return `#${f(0)}${f(8)}${f(4)}`;
 }
-const clusterColor = (id, k) => { const pal = k <= 10 ? TAB10 : k <= 20 ? TAB20 : k <= 60 ? TAB60 : null; return pal ? pal[(id - 1) % pal.length] : hslDistinct(id - 1); };
+const clusterColor = (id, k) => { const pal = k <= TAB10.length ? TAB10 : k <= TAB20.length ? TAB20 : k <= TAB60.length ? TAB60 : null; return pal ? pal[(id - 1) % pal.length] : hslDistinct(id - 1); };
+const SMALL_C = '#7E8DA1';   // communities past the palette: one gray-blue outside it, with its own key entry (navy is the center protein's color)
+const smallKey = (n, word = 'communities') => (n > 0 ? `<span><i style="background:${SMALL_C};border-radius:50%"></i>${fmtInt(n)} smaller ${word}</span>` : '');
 const clusterLabel = (c, brief) => (brief ? 'C' : 'Cluster ') + c;
 function amCol(v) {   // AlphaMissense: benign (blue) → ambiguous (gray) → pathogenic (red), as clip.html
   const t = Math.max(0, Math.min(1, v)), lerp = (a, b, u) => [0, 1, 2].map((i) => Math.round(a[i] + (b[i] - a[i]) * u));
@@ -1064,6 +1069,8 @@ function amCol(v) {   // AlphaMissense: benign (blue) → ambiguous (gray) → p
 }
 const plddtCol = (b) => (b > 90 ? '#0053D6' : b > 70 ? '#65CBF3' : b > 50 ? '#FFDB13' : '#FF7D45');
 const PAIR_COL = { q: { base: '#E0E0E0', lir: '#80CBC4', clir: '#00897B' }, p: { base: '#E0E0E0', lir: '#FFAB91', clir: '#E64A19' } };
+const CHAIN_TXT = { '#00897B': '#00776B', '#E64A19': '#C13E15' };   // the chain colors a shade darker, wherever text sits on them or is drawn in them: at least 4.5:1 (white on #00897B is 4.3, on #E64A19 3.9)
+const chainTxt = (c) => CHAIN_TXT[String(c).toUpperCase()] || c;
 
 // A 2D context sized in CSS px. On screen it is scaled by the device pixel ratio; while LIVIA's exporter re-runs a draw
 // against canvas2svg (which ignores transforms), it is drawn at 1× so the SVG comes out at the on-screen size.
@@ -1104,7 +1111,7 @@ function drawIfaceTracks(cv, tracks) {
   let y = 0; cv._blocks = []; cv._doms = [];
   for (const t of tracks) {
     const L = t.len, bw = Math.max(1.3, (W - 2 * pad) / L), name = t.label || t.gene;
-    g.font = '600 13.5px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = t.col.clir; g.textBaseline = 'alphabetic'; g.textAlign = 'left'; g.fillText(name, pad, y + 15);
+    g.font = '600 13.5px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = chainTxt(t.col.clir); g.textBaseline = 'alphabetic'; g.textAlign = 'left'; g.fillText(name, pad, y + 15);
     const gw = g.measureText(name).width; g.font = '12px "IBM Plex Mono", ui-monospace, monospace'; g.fillStyle = '#5A697C';
     const extent = t.span ? `residues ${fmtInt(t.span[0])}–${fmtInt(t.span[1])} of ${fmtInt(L)}` : t.own ? `${fmtInt(L)} aa construct, its own numbering` : `${fmtInt(L)} aa`;
     g.fillText(`${extent} · ${t.lir.length} interaction · ${t.clir.length} contact`, pad + gw + 10, y + 15);
@@ -1151,15 +1158,14 @@ function fitSeqs(root) { root.querySelectorAll('.seq-flow').forEach((f) => { fit
 // One sequence as a continuous, searchable flow in 10-residue groups (position numbers are CSS, not text), as clip.html.
 function seqPanel(label, seq, lir, clir, col, len, span) {   // span: the folded part of a longer gene; the rest is dimmed
   const ext = span ? `residues ${fmtInt(span[0])}–${fmtInt(span[1])} of ${fmtInt(len)}` : `${fmtInt(len || seq.length)} residues`;
-  const TXT = { '#00897B': '#00776B', '#E64A19': '#C13E15' };   // the chain colors as text (at least 4.5:1 on white)
-  const head = `<div class="seqh"><b style="color:${TXT[String(col.clir).toUpperCase()] || col.clir}">${esc(label)}</b> <span class="muted">${ext} · ${lir.length} interaction · ${clir.length} contact</span></div>`;
+  const head = `<div class="seqh"><b style="color:${chainTxt(col.clir)}">${esc(label)}</b> <span class="muted">${ext} · ${lir.length} interaction · ${clir.length} contact</span></div>`;
   if (!seq || (len && seq.length !== len)) return head + '<p class="muted" style="margin:6px 0 0">The predicted sequence is not available for this construct.</p>';
   const L = new Set(lir), C = new Set(clir); let body = '';
   for (let i = 0; i < seq.length; i++) {
     if (i % 10 === 0) { if (i) body += '</span><wbr>'; const n = Math.min(i + 10, seq.length);   // a 1–2 residue last group: its number runs right, clear of the one before
       body += `<span class="g10${n - i < 3 ? ' tail' : ''}" data-n="${n}">`; }
     const r = i + 1, ch = seq[i];
-    body += C.has(r) ? `<span class="c" style="background:${col.clir}">${ch}</span>` : L.has(r) ? `<span class="l" style="background:${col.lir}">${ch}</span>`
+    body += C.has(r) ? `<span class="c" style="background:${chainTxt(col.clir)}">${ch}</span>` : L.has(r) ? `<span class="l" style="background:${col.lir}">${ch}</span>`
       : span && (r < span[0] || r > span[1]) ? `<span class="out">${ch}</span>` : ch;
   }
   return head + `<div class="seq-flow">${body}</span></div>`;
@@ -1327,7 +1333,7 @@ async function showcase() {
       const big = [...csize].filter(([, z]) => z >= 3).map(([c]) => c).sort((a, b) => a - b), center = new Map();
       big.forEach((c, n) => { if (n === 0) center.set(c, [0, 0]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [150 * Math.cos(t), 70 * Math.sin(t)]); } });
       const linked = new Set(s.edges.flatMap(([a, b]) => [a, b]));
-      s._col = cm.map((c, i) => (!linked.has(i) ? '#C3CCD6' : big.includes(c) && big.indexOf(c) < TAB10.length ? TAB10[big.indexOf(c)] : '#1A5276'));
+      s._col = cm.map((c, i) => (!linked.has(i) ? '#C3CCD6' : big.includes(c) && big.indexOf(c) < TAB10.length ? TAB10[big.indexOf(c)] : SMALL_C));
       const home = (d) => center.get(cm[d.i]) || [0, 0], nodes = s.nodes.map((l, i) => ({ i, x: (center.get(cm[i]) || [0, 0])[0] + 20 * Math.cos(i), y: (center.get(cm[i]) || [0, 0])[1] + 20 * Math.sin(i) }));
       const links = s.edges.map(([a, b, w]) => ({ source: a, target: b, w, same: cm[a] === cm[b] }));
       const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).distance(26).strength((l) => (l.same ? 0.6 : 0.02))).force('charge', d3.forceManyBody().strength(-38))
@@ -1475,7 +1481,7 @@ async function viewAbout() {
       Isoform row, and every card follows the isoform chosen. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
       accession, official symbol or systematic name. In networks, edges are shaded in gray by the pair's best iLIS, and the pairs BioGRID reports
-      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical red, genetic green, both purple); the width is the best iLIS. On a protein page, a partner
+      (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both black, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
       with a reported physical interaction is ringed in the Overview, and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
     <div class="card" id="about-limits"><h2>How the pages count, and their limits</h2>
@@ -1654,11 +1660,12 @@ const AXL = 64, AXR = 18;   // shared residue axis of the frequency plot and the
 const METRICS = { iLIS: 'iLIS', iLISA: 'iLISA', iLIA: 'iLIA', ipTM: 'ipTM', pTM: 'pTM', LIS: 'LIS', cLIS: 'cLIS', LIA: 'LIA', cLIA: 'cLIA', ipSAE: 'ipSAE', actifpTM: 'actifpTM', qPl: 'pLDDT (query)', pPl: 'pLDDT (partner)', _rank: 'global rank' };
 // Edge colors of every network, two independent layers the reader switches on or off: the pair's best iLIS on a color
 // scale the reader picks (light at the 10% FPR cutoff, dark at 0.85 and above; or one flat gray) and, when chosen, the
-// pairs reported in BioGRID colored by what was reported: physical red, genetic green, both purple. Edge width is the
-// best iLIS (the species file holds no average across screens).
+// pairs reported in BioGRID colored by what was reported: physical blue, genetic orange, both black (colors that stay
+// distinct for red-green color-blind readers), the unreported pairs then light gray. Edge width is the best iLIS (the species file holds
+// no average across screens).
 const ESCALE = { gray: ['#C5CCD4', '#1E2A38'], blue: ['#C6DBEF', '#08306B'], brown: ['#E8D9C4', '#5B3A1A'] };
 const ESCALE_LBL = { gray: 'gray', blue: 'blue', brown: 'brown', flat: 'off (one gray)' };
-const EFLAT = '#9AA5B1', KB_COL = { p: '#C62828', g: '#2E7D32', pg: '#6A1B9A' };
+const EFLAT = '#9AA5B1', KB_COL = { p: '#0072B2', g: '#D55E00', pg: '#111111' }, KB_DIM = '#C3CCD6';   // Okabe-Ito blue and vermillion, at least 3.8:1 on white; KB_DIM: unreported pairs while BioGRID is on
 const escale = (k) => d3.scaleLinear().domain([CUT[10], 0.85]).range(ESCALE[k] || ESCALE.gray).clamp(true);
 const EGRAY = escale('gray');   // the fixed gray scale of the virus networks
 const kbPubs = (ph, ge) => [ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');
@@ -1666,15 +1673,15 @@ const kbHit = (d, ev) => (ev === 'p' ? d.pubs > 0 : ev === 'g' ? d.gen > 0 : d.p
 const kbCol = (d) => (d.pubs > 0 && d.gen > 0 ? KB_COL.pg : d.pubs > 0 ? KB_COL.p : KB_COL.g);   // what was reported for the pair
 const KB_EV = { pg: 'physical or genetic', p: 'physical', g: 'genetic' };
 const edgeCtl = (id, kbOn = false) => `<label class="ctl" title="shade each edge by the best iLIS of the pair: light at the 10% FPR cutoff, dark at 0.85 and above">iLIS scale<select id="${id}-shade" aria-label="iLIS color scale">${Object.entries(ESCALE_LBL).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></label>
-  <label class="ctl" title="color the pairs reported in BioGRID: physical red, genetic green, both purple"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
+  <label class="ctl" title="color the pairs reported in BioGRID: physical blue, genetic orange, both black; the other pairs turn light gray"><input type="checkbox" id="${id}-kb"${kbOn ? ' checked' : ''}> BioGRID</label><select id="${id}-ev" aria-label="Which BioGRID evidence"${kbOn ? '' : ' disabled'}>${Object.entries(KB_EV).map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select>`;
 function edgeStyle(id, K) {   // the reader's choice for one network → the color of an edge and whether it is a reported one
   const sc = $(`#${id}-shade`).value, shade = sc !== 'flat', kb = !!K && $(`#${id}-kb`).checked, ev = $(`#${id}-ev`).value, hit = (d) => kb && kbHit(d, ev);
   const ramp = escale(sc);
-  return { shade, sc, kb, ev, hit, color: (d) => (hit(d) ? kbCol(d) : shade ? ramp(d.best) : EFLAT) };
+  return { shade, sc, kb, ev, hit, color: (d) => (hit(d) ? kbCol(d) : kb ? KB_DIM : shade ? ramp(d.best) : EFLAT) };
 }
 function edgeKey(st, K, links, extra = []) {   // the key under a network: the iLIS scale (or flat gray) and, when on, the reported pairs by type
   const [lo, hi] = ESCALE[st.sc] || ESCALE.gray;
-  const base = st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>best iLIS, 0.223 to 0.85+</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
+  const base = K && st.kb ? `<span><i style="background:${KB_DIM}"></i>not reported (width: best iLIS)</span>` : st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>best iLIS, 0.223 to 0.85+</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
   const on = links.filter((d) => kbHit(d, st.ev)), n = (f) => fmtInt(on.filter(f).length);
   const red = K === null ? '<span class="muted">no BioGRID records for this species</span>'   // undefined: not read yet (read on the first BioGRID tick)
     : K && st.kb ? `<span class="muted">reported in BioGRID ${esc(K.release)} (${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
@@ -1732,7 +1739,7 @@ function mcl(n, edges, inflation = 2, iters = 100) {
 }
 // The community menu every network card offers (the network builder adds finer settings): Leiden, Louvain, MCL or connected
 // parts, pairs weighted by best iLIS, and one seed for the visiting order and the layout's start (0: the fixed ones).
-const commHue = (n) => { if (n < TAB10.length) return TAB10[n]; const h = (n * 137.508) % 360, s = (62 + (n % 2) * 14) / 100, l = (50 + (n % 3) * 10) / 100, a = s * Math.min(l, 1 - l), f = (k0) => { const k = (k0 + h / 30) % 12; return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); }; return `#${f(0)}${f(8)}${f(4)}`; };   // ten Tableau colors, then golden-angle hues as LIVIA's network page
+const commHue = (n) => { if (n < TAB10.length) return TAB10[n]; const h = (n * 137.508) % 360, s = (62 + (n % 2) * 14) / 100, l = (50 + (n % 3) * 10) / 100, a = s * Math.min(l, 1 - l), f = (k0) => { const k = (k0 + h / 30) % 12; return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); }; return `#${f(0)}${f(8)}${f(4)}`; };   // nine Tableau colors (no gray), then golden-angle hues as LIVIA's network page
 const COMM_OPTS = [['leiden', 'Leiden'], ['comm', 'Louvain'], ['mcl', 'MCL'], ['cc', 'connected parts']];
 const communitiesBy = (m, n, E, seed = 0) => (m === 'cc' ? components(n, E) : m === 'mcl' ? mcl(n, E) : (m === 'leiden' ? leiden : louvain)(n, E, 1, seed ? seededRandom(seed) : null));
 const commCtl = (id, m, seed, lay = true) => `<label class="ctl" title="groups of proteins predicted to pair with each other more than with the rest: Leiden, Louvain, MCL (Markov clustering) or the connected parts, pairs weighted by best iLIS">Communities <select id="${id}-cm">${[['', 'none'], ...COMM_OPTS].map(([v, l]) => `<option value="${v}"${v === m ? ' selected' : ''}>${l}</option>`).join('')}</select></label>`
@@ -2592,14 +2599,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
       label(`${C.name(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : `${st.seqOnly ? ' · sequence only, no predictions on this site' : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters`}${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
       const yTop = y;
-      if (al && PLOTSHOW.id) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(26,82,118,${0.12 + 0.8 * v})` : '#E8ECF0'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, light gray = nothing of the ortholog aligned here
+      if (al && PLOTSHOW.id) { for (let r = 1; r <= L; r++) { const v = al.ident(r - 1, 10), has = al.map[r - 1] != null; g.fillStyle = has ? `rgba(74,83,97,${0.2 + 0.72 * v})` : '#F3F5F8'; g.fillRect(xOf(r), y, Math.max(1, bw), IH); } y += IH + 3; }   // identity strip: dark = conserved, light gray = nothing of the ortholog aligned here
       if (t.dL) { domBoxes(t.doms, y); for (const d of t.doms) rows.push({ kind: 'dom', d, st, y0: y + d.lane * DRH, y1: y + d.lane * DRH + 10 }); y += t.dL * DRH + 4; }
       if (st.seqOnly) rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: Math.max(y, yTop + IH) });   // no predictions: no bars, the strips only
       else {
       frame(y, y + TH);
       const colorAt = al ? ((r2) => { const s = siteAt(r2); return s ? clusterColor(s, M.k) : '#B9C2CE'; }) : ((r2) => clusterColor(F2.dom(r2), m2.k));   // aligned: this protein's site colors, gray where no prediction matches a site
       yTicks(bars(F2, y + TH, TH - 4, xAt, colorAt), y + TH, TH - 4);
-      if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AX; g.fillStyle = '#B45309'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
+      if (al) for (const [r, n] of ins) { const x = r ? xOf(r) + bw : AX; g.fillStyle = '#111'; g.beginPath(); g.moveTo(x - 3, y + TH); g.lineTo(x + 3, y + TH); g.lineTo(x, y + TH - 7); g.closePath(); g.fill(); }   // residues with no counterpart here (insertions), summed at the gap
       rows.push({ kind: 'o', t, F: F2, y0: yTop, y1: y + TH }); y += TH + 4; }
       if (t.pl) { const pl2 = st.pl; plLine((r) => { const r2 = al.map[r - 1], u = r2 != null ? (st.toRef ? st.toRef[r2 - 1] : r2) : null; return u && pl2[u - 1] != null ? pl2[u - 1] : null; }, y); y += PLH + 6; }
       if (al) { const on = [...inv.keys()].sort((p, q) => p - q), tk = [...new Set([on[0], ...resTicks(F2.L, W - AX - AXR, xtWant()).filter((r2) => inv.has(r2)), on[on.length - 1]])].filter((r2) => r2 != null).sort((p, q) => p - q);   // its own residue numbers, where they align
@@ -2628,7 +2635,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; C.setSite(C.site() === h.c ? 0 : h.c); C.renderSite(T); };
     if (C.site() && !sites.some((s) => s.c === C.site())) C.setSite(0);
     C.renderSite(T);
-    $(C.key).innerHTML = `<span>bars: predictions contacting each residue (y axis); ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> ${C.diamond} · <b>○</b> not contacted · <b>·</b> no call: fewer than 5 partners past the cutoff, or no predictions (sequence only)</span><span><i style="background:rgba(26,82,118,.9)"></i>identity strip: dark = conserved around the residue</span><span><i style="background:#E8ECF0;border:1px solid #CBD3DC"></i>no residue of the ${C.word} aligned</span><span><i style="background:#B45309"></i>contacts on the ${C.word}'s inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam, UniProt's where Pfam has none; ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s drawn where its residues align</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
+    $(C.key).innerHTML = `<span>bars: predictions contacting each residue (y axis); ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> ${C.diamond} · <b>○</b> not contacted · <b>·</b> no call: fewer than 5 partners past the cutoff, or no predictions (sequence only)</span><span><i style="background:linear-gradient(90deg,rgba(74,83,97,.15),rgba(74,83,97,.92))"></i>identity strip, in grays (the site colors stay apart from it): dark = conserved around the residue</span><span><i style="background:#F3F5F8;border:1px solid #CBD3DC"></i>no residue of the ${C.word} aligned</span><span><b>▲</b> contacts on the ${C.word}'s inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam, UniProt's where Pfam has none; ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s drawn where its residues align</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
     attachExport(C.cvId, C.exportName, () => drawOrth(cfg)); C.after();   // the list carries each alignment's numbers once it exists
   }
   async function orthShared(sp2) {   // which of the ortholog's partners have an ortholog among this protein's partners, and the sites both contact
@@ -2657,12 +2664,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const title = `<b>Shared partners with ${orthLabel(st)}</b> <span class="muted">· ${fmtInt(sh.pairs.length)} of its ${fmtInt(sh.n2)} partners in sites ${sh.pairs.length === 1 ? 'has' : 'have'} an ortholog among ${esc(P.gene)}'s partners in sites</span>`;   // sites hold the pairs whose rank-1 model passes the cutoff, on both sides
       if (!sh.pairs.length) return `<div class="orth-sh">${title}</div>`;
       const how = LIST ? `Each line: a site of ${esc(P.gene)} and a site of ${esc(st.P2.gene)}, and the partner pairs that contact them.` : `Rows: ${esc(P.gene)}'s sites, columns: ${esc(st.P2.gene)}'s sites, cells: partner pairs contacting both; sites without a shared partner are left out.`;
-      const site = (c, k, gene) => `<b style="color:${clusterColor(c, k)}">${esc(gene)} ${clusterLabel(c, true)}</b>`;
+      const site = (c, k, gene) => `<span class="mdot" style="background:${clusterColor(c, k)}"></span><b>${esc(gene)} ${clusterLabel(c, true)}</b>`;   // ink text, the site color on a dot (pale site colors are unreadable as text)
       let body;
       if (LIST) body = `<ul class="orth-pairs">${cells.map((x) => `<li>${site(x.c1, M.k, P.gene)} ↔ ${site(x.c2, m2.k, st.P2.gene)} <span class="muted">· ${x.ps.length} partner pair${x.ps.length === 1 ? '' : 's'}:</span> ${x.ps.slice(0, 12).map(link).join(', ')}${x.ps.length > 12 ? ` and ${fmtInt(x.ps.length - 12)} more` : ''}</li>`).join('')}</ul>`;
       else {
         const c1s = [...new Set(cells.map((x) => x.c1))].sort((a, b) => a - b), c2s = [...new Set(cells.map((x) => x.c2))].sort((a, b) => a - b);
-        body = `<div class="tbl-wrap"><table class="orth-grid"><thead><tr><th></th>${c2s.map((c2) => `<th class="n" style="color:${clusterColor(c2, m2.k)}">${clusterLabel(c2, true)}</th>`).join('')}</tr></thead><tbody>${c1s.map((c1) => `<tr><th style="color:${clusterColor(c1, M.k)}">${clusterLabel(c1, true)}</th>${c2s.map((c2) => { const ps = cell.get(c1 + '|' + c2) || []; return `<td class="n"${ps.length ? ` title="${ps.map((p) => `${name1(p.k1)} ↔ ${name2(p.k2)}`).join(', ')}"` : ''}>${ps.length ? `<b>${ps.length}</b>` : ''}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
+        body = `<div class="tbl-wrap"><table class="orth-grid"><thead><tr><th></th>${c2s.map((c2) => `<th class="n"><span class="mdot" style="background:${clusterColor(c2, m2.k)}"></span>${clusterLabel(c2, true)}</th>`).join('')}</tr></thead><tbody>${c1s.map((c1) => `<tr><th><span class="mdot" style="background:${clusterColor(c1, M.k)}"></span>${clusterLabel(c1, true)}</th>${c2s.map((c2) => { const ps = cell.get(c1 + '|' + c2) || []; return `<td class="n"${ps.length ? ` title="${ps.map((p) => `${name1(p.k1)} ↔ ${name2(p.k2)}`).join(', ')}"` : ''}>${ps.length ? `<b>${ps.length}</b>` : ''}</td>`; }).join('')}</tr>`).join('')}</tbody></table></div>
         <div class="muted" style="margin-top:4px">${sh.pairs.slice(0, 40).map(link).join(' · ')}${sh.pairs.length > 40 ? ` · and ${fmtInt(sh.pairs.length - 40)} more` : ''}</div>`; }
       return `<details class="orth-sh" data-sp="${esc(st.sp2)}"${ORTH.shOpen.has(st.sp2) ? ' open' : ''}><summary>${title}</summary><div class="muted" style="margin:6px 0">${how}</div>${body}</details>`; }).join('');
     box.querySelectorAll('details.orth-sh').forEach((d) => { d.ontoggle = () => { if (d.open) ORTH.shOpen.add(d.dataset.sp); else ORTH.shOpen.delete(d.dataset.sp); }; });   // an opened line stays open across a cutoff change
@@ -2799,16 +2806,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       g.fillStyle = '#08306B'; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, hh); } }
     const hit = fpHit(), found = $('#fp-found'), mine = hit ? M.order.filter((i) => who(M.preds[i].partner).key === hit.id) : [];
     $('#fp-find').classList.toggle('nf', hit === false); found.hidden = !hit;
-    if (hit) {   // its rows: contacts in orange on a light band, at least 3 px tall however many rows share the height, and a marker at the right
-      const on = new Set(order), cl = [...new Set(mine.map((i) => M.labels[i]))].sort((a, b) => a - b), mh = Math.round(3 * dpr), col = '#E67E22';
+    if (hit) {   // its rows: contacts in black on a white band edged in black (outside the cluster palettes), at least 3 px tall however many rows share the height, and a marker at the right
+      const on = new Set(order), cl = [...new Set(mine.map((i) => M.labels[i]))].sort((a, b) => a - b), mh = Math.round(3 * dpr), col = '#111';
       order.forEach((i, row) => { if (!mine.includes(i)) return; const yc = (rowTop(row) + rowTop(row + 1)) / 2, y0 = Math.round(yc - mh / 2);
-        g.fillStyle = 'rgba(230,126,34,0.2)'; g.fillRect(rx0, y0, rx1 - rx0, mh);
+        g.fillStyle = '#fff'; g.fillRect(rx0, y0 - 1, rx1 - rx0, mh + 2); g.fillStyle = '#111'; g.fillRect(rx0, y0 - 1, rx1 - rx0, 1); g.fillRect(rx0, y0 + mh, rx1 - rx0, 1);
         g.fillStyle = col; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, mh); }
         g.beginPath(); g.moveTo(rx1 + X(2), yc); g.lineTo(rx1 + X(11), yc - X(5)); g.lineTo(rx1 + X(11), yc + X(5)); g.closePath(); g.fill(); });
       const shownN = mine.filter((i) => on.has(i)).length;
       found.innerHTML = !mine.length ? `<b>${esc(gname(hit.id))}</b> has no prediction past the ${cut}% FPR cutoff.`
         : `<b style="color:${col}">${esc(gname(hit.id))}</b>: ${mine.length} prediction${mine.length === 1 ? '' : 's'}, in ${cl.map((c) => `<span style="color:${clusterColor(c, k)}">●</span> ${clusterLabel(c)}`).join(', ')}`
-          + (shownN < mine.length ? ` · ${mine.length - shownN} hidden by the cluster choice above` : '') + ' · marked in orange';
+          + (shownN < mine.length ? ` · ${mine.length - shownN} hidden by the cluster choice above` : '') + ' · marked in black';
     }
     const Z = M.Z || [];
     if (all && Z.length === n - 1 && n >= 2) {                                  // row dendrogram: leaves at the strip, root at the left; x ∝ merge distance
@@ -2947,7 +2954,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (x1 - x0 > 18) g.fillText('D' + d.idx, x0 + 3, y + 6.5); }
     sites.forEach((st, j) => { const y = top + j * LH, col = clusterColor(st.c, M.k);
       g.fillStyle = '#F3F6F9'; g.fillRect(AXL, y + 3, W - AXL - AXR, LH - 6);
-      if (one && ACTIVE.has(st.c)) { g.strokeStyle = '#E67E22'; g.lineWidth = 1.5; g.strokeRect(AXL - 0.5, y + 2.5, W - AXL - AXR + 1, LH - 5); }
+      if (one && ACTIVE.has(st.c)) { g.strokeStyle = '#111'; g.lineWidth = 1.5; g.strokeRect(AXL - 0.5, y + 2.5, W - AXL - AXR + 1, LH - 5); }
       g.globalAlpha = one && !ACTIVE.has(st.c) ? 0.35 : 1;
       g.fillStyle = '#4A596F'; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'right'; g.fillText(clusterLabel(st.c), AXL - 8, y + LH / 2);
       g.textAlign = 'left';
@@ -3027,6 +3034,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (hit && hit.id !== $('#res-partner').value) { $('#res-partner').value = hit.id; pickPartner(); } };
 
   /* 3D structure: the AlphaFold DB model in LIVIA's Mol* page, colored like clip.html */
+  const pale3D = (h) => { const v = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)), lum = (0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]) / 255; return lum > 0.62 && Math.max(...v) - Math.min(...v) < 110; };
+  const col3D = (h) => (pale3D(h) ? '#' + [1, 3, 5].map((i) => Math.round(parseInt(h.slice(i, i + 2), 16) * 0.68).toString(16).padStart(2, '0')).join('') : h);   // a pale site color, deepened on the light gray cartoon (and in its key)
   function colorComponents() {
     const N = S.len || P.clen || 1, GRAY = '#e6e6e6', at = new Array(N + 1).fill(GRAY);
     if (V.mode === 'plddt' && S.plddt) { for (let sr = 1; sr <= N; sr++) { const v = S.plddt.get('A:' + sr); if (v != null) at[sr] = plddtCol(v); } }
@@ -3038,7 +3047,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       for (const res in byRes) { const r = +res; if (r < 1 || r > N) continue; let dom = null, dh = -1, dsz = -1; const cc = byRes[res];
         for (const c in cc) { if (!ACTIVE.has(+c)) continue; if (ACTIVE.size !== 1 && (size[c] || 0) < V.minC) continue; const hits = cc[c]; if (hits / (size[c] || 1) < V.thr) continue; const sz = size[c] || 0;
           if (hits > dh || (hits === dh && sz > dsz) || (hits === dh && sz === dsz && dom != null && +c < dom)) { dh = hits; dsz = sz; dom = +c; } }
-        if (dom != null) at[r] = clusterColor(dom, M.k); }
+        if (dom != null) at[r] = col3D(clusterColor(dom, M.k)); }
     }
     const byColor = {}; let r = 1;
     while (r <= N) { const c = at[r]; let e = r; while (e < N && at[e + 1] === c) e++; (byColor[c] ||= []).push({ start: r, end: e }); r = e + 1; }
@@ -3052,7 +3061,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     else if (!S.mapOK) box.innerHTML = `<span class="muted">${esc(S.mapNote || '')}</span>`;
     else { const size = {}; for (const l of M.labels) size[l] = (size[l] || 0) + 1;
       const shown = range(M.k).filter((c) => ACTIVE.has(c) && (ACTIVE.size === 1 || size[c] >= V.minC));
-      box.innerHTML = shown.map((c) => `<span><i style="background:${clusterColor(c, M.k)}"></i>${clusterLabel(c)}</span>`).join('') + '<span><i style="background:#e6e6e6"></i>not a consensus contact</span>'; }
+      box.innerHTML = shown.map((c) => `<span><i style="background:${col3D(clusterColor(c, M.k))}"></i>${clusterLabel(c)}</span>`).join('') + '<span><i style="background:#e6e6e6"></i>not a consensus contact</span>'; }
   }
   function show3D() {
     V.want = true; if (S.state !== 'ready' || V.shown) return;
@@ -3214,9 +3223,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const gl = (p) => gname(p.id).toLowerCase(), hit = B.partners.find((p) => gl(p) === find) || B.partners.find((p) => gl(p).startsWith(find)) || B.partners.find((p) => gl(p).includes(find));
       $('#sc-find').classList.toggle('nf', !hit);
       if (hit) for (const q of pts.filter((q) => (q.t ? q.t.id : q.p.partner) === hit.id)) { const x = xs(q.x), y = ys(q.y);
-        g.beginPath(); g.arc(x, y, 8.5, 0, 2 * Math.PI); g.lineWidth = 2.5; g.strokeStyle = '#17263A'; g.stroke();
+        g.beginPath(); g.arc(x, y, 10, 0, 2 * Math.PI); g.lineWidth = 5; g.strokeStyle = '#fff'; g.stroke(); g.lineWidth = 2.2; g.strokeStyle = '#111'; g.stroke();   // the found partner: a black ring on a white one, larger and heavier than the thin BioGRID ring
         g.font = '600 12px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'alphabetic'; g.lineWidth = 3; g.strokeStyle = 'rgba(255,255,255,0.92)'; const t = per ? gname(hit.id) : `${gname(hit.id)} (R${q.p.rank})`;
-        g.strokeText(t, x, y - 13); g.fillStyle = '#17263A'; g.fillText(t, x, y - 13); }
+        g.strokeText(t, x, y - 16); g.fillStyle = '#17263A'; g.fillText(t, x, y - 16); }
     } else $('#sc-find').classList.remove('nf');
     const qt = d3.quadtree(pts, (q) => xs(q.x), (q) => ys(q.y));
     const near = (e) => { const b = cv.getBoundingClientRect(); return qt.find(e.clientX - b.left, e.clientY - b.top, 10); };
@@ -3392,8 +3401,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     NET = { link, restyle, recolor() {
       const k = M ? M.k : 1;
       if (C.m) {   // partners by community: the groups of two or more, largest first
-        circle.attr('fill', (d) => (d.q ? '#1A5276' : cgrp.has(d.id) && cgrp.get(d.id) < TAB10.length ? TAB10[cgrp.get(d.id)] : '#C3CCD6'));
-        $('#net-legend').innerHTML = (big.length ? big.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(x))})</span>`).join('') + (big.length > TAB10.length ? `<span class="muted">+${big.length - TAB10.length} smaller</span>` : '') : '<span class="muted">no group of two or more partners pairing with each other</span>')
+        circle.attr('fill', (d) => (d.q ? '#1A5276' : cgrp.has(d.id) ? (cgrp.get(d.id) < TAB10.length ? TAB10[cgrp.get(d.id)] : SMALL_C) : '#C3CCD6'));
+        $('#net-legend').innerHTML = (big.length ? big.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(x))})</span>`).join('') + smallKey(big.length - TAB10.length, 'groups') : '<span class="muted">no group of two or more partners pairing with each other</span>')
           + '<span><i style="background:#C3CCD6;border-radius:50%"></i>in no group</span>';
         return; }
       circle.attr('fill', (d) => { if (d.q) return '#1A5276'; const cl = partnerCluster.get(d.row.key); return cl ? clusterColor(cl, k) : '#C3CCD6'; });
@@ -3579,10 +3588,10 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
         <div class="srcs">Predicted in ${srcBadges(sp, part.src)}${part.sets.length ? ` <span class="muted">· sets:</span> ${setBadges(part.sets)}` : ''}${(() => { const t = srcPapers(sp, part.src); return t ? ` <span class="muted">· ${t}</span>` : ''; })()}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P); return t ? `<div class="srcs muted ovl">${esc(t)}</div>` : ''; })()}
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => part.src & (1 << i)))}<span id="pair-struct"></span></div></div>
       ${(() => { const nAll = part.counted.length, many = new Set(part.counted.map((x) => x.run)).size > 1, bestOf = one ? '' : many ? ` best of ${fmtInt(nAll)} models${part.preds.length > nAll ? ' (repeats not counted)' : ''}` : ' best', ofRun = part.avgOther ? ` of its ${sp.dsShort[part.avgDi]} run (the best model came from a one-model run)` : many ? ' of the run with the highest iLIS' : '';   // folded in several runs: say which models each tile covers
-      return `<div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${bestOf} · ${bandLabel[b]}</span></div>
-        ${one || part.nAvg < 2 ? '' : (() => { const a = avgView(FPR_AVG.iLIS, part.avg, part.nAvg, 3, 'iLIS average'); return `<div class="kpi" title="${a.tip}"><b style="${a.sty}">${a.txt}</b><span>iLIS average of ${part.nAvg} models${ofRun} · ${a.band}</span></div>`; })()}
-        <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM${bestOf} · ${bandLabel[bandIn(FPR.ipTM, part.iptmBest)]}</span></div>
-        ${one || part.nAvg < 2 ? '' : (() => { const a = avgView(FPR_AVG.ipTM, part.iptmAvg, part.nAvg, 2, 'ipTM average'); return `<div class="kpi" title="${a.tip}"><b style="${a.sty}">${a.txt}</b><span>ipTM average of ${part.nAvg} models${ofRun} · ${a.band}</span></div>`; })()}</div>`; })()}</div>
+      return `<div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${bestOf} ${bandChip(b)}</span></div>
+        ${one || part.nAvg < 2 ? '' : (() => { const a = avgView(FPR_AVG.iLIS, part.avg, part.nAvg, 3, 'iLIS average'); return `<div class="kpi" title="${a.tip}"><b style="${a.sty}">${a.txt}</b><span>iLIS average of ${part.nAvg} models${ofRun} ${part.nAvg >= 5 ? bandChip(bandIn(FPR_AVG.iLIS, part.avg)) : `· ${a.band}`}</span></div>`; })()}
+        <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM${bestOf} ${bandChip(bandIn(FPR.ipTM, part.iptmBest))}</span></div>
+        ${one || part.nAvg < 2 ? '' : (() => { const a = avgView(FPR_AVG.ipTM, part.iptmAvg, part.nAvg, 2, 'ipTM average'); return `<div class="kpi" title="${a.tip}"><b style="${a.sty}">${a.txt}</b><span>ipTM average of ${part.nAvg} models${ofRun} ${part.nAvg >= 5 ? bandChip(bandIn(FPR_AVG.ipTM, part.iptmAvg)) : `· ${a.band}`}</span></div>`; })()}</div>`; })()}</div>
     <div class="card"><div class="card-head"><h2>Ranked models</h2><span class="muted">every model of every screen · rank = the prediction's own model order, ipTM-based, not the iLIS order · click one to show its interaction residues${part.preds.some((p) => p.rep) ? ' · a repeat folded the same two sequences again: listed, not counted' : ''}</span></div>
       <p class="legend-text">Scores are colored by the false-positive-rate band they pass, each metric by its own benchmarked cutoffs (listed on the About page).</p><div class="legend" style="margin:0 0 10px">
         ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}</div>
@@ -3746,7 +3755,7 @@ async function viewVirus(spId, taxid) {
     const C = commNow(), grouped = !!C.m, idx = new Map(nodes.map((d, n) => [d.id, n])), cm = grouped ? communitiesBy(C.m, nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]), C.seed) : nodes.map(() => 0);
     const csize = new Map(); nodes.forEach((d, n) => { d.c = cm[n]; csize.set(d.c, (csize.get(d.c) || 0) + 1); });
     const big = [...csize].filter(([c, sz]) => sz >= 3).map(([c]) => c).sort((a, b) => a - b);
-    const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : grouped && big.includes(d.c) && big.indexOf(d.c) < TAB10.length ? TAB10[big.indexOf(d.c)] : '#1A5276');
+    const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : !grouped ? '#1A5276' : big.includes(d.c) && big.indexOf(d.c) < TAB10.length ? TAB10[big.indexOf(d.c)] : SMALL_C);
     const center = new Map();   // each group's place: groups on a ring around the largest, spaced by their size
     if (grouped) { const R0 = Math.min(W, H) * 0.42; big.forEach((c, n) => { if (n === 0) center.set(c, [W / 2, H / 2]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [W / 2 + R0 * Math.cos(t), H / 2 + R0 * 0.8 * Math.sin(t)]); } }); }
     const home = (d) => center.get(d.c) || [W / 2, H / 2];
@@ -3783,7 +3792,7 @@ async function viewVirus(spId, taxid) {
       fitK = k; svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * (x0 + x1) / 2, H / 2 - k * (y0 + y1) / 2).scale(k)); });
     $('#vn-legend').innerHTML = (k ? `<span class="muted">${fmtInt(links.length)} of ${fmtInt(het.length)} edges drawn: each protein's ${k} strongest</span>` : '')
       + '<span><i style="background:linear-gradient(90deg, #C5CCD4, #1E2A38);height:4px;width:60px;border-radius:2px"></i>iLIS, 0.223 to 0.85+</span>'
-      + (grouped && big.length ? big.slice(0, TAB10.length).map((c, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(c))})</span>`).join('') + (big.length > TAB10.length ? `<span class="muted">+${big.length - TAB10.length} smaller communities in dark blue</span>` : '') : '')
+      + (grouped ? big.slice(0, TAB10.length).map((c, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(C.m, n + 1)} (${fmtInt(csize.get(c))})</span>`).join('') + (() => { const n = nodes.filter((d) => ccol(d) === SMALL_C).length; return n ? `<span><i style="background:${SMALL_C};border-radius:50%"></i>in a smaller ${C.m === 'cc' ? 'part' : 'community'} (${fmtInt(n)})</span>` : ''; })() : '')
       + `${homoKey(homo.size)}<span><i style="background:#C3CCD6;border-radius:50%"></i>no partner at this cutoff (${fmtInt(v.members.filter((i) => !deg.get(i)).length)})</span>`
       + `<span class="muted">counts at the network's cutoff, ${cut}% FPR${cut !== 10 ? '; the tiles above count at 10%' : ''}</span>`;   // the network opens at 5%, the tiles keep 10%
     svgExport($('#vn-x'), `atlas_virus_${v.taxid}_network`, () => $('svg', box));
@@ -3986,7 +3995,7 @@ async function viewNested(spId, q) {
     const links = []; for (const a of ids) for (const [b, e] of E.adj.get(a) || []) if (b > a && set.has(b) && e.best >= o.c) links.push({ a, b, e, r: Math.max(col(a), col(b)) });
     const cgrp = new Map(), csz = new Map(); let cbig = [];   // Communities: the proteins filled by community (groups of three or more), outlined by round
     if (S.cm) { const ix = new Map(ids.map((i, n) => [i, n])), cm = communitiesBy(S.cm, ids.length, links.map((l) => [ix.get(l.a), ix.get(l.b), l.e.best]), S.seed); cm.forEach((x) => csz.set(x, (csz.get(x) || 0) + 1));
-      cbig = [...csz].filter(([, z]) => z >= 3).sort((x, y) => y[1] - x[1] || x[0] - y[0]).map(([x]) => x); ids.forEach((i, n) => { const b = cbig.indexOf(cm[n]); if (b >= 0 && b < TAB10.length) cgrp.set(i, b); }); }
+      cbig = [...csz].filter(([, z]) => z >= 3).sort((x, y) => y[1] - x[1] || x[0] - y[0]).map(([x]) => x); ids.forEach((i, n) => { const b = cbig.indexOf(cm[n]); if (b >= 0) cgrp.set(i, b); }); }
     const byCol = d3.range(nc).map((k) => ids.filter((i) => col(i) === k)), y = new Map();
     byCol.forEach((xs) => xs.forEach((i, n) => y.set(i, (n + 1) / (xs.length + 1))));
     const nbs = new Map(ids.map((i) => [i, []])); for (const l of links) { nbs.get(l.a).push(l.b); nbs.get(l.b).push(l.a); }
@@ -3999,14 +4008,14 @@ async function viewNested(spId, q) {
       .on('mousemove', (ev, d) => showTip(`<b>${esc(gname(d.a))}</b> × <b>${esc(gname(d.b))}</b> · iLIS ${d.e.best.toFixed(3)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip)
       .on('click', (ev, d) => { hideTip(); location.hash = `#/${sp.id}/${sp.rows[d.a].key}/${sp.rows[d.b].key}`; });
     const many = ids.length > 90, node = g.append('g').selectAll('g').data(ids).join('g').attr('transform', (i) => `translate(${X(i)},${Y(i)})`).style('cursor', 'pointer');
-    node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : S.cm ? (cgrp.has(i) ? TAB10[cgrp.get(i)] : '#C3CCD6') : RC[Math.min(col(i), RC.length - 1)]))
+    node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : S.cm ? (cgrp.has(i) ? (cgrp.get(i) < TAB10.length ? TAB10[cgrp.get(i)] : SMALL_C) : '#C3CCD6') : RC[Math.min(col(i), RC.length - 1)]))
       .attr('stroke', (i) => RC[Math.min(col(i), RC.length - 1)]).attr('stroke-width', 1.6).attr('stroke-dasharray', (i) => (res.info.get(i) && res.info.get(i).hidden ? '2 2' : null));
     lab = node.append('text').attr('display', (i) => (!many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01) ? null : 'none')).text(gname).attr('x', 9).attr('dy', '0.32em').attr('font-size', 10.5)
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', (i) => (col(i) === 0 ? 700 : 600)).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3);
     node.on('mousemove', (ev, i) => { const x = res.info.get(i); showTip(`<b>${esc(gname(i))}</b> · ${col(i) === 0 ? 'bait' : `${x.hidden ? 'hidden, ' : ''}round ${x.r}`}${x ? `<br>${fmtInt(x.n)} connection${x.n === 1 ? '' : 's'} into the network · p ${x.p.toExponential(1)} · q ${x.q.toFixed(3)}` : ''}`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, i) => { location.hash = `#/${sp.id}/${sp.rows[i].key}`; });
     $('#ns-legend').innerHTML = RC.slice(0, nc).map((cc, k) => `<span><i style="${S.cm ? `background:#fff;border:2px solid ${cc}` : `background:${cc}`};border-radius:50%"></i>${k === 0 ? 'baits' : `round ${k}`} (${fmtInt(byCol[k].filter((i) => !(res.info.get(i) || {}).hidden).length)})</span>`).join('')
-      + (S.cm ? cbig.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(S.cm, n + 1)} (${fmtInt(csz.get(x))})</span>`).join('') + `<span><i style="background:#C3CCD6;border-radius:50%"></i>in no ${S.cm === 'cc' ? 'part' : 'community'} of three or more</span><span class="muted">fill: ${S.cm === 'cc' ? 'connected part' : 'community'}; outline and column: round</span>` : '')
+      + (S.cm ? cbig.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(S.cm, n + 1)} (${fmtInt(csz.get(x))})</span>`).join('') + smallKey(cbig.length - TAB10.length, S.cm === 'cc' ? 'parts' : 'communities') + `<span><i style="background:#C3CCD6;border-radius:50%"></i>in no ${S.cm === 'cc' ? 'part' : 'community'} of three or more</span><span class="muted">fill: ${S.cm === 'cc' ? 'connected part' : 'community'}; outline and column: round</span>` : '')
       + (showH && [...res.info.values()].some((x) => x.hidden) ? '<span><i style="background:#fff;border:1.5px dashed #5B6573;border-radius:50%"></i>hidden: below the rule</span>' : '') + (ids.length >= 400 ? '<span class="muted">capped at 400, kept by p, then connections</span>' : '');
     svgExport($('#ns-x'), `atlas_${sp.id}_nested`, () => $('svg', box));
   }
@@ -4611,21 +4620,21 @@ async function viewNetwork(spId, q) {
       const tx = hullTxt.filter((kk) => kk === k).attr('display', h ? null : 'none');
       if (h) { const top = h.reduce((a, b) => (b[1] < a[1] ? b : a)); const cx = d3.mean(h, (p) => p[0]); tx.attr('x', cx).attr('y', top[1] - 6); } }); };
     const dash = g.append('g').selectAll('line').data(extra).join('line').attr('stroke', kbCol).attr('stroke-opacity', 0.75).attr('stroke-width', 1.4).attr('stroke-dasharray', '5 4').style('cursor', 'pointer');
-    const halo = g.append('g').style('pointer-events', 'none').selectAll('line').data(links.filter((l) => l.cons)).join('line').attr('stroke', '#E0A526').attr('stroke-opacity', 0.5).attr('stroke-width', (d) => EWID(d.best) + 7).attr('stroke-linecap', 'round');   // conserved: a gold halo under the edge
+    const halo = g.append('g').style('pointer-events', 'none').selectAll('line').data(links.filter((l) => l.cons)).join('line').attr('stroke', '#F2C14E').attr('stroke-opacity', 0.8).attr('stroke-width', (d) => EWID(d.best) + 7).attr('stroke-linecap', 'round');   // conserved: a gold halo under the edge
     const xol = g.append('g').selectAll('line').data(xo).join('line').attr('stroke', '#1F8A80').attr('stroke-opacity', 0.85).attr('stroke-width', 1.6).attr('stroke-dasharray', '6 3').style('cursor', 'pointer');   // predicted only between the orthologs
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-width', (d) => EWID(d.best)).attr('stroke-linecap', 'round').style('cursor', 'pointer');
     const homo = new Set(nodes.filter((d) => { const e = (EB && EB.adj.get(d.id) || new Map()).get(d.id); return e && passE(e); }).map((d) => d.id));
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
       const byC = S.ncol === 'comm:' && groups.length && !catOrder, gOf = (d) => { const [a, b] = ends(d), x = gk.get(a); return x != null && x === gk.get(b) ? x : null; };   // as LIVIA's network page: an edge inside a community in its color, between communities light gray
-      link.attr('stroke', (d) => (st.hit(d) || !byC ? st.color(d) : gOf(d) != null ? GCOL(groups.indexOf(gOf(d))) : '#C7CED6')).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : byC ? (gOf(d) != null ? 0.75 : 0.35) : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
+      link.attr('stroke', (d) => (st.hit(d) || !byC || st.kb ? st.color(d) : gOf(d) != null ? GCOL(groups.indexOf(gOf(d))) : '#C7CED6')).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : byC && !st.kb ? (gOf(d) != null ? 0.75 : 0.35) : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
       const fo = (d) => FOLD.get(fkey(...ends(d)));
       dash.attr('stroke-dasharray', (d) => ((fo(d) || {}).st === 'none' ? '1.2 4.5' : '5 4')).attr('stroke-opacity', (d) => ((fo(d) || {}).st === 'none' ? 0.55 : 0.75));
       const nf = (s) => shownExtra.filter((d) => (fo(d) || {}).st === s).length, nck = shownExtra.filter((d) => fo(d)).length;
       const foldKey = shownExtra.length && nck ? `<div class="kbrow"><span class="muted">reported, not predicted (${fmtInt(shownExtra.length)}):</span><span><i class="kb-dash"></i>folded, scored below the cutoff (${fmtInt(nf('low'))})</span><span><i class="kb-dot"></i>never folded in these screens (${fmtInt(nf('none'))})</span>${nck < shownExtra.length ? `<span class="muted">not checked (${fmtInt(shownExtra.length - nck)})</span>` : ''}${nf('err') ? `<span class="muted">could not be checked (${fmtInt(nf('err'))})</span>` : ''}</div>` : '';
       const xoKey = XO ? `<div class="kbrow"><span class="muted">orthologs in ${XO.names}:</span><span><i class="kb-cons"></i>conserved: also predicted between the orthologs (${fmtInt(halo.size())})</span>${S.xo ? `<span><i class="kb-xo"></i>predicted only between the orthologs, ${S.xo === 'never' ? 'never folded here' : S.set ? 'not predicted in this scope' : 'not predicted here'} (${fmtInt(xo.length)})</span>` : ''}</div>` : '';
-      $('#nw-key').innerHTML = (byC ? `<div class="kbrow"><span class="muted">edges inside a ${S.grp === 'cc' ? 'connected part' : 'community'} in its color, between them light gray; width: best iLIS${st.kb ? '; BioGRID-reported pairs keep their colors' : ''}</span></div>` : edgeKey(st, K, links, shownExtra)) + foldKey + xoKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
+      $('#nw-key').innerHTML = (byC && !st.kb ? `<div class="kbrow"><span class="muted">edges inside a ${S.grp === 'cc' ? 'connected part' : 'community'} in its color, between them light gray; width: best iLIS</span></div>` : edgeKey(st, K, links, shownExtra)) + foldKey + xoKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
       const cb = $('#nw-check'); cb.style.display = shownExtra.length ? '' : 'none'; if (!cb.dataset.busy) cb.textContent = nck && nck === shownExtra.length ? 'Checked: which were folded' : 'Check which were folded'; };
     restyle();
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
@@ -4665,8 +4674,8 @@ async function viewNetwork(spId, q) {
     node.filter((d) => d.q).raise();
     // group names on the top layer, above edges and proteins, with a halo so a line under them doesn't cut the text
     const hullLabG = g.append('g').attr('class', 'nw-hull-labels').style('pointer-events', 'none'), hullTxt = hullLabG.selectAll('text').data(groups).join('text')
-      .text((k) => `${gname2.get(k) || k} (${fmtInt(gsize.get(k))})`).attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', 12).attr('font-weight', 700)
-      .attr('fill', (k, n) => GCOL(n)).attr('text-anchor', 'middle').attr('stroke', '#fff').attr('stroke-width', 3).attr('stroke-linejoin', 'round').attr('paint-order', 'stroke');
+      .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-size', 12).attr('font-weight', 700).attr('fill', '#17263A').attr('text-anchor', 'middle').attr('stroke', '#fff').attr('stroke-width', 3).attr('stroke-linejoin', 'round').attr('paint-order', 'stroke')
+      .each(function (k, n) { const t = d3.select(this); t.append('tspan').attr('fill', GCOL(n)).text('● '); t.append('tspan').text(`${gname2.get(k) || k} (${fmtInt(gsize.get(k))})`); });   // ink name, the group color on a dot: pale group colors are unreadable as text
     const recolor = () => { if (S.ncol === 'comm:' && groups.length && !catOrder) {   // proteins by community: groups below the outline size gray; proteins-of-interest stay larger
         node.select('circle.nfill').attr('fill', (d) => (gk.has(d.id) ? GCOL(groups.indexOf(gk.get(d.id))) : '#C3CCD6'));
         $('#nw-nkey').innerHTML = `<div class="kbrow"><span class="muted">proteins by ${S.grp === 'cc' ? 'connected part' : 'community'} (proteins-of-interest larger):</span>${groups.slice(0, 12).map((k, n) => `<span><i style="background:${GCOL(n)};width:10px;height:10px;border-radius:50%"></i>${esc(gname2.get(k) || k)} (${fmtInt(gsize.get(k))})</span>`).join('')}${groups.length > 12 ? `<span class="muted">+${groups.length - 12} more</span>` : ''}<span><i style="background:#C3CCD6;width:10px;height:10px;border-radius:50%"></i>in a smaller one</span></div>`; restyle(); return; }
@@ -4712,7 +4721,8 @@ async function viewNetwork(spId, q) {
       const k = Math.max(d3.zoomTransform(svg.node()).k, fitK * 2.2, 1.2);
       svg.transition().duration(550).call(zoom.transform, d3.zoomIdentity.translate(W / 2 - k * d.x, H / 2 - k * d.y).scale(k));
       g.selectAll('circle.nw-found').remove();
-      const ring = g.append('circle').attr('class', 'nw-found').attr('cx', d.x).attr('cy', d.y).attr('r', r(d) + 6).attr('fill', 'none').attr('stroke', '#E4572E').attr('stroke-width', 3).style('pointer-events', 'none');
+      const ring = g.append('circle').attr('class', 'nw-found').attr('cx', d.x).attr('cy', d.y).attr('r', r(d) + 6).attr('fill', 'none').attr('stroke', '#111').attr('stroke-width', 2.5).style('pointer-events', 'none');   // black on white: outside the community colors
+      g.insert('circle', 'circle.nw-found').attr('class', 'nw-found').attr('cx', d.x).attr('cy', d.y).attr('r', r(d) + 6).attr('fill', 'none').attr('stroke', '#fff').attr('stroke-width', 6).style('pointer-events', 'none').transition().delay(550).duration(900).attr('r', r(d) + 16).attr('stroke-opacity', 0.2).transition().duration(600).attr('r', r(d) + 6).attr('stroke-opacity', 1);
       ring.transition().delay(550).duration(900).attr('r', r(d) + 16).attr('stroke-opacity', 0.2).transition().duration(600).attr('r', r(d) + 6).attr('stroke-opacity', 1); };
     net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote, xo, XO };
     if (EXPECT) { const X = EXPECT; EXPECT = null; checkLoaded(X); }   // loaded settings: does this drawing match the saved one?

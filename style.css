@@ -108,6 +108,8 @@ a:hover { text-decoration: underline; }
 .runset.off { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
 .srcs.ovl { font-size: 13px; margin-top: 4px; }
 .kc { display: block; font-style: normal; font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--ink-3); letter-spacing: 0; margin-top: 1px; cursor: help; }   /* the iLIS cutoff under a count; its scope on hover */
+.bchip { display: inline-block; font-style: normal; font-size: 10.5px; font-weight: 600; line-height: 1.5; padding: 0 6px; border-radius: 8px; color: #fff; white-space: nowrap; vertical-align: 1px; }
+.bchip.b1 { background: var(--fpr1); } .bchip.b5 { background: var(--fpr5); } .bchip.b10 { background: var(--fpr10); } .bchip.b0 { background: var(--below); color: #17263A; }
 .kpi.f1 b { color: var(--fpr1-t); } .kpi.f5 b { color: var(--fpr5-t); } .kpi.f10 b { color: var(--fpr10-t); }
 .kc.t { font-family: inherit; cursor: auto; }
 .kc[data-tip] { text-decoration: underline dotted; text-underline-offset: 2px; text-decoration-color: color-mix(in srgb, currentColor 55%, transparent); }   /* tap, hover or focus for its scope */
@@ -281,7 +283,8 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .cchip i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 .cchip:hover { border-color: var(--blue); }
 .cchip.sel { background: var(--navy); border-color: var(--navy); color: #fff; }
-.cchip.off { opacity: 0.38; }
+.cchip.sel i { box-shadow: 0 0 0 1.5px #fff; }   /* a white edge, so a dark site color still shows on the navy */
+.cchip.off { color: var(--ink-3); border-style: dashed; } .cchip.off i { opacity: 0.35; }   /* left out: the dot fades, the label stays readable (5.0:1) */
 .cchip:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
 .plot { position: relative; min-height: 40px; }
 .plot canvas { display: block; }
@@ -295,9 +298,9 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .cl-row > i { width: 13px; height: 13px; border-radius: 3px; margin-top: 5px; }
 /* reported in BioGRID: a highlighter mark in the network's colors, light (physical red, genetic green, both purple) */
 .clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g, .kb-mark { padding: 1px 5px; border-radius: 4px; text-decoration: none; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
-.clinfo a.kb-p, #c-pt .pt td.g a.kb-p, .kb-mark.kb-p { background: #FBE0DF; }
-.clinfo a.kb-g, #c-pt .pt td.g a.kb-g, .kb-mark.kb-g { background: #DCEFDC; }
-.clinfo a.kb-p.kb-g, #c-pt .pt td.g a.kb-p.kb-g, .kb-mark.kb-p.kb-g { background: #EADFF3; }
+.clinfo a.kb-p, #c-pt .pt td.g a.kb-p, .kb-mark.kb-p { background: #DCEBF7; }   /* physical: light blue, genetic: light sand (the BioGRID edge blue and orange; apart with red-green color blindness) */
+.clinfo a.kb-g, #c-pt .pt td.g a.kb-g, .kb-mark.kb-g { background: #FBEBC8; }
+.clinfo a.kb-p.kb-g, #c-pt .pt td.g a.kb-p.kb-g, .kb-mark.kb-p.kb-g { background: linear-gradient(135deg, #DCEBF7 50%, #FBEBC8 50%); }   /* both: half of each */
 .legend i.kb-ring, .tl-name i.kb-ring { display: inline-block; flex: none; width: 11px; height: 11px; border-radius: 50%; border: 1.6px solid rgba(23, 38, 58, 0.6); background: none; box-sizing: border-box; }
 .tl-name i.kb-ring { width: 9px; height: 9px; border-width: 1.4px; }
 .legend .kb-toggle { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
@@ -518,15 +521,15 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .kbkey .kbrow i { display: inline-block; width: 26px; height: 4px; border-radius: 2px; }
 .kbkey .kbrow i.kb-dash { height: 0; border-top: 1.5px dashed #5B6573; border-radius: 0; }
 .kbkey .kbrow i.kb-dot { height: 0; border-top: 2px dotted #5B6573; border-radius: 0; opacity: 0.8; }
-.kbkey .kbrow i.kb-cons { height: 4px; background: #50637A; border-radius: 3px; box-shadow: 0 0 0 3.5px rgba(224, 165, 38, 0.5); }   /* conserved: an edge in its gold halo */
+.kbkey .kbrow i.kb-cons { height: 4px; background: #50637A; border-radius: 3px; box-shadow: 0 0 0 3.5px rgba(242, 193, 78, 0.8); }   /* conserved: an edge in its gold halo */
 .kbkey .kbrow i.kb-xo { height: 0; border-top: 1.6px dashed #1F8A80; border-radius: 0; }   /* predicted only between the orthologs */
 .kbkey .kbrow i.kb-grad { width: 70px; background: linear-gradient(90deg, #C5CCD4, #1E2A38); }
 
 #sites-answer a, .res-look a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in running text are not told apart by color alone */
 .muted a:not(.btn), footer a, .reading p a, .reading caption a, .reading li a, .crumbs a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }   /* links in notes and the footer */
 
-.kb-badge { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 4px 10px; border: 1px solid #E6B8BF; border-radius: 999px; background: #FDF1F3; color: #8E1B2C; font-size: 13px; font-weight: 600; text-decoration: none; }   /* a reported interaction: jumps to its references */
-.kb-badge:hover { background: #FAE3E7; }
+.kb-badge { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; padding: 4px 10px; border: 1px solid #A9CBE8; border-radius: 999px; background: #EAF3FB; color: #0B4F7C; font-size: 13px; font-weight: 600; text-decoration: none; }   /* a reported interaction: jumps to its references */
+.kb-badge:hover { background: #DCEBF7; }   /* the BioGRID blue family, apart from the partner's red-orange */
 .pt.ref-tbl { width: 100%; table-layout: fixed; }
 .pt.ref-tbl th:nth-child(1) { width: 90px; } .pt.ref-tbl th:nth-child(2) { width: 150px; } .pt.ref-tbl th:nth-child(4) { width: 170px; } .pt.ref-tbl th:nth-child(5) { width: 64px; }
 .pt.ref-tbl td.t, .pt.ref-tbl td.a { white-space: normal; line-height: 1.4; }
@@ -546,7 +549,7 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .pt th.sortable { cursor: pointer; }
 table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric: normal; } table.cuts tr.avg td, table.cuts tr.avg th { border-top: 0; }
 .clinfo a.kb-p, .clinfo a.kb-g { padding: 0 3px; margin: 0 -1px; }   /* in running lists, a tighter mark, so the comma stays next to the name */
-.clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g { color: #1A5276; }   /* a name on a reported-pair mark: the darker blue keeps 4.5:1 on the pink, green and violet */
+.clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g { color: #1A5276; }   /* a name on a reported-pair mark: the darker blue keeps 4.5:1 on the blue and the sand (6.9 and 7.1) */
 .kb-mark { color: var(--ink-2); }
 .inl a, .clinfo a, .clinfo a.kb-p, .clinfo a.kb-g { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); text-underline-offset: 2px; }   /* names in running lists: told apart from the text by more than color */
 
@@ -652,7 +655,7 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .orth-aln .aln-seq .id { background: #4A5361; color: #fff; }   /* identity in neutral grays: the site colors (any hue) stay apart from it */
 .orth-aln .aln-seq .sim { background: #D9DEE5; }
 .orth-aln .aln-seq .gap { color: var(--ink-3); }
-.orth-aln .aln-seq .hit { border-bottom-color: var(--c); }
+.orth-aln .aln-seq .hit { border-bottom-color: color-mix(in srgb, var(--c) 60%, #000); }   /* the site's color, darkened: at least 3:1 on white even for the pale site colors */
 .orth-aln .aln-seq .ins { box-shadow: inset -2px 0 0 #111; }   /* the ortholog has residues of its own after this one */
 .orth-sh { margin-top: 8px; font-size: 13.5px; }
 .orth-sh summary { cursor: pointer; padding: 2px 0; }
