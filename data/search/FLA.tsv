@@ -23,7 +23,7 @@ FLAB	helicobacter-pylori	Q07911	flaB	Q07911	2	13	Flagellin B
 FLAB1	methanocaldococcus-jannaschii	Q58301	flaB1	Q58301	0	1	Flagellin B1	
 FLAB2	methanocaldococcus-jannaschii	Q58302	flaB2	Q58302	0	1	Flagellin B2	
 FLAC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P96747	flaC	P96747	2	155	Secreted flagellin C	
-FLACC	fly	FBgn0030974	Flacc	Q9VWN4	19	109	Fl(2)d-associated complex component (Protein Xiong)	
+FLACC	fly	FBgn0030974	Flacc	Q9VWN4	18	108	Fl(2)d-associated complex component (Protein Xiong)	
 FLACC1	human	Q96Q35	FLACC1	Q96Q35	6	49	Flagellum-associated coiled-coil domain-containing protein 1	
 FLACC1	mus-musculus	Q8BVM7	Flacc1	Q8BVM7	0	1	Flagellum-associated coiled-coil domain-containing protein 1	
 FLAD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA11	flaD	Q0PA11	5	21	Flagellin	
@@ -37,7 +37,7 @@ FLAD2	fly	FBgn0032522	Flad2	Q9VJY1	1	3	FAD synthase (EC 2.7.7.2) (FAD pyrophosph
 FLAF	methanocaldococcus-jannaschii	Q58307	flaF	Q58307	1	4	Putative flagella-related protein F	
 FLAF1	human	O75400	PRPF40A	O75400	95	569		
 FLAG	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAW9	flaG	Q0PAW9	0	51	Flagellar protein	
-FLAG-TAG	fly	FLAG-tag	FLAG-tag		3	40		
+FLAG-TAG	fly	FLAG-tag	FLAG-tag		0	0		
 FLAGELLA	human	Q6TDU7	DNAI7	Q6TDU7	2	37	Dynein axonemal intermediate chain 7 (Cancer susceptibility 	w
 FLAGELLA	human	Q9C093	SPEF2	Q9C093	8	51	Sperm flagella and cilia-associated protein 2 (Protein KPL2)	w
 FLAGELLA	human	Q9ULG3	CFAP92	Q9ULG3	10	61	Uncharacterized protein CFAP92 (Putative cilia and flagella 	w
@@ -58,7 +58,7 @@ FLAGELLA-ASSOCIATED	fly	FBgn0034532	CG13436	A1ZBX0	1	3	Cilia- and flagella-assoc
 FLAGELLA-ASSOCIATED	fly	FBgn0034869	CG13558	Q9W1P1	0	7	Cilia- and flagella-associated protein 61 N-terminal domain-	w
 FLAGELLA-ASSOCIATED	fly	FBgn0035724	CG10064	Q9VS00	2	55	Cilia- and flagella-associated protein 52	w
 FLAGELLA-ASSOCIATED	fly	FBgn0036962	CG17122	Q9VWA6	1	7	Cilia- and flagella-associated protein 157	w
-FLAGELLA-ASSOCIATED	fly	FBgn0037162	CG11449	Q9VNU3	2	50	Cilia- and flagella-associated protein 45	w
+FLAGELLA-ASSOCIATED	fly	FBgn0037162	CG11449	Q9VNU3	2	48	Cilia- and flagella-associated protein 45	w
 FLAGELLA-ASSOCIATED	fly	FBgn0038122	Cfap299	Q9VFY6	0	0	Cilia- and flagella-associated protein 299	w
 FLAGELLA-ASSOCIATED	fly	FBgn0038170	CG14367	Q9VFS4	0	5	Cilia- and flagella-associated protein 36 (Coiled-coil domai	w
 FLAGELLA-ASSOCIATED	fly	FBgn0039490	CG5882	Q9VB72	0	1	Cilia- and flagella-associated protein 58 central coiled coi	w
@@ -164,8 +164,8 @@ FLAP-1	worm	Q8MQ17	flap-1	Q8MQ17	1	4	Leucine-rich repeat flightless-interacting 
 FLAP1	arabidopsis-thaliana	Q8RWI0	FLAP1	Q8RWI0	0	16	FLUCTUATING-LIGHT-ACCLIMATION protein 1, chloroplastic	
 FLAR	streptococcus-pneumoniae	Q8DQC8	flaR	Q8DQC8	0	7	Modulates DNA topology	
 FLARA3	human	Q9Y6Y0	IVNS1ABP	Q9Y6Y0	12	174		
-FLARE	fly	FBgn0260049	flr	Q9VU68	7	90	Actin-interacting protein 1 (AIP1) (Protein flare)	w
-FLASH	fly	FBgn0033806	FLASH	Q7K0L8	19	93	FLICE-associated huge protein, isoform A (FLICE-associated h	
+FLARE	fly	FBgn0260049	flr	Q9VU68	7	89	Actin-interacting protein 1 (AIP1) (Protein flare)	w
+FLASH	fly	FBgn0033806	FLASH	Q7K0L8	19	92	FLICE-associated huge protein, isoform A (FLICE-associated h	
 FLASH	human	Q9UKL3	CASP8AP2	Q9UKL3	21	136		
 FLATTOP	fly	FBgn0025612	CG3062	Q9W4I5	0	23	Protein Flattop homolog (Cilia- and flagella-associated prot	w
 FLATTOP	human	Q5VTH2	CFAP126	Q5VTH2	7	81	Protein Flattop (Cilia- and flagella-associated protein 126)	w
@@ -215,11 +215,11 @@ FLAVOHEMOPROTEIN	human	Q7L1T6	CYB5R4	Q7L1T6	6	76	Cytochrome b5 reductase 4 (EC 1
 FLAVOHEMOPROTEIN	yeast	P39676	YHB1	P39676	2	79	Flavohemoprotein	w
 FLAVOKINASE	fly	FBgn0014930	Rfk	O76206	1	12	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
 FLAVOKINASE	human	Q969G6	RFK	Q969G6	14	105	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
-FLAVOPROTEIN	fly	FBgn0010516	wal	Q7KN94	9	155	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
+FLAVOPROTEIN	fly	FBgn0010516	wal	Q7KN94	9	153	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
 FLAVOPROTEIN	fly	FBgn0031771	ND-51	Q9VMI3	5	98	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-FLAVOPROTEIN	fly	FBgn0034251	ND-51L1	A1ZAW7	8	96	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-FLAVOPROTEIN	fly	FBgn0036222	SdhAL	Q8SX97	6	72	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-FLAVOPROTEIN	fly	FBgn0039697	Etfb	Q0KHZ6	18	156	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
+FLAVOPROTEIN	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOPROTEIN	fly	FBgn0036222	SdhAL	Q8SX97	6	67	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+FLAVOPROTEIN	fly	FBgn0039697	Etfb	Q0KHZ6	18	136	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
 FLAVOPROTEIN	fly	FBgn0261439	SdhA	Q94523	13	95	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
 FLAVOPROTEIN	human	P13804	ETFA	P13804	35	342	Electron transfer flavoprotein subunit alpha, mitochondrial 	w
 FLAVOPROTEIN	human	P19404	NDUFV2	P19404	31	376	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondria	w

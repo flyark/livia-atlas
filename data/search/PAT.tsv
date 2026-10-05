@@ -75,7 +75,7 @@ PATATIN-LIKE	zebrafish	A1L2A9	pnpla7a	A1L2A9	1	18	Patatin-like phospholipase dom
 PATB	dictyostelium-discoideum	P54679	patB	P54679	0	1	Probable plasma membrane ATPase	
 PATCH	fly	FBgn0032169	CG4709	Q9VL59	1	9	Zinc finger CCCH-type with G patch domain-containing protein	w
 PATCH	fly	FBgn0034008	CG8152	Q9V7A7	1	5	G patch domain and ankyrin repeat-containing protein 1 homol	w
-PATCH	fly	FBgn0036386	CG8833	Q9VUA0	9	23	G patch domain-containing protein 1 homolog	w
+PATCH	fly	FBgn0036386	CG8833	Q9VUA0	8	17	G patch domain-containing protein 1 homolog	w
 PATCH	fly	FBgn0037490	CG10053	Q9VI83	1	7	G patch domain-containing protein 11 (Coiled-coil domain-con	w
 PATCH	fly	FBgn0039829	CG15561	Q9V9Z8	2	8	G patch domain-containing protein 4	w
 PATCH	human	O95872	GPANK1	O95872	19	134	G patch domain and ankyrin repeat-containing protein 1 (Anky	w
@@ -99,7 +99,7 @@ PATCH	zebrafish	G1K2G6	gpatch1	G1K2G6	9	37	G patch domain-containing 1	w
 PATCH	zebrafish	I3IS56	gpatch8	I3IS56	3	15	G patch domain-containing 8	w
 PATCH	zebrafish	Q6DGZ0	gpatch11	Q6DGZ0	5	109	G patch domain-containing protein 11	w
 PATCH	zebrafish	Q7SXW2	zgpat	Q7SXW2	0	1	Zinc finger CCCH-type with G patch domain-containing protein	w
-PATCHED	fly	FBgn0003892	ptc	P18502	11	174	Protein patched (Hedgehog receptor)	w
+PATCHED	fly	FBgn0003892	ptc	P18502	10	167	Protein patched (Hedgehog receptor)	w
 PATCHED	human	Q13635	PTCH1	Q13635	17	392	Protein patched homolog 1 (PTC) (PTC1)	w
 PATCHED	human	Q3KNS1	PTCHD3	Q3KNS1	2	60	Patched domain-containing protein 3 (Patched-related protein	w
 PATCHED	human	Q6ZW05	PTCHD4	Q6ZW05	3	11	Patched domain-containing protein 4 (p53-regulated patched p	w
@@ -172,9 +172,9 @@ PATHOLOGY	human	P31358	CD52	P31358	15	305	CAMPATH-1 antigen (CDw52) (Cambridge p
 PATHOLOGY	worm	A9D649	sut-1	A9D649	0	3	SUppressor of Tau pathology	w
 PATHOLOGY-2	human	Q6PJT7	ZC3H14	Q6PJT7	56	238	Zinc finger CCCH domain-containing protein 14 (Mammalian sup	w
 PATHW	human	O76076	CCN5	O76076	17	101	CCN family member 5 (Connective tissue growth factor-like pr	w
-PATHWAY	fly	FBgn0027363	Stam	Q9XTL2	326	1247	Jak pathway signal transduction adaptor molecule (LD02639p) 	w
+PATHWAY	fly	FBgn0027363	Stam	Q9XTL2	326	1245	Jak pathway signal transduction adaptor molecule (LD02639p) 	w
 PATHWAY	fly	FBgn0028436	ECSIT	Q9U6M0	4	32	Evolutionarily conserved signaling intermediate in Toll path	w
-PATHWAY	fly	FBgn0035060	Eps-15	Q9W111	65	374	Epidermal growth factor receptor pathway substrate clone 15,	w
+PATHWAY	fly	FBgn0035060	Eps-15	Q9W111	61	368	Epidermal growth factor receptor pathway substrate clone 15,	w
 PATHWAY	human	O75185	ATP2C2	O75185	2	44	Calcium-transporting ATPase type 2C member 2 (ATPase 2C2) (E	w
 PATHWAY	human	O95388	CCN4	O95388	21	195	CCN family member 4 (WNT1-inducible-signaling pathway protei	w
 PATHWAY	human	O95389	CCN6	O95389	6	46	Cellular communication network factor 6 (CCN family member 6	w
@@ -218,8 +218,8 @@ PATHWAY	zebrafish	Q08CK1	ecsit	Q08CK1	1	48	Evolutionarily conserved signaling in
 PATHWAY	zebrafish	Q1WCN6	tfpi2	Q1WCN6	6	20	Tissue factor pathway inhibitor	w
 PATHWAY	zebrafish	Q7SZ61	gps2	Q7SZ61	10	107	G protein pathway suppressor 2	w
 PATHWAYS	human	Q86WV5	TEN1	Q86WV5	8	188	CST complex subunit TEN1 (Protein telomeric pathways with ST	w
-PATJ	fly	FBgn0067864	Patj	Q9NB04	16	68	Patj homolog	w
-PATJ	fly	FBgn0067864	Patj	Q9NB04	16	68	Patj homolog	w
+PATJ	fly	FBgn0067864	Patj	Q9NB04	14	61	Patj homolog	w
+PATJ	fly	FBgn0067864	Patj	Q9NB04	14	61	Patj homolog	w
 PATJ	human	Q8NI35	PATJ	Q8NI35	22	110	InaD-like protein (Inadl protein) (hINADL) (Channel-interact	
 PATL1	arabidopsis-thaliana	Q56WK6	PATL1	Q56WK6	0	8	Patellin-1	
 PATL1	human	Q86TB9	PATL1	Q86TB9	40	219	Protein PAT1 homolog 1 (PAT1-like protein 1) (Protein PAT1 h	
@@ -235,23 +235,23 @@ PATL2	zebrafish	E7FAC4	patl2	E7FAC4	5	73	PAT1 homolog 2
 PATL2_HUMAN	human	C9JE40	PATL2	C9JE40	4	47		
 PATL3	arabidopsis-thaliana	Q56Z59	PATL3	Q56Z59	0	6	Patellin-3	
 PATL4	arabidopsis-thaliana	Q94C59	PATL4	Q94C59	2	8	Patellin-4	
-PATR-1	fly	FBgn0266053	Patr-1	Q9VEN9	15	108	Protein associated with topo II related-1, isoform A (Protei	
+PATR-1	fly	FBgn0266053	Patr-1	Q9VEN9	11	89	Protein associated with topo II related-1, isoform A (Protei	
 PATR-1	worm	Q20374	patr-1	Q20374	2	32	Protein PAT1 homolog 1	
-PATR-1_594	fly	FBgn0266053	Patr-1	Q9VEN9	15	108		
+PATR-1_594	fly	FBgn0266053	Patr-1	Q9VEN9	11	89		
 PATROL1	arabidopsis-thaliana	Q8RX56	PATROL1	Q8RX56	1	19	Protein unc-13 homolog	
-PATRONIN	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44	Patronin, isoform I	w
-PATRONIN	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44	Patronin, isoform I	w
+PATRONIN	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25	Patronin, isoform I	w
+PATRONIN	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25	Patronin, isoform I	w
 PATRONIN	worm	U4PAZ9	ptrn-1	U4PAZ9	1	5	Patronin (microtubule-binding protein) homolog	w
-PATRONIN_1064	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_1352	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_1398	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_1424	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_312	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_437	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_460	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_462	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_513	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
-PATRONIN_933	fly	FBgn0263197	Patronin	A0A0B4KEY4	14	44		
+PATRONIN_1064	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_1352	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_1398	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_1424	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_312	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_437	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_460	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_462	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_513	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
+PATRONIN_933	fly	FBgn0263197	Patronin	A0A0B4KEY4	2	25		
 PATSAS	fly	FBgn0029137	Patsas	Q9VKB1	0	16	Patsas	w
 PATSAS	fly	FBgn0029137	Patsas	Q9VKB1	0	16	Patsas	w
 PATT1	human	Q86UY6	NAA40	Q86UY6	176	1067		
@@ -262,7 +262,7 @@ PATTERNING	fly	FBgn0003463	sog	Q24025	159	2404	Dorsal-ventral patterning protein
 PATTERNING	fly	FBgn0003719	tld	P25723	2	27	Dorsal-ventral patterning protein tolloid (EC 3.4.24.-)	w
 PATTERNING	fly	FBgn0051721	Trim9	M9MRI4	4	34	E3 ubiquitin-protein ligase TRIM9 (EC 2.3.2.27) (Anomalies i	w
 PATTERNING	zebrafish	O57460	tll1	O57460	1	5	Dorsal-ventral patterning tolloid-like protein 1	w
-PATUFET	fly	FBgn0261270	Sps1	O18373	2	90	Inactive selenide, water dikinase-like protein (Protein patu	w
+PATUFET	fly	FBgn0261270	Sps1	O18373	2	87	Inactive selenide, water dikinase-like protein (Protein patu	w
 PATZ	escherichia-coli-83333	P76594	patZ	P76594	0	11	Peptidyl-lysine N-acetyltransferase PatZ	
 PATZ	human	Q9HBE1	PATZ1	Q9HBE1	36	229		
 PATZ1	human	Q9HBE1	PATZ1	Q9HBE1	36	229	POZ-, AT hook-, and zinc finger-containing protein 1 (BTB/PO	

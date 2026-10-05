@@ -26,6 +26,32 @@
     "fpr5": 0.339,
     "fpr1": 0.551
    }
+  },
+  "scores": {
+   "version": "0.1.5",
+   "note": "Scores computed with lis.py (AFM-LIS).",
+   "paeCutoff": 12,
+   "cbCutoff": 8,
+   "columnsAppended": [
+    "pLDDT",
+    "LIpLDDT",
+    "cLIpLDDT",
+    "pDockQ",
+    "LIpDockQ",
+    "pDockQ2_i",
+    "pDockQ2_j",
+    "pDockQ2",
+    "LIpDockQ2_i",
+    "LIpDockQ2_j",
+    "LIpDockQ2"
+   ],
+   "columnsFilledInPlace": [
+    "model",
+    "ipSAE",
+    "actifpTM"
+   ],
+   "structureFile": "left empty: the source value is a local absolute path",
+   "publishedCellsUnchanged": true
   }
  },
  "counts": {

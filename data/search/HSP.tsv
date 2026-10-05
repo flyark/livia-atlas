@@ -24,7 +24,7 @@ HSP-43	worm	B0M0L8	hsp-43	B0M0L8	0	3	SHSP domain-containing protein
 HSP-6	worm	P11141	hsp-6	P11141	30	170	Heat shock protein hsp-6	w
 HSP-6	worm	P11141	hsp-6	P11141	30	170	Heat shock protein hsp-6	w
 HSP-60	fly	FBgn0011244	Hsp60B	Q9VPS5	9	74	60 kDa heat shock protein homolog 1, mitochondrial (60 kDa c	w
-HSP-60	fly	FBgn0031728	Hsp60C	Q9VMN5	3	62	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	w
+HSP-60	fly	FBgn0031728	Hsp60C	Q9VMN5	3	59	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	w
 HSP-60	human	P10809	HSPD1	P10809	31	1230	60 kDa heat shock protein, mitochondrial (EC 5.6.1.7) (60 kD	w
 HSP-60	worm	P50140	hsp-60	P50140	2	93	Chaperonin homolog Hsp-60, mitochondrial	w
 HSP-60	worm	P50140	hsp-60	P50140	2	93	Chaperonin homolog Hsp-60, mitochondrial	w
@@ -41,7 +41,7 @@ HSP104	candida-albicans-237561	A0A1D8PTP9	HSP104	A0A1D8PTP9	6	26	Chaperone ATPas
 HSP104	schizosaccharomyces-pombe	O94641	hsp104	O94641	4	24	Heat shock protein 104	
 HSP104	yeast	P31539	HSP104	P31539	11	110	Heat shock protein 104	
 HSP105	human	Q92598	HSPH1	Q92598	36	481		
-HSP110	fly	FBgn0026418	Hsp110	M9MSL3	32	349	Hsc70Cb, isoform G (Hsc70Cb, isoform H)	
+HSP110	fly	FBgn0026418	Hsp110	M9MSL3	30	339	Hsc70Cb, isoform G (Hsc70Cb, isoform H)	
 HSP110	human	Q92598	HSPH1	Q92598	36	481		
 HSP12	candida-albicans-237561	A0A1D8PNC7	HSP12	A0A1D8PNC7	0	4	Hsp12p	
 HSP12	yeast	P22943	HSP12	P22943	0	15	12 kDa heat shock protein	
@@ -83,32 +83,32 @@ HSP1_HUMAN	human	P04553	PRM1	P04553	15	76
 HSP21	arabidopsis-thaliana	P31170	HSP21	P31170	3	24	Heat shock protein 21, chloroplastic	
 HSP21	candida-albicans-237561	Q5AHH4	HSP21	Q5AHH4	0	5	Small heat shock protein 21	
 HSP21.9	oryza-sativa-subsp-japonica	Q53M11	HSP21.9	Q53M11	2	3	21.9 kDa heat shock protein	
-HSP22	fly	FBgn0001223	Hsp22	P02515	7	53	Heat shock protein 22	
+HSP22	fly	FBgn0001223	Hsp22	P02515	7	52	Heat shock protein 22	
 HSP22	glycine-max	P09887	HSP22	P09887	1	15	Small heat shock protein, chloroplastic	
 HSP22	human	Q9UJY1	HSPB8	Q9UJY1	29	256		
 HSP22	zea-mays	O64960	hsp22	O64960	0	3	23.6 kDa heat shock protein mitochondrial	
 HSP22.0	arabidopsis-thaliana	Q38806	HSP22.0	Q38806	3	8	22.0 kDa heat shock protein	
 HSP22.0	glycine-max	P30236	HSP22.0	P30236	0	5	22.0 kDa class IV heat shock protein	
 HSP22.5	glycine-max	A0A0R4J5L7	HSP22.5	A0A0R4J5L7	1	5	Uncharacterized protein	
-HSP22_152	fly	FBgn0001223	Hsp22	P02515	7	53		
-HSP23	fly	FBgn0001224	Hsp23	P02516	14	151	Heat shock protein 23	
+HSP22_152	fly	FBgn0001223	Hsp22	P02515	7	52		
+HSP23	fly	FBgn0001224	Hsp23	P02516	14	145	Heat shock protein 23	
 HSP23.2	oryza-sativa-subsp-japonica	Q7XUW5	HSP23.2	Q7XUW5	3	13	23.2 kDa heat shock protein	
 HSP23.5	arabidopsis-thaliana	Q9FGM9	HSP23.5	Q9FGM9	2	2	23.5 kDa heat shock protein, mitochondrial	
 HSP23.6	arabidopsis-thaliana	Q96331	HSP23.6	Q96331	6	43	23.6 kDa heat shock protein, mitochondrial	
 HSP23.6	oryza-sativa-subsp-japonica	B7EZJ7	HSP23.6	B7EZJ7	0	2	23.6 kDa heat shock protein, mitochondrial	
 HSP24.1	oryza-sativa-subsp-japonica	Q6Z7V2	HSP24.1	Q6Z7V2	1	2	24.1 kDa heat shock protein, mitochondrial	
-HSP26	fly	FBgn0001225	Hsp26	P02517	16	140	Heat shock protein 26	
+HSP26	fly	FBgn0001225	Hsp26	P02517	11	131	Heat shock protein 26	
 HSP26	yeast	P15992	HSP26	P15992	2	84	Heat shock protein 26	
 HSP26	zea-mays	Q41815	HSP26	Q41815	3	11	Heat shock protein 26	
 HSP26-A	glycine-max	P32110	HSP26-A	P32110	4	39	Probable glutathione S-transferase	
 HSP26.2	oryza-sativa-subsp-japonica	Q67X83	HSP26.2	Q67X83	0	1	26.2 kDa heat shock protein, mitochondrial	
 HSP26.5	arabidopsis-thaliana	Q9SSQ8	HSP26.5	Q9SSQ8	1	7	26.5 kDa heat shock protein, mitochondrial	
 HSP26.7	oryza-sativa-subsp-japonica	Q10P60	HSP26.7	Q10P60	1	3	26.7 kDa heat shock protein, chloroplastic	
-HSP27	fly	FBgn0289994	Hsp27	P02518	10	110	Heat shock protein 27	
+HSP27	fly	FBgn0289994	Hsp27	P02518	10	106	Heat shock protein 27	
 HSP27	human	P04792	HSPB1	P04792	46	693		
 HSP27	human	Q12988	HSPB3	Q12988	15	243		
 HSP27	human	Q15424	SAFB	Q15424	71	294	Scaffold attachment factor B1 (SAF-B) (SAF-B1) (HSP27 estrog	w
-HSP27_58	fly	FBgn0289994	Hsp27	P02518	10	110		
+HSP27_58	fly	FBgn0289994	Hsp27	P02518	10	106		
 HSP28	human	P04792	HSPB1	P04792	46	693		
 HSP30	cladophialophora-carrionii	A0A1C1CDF6	hsp30	A0A1C1CDF6	0	5	30 kDa heat shock protein	
 HSP30	cladophialophora-carrionii	A0A1C1CUY6	hsp30	A0A1C1CUY6	0	5	30 kDa heat shock protein	
@@ -146,20 +146,20 @@ HSP47	human	P50454	SERPINH1	P50454	55	491
 HSP60	candida-albicans-237561	O74261	HSP60	O74261	1	40	Heat shock protein 60, mitochondrial	
 HSP60	cladophialophora-carrionii	A0A1C1CAQ8	hsp60	A0A1C1CAQ8	3	58	Heat shock protein 60	
 HSP60	fly	FBgn0011244	Hsp60B	Q9VPS5	9	74	60 kDa heat shock protein homolog 1, mitochondrial (60 kDa c	w
-HSP60	fly	FBgn0031728	Hsp60C	Q9VMN5	3	62	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	w
+HSP60	fly	FBgn0031728	Hsp60C	Q9VMN5	3	59	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	w
 HSP60	human	P10809	HSPD1	P10809	31	1230		
 HSP60	human	Q0VDF9	HSPA14	Q0VDF9	26	192		
 HSP60	paracoccidioides-lutzii	O60008	HSP60	O60008	3	48	Heat shock protein 60, mitochondrial	
 HSP60	schizosaccharomyces-pombe	Q09864	hsp60	Q09864	2	72	Heat shock protein 60, mitochondrial	
 HSP60	yeast	P19882	HSP60	P19882	5	186	Heat shock protein 60, mitochondrial	
-HSP60A	fly	FBgn0015245	Hsp60A	O02649	7	139	Heat shock protein 60A	
-HSP60A_58_59	fly	FBgn0015245	Hsp60A	O02649	7	139		
+HSP60A	fly	FBgn0015245	Hsp60A	O02649	6	131	Heat shock protein 60A	
+HSP60A_58_59	fly	FBgn0015245	Hsp60A	O02649	6	131		
 HSP60B	fly	FBgn0011244	Hsp60B	Q9VPS5	9	74	60 kDa heat shock protein homolog 1, mitochondrial (60 kDa c	
-HSP60C	fly	FBgn0031728	Hsp60C	Q9VMN5	3	62	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	
+HSP60C	fly	FBgn0031728	Hsp60C	Q9VMN5	3	59	60 kDa heat shock protein homolog 2, mitochondrial (60 kDa c	
 HSP60D	fly	FBgn0032525	Hsp60D	Q9VJX7	28	397	AT04835p (Heat shock protein 60D, isoform A) (Heat shock pro	
 HSP67BA	fly	FBgn0001227	Hsp67Ba	P05812	5	36	Heat shock protein 67B1	
 HSP67BC	fly	FBgn0001229	Hsp67Bc	P22979	6	22	Heat shock protein 67B3 (Heat shock 18 kDa protein)	
-HSP68	fly	FBgn0001230	Hsp68	O97125	33	124	Heat shock protein 68	
+HSP68	fly	FBgn0001230	Hsp68	O97125	33	123	Heat shock protein 68	
 HSP70	brugia-malayi	P27541	HSP70	P27541	22	113	Heat shock 70 kDa protein	
 HSP70	candida-albicans-237561	P41797	HSP70	P41797	24	52	Heat shock protein HSP70	
 HSP70	dracunculus-medinensis	D7RTV6	HSP70	D7RTV6	45	289	Heat shock protein 70	
@@ -189,12 +189,12 @@ HSP70-5	arabidopsis-thaliana	Q9S9N1	HSP70-5	Q9S9N1	53	151	Heat shock 70 kDa prot
 HSP70-6	arabidopsis-thaliana	Q9STW6	HSP70-6	Q9STW6	67	260	Heat shock 70 kDa protein 6, chloroplastic	
 HSP70-7	arabidopsis-thaliana	Q9LTX9	HSP70-7	Q9LTX9	71	248	Heat shock 70 kDa protein 7, chloroplastic	
 HSP70-8	arabidopsis-thaliana	Q9SKY8	HSP70-8	Q9SKY8	30	139	Heat shock 70 kDa protein 8	
-HSP70-87A7	fly	FBgn0013275	Hsp70Aa	P02825	54	214	Major heat shock 70 kDa protein Ab (Heat shock protein 70Ab)	w
+HSP70-87A7	fly	FBgn0013275	Hsp70Aa	P02825	54	212	Major heat shock 70 kDa protein Ab (Heat shock protein 70Ab)	w
 HSP70-87A7	fly	FBgn0013276	Hsp70Ab	P02825	15	88	Major heat shock 70 kDa protein Ab (Heat shock protein 70Ab)	w
-HSP70-87C1	fly	FBgn0013277	Hsp70Ba	Q8INI8	19	102	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	w
+HSP70-87C1	fly	FBgn0013277	Hsp70Ba	Q8INI8	19	100	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	w
 HSP70-87C1	fly	FBgn0013278	Hsp70Bb	Q8INI8	17	80	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	w
-HSP70-87C1	fly	FBgn0013279	Hsp70Bc	Q8INI8	41	133	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	w
-HSP70-87C1	fly	FBgn0051354	Hsp70Bbb	Q9VG58	44	154	Major heat shock 70 kDa protein Bbb (Heat shock protein 70Bb	w
+HSP70-87C1	fly	FBgn0013279	Hsp70Bc	Q8INI8	41	130	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	w
+HSP70-87C1	fly	FBgn0051354	Hsp70Bbb	Q9VG58	44	152	Major heat shock 70 kDa protein Bbb (Heat shock protein 70Bb	w
 HSP70-9	arabidopsis-thaliana	Q8GUM2	HSP70-9	Q8GUM2	62	221	Heat shock 70 kDa protein 9, mitochondrial	
 HSP70-BINDING	human	A6NLP5	TTC36	A6NLP5	9	49	Tetratricopeptide repeat protein 36 (TPR repeat protein 36) 	w
 HSP70-BINDING	human	Q9NZL4	HSPBP1	Q9NZL4	67	623	Hsp70-binding protein 1 (HspBP1) (Heat shock protein-binding	w
@@ -208,14 +208,14 @@ HSP70.1	zebrafish	B0UXS6	hsp70.1	B0UXS6	35	196	Heat shock cognate 71 kDa protein
 HSP70.2	zebrafish	B0UXR9	hsp70.2	B0UXR9	39	187	Heat shock cognate 71 kDa protein	
 HSP70.3	zebrafish	Q6PH56	hsp70.3	Q6PH56	45	203	Heat shock cognate 71 kDa protein	
 HSP70.4	leishmania-infantum	A4I253	HSP70.4	A4I253	9	44	Heat shock 70 kDa protein	
-HSP70AA	fly	FBgn0013275	Hsp70Aa	P02825	54	214	Major heat shock 70 kDa protein Ab (Heat shock protein 70Ab)	
+HSP70AA	fly	FBgn0013275	Hsp70Aa	P02825	54	212	Major heat shock 70 kDa protein Ab (Heat shock protein 70Ab)	
 HSP70AB	fly	FBgn0013276	Hsp70Ab	P02825	15	88	Major heat shock 70 kDa protein Ab (Heat shock protein 70Ab)	
 HSP70B	human	P48741	HSPA7	P48741	6	58		
 HSP70B'	human	P17066	HSPA6	P17066	92	711		
-HSP70BA	fly	FBgn0013277	Hsp70Ba	Q8INI8	19	102	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	
+HSP70BA	fly	FBgn0013277	Hsp70Ba	Q8INI8	19	100	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	
 HSP70BB	fly	FBgn0013278	Hsp70Bb	Q8INI8	17	80	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	
-HSP70BBB	fly	FBgn0051354	Hsp70Bbb	Q9VG58	44	154	Major heat shock 70 kDa protein Bbb (Heat shock protein 70Bb	
-HSP70BC	fly	FBgn0013279	Hsp70Bc	Q8INI8	41	133	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	
+HSP70BBB	fly	FBgn0051354	Hsp70Bbb	Q9VG58	44	152	Major heat shock 70 kDa protein Bbb (Heat shock protein 70Bb	
+HSP70BC	fly	FBgn0013279	Hsp70Bc	Q8INI8	41	130	Major heat shock 70 kDa protein Ba (Heat shock protein 70Ba)	
 HSP70L1	human	Q0VDF9	HSPA14	Q0VDF9	26	192		
 HSP70RY	human	P34932	HSPA4	P34932	95	1078	Heat shock 70 kDa protein 4 (HSP70RY) (Heat shock 70-related	w
 HSP72	human	P0DMV8	HSPA1A	P0DMV8	68	588		
@@ -237,14 +237,14 @@ HSP81-2	oryza-sativa-subsp-japonica	Q69QQ6	HSP81-2	Q69QQ6	55	385	Heat shock prot
 HSP81-3	oryza-sativa-subsp-japonica	Q07078	HSP81-3	Q07078	54	378	Heat shock protein 81-3	
 HSP82	yeast	P02829	HSP82	P02829	24	388	ATP-dependent molecular chaperone HSP82	
 HSP82	zea-mays	Q08277	HSP82	Q08277	17	199	Heat shock protein 82	
-HSP83	fly	FBgn0001233	Hsp83	P02828	41	468	Heat shock protein 83 (HSP 82)	
+HSP83	fly	FBgn0001233	Hsp83	P02828	39	454	Heat shock protein 83 (HSP 82)	
 HSP83	leishmania-infantum	E9AHM8	HSP83	E9AHM8	14	126	Heat shock protein 83-1	
 HSP83-2	leishmania-infantum	E9AHM9	HSP83-2	E9AHM9	16	126	Heat shock protein 83-1	
 HSP84	human	P08238	HSP90AB1	P08238	129	1917	Heat shock protein HSP 90-beta (HSP 90) (Heat shock 84 kDa) 	w
 HSP86	human	P07900	HSP90AA1	P07900	125	1402	Heat shock protein HSP 90-alpha (EC 3.6.4.10) (Heat shock 86	w
 HSP9	schizosaccharomyces-pombe	P50519	hsp9	P50519	0	8	Heat shock protein hsp9	
 HSP90	candida-albicans-237561	P46598	HSP90	P46598	15	116	Heat shock protein 90 homolog	
-HSP90	fly	FBgn0011573	Cdc37	Q24276	27	141	Hsp90 co-chaperone Cdc37 (Hsp90 chaperone protein kinase-tar	w
+HSP90	fly	FBgn0011573	Cdc37	Q24276	22	134	Hsp90 co-chaperone Cdc37 (Hsp90 chaperone protein kinase-tar	w
 HSP90	human	O95801	TTC4	O95801	52	214	Hsp70/Hsp90 co-chaperone CNS1 homolog (Tetratricopeptide rep	w
 HSP90	human	Q15185	PTGES3	Q15185	62	537	Prostaglandin E synthase 3 (EC 5.3.99.3) (Cytosolic prostagl	w
 HSP90	human	Q16543	CDC37	Q16543	90	679	Hsp90 co-chaperone Cdc37 (Hsp90 chaperone protein kinase-tar	w

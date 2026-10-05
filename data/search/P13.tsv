@@ -7,7 +7,7 @@ P130	yeast	P39936	TIF4632	P39936	17	127	Eukaryotic initiation factor 4F subunit 
 P13000	escherichia-coli-83333	P13000	bioD1	P13000	1	1	ATP-dependent dethiobiotin synthetase BioD 1	
 P13001	escherichia-coli-83333	P13001	bioH	P13001	0	13	Pimeloyl-	
 P13002	fly	FBgn0259211	grh	P13002	28	130	Protein grainyhead (DNA-binding protein ELF-1) (Element I-bi	
-P13008	fly	FBgn0261597	RpS26	P13008	48	309	Small ribosomal subunit protein eS26 (40S ribosomal protein 	
+P13008	fly	FBgn0261597	RpS26	P13008	46	299	Small ribosomal subunit protein eS26 (40S ribosomal protein 	
 P13009	escherichia-coli-83333	P13009	metH	P13009	0	4	Methionine synthase	
 P13010	human	P13010	XRCC5	P13010	72	641	DNA repair protein Ku80 (EC 4.2.99.18) (EC 5.6.2.4) (86 kDa 	
 P13011	mus-musculus	P13011	Scd2	P13011	0	2	Stearoyl-CoA desaturase 2	
@@ -26,7 +26,7 @@ P13053	rattus-norvegicus	P13053	Vdr	P13053	12	30	Vitamin D3 receptor
 P13054	fly	FBgn0001323	knrl	P13054	107	365	Knirps-related protein (Nuclear receptor subfamily 0 group A	
 P13055	fly	FBgn0000568	Eip75B	P13055	117	396	Ecdysone-induced protein 75B, isoform B (E75-C) (Nuclear rec	
 P13056	human	P13056	NR2C1	P13056	42	121	Nuclear receptor subfamily 2 group C member 1 (Orphan nuclea	
-P13060	fly	FBgn0000559	eEF2	P13060	8	371	Eukaryotic translation elongation factor 2 (EC 3.6.5.-) (Elo	
+P13060	fly	FBgn0000559	eEF2	P13060	7	359	Eukaryotic translation elongation factor 2 (EC 3.6.5.-) (Elo	
 P13073	human	P13073	COX4I1	P13073	32	534	Cytochrome c oxidase subunit 4 isoform 1, mitochondrial (Cyt	
 P13084	rattus-norvegicus	P13084	Npm1	P13084	2	61	Nucleophosmin	
 P13086	rattus-norvegicus	P13086	Suclg1	P13086	2	41	Succinate--CoA ligase	
@@ -38,8 +38,8 @@ P13096	fly	FBgn0002631	E(spl)m5-HLH	P13096	39	400	Enhancer of split m5 protein (
 P13097	fly	FBgn0002633	E(spl)m7-HLH	P13097	55	412	Enhancer of split m7 protein (E(spl)m7)	
 P13098	fly	FBgn0000591	E(spl)m8-HLH	P13098	71	429	Enhancer of split m8 protein (E(spl)m8)	
 P13099	yeast	P13099	TOP3	P13099	3	25	DNA topoisomerase 3	
-P130CAS	fly	FBgn0035101	p130CAS	A4IJ58	14	102	IP17195p (P130CAS, isoform D)	w
-P130CAS	fly	FBgn0035101	p130CAS	A4IJ58	14	102	IP17195p (P130CAS, isoform D)	w
+P130CAS	fly	FBgn0035101	p130CAS	A4IJ58	14	100	IP17195p (P130CAS, isoform D)	w
+P130CAS	fly	FBgn0035101	p130CAS	A4IJ58	14	100	IP17195p (P130CAS, isoform D)	w
 P130CAS	human	P56945	BCAR1	P56945	177	576	Breast cancer anti-estrogen resistance protein 1 (CRK-associ	w
 P130CAS-ASSOCIATED	human	Q9C0H9	SRCIN1	Q9C0H9	64	212	SRC kinase signaling inhibitor 1 (SNAP-25-interacting protei	w
 P13104	zebrafish	P13104	tpma	P13104	7	47	Tropomyosin alpha-1 chain	
@@ -80,7 +80,7 @@ P13297	mus-musculus	P13297	Msx1	P13297	10	40	Homeobox protein MSX-1
 P13298	yeast	P13298	URA5	P13298	2	16	Orotate phosphoribosyltransferase 1	
 P13346	mus-musculus	P13346	Fosb	P13346	19	30	Protein FosB	
 P13349	human	P13349	MYF5	P13349	119	441	Myogenic factor 5 (Myf-5) (Class C basic helix-loop-helix pr	
-P13360	fly	FBgn0004618	gl	A0A0B4KGX3	69	375		
+P13360	fly	FBgn0004618	gl	A0A0B4KGX3	69	374		
 P13365	yeast	P13365	CLN3	P13365	9	31	G1/S-specific cyclin CLN3	
 P13366	mus-musculus	P13366	Gzmg	P13366	0	5	Granzyme G	
 P13367	mycobacterium-leprae	P13367	sodA	P13367	0	98	Superoxide dismutase	
@@ -105,15 +105,15 @@ P13444	rattus-norvegicus	P13444	Mat1a	P13444	1	5	S-adenosylmethionine synthase i
 P13445	escherichia-coli-83333	P13445	rpoS	P13445	2	25	RNA polymerase sigma factor RpoS	
 P13458	escherichia-coli-83333	P13458	sbcC	P13458	2	22	Nuclease SbcCD subunit C	
 P13466	dictyostelium-discoideum	P13466	abpC	P13466	0	21	Gelation factor	
-P13468	fly	FBgn0000810	fs(1)K10	P13468	7	64	DNA-binding protein K10 (Female sterile protein K10)	
-P13469	fly	FBgn0002780	mod	P13469	12	136	DNA-binding protein modulo	
+P13468	fly	FBgn0000810	fs(1)K10	P13468	7	61	DNA-binding protein K10 (Female sterile protein K10)	
+P13469	fly	FBgn0002780	mod	P13469	5	124	DNA-binding protein modulo	
 P13471	rattus-norvegicus	P13471	Rps14	P13471	27	624	Small ribosomal subunit protein uS11	
 P13473	human	P13473	LAMP2	P13473	26	620	Lysosome-associated membrane glycoprotein 2 (LAMP-2) (Lysoso	
 P13482	escherichia-coli-83333	P13482	treA	P13482	0	1	Periplasmic trehalase	
 P13483	yeast	P13483	DAT1	P13483	0	4	Oligo(A)/oligo(T)-binding protein	
 P13489	human	P13489	RNH1	P13489	11	318	Ribonuclease inhibitor (Placental ribonuclease inhibitor) (P	
 P13492	schistosoma-mansoni	P13492	?	P13492	0	23	Antigen 10-3	
-P13496	fly	FBgn0001108	DCTN1-p150	P13496	21	102	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	
+P13496	fly	FBgn0001108	DCTN1-p150	P13496	13	87	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	
 P13497	human	P13497	BMP1	P13497	21	256	Bone morphogenetic protein 1 (BMP-1) (EC 3.4.24.19) (Mammali	
 P13498	human	P13498	CYBA	P13498	17	188	Cytochrome b-245 light chain (Cytochrome b(558) alpha chain)	
 P135	human	Q14203	DCTN1	Q14203	98	533	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
@@ -145,7 +145,7 @@ P13597	mus-musculus	P13597	Icam1	P13597	19	148	Intercellular adhesion molecule 1
 P13598	human	P13598	ICAM2	P13598	120	624	Intercellular adhesion molecule 2 (ICAM-2) (CD antigen CD102	
 P13599	rattus-norvegicus	P13599	Fcgrt	P13599	3	35	IgG receptor FcRn large subunit p51	
 P136	human	P55265	ADAR	P55265	83	374	Double-stranded RNA-specific adenosine deaminase (DRADA) (EC	w
-P13607	fly	FBgn0002921	Atpalpha	P13607	10	176	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	
+P13607	fly	FBgn0002921	Atpalpha	P13607	10	175	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	
 P13609	mus-musculus	P13609	Srgn	P13609	2	27	Serglycin	
 P13611	human	P13611	VCAN	P13611	2	26	Versican core protein (Chondroitin sulfate proteoglycan core	
 P13612	human	P13612	ITGA4	P13612	126	624	Integrin alpha-4 (CD49 antigen-like family member D) (Integr	
@@ -167,7 +167,7 @@ P13671	human	P13671	C6	P13671	13	236	Complement component C6
 P13674	human	P13674	P4HA1	P13674	55	387	Prolyl 4-hydroxylase subunit alpha-1 (4-PH alpha-1) (EC 1.14	
 P13675	mus-musculus	P13675	Ssty1	P13675	1	2	Y-linked testis-specific protein 1	
 P13676	rattus-norvegicus	P13676	Apeh	P13676	0	8	Acylamino-acid-releasing enzyme	
-P13677	fly	FBgn0004784	inaC	P13677	70	1274	Protein kinase C, eye isozyme (EC 2.7.11.13) (Eye-PKC) (Inac	
+P13677	fly	FBgn0004784	inaC	P13677	46	1122	Protein kinase C, eye isozyme (EC 2.7.11.13) (Eye-PKC) (Inac	
 P13678	fly	FBgn0003093	Pkc98E	P13678	133	1242	Protein kinase C (PKC) (EC 2.7.11.13) (dPKC98F)	
 P13681	schizosaccharomyces-pombe	P13681	dis2	P13681	13	56	Serine/threonine-protein phosphatase PP1-1	
 P13682	human	P13682	ZNF35	P13682	1	55	Zinc finger protein 35 (Zinc finger protein HF.10)	
@@ -177,7 +177,7 @@ P13689	zea-mays	P13689	ABP1	P13689	0	5	Auxin-binding protein 1
 P13693	human	P13693	TPT1	P13693	35	383	Translationally-controlled tumor protein (TCTP) (Fortilin) (	
 P13697	rattus-norvegicus	P13697	Me1	P13697	2	4	NADP-dependent malic enzyme	
 P13705	mus-musculus	P13705	Msh3	P13705	6	60	DNA mismatch repair protein Msh3	
-P13706	fly	FBgn0001128	Gpdh1	B5RIM9	5	182		
+P13706	fly	FBgn0001128	Gpdh1	B5RIM9	5	178		
 P13707	mus-musculus	P13707	Gpd1	P13707	1	6	Glycerol-3-phosphate dehydrogenase	
 P13708	glycine-max	P13708	SS	P13708	0	56	Sucrose synthase	
 P13711	yeast	P13711	POX1	P13711	0	16	Acyl-coenzyme A oxidase	

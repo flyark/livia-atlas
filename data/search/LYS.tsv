@@ -73,17 +73,17 @@ LYSE	fly	FBgn0004428	LysE	P37159	26	248	Lysozyme E (EC 3.2.1.17) (1,4-beta-N-ace
 LYSET	human	Q8N6I4	LYSET	Q8N6I4	4	31	Lysosomal enzyme trafficking factor (GNPTAB cleavage and act	
 LYSET_HUMAN	human	Q8N6I4	LYSET	Q8N6I4	4	31		
 LYSIN-LIKE	zebrafish	Q7T3Q1	nkl.4	Q7T3Q1	0	6	NK lysin-like protein	w
-LYSINE	fly	FBgn0000629	E(z)	M9PHZ5	38	493	[histone H3]-lysine(27) N-trimethyltransferase (EC 2.1.1.356	w
+LYSINE	fly	FBgn0000629	E(z)	M9PHZ5	36	491	[histone H3]-lysine(27) N-trimethyltransferase (EC 2.1.1.356	w
 LYSINE	fly	FBgn0003862	trx	P20659	2	6	Histone-lysine N-methyltransferase trithorax (EC 2.1.1.355) 	w
 LYSINE	fly	FBgn0005386	ash1	Q9VW15	9	23	Histone-lysine N-methyltransferase ash1 (EC 2.1.1.354) (Abse	w
-LYSINE	fly	FBgn0011474	Set8	Q9VFK6	8	29	Histone-lysine N-methyltransferase Set8 (EC 2.1.1.361) (Lysi	w
-LYSINE	fly	FBgn0023518	trr	Q8IRW8	5	21	Histone-lysine N-methyltransferase trr (EC 2.1.1.354) (Lysin	w
+LYSINE	fly	FBgn0011474	Set8	Q9VFK6	6	25	Histone-lysine N-methyltransferase Set8 (EC 2.1.1.361) (Lysi	w
+LYSINE	fly	FBgn0023518	trr	Q8IRW8	2	14	Histone-lysine N-methyltransferase trr (EC 2.1.1.354) (Lysin	w
 LYSINE	fly	FBgn0032873	CG2614	Q9VIK9	2	20	eEF1A lysine and N-terminal methyltransferase homolog [Inclu	w
 LYSINE	fly	FBgn0037098	Wnk	M9PGC5	100	472	Serine/threonine-protein kinase Wnk (EC 2.7.11.1) (Protein k	w
 LYSINE	fly	FBgn0037659	Kdm2	Q9VHH9	23	170	JmjC domain-containing histone demethylation protein 1 (EC 1	w
 LYSINE	fly	FBgn0053182	Kdm4B	A0A0B4KFJ8	60	365	Lysine (K)-specific demethylase 4B, isoform E (EC 1.14.11.27	w
-LYSINE	fly	FBgn0266570	NO66	Q7K4H4	7	33	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
-LYSINE	fly	FBgn0286198	Lkrsdh	Q9VLX0	0	25	Lysine ketoglutarate reductase/saccharopine dehydrogenase, i	w
+LYSINE	fly	FBgn0266570	NO66	Q7K4H4	5	30	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
+LYSINE	fly	FBgn0286198	Lkrsdh	Q9VLX0	0	21	Lysine ketoglutarate reductase/saccharopine dehydrogenase, i	w
 LYSINE	human	H0YIJ7	?	H0YIJ7	1	5	EEF1A lysine methyltransferase 3	w
 LYSINE	human	O15047	SETD1A	O15047	96	480	Histone-lysine N-methyltransferase SETD1A (EC 2.1.1.364) (Ly	w
 LYSINE	human	O15054	KDM6B	O15054	147	824	Lysine-specific demethylase 6B (EC 1.14.11.68) (JmjC domain-	w
@@ -146,7 +146,7 @@ LYSINE	zebrafish	E7EXV0	atpsckmt	E7EXV0	0	13	ATP synthase subunit C lysine N-met
 LYSINE	zebrafish	P0CH95	phf8	P0CH95	7	43	Histone lysine demethylase PHF8	w
 LYSINE	zebrafish	Q5D013	eef1akmt2	Q5D013	0	2	EEF1A lysine methyltransferase 2	w
 LYSINE	zebrafish	Q6IQ61	antkmt	Q6IQ61	0	13	Adenine nucleotide translocase lysine N-methyltransferase	w
-LYSINE--TRNA	fly	FBgn0027084	LysRS	Q9W327	11	103	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
+LYSINE--TRNA	fly	FBgn0027084	LysRS	Q9W327	10	97	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
 LYSINE--TRNA	human	Q15046	KARS1	Q15046	18	368	Lysine--tRNA ligase (EC 2.7.7.-) (EC 6.1.1.6) (Lysyl-tRNA sy	w
 LYSINE--TRNA	worm	Q22099	kars-1	Q22099	3	48	Lysine--tRNA ligase	w
 LYSINE--TRNA	yeast	P15180	KRS1	P15180	4	54	Lysine--tRNA ligase, cytoplasmic	w
@@ -178,10 +178,10 @@ LYSINE-RICH	human	Q9NPI7	KRCC1	Q9NPI7	6	31	Lysine-rich coiled-coil protein 1 (Cr
 LYSINE-RICH	zebrafish	A0A2R8RHH6	smkr1	A0A2R8RHH6	0	3	Small lysine-rich protein 1	w
 LYSINE-RICH	zebrafish	A2BIN4	srek1	A2BIN4	4	9	Splicing regulatory glutamine/lysine-rich protein 1	w
 LYSINE-RICH	zebrafish	B8A4H3	knop1	B8A4H3	0	1	Lysine-rich nucleolar protein 1	w
-LYSINE-SPECIFIC	fly	FBgn0031759	Kdm5	Q9VMJ7	23	93	Lysine-specific demethylase 5 (EC 1.14.11.67) (Histone demet	w
+LYSINE-SPECIFIC	fly	FBgn0031759	Kdm5	Q9VMJ7	16	78	Lysine-specific demethylase 5 (EC 1.14.11.67) (Histone demet	w
 LYSINE-SPECIFIC	fly	FBgn0033233	Kdm4A	Q9V333	51	382	Probable lysine-specific demethylase 4A (EC 1.14.11.66) (EC 	w
-LYSINE-SPECIFIC	fly	FBgn0260397	Su(var)3-3	Q9VW97	13	157	Possible lysine-specific histone demethylase 1 (EC 1.-.-.-)	w
-LYSINE-SPECIFIC	fly	FBgn0266570	NO66	Q7K4H4	7	33	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
+LYSINE-SPECIFIC	fly	FBgn0260397	Su(var)3-3	Q9VW97	12	155	Possible lysine-specific histone demethylase 1 (EC 1.-.-.-)	w
+LYSINE-SPECIFIC	fly	FBgn0266570	NO66	Q7K4H4	5	30	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
 LYSINE-SPECIFIC	human	A0A1W2PPD8	KDM4F	A0A1W2PPD8	6	11	Probable lysine-specific demethylase 4F (EC 1.14.11.66)	w
 LYSINE-SPECIFIC	human	B2RXH2	KDM4E	B2RXH2	53	349	Lysine-specific demethylase 4E (EC 1.14.11.-) (EC 1.14.11.66	w
 LYSINE-SPECIFIC	human	O15054	KDM6B	O15054	147	824	Lysine-specific demethylase 6B (EC 1.14.11.68) (JmjC domain-	w
@@ -228,7 +228,7 @@ LYSINE-SPECIFIC	zebrafish	P0CF52	jhdm1db	P0CF52	6	22	Lysine-specific demethylase
 LYSINE-SPECIFIC	zebrafish	Q1LUQ0	kdm4b	Q1LUQ0	1	45	Lysine-specific demethylase 4B	w
 LYSINE-SPECIFIC	zebrafish	Q5RHD1	kdm7a	Q5RHD1	6	22	Lysine-specific demethylase 7A	w
 LYSINE-SPECIFIC	zebrafish	Q6P949	phf2	Q6P949	5	24	Lysine-specific demethylase phf2	w
-LYSINE20	fly	FBgn0038869	Smyd5	Q9VDD0	4	22	Histone-lysine N-trimethyltransferase SMYD5 (EC 2.1.1.372) (	w
+LYSINE20	fly	FBgn0038869	Smyd5	Q9VDD0	4	17	Histone-lysine N-trimethyltransferase SMYD5 (EC 2.1.1.372) (	w
 LYSINE4	human	Q9NQW5	PRDM7	Q9NQW5	5	22	Histone-lysine N-methyltransferase PRDM7 (EC 2.1.1.-) (PR do	w
 LYSM	human	Q5XG99	LYSMD4	Q5XG99	3	20	LysM and putative peptidoglycan-binding domain-containing pr	w
 LYSM	human	Q7Z3D4	LYSMD3	Q7Z3D4	16	42	LysM and putative peptidoglycan-binding domain-containing pr	w
@@ -510,11 +510,11 @@ LYSP	fly	FBgn0004429	LysP	P29615	50	258	Lysozyme P (EC 3.2.1.17) (1,4-beta-N-ace
 LYSP	salmonella-typhimurium	Q8ZNK9	lysP	Q8ZNK9	0	1	APC family lysine-specific permease	
 LYSP100	human	Q13342	SP140	Q13342	20	92		
 LYSPERSIN	human	Q96GS4	BORCS6	Q96GS4	69	177	BLOC-1-related complex subunit 6 (Lysosome-dispersing protei	w
-LYSRS	fly	FBgn0027084	LysRS	Q9W327	11	103	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	
+LYSRS	fly	FBgn0027084	LysRS	Q9W327	10	97	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	
 LYSRS	human	Q15046	KARS1	Q15046	18	368	Lysine--tRNA ligase (EC 2.7.7.-) (EC 6.1.1.6) (Lysyl-tRNA sy	w
-LYSRS_243_589	fly	FBgn0027084	LysRS	Q9W327	11	103		
-LYSRS_38_65	fly	FBgn0027084	LysRS	Q9W327	11	103		
-LYSRS_83_596	fly	FBgn0027084	LysRS	Q9W327	11	103		
+LYSRS_243_589	fly	FBgn0027084	LysRS	Q9W327	10	97		
+LYSRS_38_65	fly	FBgn0027084	LysRS	Q9W327	10	97		
+LYSRS_83_596	fly	FBgn0027084	LysRS	Q9W327	10	97		
 LYSS	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P41258	lysS	P41258	1	67	Lysine--tRNA ligase	
 LYSS	dictyostelium-discoideum	Q54TY4	lysS	Q54TY4	3	25	Lysine--tRNA ligase	
 LYSS	escherichia-coli-83333	P0A8N3	lysS	P0A8N3	1	16	Lysine--tRNA ligase	
@@ -567,5 +567,5 @@ LYSYL-HYDROXYLASE	human	Q6NYC1	JMJD6	Q6NYC1	21	285	Bifunctional arginine demethy
 LYSYL-HYDROXYLASE	human	Q9H9V9	JMJD4	Q9H9V9	16	165	2-oxoglutarate and iron-dependent oxygenase JMJD4 (EC 1.14.1	w
 LYSYL-HYDROXYLASE	worm	Q9GYI4	psr-1	Q9GYI4	0	10	Bifunctional arginine demethylase and lysyl-hydroxylase psr-	w
 LYSYL-HYDROXYLASE	zebrafish	Q6PFM0	jmjd6	Q6PFM0	0	14	Bifunctional arginine demethylase and lysyl-hydroxylase JMJD	w
-LYSYL-TRNA	fly	FBgn0027084	LysRS	Q9W327	11	103	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
+LYSYL-TRNA	fly	FBgn0027084	LysRS	Q9W327	10	97	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
 LYSYL-TRNA	human	Q15046	KARS1	Q15046	18	368	Lysine--tRNA ligase (EC 2.7.7.-) (EC 6.1.1.6) (Lysyl-tRNA sy	w

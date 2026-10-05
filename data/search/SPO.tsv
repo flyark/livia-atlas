@@ -4,7 +4,7 @@ SPO-11	worm	Q22236	spo-11	Q22236	0	5	Meiotic recombination protein spo-11	w
 SPO0J	streptococcus-pneumoniae	Q8DMW1	spo0J	Q8DMW1	1	6	Chromosome segregation protein	
 SPO1	yeast	P53541	SPO1	P53541	0	8	Putative meiotic phospholipase SPO1	
 SPO11	candida-albicans-237561	A0A1D8PID6	SPO11	A0A1D8PID6	1	5	DNA topoisomerase (ATP-hydrolyzing)	
-SPO11	fly	FBgn0002716	mei-W68	Q7KPA5	4	32	Meiotic recombination protein W68 (EC 5.6.2.2) (SPO11 protei	w
+SPO11	fly	FBgn0002716	mei-W68	Q7KPA5	4	29	Meiotic recombination protein W68 (EC 5.6.2.2) (SPO11 protei	w
 SPO11	human	Q9Y5K1	SPO11	Q9Y5K1	3	45	Meiotic recombination protein SPO11 (EC 5.6.2.2) (Cancer/tes	
 SPO11	mus-musculus	Q9WTK8	Spo11	Q9WTK8	1	9	Meiotic recombination protein SPO11	
 SPO11	yeast	P23179	SPO11	P23179	3	16	Meiosis-specific protein SPO11	
@@ -50,7 +50,7 @@ SPOC1	human	Q86YI8	PHF13	Q86YI8	18	81	PHD finger protein 13 (Survival time-assoc
 SPOC1_HUMAN	human	Q6ZMY3	SPOCD1	Q6ZMY3	15	65		
 SPOCD1	human	Q6ZMY3	SPOCD1	Q6ZMY3	15	65	SPOC domain-containing protein 1	
 SPOCD1	mus-musculus	B1ASB6	Spocd1	B1ASB6	5	16	SPOC domain-containing protein 1	
-SPOCK	fly	FBgn0052451	SPoCk	M9PG15	0	42	P-type Ca(2+) transporter (EC 7.2.2.10)	
+SPOCK	fly	FBgn0052451	SPoCk	M9PG15	0	39	P-type Ca(2+) transporter (EC 7.2.2.10)	
 SPOCK	human	Q08629	SPOCK1	Q08629	15	101		
 SPOCK1	human	Q08629	SPOCK1	Q08629	15	101	Testican-1 (Protein SPOCK)	
 SPOCK1	mus-musculus	Q62288	Spock1	Q62288	0	7	Testican-1	
@@ -63,7 +63,7 @@ SPOCK2	zebrafish	A0A2R8Q8S3	spock2	A0A2R8Q8S3	0	3	Testican-2
 SPOCK3	human	Q9BQ16	SPOCK3	Q9BQ16	12	40	Testican-3 (SPARC/osteonectin, CWCV, and Kazal-like domains 	
 SPOCK3	rattus-norvegicus	D3ZUT1	Spock3	D3ZUT1	1	1	Testican-3	
 SPOCK3	zebrafish	F1RAX3	spock3	F1RAX3	1	3	Testican-2	
-SPOCK_737	fly	FBgn0052451	SPoCk	M9PG15	0	42		
+SPOCK_737	fly	FBgn0052451	SPoCk	M9PG15	0	39		
 SPOGA1	human	Q9BXA7	TSSK1B	Q9BXA7	307	1305		
 SPOGA2	human	Q96PF2	TSSK2	Q96PF2	220	1158		
 SPOGA3	human	Q96PN8	TSSK3	Q96PN8	274	1261		
@@ -100,7 +100,7 @@ SPON2	mus-musculus	Q8BMS2	Spon2	Q8BMS2	0	2	Spondin-2
 SPON2	rattus-norvegicus	Q9WV75	Spon2	Q9WV75	0	2	Spondin-2	
 SPON2_HUMAN	human	Q9BUD6	SPON2	Q9BUD6	4	58		
 SPONDIN-1	fly	FBgn0026721	fat-spondin	Q7KN04	23	251	Spondin-1 (F-spondin)	w
-SPONDIN-1	fly	FBgn0033710	Drosp	Q7K3Y9	61	253	Spondin-1 (F-spondin)	w
+SPONDIN-1	fly	FBgn0033710	Drosp	Q7K3Y9	61	252	Spondin-1 (F-spondin)	w
 SPONDIN-1	fly	FBgn0050046	CG30046	A1Z8W6	42	242	Spondin-1 (F-spondin)	w
 SPONDIN-1	fly	FBgn0050203	CG30203	Q3ZAL6	51	233	Spondin-1 (F-spondin)	w
 SPONDIN-1	human	Q2MKA7	RSPO1	Q2MKA7	23	149	R-spondin-1 (Roof plate-specific spondin-1) (hRspo1)	w
@@ -111,12 +111,12 @@ SPONDIN-2	human	Q6UXX9	RSPO2	Q6UXX9	27	188	R-spondin-2 (Roof plate-specific spon
 SPONDIN-2	human	Q9BUD6	SPON2	Q9BUD6	4	58	Spondin-2 (Differentially expressed in cancerous and non-can	w
 SPONDIN-3	human	Q9BXY4	RSPO3	Q9BXY4	15	93	R-spondin-3 (Protein with TSP type-1 repeat) (hPWTSR) (Roof 	w
 SPONDIN-4	human	Q2I0M5	RSPO4	Q2I0M5	17	91	R-spondin-4 (Roof plate-specific spondin-4) (hRspo4)	w
-SPONGE	fly	FBgn0264324	spg	Q9VAS8	4	7	Sponge, isoform E	w
+SPONGE	fly	FBgn0264324	spg	Q9VAS8	1	1	Sponge, isoform E	w
 SPOOJ	pseudomonas-aeruginosa	Q9HT12	spoOJ	Q9HT12	0	11	Probable chromosome-partitioning protein ParB	
 SPOOK	fly	FBgn0003486	spo	Q9VRM7	0	8	Cytochrome P450 307a1 (EC 1.14.-.-) (CYPCCCVIIA1) (Protein s	w
 SPOOKIER	fly	FBgn0086917	spok	A8Y592	0	4	Spookier (EC 1.-.-.-, EC 1.14.-.-)	w
-SPOON	fly	FBgn0263987	spoon	Q7KVW1	19	102	RE73736p (Spoonbill, isoform C)	
-SPOONBILL	fly	FBgn0263987	spoon	Q7KVW1	19	102	RE73736p (Spoonbill, isoform C)	w
+SPOON	fly	FBgn0263987	spoon	Q7KVW1	19	93	RE73736p (Spoonbill, isoform C)	
+SPOONBILL	fly	FBgn0263987	spoon	Q7KVW1	19	93	RE73736p (Spoonbill, isoform C)	w
 SPOP	human	O43791	SPOP	O43791	141	772	Speckle-type POZ protein (HIB homolog 1) (Roadkill homolog 1	
 SPOP	mus-musculus	Q6ZWS8	Spop	Q6ZWS8	27	59	Speckle-type POZ protein	
 SPOP	rattus-norvegicus	A6HIA2	Spop	A6HIA2	19	49	Speckle type BTB/POZ protein	
@@ -202,7 +202,7 @@ SPOT-1	worm	Q10950	spot-1	Q10950	0	13	Putative methyltransferase spot-1	w
 SPOT-1	worm	Q10950	spot-1	Q10950	0	13	Putative methyltransferase spot-1	w
 SPOT14	human	Q92748	THRSP	Q92748	5	108	Thyroid hormone-inducible hepatic protein (Spot 14 protein) 	w
 SPOT1_HUMAN	human	Q8N9U9	SPANXA2-OT1	Q8N9U9	0	6		
-SPOTTED-DICK	fly	FBgn0034878	pita	Q95RQ8	46	362	Zinc finger protein pita (Protein spotted-dick)	w
+SPOTTED-DICK	fly	FBgn0034878	pita	Q95RQ8	43	362	Zinc finger protein pita (Protein spotted-dick)	w
 SPOU	salmonella-typhimurium	Q8ZL40	spoU	Q8ZL40	0	48	tRNA (guanosine(18)-2'-O)-methyltransferase	
 SPOU	shigella-dysenteriae-serotype-1	Q329K5	spoU	Q329K5	0	45	tRNA (guanosine(18)-2'-O)-methyltransferase	
 SPOU	worm	Q22484	CELE_T14B4.1	Q22484	1	29	tRNA/rRNA methyltransferase SpoU type domain-containing prot	w

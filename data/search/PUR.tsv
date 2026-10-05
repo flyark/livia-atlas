@@ -24,7 +24,7 @@ PURA	arabidopsis-thaliana	Q96529	PURA	Q96529	0	51	Adenylosuccinate synthetase, c
 PURA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PMG4	purA	Q9PMG4	0	3	Adenylosuccinate synthetase	
 PURA	dictyostelium-discoideum	P21900	purA	P21900	0	1	Adenylosuccinate synthetase	
 PURA	escherichia-coli-83333	P0A7D4	purA	P0A7D4	0	4	Adenylosuccinate synthetase	
-PURA	fly	FBgn0035802	Pura	Q7KU89	4	26	Puratrophin-1-like, isoform A	
+PURA	fly	FBgn0035802	Pura	Q7KU89	3	23	Puratrophin-1-like, isoform A	
 PURA	glycine-max	I1N933	PURA	I1N933	1	20	Adenylosuccinate synthetase, chloroplastic	
 PURA	haemophilus-influenzae	P45283	purA	P45283	0	2	Adenylosuccinate synthetase	
 PURA	helicobacter-pylori	P56137	purA	P56137	0	3	Adenylosuccinate synthetase	
@@ -51,7 +51,7 @@ PURA2_HUMAN	human	P30520	ADSS2	P30520	9	149
 PURAA	zebrafish	Q6JIZ2	puraa	Q6JIZ2	0	13	Pur-alpha	
 PURAB	zebrafish	A0A0R4I9N0	purab	A0A0R4I9N0	0	9	Purine-rich element-binding protein Ab	
 PURATROPHIN-1	human	Q58EX7	PLEKHG4	Q58EX7	58	216	Puratrophin-1 (Pleckstrin homology domain-containing family 	w
-PURATROPHIN-1-LIKE	fly	FBgn0035802	Pura	Q7KU89	4	26	Puratrophin-1-like, isoform A	w
+PURATROPHIN-1-LIKE	fly	FBgn0035802	Pura	Q7KU89	3	23	Puratrophin-1-like, isoform A	w
 PURA_HUMAN	human	Q00577	PURA	Q00577	29	541		
 PURB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PCA2	purB	Q0PCA2	0	57	Adenylosuccinate lyase	
 PURB	dictyostelium-discoideum	Q54J34	purB	Q54J34	0	2	Adenylosuccinate lyase	
@@ -147,10 +147,10 @@ PURH	salmonella-typhimurium	P26978	purH	P26978	0	10	Bifunctional purine biosynth
 PURH	shigella-dysenteriae-serotype-1	Q32AH9	purH	Q32AH9	0	11	Bifunctional purine biosynthesis protein PurH	
 PURH	staphylococcus-aureus-93061	Q2FZI6	purH	Q2FZI6	0	10	Bifunctional purine biosynthesis protein PurH	
 PURH	streptococcus-pneumoniae	Q8DRM1	purH	Q8DRM1	0	8	Bifunctional purine biosynthesis protein PurH	
-PURINE	fly	FBgn0000053	Gart	P00967	2	106	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
+PURINE	fly	FBgn0000053	Gart	P00967	2	95	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 PURINE	fly	FBgn0031663	CG8891	Q9VMW7	1	142	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
 PURINE	fly	FBgn0035348	CG16758	M9PE19	7	98	Purine nucleoside phosphorylase (EC 2.4.2.1) (Inosine phosph	w
-PURINE	fly	FBgn0039241	Atic	Q9VC18	0	110	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
+PURINE	fly	FBgn0039241	Atic	Q9VC18	0	104	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
 PURINE	fly	FBgn0051115	CG31115	Q8IMU4	2	37	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1)	w
 PURINE	human	P00491	PNP	P00491	1	163	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine 	w
 PURINE	human	P22102	GART	P22102	2	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
@@ -230,7 +230,7 @@ PURINOCEPTOR	zebrafish	B0R182	p2rx5	B0R182	1	7	P2X purinoceptor	w
 PURINOCEPTOR	zebrafish	E7FET7	p2ry13	E7FET7	0	1	P2Y purinoceptor 13	w
 PURINOCEPTOR	zebrafish	E7FEY4	p2ry2.1	E7FEY4	0	1	P2Y purinoceptor 2	w
 PURINOCEPTOR	zebrafish	E9QHJ4	p2ry2.2	E9QHJ4	0	1	P2Y purinoceptor 2	w
-PURITY	fly	FBgn0011230	poe	Q9VLT5	6	12	Protein purity of essence (Interaction calmodulin and coloss	w
+PURITY	fly	FBgn0011230	poe	Q9VLT5	0	0	Protein purity of essence (Interaction calmodulin and coloss	w
 PURK	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GT03	purK	A0A0H3GT03	0	1	N5-carboxyaminoimidazole ribonucleotide synthase	
 PURK	streptococcus-pneumoniae	Q8DRL8	purK	Q8DRL8	0	1	N5-carboxyaminoimidazole ribonucleotide synthase	
 PURKINJE	human	A6NKN8	PCP4L1	A6NKN8	22	154	Purkinje cell protein 4-like protein 1 (PCP4-like protein 1)	w
@@ -275,12 +275,12 @@ PURN	salmonella-typhimurium	H9L487	purN	H9L487	0	7	Phosphoribosylglycinamide for
 PURN	shigella-dysenteriae-serotype-1	Q32D68	purN	Q32D68	0	7	Phosphoribosylglycinamide formyltransferase	
 PURN	staphylococcus-aureus-93061	Q2FZI7	purN	Q2FZI7	0	6	Phosphoribosylglycinamide formyltransferase	
 PURN	streptococcus-pneumoniae	Q8DRM3	purN	Q8DRM3	0	5	Phosphoribosylglycinamide formyltransferase	
-PUROMYCIN	fly	FBgn0261243	Psa	Q8IRH1	32	283	FI19310p1 (Puromycin sensitive aminopeptidase, isoform C)	w
+PUROMYCIN	fly	FBgn0261243	Psa	Q8IRH1	32	282	FI19310p1 (Puromycin sensitive aminopeptidase, isoform C)	w
 PUROMYCIN-INSENSITIVE	human	Q9NZ08	ERAP1	Q9NZ08	19	116	Endoplasmic reticulum aminopeptidase 1 (EC 3.4.11.-) (ARTS-1	w
 PUROMYCIN-SENSITIVE	human	A6NEC2	NPEPPSL1	A6NEC2	1	9	Puromycin-sensitive aminopeptidase-like protein (EC 3.4.11.-	w
 PUROMYCIN-SENSITIVE	human	P55786	NPEPPS	P55786	34	162	Puromycin-sensitive aminopeptidase (PSA) (EC 3.4.11.14) (Cyt	w
 PUROMYCIN-SENSITIVE	worm	Q4TT88	pam-1	Q4TT88	0	4	Puromycin-sensitive aminopeptidase	w
-PURPLE	fly	FBgn0003141	pr	P48611	3	72	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
+PURPLE	fly	FBgn0003141	pr	P48611	1	64	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
 PURPLE	fly	FBgn0030245	CG1637	X2JB52	0	19	Purple acid phosphatase (EC 3.1.3.2)	w
 PURPLE	human	P13686	ACP5	P13686	20	185	Tartrate-resistant acid phosphatase type 5 (TR-AP) (EC 3.1.3	w
 PURPLE	human	Q6ZNF0	ACP7	Q6ZNF0	6	48	Acid phosphatase type 7 (EC 3.1.3.2) (Purple acid phosphatas	w

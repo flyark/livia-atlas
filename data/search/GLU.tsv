@@ -1,4 +1,4 @@
-GLU	fly	FBgn0015391	glu	Q9V3A7	22	141	Structural maintenance of chromosomes protein	
+GLU	fly	FBgn0015391	glu	Q9V3A7	19	127	Structural maintenance of chromosomes protein	
 GLU-ADT	fly	FBgn0064115	GatC	Q86BL4	2	3	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
 GLU-ADT	fly	FBgn0260779	GatA	Q9VE09	2	18	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
 GLU-ADT	human	O43716	GATC	O43716	6	143	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
@@ -106,7 +106,7 @@ GLUCONOKINASE	worm	Q23673	CELE_ZK938.3	Q23673	0	11	Gluconokinase	w
 GLUCONOKINASE	yeast	Q03786	YDR248C	Q03786	0	5	Probable gluconokinase	w
 GLUCONOLACTONASE	human	Q15493	RGN	Q15493	2	56	Regucalcin (RC) (Gluconolactonase) (GNL) (EC 3.1.1.17) (Sene	w
 GLUCONOLACTONASE	worm	B1V898	poml-3	B1V898	4	6	SMP-30/Gluconolactonase/LRE-like region domain-containing pr	w
-GLUCOSAMINE	fly	FBgn0039690	Gnpnat	A0A0B4KI57	1	28	Glucosamine 6-phosphate N-acetyltransferase (EC 2.3.1.4)	w
+GLUCOSAMINE	fly	FBgn0039690	Gnpnat	A0A0B4KI57	1	21	Glucosamine 6-phosphate N-acetyltransferase (EC 2.3.1.4)	w
 GLUCOSAMINE	human	O14792	HS3ST1	O14792	9	72	Heparan sulfate glucosamine 3-O-sulfotransferase 1 (EC 2.8.2	w
 GLUCOSAMINE	human	Q8IZT8	HS3ST5	Q8IZT8	1	33	Heparan sulfate glucosamine 3-O-sulfotransferase 5 (EC 2.8.2	w
 GLUCOSAMINE	human	Q96EK6	GNPNAT1	Q96EK6	4	55	Glucosamine 6-phosphate N-acetyltransferase (EC 2.3.1.4) (Ph	w
@@ -132,8 +132,8 @@ GLUCOSAMINYL	human	P52848	NDST1	P52848	5	59	Bifunctional heparan sulfate N-deace
 GLUCOSAMINYL	human	P52849	NDST2	P52849	4	53	Bifunctional heparan sulfate N-deacetylase/N-sulfotransferas	w
 GLUCOSAMINYL	zebrafish	A0A8M2BG25	gcnt7	A0A8M2BG25	0	2	Glucosaminyl (N-acetyl) transferase family member 7	w
 GLUCOSAMINYL-PHOSPHATIDYLINOSITOL-ACYLTRANSFERASE	human	Q7Z7B1	PIGW	Q7Z7B1	2	43	Glucosaminyl-phosphatidylinositol-acyltransferase PIGW (GlcN	w
-GLUCOSE	fly	FBgn0001112	Gld	P18173	27	257	Glucose dehydrogenase	w
-GLUCOSE	fly	FBgn0003076	Pgm1	Q9VUY9	4	164	Phosphoglucomutase (PGM) (EC 5.4.2.2) (Glucose phosphomutase	w
+GLUCOSE	fly	FBgn0001112	Gld	P18173	27	255	Glucose dehydrogenase	w
+GLUCOSE	fly	FBgn0003076	Pgm1	Q9VUY9	3	158	Phosphoglucomutase (PGM) (EC 5.4.2.2) (Glucose phosphomutase	w
 GLUCOSE	fly	FBgn0015230	Glut3	P53403	0	2	Glucose transporter type 3 (Glucose transporter-like protein	w
 GLUCOSE	fly	FBgn0264574	Glut1	Q8IRI6	2	53	Glucose transporter type 1	w
 GLUCOSE	fly	FBgn0267336	Glut4EF	A0A0B4KFN3	143	348	Glucose transporter 4 enhancer factor, isoform G	w
@@ -384,8 +384,8 @@ GLUE	fly	FBgn0003373	Sgs3	P02840	12	251	Salivary glue protein Sgs-3	w
 GLUE	fly	FBgn0003375	Sgs5	P07701	46	243	Salivary glue protein Sgs-5	w
 GLUE	fly	FBgn0003377	Sgs7	P02841	7	257	Salivary glue protein Sgs-7	w
 GLUE	fly	FBgn0003378	Sgs8	P02842	4	256	Salivary glue protein Sgs-8	w
-GLUE	fly	FBgn0086129	snama	Q9XZ21	11	57	Something that sticks like glue, isoform A	w
-GLUED	fly	FBgn0001108	DCTN1-p150	P13496	21	102	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
+GLUE	fly	FBgn0086129	snama	Q9XZ21	11	56	Something that sticks like glue, isoform A	w
+GLUED	fly	FBgn0001108	DCTN1-p150	P13496	13	87	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
 GLUG	fly	FBgn0051100	Glug	A0A0B4KGW3	2	2	Uncharacterized protein, isoform B	
 GLUH1	human	P42261	GRIA1	P42261	39	326		
 GLUK1	human	P39086	GRIK1	P39086	30	176	Glutamate receptor ionotropic, kainate 1 (GluK1) (Excitatory	w
@@ -411,8 +411,8 @@ GLUN3B	human	O60391	GRIN3B	O60391	28	130	Glutamate receptor ionotropic, NMDA 3B 
 GLUP	helicobacter-pylori	O25788	gluP	O25788	0	1	Putative glucose/galactose transporter	
 GLUP	human	Q96M98	PACRG	Q96M98	14	182		
 GLUPHO	plasmodium-falciparum-36329	Q8IKU0	GluPho	Q8IKU0	0	3	Bifunctional glucose-6-phosphate 1-dehydrogenase/6-phosphogl	
-GLUPRORS	fly	FBgn0005674	GluProRS	P28668	9	107	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	
-GLUPRORS_172	fly	FBgn0005674	GluProRS	P28668	9	107		
+GLUPRORS	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	
+GLUPRORS_172	fly	FBgn0005674	GluProRS	P28668	9	98		
 GLUQ	escherichia-coli-83333	P27305	gluQ	P27305	0	70	Glutamyl-Q tRNA(Asp) synthetase	
 GLUQ	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRX7	gluQ	A0A0H3GRX7	0	169	Glutamyl-Q tRNA(Asp) synthetase	
 GLUQ	neisseria-gonorrhoeae	Q5F6E8	gluQ	Q5F6E8	2	73	Glutamyl-Q tRNA(Asp) synthetase	
@@ -448,7 +448,7 @@ GLUR7	human	Q13003	GRIK3	Q13003	37	197
 GLURC	human	P42263	GRIA3	P42263	33	177		
 GLURD2	human	O43424	GRID2	O43424	23	185		
 GLURIA	fly	FBgn0004619	GluRIA	Q03445	19	49	Glutamate receptor 1 (Glutamate receptor I) (dGLUR-I) (Kaina	
-GLURIB	fly	FBgn0264000	GluRIB	M9PHV5	1	8	Glutamate receptor IB, isoform B	
+GLURIB	fly	FBgn0264000	GluRIB	M9PHV5	0	5	Glutamate receptor IB, isoform B	
 GLURIIA	fly	FBgn0004620	GluRIIA	Q9VMP4	21	52	Glutamate receptor IIA (RE27895p)	
 GLURIIB	fly	FBgn0020429	GluRIIB	Q9VMP3	18	26	Glutamate receptor IIB	
 GLURIIC	fly	FBgn0046113	GluRIIC	Q9VPV3	18	28	Glutamate receptor IIC	
@@ -491,7 +491,7 @@ GLUT7	human	Q6PXP3	SLC2A7	Q6PXP3	0	34
 GLUT8	human	Q9NY64	SLC2A8	Q9NY64	8	157		
 GLUT9	human	Q9NRM0	SLC2A9	Q9NRM0	1	98		
 GLUTA	human	Q92830	KAT2A	Q92830	84	737	Histone acetyltransferase KAT2A (EC 2.3.1.48) (General contr	w
-GLUTACTIN	fly	FBgn0001114	Glt	P33438	47	307	Glutactin	w
+GLUTACTIN	fly	FBgn0001114	Glt	P33438	47	306	Glutactin	w
 GLUTAMAGE-RICH	human	A0A1W2PR82	PERCC1	A0A1W2PR82	0	6	Protein PERCC1 (Proline and glutamage-rich protein with a co	w
 GLUTAMATE	fly	FBgn0000153	Adc	Q24062	2	7	Black, isoform A (EC 4.1.1.-, EC 4.1.1.11, EC 4.1.1.15) (Bla	w
 GLUTAMATE	fly	FBgn0001098	Gdh	P54385	1	94	Glutamate dehydrogenase, mitochondrial (GDH) (EC 1.4.1.3)	w
@@ -499,16 +499,16 @@ GLUTAMATE	fly	FBgn0001124	Got1	A1ZAA5	5	151	Glutamate oxaloacetate transaminase 
 GLUTAMATE	fly	FBgn0004516	Gad1	P20228	2	55	Glutamate decarboxylase (GAD) (EC 4.1.1.15)	w
 GLUTAMATE	fly	FBgn0004619	GluRIA	Q03445	19	49	Glutamate receptor 1 (Glutamate receptor I) (dGLUR-I) (Kaina	w
 GLUTAMATE	fly	FBgn0004620	GluRIIA	Q9VMP4	21	52	Glutamate receptor IIA (RE27895p)	w
-GLUTAMATE	fly	FBgn0005674	GluProRS	P28668	9	107	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
-GLUTAMATE	fly	FBgn0010399	Nmdar1	Q24418	13	52	Glutamate [NMDA] receptor subunit 1 (DNMDAR-I) (dNR1)	w
+GLUTAMATE	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+GLUTAMATE	fly	FBgn0010399	Nmdar1	Q24418	13	47	Glutamate [NMDA] receptor subunit 1 (DNMDAR-I) (dNR1)	w
 GLUTAMATE	fly	FBgn0010497	dmGlut	Q9VKC9	2	47	Dietary and metabolic glutamate transporter (LD14545p)	w
-GLUTAMATE	fly	FBgn0019985	mGluR	P91685	7	100	Metabotropic glutamate receptor (DmGluRA)	w
+GLUTAMATE	fly	FBgn0019985	mGluR	P91685	7	99	Metabotropic glutamate receptor (DmGluRA)	w
 GLUTAMATE	fly	FBgn0020429	GluRIIB	Q9VMP3	18	26	Glutamate receptor IIB	w
 GLUTAMATE	fly	FBgn0028422	GluRIID	Q9TVI0	18	29	FI23915p1 (GluRIID) (Glutamate receptor IID) (Ionotropic glu	w
-GLUTAMATE	fly	FBgn0029830	Grip	Q9W450	5	14	FI03335p (Glutamate receptor interacting protein, isoform A)	w
+GLUTAMATE	fly	FBgn0029830	Grip	Q9W450	2	10	FI03335p (Glutamate receptor interacting protein, isoform A)	w
 GLUTAMATE	fly	FBgn0031424	VGlut1	Q9VQC0	0	22	Vesicular glutamate transporter, isoform A (Vesicular glutam	w
 GLUTAMATE	fly	FBgn0033572	polyph	Q4V5R4	3	247	Glutamate transporter polyphemus	w
-GLUTAMATE	fly	FBgn0036663	Glts	M9NFH8	2	45	glutamate synthase (NADH) (EC 1.4.1.14)	w
+GLUTAMATE	fly	FBgn0036663	Glts	M9NFH8	1	37	glutamate synthase (NADH) (EC 1.4.1.14)	w
 GLUTAMATE	fly	FBgn0037146	P5cs	Q9VNW6	0	83	Delta-1-pyrroline-5-carboxylate synthase [Includes: Glutamat	w
 GLUTAMATE	fly	FBgn0037970	GC2	Q8INJ3	0	2	AT03939p (Glutamate carrier 2, isoform B)	w
 GLUTAMATE	fly	FBgn0038837	KaiR1D	Q9VDH5	11	23	Kainate-type ionotropic glutamate receptor subunit 1D	w
@@ -516,7 +516,7 @@ GLUTAMATE	fly	FBgn0039071	bb8	Q9VCN3	0	44	Glutamate dehydrogenase	w
 GLUTAMATE	fly	FBgn0046113	GluRIIC	Q9VPV3	18	28	Glutamate receptor IIC	w
 GLUTAMATE	fly	FBgn0051201	GluRIIE	Q0KI42	17	27	FI04462p (Glutamate receptor IIE)	w
 GLUTAMATE	fly	FBgn0260743	GC1	Q9VGF7	0	3	Glutamate carrier 1, isoform A (Glutamate carrier 1, isoform	w
-GLUTAMATE	fly	FBgn0264000	GluRIB	M9PHV5	1	8	Glutamate receptor IB, isoform B	w
+GLUTAMATE	fly	FBgn0264000	GluRIB	M9PHV5	0	5	Glutamate receptor IB, isoform B	w
 GLUTAMATE	human	A0A9L9PYG5	GRM8	A0A9L9PYG5	7	57	Glutamate metabotropic receptor 8	w
 GLUTAMATE	human	A4D2P6	GRID2IP	A4D2P6	17	86	Delphilin (Glutamate receptor, ionotropic, delta 2-interacti	w
 GLUTAMATE	human	O00222	GRM8	O00222	22	72	Metabotropic glutamate receptor 8 (mGluR8)	w
@@ -652,7 +652,7 @@ GLUTAMATE--CYSTEINE	human	P48507	GCLM	P48507	6	97	Glutamate--cysteine ligase reg
 GLUTAMATE--CYSTEINE	worm	Q20117	gcs-1	Q20117	2	27	Glutamate--cysteine ligase	w
 GLUTAMATE--CYSTEINE	yeast	P32477	GSH1	P32477	0	17	Glutamate--cysteine ligase	w
 GLUTAMATE--CYSTEINE	zebrafish	Q6NV35	gclc	Q6NV35	1	12	Glutamate--cysteine ligase	w
-GLUTAMATE--TRNA	fly	FBgn0005674	GluProRS	P28668	9	107	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+GLUTAMATE--TRNA	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 GLUTAMATE--TRNA	fly	FBgn0036629	GluRS-m	Q9VV59	5	182	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
 GLUTAMATE--TRNA	human	Q5JPH6	EARS2	Q5JPH6	19	370	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
 GLUTAMATE--TRNA	worm	Q23315	ears-1	Q23315	3	136	glutamate--tRNA ligase	w
@@ -698,7 +698,7 @@ GLUTAMIC	zebrafish	F1RE30	pelp1	F1RE30	6	33	Proline-, glutamic acid- and leucine
 GLUTAMIC--ALANINE	human	P24298	GPT	P24298	4	86	Alanine aminotransferase 1 (ALT1) (EC 2.6.1.2) (Glutamate py	w
 GLUTAMIC--ALANINE	human	Q8TD30	GPT2	Q8TD30	8	145	Alanine aminotransferase 2 (ALT2) (EC 2.6.1.2) (Glutamate py	w
 GLUTAMIC--PYRUVIC	human	Q8TD30	GPT2	Q8TD30	8	145	Alanine aminotransferase 2 (ALT2) (EC 2.6.1.2) (Glutamate py	w
-GLUTAMINASE	fly	FBgn0261625	Gls	Q1RL13	1	47	glutaminase (EC 3.5.1.2)	w
+GLUTAMINASE	fly	FBgn0261625	Gls	Q1RL13	0	39	glutaminase (EC 3.5.1.2)	w
 GLUTAMINASE	human	O94925	GLS	O94925	16	251	Glutaminase kidney isoform, mitochondrial (GLS) (EC 3.5.1.2)	w
 GLUTAMINASE	human	Q9UI32	GLS2	Q9UI32	10	143	Glutaminase liver isoform, mitochondrial (GLS) (EC 3.5.1.2) 	w
 GLUTAMINASE	worm	Q19013	glna-2	Q19013	2	8	Putative glutaminase 2	w
@@ -709,11 +709,11 @@ GLUTAMINASE	zebrafish	E7F6N5	glsl	E7F6N5	3	6	glutaminase	w
 GLUTAMINASE	zebrafish	F1RDU2	glsb	F1RDU2	3	6	glutaminase	w
 GLUTAMINASE	zebrafish	Q1LWI2	glsa	Q1LWI2	3	6	glutaminase	w
 GLUTAMINASE-INTERACTING	human	O14907	TAX1BP3	O14907	25	151	Tax1-binding protein 3 (Glutaminase-interacting protein 3) (	w
-GLUTAMINE	fly	FBgn0000239	bur	Q9VIE7	4	119	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
+GLUTAMINE	fly	FBgn0000239	bur	Q9VIE7	4	114	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
 GLUTAMINE	fly	FBgn0001142	Gs1	P20477	3	163	Glutamine synthetase 1, mitochondrial (EC 6.3.1.2) (Glutamat	w
-GLUTAMINE	fly	FBgn0001145	Gs2	X2JDA5	0	64	Glutamine synthetase (EC 6.3.1.2)	w
-GLUTAMINE	fly	FBgn0003189	r	P05990	4	117	Multifunctional protein r (Protein rudimentary) [Includes: G	w
-GLUTAMINE	fly	FBgn0004901	Prat	Q27601	3	126	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
+GLUTAMINE	fly	FBgn0001145	Gs2	X2JDA5	0	62	Glutamine synthetase (EC 6.3.1.2)	w
+GLUTAMINE	fly	FBgn0003189	r	P05990	1	98	Multifunctional protein r (Protein rudimentary) [Includes: G	w
+GLUTAMINE	fly	FBgn0004901	Prat	Q27601	3	121	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
 GLUTAMINE	fly	FBgn0031817	HemK1	Q9VMD3	1	11	peptide chain release factor N(5)-glutamine methyltransferas	w
 GLUTAMINE	fly	FBgn0034046	tun	Q7K2Y9	1	5	Protein N-terminal glutamine amidohydrolase (EC 3.5.1.122) (	w
 GLUTAMINE	fly	FBgn0041194	Prat2	Q967S0	3	124	Amidophosphoribosyltransferase (ATase) (EC 2.4.2.14) (Glutam	w
@@ -761,26 +761,26 @@ GLUTAMINE--FRUCTOSE-6-PHOSPHATE	worm	Q19699	gfat-2	Q19699	1	12	glutamine--fructo
 GLUTAMINE--FRUCTOSE-6-PHOSPHATE	yeast	P14742	GFA1	P14742	3	125	Glutamine--fructose-6-phosphate aminotransferase	w
 GLUTAMINE--FRUCTOSE-6-PHOSPHATE	zebrafish	Q3S344	gfpt1	Q3S344	0	7	glutamine--fructose-6-phosphate transaminase (isomerizing)	w
 GLUTAMINE--PHENYLPYRUVATE	human	Q16773	KYAT1	Q16773	7	77	Kynurenine--oxoglutarate transaminase 1 (EC 2.6.1.7) (Cystei	w
-GLUTAMINE--TRNA	fly	FBgn0027090	GlnRS	Q9Y105	13	284	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	w
+GLUTAMINE--TRNA	fly	FBgn0027090	GlnRS	Q9Y105	13	282	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	w
 GLUTAMINE--TRNA	human	P47897	QARS1	P47897	16	581	Glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tRNA synthe	w
 GLUTAMINE--TRNA	worm	O62431	qars-1	O62431	2	133	Probable glutamine--tRNA ligase	w
 GLUTAMINE--TRNA	yeast	P13188	GLN4	P13188	2	207	Glutamine--tRNA ligase	w
 GLUTAMINE--TRNA	zebrafish	A0AB13AB14	qars1	A0AB13AB14	3	330	Glutamine--tRNA ligase	w
-GLUTAMINE-DEPENDENT	fly	FBgn0003189	r	P05990	4	117	Multifunctional protein r (Protein rudimentary) [Includes: G	w
-GLUTAMINE-DEPENDENT	fly	FBgn0030512	Nadsyn	Q9VYA0	1	13	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
-GLUTAMINE-DEPENDENT	fly	FBgn0270926	Asns	Q7KTW9	0	39	Asparagine synthetase [glutamine-hydrolyzing] (EC 6.3.5.4) (	w
+GLUTAMINE-DEPENDENT	fly	FBgn0003189	r	P05990	1	98	Multifunctional protein r (Protein rudimentary) [Includes: G	w
+GLUTAMINE-DEPENDENT	fly	FBgn0030512	Nadsyn	Q9VYA0	1	9	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
+GLUTAMINE-DEPENDENT	fly	FBgn0270926	Asns	Q7KTW9	0	35	Asparagine synthetase [glutamine-hydrolyzing] (EC 6.3.5.4) (	w
 GLUTAMINE-DEPENDENT	human	P08243	ASNS	P08243	15	239	Asparagine synthetase [glutamine-hydrolyzing] (EC 3.5.1.2) (	w
 GLUTAMINE-DEPENDENT	human	P27708	CAD	P27708	10	352	Multifunctional protein CAD (Carbamoyl phosphate synthetase 	w
 GLUTAMINE-DEPENDENT	human	Q6IA69	NADSYN1	Q6IA69	6	108	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
 GLUTAMINE-DEPENDENT	worm	Q9XXK6	qns-1	Q9XXK6	0	4	Glutamine-dependent NAD(+) synthetase	w
 GLUTAMINE-DEPENDENT	yeast	P38795	QNS1	P38795	0	7	Glutamine-dependent NAD(+) synthetase	w
-GLUTAMINE-HYDROLYZING	fly	FBgn0000239	bur	Q9VIE7	4	119	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
-GLUTAMINE-HYDROLYZING	fly	FBgn0030512	Nadsyn	Q9VYA0	1	13	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
-GLUTAMINE-HYDROLYZING	fly	FBgn0270926	Asns	Q7KTW9	0	39	Asparagine synthetase [glutamine-hydrolyzing] (EC 6.3.5.4) (	w
+GLUTAMINE-HYDROLYZING	fly	FBgn0000239	bur	Q9VIE7	4	114	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
+GLUTAMINE-HYDROLYZING	fly	FBgn0030512	Nadsyn	Q9VYA0	1	9	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
+GLUTAMINE-HYDROLYZING	fly	FBgn0270926	Asns	Q7KTW9	0	35	Asparagine synthetase [glutamine-hydrolyzing] (EC 6.3.5.4) (	w
 GLUTAMINE-HYDROLYZING	human	P08243	ASNS	P08243	15	239	Asparagine synthetase [glutamine-hydrolyzing] (EC 3.5.1.2) (	w
 GLUTAMINE-HYDROLYZING	human	P49915	GMPS	P49915	5	232	GMP synthase [glutamine-hydrolyzing] (EC 6.3.5.2) (GMP synth	w
 GLUTAMINE-HYDROLYZING	human	Q6IA69	NADSYN1	Q6IA69	6	108	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
-GLUTAMINE-RICH	fly	FBgn0032640	Sgt	Q9VJD4	33	177	LD24721p (MIP20650p) (Small glutamine-rich tetratricopeptide	w
+GLUTAMINE-RICH	fly	FBgn0032640	Sgt	Q9VJD4	33	174	LD24721p (MIP20650p) (Small glutamine-rich tetratricopeptide	w
 GLUTAMINE-RICH	human	O43765	SGTA	O43765	67	360	Small glutamine-rich tetratricopeptide repeat-containing pro	w
 GLUTAMINE-RICH	human	P23246	SFPQ	P23246	22	437	Splicing factor, proline- and glutamine-rich (100 kDa DNA-pa	w
 GLUTAMINE-RICH	human	Q2TAL8	QRICH1	Q2TAL8	36	194	Transcriptional regulator QRICH1 (Glutamine-rich protein 1)	w
@@ -801,14 +801,14 @@ GLUTAMINYL-PEPTIDE	fly	FBgn0052412	QC	Q9VRQ9	63	329	Glutaminyl-peptide cyclotran
 GLUTAMINYL-PEPTIDE	human	Q16769	QPCT	Q16769	12	116	Glutaminyl-peptide cyclotransferase (EC 2.3.2.5) (Glutaminyl	w
 GLUTAMINYL-PEPTIDE	human	Q9NXS2	QPCTL	Q9NXS2	18	120	Glutaminyl-peptide cyclotransferase-like protein (EC 2.3.2.5	w
 GLUTAMINYL-PEPTIDE	worm	G5EBT9	CELE_H27A22.1	G5EBT9	0	1	Glutaminyl-peptide cyclotransferase	w
-GLUTAMINYL-TRNA	fly	FBgn0027090	GlnRS	Q9Y105	13	284	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	w
+GLUTAMINYL-TRNA	fly	FBgn0027090	GlnRS	Q9Y105	13	282	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	w
 GLUTAMINYL-TRNA	human	P47897	QARS1	P47897	16	581	Glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tRNA synthe	w
 GLUTAMINYL-TRNA	human	Q16769	QPCT	Q16769	12	116	Glutaminyl-peptide cyclotransferase (EC 2.3.2.5) (Glutaminyl	w
 GLUTAMINYL-TRNA	human	Q9H0R6	QRSL1	Q9H0R6	16	146	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
 GLUTAMYL	human	P38435	GGCX	P38435	17	117	Vitamin K-dependent gamma-carboxylase (VKGC) (EC 4.1.1.90) (	w
 GLUTAMYL	human	Q07075	ENPEP	Q07075	3	51	Glutamyl aminopeptidase (EAP) (EC 3.4.11.7) (Aminopeptidase 	w
 GLUTAMYL	human	Q16769	QPCT	Q16769	12	116	Glutaminyl-peptide cyclotransferase (EC 2.3.2.5) (Glutaminyl	w
-GLUTAMYL-TRNA	fly	FBgn0005674	GluProRS	P28668	9	107	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
+GLUTAMYL-TRNA	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 GLUTAMYL-TRNA	fly	FBgn0036629	GluRS-m	Q9VV59	5	182	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
 GLUTAMYL-TRNA	fly	FBgn0064115	GatC	Q86BL4	2	3	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	w
 GLUTAMYL-TRNA	fly	FBgn0260779	GatA	Q9VE09	2	18	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	w
@@ -939,14 +939,14 @@ GLUTATHIONE	fly	FBgn0010038	GstD2	Q9VG98	31	84	Glutathione S-transferase D2 (EC 
 GLUTATHIONE	fly	FBgn0010039	GstD3	Q9VG97	31	88	Inactive glutathione S-transferase D3	w
 GLUTATHIONE	fly	FBgn0010040	GstD4	Q9VG96	32	89	Glutathione S-transferase D4 (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0010041	GstD5	Q9VG95	29	82	Glutathione S-transferase D5 (EC 2.5.1.18)	w
-GLUTATHIONE	fly	FBgn0010042	GstD6	Q9VG94	31	89	Glutathione S-transferase D6 (EC 2.5.1.18)	w
+GLUTATHIONE	fly	FBgn0010042	GstD6	Q9VG94	31	88	Glutathione S-transferase D6 (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0010043	GstD7	Q9VG93	33	83	Glutathione S-transferase D7 (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0010044	GstD8	Q9VG92	30	86	Glutathione S transferase D8 (EC 1.11.1.9, EC 2.5.1.18) (IP0	w
 GLUTATHIONE	fly	FBgn0010226	GstS1	A0A0B4KFT5	14	184	glutathione transferase (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0025814	Mgstl	Q8SY19	2	93	glutathione transferase (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0027590	GstE12	Q9XYZ9	36	139	Glutathione S transferase E12, isoform A (Glutathione S tran	w
 GLUTATHIONE	fly	FBgn0030484	GstT4	Q8MRM0	19	90	GH16740p (Glutathione S transferase T4 (EC 1.11.1.9, EC 2.5.	w
-GLUTATHIONE	fly	FBgn0030882	Gss1	Q86B44	2	126	Glutathione synthetase (GSH-S) (EC 6.3.2.3)	w
+GLUTATHIONE	fly	FBgn0030882	Gss1	Q86B44	1	120	Glutathione synthetase (GSH-S) (EC 6.3.2.3)	w
 GLUTATHIONE	fly	FBgn0031117	GstT3	E1JJS1	29	85	Glutathione S transferase T3, isoform B (EC 1.11.1.9, EC 2.5	w
 GLUTATHIONE	fly	FBgn0032724	CG10428	Q9VJ34	0	6	Glutathione S-transferase C-terminal domain-containing prote	w
 GLUTATHIONE	fly	FBgn0033381	GstE13	Q7JVI6	30	86	Glutathione S transferase E13, isoform A (EC 2.5.1.18) (Glut	w
@@ -955,17 +955,17 @@ GLUTATHIONE	fly	FBgn0034335	GstE1	Q7KK90	32	96	GH14654p (Glutathione S transfera
 GLUTATHIONE	fly	FBgn0034354	GstE11	Q7JVZ8	28	107	Glutathione S transferase E11, isoform A (Glutathione S tran	w
 GLUTATHIONE	fly	FBgn0034415	Gpxl	Q4V6H2	45	332	Glutathione peroxidase	w
 GLUTATHIONE	fly	FBgn0035438	Gtpx	Q8IRD3	21	279	Glutathione peroxidase	w
-GLUTATHIONE	fly	FBgn0035904	GstO3	Q9VSL2	51	229	Glutathione S transferase O3 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
-GLUTATHIONE	fly	FBgn0035906	GstO2	Q9VSL5	27	117	Glutathione S transferase O2, isoform A (EC 1.8.5.1, EC 2.5.	w
+GLUTATHIONE	fly	FBgn0035904	GstO3	Q9VSL2	51	227	Glutathione S transferase O3 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
+GLUTATHIONE	fly	FBgn0035906	GstO2	Q9VSL5	27	110	Glutathione S transferase O2, isoform A (EC 1.8.5.1, EC 2.5.	w
 GLUTATHIONE	fly	FBgn0035907	GstO1	Q9VSL6	22	103	Glutathione S transferase O1 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
 GLUTATHIONE	fly	FBgn0037696	GstZ1	Q9VHD3	2	10	Probable maleylacetoacetate isomerase 1 (MAAI 1) (EC 5.2.1.2	w
 GLUTATHIONE	fly	FBgn0037697	GstZ2	Q9VHD2	8	17	Probable maleylacetoacetate isomerase 2 (MAAI 2) (EC 5.2.1.2	w
 GLUTATHIONE	fly	FBgn0038020	GstD9	Q9VGA0	32	88	Glutathione S transferase D9, isoform A (Glutathione S trans	w
 GLUTATHIONE	fly	FBgn0038029	GstD11	B7Z0S9	33	87	Glutathione S transferase D11, isoform B (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0042206	GstD10	Q9VGA1	32	82	Glutathione S transferase D10, isoform A (EC 2.5.1.18) (Glut	w
-GLUTATHIONE	fly	FBgn0050000	GstT1	Q7K0B6	34	95	Glutathione S transferase T1 (EC 1.11.1.9, EC 2.5.1.18) (RE6	w
+GLUTATHIONE	fly	FBgn0050000	GstT1	Q7K0B6	34	94	Glutathione S transferase T1 (EC 1.11.1.9, EC 2.5.1.18) (RE6	w
 GLUTATHIONE	fly	FBgn0050005	GstT2	A1Z7X7	34	84	Glutathione S transferase T2 (EC 1.11.1.9, EC 2.5.1.18)	w
-GLUTATHIONE	fly	FBgn0052495	Gss2	Q86B44	1	8	Glutathione synthetase (GSH-S) (EC 6.3.2.3)	w
+GLUTATHIONE	fly	FBgn0052495	Gss2	Q86B44	0	5	Glutathione synthetase (GSH-S) (EC 6.3.2.3)	w
 GLUTATHIONE	fly	FBgn0053177	CG33177	Q86B54	5	88	glutathione transferase (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0053178	CG33178	X2JF29	5	461	glutathione transferase (EC 2.5.1.18)	w
 GLUTATHIONE	fly	FBgn0063491	GstE9	Q7K8X7	34	86	Glutathione S transferase E9 (EC 2.5.1.18) (Putative glutath	w
@@ -1121,7 +1121,7 @@ GLUTATHIONE	zebrafish	Q7ZUH8	mgst3a	Q7ZUH8	1	25	Glutathione S-transferase 3, mit
 GLUTATHIONE	zebrafish	Q7ZV14	gpx8	Q7ZV14	2	18	Probable glutathione peroxidase 8	w
 GLUTATHIONE	zebrafish	Q9DDU5	gstp1.2	Q9DDU5	7	22	Glutathione S-transferase	w
 GLUTATHIONE-DEPE	human	P11766	ADH5	P11766	10	154	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
-GLUTATHIONE-DEPENDENT	fly	FBgn0011768	Fdh	P46415	1	80	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
+GLUTATHIONE-DEPENDENT	fly	FBgn0011768	Fdh	P46415	1	71	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
 GLUTATHIONE-DEPENDENT	human	O00299	CLIC1	O00299	49	403	Chloride intracellular channel protein 1 (Chloride channel A	w
 GLUTATHIONE-DEPENDENT	human	O60760	HPGDS	O60760	16	50	Hematopoietic prostaglandin D synthase (H-PGDS) (EC 5.3.99.2	w
 GLUTATHIONE-DEPENDENT	human	P78417	GSTO1	P78417	22	211	Glutathione S-transferase omega-1 (GSTO-1) (EC 2.5.1.18) (Gl	w
@@ -1143,5 +1143,5 @@ GLUTATHIONE-SPECIFIC	zebrafish	Q4KMJ1	chac2	Q4KMJ1	0	2	Putative glutathione-spec
 GLUTATHIONE-SPECIFIC	zebrafish	Q5SPB6	chac1	Q5SPB6	0	8	Glutathione-specific gamma-glutamylcyclotransferase 1	w
 GLUTRBP	arabidopsis-thaliana	Q9LU39	GLUTRBP	Q9LU39	1	2	Glutamyl-tRNA reductase-binding protein, chloroplastic	
 GLUTX1	human	Q9NY64	SLC2A8	Q9NY64	8	157		
-GLU_1337	fly	FBgn0015391	glu	Q9V3A7	22	141		
-GLU_1348	fly	FBgn0015391	glu	Q9V3A7	22	141		
+GLU_1337	fly	FBgn0015391	glu	Q9V3A7	19	127		
+GLU_1348	fly	FBgn0015391	glu	Q9V3A7	19	127		

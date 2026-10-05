@@ -2,17 +2,17 @@ RPA	methanocaldococcus-jannaschii	Q58559	rpa	Q58559	1	11	Replication factor A
 RPA-1	worm	Q19537	rpa-1	Q19537	6	49	Probable replication factor A 73 kDa subunit	
 RPA-2	worm	Q95Y97	rpa-2	Q95Y97	4	67	Replication protein A C-terminal domain-containing protein	
 RPA-4	worm	P91356	rpa-4	P91356	4	72	RPA_C domain-containing protein	
-RPA-70	fly	FBgn0010173	RPA1	Q24492	9	88		
-RPA-70_305_399	fly	FBgn0010173	RPA1	Q24492	9	88		
-RPA-70_377	fly	FBgn0010173	RPA1	Q24492	9	88		
-RPA-70_420	fly	FBgn0010173	RPA1	Q24492	9	88		
+RPA-70	fly	FBgn0010173	RPA1	Q24492	9	81		
+RPA-70_305_399	fly	FBgn0010173	RPA1	Q24492	9	81		
+RPA-70_377	fly	FBgn0010173	RPA1	Q24492	9	81		
+RPA-70_420	fly	FBgn0010173	RPA1	Q24492	9	81		
 RPA-BINDING	human	Q9UJW9	SERTAD3	Q9UJW9	12	91	SERTA domain-containing protein 3 (Replication protein-bindi	w
 RPA-INTERACTING	human	Q86UA6	RPAIN	Q86UA6	28	265	RPA-interacting protein (hRIP)	w
 RPA-INTERACTING	zebrafish	F1QKJ6	rpain	F1QKJ6	1	4	RPA-interacting protein	w
 RPA-RELATED	human	Q6NSI4	RADX	Q6NSI4	5	64	RPA-related protein RADX (RPA-related and RAD51-antagonist, 	w
 RPA1	fly	FBgn0003274	RpLP2	P05389	21	236	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
-RPA1	fly	FBgn0010173	RPA1	Q24492	9	88	Replication protein A 70 kDa DNA-binding subunit (RP-A p70) 	
-RPA1	fly	FBgn0019938	Polr1A	P91875	2	22	DNA-directed RNA polymerase I subunit RPA1 (RNA polymerase I	w
+RPA1	fly	FBgn0010173	RPA1	Q24492	9	81	Replication protein A 70 kDa DNA-binding subunit (RP-A p70) 	
+RPA1	fly	FBgn0019938	Polr1A	P91875	1	13	DNA-directed RNA polymerase I subunit RPA1 (RNA polymerase I	w
 RPA1	human	O95602	POLR1A	O95602	20	362	DNA-directed RNA polymerase I subunit RPA1 (RNA polymerase I	w
 RPA1	human	P27694	RPA1	P27694	139	1591	Replication protein A 70 kDa DNA-binding subunit (RP-A p70) 	
 RPA1	leishmania-infantum	A4I3Q8	RPA1	A4I3Q8	1	52	Replication protein A subunit	
@@ -41,9 +41,9 @@ RPA1C	oryza-sativa-subsp-japonica	Q65XV7	RPA1C	Q65XV7	10	66	Replication protein 
 RPA1D	arabidopsis-thaliana	Q9FME0	RPA1D	Q9FME0	6	50	Replication protein A 70 kDa DNA-binding subunit D	
 RPA1E	arabidopsis-thaliana	F4JSG3	RPA1E	F4JSG3	7	42	Replication protein A 70 kDa DNA-binding subunit E	
 RPA1_HUMAN	human	O95602	POLR1A	O95602	20	362		
-RPA2	fly	FBgn0002593	RpLP1	P08570	22	307	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
+RPA2	fly	FBgn0002593	RpLP1	P08570	22	306	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
 RPA2	fly	FBgn0003278	Polr1B	P20028	11	154	DNA-directed RNA polymerase I subunit RPA2 (RNA polymerase I	w
-RPA2	fly	FBgn0288834	RPA2	Q9VIH1	15	196	Replication protein A2	
+RPA2	fly	FBgn0288834	RPA2	Q9VIH1	15	191	Replication protein A2	
 RPA2	human	P15927	RPA2	P15927	124	2042	Replication protein A 32 kDa subunit (RP-A p32) (Replication	
 RPA2	human	Q9H9Y6	POLR1B	Q9H9Y6	27	491	DNA-directed RNA polymerase I subunit RPA2 (RNA polymerase I	w
 RPA2	mus-musculus	Q62193	Rpa2	Q62193	19	180	Replication protein A 32 kDa subunit	
@@ -58,7 +58,7 @@ RPA2B	arabidopsis-thaliana	Q8LFJ8	RPA2B	Q8LFJ8	29	400	Replication protein A 32 k
 RPA2B	oryza-sativa-subsp-japonica	Q6H7J5	RPA2B	Q6H7J5	18	173	Replication protein A 32 kDa subunit B	
 RPA2C	oryza-sativa-subsp-japonica	Q5Z8L1	RPA2C	Q5Z8L1	24	173	Replication protein A 32 kDa subunit C	
 RPA2_HUMAN	human	Q9H9Y6	POLR1B	Q9H9Y6	27	491		
-RPA3	fly	FBgn0288833	RPA3	Q9VYW3	5	107	Replication protein A3	
+RPA3	fly	FBgn0288833	RPA3	Q9VYW3	4	102	Replication protein A3	
 RPA3	human	C9J7I0	UMAD1	C9J7I0	5	28	UBAP1-MVB12-associated (UMA)-domain containing protein 1 (RP	w
 RPA3	human	P35244	RPA3	P35244	162	2506	Replication protein A 14 kDa subunit (RP-A p14) (Replication	
 RPA3	mus-musculus	Q9CQ71	Rpa3	Q9CQ71	8	171	Replication protein A 14 kDa subunit	
@@ -76,7 +76,7 @@ RPA3A	arabidopsis-thaliana	Q9LXK1	RPA3A	Q9LXK1	1	2	Replication protein A 14 kDa 
 RPA3B	arabidopsis-thaliana	Q6NLG7	RPA3B	Q6NLG7	1	2	Replication protein A 14 kDa subunit B	
 RPA3L1	rattus-norvegicus	D3ZQ91	Rpa3l1	D3ZQ91	4	40	Replication protein A 14 kDa subunit	
 RPA3OS	human	C9J7I0	UMAD1	C9J7I0	5	28		
-RPA3_31	fly	FBgn0288833	RPA3	Q9VYW3	5	107		
+RPA3_31	fly	FBgn0288833	RPA3	Q9VYW3	4	102		
 RPA4	human	Q13156	RPA4	Q13156	45	527	Replication protein A 30 kDa subunit (RP-A p30) (Replication	
 RPA43	dictyostelium-discoideum	Q55FA4	rpa43	Q55FA4	4	32	Probable DNA-directed RNA polymerase I subunit RPA43	
 RPA43	human	Q3B726	POLR1F	Q3B726	58	475	DNA-directed RNA polymerase I subunit RPA43 (DNA-directed RN	w

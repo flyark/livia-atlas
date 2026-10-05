@@ -4,7 +4,7 @@ TOP-3B	worm	H1UBJ9	top-3b	H1UBJ9	3	23	DNA topoisomerase
 TOP1	candida-albicans-237561	A0A1D8PPI2	TOP1	A0A1D8PPI2	1	27	DNA topoisomerase I	
 TOP1	cladophialophora-carrionii	A0A1C1CLM2	TOP1	A0A1C1CLM2	0	26	DNA topoisomerase I	
 TOP1	dictyostelium-discoideum	Q54RC3	top1	Q54RC3	1	22	DNA topoisomerase 1	
-TOP1	fly	FBgn0004924	Top1	Q494M1	17	93	DNA topoisomerase I (EC 5.6.2.1) (DNA topoisomerase 1)	
+TOP1	fly	FBgn0004924	Top1	Q494M1	17	92	DNA topoisomerase I (EC 5.6.2.1) (DNA topoisomerase 1)	
 TOP1	human	P11387	TOP1	P11387	71	705	DNA topoisomerase 1 (EC 5.6.2.1) (DNA topoisomerase I)	
 TOP1	mus-musculus	Q04750	Top1	Q04750	6	78	DNA topoisomerase 1	
 TOP1	rattus-norvegicus	Q9WUL0	Top1	Q9WUL0	7	49	DNA topoisomerase 1	
@@ -22,7 +22,7 @@ TOP1M_HUMAN	human	Q969P6	TOP1MT	Q969P6	8	63
 TOP1_HUMAN	human	P11387	TOP1	P11387	71	705		
 TOP2	arabidopsis-thaliana	P30182	TOP2	P30182	1	37	DNA topoisomerase 2	
 TOP2	candida-albicans-237561	A0A1D8PMM1	TOP2	A0A1D8PMM1	0	19	DNA topoisomerase 2	
-TOP2	fly	FBgn0284220	Top2	P15348	4	84	DNA topoisomerase 2 (EC 5.6.2.2) (DNA topoisomerase II)	
+TOP2	fly	FBgn0284220	Top2	P15348	3	81	DNA topoisomerase 2 (EC 5.6.2.2) (DNA topoisomerase II)	
 TOP2	human	P11388	TOP2A	P11388	20	537		
 TOP2	leishmania-infantum	A4HWL4	TOP2	A4HWL4	0	18	DNA topoisomerase 2	
 TOP2	schizosaccharomyces-pombe	P08096	top2	P08096	1	17	DNA topoisomerase 2	
@@ -44,8 +44,8 @@ TOP3A	mus-musculus	O70157	Top3a	O70157	3	64	DNA topoisomerase 3-alpha
 TOP3A	oryza-sativa-subsp-japonica	C7J0A2	TOP3A	C7J0A2	7	92	DNA topoisomerase 3-alpha	
 TOP3A	rattus-norvegicus	D4A6J4	Top3a	D4A6J4	3	58	DNA topoisomerase	
 TOP3A	zebrafish	X1WCF3	top3a	X1WCF3	4	55	DNA topoisomerase	
-TOP3ALPHA	fly	FBgn0040268	Top3alpha	Q9NG98	15	122	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	
-TOP3ALPHA_1123	fly	FBgn0040268	Top3alpha	Q9NG98	15	122		
+TOP3ALPHA	fly	FBgn0040268	Top3alpha	Q9NG98	15	113	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	
+TOP3ALPHA_1123	fly	FBgn0040268	Top3alpha	Q9NG98	15	113		
 TOP3A_HUMAN	human	Q13472	TOP3A	Q13472	33	355		
 TOP3B	human	O95985	TOP3B	O95985	150	1465	DNA topoisomerase 3-beta-1 (EC 5.6.2.1) (DNA topoisomerase I	
 TOP3B	mus-musculus	Q9Z321	Top3b	Q9Z321	5	33	DNA topoisomerase 3-beta-1	
@@ -53,7 +53,7 @@ TOP3B	oryza-sativa-subsp-japonica	Q0J0S6	TOP3B	Q0J0S6	6	90	DNA topoisomerase 3-b
 TOP3B	rattus-norvegicus	D4A9Z2	Top3b	D4A9Z2	2	27	DNA topoisomerase	
 TOP3B	zebrafish	F1QNX4	top3b	F1QNX4	3	29	DNA topoisomerase	
 TOP3B1	human	O95985	TOP3B	O95985	150	1465		
-TOP3BETA	fly	FBgn0026015	Top3beta	O96651	4	50	DNA topoisomerase 3-beta (EC 5.6.2.1) (DNA topoisomerase III	
+TOP3BETA	fly	FBgn0026015	Top3beta	O96651	4	45	DNA topoisomerase 3-beta (EC 5.6.2.1) (DNA topoisomerase III	
 TOP3B_HUMAN	human	O95985	TOP3B	O95985	150	1465		
 TOP6A	arabidopsis-thaliana	Q9LZ03	TOP6A	Q9LZ03	2	5	DNA topoisomerase 6 subunit A	
 TOP6A	methanocaldococcus-jannaschii	Q57815	top6A	Q57815	1	1	Type 2 DNA topoisomerase 6 subunit A	
@@ -93,14 +93,14 @@ TOPK	human	Q96KB5	PBK	Q96KB5	252	1409
 TOPK	zebrafish	Q6DHU8	pbk	Q6DHU8	2	27		
 TOPK_DANRE	zebrafish	Q6DHU8	pbk	Q6DHU8	2	27		
 TOPK_HUMAN	human	Q96KB5	PBK	Q96KB5	252	1409		
-TOPO	fly	FBgn0266053	Patr-1	Q9VEN9	15	108	Protein associated with topo II related-1, isoform A (Protei	w
-TOPOISOMERASE	fly	FBgn0004924	Top1	Q494M1	17	93	DNA topoisomerase I (EC 5.6.2.1) (DNA topoisomerase 1)	w
-TOPOISOMERASE	fly	FBgn0026015	Top3beta	O96651	4	50	DNA topoisomerase 3-beta (EC 5.6.2.1) (DNA topoisomerase III	w
-TOPOISOMERASE	fly	FBgn0030049	Trf4-1	Q7KVS9	15	108	Non-canonical poly(A) RNA polymerase protein Trf4-1 (EC 2.7.	w
-TOPOISOMERASE	fly	FBgn0039251	Trf4-2	Q9VC07	4	19	Inactive non-canonical poly(A) RNA polymerase protein Trf4-2	w
-TOPOISOMERASE	fly	FBgn0040268	Top3alpha	Q9NG98	15	122	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	w
-TOPOISOMERASE	fly	FBgn0267351	Topors	Q9V8P9	5	18	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
-TOPOISOMERASE	fly	FBgn0284220	Top2	P15348	4	84	DNA topoisomerase 2 (EC 5.6.2.2) (DNA topoisomerase II)	w
+TOPO	fly	FBgn0266053	Patr-1	Q9VEN9	11	89	Protein associated with topo II related-1, isoform A (Protei	w
+TOPOISOMERASE	fly	FBgn0004924	Top1	Q494M1	17	92	DNA topoisomerase I (EC 5.6.2.1) (DNA topoisomerase 1)	w
+TOPOISOMERASE	fly	FBgn0026015	Top3beta	O96651	4	45	DNA topoisomerase 3-beta (EC 5.6.2.1) (DNA topoisomerase III	w
+TOPOISOMERASE	fly	FBgn0030049	Trf4-1	Q7KVS9	11	97	Non-canonical poly(A) RNA polymerase protein Trf4-1 (EC 2.7.	w
+TOPOISOMERASE	fly	FBgn0039251	Trf4-2	Q9VC07	4	16	Inactive non-canonical poly(A) RNA polymerase protein Trf4-2	w
+TOPOISOMERASE	fly	FBgn0040268	Top3alpha	Q9NG98	15	113	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	w
+TOPOISOMERASE	fly	FBgn0267351	Topors	Q9V8P9	4	17	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
+TOPOISOMERASE	fly	FBgn0284220	Top2	P15348	3	81	DNA topoisomerase 2 (EC 5.6.2.2) (DNA topoisomerase II)	w
 TOPOISOMERASE	human	O95985	TOP3B	O95985	150	1465	DNA topoisomerase 3-beta-1 (EC 5.6.2.1) (DNA topoisomerase I	w
 TOPOISOMERASE	human	P11387	TOP1	P11387	71	705	DNA topoisomerase 1 (EC 5.6.2.1) (DNA topoisomerase I)	w
 TOPOISOMERASE	human	P11388	TOP2A	P11388	20	537	DNA topoisomerase 2-alpha (EC 5.6.2.2) (DNA topoisomerase II	w
@@ -183,8 +183,8 @@ TOPOISOMERASE	zebrafish	F1QNX4	top3b	F1QNX4	3	29	DNA topoisomerase	w
 TOPOISOMERASE	zebrafish	Q1ED17	top1a	Q1ED17	1	34	DNA topoisomerase I	w
 TOPOISOMERASE	zebrafish	X1WCF3	top3a	X1WCF3	4	55	DNA topoisomerase	w
 TOPOISOMERASE-LIKE	worm	G5ECQ8	cin-4	G5ECQ8	0	10	DNA topoisomerase-like protein cin-4	w
-TOPORS	fly	FBgn0267351	Topors	Q9V8P9	5	18	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
-TOPORS	fly	FBgn0267351	Topors	Q9V8P9	5	18	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
+TOPORS	fly	FBgn0267351	Topors	Q9V8P9	4	17	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
+TOPORS	fly	FBgn0267351	Topors	Q9V8P9	4	17	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
 TOPORS	human	A0A1B0GUW7	TZMP1	A0A1B0GUW7	2	10	Transition zone microprotein 1 (Small integral membrane prot	w
 TOPORS	human	Q9NS56	TOPORS	Q9NS56	42	185	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	
 TOPORS	mus-musculus	Q80Z37	Topors	Q80Z37	2	28	E3 ubiquitin-protein ligase Topors	

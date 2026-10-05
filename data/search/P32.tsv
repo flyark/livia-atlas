@@ -6,7 +6,7 @@ P32027	fly	FBgn0014143	croc	P32027	71	399	Fork head domain-containing protein cr
 P32028	fly	FBgn0004897	fd96Ca	P32028	65	374	Fork head domain-containing protein FD4	
 P32029	fly	FBgn0004898	fd96Cb	P32029	37	379	Fork head domain-containing protein FD5	
 P32030	fly	FBgn0003430	slp1	P32030	47	409	Fork head domain transcription factor slp1 (Sloppy paired lo	
-P32031	fly	FBgn0004567	slp2	P32031	90	414	Fork head domain transcription factor slp2 (Sloppy paired lo	
+P32031	fly	FBgn0004567	slp2	P32031	89	414	Fork head domain transcription factor slp2 (Sloppy paired lo	
 P32037	mus-musculus	P32037	Slc2a3	P32037	0	6	Solute carrier family 2, facilitated glucose transporter mem	
 P32038	rattus-norvegicus	P32038	Cfd	P32038	2	9	Complement factor D	
 P32043	mus-musculus	P32043	Hoxc5	P32043	2	10	Homeobox protein Hox-C5	
@@ -27,7 +27,7 @@ P32096	virus	P32096	VETFS	P32096	5	152	Early transcription factor 70 kDa subunit
 P32097	virus	P32097	D10R	P32097	7	153	mRNA-decapping protein D10	
 P32098	virus	P32098	D9R	P32098	2	153	mRNA-decapping protein D9	
 P32099	escherichia-coli-83333	P32099	lplA	P32099	0	3	Lipoate-protein ligase A	
-P32100	fly	FBgn0005593	RpL7	P32100	29	374	Large ribosomal subunit protein uL30 (60S ribosomal protein 	
+P32100	fly	FBgn0005593	RpL7	P32100	29	373	Large ribosomal subunit protein uL30 (60S ribosomal protein 	
 P32106	escherichia-coli-83333	P32106	yibG	P32106	0	6	Uncharacterized protein YibG	
 P32110	glycine-max	P32110	HSP26-A	P32110	4	39	Probable glutathione S-transferase	
 P32114	mus-musculus	P32114	Pax2	P32114	3	22	Paired box protein Pax-2	
@@ -60,7 +60,7 @@ P32214	rattus-norvegicus	P32214	Calcr	P32214	12	32	Calcitonin receptor
 P32215	rattus-norvegicus	P32215	Adcyap1r1	P32215	5	28	Pituitary adenylate cyclase-activating polypeptide type I re	
 P32232	rattus-norvegicus	P32232	Cbs	P32232	0	21	Cystathionine beta-synthase	
 P32233	mus-musculus	P32233	Drg1	P32233	11	164	Developmentally-regulated GTP-binding protein 1	
-P32234	fly	FBgn0010339	128up	P32234	12	212	GTP-binding protein 128up	
+P32234	fly	FBgn0010339	128up	P32234	11	207	GTP-binding protein 128up	
 P32235	schizosaccharomyces-pombe	P32235	gtp1	P32235	3	12	GTP-binding protein 1	
 P32238	human	P32238	CCKAR	P32238	21	147	Cholecystokinin receptor type A (CCK-A receptor) (CCK-AR) (C	
 P32239	human	P32239	CCKBR	P32239	14	69	Gastrin/cholecystokinin type B receptor (CCK-B receptor) (CC	
@@ -150,7 +150,7 @@ P32387	yeast	P32387	MRP20	P32387	10	197	Large ribosomal subunit protein uL23m
 P32388	yeast	P32388	MRP49	P32388	11	137	Large ribosomal subunit protein mL61	
 P32389	yeast	P32389	MET4	P32389	9	27	Transcriptional activator of sulfur metabolism MET4	
 P32390	schizosaccharomyces-pombe	P32390	act2	P32390	6	37	Actin-related protein 3	
-P32392	fly	FBgn0262716	Arp3	P32392	31	143	Actin-related protein 3 (Actin-2) (Actin-like protein 3) (Ac	
+P32392	fly	FBgn0262716	Arp3	P32392	31	137	Actin-related protein 3 (Actin-2) (Actin-like protein 3) (Ac	
 P32418	human	P32418	SLC8A1	P32418	2	74	Sodium/calcium exchanger 1 (Na(+)/Ca(2+)-exchange protein 1)	
 P32419	yeast	P32419	MDH3	P32419	3	34	Malate dehydrogenase, peroxisomal	
 P32432	yeast	P32432	SFP1	P32432	3	33	Transcription factor SFP1	
@@ -344,7 +344,7 @@ P32744	worm	P32744	cls-2	P32744	4	12	Protein CLASP-2
 P32745	human	P32745	SSTR3	P32745	25	114	Somatostatin receptor type 3 (SS-3-R) (SS3-R) (SS3R) (SST3) 	
 P32746	arabidopsis-thaliana	P32746	PYRD	P32746	0	9	Dihydroorotate dehydrogenase (quinone), mitochondrial	
 P32747	schizosaccharomyces-pombe	P32747	ura3	P32747	0	3	Dihydroorotate dehydrogenase (quinone), mitochondrial	
-P32748	fly	FBgn0000447	Dhod	P32748	2	59	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	
+P32748	fly	FBgn0000447	Dhod	P32748	2	57	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	
 P32754	human	P32754	HPD	P32754	1	72	4-hydroxyphenylpyruvate dioxygenase (EC 1.13.11.27) (4-hydro	
 P32755	rattus-norvegicus	P32755	Hpd	P32755	1	16	4-hydroxyphenylpyruvate dioxygenase	
 P32756	worm	P32756	cha-1	P32756	0	1	Choline O-acetyltransferase	
@@ -420,9 +420,9 @@ P32862	yeast	P32862	RGT1	P32862	4	27	Glucose transport transcription regulator R
 P32863	yeast	P32863	RAD54	P32863	0	27	DNA repair and recombination protein RAD54	
 P32864	yeast	P32864	MRS6	P32864	4	31	Rab proteins geranylgeranyltransferase component A	
 P32865	fly	FBgn0260798	Gprk1	P32865	117	1129	G protein-coupled receptor kinase 1 (EC 2.7.11.16)	
-P32866	fly	FBgn0261988	Gprk2	P32866	102	1184	G protein-coupled receptor kinase 2 (EC 2.7.11.16)	
+P32866	fly	FBgn0261988	Gprk2	P32866	98	1151	G protein-coupled receptor kinase 2 (EC 2.7.11.16)	
 P32867	yeast	P32867	SSO1	P32867	9	87	Protein SSO1	
-P32870	fly	FBgn0003301	Adcy1	P32870	2	29	Ca(2+)/calmodulin-responsive adenylate cyclase (EC 4.6.1.1) 	
+P32870	fly	FBgn0003301	Adcy1	P32870	2	27	Ca(2+)/calmodulin-responsive adenylate cyclase (EC 4.6.1.1) 	
 P32873	yeast	P32873	BEM3	P32873	6	31	GTPase-activating protein BEM3	
 P32875	yeast	P32875	LIP5	P32875	4	36	Lipoyl synthase, mitochondrial	
 P32881	human	P32881	IFNA8	P32881	36	188	Interferon alpha-8 (IFN-alpha-8) (Interferon alpha-B) (LeIF 	

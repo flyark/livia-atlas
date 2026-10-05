@@ -1,4 +1,4 @@
-IMP	fly	FBgn0285926	Imp	M9NF14	10	150	IGF-II mRNA-binding protein, isoform L (IGF-II mRNA-binding 	
+IMP	fly	FBgn0285926	Imp	M9NF14	4	139	IGF-II mRNA-binding protein, isoform L (IGF-II mRNA-binding 	
 IMP--ASPARTATE	fly	FBgn0027493	Adss	Q9Y0Y2	0	213	Adenylosuccinate synthetase (AMPSase) (AdSS) (EC 6.3.4.4) (I	w
 IMP-1	human	Q8TCT9	HM13	Q8TCT9	6	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
 IMP-1	human	Q9NZI8	IGF2BP1	Q9NZI8	25	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	w
@@ -10,7 +10,7 @@ IMP-3	human	O00425	IGF2BP3	O00425	29	509	Insulin-like growth factor 2 mRNA-bindi
 IMP-3	human	Q8TCT8	SPPL2A	Q8TCT8	3	80	Signal peptide peptidase-like 2A (SPP-like 2A) (SPPL2a) (EC 	w
 IMP-4	human	Q8TCT7	SPPL2B	Q8TCT7	29	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
 IMP-5	human	Q8IUH8	SPPL2C	Q8IUH8	6	42	Signal peptide peptidase-like 2C (SPP-like 2C) (SPPL2c) (EC 	w
-IMP-L2	fly	FBgn0001257	ImpL2	Q09024	36	298	Neural/ectodermal development factor IMP-L2	w
+IMP-L2	fly	FBgn0001257	ImpL2	Q09024	36	297	Neural/ectodermal development factor IMP-L2	w
 IMP-SPECIFIC	human	P21589	NT5E	P21589	2	287	5'-nucleotidase (5'-NT) (EC 3.1.3.35) (EC 3.1.3.5) (EC 3.1.3	w
 IMP-SPECIFIC	yeast	Q99312	ISN1	Q99312	0	6	IMP-specific 5'-nucleotidase 1	w
 IMP.18P	human	O14732	IMPA2	O14732	5	140		
@@ -129,8 +129,8 @@ IMPDH2	human	P12268	IMPDH2	P12268	6	460	Inosine-5'-monophosphate dehydrogenase 2
 IMPDH2	mus-musculus	P24547	Impdh2	P24547	0	34	Inosine-5'-monophosphate dehydrogenase 2	
 IMPDH2	rattus-norvegicus	E9PU28	Impdh2	E9PU28	0	21	Inosine-5'-monophosphate dehydrogenase 2	
 IMPDH2	zebrafish	B0UXP9	impdh2	B0UXP9	0	14	Inosine-5'-monophosphate dehydrogenase 2	
-IMPE1	fly	FBgn0001253	ImpE1	Q7KUB3	3	11	Ecdysone-inducible gene E1, isoform A (Ecdysone-inducible ge	
-IMPE1_211	fly	FBgn0001253	ImpE1	Q7KUB3	3	11		
+IMPE1	fly	FBgn0001253	ImpE1	Q7KUB3	2	8	Ecdysone-inducible gene E1, isoform A (Ecdysone-inducible ge	
+IMPE1_211	fly	FBgn0001253	ImpE1	Q7KUB3	2	8		
 IMPE2	fly	FBgn0001254	ImpE2	P29681	37	244	20-hydroxyecdysone protein (20-HE)	
 IMPE3	fly	FBgn0001255	ImpE3	Q9VHW8	36	244	Ecdysone-inducible gene E3 (LD11958p)	
 IMPEDES	human	Q7Z569	BRAP	Q7Z569	6	110	BRCA1-associated protein (EC 2.3.2.27) (BRAP2) (Impedes mito	w
@@ -142,28 +142,28 @@ IMPH-1	worm	K8FE02	imph-1	K8FE02	0	23	K Homology domain-containing protein
 IMPK	human	Q8NFU5	IPMK	Q8NFU5	5	69		
 IMPL1	arabidopsis-thaliana	Q94F00	IMPL1	Q94F00	1	20	Phosphatase IMPL1, chloroplastic	
 IMPL1	fly	FBgn0001256	ImpL1	Q7KUJ4	46	248	Ecdysone-inducible gene L1, isoform B	
-IMPL2	fly	FBgn0001257	ImpL2	Q09024	36	298	Neural/ectodermal development factor IMP-L2	
-IMPL2-PA	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_103_108	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_106_107	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_122_180	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_238_259	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_45_266	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_47_266	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_48_266	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_49_266	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_50_265	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_50_266	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_51_266	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_52_264	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_52_266	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_55_262	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_56_262	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_57_264	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_60_261	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_80_264	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_82_261	fly	FBgn0001257	ImpL2	Q09024	36	298		
-IMPL2-PA_82_262	fly	FBgn0001257	ImpL2	Q09024	36	298		
+IMPL2	fly	FBgn0001257	ImpL2	Q09024	36	297	Neural/ectodermal development factor IMP-L2	
+IMPL2-PA	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_103_108	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_106_107	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_122_180	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_238_259	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_45_266	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_47_266	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_48_266	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_49_266	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_50_265	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_50_266	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_51_266	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_52_264	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_52_266	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_55_262	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_56_262	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_57_264	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_60_261	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_80_264	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_82_261	fly	FBgn0001257	ImpL2	Q09024	36	297		
+IMPL2-PA_82_262	fly	FBgn0001257	ImpL2	Q09024	36	297		
 IMPLANTATION	human	A6NIE9	PRSS29P	A6NIE9	13	43	Putative serine protease 29 (EC 3.4.21.-) (Implantation seri	w
 IMPLANTATION-ASSOCIATED	human	Q9H0U3	MAGT1	Q9H0U3	26	217	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 IMPORT	fly	FBgn0016041	Tom40	Q9U4L6	5	37	Mitochondrial import receptor subunit TOM40 homolog 1 (dtom4	w
@@ -172,16 +172,16 @@ IMPORT	fly	FBgn0027359	Tim8	Q9Y1A3	4	37	Mitochondrial import inner membrane tran
 IMPORT	fly	FBgn0027360	Tim10	Q9W2D6	10	47	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	fly	FBgn0029964	CG1409	Q9W3P5	3	18	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	fly	FBgn0030480	Tim9a	Q9VYD7	9	49	Mitochondrial import inner membrane translocase subunit Tim9	w
-IMPORT	fly	FBgn0031708	CG7382	Q9VMR0	6	34	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	fly	FBgn0031708	CG7382	Q9VMR0	6	33	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	fly	FBgn0032971	ttm3	Q9V9P3	3	33	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	fly	FBgn0033074	tomboy40	A1Z6L1	4	29	Mitochondrial import receptor subunit TOM40 homolog 2 (Trans	w
 IMPORT	fly	FBgn0033357	Tom7	Q7K036	3	25	Mitochondrial import receptor subunit TOM7 homolog (Transloc	w
-IMPORT	fly	FBgn0035124	ttm2	Q9W0S3	8	27	Mitochondrial import inner membrane translocase subunit TIM5	w
+IMPORT	fly	FBgn0035124	ttm2	Q9W0S3	8	26	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	fly	FBgn0035473	mge	Q9VZL1	10	62	Mitochondrial import receptor subunit TOM22 homolog	w
 IMPORT	fly	FBgn0036204	Tim13	Q9VTN3	5	11	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	fly	FBgn0037307	Tim17a2	Q9VN97	3	34	Probable mitochondrial import inner membrane translocase sub	w
+IMPORT	fly	FBgn0037307	Tim17a2	Q9VN97	3	30	Probable mitochondrial import inner membrane translocase sub	w
 IMPORT	fly	FBgn0037310	Tim17b1	Q9VNA0	6	28	Probable mitochondrial import inner membrane translocase sub	w
-IMPORT	fly	FBgn0037710	CG9393	Q9VHB6	5	35	Metaxin-1 homolog (Mitochondrial outer membrane import compl	w
+IMPORT	fly	FBgn0037710	CG9393	Q9VHB6	5	34	Metaxin-1 homolog (Mitochondrial outer membrane import compl	w
 IMPORT	fly	FBgn0038018	Tim17a1	Q9VGA2	4	27	Probable mitochondrial import inner membrane translocase sub	w
 IMPORT	fly	FBgn0038387	blp	Q9VF08	8	36	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	fly	FBgn0038683	CG11779	Q9VDZ7	18	49	Mitochondrial import inner membrane translocase subunit TIM4	w
@@ -304,12 +304,12 @@ IMPORT	zebrafish	Q9W762	timm9	Q9W762	2	34	Mitochondrial import inner membrane tr
 IMPORT	zebrafish	X1WBS5	tomm6	X1WBS5	3	14	Mitochondrial import receptor subunit TOM6 homolog	w
 IMPORTER	fly	FBgn0036732	Oatp74D	Q9VVH9	5	60	Solute carrier organic anion transporter family member 74D (	w
 IMPORTIN	fly	FBgn0024889	Kap-alpha1	O76521	21	55	Importin subunit alpha	w
-IMPORTIN	fly	FBgn0027338	Kap-alpha3	Q9V455	87	224	Importin subunit alpha	w
+IMPORTIN	fly	FBgn0027338	Kap-alpha3	Q9V455	87	221	Importin subunit alpha	w
 IMPORTIN	fly	FBgn0035657	alphaKap4	Q9VRS0	5	32	Importin subunit alpha	w
 IMPORTIN	fly	FBgn0035693	CG8219	Q9VRV9	7	47	Importin N-terminal domain-containing protein	w
 IMPORTIN	fly	FBgn0262743	Fs(2)Ket	O18388	10	71	Importin subunit beta (Karyopherin subunit beta) (Protein ke	w
 IMPORTIN	fly	FBgn0284254	Impbeta11	Q7K0Q2	0	13	Importin beta11 (LD41918p) (Ran binding protein 11)	w
-IMPORTIN	fly	FBgn0287720	Pen	P52295	42	103	Importin subunit alpha (Karyopherin subunit alpha) (Pendulin	w
+IMPORTIN	fly	FBgn0287720	Pen	P52295	35	89	Importin subunit alpha (Karyopherin subunit alpha) (Pendulin	w
 IMPORTIN	human	A9QM74	KPNA7	A9QM74	29	84	Importin subunit alpha-8 (Karyopherin subunit alpha-7)	w
 IMPORTIN	human	O00410	IPO5	O00410	48	486	Importin-5 (Imp5) (Importin subunit beta-3) (Karyopherin bet	w
 IMPORTIN	human	O00505	KPNA3	O00505	118	358	Importin subunit alpha-4 (Importin alpha Q2) (Qip2) (Karyoph	w
@@ -359,10 +359,10 @@ IMPORTIN-7	human	O95373	IPO7	O95373	22	464	Importin-7 (Imp7) (Ran-binding protei
 IMPORTIN-7	zebrafish	Q6NYN3	ipo7	Q6NYN3	12	225	Importin-7	w
 IMPORTIN-8	human	O15397	IPO8	O15397	7	328	Importin-8 (Imp8) (Ran-binding protein 8) (RanBP8)	w
 IMPORTIN-8	zebrafish	A5WW24	ipo8	A5WW24	3	225	Importin-8	w
-IMPORTIN-9	fly	FBgn0037894	Ipo9	Q9VGP4	2	135	Importin-9 (Ran-binding protein 9)	w
+IMPORTIN-9	fly	FBgn0037894	Ipo9	Q9VGP4	2	131	Importin-9 (Ran-binding protein 9)	w
 IMPORTIN-9	human	Q96P70	IPO9	Q96P70	16	268	Importin-9 (Imp9) (Ran-binding protein 9) (RanBP9)	w
 IMPORTIN-90	human	Q14974	KPNB1	Q14974	43	728	Importin subunit beta-1 (Importin-90) (Karyopherin subunit b	w
-IMPORTIN-ALPHA	fly	FBgn0022213	Cse1	Q9XZU1	5	32	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
+IMPORTIN-ALPHA	fly	FBgn0022213	Cse1	Q9XZU1	5	30	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
 IMPORTIN-ALPHA	human	P55060	CSE1L	P55060	17	467	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
 IMPORTIN-BETA-LIKE	fly	FBgn0034205	CG10950	A1ZAR6	2	15	Exportin-1/Importin-beta-like domain-containing protein	w
 IMPPP	fly	FBgn0288447	BaraA2	C0HM00	0	2		

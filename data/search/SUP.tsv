@@ -36,7 +36,7 @@ SUPERCOMPLEX	yeast	P32795	YME1	P32795	2	37	Mitochondrial inner membrane i-AAA pr
 SUPERCOMPLEX	yeast	P53721	RCF2	P53721	0	33	Respiratory supercomplex factor 2, mitochondrial	w
 SUPERCOMPLEX	yeast	Q03713	RCF1	Q03713	3	39	Respiratory supercomplex factor 1, mitochondrial	w
 SUPERCOMPLEX	yeast	Q04472	MGR3	Q04472	2	16	Mitochondrial inner membrane i-AAA protease supercomplex sub	w
-SUPERDEATH	fly	FBgn0039640	superdeath	Q7KRW4	5	84	Aminopeptidase (EC 3.4.11.-)	
+SUPERDEATH	fly	FBgn0039640	superdeath	Q7KRW4	5	83	Aminopeptidase (EC 3.4.11.-)	
 SUPERFAMILY	fly	FBgn0010651	MFS14	Q8MRP7	1	5	GH07529p (Major facilitator superfamily transporter 14, isof	w
 SUPERFAMILY	fly	FBgn0020372	TM4SF	A0A0B4KFZ4	0	2	Transmembrane 4 superfamily, isoform C	w
 SUPERFAMILY	fly	FBgn0025684	MFS18	Q9VQZ7	1	4	Major facilitator superfamily transporter 18 (SD06977p)	w
@@ -51,7 +51,7 @@ SUPERFAMILY	fly	FBgn0031636	CG12194	E1JHT4	0	4	Major facilitator superfamily dom
 SUPERFAMILY	fly	FBgn0032880	TM9SF2	Q9VIK1	0	16	Transmembrane 9 superfamily member	w
 SUPERFAMILY	fly	FBgn0033234	MFS12	Q8MS66	0	2	LP07366p (Major facilitator superfamily transporter 12, isof	w
 SUPERFAMILY	fly	FBgn0034392	MFS15	A1ZBD9	0	4	FI23731p1 (Major facilitator superfamily transporter 15, iso	w
-SUPERFAMILY	fly	FBgn0034611	MFS16	Q8MLW5	1	6	Major facilitator superfamily transporter 16, isoform B (RE2	w
+SUPERFAMILY	fly	FBgn0034611	MFS16	Q8MLW5	0	6	Major facilitator superfamily transporter 16, isoform B (RE2	w
 SUPERFAMILY	fly	FBgn0034785	CG3649	Q9W1Y9	1	4	Major facilitator superfamily (MFS) profile domain-containin	w
 SUPERFAMILY	fly	FBgn0035622	TM9SF3	Q9VRN1	3	18	Transmembrane 9 superfamily member	w
 SUPERFAMILY	fly	FBgn0035645	CG5592	Q9VRQ8	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
@@ -324,10 +324,10 @@ SUPERKILLER	yeast	Q08491	SKI7	Q08491	2	49	Superkiller protein 7	w
 SUPERKILLER	zebrafish	F1R881	skic2	F1R881	13	225	SKI2 homolog, superkiller viralicidic activity 2-like	w
 SUPERKILLER	zebrafish	Q6P5M2	skic8	Q6P5M2	9	176	Superkiller complex protein 8	w
 SUPERNATANT	human	O76054	SEC14L2	O76054	1	75	SEC14-like protein 2 (Alpha-tocopherol-associated protein) (	w
-SUPERNUMERARY	fly	FBgn0283468	slmb	A0A0B4KHK1	25	114	Supernumerary limbs, isoform B	w
-SUPEROXIDE	fly	FBgn0003462	Sod1	P61851	6	156	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	w
+SUPERNUMERARY	fly	FBgn0283468	slmb	A0A0B4KHK1	25	110	Supernumerary limbs, isoform B	w
+SUPEROXIDE	fly	FBgn0003462	Sod1	P61851	5	152	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	w
 SUPEROXIDE	fly	FBgn0010213	Sod2	Q00637	10	297	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	w
-SUPEROXIDE	fly	FBgn0010531	Ccs	E1JH26	8	60	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	w
+SUPEROXIDE	fly	FBgn0010531	Ccs	E1JH26	7	54	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	w
 SUPEROXIDE	fly	FBgn0033631	Sod3	A1Z8K9	36	386	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	w
 SUPEROXIDE	fly	FBgn0039386	Sodq	Q9VBK8	19	266	superoxide dismutase (EC 1.15.1.1)	w
 SUPEROXIDE	fly	FBgn0051028	Rsod	Q9VA99	0	1	superoxide dismutase (EC 1.15.1.1)	w
@@ -377,43 +377,43 @@ SUPPRESSION	yeast	P32488	ISF1	P32488	0	3	Increasing suppression factor 1	w
 SUPPRESSION-INDUCING	human	Q9Y3P8	SIT1	Q9Y3P8	28	124	Signaling threshold-regulating transmembrane adapter 1 (SHP2	w
 SUPPRESSIVE	human	Q16539	MAPK14	Q16539	414	1783	Mitogen-activated protein kinase 14 (MAP kinase 14) (MAPK 14	w
 SUPPRESSOR	fly	FBgn0000246	c(3)G	Q9VF37	1	30	Crossover suppressor on 3 of Gowen (Crossover suppressor on 	w
-SUPPRESSOR	fly	FBgn0001075	ft	P33450	5	14	Cadherin-related tumor suppressor (Protein fat) [Cleaved int	w
+SUPPRESSOR	fly	FBgn0001075	ft	P33450	4	9	Cadherin-related tumor suppressor (Protein fat) [Cleaved int	w
 SUPPRESSOR	fly	FBgn0003557	Su(dx)	Q9Y0H4	21	74	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
 SUPPRESSOR	fly	FBgn0003559	su(f)	P25991	6	52	Protein suppressor of forked	w
-SUPPRESSOR	fly	FBgn0003567	su(Hw)	P08970	56	401	Protein suppressor of hairy wing	w
-SUPPRESSOR	fly	FBgn0003575	su(sable)	P22293	48	201	Protein suppressor of sable	w
+SUPPRESSOR	fly	FBgn0003567	su(Hw)	P08970	54	399	Protein suppressor of hairy wing	w
+SUPPRESSOR	fly	FBgn0003575	su(sable)	P22293	42	187	Protein suppressor of sable	w
 SUPPRESSOR	fly	FBgn0003598	Su(var)3-7	P20193	27	109	Protein suppressor of variegation 3-7	w
-SUPPRESSOR	fly	FBgn0003612	Su(var)2-10	A1Z7P5	79	498	Suppressor of variegation 2-10, isoform I	w
-SUPPRESSOR	fly	FBgn0003638	su(w[a])	P12297	16	30	Protein suppressor of white apricot	w
+SUPPRESSOR	fly	FBgn0003612	Su(var)2-10	A1Z7P5	78	498	Suppressor of variegation 2-10, isoform I	w
+SUPPRESSOR	fly	FBgn0003638	su(w[a])	P12297	7	19	Protein suppressor of white apricot	w
 SUPPRESSOR	fly	FBgn0004465	mPges2	Q9V420	0	14	FI02878p (Suppressor of ref(2)P sterility (EC 1.8.1.7, EC 5.	w
 SUPPRESSOR	fly	FBgn0004837	Su(H)	P28159	67	483	Suppressor of hairless protein (J kappa-recombination signal	w
-SUPPRESSOR	fly	FBgn0005355	Su(fu)	Q9VG38	8	52	Suppressor of fused homolog	w
-SUPPRESSOR	fly	FBgn0015402	ksr	Q24171	365	1175	AT08303p (KSR) (Kinase suppressor of ras) (Kinase suppressor	w
-SUPPRESSOR	fly	FBgn0020238	14-3-3epsilon	P92177	109	301	14-3-3 protein epsilon (Suppressor of Ras1 3-9)	w
-SUPPRESSOR	fly	FBgn0020887	Su(z)12	Q9NJG9	57	443	Polycomb protein Su(z)12 (Suppressor 12 of zeste protein)	w
-SUPPRESSOR	fly	FBgn0021760	chb	Q9NBD7	15	58	CLIP-associating protein (Misexpression suppressor of ras 7)	w
+SUPPRESSOR	fly	FBgn0005355	Su(fu)	Q9VG38	8	51	Suppressor of fused homolog	w
+SUPPRESSOR	fly	FBgn0015402	ksr	Q24171	364	1175	AT08303p (KSR) (Kinase suppressor of ras) (Kinase suppressor	w
+SUPPRESSOR	fly	FBgn0020238	14-3-3epsilon	P92177	109	299	14-3-3 protein epsilon (Suppressor of Ras1 3-9)	w
+SUPPRESSOR	fly	FBgn0020887	Su(z)12	Q9NJG9	55	442	Polycomb protein Su(z)12 (Suppressor 12 of zeste protein)	w
+SUPPRESSOR	fly	FBgn0021760	chb	Q9NBD7	5	38	CLIP-associating protein (Misexpression suppressor of ras 7)	w
 SUPPRESSOR	fly	FBgn0025355	SuUR	Q9VTE2	4	16	Protein suppressor of underreplication	w
 SUPPRESSOR	fly	FBgn0025639	Hmt4-20	Q9W5E0	4	15	Histone-lysine N-methyltransferase Suv4-20 (EC 2.1.1.361) (E	w
 SUPPRESSOR	fly	FBgn0028525	c(2)M	Q9VJL5	2	7	Crossover suppressor on 2 of manheim (GM03132p)	w
 SUPPRESSOR	fly	FBgn0029504	CHES-1-like	Q9W3Q5	37	100	Checkpoint suppressor 1-like, isoform A (Checkpoint suppress	w
 SUPPRESSOR	fly	FBgn0030869	Socs16D	M9PHY7	6	65	Suppressor of cytokine signaling at 16D, isoform B	w
 SUPPRESSOR	fly	FBgn0032694	MESR3	M9PDC4	1	5	Misexpression suppressor of ras 3, isoform B	w
-SUPPRESSOR	fly	FBgn0033266	Socs44A	Q7JVF1	4	26	LP02169p (Suppressor of cytokine signaling at 44A)	w
-SUPPRESSOR	fly	FBgn0034240	MESR4	A1ZAV3	8	22	Misexpression suppressor of ras 4, isoform A (Misexpression 	w
+SUPPRESSOR	fly	FBgn0033266	Socs44A	Q7JVF1	4	23	LP02169p (Suppressor of cytokine signaling at 44A)	w
+SUPPRESSOR	fly	FBgn0034240	MESR4	A1ZAV3	3	12	Misexpression suppressor of ras 4, isoform A (Misexpression 	w
 SUPPRESSOR	fly	FBgn0036666	TSG101	Q9VVA7	21	132	Tumor suppressor protein 101 (Tumor susceptibility gene 101)	w
-SUPPRESSOR	fly	FBgn0036846	MESR6	M9PI97	7	16	Misexpression suppressor of ras 6, isoform B	w
-SUPPRESSOR	fly	FBgn0038965	mats	Q95RA8	87	1154	MOB kinase activator-like 1 (Mob as tumor suppressor protein	w
-SUPPRESSOR	fly	FBgn0041111	lilli	Q9VQI9	28	80	AF4/FMR2 family member lilli (Protein lilliputian) (Suppress	w
+SUPPRESSOR	fly	FBgn0036846	MESR6	M9PI97	2	4	Misexpression suppressor of ras 6, isoform B	w
+SUPPRESSOR	fly	FBgn0038965	mats	Q95RA8	87	1152	MOB kinase activator-like 1 (Mob as tumor suppressor protein	w
+SUPPRESSOR	fly	FBgn0041111	lilli	Q9VQI9	26	76	AF4/FMR2 family member lilli (Protein lilliputian) (Suppress	w
 SUPPRESSOR	fly	FBgn0041184	Socs36E	Q8INY1	5	25	Suppressor of cytokine signaling at 36E, isoform D	w
 SUPPRESSOR	fly	FBgn0043069	MESK4	Q9GU54	0	1	LD15753p (Misexpression suppressor of KSR) (Misexpression su	w
-SUPPRESSOR	fly	FBgn0043070	MESK2	Q9GU50	7	58	GH09802p (Misexpression suppressor of KSR)	w
+SUPPRESSOR	fly	FBgn0043070	MESK2	Q9GU50	5	43	GH09802p (Misexpression suppressor of KSR)	w
 SUPPRESSOR	fly	FBgn0051274	CG31274	Q9GU54	4	88	LD15753p (Misexpression suppressor of KSR) (Misexpression su	w
 SUPPRESSOR	fly	FBgn0259482	Mob3	Q9VL13	0	5	MOB kinase activator-like 3 (Mob as tumor suppressor protein	w
 SUPPRESSOR	fly	FBgn0259676	Prim2	Q9VPH2	5	35	DNA primase large subunit (DNA polymerase subunit beta) (Sup	w
-SUPPRESSOR	fly	FBgn0261574	kug	Q9VW71	0	3	Fat-like cadherin-related tumor suppressor homolog (Protein 	w
-SUPPRESSOR	fly	FBgn0265623	Su(z)2	A0A0B4KEM5	46	162	Suppressor of zeste 2, isoform C	w
-SUPPRESSOR	fly	FBgn0283500	Sac1	Q9W0I6	1	39	Phosphatidylinositol-3-phosphatase SAC1 (EC 3.1.3.64) (Phosp	w
-SUPPRESSOR	fly	FBgn0290182	Su(var)3-9	P45975	123	449	Suppressor of variegation 3-9	w
+SUPPRESSOR	fly	FBgn0261574	kug	Q9VW71	0	2	Fat-like cadherin-related tumor suppressor homolog (Protein 	w
+SUPPRESSOR	fly	FBgn0265623	Su(z)2	A0A0B4KEM5	42	151	Suppressor of zeste 2, isoform C	w
+SUPPRESSOR	fly	FBgn0283500	Sac1	Q9W0I6	1	36	Phosphatidylinositol-3-phosphatase SAC1 (EC 3.1.3.64) (Phosp	w
+SUPPRESSOR	fly	FBgn0290182	Su(var)3-9	P45975	121	449	Suppressor of variegation 3-9	w
 SUPPRESSOR	fly	FBgn0290203	Su(var)2-1	Q9VL20	3	8	Suppressor of variegation 2-1	w
 SUPPRESSOR	human	O00409	FOXN3	O00409	111	406	Forkhead box protein N3 (Checkpoint suppressor 1)	w
 SUPPRESSOR	human	O00534	VWA5A	O00534	4	110	von Willebrand factor A domain-containing protein 5A (Breast	w

@@ -23,7 +23,7 @@ CHEA75A	fly	FBgn0036783	CheA75a	Q9VVP3	13	251	Chemosensory protein A 75a
 CHEA7A	fly	FBgn0029948	CheA7a	Q9W3R2	15	249	Chemosensory protein A 7a	
 CHEA84A	fly	FBgn0261290	CheA84a	Q2MGK0	21	246	Chemosensory protein A 84a	
 CHEA86A	fly	FBgn0261291	CheA86a	Q4AB33	38	245	Chemosensory protein A 86a	
-CHEA87A	fly	FBgn0038142	CheA87a	Q9VFW3	1	4	Chemosensory protein A 87a	
+CHEA87A	fly	FBgn0038142	CheA87a	Q9VFW3	0	3	Chemosensory protein A 87a	
 CHEAY	helicobacter-pylori	O25153	cheAY	O25153	4	58	Sensor histidine kinase CheAY	
 CHEB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9X5	cheB	Q0P9X5	0	23	protein-glutamate methylesterase	
 CHEB	escherichia-coli-83333	P07330	cheB	P07330	2	14	Protein-glutamate methylesterase/protein-glutamine glutamina	
@@ -45,11 +45,11 @@ CHEB93B	fly	FBgn0051438	CheB93b	Q8IN27	21	244	Chemosensory protein B 93b
 CHEB98A	fly	FBgn0261289	CheB98a	Q9VAT5	21	244	Chemosensory protein A 98a	
 CHECK	yeast	P26448	BUB2	P26448	4	42	Mitotic check point protein BUB2	w
 CHECK	yeast	P47113	BFA1	P47113	4	36	Mitotic check point protein BFA1	w
-CHECKPOINT	fly	FBgn0025807	Rad9	A8JNV5	6	40	Cell cycle checkpoint control protein	w
-CHECKPOINT	fly	FBgn0026417	Hus1-like	Q9VN60	4	23	Checkpoint protein	w
-CHECKPOINT	fly	FBgn0029006	Smurf	Q9V853	27	81	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+CHECKPOINT	fly	FBgn0025807	Rad9	A8JNV5	6	37	Cell cycle checkpoint control protein	w
+CHECKPOINT	fly	FBgn0026417	Hus1-like	Q9VN60	4	22	Checkpoint protein	w
+CHECKPOINT	fly	FBgn0029006	Smurf	Q9V853	19	72	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
 CHECKPOINT	fly	FBgn0029504	CHES-1-like	Q9W3Q5	37	100	Checkpoint suppressor 1-like, isoform A (Checkpoint suppress	w
-CHECKPOINT	fly	FBgn0051453	pch2	Q8SX76	0	50	LD24646p (Pachytene checkpoint 2, isoform A) (Pachytene chec	w
+CHECKPOINT	fly	FBgn0051453	pch2	Q8SX76	0	46	LD24646p (Pachytene checkpoint 2, isoform A) (Pachytene chec	w
 CHECKPOINT	human	O00409	FOXN3	O00409	111	406	Forkhead box protein N3 (Checkpoint suppressor 1)	w
 CHECKPOINT	human	O14757	CHEK1	O14757	284	1928	Serine/threonine-protein kinase Chk1 (EC 2.7.11.1) (CHK1 che	w
 CHECKPOINT	human	O43683	BUB1	O43683	63	367	Mitotic checkpoint serine/threonine-protein kinase BUB1 (hBU	w
@@ -113,7 +113,7 @@ CHED	human	Q14004	CDK13	Q14004	78	295
 CHEDG1	human	P21453	S1PR1	P21453	39	427		
 CHEERIO	fly	FBgn0014141	cher	Q7KSF4	1	33	cheerio	w
 CHEESE	fly	FBgn0003656	sws	Q9U969	394	2401	Neuropathy target esterase sws (Swiss cheese) (DSWS) (EC 3.1	w
-CHEESE	fly	FBgn0043362	bchs	Q9VML2	4	53	Blue cheese	w
+CHEESE	fly	FBgn0043362	bchs	Q9VML2	4	52	Blue cheese	w
 CHEK1	human	O14757	CHEK1	O14757	284	1928	Serine/threonine-protein kinase Chk1 (EC 2.7.11.1) (CHK1 che	
 CHEK1	mus-musculus	O35280	Chek1	O35280	6	61	Serine/threonine-protein kinase Chk1	
 CHEK1	zebrafish	Q7ZVD7	chek1	Q7ZVD7	14	121	Serine/threonine-protein (EC 2.7.11.1)	
@@ -312,7 +312,7 @@ CHEMOSENSORY	fly	FBgn0029948	CheA7a	Q9W3R2	15	249	Chemosensory protein A 7a	w
 CHEMOSENSORY	fly	FBgn0032888	CheB38c	Q9VIJ1	15	243	Chemosensory protein B 38c	w
 CHEMOSENSORY	fly	FBgn0035089	4Csp3	Q9W0X2	122	1329	GEO07322p1 (MIP15436p) (Pherokine 3, isoform A) (Pherokine 3	w
 CHEMOSENSORY	fly	FBgn0036783	CheA75a	Q9VVP3	13	251	Chemosensory protein A 75a	w
-CHEMOSENSORY	fly	FBgn0038142	CheA87a	Q9VFW3	1	4	Chemosensory protein A 87a	w
+CHEMOSENSORY	fly	FBgn0038142	CheA87a	Q9VFW3	0	3	Chemosensory protein A 87a	w
 CHEMOSENSORY	fly	FBgn0038888	CheB93a	Q9VDA3	24	248	Chemosensory protein B 93a	w
 CHEMOSENSORY	fly	FBgn0050172	4Csp1	Q8MLP9	25	245	GEO08457p1 (Putative chemosensory protein CSP1)	w
 CHEMOSENSORY	fly	FBgn0051438	CheB93b	Q8IN27	21	244	Chemosensory protein B 93b	w

@@ -1,5 +1,5 @@
 PAN	arabidopsis-thaliana	Q9SX27	PAN	Q9SX27	7	205	Transcription factor PERIANTHIA	
-PAN	fly	FBgn0085432	pan	Q8IMA8	136	532	Protein pangolin, isoform J (dTCF)	
+PAN	fly	FBgn0085432	pan	Q8IMA8	136	530	Protein pangolin, isoform J (dTCF)	
 PAN	methanocaldococcus-jannaschii	Q58576	pan	Q58576	0	7	Proteasome-activating nucleotidase	
 PAN-1	worm	Q9U3A0	pan-1	Q9U3A0	0	3	P-granule-associated novel protein 1	
 PAN-3	worm	O16208	CELE_F29A7.3	O16208	0	2	PAN-3 domain-containing protein	w
@@ -19,7 +19,7 @@ PAN1B	human	Q8NBQ5	HSD17B11	Q8NBQ5	17	419
 PAN2	ajellomyces-capsulatus	C0NIB6	PAN2	C0NIB6	3	4	PAN2-PAN3 deadenylation complex catalytic subunit PAN2	
 PAN2	candida-albicans-237561	Q5APK0	PAN2	Q5APK0	2	4	PAN2-PAN3 deadenylation complex catalytic subunit PAN2	
 PAN2	cladophialophora-carrionii	A0A1C1CCV3	pan2	A0A1C1CCV3	2	5	PAN2-PAN3 deadenylation complex catalytic subunit PAN2	
-PAN2	fly	FBgn0033352	PAN2	A1Z7K9	8	89	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	
+PAN2	fly	FBgn0033352	PAN2	A1Z7K9	8	85	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	
 PAN2	fonsecaea-pedrosoi-cbs-271-37	A0A0D2F0T9	PAN2	A0A0D2F0T9	2	5	PAN2-PAN3 deadenylation complex catalytic subunit PAN2	
 PAN2	human	Q504Q3	PAN2	Q504Q3	16	434	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	
 PAN2	human	Q96MN2	NLRP4	Q96MN2	4	36		
@@ -33,8 +33,8 @@ PAN2	sporothrix-schenckii	U7PUU3	PAN2	U7PUU3	2	5	PAN2-PAN3 deadenylation complex
 PAN2	yeast	P53010	PAN2	P53010	1	12	PAN2-PAN3 deadenylation complex catalytic subunit PAN2	
 PAN2	zebrafish	E9QJN4	pan2	E9QJN4	2	11	PAN2-PAN3 deadenylation complex catalytic subunit PAN2	w
 PAN2	zebrafish	E9QJN4	pan2	E9QJN4	2	11	PAN2-PAN3 deadenylation complex catalytic subunit PAN2	w
-PAN2-PAN3	fly	FBgn0033352	PAN2	A1Z7K9	8	89	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
-PAN2-PAN3	fly	FBgn0035397	PAN3	Q95RR8	87	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
+PAN2-PAN3	fly	FBgn0033352	PAN2	A1Z7K9	8	85	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
+PAN2-PAN3	fly	FBgn0035397	PAN3	Q95RR8	86	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 PAN2-PAN3	human	Q504Q3	PAN2	Q504Q3	16	434	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
 PAN2-PAN3	human	Q58A45	PAN3	Q58A45	10	143	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 PAN2-PAN3	worm	P34653	panl-3	P34653	5	30	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
@@ -47,7 +47,7 @@ PAN3	ajellomyces-capsulatus	C0NEU6	PAN3	C0NEU6	2	8	PAN2-PAN3 deadenylation compl
 PAN3	candida-albicans-237561	Q5AK10	PAN3	Q5AK10	2	7	PAN2-PAN3 deadenylation complex subunit PAN3	
 PAN3	cladophialophora-carrionii	A0A1C1CNH0	pan3	A0A1C1CNH0	2	8	PAN2-PAN3 deadenylation complex subunit PAN3	
 PAN3	dictyostelium-discoideum	P0CD65	pan3	P0CD65	0	5	PAN2-PAN3 deadenylation complex subunit pan3	
-PAN3	fly	FBgn0035397	PAN3	Q95RR8	87	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	
+PAN3	fly	FBgn0035397	PAN3	Q95RR8	86	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	
 PAN3	fonsecaea-pedrosoi-cbs-271-37	A0A0D2GS01	PAN3	A0A0D2GS01	2	8	PAN2-PAN3 deadenylation complex subunit PAN3	
 PAN3	human	Q58A45	PAN3	Q58A45	10	143	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	
 PAN3	madurella-mycetomatis	A0A175W1A4	PAN3	A0A175W1A4	2	12	PAN2-PAN3 deadenylation complex subunit PAN3	
@@ -168,7 +168,7 @@ PANETH	human	Q96S94	CCNL2	Q96S94	70	527	Cyclin-L2 (Paneth cell-enhanced expressi
 PANF	escherichia-coli-83333	P16256	panF	P16256	0	2	Sodium/pantothenate symporter	
 PANF	salmonella-typhimurium	Q8ZLN9	panF	Q8ZLN9	0	1	Sodium/pantothenate symporter	
 PANG	human	Q9P232	CNTN3	Q9P232	30	83		
-PANGOLIN	fly	FBgn0085432	pan	Q8IMA8	136	532	Protein pangolin, isoform J (dTCF)	w
+PANGOLIN	fly	FBgn0085432	pan	Q8IMA8	136	530	Protein pangolin, isoform J (dTCF)	w
 PANGOLIN	fly	FBgn0263240	Coop	Q7JUZ9	56	398	Corepressor of pangolin, isoform A (Corepressor of pangolin,	w
 PANK	human	Q8TE04	PANK1	Q8TE04	5	64		
 PANK1	arabidopsis-thaliana	O80765	PANK1	O80765	1	1	Pantothenate kinase 1	
@@ -253,4 +253,4 @@ PANX3	human	Q96QZ0	PANX3	Q96QZ0	3	55	Pannexin-3
 PANX3_HUMAN	human	Q96QZ0	PANX3	Q96QZ0	3	55		
 PANZ	escherichia-coli-83333	P37613	panZ	P37613	0	2	PanD regulatory factor	
 PANZ	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H464	panZ	A0A0H3H464	0	5	PanD regulatory factor	
-PAN_10	fly	FBgn0085432	pan	Q8IMA8	136	532		
+PAN_10	fly	FBgn0085432	pan	Q8IMA8	136	530		

@@ -34,7 +34,7 @@ RETGC-2	human	P51841	GUCY2F	P51841	7	72	Retinal guanylyl cyclase 2 (RETGC-2) (EC
 RETGC-2	zebrafish	E7F111	gc2	E7F111	6	44		
 RETGC1	human	Q02846	GUCY2D	Q02846	11	125		
 RETGC2	human	P51841	GUCY2F	P51841	7	72		
-RETI	fly	FBgn0031759	Kdm5	Q9VMJ7	23	93	Lysine-specific demethylase 5 (EC 1.14.11.67) (Histone demet	w
+RETI	fly	FBgn0031759	Kdm5	Q9VMJ7	16	78	Lysine-specific demethylase 5 (EC 1.14.11.67) (Histone demet	w
 RETI	human	O43174	CYP26A1	O43174	5	80	Cytochrome P450 26A1 (CYP26A1) (EC 1.14.13.-) (Cytochrome P4	w
 RETIC	human	O14983	ATP2A1	O14983	9	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 1 (SERCA1)	w
 RETIC	human	P16615	ATP2A2	P16615	4	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 (SERCA2)	w
@@ -63,7 +63,7 @@ RETICULON-4	zebrafish	E7F813	si:ch211-237i5.4	E7F813	2	34	Reticulon-4 receptor	w
 RETICULON-4-INTERACTING	human	Q8WWV3	RTN4IP1	Q8WWV3	5	130	NAD(P)H oxidoreductase RTN4IP1, mitochondrial (EC 1.6.5.-) (	w
 RETICULON-4-INTERACTING	worm	Q4W4Z2	rad-8	Q4W4Z2	0	3	Reticulon-4-interacting protein 1, mitochondrial	w
 RETICULON-LIKE	fly	FBgn0015831	Rtnl2	Q9VIB7	0	12	Reticulon-like protein	w
-RETICULON-LIKE	fly	FBgn0053113	Rtnl1	E1JHT6	20	261	Reticulon-like protein	w
+RETICULON-LIKE	fly	FBgn0053113	Rtnl1	E1JHT6	20	259	Reticulon-like protein	w
 RETICULON-LIKE	fly	FBgn0262100	CG42853	C0PDE0	3	62	Reticulon-like protein	w
 RETICULON-LIKE	yeast	Q04947	RTN1	Q04947	3	100	Reticulon-like protein 1	w
 RETICULON-LIKE	yeast	Q12443	RTN2	Q12443	4	41	Reticulon-like protein 2	w
@@ -73,14 +73,14 @@ RETICULOPHAGY	human	Q9H6L5	RETREG1	Q9H6L5	15	184	Reticulophagy regulator 1 (Reti
 RETICULOPHAGY	zebrafish	F1QYM7	retreg3	F1QYM7	3	106	Reticulophagy regulator 3	w
 RETICULUM	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
 RETICULUM	fly	FBgn0031950	Herp	Q9VLW9	1	8	Homocysteine-induced endoplasmic reticulum protein, isoform 	w
-RETICULUM	fly	FBgn0032398	CG6766	Q9VKC7	30	305	Endoplasmic reticulum lectin 1 (ER lectin)	w
+RETICULUM	fly	FBgn0032398	CG6766	Q9VKC7	29	304	Endoplasmic reticulum lectin 1 (ER lectin)	w
 RETICULUM	fly	FBgn0033309	Lnpk	Q7K2N0	0	3	Endoplasmic reticulum junction formation protein lunapark	w
 RETICULUM	fly	FBgn0035165	CG13887	Q9W0M4	4	207	Endoplasmic reticulum transmembrane protein	w
 RETICULUM	fly	FBgn0037327	PEK	Q9NIV1	303	3498	Eukaryotic translation initiation factor 2-alpha kinase (EC 	w
 RETICULUM	fly	FBgn0038127	CG8476	Q9VFY1	2	9	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
 RETICULUM	fly	FBgn0261274	Ero1L	Q9V3A6	7	35	Ero1-like protein (EC 1.8.4.-) (Endoplasmic reticulum oxidor	w
 RETICULUM	fly	FBgn0263006	SERCA	P22700	4	154	Calcium-transporting ATPase sarcoplasmic/endoplasmic reticul	w
-RETICULUM	fly	FBgn0286784	TER94	Q7KN62	22	340	Transitional endoplasmic reticulum 94	w
+RETICULUM	fly	FBgn0286784	TER94	Q7KN62	21	336	Transitional endoplasmic reticulum 94	w
 RETICULUM	fly	FBgn0287183	l(3)80Fg	Q7PLG1	232	2405	DnaJ homolog subfamily C member 16 (Endoplasmic reticulum DN	w
 RETICULUM	human	A6NNS2	DHRS7C	A6NNS2	4	57	Dehydrogenase/reductase SDR family member 7C (EC 1.1.1.105) 	w
 RETICULUM	human	O14983	ATP2A1	O14983	9	470	Sarcoplasmic/endoplasmic reticulum calcium ATPase 1 (SERCA1)	w
@@ -213,9 +213,9 @@ RETINA-SPECIFIC	human	P54845	NRL	P54845	108	370	Neural retina-specific leucine z
 RETINA-SPECIFIC	human	Q9Y5X4	NR2E3	Q9Y5X4	74	426	Photoreceptor-specific nuclear receptor (Nuclear receptor su	w
 RETINA-SPECIFIC	worm	B0M0M9	maf-1	B0M0M9	4	13	Neural retina-specific leucine zipper protein	w
 RETINA-SPECIFIC	zebrafish	A0AB32TC82	nrl	A0AB32TC82	24	26	Neural retina-specific leucine zipper protein isoform X1	w
-RETINAL	fly	FBgn0003218	rdgB	M9PEJ5	6	37	Retinal degeneration B, isoform J	w
+RETINAL	fly	FBgn0003218	rdgB	M9PEJ5	5	34	Retinal degeneration B, isoform J	w
 RETINAL	fly	FBgn0020617	Rx	Q9W2Q1	107	389	Retinal Homeobox	w
-RETINAL	fly	FBgn0027872	rdgBbeta	Q9U9P7	1	9	Cytoplasmic phosphatidylinositol transfer protein 1 (Retinal	w
+RETINAL	fly	FBgn0027872	rdgBbeta	Q9U9P7	0	4	Cytoplasmic phosphatidylinositol transfer protein 1 (Retinal	w
 RETINAL	fly	FBgn0265959	rdgC	P40421	54	923	retinal degeneration C	w
 RETINAL	human	O00341	SLC1A7	O00341	6	46	Excitatory amino acid transporter 5 (Retinal glutamate trans	w
 RETINAL	human	O00562	PITPNM1	O00562	11	84	Membrane-associated phosphatidylinositol transfer protein 1 	w
@@ -267,8 +267,8 @@ RETINITIS	human	Q96KN7	RPGRIP1	Q96KN7	42	130	X-linked retinitis pigmentosa GTPas
 RETINITIS	worm	Q5DX34	glo-4	Q5DX34	0	21	X-linked retinitis pigmentosa GTPase regulator homolog	w
 RETINITIS	zebrafish	F1QM29	rpgrb	F1QM29	5	58	X-linked retinitis pigmentosa GTPase regulator	w
 RETINOBLAS	human	Q7Z6E9	RBBP6	Q7Z6E9	106	457	E3 ubiquitin-protein ligase RBBP6 (EC 2.3.2.27) (Proliferati	w
-RETINOBLASTOMA	fly	FBgn0015799	Rbf	Q24472	105	466	Retinoblastoma family protein	w
-RETINOBLASTOMA	fly	FBgn0038390	Rbf2	Q9VF04	45	394	RE32990p (Retinoblastoma protein homolog RBF2) (Retinoblasto	w
+RETINOBLASTOMA	fly	FBgn0015799	Rbf	Q24472	104	466	Retinoblastoma family protein	w
+RETINOBLASTOMA	fly	FBgn0038390	Rbf2	Q9VF04	44	394	RE32990p (Retinoblastoma protein homolog RBF2) (Retinoblasto	w
 RETINOBLASTOMA	human	Q92499	DDX1	Q92499	19	465	ATP-dependent RNA helicase DDX1 (EC 3.6.4.13) (DEAD box prot	w
 RETINOBLASTOMA-AS	human	O14777	NDC80	O14777	136	443	Kinetochore protein NDC80 homolog (Highly expressed in cance	w
 RETINOBLASTOMA-ASSOCIATED	human	O75150	RNF40	O75150	74	375	E3 ubiquitin-protein ligase BRE1B (BRE1-B) (EC 2.3.2.27) (95	w
@@ -286,7 +286,7 @@ RETINOBLASTOMA-BINDING	human	Q15291	RBBP5	Q15291	60	742	Retinoblastoma-binding p
 RETINOBLASTOMA-BINDING	human	Q16576	RBBP7	Q16576	81	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
 RETINOBLASTOMA-BINDING	human	Q99708	RBBP8	Q99708	125	635	DNA endonuclease RBBP8 (EC 3.1.-.-) (CtBP-interacting protei	w
 RETINOBLASTOMA-BINDING	worm	Q09309	rbbp-5	Q09309	8	113	Retinoblastoma-binding protein homolog 5	w
-RETINOBLASTOMA-FAMILY	fly	FBgn0038390	Rbf2	Q9VF04	45	394	RE32990p (Retinoblastoma protein homolog RBF2) (Retinoblasto	w
+RETINOBLASTOMA-FAMILY	fly	FBgn0038390	Rbf2	Q9VF04	44	394	RE32990p (Retinoblastoma protein homolog RBF2) (Retinoblasto	w
 RETINOBLASTOMA-INTERACTING	human	Q99708	RBBP8	Q99708	125	635	DNA endonuclease RBBP8 (EC 3.1.-.-) (CtBP-interacting protei	w
 RETINOBLASTOMA-LIKE	human	P28749	RBL1	P28749	45	142	Retinoblastoma-like protein 1 (107 kDa retinoblastoma-associ	w
 RETINOBLASTOMA-LIKE	human	Q08999	RBL2	Q08999	33	119	Retinoblastoma-like protein 2 (130 kDa retinoblastoma-associ	w
@@ -364,7 +364,7 @@ RETINOID	human	Q16518	RPE65	Q16518	1	57	Retinoid isomerohydrolase (EC 3.1.1.64) 
 RETINOID	human	Q96RI1	NR1H4	Q96RI1	78	234	Bile acid receptor (Farnesoid X-activated receptor) (Farneso	w
 RETINOID	human	Q96RL1	UIMC1	Q96RL1	66	319	BRCA1-A complex subunit RAP80 (Receptor-associated protein 8	w
 RETINOID	zebrafish	Q6PBW5	rpe65a	Q6PBW5	1	1	Retinoid isomerohydrolase	w
-RETINOID-	fly	FBgn0087002	apolpp	Q9V496	6	39	Apolipophorins (Retinoid- and fatty acid-binding glycoprotei	w
+RETINOID-	fly	FBgn0087002	apolpp	Q9V496	6	36	Apolipophorins (Retinoid- and fatty acid-binding glycoprotei	w
 RETINOID-BINDING	human	P10745	RBP3	P10745	7	43	Retinol-binding protein 3 (Interphotoreceptor retinoid-bindi	w
 RETINOID-BINDING	human	Q96R05	RBP7	Q96R05	12	68	Retinoid-binding protein 7 (Cellular retinoic acid-binding p	w
 RETINOID-BINDING	zebrafish	B3DHK5	rbp7b	B3DHK5	1	2	Retinoid-binding protein 7	w
@@ -435,7 +435,7 @@ RETINYL	human	Q05469	LIPE	Q05469	5	138	Hormone-sensitive lipase (HSL) (EC 3.1.1.
 RETINYL-ESTER	human	Q6E213	AWAT2	Q6E213	0	26	Acyl-CoA wax alcohol acyltransferase 2 (EC 2.3.1.75) (11-cis	w
 RETL1	human	P56159	GFRA1	P56159	28	184		
 RETL2	human	O00451	GFRA2	O00451	15	106		
-RETM	fly	FBgn0031814	retm	M9PB50	0	13	Real-time, isoform B	
+RETM	fly	FBgn0031814	retm	M9PB50	0	9	Real-time, isoform B	
 RETN	fly	FBgn0004795	retn	Q24573	104	414	Protein dead ringer (Protein retained)	
 RETN	human	Q9HD89	RETN	Q9HD89	13	209	Resistin (Adipose tissue-specific secretory factor) (ADSF) (	
 RETN	mus-musculus	Q99P87	Retn	Q99P87	0	25	Resistin	

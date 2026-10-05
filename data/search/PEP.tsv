@@ -1,6 +1,6 @@
 PEP	arabidopsis-thaliana	Q9SZH4	PEP	Q9SZH4	1	7	RNA-binding KH domain-containing protein PEPPER	
 PEP	cladophialophora-carrionii	A0A1C1CG88	pep	A0A1C1CG88	5	80	mitochondrial processing peptidase	
-PEP	fly	FBgn0004401	Pep	P41073	16	109	Zinc finger protein on ecdysone puffs	
+PEP	fly	FBgn0004401	Pep	P41073	11	97	Zinc finger protein on ecdysone puffs	
 PEP	human	P48147	PREP	P48147	24	165		
 PEP-19	human	P48539	PCP4	P48539	58	235	Calmodulin regulator protein PCP4 (Brain-specific polypeptid	w
 PEP1	candida-albicans-237561	A0A1D8PFH5	PEP1	A0A1D8PFH5	3	15	Type I sorting receptor	
@@ -51,7 +51,7 @@ PEPC17	glycine-max	I1LCU6	PEPC17	I1LCU6	0	6	phosphoenolpyruvate carboxylase
 PEPC4	glycine-max	Q6Q2Z8	PEPC4	Q6Q2Z8	0	6	phosphoenolpyruvate carboxylase	
 PEPCK-C	human	P35558	PCK1	P35558	9	232	Phosphoenolpyruvate carboxykinase, cytosolic [GTP] (PEPCK-C)	w
 PEPCK-M	human	Q16822	PCK2	Q16822	8	137	Phosphoenolpyruvate carboxykinase [GTP], mitochondrial (PEPC	w
-PEPCK1	fly	FBgn0003067	Pepck1	P20007	2	103	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
+PEPCK1	fly	FBgn0003067	Pepck1	P20007	2	102	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
 PEPCK1	human	P35558	PCK1	P35558	9	232		
 PEPCK2	fly	FBgn0034356	Pepck2	Q7JXB5	3	100	phosphoenolpyruvate carboxykinase (GTP) (EC 4.1.1.32)	
 PEPCK2	human	Q16822	PCK2	Q16822	8	137		
@@ -137,8 +137,8 @@ PEPTIDASE	fly	FBgn0028514	CG4793	Q8IP30	60	236	Peptidase S1 domain-containing pr
 PEPTIDASE	fly	FBgn0028517	CG18478	Q7KT71	47	243	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0028866	CG18420	Q7KT83	24	244	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0029828	CG6067	Q9W452	41	245	Peptidase S1 domain-containing protein	w
-PEPTIDASE	fly	FBgn0030306	Spase25	Q9VYY2	4	44	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
-PEPTIDASE	fly	FBgn0030653	CG7860	Q9VXT7	3	38	Probable isoaspartyl peptidase/L-asparaginase CG7860 (EC 3.4	w
+PEPTIDASE	fly	FBgn0030306	Spase25	Q9VYY2	4	36	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
+PEPTIDASE	fly	FBgn0030653	CG7860	Q9VXT7	1	34	Probable isoaspartyl peptidase/L-asparaginase CG7860 (EC 3.4	w
 PEPTIDASE	fly	FBgn0030688	CG8952	Q9VXP8	45	256	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0030776	CG4653	Q9VXC6	0	3	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0030815	CG8945	Q9VX86	0	1	Peptidase M14 carboxypeptidase A domain-containing protein	w
@@ -147,11 +147,11 @@ PEPTIDASE	fly	FBgn0031260	Spp	Q9VPQ7	0	21	SD07518p (Signal peptide peptidase (EC
 PEPTIDASE	fly	FBgn0031409	CG4271	Q9VQA4	0	1	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0031470	CG18557	Q9VQH8	76	243	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0031471	CG3117	Q9VQH9	46	243	Peptidase S1 domain-containing protein	w
-PEPTIDASE	fly	FBgn0031835	Dpp10	X2J9P4	147	2377	Dipeptidyl peptidase 10, isoform B (EC 3.4.14.1, EC 3.4.14.2	w
+PEPTIDASE	fly	FBgn0031835	Dpp10	X2J9P4	147	2376	Dipeptidyl peptidase 10, isoform B (EC 3.4.14.1, EC 3.4.14.2	w
 PEPTIDASE	fly	FBgn0031930	CG7025	Q9VLZ1	29	248	Peptidase M14 carboxypeptidase A domain-containing protein	w
 PEPTIDASE	fly	FBgn0032303	CG6508	Q9VKP7	39	217	Peptidase A1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0033038	Mipep	A1Z6H6	0	6	Peptidase M3A/M3B catalytic domain-containing protein	w
-PEPTIDASE	fly	FBgn0033235	Mppa	Q7K3W2	22	179	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
+PEPTIDASE	fly	FBgn0033235	Mppa	Q7K3W2	22	174	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
 PEPTIDASE	fly	FBgn0033321	CG8738	A1Z7H8	24	244	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0033363	CG13744	A1Z7M5	21	251	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0033469	CG12133	A1Z824	35	243	Peptidase S1 domain-containing protein	w
@@ -171,14 +171,14 @@ PEPTIDASE	fly	FBgn0036024	CG18180	Q9VT25	42	260	Peptidase S1 domain-containing p
 PEPTIDASE	fly	FBgn0036702	Afg3l2	Q8T4G5	4	115	AFG3 like matrix AAA peptidase subunit 2, isoform A (EC 3.4.	w
 PEPTIDASE	fly	FBgn0036817	CG6865	M9NDV6	30	248	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0036858	CG14088	Q9VVX9	54	244	Peptidase S1 domain-containing protein	w
-PEPTIDASE	fly	FBgn0037580	DppIII	Q9VHR8	3	149	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
-PEPTIDASE	fly	FBgn0037656	CG11986	Q9VHI3	1	6	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
+PEPTIDASE	fly	FBgn0037580	DppIII	Q9VHR8	2	145	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
+PEPTIDASE	fly	FBgn0037656	CG11986	Q9VHI3	0	2	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
 PEPTIDASE	fly	FBgn0037677	CG12951	Q9VHF8	26	244	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0038001	CG17404	Q9VGC0	48	248	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0038003	CG3916	Q9VGB8	67	255	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0038479	CG17477	Q9VEN0	45	243	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0038482	CG4053	Q9VEM7	88	245	Peptidase S1 domain-containing protein	w
-PEPTIDASE	fly	FBgn0038484	CG5246	Q9VEM6	44	251	Peptidase S1 domain-containing protein	w
+PEPTIDASE	fly	FBgn0038484	CG5246	Q9VEM6	43	246	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0038505	CG17283	Q9VEK5	37	248	Peptidase A1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0038506	CG5860	Q9VEK4	2	14	Peptidase A1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0038507	CG5863	Q9VEK3	22	247	Peptidase A1 domain-containing protein	w
@@ -232,7 +232,7 @@ PEPTIDASE	fly	FBgn0262801	twr	O97066	329	2398	Signal peptidase complex catalytic
 PEPTIDASE	fly	FBgn0263040	CG43335	A0A0B4K687	64	243	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0263041	CG43336	A0A0B4K7A9	35	244	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0263999	CG43742	A0A0B4KFF2	36	243	Peptidase S1 domain-containing protein	w
-PEPTIDASE	fly	FBgn0283478	und	Q9VL89	17	138	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+PEPTIDASE	fly	FBgn0283478	und	Q9VL89	17	134	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
 PEPTIDASE	human	A0A1B0GTW7	CIROP	A0A1B0GTW7	1	14	Ciliated left-right organizer metallopeptidase (EC 3.4.24.-)	w
 PEPTIDASE	human	D6RI10	SPINK2	D6RI10	1	22	Serine peptidase inhibitor Kazal type 2	w
 PEPTIDASE	human	H0YIN7	?	H0YIN7	0	4	Peptidase M24 domain-containing protein	w
@@ -436,12 +436,12 @@ PEPTIDE	fly	FBgn0011668	Mst57Da	Q9VBL6	41	277	Accessory gland-specific peptide 5
 PEPTIDE	fly	FBgn0011669	Mst57Db	Q9VBL7	0	4	Accessory gland-specific peptide 57Db (Male accessory gland 	w
 PEPTIDE	fly	FBgn0011670	Mst57Dc	Q9V3J3	22	256	Accessory gland-specific peptide 57Dc (45 kDa cAMP-dependent	w
 PEPTIDE	fly	FBgn0013767	Crz	Q26377	49	247	Pro-corazonin (Crz) (Dm-Crz) [Cleaved into: Corazonin; Coraz	w
-PEPTIDE	fly	FBgn0015360	Oxt	Q7KVA1	323	2516	Xylosyltransferase oxt (EC 2.4.2.26) (Imaginal disk type I) 	w
+PEPTIDE	fly	FBgn0015360	Oxt	Q7KVA1	323	2514	Xylosyltransferase oxt (EC 2.4.2.26) (Imaginal disk type I) 	w
 PEPTIDE	fly	FBgn0020392	Nmt	O61613	2	24	Glycylpeptide N-tetradecanoyltransferase (EC 2.3.1.97) (Myri	w
-PEPTIDE	fly	FBgn0020443	eRF3	Q9VK85	17	148	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+PEPTIDE	fly	FBgn0020443	eRF3	Q9VK85	16	144	Eukaryotic peptide chain release factor GTP-binding subunit 	w
 PEPTIDE	fly	FBgn0023178	Pdf	O96690	56	268	Protein PDF [Cleaved into: PDF precursor-related peptide (PA	w
 PEPTIDE	fly	FBgn0025583	BomS2	O77150	42	264	Bomanin Short 2 (Bomanin-2) (Immune-induced peptide 2) (DIM-	w
-PEPTIDE	fly	FBgn0029768	SPR	Q8SWR3	4	11	Sex peptide receptor	w
+PEPTIDE	fly	FBgn0029768	SPR	Q8SWR3	4	7	Sex peptide receptor	w
 PEPTIDE	fly	FBgn0031260	Spp	Q9VPQ7	0	21	SD07518p (Signal peptide peptidase (EC 3.4.23.-))	w
 PEPTIDE	fly	FBgn0031817	HemK1	Q9VMD3	1	11	peptide chain release factor N(5)-glutamine methyltransferas	w
 PEPTIDE	fly	FBgn0032840	sNPF	Q9VIQ0	43	245	Short neuropeptide F [Cleaved into: sNPF-associated peptide 	w
@@ -454,12 +454,12 @@ PEPTIDE	fly	FBgn0034329	BomS1	P82706	48	264	Bomanin Short 1 (Bomanin-1) (Immune-
 PEPTIDE	fly	FBgn0035023	ITP	Q0E8W5	34	260	Ion transport peptide, isoform C	w
 PEPTIDE	fly	FBgn0036046	Ilp2	Q9VT51	54	279	Probable insulin-like peptide 2 (dILP2) (Insulin-related pep	w
 PEPTIDE	fly	FBgn0036690	Ilp8	Q4V5V6	28	266	GEO10744p1 (IP06470p) (IP06570p) (Insulin-like peptide 8)	w
-PEPTIDE	fly	FBgn0036974	eRF1	M9PFR9	4	122	Eukaryotic peptide chain release factor subunit 1	w
+PEPTIDE	fly	FBgn0036974	eRF1	M9PFR9	3	110	Eukaryotic peptide chain release factor subunit 1	w
 PEPTIDE	fly	FBgn0039007	CCAP	Q9VCW0	53	250	Cardioactive peptide (Cardioacceleratory peptide 2a) (Crusta	w
 PEPTIDE	fly	FBgn0039031	Gbp3	Q9VCT2	29	249	GEO08278p1 (Growth-blocking peptide 3, isoform A) (Growth-bl	w
 PEPTIDE	fly	FBgn0039381	SppL	Q86P97	8	62	GM06145p (Signal peptide peptidase-like, isoform D (EC 3.4.2	w
-PEPTIDE	fly	FBgn0039396	CCAP-R	Q868T3	16	47	Crustacean cardioactive peptide receptor	w
-PEPTIDE	fly	FBgn0039722	Capa	Q9NIP6	35	253	Cardio acceleratory peptide 2b (Capability protein) (Myotrop	w
+PEPTIDE	fly	FBgn0039396	CCAP-R	Q868T3	14	43	Crustacean cardioactive peptide receptor	w
+PEPTIDE	fly	FBgn0039722	Capa	Q9NIP6	35	250	Cardio acceleratory peptide 2b (Capability protein) (Myotrop	w
 PEPTIDE	fly	FBgn0040653	Dso1	P82705	40	263	Daisho1 (Immune-induced peptide 4) (DIM-4)	w
 PEPTIDE	fly	FBgn0040717	Nplp4	Q9VQ66	20	258	Neuropeptide-like 4 (YSY peptide)	w
 PEPTIDE	fly	FBgn0040736	BomS3	Q9V8G0	62	263	Bomanin Short 3 (Bomanin-3) (Immune-induced peptide 3) (DIM-	w
@@ -809,7 +809,7 @@ PEPTIDE-ASSOCIATED	human	Q12864	CDH17	Q12864	19	237	Cadherin-17 (Intestinal pept
 PEPTIDE-CONTAINING	human	Q5UCC4	EMC10	Q5UCC4	8	64	ER membrane protein complex subunit 10 (Hematopoietic signal	w
 PEPTIDE-CONTAINING	worm	Q18912	CELE_D1005.5	Q18912	0	1	Signal peptide-containing protein	w
 PEPTIDE-CONVERTING	human	Q9Y5Q5	CORIN	Q9Y5Q5	13	73	Atrial natriuretic peptide-converting enzyme (EC 3.4.21.-) (	w
-PEPTIDE-METHIONINE	fly	FBgn0000565	MsrA	M9PCL6	2	23	peptide-methionine (S)-S-oxide reductase (EC 1.8.4.11) (Pept	w
+PEPTIDE-METHIONINE	fly	FBgn0000565	MsrA	M9PCL6	1	18	peptide-methionine (S)-S-oxide reductase (EC 1.8.4.11) (Pept	w
 PEPTIDE-METHIONINE	human	Q9UJ68	MSRA	Q9UJ68	9	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
 PEPTIDE-METHIONINE	worm	O02089	msra-1	O02089	1	53	peptide-methionine (S)-S-oxide reductase	w
 PEPTIDE-METHIONINE	zebrafish	A0A8M1P8M4	msrb3	A0A8M1P8M4	3	40	Peptide-methionine (R)-S-oxide reductase	w
@@ -819,14 +819,14 @@ PEPTIDE-N	worm	Q9TW67	png-1	Q9TW67	7	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl
 PEPTIDE-N	yeast	Q02890	PNG1	Q02890	2	18	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
 PEPTIDE-N	zebrafish	Q503I8	ngly1	Q503I8	3	27	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
 PEPTIDE-O-FUCOSYLTRANSFERASE	fly	FBgn0027791	Ofut2	Q9W589	0	8	GDP-fucose protein O-fucosyltransferase 2 (EC 2.4.1.221) (Pe	w
-PEPTIDE-O-FUCOSYLTRANSFERASE	fly	FBgn0033901	Ofut1	Q9V6X7	2	15	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Ne	w
+PEPTIDE-O-FUCOSYLTRANSFERASE	fly	FBgn0033901	Ofut1	Q9V6X7	2	13	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Ne	w
 PEPTIDE-O-FUCOSYLTRANSFERASE	human	Q9H488	POFUT1	Q9H488	1	95	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Pe	w
 PEPTIDE-O-FUCOSYLTRANSFERASE	human	Q9Y2G5	POFUT2	Q9Y2G5	2	48	GDP-fucose protein O-fucosyltransferase 2 (EC 2.4.1.221) (Pe	w
 PEPTIDE-PROCESSING	fly	FBgn0035065	CG3589	Q9W106	1	18	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
 PEPTIDE-PROCESSING	human	Q2T9J0	TYSND1	Q2T9J0	6	47	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
 PEPTIDE-PROCESSING	zebrafish	B3DFU6	tysnd1	B3DFU6	0	9	Peroxisomal leader peptide-processing protease	w
 PEPTIDE-RECEPTOR	human	O75575	CRCP	O75575	42	356	DNA-directed RNA polymerase III subunit RPC9 (RNA polymerase	w
-PEPTIDES	fly	FBgn0000715	FMRFa	P10552	16	254	FMRFamide-related peptides [Cleaved into: FMRFamide A; Corti	w
+PEPTIDES	fly	FBgn0000715	FMRFa	P10552	16	250	FMRFamide-related peptides [Cleaved into: FMRFamide A; Corti	w
 PEPTIDES	fly	FBgn0010388	Dro	P36193	30	258	Drosocin antimicrobial peptides [Cleaved into: Drosocin; Bul	w
 PEPTIDES	human	O15130	NPFF	O15130	12	139	Pro-FMRFamide-related neuropeptide FF (FMRFamide-related pep	w
 PEPTIDES	human	P01160	NPPA	P01160	56	436	Natriuretic peptides A (Atrial natriuretic factor prohormone	w
@@ -851,7 +851,7 @@ PEPTIDOGLYCAN-BINDING	human	Q7Z3D4	LYSMD3	Q7Z3D4	16	42	LysM and putative peptido
 PEPTIDOGLYCAN-BINDING	human	Q8IV50	LYSMD2	Q8IV50	9	39	LysM and putative peptidoglycan-binding domain-containing pr	w
 PEPTIDOGLYCAN-BINDING	human	Q96S90	LYSMD1	Q96S90	9	82	LysM and putative peptidoglycan-binding domain-containing pr	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0030310	PGRP-SA	Q9VYX7	28	263	Peptidoglycan-recognition protein SA (EC 3.4.17.13) (Protein	w
-PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0030695	PGRP-LE	Q9VXN9	69	394	Peptidoglycan-recognition protein LE	w
+PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0030695	PGRP-LE	Q9VXN9	69	385	Peptidoglycan-recognition protein LE	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0033327	PGRP-SC1b	C0HK98	33	250	Peptidoglycan-recognition protein SC1a (EC 3.5.1.28)	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0035806	PGRP-SD	Q9VS97	26	253	Peptidoglycan-recognition protein SD	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0035975	PGRP-LA	Q95T64	1	16	Peptidoglycan-recognition protein LA	w
@@ -871,22 +871,22 @@ PEPTIDYL-CYSTEINE	human	P04406	GAPDH	P04406	38	1881	Glyceraldehyde-3-phosphate d
 PEPTIDYL-CYSTEINE	human	P35228	NOS2	P35228	12	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
 PEPTIDYL-GLUTAMATE	human	P38435	GGCX	P38435	17	117	Vitamin K-dependent gamma-carboxylase (VKGC) (EC 4.1.1.90) (	w
 PEPTIDYL-GLYCINE	human	P19021	PAM	P19021	10	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
-PEPTIDYL-PROLY	fly	FBgn0013954	Fkbp12	P48375	46	326	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
+PEPTIDYL-PROLY	fly	FBgn0013954	Fkbp12	P48375	45	321	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
 PEPTIDYL-PROLYL	fly	FBgn0002936	ninaA	P15425	9	69	Peptidyl-prolyl cis-trans isomerase, rhodopsin-specific isoz	w
-PEPTIDYL-PROLYL	fly	FBgn0003401	shu	Q9W1I9	7	35	Inactive peptidyl-prolyl cis-trans isomerase shutdown	w
-PEPTIDYL-PROLYL	fly	FBgn0004432	Cyp1	P25007	52	489	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	w
-PEPTIDYL-PROLYL	fly	FBgn0013269	Fkbp39	P54397	49	208	39 kDa FK506-binding nuclear protein (EC 5.2.1.8) (Peptidyl-	w
-PEPTIDYL-PROLYL	fly	FBgn0013954	Fkbp12	P48375	46	326	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
-PEPTIDYL-PROLYL	fly	FBgn0015379	dod	P54353	50	220	Putative peptidyl-prolyl cis-trans isomerase dodo (PPIase do	w
-PEPTIDYL-PROLYL	fly	FBgn0027617	Ppil4	Q9XYZ6	9	28	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
+PEPTIDYL-PROLYL	fly	FBgn0003401	shu	Q9W1I9	6	24	Inactive peptidyl-prolyl cis-trans isomerase shutdown	w
+PEPTIDYL-PROLYL	fly	FBgn0004432	Cyp1	P25007	52	488	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	w
+PEPTIDYL-PROLYL	fly	FBgn0013269	Fkbp39	P54397	49	200	39 kDa FK506-binding nuclear protein (EC 5.2.1.8) (Peptidyl-	w
+PEPTIDYL-PROLYL	fly	FBgn0013954	Fkbp12	P48375	45	321	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
+PEPTIDYL-PROLYL	fly	FBgn0015379	dod	P54353	50	215	Putative peptidyl-prolyl cis-trans isomerase dodo (PPIase do	w
+PEPTIDYL-PROLYL	fly	FBgn0027617	Ppil4	Q9XYZ6	5	19	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	fly	FBgn0028382	cyp33	Q9V3G3	14	105	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8	w
-PEPTIDYL-PROLYL	fly	FBgn0029174	Fkbp59	Q9VL78	23	191	FK506-binding protein 59 (EC 5.2.1.8) (Peptidyl-prolyl cis-t	w
+PEPTIDYL-PROLYL	fly	FBgn0029174	Fkbp59	Q9VL78	22	186	FK506-binding protein 59 (EC 5.2.1.8) (Peptidyl-prolyl cis-t	w
 PEPTIDYL-PROLYL	fly	FBgn0033089	CG17266	Q4V5H1	21	119	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	fly	FBgn0033527	CG11777	Q8MKJ6	12	64	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	fly	FBgn0034753	CG2852	Q9W227	90	488	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
-PEPTIDYL-PROLYL	fly	FBgn0035141	Cypl	Q9W0Q2	11	95	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
+PEPTIDYL-PROLYL	fly	FBgn0035141	Cypl	Q9W0Q2	11	94	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	fly	FBgn0036207	CG10907	Q9VTN7	26	134	Spliceosome-associated protein CWC27 homolog (Probable inact	w
-PEPTIDYL-PROLYL	fly	FBgn0036415	CG7768	Q7K2I4	6	75	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
+PEPTIDYL-PROLYL	fly	FBgn0036415	CG7768	Q7K2I4	5	73	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	fly	FBgn0039305	CG11858	Q9VBU4	2	8	Peptidyl-prolyl cis-trans isomerase (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	human	A0A075B759	PPIAL4E	A0A075B759	52	378	Peptidyl-prolyl cis-trans isomerase A-like 4E (PPIase A-like	w
 PEPTIDYL-PROLYL	human	A0A075B767	PPIAL4H	A0A075B767	70	416	Peptidyl-prolyl cis-trans isomerase A-like 4H (PPIase A-like	w
@@ -996,7 +996,7 @@ PEPTIDYLGLYCINE	human	O75901	RASSF9	O75901	23	73	Ras association domain-containi
 PEPTIDYLGLYCINE	human	P19021	PAM	P19021	10	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
 PEPTIDYLPROLYL	fly	FBgn0010470	Fkbp14	A0A0B4K7C5	78	577	peptidylprolyl isomerase (EC 5.2.1.8)	w
 PEPTIDYLPROLYL	fly	FBgn0037930	CG14715	Q9VGK3	92	482	peptidylprolyl isomerase (EC 5.2.1.8)	w
-PEPTIDYLPROLYL	fly	FBgn0039581	Moca-cyp	Q9VAW1	26	109	peptidylprolyl isomerase (EC 5.2.1.8)	w
+PEPTIDYLPROLYL	fly	FBgn0039581	Moca-cyp	Q9VAW1	11	90	peptidylprolyl isomerase (EC 5.2.1.8)	w
 PEPTIDYLPROLYL	fly	FBgn0052845	CG32845	Q8IRJ5	0	9	peptidylprolyl isomerase (EC 5.2.1.8)	w
 PEPTIDYLPROLYL	human	O15428	PIN1P1	O15428	5	21	Putative PIN1-like protein (Peptidylprolyl cis-trans isomera	w
 PEPTIDYLPROLYL	human	P0DN37	PPIAL4G	P0DN37	62	397	Peptidyl-prolyl cis-trans isomerase A-like 4G (PPIase A-like	w
@@ -1269,4 +1269,4 @@ PEPV_269	virus	A0A068EFM2	pepv_269	A0A068EFM2	9	236	A0A068EFM2_9POXV
 PEPV_271	virus	A0A068ELV0	pepv_271	A0A068ELV0	4	240	A0A068ELV0_9POXV	
 PEPV_272	virus	A0A068EHZ1	pepv_272	A0A068EHZ1	7	240	A0A068EHZ1_9POXV	
 PEPV_273	virus	A0A068EFA5	pepv_273	A0A068EFA5	11	238	Ig-like domain protein	
-PEP_686	fly	FBgn0004401	Pep	P41073	16	109		
+PEP_686	fly	FBgn0004401	Pep	P41073	11	97		

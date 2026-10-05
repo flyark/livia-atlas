@@ -98,7 +98,7 @@ SIGLECL2	mus-musculus	A2RSL7	Siglecl2	A2RSL7	0	1	Siglec family like 2
 SIGLECP16	human	A6NMB1	SIGLEC16	A6NMB1	7	26		
 SIGM	human	P40394	ADH7	P40394	10	99	All-trans-retinol dehydrogenase [NAD(+)] ADH7 (EC 1.1.1.105)	w
 SIGM	mycobacterium-tuberculosis	O53590	sigM	O53590	3	10	ECF RNA polymerase sigma factor SigM	
-SIGMA	fly	FBgn0003231	ref(2)P	P14199	30	177	Protein ref(2)P (Refractory to sigma P)	w
+SIGMA	fly	FBgn0003231	ref(2)P	P14199	29	170	Protein ref(2)P (Refractory to sigma P)	w
 SIGMA	fly	FBgn0039132	AP-1sigma	B8A403	7	70	AP complex subunit sigma	w
 SIGMA	fly	FBgn0043012	AP-2sigma	Q9VDC3	14	136	AP complex subunit sigma	w
 SIGMA	human	P31947	SFN	P31947	1178	3425	14-3-3 protein sigma (Epithelial cell marker protein 1) (Str	w
@@ -154,23 +154,23 @@ SIGMAR1	human	Q99720	SIGMAR1	Q99720	5	235	Sigma non-opioid intracellular recepto
 SIGMAR1	mus-musculus	O55242	Sigmar1	O55242	0	42	Sigma non-opioid intracellular receptor 1	
 SIGMAR1	rattus-norvegicus	Q9R0C9	Sigmar1	Q9R0C9	0	54	Sigma non-opioid intracellular receptor 1	
 SIGMAR1	zebrafish	Q7ZWG9	sigmar1	Q7ZWG9	0	60	Sigma non-opioid intracellular receptor 1	
-SIGNAL	fly	FBgn0010278	Ssrp	Q05344	66	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+SIGNAL	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
 SIGNAL	fly	FBgn0010391	SrpRalpha	Q9U5L1	32	310	Signal recognition particle receptor subunit alpha homolog (	w
 SIGNAL	fly	FBgn0010747	Srp54k	Q9V3D9	6	165	Signal recognition particle 54 kDa protein	w
 SIGNAL	fly	FBgn0011016	SsRbeta	Q9VUZ0	237	2470	Translocon-associated protein subunit beta (TRAP-beta) (Sign	w
-SIGNAL	fly	FBgn0011509	SrpRbeta	Q9VSN9	13	349	Signal recognition particle receptor subunit beta	w
-SIGNAL	fly	FBgn0015298	Srp19	P49963	9	151	Signal recognition particle 19 kDa protein (SRP19)	w
+SIGNAL	fly	FBgn0011509	SrpRbeta	Q9VSN9	13	337	Signal recognition particle receptor subunit beta	w
+SIGNAL	fly	FBgn0015298	Srp19	P49963	8	147	Signal recognition particle 19 kDa protein (SRP19)	w
 SIGNAL	fly	FBgn0016917	Stat92E	A0A0B4KGE1	62	553	Signal transducer and activator of transcription	w
-SIGNAL	fly	FBgn0021795	Tapdelta	Q7KLX3	363	2493	Translocon-associated protein subunit delta (Signal sequence	w
+SIGNAL	fly	FBgn0021795	Tapdelta	Q7KLX3	363	2490	Translocon-associated protein subunit delta (Signal sequence	w
 SIGNAL	fly	FBgn0025700	CG5885	Q9VL69	1	41	Translocon-associated protein subunit gamma (Signal sequence	w
-SIGNAL	fly	FBgn0027363	Stam	Q9XTL2	326	1247	Jak pathway signal transduction adaptor molecule (LD02639p) 	w
+SIGNAL	fly	FBgn0027363	Stam	Q9XTL2	326	1245	Jak pathway signal transduction adaptor molecule (LD02639p) 	w
 SIGNAL	fly	FBgn0028327	l(1)G0320	Q9W335	221	2404	Translocon-associated protein subunit alpha (Signal sequence	w
-SIGNAL	fly	FBgn0030306	Spase25	Q9VYY2	4	44	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
+SIGNAL	fly	FBgn0030306	Spase25	Q9VYY2	4	36	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
 SIGNAL	fly	FBgn0031260	Spp	Q9VPQ7	0	21	SD07518p (Signal peptide peptidase (EC 3.4.23.-))	w
 SIGNAL	fly	FBgn0035827	Srp9	Q9VSC1	10	153	Signal recognition particle 9 kDa protein (SRP9)	w
-SIGNAL	fly	FBgn0035947	Srp68	Q9VSS2	10	248	Signal recognition particle subunit SRP68 (SRP68) (Signal re	w
+SIGNAL	fly	FBgn0035947	Srp68	Q9VSS2	8	239	Signal recognition particle subunit SRP68 (SRP68) (Signal re	w
 SIGNAL	fly	FBgn0038808	Srp14	Q9VDL0	6	118	Signal recognition particle 14 kDa protein (SRP14)	w
-SIGNAL	fly	FBgn0038810	Srp72	Q9VDK7	61	161	Signal recognition particle subunit SRP72	w
+SIGNAL	fly	FBgn0038810	Srp72	Q9VDK7	59	157	Signal recognition particle subunit SRP72	w
 SIGNAL	fly	FBgn0039172	Spase22-23	Q9VCA9	261	2395	Signal peptidase complex subunit 3 (Microsomal signal peptid	w
 SIGNAL	fly	FBgn0039381	SppL	Q86P97	8	62	GM06145p (Signal peptide peptidase-like, isoform D (EC 3.4.2	w
 SIGNAL	fly	FBgn0040623	Spase12	Q9VAL0	1	13	Signal peptidase complex subunit 1 (Microsomal signal peptid	w
@@ -328,7 +328,7 @@ SIGNAL-INTEGRATING	human	Q9BUB5	MKNK1	Q9BUB5	182	1420	MAP kinase-interacting ser
 SIGNAL-INTEGRATING	human	Q9HBH9	MKNK2	Q9HBH9	189	1309	MAP kinase-interacting serine/threonine-protein kinase 2 (EC	w
 SIGNAL-INTERACT	human	Q9NUN5	LMBRD1	Q9NUN5	14	106	Lysosomal cobalamin transport escort protein LMBD1 (LMBD1) (	w
 SIGNAL-MODULATING	human	P49069	CAMLG	P49069	21	156	Guided entry of tail-anchored proteins factor CAMLG (Calcium	w
-SIGNAL-REGULATED	fly	FBgn0052703	Erk7	Q9W354	330	1215	Extracellular signal-regulated kinase 7 (EC 2.7.11.24)	w
+SIGNAL-REGULATED	fly	FBgn0052703	Erk7	Q9W354	328	1215	Extracellular signal-regulated kinase 7 (EC 2.7.11.24)	w
 SIGNAL-REGULATED	human	P27361	MAPK3	P27361	472	2161	Mitogen-activated protein kinase 3 (MAP kinase 3) (MAPK 3) (	w
 SIGNAL-REGULATED	human	P28482	MAPK1	P28482	466	2243	Mitogen-activated protein kinase 1 (MAP kinase 1) (MAPK 1) (	w
 SIGNAL-REGULATED	human	P31152	MAPK4	P31152	411	1329	Mitogen-activated protein kinase 4 (MAP kinase 4) (MAPK 4) (	w
@@ -336,7 +336,7 @@ SIGNAL-REGULATED	human	P53778	MAPK12	P53778	239	1589	Mitogen-activated protein k
 SIGNAL-REGULATED	human	Q13164	MAPK7	Q13164	382	1415	Mitogen-activated protein kinase 7 (MAP kinase 7) (MAPK 7) (	w
 SIGNAL-REGULATED	human	Q16659	MAPK6	Q16659	404	1704	Mitogen-activated protein kinase 6 (MAP kinase 6) (MAPK 6) (	w
 SIGNAL-REGULATED	human	Q8TD08	MAPK15	Q8TD08	389	1381	Mitogen-activated protein kinase 15 (MAP kinase 15) (MAPK 15	w
-SIGNAL-REGULATING	fly	FBgn0014006	Ask1	Q9VDS9	67	1146	Apoptotic signal-regulating kinase 1, isoform C (EC 2.7.11.2	w
+SIGNAL-REGULATING	fly	FBgn0014006	Ask1	Q9VDS9	66	1146	Apoptotic signal-regulating kinase 1, isoform C (EC 2.7.11.2	w
 SIGNAL-REGULATING	human	O95382	MAP3K6	O95382	31	197	Mitogen-activated protein kinase kinase kinase 6 (EC 2.7.11.	w
 SIGNAL-REGULATING	human	Q6ZN16	MAP3K15	Q6ZN16	22	138	Mitogen-activated protein kinase kinase kinase 15 (EC 2.7.11	w
 SIGNAL-REGULATING	human	Q99683	MAP3K5	Q99683	42	325	Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.	w
@@ -347,12 +347,12 @@ SIGNAL-REGULATORY	human	Q9H106	SIRPD	Q9H106	33	252	Signal-regulatory protein del
 SIGNAL-REGULATORY	human	Q9P1W8	SIRPG	Q9P1W8	25	221	Signal-regulatory protein gamma (SIRP-gamma) (CD172 antigen-	w
 SIGNAL-TRANSDUCING	human	Q9UGK3	STAP2	Q9UGK3	6	34	Signal-transducing adaptor protein 2 (STAP-2) (Breast tumor 	w
 SIGNAL-TRANSDUCING	human	Q9ULZ2	STAP1	Q9ULZ2	21	120	Signal-transducing adaptor protein 1 (STAP-1) (BCR downstrea	w
-SIGNALING	fly	FBgn0020278	loco	Q9VCX1	19	36	Regulator of G-protein signaling loco (RGS) (Locomotion defe	w
+SIGNALING	fly	FBgn0020278	loco	Q9VCX1	8	17	Regulator of G-protein signaling loco (RGS) (Locomotion defe	w
 SIGNALING	fly	FBgn0024941	RSG7	Q9VXA3	13	31	LP21163p (Regulator of G-protein signaling 7, isoform A) (Re	w
 SIGNALING	fly	FBgn0028436	ECSIT	Q9U6M0	4	32	Evolutionarily conserved signaling intermediate in Toll path	w
 SIGNALING	fly	FBgn0030869	Socs16D	M9PHY7	6	65	Suppressor of cytokine signaling at 16D, isoform B	w
 SIGNALING	fly	FBgn0031116	CG1695	Q8IQ31	2	3	Small G protein signaling modulator 2	w
-SIGNALING	fly	FBgn0033266	Socs44A	Q7JVF1	4	26	LP02169p (Suppressor of cytokine signaling at 44A)	w
+SIGNALING	fly	FBgn0033266	Socs44A	Q7JVF1	4	23	LP02169p (Suppressor of cytokine signaling at 44A)	w
 SIGNALING	fly	FBgn0035896	CG6983	Q9VSK4	0	1	Adipose-secreted signaling protein	w
 SIGNALING	fly	FBgn0039492	CG6051	Q9VB70	0	2	Lateral signaling target protein 2 homolog	w
 SIGNALING	fly	FBgn0041184	Socs36E	Q8INY1	5	25	Suppressor of cytokine signaling at 36E, isoform D	w
@@ -487,11 +487,11 @@ SIGNALLING	virus	Q08FW8	DpV83gp033	Q08FW8	5	164	RhoA signalling inhibitor virus 
 SIGNALLING	zebrafish	A3KPZ9	si:ch211-152p11.4	A3KPZ9	16	28	Novel protein similar to vertebrate regulator of G-protein s	w
 SIGNALOSOME	fly	FBgn0013746	alien	Q94899	41	422	COP9 signalosome complex subunit 2 (Dch2) (Signalosome subun	w
 SIGNALOSOME	fly	FBgn0027053	CSN5	Q9XZ58	23	491	COP9 signalosome complex subunit 5 (Dch5) (Signalosome subun	w
-SIGNALOSOME	fly	FBgn0027054	CSN4	Q9V345	16	74	COP9 signalosome complex subunit 4 (Dch4) (Signalosome subun	w
-SIGNALOSOME	fly	FBgn0027055	CSN3	Q8SYG2	11	50	COP9 signalosome complex subunit 3 (Dch3) (Signalosome subun	w
+SIGNALOSOME	fly	FBgn0027054	CSN4	Q9V345	14	69	COP9 signalosome complex subunit 4 (Dch4) (Signalosome subun	w
+SIGNALOSOME	fly	FBgn0027055	CSN3	Q8SYG2	11	48	COP9 signalosome complex subunit 3 (Dch3) (Signalosome subun	w
 SIGNALOSOME	fly	FBgn0027057	CSN1b	Q9VVU5	8	42	COP9 signalosome complex subunit 1b (Dch1-2) (Signalosome su	w
-SIGNALOSOME	fly	FBgn0028836	CSN7	Q9V4S8	14	40	COP9 signalosome complex subunit 7 (Dch7) (Signalosome subun	w
-SIGNALOSOME	fly	FBgn0028837	CSN6	Q9VCY3	14	81	COP9 signalosome complex subunit 6 (Dch6) (Signalosome subun	w
+SIGNALOSOME	fly	FBgn0028836	CSN7	Q9V4S8	13	36	COP9 signalosome complex subunit 7 (Dch7) (Signalosome subun	w
+SIGNALOSOME	fly	FBgn0028837	CSN6	Q9VCY3	14	78	COP9 signalosome complex subunit 6 (Dch6) (Signalosome subun	w
 SIGNALOSOME	fly	FBgn0028838	CSN1a	Q9VJR9	5	52	COP9 signalosome subunit 1a (IP11532p)	w
 SIGNALOSOME	fly	FBgn0261437	CSN8	Q7KTH8	10	52	COP9 signalosome complex subunit 8 (Dch8) (Signalosome subun	w
 SIGNALOSOME	human	P61201	COPS2	P61201	65	604	COP9 signalosome complex subunit 2 (SGN2) (Signalosome subun	w

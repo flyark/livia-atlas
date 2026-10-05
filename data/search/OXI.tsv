@@ -5,7 +5,7 @@ OXI3	yeast	P03876	AI2	P03876	0	3	Putative COX1/OXI3 intron 2 protein	w
 OXID	human	P14598	NCF1	P14598	42	174	Neutrophil cytosol factor 1 (NCF-1) (47 kDa autosomal chroni	w
 OXIDANT	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
 OXIDANT-INDUCED	yeast	P38738	OCA5	P38738	1	17	Oxidant-induced cell-cycle arrest protein 5	w
-OXIDASE	fly	FBgn0000447	Dhod	P32748	2	59	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	w
+OXIDASE	fly	FBgn0000447	Dhod	P32748	2	57	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	w
 OXIDASE	fly	FBgn0002354	l(3)87Df	Q9VG00	0	13	Cytochrome c oxidase assembly protein COX20, mitochondrial	w
 OXIDASE	fly	FBgn0003423	slgA	Q04499	7	77	Proline dehydrogenase 1, mitochondrial (EC 1.5.5.2) (Proline	w
 OXIDASE	fly	FBgn0003961	Uro	P16163	1	104	Uricase (EC 1.7.3.3) (Urate oxidase)	w
@@ -15,20 +15,20 @@ OXIDASE	fly	FBgn0013676	mt:CoIII	P00417	10	87	Cytochrome c oxidase subunit 3 (EC
 OXIDASE	fly	FBgn0015031	cype	Q9VMS1	20	101	Cyclope, isoform A (Cyclope, isoform B) (Cyclope, isoform C)	w
 OXIDASE	fly	FBgn0019624	COX5A	Q94514	10	180	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	w
 OXIDASE	fly	FBgn0020018	Ppox	Q9VC52	0	18	Protoporphyrinogen oxidase (EC 1.3.3.4)	w
-OXIDASE	fly	FBgn0021944	Coprox	Q9V3D2	6	80	Oxygen-dependent coproporphyrinogen-III oxidase (COX) (Copro	w
+OXIDASE	fly	FBgn0021944	Coprox	Q9V3D2	6	76	Oxygen-dependent coproporphyrinogen-III oxidase (COX) (Copro	w
 OXIDASE	fly	FBgn0027572	Acox1	Q7KML2	6	89	Acyl-coenzyme A oxidase 1 (EC 1.3.3.6)	w
 OXIDASE	fly	FBgn0029594	Coa8	Q9W549	4	8	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
 OXIDASE	fly	FBgn0029924	CG4586	Q9W3U0	5	34	Acyl-coenzyme A oxidase	w
-OXIDASE	fly	FBgn0030597	Eo	Q9VY01	3	17	Ecdysone oxidase (EC 1.1.3.16)	w
+OXIDASE	fly	FBgn0030597	Eo	Q9VY01	1	8	Ecdysone oxidase (EC 1.1.3.16)	w
 OXIDASE	fly	FBgn0030966	shop	Q9VWP4	0	18	Sulfite oxidase, mitochondrial (EC 1.8.3.1) (Protein shopper	w
-OXIDASE	fly	FBgn0031066	COX6B	Q9VWD1	4	122	Cytochrome c oxidase subunit	w
+OXIDASE	fly	FBgn0031066	COX6B	Q9VWD1	4	120	Cytochrome c oxidase subunit	w
 OXIDASE	fly	FBgn0031068	Alr	C0PVB3	0	12	Sulfhydryl oxidase (EC 1.8.3.2)	w
 OXIDASE	fly	FBgn0031813	Acox3	B7Z028	6	35	Acyl-coenzyme A oxidase	w
 OXIDASE	fly	FBgn0031830	COX5B	Q9VMB9	12	125	Cytochrome c oxidase subunit 5B, isoform A (Cytochrome c oxi	w
 OXIDASE	fly	FBgn0031831	COX5BL	Q9VMB8	5	92	Cytochrome c oxidase subunit 5B-like (GEO10787p1) (IP07710p)	w
 OXIDASE	fly	FBgn0031860	Daao2	Q9VM80	3	90	D-amino acid oxidase 2, isoform A (EC 1.4.3.3) (GH12548p)	w
 OXIDASE	fly	FBgn0032116	Mco1	Q9VLC3	0	9	FI03373p (Multicopper oxidase 1, isoform A) (Multicopper oxi	w
-OXIDASE	fly	FBgn0032775	CG17544	Q9VIX4	5	25	Acyl-coenzyme A oxidase	w
+OXIDASE	fly	FBgn0032775	CG17544	Q9VIX4	5	19	Acyl-coenzyme A oxidase	w
 OXIDASE	fly	FBgn0032833	COX4	Q9VIQ8	8	143	Cytochrome c oxidase subunit 4	w
 OXIDASE	fly	FBgn0033020	COX4L	Q8T4H8	7	97	Cytochrome c oxidase subunit 4	w
 OXIDASE	fly	FBgn0033814	Qsox1	Q7JQR3	26	245	Sulfhydryl oxidase (EC 1.8.3.2)	w
@@ -58,9 +58,9 @@ OXIDASE	fly	FBgn0052557	Mco4	Q9VX11	26	253	Multicopper oxidase 4 (EC 1.16.3.1) (
 OXIDASE	fly	FBgn0085201	COX7AL2	Q6IHY5	14	84	Cytochrome c oxidase subunit 7A-like 2, isoform A (Cytochrom	w
 OXIDASE	fly	FBgn0085428	Nox	A8DWJ8	0	18	NADPH oxidase, isoform C (EC 1.6.3.-) (NADPH oxidase, isofor	w
 OXIDASE	fly	FBgn0261353	Ccdc56	P0DKM0	0	10	Cytochrome c oxidase assembly factor 3, mitochondrial (Coile	w
-OXIDASE	fly	FBgn0261363	PPO3	Q9W1V6	12	253	Phenoloxidase 3 (EC 1.14.18.1) (Diphenol oxidase A3) (Diphen	w
+OXIDASE	fly	FBgn0261363	PPO3	Q9W1V6	11	250	Phenoloxidase 3 (EC 1.14.18.1) (Diphenol oxidase A3) (Diphen	w
 OXIDASE	fly	FBgn0261396	Rpn3	P25161	13	145	Probable 26S proteasome non-ATPase regulatory subunit 3 (26S	w
-OXIDASE	fly	FBgn0262467	Scox	Q9VMX4	5	42	AT19154p (Synthesis of cytochrome c oxidase)	w
+OXIDASE	fly	FBgn0262467	Scox	Q9VMX4	4	27	AT19154p (Synthesis of cytochrome c oxidase)	w
 OXIDASE	fly	FBgn0263911	COX8	Q9VP19	16	40	Cytochrome c oxidase subunit 8, isoform A (Cytochrome c oxid	w
 OXIDASE	fly	FBgn0267408	AOX1	Q9VF53	3	71	Aldehyde oxidase 1 (EC 1.2.3.8) (LD37006p)	w
 OXIDASE	fly	FBgn0283531	Duox	Q9VQH2	0	7	Dual oxidase (EC 1.11.1.-) (EC 1.6.3.1)	w
@@ -469,9 +469,9 @@ OXIDOREDUCTASE	fly	FBgn0031972	Wwox	Q9VLU5	5	143	WW domain-containing oxidoreduc
 OXIDOREDUCTASE	fly	FBgn0032511	ND-B22	Q9VJZ4	11	126	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
 OXIDOREDUCTASE	fly	FBgn0032846	Pyroxd1	Q9VIP2	0	15	Pyridine nucleotide-disulfide oxidoreductase domain-containi	w
 OXIDOREDUCTASE	fly	FBgn0033093	CG3270	A1Z6N5	3	12	FAD-dependent oxidoreductase domain-containing protein 1	w
-OXIDOREDUCTASE	fly	FBgn0033570	ND-B14	Q7JZK1	9	125	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
+OXIDOREDUCTASE	fly	FBgn0033570	ND-B14	Q7JZK1	9	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
 OXIDOREDUCTASE	fly	FBgn0033961	ND-B15	Q6IDF5	6	99	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
-OXIDOREDUCTASE	fly	FBgn0034251	ND-51L1	A1ZAW7	8	96	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+OXIDOREDUCTASE	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
 OXIDOREDUCTASE	fly	FBgn0034576	ND-B14.7	Q7JYH3	4	72	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
 OXIDOREDUCTASE	fly	FBgn0034645	ND-B12	Q9W2E8	7	108	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
 OXIDOREDUCTASE	fly	FBgn0035476	Ar6	Q9VZK8	1	17	NADP-dependent oxidoreductase domain-containing protein	w
@@ -480,7 +480,7 @@ OXIDOREDUCTASE	fly	FBgn0037001	ND-39	Q9VPE2	9	134	NADH dehydrogenase [ubiquinone
 OXIDOREDUCTASE	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	2	84	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
 OXIDOREDUCTASE	fly	FBgn0039331	ND-49L	Q9VBR4	5	100	Complex I-49kD (NADH-ubiquinone oxidoreductase 49 kDa subuni	w
 OXIDOREDUCTASE	fly	FBgn0039415	CG6142	Q9VBG8	17	250	Glucose-methanol-choline oxidoreductase N-terminal domain-co	w
-OXIDOREDUCTASE	fly	FBgn0039909	ND-49	Q9V4E0	10	125	Complex I-49kD (NADH-ubiquinone oxidoreductase 49 kDa subuni	w
+OXIDOREDUCTASE	fly	FBgn0039909	ND-49	Q9V4E0	10	120	Complex I-49kD (NADH-ubiquinone oxidoreductase 49 kDa subuni	w
 OXIDOREDUCTASE	fly	FBgn0040705	ND-B8	Q9VR00	3	116	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
 OXIDOREDUCTASE	fly	FBgn0085468	ND-MWFE	A8DYC4	4	99	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
 OXIDOREDUCTASE	fly	FBgn0262952	mt:ND4	P18931	9	128	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w

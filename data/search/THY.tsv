@@ -84,7 +84,7 @@ THYMIDINE	worm	G5EEZ5	thk-1	G5EEZ5	0	8	Thymidine kinase	w
 THYMIDINE	worm	Q23588	upp-1	Q23588	0	29	Uridine and thymidine phosphorylase	w
 THYMIDINE	zebrafish	A0A8M1N0Z5	tk2	A0A8M1N0Z5	0	81	Thymidine kinase 2, mitochondrial	w
 THYMIDINE KINASE	virus	A0A5P9JSM4	thymidine kinase	A0A5P9JSM4	1	80	A0A5P9JSM4_9ALPH	
-THYMIDYLATE	fly	FBgn0024920	Ts	O76511	3	66	Thymidylate synthase (TS) (TSase) (EC 2.1.1.45)	w
+THYMIDYLATE	fly	FBgn0024920	Ts	O76511	2	61	Thymidylate synthase (TS) (TSase) (EC 2.1.1.45)	w
 THYMIDYLATE	human	P04818	TYMS	P04818	4	166	Thymidylate synthase (TS) (TSase) (EC 2.1.1.45)	w
 THYMIDYLATE	human	P23919	DTYMK	P23919	15	232	Thymidylate kinase (EC 2.7.4.9) (dTMP kinase)	w
 THYMIDYLATE	human	Q7L5Y1	ENOSF1	Q7L5Y1	0	75	Mitochondrial enolase superfamily member 1 (EC 4.2.1.68) (An	w
@@ -138,7 +138,7 @@ THYMIDYLATE	yeast	P06785	CDC21	P06785	0	12	Thymidylate synthase	w
 THYMIDYLATE	zebrafish	Q3B752	dtymk	Q3B752	0	10	Thymidylate kinase	w
 THYMIDYLATE	zebrafish	Q6P045	tyms	Q6P045	0	24	Thymidylate synthase	w
 THYMII	human	Q96M53	TBATA	Q96M53	0	9	Protein TBATA (Protein SPATIAL) (Stromal protein associated 	w
-THYMINE	fly	FBgn0026869	Tdg	Q9V4D8	17	74	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
+THYMINE	fly	FBgn0026869	Tdg	Q9V4D8	16	67	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
 THYMINE	human	Q13569	TDG	Q13569	53	448	G/T mismatch-specific thymine DNA glycosylase (EC 3.2.2.29) 	w
 THYMINE	zebrafish	Q503G3	tdg.1	Q503G3	4	18	G/T mismatch-specific thymine DNA glycosylase	w
 THYMINE	zebrafish	X1WBY3	tdg.2	X1WBY3	4	18	G/T mismatch-specific thymine DNA glycosylase	w
@@ -186,7 +186,7 @@ THYN1_HUMAN	human	Q9P016	THYN1	Q9P016	6	56
 THYRO	human	Q12802	AKAP13	Q12802	28	79	A-kinase anchor protein 13 (AKAP-13) (AKAP-Lbc) (Breast canc	w
 THYROGLOBULIN	human	P01266	TG	P01266	0	15	Thyroglobulin (Tg)	w
 THYROGLOBULIN	worm	P90956	CELE_T01D3.3	P90956	0	11	Thyroglobulin type-1 domain-containing protein	w
-THYROID	fly	FBgn0031077	THADA	Q9VWB9	1	8	tRNA (32-2'-O)-methyltransferase regulator THADA (Thyroid ad	w
+THYROID	fly	FBgn0031077	THADA	Q9VWB9	0	3	tRNA (32-2'-O)-methyltransferase regulator THADA (Thyroid ad	w
 THYROID	human	O00358	FOXE1	O00358	70	464	Forkhead box protein E1 (Forkhead box protein E2) (Forkhead-	w
 THYROID	human	O43704	SULT1B1	O43704	13	36	Sulfotransferase 1B1 (ST1B1) (EC 2.8.2.1) (Sulfotransferase 	w
 THYROID	human	O75369	FLNB	O75369	17	356	Filamin-B (FLN-B) (ABP-278) (ABP-280 homolog) (Actin-binding	w
@@ -242,14 +242,14 @@ THYROID-SPECIFIC	human	P43699	NKX2-1	P43699	165	576	Homeobox protein Nkx-2.1 (Ho
 THYROID-STIMULATING	human	P01222	TSHB	P01222	17	121	Thyrotropin subunit beta (Thyroid-stimulating hormone subuni	w
 THYROID-STIMULATING	human	P16473	TSHR	P16473	21	226	Thyrotropin receptor (Thyroid-stimulating hormone receptor) 	w
 THYROLIBER	human	P20396	TRH	P20396	31	175	Pro-thyrotropin-releasing hormone (Pro-TRH) (Prothyroliberin	w
-THYROLIBERIN	fly	FBgn0038874	ETHR	Q9VDC4	2	23	Thyrotropin-releasing hormone receptor (Thyroliberin recepto	w
+THYROLIBERIN	fly	FBgn0038874	ETHR	Q9VDC4	1	19	Thyrotropin-releasing hormone receptor (Thyroliberin recepto	w
 THYROLIBERIN	human	P34981	TRHR	P34981	24	131	Thyrotropin-releasing hormone receptor (TRH-R) (Thyroliberin	w
 THYROSTIMULIN	human	Q86YW7	GPHB5	Q86YW7	19	74	Glycoprotein hormone beta-5 (Thyrostimulin subunit beta)	w
 THYROSTIMULIN	human	Q96T91	GPHA2	Q96T91	20	86	Glycoprotein hormone alpha-2 (Putative secreted protein Zsig	w
 THYROTROPH	human	Q10587	TEF	Q10587	74	368	Thyrotroph embryonic factor	w
 THYROTROPIN	human	P01222	TSHB	P01222	17	121	Thyrotropin subunit beta (Thyroid-stimulating hormone subuni	w
 THYROTROPIN	human	P16473	TSHR	P16473	21	226	Thyrotropin receptor (Thyroid-stimulating hormone receptor) 	w
-THYROTROPIN-RELEASING	fly	FBgn0038874	ETHR	Q9VDC4	2	23	Thyrotropin-releasing hormone receptor (Thyroliberin recepto	w
+THYROTROPIN-RELEASING	fly	FBgn0038874	ETHR	Q9VDC4	1	19	Thyrotropin-releasing hormone receptor (Thyroliberin recepto	w
 THYROTROPIN-RELEASING	human	P20396	TRH	P20396	31	175	Pro-thyrotropin-releasing hormone (Pro-TRH) (Prothyroliberin	w
 THYROTROPIN-RELEASING	human	P34981	TRHR	P34981	24	131	Thyrotropin-releasing hormone receptor (TRH-R) (Thyroliberin	w
 THYROTROPIN-RELEASING	human	Q9UKU6	TRHDE	Q9UKU6	14	46	Thyrotropin-releasing hormone-degrading ectoenzyme (TRH-DE) 	w

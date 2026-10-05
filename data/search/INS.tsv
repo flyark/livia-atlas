@@ -33,7 +33,7 @@ INSC	mus-musculus	Q3HNM7	Insc	Q3HNM7	3	13	Protein inscuteable homolog
 INSC	rattus-norvegicus	D3ZFP7	Insc	D3ZFP7	6	18	Protein inscuteable homolog	
 INSC-1	worm	A0A1T5HUK5	insc-1	A0A1T5HUK5	1	8	Protein inscuteable homologue C-terminal domain-containing p	
 INSCUTEABLE	fly	FBgn0011674	insc	Q9W2R4	5	23	Inscuteable	w
-INSCUTEABLE	fly	FBgn0040080	pins	Q9VB22	38	90	LD33695p (Partner of inscuteable) (Pins protein) (RE22964p)	w
+INSCUTEABLE	fly	FBgn0040080	pins	Q9VB22	31	78	LD33695p (Partner of inscuteable) (Pins protein) (RE22964p)	w
 INSCUTEABLE	human	Q1MX18	INSC	Q1MX18	13	78	Protein inscuteable homolog	w
 INSCUTEABLE	worm	A0A1T5HUK5	insc-1	A0A1T5HUK5	1	8	Protein inscuteable homologue C-terminal domain-containing p	w
 INSC_HUMAN	human	Q1MX18	INSC	Q1MX18	13	78		
@@ -47,7 +47,7 @@ INSERT	human	P35968	KDR	P35968	209	1672	Vascular endothelial growth factor recep
 INSERT	zebrafish	Q5GIT4	kdr	Q5GIT4	12	78	Vascular endothelial growth factor receptor 2 (VEGFR-2) (EC 	w
 INSERTASE	human	Q9BUV8	RAB5IF	Q9BUV8	12	236	GEL complex subunit OPTI (Obligate partner of TMCO1 insertas	w
 INSERTASE	worm	O02207	oxa-1	O02207	0	27	Membrane insertase YidC/Oxa/ALB C-terminal domain-containing	w
-INSERTION	fly	FBgn0031321	Tgt	Q9VPY8	2	21	Queuine tRNA-ribosyltransferase catalytic subunit (EC 2.4.2.	w
+INSERTION	fly	FBgn0031321	Tgt	Q9VPY8	1	16	Queuine tRNA-ribosyltransferase catalytic subunit (EC 2.4.2.	w
 INSERTION	human	O00258	GET1	O00258	14	175	Guided entry of tail-anchored proteins factor 1 (Congenital 	w
 INSERTION	human	Q93073	SECISBP2L	Q93073	44	198	Selenocysteine insertion sequence-binding protein 2-like (SE	w
 INSERTION	human	Q96T21	SECISBP2	Q96T21	42	221	Selenocysteine insertion sequence-binding protein 2 (SECIS-b	w
@@ -132,13 +132,13 @@ INSTABILITY	zebrafish	Q7ZVM9	rmi1	Q7ZVM9	10	61	RecQ-mediated genome instability 
 INSU	human	Q13541	EIF4EBP1	Q13541	7	143	Eukaryotic translation initiation factor 4E-binding protein 	w
 INSUFFICIENCY	zebrafish	Q6NW98	aaas	Q6NW98	4	43	Achalasia, adrenocortical insufficiency, alacrimia	w
 INSUL	human	Q14641	INSL4	Q14641	1	28	Early placenta insulin-like peptide (EPIL) (Insulin-like pep	w
-INSULATOR	fly	FBgn0037669	Ibf2	Q9VHG6	6	19	Insulator binding factor 2 (RE22911p)	w
+INSULATOR	fly	FBgn0037669	Ibf2	Q9VHG6	5	17	Insulator binding factor 2 (RE22911p)	w
 INSULATOR	fly	FBgn0037670	Ibf1	Q9VHG5	6	34	Insulator binding factor 1, isoform A (LD32555p)	w
 INSULIN	fly	FBgn0001247	Ide	P22817	2	26	Insulin-degrading enzyme (EC 3.4.24.56) (Insulin protease) (	w
-INSULIN	fly	FBgn0024248	chico	Q9XTN2	31	113	Insulin receptor substrate 1 (dIRS) (Protein chico)	w
+INSULIN	fly	FBgn0024248	chico	Q9XTN2	15	89	Insulin receptor substrate 1 (dIRS) (Protein chico)	w
 INSULIN	fly	FBgn0052082	IRSp53	Q8IQE6	2	47	Insulin receptor substrate 53 kDa, isoform A	w
 INSULIN	fly	FBgn0261575	tobi	Q9VBR6	29	258	RE74917p (Target of brain insulin (EC 3.2.1.-))	w
-INSULIN	fly	FBgn0283499	InR	P09208	147	3451	Insulin-like receptor (dIR) (dInr) (EC 2.7.10.1) (Insulin re	w
+INSULIN	fly	FBgn0283499	InR	P09208	140	3298	Insulin-like receptor (dIR) (dInr) (EC 2.7.10.1) (Insulin re	w
 INSULIN	human	F8WCM5	INS-IGF2	F8WCM5	6	50	Insulin, isoform 2 (INS-IGF2 readthrough transcript protein)	w
 INSULIN	human	O14654	IRS4	O14654	70	337	Insulin receptor substrate 4 (IRS-4) (160 kDa phosphotyrosin	w
 INSULIN	human	P01308	INS	P01308	97	1528	Insulin [Cleaved into: Insulin B chain; Insulin A chain]	w
@@ -201,7 +201,7 @@ INSULIN-LIKE	fly	FBgn0044049	Ilp4	Q9VT53	50	282	Probable insulin-like peptide 4 
 INSULIN-LIKE	fly	FBgn0044050	Ilp3	Q9VT52	41	293	Probable insulin-like peptide 3 (dILP3) (Insulin-related pep	w
 INSULIN-LIKE	fly	FBgn0044051	Ilp1	Q9VT50	41	276	Probable insulin-like peptide 1 (dILP1) (Insulin-related pep	w
 INSULIN-LIKE	fly	FBgn0052055	CG32055	Q9VT89	24	246	Insulin-like growth factor-binding protein complex acid labi	w
-INSULIN-LIKE	fly	FBgn0283499	InR	P09208	147	3451	Insulin-like receptor (dIR) (dInr) (EC 2.7.10.1) (Insulin re	w
+INSULIN-LIKE	fly	FBgn0283499	InR	P09208	140	3298	Insulin-like receptor (dIR) (dInr) (EC 2.7.10.1) (Insulin re	w
 INSULIN-LIKE	human	O00425	IGF2BP3	O00425	29	509	Insulin-like growth factor 2 mRNA-binding protein 3 (IGF2 mR	w
 INSULIN-LIKE	human	O00622	CCN1	O00622	28	229	CCN family member 1 (Cellular communication network factor 1	w
 INSULIN-LIKE	human	P01344	IGF2	P01344	14	62	Insulin-like growth factor 2 (Insulin-like growth factor II)	w

@@ -21,9 +21,9 @@ PROC	staphylococcus-aureus-93061	Q2FY68	proC	Q2FY68	0	5	Pyrroline-5-carboxylate 
 PROC	streptococcus-pneumoniae	Q8DQ59	proC	Q8DQ59	0	4	Pyrroline-5-carboxylate reductase	
 PROC-PA	fly	FBgn0045038	Proc	Q9VLV9	59	259		
 PROC-PA_23_140	fly	FBgn0045038	Proc	Q9VLV9	59	259		
-PROC-R	fly	FBgn0029723	Proc-R	Q9W4H3	3	8	Proctolin receptor, isoform A (Proctolin receptor, isoform B	
-PROC-R-PA	fly	FBgn0029723	Proc-R	Q9W4H3	3	8		
-PROC-R-PA_36_466	fly	FBgn0029723	Proc-R	Q9W4H3	3	8		
+PROC-R	fly	FBgn0029723	Proc-R	Q9W4H3	1	4	Proctolin receptor, isoform A (Proctolin receptor, isoform B	
+PROC-R-PA	fly	FBgn0029723	Proc-R	Q9W4H3	1	4		
+PROC-R-PA_36_466	fly	FBgn0029723	Proc-R	Q9W4H3	1	4		
 PROC1	arabidopsis-thaliana	P54904	PROC1	P54904	0	17	Pyrroline-5-carboxylate reductase	
 PROCA1	human	Q8NCQ7	PROCA1	Q8NCQ7	2	121	Protein PROCA1 (Protein interacting with cyclin A1)	
 PROCA1	mus-musculus	B0QZF7	Proca1	B0QZF7	0	51	Protein PROCA1	
@@ -31,12 +31,12 @@ PROCA1	rattus-norvegicus	Q4V7B4	Proca1	Q4V7B4	2	69	Protein PROCA1
 PROCA1	zebrafish	A0A8M9Q5G7	proca1	A0A8M9Q5G7	5	106	phospholipase A2	
 PROCATHEPSIN	human	P07711	CTSL	P07711	40	425	Procathepsin L (EC 3.4.22.15) (Cathepsin L1) (Major excreted	w
 PROCE	human	P23229	ITGA6	P23229	70	392	Integrin alpha-6 (CD49 antigen-like family member F) (VLA-6)	w
-PROCESS	fly	FBgn0000479	Pde4	Q9W4T4	9	127	3',5'-cyclic-AMP phosphodiesterase, isoform I (EC 3.1.4.53) 	w
+PROCESS	fly	FBgn0000479	Pde4	Q9W4T4	9	115	3',5'-cyclic-AMP phosphodiesterase, isoform I (EC 3.1.4.53) 	w
 PROCESS	fly	FBgn0030883	CG7772	Q9VX02	0	3	Mitochondrial fission process protein 1 (Mitochondrial 18 kD	w
 PROCESS	human	P09603	CSF1	P09603	62	486	Macrophage colony-stimulating factor 1 (CSF-1) (M-CSF) (MCSF	w
 PROCESS	human	Q9UDX5	MTFP1	Q9UDX5	7	74	Mitochondrial fission process protein 1 (Mitochondrial 18 kD	w
 PROCESSE	human	P02794	FTH1	P02794	7	282	Ferritin heavy chain (Ferritin H subunit) (EC 1.16.3.1) (Cel	w
-PROCESSED	fly	FBgn0004647	N	P07207	38	574	Neurogenic locus Notch protein [Cleaved into: Processed neur	w
+PROCESSED	fly	FBgn0004647	N	P07207	33	566	Neurogenic locus Notch protein [Cleaved into: Processed neur	w
 PROCESSED	fly	FBgn0033367	PPO2	Q9V521	8	260	Phenoloxidase 2 (PO A3) (EC 1.14.18.1) (Phenoloxidase subuni	w
 PROCESSED	human	O00533	CHL1	O00533	30	121	Neural cell adhesion molecule L1-like protein (Close homolog	w
 PROCESSED	human	O15018	PDZD2	O15018	3	32	PDZ domain-containing protein 2 (Activated in prostate cance	w
@@ -77,11 +77,11 @@ PROCESSED	human	Q9H6D3	XKR8	Q9H6D3	3	48	XK-related protein 8 (hXkr8) [Cleaved in
 PROCESSED	human	Q9NZV1	CRIM1	Q9NZV1	9	108	Cysteine-rich motor neuron 1 protein (CRIM-1) (Cysteine-rich	w
 PROCESSED	human	Q9UBE0	SAE1	Q9UBE0	23	195	SUMO-activating enzyme subunit 1 (Ubiquitin-like 1-activatin	w
 PROCESSED	human	Q9UNH7	SNX6	Q9UNH7	35	285	Sorting nexin-6 (TRAF4-associated factor 2) [Cleaved into: S	w
-PROCESSING	fly	FBgn0022069	Nnp-1	Q9VJZ7	16	129	Ribosomal RNA processing protein 1 homolog (NNP-1 homolog) (	w
-PROCESSING	fly	FBgn0031492	Prp40	Q9VQK5	14	97	LD24714p (Pre-mRNA processing factor 40)	w
-PROCESSING	fly	FBgn0033688	Prp8	A1Z8U0	10	30	Pre-mRNA processing factor 8	w
-PROCESSING	fly	FBgn0036915	Prp3	Q9VW52	24	138	Precursor RNA processing 3, isoform A	w
-PROCESSING	fly	FBgn0037656	CG11986	Q9VHI3	1	6	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
+PROCESSING	fly	FBgn0022069	Nnp-1	Q9VJZ7	16	128	Ribosomal RNA processing protein 1 homolog (NNP-1 homolog) (	w
+PROCESSING	fly	FBgn0031492	Prp40	Q9VQK5	9	89	LD24714p (Pre-mRNA processing factor 40)	w
+PROCESSING	fly	FBgn0033688	Prp8	A1Z8U0	10	26	Pre-mRNA processing factor 8	w
+PROCESSING	fly	FBgn0036915	Prp3	Q9VW52	23	135	Precursor RNA processing 3, isoform A	w
+PROCESSING	fly	FBgn0037656	CG11986	Q9VHI3	0	2	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
 PROCESSING	human	O60476	MAN1A2	O60476	8	111	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IB (EC 3.2.1.	w
 PROCESSING	human	P33908	MAN1A1	P33908	19	149	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA (EC 3.2.1.	w
 PROCESSING	human	P56182	RRP1	P56182	34	354	Ribosomal RNA processing protein 1 homolog A (Novel nuclear 	w
@@ -217,7 +217,7 @@ PROCOLLAGEN-LYSINE	zebrafish	A4U7F9	plod2	A4U7F9	3	13	procollagen-lysine 5-dioxy
 PROCOLLAGEN-LYSINE	zebrafish	A8WIN7	plod1a	A8WIN7	4	13	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 1	w
 PROCOLLAGEN-PROLINE	fly	FBgn0026190	PH4alphaMP	Q9VA65	49	295	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
 PROCOLLAGEN-PROLINE	fly	FBgn0036795	CG18233	Q9VVQ6	45	244	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
-PROCOLLAGEN-PROLINE	fly	FBgn0039776	PH4alphaEFB	Q9VA69	26	78	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
+PROCOLLAGEN-PROLINE	fly	FBgn0039776	PH4alphaEFB	Q9VA69	25	71	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
 PROCOLLAGEN-PROLINE	fly	FBgn0039779	PH4alphaSG2	Q9I7H5	21	53	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
 PROCOLLAGEN-PROLINE	fly	FBgn0039780	PH4alphaNE1	Q9VA64	21	53	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
 PROCOLLAGEN-PROLINE	fly	FBgn0039782	CG15539	Q0KHY7	22	53	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
@@ -234,7 +234,7 @@ PROCOLLAGEN-PROLINE	fly	FBgn0051524	CG31524	Q8IMI2	58	295	procollagen-proline 4-
 PROCOLLAGEN-PROLINE	fly	FBgn0052199	CG32199	Q9VVQ9	23	54	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
 PROCOLLAGEN-PROLINE	fly	FBgn0052201	CG32201	Q8IQS7	24	55	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
 PROCOLLAGEN-PROLINE	fly	FBgn0085374	CG34345	A8DYR4	21	53	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
-PROCOLLAGEN-PROLINE	fly	FBgn0265268	CG18234	Q9VVQ5	18	245	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
+PROCOLLAGEN-PROLINE	fly	FBgn0265268	CG18234	Q9VVQ5	18	244	procollagen-proline 4-dioxygenase (EC 1.14.11.2)	w
 PROCOLLAGEN-PROLINE	human	O15460	P4HA2	O15460	41	199	Prolyl 4-hydroxylase subunit alpha-2 (4-PH alpha-2) (EC 1.14	w
 PROCOLLAGEN-PROLINE	human	P13674	P4HA1	P13674	55	387	Prolyl 4-hydroxylase subunit alpha-1 (4-PH alpha-1) (EC 1.14	w
 PROCOLLAGEN-PROLINE	human	Q7Z4N8	P4HA3	Q7Z4N8	46	141	Prolyl 4-hydroxylase subunit alpha-3 (4-PH alpha-3) (EC 1.14	w
@@ -248,6 +248,6 @@ PROCONVERTIN	human	P08709	F7	P08709	8	107	Coagulation factor VII (EC 3.4.21.21) 
 PROCR	human	Q9UNN8	PROCR	Q9UNN8	47	318	Endothelial protein C receptor (Activated protein C receptor	
 PROCR	mus-musculus	Q64695	Procr	Q64695	0	19	Endothelial protein C receptor	
 PROCR	rattus-norvegicus	Q4V8I1	Procr	Q4V8I1	1	20	Endothelial protein C receptor	
-PROCTOLIN	fly	FBgn0029723	Proc-R	Q9W4H3	3	8	Proctolin receptor, isoform A (Proctolin receptor, isoform B	w
+PROCTOLIN	fly	FBgn0029723	Proc-R	Q9W4H3	1	4	Proctolin receptor, isoform A (Proctolin receptor, isoform B	w
 PROCTOLIN	fly	FBgn0045038	Proc	Q9VLV9	59	259	Proctolin (Proctolin, isoform B) (RH15319p)	w
 PROC_HUMAN	human	P04070	PROC	P04070	20	235		

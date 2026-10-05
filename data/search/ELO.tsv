@@ -10,7 +10,7 @@ ELO3	yeast	P40319	ELO3	P40319	1	50	Fatty acid elongase 3
 ELO5	trypanosoma-cruzi	Q4D321	ELO5	Q4D321	0	5	Fatty acid elongase 5	
 ELO68ALPHA	fly	FBgn0052072	Elo68alpha	Q5JZZ4	3	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	
 ELO68BETA	fly	FBgn0036128	Elo68beta	A8JNR0	3	76	Elongation of very long chain fatty acids protein (EC 2.3.1.	
-ELOA	fly	FBgn0039066	EloA	Q9VCP0	129	497	Transcription elongation factor B polypeptide 3 (Elongin-A) 	
+ELOA	fly	FBgn0039066	EloA	Q9VCP0	129	496	Transcription elongation factor B polypeptide 3 (Elongin-A) 	
 ELOA	human	Q14241	ELOA	Q14241	94	401	Elongin-A (EloA) (Elongin 110 kDa subunit) (RNA polymerase I	
 ELOA	mus-musculus	Q8CB77	Eloa	Q8CB77	18	166	Elongin-A	
 ELOA	rattus-norvegicus	Q63187	Eloa	Q63187	24	242	Elongin-A	
@@ -20,8 +20,8 @@ ELOA2	human	Q8IYF1	ELOA2	Q8IYF1	37	241	Elongin-A2 (EloA2) (RNA polymerase II tra
 ELOA2_HUMAN	human	Q8IYF1	ELOA2	Q8IYF1	37	241		
 ELOABP1	human	Q8N1G1	REXO1	Q8N1G1	11	104		
 ELOAL	zebrafish	E7F7H1	eloal	E7F7H1	25	154	Elongin A,-like	
-ELOA_254	fly	FBgn0039066	EloA	Q9VCP0	129	497		
-ELOA_531	fly	FBgn0039066	EloA	Q9VCP0	129	497		
+ELOA_254	fly	FBgn0039066	EloA	Q9VCP0	129	496		
+ELOA_531	fly	FBgn0039066	EloA	Q9VCP0	129	496		
 ELOB	fly	FBgn0023212	EloB	O44226	45	558	Elongin B	
 ELOB	human	Q15370	ELOB	Q15370	57	796	Elongin-B (EloB) (Elongin 18 kDa subunit) (RNA polymerase II	
 ELOB	mus-musculus	P62869	Elob	P62869	13	248	Elongin-B	
@@ -32,7 +32,7 @@ ELOBL7	rattus-norvegicus	F1LZ51	Elobl7	F1LZ51	13	118	Elongin-B
 ELOBL7	rattus-norvegicus	F1M937	Elobl7	F1M937	9	118	Elongin-B	
 ELOBL9	rattus-norvegicus	D3ZNR1	Elobl9	D3ZNR1	9	115	Elongin-B	
 ELOB_HUMAN	human	Q15370	ELOB	Q15370	57	796		
-ELOC	fly	FBgn0266711	EloC	Q7JWD6	42	549	Elongin-C	
+ELOC	fly	FBgn0266711	EloC	Q7JWD6	42	548	Elongin-C	
 ELOC	human	Q15369	ELOC	Q15369	120	799	Elongin-C (EloC) (Elongin 15 kDa subunit) (RNA polymerase II	
 ELOC	mus-musculus	A0A087WNT1	Eloc	A0A087WNT1	62	271	Elongin-C	
 ELOC	rattus-norvegicus	P83941	Eloc	P83941	54	210	Elongin-C	
@@ -65,22 +65,22 @@ ELONGASE	yeast	P25358	ELO2	P25358	1	20	Fatty acid elongase 2	w
 ELONGASE	yeast	P39540	ELO1	P39540	0	19	Fatty acid elongase 1	w
 ELONGASE	yeast	P40319	ELO3	P40319	1	50	Fatty acid elongase 3	w
 ELONGASE	zebrafish	Q6PC64	elovl6	Q6PC64	0	7	Very long chain fatty acid elongase 6	w
-ELONGATION	fly	FBgn0000557	eEF1alpha2	P05303	6	150	Elongation factor 1-alpha 2 (EF-1-alpha-2)	w
-ELONGATION	fly	FBgn0000559	eEF2	P13060	8	371	Eukaryotic translation elongation factor 2 (EC 3.6.5.-) (Elo	w
+ELONGATION	fly	FBgn0000557	eEF1alpha2	P05303	5	145	Elongation factor 1-alpha 2 (EF-1-alpha-2)	w
+ELONGATION	fly	FBgn0000559	eEF2	P13060	7	359	Eukaryotic translation elongation factor 2 (EC 3.6.5.-) (Elo	w
 ELONGATION	fly	FBgn0010416	TH1	Q24134	26	454	Negative elongation factor D	w
 ELONGATION	fly	FBgn0010422	TfIIS	P20232	58	507	Transcription elongation factor S-II (RNA polymerase II elon	w
-ELONGATION	fly	FBgn0014037	Su(Tpl)	Q9VW51	45	195	RNA polymerase II elongation factor Ell (dELL)	w
+ELONGATION	fly	FBgn0014037	Su(Tpl)	Q9VW51	45	192	RNA polymerase II elongation factor Ell (dELL)	w
 ELONGATION	fly	FBgn0017430	Nelf-E	P92204	71	463	Negative elongation factor E	w
 ELONGATION	fly	FBgn0019949	Cdk9	O17432	245	1325	Cyclin-dependent kinase 9 (EC 2.7.11.22, EC 2.7.11.23) (GH21	w
 ELONGATION	fly	FBgn0024182	waw	Q9VRH6	22	444	Translation factor waclaw, mitochondrial (EC 3.6.5.-) (Elong	w
 ELONGATION	fly	FBgn0024556	mEFTu1	A1Z9E3	7	232	Elongation factor Tu	w
-ELONGATION	fly	FBgn0027553	NELF-B	Q9Y113	43	450	Negative elongation factor B	w
+ELONGATION	fly	FBgn0027553	NELF-B	Q9Y113	42	450	Negative elongation factor B	w
 ELONGATION	fly	FBgn0028683	spt4	Q9TVQ5	17	460	Transcription elongation factor SPT4 (DRB sensitivity-induci	w
 ELONGATION	fly	FBgn0028737	eEF1beta	O96827	7	55	Probable elongation factor 1-beta (EF-1-beta)	w
-ELONGATION	fly	FBgn0028982	Spt6	Q9W420	4	49	Transcription elongation factor SPT6	w
+ELONGATION	fly	FBgn0028982	Spt6	Q9W420	1	36	Transcription elongation factor SPT6	w
 ELONGATION	fly	FBgn0029176	eEF1gamma	Q9NJH0	12	74	Elongation factor 1-gamma (EF-1-gamma) (eEF-1B gamma)	w
 ELONGATION	fly	FBgn0029798	Rtel1	Q9W484	5	74	Regulator of telomere elongation helicase 1 homolog (EC 3.6.	w
-ELONGATION	fly	FBgn0032198	eEF1delta	Q9VL18	25	217	Probable elongation factor 1-delta (EF-1-delta)	w
+ELONGATION	fly	FBgn0032198	eEF1delta	Q9VL18	22	203	Probable elongation factor 1-delta (EF-1-delta)	w
 ELONGATION	fly	FBgn0032646	mEFTs	Q9VJC7	4	19	Elongation factor Ts, mitochondrial (EF-Ts) (EF-TsMt)	w
 ELONGATION	fly	FBgn0033184	mEFTu2	Q7K3V6	1	157	AT01345p (GH10272p) (Mitochondrial translation elongation fa	w
 ELONGATION	fly	FBgn0034382	mElo	Q6NN18	3	78	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
@@ -96,12 +96,12 @@ ELONGATION	fly	FBgn0037763	CG16904	Q9VH57	1	69	Elongation of very long chain fat
 ELONGATION	fly	FBgn0037764	CG9459	Q4V3H4	1	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ELONGATION	fly	FBgn0037765	CG9458	Q9VH55	3	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ELONGATION	fly	FBgn0038860	Ice2	Q8SZZ8	3	45	Little elongation complex subunit 2 (Interactor of little el	w
-ELONGATION	fly	FBgn0038872	Nelf-A	A0A0B4KGH5	28	160	Negative elongation factor A, isoform B	w
+ELONGATION	fly	FBgn0038872	Nelf-A	A0A0B4KGH5	24	150	Negative elongation factor A, isoform B	w
 ELONGATION	fly	FBgn0038983	CG5326	Q9VCZ0	6	112	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ELONGATION	fly	FBgn0038986	sit	Q9VCY6	8	62	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ELONGATION	fly	FBgn0039030	CG6660	Q9VCT3	8	86	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-ELONGATION	fly	FBgn0039066	EloA	Q9VCP0	129	497	Transcription elongation factor B polypeptide 3 (Elongin-A) 	w
-ELONGATION	fly	FBgn0040273	Spt5	Q9V460	49	250	Transcription elongation factor SPT5 (DRB sensitivity-induci	w
+ELONGATION	fly	FBgn0039066	EloA	Q9VCP0	129	496	Transcription elongation factor B polypeptide 3 (Elongin-A) 	w
+ELONGATION	fly	FBgn0040273	Spt5	Q9V460	40	232	Transcription elongation factor SPT5 (DRB sensitivity-induci	w
 ELONGATION	fly	FBgn0050008	CG30008	Q8SXD1	2	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ELONGATION	fly	FBgn0051141	CG31141	Q8IMY2	1	58	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ELONGATION	fly	FBgn0051159	mRRF2	Q9VCX4	4	101	Ribosome-releasing factor 2, mitochondrial (RRF2mt) (Elongat	w
@@ -112,8 +112,8 @@ ELONGATION	fly	FBgn0053110	CG33110	Q9VCY5	6	58	Elongation of very long chain fat
 ELONGATION	fly	FBgn0063670	CG40228	Q8MQI6	1	67	Transcription elongation factor 1 homolog	w
 ELONGATION	fly	FBgn0260942	bond	Q9VCY7	4	72	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ELONGATION	fly	FBgn0260960	Baldspot	Q9VV87	7	116	Very long chain fatty acid elongase 6 (ELOVL6) (EC 2.3.1.199	w
-ELONGATION	fly	FBgn0263133	mEFG1	Q9VM33	1	272	Elongation factor G, mitochondrial (EF-Gmt) (Elongation fact	w
-ELONGATION	fly	FBgn0284245	eEF1alpha1	P08736	13	261	Elongation factor 1-alpha 1 (EF-1-alpha-1) (50 kDa female-sp	w
+ELONGATION	fly	FBgn0263133	mEFG1	Q9VM33	1	270	Elongation factor G, mitochondrial (EF-Gmt) (Elongation fact	w
+ELONGATION	fly	FBgn0284245	eEF1alpha1	P08736	12	243	Elongation factor 1-alpha 1 (EF-1-alpha-1) (50 kDa female-sp	w
 ELONGATION	human	A1L3X0	ELOVL7	A1L3X0	5	75	Very long chain fatty acid elongase 7 (EC 2.3.1.199) (3-keto	w
 ELONGATION	human	H0UI80	NELFCD	H0UI80	6	104	Negative elongation factor complex member C/D	w
 ELONGATION	human	O00267	SUPT5H	O00267	68	598	Transcription elongation factor SPT5 (hSPT5) (DRB sensitivit	w
@@ -311,11 +311,11 @@ ELONGATION	zebrafish	Q9DDT5	supt5h	Q9DDT5	23	259	Transcription elongation factor
 ELONGATOR	fly	FBgn0015359	Elp5	Q24050	3	13	Elongator complex protein 5	w
 ELONGATOR	fly	FBgn0031604	Elp3	Q9VQZ6	27	393	Elongator complex protein 3 (EC 2.3.1.311) (tRNA uridine(34)	w
 ELONGATOR	fly	FBgn0031711	Elp4	Q9VMQ7	48	417	Elongator complex protein 4 (ELP4)	w
-ELONGATOR	fly	FBgn0033540	Elp2	Q7K4B3	17	367	Elongator complex protein 2 (ELP2) (Stat3-interacting protei	w
+ELONGATOR	fly	FBgn0033540	Elp2	Q7K4B3	16	366	Elongator complex protein 2 (ELP2) (Stat3-interacting protei	w
 ELONGATOR	fly	FBgn0034853	Ice1	Q9W1R4	5	37	Little elongation complex subunit 1 (Interactor of little el	w
-ELONGATOR	fly	FBgn0037926	Elp1	A0A0B4KFR6	8	132	Elongator complex protein 1	w
+ELONGATOR	fly	FBgn0037926	Elp1	A0A0B4KFR6	7	116	Elongator complex protein 1	w
 ELONGATOR	fly	FBgn0038860	Ice2	Q8SZZ8	3	45	Little elongation complex subunit 2 (Interactor of little el	w
-ELONGATOR	fly	FBgn0086371	Elp6	Q9VFW4	4	29	Elongator complex protein 6	w
+ELONGATOR	fly	FBgn0086371	Elp6	Q9VFW4	4	23	Elongator complex protein 6	w
 ELONGATOR	human	O95163	ELP1	O95163	22	206	Elongator complex protein 1 (ELP1) (IkappaB kinase complex-a	w
 ELONGATOR	human	Q0PNE2	ELP6	Q0PNE2	10	140	Elongator complex protein 6 (Angiotonin-transactivated prote	w
 ELONGATOR	human	Q659A1	ICE2	Q659A1	26	190	Little elongation complex subunit 2 (Interactor of little el	w
@@ -349,14 +349,14 @@ ELONGIN	human	Q15369	ELOC	Q15369	120	799	Elongin-C (EloC) (Elongin 15 kDa subuni
 ELONGIN	human	Q15370	ELOB	Q15370	57	796	Elongin-B (EloB) (Elongin 18 kDa subunit) (RNA polymerase II	w
 ELONGIN	zebrafish	A0A8M1QLV3	LOC569097	A0A8M1QLV3	0	1	Elongin B	w
 ELONGIN	zebrafish	E7F7H1	eloal	E7F7H1	25	154	Elongin A,-like	w
-ELONGIN-A	fly	FBgn0039066	EloA	Q9VCP0	129	497	Transcription elongation factor B polypeptide 3 (Elongin-A) 	w
+ELONGIN-A	fly	FBgn0039066	EloA	Q9VCP0	129	496	Transcription elongation factor B polypeptide 3 (Elongin-A) 	w
 ELONGIN-A	human	Q14241	ELOA	Q14241	94	401	Elongin-A (EloA) (Elongin 110 kDa subunit) (RNA polymerase I	w
 ELONGIN-A	yeast	P53861	ELA1	P53861	6	157	Elongin-A	w
 ELONGIN-A-BINDING	human	Q8N1G1	REXO1	Q8N1G1	11	104	RNA exonuclease 1 homolog (EC 3.1.-.-) (Elongin-A-binding pr	w
 ELONGIN-A2	human	Q8IYF1	ELOA2	Q8IYF1	37	241	Elongin-A2 (EloA2) (RNA polymerase II transcription factor S	w
 ELONGIN-B	human	Q15370	ELOB	Q15370	57	796	Elongin-B (EloB) (Elongin 18 kDa subunit) (RNA polymerase II	w
 ELONGIN-B	zebrafish	F1QF30	elob	F1QF30	9	149	Elongin-B	w
-ELONGIN-C	fly	FBgn0266711	EloC	Q7JWD6	42	549	Elongin-C	w
+ELONGIN-C	fly	FBgn0266711	EloC	Q7JWD6	42	548	Elongin-C	w
 ELONGIN-C	human	Q15369	ELOC	Q15369	120	799	Elongin-C (EloC) (Elongin 15 kDa subunit) (RNA polymerase II	w
 ELONGIN-C	worm	B1Q256	CELE_F54F7.10	B1Q256	10	47	Elongin-C	w
 ELONGIN-C	worm	Q23153	elc-2	Q23153	10	51	Elongin-C	w

@@ -15,7 +15,7 @@ TRANSPORT	fly	FBgn0000241	bw	P12428	3	26	Protein brown (EC 7.6.2.-) (EC 7.6.2.6)
 TRANSPORT	fly	FBgn0003996	w	P10090	4	54	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
 TRANSPORT	fly	FBgn0010638	Sec61beta	Q7JZN0	23	220	Protein transport protein Sec61 subunit beta	w
 TRANSPORT	fly	FBgn0030330	Tango10	Q7K187	3	16	HL07962p (Transport and golgi organization 10, isoform A) (T	w
-TRANSPORT	fly	FBgn0030365	Tango4	Q9VYQ9	19	164	LD24662p (Transport and golgi organization 4)	w
+TRANSPORT	fly	FBgn0030365	Tango4	Q9VYQ9	19	162	LD24662p (Transport and golgi organization 4)	w
 TRANSPORT	fly	FBgn0030503	Tango2	M9NDW0	1	28	Transport and golgi organization 2, isoform B (Transport and	w
 TRANSPORT	fly	FBgn0031049	Sec61gamma	Q9VWE9	5	145	Protein transport protein Sec61 gamma-2 subunit	w
 TRANSPORT	fly	FBgn0031550	IFT57	Q9VQS5	17	115	Intraflagellar transport protein 57 homolog	w
@@ -33,7 +33,7 @@ TRANSPORT	fly	FBgn0037009	CG5104	Q9VPD4	0	28	Vesicle transport protein	w
 TRANSPORT	fly	FBgn0037912	sea	Q7KSQ0	0	41	Citrate transport protein	w
 TRANSPORT	fly	FBgn0038221	IFT54	Q9VFL0	14	70	IP21508p (Intraflagellar transport 54)	w
 TRANSPORT	fly	FBgn0038303	SIDL	Q9VFB7	13	42	Trafficking protein particle complex subunit 10 (Shal Intera	w
-TRANSPORT	fly	FBgn0040087	p115	Q9W3N6	13	122	General vesicular transport factor p115	w
+TRANSPORT	fly	FBgn0040087	p115	Q9W3N6	13	118	General vesicular transport factor p115	w
 TRANSPORT	fly	FBgn0040737	Tango8	A1ZB59	0	0	RT03853p (Transport and golgi organization 8)	w
 TRANSPORT	fly	FBgn0050404	Tango11	Q961C9	3	19	Transport and Golgi organization protein 11 (Tango-11)	w
 TRANSPORT	fly	FBgn0050441	IFT20	A1Z6F0	8	30	Intraflagellar transport 20	w
@@ -292,7 +292,7 @@ TRANSPORTER	fly	FBgn0003996	w	P10090	4	54	Protein white (EC 7.6.2.-) (EC 7.6.2.6
 TRANSPORTER	fly	FBgn0010414	SerT	P51905	0	11	Serotonin transporter	w
 TRANSPORTER	fly	FBgn0010497	dmGlut	Q9VKC9	2	47	Dietary and metabolic glutamate transporter (LD14545p)	w
 TRANSPORTER	fly	FBgn0010651	MFS14	Q8MRP7	1	5	GH07529p (Major facilitator superfamily transporter 14, isof	w
-TRANSPORTER	fly	FBgn0011603	ine	Q9VR07	2	18	Sodium- and chloride-dependent GABA transporter ine (Protein	w
+TRANSPORTER	fly	FBgn0011603	ine	Q9VR07	0	9	Sodium- and chloride-dependent GABA transporter ine (Protein	w
 TRANSPORTER	fly	FBgn0015230	Glut3	P53403	0	2	Glucose transporter type 3 (Glucose transporter-like protein	w
 TRANSPORTER	fly	FBgn0019952	Orct	Q9VCA2	0	5	Organic cation transporter protein	w
 TRANSPORTER	fly	FBgn0020762	Atet	Q9VQY4	9	11	ABC transporter expressed in trachea, isoform A (ABC transpo	w
@@ -339,17 +339,17 @@ TRANSPORTER	fly	FBgn0033708	CG8850	A1Z8V9	0	2	Transporter	w
 TRANSPORTER	fly	FBgn0033762	ZnT49B	A1Z935	17	355	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Solut	w
 TRANSPORTER	fly	FBgn0033778	Balat	Q961J5	1	5	Beta-alanine transporter (BalaT)	w
 TRANSPORTER	fly	FBgn0033911	Vgat	A1Z9M6	0	19	Vesicular GABA transporter	w
-TRANSPORTER	fly	FBgn0034049	bdg	Q0E961	3	27	Sodium-dependent transporter bedraggled	w
+TRANSPORTER	fly	FBgn0034049	bdg	Q0E961	1	23	Sodium-dependent transporter bedraggled	w
 TRANSPORTER	fly	FBgn0034136	DAT	A0A0B4KEX2	0	11	Transporter	w
 TRANSPORTER	fly	FBgn0034275	neat	Q7K4I4	0	9	LD38576p (SLC26 membrane transporter protein)	w
 TRANSPORTER	fly	FBgn0034381	List	A1ZBC7	0	5	Transporter	w
 TRANSPORTER	fly	FBgn0034392	MFS15	A1ZBD9	0	4	FI23731p1 (Major facilitator superfamily transporter 15, iso	w
 TRANSPORTER	fly	FBgn0034493	CG8908	A1ZBS3	0	1	ABC transporter domain-containing protein	w
-TRANSPORTER	fly	FBgn0034611	MFS16	Q8MLW5	1	6	Major facilitator superfamily transporter 16, isoform B (RE2	w
+TRANSPORTER	fly	FBgn0034611	MFS16	Q8MLW5	0	6	Major facilitator superfamily transporter 16, isoform B (RE2	w
 TRANSPORTER	fly	FBgn0034715	Oatp58Db	Q9W270	0	6	Solute carrier organic anion transporter family member	w
 TRANSPORTER	fly	FBgn0034716	Oatp58Dc	Q9W269	0	5	Solute carrier organic anion transporter family member	w
-TRANSPORTER	fly	FBgn0034911	GlyT	Q9W1J0	0	10	Transporter	w
-TRANSPORTER	fly	FBgn0035244	Abcb7	Q9W0C5	2	31	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+TRANSPORTER	fly	FBgn0034911	GlyT	Q9W1J0	0	2	Transporter	w
+TRANSPORTER	fly	FBgn0035244	Abcb7	Q9W0C5	2	25	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
 TRANSPORTER	fly	FBgn0035432	ZnT63C	M9PEG6	25	193	Zinc transporter 63C, isoform F	w
 TRANSPORTER	fly	FBgn0035969	CG4476	Q9VSV2	0	5	Transporter	w
 TRANSPORTER	fly	FBgn0036240	CG6928	Q7K155	0	5	LD07878p (SLC26 membrane transporter protein)	w
@@ -359,7 +359,7 @@ TRANSPORTER	fly	FBgn0036695	Papst2	Q9VVD9	0	3	Adenosine 3'-phospho 5'-phosphosul
 TRANSPORTER	fly	FBgn0036732	Oatp74D	Q9VVH9	5	60	Solute carrier organic anion transporter family member 74D (	w
 TRANSPORTER	fly	FBgn0036816	Indy	Q9VVT2	5	230	Protein I'm not dead yet (INDY transporter protein) (drIndy)	w
 TRANSPORTER	fly	FBgn0036834	CG6836	Q9VVV2	2	6	Organic solute transporter alpha-like protein (Solute carrie	w
-TRANSPORTER	fly	FBgn0037000	ZnT77C	Q9VPE3	3	7	FI23527p1 (Zinc transporter 77C, isoform A) (Zinc transporte	w
+TRANSPORTER	fly	FBgn0037000	ZnT77C	Q9VPE3	2	4	FI23527p1 (Zinc transporter 77C, isoform A) (Zinc transporte	w
 TRANSPORTER	fly	FBgn0037875	ZnT86D	Q9VGS1	4	17	LD23375p (RE72238p) (Zinc transporter 86D)	w
 TRANSPORTER	fly	FBgn0038309	Amt	Q9VFA9	10	158	Ammonium transporter	w
 TRANSPORTER	fly	FBgn0038376	Hmt-1	Q9VF20	11	288	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
@@ -372,16 +372,16 @@ TRANSPORTER	fly	FBgn0039873	Smvt	Q9V9U1	0	2	FI02923p (Sodium-dependent multivita
 TRANSPORTER	fly	FBgn0039882	Rift	Q9V9S9	0	5	Riboflavin transporter	w
 TRANSPORTER	fly	FBgn0039915	Gat	Q9V4E7	1	4	Transporter	w
 TRANSPORTER	fly	FBgn0042641	frc	Q95YI5	0	8	UDP-sugar transporter UST74c (Protein fringe connection)	w
-TRANSPORTER	fly	FBgn0050035	Tret1	A1Z8N1	10	152	Facilitated trehalose transporter Tret1-1 (DmTret1-1)	w
+TRANSPORTER	fly	FBgn0050035	Tret1	A1Z8N1	8	145	Facilitated trehalose transporter Tret1-1 (DmTret1-1)	w
 TRANSPORTER	fly	FBgn0050272	MFS1	Q8MMD6	0	2	Major facilitator superfamily transporter 1	w
 TRANSPORTER	fly	FBgn0050277	Oatp58Da	Q9W271	0	4	Solute carrier organic anion transporter family member	w
 TRANSPORTER	fly	FBgn0051634	Oatp26F	Q8SY02	0	26	Solute carrier organic anion transporter family member	w
 TRANSPORTER	fly	FBgn0051668	CG31668	Q8IPY0	0	3	Sodium-coupled monocarboxylate transporter 2	w
 TRANSPORTER	fly	FBgn0051860	ZnT33D	Q9VKA3	2	5	Zinc transporter 33D, isoform B	w
-TRANSPORTER	fly	FBgn0052016	4E-T	Q8IH18	41	146	Eukaryotic translation initiation factor 4E transporter (4E-	w
+TRANSPORTER	fly	FBgn0052016	4E-T	Q8IH18	34	134	Eukaryotic translation initiation factor 4E transporter (4E-	w
 TRANSPORTER	fly	FBgn0052079	CG32079	Q9VTD5	0	2	Amino acid transporter transmembrane domain-containing prote	w
 TRANSPORTER	fly	FBgn0052081	CG32081	Q8IQF3	0	2	Amino acid transporter transmembrane domain-containing prote	w
-TRANSPORTER	fly	FBgn0052451	SPoCk	M9PG15	0	42	P-type Ca(2+) transporter (EC 7.2.2.10)	w
+TRANSPORTER	fly	FBgn0052451	SPoCk	M9PG15	0	39	P-type Ca(2+) transporter (EC 7.2.2.10)	w
 TRANSPORTER	fly	FBgn0052669	CG32669	P83740	1	22	Putative sodium-dependent multivitamin transporter (Na(+)-de	w
 TRANSPORTER	fly	FBgn0053124	CG33124	Q9VQ85	1	2	Sodium-coupled monocarboxylate transporter 1	w
 TRANSPORTER	fly	FBgn0058263	MFS17	Q494G7	0	2	Major facilitator superfamily transporter 17, isoform F (Maj	w

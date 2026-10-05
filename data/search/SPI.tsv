@@ -59,9 +59,9 @@ SPICE1	mus-musculus	Q8C804	Spice1	Q8C804	1	3	Spindle and centriole-associated pr
 SPICE1	rattus-norvegicus	Q5RKG1	Spice1	Q5RKG1	2	3	Spindle and centriole-associated protein 1	
 SPICE1	zebrafish	A0A2R8Q094	spice1	A0A2R8Q094	0	1	Spindle and centriole-associated protein 1	
 SPICE_HUMAN	human	Q8N0Z3	SPICE1	Q8N0Z3	56	222		
-SPICHTHYIN	fly	FBgn0032451	spict	M9PD12	0	17	Spichthyin, isoform B	w
-SPICT	fly	FBgn0032451	spict	M9PD12	0	17	Spichthyin, isoform B	
-SPICT_375	fly	FBgn0032451	spict	M9PD12	0	17		
+SPICHTHYIN	fly	FBgn0032451	spict	M9PD12	0	12	Spichthyin, isoform B	w
+SPICT	fly	FBgn0032451	spict	M9PD12	0	12	Spichthyin, isoform B	
+SPICT_375	fly	FBgn0032451	spict	M9PD12	0	12		
 SPIC_HUMAN	human	Q8N5J4	SPIC	Q8N5J4	55	340		
 SPIDEY	fly	FBgn0029975	spidey	Q9W3N1	1	134	RH59310p (Spidey)	w
 SPIDEY	fly	FBgn0029975	spidey	Q9W3N1	1	134	RH59310p (Spidey)	w
@@ -208,19 +208,19 @@ SPINAL	human	Q9NPE2	NGRN	Q9NPE2	77	546	Neugrin (Mesenchymal stem cell protein DS
 SPINAL	human	Q9NRA1	PDGFC	Q9NRA1	32	153	Platelet-derived growth factor C (PDGF-C) (Fallotein) (Spina	w
 SPINB	zebrafish	F1R8A6	spinb	F1R8A6	0	1	Spindlin b	
 SPINDLE	fly	FBgn0000063	Mps1	A0A0B4KG66	197	1167	Monopolar spindle 1, isoform B (EC 2.7.11.-, EC 2.7.12.1)	w
-SPINDLE	fly	FBgn0000140	asp	Q9VC45	47	792	Protein abnormal spindle	w
+SPINDLE	fly	FBgn0000140	asp	Q9VC45	42	791	Protein abnormal spindle	w
 SPINDLE	fly	FBgn0003480	spn-B	O77135	8	85	FI03211p (Spindle B)	w
-SPINDLE	fly	FBgn0011020	Sas-4	Q9VI72	17	62	Spindle assembly abnormal 4	w
+SPINDLE	fly	FBgn0011020	Sas-4	Q9VI72	14	56	Spindle assembly abnormal 4	w
 SPINDLE	fly	FBgn0025874	Meics	O96395	33	365	LD05664p (Meiotic central spindle, isoform A) (Zinc finger m	w
-SPINDLE	fly	FBgn0027500	spd-2	Q9VV79	9	40	BcDNA.LD24702 (Spindle defective 2 (EC 3.6.1.13))	w
-SPINDLE	fly	FBgn0027513	ana2	Q9XZ31	10	39	Anastral spindle 2, isoform A	w
+SPINDLE	fly	FBgn0027500	spd-2	Q9VV79	8	39	BcDNA.LD24702 (Spindle defective 2 (EC 3.6.1.13))	w
+SPINDLE	fly	FBgn0027513	ana2	Q9XZ31	9	38	Anastral spindle 2, isoform A	w
 SPINDLE	fly	FBgn0032723	ssp3	Q9VJ35	0	2	LD01527p (Short spindle 3, isoform A)	w
 SPINDLE	fly	FBgn0035209	msd1	Q9W0G7	3	14	Augmin complex subunit msd1 (Mitotic spindle density protein	w
 SPINDLE	fly	FBgn0035210	msd5	Q9W0G6	3	16	Augmin complex subunit msd5 (Mitotic spindle density protein	w
 SPINDLE	fly	FBgn0035676	ssp6	Q9VRT8	3	15	Short spindle 6, isoform A (Short spindle 6, isoform B)	w
-SPINDLE	fly	FBgn0036389	ssp2	Q9VUA5	8	47	LD42058p (Short spindle 2, isoform A) (Short spindle 2, isof	w
+SPINDLE	fly	FBgn0036389	ssp2	Q9VUA5	2	32	LD42058p (Short spindle 2, isoform A) (Short spindle 2, isof	w
 SPINDLE	fly	FBgn0037985	ssp5	Q9VGD8	0	2	GH27720p (Short spindle 5)	w
-SPINDLE	fly	FBgn0039250	Mink	Q9VC08	2	6	LD43724p (Mitotic spindle and nuclear protein)	w
+SPINDLE	fly	FBgn0039250	Mink	Q9VC08	1	5	LD43724p (Mitotic spindle and nuclear protein)	w
 SPINDLE	fly	FBgn0039731	Sas-6	Q9VAC8	11	50	Spindle assembly abnormal protein 6 homolog	w
 SPINDLE	fly	FBgn0052667	ssp7	Q8IR95	27	257	GEO09608p1 (RH08789p) (Short spindle 7)	w
 SPINDLE	fly	FBgn0261858	Mzt1	Q6ILY6	6	28	GEO02508p1 (HDC08084) (Mitotic spindle organizing protein 1)	w
@@ -286,7 +286,7 @@ SPINDLE	zebrafish	E9QFU9	mzt2b	E9QFU9	2	16	Mitotic spindle organizing protein 2B
 SPINDLE	zebrafish	Q568H3	mad2l2	Q568H3	11	50	Mitotic spindle assembly checkpoint protein MAD2B	w
 SPINDLE	zebrafish	Q7ZVT3	sass6	Q7ZVT3	4	64	Spindle assembly abnormal protein 6 homolog	w
 SPINDLE	zebrafish	Q8AYG3	ttk	Q8AYG3	6	44	Dual specificity protein kinase Ttk (EC 2.7.12.1) (Mitotic c	w
-SPINDLE-A	fly	FBgn0003479	spn-A	Q27297	7	207	DNA repair protein Rad51 homolog (Protein spindle-A) (RecA p	w
+SPINDLE-A	fly	FBgn0003479	spn-A	Q27297	6	200	DNA repair protein Rad51 homolog (Protein spindle-A) (RecA p	w
 SPINDLE-ASSOCIATED	human	Q5SNT2	TMEM201	Q5SNT2	16	165	Transmembrane protein 201 (Spindle-associated membrane prote	w
 SPINDLE-ASSOCIATED	human	Q6IQ19	CCSAP	Q6IQ19	2	13	Centriole, cilia and spindle-associated protein	w
 SPINDLE-ASSOCIATED	human	Q96R06	SPAG5	Q96R06	76	479	Sperm-associated antigen 5 (Astrin) (Deepest) (Mitotic spind	w
@@ -304,7 +304,7 @@ SPINDLE-E	worm	Q20644	ythc-2	Q20644	0	31	Probable ATP-dependent RNA helicase spi
 SPINDLE-LIKE	human	Q8IZT6	ASPM	Q8IZT6	2	16	Abnormal spindle-like microcephaly-associated protein (Abnor	w
 SPINDLE-LIKE	zebrafish	A0A0R4INR1	aspm	A0A0R4INR1	1	15	Abnormal spindle-like microcephaly-associated protein	w
 SPINDLE-STABILIZING	human	Q8NDC0	MAPK1IP1L	Q8NDC0	15	186	MAPK-interacting and spindle-stabilizing protein-like (Mitog	w
-SPINDLES	fly	FBgn0027948	msps	A0A0B4K700	6	29	Mini spindles, isoform D	w
+SPINDLES	fly	FBgn0027948	msps	A0A0B4K700	4	20	Mini spindles, isoform D	w
 SPINDLIN	human	Q9BUA3	SPINDOC	Q9BUA3	16	72	Spindlin interactor and repressor of chromatin-binding prote	w
 SPINDLIN	zebrafish	F1R8A6	spinb	F1R8A6	0	1	Spindlin b	w
 SPINDLIN-1	human	Q9Y657	SPIN1	Q9Y657	28	149	Spindlin-1 (Ovarian cancer-related protein) (Spindlin1)	w
@@ -360,7 +360,7 @@ SPINOCEREBELLAR	human	P54252	ATXN3	P54252	41	517	Ataxin-3 (EC 3.4.19.12) (Machad
 SPINOCEREBELLAR	human	P54253	ATXN1	P54253	152	517	Ataxin-1 (Spinocerebellar ataxia type 1 protein)	w
 SPINOCEREBELLAR	human	Q99700	ATXN2	Q99700	84	368	Ataxin-2 (Spinocerebellar ataxia type 2 protein) (Trinucleot	w
 SPINOCEREBELLAR	human	Q9UBB4	ATXN10	Q9UBB4	36	162	Ataxin-10 (Brain protein E46 homolog) (Spinocerebellar ataxi	w
-SPINOPHILIN	fly	FBgn0010905	Spn	M9NFI9	2	9	Spinophilin, isoform J	w
+SPINOPHILIN	fly	FBgn0010905	Spn	M9NFI9	1	3	Spinophilin, isoform J	w
 SPINOPHILIN	human	Q96SB3	PPP1R9B	Q96SB3	60	272	Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory s	w
 SPINORPHIN	human	P68871	HBB	P68871	56	1095	Hemoglobin subunit beta (Beta-globin) (Hemoglobin beta chain	w
 SPINSTER	fly	FBgn0086676	spin	Q9GQQ0	4	133	spinster	w
@@ -380,7 +380,7 @@ SPINT2	zebrafish	F1QEV7	spint2	F1QEV7	24	44	Kunitz-type protease inhibitor 2 pre
 SPINT3	human	P49223	SPINT3	P49223	15	54	Kunitz-type protease inhibitor 3 (HKIB9)	
 SPINT4	human	Q6UDR6	SPINT4	Q6UDR6	18	71	Kunitz-type protease inhibitor 4	
 SPINY	fly	FBgn0003090	pk	A1Z6W3	9	37	Protein prickle (Protein spiny legs)	w
-SPIR	fly	FBgn0003475	spir	Q9U1K1	11	40	Protein spire	
+SPIR	fly	FBgn0003475	spir	Q9U1K1	11	38	Protein spire	
 SPIR-1	human	Q08AE8	SPIRE1	Q08AE8	25	100	Protein spire homolog 1 (Spir-1)	w
 SPIR-2	human	Q8WWL2	SPIRE2	Q8WWL2	19	61	Protein spire homolog 2 (Spir-2)	w
 SPIR1	human	Q08AE8	SPIRE1	Q08AE8	25	100		
@@ -391,7 +391,7 @@ SPIRACLES	human	Q04741	EMX1	Q04741	108	378	Homeobox protein EMX1 (Empty spiracle
 SPIRACLES	human	Q04743	EMX2	Q04743	129	445	Homeobox protein EMX2 (Empty spiracles homolog 2) (Empty spi	w
 SPIRACLES-LIKE	human	Q04741	EMX1	Q04741	108	378	Homeobox protein EMX1 (Empty spiracles homolog 1) (Empty spi	w
 SPIRACLES-LIKE	human	Q04743	EMX2	Q04743	129	445	Homeobox protein EMX2 (Empty spiracles homolog 2) (Empty spi	w
-SPIRE	fly	FBgn0003475	spir	Q9U1K1	11	40	Protein spire	w
+SPIRE	fly	FBgn0003475	spir	Q9U1K1	11	38	Protein spire	w
 SPIRE	human	Q08AE8	SPIRE1	Q08AE8	25	100	Protein spire homolog 1 (Spir-1)	w
 SPIRE	human	Q8WWL2	SPIRE2	Q8WWL2	19	61	Protein spire homolog 2 (Spir-2)	w
 SPIRE	zebrafish	Q1LYM3	spire1	Q1LYM3	7	9	Protein spire homolog 1	w

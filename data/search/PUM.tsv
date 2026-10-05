@@ -1,4 +1,4 @@
-PUM	fly	FBgn0003165	pum	P25822	22	123	Maternal protein pumilio	
+PUM	fly	FBgn0003165	pum	P25822	13	110	Maternal protein pumilio	
 PUM	human	P15941	MUC1	P15941	25	158		
 PUM-HD	worm	G5EBX2	CELE_R07B7.2	G5EBX2	1	4	PUM-HD domain-containing protein	w
 PUM-HD	worm	Q09487	puf-8	Q09487	2	18	PUM-HD domain-containing protein	w
@@ -25,7 +25,7 @@ PUMA	human	Q9BXH1	BBC3	Q9BXH1	8	39
 PUMB1	human	P00352	ALDH1A1	P00352	15	263		
 PUMH1	human	Q14671	PUM1	Q14671	53	453		
 PUMH2	human	Q8TB72	PUM2	Q8TB72	25	190		
-PUMILIO	fly	FBgn0003165	pum	P25822	22	123	Maternal protein pumilio	w
+PUMILIO	fly	FBgn0003165	pum	P25822	13	110	Maternal protein pumilio	w
 PUMILIO	human	Q14671	PUM1	Q14671	53	453	Pumilio homolog 1 (HsPUM) (Pumilio-1)	w
 PUMILIO	human	Q15397	PUM3	Q15397	23	285	Pumilio homolog 3 (HBV X-transactivated gene 5 protein) (HBV	w
 PUMILIO	human	Q8TB72	PUM2	Q8TB72	25	190	Pumilio homolog 2 (Pumilio-2)	w
@@ -41,17 +41,17 @@ PUMILIO-1	human	Q14671	PUM1	Q14671	53	453	Pumilio homolog 1 (HsPUM) (Pumilio-1)	
 PUMILIO-2	human	Q8TB72	PUM2	Q8TB72	25	190	Pumilio homolog 2 (Pumilio-2)	w
 PUML	fly	FBgn0033226	puml	Q5U191	22	213	Pummelig, isoform A (Pummelig, isoform F) (Pummelig, isoform	
 PUMMELIG	fly	FBgn0033226	puml	Q5U191	22	213	Pummelig, isoform A (Pummelig, isoform F) (Pummelig, isoform	w
-PUMP	fly	FBgn0002921	Atpalpha	P13607	10	176	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	w
-PUMP	fly	FBgn0005671	Vha55	P31409	13	214	V-type proton ATPase subunit B (V-ATPase subunit B) (V-ATPas	w
+PUMP	fly	FBgn0002921	Atpalpha	P13607	10	175	Sodium/potassium-transporting ATPase subunit alpha (Na(+)/K(	w
+PUMP	fly	FBgn0005671	Vha55	P31409	13	206	V-type proton ATPase subunit B (V-ATPase subunit B) (V-ATPas	w
 PUMP	fly	FBgn0022097	Vha36-1	Q9V7D2	14	86	V-type proton ATPase subunit D 1 (V-ATPase subunit D 1) (Vac	w
 PUMP	fly	FBgn0028662	VhaPPA1-1	Q9VFE3	11	89	V-type proton ATPase 16 kDa proteolipid subunit c (Vacuolar 	w
 PUMP	fly	FBgn0037402	Vha14-2	Q9VNL3	4	52	V-type proton ATPase subunit F 2 (V-ATPase subunit F 2) (Vac	w
 PUMP	fly	FBgn0039058	VhaAC39-2	Q9VCQ3	7	77	Probable V-type proton ATPase subunit d 2 (V-ATPase subunit 	w
 PUMP	fly	FBgn0040377	Vha36-3	Q9NEF6	5	44	V-type proton ATPase subunit D 2 (V-ATPase subunit D 2) (Vac	w
-PUMP	fly	FBgn0262512	Vha14-1	Q24583	5	78	V-type proton ATPase subunit F 1 (V-ATPase subunit F 1) (V-A	w
+PUMP	fly	FBgn0262512	Vha14-1	Q24583	5	75	V-type proton ATPase subunit F 1 (V-ATPase subunit F 1) (V-A	w
 PUMP	fly	FBgn0262514	VhaPPA1-2	Q9VFE5	12	85	V-type proton ATPase 16 kDa proteolipid subunit c (Vacuolar 	w
 PUMP	fly	FBgn0263006	SERCA	P22700	4	154	Calcium-transporting ATPase sarcoplasmic/endoplasmic reticul	w
-PUMP	fly	FBgn0263598	Vha68-2	Q27331	10	351	V-type proton ATPase catalytic subunit A isoform 2 (V-ATPase	w
+PUMP	fly	FBgn0263598	Vha68-2	Q27331	9	346	V-type proton ATPase catalytic subunit A isoform 2 (V-ATPase	w
 PUMP	fly	FBgn0265262	Vha68-1	P48602	4	100	V-type proton ATPase catalytic subunit A isoform 1 (V-ATPase	w
 PUMP	fly	FBgn0283535	Vha26	P54611	5	92	V-type proton ATPase subunit E (V-ATPase subunit E) (V-ATPas	w
 PUMP	fly	FBgn0283536	Vha13	Q9XZH6	2	60	V-type proton ATPase subunit G (V-ATPase subunit G) (V-ATPas	w
@@ -108,4 +108,4 @@ PUMP6	arabidopsis-thaliana	Q9FY68	PUMP6	Q9FY68	0	5	Mitochondrial uncoupling prot
 PUMPCN	human	Q8NFT2	STEAP2	Q8NFT2	7	60	Metalloreductase STEAP2 (EC 1.16.1.-) (Prostate cancer-assoc	w
 PUMPKIN	arabidopsis-thaliana	A0A1I9LRT3	PUMPKIN	A0A1I9LRT3	0	21	UMP kinase	
 PUMPLESS	fly	FBgn0027945	ppl	Q9U616	49	438	Glycine cleavage system H protein, mitochondrial (Protein pu	w
-PUM_902	fly	FBgn0003165	pum	P25822	22	123		
+PUM_902	fly	FBgn0003165	pum	P25822	13	110		

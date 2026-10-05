@@ -235,9 +235,9 @@ MAP6	human	Q9H9H5	MAP6D1	Q9H9H5	12	63	MAP6 domain-containing protein 1 (21 kDa S
 MAP6	mus-musculus	Q7TSJ2	Map6	Q7TSJ2	0	11	Microtubule-associated protein 6	
 MAP6	rattus-norvegicus	Q63560	Map6	Q63560	0	8	Microtubule-associated protein 6	
 MAP6	zebrafish	A0A8M2BJ83	map6d1	A0A8M2BJ83	0	3	MAP6 domain-containing protein 1 isoform X1	w
-MAP60	fly	FBgn0010342	Map60	Q7K180	12	45	LD02709p (Microtubule-associated protein 60)	
-MAP60_183	fly	FBgn0010342	Map60	Q7K180	12	45		
-MAP60_241	fly	FBgn0010342	Map60	Q7K180	12	45		
+MAP60	fly	FBgn0010342	Map60	Q7K180	6	31	LD02709p (Microtubule-associated protein 60)	
+MAP60_183	fly	FBgn0010342	Map60	Q7K180	6	31		
+MAP60_241	fly	FBgn0010342	Map60	Q7K180	6	31		
 MAP65-2	arabidopsis-thaliana	Q8LEG3	MAP65-2	Q8LEG3	0	1	65-kDa microtubule-associated protein 2	
 MAP65-3	arabidopsis-thaliana	Q9FHM4	MAP65-3	Q9FHM4	1	1	65-kDa microtubule-associated protein 3	
 MAP6A	zebrafish	E7F624	map6a	E7F624	0	5	Microtubule-associated protein 6 homolog isoform X1	
@@ -305,7 +305,7 @@ MAPH-9	worm	Q18452	maph-9	Q18452	0	5	Protein maph-9	w
 MAPJD	human	Q9H6W3	RIOX1	Q9H6W3	10	112		
 MAPK	cladophialophora-carrionii	A0A1C1CHC1	MAPK	A0A1C1CHC1	8	56	Mitogen-activated protein kinase	
 MAPK	fly	FBgn0015765	p38a	O62618	231	1197	Mitogen-activated protein kinase p38a (MAP kinase p38a) (MAP	w
-MAPK	fly	FBgn0024846	p38b	O61443	479	1945	Mitogen-activated protein kinase p38b (MAP kinase p38b) (MAP	w
+MAPK	fly	FBgn0024846	p38b	O61443	226	1297	Mitogen-activated protein kinase p38b (MAP kinase p38b) (MAP	w
 MAPK	fly	FBgn0026090	Lamtor5	O96824	12	73	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
 MAPK	fly	FBgn0032642	Lamtor3	Q9VJD2	7	53	Ragulator complex protein LAMTOR3 homolog (Late endosomal/ly	w
 MAPK	fly	FBgn0034350	Lamtor2	Q9V8I2	6	48	Ragulator complex protein LAMTOR2 homolog (Late endosomal/ly	w
@@ -364,7 +364,7 @@ MAPK	zebrafish	Q7ZVU1	garem1	Q7ZVU1	8	31	GRB2-associated and regulator of MAPK p
 MAPK	zebrafish	Q9DGE2	mapk14a	Q9DGE2	44	209	Mitogen-activated protein kinase 14A (MAP kinase 14A) (MAPK 	w
 MAPK	zebrafish	X1WDG1	gareml	X1WDG1	4	31	GRB2-associated and regulator of MAPK protein 2	w
 MAPK-15	worm	Q11179	mapk-15	Q11179	15	74	Mitogen-activated protein kinase 15 (EC 2.7.11.24) (Swimming	
-MAPK-ACTIVATED	fly	FBgn0013987	MAPk-Ak2	P49071	188	1131	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
+MAPK-ACTIVATED	fly	FBgn0013987	MAPk-Ak2	P49071	182	1113	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
 MAPK-ACTIVATED	human	P49137	MAPKAPK2	P49137	265	1448	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
 MAPK-ACTIVATED	human	Q16644	MAPKAPK3	Q16644	298	1416	MAP kinase-activated protein kinase 3 (MAPK-activated protei	w
 MAPK-ACTIVATED	human	Q8IW41	MAPKAPK5	Q8IW41	314	1322	MAP kinase-activated protein kinase 5 (MAPK-activated protei	w
@@ -383,7 +383,7 @@ MAPK-ACTIVATING	human	Q9BT67	NDFIP1	Q9BT67	10	156	NEDD4 family-interacting prote
 MAPK-ACTIVATING	human	Q9NV92	NDFIP2	Q9NV92	12	80	NEDD4 family-interacting protein 2 (NEDD4 WW domain-binding 	w
 MAPK-ACTIVATING	human	Q9NZ43	USE1	Q9NZ43	58	194	Vesicle transport protein USE1 (Putative MAPK-activating pro	w
 MAPK-ACTIVATING	human	Q9Y519	TMEM184B	Q9Y519	3	76	Transmembrane protein 184B (Putative MAPK-activating protein	w
-MAPK-AK2	fly	FBgn0013987	MAPk-Ak2	P49071	188	1131	MAP kinase-activated protein kinase 2 (MAPK-activated protei	
+MAPK-AK2	fly	FBgn0013987	MAPk-Ak2	P49071	182	1113	MAP kinase-activated protein kinase 2 (MAPK-activated protei	
 MAPK-INTERACTING	human	Q8NDC0	MAPK1IP1L	Q8NDC0	15	186	MAPK-interacting and spindle-stabilizing protein-like (Mitog	w
 MAPK-REGULATED	human	C9JLW8	MCRIP1	C9JLW8	12	70	Mapk-regulated corepressor-interacting protein 1 (Granulin-2	w
 MAPK-REGULATED	zebrafish	Q0P4B9	mcrip1	Q0P4B9	0	1	Mapk-regulated corepressor-interacting protein 1	w
@@ -470,7 +470,7 @@ MAPK9	human	P45984	MAPK9	P45984	258	1705	Mitogen-activated protein kinase 9 (MAP
 MAPK9	mus-musculus	Q9WTU6	Mapk9	Q9WTU6	14	165	Mitogen-activated protein kinase 9	
 MAPK9	rattus-norvegicus	P49186	Mapk9	P49186	20	241	Mitogen-activated protein kinase 9	
 MAPK9	zebrafish	E9QE29	mapk9	E9QE29	26	211	Stress-activated protein kinase JNK	
-MAPKAP	fly	FBgn0013987	MAPk-Ak2	P49071	188	1131	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
+MAPKAP	fly	FBgn0013987	MAPk-Ak2	P49071	182	1113	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
 MAPKAP	human	P49137	MAPKAPK2	P49137	265	1448	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
 MAPKAP	human	Q16644	MAPKAPK3	Q16644	298	1416	MAP kinase-activated protein kinase 3 (MAPK-activated protei	w
 MAPKAP	human	Q8IW41	MAPKAPK5	Q8IW41	314	1322	MAP kinase-activated protein kinase 5 (MAPK-activated protei	w
@@ -482,7 +482,7 @@ MAPKAP1	mus-musculus	Q8BKH7	Mapkap1	Q8BKH7	7	45	Target of rapamycin complex 2 su
 MAPKAP1	rattus-norvegicus	Q6AYF1	Mapkap1	Q6AYF1	6	41	Target of rapamycin complex 2 subunit MAPKAP1	
 MAPKAP1	zebrafish	E7EZP2	mapkap1	E7EZP2	20	92	Target of rapamycin complex 2 subunit MAPKAP1	w
 MAPKAP1	zebrafish	E7EZP2	mapkap1	E7EZP2	20	92	Target of rapamycin complex 2 subunit MAPKAP1	w
-MAPKAPK-2	fly	FBgn0013987	MAPk-Ak2	P49071	188	1131	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
+MAPKAPK-2	fly	FBgn0013987	MAPk-Ak2	P49071	182	1113	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
 MAPKAPK-2	human	P49137	MAPKAPK2	P49137	265	1448	MAP kinase-activated protein kinase 2 (MAPK-activated protei	w
 MAPKAPK-3	human	Q16644	MAPKAPK3	Q16644	298	1416	MAP kinase-activated protein kinase 3 (MAPK-activated protei	w
 MAPKAPK-5	human	Q8IW41	MAPKAPK5	Q8IW41	314	1322	MAP kinase-activated protein kinase 5 (MAPK-activated protei	w
@@ -504,7 +504,7 @@ MAPKAPK5	rattus-norvegicus	F1LN87	Mapkapk5	F1LN87	10	17	MAP kinase-activated pro
 MAPKAPK5	zebrafish	Q6DHN7	mapkapk5	Q6DHN7	11	20	MAP kinase-activated protein kinase 5	
 MAPKAPK5-AS1	human	Q8N8E1	MAPKAPK5-AS1	Q8N8E1	1	13	Putative uncharacterized protein encoded by MAPKAPK5-AS1 (MA	
 MAPKBP1	human	O60336	MAPKBP1	O60336	26	159	Mitogen-activated protein kinase-binding protein 1 (JNK-bind	
-MAPKK	fly	FBgn0010269	Dsor1	Q24324	112	1268	Dual specificity mitogen-activated protein kinase kinase dSO	w
+MAPKK	fly	FBgn0010269	Dsor1	Q24324	111	1267	Dual specificity mitogen-activated protein kinase kinase dSO	w
 MAPKK	human	O14733	MAP2K7	O14733	147	1500	Dual specificity mitogen-activated protein kinase kinase 7 (	w
 MAPKK	human	P36507	MAP2K2	P36507	152	1596	Dual specificity mitogen-activated protein kinase kinase 2 (	w
 MAPKK	human	P45985	MAP2K4	P45985	150	1397	Dual specificity mitogen-activated protein kinase kinase 4 (	w
@@ -536,8 +536,8 @@ MAPKSP1	human	Q9UHA4	LAMTOR3	Q9UHA4	17	235
 MAPL	human	Q969V5	MUL1	Q969V5	23	127		
 MAPM	human	P39687	ANP32A	P39687	15	206		
 MAPMODUL	human	P39687	ANP32A	P39687	15	206	Acidic leucine-rich nuclear phosphoprotein 32 family member 	w
-MAPMODULIN	fly	FBgn0034282	Mapmodulin	E1JGK5	43	153	Mapmodulin, isoform D	w
-MAPMODULIN	fly	FBgn0034282	Mapmodulin	E1JGK5	43	153	Mapmodulin, isoform D	w
+MAPMODULIN	fly	FBgn0034282	Mapmodulin	E1JGK5	40	148	Mapmodulin, isoform D	w
+MAPMODULIN	fly	FBgn0034282	Mapmodulin	E1JGK5	40	148	Mapmodulin, isoform D	w
 MAPO1	human	Q9P278	FNIP2	Q9P278	10	92		
 MAPO2	human	Q5TH74	STPG1	Q5TH74	3	40	O(6)-methylguanine-induced apoptosis 2 (MAPO2) (Sperm-tail P	w
 MAPRE1	human	Q15691	MAPRE1	Q15691	98	572	Microtubule-associated protein RP/EB family member 1 (APC-bi	

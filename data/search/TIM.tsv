@@ -1,5 +1,5 @@
 TIM	arabidopsis-thaliana	Q9SKP6	TIM	Q9SKP6	1	88	Triosephosphate isomerase, chloroplastic	
-TIM	fly	FBgn0014396	tim	A0A1W5PW00	26	148	Timeless, isoform T	
+TIM	fly	FBgn0014396	tim	A0A1W5PW00	26	144	Timeless, isoform T	
 TIM	human	Q12774	ARHGEF5	Q12774	26	94		
 TIM	human	Q9UNS1	TIMELESS	Q9UNS1	71	612		
 TIM-1	worm	G5EDN3	tim-1	G5EDN3	3	43	Protein timeless homolog	
@@ -56,7 +56,7 @@ TIM16	yeast	P42949	PAM16	P42949	3	42	Mitochondrial import inner membrane translo
 TIM16	zebrafish	Q6PBL0	pam16	Q6PBL0	2	12	Mitochondrial import inner membrane translocase subunit tim1	w
 TIM16_HUMAN	human	Q9Y3D7	PAM16	Q9Y3D7	18	172		
 TIM17	candida-albicans-237561	Q59LI2	TIM17	Q59LI2	6	22	Mitochondrial import inner membrane translocase subunit TIM1	
-TIM17	fly	FBgn0037307	Tim17a2	Q9VN97	3	34	Probable mitochondrial import inner membrane translocase sub	w
+TIM17	fly	FBgn0037307	Tim17a2	Q9VN97	3	30	Probable mitochondrial import inner membrane translocase sub	w
 TIM17	fly	FBgn0037310	Tim17b1	Q9VNA0	6	28	Probable mitochondrial import inner membrane translocase sub	w
 TIM17	fly	FBgn0038018	Tim17a1	Q9VGA2	4	27	Probable mitochondrial import inner membrane translocase sub	w
 TIM17	human	Q99595	TIMM17A	Q99595	9	132		
@@ -70,8 +70,8 @@ TIM17-B	human	O60830	TIMM17B	O60830	9	138	Mitochondrial import inner membrane tr
 TIM17-B	zebrafish	A8WHN3	timm17b	A8WHN3	3	61	Mitochondrial import inner membrane translocase subunit Tim1	w
 TIM17A	human	Q99595	TIMM17A	Q99595	9	132		
 TIM17A1	fly	FBgn0038018	Tim17a1	Q9VGA2	4	27	Probable mitochondrial import inner membrane translocase sub	
-TIM17A2	fly	FBgn0037307	Tim17a2	Q9VN97	3	34	Probable mitochondrial import inner membrane translocase sub	
-TIM17A2_88	fly	FBgn0037307	Tim17a2	Q9VN97	3	34		
+TIM17A2	fly	FBgn0037307	Tim17a2	Q9VN97	3	30	Probable mitochondrial import inner membrane translocase sub	
+TIM17A2_88	fly	FBgn0037307	Tim17a2	Q9VN97	3	30		
 TIM17B	fly	FBgn0263977	Tim17b	Q7PLT4	6	30	Translocase of the inner mitochondrial membrane 17b, isoform	
 TIM17B	human	O60830	TIMM17B	O60830	9	138		
 TIM17B1	fly	FBgn0037310	Tim17b1	Q9VNA0	6	28	Probable mitochondrial import inner membrane translocase sub	
@@ -80,7 +80,7 @@ TIM18	yeast	Q08749	TIM18	Q08749	2	21	Mitochondrial import inner membrane translo
 TIM21	arabidopsis-thaliana	Q1G3L1	TIM21	Q1G3L1	4	55	Probable mitochondrial import inner membrane translocase sub	
 TIM21	candida-albicans-237561	Q59VW7	TIM21	Q59VW7	3	18	Mitochondrial import inner membrane translocase subunit TIM2	
 TIM21	cladophialophora-carrionii	A0A1C1CIS2	tim21	A0A1C1CIS2	3	19	Mitochondrial import inner membrane translocase subunit Tim2	
-TIM21	fly	FBgn0031708	CG7382	Q9VMR0	6	34	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM21	fly	FBgn0031708	CG7382	Q9VMR0	6	33	Mitochondrial import inner membrane translocase subunit Tim2	w
 TIM21	human	Q9BVV7	TIMM21	Q9BVV7	19	246		
 TIM21	schizosaccharomyces-pombe	O94618	tim21	O94618	2	18	Mitochondrial import inner membrane translocase subunit tim2	
 TIM21	worm	O62198	CELE_F32A11.1	O62198	1	3	Mitochondrial import inner membrane translocase subunit Tim2	w
@@ -139,7 +139,7 @@ TIM50	worm	Q22647	scpl-4	Q22647	6	23	Mitochondrial import inner membrane translo
 TIM50	yeast	Q02776	TIM50	Q02776	4	65	Mitochondrial import inner membrane translocase subunit TIM5	
 TIM50	zebrafish	Q6NWD4	timm50	Q6NWD4	3	32	Mitochondrial import inner membrane translocase subunit TIM5	w
 TIM50-A	fly	FBgn0032971	ttm3	Q9V9P3	3	33	Mitochondrial import inner membrane translocase subunit TIM5	w
-TIM50-B	fly	FBgn0035124	ttm2	Q9W0S3	8	27	Mitochondrial import inner membrane translocase subunit TIM5	w
+TIM50-B	fly	FBgn0035124	ttm2	Q9W0S3	8	26	Mitochondrial import inner membrane translocase subunit TIM5	w
 TIM50-C	fly	FBgn0250874	ttm50	Q9W4V8	9	64	Mitochondrial import inner membrane translocase subunit TIM5	w
 TIM50_HUMAN	human	Q3ZCQ8	TIMM50	Q3ZCQ8	29	305		
 TIM54	candida-albicans-237561	P48990	TIM54	P48990	2	11	Mitochondrial import inner membrane translocase subunit TIM5	
@@ -193,7 +193,7 @@ TIMD4	rattus-norvegicus	D3ZXT7	Timd4	D3ZXT7	0	9	T-cell immunoglobulin and mucin 
 TIMD4_HUMAN	human	Q96H15	TIMD4	Q96H15	15	74		
 TIME	human	Q8TC92	ENOX1	Q8TC92	5	34	Ecto-NOX disulfide-thiol exchanger 1 (Candidate growth-relat	w
 TIME-ASSOCIATED	human	Q86YI8	PHF13	Q86YI8	18	81	PHD finger protein 13 (Survival time-associated PHD finger p	w
-TIMELESS	fly	FBgn0014396	tim	A0A1W5PW00	26	148	Timeless, isoform T	w
+TIMELESS	fly	FBgn0014396	tim	A0A1W5PW00	26	144	Timeless, isoform T	w
 TIMELESS	human	Q9UNS1	TIMELESS	Q9UNS1	71	612	Protein timeless homolog (hTIM)	
 TIMELESS	mus-musculus	Q9R1X4	Timeless	Q9R1X4	5	70	Protein timeless homolog	
 TIMELESS	rattus-norvegicus	Q9Z2Y1	Timeless	Q9Z2Y1	9	75	Protein timeless homolog	
@@ -203,9 +203,9 @@ TIMELESS	zebrafish	E7FGL0	timeless	E7FGL0	6	89	Protein timeless homolog	w
 TIMELESS-INTERACTING	human	Q9BVW5	TIPIN	Q9BVW5	37	309	TIMELESS-interacting protein	w
 TIMELESS-INTERACTING	zebrafish	Q6DBR4	tipin	Q6DBR4	4	46	TIMELESS-interacting protein	w
 TIMELESS1	human	Q9UNS1	TIMELESS	Q9UNS1	71	612		
-TIMEOUT	fly	FBgn0038118	timeout	Q8INH7	10	55	Timeout	w
-TIMEOUT	fly	FBgn0038118	timeout	Q8INH7	10	55	Timeout	w
-TIMEOUT_303	fly	FBgn0038118	timeout	Q8INH7	10	55		
+TIMEOUT	fly	FBgn0038118	timeout	Q8INH7	8	53	Timeout	w
+TIMEOUT	fly	FBgn0038118	timeout	Q8INH7	8	53	Timeout	w
+TIMEOUT_303	fly	FBgn0038118	timeout	Q8INH7	8	53		
 TIMING	human	Q99807	COQ7	Q99807	11	112	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	w
 TIMM	human	Q9NPL8	TIMMDC1	Q9NPL8	15	232	Complex I assembly factor TIMMDC1, mitochondrial (Protein M5	w
 TIMM-17B.1	worm	O44477	timm-17B.1	O44477	4	21	Probable mitochondrial import inner membrane translocase sub	

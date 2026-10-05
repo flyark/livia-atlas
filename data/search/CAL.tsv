@@ -53,10 +53,10 @@ CALCIMEDIN	human	P09525	ANXA4	P09525	6	212	Annexin A4 (35-beta calcimedin) (Anne
 CALCIMEDIN	human	P12429	ANXA3	P12429	3	190	Annexin A3 (35-alpha calcimedin) (Annexin III) (Annexin-3) (	w
 CALCIMEMBRIN	human	Q96GX8	CLMB	Q96GX8	11	60	Calcimembrin (Microprotein for thermogenesis 1)	w
 CALCINEURIN	fly	FBgn0010014	CanB	P48451	113	1035	Calcineurin subunit B type 1 (Protein phosphatase 2B regulat	w
-CALCINEURIN	fly	FBgn0010015	CanA1	P48456	381	1005	Serine/threonine-protein phosphatase 2B catalytic subunit 1 	w
-CALCINEURIN	fly	FBgn0011826	Pp2B-14D	Q27889	394	1072	Serine/threonine-protein phosphatase 2B catalytic subunit 2 	w
+CALCINEURIN	fly	FBgn0010015	CanA1	P48456	381	1003	Serine/threonine-protein phosphatase 2B catalytic subunit 1 	w
+CALCINEURIN	fly	FBgn0011826	Pp2B-14D	Q27889	392	1063	Serine/threonine-protein phosphatase 2B catalytic subunit 2 	w
 CALCINEURIN	fly	FBgn0015614	CanB2	Q24214	112	1043	Calcineurin subunit B type 2 (Protein phosphatase 2B regulat	w
-CALCINEURIN	fly	FBgn0267912	CanA-14F	Q9VXF1	379	1025	Serine/threonine-protein phosphatase 2B catalytic subunit 3 	w
+CALCINEURIN	fly	FBgn0267912	CanA-14F	Q9VXF1	378	1014	Serine/threonine-protein phosphatase 2B catalytic subunit 3 	w
 CALCINEURIN	human	O43745	CHP2	O43745	18	112	Calcineurin B homologous protein 2 (Hepatocellular carcinoma	w
 CALCINEURIN	human	P16298	PPP3CB	P16298	84	282	Serine/threonine-protein phosphatase 2B catalytic subunit be	w
 CALCINEURIN	human	P48454	PPP3CC	P48454	83	263	Serine/threonine-protein phosphatase 2B catalytic subunit ga	w
@@ -123,7 +123,7 @@ CALCIUM	fly	FBgn0038735	MICU3	A0A0B4KHF1	4	16	Mitochondrial calcium uptake 3, is
 CALCIUM	fly	FBgn0042185	MCU	Q8IQ70	2	29	Mitochondrial calcium uniporter	w
 CALCIUM	fly	FBgn0261722	fwe	Q95T12	2	73	Calcium channel flower (3L5)	w
 CALCIUM	fly	FBgn0263006	SERCA	P22700	4	154	Calcium-transporting ATPase sarcoplasmic/endoplasmic reticul	w
-CALCIUM	fly	FBgn0264607	CaMKII	D1YSG8	185	1382	calcium/calmodulin-dependent protein kinase (EC 2.7.11.17)	w
+CALCIUM	fly	FBgn0264607	CaMKII	D1YSG8	149	1177	calcium/calmodulin-dependent protein kinase (EC 2.7.11.17)	w
 CALCIUM	fly	FBgn0284252	Letm1	P91927	1	97	Mitochondrial proton/calcium exchanger protein (Leucine zipp	w
 CALCIUM	human	A0A286YF11	MICU1	A0A286YF11	3	51	Calcium uptake protein 1, mitochondrial	w
 CALCIUM	human	A0A2Q3DQE3	CAMK2G	A0A2Q3DQE3	8	107	calcium/calmodulin-dependent protein kinase	w
@@ -314,8 +314,8 @@ CALCIUM	zebrafish	Q804C0	ncs1a	Q804C0	4	44	Neuronal calcium sensor 1	w
 CALCIUM	zebrafish	X1WEB1	cacng5b	X1WEB1	6	67	Calcium channel, voltage-dependent, gamma subunit 5b	w
 CALCIUM-	human	Q96P71	NECAB3	Q96P71	10	93	N-terminal EF-hand calcium-binding protein 3 (Amyloid-beta A	w
 CALCIUM-	human	Q99828	CIB1	Q99828	26	226	Calcium and integrin-binding protein 1 (CIB) (Calcium- and i	w
-CALCIUM-ACTIVATED	fly	FBgn0003464	sol	P27398	27	85	Calpain-D (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
-CALCIUM-ACTIVATED	fly	FBgn0025866	CalpB	Q9VT65	8	25	Calpain-B (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
+CALCIUM-ACTIVATED	fly	FBgn0003464	sol	P27398	22	75	Calpain-D (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
+CALCIUM-ACTIVATED	fly	FBgn0025866	CalpB	Q9VT65	7	22	Calpain-B (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
 CALCIUM-ACTIVATED	fly	FBgn0029761	SK	X2JDR8	1	2	Small conductance calcium-activated potassium channel, isofo	w
 CALCIUM-ACTIVATED	human	A8K7I4	CLCA1	A8K7I4	0	14	Calcium-activated chloride channel regulator 1 (EC 3.4.-.-) 	w
 CALCIUM-ACTIVATED	human	A8MX76	CAPN14	A8MX76	13	62	Calpain-14 (EC 3.4.22.-) (Calcium-activated neutral proteina	w
@@ -359,7 +359,7 @@ CALCIUM-BINDING	fly	FBgn0020907	Scp2	O16158	0	19	Calcium-binding protein (Cex Ca
 CALCIUM-BINDING	fly	FBgn0020908	Scp1	Q8MSI2	2	102	GH15296p (Sarcoplasmic calcium-binding protein 1, isoform A)	w
 CALCIUM-BINDING	fly	FBgn0025678	CaBP1	Q9V438	34	358	Protein disulfide-isomerase A6 homolog (EC 5.3.4.1) (Calcium	w
 CALCIUM-BINDING	fly	FBgn0026144	CBP	M9PHB8	3	12	Sarcoplasmic calcium-binding protein, isoform C	w
-CALCIUM-BINDING	fly	FBgn0052103	SCaMC	Q0E8F2	0	79	FI05451p (Short Calcium-binding mitochondrial carrier, isofo	w
+CALCIUM-BINDING	fly	FBgn0052103	SCaMC	Q0E8F2	0	78	FI05451p (Short Calcium-binding mitochondrial carrier, isofo	w
 CALCIUM-BINDING	human	A4FU69	EFCAB5	A4FU69	0	7	EF-hand calcium-binding domain-containing protein 5	w
 CALCIUM-BINDING	human	A6NFE3	EFCAB10	A6NFE3	5	14	EF-hand calcium-binding domain-containing protein 10	w
 CALCIUM-BINDING	human	A6NMZ2	SNTN	A6NMZ2	8	62	Sentan (Protein S100-A1-like) (S100 calcium-binding protein 	w
@@ -472,7 +472,7 @@ CALCIUM-BINDING	zebrafish	R4GEJ6	hrc	R4GEJ6	0	46	Histidine-rich calcium-binding 
 CALCIUM-BINDING	zebrafish	S5TZ97	trpm4b3	S5TZ97	3	4	Histidine-rich calcium-binding protein	w
 CALCIUM-CHELATE	human	Q9UPI3	FLVCR2	Q9UPI3	0	33	Choline/ethanolamine transporter FLVCR2 (Calcium-chelate tra	w
 CALCIUM-D	human	Q53TS8	CATSPERT	Q53TS8	6	73	Cation channel sperm-associated targeting subunit tau (CatSp	w
-CALCIUM-DEPENDENT	fly	FBgn0053653	Cadps	Q9NHE5	1	26	Calcium-dependent secretion activator	w
+CALCIUM-DEPENDENT	fly	FBgn0053653	Cadps	Q9NHE5	1	19	Calcium-dependent secretion activator	w
 CALCIUM-DEPENDENT	human	A6NLJ0	C2CD4B	A6NLJ0	8	40	C2 calcium-dependent domain-containing protein 4B (Nuclear-l	w
 CALCIUM-DEPENDENT	human	B7Z1M9	C2CD4D	B7Z1M9	5	23	C2 calcium-dependent domain-containing protein 4D	w
 CALCIUM-DEPENDENT	human	P04632	CAPNS1	P04632	18	214	Calpain small subunit 1 (CSS1) (Calcium-activated neutral pr	w
@@ -576,7 +576,7 @@ CALCR_HUMAN	human	P30988	CALCR	P30988	29	113
 CALCUTTA	fly	FBgn0031367	c-cup	Q9VQ46	1	8	Calcutta cup	w
 CALCYCLIN	human	P06703	S100A6	P06703	67	831	Protein S100-A6 (Calcyclin) (Growth factor-inducible protein	w
 CALCYCLIN-ASSOCIATED	human	P50995	ANXA11	P50995	8	167	Annexin A11 (56 kDa autoantigen) (Annexin XI) (Annexin-11) (	w
-CALCYCLIN-BINDING	fly	FBgn0029882	CG3226	Q9W3Y3	7	152	Calcyclin-binding protein	w
+CALCYCLIN-BINDING	fly	FBgn0029882	CG3226	Q9W3Y3	6	146	Calcyclin-binding protein	w
 CALCYCLIN-BINDING	human	Q9HB71	CACYBP	Q9HB71	32	328	Calcyclin-binding protein (CacyBP) (hCacyBP) (S100A6-binding	w
 CALCYON	human	Q9NYX4	CALY	Q9NYX4	38	112	Neuron-specific vesicular protein calcyon	w
 CALCYPHOSIN	human	Q13938	CAPS	Q13938	1	68	Calcyphosin (Calcyphosine)	w
@@ -674,8 +674,8 @@ CALML4	mus-musculus	Q91WQ9	Calml4	Q91WQ9	28	293	Calmodulin-like protein 4
 CALML4A	zebrafish	B3DGM2	calml4a	B3DGM2	10	111	Calmodulin-like protein 4	
 CALML5	human	Q9NZT1	CALML5	Q9NZT1	103	1075	Calmodulin-like protein 5 (Calmodulin-like skin protein)	
 CALML6	human	Q8TD86	CALML6	Q8TD86	87	627	Calmodulin-like protein 6 (Calglandulin-like protein)	
-CALMODULIN	fly	FBgn0000253	Cam	P62152	41	243	Calmodulin (CaM)	w
-CALMODULIN	fly	FBgn0011230	poe	Q9VLT5	6	12	Protein purity of essence (Interaction calmodulin and coloss	w
+CALMODULIN	fly	FBgn0000253	Cam	P62152	41	239	Calmodulin (CaM)	w
+CALMODULIN	fly	FBgn0011230	poe	Q9VLT5	0	0	Protein purity of essence (Interaction calmodulin and coloss	w
 CALMODULIN	fly	FBgn0016126	CaMKI	Q7JMV3	95	1138	Calcium/calmodulin dependent protein kinase I (Calcium/calmo	w
 CALMODULIN	fly	FBgn0265605	Ric	Q7JMZ0	7	16	RIC (Ras which interacts with Calmodulin) (Ras-related prote	w
 CALMODULIN	human	P48539	PCP4	P48539	58	235	Calmodulin regulator protein PCP4 (Brain-specific polypeptid	w
@@ -698,11 +698,11 @@ CALMODULIN-BINDING	worm	O17697	kcnl-4	O17697	3	3	Calmodulin-binding domain-conta
 CALMODULIN-BINDING	worm	V6CLK4	kcnl-2	V6CLK4	3	14	Calmodulin-binding domain-containing protein	w
 CALMODULIN-BINDING	zebrafish	Q5PRA5	iqcb1	Q5PRA5	8	58	IQ calmodulin-binding motif-containing protein 1	w
 CALMODULIN-DEPEND	human	Q8N5S9	CAMKK1	Q8N5S9	133	1306	Calcium/calmodulin-dependent protein kinase kinase 1 (CaM-KK	w
-CALMODULIN-DEPENDENT	fly	FBgn0010015	CanA1	P48456	381	1005	Serine/threonine-protein phosphatase 2B catalytic subunit 1 	w
-CALMODULIN-DEPENDENT	fly	FBgn0011826	Pp2B-14D	Q27889	394	1072	Serine/threonine-protein phosphatase 2B catalytic subunit 2 	w
+CALMODULIN-DEPENDENT	fly	FBgn0010015	CanA1	P48456	381	1003	Serine/threonine-protein phosphatase 2B catalytic subunit 1 	w
+CALMODULIN-DEPENDENT	fly	FBgn0011826	Pp2B-14D	Q27889	392	1063	Serine/threonine-protein phosphatase 2B catalytic subunit 2 	w
 CALMODULIN-DEPENDENT	fly	FBgn0016126	CaMKI	Q7JMV3	95	1138	Calcium/calmodulin dependent protein kinase I (Calcium/calmo	w
-CALMODULIN-DEPENDENT	fly	FBgn0264607	CaMKII	D1YSG8	185	1382	calcium/calmodulin-dependent protein kinase (EC 2.7.11.17)	w
-CALMODULIN-DEPENDENT	fly	FBgn0267912	CanA-14F	Q9VXF1	379	1025	Serine/threonine-protein phosphatase 2B catalytic subunit 3 	w
+CALMODULIN-DEPENDENT	fly	FBgn0264607	CaMKII	D1YSG8	149	1177	calcium/calmodulin-dependent protein kinase (EC 2.7.11.17)	w
+CALMODULIN-DEPENDENT	fly	FBgn0267912	CanA-14F	Q9VXF1	378	1014	Serine/threonine-protein phosphatase 2B catalytic subunit 3 	w
 CALMODULIN-DEPENDENT	human	A0A2Q3DQE3	CAMK2G	A0A2Q3DQE3	8	107	calcium/calmodulin-dependent protein kinase	w
 CALMODULIN-DEPENDENT	human	O00418	EEF2K	O00418	11	224	Eukaryotic elongation factor 2 kinase (eEF-2 kinase) (eEF-2K	w
 CALMODULIN-DEPENDENT	human	O14936	CASK	O14936	81	557	Peripheral plasma membrane protein CASK (hCASK) (EC 2.7.11.1	w
@@ -763,7 +763,7 @@ CALMODULIN-REGULATED	zebrafish	E7F3U0	camsap3	E7F3U0	3	7	Calmodulin-regulated sp
 CALMODULIN-REGULATED	zebrafish	F1R1D6	camsap1a	F1R1D6	2	5	Calmodulin-regulated spectrin-associated protein 1a	w
 CALMODULIN-RELATED	fly	FBgn0011273	Acam	P49258	20	88	Calmodulin-related protein 97A (Protein androcam)	w
 CALMODULIN-RELATED	human	P27482	CALML3	P27482	136	1506	Calmodulin-like protein 3 (CaM-like protein) (CLP) (Calmodul	w
-CALMODULIN-RESPONSIVE	fly	FBgn0003301	Adcy1	P32870	2	29	Ca(2+)/calmodulin-responsive adenylate cyclase (EC 4.6.1.1) 	w
+CALMODULIN-RESPONSIVE	fly	FBgn0003301	Adcy1	P32870	2	27	Ca(2+)/calmodulin-responsive adenylate cyclase (EC 4.6.1.1) 	w
 CALMYRIN	human	Q99828	CIB1	Q99828	26	226	Calcium and integrin-binding protein 1 (CIB) (Calcium- and i	w
 CALN1	human	Q9BXU9	CALN1	Q9BXU9	12	124	Calcium-binding protein 8 (CaBP8) (Calneuron I) (Calneuron-1	
 CALN1	mus-musculus	Q9JJG7	Caln1	Q9JJG7	0	6	Calcium-binding protein 8	
@@ -778,7 +778,7 @@ CALNEURON	human	Q86V35	CABP7	Q86V35	6	68	Calcium-binding protein 7 (CaBP7) (Caln
 CALNEURON	human	Q9BXU9	CALN1	Q9BXU9	12	124	Calcium-binding protein 8 (CaBP8) (Calneuron I) (Calneuron-1	w
 CALNEURON-1	human	Q9BXU9	CALN1	Q9BXU9	12	124	Calcium-binding protein 8 (CaBP8) (Calneuron I) (Calneuron-1	w
 CALNEURON-2	human	Q86V35	CABP7	Q86V35	6	68	Calcium-binding protein 7 (CaBP7) (Calneuron II) (Calneuron-	w
-CALNEXIN	fly	FBgn0015622	Cnx99A	Q9VAL7	11	157	Calnexin 99A, isoform A (Calnexin 99A, isoform B) (Calnexin 	w
+CALNEXIN	fly	FBgn0015622	Cnx99A	Q9VAL7	11	156	Calnexin 99A, isoform A (Calnexin 99A, isoform B) (Calnexin 	w
 CALNEXIN	fly	FBgn0030377	CG1924	Q9I7S9	2	48	Calnexin 99A	w
 CALNEXIN	fly	FBgn0264077	Cnx14D	Q9VXF6	5	51	Calnexin 14D	w
 CALNEXIN	human	P27824	CANX	P27824	134	1250	Calnexin (IP90) (Major histocompatibility complex class I an	w
@@ -786,9 +786,9 @@ CALNEXIN	worm	P34652	cnx-1	P34652	2	66	Calnexin	w
 CALNEXIN	yeast	P27825	CNE1	P27825	1	44	Calnexin homolog	w
 CALNEXIN	zebrafish	A0A8M1PSV3	si:ch211-274f20.2	A0A8M1PSV3	1	77	Calnexin	w
 CALNUC	human	Q02818	NUCB1	Q02818	12	127	Nucleobindin-1 (CALNUC)	w
-CALOSSIN	fly	FBgn0011230	poe	Q9VLT5	6	12	Protein purity of essence (Interaction calmodulin and coloss	w
+CALOSSIN	fly	FBgn0011230	poe	Q9VLT5	0	0	Protein purity of essence (Interaction calmodulin and coloss	w
 CALP	human	Q6PIL6	KCNIP4	Q6PIL6	33	183		
-CALPA	fly	FBgn0012051	CalpA	A0A0B4LG26	6	25	Calpain-A, isoform D	
+CALPA	fly	FBgn0012051	CalpA	A0A0B4LG26	6	23	Calpain-A, isoform D	
 CALPACTIN	human	P04083	ANXA1	P04083	33	899	Annexin A1 (Annexin I) (Annexin-1) (Calpactin II) (Calpactin	w
 CALPACTIN	human	P07355	ANXA2	P07355	31	551	Annexin A2 (Annexin II) (Annexin-2) (Calpactin I heavy chain	w
 CALPACTIN	human	P60903	S100A10	P60903	52	482	Protein S100-A10 (Calpactin I light chain) (Calpactin-1 ligh	w
@@ -844,15 +844,15 @@ CALPAIN-6	human	Q9Y6Q1	CAPN6	Q9Y6Q1	5	85	Calpain-6 (Calpain-like protease X-link
 CALPAIN-7	human	Q9Y6W3	CAPN7	Q9Y6W3	13	65	Calpain-7 (EC 3.4.22.-) (PalB homolog) (PalBH)	w
 CALPAIN-8	human	A6NHC0	CAPN8	A6NHC0	19	64	Calpain-8 (EC 3.4.22.53) (New calpain 2) (nCL-2) (Stomach-sp	w
 CALPAIN-9	human	O14815	CAPN9	O14815	17	87	Calpain-9 (EC 3.4.22.-) (Digestive tract-specific calpain) (	w
-CALPAIN-A	fly	FBgn0012051	CalpA	A0A0B4LG26	6	25	Calpain-A, isoform D	w
-CALPAIN-B	fly	FBgn0025866	CalpB	Q9VT65	8	25	Calpain-B (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
-CALPAIN-D	fly	FBgn0003464	sol	P27398	27	85	Calpain-D (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
+CALPAIN-A	fly	FBgn0012051	CalpA	A0A0B4LG26	6	23	Calpain-A, isoform D	w
+CALPAIN-B	fly	FBgn0025866	CalpB	Q9VT65	7	22	Calpain-B (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
+CALPAIN-D	fly	FBgn0003464	sol	P27398	22	75	Calpain-D (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
 CALPAIN-LIKE	human	Q9Y6Q1	CAPN6	Q9Y6Q1	5	85	Calpain-6 (Calpain-like protease X-linked) (Calpamodulin) (C	w
 CALPAIN-LIKE	yeast	Q03792	RIM13	Q03792	2	20	Calpain-like protease 1	w
 CALPAMODULIN	human	Q9Y6Q1	CAPN6	Q9Y6Q1	5	85	Calpain-6 (Calpain-like protease X-linked) (Calpamodulin) (C	w
 CALPASTATIN	human	P20810	CAST	P20810	12	132	Calpastatin (Calpain inhibitor) (Sperm BS-17 component)	w
 CALPASTATIN	zebrafish	F1QZT8	cast	F1QZT8	4	19	Calpastatin	w
-CALPB	fly	FBgn0025866	CalpB	Q9VT65	8	25	Calpain-B (EC 3.4.22.-) (Calcium-activated neutral proteinas	
+CALPB	fly	FBgn0025866	CalpB	Q9VT65	7	22	Calpain-B (EC 3.4.22.-) (Calcium-activated neutral proteinas	
 CALPC	fly	FBgn0290170	CalpC	Q9VXH6	6	10	Calpain C	
 CALPHOBINDIN	human	P08758	ANXA5	P08758	12	554	Annexin A5 (Anchorin CII) (Annexin V) (Annexin-5) (Calphobin	w
 CALPHOBINDIN-II	human	P08133	ANXA6	P08133	7	201	Annexin A6 (67 kDa calelectrin) (Annexin VI) (Annexin-6) (Ca	w
@@ -904,7 +904,7 @@ CALPONIN-LIKE	worm	Q09936	clik-2	Q09936	0	3	Calponin-like protein clik-2	w
 CALPONIN-LIKE	worm	Q23050	clik-1	Q23050	0	4	Calponin-like protein OV9M	w
 CALPROTECTIN	human	P05109	S100A8	P05109	51	1185	Protein S100-A8 (Calgranulin-A) (Calprotectin L1L subunit) (	w
 CALPROTECTIN	human	P06702	S100A9	P06702	61	1302	Protein S100-A9 (Calgranulin-B) (Calprotectin L1H subunit) (	w
-CALR	fly	FBgn0005585	Calr	P29413	94	606	Calreticulin	
+CALR	fly	FBgn0005585	Calr	P29413	93	606	Calreticulin	
 CALR	human	P27797	CALR	P27797	94	768	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum res	
 CALR	mus-musculus	P14211	Calr	P14211	11	151	Calreticulin	
 CALR	rattus-norvegicus	P18418	Calr	P18418	10	124	Calreticulin	
@@ -918,7 +918,7 @@ CALR3_HUMAN	human	Q96L12	CALR3	Q96L12	13	192
 CALR4	mus-musculus	Q3TQS0	Calr4	Q3TQS0	7	112	Calreticulin	
 CALR4	rattus-norvegicus	D3ZYM6	Calr4	D3ZYM6	9	110	Calreticulin	
 CALREGULIN	human	P27797	CALR	P27797	94	768	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum res	w
-CALRETICULIN	fly	FBgn0005585	Calr	P29413	94	606	Calreticulin	w
+CALRETICULIN	fly	FBgn0005585	Calr	P29413	93	606	Calreticulin	w
 CALRETICULIN	human	P27797	CALR	P27797	94	768	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum res	w
 CALRETICULIN	worm	P27798	crt-1	P27798	5	78	Calreticulin	w
 CALRETICULIN	zebrafish	A0A0R4IL29	calr3b	A0A0R4IL29	11	106	Calreticulin	w

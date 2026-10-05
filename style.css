@@ -746,5 +746,5 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 button.linkish { all: unset; cursor: pointer; color: var(--link, #1A5276); font-weight: 600; }
 button.linkish:focus-visible { outline: 2px solid #1A5276; outline-offset: 2px; }
 #hl tr.hl-open td { background: #F7F9FB; padding: 10px 12px; }
-.flag.iso-diff { background: #FCE3CF; color: #7A3A06; }
+.flag.iso-diff { background: none; color: var(--ink-3, #5F6771); font-weight: 400; padding: 0 2px; cursor: help; }   /* quiet: 13% of multi-isoform pairs differ; the pair page lists each isoform's value */
 .iso-via { font-size: 11.5px; white-space: nowrap; }

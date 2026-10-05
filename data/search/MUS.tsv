@@ -1,15 +1,15 @@
 MUS-101	worm	Q20129	mus-101	Q20129	4	57	BRCT domain-containing protein	
 MUS-81	worm	P91153	mus-81	P91153	5	86	Crossover junction endonuclease MUS81	
 MUS1	zea-mays	Q9XGC9	MUS1	Q9XGC9	3	52	DNA mismatch repair protein MSH2	
-MUS101	fly	FBgn0002878	mus101	Q9VY97	10	76	Mutagen-sensitive 101	
-MUS101_1024	fly	FBgn0002878	mus101	Q9VY97	10	76		
-MUS101_497	fly	FBgn0002878	mus101	Q9VY97	10	76		
-MUS101_510	fly	FBgn0002878	mus101	Q9VY97	10	76		
+MUS101	fly	FBgn0002878	mus101	Q9VY97	5	58	Mutagen-sensitive 101	
+MUS101_1024	fly	FBgn0002878	mus101	Q9VY97	5	58		
+MUS101_497	fly	FBgn0002878	mus101	Q9VY97	5	58		
+MUS101_510	fly	FBgn0002878	mus101	Q9VY97	5	58		
 MUS201	fly	FBgn0002887	mus201	Q4U2Q5	5	44	FI23547p1 (Mutagen-sensitive 201, isoform C) (Mutagen-sensit	w
 MUS201	fly	FBgn0002887	mus201	Q4U2Q5	5	44	FI23547p1 (Mutagen-sensitive 201, isoform C) (Mutagen-sensit	w
-MUS205_795	fly	FBgn0002891	PolZ1	Q9GSR1	10	21		
-MUS205_797	fly	FBgn0002891	PolZ1	Q9GSR1	10	21		
-MUS205_945	fly	FBgn0002891	PolZ1	Q9GSR1	10	21		
+MUS205_795	fly	FBgn0002891	PolZ1	Q9GSR1	2	6		
+MUS205_797	fly	FBgn0002891	PolZ1	Q9GSR1	2	6		
+MUS205_945	fly	FBgn0002891	PolZ1	Q9GSR1	2	6		
 MUS301	fly	FBgn0002899	mus301	Q9VSE2	1	20	Helicase POLQ-like (EC 3.6.4.12) (Mutagen-sensitive protein 	
 MUS302	fly	FBgn0287696	mus302	Q9VV99	0	1	mutagen-sensitive 302	
 MUS304	fly	FBgn0002901	mus304	Q9VVN4	3	38	ATR-interacting protein mus304 (Mutagen-sensitive protein 30	w
@@ -55,8 +55,8 @@ MUSCARINIC	zebrafish	B3DKN8	chrm2a	B3DKN8	4	26	Muscarinic acetylcholine receptor
 MUSCARINIC	zebrafish	E7F3U8	chrm4a	E7F3U8	3	14	Muscarinic acetylcholine receptor	w
 MUSCARINIC	zebrafish	X1WE62	chrm4b	X1WE62	3	9	Muscarinic acetylcholine receptor	w
 MUSCL	human	P60660	MYL6	P60660	66	640	Myosin light polypeptide 6 (17 kDa myosin light chain) (LC17	w
-MUSCLE	fly	FBgn0000045	Act79B	P02574	26	198	Actin, larval muscle (EC 3.6.4.-) (Actin-79B)	w
-MUSCLE	fly	FBgn0000047	Act88F	P83967	9	59	Actin, indirect flight muscle (EC 3.6.4.-) (Actin-88F)	w
+MUSCLE	fly	FBgn0000045	Act79B	P02574	26	195	Actin, larval muscle (EC 3.6.4.-) (Actin-79B)	w
+MUSCLE	fly	FBgn0000047	Act88F	P83967	9	56	Actin, indirect flight muscle (EC 3.6.4.-) (Actin-88F)	w
 MUSCLE	fly	FBgn0000492	Dr	Q03372	117	399	Muscle segmentation homeobox (Protein drop) (Protein msh)	w
 MUSCLE	fly	FBgn0002789	Mp20	P14318	6	82	Muscle protein 20	w
 MUSCLE	fly	FBgn0004169	up	P19351	11	128	Troponin T, skeletal muscle (Protein intended thorax) (Prote	w
@@ -65,7 +65,7 @@ MUSCLE	fly	FBgn0014863	Mlp84B	Q24400	0	40	Muscle LIM protein Mlp84B	w
 MUSCLE	fly	FBgn0023094	cyc	O61734	63	409	Protein cycle (Brain and muscle ARNT-like 1) (BMAL1) (MOP3)	w
 MUSCLE	fly	FBgn0030900	Him	Q9VWX6	2	2	Holes in muscle (RE70039p)	w
 MUSCLE	fly	FBgn0053519	Obsc	A8DYP0	0	1	Obscurin (Inactive serine/threonine-protein kinase obscurin)	w
-MUSCLE	fly	FBgn0085444	mute	A8DYH1	5	9	Muscle wasted, isoform C	w
+MUSCLE	fly	FBgn0085444	mute	A8DYH1	3	5	Muscle wasted, isoform C	w
 MUSCLE	fly	FBgn0259209	Mlp60A	B7YZP9	0	20	Muscle LIM protein 60A (Muscle LIM protein at 60A, isoform B	w
 MUSCLE	fly	FBgn0264695	Mhc	P05661	9	101	Myosin heavy chain, muscle	w
 MUSCLE	human	A7E2Y1	MYH7B	A7E2Y1	5	56	Myosin-7B (Antigen MLAA-21) (Myosin cardiac muscle beta chai	w
@@ -243,10 +243,10 @@ MUSCULOSKELETAL	zebrafish	E7F422	mustn1a	E7F422	0	10	Musculoskeletal embryonic n
 MUSC_HUMAN	human	O60682	MSC	O60682	69	380		
 MUSE1	arabidopsis-thaliana	Q8RXF2	MUSE1	Q8RXF2	1	6	E3 ubiquitin-protein ligase RMA	
 MUSE2	arabidopsis-thaliana	P93744	MUSE2	P93744	2	5	E3 ubiquitin-protein ligase RMA	
-MUSHROOM	fly	FBgn0002873	mud	Q8IR55	1	17	Mushroom body defect, isoform H	w
+MUSHROOM	fly	FBgn0002873	mud	Q8IR55	1	10	Mushroom body defect, isoform H	w
 MUSHROOM	fly	FBgn0024944	Oamb	A0A0B4KGK1	3	10	Octopamine receptor in mushroom bodies, isoform D	w
-MUSHROOM	fly	FBgn0025743	mbt	Q9VXE5	594	1665	Serine/threonine-protein kinase PAK mbt (EC 2.7.11.1) (Prote	w
-MUSHROOM	fly	FBgn0086912	mbm	Q9VPM5	3	17	Protein mushroom body miniature	w
+MUSHROOM	fly	FBgn0025743	mbt	Q9VXE5	366	1150	Serine/threonine-protein kinase PAK mbt (EC 2.7.11.1) (Prote	w
+MUSHROOM	fly	FBgn0086912	mbm	Q9VPM5	1	13	Protein mushroom body miniature	w
 MUSHROOM-BODY	fly	FBgn0262737	mub	M9NEH9	1	86	Mushroom-body expressed, isoform K	w
 MUSK	human	O15146	MUSK	O15146	186	1375	Muscle, skeletal receptor tyrosine-protein kinase (EC 2.7.10	
 MUSK	mus-musculus	Q61006	Musk	Q61006	4	23	Muscle, skeletal receptor tyrosine-protein kinase	

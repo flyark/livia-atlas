@@ -6,10 +6,10 @@ DYN2_HUMAN	human	P50570	DNM2	P50570	24	412
 DYN3	yeast	Q04949	DYN3	Q04949	1	12	Cytoplasmic dynein intermediate light chain DYN3	
 DYN3_HUMAN	human	Q9UQ16	DNM3	Q9UQ16	10	266		
 DYN4	human	Q9UJW0	DCTN4	Q9UJW0	25	225	Dynactin subunit 4 (Dyn4) (Dynactin subunit p62)	w
-DYNACTIN	fly	FBgn0001108	DCTN1-p150	P13496	21	102	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
+DYNACTIN	fly	FBgn0001108	DCTN1-p150	P13496	13	87	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
 DYNACTIN	fly	FBgn0010622	DCTN3-p24	Q9W1V8	2	42	CG9893 protein (CG9893-PA) (Dynactin 3, p24 subunit, isoform	w
-DYNACTIN	fly	FBgn0021825	DCTN2-p50	Q7K2D2	13	72	Dynactin subunit 2 (Dynamitin) (Dynactin 2 p50 subunit)	w
-DYNACTIN	fly	FBgn0033206	DCTN4-p62	Q7K130	8	55	Dynactin subunit 4	w
+DYNACTIN	fly	FBgn0021825	DCTN2-p50	Q7K2D2	13	66	Dynactin subunit 2 (Dynamitin) (Dynactin 2 p50 subunit)	w
+DYNACTIN	fly	FBgn0033206	DCTN4-p62	Q7K130	7	50	Dynactin subunit 4	w
 DYNACTIN	fly	FBgn0036882	Dred	Q7JQV2	8	55	Dynactin subunit 1	w
 DYNACTIN	fly	FBgn0040228	DCTN5-p25	Q9VJQ6	6	52	Dynactin subunit 5	w
 DYNACTIN	fly	FBgn0086446	DCTN6-p27	Q9VIZ1	6	47	Dynactin subunit 6	w
@@ -41,8 +41,8 @@ DYNAMICS	worm	Q17510	rmd-3	Q17510	0	1	Regulator of microtubule dynamics protein 
 DYNAMICS	worm	Q9XWK6	sup-35	Q9XWK6	0	15	Regulator of microtubule dynamics protein 1	w
 DYNAMICS	zebrafish	A4IG61	mief1	A4IG61	0	4	Mitochondrial dynamics protein MID51	w
 DYNAMICS	zebrafish	Q5RG44	crad	Q5RG44	1	32	Capping protein inhibiting regulator of actin dynamics	w
-DYNAMIN	fly	FBgn0003392	shi	M9PHQ0	8	263	dynamin GTPase (EC 3.6.5.5)	w
-DYNAMIN	fly	FBgn0023388	Dap160	M9ND00	35	129	Dynamin associated protein 160, isoform D	w
+DYNAMIN	fly	FBgn0003392	shi	M9PHQ0	5	252	dynamin GTPase (EC 3.6.5.5)	w
+DYNAMIN	fly	FBgn0023388	Dap160	M9ND00	30	114	Dynamin associated protein 160, isoform D	w
 DYNAMIN	fly	FBgn0026479	Drp1	Q9VQE0	0	109	Dynamin related protein 1, isoform A (Dynamin related protei	w
 DYNAMIN	human	O00429	DNM1L	O00429	13	445	Dynamin-1-like protein (EC 3.6.5.5) (Dnm1p/Vps1p-like protei	w
 DYNAMIN	human	P50570	DNM2	P50570	24	412	Dynamin-2 (EC 3.6.5.5) (Dynamin 2) (Dynamin II)	w
@@ -62,7 +62,7 @@ DYNAMIN-2	zebrafish	Q5RHR9	dnm3a	Q5RHR9	1	59	Dynamin-2	w
 DYNAMIN-3	human	Q9UQ16	DNM3	Q9UQ16	10	266	Dynamin-3 (EC 3.6.5.5) (Dynamin, testicular) (T-dynamin)	w
 DYNAMIN-BINDING	human	Q6XZF7	DNMBP	Q6XZF7	41	208	Dynamin-binding protein (Scaffold protein Tuba)	w
 DYNAMIN-BINDING	zebrafish	A0A8M3ASM7	arhgef38	A0A8M3ASM7	4	11	Dynamin-binding protein	w
-DYNAMIN-LIKE	fly	FBgn0261276	Opa1	A1Z9N0	5	70	Dynamin-like 120 kDa protein, mitochondrial (EC 3.6.5.5)	w
+DYNAMIN-LIKE	fly	FBgn0261276	Opa1	A1Z9N0	5	64	Dynamin-like 120 kDa protein, mitochondrial (EC 3.6.5.5)	w
 DYNAMIN-LIKE	human	O00429	DNM1L	O00429	13	445	Dynamin-1-like protein (EC 3.6.5.5) (Dnm1p/Vps1p-like protei	w
 DYNAMIN-LIKE	human	O60313	OPA1	O60313	20	246	Dynamin-like GTPase OPA1, mitochondrial (EC 3.6.5.5) (Optic 	w
 DYNAMIN-LIKE	worm	Q18965	eat-3	Q18965	1	35	Dynamin-like GTPase OPA1, mitochondrial	w
@@ -70,7 +70,7 @@ DYNAMIN-LIKE	yeast	P32266	MGM1	P32266	1	32	Dynamin-like GTPase MGM1, mitochondri
 DYNAMIN-LIKE	zebrafish	Q5U3A7	opa1	Q5U3A7	5	35	Dynamin-like GTPase OPA1, mitochondrial	w
 DYNAMIN-RELATED	yeast	P54861	DNM1	P54861	2	51	Dynamin-related protein DNM1	w
 DYNAMIN-TYPE	worm	G5ECC3	rme-1	G5ECC3	1	34	Dynamin-type G domain-containing protein	w
-DYNAMITIN	fly	FBgn0021825	DCTN2-p50	Q7K2D2	13	72	Dynactin subunit 2 (Dynamitin) (Dynactin 2 p50 subunit)	w
+DYNAMITIN	fly	FBgn0021825	DCTN2-p50	Q7K2D2	13	66	Dynactin subunit 2 (Dynamitin) (Dynactin 2 p50 subunit)	w
 DYNAMITIN	human	Q13561	DCTN2	Q13561	40	404	Dynactin subunit 2 (50 kDa dynein-associated polypeptide) (D	w
 DYNAP	human	Q8N1N2	DYNAP	Q8N1N2	11	111	Dynactin-associated protein (Full)	
 DYNAP	mus-musculus	Q9D7M5	Dynap	Q9D7M5	0	1	Dynactin associated protein	
@@ -119,13 +119,13 @@ DYNEIN	fly	FBgn0026141	Cdlc2	O96860	32	102	Dynein light chain 2, cytoplasmic (8 
 DYNEIN	fly	FBgn0028567	robl62A	Q9W0F0	14	31	Dynein light chain roadblock	w
 DYNEIN	fly	FBgn0028570	robl22E	Q9VQA6	13	32	Dynein light chain roadblock	w
 DYNEIN	fly	FBgn0029667	Gas8	Q8MT08	5	13	Dynein regulatory complex subunit 4 (Growth arrest-specific 	w
-DYNEIN	fly	FBgn0030004	CG10958	Q9W3J8	8	25	Dynein regulatory complex protein 1 homolog	w
-DYNEIN	fly	FBgn0030276	Dlic	Q9VZ20	11	87	Dynein light intermediate chain	w
+DYNEIN	fly	FBgn0030004	CG10958	Q9W3J8	7	21	Dynein regulatory complex protein 1 homolog	w
+DYNEIN	fly	FBgn0030276	Dlic	Q9VZ20	10	86	Dynein light intermediate chain	w
 DYNEIN	fly	FBgn0032119	CG3769	Q9VLB9	0	33	Cytoplasmic dynein 2 light intermediate chain 1	w
 DYNEIN	fly	FBgn0032163	TbCMF46	Q9VL65	0	6	Dynein regulatory complex subunit 3	w
 DYNEIN	fly	FBgn0032345	Dnaaf4	Q9VKJ5	4	31	Dynein axonemal assembly factor 4	w
 DYNEIN	fly	FBgn0032972	CG10834	Q9V9P1	10	25	Dynein light chain roadblock	w
-DYNEIN	fly	FBgn0033224	Nop17l	Q0E9G3	10	52	Protein kintoun (Dynein assembly factor 2, axonemal homolog)	w
+DYNEIN	fly	FBgn0033224	Nop17l	Q0E9G3	8	43	Protein kintoun (Dynein assembly factor 2, axonemal homolog)	w
 DYNEIN	fly	FBgn0033408	ODA-Dnal1	A1Z7U2	0	14	Dynein light chain 1, axonemal	w
 DYNEIN	fly	FBgn0033623	CG13202	A1Z8J9	1	16	Dynein attachment factor N-terminal domain-containing protei	w
 DYNEIN	fly	FBgn0033687	CG8407	A1Z8T9	8	30	Dynein light chain	w
@@ -135,8 +135,8 @@ DYNEIN	fly	FBgn0034352	Dnaaf3	A1ZB91	1	41	Dynein axonemal assembly factor 3 homo
 DYNEIN	fly	FBgn0034692	CG13502	Q9W295	4	24	Outer dynein arm-docking complex subunit 4 (Tetratricopeptid	w
 DYNEIN	fly	FBgn0035256	CG13930	Q9W0A6	7	18	Dynein axonemal intermediate chain 4 (WD repeat-containing p	w
 DYNEIN	fly	FBgn0036195	Dnai2	M9PC80	8	20	Dynein, axonemal, intermediate chain 2, isoform C	w
-DYNEIN	fly	FBgn0036771	Wdr92	Q9VVM7	12	85	Dynein axonemal assembly factor 10 (WD repeat-containing pro	w
-DYNEIN	fly	FBgn0037059	CG10510	Q9VP67	5	37	Dynein regulatory complex subunit 2 (Coiled-coil domain-cont	w
+DYNEIN	fly	FBgn0036771	Wdr92	Q9VVM7	11	77	Dynein axonemal assembly factor 10 (WD repeat-containing pro	w
+DYNEIN	fly	FBgn0037059	CG10510	Q9VP67	5	36	Dynein regulatory complex subunit 2 (Coiled-coil domain-cont	w
 DYNEIN	fly	FBgn0037254	sac	Q9VN30	0	1	Dynein heavy chain linker domain-containing protein	w
 DYNEIN	fly	FBgn0037454	CG1137	Q9VI32	2	7	Dynein regulatory complex protein 10 (IQ domain-containing p	w
 DYNEIN	fly	FBgn0037773	CG5359	Q9VH45	12	47	Dynein light chain (RE37471p)	w
@@ -151,7 +151,7 @@ DYNEIN	fly	FBgn0053497	Sdic2	Q7KWG3	9	66	Sperm-specific dynein intermediate chai
 DYNEIN	fly	FBgn0053499	Sdic4	A0ACM8QHF0	0	0	Sperm-specific dynein intermediate chain 4	w
 DYNEIN	fly	FBgn0063261	CG31275	Q7JQ02	14	24	Dynein light chain roadblock	w
 DYNEIN	fly	FBgn0067861	Sdic1	Q9W5W4	9	67	Sperm-specific dynein intermediate chain 1, isoform A	w
-DYNEIN	fly	FBgn0261797	Dhc64C	M9PBQ3	0	2	Dynein heavy chain 64C, isoform I	w
+DYNEIN	fly	FBgn0261797	Dhc64C	M9PBQ3	0	0	Dynein heavy chain 64C, isoform I	w
 DYNEIN	fly	FBgn0263988	Dic61B	Q9W0U9	10	19	Dynein axonemal intermediate chain 4 (WD repeat-containing p	w
 DYNEIN	fly	FBgn0283432	SdicA	Q8IRZ3	0	0	GH16657p (Sperm-specific dynein intermediate chain 3, isofor	w
 DYNEIN	fly	FBgn0283433	SdicB	Q8IRZ3	0	0	GH16657p (Sperm-specific dynein intermediate chain 3, isofor	w
@@ -272,7 +272,7 @@ DYNEIN	zebrafish	Q7SXY4	dync2li1	Q7SXY4	2	35	Cytoplasmic dynein 2 light intermed
 DYNEIN	zebrafish	Q7ZU45	odad4	Q7ZU45	8	104	Outer dynein arm-docking complex subunit 4	w
 DYNEIN	zebrafish	Q7ZUX8	dynlrb1	Q7ZUX8	12	140	Dynein light chain roadblock	w
 DYNEIN	zebrafish	Q7ZV84	dnaaf1	Q7ZV84	1	6	Dynein axonemal assembly factor 1	w
-DYNEIN-ASSOCIATED	fly	FBgn0001108	DCTN1-p150	P13496	21	102	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
+DYNEIN-ASSOCIATED	fly	FBgn0001108	DCTN1-p150	P13496	13	87	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
 DYNEIN-ASSOCIATED	human	Q13561	DCTN2	Q13561	40	404	Dynactin subunit 2 (50 kDa dynein-associated polypeptide) (D	w
 DYNEIN-ASSOCIATED	human	Q14203	DCTN1	Q14203	98	533	Dynactin subunit 1 (150 kDa dynein-associated polypeptide) (	w
 DYNEIN-ASSOCIATED	human	Q9NP97	DYNLRB1	Q9NP97	27	210	Dynein light chain roadblock-type 1 (Bithoraxoid-like protei	w

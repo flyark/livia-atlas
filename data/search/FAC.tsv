@@ -8,7 +8,7 @@ FACC	human	Q00597	FANCC	Q00597	38	173
 FACC1_HUMAN	human	Q96Q35	FLACC1	Q96Q35	6	49		
 FACD	human	P51587	BRCA2	P51587	9	117		
 FACD	human	Q9BXW9	FANCD2	Q9BXW9	54	749		
-FACD2	fly	FBgn0038827	Fancd2	Q8MYL1	154	1152	Fanconi anemia group D2 protein homolog (Protein FACD2)	w
+FACD2	fly	FBgn0038827	Fancd2	Q8MYL1	152	1152	Fanconi anemia group D2 protein homolog (Protein FACD2)	w
 FACD2	human	Q9BXW9	FANCD2	Q9BXW9	54	749	Fanconi anemia group D2 protein (Protein FACD2)	w
 FACD2_HUMAN	human	Q9BXW9	FANCD2	Q9BXW9	54	749		
 FACE	human	Q9H5J4	ELOVL6	Q9H5J4	5	57		
@@ -22,8 +22,8 @@ FACE1_HUMAN	human	O75844	ZMPSTE24	O75844	2	172
 FACE2	arabidopsis-thaliana	Q8GW19	FACE2	Q8GW19	2	9	CAAX prenyl protease 2	
 FACE2	human	Q9Y256	RCE1	Q9Y256	13	95		
 FACE2_HUMAN	human	Q9Y256	RCE1	Q9Y256	13	95		
-FACETS	fly	FBgn0005632	faf	P55824	1	22	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
-FACETS	fly	FBgn0028582	lqf	Q9VS85	19	96	FI19443p1 (Liquid facets, isoform A) (Liquid facets, isoform	w
+FACETS	fly	FBgn0005632	faf	P55824	0	19	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
+FACETS	fly	FBgn0028582	lqf	Q9VS85	17	84	FI19443p1 (Liquid facets, isoform A) (Liquid facets, isoform	w
 FACETS	fly	FBgn0259676	Prim2	Q9VPH2	5	35	DNA primase large subunit (DNA polymerase subunit beta) (Sup	w
 FACETS	human	O00507	USP9Y	O00507	7	67	Ubiquitin carboxyl-terminal hydrolase 9Y (EC 3.4.19.12) (Deu	w
 FACETS	human	Q93008	USP9X	Q93008	20	334	Ubiquitin carboxyl-terminal hydrolase 9X (EC 3.4.19.12) (Deu	w
@@ -33,7 +33,7 @@ FACG	human	O15287	FANCG	O15287	64	283	Fanconi anemia group G protein (Protein FA
 FACI	fly	FBgn0033354	FANCI	A1Z7L1	5	42	Fanconi anemia group I protein homolog (Protein FACI)	w
 FACI	human	Q9NVI1	FANCI	Q9NVI1	22	302	Fanconi anemia group I protein (Protein FACI)	w
 FACILITATED	fly	FBgn0033644	Tret1l	Q8MKK4	6	62	Facilitated trehalose transporter Tret1-2 homolog (DmTret1-2	w
-FACILITATED	fly	FBgn0050035	Tret1	A1Z8N1	10	152	Facilitated trehalose transporter Tret1-1 (DmTret1-1)	w
+FACILITATED	fly	FBgn0050035	Tret1	A1Z8N1	8	145	Facilitated trehalose transporter Tret1-1 (DmTret1-1)	w
 FACILITATED	human	O95528	SLC2A10	O95528	2	111	Solute carrier family 2, facilitated glucose transporter mem	w
 FACILITATED	human	P11166	SLC2A1	P11166	45	642	Solute carrier family 2, facilitated glucose transporter mem	w
 FACILITATED	human	P11168	SLC2A2	P11168	4	96	Solute carrier family 2, facilitated glucose transporter mem	w
@@ -55,7 +55,7 @@ FACILITATED	zebrafish	F1R0H0	slc2a10	F1R0H0	2	106	Solute carrier family 2, facil
 FACILITATED	zebrafish	F1RB41	slc2a6	F1RB41	1	106	Solute carrier family 2, facilitated glucose transporter mem	w
 FACILITATED	zebrafish	Q285P3	slc2a1a	Q285P3	0	5	Facilitated glucose transporter 1	w
 FACILITATED	zebrafish	Q6NWF1	slc2a12	Q6NWF1	3	106	Solute carrier family 2, facilitated glucose transporter mem	w
-FACILITATES	fly	FBgn0010278	Ssrp	Q05344	66	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+FACILITATES	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
 FACILITATES	human	Q08945	SSRP1	Q08945	107	789	FACT complex subunit SSRP1 (Chromatin-specific transcription	w
 FACILITATES	human	Q9Y5B9	SUPT16H	Q9Y5B9	70	651	FACT complex subunit SPT16 (Chromatin-specific transcription	w
 FACILITATOR	fly	FBgn0010651	MFS14	Q8MRP7	1	5	GH07529p (Major facilitator superfamily transporter 14, isof	w
@@ -68,7 +68,7 @@ FACILITATOR	fly	FBgn0031523	CG15408	Q9VQP2	0	2	Major facilitator superfamily (MF
 FACILITATOR	fly	FBgn0031636	CG12194	E1JHT4	0	4	Major facilitator superfamily domain-containing protein 1	w
 FACILITATOR	fly	FBgn0033234	MFS12	Q8MS66	0	2	LP07366p (Major facilitator superfamily transporter 12, isof	w
 FACILITATOR	fly	FBgn0034392	MFS15	A1ZBD9	0	4	FI23731p1 (Major facilitator superfamily transporter 15, iso	w
-FACILITATOR	fly	FBgn0034611	MFS16	Q8MLW5	1	6	Major facilitator superfamily transporter 16, isoform B (RE2	w
+FACILITATOR	fly	FBgn0034611	MFS16	Q8MLW5	0	6	Major facilitator superfamily transporter 16, isoform B (RE2	w
 FACILITATOR	fly	FBgn0034785	CG3649	Q9W1Y9	1	4	Major facilitator superfamily (MFS) profile domain-containin	w
 FACILITATOR	fly	FBgn0035645	CG5592	Q9VRQ8	0	3	Major facilitator superfamily (MFS) profile domain-containin	w
 FACILITATOR	fly	FBgn0035763	mrva	Q9VS47	0	23	Major facilitator superfamily domain-containing protein 1	w
@@ -190,7 +190,7 @@ FACOS_HUMAN	human	Q96PS1	FANCD2OS	Q96PS1	7	66
 FACR1_HUMAN	human	Q8WVX9	FAR1	Q8WVX9	11	121		
 FACR2_HUMAN	human	Q96K12	FAR2	Q96K12	3	66		
 FACT	arabidopsis-thaliana	Q9FFQ7	FACT	Q9FFQ7	2	19	Fatty alcohol:caffeoyl-CoA acyltransferase	
-FACT	fly	FBgn0010278	Ssrp	Q05344	66	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+FACT	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
 FACT	human	O00358	FOXE1	O00358	70	464	Forkhead box protein E1 (Forkhead box protein E2) (Forkhead-	w
 FACT	human	P11717	IGF2R	P11717	16	264	Cation-independent mannose-6-phosphate receptor (CI Man-6-P 	w
 FACT	human	Q08945	SSRP1	Q08945	107	789	FACT complex subunit SSRP1 (Chromatin-specific transcription	w
@@ -216,7 +216,7 @@ FACTO	human	Q8N684	CPSF7	Q8N684	69	338	Cleavage and polyadenylation specificity 
 FACTO	human	Q92831	KAT2B	Q92831	67	579	Histone acetyltransferase KAT2B (EC 2.3.1.48) (Histone acety	w
 FACTO	human	Q9BY44	EIF2A	Q9BY44	17	222	Eukaryotic translation initiation factor 2A (eIF-2A) (65 kDa	w
 FACTOR-1	fly	FBgn0030054	Caf1-180	Q9W3D1	9	65	Chromatin assembly factor 1, p180 subunit (Chromatin assembl	w
-FACTOR-1	fly	FBgn0040305	MTF-1	A8JNP3	48	356	Metal response element-binding transcription Factor-1, isofo	w
+FACTOR-1	fly	FBgn0040305	MTF-1	A8JNP3	45	354	Metal response element-binding transcription Factor-1, isofo	w
 FACTOR-1	human	P56270	MAZ	P56270	7	107	Myc-associated zinc finger protein (MAZI) (Pur-1) (Purine-bi	w
 FACTOR-1	zebrafish	A0A2R8QBT6	msc	A0A2R8QBT6	1	1	Musculin (activated B-cell factor-1)	w
 FACTOR-2	fly	FBgn0031888	Pvf2	Q9VM43	30	263	PDGF- and VEGF-related factor 2 (PDGF/VEGF factor-2) (RH4021	w
@@ -311,8 +311,8 @@ FACTOR-INTERACTING	zebrafish	Q5XIZ7	arfip2a	Q5XIZ7	2	10	ADP-ribosylation factor-
 FACTOR-INTERACTING	zebrafish	Q7SYK6	arfip1	Q7SYK6	2	10	ADP-ribosylation factor-interacting protein 1 (arfaptin 1)	w
 FACTOR-LI	human	Q49AM1	MTERF2	Q49AM1	9	119	Transcription termination factor 2, mitochondrial (Mitochond	w
 FACTOR-LIKE	fly	FBgn0000115	Arl1	P25160	8	61	ADP-ribosylation factor-like protein 1	w
-FACTOR-LIKE	fly	FBgn0000715	FMRFa	P10552	16	254	FMRFamide-related peptides [Cleaved into: FMRFamide A; Corti	w
-FACTOR-LIKE	fly	FBgn0003984	vn	Q94918	59	314	Protein vein (Epidermal growth factor-like protein) (Protein	w
+FACTOR-LIKE	fly	FBgn0000715	FMRFa	P10552	16	250	FMRFamide-related peptides [Cleaved into: FMRFamide A; Corti	w
+FACTOR-LIKE	fly	FBgn0003984	vn	Q94918	59	310	Protein vein (Epidermal growth factor-like protein) (Protein	w
 FACTOR-LIKE	fly	FBgn0004908	Arl2	Q06849	11	80	ADP-ribosylation factor-like protein 2	w
 FACTOR-LIKE	fly	FBgn0030748	Traf-like	Q8IR14	13	177	RE66324p (TNF-receptor-associated factor-like, isoform A)	w
 FACTOR-LIKE	fly	FBgn0031281	Saf6	Q9VPT4	13	65	LD32410p (SAGA factor-like TAF6, isoform A)	w
@@ -456,7 +456,7 @@ FACTOR-PROLINE	zebrafish	E7F8S1	egln2	E7F8S1	6	11	hypoxia-inducible factor-proli
 FACTOR-PROLINE	zebrafish	F6P6J7	egln1b	F6P6J7	7	10	hypoxia-inducible factor-proline dioxygenase	w
 FACTOR-PROLINE	zebrafish	Q6NY85	egln3	Q6NY85	7	23	hypoxia-inducible factor-proline dioxygenase	w
 FACTOR-R	human	Q96FC9	DDX11	Q96FC9	18	393	ATP-dependent DNA helicase DDX11 (EC 5.6.2.3) (CHL1-related 	w
-FACTOR-REGULATED	fly	FBgn0031450	Hrs	Q960X8	21	124	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+FACTOR-REGULATED	fly	FBgn0031450	Hrs	Q960X8	21	113	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
 FACTOR-REGULATED	human	O14964	HGS	O14964	95	539	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
 FACTOR-REGULATED	worm	Q17796	hgrs-1	Q17796	8	70	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
 FACTOR-REGULATED	zebrafish	E9QCS7	hgs	E9QCS7	14	71	Hepatocyte growth factor-regulated tyrosine kinase substrate	w

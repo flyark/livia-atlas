@@ -14,7 +14,7 @@ EIF-2-ALPHA	human	Q92616	GCN1	Q92616	14	504	Stalled ribosome sensor GCN1 (GCN1 e
 EIF-2-ALPHA	human	Q9P2K8	EIF2AK4	Q9P2K8	25	217	eIF-2-alpha kinase GCN2 (EC 2.7.11.1) (Eukaryotic translatio	w
 EIF-2-ALPHA	yeast	P15442	GCN2	P15442	2	11	eIF-2-alpha kinase GCN2 (EC 2.7.11.1) (General control non-d	w
 EIF-2-GAMMA	human	Q2VIR3	EIF2S3B	Q2VIR3	15	535	Eukaryotic translation initiation factor 2 subunit 3B (EC 3.	w
-EIF-2A	fly	FBgn0037135	eIF2A	Q9VNX8	7	66	Eukaryotic translation initiation factor 2A (eIF-2A)	w
+EIF-2A	fly	FBgn0037135	eIF2A	Q9VNX8	2	56	Eukaryotic translation initiation factor 2A (eIF-2A)	w
 EIF-2A	human	P05198	EIF2S1	P05198	26	442	Eukaryotic translation initiation factor 2 subunit 1 (Eukary	w
 EIF-2A	human	P19525	EIF2AK2	P19525	57	1487	Interferon-induced, double-stranded RNA-activated protein ki	w
 EIF-2A	human	Q9BY44	EIF2A	Q9BY44	17	222	Eukaryotic translation initiation factor 2A (eIF-2A) (65 kDa	w
@@ -33,7 +33,7 @@ EIF-2C	human	Q9UL18	AGO1	Q9UL18	34	387	Protein argonaute-1 (Argonaute1) (hAgo1) 
 EIF-2D	worm	Q18186	eif-2d	Q18186	0	27	SUI1 domain-containing protein	
 EIF-2GA	human	Q2VIR3	EIF2S3B	Q2VIR3	15	535	Eukaryotic translation initiation factor 2 subunit 3B (EC 3.	w
 EIF-2GAMMA	worm	Q95XR0	eif-2gamma	Q95XR0	4	117	protein-synthesizing GTPase	
-EIF-3	fly	FBgn0029629	eIF3g1	Q9W4X7	12	107	Eukaryotic translation initiation factor 3 subunit G-1 (Euka	w
+EIF-3	fly	FBgn0029629	eIF3g1	Q9W4X7	10	103	Eukaryotic translation initiation factor 3 subunit G-1 (Euka	w
 EIF-3	fly	FBgn0034654	eIF3k	Q9W2D9	6	119	Eukaryotic translation initiation factor 3 subunit K (eIF3k)	w
 EIF-3	fly	FBgn0038796	eIF3g2	Q9VDM6	12	98	Eukaryotic translation initiation factor 3 subunit G-2 (Euka	w
 EIF-3	human	O75821	EIF3G	O75821	45	287	Eukaryotic translation initiation factor 3 subunit G (eIF3g)	w
@@ -70,7 +70,7 @@ EIF-4E	human	O60573	EIF4E2	O60573	36	312	Eukaryotic translation initiation facto
 EIF-4E	human	P06730	EIF4E	P06730	26	353	Eukaryotic translation initiation factor 4E (eIF-4E) (eIF4E)	w
 EIF-4E	human	Q8N5X7	EIF4E3	Q8N5X7	17	245	Eukaryotic translation initiation factor 4E type 3 (eIF-4E t	w
 EIF-4E3	human	Q8N5X7	EIF4E3	Q8N5X7	17	245	Eukaryotic translation initiation factor 4E type 3 (eIF-4E t	w
-EIF-4F	fly	FBgn0015218	eIF4E1	P48598	38	259	Eukaryotic translation initiation factor 4E1 (eIF-4F 25 kDa 	w
+EIF-4F	fly	FBgn0015218	eIF4E1	P48598	37	256	Eukaryotic translation initiation factor 4E1 (eIF-4F 25 kDa 	w
 EIF-4F	fly	FBgn0035709	eIF4E4	Q9VRY0	9	74	eIF-4F 25 kDa subunit	w
 EIF-4F	fly	FBgn0035823	eIF4E5	Q9VSB6	11	81	eIF-4F 25 kDa subunit	w
 EIF-4F	fly	FBgn0039622	eIF4E6	Q9VAR1	11	71	eIF-4F 25 kDa subunit	w
@@ -82,7 +82,7 @@ EIF-4G	human	P78344	EIF4G2	P78344	19	179	Eukaryotic translation initiation facto
 EIF-4G	human	Q04637	EIF4G1	Q04637	84	439	Eukaryotic translation initiation factor 4 gamma 1 (eIF-4-ga	w
 EIF-4G1	human	Q04637	EIF4G1	Q04637	84	439	Eukaryotic translation initiation factor 4 gamma 1 (eIF-4-ga	w
 EIF-4H	human	Q15056	EIF4H	Q15056	26	261	Eukaryotic translation initiation factor 4H (eIF-4H) (Willia	w
-EIF-5	fly	FBgn0030719	eIF5	Q9VXK6	13	146	Eukaryotic translation initiation factor 5 (eIF-5)	w
+EIF-5	fly	FBgn0030719	eIF5	Q9VXK6	12	137	Eukaryotic translation initiation factor 5 (eIF-5)	w
 EIF-5	human	P55010	EIF5	P55010	30	302	Eukaryotic translation initiation factor 5 (eIF-5)	w
 EIF-5A	fly	FBgn0285952	eEF5	Q9GU68	25	254	Eukaryotic translation initiation factor 5A (eIF-5A)	w
 EIF-5A	human	P63241	EIF5A	P63241	33	283	Eukaryotic translation initiation factor 5A-1 (eIF-5A-1) (eI	w
@@ -97,8 +97,8 @@ EIF-6	fly	FBgn0034915	eIF6	P56538	14	185	Eukaryotic translation initiation facto
 EIF-6	human	P56537	EIF6	P56537	43	507	Eukaryotic translation initiation factor 6 (eIF-6) (B(2)GCN 	w
 EIF-6	worm	O62106	eif-6	O62106	6	152	Eukaryotic translation initiation factor 6	
 EIF1	dictyostelium-discoideum	Q86AU4	eIF1	Q86AU4	3	83	Eukaryotic translation initiation factor 1	
-EIF1	fly	FBgn0035423	eIF1	Q9VZS3	14	130	Eukaryotic translation initiation factor eIF1 (Protein trans	w
-EIF1	fly	FBgn0035423	eIF1	Q9VZS3	14	130	Eukaryotic translation initiation factor eIF1 (Protein trans	w
+EIF1	fly	FBgn0035423	eIF1	Q9VZS3	11	121	Eukaryotic translation initiation factor eIF1 (Protein trans	w
+EIF1	fly	FBgn0035423	eIF1	Q9VZS3	11	121	Eukaryotic translation initiation factor eIF1 (Protein trans	w
 EIF1	human	P41567	EIF1	P41567	25	217	Eukaryotic translation initiation factor 1 (eIF1) (A121) (Pr	
 EIF1	mus-musculus	P48024	Eif1	P48024	18	117	Eukaryotic translation initiation factor 1	
 EIF1	rattus-norvegicus	F7F845	Eif1	F7F845	10	160	Eukaryotic translation initiation factor 1	
@@ -150,13 +150,13 @@ EIF2	yeast	Q05791	CDC123	Q05791	1	11	Translation initiation factor eIF2 assembly
 EIF2	zebrafish	Q6PC40	cdc123	Q6PC40	1	5	Translation initiation factor eIF2 assembly protein	w
 EIF2-ALPHA	human	P05198	EIF2S1	P05198	26	442	Eukaryotic translation initiation factor 2 subunit 1 (Eukary	w
 EIF2-ALPHA	human	Q9NZJ5	EIF2AK3	Q9NZJ5	37	329	Eukaryotic translation initiation factor 2-alpha kinase 3 (E	w
-EIF2-BETA	fly	FBgn0004926	eIF2beta	P41375	24	196	Eukaryotic translation initiation factor 2 subunit 2 (Eukary	w
+EIF2-BETA	fly	FBgn0004926	eIF2beta	P41375	22	191	Eukaryotic translation initiation factor 2 subunit 2 (Eukary	w
 EIF2-BETA	human	P20042	EIF2S2	P20042	37	359	Eukaryotic translation initiation factor 2 subunit 2 (Eukary	w
 EIF2-GAMMA	fly	FBgn0263740	eIF2gamma	Q24208	17	537	Eukaryotic translation initiation factor 2 subunit 3 (EC 3.6	w
 EIF2-GAMMA	human	P41091	EIF2S3	P41091	30	781	Eukaryotic translation initiation factor 2 subunit 3 (EC 3.6	w
 EIF2A	arabidopsis-thaliana	Q9FE78	EIF2A	Q9FE78	14	272	Eukaryotic translation initiation factor 2 subunit alpha	
 EIF2A	dictyostelium-discoideum	Q54PV7	eif2a	Q54PV7	1	28	Eukaryotic translation initiation factor 2A	
-EIF2A	fly	FBgn0037135	eIF2A	Q9VNX8	7	66	Eukaryotic translation initiation factor 2A (eIF-2A)	
+EIF2A	fly	FBgn0037135	eIF2A	Q9VNX8	2	56	Eukaryotic translation initiation factor 2A (eIF-2A)	
 EIF2A	human	P05198	EIF2S1	P05198	26	442		
 EIF2A	human	Q9BY44	EIF2A	Q9BY44	17	222	Eukaryotic translation initiation factor 2A (eIF-2A) (65 kDa	
 EIF2A	methanocaldococcus-jannaschii	Q57581	eif2a	Q57581	1	36	Translation initiation factor 2 subunit alpha	
@@ -173,14 +173,14 @@ EIF2AK3	human	Q9NZJ5	EIF2AK3	Q9NZJ5	37	329	Eukaryotic translation initiation fac
 EIF2AK3	mus-musculus	Q9Z2B5	Eif2ak3	Q9Z2B5	1	21	Eukaryotic translation initiation factor 2-alpha kinase 3	
 EIF2AK3	rattus-norvegicus	Q9Z1Z1	Eif2ak3	Q9Z1Z1	3	27	Eukaryotic translation initiation factor 2-alpha kinase 3	
 EIF2AK4	human	Q9P2K8	EIF2AK4	Q9P2K8	25	217	eIF-2-alpha kinase GCN2 (EC 2.7.11.1) (Eukaryotic translatio	
-EIF2ALPHA	fly	FBgn0290109	eIF2alpha	P41374	9	161	eukaryotic translation initiation factor 2 subunit alpha	
+EIF2ALPHA	fly	FBgn0290109	eIF2alpha	P41374	9	157	eukaryotic translation initiation factor 2 subunit alpha	
 EIF2ALPHA	plasmodium-falciparum-36329	Q8IBH7	eIF2alpha	Q8IBH7	3	92	Eukaryotic translation initiation factor 2 subunit 1	
 EIF2A_HUMAN	human	Q9BY44	EIF2A	Q9BY44	17	222		
 EIF2B	arabidopsis-thaliana	Q41969	EIF2B	Q41969	16	248	Eukaryotic translation initiation factor 2 subunit beta	
-EIF2B	fly	FBgn0023512	eIF2Bepsilon	Q9W541	6	24	Translation initiation factor eIF2B subunit epsilon (eIF2B G	w
-EIF2B	fly	FBgn0024996	eIF2Bbeta	O76863	3	25	Translation initiation factor eIF2B subunit beta (eIF2B GDP-	w
-EIF2B	fly	FBgn0034029	eIF2Bgamma	A1ZA22	6	37	Translation initiation factor eIF2B subunit gamma (eIF2B GDP	w
-EIF2B	fly	FBgn0034858	eIF2Bdelta	Q9W1Q8	9	25	Translation initiation factor eIF2B subunit delta (eIF2B GDP	w
+EIF2B	fly	FBgn0023512	eIF2Bepsilon	Q9W541	3	17	Translation initiation factor eIF2B subunit epsilon (eIF2B G	w
+EIF2B	fly	FBgn0024996	eIF2Bbeta	O76863	3	22	Translation initiation factor eIF2B subunit beta (eIF2B GDP-	w
+EIF2B	fly	FBgn0034029	eIF2Bgamma	A1ZA22	4	29	Translation initiation factor eIF2B subunit gamma (eIF2B GDP	w
+EIF2B	fly	FBgn0034858	eIF2Bdelta	Q9W1Q8	9	19	Translation initiation factor eIF2B subunit delta (eIF2B GDP	w
 EIF2B	fly	FBgn0039726	eIF2Balpha	Q9VAD4	3	20	Translation initiation factor eIF2B subunit alpha (eIF2B GDP	w
 EIF2B	human	P20042	EIF2S2	P20042	37	359		
 EIF2B	human	P49770	EIF2B2	P49770	9	245	Translation initiation factor eIF2B subunit beta (S20I15) (S	w
@@ -228,14 +228,14 @@ EIF2B5	rattus-norvegicus	Q64350	Eif2b5	Q64350	4	12	Translation initiation factor
 EIF2BA	human	Q14232	EIF2B1	Q14232	9	178		
 EIF2BALPHA	fly	FBgn0039726	eIF2Balpha	Q9VAD4	3	20	Translation initiation factor eIF2B subunit alpha (eIF2B GDP	
 EIF2BB	human	P49770	EIF2B2	P49770	9	245		
-EIF2BBETA	fly	FBgn0024996	eIF2Bbeta	O76863	3	25	Translation initiation factor eIF2B subunit beta (eIF2B GDP-	
+EIF2BBETA	fly	FBgn0024996	eIF2Bbeta	O76863	3	22	Translation initiation factor eIF2B subunit beta (eIF2B GDP-	
 EIF2BD	human	Q9UI10	EIF2B4	Q9UI10	31	410		
-EIF2BDELTA	fly	FBgn0034858	eIF2Bdelta	Q9W1Q8	9	25	Translation initiation factor eIF2B subunit delta (eIF2B GDP	
+EIF2BDELTA	fly	FBgn0034858	eIF2Bdelta	Q9W1Q8	9	19	Translation initiation factor eIF2B subunit delta (eIF2B GDP	
 EIF2BE	human	Q13144	EIF2B5	Q13144	48	687		
-EIF2BEPSILON	fly	FBgn0023512	eIF2Bepsilon	Q9W541	6	24	Translation initiation factor eIF2B subunit epsilon (eIF2B G	
-EIF2BETA	fly	FBgn0004926	eIF2beta	P41375	24	196	Eukaryotic translation initiation factor 2 subunit 2 (Eukary	
-EIF2BGAMMA	fly	FBgn0034029	eIF2Bgamma	A1ZA22	6	37	Translation initiation factor eIF2B subunit gamma (eIF2B GDP	
-EIF2BGAMMA_291	fly	FBgn0034029	eIF2Bgamma	A1ZA22	6	37		
+EIF2BEPSILON	fly	FBgn0023512	eIF2Bepsilon	Q9W541	3	17	Translation initiation factor eIF2B subunit epsilon (eIF2B G	
+EIF2BETA	fly	FBgn0004926	eIF2beta	P41375	22	191	Eukaryotic translation initiation factor 2 subunit 2 (Eukary	
+EIF2BGAMMA	fly	FBgn0034029	eIF2Bgamma	A1ZA22	4	29	Translation initiation factor eIF2B subunit gamma (eIF2B GDP	
+EIF2BGAMMA_291	fly	FBgn0034029	eIF2Bgamma	A1ZA22	4	29		
 EIF2C	human	Q9H9G7	AGO3	Q9H9G7	16	240	Protein argonaute-3 (Argonaute3) (hAgo3) (EC 3.1.26.n2) (Arg	w
 EIF2C	human	Q9HCK5	AGO4	Q9HCK5	16	177	Protein argonaute-4 (Argonaute4) (hAgo4) (Argonaute RISC cat	w
 EIF2C	human	Q9UKV8	AGO2	Q9UKV8	54	653	Protein argonaute-2 (Argonaute2) (hAgo2) (EC 3.1.26.n2) (Arg	w
@@ -279,14 +279,14 @@ EIF3	human	Q14152	EIF3A	Q14152	42	508	Eukaryotic translation initiation factor 3
 EIF3	human	Q99613	EIF3C	Q99613	39	359	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	w
 EIF3	worm	Q94261	cif-1	Q94261	14	106	COP9/Signalosome and eIF3 complex-shared subunit 1	w
 EIF3A	dictyostelium-discoideum	Q86B20	eif3A	Q86B20	16	87	Eukaryotic translation initiation factor 3 subunit A	
-EIF3A	fly	FBgn0037249	eIF3a	Q9VN25	24	163	Eukaryotic translation initiation factor 3 subunit A (eIF3a)	w
-EIF3A	fly	FBgn0037249	eIF3a	Q9VN25	24	163	Eukaryotic translation initiation factor 3 subunit A (eIF3a)	w
+EIF3A	fly	FBgn0037249	eIF3a	Q9VN25	18	146	Eukaryotic translation initiation factor 3 subunit A (eIF3a)	w
+EIF3A	fly	FBgn0037249	eIF3a	Q9VN25	18	146	Eukaryotic translation initiation factor 3 subunit A (eIF3a)	w
 EIF3A	human	P56537	EIF6	P56537	43	507		
 EIF3A	human	Q14152	EIF3A	Q14152	42	508	Eukaryotic translation initiation factor 3 subunit A (eIF3a)	
 EIF3A	mus-musculus	P23116	Eif3a	P23116	15	142	Eukaryotic translation initiation factor 3 subunit A	
 EIF3A	rattus-norvegicus	Q1JU68	Eif3a	Q1JU68	15	225	Eukaryotic translation initiation factor 3 subunit A	
 EIF3A	zebrafish	Q6PCR7	eif3a	Q6PCR7	17	145	Eukaryotic translation initiation factor 3 subunit A	
-EIF3A_538	fly	FBgn0037249	eIF3a	Q9VN25	24	163		
+EIF3A_538	fly	FBgn0037249	eIF3a	Q9VN25	18	146		
 EIF3A_HUMAN	human	Q14152	EIF3A	Q14152	42	508		
 EIF3B	dictyostelium-discoideum	Q54QW1	eif3B	Q54QW1	9	98	Eukaryotic translation initiation factor 3 subunit B	
 EIF3B	fly	FBgn0034237	eIF3b	Q0E940	10	161	Eukaryotic translation initiation factor 3 subunit B (eIF3b)	w
@@ -298,8 +298,8 @@ EIF3B-2	arabidopsis-thaliana	Q8GUM1	EIF3B-2	Q8GUM1	13	287	Eukaryotic translation
 EIF3BA	zebrafish	X1WET9	eif3ba	X1WET9	11	154	Eukaryotic translation initiation factor 3 subunit B	
 EIF3B_HUMAN	human	P55884	EIF3B	P55884	46	462		
 EIF3C	dictyostelium-discoideum	Q54X97	eif3C	Q54X97	11	87	Eukaryotic translation initiation factor 3 subunit C	
-EIF3C	fly	FBgn0034258	eIF3c	A1ZAX1	14	138	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	w
-EIF3C	fly	FBgn0034258	eIF3c	A1ZAX1	14	138	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	w
+EIF3C	fly	FBgn0034258	eIF3c	A1ZAX1	13	133	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	w
+EIF3C	fly	FBgn0034258	eIF3c	A1ZAX1	13	133	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	w
 EIF3C	human	Q99613	EIF3C	Q99613	39	359	Eukaryotic translation initiation factor 3 subunit C (eIF3c)	
 EIF3C	mus-musculus	Q8R1B4	Eif3c	Q8R1B4	12	164	Eukaryotic translation initiation factor 3 subunit C	
 EIF3C	rattus-norvegicus	B5DFC8	Eif3c	B5DFC8	15	228	Eukaryotic translation initiation factor 3 subunit C	
@@ -311,14 +311,14 @@ EIF3D	human	O15371	EIF3D	O15371	22	412	Eukaryotic translation initiation factor 
 EIF3D	mus-musculus	O70194	Eif3d	O70194	7	165	Eukaryotic translation initiation factor 3 subunit D	
 EIF3D	rattus-norvegicus	Q6AYK8	Eif3d	Q6AYK8	8	223	Eukaryotic translation initiation factor 3 subunit D	
 EIF3D	zebrafish	Q6TH15	eif3d	Q6TH15	4	139	Eukaryotic translation initiation factor 3 subunit D	
-EIF3D-1	fly	FBgn0040227	eIF3d1	Q9VCK0	5	134	Eukaryotic translation initiation factor 3 subunit D-1 (eIF3	w
+EIF3D-1	fly	FBgn0040227	eIF3d1	Q9VCK0	5	125	Eukaryotic translation initiation factor 3 subunit D-1 (eIF3	w
 EIF3D-2	fly	FBgn0037994	eIF3d2	Q9VGC7	5	108	Eukaryotic translation initiation factor 3 subunit D-2 (eIF3	w
-EIF3D1	fly	FBgn0040227	eIF3d1	Q9VCK0	5	134	Eukaryotic translation initiation factor 3 subunit D-1 (eIF3	
+EIF3D1	fly	FBgn0040227	eIF3d1	Q9VCK0	5	125	Eukaryotic translation initiation factor 3 subunit D-1 (eIF3	
 EIF3D2	fly	FBgn0037994	eIF3d2	Q9VGC7	5	108	Eukaryotic translation initiation factor 3 subunit D-2 (eIF3	
 EIF3D_HUMAN	human	O15371	EIF3D	O15371	22	412		
 EIF3E	dictyostelium-discoideum	Q54CC5	eif3E	Q54CC5	8	89	Eukaryotic translation initiation factor 3 subunit E	
-EIF3E	fly	FBgn0025582	eIF3e	O77410	19	140	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
-EIF3E	fly	FBgn0025582	eIF3e	O77410	19	140	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
+EIF3E	fly	FBgn0025582	eIF3e	O77410	19	134	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
+EIF3E	fly	FBgn0025582	eIF3e	O77410	19	134	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	w
 EIF3E	human	P60228	EIF3E	P60228	60	418	Eukaryotic translation initiation factor 3 subunit E (eIF3e)	
 EIF3E	mus-musculus	P60229	Eif3e	P60229	28	162	Eukaryotic translation initiation factor 3 subunit E	
 EIF3E	rattus-norvegicus	Q641X8	Eif3e	Q641X8	21	190	Eukaryotic translation initiation factor 3 subunit E	
@@ -333,9 +333,9 @@ EIF3F	mus-musculus	Q9DCH4	Eif3f	Q9DCH4	16	152	Eukaryotic translation initiation 
 EIF3F	rattus-norvegicus	D4AC36	Eif3f	D4AC36	24	202	Eukaryotic translation initiation factor 3 subunit F	
 EIF3F	schizosaccharomyces-pombe	O43060	eif3f	O43060	17	96	Eukaryotic translation initiation factor 3 subunit F	
 EIF3F	zebrafish	A0A8M1NXK7	eif3f	A0A8M1NXK7	19	214	Eukaryotic translation initiation factor 3 subunit F	
-EIF3F-1	fly	FBgn0037270	eIF3f1	Q9VN50	16	128	Eukaryotic translation initiation factor 3 subunit F-1 (eIF3	w
-EIF3F1	fly	FBgn0037270	eIF3f1	Q9VN50	16	128	Eukaryotic translation initiation factor 3 subunit F-1 (eIF3	
-EIF3F1_175	fly	FBgn0037270	eIF3f1	Q9VN50	16	128		
+EIF3F-1	fly	FBgn0037270	eIF3f1	Q9VN50	15	122	Eukaryotic translation initiation factor 3 subunit F-1 (eIF3	w
+EIF3F1	fly	FBgn0037270	eIF3f1	Q9VN50	15	122	Eukaryotic translation initiation factor 3 subunit F-1 (eIF3	
+EIF3F1_175	fly	FBgn0037270	eIF3f1	Q9VN50	15	122		
 EIF3F2	fly	FBgn0033069	eIF3f2	H1UU98	11	104	Eukaryotic translation initiation factor 3 subunit F (eIF3f)	
 EIF3F_HUMAN	human	O00303	EIF3F	O00303	44	312		
 EIF3G	dictyostelium-discoideum	Q54WM4	eif3G	Q54WM4	8	87	Eukaryotic translation initiation factor 3 subunit G	
@@ -344,7 +344,7 @@ EIF3G	mus-musculus	Q9Z1D1	Eif3g	Q9Z1D1	22	153	Eukaryotic translation initiation 
 EIF3G	rattus-norvegicus	Q5RK09	Eif3g	Q5RK09	24	195	Eukaryotic translation initiation factor 3 subunit G	
 EIF3G	zebrafish	Q6DRC4	eif3g	Q6DRC4	15	140	Eukaryotic translation initiation factor 3 subunit G	
 EIF3G1	arabidopsis-thaliana	F4J6A1	EIF3G1	F4J6A1	31	253	Eukaryotic translation initiation factor 3 subunit G	
-EIF3G1	fly	FBgn0029629	eIF3g1	Q9W4X7	12	107	Eukaryotic translation initiation factor 3 subunit G-1 (Euka	
+EIF3G1	fly	FBgn0029629	eIF3g1	Q9W4X7	10	103	Eukaryotic translation initiation factor 3 subunit G-1 (Euka	
 EIF3G2	arabidopsis-thaliana	Q9FI86	EIF3G2	Q9FI86	26	248	Eukaryotic translation initiation factor 3 subunit G	
 EIF3G2	fly	FBgn0038796	eIF3g2	Q9VDM6	12	98	Eukaryotic translation initiation factor 3 subunit G-2 (Euka	
 EIF3G_HUMAN	human	O75821	EIF3G	O75821	45	287		
@@ -367,8 +367,8 @@ EIF3I	rattus-norvegicus	B0BNA7	Eif3i	B0BNA7	15	199	Eukaryotic translation initia
 EIF3I	zebrafish	Q7ZV55	eif3i	Q7ZV55	7	115	Eukaryotic translation initiation factor 3 subunit I	
 EIF3I_HUMAN	human	Q13347	EIF3I	Q13347	22	382		
 EIF3J	dictyostelium-discoideum	Q54KI0	eif3J	Q54KI0	5	82	Eukaryotic translation initiation factor 3 subunit J	
-EIF3J	fly	FBgn0027619	eIF3j	Q7K550	12	162	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	w
-EIF3J	fly	FBgn0027619	eIF3j	Q7K550	12	162	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	w
+EIF3J	fly	FBgn0027619	eIF3j	Q7K550	11	160	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	w
+EIF3J	fly	FBgn0027619	eIF3j	Q7K550	11	160	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	w
 EIF3J	human	O75822	EIF3J	O75822	23	219	Eukaryotic translation initiation factor 3 subunit J (eIF3j)	
 EIF3J	rattus-norvegicus	A0JPM9	Eif3j	A0JPM9	10	200	Eukaryotic translation initiation factor 3 subunit J	
 EIF3J1	mus-musculus	Q3UGC7	Eif3j1	Q3UGC7	8	105	Eukaryotic translation initiation factor 3 subunit J-A	
@@ -386,8 +386,8 @@ EIF3K	worm	Q9U367	CELE_T16G1.9	Q9U367	1	76	EIF3k	w
 EIF3K	zebrafish	Q567V6	eif3k	Q567V6	8	128	Eukaryotic translation initiation factor 3 subunit K	
 EIF3K_HUMAN	human	Q9UBQ5	EIF3K	Q9UBQ5	19	301		
 EIF3L	dictyostelium-discoideum	Q86LA2	eif3L	Q86LA2	5	85	Eukaryotic translation initiation factor 3 subunit L	
-EIF3L	fly	FBgn0036258	eIF3l	Q9VTU4	10	175	Eukaryotic translation initiation factor 3 subunit L (eIF3l)	w
-EIF3L	fly	FBgn0036258	eIF3l	Q9VTU4	10	175	Eukaryotic translation initiation factor 3 subunit L (eIF3l)	w
+EIF3L	fly	FBgn0036258	eIF3l	Q9VTU4	10	169	Eukaryotic translation initiation factor 3 subunit L (eIF3l)	w
+EIF3L	fly	FBgn0036258	eIF3l	Q9VTU4	10	169	Eukaryotic translation initiation factor 3 subunit L (eIF3l)	w
 EIF3L	human	Q9Y262	EIF3L	Q9Y262	15	346	Eukaryotic translation initiation factor 3 subunit L (eIF3l)	
 EIF3L	mus-musculus	Q8QZY1	Eif3l	Q8QZY1	7	157	Eukaryotic translation initiation factor 3 subunit L	
 EIF3L	rattus-norvegicus	G3V7G9	Eif3l	G3V7G9	8	211	Eukaryotic translation initiation factor 3 subunit L	
@@ -414,8 +414,8 @@ EIF3S6IP	human	Q9Y262	EIF3L	Q9Y262	15	346
 EIF3S7	human	O15371	EIF3D	O15371	22	412		
 EIF3S8	human	Q99613	EIF3C	Q99613	39	359		
 EIF3S9	human	P55884	EIF3B	P55884	46	462		
-EIF4A	fly	FBgn0001942	eIF4A	Q02748	14	206	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
-EIF4A	fly	FBgn0001942	eIF4A	Q02748	14	206	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
+EIF4A	fly	FBgn0001942	eIF4A	Q02748	14	204	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
+EIF4A	fly	FBgn0001942	eIF4A	Q02748	14	204	Eukaryotic initiation factor 4A (EC 3.6.4.13) (ATP-dependent	w
 EIF4A	human	P60842	EIF4A1	P60842	39	466		
 EIF4A	yeast	P10081	TIF1	P10081	10	159	ATP-dependent RNA helicase eIF4A	w
 EIF4A-1	human	P60842	EIF4A1	P60842	39	466	Eukaryotic initiation factor 4A-I (eIF-4A-I) (eIF4A-I) (EC 3	w
@@ -452,7 +452,7 @@ EIF4B3	arabidopsis-thaliana	Q9SZP8	EIF4B3	Q9SZP8	0	5	Eukaryotic translation init
 EIF4BA	zebrafish	A0A0R4IMF6	eif4ba	A0A0R4IMF6	13	159	Eukaryotic translation initiation factor 4B	
 EIF4C	human	P47813	EIF1AX	P47813	16	252		
 EIF4E	dictyostelium-discoideum	Q55FE0	eif4e	Q55FE0	5	52	Eukaryotic translation initiation factor 4E	
-EIF4E	fly	FBgn0052016	4E-T	Q8IH18	41	146	Eukaryotic translation initiation factor 4E transporter (4E-	w
+EIF4E	fly	FBgn0052016	4E-T	Q8IH18	34	134	Eukaryotic translation initiation factor 4E transporter (4E-	w
 EIF4E	human	O60573	EIF4E2	O60573	36	312	Eukaryotic translation initiation factor 4E type 2 (eIF-4E t	w
 EIF4E	human	P06730	EIF4E	P06730	26	353	Eukaryotic translation initiation factor 4E (eIF-4E) (eIF4E)	
 EIF4E	human	Q8N5X7	EIF4E3	Q8N5X7	17	245	Eukaryotic translation initiation factor 4E type 3 (eIF-4E t	w
@@ -461,13 +461,13 @@ EIF4E	mus-musculus	P63073	Eif4e	P63073	11	178	Eukaryotic translation initiation 
 EIF4E	oryza-sativa-subsp-japonica	P48599	eIF4E	P48599	25	304	Eukaryotic translation initiation factor 4E-1	
 EIF4E	rattus-norvegicus	P63074	Eif4e	P63074	6	170	Eukaryotic translation initiation factor 4E	
 EIF4E-3	human	Q8N5X7	EIF4E3	Q8N5X7	17	245	Eukaryotic translation initiation factor 4E type 3 (eIF-4E t	w
-EIF4E-BINDING	fly	FBgn0261560	Thor	Q9XZ56	19	128	Eukaryotic translation initiation factor 4E-binding protein 	w
+EIF4E-BINDING	fly	FBgn0261560	Thor	Q9XZ56	18	123	Eukaryotic translation initiation factor 4E-binding protein 	w
 EIF4E-BINDING	human	O60516	EIF4EBP3	O60516	6	38	Eukaryotic translation initiation factor 4E-binding protein 	w
 EIF4E-BINDING	human	Q13541	EIF4EBP1	Q13541	7	143	Eukaryotic translation initiation factor 4E-binding protein 	w
 EIF4E-BINDING	human	Q13542	EIF4EBP2	Q13542	5	70	Eukaryotic translation initiation factor 4E-binding protein 	w
 EIF4E-BINDING	human	Q8NEJ9	NGDN	Q8NEJ9	39	328	Neuroguidin (Centromere accumulated nuclear protein 1) (CANu	w
 EIF4E1	arabidopsis-thaliana	O23252	EIF4E1	O23252	14	159	Eukaryotic translation initiation factor 4E-1	
-EIF4E1	fly	FBgn0015218	eIF4E1	P48598	38	259	Eukaryotic translation initiation factor 4E1 (eIF-4F 25 kDa 	
+EIF4E1	fly	FBgn0015218	eIF4E1	P48598	37	256	Eukaryotic translation initiation factor 4E1 (eIF-4F 25 kDa 	
 EIF4E1	glycine-max	C6ZJZ3	eIF4E1	C6ZJZ3	9	314	Eukaryotic translation initiation factor 4E-1	
 EIF4E1	zea-mays	O81481	eIF4E1	O81481	5	184	Eukaryotic translation initiation factor 4E-1	
 EIF4E1B	human	A6NMX2	EIF4E1B	A6NMX2	15	133	Eukaryotic translation initiation factor 4E type 1B	
@@ -503,7 +503,7 @@ EIF4EBP3	human	O60516	EIF4EBP3	O60516	6	38	Eukaryotic translation initiation fac
 EIF4EBP3	mus-musculus	Q80VV3	Eif4ebp3	Q80VV3	3	6	Eukaryotic translation initiation factor 4E-binding protein 	
 EIF4EBP3	zebrafish	Q5U3D2	eif4ebp3	Q5U3D2	6	13	Eukaryotic translation initiation factor 4E-binding protein 	
 EIF4EBP3L	zebrafish	Q98TT6	eif4ebp3l	Q98TT6	5	5	Eukaryotic translation initiation factor 4E-binding protein 	
-EIF4EHP	fly	FBgn0053100	eIF4EHP	E1JIV5	4	29	Eukaryotic translation initiation factor 4E homologous prote	
+EIF4EHP	fly	FBgn0053100	eIF4EHP	E1JIV5	3	29	Eukaryotic translation initiation factor 4E homologous prote	
 EIF4EL1	human	P06730	EIF4E	P06730	26	353		
 EIF4EL3	human	O60573	EIF4E2	O60573	36	312		
 EIF4ENIF1	human	Q9NRA8	EIF4ENIF1	Q9NRA8	64	324	Eukaryotic translation initiation factor 4E transporter (4E-	
@@ -517,9 +517,9 @@ EIF4G	dictyostelium-discoideum	Q553R3	eif4g	Q553R3	11	41	Eukaryotic translation 
 EIF4G	human	O43432	EIF4G3	O43432	22	150	Eukaryotic translation initiation factor 4 gamma 3 (eIF-4-ga	w
 EIF4G	human	P78344	EIF4G2	P78344	19	179	Eukaryotic translation initiation factor 4 gamma 2 (eIF-4-ga	w
 EIF4G	human	Q04637	EIF4G1	Q04637	84	439		
-EIF4G1	fly	FBgn0023213	eIF4G1	A8DZ29	14	46	Eukaryotic translation initiation factor 4G1, isoform B	
+EIF4G1	fly	FBgn0023213	eIF4G1	A8DZ29	11	35	Eukaryotic translation initiation factor 4G1, isoform B	
 EIF4G1	human	Q04637	EIF4G1	Q04637	84	439	Eukaryotic translation initiation factor 4 gamma 1 (eIF-4-ga	
-EIF4G2	fly	FBgn0260634	eIF4G2	Q9VCH1	7	38	Eukaryotic translation initiation factor 4G2, isoform A (Euk	
+EIF4G2	fly	FBgn0260634	eIF4G2	Q9VCH1	5	24	Eukaryotic translation initiation factor 4G2, isoform A (Euk	
 EIF4G2	human	D3DQV9	EIF4G2	D3DQV9	12	109	Eukaryotic translation initiation factor 4 gamma 2	
 EIF4G2	human	P78344	EIF4G2	P78344	19	179	Eukaryotic translation initiation factor 4 gamma 2 (eIF-4-ga	
 EIF4G2	mus-musculus	Q62448	Eif4g2	Q62448	11	77	Eukaryotic translation initiation factor 4 gamma 2	
@@ -532,12 +532,12 @@ EIF4H	human	Q15056	EIF4H	Q15056	26	261	Eukaryotic translation initiation factor 
 EIF4H	mus-musculus	Q9WUK2	Eif4h	Q9WUK2	5	63	Eukaryotic translation initiation factor 4H	
 EIF4H	rattus-norvegicus	Q5XI72	Eif4h	Q5XI72	4	106	Eukaryotic translation initiation factor 4H	
 EIF4H	zebrafish	F1QYM4	eif4h	F1QYM4	6	161	Eukaryotic translation initiation factor 4H	
-EIF4H1	fly	FBgn0262734	eIF4H1	X2JC79	10	61	Eukaryotic translation initiation factor 4H	
-EIF4H1_149	fly	FBgn0262734	eIF4H1	X2JC79	10	61		
-EIF4H1_219	fly	FBgn0262734	eIF4H1	X2JC79	10	61		
+EIF4H1	fly	FBgn0262734	eIF4H1	X2JC79	6	46	Eukaryotic translation initiation factor 4H	
+EIF4H1_149	fly	FBgn0262734	eIF4H1	X2JC79	6	46		
+EIF4H1_219	fly	FBgn0262734	eIF4H1	X2JC79	6	46		
 EIF4H2	fly	FBgn0039797	eIF4H2	Q9VA45	4	36	Eukaryotic translation initiation factor 4H2, isoform A (Euk	
 EIF5	dictyostelium-discoideum	Q54LA1	eif5	Q54LA1	10	83	Eukaryotic translation initiation factor 5	
-EIF5	fly	FBgn0030719	eIF5	Q9VXK6	13	146	Eukaryotic translation initiation factor 5 (eIF-5)	
+EIF5	fly	FBgn0030719	eIF5	Q9VXK6	12	137	Eukaryotic translation initiation factor 5 (eIF-5)	
 EIF5	human	P55010	EIF5	P55010	30	302	Eukaryotic translation initiation factor 5 (eIF-5)	
 EIF5	mus-musculus	P59325	Eif5	P59325	12	145	Eukaryotic translation initiation factor 5	
 EIF5	rattus-norvegicus	Q07205	Eif5	Q07205	15	212	Eukaryotic translation initiation factor 5	
@@ -570,7 +570,7 @@ EIF5B	mus-musculus	Q05D44	Eif5b	Q05D44	9	290	Eukaryotic translation initiation f
 EIF5B	rattus-norvegicus	A0A0H2UHV4	Eif5b	A0A0H2UHV4	21	445	Eukaryotic translation initiation factor 5B	
 EIF5B	rattus-norvegicus	B2GUV7	Eif5b	B2GUV7	19	445	Eukaryotic translation initiation factor 5B	
 EIF5B1	arabidopsis-thaliana	F4I420	EIF5B1	F4I420	7	318	Eukaryotic translation initiation factor 5B	
-EIF5C	fly	FBgn0250753	kra	Q9VNE2	3	20	Protein krasavietz (Eukaryotic translation initiation factor	w
+EIF5C	fly	FBgn0250753	kra	Q9VNE2	1	18	Protein krasavietz (Eukaryotic translation initiation factor	w
 EIF6	dictyostelium-discoideum	Q551M2	eif6	Q551M2	4	142	Eukaryotic translation initiation factor 6	
 EIF6	dracunculus-medinensis	A0A0N4U5Z3	EIF6	A0A0N4U5Z3	6	152	Eukaryotic translation initiation factor 6	
 EIF6	fly	FBgn0034915	eIF6	P56538	14	185	Eukaryotic translation initiation factor 6 (eIF-6)	

@@ -1,6 +1,6 @@
 ADA	dictyostelium-discoideum	Q54KF3	ada	Q54KF3	0	1	Probable adenosine deaminase	
 ADA	escherichia-coli-83333	P06134	ada	P06134	0	3	Bifunctional transcriptional activator/DNA repair enzyme Ada	
-ADA	fly	FBgn0037661	Ada	Q9VHH7	0	14	Adenosine deaminase-like protein (EC 3.5.4.-)	
+ADA	fly	FBgn0037661	Ada	Q9VHH7	0	9	Adenosine deaminase-like protein (EC 3.5.4.-)	
 ADA	human	P00813	ADA	P00813	9	145	Adenosine deaminase (EC 3.5.4.4) (Adenosine aminohydrolase)	
 ADA	mus-musculus	P03958	Ada	P03958	0	18	Adenosine deaminase	
 ADA	plasmodium-falciparum-36329	Q8IJA9	ADA	Q8IJA9	0	1	Adenosine deaminase	
@@ -49,7 +49,7 @@ ADA2A-CONTAINING	fly	FBgn0052343	Atac3	M9NFF9	57	402	Ada2a-containing complex co
 ADA2A-CONTAINING	human	Q9H8E8	KAT14	Q9H8E8	27	183	Cysteine-rich protein 2-binding protein (CSRP2-binding prote	w
 ADA2A_HUMAN	human	P08913	ADRA2A	P08913	16	118		
 ADA2B	arabidopsis-thaliana	Q9ATB4	ADA2B	Q9ATB4	7	60	Transcriptional adapter ADA2b	
-ADA2B	fly	FBgn0037555	Ada2b	Q8I8V0	77	515	Transcriptional adapter 2B (dADA2b)	
+ADA2B	fly	FBgn0037555	Ada2b	Q8I8V0	76	514	Transcriptional adapter 2B (dADA2b)	
 ADA2B	human	Q86TJ2	TADA2B	Q86TJ2	83	492		
 ADA2B	zebrafish	F6NKG5	ada2b	F6NKG5	1	4	adenosine deaminase	
 ADA2B_HUMAN	human	P18089	ADRA2B	P18089	11	123		
@@ -150,7 +150,7 @@ ADAM-TS8	human	Q9UP79	ADAMTS8	Q9UP79	4	50	A disintegrin and metalloproteinase wi
 ADAM-TS9	human	Q9P2N4	ADAMTS9	Q9P2N4	14	69	A disintegrin and metalloproteinase with thrombospondin moti	w
 ADAM1	rattus-norvegicus	P70505	Adam1	P70505	0	5	Disintegrin and metalloproteinase domain-containing protein 	
 ADAM10	fly	FBgn0039688	Kul	Q9VAI2	151	2374	ADAM10 endopeptidase (EC 3.4.24.81)	w
-ADAM10	fly	FBgn0259984	kuz	Q9VJW9	69	2448	ADAM10 endopeptidase (EC 3.4.24.81)	w
+ADAM10	fly	FBgn0259984	kuz	Q9VJW9	68	2442	ADAM10 endopeptidase (EC 3.4.24.81)	w
 ADAM10	human	O14672	ADAM10	O14672	25	347	Disintegrin and metalloproteinase domain-containing protein 	
 ADAM10	mus-musculus	O35598	Adam10	O35598	7	68	Disintegrin and metalloproteinase domain-containing protein 	
 ADAM10	rattus-norvegicus	Q10743	Adam10	Q10743	8	69	Disintegrin and metalloproteinase domain-containing protein 	
@@ -345,11 +345,11 @@ ADAP2	mus-musculus	Q8R2V5	Adap2	Q8R2V5	1	3	Arf-GAP with dual PH domain-containin
 ADAP2	zebrafish	E9QE78	adap2	E9QE78	0	3	Arf-GAP with dual PH domain-containing protein 2 isoform X2	
 ADAP2_HUMAN	human	Q9NPF8	ADAP2	Q9NPF8	7	68		
 ADAPT78	human	P53805	RCAN1	P53805	7	84		
-ADAPTER	fly	FBgn0010583	dock	Q8IPW2	26	136	SH2/SH3 adapter protein dreadlocks	w
+ADAPTER	fly	FBgn0010583	dock	Q8IPW2	23	125	SH2/SH3 adapter protein dreadlocks	w
 ADAPTER	fly	FBgn0024811	Crk	Q9XYM0	30	112	Adapter molecule Crk	w
 ADAPTER	fly	FBgn0033380	Phax	A1Z7P3	3	14	Phosphorylated adapter RNA export protein (RNA U small nucle	w
-ADAPTER	fly	FBgn0033402	Myd88	Q7K105	13	71	LD20892p (MyD88 adapter protein) (Myd88, isoform A) (Myd88, 	w
-ADAPTER	fly	FBgn0037555	Ada2b	Q8I8V0	77	515	Transcriptional adapter 2B (dADA2b)	w
+ADAPTER	fly	FBgn0033402	Myd88	Q7K105	10	62	LD20892p (MyD88 adapter protein) (Myd88, isoform A) (Myd88, 	w
+ADAPTER	fly	FBgn0037555	Ada2b	Q8I8V0	76	514	Transcriptional adapter 2B (dADA2b)	w
 ADAPTER	fly	FBgn0038928	Fadd	Q9V3B4	10	117	Fas-associated death domain protein (Death domain-containing	w
 ADAPTER	fly	FBgn0051865	Ada1-1	Q8IP99	10	36	Transcriptional adapter 1 (Transcriptional adapter 1-like pr	w
 ADAPTER	fly	FBgn0051866	Ada1-2	Q8IPA1	11	39	Transcriptional adapter 1 (Transcriptional adapter 1-like pr	w
@@ -486,7 +486,7 @@ ADAPTER	zebrafish	Q6P7X5	kctd10	Q6P7X5	5	32	BTB/POZ domain-containing adapter fo
 ADAPTER	zebrafish	Q7SY21	tada3	Q7SY21	35	226	Transcriptional adapter 3	w
 ADAPTER	zebrafish	Q7ZUK7	waca	Q7ZUK7	8	72	WW domain-containing adapter protein with coiled-coil	w
 ADAPTER-LIKE	human	P58753	TIRAP	P58753	34	189	Toll/interleukin-1 receptor domain-containing adapter protei	w
-ADAPTIN	fly	FBgn0001087	g	P54362	16	40	AP-3 complex subunit delta (Delta adaptin subunit of AP-3) (	w
+ADAPTIN	fly	FBgn0001087	g	P54362	13	35	AP-3 complex subunit delta (Delta adaptin subunit of AP-3) (	w
 ADAPTIN	human	Q8NC96	NECAP1	Q8NC96	22	125	Adaptin ear-binding coat-associated protein 1 (NECAP endocyt	w
 ADAPTIN	human	Q9NVZ3	NECAP2	Q9NVZ3	27	103	Adaptin ear-binding coat-associated protein 2 (NECAP endocyt	w
 ADAPTIN	yeast	P38700	APM2	P38700	7	30	Adaptin medium chain homolog APM2	w
@@ -496,9 +496,9 @@ ADAPTIN-MU2	human	Q96CW1	AP2M1	Q96CW1	97	709	AP-2 complex subunit mu (AP-2 mu ch
 ADAPTINC2	worm	A8WFK3	C33F10.4	A8WFK3	1	55	Alpha_adaptinC2 domain-containing protein	w
 ADAPTIVE	human	Q9NX61	TMEM161A	Q9NX61	14	112	Transmembrane protein 161A (Adaptive response to oxidative s	w
 ADAPTOR	fly	FBgn0003008	or	Q9W1E8	5	32	Adaptor protein complex AP-3 small chain sigma3 (Orange) (RE	w
-ADAPTOR	fly	FBgn0024833	AP-1mu	O62531	9	100	Adaptor protein complex 1, mu subunit (Clathrin-associated a	w
+ADAPTOR	fly	FBgn0024833	AP-1mu	O62531	9	96	Adaptor protein complex 1, mu subunit (Clathrin-associated a	w
 ADAPTOR	fly	FBgn0026090	Lamtor5	O96824	12	73	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
-ADAPTOR	fly	FBgn0027363	Stam	Q9XTL2	326	1247	Jak pathway signal transduction adaptor molecule (LD02639p) 	w
+ADAPTOR	fly	FBgn0027363	Stam	Q9XTL2	326	1245	Jak pathway signal transduction adaptor molecule (LD02639p) 	w
 ADAPTOR	fly	FBgn0030891	Ada3	M9PHZ1	71	397	Transcriptional adaptor 3, isoform C	w
 ADAPTOR	fly	FBgn0032642	Lamtor3	Q9VJD2	7	53	Ragulator complex protein LAMTOR3 homolog (Late endosomal/ly	w
 ADAPTOR	fly	FBgn0032979	Clamp	Q9V9N4	36	417	Chromatin-linked adaptor for MSL proteins	w
@@ -506,7 +506,7 @@ ADAPTOR	fly	FBgn0034350	Lamtor2	Q9V8I2	6	48	Ragulator complex protein LAMTOR2 ho
 ADAPTOR	fly	FBgn0035469	Lamtor4	M9PBM4	14	112	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	w
 ADAPTOR	fly	FBgn0036932	Lamtor1	Q9VW73	18	129	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	w
 ADAPTOR	fly	FBgn0052406	PVRAP	Q9VRS2	3	12	PVR adaptor protein (RE37138p)	w
-ADAPTOR	fly	FBgn0263351	AP-2mu	O62530	30	282	Adaptor protein complex 2, mu subunit, isoform A (Adaptor pr	w
+ADAPTOR	fly	FBgn0263351	AP-2mu	O62530	29	275	Adaptor protein complex 2, mu subunit, isoform A (Adaptor pr	w
 ADAPTOR	human	O00189	AP4M1	O00189	32	146	AP-4 complex subunit mu-1 (AP-4 adaptor complex mu subunit) 	w
 ADAPTOR	human	O00203	AP3B1	O00203	45	303	AP-3 complex subunit beta-1 (Adaptor protein complex AP-3 su	w
 ADAPTOR	human	O15117	FYB1	O15117	61	252	FYN-binding protein 1 (Adhesion and degranulation promoting 	w
@@ -561,7 +561,7 @@ ADAPTOR	zebrafish	F1QSQ4	grapb	F1QSQ4	9	58	GRB2-related adaptor protein b	w
 ADAPTOR	zebrafish	F6NGQ6	dab2	F6NGQ6	3	27	DAB adaptor protein 2	w
 ADAPTOR	zebrafish	Q5XJP2	cradd	Q5XJP2	1	2	CASP2 and RIPK1 domain-containing adaptor with death domain	w
 ADAPTOR-ASSOCIATED	human	Q2M2I8	AAK1	Q2M2I8	64	217	AP2-associated protein kinase 1 (EC 2.7.11.1) (Adaptor-assoc	w
-ADAPTOR-RELATED	fly	FBgn0000330	cm	O76928	9	36	AP-3 complex subunit mu (Adaptor-related protein complex 3 s	w
+ADAPTOR-RELATED	fly	FBgn0000330	cm	O76928	9	34	AP-3 complex subunit mu (Adaptor-related protein complex 3 s	w
 ADAPTOR-RELATED	human	O00189	AP4M1	O00189	32	146	AP-4 complex subunit mu-1 (AP-4 adaptor complex mu subunit) 	w
 ADAPTOR-RELATED	human	O00203	AP3B1	O00203	45	303	AP-3 complex subunit beta-1 (Adaptor protein complex AP-3 su	w
 ADAPTOR-RELATED	human	O14617	AP3D1	O14617	71	304	AP-3 complex subunit delta-1 (AP-3 complex subunit delta) (A	w
@@ -617,7 +617,7 @@ ADAT1	fly	FBgn0028658	Adat1	Q9V3R6	0	9	tRNA-specific adenosine deaminase 1 (EC 3
 ADAT1	human	Q9BUB4	ADAT1	Q9BUB4	0	50	tRNA-specific adenosine deaminase 1 (hADAT1) (EC 3.5.4.34) (	
 ADAT1	mus-musculus	Q9JHI2	Adat1	Q9JHI2	0	2	tRNA-specific adenosine deaminase 1	
 ADAT1_HUMAN	human	Q9BUB4	ADAT1	Q9BUB4	0	50		
-ADAT2	fly	FBgn0034360	CG10927	Q7K157	4	23	tRNA-specific adenosine deaminase 2 (Deaminase domain-contai	w
+ADAT2	fly	FBgn0034360	CG10927	Q7K157	3	22	tRNA-specific adenosine deaminase 2 (Deaminase domain-contai	w
 ADAT2	human	Q7Z6V5	ADAT2	Q7Z6V5	11	170	tRNA-specific adenosine-34 deaminase catalytic subunit ADAT2	
 ADAT2	mus-musculus	Q6P6J0	Adat2	Q6P6J0	1	6	tRNA-specific adenosine deaminase 2	
 ADAT2	rattus-norvegicus	M0RA73	Adat2	M0RA73	0	5	Adenosine deaminase, tRNA-specific 2	

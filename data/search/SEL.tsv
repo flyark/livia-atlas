@@ -98,7 +98,7 @@ SELENBP1	rattus-norvegicus	Q8VIF7	Selenbp1	Q8VIF7	0	8	Methanethiol oxidase
 SELENBP1	zebrafish	Q6PHD9	selenbp1	Q6PHD9	0	7	Methanethiol oxidase	
 SELENBP2	mus-musculus	Q63836	Selenbp2	Q63836	1	15	Selenium-binding protein 2	
 SELENIDE	fly	FBgn0032224	Sps2	Q9VKY8	0	6	Selenide, water dikinase 2 (EC 2.7.9.3) (Selenium donor prot	w
-SELENIDE	fly	FBgn0261270	Sps1	O18373	2	90	Inactive selenide, water dikinase-like protein (Protein patu	w
+SELENIDE	fly	FBgn0261270	Sps1	O18373	2	87	Inactive selenide, water dikinase-like protein (Protein patu	w
 SELENIDE	human	P49903	SEPHS1	P49903	5	113	Zincore component SEPHS1 (Selenide, water dikinase 1) (EC 2.	w
 SELENIDE	human	Q99611	SEPHS2	Q99611	7	108	Selenide, water dikinase 2 (EC 2.7.9.3) (Selenium donor prot	w
 SELENIDE	worm	O62461	seld-1	O62461	0	6	Probable selenide, water dikinase	w
@@ -122,7 +122,7 @@ SELENOCYSTEINE	worm	Q19434	scly-1	Q19434	0	13	Selenocysteine lyase	w
 SELENOCYSTEINE	zebrafish	A8WFT4	scly	A8WFT4	0	25	Selenocysteine lyase	w
 SELENOCYSTEINE	zebrafish	Q4KM14	trnau1apl	Q4KM14	4	141	tRNA selenocysteine 1-associated protein 1-like	w
 SELENOCYSTEINE	zebrafish	Q503H1	trnau1ap	Q503H1	2	141	tRNA selenocysteine 1-associated protein 1	w
-SELENOCYSTEINE-ASSOCIATED	fly	FBgn0031607	Secp43	Q8SXG7	10	144	tRNA selenocysteine-associated protein 1	w
+SELENOCYSTEINE-ASSOCIATED	fly	FBgn0031607	Secp43	Q8SXG7	10	142	tRNA selenocysteine-associated protein 1	w
 SELENOCYSTEINE-ASSOCIATED	human	Q9NX07	TRNAU1AP	Q9NX07	11	138	tRNA selenocysteine 1-associated protein 1 (SECp43) (tRNA se	w
 SELENOCYSTEINE-SPECIFIC	fly	FBgn0034627	eEFSec	Q9W2H0	3	156	Eukaryotic translation elongation factor, selenocysteine-spe	w
 SELENOCYSTEINE-SPECIFIC	human	P57772	EEFSEC	P57772	17	248	Selenocysteine-specific elongation factor (EC 3.6.5.-) (Elon	w
@@ -139,14 +139,14 @@ SELENON	rattus-norvegicus	F1LTZ2	Selenon	F1LTZ2	0	3	Selenoprotein N
 SELENOO	human	Q9BVL4	SELENOO	Q9BVL4	3	67	Protein adenylyltransferase SelO, mitochondrial (EC 2.7.7.-)	
 SELENOP	human	P49908	SELENOP	P49908	22	142	Selenoprotein P (SeP)	
 SELENOPHOSPHATE	fly	FBgn0032224	Sps2	Q9VKY8	0	6	Selenide, water dikinase 2 (EC 2.7.9.3) (Selenium donor prot	w
-SELENOPHOSPHATE	fly	FBgn0261270	Sps1	O18373	2	90	Inactive selenide, water dikinase-like protein (Protein patu	w
+SELENOPHOSPHATE	fly	FBgn0261270	Sps1	O18373	2	87	Inactive selenide, water dikinase-like protein (Protein patu	w
 SELENOPHOSPHATE	human	P49903	SEPHS1	P49903	5	113	Zincore component SEPHS1 (Selenide, water dikinase 1) (EC 2.	w
 SELENOPHOSPHATE	human	Q99611	SEPHS2	Q99611	7	108	Selenide, water dikinase 2 (EC 2.7.9.3) (Selenium donor prot	w
 SELENOPROTEIN	fly	FBgn0030350	SelG	Q7Z2C4	1	15	Glycine-rich selenoprotein (G-rich selenoprotein) (dSelG)	w
 SELENOPROTEIN	fly	FBgn0030501	BthD	Q9VYB0	34	284	Selenoprotein BthD (dSelM)	w
 SELENOPROTEIN	fly	FBgn0031670	SelT	Q9VMV6	1	31	Thioredoxin reductase-like selenoprotein T homolog CG3887 (E	w
 SELENOPROTEIN	fly	FBgn0036745	CG7484	Q9VVJ7	35	252	Selenoprotein F	w
-SELENOPROTEIN	fly	FBgn0267376	SelR	Q8INK9	6	66	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	w
+SELENOPROTEIN	fly	FBgn0267376	SelR	Q8INK9	4	49	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	w
 SELENOPROTEIN	human	O60613	SELENOF	O60613	2	58	Selenoprotein F (15 kDa selenoprotein)	w
 SELENOPROTEIN	human	P49908	SELENOP	P49908	22	142	Selenoprotein P (SeP)	w
 SELENOPROTEIN	human	P59797	SELENOV	P59797	2	23	Selenoprotein V (SelV)	w
@@ -195,7 +195,7 @@ SELPLG	mus-musculus	Q62170	Selplg	Q62170	0	35	P-selectin glycoprotein ligand 1
 SELPLG	rattus-norvegicus	F6T9E7	Selplg	F6T9E7	0	46	Selectin P ligand	
 SELPLG	zebrafish	G4WJE8	selplg	G4WJE8	0	4	P-selectin glycoprotein ligand 1 precursor	
 SELPL_HUMAN	human	Q14242	SELPLG	Q14242	58	313		
-SELR	fly	FBgn0267376	SelR	Q8INK9	6	66	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	
+SELR	fly	FBgn0267376	SelR	Q8INK9	4	49	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	
 SELRC1	human	Q96BR5	COA7	Q96BR5	44	187		
 SELS	human	Q9BQE4	SELENOS	Q9BQE4	7	63		
 SELS_HUMAN	human	Q9BQE4	SELENOS	Q9BQE4	7	63		
