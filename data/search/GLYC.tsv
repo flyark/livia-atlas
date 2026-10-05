@@ -1,4 +1,4 @@
-GLYC	human	P16442	ABO	P16442	4	38	Histo-blood group ABO system transferase (Fucosylglycoprotei	w
+GLYC	human	P16442	ABO	P16442	3	38	Histo-blood group ABO system transferase (Fucosylglycoprotei	w
 GLYC	human	Q8NAT1	POMGNT2	Q8NAT1	5	131	Protein O-linked-mannose beta-1,4-N-acetylglucosaminyltransf	w
 GLYC	human	Q96DW6	SLC25A38	Q96DW6	0	66	Mitochondrial glycine transporter (Appoptosin) (Mitochondria	w
 GLYCAM-1	human	Q8IVK1	GLYCAM1	Q8IVK1	0	6	Putative glycosylation-dependent cell adhesion molecule 1 (G	w
@@ -18,12 +18,12 @@ GLYCAN	fly	FBgn0266438	PIG-Z	Q8MT80	0	7	GPI mannosyltransferase 4 (EC 2.4.1.-) (
 GLYCAN	worm	Q19518	pigt-1	Q19518	4	6	Phosphatidylinositol glycan, class T	w
 GLYCAN	zebrafish	Q6P0J9	pigf	Q6P0J9	2	10	Phosphatidylinositol glycan anchor biosynthesis, class F	w
 GLYCATION	human	Q15109	AGER	Q15109	17	185	Advanced glycation end product-specific receptor (Advanced g	w
-GLYCERALDEHYDE	human	O14556	GAPDHS	O14556	37	418	Glyceraldehyde-3-phosphate dehydrogenase, testis-specific (E	w
+GLYCERALDEHYDE	human	O14556	GAPDHS	O14556	30	418	Glyceraldehyde-3-phosphate dehydrogenase, testis-specific (E	w
 GLYCERALDEHYDE-3-PHOSPHATE	fly	FBgn0001091	Gapdh1	P07486	4	198	Glyceraldehyde-3-phosphate dehydrogenase 1 (EC 1.2.1.12) (Gl	w
 GLYCERALDEHYDE-3-PHOSPHATE	fly	FBgn0001092	Gapdh2	P07487	5	266	Glyceraldehyde-3-phosphate dehydrogenase 2 (EC 1.2.1.12) (Gl	w
 GLYCERALDEHYDE-3-PHOSPHATE	fly	FBgn0034173	Gapdh3	Q7JY07	9	163	Glyceraldehyde-3-phosphate dehydrogenase (EC 1.2.1.12)	w
-GLYCERALDEHYDE-3-PHOSPHATE	human	O14556	GAPDHS	O14556	37	418	Glyceraldehyde-3-phosphate dehydrogenase, testis-specific (E	w
-GLYCERALDEHYDE-3-PHOSPHATE	human	P04406	GAPDH	P04406	38	1881	Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) (EC 1.2.1.1	w
+GLYCERALDEHYDE-3-PHOSPHATE	human	O14556	GAPDHS	O14556	30	418	Glyceraldehyde-3-phosphate dehydrogenase, testis-specific (E	w
+GLYCERALDEHYDE-3-PHOSPHATE	human	P04406	GAPDH	P04406	25	1881	Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) (EC 1.2.1.1	w
 GLYCERALDEHYDE-3-PHOSPHATE	worm	P04970	gpd-1	P04970	3	87	Glyceraldehyde-3-phosphate dehydrogenase 1	w
 GLYCERALDEHYDE-3-PHOSPHATE	worm	P17329	gpd-2	P17329	3	72	Glyceraldehyde-3-phosphate dehydrogenase 2	w
 GLYCERALDEHYDE-3-PHOSPHATE	worm	P17330	gpd-3	P17330	3	80	Glyceraldehyde-3-phosphate dehydrogenase 3	w
@@ -34,9 +34,9 @@ GLYCERALDEHYDE-3-PHOSPHATE	yeast	P00360	TDH1	P00360	3	127	Glyceraldehyde-3-phosp
 GLYCERALDEHYDE-3-PHOSPHATE	zebrafish	Q5MJ86	gapdh-2	Q5MJ86	1	189	Glyceraldehyde-3-phosphate dehydrogenase 2	w
 GLYCERALDEHYDE-3-PHOSPHATE	zebrafish	Q5XJ10	gapdh	Q5XJ10	1	191	Glyceraldehyde-3-phosphate dehydrogenase	w
 GLYCERATE	fly	FBgn0031428	Glyctk	Q9VQC4	0	28	Glycerate kinase (EC 2.7.1.31)	w
-GLYCERATE	human	Q8IVS8	GLYCTK	Q8IVS8	4	66	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	w
+GLYCERATE	human	Q8IVS8	GLYCTK	Q8IVS8	3	66	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	w
 GLYCERATE	zebrafish	Q08BL7	glyctk	Q08BL7	0	1	Glycerate kinase	w
-GLYCEROKINASE	human	P32189	GK	P32189	8	147	Glycerol kinase (Glycerokinase) (EC 2.7.1.30) (ATP:glycerol 	w
+GLYCEROKINASE	human	P32189	GK	P32189	7	147	Glycerol kinase (Glycerokinase) (EC 2.7.1.30) (ATP:glycerol 	w
 GLYCEROKINASE	human	Q14409	GK3	Q14409	5	60	Glycerol kinase 3 (GK 3) (Glycerokinase 3) (EC 2.7.1.30) (AT	w
 GLYCEROKINASE	human	Q14410	GK2	Q14410	4	79	Glycerol kinase 2 (GK 2) (Glycerokinase 2) (EC 2.7.1.30) (AT	w
 GLYCEROKINASE	human	Q6ZS86	GK5	Q6ZS86	3	56	Glycerol kinase 5 (GK 5) (Glycerokinase 5) (EC 2.7.1.30) (AT	w
@@ -46,11 +46,11 @@ GLYCEROL	fly	FBgn0033673	CG8298	Q7JY99	5	30	glycerol kinase (EC 2.7.1.30) (ATP:g
 GLYCEROL	fly	FBgn0035266	Gk2	Q9W095	4	42	glycerol kinase (EC 2.7.1.30)	w
 GLYCEROL	fly	FBgn0035392	CG1271	Q9VZV9	0	26	Putative glycerol kinase 5 (EC 2.7.1.30) (ATP:glycerol 3-pho	w
 GLYCEROL	fly	FBgn0085390	Dgk	Q01583	0	2	Diacyl glycerol kinase	w
-GLYCEROL	human	P32189	GK	P32189	8	147	Glycerol kinase (Glycerokinase) (EC 2.7.1.30) (ATP:glycerol 	w
+GLYCEROL	human	P32189	GK	P32189	7	147	Glycerol kinase (Glycerokinase) (EC 2.7.1.30) (ATP:glycerol 	w
 GLYCEROL	human	Q14409	GK3	Q14409	5	60	Glycerol kinase 3 (GK 3) (Glycerokinase 3) (EC 2.7.1.30) (AT	w
 GLYCEROL	human	Q14410	GK2	Q14410	4	79	Glycerol kinase 2 (GK 2) (Glycerokinase 2) (EC 2.7.1.30) (AT	w
 GLYCEROL	human	Q6ZS86	GK5	Q6ZS86	3	56	Glycerol kinase 5 (GK 5) (Glycerokinase 5) (EC 2.7.1.30) (AT	w
-GLYCEROL	human	Q9HCP6	HHATL	Q9HCP6	4	58	Protein-cysteine N-palmitoyltransferase HHAT-like protein (G	w
+GLYCEROL	human	Q9HCP6	HHATL	Q9HCP6	2	58	Protein-cysteine N-palmitoyltransferase HHAT-like protein (G	w
 GLYCEROL	worm	G5EE59	CELE_M79.2	G5EE59	0	2	Phospholipid/glycerol acyltransferase domain-containing prot	w
 GLYCEROL	worm	H2KZG4	C55B6.1	H2KZG4	0	20	Glycerol kinase	w
 GLYCEROL	worm	O01882	acl-14	O01882	1	7	Phospholipid/glycerol acyltransferase domain-containing prot	w
@@ -72,7 +72,7 @@ GLYCEROL	zebrafish	A0A8M1NFS2	zgc:172295	A0A8M1NFS2	0	51	glycerol kinase	w
 GLYCEROL	zebrafish	A0JPE9	gk5	A0JPE9	0	51	Glycerol kinase 5	w
 GLYCEROL-1-PHOSPHATE	yeast	P40106	GPP2	P40106	0	26	Glycerol-1-phosphate phosphohydrolase 2	w
 GLYCEROL-1-PHOSPHATE	yeast	P41277	GPP1	P41277	0	53	Glycerol-1-phosphate phosphohydrolase 1	w
-GLYCEROL-3	human	Q86UL3	GPAT4	Q86UL3	11	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
+GLYCEROL-3	human	Q86UL3	GPAT4	Q86UL3	10	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
 GLYCEROL-3-PHOSPHATE	fly	FBgn0001128	Gpdh1	B5RIM9	5	178	Glycerol-3-phosphate dehydrogenase [NAD(+)] (EC 1.1.1.8)	w
 GLYCEROL-3-PHOSPHATE	fly	FBgn0022160	Gpo1	Q7K569	4	53	Glycerol-3-phosphate dehydrogenase (EC 1.1.5.3)	w
 GLYCEROL-3-PHOSPHATE	fly	FBgn0028848	Gpo3	Q7KTA9	2	7	Glycerol-3-phosphate dehydrogenase (EC 1.1.5.3)	w
@@ -83,15 +83,15 @@ GLYCEROL-3-PHOSPHATE	fly	FBgn0036760	CG5567	Q9VVL5	2	7	Glycerol-3-phosphate phos
 GLYCEROL-3-PHOSPHATE	fly	FBgn0052487	CG32487	Q9VZW4	0	1	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
 GLYCEROL-3-PHOSPHATE	fly	FBgn0052488	CG32488	Q8SXC9	0	1	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
 GLYCEROL-3-PHOSPHATE	fly	FBgn0263048	Gpdh3	Q8IN06	10	95	Glycerol-3-phosphate dehydrogenase [NAD(+)] (EC 1.1.1.8)	w
-GLYCEROL-3-PHOSPHATE	human	A6NDG6	PGP	A6NDG6	7	79	Phosphoglycolate phosphatase (EC 3.1.3.18) (Aspartate-based 	w
+GLYCEROL-3-PHOSPHATE	human	A6NDG6	PGP	A6NDG6	5	79	Phosphoglycolate phosphatase (EC 3.1.3.18) (Aspartate-based 	w
 GLYCEROL-3-PHOSPHATE	human	P21695	GPD1	P21695	5	445	Glycerol-3-phosphate dehydrogenase [NAD(+)], cytoplasmic (GP	w
-GLYCEROL-3-PHOSPHATE	human	P43304	GPD2	P43304	4	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	w
+GLYCEROL-3-PHOSPHATE	human	P43304	GPD2	P43304	2	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	w
 GLYCEROL-3-PHOSPHATE	human	P57057	SLC37A1	P57057	3	55	Glucose-6-phosphate exchanger SLC37A1 (Glycerol-3-phosphate 	w
-GLYCEROL-3-PHOSPHATE	human	Q53EU6	GPAT3	Q53EU6	13	208	Glycerol-3-phosphate acyltransferase 3 (GPAT-3) (EC 2.3.1.15	w
-GLYCEROL-3-PHOSPHATE	human	Q6NUI2	GPAT2	Q6NUI2	3	38	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	w
-GLYCEROL-3-PHOSPHATE	human	Q86UL3	GPAT4	Q86UL3	11	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
+GLYCEROL-3-PHOSPHATE	human	Q53EU6	GPAT3	Q53EU6	8	208	Glycerol-3-phosphate acyltransferase 3 (GPAT-3) (EC 2.3.1.15	w
+GLYCEROL-3-PHOSPHATE	human	Q6NUI2	GPAT2	Q6NUI2	2	38	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	w
+GLYCEROL-3-PHOSPHATE	human	Q86UL3	GPAT4	Q86UL3	10	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
 GLYCEROL-3-PHOSPHATE	human	Q8N335	GPD1L	Q8N335	4	449	Glycerol-3-phosphate dehydrogenase 1-like protein (GPD1-L) (	w
-GLYCEROL-3-PHOSPHATE	human	Q9HCL2	GPAM	Q9HCL2	4	62	Glycerol-3-phosphate acyltransferase 1, mitochondrial (GPAT-	w
+GLYCEROL-3-PHOSPHATE	human	Q9HCL2	GPAM	Q9HCL2	3	62	Glycerol-3-phosphate acyltransferase 1, mitochondrial (GPAT-	w
 GLYCEROL-3-PHOSPHATE	worm	P34517	gpdh-2	P34517	1	13	Probable glycerol-3-phosphate dehydrogenase 2	w
 GLYCEROL-3-PHOSPHATE	worm	P90795	gpdh-3	P90795	1	12	Probable glycerol-3-phosphate dehydrogenase, mitochondrial	w
 GLYCEROL-3-PHOSPHATE	worm	Q18645	C45E5.1	Q18645	0	7	Glycerol-3-phosphate phosphatase	w
@@ -114,10 +114,10 @@ GLYCEROL-3-PHOSPHATE	zebrafish	Q5XIZ6	gpd1l	Q5XIZ6	2	4	Glycerol-3-phosphate dehy
 GLYCEROL-3-PHOSPHATE	zebrafish	Q6DG38	gpat3	Q6DG38	2	5	Glycerol-3-phosphate acyltransferase 3	w
 GLYCEROL-3-PHOSPHATE	zebrafish	Q7T3H5	gpd1c	Q7T3H5	2	4	Glycerol-3-phosphate dehydrogenase	w
 GLYCERONE-PHOSPHATE	fly	FBgn0040212	Gnpat	A0A0B4KHK0	2	11	Dihydroxyacetone phosphate acyltransferase (EC 2.3.1.42) (Gl	w
-GLYCERONE-PHOSPHATE	human	O15228	GNPAT	O15228	9	115	Dihydroxyacetone phosphate acyltransferase (DAP-AT) (DAPAT) 	w
-GLYCEROPHOSPHATE	human	P43304	GPD2	P43304	4	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	w
-GLYCEROPHOSPHOCHOLINE	human	Q6UWR7	ENPP6	Q6UWR7	8	83	Glycerophosphocholine cholinephosphodiesterase ENPP6 (GPC-Cp	w
-GLYCEROPHOSPHOCHOLINE	human	Q8WTR4	GDPD5	Q8WTR4	7	134	Glycerophosphodiester phosphodiesterase 2 (EC 3.1.4.-) (Glyc	w
+GLYCERONE-PHOSPHATE	human	O15228	GNPAT	O15228	4	115	Dihydroxyacetone phosphate acyltransferase (DAP-AT) (DAPAT) 	w
+GLYCEROPHOSPHATE	human	P43304	GPD2	P43304	2	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	w
+GLYCEROPHOSPHOCHOLINE	human	Q6UWR7	ENPP6	Q6UWR7	7	83	Glycerophosphocholine cholinephosphodiesterase ENPP6 (GPC-Cp	w
+GLYCEROPHOSPHOCHOLINE	human	Q8WTR4	GDPD5	Q8WTR4	6	134	Glycerophosphodiester phosphodiesterase 2 (EC 3.1.4.-) (Glyc	w
 GLYCEROPHOSPHOCHOLINE	human	Q9NPB8	GPCPD1	Q9NPB8	4	59	Glycerophosphocholine phosphodiesterase GPCPD1 (EC 3.1.4.2) 	w
 GLYCEROPHOSPHOCHOLINE	worm	O45359	CELE_F13H10.5	O45359	1	12	glycerophosphocholine cholinephosphodiesterase	w
 GLYCEROPHOSPHOCHOLINE	worm	Q10003	gpcp-2	Q10003	1	9	Putative glycerophosphocholine phosphodiesterase GPCPD1 homo	w
@@ -127,12 +127,12 @@ GLYCEROPHOSPHOCHOLINE	yeast	P48236	GPC1	P48236	0	14	Glycerophosphocholine acyltr
 GLYCEROPHOSPHOCHOLINE	yeast	Q02979	GDE1	Q02979	3	59	Glycerophosphocholine phosphodiesterase GDE1	w
 GLYCEROPHOSPHOCHOLINE	zebrafish	Q1LVM1	gpcpd1	Q1LVM1	0	11	Glycerophosphocholine phosphodiesterase 1	w
 GLYCEROPHOSPHOCHOLINE	zebrafish	Q5BKW7	enpp6	Q5BKW7	0	1	Glycerophosphocholine cholinephosphodiesterase ENPP6	w
-GLYCEROPHOSPHODIESTER	human	Q6UWR7	ENPP6	Q6UWR7	8	83	Glycerophosphocholine cholinephosphodiesterase ENPP6 (GPC-Cp	w
-GLYCEROPHOSPHODIESTER	human	Q6W3E5	GDPD4	Q6W3E5	4	9	Glycerophosphodiester phosphodiesterase 6 (EC 3.1.4.-) (Glyc	w
-GLYCEROPHOSPHODIESTER	human	Q7L5L3	GDPD3	Q7L5L3	19	184	Lysophospholipase D GDPD3 (EC 3.1.4.-) (Glycerophosphodieste	w
-GLYCEROPHOSPHODIESTER	human	Q8N9F7	GDPD1	Q8N9F7	5	61	Lysophospholipase D GDPD1 (EC 3.1.4.-) (Glycerophosphodieste	w
-GLYCEROPHOSPHODIESTER	human	Q8WTR4	GDPD5	Q8WTR4	7	134	Glycerophosphodiester phosphodiesterase 2 (EC 3.1.4.-) (Glyc	w
-GLYCEROPHOSPHODIESTER	human	Q9HCC8	GDPD2	Q9HCC8	3	53	Glycerophosphodiester phosphodiesterase 3 (EC 3.1.4.-) (Glyc	w
+GLYCEROPHOSPHODIESTER	human	Q6UWR7	ENPP6	Q6UWR7	7	83	Glycerophosphocholine cholinephosphodiesterase ENPP6 (GPC-Cp	w
+GLYCEROPHOSPHODIESTER	human	Q6W3E5	GDPD4	Q6W3E5	3	9	Glycerophosphodiester phosphodiesterase 6 (EC 3.1.4.-) (Glyc	w
+GLYCEROPHOSPHODIESTER	human	Q7L5L3	GDPD3	Q7L5L3	13	184	Lysophospholipase D GDPD3 (EC 3.1.4.-) (Glycerophosphodieste	w
+GLYCEROPHOSPHODIESTER	human	Q8N9F7	GDPD1	Q8N9F7	3	61	Lysophospholipase D GDPD1 (EC 3.1.4.-) (Glycerophosphodieste	w
+GLYCEROPHOSPHODIESTER	human	Q8WTR4	GDPD5	Q8WTR4	6	134	Glycerophosphodiester phosphodiesterase 2 (EC 3.1.4.-) (Glyc	w
+GLYCEROPHOSPHODIESTER	human	Q9HCC8	GDPD2	Q9HCC8	2	53	Glycerophosphodiester phosphodiesterase 3 (EC 3.1.4.-) (Glyc	w
 GLYCEROPHOSPHODIESTER	human	Q9NPB8	GPCPD1	Q9NPB8	4	59	Glycerophosphocholine phosphodiesterase GPCPD1 (EC 3.1.4.2) 	w
 GLYCEROPHOSPHODIESTER	human	Q9NZC3	GDE1	Q9NZC3	8	112	Glycerophosphodiester phosphodiesterase 1 (Glycerophosphoino	w
 GLYCEROPHOSPHODIESTER	zebrafish	A0A8M2B4R1	gdpd5b	A0A8M2B4R1	0	1	Glycerophosphodiester phosphodiesterase domain-containing 5b	w
@@ -140,13 +140,13 @@ GLYCEROPHOSPHODIESTER	zebrafish	E9QGJ5	gdpd2	E9QGJ5	0	1	Glycerophosphodiester ph
 GLYCEROPHOSPHODIESTER	zebrafish	Q68EJ8	gdpd1	Q68EJ8	0	4	Glycerophosphodiester phosphodiesterase domain-containing 1	w
 GLYCEROPHOSPHODIESTER	zebrafish	Q6P2T3	gdpd3a	Q6P2T3	0	4	Glycerophosphodiester phosphodiesterase domain containing 3	w
 GLYCEROPHOSPHODIESTERASE	human	Q9NZC3	GDE1	Q9NZC3	8	112	Glycerophosphodiester phosphodiesterase 1 (Glycerophosphoino	w
-GLYCEROPHOSPHOINOSITOL	human	Q9HCC8	GDPD2	Q9HCC8	3	53	Glycerophosphodiester phosphodiesterase 3 (EC 3.1.4.-) (Glyc	w
+GLYCEROPHOSPHOINOSITOL	human	Q9HCC8	GDPD2	Q9HCC8	2	53	Glycerophosphodiester phosphodiesterase 3 (EC 3.1.4.-) (Glyc	w
 GLYCEROPHOSPHOINOSITOL	human	Q9NZC3	GDE1	Q9NZC3	8	112	Glycerophosphodiester phosphodiesterase 1 (Glycerophosphoino	w
 GLYCEROPHOSPHOINOSITOL	yeast	P25346	GIT1	P25346	0	1	Glycerophosphoinositol transporter 1	w
 GLYCEROPHOSPHOLIPID	human	Q6ZNC8	MBOAT1	Q6ZNC8	2	82	Membrane-bound glycerophospholipid O-acyltransferase 1 (EC 2	w
-GLYCEROPHOSPHOLIPID	human	Q6ZWT7	MBOAT2	Q6ZWT7	1	58	Membrane-bound glycerophospholipid O-acyltransferase 2 (EC 2	w
+GLYCEROPHOSPHOLIPID	human	Q6ZWT7	MBOAT2	Q6ZWT7	0	58	Membrane-bound glycerophospholipid O-acyltransferase 2 (EC 2	w
 GLYCINAMIDE	fly	FBgn0000053	Gart	P00967	2	95	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
-GLYCINAMIDE	human	P22102	GART	P22102	2	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
+GLYCINAMIDE	human	P22102	GART	P22102	0	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 GLYCINE	fly	FBgn0001134	Grd	Q24352	7	21	Gamma-aminobutyric acid receptor alpha-like (GABA(A) recepto	w
 GLYCINE	fly	FBgn0027945	ppl	Q9U616	49	438	Glycine cleavage system H protein, mitochondrial (Protein pu	w
 GLYCINE	fly	FBgn0032287	Gcst	Q9VKR4	3	50	Aminomethyltransferase (EC 2.1.2.10) (Glycine cleavage syste	w
@@ -154,7 +154,7 @@ GLYCINE	fly	FBgn0036208	Gcat	Q9VTN9	1	43	FI03238p (Glycine C-acetyltransferase (
 GLYCINE	fly	FBgn0037801	Gldc	Q9VH09	1	38	Glycine cleavage system P protein (EC 1.4.4.2)	w
 GLYCINE	fly	FBgn0038074	Gnmt	Q9VG42	1	47	Glycine N-methyltransferase (EC 2.1.1.20)	w
 GLYCINE	fly	FBgn0054010	Glyat	Q2PDV0	0	22	Glycine N-acyltransferase	w
-GLYCINE	human	A0A0U1RQE8	GLYATL1B	A0A0U1RQE8	4	55	Putative glycine N-acyltransferase-like protein 1B (EC 2.3.1	w
+GLYCINE	human	A0A0U1RQE8	GLYATL1B	A0A0U1RQE8	1	55	Putative glycine N-acyltransferase-like protein 1B (EC 2.3.1	w
 GLYCINE	human	A0A1W2PPQ1	?	A0A1W2PPQ1	3	10	Glycine cleavage system H protein	w
 GLYCINE	human	A0A1W2PS29	?	A0A1W2PS29	3	10	Glycine cleavage system H protein	w
 GLYCINE	human	A0A286YEV6	SCYGR4	A0A286YEV6	1	13	Small cysteine and glycine repeat-containing protein 4 (Kera	w
@@ -165,32 +165,32 @@ GLYCINE	human	A0A286YF60	SCYGR3	A0A286YF60	1	11	Small cysteine and glycine repea
 GLYCINE	human	A0A286YF77	SCYGR6	A0A286YF77	0	11	Small cysteine and glycine repeat-containing protein 6 (Kera	w
 GLYCINE	human	A0A286YFB4	SCYGR2	A0A286YFB4	0	12	Small cysteine and glycine repeat-containing protein 2 (Kera	w
 GLYCINE	human	A0A286YFG1	SCYGR8	A0A286YFG1	0	11	Small cysteine and glycine repeat-containing protein 8 (Kera	w
-GLYCINE	human	O75311	GLRA3	O75311	32	108	Glycine receptor subunit alpha-3	w
+GLYCINE	human	O75311	GLRA3	O75311	29	108	Glycine receptor subunit alpha-3	w
 GLYCINE	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
-GLYCINE	human	P09622	DLD	P09622	14	351	Dihydrolipoyl dehydrogenase, mitochondrial (EC 1.8.1.4) (Dih	w
+GLYCINE	human	P09622	DLD	P09622	13	351	Dihydrolipoyl dehydrogenase, mitochondrial (EC 1.8.1.4) (Dih	w
 GLYCINE	human	P0DSO2	SCYGR9	P0DSO2	0	18	Small cysteine and glycine repeat-containing protein 9 (Kera	w
-GLYCINE	human	P23378	GLDC	P23378	8	295	Glycine dehydrogenase (decarboxylating), mitochondrial (EC 1	w
-GLYCINE	human	P23415	GLRA1	P23415	32	99	Glycine receptor subunit alpha-1 (Glycine receptor 48 kDa su	w
-GLYCINE	human	P23416	GLRA2	P23416	34	136	Glycine receptor subunit alpha-2	w
-GLYCINE	human	P23434	GCSH	P23434	75	476	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
+GLYCINE	human	P23378	GLDC	P23378	5	295	Glycine dehydrogenase (decarboxylating), mitochondrial (EC 1	w
+GLYCINE	human	P23415	GLRA1	P23415	29	99	Glycine receptor subunit alpha-1 (Glycine receptor 48 kDa su	w
+GLYCINE	human	P23416	GLRA2	P23416	30	136	Glycine receptor subunit alpha-2	w
+GLYCINE	human	P23434	GCSH	P23434	71	476	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
 GLYCINE	human	P34896	SHMT1	P34896	1	153	Serine hydroxymethyltransferase, cytosolic (SHMT) (cSHMT) (h	w
-GLYCINE	human	P34897	SHMT2	P34897	7	662	Serine hydroxymethyltransferase, mitochondrial (SHMT) (EC 2.	w
+GLYCINE	human	P34897	SHMT2	P34897	5	662	Serine hydroxymethyltransferase, mitochondrial (SHMT) (EC 2.	w
 GLYCINE	human	P48067	SLC6A9	P48067	3	59	Sodium- and chloride-dependent glycine transporter 1 (GlyT-1	w
-GLYCINE	human	P48167	GLRB	P48167	38	114	Glycine receptor subunit beta (Glycine receptor 58 kDa subun	w
-GLYCINE	human	P48728	AMT	P48728	6	43	Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine	w
-GLYCINE	human	P50440	GATM	P50440	17	225	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	w
-GLYCINE	human	Q14032	BAAT	Q14032	6	94	Bile acid-CoA:amino acid N-acyltransferase (BACAT) (BAT) (EC	w
+GLYCINE	human	P48167	GLRB	P48167	35	114	Glycine receptor subunit beta (Glycine receptor 58 kDa subun	w
+GLYCINE	human	P48728	AMT	P48728	4	43	Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine	w
+GLYCINE	human	P50440	GATM	P50440	13	225	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	w
+GLYCINE	human	Q14032	BAAT	Q14032	3	94	Bile acid-CoA:amino acid N-acyltransferase (BACAT) (BAT) (EC	w
 GLYCINE	human	Q14330	GPR18	Q14330	9	158	N-arachidonyl glycine receptor (NAGly receptor) (G protein-c	w
 GLYCINE	human	Q14749	GNMT	Q14749	2	121	Glycine N-methyltransferase (EC 2.1.1.20)	w
-GLYCINE	human	Q5SZD4	GLYATL3	Q5SZD4	3	14	Glycine N-acyltransferase-like protein 3 (EC 2.3.1.13) (Acyl	w
-GLYCINE	human	Q5T848	GPR158	Q5T848	25	202	Metabotropic glycine receptor (mGlyR) (G protein-coupled rec	w
-GLYCINE	human	Q6IB77	GLYAT	Q6IB77	11	127	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
-GLYCINE	human	Q7Z4W3	KRTAP19-3	Q7Z4W3	1	52	Keratin-associated protein 19-3 (GTHRP) (Glycine/tyrosine-ri	w
+GLYCINE	human	Q5SZD4	GLYATL3	Q5SZD4	2	14	Glycine N-acyltransferase-like protein 3 (EC 2.3.1.13) (Acyl	w
+GLYCINE	human	Q5T848	GPR158	Q5T848	19	202	Metabotropic glycine receptor (mGlyR) (G protein-coupled rec	w
+GLYCINE	human	Q6IB77	GLYAT	Q6IB77	9	127	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
+GLYCINE	human	Q7Z4W3	KRTAP19-3	Q7Z4W3	0	52	Keratin-associated protein 19-3 (GTHRP) (Glycine/tyrosine-ri	w
 GLYCINE	human	Q8WU03	GLYATL2	Q8WU03	3	40	Glycine N-acyltransferase-like protein 2 (EC 2.3.1.13) (Acyl	w
 GLYCINE	human	Q969I3	GLYATL1	Q969I3	4	33	Glycine N-acyltransferase-like protein 1 (EC 2.3.1.68) (Acyl	w
 GLYCINE	human	Q96DW6	SLC25A38	Q96DW6	0	66	Mitochondrial glycine transporter (Appoptosin) (Mitochondria	w
-GLYCINE	human	Q9H598	SLC32A1	Q9H598	8	164	Vesicular inhibitory amino acid transporter (GABA and glycin	w
-GLYCINE	human	Q9Y345	SLC6A5	Q9Y345	5	90	Sodium- and chloride-dependent glycine transporter 2 (GlyT-2	w
+GLYCINE	human	Q9H598	SLC32A1	Q9H598	4	164	Vesicular inhibitory amino acid transporter (GABA and glycin	w
+GLYCINE	human	Q9Y345	SLC6A5	Q9Y345	3	90	Sodium- and chloride-dependent glycine transporter 2 (GlyT-2	w
 GLYCINE	worm	O02049	idpa-1	O02049	0	3	Glycine Rich Secreted Protein	w
 GLYCINE	worm	O44195	CELE_ZK185.3	O44195	0	23	Glycine N-acyltransferase-like protein	w
 GLYCINE	worm	O62122	gcsh-1	O62122	3	25	Glycine cleavage system H protein	w
@@ -215,23 +215,23 @@ GLYCINE	zebrafish	Q6DC22	glrbb	Q6DC22	0	5	Glycine receptor subunit beta	w
 GLYCINE	zebrafish	Q6DGX4	gcshb	Q6DGX4	0	5	Glycine cleavage system H protein	w
 GLYCINE	zebrafish	Q6PH19	gatm	Q6PH19	0	4	Glycine amidinotransferase, mitochondrial	w
 GLYCINE	zebrafish	Q9DES8	glrba	Q9DES8	1	5	Glycine receptor subunit beta	w
-GLYCINE-	human	O60506	SYNCRIP	O60506	60	622	Heterogeneous nuclear ribonucleoprotein Q (hnRNP Q) (Glycine	w
+GLYCINE-	human	O60506	SYNCRIP	O60506	47	621	Heterogeneous nuclear ribonucleoprotein Q (hnRNP Q) (Glycine	w
 GLYCINE--TRNA	fly	FBgn0027088	GlyRS	Q9VUK8	0	70	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-GLYCINE--TRNA	human	P41250	GARS1	P41250	6	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+GLYCINE--TRNA	human	P41250	GARS1	P41250	5	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 GLYCINE--TRNA	worm	Q10039	gars-1	Q10039	1	17	Glycine--tRNA ligase	w
 GLYCINE--TRNA	yeast	P38088	GRS1	P38088	1	50	Glycine--tRNA ligase 1, mitochondrial	w
 GLYCINE--TRNA	yeast	Q06817	GRS2	Q06817	1	15	Glycine--tRNA ligase 2	w
-GLYCINE-N-ACYLTRANSFERASE-LIKE	human	Q5SZD4	GLYATL3	Q5SZD4	3	14	Glycine N-acyltransferase-like protein 3 (EC 2.3.1.13) (Acyl	w
+GLYCINE-N-ACYLTRANSFERASE-LIKE	human	Q5SZD4	GLYATL3	Q5SZD4	2	14	Glycine N-acyltransferase-like protein 3 (EC 2.3.1.13) (Acyl	w
 GLYCINE-RICH	fly	FBgn0030350	SelG	Q7Z2C4	1	15	Glycine-rich selenoprotein (G-rich selenoprotein) (dSelG)	w
 GLYCINE-RICH	human	A0A0J9YXV3	GREP1	A0A0J9YXV3	0	1	Glycine-rich extracellular protein 1 (Long intergenic non-pr	w
-GLYCINE-RICH	human	C9JFL3	PHGR1	C9JFL3	5	26	Proline, histidine and glycine-rich protein 1	w
-GLYCINE-RICH	human	P00751	CFB	P00751	20	570	Complement factor B (EC 3.4.21.47) (C3/C5 convertase) (Glyci	w
-GLYCINE-RICH	human	P21291	CSRP1	P21291	6	153	Cysteine and glycine-rich protein 1 (Cysteine-rich protein 1	w
+GLYCINE-RICH	human	C9JFL3	PHGR1	C9JFL3	3	26	Proline, histidine and glycine-rich protein 1	w
+GLYCINE-RICH	human	P00751	CFB	P00751	17	570	Complement factor B (EC 3.4.21.47) (C3/C5 convertase) (Glyci	w
+GLYCINE-RICH	human	P21291	CSRP1	P21291	5	153	Cysteine and glycine-rich protein 1 (Cysteine-rich protein 1	w
 GLYCINE-RICH	human	P50461	CSRP3	P50461	1	92	Cysteine and glycine-rich protein 3 (Cardiac LIM protein) (C	w
-GLYCINE-RICH	human	Q14011	CIRBP	Q14011	17	200	Cold-inducible RNA-binding protein (A18 hnRNP) (Glycine-rich	w
-GLYCINE-RICH	human	Q16527	CSRP2	Q16527	5	98	Cysteine and glycine-rich protein 2 (Cysteine-rich protein 2	w
-GLYCINE-RICH	human	Q9Y3Y2	CHTOP	Q9Y3Y2	34	259	Chromatin target of PRMT1 protein (Friend of PRMT1 protein) 	w
-GLYCINE-RICH	human	Q9Y4Z0	LSM4	Q9Y4Z0	31	276	U6 snRNA-associated Sm-like protein LSm4 (Glycine-rich prote	w
+GLYCINE-RICH	human	Q14011	CIRBP	Q14011	13	200	Cold-inducible RNA-binding protein (A18 hnRNP) (Glycine-rich	w
+GLYCINE-RICH	human	Q16527	CSRP2	Q16527	2	98	Cysteine and glycine-rich protein 2 (Cysteine-rich protein 2	w
+GLYCINE-RICH	human	Q9Y3Y2	CHTOP	Q9Y3Y2	29	259	Chromatin target of PRMT1 protein (Friend of PRMT1 protein) 	w
+GLYCINE-RICH	human	Q9Y4Z0	LSM4	Q9Y4Z0	29	276	U6 snRNA-associated Sm-like protein LSm4 (Glycine-rich prote	w
 GLYCINE-RICH	worm	G5ECT2	CELE_F15E6.3	G5ECT2	0	4	Glycine-rich cell wall structural protein	w
 GLYCINE-RICH	worm	H2L275	grsp-2	H2L275	0	3	Glycine-rich cell wall structural protein 1.8-like	w
 GLYCINE-RICH	worm	O01849	CELE_F32B5.7	O01849	0	8	Glycine-rich domain-containing protein 1	w
@@ -241,27 +241,27 @@ GLYCINE-RICH	worm	Q9NET6	CELE_Y39B6A.9	Q9NET6	0	21	Glycine-rich cell wall struct
 GLYCINE-RICH	zebrafish	F1QJC0	csrp3	F1QJC0	0	6	Cysteine and glycine-rich protein 1	w
 GLYCINE-RICH	zebrafish	Q6NZV4	csrp1a	Q6NZV4	0	4	Cysteine and glycine-rich protein 1	w
 GLYCINE-RICH	zebrafish	Q6P2T6	csrp2	Q6P2T6	0	4	Cysteine and glycine-rich protein 2	w
-GLYCINE-TRYPTOPHAN	human	Q8NDV7	TNRC6A	Q8NDV7	60	280	Trinucleotide repeat-containing gene 6A protein (CAG repeat 	w
-GLYCINE-TYROSINE	human	Q8IUC2	KRTAP8-1	Q8IUC2	4	107	Keratin-associated protein 8-1 (High glycine-tyrosine kerati	w
-GLYCOCALI	human	P07359	GP1BA	P07359	25	226	Platelet glycoprotein Ib alpha chain (GP-Ib alpha) (GPIb-alp	w
-GLYCOCONNECTIN	human	P04921	GYPC	P04921	70	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
-GLYCODELIN	human	P09466	PAEP	P09466	57	241	Glycodelin (GD) (Placental protein 14) (PP14) (Pregnancy-ass	w
+GLYCINE-TRYPTOPHAN	human	Q8NDV7	TNRC6A	Q8NDV7	44	280	Trinucleotide repeat-containing gene 6A protein (CAG repeat 	w
+GLYCINE-TYROSINE	human	Q8IUC2	KRTAP8-1	Q8IUC2	3	107	Keratin-associated protein 8-1 (High glycine-tyrosine kerati	w
+GLYCOCALI	human	P07359	GP1BA	P07359	20	226	Platelet glycoprotein Ib alpha chain (GP-Ib alpha) (GPIb-alp	w
+GLYCOCONNECTIN	human	P04921	GYPC	P04921	51	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
+GLYCODELIN	human	P09466	PAEP	P09466	43	241	Glycodelin (GD) (Placental protein 14) (PP14) (Pregnancy-ass	w
 GLYCOGEN	fly	FBgn0004507	Glyp	Q9XTL9	1	47	Glycogen phosphorylase (EC 2.4.1.1)	w
 GLYCOGEN	fly	FBgn0034618	Agl	Q9W2H8	0	10	Glycogen debranching enzyme (EC 2.4.1.25) (EC 3.2.1.33) (Gly	w
 GLYCOGEN	fly	FBgn0046332	gskt	P83101	195	1152	Putative glycogen synthase kinase-3 homolog (GSK-3) (EC 2.7.	w
 GLYCOGEN	fly	FBgn0266064	Glys	Q9VFC8	3	49	Glycogen [starch] synthase (EC 2.4.1.11) (Glycogen synthase)	w
-GLYCOGEN	human	O95278	EPM2A	O95278	49	1292	Laforin (EC 3.1.3.-) (EC 3.1.3.16) (EC 3.1.3.48) (Glucan pho	w
-GLYCOGEN	human	P06737	PYGL	P06737	3	129	Glycogen phosphorylase, liver form (EC 2.4.1.1)	w
-GLYCOGEN	human	P11216	PYGB	P11216	4	154	Glycogen phosphorylase, brain form (EC 2.4.1.1)	w
-GLYCOGEN	human	P11217	PYGM	P11217	6	103	Glycogen phosphorylase, muscle form (EC 2.4.1.1) (Myophospho	w
-GLYCOGEN	human	P13807	GYS1	P13807	14	193	Glycogen [starch] synthase, muscle (EC 2.4.1.11) (Glycogen s	w
-GLYCOGEN	human	P35573	AGL	P35573	5	102	Glycogen debranching enzyme (Glycogen debrancher) [Includes:	w
-GLYCOGEN	human	P49840	GSK3A	P49840	313	1749	Glycogen synthase kinase-3 alpha (GSK-3 alpha) (EC 2.7.11.26	w
-GLYCOGEN	human	P49841	GSK3B	P49841	348	2319	Glycogen synthase kinase-3 beta (GSK-3 beta) (EC 2.7.11.26) 	w
+GLYCOGEN	human	O95278	EPM2A	O95278	39	1292	Laforin (EC 3.1.3.-) (EC 3.1.3.16) (EC 3.1.3.48) (Glucan pho	w
+GLYCOGEN	human	P06737	PYGL	P06737	2	129	Glycogen phosphorylase, liver form (EC 2.4.1.1)	w
+GLYCOGEN	human	P11216	PYGB	P11216	2	154	Glycogen phosphorylase, brain form (EC 2.4.1.1)	w
+GLYCOGEN	human	P11217	PYGM	P11217	5	103	Glycogen phosphorylase, muscle form (EC 2.4.1.1) (Myophospho	w
+GLYCOGEN	human	P13807	GYS1	P13807	11	193	Glycogen [starch] synthase, muscle (EC 2.4.1.11) (Glycogen s	w
+GLYCOGEN	human	P35573	AGL	P35573	2	102	Glycogen debranching enzyme (Glycogen debrancher) [Includes:	w
+GLYCOGEN	human	P49840	GSK3A	P49840	288	1749	Glycogen synthase kinase-3 alpha (GSK-3 alpha) (EC 2.7.11.26	w
+GLYCOGEN	human	P49841	GSK3B	P49841	319	2319	Glycogen synthase kinase-3 beta (GSK-3 beta) (EC 2.7.11.26) 	w
 GLYCOGEN	human	P54840	GYS2	P54840	4	125	Glycogen [starch] synthase, liver (EC 2.4.1.11) (Glycogen sy	w
-GLYCOGEN	human	Q16821	PPP1R3A	Q16821	18	110	Protein phosphatase 1 regulatory subunit 3A (Protein phospha	w
-GLYCOGEN	human	Q8N4C6	NIN	Q8N4C6	68	360	Ninein (hNinein) (Glycogen synthase kinase 3 beta-interactin	w
-GLYCOGEN	human	Q9UQK1	PPP1R3C	Q9UQK1	12	67	Protein phosphatase 1 regulatory subunit 3C (Protein phospha	w
+GLYCOGEN	human	Q16821	PPP1R3A	Q16821	15	110	Protein phosphatase 1 regulatory subunit 3A (Protein phospha	w
+GLYCOGEN	human	Q8N4C6	NIN	Q8N4C6	55	360	Ninein (hNinein) (Glycogen synthase kinase 3 beta-interactin	w
+GLYCOGEN	human	Q9UQK1	PPP1R3C	Q9UQK1	11	67	Protein phosphatase 1 regulatory subunit 3C (Protein phospha	w
 GLYCOGEN	worm	O62334	agl-1	O62334	0	21	Glycogen debranching enzyme	w
 GLYCOGEN	worm	Q9U2D9	gsy-1	Q9U2D9	2	24	Glycogen	w
 GLYCOGEN	worm	Q9U2Q9	gsk-3	Q9U2Q9	5	67	Glycogen synthase kinase-3	w
@@ -273,27 +273,27 @@ GLYCOGEN	yeast	Q12222	YGK3	Q12222	0	54	Glycogen synthase kinase-3 homolog YGK3	w
 GLYCOGEN	zebrafish	Q5RGX8	gys2	Q5RGX8	3	39	Glycogen	w
 GLYCOGEN	zebrafish	Q7SYB8	gys1	Q7SYB8	3	39	Glycogen	w
 GLYCOGEN	zebrafish	Q9YH60	gsk3ba	Q9YH60	12	115	Glycogen synthase kinase-3 beta	w
-GLYCOGEN-ASSOCIATED	human	Q16821	PPP1R3A	Q16821	18	110	Protein phosphatase 1 regulatory subunit 3A (Protein phospha	w
+GLYCOGEN-ASSOCIATED	human	Q16821	PPP1R3A	Q16821	15	110	Protein phosphatase 1 regulatory subunit 3A (Protein phospha	w
 GLYCOGEN-BINDING	fly	FBgn0036862	Gbs-76A	Q9VVY3	9	17	Glycogen-binding subunit 76A (CBM21 domain-containing protei	w
 GLYCOGEN-BINDING	worm	Q17560	gldi-10	Q17560	3	6	AMP-activated protein kinase glycogen-binding domain-contain	w
-GLYCOGEN-BRANCHING	human	Q04446	GBE1	Q04446	5	193	1,4-alpha-glucan-branching enzyme (EC 2.4.1.18) (Brancher en	w
-GLYCOGEN-TARGETING	human	Q86XI6	PPP1R3B	Q86XI6	11	55	Protein phosphatase 1 regulatory subunit 3B (Hepatic glycoge	w
+GLYCOGEN-BRANCHING	human	Q04446	GBE1	Q04446	4	193	1,4-alpha-glucan-branching enzyme (EC 2.4.1.18) (Brancher en	w
+GLYCOGEN-TARGETING	human	Q86XI6	PPP1R3B	Q86XI6	9	55	Protein phosphatase 1 regulatory subunit 3B (Hepatic glycoge	w
 GLYCOGENIN	fly	FBgn0265191	Gyg	A0A0B4LFW5	2	28	glycogenin glucosyltransferase (EC 2.4.1.186)	w
 GLYCOGENIN	worm	O45819	gyg-2	O45819	3	15	glycogenin glucosyltransferase	w
 GLYCOGENIN	zebrafish	B8A4T7	gyg2	B8A4T7	3	10	glycogenin glucosyltransferase	w
 GLYCOGENIN	zebrafish	Q6IQP1	gyg1b	Q6IQP1	3	10	glycogenin glucosyltransferase	w
-GLYCOGENIN-1	human	P46976	GYG1	P46976	8	94	Glycogenin-1 (GN-1) (GN1) (EC 2.4.1.186)	w
+GLYCOGENIN-1	human	P46976	GYG1	P46976	6	94	Glycogenin-1 (GN-1) (GN1) (EC 2.4.1.186)	w
 GLYCOGENIN-1	worm	H2KYQ5	gyg-1	H2KYQ5	3	17	Glycogenin-1	w
 GLYCOGENIN-1	yeast	P36143	GLG1	P36143	5	16	Glycogenin-1	w
-GLYCOGENIN-2	human	O15488	GYG2	O15488	6	62	Glycogenin-2 (GN-2) (GN2) (EC 2.4.1.186)	w
+GLYCOGENIN-2	human	O15488	GYG2	O15488	5	62	Glycogenin-2 (GN-2) (GN2) (EC 2.4.1.186)	w
 GLYCOGENIN-2	yeast	P47011	GLG2	P47011	1	13	Glycogenin-2	w
-GLYCOGENIN-INTERACTING	human	Q9C029	TRIM7	Q9C029	44	136	E3 ubiquitin-protein ligase TRIM7 (EC 2.3.2.27) (Glycogenin-	w
-GLYCOH	human	Q9NX46	ADPRS	Q9NX46	8	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
+GLYCOGENIN-INTERACTING	human	Q9C029	TRIM7	Q9C029	38	136	E3 ubiquitin-protein ligase TRIM7 (EC 2.3.2.27) (Glycogenin-	w
+GLYCOH	human	Q9NX46	ADPRS	Q9NX46	5	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
 GLYCOHYDROLASE	fly	FBgn0023216	Parg	O46043	3	11	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.143)	w
-GLYCOHYDROLASE	human	A1Z1Q3	MACROD2	A1Z1Q3	3	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	w
-GLYCOHYDROLASE	human	Q86W56	PARG	Q86W56	9	99	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.143)	w
+GLYCOHYDROLASE	human	A1Z1Q3	MACROD2	A1Z1Q3	2	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	w
+GLYCOHYDROLASE	human	Q86W56	PARG	Q86W56	7	99	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.143)	w
 GLYCOHYDROLASE	human	Q9BQ69	MACROD1	Q9BQ69	8	86	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
-GLYCOHYDROLASE	human	Q9NX46	ADPRS	Q9NX46	8	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
+GLYCOHYDROLASE	human	Q9NX46	ADPRS	Q9NX46	5	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
 GLYCOHYDROLASE	human	Q9Y530	OARD1	Q9Y530	1	47	ADP-ribose glycohydrolase OARD1 (O-acetyl-ADP-ribose deacety	w
 GLYCOHYDROLASE	worm	Q867X0	parg-1	Q867X0	0	6	Poly(ADP-ribose) glycohydrolase 1	w
 GLYCOHYDROLASE	worm	Q9N5L4	parg-2	Q9N5L4	0	13	Poly(ADP-ribose) glycohydrolase 2	w
@@ -303,23 +303,23 @@ GLYCOHYDROLASE	zebrafish	F6PBM1	macrod1	F6PBM1	0	2	ADP-ribose glycohydrolase MAC
 GLYCOHYDROLASE	zebrafish	Q503C5	oard1	Q503C5	0	1	ADP-ribose glycohydrolase OARD1	w
 GLYCOLATE	human	Q9UJM8	HAO1	Q9UJM8	6	52	2-Hydroxyacid oxidase 1 (HAOX1) (EC 1.1.3.15) (Glycolate oxi	w
 GLYCOLIPID	human	A6NH11	GLTPD2	A6NH11	2	23	Glycolipid transfer protein domain-containing protein 2	w
-GLYCOLIPID	human	Q2TAA5	ALG11	Q2TAA5	3	149	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
-GLYCOLIPID	human	Q5TA50	CPTP	Q5TA50	3	29	Ceramide-1-phosphate transfer protein (CPTP) (Glycolipid tra	w
-GLYCOLIPID	human	Q8N5D6	GBGT1	Q8N5D6	3	71	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1 (EC 	w
-GLYCOLIPID	human	Q9NZD2	GLTP	Q9NZD2	4	58	Glycolipid transfer protein (GLTP)	w
+GLYCOLIPID	human	Q2TAA5	ALG11	Q2TAA5	2	149	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+GLYCOLIPID	human	Q5TA50	CPTP	Q5TA50	1	29	Ceramide-1-phosphate transfer protein (CPTP) (Glycolipid tra	w
+GLYCOLIPID	human	Q8N5D6	GBGT1	Q8N5D6	2	71	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1 (EC 	w
+GLYCOLIPID	human	Q9NZD2	GLTP	Q9NZD2	3	58	Glycolipid transfer protein (GLTP)	w
 GLYCOLIPID	worm	A0A3P6NP42	tag-296	A0A3P6NP42	0	1	Glycolipid transfer protein domain-containing protein	w
 GLYCOLIPID	yeast	P27809	KRE2	P27809	2	28	Glycolipid 2-alpha-mannosyltransferase	w
-GLYCOLYSIS	human	Q9NQ88	TIGAR	Q9NQ88	11	147	Fructose-2,6-bisphosphatase TIGAR (EC 3.1.3.46) (TP53-induce	w
+GLYCOLYSIS	human	Q9NQ88	TIGAR	Q9NQ88	9	147	Fructose-2,6-bisphosphatase TIGAR (EC 3.1.3.46) (TP53-induce	w
 GLYCOLYTIC	yeast	P07261	GCR1	P07261	1	21	Glycolytic genes transcriptional activator GCR1	w
 GLYCOLYTIC	yeast	Q01722	GCR2	Q01722	2	18	Glycolytic genes transcriptional activator GCR2	w
-GLYCOPHAGY	human	O95210	STBD1	O95210	33	139	Starch-binding domain-containing protein 1 (Genethonin-1) (G	w
+GLYCOPHAGY	human	O95210	STBD1	O95210	30	139	Starch-binding domain-containing protein 1 (Genethonin-1) (G	w
 GLYCOPHORIN	zebrafish	Q6XFR2	gypc	Q6XFR2	0	2	Glycophorin C (Gerbich blood group)	w
-GLYCOPHORIN-A	human	P02724	GYPA	P02724	48	480	Glycophorin-A (MN sialoglycoprotein) (PAS-2) (Sialoglycoprot	w
-GLYCOPHORIN-B	human	P06028	GYPB	P06028	29	243	Glycophorin-B (PAS-3) (SS-active sialoglycoprotein) (Sialogl	w
-GLYCOPHORIN-C	human	P04921	GYPC	P04921	70	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
-GLYCOPHORIN-D	human	P04921	GYPC	P04921	70	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
-GLYCOPHORIN-E	human	P15421	GYPE	P15421	17	117	Glycophorin-E	w
-GLYCOPROTEI	human	Q6Q8B3	CD200R1L	Q6Q8B3	15	48	Cell surface glycoprotein CD200 receptor 2 (CD200 cell surfa	w
+GLYCOPHORIN-A	human	P02724	GYPA	P02724	37	480	Glycophorin-A (MN sialoglycoprotein) (PAS-2) (Sialoglycoprot	w
+GLYCOPHORIN-B	human	P06028	GYPB	P06028	23	243	Glycophorin-B (PAS-3) (SS-active sialoglycoprotein) (Sialogl	w
+GLYCOPHORIN-C	human	P04921	GYPC	P04921	51	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
+GLYCOPHORIN-D	human	P04921	GYPC	P04921	51	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
+GLYCOPHORIN-E	human	P15421	GYPE	P15421	13	117	Glycophorin-E	w
+GLYCOPROTEI	human	Q6Q8B3	CD200R1L	Q6Q8B3	12	48	Cell surface glycoprotein CD200 receptor 2 (CD200 cell surfa	w
 GLYCOPROTEIN	fly	FBgn0014075	Uggt	Q09332	2	29	UDP-glucose:glycoprotein glucosyltransferase (UGT) (dUGT) (E	w
 GLYCOPROTEIN	fly	FBgn0029606	CG14052	M9PDL5	44	244	Histidine-rich glycoprotein	w
 GLYCOPROTEIN	fly	FBgn0034072	Dg	A0A0C4DHF6	596	2496	Dystroglycan 1 (Dystroglycan) (Dystrophin-associated glycopr	w
@@ -333,163 +333,163 @@ GLYCOPROTEIN	fly	FBgn0087002	apolpp	Q9V496	6	36	Apolipophorins (Retinoid- and fa
 GLYCOPROTEIN	fly	FBgn0261386	Gpa2	Q58L88	14	267	Glycoprotein hormone alpha 2	w
 GLYCOPROTEIN	fly	FBgn0264561	Glg1	M9PIG4	92	2373	Golgi complex-localized glycoprotein 1, isoform B	w
 GLYCOPROTEIN	fly	FBgn0266580	Gp210	A1Z6H7	8	263	Nuclear pore membrane glycoprotein 210 (Nuclear pore protein	w
-GLYCOPROTEIN	human	A6NJW9	CD8B2	A6NJW9	23	66	T-cell surface glycoprotein CD8 beta-2 chain (CD8b pseudogen	w
-GLYCOPROTEIN	human	O43493	TGOLN2	O43493	159	1676	Trans-Golgi network integral membrane protein 2 (Trans-Golgi	w
+GLYCOPROTEIN	human	A6NJW9	CD8B2	A6NJW9	19	66	T-cell surface glycoprotein CD8 beta-2 chain (CD8b pseudogen	w
+GLYCOPROTEIN	human	O43493	TGOLN2	O43493	101	1676	Trans-Golgi network integral membrane protein 2 (Trans-Golgi	w
 GLYCOPROTEIN	human	O94769	ECM2	O94769	6	50	Extracellular matrix protein 2 (Matrix glycoprotein SC1/ECM2	w
-GLYCOPROTEIN	human	P00751	CFB	P00751	20	570	Complement factor B (EC 3.4.21.47) (C3/C5 convertase) (Glyci	w
+GLYCOPROTEIN	human	P00751	CFB	P00751	17	570	Complement factor B (EC 3.4.21.47) (C3/C5 convertase) (Glyci	w
 GLYCOPROTEIN	human	P01215	CGA	P01215	14	54	Glycoprotein hormones alpha chain (Anterior pituitary glycop	w
-GLYCOPROTEIN	human	P01730	CD4	P01730	99	1243	T-cell surface glycoprotein CD4 (T-cell surface antigen T4/L	w
-GLYCOPROTEIN	human	P01732	CD8A	P01732	190	1201	T-cell surface glycoprotein CD8 alpha chain (T-lymphocyte di	w
-GLYCOPROTEIN	human	P02760	AMBP	P02760	213	1422	Protein AMBP (Protein HC) [Cleaved into: Alpha-1-microglobul	w
-GLYCOPROTEIN	human	P02763	ORM1	P02763	224	680	Alpha-1-acid glycoprotein 1 (AGP 1) (Orosomucoid-1) (OMD 1)	w
-GLYCOPROTEIN	human	P02812	PRB2	P02812	3	69	Basic salivary proline-rich protein 2 (Salivary proline-rich	w
-GLYCOPROTEIN	human	P04196	HRG	P04196	49	566	Histidine-rich glycoprotein (Histidine-proline-rich glycopro	w
-GLYCOPROTEIN	human	P04216	THY1	P04216	82	908	Thy-1 membrane glycoprotein (CDw90) (Thy-1 antigen) (CD anti	w
-GLYCOPROTEIN	human	P04217	A1BG	P04217	46	428	Alpha-1B-glycoprotein (Alpha-1-B glycoprotein)	w
-GLYCOPROTEIN	human	P04234	CD3D	P04234	63	599	T-cell surface glycoprotein CD3 delta chain (T-cell receptor	w
-GLYCOPROTEIN	human	P04921	GYPC	P04921	70	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
-GLYCOPROTEIN	human	P05106	ITGB3	P05106	58	544	Integrin beta-3 (Platelet membrane glycoprotein IIIa) (GPIII	w
-GLYCOPROTEIN	human	P05556	ITGB1	P05556	71	710	Integrin beta-1 (Fibronectin receptor subunit beta) (Glycopr	w
-GLYCOPROTEIN	human	P06126	CD1A	P06126	55	382	T-cell surface glycoprotein CD1a (T-cell surface antigen T6/	w
-GLYCOPROTEIN	human	P06127	CD5	P06127	79	404	T-cell surface glycoprotein CD5 (Lymphocyte antigen T1/Leu-1	w
-GLYCOPROTEIN	human	P07359	GP1BA	P07359	25	226	Platelet glycoprotein Ib alpha chain (GP-Ib alpha) (GPIb-alp	w
-GLYCOPROTEIN	human	P07766	CD3E	P07766	82	319	T-cell surface glycoprotein CD3 epsilon chain (T-cell surfac	w
-GLYCOPROTEIN	human	P07911	UMOD	P07911	43	347	Uromodulin (Tamm-Horsfall urinary glycoprotein) (THP) [Cleav	w
-GLYCOPROTEIN	human	P07996	THBS1	P07996	87	1224	Thrombospondin-1 (Glycoprotein G)	w
-GLYCOPROTEIN	human	P08514	ITGA2B	P08514	87	667	Integrin alpha-IIb (GPalpha IIb) (GPIIb) (Platelet membrane 	w
-GLYCOPROTEIN	human	P08571	CD14	P08571	54	606	Monocyte differentiation antigen CD14 (My23 antigen) (Myeloi	w
-GLYCOPROTEIN	human	P08887	IL6R	P08887	180	429	Interleukin-6 receptor subunit alpha (IL-6 receptor subunit 	w
-GLYCOPROTEIN	human	P09693	CD3G	P09693	43	340	T-cell surface glycoprotein CD3 gamma chain (T-cell receptor	w
-GLYCOPROTEIN	human	P09758	TACSTD2	P09758	17	295	Tumor-associated calcium signal transducer 2 (Cell surface g	w
-GLYCOPROTEIN	human	P10747	CD28	P10747	177	738	T-cell-specific surface glycoprotein CD28 (TP44) (CD antigen	w
-GLYCOPROTEIN	human	P10966	CD8B	P10966	42	119	T-cell surface glycoprotein CD8 beta chain (CD antigen CD8b)	w
-GLYCOPROTEIN	human	P11215	ITGAM	P11215	28	190	Integrin alpha-M (CD11 antigen-like family member B) (CR-3 a	w
-GLYCOPROTEIN	human	P11279	LAMP1	P11279	90	926	Lysosome-associated membrane glycoprotein 1 (LAMP-1) (Lysoso	w
-GLYCOPROTEIN	human	P11464	PSG1	P11464	8	85	Pregnancy-specific beta-1-glycoprotein 1 (PS-beta-G-1) (PSBG	w
-GLYCOPROTEIN	human	P11465	PSG2	P11465	14	143	Pregnancy-specific beta-1-glycoprotein 2 (PS-beta-G-2) (PSBG	w
-GLYCOPROTEIN	human	P11912	CD79A	P11912	91	662	B-cell antigen receptor complex-associated protein alpha cha	w
-GLYCOPROTEIN	human	P13224	GP1BB	P13224	188	625	Platelet glycoprotein Ib beta chain (GP-Ib beta) (GPIb-beta)	w
-GLYCOPROTEIN	human	P13473	LAMP2	P13473	26	620	Lysosome-associated membrane glycoprotein 2 (LAMP-2) (Lysoso	w
-GLYCOPROTEIN	human	P13688	CEACAM1	P13688	28	160	Cell adhesion molecule CEACAM1 (Biliary glycoprotein 1) (BGP	w
-GLYCOPROTEIN	human	P13987	CD59	P13987	60	699	CD59 glycoprotein (1F5 antigen) (20 kDa homologous restricti	w
-GLYCOPROTEIN	human	P14209	CD99	P14209	14	181	CD99 antigen (12E7) (E2 antigen) (Protein MIC2) (T-cell surf	w
-GLYCOPROTEIN	human	P14770	GP9	P14770	63	419	Platelet glycoprotein IX (GP-IX) (GPIX) (Glycoprotein 9) (CD	w
-GLYCOPROTEIN	human	P15144	ANPEP	P15144	16	215	Aminopeptidase N (AP-N) (hAPN) (EC 3.4.11.2) (Alanyl aminope	w
-GLYCOPROTEIN	human	P15812	CD1E	P15812	38	212	T-cell surface glycoprotein CD1e, membrane-associated (hCD1e	w
-GLYCOPROTEIN	human	P15813	CD1D	P15813	79	394	Antigen-presenting glycoprotein CD1d (R3G1) (CD antigen CD1d	w
-GLYCOPROTEIN	human	P16422	EPCAM	P16422	29	487	Epithelial cell adhesion molecule (Ep-CAM) (Adenocarcinoma-a	w
-GLYCOPROTEIN	human	P16671	CD36	P16671	34	543	Platelet glycoprotein 4 (Fatty acid translocase) (FAT) (Glyc	w
-GLYCOPROTEIN	human	P17301	ITGA2	P17301	52	378	Integrin alpha-2 (CD49 antigen-like family member B) (Collag	w
-GLYCOPROTEIN	human	P17643	TYRP1	P17643	41	296	5,6-dihydroxyindole-2-carboxylic acid oxidase (DHICA oxidase	w
-GLYCOPROTEIN	human	P19256	CD58	P19256	57	378	Lymphocyte function-associated antigen 3 (Ag3) (Surface glyc	w
-GLYCOPROTEIN	human	P19397	CD53	P19397	54	361	Leukocyte surface antigen CD53 (Cell surface glycoprotein CD	w
-GLYCOPROTEIN	human	P19652	ORM2	P19652	172	583	Alpha-1-acid glycoprotein 2 (AGP 2) (Orosomucoid-2) (OMD 2)	w
-GLYCOPROTEIN	human	P20701	ITGAL	P20701	56	385	Integrin alpha-L (CD11 antigen-like family member A) (Leukoc	w
-GLYCOPROTEIN	human	P20702	ITGAX	P20702	34	337	Integrin alpha-X (CD11 antigen-like family member C) (Leu M5	w
-GLYCOPROTEIN	human	P20916	MAG	P20916	24	198	Myelin-associated glycoprotein (Siglec-4a)	w
-GLYCOPROTEIN	human	P20963	CD247	P20963	67	384	T-cell surface glycoprotein CD3 zeta chain (T-cell receptor 	w
-GLYCOPROTEIN	human	P21754	ZP3	P21754	15	85	Zona pellucida sperm-binding protein 3 (Sperm receptor) (ZP3	w
-GLYCOPROTEIN	human	P23276	KEL	P23276	29	180	Kell blood group glycoprotein (EC 3.4.24.-) (CD antigen CD23	w
-GLYCOPROTEIN	human	P23510	TNFSF4	P23510	81	405	Tumor necrosis factor ligand superfamily member 4 (Glycoprot	w
-GLYCOPROTEIN	human	P23515	OMG	P23515	12	82	Oligodendrocyte-myelin glycoprotein	w
-GLYCOPROTEIN	human	P28799	GRN	P28799	32	404	Progranulin (PGRN) (Acrogranin) (Epithelin precursor) (Glyco	w
-GLYCOPROTEIN	human	P29016	CD1B	P29016	95	531	T-cell surface glycoprotein CD1b (CD antigen CD1b)	w
-GLYCOPROTEIN	human	P29017	CD1C	P29017	52	396	T-cell surface glycoprotein CD1c (CD antigen CD1c)	w
-GLYCOPROTEIN	human	P36222	CHI3L1	P36222	11	192	Chitinase-3-like protein 1 (39 kDa synovial protein) (Cartil	w
-GLYCOPROTEIN	human	P37198	NUP62	P37198	45	323	Nuclear pore glycoprotein p62 (62 kDa nucleoporin) (Nucleopo	w
-GLYCOPROTEIN	human	P38159	RBMX	P38159	33	408	RNA-binding motif protein, X chromosome (Glycoprotein p43) (	w
-GLYCOPROTEIN	human	P40197	GP5	P40197	42	366	Platelet glycoprotein V (GPV) (Glycoprotein 5) (CD antigen C	w
-GLYCOPROTEIN	human	P40259	CD79B	P40259	87	485	B-cell antigen receptor complex-associated protein beta chai	w
-GLYCOPROTEIN	human	P41217	CD200	P41217	18	135	OX-2 membrane glycoprotein (CD antigen CD200)	w
-GLYCOPROTEIN	human	P41732	TSPAN7	P41732	9	132	Tetraspanin-7 (Tspan-7) (Cell surface glycoprotein A15) (Mem	w
-GLYCOPROTEIN	human	P43121	MCAM	P43121	132	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	w
-GLYCOPROTEIN	human	P43489	TNFRSF4	P43489	43	230	Tumor necrosis factor receptor superfamily member 4 (ACT35 a	w
-GLYCOPROTEIN	human	P48509	CD151	P48509	27	240	CD151 antigen (GP27) (Membrane glycoprotein SFA-1) (Platelet	w
-GLYCOPROTEIN	human	P50579	METAP2	P50579	95	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
-GLYCOPROTEIN	human	P50895	BCAM	P50895	28	250	Basal cell adhesion molecule (Auberger B antigen) (B-CAM cel	w
-GLYCOPROTEIN	human	P51674	GPM6A	P51674	5	302	Neuronal membrane glycoprotein M6-a (M6a)	w
-GLYCOPROTEIN	human	P54107	CRISP1	P54107	18	92	Cysteine-rich secretory protein 1 (CRISP-1) (AEG-like protei	w
-GLYCOPROTEIN	human	P55001	MFAP2	P55001	19	87	Microfibrillar-associated protein 2 (MFAP-2) (Microfibril-as	w
-GLYCOPROTEIN	human	P55082	MFAP3	P55082	11	85	Microfibril-associated glycoprotein 3	w
-GLYCOPROTEIN	human	P55083	MFAP4	P55083	32	308	Microfibril-associated glycoprotein 4	w
-GLYCOPROTEIN	human	P55259	GP2	P55259	26	233	Pancreatic secretory granule membrane major glycoprotein GP2	w
-GLYCOPROTEIN	human	P55808	XG	P55808	2	28	Glycoprotein Xg (Protein PBDX)	w
-GLYCOPROTEIN	human	P60852	ZP1	P60852	14	87	Zona pellucida sperm-binding protein 1 (Zona pellucida glyco	w
+GLYCOPROTEIN	human	P01730	CD4	P01730	85	1243	T-cell surface glycoprotein CD4 (T-cell surface antigen T4/L	w
+GLYCOPROTEIN	human	P01732	CD8A	P01732	157	1201	T-cell surface glycoprotein CD8 alpha chain (T-lymphocyte di	w
+GLYCOPROTEIN	human	P02760	AMBP	P02760	171	1422	Protein AMBP (Protein HC) [Cleaved into: Alpha-1-microglobul	w
+GLYCOPROTEIN	human	P02763	ORM1	P02763	150	680	Alpha-1-acid glycoprotein 1 (AGP 1) (Orosomucoid-1) (OMD 1)	w
+GLYCOPROTEIN	human	P02812	PRB2	P02812	1	69	Basic salivary proline-rich protein 2 (Salivary proline-rich	w
+GLYCOPROTEIN	human	P04196	HRG	P04196	38	566	Histidine-rich glycoprotein (Histidine-proline-rich glycopro	w
+GLYCOPROTEIN	human	P04216	THY1	P04216	72	908	Thy-1 membrane glycoprotein (CDw90) (Thy-1 antigen) (CD anti	w
+GLYCOPROTEIN	human	P04217	A1BG	P04217	28	428	Alpha-1B-glycoprotein (Alpha-1-B glycoprotein)	w
+GLYCOPROTEIN	human	P04234	CD3D	P04234	50	599	T-cell surface glycoprotein CD3 delta chain (T-cell receptor	w
+GLYCOPROTEIN	human	P04921	GYPC	P04921	51	267	Glycophorin-C (Glycoconnectin) (Glycophorin-D) (GPD) (Glycop	w
+GLYCOPROTEIN	human	P05106	ITGB3	P05106	46	544	Integrin beta-3 (Platelet membrane glycoprotein IIIa) (GPIII	w
+GLYCOPROTEIN	human	P05556	ITGB1	P05556	58	709	Integrin beta-1 (Fibronectin receptor subunit beta) (Glycopr	w
+GLYCOPROTEIN	human	P06126	CD1A	P06126	45	382	T-cell surface glycoprotein CD1a (T-cell surface antigen T6/	w
+GLYCOPROTEIN	human	P06127	CD5	P06127	70	404	T-cell surface glycoprotein CD5 (Lymphocyte antigen T1/Leu-1	w
+GLYCOPROTEIN	human	P07359	GP1BA	P07359	20	226	Platelet glycoprotein Ib alpha chain (GP-Ib alpha) (GPIb-alp	w
+GLYCOPROTEIN	human	P07766	CD3E	P07766	62	319	T-cell surface glycoprotein CD3 epsilon chain (T-cell surfac	w
+GLYCOPROTEIN	human	P07911	UMOD	P07911	34	347	Uromodulin (Tamm-Horsfall urinary glycoprotein) (THP) [Cleav	w
+GLYCOPROTEIN	human	P07996	THBS1	P07996	60	1224	Thrombospondin-1 (Glycoprotein G)	w
+GLYCOPROTEIN	human	P08514	ITGA2B	P08514	66	667	Integrin alpha-IIb (GPalpha IIb) (GPIIb) (Platelet membrane 	w
+GLYCOPROTEIN	human	P08571	CD14	P08571	43	606	Monocyte differentiation antigen CD14 (My23 antigen) (Myeloi	w
+GLYCOPROTEIN	human	P08887	IL6R	P08887	163	429	Interleukin-6 receptor subunit alpha (IL-6 receptor subunit 	w
+GLYCOPROTEIN	human	P09693	CD3G	P09693	33	340	T-cell surface glycoprotein CD3 gamma chain (T-cell receptor	w
+GLYCOPROTEIN	human	P09758	TACSTD2	P09758	15	295	Tumor-associated calcium signal transducer 2 (Cell surface g	w
+GLYCOPROTEIN	human	P10747	CD28	P10747	150	738	T-cell-specific surface glycoprotein CD28 (TP44) (CD antigen	w
+GLYCOPROTEIN	human	P10966	CD8B	P10966	36	119	T-cell surface glycoprotein CD8 beta chain (CD antigen CD8b)	w
+GLYCOPROTEIN	human	P11215	ITGAM	P11215	26	190	Integrin alpha-M (CD11 antigen-like family member B) (CR-3 a	w
+GLYCOPROTEIN	human	P11279	LAMP1	P11279	81	926	Lysosome-associated membrane glycoprotein 1 (LAMP-1) (Lysoso	w
+GLYCOPROTEIN	human	P11464	PSG1	P11464	5	85	Pregnancy-specific beta-1-glycoprotein 1 (PS-beta-G-1) (PSBG	w
+GLYCOPROTEIN	human	P11465	PSG2	P11465	10	143	Pregnancy-specific beta-1-glycoprotein 2 (PS-beta-G-2) (PSBG	w
+GLYCOPROTEIN	human	P11912	CD79A	P11912	61	662	B-cell antigen receptor complex-associated protein alpha cha	w
+GLYCOPROTEIN	human	P13224	GP1BB	P13224	150	625	Platelet glycoprotein Ib beta chain (GP-Ib beta) (GPIb-beta)	w
+GLYCOPROTEIN	human	P13473	LAMP2	P13473	19	619	Lysosome-associated membrane glycoprotein 2 (LAMP-2) (Lysoso	w
+GLYCOPROTEIN	human	P13688	CEACAM1	P13688	24	160	Cell adhesion molecule CEACAM1 (Biliary glycoprotein 1) (BGP	w
+GLYCOPROTEIN	human	P13987	CD59	P13987	53	699	CD59 glycoprotein (1F5 antigen) (20 kDa homologous restricti	w
+GLYCOPROTEIN	human	P14209	CD99	P14209	10	181	CD99 antigen (12E7) (E2 antigen) (Protein MIC2) (T-cell surf	w
+GLYCOPROTEIN	human	P14770	GP9	P14770	52	419	Platelet glycoprotein IX (GP-IX) (GPIX) (Glycoprotein 9) (CD	w
+GLYCOPROTEIN	human	P15144	ANPEP	P15144	10	215	Aminopeptidase N (AP-N) (hAPN) (EC 3.4.11.2) (Alanyl aminope	w
+GLYCOPROTEIN	human	P15812	CD1E	P15812	32	212	T-cell surface glycoprotein CD1e, membrane-associated (hCD1e	w
+GLYCOPROTEIN	human	P15813	CD1D	P15813	66	394	Antigen-presenting glycoprotein CD1d (R3G1) (CD antigen CD1d	w
+GLYCOPROTEIN	human	P16422	EPCAM	P16422	24	487	Epithelial cell adhesion molecule (Ep-CAM) (Adenocarcinoma-a	w
+GLYCOPROTEIN	human	P16671	CD36	P16671	25	543	Platelet glycoprotein 4 (Fatty acid translocase) (FAT) (Glyc	w
+GLYCOPROTEIN	human	P17301	ITGA2	P17301	37	378	Integrin alpha-2 (CD49 antigen-like family member B) (Collag	w
+GLYCOPROTEIN	human	P17643	TYRP1	P17643	31	296	5,6-dihydroxyindole-2-carboxylic acid oxidase (DHICA oxidase	w
+GLYCOPROTEIN	human	P19256	CD58	P19256	47	378	Lymphocyte function-associated antigen 3 (Ag3) (Surface glyc	w
+GLYCOPROTEIN	human	P19397	CD53	P19397	46	361	Leukocyte surface antigen CD53 (Cell surface glycoprotein CD	w
+GLYCOPROTEIN	human	P19652	ORM2	P19652	110	583	Alpha-1-acid glycoprotein 2 (AGP 2) (Orosomucoid-2) (OMD 2)	w
+GLYCOPROTEIN	human	P20701	ITGAL	P20701	48	385	Integrin alpha-L (CD11 antigen-like family member A) (Leukoc	w
+GLYCOPROTEIN	human	P20702	ITGAX	P20702	31	337	Integrin alpha-X (CD11 antigen-like family member C) (Leu M5	w
+GLYCOPROTEIN	human	P20916	MAG	P20916	20	198	Myelin-associated glycoprotein (Siglec-4a)	w
+GLYCOPROTEIN	human	P20963	CD247	P20963	57	383	T-cell surface glycoprotein CD3 zeta chain (T-cell receptor 	w
+GLYCOPROTEIN	human	P21754	ZP3	P21754	14	85	Zona pellucida sperm-binding protein 3 (Sperm receptor) (ZP3	w
+GLYCOPROTEIN	human	P23276	KEL	P23276	23	180	Kell blood group glycoprotein (EC 3.4.24.-) (CD antigen CD23	w
+GLYCOPROTEIN	human	P23510	TNFSF4	P23510	69	405	Tumor necrosis factor ligand superfamily member 4 (Glycoprot	w
+GLYCOPROTEIN	human	P23515	OMG	P23515	10	82	Oligodendrocyte-myelin glycoprotein	w
+GLYCOPROTEIN	human	P28799	GRN	P28799	25	403	Progranulin (PGRN) (Acrogranin) (Epithelin precursor) (Glyco	w
+GLYCOPROTEIN	human	P29016	CD1B	P29016	83	531	T-cell surface glycoprotein CD1b (CD antigen CD1b)	w
+GLYCOPROTEIN	human	P29017	CD1C	P29017	41	396	T-cell surface glycoprotein CD1c (CD antigen CD1c)	w
+GLYCOPROTEIN	human	P36222	CHI3L1	P36222	10	192	Chitinase-3-like protein 1 (39 kDa synovial protein) (Cartil	w
+GLYCOPROTEIN	human	P37198	NUP62	P37198	41	323	Nuclear pore glycoprotein p62 (62 kDa nucleoporin) (Nucleopo	w
+GLYCOPROTEIN	human	P38159	RBMX	P38159	28	408	RNA-binding motif protein, X chromosome (Glycoprotein p43) (	w
+GLYCOPROTEIN	human	P40197	GP5	P40197	31	366	Platelet glycoprotein V (GPV) (Glycoprotein 5) (CD antigen C	w
+GLYCOPROTEIN	human	P40259	CD79B	P40259	67	485	B-cell antigen receptor complex-associated protein beta chai	w
+GLYCOPROTEIN	human	P41217	CD200	P41217	14	135	OX-2 membrane glycoprotein (CD antigen CD200)	w
+GLYCOPROTEIN	human	P41732	TSPAN7	P41732	6	132	Tetraspanin-7 (Tspan-7) (Cell surface glycoprotein A15) (Mem	w
+GLYCOPROTEIN	human	P43121	MCAM	P43121	108	615	Cell surface glycoprotein MUC18 (Cell surface glycoprotein P	w
+GLYCOPROTEIN	human	P43489	TNFRSF4	P43489	37	230	Tumor necrosis factor receptor superfamily member 4 (ACT35 a	w
+GLYCOPROTEIN	human	P48509	CD151	P48509	20	240	CD151 antigen (GP27) (Membrane glycoprotein SFA-1) (Platelet	w
+GLYCOPROTEIN	human	P50579	METAP2	P50579	85	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+GLYCOPROTEIN	human	P50895	BCAM	P50895	26	250	Basal cell adhesion molecule (Auberger B antigen) (B-CAM cel	w
+GLYCOPROTEIN	human	P51674	GPM6A	P51674	2	302	Neuronal membrane glycoprotein M6-a (M6a)	w
+GLYCOPROTEIN	human	P54107	CRISP1	P54107	15	92	Cysteine-rich secretory protein 1 (CRISP-1) (AEG-like protei	w
+GLYCOPROTEIN	human	P55001	MFAP2	P55001	13	87	Microfibrillar-associated protein 2 (MFAP-2) (Microfibril-as	w
+GLYCOPROTEIN	human	P55082	MFAP3	P55082	8	85	Microfibril-associated glycoprotein 3	w
+GLYCOPROTEIN	human	P55083	MFAP4	P55083	25	308	Microfibril-associated glycoprotein 4	w
+GLYCOPROTEIN	human	P55259	GP2	P55259	24	233	Pancreatic secretory granule membrane major glycoprotein GP2	w
+GLYCOPROTEIN	human	P55808	XG	P55808	0	28	Glycoprotein Xg (Protein PBDX)	w
+GLYCOPROTEIN	human	P60852	ZP1	P60852	12	87	Zona pellucida sperm-binding protein 1 (Zona pellucida glyco	w
 GLYCOPROTEIN	human	P80108	GPLD1	P80108	0	35	Phosphatidylinositol-glycan-specific phospholipase D (PI-G P	w
-GLYCOPROTEIN	human	Q00887	PSG9	Q00887	9	58	Pregnancy-specific beta-1-glycoprotein 9 (PS-beta-G-9) (PSBG	w
+GLYCOPROTEIN	human	Q00887	PSG9	Q00887	7	58	Pregnancy-specific beta-1-glycoprotein 9 (PS-beta-G-9) (PSBG	w
 GLYCOPROTEIN	human	Q00888	PSG4	Q00888	1	40	Pregnancy-specific beta-1-glycoprotein 4 (PS-beta-G-4) (PSBG	w
 GLYCOPROTEIN	human	Q00889	PSG6	Q00889	4	41	Pregnancy-specific beta-1-glycoprotein 6 (PS-beta-G-6) (PSBG	w
 GLYCOPROTEIN	human	Q02094	RHAG	Q02094	6	226	Ammonium transporter Rh type A (Erythrocyte membrane glycopr	w
-GLYCOPROTEIN	human	Q02246	CNTN2	Q02246	25	194	Contactin-2 (Axonal glycoprotein TAG-1) (Axonin-1) (Transien	w
-GLYCOPROTEIN	human	Q02413	DSG1	Q02413	55	437	Desmoglein-1 (Cadherin family member 4) (Desmosomal glycopro	w
-GLYCOPROTEIN	human	Q02487	DSC2	Q02487	46	231	Desmocollin-2 (Cadherin family member 2) (Desmocollin-3) (De	w
-GLYCOPROTEIN	human	Q04118	PRB3	Q04118	4	61	Basic salivary proline-rich protein 3 (Parotid salivary glyc	w
-GLYCOPROTEIN	human	Q05996	ZP2	Q05996	16	95	Zona pellucida sperm-binding protein 2 (Zona pellucida glyco	w
-GLYCOPROTEIN	human	Q07021	C1QBP	Q07021	35	586	Complement component 1 Q subcomponent-binding protein, mitoc	w
-GLYCOPROTEIN	human	Q08554	DSC1	Q08554	43	229	Desmocollin-1 (Cadherin family member 1) (Desmosomal glycopr	w
-GLYCOPROTEIN	human	Q0VAQ4	SMAGP	Q0VAQ4	32	112	Small cell adhesion glycoprotein (Small transmembrane and gl	w
-GLYCOPROTEIN	human	Q12836	ZP4	Q12836	13	87	Zona pellucida sperm-binding protein 4 (Zona pellucida glyco	w
-GLYCOPROTEIN	human	Q12860	CNTN1	Q12860	22	165	Contactin-1 (Glycoprotein gp135) (Neural cell surface protei	w
-GLYCOPROTEIN	human	Q12889	OVGP1	Q12889	5	44	Oviduct-specific glycoprotein (Estrogen-dependent oviduct pr	w
-GLYCOPROTEIN	human	Q12907	LMAN2	Q12907	32	189	Vesicular integral-membrane protein VIP36 (Glycoprotein GP36	w
+GLYCOPROTEIN	human	Q02246	CNTN2	Q02246	20	194	Contactin-2 (Axonal glycoprotein TAG-1) (Axonin-1) (Transien	w
+GLYCOPROTEIN	human	Q02413	DSG1	Q02413	51	437	Desmoglein-1 (Cadherin family member 4) (Desmosomal glycopro	w
+GLYCOPROTEIN	human	Q02487	DSC2	Q02487	40	231	Desmocollin-2 (Cadherin family member 2) (Desmocollin-3) (De	w
+GLYCOPROTEIN	human	Q04118	PRB3	Q04118	2	61	Basic salivary proline-rich protein 3 (Parotid salivary glyc	w
+GLYCOPROTEIN	human	Q05996	ZP2	Q05996	15	95	Zona pellucida sperm-binding protein 2 (Zona pellucida glyco	w
+GLYCOPROTEIN	human	Q07021	C1QBP	Q07021	24	586	Complement component 1 Q subcomponent-binding protein, mitoc	w
+GLYCOPROTEIN	human	Q08554	DSC1	Q08554	38	229	Desmocollin-1 (Cadherin family member 1) (Desmosomal glycopr	w
+GLYCOPROTEIN	human	Q0VAQ4	SMAGP	Q0VAQ4	24	112	Small cell adhesion glycoprotein (Small transmembrane and gl	w
+GLYCOPROTEIN	human	Q12836	ZP4	Q12836	12	87	Zona pellucida sperm-binding protein 4 (Zona pellucida glyco	w
+GLYCOPROTEIN	human	Q12860	CNTN1	Q12860	19	165	Contactin-1 (Glycoprotein gp135) (Neural cell surface protei	w
+GLYCOPROTEIN	human	Q12889	OVGP1	Q12889	4	44	Oviduct-specific glycoprotein (Estrogen-dependent oviduct pr	w
+GLYCOPROTEIN	human	Q12907	LMAN2	Q12907	23	189	Vesicular integral-membrane protein VIP36 (Glycoprotein GP36	w
 GLYCOPROTEIN	human	Q13046	PSG7	Q13046	1	29	Pregnancy-specific beta-1-glycoprotein 7 (PS-beta-G-7) (PSBG	w
-GLYCOPROTEIN	human	Q13326	SGCG	Q13326	8	58	Gamma-sarcoglycan (Gamma-SG) (35 kDa dystrophin-associated g	w
-GLYCOPROTEIN	human	Q13361	MFAP5	Q13361	28	126	Microfibrillar-associated protein 5 (MFAP-5) (MP25) (Microfi	w
+GLYCOPROTEIN	human	Q13326	SGCG	Q13326	7	58	Gamma-sarcoglycan (Gamma-SG) (35 kDa dystrophin-associated g	w
+GLYCOPROTEIN	human	Q13361	MFAP5	Q13361	25	126	Microfibrillar-associated protein 5 (MFAP-5) (MP25) (Microfi	w
 GLYCOPROTEIN	human	Q13491	GPM6B	Q13491	2	36	Neuronal membrane glycoprotein M6-b (M6b)	w
-GLYCOPROTEIN	human	Q13641	TPBG	Q13641	26	166	Trophoblast glycoprotein (5T4 oncofetal antigen) (5T4 oncofe	w
-GLYCOPROTEIN	human	Q14118	DAG1	Q14118	44	207	Dystroglycan 1 (Dystroglycan) (Dystrophin-associated glycopr	w
-GLYCOPROTEIN	human	Q14242	SELPLG	Q14242	58	313	P-selectin glycoprotein ligand 1 (PSGL-1) (Selectin P ligand	w
-GLYCOPROTEIN	human	Q14392	LRRC32	Q14392	42	231	Transforming growth factor beta activator LRRC32 (Garpin) (G	w
-GLYCOPROTEIN	human	Q14773	ICAM4	Q14773	32	106	Intercellular adhesion molecule 4 (ICAM-4) (Landsteiner-Wien	w
-GLYCOPROTEIN	human	Q14956	GPNMB	Q14956	31	222	Transmembrane glycoprotein NMB (Hematopoietic growth factor 	w
-GLYCOPROTEIN	human	Q15238	PSG5	Q15238	9	79	Pregnancy-specific beta-1-glycoprotein 5 (PS-beta-G-5) (PSBG	w
-GLYCOPROTEIN	human	Q16186	ADRM1	Q16186	40	246	Proteasomal ubiquitin receptor ADRM1 (110 kDa cell membrane 	w
-GLYCOPROTEIN	human	Q16557	PSG3	Q16557	9	63	Pregnancy-specific beta-1-glycoprotein 3 (PS-beta-G-3) (PSBG	w
-GLYCOPROTEIN	human	Q16570	ACKR1	Q16570	52	311	Atypical chemokine receptor 1 (Duffy antigen receptor for ch	w
-GLYCOPROTEIN	human	Q16585	SGCB	Q16585	17	114	Beta-sarcoglycan (Beta-SG) (43 kDa dystrophin-associated gly	w
-GLYCOPROTEIN	human	Q16586	SGCA	Q16586	23	193	Alpha-sarcoglycan (Alpha-SG) (50 kDa dystrophin-associated g	w
-GLYCOPROTEIN	human	Q16653	MOG	Q16653	3	49	Myelin-oligodendrocyte glycoprotein	w
+GLYCOPROTEIN	human	Q13641	TPBG	Q13641	23	166	Trophoblast glycoprotein (5T4 oncofetal antigen) (5T4 oncofe	w
+GLYCOPROTEIN	human	Q14118	DAG1	Q14118	40	207	Dystroglycan 1 (Dystroglycan) (Dystrophin-associated glycopr	w
+GLYCOPROTEIN	human	Q14242	SELPLG	Q14242	44	313	P-selectin glycoprotein ligand 1 (PSGL-1) (Selectin P ligand	w
+GLYCOPROTEIN	human	Q14392	LRRC32	Q14392	35	231	Transforming growth factor beta activator LRRC32 (Garpin) (G	w
+GLYCOPROTEIN	human	Q14773	ICAM4	Q14773	28	106	Intercellular adhesion molecule 4 (ICAM-4) (Landsteiner-Wien	w
+GLYCOPROTEIN	human	Q14956	GPNMB	Q14956	27	222	Transmembrane glycoprotein NMB (Hematopoietic growth factor 	w
+GLYCOPROTEIN	human	Q15238	PSG5	Q15238	6	79	Pregnancy-specific beta-1-glycoprotein 5 (PS-beta-G-5) (PSBG	w
+GLYCOPROTEIN	human	Q16186	ADRM1	Q16186	36	246	Proteasomal ubiquitin receptor ADRM1 (110 kDa cell membrane 	w
+GLYCOPROTEIN	human	Q16557	PSG3	Q16557	6	63	Pregnancy-specific beta-1-glycoprotein 3 (PS-beta-G-3) (PSBG	w
+GLYCOPROTEIN	human	Q16570	ACKR1	Q16570	44	311	Atypical chemokine receptor 1 (Duffy antigen receptor for ch	w
+GLYCOPROTEIN	human	Q16585	SGCB	Q16585	12	114	Beta-sarcoglycan (Beta-SG) (43 kDa dystrophin-associated gly	w
+GLYCOPROTEIN	human	Q16586	SGCA	Q16586	18	193	Alpha-sarcoglycan (Alpha-SG) (50 kDa dystrophin-associated g	w
+GLYCOPROTEIN	human	Q16653	MOG	Q16653	2	49	Myelin-oligodendrocyte glycoprotein	w
 GLYCOPROTEIN	human	Q496J9	SV2C	Q496J9	3	46	Synaptic vesicle glycoprotein 2C	w
 GLYCOPROTEIN	human	Q4G0N0	GGTA1	Q4G0N0	1	15	Inactive N-acetyllactosaminide alpha-1,3-galactosyltransfera	w
-GLYCOPROTEIN	human	Q5SRI9	MANEA	Q5SRI9	22	114	Glycoprotein endo-alpha-1,2-mannosidase (Endo-alpha mannosid	w
-GLYCOPROTEIN	human	Q5VSG8	MANEAL	Q5VSG8	15	110	Glycoprotein endo-alpha-1,2-mannosidase-like protein (EC 3.2	w
-GLYCOPROTEIN	human	Q5VU65	NUP210L	Q5VU65	3	56	Nuclear pore membrane glycoprotein 210-like (Nucleoporin 210	w
-GLYCOPROTEIN	human	Q6Q8B3	CD200R1L	Q6Q8B3	15	48	Cell surface glycoprotein CD200 receptor 2 (CD200 cell surfa	w
-GLYCOPROTEIN	human	Q6UXC1	MAMDC4	Q6UXC1	4	35	Apical endosomal glycoprotein (MAM domain-containing protein	w
-GLYCOPROTEIN	human	Q7L0J3	SV2A	Q7L0J3	11	194	Synaptic vesicle glycoprotein 2A	w
-GLYCOPROTEIN	human	Q7L1I2	SV2B	Q7L1I2	7	112	Synaptic vesicle glycoprotein 2B	w
-GLYCOPROTEIN	human	Q86XK7	VSIG1	Q86XK7	12	105	V-set and immunoglobulin domain-containing protein 1 (Cell s	w
+GLYCOPROTEIN	human	Q5SRI9	MANEA	Q5SRI9	18	114	Glycoprotein endo-alpha-1,2-mannosidase (Endo-alpha mannosid	w
+GLYCOPROTEIN	human	Q5VSG8	MANEAL	Q5VSG8	11	110	Glycoprotein endo-alpha-1,2-mannosidase-like protein (EC 3.2	w
+GLYCOPROTEIN	human	Q5VU65	NUP210L	Q5VU65	1	56	Nuclear pore membrane glycoprotein 210-like (Nucleoporin 210	w
+GLYCOPROTEIN	human	Q6Q8B3	CD200R1L	Q6Q8B3	12	48	Cell surface glycoprotein CD200 receptor 2 (CD200 cell surfa	w
+GLYCOPROTEIN	human	Q6UXC1	MAMDC4	Q6UXC1	3	35	Apical endosomal glycoprotein (MAM domain-containing protein	w
+GLYCOPROTEIN	human	Q7L0J3	SV2A	Q7L0J3	10	194	Synaptic vesicle glycoprotein 2A	w
+GLYCOPROTEIN	human	Q7L1I2	SV2B	Q7L1I2	4	112	Synaptic vesicle glycoprotein 2B	w
+GLYCOPROTEIN	human	Q86XK7	VSIG1	Q86XK7	11	105	V-set and immunoglobulin domain-containing protein 1 (Cell s	w
 GLYCOPROTEIN	human	Q86YL7	PDPN	Q86YL7	4	32	Podoplanin (Aggrus) (Glycoprotein 36) (Gp36) (PA2.26 antigen	w
-GLYCOPROTEIN	human	Q86YW7	GPHB5	Q86YW7	19	74	Glycoprotein hormone beta-5 (Thyrostimulin subunit beta)	w
-GLYCOPROTEIN	human	Q8N6Q3	CD177	Q8N6Q3	16	200	CD177 antigen (Human neutrophil alloantigen 2a) (HNA-2a) (NB	w
-GLYCOPROTEIN	human	Q8TD46	CD200R1	Q8TD46	44	235	Cell surface glycoprotein CD200 receptor 1 (CD200 cell surfa	w
-GLYCOPROTEIN	human	Q8TEM1	NUP210	Q8TEM1	9	191	Nuclear pore membrane glycoprotein 210 (Nuclear pore protein	w
-GLYCOPROTEIN	human	Q92629	SGCD	Q92629	8	50	Delta-sarcoglycan (Delta-SG) (35 kDa dystrophin-associated g	w
-GLYCOPROTEIN	human	Q93033	CD101	Q93033	29	115	Immunoglobulin superfamily member 2 (IgSF2) (Cell surface gl	w
-GLYCOPROTEIN	human	Q96T91	GPHA2	Q96T91	20	86	Glycoprotein hormone alpha-2 (Putative secreted protein Zsig	w
-GLYCOPROTEIN	human	Q99523	SORT1	Q99523	62	357	Sortilin (100 kDa NT receptor) (Glycoprotein 95) (Gp95) (Neu	w
-GLYCOPROTEIN	human	Q99795	GPA33	Q99795	39	156	Cell surface A33 antigen (Glycoprotein A33)	w
-GLYCOPROTEIN	human	Q9BVK6	TMED9	Q9BVK6	19	190	Transmembrane emp24 domain-containing protein 9 (GMP25) (Gly	w
-GLYCOPROTEIN	human	Q9GZZ8	LACRT	Q9GZZ8	12	158	Extracellular glycoprotein lacritin	w
-GLYCOPROTEIN	human	Q9H2U9	ADAM7	Q9H2U9	8	75	Disintegrin and metalloproteinase domain-containing protein 	w
-GLYCOPROTEIN	human	Q9H310	RHBG	Q9H310	5	35	Ammonium transporter Rh type B (Rhesus blood group family ty	w
-GLYCOPROTEIN	human	Q9H3Q3	GAL3ST2	Q9H3Q3	11	49	Galactose-3-O-sulfotransferase 2 (Gal3ST-2) (EC 2.8.2.-) (Be	w
-GLYCOPROTEIN	human	Q9H5V8	CDCP1	Q9H5V8	19	189	CUB domain-containing protein 1 (Membrane glycoprotein gp140	w
-GLYCOPROTEIN	human	Q9HB03	ELOVL3	Q9HB03	3	34	Very long chain fatty acid elongase 3 (EC 2.3.1.199) (3-keto	w
-GLYCOPROTEIN	human	Q9HCN6	GP6	Q9HCN6	19	122	Platelet glycoprotein VI (GPVI) (Glycoprotein 6)	w
-GLYCOPROTEIN	human	Q9NRA2	SLC17A5	Q9NRA2	2	80	Sialin (H(+)/nitrate cotransporter) (H(+)/sialic acid cotran	w
-GLYCOPROTEIN	human	Q9NTU7	CBLN4	Q9NTU7	29	374	Cerebellin-4 (Cerebellin-like glycoprotein 1)	w
-GLYCOPROTEIN	human	Q9NU53	GINM1	Q9NU53	17	93	Glycoprotein integral membrane protein 1	w
-GLYCOPROTEIN	human	Q9NYU1	UGGT2	Q9NYU1	2	86	UDP-glucose:glycoprotein glucosyltransferase 2 (UGT2) (hUGT2	w
-GLYCOPROTEIN	human	Q9NYU2	UGGT1	Q9NYU2	18	181	UDP-glucose:glycoprotein glucosyltransferase 1 (UGT1) (hUGT1	w
-GLYCOPROTEIN	human	Q9NZ01	TECR	Q9NZ01	28	306	Very-long-chain enoyl-CoA reductase (EC 1.3.1.93) (Synaptic 	w
-GLYCOPROTEIN	human	Q9P232	CNTN3	Q9P232	30	83	Contactin-3 (Brain-derived immunoglobulin superfamily protei	w
+GLYCOPROTEIN	human	Q86YW7	GPHB5	Q86YW7	17	74	Glycoprotein hormone beta-5 (Thyrostimulin subunit beta)	w
+GLYCOPROTEIN	human	Q8N6Q3	CD177	Q8N6Q3	15	200	CD177 antigen (Human neutrophil alloantigen 2a) (HNA-2a) (NB	w
+GLYCOPROTEIN	human	Q8TD46	CD200R1	Q8TD46	41	235	Cell surface glycoprotein CD200 receptor 1 (CD200 cell surfa	w
+GLYCOPROTEIN	human	Q8TEM1	NUP210	Q8TEM1	5	191	Nuclear pore membrane glycoprotein 210 (Nuclear pore protein	w
+GLYCOPROTEIN	human	Q92629	SGCD	Q92629	6	50	Delta-sarcoglycan (Delta-SG) (35 kDa dystrophin-associated g	w
+GLYCOPROTEIN	human	Q93033	CD101	Q93033	24	115	Immunoglobulin superfamily member 2 (IgSF2) (Cell surface gl	w
+GLYCOPROTEIN	human	Q96T91	GPHA2	Q96T91	19	86	Glycoprotein hormone alpha-2 (Putative secreted protein Zsig	w
+GLYCOPROTEIN	human	Q99523	SORT1	Q99523	49	357	Sortilin (100 kDa NT receptor) (Glycoprotein 95) (Gp95) (Neu	w
+GLYCOPROTEIN	human	Q99795	GPA33	Q99795	33	156	Cell surface A33 antigen (Glycoprotein A33)	w
+GLYCOPROTEIN	human	Q9BVK6	TMED9	Q9BVK6	13	190	Transmembrane emp24 domain-containing protein 9 (GMP25) (Gly	w
+GLYCOPROTEIN	human	Q9GZZ8	LACRT	Q9GZZ8	10	158	Extracellular glycoprotein lacritin	w
+GLYCOPROTEIN	human	Q9H2U9	ADAM7	Q9H2U9	7	75	Disintegrin and metalloproteinase domain-containing protein 	w
+GLYCOPROTEIN	human	Q9H310	RHBG	Q9H310	4	35	Ammonium transporter Rh type B (Rhesus blood group family ty	w
+GLYCOPROTEIN	human	Q9H3Q3	GAL3ST2	Q9H3Q3	6	49	Galactose-3-O-sulfotransferase 2 (Gal3ST-2) (EC 2.8.2.-) (Be	w
+GLYCOPROTEIN	human	Q9H5V8	CDCP1	Q9H5V8	14	189	CUB domain-containing protein 1 (Membrane glycoprotein gp140	w
+GLYCOPROTEIN	human	Q9HB03	ELOVL3	Q9HB03	2	34	Very long chain fatty acid elongase 3 (EC 2.3.1.199) (3-keto	w
+GLYCOPROTEIN	human	Q9HCN6	GP6	Q9HCN6	15	122	Platelet glycoprotein VI (GPVI) (Glycoprotein 6)	w
+GLYCOPROTEIN	human	Q9NRA2	SLC17A5	Q9NRA2	1	80	Sialin (H(+)/nitrate cotransporter) (H(+)/sialic acid cotran	w
+GLYCOPROTEIN	human	Q9NTU7	CBLN4	Q9NTU7	24	374	Cerebellin-4 (Cerebellin-like glycoprotein 1)	w
+GLYCOPROTEIN	human	Q9NU53	GINM1	Q9NU53	14	93	Glycoprotein integral membrane protein 1	w
+GLYCOPROTEIN	human	Q9NYU1	UGGT2	Q9NYU1	1	86	UDP-glucose:glycoprotein glucosyltransferase 2 (UGT2) (hUGT2	w
+GLYCOPROTEIN	human	Q9NYU2	UGGT1	Q9NYU2	15	181	UDP-glucose:glycoprotein glucosyltransferase 1 (UGT1) (hUGT1	w
+GLYCOPROTEIN	human	Q9NZ01	TECR	Q9NZ01	19	306	Very-long-chain enoyl-CoA reductase (EC 1.3.1.93) (Synaptic 	w
+GLYCOPROTEIN	human	Q9P232	CNTN3	Q9P232	26	83	Contactin-3 (Brain-derived immunoglobulin superfamily protei	w
 GLYCOPROTEIN	human	Q9UBD6	RHCG	Q9UBD6	4	57	Ammonium transporter Rh type C (Rh glycoprotein kidney) (Rhe	w
-GLYCOPROTEIN	human	Q9UGM3	DMBT1	Q9UGM3	5	256	Scavenger receptor cysteine-rich domain-containing protein D	w
-GLYCOPROTEIN	human	Q9UJQ1	LAMP5	Q9UJQ1	25	154	Lysosome-associated membrane glycoprotein 5 (Brain and dendr	w
-GLYCOPROTEIN	human	Q9UQ72	PSG11	Q9UQ72	17	192	Pregnancy-specific beta-1-glycoprotein 11 (PS-beta-G-11) (PS	w
-GLYCOPROTEIN	human	Q9UQ74	PSG8	Q9UQ74	11	72	Pregnancy-specific beta-1-glycoprotein 8 (PS-beta-G-8) (PSBG	w
-GLYCOPROTEIN	human	Q9UQV4	LAMP3	Q9UQV4	79	547	Lysosome-associated membrane glycoprotein 3 (LAMP-3) (Lysoso	w
+GLYCOPROTEIN	human	Q9UGM3	DMBT1	Q9UGM3	1	256	Scavenger receptor cysteine-rich domain-containing protein D	w
+GLYCOPROTEIN	human	Q9UJQ1	LAMP5	Q9UJQ1	19	154	Lysosome-associated membrane glycoprotein 5 (Brain and dendr	w
+GLYCOPROTEIN	human	Q9UQ72	PSG11	Q9UQ72	15	192	Pregnancy-specific beta-1-glycoprotein 11 (PS-beta-G-11) (PS	w
+GLYCOPROTEIN	human	Q9UQ74	PSG8	Q9UQ74	7	72	Pregnancy-specific beta-1-glycoprotein 8 (PS-beta-G-8) (PSBG	w
+GLYCOPROTEIN	human	Q9UQV4	LAMP3	Q9UQV4	62	547	Lysosome-associated membrane glycoprotein 3 (LAMP-3) (Lysoso	w
 GLYCOPROTEIN	virus	A0A060PYB1	UL44	A0A060PYB1	5	68	Envelope glycoprotein C	w
 GLYCOPROTEIN	virus	A0A060PYC0	UL53	A0A060PYC0	3	67	Envelope glycoprotein K	w
 GLYCOPROTEIN	virus	A0A060Q0X8	US7	A0A060Q0X8	5	67	Envelope glycoprotein I	w
@@ -1349,49 +1349,49 @@ GLYCOPROTEIN	zebrafish	R4GES4	mfap4.7	R4GES4	0	1	Microfibril-associated glycopro
 GLYCOPROTEIN	zebrafish	X1WCQ3	sv2bb	X1WCQ3	0	1	Synaptic vesicle glycoprotein 2B	w
 GLYCOPROTEIN	zebrafish	X1WE05	si:dkey-239b22.2	X1WE05	0	20	Pancreatic secretory granule membrane major glycoprotein GP2	w
 GLYCOPROTEIN H	virus	A0A5P9JQZ6	glycoprotein H	A0A5P9JQZ6	0	80	A0A5P9JQZ6_9ALPH	
-GLYCOPROTEIN-ASSOCIATED	human	P82251	SLC7A9	P82251	9	62	b(0,+)-type amino acid transporter 1 (b(0,+)AT1) (Glycoprote	w
+GLYCOPROTEIN-ASSOCIATED	human	P82251	SLC7A9	P82251	8	62	b(0,+)-type amino acid transporter 1 (b(0,+)AT1) (Glycoprote	w
 GLYCOPROTEIN-LIKE	human	P0DKB5	TPBGL	P0DKB5	5	39	Trophoblast glycoprotein-like	w
 GLYCOPROTEIN-LIKE	worm	Q21616	CELE_R01E6.5	Q21616	0	4	Histidine-rich glycoprotein-like	w
 GLYCOPROTEIN-LIKE	worm	Q9NES7	CELE_Y39B6A.1	Q9NES7	0	5	Histidine-rich glycoprotein-like	w
 GLYCOPROTEIN-LIKE	zebrafish	A0A2R8PZ71	tpbg1a	A0A2R8PZ71	3	29	Trophoblast glycoprotein-like	w
 GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	fly	FBgn0032078	C1GalTA	Q7K237	136	2412	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
-GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	human	Q9NS00	C1GALT1	Q9NS00	11	127	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
+GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	human	Q9NS00	C1GALT1	Q9NS00	7	127	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
 GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	worm	Q18515	C38H2.2	Q18515	4	12	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
 GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	zebrafish	A0A0G2L384	c1galt1b	A0A0G2L384	0	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
 GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	zebrafish	A3KQK4	c1galt1a	A3KQK4	2	27	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
 GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	zebrafish	Q08BL3	c1galt1la	Q08BL3	0	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
 GLYCOPROTEIN-N-ACETYLGALACTOSAMINE	zebrafish	Q7SYI5	c1galt1lb	Q7SYI5	2	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	w
-GLYCOPROTEINS	human	P05107	ITGB2	P05107	60	560	Integrin beta-2 (Cell surface adhesion glycoproteins LFA-1/C	w
+GLYCOPROTEINS	human	P05107	ITGB2	P05107	48	560	Integrin beta-2 (Cell surface adhesion glycoproteins LFA-1/C	w
 GLYCOSAMINOGLYCAN	fly	FBgn0038268	CG3631	Q95T10	0	2	Glycosaminoglycan xylosylkinase homolog (EC 2.7.1.-) (Xylose	w
 GLYCOSAMINOGLYCAN	human	O75063	FAM20B	O75063	2	75	Glycosaminoglycan xylosylkinase (EC 2.7.1.-) (Xylose kinase)	w
 GLYCOSAMINOGLYCAN	zebrafish	Q5RH51	fam20b	Q5RH51	0	2	Glycosaminoglycan xylosylkinase	w
-GLYCOSIDASE	human	P29372	MPG	P29372	17	129	DNA-3-methyladenine glycosylase (EC 3.2.2.21) (3-alkyladenin	w
-GLYCOSIDASE	human	Q6NSJ0	MYORG	Q6NSJ0	6	85	Alpha-galactosidase MYORG (EC 3.2.1.22) (Myogenesis regulati	w
+GLYCOSIDASE	human	P29372	MPG	P29372	14	129	DNA-3-methyladenine glycosylase (EC 3.2.2.21) (3-alkyladenin	w
+GLYCOSIDASE	human	Q6NSJ0	MYORG	Q6NSJ0	4	85	Alpha-galactosidase MYORG (EC 3.2.1.22) (Myogenesis regulati	w
 GLYCOSIDASE	yeast	Q05790	CRR1	Q05790	0	15	Probable glycosidase CRR1	w
 GLYCOSIDASE	zebrafish	E7F1U0	myorg	E7F1U0	1	60	Myogenesis-regulating glycosidase	w
 GLYCOSIDE	worm	O17352	aagr-4	O17352	0	15	Glycoside hydrolase family 31 N-terminal domain-containing p	w
 GLYCOSIDE	worm	O76632	bgal-2	O76632	0	6	Glycoside hydrolase 35 catalytic domain-containing protein	w
 GLYCOSIDE	worm	Q18758	klo-1	Q18758	0	6	Glycoside hydrolase family 1 protein	w
 GLYCOSIDE	worm	Q9TZA0	klo-2	Q9TZA0	0	4	Glycoside hydrolase family 1 protein	w
-GLYCOSPHINGOLIPID-ENRICHED	human	Q9NWQ8	PAG1	Q9NWQ8	48	133	Phosphoprotein associated with glycosphingolipid-enriched mi	w
+GLYCOSPHINGOLIPID-ENRICHED	human	Q9NWQ8	PAG1	Q9NWQ8	42	133	Phosphoprotein associated with glycosphingolipid-enriched mi	w
 GLYCOSPHINGOLIPID-ENRICHED	zebrafish	F6P529	pag1	F6P529	10	18	Phosphoprotein associated with glycosphingolipid-enriched mi	w
 GLYCOSYL	worm	O45298	atgp-2	O45298	7	20	Glycosyl hydrolase family 13 catalytic domain-containing pro	w
 GLYCOSYL	worm	Q21662	CELE_R03E9.2	Q21662	0	2	Glycosyl hydrolase family 63 C-terminal domain-containing pr	w
 GLYCOSYL	yeast	P38081	YBR056W	P38081	0	5	Uncharacterized glycosyl hydrolase YBR056W	w
-GLYCOSYL-PHOSPHATIDYLINOSITOL-ANCHORED	human	Q99445	GML	Q99445	8	90	Glycosyl-phosphatidylinositol-anchored molecule-like protein	w
+GLYCOSYL-PHOSPHATIDYLINOSITOL-ANCHORED	human	Q99445	GML	Q99445	5	90	Glycosyl-phosphatidylinositol-anchored molecule-like protein	w
 GLYCOSYL-PHOSPHATIDYLINOSITOL-SPECIFIC	human	P80108	GPLD1	P80108	0	35	Phosphatidylinositol-glycan-specific phospholipase D (PI-G P	w
 GLYCOSYLASE	fly	FBgn0026869	Tdg	Q9V4D8	16	67	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
 GLYCOSYLASE	fly	FBgn0027864	Ogg1	Q9V3I8	0	18	N-glycosylase/DNA lyase (dOgg1) [Includes: 8-oxoguanine DNA 	w
 GLYCOSYLASE	fly	FBgn0032907	Nthl1	Q9VIH0	10	75	Endonuclease III homolog (EC 3.2.2.-) (EC 4.2.99.18) (Bifunc	w
-GLYCOSYLASE	human	O15527	OGG1	O15527	4	42	N-glycosylase/DNA lyase [Includes: 8-oxoguanine DNA glycosyl	w
-GLYCOSYLASE	human	P13051	UNG	P13051	11	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
-GLYCOSYLASE	human	P29372	MPG	P29372	17	129	DNA-3-methyladenine glycosylase (EC 3.2.2.21) (3-alkyladenin	w
-GLYCOSYLASE	human	P78549	NTHL1	P78549	11	108	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
-GLYCOSYLASE	human	Q13569	TDG	Q13569	53	448	G/T mismatch-specific thymine DNA glycosylase (EC 3.2.2.29) 	w
+GLYCOSYLASE	human	O15527	OGG1	O15527	3	42	N-glycosylase/DNA lyase [Includes: 8-oxoguanine DNA glycosyl	w
+GLYCOSYLASE	human	P13051	UNG	P13051	8	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
+GLYCOSYLASE	human	P29372	MPG	P29372	14	129	DNA-3-methyladenine glycosylase (EC 3.2.2.21) (3-alkyladenin	w
+GLYCOSYLASE	human	P78549	NTHL1	P78549	9	108	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
+GLYCOSYLASE	human	Q13569	TDG	Q13569	45	448	G/T mismatch-specific thymine DNA glycosylase (EC 3.2.2.29) 	w
 GLYCOSYLASE	human	Q53HV7	SMUG1	Q53HV7	5	145	Single-strand selective monofunctional uracil DNA glycosylas	w
-GLYCOSYLASE	human	Q8TAT5	NEIL3	Q8TAT5	9	226	Endonuclease 8-like 3 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
-GLYCOSYLASE	human	Q969S2	NEIL2	Q969S2	6	158	Endonuclease 8-like 2 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
-GLYCOSYLASE	human	Q96FI4	NEIL1	Q96FI4	18	356	Endonuclease 8-like 1 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+GLYCOSYLASE	human	Q8TAT5	NEIL3	Q8TAT5	7	226	Endonuclease 8-like 3 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+GLYCOSYLASE	human	Q969S2	NEIL2	Q969S2	5	158	Endonuclease 8-like 2 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
+GLYCOSYLASE	human	Q96FI4	NEIL1	Q96FI4	16	356	Endonuclease 8-like 1 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
 GLYCOSYLASE	human	Q9UIF7	MUTYH	Q9UIF7	5	71	Adenine DNA glycosylase (EC 3.2.2.31) (MutY homolog) (hMYH)	w
 GLYCOSYLASE	virus	A0A068EG39	fep_062	A0A068EG39	5	221	Uracil-DNA glycosylase	w
 GLYCOSYLASE	virus	A0A068EHG3	pepv_064	A0A068EHG3	13	240	Uracil-DNA glycosylase	w
@@ -1462,38 +1462,38 @@ GLYCOSYLASE-LIKE	fly	FBgn0038490	Smug	Q9VEM1	0	5	Uracil-DNA glycosylase-like dom
 GLYCOSYLASE-LIKE	virus	A0A3G1T4G5	BKRF3	A0A3G1T4G5	3	81	Uracil-DNA glycosylase-like domain-containing protein	w
 GLYCOSYLASPARAGINASE	fly	FBgn0033431	CG1827	Q8MR45	9	246	Putative N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase CG1	w
 GLYCOSYLASPARAGINASE	human	P20933	AGA	P20933	1	55	N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase (EC 3.5.1.26	w
-GLYCOSYLATED	human	Q0VAQ4	SMAGP	Q0VAQ4	32	112	Small cell adhesion glycoprotein (Small transmembrane and gl	w
-GLYCOSYLATED	human	Q6UW49	SPESP1	Q6UW49	3	12	Sperm equatorial segment protein 1 (SP-ESP) (Equatorial segm	w
-GLYCOSYLATED	human	Q8WWB7	GLMP	Q8WWB7	10	151	Glycosylated lysosomal membrane protein (Lysosomal protein N	w
+GLYCOSYLATED	human	Q0VAQ4	SMAGP	Q0VAQ4	24	112	Small cell adhesion glycoprotein (Small transmembrane and gl	w
+GLYCOSYLATED	human	Q6UW49	SPESP1	Q6UW49	2	12	Sperm equatorial segment protein 1 (SP-ESP) (Equatorial segm	w
+GLYCOSYLATED	human	Q8WWB7	GLMP	Q8WWB7	9	151	Glycosylated lysosomal membrane protein (Lysosomal protein N	w
 GLYCOSYLATED	zebrafish	Q66HW4	glmp	Q66HW4	0	2	Glycosylated lysosomal membrane protein	w
 GLYCOSYLATION	fly	FBgn0037743	Alg12	Q9VH78	12	60	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
 GLYCOSYLATION	human	O75352	MPDU1	O75352	1	125	Mannose-P-dolichol utilization defect 1 protein (Suppressor 	w
 GLYCOSYLATION	human	Q15109	AGER	Q15109	17	185	Advanced glycation end product-specific receptor (Advanced g	w
-GLYCOSYLATION	human	Q2TAA5	ALG11	Q2TAA5	3	149	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
-GLYCOSYLATION	human	Q92685	ALG3	Q92685	3	94	Dol-P-Man:Man(5)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransfera	w
-GLYCOSYLATION	human	Q96F25	ALG14	Q96F25	32	228	UDP-N-acetylglucosamine transferase subunit ALG14 (Asparagin	w
-GLYCOSYLATION	human	Q9BT22	ALG1	Q9BT22	4	168	Chitobiosyldiphosphodolichol beta-mannosyltransferase (EC 2.	w
-GLYCOSYLATION	human	Q9BV10	ALG12	Q9BV10	4	87	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
-GLYCOSYLATION	human	Q9BVK2	ALG8	Q9BVK2	9	98	Dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-glucosyltra	w
-GLYCOSYLATION	human	Q9H553	ALG2	Q9H553	4	142	Alpha-1,3/1,6-mannosyltransferase ALG2 (EC 2.4.1.132) (EC 2.	w
-GLYCOSYLATION	human	Q9H6U8	ALG9	Q9H6U8	7	123	Alpha-1,2-mannosyltransferase ALG9 (EC 2.4.1.259) (EC 2.4.1.	w
-GLYCOSYLATION	human	Q9NP73	ALG13	Q9NP73	50	270	UDP-N-acetylglucosamine transferase subunit ALG13 (EC 2.4.1.	w
+GLYCOSYLATION	human	Q2TAA5	ALG11	Q2TAA5	2	149	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+GLYCOSYLATION	human	Q92685	ALG3	Q92685	2	94	Dol-P-Man:Man(5)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransfera	w
+GLYCOSYLATION	human	Q96F25	ALG14	Q96F25	26	228	UDP-N-acetylglucosamine transferase subunit ALG14 (Asparagin	w
+GLYCOSYLATION	human	Q9BT22	ALG1	Q9BT22	3	168	Chitobiosyldiphosphodolichol beta-mannosyltransferase (EC 2.	w
+GLYCOSYLATION	human	Q9BV10	ALG12	Q9BV10	1	87	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
+GLYCOSYLATION	human	Q9BVK2	ALG8	Q9BVK2	7	98	Dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-glucosyltra	w
+GLYCOSYLATION	human	Q9H553	ALG2	Q9H553	2	142	Alpha-1,3/1,6-mannosyltransferase ALG2 (EC 2.4.1.132) (EC 2.	w
+GLYCOSYLATION	human	Q9H6U8	ALG9	Q9H6U8	3	123	Alpha-1,2-mannosyltransferase ALG9 (EC 2.4.1.259) (EC 2.4.1.	w
+GLYCOSYLATION	human	Q9NP73	ALG13	Q9NP73	40	270	UDP-N-acetylglucosamine transferase subunit ALG13 (EC 2.4.1.	w
 GLYCOSYLATION	human	Q9Y672	ALG6	Q9Y672	7	82	Dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucosyltransfe	w
-GLYCOSYLATION	human	Q9Y673	ALG5	Q9Y673	5	133	Dolichyl-phosphate beta-glucosyltransferase (DolP-glucosyltr	w
+GLYCOSYLATION	human	Q9Y673	ALG5	Q9Y673	3	133	Dolichyl-phosphate beta-glucosyltransferase (DolP-glucosyltr	w
 GLYCOSYLATION-DEPENDENT	human	Q8IVK1	GLYCAM1	Q8IVK1	0	6	Putative glycosylation-dependent cell adhesion molecule 1 (G	w
 GLYCOSYLATION-INHIBITING	human	P14174	MIF	P14174	10	398	Macrophage migration inhibitory factor (MIF) (EC 5.3.2.1) (G	w
 GLYCOSYLCERAMIDASE	human	P09848	LCT	P09848	0	10	Lactase/phlorizin hydrolase (Lactase/glycosylceramidase) [In	w
-GLYCOSYLCERAMIDE	human	Q13510	ASAH1	Q13510	4	166	Acid ceramidase (AC) (ACDase) (Acid CDase) (EC 3.5.1.23) (Ac	w
-GLYCOSYLCERAMIDE	human	Q16739	UGCG	Q16739	5	75	Ceramide glucosyltransferase (EC 2.4.1.80) (GLCT-1) (Glucosy	w
-GLYCOSYLPHOSPHATIDYL	human	O95498	VNN2	O95498	11	157	Pantetheine hydrolase VNN2 (EC 3.5.1.92) (Glycosylphosphatid	w
+GLYCOSYLCERAMIDE	human	Q13510	ASAH1	Q13510	3	166	Acid ceramidase (AC) (ACDase) (Acid CDase) (EC 3.5.1.23) (Ac	w
+GLYCOSYLCERAMIDE	human	Q16739	UGCG	Q16739	2	75	Ceramide glucosyltransferase (EC 2.4.1.80) (GLCT-1) (Glucosy	w
+GLYCOSYLPHOSPHATIDYL	human	O95498	VNN2	O95498	8	157	Pantetheine hydrolase VNN2 (EC 3.5.1.92) (Glycosylphosphatid	w
 GLYCOSYLPHOSPHATIDYLINOSITOL	fly	FBgn0029818	GAA1	Q9W464	7	70	Glycosylphosphatidylinositol anchor attachment 1	w
-GLYCOSYLPHOSPHATIDYLINOSITOL	human	O43292	GPAA1	O43292	9	123	GPI-anchor transamidase component GPAA1 (GAA1 protein homolo	w
-GLYCOSYLPHOSPHATIDYLINOSITOL	human	Q7Z553	MDGA2	Q7Z553	5	85	MAM domain-containing glycosylphosphatidylinositol anchor pr	w
-GLYCOSYLPHOSPHATIDYLINOSITOL	human	Q8NFP4	MDGA1	Q8NFP4	8	106	MAM domain-containing glycosylphosphatidylinositol anchor pr	w
+GLYCOSYLPHOSPHATIDYLINOSITOL	human	O43292	GPAA1	O43292	7	123	GPI-anchor transamidase component GPAA1 (GAA1 protein homolo	w
+GLYCOSYLPHOSPHATIDYLINOSITOL	human	Q7Z553	MDGA2	Q7Z553	4	85	MAM domain-containing glycosylphosphatidylinositol anchor pr	w
+GLYCOSYLPHOSPHATIDYLINOSITOL	human	Q8NFP4	MDGA1	Q8NFP4	7	106	MAM domain-containing glycosylphosphatidylinositol anchor pr	w
 GLYCOSYLPHOSPHATIDYLINOSITOL	yeast	Q06636	GPI11	Q06636	2	8	Glycosylphosphatidylinositol anchor biosynthesis protein 11	w
 GLYCOSYLPHOSPHATIDYLINOSITOL	zebrafish	A0A8M6YTC4	mdga2a	A0A8M6YTC4	0	14	MAM domain-containing glycosylphosphatidylinositol anchor 2a	w
-GLYCOSYLPHOSPHATIDYLINOSITOL-ANCHORED	human	Q8IV16	GPIHBP1	Q8IV16	31	244	Glycosylphosphatidylinositol-anchored high density lipoprote	w
-GLYCOSYLPHOSPHATIDYLINOSITOL-MAM	human	Q8NFP4	MDGA1	Q8NFP4	8	106	MAM domain-containing glycosylphosphatidylinositol anchor pr	w
+GLYCOSYLPHOSPHATIDYLINOSITOL-ANCHORED	human	Q8IV16	GPIHBP1	Q8IV16	25	244	Glycosylphosphatidylinositol-anchored high density lipoprote	w
+GLYCOSYLPHOSPHATIDYLINOSITOL-MAM	human	Q8NFP4	MDGA1	Q8NFP4	7	106	MAM domain-containing glycosylphosphatidylinositol anchor pr	w
 GLYCOSYLTRANSFERASE	fly	FBgn0011591	fng	Q24342	295	2395	Fringe glycosyltransferase (EC 2.4.1.222) (O-fucosylpeptide 	w
 GLYCOSYLTRANSFERASE	fly	FBgn0014868	Ost48	Q24319	145	2606	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 GLYCOSYLTRANSFERASE	fly	FBgn0030443	CG12715	Q9VYH4	0	1	Glycosyltransferase family 92 protein (EC 2.4.1.-)	w
@@ -1508,31 +1508,31 @@ GLYCOSYLTRANSFERASE	fly	FBgn0051915	CG31915	Q8IPK4	1	15	Glycosyltransferase 25 f
 GLYCOSYLTRANSFERASE	fly	FBgn0053303	Ost1	Q76NQ0	94	2546	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 GLYCOSYLTRANSFERASE	fly	FBgn0053774	Ost4	A1Z7U3	6	81	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 GLYCOSYLTRANSFERASE	fly	FBgn0263852	Dad1	Q9VLM5	6	66	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	A0PJZ3	GXYLT2	A0PJZ3	8	96	Glucoside xylosyltransferase 2 (EC 2.4.2.42) (Glycosyltransf	w
+GLYCOSYLTRANSFERASE	human	A0PJZ3	GXYLT2	A0PJZ3	6	96	Glucoside xylosyltransferase 2 (EC 2.4.2.42) (Glycosyltransf	w
 GLYCOSYLTRANSFERASE	human	C9J202	ALG1L2	C9J202	0	42	Putative glycosyltransferase ALG1L2 (EC 2.4.1.-)	w
-GLYCOSYLTRANSFERASE	human	O60568	PLOD3	O60568	15	213	Multifunctional procollagen lysine hydroxylase and glycosylt	w
-GLYCOSYLTRANSFERASE	human	P04843	RPN1	P04843	47	760	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	P04844	RPN2	P04844	36	549	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	P0C6T2	OST4	P0C6T2	30	247	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	P39656	DDOST	P39656	41	383	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	P46977	STT3A	P46977	34	389	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	P61165	TMEM258	P61165	38	131	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	P61803	DAD1	P61803	13	118	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	Q13454	TUSC3	Q13454	11	95	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	Q16394	EXT1	Q16394	11	167	Exostosin-1 (EC 2.4.1.225) (Exostosin glycosyltransferase 1)	w
-GLYCOSYLTRANSFERASE	human	Q4G148	GXYLT1	Q4G148	11	132	Glucoside xylosyltransferase 1 (EC 2.4.2.42) (Glycosyltransf	w
-GLYCOSYLTRANSFERASE	human	Q5T4B2	CERCAM	Q5T4B2	9	162	Inactive glycosyltransferase 25 family member 3 (Cerebral en	w
-GLYCOSYLTRANSFERASE	human	Q68CQ7	GLT8D1	Q68CQ7	11	92	Glycosyltransferase 8 domain-containing protein 1 (EC 2.4.1.	w
-GLYCOSYLTRANSFERASE	human	Q7Z4J2	GLT6D1	Q7Z4J2	7	31	Putative glycosyltransferase 6 domain-containing protein 1 (	w
-GLYCOSYLTRANSFERASE	human	Q8IYK4	COLGALT2	Q8IYK4	9	103	Procollagen galactosyltransferase 2 (EC 2.4.1.50) (Collagen 	w
+GLYCOSYLTRANSFERASE	human	O60568	PLOD3	O60568	14	213	Multifunctional procollagen lysine hydroxylase and glycosylt	w
+GLYCOSYLTRANSFERASE	human	P04843	RPN1	P04843	40	760	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	P04844	RPN2	P04844	27	549	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	P0C6T2	OST4	P0C6T2	27	247	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	P39656	DDOST	P39656	35	383	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	P46977	STT3A	P46977	26	388	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	P61165	TMEM258	P61165	31	131	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	P61803	DAD1	P61803	11	118	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	Q13454	TUSC3	Q13454	10	95	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	Q16394	EXT1	Q16394	7	167	Exostosin-1 (EC 2.4.1.225) (Exostosin glycosyltransferase 1)	w
+GLYCOSYLTRANSFERASE	human	Q4G148	GXYLT1	Q4G148	9	132	Glucoside xylosyltransferase 1 (EC 2.4.2.42) (Glycosyltransf	w
+GLYCOSYLTRANSFERASE	human	Q5T4B2	CERCAM	Q5T4B2	5	162	Inactive glycosyltransferase 25 family member 3 (Cerebral en	w
+GLYCOSYLTRANSFERASE	human	Q68CQ7	GLT8D1	Q68CQ7	9	92	Glycosyltransferase 8 domain-containing protein 1 (EC 2.4.1.	w
+GLYCOSYLTRANSFERASE	human	Q7Z4J2	GLT6D1	Q7Z4J2	6	31	Putative glycosyltransferase 6 domain-containing protein 1 (	w
+GLYCOSYLTRANSFERASE	human	Q8IYK4	COLGALT2	Q8IYK4	7	103	Procollagen galactosyltransferase 2 (EC 2.4.1.50) (Collagen 	w
 GLYCOSYLTRANSFERASE	human	Q8N6L1	KRTCAP2	Q8N6L1	18	449	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	Q8NBJ5	COLGALT1	Q8NBJ5	10	176	Procollagen galactosyltransferase 1 (EC 2.4.1.50) (Collagen 	w
-GLYCOSYLTRANSFERASE	human	Q8TCJ2	STT3B	Q8TCJ2	40	444	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	Q93063	EXT2	Q93063	18	149	Exostosin-2 (EC 2.4.1.224) (Exostosin glycosyltransferase 2)	w
-GLYCOSYLTRANSFERASE	human	Q96MS3	GLT1D1	Q96MS3	1	15	Glycosyltransferase 1 domain-containing protein 1 (EC 2.4.-.	w
-GLYCOSYLTRANSFERASE	human	Q9H0U3	MAGT1	Q9H0U3	26	217	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-GLYCOSYLTRANSFERASE	human	Q9H1C3	GLT8D2	Q9H1C3	14	104	Glycosyltransferase 8 domain-containing protein 2 (EC 2.4.1.	w
-GLYCOSYLTRANSFERASE	human	Q9NP73	ALG13	Q9NP73	50	270	UDP-N-acetylglucosamine transferase subunit ALG13 (EC 2.4.1.	w
+GLYCOSYLTRANSFERASE	human	Q8NBJ5	COLGALT1	Q8NBJ5	9	176	Procollagen galactosyltransferase 1 (EC 2.4.1.50) (Collagen 	w
+GLYCOSYLTRANSFERASE	human	Q8TCJ2	STT3B	Q8TCJ2	33	443	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	Q93063	EXT2	Q93063	14	149	Exostosin-2 (EC 2.4.1.224) (Exostosin glycosyltransferase 2)	w
+GLYCOSYLTRANSFERASE	human	Q96MS3	GLT1D1	Q96MS3	0	15	Glycosyltransferase 1 domain-containing protein 1 (EC 2.4.-.	w
+GLYCOSYLTRANSFERASE	human	Q9H0U3	MAGT1	Q9H0U3	22	217	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+GLYCOSYLTRANSFERASE	human	Q9H1C3	GLT8D2	Q9H1C3	13	104	Glycosyltransferase 8 domain-containing protein 2 (EC 2.4.1.	w
+GLYCOSYLTRANSFERASE	human	Q9NP73	ALG13	Q9NP73	40	270	UDP-N-acetylglucosamine transferase subunit ALG13 (EC 2.4.1.	w
 GLYCOSYLTRANSFERASE	worm	O02317	CELE_T15D6.10	O02317	0	33	Glycosyltransferase family 92 protein	w
 GLYCOSYLTRANSFERASE	worm	O16316	C05C8.8	O16316	0	1	Glycosyltransferase family 92 protein	w
 GLYCOSYLTRANSFERASE	worm	O16536	C17A2.2	O16536	0	2	Glycosyltransferase family 92 protein	w
@@ -1584,19 +1584,19 @@ GLYCOSYLTRANSFERASE	zebrafish	Q7ZUY9	stt3a	Q7ZUY9	10	193	Dolichyl-diphosphooligo
 GLYCOSYLTRANSFERASE	zebrafish	Q7ZV50	magt1	Q7ZV50	4	18	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 GLYCOSYLTRANSFERASE-LIKE	human	O95461	LARGE1	O95461	6	94	Xylosyl- and glucuronyltransferase LARGE1 (EC 2.4.-.-) (Acet	w
 GLYCOSYLTRANSFERASE-LIKE	human	Q4AE62	QTMAN	Q4AE62	1	66	tRNA-queuosine alpha-mannosyltransferase (QTMAN) (EC 2.4.1.1	w
-GLYCOSYLTRANSFERASE-LIKE	human	Q8N3Y3	LARGE2	Q8N3Y3	8	96	Xylosyl- and glucuronyltransferase LARGE2 (EC 2.4.-.-) (Glyc	w
+GLYCOSYLTRANSFERASE-LIKE	human	Q8N3Y3	LARGE2	Q8N3Y3	6	96	Xylosyl- and glucuronyltransferase LARGE2 (EC 2.4.-.-) (Glyc	w
 GLYCOSYLTRANSFERASE-LIKE	worm	Q21389	lge-1	Q21389	0	4	Glycosyltransferase-like protein LARGE	w
 GLYCOTRANSFERASE	fly	FBgn0011336	Stt3B	Q9XZ53	11	152	dolichyl-diphosphooligosaccharide--protein glycotransferase 	w
 GLYCTK	fly	FBgn0031428	Glyctk	Q9VQC4	0	28	Glycerate kinase (EC 2.7.1.31)	
-GLYCTK	human	Q8IVS8	GLYCTK	Q8IVS8	4	66	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	
+GLYCTK	human	Q8IVS8	GLYCTK	Q8IVS8	3	66	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	
 GLYCTK	zebrafish	Q08BL7	glyctk	Q08BL7	0	1	Glycerate kinase	
 GLYCYL-TRNA	fly	FBgn0027088	GlyRS	Q9VUK8	0	70	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-GLYCYL-TRNA	human	P41250	GARS1	P41250	6	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+GLYCYL-TRNA	human	P41250	GARS1	P41250	5	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 GLYCYLASE	fly	FBgn0031853	TTLL3B	Q9VM92	1	10	Tubulin glycylase 3B (dmTTLL3B) (EC 6.3.2.-)	w
 GLYCYLASE	fly	FBgn0031854	TTLL3A	Q9VM91	0	4	Tubulin glycylase 3A (dmTTLL3A) (EC 6.3.2.-)	w
 GLYCYLPEPTIDE	fly	FBgn0020392	Nmt	O61613	2	24	Glycylpeptide N-tetradecanoyltransferase (EC 2.3.1.97) (Myri	w
-GLYCYLPEPTIDE	human	O60551	NMT2	O60551	18	133	Glycylpeptide N-tetradecanoyltransferase 2 (EC 2.3.1.97) (My	w
-GLYCYLPEPTIDE	human	P30419	NMT1	P30419	25	190	Glycylpeptide N-tetradecanoyltransferase 1 (EC 2.3.1.97) (My	w
+GLYCYLPEPTIDE	human	O60551	NMT2	O60551	16	133	Glycylpeptide N-tetradecanoyltransferase 2 (EC 2.3.1.97) (My	w
+GLYCYLPEPTIDE	human	P30419	NMT1	P30419	17	190	Glycylpeptide N-tetradecanoyltransferase 1 (EC 2.3.1.97) (My	w
 GLYCYLPEPTIDE	virus	A0A0H4XWH0	SGPV032	A0A0H4XWH0	8	199	glycylpeptide N-tetradecanoyltransferase	w
 GLYCYLPEPTIDE	virus	A0A916KP61	AHEV_138	A0A916KP61	8	243	glycylpeptide N-tetradecanoyltransferase	w
 GLYCYLPEPTIDE	virus	A0A916KQG4	MYSEV_235	A0A916KQG4	3	301	glycylpeptide N-tetradecanoyltransferase	w

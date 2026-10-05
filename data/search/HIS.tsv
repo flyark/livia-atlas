@@ -17,13 +17,13 @@ HIS-71	worm	Q10453	his-71	Q10453	12	28	Histone H3.3 type 1
 HIS-72	worm	H2L2K8	his-72	H2L2K8	0	2	Histone H3.3 type 2	
 HIS-73	worm	H2L2I6	his-73	H2L2I6	2	13	Histone H2A/H2B/H3 domain-containing protein	
 HIS-74	worm	Q27532	his-74	Q27532	11	39	Histone H3.3-like type 2	
-HIS-PRO-LESS	human	P01011	SERPINA3	P01011	30	460	Alpha-1-antichymotrypsin (ACT) (Cell growth-inhibiting gene 	w
+HIS-PRO-LESS	human	P01011	SERPINA3	P01011	24	460	Alpha-1-antichymotrypsin (ACT) (Cell growth-inhibiting gene 	w
 HIS1	cladophialophora-carrionii	A0A1C1CE75	HIS1	A0A1C1CE75	0	5	ATP phosphoribosyltransferase	
-HIS1	human	O94992	HEXIM1	O94992	129	968		
-HIS1	human	P15515	HTN1	P15515	29	83		
+HIS1	human	O94992	HEXIM1	O94992	120	967		
+HIS1	human	P15515	HTN1	P15515	15	83		
 HIS1	schizosaccharomyces-pombe	P40373	his1	P40373	0	9	ATP phosphoribosyltransferase	
 HIS1	yeast	P00498	HIS1	P00498	0	14	ATP phosphoribosyltransferase	
-HIS1-	human	P15515	HTN1	P15515	29	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
+HIS1-	human	P15515	HTN1	P15515	15	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
 HIS1-3	arabidopsis-thaliana	P94109	HIS1-3	P94109	1	56	Histone H1	
 HIS1:CG31617	fly	FBgn0051617	His1:CG31617	P02255	0	19	Histone H1	
 HIS1:CG33801	fly	FBgn0053801	His1:CG33801	Q4ABE3	0	3	Histone H1	
@@ -48,8 +48,8 @@ HIS1:CG33855	fly	FBgn0053855	His1:CG33855	Q4AB54	0	2	Histone H1
 HIS1:CG33858	fly	FBgn0053858	His1:CG33858	Q4AB54	0	0	Histone H1	
 HIS1:CG33861	fly	FBgn0053861	His1:CG33861	Q4AB54	1	3	Histone H1	
 HIS1:CG33864	fly	FBgn0053864	His1:CG33864	P02255	0	1	Histone H1	
-HIS1_HUMAN	human	P15515	HTN1	P15515	29	83		
-HIS2	human	P15516	HTN3	P15516	22	92		
+HIS1_HUMAN	human	P15515	HTN1	P15515	15	83		
+HIS2	human	P15516	HTN3	P15516	16	92		
 HIS2	schizosaccharomyces-pombe	Q9P777	his2	Q9P777	0	7	Histidinol dehydrogenase	
 HIS2	yeast	P38635	HIS2	P38635	0	4	Histidinol-phosphatase	
 HIS2A:CG31618	fly	FBgn0051618	His2A:CG31618	P84051	10	49	Histone H2A	
@@ -100,10 +100,10 @@ HIS2B_CG33886	fly	FBgn0053886	His2B:CG33886	P02283	0	2
 HIS3	candida-albicans-237561	Q59LL5	HIS3	Q59LL5	0	1	Imidazoleglycerol-phosphate dehydratase	
 HIS3	cladophialophora-carrionii	A0A1C1CFE9	his3	A0A1C1CFE9	0	6	histidinol-phosphate transaminase	
 HIS3	cladophialophora-carrionii	A0A1C1D233	HIS3	A0A1C1D233	0	3	Imidazoleglycerol-phosphate dehydratase	
-HIS3	human	P15516	HTN3	P15516	22	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
+HIS3	human	P15516	HTN3	P15516	16	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
 HIS3	schizosaccharomyces-pombe	P36605	his3	P36605	0	7	Histidinol-phosphate aminotransferase	
 HIS3	yeast	P06633	HIS3	P06633	0	16	Imidazoleglycerol-phosphate dehydratase	
-HIS3-	human	P15516	HTN3	P15516	22	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
+HIS3-	human	P15516	HTN3	P15516	16	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
 HIS3.3A	fly	FBgn0014857	His3.3A	C0HL66	16	81	Histone H3.3A (H3.A)	
 HIS3.3B	fly	FBgn0004828	His3.3B	C0HL66	8	21	Histone H3.3A (H3.A)	
 HIS3:CG31613	fly	FBgn0051613	His3:CG31613	P02299	31	77	Histone H3	
@@ -129,7 +129,7 @@ HIS3:CG33857	fly	FBgn0053857	His3:CG33857	P02299	0	0	Histone H3
 HIS3:CG33860	fly	FBgn0053860	His3:CG33860	P02299	0	0	Histone H3	
 HIS3:CG33863	fly	FBgn0053863	His3:CG33863	P02299	0	0	Histone H3	
 HIS3:CG33866	fly	FBgn0053866	His3:CG33866	P02299	3	7	Histone H3	
-HIS3_HUMAN	human	P15516	HTN3	P15516	22	92		
+HIS3_HUMAN	human	P15516	HTN3	P15516	16	92		
 HIS4	candida-albicans-237561	A0A1D8PKY7	HIS4	A0A1D8PKY7	0	4	Histidine biosynthesis trifunctional protein	
 HIS4	fly	FBgn0001200	His4	P84040	8	37		
 HIS4	yeast	P00815	HIS4	P00815	0	19	Histidine biosynthesis trifunctional protein	
@@ -202,7 +202,7 @@ HISC1	haemophilus-influenzae	P44423	hisC1	P44423	0	2	Histidinol-phosphate aminot
 HISC1	pseudomonas-aeruginosa	Q9HVX0	hisC1	Q9HVX0	2	5	Histidinol-phosphate aminotransferase 1	
 HISC2	haemophilus-influenzae	Q57004	hisC2	Q57004	0	2	Histidinol-phosphate aminotransferase 2	
 HISC2	pseudomonas-aeruginosa	Q9HZ68	hisC2	Q9HZ68	2	5	Histidinol-phosphate aminotransferase 2	
-HISCA	human	Q9BUE6	ISCA1	Q9BUE6	13	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	w
+HISCA	human	Q9BUE6	ISCA1	Q9BUE6	5	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	w
 HISCL1	fly	FBgn0037950	HisCl1	Q9VGI0	7	13	Histamine-gated chloride channel subunit 1	
 HISD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PM77	hisD	Q9PM77	0	9	Histidinol dehydrogenase	
 HISD	escherichia-coli-83333	P06988	hisD	P06988	0	8	Histidinol dehydrogenase	
@@ -293,15 +293,15 @@ HISP	escherichia-coli-83333	P07109	hisP	P07109	53	174	Histidine/lysine/arginine/
 HISP	pseudomonas-aeruginosa	Q9HZS1	hisP	Q9HZS1	2	3	Histidine transport ATP-binding protein HisP	
 HISP	salmonella-typhimurium	P02915	hisP	P02915	3	5	Histidine/lysine/arginine/ornithine transport ATP-binding pr	
 HISP	shigella-dysenteriae-serotype-1	Q32DN0	hisP	Q32DN0	3	5	ATP-binding component of histidine transport	
-HISPPD1	human	O43314	PPIP5K2	O43314	11	101		
+HISPPD1	human	O43314	PPIP5K2	O43314	9	101		
 HISPPD2A	human	Q6PFW1	PPIP5K1	Q6PFW1	3	58		
 HISQ	escherichia-coli-83333	P52094	hisQ	P52094	66	173	Histidine/lysine/arginine/ornithine transport system permeas	
 HISQ	pseudomonas-aeruginosa	Q9HZS3	hisQ	Q9HZS3	33	66	Histidine/lysine/arginine/ornithine transport system permeas	
 HISQ	salmonella-typhimurium	P0A2I9	hisQ	P0A2I9	20	55	Histidine/lysine/arginine/ornithine transport system permeas	
 HISQ	shigella-dysenteriae-serotype-1	Q32DM8	hisQ	Q32DM8	13	37	Histidine/lysine/arginine/ornithine transport system permeas	
 HISRS	fly	FBgn0027087	HisRS	Q8IQX8	0	29	histidine--tRNA ligase (EC 6.1.1.21)	
-HISRS	human	P12081	HARS1	P12081	8	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
-HISRS	human	P49590	HARS2	P49590	9	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+HISRS	human	P12081	HARS1	P12081	6	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
+HISRS	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 HISS	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PPF4	hisS	Q9PPF4	0	41	Histidine--tRNA ligase	
 HISS	dictyostelium-discoideum	Q86AS6	hisS	Q86AS6	1	1	Histidine--tRNA ligase, cytoplasmic	
 HISS	escherichia-coli-83333	P60906	hisS	P60906	0	13	Histidine--tRNA ligase	
@@ -319,114 +319,114 @@ HISS	shigella-dysenteriae-serotype-1	Q32D48	hisS	Q32D48	0	14	Histidine--tRNA lig
 HISS	staphylococcus-aureus-93061	Q2FXU4	hisS	Q2FXU4	0	7	Histidine--tRNA ligase	
 HISS	streptococcus-pneumoniae	Q8DN46	hisS	Q8DN46	0	6	Histidine--tRNA ligase	
 HIST	fly	FBgn0033196	HisT	Q7K1D7	0	3	GH15861p (MIP14896p)	
-HIST1	human	P53990	IST1	P53990	27	137	IST1 homolog (hIST1) (Charged multivesicular body protein 8)	w
-HIST1H1A	human	Q02539	H1-1	Q02539	20	496		
-HIST1H1B	human	P16401	H1-5	P16401	18	482		
-HIST1H1C	human	P16403	H1-2	P16403	25	521		
-HIST1H1D	human	P16402	H1-3	P16402	9	293		
-HIST1H1E	human	P10412	H1-4	P10412	25	580		
-HIST1H1T	human	P22492	H1-6	P22492	16	274		
+HIST1	human	P53990	IST1	P53990	26	137	IST1 homolog (hIST1) (Charged multivesicular body protein 8)	w
+HIST1H1A	human	Q02539	H1-1	Q02539	14	496		
+HIST1H1B	human	P16401	H1-5	P16401	14	482		
+HIST1H1C	human	P16403	H1-2	P16403	21	521		
+HIST1H1D	human	P16402	H1-3	P16402	8	293		
+HIST1H1E	human	P10412	H1-4	P10412	24	580		
+HIST1H1T	human	P22492	H1-6	P22492	14	274		
 HIST1H2A10	zebrafish	E7F5W3	hist1h2a10	E7F5W3	23	165	Histone H2A	
 HIST1H2A11	zebrafish	F1QTL1	hist1h2a11	F1QTL1	7	97	Histone H2A	
 HIST1H2A2	zebrafish	Q4FZZ7	hist1h2a2	Q4FZZ7	24	165	Histone H2A	
 HIST1H2A3	zebrafish	Q561S9	hist1h2a3	Q561S9	23	166	Histone H2A	
 HIST1H2A6	zebrafish	A4FVM2	hist1h2a6	A4FVM2	23	165	Histone H2A	
-HIST1H2AA	human	Q96QV6	H2AC1	Q96QV6	72	660		
-HIST1H2AB;	human	P04908	H2AC4	P04908	102	837		
-HIST1H2AC	human	Q93077	H2AC6	Q93077	73	527		
-HIST1H2AD	human	P20671	H2AC7	P20671	63	471		
-HIST1H2AE	human	P04908	H2AC4	P04908	102	837		
+HIST1H2AA	human	Q96QV6	H2AC1	Q96QV6	65	660		
+HIST1H2AB;	human	P04908	H2AC4	P04908	95	837		
+HIST1H2AC	human	Q93077	H2AC6	Q93077	68	527		
+HIST1H2AD	human	P20671	H2AC7	P20671	58	471		
+HIST1H2AE	human	P04908	H2AC4	P04908	95	837		
 HIST1H2AF	mus-musculus	Q8CGP5	Hist1h2af	Q8CGP5	34	97	Histone H2A type 1-F	
-HIST1H2AG;	human	P0C0S8	H2AC11	P0C0S8	76	605		
-HIST1H2AH	human	Q96KK5	H2AC12	Q96KK5	71	495		
-HIST1H2AI	human	Q96KK5	H2AC12	Q96KK5	71	495		
+HIST1H2AG;	human	P0C0S8	H2AC11	P0C0S8	72	605		
+HIST1H2AH	human	Q96KK5	H2AC12	Q96KK5	62	495		
+HIST1H2AI	human	Q96KK5	H2AC12	Q96KK5	62	495		
 HIST1H2AI	rattus-norvegicus	G3V9C0	Hist1h2ai	G3V9C0	21	128	Histone H2A	
-HIST1H2AI;	human	P0C0S8	H2AC11	P0C0S8	76	605		
-HIST1H2AJ	human	Q99878	H2AC14	Q99878	69	641		
-HIST1H2AK;	human	P0C0S8	H2AC11	P0C0S8	76	605		
-HIST1H2AL;	human	P0C0S8	H2AC11	P0C0S8	76	605		
-HIST1H2AM	human	P0C0S8	H2AC11	P0C0S8	76	605		
+HIST1H2AI;	human	P0C0S8	H2AC11	P0C0S8	72	605		
+HIST1H2AJ	human	Q99878	H2AC14	Q99878	63	641		
+HIST1H2AK;	human	P0C0S8	H2AC11	P0C0S8	72	605		
+HIST1H2AL;	human	P0C0S8	H2AC11	P0C0S8	72	605		
+HIST1H2AM	human	P0C0S8	H2AC11	P0C0S8	72	605		
 HIST1H2ANL2	rattus-norvegicus	A0A8I6ARS7	Hist1h2anl2	A0A8I6ARS7	21	110	Histone H2A	
 HIST1H2AP	mus-musculus	C0HKE9	Hist1h2ap	C0HKE9	36	108	Histone H2A type 1-P	
-HIST1H2BA	human	Q96A08	H2BC1	Q96A08	84	575		
-HIST1H2BB	human	P33778	H2BC3	P33778	106	1112		
-HIST1H2BC;	human	P62807	H2BC4	P62807	165	2026		
-HIST1H2BD	human	P58876	H2BC5	P58876	117	1489		
-HIST1H2BE;	human	P62807	H2BC4	P62807	165	2026		
-HIST1H2BF;	human	P62807	H2BC4	P62807	165	2026		
-HIST1H2BG;	human	P62807	H2BC4	P62807	165	2026		
-HIST1H2BH	human	Q93079	H2BC9	Q93079	117	1371		
-HIST1H2BI	human	P62807	H2BC4	P62807	165	2026		
-HIST1H2BJ	human	P06899	H2BC11	P06899	109	1084		
-HIST1H2BK	human	O60814	H2BC12	O60814	122	1453		
-HIST1H2BL	human	Q99880	H2BC13	Q99880	135	1666		
-HIST1H2BM	human	Q99879	H2BC14	Q99879	102	1146		
-HIST1H2BN	human	Q99877	H2BC15	Q99877	118	1480		
-HIST1H2BO	human	P23527	H2BC17	P23527	98	1097		
+HIST1H2BA	human	Q96A08	H2BC1	Q96A08	80	575		
+HIST1H2BB	human	P33778	H2BC3	P33778	93	1112		
+HIST1H2BC;	human	P62807	H2BC4	P62807	139	2026		
+HIST1H2BD	human	P58876	H2BC5	P58876	99	1489		
+HIST1H2BE;	human	P62807	H2BC4	P62807	139	2026		
+HIST1H2BF;	human	P62807	H2BC4	P62807	139	2026		
+HIST1H2BG;	human	P62807	H2BC4	P62807	139	2026		
+HIST1H2BH	human	Q93079	H2BC9	Q93079	101	1371		
+HIST1H2BI	human	P62807	H2BC4	P62807	139	2026		
+HIST1H2BJ	human	P06899	H2BC11	P06899	91	1084		
+HIST1H2BK	human	O60814	H2BC12	O60814	104	1453		
+HIST1H2BL	human	Q99880	H2BC13	Q99880	118	1666		
+HIST1H2BM	human	Q99879	H2BC14	Q99879	90	1146		
+HIST1H2BN	human	Q99877	H2BC15	Q99877	100	1480		
+HIST1H2BO	human	P23527	H2BC17	P23527	83	1097		
 HIST1H2BO	rattus-norvegicus	D3ZNH4	Hist1h2bo	D3ZNH4	22	159	Histone H2B	
 HIST1H2BP	mus-musculus	Q8CGP2	Hist1h2bp	Q8CGP2	34	148	Histone H2B type 1-P	
 HIST1H2BQ	rattus-norvegicus	G3V9C7	Hist1h2bq	G3V9C7	38	249	Histone H2B	
-HIST1H3A;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3B;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3C;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3D;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3E;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3F;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3G;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3H;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3I;	human	P68431	H3C1	P68431	514	5885		
-HIST1H3J	human	P68431	H3C1	P68431	514	5885		
-HIST1H4A;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4B;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4C;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4D;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4E;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4F;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4G	human	Q99525	H4C7	Q99525	62	328		
-HIST1H4H;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4I;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4J;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4K;	human	P62805	H4C1	P62805	374	4490		
-HIST1H4L;	human	P62805	H4C1	P62805	374	4490		
+HIST1H3A;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3B;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3C;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3D;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3E;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3F;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3G;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3H;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3I;	human	P68431	H3C1	P68431	431	5885		
+HIST1H3J	human	P68431	H3C1	P68431	431	5885		
+HIST1H4A;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4B;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4C;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4D;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4E;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4F;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4G	human	Q99525	H4C7	Q99525	53	328		
+HIST1H4H;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4I;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4J;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4K;	human	P62805	H4C1	P62805	294	4490		
+HIST1H4L;	human	P62805	H4C1	P62805	294	4490		
 HIST1H4M	rattus-norvegicus	P62804	Hist1h4m	P62804	42	247	Histone H4	
-HIST2H2AA	human	Q6FI13	H2AC18	Q6FI13	78	563		
+HIST2H2AA	human	Q6FI13	H2AC18	Q6FI13	72	563		
 HIST2H2AA1	mus-musculus	Q6GSS7	Hist2h2aa1	Q6GSS7	34	103	Histone H2A type 2-A	
-HIST2H2AA3;	human	Q6FI13	H2AC18	Q6FI13	78	563		
-HIST2H2AA4	human	Q6FI13	H2AC18	Q6FI13	78	563		
-HIST2H2AB	human	Q8IUE6	H2AC21	Q8IUE6	95	769		
-HIST2H2AC	human	Q16777	H2AC20	Q16777	97	880		
-HIST2H2BC	human	Q6DN03	H2BC20P	Q6DN03	17	28		
+HIST2H2AA3;	human	Q6FI13	H2AC18	Q6FI13	72	563		
+HIST2H2AA4	human	Q6FI13	H2AC18	Q6FI13	72	563		
+HIST2H2AB	human	Q8IUE6	H2AC21	Q8IUE6	85	769		
+HIST2H2AC	human	Q16777	H2AC20	Q16777	89	880		
+HIST2H2BC	human	Q6DN03	H2BC20P	Q6DN03	16	28		
 HIST2H2BD	human	Q6DRA6	H2BC19P	Q6DRA6	11	17		
-HIST2H2BE	human	Q16778	H2BC21	Q16778	152	1618		
-HIST2H2BF	human	Q5QNW6	H2BC18	Q5QNW6	85	750		
+HIST2H2BE	human	Q16778	H2BC21	Q16778	134	1618		
+HIST2H2BF	human	Q5QNW6	H2BC18	Q5QNW6	78	750		
 HIST2H2L	zebrafish	Q6PC60	hist2h2l	Q6PC60	24	177	Histone H2B 3	
-HIST2H3A;	human	Q71DI3	H3C15	Q71DI3	461	4744		
-HIST2H3C;	human	Q71DI3	H3C15	Q71DI3	461	4744		
+HIST2H3A;	human	Q71DI3	H3C15	Q71DI3	365	4744		
+HIST2H3C;	human	Q71DI3	H3C15	Q71DI3	365	4744		
 HIST2H3CA1	zebrafish	A0A140LG23	hist2h3ca1	A0A140LG23	32	190	Histone H3	
-HIST2H3D	human	Q71DI3	H3C15	Q71DI3	461	4744		
-HIST2H3PS2	human	Q5TEC6	H3-7	Q5TEC6	318	2758		
-HIST2H4	human	P62805	H4C1	P62805	374	4490		
-HIST2H4A;	human	P62805	H4C1	P62805	374	4490		
-HIST2H4B;	human	P62805	H4C1	P62805	374	4490		
-HIST3H2A	human	Q7L7L0	H2AC25	Q7L7L0	52	281		
+HIST2H3D	human	Q71DI3	H3C15	Q71DI3	365	4744		
+HIST2H3PS2	human	Q5TEC6	H3-7	Q5TEC6	258	2758		
+HIST2H4	human	P62805	H4C1	P62805	294	4490		
+HIST2H4A;	human	P62805	H4C1	P62805	294	4490		
+HIST2H4B;	human	P62805	H4C1	P62805	294	4490		
+HIST3H2A	human	Q7L7L0	H2AC25	Q7L7L0	50	281		
 HIST3H2BA	rattus-norvegicus	D3ZNZ9	Hist3h2ba	D3ZNZ9	23	169	Histone H2B	
-HIST3H2BB	human	Q8N257	H2BC26	Q8N257	114	1032		
-HIST3H3	human	Q16695	H3-4	Q16695	269	2382		
-HIST4H4	human	P62805	H4C1	P62805	374	4490		
-HISTA	human	P15515	HTN1	P15515	29	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
-HISTAMINE	human	P25021	HRH2	P25021	17	93	Histamine H2 receptor (H2R) (HH2R) (Gastric receptor I)	w
-HISTAMINE	human	P35367	HRH1	P35367	11	109	Histamine H1 receptor (H1-R) (H1R) (HH1R)	w
-HISTAMINE	human	P50135	HNMT	P50135	12	181	Histamine N-methyltransferase (HMT) (EC 2.1.1.8)	w
-HISTAMINE	human	Q9H3N8	HRH4	Q9H3N8	10	71	Histamine H4 receptor (H4R) (HH4R) (AXOR35) (G protein-coupl	w
-HISTAMINE	human	Q9Y5N1	HRH3	Q9Y5N1	13	142	Histamine H3 receptor (H3R) (HH3R) (G protein-coupled recept	w
+HIST3H2BB	human	Q8N257	H2BC26	Q8N257	97	1032		
+HIST3H3	human	Q16695	H3-4	Q16695	226	2382		
+HIST4H4	human	P62805	H4C1	P62805	294	4490		
+HISTA	human	P15515	HTN1	P15515	15	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
+HISTAMINE	human	P25021	HRH2	P25021	13	93	Histamine H2 receptor (H2R) (HH2R) (Gastric receptor I)	w
+HISTAMINE	human	P35367	HRH1	P35367	9	109	Histamine H1 receptor (H1-R) (H1R) (HH1R)	w
+HISTAMINE	human	P50135	HNMT	P50135	6	181	Histamine N-methyltransferase (HMT) (EC 2.1.1.8)	w
+HISTAMINE	human	Q9H3N8	HRH4	Q9H3N8	9	71	Histamine H4 receptor (H4R) (HH4R) (AXOR35) (G protein-coupl	w
+HISTAMINE	human	Q9Y5N1	HRH3	Q9Y5N1	12	142	Histamine H3 receptor (H3R) (HH3R) (G protein-coupled recept	w
 HISTAMINE	zebrafish	A0A2R8Q9U8	hrh2a	A0A2R8Q9U8	1	10	Histamine H2 receptor	w
 HISTAMINE	zebrafish	Q6DC37	hnmt	Q6DC37	0	7	Histamine N-methyltransferase	w
 HISTAMINE-GATED	fly	FBgn0003011	ort	Q9VDU9	7	13	Histamine-gated chloride channel alpha1 subunit (Histamine-g	w
 HISTAMINE-GATED	fly	FBgn0037950	HisCl1	Q9VGI0	7	13	Histamine-gated chloride channel subunit 1	w
-HISTAMINE-RELEASING	human	P13693	TPT1	P13693	35	383	Translationally-controlled tumor protein (TCTP) (Fortilin) (	w
-HISTATIN	human	P15516	HTN3	P15516	22	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
-HISTATIN-1	human	P15515	HTN1	P15515	29	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
-HISTATIN-3	human	P15516	HTN3	P15516	22	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
+HISTAMINE-RELEASING	human	P13693	TPT1	P13693	28	383	Translationally-controlled tumor protein (TCTP) (Fortilin) (	w
+HISTATIN	human	P15516	HTN3	P15516	16	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
+HISTATIN-1	human	P15515	HTN1	P15515	15	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
+HISTATIN-3	human	P15516	HTN3	P15516	16	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
 HISTH1L2	zebrafish	A0A140LGZ1	histh1l2	A0A140LGZ1	2	24	Histone H1	
 HISTH1L3	zebrafish	E9QFU6	histh1l3	E9QFU6	2	24	Histone H1	
 HISTIDASE	human	P42357	HAL	P42357	3	238	Histidine ammonia-lyase (Histidase) (EC 4.3.1.3)	w
@@ -437,26 +437,26 @@ HISTIDINE	fly	FBgn0031459	HINT1	Q8STA5	9	174	Histidine triad nucleotide binding 
 HISTIDINE	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 HISTIDINE	fly	FBgn0038272	Dph2	Q9VFE9	4	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
 HISTIDINE	fly	FBgn0054015	CG34015	Q6IIA4	0	1	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
-HISTIDINE	human	C9JFL3	PHGR1	C9JFL3	5	26	Proline, histidine and glycine-rich protein 1	w
-HISTIDINE	human	O43314	PPIP5K2	O43314	11	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+HISTIDINE	human	C9JFL3	PHGR1	C9JFL3	3	26	Proline, histidine and glycine-rich protein 1	w
+HISTIDINE	human	O43314	PPIP5K2	O43314	9	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
 HISTIDINE	human	O95568	METTL18	O95568	10	90	Histidine protein methyltransferase 1 homolog (EC 2.1.1.85) 	w
-HISTIDINE	human	P01282	VIP	P01282	44	403	VIP peptides [Cleaved into: Intestinal peptide PHV-42 (Pepti	w
-HISTIDINE	human	P15531	NME1	P15531	13	279	Nucleoside diphosphate kinase A (NDP kinase A) (NDPK A) (EC 	w
-HISTIDINE	human	P19113	HDC	P19113	7	104	Histidine decarboxylase (HDC) (EC 4.1.1.22)	w
-HISTIDINE	human	P22392	NME2	P22392	20	702	Nucleoside diphosphate kinase B (NDP kinase B) (NDPK B) (EC 	w
+HISTIDINE	human	P01282	VIP	P01282	35	403	VIP peptides [Cleaved into: Intestinal peptide PHV-42 (Pepti	w
+HISTIDINE	human	P15531	NME1	P15531	9	279	Nucleoside diphosphate kinase A (NDP kinase A) (NDPK A) (EC 	w
+HISTIDINE	human	P19113	HDC	P19113	4	104	Histidine decarboxylase (HDC) (EC 4.1.1.22)	w
+HISTIDINE	human	P22392	NME2	P22392	13	702	Nucleoside diphosphate kinase B (NDP kinase B) (NDPK B) (EC 	w
 HISTIDINE	human	P42357	HAL	P42357	3	238	Histidine ammonia-lyase (Histidase) (EC 4.3.1.3)	w
-HISTIDINE	human	P49773	HINT1	P49773	11	202	Adenosine 5'-monophosphoramidase HINT1 (EC 3.9.1.-) (Desumoy	w
+HISTIDINE	human	P49773	HINT1	P49773	10	202	Adenosine 5'-monophosphoramidase HINT1 (EC 3.9.1.-) (Desumoy	w
 HISTIDINE	human	Q6PFW1	PPIP5K1	Q6PFW1	3	58	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
 HISTIDINE	human	Q7Z2E3	APTX	Q7Z2E3	7	131	Aprataxin (EC 3.6.1.71) (EC 3.6.1.72) (Forkhead-associated d	w
-HISTIDINE	human	Q8IUF8	RIOX2	Q8IUF8	14	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	w
-HISTIDINE	human	Q8IY34	SLC15A3	Q8IY34	11	324	Solute carrier family 15 member 3 (Osteoclast transporter) (	w
+HISTIDINE	human	Q8IUF8	RIOX2	Q8IUF8	10	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	w
+HISTIDINE	human	Q8IY34	SLC15A3	Q8IY34	5	324	Solute carrier family 15 member 3 (Osteoclast transporter) (	w
 HISTIDINE	human	Q8N697	SLC15A4	Q8N697	4	135	Solute carrier family 15 member 4 (Peptide transporter 4) (P	w
 HISTIDINE	human	Q96C86	DCPS	Q96C86	5	296	m7GpppX diphosphatase (EC 3.6.1.59) (DCS-1) (Decapping scave	w
 HISTIDINE	human	Q9BQC3	DPH2	Q9BQC3	6	93	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2 (Dip	w
-HISTIDINE	human	Q9BX68	HINT2	Q9BX68	25	336	Adenosine 5'-monophosphoramidase HINT2 (EC 3.9.1.-) (HINT-3)	w
-HISTIDINE	human	Q9BZG8	DPH1	Q9BZG8	14	133	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
-HISTIDINE	human	Q9H6W3	RIOX1	Q9H6W3	10	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
-HISTIDINE	human	Q9NQE9	HINT3	Q9NQE9	9	67	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	w
+HISTIDINE	human	Q9BX68	HINT2	Q9BX68	19	336	Adenosine 5'-monophosphoramidase HINT2 (EC 3.9.1.-) (HINT-3)	w
+HISTIDINE	human	Q9BZG8	DPH1	Q9BZG8	12	133	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
+HISTIDINE	human	Q9H6W3	RIOX1	Q9H6W3	8	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
+HISTIDINE	human	Q9NQE9	HINT3	Q9NQE9	8	67	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	w
 HISTIDINE	human	Q9NRX4	PHPT1	Q9NRX4	15	151	14 kDa phosphohistidine phosphatase (EC 3.9.1.3) (Phosphohis	w
 HISTIDINE	worm	H2KZJ4	CELE_D2062.4	H2KZJ4	0	2	Histidine kinase	w
 HISTIDINE	worm	O17373	pho-14	O17373	0	1	Histidine acid phosphatase	w
@@ -483,24 +483,24 @@ HISTIDINE	zebrafish	A4QN59	dph2	A4QN59	7	10	2-(3-amino-3-carboxypropyl)histidine
 HISTIDINE	zebrafish	Q567W6	dph1	Q567W6	3	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1	w
 HISTIDINE	zebrafish	Q642J0	hint1	Q642J0	0	6	Histidine triad nucleotide-binding protein 1	w
 HISTIDINE--TRNA	fly	FBgn0027087	HisRS	Q8IQX8	0	29	histidine--tRNA ligase (EC 6.1.1.21)	w
-HISTIDINE--TRNA	human	P12081	HARS1	P12081	8	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
-HISTIDINE--TRNA	human	P49590	HARS2	P49590	9	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+HISTIDINE--TRNA	human	P12081	HARS1	P12081	6	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
+HISTIDINE--TRNA	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 HISTIDINE--TRNA	worm	P34183	hars-1	P34183	0	4	Histidine--tRNA ligase	w
 HISTIDINE--TRNA	yeast	P07263	HTS1	P07263	0	16	Histidine--tRNA ligase, mitochondrial	w
 HISTIDINE--TRNA	zebrafish	E9QI36	hars	E9QI36	0	17	Histidine--tRNA ligase	w
-HISTIDINE-PROLINE-RICH	human	P04196	HRG	P04196	49	566	Histidine-rich glycoprotein (Histidine-proline-rich glycopro	w
+HISTIDINE-PROLINE-RICH	human	P04196	HRG	P04196	38	566	Histidine-rich glycoprotein (Histidine-proline-rich glycopro	w
 HISTIDINE-RICH	fly	FBgn0029606	CG14052	M9PDL5	44	244	Histidine-rich glycoprotein	w
 HISTIDINE-RICH	fly	FBgn0036419	CG13482	Q9VUE1	2	30	Histidine-rich glycoprotein	w
 HISTIDINE-RICH	fly	FBgn0038508	CG5866	Q9VEK2	41	247	Histidine-rich glycoprotein	w
 HISTIDINE-RICH	fly	FBgn0266918	CG32486	Q9VZV5	4	24	Zinc finger TRAF-type-containing protein 1 homolog (Cysteine	w
-HISTIDINE-RICH	human	P04196	HRG	P04196	49	566	Histidine-rich glycoprotein (Histidine-proline-rich glycopro	w
+HISTIDINE-RICH	human	P04196	HRG	P04196	38	566	Histidine-rich glycoprotein (Histidine-proline-rich glycopro	w
 HISTIDINE-RICH	human	P0DTL6	ZFTRAF1	P0DTL6	2	39	Zinc finger TRAF-type-containing protein 1 (Cysteine and his	w
-HISTIDINE-RICH	human	P15515	HTN1	P15515	29	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
-HISTIDINE-RICH	human	P15516	HTN3	P15516	22	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
-HISTIDINE-RICH	human	P23327	HRC	P23327	6	114	Sarcoplasmic reticulum histidine-rich calcium-binding protei	w
+HISTIDINE-RICH	human	P15515	HTN1	P15515	15	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
+HISTIDINE-RICH	human	P15516	HTN3	P15516	16	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
+HISTIDINE-RICH	human	P23327	HRC	P23327	5	114	Sarcoplasmic reticulum histidine-rich calcium-binding protei	w
 HISTIDINE-RICH	human	Q6UXD1	HRCT1	Q6UXD1	12	49	Histidine-rich carboxyl terminus protein 1	w
-HISTIDINE-RICH	human	Q92504	SLC39A7	Q92504	6	176	Zinc transporter SLC39A7 (Histidine-rich membrane protein Ke	w
-HISTIDINE-RICH	human	Q9UHD1	CHORDC1	Q9UHD1	12	150	Cysteine and histidine-rich domain-containing protein 1 (CHO	w
+HISTIDINE-RICH	human	Q92504	SLC39A7	Q92504	4	176	Zinc transporter SLC39A7 (Histidine-rich membrane protein Ke	w
+HISTIDINE-RICH	human	Q9UHD1	CHORDC1	Q9UHD1	10	150	Cysteine and histidine-rich domain-containing protein 1 (CHO	w
 HISTIDINE-RICH	worm	G5EEI8	chp-1	G5EEI8	0	18	Cysteine and histidine-rich domain-containing protein 1	w
 HISTIDINE-RICH	worm	Q21616	CELE_R01E6.5	Q21616	0	4	Histidine-rich glycoprotein-like	w
 HISTIDINE-RICH	worm	Q9NES7	CELE_Y39B6A.1	Q9NES7	0	5	Histidine-rich glycoprotein-like	w
@@ -512,53 +512,53 @@ HISTIDINE-RICH	zebrafish	S5TZ97	trpm4b3	S5TZ97	3	4	Histidine-rich calcium-bindin
 HISTIDINOL-PHOSPHATASE	yeast	P38635	HIS2	P38635	0	4	Histidinol-phosphatase	w
 HISTIDINOL-PHOSPHATE	yeast	P07172	HIS5	P07172	0	11	Histidinol-phosphate aminotransferase	w
 HISTIDYL-HYDROXYLASE	fly	FBgn0266570	NO66	Q7K4H4	5	30	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
-HISTIDYL-HYDROXYLASE	human	Q8IUF8	RIOX2	Q8IUF8	14	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	w
-HISTIDYL-HYDROXYLASE	human	Q9H6W3	RIOX1	Q9H6W3	10	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
+HISTIDYL-HYDROXYLASE	human	Q8IUF8	RIOX2	Q8IUF8	10	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	w
+HISTIDYL-HYDROXYLASE	human	Q9H6W3	RIOX1	Q9H6W3	8	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
 HISTIDYL-HYDROXYLASE	worm	O01658	jmjc-1	O01658	0	4	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
 HISTIDYL-HYDROXYLASE	zebrafish	A0AB32TXY1	riox2	A0AB32TXY1	0	5	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
-HISTIDYL-TRNA	human	P12081	HARS1	P12081	8	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
-HISTIDYL-TRNA	human	P49590	HARS2	P49590	9	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+HISTIDYL-TRNA	human	P12081	HARS1	P12081	6	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
+HISTIDYL-TRNA	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 HISTIDYL-TRNA	human	Q8TEA8	DTD1	Q8TEA8	3	46	D-aminoacyl-tRNA deacylase 1 (DTD) (EC 3.1.1.96) (DNA-unwind	w
-HISTIOCYTOMA-AMPLIFIED	human	Q9Y4C4	MFHAS1	Q9Y4C4	13	115	Malignant fibrous histiocytoma-amplified sequence 1 (Maligna	w
+HISTIOCYTOMA-AMPLIFIED	human	Q9Y4C4	MFHAS1	Q9Y4C4	9	115	Malignant fibrous histiocytoma-amplified sequence 1 (Maligna	w
 HISTIOCYTOMA-AMPLIFIED	zebrafish	F1QVP4	mfhas1	F1QVP4	0	27	Malignant fibrous histiocytoma-amplified sequence 1	w
-HISTO	human	Q6GMV2	SMYD5	Q6GMV2	14	119	Protein-lysine N-trimethyltransferase SMYD5 (EC 2.1.1.-) (Pr	w
-HISTO-BLOOD	human	P16442	ABO	P16442	4	38	Histo-blood group ABO system transferase (Fucosylglycoprotei	w
+HISTO	human	Q6GMV2	SMYD5	Q6GMV2	9	119	Protein-lysine N-trimethyltransferase SMYD5 (EC 2.1.1.-) (Pr	w
+HISTO-BLOOD	human	P16442	ABO	P16442	3	38	Histo-blood group ABO system transferase (Fucosylglycoprotei	w
 HISTO-BLOOD	zebrafish	B0S7I1	gbgt1l5	B0S7I1	0	6	Histo-blood group ABO system transferase	w
 HISTOCOMPATIBILITY	human	A8MTL9	HMSD	A8MTL9	3	17	Serpin-like protein HMSD (Minor histocompatibility protein H	w
-HISTOCOMPATIBILITY	human	B0I1T2	MYO1G	B0I1T2	10	126	Unconventional myosin-Ig [Cleaved into: Minor histocompatibi	w
+HISTOCOMPATIBILITY	human	B0I1T2	MYO1G	B0I1T2	8	126	Unconventional myosin-Ig [Cleaved into: Minor histocompatibi	w
 HISTOCOMPATIBILITY	human	O97980	HMHB1	O97980	2	20	Minor histocompatibility protein HB-1 [Cleaved into: Minor h	w
-HISTOCOMPATIBILITY	human	P01889	HLA-B	P01889	623	1802	HLA class I histocompatibility antigen, B alpha chain (Human	w
-HISTOCOMPATIBILITY	human	P01893	HLA-H	P01893	69	356	Putative HLA class I histocompatibility antigen, alpha chain	w
-HISTOCOMPATIBILITY	human	P01903	HLA-DRA	P01903	259	1187	HLA class II histocompatibility antigen, DR alpha chain (MHC	w
-HISTOCOMPATIBILITY	human	P01906	HLA-DQA2	P01906	67	404	HLA class II histocompatibility antigen, DQ alpha 2 chain (D	w
-HISTOCOMPATIBILITY	human	P01909	HLA-DQA1	P01909	33	195	HLA class II histocompatibility antigen, DQ alpha 1 chain (D	w
-HISTOCOMPATIBILITY	human	P01911	HLA-DRB1	P01911	116	1148	HLA class II histocompatibility antigen, DRB1 beta chain (Hu	w
+HISTOCOMPATIBILITY	human	P01889	HLA-B	P01889	529	1801	HLA class I histocompatibility antigen, B alpha chain (Human	w
+HISTOCOMPATIBILITY	human	P01893	HLA-H	P01893	56	356	Putative HLA class I histocompatibility antigen, alpha chain	w
+HISTOCOMPATIBILITY	human	P01903	HLA-DRA	P01903	211	1187	HLA class II histocompatibility antigen, DR alpha chain (MHC	w
+HISTOCOMPATIBILITY	human	P01906	HLA-DQA2	P01906	54	404	HLA class II histocompatibility antigen, DQ alpha 2 chain (D	w
+HISTOCOMPATIBILITY	human	P01909	HLA-DQA1	P01909	30	195	HLA class II histocompatibility antigen, DQ alpha 1 chain (D	w
+HISTOCOMPATIBILITY	human	P01911	HLA-DRB1	P01911	97	1148	HLA class II histocompatibility antigen, DRB1 beta chain (Hu	w
 HISTOCOMPATIBILITY	human	P01920	HLA-DQB1	P01920	20	180	HLA class II histocompatibility antigen, DQ beta 1 chain (MH	w
-HISTOCOMPATIBILITY	human	P04233	CD74	P04233	90	1271	HLA class II histocompatibility antigen gamma chain (HLA-DR 	w
-HISTOCOMPATIBILITY	human	P04439	HLA-A	P04439	793	1948	HLA class I histocompatibility antigen, A alpha chain (Human	w
-HISTOCOMPATIBILITY	human	P04440	HLA-DPB1	P04440	49	460	HLA class II histocompatibility antigen, DP beta 1 chain (HL	w
-HISTOCOMPATIBILITY	human	P05538	HLA-DQB2	P05538	43	258	HLA class II histocompatibility antigen, DQ beta 2 chain (HL	w
-HISTOCOMPATIBILITY	human	P06340	HLA-DOA	P06340	50	259	HLA class II histocompatibility antigen, DO alpha chain (MHC	w
+HISTOCOMPATIBILITY	human	P04233	CD74	P04233	71	1268	HLA class II histocompatibility antigen gamma chain (HLA-DR 	w
+HISTOCOMPATIBILITY	human	P04439	HLA-A	P04439	681	1948	HLA class I histocompatibility antigen, A alpha chain (Human	w
+HISTOCOMPATIBILITY	human	P04440	HLA-DPB1	P04440	44	460	HLA class II histocompatibility antigen, DP beta 1 chain (HL	w
+HISTOCOMPATIBILITY	human	P05538	HLA-DQB2	P05538	40	258	HLA class II histocompatibility antigen, DQ beta 2 chain (HL	w
+HISTOCOMPATIBILITY	human	P06340	HLA-DOA	P06340	44	259	HLA class II histocompatibility antigen, DO alpha chain (MHC	w
 HISTOCOMPATIBILITY	human	P0C7T4	HMSD	P0C7T4	0	1	Minor histocompatibility protein HMSD variant form (HSMD-v) 	w
-HISTOCOMPATIBILITY	human	P10321	HLA-C	P10321	527	1517	HLA class I histocompatibility antigen, C alpha chain (HLA-C	w
-HISTOCOMPATIBILITY	human	P13747	HLA-E	P13747	369	741	HLA class I histocompatibility antigen, alpha chain E (MHC c	w
-HISTOCOMPATIBILITY	human	P13762	HLA-DRB4	P13762	47	224	HLA class II histocompatibility antigen, DR beta 4 chain (MH	w
-HISTOCOMPATIBILITY	human	P13765	HLA-DOB	P13765	43	321	HLA class II histocompatibility antigen, DO beta chain (MHC 	w
-HISTOCOMPATIBILITY	human	P17693	HLA-G	P17693	447	1007	HLA class I histocompatibility antigen, alpha chain G (HLA G	w
-HISTOCOMPATIBILITY	human	P20036	HLA-DPA1	P20036	120	563	HLA class II histocompatibility antigen, DP alpha 1 chain (D	w
-HISTOCOMPATIBILITY	human	P25963	NFKBIA	P25963	91	700	NF-kappa-B inhibitor alpha (I-kappa-B-alpha) (IkB-alpha) (Ik	w
-HISTOCOMPATIBILITY	human	P27824	CANX	P27824	134	1250	Calnexin (IP90) (Major histocompatibility complex class I an	w
-HISTOCOMPATIBILITY	human	P28067	HLA-DMA	P28067	86	369	HLA class II histocompatibility antigen, DM alpha chain (MHC	w
-HISTOCOMPATIBILITY	human	P28068	HLA-DMB	P28068	54	385	HLA class II histocompatibility antigen, DM beta chain (MHC 	w
-HISTOCOMPATIBILITY	human	P30511	HLA-F	P30511	40	404	HLA class I histocompatibility antigen, alpha chain F (CDA12	w
-HISTOCOMPATIBILITY	human	P79483	HLA-DRB3	P79483	47	314	HLA class II histocompatibility antigen, DR beta 3 chain (MH	w
-HISTOCOMPATIBILITY	human	Q15397	PUM3	Q15397	23	285	Pumilio homolog 3 (HBV X-transactivated gene 5 protein) (HBV	w
-HISTOCOMPATIBILITY	human	Q30154	HLA-DRB5	Q30154	77	621	HLA class II histocompatibility antigen, DR beta 5 chain (DR	w
+HISTOCOMPATIBILITY	human	P10321	HLA-C	P10321	443	1517	HLA class I histocompatibility antigen, C alpha chain (HLA-C	w
+HISTOCOMPATIBILITY	human	P13747	HLA-E	P13747	299	741	HLA class I histocompatibility antigen, alpha chain E (MHC c	w
+HISTOCOMPATIBILITY	human	P13762	HLA-DRB4	P13762	39	224	HLA class II histocompatibility antigen, DR beta 4 chain (MH	w
+HISTOCOMPATIBILITY	human	P13765	HLA-DOB	P13765	27	321	HLA class II histocompatibility antigen, DO beta chain (MHC 	w
+HISTOCOMPATIBILITY	human	P17693	HLA-G	P17693	357	1007	HLA class I histocompatibility antigen, alpha chain G (HLA G	w
+HISTOCOMPATIBILITY	human	P20036	HLA-DPA1	P20036	96	563	HLA class II histocompatibility antigen, DP alpha 1 chain (D	w
+HISTOCOMPATIBILITY	human	P25963	NFKBIA	P25963	80	700	NF-kappa-B inhibitor alpha (I-kappa-B-alpha) (IkB-alpha) (Ik	w
+HISTOCOMPATIBILITY	human	P27824	CANX	P27824	108	1249	Calnexin (IP90) (Major histocompatibility complex class I an	w
+HISTOCOMPATIBILITY	human	P28067	HLA-DMA	P28067	75	369	HLA class II histocompatibility antigen, DM alpha chain (MHC	w
+HISTOCOMPATIBILITY	human	P28068	HLA-DMB	P28068	47	385	HLA class II histocompatibility antigen, DM beta chain (MHC 	w
+HISTOCOMPATIBILITY	human	P30511	HLA-F	P30511	31	404	HLA class I histocompatibility antigen, alpha chain F (CDA12	w
+HISTOCOMPATIBILITY	human	P79483	HLA-DRB3	P79483	41	314	HLA class II histocompatibility antigen, DR beta 3 chain (MH	w
+HISTOCOMPATIBILITY	human	Q15397	PUM3	Q15397	21	285	Pumilio homolog 3 (HBV X-transactivated gene 5 protein) (HBV	w
+HISTOCOMPATIBILITY	human	Q30154	HLA-DRB5	Q30154	63	621	HLA class II histocompatibility antigen, DR beta 5 chain (DR	w
 HISTOCOMPATIBILITY	human	Q5Y7H0	HLA-DQA1	Q5Y7H0	18	94	HLA class II histocompatibility antigen DQ alpha chain	w
-HISTOCOMPATIBILITY	human	Q8TCT9	HM13	Q8TCT9	6	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
-HISTOCOMPATIBILITY	human	Q92619	ARHGAP45	Q92619	49	296	Rho GTPase-activating protein 45 [Cleaved into: Minor histoc	w
-HISTOCOMPATIBILITY	human	Q95460	MR1	Q95460	60	388	Major histocompatibility complex class I-related protein 1 (	w
-HISTOCOMPATIBILITY	human	Q9BY66	KDM5D	Q9BY66	19	83	Lysine-specific demethylase 5D (EC 1.14.11.67) (Histocompati	w
+HISTOCOMPATIBILITY	human	Q8TCT9	HM13	Q8TCT9	3	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
+HISTOCOMPATIBILITY	human	Q92619	ARHGAP45	Q92619	42	296	Rho GTPase-activating protein 45 [Cleaved into: Minor histoc	w
+HISTOCOMPATIBILITY	human	Q95460	MR1	Q95460	53	388	Major histocompatibility complex class I-related protein 1 (	w
+HISTOCOMPATIBILITY	human	Q9BY66	KDM5D	Q9BY66	10	83	Lysine-specific demethylase 5D (EC 1.14.11.67) (Histocompati	w
 HISTOCOMPATIBILITY	zebrafish	A0A0G2KIH5	mhc1lla	A0A0G2KIH5	8	54	Major histocompatibility complex class I LLA	w
 HISTOCOMPATIBILITY	zebrafish	A0A0G2KL77	LOC108181672	A0A0G2KL77	2	7	Major histocompatibility complex class I-related gene protei	w
 HISTOCOMPATIBILITY	zebrafish	A0A0R4ISW2	mhc2d8.37b2	A0A0R4ISW2	16	54	Rano class II histocompatibility antigen, A beta chain	w
@@ -578,7 +578,7 @@ HISTOCOMPATIBILITY	zebrafish	Q9PUT2	cd74a	Q9PUT2	13	661	CD74 molecule, major his
 HISTOCOMPATIBILITY	zebrafish	X1WDE6	mhc1lia	X1WDE6	1	40	Major histocompatibility complex class I LIA	w
 HISTOCOMPATIBILITY	zebrafish	X1WF83	mhc1lja	X1WF83	5	54	Major histocompatibility complex class I LJA	w
 HISTOGLOBIN	human	Q8WWM9	CYGB	Q8WWM9	10	83	Cytoglobin (Histoglobin) (HGb) (Nitric oxygen dioxygenase CY	w
-HISTON	human	P41229	KDM5C	P41229	37	196	Lysine-specific demethylase 5C (EC 1.14.11.67) (Histone deme	w
+HISTON	human	P41229	KDM5C	P41229	22	196	Lysine-specific demethylase 5C (EC 1.14.11.67) (Histone deme	w
 HISTONE	fly	FBgn0000139	ash2	Q94545	40	479	Set1/Ash2 histone methyltransferase complex subunit ASH2 (Ab	w
 HISTONE	fly	FBgn0000629	E(z)	M9PHZ5	36	491	[histone H3]-lysine(27) N-trimethyltransferase (EC 2.1.1.356	w
 HISTONE	fly	FBgn0001197	His2Av	P08985	25	174	Histone H2A.v (H2A.F/Z) (H2A.Z)	w
@@ -728,147 +728,147 @@ HISTONE	fly	FBgn0260749	Utx	Q9VL07	14	160	LD02225p (LD05703p) (Utx histone demet
 HISTONE	fly	FBgn0261617	nej	M9MS40	12	175	histone acetyltransferase (EC 2.3.1.48)	w
 HISTONE	fly	FBgn0266570	NO66	Q7K4H4	5	30	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
 HISTONE	human	A0A0U1RR32	hCG_2039566	A0A0U1RR32	15	47	Histone H2A	w
-HISTONE	human	A0A2R8Y619	H2BK1	A0A2R8Y619	62	233	Histone H2B type 2-K1 (Histone H2B type 2-E1)	w
+HISTONE	human	A0A2R8Y619	H2BK1	A0A2R8Y619	58	233	Histone H2B type 2-K1 (Histone H2B type 2-E1)	w
 HISTONE	human	A0A3B3IRV1	?	A0A3B3IRV1	4	38	Histone deacetylase 8	w
 HISTONE	human	A0A3B3IU63	H2AL3	A0A3B3IU63	23	70	Histone H2A-like 3 (H2A.L.3)	w
-HISTONE	human	A8MT69	CENPX	A8MT69	22	136	Centromere protein X (CENP-X) (FANCM-associated histone fold	w
-HISTONE	human	A8MVJ9	HPF1L	A8MVJ9	5	32	Putative histone PARylation factor 1-like	w
-HISTONE	human	B2RXH2	KDM4E	B2RXH2	53	349	Lysine-specific demethylase 4E (EC 1.14.11.-) (EC 1.14.11.66	w
-HISTONE	human	O00422	SAP18	O00422	83	408	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	w
-HISTONE	human	O14607	UTY	O14607	30	287	Histone demethylase UTY (EC 1.14.11.68) (Ubiquitously-transc	w
-HISTONE	human	O14929	HAT1	O14929	63	576	Histone acetyltransferase type B catalytic subunit (EC 2.3.1	w
-HISTONE	human	O15047	SETD1A	O15047	96	480	Histone-lysine N-methyltransferase SETD1A (EC 2.1.1.364) (Ly	w
-HISTONE	human	O15054	KDM6B	O15054	147	824	Lysine-specific demethylase 6B (EC 1.14.11.68) (JmjC domain-	w
-HISTONE	human	O15379	HDAC3	O15379	111	842	Histone deacetylase 3 (HD3) (EC 3.5.1.98) (Protein deacetyla	w
-HISTONE	human	O15550	KDM6A	O15550	54	460	Lysine-specific demethylase 6A (EC 1.14.11.68) (Histone deme	w
-HISTONE	human	O43463	SUV39H1	O43463	129	717	Histone-lysine N-methyltransferase SUV39H1 (EC 2.1.1.-) (His	w
+HISTONE	human	A8MT69	CENPX	A8MT69	21	136	Centromere protein X (CENP-X) (FANCM-associated histone fold	w
+HISTONE	human	A8MVJ9	HPF1L	A8MVJ9	4	32	Putative histone PARylation factor 1-like	w
+HISTONE	human	B2RXH2	KDM4E	B2RXH2	50	349	Lysine-specific demethylase 4E (EC 1.14.11.-) (EC 1.14.11.66	w
+HISTONE	human	O00422	SAP18	O00422	68	407	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	w
+HISTONE	human	O14607	UTY	O14607	21	287	Histone demethylase UTY (EC 1.14.11.68) (Ubiquitously-transc	w
+HISTONE	human	O14929	HAT1	O14929	54	576	Histone acetyltransferase type B catalytic subunit (EC 2.3.1	w
+HISTONE	human	O15047	SETD1A	O15047	76	480	Histone-lysine N-methyltransferase SETD1A (EC 2.1.1.364) (Ly	w
+HISTONE	human	O15054	KDM6B	O15054	108	824	Lysine-specific demethylase 6B (EC 1.14.11.68) (JmjC domain-	w
+HISTONE	human	O15379	HDAC3	O15379	105	842	Histone deacetylase 3 (HD3) (EC 3.5.1.98) (Protein deacetyla	w
+HISTONE	human	O15550	KDM6A	O15550	36	459	Lysine-specific demethylase 6A (EC 1.14.11.68) (Histone deme	w
+HISTONE	human	O43463	SUV39H1	O43463	119	717	Histone-lysine N-methyltransferase SUV39H1 (EC 2.1.1.-) (His	w
 HISTONE	human	O43593	HR	O43593	19	71	Lysine-specific demethylase hairless (EC 1.14.11.65) ([histo	w
-HISTONE	human	O60341	KDM1A	O60341	208	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	w
-HISTONE	human	O60814	H2BC12	O60814	122	1453	Histone H2B type 1-K (H2B K) (HIRA-interacting protein 1)	w
-HISTONE	human	O75164	KDM4A	O75164	37	243	Lysine-specific demethylase 4A (EC 1.14.11.66) (EC 1.14.11.6	w
-HISTONE	human	O75182	SIN3B	O75182	68	290	Paired amphipathic helix protein Sin3b (Histone deacetylase 	w
-HISTONE	human	O75367	MACROH2A1	O75367	86	563	Core histone macro-H2A.1 (Histone macroH2A1) (mH2A1) (Histon	w
-HISTONE	human	O75409	H2AP	O75409	36	205	Huntingtin-interacting protein M (Histone H2A.P) (Huntingtin	w
-HISTONE	human	O75446	SAP30	O75446	75	545	Histone deacetylase complex subunit SAP30 (30 kDa Sin3-assoc	w
-HISTONE	human	O94953	KDM4B	O94953	29	181	Lysine-specific demethylase 4B (EC 1.14.11.66) (JmjC domain-	w
-HISTONE	human	O95251	KAT7	O95251	100	503	Histone acetyltransferase KAT7 (EC 2.3.1.48) (Histone acetyl	w
-HISTONE	human	P04554	PRM2	P04554	6	58	Protamine-2 (Sperm histone P2) (Sperm protamine P2) [Cleaved	w
-HISTONE	human	P04908	H2AC4	P04908	102	837	Histone H2A type 1-B/E (Histone H2A.2) (Histone H2A/a) (Hist	w
-HISTONE	human	P06899	H2BC11	P06899	109	1084	Histone H2B type 1-J (Histone H2B.1) (Histone H2B.r) (H2B/r)	w
-HISTONE	human	P07305	H1-0	P07305	18	418	Histone H1.0 (Histone H1') (Histone H1(0)) [Cleaved into: Hi	w
-HISTONE	human	P0C0S5	H2AZ1	P0C0S5	124	1111	Histone H2A.Z (H2A/z)	w
-HISTONE	human	P0C0S8	H2AC11	P0C0S8	76	605	Histone H2A type 1 (H2A.1) (Histone H2A/ptl)	w
+HISTONE	human	O60341	KDM1A	O60341	178	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	w
+HISTONE	human	O60814	H2BC12	O60814	104	1453	Histone H2B type 1-K (H2B K) (HIRA-interacting protein 1)	w
+HISTONE	human	O75164	KDM4A	O75164	26	243	Lysine-specific demethylase 4A (EC 1.14.11.66) (EC 1.14.11.6	w
+HISTONE	human	O75182	SIN3B	O75182	64	290	Paired amphipathic helix protein Sin3b (Histone deacetylase 	w
+HISTONE	human	O75367	MACROH2A1	O75367	76	563	Core histone macro-H2A.1 (Histone macroH2A1) (mH2A1) (Histon	w
+HISTONE	human	O75409	H2AP	O75409	23	205	Huntingtin-interacting protein M (Histone H2A.P) (Huntingtin	w
+HISTONE	human	O75446	SAP30	O75446	74	545	Histone deacetylase complex subunit SAP30 (30 kDa Sin3-assoc	w
+HISTONE	human	O94953	KDM4B	O94953	24	181	Lysine-specific demethylase 4B (EC 1.14.11.66) (JmjC domain-	w
+HISTONE	human	O95251	KAT7	O95251	78	503	Histone acetyltransferase KAT7 (EC 2.3.1.48) (Histone acetyl	w
+HISTONE	human	P04554	PRM2	P04554	3	58	Protamine-2 (Sperm histone P2) (Sperm protamine P2) [Cleaved	w
+HISTONE	human	P04908	H2AC4	P04908	95	837	Histone H2A type 1-B/E (Histone H2A.2) (Histone H2A/a) (Hist	w
+HISTONE	human	P06899	H2BC11	P06899	91	1084	Histone H2B type 1-J (Histone H2B.1) (Histone H2B.r) (H2B/r)	w
+HISTONE	human	P07305	H1-0	P07305	14	418	Histone H1.0 (Histone H1') (Histone H1(0)) [Cleaved into: Hi	w
+HISTONE	human	P0C0S5	H2AZ1	P0C0S5	108	1111	Histone H2A.Z (H2A/z)	w
+HISTONE	human	P0C0S8	H2AC11	P0C0S8	72	605	Histone H2A type 1 (H2A.1) (Histone H2A/ptl)	w
 HISTONE	human	P0C1H6	H2BW2	P0C1H6	46	122	Histone H2B type F-M (Histone H2B.s) (H2B/s)	w
-HISTONE	human	P0C5Y9	H2AB1	P0C5Y9	34	69	Histone H2A-Bbd type 1 (H2A Barr body-deficient) (H2A.B) (H2	w
-HISTONE	human	P0C5Z0	H2AB2	P0C5Z0	48	354	Histone H2A-Bbd type 2/3 (H2A Barr body-deficient) (H2A.Bbd)	w
-HISTONE	human	P0DPK2	H3Y1	P0DPK2	68	280	Histone H3.Y (Histone H3.Y1)	w
-HISTONE	human	P0DPK5	H3Y2	P0DPK5	103	438	Histone H3.X (Histone H3.Y2)	w
-HISTONE	human	P10412	H1-4	P10412	25	580	Histone H1.4 (Histone H1b) (Histone H1s-4)	w
-HISTONE	human	P16104	H2AX	P16104	136	1348	Histone H2AX (H2a/x) (Histone H2A.X)	w
-HISTONE	human	P16401	H1-5	P16401	18	482	Histone H1.5 (Histone H1a) (Histone H1b) (Histone H1s-3)	w
-HISTONE	human	P16402	H1-3	P16402	9	293	Histone H1.3 (Histone H1c) (Histone H1s-2)	w
-HISTONE	human	P16403	H1-2	P16403	25	521	Histone H1.2 (Histone H1c) (Histone H1d) (Histone H1s-1)	w
-HISTONE	human	P20671	H2AC7	P20671	63	471	Histone H2A type 1-D (Histone H2A.3) (Histone H2A/g)	w
-HISTONE	human	P22492	H1-6	P22492	16	274	Histone H1t (Testicular H1 histone)	w
-HISTONE	human	P23527	H2BC17	P23527	98	1097	Histone H2B type 1-O (H2B-clustered histone 17) (Histone H2B	w
-HISTONE	human	P29375	KDM5A	P29375	32	200	Lysine-specific demethylase 5A (EC 1.14.11.67) (Histone deme	w
-HISTONE	human	P33778	H2BC3	P33778	106	1112	Histone H2B type 1-B (H2B-clustered histone 3) (Histone H2B.	w
-HISTONE	human	P41229	KDM5C	P41229	37	196	Lysine-specific demethylase 5C (EC 1.14.11.67) (Histone deme	w
-HISTONE	human	P49450	CENPA	P49450	94	623	Histone H3-like centromeric protein A (Centromere autoantige	w
-HISTONE	human	P55209	NAP1L1	P55209	67	439	Nucleosome assembly protein 1-like 1 (Histone H2A-H2B chaper	w
-HISTONE	human	P56524	HDAC4	P56524	103	583	Histone deacetylase 4 (HD4) (EC 3.5.1.98)	w
-HISTONE	human	P57053	H2BC12L	P57053	72	700	Histone H2B type F-S (H2B-clustered histone 12 like) (H2B.S 	w
-HISTONE	human	P58876	H2BC5	P58876	117	1489	Histone H2B type 1-D (H2B-clustered histone 5) (HIRA-interac	w
+HISTONE	human	P0C5Y9	H2AB1	P0C5Y9	31	69	Histone H2A-Bbd type 1 (H2A Barr body-deficient) (H2A.B) (H2	w
+HISTONE	human	P0C5Z0	H2AB2	P0C5Z0	47	354	Histone H2A-Bbd type 2/3 (H2A Barr body-deficient) (H2A.Bbd)	w
+HISTONE	human	P0DPK2	H3Y1	P0DPK2	64	280	Histone H3.Y (Histone H3.Y1)	w
+HISTONE	human	P0DPK5	H3Y2	P0DPK5	91	438	Histone H3.X (Histone H3.Y2)	w
+HISTONE	human	P10412	H1-4	P10412	24	580	Histone H1.4 (Histone H1b) (Histone H1s-4)	w
+HISTONE	human	P16104	H2AX	P16104	119	1348	Histone H2AX (H2a/x) (Histone H2A.X)	w
+HISTONE	human	P16401	H1-5	P16401	14	482	Histone H1.5 (Histone H1a) (Histone H1b) (Histone H1s-3)	w
+HISTONE	human	P16402	H1-3	P16402	8	293	Histone H1.3 (Histone H1c) (Histone H1s-2)	w
+HISTONE	human	P16403	H1-2	P16403	21	521	Histone H1.2 (Histone H1c) (Histone H1d) (Histone H1s-1)	w
+HISTONE	human	P20671	H2AC7	P20671	58	471	Histone H2A type 1-D (Histone H2A.3) (Histone H2A/g)	w
+HISTONE	human	P22492	H1-6	P22492	14	274	Histone H1t (Testicular H1 histone)	w
+HISTONE	human	P23527	H2BC17	P23527	83	1097	Histone H2B type 1-O (H2B-clustered histone 17) (Histone H2B	w
+HISTONE	human	P29375	KDM5A	P29375	25	200	Lysine-specific demethylase 5A (EC 1.14.11.67) (Histone deme	w
+HISTONE	human	P33778	H2BC3	P33778	93	1112	Histone H2B type 1-B (H2B-clustered histone 3) (Histone H2B.	w
+HISTONE	human	P41229	KDM5C	P41229	22	196	Lysine-specific demethylase 5C (EC 1.14.11.67) (Histone deme	w
+HISTONE	human	P49450	CENPA	P49450	90	623	Histone H3-like centromeric protein A (Centromere autoantige	w
+HISTONE	human	P55209	NAP1L1	P55209	49	439	Nucleosome assembly protein 1-like 1 (Histone H2A-H2B chaper	w
+HISTONE	human	P56524	HDAC4	P56524	86	583	Histone deacetylase 4 (HD4) (EC 3.5.1.98)	w
+HISTONE	human	P57053	H2BC12L	P57053	64	700	Histone H2B type F-S (H2B-clustered histone 12 like) (H2B.S 	w
+HISTONE	human	P58876	H2BC5	P58876	99	1489	Histone H2B type 1-D (H2B-clustered histone 5) (HIRA-interac	w
 HISTONE	human	P60008	H1-9P	P60008	48	330	Putative histone H1.9 (H1.9 linker histone pseudogene) (Puta	w
-HISTONE	human	P62805	H4C1	P62805	374	4490	Histone H4	w
-HISTONE	human	P62807	H2BC4	P62807	165	2026	Histone H2B type 1-C/E/F/G/I (Histone H2B.1 A) (Histone H2B.	w
-HISTONE	human	P68431	H3C1	P68431	514	5885	Histone H3.1 (Histone H3/a) (Histone H3/b) (Histone H3/c) (H	w
-HISTONE	human	P84243	H3-3A	P84243	514	5477	Histone H3.3	w
-HISTONE	human	Q02539	H1-1	Q02539	20	496	Histone H1.1 (Histone H1a)	w
-HISTONE	human	Q09472	EP300	Q09472	156	1411	Histone acetyltransferase p300 (p300 HAT) (EC 2.3.1.48) (E1A	w
-HISTONE	human	Q13547	HDAC1	Q13547	224	1651	Histone deacetylase 1 (HD1) (EC 3.5.1.98) (Protein deacetyla	w
-HISTONE	human	Q14493	SLBP	Q14493	35	173	Histone RNA hairpin-binding protein (Histone stem-loop-bindi	w
-HISTONE	human	Q15047	SETDB1	Q15047	71	389	Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.366) (ER	w
-HISTONE	human	Q16576	RBBP7	Q16576	81	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
-HISTONE	human	Q16695	H3-4	Q16695	269	2382	Histone H3.1t (H3/t) (H3t) (H3/g) (Histone H3.4)	w
-HISTONE	human	Q16777	H2AC20	Q16777	97	880	Histone H2A type 2-C (H2A-clustered histone 20) (Histone H2A	w
-HISTONE	human	Q16778	H2BC21	Q16778	152	1618	Histone H2B type 2-E (H2B-clustered histone 21) (Histone H2B	w
-HISTONE	human	Q5QNW6	H2BC18	Q5QNW6	85	750	Histone H2B type 2-F (H2B-clustered histone 18)	w
-HISTONE	human	Q5TEC6	H3-7	Q5TEC6	318	2758	Histone H3-7	w
-HISTONE	human	Q6B0I6	KDM4D	Q6B0I6	57	426	Lysine-specific demethylase 4D (EC 1.14.11.66) (JmjC domain-	w
-HISTONE	human	Q6DN03	H2BC20P	Q6DN03	17	28	Putative histone H2B type 2-C (H2B-clustered histone 20 pseu	w
+HISTONE	human	P62805	H4C1	P62805	294	4490	Histone H4	w
+HISTONE	human	P62807	H2BC4	P62807	139	2026	Histone H2B type 1-C/E/F/G/I (Histone H2B.1 A) (Histone H2B.	w
+HISTONE	human	P68431	H3C1	P68431	431	5885	Histone H3.1 (Histone H3/a) (Histone H3/b) (Histone H3/c) (H	w
+HISTONE	human	P84243	H3-3A	P84243	414	5477	Histone H3.3	w
+HISTONE	human	Q02539	H1-1	Q02539	14	496	Histone H1.1 (Histone H1a)	w
+HISTONE	human	Q09472	EP300	Q09472	109	1411	Histone acetyltransferase p300 (p300 HAT) (EC 2.3.1.48) (E1A	w
+HISTONE	human	Q13547	HDAC1	Q13547	193	1650	Histone deacetylase 1 (HD1) (EC 3.5.1.98) (Protein deacetyla	w
+HISTONE	human	Q14493	SLBP	Q14493	31	173	Histone RNA hairpin-binding protein (Histone stem-loop-bindi	w
+HISTONE	human	Q15047	SETDB1	Q15047	58	389	Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.366) (ER	w
+HISTONE	human	Q16576	RBBP7	Q16576	73	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
+HISTONE	human	Q16695	H3-4	Q16695	226	2382	Histone H3.1t (H3/t) (H3t) (H3/g) (Histone H3.4)	w
+HISTONE	human	Q16777	H2AC20	Q16777	89	880	Histone H2A type 2-C (H2A-clustered histone 20) (Histone H2A	w
+HISTONE	human	Q16778	H2BC21	Q16778	134	1618	Histone H2B type 2-E (H2B-clustered histone 21) (Histone H2B	w
+HISTONE	human	Q5QNW6	H2BC18	Q5QNW6	78	750	Histone H2B type 2-F (H2B-clustered histone 18)	w
+HISTONE	human	Q5TEC6	H3-7	Q5TEC6	258	2758	Histone H3-7	w
+HISTONE	human	Q6B0I6	KDM4D	Q6B0I6	51	426	Lysine-specific demethylase 4D (EC 1.14.11.66) (JmjC domain-	w
+HISTONE	human	Q6DN03	H2BC20P	Q6DN03	16	28	Putative histone H2B type 2-C (H2B-clustered histone 20 pseu	w
 HISTONE	human	Q6DRA6	H2BC19P	Q6DRA6	11	17	Putative histone H2B type 2-D (H2B-clustered histone 19 pseu	w
-HISTONE	human	Q6FI13	H2AC18	Q6FI13	78	563	Histone H2A type 2-A (H2A-clustered histone 18) (H2A-cluster	w
-HISTONE	human	Q6NXT2	H3-5	Q6NXT2	272	2328	Histone H3.3C (Histone H3.5)	w
-HISTONE	human	Q6NYC1	JMJD6	Q6NYC1	21	285	Bifunctional arginine demethylase and lysyl-hydroxylase JMJD	w
-HISTONE	human	Q6ZMT4	KDM7A	Q6ZMT4	24	99	Lysine-specific demethylase 7A (JmjC domain-containing histo	w
-HISTONE	human	Q71DI3	H3C15	Q71DI3	461	4744	Histone H3.2 (H3-clustered histone 13) (H3-clustered histone	w
-HISTONE	human	Q71UI9	H2AZ2	Q71UI9	98	874	Histone H2A.V (H2A.F/Z) (H2A.Z variant histone 2)	w
-HISTONE	human	Q75WM6	H1-7	Q75WM6	22	215	Testis-specific H1 histone (Haploid germ cell-specific nucle	w
-HISTONE	human	Q7KZ85	SUPT6H	Q7KZ85	50	484	Transcription elongation factor SPT6 (hSPT6) (Histone chaper	w
-HISTONE	human	Q7L7L0	H2AC25	Q7L7L0	52	281	Histone H2A type 3 (H2A-clustered histone 25)	w
-HISTONE	human	Q7LBC6	KDM3B	Q7LBC6	43	290	Lysine-specific demethylase 3B (EC 1.14.11.65) (JmjC domain-	w
-HISTONE	human	Q7Z2G1	H2BW1	Q7Z2G1	47	132	Histone H2B type W-T (H2B histone family member W testis-spe	w
-HISTONE	human	Q8IUE6	H2AC21	Q8IUE6	95	769	Histone H2A type 2-B (H2A-clustered histone 21)	w
-HISTONE	human	Q8IV48	ERI1	Q8IV48	9	121	3'-5' exoribonuclease 1 (EC 3.1.13.1) (3'-5' exonuclease ERI	w
-HISTONE	human	Q8IZA3	H1-8	Q8IZA3	6	89	Histone H1.8 (Histone H1oo) (Oocyte-specific histone H1) (Oo	w
-HISTONE	human	Q8IZD2	KMT2E	Q8IZD2	52	153	Histone reader KMT2E (Inactive histone-lysine N-methyltransf	w
-HISTONE	human	Q8N257	H2BC26	Q8N257	114	1032	Histone H2B type 3-B (H2B type 12) (H2B-clustered histone 26	w
+HISTONE	human	Q6FI13	H2AC18	Q6FI13	72	563	Histone H2A type 2-A (H2A-clustered histone 18) (H2A-cluster	w
+HISTONE	human	Q6NXT2	H3-5	Q6NXT2	232	2328	Histone H3.3C (Histone H3.5)	w
+HISTONE	human	Q6NYC1	JMJD6	Q6NYC1	17	285	Bifunctional arginine demethylase and lysyl-hydroxylase JMJD	w
+HISTONE	human	Q6ZMT4	KDM7A	Q6ZMT4	22	99	Lysine-specific demethylase 7A (JmjC domain-containing histo	w
+HISTONE	human	Q71DI3	H3C15	Q71DI3	365	4744	Histone H3.2 (H3-clustered histone 13) (H3-clustered histone	w
+HISTONE	human	Q71UI9	H2AZ2	Q71UI9	88	874	Histone H2A.V (H2A.F/Z) (H2A.Z variant histone 2)	w
+HISTONE	human	Q75WM6	H1-7	Q75WM6	19	215	Testis-specific H1 histone (Haploid germ cell-specific nucle	w
+HISTONE	human	Q7KZ85	SUPT6H	Q7KZ85	31	484	Transcription elongation factor SPT6 (hSPT6) (Histone chaper	w
+HISTONE	human	Q7L7L0	H2AC25	Q7L7L0	50	281	Histone H2A type 3 (H2A-clustered histone 25)	w
+HISTONE	human	Q7LBC6	KDM3B	Q7LBC6	29	290	Lysine-specific demethylase 3B (EC 1.14.11.65) (JmjC domain-	w
+HISTONE	human	Q7Z2G1	H2BW1	Q7Z2G1	46	132	Histone H2B type W-T (H2B histone family member W testis-spe	w
+HISTONE	human	Q8IUE6	H2AC21	Q8IUE6	85	769	Histone H2A type 2-B (H2A-clustered histone 21)	w
+HISTONE	human	Q8IV48	ERI1	Q8IV48	8	121	3'-5' exoribonuclease 1 (EC 3.1.13.1) (3'-5' exonuclease ERI	w
+HISTONE	human	Q8IZA3	H1-8	Q8IZA3	5	89	Histone H1.8 (Histone H1oo) (Oocyte-specific histone H1) (Oo	w
+HISTONE	human	Q8IZD2	KMT2E	Q8IZD2	40	153	Histone reader KMT2E (Inactive histone-lysine N-methyltransf	w
+HISTONE	human	Q8N257	H2BC26	Q8N257	97	1032	Histone H2B type 3-B (H2B type 12) (H2B-clustered histone 26	w
 HISTONE	human	Q8N2Z9	CENPS	Q8N2Z9	19	148	Centromere protein S (CENP-S) (Apoptosis-inducing TAF9-like 	w
-HISTONE	human	Q8NB78	KDM1B	Q8NB78	8	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	w
+HISTONE	human	Q8NB78	KDM1B	Q8NB78	4	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	w
 HISTONE	human	Q8TEE9	SAP25	Q8TEE9	3	36	Histone deacetylase complex subunit SAP25 (25 kDa Sin3-assoc	w
-HISTONE	human	Q8TEK3	DOT1L	Q8TEK3	96	849	Histone-lysine N-methyltransferase, H3 lysine-79 specific (E	w
-HISTONE	human	Q8WTS6	SETD7	Q8WTS6	62	405	Histone-lysine N-methyltransferase SETD7 (EC 2.1.1.364) (His	w
-HISTONE	human	Q8WUI4	HDAC7	Q8WUI4	43	237	Histone deacetylase 7 (HD7) (EC 3.5.1.98) (Histone deacetyla	w
-HISTONE	human	Q8WYB5	KAT6B	Q8WYB5	42	139	Histone acetyltransferase KAT6B (EC 2.3.1.48) (Histone acety	w
-HISTONE	human	Q92522	H1-10	Q92522	30	286	Histone H1.10 (Histone H1x)	w
-HISTONE	human	Q92769	HDAC2	Q92769	169	1359	Histone deacetylase 2 (HD2) (EC 3.5.1.98) (Protein deacylase	w
-HISTONE	human	Q92793	CREBBP	Q92793	137	736	CREB-binding protein (Histone lysine acetyltransferase CREBB	w
-HISTONE	human	Q92794	KAT6A	Q92794	104	588	Histone acetyltransferase KAT6A (EC 2.3.1.48) (MOZ, YBF2/SAS	w
-HISTONE	human	Q92830	KAT2A	Q92830	84	737	Histone acetyltransferase KAT2A (EC 2.3.1.48) (General contr	w
-HISTONE	human	Q92831	KAT2B	Q92831	67	579	Histone acetyltransferase KAT2B (EC 2.3.1.48) (Histone acety	w
-HISTONE	human	Q92993	KAT5	Q92993	182	1092	Histone acetyltransferase KAT5 (EC 2.3.1.48) (60 kDa Tat-int	w
-HISTONE	human	Q93077	H2AC6	Q93077	73	527	Histone H2A type 1-C (H2A-clustered histone 6) (Histone H2A/	w
-HISTONE	human	Q93079	H2BC9	Q93079	117	1371	Histone H2B type 1-H (H2B-clustered histone 9) (Histone H2B.	w
+HISTONE	human	Q8TEK3	DOT1L	Q8TEK3	70	849	Histone-lysine N-methyltransferase, H3 lysine-79 specific (E	w
+HISTONE	human	Q8WTS6	SETD7	Q8WTS6	49	405	Histone-lysine N-methyltransferase SETD7 (EC 2.1.1.364) (His	w
+HISTONE	human	Q8WUI4	HDAC7	Q8WUI4	34	237	Histone deacetylase 7 (HD7) (EC 3.5.1.98) (Histone deacetyla	w
+HISTONE	human	Q8WYB5	KAT6B	Q8WYB5	32	139	Histone acetyltransferase KAT6B (EC 2.3.1.48) (Histone acety	w
+HISTONE	human	Q92522	H1-10	Q92522	27	286	Histone H1.10 (Histone H1x)	w
+HISTONE	human	Q92769	HDAC2	Q92769	148	1359	Histone deacetylase 2 (HD2) (EC 3.5.1.98) (Protein deacylase	w
+HISTONE	human	Q92793	CREBBP	Q92793	105	736	CREB-binding protein (Histone lysine acetyltransferase CREBB	w
+HISTONE	human	Q92794	KAT6A	Q92794	79	588	Histone acetyltransferase KAT6A (EC 2.3.1.48) (MOZ, YBF2/SAS	w
+HISTONE	human	Q92830	KAT2A	Q92830	65	737	Histone acetyltransferase KAT2A (EC 2.3.1.48) (General contr	w
+HISTONE	human	Q92831	KAT2B	Q92831	54	579	Histone acetyltransferase KAT2B (EC 2.3.1.48) (Histone acety	w
+HISTONE	human	Q92993	KAT5	Q92993	159	1092	Histone acetyltransferase KAT5 (EC 2.3.1.48) (60 kDa Tat-int	w
+HISTONE	human	Q93077	H2AC6	Q93077	68	527	Histone H2A type 1-C (H2A-clustered histone 6) (Histone H2A/	w
+HISTONE	human	Q93079	H2BC9	Q93079	101	1371	Histone H2B type 1-H (H2B-clustered histone 9) (Histone H2B.	w
 HISTONE	human	Q969S8	HDAC10	Q969S8	7	147	Polyamine deacetylase HDAC10 (EC 3.5.1.48) (EC 3.5.1.62) (Hi	w
-HISTONE	human	Q96A08	H2BC1	Q96A08	84	575	Histone H2B type 1-A (Histone H2B, testis) (TSH2B.1) (hTSH2B	w
-HISTONE	human	Q96DB2	HDAC11	Q96DB2	15	264	Histone deacetylase 11 (HD11) (EC 3.5.1.98)	w
-HISTONE	human	Q96KK5	H2AC12	Q96KK5	71	495	Histone H2A type 1-H (H2A-clustered histone 12) (Histone H2A	w
-HISTONE	human	Q96KQ7	EHMT2	Q96KQ7	97	465	Histone-lysine N-methyltransferase EHMT2 (EC 2.1.1.-) (EC 2.	w
+HISTONE	human	Q96A08	H2BC1	Q96A08	80	575	Histone H2B type 1-A (Histone H2B, testis) (TSH2B.1) (hTSH2B	w
+HISTONE	human	Q96DB2	HDAC11	Q96DB2	12	264	Histone deacetylase 11 (HD11) (EC 3.5.1.98)	w
+HISTONE	human	Q96KK5	H2AC12	Q96KK5	62	495	Histone H2A type 1-H (H2A-clustered histone 12) (Histone H2A	w
+HISTONE	human	Q96KQ7	EHMT2	Q96KQ7	68	465	Histone-lysine N-methyltransferase EHMT2 (EC 2.1.1.-) (EC 2.	w
 HISTONE	human	Q96NT1	NAP1L5	Q96NT1	10	149	Nucleosome assembly protein 1-like 5 (Down-regulated in live	w
-HISTONE	human	Q96QV6	H2AC1	Q96QV6	72	660	Histone H2A type 1-A (H2A-clustered histone 1) (Histone H2A/	w
-HISTONE	human	Q96ST3	SIN3A	Q96ST3	128	744	Paired amphipathic helix protein Sin3a (Histone deacetylase 	w
+HISTONE	human	Q96QV6	H2AC1	Q96QV6	65	660	Histone H2A type 1-A (H2A-clustered histone 1) (Histone H2A/	w
+HISTONE	human	Q96ST3	SIN3A	Q96ST3	105	744	Paired amphipathic helix protein Sin3a (Histone deacetylase 	w
 HISTONE	human	Q99457	NAP1L3	Q99457	8	49	Nucleosome assembly protein 1-like 3 (Histone chaperone NAP1	w
-HISTONE	human	Q99525	H4C7	Q99525	62	328	Histone H4-like protein type G (H4-clustered histone 7)	w
-HISTONE	human	Q99733	NAP1L4	Q99733	37	256	Nucleosome assembly protein 1-like 4 (Histone chaperone NAP1	w
-HISTONE	human	Q99877	H2BC15	Q99877	118	1480	Histone H2B type 1-N (Histone H2B.d) (H2B/d)	w
-HISTONE	human	Q99878	H2AC14	Q99878	69	641	Histone H2A type 1-J (Histone H2A/e)	w
-HISTONE	human	Q99879	H2BC14	Q99879	102	1146	Histone H2B type 1-M (Histone H2B.e) (H2B/e)	w
-HISTONE	human	Q99880	H2BC13	Q99880	135	1666	Histone H2B type 1-L (Histone H2B.c) (H2B/c)	w
-HISTONE	human	Q9BQA5	HINFP	Q9BQA5	49	556	Histone H4 transcription factor (Histone nuclear factor P) (	w
-HISTONE	human	Q9BTM1	H2AJ	Q9BTM1	109	1140	Histone H2A.J (H2a/j)	w
-HISTONE	human	Q9BY41	HDAC8	Q9BY41	22	314	Histone deacetylase 8 (HD8) (EC 3.5.1.98) (Protein deacetyla	w
-HISTONE	human	Q9BY66	KDM5D	Q9BY66	19	83	Lysine-specific demethylase 5D (EC 1.14.11.67) (Histocompati	w
-HISTONE	human	Q9H0E3	SAP130	Q9H0E3	75	344	Histone deacetylase complex subunit SAP130 (130 kDa Sin3-ass	w
-HISTONE	human	Q9H3R0	KDM4C	Q9H3R0	35	217	Lysine-specific demethylase 4C (EC 1.14.11.66) (Gene amplifi	w
-HISTONE	human	Q9H5I1	SUV39H2	Q9H5I1	70	500	Histone-lysine N-methyltransferase SUV39H2 (EC 2.1.1.-) (His	w
-HISTONE	human	Q9H7L9	SUDS3	Q9H7L9	51	340	Sin3 histone deacetylase corepressor complex component SDS3 	w
-HISTONE	human	Q9H7X0	NAA60	Q9H7X0	4	66	N-alpha-acetyltransferase 60 (hNaa60) (EC 2.3.1.259) (Histon	w
-HISTONE	human	Q9H7Z6	KAT8	Q9H7Z6	72	662	Histone acetyltransferase KAT8 (EC 2.3.1.48) (Lysine acetylt	w
-HISTONE	human	Q9HAJ7	SAP30L	Q9HAJ7	74	442	Histone deacetylase complex subunit SAP30L (HCV non-structur	w
+HISTONE	human	Q99525	H4C7	Q99525	53	328	Histone H4-like protein type G (H4-clustered histone 7)	w
+HISTONE	human	Q99733	NAP1L4	Q99733	32	256	Nucleosome assembly protein 1-like 4 (Histone chaperone NAP1	w
+HISTONE	human	Q99877	H2BC15	Q99877	100	1480	Histone H2B type 1-N (Histone H2B.d) (H2B/d)	w
+HISTONE	human	Q99878	H2AC14	Q99878	63	641	Histone H2A type 1-J (Histone H2A/e)	w
+HISTONE	human	Q99879	H2BC14	Q99879	90	1146	Histone H2B type 1-M (Histone H2B.e) (H2B/e)	w
+HISTONE	human	Q99880	H2BC13	Q99880	118	1666	Histone H2B type 1-L (Histone H2B.c) (H2B/c)	w
+HISTONE	human	Q9BQA5	HINFP	Q9BQA5	46	556	Histone H4 transcription factor (Histone nuclear factor P) (	w
+HISTONE	human	Q9BTM1	H2AJ	Q9BTM1	100	1140	Histone H2A.J (H2a/j)	w
+HISTONE	human	Q9BY41	HDAC8	Q9BY41	17	314	Histone deacetylase 8 (HD8) (EC 3.5.1.98) (Protein deacetyla	w
+HISTONE	human	Q9BY66	KDM5D	Q9BY66	10	83	Lysine-specific demethylase 5D (EC 1.14.11.67) (Histocompati	w
+HISTONE	human	Q9H0E3	SAP130	Q9H0E3	65	344	Histone deacetylase complex subunit SAP130 (130 kDa Sin3-ass	w
+HISTONE	human	Q9H3R0	KDM4C	Q9H3R0	24	217	Lysine-specific demethylase 4C (EC 1.14.11.66) (Gene amplifi	w
+HISTONE	human	Q9H5I1	SUV39H2	Q9H5I1	62	500	Histone-lysine N-methyltransferase SUV39H2 (EC 2.1.1.-) (His	w
+HISTONE	human	Q9H7L9	SUDS3	Q9H7L9	42	340	Sin3 histone deacetylase corepressor complex component SDS3 	w
+HISTONE	human	Q9H7X0	NAA60	Q9H7X0	3	66	N-alpha-acetyltransferase 60 (hNaa60) (EC 2.3.1.259) (Histon	w
+HISTONE	human	Q9H7Z6	KAT8	Q9H7Z6	56	662	Histone acetyltransferase KAT8 (EC 2.3.1.48) (Lysine acetylt	w
+HISTONE	human	Q9HAJ7	SAP30L	Q9HAJ7	73	442	Histone deacetylase complex subunit SAP30L (HCV non-structur	w
 HISTONE	human	Q9NQW5	PRDM7	Q9NQW5	5	22	Histone-lysine N-methyltransferase PRDM7 (EC 2.1.1.-) (PR do	w
-HISTONE	human	Q9NRG4	SMYD2	Q9NRG4	58	202	N-lysine methyltransferase SMYD2 (EC 2.1.1.-) (HSKM-B) (Hist	w
-HISTONE	human	Q9NVP2	ASF1B	Q9NVP2	45	150	Histone chaperone ASF1B (Anti-silencing function protein 1 h	w
-HISTONE	human	Q9NWY4	HPF1	Q9NWY4	12	102	Histone PARylation factor 1	w
-HISTONE	human	Q9P0M6	MACROH2A2	Q9P0M6	67	393	Core histone macro-H2A.2 (Histone macroH2A2) (mH2A2)	w
-HISTONE	human	Q9UBL3	ASH2L	Q9UBL3	38	408	Set1/Ash2 histone methyltransferase complex subunit ASH2 (AS	w
-HISTONE	human	Q9UGL1	KDM5B	Q9UGL1	30	192	Lysine-specific demethylase 5B (EC 1.14.11.67) (Cancer/testi	w
-HISTONE	human	Q9UKV0	HDAC9	Q9UKV0	41	199	Histone deacetylase 9 (HD9) (EC 3.5.1.98) (Histone deacetyla	w
-HISTONE	human	Q9ULW6	NAP1L2	Q9ULW6	8	60	Nucleosome assembly protein 1-like 2 (Brain-specific protein	w
-HISTONE	human	Q9UPP1	PHF8	Q9UPP1	80	381	Histone lysine demethylase PHF8 (EC 1.14.11.-) (EC 1.14.11.6	w
-HISTONE	human	Q9UQL6	HDAC5	Q9UQL6	83	480	Histone deacetylase 5 (HD5) (EC 3.5.1.98) (Antigen NY-CO-9)	w
-HISTONE	human	Q9Y294	ASF1A	Q9Y294	83	257	Histone chaperone ASF1A (Anti-silencing function protein 1 h	w
-HISTONE	human	Q9Y4C1	KDM3A	Q9Y4C1	27	167	Lysine-specific demethylase 3A (EC 1.14.11.65) (JmjC domain-	w
+HISTONE	human	Q9NRG4	SMYD2	Q9NRG4	45	202	N-lysine methyltransferase SMYD2 (EC 2.1.1.-) (HSKM-B) (Hist	w
+HISTONE	human	Q9NVP2	ASF1B	Q9NVP2	41	150	Histone chaperone ASF1B (Anti-silencing function protein 1 h	w
+HISTONE	human	Q9NWY4	HPF1	Q9NWY4	10	102	Histone PARylation factor 1	w
+HISTONE	human	Q9P0M6	MACROH2A2	Q9P0M6	61	393	Core histone macro-H2A.2 (Histone macroH2A2) (mH2A2)	w
+HISTONE	human	Q9UBL3	ASH2L	Q9UBL3	37	407	Set1/Ash2 histone methyltransferase complex subunit ASH2 (AS	w
+HISTONE	human	Q9UGL1	KDM5B	Q9UGL1	16	192	Lysine-specific demethylase 5B (EC 1.14.11.67) (Cancer/testi	w
+HISTONE	human	Q9UKV0	HDAC9	Q9UKV0	33	199	Histone deacetylase 9 (HD9) (EC 3.5.1.98) (Histone deacetyla	w
+HISTONE	human	Q9ULW6	NAP1L2	Q9ULW6	7	60	Nucleosome assembly protein 1-like 2 (Brain-specific protein	w
+HISTONE	human	Q9UPP1	PHF8	Q9UPP1	54	381	Histone lysine demethylase PHF8 (EC 1.14.11.-) (EC 1.14.11.6	w
+HISTONE	human	Q9UQL6	HDAC5	Q9UQL6	68	480	Histone deacetylase 5 (HD5) (EC 3.5.1.98) (Antigen NY-CO-9)	w
+HISTONE	human	Q9Y294	ASF1A	Q9Y294	68	257	Histone chaperone ASF1A (Anti-silencing function protein 1 h	w
+HISTONE	human	Q9Y4C1	KDM3A	Q9Y4C1	18	167	Lysine-specific demethylase 3A (EC 1.14.11.65) (JmjC domain-	w
 HISTONE	worm	A0A131MAV3	mys-2	A0A131MAV3	2	40	Histone acetyltransferase	w
 HISTONE	worm	A0A3P6P9E7	CELE_F17A2.16	A0A3P6P9E7	0	18	Histone deacetylase 14	w
 HISTONE	worm	B6VQ95	CELE_ZK1010.10	B6VQ95	1	9	histone acetyltransferase	w
@@ -1047,17 +1047,17 @@ HISTONE	zebrafish	X1WCM6	hdac12	X1WCM6	5	58	Histone deacetylase 12	w
 HISTONE	zebrafish	X1WDH8	si:dkey-261m9.19	X1WDH8	24	168	Histone H2B	w
 HISTONE	zebrafish	X1WHF1	si:dkey-261m9.6	X1WHF1	25	176	Histone H2B	w
 HISTONE-ARGININE	fly	FBgn0037770	Art4	Q9VH48	2	77	Probable histone-arginine methyltransferase CARMER (EC 2.1.1	w
-HISTONE-ARGININE	human	O14744	PRMT5	O14744	60	504	Protein arginine N-methyltransferase 5 (PRMT5) (EC 2.1.1.320	w
-HISTONE-ARGININE	human	P55345	PRMT2	P55345	35	142	Protein arginine N-methyltransferase 2 (EC 2.1.1.319) (Histo	w
-HISTONE-ARGININE	human	Q86X55	CARM1	Q86X55	29	383	Histone-arginine methyltransferase CARM1 (EC 2.1.1.319) (Coa	w
-HISTONE-ARGININE	human	Q86XA0	METTL23	Q86XA0	7	77	Histone-arginine methyltransferase METTL23 (EC 2.1.1.319) (M	w
-HISTONE-ARGININE	human	Q96LA8	PRMT6	Q96LA8	39	420	Protein arginine N-methyltransferase 6 (EC 2.1.1.319) (Heter	w
-HISTONE-ARGININE	human	Q99873	PRMT1	Q99873	43	706	Protein arginine N-methyltransferase 1 (EC 2.1.1.319) (Histo	w
-HISTONE-ARGININE	human	Q9NVM4	PRMT7	Q9NVM4	6	165	Protein arginine N-methyltransferase 7 (EC 2.1.1.321) (Histo	w
+HISTONE-ARGININE	human	O14744	PRMT5	O14744	47	504	Protein arginine N-methyltransferase 5 (PRMT5) (EC 2.1.1.320	w
+HISTONE-ARGININE	human	P55345	PRMT2	P55345	26	141	Protein arginine N-methyltransferase 2 (EC 2.1.1.319) (Histo	w
+HISTONE-ARGININE	human	Q86X55	CARM1	Q86X55	26	383	Histone-arginine methyltransferase CARM1 (EC 2.1.1.319) (Coa	w
+HISTONE-ARGININE	human	Q86XA0	METTL23	Q86XA0	6	77	Histone-arginine methyltransferase METTL23 (EC 2.1.1.319) (M	w
+HISTONE-ARGININE	human	Q96LA8	PRMT6	Q96LA8	35	420	Protein arginine N-methyltransferase 6 (EC 2.1.1.319) (Heter	w
+HISTONE-ARGININE	human	Q99873	PRMT1	Q99873	33	706	Protein arginine N-methyltransferase 1 (EC 2.1.1.319) (Histo	w
+HISTONE-ARGININE	human	Q9NVM4	PRMT7	Q9NVM4	5	165	Protein arginine N-methyltransferase 7 (EC 2.1.1.321) (Histo	w
 HISTONE-ARGININE	zebrafish	Q6DC04	carm1	Q6DC04	5	70	Histone-arginine methyltransferase CARM1	w
 HISTONE-BINDING	human	C0HLU2	ZNF689	C0HLU2	0	17	Transcriptional regulator SEHBP (Short ORF-encoded histone-b	w
-HISTONE-BINDING	human	Q09028	RBBP4	Q09028	129	1070	Histone-binding protein RBBP4 (Chromatin assembly factor 1 s	w
-HISTONE-BINDING	human	Q16576	RBBP7	Q16576	81	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
+HISTONE-BINDING	human	Q09028	RBBP4	Q09028	110	1070	Histone-binding protein RBBP4 (Chromatin assembly factor 1 s	w
+HISTONE-BINDING	human	Q16576	RBBP7	Q16576	73	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
 HISTONE-BINDING	worm	P90916	lin-53	P90916	13	553	Probable histone-binding protein lin-53	w
 HISTONE-BINDING	worm	P90917	rba-1	P90917	12	98	Probable histone-binding protein rba-1	w
 HISTONE-BINDING	yeast	P13712	MSI1	P13712	8	62	Histone-binding protein MSI1	w
@@ -1066,10 +1066,10 @@ HISTONE-BINDING	zebrafish	Q7ZTY4	rbbp7	Q7ZTY4	31	264	Histone-binding protein RBB
 HISTONE-FOLD	fly	FBgn0043002	Chrac-14	Q9V444	20	93	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	w
 HISTONE-GLUTAMINE	fly	FBgn0003062	Fib	Q9W1V3	19	165	rRNA 2'-O-methyltransferase fibrillarin (EC 2.1.1.-) (Histon	w
 HISTONE-GLUTAMINE	fly	FBgn0038090	CG10909	Q9VG21	10	138	Histone-glutamine methyltransferase	w
-HISTONE-GLUTAMINE	human	P22087	FBL	P22087	101	698	rRNA 2'-O-methyltransferase fibrillarin (EC 2.1.1.-) (34 kDa	w
+HISTONE-GLUTAMINE	human	P22087	FBL	P22087	88	696	rRNA 2'-O-methyltransferase fibrillarin (EC 2.1.1.-) (34 kDa	w
 HISTONE-H3	fly	FBgn0037659	Kdm2	Q9VHH9	23	170	JmjC domain-containing histone demethylation protein 1 (EC 1	w
 HISTONE-LIKE	fly	FBgn0086915	Mst77F	P16909	3	8	Histone-like protein 18C	w
-HISTONE-LINKER	human	Q149N8	SHPRH	Q149N8	8	269	E3 ubiquitin-protein ligase SHPRH (EC 2.3.2.27) (EC 3.6.4.-)	w
+HISTONE-LINKER	human	Q149N8	SHPRH	Q149N8	7	269	E3 ubiquitin-protein ligase SHPRH (EC 2.3.2.27) (EC 3.6.4.-)	w
 HISTONE-LYSINE	fly	FBgn0003862	trx	P20659	2	6	Histone-lysine N-methyltransferase trithorax (EC 2.1.1.355) 	w
 HISTONE-LYSINE	fly	FBgn0005386	ash1	Q9VW15	9	23	Histone-lysine N-methyltransferase ash1 (EC 2.1.1.354) (Abse	w
 HISTONE-LYSINE	fly	FBgn0011474	Set8	Q9VFK6	6	25	Histone-lysine N-methyltransferase Set8 (EC 2.1.1.361) (Lysi	w
@@ -1080,37 +1080,37 @@ HISTONE-LYSINE	fly	FBgn0038869	Smyd5	Q9VDD0	4	17	Histone-lysine N-trimethyltrans
 HISTONE-LYSINE	fly	FBgn0039559	NSD	Q8MT36	19	159	Nuclear receptor binding SET domain protein (EC 2.1.1.357) (	w
 HISTONE-LYSINE	fly	FBgn0040022	Set1	Q5LJZ2	7	18	Histone-lysine N-methyltransferase SETD1 (EC 2.1.1.354)	w
 HISTONE-LYSINE	fly	FBgn0086908	egg	Q32KD2	12	151	Histone-lysine N-methyltransferase eggless (EC 2.1.1.355) (S	w
-HISTONE-LYSINE	human	O15047	SETD1A	O15047	96	480	Histone-lysine N-methyltransferase SETD1A (EC 2.1.1.364) (Ly	w
-HISTONE-LYSINE	human	O43463	SUV39H1	O43463	129	717	Histone-lysine N-methyltransferase SUV39H1 (EC 2.1.1.-) (His	w
-HISTONE-LYSINE	human	O96028	NSD2	O96028	58	468	Histone-lysine N-methyltransferase NSD2 (EC 2.1.1.357) (Mult	w
-HISTONE-LYSINE	human	Q03112	MECOM	Q03112	43	384	Histone-lysine N-methyltransferase MECOM (EC 2.1.1.367) (Eco	w
-HISTONE-LYSINE	human	Q15047	SETDB1	Q15047	71	389	Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.366) (ER	w
-HISTONE-LYSINE	human	Q15910	EZH2	Q15910	107	1770	Histone-lysine N-methyltransferase EZH2 (EC 2.1.1.356) (ENX-	w
-HISTONE-LYSINE	human	Q4FZB7	KMT5B	Q4FZB7	21	84	Histone-lysine N-methyltransferase KMT5B (Lysine N-methyltra	w
-HISTONE-LYSINE	human	Q53H47	SETMAR	Q53H47	31	132	Histone-lysine N-methyltransferase SETMAR (SET domain and ma	w
-HISTONE-LYSINE	human	Q86Y97	KMT5C	Q86Y97	14	68	Histone-lysine N-methyltransferase KMT5C (Lysine N-methyltra	w
-HISTONE-LYSINE	human	Q8IZD2	KMT2E	Q8IZD2	52	153	Histone reader KMT2E (Inactive histone-lysine N-methyltransf	w
-HISTONE-LYSINE	human	Q8NB12	SMYD1	Q8NB12	40	185	Histone-lysine N-methyltransferase SMYD1 (EC 2.1.1.354) (SET	w
-HISTONE-LYSINE	human	Q8TEK3	DOT1L	Q8TEK3	96	849	Histone-lysine N-methyltransferase, H3 lysine-79 specific (E	w
-HISTONE-LYSINE	human	Q8WTS6	SETD7	Q8WTS6	62	405	Histone-lysine N-methyltransferase SETD7 (EC 2.1.1.364) (His	w
-HISTONE-LYSINE	human	Q92800	EZH1	Q92800	39	243	Histone-lysine N-methyltransferase EZH1 (EC 2.1.1.356) (ENX-	w
-HISTONE-LYSINE	human	Q96KQ7	EHMT2	Q96KQ7	97	465	Histone-lysine N-methyltransferase EHMT2 (EC 2.1.1.-) (EC 2.	w
-HISTONE-LYSINE	human	Q96L73	NSD1	Q96L73	15	187	Histone-lysine N-methyltransferase, H3 lysine-36 specific (E	w
-HISTONE-LYSINE	human	Q96T68	SETDB2	Q96T68	18	86	Histone-lysine N-methyltransferase SETDB2 (EC 2.1.1.366) (Ch	w
-HISTONE-LYSINE	human	Q9BYW2	SETD2	Q9BYW2	49	312	Histone-lysine N-methyltransferase SETD2 (EC 2.1.1.359) (HIF	w
-HISTONE-LYSINE	human	Q9BZ95	NSD3	Q9BZ95	37	225	Histone-lysine N-methyltransferase NSD3 (EC 2.1.1.370) (EC 2	w
-HISTONE-LYSINE	human	Q9C0A6	SETD5	Q9C0A6	37	173	Histone-lysine N-methyltransferase SETD5 (EC 2.1.1.359) (EC 	w
-HISTONE-LYSINE	human	Q9H5I1	SUV39H2	Q9H5I1	70	500	Histone-lysine N-methyltransferase SUV39H2 (EC 2.1.1.-) (His	w
-HISTONE-LYSINE	human	Q9H7B4	SMYD3	Q9H7B4	35	174	Histone-lysine N-methyltransferase SMYD3 (EC 2.1.1.354) (SET	w
-HISTONE-LYSINE	human	Q9H9B1	EHMT1	Q9H9B1	96	415	Histone-lysine N-methyltransferase EHMT1 (EC 2.1.1.-) (EC 2.	w
-HISTONE-LYSINE	human	Q9HAZ2	PRDM16	Q9HAZ2	49	282	Histone-lysine N-methyltransferase PRDM16 (EC 2.1.1.367) (PR	w
-HISTONE-LYSINE	human	Q9NQR1	KMT5A	Q9NQR1	43	132	N-lysine methyltransferase KMT5A (EC 2.1.1.-) (H4-K20-HMTase	w
-HISTONE-LYSINE	human	Q9NQV7	PRDM9	Q9NQV7	6	41	Histone-lysine N-methyltransferase PRDM9 (PR domain zinc fin	w
+HISTONE-LYSINE	human	O15047	SETD1A	O15047	76	480	Histone-lysine N-methyltransferase SETD1A (EC 2.1.1.364) (Ly	w
+HISTONE-LYSINE	human	O43463	SUV39H1	O43463	119	717	Histone-lysine N-methyltransferase SUV39H1 (EC 2.1.1.-) (His	w
+HISTONE-LYSINE	human	O96028	NSD2	O96028	40	468	Histone-lysine N-methyltransferase NSD2 (EC 2.1.1.357) (Mult	w
+HISTONE-LYSINE	human	Q03112	MECOM	Q03112	29	384	Histone-lysine N-methyltransferase MECOM (EC 2.1.1.367) (Eco	w
+HISTONE-LYSINE	human	Q15047	SETDB1	Q15047	58	389	Histone-lysine N-methyltransferase SETDB1 (EC 2.1.1.366) (ER	w
+HISTONE-LYSINE	human	Q15910	EZH2	Q15910	90	1770	Histone-lysine N-methyltransferase EZH2 (EC 2.1.1.356) (ENX-	w
+HISTONE-LYSINE	human	Q4FZB7	KMT5B	Q4FZB7	19	84	Histone-lysine N-methyltransferase KMT5B (Lysine N-methyltra	w
+HISTONE-LYSINE	human	Q53H47	SETMAR	Q53H47	26	132	Histone-lysine N-methyltransferase SETMAR (SET domain and ma	w
+HISTONE-LYSINE	human	Q86Y97	KMT5C	Q86Y97	12	68	Histone-lysine N-methyltransferase KMT5C (Lysine N-methyltra	w
+HISTONE-LYSINE	human	Q8IZD2	KMT2E	Q8IZD2	40	153	Histone reader KMT2E (Inactive histone-lysine N-methyltransf	w
+HISTONE-LYSINE	human	Q8NB12	SMYD1	Q8NB12	28	185	Histone-lysine N-methyltransferase SMYD1 (EC 2.1.1.354) (SET	w
+HISTONE-LYSINE	human	Q8TEK3	DOT1L	Q8TEK3	70	849	Histone-lysine N-methyltransferase, H3 lysine-79 specific (E	w
+HISTONE-LYSINE	human	Q8WTS6	SETD7	Q8WTS6	49	405	Histone-lysine N-methyltransferase SETD7 (EC 2.1.1.364) (His	w
+HISTONE-LYSINE	human	Q92800	EZH1	Q92800	30	243	Histone-lysine N-methyltransferase EZH1 (EC 2.1.1.356) (ENX-	w
+HISTONE-LYSINE	human	Q96KQ7	EHMT2	Q96KQ7	68	465	Histone-lysine N-methyltransferase EHMT2 (EC 2.1.1.-) (EC 2.	w
+HISTONE-LYSINE	human	Q96L73	NSD1	Q96L73	10	187	Histone-lysine N-methyltransferase, H3 lysine-36 specific (E	w
+HISTONE-LYSINE	human	Q96T68	SETDB2	Q96T68	16	86	Histone-lysine N-methyltransferase SETDB2 (EC 2.1.1.366) (Ch	w
+HISTONE-LYSINE	human	Q9BYW2	SETD2	Q9BYW2	34	312	Histone-lysine N-methyltransferase SETD2 (EC 2.1.1.359) (HIF	w
+HISTONE-LYSINE	human	Q9BZ95	NSD3	Q9BZ95	29	225	Histone-lysine N-methyltransferase NSD3 (EC 2.1.1.370) (EC 2	w
+HISTONE-LYSINE	human	Q9C0A6	SETD5	Q9C0A6	32	173	Histone-lysine N-methyltransferase SETD5 (EC 2.1.1.359) (EC 	w
+HISTONE-LYSINE	human	Q9H5I1	SUV39H2	Q9H5I1	62	500	Histone-lysine N-methyltransferase SUV39H2 (EC 2.1.1.-) (His	w
+HISTONE-LYSINE	human	Q9H7B4	SMYD3	Q9H7B4	28	174	Histone-lysine N-methyltransferase SMYD3 (EC 2.1.1.354) (SET	w
+HISTONE-LYSINE	human	Q9H9B1	EHMT1	Q9H9B1	76	415	Histone-lysine N-methyltransferase EHMT1 (EC 2.1.1.-) (EC 2.	w
+HISTONE-LYSINE	human	Q9HAZ2	PRDM16	Q9HAZ2	35	282	Histone-lysine N-methyltransferase PRDM16 (EC 2.1.1.367) (PR	w
+HISTONE-LYSINE	human	Q9NQR1	KMT5A	Q9NQR1	36	132	N-lysine methyltransferase KMT5A (EC 2.1.1.-) (H4-K20-HMTase	w
+HISTONE-LYSINE	human	Q9NQV7	PRDM9	Q9NQV7	3	41	Histone-lysine N-methyltransferase PRDM9 (PR domain zinc fin	w
 HISTONE-LYSINE	human	Q9NQW5	PRDM7	Q9NQW5	5	22	Histone-lysine N-methyltransferase PRDM7 (EC 2.1.1.-) (PR do	w
-HISTONE-LYSINE	human	Q9NQX0	PRDM6	Q9NQX0	16	113	Putative histone-lysine N-methyltransferase PRDM6 (EC 2.1.1.	w
-HISTONE-LYSINE	human	Q9NR48	ASH1L	Q9NR48	15	70	Histone-lysine N-methyltransferase ASH1L (EC 2.1.1.359) (EC 	w
-HISTONE-LYSINE	human	Q9UMN6	KMT2B	Q9UMN6	32	258	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransf	w
-HISTONE-LYSINE	human	Q9UPS6	SETD1B	Q9UPS6	49	183	Histone-lysine N-methyltransferase SETD1B (EC 2.1.1.364) (Ly	w
+HISTONE-LYSINE	human	Q9NQX0	PRDM6	Q9NQX0	12	113	Putative histone-lysine N-methyltransferase PRDM6 (EC 2.1.1.	w
+HISTONE-LYSINE	human	Q9NR48	ASH1L	Q9NR48	11	70	Histone-lysine N-methyltransferase ASH1L (EC 2.1.1.359) (EC 	w
+HISTONE-LYSINE	human	Q9UMN6	KMT2B	Q9UMN6	23	258	Histone-lysine N-methyltransferase 2B (Lysine N-methyltransf	w
+HISTONE-LYSINE	human	Q9UPS6	SETD1B	Q9UPS6	41	183	Histone-lysine N-methyltransferase SETD1B (EC 2.1.1.364) (Ly	w
 HISTONE-LYSINE	worm	A0A163UT06	set-17	A0A163UT06	0	2	Histone-lysine N-methyltransferase set-17	w
 HISTONE-LYSINE	worm	G5EEU2	set-25	G5EEU2	1	45	Histone-lysine N-methyltransferase set-25	w
 HISTONE-LYSINE	worm	O17514	mes-2	O17514	1	71	Histone-lysine N-methyltransferase mes-2	w

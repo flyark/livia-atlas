@@ -1,13 +1,13 @@
 LOX	cladophialophora-carrionii	A0A1C1CYP5	lox	A0A1C1CYP5	0	9	L-amino-acid oxidase	
-LOX	human	P28300	LOX	P28300	23	192	Protein-lysine 6-oxidase (EC 1.4.3.13) (Lysyl oxidase) [Clea	
+LOX	human	P28300	LOX	P28300	16	192	Protein-lysine 6-oxidase (EC 1.4.3.13) (Lysyl oxidase) [Clea	
 LOX	mus-musculus	P28301	Lox	P28301	1	39	Protein-lysine 6-oxidase	
 LOX	rattus-norvegicus	P16636	Lox	P16636	4	35	Protein-lysine 6-oxidase	
-LOX-1	human	P78380	OLR1	P78380	58	243	Oxidized low-density lipoprotein receptor 1 (Ox-LDL receptor	w
+LOX-1	human	P78380	OLR1	P78380	48	242	Oxidized low-density lipoprotein receptor 1 (Ox-LDL receptor	w
 LOX-2	human	O15296	ALOX15B	O15296	3	120	Polyunsaturated fatty acid lipoxygenase ALOX15B (15-lipoxyge	w
-LOX-3	human	Q9BYJ1	ALOXE3	Q9BYJ1	5	75	Hydroperoxide isomerase ALOXE3 (Epidermis-type lipoxygenase 	w
+LOX-3	human	Q9BYJ1	ALOXE3	Q9BYJ1	4	75	Hydroperoxide isomerase ALOXE3 (Epidermis-type lipoxygenase 	w
 LOX-B	human	O15296	ALOX15B	O15296	3	120	Polyunsaturated fatty acid lipoxygenase ALOX15B (15-lipoxyge	w
 LOX1	arabidopsis-thaliana	Q06327	LOX1	Q06327	0	12	Linoleate 9S-lipoxygenase 1	
-LOX1	human	P78380	OLR1	P78380	58	243		
+LOX1	human	P78380	OLR1	P78380	48	242		
 LOX1.1	glycine-max	P08170	LOX1.1	P08170	0	29	Seed linoleate 13S-lipoxygenase-1	
 LOX1.1	oryza-sativa-subsp-japonica	P29250	LOX1.1	P29250	0	9	Linoleate 9S-lipoxygenase 2	
 LOX1.2	glycine-max	P09439	LOX1.2	P09439	0	29	Seed linoleate 9S-lipoxygenase-2	
@@ -17,7 +17,7 @@ LOX1.5	glycine-max	P38417	LOX1.5	P38417	0	28	Linoleate 9S-lipoxygenase-4
 LOX10	glycine-max	K7L7J7	LOX10	K7L7J7	0	27	Lipoxygenase	
 LOX10	zea-mays	Q06XS3	LOX10	Q06XS3	0	69	Lipoxygenase	
 LOX12	zea-mays	A1XCI7	LOX12	A1XCI7	0	70	Lipoxygenase	
-LOX12_HUMAN	human	P18054	ALOX12	P18054	9	239		
+LOX12_HUMAN	human	P18054	ALOX12	P18054	7	239		
 LOX15_HUMAN	human	P16050	ALOX15	P16050	11	202		
 LOX2	arabidopsis-thaliana	P38418	LOX2	P38418	0	21	Lipoxygenase 2, chloroplastic	
 LOX2	glycine-max	I1M596	LOX2	I1M596	0	28	Lipoxygenase	
@@ -27,39 +27,39 @@ LOX4	arabidopsis-thaliana	Q9FNX8	LOX4	Q9FNX8	0	12	Lipoxygenase 4, chloroplastic
 LOX4	zea-mays	C0P840	lox4	C0P840	0	70	Lipoxygenase	
 LOX5	arabidopsis-thaliana	Q9LUW0	LOX5	Q9LUW0	0	10	Linoleate 9S-lipoxygenase 5	
 LOX5	zea-mays	A1XCI0	LOX5	A1XCI0	0	70	Lipoxygenase	
-LOX5_HUMAN	human	P09917	ALOX5	P09917	14	293		
+LOX5_HUMAN	human	P09917	ALOX5	P09917	12	293		
 LOX6	arabidopsis-thaliana	Q9CAG3	LOX6	Q9CAG3	0	12	Lipoxygenase 6, chloroplastic	
 LOX7	glycine-max	I1M599	LOX7	I1M599	0	28	Lipoxygenase	
 LOX9	glycine-max	I1KH67	LOX9	I1KH67	0	38	Lipoxygenase	
 LOXA	zebrafish	Q6NYT8	loxa	Q6NYT8	1	9	Lysyl oxidase homolog	
 LOXB1	glycine-max	B3TDK7	LOXB1	B3TDK7	0	28	Lipoxygenase	
-LOXC	human	Q96JB6	LOXL4	Q96JB6	13	163		
-LOXE3_HUMAN	human	Q9BYJ1	ALOXE3	Q9BYJ1	5	75		
+LOXC	human	Q96JB6	LOXL4	Q96JB6	9	163		
+LOXE3_HUMAN	human	Q9BYJ1	ALOXE3	Q9BYJ1	4	75		
 LOXH1_HUMAN	human	Q8IVV2	LOXHD1	Q8IVV2	0	40		
 LOXHD1	human	Q8IVV2	LOXHD1	Q8IVV2	0	40	Lipoxygenase homology domain-containing protein 1	
-LOXL	human	P58215	LOXL3	P58215	10	119		
-LOXL	human	Q08397	LOXL1	Q08397	5	58		
+LOXL	human	P58215	LOXL3	P58215	9	119		
+LOXL	human	Q08397	LOXL1	Q08397	3	58		
 LOXL1	fly	FBgn0039848	Loxl1	Q9V9X5	51	246	Lysyl oxidase-like (EC 1.4.3.13)	
-LOXL1	human	Q08397	LOXL1	Q08397	5	58	Lysyl oxidase homolog 1 (EC 1.4.3.13) (Lysyl oxidase-like pr	
+LOXL1	human	Q08397	LOXL1	Q08397	3	58	Lysyl oxidase homolog 1 (EC 1.4.3.13) (Lysyl oxidase-like pr	
 LOXL1	mus-musculus	P97873	Loxl1	P97873	2	10	Lysyl oxidase homolog 1	
 LOXL1	rattus-norvegicus	Q5FWS5	Loxl1	Q5FWS5	0	7	protein-lysine 6-oxidase	
-LOXL1_HUMAN	human	Q08397	LOXL1	Q08397	5	58		
+LOXL1_HUMAN	human	Q08397	LOXL1	Q08397	3	58		
 LOXL2	fly	FBgn0034660	Loxl2	Q9W2C9	22	256	Lysyl oxidase-like 2 (EC 1.4.3.13)	
-LOXL2	human	Q9Y4K0	LOXL2	Q9Y4K0	37	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	
+LOXL2	human	Q9Y4K0	LOXL2	Q9Y4K0	24	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	
 LOXL2	rattus-norvegicus	B5DF27	Loxl2	B5DF27	1	14	Lysyl oxidase homolog 2	
 LOXL2A	zebrafish	F1QQC3	loxl2a	F1QQC3	0	13	Lysyl oxidase homolog 2A	
 LOXL2B	zebrafish	A1L1V4	loxl2b	A1L1V4	0	13	Lysyl oxidase homolog 2B	
-LOXL2_HUMAN	human	Q9Y4K0	LOXL2	Q9Y4K0	37	514		
-LOXL3	human	P58215	LOXL3	P58215	10	119	Lysyl oxidase homolog 3 (EC 1.4.3.-) (EC 1.4.3.13) (Lysyl ox	
+LOXL2_HUMAN	human	Q9Y4K0	LOXL2	Q9Y4K0	24	514		
+LOXL3	human	P58215	LOXL3	P58215	9	119	Lysyl oxidase homolog 3 (EC 1.4.3.-) (EC 1.4.3.13) (Lysyl ox	
 LOXL3	mus-musculus	Q9Z175	Loxl3	Q9Z175	2	16	Lysyl oxidase homolog 3	
 LOXL3	rattus-norvegicus	D3ZP82	Loxl3	D3ZP82	1	17	Lysyl oxidase homolog	
 LOXL3A	zebrafish	F1RD85	loxl3a	F1RD85	1	12	Lysyl oxidase homolog 3A	
 LOXL3B	zebrafish	B8A4W9	loxl3b	B8A4W9	0	13	Lysyl oxidase homolog 3B	
-LOXL3_HUMAN	human	P58215	LOXL3	P58215	10	119		
-LOXL4	human	Q96JB6	LOXL4	Q96JB6	13	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	
+LOXL3_HUMAN	human	P58215	LOXL3	P58215	9	119		
+LOXL4	human	Q96JB6	LOXL4	Q96JB6	9	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	
 LOXL4	mus-musculus	Q924C6	Loxl4	Q924C6	0	4	Lysyl oxidase homolog 4	
 LOXL4	rattus-norvegicus	D4A9V5	Loxl4	D4A9V5	0	8	Lysyl oxidase homolog 4	
 LOXL4	zebrafish	F1QJK9	loxl4	F1QJK9	1	12	protein-lysine 6-oxidase	
-LOXL4_HUMAN	human	Q96JB6	LOXL4	Q96JB6	13	163		
+LOXL4_HUMAN	human	Q96JB6	LOXL4	Q96JB6	9	163		
 LOXL5A	zebrafish	A0AB32TAX5	loxl5a	A0AB32TAX5	1	13	Lysyl oxidase homolog	
 LOXL5B	zebrafish	F1QGY9	loxl5b	F1QGY9	2	13	Lysyl oxidase homolog	

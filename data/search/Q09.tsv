@@ -1,8 +1,8 @@
-Q09013	human	Q09013	DMPK	Q09013	437	1310	Myotonin-protein kinase (MT-PK) (EC 2.7.11.1) (DM-kinase) (D	
+Q09013	human	Q09013	DMPK	Q09013	432	1309	Myotonin-protein kinase (MT-PK) (EC 2.7.11.1) (DM-kinase) (D	
 Q09014	mus-musculus	Q09014	Ncf1	Q09014	15	75	Neutrophil cytosol factor 1	
-Q09019	human	Q09019	DMWD	Q09019	31	152	Dystrophia myotonica WD repeat-containing protein (Dystrophi	
+Q09019	human	Q09019	DMWD	Q09019	23	152	Dystrophia myotonica WD repeat-containing protein (Dystrophi	
 Q09024	fly	FBgn0001257	ImpL2	Q09024	36	297	Neural/ectodermal development factor IMP-L2	
-Q09028	human	Q09028	RBBP4	Q09028	129	1070	Histone-binding protein RBBP4 (Chromatin assembly factor 1 s	
+Q09028	human	Q09028	RBBP4	Q09028	110	1070	Histone-binding protein RBBP4 (Chromatin assembly factor 1 s	
 Q09030	rattus-norvegicus	Q09030	Tff2	Q09030	0	5	Trefoil factor 2	
 Q09054	zea-mays	Q09054	GAPC2	Q09054	0	76	Glyceraldehyde-3-phosphate dehydrogenase 2, cytosolic	
 Q09064	helicobacter-pylori	Q09064	ureE	Q09064	1	9	Urease accessory protein UreE	
@@ -30,7 +30,7 @@ Q09150	schizosaccharomyces-pombe	Q09150	rec14	Q09150	5	64	Meiotic recombination 
 Q09151	oryza-sativa-subsp-japonica	Q09151	GLUA3	Q09151	0	54	Glutelin type-A 3	
 Q09152	arabidopsis-thaliana	Q09152	FPS1	Q09152	1	12	Farnesyl pyrophosphate synthase 1, mitochondrial	
 Q09154	schizosaccharomyces-pombe	Q09154	rip1	Q09154	7	43	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
-Q09161	human	Q09161	NCBP1	Q09161	80	807	Nuclear cap-binding protein subunit 1 (80 kDa nuclear cap-bi	
+Q09161	human	Q09161	NCBP1	Q09161	70	807	Nuclear cap-binding protein subunit 1 (80 kDa nuclear cap-bi	
 Q09163	mus-musculus	Q09163	Dlk1	Q09163	2	12	Protein delta homolog 1	
 Q09167	rattus-norvegicus	Q09167	Srsf5	Q09167	8	98	Serine/arginine-rich splicing factor 5	
 Q09170	schizosaccharomyces-pombe	Q09170	cds1	Q09170	1	32	Serine/threonine-protein kinase cds1	
@@ -130,7 +130,7 @@ Q09324	mus-musculus	Q09324	Gcnt1	Q09324	1	3	Beta-1,3-galactosyl-O-glycosyl-glyco
 Q09325	rattus-norvegicus	Q09325	Mgat1	Q09325	1	4	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	
 Q09326	rattus-norvegicus	Q09326	Mgat2	Q09326	0	1	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	
 Q09327	human	Q09327	MGAT3	Q09327	4	36	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	
-Q09328	human	Q09328	MGAT5	Q09328	22	321	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	
+Q09328	human	Q09328	MGAT5	Q09328	15	321	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	
 Q09330	schizosaccharomyces-pombe	Q09330	mlo3	Q09330	5	41	mRNA export protein mlo3	
 Q09332	fly	FBgn0014075	Uggt	Q09332	2	29	UDP-glucose:glycoprotein glucosyltransferase (UGT) (dUGT) (E	
 Q09337	worm	Q09337	ZK1290.10	Q09337	0	8	Uncharacterized protein ZK1290.10	
@@ -188,7 +188,7 @@ Q09418	worm	Q09418	tag-209	Q09418	1	8	Putative protein tag-209
 Q09422	worm	Q09422	pgam-5	Q09422	0	16	Serine/threonine-protein phosphatase Pgam5, mitochondrial	
 Q09424	worm	Q09424	R07G3.7	Q09424	0	3	Uncharacterized protein R07G3.7	
 Q09426	rattus-norvegicus	Q09426	Ugt8	Q09426	0	1	2-hydroxyacylsphingosine 1-beta-galactosyltransferase	
-Q09428	human	Q09428	ABCC8	Q09428	4	45	ATP-binding cassette sub-family C member 8 (Sulfonylurea rec	
+Q09428	human	Q09428	ABCC8	Q09428	2	45	ATP-binding cassette sub-family C member 8 (Sulfonylurea rec	
 Q09433	worm	Q09433	trx-1	Q09433	1	5	Thioredoxin-1	
 Q09436	worm	Q09436	mex-6	Q09436	0	40	Zinc finger protein mex-6	
 Q09437	worm	Q09437	cdk-11.1	Q09437	8	35	Cyclin-dependent kinase 11.1 (EC 2.7.11.22)	
@@ -214,8 +214,8 @@ Q09462	worm	Q09462	C16C10.2	Q09462	11	96	Probable U3 small nucleolar RNA-associa
 Q09463	worm	Q09463	rnf-5	Q09463	2	22	E3 ubiquitin ligase rnf-5	
 Q09464	worm	Q09464	C16C10.8	Q09464	8	49	Uncharacterized protein C16C10.8	
 Q09466	worm	Q09466	wht-3	Q09466	1	12	ABC transporter ATP-binding protein/permease wht-3	
-Q09470	human	Q09470	KCNA1	Q09470	61	371	Potassium voltage-gated channel subfamily A member 1 (Voltag	
-Q09472	human	Q09472	EP300	Q09472	156	1411	Histone acetyltransferase p300 (p300 HAT) (EC 2.3.1.48) (E1A	
+Q09470	human	Q09470	KCNA1	Q09470	49	371	Potassium voltage-gated channel subfamily A member 1 (Voltag	
+Q09472	human	Q09472	EP300	Q09472	109	1411	Histone acetyltransferase p300 (p300 HAT) (EC 2.3.1.48) (E1A	
 Q09473	worm	Q09473	erd-2.2	Q09473	0	1	ER lumen protein-retaining receptor erd-2.2	
 Q09474	worm	Q09474	tdo-2	Q09474	0	6	Tryptophan 2,3-dioxygenase	
 Q09476	worm	Q09476	pxl-1	Q09476	3	93	Paxillin homolog 1	
@@ -595,9 +595,9 @@ Q09995	worm	Q09995	pap-2	Q09995	14	69	Poly(A) polymerase
 Q09996	worm	Q09996	lars-1	Q09996	0	45	Leucine--tRNA ligase	
 Q09EE8	worm	Q09EE8	CELE_W01A8.8	Q09EE8	0	6	DUF19 domain-containing protein	
 Q09EE9	worm	Q09EE9	CELE_W01A8.2	Q09EE9	0	5	UPF0235 protein	
-Q09FC8	human	Q09FC8	ZNF415	Q09FC8	1	55	Zinc finger protein 415	
+Q09FC8	human	Q09FC8	ZNF415	Q09FC8	0	55	Zinc finger protein 415	
 Q09LZ8	mus-musculus	Q09LZ8	Agbl4	Q09LZ8	0	1	Cytosolic carboxypeptidase 6	
-Q09MP3	human	Q09MP3	RAD51AP2	Q09MP3	3	24	RAD51-associated protein 2	
+Q09MP3	human	Q09MP3	RAD51AP2	Q09MP3	1	24	RAD51-associated protein 2	
 Q09PK2	mus-musculus	Q09PK2	Asprv1	Q09PK2	0	2	Retroviral-like aspartic protease 1	
 Q09QM4	rattus-norvegicus	Q09QM4	Gpr17	Q09QM4	4	13	Uracil nucleotide/cysteinyl leukotriene receptor	
 Q09TX9	virus	Q09TX9		Q09TX9	1	16	Q09TX9_9ADEN	

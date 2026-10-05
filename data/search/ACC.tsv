@@ -8,15 +8,15 @@ ACC-3	worm	G5EDN0	acc-3	G5EDN0	0	1	Acetylcholine-gated chloride channel subunit 
 ACC-4	worm	Q9U358	acc-4	Q9U358	1	1	Acetylcholine-gated ion channel acc-4	w
 ACC-4	worm	Q9U358	acc-4	Q9U358	1	1	Acetylcholine-gated ion channel acc-4	w
 ACC-6	human	P0C7T4	HMSD	P0C7T4	0	1	Minor histocompatibility protein HMSD variant form (HSMD-v) 	w
-ACC-ALPHA	human	Q13085	ACACA	Q13085	4	435	Acetyl-CoA carboxylase 1 (ACC1) (EC 6.4.1.2) (Acetyl-Coenzym	w
+ACC-ALPHA	human	Q13085	ACACA	Q13085	2	435	Acetyl-CoA carboxylase 1 (ACC1) (EC 6.4.1.2) (Acetyl-Coenzym	w
 ACC-BETA	human	O00763	ACACB	O00763	4	114	Acetyl-CoA carboxylase 2 (EC 6.4.1.2) (ACC-beta)	w
-ACC1	human	Q13085	ACACA	Q13085	4	435		
+ACC1	human	Q13085	ACACA	Q13085	2	435		
 ACC2	human	O00763	ACACB	O00763	4	114		
 ACCA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PI62	accA	Q9PI62	1	46	Acetyl-coenzyme A carboxylase carboxyl transferase subunit a	
 ACCA	haemophilus-influenzae	P43872	accA	P43872	1	4	Acetyl-coenzyme A carboxylase carboxyl transferase subunit a	
 ACCA	helicobacter-pylori	O25283	accA	O25283	1	4	Acetyl-coenzyme A carboxylase carboxyl transferase subunit a	
-ACCA	human	P46089	GPR3	P46089	11	101		
-ACCA	human	Q13085	ACACA	Q13085	4	435		
+ACCA	human	P46089	GPR3	P46089	9	101		
+ACCA	human	Q13085	ACACA	Q13085	2	435		
 ACCA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GIK3	accA	A0A0H3GIK3	1	70	Acetyl-coenzyme A carboxylase carboxyl transferase subunit a	
 ACCA	neisseria-gonorrhoeae	Q5F8F5	accA	Q5F8F5	1	9	Acetyl-coenzyme A carboxylase carboxyl transferase subunit a	
 ACCA	pseudomonas-aeruginosa	Q9HXZ2	accA	Q9HXZ2	1	20	Acetyl-coenzyme A carboxylase carboxyl transferase subunit a	
@@ -73,14 +73,14 @@ ACCD5	mycobacterium-leprae	P53002	accD5	P53002	1	5	Biotin-dependent acetyl-/prop
 ACCD5	mycobacterium-tuberculosis	P9WQH7	accD5	P9WQH7	2	7	Biotin-dependent acetyl-/propionyl-coenzyme A carboxylase be	
 ACCD6	mycobacterium-tuberculosis	P9WQH5	accD6	P9WQH5	3	8	Biotin-dependent acetyl-/propionyl-coenzyme A carboxylase be	
 ACCE5	mycobacterium-tuberculosis	P96886	accE5	P96886	0	7	Biotin-dependent acetyl-/propionyl-coenzyme A carboxylase ep	
-ACCELERATOR	human	P08709	F7	P08709	8	107	Coagulation factor VII (EC 3.4.21.21) (Proconvertin) (Serum 	w
+ACCELERATOR	human	P08709	F7	P08709	6	107	Coagulation factor VII (EC 3.4.21.21) (Proconvertin) (Serum 	w
 ACCELERATORY	fly	FBgn0039722	Capa	Q9NIP6	35	250	Cardio acceleratory peptide 2b (Capability protein) (Myotrop	w
-ACCEPTOR	human	Q9UI14	RABAC1	Q9UI14	4	181	Prenylated Rab acceptor protein 1 (PRA1 family protein 1)	w
+ACCEPTOR	human	Q9UI14	RABAC1	Q9UI14	3	181	Prenylated Rab acceptor protein 1 (PRA1 family protein 1)	w
 ACCEPTOR	yeast	P53633	YIP3	P53633	1	53	Prenylated Rab acceptor 1	w
 ACCESSIBILITY	fly	FBgn0043001	Chrac-16	Q9V452	4	24	Chromatin accessibility complex 16kD protein	w
 ACCESSIBILITY	fly	FBgn0043002	Chrac-14	Q9V444	20	93	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	w
-ACCESSIBILITY	human	Q9NRF9	POLE3	Q9NRF9	34	176	DNA polymerase epsilon subunit 3 (Arsenic-transactivated pro	w
-ACCESSIBILITY	human	Q9NRG0	CHRAC1	Q9NRG0	20	118	Chromatin accessibility complex protein 1 (CHRAC-1) (Chromat	w
+ACCESSIBILITY	human	Q9NRF9	POLE3	Q9NRF9	32	176	DNA polymerase epsilon subunit 3 (Arsenic-transactivated pro	w
+ACCESSIBILITY	human	Q9NRG0	CHRAC1	Q9NRG0	19	118	Chromatin accessibility complex protein 1 (CHRAC-1) (Chromat	w
 ACCESSIBILITY	zebrafish	Q5EAR4	chrac1	Q5EAR4	2	27	Chromatin accessibility complex protein 1	w
 ACCESSORY	fly	FBgn0002855	Acp26Aa	P10333	14	248	Accessory gland-specific peptide 26Aa (Male accessory gland 	w
 ACCESSORY	fly	FBgn0002856	Acp26Ab	P10334	18	257	Accessory gland-specific peptide 26Ab (Male accessory gland 	w
@@ -111,28 +111,28 @@ ACCESSORY	fly	FBgn0262515	VhaAC45	Q7JR49	260	2438	V-type proton ATPase subunit S
 ACCESSORY	fly	FBgn0263597	Acp98AB	O46201	64	254	Accessory gland protein 98AB	w
 ACCESSORY	fly	FBgn0267001	Ten-a	Q8MQJ6	0	2	Tenascin accessory	w
 ACCESSORY	fly	FBgn0267327	Acp33A	O46227	34	257	Accessory gland peptide Acp33A	w
-ACCESSORY	human	O15342	ATP6V0E1	O15342	16	113	V-type proton ATPase subunit e 1 (V-ATPase subunit e 1) (V-A	w
-ACCESSORY	human	O75787	ATP6AP2	O75787	22	343	Renin receptor (ATPase H(+)-transporting lysosomal accessory	w
-ACCESSORY	human	O95256	IL18RAP	O95256	59	322	Interleukin-18 receptor accessory protein (IL-18 receptor ac	w
-ACCESSORY	human	P28324	ELK4	P28324	65	428	ETS domain-containing protein Elk-4 (Serum response factor a	w
-ACCESSORY	human	P38484	IFNGR2	P38484	53	455	Interferon gamma receptor 2 (IFN-gamma receptor 2) (IFN-gamm	w
-ACCESSORY	human	P41970	ELK3	P41970	79	452	ETS domain-containing protein Elk-3 (ETS-related protein ERP	w
-ACCESSORY	human	P51610	HCFC1	P51610	105	340	Host cell factor 1 (HCF) (HCF-1) (C1 factor) (CFF) (VCAF) (V	w
-ACCESSORY	human	P61421	ATP6V0D1	P61421	26	253	V-type proton ATPase subunit d 1 (V-ATPase subunit d 1) (32 	w
-ACCESSORY	human	Q15762	CD226	Q15762	65	651	CD226 antigen (DNAX accessory molecule 1) (DNAM-1) (CD antig	w
-ACCESSORY	human	Q15904	ATP6AP1	Q15904	14	165	V-type proton ATPase subunit S1 (V-ATPase subunit S1) (Prote	w
-ACCESSORY	human	Q7Z6B0	CCDC91	Q7Z6B0	13	69	Coiled-coil domain-containing protein 91 (GGA-binding partne	w
-ACCESSORY	human	Q8N2Y8	RUSC2	Q8N2Y8	53	248	AP-4 complex accessory subunit RUSC2 (Interacting protein of	w
-ACCESSORY	human	Q8TCY5	MRAP	Q8TCY5	12	77	Melanocortin-2 receptor accessory protein (B27) (Fat cell-sp	w
-ACCESSORY	human	Q96G30	MRAP2	Q96G30	27	139	Melanocortin-2 receptor accessory protein 2 (MC2R accessory 	w
-ACCESSORY	human	Q96N21	TEPSIN	Q96N21	38	184	AP-4 complex accessory subunit Tepsin (ENTH domain-containin	w
-ACCESSORY	human	Q9BVN2	RUSC1	Q9BVN2	51	178	AP-4 complex accessory subunit RUSC1 (New molecule containin	w
+ACCESSORY	human	O15342	ATP6V0E1	O15342	13	113	V-type proton ATPase subunit e 1 (V-ATPase subunit e 1) (V-A	w
+ACCESSORY	human	O75787	ATP6AP2	O75787	16	343	Renin receptor (ATPase H(+)-transporting lysosomal accessory	w
+ACCESSORY	human	O95256	IL18RAP	O95256	50	322	Interleukin-18 receptor accessory protein (IL-18 receptor ac	w
+ACCESSORY	human	P28324	ELK4	P28324	63	428	ETS domain-containing protein Elk-4 (Serum response factor a	w
+ACCESSORY	human	P38484	IFNGR2	P38484	47	455	Interferon gamma receptor 2 (IFN-gamma receptor 2) (IFN-gamm	w
+ACCESSORY	human	P41970	ELK3	P41970	74	452	ETS domain-containing protein Elk-3 (ETS-related protein ERP	w
+ACCESSORY	human	P51610	HCFC1	P51610	79	340	Host cell factor 1 (HCF) (HCF-1) (C1 factor) (CFF) (VCAF) (V	w
+ACCESSORY	human	P61421	ATP6V0D1	P61421	20	253	V-type proton ATPase subunit d 1 (V-ATPase subunit d 1) (32 	w
+ACCESSORY	human	Q15762	CD226	Q15762	61	651	CD226 antigen (DNAX accessory molecule 1) (DNAM-1) (CD antig	w
+ACCESSORY	human	Q15904	ATP6AP1	Q15904	13	165	V-type proton ATPase subunit S1 (V-ATPase subunit S1) (Prote	w
+ACCESSORY	human	Q7Z6B0	CCDC91	Q7Z6B0	10	69	Coiled-coil domain-containing protein 91 (GGA-binding partne	w
+ACCESSORY	human	Q8N2Y8	RUSC2	Q8N2Y8	38	248	AP-4 complex accessory subunit RUSC2 (Interacting protein of	w
+ACCESSORY	human	Q8TCY5	MRAP	Q8TCY5	11	77	Melanocortin-2 receptor accessory protein (B27) (Fat cell-sp	w
+ACCESSORY	human	Q96G30	MRAP2	Q96G30	19	139	Melanocortin-2 receptor accessory protein 2 (MC2R accessory 	w
+ACCESSORY	human	Q96N21	TEPSIN	Q96N21	30	184	AP-4 complex accessory subunit Tepsin (ENTH domain-containin	w
+ACCESSORY	human	Q9BVN2	RUSC1	Q9BVN2	44	178	AP-4 complex accessory subunit RUSC1 (New molecule containin	w
 ACCESSORY	human	Q9H974	QTRT2	Q9H974	4	60	Queuine tRNA-ribosyltransferase accessory subunit 2 (Queuine	w
-ACCESSORY	human	Q9NP60	IL1RAPL2	Q9NP60	26	96	X-linked interleukin-1 receptor accessory protein-like 2 (IL	w
-ACCESSORY	human	Q9NPH3	IL1RAP	Q9NPH3	14	74	Interleukin-1 receptor accessory protein (IL-1 receptor acce	w
-ACCESSORY	human	Q9NZN1	IL1RAPL1	Q9NZN1	23	117	Interleukin-1 receptor accessory protein-like 1 (IL-1-RAPL-1	w
+ACCESSORY	human	Q9NP60	IL1RAPL2	Q9NP60	20	96	X-linked interleukin-1 receptor accessory protein-like 2 (IL	w
+ACCESSORY	human	Q9NPH3	IL1RAP	Q9NPH3	11	74	Interleukin-1 receptor accessory protein (IL-1 receptor acce	w
+ACCESSORY	human	Q9NZN1	IL1RAPL1	Q9NZN1	17	117	Interleukin-1 receptor accessory protein-like 1 (IL-1-RAPL-1	w
 ACCESSORY	human	Q9UHN1	POLG2	Q9UHN1	4	74	DNA polymerase subunit gamma-2 (DNA polymerase gamma accesso	w
-ACCESSORY	human	Q9Y5K8	ATP6V1D	Q9Y5K8	13	168	V-type proton ATPase subunit D (V-ATPase subunit D) (V-ATPas	w
+ACCESSORY	human	Q9Y5K8	ATP6V1D	Q9Y5K8	12	168	V-type proton ATPase subunit D (V-ATPase subunit D) (V-ATPas	w
 ACCESSORY	worm	G5ECI4	mps-3	G5ECI4	0	2	MiRP K channel accessory Subunit	w
 ACCESSORY	worm	O02101	swsn-2.2	O02101	19	187	SWI/SNF chromatin-remodeling accessory subunit 2	w
 ACCESSORY	worm	P34394	mps-4	P34394	0	1	MinK-related peptide, potassium channel accessory subunit pr	w
@@ -155,25 +155,25 @@ ACCESSORY	zebrafish	P0DM64	mrap2b	P0DM64	0	3	Melanocortin-2 receptor accessory p
 ACCESSORY	zebrafish	Q7ZVJ6	qtrt2	Q7ZVJ6	1	1	Queuine tRNA-ribosyltransferase accessory subunit 2	w
 ACCN	human	Q16515	ASIC2	Q16515	8	44		
 ACCN1	human	Q16515	ASIC2	Q16515	8	44		
-ACCN2	human	P78348	ASIC1	P78348	12	103		
+ACCN2	human	P78348	ASIC1	P78348	11	103		
 ACCN3	human	Q9UHC3	ASIC3	Q9UHC3	9	80		
-ACCN4	human	Q96FT7	ASIC4	Q96FT7	15	175		
+ACCN4	human	Q96FT7	ASIC4	Q96FT7	11	175		
 ACCN5	human	Q9NY37	ASIC5	Q9NY37	9	36		
 ACCOAS	fly	FBgn0012034	AcCoAS	Q9VP61	4	76	Acetyl-coenzyme A synthetase (EC 6.2.1.1) (Acetate--CoA liga	
 ACCS	human	Q96QU6	ACCS	Q96QU6	2	38	1-aminocyclopropane-1-carboxylate synthase-like protein 1 (A	
 ACCS	rattus-norvegicus	F1LXH1	Accs	F1LXH1	0	1	1-aminocyclopropane-1-carboxylate synthase-like	
-ACCSL	human	Q4AC99	ACCSL	Q4AC99	3	42	Probable inactive 1-aminocyclopropane-1-carboxylate synthase	
+ACCSL	human	Q4AC99	ACCSL	Q4AC99	2	42	Probable inactive 1-aminocyclopropane-1-carboxylate synthase	
 ACCSL	rattus-norvegicus	D3ZUW2	Accsl	D3ZUW2	1	1	1-aminocyclopropane-1-carboxylate synthase-like	
 ACCT1	arabidopsis-thaliana	Q9FIK7	ACCT1	Q9FIK7	2	45	Acetyl-CoA acetyltransferase 1	
 ACCT2	arabidopsis-thaliana	Q8S4Y1	ACCT2	Q8S4Y1	2	49	Acetyl-CoA acetyltransferase 2	
-ACCUMBENS-ASSOCIATED	human	Q96BF6	NACC2	Q96BF6	20	109	Nucleus accumbens-associated protein 2 (NAC-2) (BTB/POZ doma	w
-ACCUMBENS-ASSOCIATED	human	Q96RE7	NACC1	Q96RE7	42	169	Nucleus accumbens-associated protein 1 (NAC-1) (BTB/POZ doma	w
+ACCUMBENS-ASSOCIATED	human	Q96BF6	NACC2	Q96BF6	17	109	Nucleus accumbens-associated protein 2 (NAC-2) (BTB/POZ doma	w
+ACCUMBENS-ASSOCIATED	human	Q96RE7	NACC1	Q96RE7	36	169	Nucleus accumbens-associated protein 1 (NAC-1) (BTB/POZ doma	w
 ACCUMBENS-ASSOCIATED	zebrafish	A0A0R4IHV2	nacc1b	A0A0R4IHV2	0	2	Nucleus accumbens-associated 1, BEN and BTB (POZ) domain-con	w
-ACCUMULATED	human	Q8NEJ9	NGDN	Q8NEJ9	39	328	Neuroguidin (Centromere accumulated nuclear protein 1) (CANu	w
+ACCUMULATED	human	Q8NEJ9	NGDN	Q8NEJ9	35	327	Neuroguidin (Centromere accumulated nuclear protein 1) (CANu	w
 ACCUMULATES	yeast	Q05955	ADY4	Q05955	1	11	Accumulates dyads protein 4	w
 ACCUMULATES	yeast	Q07732	ADY3	Q07732	1	66	Accumulates dyads protein 3	w
-ACCUMULATION	human	Q9UJK0	TSR3	Q9UJK0	6	63	18S rRNA aminocarboxypropyltransferase (EC 2.5.1.157) (20S S	w
-ACCUMULATION	human	Q9UNW8	GPR132	Q9UNW8	13	94	Probable G protein-coupled receptor 132 (G2 accumulation pro	w
+ACCUMULATION	human	Q9UJK0	TSR3	Q9UJK0	5	63	18S rRNA aminocarboxypropyltransferase (EC 2.5.1.157) (20S S	w
+ACCUMULATION	human	Q9UNW8	GPR132	Q9UNW8	10	94	Probable G protein-coupled receptor 132 (G2 accumulation pro	w
 ACCUMULATION	yeast	P25040	TSR4	P25040	1	4	20S rRNA accumulation protein 4	w
 ACCUMULATION	yeast	P25613	ADY2	P25613	1	5	Accumulation of dyads protein 2	w
 ACC_1407	fly	FBgn0033246	Acc	A1Z784	0	21		

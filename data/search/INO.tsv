@@ -1,11 +1,11 @@
 INO1	candida-albicans-237561	P42800	INO1	P42800	0	3	Inositol-3-phosphate synthase	
 INO1	cladophialophora-carrionii	A0A1C1CDW8	ino1	A0A1C1CDW8	0	1	inositol-3-phosphate synthase	
 INO1	dictyostelium-discoideum	Q54N49	ino1	Q54N49	0	4	Inositol-3-phosphate synthase	
-INO1	human	Q9NPH2	ISYNA1	Q9NPH2	1	110		
+INO1	human	Q9NPH2	ISYNA1	Q9NPH2	0	110		
 INO1	mycobacterium-tuberculosis	P9WKI1	ino1	P9WKI1	0	7	Inositol-3-phosphate synthase	
 INO1	plasmodium-falciparum-36329	Q8I3Y8	INO1	Q8I3Y8	0	2	Inositol-3-phosphate synthase 1	
 INO1	yeast	P11986	INO1	P11986	0	24	Inositol-3-phosphate synthase	
-INO1_HUMAN	human	Q9NPH2	ISYNA1	Q9NPH2	1	110		
+INO1_HUMAN	human	Q9NPH2	ISYNA1	Q9NPH2	0	110		
 INO2	candida-albicans-237561	A0A1D8PRK8	INO2	A0A1D8PRK8	2	18	Ino2p	
 INO2	yeast	P26798	INO2	P26798	5	20	Protein INO2	
 INO4	candida-albicans-237561	A0A1D8PH18	INO4	A0A1D8PH18	1	6	Ino4p	
@@ -14,17 +14,17 @@ INO80	candida-albicans-237561	Q59KI4	INO80	Q59KI4	4	21	Chromatin-remodeling ATPa
 INO80	fly	FBgn0289122	Ino80	Q9VDY1	0	6	INO80 complex subunit	w
 INO80	fly	FBgn0289122	Ino80	Q9VDY1	0	6	INO80 complex subunit	w
 INO80	human	K7ENP7	?	K7ENP7	0	7	INO80 complex subunit C	w
-INO80	human	O96019	ACTL6A	O96019	106	835	Actin-like protein 6A (53 kDa BRG1-associated factor A) (Act	w
-INO80	human	P0C1Z6	TFPT	P0C1Z6	44	264	TCF3 fusion partner (INO80 complex subunit F) (Protein FB1)	w
-INO80	human	P25490	YY1	P25490	127	917	Transcriptional repressor protein YY1 (Delta transcription f	w
-INO80	human	Q53TQ3	INO80D	Q53TQ3	15	114	INO80 complex subunit D	w
-INO80	human	Q6P4R8	NFRKB	Q6P4R8	49	180	Nuclear factor related to kappa-B-binding protein (DNA-bindi	w
+INO80	human	O96019	ACTL6A	O96019	94	835	Actin-like protein 6A (53 kDa BRG1-associated factor A) (Act	w
+INO80	human	P0C1Z6	TFPT	P0C1Z6	41	264	TCF3 fusion partner (INO80 complex subunit F) (Protein FB1)	w
+INO80	human	P25490	YY1	P25490	108	917	Transcriptional repressor protein YY1 (Delta transcription f	w
+INO80	human	Q53TQ3	INO80D	Q53TQ3	14	114	INO80 complex subunit D	w
+INO80	human	Q6P4R8	NFRKB	Q6P4R8	41	180	Nuclear factor related to kappa-B-binding protein (DNA-bindi	w
 INO80	human	Q6PI98	INO80C	Q6PI98	33	414	INO80 complex subunit C (IES6 homolog) (hIes6)	w
-INO80	human	Q8NBZ0	INO80E	Q8NBZ0	43	199	INO80 complex subunit E (Coiled-coil domain-containing prote	w
-INO80	human	Q96EZ8	MCRS1	Q96EZ8	110	456	Microspherule protein 1 (58 kDa microspherule protein) (Cell	w
-INO80	human	Q9C086	INO80B	Q9C086	44	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	w
-INO80	human	Q9H981	ACTR8	Q9H981	8	241	Actin-related protein 8 (hArp8) (INO80 complex subunit N)	w
-INO80	human	Q9ULG1	INO80	Q9ULG1	24	301	Chromatin-remodeling ATPase INO80 (hINO80) (EC 3.6.4.-) (DNA	
+INO80	human	Q8NBZ0	INO80E	Q8NBZ0	38	199	INO80 complex subunit E (Coiled-coil domain-containing prote	w
+INO80	human	Q96EZ8	MCRS1	Q96EZ8	94	456	Microspherule protein 1 (58 kDa microspherule protein) (Cell	w
+INO80	human	Q9C086	INO80B	Q9C086	34	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	w
+INO80	human	Q9H981	ACTR8	Q9H981	6	241	Actin-related protein 8 (hArp8) (INO80 complex subunit N)	w
+INO80	human	Q9ULG1	INO80	Q9ULG1	22	301	Chromatin-remodeling ATPase INO80 (hINO80) (EC 3.6.4.-) (DNA	
 INO80	worm	Q95XK1	CELE_Y102A11A.2	Q95XK1	0	3	Chromatin-remodeling ATPase INO80	w
 INO80	yeast	P53115	INO80	P53115	5	94	Chromatin-remodeling ATPase INO80	
 INO80	zebrafish	A0A0R4IGV0	si:ch73-54f23.2	A0A0R4IGV0	1	34	INO80 complex subunit E	w
@@ -32,43 +32,43 @@ INO80	zebrafish	A0A0R4INH3	ino80da	A0A0R4INH3	8	52	INO80 complex subunit Da	w
 INO80	zebrafish	A1L1F6	ino80db	A1L1F6	4	43	INO80 complex subunit D-B	w
 INO80	zebrafish	F1R4X0	ino80c	F1R4X0	2	73	INO80 complex subunit C	w
 INO80	zebrafish	Q6P110	ino80e	Q6P110	5	24	INO80 complex subunit E	w
-INO80A	human	Q9ULG1	INO80	Q9ULG1	24	301		
-INO80B	human	Q9C086	INO80B	Q9C086	44	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	
+INO80A	human	Q9ULG1	INO80	Q9ULG1	22	301		
+INO80B	human	Q9C086	INO80B	Q9C086	34	312	INO80 complex subunit B (High mobility group AT-hook 1-like 	
 INO80B	mus-musculus	Q99PT3	Ino80b	Q99PT3	10	42	INO80 complex subunit B	
 INO80B	rattus-norvegicus	F7FBV1	Ino80b	F7FBV1	4	21	INO80 complex subunit B	
 INO80C	human	Q6PI98	INO80C	Q6PI98	33	414	INO80 complex subunit C (IES6 homolog) (hIes6)	
 INO80C	mus-musculus	Q8BHA0	Ino80c	Q8BHA0	4	46	INO80 complex subunit C	
 INO80C	rattus-norvegicus	Q5BJY3	Ino80c	Q5BJY3	2	84	INO80 complex subunit C	
 INO80C	zebrafish	F1R4X0	ino80c	F1R4X0	2	73	INO80 complex subunit C	
-INO80D	human	Q53TQ3	INO80D	Q53TQ3	15	114	INO80 complex subunit D	
+INO80D	human	Q53TQ3	INO80D	Q53TQ3	14	114	INO80 complex subunit D	
 INO80D	mus-musculus	Q66JY2	Ino80d	Q66JY2	4	33	INO80 complex subunit D	
 INO80D	rattus-norvegicus	D3ZTM2	Ino80d	D3ZTM2	2	34	INO80 complex subunit D	
 INO80DA	zebrafish	A0A0R4INH3	ino80da	A0A0R4INH3	8	52	INO80 complex subunit Da	
 INO80DB	zebrafish	A1L1F6	ino80db	A1L1F6	4	43	INO80 complex subunit D-B	
-INO80E	human	Q8NBZ0	INO80E	Q8NBZ0	43	199	INO80 complex subunit E (Coiled-coil domain-containing prote	
+INO80E	human	Q8NBZ0	INO80E	Q8NBZ0	38	199	INO80 complex subunit E (Coiled-coil domain-containing prote	
 INO80E	mus-musculus	Q8R359	Ino80e	Q8R359	2	26	INO80 complex subunit E	
 INO80E	rattus-norvegicus	Q6AYH2	Ino80e	Q6AYH2	5	26	INO80 complex subunit E	
 INO80E	zebrafish	Q6P110	ino80e	Q6P110	5	24	INO80 complex subunit E	
-INO80F	human	P0C1Z6	TFPT	P0C1Z6	44	264		
-INO80G	human	Q6P4R8	NFRKB	Q6P4R8	49	180		
-INO80H	human	Q9Y265	RUVBL1	Q9Y265	35	860		
-INO80J	human	Q9Y230	RUVBL2	Q9Y230	21	859		
-INO80K	human	O96019	ACTL6A	O96019	106	835		
-INO80N	human	Q9H981	ACTR8	Q9H981	8	241		
-INO80Q	human	Q96EZ8	MCRS1	Q96EZ8	110	456		
-INO80S	human	P25490	YY1	P25490	127	917		
-INO80_HUMAN	human	Q9ULG1	INO80	Q9ULG1	24	301		
-INOC1	human	Q9ULG1	INO80	Q9ULG1	24	301		
+INO80F	human	P0C1Z6	TFPT	P0C1Z6	41	264		
+INO80G	human	Q6P4R8	NFRKB	Q6P4R8	41	180		
+INO80H	human	Q9Y265	RUVBL1	Q9Y265	29	859		
+INO80J	human	Q9Y230	RUVBL2	Q9Y230	21	858		
+INO80K	human	O96019	ACTL6A	O96019	94	835		
+INO80N	human	Q9H981	ACTR8	Q9H981	6	241		
+INO80Q	human	Q96EZ8	MCRS1	Q96EZ8	94	456		
+INO80S	human	P25490	YY1	P25490	108	917		
+INO80_HUMAN	human	Q9ULG1	INO80	Q9ULG1	22	301		
+INOC1	human	Q9ULG1	INO80	Q9ULG1	22	301		
 INORGANIC	fly	FBgn0016684	NaPi-T	Q7JZR4	3	25	Na[+]-dependent inorganic phosphate cotransporter, isoform A	w
 INORGANIC	fly	FBgn0016687	Nurf-38	O77460	34	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
 INORGANIC	fly	FBgn0024315	Picot	Q9V7S5	0	9	Putative inorganic phosphate cotransporter	w
 INORGANIC	fly	FBgn0035649	PXo	Q9VRR2	4	25	Solute carrier family 53 member 1 (Inorganic phosphate-sensi	w
-INORGANIC	human	Q15181	PPA1	Q15181	43	559	Inorganic pyrophosphatase (EC 3.6.1.1) (Pyrophosphate phosph	w
-INORGANIC	human	Q8N130	SLC34A3	Q8N130	3	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
+INORGANIC	human	Q15181	PPA1	Q15181	39	559	Inorganic pyrophosphatase (EC 3.6.1.1) (Pyrophosphate phosph	w
+INORGANIC	human	Q8N130	SLC34A3	Q8N130	1	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
 INORGANIC	human	Q9H008	LHPP	Q9H008	3	111	Phospholysine phosphohistidine inorganic pyrophosphate phosp	w
-INORGANIC	human	Q9H2U2	PPA2	Q9H2U2	59	505	Inorganic pyrophosphatase 2, mitochondrial (EC 3.6.1.1) (Pyr	w
-INORGANIC	human	Q9P2U7	SLC17A7	Q9P2U7	6	174	Vesicular glutamate transporter 1 (VGluT1) (Brain-specific N	w
-INORGANIC	human	Q9P2U8	SLC17A6	Q9P2U8	9	178	Vesicular glutamate transporter 2 (VGluT2) (Differentiation-	w
+INORGANIC	human	Q9H2U2	PPA2	Q9H2U2	54	505	Inorganic pyrophosphatase 2, mitochondrial (EC 3.6.1.1) (Pyr	w
+INORGANIC	human	Q9P2U7	SLC17A7	Q9P2U7	4	174	Vesicular glutamate transporter 1 (VGluT1) (Brain-specific N	w
+INORGANIC	human	Q9P2U8	SLC17A6	Q9P2U8	4	178	Vesicular glutamate transporter 2 (VGluT2) (Differentiation-	w
 INORGANIC	worm	O01926	lhpp-1	O01926	0	3	Phospholysine phosphohistidine inorganic pyrophosphate phosp	w
 INORGANIC	worm	Q18680	pyp-1	Q18680	1	21	Inorganic pyrophosphatase 1	w
 INORGANIC	yeast	P00817	IPP1	P00817	1	71	Inorganic pyrophosphatase	w
@@ -79,23 +79,23 @@ INORGANIC	yeast	P46956	PHO86	P46956	1	32	Inorganic phosphate transporter PHO86	w
 INORGANIC	zebrafish	A0A0R4IRJ2	ppa2	A0A0R4IRJ2	0	8	inorganic diphosphatase	w
 INORGANIC	zebrafish	A5PLK2	lhpp	A5PLK2	0	4	Phospholysine phosphohistidine inorganic pyrophosphate phosp	w
 INOS	fly	FBgn0025885	Inos	O97477	1	198	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	
-INOS	human	P35228	NOS2	P35228	12	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
+INOS	human	P35228	NOS2	P35228	9	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
 INOS	human	Q14571	ITPR2	Q14571	4	102	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 (IP	w
 INOS-1	worm	G5ED01	inos-1	G5ED01	0	28	Inositol-3-phosphate synthase	
-INOSI	human	Q9NX62	BPNT2	Q9NX62	4	76	Golgi-resident adenosine 3',5'-bisphosphate 3'-phosphatase (	w
+INOSI	human	Q9NX62	BPNT2	Q9NX62	3	76	Golgi-resident adenosine 3',5'-bisphosphate 3'-phosphatase (	w
 INOSINE	fly	FBgn0031663	CG8891	Q9VMW7	1	142	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
 INOSINE	fly	FBgn0032436	CG5418	Q9VK81	0	6	Inosine/uridine-preferring nucleoside hydrolase domain-conta	w
 INOSINE	fly	FBgn0035348	CG16758	M9PE19	7	98	Purine nucleoside phosphorylase (EC 2.4.2.1) (Inosine phosph	w
 INOSINE	fly	FBgn0039241	Atic	Q9VC18	0	104	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
 INOSINE	human	P00491	PNP	P00491	1	163	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine 	w
 INOSINE	human	P31939	ATIC	P31939	0	219	Bifunctional purine biosynthesis protein ATIC (AICAR transfo	w
-INOSINE	human	Q96DE0	NUDT16	Q96DE0	3	55	U8 snoRNA-decapping enzyme (EC 3.6.1.62) (IDP phosphatase) (	w
-INOSINE	human	Q9BY32	ITPA	Q9BY32	7	146	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
+INOSINE	human	Q96DE0	NUDT16	Q96DE0	2	55	U8 snoRNA-decapping enzyme (EC 3.6.1.62) (IDP phosphatase) (	w
+INOSINE	human	Q9BY32	ITPA	Q9BY32	4	146	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
 INOSINE	worm	Q9GYG4	hap-1	Q9GYG4	0	3	Inosine triphosphate pyrophosphatase	w
 INOSINE	yeast	P47119	HAM1	P47119	0	7	Inosine triphosphate pyrophosphatase	w
 INOSINE	zebrafish	A5WVX0	itpa	A5WVX0	0	1	Inosine triphosphate pyrophosphatase	w
-INOSINE-5	human	P12268	IMPDH2	P12268	6	460	Inosine-5'-monophosphate dehydrogenase 2 (IMP dehydrogenase 	w
-INOSINE-5	human	P20839	IMPDH1	P20839	2	158	Inosine-5'-monophosphate dehydrogenase 1 (IMP dehydrogenase 	w
+INOSINE-5	human	P12268	IMPDH2	P12268	5	460	Inosine-5'-monophosphate dehydrogenase 2 (IMP dehydrogenase 	w
+INOSINE-5	human	P20839	IMPDH1	P20839	1	158	Inosine-5'-monophosphate dehydrogenase 1 (IMP dehydrogenase 	w
 INOSINE-5	worm	Q9GZH3	T22D1.3	Q9GZH3	0	21	Inosine-5'-monophosphate dehydrogenase	w
 INOSINE-5	yeast	O42831	YAR075W	O42831	0	1	Putative inosine-5'-monophosphate dehydrogenase-like protein	w
 INOSINE-5	yeast	P38697	IMD2	P38697	0	80	Inosine-5'-monophosphate dehydrogenase 2	w
@@ -108,7 +108,7 @@ INOSINE-5	zebrafish	Q6GMG5	impdh1a	Q6GMG5	0	14	Inosine-5'-monophosphate dehydrog
 INOSINE-GUANOSINE	fly	FBgn0034898	CG18128	Q9W1K6	3	95	purine-nucleoside phosphorylase (EC 2.4.2.1) (Inosine-guanos	w
 INOSINE-GUANOSINE	fly	FBgn0035348	CG16758	M9PE19	7	98	Purine nucleoside phosphorylase (EC 2.4.2.1) (Inosine phosph	w
 INOSINE-GUANOSINE	human	P00491	PNP	P00491	1	163	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine 	w
-INOSINE-SPECIFIC	human	Q8N8Q3	ENDOV	Q8N8Q3	2	48	Endonuclease V (hEndoV) (EC 3.1.26.-) (Inosine-specific endo	w
+INOSINE-SPECIFIC	human	Q8N8Q3	ENDOV	Q8N8Q3	1	48	Endonuclease V (hEndoV) (EC 3.1.26.-) (Inosine-specific endo	w
 INOSITOL	fly	FBgn0010051	Itpr	P29993	1	16	Inositol 1,4,5,-trisphosphate receptor	w
 INOSITOL	fly	FBgn0016672	Ipp	Q9VFP6	0	19	Inositol polyphosphate 1-phosphatase (EC 3.1.3.57) (RE60387p	w
 INOSITOL	fly	FBgn0026060	Mipp2	Q9W438	33	304	Multiple inositol polyphosphate phosphatase 1 (EC 3.1.3.62) 	w
@@ -117,46 +117,46 @@ INOSITOL	fly	FBgn0030465	Bpnt2	Q9VYF2	0	7	Putative inositol monophosphatase 3 (I
 INOSITOL	fly	FBgn0031768	IPIP	Q9VMI6	15	72	Inositol phosphatase interacting protein, isoform A (Inosito	w
 INOSITOL	fly	FBgn0036262	Miox	Q9VTU9	0	6	Inositol oxygenase (EC 1.13.99.1) (Myo-inositol oxygenase)	w
 INOSITOL	fly	FBgn0036273	INPP5E	Q9VTW2	0	11	Inositol polyphosphate 5-phosphatase E (EC 3.1.3.36) (Phosph	w
-INOSITOL	human	O14732	IMPA2	O14732	5	140	Inositol monophosphatase 2 (IMP 2) (IMPase 2) (EC 3.1.3.25) 	w
-INOSITOL	human	O15327	INPP4B	O15327	5	53	Inositol polyphosphate 4-phosphatase type II (Type II inosit	w
-INOSITOL	human	O15357	INPPL1	O15357	78	429	Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 2 (EC	w
-INOSITOL	human	O43314	PPIP5K2	O43314	11	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
+INOSITOL	human	O14732	IMPA2	O14732	4	140	Inositol monophosphatase 2 (IMP 2) (IMPase 2) (EC 3.1.3.25) 	w
+INOSITOL	human	O15327	INPP4B	O15327	3	53	Inositol polyphosphate 4-phosphatase type II (Type II inosit	w
+INOSITOL	human	O15357	INPPL1	O15357	63	429	Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 2 (EC	w
+INOSITOL	human	O43314	PPIP5K2	O43314	9	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
 INOSITOL	human	P12429	ANXA3	P12429	3	190	Annexin A3 (35-alpha calcimedin) (Annexin III) (Annexin-3) (	w
-INOSITOL	human	P23677	ITPKA	P23677	10	38	Inositol-trisphosphate 3-kinase A (EC 2.7.1.127) (Inositol 1	w
-INOSITOL	human	P27987	ITPKB	P27987	19	90	Inositol-trisphosphate 3-kinase B (EC 2.7.1.127) (Inositol 1	w
+INOSITOL	human	P23677	ITPKA	P23677	6	38	Inositol-trisphosphate 3-kinase A (EC 2.7.1.127) (Inositol 1	w
+INOSITOL	human	P27987	ITPKB	P27987	17	90	Inositol-trisphosphate 3-kinase B (EC 2.7.1.127) (Inositol 1	w
 INOSITOL	human	P29218	IMPA1	P29218	1	72	Inositol monophosphatase 1 (IMP 1) (IMPase 1) (EC 3.1.3.25) 	w
-INOSITOL	human	P32019	INPP5B	P32019	20	99	Type II inositol 1,4,5-trisphosphate 5-phosphatase (EC 3.1.3	w
-INOSITOL	human	P49441	INPP1	P49441	1	79	Inositol polyphosphate 1-phosphatase (IPP) (IPPase) (EC 3.1.	w
-INOSITOL	human	P60484	PTEN	P60484	78	938	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and d	w
-INOSITOL	human	Q01968	OCRL	Q01968	50	300	Inositol polyphosphate 5-phosphatase OCRL (EC 3.1.3.36) (EC 	w
-INOSITOL	human	Q12912	IRAG2	Q12912	9	29	Inositol 1,4,5-triphosphate receptor associated 2 (Lymphoid-	w
-INOSITOL	human	Q13572	ITPK1	Q13572	6	70	Inositol-tetrakisphosphate 1-kinase (EC 2.7.1.134) (Inositol	w
+INOSITOL	human	P32019	INPP5B	P32019	14	99	Type II inositol 1,4,5-trisphosphate 5-phosphatase (EC 3.1.3	w
+INOSITOL	human	P49441	INPP1	P49441	0	79	Inositol polyphosphate 1-phosphatase (IPP) (IPPase) (EC 3.1.	w
+INOSITOL	human	P60484	PTEN	P60484	66	937	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and d	w
+INOSITOL	human	Q01968	OCRL	Q01968	46	300	Inositol polyphosphate 5-phosphatase OCRL (EC 3.1.3.36) (EC 	w
+INOSITOL	human	Q12912	IRAG2	Q12912	8	29	Inositol 1,4,5-triphosphate receptor associated 2 (Lymphoid-	w
+INOSITOL	human	Q13572	ITPK1	Q13572	4	70	Inositol-tetrakisphosphate 1-kinase (EC 2.7.1.134) (Inositol	w
 INOSITOL	human	Q14571	ITPR2	Q14571	4	102	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 (IP	w
 INOSITOL	human	Q14573	ITPR3	Q14573	3	172	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR3 (IP	w
 INOSITOL	human	Q14642	INPP5A	Q14642	5	85	Inositol polyphosphate-5-phosphatase A (EC 3.1.3.56) (43 kDa	w
-INOSITOL	human	Q14643	ITPR1	Q14643	7	116	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 (IP	w
-INOSITOL	human	Q15735	INPP5J	Q15735	2	80	Phosphatidylinositol 4,5-bisphosphate 5-phosphatase A (EC 3.	w
-INOSITOL	human	Q3MIP1	ITPRIPL2	Q3MIP1	5	61	Inositol 1,4,5-trisphosphate receptor-interacting protein-li	w
-INOSITOL	human	Q6GPH6	ITPRIPL1	Q6GPH6	14	123	Inositol 1,4,5-trisphosphate receptor-interacting protein-li	w
+INOSITOL	human	Q14643	ITPR1	Q14643	6	116	Inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 (IP	w
+INOSITOL	human	Q15735	INPP5J	Q15735	1	80	Phosphatidylinositol 4,5-bisphosphate 5-phosphatase A (EC 3.	w
+INOSITOL	human	Q3MIP1	ITPRIPL2	Q3MIP1	3	61	Inositol 1,4,5-trisphosphate receptor-interacting protein-li	w
+INOSITOL	human	Q6GPH6	ITPRIPL1	Q6GPH6	13	123	Inositol 1,4,5-trisphosphate receptor-interacting protein-li	w
 INOSITOL	human	Q6ICB4	PHETA2	Q6ICB4	7	30	Sesquipedalian-2 (Ses2) (27 kDa inositol polyphosphate phosp	w
 INOSITOL	human	Q6PFW1	PPIP5K1	Q6PFW1	3	58	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
-INOSITOL	human	Q6XPS3	TPTE2	Q6XPS3	9	118	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase TPTE2	w
-INOSITOL	human	Q8IWB1	ITPRIP	Q8IWB1	22	143	Inositol 1,4,5-trisphosphate receptor-interacting protein (P	w
-INOSITOL	human	Q8N4B1	PHETA1	Q8N4B1	14	54	Sesquipedalian-1 (Ses1) (27 kDa inositol polyphosphate phosp	w
-INOSITOL	human	Q8NFU5	IPMK	Q8NFU5	5	69	Inositol polyphosphate multikinase (EC 2.7.1.140) (EC 2.7.1.	w
+INOSITOL	human	Q6XPS3	TPTE2	Q6XPS3	8	118	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase TPTE2	w
+INOSITOL	human	Q8IWB1	ITPRIP	Q8IWB1	16	143	Inositol 1,4,5-trisphosphate receptor-interacting protein (P	w
+INOSITOL	human	Q8N4B1	PHETA1	Q8N4B1	12	54	Sesquipedalian-1 (Ses1) (27 kDa inositol polyphosphate phosp	w
+INOSITOL	human	Q8NFU5	IPMK	Q8NFU5	4	69	Inositol polyphosphate multikinase (EC 2.7.1.140) (EC 2.7.1.	w
 INOSITOL	human	Q92551	IP6K1	Q92551	3	121	Inositol hexakisphosphate kinase 1 (InsP6 kinase 1) (EC 2.7.	w
-INOSITOL	human	Q92835	INPP5D	Q92835	48	235	Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 1 (EC	w
-INOSITOL	human	Q96DU7	ITPKC	Q96DU7	8	56	Inositol-trisphosphate 3-kinase C (EC 2.7.1.127) (Inositol 1	w
-INOSITOL	human	Q96PC2	IP6K3	Q96PC2	2	74	Inositol hexakisphosphate kinase 3 (InsP6 kinase 3) (EC 2.7.	w
-INOSITOL	human	Q96PE3	INPP4A	Q96PE3	4	101	Inositol polyphosphate-4-phosphatase type I A (Inositol poly	w
-INOSITOL	human	Q9BT40	INPP5K	Q9BT40	7	100	Inositol polyphosphate 5-phosphatase K (EC 3.1.3.56) (Phosph	w
-INOSITOL	human	Q9NRR6	INPP5E	Q9NRR6	15	114	Phosphatidylinositol polyphosphate 5-phosphatase type IV (72	w
+INOSITOL	human	Q92835	INPP5D	Q92835	43	235	Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 1 (EC	w
+INOSITOL	human	Q96DU7	ITPKC	Q96DU7	7	56	Inositol-trisphosphate 3-kinase C (EC 2.7.1.127) (Inositol 1	w
+INOSITOL	human	Q96PC2	IP6K3	Q96PC2	0	74	Inositol hexakisphosphate kinase 3 (InsP6 kinase 3) (EC 2.7.	w
+INOSITOL	human	Q96PE3	INPP4A	Q96PE3	2	101	Inositol polyphosphate-4-phosphatase type I A (Inositol poly	w
+INOSITOL	human	Q9BT40	INPP5K	Q9BT40	5	100	Inositol polyphosphate 5-phosphatase K (EC 3.1.3.56) (Phosph	w
+INOSITOL	human	Q9NRR6	INPP5E	Q9NRR6	13	114	Phosphatidylinositol polyphosphate 5-phosphatase type IV (72	w
 INOSITOL	human	Q9UGB7	MIOX	Q9UGB7	0	27	Inositol oxygenase (EC 1.13.99.1) (Aldehyde reductase-like 6	w
-INOSITOL	human	Q9UHH9	IP6K2	Q9UHH9	1	49	Inositol hexakisphosphate kinase 2 (InsP6 kinase 2) (InsP6K2	w
-INOSITOL	human	Q9UNW1	MINPP1	Q9UNW1	9	69	Multiple inositol polyphosphate phosphatase 1 (EC 3.1.3.62) 	w
-INOSITOL	human	Q9Y216	MTMR7	Q9Y216	20	109	Phosphatidylinositol-3-phosphate phosphatase MTMR7 (EC 3.1.3	w
+INOSITOL	human	Q9UHH9	IP6K2	Q9UHH9	0	49	Inositol hexakisphosphate kinase 2 (InsP6 kinase 2) (InsP6K2	w
+INOSITOL	human	Q9UNW1	MINPP1	Q9UNW1	7	69	Multiple inositol polyphosphate phosphatase 1 (EC 3.1.3.62) 	w
+INOSITOL	human	Q9Y216	MTMR7	Q9Y216	14	109	Phosphatidylinositol-3-phosphate phosphatase MTMR7 (EC 3.1.3	w
 INOSITOL	human	Q9Y2H2	INPP5F	Q9Y2H2	12	78	Phosphatidylinositide 4-phosphatase SAC2 (EC 3.1.3.-) (Inosi	w
-INOSITOL	human	Q9Y6F6	IRAG1	Q9Y6F6	14	116	Inositol 1,4,5-triphosphate receptor associated 1 (Inositol 	w
+INOSITOL	human	Q9Y6F6	IRAG1	Q9Y6F6	10	116	Inositol 1,4,5-triphosphate receptor associated 1 (Inositol 	w
 INOSITOL	worm	G5EGN9	inpp-1	G5EGN9	0	9	Inositol polyphosphate-related phosphatase domain-containing	w
 INOSITOL	worm	P34370	inpp-5K	P34370	0	1	Inositol polyphosphate 5-phosphatase	w
 INOSITOL	worm	P91309	F46F11.1	P91309	0	5	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
@@ -185,7 +185,7 @@ INOSITOL	zebrafish	Q5RHB5	irag2	Q5RHB5	0	2	Inositol 1,4,5-triphosphate receptor 
 INOSITOL	zebrafish	X1WES5	mrvi1	X1WES5	0	3	Inositol 1,4,5-triphosphate receptor associated 1 isoform X2	w
 INOSITOL-1	fly	FBgn0030465	Bpnt2	Q9VYF2	0	7	Putative inositol monophosphatase 3 (IMP 3) (IMPase 3) (EC 3	w
 INOSITOL-1	fly	FBgn0050295	Ipk1	A8DYK1	1	5	Inositol-pentakisphosphate 2-kinase (EC 2.7.1.158) (Inositol	w
-INOSITOL-1	human	O14732	IMPA2	O14732	5	140	Inositol monophosphatase 2 (IMP 2) (IMPase 2) (EC 3.1.3.25) 	w
+INOSITOL-1	human	O14732	IMPA2	O14732	4	140	Inositol monophosphatase 2 (IMP 2) (IMPase 2) (EC 3.1.3.25) 	w
 INOSITOL-1	human	P29218	IMPA1	P29218	1	72	Inositol monophosphatase 1 (IMP 1) (IMPase 1) (EC 3.1.3.25) 	w
 INOSITOL-1	human	Q9H8X2	IPPK	Q9H8X2	5	136	Inositol-pentakisphosphate 2-kinase (EC 2.7.1.158) (IPK1 hom	w
 INOSITOL-1-MONOPHOSPHATASE	fly	FBgn0036550	CG17026	Q9VUW1	5	11	Inositol-1-monophosphatase (EC 3.1.3.25)	w
@@ -196,12 +196,12 @@ INOSITOL-1-MONOPHOSPHATASE	fly	FBgn0037063	CG9391	Q7KTW5	8	124	Inositol-1-monoph
 INOSITOL-1-MONOPHOSPHATASE	zebrafish	Q503S9	impa2	Q503S9	1	12	Inositol-1-monophosphatase	w
 INOSITOL-1-MONOPHOSPHATASE	zebrafish	Q6DGB2	impa1	Q6DGB2	1	12	Inositol-1-monophosphatase	w
 INOSITOL-3-PHOSPHATE	fly	FBgn0025885	Inos	O97477	1	198	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	w
-INOSITOL-3-PHOSPHATE	human	Q9NPH2	ISYNA1	Q9NPH2	1	110	Inositol-3-phosphate synthase 1 (IPS 1) (EC 5.5.1.4) (Myo-in	w
+INOSITOL-3-PHOSPHATE	human	Q9NPH2	ISYNA1	Q9NPH2	0	110	Inositol-3-phosphate synthase 1 (IPS 1) (EC 5.5.1.4) (Myo-in	w
 INOSITOL-3-PHOSPHATE	worm	G5ED01	inos-1	G5ED01	0	28	Inositol-3-phosphate synthase	w
 INOSITOL-3-PHOSPHATE	yeast	P11986	INO1	P11986	0	24	Inositol-3-phosphate synthase	w
-INOSITOL-ANCHORED	human	O95498	VNN2	O95498	11	157	Pantetheine hydrolase VNN2 (EC 3.5.1.92) (Glycosylphosphatid	w
+INOSITOL-ANCHORED	human	O95498	VNN2	O95498	8	157	Pantetheine hydrolase VNN2 (EC 3.5.1.92) (Glycosylphosphatid	w
 INOSITOL-DEACYLASE	fly	FBgn0029789	PGAP1	Q9W495	0	12	GPI inositol-deacylase (EC 3.1.-.-) (Post-GPI attachment to 	w
-INOSITOL-DEACYLASE	human	Q75T13	PGAP1	Q75T13	2	33	GPI inositol-deacylase (EC 3.1.-.-) (Post-GPI attachment to 	w
+INOSITOL-DEACYLASE	human	Q75T13	PGAP1	Q75T13	1	33	GPI inositol-deacylase (EC 3.1.-.-) (Post-GPI attachment to 	w
 INOSITOL-DEACYLASE	worm	G5ECN2	CELE_F17H10.1	G5ECN2	0	4	GPI inositol-deacylase	w
 INOSITOL-DEACYLASE	yeast	P43571	BST1	P43571	0	4	GPI inositol-deacylase	w
 INOSITOL-PENTAKISPHOSPHATE	fly	FBgn0050295	Ipk1	A8DYK1	1	5	Inositol-pentakisphosphate 2-kinase (EC 2.7.1.158) (Inositol	w
@@ -212,17 +212,17 @@ INOSITOL-PENTAKISPHOSPHATE	zebrafish	Q4JL91	ippk	Q4JL91	0	1	Inositol-pentakispho
 INOSITOL-PHOSPHATE	fly	FBgn0037064	CG9389	Q9VP62	7	12	inositol-phosphate phosphatase (EC 3.1.3.25)	w
 INOSITOL-POLYPHOSPHATE	fly	FBgn0039698	Bpnt1	Q9VAG9	0	12	3'(2'),5'-bisphosphate nucleotidase 1 (EC 3.1.3.57) (3'-phos	w
 INOSITOL-POLYPHOSPHATE	fly	FBgn0259178	5PtaseI	B7Z0Q2	0	6	inositol-polyphosphate 5-phosphatase (EC 3.1.3.56)	w
-INOSITOL-REQUIRING	human	O75460	ERN1	O75460	20	216	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
-INOSITOL-REQUIRING	human	Q76MJ5	ERN2	Q76MJ5	8	91	Serine/threonine-protein kinase/endoribonuclease IRE2 (Endop	w
+INOSITOL-REQUIRING	human	O75460	ERN1	O75460	17	216	Serine/threonine-protein kinase/endoribonuclease IRE1 (Endop	w
+INOSITOL-REQUIRING	human	Q76MJ5	ERN2	Q76MJ5	5	91	Serine/threonine-protein kinase/endoribonuclease IRE2 (Endop	w
 INOSITOL-REQUIRING	worm	Q09499	ire-1	Q09499	1	28	Serine/threonine-protein kinase/endoribonuclease ire-1 (Inos	w
-INOSITOL-TETRAKISPHOSPHATE	human	Q13572	ITPK1	Q13572	6	70	Inositol-tetrakisphosphate 1-kinase (EC 2.7.1.134) (Inositol	w
+INOSITOL-TETRAKISPHOSPHATE	human	Q13572	ITPK1	Q13572	4	70	Inositol-tetrakisphosphate 1-kinase (EC 2.7.1.134) (Inositol	w
 INOSITOL-TETRAKISPHOSPHATE	zebrafish	Q7ZU91	itpk1	Q7ZU91	0	4	Inositol-tetrakisphosphate 1-kinase	w
 INOSITOL-TETRAKISPHOSPHATE	zebrafish	X1WEB0	itpk1b	X1WEB0	0	4	Inositol-tetrakisphosphate 1-kinase	w
-INOSITOL-TRIPHOSPHATE	human	Q13572	ITPK1	Q13572	6	70	Inositol-tetrakisphosphate 1-kinase (EC 2.7.1.134) (Inositol	w
-INOSITOL-TRISPHOSPHATE	human	P23677	ITPKA	P23677	10	38	Inositol-trisphosphate 3-kinase A (EC 2.7.1.127) (Inositol 1	w
-INOSITOL-TRISPHOSPHATE	human	P27987	ITPKB	P27987	19	90	Inositol-trisphosphate 3-kinase B (EC 2.7.1.127) (Inositol 1	w
-INOSITOL-TRISPHOSPHATE	human	Q96DU7	ITPKC	Q96DU7	8	56	Inositol-trisphosphate 3-kinase C (EC 2.7.1.127) (Inositol 1	w
+INOSITOL-TRIPHOSPHATE	human	Q13572	ITPK1	Q13572	4	70	Inositol-tetrakisphosphate 1-kinase (EC 2.7.1.134) (Inositol	w
+INOSITOL-TRISPHOSPHATE	human	P23677	ITPKA	P23677	6	38	Inositol-trisphosphate 3-kinase A (EC 2.7.1.127) (Inositol 1	w
+INOSITOL-TRISPHOSPHATE	human	P27987	ITPKB	P27987	17	90	Inositol-trisphosphate 3-kinase B (EC 2.7.1.127) (Inositol 1	w
+INOSITOL-TRISPHOSPHATE	human	Q96DU7	ITPKC	Q96DU7	7	56	Inositol-trisphosphate 3-kinase C (EC 2.7.1.127) (Inositol 1	w
 INOSITOL-TRISPHOSPHATE	worm	Q95Q62	lfe-2	Q95Q62	0	3	Inositol-trisphosphate 3-kinase homolog	w
-INOSITOLPHO	human	Q9HCC8	GDPD2	Q9HCC8	3	53	Glycerophosphodiester phosphodiesterase 3 (EC 3.1.4.-) (Glyc	w
+INOSITOLPHO	human	Q9HCC8	GDPD2	Q9HCC8	2	53	Glycerophosphodiester phosphodiesterase 3 (EC 3.1.4.-) (Glyc	w
 INOSITOLPHOSPHOTRANSFERASE	yeast	P38954	IPT1	P38954	0	12	Inositolphosphotransferase 1	w
 INOS_333_420	fly	FBgn0025885	Inos	O97477	1	198		

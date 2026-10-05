@@ -1,6 +1,6 @@
 RECO	escherichia-coli-83333	P0A7H3	recO	P0A7H3	2	5	DNA repair protein RecO	
 RECO	haemophilus-influenzae	P44642	recO	P44642	1	5	DNA repair protein RecO	
-RECO	human	Q9H6Q4	CIAO3	Q9H6Q4	7	219	Cytosolic iron-sulfur assembly component 3 (Cytosolic Fe-S c	w
+RECO	human	Q9H6Q4	CIAO3	Q9H6Q4	6	219	Cytosolic iron-sulfur assembly component 3 (Cytosolic Fe-S c	w
 RECO	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H1L1	recO	A0A0H3H1L1	2	42	DNA repair protein RecO	
 RECO	mycobacterium-leprae	Q9CCN0	recO	Q9CCN0	2	21	DNA repair protein RecO	
 RECO	mycobacterium-tuberculosis	P9WHI5	recO	P9WHI5	2	7	DNA repair protein RecO	
@@ -29,43 +29,43 @@ RECOGNITION	fly	FBgn0038810	Srp72	Q9VDK7	59	157	Signal recognition particle subu
 RECOGNITION	fly	FBgn0043577	PGRP-SB2	M9PFJ1	35	246	Peptidoglycan recognition protein SB2, isoform B (EC 3.5.1.2	w
 RECOGNITION	fly	FBgn0260458	PGRP-LD	B7Z0C3	0	3	Peptidoglycan recognition protein LD, isoform D	w
 RECOGNITION	fly	FBgn0286788	Orc1	O16810	5	58	Origin recognition complex subunit 1 (DmORC1)	w
-RECOGNITION	human	O43913	ORC5	O43913	17	258	Origin recognition complex subunit 5	w
-RECOGNITION	human	O43929	ORC4	O43929	17	324	Origin recognition complex subunit 4	w
-RECOGNITION	human	O75594	PGLYRP1	O75594	62	522	Peptidoglycan recognition protein 1 (Peptidoglycan recogniti	w
-RECOGNITION	human	O76094	SRP72	O76094	142	373	Signal recognition particle subunit SRP72 (SRP72) (Signal re	w
-RECOGNITION	human	O94779	CNTN5	O94779	22	101	Contactin-5 (Neural recognition molecule NB-2) (hNB-2)	w
-RECOGNITION	human	P00558	PGK1	P00558	8	476	Phosphoglycerate kinase 1 (EC 2.7.11.1) (EC 2.7.2.3) (Cell m	w
-RECOGNITION	human	P08240	SRPRA	P08240	47	424	Signal recognition particle receptor subunit alpha (SR-alpha	w
-RECOGNITION	human	P09132	SRP19	P09132	31	329	Signal recognition particle 19 kDa protein (SRP19)	w
+RECOGNITION	human	O43913	ORC5	O43913	14	258	Origin recognition complex subunit 5	w
+RECOGNITION	human	O43929	ORC4	O43929	14	324	Origin recognition complex subunit 4	w
+RECOGNITION	human	O75594	PGLYRP1	O75594	55	522	Peptidoglycan recognition protein 1 (Peptidoglycan recogniti	w
+RECOGNITION	human	O76094	SRP72	O76094	130	373	Signal recognition particle subunit SRP72 (SRP72) (Signal re	w
+RECOGNITION	human	O94779	CNTN5	O94779	18	101	Contactin-5 (Neural recognition molecule NB-2) (hNB-2)	w
+RECOGNITION	human	P00558	PGK1	P00558	7	476	Phosphoglycerate kinase 1 (EC 2.7.11.1) (EC 2.7.2.3) (Cell m	w
+RECOGNITION	human	P08240	SRPRA	P08240	42	423	Signal recognition particle receptor subunit alpha (SR-alpha	w
+RECOGNITION	human	P09132	SRP19	P09132	28	329	Signal recognition particle 19 kDa protein (SRP19)	w
 RECOGNITION	human	P0DJD3	RBMY1A1	P0DJD3	3	30	RNA-binding motif protein, Y chromosome, family 1 member A1 	w
-RECOGNITION	human	P30414	NKTR	P30414	52	229	NK-tumor recognition protein (NK-TR protein) (Natural-killer	w
-RECOGNITION	human	P37108	SRP14	P37108	14	381	Signal recognition particle 14 kDa protein (SRP14) (18 kDa A	w
-RECOGNITION	human	P49458	SRP9	P49458	36	539	Signal recognition particle 9 kDa protein (SRP9)	w
-RECOGNITION	human	P61011	SRP54	P61011	28	385	Signal recognition particle subunit SRP54 (EC 3.6.5.4) (Sign	w
-RECOGNITION	human	Q03989	ARID5A	Q03989	30	162	AT-rich interactive domain-containing protein 5A (ARID domai	w
-RECOGNITION	human	Q13415	ORC1	Q13415	43	427	Origin recognition complex subunit 1 (Replication control pr	w
-RECOGNITION	human	Q13416	ORC2	Q13416	30	163	Origin recognition complex subunit 2	w
-RECOGNITION	human	Q14865	ARID5B	Q14865	46	239	AT-rich interactive domain-containing protein 5B (ARID domai	w
+RECOGNITION	human	P30414	NKTR	P30414	39	229	NK-tumor recognition protein (NK-TR protein) (Natural-killer	w
+RECOGNITION	human	P37108	SRP14	P37108	12	381	Signal recognition particle 14 kDa protein (SRP14) (18 kDa A	w
+RECOGNITION	human	P49458	SRP9	P49458	30	539	Signal recognition particle 9 kDa protein (SRP9)	w
+RECOGNITION	human	P61011	SRP54	P61011	22	382	Signal recognition particle subunit SRP54 (EC 3.6.5.4) (Sign	w
+RECOGNITION	human	Q03989	ARID5A	Q03989	22	162	AT-rich interactive domain-containing protein 5A (ARID domai	w
+RECOGNITION	human	Q13415	ORC1	Q13415	35	427	Origin recognition complex subunit 1 (Replication control pr	w
+RECOGNITION	human	Q13416	ORC2	Q13416	29	163	Origin recognition complex subunit 2	w
+RECOGNITION	human	Q14865	ARID5B	Q14865	32	239	AT-rich interactive domain-containing protein 5B (ARID domai	w
 RECOGNITION	human	Q15415	RBMY1F	Q15415	1	47	RNA-binding motif protein, Y chromosome, family 1 member F/J	w
-RECOGNITION	human	Q5T0T0	MARCHF8	Q5T0T0	12	85	E3 ubiquitin-protein ligase MARCHF8 (EC 2.3.2.27) (Cellular 	w
-RECOGNITION	human	Q7L5D6	GET4	Q7L5D6	32	194	Golgi to ER traffic protein 4 homolog (Conserved edge-expres	w
-RECOGNITION	human	Q8NCD3	HJURP	Q8NCD3	77	604	Holliday junction recognition protein (14-3-3-associated AKT	w
-RECOGNITION	human	Q8WYK1	CNTNAP5	Q8WYK1	7	59	Contactin-associated protein-like 5 (Cell recognition molecu	w
-RECOGNITION	human	Q92890	UFD1	Q92890	25	242	Ubiquitin recognition factor in ER-associated degradation pr	w
-RECOGNITION	human	Q96LB8	PGLYRP4	Q96LB8	43	336	Peptidoglycan recognition protein 4 (Peptidoglycan recogniti	w
+RECOGNITION	human	Q5T0T0	MARCHF8	Q5T0T0	8	85	E3 ubiquitin-protein ligase MARCHF8 (EC 2.3.2.27) (Cellular 	w
+RECOGNITION	human	Q7L5D6	GET4	Q7L5D6	23	194	Golgi to ER traffic protein 4 homolog (Conserved edge-expres	w
+RECOGNITION	human	Q8NCD3	HJURP	Q8NCD3	60	604	Holliday junction recognition protein (14-3-3-associated AKT	w
+RECOGNITION	human	Q8WYK1	CNTNAP5	Q8WYK1	5	59	Contactin-associated protein-like 5 (Cell recognition molecu	w
+RECOGNITION	human	Q92890	UFD1	Q92890	23	242	Ubiquitin recognition factor in ER-associated degradation pr	w
+RECOGNITION	human	Q96LB8	PGLYRP4	Q96LB8	42	336	Peptidoglycan recognition protein 4 (Peptidoglycan recogniti	w
 RECOGNITION	human	Q96LB9	PGLYRP3	Q96LB9	5	36	Peptidoglycan recognition protein 3 (Peptidoglycan recogniti	w
 RECOGNITION	human	Q96NU0	CNTNAP3B	Q96NU0	6	49	Contactin-associated protein-like 3B (Cell recognition molec	w
-RECOGNITION	human	Q96PD5	PGLYRP2	Q96PD5	10	130	N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28) (Peptidogly	w
-RECOGNITION	human	Q9BZ76	CNTNAP3	Q9BZ76	12	147	Contactin-associated protein-like 3 (Cell recognition molecu	w
-RECOGNITION	human	Q9C0A0	CNTNAP4	Q9C0A0	13	99	Contactin-associated protein-like 4 (Cell recognition molecu	w
-RECOGNITION	human	Q9UBD5	ORC3	Q9UBD5	19	229	Origin recognition complex subunit 3 (Origin recognition com	w
-RECOGNITION	human	Q9UFC0	LRWD1	Q9UFC0	114	236	Leucine-rich repeat and WD repeat-containing protein 1 (Cent	w
-RECOGNITION	human	Q9UHB9	SRP68	Q9UHB9	18	381	Signal recognition particle subunit SRP68 (SRP68) (Signal re	w
-RECOGNITION	human	Q9UHC6	CNTNAP2	Q9UHC6	18	141	Contactin-associated protein-like 2 (Cell recognition molecu	w
-RECOGNITION	human	Q9UHQ1	NARF	Q9UHQ1	9	59	Nuclear prelamin A recognition factor (Iron-only hydrogenase	w
-RECOGNITION	human	Q9UQ52	CNTN6	Q9UQ52	26	147	Contactin-6 (Neural recognition molecule NB-3) (hNB-3)	w
-RECOGNITION	human	Q9Y5M8	SRPRB	Q9Y5M8	16	379	Signal recognition particle receptor subunit beta (SR-beta) 	w
-RECOGNITION	human	Q9Y5N6	ORC6	Q9Y5N6	56	302	Origin recognition complex subunit 6	w
+RECOGNITION	human	Q96PD5	PGLYRP2	Q96PD5	6	130	N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28) (Peptidogly	w
+RECOGNITION	human	Q9BZ76	CNTNAP3	Q9BZ76	10	147	Contactin-associated protein-like 3 (Cell recognition molecu	w
+RECOGNITION	human	Q9C0A0	CNTNAP4	Q9C0A0	8	99	Contactin-associated protein-like 4 (Cell recognition molecu	w
+RECOGNITION	human	Q9UBD5	ORC3	Q9UBD5	12	229	Origin recognition complex subunit 3 (Origin recognition com	w
+RECOGNITION	human	Q9UFC0	LRWD1	Q9UFC0	97	236	Leucine-rich repeat and WD repeat-containing protein 1 (Cent	w
+RECOGNITION	human	Q9UHB9	SRP68	Q9UHB9	17	381	Signal recognition particle subunit SRP68 (SRP68) (Signal re	w
+RECOGNITION	human	Q9UHC6	CNTNAP2	Q9UHC6	15	141	Contactin-associated protein-like 2 (Cell recognition molecu	w
+RECOGNITION	human	Q9UHQ1	NARF	Q9UHQ1	6	59	Nuclear prelamin A recognition factor (Iron-only hydrogenase	w
+RECOGNITION	human	Q9UQ52	CNTN6	Q9UQ52	21	147	Contactin-6 (Neural recognition molecule NB-3) (hNB-3)	w
+RECOGNITION	human	Q9Y5M8	SRPRB	Q9Y5M8	11	379	Signal recognition particle receptor subunit beta (SR-beta) 	w
+RECOGNITION	human	Q9Y5N6	ORC6	Q9Y5N6	48	302	Origin recognition complex subunit 6	w
 RECOGNITION	worm	G5EE80	CELE_F21D5.7	G5EE80	4	133	Signal recognition particle 54 kDa protein	w
 RECOGNITION	worm	O16927	F25G6.8	O16927	4	69	Signal recognition particle 14 kDa protein	w
 RECOGNITION	worm	O16928	CELE_F25G6.9	O16928	0	42	Signal recognition particle 14 kDa protein	w
@@ -108,14 +108,14 @@ RECOGNITION	zebrafish	Q7ZVN5	srp54	Q7ZVN5	5	195	Signal recognition particle subu
 RECOGNITION	zebrafish	Q7ZW94	srp9	Q7ZW94	8	189	Signal recognition particle 9 kDa protein	w
 RECOGNITION-LIKE	virus	E9M5I1	RHVP.R2	E9M5I1	3	82	MHC class I-like antigen recognition-like domain-containing 	w
 RECOGNITION-LIKE	virus	E9M5I2	RHVP.R3	E9M5I2	3	81	MHC class I-like antigen recognition-like domain-containing 	w
-RECOGNIZE	human	Q13084	MRPL28	Q13084	20	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
-RECOGNIZED	human	O43290	SART1	O43290	83	501	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSn	w
-RECOGNIZED	human	Q15020	SART3	Q15020	38	449	Spliceosome associated factor 3, U4/U6 recycling protein (Sq	w
-RECOGNIZED	human	Q16655	MLANA	Q16655	60	246	Melanoma antigen recognized by T-cells 1 (MART-1) (Antigen L	w
-RECOGNIZED	human	Q5VTY9	HHAT	Q5VTY9	2	21	Protein-cysteine N-palmitoyltransferase HHAT (EC 2.3.1.-) (H	w
-RECOGNIZED	human	Q9BYX2	TBC1D2	Q9BYX2	102	298	TBC1 domain family member 2A (Armus) (Prostate antigen recog	w
-RECOGNIZED	human	Q9UL01	DSE	Q9UL01	3	34	Dermatan-sulfate epimerase (DS epimerase) (EC 5.1.3.19) (Cho	w
-RECOGNIZES	human	Q9NRD1	FBXO6	Q9NRD1	108	766	F-box only protein 6 (F-box protein that recognizes sugar ch	w
+RECOGNIZE	human	Q13084	MRPL28	Q13084	19	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+RECOGNIZED	human	O43290	SART1	O43290	68	501	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSn	w
+RECOGNIZED	human	Q15020	SART3	Q15020	30	449	Spliceosome associated factor 3, U4/U6 recycling protein (Sq	w
+RECOGNIZED	human	Q16655	MLANA	Q16655	43	246	Melanoma antigen recognized by T-cells 1 (MART-1) (Antigen L	w
+RECOGNIZED	human	Q5VTY9	HHAT	Q5VTY9	1	21	Protein-cysteine N-palmitoyltransferase HHAT (EC 2.3.1.-) (H	w
+RECOGNIZED	human	Q9BYX2	TBC1D2	Q9BYX2	95	298	TBC1 domain family member 2A (Armus) (Prostate antigen recog	w
+RECOGNIZED	human	Q9UL01	DSE	Q9UL01	1	34	Dermatan-sulfate epimerase (DS epimerase) (EC 5.1.3.19) (Cho	w
+RECOGNIZES	human	Q9NRD1	FBXO6	Q9NRD1	89	766	F-box only protein 6 (F-box protein that recognizes sugar ch	w
 RECOMBINASE	fly	FBgn0033389	Rad51D	A1Z7R8	3	62	Rad51 recombinase D	w
 RECOMBINASE	human	Q0VDD7	BRME1	Q0VDD7	3	45	Break repair meiotic recombinase recruitment factor 1 (Pre-T	w
 RECOMBINASE	virus	A0A916P7H4	MYSEV_153	A0A916P7H4	9	301	Tyr recombinase domain-containing protein	w
@@ -125,21 +125,21 @@ RECOMBINATION	fly	FBgn0002989	okr	O76460	2	47	DNA repair and recombination prote
 RECOMBINATION	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
 RECOMBINATION	fly	FBgn0016036	mei-P22	Q9VS36	6	152	Meiotic recombination protein P22	w
 RECOMBINATION	fly	FBgn0031540	Pif1	Q9VQR3	1	22	ATP-dependent DNA helicase PIF1 (EC 3.6.4.12) (DNA repair an	w
-RECOMBINATION	human	O95072	REC8	O95072	20	121	Meiotic recombination protein REC8 homolog (Cohesin Rec8p)	w
-RECOMBINATION	human	P49959	MRE11	P49959	65	430	Double-strand break repair protein MRE11 (EC 3.1.-.-) (Meiot	w
+RECOMBINATION	human	O95072	REC8	O95072	18	121	Meiotic recombination protein REC8 homolog (Cohesin Rec8p)	w
+RECOMBINATION	human	P49959	MRE11	P49959	45	430	Double-strand break repair protein MRE11 (EC 3.1.-.-) (Meiot	w
 RECOMBINATION	human	Q14565	DMC1	Q14565	8	101	Meiotic recombination protein DMC1 homolog (EC 3.6.4.-)	w
-RECOMBINATION	human	Q5T1R4	HIVEP3	Q5T1R4	57	299	Transcription factor HIVEP3 (Human immunodeficiency virus ty	w
-RECOMBINATION	human	Q5T890	ERCC6L2	Q5T890	14	122	DNA excision repair protein ERCC-6-like 2 (EC 3.6.4.-) (DNA 	w
-RECOMBINATION	human	Q6NSI8	SANBR	Q6NSI8	9	26	SANT and BTB domain regulator of class switch recombination 	w
-RECOMBINATION	human	Q7Z4M0	REC114	Q7Z4M0	9	120	Meiotic recombination protein REC114	w
-RECOMBINATION	human	Q86XK3	SFR1	Q86XK3	16	102	Swi5-dependent recombination DNA repair protein 1 homolog (M	w
-RECOMBINATION	human	Q8N3J3	HROB	Q8N3J3	24	74	Homologous recombination OB-fold protein	w
-RECOMBINATION	human	Q92698	RAD54L	Q92698	5	139	DNA repair and recombination protein RAD54-like (EC 3.6.4.-)	w
-RECOMBINATION	human	Q9GZS3	SKIC8	Q9GZS3	54	722	Superkiller complex protein 8 (Ski8) (Meiotic recombination 	w
-RECOMBINATION	human	Q9H611	PIF1	Q9H611	3	38	ATP-dependent DNA helicase PIF1 (EC 5.6.2.3) (DNA 5'-3' heli	w
-RECOMBINATION	human	Q9NSG2	FIRRM	Q9NSG2	9	89	FIGNL1-interacting regulator of recombination and mitosis (F	w
-RECOMBINATION	human	Q9Y5K1	SPO11	Q9Y5K1	3	45	Meiotic recombination protein SPO11 (EC 5.6.2.2) (Cancer/tes	w
-RECOMBINATION	human	Q9Y620	RAD54B	Q9Y620	7	154	DNA repair and recombination protein RAD54B (EC 3.6.4.-) (RA	w
+RECOMBINATION	human	Q5T1R4	HIVEP3	Q5T1R4	40	299	Transcription factor HIVEP3 (Human immunodeficiency virus ty	w
+RECOMBINATION	human	Q5T890	ERCC6L2	Q5T890	7	122	DNA excision repair protein ERCC-6-like 2 (EC 3.6.4.-) (DNA 	w
+RECOMBINATION	human	Q6NSI8	SANBR	Q6NSI8	8	26	SANT and BTB domain regulator of class switch recombination 	w
+RECOMBINATION	human	Q7Z4M0	REC114	Q7Z4M0	7	120	Meiotic recombination protein REC114	w
+RECOMBINATION	human	Q86XK3	SFR1	Q86XK3	15	102	Swi5-dependent recombination DNA repair protein 1 homolog (M	w
+RECOMBINATION	human	Q8N3J3	HROB	Q8N3J3	21	74	Homologous recombination OB-fold protein	w
+RECOMBINATION	human	Q92698	RAD54L	Q92698	3	139	DNA repair and recombination protein RAD54-like (EC 3.6.4.-)	w
+RECOMBINATION	human	Q9GZS3	SKIC8	Q9GZS3	51	722	Superkiller complex protein 8 (Ski8) (Meiotic recombination 	w
+RECOMBINATION	human	Q9H611	PIF1	Q9H611	2	38	ATP-dependent DNA helicase PIF1 (EC 5.6.2.3) (DNA 5'-3' heli	w
+RECOMBINATION	human	Q9NSG2	FIRRM	Q9NSG2	8	89	FIGNL1-interacting regulator of recombination and mitosis (F	w
+RECOMBINATION	human	Q9Y5K1	SPO11	Q9Y5K1	1	45	Meiotic recombination protein SPO11 (EC 5.6.2.2) (Cancer/tes	w
+RECOMBINATION	human	Q9Y620	RAD54B	Q9Y620	6	154	DNA repair and recombination protein RAD54B (EC 3.6.4.-) (RA	w
 RECOMBINATION	worm	G5EEN6	rad-54.l	G5EEN6	1	21	DNA repair and recombination protein RAD54-like	w
 RECOMBINATION	worm	Q22236	spo-11	Q22236	0	5	Meiotic recombination protein spo-11	w
 RECOMBINATION	worm	Q86D18	CELE_F53H4.6	Q86D18	0	39	DNA repair and recombination protein RAD54-like	w
@@ -175,16 +175,16 @@ RECOMBINATION	zebrafish	B7ZD04	sfr1	B7ZD04	3	5	Swi5-dependent recombination DNA 
 RECOMBINATION	zebrafish	E7EXN1	sanbr	E7EXN1	0	5	SANT and BTB domain regulator of class switch recombination	w
 RECOMBINATION	zebrafish	E9QHY4	rad54b	E9QHY4	3	62	DNA repair and recombination protein RAD54B isoform X1	w
 RECOMBINATION	zebrafish	F1Q8K0	rad54l	F1Q8K0	1	62	DNA repair and recombination protein RAD54-like	w
-RECOMBINATION-ACTIVATING	human	P15918	RAG1	P15918	11	286	V(D)J recombination-activating protein 1 (RAG-1) (RING finge	w
-RECOMBINATION-ACTIVATING	human	P55895	RAG2	P55895	12	143	V(D)J recombination-activating protein 2 (RAG-2)	w
+RECOMBINATION-ACTIVATING	human	P15918	RAG1	P15918	10	286	V(D)J recombination-activating protein 1 (RAG-1) (RING finge	w
+RECOMBINATION-ACTIVATING	human	P55895	RAG2	P55895	10	143	V(D)J recombination-activating protein 2 (RAG-2)	w
 RECOMBINATION-ACTIVATING	zebrafish	O13033	rag1	O13033	6	108	V(D)J recombination-activating protein 1	w
 RECOMBINATION-ACTIVATING	zebrafish	O13034	rag2	O13034	2	26	V(D)J recombination-activating protein 2	w
 RECOMBINATION-DEFECTIVE	fly	FBgn0003227	rec	Q9VF30	2	49	DNA replication licensing factor REC (Protein mini chromosom	w
-RECOMBINING	human	Q06330	RBPJ	Q06330	112	821	Recombining binding protein suppressor of hairless (CBF-1) (	w
-RECOMBINING	human	Q9UBG7	RBPJL	Q9UBG7	28	429	Recombining binding protein suppressor of hairless-like prot	w
-RECOVERIN	human	P35243	RCVRN	P35243	13	140	Recoverin (Cancer-associated retinopathy protein) (Protein C	w
+RECOMBINING	human	Q06330	RBPJ	Q06330	99	821	Recombining binding protein suppressor of hairless (CBF-1) (	w
+RECOMBINING	human	Q9UBG7	RBPJL	Q9UBG7	25	429	Recombining binding protein suppressor of hairless-like prot	w
+RECOVERIN	human	P35243	RCVRN	P35243	11	140	Recoverin (Cancer-associated retinopathy protein) (Protein C	w
 RECOVERIN	zebrafish	E7FBI7	rcvrnb	E7FBI7	4	34	Recoverin b	w
 RECOVERIN	zebrafish	Q1LUD3	rcvrn3	Q1LUD3	4	28	Recoverin 3	w
 RECOVERIN	zebrafish	Q4V8S2	rcvrna	Q4V8S2	3	34	Recoverin a	w
 RECOVERIN	zebrafish	Q6PC38	rcvrn2	Q6PC38	4	34	Recoverin	w
-RECO_HUMAN	human	P35243	RCVRN	P35243	13	140		
+RECO_HUMAN	human	P35243	RCVRN	P35243	11	140		

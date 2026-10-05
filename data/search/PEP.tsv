@@ -1,18 +1,18 @@
 PEP	arabidopsis-thaliana	Q9SZH4	PEP	Q9SZH4	1	7	RNA-binding KH domain-containing protein PEPPER	
 PEP	cladophialophora-carrionii	A0A1C1CG88	pep	A0A1C1CG88	5	80	mitochondrial processing peptidase	
 PEP	fly	FBgn0004401	Pep	P41073	11	97	Zinc finger protein on ecdysone puffs	
-PEP	human	P48147	PREP	P48147	24	165		
-PEP-19	human	P48539	PCP4	P48539	58	235	Calmodulin regulator protein PCP4 (Brain-specific polypeptid	w
+PEP	human	P48147	PREP	P48147	16	165		
+PEP-19	human	P48539	PCP4	P48539	29	235	Calmodulin regulator protein PCP4 (Brain-specific polypeptid	w
 PEP1	candida-albicans-237561	A0A1D8PFH5	PEP1	A0A1D8PFH5	3	15	Type I sorting receptor	
 PEP1	cladophialophora-carrionii	A0A1C1CWB2	pep1	A0A1C1CWB2	0	3	Aspartic protease pep1	
 PEP1	cladophialophora-carrionii	A0A1C1D1F0	pep1	A0A1C1D1F0	0	3	Aspartic protease pep1	
 PEP1	zea-mays	P04711	PEP1	P04711	0	2	Phosphoenolpyruvate carboxylase 1	
-PEP11	human	Q9UBQ0	VPS29	Q9UBQ0	16	191	Vacuolar protein sorting-associated protein 29 (hVPS29) (PEP	w
+PEP11	human	Q9UBQ0	VPS29	Q9UBQ0	11	191	Vacuolar protein sorting-associated protein 29 (hVPS29) (PEP	w
 PEP12	candida-albicans-237561	A0A1D8PNI0	PEP12	A0A1D8PNI0	14	34	SNAP receptor	
 PEP12	cladophialophora-carrionii	A0A1C1CT77	pep12	A0A1C1CT77	12	49	Syntaxin pep12	
 PEP12	schizosaccharomyces-pombe	O94651	pep12	O94651	6	36	Syntaxin pep12	
 PEP12	yeast	P32854	PEP12	P32854	6	70	Syntaxin PEP12	
-PEP19	human	P48539	PCP4	P48539	58	235		
+PEP19	human	P48539	PCP4	P48539	29	235		
 PEP2	arabidopsis-thaliana	Q9LV88	PEP2	Q9LV88	1	2	Elicitor peptide 2	
 PEP2	cladophialophora-carrionii	A0A1C1CGR7	pep2	A0A1C1CGR7	0	2	saccharopepsin	
 PEP3	arabidopsis-thaliana	Q8LAX3	PEP3	Q8LAX3	0	2	Elicitor peptide 3	
@@ -49,10 +49,10 @@ PEPB	salmonella-typhimurium	Q9RF52	pepB	Q9RF52	0	7	Peptidase B
 PEPB	shigella-dysenteriae-serotype-1	Q32D41	pepB	Q32D41	0	6	Peptidase B	
 PEPC17	glycine-max	I1LCU6	PEPC17	I1LCU6	0	6	phosphoenolpyruvate carboxylase	
 PEPC4	glycine-max	Q6Q2Z8	PEPC4	Q6Q2Z8	0	6	phosphoenolpyruvate carboxylase	
-PEPCK-C	human	P35558	PCK1	P35558	9	232	Phosphoenolpyruvate carboxykinase, cytosolic [GTP] (PEPCK-C)	w
+PEPCK-C	human	P35558	PCK1	P35558	7	232	Phosphoenolpyruvate carboxykinase, cytosolic [GTP] (PEPCK-C)	w
 PEPCK-M	human	Q16822	PCK2	Q16822	8	137	Phosphoenolpyruvate carboxykinase [GTP], mitochondrial (PEPC	w
 PEPCK1	fly	FBgn0003067	Pepck1	P20007	2	102	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
-PEPCK1	human	P35558	PCK1	P35558	9	232		
+PEPCK1	human	P35558	PCK1	P35558	7	232		
 PEPCK2	fly	FBgn0034356	Pepck2	Q7JXB5	3	100	phosphoenolpyruvate carboxykinase (GTP) (EC 4.1.1.32)	
 PEPCK2	human	Q16822	PCK2	Q16822	8	137		
 PEPC_HUMAN	human	P20142	PGC	P20142	1	40		
@@ -66,13 +66,13 @@ PEPD	shigella-dysenteriae-serotype-1	Q32J20	pepD	Q32J20	0	12	Cytosol non-specifi
 PEPD_HUMAN	human	P12955	PEPD	P12955	3	127		
 PEPE	escherichia-coli-83333	P0A7C6	pepE	P0A7C6	0	3	Peptidase E	
 PEPE	mycobacterium-tuberculosis	P9WHS7	pepE	P9WHS7	0	11	Probable dipeptidase PepE	
-PEPE1	human	O94885	SASH1	O94885	72	186		
+PEPE1	human	O94885	SASH1	O94885	65	186		
 PEPL1_HUMAN	human	Q8NDH3	NPEPL1	Q8NDH3	2	64		
-PEPL_HUMAN	human	O60437	PPL	O60437	69	266		
+PEPL_HUMAN	human	O60437	PPL	O60437	53	266		
 PEPM-1	worm	Q20520	pepm-1	Q20520	0	1	Aminopeptidase N-like N-terminal domain-containing protein	
 PEPN	escherichia-coli-83333	P04825	pepN	P04825	1	29	Aminopeptidase N	
 PEPN	haemophilus-influenzae	P45274	pepN	P45274	0	7	Aminopeptidase N	
-PEPN	human	P15144	ANPEP	P15144	16	215		
+PEPN	human	P15144	ANPEP	P15144	10	215		
 PEPN	mycobacterium-tuberculosis	L7N655	pepN	L7N655	0	12	Aminopeptidase N	
 PEPN	neisseria-gonorrhoeae	Q5FA72	pepN	Q5FA72	0	21	Aminopeptidase N	
 PEPN	pseudomonas-aeruginosa	Q9HZC5	pepN	Q9HZC5	1	30	Aminopeptidase N	
@@ -89,15 +89,15 @@ PEPP	salmonella-typhimurium	Q8ZM72	pepP	Q8ZM72	0	7	Xaa-Pro aminopeptidase
 PEPP	shigella-dysenteriae-serotype-1	Q32BX0	pepP	Q32BX0	0	4	Xaa-Pro aminopeptidase	
 PEPP	streptococcus-pneumoniae	Q8DRE4	pepP	Q8DRE4	0	2	Aminopeptidase P	
 PEPP-1	human	Q8NHV9	RHOXF1	Q8NHV9	65	356	Rhox homeobox family member 1 (Ovary-, testis- and epididymi	w
-PEPP-1	human	Q9H4M7	PLEKHA4	Q9H4M7	841	2959	Pleckstrin homology domain-containing family A member 4 (PH 	w
-PEPP-2	human	Q9BQY4	RHOXF2	Q9BQY4	23	125	Rhox homeobox family member 2 (Paired-like homeobox protein 	w
-PEPP-2	human	Q9HAU0	PLEKHA5	Q9HAU0	111	286	Pleckstrin homology domain-containing family A member 5 (PH 	w
-PEPP-3	human	Q9Y2H5	PLEKHA6	Q9Y2H5	46	138	Pleckstrin homology domain-containing family A member 6 (PH 	w
+PEPP-1	human	Q9H4M7	PLEKHA4	Q9H4M7	693	2959	Pleckstrin homology domain-containing family A member 4 (PH 	w
+PEPP-2	human	Q9BQY4	RHOXF2	Q9BQY4	22	125	Rhox homeobox family member 2 (Paired-like homeobox protein 	w
+PEPP-2	human	Q9HAU0	PLEKHA5	Q9HAU0	87	286	Pleckstrin homology domain-containing family A member 5 (PH 	w
+PEPP-3	human	Q9Y2H5	PLEKHA6	Q9Y2H5	39	138	Pleckstrin homology domain-containing family A member 6 (PH 	w
 PEPP1	human	Q8NHV9	RHOXF1	Q8NHV9	65	356		
-PEPP1	human	Q9H4M7	PLEKHA4	Q9H4M7	841	2959		
-PEPP2	human	Q9BQY4	RHOXF2	Q9BQY4	23	125		
-PEPP2	human	Q9HAU0	PLEKHA5	Q9HAU0	111	286		
-PEPP3	human	Q9Y2H5	PLEKHA6	Q9Y2H5	46	138		
+PEPP1	human	Q9H4M7	PLEKHA4	Q9H4M7	693	2959		
+PEPP2	human	Q9BQY4	RHOXF2	Q9BQY4	22	125		
+PEPP2	human	Q9HAU0	PLEKHA5	Q9HAU0	87	286		
+PEPP3	human	Q9Y2H5	PLEKHA6	Q9Y2H5	39	138		
 PEPQ	escherichia-coli-83333	P21165	pepQ	P21165	0	3	Xaa-Pro dipeptidase	
 PEPQ	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GGM3	pepQ	A0A0H3GGM3	0	73	Xaa-Pro dipeptidase	
 PEPQ	mycobacterium-leprae	Q9CCS1	pepQ	Q9CCS1	0	24	Cytoplasmic peptidase	
@@ -116,9 +116,9 @@ PEPSINOGEN	human	P20142	PGC	P20142	1	40	Gastricsin (EC 3.4.23.3) (Pepsinogen C)	
 PEPSINOGEN-3	human	P0DJD8	PGA3	P0DJD8	0	21	Pepsin A-3 (EC 3.4.23.1) (Pepsinogen-3)	w
 PEPSINOGEN-4	human	P0DJD7	PGA4	P0DJD7	0	22	Pepsin A-4 (EC 3.4.23.1) (Pepsinogen-4)	w
 PEPSINOGEN-5	human	P0DJD9	PGA5	P0DJD9	1	30	Pepsin A-5 (EC 3.4.23.1) (Pepsinogen-5)	w
-PEPSTATIN-INSENSITIVE	human	O14773	TPP1	O14773	7	201	Tripeptidyl-peptidase 1 (TPP-1) (EC 3.4.14.9) (Cell growth-i	w
+PEPSTATIN-INSENSITIVE	human	O14773	TPP1	O14773	5	201	Tripeptidyl-peptidase 1 (TPP-1) (EC 3.4.14.9) (Cell growth-i	w
 PEPT	escherichia-coli-83333	P29745	pepT	P29745	0	5	Peptidase T	
-PEPT	human	P30419	NMT1	P30419	25	190	Glycylpeptide N-tetradecanoyltransferase 1 (EC 2.3.1.97) (My	w
+PEPT	human	P30419	NMT1	P30419	17	190	Glycylpeptide N-tetradecanoyltransferase 1 (EC 2.3.1.97) (My	w
 PEPT	human	P53634	CTSC	P53634	8	235	Dipeptidyl peptidase 1 (EC 3.4.14.1) (Cathepsin C) (Cathepsi	w
 PEPT	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GMX2	pepT	A0A0H3GMX2	0	49	Peptidase T	
 PEPT	salmonella-typhimurium	P26311	pepT	P26311	0	4	Peptidase T	
@@ -131,7 +131,7 @@ PEPT1	human	P46059	SLC15A1	P46059	4	104
 PEPT2	human	Q16348	SLC15A2	Q16348	3	46		
 PEPTI	human	P28838	LAP3	P28838	4	139	Cytosol aminopeptidase (EC 3.4.11.1) (Cysteinylglycine-S-con	w
 PEPTI	human	P42658	DPP6	P42658	5	42	A-type potassium channel modulatory protein DPP6 (DPPX) (Dip	w
-PEPTI	human	Q9GZV9	FGF23	Q9GZV9	32	195	Fibroblast growth factor 23 (FGF-23) (Phosphatonin) (Tumor-d	w
+PEPTI	human	Q9GZV9	FGF23	Q9GZV9	27	195	Fibroblast growth factor 23 (FGF-23) (Phosphatonin) (Tumor-d	w
 PEPTIDASE	fly	FBgn0000455	Dip-C	Q9VG79	3	31	Xaa-Pro dipeptidase (EC 3.4.13.9) (Imidodipeptidase) (Peptid	w
 PEPTIDASE	fly	FBgn0028514	CG4793	Q8IP30	60	236	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0028517	CG18478	Q7KT71	47	243	Peptidase S1 domain-containing protein	w
@@ -237,65 +237,65 @@ PEPTIDASE	human	A0A1B0GTW7	CIROP	A0A1B0GTW7	1	14	Ciliated left-right organizer m
 PEPTIDASE	human	D6RI10	SPINK2	D6RI10	1	22	Serine peptidase inhibitor Kazal type 2	w
 PEPTIDASE	human	H0YIN7	?	H0YIN7	0	4	Peptidase M24 domain-containing protein	w
 PEPTIDASE	human	H0YNG3	SEC11A	H0YNG3	2	44	Signal peptidase complex catalytic subunit SEC11	w
-PEPTIDASE	human	O43692	PI15	O43692	15	98	Peptidase inhibitor 15 (PI-15) (25 kDa trypsin inhibitor) (p	w
-PEPTIDASE	human	O75317	USP12	O75317	19	122	Ubiquitin carboxyl-terminal hydrolase 12 (EC 3.4.19.12) (Deu	w
-PEPTIDASE	human	O75439	PMPCB	O75439	14	405	Mitochondrial-processing peptidase subunit beta (EC 3.4.24.6	w
+PEPTIDASE	human	O43692	PI15	O43692	12	98	Peptidase inhibitor 15 (PI-15) (25 kDa trypsin inhibitor) (p	w
+PEPTIDASE	human	O75317	USP12	O75317	16	122	Ubiquitin carboxyl-terminal hydrolase 12 (EC 3.4.19.12) (Deu	w
+PEPTIDASE	human	O75439	PMPCB	O75439	9	405	Mitochondrial-processing peptidase subunit beta (EC 3.4.24.6	w
 PEPTIDASE	human	O75830	SERPINI2	O75830	1	57	Serpin I2 (Myoepithelium-derived serine protease inhibitor) 	w
-PEPTIDASE	human	P07093	SERPINE2	P07093	22	186	Glia-derived nexin (GDN) (Peptidase inhibitor 7) (PI-7) (Pro	w
+PEPTIDASE	human	P07093	SERPINE2	P07093	16	186	Glia-derived nexin (GDN) (Peptidase inhibitor 7) (PI-7) (Pro	w
 PEPTIDASE	human	P0C7V7	SEC11B	P0C7V7	3	23	Putative signal peptidase complex catalytic subunit SEC11B (	w
-PEPTIDASE	human	P0C870	JMJD7	P0C870	5	55	Bifunctional peptidase and (3S)-lysyl hydroxylase JMJD7 (EC 	w
+PEPTIDASE	human	P0C870	JMJD7	P0C870	1	55	Bifunctional peptidase and (3S)-lysyl hydroxylase JMJD7 (EC 	w
 PEPTIDASE	human	P12955	PEPD	P12955	3	127	Xaa-Pro dipeptidase (X-Pro dipeptidase) (EC 3.4.13.9) (Imido	w
-PEPTIDASE	human	P19957	PI3	P19957	23	158	Elafin (Elastase-specific inhibitor) (ESI) (Peptidase inhibi	w
-PEPTIDASE	human	P27487	DPP4	P27487	58	679	Dipeptidyl peptidase 4 (EC 3.4.14.5) (ADABP) (Adenosine deam	w
-PEPTIDASE	human	P29622	SERPINA4	P29622	35	367	Kallistatin (Kallikrein inhibitor) (Peptidase inhibitor 4) (	w
-PEPTIDASE	human	P30740	SERPINB1	P30740	19	276	Leukocyte elastase inhibitor (LEI) (Monocyte/neutrophil elas	w
-PEPTIDASE	human	P35237	SERPINB6	P35237	9	106	Serpin B6 (Cytoplasmic antiproteinase) (CAP) (Peptidase inhi	w
-PEPTIDASE	human	P36952	SERPINB5	P36952	22	334	Serpin B5 (Maspin) (Peptidase inhibitor 5) (PI-5)	w
-PEPTIDASE	human	P48594	SERPINB4	P48594	10	290	Serpin B4 (Leupin) (Peptidase inhibitor 11) (PI-11) (Squamou	w
+PEPTIDASE	human	P19957	PI3	P19957	17	158	Elafin (Elastase-specific inhibitor) (ESI) (Peptidase inhibi	w
+PEPTIDASE	human	P27487	DPP4	P27487	31	679	Dipeptidyl peptidase 4 (EC 3.4.14.5) (ADABP) (Adenosine deam	w
+PEPTIDASE	human	P29622	SERPINA4	P29622	27	367	Kallistatin (Kallikrein inhibitor) (Peptidase inhibitor 4) (	w
+PEPTIDASE	human	P30740	SERPINB1	P30740	12	276	Leukocyte elastase inhibitor (LEI) (Monocyte/neutrophil elas	w
+PEPTIDASE	human	P35237	SERPINB6	P35237	5	106	Serpin B6 (Cytoplasmic antiproteinase) (CAP) (Peptidase inhi	w
+PEPTIDASE	human	P36952	SERPINB5	P36952	12	334	Serpin B5 (Maspin) (Peptidase inhibitor 5) (PI-5)	w
+PEPTIDASE	human	P48594	SERPINB4	P48594	7	290	Serpin B4 (Leupin) (Peptidase inhibitor 11) (PI-11) (Squamou	w
 PEPTIDASE	human	P48595	SERPINB10	P48595	1	81	Serpin B10 (Bomapin) (Peptidase inhibitor 10) (PI-10)	w
-PEPTIDASE	human	P50452	SERPINB8	P50452	5	136	Serpin B8 (Cytoplasmic antiproteinase 2) (CAP-2) (CAP2) (Pep	w
-PEPTIDASE	human	P50453	SERPINB9	P50453	12	193	Serpin B9 (Cytoplasmic antiproteinase 3) (CAP-3) (CAP3) (Pep	w
-PEPTIDASE	human	P50579	METAP2	P50579	95	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
-PEPTIDASE	human	P53582	METAP1	P53582	52	232	Methionine aminopeptidase 1 (MAP 1) (MetAP 1) (EC 3.4.11.18)	w
+PEPTIDASE	human	P50452	SERPINB8	P50452	4	136	Serpin B8 (Cytoplasmic antiproteinase 2) (CAP-2) (CAP2) (Pep	w
+PEPTIDASE	human	P50453	SERPINB9	P50453	9	193	Serpin B9 (Cytoplasmic antiproteinase 3) (CAP-3) (CAP3) (Pep	w
+PEPTIDASE	human	P50579	METAP2	P50579	85	447	Methionine aminopeptidase 2 (MAP 2) (MetAP 2) (EC 3.4.11.18)	w
+PEPTIDASE	human	P53582	METAP1	P53582	47	232	Methionine aminopeptidase 1 (MAP 1) (MetAP 1) (EC 3.4.11.18)	w
 PEPTIDASE	human	P53634	CTSC	P53634	8	235	Dipeptidyl peptidase 1 (EC 3.4.14.1) (Cathepsin C) (Cathepsi	w
-PEPTIDASE	human	P61009	SPCS3	P61009	14	157	Signal peptidase complex subunit 3 (Microsomal signal peptid	w
-PEPTIDASE	human	P67812	SEC11A	P67812	19	107	Signal peptidase complex catalytic subunit SEC11A (EC 3.4.21	w
-PEPTIDASE	human	Q10713	PMPCA	Q10713	49	379	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
-PEPTIDASE	human	Q12884	FAP	Q12884	26	166	Prolyl endopeptidase FAP (EC 3.4.21.26) (170 kDa melanoma me	w
-PEPTIDASE	human	Q15005	SPCS2	Q15005	20	163	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
-PEPTIDASE	human	Q16740	CLPP	Q16740	33	574	ATP-dependent Clp protease proteolytic subunit, mitochondria	w
-PEPTIDASE	human	Q17RB8	LONRF1	Q17RB8	16	129	LON peptidase N-terminal domain and RING finger protein 1 (R	w
-PEPTIDASE	human	Q1L5Z9	LONRF2	Q1L5Z9	6	67	LON peptidase N-terminal domain and RING finger protein 2 (N	w
-PEPTIDASE	human	Q496Y0	LONRF3	Q496Y0	7	47	LON peptidase N-terminal domain and RING finger protein 3 (R	w
+PEPTIDASE	human	P61009	SPCS3	P61009	13	157	Signal peptidase complex subunit 3 (Microsomal signal peptid	w
+PEPTIDASE	human	P67812	SEC11A	P67812	15	107	Signal peptidase complex catalytic subunit SEC11A (EC 3.4.21	w
+PEPTIDASE	human	Q10713	PMPCA	Q10713	30	379	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
+PEPTIDASE	human	Q12884	FAP	Q12884	20	166	Prolyl endopeptidase FAP (EC 3.4.21.26) (170 kDa melanoma me	w
+PEPTIDASE	human	Q15005	SPCS2	Q15005	18	163	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
+PEPTIDASE	human	Q16740	CLPP	Q16740	30	574	ATP-dependent Clp protease proteolytic subunit, mitochondria	w
+PEPTIDASE	human	Q17RB8	LONRF1	Q17RB8	14	129	LON peptidase N-terminal domain and RING finger protein 1 (R	w
+PEPTIDASE	human	Q1L5Z9	LONRF2	Q1L5Z9	5	67	LON peptidase N-terminal domain and RING finger protein 2 (N	w
+PEPTIDASE	human	Q496Y0	LONRF3	Q496Y0	5	47	LON peptidase N-terminal domain and RING finger protein 3 (R	w
 PEPTIDASE	human	Q6GTS8	PM20D1	Q6GTS8	1	27	N-fatty-acyl-amino acid synthase/hydrolase PM20D1 (EC 3.5.1.	w
-PEPTIDASE	human	Q6ICB0	DESI1	Q6ICB0	32	141	Desumoylating isopeptidase 1 (DeSI-1) (EC 3.4.-.-) (PPPDE pe	w
-PEPTIDASE	human	Q6UB28	METAP1D	Q6UB28	20	64	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	w
+PEPTIDASE	human	Q6ICB0	DESI1	Q6ICB0	26	141	Desumoylating isopeptidase 1 (DeSI-1) (EC 3.4.-.-) (PPPDE pe	w
+PEPTIDASE	human	Q6UB28	METAP1D	Q6UB28	16	64	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	w
 PEPTIDASE	human	Q6UXB8	PI16	Q6UXB8	14	42	Peptidase inhibitor 16 (PI-16) (Cysteine-rich secretory prot	w
-PEPTIDASE	human	Q6UXH9	PAMR1	Q6UXH9	7	74	Inactive serine protease PAMR1 (Peptidase domain-containing 	w
-PEPTIDASE	human	Q6V1X1	DPP8	Q6V1X1	8	64	Dipeptidyl peptidase 8 (DP8) (EC 3.4.14.5) (Dipeptidyl pepti	w
-PEPTIDASE	human	Q70EK8	USP53	Q70EK8	37	196	Ubiquitin carboxyl-terminal hydrolase 53 (EC 3.4.19.12) (Ubi	w
-PEPTIDASE	human	Q70EL1	USP54	Q70EL1	92	318	Ubiquitin carboxyl-terminal hydrolase 54 (EC 3.4.19.12) (Ubi	w
-PEPTIDASE	human	Q70EL3	USP50	Q70EL3	9	94	Ubiquitin carboxyl-terminal hydrolase 50 (EC 3.4.19.12) (Ubi	w
-PEPTIDASE	human	Q7L266	ASRGL1	Q7L266	4	53	Isoaspartyl peptidase/L-asparaginase (EC 3.4.19.5) (EC 3.5.1	w
-PEPTIDASE	human	Q86TI2	DPP9	Q86TI2	10	118	Dipeptidyl peptidase 9 (DP9) (EC 3.4.14.5) (Dipeptidyl pepti	w
-PEPTIDASE	human	Q86UV5	USP48	Q86UV5	13	250	Ubiquitin carboxyl-terminal hydrolase 48 (EC 3.4.19.12) (Deu	w
-PEPTIDASE	human	Q8N371	KDM8	Q8N371	14	231	Bifunctional peptidase and arginyl-hydroxylase JMJD5 (EC 1.1	w
+PEPTIDASE	human	Q6UXH9	PAMR1	Q6UXH9	5	74	Inactive serine protease PAMR1 (Peptidase domain-containing 	w
+PEPTIDASE	human	Q6V1X1	DPP8	Q6V1X1	5	64	Dipeptidyl peptidase 8 (DP8) (EC 3.4.14.5) (Dipeptidyl pepti	w
+PEPTIDASE	human	Q70EK8	USP53	Q70EK8	29	196	Ubiquitin carboxyl-terminal hydrolase 53 (EC 3.4.19.12) (Ubi	w
+PEPTIDASE	human	Q70EL1	USP54	Q70EL1	69	318	Ubiquitin carboxyl-terminal hydrolase 54 (EC 3.4.19.12) (Ubi	w
+PEPTIDASE	human	Q70EL3	USP50	Q70EL3	8	94	Ubiquitin carboxyl-terminal hydrolase 50 (EC 3.4.19.12) (Ubi	w
+PEPTIDASE	human	Q7L266	ASRGL1	Q7L266	3	53	Isoaspartyl peptidase/L-asparaginase (EC 3.4.19.5) (EC 3.5.1	w
+PEPTIDASE	human	Q86TI2	DPP9	Q86TI2	8	118	Dipeptidyl peptidase 9 (DP9) (EC 3.4.14.5) (Dipeptidyl pepti	w
+PEPTIDASE	human	Q86UV5	USP48	Q86UV5	12	250	Ubiquitin carboxyl-terminal hydrolase 48 (EC 3.4.19.12) (Deu	w
+PEPTIDASE	human	Q8N371	KDM8	Q8N371	13	231	Bifunctional peptidase and arginyl-hydroxylase JMJD5 (EC 1.1	w
 PEPTIDASE	human	Q8N608	DPP10	Q8N608	9	75	Inactive dipeptidyl peptidase 10 (Dipeptidyl peptidase IV-re	w
-PEPTIDASE	human	Q8NBH2	KY	Q8NBH2	8	67	Kyphoscoliosis peptidase (EC 3.4.-.-)	w
-PEPTIDASE	human	Q8TCT9	HM13	Q8TCT9	6	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
-PEPTIDASE	human	Q92743	HTRA1	Q92743	9	239	Serine protease HTRA1 (EC 3.4.21.-) (High-temperature requir	w
-PEPTIDASE	human	Q96AP4	ZUP1	Q96AP4	53	306	Zinc finger-containing ubiquitin peptidase 1 (EC 3.4.19.12) 	w
-PEPTIDASE	human	Q96KR4	LMLN	Q96KR4	3	45	Leishmanolysin-like peptidase (EC 3.4.24.-) (Invadolysin)	w
-PEPTIDASE	human	Q96QF7	GCNA	Q96QF7	2	27	Germ cell nuclear acidic protein (Acidic repeat-containing p	w
+PEPTIDASE	human	Q8NBH2	KY	Q8NBH2	6	67	Kyphoscoliosis peptidase (EC 3.4.-.-)	w
+PEPTIDASE	human	Q8TCT9	HM13	Q8TCT9	3	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
+PEPTIDASE	human	Q92743	HTRA1	Q92743	7	239	Serine protease HTRA1 (EC 3.4.21.-) (High-temperature requir	w
+PEPTIDASE	human	Q96AP4	ZUP1	Q96AP4	41	306	Zinc finger-containing ubiquitin peptidase 1 (EC 3.4.19.12) 	w
+PEPTIDASE	human	Q96KR4	LMLN	Q96KR4	1	45	Leishmanolysin-like peptidase (EC 3.4.24.-) (Invadolysin)	w
+PEPTIDASE	human	Q96QF7	GCNA	Q96QF7	1	27	Germ cell nuclear acidic protein (Acidic repeat-containing p	w
 PEPTIDASE	human	Q99574	SERPINI1	Q99574	6	65	Neuroserpin (Peptidase inhibitor 12) (PI-12) (Serpin I1)	w
-PEPTIDASE	human	Q99797	MIPEP	Q99797	20	100	Mitochondrial intermediate peptidase (MIP) (EC 3.4.24.59)	w
-PEPTIDASE	human	Q9BSY9	DESI2	Q9BSY9	4	23	Deubiquitinase DESI2 (EC 3.4.19.12) (Desumoylating isopeptid	w
-PEPTIDASE	human	Q9BY50	SEC11C	Q9BY50	17	86	Signal peptidase complex catalytic subunit SEC11C (EC 3.4.21	w
-PEPTIDASE	human	Q9H3Y0	R3HDML	Q9H3Y0	9	35	Peptidase inhibitor R3HDML (Cysteine-rich secretory protein 	w
-PEPTIDASE	human	Q9NY33	DPP3	Q9NY33	4	116	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
+PEPTIDASE	human	Q99797	MIPEP	Q99797	7	100	Mitochondrial intermediate peptidase (MIP) (EC 3.4.24.59)	w
+PEPTIDASE	human	Q9BSY9	DESI2	Q9BSY9	2	23	Deubiquitinase DESI2 (EC 3.4.19.12) (Desumoylating isopeptid	w
+PEPTIDASE	human	Q9BY50	SEC11C	Q9BY50	16	86	Signal peptidase complex catalytic subunit SEC11C (EC 3.4.21	w
+PEPTIDASE	human	Q9H3Y0	R3HDML	Q9H3Y0	7	35	Peptidase inhibitor R3HDML (Cysteine-rich secretory protein 	w
+PEPTIDASE	human	Q9NY33	DPP3	Q9NY33	3	116	Dipeptidyl peptidase 3 (EC 3.4.14.4) (Dipeptidyl aminopeptid	w
 PEPTIDASE	human	Q9UHL4	DPP7	Q9UHL4	11	127	Dipeptidyl peptidase 2 (EC 3.4.14.2) (Dipeptidyl aminopeptid	w
-PEPTIDASE	human	Q9UIV8	SERPINB13	Q9UIV8	4	166	Serpin B13 (HaCaT UV-repressible serpin) (Hurpin) (Headpin) 	w
-PEPTIDASE	human	Q9Y6A9	SPCS1	Q9Y6A9	24	226	Signal peptidase complex subunit 1 (Microsomal signal peptid	w
+PEPTIDASE	human	Q9UIV8	SERPINB13	Q9UIV8	3	166	Serpin B13 (HaCaT UV-repressible serpin) (Hurpin) (Headpin) 	w
+PEPTIDASE	human	Q9Y6A9	SPCS1	Q9Y6A9	19	226	Signal peptidase complex subunit 1 (Microsomal signal peptid	w
 PEPTIDASE	virus	A0A916KQ30	MYSEV_057	A0A916KQ30	4	301	Peptidase C14 caspase domain-containing protein	w
 PEPTIDASE	virus	A0A916NYF0	MYSEV_091	A0A916NYF0	2	301	Peptidase M10 metallopeptidase domain-containing protein	w
 PEPTIDASE	virus	A0A916P156	CHBEV_051	A0A916P156	3	311	Peptidase M10 metallopeptidase domain-containing protein	w
@@ -418,15 +418,15 @@ PEPTIDASE	zebrafish	Q6DBR1	htra3a	Q6DBR1	0	6	HtrA serine peptidase 3a	w
 PEPTIDASE	zebrafish	Q6DI20	dpp3	Q6DI20	0	7	Dipeptidyl peptidase 3	w
 PEPTIDASE	zebrafish	Q6NWJ2	spcs3	Q6NWJ2	1	6	Signal peptidase complex subunit 3	w
 PEPTIDASE	zebrafish	Q7T141	pi15a	Q7T141	1	1	Peptidase inhibitor 15-A	w
-PEPTIDASE-INTERACTING	human	Q8WWC4	MAIP1	Q8WWC4	11	131	m-AAA protease-interacting protein 1, mitochondrial (Matrix 	w
+PEPTIDASE-INTERACTING	human	Q8WWC4	MAIP1	Q8WWC4	9	131	m-AAA protease-interacting protein 1, mitochondrial (Matrix 	w
 PEPTIDASE-LIKE	fly	FBgn0039381	SppL	Q86P97	8	62	GM06145p (Signal peptide peptidase-like, isoform D (EC 3.4.2	w
-PEPTIDASE-LIKE	human	Q5W0Q7	USPL1	Q5W0Q7	129	543	SUMO-specific isopeptidase USPL1 (EC 3.4.22.-) (Ubiquitin-sp	w
-PEPTIDASE-LIKE	human	Q86TI2	DPP9	Q86TI2	10	118	Dipeptidyl peptidase 9 (DP9) (EC 3.4.14.5) (Dipeptidyl pepti	w
-PEPTIDASE-LIKE	human	Q8IUH8	SPPL2C	Q8IUH8	6	42	Signal peptide peptidase-like 2C (SPP-like 2C) (SPPL2c) (EC 	w
+PEPTIDASE-LIKE	human	Q5W0Q7	USPL1	Q5W0Q7	102	543	SUMO-specific isopeptidase USPL1 (EC 3.4.22.-) (Ubiquitin-sp	w
+PEPTIDASE-LIKE	human	Q86TI2	DPP9	Q86TI2	8	118	Dipeptidyl peptidase 9 (DP9) (EC 3.4.14.5) (Dipeptidyl pepti	w
+PEPTIDASE-LIKE	human	Q8IUH8	SPPL2C	Q8IUH8	4	42	Signal peptide peptidase-like 2C (SPP-like 2C) (SPPL2c) (EC 	w
 PEPTIDASE-LIKE	human	Q8N608	DPP10	Q8N608	9	75	Inactive dipeptidyl peptidase 10 (Dipeptidyl peptidase IV-re	w
-PEPTIDASE-LIKE	human	Q8TCT6	SPPL3	Q8TCT6	59	900	Signal peptide peptidase-like 3 (SPP-like 3) (EC 3.4.23.-) (	w
-PEPTIDASE-LIKE	human	Q8TCT7	SPPL2B	Q8TCT7	29	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
-PEPTIDASE-LIKE	human	Q8TCT8	SPPL2A	Q8TCT8	3	80	Signal peptide peptidase-like 2A (SPP-like 2A) (SPPL2a) (EC 	w
+PEPTIDASE-LIKE	human	Q8TCT6	SPPL3	Q8TCT6	37	900	Signal peptide peptidase-like 3 (SPP-like 3) (EC 3.4.23.-) (	w
+PEPTIDASE-LIKE	human	Q8TCT7	SPPL2B	Q8TCT7	26	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
+PEPTIDASE-LIKE	human	Q8TCT8	SPPL2A	Q8TCT8	2	80	Signal peptide peptidase-like 2A (SPP-like 2A) (SPPL2a) (EC 	w
 PEPTIDE	fly	FBgn0000527	e	Q9VDC6	1	16	Beta-alanyl-bioamine nonribosomal peptide synthetase ebony (	w
 PEPTIDE	fly	FBgn0002855	Acp26Aa	P10333	14	248	Accessory gland-specific peptide 26Aa (Male accessory gland 	w
 PEPTIDE	fly	FBgn0002856	Acp26Ab	P10334	18	257	Accessory gland-specific peptide 26Ab (Male accessory gland 	w
@@ -488,125 +488,125 @@ PEPTIDE	fly	FBgn0283461	Drs	P41964	23	259	Drosomycin (Cysteine-rich peptide)	w
 PEPTIDE	human	A0A0C5B5G6	MT-RNR1	A0A0C5B5G6	109	324	Mitochondrial-derived peptide MOTS-c (Mitochondrial open rea	w
 PEPTIDE	human	C0HLZ6	HOXB-AS3	C0HLZ6	0	2	HOXB-AS3 peptide	w
 PEPTIDE	human	E7ENX8	?	E7ENX8	12	29	ABC-type antigen peptide transporter	w
-PEPTIDE	human	O15240	VGF	O15240	14	100	Neurosecretory protein VGF [Cleaved into: Neuroendocrine reg	w
-PEPTIDE	human	O15263	DEFB4A	O15263	35	239	Defensin beta 4A (Beta-defensin 2) (BD-2) (hBD-2) (Defensin,	w
-PEPTIDE	human	O43866	CD5L	O43866	32	391	CD5 antigen-like (Apoptosis inhibitor expressed by macrophag	w
-PEPTIDE	human	O60551	NMT2	O60551	18	133	Glycylpeptide N-tetradecanoyltransferase 2 (EC 2.3.1.97) (My	w
-PEPTIDE	human	O60575	SPINK4	O60575	26	147	Serine protease inhibitor Kazal-type 4 (Peptide PEC-60 homol	w
-PEPTIDE	human	O75570	MTRF1	O75570	22	325	Peptide chain release factor 1, mitochondrial (MRF-1) (MtRF-	w
-PEPTIDE	human	O95467	GNAS	O95467	42	196	Neuroendocrine secretory protein 55 (NESP55) [Cleaved into: 	w
-PEPTIDE	human	O95838	GLP2R	O95838	18	89	Glucagon-like peptide 2 receptor (GLP-2 receptor) (GLP-2-R) 	w
-PEPTIDE	human	P00734	F2	P00734	92	777	Prothrombin (EC 3.4.21.5) (Coagulation factor II) [Cleaved i	w
-PEPTIDE	human	P01009	SERPINA1	P01009	83	891	Alpha-1-antitrypsin (Alpha-1 protease inhibitor) (Alpha-1-an	w
-PEPTIDE	human	P01137	TGFB1	P01137	49	837	Transforming growth factor beta-1 proprotein [Cleaved into: 	w
-PEPTIDE	human	P01160	NPPA	P01160	56	436	Natriuretic peptides A (Atrial natriuretic factor prohormone	w
-PEPTIDE	human	P01189	POMC	P01189	29	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w
-PEPTIDE	human	P01258	CALCA	P01258	31	184	Calcitonin [Cleaved into: Calcitonin (CT); Katacalcin (Calci	w
-PEPTIDE	human	P01275	GCG	P01275	30	409	Pro-glucagon [Cleaved into: Glicentin; Glicentin-related pol	w
-PEPTIDE	human	P01282	VIP	P01282	44	403	VIP peptides [Cleaved into: Intestinal peptide PHV-42 (Pepti	w
-PEPTIDE	human	P01303	NPY	P01303	63	418	Pro-neuropeptide Y [Cleaved into: Neuropeptide Y (Neuropepti	w
-PEPTIDE	human	P02812	PRB2	P02812	3	69	Basic salivary proline-rich protein 2 (Salivary proline-rich	w
-PEPTIDE	human	P02814	SMR3B	P02814	13	137	Submaxillary gland androgen-regulated protein 3B (Proline-ri	w
-PEPTIDE	human	P04280	PRB1	P04280	29	285	Basic salivary proline-rich protein 1 (Salivary proline-rich	w
+PEPTIDE	human	O15240	VGF	O15240	13	100	Neurosecretory protein VGF [Cleaved into: Neuroendocrine reg	w
+PEPTIDE	human	O15263	DEFB4A	O15263	23	239	Defensin beta 4A (Beta-defensin 2) (BD-2) (hBD-2) (Defensin,	w
+PEPTIDE	human	O43866	CD5L	O43866	24	391	CD5 antigen-like (Apoptosis inhibitor expressed by macrophag	w
+PEPTIDE	human	O60551	NMT2	O60551	16	133	Glycylpeptide N-tetradecanoyltransferase 2 (EC 2.3.1.97) (My	w
+PEPTIDE	human	O60575	SPINK4	O60575	22	147	Serine protease inhibitor Kazal-type 4 (Peptide PEC-60 homol	w
+PEPTIDE	human	O75570	MTRF1	O75570	16	323	Peptide chain release factor 1, mitochondrial (MRF-1) (MtRF-	w
+PEPTIDE	human	O95467	GNAS	O95467	28	196	Neuroendocrine secretory protein 55 (NESP55) [Cleaved into: 	w
+PEPTIDE	human	O95838	GLP2R	O95838	15	89	Glucagon-like peptide 2 receptor (GLP-2 receptor) (GLP-2-R) 	w
+PEPTIDE	human	P00734	F2	P00734	71	777	Prothrombin (EC 3.4.21.5) (Coagulation factor II) [Cleaved i	w
+PEPTIDE	human	P01009	SERPINA1	P01009	67	891	Alpha-1-antitrypsin (Alpha-1 protease inhibitor) (Alpha-1-an	w
+PEPTIDE	human	P01137	TGFB1	P01137	38	837	Transforming growth factor beta-1 proprotein [Cleaved into: 	w
+PEPTIDE	human	P01160	NPPA	P01160	38	436	Natriuretic peptides A (Atrial natriuretic factor prohormone	w
+PEPTIDE	human	P01189	POMC	P01189	21	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w
+PEPTIDE	human	P01258	CALCA	P01258	25	184	Calcitonin [Cleaved into: Calcitonin (CT); Katacalcin (Calci	w
+PEPTIDE	human	P01275	GCG	P01275	24	409	Pro-glucagon [Cleaved into: Glicentin; Glicentin-related pol	w
+PEPTIDE	human	P01282	VIP	P01282	35	403	VIP peptides [Cleaved into: Intestinal peptide PHV-42 (Pepti	w
+PEPTIDE	human	P01303	NPY	P01303	50	418	Pro-neuropeptide Y [Cleaved into: Neuropeptide Y (Neuropepti	w
+PEPTIDE	human	P02812	PRB2	P02812	1	69	Basic salivary proline-rich protein 2 (Salivary proline-rich	w
+PEPTIDE	human	P02814	SMR3B	P02814	6	137	Submaxillary gland androgen-regulated protein 3B (Proline-ri	w
+PEPTIDE	human	P04280	PRB1	P04280	17	285	Basic salivary proline-rich protein 1 (Salivary proline-rich	w
 PEPTIDE	human	P05060	CHGB	P05060	6	90	Secretogranin-1 (Chromogranin-B) (CgB) (Secretogranin I) (Sg	w
-PEPTIDE	human	P05408	SCG5	P05408	7	47	Neuroendocrine protein 7B2 (Pituitary polypeptide) (Secretog	w
-PEPTIDE	human	P06881	CALCA	P06881	160	1114	Calcitonin gene-related peptide 1 (CGRP1) (Alpha-type CGRP) 	w
-PEPTIDE	human	P07492	GRP	P07492	89	427	Gastrin-releasing peptide (GRP) [Cleaved into: Neuromedin-C 	w
-PEPTIDE	human	P10082	PYY	P10082	46	260	Peptide YY (PYY) (PYY-I) (Peptide tyrosine tyrosine) [Cleave	w
-PEPTIDE	human	P10092	CALCB	P10092	11	99	Calcitonin gene-related peptide 2 (CGRP2) (Beta-type CGRP) (	w
-PEPTIDE	human	P10600	TGFB3	P10600	22	214	Transforming growth factor beta-3 proprotein [Cleaved into: 	w
-PEPTIDE	human	P10997	IAPP	P10997	49	266	Islet amyloid polypeptide (IAPP) (Amylin) (Diabetes-associat	w
-PEPTIDE	human	P12872	MLN	P12872	15	134	Promotilin [Cleaved into: Motilin; Motilin-associated peptid	w
-PEPTIDE	human	P15170	GSPT1	P15170	31	327	Eukaryotic peptide chain release factor GTP-binding subunit 	w
-PEPTIDE	human	P15515	HTN1	P15515	29	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
-PEPTIDE	human	P15516	HTN3	P15516	22	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
-PEPTIDE	human	P16066	NPR1	P16066	14	114	Atrial natriuretic peptide receptor 1 (EC 4.6.1.2) (Atrial n	w
-PEPTIDE	human	P16860	NPPB	P16860	37	271	Natriuretic peptides B (Brain natriuretic factor prohormone)	w
-PEPTIDE	human	P17342	NPR3	P17342	23	84	Atrial natriuretic peptide receptor 3 (Atrial natriuretic pe	w
-PEPTIDE	human	P18509	ADCYAP1	P18509	54	407	Pituitary adenylate cyclase-activating polypeptide (PACAP) [	w
-PEPTIDE	human	P20594	NPR2	P20594	15	119	Atrial natriuretic peptide receptor 2 (EC 4.6.1.2) (Atrial n	w
-PEPTIDE	human	P21462	FPR1	P21462	54	375	N-formyl peptide receptor 1 (N-formylpeptide chemoattractant	w
-PEPTIDE	human	P22466	GAL	P22466	72	320	Galanin peptides [Cleaved into: Galanin; Galanin message-ass	w
-PEPTIDE	human	P23582	NPPC	P23582	24	118	C-type natriuretic peptide [Cleaved into: CNP-22; CNP-29; CN	w
-PEPTIDE	human	P25089	FPR3	P25089	24	137	N-formyl peptide receptor 3 (FMLP-related receptor II) (FMLP	w
-PEPTIDE	human	P25090	FPR2	P25090	41	321	N-formyl peptide receptor 2 (FMLP-related receptor I) (FMLP-	w
-PEPTIDE	human	P30550	GRPR	P30550	22	189	Gastrin-releasing peptide receptor (GRP-R) (GRP-preferring b	w
-PEPTIDE	human	P30990	NTS	P30990	38	319	Neurotensin/neuromedin N [Cleaved into: Large neuromedin N (	w
-PEPTIDE	human	P35318	ADM	P35318	40	223	Pro-adrenomedullin [Cleaved into: Adrenomedullin (AM); Proad	w
-PEPTIDE	human	P42166	TMPO	P42166	96	846	Lamina-associated polypeptide 2, isoform alpha (Thymopoietin	w
-PEPTIDE	human	P42167	TMPO	P42167	125	621	Lamina-associated polypeptide 2, isoforms beta/gamma (Thymop	w
-PEPTIDE	human	P42830	CXCL5	P42830	94	526	C-X-C motif chemokine 5 (ENA-78(1-78)) (Epithelial-derived n	w
-PEPTIDE	human	P43220	GLP1R	P43220	25	342	Glucagon-like peptide 1 receptor (GLP-1 receptor) (GLP-1-R) 	w
+PEPTIDE	human	P05408	SCG5	P05408	6	47	Neuroendocrine protein 7B2 (Pituitary polypeptide) (Secretog	w
+PEPTIDE	human	P06881	CALCA	P06881	116	1114	Calcitonin gene-related peptide 1 (CGRP1) (Alpha-type CGRP) 	w
+PEPTIDE	human	P07492	GRP	P07492	60	427	Gastrin-releasing peptide (GRP) [Cleaved into: Neuromedin-C 	w
+PEPTIDE	human	P10082	PYY	P10082	35	260	Peptide YY (PYY) (PYY-I) (Peptide tyrosine tyrosine) [Cleave	w
+PEPTIDE	human	P10092	CALCB	P10092	7	99	Calcitonin gene-related peptide 2 (CGRP2) (Beta-type CGRP) (	w
+PEPTIDE	human	P10600	TGFB3	P10600	20	214	Transforming growth factor beta-3 proprotein [Cleaved into: 	w
+PEPTIDE	human	P10997	IAPP	P10997	34	266	Islet amyloid polypeptide (IAPP) (Amylin) (Diabetes-associat	w
+PEPTIDE	human	P12872	MLN	P12872	7	134	Promotilin [Cleaved into: Motilin; Motilin-associated peptid	w
+PEPTIDE	human	P15170	GSPT1	P15170	24	327	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+PEPTIDE	human	P15515	HTN1	P15515	15	83	Histatin-1 (Hst1) (Histidine-rich protein 1) (Post-PB protei	w
+PEPTIDE	human	P15516	HTN3	P15516	16	92	Histatin-3 (Basic histidine-rich protein) (Hst) (Histatin 3)	w
+PEPTIDE	human	P16066	NPR1	P16066	11	114	Atrial natriuretic peptide receptor 1 (EC 4.6.1.2) (Atrial n	w
+PEPTIDE	human	P16860	NPPB	P16860	27	271	Natriuretic peptides B (Brain natriuretic factor prohormone)	w
+PEPTIDE	human	P17342	NPR3	P17342	14	84	Atrial natriuretic peptide receptor 3 (Atrial natriuretic pe	w
+PEPTIDE	human	P18509	ADCYAP1	P18509	39	407	Pituitary adenylate cyclase-activating polypeptide (PACAP) [	w
+PEPTIDE	human	P20594	NPR2	P20594	14	119	Atrial natriuretic peptide receptor 2 (EC 4.6.1.2) (Atrial n	w
+PEPTIDE	human	P21462	FPR1	P21462	42	375	N-formyl peptide receptor 1 (N-formylpeptide chemoattractant	w
+PEPTIDE	human	P22466	GAL	P22466	49	320	Galanin peptides [Cleaved into: Galanin; Galanin message-ass	w
+PEPTIDE	human	P23582	NPPC	P23582	20	118	C-type natriuretic peptide [Cleaved into: CNP-22; CNP-29; CN	w
+PEPTIDE	human	P25089	FPR3	P25089	15	137	N-formyl peptide receptor 3 (FMLP-related receptor II) (FMLP	w
+PEPTIDE	human	P25090	FPR2	P25090	36	321	N-formyl peptide receptor 2 (FMLP-related receptor I) (FMLP-	w
+PEPTIDE	human	P30550	GRPR	P30550	12	189	Gastrin-releasing peptide receptor (GRP-R) (GRP-preferring b	w
+PEPTIDE	human	P30990	NTS	P30990	28	319	Neurotensin/neuromedin N [Cleaved into: Large neuromedin N (	w
+PEPTIDE	human	P35318	ADM	P35318	24	223	Pro-adrenomedullin [Cleaved into: Adrenomedullin (AM); Proad	w
+PEPTIDE	human	P42166	TMPO	P42166	70	846	Lamina-associated polypeptide 2, isoform alpha (Thymopoietin	w
+PEPTIDE	human	P42167	TMPO	P42167	91	621	Lamina-associated polypeptide 2, isoforms beta/gamma (Thymop	w
+PEPTIDE	human	P42830	CXCL5	P42830	80	526	C-X-C motif chemokine 5 (ENA-78(1-78)) (Epithelial-derived n	w
+PEPTIDE	human	P43220	GLP1R	P43220	23	342	Glucagon-like peptide 1 receptor (GLP-1 receptor) (GLP-1-R) 	w
 PEPTIDE	human	P46059	SLC15A1	P46059	4	104	Solute carrier family 15 member 1 (Intestinal H(+)/peptide c	w
-PEPTIDE	human	P48645	NMU	P48645	48	322	Neuromedin-U (Prepro-NMU) [Cleaved into: Neuromedin precurso	w
-PEPTIDE	human	P49683	PRLHR	P49683	8	90	Prolactin-releasing peptide receptor (PrRP receptor) (PrRPR)	w
-PEPTIDE	human	P49913	CAMP	P49913	66	590	Cathelicidin antimicrobial peptide (18 kDa cationic antimicr	w
+PEPTIDE	human	P48645	NMU	P48645	33	322	Neuromedin-U (Prepro-NMU) [Cleaved into: Neuromedin precurso	w
+PEPTIDE	human	P49683	PRLHR	P49683	6	90	Prolactin-releasing peptide receptor (PrRP receptor) (PrRPR)	w
+PEPTIDE	human	P49913	CAMP	P49913	55	590	Cathelicidin antimicrobial peptide (18 kDa cationic antimicr	w
 PEPTIDE	human	P51460	INSL3	P51460	10	35	Insulin-like 3 (Leydig insulin-like peptide) (Ley-I-L) (Rela	w
-PEPTIDE	human	P53621	COPA	P53621	41	493	Coatomer subunit alpha (Alpha-coat protein) (Alpha-COP) (HEP	w
-PEPTIDE	human	P61812	TGFB2	P61812	25	377	Transforming growth factor beta-2 proprotein (Cetermin) (Gli	w
-PEPTIDE	human	P62328	TMSB4X	P62328	141	1664	Thymosin beta-4 (T beta-4) (Fx) [Cleaved into: Hemoregulator	w
-PEPTIDE	human	P62495	ETF1	P62495	20	304	Eukaryotic peptide chain release factor subunit 1 (Eukaryoti	w
-PEPTIDE	human	P81172	HAMP	P81172	40	210	Hepcidin (Liver-expressed antimicrobial peptide 1) (LEAP-1) 	w
-PEPTIDE	human	P81277	PRLH	P81277	40	130	Prolactin-releasing peptide (PrRP) (Prolactin-releasing horm	w
-PEPTIDE	human	P81605	DCD	P81605	20	268	Dermcidin (EC 3.4.-.-) (Preproteolysin) [Cleaved into: Survi	w
-PEPTIDE	human	P83859	QRFP	P83859	12	141	Orexigenic neuropeptide QRFP (P518) [Cleaved into: QRF-amide	w
-PEPTIDE	human	Q03431	PTH1R	Q03431	31	205	Parathyroid hormone/parathyroid hormone-related peptide rece	w
-PEPTIDE	human	Q03518	TAP1	Q03518	13	270	Antigen peptide transporter 1 (APT1) (EC 7.4.2.14) (ATP-bind	w
-PEPTIDE	human	Q03519	TAP2	Q03519	11	197	Antigen peptide transporter 2 (APT2) (EC 7.4.2.14) (ATP-bind	w
-PEPTIDE	human	Q06141	REG3A	Q06141	21	190	Regenerating islet-derived protein 3-alpha (REG-3-alpha) (He	w
-PEPTIDE	human	Q14641	INSL4	Q14641	1	28	Early placenta insulin-like peptide (EPIL) (Insulin-like pep	w
+PEPTIDE	human	P53621	COPA	P53621	35	493	Coatomer subunit alpha (Alpha-coat protein) (Alpha-COP) (HEP	w
+PEPTIDE	human	P61812	TGFB2	P61812	20	377	Transforming growth factor beta-2 proprotein (Cetermin) (Gli	w
+PEPTIDE	human	P62328	TMSB4X	P62328	99	1664	Thymosin beta-4 (T beta-4) (Fx) [Cleaved into: Hemoregulator	w
+PEPTIDE	human	P62495	ETF1	P62495	18	304	Eukaryotic peptide chain release factor subunit 1 (Eukaryoti	w
+PEPTIDE	human	P81172	HAMP	P81172	23	210	Hepcidin (Liver-expressed antimicrobial peptide 1) (LEAP-1) 	w
+PEPTIDE	human	P81277	PRLH	P81277	28	130	Prolactin-releasing peptide (PrRP) (Prolactin-releasing horm	w
+PEPTIDE	human	P81605	DCD	P81605	14	268	Dermcidin (EC 3.4.-.-) (Preproteolysin) [Cleaved into: Survi	w
+PEPTIDE	human	P83859	QRFP	P83859	9	141	Orexigenic neuropeptide QRFP (P518) [Cleaved into: QRF-amide	w
+PEPTIDE	human	Q03431	PTH1R	Q03431	28	205	Parathyroid hormone/parathyroid hormone-related peptide rece	w
+PEPTIDE	human	Q03518	TAP1	Q03518	12	270	Antigen peptide transporter 1 (APT1) (EC 7.4.2.14) (ATP-bind	w
+PEPTIDE	human	Q03519	TAP2	Q03519	10	197	Antigen peptide transporter 2 (APT2) (EC 7.4.2.14) (ATP-bind	w
+PEPTIDE	human	Q06141	REG3A	Q06141	20	190	Regenerating islet-derived protein 3-alpha (REG-3-alpha) (He	w
+PEPTIDE	human	Q14641	INSL4	Q14641	0	28	Early placenta insulin-like peptide (EPIL) (Insulin-like pep	w
 PEPTIDE	human	Q16348	SLC15A2	Q16348	3	46	Solute carrier family 15 member 2 (Kidney H(+)/peptide cotra	w
-PEPTIDE	human	Q16602	CALCRL	Q16602	23	118	Calcitonin gene-related peptide type 1 receptor (CGRP type 1	w
-PEPTIDE	human	Q16661	GUCA2B	Q16661	14	101	Guanylate cyclase activator 2B [Cleaved into: Guanylate cycl	w
+PEPTIDE	human	Q16602	CALCRL	Q16602	20	118	Calcitonin gene-related peptide type 1 receptor (CGRP type 1	w
+PEPTIDE	human	Q16661	GUCA2B	Q16661	10	101	Guanylate cyclase activator 2B [Cleaved into: Guanylate cycl	w
 PEPTIDE	human	Q16819	MEP1A	Q16819	5	107	Meprin A subunit alpha (EC 3.4.24.18) (Endopeptidase-2) (N-b	w
-PEPTIDE	human	Q16820	MEP1B	Q16820	10	131	Meprin A subunit beta (EC 3.4.24.63) (Endopeptidase-2) (Mepr	w
+PEPTIDE	human	Q16820	MEP1B	Q16820	8	131	Meprin A subunit beta (EC 3.4.24.63) (Endopeptidase-2) (Mepr	w
 PEPTIDE	human	Q5JQD4	PYY3	Q5JQD4	3	7	Putative peptide YY-3 (Putative peptide YY3) (PYY-III)	w
-PEPTIDE	human	Q5JRA6	MIA3	Q5JRA6	68	280	Transport and Golgi organization protein 1 homolog (TANGO1) 	w
+PEPTIDE	human	Q5JRA6	MIA3	Q5JRA6	53	280	Transport and Golgi organization protein 1 homolog (TANGO1) 	w
 PEPTIDE	human	Q6DD87	ZNF787	Q6DD87	41	392	Zinc finger protein 787 (TTF-I-interacting peptide 20)	w
-PEPTIDE	human	Q6UWK7	GPR15LG	Q6UWK7	7	60	Protein GPR15LG (Antimicrobial peptide with 57 amino acid re	w
+PEPTIDE	human	Q6UWK7	GPR15LG	Q6UWK7	2	60	Protein GPR15LG (Antimicrobial peptide with 57 amino acid re	w
 PEPTIDE	human	Q75N90	FBN3	Q75N90	0	16	Fibrillin-3 [Cleaved into: Fibrillin-3 C-terminal peptide]	w
-PEPTIDE	human	Q765I0	UTS2B	Q765I0	55	140	Urotensin-2B (Urotensin II-related peptide) (Urotensin IIB) 	w
-PEPTIDE	human	Q86Y38	XYLT1	Q86Y38	6	40	Xylosyltransferase 1 (EC 2.4.2.26) (Peptide O-xylosyltransfe	w
-PEPTIDE	human	Q8IUH8	SPPL2C	Q8IUH8	6	42	Signal peptide peptidase-like 2C (SPP-like 2C) (SPPL2c) (EC 	w
-PEPTIDE	human	Q8IW00	VSTM4	Q8IW00	17	78	V-set and transmembrane domain-containing protein 4 [Cleaved	w
+PEPTIDE	human	Q765I0	UTS2B	Q765I0	38	140	Urotensin-2B (Urotensin II-related peptide) (Urotensin IIB) 	w
+PEPTIDE	human	Q86Y38	XYLT1	Q86Y38	4	40	Xylosyltransferase 1 (EC 2.4.2.26) (Peptide O-xylosyltransfe	w
+PEPTIDE	human	Q8IUH8	SPPL2C	Q8IUH8	4	42	Signal peptide peptidase-like 2C (SPP-like 2C) (SPPL2c) (EC 	w
+PEPTIDE	human	Q8IW00	VSTM4	Q8IW00	12	78	V-set and transmembrane domain-containing protein 4 [Cleaved	w
 PEPTIDE	human	Q8IWY4	SCUBE1	Q8IWY4	4	33	Signal peptide, CUB and EGF-like domain-containing protein 1	w
 PEPTIDE	human	Q8IX30	SCUBE3	Q8IX30	3	36	Signal peptide, CUB and EGF-like domain-containing protein 3	w
-PEPTIDE	human	Q8IY34	SLC15A3	Q8IY34	11	324	Solute carrier family 15 member 3 (Osteoclast transporter) (	w
-PEPTIDE	human	Q8IYD1	GSPT2	Q8IYD1	25	155	Eukaryotic peptide chain release factor GTP-binding subunit 	w
+PEPTIDE	human	Q8IY34	SLC15A3	Q8IY34	5	324	Solute carrier family 15 member 3 (Osteoclast transporter) (	w
+PEPTIDE	human	Q8IYD1	GSPT2	Q8IYD1	21	155	Eukaryotic peptide chain release factor GTP-binding subunit 	w
 PEPTIDE	human	Q8N697	SLC15A4	Q8N697	4	135	Solute carrier family 15 member 4 (Peptide transporter 4) (P	w
 PEPTIDE	human	Q8NFU4	FDCSP	Q8NFU4	1	63	Follicular dendritic cell secreted peptide (FDC secreted pro	w
-PEPTIDE	human	Q8TCT6	SPPL3	Q8TCT6	59	900	Signal peptide peptidase-like 3 (SPP-like 3) (EC 3.4.23.-) (	w
-PEPTIDE	human	Q8TCT7	SPPL2B	Q8TCT7	29	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
-PEPTIDE	human	Q8TCT8	SPPL2A	Q8TCT8	3	80	Signal peptide peptidase-like 2A (SPP-like 2A) (SPPL2a) (EC 	w
-PEPTIDE	human	Q8TCT9	HM13	Q8TCT9	6	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
-PEPTIDE	human	Q8TDU9	RXFP4	Q8TDU9	17	67	Relaxin-3 receptor 2 (RLN3 receptor 2) (G protein-coupled re	w
-PEPTIDE	human	Q8WWG9	KCNE4	Q8WWG9	19	103	Potassium voltage-gated channel subfamily E member 4 (MinK-r	w
-PEPTIDE	human	Q8WXF3	RLN3	Q8WXF3	14	67	Relaxin-3 (Insulin-like peptide INSL7) (Insulin-like peptide	w
-PEPTIDE	human	Q92847	GHSR	Q92847	30	146	Growth hormone secretagogue receptor type 1 (GHS-R) (GH-rele	w
-PEPTIDE	human	Q969E1	LEAP2	Q969E1	16	91	Liver-expressed antimicrobial peptide 2 (LEAP-2)	w
-PEPTIDE	human	Q96A98	PTH2	Q96A98	8	78	Tuberoinfundibular peptide of 39 residues (TIP39) (Parathyro	w
-PEPTIDE	human	Q96IV0	NGLY1	Q96IV0	17	129	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
-PEPTIDE	human	Q96P65	QRFPR	Q96P65	18	58	Pyroglutamylated RF-amide peptide receptor (AQ27) (G protein	w
-PEPTIDE	human	Q96RP3	UCN2	Q96RP3	6	42	Urocortin-2 (Stresscopin-related peptide) (Urocortin II) (Uc	w
+PEPTIDE	human	Q8TCT6	SPPL3	Q8TCT6	37	900	Signal peptide peptidase-like 3 (SPP-like 3) (EC 3.4.23.-) (	w
+PEPTIDE	human	Q8TCT7	SPPL2B	Q8TCT7	26	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
+PEPTIDE	human	Q8TCT8	SPPL2A	Q8TCT8	2	80	Signal peptide peptidase-like 2A (SPP-like 2A) (SPPL2a) (EC 	w
+PEPTIDE	human	Q8TCT9	HM13	Q8TCT9	3	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
+PEPTIDE	human	Q8TDU9	RXFP4	Q8TDU9	13	67	Relaxin-3 receptor 2 (RLN3 receptor 2) (G protein-coupled re	w
+PEPTIDE	human	Q8WWG9	KCNE4	Q8WWG9	14	103	Potassium voltage-gated channel subfamily E member 4 (MinK-r	w
+PEPTIDE	human	Q8WXF3	RLN3	Q8WXF3	12	67	Relaxin-3 (Insulin-like peptide INSL7) (Insulin-like peptide	w
+PEPTIDE	human	Q92847	GHSR	Q92847	18	146	Growth hormone secretagogue receptor type 1 (GHS-R) (GH-rele	w
+PEPTIDE	human	Q969E1	LEAP2	Q969E1	11	91	Liver-expressed antimicrobial peptide 2 (LEAP-2)	w
+PEPTIDE	human	Q96A98	PTH2	Q96A98	7	78	Tuberoinfundibular peptide of 39 residues (TIP39) (Parathyro	w
+PEPTIDE	human	Q96IV0	NGLY1	Q96IV0	15	129	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
+PEPTIDE	human	Q96P65	QRFPR	Q96P65	14	58	Pyroglutamylated RF-amide peptide receptor (AQ27) (G protein	w
+PEPTIDE	human	Q96RP3	UCN2	Q96RP3	4	42	Urocortin-2 (Stresscopin-related peptide) (Urocortin II) (Uc	w
 PEPTIDE	human	Q99576	TSC22D3	Q99576	42	435	TSC22 domain family protein 3 (DSIP-immunoreactive peptide) 	w
-PEPTIDE	human	Q9GZQ6	NPFFR1	Q9GZQ6	26	111	Neuropeptide FF receptor 1 (G protein-coupled receptor 147) 	w
-PEPTIDE	human	Q9H1B5	XYLT2	Q9H1B5	12	78	Xylosyltransferase 2 (EC 2.4.2.26) (Peptide O-xylosyltransfe	w
-PEPTIDE	human	Q9HBH1	PDF	Q9HBH1	26	205	Peptide deformylase, mitochondrial (EC 3.5.1.88) (Polypeptid	w
-PEPTIDE	human	Q9HBX9	RXFP1	Q9HBX9	29	265	Relaxin receptor 1 (Leucine-rich repeat-containing G protein	w
-PEPTIDE	human	Q9NQ36	SCUBE2	Q9NQ36	5	52	Signal peptide, CUB and EGF-like domain-containing protein 2	w
+PEPTIDE	human	Q9GZQ6	NPFFR1	Q9GZQ6	17	111	Neuropeptide FF receptor 1 (G protein-coupled receptor 147) 	w
+PEPTIDE	human	Q9H1B5	XYLT2	Q9H1B5	10	78	Xylosyltransferase 2 (EC 2.4.2.26) (Peptide O-xylosyltransfe	w
+PEPTIDE	human	Q9HBH1	PDF	Q9HBH1	25	202	Peptide deformylase, mitochondrial (EC 3.5.1.88) (Polypeptid	w
+PEPTIDE	human	Q9HBX9	RXFP1	Q9HBX9	27	265	Relaxin receptor 1 (Leucine-rich repeat-containing G protein	w
+PEPTIDE	human	Q9NQ36	SCUBE2	Q9NQ36	2	52	Signal peptide, CUB and EGF-like domain-containing protein 2	w
 PEPTIDE	human	Q9NQ38	SPINK5	Q9NQ38	7	36	Serine protease inhibitor Kazal-type 5 (Lympho-epithelial Ka	w
 PEPTIDE	human	Q9NRI6	PYY2	Q9NRI6	3	5	Putative peptide YY-2 (Putative peptide YY2)	w
-PEPTIDE	human	Q9NSD7	RXFP3	Q9NSD7	19	58	Relaxin-3 receptor 1 (RLN3 receptor 1) (G protein-coupled re	w
-PEPTIDE	human	Q9UBC7	GALP	Q9UBC7	13	111	Galanin-like peptide	w
-PEPTIDE	human	Q9UBU3	GHRL	Q9UBU3	61	431	Appetite-regulating hormone (Growth hormone secretagogue) (G	w
+PEPTIDE	human	Q9NSD7	RXFP3	Q9NSD7	13	58	Relaxin-3 receptor 1 (RLN3 receptor 1) (G protein-coupled re	w
+PEPTIDE	human	Q9UBC7	GALP	Q9UBC7	9	111	Galanin-like peptide	w
+PEPTIDE	human	Q9UBU3	GHRL	Q9UBU3	41	431	Appetite-regulating hormone (Growth hormone secretagogue) (G	w
 PEPTIDE	human	Q9UEF7	KL	Q9UEF7	10	65	Klotho (EC 3.2.1.31) [Cleaved into: Klotho peptide]	w
-PEPTIDE	human	Q9UGC7	MTRF1L	Q9UGC7	19	310	Peptide chain release factor 1-like, mitochondrial (Mitochon	w
-PEPTIDE	human	Q9UJ68	MSRA	Q9UJ68	9	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
+PEPTIDE	human	Q9UGC7	MTRF1L	Q9UGC7	15	308	Peptide chain release factor 1-like, mitochondrial (Mitochon	w
+PEPTIDE	human	Q9UJ68	MSRA	Q9UJ68	6	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
 PEPTIDE	human	Q9Y215	COLQ	Q9Y215	2	39	Acetylcholinesterase collagenic tail peptide (AChE Q subunit	w
 PEPTIDE	human	Q9Y581	INSL6	Q9Y581	2	42	Insulin-like peptide INSL6 (Insulin-like peptide 6) (Relaxin	w
-PEPTIDE	human	Q9Y5Q6	INSL5	Q9Y5Q6	20	124	Insulin-like peptide INSL5 (Insulin-like peptide 5) [Cleaved	w
-PEPTIDE	human	Q9Y6H6	KCNE3	Q9Y6H6	81	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
-PEPTIDE	human	Q9Y6J6	KCNE2	Q9Y6J6	22	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
+PEPTIDE	human	Q9Y5Q6	INSL5	Q9Y5Q6	16	124	Insulin-like peptide INSL5 (Insulin-like peptide 5) [Cleaved	w
+PEPTIDE	human	Q9Y6H6	KCNE3	Q9Y6H6	56	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
+PEPTIDE	human	Q9Y6J6	KCNE2	Q9Y6J6	17	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
 PEPTIDE	virus	A0A024B7W1_p945a7111bd		A0A024B7W1	0	15	Peptide 2k	w
 PEPTIDE	virus	A0A024B7W1_p983f857481		A0A024B7W1	1	15	Peptide pr	w
 PEPTIDE	virus	A0A0C4PNF2_pe57923fdb7		A0A0C4PNF2	1	13	Peptide pr	w
@@ -801,38 +801,38 @@ PEPTIDE	zebrafish	Q8QGA2	pth2	Q8QGA2	2	14	Tuberoinfundibular peptide of 39 resid
 PEPTIDE	zebrafish	Q9I8P2	pyya	Q9I8P2	9	30	Peptide YY-A	w
 PEPTIDE	zebrafish	Q9PVD3	pth1r	Q9PVD3	7	22	Parathyroid hormone/parathyroid hormone-related peptide rece	w
 PEPTIDE	zebrafish	X1WHY8	si:dkey-42l23.4	X1WHY8	1	13	N-formyl peptide receptor 3	w
-PEPTIDE-1	human	O15240	VGF	O15240	14	100	Neurosecretory protein VGF [Cleaved into: Neuroendocrine reg	w
-PEPTIDE-2	human	O15240	VGF	O15240	14	100	Neurosecretory protein VGF [Cleaved into: Neuroendocrine reg	w
-PEPTIDE-57	human	Q6UWK7	GPR15LG	Q6UWK7	7	60	Protein GPR15LG (Antimicrobial peptide with 57 amino acid re	w
-PEPTIDE-ASPARTATE	human	Q12797	ASPH	Q12797	42	341	Aspartyl/asparaginyl beta-hydroxylase (EC 1.14.11.16) (Aspar	w
-PEPTIDE-ASSOCIATED	human	Q12864	CDH17	Q12864	19	237	Cadherin-17 (Intestinal peptide-associated transporter HPT-1	w
-PEPTIDE-CONTAINING	human	Q5UCC4	EMC10	Q5UCC4	8	64	ER membrane protein complex subunit 10 (Hematopoietic signal	w
+PEPTIDE-1	human	O15240	VGF	O15240	13	100	Neurosecretory protein VGF [Cleaved into: Neuroendocrine reg	w
+PEPTIDE-2	human	O15240	VGF	O15240	13	100	Neurosecretory protein VGF [Cleaved into: Neuroendocrine reg	w
+PEPTIDE-57	human	Q6UWK7	GPR15LG	Q6UWK7	2	60	Protein GPR15LG (Antimicrobial peptide with 57 amino acid re	w
+PEPTIDE-ASPARTATE	human	Q12797	ASPH	Q12797	26	341	Aspartyl/asparaginyl beta-hydroxylase (EC 1.14.11.16) (Aspar	w
+PEPTIDE-ASSOCIATED	human	Q12864	CDH17	Q12864	17	237	Cadherin-17 (Intestinal peptide-associated transporter HPT-1	w
+PEPTIDE-CONTAINING	human	Q5UCC4	EMC10	Q5UCC4	7	64	ER membrane protein complex subunit 10 (Hematopoietic signal	w
 PEPTIDE-CONTAINING	worm	Q18912	CELE_D1005.5	Q18912	0	1	Signal peptide-containing protein	w
-PEPTIDE-CONVERTING	human	Q9Y5Q5	CORIN	Q9Y5Q5	13	73	Atrial natriuretic peptide-converting enzyme (EC 3.4.21.-) (	w
+PEPTIDE-CONVERTING	human	Q9Y5Q5	CORIN	Q9Y5Q5	8	73	Atrial natriuretic peptide-converting enzyme (EC 3.4.21.-) (	w
 PEPTIDE-METHIONINE	fly	FBgn0000565	MsrA	M9PCL6	1	18	peptide-methionine (S)-S-oxide reductase (EC 1.8.4.11) (Pept	w
-PEPTIDE-METHIONINE	human	Q9UJ68	MSRA	Q9UJ68	9	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
+PEPTIDE-METHIONINE	human	Q9UJ68	MSRA	Q9UJ68	6	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
 PEPTIDE-METHIONINE	worm	O02089	msra-1	O02089	1	53	peptide-methionine (S)-S-oxide reductase	w
 PEPTIDE-METHIONINE	zebrafish	A0A8M1P8M4	msrb3	A0A8M1P8M4	3	40	Peptide-methionine (R)-S-oxide reductase	w
 PEPTIDE-N	fly	FBgn0033050	Pngl	Q7KRR5	3	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
-PEPTIDE-N	human	Q96IV0	NGLY1	Q96IV0	17	129	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
+PEPTIDE-N	human	Q96IV0	NGLY1	Q96IV0	15	129	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
 PEPTIDE-N	worm	Q9TW67	png-1	Q9TW67	7	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
 PEPTIDE-N	yeast	Q02890	PNG1	Q02890	2	18	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
 PEPTIDE-N	zebrafish	Q503I8	ngly1	Q503I8	3	27	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
 PEPTIDE-O-FUCOSYLTRANSFERASE	fly	FBgn0027791	Ofut2	Q9W589	0	8	GDP-fucose protein O-fucosyltransferase 2 (EC 2.4.1.221) (Pe	w
 PEPTIDE-O-FUCOSYLTRANSFERASE	fly	FBgn0033901	Ofut1	Q9V6X7	2	13	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Ne	w
 PEPTIDE-O-FUCOSYLTRANSFERASE	human	Q9H488	POFUT1	Q9H488	1	95	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Pe	w
-PEPTIDE-O-FUCOSYLTRANSFERASE	human	Q9Y2G5	POFUT2	Q9Y2G5	2	48	GDP-fucose protein O-fucosyltransferase 2 (EC 2.4.1.221) (Pe	w
+PEPTIDE-O-FUCOSYLTRANSFERASE	human	Q9Y2G5	POFUT2	Q9Y2G5	1	48	GDP-fucose protein O-fucosyltransferase 2 (EC 2.4.1.221) (Pe	w
 PEPTIDE-PROCESSING	fly	FBgn0035065	CG3589	Q9W106	1	18	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
-PEPTIDE-PROCESSING	human	Q2T9J0	TYSND1	Q2T9J0	6	47	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
+PEPTIDE-PROCESSING	human	Q2T9J0	TYSND1	Q2T9J0	5	47	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
 PEPTIDE-PROCESSING	zebrafish	B3DFU6	tysnd1	B3DFU6	0	9	Peroxisomal leader peptide-processing protease	w
-PEPTIDE-RECEPTOR	human	O75575	CRCP	O75575	42	356	DNA-directed RNA polymerase III subunit RPC9 (RNA polymerase	w
+PEPTIDE-RECEPTOR	human	O75575	CRCP	O75575	34	356	DNA-directed RNA polymerase III subunit RPC9 (RNA polymerase	w
 PEPTIDES	fly	FBgn0000715	FMRFa	P10552	16	250	FMRFamide-related peptides [Cleaved into: FMRFamide A; Corti	w
 PEPTIDES	fly	FBgn0010388	Dro	P36193	30	258	Drosocin antimicrobial peptides [Cleaved into: Drosocin; Bul	w
-PEPTIDES	human	O15130	NPFF	O15130	12	139	Pro-FMRFamide-related neuropeptide FF (FMRFamide-related pep	w
-PEPTIDES	human	P01160	NPPA	P01160	56	436	Natriuretic peptides A (Atrial natriuretic factor prohormone	w
-PEPTIDES	human	P01282	VIP	P01282	44	403	VIP peptides [Cleaved into: Intestinal peptide PHV-42 (Pepti	w
-PEPTIDES	human	P16860	NPPB	P16860	37	271	Natriuretic peptides B (Brain natriuretic factor prohormone)	w
-PEPTIDES	human	P22466	GAL	P22466	72	320	Galanin peptides [Cleaved into: Galanin; Galanin message-ass	w
+PEPTIDES	human	O15130	NPFF	O15130	5	139	Pro-FMRFamide-related neuropeptide FF (FMRFamide-related pep	w
+PEPTIDES	human	P01160	NPPA	P01160	38	436	Natriuretic peptides A (Atrial natriuretic factor prohormone	w
+PEPTIDES	human	P01282	VIP	P01282	35	403	VIP peptides [Cleaved into: Intestinal peptide PHV-42 (Pepti	w
+PEPTIDES	human	P16860	NPPB	P16860	27	271	Natriuretic peptides B (Brain natriuretic factor prohormone)	w
+PEPTIDES	human	P22466	GAL	P22466	49	320	Galanin peptides [Cleaved into: Galanin; Galanin message-ass	w
 PEPTIDES	worm	Q9N4D8	nlp-40	Q9N4D8	0	1	Neuropeptide-like peptides nlp-40	w
 PEPTIDES	zebrafish	B8JIU2	vip	B8JIU2	8	31	VIP peptides	w
 PEPTIDES	zebrafish	E7EZ53	gal	E7EZ53	6	44	Galanin peptides	w
@@ -841,15 +841,15 @@ PEPTIDOGLYCAN	fly	FBgn0033388	CG8046	A1Z7R6	0	2	Probable peptidoglycan muropepti
 PEPTIDOGLYCAN	fly	FBgn0037906	PGRP-LB	A0A0B4K741	40	254	Peptidoglycan recognition protein LB, isoform D (EC 3.5.1.28	w
 PEPTIDOGLYCAN	fly	FBgn0043577	PGRP-SB2	M9PFJ1	35	246	Peptidoglycan recognition protein SB2, isoform B (EC 3.5.1.2	w
 PEPTIDOGLYCAN	fly	FBgn0260458	PGRP-LD	B7Z0C3	0	3	Peptidoglycan recognition protein LD, isoform D	w
-PEPTIDOGLYCAN	human	O75594	PGLYRP1	O75594	62	522	Peptidoglycan recognition protein 1 (Peptidoglycan recogniti	w
-PEPTIDOGLYCAN	human	Q96LB8	PGLYRP4	Q96LB8	43	336	Peptidoglycan recognition protein 4 (Peptidoglycan recogniti	w
+PEPTIDOGLYCAN	human	O75594	PGLYRP1	O75594	55	522	Peptidoglycan recognition protein 1 (Peptidoglycan recogniti	w
+PEPTIDOGLYCAN	human	Q96LB8	PGLYRP4	Q96LB8	42	336	Peptidoglycan recognition protein 4 (Peptidoglycan recogniti	w
 PEPTIDOGLYCAN	human	Q96LB9	PGLYRP3	Q96LB9	5	36	Peptidoglycan recognition protein 3 (Peptidoglycan recogniti	w
-PEPTIDOGLYCAN	human	Q96PD5	PGLYRP2	Q96PD5	10	130	N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28) (Peptidogly	w
+PEPTIDOGLYCAN	human	Q96PD5	PGLYRP2	Q96PD5	6	130	N-acetylmuramoyl-L-alanine amidase (EC 3.5.1.28) (Peptidogly	w
 PEPTIDOGLYCAN	zebrafish	A0A0R4IJX9	pglyrp6	A0A0R4IJX9	0	3	Peptidoglycan recognition protein 6	w
-PEPTIDOGLYCAN-BINDING	human	Q5XG99	LYSMD4	Q5XG99	3	20	LysM and putative peptidoglycan-binding domain-containing pr	w
-PEPTIDOGLYCAN-BINDING	human	Q7Z3D4	LYSMD3	Q7Z3D4	16	42	LysM and putative peptidoglycan-binding domain-containing pr	w
-PEPTIDOGLYCAN-BINDING	human	Q8IV50	LYSMD2	Q8IV50	9	39	LysM and putative peptidoglycan-binding domain-containing pr	w
-PEPTIDOGLYCAN-BINDING	human	Q96S90	LYSMD1	Q96S90	9	82	LysM and putative peptidoglycan-binding domain-containing pr	w
+PEPTIDOGLYCAN-BINDING	human	Q5XG99	LYSMD4	Q5XG99	2	20	LysM and putative peptidoglycan-binding domain-containing pr	w
+PEPTIDOGLYCAN-BINDING	human	Q7Z3D4	LYSMD3	Q7Z3D4	10	42	LysM and putative peptidoglycan-binding domain-containing pr	w
+PEPTIDOGLYCAN-BINDING	human	Q8IV50	LYSMD2	Q8IV50	6	39	LysM and putative peptidoglycan-binding domain-containing pr	w
+PEPTIDOGLYCAN-BINDING	human	Q96S90	LYSMD1	Q96S90	8	82	LysM and putative peptidoglycan-binding domain-containing pr	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0030310	PGRP-SA	Q9VYX7	28	263	Peptidoglycan-recognition protein SA (EC 3.4.17.13) (Protein	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0030695	PGRP-LE	Q9VXN9	69	385	Peptidoglycan-recognition protein LE	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0033327	PGRP-SC1b	C0HK98	33	250	Peptidoglycan-recognition protein SC1a (EC 3.5.1.28)	w
@@ -860,17 +860,17 @@ PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0035977	PGRP-LF	Q8SXQ7	2	17	Peptidoglycan-reco
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0043575	PGRP-SC2	Q9V4X2	27	250	Peptidoglycan-recognition protein SC2 (EC 3.5.1.28)	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0043576	PGRP-SC1a	C0HK98	41	247	Peptidoglycan-recognition protein SC1a (EC 3.5.1.28)	w
 PEPTIDOGLYCAN-RECOGNITION	fly	FBgn0043578	PGRP-SB1	Q70PY2	41	248	Peptidoglycan-recognition protein SB1 (EC 3.5.1.28)	w
-PEPTIDY	human	Q13356	PPIL2	Q13356	35	324	RING-type E3 ubiquitin-protein ligase PPIL2 (EC 2.3.2.27) (C	w
+PEPTIDY	human	Q13356	PPIL2	Q13356	27	324	RING-type E3 ubiquitin-protein ligase PPIL2 (EC 2.3.2.27) (C	w
 PEPTIDYL	human	Q6TGC4	PADI6	Q6TGC4	4	53	Inactive protein-arginine deiminase type-6 (Peptidyl arginin	w
-PEPTIDYL-ALPHA-HYDROXYGL	human	P19021	PAM	P19021	10	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
+PEPTIDYL-ALPHA-HYDROXYGL	human	P19021	PAM	P19021	8	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
 PEPTIDYL-ALPHA-HYDROXYGLYCINE	fly	FBgn0262728	Pal2	Q9W1L5	54	247	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 2 (EC 4.	w
 PEPTIDYL-ALPHA-HYDROXYGLYCINE	fly	FBgn0283510	Pal1	Q9V5E1	478	2388	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 1 (EC 4.	w
 PEPTIDYL-ALPHA-HYDROXYGLYCINE	worm	P91268	pgal-1	P91268	0	1	Probable peptidyl-alpha-hydroxyglycine alpha-amidating lyase	w
 PEPTIDYL-C	human	P29475	NOS1	P29475	9	85	Nitric oxide synthase 1 (EC 1.14.13.39) (Constitutive NOS) (	w
-PEPTIDYL-CYSTEINE	human	P04406	GAPDH	P04406	38	1881	Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) (EC 1.2.1.1	w
-PEPTIDYL-CYSTEINE	human	P35228	NOS2	P35228	12	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
-PEPTIDYL-GLUTAMATE	human	P38435	GGCX	P38435	17	117	Vitamin K-dependent gamma-carboxylase (VKGC) (EC 4.1.1.90) (	w
-PEPTIDYL-GLYCINE	human	P19021	PAM	P19021	10	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
+PEPTIDYL-CYSTEINE	human	P04406	GAPDH	P04406	25	1881	Glyceraldehyde-3-phosphate dehydrogenase (GAPDH) (EC 1.2.1.1	w
+PEPTIDYL-CYSTEINE	human	P35228	NOS2	P35228	9	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
+PEPTIDYL-GLUTAMATE	human	P38435	GGCX	P38435	13	117	Vitamin K-dependent gamma-carboxylase (VKGC) (EC 4.1.1.90) (	w
+PEPTIDYL-GLYCINE	human	P19021	PAM	P19021	8	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
 PEPTIDYL-PROLY	fly	FBgn0013954	Fkbp12	P48375	45	321	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
 PEPTIDYL-PROLYL	fly	FBgn0002936	ninaA	P15425	9	69	Peptidyl-prolyl cis-trans isomerase, rhodopsin-specific isoz	w
 PEPTIDYL-PROLYL	fly	FBgn0003401	shu	Q9W1I9	6	24	Inactive peptidyl-prolyl cis-trans isomerase shutdown	w
@@ -888,43 +888,43 @@ PEPTIDYL-PROLYL	fly	FBgn0035141	Cypl	Q9W0Q2	11	94	Peptidyl-prolyl cis-trans isom
 PEPTIDYL-PROLYL	fly	FBgn0036207	CG10907	Q9VTN7	26	134	Spliceosome-associated protein CWC27 homolog (Probable inact	w
 PEPTIDYL-PROLYL	fly	FBgn0036415	CG7768	Q7K2I4	5	73	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	fly	FBgn0039305	CG11858	Q9VBU4	2	8	Peptidyl-prolyl cis-trans isomerase (EC 5.2.1.8)	w
-PEPTIDYL-PROLYL	human	A0A075B759	PPIAL4E	A0A075B759	52	378	Peptidyl-prolyl cis-trans isomerase A-like 4E (PPIase A-like	w
-PEPTIDYL-PROLYL	human	A0A075B767	PPIAL4H	A0A075B767	70	416	Peptidyl-prolyl cis-trans isomerase A-like 4H (PPIase A-like	w
-PEPTIDYL-PROLYL	human	A0A0B4J2A2	PPIAL4C	A0A0B4J2A2	56	337	Peptidyl-prolyl cis-trans isomerase A-like 4C (PPIase A-like	w
-PEPTIDYL-PROLYL	human	F5H284	PPIAL4D	F5H284	68	380	Peptidyl-prolyl cis-trans isomerase A-like 4D (PPIase A-like	w
-PEPTIDYL-PROLYL	human	O43447	PPIH	O43447	39	255	Peptidyl-prolyl cis-trans isomerase H (PPIase H) (EC 5.2.1.8	w
-PEPTIDYL-PROLYL	human	O75344	FKBP6	O75344	38	144	Inactive peptidyl-prolyl cis-trans isomerase FKBP6 (Inactive	w
-PEPTIDYL-PROLYL	human	O95302	FKBP9	O95302	10	98	Peptidyl-prolyl cis-trans isomerase FKBP9 (PPIase FKBP9) (EC	w
+PEPTIDYL-PROLYL	human	A0A075B759	PPIAL4E	A0A075B759	50	378	Peptidyl-prolyl cis-trans isomerase A-like 4E (PPIase A-like	w
+PEPTIDYL-PROLYL	human	A0A075B767	PPIAL4H	A0A075B767	67	415	Peptidyl-prolyl cis-trans isomerase A-like 4H (PPIase A-like	w
+PEPTIDYL-PROLYL	human	A0A0B4J2A2	PPIAL4C	A0A0B4J2A2	55	336	Peptidyl-prolyl cis-trans isomerase A-like 4C (PPIase A-like	w
+PEPTIDYL-PROLYL	human	F5H284	PPIAL4D	F5H284	66	379	Peptidyl-prolyl cis-trans isomerase A-like 4D (PPIase A-like	w
+PEPTIDYL-PROLYL	human	O43447	PPIH	O43447	38	255	Peptidyl-prolyl cis-trans isomerase H (PPIase H) (EC 5.2.1.8	w
+PEPTIDYL-PROLYL	human	O75344	FKBP6	O75344	35	144	Inactive peptidyl-prolyl cis-trans isomerase FKBP6 (Inactive	w
+PEPTIDYL-PROLYL	human	O95302	FKBP9	O95302	4	98	Peptidyl-prolyl cis-trans isomerase FKBP9 (PPIase FKBP9) (EC	w
 PEPTIDYL-PROLYL	human	P0DN26	PPIAL4F	P0DN26	48	370	Peptidyl-prolyl cis-trans isomerase A-like 4F (PPIase A-like	w
 PEPTIDYL-PROLYL	human	P0DN37	PPIAL4G	P0DN37	62	397	Peptidyl-prolyl cis-trans isomerase A-like 4G (PPIase A-like	w
-PEPTIDYL-PROLYL	human	P23284	PPIB	P23284	118	806	Peptidyl-prolyl cis-trans isomerase B (PPIase B) (EC 5.2.1.8	w
-PEPTIDYL-PROLYL	human	P26885	FKBP2	P26885	35	158	Peptidyl-prolyl cis-trans isomerase FKBP2 (PPIase FKBP2) (EC	w
-PEPTIDYL-PROLYL	human	P30405	PPIF	P30405	120	673	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
-PEPTIDYL-PROLYL	human	P30414	NKTR	P30414	52	229	NK-tumor recognition protein (NK-TR protein) (Natural-killer	w
-PEPTIDYL-PROLYL	human	P45877	PPIC	P45877	45	439	Peptidyl-prolyl cis-trans isomerase C (PPIase C) (EC 5.2.1.8	w
-PEPTIDYL-PROLYL	human	P62937	PPIA	P62937	315	1567	Peptidyl-prolyl cis-trans isomerase A (PPIase A) (EC 5.2.1.8	w
-PEPTIDYL-PROLYL	human	P62942	FKBP1A	P62942	41	228	Peptidyl-prolyl cis-trans isomerase FKBP1A (PPIase FKBP1A) (	w
-PEPTIDYL-PROLYL	human	P68106	FKBP1B	P68106	36	209	Peptidyl-prolyl cis-trans isomerase FKBP1B (PPIase FKBP1B) (	w
-PEPTIDYL-PROLYL	human	Q00688	FKBP3	Q00688	35	255	Peptidyl-prolyl cis-trans isomerase FKBP3 (PPIase FKBP3) (EC	w
-PEPTIDYL-PROLYL	human	Q02790	FKBP4	Q02790	42	390	Peptidyl-prolyl cis-trans isomerase FKBP4 (PPIase FKBP4) (EC	w
-PEPTIDYL-PROLYL	human	Q08752	PPID	Q08752	39	221	Peptidyl-prolyl cis-trans isomerase D (PPIase D) (EC 5.2.1.8	w
-PEPTIDYL-PROLYL	human	Q13427	PPIG	Q13427	45	264	Peptidyl-prolyl cis-trans isomerase G (PPIase G) (Peptidyl-p	w
-PEPTIDYL-PROLYL	human	Q13451	FKBP5	Q13451	61	486	Peptidyl-prolyl cis-trans isomerase FKBP5 (PPIase FKBP5) (EC	w
-PEPTIDYL-PROLYL	human	Q13526	PIN1	Q13526	84	483	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 1 (EC 5	w
-PEPTIDYL-PROLYL	human	Q14318	FKBP8	Q14318	117	534	Peptidyl-prolyl cis-trans isomerase FKBP8 (PPIase FKBP8) (EC	w
-PEPTIDYL-PROLYL	human	Q5VVH2	FKBP1C	Q5VVH2	32	187	Peptidyl-prolyl cis-trans isomerase FKBP1C (EC 5.2.1.8)	w
-PEPTIDYL-PROLYL	human	Q6UX04	CWC27	Q6UX04	52	210	Spliceosome-associated protein CWC27 homolog (Antigen NY-CO-	w
-PEPTIDYL-PROLYL	human	Q8IXY8	PPIL6	Q8IXY8	17	92	Probable inactive peptidyl-prolyl cis-trans isomerase-like 6	w
-PEPTIDYL-PROLYL	human	Q8WUA2	PPIL4	Q8WUA2	40	237	Peptidyl-prolyl cis-trans isomerase-like 4 (PPIase) (EC 5.2.	w
-PEPTIDYL-PROLYL	human	Q96AY3	FKBP10	Q96AY3	5	123	Peptidyl-prolyl cis-trans isomerase FKBP10 (PPIase FKBP10) (	w
-PEPTIDYL-PROLYL	human	Q9H2H8	PPIL3	Q9H2H8	28	131	Peptidyl-prolyl cis-trans isomerase-like 3 (PPIase) (EC 5.2.	w
-PEPTIDYL-PROLYL	human	Q9NWM8	FKBP14	Q9NWM8	15	137	Peptidyl-prolyl cis-trans isomerase FKBP14 (PPIase FKBP14) (	w
-PEPTIDYL-PROLYL	human	Q9NYL4	FKBP11	Q9NYL4	12	98	Peptidyl-prolyl cis-trans isomerase FKBP11 (PPIase FKBP11) (	w
-PEPTIDYL-PROLYL	human	Q9UNP9	PPIE	Q9UNP9	40	287	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8	w
-PEPTIDYL-PROLYL	human	Q9Y237	PIN4	Q9Y237	6	99	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 4 (EC 5	w
-PEPTIDYL-PROLYL	human	Q9Y3C6	PPIL1	Q9Y3C6	36	281	Peptidyl-prolyl cis-trans isomerase-like 1 (PPIase) (EC 5.2.	w
-PEPTIDYL-PROLYL	human	Q9Y536	PPIAL4A	Q9Y536	78	449	Peptidyl-prolyl cis-trans isomerase A-like 4A (PPIase A-like	w
-PEPTIDYL-PROLYL	human	Q9Y680	FKBP7	Q9Y680	23	146	Peptidyl-prolyl cis-trans isomerase FKBP7 (PPIase FKBP7) (EC	w
+PEPTIDYL-PROLYL	human	P23284	PPIB	P23284	101	806	Peptidyl-prolyl cis-trans isomerase B (PPIase B) (EC 5.2.1.8	w
+PEPTIDYL-PROLYL	human	P26885	FKBP2	P26885	23	158	Peptidyl-prolyl cis-trans isomerase FKBP2 (PPIase FKBP2) (EC	w
+PEPTIDYL-PROLYL	human	P30405	PPIF	P30405	97	673	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
+PEPTIDYL-PROLYL	human	P30414	NKTR	P30414	39	229	NK-tumor recognition protein (NK-TR protein) (Natural-killer	w
+PEPTIDYL-PROLYL	human	P45877	PPIC	P45877	42	439	Peptidyl-prolyl cis-trans isomerase C (PPIase C) (EC 5.2.1.8	w
+PEPTIDYL-PROLYL	human	P62937	PPIA	P62937	252	1567	Peptidyl-prolyl cis-trans isomerase A (PPIase A) (EC 5.2.1.8	w
+PEPTIDYL-PROLYL	human	P62942	FKBP1A	P62942	33	228	Peptidyl-prolyl cis-trans isomerase FKBP1A (PPIase FKBP1A) (	w
+PEPTIDYL-PROLYL	human	P68106	FKBP1B	P68106	32	209	Peptidyl-prolyl cis-trans isomerase FKBP1B (PPIase FKBP1B) (	w
+PEPTIDYL-PROLYL	human	Q00688	FKBP3	Q00688	28	255	Peptidyl-prolyl cis-trans isomerase FKBP3 (PPIase FKBP3) (EC	w
+PEPTIDYL-PROLYL	human	Q02790	FKBP4	Q02790	34	390	Peptidyl-prolyl cis-trans isomerase FKBP4 (PPIase FKBP4) (EC	w
+PEPTIDYL-PROLYL	human	Q08752	PPID	Q08752	33	221	Peptidyl-prolyl cis-trans isomerase D (PPIase D) (EC 5.2.1.8	w
+PEPTIDYL-PROLYL	human	Q13427	PPIG	Q13427	38	263	Peptidyl-prolyl cis-trans isomerase G (PPIase G) (Peptidyl-p	w
+PEPTIDYL-PROLYL	human	Q13451	FKBP5	Q13451	52	485	Peptidyl-prolyl cis-trans isomerase FKBP5 (PPIase FKBP5) (EC	w
+PEPTIDYL-PROLYL	human	Q13526	PIN1	Q13526	75	483	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 1 (EC 5	w
+PEPTIDYL-PROLYL	human	Q14318	FKBP8	Q14318	96	534	Peptidyl-prolyl cis-trans isomerase FKBP8 (PPIase FKBP8) (EC	w
+PEPTIDYL-PROLYL	human	Q5VVH2	FKBP1C	Q5VVH2	23	187	Peptidyl-prolyl cis-trans isomerase FKBP1C (EC 5.2.1.8)	w
+PEPTIDYL-PROLYL	human	Q6UX04	CWC27	Q6UX04	46	210	Spliceosome-associated protein CWC27 homolog (Antigen NY-CO-	w
+PEPTIDYL-PROLYL	human	Q8IXY8	PPIL6	Q8IXY8	15	92	Probable inactive peptidyl-prolyl cis-trans isomerase-like 6	w
+PEPTIDYL-PROLYL	human	Q8WUA2	PPIL4	Q8WUA2	34	237	Peptidyl-prolyl cis-trans isomerase-like 4 (PPIase) (EC 5.2.	w
+PEPTIDYL-PROLYL	human	Q96AY3	FKBP10	Q96AY3	3	123	Peptidyl-prolyl cis-trans isomerase FKBP10 (PPIase FKBP10) (	w
+PEPTIDYL-PROLYL	human	Q9H2H8	PPIL3	Q9H2H8	25	131	Peptidyl-prolyl cis-trans isomerase-like 3 (PPIase) (EC 5.2.	w
+PEPTIDYL-PROLYL	human	Q9NWM8	FKBP14	Q9NWM8	7	137	Peptidyl-prolyl cis-trans isomerase FKBP14 (PPIase FKBP14) (	w
+PEPTIDYL-PROLYL	human	Q9NYL4	FKBP11	Q9NYL4	10	98	Peptidyl-prolyl cis-trans isomerase FKBP11 (PPIase FKBP11) (	w
+PEPTIDYL-PROLYL	human	Q9UNP9	PPIE	Q9UNP9	33	287	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8	w
+PEPTIDYL-PROLYL	human	Q9Y237	PIN4	Q9Y237	4	99	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 4 (EC 5	w
+PEPTIDYL-PROLYL	human	Q9Y3C6	PPIL1	Q9Y3C6	30	281	Peptidyl-prolyl cis-trans isomerase-like 1 (PPIase) (EC 5.2.	w
+PEPTIDYL-PROLYL	human	Q9Y536	PPIAL4A	Q9Y536	72	449	Peptidyl-prolyl cis-trans isomerase A-like 4A (PPIase A-like	w
+PEPTIDYL-PROLYL	human	Q9Y680	FKBP7	Q9Y680	16	146	Peptidyl-prolyl cis-trans isomerase FKBP7 (PPIase FKBP7) (EC	w
 PEPTIDYL-PROLYL	worm	G5EEW6	sig-7	G5EEW6	4	33	Peptidyl-prolyl cis-trans isomerase sig-7	w
 PEPTIDYL-PROLYL	worm	P52009	cyn-1	P52009	2	59	Peptidyl-prolyl cis-trans isomerase 1	w
 PEPTIDYL-PROLYL	worm	P52010	cyn-2	P52010	1	25	Peptidyl-prolyl cis-trans isomerase 2	w
@@ -969,9 +969,9 @@ PEPTIDYL-TRNA	fly	FBgn0026566	CG1307	O97067	1	28	Probable peptidyl-tRNA hydrolas
 PEPTIDYL-TRNA	fly	FBgn0032261	CG6094	Q9VKU3	13	184	Large ribosomal subunit protein mL62 (EC 3.1.1.29) (Peptidyl	w
 PEPTIDYL-TRNA	fly	FBgn0038107	CG17327	Q9VG06	0	7	peptidyl-tRNA hydrolase (EC 3.1.1.29)	w
 PEPTIDYL-TRNA	fly	FBgn0038446	CG14903	Q9VET3	92	982	peptidyl-tRNA hydrolase (EC 3.1.1.29)	w
-PEPTIDYL-TRNA	human	Q6GMV3	PTRHD1	Q6GMV3	10	78	Putative peptidyl-tRNA hydrolase PTRHD1 (EC 3.1.1.29) (Pepti	w
-PEPTIDYL-TRNA	human	Q86Y79	PTRH1	Q86Y79	9	65	Peptidyl-tRNA hydrolase (PTH) (EC 3.1.1.29)	w
-PEPTIDYL-TRNA	human	Q9Y3E5	PTRH2	Q9Y3E5	14	258	Peptidyl-tRNA hydrolase 2, mitochondrial (PTH 2) (EC 3.1.1.2	w
+PEPTIDYL-TRNA	human	Q6GMV3	PTRHD1	Q6GMV3	9	78	Putative peptidyl-tRNA hydrolase PTRHD1 (EC 3.1.1.29) (Pepti	w
+PEPTIDYL-TRNA	human	Q86Y79	PTRH1	Q86Y79	6	65	Peptidyl-tRNA hydrolase (PTH) (EC 3.1.1.29)	w
+PEPTIDYL-TRNA	human	Q9Y3E5	PTRH2	Q9Y3E5	10	258	Peptidyl-tRNA hydrolase 2, mitochondrial (PTH 2) (EC 3.1.1.2	w
 PEPTIDYL-TRNA	virus	A0A068EGP6	pepv_034	A0A068EGP6	4	240	peptidyl-tRNA hydrolase	w
 PEPTIDYL-TRNA	virus	A0A068EGS2	fep_034	A0A068EGS2	7	221	peptidyl-tRNA hydrolase	w
 PEPTIDYL-TRNA	virus	A0A2H4X245	fgpv_028	A0A2H4X245	6	256	peptidyl-tRNA hydrolase	w
@@ -987,21 +987,21 @@ PEPTIDYL-TRNA	zebrafish	I3ITK3	si:dkey-19e4.5	I3ITK3	0	2	peptidyl-tRNA hydrolase
 PEPTIDYLAMIDOGLYCOLATE	fly	FBgn0262728	Pal2	Q9W1L5	54	247	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 2 (EC 4.	w
 PEPTIDYLAMIDOGLYCOLATE	fly	FBgn0283510	Pal1	Q9V5E1	478	2388	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 1 (EC 4.	w
 PEPTIDYLARGININE	human	Q6TGC4	PADI6	Q6TGC4	4	53	Inactive protein-arginine deiminase type-6 (Peptidyl arginin	w
-PEPTIDYLARGININE	human	Q9ULC6	PADI1	Q9ULC6	33	73	Protein-arginine deiminase type-1 (EC 3.5.3.15) (Peptidylarg	w
-PEPTIDYLARGININE	human	Q9ULW8	PADI3	Q9ULW8	24	87	Protein-arginine deiminase type-3 (EC 3.5.3.15) (Peptidylarg	w
-PEPTIDYLARGININE	human	Q9UM07	PADI4	Q9UM07	51	187	Protein-arginine deiminase type-4 (EC 3.5.3.15) (HL-60 PAD) 	w
-PEPTIDYLARGININE	human	Q9Y2J8	PADI2	Q9Y2J8	9	94	Protein-arginine deiminase type-2 (EC 3.5.3.15) (PAD-H19) (P	w
+PEPTIDYLARGININE	human	Q9ULC6	PADI1	Q9ULC6	31	73	Protein-arginine deiminase type-1 (EC 3.5.3.15) (Peptidylarg	w
+PEPTIDYLARGININE	human	Q9ULW8	PADI3	Q9ULW8	20	87	Protein-arginine deiminase type-3 (EC 3.5.3.15) (Peptidylarg	w
+PEPTIDYLARGININE	human	Q9UM07	PADI4	Q9UM07	39	187	Protein-arginine deiminase type-4 (EC 3.5.3.15) (HL-60 PAD) 	w
+PEPTIDYLARGININE	human	Q9Y2J8	PADI2	Q9Y2J8	8	94	Protein-arginine deiminase type-2 (EC 3.5.3.15) (PAD-H19) (P	w
 PEPTIDYLGLYCINE	fly	FBgn0283509	Phm	O01404	19	256	Peptidylglycine alpha-hydroxylating monooxygenase (dPHM) (EC	w
-PEPTIDYLGLYCINE	human	O75901	RASSF9	O75901	23	73	Ras association domain-containing protein 9 (PAM COOH-termin	w
-PEPTIDYLGLYCINE	human	P19021	PAM	P19021	10	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
+PEPTIDYLGLYCINE	human	O75901	RASSF9	O75901	21	73	Ras association domain-containing protein 9 (PAM COOH-termin	w
+PEPTIDYLGLYCINE	human	P19021	PAM	P19021	8	80	Peptidyl-glycine alpha-amidating monooxygenase (PAM) [Includ	w
 PEPTIDYLPROLYL	fly	FBgn0010470	Fkbp14	A0A0B4K7C5	78	577	peptidylprolyl isomerase (EC 5.2.1.8)	w
 PEPTIDYLPROLYL	fly	FBgn0037930	CG14715	Q9VGK3	92	482	peptidylprolyl isomerase (EC 5.2.1.8)	w
 PEPTIDYLPROLYL	fly	FBgn0039581	Moca-cyp	Q9VAW1	11	90	peptidylprolyl isomerase (EC 5.2.1.8)	w
 PEPTIDYLPROLYL	fly	FBgn0052845	CG32845	Q8IRJ5	0	9	peptidylprolyl isomerase (EC 5.2.1.8)	w
-PEPTIDYLPROLYL	human	O15428	PIN1P1	O15428	5	21	Putative PIN1-like protein (Peptidylprolyl cis-trans isomera	w
+PEPTIDYLPROLYL	human	O15428	PIN1P1	O15428	4	21	Putative PIN1-like protein (Peptidylprolyl cis-trans isomera	w
 PEPTIDYLPROLYL	human	P0DN37	PPIAL4G	P0DN37	62	397	Peptidyl-prolyl cis-trans isomerase A-like 4G (PPIase A-like	w
-PEPTIDYLPROLYL	human	Q96BP3	PPWD1	Q96BP3	22	332	Peptidylprolyl isomerase domain and WD repeat-containing pro	w
-PEPTIDYLPROLYL	human	Q96L50	LRR1	Q96L50	94	579	Leucine-rich repeat protein 1 (4-1BB-mediated-signaling mole	w
+PEPTIDYLPROLYL	human	Q96BP3	PPWD1	Q96BP3	17	332	Peptidylprolyl isomerase domain and WD repeat-containing pro	w
+PEPTIDYLPROLYL	human	Q96L50	LRR1	Q96L50	76	579	Leucine-rich repeat protein 1 (4-1BB-mediated-signaling mole	w
 PEPTIDYLPROLYL	worm	O16309	fkb-3	O16309	0	6	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	worm	O45418	fkb-6	O45418	1	44	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	worm	O61826	fkb-7	O61826	0	8	peptidylprolyl isomerase	w

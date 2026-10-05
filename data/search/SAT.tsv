@@ -8,7 +8,7 @@ SAT1	fly	FBgn0030817	sat1	M9PHT8	0	5	Uncharacterized protein, isoform D
 SAT1	glycine-max	I1N0C4	SAT1	I1N0C4	0	2	serine O-acetyltransferase	
 SAT1	human	P21673	SAT1	P21673	5	175	Diamine acetyltransferase 1 (EC 2.3.1.57) (Polyamine N-acety	
 SAT1	human	Q9H2B4	SLC26A1	Q9H2B4	6	61		
-SAT1	human	Q9H2H9	SLC38A1	Q9H2H9	6	229		
+SAT1	human	Q9H2H9	SLC38A1	Q9H2H9	5	229		
 SAT1	mus-musculus	P48026	Sat1	P48026	1	4	Diamine acetyltransferase 1	
 SAT1	oryza-sativa-subsp-japonica	Q8W0E4	SAT1	Q8W0E4	0	2	Probable serine acetyltransferase 1	
 SAT1	rattus-norvegicus	Q7TP41	Sat1	Q7TP41	2	6	Diamine acetyltransferase 1	
@@ -21,7 +21,7 @@ SAT1_HUMAN	human	P21673	SAT1	P21673	5	175
 SAT2	arabidopsis-thaliana	Q8S895	SAT2	Q8S895	0	1	Serine acetyltransferase 2	
 SAT2	fly	FBgn0030816	sat2	Q9VX84	1	5	FI17861p1	
 SAT2	human	Q96F10	SAT2	Q96F10	3	57	Thialysine N-epsilon-acetyltransferase (EC 2.3.1.-) (Diamine	
-SAT2	human	Q96QD8	SLC38A2	Q96QD8	5	207		
+SAT2	human	Q96QD8	SLC38A2	Q96QD8	2	207		
 SAT2	mus-musculus	Q6P8J2	Sat2	Q6P8J2	1	7	Thialysine N-epsilon-acetyltransferase	
 SAT2	oryza-sativa-subsp-japonica	Q10S58	SAT2	Q10S58	0	2	Probable serine acetyltransferase 2	
 SAT2	rattus-norvegicus	A0ABK0LBE2	Sat2	A0ABK0LBE2	1	7	Spermidine/spermine N1-acetyltransferase family member 2	
@@ -39,27 +39,27 @@ SAT4	yeast	P25333	SAT4	P25333	1	25	Serine/threonine-protein kinase HAL4/SAT4
 SAT5	arabidopsis-thaliana	Q42538	SAT5	Q42538	0	9	Serine acetyltransferase 5	
 SAT5	oryza-sativa-subsp-japonica	Q0DGG8	SAT5	Q0DGG8	0	2	Probable serine acetyltransferase 5	
 SATB	zebrafish	A8WIP9	satb2	A8WIP9	0	7	DNA-binding protein SATB	w
-SATB1	human	Q01826	SATB1	Q01826	40	248	DNA-binding protein SATB1 (Special AT-rich sequence-binding 	
+SATB1	human	Q01826	SATB1	Q01826	33	248	DNA-binding protein SATB1 (Special AT-rich sequence-binding 	
 SATB1	mus-musculus	Q60611	Satb1	Q60611	1	25	DNA-binding protein SATB1	
 SATB1A	zebrafish	Q1LUN2	satb1a	Q1LUN2	0	5	DNA-binding protein SATB1a	w
 SATB1A	zebrafish	Q1LUN2	satb1a	Q1LUN2	0	5	DNA-binding protein SATB1a	w
-SATB1_HUMAN	human	Q01826	SATB1	Q01826	40	248		
-SATB2	human	Q9UPW6	SATB2	Q9UPW6	53	284	DNA-binding protein SATB2 (Special AT-rich sequence-binding 	
+SATB1_HUMAN	human	Q01826	SATB1	Q01826	33	248		
+SATB2	human	Q9UPW6	SATB2	Q9UPW6	43	284	DNA-binding protein SATB2 (Special AT-rich sequence-binding 	
 SATB2	mus-musculus	Q8VI24	Satb2	Q8VI24	6	96	DNA-binding protein SATB2	
 SATB2	rattus-norvegicus	D3ZJ19	Satb2	D3ZJ19	3	14	DNA-binding protein SATB	
 SATB2	zebrafish	A8WIP9	satb2	A8WIP9	0	7	DNA-binding protein SATB	
-SATB2_HUMAN	human	Q9UPW6	SATB2	Q9UPW6	53	284		
-SATELLITE	human	O75665	OFD1	O75665	99	405	Centriole and centriolar satellite protein OFD1 (Oral-facial	w
+SATB2_HUMAN	human	Q9UPW6	SATB2	Q9UPW6	43	284		
+SATELLITE	human	O75665	OFD1	O75665	89	405	Centriole and centriolar satellite protein OFD1 (Oral-facial	w
 SATELLITE	zebrafish	Q7SZK7	ofd1	Q7SZK7	5	14	Centriole and centriolar satellite protein ofd1	w
-SATELLITE-ASSOCIATED	human	Q8IUZ0	LRRC49	Q8IUZ0	25	162	Leucine-rich repeat-containing protein 49 (Centriolar satell	w
+SATELLITE-ASSOCIATED	human	Q8IUZ0	LRRC49	Q8IUZ0	19	162	Leucine-rich repeat-containing protein 49 (Centriolar satell	w
 SATELLITE-ASSOCIATED	human	Q9H6J7	CSTPP1	Q9H6J7	13	123	Centriolar satellite-associated tubulin polyglutamylase comp	w
 SATELLITE-ASSOCIATED	zebrafish	Q6DGK9	cstpp1	Q6DGK9	1	5	Centriolar satellite-associated tubulin polyglutamylase comp	w
 SATL1	human	Q86VE3	SATL1	Q86VE3	3	45	Spermidine/spermine N(1)-acetyltransferase-like protein 1 (E	
 SATL1	mus-musculus	Q9D5N8	Satl1	Q9D5N8	0	1	Spermidine/spermine N(1)-acetyltransferase-like protein 1	
 SATL1	rattus-norvegicus	D3ZA19	Satl1	D3ZA19	0	1	Spermidine/spermine N1-acetyl transferase-like 1	
 SATL1_HUMAN	human	Q86VE3	SATL1	Q86VE3	3	45		
-SATT	human	P43007	SLC1A4	P43007	8	83		
-SATT_HUMAN	human	P43007	SLC1A4	P43007	8	83		
-SATURASE	human	Q6NUM9	RETSAT	Q6NUM9	9	198	All-trans-retinol 13,14-reductase (EC 1.3.99.23) (All-trans-	w
+SATT	human	P43007	SLC1A4	P43007	7	83		
+SATT_HUMAN	human	P43007	SLC1A4	P43007	7	83		
+SATURASE	human	Q6NUM9	RETSAT	Q6NUM9	6	198	All-trans-retinol 13,14-reductase (EC 1.3.99.23) (All-trans-	w
 SATURN	fly	FBgn0052141	saturn	Q8IQL2	1	16	MIP30042p (Saturn)	w
 SATURN	fly	FBgn0052141	saturn	Q8IQL2	1	16	MIP30042p (Saturn)	w

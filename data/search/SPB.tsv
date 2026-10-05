@@ -7,20 +7,20 @@ SPB1	yeast	P25582	SPB1	P25582	17	154	27S pre-rRNA (guanosine(2922)-2'-O)-methylt
 SPB10_HUMAN	human	P48595	SERPINB10	P48595	1	81		
 SPB11_HUMAN	human	Q96P15	SERPINB11	Q96P15	1	45		
 SPB12_HUMAN	human	Q96P63	SERPINB12	Q96P63	11	213		
-SPB13_HUMAN	human	Q9UIV8	SERPINB13	Q9UIV8	4	166		
-SPB1_HUMAN	human	Q8IY81	FTSJ3	Q8IY81	120	616		
-SPB3_HUMAN	human	P29508	SERPINB3	P29508	6	312		
+SPB13_HUMAN	human	Q9UIV8	SERPINB13	Q9UIV8	3	166		
+SPB1_HUMAN	human	Q8IY81	FTSJ3	Q8IY81	103	616		
+SPB3_HUMAN	human	P29508	SERPINB3	P29508	4	312		
 SPB4	candida-albicans-237561	Q59N29	SPB4	Q59N29	2	49	ATP-dependent rRNA helicase SPB4	
 SPB4	cladophialophora-carrionii	A0A1C1CF70	spb4	A0A1C1CF70	8	84	ATP-dependent RNA helicase	
 SPB4	schizosaccharomyces-pombe	O74764	spb4	O74764	1	36	ATP-dependent rRNA helicase spb4	
 SPB4	yeast	P25808	SPB4	P25808	4	453	ATP-dependent rRNA helicase SPB4	
-SPB4_HUMAN	human	P48594	SERPINB4	P48594	10	290		
-SPB5_HUMAN	human	P36952	SERPINB5	P36952	22	334		
-SPB6_HUMAN	human	P35237	SERPINB6	P35237	9	106		
+SPB4_HUMAN	human	P48594	SERPINB4	P48594	7	290		
+SPB5_HUMAN	human	P36952	SERPINB5	P36952	12	334		
+SPB6_HUMAN	human	P35237	SERPINB6	P35237	5	106		
 SPB70	schizosaccharomyces-pombe	O74946	spb70	O74946	3	30	DNA polymerase alpha subunit B	
-SPB7_HUMAN	human	O75635	SERPINB7	O75635	16	172		
-SPB8_HUMAN	human	P50452	SERPINB8	P50452	5	136		
-SPB9_HUMAN	human	P50453	SERPINB9	P50453	12	193		
+SPB7_HUMAN	human	O75635	SERPINB7	O75635	7	172		
+SPB8_HUMAN	human	P50452	SERPINB8	P50452	4	136		
+SPB9_HUMAN	human	P50453	SERPINB9	P50453	9	193		
 SPBC106.03	schizosaccharomyces-pombe	Q9URV8	SPBC106.03	Q9URV8	0	2	UPF0744 protein C106.03	
 SPBC106.12C	schizosaccharomyces-pombe	Q9URV0	SPBC106.12c	Q9URV0	6	29	Uncharacterized RNA-binding protein C106.12c	
 SPBC106.19	schizosaccharomyces-pombe	Q10340	SPBC106.19	Q10340	0	4	Uncharacterized protein C106.19	
@@ -188,11 +188,11 @@ SPBC21H7.03C	schizosaccharomyces-pombe	O60172	SPBC21H7.03c	O60172	1	6	Thiamine-r
 SPBC21H7.06C	schizosaccharomyces-pombe	O60175	SPBC21H7.06c	O60175	0	2	Protein OPI10 homolog	
 SPBC23E6.01C	schizosaccharomyces-pombe	O60176	SPBC23E6.01c	O60176	0	39	Uncharacterized RNA-binding protein C23E6.01c	
 SPBC23E6.02	schizosaccharomyces-pombe	O60177	SPBC23E6.02	O60177	0	14	Uncharacterized ATP-dependent helicase C23E6.02	
-SPBC24	human	Q8NBT2	SPC24	Q8NBT2	32	229		
+SPBC24	human	Q8NBT2	SPC24	Q8NBT2	27	229		
 SPBC24C6.03	schizosaccharomyces-pombe	O74765	SPBC24C6.03	O74765	1	27	Probable proline--tRNA ligase, mitochondrial	
 SPBC24C6.04	schizosaccharomyces-pombe	O74766	SPBC24C6.04	O74766	0	1	Probable delta-1-pyrroline-5-carboxylate dehydrogenase	
 SPBC24C6.09C	schizosaccharomyces-pombe	O74770	SPBC24C6.09c	O74770	1	1	Probable phosphoketolase	
-SPBC25	human	Q9HBM1	SPC25	Q9HBM1	56	357		
+SPBC25	human	Q9HBM1	SPC25	Q9HBM1	52	357		
 SPBC25B2.08	schizosaccharomyces-pombe	O74780	SPBC25B2.08	O74780	0	1	Uncharacterized protein C25B2.08	
 SPBC25B2.10	schizosaccharomyces-pombe	O74782	SPBC25B2.10	O74782	0	9	Universal stress protein A family protein C25B2.10	
 SPBC25H2.03	schizosaccharomyces-pombe	P87145	SPBC25H2.03	P87145	1	10	Protein VAC14 homolog	
@@ -356,7 +356,7 @@ SPBC9B6.07	schizosaccharomyces-pombe	Q9Y7M6	SPBC9B6.07	Q9Y7M6	6	82	Ribosomal RNA
 SPBC9B6.11C	schizosaccharomyces-pombe	Q9Y7M8	SPBC9B6.11c	Q9Y7M8	0	2	Probable RNA exonuclease C9B6.11c	
 SPBCPT2R1.01C	schizosaccharomyces-pombe	P0CS87	SPBCPT2R1.01c	P0CS87	0	2	UPF0494 membrane protein CPT2R1.01c	
 SPBCPT2R1.04C	schizosaccharomyces-pombe	P0CT99	SPBCPT2R1.04c	P0CT99	0	1	UPF0494 membrane protein SPBCPT2R1.04c	
-SPBP	human	Q9UGU0	TCF20	Q9UGU0	85	361		
+SPBP	human	Q9UGU0	TCF20	Q9UGU0	63	361		
 SPBP16F5.05C	schizosaccharomyces-pombe	Q9HFE7	SPBP16F5.05c	Q9HFE7	0	15	Ankyrin repeat-containing protein P16F5.05c	
 SPBP16F5.06	schizosaccharomyces-pombe	Q9HFE6	SPBP16F5.06	Q9HFE6	0	1	Uncharacterized RNA-binding protein P16F5.06	
 SPBP23A10.03C	schizosaccharomyces-pombe	Q9P7Y2	SPBP23A10.03c	Q9P7Y2	0	3	Succinate dehydrogenase assembly factor 3, mitochondrial	

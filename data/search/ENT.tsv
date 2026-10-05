@@ -1,7 +1,7 @@
 ENT-2	worm	Q93871	ent-2	Q93871	0	1	Equilibrative nucleoside transporter 3	
 ENT-5	worm	Q19495	ent-5	Q19495	0	4	Equilibrative nucleoside transporter 1	
 ENT1	fly	FBgn0031250	Ent1	Q9VPP0	1	19	Equilibrative nucleoside transporter 1, isoform A (Equilibra	
-ENT1	human	Q99808	SLC29A1	Q99808	10	214		
+ENT1	human	Q99808	SLC29A1	Q99808	8	214		
 ENT1	schizosaccharomyces-pombe	O74423	ent1	O74423	3	20	Epsin-1	
 ENT1	yeast	Q12518	ENT1	Q12518	2	37	Epsin-1	
 ENT2	candida-albicans-237561	A0A1D8PGB7	ENT2	A0A1D8PGB7	3	29	Epsin	
@@ -12,14 +12,14 @@ ENT3	candida-albicans-237561	A0A1D8PGL6	ENT3	A0A1D8PGL6	6	26	Ent3p
 ENT3	fly	FBgn0036319	Ent3	Q9VU20	0	2	Equilibrative nucleoside transporter 3, isoform A (Equilibra	
 ENT3	human	Q9BZD2	SLC29A3	Q9BZD2	1	49		
 ENT3	yeast	P47160	ENT3	P47160	8	78	Epsin-3	
-ENT4	human	Q7RTT9	SLC29A4	Q7RTT9	5	51		
+ENT4	human	Q7RTT9	SLC29A4	Q7RTT9	3	51		
 ENT4	yeast	Q07872	ENT4	Q07872	1	11	Epsin-4	
 ENT5	yeast	Q03769	ENT5	Q03769	4	73	Epsin-5	
 ENTA	escherichia-coli-83333	P15047	entA	P15047	0	32	2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase	
 ENTA	salmonella-typhimurium	Q8ZR30	entA	Q8ZR30	0	38	2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase	
 ENTA	shigella-dysenteriae-serotype-1	Q32IX3	entA	Q32IX3	0	41	2,3-dihydro-2,3-dihydroxybenzoate dehydrogenase	
 ENTACTIN	fly	FBgn0026403	Ndg	A1Z877	1	20	Nidogen (Entactin)	w
-ENTACTIN	human	P14543	NID1	P14543	30	229	Nidogen-1 (NID-1) (Entactin)	w
+ENTACTIN	human	P14543	NID1	P14543	22	229	Nidogen-1 (NID-1) (Entactin)	w
 ENTB	escherichia-coli-83333	P0ADI4	entB	P0ADI4	1	17	Enterobactin synthase component B	
 ENTB	salmonella-typhimurium	Q8ZR31	entB	Q8ZR31	4	34	Enterobactin synthase component B	
 ENTB	shigella-dysenteriae-serotype-1	Q32IX4	entB	Q32IX4	2	30	Enterobactin synthase component B	
@@ -30,103 +30,103 @@ ENTC	shigella-dysenteriae-serotype-1	Q32IX6	entC	Q32IX6	0	2	Isochorismate syntha
 ENTD	escherichia-coli-83333	P19925	entD	P19925	1	3	Enterobactin synthase component D	
 ENTD	salmonella-typhimurium	Q56064	entD	Q56064	2	3	Enterobactin synthase component D	
 ENTD	shigella-dysenteriae-serotype-1	Q32IY9	entD	Q32IY9	1	3	Enterobactin synthase component D	
-ENTD1_HUMAN	human	Q8IYW4	ENTHD1	Q8IYW4	9	75		
+ENTD1_HUMAN	human	Q8IYW4	ENTHD1	Q8IYW4	8	75		
 ENTE	escherichia-coli-83333	P10378	entE	P10378	0	10	Enterobactin synthase component E	
 ENTE	salmonella-typhimurium	Q8ZR32	entE	Q8ZR32	1	6	2,3-dihydroxybenzoate-AMP ligase	
 ENTE	shigella-dysenteriae-serotype-1	Q32IX5	entE	Q32IX5	0	12	Enterobactin synthase component E	
-ENTEROCYTE	human	Q15819	UBE2V2	Q15819	19	244	Ubiquitin-conjugating enzyme E2 variant 2 (DDVit 1) (Enteroc	w
-ENTEROKINASE	human	P98073	TMPRSS15	P98073	14	77	Enteropeptidase (EC 3.4.21.9) (Enterokinase) (Serine proteas	w
-ENTEROPATHY-RELATED	human	Q9Y6N9	USH1C	Q9Y6N9	9	31	Harmonin (Antigen NY-CO-38/NY-CO-37) (Autoimmune enteropathy	w
-ENTEROPEPTIDASE	human	P98073	TMPRSS15	P98073	14	77	Enteropeptidase (EC 3.4.21.9) (Enterokinase) (Serine proteas	w
+ENTEROCYTE	human	Q15819	UBE2V2	Q15819	18	244	Ubiquitin-conjugating enzyme E2 variant 2 (DDVit 1) (Enteroc	w
+ENTEROKINASE	human	P98073	TMPRSS15	P98073	11	77	Enteropeptidase (EC 3.4.21.9) (Enterokinase) (Serine proteas	w
+ENTEROPATHY-RELATED	human	Q9Y6N9	USH1C	Q9Y6N9	8	31	Harmonin (Antigen NY-CO-38/NY-CO-37) (Autoimmune enteropathy	w
+ENTEROPEPTIDASE	human	P98073	TMPRSS15	P98073	11	77	Enteropeptidase (EC 3.4.21.9) (Enterokinase) (Serine proteas	w
 ENTEROPEPTIDASE	zebrafish	A0AB32TAA8	tmprss15	A0AB32TAA8	0	7	Enteropeptidase isoform X1	w
-ENTEROTOXIN	human	O14493	CLDN4	O14493	31	282	Claudin-4 (Clostridium perfringens enterotoxin receptor) (CP	w
-ENTEROTOXIN	human	O15551	CLDN3	O15551	28	228	Claudin-3 (Clostridium perfringens enterotoxin receptor 2) (	w
-ENTEROTOXIN	human	P25092	GUCY2C	P25092	8	78	Guanylyl cyclase C (GC-C) (EC 4.6.1.2) (Heat-stable enteroto	w
+ENTEROTOXIN	human	O14493	CLDN4	O14493	26	282	Claudin-4 (Clostridium perfringens enterotoxin receptor) (CP	w
+ENTEROTOXIN	human	O15551	CLDN3	O15551	22	228	Claudin-3 (Clostridium perfringens enterotoxin receptor 2) (	w
+ENTEROTOXIN	human	P25092	GUCY2C	P25092	7	78	Guanylyl cyclase C (GC-C) (EC 4.6.1.2) (Heat-stable enteroto	w
 ENTF	escherichia-coli-83333	P11454	entF	P11454	2	49	Enterobactin synthase component F	
 ENTF	salmonella-typhimurium	Q8ZR37	entF	Q8ZR37	3	50	Enterobactin synthetase, component F (Nonribosomal peptide s	
 ENTF	shigella-dysenteriae-serotype-1	Q32IY5	entF	Q32IY5	2	53	Enterobactin synthase component F	
 ENTH	escherichia-coli-83333	P0A8Y8	entH	P0A8Y8	0	1	Proofreading thioesterase EntH	
-ENTH	human	Q14677	CLINT1	Q14677	40	257		
-ENTH	human	Q8IYW4	ENTHD1	Q8IYW4	9	75	ENTH domain-containing protein 1 (Epsin-2B)	w
-ENTH	human	Q96N21	TEPSIN	Q96N21	38	184	AP-4 complex accessory subunit Tepsin (ENTH domain-containin	w
+ENTH	human	Q14677	CLINT1	Q14677	36	257		
+ENTH	human	Q8IYW4	ENTHD1	Q8IYW4	8	75	ENTH domain-containing protein 1 (Epsin-2B)	w
+ENTH	human	Q96N21	TEPSIN	Q96N21	30	184	AP-4 complex accessory subunit Tepsin (ENTH domain-containin	w
 ENTH	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GL86	entH	A0A0H3GL86	0	23	Proofreading thioesterase EntH	
 ENTH	salmonella-typhimurium	Q8ZR29	entH	Q8ZR29	0	3	Proofreading thioesterase EntH	
 ENTH	shigella-dysenteriae-serotype-1	Q32IX2	entH	Q32IX2	0	4	Proofreading thioesterase EntH	
 ENTH	worm	O62142	tag-138	O62142	1	21	ENTH domain-containing protein	w
 ENTH	worm	Q18453	rsd-3	Q18453	4	25	ENTH domain-containing protein	w
 ENTH	worm	Q9BI71	epn-1	Q9BI71	3	51	ENTH domain-containing protein	w
-ENTHD1	human	Q8IYW4	ENTHD1	Q8IYW4	9	75	ENTH domain-containing protein 1 (Epsin-2B)	
+ENTHD1	human	Q8IYW4	ENTHD1	Q8IYW4	8	75	ENTH domain-containing protein 1 (Epsin-2B)	
 ENTHD1	mus-musculus	E9Q1Z2	Enthd1	E9Q1Z2	2	51	ENTH domain containing 1	
 ENTHD1	rattus-norvegicus	B3DMA3	Enthd1	B3DMA3	4	49	ENTH domain containing 1	
-ENTHD2	human	Q96N21	TEPSIN	Q96N21	38	184		
-ENTHOPROTIN	human	Q14677	CLINT1	Q14677	40	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
-ENTK	human	P98073	TMPRSS15	P98073	14	77		
-ENTK_HUMAN	human	P98073	TMPRSS15	P98073	14	77		
+ENTHD2	human	Q96N21	TEPSIN	Q96N21	30	184		
+ENTHOPROTIN	human	Q14677	CLINT1	Q14677	36	257	Clathrin interactor 1 (Clathrin-interacting protein localize	w
+ENTK	human	P98073	TMPRSS15	P98073	11	77		
+ENTK_HUMAN	human	P98073	TMPRSS15	P98073	11	77		
 ENTOMOGLYCEROPORIN	fly	FBgn0034882	Eglp1	Q9W1M4	5	9	Entomoglyceroporin 1 (GH26134p)	w
 ENTOMOGLYCEROPORIN	fly	FBgn0034883	Eglp2	A0A0C4DHF9	5	18	Entomoglyceroporin 2, isoform C	w
 ENTOMOGLYCEROPORIN	fly	FBgn0034884	Eglp3	Q9W1M2	7	43	Entomoglyceroporin 3 (RT07464p)	w
 ENTOMOGLYCEROPORIN	fly	FBgn0034885	Eglp4	A0A0B4KFZ1	8	80	Entomoglyceroporin 4, isoform F	w
-ENTP1_HUMAN	human	P49961	ENTPD1	P49961	18	203		
-ENTP2_HUMAN	human	Q9Y5L3	ENTPD2	Q9Y5L3	13	167		
-ENTP3_HUMAN	human	O75355	ENTPD3	O75355	7	61		
-ENTP4_HUMAN	human	Q9Y227	ENTPD4	Q9Y227	4	47		
-ENTP5_HUMAN	human	O75356	ENTPD5	O75356	7	37		
-ENTP6_HUMAN	human	O75354	ENTPD6	O75354	8	67		
-ENTP7_HUMAN	human	Q9NQZ7	ENTPD7	Q9NQZ7	9	63		
-ENTP8_HUMAN	human	Q5MY95	ENTPD8	Q5MY95	4	36		
-ENTPD1	human	P49961	ENTPD1	P49961	18	203	Ectonucleoside triphosphate diphosphohydrolase 1 (EC 3.6.1.5	
+ENTP1_HUMAN	human	P49961	ENTPD1	P49961	10	203		
+ENTP2_HUMAN	human	Q9Y5L3	ENTPD2	Q9Y5L3	6	167		
+ENTP3_HUMAN	human	O75355	ENTPD3	O75355	4	61		
+ENTP4_HUMAN	human	Q9Y227	ENTPD4	Q9Y227	2	47		
+ENTP5_HUMAN	human	O75356	ENTPD5	O75356	5	37		
+ENTP6_HUMAN	human	O75354	ENTPD6	O75354	6	67		
+ENTP7_HUMAN	human	Q9NQZ7	ENTPD7	Q9NQZ7	6	63		
+ENTP8_HUMAN	human	Q5MY95	ENTPD8	Q5MY95	3	36		
+ENTPD1	human	P49961	ENTPD1	P49961	10	203	Ectonucleoside triphosphate diphosphohydrolase 1 (EC 3.6.1.5	
 ENTPD1	mus-musculus	P55772	Entpd1	P55772	1	28	Ectonucleoside triphosphate diphosphohydrolase 1	
 ENTPD1	rattus-norvegicus	D4A617	Entpd1	D4A617	1	9	Ectonucleoside triphosphate diphosphohydrolase 1	
 ENTPD1	rattus-norvegicus	P97687	Entpd1	P97687	1	31	Ectonucleoside triphosphate diphosphohydrolase 1	
 ENTPD1	zebrafish	E7FG27	entpd1	E7FG27	0	17	Ectonucleoside triphosphate diphosphohydrolase 1	
-ENTPD2	human	Q9Y5L3	ENTPD2	Q9Y5L3	13	167	Ectonucleoside triphosphate diphosphohydrolase 2 (E-NTPDase 	
+ENTPD2	human	Q9Y5L3	ENTPD2	Q9Y5L3	6	167	Ectonucleoside triphosphate diphosphohydrolase 2 (E-NTPDase 	
 ENTPD2	mus-musculus	O55026	Entpd2	O55026	0	11	Ectonucleoside triphosphate diphosphohydrolase 2	
 ENTPD2	rattus-norvegicus	O35795	Entpd2	O35795	0	7	Ectonucleoside triphosphate diphosphohydrolase 2	
 ENTPD2B	zebrafish	A0A8M3AWQ3	entpd2b	A0A8M3AWQ3	0	1	Ectonucleoside triphosphate diphosphohydrolase 2	
-ENTPD3	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	
+ENTPD3	human	O75355	ENTPD3	O75355	4	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	
 ENTPD3	mus-musculus	Q8BFW6	Entpd3	Q8BFW6	1	21	Ectonucleoside triphosphate diphosphohydrolase 3	
 ENTPD3	rattus-norvegicus	A0A0G2K5S7	Entpd3	A0A0G2K5S7	0	26	Ectonucleoside triphosphate diphosphohydrolase 3	
-ENTPD4	human	Q9Y227	ENTPD4	Q9Y227	4	47	Ectonucleoside triphosphate diphosphohydrolase 4 (NTPDase 4)	
+ENTPD4	human	Q9Y227	ENTPD4	Q9Y227	2	47	Ectonucleoside triphosphate diphosphohydrolase 4 (NTPDase 4)	
 ENTPD4	mus-musculus	Q9DBT4	Entpd4	Q9DBT4	0	2	Ectonucleoside triphosphate diphosphohydrolase 4	
 ENTPD4	zebrafish	Q6DH30	entpd4	Q6DH30	0	10	nucleoside-triphosphate phosphatase	
-ENTPD5	human	O75356	ENTPD5	O75356	7	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	
+ENTPD5	human	O75356	ENTPD5	O75356	5	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	
 ENTPD5	mus-musculus	Q9WUZ9	Entpd5	Q9WUZ9	0	2	Ectonucleoside triphosphate diphosphohydrolase 5	
 ENTPD5	rattus-norvegicus	Q6P6S9	Entpd5	Q6P6S9	0	11	Ectonucleoside triphosphate diphosphohydrolase 5	
 ENTPD5A	zebrafish	E7F8A7	entpd5a	E7F8A7	0	10	nucleoside diphosphate phosphatase	
-ENTPD6	human	O75354	ENTPD6	O75354	8	67	Ectonucleoside triphosphate diphosphohydrolase 6 (NTPDase 6)	
+ENTPD6	human	O75354	ENTPD6	O75354	6	67	Ectonucleoside triphosphate diphosphohydrolase 6 (NTPDase 6)	
 ENTPD6	mus-musculus	Q3U0P5	Entpd6	Q3U0P5	0	2	Ectonucleoside triphosphate diphosphohydrolase 6	
 ENTPD6	rattus-norvegicus	Q9ER31	Entpd6	Q9ER31	0	10	Ectonucleoside triphosphate diphosphohydrolase 6	
-ENTPD7	human	Q9NQZ7	ENTPD7	Q9NQZ7	9	63	Ectonucleoside triphosphate diphosphohydrolase 7 (NTPDase 7)	
-ENTPD8	human	Q5MY95	ENTPD8	Q5MY95	4	36	Ectonucleoside triphosphate diphosphohydrolase 8 (E-NTPDase 	
+ENTPD7	human	Q9NQZ7	ENTPD7	Q9NQZ7	6	63	Ectonucleoside triphosphate diphosphohydrolase 7 (NTPDase 7)	
+ENTPD8	human	Q5MY95	ENTPD8	Q5MY95	3	36	Ectonucleoside triphosphate diphosphohydrolase 8 (E-NTPDase 	
 ENTPD8	mus-musculus	Q8K0L2	Entpd8	Q8K0L2	1	19	Ectonucleoside triphosphate diphosphohydrolase 8	
 ENTPD8	rattus-norvegicus	Q5DRK1	Entpd8	Q5DRK1	0	25	Ectonucleoside triphosphate diphosphohydrolase 8	
 ENTPD8	zebrafish	F1QCU4	entpd8	F1QCU4	0	17	Ectonucleoside triphosphate diphosphohydrolase 8	
-ENTPDASE-3	human	O75355	ENTPD3	O75355	7	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
-ENTR1	human	Q96C92	ENTR1	Q96C92	68	215	Endosome-associated-trafficking regulator 1 (Antigen NY-CO-3	
+ENTPDASE-3	human	O75355	ENTPD3	O75355	4	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
+ENTR1	human	Q96C92	ENTR1	Q96C92	59	215	Endosome-associated-trafficking regulator 1 (Antigen NY-CO-3	
 ENTR1	mus-musculus	A2AIW0	Entr1	A2AIW0	1	19	Endosome-associated-trafficking regulator 1	
 ENTR1	zebrafish	A2CE83	entr1	A2CE83	0	1	Endosome-associated-trafficking regulator 1	
-ENTR1_HUMAN	human	Q96C92	ENTR1	Q96C92	68	215		
+ENTR1_HUMAN	human	Q96C92	ENTR1	Q96C92	59	215		
 ENTRAILS	fly	FBgn0004893	bowl	Q9VQU9	102	393	Protein bowel (Brother of odd with entrails limited)	w
 ENTRAINMENT	fly	FBgn0261710	nocte	Q9W2U7	2	6	LP18708p (No circadian temperature entrainment, isoform A) (	w
-ENTREP1	human	Q15884	ENTREP1	Q15884	25	117	Endosomal transmembrane epsin interactor 1 (Endosomal transm	
+ENTREP1	human	Q15884	ENTREP1	Q15884	24	117	Endosomal transmembrane epsin interactor 1 (Endosomal transm	
 ENTREP1	mus-musculus	Q4FZH1	Entrep1	Q4FZH1	1	2	Endosomal transmembrane epsin interactor 1	
 ENTREP1	rattus-norvegicus	A0A0G2K3C3	Entrep1	A0A0G2K3C3	0	9	Endosomal transmembrane epsin interactor 1	
-ENTREP2	human	O60320	ENTREP2	O60320	3	37	Protein ENTREP2 (Endosomal transmembrane epsin interactor 2)	
+ENTREP2	human	O60320	ENTREP2	O60320	2	37	Protein ENTREP2 (Endosomal transmembrane epsin interactor 2)	
 ENTREP2	mus-musculus	Q6A044	Entrep2	Q6A044	0	1	Protein ENTREP2	
 ENTREP2	rattus-norvegicus	F1LTM7	Entrep2	F1LTM7	0	9	Endosomal transmembrane epsin interactor 2	
-ENTREP3	human	P81408	ENTREP3	P81408	20	141	Protein ENTREP3 (Endosomal transmembrane epsin interactor 3)	
+ENTREP3	human	P81408	ENTREP3	P81408	18	141	Protein ENTREP3 (Endosomal transmembrane epsin interactor 3)	
 ENTREP3	mus-musculus	Q5HZJ5	Entrep3	Q5HZJ5	0	1	Protein ENTREP3	
 ENTREP3	rattus-norvegicus	D3Z8J6	Entrep3	D3Z8J6	0	9	Endosomal transmembrane epsin interactor 3	
 ENTREP3	zebrafish	A0A0R4IZW2	fam189b	A0A0R4IZW2	0	13	Protein ENTREP3 isoform X1	w
-ENTRY	human	O00258	GET1	O00258	14	175	Guided entry of tail-anchored proteins factor 1 (Congenital 	w
-ENTRY	human	O43557	TNFSF14	O43557	71	460	Tumor necrosis factor ligand superfamily member 14 (Herpes v	w
-ENTRY	human	O43681	GET3	O43681	11	189	ATPase GET3 (EC 3.6.4.-) (Arsenical pump-driving ATPase) (Ar	w
-ENTRY	human	P49069	CAMLG	P49069	21	156	Guided entry of tail-anchored proteins factor CAMLG (Calcium	w
-ENTRY	human	Q15223	NECTIN1	Q15223	31	187	Nectin-1 (Herpes virus entry mediator C) (Herpesvirus entry 	w
+ENTRY	human	O00258	GET1	O00258	11	175	Guided entry of tail-anchored proteins factor 1 (Congenital 	w
+ENTRY	human	O43557	TNFSF14	O43557	60	460	Tumor necrosis factor ligand superfamily member 14 (Herpes v	w
+ENTRY	human	O43681	GET3	O43681	10	189	ATPase GET3 (EC 3.6.4.-) (Arsenical pump-driving ATPase) (Ar	w
+ENTRY	human	P49069	CAMLG	P49069	17	156	Guided entry of tail-anchored proteins factor CAMLG (Calcium	w
+ENTRY	human	Q15223	NECTIN1	Q15223	28	187	Nectin-1 (Herpes virus entry mediator C) (Herpesvirus entry 	w
 ENTRY	human	Q86TL2	STIMATE	Q86TL2	2	36	Store-operated calcium entry regulator STIMATE (STIM-activat	w
-ENTRY	human	Q92692	NECTIN2	Q92692	53	322	Nectin-2 (Herpes virus entry mediator B) (Herpesvirus entry 	w
-ENTRY	human	Q92956	TNFRSF14	Q92956	89	277	Tumor necrosis factor receptor superfamily member 14 (Herpes	w
-ENTRY	human	Q99618	CDCA3	Q99618	43	306	Cell division cycle-associated protein 3 (Gene-rich cluster 	w
+ENTRY	human	Q92692	NECTIN2	Q92692	48	322	Nectin-2 (Herpes virus entry mediator B) (Herpesvirus entry 	w
+ENTRY	human	Q92956	TNFRSF14	Q92956	80	277	Tumor necrosis factor receptor superfamily member 14 (Herpes	w
+ENTRY	human	Q99618	CDCA3	Q99618	31	306	Cell division cycle-associated protein 3 (Gene-rich cluster 	w
 ENTRY	worm	P91485	CELE_T21E12.5	P91485	0	1	Guided entry of tail-anchored proteins factor 1	w
 ENTRY	worm	Q8WTM8	wrb-1	Q8WTM8	1	1	Guided entry of tail-anchored proteins factor 1	w
 ENTRY	yeast	P30283	CLB5	P30283	14	56	S-phase entry cyclin-5	w
@@ -134,7 +134,7 @@ ENTRY	yeast	P32943	CLB6	P32943	7	17	S-phase entry cyclin-6	w
 ENTRY	yeast	P38111	MEC1	P38111	0	4	Serine/threonine-protein kinase MEC1 (EC 2.7.11.1) (ATR homo	w
 ENTRY	zebrafish	A0A0R4ING6	camlg	A0A0R4ING6	2	4	Guided entry of tail-anchored proteins factor	w
 ENTRY	zebrafish	Q6DRM0	get1	Q6DRM0	2	3	Guided entry of tail-anchored proteins factor 1	w
-ENTRY-ASSOCIATED	human	Q96BY9	SARAF	Q96BY9	18	216	Store-operated calcium entry-associated regulatory factor (S	w
+ENTRY-ASSOCIATED	human	Q96BY9	SARAF	Q96BY9	16	216	Store-operated calcium entry-associated regulatory factor (S	w
 ENTRY-ASSOCIATED	worm	Q22254	CELE_T06D8.9	Q22254	0	14	Store-operated calcium entry-associated regulatory factor	w
 ENTRY-ASSOCIATED	zebrafish	F1QPC3	saraf	F1QPC3	1	11	Store-operated calcium entry-associated regulatory factor	w
 ENTRY-FUSION	virus	A0A068EGV6	fep_080	A0A068EGV6	10	221	Entry-fusion complex protein OPG086	w

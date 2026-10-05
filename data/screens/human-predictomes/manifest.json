@@ -19,6 +19,7 @@
   "tool": "lis.py (AFM-LIS)",
   "paeCutoff": 12,
   "cbCutoff": 8,
+  "inclusive": true,
   "cutoffs": {
    "iLIS": {
     "fpr10": 0.223,
@@ -32,9 +33,9 @@
   "pairs": 1614047,
   "predictions": 4842140,
   "runs": 1614047,
-  "pairsFpr10": 227130,
-  "pairsFpr5": 127585,
-  "pairsFpr1": 38200
+  "pairsFpr10": 181603,
+  "pairsFpr5": 105963,
+  "pairsFpr1": 31782
  },
  "files": {
   "proteins": "proteins.json",

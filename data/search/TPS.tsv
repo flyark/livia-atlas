@@ -5,7 +5,7 @@ TPS1	candida-albicans-237561	Q92410	TPS1	Q92410	2	3	Alpha,alpha-trehalose-phosph
 TPS1	cladophialophora-carrionii	A0A1C1CG19	TPS1	A0A1C1CG19	2	2	Alpha,alpha-trehalose-phosphate synthase	
 TPS1	dictyostelium-discoideum	Q55E23	TPS1	Q55E23	1	1	Terpene synthase 1	
 TPS1	fly	FBgn0027560	Tps1	Q9Y119	3	38	BcDNA.GH08860 (RE05454p) (Trehalose-6-phosphate synthase 1 (	
-TPS1	human	Q15661	TPSAB1	Q15661	18	60		
+TPS1	human	Q15661	TPSAB1	Q15661	15	60		
 TPS1	schizosaccharomyces-pombe	P40387	tps1	P40387	4	7	Alpha,alpha-trehalose-phosphate synthase	
 TPS1	yeast	Q00764	TPS1	Q00764	3	43	Alpha,alpha-trehalose-phosphate synthase	
 TPS1	zea-mays	Q84ZW8	TPS1	Q84ZW8	0	2	Acyclic sesquiterpene synthase	
@@ -21,8 +21,8 @@ TPS19	glycine-max	K7M2G2	TPS19	K7M2G2	0	1	Terpene synthase 2
 TPS2	candida-albicans-237561	Q5AI14	TPS2	Q5AI14	2	3	Trehalose-phosphatase	
 TPS2	cladophialophora-carrionii	A0A1C1CG31	TPS2	A0A1C1CG31	3	4	Trehalose-phosphatase	
 TPS2	glycine-max	K7KF95	TPS2	K7KF95	0	12	Ent-copalyl diphosphate synthase	
-TPS2	human	P20231	TPSB2	P20231	21	109		
-TPS2	human	Q15661	TPSAB1	Q15661	18	60		
+TPS2	human	P20231	TPSB2	P20231	19	109		
+TPS2	human	Q15661	TPSAB1	Q15661	15	60		
 TPS2	schizosaccharomyces-pombe	O14145	tps2	O14145	4	5	Trehalose-phosphatase	
 TPS2	yeast	P31688	TPS2	P31688	4	20	Trehalose-phosphatase	
 TPS22	glycine-max	A0A368UGG7	TPS22	A0A368UGG7	0	12	Ent-copalyl diphosphate synthase	
@@ -42,37 +42,37 @@ TPS8	zea-mays	Q29VN3	TPS8	Q29VN3	0	1	Alpha-copaene synthase
 TPS9	arabidopsis-thaliana	Q9LRA7	TPS9	Q9LRA7	0	1	Probable alpha,alpha-trehalose-phosphate synthase	
 TPSA	cladophialophora-carrionii	A0A1C1CHE2	tpsA	A0A1C1CHE2	2	2	alpha,alpha-trehalose-phosphate synthase (UDP-forming)	
 TPSA	dictyostelium-discoideum	Q54K57	tpsA	Q54K57	2	2	Alpha,alpha-trehalose-phosphate synthase	
-TPSAB1	human	Q15661	TPSAB1	Q15661	18	60	Tryptase alpha/beta-1 (Tryptase-1) (EC 3.4.21.59) (Tryptase 	
+TPSAB1	human	Q15661	TPSAB1	Q15661	15	60	Tryptase alpha/beta-1 (Tryptase-1) (EC 3.4.21.59) (Tryptase 	
 TPSAB1	mus-musculus	Q02844	Tpsab1	Q02844	1	1	Tryptase	
 TPSAB1	rattus-norvegicus	P27435	Tpsab1	P27435	2	4	Tryptase	
 TPSB	dictyostelium-discoideum	Q54NU9	tpsB	Q54NU9	2	2	Alpha,alpha-trehalose-phosphate synthase	
-TPSB1	human	Q15661	TPSAB1	Q15661	18	60		
+TPSB1	human	Q15661	TPSAB1	Q15661	15	60		
 TPSB2	human	A0A087X1U0	TPSB2	A0A087X1U0	4	16	Tryptase beta 2	
-TPSB2	human	P20231	TPSB2	P20231	21	109	Tryptase beta-2 (Tryptase-2) (EC 3.4.21.59) (Tryptase II)	
+TPSB2	human	P20231	TPSB2	P20231	19	109	Tryptase beta-2 (Tryptase-2) (EC 3.4.21.59) (Tryptase II)	
 TPSB2	mus-musculus	P21845	Tpsb2	P21845	1	2	Tryptase beta-2	
 TPSB2	rattus-norvegicus	P50343	Tpsb2	P50343	2	5	Tryptase beta-2	
 TPSC	dictyostelium-discoideum	Q54G49	tpsC	Q54G49	2	2	Uncharacterized protein	
-TPSD1	human	Q9BZJ3	TPSD1	Q9BZJ3	14	55	Tryptase delta (EC 3.4.21.59) (Delta-tryptase) (HmMCP-3-like	
-TPSG1	human	Q9NRR2	TPSG1	Q9NRR2	17	113	Tryptase gamma (EC 3.4.21.-) (Serine protease 31) (Transmemb	
+TPSD1	human	Q9BZJ3	TPSD1	Q9BZJ3	11	55	Tryptase delta (EC 3.4.21.59) (Delta-tryptase) (HmMCP-3-like	
+TPSG1	human	Q9NRR2	TPSG1	Q9NRR2	13	113	Tryptase gamma (EC 3.4.21.-) (Serine protease 31) (Transmemb	
 TPSG1	rattus-norvegicus	Q80XZ3	Tpsg1	Q80XZ3	1	3	Tryptase gamma 1	
-TPSN	human	O15533	TAPBP	O15533	14	92	Tapasin (TPN) (TPSN) (NGS-17) (TAP-associated protein) (TAP-	w
+TPSN	human	O15533	TAPBP	O15533	13	92	Tapasin (TPN) (TPSN) (NGS-17) (TAP-associated protein) (TAP-	w
 TPSN	zebrafish	Q1LUU3	tapbp.1	Q1LUU3	2	26	Novel protein similar to tapasin (Tpsn)	w
 TPSNR_HUMAN	human	Q9BX59	TAPBPL	Q9BX59	12	77		
-TPSN_HUMAN	human	O15533	TAPBP	O15533	14	92		
+TPSN_HUMAN	human	O15533	TAPBP	O15533	13	92		
 TPST	arabidopsis-thaliana	Q3EDG5	TPST	Q3EDG5	0	1	Protein-tyrosine sulfotransferase	
 TPST	fly	FBgn0086674	Tpst	M9PHI3	569	2391	Protein-tyrosine sulfotransferase (EC 2.8.2.20)	
-TPST-1	human	O60507	TPST1	O60507	5	83	Protein-tyrosine sulfotransferase 1 (EC 2.8.2.20) (Tyrosylpr	w
+TPST-1	human	O60507	TPST1	O60507	4	83	Protein-tyrosine sulfotransferase 1 (EC 2.8.2.20) (Tyrosylpr	w
 TPST-1	worm	O77081	tpst-1	O77081	2	24	Protein-tyrosine sulfotransferase A	
-TPST-2	human	O60704	TPST2	O60704	8	232	Protein-tyrosine sulfotransferase 2 (EC 2.8.2.20) (Tyrosylpr	w
+TPST-2	human	O60704	TPST2	O60704	3	232	Protein-tyrosine sulfotransferase 2 (EC 2.8.2.20) (Tyrosylpr	w
 TPST-2	worm	Q20351	tpst-2	Q20351	0	29	Putative protein-tyrosine sulfotransferase	
-TPST1	human	O60507	TPST1	O60507	5	83	Protein-tyrosine sulfotransferase 1 (EC 2.8.2.20) (Tyrosylpr	
+TPST1	human	O60507	TPST1	O60507	4	83	Protein-tyrosine sulfotransferase 1 (EC 2.8.2.20) (Tyrosylpr	
 TPST1	mus-musculus	O70281	Tpst1	O70281	0	16	Protein-tyrosine sulfotransferase 1	
 TPST1	rattus-norvegicus	Q3KR92	Tpst1	Q3KR92	1	28	Protein-tyrosine sulfotransferase 1	
 TPST1	zebrafish	Q9PTE6	tpst1	Q9PTE6	3	53	Protein-tyrosine sulfotransferase 1	
 TPST1L	zebrafish	Q7ZT02	tpst1l	Q7ZT02	4	53	Protein-tyrosine sulfotransferase	
-TPST1_HUMAN	human	O60507	TPST1	O60507	5	83		
-TPST2	human	O60704	TPST2	O60704	8	232	Protein-tyrosine sulfotransferase 2 (EC 2.8.2.20) (Tyrosylpr	
+TPST1_HUMAN	human	O60507	TPST1	O60507	4	83		
+TPST2	human	O60704	TPST2	O60704	3	232	Protein-tyrosine sulfotransferase 2 (EC 2.8.2.20) (Tyrosylpr	
 TPST2	mus-musculus	O88856	Tpst2	O88856	0	17	Protein-tyrosine sulfotransferase 2	
 TPST2	rattus-norvegicus	Q5RJS8	Tpst2	Q5RJS8	1	27	Protein-tyrosine sulfotransferase 2	
 TPST2	zebrafish	Q7T295	tpst2	Q7T295	6	53	Protein-tyrosine sulfotransferase	
-TPST2_HUMAN	human	O60704	TPST2	O60704	8	232		
+TPST2_HUMAN	human	O60704	TPST2	O60704	3	232		

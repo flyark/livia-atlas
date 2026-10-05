@@ -2,8 +2,8 @@ CUT-1	worm	Q03755	cut-1	Q03755	0	1	Cuticlin-1
 CUT-2	worm	P34682	cut-2	P34682	0	1	Cuticlin 2	
 CUT-3	worm	Q19707	cut-3	Q19707	0	3	Cuticlin-3	
 CUT-5	worm	Q21808	cut-5	Q21808	0	1	Cuticlin-5	
-CUT-LIKE	human	O14529	CUX2	O14529	19	74	Homeobox protein cut-like 2 (Homeobox protein cux-2)	w
-CUT-LIKE	human	P39880	CUX1	P39880	48	228	Homeobox protein cut-like 1 (CCAAT displacement protein) (CD	w
+CUT-LIKE	human	O14529	CUX2	O14529	13	74	Homeobox protein cut-like 2 (Homeobox protein cux-2)	w
+CUT-LIKE	human	P39880	CUX1	P39880	41	228	Homeobox protein cut-like 1 (CCAAT displacement protein) (CD	w
 CUT-LIKE	worm	A7DTF5	CELE_Y56A3A.7	A7DTF5	2	4	Homeobox protein cut-like	w
 CUT-LIKE	worm	Q9BL02	ceh-44	Q9BL02	1	17	Homeobox protein cut-like ceh-44	w
 CUT-LIKE	zebrafish	E7F4J9	cux1a	E7F4J9	1	9	Homeobox protein cut-like	w
@@ -34,21 +34,21 @@ CUT9	cladophialophora-carrionii	A0A1C1CB72	cut9	A0A1C1CB72	8	78	Anaphase-promoti
 CUT9	schizosaccharomyces-pombe	P41889	cut9	P41889	8	63	Anaphase-promoting complex subunit cut9	
 CUTA	dictyostelium-discoideum	Q6TMJ4	cutA	Q6TMJ4	0	4	3-ketoacyl-CoA synthase	
 CUTA	escherichia-coli-83333	P69488	cutA	P69488	1	2	Divalent-cation tolerance protein CutA	
-CUTA	human	O60888	CUTA	O60888	2	73	Protein CutA (Acetylcholinesterase-associated protein) (Brai	
+CUTA	human	O60888	CUTA	O60888	1	73	Protein CutA (Acetylcholinesterase-associated protein) (Brai	
 CUTA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GH55	cutA	A0A0H3GH55	0	4	Divalent-cation tolerance protein CutA	
 CUTA	mus-musculus	Q9CQ89	Cuta	Q9CQ89	0	8	Protein CutA	
 CUTA	salmonella-typhimurium	Q7CPA2	cutA	Q7CPA2	0	2	Divalent-cation tolerance protein CutA	
 CUTA	shigella-dysenteriae-serotype-1	Q328D1	cutA	Q328D1	0	3	Divalent-cation tolerance protein CutA	
 CUTA	worm	Q20051	CELE_F35G12.7	Q20051	0	1	Divalent-cation tolerance protein CutA	w
-CUTANEOUS	human	Q14966	ZNF638	Q14966	92	386	Zinc finger protein 638 (Cutaneous T-cell lymphoma-associate	w
-CUTANEOUS	human	Q96PC5	MIA2	Q96PC5	18	117	Melanoma inhibitory activity protein 2 (MIA protein 2) (CTAG	w
-CUTANEOUS	human	Q9H2F9	CCDC68	Q9H2F9	34	113	Coiled-coil domain-containing protein 68 (Cutaneous T-cell l	w
-CUTANEOUS	human	Q9H2G4	TSPYL2	Q9H2G4	17	128	Testis-specific Y-encoded-like protein 2 (TSPY-like protein 	w
-CUTANEOUS	human	Q9H2K8	TAOK3	Q9H2K8	21	106	Serine/threonine-protein kinase TAO3 (EC 2.7.11.1) (Cutaneou	w
+CUTANEOUS	human	Q14966	ZNF638	Q14966	64	386	Zinc finger protein 638 (Cutaneous T-cell lymphoma-associate	w
+CUTANEOUS	human	Q96PC5	MIA2	Q96PC5	17	117	Melanoma inhibitory activity protein 2 (MIA protein 2) (CTAG	w
+CUTANEOUS	human	Q9H2F9	CCDC68	Q9H2F9	28	113	Coiled-coil domain-containing protein 68 (Cutaneous T-cell l	w
+CUTANEOUS	human	Q9H2G4	TSPYL2	Q9H2G4	14	128	Testis-specific Y-encoded-like protein 2 (TSPY-like protein 	w
+CUTANEOUS	human	Q9H2K8	TAOK3	Q9H2K8	18	106	Serine/threonine-protein kinase TAO3 (EC 2.7.11.1) (Cutaneou	w
 CUTANEOUS	human	Q9HC47	CTAGE1	Q9HC47	0	7	Cutaneous T-cell lymphoma-associated antigen 1 (Protein cTAG	w
-CUTANEOUS	human	Q9ULU4	ZMYND8	Q9ULU4	90	404	MYND-type zinc finger-containing chromatin reader ZMYND8 (Cu	w
-CUTANEOUS	human	Q9Y4X3	CCL27	Q9Y4X3	59	256	C-C motif chemokine 27 (CC chemokine ILC) (Cutaneous T-cell-	w
-CUTA_HUMAN	human	O60888	CUTA	O60888	2	73		
+CUTANEOUS	human	Q9ULU4	ZMYND8	Q9ULU4	63	404	MYND-type zinc finger-containing chromatin reader ZMYND8 (Cu	w
+CUTANEOUS	human	Q9Y4X3	CCL27	Q9Y4X3	49	256	C-C motif chemokine 27 (CC chemokine ILC) (Cutaneous T-cell-	w
+CUTA_HUMAN	human	O60888	CUTA	O60888	1	73		
 CUTC	fly	FBgn0038332	CG6136	Q9VF71	0	1	Copper homeostasis protein cutC homolog	w
 CUTC	human	Q9NTM9	CUTC	Q9NTM9	0	63	Copper homeostasis protein cutC homolog	
 CUTC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQ70	cutC	A0A0H3GQ70	0	1	PF03932 family protein CutC	
@@ -98,10 +98,10 @@ CUTICLE	fly	FBgn0040553	CG14374	Q9VFV6	12	245	Cuticle protein 16.5	w
 CUTICLE	fly	FBgn0085234	CG34205	Q9W287	15	296	Cuticle protein 16.5-like	w
 CUTICLE	fly	FBgn0086519	Cpr47Eg	Q7JZV0	13	268	Cuticular protein 47Eg (Larval cuticle protein 2A)	w
 CUTICLE	fly	FBgn0086611	Lcp65Ag3	Q9I7Q6	7	265	FI01403p (Larval cuticle protein)	w
-CUTICLE	human	P26371	KRTAP5-9	P26371	4	203	Keratin-associated protein 5-9 (Keratin, cuticle, ultrahigh 	w
+CUTICLE	human	P26371	KRTAP5-9	P26371	3	203	Keratin-associated protein 5-9 (Keratin, cuticle, ultrahigh 	w
 CUTICLE	human	Q6L8H4	KRTAP5-1	Q6L8H4	0	18	Keratin-associated protein 5-1 (Keratin, cuticle, ultrahigh 	w
-CUTICLE	human	Q969F2	NKD2	Q969F2	21	80	Protein naked cuticle homolog 2 (Naked-2) (hNkd2)	w
-CUTICLE	human	Q969G9	NKD1	Q969G9	26	98	Protein naked cuticle homolog 1 (Naked-1) (hNkd) (hNkd1)	w
+CUTICLE	human	Q969F2	NKD2	Q969F2	13	80	Protein naked cuticle homolog 2 (Naked-2) (hNkd2)	w
+CUTICLE	human	Q969G9	NKD1	Q969G9	16	98	Protein naked cuticle homolog 1 (Naked-1) (hNkd) (hNkd1)	w
 CUTICLE	worm	A3QM98	col-138	A3QM98	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
 CUTICLE	worm	E5QCF2	col-53	E5QCF2	0	1	Col_cuticle_N domain-containing protein	w
 CUTICLE	worm	O17036	col-142	O17036	0	1	Nematode cuticle collagen N-terminal domain-containing prote	w
@@ -257,20 +257,20 @@ CUTICULAR	fly	FBgn0053302	Cpr31A	Q8IPD5	19	245	Cuticular protein 31A (RE37955p)	
 CUTICULAR	fly	FBgn0085300	Cpr65Ay	A8JNL8	6	256	Cuticular protein 65Ay	w
 CUTICULAR	fly	FBgn0086519	Cpr47Eg	Q7JZV0	13	268	Cuticular protein 47Eg (Larval cuticle protein 2A)	w
 CUTICULAR	fly	FBgn0086900	Cpr65Ax1	Q9I7C6	8	258	Cuticular protein 65Ax1 (Cuticular protein 65Ax2, isoform A)	w
-CUTICULAR	human	O43790	KRT86	O43790	69	131	Keratin, type II cuticular Hb6 (Hair keratin K2.11) (Keratin	w
-CUTICULAR	human	O76009	KRT33A	O76009	64	103	Keratin, type I cuticular Ha3-I (Hair keratin, type I Ha3-I)	w
-CUTICULAR	human	O76011	KRT34	O76011	96	310	Keratin, type I cuticular Ha4 (Hair keratin, type I Ha4) (Ke	w
+CUTICULAR	human	O43790	KRT86	O43790	66	131	Keratin, type II cuticular Hb6 (Hair keratin K2.11) (Keratin	w
+CUTICULAR	human	O76009	KRT33A	O76009	62	103	Keratin, type I cuticular Ha3-I (Hair keratin, type I Ha3-I)	w
+CUTICULAR	human	O76011	KRT34	O76011	93	310	Keratin, type I cuticular Ha4 (Hair keratin, type I Ha4) (Ke	w
 CUTICULAR	human	O76013	KRT36	O76013	68	129	Keratin, type I cuticular Ha6 (Hair keratin, type I Ha6) (Ke	w
-CUTICULAR	human	O76014	KRT37	O76014	95	139	Keratin, type I cuticular Ha7 (Hair keratin, type I Ha7) (Ke	w
-CUTICULAR	human	O76015	KRT38	O76015	121	202	Keratin, type I cuticular Ha8 (Hair keratin, type I Ha8) (Ke	w
+CUTICULAR	human	O76014	KRT37	O76014	92	139	Keratin, type I cuticular Ha7 (Hair keratin, type I Ha7) (Ke	w
+CUTICULAR	human	O76015	KRT38	O76015	117	202	Keratin, type I cuticular Ha8 (Hair keratin, type I Ha8) (Ke	w
 CUTICULAR	human	P78385	KRT83	P78385	67	144	Keratin, type II cuticular Hb3 (Hair keratin K2.10) (Keratin	w
-CUTICULAR	human	P78386	KRT85	P78386	66	107	Keratin, type II cuticular Hb5 (Hair keratin K2.12) (Keratin	w
-CUTICULAR	human	Q14525	KRT33B	Q14525	68	150	Keratin, type I cuticular Ha3-II (Hair keratin, type I Ha3-I	w
-CUTICULAR	human	Q14532	KRT32	Q14532	73	96	Keratin, type I cuticular Ha2 (Hair keratin, type I Ha2) (Ke	w
-CUTICULAR	human	Q14533	KRT81	Q14533	67	122	Keratin, type II cuticular Hb1 (Hair keratin K2.9) (Keratin,	w
-CUTICULAR	human	Q15323	KRT31	Q15323	138	492	Keratin, type I cuticular Ha1 (Hair keratin, type I Ha1) (Ke	w
+CUTICULAR	human	P78386	KRT85	P78386	64	107	Keratin, type II cuticular Hb5 (Hair keratin K2.12) (Keratin	w
+CUTICULAR	human	Q14525	KRT33B	Q14525	67	150	Keratin, type I cuticular Ha3-II (Hair keratin, type I Ha3-I	w
+CUTICULAR	human	Q14532	KRT32	Q14532	72	96	Keratin, type I cuticular Ha2 (Hair keratin, type I Ha2) (Ke	w
+CUTICULAR	human	Q14533	KRT81	Q14533	66	122	Keratin, type II cuticular Hb1 (Hair keratin K2.9) (Keratin,	w
+CUTICULAR	human	Q15323	KRT31	Q15323	131	492	Keratin, type I cuticular Ha1 (Hair keratin, type I Ha1) (Ke	w
 CUTICULAR	human	Q92764	KRT35	Q92764	73	154	Keratin, type I cuticular Ha5 (Hair keratin, type I Ha5) (Ke	w
-CUTICULAR	human	Q9NSB2	KRT84	Q9NSB2	59	85	Keratin, type II cuticular Hb4 (Keratin-84) (K84) (Type II h	w
+CUTICULAR	human	Q9NSB2	KRT84	Q9NSB2	58	85	Keratin, type II cuticular Hb4 (Keratin-84) (K84) (Type II h	w
 CUTICULAR	human	Q9NSB4	KRT82	Q9NSB4	63	96	Keratin, type II cuticular Hb2 (Keratin-82) (K82) (Type II h	w
 CUTL-1	worm	Q9XVM7	cutl-1	Q9XVM7	0	1	ZP domain-containing protein	
 CUTL-10	worm	Q9U250	cutl-10	Q9U250	0	1	ZP domain-containing protein	
@@ -284,9 +284,9 @@ CUTL-25	worm	Q7KWZ4	cutl-25	Q7KWZ4	0	1	ZP domain-containing protein
 CUTL-26	worm	H2L015	cutl-26	H2L015	0	9	ZP domain-containing protein	
 CUTL-28	worm	O61834	cutl-28	O61834	0	5	CUTiclin-Like	
 CUTL-5	worm	Q19304	cutl-5	Q19304	0	1	ZP domain-containing protein	
-CUTL1	human	P39880	CUX1	P39880	48	228		
-CUTL1	human	Q13948	CUX1	Q13948	174	1410		
-CUTL2	human	O14529	CUX2	O14529	19	74		
+CUTL1	human	P39880	CUX1	P39880	41	228		
+CUTL1	human	Q13948	CUX1	Q13948	133	1410		
+CUTL2	human	O14529	CUX2	O14529	13	74		
 CUTLET	fly	FBgn0015376	cutlet	Q8IQ05	8	27	Chromosome transmission fidelity protein 18 homolog (CTF18) 	w
 CUTLET	fly	FBgn0015376	cutlet	Q8IQ05	8	27	Chromosome transmission fidelity protein 18 homolog (CTF18) 	w
 CUTOFF	fly	FBgn0260932	cuff	Q9V629	3	14	Protein cutoff	w

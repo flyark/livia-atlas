@@ -11,7 +11,7 @@ SOD-5	worm	Q27538	sod-5	Q27538	6	16	Superoxide dismutase
 SOD1	candida-albicans-237561	A0A1D8PLJ3	SOD1	A0A1D8PLJ3	1	18	Superoxide dismutase	
 SOD1	fly	FBgn0003462	Sod1	P61851	5	152	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	
 SOD1	glycine-max	Q7M1R5	SOD1	Q7M1R5	2	98	Superoxide dismutase	
-SOD1	human	P00441	SOD1	P00441	16	452	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	
+SOD1	human	P00441	SOD1	P00441	15	451	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	
 SOD1	mus-musculus	P08228	Sod1	P08228	3	62	Superoxide dismutase	
 SOD1	rattus-norvegicus	P07632	Sod1	P07632	3	60	Superoxide dismutase	
 SOD1	schizosaccharomyces-pombe	P28758	sod1	P28758	2	16	Superoxide dismutase	
@@ -23,8 +23,8 @@ SOD2	cladophialophora-carrionii	A0A1C1CUU0	sod2	A0A1C1CUU0	0	2	Na(+)/H(+) antipo
 SOD2	cladophialophora-carrionii	A0A1C1D0I2	SOD2	A0A1C1D0I2	1	83	Superoxide dismutase	
 SOD2	dictyostelium-discoideum	Q55BJ9	sod2	Q55BJ9	2	76	Superoxide dismutase	
 SOD2	fly	FBgn0010213	Sod2	Q00637	10	297	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
-SOD2	human	F5H3C5	SOD2	F5H3C5	4	269	Superoxide dismutase	
-SOD2	human	P04179	SOD2	P04179	10	423	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
+SOD2	human	F5H3C5	SOD2	F5H3C5	4	265	Superoxide dismutase	
+SOD2	human	P04179	SOD2	P04179	8	419	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
 SOD2	mus-musculus	P09671	Sod2	P09671	1	276	Superoxide dismutase	
 SOD2	rattus-norvegicus	P07895	Sod2	P07895	2	354	Superoxide dismutase	
 SOD2	schizosaccharomyces-pombe	Q9UQX0	sod2	Q9UQX0	1	69	Superoxide dismutase	
@@ -34,7 +34,7 @@ SOD22	cladophialophora-carrionii	A0A1C1CAM4	sod22	A0A1C1CAM4	0	2	Putative Na(+)/
 SOD22	schizosaccharomyces-pombe	O14123	sod22	O14123	0	4	Probable Na(+)/H(+) antiporter C3A11.09	
 SOD3	candida-albicans-237561	A0A1D8PQH5	SOD3	A0A1D8PQH5	3	29	Superoxide dismutase	
 SOD3	fly	FBgn0033631	Sod3	A1Z8K9	36	386	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	
-SOD3	human	P08294	SOD3	P08294	7	91	Extracellular superoxide dismutase [Cu-Zn] (EC-SOD) (EC 1.15	
+SOD3	human	P08294	SOD3	P08294	6	90	Extracellular superoxide dismutase [Cu-Zn] (EC-SOD) (EC 1.15	
 SOD3	mus-musculus	O09164	Sod3	O09164	2	23	Extracellular superoxide dismutase	
 SOD3	rattus-norvegicus	Q08420	Sod3	Q08420	1	30	Extracellular superoxide dismutase	
 SOD3-PA	fly	FBgn0033631	Sod3	A1Z8K9	36	386		
@@ -83,11 +83,11 @@ SODCC.3	zea-mays	P23345	SODCC.3	P23345	7	49	Superoxide dismutase
 SODCC1	oryza-sativa-subsp-japonica	Q0DRV6	SODCC1	Q0DRV6	2	37	Superoxide dismutase	
 SODCC2	oryza-sativa-subsp-japonica	P28757	SODCC2	P28757	1	37	Superoxide dismutase	
 SODCP	oryza-sativa-subsp-japonica	P93407	SODCP	P93407	1	40	Superoxide dismutase	
-SODC_HUMAN	human	P00441	SOD1	P00441	16	452		
+SODC_HUMAN	human	P00441	SOD1	P00441	15	451		
 SODD	dictyostelium-discoideum	Q54TU5	sodD	Q54TU5	1	1	Superoxide dismutase	
-SODD	human	O95429	BAG4	O95429	55	327		
+SODD	human	O95429	BAG4	O95429	45	327		
 SODE	dictyostelium-discoideum	Q54G70	sodE	Q54G70	1	1	Superoxide dismutase	
-SODE_HUMAN	human	P08294	SOD3	P08294	7	91		
+SODE_HUMAN	human	P08294	SOD3	P08294	6	90		
 SODF	dictyostelium-discoideum	Q54TW8	sodF	Q54TW8	1	1	Probable superoxide dismutase	
 SODH-1	fly	FBgn0024289	Sord1	O97479	1	19		
 SODH-2	fly	FBgn0022359	Sord2	O96299	2	16		
@@ -113,101 +113,101 @@ SODIUM	fly	FBgn0085442	NKAIN	A6MHQ4	3	10	Sodium/potassium-transporting ATPase su
 SODIUM	fly	FBgn0267363	JYalpha	A8QI34	6	10	Sodium/potassium-transporting ATPase subunit alpha	w
 SODIUM	fly	FBgn0285944	para	M9PJP5	2	35	Sodium channel protein	w
 SODIUM	human	A0PJK1	SLC5A10	A0PJK1	6	38	Sodium/mannose cotransporter SLC5A10 (Sodium/glucose cotrans	w
-SODIUM	human	O00168	FXYD1	O00168	22	162	Phospholemman (FXYD domain-containing ion transport regulato	w
+SODIUM	human	O00168	FXYD1	O00168	19	162	Phospholemman (FXYD domain-containing ion transport regulato	w
 SODIUM	human	O00337	SLC28A1	O00337	2	23	Sodium/nucleoside cotransporter 1 (Concentrative nucleoside 	w
 SODIUM	human	O00476	SLC17A3	O00476	0	13	Sodium-dependent phosphate transport protein 4 (Na(+)/PI cot	w
-SODIUM	human	O00624	SLC17A2	O00624	3	83	Sodium-dependent phosphate transport protein 3 (Na(+)/PI cot	w
-SODIUM	human	O43868	SLC28A2	O43868	3	37	Sodium/nucleoside cotransporter 2 (Concentrative nucleoside 	w
+SODIUM	human	O00624	SLC17A2	O00624	2	83	Sodium-dependent phosphate transport protein 3 (Na(+)/PI cot	w
+SODIUM	human	O43868	SLC28A2	O43868	2	37	Sodium/nucleoside cotransporter 2 (Concentrative nucleoside 	w
 SODIUM	human	O60721	SLC24A1	O60721	3	13	Sodium/potassium/calcium exchanger 1 (Na(+)/K(+)/Ca(2+)-exch	w
-SODIUM	human	O60741	HCN1	O60741	37	172	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
-SODIUM	human	O60939	SCN2B	O60939	59	396	Sodium channel regulatory subunit beta-2	w
+SODIUM	human	O60741	HCN1	O60741	22	172	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+SODIUM	human	O60939	SCN2B	O60939	48	396	Sodium channel regulatory subunit beta-2	w
 SODIUM	human	O95436	SLC34A2	O95436	2	155	Sodium-dependent phosphate transport protein 2B (Sodium-phos	w
-SODIUM	human	P05023	ATP1A1	P05023	18	351	Sodium/potassium-transporting ATPase subunit alpha-1 (Na(+)/	w
-SODIUM	human	P05026	ATP1B1	P05026	18	271	Sodium/potassium-transporting ATPase subunit beta-1 (Sodium/	w
+SODIUM	human	P05023	ATP1A1	P05023	14	351	Sodium/potassium-transporting ATPase subunit alpha-1 (Na(+)/	w
+SODIUM	human	P05026	ATP1B1	P05026	16	271	Sodium/potassium-transporting ATPase subunit beta-1 (Sodium/	w
 SODIUM	human	P13637	ATP1A3	P13637	16	286	Sodium/potassium-transporting ATPase subunit alpha-3 (Na(+)/	w
-SODIUM	human	P13866	SLC5A1	P13866	8	89	Sodium/glucose cotransporter 1 (Na(+)/glucose cotransporter 	w
-SODIUM	human	P14415	ATP1B2	P14415	17	171	Sodium/potassium-transporting ATPase subunit beta-2 (Adhesio	w
-SODIUM	human	P19634	SLC9A1	P19634	28	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	w
-SODIUM	human	P31639	SLC5A2	P31639	17	103	Sodium/glucose cotransporter 2 (Na(+)/glucose cotransporter 	w
+SODIUM	human	P13866	SLC5A1	P13866	7	89	Sodium/glucose cotransporter 1 (Na(+)/glucose cotransporter 	w
+SODIUM	human	P14415	ATP1B2	P14415	14	171	Sodium/potassium-transporting ATPase subunit beta-2 (Adhesio	w
+SODIUM	human	P19634	SLC9A1	P19634	26	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	w
+SODIUM	human	P31639	SLC5A2	P31639	14	103	Sodium/glucose cotransporter 2 (Na(+)/glucose cotransporter 	w
 SODIUM	human	P32418	SLC8A1	P32418	2	74	Sodium/calcium exchanger 1 (Na(+)/Ca(2+)-exchange protein 1)	w
-SODIUM	human	P35498	SCN1A	P35498	7	79	Sodium channel protein type 1 subunit alpha (Sodium channel 	w
+SODIUM	human	P35498	SCN1A	P35498	5	79	Sodium channel protein type 1 subunit alpha (Sodium channel 	w
 SODIUM	human	P35499	SCN4A	P35499	4	123	Sodium channel protein type 4 subunit alpha (SkM1) (Sodium c	w
-SODIUM	human	P37088	SCNN1A	P37088	15	154	Epithelial sodium channel subunit alpha (Alpha-ENaC) (ENaC s	w
+SODIUM	human	P37088	SCNN1A	P37088	13	154	Epithelial sodium channel subunit alpha (Alpha-ENaC) (ENaC s	w
 SODIUM	human	P48764	SLC9A3	P48764	11	75	Sodium/hydrogen exchanger 3 (Na(+)/H(+) exchanger 3) (NHE-3)	w
-SODIUM	human	P50993	ATP1A2	P50993	13	130	Sodium/potassium-transporting ATPase subunit alpha-2 (Na(+)/	w
-SODIUM	human	P51168	SCNN1B	P51168	10	85	Epithelial sodium channel subunit beta (Beta-ENaC) (ENaC sub	w
-SODIUM	human	P51170	SCNN1G	P51170	11	89	Epithelial sodium channel subunit gamma (ENaC subunit gamma)	w
-SODIUM	human	P51172	SCNN1D	P51172	11	83	Epithelial sodium channel subunit delta (Delta-ENaC) (ENaCD)	w
-SODIUM	human	P53794	SLC5A3	P53794	6	102	Sodium/myo-inositol cotransporter (Na(+)/myo-inositol cotran	w
-SODIUM	human	P54709	ATP1B3	P54709	23	291	Sodium/potassium-transporting ATPase subunit beta-3 (Sodium/	w
-SODIUM	human	P54710	FXYD2	P54710	34	194	Sodium/potassium-transporting ATPase subunit gamma (Na(+)/K(	w
-SODIUM	human	P57103	SLC8A3	P57103	4	47	Sodium/calcium exchanger 3 (Na(+)/Ca(2+)-exchange protein 3)	w
-SODIUM	human	P78348	ASIC1	P78348	12	103	Acid-sensing ion channel 1 (ASIC1) (Amiloride-sensitive cati	w
+SODIUM	human	P50993	ATP1A2	P50993	12	130	Sodium/potassium-transporting ATPase subunit alpha-2 (Na(+)/	w
+SODIUM	human	P51168	SCNN1B	P51168	9	85	Epithelial sodium channel subunit beta (Beta-ENaC) (ENaC sub	w
+SODIUM	human	P51170	SCNN1G	P51170	10	89	Epithelial sodium channel subunit gamma (ENaC subunit gamma)	w
+SODIUM	human	P51172	SCNN1D	P51172	8	83	Epithelial sodium channel subunit delta (Delta-ENaC) (ENaCD)	w
+SODIUM	human	P53794	SLC5A3	P53794	4	102	Sodium/myo-inositol cotransporter (Na(+)/myo-inositol cotran	w
+SODIUM	human	P54709	ATP1B3	P54709	18	291	Sodium/potassium-transporting ATPase subunit beta-3 (Sodium/	w
+SODIUM	human	P54710	FXYD2	P54710	32	194	Sodium/potassium-transporting ATPase subunit gamma (Na(+)/K(	w
+SODIUM	human	P57103	SLC8A3	P57103	3	47	Sodium/calcium exchanger 3 (Na(+)/Ca(2+)-exchange protein 3)	w
+SODIUM	human	P78348	ASIC1	P78348	11	103	Acid-sensing ion channel 1 (ASIC1) (Amiloride-sensitive cati	w
 SODIUM	human	Q01118	SCN7A	Q01118	2	29	Sodium channel protein type 7 subunit alpha (Atypical sodium	w
-SODIUM	human	Q06495	SLC34A1	Q06495	4	80	Sodium-dependent phosphate transport protein 2A (Sodium-phos	w
-SODIUM	human	Q07699	SCN1B	Q07699	13	53	Sodium channel regulatory subunit beta-1	w
+SODIUM	human	Q06495	SLC34A1	Q06495	3	80	Sodium-dependent phosphate transport protein 2A (Sodium-phos	w
+SODIUM	human	Q07699	SCN1B	Q07699	12	53	Sodium channel regulatory subunit beta-1	w
 SODIUM	human	Q0GE19	SLC10A7	Q0GE19	1	37	Sodium/bile acid cotransporter 7 (Na(+)/bile acid cotranspor	w
 SODIUM	human	Q12908	SLC10A2	Q12908	4	58	Ileal sodium/bile acid cotransporter (Apical sodium-dependen	w
-SODIUM	human	Q13183	SLC13A2	Q13183	6	46	Solute carrier family 13 member 2 (Na(+)/dicarboxylate cotra	w
-SODIUM	human	Q13733	ATP1A4	Q13733	7	100	Sodium/potassium-transporting ATPase subunit alpha-4 (Na(+)/	w
+SODIUM	human	Q13183	SLC13A2	Q13183	5	46	Solute carrier family 13 member 2 (Na(+)/dicarboxylate cotra	w
+SODIUM	human	Q13733	ATP1A4	Q13733	5	100	Sodium/potassium-transporting ATPase subunit alpha-4 (Na(+)/	w
 SODIUM	human	Q14524	SCN5A	Q14524	3	53	Sodium channel protein type 5 subunit alpha (Sodium channel 	w
-SODIUM	human	Q14802	FXYD3	Q14802	15	115	FXYD domain-containing ion transport regulator 3 (Chloride c	w
-SODIUM	human	Q14940	SLC9A5	Q14940	11	59	Sodium/hydrogen exchanger 5 (Na(+)/H(+) exchanger 5) (NHE-5)	w
-SODIUM	human	Q14973	SLC10A1	Q14973	4	155	Hepatic sodium/bile acid cotransporter (Cell growth-inhibiti	w
+SODIUM	human	Q14802	FXYD3	Q14802	13	115	FXYD domain-containing ion transport regulator 3 (Chloride c	w
+SODIUM	human	Q14940	SLC9A5	Q14940	10	59	Sodium/hydrogen exchanger 5 (Na(+)/H(+) exchanger 5) (NHE-5)	w
+SODIUM	human	Q14973	SLC10A1	Q14973	3	155	Hepatic sodium/bile acid cotransporter (Cell growth-inhibiti	w
 SODIUM	human	Q15858	SCN9A	Q15858	5	42	Sodium channel protein type 9 subunit alpha (Neuroendocrine 	w
 SODIUM	human	Q16515	ASIC2	Q16515	8	44	Acid-sensing ion channel 2 (ASIC2) (Amiloride-sensitive cati	w
-SODIUM	human	Q1EHB4	SLC5A12	Q1EHB4	2	30	Sodium-coupled monocarboxylate transporter 2 (Electroneutral	w
-SODIUM	human	Q2M3M2	SLC5A9	Q2M3M2	7	35	Sodium/glucose cotransporter 4 (Na(+)/glucose cotransporter 	w
-SODIUM	human	Q2Y0W8	SLC4A8	Q2Y0W8	9	79	Electroneutral sodium bicarbonate exchanger 1 (Electroneutra	w
+SODIUM	human	Q1EHB4	SLC5A12	Q1EHB4	1	30	Sodium-coupled monocarboxylate transporter 2 (Electroneutral	w
+SODIUM	human	Q2M3M2	SLC5A9	Q2M3M2	6	35	Sodium/glucose cotransporter 4 (Na(+)/glucose cotransporter 	w
+SODIUM	human	Q2Y0W8	SLC4A8	Q2Y0W8	8	79	Electroneutral sodium bicarbonate exchanger 1 (Electroneutra	w
 SODIUM	human	Q4G0N8	SLC9C1	Q4G0N8	3	30	Solute carrier family 9 member C1 (Na(+)/H(+) exchanger 10) 	w
-SODIUM	human	Q4KMZ8	NKAIN1	Q4KMZ8	13	130	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+SODIUM	human	Q4KMZ8	NKAIN1	Q4KMZ8	9	130	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
 SODIUM	human	Q4ZJI4	SLC9B1	Q4ZJI4	2	15	Sodium/hydrogen exchanger 9B1 (Na(+)/H(+) exchanger-like dom	w
-SODIUM	human	Q5JUK3	KCNT1	Q5JUK3	2	24	Potassium channel subfamily T member 1 (KCa4.1) (KNa1.1) (So	w
+SODIUM	human	Q5JUK3	KCNT1	Q5JUK3	1	24	Potassium channel subfamily T member 1 (KCa4.1) (KNa1.1) (So	w
 SODIUM	human	Q5PT55	SLC10A5	Q5PT55	1	10	Sodium/bile acid cotransporter 5 (Na(+)/bile acid cotranspor	w
 SODIUM	human	Q5TAH2	SLC9C2	Q5TAH2	2	35	Sodium/hydrogen exchanger 11 (Na(+)/H(+) exchanger 11) (NHE-	w
-SODIUM	human	Q5VXU1	NKAIN2	Q5VXU1	6	95	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+SODIUM	human	Q5VXU1	NKAIN2	Q5VXU1	4	95	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
 SODIUM	human	Q6AI14	SLC9A4	Q6AI14	9	47	Sodium/hydrogen exchanger 4 (Na(+)/H(+) exchanger 4) (NHE-4)	w
-SODIUM	human	Q6J4K2	SLC8B1	Q6J4K2	2	46	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	w
+SODIUM	human	Q6J4K2	SLC8B1	Q6J4K2	1	46	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	w
 SODIUM	human	Q6UVM3	KCNT2	Q6UVM3	3	38	Potassium channel subfamily T member 2 (KNa1.2) (Sequence li	w
-SODIUM	human	Q71RS6	SLC24A5	Q71RS6	2	32	Sodium/potassium/calcium exchanger 5 (Na(+)/K(+)/Ca(2+)-exch	w
-SODIUM	human	Q86UD5	SLC9B2	Q86UD5	4	22	Sodium/hydrogen exchanger 9B2 (Na(+)/H(+) exchanger NHA2) (N	w
-SODIUM	human	Q8IVB4	SLC9A9	Q8IVB4	11	121	Sodium/hydrogen exchanger 9 (Na(+)/H(+) exchanger 9) (NHE-9)	w
+SODIUM	human	Q71RS6	SLC24A5	Q71RS6	1	32	Sodium/potassium/calcium exchanger 5 (Na(+)/K(+)/Ca(2+)-exch	w
+SODIUM	human	Q86UD5	SLC9B2	Q86UD5	2	22	Sodium/hydrogen exchanger 9B2 (Na(+)/H(+) exchanger NHA2) (N	w
+SODIUM	human	Q8IVB4	SLC9A9	Q8IVB4	8	121	Sodium/hydrogen exchanger 9 (Na(+)/H(+) exchanger 9) (NHE-9)	w
 SODIUM	human	Q8IVV8	NKAIN4	Q8IVV8	4	56	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
-SODIUM	human	Q8IWT1	SCN4B	Q8IWT1	27	251	Sodium channel regulatory subunit beta-4	w
+SODIUM	human	Q8IWT1	SCN4B	Q8IWT1	18	251	Sodium channel regulatory subunit beta-4	w
 SODIUM	human	Q8IZF0	NALCN	Q8IZF0	1	109	Sodium leak channel NALCN (CanIon) (Sodium leak channel non-	w
-SODIUM	human	Q8N130	SLC34A3	Q8N130	3	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
-SODIUM	human	Q8N695	SLC5A8	Q8N695	4	55	Sodium-coupled monocarboxylate transporter 1 (Apical iodide 	w
-SODIUM	human	Q8N8D7	NKAIN3	Q8N8D7	6	66	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
+SODIUM	human	Q8N130	SLC34A3	Q8N130	1	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
+SODIUM	human	Q8N695	SLC5A8	Q8N695	3	55	Sodium-coupled monocarboxylate transporter 1 (Apical iodide 	w
+SODIUM	human	Q8N8D7	NKAIN3	Q8N8D7	5	66	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
 SODIUM	human	Q8NBS3	SLC4A11	Q8NBS3	6	83	Solute carrier family 4 member 11 (Sodium borate cotransport	w
-SODIUM	human	Q8NFF2	SLC24A4	Q8NFF2	5	46	Sodium/potassium/calcium exchanger 4 (Na(+)/K(+)/Ca(2+)-exch	w
-SODIUM	human	Q8WWX8	SLC5A11	Q8WWX8	7	58	Sodium/myo-inositol cotransporter 2 (Na(+)/myo-inositol cotr	w
-SODIUM	human	Q92581	SLC9A6	Q92581	17	122	Sodium/hydrogen exchanger 6 (Na(+)/H(+) exchanger 6) (NHE-6)	w
+SODIUM	human	Q8NFF2	SLC24A4	Q8NFF2	4	46	Sodium/potassium/calcium exchanger 4 (Na(+)/K(+)/Ca(2+)-exch	w
+SODIUM	human	Q8WWX8	SLC5A11	Q8WWX8	6	58	Sodium/myo-inositol cotransporter 2 (Na(+)/myo-inositol cotr	w
+SODIUM	human	Q92581	SLC9A6	Q92581	15	122	Sodium/hydrogen exchanger 6 (Na(+)/H(+) exchanger 6) (NHE-6)	w
 SODIUM	human	Q92911	SLC5A5	Q92911	3	74	Sodium/iodide cotransporter (Na(+)/I(-) cotransporter) (Natr	w
 SODIUM	human	Q96EP9	SLC10A4	Q96EP9	4	27	Putative sodium/bile acid cotransporter 4 (Na(+)/bile acid c	w
-SODIUM	human	Q96NL6	SCLT1	Q96NL6	54	275	Sodium channel and clathrin linker 1 (Sodium channel-associa	w
-SODIUM	human	Q96Q91	SLC4A9	Q96Q91	7	45	Anion exchange protein 4 (AE 4) (Anion exchanger 4) (Sodium 	w
-SODIUM	human	Q96T83	SLC9A7	Q96T83	15	83	Sodium/hydrogen exchanger 7 (Na(+)/H(+) exchanger 7) (NHE-7)	w
+SODIUM	human	Q96NL6	SCLT1	Q96NL6	49	275	Sodium channel and clathrin linker 1 (Sodium channel-associa	w
+SODIUM	human	Q96Q91	SLC4A9	Q96Q91	4	45	Anion exchange protein 4 (AE 4) (Anion exchanger 4) (Sodium 	w
+SODIUM	human	Q96T83	SLC9A7	Q96T83	14	83	Sodium/hydrogen exchanger 7 (Na(+)/H(+) exchanger 7) (NHE-7)	w
 SODIUM	human	Q99250	SCN2A	Q99250	6	82	Sodium channel protein type 2 subunit alpha (HBSC II) (Sodiu	w
-SODIUM	human	Q9BWG6	SCNM1	Q9BWG6	36	305	Sodium channel modifier 1	w
+SODIUM	human	Q9BWG6	SCNM1	Q9BWG6	30	305	Sodium channel modifier 1	w
 SODIUM	human	Q9BY07	SLC4A5	Q9BY07	7	46	Electrogenic sodium bicarbonate cotransporter 4 (NBCe2) (Sol	w
 SODIUM	human	Q9BZW2	SLC13A1	Q9BZW2	4	52	Solute carrier family 13 member 1 (Renal sodium/sulfate cotr	w
 SODIUM	human	Q9HC58	SLC24A3	Q9HC58	1	57	Sodium/potassium/calcium exchanger 3 (Na(+)/K(+)/Ca(2+)-exch	w
 SODIUM	human	Q9NP91	SLC6A20	Q9NP91	5	67	Sodium- and chloride-dependent transporter XTRP3 (Sodium/imi	w
 SODIUM	human	Q9NY46	SCN3A	Q9NY46	5	85	Sodium channel protein type 3 subunit alpha (Sodium channel 	w
-SODIUM	human	Q9NY72	SCN3B	Q9NY72	71	514	Sodium channel regulatory subunit beta-3	w
-SODIUM	human	Q9P1Z3	HCN3	Q9P1Z3	35	121	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+SODIUM	human	Q9NY72	SCN3B	Q9NY72	46	514	Sodium channel regulatory subunit beta-3	w
+SODIUM	human	Q9P1Z3	HCN3	Q9P1Z3	21	121	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
 SODIUM	human	Q9UBY0	SLC9A2	Q9UBY0	12	64	Sodium/hydrogen exchanger 2 (Na(+)/H(+) exchanger 2) (NHE-2)	w
 SODIUM	human	Q9UHC3	ASIC3	Q9UHC3	9	80	Acid-sensing ion channel 3 (ASIC3) (hASIC3) (Amiloride-sensi	w
 SODIUM	human	Q9UI33	SCN11A	Q9UI33	1	10	Sodium channel protein type 11 subunit alpha (Peripheral ner	w
-SODIUM	human	Q9UI40	SLC24A2	Q9UI40	5	70	Sodium/potassium/calcium exchanger 2 (Na(+)/K(+)/Ca(2+)-exch	w
-SODIUM	human	Q9UL51	HCN2	Q9UL51	31	116	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+SODIUM	human	Q9UI40	SLC24A2	Q9UI40	3	70	Sodium/potassium/calcium exchanger 2 (Na(+)/K(+)/Ca(2+)-exch	w
+SODIUM	human	Q9UL51	HCN2	Q9UL51	19	116	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
 SODIUM	human	Q9UPR5	SLC8A2	Q9UPR5	2	76	Sodium/calcium exchanger 2 (Na(+)/Ca(2+)-exchange protein 2)	w
 SODIUM	human	Q9UQD0	SCN8A	Q9UQD0	4	103	Sodium channel protein type 8 subunit alpha (Sodium channel 	w
 SODIUM	human	Q9Y2E8	SLC9A8	Q9Y2E8	7	51	Sodium/hydrogen exchanger 8 (Na(+)/H(+) exchanger 8) (NHE-8)	w
-SODIUM	human	Q9Y3Q4	HCN4	Q9Y3Q4	50	178	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
+SODIUM	human	Q9Y3Q4	HCN4	Q9Y3Q4	31	178	Potassium/sodium hyperpolarization-activated cyclic nucleoti	w
 SODIUM	human	Q9Y5Y9	SCN10A	Q9Y5Y9	2	14	Sodium channel protein type 10 subunit alpha (Peripheral ner	w
-SODIUM	human	Q9Y6M7	SLC4A7	Q9Y6M7	18	232	Sodium bicarbonate cotransporter 3 (Electroneutral Na/HCO(3)	w
-SODIUM	human	Q9Y6R1	SLC4A4	Q9Y6R1	11	92	Electrogenic sodium bicarbonate cotransporter 1 (Sodium bica	w
+SODIUM	human	Q9Y6M7	SLC4A7	Q9Y6M7	15	232	Sodium bicarbonate cotransporter 3 (Electroneutral Na/HCO(3)	w
+SODIUM	human	Q9Y6R1	SLC4A4	Q9Y6R1	9	92	Electrogenic sodium bicarbonate cotransporter 1 (Sodium bica	w
 SODIUM	worm	G5EBN7	nhx-8	G5EBN7	0	2	Sodium/hydrogen exchanger	w
 SODIUM	worm	G5ED88	nhx-5	G5ED88	0	4	Sodium/hydrogen exchanger	w
 SODIUM	worm	G5EDH8	nhx-1	G5EDH8	3	4	Sodium/hydrogen exchanger	w
@@ -257,40 +257,40 @@ SODIUM	zebrafish	Q9DGI4	atp1b3b	Q9DGI4	3	31	Sodium/potassium-transporting ATPase
 SODIUM	zebrafish	Q9DGL2	atp1b2a	Q9DGL2	2	28	Sodium/potassium-transporting ATPase subunit beta	w
 SODIUM	zebrafish	Q9DGL6	atp1a1a.1	Q9DGL6	9	17	Sodium/potassium-transporting ATPase subunit alpha	w
 SODIUM-	fly	FBgn0011603	ine	Q9VR07	0	9	Sodium- and chloride-dependent GABA transporter ine (Protein	w
-SODIUM-	human	P30531	SLC6A1	P30531	11	170	Sodium- and chloride-dependent GABA transporter 1 (GAT-1) (S	w
-SODIUM-	human	P31641	SLC6A6	P31641	2	92	Sodium- and chloride-dependent taurine transporter (Solute c	w
-SODIUM-	human	P48029	SLC6A8	P48029	15	219	Sodium- and chloride-dependent creatine transporter 1 (CT1) 	w
-SODIUM-	human	P48065	SLC6A12	P48065	6	52	Sodium- and chloride-dependent betaine transporter (BGT-1) (	w
+SODIUM-	human	P30531	SLC6A1	P30531	8	170	Sodium- and chloride-dependent GABA transporter 1 (GAT-1) (S	w
+SODIUM-	human	P31641	SLC6A6	P31641	0	92	Sodium- and chloride-dependent taurine transporter (Solute c	w
+SODIUM-	human	P48029	SLC6A8	P48029	9	219	Sodium- and chloride-dependent creatine transporter 1 (CT1) 	w
+SODIUM-	human	P48065	SLC6A12	P48065	5	52	Sodium- and chloride-dependent betaine transporter (BGT-1) (	w
 SODIUM-	human	P48066	SLC6A11	P48066	1	57	Sodium- and chloride-dependent GABA transporter 3 (GAT-3) (S	w
 SODIUM-	human	P48067	SLC6A9	P48067	3	59	Sodium- and chloride-dependent glycine transporter 1 (GlyT-1	w
-SODIUM-	human	P55011	SLC12A2	P55011	13	246	Solute carrier family 12 member 2 (Basolateral Na-K-Cl sympo	w
+SODIUM-	human	P55011	SLC12A2	P55011	11	246	Solute carrier family 12 member 2 (Basolateral Na-K-Cl sympo	w
 SODIUM-	human	Q13621	SLC12A1	Q13621	8	61	Solute carrier family 12 member 1 (Bumetanide-sensitive sodi	w
 SODIUM-	human	Q96N87	SLC6A18	Q96N87	2	38	Inactive sodium-dependent neutral amino acid transporter B(0	w
 SODIUM-	human	Q9GZN6	SLC6A16	Q9GZN6	1	10	Orphan sodium- and chloride-dependent neurotransmitter trans	w
-SODIUM-	human	Q9H2J7	SLC6A15	Q9H2J7	19	253	Sodium-dependent neutral amino acid transporter B(0)AT2 (Sod	w
+SODIUM-	human	Q9H2J7	SLC6A15	Q9H2J7	17	253	Sodium-dependent neutral amino acid transporter B(0)AT2 (Sod	w
 SODIUM-	human	Q9NP91	SLC6A20	Q9NP91	5	67	Sodium- and chloride-dependent transporter XTRP3 (Sodium/imi	w
 SODIUM-	human	Q9NSD5	SLC6A13	Q9NSD5	1	63	Sodium- and chloride-dependent GABA transporter 2 (GAT-2) (S	w
 SODIUM-	human	Q9UN76	SLC6A14	Q9UN76	1	47	Sodium- and chloride-dependent neutral and basic amino acid 	w
-SODIUM-	human	Q9Y345	SLC6A5	Q9Y345	5	90	Sodium- and chloride-dependent glycine transporter 2 (GlyT-2	w
+SODIUM-	human	Q9Y345	SLC6A5	Q9Y345	3	90	Sodium- and chloride-dependent glycine transporter 2 (GlyT-2	w
 SODIUM-	worm	G5EBN9	snf-3	G5EBN9	0	1	Sodium- and chloride-dependent betaine transporter	w
 SODIUM-CHLORIDE	human	P55017	SLC12A3	P55017	9	79	Solute carrier family 12 member 3 (Na-Cl cotransporter) (NCC	w
 SODIUM-COUPLED	fly	FBgn0033368	CG13743	Q8MRD1	0	2	Putative sodium-coupled neutral amino acid transporter 11 (S	w
 SODIUM-COUPLED	fly	FBgn0051668	CG31668	Q8IPY0	0	3	Sodium-coupled monocarboxylate transporter 2	w
 SODIUM-COUPLED	fly	FBgn0053124	CG33124	Q9VQ85	1	2	Sodium-coupled monocarboxylate transporter 1	w
 SODIUM-COUPLED	human	O00337	SLC28A1	O00337	2	23	Sodium/nucleoside cotransporter 1 (Concentrative nucleoside 	w
-SODIUM-COUPLED	human	O43868	SLC28A2	O43868	3	37	Sodium/nucleoside cotransporter 2 (Concentrative nucleoside 	w
-SODIUM-COUPLED	human	Q08AI6	SLC38A11	Q08AI6	2	25	Putative sodium-coupled neutral amino acid transporter 11 (S	w
-SODIUM-COUPLED	human	Q1EHB4	SLC5A12	Q1EHB4	2	30	Sodium-coupled monocarboxylate transporter 2 (Electroneutral	w
+SODIUM-COUPLED	human	O43868	SLC28A2	O43868	2	37	Sodium/nucleoside cotransporter 2 (Concentrative nucleoside 	w
+SODIUM-COUPLED	human	Q08AI6	SLC38A11	Q08AI6	1	25	Putative sodium-coupled neutral amino acid transporter 11 (S	w
+SODIUM-COUPLED	human	Q1EHB4	SLC5A12	Q1EHB4	1	30	Sodium-coupled monocarboxylate transporter 2 (Electroneutral	w
 SODIUM-COUPLED	human	Q86YT5	SLC13A5	Q86YT5	5	48	Na(+)/citrate cotransporter (NaCT) (Sodium-coupled citrate t	w
-SODIUM-COUPLED	human	Q8N695	SLC5A8	Q8N695	4	55	Sodium-coupled monocarboxylate transporter 1 (Apical iodide 	w
+SODIUM-COUPLED	human	Q8N695	SLC5A8	Q8N695	3	55	Sodium-coupled monocarboxylate transporter 1 (Apical iodide 	w
 SODIUM-COUPLED	human	Q8NE00	SLC38A12	Q8NE00	1	51	Putative sodium-coupled neutral amino acid transporter 12 (S	w
-SODIUM-COUPLED	human	Q8WUX1	SLC38A5	Q8WUX1	7	98	Sodium-coupled neutral amino acid transporter 5 (Solute carr	w
+SODIUM-COUPLED	human	Q8WUX1	SLC38A5	Q8WUX1	4	98	Sodium-coupled neutral amino acid transporter 5 (Solute carr	w
 SODIUM-COUPLED	human	Q969I6	SLC38A4	Q969I6	0	47	Sodium-coupled neutral amino acid transporter 4 (Amino acid 	w
-SODIUM-COUPLED	human	Q96QD8	SLC38A2	Q96QD8	5	207	Sodium-coupled neutral amino acid symporter 2 (Amino acid tr	w
+SODIUM-COUPLED	human	Q96QD8	SLC38A2	Q96QD8	2	207	Sodium-coupled neutral amino acid symporter 2 (Amino acid tr	w
 SODIUM-COUPLED	human	Q99624	SLC38A3	Q99624	2	67	Sodium-coupled neutral amino acid transporter 3 (N-system am	w
-SODIUM-COUPLED	human	Q9H2H9	SLC38A1	Q9H2H9	6	229	Sodium-coupled neutral amino acid symporter 1 (Amino acid tr	w
-SODIUM-COUPLED	human	Q9H2J7	SLC6A15	Q9H2J7	19	253	Sodium-dependent neutral amino acid transporter B(0)AT2 (Sod	w
-SODIUM-COUPLED	human	Q9NVC3	SLC38A7	Q9NVC3	12	115	Sodium-coupled neutral amino acid transporter 7 (Solute carr	w
+SODIUM-COUPLED	human	Q9H2H9	SLC38A1	Q9H2H9	5	229	Sodium-coupled neutral amino acid symporter 1 (Amino acid tr	w
+SODIUM-COUPLED	human	Q9H2J7	SLC6A15	Q9H2J7	17	253	Sodium-dependent neutral amino acid transporter B(0)AT2 (Sod	w
+SODIUM-COUPLED	human	Q9NVC3	SLC38A7	Q9NVC3	9	115	Sodium-coupled neutral amino acid transporter 7 (Solute carr	w
 SODIUM-COUPLED	worm	Q19425	F13H10.3	Q19425	2	37	Sodium-coupled neutral amino acid transporter 9 homolog	w
 SODIUM-COUPLED	zebrafish	A0A0R4IAD9	slc38a3b	A0A0R4IAD9	0	4	Sodium-coupled neutral amino acid transporter 3 isoform X1	w
 SODIUM-COUPLED	zebrafish	A0A8M6YZH0	slc38a4	A0A8M6YZH0	0	4	Sodium-coupled neutral amino acid transporter 4	w
@@ -303,38 +303,38 @@ SODIUM-DEPENDENT	fly	FBgn0034049	bdg	Q0E961	1	23	Sodium-dependent transporter be
 SODIUM-DEPENDENT	fly	FBgn0039873	Smvt	Q9V9U1	0	2	FI02923p (Sodium-dependent multivitamin transporter)	w
 SODIUM-DEPENDENT	fly	FBgn0052669	CG32669	P83740	1	22	Putative sodium-dependent multivitamin transporter (Na(+)-de	w
 SODIUM-DEPENDENT	human	O00476	SLC17A3	O00476	0	13	Sodium-dependent phosphate transport protein 4 (Na(+)/PI cot	w
-SODIUM-DEPENDENT	human	O00624	SLC17A2	O00624	3	83	Sodium-dependent phosphate transport protein 3 (Na(+)/PI cot	w
+SODIUM-DEPENDENT	human	O00624	SLC17A2	O00624	2	83	Sodium-dependent phosphate transport protein 3 (Na(+)/PI cot	w
 SODIUM-DEPENDENT	human	O76082	SLC22A5	O76082	1	79	Organic cation/carnitine transporter 2 (High-affinity sodium	w
 SODIUM-DEPENDENT	human	O95436	SLC34A2	O95436	2	155	Sodium-dependent phosphate transport protein 2B (Sodium-phos	w
 SODIUM-DEPENDENT	human	P23975	SLC6A2	P23975	1	83	Sodium-dependent noradrenaline transporter (Norepinephrine t	w
-SODIUM-DEPENDENT	human	P31645	SLC6A4	P31645	6	125	Sodium-dependent serotonin transporter (SERT) (5HT transport	w
-SODIUM-DEPENDENT	human	P43003	SLC1A3	P43003	10	184	Excitatory amino acid transporter 1 (Sodium-dependent glutam	w
-SODIUM-DEPENDENT	human	P43004	SLC1A2	P43004	8	124	Excitatory amino acid transporter 2 (Glutamate/aspartate tra	w
-SODIUM-DEPENDENT	human	P43005	SLC1A1	P43005	16	236	Excitatory amino acid transporter 3 (Excitatory amino-acid c	w
+SODIUM-DEPENDENT	human	P31645	SLC6A4	P31645	3	125	Sodium-dependent serotonin transporter (SERT) (5HT transport	w
+SODIUM-DEPENDENT	human	P43003	SLC1A3	P43003	9	184	Excitatory amino acid transporter 1 (Sodium-dependent glutam	w
+SODIUM-DEPENDENT	human	P43004	SLC1A2	P43004	6	124	Excitatory amino acid transporter 2 (Glutamate/aspartate tra	w
+SODIUM-DEPENDENT	human	P43005	SLC1A1	P43005	12	236	Excitatory amino acid transporter 3 (Excitatory amino-acid c	w
 SODIUM-DEPENDENT	human	P48664	SLC1A6	P48664	6	45	Excitatory amino acid transporter 4 (Sodium-dependent glutam	w
 SODIUM-DEPENDENT	human	Q01959	SLC6A3	Q01959	1	152	Sodium-dependent dopamine transporter (DA transporter) (DAT)	w
-SODIUM-DEPENDENT	human	Q06495	SLC34A1	Q06495	4	80	Sodium-dependent phosphate transport protein 2A (Sodium-phos	w
-SODIUM-DEPENDENT	human	Q08357	SLC20A2	Q08357	5	92	Sodium-dependent phosphate transporter 2 (Gibbon ape leukemi	w
+SODIUM-DEPENDENT	human	Q06495	SLC34A1	Q06495	3	80	Sodium-dependent phosphate transport protein 2A (Sodium-phos	w
+SODIUM-DEPENDENT	human	Q08357	SLC20A2	Q08357	4	92	Sodium-dependent phosphate transporter 2 (Gibbon ape leukemi	w
 SODIUM-DEPENDENT	human	Q12908	SLC10A2	Q12908	4	58	Ileal sodium/bile acid cotransporter (Apical sodium-dependen	w
-SODIUM-DEPENDENT	human	Q14916	SLC17A1	Q14916	1	32	Sodium-dependent phosphate transport protein 1 (Na(+)/PI cot	w
-SODIUM-DEPENDENT	human	Q15758	SLC1A5	Q15758	22	309	Neutral amino acid transporter B(0) (ATB(0)) (Baboon M7 viru	w
-SODIUM-DEPENDENT	human	Q3KNW5	SLC10A6	Q3KNW5	6	172	Sodium-dependent organic anion transporter (SOAT) (Solute ca	w
-SODIUM-DEPENDENT	human	Q5TF39	SLC60A2	Q5TF39	5	72	Solute carrier family 60 member 2 (Major facilitator superfa	w
-SODIUM-DEPENDENT	human	Q695T7	SLC6A19	Q695T7	4	48	Sodium-dependent neutral amino acid transporter B(0)AT1 (Sol	w
+SODIUM-DEPENDENT	human	Q14916	SLC17A1	Q14916	0	32	Sodium-dependent phosphate transport protein 1 (Na(+)/PI cot	w
+SODIUM-DEPENDENT	human	Q15758	SLC1A5	Q15758	19	309	Neutral amino acid transporter B(0) (ATB(0)) (Baboon M7 viru	w
+SODIUM-DEPENDENT	human	Q3KNW5	SLC10A6	Q3KNW5	5	172	Sodium-dependent organic anion transporter (SOAT) (Solute ca	w
+SODIUM-DEPENDENT	human	Q5TF39	SLC60A2	Q5TF39	3	72	Solute carrier family 60 member 2 (Major facilitator superfa	w
+SODIUM-DEPENDENT	human	Q695T7	SLC6A19	Q695T7	3	48	Sodium-dependent neutral amino acid transporter B(0)AT1 (Sol	w
 SODIUM-DEPENDENT	human	Q6PIS1	SLC23A3	Q6PIS1	0	25	Solute carrier family 23 member 3 (HPC E2-binding protein 3)	w
 SODIUM-DEPENDENT	human	Q86YT5	SLC13A5	Q86YT5	5	48	Na(+)/citrate cotransporter (NaCT) (Sodium-coupled citrate t	w
-SODIUM-DEPENDENT	human	Q8N130	SLC34A3	Q8N130	3	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
-SODIUM-DEPENDENT	human	Q8NA29	MFSD2A	Q8NA29	7	170	Sodium-dependent lysophosphatidylcholine symporter 1 (NLS1) 	w
-SODIUM-DEPENDENT	human	Q8WUM9	SLC20A1	Q8WUM9	13	127	Sodium-dependent phosphate transporter 1 (Gibbon ape leukemi	w
+SODIUM-DEPENDENT	human	Q8N130	SLC34A3	Q8N130	1	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
+SODIUM-DEPENDENT	human	Q8NA29	MFSD2A	Q8NA29	4	170	Sodium-dependent lysophosphatidylcholine symporter 1 (NLS1) 	w
+SODIUM-DEPENDENT	human	Q8WUM9	SLC20A1	Q8WUM9	7	127	Sodium-dependent phosphate transporter 1 (Gibbon ape leukemi	w
 SODIUM-DEPENDENT	human	Q8WWT9	SLC13A3	Q8WWT9	4	32	Na(+)/dicarboxylate cotransporter 3 (NaDC-3) (hNaDC3) (Na(+)	w
-SODIUM-DEPENDENT	human	Q8WWX8	SLC5A11	Q8WWX8	7	58	Sodium/myo-inositol cotransporter 2 (Na(+)/myo-inositol cotr	w
+SODIUM-DEPENDENT	human	Q8WWX8	SLC5A11	Q8WWX8	6	58	Sodium/myo-inositol cotransporter 2 (Na(+)/myo-inositol cotr	w
 SODIUM-DEPENDENT	human	Q96N87	SLC6A18	Q96N87	2	38	Inactive sodium-dependent neutral amino acid transporter B(0	w
-SODIUM-DEPENDENT	human	Q99884	SLC6A7	Q99884	3	58	Sodium-dependent proline transporter (Solute carrier family 	w
+SODIUM-DEPENDENT	human	Q99884	SLC6A7	Q99884	1	58	Sodium-dependent proline transporter (Solute carrier family 	w
 SODIUM-DEPENDENT	human	Q9H1V8	SLC6A17	Q9H1V8	3	109	Sodium-dependent neutral amino acid transporter SLC6A17 (Sod	w
-SODIUM-DEPENDENT	human	Q9H2J7	SLC6A15	Q9H2J7	19	253	Sodium-dependent neutral amino acid transporter B(0)AT2 (Sod	w
-SODIUM-DEPENDENT	human	Q9UGH3	SLC23A2	Q9UGH3	2	61	Solute carrier family 23 member 2 (Na(+)/L-ascorbic acid tra	w
+SODIUM-DEPENDENT	human	Q9H2J7	SLC6A15	Q9H2J7	17	253	Sodium-dependent neutral amino acid transporter B(0)AT2 (Sod	w
+SODIUM-DEPENDENT	human	Q9UGH3	SLC23A2	Q9UGH3	1	61	Solute carrier family 23 member 2 (Na(+)/L-ascorbic acid tra	w
 SODIUM-DEPENDENT	human	Q9UHI7	SLC23A1	Q9UHI7	1	40	Solute carrier family 23 member 1 (Na(+)/L-ascorbic acid tra	w
-SODIUM-DEPENDENT	human	Q9Y289	SLC5A6	Q9Y289	8	149	Sodium-dependent multivitamin transporter (Na(+)-dependent m	w
+SODIUM-DEPENDENT	human	Q9Y289	SLC5A6	Q9Y289	7	149	Sodium-dependent multivitamin transporter (Na(+)-dependent m	w
 SODIUM-DEPENDENT	worm	O45813	snf-12	O45813	1	1	Sodium-dependent transporter snf-12	w
 SODIUM-DEPENDENT	worm	O76689	snf-6	O76689	2	5	Sodium-dependent acetylcholine transporter	w
 SODIUM-DEPENDENT	worm	Q03614	dat-1	Q03614	0	6	Sodium-dependent dopamine transporter	w
@@ -347,19 +347,19 @@ SODIUM-DEPENDENT	zebrafish	A4QN56	mfsd4b	A4QN56	1	8	Sodium-dependent glucose tra
 SODIUM-DEPENDENT	zebrafish	F8W579	slc34a1a	F8W579	0	8	Sodium-dependent phosphate transport protein 2A	w
 SODIUM-DEPENDENT	zebrafish	Q6NV12	slc20a1a	Q6NV12	0	2	Sodium-dependent phosphate transporter 1-A	w
 SODIUM-DEPENDENT	zebrafish	Q6PFM1	slc20a1b	Q6PFM1	0	2	Sodium-dependent phosphate transporter 1-B	w
-SODIUM-DRIVEN	human	Q6U841	SLC4A10	Q6U841	13	77	Sodium-driven chloride bicarbonate exchanger (Solute carrier	w
-SODIUM-GLUCOSE	human	P13866	SLC5A1	P13866	8	89	Sodium/glucose cotransporter 1 (Na(+)/glucose cotransporter 	w
-SODIUM-GLUCOSE	human	P31639	SLC5A2	P31639	17	103	Sodium/glucose cotransporter 2 (Na(+)/glucose cotransporter 	w
-SODIUM-HYDROGEN	human	Q15599	NHERF2	Q15599	52	239	Na(+)/H(+) exchange regulatory cofactor NHE-RF2 (NHERF-2) (N	w
-SODIUM-INDEPENDENT	human	O43511	SLC26A4	O43511	10	121	Pendrin (Sodium-independent chloride/iodide transporter) (So	w
+SODIUM-DRIVEN	human	Q6U841	SLC4A10	Q6U841	12	77	Sodium-driven chloride bicarbonate exchanger (Solute carrier	w
+SODIUM-GLUCOSE	human	P13866	SLC5A1	P13866	7	89	Sodium/glucose cotransporter 1 (Na(+)/glucose cotransporter 	w
+SODIUM-GLUCOSE	human	P31639	SLC5A2	P31639	14	103	Sodium/glucose cotransporter 2 (Na(+)/glucose cotransporter 	w
+SODIUM-HYDROGEN	human	Q15599	NHERF2	Q15599	40	239	Na(+)/H(+) exchange regulatory cofactor NHE-RF2 (NHERF-2) (N	w
+SODIUM-INDEPENDENT	human	O43511	SLC26A4	O43511	9	121	Pendrin (Sodium-independent chloride/iodide transporter) (So	w
 SODIUM-INDEPENDENT	human	P46721	SLCO1A2	P46721	0	64	Solute carrier organic anion transporter family member 1A2 (	w
 SODIUM-INDEPENDENT	human	Q86WA9	SLC26A11	Q86WA9	6	64	Sodium-independent sulfate anion transporter (Solute carrier	w
-SODIUM-INDEPENDENT	human	Q8TCU3	SLC7A13	Q8TCU3	5	44	Solute carrier family 7 member 13 (Sodium-independent aspart	w
+SODIUM-INDEPENDENT	human	Q8TCU3	SLC7A13	Q8TCU3	3	44	Solute carrier family 7 member 13 (Sodium-independent aspart	w
 SODIUM-IODIDE	human	Q92911	SLC5A5	Q92911	3	74	Sodium/iodide cotransporter (Na(+)/I(-) cotransporter) (Natr	w
-SODIUM-LACTATE	human	Q1EHB4	SLC5A12	Q1EHB4	2	30	Sodium-coupled monocarboxylate transporter 2 (Electroneutral	w
+SODIUM-LACTATE	human	Q1EHB4	SLC5A12	Q1EHB4	1	30	Sodium-coupled monocarboxylate transporter 2 (Electroneutral	w
 SODIUM-PHOSPHATE	human	O95436	SLC34A2	O95436	2	155	Sodium-dependent phosphate transport protein 2B (Sodium-phos	w
-SODIUM-PHOSPHATE	human	Q06495	SLC34A1	Q06495	4	80	Sodium-dependent phosphate transport protein 2A (Sodium-phos	w
-SODIUM-PHOSPHATE	human	Q8N130	SLC34A3	Q8N130	3	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
+SODIUM-PHOSPHATE	human	Q06495	SLC34A1	Q06495	3	80	Sodium-dependent phosphate transport protein 2A (Sodium-phos	w
+SODIUM-PHOSPHATE	human	Q8N130	SLC34A3	Q8N130	1	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
 SODM	staphylococcus-aureus-93061	Q2G261	sodM	Q2G261	0	70	Superoxide dismutase	
-SODM_HUMAN	human	P04179	SOD2	P04179	10	423		
+SODM_HUMAN	human	P04179	SOD2	P04179	8	419		
 SODQ	fly	FBgn0039386	Sodq	Q9VBK8	19	266	superoxide dismutase (EC 1.15.1.1)	

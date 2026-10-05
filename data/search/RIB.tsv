@@ -1,8 +1,8 @@
 RIB	fly	FBgn0003254	rib	A0A0B4KFC4	99	394	Ribbon, isoform C	
-RIB-1	human	P07998	RNASE1	P07998	41	422	Ribonuclease pancreatic (EC 4.6.1.18) (HP-RNase) (RIB-1) (RN	w
+RIB-1	human	P07998	RNASE1	P07998	32	422	Ribonuclease pancreatic (EC 4.6.1.18) (HP-RNase) (RIB-1) (RN	w
 RIB-1	worm	O01704	rib-1	O01704	1	11	Exostosin-1 homolog	
 RIB-2	worm	O01705	rib-2	O01705	1	2	Exostosin-like-3 homolog	
-RIB1	human	P07998	RNASE1	P07998	41	422		
+RIB1	human	P07998	RNASE1	P07998	32	422		
 RIB1	schizosaccharomyces-pombe	Q9P7M9	rib1	Q9P7M9	0	1	Probable GTP cyclohydrolase-2	
 RIB1	yeast	P38066	RIB1	P38066	1	5	GTP cyclohydrolase-2	
 RIB2	candida-albicans-237561	A0A1D8PND6	RIB2	A0A1D8PND6	0	3	tRNA pseudouridine(32) synthase	
@@ -13,7 +13,7 @@ RIB4	schizosaccharomyces-pombe	Q9UUB1	rib4	Q9UUB1	0	4	6,7-dimethyl-8-ribitylluma
 RIB4	yeast	P50861	RIB4	P50861	0	10	6,7-dimethyl-8-ribityllumazine synthase	
 RIB43A	zebrafish	E7F099	ribc2	E7F099	3	76	RIB43A domain with coiled-coils 2	w
 RIB43A-LIKE	human	Q8N443	RIBC1	Q8N443	15	114	RIB43A-like with coiled-coils protein 1	w
-RIB43A-LIKE	human	Q9H4K1	RIBC2	Q9H4K1	21	120	RIB43A-like with coiled-coils protein 2	w
+RIB43A-LIKE	human	Q9H4K1	RIBC2	Q9H4K1	20	120	RIB43A-like with coiled-coils protein 2	w
 RIB43A-LIKE	zebrafish	F1R3H7	ribc1	F1R3H7	3	76	RIB43A-like with coiled-coils protein 1	w
 RIB5	cladophialophora-carrionii	A0A1C1CF59	RIB5	A0A1C1CF59	0	1	Riboflavin synthase	
 RIB5	schizosaccharomyces-pombe	Q9Y7P0	rib5	Q9Y7P0	0	1	Riboflavin synthase	
@@ -39,7 +39,7 @@ RIBB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PHU4	ribB	Q9PHU4	1	69	3,4-
 RIBB	escherichia-coli-83333	P0A7J0	ribB	P0A7J0	0	4	3,4-dihydroxy-2-butanone 4-phosphate synthase	
 RIBB	haemophilus-influenzae	P44866	ribB	P44866	0	1	3,4-dihydroxy-2-butanone 4-phosphate synthase	
 RIBB	helicobacter-pylori	O25484	ribB	O25484	0	38	3,4-dihydroxy-2-butanone 4-phosphate synthase	
-RIBB	human	Q92963	RIT1	Q92963	147	1356		
+RIBB	human	Q92963	RIT1	Q92963	108	1356		
 RIBB	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H374	ribB	A0A0H3H374	2	96	3,4-dihydroxy-2-butanone 4-phosphate synthase	
 RIBB	neisseria-gonorrhoeae	Q5F8Q9	ribB	Q5F8Q9	2	57	3,4-dihydroxy-2-butanone 4-phosphate synthase	
 RIBB	pseudomonas-aeruginosa	Q9HWX4	ribB	Q9HWX4	2	116	3,4-dihydroxy-2-butanone 4-phosphate synthase	
@@ -49,9 +49,9 @@ RIBBA	mycobacterium-tuberculosis	P9WHF1	ribBA	P9WHF1	2	68	Riboflavin biosynthesi
 RIBBA	nocardia-brasiliensis	K0F7V5	ribBA	K0F7V5	2	81	Riboflavin biosynthesis protein RibBA	
 RIBBA	staphylococcus-aureus-93061	Q2FXG1	ribBA	Q2FXG1	0	24	Riboflavin biosynthesis protein RibBA	
 RIBBON	fly	FBgn0003254	rib	A0A0B4KFC4	99	394	Ribbon, isoform C	w
-RIBBON	human	O60232	ZNRD2	O60232	23	312	Protein ZNRD2 (Autoantigen p27) (Protein zinc ribbon domain 	w
-RIBBON	human	Q9NVP4	DZANK1	Q9NVP4	4	28	Double zinc ribbon and ankyrin repeat-containing protein 1	w
-RIBBON	human	Q9P1U0	POLR1H	Q9P1U0	41	550	DNA-directed RNA polymerase I subunit RPA12 (DNA-directed RN	w
+RIBBON	human	O60232	ZNRD2	O60232	22	312	Protein ZNRD2 (Autoantigen p27) (Protein zinc ribbon domain 	w
+RIBBON	human	Q9NVP4	DZANK1	Q9NVP4	3	28	Double zinc ribbon and ankyrin repeat-containing protein 1	w
+RIBBON	human	Q9P1U0	POLR1H	Q9P1U0	30	549	DNA-directed RNA polymerase I subunit RPA12 (DNA-directed RN	w
 RIBC	methanocaldococcus-jannaschii	Q58584	ribC	Q58584	0	1	Riboflavin synthase	
 RIBC	mycobacterium-leprae	Q9CCP5	ribC	Q9CCP5	0	4	Riboflavin synthase	
 RIBC	pseudomonas-aeruginosa	Q9HWX3	ribC	Q9HWX3	0	1	Riboflavin synthase	
@@ -61,11 +61,11 @@ RIBC1	mus-musculus	Q9D0B8	Ribc1	Q9D0B8	3	48	RIB43A-like with coiled-coils protei
 RIBC1	rattus-norvegicus	Q6AYL4	Ribc1	Q6AYL4	2	88	RIB43A-like with coiled-coils protein 1	
 RIBC1	zebrafish	F1R3H7	ribc1	F1R3H7	3	76	RIB43A-like with coiled-coils protein 1	
 RIBC1_HUMAN	human	Q8N443	RIBC1	Q8N443	15	114		
-RIBC2	human	Q9H4K1	RIBC2	Q9H4K1	21	120	RIB43A-like with coiled-coils protein 2	
+RIBC2	human	Q9H4K1	RIBC2	Q9H4K1	20	120	RIB43A-like with coiled-coils protein 2	
 RIBC2	mus-musculus	Q9D4Q1	Ribc2	Q9D4Q1	3	67	RIB43A-like with coiled-coils protein 2	
 RIBC2	rattus-norvegicus	Q6AXN9	Ribc2	Q6AXN9	3	87	RIB43A-like with coiled-coils protein 2	
 RIBC2	zebrafish	E7F099	ribc2	E7F099	3	76	RIB43A domain with coiled-coils 2	
-RIBC2_HUMAN	human	Q9H4K1	RIBC2	Q9H4K1	21	120		
+RIBC2_HUMAN	human	Q9H4K1	RIBC2	Q9H4K1	20	120		
 RIBD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P806	ribD	Q0P806	2	58	Riboflavin-specific deaminase/reductase	
 RIBD	escherichia-coli-83333	P25539	ribD	P25539	0	53	Riboflavin biosynthesis protein RibD	
 RIBD	haemophilus-influenzae	P44326	ribD	P44326	0	36	Riboflavin biosynthesis protein RibD	
@@ -105,25 +105,25 @@ RIBH	salmonella-typhimurium	P66038	ribH	P66038	0	4	6,7-dimethyl-8-ribityllumazin
 RIBH	shigella-dysenteriae-serotype-1	Q32JG9	ribH	Q32JG9	0	2	6,7-dimethyl-8-ribityllumazine synthase	
 RIBH	staphylococcus-aureus-93061	Q2FXG2	ribH	Q2FXG2	0	1	6,7-dimethyl-8-ribityllumazine synthase	
 RIBH	streptococcus-pneumoniae	P66041	ribH	P66041	0	3	6,7-dimethyl-8-ribityllumazine synthase	
-RIBIIR	human	P04844	RPN2	P04844	36	549	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-RIBITOL	human	Q00796	SORD	Q00796	8	194	Sorbitol dehydrogenase (SDH) (EC 1.1.1.-) ((R,R)-butanediol 	w
+RIBIIR	human	P04844	RPN2	P04844	27	549	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+RIBITOL	human	Q00796	SORD	Q00796	7	194	Sorbitol dehydrogenase (SDH) (EC 1.1.1.-) ((R,R)-butanediol 	w
 RIBITOL	human	Q9H9S5	FKRP	Q9H9S5	6	79	Ribitol 5-phosphate transferase FKRP (EC 2.7.8.-) (Fukutin-r	w
-RIBITOL-5-PHOSPHATE	human	O75072	FKTN	O75072	25	93	Ribitol-5-phosphate transferase FKTN (EC 2.7.8.-) (Fukutin) 	w
+RIBITOL-5-PHOSPHATE	human	O75072	FKTN	O75072	16	93	Ribitol-5-phosphate transferase FKTN (EC 2.7.8.-) (Fukutin) 	w
 RIBITOL-5-PHOSPHATE	human	Q9H9S5	FKRP	Q9H9S5	6	79	Ribitol 5-phosphate transferase FKRP (EC 2.7.8.-) (Fukutin-r	w
-RIBITOL-5-PHOSPHATE	human	Q9Y2B1	RXYLT1	Q9Y2B1	4	53	Ribitol-5-phosphate xylosyltransferase 1 (EC 2.4.2.61) (Tran	w
+RIBITOL-5-PHOSPHATE	human	Q9Y2B1	RXYLT1	Q9Y2B1	1	53	Ribitol-5-phosphate xylosyltransferase 1 (EC 2.4.2.61) (Tran	w
 RIBITOL-5-PHOSPHATE	zebrafish	Q08CD5	rxylt1	Q08CD5	0	1	Ribitol-5-phosphate xylosyltransferase 1	w
 RIBITOL-5-PHOSPHATE	zebrafish	Q0PIP5	fkrp	Q0PIP5	0	11	Ribitol-5-phosphate transferase	w
 RIBJ	trypanosoma-brucei-brucei-185431	Q57VW6	RibJ	Q57VW6	0	2	Riboflavin transporter RibJ	
 RIBJ	trypanosoma-cruzi	Q4D3E8	RibJ	Q4D3E8	0	4	Riboflavin transporter RibJ	
-RIBO	human	Q9NPI5	NMRK2	Q9NPI5	8	62	Nicotinamide riboside kinase 2 (NRK 2) (NmR-K 2) (EC 2.7.1.2	w
+RIBO	human	Q9NPI5	NMRK2	Q9NPI5	6	62	Nicotinamide riboside kinase 2 (NRK 2) (NmR-K 2) (EC 2.7.1.2	w
 RIBO-1	worm	Q9GZH4	ribo-1	Q9GZH4	4	30	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	
-RIBOFLA	human	Q9NWF4	SLC52A1	Q9NWF4	5	175	Solute carrier family 52, riboflavin transporter, member 1 (	w
+RIBOFLA	human	Q9NWF4	SLC52A1	Q9NWF4	2	175	Solute carrier family 52, riboflavin transporter, member 1 (	w
 RIBOFLAVIN	fly	FBgn0014930	Rfk	O76206	1	12	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
 RIBOFLAVIN	fly	FBgn0039882	Rift	Q9V9S9	0	5	Riboflavin transporter	w
-RIBOFLAVIN	human	Q969G6	RFK	Q969G6	14	105	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
-RIBOFLAVIN	human	Q9HAB3	SLC52A2	Q9HAB3	9	192	Solute carrier family 52, riboflavin transporter, member 2 (	w
-RIBOFLAVIN	human	Q9NQ40	SLC52A3	Q9NQ40	6	155	Solute carrier family 52, riboflavin transporter, member 3 (	w
-RIBOFLAVIN	human	Q9NWF4	SLC52A1	Q9NWF4	5	175	Solute carrier family 52, riboflavin transporter, member 1 (	w
+RIBOFLAVIN	human	Q969G6	RFK	Q969G6	10	105	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
+RIBOFLAVIN	human	Q9HAB3	SLC52A2	Q9HAB3	4	192	Solute carrier family 52, riboflavin transporter, member 2 (	w
+RIBOFLAVIN	human	Q9NQ40	SLC52A3	Q9NQ40	5	155	Solute carrier family 52, riboflavin transporter, member 3 (	w
+RIBOFLAVIN	human	Q9NWF4	SLC52A1	Q9NWF4	2	175	Solute carrier family 52, riboflavin transporter, member 1 (	w
 RIBOFLAVIN	worm	Q21918	rfk-1	Q21918	0	3	riboflavin kinase	w
 RIBOFLAVIN	yeast	P38145	RIB5	P38145	0	6	Riboflavin synthase	w
 RIBOFLAVIN	yeast	Q03778	FMN1	Q03778	0	7	Riboflavin kinase	w
@@ -134,12 +134,12 @@ RIBOKINASE	fly	FBgn0032424	CG17010	Q9VK96	1	8	Ribokinase (RK) (EC 2.7.1.15)	w
 RIBOKINASE	human	Q9H477	RBKS	Q9H477	3	57	Ribokinase (RK) (EC 2.7.1.15)	w
 RIBOKINASE	worm	Q19133	CELE_F07A11.5	Q19133	0	25	Ribokinase	w
 RIBOKINASE	yeast	P25332	RBK1	P25332	0	6	Ribokinase	w
-RIBON	human	P55795	HNRNPH2	P55795	16	314	Heterogeneous nuclear ribonucleoprotein H2 (hnRNP H2) (FTP-3	w
-RIBON	human	Q504Q3	PAN2	Q504Q3	16	434	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
+RIBON	human	P55795	HNRNPH2	P55795	15	314	Heterogeneous nuclear ribonucleoprotein H2 (hnRNP H2) (FTP-3	w
+RIBON	human	Q504Q3	PAN2	Q504Q3	13	434	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
 RIBONUC	human	P63136	ERVK-25	P63136	7	28	Endogenous retrovirus group K member 25 Pol protein (HERV-K_	w
 RIBONUCL	human	Q9UQG0	ERVK-11	Q9UQG0	8	11	Endogenous retrovirus group K member 11 Pol protein (HERV-K_	w
-RIBONUCLEAR	human	O15116	LSM1	O15116	24	187	U6 snRNA-associated Sm-like protein LSm1 (Cancer-associated 	w
-RIBONUCLEAR	human	Q9Y333	LSM2	Q9Y333	29	327	U6 snRNA-associated Sm-like protein LSm2 (Protein G7b) (Smal	w
+RIBONUCLEAR	human	O15116	LSM1	O15116	21	187	U6 snRNA-associated Sm-like protein LSm1 (Cancer-associated 	w
+RIBONUCLEAR	human	Q9Y333	LSM2	Q9Y333	28	327	U6 snRNA-associated Sm-like protein LSm2 (Protein G7b) (Smal	w
 RIBONUCLEASE	fly	FBgn0010406	RNaseX25	Q9VSC3	26	247	Ribonuclease X25 (EC 4.6.1.19)	w
 RIBONUCLEASE	fly	FBgn0011725	twin	Q8IMX1	43	476	poly(A)-specific ribonuclease (EC 3.1.13.4) (Carbon cataboli	w
 RIBONUCLEASE	fly	FBgn0023171	rnh1	Q7JY33	0	8	Ribonuclease H1 (RNase H1) (EC 3.1.26.4)	w
@@ -161,49 +161,49 @@ RIBONUCLEASE	fly	FBgn0066304	Rpp20	Q2MGL3	4	50	Ribonuclease P protein subunit p2
 RIBONUCLEASE	fly	FBgn0085346	Rpp14a	A8JRG8	2	30	Ribonuclease P/MRP subunit p14 a	w
 RIBONUCLEASE	fly	FBgn0262116	RNASEK	Q8MSF5	13	103	Ribonuclease kappa (RNase K) (RNase kappa) (EC 3.1.-.-)	w
 RIBONUCLEASE	human	A0A096LP39	TRIM39-RPP21	A0A096LP39	4	33	Ribonuclease P/MRP subunit p21	w
-RIBONUCLEASE	human	A1KZ92	PXDNL	A1KZ92	38	342	Probable oxidoreductase PXDNL (EC 1.-.-.-) (Cardiac peroxida	w
-RIBONUCLEASE	human	A2A288	ZC3H12D	A2A288	4	19	Probable ribonuclease ZC3H12D (EC 3.1.-.-) (MCP-induced prot	w
-RIBONUCLEASE	human	O00584	RNASET2	O00584	9	88	Ribonuclease T2 (EC 4.6.1.19) (Ribonuclease 6)	w
-RIBONUCLEASE	human	O15091	PRORP	O15091	13	186	Mitochondrial ribonuclease P catalytic subunit (EC 3.1.26.5)	w
-RIBONUCLEASE	human	O60930	RNASEH1	O60930	11	75	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	w
-RIBONUCLEASE	human	O75792	RNASEH2A	O75792	13	161	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	w
-RIBONUCLEASE	human	O75817	POP7	O75817	19	173	Ribonuclease P protein subunit p20 (RNaseP protein p20) (Rib	w
-RIBONUCLEASE	human	O75818	RPP40	O75818	8	115	Ribonuclease P protein subunit p40 (RNaseP protein p40) (RNa	w
-RIBONUCLEASE	human	O95059	RPP14	O95059	13	229	Ribonuclease P protein subunit p14	w
-RIBONUCLEASE	human	O95453	PARN	O95453	20	210	Poly(A)-specific ribonuclease PARN (EC 3.1.13.4) (Deadenylat	w
-RIBONUCLEASE	human	O95707	POP4	O95707	23	192	Ribonuclease P protein subunit p29 (hPOP4)	w
-RIBONUCLEASE	human	P03950	ANG	P03950	30	238	Angiogenin (EC 3.1.27.-) (Ribonuclease 5) (RNase 5)	w
-RIBONUCLEASE	human	P07998	RNASE1	P07998	41	422	Ribonuclease pancreatic (EC 4.6.1.18) (HP-RNase) (RIB-1) (RN	w
-RIBONUCLEASE	human	P10153	RNASE2	P10153	33	252	Non-secretory ribonuclease (EC 4.6.1.18) (Eosinophil-derived	w
-RIBONUCLEASE	human	P12724	RNASE3	P12724	31	201	Eosinophil cationic protein (ECP) (EC 3.1.27.-) (Ribonucleas	w
-RIBONUCLEASE	human	P13489	RNH1	P13489	11	318	Ribonuclease inhibitor (Placental ribonuclease inhibitor) (P	w
-RIBONUCLEASE	human	P34096	RNASE4	P34096	12	119	Ribonuclease 4 (RNase 4) (EC 3.1.27.-)	w
-RIBONUCLEASE	human	P61221	ABCE1	P61221	15	365	ATP-binding cassette sub-family E member 1 (EC 3.6.5.-) (2'-	w
-RIBONUCLEASE	human	P78345	RPP38	P78345	38	530	Ribonuclease P protein subunit p38 (RNaseP protein p38)	w
-RIBONUCLEASE	human	P78346	RPP30	P78346	20	172	Ribonuclease P protein subunit p30 (RNaseP protein p30) (RNa	w
-RIBONUCLEASE	human	Q05823	RNASEL	Q05823	4	353	2-5A-dependent ribonuclease (2-5A-dependent RNase) (EC 3.1.2	w
-RIBONUCLEASE	human	Q32NC0	RMP24	Q32NC0	28	216	Ribonuclease MRP protein subunit p24 (HBV X-transactivated g	w
+RIBONUCLEASE	human	A1KZ92	PXDNL	A1KZ92	27	342	Probable oxidoreductase PXDNL (EC 1.-.-.-) (Cardiac peroxida	w
+RIBONUCLEASE	human	A2A288	ZC3H12D	A2A288	3	19	Probable ribonuclease ZC3H12D (EC 3.1.-.-) (MCP-induced prot	w
+RIBONUCLEASE	human	O00584	RNASET2	O00584	7	88	Ribonuclease T2 (EC 4.6.1.19) (Ribonuclease 6)	w
+RIBONUCLEASE	human	O15091	PRORP	O15091	11	186	Mitochondrial ribonuclease P catalytic subunit (EC 3.1.26.5)	w
+RIBONUCLEASE	human	O60930	RNASEH1	O60930	10	75	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	w
+RIBONUCLEASE	human	O75792	RNASEH2A	O75792	9	161	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	w
+RIBONUCLEASE	human	O75817	POP7	O75817	16	173	Ribonuclease P protein subunit p20 (RNaseP protein p20) (Rib	w
+RIBONUCLEASE	human	O75818	RPP40	O75818	7	115	Ribonuclease P protein subunit p40 (RNaseP protein p40) (RNa	w
+RIBONUCLEASE	human	O95059	RPP14	O95059	10	229	Ribonuclease P protein subunit p14	w
+RIBONUCLEASE	human	O95453	PARN	O95453	17	210	Poly(A)-specific ribonuclease PARN (EC 3.1.13.4) (Deadenylat	w
+RIBONUCLEASE	human	O95707	POP4	O95707	18	192	Ribonuclease P protein subunit p29 (hPOP4)	w
+RIBONUCLEASE	human	P03950	ANG	P03950	26	238	Angiogenin (EC 3.1.27.-) (Ribonuclease 5) (RNase 5)	w
+RIBONUCLEASE	human	P07998	RNASE1	P07998	32	422	Ribonuclease pancreatic (EC 4.6.1.18) (HP-RNase) (RIB-1) (RN	w
+RIBONUCLEASE	human	P10153	RNASE2	P10153	26	252	Non-secretory ribonuclease (EC 4.6.1.18) (Eosinophil-derived	w
+RIBONUCLEASE	human	P12724	RNASE3	P12724	25	201	Eosinophil cationic protein (ECP) (EC 3.1.27.-) (Ribonucleas	w
+RIBONUCLEASE	human	P13489	RNH1	P13489	10	318	Ribonuclease inhibitor (Placental ribonuclease inhibitor) (P	w
+RIBONUCLEASE	human	P34096	RNASE4	P34096	9	119	Ribonuclease 4 (RNase 4) (EC 3.1.27.-)	w
+RIBONUCLEASE	human	P61221	ABCE1	P61221	10	365	ATP-binding cassette sub-family E member 1 (EC 3.6.5.-) (2'-	w
+RIBONUCLEASE	human	P78345	RPP38	P78345	36	528	Ribonuclease P protein subunit p38 (RNaseP protein p38)	w
+RIBONUCLEASE	human	P78346	RPP30	P78346	18	172	Ribonuclease P protein subunit p30 (RNaseP protein p30) (RNa	w
+RIBONUCLEASE	human	Q05823	RNASEL	Q05823	4	352	2-5A-dependent ribonuclease (2-5A-dependent RNase) (EC 3.1.2	w
+RIBONUCLEASE	human	Q32NC0	RMP24	Q32NC0	25	216	Ribonuclease MRP protein subunit p24 (HBV X-transactivated g	w
 RIBONUCLEASE	human	Q58A45	PAN3	Q58A45	10	143	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
-RIBONUCLEASE	human	Q5HYM0	ZC3H12B	Q5HYM0	5	18	Probable ribonuclease ZC3H12B (EC 3.1.-.-) (MCP-induced prot	w
-RIBONUCLEASE	human	Q5TBB1	RNASEH2B	Q5TBB1	14	97	Ribonuclease H2 subunit B (RNase H2 subunit B) (Aicardi-Gout	w
-RIBONUCLEASE	human	Q6NW34	RMP64	Q6NW34	79	309	Ribonuclease MRP subunit P64 (Nucleolus and neural progenito	w
-RIBONUCLEASE	human	Q6P5S7	RNASEK	Q6P5S7	12	92	Ribonuclease kappa (RNase K) (RNase kappa) (EC 3.1.-.-) (V-t	w
-RIBONUCLEASE	human	Q7L0Y3	TRMT10C	Q7L0Y3	21	235	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
+RIBONUCLEASE	human	Q5HYM0	ZC3H12B	Q5HYM0	4	18	Probable ribonuclease ZC3H12B (EC 3.1.-.-) (MCP-induced prot	w
+RIBONUCLEASE	human	Q5TBB1	RNASEH2B	Q5TBB1	10	97	Ribonuclease H2 subunit B (RNase H2 subunit B) (Aicardi-Gout	w
+RIBONUCLEASE	human	Q6NW34	RMP64	Q6NW34	65	309	Ribonuclease MRP subunit P64 (Nucleolus and neural progenito	w
+RIBONUCLEASE	human	Q6P5S7	RNASEK	Q6P5S7	10	92	Ribonuclease kappa (RNase K) (RNase kappa) (EC 3.1.-.-) (V-t	w
+RIBONUCLEASE	human	Q7L0Y3	TRMT10C	Q7L0Y3	18	235	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
 RIBONUCLEASE	human	Q8IYM2	SLFN12	Q8IYM2	7	53	Ribonuclease SLFN12 (EC 3.1.-.-) (Schlafen family member 12)	w
-RIBONUCLEASE	human	Q8N5L8	RPP25L	Q8N5L8	21	153	Ribonuclease P protein subunit p25-like protein (RNase P pro	w
-RIBONUCLEASE	human	Q8NA58	PNLDC1	Q8NA58	6	43	Poly(A)-specific ribonuclease PNLDC1 (EC 3.1.13.4) (PARN-lik	w
-RIBONUCLEASE	human	Q8TAA1	RNASE11	Q8TAA1	5	24	Putative inactive ribonuclease 11 (RNase 11)	w
+RIBONUCLEASE	human	Q8N5L8	RPP25L	Q8N5L8	14	153	Ribonuclease P protein subunit p25-like protein (RNase P pro	w
+RIBONUCLEASE	human	Q8NA58	PNLDC1	Q8NA58	5	43	Poly(A)-specific ribonuclease PNLDC1 (EC 3.1.13.4) (PARN-lik	w
+RIBONUCLEASE	human	Q8TAA1	RNASE11	Q8TAA1	2	24	Putative inactive ribonuclease 11 (RNase 11)	w
 RIBONUCLEASE	human	Q8TDE3	RNASE8	Q8TDE3	2	26	Ribonuclease 8 (RNase 8) (EC 3.1.27.-)	w
-RIBONUCLEASE	human	Q8TDP1	RNASEH2C	Q8TDP1	10	77	Ribonuclease H2 subunit C (RNase H2 subunit C) (Aicardi-Gout	w
-RIBONUCLEASE	human	Q93091	RNASE6	Q93091	34	181	Ribonuclease K6 (RNase K6) (EC 3.1.27.-)	w
-RIBONUCLEASE	human	Q969H6	POP5	Q969H6	19	228	Ribonuclease P/MRP protein subunit POP5 (hPop5)	w
-RIBONUCLEASE	human	Q9BQ52	ELAC2	Q9BQ52	8	262	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
-RIBONUCLEASE	human	Q9BUL9	RPP25	Q9BUL9	18	120	Ribonuclease P protein subunit p25 (RNase P protein subunit 	w
+RIBONUCLEASE	human	Q8TDP1	RNASEH2C	Q8TDP1	9	77	Ribonuclease H2 subunit C (RNase H2 subunit C) (Aicardi-Gout	w
+RIBONUCLEASE	human	Q93091	RNASE6	Q93091	25	181	Ribonuclease K6 (RNase K6) (EC 3.1.27.-)	w
+RIBONUCLEASE	human	Q969H6	POP5	Q969H6	16	228	Ribonuclease P/MRP protein subunit POP5 (hPop5)	w
+RIBONUCLEASE	human	Q9BQ52	ELAC2	Q9BQ52	5	262	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
+RIBONUCLEASE	human	Q9BUL9	RPP25	Q9BUL9	16	120	Ribonuclease P protein subunit p25 (RNase P protein subunit 	w
 RIBONUCLEASE	human	Q9C0D7	ZC3H12C	Q9C0D7	8	35	Probable ribonuclease ZC3H12C (EC 3.1.-.-) (MCP-induced prot	w
-RIBONUCLEASE	human	Q9H1E1	RNASE7	Q9H1E1	36	213	Ribonuclease 7 (RNase 7) (EC 3.1.27.-) (Skin-derived antimic	w
-RIBONUCLEASE	human	Q9H633	RPP21	Q9H633	19	262	Ribonuclease P protein subunit p21 (RNaseP protein p21) (Rib	w
+RIBONUCLEASE	human	Q9H1E1	RNASE7	Q9H1E1	26	213	Ribonuclease 7 (RNase 7) (EC 3.1.27.-) (Skin-derived antimic	w
+RIBONUCLEASE	human	Q9H633	RPP21	Q9H633	15	262	Ribonuclease P protein subunit p21 (RNaseP protein p21) (Rib	w
 RIBONUCLEASE	human	Q9H777	ELAC1	Q9H777	0	23	Zinc phosphodiesterase ELAC protein 1 (EC 3.1.26.11) (Delete	w
-RIBONUCLEASE	human	Q9NRR4	DROSHA	Q9NRR4	28	479	Ribonuclease 3 (EC 3.1.26.3) (Protein Drosha) (Ribonuclease 	w
+RIBONUCLEASE	human	Q9NRR4	DROSHA	Q9NRR4	22	476	Ribonuclease 3 (EC 3.1.26.3) (Protein Drosha) (Ribonuclease 	w
 RIBONUCLEASE	worm	A0A078BTJ4	eri-9	A0A078BTJ4	0	5	Zc3h12a-like Ribonuclease NYN domain-containing protein	w
 RIBONUCLEASE	worm	B3GWC3	ccr-4	B3GWC3	2	16	poly(A)-specific ribonuclease	w
 RIBONUCLEASE	worm	G5EBV6	pgl-3	G5EBV6	2	90	Guanyl-specific ribonuclease pgl-3	w
@@ -259,13 +259,13 @@ RIBONUCLEASE	zebrafish	Q6IQM3	rpp40	Q6IQM3	4	28	Ribonuclease P 40 subunit like	w
 RIBONUCLEASE	zebrafish	Q6PE30	cnot6a	Q6PE30	3	20	poly(A)-specific ribonuclease	w
 RIBONUCLEASE	zebrafish	Q7ZU92	parn	Q7ZU92	0	38	Poly(A)-specific ribonuclease PARN	w
 RIBONUCLEASE	zebrafish	X1WBZ5	prorp	X1WBZ5	1	18	Mitochondrial ribonuclease P catalytic subunit	w
-RIBONUCLEASE-LIKE	human	P60153	RNASE9	P60153	1	9	Inactive ribonuclease-like protein 9	w
-RIBONUCLEASE-LIKE	human	Q5GAN3	RNASE13	Q5GAN3	8	46	Probable inactive ribonuclease-like protein 13	w
+RIBONUCLEASE-LIKE	human	P60153	RNASE9	P60153	0	9	Inactive ribonuclease-like protein 9	w
+RIBONUCLEASE-LIKE	human	Q5GAN3	RNASE13	Q5GAN3	7	46	Probable inactive ribonuclease-like protein 13	w
 RIBONUCLEASE-LIKE	human	Q5GAN4	RNASE12	Q5GAN4	10	34	Probable inactive ribonuclease-like protein 12	w
-RIBONUCLEASE-LIKE	human	Q5GAN6	RNASE10	Q5GAN6	11	47	Inactive ribonuclease-like protein 10	w
+RIBONUCLEASE-LIKE	human	Q5GAN6	RNASE10	Q5GAN6	10	47	Inactive ribonuclease-like protein 10	w
 RIBONUCLEASE-LIKE	zebrafish	A5HAK0	rnasel3	A5HAK0	2	4	Ribonuclease-like 3	w
-RIBONUCLEASES	human	O75817	POP7	O75817	19	173	Ribonuclease P protein subunit p20 (RNaseP protein p20) (Rib	w
-RIBONUCLEASES	human	Q99575	POP1	Q99575	31	543	Ribonucleases P/MRP protein subunit POP1 (hPOP1)	w
+RIBONUCLEASES	human	O75817	POP7	O75817	16	173	Ribonuclease P protein subunit p20 (RNaseP protein p20) (Rib	w
+RIBONUCLEASES	human	Q99575	POP1	Q99575	23	543	Ribonucleases P/MRP protein subunit POP1 (hPOP1)	w
 RIBONUCLEASES	worm	Q11188	popl-1	Q11188	1	30	Ribonucleases P/MRP protein subunit popl-1	w
 RIBONUCLEASES	yeast	P38208	POP8	P38208	1	41	Ribonucleases P/MRP protein subunit POP8	w
 RIBONUCLEASES	yeast	P38291	POP7	P38291	6	81	Ribonucleases P/MRP protein subunit POP7	w
@@ -305,95 +305,95 @@ RIBONUCLEOPROTEIN	fly	FBgn0263396	sqd	Q08473	82	535	RNA-binding protein squid (H
 RIBONUCLEOPROTEIN	fly	FBgn0263599	Brr2	Q9VUV9	3	22	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.	w
 RIBONUCLEOPROTEIN	fly	FBgn0267791	HnRNP-K	A1ZBW0	26	470	Heterogeneous nuclear ribonucleoprotein K, isoform C (RE0551	w
 RIBONUCLEOPROTEIN	human	A0A2R8Y4L2	HNRNPA1L3	A0A2R8Y4L2	1	17	Heterogeneous nuclear ribonucleoprotein A1-like 3 (Heterogen	w
-RIBONUCLEOPROTEIN	human	A8MWD9	SNRPGP15	A8MWD9	13	54	Putative small nuclear ribonucleoprotein G-like protein 15	w
-RIBONUCLEOPROTEIN	human	B2RXH8	HNRNPCL2	B2RXH8	35	278	Heterogeneous nuclear ribonucleoprotein C-like 2 (hnRNP C-li	w
-RIBONUCLEOPROTEIN	human	B7ZW38	HNRNPCL3	B7ZW38	7	25	Heterogeneous nuclear ribonucleoprotein C-like 3	w
-RIBONUCLEOPROTEIN	human	O00566	MPHOSPH10	O00566	49	498	U3 small nucleolar ribonucleoprotein protein MPP10 (M phase 	w
-RIBONUCLEOPROTEIN	human	O14979	HNRNPDL	O14979	73	675	Heterogeneous nuclear ribonucleoprotein D-like (hnRNP D-like	w
-RIBONUCLEOPROTEIN	human	O43172	PRPF4	O43172	45	446	U4/U6 small nuclear ribonucleoprotein Prp4 (PRP4 homolog) (h	w
-RIBONUCLEOPROTEIN	human	O43390	HNRNPR	O43390	61	551	Heterogeneous nuclear ribonucleoprotein R (hnRNP R)	w
-RIBONUCLEOPROTEIN	human	O43395	PRPF3	O43395	44	478	U4/U6 small nuclear ribonucleoprotein Prp3 (Pre-mRNA-splicin	w
-RIBONUCLEOPROTEIN	human	O43447	PPIH	O43447	39	255	Peptidyl-prolyl cis-trans isomerase H (PPIase H) (EC 5.2.1.8	w
-RIBONUCLEOPROTEIN	human	O60506	SYNCRIP	O60506	60	622	Heterogeneous nuclear ribonucleoprotein Q (hnRNP Q) (Glycine	w
-RIBONUCLEOPROTEIN	human	O60678	PRMT3	O60678	14	194	Protein arginine N-methyltransferase 3 (EC 2.1.1.319) (Heter	w
-RIBONUCLEOPROTEIN	human	O60812	HNRNPCL1	O60812	58	207	Heterogeneous nuclear ribonucleoprotein C-like 1 (hnRNP C-li	w
-RIBONUCLEOPROTEIN	human	O60832	DKC1	O60832	50	423	H/ACA ribonucleoprotein complex subunit DKC1 (EC 5.4.99.-) (	w
+RIBONUCLEOPROTEIN	human	A8MWD9	SNRPGP15	A8MWD9	9	54	Putative small nuclear ribonucleoprotein G-like protein 15	w
+RIBONUCLEOPROTEIN	human	B2RXH8	HNRNPCL2	B2RXH8	29	278	Heterogeneous nuclear ribonucleoprotein C-like 2 (hnRNP C-li	w
+RIBONUCLEOPROTEIN	human	B7ZW38	HNRNPCL3	B7ZW38	6	25	Heterogeneous nuclear ribonucleoprotein C-like 3	w
+RIBONUCLEOPROTEIN	human	O00566	MPHOSPH10	O00566	42	496	U3 small nucleolar ribonucleoprotein protein MPP10 (M phase 	w
+RIBONUCLEOPROTEIN	human	O14979	HNRNPDL	O14979	70	675	Heterogeneous nuclear ribonucleoprotein D-like (hnRNP D-like	w
+RIBONUCLEOPROTEIN	human	O43172	PRPF4	O43172	39	446	U4/U6 small nuclear ribonucleoprotein Prp4 (PRP4 homolog) (h	w
+RIBONUCLEOPROTEIN	human	O43390	HNRNPR	O43390	51	551	Heterogeneous nuclear ribonucleoprotein R (hnRNP R)	w
+RIBONUCLEOPROTEIN	human	O43395	PRPF3	O43395	34	478	U4/U6 small nuclear ribonucleoprotein Prp3 (Pre-mRNA-splicin	w
+RIBONUCLEOPROTEIN	human	O43447	PPIH	O43447	38	255	Peptidyl-prolyl cis-trans isomerase H (PPIase H) (EC 5.2.1.8	w
+RIBONUCLEOPROTEIN	human	O60506	SYNCRIP	O60506	47	621	Heterogeneous nuclear ribonucleoprotein Q (hnRNP Q) (Glycine	w
+RIBONUCLEOPROTEIN	human	O60678	PRMT3	O60678	11	194	Protein arginine N-methyltransferase 3 (EC 2.1.1.319) (Heter	w
+RIBONUCLEOPROTEIN	human	O60812	HNRNPCL1	O60812	50	206	Heterogeneous nuclear ribonucleoprotein C-like 1 (hnRNP C-li	w
+RIBONUCLEOPROTEIN	human	O60832	DKC1	O60832	42	423	H/ACA ribonucleoprotein complex subunit DKC1 (EC 5.4.99.-) (	w
 RIBONUCLEOPROTEIN	human	O75526	RBMXL2	O75526	8	93	RNA-binding motif protein, X-linked-like-2 (Testis-specific 	w
-RIBONUCLEOPROTEIN	human	O75643	SNRNP200	O75643	54	933	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.	w
-RIBONUCLEOPROTEIN	human	P05455	SSB	P05455	84	686	Lupus La protein (La autoantigen) (La ribonucleoprotein) (Sj	w
-RIBONUCLEOPROTEIN	human	P08579	SNRPB2	P08579	22	356	U2 small nuclear ribonucleoprotein B'' (U2 snRNP B'')	w
-RIBONUCLEOPROTEIN	human	P08621	SNRNP70	P08621	75	1027	U1 small nuclear ribonucleoprotein 70 kDa (U1 snRNP 70 kDa) 	w
-RIBONUCLEOPROTEIN	human	P09012	SNRPA	P09012	63	547	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1	w
+RIBONUCLEOPROTEIN	human	O75643	SNRNP200	O75643	38	933	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.	w
+RIBONUCLEOPROTEIN	human	P05455	SSB	P05455	73	686	Lupus La protein (La autoantigen) (La ribonucleoprotein) (Sj	w
+RIBONUCLEOPROTEIN	human	P08579	SNRPB2	P08579	20	356	U2 small nuclear ribonucleoprotein B'' (U2 snRNP B'')	w
+RIBONUCLEOPROTEIN	human	P08621	SNRNP70	P08621	69	1027	U1 small nuclear ribonucleoprotein 70 kDa (U1 snRNP 70 kDa) 	w
+RIBONUCLEOPROTEIN	human	P09012	SNRPA	P09012	59	547	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1	w
 RIBONUCLEOPROTEIN	human	P09234	SNRPC	P09234	25	455	U1 small nuclear ribonucleoprotein C (U1 snRNP C) (U1-C) (U1	w
-RIBONUCLEOPROTEIN	human	P09651	HNRNPA1	P09651	59	851	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (Helix	w
-RIBONUCLEOPROTEIN	human	P09661	SNRPA1	P09661	57	438	U2 small nuclear ribonucleoprotein A' (U2 snRNP A')	w
+RIBONUCLEOPROTEIN	human	P09651	HNRNPA1	P09651	53	851	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (Helix	w
+RIBONUCLEOPROTEIN	human	P09661	SNRPA1	P09661	53	438	U2 small nuclear ribonucleoprotein A' (U2 snRNP A')	w
 RIBONUCLEOPROTEIN	human	P0DMR1	HNRNPCL4	P0DMR1	4	18	Heterogeneous nuclear ribonucleoprotein C-like 4	w
 RIBONUCLEOPROTEIN	human	P10155	RO60	P10155	3	187	RNA-binding protein RO60 (60 kDa SS-A/Ro ribonucleoprotein) 	w
-RIBONUCLEOPROTEIN	human	P14866	HNRNPL	P14866	164	1747	Heterogeneous nuclear ribonucleoprotein L (hnRNP L)	w
-RIBONUCLEOPROTEIN	human	P19474	TRIM21	P19474	75	470	E3 ubiquitin-protein ligase TRIM21 (EC 2.3.2.27) (52 kDa Ro 	w
-RIBONUCLEOPROTEIN	human	P26599	PTBP1	P26599	26	409	Polypyrimidine tract-binding protein 1 (PTB) (57 kDa RNA-bin	w
-RIBONUCLEOPROTEIN	human	P31942	HNRNPH3	P31942	13	228	Heterogeneous nuclear ribonucleoprotein H3 (hnRNP H3) (Heter	w
-RIBONUCLEOPROTEIN	human	P31943	HNRNPH1	P31943	79	1380	Heterogeneous nuclear ribonucleoprotein H (hnRNP H) [Cleaved	w
-RIBONUCLEOPROTEIN	human	P38159	RBMX	P38159	33	408	RNA-binding motif protein, X chromosome (Glycoprotein p43) (	w
-RIBONUCLEOPROTEIN	human	P51991	HNRNPA3	P51991	32	420	Heterogeneous nuclear ribonucleoprotein A3 (hnRNP A3)	w
-RIBONUCLEOPROTEIN	human	P52272	HNRNPM	P52272	34	693	Heterogeneous nuclear ribonucleoprotein M (hnRNP M)	w
-RIBONUCLEOPROTEIN	human	P52597	HNRNPF	P52597	14	508	Heterogeneous nuclear ribonucleoprotein F (hnRNP F) (Nucleol	w
-RIBONUCLEOPROTEIN	human	P55769	SNU13	P55769	52	696	NHP2-like protein 1 (High mobility group-like nuclear protei	w
-RIBONUCLEOPROTEIN	human	P55795	HNRNPH2	P55795	16	314	Heterogeneous nuclear ribonucleoprotein H2 (hnRNP H2) (FTP-3	w
-RIBONUCLEOPROTEIN	human	P61978	HNRNPK	P61978	43	811	Heterogeneous nuclear ribonucleoprotein K (hnRNP K) (Transfo	w
-RIBONUCLEOPROTEIN	human	P62304	SNRPE	P62304	41	623	Small nuclear ribonucleoprotein E (snRNP-E) (Sm protein E) (	w
-RIBONUCLEOPROTEIN	human	P62306	SNRPF	P62306	78	729	Small nuclear ribonucleoprotein F (snRNP-F) (Sm protein F) (	w
-RIBONUCLEOPROTEIN	human	P62308	SNRPG	P62308	38	432	Small nuclear ribonucleoprotein G (snRNP-G) (Sm protein G) (	w
-RIBONUCLEOPROTEIN	human	P62314	SNRPD1	P62314	51	577	Small nuclear ribonucleoprotein Sm D1 (Sm-D1) (Sm-D autoanti	w
-RIBONUCLEOPROTEIN	human	P62316	SNRPD2	P62316	42	613	Small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRNP core pr	w
-RIBONUCLEOPROTEIN	human	P62318	SNRPD3	P62318	48	513	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core pr	w
-RIBONUCLEOPROTEIN	human	P82979	SARNP	P82979	46	493	SAP domain-containing ribonucleoprotein (Cytokine-induced pr	w
-RIBONUCLEOPROTEIN	human	Q00839	HNRNPU	Q00839	114	1021	Heterogeneous nuclear ribonucleoprotein U (hnRNP U) (GRIP120	w
-RIBONUCLEOPROTEIN	human	Q06787	FMR1	Q06787	53	521	Fragile X messenger ribonucleoprotein 1 (Fragile X messenger	w
-RIBONUCLEOPROTEIN	human	Q13151	HNRNPA0	Q13151	21	271	Heterogeneous nuclear ribonucleoprotein A0 (hnRNP A0)	w
-RIBONUCLEOPROTEIN	human	Q14103	HNRNPD	Q14103	70	1010	Heterogeneous nuclear ribonucleoprotein D0 (hnRNP D0) (AU-ri	w
-RIBONUCLEOPROTEIN	human	Q15029	EFTUD2	Q15029	95	1648	116 kDa U5 small nuclear ribonucleoprotein component (Elonga	w
-RIBONUCLEOPROTEIN	human	Q15365	PCBP1	Q15365	20	500	Poly(rC)-binding protein 1 (Alpha-CP1) (Heterogeneous nuclea	w
-RIBONUCLEOPROTEIN	human	Q15366	PCBP2	Q15366	16	284	Poly(rC)-binding protein 2 (Alpha-CP2) (Heterogeneous nuclea	w
-RIBONUCLEOPROTEIN	human	Q15695	ZRSR2P1	Q15695	13	62	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
-RIBONUCLEOPROTEIN	human	Q15696	ZRSR2	Q15696	21	139	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
-RIBONUCLEOPROTEIN	human	Q16560	SNRNP35	Q16560	22	254	U11/U12 small nuclear ribonucleoprotein 35 kDa protein (U11/	w
-RIBONUCLEOPROTEIN	human	Q1KMD3	HNRNPUL2	Q1KMD3	30	280	Heterogeneous nuclear ribonucleoprotein U-like protein 2 (Sc	w
-RIBONUCLEOPROTEIN	human	Q32P51	HNRNPA1L2	Q32P51	9	199	Heterogeneous nuclear ribonucleoprotein A1-like 2 (hnRNP A1-	w
+RIBONUCLEOPROTEIN	human	P14866	HNRNPL	P14866	135	1746	Heterogeneous nuclear ribonucleoprotein L (hnRNP L)	w
+RIBONUCLEOPROTEIN	human	P19474	TRIM21	P19474	69	470	E3 ubiquitin-protein ligase TRIM21 (EC 2.3.2.27) (52 kDa Ro 	w
+RIBONUCLEOPROTEIN	human	P26599	PTBP1	P26599	22	407	Polypyrimidine tract-binding protein 1 (PTB) (57 kDa RNA-bin	w
+RIBONUCLEOPROTEIN	human	P31942	HNRNPH3	P31942	11	228	Heterogeneous nuclear ribonucleoprotein H3 (hnRNP H3) (Heter	w
+RIBONUCLEOPROTEIN	human	P31943	HNRNPH1	P31943	68	1380	Heterogeneous nuclear ribonucleoprotein H (hnRNP H) [Cleaved	w
+RIBONUCLEOPROTEIN	human	P38159	RBMX	P38159	28	408	RNA-binding motif protein, X chromosome (Glycoprotein p43) (	w
+RIBONUCLEOPROTEIN	human	P51991	HNRNPA3	P51991	29	420	Heterogeneous nuclear ribonucleoprotein A3 (hnRNP A3)	w
+RIBONUCLEOPROTEIN	human	P52272	HNRNPM	P52272	30	692	Heterogeneous nuclear ribonucleoprotein M (hnRNP M)	w
+RIBONUCLEOPROTEIN	human	P52597	HNRNPF	P52597	9	508	Heterogeneous nuclear ribonucleoprotein F (hnRNP F) (Nucleol	w
+RIBONUCLEOPROTEIN	human	P55769	SNU13	P55769	46	694	NHP2-like protein 1 (High mobility group-like nuclear protei	w
+RIBONUCLEOPROTEIN	human	P55795	HNRNPH2	P55795	15	314	Heterogeneous nuclear ribonucleoprotein H2 (hnRNP H2) (FTP-3	w
+RIBONUCLEOPROTEIN	human	P61978	HNRNPK	P61978	34	811	Heterogeneous nuclear ribonucleoprotein K (hnRNP K) (Transfo	w
+RIBONUCLEOPROTEIN	human	P62304	SNRPE	P62304	36	622	Small nuclear ribonucleoprotein E (snRNP-E) (Sm protein E) (	w
+RIBONUCLEOPROTEIN	human	P62306	SNRPF	P62306	68	728	Small nuclear ribonucleoprotein F (snRNP-F) (Sm protein F) (	w
+RIBONUCLEOPROTEIN	human	P62308	SNRPG	P62308	34	431	Small nuclear ribonucleoprotein G (snRNP-G) (Sm protein G) (	w
+RIBONUCLEOPROTEIN	human	P62314	SNRPD1	P62314	48	577	Small nuclear ribonucleoprotein Sm D1 (Sm-D1) (Sm-D autoanti	w
+RIBONUCLEOPROTEIN	human	P62316	SNRPD2	P62316	36	612	Small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRNP core pr	w
+RIBONUCLEOPROTEIN	human	P62318	SNRPD3	P62318	43	512	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core pr	w
+RIBONUCLEOPROTEIN	human	P82979	SARNP	P82979	43	493	SAP domain-containing ribonucleoprotein (Cytokine-induced pr	w
+RIBONUCLEOPROTEIN	human	Q00839	HNRNPU	Q00839	90	1021	Heterogeneous nuclear ribonucleoprotein U (hnRNP U) (GRIP120	w
+RIBONUCLEOPROTEIN	human	Q06787	FMR1	Q06787	45	521	Fragile X messenger ribonucleoprotein 1 (Fragile X messenger	w
+RIBONUCLEOPROTEIN	human	Q13151	HNRNPA0	Q13151	20	271	Heterogeneous nuclear ribonucleoprotein A0 (hnRNP A0)	w
+RIBONUCLEOPROTEIN	human	Q14103	HNRNPD	Q14103	62	1010	Heterogeneous nuclear ribonucleoprotein D0 (hnRNP D0) (AU-ri	w
+RIBONUCLEOPROTEIN	human	Q15029	EFTUD2	Q15029	81	1645	116 kDa U5 small nuclear ribonucleoprotein component (Elonga	w
+RIBONUCLEOPROTEIN	human	Q15365	PCBP1	Q15365	17	500	Poly(rC)-binding protein 1 (Alpha-CP1) (Heterogeneous nuclea	w
+RIBONUCLEOPROTEIN	human	Q15366	PCBP2	Q15366	12	284	Poly(rC)-binding protein 2 (Alpha-CP2) (Heterogeneous nuclea	w
+RIBONUCLEOPROTEIN	human	Q15695	ZRSR2P1	Q15695	9	62	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
+RIBONUCLEOPROTEIN	human	Q15696	ZRSR2	Q15696	18	139	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
+RIBONUCLEOPROTEIN	human	Q16560	SNRNP35	Q16560	20	254	U11/U12 small nuclear ribonucleoprotein 35 kDa protein (U11/	w
+RIBONUCLEOPROTEIN	human	Q1KMD3	HNRNPUL2	Q1KMD3	23	280	Heterogeneous nuclear ribonucleoprotein U-like protein 2 (Sc	w
+RIBONUCLEOPROTEIN	human	Q32P51	HNRNPA1L2	Q32P51	7	199	Heterogeneous nuclear ribonucleoprotein A1-like 2 (hnRNP A1-	w
 RIBONUCLEOPROTEIN	human	Q3SY52	ZIK1	Q3SY52	1	73	Zinc finger protein interacting with ribonucleoprotein K (Zi	w
-RIBONUCLEOPROTEIN	human	Q4G0J3	LARP7	Q4G0J3	102	1044	La-related protein 7 (La ribonucleoprotein domain family mem	w
-RIBONUCLEOPROTEIN	human	Q659C4	LARP1B	Q659C4	18	166	La-related protein 1B (La ribonucleoprotein domain family me	w
-RIBONUCLEOPROTEIN	human	Q6IEG0	SNRNP48	Q6IEG0	42	293	U11/U12 small nuclear ribonucleoprotein 48 kDa protein (U11/	w
-RIBONUCLEOPROTEIN	human	Q6PKG0	LARP1	Q6PKG0	71	461	La-related protein 1 (La ribonucleoprotein domain family mem	w
-RIBONUCLEOPROTEIN	human	Q71RC2	LARP4	Q71RC2	33	228	La-related protein 4 (La ribonucleoprotein domain family mem	w
-RIBONUCLEOPROTEIN	human	Q86SE5	RALYL	Q86SE5	29	116	RNA-binding Raly-like protein (hRALYL) (Heterogeneous nuclea	w
-RIBONUCLEOPROTEIN	human	Q8IY67	RAVER1	Q8IY67	16	226	Ribonucleoprotein PTB-binding 1 (Protein raver-1)	w
-RIBONUCLEOPROTEIN	human	Q8TBF4	ZCRB1	Q8TBF4	33	233	Zinc finger CCHC-type and RNA-binding motif-containing prote	w
-RIBONUCLEOPROTEIN	human	Q8WVK2	SNRNP27	Q8WVK2	20	404	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/	w
-RIBONUCLEOPROTEIN	human	Q8WVV9	HNRNPLL	Q8WVV9	18	205	Heterogeneous nuclear ribonucleoprotein L-like (hnRNPLL) (St	w
-RIBONUCLEOPROTEIN	human	Q8WWY3	PRPF31	Q8WWY3	41	516	U4/U6 small nuclear ribonucleoprotein Prp31 (Pre-mRNA-proces	w
-RIBONUCLEOPROTEIN	human	Q92615	LARP4B	Q92615	51	280	La-related protein 4B (La ribonucleoprotein domain family me	w
-RIBONUCLEOPROTEIN	human	Q96DI7	SNRNP40	Q96DI7	87	657	U5 small nuclear ribonucleoprotein 40 kDa protein (U5 snRNP 	w
-RIBONUCLEOPROTEIN	human	Q96E39	RBMXL1	Q96E39	12	218	RNA binding motif protein, X-linked-like-1 (Heterogeneous nu	w
-RIBONUCLEOPROTEIN	human	Q96G21	IMP4	Q96G21	26	353	U3 small nucleolar ribonucleoprotein protein IMP4 (U3 snoRNP	w
-RIBONUCLEOPROTEIN	human	Q96HR8	NAF1	Q96HR8	27	219	H/ACA ribonucleoprotein complex non-core subunit NAF1 (hNAF1	w
-RIBONUCLEOPROTEIN	human	Q96LA8	PRMT6	Q96LA8	39	420	Protein arginine N-methyltransferase 6 (EC 2.1.1.319) (Heter	w
-RIBONUCLEOPROTEIN	human	Q96LT9	RNPC3	Q96LT9	43	318	RNA-binding region-containing protein 3 (RNA-binding motif p	w
-RIBONUCLEOPROTEIN	human	Q99729	HNRNPAB	Q99729	52	628	Heterogeneous nuclear ribonucleoprotein A/B (hnRNP A/B) (APO	w
+RIBONUCLEOPROTEIN	human	Q4G0J3	LARP7	Q4G0J3	87	1044	La-related protein 7 (La ribonucleoprotein domain family mem	w
+RIBONUCLEOPROTEIN	human	Q659C4	LARP1B	Q659C4	15	166	La-related protein 1B (La ribonucleoprotein domain family me	w
+RIBONUCLEOPROTEIN	human	Q6IEG0	SNRNP48	Q6IEG0	38	293	U11/U12 small nuclear ribonucleoprotein 48 kDa protein (U11/	w
+RIBONUCLEOPROTEIN	human	Q6PKG0	LARP1	Q6PKG0	52	461	La-related protein 1 (La ribonucleoprotein domain family mem	w
+RIBONUCLEOPROTEIN	human	Q71RC2	LARP4	Q71RC2	28	228	La-related protein 4 (La ribonucleoprotein domain family mem	w
+RIBONUCLEOPROTEIN	human	Q86SE5	RALYL	Q86SE5	24	115	RNA-binding Raly-like protein (hRALYL) (Heterogeneous nuclea	w
+RIBONUCLEOPROTEIN	human	Q8IY67	RAVER1	Q8IY67	12	226	Ribonucleoprotein PTB-binding 1 (Protein raver-1)	w
+RIBONUCLEOPROTEIN	human	Q8TBF4	ZCRB1	Q8TBF4	26	233	Zinc finger CCHC-type and RNA-binding motif-containing prote	w
+RIBONUCLEOPROTEIN	human	Q8WVK2	SNRNP27	Q8WVK2	15	404	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/	w
+RIBONUCLEOPROTEIN	human	Q8WVV9	HNRNPLL	Q8WVV9	16	205	Heterogeneous nuclear ribonucleoprotein L-like (hnRNPLL) (St	w
+RIBONUCLEOPROTEIN	human	Q8WWY3	PRPF31	Q8WWY3	31	516	U4/U6 small nuclear ribonucleoprotein Prp31 (Pre-mRNA-proces	w
+RIBONUCLEOPROTEIN	human	Q92615	LARP4B	Q92615	41	280	La-related protein 4B (La ribonucleoprotein domain family me	w
+RIBONUCLEOPROTEIN	human	Q96DI7	SNRNP40	Q96DI7	80	657	U5 small nuclear ribonucleoprotein 40 kDa protein (U5 snRNP 	w
+RIBONUCLEOPROTEIN	human	Q96E39	RBMXL1	Q96E39	9	218	RNA binding motif protein, X-linked-like-1 (Heterogeneous nu	w
+RIBONUCLEOPROTEIN	human	Q96G21	IMP4	Q96G21	22	352	U3 small nucleolar ribonucleoprotein protein IMP4 (U3 snoRNP	w
+RIBONUCLEOPROTEIN	human	Q96HR8	NAF1	Q96HR8	23	219	H/ACA ribonucleoprotein complex non-core subunit NAF1 (hNAF1	w
+RIBONUCLEOPROTEIN	human	Q96LA8	PRMT6	Q96LA8	35	420	Protein arginine N-methyltransferase 6 (EC 2.1.1.319) (Heter	w
+RIBONUCLEOPROTEIN	human	Q96LT9	RNPC3	Q96LT9	39	318	RNA-binding region-containing protein 3 (RNA-binding motif p	w
+RIBONUCLEOPROTEIN	human	Q99729	HNRNPAB	Q99729	50	628	Heterogeneous nuclear ribonucleoprotein A/B (hnRNP A/B) (APO	w
 RIBONUCLEOPROTEIN	human	Q9BRS8	LARP6	Q9BRS8	8	29	La-related protein 6 (Acheron) (Achn) (La ribonucleoprotein 	w
-RIBONUCLEOPROTEIN	human	Q9BUJ2	HNRNPUL1	Q9BUJ2	34	361	Heterogeneous nuclear ribonucleoprotein U-like protein 1 (Ad	w
-RIBONUCLEOPROTEIN	human	Q9BV90	SNRNP25	Q9BV90	22	377	U11/U12 small nuclear ribonucleoprotein 25 kDa protein (U11/	w
-RIBONUCLEOPROTEIN	human	Q9H633	RPP21	Q9H633	19	262	Ribonuclease P protein subunit p21 (RNaseP protein p21) (Rib	w
+RIBONUCLEOPROTEIN	human	Q9BUJ2	HNRNPUL1	Q9BUJ2	24	360	Heterogeneous nuclear ribonucleoprotein U-like protein 1 (Ad	w
+RIBONUCLEOPROTEIN	human	Q9BV90	SNRNP25	Q9BV90	15	377	U11/U12 small nuclear ribonucleoprotein 25 kDa protein (U11/	w
+RIBONUCLEOPROTEIN	human	Q9H633	RPP21	Q9H633	15	262	Ribonuclease P protein subunit p21 (RNaseP protein p21) (Rib	w
 RIBONUCLEOPROTEIN	human	Q9HCJ3	RAVER2	Q9HCJ3	5	66	Ribonucleoprotein PTB-binding 2 (Protein raver-2)	w
-RIBONUCLEOPROTEIN	human	Q9NPE3	NOP10	Q9NPE3	19	324	H/ACA ribonucleoprotein complex subunit 3 (Nucleolar protein	w
-RIBONUCLEOPROTEIN	human	Q9NR22	PRMT8	Q9NR22	15	134	Protein arginine N-methyltransferase 8 (EC 2.1.1.319) (Heter	w
-RIBONUCLEOPROTEIN	human	Q9NV31	IMP3	Q9NV31	78	751	U3 small nucleolar ribonucleoprotein protein IMP3 (U3 snoRNP	w
-RIBONUCLEOPROTEIN	human	Q9NX24	NHP2	Q9NX24	29	491	H/ACA ribonucleoprotein complex subunit 2 (Nucleolar protein	w
-RIBONUCLEOPROTEIN	human	Q9NY12	GAR1	Q9NY12	18	283	H/ACA ribonucleoprotein complex subunit 1 (Nucleolar protein	w
-RIBONUCLEOPROTEIN	human	Q9UDW3	ZMAT5	Q9UDW3	15	255	Zinc finger matrin-type protein 5 (U11/U12 small nuclear rib	w
-RIBONUCLEOPROTEIN	human	Q9UKM9	RALY	Q9UKM9	63	380	RNA-binding protein Raly (Autoantigen p542) (Heterogeneous n	w
-RIBONUCLEOPROTEIN	human	Q9Y5S9	RBM8A	Q9Y5S9	35	528	RNA-binding protein 8A (Binder of OVCA1-1) (BOV-1) (RNA-bind	w
-RIBONUCLEOPROTEIN	human	Q9Y5U2	TSSC4	Q9Y5U2	21	135	U5 small nuclear ribonucleoprotein TSSC4 (Tumor-suppressing 	w
+RIBONUCLEOPROTEIN	human	Q9NPE3	NOP10	Q9NPE3	14	324	H/ACA ribonucleoprotein complex subunit 3 (Nucleolar protein	w
+RIBONUCLEOPROTEIN	human	Q9NR22	PRMT8	Q9NR22	13	134	Protein arginine N-methyltransferase 8 (EC 2.1.1.319) (Heter	w
+RIBONUCLEOPROTEIN	human	Q9NV31	IMP3	Q9NV31	69	748	U3 small nucleolar ribonucleoprotein protein IMP3 (U3 snoRNP	w
+RIBONUCLEOPROTEIN	human	Q9NX24	NHP2	Q9NX24	25	489	H/ACA ribonucleoprotein complex subunit 2 (Nucleolar protein	w
+RIBONUCLEOPROTEIN	human	Q9NY12	GAR1	Q9NY12	16	283	H/ACA ribonucleoprotein complex subunit 1 (Nucleolar protein	w
+RIBONUCLEOPROTEIN	human	Q9UDW3	ZMAT5	Q9UDW3	14	255	Zinc finger matrin-type protein 5 (U11/U12 small nuclear rib	w
+RIBONUCLEOPROTEIN	human	Q9UKM9	RALY	Q9UKM9	54	380	RNA-binding protein Raly (Autoantigen p542) (Heterogeneous n	w
+RIBONUCLEOPROTEIN	human	Q9Y5S9	RBM8A	Q9Y5S9	29	528	RNA-binding protein 8A (Binder of OVCA1-1) (BOV-1) (RNA-bind	w
+RIBONUCLEOPROTEIN	human	Q9Y5U2	TSSC4	Q9Y5U2	18	135	U5 small nuclear ribonucleoprotein TSSC4 (Tumor-suppressing 	w
 RIBONUCLEOPROTEIN	worm	A0A0S4XR43	ccar-1	A0A0S4XR43	0	12	SAP domain-containing ribonucleoprotein	w
 RIBONUCLEOPROTEIN	worm	O01513	C48B6.2	O01513	20	268	U3 small nucleolar ribonucleoprotein protein imp3	w
 RIBONUCLEOPROTEIN	worm	O01524	snu-66	O01524	13	73	SNU (Yeast Small NUclear ribonucleoprotein associated) homol	w
@@ -505,20 +505,20 @@ RIBONUCLEOPROTEIN	zebrafish	Q8JGS0	snrpc	Q8JGS0	5	83	U1 small nuclear ribonucleo
 RIBONUCLEOPROTEIN	zebrafish	Q8JHH1	snrpd1	Q8JHH1	23	265	Small nuclear ribonucleoprotein Sm D1	w
 RIBONUCLEOPROTEIN	zebrafish	R4GDR2	snrpb2	R4GDR2	5	226	Small nuclear ribonucleoprotein polypeptide B2	w
 RIBONUCLEOPROTEIN-ASSOCIATED	fly	FBgn0262601	SmB	Q05856	36	208	Small nuclear ribonucleoprotein-associated protein B (snRNP-	w
-RIBONUCLEOPROTEIN-ASSOCIATED	human	O43818	RRP9	O43818	29	310	U3 small nucleolar RNA-interacting protein 2 (RRP9 homolog) 	w
-RIBONUCLEOPROTEIN-ASSOCIATED	human	P14678	SNRPB	P14678	80	587	Small nuclear ribonucleoprotein-associated proteins B and B'	w
-RIBONUCLEOPROTEIN-ASSOCIATED	human	P63162	SNRPN	P63162	54	286	Small nuclear ribonucleoprotein-associated protein N (snRNP-	w
+RIBONUCLEOPROTEIN-ASSOCIATED	human	O43818	RRP9	O43818	22	308	U3 small nucleolar RNA-interacting protein 2 (RRP9 homolog) 	w
+RIBONUCLEOPROTEIN-ASSOCIATED	human	P14678	SNRPB	P14678	69	587	Small nuclear ribonucleoprotein-associated proteins B and B'	w
+RIBONUCLEOPROTEIN-ASSOCIATED	human	P63162	SNRPN	P63162	51	286	Small nuclear ribonucleoprotein-associated protein N (snRNP-	w
 RIBONUCLEOPROTEIN-ASSOCIATED	worm	P91918	snr-2	P91918	21	155	Probable small nuclear ribonucleoprotein-associated protein 	w
 RIBONUCLEOPROTEIN-ASSOCIATED	yeast	P39990	SNU13	P39990	24	369	13 kDa ribonucleoprotein-associated protein	w
 RIBONUCLEOPROTEIN-ASSOCIATED	yeast	P40018	SMB1	P40018	21	145	Small nuclear ribonucleoprotein-associated protein B	w
 RIBONUCLEOPROTEIN-ASSOCIATED	zebrafish	Q9I9E5	snrpb	Q9I9E5	21	238	Small nuclear ribonucleoprotein-associated protein	w
-RIBONUCLEOPROTEINS	human	P07910	HNRNPC	P07910	173	802	Heterogeneous nuclear ribonucleoproteins C1/C2 (hnRNP C1/C2)	w
-RIBONUCLEOPROTEINS	human	P22626	HNRNPA2B1	P22626	39	639	Heterogeneous nuclear ribonucleoproteins A2/B1 (hnRNP A2/B1)	w
+RIBONUCLEOPROTEINS	human	P07910	HNRNPC	P07910	143	801	Heterogeneous nuclear ribonucleoproteins C1/C2 (hnRNP C1/C2)	w
+RIBONUCLEOPROTEINS	human	P22626	HNRNPA2B1	P22626	31	639	Heterogeneous nuclear ribonucleoproteins A2/B1 (hnRNP A2/B1)	w
 RIBONUCLEOPROTEINS	zebrafish	A0A8M9QGR2	Hnrpc	A0A8M9QGR2	26	179	Heterogeneous nuclear ribonucleoproteins C1/C2 isoform X4	w
 RIBONUCLEOSIDE-DIPHOSPHATE	fly	FBgn0011703	RnrL	P48591	13	205	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
 RIBONUCLEOSIDE-DIPHOSPHATE	fly	FBgn0011704	RnrS	P48592	13	310	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
-RIBONUCLEOSIDE-DIPHOSPHATE	human	P23921	RRM1	P23921	5	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
-RIBONUCLEOSIDE-DIPHOSPHATE	human	P31350	RRM2	P31350	9	212	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
+RIBONUCLEOSIDE-DIPHOSPHATE	human	P23921	RRM1	P23921	4	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
+RIBONUCLEOSIDE-DIPHOSPHATE	human	P31350	RRM2	P31350	8	212	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
 RIBONUCLEOSIDE-DIPHOSPHATE	human	Q7LG56	RRM2B	Q7LG56	4	84	Ribonucleoside-diphosphate reductase subunit M2 B (EC 1.17.4	w
 RIBONUCLEOSIDE-DIPHOSPHATE	virus	A0A060CY59	RIR1	A0A060CY59	3	78	Ribonucleoside-diphosphate reductase large subunit	w
 RIBONUCLEOSIDE-DIPHOSPHATE	virus	A0A060D3S6	BoHV6ORF60	A0A060D3S6	3	78	ribonucleoside-diphosphate reductase	w
@@ -737,14 +737,14 @@ RIBONUCLEOTIDE	fly	FBgn0000052	Pfas	P35421	1	72	Phosphoribosylformylglycinamidin
 RIBONUCLEOTIDE	fly	FBgn0000053	Gart	P00967	2	95	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 RIBONUCLEOTIDE	fly	FBgn0011703	RnrL	P48591	13	205	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
 RIBONUCLEOTIDE	fly	FBgn0011704	RnrS	P48592	13	310	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
-RIBONUCLEOTIDE	human	O15067	PFAS	O15067	5	165	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
-RIBONUCLEOTIDE	human	P22102	GART	P22102	2	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
-RIBONUCLEOTIDE	human	P23921	RRM1	P23921	5	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
-RIBONUCLEOTIDE	human	P31350	RRM2	P31350	9	212	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
+RIBONUCLEOTIDE	human	O15067	PFAS	O15067	2	165	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
+RIBONUCLEOTIDE	human	P22102	GART	P22102	0	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
+RIBONUCLEOTIDE	human	P23921	RRM1	P23921	4	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
+RIBONUCLEOTIDE	human	P31350	RRM2	P31350	8	212	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
 RIBONUCLEOTIDE	human	Q7LG56	RRM2B	Q7LG56	4	84	Ribonucleoside-diphosphate reductase subunit M2 B (EC 1.17.4	w
 RIBONUCLEOTIDE	virus	A0A7R5WLX1	RNRL	A0A7R5WLX1	6	187	Ribonucleotide reductase large subunit	w
 RIBONUCLEOTIDE	yeast	Q04964	SML1	Q04964	3	31	Ribonucleotide reductase inhibitor protein SML1	w
-RIBOPH	human	P04843	RPN1	P04843	47	760	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+RIBOPH	human	P04843	RPN1	P04843	40	760	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 RIBOPHORIN-2	fly	FBgn0034277	OstDelta	Q7K110	18	166	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 RIBOPROTEIN	fly	FBgn0036733	U4-U6-60K	Q9VVI0	18	136	SD09427p (U4-U6 small nuclear riboprotein factor 60K)	w
 RIBOPROTEIN	fly	FBgn0053505	U3-55K	Q8MSW9	9	123	LD17611p (U3 small nuclear riboprotein factor 55K)	w
@@ -752,9 +752,9 @@ RIBOSE-5-PHOSPHATE	fly	FBgn0050410	Rpi	Q8MLS2	0	7	ribose-5-phosphate isomerase (
 RIBOSE-5-PHOSPHATE	human	P49247	RPIA	P49247	5	95	Ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	w
 RIBOSE-5-PHOSPHATE	yeast	Q12189	RKI1	Q12189	1	6	Ribose-5-phosphate isomerase	w
 RIBOSE-PHOSPHATE	fly	FBgn0036030	Prps	Q9VT33	1	115	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (Phosphori	w
-RIBOSE-PHOSPHATE	human	P11908	PRPS2	P11908	12	437	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (5-phospho	w
+RIBOSE-PHOSPHATE	human	P11908	PRPS2	P11908	10	437	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (5-phospho	w
 RIBOSE-PHOSPHATE	human	P21108	PRPS1L1	P21108	4	162	Ribose-phosphate pyrophosphokinase 3 (EC 2.7.6.1) (Phosphori	w
-RIBOSE-PHOSPHATE	human	P60891	PRPS1	P60891	18	421	Ribose-phosphate pyrophosphokinase 1 (EC 2.7.6.1) (PPRibP) (	w
+RIBOSE-PHOSPHATE	human	P60891	PRPS1	P60891	13	421	Ribose-phosphate pyrophosphokinase 1 (EC 2.7.6.1) (PPRibP) (	w
 RIBOSE-PHOSPHATE	worm	Q23166	CELE_W04G3.5	Q23166	1	12	Ribose-phosphate pyrophosphokinase N-terminal domain-contain	w
 RIBOSE-PHOSPHATE	worm	Q6AHR3	prps-1	Q6AHR3	1	17	ribose-phosphate diphosphokinase	w
 RIBOSE-PHOSPHATE	yeast	P32895	PRS1	P32895	4	27	Ribose-phosphate pyrophosphokinase 1	w
@@ -764,14 +764,14 @@ RIBOSE-PHOSPHATE	yeast	P38689	PRS3	P38689	4	39	Ribose-phosphate pyrophosphokinas
 RIBOSE-PHOSPHATE	yeast	Q12265	PRS5	Q12265	4	26	Ribose-phosphate pyrophosphokinase 5	w
 RIBOSE-PHOSPHATE	zebrafish	Q08CA5	prps1b	Q08CA5	2	5	Ribose-phosphate pyrophosphokinase 1	w
 RIBOSE-PHOSPHATE	zebrafish	Q4KME9	prps1a	Q4KME9	2	5	Ribose-phosphate pyrophosphokinase 1	w
-RIBOSIDE	human	Q9NPI5	NMRK2	Q9NPI5	8	62	Nicotinamide riboside kinase 2 (NRK 2) (NmR-K 2) (EC 2.7.1.2	w
-RIBOSIDE	human	Q9NWW6	NMRK1	Q9NWW6	4	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
+RIBOSIDE	human	Q9NPI5	NMRK2	Q9NPI5	6	62	Nicotinamide riboside kinase 2 (NRK 2) (NmR-K 2) (EC 2.7.1.2	w
+RIBOSIDE	human	Q9NWW6	NMRK1	Q9NWW6	3	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
 RIBOSIDE	yeast	P53915	NRK1	P53915	0	7	Nicotinamide riboside kinase	w
 RIBOSIDE	yeast	Q08485	NRT1	Q08485	0	3	Nicotinamide riboside transporter 1	w
 RIBOSIDE	zebrafish	F1QSN9	nmrk2	F1QSN9	0	20	Nicotinamide riboside kinase 2	w
 RIBOSIDE	zebrafish	Q5BJ19	nmrk1	Q5BJ19	1	22	Nicotinamide riboside kinase 1	w
-RIBOSIDE-SENSITIVE	human	Q99808	SLC29A1	Q99808	10	214	Equilibrative nucleoside transporter 1 (hENT1) (Equilibrativ	w
-RIBOSOMA	human	Q5T280	SPOUT1	Q5T280	12	279	28S rRNA (uridine-N(3))-methyltransferase (EC 2.1.1.-) (Cent	w
+RIBOSIDE-SENSITIVE	human	Q99808	SLC29A1	Q99808	8	214	Equilibrative nucleoside transporter 1 (hENT1) (Equilibrativ	w
+RIBOSOMA	human	Q5T280	SPOUT1	Q5T280	9	279	28S rRNA (uridine-N(3))-methyltransferase (EC 2.1.1.-) (Cent	w
 RIBOSOMAL	fly	FBgn0000100	RpLP0	P19889	31	396	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
 RIBOSOMAL	fly	FBgn0001995	mRpL4	Q9V3D0	17	407	Large ribosomal subunit protein uL4m	w
 RIBOSOMAL	fly	FBgn0002579	RpL36	P49630	37	306	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
@@ -953,232 +953,232 @@ RIBOSOMAL	fly	FBgn0285950	RpL19	P36241	52	335	Large ribosomal subunit protein eL
 RIBOSOMAL	fly	FBgn0285951	mRpS34	Q9VV39	5	91	Mitochondrial ribosomal protein S34 (RH73723p)	w
 RIBOSOMAL	fly	FBgn0286213	RpS12	P80455	24	356	Small ribosomal subunit protein eS12 (40S ribosomal protein 	w
 RIBOSOMAL	fly	FBgn0287187	mRpS5	Q8SYP9	21	388	Small ribosomal subunit protein uS5m (28S ribosomal protein 	w
-RIBOSOMAL	human	A0A0A6YYL6	RPL17-C18orf32	A0A0A6YYL6	30	458	Large ribosomal subunit protein uL22	w
-RIBOSOMAL	human	A0A1W2PQS6	RPS10-NUDT3	A0A1W2PQS6	46	343	Small ribosomal subunit protein eS10	w
+RIBOSOMAL	human	A0A0A6YYL6	RPL17-C18orf32	A0A0A6YYL6	30	455	Large ribosomal subunit protein uL22	w
+RIBOSOMAL	human	A0A1W2PQS6	RPS10-NUDT3	A0A1W2PQS6	46	340	Small ribosomal subunit protein eS10	w
 RIBOSOMAL	human	A0A8I5KQE6	RPSA2	A0A8I5KQE6	1	2	Small ribosomal subunit protein uS2B (37 kDa laminin recepto	w
-RIBOSOMAL	human	A6NKH3	RPL37AP8	A6NKH3	7	33	Putative ribosomal protein eL43-like (Putative 60S ribosomal	w
-RIBOSOMAL	human	A8MYK1	MRPL23	A8MYK1	9	213	Large ribosomal subunit protein uL23m	w
+RIBOSOMAL	human	A6NKH3	RPL37AP8	A6NKH3	6	33	Putative ribosomal protein eL43-like (Putative 60S ribosomal	w
+RIBOSOMAL	human	A8MYK1	MRPL23	A8MYK1	9	210	Large ribosomal subunit protein uL23m	w
 RIBOSOMAL	human	H3BN98	?	H3BN98	3	347	40S ribosomal protein S15a	w
 RIBOSOMAL	human	I3L0E3	hCG_1984214	I3L0E3	4	125	Small ribosomal subunit protein uS17m	w
-RIBOSOMAL	human	O15235	MRPS12	O15235	31	736	Small ribosomal subunit protein uS12m (28S ribosomal protein	w
-RIBOSOMAL	human	O43159	RRP8	O43159	62	331	Ribosomal RNA-processing protein 8 (EC 2.1.1.-) (Cerebral pr	w
-RIBOSOMAL	human	O60783	MRPS14	O60783	30	639	Small ribosomal subunit protein uS14m (28S ribosomal protein	w
-RIBOSOMAL	human	O75394	MRPL33	O75394	18	424	Large ribosomal subunit protein bL33m (39S ribosomal protein	w
-RIBOSOMAL	human	O75582	RPS6KA5	O75582	39	319	Ribosomal protein S6 kinase alpha-5 (S6K-alpha-5) (EC 2.7.11	w
-RIBOSOMAL	human	O75676	RPS6KA4	O75676	17	168	Ribosomal protein S6 kinase alpha-4 (S6K-alpha-4) (EC 2.7.11	w
-RIBOSOMAL	human	O76021	RSL1D1	O76021	67	662	Ribosomal L1 domain-containing protein 1 (CATX-11) (Cellular	w
-RIBOSOMAL	human	P05386	RPLP1	P05386	97	1003	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
-RIBOSOMAL	human	P05387	RPLP2	P05387	52	702	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
-RIBOSOMAL	human	P05388	RPLP0	P05388	37	847	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
-RIBOSOMAL	human	P08708	RPS17	P08708	83	702	Small ribosomal subunit protein eS17 (40S ribosomal protein 	w
-RIBOSOMAL	human	P08865	RPSA	P08865	59	941	Small ribosomal subunit protein uS2 (37 kDa laminin receptor	w
-RIBOSOMAL	human	P09001	MRPL3	P09001	28	678	Large ribosomal subunit protein uL3m (39S ribosomal protein 	w
-RIBOSOMAL	human	P15880	RPS2	P15880	68	1100	Small ribosomal subunit protein uS5 (40S ribosomal protein S	w
-RIBOSOMAL	human	P18077	RPL35A	P18077	57	771	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
-RIBOSOMAL	human	P18124	RPL7	P18124	87	1153	Large ribosomal subunit protein uL30 (60S ribosomal protein 	w
-RIBOSOMAL	human	P18621	RPL17	P18621	106	981	Large ribosomal subunit protein uL22 (60S ribosomal protein 	w
-RIBOSOMAL	human	P22090	RPS4Y1	P22090	23	606	Small ribosomal subunit protein eS4, Y isoform 1 (40S riboso	w
-RIBOSOMAL	human	P23396	RPS3	P23396	90	1625	Small ribosomal subunit protein uS3 (40S ribosomal protein S	w
-RIBOSOMAL	human	P23443	RPS6KB1	P23443	279	1563	Ribosomal protein S6 kinase beta-1 (S6K-beta-1) (S6K1) (EC 2	w
-RIBOSOMAL	human	P25398	RPS12	P25398	59	715	Small ribosomal subunit protein eS12 (40S ribosomal protein 	w
-RIBOSOMAL	human	P26373	RPL13	P26373	46	906	Large ribosomal subunit protein eL13 (60S ribosomal protein 	w
-RIBOSOMAL	human	P27635	RPL10	P27635	97	1286	Large ribosomal subunit protein uL16 (60S ribosomal protein 	w
-RIBOSOMAL	human	P30050	RPL12	P30050	54	731	Large ribosomal subunit protein uL11 (60S ribosomal protein 	w
-RIBOSOMAL	human	P32969	RPL9	P32969	34	855	Large ribosomal subunit protein uL6 (60S ribosomal protein L	w
-RIBOSOMAL	human	P35268	RPL22	P35268	70	718	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
-RIBOSOMAL	human	P36578	RPL4	P36578	77	1046	Large ribosomal subunit protein uL4 (60S ribosomal protein L	w
-RIBOSOMAL	human	P39019	RPS19	P39019	67	1000	Small ribosomal subunit protein eS19 (40S ribosomal protein 	w
-RIBOSOMAL	human	P39023	RPL3	P39023	69	1131	Large ribosomal subunit protein uL3 (60S ribosomal protein L	w
-RIBOSOMAL	human	P40429	RPL13A	P40429	97	924	Large ribosomal subunit protein uL13 (23 kDa highly basic pr	w
-RIBOSOMAL	human	P42677	RPS27	P42677	102	973	Small ribosomal subunit protein eS27 (40S ribosomal protein 	w
-RIBOSOMAL	human	P42766	RPL35	P42766	61	978	Large ribosomal subunit protein uL29 (60S ribosomal protein 	w
-RIBOSOMAL	human	P46776	RPL27A	P46776	51	767	Large ribosomal subunit protein uL15 (60S ribosomal protein 	w
-RIBOSOMAL	human	P46777	RPL5	P46777	60	1005	Large ribosomal subunit protein uL18 (60S ribosomal protein 	w
-RIBOSOMAL	human	P46778	RPL21	P46778	31	708	Large ribosomal subunit protein eL21 (60S ribosomal protein 	w
-RIBOSOMAL	human	P46779	RPL28	P46779	22	617	Large ribosomal subunit protein eL28 (60S ribosomal protein 	w
-RIBOSOMAL	human	P46781	RPS9	P46781	54	1094	Small ribosomal subunit protein uS4 (40S ribosomal protein S	w
-RIBOSOMAL	human	P46782	RPS5	P46782	51	840	Small ribosomal subunit protein uS7 (40S ribosomal protein S	w
-RIBOSOMAL	human	P46783	RPS10	P46783	46	789	Small ribosomal subunit protein eS10 (40S ribosomal protein 	w
-RIBOSOMAL	human	P47914	RPL29	P47914	35	584	Large ribosomal subunit protein eL29 (60S ribosomal protein 	w
-RIBOSOMAL	human	P49207	RPL34	P49207	38	717	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
-RIBOSOMAL	human	P49406	MRPL19	P49406	43	467	Large ribosomal subunit protein bL19m (39S ribosomal protein	w
-RIBOSOMAL	human	P50914	RPL14	P50914	51	746	Large ribosomal subunit protein eL14 (60S ribosomal protein 	w
-RIBOSOMAL	human	P51398	DAP3	P51398	47	611	Small ribosomal subunit protein mS29 (EC 3.6.5.-) (28S ribos	w
-RIBOSOMAL	human	P51812	RPS6KA3	P51812	49	425	Ribosomal protein S6 kinase alpha-3 (S6K-alpha-3) (EC 2.7.11	w
-RIBOSOMAL	human	P52815	MRPL12	P52815	21	442	Large ribosomal subunit protein bL12m (39S ribosomal protein	w
-RIBOSOMAL	human	P56182	RRP1	P56182	34	354	Ribosomal RNA processing protein 1 homolog A (Novel nuclear 	w
-RIBOSOMAL	human	P60866	RPS20	P60866	56	904	Small ribosomal subunit protein uS10 (40S ribosomal protein 	w
-RIBOSOMAL	human	P61247	RPS3A	P61247	51	1080	Small ribosomal subunit protein eS1 (40S ribosomal protein S	w
-RIBOSOMAL	human	P61254	RPL26	P61254	34	795	Large ribosomal subunit protein uL24 (60S ribosomal protein 	w
-RIBOSOMAL	human	P61313	RPL15	P61313	20	337	Large ribosomal subunit protein eL15 (60S ribosomal protein 	w
-RIBOSOMAL	human	P61353	RPL27	P61353	39	702	Large ribosomal subunit protein eL27 (60S ribosomal protein 	w
-RIBOSOMAL	human	P61513	RPL37A	P61513	47	864	Large ribosomal subunit protein eL43 (60S ribosomal protein 	w
-RIBOSOMAL	human	P61927	RPL37	P61927	13	178	Large ribosomal subunit protein eL37 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62081	RPS7	P62081	48	893	Small ribosomal subunit protein eS7 (40S ribosomal protein S	w
-RIBOSOMAL	human	P62241	RPS8	P62241	77	1052	Small ribosomal subunit protein eS8 (40S ribosomal protein S	w
-RIBOSOMAL	human	P62244	RPS15A	P62244	23	438	Small ribosomal subunit protein uS8 (40S ribosomal protein S	w
-RIBOSOMAL	human	P62249	RPS16	P62249	124	1146	Small ribosomal subunit protein uS9 (40S ribosomal protein S	w
-RIBOSOMAL	human	P62263	RPS14	P62263	70	1078	Small ribosomal subunit protein uS11 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62266	RPS23	P62266	79	993	Small ribosomal subunit protein uS12 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62269	RPS18	P62269	56	1037	Small ribosomal subunit protein uS13 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62273	RPS29	P62273	37	669	Small ribosomal subunit protein uS14 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62277	RPS13	P62277	88	1188	Small ribosomal subunit protein uS15 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62280	RPS11	P62280	64	1124	Small ribosomal subunit protein uS17 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62424	RPL7A	P62424	64	918	Large ribosomal subunit protein eL8 (60S ribosomal protein L	w
-RIBOSOMAL	human	P62701	RPS4X	P62701	34	814	Small ribosomal subunit protein eS4, X isoform (40S ribosoma	w
-RIBOSOMAL	human	P62750	RPL23A	P62750	47	694	Large ribosomal subunit protein uL23 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62753	RPS6	P62753	93	1182	Small ribosomal subunit protein eS6 (40S ribosomal protein S	w
-RIBOSOMAL	human	P62829	RPL23	P62829	132	1332	Large ribosomal subunit protein uL14 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62841	RPS15	P62841	59	945	Small ribosomal subunit protein uS19 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62847	RPS24	P62847	51	844	Small ribosomal subunit protein eS24 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62851	RPS25	P62851	45	699	Small ribosomal subunit protein eS25 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62854	RPS26	P62854	38	736	Small ribosomal subunit protein eS26 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62857	RPS28	P62857	55	896	Small ribosomal subunit protein eS28 (40S ribosomal protein 	w
-RIBOSOMAL	human	P62861	FAU	P62861	135	1072	Ubiquitin-like FUBI-ribosomal protein eS30 fusion protein (F	w
-RIBOSOMAL	human	P62888	RPL30	P62888	38	877	Large ribosomal subunit protein eL30 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62891	RPL39	P62891	71	913	Large ribosomal subunit protein eL39 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62899	RPL31	P62899	40	924	Large ribosomal subunit protein eL31 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62906	RPL10A	P62906	38	729	Large ribosomal subunit protein uL1 (60S ribosomal protein L	w
-RIBOSOMAL	human	P62910	RPL32	P62910	43	594	Large ribosomal subunit protein eL32 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62913	RPL11	P62913	78	727	Large ribosomal subunit protein uL5 (60S ribosomal protein L	w
-RIBOSOMAL	human	P62917	RPL8	P62917	54	1001	Large ribosomal subunit protein uL2 (60S ribosomal protein L	w
+RIBOSOMAL	human	O15235	MRPS12	O15235	30	733	Small ribosomal subunit protein uS12m (28S ribosomal protein	w
+RIBOSOMAL	human	O43159	RRP8	O43159	55	331	Ribosomal RNA-processing protein 8 (EC 2.1.1.-) (Cerebral pr	w
+RIBOSOMAL	human	O60783	MRPS14	O60783	27	636	Small ribosomal subunit protein uS14m (28S ribosomal protein	w
+RIBOSOMAL	human	O75394	MRPL33	O75394	17	421	Large ribosomal subunit protein bL33m (39S ribosomal protein	w
+RIBOSOMAL	human	O75582	RPS6KA5	O75582	33	319	Ribosomal protein S6 kinase alpha-5 (S6K-alpha-5) (EC 2.7.11	w
+RIBOSOMAL	human	O75676	RPS6KA4	O75676	10	168	Ribosomal protein S6 kinase alpha-4 (S6K-alpha-4) (EC 2.7.11	w
+RIBOSOMAL	human	O76021	RSL1D1	O76021	52	659	Ribosomal L1 domain-containing protein 1 (CATX-11) (Cellular	w
+RIBOSOMAL	human	P05386	RPLP1	P05386	62	1000	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
+RIBOSOMAL	human	P05387	RPLP2	P05387	41	699	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
+RIBOSOMAL	human	P05388	RPLP0	P05388	33	844	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
+RIBOSOMAL	human	P08708	RPS17	P08708	72	698	Small ribosomal subunit protein eS17 (40S ribosomal protein 	w
+RIBOSOMAL	human	P08865	RPSA	P08865	55	937	Small ribosomal subunit protein uS2 (37 kDa laminin receptor	w
+RIBOSOMAL	human	P09001	MRPL3	P09001	28	674	Large ribosomal subunit protein uL3m (39S ribosomal protein 	w
+RIBOSOMAL	human	P15880	RPS2	P15880	62	1096	Small ribosomal subunit protein uS5 (40S ribosomal protein S	w
+RIBOSOMAL	human	P18077	RPL35A	P18077	54	768	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
+RIBOSOMAL	human	P18124	RPL7	P18124	81	1150	Large ribosomal subunit protein uL30 (60S ribosomal protein 	w
+RIBOSOMAL	human	P18621	RPL17	P18621	93	979	Large ribosomal subunit protein uL22 (60S ribosomal protein 	w
+RIBOSOMAL	human	P22090	RPS4Y1	P22090	21	603	Small ribosomal subunit protein eS4, Y isoform 1 (40S riboso	w
+RIBOSOMAL	human	P23396	RPS3	P23396	80	1621	Small ribosomal subunit protein uS3 (40S ribosomal protein S	w
+RIBOSOMAL	human	P23443	RPS6KB1	P23443	274	1563	Ribosomal protein S6 kinase beta-1 (S6K-beta-1) (S6K1) (EC 2	w
+RIBOSOMAL	human	P25398	RPS12	P25398	49	712	Small ribosomal subunit protein eS12 (40S ribosomal protein 	w
+RIBOSOMAL	human	P26373	RPL13	P26373	44	903	Large ribosomal subunit protein eL13 (60S ribosomal protein 	w
+RIBOSOMAL	human	P27635	RPL10	P27635	87	1283	Large ribosomal subunit protein uL16 (60S ribosomal protein 	w
+RIBOSOMAL	human	P30050	RPL12	P30050	49	728	Large ribosomal subunit protein uL11 (60S ribosomal protein 	w
+RIBOSOMAL	human	P32969	RPL9	P32969	30	852	Large ribosomal subunit protein uL6 (60S ribosomal protein L	w
+RIBOSOMAL	human	P35268	RPL22	P35268	62	715	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
+RIBOSOMAL	human	P36578	RPL4	P36578	75	1043	Large ribosomal subunit protein uL4 (60S ribosomal protein L	w
+RIBOSOMAL	human	P39019	RPS19	P39019	62	996	Small ribosomal subunit protein eS19 (40S ribosomal protein 	w
+RIBOSOMAL	human	P39023	RPL3	P39023	60	1128	Large ribosomal subunit protein uL3 (60S ribosomal protein L	w
+RIBOSOMAL	human	P40429	RPL13A	P40429	88	921	Large ribosomal subunit protein uL13 (23 kDa highly basic pr	w
+RIBOSOMAL	human	P42677	RPS27	P42677	88	970	Small ribosomal subunit protein eS27 (40S ribosomal protein 	w
+RIBOSOMAL	human	P42766	RPL35	P42766	58	975	Large ribosomal subunit protein uL29 (60S ribosomal protein 	w
+RIBOSOMAL	human	P46776	RPL27A	P46776	46	764	Large ribosomal subunit protein uL15 (60S ribosomal protein 	w
+RIBOSOMAL	human	P46777	RPL5	P46777	56	1001	Large ribosomal subunit protein uL18 (60S ribosomal protein 	w
+RIBOSOMAL	human	P46778	RPL21	P46778	27	705	Large ribosomal subunit protein eL21 (60S ribosomal protein 	w
+RIBOSOMAL	human	P46779	RPL28	P46779	19	613	Large ribosomal subunit protein eL28 (60S ribosomal protein 	w
+RIBOSOMAL	human	P46781	RPS9	P46781	48	1090	Small ribosomal subunit protein uS4 (40S ribosomal protein S	w
+RIBOSOMAL	human	P46782	RPS5	P46782	47	837	Small ribosomal subunit protein uS7 (40S ribosomal protein S	w
+RIBOSOMAL	human	P46783	RPS10	P46783	41	786	Small ribosomal subunit protein eS10 (40S ribosomal protein 	w
+RIBOSOMAL	human	P47914	RPL29	P47914	30	582	Large ribosomal subunit protein eL29 (60S ribosomal protein 	w
+RIBOSOMAL	human	P49207	RPL34	P49207	33	714	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
+RIBOSOMAL	human	P49406	MRPL19	P49406	42	464	Large ribosomal subunit protein bL19m (39S ribosomal protein	w
+RIBOSOMAL	human	P50914	RPL14	P50914	45	743	Large ribosomal subunit protein eL14 (60S ribosomal protein 	w
+RIBOSOMAL	human	P51398	DAP3	P51398	37	607	Small ribosomal subunit protein mS29 (EC 3.6.5.-) (28S ribos	w
+RIBOSOMAL	human	P51812	RPS6KA3	P51812	31	425	Ribosomal protein S6 kinase alpha-3 (S6K-alpha-3) (EC 2.7.11	w
+RIBOSOMAL	human	P52815	MRPL12	P52815	19	439	Large ribosomal subunit protein bL12m (39S ribosomal protein	w
+RIBOSOMAL	human	P56182	RRP1	P56182	29	354	Ribosomal RNA processing protein 1 homolog A (Novel nuclear 	w
+RIBOSOMAL	human	P60866	RPS20	P60866	50	900	Small ribosomal subunit protein uS10 (40S ribosomal protein 	w
+RIBOSOMAL	human	P61247	RPS3A	P61247	45	1077	Small ribosomal subunit protein eS1 (40S ribosomal protein S	w
+RIBOSOMAL	human	P61254	RPL26	P61254	31	791	Large ribosomal subunit protein uL24 (60S ribosomal protein 	w
+RIBOSOMAL	human	P61313	RPL15	P61313	16	337	Large ribosomal subunit protein eL15 (60S ribosomal protein 	w
+RIBOSOMAL	human	P61353	RPL27	P61353	35	698	Large ribosomal subunit protein eL27 (60S ribosomal protein 	w
+RIBOSOMAL	human	P61513	RPL37A	P61513	40	861	Large ribosomal subunit protein eL43 (60S ribosomal protein 	w
+RIBOSOMAL	human	P61927	RPL37	P61927	7	178	Large ribosomal subunit protein eL37 (60S ribosomal protein 	w
+RIBOSOMAL	human	P62081	RPS7	P62081	44	889	Small ribosomal subunit protein eS7 (40S ribosomal protein S	w
+RIBOSOMAL	human	P62241	RPS8	P62241	70	1048	Small ribosomal subunit protein eS8 (40S ribosomal protein S	w
+RIBOSOMAL	human	P62244	RPS15A	P62244	18	438	Small ribosomal subunit protein uS8 (40S ribosomal protein S	w
+RIBOSOMAL	human	P62249	RPS16	P62249	111	1143	Small ribosomal subunit protein uS9 (40S ribosomal protein S	w
+RIBOSOMAL	human	P62263	RPS14	P62263	61	1075	Small ribosomal subunit protein uS11 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62266	RPS23	P62266	72	990	Small ribosomal subunit protein uS12 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62269	RPS18	P62269	51	1032	Small ribosomal subunit protein uS13 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62273	RPS29	P62273	34	666	Small ribosomal subunit protein uS14 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62277	RPS13	P62277	78	1184	Small ribosomal subunit protein uS15 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62280	RPS11	P62280	55	1119	Small ribosomal subunit protein uS17 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62424	RPL7A	P62424	59	915	Large ribosomal subunit protein eL8 (60S ribosomal protein L	w
+RIBOSOMAL	human	P62701	RPS4X	P62701	29	811	Small ribosomal subunit protein eS4, X isoform (40S ribosoma	w
+RIBOSOMAL	human	P62750	RPL23A	P62750	39	694	Large ribosomal subunit protein uL23 (60S ribosomal protein 	w
+RIBOSOMAL	human	P62753	RPS6	P62753	83	1178	Small ribosomal subunit protein eS6 (40S ribosomal protein S	w
+RIBOSOMAL	human	P62829	RPL23	P62829	122	1327	Large ribosomal subunit protein uL14 (60S ribosomal protein 	w
+RIBOSOMAL	human	P62841	RPS15	P62841	52	941	Small ribosomal subunit protein uS19 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62847	RPS24	P62847	49	841	Small ribosomal subunit protein eS24 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62851	RPS25	P62851	37	696	Small ribosomal subunit protein eS25 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62854	RPS26	P62854	34	733	Small ribosomal subunit protein eS26 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62857	RPS28	P62857	44	892	Small ribosomal subunit protein eS28 (40S ribosomal protein 	w
+RIBOSOMAL	human	P62861	FAU	P62861	122	1068	Ubiquitin-like FUBI-ribosomal protein eS30 fusion protein (F	w
+RIBOSOMAL	human	P62888	RPL30	P62888	35	874	Large ribosomal subunit protein eL30 (60S ribosomal protein 	w
+RIBOSOMAL	human	P62891	RPL39	P62891	48	913	Large ribosomal subunit protein eL39 (60S ribosomal protein 	w
+RIBOSOMAL	human	P62899	RPL31	P62899	33	920	Large ribosomal subunit protein eL31 (60S ribosomal protein 	w
+RIBOSOMAL	human	P62906	RPL10A	P62906	32	726	Large ribosomal subunit protein uL1 (60S ribosomal protein L	w
+RIBOSOMAL	human	P62910	RPL32	P62910	37	594	Large ribosomal subunit protein eL32 (60S ribosomal protein 	w
+RIBOSOMAL	human	P62913	RPL11	P62913	63	727	Large ribosomal subunit protein uL5 (60S ribosomal protein L	w
+RIBOSOMAL	human	P62917	RPL8	P62917	50	998	Large ribosomal subunit protein uL2 (60S ribosomal protein L	w
 RIBOSOMAL	human	P62945	RPL41	P62945	1	25	Small ribosomal subunit protein eS32 (60S ribosomal protein 	w
-RIBOSOMAL	human	P62979	RPS27A	P62979	323	3244	Ubiquitin-ribosomal protein eS31 fusion protein (Ubiquitin c	w
-RIBOSOMAL	human	P62987	UBA52	P62987	368	4131	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) (Ubi	w
-RIBOSOMAL	human	P63173	RPL38	P63173	88	847	Large ribosomal subunit protein eL38 (60S ribosomal protein 	w
-RIBOSOMAL	human	P63220	RPS21	P63220	34	747	Small ribosomal subunit protein eS21 (40S ribosomal protein 	w
-RIBOSOMAL	human	P63244	RACK1	P63244	105	1123	Small ribosomal subunit protein RACK1 (Cell proliferation-in	w
-RIBOSOMAL	human	P82650	MRPS22	P82650	48	328	Small ribosomal subunit protein mS22 (28S ribosomal protein 	w
-RIBOSOMAL	human	P82663	MRPS25	P82663	18	410	Small ribosomal subunit protein mS25 (28S ribosomal protein 	w
-RIBOSOMAL	human	P82664	MRPS10	P82664	35	701	Small ribosomal subunit protein uS10m (28S ribosomal protein	w
-RIBOSOMAL	human	P82673	MRPS35	P82673	48	510	Small ribosomal subunit protein mS35 (28S ribosomal protein 	w
-RIBOSOMAL	human	P82675	MRPS5	P82675	43	784	Small ribosomal subunit protein uS5m (28S ribosomal protein 	w
-RIBOSOMAL	human	P82912	MRPS11	P82912	34	661	Small ribosomal subunit protein uS11m (28S ribosomal protein	w
-RIBOSOMAL	human	P82914	MRPS15	P82914	54	657	Small ribosomal subunit protein uS15m (28S ribosomal protein	w
-RIBOSOMAL	human	P82921	MRPS21	P82921	27	299	Small ribosomal subunit protein bS21m (28S ribosomal protein	w
-RIBOSOMAL	human	P82930	MRPS34	P82930	35	420	Small ribosomal subunit protein mS34 (28S ribosomal protein 	w
-RIBOSOMAL	human	P82932	MRPS6	P82932	57	470	Small ribosomal subunit protein bS6m (28S ribosomal protein 	w
-RIBOSOMAL	human	P82933	MRPS9	P82933	55	630	Small ribosomal subunit protein uS9m (28S ribosomal protein 	w
-RIBOSOMAL	human	P83731	RPL24	P83731	32	632	Large ribosomal subunit protein eL24 (60S ribosomal protein 	w
-RIBOSOMAL	human	P83881	RPL36A	P83881	30	498	Large ribosomal subunit protein eL42 (60S ribosomal protein 	w
-RIBOSOMAL	human	P84098	RPL19	P84098	99	990	Large ribosomal subunit protein eL19 (60S ribosomal protein 	w
-RIBOSOMAL	human	Q02543	RPL18A	Q02543	75	820	Large ribosomal subunit protein eL20 (60S ribosomal protein 	w
-RIBOSOMAL	human	Q02878	RPL6	Q02878	67	793	Large ribosomal subunit protein eL6 (60S ribosomal protein L	w
-RIBOSOMAL	human	Q07020	RPL18	Q07020	85	912	Large ribosomal subunit protein eL18 (60S ribosomal protein 	w
-RIBOSOMAL	human	Q13084	MRPL28	Q13084	20	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
-RIBOSOMAL	human	Q13405	MRPL49	Q13405	18	406	Large ribosomal subunit protein mL49 (39S ribosomal protein 	w
+RIBOSOMAL	human	P62979	RPS27A	P62979	295	3241	Ubiquitin-ribosomal protein eS31 fusion protein (Ubiquitin c	w
+RIBOSOMAL	human	P62987	UBA52	P62987	307	4128	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) (Ubi	w
+RIBOSOMAL	human	P63173	RPL38	P63173	82	843	Large ribosomal subunit protein eL38 (60S ribosomal protein 	w
+RIBOSOMAL	human	P63220	RPS21	P63220	27	744	Small ribosomal subunit protein eS21 (40S ribosomal protein 	w
+RIBOSOMAL	human	P63244	RACK1	P63244	91	1119	Small ribosomal subunit protein RACK1 (Cell proliferation-in	w
+RIBOSOMAL	human	P82650	MRPS22	P82650	43	328	Small ribosomal subunit protein mS22 (28S ribosomal protein 	w
+RIBOSOMAL	human	P82663	MRPS25	P82663	16	409	Small ribosomal subunit protein mS25 (28S ribosomal protein 	w
+RIBOSOMAL	human	P82664	MRPS10	P82664	34	698	Small ribosomal subunit protein uS10m (28S ribosomal protein	w
+RIBOSOMAL	human	P82673	MRPS35	P82673	46	507	Small ribosomal subunit protein mS35 (28S ribosomal protein 	w
+RIBOSOMAL	human	P82675	MRPS5	P82675	42	781	Small ribosomal subunit protein uS5m (28S ribosomal protein 	w
+RIBOSOMAL	human	P82912	MRPS11	P82912	31	658	Small ribosomal subunit protein uS11m (28S ribosomal protein	w
+RIBOSOMAL	human	P82914	MRPS15	P82914	51	655	Small ribosomal subunit protein uS15m (28S ribosomal protein	w
+RIBOSOMAL	human	P82921	MRPS21	P82921	24	299	Small ribosomal subunit protein bS21m (28S ribosomal protein	w
+RIBOSOMAL	human	P82930	MRPS34	P82930	31	420	Small ribosomal subunit protein mS34 (28S ribosomal protein 	w
+RIBOSOMAL	human	P82932	MRPS6	P82932	53	467	Small ribosomal subunit protein bS6m (28S ribosomal protein 	w
+RIBOSOMAL	human	P82933	MRPS9	P82933	46	627	Small ribosomal subunit protein uS9m (28S ribosomal protein 	w
+RIBOSOMAL	human	P83731	RPL24	P83731	29	629	Large ribosomal subunit protein eL24 (60S ribosomal protein 	w
+RIBOSOMAL	human	P83881	RPL36A	P83881	24	495	Large ribosomal subunit protein eL42 (60S ribosomal protein 	w
+RIBOSOMAL	human	P84098	RPL19	P84098	92	987	Large ribosomal subunit protein eL19 (60S ribosomal protein 	w
+RIBOSOMAL	human	Q02543	RPL18A	Q02543	69	817	Large ribosomal subunit protein eL20 (60S ribosomal protein 	w
+RIBOSOMAL	human	Q02878	RPL6	Q02878	61	789	Large ribosomal subunit protein eL6 (60S ribosomal protein L	w
+RIBOSOMAL	human	Q07020	RPL18	Q07020	75	909	Large ribosomal subunit protein eL18 (60S ribosomal protein 	w
+RIBOSOMAL	human	Q13084	MRPL28	Q13084	19	273	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+RIBOSOMAL	human	Q13405	MRPL49	Q13405	16	403	Large ribosomal subunit protein mL49 (39S ribosomal protein 	w
 RIBOSOMAL	human	Q13868	EXOSC2	Q13868	18	301	Exosome complex component RRP4 (Exosome component 2) (Riboso	w
-RIBOSOMAL	human	Q14197	MRPL58	Q14197	20	485	Large ribosomal subunit protein mL62 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q14684	RRP1B	Q14684	109	716	Ribosomal RNA processing protein 1 homolog B (RRP1-like prot	w
-RIBOSOMAL	human	Q15024	EXOSC7	Q15024	19	273	Exosome complex component RRP42 (Exosome component 7) (Ribos	w
-RIBOSOMAL	human	Q15349	RPS6KA2	Q15349	163	1502	Ribosomal protein S6 kinase alpha-2 (S6K-alpha-2) (EC 2.7.11	w
-RIBOSOMAL	human	Q15418	RPS6KA1	Q15418	134	1506	Ribosomal protein S6 kinase alpha-1 (S6K-alpha-1) (EC 2.7.11	w
-RIBOSOMAL	human	Q16540	MRPL23	Q16540	21	415	Large ribosomal subunit protein uL23m (39S ribosomal protein	w
-RIBOSOMAL	human	Q4U2R6	MRPL51	Q4U2R6	24	202	Large ribosomal subunit protein mL51 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q59GN2	RPL39P5	Q59GN2	22	238	Putative ribosomal protein eL39-like 5 (60S ribosomal protei	w
+RIBOSOMAL	human	Q14197	MRPL58	Q14197	17	483	Large ribosomal subunit protein mL62 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q14684	RRP1B	Q14684	94	716	Ribosomal RNA processing protein 1 homolog B (RRP1-like prot	w
+RIBOSOMAL	human	Q15024	EXOSC7	Q15024	17	273	Exosome complex component RRP42 (Exosome component 7) (Ribos	w
+RIBOSOMAL	human	Q15349	RPS6KA2	Q15349	155	1498	Ribosomal protein S6 kinase alpha-2 (S6K-alpha-2) (EC 2.7.11	w
+RIBOSOMAL	human	Q15418	RPS6KA1	Q15418	117	1502	Ribosomal protein S6 kinase alpha-1 (S6K-alpha-1) (EC 2.7.11	w
+RIBOSOMAL	human	Q16540	MRPL23	Q16540	17	412	Large ribosomal subunit protein uL23m (39S ribosomal protein	w
+RIBOSOMAL	human	Q4U2R6	MRPL51	Q4U2R6	23	202	Large ribosomal subunit protein mL51 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q59GN2	RPL39P5	Q59GN2	14	238	Putative ribosomal protein eL39-like 5 (60S ribosomal protei	w
 RIBOSOMAL	human	Q5JNZ5	RPS26P11	Q5JNZ5	7	82	Putative ribosomal protein eS26-like (Putative 40S ribosomal	w
-RIBOSOMAL	human	Q5T653	MRPL2	Q5T653	35	590	Large ribosomal subunit protein uL2m (39S ribosomal protein 	w
-RIBOSOMAL	human	Q6DKI1	RPL7L1	Q6DKI1	31	586	Ribosomal protein uL30-like (60S ribosomal protein L7-like 1	w
-RIBOSOMAL	human	Q6NVV1	RPL13AP3	Q6NVV1	6	76	Putative ribosomal protein uL13-like (60S ribosomal protein 	w
-RIBOSOMAL	human	Q6P161	MRPL54	Q6P161	13	256	Large ribosomal subunit protein mL54 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q5T653	MRPL2	Q5T653	35	587	Large ribosomal subunit protein uL2m (39S ribosomal protein 	w
+RIBOSOMAL	human	Q6DKI1	RPL7L1	Q6DKI1	29	583	Ribosomal protein uL30-like (60S ribosomal protein L7-like 1	w
+RIBOSOMAL	human	Q6NVV1	RPL13AP3	Q6NVV1	5	76	Putative ribosomal protein uL13-like (60S ribosomal protein 	w
+RIBOSOMAL	human	Q6P161	MRPL54	Q6P161	13	255	Large ribosomal subunit protein mL54 (39S ribosomal protein 	w
 RIBOSOMAL	human	Q6P1L8	MRPL14	Q6P1L8	15	207	Large ribosomal subunit protein uL14m (39S ribosomal protein	w
-RIBOSOMAL	human	Q6P5R6	RPL22L1	Q6P5R6	45	486	Ribosomal protein eL22-like (60S ribosomal protein L22-like 	w
-RIBOSOMAL	human	Q71UM5	RPS27L	Q71UM5	80	739	Ribosomal protein eS27-like (40S ribosomal protein S27-like)	w
-RIBOSOMAL	human	Q7Z2W9	MRPL21	Q7Z2W9	31	497	Large ribosomal subunit protein bL21m (39S ribosomal protein	w
-RIBOSOMAL	human	Q7Z7F7	MRPL55	Q7Z7F7	62	554	Large ribosomal subunit protein mL55 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q7Z7H8	MRPL10	Q7Z7H8	27	337	Large ribosomal subunit protein uL10m (39S ribosomal protein	w
-RIBOSOMAL	human	Q86TS9	MRPL52	Q86TS9	21	235	Large ribosomal subunit protein mL52 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q86WX3	RPS19BP1	Q86WX3	25	238	Active regulator of SIRT1 (40S ribosomal protein S19-binding	w
-RIBOSOMAL	human	Q8IUF8	RIOX2	Q8IUF8	14	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	w
-RIBOSOMAL	human	Q8IXM3	MRPL41	Q8IXM3	17	417	Large ribosomal subunit protein mL41 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q8IXN7	RIMKLA	Q8IXN7	3	99	N-acetylaspartylglutamate synthase A (NAAG synthetase A) (NA	w
-RIBOSOMAL	human	Q8N0T1	RBIS	Q8N0T1	22	95	Ribosomal biogenesis factor	w
-RIBOSOMAL	human	Q8N442	GUF1	Q8N442	9	256	Translation factor GUF1, mitochondrial (EC 3.6.5.-) (Elongat	w
-RIBOSOMAL	human	Q8N5N7	MRPL50	Q8N5N7	11	253	Large ribosomal subunit protein mL50 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q8N983	MRPL43	Q8N983	11	101	Large ribosomal subunit protein mL43 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q8NHW5	RPLP0P6	Q8NHW5	11	200	Putative ribosomal protein uL10-like (60S acidic ribosomal p	w
-RIBOSOMAL	human	Q8TAE8	GADD45GIP1	Q8TAE8	18	317	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q8TCC3	MRPL30	Q8TCC3	18	337	Large ribosomal subunit protein uL30m (39S ribosomal protein	w
-RIBOSOMAL	human	Q8TD47	RPS4Y2	Q8TD47	18	460	Small ribosomal subunit protein eS4, Y isoform 2 (40S riboso	w
-RIBOSOMAL	human	Q92552	MRPS27	Q92552	76	679	Small ribosomal subunit protein mS27 (28S ribosomal protein 	w
-RIBOSOMAL	human	Q92665	MRPS31	Q92665	25	366	Small ribosomal subunit protein mS31 (28S ribosomal protein 	w
-RIBOSOMAL	human	Q92901	RPL3L	Q92901	30	601	Ribosomal protein uL3-like (60S ribosomal protein L3-like) (	w
-RIBOSOMAL	human	Q92979	EMG1	Q92979	13	251	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
-RIBOSOMAL	human	Q969Q0	RPL36AL	Q969Q0	47	551	Ribosomal protein eL42-like (60S ribosomal protein L36a-like	w
-RIBOSOMAL	human	Q96A35	MRPL24	Q96A35	32	593	Large ribosomal subunit protein uL24m (39S ribosomal protein	w
-RIBOSOMAL	human	Q96B26	EXOSC8	Q96B26	23	300	Exosome complex component RRP43 (Exosome component 8) (Opa-i	w
-RIBOSOMAL	human	Q96BP2	CHCHD1	Q96BP2	38	301	Small ribosomal subunit protein mS37 (28S ribosomal protein 	w
-RIBOSOMAL	human	Q96D46	NMD3	Q96D46	15	322	60S ribosomal export protein NMD3 (hNMD3)	w
-RIBOSOMAL	human	Q96DV4	MRPL38	Q96DV4	26	389	Large ribosomal subunit protein mL38 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q96EH3	MALSU1	Q96EH3	22	342	Mitochondrial assembly of ribosomal large subunit protein 1	w
-RIBOSOMAL	human	Q96EH5	RPL39L	Q96EH5	20	368	Ribosomal protein eL39-like 2 (60S ribosomal protein L39-2) 	w
-RIBOSOMAL	human	Q96EL2	MRPS24	Q96EL2	30	342	Small ribosomal subunit protein uS3m (28S ribosomal protein 	w
-RIBOSOMAL	human	Q96EL3	MRPL53	Q96EL3	23	230	Large ribosomal subunit protein mL53 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q96EU6	RRP36	Q96EU6	21	290	Ribosomal RNA processing protein 36 homolog	w
-RIBOSOMAL	human	Q96EY7	PTCD3	Q96EY7	38	351	Small ribosomal subunit protein mS39 (28S ribosomal protein 	w
-RIBOSOMAL	human	Q96FB5	METTL25B	Q96FB5	1	10	Methyltransferase-like protein 25B (Protein RRNAD1) (Ribosom	w
+RIBOSOMAL	human	Q6P5R6	RPL22L1	Q6P5R6	33	483	Ribosomal protein eL22-like (60S ribosomal protein L22-like 	w
+RIBOSOMAL	human	Q71UM5	RPS27L	Q71UM5	73	737	Ribosomal protein eS27-like (40S ribosomal protein S27-like)	w
+RIBOSOMAL	human	Q7Z2W9	MRPL21	Q7Z2W9	30	493	Large ribosomal subunit protein bL21m (39S ribosomal protein	w
+RIBOSOMAL	human	Q7Z7F7	MRPL55	Q7Z7F7	57	554	Large ribosomal subunit protein mL55 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q7Z7H8	MRPL10	Q7Z7H8	23	334	Large ribosomal subunit protein uL10m (39S ribosomal protein	w
+RIBOSOMAL	human	Q86TS9	MRPL52	Q86TS9	19	235	Large ribosomal subunit protein mL52 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q86WX3	RPS19BP1	Q86WX3	23	238	Active regulator of SIRT1 (40S ribosomal protein S19-binding	w
+RIBOSOMAL	human	Q8IUF8	RIOX2	Q8IUF8	10	130	Ribosomal oxygenase 2 (60S ribosomal protein L27a histidine 	w
+RIBOSOMAL	human	Q8IXM3	MRPL41	Q8IXM3	15	415	Large ribosomal subunit protein mL41 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q8IXN7	RIMKLA	Q8IXN7	2	99	N-acetylaspartylglutamate synthase A (NAAG synthetase A) (NA	w
+RIBOSOMAL	human	Q8N0T1	RBIS	Q8N0T1	18	95	Ribosomal biogenesis factor	w
+RIBOSOMAL	human	Q8N442	GUF1	Q8N442	9	253	Translation factor GUF1, mitochondrial (EC 3.6.5.-) (Elongat	w
+RIBOSOMAL	human	Q8N5N7	MRPL50	Q8N5N7	10	253	Large ribosomal subunit protein mL50 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q8N983	MRPL43	Q8N983	10	101	Large ribosomal subunit protein mL43 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q8NHW5	RPLP0P6	Q8NHW5	8	200	Putative ribosomal protein uL10-like (60S acidic ribosomal p	w
+RIBOSOMAL	human	Q8TAE8	GADD45GIP1	Q8TAE8	12	317	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q8TCC3	MRPL30	Q8TCC3	18	334	Large ribosomal subunit protein uL30m (39S ribosomal protein	w
+RIBOSOMAL	human	Q8TD47	RPS4Y2	Q8TD47	17	457	Small ribosomal subunit protein eS4, Y isoform 2 (40S riboso	w
+RIBOSOMAL	human	Q92552	MRPS27	Q92552	71	679	Small ribosomal subunit protein mS27 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q92665	MRPS31	Q92665	20	366	Small ribosomal subunit protein mS31 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q92901	RPL3L	Q92901	27	598	Ribosomal protein uL3-like (60S ribosomal protein L3-like) (	w
+RIBOSOMAL	human	Q92979	EMG1	Q92979	11	249	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
+RIBOSOMAL	human	Q969Q0	RPL36AL	Q969Q0	38	548	Ribosomal protein eL42-like (60S ribosomal protein L36a-like	w
+RIBOSOMAL	human	Q96A35	MRPL24	Q96A35	27	589	Large ribosomal subunit protein uL24m (39S ribosomal protein	w
+RIBOSOMAL	human	Q96B26	EXOSC8	Q96B26	17	300	Exosome complex component RRP43 (Exosome component 8) (Opa-i	w
+RIBOSOMAL	human	Q96BP2	CHCHD1	Q96BP2	30	301	Small ribosomal subunit protein mS37 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q96D46	NMD3	Q96D46	12	321	60S ribosomal export protein NMD3 (hNMD3)	w
+RIBOSOMAL	human	Q96DV4	MRPL38	Q96DV4	22	386	Large ribosomal subunit protein mL38 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q96EH3	MALSU1	Q96EH3	19	340	Mitochondrial assembly of ribosomal large subunit protein 1	w
+RIBOSOMAL	human	Q96EH5	RPL39L	Q96EH5	18	365	Ribosomal protein eL39-like 2 (60S ribosomal protein L39-2) 	w
+RIBOSOMAL	human	Q96EL2	MRPS24	Q96EL2	28	342	Small ribosomal subunit protein uS3m (28S ribosomal protein 	w
+RIBOSOMAL	human	Q96EL3	MRPL53	Q96EL3	22	230	Large ribosomal subunit protein mL53 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q96EU6	RRP36	Q96EU6	14	290	Ribosomal RNA processing protein 36 homolog	w
+RIBOSOMAL	human	Q96EY7	PTCD3	Q96EY7	33	351	Small ribosomal subunit protein mS39 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q96FB5	METTL25B	Q96FB5	0	10	Methyltransferase-like protein 25B (Protein RRNAD1) (Ribosom	w
 RIBOSOMAL	human	Q96GC5	MRPL48	Q96GC5	19	200	Large ribosomal subunit protein mL48 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q96L21	RPL10L	Q96L21	53	864	Ribosomal protein uL16-like (60S ribosomal protein L10-like)	w
-RIBOSOMAL	human	Q96LW2	RSKR	Q96LW2	358	1204	Ribosomal protein S6 kinase-related protein (EC 2.7.11.1) (S	w
-RIBOSOMAL	human	Q96S38	RPS6KC1	Q96S38	21	96	Inactive ribosomal protein S6 kinase delta-1 (S6K-delta-1) (	w
-RIBOSOMAL	human	Q9BQ48	MRPL34	Q9BQ48	16	359	Large ribosomal subunit protein bL34m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9BQ75	CMSS1	Q9BQ75	17	179	Protein CMSS1 (Cms1 ribosomal small subunit homolog)	w
-RIBOSOMAL	human	Q9BQC6	MRPL57	Q9BQC6	22	235	Large ribosomal subunit protein mL63 (Mitochondrial ribosoma	w
+RIBOSOMAL	human	Q96L21	RPL10L	Q96L21	47	861	Ribosomal protein uL16-like (60S ribosomal protein L10-like)	w
+RIBOSOMAL	human	Q96LW2	RSKR	Q96LW2	353	1203	Ribosomal protein S6 kinase-related protein (EC 2.7.11.1) (S	w
+RIBOSOMAL	human	Q96S38	RPS6KC1	Q96S38	20	96	Inactive ribosomal protein S6 kinase delta-1 (S6K-delta-1) (	w
+RIBOSOMAL	human	Q9BQ48	MRPL34	Q9BQ48	13	356	Large ribosomal subunit protein bL34m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9BQ75	CMSS1	Q9BQ75	12	179	Protein CMSS1 (Cms1 ribosomal small subunit homolog)	w
+RIBOSOMAL	human	Q9BQC6	MRPL57	Q9BQC6	17	235	Large ribosomal subunit protein mL63 (Mitochondrial ribosoma	w
 RIBOSOMAL	human	Q9BRJ2	MRPL45	Q9BRJ2	23	180	Large ribosomal subunit protein mL45 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9BYC8	MRPL32	Q9BYC8	19	417	Large ribosomal subunit protein bL32m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9BYC9	MRPL20	Q9BYC9	23	403	Large ribosomal subunit protein bL20m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9BYD1	MRPL13	Q9BYD1	31	711	Large ribosomal subunit protein uL13m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9BYD2	MRPL9	Q9BYD2	30	365	Large ribosomal subunit protein bL9m (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9BYD3	MRPL4	Q9BYD3	35	758	Large ribosomal subunit protein uL4m (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9BYD6	MRPL1	Q9BYD6	54	426	Large ribosomal subunit protein uL1m (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9BYN8	MRPS26	Q9BYN8	33	427	Small ribosomal subunit protein mS26 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q9BYC8	MRPL32	Q9BYC8	18	414	Large ribosomal subunit protein bL32m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9BYC9	MRPL20	Q9BYC9	22	400	Large ribosomal subunit protein bL20m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9BYD1	MRPL13	Q9BYD1	29	707	Large ribosomal subunit protein uL13m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9BYD2	MRPL9	Q9BYD2	27	362	Large ribosomal subunit protein bL9m (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9BYD3	MRPL4	Q9BYD3	32	755	Large ribosomal subunit protein uL4m (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9BYD6	MRPL1	Q9BYD6	50	423	Large ribosomal subunit protein uL1m (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9BYN8	MRPS26	Q9BYN8	28	427	Small ribosomal subunit protein mS26 (28S ribosomal protein 	w
 RIBOSOMAL	human	Q9BZE1	MRPL37	Q9BZE1	19	237	Large ribosomal subunit protein mL37 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9H0U6	MRPL18	Q9H0U6	14	243	Large ribosomal subunit protein uL18m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9H2W6	MRPL46	Q9H2W6	36	444	Large ribosomal subunit protein mL46 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9H6W3	RIOX1	Q9H6W3	10	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
-RIBOSOMAL	human	Q9H9J2	MRPL44	Q9H9J2	23	437	Large ribosomal subunit protein mL44 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9HD33	MRPL47	Q9HD33	42	476	Large ribosomal subunit protein uL29m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9NP92	MRPS30	Q9NP92	13	234	Large ribosomal subunit protein mL65 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9NPD3	EXOSC4	Q9NPD3	21	311	Exosome complex component RRP41 (Exosome component 4) (Ribos	w
-RIBOSOMAL	human	Q9NQ39	RPS10P5	Q9NQ39	9	42	Putative ribosomal protein eS10-like (Putative 40S ribosomal	w
-RIBOSOMAL	human	Q9NQ50	MRPL40	Q9NQ50	40	415	Large ribosomal subunit protein mL40 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9NQT4	EXOSC5	Q9NQT4	25	328	Exosome complex component RRP46 (Chronic myelogenous leukemi	w
-RIBOSOMAL	human	Q9NQT5	EXOSC3	Q9NQT5	17	273	Exosome complex component RRP40 (Exosome component 3) (Ribos	w
-RIBOSOMAL	human	Q9NRX2	MRPL17	Q9NRX2	43	533	Large ribosomal subunit protein bL17m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9H0U6	MRPL18	Q9H0U6	10	243	Large ribosomal subunit protein uL18m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9H2W6	MRPL46	Q9H2W6	34	440	Large ribosomal subunit protein mL46 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9H6W3	RIOX1	Q9H6W3	8	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
+RIBOSOMAL	human	Q9H9J2	MRPL44	Q9H9J2	21	435	Large ribosomal subunit protein mL44 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9HD33	MRPL47	Q9HD33	39	472	Large ribosomal subunit protein uL29m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9NP92	MRPS30	Q9NP92	11	234	Large ribosomal subunit protein mL65 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9NPD3	EXOSC4	Q9NPD3	20	311	Exosome complex component RRP41 (Exosome component 4) (Ribos	w
+RIBOSOMAL	human	Q9NQ39	RPS10P5	Q9NQ39	8	42	Putative ribosomal protein eS10-like (Putative 40S ribosomal	w
+RIBOSOMAL	human	Q9NQ50	MRPL40	Q9NQ50	38	412	Large ribosomal subunit protein mL40 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9NQT4	EXOSC5	Q9NQT4	21	327	Exosome complex component RRP46 (Chronic myelogenous leukemi	w
+RIBOSOMAL	human	Q9NQT5	EXOSC3	Q9NQT5	15	273	Exosome complex component RRP40 (Exosome component 3) (Ribos	w
+RIBOSOMAL	human	Q9NRX2	MRPL17	Q9NRX2	42	530	Large ribosomal subunit protein bL17m (39S ribosomal protein	w
 RIBOSOMAL	human	Q9NSQ0	RRP7BP	Q9NSQ0	5	31	Putative ribosomal RNA-processing protein 7 homolog B (Putat	w
-RIBOSOMAL	human	Q9NUL5	SHFL	Q9NUL5	2	141	Shiftless antiviral inhibitor of ribosomal frameshifting pro	w
-RIBOSOMAL	human	Q9NVS2	MRPS18A	Q9NVS2	22	337	Large ribosomal subunit protein mL66 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9NWT8	AURKAIP1	Q9NWT8	42	373	Small ribosomal subunit protein bS22, mitochondrial (28S rib	w
-RIBOSOMAL	human	Q9NWU5	MRPL22	Q9NWU5	49	648	Large ribosomal subunit protein uL22m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9NX20	MRPL16	Q9NX20	38	527	Large ribosomal subunit protein uL16m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9NYK5	MRPL39	Q9NYK5	45	271	Large ribosomal subunit protein mL39 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9NZE8	MRPL35	Q9NZE8	20	178	Large ribosomal subunit protein bL35m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9P015	MRPL15	Q9P015	39	438	Large ribosomal subunit protein uL15m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9P0J6	MRPL36	Q9P0J6	9	395	Large ribosomal subunit protein bL36m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9P0M9	MRPL27	Q9P0M9	19	466	Large ribosomal subunit protein bL27m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9UBS0	RPS6KB2	Q9UBS0	264	1585	Ribosomal protein S6 kinase beta-2 (S6K-beta-2) (S6K2) (EC 2	w
-RIBOSOMAL	human	Q9UHA3	RSL24D1	Q9UHA3	48	378	Probable ribosome biogenesis protein RLP24 (Ribosomal L24 do	w
-RIBOSOMAL	human	Q9UJJ7	RPUSD1	Q9UJJ7	9	90	Pseudouridylate synthase RPUSD1 (EC 5.4.99.-) (RNA pseudouri	w
-RIBOSOMAL	human	Q9UK32	RPS6KA6	Q9UK32	28	216	Ribosomal protein S6 kinase alpha-6 (S6K-alpha-6) (EC 2.7.11	w
+RIBOSOMAL	human	Q9NUL5	SHFL	Q9NUL5	1	141	Shiftless antiviral inhibitor of ribosomal frameshifting pro	w
+RIBOSOMAL	human	Q9NVS2	MRPS18A	Q9NVS2	20	334	Large ribosomal subunit protein mL66 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9NWT8	AURKAIP1	Q9NWT8	36	373	Small ribosomal subunit protein bS22, mitochondrial (28S rib	w
+RIBOSOMAL	human	Q9NWU5	MRPL22	Q9NWU5	48	645	Large ribosomal subunit protein uL22m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9NX20	MRPL16	Q9NX20	34	524	Large ribosomal subunit protein uL16m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9NYK5	MRPL39	Q9NYK5	43	271	Large ribosomal subunit protein mL39 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9NZE8	MRPL35	Q9NZE8	17	178	Large ribosomal subunit protein bL35m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9P015	MRPL15	Q9P015	35	438	Large ribosomal subunit protein uL15m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9P0J6	MRPL36	Q9P0J6	9	393	Large ribosomal subunit protein bL36m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9P0M9	MRPL27	Q9P0M9	19	464	Large ribosomal subunit protein bL27m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9UBS0	RPS6KB2	Q9UBS0	255	1585	Ribosomal protein S6 kinase beta-2 (S6K-beta-2) (S6K2) (EC 2	w
+RIBOSOMAL	human	Q9UHA3	RSL24D1	Q9UHA3	48	375	Probable ribosome biogenesis protein RLP24 (Ribosomal L24 do	w
+RIBOSOMAL	human	Q9UJJ7	RPUSD1	Q9UJJ7	7	89	Pseudouridylate synthase RPUSD1 (EC 5.4.99.-) (RNA pseudouri	w
+RIBOSOMAL	human	Q9UK32	RPS6KA6	Q9UK32	24	216	Ribosomal protein S6 kinase alpha-6 (S6K-alpha-6) (EC 2.7.11	w
 RIBOSOMAL	human	Q9ULI2	RIMKLB	Q9ULI2	2	102	Beta-citrylglutamate synthase B (EC 6.3.1.17) (N-acetyl-aspa	w
-RIBOSOMAL	human	Q9UNX3	RPL26L1	Q9UNX3	43	888	Ribosomal protein uL24-like (60S ribosomal protein L26-like 	w
-RIBOSOMAL	human	Q9Y291	MRPS33	Q9Y291	26	313	Small ribosomal subunit protein mS33 (28S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y2L1	DIS3	Q9Y2L1	18	356	Exosome complex exonuclease RRP44 (EC 3.1.13.-) (EC 3.1.26.-	w
-RIBOSOMAL	human	Q9Y2Q9	MRPS28	Q9Y2Q9	28	297	Small ribosomal subunit protein bS1m (28S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y2R5	MRPS17	Q9Y2R5	20	301	Small ribosomal subunit protein uS17m (28S ribosomal protein	w
-RIBOSOMAL	human	Q9Y2R9	MRPS7	Q9Y2R9	38	760	Small ribosomal subunit protein uS7m (28S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y399	MRPS2	Q9Y399	43	632	Small ribosomal subunit protein uS2m (28S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y3A4	RRP7A	Q9Y3A4	27	343	Ribosomal RNA-processing protein 7 homolog A (Gastric cancer	w
-RIBOSOMAL	human	Q9Y3B7	MRPL11	Q9Y3B7	43	665	Large ribosomal subunit protein uL11m (39S ribosomal protein	w
-RIBOSOMAL	human	Q9Y3B9	RRP15	Q9Y3B9	24	361	RRP15-like protein (Ribosomal RNA-processing protein 15)	w
-RIBOSOMAL	human	Q9Y3D3	MRPS16	Q9Y3D3	26	524	Small ribosomal subunit protein bS16m (28S ribosomal protein	w
-RIBOSOMAL	human	Q9Y3D5	MRPS18C	Q9Y3D5	34	394	Small ribosomal subunit protein bS18m (28S ribosomal protein	w
-RIBOSOMAL	human	Q9Y3D9	MRPS23	Q9Y3D9	17	347	Small ribosomal subunit protein mS23 (28S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y3U8	RPL36	Q9Y3U8	73	863	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y4W2	LAS1L	Q9Y4W2	27	345	Ribosomal biogenesis protein LAS1L (Endoribonuclease LAS1L) 	w
-RIBOSOMAL	human	Q9Y676	MRPS18B	Q9Y676	19	366	Small ribosomal subunit protein mS40 (28S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y6G3	MRPL42	Q9Y6G3	14	273	Large ribosomal subunit protein mL42 (39S ribosomal protein 	w
-RIBOSOMAL	human	Q9Y6S9	RPS6KL1	Q9Y6S9	147	1221	Ribosomal protein S6 kinase-like 1 (EC 2.7.11.1)	w
+RIBOSOMAL	human	Q9UNX3	RPL26L1	Q9UNX3	38	885	Ribosomal protein uL24-like (60S ribosomal protein L26-like 	w
+RIBOSOMAL	human	Q9Y291	MRPS33	Q9Y291	21	313	Small ribosomal subunit protein mS33 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y2L1	DIS3	Q9Y2L1	16	356	Exosome complex exonuclease RRP44 (EC 3.1.13.-) (EC 3.1.26.-	w
+RIBOSOMAL	human	Q9Y2Q9	MRPS28	Q9Y2Q9	26	297	Small ribosomal subunit protein bS1m (28S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y2R5	MRPS17	Q9Y2R5	15	301	Small ribosomal subunit protein uS17m (28S ribosomal protein	w
+RIBOSOMAL	human	Q9Y2R9	MRPS7	Q9Y2R9	36	757	Small ribosomal subunit protein uS7m (28S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y399	MRPS2	Q9Y399	39	629	Small ribosomal subunit protein uS2m (28S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y3A4	RRP7A	Q9Y3A4	24	341	Ribosomal RNA-processing protein 7 homolog A (Gastric cancer	w
+RIBOSOMAL	human	Q9Y3B7	MRPL11	Q9Y3B7	38	661	Large ribosomal subunit protein uL11m (39S ribosomal protein	w
+RIBOSOMAL	human	Q9Y3B9	RRP15	Q9Y3B9	16	361	RRP15-like protein (Ribosomal RNA-processing protein 15)	w
+RIBOSOMAL	human	Q9Y3D3	MRPS16	Q9Y3D3	25	521	Small ribosomal subunit protein bS16m (28S ribosomal protein	w
+RIBOSOMAL	human	Q9Y3D5	MRPS18C	Q9Y3D5	31	391	Small ribosomal subunit protein bS18m (28S ribosomal protein	w
+RIBOSOMAL	human	Q9Y3D9	MRPS23	Q9Y3D9	16	347	Small ribosomal subunit protein mS23 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y3U8	RPL36	Q9Y3U8	69	860	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y4W2	LAS1L	Q9Y4W2	19	345	Ribosomal biogenesis protein LAS1L (Endoribonuclease LAS1L) 	w
+RIBOSOMAL	human	Q9Y676	MRPS18B	Q9Y676	18	366	Small ribosomal subunit protein mS40 (28S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y6G3	MRPL42	Q9Y6G3	13	273	Large ribosomal subunit protein mL42 (39S ribosomal protein 	w
+RIBOSOMAL	human	Q9Y6S9	RPS6KL1	Q9Y6S9	141	1218	Ribosomal protein S6 kinase-like 1 (EC 2.7.11.1)	w
 RIBOSOMAL	worm	A3QMC5	rpl-34	A3QMC5	9	220	Large ribosomal subunit protein eL34	w
 RIBOSOMAL	worm	C0VXV6	mrpl-46	C0VXV6	0	12	Large ribosomal subunit protein mL46	w
 RIBOSOMAL	worm	G5EDS8	exos-7	G5EDS8	9	36	Ribosomal RNA-processing protein 42	w
@@ -1736,31 +1736,31 @@ RIBOSOME	fly	FBgn0039233	CG7006	Q9VC28	8	126	60S ribosome subunit biogenesis pro
 RIBOSOME	fly	FBgn0052409	CG32409	Q8I937	26	115	Ribosome biogenesis regulatory protein	w
 RIBOSOME	fly	FBgn0259152	Clbn	Q9VBX1	7	101	Ribosome quality control complex subunit NEMF homolog (Prote	w
 RIBOSOME	human	E9PRG8	RSMC	E9PRG8	3	57	28S rRNA/ribosome and sororin micro-cofactor	w
-RIBOSOME	human	L0R8F8	MIEF1	L0R8F8	14	253	Mitochondrial ribosome and complex I assembly factor AltMIEF	w
-RIBOSOME	human	O60287	URB1	O60287	13	432	Nucleolar pre-ribosomal-associated protein 1 (Nucleolar prot	w
-RIBOSOME	human	O60524	NEMF	O60524	20	289	Ribosome quality control complex subunit NEMF (Antigen NY-CO	w
-RIBOSOME	human	O95478	NSA2	O95478	37	586	Ribosome biogenesis protein NSA2 homolog (Hairy cell leukemi	w
-RIBOSOME	human	Q14137	BOP1	Q14137	55	583	Ribosome biogenesis protein BOP1 (Block of proliferation 1 p	w
-RIBOSOME	human	Q14146	URB2	Q14146	28	319	Unhealthy ribosome biogenesis protein 2 homolog	w
-RIBOSOME	human	Q14692	BMS1	Q14692	22	684	Ribosome biogenesis protein BMS1 homolog (EC 3.6.5.-) (Ribos	w
-RIBOSOME	human	Q15050	RRS1	Q15050	66	538	Ribosome biogenesis regulatory protein homolog	w
-RIBOSOME	human	Q8NB90	AFG2A	Q8NB90	12	220	ATPase family gene 2 protein homolog A (EC 3.6.4.10) (AFG2 A	w
-RIBOSOME	human	Q8TDN6	BRIX1	Q8TDN6	55	489	Ribosome biogenesis protein BRX1 homolog (Brix domain-contai	w
-RIBOSOME	human	Q92616	GCN1	Q92616	14	504	Stalled ribosome sensor GCN1 (GCN1 eIF-2-alpha kinase activa	w
-RIBOSOME	human	Q9BQ70	TCF25	Q9BQ70	18	129	Ribosome quality control complex subunit TCF25 (Nuclear loca	w
-RIBOSOME	human	Q9BVQ7	AFG2B	Q9BVQ7	5	273	ATPase family gene 2 protein homolog B (EC 3.6.4.10) (AFG2 A	w
-RIBOSOME	human	Q9GZL7	WDR12	Q9GZL7	44	354	Ribosome biogenesis protein WDR12 (WD repeat-containing prot	w
-RIBOSOME	human	Q9H7B2	RPF2	Q9H7B2	59	382	Ribosome production factor 2 homolog (Brix domain-containing	w
-RIBOSOME	human	Q9H7H0	METTL17	Q9H7H0	30	436	Ribosome assembly protein METTL17, mitochondrial (False p73 	w
-RIBOSOME	human	Q9H9Y2	RPF1	Q9H9Y2	43	411	Ribosome production factor 1 (Brix domain-containing protein	w
-RIBOSOME	human	Q9NSI2	SLX9	Q9NSI2	22	225	Ribosome biogenesis protein SLX9 homolog	w
-RIBOSOME	human	Q9NX04	AIRIM	Q9NX04	29	343	AFG2-interacting ribosome maturation factor (Ribosome biogen	w
-RIBOSOME	human	Q9NZM5	NOP53	Q9NZM5	62	545	Ribosome biogenesis protein NOP53 (Glioma tumor suppressor c	w
-RIBOSOME	human	Q9P2E9	RRBP1	Q9P2E9	16	201	Ribosome-binding protein 1 (180 kDa ribosome receptor homolo	w
-RIBOSOME	human	Q9UHA3	RSL24D1	Q9UHA3	48	378	Probable ribosome biogenesis protein RLP24 (Ribosomal L24 do	w
-RIBOSOME	human	Q9UKD2	MRTO4	Q9UKD2	40	561	mRNA turnover protein 4 homolog (Ribosome assembly factor MR	w
-RIBOSOME	human	Q9Y221	NIP7	Q9Y221	31	391	60S ribosome subunit biogenesis protein NIP7 homolog (KD93) 	w
-RIBOSOME	human	Q9Y3A5	SBDS	Q9Y3A5	14	269	Ribosome maturation protein SBDS (Shwachman-Bodian-Diamond s	w
+RIBOSOME	human	L0R8F8	MIEF1	L0R8F8	9	253	Mitochondrial ribosome and complex I assembly factor AltMIEF	w
+RIBOSOME	human	O60287	URB1	O60287	6	432	Nucleolar pre-ribosomal-associated protein 1 (Nucleolar prot	w
+RIBOSOME	human	O60524	NEMF	O60524	15	289	Ribosome quality control complex subunit NEMF (Antigen NY-CO	w
+RIBOSOME	human	O95478	NSA2	O95478	33	583	Ribosome biogenesis protein NSA2 homolog (Hairy cell leukemi	w
+RIBOSOME	human	Q14137	BOP1	Q14137	50	582	Ribosome biogenesis protein BOP1 (Block of proliferation 1 p	w
+RIBOSOME	human	Q14146	URB2	Q14146	22	319	Unhealthy ribosome biogenesis protein 2 homolog	w
+RIBOSOME	human	Q14692	BMS1	Q14692	18	682	Ribosome biogenesis protein BMS1 homolog (EC 3.6.5.-) (Ribos	w
+RIBOSOME	human	Q15050	RRS1	Q15050	56	538	Ribosome biogenesis regulatory protein homolog	w
+RIBOSOME	human	Q8NB90	AFG2A	Q8NB90	9	220	ATPase family gene 2 protein homolog A (EC 3.6.4.10) (AFG2 A	w
+RIBOSOME	human	Q8TDN6	BRIX1	Q8TDN6	46	488	Ribosome biogenesis protein BRX1 homolog (Brix domain-contai	w
+RIBOSOME	human	Q92616	GCN1	Q92616	7	504	Stalled ribosome sensor GCN1 (GCN1 eIF-2-alpha kinase activa	w
+RIBOSOME	human	Q9BQ70	TCF25	Q9BQ70	13	129	Ribosome quality control complex subunit TCF25 (Nuclear loca	w
+RIBOSOME	human	Q9BVQ7	AFG2B	Q9BVQ7	3	273	ATPase family gene 2 protein homolog B (EC 3.6.4.10) (AFG2 A	w
+RIBOSOME	human	Q9GZL7	WDR12	Q9GZL7	39	353	Ribosome biogenesis protein WDR12 (WD repeat-containing prot	w
+RIBOSOME	human	Q9H7B2	RPF2	Q9H7B2	49	382	Ribosome production factor 2 homolog (Brix domain-containing	w
+RIBOSOME	human	Q9H7H0	METTL17	Q9H7H0	26	436	Ribosome assembly protein METTL17, mitochondrial (False p73 	w
+RIBOSOME	human	Q9H9Y2	RPF1	Q9H9Y2	35	411	Ribosome production factor 1 (Brix domain-containing protein	w
+RIBOSOME	human	Q9NSI2	SLX9	Q9NSI2	15	225	Ribosome biogenesis protein SLX9 homolog	w
+RIBOSOME	human	Q9NX04	AIRIM	Q9NX04	22	343	AFG2-interacting ribosome maturation factor (Ribosome biogen	w
+RIBOSOME	human	Q9NZM5	NOP53	Q9NZM5	54	544	Ribosome biogenesis protein NOP53 (Glioma tumor suppressor c	w
+RIBOSOME	human	Q9P2E9	RRBP1	Q9P2E9	11	201	Ribosome-binding protein 1 (180 kDa ribosome receptor homolo	w
+RIBOSOME	human	Q9UHA3	RSL24D1	Q9UHA3	48	375	Probable ribosome biogenesis protein RLP24 (Ribosomal L24 do	w
+RIBOSOME	human	Q9UKD2	MRTO4	Q9UKD2	36	558	mRNA turnover protein 4 homolog (Ribosome assembly factor MR	w
+RIBOSOME	human	Q9Y221	NIP7	Q9Y221	28	390	60S ribosome subunit biogenesis protein NIP7 homolog (KD93) 	w
+RIBOSOME	human	Q9Y3A5	SBDS	Q9Y3A5	10	267	Ribosome maturation protein SBDS (Shwachman-Bodian-Diamond s	w
 RIBOSOME	worm	G5EFH0	CELE_W09C5.1	G5EFH0	8	158	Ribosome biogenesis protein NSA2 homolog	w
 RIBOSOME	worm	O44761	sld-2	O44761	2	7	Ribosome biogenesis protein NOP53	w
 RIBOSOME	worm	P34524	K12H4.3	P34524	10	82	Ribosome biogenesis protein BRX1 homolog	w
@@ -1826,18 +1826,18 @@ RIBOSOME	zebrafish	Q7ZTZ2	rsl24d1	Q7ZTZ2	27	230	Probable ribosome biogenesis pro
 RIBOSOME	zebrafish	Q8JHH5	airim	Q8JHH5	2	3	AFG2-interacting ribosome maturation factor	w
 RIBOSOME-ASSOCIATED	fly	FBgn0032031	CG13390	Q9VLN0	4	100	Mitochondrial ribosome-associated GTPase 2	w
 RIBOSOME-ASSOCIATED	fly	FBgn0039020	CG17141	Q9VCU5	1	142	Mitochondrial ribosome-associated GTPase 1 (Mitochondrial GT	w
-RIBOSOME-ASSOCIATED	human	Q8N6R1	SERP2	Q8N6R1	26	84	Stress-associated endoplasmic reticulum protein 2 (Ribosome-	w
-RIBOSOME-ASSOCIATED	human	Q9BT17	MTG1	Q9BT17	4	349	Mitochondrial ribosome-associated GTPase 1 (GTP-binding prot	w
-RIBOSOME-ASSOCIATED	human	Q9H4K7	MTG2	Q9H4K7	10	354	Mitochondrial ribosome-associated GTPase 2 (GTP-binding prot	w
+RIBOSOME-ASSOCIATED	human	Q8N6R1	SERP2	Q8N6R1	23	84	Stress-associated endoplasmic reticulum protein 2 (Ribosome-	w
+RIBOSOME-ASSOCIATED	human	Q9BT17	MTG1	Q9BT17	3	347	Mitochondrial ribosome-associated GTPase 1 (GTP-binding prot	w
+RIBOSOME-ASSOCIATED	human	Q9H4K7	MTG2	Q9H4K7	9	354	Mitochondrial ribosome-associated GTPase 2 (GTP-binding prot	w
 RIBOSOME-ASSOCIATED	worm	O45691	CELE_M01E5.2	O45691	2	42	Mitochondrial ribosome-associated GTPase 2	w
 RIBOSOME-ASSOCIATED	yeast	P11484	SSB1	P11484	30	340	Ribosome-associated molecular chaperone SSB1	w
 RIBOSOME-ASSOCIATED	yeast	P38788	SSZ1	P38788	6	127	Ribosome-associated complex subunit SSZ1	w
 RIBOSOME-ASSOCIATED	yeast	P40150	SSB2	P40150	27	310	Ribosome-associated molecular chaperone SSB2	w
 RIBOSOME-ASSOCIATED	zebrafish	E9QCB3	mtg2	E9QCB3	0	76	Mitochondrial ribosome-associated GTPase 2	w
-RIBOSOME-ATTACHED	human	Q9Y6X1	SERP1	Q9Y6X1	30	123	Stress-associated endoplasmic reticulum protein 1 (Ribosome-	w
-RIBOSOME-BINDING	human	Q8N0V3	RBFA	Q8N0V3	16	172	Putative ribosome-binding factor A, mitochondrial	w
-RIBOSOME-BINDING	human	Q96AG4	LRRC59	Q96AG4	52	755	Leucine-rich repeat-containing protein 59 (Ribosome-binding 	w
-RIBOSOME-BINDING	human	Q9P2E9	RRBP1	Q9P2E9	16	201	Ribosome-binding protein 1 (180 kDa ribosome receptor homolo	w
+RIBOSOME-ATTACHED	human	Q9Y6X1	SERP1	Q9Y6X1	24	123	Stress-associated endoplasmic reticulum protein 1 (Ribosome-	w
+RIBOSOME-BINDING	human	Q8N0V3	RBFA	Q8N0V3	15	172	Putative ribosome-binding factor A, mitochondrial	w
+RIBOSOME-BINDING	human	Q96AG4	LRRC59	Q96AG4	45	755	Leucine-rich repeat-containing protein 59 (Ribosome-binding 	w
+RIBOSOME-BINDING	human	Q9P2E9	RRBP1	Q9P2E9	11	201	Ribosome-binding protein 1 (180 kDa ribosome receptor homolo	w
 RIBOSOME-BINDING	worm	Q18170	C25G4.3	Q18170	1	30	Ribosome-binding factor A	w
 RIBOSOME-BINDING	worm	Q9GRZ9	tcc-1	Q9GRZ9	0	24	Ribosome-binding protein 1	w
 RIBOSOME-BINDING	zebrafish	B8A4D7	rrbp1a	B8A4D7	2	21	Ribosome-binding protein 1a	w
@@ -1846,26 +1846,26 @@ RIBOSOME-BINDING	zebrafish	Q1LXR3	rrbp1b	Q1LXR3	2	21	Ribosome-binding protein 1b
 RIBOSOME-INTERACTING	yeast	P39729	RBG1	P39729	5	141	Ribosome-interacting GTPase 1	w
 RIBOSOME-INTERACTING	yeast	P53295	RBG2	P53295	13	121	Ribosome-interacting GTPase 2	w
 RIBOSOME-RECYCLING	fly	FBgn0051159	mRRF2	Q9VCX4	4	101	Ribosome-releasing factor 2, mitochondrial (RRF2mt) (Elongat	w
-RIBOSOME-RECYCLING	human	Q96E11	MRRF	Q96E11	12	394	Ribosome-recycling factor, mitochondrial (RRF) (mtRRF) (Ribo	w
+RIBOSOME-RECYCLING	human	Q96E11	MRRF	Q96E11	10	391	Ribosome-recycling factor, mitochondrial (RRF) (mtRRF) (Ribo	w
 RIBOSOME-RECYCLING	worm	P91478	mrrf-1	P91478	7	124	Ribosome-recycling factor, mitochondrial	w
 RIBOSOME-RECYCLING	yeast	P38771	RRF1	P38771	0	131	Ribosome-recycling factor, mitochondrial	w
 RIBOSOME-RELEASING	fly	FBgn0051159	mRRF2	Q9VCX4	4	101	Ribosome-releasing factor 2, mitochondrial (RRF2mt) (Elongat	w
-RIBOSOME-RELEASING	human	Q969S9	GFM2	Q969S9	7	268	Ribosome-releasing factor 2, mitochondrial (RRF2mt) (EC 3.6.	w
-RIBOSOME-RELEASING	human	Q96E11	MRRF	Q96E11	12	394	Ribosome-recycling factor, mitochondrial (RRF) (mtRRF) (Ribo	w
+RIBOSOME-RELEASING	human	Q969S9	GFM2	Q969S9	4	266	Ribosome-releasing factor 2, mitochondrial (RRF2mt) (EC 3.6.	w
+RIBOSOME-RELEASING	human	Q96E11	MRRF	Q96E11	10	391	Ribosome-recycling factor, mitochondrial (RRF) (mtRRF) (Ribo	w
 RIBOSOME-RELEASING	yeast	P39677	MEF2	P39677	5	196	Ribosome-releasing factor 2, mitochondrial	w
 RIBOSOME-RELEASING	zebrafish	A0JMI9	gfm2	A0JMI9	1	91	Ribosome-releasing factor 2, mitochondrial	w
-RIBOSYL	human	Q9NWW6	NMRK1	Q9NWW6	4	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
+RIBOSYL	human	Q9NWW6	NMRK1	Q9NWW6	3	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
 RIBOSYLATION	fly	FBgn0013749	Arf4	P40945	15	146	ADP ribosylation factor 4 (dARF II)	w
 RIBOSYLATION	fly	FBgn0013750	Arf6	P40946	27	108	ADP-ribosylation factor 6 (ARF6) (ADP ribosylation factor at	w
 RIBOSYLATION	fly	FBgn0039889	Arl4	H9XVM3	6	29	ADP ribosylation factor-like 4, isoform B	w
 RIBOSYLATION	human	I3L3L1	ARL17B	I3L3L1	2	10	ADP ribosylation factor like GTPase 17A	w
 RIBOSYLDIHYDRONICOTINAMIDE	human	P16083	NQO2	P16083	2	192	Ribosyldihydronicotinamide dehydrogenase [quinone] (EC 1.10.	w
-RIBOSYLNICOTINAMIDE	human	Q9NWW6	NMRK1	Q9NWW6	4	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
-RIBULOSE-5-PHOSPHATE-3-EPIMERASE	human	Q96AT9	RPE	Q96AT9	6	115	Ribulose-phosphate 3-epimerase (EC 5.1.3.1) (Ribulose-5-phos	w
+RIBOSYLNICOTINAMIDE	human	Q9NWW6	NMRK1	Q9NWW6	3	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
+RIBULOSE-5-PHOSPHATE-3-EPIMERASE	human	Q96AT9	RPE	Q96AT9	5	115	Ribulose-phosphate 3-epimerase (EC 5.1.3.1) (Ribulose-5-phos	w
 RIBULOSE-5-PHOSPHATE-3-EPIMERASE-LIKE	human	Q2QD12	RPEL1	Q2QD12	1	30	Ribulose-phosphate 3-epimerase-like protein 1 (EC 5.1.3.1) (	w
 RIBULOSE-PHOSPHATE	fly	FBgn0050499	Rpe	Q95RV5	3	83	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	w
 RIBULOSE-PHOSPHATE	human	Q2QD12	RPEL1	Q2QD12	1	30	Ribulose-phosphate 3-epimerase-like protein 1 (EC 5.1.3.1) (	w
-RIBULOSE-PHOSPHATE	human	Q96AT9	RPE	Q96AT9	6	115	Ribulose-phosphate 3-epimerase (EC 5.1.3.1) (Ribulose-5-phos	w
+RIBULOSE-PHOSPHATE	human	Q96AT9	RPE	Q96AT9	5	115	Ribulose-phosphate 3-epimerase (EC 5.1.3.1) (Ribulose-5-phos	w
 RIBULOSE-PHOSPHATE	worm	Q95ZW2	CELE_F08F8.7	Q95ZW2	0	9	Ribulose-phosphate 3-epimerase	w
 RIBULOSE-PHOSPHATE	yeast	P46969	RPE1	P46969	0	2	Ribulose-phosphate 3-epimerase	w
 RIBULOSE-PHOSPHATE	zebrafish	Q6PBW9	rpe	Q6PBW9	0	1	Ribulose-phosphate 3-epimerase	w

@@ -6,14 +6,14 @@ SEGMENT	fly	FBgn0032891	Oseg5	Q9VII8	10	90	Outer segment 5	w
 SEGMENT	fly	FBgn0034452	Oseg6	A1ZBM3	6	38	Outer segment 6	w
 SEGMENT	fly	FBgn0035264	Oseg4	Q9W097	4	42	LD29485p (Outer segment 4, isoform A) (Outer segment 4, isof	w
 SEGMENT	fly	FBgn0035317	Oseg2	Q9W040	0	2	Intraflagellar transport protein 172 homolog (Osmotic avoida	w
-SEGMENT	human	O14640	DVL1	O14640	39	218	Segment polarity protein dishevelled homolog DVL-1 (Dishevel	w
-SEGMENT	human	O14641	DVL2	O14641	92	636	Segment polarity protein dishevelled homolog DVL-2 (Dishevel	w
-SEGMENT	human	P51841	GUCY2F	P51841	7	72	Retinal guanylyl cyclase 2 (RETGC-2) (EC 4.6.1.2) (Guanylate	w
-SEGMENT	human	P54792	DVL1P1	P54792	17	81	Putative segment polarity protein dishevelled homolog DVL1P1	w
-SEGMENT	human	Q02846	GUCY2D	Q02846	11	125	Retinal guanylyl cyclase 1 (RETGC-1) (EC 4.6.1.2) (CG-E) (Gu	w
+SEGMENT	human	O14640	DVL1	O14640	36	218	Segment polarity protein dishevelled homolog DVL-1 (Dishevel	w
+SEGMENT	human	O14641	DVL2	O14641	79	636	Segment polarity protein dishevelled homolog DVL-2 (Dishevel	w
+SEGMENT	human	P51841	GUCY2F	P51841	5	72	Retinal guanylyl cyclase 2 (RETGC-2) (EC 4.6.1.2) (Guanylate	w
+SEGMENT	human	P54792	DVL1P1	P54792	12	81	Putative segment polarity protein dishevelled homolog DVL1P1	w
+SEGMENT	human	Q02846	GUCY2D	Q02846	10	125	Retinal guanylyl cyclase 1 (RETGC-1) (EC 4.6.1.2) (CG-E) (Gu	w
 SEGMENT	human	Q03395	ROM1	Q03395	7	76	Rod outer segment membrane protein 1 (ROSP1) (Tetraspanin-23	w
-SEGMENT	human	Q6UW49	SPESP1	Q6UW49	3	12	Sperm equatorial segment protein 1 (SP-ESP) (Equatorial segm	w
-SEGMENT	human	Q92997	DVL3	Q92997	56	370	Segment polarity protein dishevelled homolog DVL-3 (Dishevel	w
+SEGMENT	human	Q6UW49	SPESP1	Q6UW49	2	12	Sperm equatorial segment protein 1 (SP-ESP) (Equatorial segm	w
+SEGMENT	human	Q92997	DVL3	Q92997	47	370	Segment polarity protein dishevelled homolog DVL-3 (Dishevel	w
 SEGMENT	human	Q9NYR8	RDH8	Q9NYR8	4	65	Retinol dehydrogenase 8 (EC 1.1.1.300) (Photoreceptor outer 	w
 SEGMENT	worm	Q22227	mig-5	Q22227	30	810	Segment polarity protein dishevelled homolog mig-5	w
 SEGMENT	zebrafish	A0A8M1PID1	rom1b	A0A8M1PID1	4	5	Rod outer segment membrane protein 1b	w
@@ -77,8 +77,8 @@ SEGMENTATION	fly	FBgn0000606	eve	P06602	84	398	Segmentation protein even-skipped
 SEGMENTATION	fly	FBgn0001077	ftz	P02835	88	426	Segmentation protein fushi tarazu	w
 SEGMENTATION	fly	FBgn0003145	prd	P06601	119	433	Segmentation protein paired	w
 SEGMENTATION	fly	FBgn0003300	run	P22814	83	459	Segmentation protein Runt	w
-SEGN_HUMAN	human	O76038	SCGN	O76038	25	218		
-SEGREG	human	Q9NVJ2	ARL8B	Q9NVJ2	82	402	ADP-ribosylation factor-like protein 8B (EC 3.6.5.2) (ADP-ri	w
+SEGN_HUMAN	human	O76038	SCGN	O76038	20	218		
+SEGREG	human	Q9NVJ2	ARL8B	Q9NVJ2	56	402	ADP-ribosylation factor-like protein 8B (EC 3.6.5.2) (ADP-ri	w
 SEGREGAT	human	A4D2B8	PMS2P1	A4D2B8	2	7	Putative postmeiotic segregation increased 2-like protein 1 	w
 SEGREGATI	human	Q13401	PMS2P3	Q13401	2	2	Putative postmeiotic segregation increased 2-like protein 3 	w
 SEGREGATION	fly	FBgn0003346	RanGAP	Q9VIW3	21	169	Ran GTPase-activating protein (RanGAP) (Protein segregation 	w
@@ -87,11 +87,11 @@ SEGREGATION	fly	FBgn0037551	Arl8	Q9VHV5	15	167	ADP-ribosylation factor-like prot
 SEGREGATION	human	A4D2B8	PMS2P1	A4D2B8	2	7	Putative postmeiotic segregation increased 2-like protein 1 	w
 SEGREGATION	human	A8MQ11	PMS2P5	A8MQ11	4	17	Postmeiotic segregation increased 2-like protein 5 (Postmeio	w
 SEGREGATION	human	O95744	PMS2P2	O95744	2	4	Putative postmeiotic segregation increased 2-like protein 2 	w
-SEGREGATION	human	P55060	CSE1L	P55060	17	467	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
+SEGREGATION	human	P55060	CSE1L	P55060	12	467	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
 SEGREGATION	human	Q13401	PMS2P3	Q13401	2	2	Putative postmeiotic segregation increased 2-like protein 3 	w
 SEGREGATION	human	Q13670	PMS2P11	Q13670	7	51	Putative postmeiotic segregation increased 2-like protein 11	w
-SEGREGATION	human	Q96BM9	ARL8A	Q96BM9	83	334	ADP-ribosylation factor-like protein 8A (ADP-ribosylation fa	w
-SEGREGATION	human	Q9BSJ6	PIMREG	Q9BSJ6	24	156	Protein PIMREG (CALM-interactor expressed in thymus and sple	w
+SEGREGATION	human	Q96BM9	ARL8A	Q96BM9	69	334	ADP-ribosylation factor-like protein 8A (ADP-ribosylation fa	w
+SEGREGATION	human	Q9BSJ6	PIMREG	Q9BSJ6	19	156	Protein PIMREG (CALM-interactor expressed in thymus and sple	w
 SEGREGATION	worm	O45952	csc-1	O45952	2	5	Chromosome segregation and cytokinesis defective protein 1	w
 SEGREGATION	yeast	P32609	PEP7	P32609	7	29	Vacuolar segregation protein PEP7	w
 SEGREGATION	yeast	P38934	BFR1	P38934	16	1287	Nuclear segregation protein BFR1	w

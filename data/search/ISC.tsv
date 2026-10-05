@@ -2,7 +2,7 @@ ISC1	yeast	P40015	ISC1	P40015	2	8	Inositol phosphosphingolipids phospholipase C
 ISC10	yeast	P32645	ISC10	P32645	0	6	Meiosis-specific protein ISC10	
 ISCA	arabidopsis-thaliana	Q9XIK3	ISCA	Q9XIK3	6	21	Iron-sulfur assembly protein IscA, chloroplastic	
 ISCA	haemophilus-influenzae	P44672	iscA	P44672	0	1	Iron-binding protein IscA	
-ISCA	human	Q9BUE6	ISCA1	Q9BUE6	13	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	w
+ISCA	human	Q9BUE6	ISCA1	Q9BUE6	5	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	w
 ISCA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H1H5	iscA	A0A0H3H1H5	0	13	Iron-binding protein IscA	
 ISCA	neisseria-gonorrhoeae	Q5F8X7	iscA	Q5F8X7	0	2	Iron-binding protein IscA	
 ISCA	pseudomonas-aeruginosa	Q9HXJ0	iscA	Q9HXJ0	0	6	Iron-binding protein IscA	
@@ -10,21 +10,21 @@ ISCA	salmonella-typhimurium	Q7CQ12	iscA	Q7CQ12	0	6	Iron-binding protein IscA
 ISCA	shigella-dysenteriae-serotype-1	Q32D36	iscA	Q32D36	0	8	Iron-binding protein IscA	
 ISCA	shigella-flexneri	P0AAD1	iscA	P0AAD1	0	2	Iron-binding protein IscA	
 ISCA1	dictyostelium-discoideum	Q54VS1	isca1	Q54VS1	2	5	Iron-sulfur cluster assembly 1 homolog, mitochondrial	
-ISCA1	human	Q9BUE6	ISCA1	Q9BUE6	13	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	
+ISCA1	human	Q9BUE6	ISCA1	Q9BUE6	5	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	
 ISCA1	mus-musculus	Q9D924	Isca1	Q9D924	2	12	Iron-sulfur cluster assembly 1 homolog, mitochondrial	
 ISCA1	plasmodium-falciparum-36329	O96161	IscA1	O96161	2	7	Iron-sulfur assembly protein IscA1	
 ISCA1	rattus-norvegicus	Q80W96	Isca1	Q80W96	1	7	Iron-sulfur cluster assembly 1 homolog, mitochondrial	
 ISCA1	zebrafish	Q4QRC6	isca1	Q4QRC6	2	19	Iron-sulfur cluster assembly 1 homolog, mitochondrial	
-ISCA1_HUMAN	human	Q9BUE6	ISCA1	Q9BUE6	13	126		
+ISCA1_HUMAN	human	Q9BUE6	ISCA1	Q9BUE6	5	126		
 ISCA2	dictyostelium-discoideum	Q54P40	isca2	Q54P40	3	5	Iron-sulfur cluster assembly 2 homolog, mitochondrial	
-ISCA2	human	Q86U28	ISCA2	Q86U28	27	112	Iron-sulfur cluster assembly 2 homolog, mitochondrial (HESB-	
+ISCA2	human	Q86U28	ISCA2	Q86U28	18	112	Iron-sulfur cluster assembly 2 homolog, mitochondrial (HESB-	
 ISCA2	mus-musculus	Q9DCB8	Isca2	Q9DCB8	4	7	Iron-sulfur cluster assembly 2 homolog, mitochondrial	
 ISCA2	plasmodium-falciparum-36329	O97297	IscA2	O97297	2	6	Iron-sulfur assembly protein IscA2	
 ISCA2	rattus-norvegicus	D4A4L5	Isca2	D4A4L5	0	5	Iron-sulfur cluster assembly 2 homolog, mitochondrial	
-ISCA2_HUMAN	human	Q86U28	ISCA2	Q86U28	27	112		
-ISCHEMIA	human	Q86U90	YRDC	Q86U90	28	374	Threonylcarbamoyl-AMP synthase (EC 2.7.7.87) (Dopamine recep	w
-ISCHEMIA	human	Q86Y25	ZNF354C	Q86Y25	2	123	Zinc finger protein 354C (Kidney, ischemia, and developmenta	w
-ISCHEMIC	human	Q9H7D7	WDR26	Q9H7D7	39	265	WD repeat-containing protein 26 (CUL4- and DDB1-associated W	w
+ISCA2_HUMAN	human	Q86U28	ISCA2	Q86U28	18	112		
+ISCHEMIA	human	Q86U90	YRDC	Q86U90	26	374	Threonylcarbamoyl-AMP synthase (EC 2.7.7.87) (Dopamine recep	w
+ISCHEMIA	human	Q86Y25	ZNF354C	Q86Y25	1	123	Zinc finger protein 354C (Kidney, ischemia, and developmenta	w
+ISCHEMIC	human	Q9H7D7	WDR26	Q9H7D7	33	265	WD repeat-containing protein 26 (CUL4- and DDB1-associated W	w
 ISCL	leishmania-infantum	A4HTH1	ISCL	A4HTH1	0	2	Inositol phosphosphingolipid phospholipase C-Like	
 ISCR	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GW44	iscR	A0A0H3GW44	1	44	HTH-type transcriptional regulator IscR	
 ISCR	pseudomonas-aeruginosa	Q9HXI7	iscR	Q9HXI7	0	8	IscR	
@@ -43,7 +43,7 @@ ISCS	salmonella-typhimurium	Q8ZN40	iscS	Q8ZN40	4	29	Cysteine desulfurase IscS
 ISCS	shigella-flexneri	P0A6C0	iscS	P0A6C0	1	5	Cysteine desulfurase IscS	
 ISCU	fly	FBgn0037637	IscU	Q9VHK6	6	49	GEO04668p1 (GH01635p) (Iron-sulfur cluster assembly enzyme)	
 ISCU	haemophilus-influenzae	Q57074	iscU	Q57074	3	16	Iron-sulfur cluster assembly scaffold protein IscU	
-ISCU	human	Q9H1K1	ISCU	Q9H1K1	20	200	Iron-sulfur cluster assembly enzyme ISCU (NifU-like N-termin	
+ISCU	human	Q9H1K1	ISCU	Q9H1K1	16	199	Iron-sulfur cluster assembly enzyme ISCU (NifU-like N-termin	
 ISCU	mus-musculus	Q9D7P6	Iscu	Q9D7P6	4	54	Iron-sulfur cluster assembly enzyme ISCU	
 ISCU	plasmodium-falciparum-36329	Q8IKT4	IscU	Q8IKT4	4	18	Iron-sulfur cluster assembly protein IscU	
 ISCU	pseudomonas-aeruginosa	Q9HXI9	iscU	Q9HXI9	5	44	Iron-sulfur cluster assembly scaffold protein IscU	
@@ -52,5 +52,5 @@ ISCU	zebrafish	A0A8M1N1R7	si:ch211-191d15.2	A0A8M1N1R7	6	44	Iron-sulfur cluster 
 ISCU-1	worm	O45948	iscu-1	O45948	5	55	NIF system FeS cluster assembly NifU N-terminal domain-conta	
 ISCUB	zebrafish	F1QM53	iscub	F1QM53	4	44	Iron-sulfur cluster assembly enzyme b	
 ISCU_20	fly	FBgn0037637	IscU	Q9VHK6	6	49		
-ISCU_HUMAN	human	Q9H1K1	ISCU	Q9H1K1	20	200		
+ISCU_HUMAN	human	Q9H1K1	ISCU	Q9H1K1	16	199		
 ISCX	shigella-flexneri	P0C0M1	iscX	P0C0M1	0	1	Protein IscX	

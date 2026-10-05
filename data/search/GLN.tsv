@@ -48,7 +48,7 @@ GLNA2	mycobacterium-tuberculosis	P9WN37	glnA2	P9WN37	0	6	Glutamine synthetase
 GLNA3	dictyostelium-discoideum	Q54WR9	glnA3	Q54WR9	0	7	Type-3 glutamine synthetase	
 GLNA3	mycobacterium-tuberculosis	O07752	glnA3	O07752	0	6	Probable glutamine synthetase GlnA3 (Glutamine synthase) (GS	
 GLNA4	mycobacterium-tuberculosis	I6X5K1	glnA4	I6X5K1	0	6	Probable glutamine synthetase GlnA4 (Glutamine synthase) (GS	
-GLNA_HUMAN	human	P15104	GLUL	P15104	8	354		
+GLNA_HUMAN	human	P15104	GLUL	P15104	6	354		
 GLNB	escherichia-coli-83333	P0A9Z1	glnB	P0A9Z1	1	16	Nitrogen regulatory protein P-II 1	
 GLNB	haemophilus-influenzae	P43795	glnB	P43795	0	1	Nitrogen regulatory protein P-II	
 GLNB	mycobacterium-tuberculosis	P9WN31	glnB	P9WN31	1	9	Nitrogen regulatory protein P-II	
@@ -85,7 +85,7 @@ GLNK2	methanocaldococcus-jannaschii	Q58740	glnK2	Q58740	3	6	Nitrogen regulatory 
 GLNL	escherichia-coli-83333	P0AFB5	glnL	P0AFB5	1	10	Sensory histidine kinase/phosphatase NtrB	
 GLNL	salmonella-typhimurium	P0A2D9	glnL	P0A2D9	1	11	Sensory histidine kinase/phosphatase NtrB	
 GLNL	shigella-dysenteriae-serotype-1	Q32A40	glnL	Q32A40	1	12	Sensory histidine kinase/phosphatase NtrB	
-GLNN	human	P22466	GAL	P22466	72	320		
+GLNN	human	P22466	GAL	P22466	49	320		
 GLNP	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9V9	glnP	Q0P9V9	12	20	Glutamine transport system permease	
 GLNP	salmonella-typhimurium	Q7CQW1	glnP	Q7CQW1	23	57	Glutamine transport system permease protein GlnP	
 GLNP	shigella-dysenteriae-serotype-1	Q32I88	glnP	Q32I88	14	39	Glutamine transport system permease protein GlnP	
@@ -108,12 +108,12 @@ GLNQ	streptococcus-pneumoniae	Q8DQL1	glnQ	Q8DQL1	9	9	ABC transporter ATP-binding
 GLNQ	streptococcus-pneumoniae	Q8DR01	glnQ	Q8DR01	9	9	ABC transporter ATP-binding protein-glutamine	
 GLNR	streptococcus-pneumoniae	Q8DQX7	glnR	Q8DQX7	0	9	Transcriptional repressor of the glutamine synthetase protei	
 GLNRS	fly	FBgn0027090	GlnRS	Q9Y105	13	282	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	
-GLNRS	human	P47897	QARS1	P47897	16	581	Glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tRNA synthe	w
+GLNRS	human	P47897	QARS1	P47897	13	578	Glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tRNA synthe	w
 GLNS	dictyostelium-discoideum	P14325	glnS	P14325	2	116	Probable glutamine--tRNA ligase	
 GLNS	escherichia-coli-83333	P00962	glnS	P00962	0	75	Glutamine--tRNA ligase	
 GLNS	haemophilus-influenzae	P43831	glnS	P43831	0	62	Glutamine--tRNA ligase	
-GLNS	human	P07814	EPRS1	P07814	17	439		
-GLNS	human	P15104	GLUL	P15104	8	354		
+GLNS	human	P07814	EPRS1	P07814	9	439		
+GLNS	human	P15104	GLUL	P15104	6	354		
 GLNS	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GPY5	glnS	A0A0H3GPY5	2	171	Glutamine--tRNA ligase	
 GLNS	neisseria-gonorrhoeae	Q5F7G0	glnS	Q5F7G0	0	77	Glutamine--tRNA ligase	
 GLNS	pseudomonas-aeruginosa	Q9I2U8	glnS	Q9I2U8	0	124	Glutamine--tRNA ligase	

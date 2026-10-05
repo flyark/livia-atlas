@@ -20,9 +20,9 @@ URA9	cladophialophora-carrionii	A0A1C1CSA1	URA9	A0A1C1CSA1	0	11	Dihydroorotate d
 URACIL	fly	FBgn0026869	Tdg	Q9V4D8	16	67	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
 URACIL	fly	FBgn0035639	kri	M9PHI7	1	14	Uracil phosphoribosyltransferase homolog	w
 URACIL	fly	FBgn0036838	Trmt2a	Q9VVV7	3	19	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	w
-URACIL	human	Q13304	GPR17	Q13304	42	372	Uracil nucleotide/cysteinyl leukotriene receptor (UDP/CysLT 	w
+URACIL	human	Q13304	GPR17	Q13304	26	372	Uracil nucleotide/cysteinyl leukotriene receptor (UDP/CysLT 	w
 URACIL	human	Q53HV7	SMUG1	Q53HV7	5	145	Single-strand selective monofunctional uracil DNA glycosylas	w
-URACIL	human	Q96BW1	UPRT	Q96BW1	8	71	Uracil phosphoribosyltransferase homolog	w
+URACIL	human	Q96BW1	UPRT	Q96BW1	4	71	Uracil phosphoribosyltransferase homolog	w
 URACIL	worm	Q9N5L0	trm-2a	Q9N5L0	0	3	tRNA (uracil(54)-C(5))-methyltransferase	w
 URACIL	worm	Q9U3L5	C47B2.2	Q9U3L5	1	12	Uracil phosphoribosyltransferase homolog	w
 URACIL	yeast	P05316	FUR4	P05316	0	29	Uracil permease	w
@@ -31,11 +31,11 @@ URACIL	yeast	P33753	TRM2	P33753	0	5	tRNA (uracil(54)-C(5))-methyltransferase	w
 URACIL	yeast	Q04411	URC2	Q04411	0	54	Uracil catabolism protein 2	w
 URACIL	zebrafish	A0A8M9QB08	gpr17	A0A8M9QB08	9	20	Uracil nucleotide/cysteinyl leukotriene receptor	w
 URACIL	zebrafish	Q6NYU7	uprt	Q6NYU7	3	13	Uracil phosphoribosyltransferase homolog	w
-URACIL-5-	human	Q8IZ69	TRMT2A	Q8IZ69	13	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	w
-URACIL-5-	human	Q96GJ1	TRMT2B	Q96GJ1	3	67	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
+URACIL-5-	human	Q8IZ69	TRMT2A	Q8IZ69	10	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	w
+URACIL-5-	human	Q96GJ1	TRMT2B	Q96GJ1	0	67	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
 URACIL-DNA	fly	FBgn0038490	Smug	Q9VEM1	0	5	Uracil-DNA glycosylase-like domain-containing protein	w
 URACIL-DNA	fly	FBgn0039226	Ude	Q7KS11	3	10	Uracil-DNA degrading factor, isoform B (Uracil-DNA degrading	w
-URACIL-DNA	human	P13051	UNG	P13051	11	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
+URACIL-DNA	human	P13051	UNG	P13051	8	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
 URACIL-DNA	virus	A0A068EG39	fep_062	A0A068EG39	5	221	Uracil-DNA glycosylase	w
 URACIL-DNA	virus	A0A068EHG3	pepv_064	A0A068EHG3	13	240	Uracil-DNA glycosylase	w
 URACIL-DNA	virus	A0A0A7MA92		A0A0A7MA92	9	130	Uracil-DNA glycosylase	w
@@ -102,8 +102,8 @@ URACIL-DNA GLYCOSYLASE	virus	A0A5P9JR33	uracil-DNA glycosylase	A0A5P9JR33	3	80	A
 URACIL-O	fly	FBgn0037708	CG9386	Q9VHB9	0	8	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w
 URACIL-O	human	Q8IYL2	TRMT44	Q8IYL2	5	71	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w
 URACIL-O	yeast	Q02648	TRM44	Q02648	0	15	tRNA (uracil-O(2)-)-methyltransferase	w
-URAD	human	A6NGE7	URAD	A6NGE7	3	12	Putative 2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline decar	
-URAD_HUMAN	human	A6NGE7	URAD	A6NGE7	3	12		
+URAD	human	A6NGE7	URAD	A6NGE7	1	12	Putative 2-oxo-4-hydroxy-4-carboxy-5-ureidoimidazoline decar	
+URAD_HUMAN	human	A6NGE7	URAD	A6NGE7	1	12		
 URAH	mus-musculus	Q9CRB3	Urah	Q9CRB3	0	5	5-hydroxyisourate hydrolase	
 URAH	rattus-norvegicus	D3ZCS9	Urah	D3ZCS9	1	8	5-hydroxyisourate hydrolase	
 URAH	zebrafish	Q06S87	urah	Q06S87	1	14	5-hydroxyisourate hydrolase	
@@ -114,4 +114,4 @@ URATE	fly	FBgn0003961	Uro	P16163	1	104	Uricase (EC 1.7.3.3) (Urate oxidase)	w
 URATE	human	Q96S37	SLC22A12	Q96S37	0	48	Solute carrier family 22 member 12 (Organic anion transporte	w
 URATE	human	Q9NRM0	SLC2A9	Q9NRM0	1	98	Solute carrier family 2, facilitated glucose transporter mem	w
 URATE	human	Q9Y2C5	SLC17A4	Q9Y2C5	0	22	Probable small intestine urate exporter (Solute carrier fami	w
-URAX1	human	Q96S65	CSRNP1	Q96S65	8	25	Cysteine/serine-rich nuclear protein 1 (CSRNP-1) (Axin-1 up-	w
+URAX1	human	Q96S65	CSRNP1	Q96S65	7	25	Cysteine/serine-rich nuclear protein 1 (CSRNP-1) (Axin-1 up-	w

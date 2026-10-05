@@ -44,7 +44,7 @@ MURC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PNN7	murC	Q9PNN7	1	24	UDP-
 MURC	escherichia-coli-83333	P17952	murC	P17952	0	12	UDP-N-acetylmuramate--L-alanine ligase	
 MURC	haemophilus-influenzae	P45066	murC	P45066	0	1	UDP-N-acetylmuramate--L-alanine ligase	
 MURC	helicobacter-pylori	O25340	murC	O25340	0	2	UDP-N-acetylmuramate--L-alanine ligase	
-MURC	human	Q5BKX8	CAVIN4	Q5BKX8	9	46		
+MURC	human	Q5BKX8	CAVIN4	Q5BKX8	8	46		
 MURC	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GI71	murC	A0A0H3GI71	0	38	UDP-N-acetylmuramate--L-alanine ligase	
 MURC	mycobacterium-leprae	P57994	murC	P57994	0	32	UDP-N-acetylmuramate--L-alanine ligase	
 MURC	mycobacterium-tuberculosis	P9WJL7	murC	P9WJL7	0	9	UDP-N-acetylmuramate--L-alanine ligase	
@@ -89,7 +89,7 @@ MURE	zea-mays	K7WCC7	MURE	K7WCC7	0	10	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate-
 MURF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA95	murF	Q0PA95	0	10	UDP-N-acetylmuramoyl-tripeptide D-alanyl-D-alanine ligase	
 MURF	escherichia-coli-83333	P11880	murF	P11880	0	7	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
 MURF	haemophilus-influenzae	P45061	murF	P45061	0	7	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
-MURF	human	Q9BYV2	TRIM54	Q9BYV2	44	331		
+MURF	human	Q9BYV2	TRIM54	Q9BYV2	39	331		
 MURF	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GRQ0	murF	A0A0H3GRQ0	0	55	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
 MURF	mycobacterium-leprae	O69556	murF	O69556	0	28	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
 MURF	mycobacterium-tuberculosis	P9WJL1	murF	P9WJL1	1	6	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
@@ -100,12 +100,12 @@ MURF	salmonella-typhimurium	Q8ZRU6	murF	Q8ZRU6	0	6	UDP-N-acetylmuramoyl-tripepti
 MURF	shigella-dysenteriae-serotype-1	Q32K06	murF	Q32K06	0	8	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
 MURF	staphylococcus-aureus-93061	Q2FWH4	murF	Q2FWH4	0	6	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
 MURF	streptococcus-pneumoniae	Q8DNV6	murF	Q8DNV6	0	6	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase	
-MURF-1	human	Q969Q1	TRIM63	Q969Q1	70	481	E3 ubiquitin-protein ligase TRIM63 (EC 2.3.2.27) (Iris RING 	w
-MURF-2	human	Q9BYV6	TRIM55	Q9BYV6	59	351	Tripartite motif-containing protein 55 (EC 2.3.2.27) (Muscle	w
-MURF-3	human	Q9BYV2	TRIM54	Q9BYV2	44	331	Tripartite motif-containing protein 54 (Muscle-specific RING	w
-MURF1	human	Q969Q1	TRIM63	Q969Q1	70	481		
-MURF2	human	Q9BYV6	TRIM55	Q9BYV6	59	351		
-MURF3	human	Q9BYV2	TRIM54	Q9BYV2	44	331		
+MURF-1	human	Q969Q1	TRIM63	Q969Q1	64	481	E3 ubiquitin-protein ligase TRIM63 (EC 2.3.2.27) (Iris RING 	w
+MURF-2	human	Q9BYV6	TRIM55	Q9BYV6	55	351	Tripartite motif-containing protein 55 (EC 2.3.2.27) (Muscle	w
+MURF-3	human	Q9BYV2	TRIM54	Q9BYV2	39	331	Tripartite motif-containing protein 54 (Muscle-specific RING	w
+MURF1	human	Q969Q1	TRIM63	Q969Q1	64	481		
+MURF2	human	Q9BYV6	TRIM55	Q9BYV6	55	351		
+MURF3	human	Q9BYV2	TRIM54	Q9BYV2	39	331		
 MURG	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PNQ2	murG	Q9PNQ2	0	19	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyro	
 MURG	escherichia-coli-83333	P17443	murG	P17443	0	13	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyro	
 MURG	haemophilus-influenzae	P45065	murG	P45065	0	12	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyro	
@@ -133,10 +133,10 @@ MURI	salmonella-typhimurium	P40723	murI	P40723	0	5	Glutamate racemase
 MURI	shigella-dysenteriae-serotype-1	Q32AE7	murI	Q32AE7	0	6	Glutamate racemase	
 MURI	staphylococcus-aureus-93061	Q2FZC6	murI	Q2FZC6	0	5	Glutamate racemase	
 MURI	streptococcus-pneumoniae	P63641	murI	P63641	0	4	Glutamate racemase	
-MURINE	human	P00519	ABL1	P00519	284	1787	Tyrosine-protein kinase ABL1 (EC 2.7.10.2) (Abelson murine l	w
-MURINE	human	P15056	BRAF	P15056	185	1795	Serine/threonine-protein kinase B-raf (EC 2.7.11.1) (Proto-o	w
-MURINE	human	P42684	ABL2	P42684	223	1496	Tyrosine-protein kinase ABL2 (EC 2.7.10.2) (Abelson murine l	w
-MURINE	human	Q9UBH6	XPR1	Q9UBH6	10	227	Solute carrier family 53 member 1 (Phosphate exporter SLC53A	w
+MURINE	human	P00519	ABL1	P00519	266	1787	Tyrosine-protein kinase ABL1 (EC 2.7.10.2) (Abelson murine l	w
+MURINE	human	P15056	BRAF	P15056	169	1794	Serine/threonine-protein kinase B-raf (EC 2.7.11.1) (Proto-o	w
+MURINE	human	P42684	ABL2	P42684	207	1496	Tyrosine-protein kinase ABL2 (EC 2.7.10.2) (Abelson murine l	w
+MURINE	human	Q9UBH6	XPR1	Q9UBH6	8	227	Solute carrier family 53 member 1 (Phosphate exporter SLC53A	w
 MURINE	zebrafish	Q1LXX4	fosb	Q1LXX4	43	83	FBJ murine osteosarcoma viral oncogene homolog B	w
 MURJ	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA89	murJ	Q0PA89	0	2	Probable lipid II flippase MurJ	
 MURJ	escherichia-coli-83333	P0AF16	murJ	P0AF16	0	1	Lipid II flippase MurJ	
@@ -355,7 +355,7 @@ MURQ	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GV11	murQ	A0A0H3GV11	0	2	N-ace
 MURQ	nocardia-brasiliensis	K0FAM0	murQ	K0FAM0	0	4	N-acetylmuramic acid 6-phosphate etherase	
 MURQ	salmonella-typhimurium	Q8ZN25	murQ	Q8ZN25	0	2	N-acetylmuramic acid 6-phosphate etherase	
 MURQ	shigella-dysenteriae-serotype-1	Q32DC6	murQ	Q32DC6	0	2	N-acetylmuramic acid 6-phosphate etherase	
-MURR1	human	Q8N668	COMMD1	Q8N668	40	333		
+MURR1	human	Q8N668	COMMD1	Q8N668	38	333		
 MURT	mycobacterium-leprae	Q7APW6	murT	Q7APW6	1	14	Lipid II isoglutaminyl synthase (glutamine-hydrolyzing) subu	
 MURT	mycobacterium-tuberculosis	I6Y4C7	murT	I6Y4C7	1	4	Lipid II isoglutaminyl synthase (glutamine-hydrolyzing) subu	
 MURT	nocardia-brasiliensis	K0EMS6	murT	K0EMS6	1	4	Lipid II isoglutaminyl synthase (glutamine-hydrolyzing) subu	

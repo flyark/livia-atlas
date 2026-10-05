@@ -6,7 +6,7 @@ GLO-4	worm	Q5DX34	glo-4	Q5DX34	0	21	X-linked retinitis pigmentosa GTPase regulat
 GLO1	arabidopsis-thaliana	Q9LRR9	GLO1	Q9LRR9	1	25	Glycolate oxidase 1	
 GLO1	candida-albicans-237561	Q5ABB2	GLO1	Q5ABB2	0	1	Lactoylglutathione lyase	
 GLO1	fly	FBgn0283450	Glo1	A1Z6X6	1	42	lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Keto	
-GLO1	human	Q04760	GLO1	Q04760	8	200	Lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Glyo	
+GLO1	human	Q04760	GLO1	Q04760	7	200	Lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Glyo	
 GLO1	leishmania-infantum	A4IBI9	GLO1	A4IBI9	0	6	lactoylglutathione lyase	
 GLO1	mus-musculus	Q9CPU0	Glo1	Q9CPU0	0	16	Lactoylglutathione lyase	
 GLO1	oryza-sativa-subsp-japonica	Q10CE4	GLO1	Q10CE4	0	4	Glycolate oxidase 1	
@@ -16,11 +16,11 @@ GLO1	yeast	P50107	GLO1	P50107	0	4	Glyoxalase I
 GLO1	zebrafish	Q6P696	glo1	Q6P696	0	9	Lactoylglutathione lyase	
 GLO2	arabidopsis-thaliana	Q9LRS0	GLO2	Q9LRS0	0	23	Glycolate oxidase 2	
 GLO2	candida-albicans-237561	A0A1D8PID4	GLO2	A0A1D8PID4	0	4	hydroxyacylglutathione hydrolase	
-GLO2	human	Q16775	HAGH	Q16775	16	142		
+GLO2	human	Q16775	HAGH	Q16775	13	142		
 GLO2	oryza-sativa-subsp-japonica	Q7XPR4	GLO2	Q7XPR4	0	4	Glycolate oxidase 2	
 GLO2	schizosaccharomyces-pombe	Q9UT36	glo2	Q9UT36	0	2	Probable hydroxyacylglutathione hydrolase glo2	
 GLO2	yeast	Q05584	GLO2	Q05584	1	17	Hydroxyacylglutathione hydrolase, cytoplasmic isozyme	
-GLO2_HUMAN	human	Q16775	HAGH	Q16775	16	142		
+GLO2_HUMAN	human	Q16775	HAGH	Q16775	13	142		
 GLO3	arabidopsis-thaliana	Q24JJ8	GLO3	Q24JJ8	0	18	Peroxisomal (S)-2-hydroxyacid oxidase GLO3	
 GLO3	candida-albicans-237561	Q5A7M1	GLO3	Q5A7M1	4	10	ADP-ribosylation factor GTPase-activating protein	
 GLO3	oryza-sativa-subsp-japonica	Q7FAS1	GLO3	Q7FAS1	0	4	Glycolate oxidase 3	
@@ -70,24 +70,24 @@ GLOBIN	worm	Q7YZV1	glb-7	Q7YZV1	0	2	Globin domain-containing protein	w
 GLOBIN	zebrafish	A3KNI8	xgb	A3KNI8	0	5	X globin	w
 GLOBIN	zebrafish	Q7T1B0	hbbe2	Q7T1B0	10	16	Embryonic globin beta e2	w
 GLOBIN	zebrafish	Q7ZT21	hbae1.1	Q7ZT21	10	18	Embryonic alpha globin e1	w
-GLOBIN-INDUCING	human	Q8WVL7	ANKRD49	Q8WVL7	25	145	Ankyrin repeat domain-containing protein 49 (Fetal globin-in	w
+GLOBIN-INDUCING	human	Q8WVL7	ANKRD49	Q8WVL7	19	145	Ankyrin repeat domain-containing protein 49 (Fetal globin-in	w
 GLOBIN-LIKE	worm	P30627	glb-1	P30627	2	39	Globin-like protein	w
 GLOBIN-LIKE	worm	Q18086	glb-6	Q18086	0	3	Globin-like protein 6	w
 GLOBIN-LIKE	worm	Q22663	glb-26	Q22663	0	1	Globin-like protein 26	w
 GLOBIN-LIKE	yeast	P53857	YNL234W	P53857	0	19	Uncharacterized globin-like protein YNL234W	w
-GLOBOSIDE	human	Q8N5D6	GBGT1	Q8N5D6	3	71	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1 (EC 	w
+GLOBOSIDE	human	Q8N5D6	GBGT1	Q8N5D6	2	71	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1 (EC 	w
 GLOBOSIDE	zebrafish	A2BIR9	gbgt1l8	A2BIR9	0	6	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1-like	w
 GLOBOSIDE	zebrafish	A2CED1	gbgt1l3	A2CED1	0	6	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1, lik	w
 GLOBOSIDE	zebrafish	B0R0W5	gbgt1l2	B0R0W5	0	6	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1,-lik	w
 GLOBULE	zebrafish	A2RRT1	mfge8b	A2RRT1	0	7	Milk fat globule EGF and factor V/VIII domain containing b p	w
-GLOBULE-EGF	human	Q08431	MFGE8	Q08431	20	338	Lactadherin (Breast epithelial antigen BA46) (HMFG) (MFGM) (	w
-GLOBULI	human	P04278	SHBG	P04278	39	342	Sex hormone-binding globulin (SHBG) (Sex steroid-binding pro	w
-GLOBULIN	human	P02751	FN1	P02751	70	1342	Fibronectin (FN) (Cold-insoluble globulin) (CIG) [Cleaved in	w
-GLOBULIN	human	P02787	TF	P02787	33	566	Serotransferrin (Transferrin) (Beta-1 metal-binding globulin	w
-GLOBULIN	human	P04278	SHBG	P04278	39	342	Sex hormone-binding globulin (SHBG) (Sex steroid-binding pro	w
-GLOBULIN	human	P05543	SERPINA7	P05543	21	251	Thyroxine-binding globulin (Serpin A7) (T4-binding globulin)	w
-GLOBULIN	human	P08185	SERPINA6	P08185	33	283	Corticosteroid-binding globulin (CBG) (Serpin A6) (Transcort	w
-GLOBULIN	human	P09466	PAEP	P09466	57	241	Glycodelin (GD) (Placental protein 14) (PP14) (Pregnancy-ass	w
+GLOBULE-EGF	human	Q08431	MFGE8	Q08431	13	338	Lactadherin (Breast epithelial antigen BA46) (HMFG) (MFGM) (	w
+GLOBULI	human	P04278	SHBG	P04278	29	342	Sex hormone-binding globulin (SHBG) (Sex steroid-binding pro	w
+GLOBULIN	human	P02751	FN1	P02751	44	1342	Fibronectin (FN) (Cold-insoluble globulin) (CIG) [Cleaved in	w
+GLOBULIN	human	P02787	TF	P02787	28	566	Serotransferrin (Transferrin) (Beta-1 metal-binding globulin	w
+GLOBULIN	human	P04278	SHBG	P04278	29	342	Sex hormone-binding globulin (SHBG) (Sex steroid-binding pro	w
+GLOBULIN	human	P05543	SERPINA7	P05543	18	251	Thyroxine-binding globulin (Serpin A7) (T4-binding globulin)	w
+GLOBULIN	human	P08185	SERPINA6	P08185	26	283	Corticosteroid-binding globulin (CBG) (Serpin A6) (Transcort	w
+GLOBULIN	human	P09466	PAEP	P09466	43	241	Glycodelin (GD) (Placental protein 14) (PP14) (Pregnancy-ass	w
 GLOBULIN	zebrafish	A0A8M9Q9E1	LOC110439158	A0A8M9Q9E1	0	38	Thyroxine-binding globulin	w
 GLOBULIN	zebrafish	A0AB40EBQ7	zgc:174259	A0AB40EBQ7	0	38	Thyroxine-binding globulin	w
 GLOBULIN	zebrafish	F8W5C3	serpina7	F8W5C3	0	3	Thyroxine-binding globulin	w
@@ -96,19 +96,19 @@ GLOBULIN	zebrafish	Q64HD0	shbg	Q64HD0	0	24	Sex hormone-binding globulin	w
 GLOC	escherichia-coli-83333	P75849	gloC	P75849	0	19	Hydroxyacylglutathione hydrolase GloC	
 GLOC	haemophilus-influenzae	Q57544	gloC	Q57544	0	8	Hydroxyacylglutathione hydrolase GloC	
 GLOD-4	worm	Q09253	glod-4	Q09253	0	12	Glyoxalase 1	
-GLOD4	human	Q9HC38	GLOD4	Q9HC38	16	124	Glyoxalase domain-containing protein 4	
+GLOD4	human	Q9HC38	GLOD4	Q9HC38	9	124	Glyoxalase domain-containing protein 4	
 GLOD4	mus-musculus	Q9CPV4	Glod4	Q9CPV4	0	2	Glyoxalase domain-containing protein 4	
-GLOD4_HUMAN	human	Q9HC38	GLOD4	Q9HC38	16	124		
+GLOD4_HUMAN	human	Q9HC38	GLOD4	Q9HC38	9	124		
 GLOD5	dictyostelium-discoideum	Q54L71	glod5	Q54L71	0	1	Glyoxalase domain-containing protein 5 homolog	
-GLOD5	human	A6NK44	GLOD5	A6NK44	2	25	Glyoxalase domain-containing protein 5	
+GLOD5	human	A6NK44	GLOD5	A6NK44	0	25	Glyoxalase domain-containing protein 5	
 GLOD5	mus-musculus	Q9D8I3	Glod5	Q9D8I3	0	1	Glyoxalase domain-containing protein 5	
 GLOD5	rattus-norvegicus	D3Z9B0	Glod5	D3Z9B0	0	1	Glyoxalase domain-containing protein 5	
 GLOD5	zebrafish	Q502D1	glod5	Q502D1	0	2	Glyoxalase domain-containing protein 5	
-GLOD5_HUMAN	human	A6NK44	GLOD5	A6NK44	2	25		
-GLOMERULAR	human	Q16827	PTPRO	Q16827	26	233	Receptor-type tyrosine-protein phosphatase O (R-PTP-O) (EC 3	w
+GLOD5_HUMAN	human	A6NK44	GLOD5	A6NK44	0	25		
+GLOMERULAR	human	Q16827	PTPRO	Q16827	18	233	Receptor-type tyrosine-protein phosphatase O (R-PTP-O) (EC 3	w
 GLOMERULI	fly	FBgn0250820	meigo	Q9VDD7	0	24	Solute carrier family 35 member B1 homolog (Protein medial g	w
-GLOMERULUS-SPECIFIC	human	O60500	NPHS1	O60500	13	122	Nephrin (Renal glomerulus-specific cell adhesion receptor)	w
-GLOMULIN	human	Q92990	GLMN	Q92990	24	276	Glomulin (FK506-binding protein-associated protein) (FAP) (F	w
+GLOMERULUS-SPECIFIC	human	O60500	NPHS1	O60500	11	122	Nephrin (Renal glomerulus-specific cell adhesion receptor)	w
+GLOMULIN	human	Q92990	GLMN	Q92990	23	276	Glomulin (FK506-binding protein-associated protein) (FAP) (F	w
 GLOMULIN	zebrafish	B0UYH7	glmna	B0UYH7	1	99	Glomulin, FKBP associated protein a isoform X1	w
 GLORUND	fly	FBgn0259139	glo	Q9VGH5	3	106	AT27789p (Glorund, isoform A) (Glorund, isoform B)	w
 GLOS	fly	FBgn0029686	Glos	Q9W4N9	2	20	Gaulos, isoform A (Gaulos, isoform B) (RE16777p)	

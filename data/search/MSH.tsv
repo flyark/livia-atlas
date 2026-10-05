@@ -4,7 +4,7 @@ MSH-5	worm	Q19272	msh-5	Q19272	4	22	MutS protein homolog 5
 MSH-6	worm	Q9N3T8	msh-6	Q9N3T8	5	42	DNA mismatch repair protein	
 MSH-A	zebrafish	Q03357	msxa	Q03357	6	11	Homeobox protein MSH-A	w
 MSH-D	zebrafish	Q01704	msxd	Q01704	5	11	Homeobox protein MSH-D	w
-MSH-R	human	Q01726	MC1R	Q01726	15	105	Melanocyte-stimulating hormone receptor (MSH-R) (Melanocorti	w
+MSH-R	human	Q01726	MC1R	Q01726	14	105	Melanocyte-stimulating hormone receptor (MSH-R) (Melanocorti	w
 MSH1	arabidopsis-thaliana	Q84LK0	MSH1	Q84LK0	2	49	DNA mismatch repair protein MSH1, mitochondrial	
 MSH1	cladophialophora-carrionii	A0A1C1CQX7	msh1	A0A1C1CQX7	4	36	DNA mismatch repair protein MSH3	
 MSH1	dictyostelium-discoideum	Q552L1	msh1	Q552L1	5	24	DNA mismatch repair proteins mutS family domain-containing p	
@@ -15,12 +15,12 @@ MSH12.19	arabidopsis-thaliana	Q9FNA1	MSH12.19	Q9FNA1	0	1	Uncharacterized protein
 MSH2	arabidopsis-thaliana	O24617	MSH2	O24617	10	104	DNA mismatch repair protein MSH2	
 MSH2	candida-albicans-237561	Q5A102	MSH2	Q5A102	7	37	Mismatch repair ATPase	
 MSH2	dictyostelium-discoideum	Q553L4	msh2	Q553L4	5	38	DNA mismatch repair protein Msh2	
-MSH2	human	P43246	MSH2	P43246	31	402	DNA mismatch repair protein Msh2 (hMSH2) (MutS protein homol	
+MSH2	human	P43246	MSH2	P43246	25	402	DNA mismatch repair protein Msh2 (hMSH2) (MutS protein homol	
 MSH2	mus-musculus	P43247	Msh2	P43247	14	71	DNA mismatch repair protein Msh2	
 MSH2	rattus-norvegicus	P54275	Msh2	P54275	9	62	DNA mismatch repair protein Msh2	
 MSH2	schizosaccharomyces-pombe	O74773	msh2	O74773	3	46	DNA mismatch repair protein msh2	
 MSH2	yeast	P25847	MSH2	P25847	12	86	DNA mismatch repair protein MSH2	
-MSH2_HUMAN	human	P43246	MSH2	P43246	31	402		
+MSH2_HUMAN	human	P43246	MSH2	P43246	25	402		
 MSH3	arabidopsis-thaliana	O65607	MSH3	O65607	7	61	DNA mismatch repair protein MSH3	
 MSH3	candida-albicans-237561	Q59Y41	MSH3	Q59Y41	8	30	DNA mismatch repair protein MSH3	
 MSH3	cladophialophora-carrionii	A0A1C1CED0	msh3	A0A1C1CED0	6	25	DNA mismatch repair protein	
@@ -54,14 +54,14 @@ MSH6	cladophialophora-carrionii	A0A1C1D0Y6	msh6	A0A1C1D0Y6	7	34	DNA mismatch rep
 MSH6	dictyostelium-discoideum	Q55GU9	msh6	Q55GU9	7	38	DNA mismatch repair protein Msh6	
 MSH6	fly	FBgn0036486	Msh6	Q9VUM0	4	49	Probable DNA mismatch repair protein Msh6	w
 MSH6	fly	FBgn0036486	Msh6	Q9VUM0	4	49	Probable DNA mismatch repair protein Msh6	w
-MSH6	human	P52701	MSH6	P52701	24	343	DNA mismatch repair protein Msh6 (hMSH6) (G/T mismatch-bindi	
+MSH6	human	P52701	MSH6	P52701	17	343	DNA mismatch repair protein Msh6 (hMSH6) (G/T mismatch-bindi	
 MSH6	mus-musculus	P54276	Msh6	P54276	5	71	DNA mismatch repair protein Msh6	
 MSH6	rattus-norvegicus	D4A0U9	Msh6	D4A0U9	5	66	DNA mismatch repair protein	
 MSH6	schizosaccharomyces-pombe	O74502	msh6	O74502	5	44	DNA mismatch repair protein msh6	
 MSH6	yeast	Q03834	MSH6	Q03834	10	84	DNA mismatch repair protein MSH6	
 MSH6_24	fly	FBgn0036486	Msh6	Q9VUM0	4	49		
 MSH6_82	fly	FBgn0036486	Msh6	Q9VUM0	4	49		
-MSH6_HUMAN	human	P52701	MSH6	P52701	24	343		
+MSH6_HUMAN	human	P52701	MSH6	P52701	17	343		
 MSH7	arabidopsis-thaliana	Q9SMV7	MSH7	Q9SMV7	8	67	DNA mismatch repair protein MSH7	
 MSHA	mycobacterium-leprae	P54138	mshA	P54138	0	6	D-inositol 3-phosphate glycosyltransferase	
 MSHA	mycobacterium-tuberculosis	P9WMY7	mshA	P9WMY7	1	7	D-inositol 3-phosphate glycosyltransferase	
@@ -74,5 +74,5 @@ MSHC	mycobacterium-tuberculosis	P9WJM9	mshC	P9WJM9	0	7	L-cysteine:1D-myo-inosito
 MSHC	nocardia-brasiliensis	K0EXE4	mshC	K0EXE4	0	15	L-cysteine:1D-myo-inositol 2-amino-2-deoxy-alpha-D-glucopyra	
 MSHD	mycobacterium-leprae	Q9CBC9	mshD	Q9CBC9	1	16	Mycothiol acetyltransferase	
 MSHD	mycobacterium-tuberculosis	P9WJM7	mshD	P9WJM7	0	4	Mycothiol acetyltransferase	
-MSHR	human	Q01726	MC1R	Q01726	15	105		
-MSHR_HUMAN	human	Q01726	MC1R	Q01726	15	105		
+MSHR	human	Q01726	MC1R	Q01726	14	105		
+MSHR_HUMAN	human	Q01726	MC1R	Q01726	14	105		

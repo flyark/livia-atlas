@@ -2,8 +2,8 @@ OXI-1	worm	Q9XXE6	oxi-1	Q9XXE6	1	2	Ubiquitin-protein ligase E3B
 OXI1	arabidopsis-thaliana	Q9LSF1	OXI1	Q9LSF1	4	8	Serine/threonine-protein kinase OXI1	
 OXI3	yeast	P03875	AI1	P03875	1	5	Putative COX1/OXI3 intron 1 protein	w
 OXI3	yeast	P03876	AI2	P03876	0	3	Putative COX1/OXI3 intron 2 protein	w
-OXID	human	P14598	NCF1	P14598	42	174	Neutrophil cytosol factor 1 (NCF-1) (47 kDa autosomal chroni	w
-OXIDANT	human	O00506	STK25	O00506	151	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
+OXID	human	P14598	NCF1	P14598	40	174	Neutrophil cytosol factor 1 (NCF-1) (47 kDa autosomal chroni	w
+OXIDANT	human	O00506	STK25	O00506	144	1371	Serine/threonine-protein kinase 25 (EC 2.7.11.1) (Ste20-like	w
 OXIDANT-INDUCED	yeast	P38738	OCA5	P38738	1	17	Oxidant-induced cell-cycle arrest protein 5	w
 OXIDASE	fly	FBgn0000447	Dhod	P32748	2	57	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	w
 OXIDASE	fly	FBgn0002354	l(3)87Df	Q9VG00	0	13	Cytochrome c oxidase assembly protein COX20, mitochondrial	w
@@ -66,117 +66,117 @@ OXIDASE	fly	FBgn0267408	AOX1	Q9VF53	3	71	Aldehyde oxidase 1 (EC 1.2.3.8) (LD3700
 OXIDASE	fly	FBgn0283531	Duox	Q9VQH2	0	7	Dual oxidase (EC 1.11.1.-) (EC 1.6.3.1)	w
 OXIDASE	fly	FBgn0286199	shps	Q9VCA1	4	100	monoamine oxidase (EC 1.4.3.4)	w
 OXIDASE	human	A0A087WYV9	SYNJ2BP-COX16	A0A087WYV9	2	24	Cytochrome c oxidase assembly protein COX16 homolog, mitocho	w
-OXIDASE	human	O00391	QSOX1	O00391	18	152	Sulfhydryl oxidase 1 (hQSOX) (EC 1.8.3.2) (Quiescin Q6)	w
-OXIDASE	human	O00483	COXFA4	O00483	47	433	Cytochrome c oxidase subunit FA4 (Complex I-MLRQ) (CI-MLRQ) 	w
-OXIDASE	human	O14548	COX7A2L	O14548	25	150	Cytochrome c oxidase subunit 7A2-like, mitochondrial (Cytoch	w
-OXIDASE	human	O14832	PHYH	O14832	10	70	Phytanoyl-CoA dioxygenase, peroxisomal (EC 1.14.11.18) (Phyt	w
-OXIDASE	human	O15254	ACOX3	O15254	8	76	Peroxisomal acyl-coenzyme A oxidase 3 (EC 1.3.3.6) (Branched	w
+OXIDASE	human	O00391	QSOX1	O00391	15	152	Sulfhydryl oxidase 1 (hQSOX) (EC 1.8.3.2) (Quiescin Q6)	w
+OXIDASE	human	O00483	COXFA4	O00483	42	433	Cytochrome c oxidase subunit FA4 (Complex I-MLRQ) (CI-MLRQ) 	w
+OXIDASE	human	O14548	COX7A2L	O14548	23	150	Cytochrome c oxidase subunit 7A2-like, mitochondrial (Cytoch	w
+OXIDASE	human	O14832	PHYH	O14832	9	70	Phytanoyl-CoA dioxygenase, peroxisomal (EC 1.14.11.18) (Phyt	w
+OXIDASE	human	O15254	ACOX3	O15254	6	76	Peroxisomal acyl-coenzyme A oxidase 3 (EC 1.3.3.6) (Branched	w
 OXIDASE	human	O43272	PRODH	O43272	2	73	Proline dehydrogenase 1, mitochondrial (EC 1.5.5.2) (Proline	w
-OXIDASE	human	O43819	SCO2	O43819	19	317	Cytochrome c oxidase assembly factor SCO2	w
-OXIDASE	human	O60341	KDM1A	O60341	208	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	w
-OXIDASE	human	O60397	COX7A2P2	O60397	10	16	Putative cytochrome c oxidase subunit 7A3, mitochondrial (Cy	w
+OXIDASE	human	O43819	SCO2	O43819	16	317	Cytochrome c oxidase assembly factor SCO2	w
+OXIDASE	human	O60341	KDM1A	O60341	178	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	w
+OXIDASE	human	O60397	COX7A2P2	O60397	9	16	Putative cytochrome c oxidase subunit 7A3, mitochondrial (Cy	w
 OXIDASE	human	O60774	FMO6P	O60774	5	13	Putative dimethylaniline monooxygenase [N-oxide-forming] 6 (	w
 OXIDASE	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.4.3.21) (Amine oxi	w
 OXIDASE	human	O75845	SC5D	O75845	0	72	Lathosterol oxidase (EC 1.14.19.20) (C-5 sterol desaturase) 	w
-OXIDASE	human	O75879	GATB	O75879	13	173	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	w
-OXIDASE	human	O75880	SCO1	O75880	26	276	Cytochrome c oxidase assembly factor SCO1	w
-OXIDASE	human	P00395	MT-CO1	P00395	22	226	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	w
-OXIDASE	human	P00403	MT-CO2	P00403	51	394	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	w
-OXIDASE	human	P00414	MT-CO3	P00414	20	170	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	w
-OXIDASE	human	P00441	SOD1	P00441	16	452	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
-OXIDASE	human	P04839	CYBB	P04839	19	327	NADPH oxidase 2 (EC 1.6.3.-) (CGD91-phox) (Cytochrome b(558)	w
-OXIDASE	human	P09669	COX6C	P09669	54	331	Cytochrome c oxidase subunit 6C (Cytochrome c oxidase polype	w
-OXIDASE	human	P10176	COX8A	P10176	90	507	Cytochrome c oxidase subunit 8A, mitochondrial (Cytochrome c	w
-OXIDASE	human	P10606	COX5B	P10606	16	297	Cytochrome c oxidase subunit 5B, mitochondrial (Cytochrome c	w
-OXIDASE	human	P12074	COX6A1	P12074	25	175	Cytochrome c oxidase subunit 6A1, mitochondrial (Cytochrome 	w
-OXIDASE	human	P13073	COX4I1	P13073	32	534	Cytochrome c oxidase subunit 4 isoform 1, mitochondrial (Cyt	w
-OXIDASE	human	P14406	COX7A2	P14406	57	240	Cytochrome c oxidase subunit 7A2, mitochondrial (Cytochrome 	w
-OXIDASE	human	P14598	NCF1	P14598	42	174	Neutrophil cytosol factor 1 (NCF-1) (47 kDa autosomal chroni	w
-OXIDASE	human	P14854	COX6B1	P14854	13	262	Cytochrome c oxidase subunit 6B1 (Cytochrome c oxidase subun	w
+OXIDASE	human	O75879	GATB	O75879	11	173	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	w
+OXIDASE	human	O75880	SCO1	O75880	20	276	Cytochrome c oxidase assembly factor SCO1	w
+OXIDASE	human	P00395	MT-CO1	P00395	21	226	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	w
+OXIDASE	human	P00403	MT-CO2	P00403	45	394	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	w
+OXIDASE	human	P00414	MT-CO3	P00414	19	170	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	w
+OXIDASE	human	P00441	SOD1	P00441	15	451	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
+OXIDASE	human	P04839	CYBB	P04839	12	327	NADPH oxidase 2 (EC 1.6.3.-) (CGD91-phox) (Cytochrome b(558)	w
+OXIDASE	human	P09669	COX6C	P09669	47	331	Cytochrome c oxidase subunit 6C (Cytochrome c oxidase polype	w
+OXIDASE	human	P10176	COX8A	P10176	80	507	Cytochrome c oxidase subunit 8A, mitochondrial (Cytochrome c	w
+OXIDASE	human	P10606	COX5B	P10606	13	297	Cytochrome c oxidase subunit 5B, mitochondrial (Cytochrome c	w
+OXIDASE	human	P12074	COX6A1	P12074	21	175	Cytochrome c oxidase subunit 6A1, mitochondrial (Cytochrome 	w
+OXIDASE	human	P13073	COX4I1	P13073	26	534	Cytochrome c oxidase subunit 4 isoform 1, mitochondrial (Cyt	w
+OXIDASE	human	P14406	COX7A2	P14406	51	240	Cytochrome c oxidase subunit 7A2, mitochondrial (Cytochrome 	w
+OXIDASE	human	P14598	NCF1	P14598	40	174	Neutrophil cytosol factor 1 (NCF-1) (47 kDa autosomal chroni	w
+OXIDASE	human	P14854	COX6B1	P14854	7	262	Cytochrome c oxidase subunit 6B1 (Cytochrome c oxidase subun	w
 OXIDASE	human	P14920	DAO	P14920	3	61	D-amino-acid oxidase (DAAO) (DAMOX) (DAO) (EC 1.4.3.3)	w
-OXIDASE	human	P15954	COX7C	P15954	45	225	Cytochrome c oxidase subunit 7C, mitochondrial (Cytochrome c	w
-OXIDASE	human	P17643	TYRP1	P17643	41	296	5,6-dihydroxyindole-2-carboxylic acid oxidase (DHICA oxidase	w
+OXIDASE	human	P15954	COX7C	P15954	41	225	Cytochrome c oxidase subunit 7C, mitochondrial (Cytochrome c	w
+OXIDASE	human	P17643	TYRP1	P17643	31	296	5,6-dihydroxyindole-2-carboxylic acid oxidase (DHICA oxidase	w
 OXIDASE	human	P19801	AOC1	P19801	6	138	Diamine oxidase [copper-containing] (Diamine oxidase) (EC 1.	w
-OXIDASE	human	P19878	NCF2	P19878	45	239	Neutrophil cytosol factor 2 (NCF-2) (67 kDa neutrophil oxida	w
-OXIDASE	human	P20674	COX5A	P20674	35	363	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	w
-OXIDASE	human	P21397	MAOA	P21397	7	107	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	w
-OXIDASE	human	P24310	COX7A1	P24310	46	186	Cytochrome c oxidase subunit 7A1, mitochondrial (Cytochrome 	w
-OXIDASE	human	P24311	COX7B	P24311	71	313	Cytochrome c oxidase subunit 7B, mitochondrial (Cytochrome c	w
+OXIDASE	human	P19878	NCF2	P19878	40	239	Neutrophil cytosol factor 2 (NCF-2) (67 kDa neutrophil oxida	w
+OXIDASE	human	P20674	COX5A	P20674	30	363	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	w
+OXIDASE	human	P21397	MAOA	P21397	5	107	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	w
+OXIDASE	human	P24310	COX7A1	P24310	43	186	Cytochrome c oxidase subunit 7A1, mitochondrial (Cytochrome 	w
+OXIDASE	human	P24311	COX7B	P24311	67	313	Cytochrome c oxidase subunit 7B, mitochondrial (Cytochrome c	w
 OXIDASE	human	P27338	MAOB	P27338	6	148	Amine oxidase [flavin-containing] B (EC 1.4.3.21) (EC 1.4.3.	w
-OXIDASE	human	P28300	LOX	P28300	23	192	Protein-lysine 6-oxidase (EC 1.4.3.13) (Lysyl oxidase) [Clea	w
+OXIDASE	human	P28300	LOX	P28300	16	192	Protein-lysine 6-oxidase (EC 1.4.3.13) (Lysyl oxidase) [Clea	w
 OXIDASE	human	P31513	FMO3	P31513	7	94	Flavin-containing monooxygenase 3 (EC 1.14.13.148) (EC 1.14.	w
 OXIDASE	human	P32754	HPD	P32754	1	72	4-hydroxyphenylpyruvate dioxygenase (EC 1.13.11.27) (4-hydro	w
-OXIDASE	human	P36551	CPOX	P36551	2	133	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
+OXIDASE	human	P36551	CPOX	P36551	1	133	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
 OXIDASE	human	P47989	XDH	P47989	1	52	Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydroge	w
-OXIDASE	human	P50336	PPOX	P50336	8	127	Protoporphyrinogen oxidase (PPO) (EC 1.3.3.4)	w
+OXIDASE	human	P50336	PPOX	P50336	7	127	Protoporphyrinogen oxidase (PPO) (EC 1.3.3.4)	w
 OXIDASE	human	P51687	SUOX	P51687	7	119	Sulfite oxidase, mitochondrial (HSO) (EC 1.8.3.1) (Nitrite r	w
-OXIDASE	human	P55789	GFER	P55789	9	154	FAD-linked sulfhydryl oxidase ALR (EC 1.8.3.2) (Augmenter of	w
-OXIDASE	human	P58215	LOXL3	P58215	10	119	Lysyl oxidase homolog 3 (EC 1.4.3.-) (EC 1.4.3.13) (Lysyl ox	w
+OXIDASE	human	P55789	GFER	P55789	7	154	FAD-linked sulfhydryl oxidase ALR (EC 1.8.3.2) (Augmenter of	w
+OXIDASE	human	P58215	LOXL3	P58215	9	119	Lysyl oxidase homolog 3 (EC 1.4.3.-) (EC 1.4.3.13) (Lysyl ox	w
 OXIDASE	human	P59103	DAOA	P59103	0	32	D-amino acid oxidase regulator (Protein G72)	w
 OXIDASE	human	Q01740	FMO1	Q01740	6	78	Flavin-containing monooxygenase 1 (EC 1.14.13.148) (EC 1.14.	w
 OXIDASE	human	Q02127	DHODH	Q02127	3	76	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	w
 OXIDASE	human	Q02221	COX6A2	Q02221	25	152	Cytochrome c oxidase subunit 6A2, mitochondrial (Cytochrome 	w
 OXIDASE	human	Q06278	AOX1	Q06278	1	30	Aldehyde oxidase (EC 1.2.3.1) (Aldehyde oxidase 1) (Aryl-ald	w
-OXIDASE	human	Q08397	LOXL1	Q08397	5	58	Lysyl oxidase homolog 1 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
-OXIDASE	human	Q13228	SELENBP1	Q13228	12	212	Methanethiol oxidase (MTO) (EC 1.8.3.4) (56 kDa selenium-bin	w
-OXIDASE	human	Q14061	COX17	Q14061	15	111	Cytochrome c oxidase copper chaperone	w
-OXIDASE	human	Q15067	ACOX1	Q15067	9	105	Peroxisomal acyl-coenzyme A oxidase 1 (AOX) (EC 1.3.3.6) (Pa	w
-OXIDASE	human	Q15070	OXA1L	Q15070	16	227	Mitochondrial inner membrane protein OXA1L (OXA1Hs) (Oxidase	w
-OXIDASE	human	Q15080	NCF4	Q15080	12	79	Neutrophil cytosol factor 4 (NCF-4) (Neutrophil NADPH oxidas	w
-OXIDASE	human	Q15800	MSMO1	Q15800	12	139	Methylsterol monooxygenase 1 (EC 1.14.18.9) (C-4 methylstero	w
-OXIDASE	human	Q16206	ENOX2	Q16206	16	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
-OXIDASE	human	Q16853	AOC3	Q16853	15	423	Amine oxidase [copper-containing] 3 (EC 1.4.3.21) (Amine oxi	w
+OXIDASE	human	Q08397	LOXL1	Q08397	3	58	Lysyl oxidase homolog 1 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE	human	Q13228	SELENBP1	Q13228	11	212	Methanethiol oxidase (MTO) (EC 1.8.3.4) (56 kDa selenium-bin	w
+OXIDASE	human	Q14061	COX17	Q14061	10	111	Cytochrome c oxidase copper chaperone	w
+OXIDASE	human	Q15067	ACOX1	Q15067	6	105	Peroxisomal acyl-coenzyme A oxidase 1 (AOX) (EC 1.3.3.6) (Pa	w
+OXIDASE	human	Q15070	OXA1L	Q15070	15	227	Mitochondrial inner membrane protein OXA1L (OXA1Hs) (Oxidase	w
+OXIDASE	human	Q15080	NCF4	Q15080	10	79	Neutrophil cytosol factor 4 (NCF-4) (Neutrophil NADPH oxidas	w
+OXIDASE	human	Q15800	MSMO1	Q15800	10	139	Methylsterol monooxygenase 1 (EC 1.14.18.9) (C-4 methylstero	w
+OXIDASE	human	Q16206	ENOX2	Q16206	13	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	w
+OXIDASE	human	Q16853	AOC3	Q16853	11	423	Amine oxidase [copper-containing] 3 (EC 1.4.3.21) (Amine oxi	w
 OXIDASE	human	Q1HG43	DUOXA1	Q1HG43	2	24	Dual oxidase maturation factor 1 (Dual oxidase activator 1) 	w
-OXIDASE	human	Q1HG44	DUOXA2	Q1HG44	4	84	Dual oxidase maturation factor 2 (Dual oxidase activator 2)	w
-OXIDASE	human	Q49B96	COX19	Q49B96	18	109	Cytochrome c oxidase assembly protein COX19 (hCOX19)	w
-OXIDASE	human	Q5JTJ3	COA6	Q5JTJ3	20	151	Cytochrome c oxidase assembly factor 6 homolog	w
-OXIDASE	human	Q5RI15	COX20	Q5RI15	30	109	Cytochrome c oxidase assembly protein COX20, mitochondrial	w
-OXIDASE	human	Q6QHF9	PAOX	Q6QHF9	2	16	Peroxisomal N(1)-acetyl-spermine/spermidine oxidase (EC 1.5.	w
+OXIDASE	human	Q1HG44	DUOXA2	Q1HG44	2	84	Dual oxidase maturation factor 2 (Dual oxidase activator 2)	w
+OXIDASE	human	Q49B96	COX19	Q49B96	13	109	Cytochrome c oxidase assembly protein COX19 (hCOX19)	w
+OXIDASE	human	Q5JTJ3	COA6	Q5JTJ3	17	151	Cytochrome c oxidase assembly factor 6 homolog	w
+OXIDASE	human	Q5RI15	COX20	Q5RI15	22	109	Cytochrome c oxidase assembly protein COX20, mitochondrial	w
+OXIDASE	human	Q6QHF9	PAOX	Q6QHF9	1	16	Peroxisomal N(1)-acetyl-spermine/spermidine oxidase (EC 1.5.	w
 OXIDASE	human	Q6YFQ2	COX6B2	Q6YFQ2	8	112	Cytochrome c oxidase subunit 6B2 (Cancer/testis antigen 59) 	w
-OXIDASE	human	Q6ZRP7	QSOX2	Q6ZRP7	14	100	Sulfhydryl oxidase 2 (EC 1.8.3.2) (Neuroblastoma-derived sul	w
-OXIDASE	human	Q7KZN9	COX15	Q7KZN9	19	347	Heme A synthase COX15 (HAS) (EC 1.17.99.9) (Cytochrome c oxi	w
-OXIDASE	human	Q7Z4L0	COX8C	Q7Z4L0	37	98	Cytochrome c oxidase subunit 8C, mitochondrial (Cytochrome c	w
-OXIDASE	human	Q86UR1	NOXA1	Q86UR1	27	123	NADPH oxidase activator 1 (NOX activator 1) (Antigen NY-CO-3	w
+OXIDASE	human	Q6ZRP7	QSOX2	Q6ZRP7	11	100	Sulfhydryl oxidase 2 (EC 1.8.3.2) (Neuroblastoma-derived sul	w
+OXIDASE	human	Q7KZN9	COX15	Q7KZN9	11	347	Heme A synthase COX15 (HAS) (EC 1.17.99.9) (Cytochrome c oxi	w
+OXIDASE	human	Q7Z4L0	COX8C	Q7Z4L0	35	98	Cytochrome c oxidase subunit 8C, mitochondrial (Cytochrome c	w
+OXIDASE	human	Q86UR1	NOXA1	Q86UR1	24	123	NADPH oxidase activator 1 (NOX activator 1) (Antigen NY-CO-3	w
 OXIDASE	human	Q86WW8	COA5	Q86WW8	4	59	Cytochrome c oxidase assembly factor 5	w
-OXIDASE	human	Q8N5G0	SMIM20	Q8N5G0	50	138	Small integral membrane protein 20 (Mitochondrial translatio	w
-OXIDASE	human	Q8N8Q8	COX18	Q8N8Q8	3	63	Cytochrome c oxidase assembly protein COX18, mitochondrial (	w
-OXIDASE	human	Q8NB78	KDM1B	Q8NB78	8	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	w
+OXIDASE	human	Q8N5G0	SMIM20	Q8N5G0	39	138	Small integral membrane protein 20 (Mitochondrial translatio	w
+OXIDASE	human	Q8N8Q8	COX18	Q8N8Q8	2	63	Cytochrome c oxidase assembly protein COX18, mitochondrial (	w
+OXIDASE	human	Q8NB78	KDM1B	Q8NB78	4	152	Lysine-specific histone demethylase 2 (EC 1.14.99.66) (Flavi	w
 OXIDASE	human	Q8NBM8	PCYOX1L	Q8NBM8	2	66	Prenylcysteine oxidase 1-like (EC 1.8.3.5)	w
-OXIDASE	human	Q8NFA2	NOXO1	Q8NFA2	15	139	NADPH oxidase organizer 1 (NADPH oxidase regulatory protein)	w
-OXIDASE	human	Q8TC92	ENOX1	Q8TC92	5	34	Ecto-NOX disulfide-thiol exchanger 1 (Candidate growth-relat	w
-OXIDASE	human	Q8TF08	COX7B2	Q8TF08	35	114	Cytochrome c oxidase subunit 7B2, mitochondrial (Cytochrome 	w
+OXIDASE	human	Q8NFA2	NOXO1	Q8NFA2	13	139	NADPH oxidase organizer 1 (NADPH oxidase regulatory protein)	w
+OXIDASE	human	Q8TC92	ENOX1	Q8TC92	4	34	Ecto-NOX disulfide-thiol exchanger 1 (Candidate growth-relat	w
+OXIDASE	human	Q8TF08	COX7B2	Q8TF08	34	114	Cytochrome c oxidase subunit 7B2, mitochondrial (Cytochrome 	w
 OXIDASE	human	Q93099	HGD	Q93099	3	54	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
-OXIDASE	human	Q96BR5	COA7	Q96BR5	44	187	Cytochrome c oxidase assembly factor 7 (Beta-lactamase hcp-l	w
-OXIDASE	human	Q96I36	COX14	Q96I36	78	315	Cytochrome c oxidase assembly protein COX14	w
-OXIDASE	human	Q96IL0	COA8	Q96IL0	4	27	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	w
-OXIDASE	human	Q96JB6	LOXL4	Q96JB6	13	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
-OXIDASE	human	Q96KJ9	COX4I2	Q96KJ9	16	140	Cytochrome c oxidase subunit 4 isoform 2, mitochondrial (Cyt	w
+OXIDASE	human	Q96BR5	COA7	Q96BR5	39	187	Cytochrome c oxidase assembly factor 7 (Beta-lactamase hcp-l	w
+OXIDASE	human	Q96I36	COX14	Q96I36	64	315	Cytochrome c oxidase assembly protein COX14	w
+OXIDASE	human	Q96IL0	COA8	Q96IL0	3	27	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	w
+OXIDASE	human	Q96JB6	LOXL4	Q96JB6	9	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE	human	Q96KJ9	COX4I2	Q96KJ9	14	140	Cytochrome c oxidase subunit 4 isoform 2, mitochondrial (Cyt	w
 OXIDASE	human	Q96PH1	NOX5	Q96PH1	1	103	NADPH oxidase 5 (EC 1.-.-.-) (EC 1.6.3.-)	w
-OXIDASE	human	Q96RQ9	IL4I1	Q96RQ9	9	101	L-amino-acid oxidase (LAAO) (LAO) (EC 1.4.3.2) (EC 1.4.3.25)	w
-OXIDASE	human	Q99424	ACOX2	Q99424	5	34	Peroxisomal acyl-coenzyme A oxidase 2 (EC 1.3.3.6) (3-alpha,	w
+OXIDASE	human	Q96RQ9	IL4I1	Q96RQ9	8	101	L-amino-acid oxidase (LAAO) (LAO) (EC 1.4.3.2) (EC 1.4.3.25)	w
+OXIDASE	human	Q99424	ACOX2	Q99424	4	34	Peroxisomal acyl-coenzyme A oxidase 2 (EC 1.3.3.6) (3-alpha,	w
 OXIDASE	human	Q99489	DDO	Q99489	4	39	D-aspartate oxidase (DASOX) (DASPO) (DDO) (EC 1.4.3.1)	w
 OXIDASE	human	Q99518	FMO2	Q99518	5	74	Flavin-containing monooxygenase 2 (EC 1.14.13.-) (Dimethylan	w
-OXIDASE	human	Q9BSH4	TACO1	Q9BSH4	21	331	Translational activator of cytochrome c oxidase 1 (Coiled-co	w
-OXIDASE	human	Q9C002	COXFA4L3	Q9C002	41	277	Cytochrome c oxidase associated subunit FA4L3 (Modulator of 	w
-OXIDASE	human	Q9GZY4	COA1	Q9GZY4	11	118	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	w
-OXIDASE	human	Q9HBY0	NOX3	Q9HBY0	7	57	NADPH oxidase 3 (EC 1.6.3.-) (Mitogenic oxidase 2) (MOX-2) (	w
-OXIDASE	human	Q9NPH5	NOX4	Q9NPH5	7	131	NADPH oxidase 4 (EC 1.6.3.1) (Kidney oxidase-1) (KOX-1) (Kid	w
+OXIDASE	human	Q9BSH4	TACO1	Q9BSH4	13	331	Translational activator of cytochrome c oxidase 1 (Coiled-co	w
+OXIDASE	human	Q9C002	COXFA4L3	Q9C002	34	277	Cytochrome c oxidase associated subunit FA4L3 (Modulator of 	w
+OXIDASE	human	Q9GZY4	COA1	Q9GZY4	9	118	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	w
+OXIDASE	human	Q9HBY0	NOX3	Q9HBY0	6	57	NADPH oxidase 3 (EC 1.6.3.-) (Mitogenic oxidase 2) (MOX-2) (	w
+OXIDASE	human	Q9NPH5	NOX4	Q9NPH5	6	131	NADPH oxidase 4 (EC 1.6.3.1) (Kidney oxidase-1) (KOX-1) (Kid	w
 OXIDASE	human	Q9NRD8	DUOX2	Q9NRD8	2	12	Dual oxidase 2 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	w
 OXIDASE	human	Q9NRD9	DUOX1	Q9NRD9	1	16	Dual oxidase 1 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	w
-OXIDASE	human	Q9NRX3	COXFA4L2	Q9NRX3	28	124	Cytochrome c oxidase hypoxia associated subunit FA4L2 (NADH 	w
+OXIDASE	human	Q9NRX3	COXFA4L2	Q9NRX3	26	124	Cytochrome c oxidase hypoxia associated subunit FA4L2 (NADH 	w
 OXIDASE	human	Q9NVS9	PNPO	Q9NVS9	5	67	Pyridoxine-5'-phosphate oxidase (EC 1.4.3.5) (Pyridoxamine-p	w
-OXIDASE	human	Q9NWM0	SMOX	Q9NWM0	9	55	Spermine oxidase (EC 1.5.3.16) (Polyamine oxidase 1) (PAO-1)	w
-OXIDASE	human	Q9NYJ1	COA4	Q9NYJ1	11	66	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	w
+OXIDASE	human	Q9NWM0	SMOX	Q9NWM0	5	55	Spermine oxidase (EC 1.5.3.16) (Polyamine oxidase 1) (PAO-1)	w
+OXIDASE	human	Q9NYJ1	COA4	Q9NYJ1	9	66	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	w
 OXIDASE	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
-OXIDASE	human	Q9P0S2	COX16	Q9P0S2	27	148	Cytochrome c oxidase assembly protein COX16 homolog, mitocho	w
-OXIDASE	human	Q9P0Z9	PIPOX	Q9P0Z9	6	60	Peroxisomal sarcosine oxidase (PSO) (EC 1.5.3.1) (EC 1.5.3.7	w
+OXIDASE	human	Q9P0S2	COX16	Q9P0S2	20	148	Cytochrome c oxidase assembly protein COX16 homolog, mitocho	w
+OXIDASE	human	Q9P0Z9	PIPOX	Q9P0Z9	5	60	Peroxisomal sarcosine oxidase (PSO) (EC 1.5.3.1) (EC 1.5.3.7	w
 OXIDASE	human	Q9UF12	PRODH2	Q9UF12	1	38	Hydroxyproline dehydrogenase (HYPDH) (EC 1.5.5.3) (Kidney an	w
-OXIDASE	human	Q9UHG3	PCYOX1	Q9UHG3	11	149	Prenylcysteine oxidase 1 (EC 1.8.3.5) (Prenylcysteine lyase)	w
+OXIDASE	human	Q9UHG3	PCYOX1	Q9UHG3	7	149	Prenylcysteine oxidase 1 (EC 1.8.3.5) (Prenylcysteine lyase)	w
 OXIDASE	human	Q9UJM8	HAO1	Q9UJM8	6	52	2-Hydroxyacid oxidase 1 (HAOX1) (EC 1.1.3.15) (Glycolate oxi	w
-OXIDASE	human	Q9Y2R0	COA3	Q9Y2R0	65	194	Cytochrome c oxidase assembly factor 3 homolog, mitochondria	w
-OXIDASE	human	Q9Y4K0	LOXL2	Q9Y4K0	37	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
-OXIDASE	human	Q9Y5S8	NOX1	Q9Y5S8	10	94	NADPH oxidase 1 (NOX-1) (EC 1.6.3.-) (Mitogenic oxidase 1) (	w
-OXIDASE	human	Q9Y6N1	COX11	Q9Y6N1	6	73	Cytochrome c oxidase assembly protein COX11, mitochondrial	w
+OXIDASE	human	Q9Y2R0	COA3	Q9Y2R0	56	194	Cytochrome c oxidase assembly factor 3 homolog, mitochondria	w
+OXIDASE	human	Q9Y4K0	LOXL2	Q9Y4K0	24	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE	human	Q9Y5S8	NOX1	Q9Y5S8	9	94	NADPH oxidase 1 (NOX-1) (EC 1.6.3.-) (Mitogenic oxidase 1) (	w
+OXIDASE	human	Q9Y6N1	COX11	Q9Y6N1	5	73	Cytochrome c oxidase assembly protein COX11, mitochondrial	w
 OXIDASE	virus	A0A068EGW8	fep_095	A0A068EGW8	15	221	Sulfhydryl oxidase	w
 OXIDASE	virus	A0A068ELJ6	pepv_097	A0A068ELJ6	8	240	Sulfhydryl oxidase	w
 OXIDASE	virus	A0A0A7MC25		A0A0A7MC25	6	130	Sulfhydryl oxidase	w
@@ -389,18 +389,18 @@ OXIDASE	zebrafish	Q9MIY8	mt-co1	Q9MIY8	10	109	Cytochrome c oxidase subunit 1	w
 OXIDASE	zebrafish	X1WER9	cox8b	X1WER9	17	77	Cytochrome c oxidase subunit 8B	w
 OXIDASE	zebrafish	X1WFF5	coa3b	X1WFF5	1	6	Cytochrome c oxidase assembly factor 3	w
 OXIDASE	zebrafish	X1WHJ8	pet100	X1WHJ8	0	4	PET100 cytochrome c oxidase chaperone	w
-OXIDASE-1	human	Q9NPH5	NOX4	Q9NPH5	7	131	NADPH oxidase 4 (EC 1.6.3.1) (Kidney oxidase-1) (KOX-1) (Kid	w
+OXIDASE-1	human	Q9NPH5	NOX4	Q9NPH5	6	131	NADPH oxidase 4 (EC 1.6.3.1) (Kidney oxidase-1) (KOX-1) (Kid	w
 OXIDASE-ASSEMBLY	yeast	P38824	COX23	P38824	1	3	Cytochrome c oxidase-assembly factor COX23, mitochondrial	w
-OXIDASE-C	human	Q5VYX0	RNLS	Q5VYX0	4	56	Renalase (EC 1.6.3.5) (Monoamine oxidase-C) (MAO-C)	w
+OXIDASE-C	human	Q5VYX0	RNLS	Q5VYX0	3	56	Renalase (EC 1.6.3.5) (Monoamine oxidase-C) (MAO-C)	w
 OXIDASE-LIKE	fly	FBgn0034660	Loxl2	Q9W2C9	22	256	Lysyl oxidase-like 2 (EC 1.4.3.13)	w
 OXIDASE-LIKE	fly	FBgn0039848	Loxl1	Q9V9X5	51	246	Lysyl oxidase-like (EC 1.4.3.13)	w
-OXIDASE-LIKE	human	P58215	LOXL3	P58215	10	119	Lysyl oxidase homolog 3 (EC 1.4.3.-) (EC 1.4.3.13) (Lysyl ox	w
-OXIDASE-LIKE	human	Q08397	LOXL1	Q08397	5	58	Lysyl oxidase homolog 1 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
-OXIDASE-LIKE	human	Q96JB6	LOXL4	Q96JB6	13	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE-LIKE	human	P58215	LOXL3	P58215	9	119	Lysyl oxidase homolog 3 (EC 1.4.3.-) (EC 1.4.3.13) (Lysyl ox	w
+OXIDASE-LIKE	human	Q08397	LOXL1	Q08397	3	58	Lysyl oxidase homolog 1 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE-LIKE	human	Q96JB6	LOXL4	Q96JB6	9	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
 OXIDASE-LIKE	human	Q9NUZ1	ACOXL	Q9NUZ1	3	14	Acyl-coenzyme A oxidase-like protein (Acyl-CoA oxidase-like 	w
-OXIDASE-LIKE	human	Q9Y4K0	LOXL2	Q9Y4K0	37	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
-OXIDASE-RELATED	human	Q96JB6	LOXL4	Q96JB6	13	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
-OXIDASE-RELATED	human	Q9Y4K0	LOXL2	Q9Y4K0	37	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE-LIKE	human	Q9Y4K0	LOXL2	Q9Y4K0	24	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE-RELATED	human	Q96JB6	LOXL4	Q96JB6	9	163	Lysyl oxidase homolog 4 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
+OXIDASE-RELATED	human	Q9Y4K0	LOXL2	Q9Y4K0	24	514	Lysyl oxidase homolog 2 (EC 1.4.3.13) (Lysyl oxidase-like pr	w
 OXIDASEE	worm	Q8WSW2	C15B12.8	Q8WSW2	0	2	sarcosine oxidasee (formaldehyde-forming)	w
 OXIDATION	fly	FBgn0013576	mtd	A0A0B4K620	3	18	Oxidation resistance protein 1	w
 OXIDATION	human	Q8N573	OXR1	Q8N573	11	43	Oxidation resistance protein 1	w
@@ -408,25 +408,25 @@ OXIDATION	worm	H2L003	lmd-3	H2L003	0	9	Oxidation resistance protein 1	w
 OXIDATION	yeast	Q08952	OXR1	Q08952	0	7	Oxidation resistance protein 1	w
 OXIDATIVE	fly	FBgn0032231	Oser1	Q9VKY0	0	1	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
 OXIDATIVE	fly	FBgn0050487	CG30487	Q6NN84	0	0	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
-OXIDATIVE	human	O95747	OXSR1	O95747	220	1427	Serine/threonine-protein kinase OSR1 (EC 2.7.11.1) (Oxidativ	w
-OXIDATIVE	human	Q6NS38	ALKBH2	Q6NS38	3	75	DNA oxidative demethylase ALKBH2 (EC 1.14.11.33) (Alkylated 	w
-OXIDATIVE	human	Q8WVP5	TNFAIP8L1	Q8WVP5	9	105	Tumor necrosis factor alpha-induced protein 8-like protein 1	w
-OXIDATIVE	human	Q9NX31	OSER1	Q9NX31	5	24	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
-OXIDATIVE	human	Q9NX61	TMEM161A	Q9NX61	14	112	Transmembrane protein 161A (Adaptive response to oxidative s	w
-OXIDATIVE	human	Q9NZB2	FAM120A	Q9NZB2	52	375	Constitutive coactivator of PPAR-gamma-like protein 1 (Oxida	w
-OXIDATIVE	human	Q9UJX0	OSGIN1	Q9UJX0	14	137	Oxidative stress-induced growth inhibitor 1 (EC 1.14.13.-) (	w
-OXIDATIVE	human	Q9Y236	OSGIN2	Q9Y236	3	56	Oxidative stress-induced growth inhibitor 2 (hT41)	w
+OXIDATIVE	human	O95747	OXSR1	O95747	213	1426	Serine/threonine-protein kinase OSR1 (EC 2.7.11.1) (Oxidativ	w
+OXIDATIVE	human	Q6NS38	ALKBH2	Q6NS38	2	75	DNA oxidative demethylase ALKBH2 (EC 1.14.11.33) (Alkylated 	w
+OXIDATIVE	human	Q8WVP5	TNFAIP8L1	Q8WVP5	7	105	Tumor necrosis factor alpha-induced protein 8-like protein 1	w
+OXIDATIVE	human	Q9NX31	OSER1	Q9NX31	4	24	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
+OXIDATIVE	human	Q9NX61	TMEM161A	Q9NX61	10	112	Transmembrane protein 161A (Adaptive response to oxidative s	w
+OXIDATIVE	human	Q9NZB2	FAM120A	Q9NZB2	39	375	Constitutive coactivator of PPAR-gamma-like protein 1 (Oxida	w
+OXIDATIVE	human	Q9UJX0	OSGIN1	Q9UJX0	10	137	Oxidative stress-induced growth inhibitor 1 (EC 1.14.13.-) (	w
+OXIDATIVE	human	Q9Y236	OSGIN2	Q9Y236	1	56	Oxidative stress-induced growth inhibitor 2 (hT41)	w
 OXIDATIVE	worm	Q19910	osgn-1	Q19910	0	1	Oxidative stress induced growth inhibitor homolog osgn-1	w
 OXIDATIVE	zebrafish	A3QK41	alkbh2	A3QK41	0	43	DNA oxidative demethylase ALKBH2	w
 OXIDE	fly	FBgn0011676	Nos	Q27571	3	125	Nitric oxide synthase (dNOS) (EC 1.14.13.39)	w
 OXIDE	fly	FBgn0030915	CG6179	Q9VWV8	0	6	Nitric oxide synthase-interacting protein homolog	w
-OXIDE	human	O75052	NOS1AP	O75052	48	173	Carboxyl-terminal PDZ ligand of neuronal nitric oxide syntha	w
-OXIDE	human	P29474	NOS3	P29474	9	237	Nitric oxide synthase 3 (EC 1.14.13.39) (Constitutive NOS) (	w
+OXIDE	human	O75052	NOS1AP	O75052	41	173	Carboxyl-terminal PDZ ligand of neuronal nitric oxide syntha	w
+OXIDE	human	P29474	NOS3	P29474	8	236	Nitric oxide synthase 3 (EC 1.14.13.39) (Constitutive NOS) (	w
 OXIDE	human	P29475	NOS1	P29475	9	85	Nitric oxide synthase 1 (EC 1.14.13.39) (Constitutive NOS) (	w
-OXIDE	human	P35228	NOS2	P35228	12	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
+OXIDE	human	P35228	NOS2	P35228	9	294	Nitric oxide synthase, inducible (EC 1.14.13.39) (Hepatocyte	w
 OXIDE	human	P59046	NLRP12	P59046	3	89	NACHT, LRR and PYD domains-containing protein 12 (Monarch-1)	w
-OXIDE	human	P63167	DYNLL1	P63167	81	576	Dynein light chain 1, cytoplasmic (8 kDa dynein light chain)	w
-OXIDE	human	Q674R7	ATG9B	Q674R7	4	58	Autophagy-related protein 9B (APG9-like 2) (Nitric oxide syn	w
+OXIDE	human	P63167	DYNLL1	P63167	64	576	Dynein light chain 1, cytoplasmic (8 kDa dynein light chain)	w
+OXIDE	human	Q674R7	ATG9B	Q674R7	2	58	Autophagy-related protein 9B (APG9-like 2) (Nitric oxide syn	w
 OXIDE	human	Q8IVI9	NOSTRIN	Q8IVI9	6	48	Nostrin (BM247 homolog) (Nitric oxide synthase traffic induc	w
 OXIDE	human	Q9Y314	NOSIP	Q9Y314	12	137	Nitric oxide synthase-interacting protein (E3 ubiquitin-prot	w
 OXIDE	worm	Q21755	R05G6.4	Q21755	0	22	Nitric oxide synthase-interacting protein homolog	w
@@ -436,17 +436,17 @@ OXIDE	zebrafish	A2BIN8	nos2a	A2BIN8	2	52	Nitric oxide synthase	w
 OXIDE	zebrafish	F1Q5W1	si:dkey-34e4.1	F1Q5W1	3	23	Carboxyl-terminal PDZ ligand of neuronal nitric oxide syntha	w
 OXIDE	zebrafish	Q5U3S7	nosip	Q5U3S7	0	4	Nitric oxide synthase-interacting protein	w
 OXIDE	zebrafish	U3JAK8	nos1apb	U3JAK8	3	21	Carboxyl-terminal PDZ ligand of neuronal nitric oxide syntha	w
-OXIDE-ASSOCIATED	human	Q8NC60	NOA1	Q8NC60	12	238	Nitric oxide-associated protein 1	w
+OXIDE-ASSOCIATED	human	Q8NC60	NOA1	Q8NC60	9	238	Nitric oxide-associated protein 1	w
 OXIDE-ASSOCIATED	zebrafish	A9JRX9	noa1	A9JRX9	13	213	Nitric oxide-associated 1	w
-OXIDE-INDUCIBLE	human	Q8IXT1	DDIAS	Q8IXT1	13	96	DNA damage-induced apoptosis suppressor protein (Nitric oxid	w
-OXIDIZED	human	P13798	APEH	P13798	4	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	w
+OXIDE-INDUCIBLE	human	Q8IXT1	DDIAS	Q8IXT1	9	96	DNA damage-induced apoptosis suppressor protein (Nitric oxid	w
+OXIDIZED	human	P13798	APEH	P13798	3	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	w
 OXIDIZED	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hydrolase (EC 3.6.1.	w
-OXIDIZED	human	P78380	OLR1	P78380	58	243	Oxidized low-density lipoprotein receptor 1 (Ox-LDL receptor	w
-OXIDIZED	human	Q9GZM7	TINAGL1	Q9GZM7	7	94	Tubulointerstitial nephritis antigen-like (Glucocorticoid-in	w
-OXIDIZED	human	Q9H2A7	CXCL16	Q9H2A7	48	363	C-X-C motif chemokine 16 (Scavenger receptor for phosphatidy	w
-OXIDORED-NITRO	human	Q8WVF1	OSCP1	Q8WVF1	7	43	Protein OSCP1 (hOSCP1) (Organic solute transport protein 1) 	w
-OXIDOREDUC	human	Q86YB8	ERO1B	Q86YB8	11	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
-OXIDOREDUC	human	Q96HE7	ERO1A	Q96HE7	10	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
+OXIDIZED	human	P78380	OLR1	P78380	48	242	Oxidized low-density lipoprotein receptor 1 (Ox-LDL receptor	w
+OXIDIZED	human	Q9GZM7	TINAGL1	Q9GZM7	4	94	Tubulointerstitial nephritis antigen-like (Glucocorticoid-in	w
+OXIDIZED	human	Q9H2A7	CXCL16	Q9H2A7	32	363	C-X-C motif chemokine 16 (Scavenger receptor for phosphatidy	w
+OXIDORED-NITRO	human	Q8WVF1	OSCP1	Q8WVF1	6	43	Protein OSCP1 (hOSCP1) (Organic solute transport protein 1) 	w
+OXIDOREDUC	human	Q86YB8	ERO1B	Q86YB8	8	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
+OXIDOREDUC	human	Q96HE7	ERO1A	Q96HE7	9	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
 OXIDOREDUCTAS	human	Q9UGB7	MIOX	Q9UGB7	0	27	Inositol oxygenase (EC 1.13.99.1) (Aldehyde reductase-like 6	w
 OXIDOREDUCTASE	fly	FBgn0002021	l(2)37Bb	Q9VJ10	2	11	FAD-dependent oxidoreductase domain-containing protein 1	w
 OXIDOREDUCTASE	fly	FBgn0011455	ND-SGDH	Q9VTU2	10	100	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
@@ -486,88 +486,88 @@ OXIDOREDUCTASE	fly	FBgn0085468	ND-MWFE	A8DYC4	4	99	NADH dehydrogenase [ubiquinon
 OXIDOREDUCTASE	fly	FBgn0262952	mt:ND4	P18931	9	128	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w
 OXIDOREDUCTASE	fly	FBgn0286783	Etf-QO	Q7JWF1	2	19	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
 OXIDOREDUCTASE	human	A0A0A0MT64	FDXR	A0A0A0MT64	2	56	NADPH:adrenodoxin oxidoreductase, mitochondrial	w
-OXIDOREDUCTASE	human	A1KZ92	PXDNL	A1KZ92	38	342	Probable oxidoreductase PXDNL (EC 1.-.-.-) (Cardiac peroxida	w
+OXIDOREDUCTASE	human	A1KZ92	PXDNL	A1KZ92	27	342	Probable oxidoreductase PXDNL (EC 1.-.-.-) (Cardiac peroxida	w
 OXIDOREDUCTASE	human	H3BNX3	?	H3BNX3	0	17	Sulfide:quinone oxidoreductase, mitochondrial	w
-OXIDOREDUCTASE	human	O00217	NDUFS8	O00217	47	482	NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitoc	w
-OXIDOREDUCTASE	human	O00299	CLIC1	O00299	49	403	Chloride intracellular channel protein 1 (Chloride channel A	w
-OXIDOREDUCTASE	human	O00483	COXFA4	O00483	47	433	Cytochrome c oxidase subunit FA4 (Complex I-MLRQ) (CI-MLRQ) 	w
-OXIDOREDUCTASE	human	O14561	NDUFAB1	O14561	132	614	Acyl carrier protein, mitochondrial (ACP) (CI-SDAP) (NADH-ub	w
-OXIDOREDUCTASE	human	O15239	NDUFA1	O15239	59	264	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-OXIDOREDUCTASE	human	O15247	CLIC2	O15247	13	108	Chloride intracellular channel protein 2 (Glutaredoxin-like 	w
-OXIDOREDUCTASE	human	O43181	NDUFS4	O43181	19	362	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
-OXIDOREDUCTASE	human	O43674	NDUFB5	O43674	23	252	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
-OXIDOREDUCTASE	human	O43676	NDUFB3	O43676	32	256	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
-OXIDOREDUCTASE	human	O43677	NDUFC1	O43677	53	213	NADH dehydrogenase [ubiquinone] 1 subunit C1, mitochondrial 	w
-OXIDOREDUCTASE	human	O43678	NDUFA2	O43678	29	384	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
-OXIDOREDUCTASE	human	O43920	NDUFS5	O43920	30	305	NADH dehydrogenase [ubiquinone] iron-sulfur protein 5 (Compl	w
-OXIDOREDUCTASE	human	O75251	NDUFS7	O75251	47	380	NADH dehydrogenase [ubiquinone] iron-sulfur protein 7, mitoc	w
-OXIDOREDUCTASE	human	O75306	NDUFS2	O75306	29	542	NADH dehydrogenase [ubiquinone] iron-sulfur protein 2, mitoc	w
-OXIDOREDUCTASE	human	O75380	NDUFS6	O75380	19	422	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
-OXIDOREDUCTASE	human	O75438	NDUFB1	O75438	60	237	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
-OXIDOREDUCTASE	human	O75489	NDUFS3	O75489	38	517	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
-OXIDOREDUCTASE	human	O95139	NDUFB6	O95139	30	238	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 6 	w
-OXIDOREDUCTASE	human	O95167	NDUFA3	O95167	40	346	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 3	w
-OXIDOREDUCTASE	human	O95168	NDUFB4	O95168	14	211	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
-OXIDOREDUCTASE	human	O95169	NDUFB8	O95169	18	296	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
-OXIDOREDUCTASE	human	O95178	NDUFB2	O95178	32	137	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 2,	w
+OXIDOREDUCTASE	human	O00217	NDUFS8	O00217	42	482	NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitoc	w
+OXIDOREDUCTASE	human	O00299	CLIC1	O00299	43	403	Chloride intracellular channel protein 1 (Chloride channel A	w
+OXIDOREDUCTASE	human	O00483	COXFA4	O00483	42	433	Cytochrome c oxidase subunit FA4 (Complex I-MLRQ) (CI-MLRQ) 	w
+OXIDOREDUCTASE	human	O14561	NDUFAB1	O14561	120	612	Acyl carrier protein, mitochondrial (ACP) (CI-SDAP) (NADH-ub	w
+OXIDOREDUCTASE	human	O15239	NDUFA1	O15239	53	264	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+OXIDOREDUCTASE	human	O15247	CLIC2	O15247	11	108	Chloride intracellular channel protein 2 (Glutaredoxin-like 	w
+OXIDOREDUCTASE	human	O43181	NDUFS4	O43181	16	362	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
+OXIDOREDUCTASE	human	O43674	NDUFB5	O43674	20	252	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
+OXIDOREDUCTASE	human	O43676	NDUFB3	O43676	28	256	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
+OXIDOREDUCTASE	human	O43677	NDUFC1	O43677	47	213	NADH dehydrogenase [ubiquinone] 1 subunit C1, mitochondrial 	w
+OXIDOREDUCTASE	human	O43678	NDUFA2	O43678	28	384	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
+OXIDOREDUCTASE	human	O43920	NDUFS5	O43920	27	305	NADH dehydrogenase [ubiquinone] iron-sulfur protein 5 (Compl	w
+OXIDOREDUCTASE	human	O75251	NDUFS7	O75251	40	380	NADH dehydrogenase [ubiquinone] iron-sulfur protein 7, mitoc	w
+OXIDOREDUCTASE	human	O75306	NDUFS2	O75306	27	542	NADH dehydrogenase [ubiquinone] iron-sulfur protein 2, mitoc	w
+OXIDOREDUCTASE	human	O75380	NDUFS6	O75380	17	422	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
+OXIDOREDUCTASE	human	O75438	NDUFB1	O75438	57	237	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
+OXIDOREDUCTASE	human	O75489	NDUFS3	O75489	31	517	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
+OXIDOREDUCTASE	human	O95139	NDUFB6	O95139	26	238	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 6 	w
+OXIDOREDUCTASE	human	O95167	NDUFA3	O95167	34	346	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 3	w
+OXIDOREDUCTASE	human	O95168	NDUFB4	O95168	10	211	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
+OXIDOREDUCTASE	human	O95169	NDUFB8	O95169	16	296	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
+OXIDOREDUCTASE	human	O95178	NDUFB2	O95178	29	137	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 2,	w
 OXIDOREDUCTASE	human	O95182	NDUFA7	O95182	15	320	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
-OXIDOREDUCTASE	human	O95298	NDUFC2	O95298	25	203	NADH dehydrogenase [ubiquinone] 1 subunit C2 (Complex I-B14.	w
-OXIDOREDUCTASE	human	O95299	NDUFA10	O95299	19	219	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+OXIDOREDUCTASE	human	O95298	NDUFC2	O95298	23	203	NADH dehydrogenase [ubiquinone] 1 subunit C2 (Complex I-B14.	w
+OXIDOREDUCTASE	human	O95299	NDUFA10	O95299	17	219	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
 OXIDOREDUCTASE	human	O95825	CRYZL1	O95825	5	78	Ferry endosomal RAB5 effector complex subunit 4 (Fy-4) (Crys	w
-OXIDOREDUCTASE	human	O95833	CLIC3	O95833	29	141	Chloride intracellular channel protein 3 (Glutaredoxin-like 	w
-OXIDOREDUCTASE	human	O96000	NDUFB10	O96000	29	342	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
+OXIDOREDUCTASE	human	O95833	CLIC3	O95833	25	141	Chloride intracellular channel protein 3 (Glutaredoxin-like 	w
+OXIDOREDUCTASE	human	O96000	NDUFB10	O96000	27	342	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
 OXIDOREDUCTASE	human	P03886	MT-ND1	P03886	22	389	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	w
-OXIDOREDUCTASE	human	P03891	MT-ND2	P03891	23	220	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	w
-OXIDOREDUCTASE	human	P03897	MT-ND3	P03897	12	309	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	w
-OXIDOREDUCTASE	human	P03901	MT-ND4L	P03901	12	232	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	w
-OXIDOREDUCTASE	human	P03905	MT-ND4	P03905	24	324	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w
-OXIDOREDUCTASE	human	P03915	MT-ND5	P03915	20	222	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	w
+OXIDOREDUCTASE	human	P03891	MT-ND2	P03891	21	220	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	w
+OXIDOREDUCTASE	human	P03897	MT-ND3	P03897	11	309	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	w
+OXIDOREDUCTASE	human	P03901	MT-ND4L	P03901	11	232	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	w
+OXIDOREDUCTASE	human	P03905	MT-ND4	P03905	23	323	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w
+OXIDOREDUCTASE	human	P03915	MT-ND5	P03915	19	222	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	w
 OXIDOREDUCTASE	human	P03923	MT-ND6	P03923	6	176	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	w
-OXIDOREDUCTASE	human	P15121	AKR1B1	P15121	20	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
-OXIDOREDUCTASE	human	P15559	NQO1	P15559	6	304	NAD(P)H dehydrogenase [quinone] 1 (EC 1.6.5.2) (Azoreductase	w
+OXIDOREDUCTASE	human	P15121	AKR1B1	P15121	15	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
+OXIDOREDUCTASE	human	P15559	NQO1	P15559	5	303	NAD(P)H dehydrogenase [quinone] 1 (EC 1.6.5.2) (Azoreductase	w
 OXIDOREDUCTASE	human	P16083	NQO2	P16083	2	192	Ribosyldihydronicotinamide dehydrogenase [quinone] (EC 1.10.	w
-OXIDOREDUCTASE	human	P17568	NDUFB7	P17568	21	309	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7 	w
-OXIDOREDUCTASE	human	P19404	NDUFV2	P19404	31	376	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondria	w
-OXIDOREDUCTASE	human	P22570	FDXR	P22570	9	123	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
-OXIDOREDUCTASE	human	P28331	NDUFS1	P28331	42	472	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	w
-OXIDOREDUCTASE	human	P36959	GMPR	P36959	1	123	GMP reductase 1 (GMPR 1) (EC 1.7.1.7) (Guanosine 5'-monophos	w
+OXIDOREDUCTASE	human	P17568	NDUFB7	P17568	19	309	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7 	w
+OXIDOREDUCTASE	human	P19404	NDUFV2	P19404	26	376	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondria	w
+OXIDOREDUCTASE	human	P22570	FDXR	P22570	6	123	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
+OXIDOREDUCTASE	human	P28331	NDUFS1	P28331	38	472	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	w
+OXIDOREDUCTASE	human	P36959	GMPR	P36959	0	123	GMP reductase 1 (GMPR 1) (EC 1.7.1.7) (Guanosine 5'-monophos	w
 OXIDOREDUCTASE	human	P47989	XDH	P47989	1	52	Xanthine dehydrogenase/oxidase [Includes: Xanthine dehydroge	w
 OXIDOREDUCTASE	human	P51970	NDUFA8	P51970	21	365	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	w
-OXIDOREDUCTASE	human	P56181	NDUFV3	P56181	20	253	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	w
-OXIDOREDUCTASE	human	P56556	NDUFA6	P56556	14	318	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
+OXIDOREDUCTASE	human	P56181	NDUFV3	P56181	18	253	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	w
+OXIDOREDUCTASE	human	P56556	NDUFA6	P56556	12	318	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
 OXIDOREDUCTASE	human	Q08257	CRYZ	Q08257	13	202	Zeta-crystallin (NADPH:quinone reductase) (Quinone oxidoredu	w
 OXIDOREDUCTASE	human	Q16134	ETFDH	Q16134	5	120	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
-OXIDOREDUCTASE	human	Q16718	NDUFA5	Q16718	26	451	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5	w
-OXIDOREDUCTASE	human	Q16795	NDUFA9	Q16795	23	441	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
+OXIDOREDUCTASE	human	Q16718	NDUFA5	Q16718	23	451	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5	w
+OXIDOREDUCTASE	human	Q16795	NDUFA9	Q16795	20	441	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
 OXIDOREDUCTASE	human	Q3B7J2	GFOD2	Q3B7J2	7	70	Glucose-fructose oxidoreductase domain-containing protein 2 	w
 OXIDOREDUCTASE	human	Q53FA7	TP53I3	Q53FA7	3	91	Quinone oxidoreductase PIG3 (EC 1.6.5.5) (NADPH:quinone redu	w
-OXIDOREDUCTASE	human	Q6NXP6	NOXRED1	Q6NXP6	10	107	NADP-dependent oxidoreductase domain-containing protein 1 (E	w
-OXIDOREDUCTASE	human	Q7L1T6	CYB5R4	Q7L1T6	6	76	Cytochrome b5 reductase 4 (EC 1.6.2.2) (Flavohemoprotein b5/	w
-OXIDOREDUCTASE	human	Q86Y39	NDUFA11	Q86Y39	6	149	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-OXIDOREDUCTASE	human	Q86YB8	ERO1B	Q86YB8	11	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
-OXIDOREDUCTASE	human	Q8IWF2	FOXRED2	Q8IWF2	8	254	FAD-dependent oxidoreductase domain-containing protein 2 (En	w
+OXIDOREDUCTASE	human	Q6NXP6	NOXRED1	Q6NXP6	6	107	NADP-dependent oxidoreductase domain-containing protein 1 (E	w
+OXIDOREDUCTASE	human	Q7L1T6	CYB5R4	Q7L1T6	4	76	Cytochrome b5 reductase 4 (EC 1.6.2.2) (Flavohemoprotein b5/	w
+OXIDOREDUCTASE	human	Q86Y39	NDUFA11	Q86Y39	4	149	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+OXIDOREDUCTASE	human	Q86YB8	ERO1B	Q86YB8	8	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
+OXIDOREDUCTASE	human	Q8IWF2	FOXRED2	Q8IWF2	6	254	FAD-dependent oxidoreductase domain-containing protein 2 (En	w
 OXIDOREDUCTASE	human	Q8N2H3	PYROXD2	Q8N2H3	2	41	Pyridine nucleotide-disulfide oxidoreductase domain-containi	w
-OXIDOREDUCTASE	human	Q8NBX0	SCCPDH	Q8NBX0	10	248	Saccharopine dehydrogenase-like oxidoreductase (EC 1.-.-.-)	w
-OXIDOREDUCTASE	human	Q8WU10	PYROXD1	Q8WU10	5	130	tRNA ligase complex-associated NAD(P)H dehydrogenase PYROXD1	w
-OXIDOREDUCTASE	human	Q8WWV3	RTN4IP1	Q8WWV3	5	130	NAD(P)H oxidoreductase RTN4IP1, mitochondrial (EC 1.6.5.-) (	w
-OXIDOREDUCTASE	human	Q96CU9	FOXRED1	Q96CU9	12	169	FAD-dependent oxidoreductase domain-containing protein 1 (EC	w
-OXIDOREDUCTASE	human	Q96HE7	ERO1A	Q96HE7	10	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
-OXIDOREDUCTASE	human	Q96HP4	OXNAD1	Q96HP4	6	57	Oxidoreductase NAD-binding domain-containing protein 1 (EC 1	w
-OXIDOREDUCTASE	human	Q96NY7	CLIC6	Q96NY7	3	58	Chloride intracellular channel protein 6 (Glutaredoxin-like 	w
-OXIDOREDUCTASE	human	Q99536	VAT1	Q99536	5	125	NADPH-dependent quinone oxidoreductase VAT1 (EC 1.6.5.5) (Mi	w
-OXIDOREDUCTASE	human	Q9H2F3	HSD3B7	Q9H2F3	24	642	3 beta-hydroxysteroid dehydrogenase type 7 (3 beta-hydroxyst	w
+OXIDOREDUCTASE	human	Q8NBX0	SCCPDH	Q8NBX0	8	248	Saccharopine dehydrogenase-like oxidoreductase (EC 1.-.-.-)	w
+OXIDOREDUCTASE	human	Q8WU10	PYROXD1	Q8WU10	3	130	tRNA ligase complex-associated NAD(P)H dehydrogenase PYROXD1	w
+OXIDOREDUCTASE	human	Q8WWV3	RTN4IP1	Q8WWV3	2	130	NAD(P)H oxidoreductase RTN4IP1, mitochondrial (EC 1.6.5.-) (	w
+OXIDOREDUCTASE	human	Q96CU9	FOXRED1	Q96CU9	9	169	FAD-dependent oxidoreductase domain-containing protein 1 (EC	w
+OXIDOREDUCTASE	human	Q96HE7	ERO1A	Q96HE7	9	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
+OXIDOREDUCTASE	human	Q96HP4	OXNAD1	Q96HP4	3	57	Oxidoreductase NAD-binding domain-containing protein 1 (EC 1	w
+OXIDOREDUCTASE	human	Q96NY7	CLIC6	Q96NY7	2	58	Chloride intracellular channel protein 6 (Glutaredoxin-like 	w
+OXIDOREDUCTASE	human	Q99536	VAT1	Q99536	3	125	NADPH-dependent quinone oxidoreductase VAT1 (EC 1.6.5.5) (Mi	w
+OXIDOREDUCTASE	human	Q9H2F3	HSD3B7	Q9H2F3	15	640	3 beta-hydroxysteroid dehydrogenase type 7 (3 beta-hydroxyst	w
 OXIDOREDUCTASE	human	Q9HCJ6	VAT1L	Q9HCJ6	4	66	Putative NADPH-dependent quinone oxidoreductase VAT1L (EC 1.	w
-OXIDOREDUCTASE	human	Q9NRX3	COXFA4L2	Q9NRX3	28	124	Cytochrome c oxidase hypoxia associated subunit FA4L2 (NADH 	w
-OXIDOREDUCTASE	human	Q9NX14	NDUFB11	Q9NX14	34	197	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
-OXIDOREDUCTASE	human	Q9NXC2	GFOD1	Q9NXC2	5	86	Glucose-fructose oxidoreductase domain-containing protein 1 	w
-OXIDOREDUCTASE	human	Q9NZA1	CLIC5	Q9NZA1	9	61	Chloride intracellular channel protein 5 (Glutaredoxin-like 	w
-OXIDOREDUCTASE	human	Q9NZC7	WWOX	Q9NZC7	58	807	WW domain-containing oxidoreductase (EC 1.1.1.-) (Fragile si	w
-OXIDOREDUCTASE	human	Q9P2T1	GMPR2	Q9P2T1	2	55	GMP reductase 2 (GMPR 2) (EC 1.7.1.7) (Guanosine 5'-monophos	w
-OXIDOREDUCTASE	human	Q9UHB4	NDOR1	Q9UHB4	11	134	NADPH-dependent diflavin oxidoreductase 1 (EC 1.18.1.-) (NAD	w
+OXIDOREDUCTASE	human	Q9NRX3	COXFA4L2	Q9NRX3	26	124	Cytochrome c oxidase hypoxia associated subunit FA4L2 (NADH 	w
+OXIDOREDUCTASE	human	Q9NX14	NDUFB11	Q9NX14	29	197	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
+OXIDOREDUCTASE	human	Q9NXC2	GFOD1	Q9NXC2	4	86	Glucose-fructose oxidoreductase domain-containing protein 1 	w
+OXIDOREDUCTASE	human	Q9NZA1	CLIC5	Q9NZA1	7	61	Chloride intracellular channel protein 5 (Glutaredoxin-like 	w
+OXIDOREDUCTASE	human	Q9NZC7	WWOX	Q9NZC7	47	807	WW domain-containing oxidoreductase (EC 1.1.1.-) (Fragile si	w
+OXIDOREDUCTASE	human	Q9P2T1	GMPR2	Q9P2T1	1	55	GMP reductase 2 (GMPR 2) (EC 1.7.1.7) (Guanosine 5'-monophos	w
+OXIDOREDUCTASE	human	Q9UHB4	NDOR1	Q9UHB4	8	134	NADPH-dependent diflavin oxidoreductase 1 (EC 1.18.1.-) (NAD	w
 OXIDOREDUCTASE	human	Q9UHQ9	CYB5R1	Q9UHQ9	11	150	NADH-cytochrome b5 reductase 1 (b5R.1) (EC 1.6.2.2) (Humb5R2	w
-OXIDOREDUCTASE	human	Q9Y696	CLIC4	Q9Y696	10	205	Chloride intracellular channel protein 4 (Glutaredoxin-like 	w
-OXIDOREDUCTASE	human	Q9Y6M9	NDUFB9	Q9Y6M9	28	318	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
-OXIDOREDUCTASE	human	Q9Y6N5	SQOR	Q9Y6N5	9	192	Sulfide:quinone oxidoreductase, mitochondrial (SQOR) (EC 1.8	w
+OXIDOREDUCTASE	human	Q9Y696	CLIC4	Q9Y696	9	205	Chloride intracellular channel protein 4 (Glutaredoxin-like 	w
+OXIDOREDUCTASE	human	Q9Y6M9	NDUFB9	Q9Y6M9	26	318	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
+OXIDOREDUCTASE	human	Q9Y6N5	SQOR	Q9Y6N5	6	192	Sulfide:quinone oxidoreductase, mitochondrial (SQOR) (EC 1.8	w
 OXIDOREDUCTASE	worm	J7SF87	CELE_Y9C9A.16	J7SF87	0	4	Sulfide:quinone oxidoreductase, mitochondrial	w
 OXIDOREDUCTASE	worm	M1ZMI3	fre-1	M1ZMI3	1	17	NADPH-dependent diflavin oxidoreductase 1	w
 OXIDOREDUCTASE	worm	O16214	CELE_F17A9.4	O16214	0	16	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	w
@@ -645,10 +645,10 @@ OXIDOREDUCTASE	zebrafish	Q9MIY2	mt-nd4l	Q9MIY2	9	228	NADH-ubiquinone oxidoreduct
 OXIDOREDUCTASE	zebrafish	Q9MIY3	mt-nd3	Q9MIY3	2	297	NADH-ubiquinone oxidoreductase chain 3	w
 OXIDOREDUCTASE	zebrafish	Q9MIY9	mt-nd2	Q9MIY9	5	239	NADH-ubiquinone oxidoreductase chain 2	w
 OXIDOREDUCTASE	zebrafish	Q9MIZ0	mt-nd1	Q9MIZ0	14	393	NADH-ubiquinone oxidoreductase chain 1	w
-OXIDOREDUCTASE-LIKE	human	Q5BKU9	OXLD1	Q5BKU9	15	152	Oxidoreductase-like domain-containing protein 1	w
+OXIDOREDUCTASE-LIKE	human	Q5BKU9	OXLD1	Q5BKU9	9	152	Oxidoreductase-like domain-containing protein 1	w
 OXIDOREDUCTIN-1	worm	Q7YTU4	ero-1	Q7YTU4	5	17	Endoplasmic reticulum oxidoreductin-1	w
 OXIDOREDUCTIN-1	yeast	Q03103	ERO1	Q03103	4	19	Endoplasmic oxidoreductin-1	w
 OXIDOREDUCTIN-1-LIKE	fly	FBgn0261274	Ero1L	Q9V3A6	7	35	Ero1-like protein (EC 1.8.4.-) (Endoplasmic reticulum oxidor	w
-OXIDOREDUCTIN-1-LIKE	human	Q86YB8	ERO1B	Q86YB8	11	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
-OXIDOREDUCTIN-1-LIKE	human	Q96HE7	ERO1A	Q96HE7	10	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
+OXIDOREDUCTIN-1-LIKE	human	Q86YB8	ERO1B	Q86YB8	8	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	w
+OXIDOREDUCTIN-1-LIKE	human	Q96HE7	ERO1A	Q96HE7	9	128	ERO1-like protein alpha (ERO1-L) (ERO1-L-alpha) (EC 1.8.3.2)	w
 OXIDOSQUALENE--LANOSTEROL	human	P48449	LSS	P48449	7	159	Lanosterol synthase (EC 5.4.99.7) (2,3-epoxysqualene--lanost	w
