@@ -151,8 +151,10 @@ const AFDB_SRC = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands 
 const LIVIA_SRC = ['livia', 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.'];
 function screenCite(d) {
   const [k, text] = SCREEN_SRC[d.id] || (/^afdb-het-/.test(d.id) ? AFDB_SRC : /kinase-kinase$/.test(d.id) ? LIVIA_SRC : [null, esc(d.source || d.title || d.id)]);
-  return { k, text, url: k ? `https://doi.org/${REF[k][1]}` : d.paper || '' };
+  return { k, text, url: k ? `https://doi.org/${REF[k][1]}` : d.paper || '', short: k ? ({ livia: 'Kim & Perrimon 2026', flypredictome: 'Kim et al. 2026' }[k] || REF[k][0]) : (d.source || d.title || d.id).replace(/ · .*$/, '') };   // short: author and year, as the screens' chips cite them
 }
+const dataLine = (d) => { const sc = screenCite(d);   // one line per screen: the license of its data, and whom to cite
+  return `<div class="data-line">Data license: ${esc(d.license || 'not stated')} · cite ${sc.url ? `<a href="${esc(sc.url)}" target="_blank" rel="noopener">${esc(sc.short)}</a>` : esc(sc.short)}</div>`; };
 
 const $ = (sel, el = document) => el.querySelector(sel);
 const short = (name) => String(name || '').replace(/\s*\((?:EC [^)]*|[^)]*)\).*$/, '').trim() || String(name || '');
@@ -1513,7 +1515,7 @@ function dsCard(d) {
     <div class="sp">${spName(spx ? spx.name : d.speciesName || d.species || '')}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
   const src = d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source);   // every paper reference links to the paper
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
-    <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div></div>`;
+    <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div>${live || d.status === 'record' ? dataLine(d) : ''}</div>`;
 }
 function homoDsCard(reg) {   // the homodimer release: on protein pages and its lists; its card counts entries (isoforms included) and nothing past a cutoff
   const H = reg.homodimers; if (!H || !H.species) return '';
@@ -1656,7 +1658,7 @@ async function setCards(gen, reg) {
         <h3><a href="#/datasets/${d.id}/${s.id}">${esc(spx ? spx.label : d.species)} ${esc(s.title.charAt(0).toLowerCase() + s.title.slice(1))}</a></h3>
         <div class="sp">${spName(spx ? spx.name : d.species)} · <span class="src" style="--c:${s.color}">${esc(s.short)}</span></div>${d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}
         <div class="stats"><div><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div><b>${fmtInt(k.pairsFpr10)}</b><span>past 10% FPR${cutNote(10)}</span></div></div>
-        <div class="src-line">${src}${src ? ' · ' : ''}a set within <a href="#/datasets/${d.id}">${esc(d.title)}</a></div></div>`;
+        <div class="src-line">${src}${src ? ' · ' : ''}a set within <a href="#/datasets/${d.id}">${esc(d.title)}</a></div>${dataLine(cite || d)}</div>`;
       const after = kin.map((x) => box.querySelector(`[data-ds="${x.id}"]`)).filter(Boolean)[0];
       if (after) after.insertAdjacentHTML('afterend', card); else box.insertAdjacentHTML('beforeend', card);
     }
@@ -1694,6 +1696,26 @@ async function viewAbout() {
   const andJoin = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
   const screenList = [...groups.values()].map((g) => { const t = `<b>${esc(g.k === 'han2026' ? 'AFDB heterodimer screens, one per species' : g.titles.length > 1 ? `${g.short} screens (${andJoin(g.sps)})` : g.titles[0])}</b>: ${g.text}`;
     return g.k ? ref(g.k, t) : `<li>${t}</li>`; }).join('');
+  // Every source the Atlas reads, with the license of its data: screens from the registry (screenCite gives the reference),
+  // third-party resources as their own files record them (BioGRID shard headers, the orthologs, paralogs and Pfam manifests),
+  // else as the source publishes it (UniProt, InterPro, FlyBase, AlphaFold DB).
+  const licOf = (re) => { const l = [...new Set((reg.datasets || []).filter((d) => d.status === 'live' && re.test(d.id)).map((d) => d.license).filter(Boolean))]; return l.join(', ') || 'not stated'; };
+  const doi = (k) => `https://doi.org/${REF[k][1]}`;
+  const LICROWS = [
+    ['Human Predictome (Walter lab; Schmid et al. 2025)', 'the human proteome-wide screen', licOf(/^human-predictomes$/), doi('schmid2025'), 'Schmid et al. 2025'],
+    ['Human kinase–transcription factor screen (Kim et al. 2025)', 'the human kinase–TF screen', licOf(/^human-kinase-tf$/), doi('kim2025'), 'Kim et al. 2025'],
+    ['Kinase–kinase screens (LIVIA; Kim &amp; Perrimon 2026)', 'the kinase–kinase screens of human, zebrafish, yeast and <i>C. elegans</i>', licOf(/kinase-kinase$/), doi('livia'), 'Kim & Perrimon 2026'],
+    ['FlyPredictome (Kim et al. 2026)', 'the fly screen and its sets', licOf(/^flypredictome$/), doi('flypredictome'), 'Kim et al. 2026'],
+    ['AlphaFold Database heterodimers (EMBL-EBI / Google DeepMind / NVIDIA; Han et al. 2026)', 'one heterodimer screen per species, rescored with lis.py', licOf(/^afdb-het-/), doi('han2026'), 'Han et al. 2026'],
+    ['AlphaFold Database viral protein complexes (Han, Narain et al. 2026)', 'the virus pages', licOf(/^viral-dimers-afdb$/), ((reg.datasets || []).find((d) => d.id === 'viral-dimers-afdb') || {}).paper || 'https://alphafold.ebi.ac.uk', 'Han, Narain et al. 2026'],
+    ['AlphaFold Database homodimers (Han et al. 2026)', 'the Homodimer card and the homodimer lists', (reg.homodimers && reg.homodimers.license) || 'CC BY 4.0', doi('han2026'), 'Han et al. 2026'],
+    ['BioGRID 5.0.261', 'reported physical and genetic interactions', 'MIT', 'https://thebiogrid.org', 'thebiogrid.org'],
+    ['Alliance of Genome Resources 9.0', 'orthologs (stringent set) and paralogs', 'CC BY 4.0', 'https://www.alliancegenome.org', 'alliancegenome.org'],
+    ['UniProt', 'protein names, sequences, accessions, and domains where Pfam has none', 'CC BY 4.0', 'https://www.uniprot.org', 'uniprot.org'],
+    ['Pfam 38.2 and InterPro', 'protein domains (precomputed Pfam tables, live InterPro lookups)', 'CC0', 'https://www.ebi.ac.uk/interpro/', 'ebi.ac.uk/interpro'],
+    ['FlyBase (FB2026_03)', 'fly genes, symbols and synonyms', 'CC BY 4.0', 'https://flybase.org', 'flybase.org'],
+    ['AlphaFold Protein Structure Database', 'single-chain models and pLDDT in the 3D view and plots', 'CC BY 4.0', 'https://alphafold.ebi.ac.uk', 'alphafold.ebi.ac.uk'],
+  ];
   app.innerHTML = `<div class="reading about"><div class="crumbs"><a href="#/">Atlas</a> / <a href="#/about">About</a></div><h1 class="sr-only">About the LIVIA Atlas</h1>
     <div class="card" style="margin-top:6px"><h2>What this is</h2>
       <p>LIVIA Atlas makes large AlphaFold-Multimer interaction screens searchable at the level of residues. Every prediction is scored with
@@ -1733,6 +1755,9 @@ async function viewAbout() {
       <p class="muted" style="font-size:14px;margin-bottom:0">Please also cite the source of each screen you use, and the resources below that your work draws on.</p></div>
     <div class="card"><h2>Screens</h2>
       <ul class="refs">${screenList}${reg.homodimers ? ref('han2026', '<b>AlphaFold Database homodimers</b> (the Homodimer card of protein pages and the homodimer lists): Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>.') : ''}</ul></div>
+    <div class="card" id="about-lic"><h2>Data sources and licenses</h2>
+      <p class="muted" style="margin:2px 0 8px;font-size:13.5px">The license of each source's data, as the Atlas uses it (not the license of the papers).</p>
+      <div class="tbl-wrap"><table class="pt lic-tbl"><thead><tr><th>Source</th><th>What the Atlas uses it for</th><th>Data license</th><th>Link</th></tr></thead><tbody>${LICROWS.map(([src, use, lic, url, lab]) => `<tr><td data-l="Source">${src}</td><td data-l="Used for">${use}</td><td data-l="Data license">${esc(lic)}</td><td data-l="Link"><a href="${esc(url)}" target="_blank" rel="noopener">${esc(lab)} ↗</a></td></tr>`).join('')}</tbody></table></div></div>
     <div class="card"><h2>Data and software</h2>
       <h3 class="refs-h">Structures and annotations</h3>
       <ul class="refs">
@@ -1849,7 +1874,7 @@ async function viewDatasetOff(d, gen = ROUTE) {   // a set the Atlas does not se
   const why = `${x ? (x === k.pairs ? `In all ${fmtInt(x)} of its pairs` : `In ${fmtInt(x)} of its ${fmtInt(k.pairs)} pairs`) : 'In nearly all of its pairs'}, one protein belongs to another taxon`;   // crossSpeciesPairs: the two proteins' taxa differ
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${esc(d.id)}">${esc(d.title)}</a></div>
     <div class="dshead"><h1>${esc(d.title)}</h1><div class="pname">${spName(spx ? spx.name : d.speciesName || '')}${src && src.method ? ` · ${esc(src.method)}` : ''}</div>
-      <div class="cite">${src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.citation)} ↗</a>` : d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source || '')}</div></div>
+      <div class="cite">${src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.citation)} ↗</a>` : d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source || '')}</div>${dataLine(d)}</div>
     ${k ? kpiRow(k) : ''}
     <div class="card"><h2>${rec ? 'In the data record, not searchable here' : d.status === 'external' ? 'On its own site' : 'Planned'}</h2><p class="muted" style="font-size:14px;margin:4px 0 0">${rec
       ? `${why}, so this set has no species page of its own. Its scores and interaction residues are in the ${recLink(d)}.`
@@ -1864,7 +1889,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
   document.title = `${ds.reg.title} · LIVIA Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/${ds.id}">${esc(ds.reg.title)}</a></div>
     <div class="dshead"><h1>${esc(ds.reg.title)}</h1><div class="pname">${spName(m.species.name)} · ${esc(m.source.method)} · ${esc(m.analysis.tool)}, <span>PAE ≤ ${m.analysis.paeCutoff} Å, Cβ ≤ ${m.analysis.cbCutoff} Å</span></div>${ds.reg.models ? `<div class="pname">${runSettings(ds.reg)}</div>` : ''}
-      <div class="cite">${m.source.url ? `<a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.citation)}${m.source.doi ? ` doi:${esc(m.source.doi)}` : ''} ↗</a>` : esc(m.source.citation)}</div></div>
+      <div class="cite">${m.source.url ? `<a href="${esc(m.source.url)}" target="_blank" rel="noopener">${esc(m.source.citation)}${m.source.doi && !/zenodo/.test(m.source.doi) ? ` doi:${esc(m.source.doi)}` : ''} ↗</a>` : esc(m.source.citation)}</div>${dataLine(ds.reg)}</div>
     ${kpiRow(k)}${k.crossSpeciesPairs ? `<p class="muted" style="margin:-6px 0 14px;font-size:14px">${fmtInt(k.crossSpeciesPairs)} of these pairs join a protein of another taxon; the <a href="#/${sp.id}">${esc(sp.reg.label)}</a> page leaves them out.</p>` : ''}
     <div class="card"><h2>Search</h2><p class="muted" style="margin:2px 0 10px">${sp.dsIds.length > 1 ? `Protein pages opened from here show only this screen, <span class="src" style="--c:${ds.reg.color}">${esc(ds.reg.short)}</span>, with a switch to every ${esc(spLow(sp.reg.label))} screen.`
       : `Protein pages show every prediction of this screen${TS ? ', with a switch to each of its thematic sets' : ''}.`}</p><div id="ds-search"></div></div>
@@ -3842,9 +3867,9 @@ function pairSources(sp, P, O, part, consOnly) {
   const by = new Map(); for (const p of part.preds) { const o = by.get(p.di) || { n: 0, rep: 0 }; if (p.rep) o.rep++; else o.n++; by.set(p.di, o); }
   const rows = [...by].sort((a, b) => a[0] - b[0]).map(([di, o]) => { const d = (REG.datasets || []).find((x) => x.id === sp.dsIds[di]) || { id: sp.dsIds[di], short: sp.dsShort[di] }, sc = screenCite(d);
     return `<tr><td data-l="Screen"><span class="src" style="--c:${sp.dsColor ? sp.dsColor[di] : d.color || '#5A697C'}">${esc(sp.dsShort[di])}</span></td><td class="ref" data-l="Reference">${sc.text}${sc.url ? ` <a href="${esc(sc.url)}" target="_blank" rel="noopener">${esc(sc.url.replace(/^https?:\/\/(doi\.org\/)?/, sc.k ? 'doi:' : ''))} ↗</a>` : ''}</td>
-      <td class="n" data-l="Models of this pair">${o.n ? fmtInt(o.n) : ''}${o.rep ? `${o.n ? ' ' : ''}<span class="muted">${o.n ? '+ ' : ''}${fmtInt(o.rep)} repeat${o.rep === 1 ? '' : 's'}${o.n ? '' : ', not counted'}</span>` : ''}</td><td data-l="Run settings">${d.models ? runSettings(d) : '<span class="muted">–</span>'}</td><td data-l="License">${d.license ? esc(d.license) : '<span class="muted">–</span>'}</td></tr>`; }).join('');
+      <td class="n" data-l="Models of this pair">${o.n ? fmtInt(o.n) : ''}${o.rep ? `${o.n ? ' ' : ''}<span class="muted">${o.n ? '+ ' : ''}${fmtInt(o.rep)} repeat${o.rep === 1 ? '' : 's'}${o.n ? '' : ', not counted'}</span>` : ''}</td><td data-l="Run settings">${d.models ? runSettings(d) : '<span class="muted">–</span>'}</td><td data-l="Data license">${esc(d.license || 'not stated')}</td></tr>`; }).join('');
   const html = `<div class="card" id="c-psrc"><div class="card-head"><h2>Prediction sources</h2><span class="muted">the screens that folded ${esc(P.gene)} with ${esc(O.gene)}${consOnly ? ' (constructs only)' : ''}</span></div>
-    <div class="tbl-wrap"><table class="pt psrc-tbl"><thead><tr><th>Screen</th><th>Reference</th><th class="n">Models of this pair</th><th>Run settings</th><th>License</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <div class="tbl-wrap"><table class="pt psrc-tbl"><thead><tr><th>Screen</th><th>Reference</th><th class="n">Models of this pair</th><th>Run settings</th><th>Data license</th></tr></thead><tbody>${rows}</tbody></table></div>
     <p class="muted" style="margin:10px 0 0;font-size:13.5px">Scores computed with lis.py (<a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>): ${LIVIA_SRC[1]} <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">doi:${REF.livia[1]} ↗</a></p></div>`;
   const refs = $('#c-refs'); if (refs) refs.insertAdjacentHTML('afterend', html); else app.insertAdjacentHTML('beforeend', html);
 }
