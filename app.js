@@ -1275,8 +1275,7 @@ function hslDistinct(i) {   // hex, so Mol* (MVS) can take it too
   return `#${f(0)}${f(8)}${f(4)}`;
 }
 const clusterColor = (id, k) => { const pal = k <= TAB10.length ? TAB10 : k <= TAB20.length ? TAB20 : k <= TAB60.length ? TAB60 : null; return pal ? pal[(id - 1) % pal.length] : hslDistinct(id - 1); };
-const SMALL_C = '#7E8DA1';   // communities past the palette: one gray-blue outside it, with its own key entry (navy is the center protein's color)
-const smallKey = (n, word = 'communities') => (n > 0 ? `<span><i style="background:${SMALL_C};border-radius:50%"></i>${fmtInt(n)} smaller ${word}</span>` : '');
+const SMALL_C = '#7E8DA1';   // proteins in a community of two: one gray-blue with its own key entry (navy is the center protein's color); communities of 3+ each get a color (commHue)
 const clusterLabel = (c, brief) => (brief ? 'C' : 'Cluster ') + c;
 function amCol(v) {   // AlphaMissense: benign (blue) → ambiguous (gray) → pathogenic (red), as clip.html
   const t = Math.max(0, Math.min(1, v)), lerp = (a, b, u) => [0, 1, 2].map((i) => Math.round(a[i] + (b[i] - a[i]) * u));
@@ -1558,7 +1557,7 @@ async function showcase() {
       const big = [...csize].filter(([, z]) => z >= 3).map(([c]) => c).sort((a, b) => a - b), center = new Map();
       big.forEach((c, n) => { if (n === 0) center.set(c, [0, 0]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [150 * Math.cos(t), 70 * Math.sin(t)]); } });
       const linked = new Set(s.edges.flatMap(([a, b]) => [a, b]));
-      s._col = cm.map((c, i) => (!linked.has(i) ? '#C3CCD6' : big.includes(c) && big.indexOf(c) < TAB10.length ? TAB10[big.indexOf(c)] : SMALL_C));
+      s._col = cm.map((c, i) => (!linked.has(i) ? '#C3CCD6' : big.includes(c) ? commHue(big.indexOf(c)) : SMALL_C));
       const home = (d) => center.get(cm[d.i]) || [0, 0], nodes = s.nodes.map((l, i) => ({ i, x: (center.get(cm[i]) || [0, 0])[0] + 20 * Math.cos(i), y: (center.get(cm[i]) || [0, 0])[1] + 20 * Math.sin(i) }));
       const links = s.edges.map(([a, b, w]) => ({ source: a, target: b, w, same: cm[a] === cm[b] }));
       const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).distance(26).strength((l) => (l.same ? 0.6 : 0.02))).force('charge', d3.forceManyBody().strength(-38))
@@ -4070,7 +4069,7 @@ async function viewVirus(spId, taxid) {
     const C = commNow(), grouped = !!C.m, idx = new Map(nodes.map((d, n) => [d.id, n])), t0 = performance.now(), cm = grouped ? communitiesBy(C.m, nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]), C.seed) : nodes.map(() => 0), cms = performance.now() - t0;
     const csize = new Map(); nodes.forEach((d, n) => { d.c = cm[n]; csize.set(d.c, (csize.get(d.c) || 0) + 1); });
     const big = [...csize].filter(([c, sz]) => sz >= 3).map(([c]) => c).sort((a, b) => a - b);
-    const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : !grouped ? '#1A5276' : big.includes(d.c) && big.indexOf(d.c) < TAB10.length ? TAB10[big.indexOf(d.c)] : SMALL_C);
+    const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : !grouped ? '#1A5276' : big.includes(d.c) ? commHue(big.indexOf(d.c)) : SMALL_C);   // every community of 3+ its own color (ten Tableau colors, then golden-angle hues); groups of two the one gray-blue
     const center = new Map();   // each group's place: groups on a ring around the largest, spaced by their size
     if (grouped) { const R0 = Math.min(W, H) * 0.42; big.forEach((c, n) => { if (n === 0) center.set(c, [W / 2, H / 2]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [W / 2 + R0 * Math.cos(t), H / 2 + R0 * 0.8 * Math.sin(t)]); } }); }
     const home = (d) => center.get(d.c) || [W / 2, H / 2];
@@ -4113,8 +4112,7 @@ async function viewVirus(spId, taxid) {
     const small = nodes.filter((d) => ccol(d) === SMALL_C).length;
     $('#vn-legend').innerHTML = (k ? `<span class="muted">${fmtInt(links.length)} of ${fmtInt(het.length)} edges drawn: each protein's ${k} strongest</span>` : '')
       + (grouped ? '<span class="muted">pairs inside a community in its color, the others light gray; width: iLIS</span>' : '<span><i style="background:linear-gradient(90deg, #C5CCD4, #1E2A38);height:4px;width:60px;border-radius:2px"></i>iLIS, 0.223 to 0.85+</span>')
-      + (grouped && small ? (() => { const past = nodes.filter((d) => ccol(d) === SMALL_C && big.includes(d.c)).length, sm = small - past;   // the one gray-blue: groups of two, and communities past the palette
-        return `<span><i style="background:${SMALL_C};border-radius:50%"></i>${sm && past ? `in a smaller community, or one past the first ${TAB10.length}` : sm ? 'in a smaller community' : `in a community past the first ${TAB10.length}`} (${fmtInt(small)})</span>`; })() : '')
+      + (grouped && small ? `<span><i style="background:${SMALL_C};border-radius:50%"></i>in a smaller community (${fmtInt(small)})</span>` : '')   // the one gray-blue: groups of two
       + `${homoKey(homo.size)}<span><i style="background:#C3CCD6;border-radius:50%"></i>no partner at this cutoff (${fmtInt(v.members.filter((i) => !deg.get(i)).length)})</span>`
       + `<span class="muted">counts at the network's cutoff, ${cut}% FPR${cut !== 10 ? '; the tiles above count at 10%' : ''}</span>`;   // the network opens at 5%, the tiles keep 10%
     // the numbers above the drawing and the Communities list beside it, as LIVIA's network page
@@ -4345,14 +4343,14 @@ async function viewNested(spId, q) {
       .on('mousemove', (ev, d) => showTip(`<b>${esc(gname(d.a))}</b> × <b>${esc(gname(d.b))}</b> · iLIS ${d.e.best.toFixed(3)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip)
       .on('click', (ev, d) => { hideTip(); location.hash = `#/${sp.id}/${sp.rows[d.a].key}/${sp.rows[d.b].key}`; });
     const many = ids.length > 90, node = g.append('g').selectAll('g').data(ids).join('g').attr('transform', (i) => `translate(${X(i)},${Y(i)})`).style('cursor', 'pointer');
-    node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : S.cm ? (cgrp.has(i) ? (cgrp.get(i) < TAB10.length ? TAB10[cgrp.get(i)] : SMALL_C) : '#C3CCD6') : RC[Math.min(col(i), RC.length - 1)]))
+    node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : S.cm ? (cgrp.has(i) ? commHue(cgrp.get(i)) : '#C3CCD6') : RC[Math.min(col(i), RC.length - 1)]))
       .attr('stroke', (i) => RC[Math.min(col(i), RC.length - 1)]).attr('stroke-width', 1.6).attr('stroke-dasharray', (i) => (res.info.get(i) && res.info.get(i).hidden ? '2 2' : null));
     lab = node.append('text').attr('display', (i) => (!many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01) ? null : 'none')).text(gname).attr('x', 9).attr('dy', '0.32em').attr('font-size', 10.5)
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', (i) => (col(i) === 0 ? 700 : 600)).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3);
     node.on('mousemove', (ev, i) => { const x = res.info.get(i); showTip(`<b>${esc(gname(i))}</b> · ${col(i) === 0 ? 'bait' : `${x.hidden ? 'hidden, ' : ''}round ${x.r}`}${x ? `<br>${fmtInt(x.n)} connection${x.n === 1 ? '' : 's'} into the network · p ${x.p.toExponential(1)} · q ${x.q.toFixed(3)}` : ''}`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, i) => { location.hash = `#/${sp.id}/${sp.rows[i].key}`; });
     $('#ns-legend').innerHTML = RC.slice(0, nc).map((cc, k) => `<span><i style="${S.cm ? `background:#fff;border:2px solid ${cc}` : `background:${cc}`};border-radius:50%"></i>${k === 0 ? 'baits' : `round ${k}`} (${fmtInt(byCol[k].filter((i) => !(res.info.get(i) || {}).hidden).length)})</span>`).join('')
-      + (S.cm ? cbig.slice(0, TAB10.length).map((x, n) => `<span><i style="background:${TAB10[n]};border-radius:50%"></i>${commWord(S.cm, n + 1)} (${fmtInt(csz.get(x))})</span>`).join('') + smallKey(cbig.length - TAB10.length, S.cm === 'cc' ? 'parts' : 'communities') + `<span><i style="background:#C3CCD6;border-radius:50%"></i>in no ${S.cm === 'cc' ? 'part' : 'community'} of three or more</span><span class="muted">fill: ${S.cm === 'cc' ? 'connected part' : 'community'}; outline and column: round</span>` : '')
+      + (S.cm ? cbig.map((x, n) => `<span><i style="background:${commHue(n)};border-radius:50%"></i>${commWord(S.cm, n + 1)} (${fmtInt(csz.get(x))})</span>`).join('') + `<span><i style="background:#C3CCD6;border-radius:50%"></i>in no ${S.cm === 'cc' ? 'part' : 'community'} of three or more</span><span class="muted">fill: ${S.cm === 'cc' ? 'connected part' : 'community'}; outline and column: round</span>` : '')
       + (showH && [...res.info.values()].some((x) => x.hidden) ? '<span><i style="background:#fff;border:1.5px dashed #5B6573;border-radius:50%"></i>hidden: below the rule</span>' : '') + (ids.length >= 400 ? '<span class="muted">capped at 400, kept by p, then connections</span>' : '');
     svgExport($('#ns-x'), `atlas_${sp.id}_nested`, () => $('svg', box));
   }
