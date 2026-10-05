@@ -105,7 +105,6 @@ a:hover { text-decoration: underline; }
 .kpi b { display: block; font-family: var(--mono); font-size: 22px; font-weight: 600; line-height: 1.1; }
 .kpi span { font-size: 11.5px; color: var(--ink-3); letter-spacing: 0.02em; }
 .runset { font-style: normal; color: var(--ink-3); }
-.runset.off { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
 .srcs.ovl { font-size: 13px; margin-top: 4px; }
 .ovl-all { margin-top: 4px; }
 .ovl-all summary { cursor: pointer; color: var(--blue); width: max-content; }

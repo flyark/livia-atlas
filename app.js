@@ -41,12 +41,11 @@ const FPR_AVG = { iLIS: [0.072, 0.120, 0.268], ipTM: [0.292, 0.336, 0.442], iLIS
 const spLow = (t) => (/^([A-Z][a-z]+ [a-z]+|[A-Z]\. )/.test(t || '') ? t : (t || '').toLowerCase());   // a species label inside a sentence: common names lowercase (human), species names as written (Mus musculus, C. elegans)
 const domUni = (d) => (d.s != null && (d.s !== d.start || d.e !== d.end) ? `${d.start}–${d.end} in UniProt` : '');   // a domain placed through an alignment: its UniProt numbering, said after the plot's own
 const domTip = (d) => { const a = d.s != null ? d.s : d.start, z = d.e != null ? d.e : d.end, u = domUni(d); return `<b>${d.idx ? `D${d.idx} ` : ''}${esc(d.name)}</b><br>residues ${a}–${z} (${z - a + 1} aa${u ? `; ${u}` : ''}) · ${d.src === 'Pfam' ? 'Pfam domain' : 'UniProt domain'}`; };
-// Each screen's run settings (registry: models, recycles). The cutoffs were calibrated on five models with five recycles
-// per pair; a screen run otherwise says so where its settings are shown.
+// Each screen's run settings (registry: models, recycles). The calibration (CALIB) is explained on About only.
 const CALIB = 'The iLIS cutoffs were calibrated on the top-ranked of five AlphaFold-Multimer models per pair (five recycles), and the average-iLIS cutoffs on the average of the five. For screens run with fewer models or other settings, they are a guide rather than a measured error rate.';
 const runSettings = (d) => { if (!d || !d.models) return '';
-  const off = !(d.models === 5 && d.recycles === 5), t = `${d.models} model${d.models === 1 ? '' : 's'}${d.recycles ? ` × ${d.recycles} recycles` : ''} per pair${d.modelsNote ? ` (${d.modelsNote})` : ''}`;
-  return `<span class="runset${off ? ' off' : ''}"${off ? ` title="${esc(CALIB)}"` : ''}>${esc(t)}</span>`; };
+  const t = `${d.models} model${d.models === 1 ? '' : 's'}${d.recycles ? ` × ${d.recycles} recycles` : ''} per pair${d.modelsNote ? ` (${d.modelsNote})` : ''}`;
+  return `<span class="runset">${esc(t)}</span>`; };
 // A pair folded in several runs counts once, by its run with the highest iLIS: which run a view shows, and what else holds it.
 // Up to three runs: each one inline. More: a summary (runs per screen and set, the run with the highest iLIS), and with html
 // every run in a list that opens on request, highest iLIS first (author, 2026-10-04: a pair folded in 60 runs was a wall of text).
