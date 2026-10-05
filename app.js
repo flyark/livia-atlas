@@ -784,6 +784,31 @@ async function viewHomoList(spId, q) {
   const q0 = (q.get('q') || '').trim(); if (q0) { const hit = L.findIndex((x) => String(x.e.uniprot_A).toLowerCase() === q0.toLowerCase()); if (hit >= 0 && !L[hit].page) T.open.add(hit); }   // arrived from search: its row opened
   draw();
 }
+// Phosphosite windows (FlyPredictome's kinase–substrate screen): a 101-residue window around a phosphosite of a substrate,
+// folded with kinases. They count nowhere gene-level (KIND_DROP); here they are listed apart, kinase × site with the best
+// iLIS over the run's models, plain: on a kinase's page its substrates' windows, on a substrate's page its own windows.
+function phosCard(sp, P, B) {
+  const card = $('#c-phos'); if (!card || !B || !B.dropped || !B.dropped.length || !B.cons) return;
+  const kindOf = (nm) => (B.cons.get(nm) || {}).kind, best = new Map();
+  for (const p of B.dropped) {
+    const asKinase = kindOf(p.pc) === 'phosphosite', asSub = kindOf(p.qc) === 'phosphosite'; if (!asKinase && !asSub) continue;
+    const win = asKinase ? p.pc : p.qc, k = `${win}|${p.partner}|${asKinase ? 'k' : 's'}`, o = best.get(k);
+    if (!o) best.set(k, { win, partner: p.partner, asKinase, iLIS: p.iLIS || 0, n: 1 }); else { o.n++; if ((p.iLIS || 0) > o.iLIS) o.iLIS = p.iLIS || 0; } }
+  const L = [...best.values()].sort((a, b) => b.iLIS - a.iLIS); if (!L.length) return;
+  card.hidden = false; const nb = app.querySelector('.subnav button[data-t="c-phos"]'); if (nb) nb.hidden = false;
+  const gname = (k) => ((sp.byKey.get(k) || {}).gene || k), nK = L.filter((x) => x.asKinase).length, nS = L.length - nK;
+  $('#phos-sub').textContent = `${nK ? `${fmtInt(nK)} substrate site window${nK === 1 ? '' : 's'} folded with ${P.gene}` : ''}${nK && nS ? ' · ' : ''}${nS ? `${fmtInt(nS)} kinase pairing${nS === 1 ? '' : 's'} with ${P.gene}'s own site windows` : ''} · FlyPredictome's kinase–substrate screen`;
+  const cap = 25; let open = L.length <= cap;
+  const draw = () => {
+    $('#phos-body').innerHTML = `<p class="muted" style="margin:0 0 8px;font-size:13.5px">Each site is a 101-residue window of the substrate around the phosphosite, folded with the kinase in FlyPredictome's kinase–substrate screen. These windows are not the full-length protein, so they are listed here and not counted among ${esc(P.gene)}'s partners, binding sites or networks. iLIS is the best over the run's models.</p>
+      <div class="tbl-wrap"><table class="pt compact"><thead><tr><th>Kinase</th><th>Site</th><th class="n">iLIS</th><th class="n">Models</th><th></th></tr></thead><tbody>`
+      + (open ? L : L.slice(0, cap)).map((x) => { const kin = x.asKinase ? P.gene : gname(x.partner), site = siteLabel(B.cons.get(x.win), x.win);
+        return `<tr><td>${x.asKinase ? esc(kin) : `<a href="#/${sp.id}/${encodeURIComponent(x.partner)}">${esc(kin)}</a>`}</td><td>${x.asKinase ? `<a href="#/${sp.id}/${encodeURIComponent(x.partner)}">${esc(site)}</a>` : esc(site)}</td><td class="n">${x.iLIS.toFixed(3)}</td><td class="n">${fmtInt(x.n)}</td><td><a href="#/${sp.id}/${P.key}/${encodeURIComponent(x.partner)}" title="the pair page: its models, constructs included">models →</a></td></tr>`; }).join('')
+      + `</tbody></table></div>${L.length > cap ? `<div class="pager"><button class="more" type="button" id="phos-more" aria-expanded="${open}">${open ? 'Show fewer' : `Show all ${fmtInt(L.length)}`}</button></div>` : ''}`;
+    const m = $('#phos-more'); if (m) m.onclick = () => { open = !open; draw(); };
+  };
+  draw();
+}
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
   const origin = new URL(LIVIA, location.href).origin; let done = false, n = 0;
@@ -808,6 +833,21 @@ function orderChoices(choices) {
   if (ref && ref.n >= 0.05 * total) { choices.splice(choices.indexOf(ref), 1); choices.unshift(ref); }
   return choices;
 }
+// A construct of a kind that counts nowhere gene-level (author, 2026-10-04): its predictions stay out of partners, tiles,
+// binding sites, networks and search counts (the species index is built by the same rule), and are shown apart.
+const KIND_DROP = new Set(['phosphosite', 'mutant', 'variant', 'construct', 'engineered']);
+const dropKind = (cons, nm) => { const c = cons && cons.get(nm); return !!(c && KIND_DROP.has(c.kind)); };
+// Isoforms of the same genes folded separately (FlyPredictome): each isoform pair's best iLIS, when they disagree at the 10%
+// cutoff (one past it, another below). Constructs of the same length are one isoform (a gene folded under two names).
+function isoSplit(cons, preds) {
+  if (!cons || !cons.size) return null; const g = new Map(), ok = (c) => c && (c.kind === 'gene' || c.kind === 'isoform');
+  for (const p of preds) { const a = cons.get(p.qc), b = cons.get(p.pc); if (!ok(a) || !ok(b)) continue;
+    const k = `${a.key}:${p.qLen}|${b.key}:${p.pLen}`, o = g.get(k); if (!o || (p.iLIS || 0) > o.best) g.set(k, { best: p.iLIS || 0, q: a.label, o: b.label, ql: p.qLen, pl: p.pLen }); }
+  const v = [...g.values()]; if (v.length < 2 || !v.some((x) => x.best >= CUT[10]) || !v.some((x) => x.best < CUT[10])) return null;
+  return v.sort((x, y) => y.best - x.best);
+}
+const isoLab = (lab, len) => (/\(\d[\d,]* aa\)/.test(lab || '') ? lab : `${lab} (${fmtInt(len)} aa)`);   // a construct's label with its length, once
+const siteLabel = (c, nm) => String((c && c.label) || nm).replace(/ site$/, '').replace(/ site (\d+)$/, ' $1');   // "yki S107 site" -> "yki S107"
 // The predictions of the given bundles merged into one view of the protein: its partners, its clustering choices, cLIP rows.
 async function assemble(sp, P, parts, scope, onlyDi, setId) {
       const preds = [], runs = new Map(), seqs = new Map(), cons = new Map(), sets = [], TS = (parts.find((x) => x.TS) || {}).TS || null;
@@ -850,6 +890,9 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         }
         part.raw.rows = null;   // read: the predictions keep what they need (and the rows past the cutoff, below)
       }
+      // Construct kinds (author, 2026-10-04): phosphosite windows, mutants, tag/linker variants and engineered constructs count
+      // nowhere gene-level (partners, tiles, binding sites, networks); they stay for the phosphosite and constructs views.
+      const dropped = []; if (cons.size) { let w = 0; for (const p of preds) { if (dropKind(cons, p.qc) || dropKind(cons, p.pc)) dropped.push(p); else preds[w++] = p; } preds.length = w; }
       // A sequence pair counts once in a view (the atlas rule, 2026-09-27): the same two sequences folded in several runs
       // (two screens or sets, both chain orders, a re-run) keep the run with the highest iLIS for every residue view and
       // count; the other runs stay listed as repeats (the pair page shows their models) but add no contacts or models.
@@ -876,8 +919,10 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         });
       };
       const partners = aggregate(preds);
+      for (const p of dropped) p.rep = false;   // constructs: listed as they are, no repeat folding
+      const droppedPartners = dropped.length ? aggregate(dropped) : [];
       for (const pt of partners) for (const rid of pt.runs) { const ru = runs.get(rid); ru.twin = pt.runs.some((o) => o !== rid && runs.get(o).di === ru.di); }
-      if (cons.size) for (const pt of partners) {   // a run of a gene-keyed screen: its category, and the constructs when they are not the genes themselves
+      if (cons.size) for (const pt of [...partners, ...droppedPartners]) {   // a run of a gene-keyed screen: its category, and the constructs when they are not the genes themselves
         const og = (sp.byKey.get(pt.id) || {}).gene || pt.id, seen = new Map(), k = new Map();
         for (const rid of pt.runs) { const ru = runs.get(rid), qc = cons.get(ru.qc), pc = cons.get(ru.pc), ql = qc ? qc.label : P.gene, pl = pc ? pc.label : og;
           ru.base = (ru.set || sp.dsShort[ru.di]) + (ql !== P.gene || pl !== og ? ` · ${ql} – ${pl}` : ''); seen.set(ru.base, (seen.get(ru.base) || 0) + 1); }
@@ -938,7 +983,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         return { choice, rows, qLen, qName, aside, bg, bgN };
       };
       const C0 = clipFor(choices.length ? choices[0].id : '');
-      const all = { parts, preds, counted: preds.filter((p) => !p.rep), partners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside, iso: null };
+      const all = { parts, preds, counted: preds.filter((p) => !p.rep), partners, dropped, droppedPartners, runs, seqs, cons, sets, TS, setId: scope, choices, clipFor, C0, clipRows: C0.rows, qLabel: P.key, labels, qLen: C0.qLen, qName: C0.qName, aside: C0.aside, iso: null };
       // One choice's predictions only (the reference with everything placed on it, or one other construct): a gene whose
       // isoforms were folded separately is read one isoform at a time, every card on the same predictions.
       const views = new Map(), others = new Set(choices.filter((c) => c.id).map((c) => c.id));
@@ -2259,7 +2304,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs'], ['c-homo', 'Homodimer']];   // answers first (who, where, which share), then evidence, then tools
+  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs'], ['c-homo', 'Homodimer'], ['c-phos', 'Phosphosites']];   // answers first (who, where, which share), then evidence, then tools
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -2278,7 +2323,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
-    <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
+    <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' || t === 'c-phos' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
     <div class="card" id="c-partners"><div class="card-head"><div><h2>Overview</h2><div class="muted">each partner by its best model</div></div>
         <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
@@ -2355,7 +2400,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="controls" style="margin:0"><label class="ctl" title="also list the paralogs that few prediction methods call (the Alliance's low confidence)"><input type="checkbox" id="para-low"> low-confidence paralogs too</label><span class="ctl orth-show" title="what the plot draws besides the bars">Show <label><input type="checkbox" data-o="dom"> domains</label><label><input type="checkbox" data-o="id"> identity</label><label><input type="checkbox" data-o="pl"> pLDDT</label></span></div></div>
       <div id="para-body"></div></div>
     <div class="card" id="c-homo" hidden><div class="card-head"><div><h2>Homodimer <span class="tag-alpha">alpha</span></h2><div class="muted" id="homo-sub"></div></div><div class="controls" style="margin:0" id="homo-ctl"></div></div>
-      <div id="homo-body"></div></div>`;
+      <div id="homo-body"></div></div>
+    <div class="card" id="c-phos" hidden><div class="card-head"><div><h2>Phosphosite windows</h2><div class="muted" id="phos-sub"></div></div></div><div id="phos-body"></div></div>`;
   setTimeout(() => homoCard(sp, P, gone), 1200);   /* the species' homodimer table, after the page's own reads have started */
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
@@ -3507,7 +3553,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
       if (VX) { const x = p.vx, href = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`, kb = kbOf(p.id);
         const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))} (UniProt holds this sequence under several accessions): counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
-        return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${p.id}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ` title="${esc(p.name)}"`}>${esc(p.gene)}</a>${same}</td>
+        return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${p.id}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ` title="${esc(p.name)}"`}>${esc(p.gene)}</a>${(() => { const c1 = B.cons && p.bm ? [B.cons.get(p.bm.qc), B.cons.get(p.bm.pc)].filter((c) => c && c.kind === 'isoform') : []; return c1.length ? ` <span class="muted iso-via" title="the best model came from this isoform">via ${esc(c1.map((c) => isoLab(c.label, c.len)).join(' × '))}</span>` : ''; })()}${(() => { const d = isoSplit(B.cons, p.preds); return d ? ` <span class="flag iso-diff" title="isoforms differ at the 10% FPR cutoff: ${esc(d.map((x) => `${isoLab(x.q, x.ql)} × ${isoLab(x.o, x.pl)} ${x.best.toFixed(3)}`).join('; '))}">isoforms differ</span>` : ''; })()}${same}</td>
           <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
           <td><a href="${href}" title="interaction residues">residues</a></td>
           <td>${x && x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>`
@@ -3518,7 +3564,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <td class="n">${fmtInt(p.contacts)}</td></tr>`; }
       const same = p.rep ? ` <span class="muted" title="The same two sequences as ${esc(gname(p.repOf || ''))}: counted once, under that partner">same as ${esc(gname(p.repOf || ''))}</span>` : '';
       const href = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`, kb = kbOf(p.id), ax = p.ax;
-      return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${p.id}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ` title="${esc(p.name)}"`}>${esc(p.gene)}</a>${tag}${same}</td>
+      return `<tr${p.rep ? ' class="rep"' : ''}><td class="g"><a href="#/${sp.id}/${p.id}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ` title="${esc(p.name)}"`}>${esc(p.gene)}</a>${tag}${(() => { const c1 = B.cons && p.bm ? [B.cons.get(p.bm.qc), B.cons.get(p.bm.pc)].filter((c) => c && c.kind === 'isoform') : []; return c1.length ? ` <span class="muted iso-via" title="the best model came from this isoform">via ${esc(c1.map((c) => isoLab(c.label, c.len)).join(' × '))}</span>` : ''; })()}${(() => { const d = isoSplit(B.cons, p.preds); return d ? ` <span class="flag iso-diff" title="isoforms differ at the 10% FPR cutoff: ${esc(d.map((x) => `${isoLab(x.q, x.ql)} × ${isoLab(x.o, x.pl)} ${x.best.toFixed(3)}`).join('; '))}">isoforms differ</span>` : ''; })()}${same}</td>
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         ${showSrc() ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
         <td><a href="${href}" title="interaction residues">residues</a></td>
@@ -3667,7 +3713,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     svgExport($('#net-x'), `atlas_${P.gene}_network`, () => $('svg', netBox));
   }
 
-  drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
+  drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D(); phosCard(sp, P, B);
   loadStructure();
   cluster();
   wireShow();
@@ -3813,7 +3859,9 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   let B;
   try { B = await merged(sp, P, scope); if (B.split) B = await merged(sp, P, scope, true); } catch (e) { B = { partners: [] }; }   // the protein page's entry serves; a split gene reads every isoform file for every model of the pair
   if (stale(gen)) return;
-  const part = B.partners.find((p) => p.id === O.key);
+  const part0 = B.partners.find((p) => p.id === O.key), dpart = (B.droppedPartners || []).find((p) => p.id === O.key);
+  const consOnly = !part0 && !!dpart, part = part0 || dpart, consPreds = consOnly ? part.preds : dpart ? dpart.preds : [], consSet = new Set(consPreds);   // constructs: phosphosite windows, mutants, tag/linker variants, engineered
+  const rowsP = consOnly ? part.preds : [...part.preds, ...consPreds], kindOf = (nm) => ((B.cons && B.cons.get(nm)) || {}).kind || '';
   if (!part) { app.innerHTML = crumbs + `<div class="empty">${esc(P.gene)} and ${esc(O.gene)} were not predicted together${scope ? ` in ${esc(label)}. <a href="#/${sp.id}/${P.key}/${O.key}">Every screen</a>` : ' in these screens'}.</div>`; return; }
   const best = [...part.preds].sort((a, b) => b.iLIS - a.iLIS)[0], b = bandOf(part.best), oLen = O.clen || part.preds[0].pLen, one = part.counted.length <= 1;   // one model: best = average
   const who = (R, len, col) => `<div class="who"><b style="color:${col}">${esc(R.gene)}</b> <span>${esc(short(R.name) || '')}</span>
@@ -3828,7 +3876,9 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.innerHTML = `${crumbs}
     <div class="phead"><div><h1><span style="color:var(--query-t)">${esc(P.gene)}</span> <span style="color:var(--ink-3);font-weight:600">×</span> <span style="color:var(--partner-t)">${esc(O.gene)}</span></h1>
         <div class="pairwho">${who(P, P.clen, 'var(--query-t)')}${who(O, oLen, 'var(--partner-t)')}</div>
-        <div class="srcs">Predicted in ${srcBadges(sp, part.src)}${part.sets.length ? ` <span class="muted">· sets:</span> ${setBadges(part.sets)}` : ''}${(() => { const t = srcPapers(sp, part.src); return t ? ` <span class="muted">· ${t}</span>` : ''; })()}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${(() => { const t = overlapNote(sp, B, part.preds, P, true); return t ? `<div class="srcs muted ovl">${t}</div>` : ''; })()}
+        <div class="srcs">Predicted in ${srcBadges(sp, part.src)}${part.sets.length ? ` <span class="muted">· sets:</span> ${setBadges(part.sets)}` : ''}${(() => { const t = srcPapers(sp, part.src); return t ? ` <span class="muted">· ${t}</span>` : ''; })()}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${consOnly ? `<div class="note" style="margin:8px 0">${esc(P.gene)} and ${esc(O.gene)} were folded only as constructs (${esc([...new Set(consPreds.flatMap((p) => [kindOf(p.qc), kindOf(p.pc)]).filter((k) => KIND_DROP.has(k)))].join(', '))}), which count nowhere gene-level; the scores below are those constructs'.</div>` : ''}${(() => { const d = consOnly ? null : isoSplit(B.cons, part.preds); return d ? `<div class="note" style="margin:8px 0"><b>Isoforms differ</b> at the 10% FPR cutoff (iLIS ${CUT[10]}): ${d.map((x) => `${esc(isoLab(x.q, x.ql))} × ${esc(isoLab(x.o, x.pl))} <b>${x.best.toFixed(3)}</b>`).join(' · ')}.</div>` : ''; })()}${(() => { const t = consOnly ? '' : overlapNote(sp, B, part.preds, P, true), cr = consPreds.length && !consOnly ? (() => { const by = new Map(); for (const p of consPreds) { const o = by.get(p.run) || { n: 0, best: 0, k: [kindOf(p.qc), kindOf(p.pc)].filter((x) => KIND_DROP.has(x)).join(', ') }; o.n++; o.best = Math.max(o.best, p.iLIS || 0); by.set(p.run, o); }
+          return `<details class="ovl-all"><summary>Constructs: ${fmtInt(by.size)} run${by.size === 1 ? '' : 's'} not counted (phosphosite windows, mutants, tag or linker variants, engineered)</summary><ol>${[...by].sort((a, b) => b[1].best - a[1].best).map(([rid, o]) => `<li>${esc(runLabel(sp, B, rid, P))} <span class="muted">(${esc(o.k)}; ${o.n} model${o.n === 1 ? '' : 's'}; highest iLIS ${o.best.toFixed(3)})</span></li>`).join('')}</ol></details>`; })() : '';
+        return t || cr ? `<div class="srcs muted ovl">${t}${cr}</div>` : ''; })()}
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => part.src & (1 << i)))}<span id="pair-struct"></span></div></div>
       ${(() => { const nAll = part.counted.length, many = new Set(part.counted.map((x) => x.run)).size > 1, bestOf = one ? '' : many ? ` best of ${fmtInt(nAll)} models${part.preds.length > nAll ? ' (repeats not counted)' : ''}` : ' best', ofRun = part.avgOther ? ` of its ${sp.dsShort[part.avgDi]} run (the best model came from a one-model run)` : many ? ' of the run with the highest iLIS' : '';   // folded in several runs: say which models each tile covers
       return `<div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${bestOf} ${bandChip(b)}</span></div>
@@ -3842,26 +3892,30 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
         <tr><th rowspan="2">Source</th><th rowspan="2" title="The model's rank within its prediction: the predictor's own ipTM-based order, not the iLIS order">Rank</th><th rowspan="2" class="n">iLIS</th><th rowspan="2" class="n">iLISA</th><th rowspan="2" class="n">ipTM</th><th rowspan="2" class="n">LIS</th><th rowspan="2" class="n">cLIS</th>
           <th colspan="2" class="grp" title="PAE ≤ 12 Å">Local interaction residues (LIR)</th><th colspan="2" class="grp" title="the interaction residues that also have Cβ ≤ 8 Å">Contact residues (cLIR)</th></tr>
         <tr><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th></tr></thead>
-        <tbody>${part.preds.map((p, i) => `<tr data-i="${i}"${fold && !(p.iLIS >= CUT[CUTP] || p === best) ? ' class="below" hidden' : ''}><td><span class="src" style="--c:${runColor(sp, p)}">${esc(lab(p))}</span></td><td>${p.rank}</td>
+        <tbody>${rowsP.map((p, i) => { const cn = consSet.has(p) && !consOnly, bl = !consSet.has(p) && fold && !(p.iLIS >= CUT[CUTP] || p === best);
+          return `<tr data-i="${i}"${cn ? ' class="cons" hidden' : bl ? ' class="below" hidden' : ''}><td><span class="src" style="--c:${runColor(sp, p)}">${esc(lab(p))}</span>${consSet.has(p) ? ` <span class="flag">${esc([kindOf(p.qc), kindOf(p.pc)].filter((k) => KIND_DROP.has(k)).join(', '))}</span>` : ''}</td><td>${p.rank}</td>
           <td class="n">${fmtNum(p.iLIS, 3)} <span class="band b${bandOf(p.iLIS)}">${bandLabel[bandOf(p.iLIS)]}</span></td>
-          ${band(FPR.iLISA, p.iLISA, 1)}${band(FPR.ipTM, p.ipTM, 2)}${band(FPR.LIS, p.LIS, 3)}${band(FPR.cLIS, p.cLIS, 3)}${num(p.qLIR, 0)}${num(p.pLIR, 0)}${num(p.qcLIR, 0)}${num(p.pcLIR, 0)}</tr>`).join('')}</tbody></table></div>
-      ${fold ? `<div class="pager"><button class="more" type="button" id="models-more" aria-expanded="false">Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})</button></div>` : ''}</div>
-    <div class="card"><div class="card-head"><h2>Interaction Residues</h2><select id="model-pick" aria-label="Model" style="font:13px var(--sans);padding:5px 8px;border:1px solid var(--line);border-radius:7px">${part.preds.map((p, i) =>
-        `<option value="${i}">${esc(lab(p))} · rank ${p.rank} · iLIS ${fmtNum(p.iLIS, 3)}</option>`).join('')}</select></div>
+          ${band(FPR.iLISA, p.iLISA, 1)}${band(FPR.ipTM, p.ipTM, 2)}${band(FPR.LIS, p.LIS, 3)}${band(FPR.cLIS, p.cLIS, 3)}${num(p.qLIR, 0)}${num(p.pLIR, 0)}${num(p.qcLIR, 0)}${num(p.pcLIR, 0)}</tr>`; }).join('')}</tbody></table></div>
+      ${fold || (consPreds.length && !consOnly) ? `<div class="pager">${fold ? `<button class="more" type="button" id="models-more" aria-expanded="false">Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})</button>` : ''}${consPreds.length && !consOnly ? `<button class="more" type="button" id="models-cons" aria-expanded="false">Show the ${fmtInt(consPreds.length)} construct model${consPreds.length === 1 ? '' : 's'} (not counted)</button>` : ''}</div>` : ''}</div>
+    <div class="card"><div class="card-head"><h2>Interaction Residues</h2><select id="model-pick" aria-label="Model" style="font:13px var(--sans);padding:5px 8px;border:1px solid var(--line);border-radius:7px">${rowsP.map((p, i) =>
+        `<option value="${i}">${esc(lab(p))}${consSet.has(p) && !consOnly ? ' (construct)' : ''} · rank ${p.rank} · iLIS ${fmtNum(p.iLIS, 3)}</option>`).join('')}</select></div>
       <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not an interaction residue</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interaction residue (LIR: PAE ≤ 12 Å)</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span><span class="muted">LIR needs only PAE ≤ 12 Å to the partner, not contact, so in a confident complex most of a chain can qualify</span></div>
       <div id="iface"></div></div>`;
   const more = $('#models-more'), setOpen = (on) => { app.querySelectorAll('.models tbody tr.below').forEach((x) => { x.hidden = !on; }); more.setAttribute('aria-expanded', String(on));
     more.textContent = on ? `Hide the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the cutoff` : `Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})`; };
   if (more) more.onclick = () => setOpen(more.getAttribute('aria-expanded') !== 'true');
+  const consB = $('#models-cons'), setCons = (on) => { app.querySelectorAll('.models tbody tr.cons').forEach((x) => { x.hidden = !on; }); consB.setAttribute('aria-expanded', String(on));
+    consB.textContent = on ? `Hide the ${fmtInt(consPreds.length)} construct model${consPreds.length === 1 ? '' : 's'}` : `Show the ${fmtInt(consPreds.length)} construct model${consPreds.length === 1 ? '' : 's'} (not counted)`; };
+  if (consB) consB.onclick = () => setCons(consB.getAttribute('aria-expanded') !== 'true');
   const pick = (i) => {
     $('#model-pick').value = String(i);
-    { const tr = app.querySelector(`.models tbody tr[data-i="${i}"]`); if (tr && tr.hidden && more) setOpen(true); }   // a model below the cutoff chosen from the list: open the rest
+    { const tr = app.querySelector(`.models tbody tr[data-i="${i}"]`); if (tr && tr.hidden) { if (tr.classList.contains('cons') && consB) setCons(true); else if (more) setOpen(true); } }   // a hidden model chosen from the list: open its group
     app.querySelectorAll('.models tbody tr').forEach((x) => x.classList.toggle('on', +x.dataset.i === i));
-    ifaceView($('#iface'), { sp, P, O, pred: part.preds[i], B, canvasId: 'iface-canvas' });
+    ifaceView($('#iface'), { sp, P, O, pred: rowsP[i], B, canvasId: 'iface-canvas' });
   };
   $('#model-pick').onchange = (e) => pick(+e.target.value);
   app.querySelectorAll('.models tbody tr').forEach((tr) => tr.onclick = () => pick(+tr.dataset.i));
-  pick(part.preds.indexOf(best));
+  pick(rowsP.indexOf(best));
   pairRefs(sp, P, O, () => stale(gen));
   if (sp.viruses || (sp.reg && sp.reg.structs)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!stale(gen)) structLink($('#pair-struct'), x, 'btn'); }); }   // a virus pair: its model in LIVIA
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
