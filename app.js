@@ -748,6 +748,7 @@ async function viewHomoDataset() {
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/homodimers">Homodimers</a></div>
     <h1>${esc(H.title)}</h1>
     <p class="muted" style="max-width:900px">Each protein paired with itself, from the AlphaFold Database homodimer release (${src}), one model per protein, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}). The current files hold the entries the release lists (${esc(H.selection)}); the full set is being scored. Models ${esc(H.license || 'CC BY 4.0')}; cite the release (${src}) and LIVIA.</p>
+    ${H.models ? `<p class="pname" style="margin:-4px 0 12px">Run settings: ${runSettings(H)}${H.runNote ? ` <span class="muted">· ${esc(H.runNote)}</span>` : ''}</p>` : ''}
     <div class="kpis"><div class="kpi"><b>${fmtInt(tot)}</b><span>entries</span></div><div class="kpi"><b>${fmtInt(on)}</b><span>on a protein page</span></div><div class="kpi"><b>${fmtInt(sps.length)}</b><span>species</span></div></div>
     <div class="card"><div class="card-head"><h2>Species</h2><span class="muted">each list holds every entry, those without a protein page too</span></div>
       <div class="tbl-wrap"><table class="sets"><thead><tr><th>Species</th><th class="n">Entries</th><th class="n">On a protein page</th><th>List</th></tr></thead><tbody>
