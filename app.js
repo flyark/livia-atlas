@@ -1510,8 +1510,8 @@ async function fillThemes() {   // home: each theme's species and totals, from i
 function dsCard(d) {
   const live = d.status === 'live', spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
   const rec = d.status === 'record' && d.zip && d.zip.record;   // in the data files only: in nearly all of its pairs one protein belongs to another taxon (95% or more in every such set), so no species page; its own short page
-  const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : d.status === 'record' ? 'Data files only' : 'Planned'}</span>
-    <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : rec ? `<a href="#/datasets/${esc(d.id)}" title="in the LIVIA Atlas data files only; in nearly all of its pairs one protein belongs to another taxon, so the Atlas has no species page for it">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
+  const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : d.status === 'record' ? 'No species page' : 'Planned'}</span>
+    <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : rec ? `<a href="#/datasets/${esc(d.id)}" title="no species page: in nearly all of its pairs one protein belongs to another taxon, so the Atlas has no species page for it">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
     <div class="sp">${spName(spx ? spx.name : d.speciesName || d.species || '')}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
   const src = d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source);   // every paper reference links to the paper
   return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
@@ -1637,7 +1637,7 @@ async function viewDatasets() {
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div><h1 class="sr-only">Datasets</h1>
     ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
-    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the LIVIA Atlas data files, under CC BY 4.0. A copy is also archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Data files only are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the data files.</p>
+    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are under CC BY 4.0. A copy is also archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked No species page are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here.</p>
     <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}${homoDsCard(reg)}</div>`;
   fillDsStats(); fillThemes(); setCards(gen, reg);
 }
@@ -1690,7 +1690,7 @@ async function viewAbout() {
   // each live screen's source, screens that share one grouped on one line; a screen not listed here shows its registry source
   const groups = new Map();
   for (const d of (reg.datasets || []).filter((x) => x.status === 'live')) {
-    const sc = screenCite(d), k = sc.k, text = k ? sc.text + (k === 'livia' ? ' The predictions are in the LIVIA Atlas data files, cited above.' : '') : `${sc.text}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`;   // the shared screen reference (screenCite)
+    const sc = screenCite(d), k = sc.k, text = k ? sc.text + '' : `${sc.text}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`;   // the shared screen reference (screenCite)
     const spx = (reg.species || []).find((x) => x.id === d.species), g = groups.get(k || d.id) || { k, text, short: d.short, titles: [], sps: [] };
     g.titles.push(d.title); g.sps.push(spx ? spLow(spx.label) : d.species); groups.set(k || d.id, g); }
   const andJoin = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
@@ -1859,9 +1859,7 @@ async function viewSet(dsId, setId) {
     <div class="card"><h2>Search this set</h2><p class="muted" style="margin:2px 0 10px">Protein pages opened from here show only this set's predictions, with a switch to all of ${esc(ds.reg.short)}.</p><div id="set-search"></div></div>
     <div class="card"><h2>Most connected proteins in this set <span class="muted">partners past the 10% FPR cutoff</span></h2>
       <div class="chips">${hubs.map((r) => { const R = sp.byKey.get(r.key); return `<a class="chip" href="#/${sp.id}/${r.key}?set=${S.id}">${esc(R ? R.gene : r.key)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
-    <div class="card"><h2>Data</h2><p class="muted" style="font-size:14px;margin:4px 0 0">This set is part of the ${esc(ds.reg.title)} download in the
-      ${recLink(ds.reg)};
-      <a href="https://github.com/flyark/livia-atlas/blob/main/tools/extract_set.py" target="_blank" rel="noopener">extract_set.py ↗</a> pulls out just this set as a table.</p></div>`;
+    `;   // the set's Data card is hidden while the data site is not public
   mountSearch($('#set-search'), { spId: sp.id, only: keys, set: S.id });
 }
 const spName = (nm) => { const m = /^(.*?)( \((?:taxon|strain) [^)]*\))?$/.exec(nm || ''), b = /^(?!Viruses )((?:[A-Z][a-z]+|[A-Z]\.) [a-z]{3,}(?: subsp\. [a-z]{3,}| [a-z]{3,})?)(.*)$/.exec(m[1]);   // genus and species in italics; a strain, serotype or
@@ -1877,7 +1875,7 @@ async function viewDatasetOff(d, gen = ROUTE) {   // a set the Atlas does not se
       <div class="cite">${src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(src.citation)} ↗</a>` : d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source || '')}</div>${dataLine(d)}</div>
     ${k ? kpiRow(k) : ''}
     <div class="card"><h2>${rec ? 'In the data record, not searchable here' : d.status === 'external' ? 'On its own site' : 'Planned'}</h2><p class="muted" style="font-size:14px;margin:4px 0 0">${rec
-      ? `${why}, so this set has no species page of its own. Its scores and interaction residues are in the ${recLink(d)}.`
+      ? `${why}, so this set has no species page of its own.`
       : d.status === 'external' && d.url ? `This set is searchable on its own site: <a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.url)} ↗</a>.` : 'This set is not in the Atlas yet.'} <a href="#/datasets">All datasets</a></p></div>`;
 }
 async function viewDataset(dsId) {   // one screen: what it is, its counts and files; proteins link to their species pages
@@ -1896,9 +1894,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
     <div class="card"><h2>Most connected proteins in this screen <span class="muted">partners past the 10% FPR cutoff</span></h2>
       <div class="chips">${hubs.map((r) => { const R = sp.byName.get(r.id); return `<a class="chip" href="#/${sp.id}/${R ? R.key : r.id}${scopeQ}">${esc((R && R.gene) || r.gene || r.id)} <span class="num" style="color:var(--ink-3)">${fmtInt(r.pos10)}</span></a>`; }).join('')}</div></div>
     ${setsCard(TS)}
-    <div class="card"><h2>Data</h2><p class="muted" style="font-size:14px;margin:4px 0 0">Every file of this screen is in the
-      ${recLink(ds.reg)}. A protein page's
-      <b>Data</b> menu downloads that protein's predictions.${m.files.identity ? ` <a href="${ds.base}${m.files.identity}" download>Construct names and their FlyBase genes</a> (table).` : ''}</p></div>`;
+    `;   // the Data card (data files, downloads) is hidden while the data site is not public (the author, 2026-10-05)
   mountSearch($('#ds-search'), sp.dsIds.length > 1 ? { spId: sp.id, set: ds.id, only: new Set(rows.map((r) => { const R = sp.byName.get(r.id); return R ? R.key : r.id; })) } : { spId: sp.id });
 }
 
@@ -2346,15 +2342,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
   if (gone()) return;
   const dataMenu = occ.map((o, i) => { const u = bundleUrl(o.ds, o.name), label = `${sp.dsShort[o.di]}${occ.filter((x) => x.di === o.di).length > 1 ? ' · ' + o.name : ''}`;
-    if (o.ds.reg.zip) return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="#" data-clip="${i}">Open in LIVIA cLIP ↗</a><a href="#" data-dl="${i}">Download .zip</a></div>`;   // inside the archive: read here, then handed to cLIP or saved
-    return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="${LIVIA}clip.html?data=${encodeURIComponent(u)}&gene=${encodeURIComponent(P.gene)}" target="_blank" rel="noopener">Open in LIVIA cLIP ↗</a><a href="${u}" download>Download .zip</a></div>`; }).join('');
+    if (o.ds.reg.zip) return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="#" data-clip="${i}">Open in LIVIA cLIP ↗</a></div>`;   // inside the archive: read here, then handed to cLIP or saved
+    return `<div class="dm-row"><span class="src" style="--c:${sp.dsColor[o.di]}">${esc(label)}</span><a href="${LIVIA}clip.html?data=${encodeURIComponent(u)}&gene=${encodeURIComponent(P.gene)}" target="_blank" rel="noopener">Open in LIVIA cLIP ↗</a></div>`; }).join('');
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/${P.key}">${esc(P.gene)}</a></div>
     <div class="phead"><div><h1>${esc(P.gene)}</h1><div class="pname" title="${esc(P.name)}">${esc(short(P.name) || P.id)}</div>
       <div class="ids">${fbLink}${uniprotLink(P.acc)}${fbLink || P.id === P.acc ? '' : `<span>${esc(P.id)}</span>`}${P.clen ? `<span>${fmtInt(P.clen)} aa</span>` : ''}</div>
       ${P.virus ? `<div class="srcs">Virus <a href="#/${sp.id}/taxon/${P.virus.taxid}">${esc(P.virus.name)}</a> <span class="muted">· ${P.virus.het != null ? virFolded(P.virus) : `${fmtInt(P.virus.n)} proteins`}${P.key.includes('_p') ? ' · a mature peptide of a polyprotein, numbered from its own first residue' : ''}</span></div>` : ''}
       <div class="srcs scope" id="scope">In ${srcBadges(sp, P.src)}</div>
       <div class="flags" id="flags">${flags.join('')}</div>
-      <div class="actions"><details class="dmenu"><summary class="btn">Data &amp; LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`, setId && sp.dsIds.includes(setId) ? [setId] : sp.dsIds.filter((_, i) => P.src & (1 << i)))}</div></div>
+      <div class="actions"><details class="dmenu"><summary class="btn">LIVIA cLIP ▾</summary><div class="dm-pop">${dataMenu}</div></details>${citeBtn(`${P.gene} (${sp.reg.label})`, setId && sp.dsIds.includes(setId) ? [setId] : sp.dsIds.filter((_, i) => P.src & (1 << i)))}</div></div>
       <div class="kpis"><div class="kpi"><b id="kp-all">${fmtInt(P.partners)}</b><span>partners predicted</span></div><div class="kpi f10"><b id="kp-10">${fmtInt(P.pos10)}</b><span>past 10% FPR${cutNote(10)}</span></div>
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
@@ -4070,7 +4066,7 @@ async function viewVirus(spId, taxid) {
     <div class="phead vh"><div><h1>${esc(v.name)}</h1>
       <div class="pname">${virFolded(v)} with AlphaFold-Multimer (one model each) and scored with lis.py</div>
       ${v.family ? `<div class="pname">${esc(v.family)}${v.genus ? ` · <i>${esc(v.genus)}</i>` : ''}${v.species ? ` · species <i>${esc(v.species)}</i>` : ''}${v.host ? ` · host: ${esc(v.host)}` : ''} <span class="muted">(ICTV VMR MSL40)</span></div>` : ''}
-      ${(() => { const d = ((REG && REG.datasets) || []).find((x) => x.id === 'viral-dimers-afdb'); return d ? `<div class="pname vsrc inl">Predictions from the AlphaFold Database release of viral protein complexes (EMBL-EBI, Google DeepMind, NVIDIA and collaborators; models CC BY 4.0): <a href="${esc(d.paper)}" target="_blank" rel="noopener">Han, Narain et al. 2026 ↗</a> · data: ${recLink(d)}</div>` : ''; })()}
+      ${(() => { const d = ((REG && REG.datasets) || []).find((x) => x.id === 'viral-dimers-afdb'); return d ? `<div class="pname vsrc inl">Predictions from the AlphaFold Database release of viral protein complexes (EMBL-EBI, Google DeepMind, NVIDIA and collaborators; models CC BY 4.0): <a href="${esc(d.paper)}" target="_blank" rel="noopener">Han, Narain et al. 2026 ↗</a></div>` : ''; })()}
       <div class="ids"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=${v.taxid}" target="_blank" rel="noopener">NCBI taxon ${v.taxid}</a><span>${fmtInt(v.het)} heterodimers · ${fmtInt(v.hom)} homodimers folded</span></div>
       <div class="actions">${citeBtn(`${v.name} (virus)`, sp.dsIds)}</div></div>
       <div class="kpis"><div class="kpi"><b>${fmtInt(v.n)}</b><span>proteins</span></div><div class="kpi f10"><b>${fmtInt(v.hpos)}</b><span>heterodimers past 10% FPR${cutNote(10)}</span></div>
