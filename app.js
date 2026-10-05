@@ -99,11 +99,11 @@ const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" dat
 const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3', 23063255: '0.1.4', 23104149: '0.1.5' };   // the Atlas record's versions on Zenodo
 const verOf = (d) => { const u = (d && d.zip && d.zip.url) || '', m = /\/versions\/([^/]+)\//.exec(u); if (m) return m[1]; const r = recOf(d); return r && REC_VERSION[r] ? `v${REC_VERSION[r]}` : ''; };   // the data version a screen is read from
 const DATA_INDEX = `${DATA}index.html`;   // the data files' own page: every version, its files and md5s (the live data keep changing, so citations name no version)
-const archiveOf = () => `LIVIA Atlas data, ${DATA_INDEX}`;
-const archiveLine = () => `<a href="${DATA_INDEX}" target="_blank" rel="noopener">LIVIA Atlas data</a>`;
+const archiveOf = () => 'LIVIA Atlas data';   // no link while the data site is not public
+const archiveLine = () => 'LIVIA Atlas data';
 const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && ((d.zip.fallback || {}).url || d.zip.zenodo || d.zip.url)) || ''); return m ? m[1] : null; };   // a screen served from flyrnai.org keeps its Zenodo record in zip.zenodo
 const recLink = (d) => { const v = verOf(d);   // the frozen data version that holds a screen's files
-  return v ? `<a href="${verUrl(v)}" target="_blank" rel="noopener">LIVIA Atlas data files, ${esc(v)} ↗</a>` : `<a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data files ↗</a>`; };
+  return 'LIVIA Atlas data files'; };   // named, not linked: the data site is not public yet (the author, 2026-10-05)
 const doiUrl = (u) => { const m = /(10\.\d{4,9}\/[^\s?#]+?)(v\d+)?(\.full(\.pdf)?)?$/.exec(u || ''); return m && !/^http.*nvidia/.test(u) ? `https://doi.org/${m[1]}` : u; };   // a preprint cited by its DOI
 const refOf = (id) => { const d = ((REG && REG.datasets) || []).find((x) => x.id === id); return d ? `${d.source.replace(' · ', ', ')}${d.paper ? `, ${doiUrl(d.paper)}` : ''}` : ''; };   // a screen's source, for exported tables
 const BUILD = ((document.querySelector('script[src*="app.js"]') || {}).src || '').replace(/^.*[?&]v=([^&]+).*$/, '$1') || 'unknown';   // the page's build: its app.js version token
@@ -750,10 +750,10 @@ async function viewHomoDataset() {
     <p class="muted" style="max-width:900px">Each protein paired with itself, from the AlphaFold Database homodimer release (${src}), one model per protein, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}). The current files hold the entries the release lists (${esc(H.selection)}); the full set is being scored. Models ${esc(H.license || 'CC BY 4.0')}; cite the release (${src}) and LIVIA.</p>
     <div class="kpis"><div class="kpi"><b>${fmtInt(tot)}</b><span>entries</span></div><div class="kpi"><b>${fmtInt(on)}</b><span>on a protein page</span></div><div class="kpi"><b>${fmtInt(sps.length)}</b><span>species</span></div></div>
     <div class="card"><div class="card-head"><h2>Species</h2><span class="muted">each list holds every entry, those without a protein page too</span></div>
-      <div class="tbl-wrap"><table class="sets"><thead><tr><th>Species</th><th class="n">Entries</th><th class="n">On a protein page</th><th>List</th><th>File (gzip CSV)</th></tr></thead><tbody>
+      <div class="tbl-wrap"><table class="sets"><thead><tr><th>Species</th><th class="n">Entries</th><th class="n">On a protein page</th><th>List</th></tr></thead><tbody>
       ${sps.map((x) => `<tr><td>${x.sp ? `<a href="#/${x.id}">${spName(x.sp.name)}</a>` : esc(x.id)}</td><td class="n">${fmtInt(x.f.entries)}</td><td class="n">${fmtInt(x.f.onPages || 0)}</td>
-        <td><a href="#/${x.id}/homodimers">all ${fmtInt(x.f.entries)} →</a></td><td><a href="${esc(H.base + x.f.file)}" download>${esc(x.f.file)}</a></td></tr>`).join('')}</tbody></table></div>
-      <p class="muted" style="margin:10px 0 0;font-size:13.5px">Files: <a href="${esc(H.base)}md5s_gz.txt" target="_blank" rel="noopener">md5 sums</a> of the live files · per-species counts: <a href="${esc(H.base)}step4_counts.tsv" target="_blank" rel="noopener">step4_counts.tsv</a> · the frozen copy of this build, ${esc(H.frozenName || 'versioned')}: <a href="${esc(H.frozen)}md5s_gz.txt" target="_blank" rel="noopener">its file list with md5 sums</a> (the files under <span class="mono">${esc(H.frozen)}</span>, byte for byte the same).</p></div>
+        <td><a href="#/${x.id}/homodimers">all ${fmtInt(x.f.entries)} →</a></td></tr>`).join('')}</tbody></table></div>
+      </div>
     <div class="card"><div class="card-head"><h2>Columns</h2></div><dl class="hd-cols">${COLS.map(([k, t]) => `<dt>${esc(k)}</dt><dd>${esc(t)}</dd>`).join('')}</dl>
       <p class="muted" style="margin:8px 0 0;font-size:13.5px">Every other column is lis.py's (the same as in the screens' tables) or the release's own (af_*). The release's filter was read as the higher of its two directions (AB, BA) for both ipSAE and pDockQ2.</p></div>`;
 }
@@ -1636,7 +1636,7 @@ async function viewDatasets() {
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div><h1 class="sr-only">Datasets</h1>
     ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
     <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
-    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the <a href="${verUrl()}" target="_blank" rel="noopener">LIVIA Atlas data files ↗</a>, under CC BY 4.0; each dataset page links the version that holds its files. A copy is also archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Data files only are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the data files.</p>
+    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are in the LIVIA Atlas data files, under CC BY 4.0. A copy is also archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked Data files only are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here; their files are in the data files.</p>
     <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}${homoDsCard(reg)}</div>`;
   fillDsStats(); fillThemes(); setCards(gen, reg);
 }
@@ -1782,7 +1782,7 @@ async function viewAbout() {
         <li>Louvain: Blondel, V. D., Guillaume, J.-L., Lambiotte, R. &amp; Lefebvre, E. (2008). Fast unfolding of communities in large networks. <i>J. Stat. Mech.</i> P10008. MCL: van Dongen, S. (2000). Graph clustering by flow simulation (PhD thesis, University of Utrecht); Enright, A. J., Van Dongen, S. &amp; Ouzounis, C. A. (2002). An efficient algorithm for large-scale detection of protein families. <i>Nucleic Acids Res.</i> 30, 1575–1584.</li>
         <li>Matrices: Plotly.js. Excel and CSV tables: SheetJS. Compressed release files: fzstd and fflate.</li>
         <li>Reading prediction bundles in the browser: JSZip 3.10. <a href="https://stuk.github.io/jszip/" target="_blank" rel="noopener">stuk.github.io/jszip</a></li>
-        <li>Hosting: the site on GitHub Pages; the screens' data files on the Perrimon lab's web server (<a href="${verUrl()}" target="_blank" rel="noopener">flyrnai.org/livia-atlas</a>), read by byte range, so a page loads only its own bundles. A copy is archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo</a>; when the lab's server does not answer, the pages read that copy instead (for the fly screen, its previous version).</li>
+        <li>Hosting: the site on GitHub Pages; the screens' data files on the Perrimon lab's web server, read by byte range, so a page loads only its own bundles. A copy is archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo</a>; when the lab's server does not answer, the pages read that copy instead (for the fly screen, its previous version).</li>
         <li>Visits are counted with GoatCounter, without cookies.</li>
       </ul></div></div>`;
 }
@@ -5294,7 +5294,7 @@ async function viewNetwork(spId, q) {
   // loaded file redraws the same network and can say whether the new drawing matches the saved one.
   const appVer = () => { const s = document.querySelector('script[src*="app.js"]'); return (s && (/[?&]v=([^&]+)/.exec(s.src) || [])[1]) || ''; };
   const dataOf = () => { const used = !S.set ? sp.dsIds : sp.dsIds.includes(S.set) ? [S.set] : sp.dsIds.filter((id, i) => TSs[i] && TSs[i].list.some((x) => x.id === S.set));
-    return used.map((id) => { const d = REG.datasets.find((x) => x.id === id) || { id }, v = verOf(d); return { screen: id, name: d.short || id, data: verUrl(v), version: v }; }); };
+    return used.map((id) => { const d = REG.datasets.find((x) => x.id === id) || { id }, v = verOf(d); return { screen: id, name: d.short || id, data: 'LIVIA Atlas data', version: v }; }); };
   const DISP = ['shade', 'kb', 'ev', 'unpred', 'heat-show', 'heat-cs'];
   const MEANING = { ids: 'proteins-of-interest, as the Atlas resolved them', add: "none: only these proteins; link: + partners linking them; top: + each one's top partners; tree: + the fewest partners connecting them (a Steiner tree, each pair costing 1.05 − best iLIS)", prize: 'tree: the table column whose numbers score each protein-of-interest (blank: none, every reachable one joins)', sig: '1: only added partners linking more proteins-of-interest than chance (BH q ≤ 0.05)', hops: 'partners a linking path may pass through (add = link)',
     k: 'partners per protein (add = top, and per click); absent: picked for you', cut: 'cutoff: 10, 5 or 1 (% FPR), or c for the custom iLIS in cutv', cutv: 'custom iLIS cutoff (cut = c)', iptm: 'also require a best ipTM of at least this (0: none)',
@@ -5433,7 +5433,7 @@ async function route() {
   try {
     await registry();
     if (stale(gen)) return;
-    { const f = document.getElementById('build'); if (f && !f.textContent) { f.innerHTML = `<a href="${DATA_INDEX}" target="_blank" rel="noopener">LIVIA Atlas data</a> · <a href="https://github.com/flyark/LIVIA" target="_blank" rel="noopener">LIVIA GitHub ↗</a>`; } }   // the footer: the data files and LIVIA's code (the author: no build, no changes link)
+    { const f = document.getElementById('build'); if (f && !f.textContent) { f.innerHTML = `<a href="https://github.com/flyark/LIVIA" target="_blank" rel="noopener">LIVIA GitHub ↗</a>`; } }   // the footer: LIVIA's code (the author: no build, no changes link; the data site not public yet)
     if (!parts.length) await viewHome();
     else if (parts[0] === 'datasets') await (parts[1] === 'homodimers' && !parts[2] ? viewHomoDataset() : parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
