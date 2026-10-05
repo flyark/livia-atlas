@@ -5409,7 +5409,7 @@ async function route() {
   try {
     await registry();
     if (stale(gen)) return;
-    { const f = document.getElementById('build'); if (f && !f.textContent) { f.innerHTML = `Build ${esc(BUILD)} · data: <a href="${DATA_INDEX}" target="_blank" rel="noopener">LIVIA Atlas data</a> · <a href="https://github.com/flyark/livia-atlas/commits/main" target="_blank" rel="noopener">changes ↗</a>`; } }   // the footer says which build and which data a reader sees
+    { const f = document.getElementById('build'); if (f && !f.textContent) { f.innerHTML = `<a href="${DATA_INDEX}" target="_blank" rel="noopener">LIVIA Atlas data</a> · <a href="https://github.com/flyark/LIVIA" target="_blank" rel="noopener">LIVIA GitHub ↗</a>`; } }   // the footer: the data files and LIVIA's code (the author: no build, no changes link)
     if (!parts.length) await viewHome();
     else if (parts[0] === 'datasets') await (parts[1] === 'homodimers' && !parts[2] ? viewHomoDataset() : parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
