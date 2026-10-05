@@ -2792,14 +2792,18 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const partners = new Set(m2.preds.map((p) => p.partner)).size;
       const hit = new Set(pSite.filter(Boolean)), inter = C.inter(st, keyS);
       const doms = al && st.doms ? st.doms.map((d) => { let s = 0, e = 0; for (let u = d.start; u <= d.end; u++) { const r2 = st.fromRef ? st.fromRef[u - 1] : u, q = r2 && inv.get(r2); if (q) { if (!s || q < s) s = q; if (q > e) e = q; } } return s ? { name: d.name, start: d.start, end: d.end, s, e, src: d.src } : null; }).filter(Boolean) : [];
-      return { st, m2, F2, al, inv, ins, pSite, byS, siteAt, keyS, partners, call: partners >= 5, hit, inter, doms };   // call: with fewer than 5 partners past the cutoff an empty site says nothing
+      let peak = 0; for (let r2 = 1; r2 <= F2.L; r2++) if (F2.tot[r2] > peak) peak = F2.tot[r2];   // the plot's y maximum
+      return { st, m2, F2, al, inv, ins, pSite, byS, siteAt, keyS, partners, call: partners >= 5, hit, inter, doms, peak };   // call: with fewer than 5 partners past the cutoff an empty site says nothing
     });
+    // A plot with little data (its peak under 10 models at any residue) opens folded to its header line; a click on it, or show all, opens it.
+    // The query's own plot is never folded. The site marks above are computed from each ortholog's predictions, not from what is drawn, so they keep every ortholog.
+    C.shown = C.shown || new Set(); const thin = (t) => !t.st.seqOnly && t.peak < 10, folded = (t) => thin(t) && !C.showAll && !C.shown.has(t.st);
     const DRH = 13, IH = 8, TH = 58, PLH = 22, MR = 13, LBL = 17;   // domain lane, identity strip, bars, pLDDT strip, mark row, label row
     const laneN = (ds) => (ds.length ? lanes(ds, (d) => xOf(Math.max(1, d.s)), (d) => Math.max(xOf(Math.max(1, d.s)) + 2, xOf(Math.min(L, d.e) + 1))) : 0);
     const qd = PLOTSHOW.dom ? qDomains(L) : [], qdL = laneN(qd), qpl = !!(PLOTSHOW.pl && S.plddt && S.mapOK);   // the Show switches: domains, identity strip, pLDDT
     T.forEach((t) => { t.dL = PLOTSHOW.dom ? laneN(t.doms) : 0; t.pl = !!(PLOTSHOW.pl && t.al && t.st.pl); });
     const blockS = sites.length ? LBL + 12 + T.length * MR + 14 : 0, blockQ = LBL + (qdL ? qdL * DRH + 4 : 0) + TH + 4 + (qpl ? PLH + 6 : 0) + 22;
-    const blockO = (t) => LBL + (t.al && PLOTSHOW.id ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + (t.st.seqOnly ? 0 : TH + 4) + (t.pl ? PLH + 6 : 0) + 20 + 8;
+    const blockO = (t) => (folded(t) ? LBL + 8 : LBL + (t.al && PLOTSHOW.id ? IH + 3 : 0) + (t.dL ? t.dL * DRH + 4 : 0) + (t.st.seqOnly ? 0 : TH + 4) + (t.pl ? PLH + 6 : 0) + 20 + 8);
     const H = 6 + blockS + blockQ + T.reduce((a, t) => a + blockO(t), 0) + 4;
     const g = canvasCtx(cv, W, H), rows = [], hits = [];   // rows: hover areas of the tracks; hits: the sites and marks, hover and click
     const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AX, y0, W - AX - AXR, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AX + 0.5, y0); g.lineTo(AX + 0.5, y1 + 0.5); g.lineTo(W - AXR, y1 + 0.5); g.stroke(); };
@@ -2843,6 +2847,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     drawTicks(g, resTicks(L, W - AX - AXR, xtWant()), y, xc, W); y += 22;
     for (const t of T) {
       const { st, m2, F2, al, inv, ins, siteAt } = t;
+      if (folded(t)) { label(`▸ ${C.name(st)} (${fmtInt(F2.L)} aa) · little data (peak ${t.peak} at any residue) · show`, y + 12, '#5A697C'); rows.push({ kind: 'tog', t, y0: y, y1: y + LBL }); y += LBL + 8; continue; }
       const xAt = al ? ((r2) => (inv.has(r2) ? xOf(inv.get(r2)) : null)) : ((r2) => (r2 <= L ? xOf(r2) : null));
       label(`${C.name(st)} (${fmtInt(F2.L)} aa)${narrow ? (al ? ` · ${Math.round(100 * al.identity)}% identical` : '') : `${st.seqOnly ? ' · sequence only, no predictions on this site' : ` · ${fmtInt(m2.fingerprints.length)} predictions, ${m2.k} clusters`}${al ? ` · aligned to ${P.gene}, ${Math.round(100 * al.identity)}% identical over ${fmtInt(al.aligned)} residues` : st.seq2 ? '' : ' · its own numbering (no sequence to align)'}`}`, y + 12); y += LBL;
       const yTop = y;
@@ -2868,7 +2873,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     cv.onmousemove = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); cv.style.cursor = h ? 'pointer' : '';
       if (h) return showTip(siteTip(h.c), e.clientX, e.clientY);
       const r = Math.floor((mx - AX) / bw) + 1; if (r < 1 || r > L) return hideTip();
-      const row = rows.find((x) => my >= x.y0 && my <= x.y1 && (x.kind !== 'dom' || (r >= x.d.s && r <= x.d.e))); if (!row) return hideTip();
+      const tog = rows.find((x) => x.kind === 'tog' && my >= x.y0 && my <= x.y1); if (tog) { cv.style.cursor = 'pointer'; return showTip(`click to show ${esc(C.lab(tog.t.st))}'s plot`, e.clientX, e.clientY); }
+      const row = rows.find((x) => my >= x.y0 && my <= x.y1 && x.kind !== 'tog' && (x.kind !== 'dom' || (r >= x.d.s && r <= x.d.e))); if (!row) return hideTip();
       if (row.kind === 'dom') return showTip(`<b>${esc(row.d.name)}</b> · ${row.st ? `${C.lab(row.st)} ${row.d.start}–${row.d.end}, on ${esc(P.gene)} ${row.d.s}–${row.d.e}` : `residues ${row.d.s}–${row.d.e}${domUni(row.d) ? ` (${domUni(row.d)})` : ''}`} · ${row.d.src === 'Pfam' ? 'Pfam domain' : 'UniProt domain'}`, e.clientX, e.clientY);
       if (row.kind === 'q') { const cc = row.F.byC[r] || {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => `<span style="color:${clusterColor(c, M.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`).join(' · ');
         return showTip(`<b>${esc(P.gene)} ${qSeq[r - 1] || ''}${r}</b> · ${row.F.tot[r]} prediction${row.F.tot[r] === 1 ? '' : 's'}${parts ? '<br>' + parts : ''}`, e.clientX, e.clientY); }
@@ -2879,10 +2885,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', insN = t.al ? t.ins.get(r) : 0, ur = r2 && (st.toRef ? st.toRef[r2 - 1] : r2), plv = t.pl && ur ? st.pl[ur - 1] : null;
       showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${C.lab(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : `no residue of the ${C.word} aligns here`}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`.replace(/<br>0 predictions(?= ·|<br>|$)/, st.seqOnly ? '<br>no predictions (sequence only)' : '<br>0 predictions'), e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
-    cv.onclick = (e) => { const { mx, my } = at(e), h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; C.setSite(C.site() === h.c ? 0 : h.c); C.renderSite(T); };
+    cv.onclick = (e) => { const { mx, my } = at(e), tog = rows.find((x) => x.kind === 'tog' && my >= x.y0 && my <= x.y1); if (tog) { C.shown.add(tog.t.st); hideTip(); drawOrth(cfg); return; }
+      const h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; C.setSite(C.site() === h.c ? 0 : h.c); C.renderSite(T); };
     if (C.site() && !sites.some((s) => s.c === C.site())) C.setSite(0);
     C.renderSite(T);
     $(C.key).innerHTML = `<span>bars: models contacting each residue (y axis); ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s bars take the color of the ${esc(P.gene)} site its predictions fall on (half or more of a prediction's aligned contact residues inside the site), gray where none match</span><span>marks: <b>●</b> contacted · <b>◆</b> ${C.diamond} · <b>○</b> not contacted · <b>·</b> no call: fewer than 5 partners past the cutoff, or no predictions (sequence only)</span><span><i style="background:linear-gradient(90deg,rgba(74,83,97,.15),rgba(74,83,97,.92))"></i>identity strip, in grays (the site colors stay apart from it): dark = conserved around the residue</span><span><i style="background:#F3F5F8;border:1px solid #CBD3DC"></i>no residue of the ${C.word} aligned</span><span><b>▲</b> contacts on the ${C.word}'s inserted residues</span><span><i style="background:#E3E9F1;border:1px solid #9FB0C4"></i>domains: Pfam, UniProt's where Pfam has none; ${C.word === 'ortholog' ? 'an ortholog' : 'a paralog'}'s drawn where its residues align</span><span><i style="background:linear-gradient(90deg,#FF7D45,#FFDB13,#65CBF3,#0053D6)"></i>pLDDT (AlphaFold DB), where the model is of the aligned sequence</span>`;
+    { const nf = T.filter(folded).length, thinN = T.filter(thin).length; let el = $(`#${C.cvId}-thin`, host);   // the line under the plots: how many are folded, and show all
+      if (!el) { el = document.createElement('p'); el.id = `${C.cvId}-thin`; el.className = 'muted orth-thin'; host.appendChild(el); }
+      el.hidden = !thinN; el.innerHTML = nf ? `${fmtInt(nf)} ${C.word}${nf === 1 ? '' : 's'} with little data (peak &lt; 10) hidden · <button class="linkish" type="button" data-a="all">show all</button>` : thinN ? `${fmtInt(thinN)} ${C.word}${thinN === 1 ? '' : 's'} with little data (peak &lt; 10) shown · <button class="linkish" type="button" data-a="fold">hide them</button>` : '';
+      const bt = el.querySelector('button'); if (bt) bt.onclick = () => { C.showAll = bt.dataset.a === 'all'; if (!C.showAll) C.shown.clear(); drawOrth(cfg); }; }
     attachExport(C.cvId, C.exportName, () => drawOrth(cfg)); C.after();   // the list carries each alignment's numbers once it exists
   }
   async function orthShared(sp2) {   // which of the ortholog's partners have an ortholog among this protein's partners, and the sites both contact
