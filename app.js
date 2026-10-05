@@ -2777,10 +2777,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       return { c, runs, mid: runs.length ? Math.round((main[0] + main[1]) / 2) : 0 }; }).filter((s) => s.runs.length);
     C.onSites(sites);   // the site panel's alignment reads the runs
     const T = open.map((st) => {   // each ortholog on this protein's axis; each of its predictions matched to the site holding half or more of its aligned contact residues
-      const m2 = st.m[cut], F2 = orthFreq(m2, null), al = st.al, inv = new Map(), ins = new Map(), pSite = [], byS = new Array(F2.L + 2), keyS = new Map();
+      const m2 = st.m[cut], F2 = orthFreq(m2, null), al = st.al, inv = new Map(), ins = new Map(), insK = new Map(), pSite = [], byS = new Array(F2.L + 2), keyS = new Map();
       if (al) {   // per prediction, not per cluster: a data-rich ortholog can fold many sites into one broad cluster (human CDK3: 307 predictions in 2 clusters)
         let last = 0; for (let i = 0; i < al.map.length; i++) if (al.map[i] != null) inv.set(al.map[i], i + 1);
-        for (let r2 = 1; r2 <= F2.L; r2++) { if (inv.has(r2)) last = inv.get(r2); else if (F2.tot[r2]) ins.set(last, (ins.get(last) || 0) + F2.tot[r2]); }
+        for (let r2 = 1; r2 <= F2.L; r2++) { if (inv.has(r2)) { last = inv.get(r2); continue; }
+          const g = insK.get(last) || { k: 0, a: r2, b: r2 }; g.k++; g.b = r2; insK.set(last, g); if (F2.tot[r2]) ins.set(last, (ins.get(last) || 0) + F2.tot[r2]); }   // each gap: its inserted residues (count, range on the ortholog) and the contacts on them
         m2.fingerprints.forEach((f, i) => { const cnt = new Map(); let n = 0;
           for (const r2 of f) { const q = inv.get(r2); if (!q) continue; n++; const s = siteOf(q); if (s) cnt.set(s, (cnt.get(s) || 0) + 1); }
           let bs = 0, bn = 0; for (const [s, k] of cnt) if (k > bn) { bn = k; bs = s; }
@@ -2793,7 +2794,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const hit = new Set(pSite.filter(Boolean)), inter = C.inter(st, keyS);
       const doms = al && st.doms ? st.doms.map((d) => { let s = 0, e = 0; for (let u = d.start; u <= d.end; u++) { const r2 = st.fromRef ? st.fromRef[u - 1] : u, q = r2 && inv.get(r2); if (q) { if (!s || q < s) s = q; if (q > e) e = q; } } return s ? { name: d.name, start: d.start, end: d.end, s, e, src: d.src } : null; }).filter(Boolean) : [];
       let peak = 0; for (let r2 = 1; r2 <= F2.L; r2++) if (F2.tot[r2] > peak) peak = F2.tot[r2];   // the plot's y maximum
-      return { st, m2, F2, al, inv, ins, pSite, byS, siteAt, keyS, partners, call: partners >= 5, hit, inter, doms, peak };   // call: with fewer than 5 partners past the cutoff an empty site says nothing
+      return { st, m2, F2, al, inv, ins, insK, pSite, byS, siteAt, keyS, partners, call: partners >= 5, hit, inter, doms, peak };   // call: with fewer than 5 partners past the cutoff an empty site says nothing
     });
     // A plot with little data (its peak under 10 models at any residue) opens folded to its header line; a click on it, or show all, opens it.
     // The query's own plot is never folded. The site marks above are computed from each ortholog's predictions, not from what is drawn, so they keep every ortholog.
@@ -2882,8 +2883,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const cc = r2 ? (t.al ? t.byS[r2] : row.F.byC[r2]) || {} : {}, parts = Object.keys(cc).map(Number).sort((a, z) => cc[z] - cc[a]).map((c) => (t.al
         ? `<span style="color:${c ? clusterColor(c, M.k) : '#9AA7B5'}">●</span> ${c ? `${esc(P.gene)} ${clusterLabel(c, true)}` : 'no site'} ${cc[c]}`
         : `<span style="color:${clusterColor(c, m2.k)}">●</span> ${clusterLabel(c, true)} ${cc[c]}`)).join(' · ');
-      const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', insN = t.al ? t.ins.get(r) : 0, ur = r2 && (st.toRef ? st.toRef[r2 - 1] : r2), plv = t.pl && ur ? st.pl[ur - 1] : null;
-      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${C.lab(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : `no residue of the ${C.word} aligns here`}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN ? `<br>${insN} contact${insN === 1 ? '' : 's'} on inserted residues after this position` : ''}`.replace(/<br>0 predictions(?= ·|<br>|$)/, st.seqOnly ? '<br>no predictions (sequence only)' : '<br>0 predictions'), e.clientX, e.clientY); };
+      const idn = t.al ? ` · identity ±10: ${Math.round(100 * t.al.ident(r - 1, 10))}%` : '', gapAt = t.al ? (t.ins.get(r) ? r : t.ins.get(r - 1) ? r - 1 : null) : null, insN = gapAt != null ? t.ins.get(gapAt) : 0, insG = gapAt != null ? t.insK.get(gapAt) : null, ur = r2 && (st.toRef ? st.toRef[r2 - 1] : r2), plv = t.pl && ur ? st.pl[ur - 1] : null;
+      showTip(`<b>${esc(P.gene)} ${r}</b> ↔ <b>${C.lab(st)} ${r2 ? `${st.seq2[r2 - 1] || ''}${r2}` : 'gap'}</b>${idn}<br>${r2 ? `${row.F.tot[r2]} prediction${row.F.tot[r2] === 1 ? '' : 's'}${parts ? ' · ' + parts : ''}` : `no residue of the ${C.word} aligns here`}${plv != null ? `<br>pLDDT ${Math.round(plv)}` : ''}${insN && insG ? `<br>▲ ${insN} contact${insN === 1 ? '' : 's'} on ${insG.k} inserted residue${insG.k === 1 ? '' : 's'} of the ${C.word} (${insG.a === insG.b ? insG.a : `${insG.a}–${insG.b}`}), ${gapAt ? `after ${esc(P.gene)} ${gapAt}` : `before ${esc(P.gene)} 1`}` : ''}`.replace(/<br>0 predictions(?= ·|<br>|$)/, st.seqOnly ? '<br>no predictions (sequence only)' : '<br>0 predictions'), e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const { mx, my } = at(e), tog = rows.find((x) => x.kind === 'tog' && my >= x.y0 && my <= x.y1); if (tog) { C.shown.add(tog.t.st); hideTip(); drawOrth(cfg); return; }
       const h = hits.find((q) => mx >= q.x0 && mx <= q.x1 && my >= q.y0 && my <= q.y1); if (!h) return; C.setSite(C.site() === h.c ? 0 : h.c); C.renderSite(T); };
