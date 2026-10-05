@@ -141,6 +141,18 @@ const REF = {
   han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
+// A screen's reference, the one text About and the pair page's Prediction sources both use: the named papers, Han et al. for
+// every AFDB heterodimer screen (with the release line), the LIVIA preprint for the screens LIVIA ran (kinase–kinase), else
+// the registry's own source. → { k: REF key or null, text: HTML citation, url: its DOI or paper link }
+const SCREEN_SRC = { 'human-predictomes': ['schmid2025', 'Schmid, E. W. et al. (2025). Proteome-wide in silico screening for human protein-protein interactions. <i>bioRxiv</i>.'],
+  'human-kinase-tf': ['kim2025', 'Kim, A.-R. et al. (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. <i>bioRxiv</i>.'],
+  flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'] };
+const AFDB_SRC = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>. Models: AlphaFold Database complexes release, EMBL-EBI / Google DeepMind / NVIDIA and collaborators, CC BY 4.0.'];
+const LIVIA_SRC = ['livia', 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.'];
+function screenCite(d) {
+  const [k, text] = SCREEN_SRC[d.id] || (/^afdb-het-/.test(d.id) ? AFDB_SRC : /kinase-kinase$/.test(d.id) ? LIVIA_SRC : [null, esc(d.source || d.title || d.id)]);
+  return { k, text, url: k ? `https://doi.org/${REF[k][1]}` : d.paper || '' };
+}
 
 const $ = (sel, el = document) => el.querySelector(sel);
 const short = (name) => String(name || '').replace(/\s*\((?:EC [^)]*|[^)]*)\).*$/, '').trim() || String(name || '');
@@ -1674,14 +1686,9 @@ async function viewAbout() {
   const ref = (k, text) => `<li>${text} <a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">doi.org/${REF[k][1]}</a></li>`;
   const AFM = '<a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>';
   // each live screen's source, screens that share one grouped on one line; a screen not listed here shows its registry source
-  const SRC = { 'human-predictomes': ['schmid2025', 'Schmid, E. W. et al. (2025). Proteome-wide in silico screening for human protein-protein interactions. <i>bioRxiv</i>.'],
-    'human-kinase-tf': ['kim2025', 'Kim, A.-R. et al. (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. <i>bioRxiv</i>.'],
-    flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'] };
-  const HAN = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>.'];   // every AFDB heterodimer screen
-  const kk = 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>. The predictions are in the LIVIA Atlas data files, cited above.';
   const groups = new Map();
   for (const d of (reg.datasets || []).filter((x) => x.status === 'live')) {
-    const [k, text] = SRC[d.id] || (/^afdb-het-/.test(d.id) ? HAN : /kinase-kinase$/.test(d.id) ? ['livia', kk] : [null, `${esc(d.source || '')}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`]);
+    const sc = screenCite(d), k = sc.k, text = k ? sc.text + (k === 'livia' ? ' The predictions are in the LIVIA Atlas data files, cited above.' : '') : `${sc.text}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`;   // the shared screen reference (screenCite)
     const spx = (reg.species || []).find((x) => x.id === d.species), g = groups.get(k || d.id) || { k, text, short: d.short, titles: [], sps: [] };
     g.titles.push(d.title); g.sps.push(spx ? spLow(spx.label) : d.species); groups.set(k || d.id, g); }
   const andJoin = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
@@ -3828,6 +3835,19 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
 // A pair reported in BioGRID: a badge in the pair's header that jumps to a card listing each publication (PubMed title,
 // authors and year from NCBI where the record is a PubMed id), from the same BioGRID release as the counts elsewhere.
+// A pair's Prediction sources: one row per screen it was predicted in, with that screen's full reference (screenCite, the
+// About page's own text), how many of the pair's models it holds (repeats apart), its run settings and license.
+function pairSources(sp, P, O, part, consOnly) {
+  if (!part || $('#c-psrc')) return;
+  const by = new Map(); for (const p of part.preds) { const o = by.get(p.di) || { n: 0, rep: 0 }; if (p.rep) o.rep++; else o.n++; by.set(p.di, o); }
+  const rows = [...by].sort((a, b) => a[0] - b[0]).map(([di, o]) => { const d = (REG.datasets || []).find((x) => x.id === sp.dsIds[di]) || { id: sp.dsIds[di], short: sp.dsShort[di] }, sc = screenCite(d);
+    return `<tr><td data-l="Screen"><span class="src" style="--c:${sp.dsColor ? sp.dsColor[di] : d.color || '#5A697C'}">${esc(sp.dsShort[di])}</span></td><td class="ref" data-l="Reference">${sc.text}${sc.url ? ` <a href="${esc(sc.url)}" target="_blank" rel="noopener">${esc(sc.url.replace(/^https?:\/\/(doi\.org\/)?/, sc.k ? 'doi:' : ''))} ↗</a>` : ''}</td>
+      <td class="n" data-l="Models of this pair">${o.n ? fmtInt(o.n) : ''}${o.rep ? `${o.n ? ' ' : ''}<span class="muted">${o.n ? '+ ' : ''}${fmtInt(o.rep)} repeat${o.rep === 1 ? '' : 's'}${o.n ? '' : ', not counted'}</span>` : ''}</td><td data-l="Run settings">${d.models ? runSettings(d) : '<span class="muted">–</span>'}</td><td data-l="License">${d.license ? esc(d.license) : '<span class="muted">–</span>'}</td></tr>`; }).join('');
+  const html = `<div class="card" id="c-psrc"><div class="card-head"><h2>Prediction sources</h2><span class="muted">the screens that folded ${esc(P.gene)} with ${esc(O.gene)}${consOnly ? ' (constructs only)' : ''}</span></div>
+    <div class="tbl-wrap"><table class="pt psrc-tbl"><thead><tr><th>Screen</th><th>Reference</th><th class="n">Models of this pair</th><th>Run settings</th><th>License</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="muted" style="margin:10px 0 0;font-size:13.5px">Scores computed with lis.py (<a href="https://github.com/flyark/AFM-LIS" target="_blank" rel="noopener">AFM-LIS</a>): ${LIVIA_SRC[1]} <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">doi:${REF.livia[1]} ↗</a></p></div>`;
+  const refs = $('#c-refs'); if (refs) refs.insertAdjacentHTML('afterend', html); else app.insertAdjacentHTML('beforeend', html);
+}
 async function pairRefs(sp, P, O, gone) {
   const R = sp.byKey.get(O.key); if (P.i == null || !R || R.i == null) return;
   let K; try { K = await reportedOf(sp, P.i); } catch (e) { return; }
@@ -3934,7 +3954,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   $('#model-pick').onchange = (e) => pick(+e.target.value);
   app.querySelectorAll('.models tbody tr').forEach((tr) => tr.onclick = () => pick(+tr.dataset.i));
   pick(rowsP.indexOf(best));
-  pairRefs(sp, P, O, () => stale(gen));
+  pairRefs(sp, P, O, () => stale(gen)).catch(() => {}).then(() => { if (!stale(gen)) { pairSources(sp, P, O, part, consOnly); mountSections(); } });   // Prediction sources under the BioGRID card, or where it would sit
   if (sp.viruses || (sp.reg && sp.reg.structs)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (!stale(gen)) structLink($('#pair-struct'), x, 'btn'); }); }   // a virus pair: its model in LIVIA
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
 }
@@ -5325,11 +5345,17 @@ function markNav(parts) {   // the header tab of the page shown: species (their 
 // Every page with three or more cards gets the section bar the protein page has: sticky, the card in view marked, a
 // click jumps to it. Built after the page renders; the protein page keeps its own.
 function mountSections() {
-  if (app.querySelector('.subnav')) return;
   const cards = [...app.querySelectorAll(':scope > .card, :scope > .reading > .card')].filter((c) => !c.hidden && c.querySelector('h2'));
+  const have = app.querySelector('.subnav');
+  if (have) { if (!have.classList.contains('auto')) return;   // a card that filled in later joins the bar this function built (the protein page keeps its own)
+    const known = new Set([...have.querySelectorAll('button')].map((b) => b.dataset.t));
+    cards.forEach((c, i) => { if (!c.id) c.id = `sec-x${i}`; if (known.has(c.id)) return; const h = c.querySelector('h2'), b = document.createElement('button'); b.dataset.t = c.id; b.textContent = ((h.childNodes[0] && h.childNodes[0].textContent) || h.textContent).trim();
+      const next = cards.slice(i + 1).map((x) => have.querySelector(`button[data-t="${x.id}"]`)).find(Boolean); have.insertBefore(b, next || null);
+      b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); }; });
+    return; }
   if (cards.length < 3) return;
   const items = cards.map((c, i) => { if (!c.id) c.id = `sec-${i}`; const h = c.querySelector('h2'); return [c.id, ((h.childNodes[0] && h.childNodes[0].textContent) || h.textContent).trim()]; });
-  const bar = el(`<nav class="subnav" aria-label="Sections">${items.map(([t, l]) => `<button data-t="${t}">${esc(l)}</button>`).join('')}</nav>`);
+  const bar = el(`<nav class="subnav auto" aria-label="Sections">${items.map(([t, l]) => `<button data-t="${t}">${esc(l)}</button>`).join('')}</nav>`);
   cards[0].before(bar);
   bar.querySelectorAll('button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); });
   let cur = null, raf = 0;

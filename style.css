@@ -754,3 +754,16 @@ button.linkish:focus-visible { outline: 2px solid #1A5276; outline-offset: 2px; 
 .scope-sets { display: inline-flex; align-items: center; gap: 4px; font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
 .scope-sets select { font: 12.5px var(--sans); padding: 2px 6px; border: 1px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); max-width: 220px; }
 .orth-thin { margin: 6px 0 0; font-size: 13px; }
+.psrc-tbl td.ref { min-width: 240px; white-space: normal; line-height: 1.45; }
+.psrc-tbl td, .psrc-tbl th { white-space: normal; }
+.psrc-tbl td .runset { white-space: normal; }
+.psrc-tbl td { vertical-align: top; }
+@media (max-width: 640px) {   /* phones: each screen as a small card, labels beside the values */
+  .psrc-tbl thead { display: none; }
+  .psrc-tbl, .psrc-tbl tbody, .psrc-tbl tr, .psrc-tbl td { display: block; width: auto; }
+  .psrc-tbl tr { border-bottom: 1px solid var(--line-2); padding: 8px 0; }
+  .psrc-tbl td { border: 0; padding: 3px 10px; text-align: left; }
+  .psrc-tbl td.ref { min-width: 0; }
+  .psrc-tbl td.n { text-align: left; font-family: inherit; }
+  .psrc-tbl td[data-l]:not([data-l="Screen"])::before { content: attr(data-l) ": "; color: var(--ink-3); font-size: 12px; }
+}
