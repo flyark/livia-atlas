@@ -698,7 +698,7 @@ async function homoCard(sp, P, gone) {
   if (gone() || !list.length || !card.isConnected) return;
   card.hidden = false; const nb = app.querySelector('.subnav button[data-t="c-homo"]'); if (nb) nb.hidden = false;
   const src = `<a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a>`;
-  $('#homo-sub').innerHTML = `${esc(P.gene)} paired with itself, from the AlphaFold Database homodimer release (${src}), rescored with lis.py · one model per protein`;
+  $('#homo-sub').innerHTML = `${esc(P.gene)} paired with itself, from the AlphaFold Database homodimer release (${src}), rescored with lis.py · one model per protein · <a href="#/${sp.id}/homodimers">all homodimers of ${esc(sp.reg.label)} →</a>`;
   const ctl = $('#homo-ctl');
   ctl.innerHTML = list.length > 1 ? `<label class="ctl">Entry <select id="homo-pick" aria-label="Homodimer entry">${list.map((e, n) => `<option value="${n}">${esc(e.uniprot_A)}${e.iso ? ' (isoform)' : ''}</option>`).join('')}</select></label>` : '';
   const show = (e) => {
@@ -713,6 +713,76 @@ async function homoCard(sp, P, gone) {
   };
   show(list[0]);
   const pick = $('#homo-pick'); if (pick) pick.onchange = () => show(list[+pick.value]);
+}
+let HNP = null;   // the homodimer entries with no protein page, [species, accession, gene] (build/homodimer_index.py), read on a search that finds nothing
+const homoNoPage = () => { if (!HNP) HNP = getJSON('data/homodimers/nopage.json').catch(() => { HNP = null; return []; }); return HNP; };
+// The homodimer release's own page (#/datasets/homodimers): per species its entries, how many land on a protein page (the
+// join homoFor uses, counted by build/homodimer_index.py into the registry), its list and its file; what the columns are.
+async function viewHomoDataset() {
+  const gen = ROUTE, reg = await registry(), H = reg.homodimers; if (stale(gen)) return;
+  if (!H) { app.innerHTML = '<div class="empty">No homodimer release in this build.</div>'; return; }
+  document.title = 'Homodimers · LIVIA Atlas';
+  const sps = Object.entries(H.species).map(([id, f]) => ({ id, f, sp: (reg.species || []).find((x) => x.id === id) })).sort((a, b) => b.f.entries - a.f.entries);
+  const tot = sps.reduce((t, x) => t + x.f.entries, 0), on = sps.reduce((t, x) => t + (x.f.onPages || 0), 0);
+  const src = `<a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a>`;
+  const COLS = [['iLIS, iLISA', 'the integrated local interaction score and its area form, computed by lis.py on the model and its predicted aligned error (PAE ≤ 12 Å, Cβ ≤ 8 Å), between the two copies'],
+    ['ipSAE', 'interface pSAE from the PAE between the two copies'], ['ipTM', 'the model\'s interface pTM, as the release gives it'], ['pDockQ2', 'pDockQ2 between the two copies'],
+    ['actifpTM', 'an approximation of actifpTM (binary Cβ contacts), labeled "(approx.)" on the site'], ['LIR_i, cLIR_i', 'how many residues of the first copy are interaction residues (confident PAE to the other copy) and contact residues (also Cβ ≤ 8 Å from it)'],
+    ['LIR_indices_i, cLIR_indices_i', 'those residues as 1-based numbers of the first copy (chain A), in runs such as [2-7,9]; the second copy is the same protein'],
+    ['entry, uniprot_A, gene_A, len_i', 'the release\'s model id, the protein\'s UniProt accession (isoforms as P49771-2), its gene and its length per copy'],
+    ['src_tar, cif_offset, cif_size, pae_offset, pae_size', 'where the model and its PAE sit in the release archive at EBI (byte ranges), which the site reads to open the structure in LIVIA']];
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/homodimers">Homodimers</a></div>
+    <h1>${esc(H.title)}</h1>
+    <p class="muted" style="max-width:900px">Each protein paired with itself, from the AlphaFold Database homodimer release (${src}), one model per protein, rescored with lis.py. The release lists a homodimer only when ${esc(H.selection)}. The iLIS cutoffs were calibrated on pairs of two different proteins, so these pages show scores only: no interaction call and no false-positive-rate band. Models ${esc(H.license || 'CC BY 4.0')}; cite the release (${src}) and LIVIA.</p>
+    <div class="kpis"><div class="kpi"><b>${fmtInt(tot)}</b><span>entries</span></div><div class="kpi"><b>${fmtInt(on)}</b><span>on a protein page</span></div><div class="kpi"><b>${fmtInt(sps.length)}</b><span>species</span></div></div>
+    <div class="card"><div class="card-head"><h2>Species</h2><span class="muted">each list holds every entry, those without a protein page too</span></div>
+      <div class="tbl-wrap"><table class="sets"><thead><tr><th>Species</th><th class="n">Entries</th><th class="n">On a protein page</th><th>List</th><th>File (gzip CSV)</th></tr></thead><tbody>
+      ${sps.map((x) => `<tr><td>${x.sp ? `<a href="#/${x.id}">${spName(x.sp.name)}</a>` : esc(x.id)}</td><td class="n">${fmtInt(x.f.entries)}</td><td class="n">${fmtInt(x.f.onPages || 0)}</td>
+        <td><a href="#/${x.id}/homodimers">all ${fmtInt(x.f.entries)} →</a></td><td><a href="${esc(H.base + x.f.file)}" download>${esc(x.f.file)}</a></td></tr>`).join('')}</tbody></table></div>
+      <p class="muted" style="margin:10px 0 0;font-size:13.5px">Files: <a href="${esc(H.base)}md5s_gz.txt" target="_blank" rel="noopener">md5 sums</a> of the live files · per-species counts: <a href="${esc(H.base)}step4_counts.tsv" target="_blank" rel="noopener">step4_counts.tsv</a> · the frozen copy of this build, ${esc(H.frozenName || 'versioned')}: <a href="${esc(H.frozen)}md5s_gz.txt" target="_blank" rel="noopener">its file list with md5 sums</a> (the files under <span class="mono">${esc(H.frozen)}</span>, byte for byte the same).</p></div>
+    <div class="card"><div class="card-head"><h2>Columns</h2></div><dl class="hd-cols">${COLS.map(([k, t]) => `<dt>${esc(k)}</dt><dd>${esc(t)}</dd>`).join('')}</dl>
+      <p class="muted" style="margin:8px 0 0;font-size:13.5px">Every other column is lis.py's (the same as in the screens' tables) or the release's own (af_*). The release's filter was read as the higher of its two directions (AB, BA) for both ipSAE and pDockQ2.</p></div>`;
+}
+// One species' homodimers (#/<sp>/homodimers): every entry, sortable and filterable, 100 a page. An entry with a protein page
+// links to it; one without opens in place with its residue track and scores. ?q= filters (search lands here on its row).
+async function viewHomoList(spId, q) {
+  const gen = ROUTE, reg = await registry(), H = reg.homodimers, sp = await species(spId); if (stale(gen)) return;
+  if (!H || !H.species || !H.species[spId]) { app.innerHTML = `<div class="empty">No homodimers for ${esc(sp.reg.label)}. <a href="#/datasets/homodimers">The species with homodimers</a></div>`; return; }
+  document.title = `Homodimers · ${sp.reg.label} · LIVIA Atlas`;
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / Homodimers</div><h1>Homodimers <span class="muted" style="font-weight:500">${spName(sp.reg.name)}</span></h1>
+    <p class="muted" style="max-width:900px">Every entry of the AlphaFold Database homodimer release for this species (<a href="#/datasets/homodimers">about the release and its files</a>), one model per protein, rescored with lis.py. Scores only: the release lists a homodimer only when ${esc(H.selection)}, and the iLIS cutoffs were not calibrated for homodimers, so no interaction call is made.</p>
+    <div class="card"><div class="controls" style="margin:0 0 10px"><input type="search" id="hl-q" placeholder="filter by gene, UniProt accession or entry" aria-label="Filter homodimers" style="width:300px" value="${esc(q.get('q') || '')}">
+      <label class="ctl" title="entries whose UniProt accession has no protein page (some are other entries of a gene that has one, marked gene page)"><input type="checkbox" id="hl-nopage"> only entries without a page</label><span class="muted" id="hl-note">Loading…</span></div>
+      <div class="tbl-wrap"><table class="pt" id="hl"></table></div><div class="pager" id="hl-pager"></div></div>`;
+  const rows = await homoRows(spId); if (stale(gen)) return;
+  const idx = new Map(); for (const r of sp.rows) { idx.set(String(r.key), r); for (const t of String(r.acc || '').split(/\s+/)) if (t && !idx.has(t)) idx.set(t, r); }
+  const L = rows.map((e) => { const u = String(e.uniprot_A || ''), page = idx.get(u) || idx.get(u.split('-')[0]) || null, g0 = /^[?\s]*$/.test(e.gene_A || '') ? '' : e.gene_A;
+    return { e, page, iso: u.includes('-'), gene: g0 || (page && page.gene) || u, gpage: !page && g0 && sp.byGene.has(g0) ? sp.byGene.get(g0) : null }; });   // gpage: another UniProt entry of a gene that has a page
+  const T = { sort: 'iLIS', asc: false, page: 0, open: new Set() }, N = (x) => (x === '' || x == null ? NaN : +x);
+  const COL = [['gene', 'Gene'], ['acc', 'UniProt'], ['len', 'Length'], ['iLIS', 'iLIS'], ['ipSAE', 'ipSAE'], ['ipTM', 'ipTM'], ['pDockQ2', 'pDockQ2'], ['LIR', 'Interaction'], ['cLIR', 'Contact'], ['s', '3D']];
+  const key = (x, c) => (c === 'gene' ? x.gene.toLowerCase() : c === 'acc' ? x.e.uniprot_A : c === 'len' ? N(x.e.len_i) : c === 'LIR' ? N(x.e.LIR_i) : c === 'cLIR' ? N(x.e.cLIR_i) : N(x.e[c]));
+  const draw = () => {
+    const f = $('#hl-q').value.trim().toLowerCase(), np = $('#hl-nopage').checked;
+    let V = L.filter((x) => (!np || !x.page) && (!f || x.gene.toLowerCase().includes(f) || String(x.e.uniprot_A).toLowerCase().includes(f) || String(x.e.entry).toLowerCase().includes(f)));
+    V.sort((a, b) => { const x = key(a, T.sort), y = key(b, T.sort), d = typeof x === 'string' ? x.localeCompare(y) : (Number.isFinite(x) ? x : -1) - (Number.isFinite(y) ? y : -1); return T.asc ? d : -d; });
+    const per = 100, pages = Math.max(1, Math.ceil(V.length / per)); T.page = Math.min(T.page, pages - 1);
+    $('#hl-note').textContent = `${fmtInt(V.length)} of ${fmtInt(L.length)} entries · ${fmtInt(L.filter((x) => x.page).length)} on a protein page`;
+    const sc = (k, x) => vmfmt(k, N(x.e[k]));
+    $('#hl').innerHTML = `<thead><tr>${COL.map(([c, l]) => `<th data-c="${c}"${['gene', 'acc', 's'].includes(c) ? '' : ' class="n"'}${c === 's' ? '' : ' style="cursor:pointer"'}>${l}${T.sort === c ? (T.asc ? ' ▲' : ' ▼') : ''}</th>`).join('')}</tr></thead><tbody>`
+      + V.slice(T.page * per, (T.page + 1) * per).map((x) => { const i = L.indexOf(x), op = T.open.has(i);
+        const name = x.page ? `<a href="#/${sp.id}/${encodeURIComponent(x.page.key)}" title="its protein page, with its Homodimer card">${esc(x.gene)}</a>` : `<button class="linkish hl-x" data-i="${i}" aria-expanded="${op}" title="no protein page for this entry: show its residues and scores here">${op ? '▾' : '▸'} ${esc(x.gene)}</button>${x.gpage ? ` <a class="muted" style="font-size:12px" href="#/${sp.id}/${encodeURIComponent(x.gpage.key)}" title="the gene's page, from another UniProt entry">gene page</a>` : ''}`;
+        return `<tr data-i="${i}"><td class="g">${name}</td><td class="mono">${esc(x.e.uniprot_A)}${x.iso ? ' <span class="flag">isoform</span>' : ''}</td><td class="n">${fmtInt(N(x.e.len_i))}</td><td class="n">${sc('iLIS', x)}</td><td class="n">${sc('ipSAE', x)}</td><td class="n">${sc('ipTM', x)}</td><td class="n">${sc('pDockQ2', x)}</td><td class="n">${fmtInt(N(x.e.LIR_i) || 0)}</td><td class="n">${fmtInt(N(x.e.cLIR_i) || 0)}</td><td><a href="#" class="arch" data-i="${i}" title="${esc(x.e.entry)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a></td></tr>`
+          + (op ? `<tr class="hl-open"><td colspan="${COL.length}"><p class="hd-line"><b>${esc(x.e.entry)}</b> · ${esc(x.e.uniprot_A)} · ${fmtInt(N(x.e.len_i))} aa per copy${Number.isFinite(N(x.e.pLDDT)) ? ` · pLDDT ${N(x.e.pLDDT).toFixed(1)}` : ''} · iLISA ${sc('iLISA', x)} · actifpTM (approx.) ${sc('actifpTM', x)}</p>${homoTrack(x.e)}<p class="muted" style="font-size:12.5px;margin:4px 0 0">${x.gpage ? `No protein page for this UniProt entry: the Atlas's screens folded another entry of ${esc(x.gene)} (${esc(x.gpage.acc || x.gpage.key)}), <a href="#/${sp.id}/${encodeURIComponent(x.gpage.key)}">its page →</a>; residue numbers here are this entry's own.` : 'No protein page: this protein is not in the Atlas\'s interaction screens for this species.'} The track shows the first copy, numbered from its first residue.</p></td></tr>` : ''); }).join('') + '</tbody>';
+    $('#hl-pager').innerHTML = pages > 1 ? `<button class="btn" id="hl-prev" ${T.page ? '' : 'disabled'}>Previous</button><span>Page ${T.page + 1} of ${pages}</span><button class="btn" id="hl-next" ${T.page < pages - 1 ? '' : 'disabled'}>Next</button>` : '';
+    if (pages > 1) { $('#hl-prev').onclick = () => { T.page--; draw(); }; $('#hl-next').onclick = () => { T.page++; draw(); }; }
+    $('#hl').querySelectorAll('th[data-c]').forEach((th) => { if (th.dataset.c !== 's') th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : c === 'gene' || c === 'acc'; T.sort = c; T.page = 0; draw(); }; });
+    $('#hl').querySelectorAll('.hl-x').forEach((b) => { b.onclick = () => { const i = +b.dataset.i; if (T.open.has(i)) T.open.delete(i); else T.open.add(i); draw(); }; });
+    $('#hl').querySelectorAll('a.arch').forEach((a) => { a.onclick = (ev) => { ev.preventDefault(); const e = L[+a.dataset.i].e, ad = { hd: true, tar: e.src_tar, cif_off: +e.cif_offset, cif_len: +e.cif_size, pae_off: +e.pae_offset, pae_len: +e.pae_size }; openFromArchive(e.entry, ad, a); }; });
+  };
+  { let t; $('#hl-q').oninput = () => { T.page = 0; clearTimeout(t); t = setTimeout(() => { draw(); const [path] = location.hash.split('?'), v = $('#hl-q').value.trim(); history.replaceState(null, '', v ? `${path}?q=${encodeURIComponent(v)}` : path); }, 150); }; }
+  $('#hl-nopage').onchange = () => { T.page = 0; draw(); };
+  const q0 = (q.get('q') || '').trim(); if (q0) { const hit = L.findIndex((x) => String(x.e.uniprot_A).toLowerCase() === q0.toLowerCase()); if (hit >= 0 && !L[hit].page) T.open.add(hit); }   // arrived from search: its row opened
+  draw();
 }
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
@@ -1128,6 +1198,10 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
         const near = sps.filter((sp) => sp && !sp.viruses).map((sp) => [sp, nearRow(sp, t0)]).filter(([, r]) => r).slice(0, 3);
         return near.length ? ` Close: ${near.map(([sp, r]) => `<a href="#/${sp.id}/${encodeURIComponent(r.key)}">${esc(r.gene)}</a>${many ? ` <span class="muted">(${esc(sp.reg.label)})</span>` : ''}`).join(', ')}.` : ' Try a gene symbol, UniProt accession, FlyBase ID or protein name.'; })()}</div>` : '');
     box.hidden = !box.innerHTML;
+    if (!items.length && t.length >= 2) homoNoPage().then((list) => {   // no protein page: a protein with only a homodimer entry opens on its row in the species' homodimer list
+      if (q !== input.value) return; const hit = list.filter(([s2, a, g]) => (!spId || s2 === spId) && (a.toLowerCase() === t || a.split('-')[0].toLowerCase() === t || String(g).toLowerCase() === t)).slice(0, 5);
+      if (!hit.length) return; const note = box.querySelector('.sg-note'); if (!note) return; const lab2 = (id) => { const x = (REG.species || []).find((y) => y.id === id); return x ? x.label : id; };
+      note.insertAdjacentHTML('beforeend', ` Homodimer only, no protein page: ${hit.map(([s2, a, g]) => `<a href="#/${s2}/homodimers?q=${encodeURIComponent(a)}">${esc(g || a)}</a> <span class="muted">(${esc(a)}, ${esc(lab2(s2))})</span>`).join(', ')}.`); box.hidden = false; });
     [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k]));
     paint();
   }
@@ -1385,7 +1459,7 @@ function dsCard(d) {
 function homoDsCard(reg) {   // the homodimer release: on protein pages, scores only, so its card counts entries (isoforms included) and nothing past a cutoff
   const H = reg.homodimers; if (!H || !H.species) return '';
   const sps = Object.keys(H.species), n = sps.reduce((a, k) => a + (H.species[k].entries || 0), 0);
-  return `<div class="ds live" data-ds="homodimers"><span class="badge on">On protein pages</span><h3>${esc(H.title)}</h3>
+  return `<div class="ds live" data-ds="homodimers"><span class="badge on">On protein pages</span><h3><a href="#/datasets/homodimers">${esc(H.title)}</a></h3>
     <div class="sp">${fmtInt(sps.length)} species · one model per protein · scores only</div>
     <div class="stats"><div><b>${fmtInt(n)}</b><span>entries</span></div></div>
     <div class="src-line"><a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a> — listed only when ${esc(H.selection)}; the iLIS cutoffs were not calibrated for homodimers, so no interaction calls</div></div>`;
@@ -5231,14 +5305,14 @@ async function route() {
     if (stale(gen)) return;
     { const f = document.getElementById('build'); if (f && !f.textContent) { const v = [...new Set((REG.datasets || []).map(verOf).filter(Boolean))].sort(); f.innerHTML = `Build ${esc(BUILD)} · data: LIVIA Atlas data ${esc(v.join(', '))} · <a href="https://github.com/flyark/livia-atlas/commits/main" target="_blank" rel="noopener">changes ↗</a>`; } }   // the footer says which build and which data a reader sees
     if (!parts.length) await viewHome();
-    else if (parts[0] === 'datasets') await (parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
+    else if (parts[0] === 'datasets') await (parts[1] === 'homodimers' && !parts[2] ? viewHomoDataset() : parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'species' && parts.length === 1) await viewSpeciesList();
     else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
     else if (parts[0] === 'network' && parts.length === 1) {   // the header's Network tab: the network page of the species last shown, else the first species
       location.replace(`#/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}/network${q.toString() ? `?${q}` : ''}`); return;
     }
-    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts[1] === 'homodimers' && parts.length === 2) await viewHomoList(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }

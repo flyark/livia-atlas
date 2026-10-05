@@ -2594,19 +2594,20 @@
   "paper": "https://doi.org/10.64898/2026.03.27.714458",
   "base": "https://www.flyrnai.org/livia-atlas/live/homodimers/",
   "structBase": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/homodimers/",
+  "frozen": "https://www.flyrnai.org/livia-atlas/versions/homodimers-20261003/", "frozenName": "homodimers-20261003", "license": "CC BY 4.0",
   "selection": "the higher of its two directions passes ipSAE \u2265 0.60 and pDockQ2 \u2265 0.23",
   "species": {
-   "human": {"file": "homodimer_lis_human.csv.gz", "entries": 4802},
-   "mus-musculus": {"file": "homodimer_lis_mouse.csv.gz", "entries": 3209},
-   "rattus-norvegicus": {"file": "homodimer_lis_rat.csv.gz", "entries": 3699},
-   "fly": {"file": "homodimer_lis_fly.csv.gz", "entries": 1613},
-   "worm": {"file": "homodimer_lis_worm.csv.gz", "entries": 1707},
-   "zebrafish": {"file": "homodimer_lis_zebrafish.csv.gz", "entries": 3140},
-   "yeast": {"file": "homodimer_lis_budding_yeast.csv.gz", "entries": 653},
-   "schizosaccharomyces-pombe": {"file": "homodimer_lis_fission_yeast.csv.gz", "entries": 578},
-   "arabidopsis-thaliana": {"file": "homodimer_lis_arabidopsis.csv.gz", "entries": 3597},
-   "dictyostelium-discoideum": {"file": "homodimer_lis_dictyostelium.csv.gz", "entries": 876},
-   "escherichia-coli-83333": {"file": "homodimer_lis_ecoli_k12.csv.gz", "entries": 1206}
+   "human": {"file": "homodimer_lis_human.csv.gz", "entries": 4802, "onPages": 2888},
+   "mus-musculus": {"file": "homodimer_lis_mouse.csv.gz", "entries": 3209, "onPages": 1795},
+   "rattus-norvegicus": {"file": "homodimer_lis_rat.csv.gz", "entries": 3699, "onPages": 1423},
+   "fly": {"file": "homodimer_lis_fly.csv.gz", "entries": 1613, "onPages": 1119},
+   "worm": {"file": "homodimer_lis_worm.csv.gz", "entries": 1707, "onPages": 1104},
+   "zebrafish": {"file": "homodimer_lis_zebrafish.csv.gz", "entries": 3140, "onPages": 1257},
+   "yeast": {"file": "homodimer_lis_budding_yeast.csv.gz", "entries": 653, "onPages": 641},
+   "schizosaccharomyces-pombe": {"file": "homodimer_lis_fission_yeast.csv.gz", "entries": 578, "onPages": 496},
+   "arabidopsis-thaliana": {"file": "homodimer_lis_arabidopsis.csv.gz", "entries": 3597, "onPages": 2109},
+   "dictyostelium-discoideum": {"file": "homodimer_lis_dictyostelium.csv.gz", "entries": 876, "onPages": 514},
+   "escherichia-coli-83333": {"file": "homodimer_lis_ecoli_k12.csv.gz", "entries": 1206, "onPages": 812}
   }
  }
 }
