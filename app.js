@@ -803,31 +803,6 @@ async function viewHomoList(spId, q) {
   const q0 = (q.get('q') || '').trim(); if (q0) { const hit = L.findIndex((x) => String(x.e.uniprot_A).toLowerCase() === q0.toLowerCase()); if (hit >= 0 && !L[hit].page) T.open.add(hit); }   // arrived from search: its row opened
   draw();
 }
-// Phosphosite windows (FlyPredictome's kinase–substrate screen): a 101-residue window around a phosphosite of a substrate,
-// folded with kinases. They count nowhere gene-level (KIND_DROP); here they are listed apart, kinase × site with the best
-// iLIS over the run's models, plain: on a kinase's page its substrates' windows, on a substrate's page its own windows.
-function phosCard(sp, P, B) {
-  const card = $('#c-phos'); if (!card || !B || !B.dropped || !B.dropped.length || !B.cons) return;
-  const kindOf = (nm) => (B.cons.get(nm) || {}).kind, best = new Map();
-  for (const p of B.dropped) {
-    const asKinase = kindOf(p.pc) === 'phosphosite', asSub = kindOf(p.qc) === 'phosphosite'; if (!asKinase && !asSub) continue;
-    const win = asKinase ? p.pc : p.qc, k = `${win}|${p.partner}|${asKinase ? 'k' : 's'}`, o = best.get(k);
-    if (!o) best.set(k, { win, partner: p.partner, asKinase, iLIS: p.iLIS || 0, n: 1 }); else { o.n++; if ((p.iLIS || 0) > o.iLIS) o.iLIS = p.iLIS || 0; } }
-  const L = [...best.values()].sort((a, b) => b.iLIS - a.iLIS); if (!L.length) return;
-  card.hidden = false; const nb = app.querySelector('.subnav button[data-t="c-phos"]'); if (nb) nb.hidden = false;
-  const gname = (k) => ((sp.byKey.get(k) || {}).gene || k), nK = L.filter((x) => x.asKinase).length, nS = L.length - nK;
-  $('#phos-sub').textContent = `${nK ? `${fmtInt(nK)} substrate site window${nK === 1 ? '' : 's'} folded with ${P.gene}` : ''}${nK && nS ? ' · ' : ''}${nS ? `${fmtInt(nS)} kinase pairing${nS === 1 ? '' : 's'} with ${P.gene}'s own site windows` : ''} · FlyPredictome's kinase–substrate screen`;
-  const cap = 25; let open = L.length <= cap;
-  const draw = () => {
-    $('#phos-body').innerHTML = `<p class="muted" style="margin:0 0 8px;font-size:13.5px">Each site is a 101-residue window of the substrate around the phosphosite, folded with the kinase in FlyPredictome's kinase–substrate screen. These windows are not the full-length protein, so they are listed here and not counted among ${esc(P.gene)}'s partners, binding sites or networks. iLIS is the best over the run's models.</p>
-      <div class="tbl-wrap"><table class="pt compact"><thead><tr><th>Kinase</th><th>Site</th><th class="n">iLIS</th><th class="n">Models</th><th></th></tr></thead><tbody>`
-      + (open ? L : L.slice(0, cap)).map((x) => { const kin = x.asKinase ? P.gene : gname(x.partner), site = siteLabel(B.cons.get(x.win), x.win);
-        return `<tr><td>${x.asKinase ? esc(kin) : `<a href="#/${sp.id}/${encodeURIComponent(x.partner)}">${esc(kin)}</a>`}</td><td>${x.asKinase ? `<a href="#/${sp.id}/${encodeURIComponent(x.partner)}">${esc(site)}</a>` : esc(site)}</td><td class="n">${x.iLIS.toFixed(3)}</td><td class="n">${fmtInt(x.n)}</td><td><a href="#/${sp.id}/${P.key}/${encodeURIComponent(x.partner)}" title="the pair page: its models, constructs included">models →</a></td></tr>`; }).join('')
-      + `</tbody></table></div>${L.length > cap ? `<div class="pager"><button class="more" type="button" id="phos-more" aria-expanded="${open}">${open ? 'Show fewer' : `Show all ${fmtInt(L.length)}`}</button></div>` : ''}`;
-    const m = $('#phos-more'); if (m) m.onclick = () => { open = !open; draw(); };
-  };
-  draw();
-}
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
   const origin = new URL(LIVIA, location.href).origin; let done = false, n = 0;
@@ -910,7 +885,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         part.raw.rows = null;   // read: the predictions keep what they need (and the rows past the cutoff, below)
       }
       // Construct kinds (author, 2026-10-04): phosphosite windows, mutants, tag/linker variants and engineered constructs count
-      // nowhere gene-level (partners, tiles, binding sites, networks); they stay for the phosphosite and constructs views.
+      // nowhere gene-level (partners, tiles, binding sites, networks); they stay for the pair page's constructs view.
       const dropped = []; if (cons.size) { let w = 0; for (const p of preds) { if (dropKind(cons, p.qc) || dropKind(cons, p.pc)) dropped.push(p); else preds[w++] = p; } preds.length = w; }
       // A sequence pair counts once in a view (the atlas rule, 2026-09-27): the same two sequences folded in several runs
       // (two screens or sets, both chain orders, a re-run) keep the run with the highest iLIS for every residue view and
@@ -1726,7 +1701,7 @@ async function viewAbout() {
       <p>Fly pages are organized by FlyBase gene. FlyPredictome folded many constructs of a gene: isoforms, fragments, phosphosite windows,
       point mutants. Every name is resolved to its gene, and each construct is placed on the gene's reference sequence by its folded sequence, so its
       contacts are drawn in the gene's residue numbering. An isoform too unlike the reference to be placed is shown on its own: its page has an
-      Isoform row, and every card follows the isoform chosen. Phosphosite windows, point mutants, tag or linker variants and engineered constructs are listed on their pairs' pages (and phosphosite windows in a card of their own) but are not counted among a gene's partners, binding sites or networks. The table of construct names and their genes is on the FlyPredictome page.</p>
+      Isoform row, and every card follows the isoform chosen. Phosphosite windows, point mutants, tag or linker variants and engineered constructs are listed on their pairs' pages but are not counted among a gene's partners, binding sites or networks. The table of construct names and their genes is on the FlyPredictome page.</p>
       <p>Interactions reported in BioGRID (release 5.0.261, MIT license; ${cite('biogrid')}) are marked, matched to each species' proteins by UniProt
       accession, official symbol or systematic name. In networks, a pair inside a community (on a protein page, inside a binding-site cluster, or a community when chosen) is drawn in its color and the others light gray, and the pairs BioGRID reports
       (physical, genetic or either, as the reader chooses) can be colored by what was reported (physical blue, genetic orange, both orchid purple, the other pairs light gray); the width is the best iLIS. On a protein page, a partner
@@ -2302,7 +2277,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (P.status === 'construct') flags.push('<span class="flag">an engineered construct or a retired gene, kept under its screen name</span>');
   if (P.status === 'obsolete') flags.push('<span class="flag">UniProt has since retired this entry; the sequence is the one the screen folded</span>');
   const fbLink = /^FBgn\d{7}$/.test(P.key) ? `<a href="https://flybase.org/reports/${P.key}" target="_blank" rel="noopener">FlyBase ${P.key}</a>` : '';
-  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs'], ['c-homo', 'Homodimer'], ['c-phos', 'Phosphosites']];   // answers first (who, where, which share), then evidence, then tools
+  const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Partners'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs'], ['c-homo', 'Homodimer']];   // answers first (who, where, which share), then evidence, then tools
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -2321,7 +2296,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
-    <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' || t === 'c-phos' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
+    <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
     <div class="card" id="c-partners"><div class="card-head"><div><h2>Overview</h2><div class="muted">each partner by its best model</div></div>
         <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
@@ -2398,8 +2373,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="controls" style="margin:0"><label class="ctl" title="also list the paralogs that few prediction methods call (the Alliance's low confidence)"><input type="checkbox" id="para-low"> low-confidence paralogs too</label><span class="ctl orth-show" title="what the plot draws besides the bars">Show <label><input type="checkbox" data-o="dom"> domains</label><label><input type="checkbox" data-o="id"> identity</label><label><input type="checkbox" data-o="pl"> pLDDT</label></span></div></div>
       <div id="para-body"></div></div>
     <div class="card" id="c-homo" hidden><div class="card-head"><div><h2>Homodimer <span class="tag-alpha">alpha</span></h2><div class="muted" id="homo-sub"></div></div><div class="controls" style="margin:0" id="homo-ctl"></div></div>
-      <div id="homo-body"></div></div>
-    <div class="card" id="c-phos" hidden><div class="card-head"><div><h2>Phosphosite windows</h2><div class="muted" id="phos-sub"></div></div></div><div id="phos-body"></div></div>`;
+      <div id="homo-body"></div></div>`;
   setTimeout(() => homoCard(sp, P, gone), 1200);   /* the species' homodimer table, after the page's own reads have started */
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
@@ -3725,7 +3699,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     svgExport($('#net-x'), `atlas_${P.gene}_network`, () => $('svg', netBox));
   }
 
-  drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D(); phosCard(sp, P, B);
+  drawTopList(); drawTable(); fillPartners(); drawScatter(); drawFreq(); drawHeatmap(); renderClusterInfo(); legend3D();
   loadStructure();
   cluster();
   wireShow();
