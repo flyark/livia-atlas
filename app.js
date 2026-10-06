@@ -1939,6 +1939,15 @@ function mcl(n, edges, inflation = 2, iters = 100) {
 // The community menu every network card offers (the network builder adds finer settings): Leiden, Louvain, MCL or connected
 // parts, pairs weighted by best iLIS, and one seed for the visiting order and the layout's start (0: the fixed ones).
 const commHue = (n) => { if (n < TAB10.length) return TAB10[n]; const h = (n * 137.508) % 360, s = (62 + (n % 2) * 14) / 100, l = (42 + (n % 3) * 8) / 100, a = s * Math.min(l, 1 - l), f = (k0) => { const k = (k0 + h / 30) % 12; return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); }; return `#${f(0)}${f(8)}${f(4)}`; };   // nine Tableau colors (no gray), then golden-angle hues as LIVIA's network page
+// Community palettes the network builder offers (Tableau 10, the default, is the one LIVIA and every other Atlas card use);
+// past a palette's end, golden-angle hues as commHue's. No gray in any: gray means "no community".
+const PALETTES = { tableau: ['Tableau 10', null],
+  okabe: ['Okabe–Ito (colorblind-safe)', ['#E69F00', '#56B4E9', '#009E73', '#0072B2', '#D55E00', '#CC79A7', '#F0E442']],
+  muted: ['Tol Muted (soft, colorblind-safe)', ['#CC6677', '#332288', '#DDCC77', '#117733', '#88CCEE', '#882255', '#44AA99', '#999933', '#AA4499']],
+  set2: ['Set2 (pastel)', ['#66C2A5', '#FC8D62', '#8DA0CB', '#E78AC3', '#A6D854', '#FFD92F', '#E5C494']],
+  observable: ['Observable 10', ['#4269D0', '#EFB118', '#FF725C', '#6CC5B0', '#3CA951', '#FF8AB7', '#A463F2', '#97BBF5', '#9C6B4E']],
+  tab20: ['Tableau 20 (10+ communities)', ['#1f77b4', '#aec7e8', '#ff7f0e', '#ffbb78', '#2ca02c', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5']] };
+const palHue = (p, n) => { const L = PALETTES[p] && PALETTES[p][1]; return !L ? commHue(n) : n < L.length ? L[n] : commHue(9 + n - L.length); };
 const COMM_OPTS = [['leiden', 'Leiden'], ['comm', 'Louvain'], ['mcl', 'MCL'], ['cc', 'connected parts']];
 const communitiesBy = (m, n, E, seed = 0) => (m === 'cc' ? components(n, E) : m === 'mcl' ? mcl(n, E) : (m === 'leiden' ? leiden : louvain)(n, E, 1, seed ? seededRandom(seed) : null));
 const commCtl = (id, m, seed, lay = true) => `<label class="ctl" title="groups of proteins predicted to pair with each other more than with the rest: Leiden, Louvain, MCL (Markov clustering) or the connected parts, pairs weighted by best iLIS">Communities <select id="${id}-cm">${[['', 'none'], ...COMM_OPTS].map(([v, l]) => `<option value="${v}"${v === m ? ' selected' : ''}>${l}</option>`).join('')}</select></label>`
@@ -4483,17 +4492,17 @@ function examplePicker(host, spId, onLoad) {   // host: an element; onLoad(text,
 // the pairs between them (or a protein ring with every pair drawn); a lower-triangle matrix of pair counts; the pairs of a
 // ribbon, cell or protein, with links and CSV. M: { sp, groups: [{ name, short, color }], nodes: [{ gene, key, g }] (g: group
 // index, -1 ungrouped), edges: [{ a, b, w }] (node indexes, best iLIS) }.
-function chordCard(box, M) {
+function chordCard(box, M, keep = false) {   // keep: the same network recolored, so the reader's view and selection stay
   const ST = box._cc || (box._cc = { view: 'comm', inside: false, wt: 'n', ungr: true, sel: null });
-  ST.sel = null;
+  if (!keep) ST.sel = null;
   const GRAY = '#A7B2BF', NS = 'http://www.w3.org/2000/svg';
   box.innerHTML = `<div class="cc-bar"><span class="cc-seg" role="group" aria-label="Chord view"><button type="button" data-v="comm">Communities</button><button type="button" data-v="prot">Proteins</button></span>
     <label class="ctl" title="pairs whose two proteins are in the same community"><input type="checkbox" class="cc-inside"> Pairs inside a community</label>
     <label class="ctl" title="what a ribbon's width counts (Communities view)">Width <select class="cc-wt"><option value="n">pairs</option><option value="s">summed iLIS</option></select></label>
     <label class="ctl" title="proteins outside the communities (groups below the outline size)"><input type="checkbox" class="cc-ungr"> Ungrouped proteins</label>
     <span class="cc-sp"></span><button class="btn" type="button" data-dl="plot">↓ SVG</button><button class="btn" type="button" data-dl="all" title="every pair of the network, with both proteins' communities and links">↓ All pairs CSV</button></div>
-    <div class="cc-grid"><div><div class="cc-plot"></div><p class="muted cc-off"></p><div class="cc-legend"></div></div>
-    <div class="cc-side"><div class="cc-box"><div class="cc-h"><b>Pairs between communities</b><button class="btn sm" type="button" data-dl="mx">↓ SVG</button></div><div class="muted cc-sub">Pair counts, darker for more; with pairs inside shown, the diagonal counts them. Click a cell for its pairs.</div><div class="cc-mx"></div><p class="muted cc-mxoff"></p></div>
+    <div class="cc-grid"><div><div class="cc-plot"></div><p class="muted cc-off"></p></div>
+    <div class="cc-side"><div class="cc-box"><div class="cc-h"><b>Pairs between communities</b><button class="btn sm" type="button" data-dl="mx">↓ SVG</button></div><div class="muted cc-sub cc-mxsub"></div><div class="cc-mx"></div><p class="muted cc-mxoff"></p></div>
     <div class="cc-box"><div class="cc-h"><b class="cc-ph">Pairs</b><span><button class="btn sm" type="button" data-dl="csv" hidden>↓ CSV</button> <button class="btn sm" type="button" data-dl="copy" hidden>Copy</button></span></div><div class="muted cc-sub cc-psub">Click a ribbon, a cell or a protein.</div><div class="cc-pairs"></div></div></div></div>`;
   const q = (s) => box.querySelector(s);
   q('.cc-inside').checked = ST.inside; q('.cc-ungr').checked = ST.ungr; q('.cc-wt').value = ST.wt;
@@ -4513,7 +4522,6 @@ function chordCard(box, M) {
     q('.cc-off').textContent = '';
     drawMatrix(G, N);
     if (ST.view === 'comm') drawChord(G, N, S); else drawProteins(G, gi, E);
-    q('.cc-legend').innerHTML = G.map((g) => `<span><i style="background:${g.color}"></i>${esc(g.short)} · ${esc(g.name)} (${fmtInt(size.get(g.id) || 0)})</span>`).join('');
     drawPairs();
   }
   function drawMatrix(G0, N0) {   // lower triangle; the diagonal only with pairs inside shown (never for the ungrouped); only groups with a pair
@@ -4524,7 +4532,8 @@ function chordCard(box, M) {
     if (!k || (!diag && k < 2)) { el.innerHTML = '<p class="muted">No pairs between communities.</p>'; return; }
     const vals = N.flatMap((r, i) => r.filter((v, j) => (j < i || (diag && j === i && G[i].id >= 0)) && v > 0)), mx = Math.max(1, ...vals);
     const r0 = diag ? 0 : 1, nr = k - r0, nc = diag ? k : k - 1, c = 34, L = 54, T = 8, W = L + nc * c + 6, H = T + nr * c + 26;
-    const ramp = (v) => d3.interpolateRgb('#E3ECF4', '#123B5A')(Math.sqrt(v) / Math.sqrt(mx));
+    q('.cc-mxsub').textContent = `Pairs per community pair${diag ? '; the diagonal: pairs inside' : ''} · click a cell.`;
+    const ramp = (v) => d3.interpolateRgb('#DCE8F3', '#1A5276')(Math.sqrt(v) / Math.sqrt(mx)), dark = (c) => { const x = d3.rgb(c), f = (u) => { u /= 255; return u <= 0.03928 ? u / 12.92 : ((u + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(x.r) + 0.7152 * f(x.g) + 0.0722 * f(x.b) < 0.45; };
     const svg = svgOf(el, W, H);
     const isSel = (a, b) => ST.sel && ST.sel.t === 'gg' && ((ST.sel.a === a && ST.sel.b === b) || (ST.sel.a === b && ST.sel.b === a));
     for (let i = r0; i < k; i++) {
@@ -4533,12 +4542,13 @@ function chordCard(box, M) {
       svg.append('text').attr('x', 17).attr('y', y + c / 2).attr('dy', '0.35em').attr('font-size', 12).attr('font-weight', 600).attr('fill', '#445368').text(G[i].short);
       for (let j = 0; j <= i; j++) {
         if (j === i && (!diag || G[i].id < 0)) continue;
-        const v = N[i][j], x = L + j * c, sel = isSel(G[i].id, G[j].id), g = svg.append('g').style('cursor', v ? 'pointer' : 'default');
-        g.append('rect').attr('x', x + 1.5).attr('y', y + 1.5).attr('width', c - 3).attr('height', c - 3).attr('rx', 5).attr('fill', v ? ramp(v) : '#F1F4F8')
-          .attr('stroke', sel ? '#17263A' : j === i ? '#C9D3DE' : 'none').attr('stroke-width', sel ? 2 : 1);
-        if (!v) continue;
+        const v = N[i][j], x = L + j * c, sel = isSel(G[i].id, G[j].id);
+        if (!v) continue;   // an empty cell stays blank
+        const g = svg.append('g').style('cursor', 'pointer'), fill = ramp(v);
+        if (sel) g.append('rect').attr('x', x).attr('y', y).attr('width', c).attr('height', c).attr('rx', 6.5).attr('fill', '#1A5276');   // the selected cell: a navy ring with a white inset
+        g.append('rect').attr('x', x + 1.5).attr('y', y + 1.5).attr('width', c - 3).attr('height', c - 3).attr('rx', 5).attr('fill', fill).attr('stroke', sel ? '#fff' : j === i ? '#B9C6D3' : 'none').attr('stroke-width', sel ? 2 : 1);
         g.append('text').attr('x', x + c / 2).attr('y', y + c / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').attr('font-size', 12.5).attr('font-family', "'IBM Plex Mono', Menlo, monospace")
-          .attr('font-weight', 500).attr('fill', Math.sqrt(v) / Math.sqrt(mx) > 0.55 ? '#fff' : '#17263A').text(v);
+          .attr('font-weight', 500).attr('fill', dark(fill) ? '#fff' : '#17263A').text(v);
         g.on('click', () => { ST.sel = { t: 'gg', a: G[i].id, b: G[j].id }; draw(); })
           .on('mousemove', (e) => showTip(`<b>${esc(G[i].short)} ${i === j ? '(inside)' : '↔ ' + esc(G[j].short)}</b><br>${v} pair${v === 1 ? '' : 's'}`, e.clientX, e.clientY)).on('mouseleave', hideTip);
       }
@@ -4552,41 +4562,57 @@ function chordCard(box, M) {
     const N = keep.map((i) => keep.map((j) => N0[i][j])), S = keep.map((i) => keep.map((j) => S0[i][j])), off = G0.filter((g, i) => !keep.includes(i));
     q('.cc-off').textContent = off.length ? `Not on the circle (no pairs ${ST.inside ? '' : 'to other communities'}): ${off.map((g) => g.short).join(', ')}.` : '';
     const el = q('.cc-plot'); el.innerHTML = ''; el.dataset.v = 'comm';
-    const W = 760, R = 270, Mx = G.map((g, i) => G.map((h, j) => (i === j && !ST.inside ? 0 : ST.wt === 'n' ? N[i][j] : S[i][j])));
+    const W = 840, R = 264, Mx = G.map((g, i) => G.map((h, j) => (i === j && !ST.inside ? 0 : ST.wt === 'n' ? N[i][j] : S[i][j])));
     const svg = svgOf(el, W, W, [-W / 2, -W / 2, W, W]);
     if (!Mx.some((r) => r.some((v) => v > 0))) { svg.append('text').attr('text-anchor', 'middle').attr('fill', '#627085').attr('font-size', 18).text('No pairs between communities'); return; }
     const chords = d3.chord().padAngle(0.035).sortSubgroups(d3.descending).sortChords(d3.descending)(Mx);
-    const arc = d3.arc().innerRadius(R).outerRadius(R + 16), rib = d3.ribbon().radius(R - 2).padAngle(0.004);
+    const arc = d3.arc().innerRadius(R).outerRadius(R + 22), rib = d3.ribbon().radius(R - 5).padAngle(0.004), defs = svg.append('defs');
     const hit = (c) => ST.sel && ST.sel.t === 'gg' && ((G[c.source.index].id === ST.sel.a && G[c.target.index].id === ST.sel.b) || (G[c.source.index].id === ST.sel.b && G[c.target.index].id === ST.sel.a));
-    const op = (c) => (ST.sel && ST.sel.t === 'gg' ? (hit(c) ? 0.9 : 0.12) : 0.72);
-    const rb = svg.append('g').selectAll('path').data(chords).join('path').attr('d', rib)
-      .attr('fill', (c) => { const a = G[c.source.index], b = G[c.target.index]; return ((size.get(a.id) || 0) <= (size.get(b.id) || 0) ? a : b).color; })   // the smaller community's color
-      .attr('fill-opacity', op).attr('stroke', '#fff').attr('stroke-width', 0.6).style('cursor', 'pointer')
+    // rest 0.5, a selection 0.85 against 0.08; no outline at rest (white strokes cut overlaps into slivers), the hit outlined in its own darker hue
+    const sel = () => ST.sel && ST.sel.t === 'gg', op = (c) => (sel() ? (hit(c) ? 0.85 : 0.08) : 0.5), aop = (d) => (sel() ? (G[d.index].id === ST.sel.a || G[d.index].id === ST.sel.b ? 1 : 0.35) : 1);
+    const pt = (a, r) => [r * Math.sin(a), -r * Math.cos(a)], mid = (x) => (x.startAngle + x.endAngle) / 2;
+    const fillOf = (c, ix) => { const a = G[c.source.index].color, b = G[c.target.index].color; if (a === b) return a;   // each ribbon a gradient between its two communities
+      const p = pt(mid(c.source), R), r = pt(mid(c.target), R), lg = defs.append('linearGradient').attr('id', `cc-r${ix}`).attr('gradientUnits', 'userSpaceOnUse').attr('x1', p[0]).attr('y1', p[1]).attr('x2', r[0]).attr('y2', r[1]);
+      lg.append('stop').attr('offset', '0%').attr('stop-color', a); lg.append('stop').attr('offset', '100%').attr('stop-color', b); return `url(#cc-r${ix})`; };
+    const order = [...chords].sort((x, y) => y.source.value + y.target.value - x.source.value - x.target.value);   // the widest first, so thin ribbons stay on top
+    const rb = svg.append('g').selectAll('path').data(order).join('path').attr('d', rib).attr('fill', fillOf)
+      .attr('fill-opacity', op).attr('stroke', (c) => (sel() && hit(c) ? d3.color(G[c.source.index].color).darker(0.9) : 'none')).attr('stroke-width', 0.75).style('cursor', 'pointer')
       .on('mousemove', (e, c) => { const a = G[c.source.index], b = G[c.target.index], n = N[c.source.index][c.target.index];
         showTip(`<b>${esc(a.short)} ${a === b ? '(inside)' : '↔ ' + esc(b.short)}</b><br>${n} pair${n === 1 ? '' : 's'} · summed iLIS ${S[c.source.index][c.target.index].toFixed(2)}`, e.clientX, e.clientY); })
       .on('mouseleave', hideTip).on('click', (e, c) => { ST.sel = { t: 'gg', a: G[c.source.index].id, b: G[c.target.index].id }; draw(); });
     const grp = svg.append('g').selectAll('g').data(chords.groups).join('g');
-    grp.append('path').attr('d', arc).attr('fill', (d) => G[d.index].color).attr('stroke', '#fff').style('cursor', 'pointer')
-      .on('mouseenter', (e, d) => rb.attr('fill-opacity', (c) => (c.source.index === d.index || c.target.index === d.index ? 0.88 : 0.08)))
+    const arcs = grp.append('path').attr('d', arc).attr('fill', (d) => G[d.index].color).attr('opacity', aop).style('cursor', 'pointer')
+      .on('mouseenter', (e, d) => { const on = (c) => c.source.index === d.index || c.target.index === d.index; rb.attr('fill-opacity', (c) => (on(c) ? 0.85 : 0.18));
+        arcs.attr('opacity', (x) => (x.index === d.index || chords.some((c) => on(c) && (c.source.index === x.index || c.target.index === x.index)) ? 1 : 0.45)); })
       .on('mousemove', (e, d) => { const g = G[d.index], out = N[d.index].reduce((s, v, j) => s + (j === d.index ? 0 : v), 0); showTip(`<b>${esc(g.short)} · ${esc(g.name)}</b><br>${fmtInt(size.get(g.id) || 0)} proteins · ${out} pairs to other communities`, e.clientX, e.clientY); })
-      .on('mouseleave', () => { hideTip(); rb.attr('fill-opacity', op); });
-    grp.append('text').each((d) => { d.mid = (d.startAngle + d.endAngle) / 2; }).attr('dy', '0.35em').attr('font-size', 19).attr('font-weight', 600).attr('fill', '#17263A')
-      .attr('transform', (d) => `rotate(${(d.mid * 180) / Math.PI - 90}) translate(${R + 26}) ${d.mid > Math.PI ? 'rotate(180)' : ''}`).attr('text-anchor', (d) => (d.mid > Math.PI ? 'end' : null))
-      .text((d) => (d.endAngle - d.startAngle > 0.06 ? `${G[d.index].short} ${size.get(G[d.index].id) || 0}` : G[d.index].short));
+      .on('mouseleave', () => { hideTip(); rb.attr('fill-opacity', op); arcs.attr('opacity', aop); });
+    // labels upright, "C1 (79)": the name, then its protein count in gray, anchored by side so neither runs into the circle
+    const lab = grp.append('text').each((d) => { d.mid = mid(d); d.p = pt(d.mid, R + 34); }).attr('x', (d) => d.p[0]).attr('y', (d) => d.p[1])
+      .attr('dy', (d) => (Math.cos(d.mid) > 0.25 ? '0' : Math.cos(d.mid) < -0.25 ? '0.8em' : '0.35em'))
+      .attr('text-anchor', (d) => (Math.abs(Math.sin(d.mid)) < 0.25 ? 'middle' : Math.sin(d.mid) > 0 ? 'start' : 'end')).attr('opacity', aop);
+    lab.append('tspan').attr('font-size', 18).attr('font-weight', 600).attr('fill', '#17263A').text((d) => G[d.index].short);
+    lab.append('tspan').attr('font-size', 15).attr('fill', '#6B7785').text((d) => ` (${fmtInt(size.get(G[d.index].id) || 0)})`)
+      .append('title').text((d) => `${fmtInt(size.get(G[d.index].id) || 0)} proteins`);
+    {   // neighbors on small arcs collide: a label that overlaps one already placed drops its count, then steps outward until clear
+      const placed = [], over = (a, b) => a.x < b.x + b.width && b.x < a.x + a.width && a.y < b.y + b.height && b.y < a.y + a.height;
+      lab.each(function (d) { const el = this; let box = el.getBBox(); if (!box.width) return;
+        if (placed.some((p) => over(box, p))) { d3.select(el).select('tspan:nth-child(2)').attr('display', 'none'); box = el.getBBox(); }
+        for (let k = 1; k <= 6 && placed.some((p) => over(box, p)); k++) { const q = pt(d.mid, R + 34 + k * 20); d3.select(el).attr('x', q[0]).attr('y', q[1]); box = el.getBBox(); }
+        placed.push(box); }); }
   }
   function drawProteins(G, gi, E) {   // every protein around the ring by community; pairs drawn protein to protein, between communities in a two-color gradient
     const el = q('.cc-plot'); el.innerHTML = ''; el.dataset.v = 'prot';
     const W = 860, R = 300, nodes = M.nodes.map((n, i) => ({ ...n, i })).filter((n) => gi.has(n.g));
     const deg = new Map(); for (const e of E) { deg.set(e.a, (deg.get(e.a) || 0) + 1); deg.set(e.b, (deg.get(e.b) || 0) + 1); }
     nodes.sort((x, y) => gi.get(x.g) - gi.get(y.g) || (deg.get(y.i) || 0) - (deg.get(x.i) || 0) || (x.gene < y.gene ? -1 : 1));
-    const gap = 0.05, n = nodes.length, step = (2 * Math.PI - gap * G.length) / Math.max(1, n), ang = new Map(), span = new Map(); let t = 0, prev = null;
+    const gap = 0.06, n = nodes.length, step = (2 * Math.PI - gap * G.length) / Math.max(1, n), ang = new Map(), span = new Map(); let t = 0, prev = null;
     for (const x of nodes) { if (prev !== null && prev !== x.g) t += gap; ang.set(x.i, t + step / 2); const s = span.get(x.g) || [t, t]; s[1] = t + step; span.set(x.g, s); t += step; prev = x.g; }
     const pt = (a, r) => [r * Math.sin(a), -r * Math.cos(a)], svg = svgOf(el, W, W, [-W / 2, -W / 2, W, W]), defs = svg.append('defs');
     const GS = G.filter((g) => span.has(g.id));
     svg.append('g').selectAll('path').data(GS).join('path').attr('d', (g) => d3.arc()({ innerRadius: R + 2, outerRadius: R + 9, startAngle: span.get(g.id)[0], endAngle: span.get(g.id)[1] })).attr('fill', (g) => g.color);
     const hot = ST.sel && ST.sel.t === 'p' ? ST.sel.i : null, sg = ST.sel && ST.sel.t === 'gg' ? ST.sel : null, gOf = (i) => M.nodes[i].g;
     const on = (e) => (hot != null ? e.a === hot || e.b === hot : sg ? ((gOf(e.a) === sg.a && gOf(e.b) === sg.b) || (gOf(e.a) === sg.b && gOf(e.b) === sg.a)) : true);
-    const ws = M.edges.map((e) => e.w), wid = d3.scaleLinear().domain([Math.min(...ws), Math.max(...ws)]).range([0.6, 3.2]), lit = (e) => (on(e) ? (hot != null || sg ? 0.95 : 0.55) : 0.06);
+    const ws = M.edges.map((e) => e.w), wid = d3.scaleLinear().domain([Math.min(...ws), Math.max(...ws)]).range([0.6, 3.2]), lit = (e) => (on(e) ? (hot != null || sg ? 0.9 : 0.22) : hot != null || sg ? 0 : 0.05);
     const show = E.filter((e) => ST.inside || gOf(e.a) !== gOf(e.b)).sort((x, y) => on(x) - on(y) || x.w - y.w);
     const lines = svg.append('g').attr('fill', 'none').selectAll('path').data(show).join('path')
       .attr('d', (e) => { const p = pt(ang.get(e.a), R - 2), r = pt(ang.get(e.b), R - 2), f = gOf(e.a) === gOf(e.b) ? 0.62 : 0.12; return `M${p}Q${(p[0] + r[0]) * f},${(p[1] + r[1]) * f} ${r}`; })
@@ -4596,13 +4622,14 @@ function chordCard(box, M) {
       .attr('stroke-width', (e) => wid(e.w)).attr('stroke-opacity', lit).attr('stroke-linecap', 'round')
       .on('mousemove', (ev, x) => showTip(`<b>${esc(M.nodes[x.a].gene)} – ${esc(M.nodes[x.b].gene)}</b><br>best iLIS ${x.w.toFixed(3)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
     const lab = svg.append('g').selectAll('g').data(nodes).join('g').attr('transform', (x) => `rotate(${(ang.get(x.i) * 180) / Math.PI - 90}) translate(${R + 13})`).style('cursor', 'pointer');
-    lab.append('text').attr('dy', '0.32em').attr('font-size', n > 220 ? 7.5 : n > 150 ? 9 : 10.5).attr('transform', (x) => (ang.get(x.i) > Math.PI ? 'rotate(180)' : null))
+    const named = new Set(); if (n > 120) { for (const g of G) nodes.filter((x) => x.g === g.id).slice(0, 3).forEach((x) => named.add(x.i)); if (hot != null) named.add(hot); }   // a big ring names the three hubs of each community (hover names any)
+    lab.append('text').attr('dy', '0.32em').attr('font-size', n > 120 ? 12.5 : 10.5).attr('display', (x) => (n <= 120 || named.has(x.i) ? null : 'none')).attr('transform', (x) => (ang.get(x.i) > Math.PI ? 'rotate(180)' : null))
       .attr('text-anchor', (x) => (ang.get(x.i) > Math.PI ? 'end' : null)).attr('fill', '#17263A').attr('font-weight', (x) => (hot === x.i ? 700 : 400)).text((x) => x.gene);
-    lab.on('mouseenter', (ev, x) => lines.attr('stroke-opacity', (l) => (l.a === x.i || l.b === x.i ? 0.95 : 0.04)))
+    lab.on('mouseenter', (ev, x) => lines.attr('stroke-opacity', (l) => (l.a === x.i || l.b === x.i ? 0.9 : 0.05)))
       .on('mousemove', (ev, x) => { const d = E.filter((l) => l.a === x.i || l.b === x.i); showTip(`<b>${esc(x.gene)}</b> · ${esc(G[gi.get(x.g)].short)}<br>${d.length} pair${d.length === 1 ? '' : 's'}, ${d.filter((l) => gOf(l.a) !== gOf(l.b)).length} to other communities`, ev.clientX, ev.clientY); })
       .on('mouseleave', () => { hideTip(); lines.attr('stroke-opacity', lit); }).on('click', (ev, x) => { ST.sel = hot === x.i ? null : { t: 'p', i: x.i }; draw(); });
     svg.append('g').selectAll('text').data(GS).join('text').each((g) => { g.mid = (span.get(g.id)[0] + span.get(g.id)[1]) / 2; })
-      .attr('x', (g) => pt(g.mid, R - 18)[0]).attr('y', (g) => pt(g.mid, R - 18)[1]).attr('text-anchor', 'middle').attr('dy', '0.35em').attr('font-size', 12).attr('font-weight', 700)
+      .attr('x', (g) => pt(g.mid, R - 18)[0]).attr('y', (g) => pt(g.mid, R - 18)[1]).attr('text-anchor', 'middle').attr('dy', '0.35em').attr('font-size', 15).attr('font-weight', 700)
       .attr('fill', (g) => g.color).text((g) => (span.get(g.id)[1] - span.get(g.id)[0] > 0.12 ? g.short : ''));
   }
   const gshort = (g) => { const x = groupList().find((y) => y.id === g); return x ? x.short : 'other'; };
@@ -4612,7 +4639,7 @@ function chordCard(box, M) {
   const dlText = (text, name, type) => { const u = URL.createObjectURL(new Blob([text], { type })), a = document.createElement('a'); a.href = u; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
   function drawPairs() {
     const G = groupList(), gs = new Map(G.map((g) => [g.id, g])), E = edgesNow(), s = ST.sel;
-    let L = [], head = 'Pairs', sub = 'Click a ribbon, a cell or a protein.', fname = 'pairs';
+    let L = E.filter((e) => M.nodes[e.a].g !== M.nodes[e.b].g).sort((x, y) => y.w - x.w).slice(0, 10), head = 'Strongest pairs between communities', sub = L.length ? `The top ${L.length} by iLIS. Click a ribbon, a cell or a protein for its pairs.` : 'No pairs between communities. Click a cell or a protein for its pairs.', fname = 'top_between';
     if (s && s.t === 'gg') { const a = gs.get(s.a), b = gs.get(s.b); if (a && b) { L = E.filter((e) => { const x = M.nodes[e.a].g, y = M.nodes[e.b].g; return (x === s.a && y === s.b) || (x === s.b && y === s.a); });
       head = a === b ? `Inside ${a.short}` : `${a.short} ↔ ${b.short}`; fname = a === b ? `inside_${a.short}` : `${a.short}_${b.short}`; sub = `${L.length} pair${L.length === 1 ? '' : 's'} · ${esc(a.name)}${a === b ? '' : ' and ' + esc(b.name)}`; } }
     if (s && s.t === 'p') { const x = M.nodes[s.i]; L = E.filter((e) => e.a === s.i || e.b === s.i); head = x.gene; fname = x.gene; sub = `${L.length} pair${L.length === 1 ? '' : 's'}`; }
@@ -4656,7 +4683,7 @@ async function viewNetwork(spId, q) {
     // name size, outline and color, protein border, community outlines, the strongest pairs per protein, only pairs inside a community
     nsize: numIn(q.get('nsize'), 0.3, 3, 1), ewid: numIn(q.get('ew'), 0.2, 3, 1), lbdeg: numIn(q.get('lbdeg'), 1, 50, 1, true), lbtop: numIn(q.get('lbtop'), 0, 500, 0, true),
     lbsize: numIn(q.get('lbsize'), 6, 24, 12, true), lbout: q.get('lbout') !== '0', lbcol: /^[0-9a-f]{6}$/i.test(q.get('lbcol') || '') ? '#' + q.get('lbcol') : '#17263A', nbord: q.get('nbord') !== '0',
-    hulls: q.get('hulls') === '1', topk: numIn(q.get('topk'), 0, 50, 0, true), intra: q.get('intra') === '1' };   // communities: MCL inflation, pair weight, runs kept by modularity, seed (0: node order), smallest outlined
+    hulls: q.get('hulls') === '1', pal: Object.hasOwn(PALETTES, q.get('pal') || '') ? q.get('pal') : 'tableau', topk: numIn(q.get('topk'), 0, 50, 0, true), intra: q.get('intra') === '1' };   // communities: MCL inflation, pair weight, runs kept by modularity, seed (0: node order), smallest outlined
   const eg = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 5).map((r) => r.gene).join(', ');
   const GC = new Map();   // community colors the reader picked in the Communities list, by group key (this page only)
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
@@ -4714,6 +4741,7 @@ async function viewNetwork(spId, q) {
           <label class="ctl" title="name color">Name color <input type="color" id="nw-lbcol" value="${S.lbcol}" aria-label="Name color"></label>
           <label class="ctl"><input type="checkbox" id="nw-nbord"${S.nbord ? ' checked' : ''}> protein border</label>
           <label class="ctl" title="outline each community and name it on the drawing"><input type="checkbox" id="nw-hulls"${S.hulls ? ' checked' : ''}> community outlines</label>
+          <label class="ctl" title="the palette of the communities: the network, its outlines, the Communities list and the community chord. A color picked by hand in the Communities list stays">Community colors <select id="nw-pal">${Object.entries(PALETTES).map(([k, [l]]) => `<option value="${k}"${S.pal === k ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
           <label class="ctl" title="draw only each protein's strongest pairs (a pair stays when it is among the strongest of either protein); 0 draws every pair. The communities are found on every pair">Strongest <input type="number" id="nw-topk" min="0" max="50" step="1" value="${S.topk}" style="width:52px"> pairs per protein</label>
           <label class="ctl" title="draw only the pairs inside a community"><input type="checkbox" id="nw-intra"${S.intra ? ' checked' : ''}> only pairs inside a community</label></div>
         <span class="optlab">Share</span><div class="controls"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
@@ -4728,7 +4756,7 @@ async function viewNetwork(spId, q) {
 
       <div class="netkey"><div class="kbkey" id="nw-key"></div><div class="kbkey" id="nw-nkey"></div>
         <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div>
-<div id="nw-chord-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Community chord</h3><span class="muted">the pairs between communities, around one circle</span></div><div id="nw-chord"></div></div>
+<div id="nw-chord-wrap" hidden><div class="cc-head"><h3>Community chord</h3><div class="muted">The pairs between communities, around one circle.</div></div><div id="nw-chord"></div></div>
 <div id="nw-heat-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Pairs as a matrix</h3><div class="controls" style="margin:0"><span class="muted" id="nw-heat-note"></span>
         <label class="ctl" title="the matrix shows every folded pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="nw-heat-show"><option value="all">every folded pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label>
         <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
@@ -4745,7 +4773,7 @@ async function viewNetwork(spId, q) {
     put('mind', S.mind, 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); put('xsp', S.xsp, ''); if (S.xsp || all) put('xo', S.xo, 'never'); put('sig', S.sig, false); if (S.add === 'tree' || all) put('prize', S.prize, ''); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'add');
     put('lay', S.lay, 'force'); put('lseed', S.lseed, 0); put('iters', S.liter, 0); put('space', S.lspace, 1); put('rep', S.lrep, 1); put('wpull', S.lwt, true);
     if (all || S.grp !== 'leiden') qs.set('grp', S.grp || 'none'); put('res', S.res, 1); put('infl', S.infl, 2); put('cw', S.cwt, 'ilis'); put('runs', S.cruns, 1); put('cseed', S.cseed, 0); put('cmin', S.cmin, 3);
-    put('nsize', S.nsize, 1); put('ew', S.ewid, 1); put('lbdeg', S.lbdeg, 1); put('lbtop', S.lbtop, 0); put('lbsize', S.lbsize, 12); put('lbout', S.lbout, true); put('lbcol', S.lbcol.slice(1), '17263A'); put('nbord', S.nbord, true); put('hulls', S.hulls, false); put('topk', S.topk, 0); put('intra', S.intra, false);
+    put('nsize', S.nsize, 1); put('ew', S.ewid, 1); put('lbdeg', S.lbdeg, 1); put('lbtop', S.lbtop, 0); put('lbsize', S.lbsize, 12); put('lbout', S.lbout, true); put('lbcol', S.lbcol.slice(1), '17263A'); put('nbord', S.nbord, true); put('hulls', S.hulls, false); put('pal', S.pal, 'tableau'); put('topk', S.topk, 0); put('intra', S.intra, false);
     return qs; };
   // Suggest a number of partners per protein (exploratory). For ranks 1-2, 3-5, 6-10 ... 51-100: the share of each protein's
   // partner at that rank that is itself a protein-of-interest or has a predicted pair with another one, against 100 random
@@ -5166,7 +5194,7 @@ async function viewNetwork(spId, q) {
     if (lr) nodes.forEach((d) => { const h = home(d); if (h) { d.x = h[0] + (lr() - 0.5) * 120; d.y = h[1] + (lr() - 0.5) * 120; } else { d.x = FW * (0.1 + 0.8 * lr()); d.y = FH * (0.1 + 0.8 * lr()); } });
     else if (groups.length && !seed) nodes.forEach((d, n) => { const h = home(d); if (h) { d.x = h[0] + 20 * Math.cos(n); d.y = h[1] + 20 * Math.sin(n); } });
     const catOrder = S.grp.startsWith('col:') ? [...gname2.keys()].sort((a, b) => a.localeCompare(b)) : null;   // the same order nodeColors gives a category column
-    const hullG = g.append('g').attr('class', 'nw-hulls').style('pointer-events', 'none'), GCOL = (n) => GC.get(groups[n]) || (catOrder ? TAB10[catOrder.indexOf(groups[n]) % TAB10.length] : commHue(n));
+    const hullG = g.append('g').attr('class', 'nw-hulls').style('pointer-events', 'none'), GCOL = (n) => GC.get(groups[n]) || (catOrder ? (S.pal === 'tableau' ? TAB10[catOrder.indexOf(groups[n]) % TAB10.length] : palHue(S.pal, catOrder.indexOf(groups[n]))) : palHue(S.pal, n));   // the palette for table-column groups too
     const hulls = hullG.selectAll('g').data(groups).join('g'); hullG.attr('display', S.hulls ? null : 'none');   // outlines are a display option (off, as LIVIA's network page)
     hulls.append('path').attr('fill', (k, n) => GCOL(n)).attr('fill-opacity', 0.07).attr('stroke', (k, n) => GCOL(n)).attr('stroke-opacity', 0.45).attr('stroke-width', 1.5).attr('stroke-linejoin', 'round');
     const drawHulls = () => { if (!groups.length || !S.hulls) return; hulls.each(function (k) { const pts = []; for (const d of nodes) if (gk.get(d.id) === k && d.x != null) { const rr = rd(d) + 14; for (let a = 0; a < 6; a++) pts.push([d.x + rr * Math.cos(a * Math.PI / 3), d.y + rr * Math.sin(a * Math.PI / 3)]); }
@@ -5257,9 +5285,11 @@ async function viewNetwork(spId, q) {
         return `<div class="nw-mod"><div class="hd"><input type="color" value="${GCOL(m.n)}" data-k="${esc(m.k)}" aria-label="color of ${esc(nm(m.k))}" title="community color">${esc(nm(m.k))}<a class="hub" href="#/${sp.id}/${hub.row.key}" title="the protein with the most pairs here: its page, with its partners and predicted binding sites">${esc(hub.row.gene)} →</a></div>
           <div class="st">${fmtInt(m.mem.length)} proteins · ${fmtInt(m.e)} pairs · mean iLIS ${m.mean.toFixed(3)}</div>
           <div class="mem">${m.mem.slice(0, 24).map((d) => `<a href="#/${sp.id}/${d.row.key}">${esc(d.row.gene)}</a>`).join(', ')}${m.mem.length > 24 ? ` <span class="muted">+${fmtInt(m.mem.length - 24)} more</span>` : ''}</div></div>`; }).join('');
-      box2.querySelectorAll('input[type=color]').forEach((inp) => { inp.oninput = () => { GC.set(inp.dataset.k, inp.value); recolor();
-        hulls.select('path').attr('fill', (k, n) => GCOL(n)).attr('stroke', (k, n) => GCOL(n)); hullTxt.each(function (k, n) { d3.select(this).select('tspan').attr('fill', GCOL(n)); }); }; });
+      box2.querySelectorAll('input[type=color]').forEach((inp) => { inp.oninput = () => { GC.set(inp.dataset.k, inp.value); paintGroups(false); }; });
     };
+    // the community colors changed (a palette, a hand pick): every place that shows them, nothing moves
+    const paintGroups = (list = true) => { recolor(); hulls.select('path').attr('fill', (k, n) => GCOL(n)).attr('stroke', (k, n) => GCOL(n));
+      hullTxt.each(function (k, n) { d3.select(this).select('tspan').attr('fill', GCOL(n)); }); if (list) mods(); paintChord(true); };
     mods();
     const placeLabels = liftLabels(g, node);
     hullLabG.raise();   // group names above the protein-name layer too
@@ -5314,13 +5344,14 @@ async function viewNetwork(spId, q) {
       restyle(); relabel(d3.zoomTransform(svg.node()).k); };
     net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote, xo, XO, disp };
     if (EXPECT) { const X = EXPECT; EXPECT = null; checkLoaded(X); }   // loaded settings: does this drawing match the saved one?
-    {   // the community chord: the groups of this drawing in their colors, every pair by its best iLIS
+    function paintChord(keep = false) {   // the community chord: the groups of this drawing in their colors, every pair by its best iLIS
       const wrap = $('#nw-chord-wrap'), gidx = new Map(groups.map((k, n) => [k, n])), ix = new Map(nodes.map((d, i) => [d.id, i])), cat = S.grp.startsWith('col:');
       wrap.hidden = groups.length < 2;
       if (!wrap.hidden) chordCard($('#nw-chord'), { sp, groups: groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${n + 1}`, color: GCOL(n) })),
         nodes: nodes.map((d) => { const k = gk.get(d.id); return { gene: d.row.gene, key: d.row.key, g: gidx.has(k) ? gidx.get(k) : -1 }; }),
-        edges: links.map((l) => ({ a: ix.get(typeof l.source === 'object' ? l.source.id : l.source), b: ix.get(typeof l.target === 'object' ? l.target.id : l.target), w: l.best })).filter((e) => e.a != null && e.b != null && Number.isFinite(e.w)) });
+        edges: links.map((l) => ({ a: ix.get(typeof l.source === 'object' ? l.source.id : l.source), b: ix.get(typeof l.target === 'object' ? l.target.id : l.target), w: l.best })).filter((e) => e.a != null && e.b != null && Number.isFinite(e.w)) }, keep);
     }
+    paintChord(); net.repaint = paintGroups;
     heatArgs = [nodes, links, gk, groups, gname2, deg]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
   }
   $('#nw-go').onclick = () => draw();
@@ -5345,7 +5376,8 @@ async function viewNetwork(spId, q) {
     [['#nw-nsize', 'nsize', 0.3, 3, false], ['#nw-ew', 'ewid', 0.2, 3, false], ['#nw-lbdeg', 'lbdeg', 1, 50, true], ['#nw-lbtop', 'lbtop', 0, 500, true], ['#nw-lbsize', 'lbsize', 6, 24, true], ['#nw-topk', 'topk', 0, 50, true]].forEach(([id, k, lo, hi, int]) => {
       $(id).oninput = () => { const raw = $(id).value.trim(), v = raw === '' ? (k === 'lbtop' || k === 'topk' ? 0 : null) : int ? parseInt(raw, 10) : parseFloat(raw); if (v == null || !Number.isFinite(v) || v < lo || v > hi) return; dset(k, v); }; });
     [['#nw-lbout', 'lbout'], ['#nw-nbord', 'nbord'], ['#nw-hulls', 'hulls'], ['#nw-intra', 'intra']].forEach(([id, k]) => { $(id).onchange = (e) => dset(k, e.target.checked); });
-    $('#nw-lbcol').oninput = (e) => dset('lbcol', e.target.value); }
+    $('#nw-lbcol').oninput = (e) => dset('lbcol', e.target.value);
+    $('#nw-pal').onchange = (e) => { S.pal = e.target.value; dURL(); if (net && net.repaint) net.repaint(); }; }
   numBox('#nw-lseed', 'lseed', 0, 999999, true, 0); numBox('#nw-liter', 'liter', 10, 5000, true, 0); numBox('#nw-lspace', 'lspace', 0.3, 3); numBox('#nw-lrep', 'lrep', 0.2, 5);
   for (const [id, key] of [['#nw-lseed', 'lseed'], ['#nw-cseed', 'cseed']]) $(`${id}-new`).onclick = () => { S[key] = 1 + Math.floor(Math.random() * 999998); $(id).value = S[key]; redraw(); };   // a new seed, shown in its box and kept in the link
   $('#nw-lwt').onchange = (e) => { S.lwt = e.target.checked; redraw(); };
@@ -5432,7 +5464,7 @@ async function viewNetwork(spId, q) {
     color: 'what the proteins are colored by: a table column, or comm: for the communities', exp: 'proteins expanded by clicks, in the order clicked', click: 'what a click on a protein does',
     lay: 'layout: force, fr (spring, Fruchterman-Reingold), kk (Kamada-Kawai) or circle', lseed: 'layout seed (0: the fixed start)', iters: "layout rounds (0: the layout's own number)", space: 'spacing (force, spring)', rep: 'repulsion (force)', wpull: '1: stronger pairs closer (force, spring)',
     grp: 'groups: leiden (the default), comm (Louvain), mcl (MCL), cc (connected parts), col:<table column> or none', res: 'resolution (Leiden, Louvain)', infl: 'inflation (MCL)', cw: 'pair weight for communities: ilis (best iLIS), iptm (best ipTM) or eq (equal)',
-    runs: 'runs, the highest modularity kept (Leiden, Louvain)', cseed: 'community seed (0: the order of the list)', cmin: 'the smallest group outlined',
+    runs: 'runs, the highest modularity kept (Leiden, Louvain)', cseed: 'community seed (0: the order of the list)', cmin: 'the smallest group outlined', pal: 'community palette: tableau (the default), okabe, muted, set2, observable or tab20',
     xsp: 'orthologs: the species (or all) whose predictions between the orthologs are checked (blank: none)', xo: "ortholog-only pairs drawn dashed: never (where never folded here), below (also where scored below the cutoff here), blank: none" };
   const endsOf = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
   const groupsNow = () => net.groups.map((k) => ({ name: net.gname2.get(k) || k, proteins: net.nodes.filter((d) => net.gk.get(d.id) === k).map((d) => d.row.key) }));

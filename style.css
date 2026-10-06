@@ -777,12 +777,12 @@ button.linkish:focus-visible { outline: 2px solid #1A5276; outline-offset: 2px; 
 .cc-seg button + button { border-left: 1px solid var(--line); }
 .cc-grid { display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 16px; align-items: start; }
 @media (max-width: 1000px) { .cc-grid { grid-template-columns: minmax(0, 1fr); } }
-.cc-plot svg { display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto; }   /* the circle at a reading size */
+.cc-head { margin: 18px 0 4px; }
+.cc-head h3 { margin: 0; }
+.cc-head .muted { font-size: 13px; }
+.cc-plot svg { display: block; width: 100%; max-width: 640px; height: auto; margin: 0 auto; }   /* the circle at a reading size */
 .cc-plot[data-v="prot"] svg { max-width: 760px; }   /* every protein named: a little more room */
 .cc-off { font-size: 12.5px; margin: 4px 0; }
-.cc-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--ink-2); }
-.cc-legend span { display: inline-flex; align-items: center; gap: 5px; }
-.cc-legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
 .cc-side { display: grid; gap: 14px; min-width: 0; grid-template-columns: minmax(0, 1fr); }
 .cc-box { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--card); min-width: 0; }
 .cc-h { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-family: var(--display); font-size: 15px; }
