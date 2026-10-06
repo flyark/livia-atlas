@@ -2312,10 +2312,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <label>show <select id="sc-pts"><option value="partner">one per partner (best model)</option><option value="all">every model</option><option value="rank1">rank-1 per pair</option></select></label>
           <input type="search" id="sc-find" placeholder="Find partner" aria-label="Find a partner in the plot" style="width:140px"></div></div>
       <div class="overview"><div><div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="muted" id="sc-def" style="margin:-4px 0 8px" hidden></div><div class="plot" id="scat2"><canvas id="scatter-canvas" role="img" aria-label="Each partner's scores, one metric against another"></canvas></div><div class="legend" id="sc-legend"></div></div>
-        <div><h3>Top partners <span class="muted">by the share of models past the 10% cutoff, then average iLIS; at equal shares, one-model pairs last</span></h3>
-          <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>iLIS<br>best</span><span>iLIS<br>avg</span><span>ipTM<br>best</span><span>ipTM<br>avg</span><span title="models past the 10% FPR cutoff, of the pair's models">models<br>past</span></div>
+        <div><h3>Top partners <span class="muted">by the share of models past the 10% cutoff, then iLIS; at equal shares, one-model pairs last. Each row: the pair's best-iLIS model</span></h3>
+          <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>3D</span><span>iLIS</span><span>iLISA</span><span>ipTM</span><span title="models past the 10% FPR cutoff, of the pair's models">models<br>past</span></div>
           <ol class="toplist" id="toplist"></ol>
-          <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:${BAND[1]}"></i>1%</span><span><i style="background:${BAND[5]}"></i>5%</span><span><i style="background:${BAND[10]}"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span><span class="tl-avgkey"><em>italic</em>: average of fewer than 5 models (2–4), no band; the average cutoffs were set on five-model runs</span></div></div></div></div>
+          <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:${BAND[1]}"></i>1%</span><span><i style="background:${BAND[5]}"></i>5%</span><span><i style="background:${BAND[10]}"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><label class="ctl muted" title="a residue number or a variant (983, T983A): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or T983A" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg" title="the cutoff of this card and of the frequency and fingerprint cards below it; kept in the link (other cards have their own)">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === CUT0 ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
@@ -2478,8 +2478,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   if (ONE) {
     $('#c-partners .card-head .muted').textContent = 'each partner, one model per pair'; $('#sc-pts').closest('label').style.display = 'none';
     $('#c-partners h3 .muted').textContent = 'by iLIS';
-    $('.tl-head').innerHTML = '<span></span><span>Partner</span><span>Cluster</span><span>iLIS</span><span>ipTM</span>';
-    $('.tl-head').classList.add('one'); $('#toplist').classList.add('one'); { const ak = app.querySelector('.tl-avgkey'); if (ak) ak.style.display = 'none'; }   // no averages, so no key for them
+    $('.tl-head').innerHTML = '<span></span><span>Partner</span><span>Cluster</span><span>3D</span><span>iLIS</span><span>iLISA</span><span>ipTM</span>';
+    $('.tl-head').classList.add('one'); $('#toplist').classList.add('one');   // one model per pair: no share of models
   }
   const refSeq = await seqOf(sp, P, B);   // the reference sequence (UniProt; FlyBase for fly)
   if (gone()) return;
@@ -3494,16 +3494,29 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function drawTopList() {
     const list = B.partners.filter((p) => p.id !== P.key && !p.rep).map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 })), k = M ? M.k : 1;
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
-    // the steadiest calls first: the share of a pair's models past the 10% cutoff (3 of 3 = 5 of 5, whatever the screen), then average iLIS;
-    // a pair with one model has no share or average to speak of (its average shows as —), so it follows the pairs with several
+    // the steadiest calls first: the share of a pair's models past the 10% cutoff (3 of 3 = 5 of 5, whatever the screen), then iLIS;
+    // a pair with one model has no share to speak of, so it follows the pairs with several. Each row shows the pair's best-iLIS model
+    // (its iLIS, iLISA and ipTM), as the partner table (author, 2026-10-06)
     const past = (p) => p.preds.filter((x) => x.iLIS >= CUT[10]).length / Math.max(1, p.preds.length), one = (p) => (p.preds.length < 2 ? 1 : 0);
-    $('#toplist').innerHTML = [...list].sort((a, b) => past(b) - past(a) || one(a) - one(b) || b.avg - a.avg || b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
+    const L = [...list].sort((a, b) => past(b) - past(a) || one(a) - one(b) || b.best - a.best).slice(0, 12);
+    $('#toplist').innerHTML = L.map((p) => { const xs = partnerIsos(p), bm = p.bm || {}, la = bm.iLISA > 0 || Number.isFinite(bm.iLIA) ? bm.iLISA : NaN, ip = bm.ipTM;   // the best-iLIS model's own values (an iLISA derived without iLIA is no value); a dash when it has none, never another model's
+      return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
-      <span class="num" style="${bandSty(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, ONE ? 'iLIS' : 'iLIS best')}">${p.best.toFixed(3)}</span>
-      ${ONE ? '' : (() => { const a = avgView(FPR_AVG.iLIS, p.avg, p.nAvg, 3, 'iLIS average'); return `<span class="num" style="${a.sty}" title="${a.tip}">${a.txt}</span>`; })()}
-      <span class="num" style="${bandSty(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, ONE ? 'ipTM' : 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
-      ${ONE ? '' : (() => { const a = avgView(FPR_AVG.ipTM, p.iptmAvg, p.nAvg, 2, 'ipTM average'); return `<span class="num" style="${a.sty}" title="${a.tip}">${a.txt}</span>`; })()}
+      <span class="tl-3d">${tl3d(p)}</span>
+      <span class="num" style="${bandSty(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS')}">${p.best.toFixed(3)}</span>
+      <span class="num tl-plain" title="the same model's iLISA">${Number.isFinite(la) ? la.toFixed(1) : '—'}</span>
+      <span class="num" style="${bandSty(FPR.ipTM, ip)}" title="${tip(FPR.ipTM, ip, "the same model's ipTM")}">${Number.isFinite(ip) ? ip.toFixed(2) : '—'}</span>
       ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of the pair's ${p.preds.length} in the screens shown">${p.preds.filter((x) => x.iLIS >= CUT[10]).length}/${p.preds.length}</span>`}</li>`; }).join('');
+    $('#toplist').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const M2 = VX || AX, x = M2 && [...M2.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
+  }
+  // The 3D cell of a top partner, as the partner table's: its run in LIVIA from FlyPredictome when a SET is known, else the AFDB
+  // model (displayed, or read from the release archive); a dash when there is none
+  function tl3d(p) {
+    const r = sp.byKey.get(p.id), dash = '<span class="muted">–</span>';
+    if (VX) { const x = r && VX.get(r.i); return x && x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>`
+      : x && x.addr && x.model ? `<a href="#" class="arch" data-m="${esc(x.model)}" title="${esc(x.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>` : dash; }
+    const x = fpBest(B, p), fu = x && fpUrl(B, x.run); if (fu) return `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`;
+    const ax = r && AX ? AX.get(r.i) : null; return ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>` : dash;
   }
   reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
@@ -3522,7 +3535,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const BCOL = VMCOL.filter((k) => k !== 'iLIS'), SRC0 = !VX && (SETS || (sp.manifest.datasets || []).length > 1);
   const showSrc = () => SRC0 && !!T.showSrc;   // the Source column is hidden until asked for (several screens make it wide)
   const AX = !VX && sp.reg && sp.reg.structs ? new Map() : null;
-  if (AX) afdbPartnerRows(sp, P.i, B.partners).then((m) => { if (gone()) return; for (const [j, x] of m) AX.set(j, x); drawTable(); });
+  if (AX) afdbPartnerRows(sp, P.i, B.partners).then((m) => { if (gone()) return; for (const [j, x] of m) AX.set(j, x); drawTable(); drawTopList(); });
   const colsNow = () => VX ? [['gene', 'Partner'], ['c', 'Cluster'], ['pair', 'Pair'], ['d3', '3D'], ...VMCOL.map((k) => ['m:' + k, k]), ['contacts', 'Contacts']]
     : [['gene', 'Partner'], ['c', 'Cluster'], ...(showSrc() ? [['src', 'Source']] : []), ['pair', 'Pair'], ['d3', '3D'], ['best', 'iLIS'],
       ...BCOL.map((k) => ['b:' + k, k]), ['contacts', 'Contacts'], ...(ONE ? [] : [['pass', 'Models past']])];
