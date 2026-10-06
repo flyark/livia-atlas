@@ -1500,15 +1500,6 @@ async function viewHome() {
   mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase();
 }
-async function fillThemes() {   // home: each theme's species and totals, from its members' counts
-  const reg = await registry(), box = $('#themes'); if (!box) return;
-  const cards = await Promise.all((reg.themes || []).map(async (T) => { const rows = await themeMembers(T), sum = (k) => rows.reduce((a, r) => a + (r.counts[k] || 0), 0);
-    return `<div class="ds live"><span class="badge on">Theme</span><h3><a href="#/themes/${T.id}">${esc(T.title)}</a></h3>
-      <div class="sp">${rows.map((r) => spName(r.S.label)).join(' · ')}</div>
-      <div class="stats"><div><b>${fmtInt(sum('proteins'))}</b><span>proteins</span></div><div><b>${fmtInt(sum('pairs'))}</b><span>pairs</span></div><div><b>${fmtInt(sum('pairsFpr10'))}</b><span>past 10% FPR${cutNote(10)}</span></div></div>
-      <div class="src-line">${esc(T.about || '')}</div></div>`; }));
-  box.innerHTML = cards.join('');
-}
 function dsCard(d) {
   const live = d.status === 'live', spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
   const rec = d.status === 'record' && d.zip && d.zip.record;   // in the data files only: in nearly all of its pairs one protein belongs to another taxon (95% or more in every such set), so no species page; its own short page
@@ -1637,11 +1628,10 @@ async function viewDatasets() {
   if (stale(gen)) return;
   document.title = 'Datasets · LIVIA Atlas';
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div><h1 class="sr-only">Datasets</h1>
-    ${(reg.themes || []).length ? '<h2 class="section-h" style="margin-top:4px">Themes</h2><div class="datasets live-row" id="themes"></div>' : ''}
-    <h2 class="section-h"${(reg.themes || []).length ? '' : ' style="margin-top:4px"'}>Datasets</h2>
+    <h2 class="section-h" style="margin-top:4px">Datasets</h2>
     <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are under CC BY 4.0. A copy is also archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked No species page are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here.</p>
     <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}${homoDsCard(reg)}</div>`;
-  fillDsStats(); fillThemes(); setCards(gen, reg);
+  fillDsStats(); setCards(gen, reg);
 }
 // A screen kept as a set inside a larger dataset (the fly kinase–kinase and kinase–TF screens in FlyPredictome) gets its
 // own card, placed after the other screens of its kind; it cites what they cite.
@@ -1814,32 +1804,6 @@ function setsCard(TS) {
   return `<div class="card"><div class="card-head"><h2>Thematic sets</h2><span class="muted">subsets of ${esc(TS.ds.reg.short)} · open one, or choose it at the top of a protein page</span></div>
     <div class="tbl-wrap"><table class="sets"><thead><tr><th>Set</th><th class="n">Proteins</th><th class="n">Pairs</th><th class="n">Models</th><th>Share of models</th></tr></thead>
       <tbody>${grp('Screens', scr)}${grp('Source categories', cat)}</tbody></table></div></div>`;
-}
-/* themes: one biological question across species — each member a screen of a species, or a thematic set of a screen */
-async function themeMembers(T) {
-  return (await Promise.all(T.members.map(async (m) => {
-    const S = await regSpecies(m.species); let ds; try { ds = await dataset(m.dataset); } catch (e) { return null; }
-    if (m.set) { const TS = await setsOf(ds).catch(() => null), st = TS && TS.byId.get(m.set); if (!st) return null;
-      return { S, title: st.title, within: ds.reg.title, counts: st.counts, href: `#/datasets/${ds.id}/${st.id}`, source: st.source || null }; }
-    return { S, title: ds.reg.title, within: '', counts: ds.manifest.counts, href: `#/datasets/${ds.id}`, source: ds.manifest.source || null };
-  }))).filter(Boolean);
-}
-async function viewTheme(id) {
-  const gen = ROUTE, reg = await registry(), T = (reg.themes || []).find((t) => t.id === id);
-  if (stale(gen)) return;
-  if (!T) { app.innerHTML = `<div class="empty">No theme “${esc(id)}”. <a href="#/">Go to the atlas home</a></div>`; return; }
-  document.title = `${T.title} · LIVIA Atlas`;
-  const rows = await themeMembers(T), sum = (k) => rows.reduce((a, r) => a + (r.counts[k] || 0), 0);
-  if (stale(gen)) return;
-  const cite = (src) => (src && src.url ? `<a href="${esc(src.url)}" target="_blank" rel="noopener">${esc(shortCite(src))} ↗</a>` : '');
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Themes</a> / <a href="#/themes/${T.id}">${esc(T.title)}</a></div>
-    <div class="dshead"><h1>${esc(T.title)}</h1><div class="pname">${esc(T.about || '')}</div></div>
-    ${kpiRow({ proteins: sum('proteins'), pairs: sum('pairs'), runs: sum('runs'), predictions: sum('predictions'), pairsFpr10: sum('pairsFpr10'), pairsFpr5: sum('pairsFpr5'), pairsFpr1: sum('pairsFpr1') })}
-    <div class="card"><div class="card-head"><h2>By species</h2><span class="muted">open one to search it; its protein pages show only this theme</span></div>
-      <div class="tbl-wrap"><table class="sets theme"><thead><tr><th>Species</th><th class="n">Proteins</th><th class="n">Protein pairs</th><th class="n">Predictions</th><th class="n">Past 10% FPR</th></tr></thead><tbody>
-      ${rows.map((r) => `<tr><td class="set-name"><i style="background:${T.color}"></i><a href="${r.href}">${esc(r.S.label)}</a> <span class="muted" style="font-style:italic">${esc(r.S.name)}</span>${r.within ? ` <span class="muted">· in ${esc(r.within)}</span>` : ''}${r.source ? `<span class="set-cite">${cite(r.source)}</span>` : ''}</td>
-        <td class="n">${fmtInt(r.counts.proteins)}</td><td class="n">${fmtInt(r.counts.pairs)}</td><td class="n">${fmtInt(r.counts.runs || r.counts.predictions)}</td><td class="n">${fmtInt(r.counts.pairsFpr10)}</td></tr>`).join('')}
-      </tbody></table></div></div>`;
 }
 /* a thematic set: a view over one dataset (its prediction runs), with its own counts, citation, hubs and search */
 async function viewSet(dsId, setId) {
@@ -2527,7 +2491,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     $('#kp-all').textContent = fmtInt(others.length); $('#kp-10').textContent = fmtInt(cnt(CUT[10])); $('#kp-5').textContent = fmtInt(cnt(CUT[5])); $('#kp-1').textContent = fmtInt(cnt(CUT[1]));
   }
   // One model per pair (the viral release, or a page whose screens folded one model): best = average, so one value is shown
-  const ONE = sp.one || B.partners.every((x) => x.counted.length <= 1);
+  const ONE = sp.one || B.partners.every((x) => x.preds.length <= 1);
   if (ONE) {
     $('#c-partners .card-head .muted').textContent = 'each partner, one model per pair'; $('#sc-pts').closest('label').style.display = 'none';
     $('#c-partners h3 .muted').textContent = 'by iLIS';
@@ -3183,8 +3147,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const andList = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
     // the partners named as examples: the largest share of models past the cutoff first, then the average iLIS, so a pair
     // past it in one model of three is not named before one past it in all (3 of 3 counts as 5 of 5); at equal shares, one-model pairs last, as in Top partners
-    const PB = new Map(B.partners.map((x) => [x.id, x])), passN = (t) => (t ? t.counted.filter((p) => p.iLIS >= CUT[cut]).length / Math.max(1, t.counted.length) : 0);
-    const steady = (ps) => ps.map((x) => { const t = PB.get(x.key); return { ...x, pass: passN(t), one: t && t.counted.length > 1 ? 0 : 1, avg: (t || {}).avg || 0 }; }).sort((a, b) => b.pass - a.pass || a.one - b.one || b.avg - a.avg || b.best - a.best);
+    const PB = new Map(B.partners.map((x) => [x.id, x])), passN = (t) => (t ? t.preds.filter((p) => p.iLIS >= CUT[cut]).length / Math.max(1, t.preds.length) : 0);
+    const steady = (ps) => ps.map((x) => { const t = PB.get(x.key); return { ...x, pass: passN(t), one: t && t.preds.length > 1 ? 0 : 1, avg: (t || {}).avg || 0 }; }).sort((a, b) => b.pass - a.pass || a.one - b.one || b.avg - a.avg || b.best - a.best);
     const where = (st) => { if (!st.foot.length) return 'no residue shared by 30% of its predictions';
       const r = stretches(st.ranges), dn = siteDomains(st, doms);
       return `${r.length <= 3 ? `residues ${rangeText(r)}` : `${r.length} stretches between residues ${r[0][0]} and ${r[r.length - 1][1]}`}${dn.length ? ` (${esc(dn.join('; '))})` : ''}`; };
@@ -3522,7 +3486,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const fmtM = (key, v) => (Number.isFinite(v) ? (['iLIA', 'iLISA', 'LIA', 'cLIA', 'qPl', 'pPl'].includes(key) ? v.toFixed(1) : v.toFixed(3)) : '–');
     cv.onmousemove = (e) => { const q = near(e); if (!q) { cv.style.cursor = ''; return hideTip(); } cv.style.cursor = 'pointer'; const p = q.p;
       const keys = [...new Set(['iLIS', 'iLISA', 'iLIA', 'ipTM', yK, xK])].filter((x) => x !== '_rank' && present.includes(x));
-      showTip(`<b>${esc(gname(p.partner))}</b> · ${per && !ONE ? `best of ${fmtInt(q.t.counted.length)} model${q.t.counted.length === 1 ? '' : 's'} (${esc(runLabel(sp, B, p.run, P))}, rank ${p.rank}) ${q.t.nAvg > 1 ? ` · iLIS average ${fmtNum(q.t.avg, 3)} of the ${q.t.nAvg} models of ${q.t.avgOther ? `its ${esc(sp.dsShort[q.t.avgDi])} run` : 'that run'}` : ''}` : `${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}`}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
+      showTip(`<b>${esc(gname(p.partner))}</b> · ${per && !ONE ? `best of ${fmtInt(q.t.preds.length)} model${q.t.preds.length === 1 ? '' : 's'} (${esc(runLabel(sp, B, p.run, P))}, rank ${p.rank}) ${q.t.nAvg > 1 ? ` · iLIS average ${fmtNum(q.t.avg, 3)} of the ${q.t.nAvg} models of ${q.t.avgOther ? `its ${esc(sp.dsShort[q.t.avgDi])} run` : 'that run'}` : ''}` : `${esc(runLabel(sp, B, p.run, P))} · rank ${p.rank}`}${q.c ? ` · <span style="color:${clusterColor(q.c, k)}">●</span> ${clusterLabel(q.c)}` : ''}<br>${keys.map((x) => `${METRICS[x]} ${fmtM(x, p[x])}`).join(' · ')}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
     cv.onclick = (e) => { const q = near(e); if (!q) return; hideTip(); location.hash = `#/${sp.id}/${P.key}/${q.p.partner}${scopeQ}`; };
     const r1 = pearson(pts.map((q) => q.x), pts.map((q) => q.y)), rho = spearman(pts.map((q) => q.x), pts.map((q) => q.y));
@@ -3549,14 +3513,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
     // the steadiest calls first: the share of a pair's models past the 10% cutoff (3 of 3 = 5 of 5, whatever the screen), then average iLIS;
     // a pair with one model has no share or average to speak of (its average shows as —), so it follows the pairs with several
-    const past = (p) => p.counted.filter((x) => x.iLIS >= CUT[10]).length / Math.max(1, p.counted.length), one = (p) => (p.counted.length < 2 ? 1 : 0);
+    const past = (p) => p.preds.filter((x) => x.iLIS >= CUT[10]).length / Math.max(1, p.preds.length), one = (p) => (p.preds.length < 2 ? 1 : 0);
     $('#toplist').innerHTML = [...list].sort((a, b) => past(b) - past(a) || one(a) - one(b) || b.avg - a.avg || b.best - a.best).slice(0, 12).map((p) => { const xs = partnerIsos(p); return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
       <span class="num" style="${bandSty(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, ONE ? 'iLIS' : 'iLIS best')}">${p.best.toFixed(3)}</span>
       ${ONE ? '' : (() => { const a = avgView(FPR_AVG.iLIS, p.avg, p.nAvg, 3, 'iLIS average'); return `<span class="num" style="${a.sty}" title="${a.tip}">${a.txt}</span>`; })()}
       <span class="num" style="${bandSty(FPR.ipTM, p.iptmBest)}" title="${tip(FPR.ipTM, p.iptmBest, ONE ? 'ipTM' : 'ipTM best')}">${p.iptmBest.toFixed(2)}</span>
       ${ONE ? '' : (() => { const a = avgView(FPR_AVG.ipTM, p.iptmAvg, p.nAvg, 2, 'ipTM average'); return `<span class="num" style="${a.sty}" title="${a.tip}">${a.txt}</span>`; })()}
-      ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of ${p.counted.length}">${p.counted.filter((x) => x.iLIS >= CUT[10]).length}/${p.counted.length}</span>`}</li>`; }).join('');
+      ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of the pair's ${p.preds.length} in the screens shown">${p.preds.filter((x) => x.iLIS >= CUT[10]).length}/${p.preds.length}</span>`}</li>`; }).join('');
   }
   reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
@@ -3580,7 +3544,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     : [['gene', 'Partner'], ['c', 'Cluster'], ...(showSrc() ? [['src', 'Source']] : []), ['pair', 'Pair'], ['d3', '3D'], ['best', ONE ? 'iLIS' : 'iLIS best'], ...(ONE ? [] : [['avg', 'iLIS avg']]),
       ...BCOL.map((k) => ['b:' + k, k]), ['contacts', 'Contacts'], ...(ONE ? [] : [['pass', 'Models past']])];
   function drawTable() {
-    let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.counted.filter((x) => x.iLIS >= CUT[10]).length, ...(VX ? (() => { const x = r && VX.get(r.i), o = { vx: x };
+    let list = B.partners.map((p) => { const r = sp.byKey.get(p.id); return { ...p, gene: r ? r.gene : p.id, name: r ? r.name : '', c: partnerCluster.get(p.id) || 0, pass: p.preds.filter((x) => x.iLIS >= CUT[10]).length, ...(VX ? (() => { const x = r && VX.get(r.i), o = { vx: x };
       for (const k of VMCOL) o['m:' + k] = x && Number.isFinite(x.m[k]) ? x.m[k] : NaN;
       o['m:iLIS'] = p.best; o['m:ipTM'] = p.iptmBest; return o; })() : { ax: r && AX ? AX.get(r.i) : null, ...Object.fromEntries(BCOL.map((k) => ['b:' + k, p.bm && Number.isFinite(p.bm[k]) ? p.bm[k] : NaN])) }) }; });
     if (T.src) list = list.filter((p) => (SETS ? p.sets.includes(T.src) : p.src & T.src));
@@ -3621,7 +3585,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <td class="n v"><a href="${href}" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</a></td>
         ${ONE ? '' : (() => { const a = avgView(FPR_AVG.iLIS, p.avg, p.nAvg, 3, 'iLIS average'); return `<td class="n v" style="${a.sty}" title="${a.tip}">${a.txt}</td>`; })()}
         ${BCOL.map((kk) => { const val = p['b:' + kk]; return kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, val)}" title="the best model's ipTM">${vmfmt(kk, val)}</td>` : `<td class="n">${vmfmt(kk, val)}</td>`; }).join('')}
-        <td class="n">${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff${p.preds.length > p.counted.length ? ` (${p.preds.length - p.counted.length} more in repeat runs, not counted)` : ''}">${p.pass} / ${p.counted.length}</td>`}</tr>${subs}`; }).join('')}</tbody>`;
+        <td class="n">${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff, of the pair's models in the screens shown${p.preds.length > p.counted.length ? `; the scores in this row leave out repeat runs of the same two sequences, keeping the run with the highest iLIS (${p.counted.length} of the ${p.preds.length} models)` : ''}">${p.pass} / ${p.preds.length}</td>`}</tr>${subs}`; }).join('')}</tbody>`;
     if (AX) $('#pt').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = [...AX.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
     if (VX) $('#pt').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = [...VX.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
     $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
@@ -3953,7 +3917,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
           return `<details class="ovl-all"><summary>Constructs: ${fmtInt(by.size)} run${by.size === 1 ? '' : 's'} not counted (phosphosite windows, mutants, tag or linker variants, engineered)</summary><ol>${[...by].sort((a, b) => b[1].best - a[1].best).map(([rid, o]) => `<li>${esc(runLabel(sp, B, rid, P))} <span class="muted">(${esc(o.k)}; ${o.n} model${o.n === 1 ? '' : 's'}; highest iLIS ${o.best.toFixed(3)})</span></li>`).join('')}</ol></details>`; })() : '';
         return t || cr ? `<div class="srcs muted ovl">${t}${cr}</div>` : ''; })()}
         <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => part.src & (1 << i)))}<span id="pair-struct"></span></div></div>
-      ${(() => { const nAll = part.counted.length, many = new Set(part.counted.map((x) => x.run)).size > 1, bestOf = one ? '' : many ? ` best of ${fmtInt(nAll)} models${part.preds.length > nAll ? ' (repeats not counted)' : ''}` : ' best', ofRun = part.avgOther ? ` of its ${sp.dsShort[part.avgDi]} run (the best model came from a one-model run)` : many ? ' of the run with the highest iLIS' : '';   // folded in several runs: say which models each tile covers
+      ${(() => { const nAll = part.preds.length, many = new Set(part.preds.map((x) => x.run)).size > 1, bestOf = one ? '' : many ? ` best of ${fmtInt(nAll)} models` : ' best', ofRun = part.avgOther ? ` of its ${sp.dsShort[part.avgDi]} run (the best model came from a one-model run)` : many ? ' of the run with the highest iLIS' : '';   // folded in several runs: say which models each tile covers
       return `<div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${bestOf} ${bandChip(b)}</span></div>
         ${one || part.nAvg < 2 ? '' : (() => { const a = avgView(FPR_AVG.iLIS, part.avg, part.nAvg, 3, 'iLIS average'); return `<div class="kpi" title="${a.tip}"><b style="${a.sty}">${a.txt}</b><span>iLIS average of ${part.nAvg} models${ofRun} ${part.nAvg >= 5 ? bandChip(bandIn(FPR_AVG.iLIS, part.avg)) : `· ${a.band}`}</span></div>`; })()}
         <div class="kpi"><b style="color:${bandCol(FPR.ipTM, part.iptmBest)}">${part.iptmBest.toFixed(2)}</b><span>ipTM${bestOf} ${bandChip(bandIn(FPR.ipTM, part.iptmBest))}</span></div>
@@ -5371,7 +5335,7 @@ async function trackView() {
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
 const barsBottom = () => (document.querySelector('.top')?.offsetHeight || 0) + (document.querySelector('.subnav')?.offsetHeight || 0) + 11;   // where a section lands: under the sticky header and section bar (112 px on a desktop)
 let LAST_PATH = null, holdTimer = null, NET_SP = '', NW_PENDING = null;   // NET_SP: the species of the last species page, for the Network tab; NW_PENDING: a loaded settings file, for the network page it opens
-function markNav(parts) {   // the header tab of the page shown: species (their proteins and pairs too), network, datasets (and themes), about
+function markNav(parts) {   // the header tab of the page shown: species (their proteins and pairs too), network, datasets, about
   const sp = parts.length && REG && (REG.species || []).some((s) => s.id === parts[0]);
   const on = !parts.length ? '' : parts[0] === 'about' ? 'about' : ['datasets', 'themes'].includes(parts[0]) ? 'datasets'
     : sp && ['network', 'nested'].includes(parts[1]) ? 'network' : parts[0] === 'species' || sp ? 'species' : '';
@@ -5449,7 +5413,7 @@ async function route() {
     else if (parts[0] === 'datasets') await (parts[1] === 'homodimers' && !parts[2] ? viewHomoDataset() : parts[2] ? viewSet(parts[1], parts[2]) : parts[1] ? viewDataset(parts[1]) : viewDatasets());
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'species' && parts.length === 1) await viewSpeciesList();
-    else if (parts[0] === 'themes' && parts[1]) await viewTheme(parts[1]);
+    else if (parts[0] === 'themes') { location.replace('#/datasets'); return; }   // themes retired: the datasets cover them
     else if (parts[0] === 'network' && parts.length === 1) {   // the header's Network tab: the network page of the species last shown, else the first species
       location.replace(`#/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}/network${q.toString() ? `?${q}` : ''}`); return;
     }

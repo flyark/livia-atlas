@@ -460,10 +460,9 @@ table.sets { width: 100%; border-collapse: collapse; font-size: 14px; }
 .sets thead th, .sets tr.set-grp th { font-family: var(--sans); }
 .sets .set-cite { margin-left: 10px; font-size: 12.5px; font-weight: 400; }
 @media (max-width: 600px) { .sets th:nth-child(3), .sets td:nth-child(3), .sets th:nth-child(5), .sets td:nth-child(5) { display: none; } .sets .set-name { white-space: normal; } }
-@media (max-width: 600px) {   /* the theme table and the species list keep their pairs past 10% FPR on a phone: the theme drops proteins and predictions, the species list taxon, proteins and pairs */
-  .sets.theme th:nth-child(3), .sets.theme td:nth-child(3), .sets.theme th:nth-child(5), .sets.theme td:nth-child(5), .sets.spl th:nth-child(5), .sets.spl td:nth-child(5) { display: table-cell; }
-  .sets.theme th, .sets.theme td { padding-left: 6px; padding-right: 6px; }   /* three columns fit a phone */
-  .sets.theme th:nth-child(2), .sets.theme td:nth-child(2), .sets.theme th:nth-child(4), .sets.theme td:nth-child(4), .sets.spl th:nth-child(2), .sets.spl td:nth-child(2), .sets.spl th:nth-child(4), .sets.spl td:nth-child(4) { display: none; } }
+@media (max-width: 600px) {   /* the species list keeps its pairs past 10% FPR on a phone: it drops taxon, proteins and pairs */
+  .sets.spl th:nth-child(5), .sets.spl td:nth-child(5) { display: table-cell; }
+  .sets.spl th:nth-child(2), .sets.spl td:nth-child(2), .sets.spl th:nth-child(4), .sets.spl td:nth-child(4) { display: none; } }
 .sets thead th.n { font-family: var(--sans); color: var(--ink-3); }
 @media (max-width: 600px) { .sets .set-cite { display: block; margin: 2px 0 0 19px; } }
 /* a gene's isoforms side by side (protein page) */
