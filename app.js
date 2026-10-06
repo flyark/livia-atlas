@@ -540,7 +540,7 @@ function merged(sp, P, scope = '', whole = false) {   // scope: one screen of th
       const split = parts.find((x) => x.raw.isoforms) || null;   // atlas v1.2: this gene's other isoforms are files of their own
       if (split && whole) parts.push(...await Promise.all(split.raw.isoforms.choices.map(async (c) => ({ ...split, name: c.file, raw: await bundleRaw(split.ds, c.file) }))));
       const all = await assemble(sp, P, parts, scope, onlyDi, setId);
-      if (sp.dsIds.includes('flypredictome') && all.runs) all.fpSet = await fpSetmap();   // FlyPredictome runs open in FlyPredictome-LIVIA when the map has their SET
+      await linkMaps(sp, all);   // FlyPredictome and kinase–TF runs open in LIVIA when a map has their SET
       if (split && !whole) isoformFiles(all, split, sp, P, scope, onlyDi, setId);
       if (scope && !all.preds.length && !(all.choices || []).length) throw new Error(`${P.gene} has no predictions in this ${onlyDi >= 0 ? 'screen' : 'set'}.`);
       return all;
@@ -3580,7 +3580,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         ${showSrc() ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
         <td><a href="${href}" title="interaction residues">residues</a></td>
-        <td>${(() => { const fu = p.bm && fpUrl(B, p.bm.run); return fu ? `<a href="${esc(fu)}" target="_blank" rel="noopener" title="the best-iLIS FlyPredictome run of this pair, in FlyPredictome-LIVIA">LIVIA ↗</a>` : ''; })() || (ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`
+        <td>${(() => { const x = fpBest(B, p), fu = x && fpUrl(B, x.run); return fu ? `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>` : ''; })() || (ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`
           : `<span class="muted" title="${AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'}">–</span>`)}</td>
         <td class="n v"><a href="${href}" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</a></td>
         ${ONE ? '' : (() => { const a = avgView(FPR_AVG.iLIS, p.avg, p.nAvg, 3, 'iLIS average'); return `<td class="n v" style="${a.sty}" title="${a.tip}">${a.txt}</td>`; })()}
@@ -3823,16 +3823,33 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
 // A pair reported in BioGRID: a badge in the pair's header that jumps to a card listing each publication (PubMed title,
 // authors and year from NCBI where the record is a PubMed id), from the same BioGRID release as the counts elsewhere.
-// A FlyPredictome run in FlyPredictome-LIVIA: the run's own names (its bundle row's name, split on '___', never reordered) and
-// its SET, from setmap.tsv (batch → SET; the Atlas batch is not the SET number). No map, or a batch it lacks: no link.
-let FPSET = null, FPMAP = null;   // FPMAP: the resolved map, once loaded
+// A FlyPredictome run in LIVIA: the run's own names (its bundle row's name, split on '___', never reordered) and its SET.
+// FlyPredictome runs: setmap.tsv (batch → SET; the Atlas batch is not the SET number), opened in FlyPredictome-LIVIA.
+// Human kinase–TF runs: their setmap.tsv (set, kinase, its TFs in that SET), opened in LIVIA's ortholog page; only the runs
+// FlyPredictome shows have a SET. No map, or a run it lacks: no link.
+let FPSET = null, FPMAP = null, KTSET = null, KTMAP = null;   // FPMAP, KTMAP: the resolved maps, once loaded
 const fpSetmap = () => (FPSET ||= fetch('data/screens/flypredictome/setmap.tsv').then((r) => (r.ok ? r.text() : '')).then((t) => {
   const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), bi = h.indexOf('batch'), si = h.indexOf('set'); if (bi < 0 || si < 0) return null;
   return (FPMAP = new Map(L.map((l) => l.split('\t')).filter((f) => f[si]).map((f) => [+f[bi], f[si].trim()]))); }).catch(() => null));
-const fpUrl = (B, rid) => { const ru = B && B.runs && B.runs.get(rid), fs = (B && B.fpSet) || FPMAP; if (!ru || ru.ds !== 'flypredictome' || !fs || ru.batch == null || !ru.name) return '';
-  const set = fs.get(ru.batch), at = ru.name.indexOf('___'); if (!set || at < 0) return '';
-  return `${LIVIA}flypredictome.html?url=https://www.flyrnai.org/tools/fly_predictome/web/famdb_details/${encodeURIComponent(ru.name.slice(0, at))}/${encodeURIComponent(ru.name.slice(at + 3))}/${encodeURIComponent(set)}/`; };
-const fpLink = (B, rid) => { const u = fpUrl(B, rid); return u ? ` <a class="fp-open" href="${esc(u)}" target="_blank" rel="noopener" title="this run in FlyPredictome-LIVIA, read from FlyPredictome">Open in FlyPredictome-LIVIA ↗</a>` : ''; };
+const ktSetmap = () => (KTSET ||= fetch('data/screens/human-kinase-tf/setmap.tsv').then((r) => (r.ok ? r.text() : '')).then((t) => {
+  const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), si = h.indexOf('set'), ki = h.indexOf('kinase'), ti = h.indexOf('tfs'); if (si < 0 || ki < 0 || ti < 0) return null;
+  const m = new Map(); for (const l of L) { const f = l.split('\t'), set = (f[si] || '').trim(), kin = f[ki]; if (!set || !kin) continue; for (const tf of (f[ti] || '').trim().split(',')) if (tf) m.set(kin + '___' + tf, set); }
+  return (KTMAP = m); }).catch(() => null));
+const linkMaps = async (sp, B) => {   // the SET maps a page's runs need: FlyPredictome's, and the kinase–TF one only when the page has kinase–TF runs
+  if (!B || !B.runs) return;
+  if (sp.dsIds.includes('flypredictome')) B.fpSet = await fpSetmap();
+  if (sp.dsIds.includes('human-kinase-tf') && [...B.runs.values()].some((r) => r.ds === 'human-kinase-tf')) B.ktSet = await ktSetmap(); };
+const FP_DETAILS = 'https://www.flyrnai.org/tools/fly_predictome/web/';
+const fpUrl = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru || !ru.name) return ''; const at = ru.name.indexOf('___'); if (at < 0) return '';
+  const a = encodeURIComponent(ru.name.slice(0, at)), b = encodeURIComponent(ru.name.slice(at + 3));
+  if (ru.ds === 'human-kinase-tf') { const ks = (B && B.ktSet) || KTMAP, set = ks && ks.get(ru.name); return set ? `${LIVIA}ortholog_predictome.html?url=${FP_DETAILS}famdb_details_all/${a}/${b}/${encodeURIComponent(set)}/9606/9606/` : ''; }
+  const fs = (B && B.fpSet) || FPMAP; if (ru.ds !== 'flypredictome' || !fs || ru.batch == null) return '';
+  const set = fs.get(ru.batch); return set ? `${LIVIA}flypredictome.html?url=${FP_DETAILS}famdb_details/${a}/${b}/${encodeURIComponent(set)}/` : ''; };
+const fpPage = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); return ru && ru.ds === 'human-kinase-tf' ? "LIVIA's ortholog page" : 'FlyPredictome-LIVIA'; };
+const fpLink = (B, rid) => { const u = fpUrl(B, rid); return u ? ` <a class="fp-open" href="${esc(u)}" target="_blank" rel="noopener" title="this run in ${fpPage(B, rid)}, read from FlyPredictome">Open in ${fpPage(B, rid)} ↗</a>` : ''; };
+// A pair's best run that opens in LIVIA from FlyPredictome: its best-iLIS run when that one has a SET, else its best run that has.
+const fpBest = (B, p) => { if (!p.bm) return null; if (fpUrl(B, p.bm.run)) return p.bm;
+  let t = null; for (const x of p.preds) if ((!t || (x.iLIS || 0) > (t.iLIS || 0)) && fpUrl(B, x.run)) t = x; return t; };
 // A pair's Prediction sources: one row per screen it was predicted in, with that screen's full reference (screenCite, the
 // About page's own text), how many of the pair's models it holds (repeats apart), its run settings and license.
 function pairSources(sp, P, O, part, consOnly) {
@@ -3894,7 +3911,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
   let B;
   try { B = await merged(sp, P, scope); if (B.split) B = await merged(sp, P, scope, true); } catch (e) { B = { partners: [] }; }   // the protein page's entry serves; a split gene reads every isoform file for every model of the pair
-  if (sp.dsIds.includes('flypredictome') && B.runs) B.fpSet = await fpSetmap();   // FlyPredictome runs link to FlyPredictome-LIVIA when the map has their SET
+  await linkMaps(sp, B);   // FlyPredictome and kinase–TF runs link to LIVIA when a map has their SET
   if (stale(gen)) return;
   const part0 = B.partners.find((p) => p.id === O.key), dpart = (B.droppedPartners || []).find((p) => p.id === O.key);
   const consOnly = !part0 && !!dpart, part = part0 || dpart, consPreds = consOnly ? part.preds : dpart ? dpart.preds : [], consSet = new Set(consPreds);   // constructs: phosphosite windows, mutants, tag/linker variants, engineered
