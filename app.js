@@ -1708,7 +1708,7 @@ async function viewAbout() {
       with a reported physical interaction is ringed in the Overview (partners past 10% FPR by default; the menu shows all), and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
     <div class="card" id="about-limits"><h2>How the pages count, and their limits</h2>
-      <p><b>Three ways a partner is counted past a cutoff.</b> The header tiles and the partner lists count a partner when its <i>best model</i>, over every model of every screen, passes. Predicted binding sites (cLIP) take a pair when its <i>top-ranked model</i> passes, and cluster every model of it that passes; a partner that passes only in a lower-ranked model is listed apart. Top partners ranks by the <i>share of a pair's models</i> that pass, so a pair past the cutoff in all its models comes before one past it in one. The cards say which rule they use.</p>
+      <p><b>Three ways a partner is counted past a cutoff.</b> The header tiles and the partner lists count a partner when its <i>best model</i>, over every model of every screen, passes. Predicted binding sites (cLIP) cluster <i>every model</i> that passes, whatever its rank, so a partner can sit in more than one site when its models bind in different ways. Top partners ranks by the <i>share of a pair's models</i> that pass, so a pair past the cutoff in all its models comes before one past it in one. The cards say which rule they use.</p>
       <p><b>What the false-positive rates mean.</b> The cutoffs were set on the top-ranked of five AlphaFold-Multimer models × five recycles per pair (the reference sets above); screens with other settings, or pairs folded in many runs, get them as a guide. The Atlas applies them to a pair's best model, which on that set gives 10.4%, 5.3% and 1.1%. A pair folded in several runs or constructs has more models to choose its best from (some pairs were folded in dozens of runs), so for it the stated rate is a lower bound. In a one-model screen (the AlphaFold Database heterodimers, viral dimers included) the best model is the only model, which was not the setting of the calibration either, so there the rates are a guide. The cutoffs were not calibrated separately for bacteria, plants or viruses.</p>
       <p><b>Limits.</b> Every interaction here is a prediction, not an experiment. BioGRID marks depend on which proteins have been studied and on how each screen chose its pairs (a literature-derived set is reported by design), so a reported share is not a measure of accuracy. A site contacted by many partners can be a surface many proteins are predicted to touch (a DNA-binding face, a kinase domain in a kinase screen) rather than a specific binding site; its partner list and the screens they come from can help tell them apart. Paralogs that share an oligomerization domain can be predicted to pair through it whether or not they do in cells. Contacts in disordered regions count only where the predicted aligned error is at most 12 Å, but they remain the least certain. Network chance tests compare only pairs that were folded where the Atlas knows which were.</p>
       <p><b>Homodimers.</b> A protein page can show its homodimer from the AlphaFold Database homodimer release, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}), and the card colors each score by its band. The current files hold the entries the release lists (${esc((reg.homodimers || {}).selection || 'its confidence filter')}); the full set is being scored. It has one model per protein and does not enter the partner counts, binding sites or networks.</p></div>
@@ -1842,7 +1842,7 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
 let CLIPW = null, clipSeq = 0; const clipWait = new Map();
 function runClip(rows, gene, cut, progress = null) {   // progress({ n, pairs, thinned }): what the worker is about to cluster
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20261002a'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (!w) return;
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20261006a'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (!w) return;
     if (e.data.stage) { if (w.progress) w.progress(e.data); return; }
     clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); }; }
   const id = ++clipSeq;
@@ -2321,7 +2321,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
       <div class="plot" id="sites-map"></div><p class="sites-bg muted" id="sites-bg"></p><p class="sites-more" id="sites-more" hidden></p><div class="domlegend" id="sites-domains"></div>
       <p class="muted sites-note">How the sites are found: LIVIA cLIP, run in your browser on the predictions shown, takes the residues of ${esc(P.gene)} that
-        each model past the cutoff contacts (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å), for the pairs whose rank-1 model passes, as its fingerprint, compares fingerprints by cosine distance, joins them by
+        each model past the cutoff contacts (cLIR: PAE ≤ 12 Å and Cβ ≤ 8 Å), every passing model whatever its rank, as its fingerprint, compares fingerprints by cosine distance, joins them by
         average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by its number of models; the map has one lane per major site, one
         with at least 3 partners and 2% of all partners, and shows the minor sites when asked. Solid marks
         a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
@@ -2878,7 +2878,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   async function orthShared(sp2) {   // which of the ortholog's partners have an ortholog among this protein's partners, and the sites both contact
     const st = ORTH.open.get(sp2), box = $('#orth-shared'); if (!st || !box || st.seqOnly) return;
     const m2 = st.m[cut]; if (!m2 || !clustered()) return;
-    const best2 = new Map();   // the ortholog's partners in its sites (clustered: rank-1 model past the cutoff): key2 → its cluster (by the best model)
+    const best2 = new Map();   // the ortholog's partners in its sites (clustered: every model past the cutoff): key2 → its cluster (by the best model)
     m2.preds.forEach((p, i) => { const w = st.B2.labels.get(p.partner), k2 = w ? w.key : p.partner; if (k2 === st.P2.key) return; const b = best2.get(k2); if (!b || p.iLIS > b.iLIS) best2.set(k2, { iLIS: p.iLIS, c: m2.labels[i] }); });
     const keys2 = [...best2.keys()], shards = await Promise.all([...new Set(keys2.map((k) => k.slice(-2).toLowerCase()))].map((pre) => orthShard(sp2, pre, true).then((s) => [pre, s]).catch(() => [pre, {}])));
     if (gone()) return;
@@ -2898,7 +2898,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const link = (p) => `<a href="#/${sp.id}/${P.key}/${p.k1}${scopeQ}">${name1(p.k1)}</a> ↔ <a href="#/${st.sp2}/${encodeURIComponent(st.P2.key)}/${encodeURIComponent(p.k2)}">${name2(p.k2)}</a>`;
       const cells = [...cell].map(([k, ps]) => { const [c1, c2] = k.split('|').map(Number); return { c1, c2, ps }; }).sort((a, b) => b.ps.length - a.ps.length || a.c1 - b.c1 || a.c2 - b.c2);
       const LIST = cells.length <= 4;   // a few filled cells read as lines; a grid only when there is something to cross
-      const title = `<b>Shared partners with ${orthLabel(st)}</b> <span class="muted">· ${fmtInt(sh.pairs.length)} of its ${fmtInt(sh.n2)} partners in sites ${sh.pairs.length === 1 ? 'has' : 'have'} an ortholog among ${esc(P.gene)}'s partners in sites</span>`;   // sites hold the pairs whose rank-1 model passes the cutoff, on both sides
+      const title = `<b>Shared partners with ${orthLabel(st)}</b> <span class="muted">· ${fmtInt(sh.pairs.length)} of its ${fmtInt(sh.n2)} partners in sites ${sh.pairs.length === 1 ? 'has' : 'have'} an ortholog among ${esc(P.gene)}'s partners in sites</span>`;   // sites hold every model past the cutoff, on both sides
       if (!sh.pairs.length) return `<div class="orth-sh">${title}</div>`;
       const how = LIST ? `Each line: a site of ${esc(P.gene)} and a site of ${esc(st.P2.gene)}, and the partner pairs that contact them.` : `Rows: ${esc(P.gene)}'s sites, columns: ${esc(st.P2.gene)}'s sites, cells: partner pairs contacting both; sites without a shared partner are left out.`;
       const site = (c, k, gene) => `<span class="mdot" style="background:${clusterColor(c, k)}"></span><b>${esc(gene)} ${clusterLabel(c, true)}</b>`;   // ink text, the site color on a dot (pale site colors are unreadable as text)
@@ -2931,7 +2931,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       ACTIVE = new Set(range(M.k));
     }
     const n = M ? M.fingerprints.length : 0, k = clustered() ? M.k : 0;
-    const thin = M && M.thinned ? (M.thinned.how === 'rank1' ? ` · one model per pair, its rank-1 model, because ${fmtInt(M.thinned.from)} predictions passed (the frequency and the sites count pairs)`
+    const thin = M && M.thinned ? (M.thinned.how === 'rank1' ? ` · one model per pair, its top-ranked passing model, because ${fmtInt(M.thinned.from)} predictions passed (the frequency and the sites count pairs)`
       : ` · the ${fmtInt(M.thinned.to)} pairs with the highest iLIS, one model each, because ${fmtInt(M.thinned.from)} predictions passed`) : '';
     if (M) $('#clip-sub').textContent = clustered() ? `${fmtInt(n)} models of ${fmtInt(partnerCluster.size)} partners past iLIS ${CUT[cut]} (${cut}% FPR) · query ${fmtInt(M.plen)} aa · cosine distance, average linkage, silhouette${thin}`
       : `${n ? 'Only one prediction' : 'No predictions'} past the ${cut}% FPR cutoff, so there is nothing to cluster.`;
@@ -3109,14 +3109,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const siteDomains = (st, doms) => { const c = new Map();   // the domains a site touches, a repeated one once with its copies (CTNNB1's Armadillo repeats: 4 of Pfam's matches)
     for (const d of doms) if (st.foot.some((r) => r >= d.s && r <= d.e)) { const x = c.get(d.name) || { k: 0, src: d.src }; x.k++; c.set(d.name, x); }
     return [...c].slice(0, 2).map(([n, x]) => (x.k > 1 ? `${n}, ${x.k} ${x.src === 'Pfam' ? 'Pfam' : 'UniProt'} copies` : n)); };
-  // Partners past the cutoff (the tiles) that no site holds, and why: cLIP takes a pair only when its rank-1 model passes,
-  // and drops a model without contact residues and constructs named phospho- or mutant (its default filter)
+  // Partners past the cutoff (the tiles) that no site holds, and why: cLIP clusters every passing model (2026-10-06; it once took a pair
+  // only when its rank-1 model passed), but drops a model without contact residues and constructs named phospho- or mutant (its default filter)
   function outOfSites() {
     const miss = B.partners.filter((x) => x.id !== P.key && !x.rep && x.best >= CUT[cut] && !partnerCluster.has(x.id));
     if (!miss.length) return '';
-    const r1 = (x) => x.counted.filter((p) => p.rank === 1 && p.iLIS >= CUT[cut]);
-    const low = miss.filter((x) => !r1(x).length).length, bare = miss.filter((x) => r1(x).length && r1(x).every((p) => !p.qcLIR)).length, other = miss.length - low - bare;
-    const n1 = miss.length === 1, why = [[low, `pass${n1 ? 'es' : ''} only in lower-ranked models (a site takes a pair when its rank-1 model passes)`],
+    const ok = (x) => x.counted.filter((p) => p.iLIS >= CUT[cut]);
+    const bare = miss.filter((x) => ok(x).every((p) => !p.qcLIR)).length, other = miss.length - bare;
+    const n1 = miss.length === 1, why = [
       [bare, `ha${n1 ? 's' : 've'} no contact residues`], [other, `${n1 ? 'was' : 'were'} folded as another construct or isoform than the one clustered (see the note below), or fell outside the 4,000 pairs clustered (the cLIP worker's limit)`]].filter(([k]) => k);
     const head = `${fmtInt(miss.length)} more partner${n1 ? '' : 's'} past the cutoff ${n1 ? 'is' : 'are'} in no site`;
     return ` <span class="muted">${why.length === 1 ? `${head}: ${n1 ? 'it' : 'they'} ${why[0][1]}` : `${head}: ${why.map(([k, t]) => `${fmtInt(k)} ${t}`).join('; ')}`}.</span>`;
