@@ -304,7 +304,7 @@ async function screenFile(ds, rel) {
 async function datasetRows(ds) {
   if (ds.rows) return ds.rows;
   const prot = await getJSON(ds.base + 'proteins.json'), c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
-  ds.rows = prot.rows.map((r) => ({ id: r[c.id], gene: r[c.gene], acc: r[c.acc], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1] }));
+  ds.rows = prot.rows.map((r) => ({ id: r[c.id], gene: (r[c.gene] && r[c.gene] !== '?' ? r[c.gene] : '') || r[c.acc] || r[c.id], acc: r[c.acc], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1] }));
   return ds.rows;
 }
 const SPM = {};
@@ -326,7 +326,7 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
   const c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
   const rows = prot.rows.map((r, i) => {
     const occ = String(r[c.occ] || '').split(' ').filter(Boolean).map((t) => { const k = t.indexOf(':'); return { di: +t.slice(0, k), name: t.slice(k + 1) }; });
-    return { i, key: r[c.key], gene: r[c.gene] || r[c.name] || r[c.key], acc: r[c.acc], name: r[c.name], syn: r[c.syn], len: r[c.len], clen: r[c.clen], status: r[c.status], occ,
+    return { i, key: r[c.key], gene: (r[c.gene] && r[c.gene] !== '?' ? r[c.gene] : '') || r[c.acc] || r[c.key], acc: r[c.acc], name: r[c.name], syn: r[c.syn], len: r[c.len], clen: r[c.clen], status: r[c.status], occ,
       id: occ.length ? occ[0].name : r[c.key], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1], best: r[c.bestIlis],
       src: occ.reduce((m, o) => m | (1 << o.di), 0) };
   });
@@ -540,6 +540,7 @@ function merged(sp, P, scope = '', whole = false) {   // scope: one screen of th
       const split = parts.find((x) => x.raw.isoforms) || null;   // atlas v1.2: this gene's other isoforms are files of their own
       if (split && whole) parts.push(...await Promise.all(split.raw.isoforms.choices.map(async (c) => ({ ...split, name: c.file, raw: await bundleRaw(split.ds, c.file) }))));
       const all = await assemble(sp, P, parts, scope, onlyDi, setId);
+      if (sp.dsIds.includes('flypredictome') && all.runs) all.fpSet = await fpSetmap();   // FlyPredictome runs open in FlyPredictome-LIVIA when the map has their SET
       if (split && !whole) isoformFiles(all, split, sp, P, scope, onlyDi, setId);
       if (scope && !all.preds.length && !(all.choices || []).length) throw new Error(`${P.gene} has no predictions in this ${onlyDi >= 0 ? 'screen' : 'set'}.`);
       return all;
@@ -2465,6 +2466,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const dsScope = setId ? occ.find((o) => o.ds.id === setId) : null;
   let SET = dsScope ? { id: setId, type: 'dataset', title: dsScope.ds.reg.title, short: dsScope.ds.reg.short, color: dsScope.ds.reg.color, source: dsScope.ds.manifest.source }
     : setId && TS0 ? TS0.byId.get(setId) || null : null;
+  if (sp.dsIds.includes('flypredictome')) await fpSetmap();   // before any table is drawn: FlyPredictome runs open in FlyPredictome-LIVIA
   let B, B0, notIn = setId && !SET ? setId : '';   // a ?set= this protein is not in, or has no predictions in: the page shows every prediction and says so
   try { B = SET ? await merged(sp, P, SET.id).catch((e) => (/has no predictions in this/.test(e.message) ? null : Promise.reject(e))) : null; B0 = await merged(sp, P);
     if (SET && !(B && B.preds.length)) { notIn = SET.type === 'dataset' ? (SET.short || SET.title) : `${TS0 ? TS0.ds.reg.short : ''}'s ${SET.title} ${SET.type === 'screen' ? 'screen' : 'category'}`; SET = null; B = null; } if (!B) B = B0; }
@@ -3587,7 +3589,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const key = T.sort; const nv = (x) => (Number.isFinite(x) ? x : -Infinity); list.sort((a, b) => (typeof a[key] === 'string' ? a[key].localeCompare(b[key]) : nv(a[key]) - nv(b[key])) * (T.asc ? 1 : -1));
     const per = 40, pages = Math.max(1, Math.ceil(list.length / per)); T.page = Math.min(T.page, pages - 1);
     const view = list.slice(T.page * per, T.page * per + per), k = M ? M.k : 1;
-    $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${B.partners.some((x) => x.id === P.key && !x.rep) ? ` (${esc(P.gene)} itself included, as a homodimer; the header tiles count the others)` : ''}${ONE ? '' : ' · ipTM and the columns after it are each pair\'s best-iLIS model (Top partners gives the highest ipTM over models)'}${KB ? ` · reported in BioGRID ${esc(KB.release)}: <span class="kb-mark kb-p">physical</span> <span class="kb-mark kb-g">genetic</span> <span class="kb-mark kb-p kb-g">both</span>` : ''}`;
+    $('#pt-note').innerHTML = `${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${B.partners.some((x) => x.id === P.key && !x.rep) ? ` (${esc(P.gene)} itself included, as a homodimer; the header tiles count the others)` : ''}${ONE ? '' : ' · ipTM and the columns after it are each pair\'s best-iLIS model (Top partners gives the highest ipTM over models)'}${KB ? `<br>reported in BioGRID ${esc(KB.release)}: <span class="kb-mark kb-p">physical</span> <span class="kb-mark kb-g">genetic</span> <span class="kb-mark kb-p kb-g">both</span>` : ''}`;
     const cols = colsNow();
     $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${(['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) || c.startsWith('m:') || c.startsWith('b:')) ? ' n' : ''}">${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
@@ -3614,8 +3616,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         ${showSrc() ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
         <td><a href="${href}" title="interaction residues">residues</a></td>
-        <td>${ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`
-          : `<span class="muted" title="${AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'}">–</span>`}</td>
+        <td>${(() => { const fu = p.bm && fpUrl(B, p.bm.run); return fu ? `<a href="${esc(fu)}" target="_blank" rel="noopener" title="the best-iLIS FlyPredictome run of this pair, in FlyPredictome-LIVIA">LIVIA ↗</a>` : ''; })() || (ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`
+          : `<span class="muted" title="${AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'}">–</span>`)}</td>
         <td class="n v"><a href="${href}" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</a></td>
         ${ONE ? '' : (() => { const a = avgView(FPR_AVG.iLIS, p.avg, p.nAvg, 3, 'iLIS average'); return `<td class="n v" style="${a.sty}" title="${a.tip}">${a.txt}</td>`; })()}
         ${BCOL.map((kk) => { const val = p['b:' + kk]; return kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, val)}" title="the best model's ipTM">${vmfmt(kk, val)}</td>` : `<td class="n">${vmfmt(kk, val)}</td>`; }).join('')}
@@ -3859,12 +3861,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 // authors and year from NCBI where the record is a PubMed id), from the same BioGRID release as the counts elsewhere.
 // A FlyPredictome run in FlyPredictome-LIVIA: the run's own names (its bundle row's name, split on '___', never reordered) and
 // its SET, from setmap.tsv (batch → SET; the Atlas batch is not the SET number). No map, or a batch it lacks: no link.
-let FPSET = null;
+let FPSET = null, FPMAP = null;   // FPMAP: the resolved map, once loaded
 const fpSetmap = () => (FPSET ||= fetch('data/screens/flypredictome/setmap.tsv').then((r) => (r.ok ? r.text() : '')).then((t) => {
   const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), bi = h.indexOf('batch'), si = h.indexOf('set'); if (bi < 0 || si < 0) return null;
-  return new Map(L.map((l) => l.split('\t')).filter((f) => f[si]).map((f) => [+f[bi], f[si].trim()])); }).catch(() => null));
-const fpUrl = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru || ru.ds !== 'flypredictome' || !B.fpSet || ru.batch == null || !ru.name) return '';
-  const set = B.fpSet.get(ru.batch), at = ru.name.indexOf('___'); if (!set || at < 0) return '';
+  return (FPMAP = new Map(L.map((l) => l.split('\t')).filter((f) => f[si]).map((f) => [+f[bi], f[si].trim()]))); }).catch(() => null));
+const fpUrl = (B, rid) => { const ru = B && B.runs && B.runs.get(rid), fs = (B && B.fpSet) || FPMAP; if (!ru || ru.ds !== 'flypredictome' || !fs || ru.batch == null || !ru.name) return '';
+  const set = fs.get(ru.batch), at = ru.name.indexOf('___'); if (!set || at < 0) return '';
   return `${LIVIA}flypredictome.html?url=https://www.flyrnai.org/tools/fly_predictome/web/famdb_details/${encodeURIComponent(ru.name.slice(0, at))}/${encodeURIComponent(ru.name.slice(at + 3))}/${encodeURIComponent(set)}/`; };
 const fpLink = (B, rid) => { const u = fpUrl(B, rid); return u ? ` <a class="fp-open" href="${esc(u)}" target="_blank" rel="noopener" title="this run in FlyPredictome-LIVIA, read from FlyPredictome">Open in FlyPredictome-LIVIA ↗</a>` : ''; };
 // A pair's Prediction sources: one row per screen it was predicted in, with that screen's full reference (screenCite, the
