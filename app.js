@@ -4479,6 +4479,163 @@ function examplePicker(host, spId, onLoad) {   // host: an element; onLoad(text,
     sel.onchange = cite; cite();
     host.querySelector('.ex-load').onclick = async () => { const x = xs[+sel.value]; let t; try { t = await getText(`data/examples/${x.file}`); } catch (e) { return; } onLoad(t, x); }; });
 }
+// Community chord (network builder): the communities around one circle, CellPhoneDB style. Ribbons join two communities by
+// the pairs between them (or a protein ring with every pair drawn); a lower-triangle matrix of pair counts; the pairs of a
+// ribbon, cell or protein, with links and CSV. M: { sp, groups: [{ name, short, color }], nodes: [{ gene, key, g }] (g: group
+// index, -1 ungrouped), edges: [{ a, b, w }] (node indexes, best iLIS) }.
+function chordCard(box, M) {
+  const ST = box._cc || (box._cc = { view: 'comm', inside: false, wt: 'n', ungr: true, sel: null });
+  ST.sel = null;
+  const GRAY = '#A7B2BF', NS = 'http://www.w3.org/2000/svg';
+  box.innerHTML = `<div class="cc-bar"><span class="cc-seg" role="group" aria-label="Chord view"><button type="button" data-v="comm">Communities</button><button type="button" data-v="prot">Proteins</button></span>
+    <label class="ctl" title="pairs whose two proteins are in the same community"><input type="checkbox" class="cc-inside"> Pairs inside a community</label>
+    <label class="ctl" title="what a ribbon's width counts (Communities view)">Width <select class="cc-wt"><option value="n">pairs</option><option value="s">summed iLIS</option></select></label>
+    <label class="ctl" title="proteins outside the communities (groups below the outline size)"><input type="checkbox" class="cc-ungr"> Ungrouped proteins</label>
+    <span class="cc-sp"></span><button class="btn" type="button" data-dl="plot">↓ SVG</button><button class="btn" type="button" data-dl="all" title="every pair of the network, with both proteins' communities and links">↓ All pairs CSV</button></div>
+    <div class="cc-grid"><div><div class="cc-plot"></div><p class="muted cc-off"></p><div class="cc-legend"></div></div>
+    <div class="cc-side"><div class="cc-box"><div class="cc-h"><b>Pairs between communities</b><button class="btn sm" type="button" data-dl="mx">↓ SVG</button></div><div class="muted cc-sub">Pair counts, darker for more; with pairs inside shown, the diagonal counts them. Click a cell for its pairs.</div><div class="cc-mx"></div><p class="muted cc-mxoff"></p></div>
+    <div class="cc-box"><div class="cc-h"><b class="cc-ph">Pairs</b><span><button class="btn sm" type="button" data-dl="csv" hidden>↓ CSV</button> <button class="btn sm" type="button" data-dl="copy" hidden>Copy</button></span></div><div class="muted cc-sub cc-psub">Click a ribbon, a cell or a protein.</div><div class="cc-pairs"></div></div></div></div>`;
+  const q = (s) => box.querySelector(s);
+  q('.cc-inside').checked = ST.inside; q('.cc-ungr').checked = ST.ungr; q('.cc-wt').value = ST.wt;
+  const size = new Map(); M.nodes.forEach((n) => size.set(n.g, (size.get(n.g) || 0) + 1));
+  const groupList = () => { const L = M.groups.map((g, i) => ({ id: i, ...g })); if (ST.ungr && size.get(-1)) L.push({ id: -1, name: 'ungrouped', short: 'other', color: GRAY }); return L; };
+  const edgesNow = () => { const gs = new Set(groupList().map((g) => g.id)); return M.edges.filter((e) => gs.has(M.nodes[e.a].g) && gs.has(M.nodes[e.b].g)); };
+  const pairUrl = (e) => `#/${M.sp.id}/${encodeURIComponent(M.nodes[e.a].key)}/${encodeURIComponent(M.nodes[e.b].key)}`;
+  const liviaUrl = (e) => (M.sp.id === 'fly' ? `${LIVIA}flypredictome.html?pair=${encodeURIComponent(M.nodes[e.a].key)},${encodeURIComponent(M.nodes[e.b].key)}` : '');
+  const svgOf = (el, W, H, vb) => d3.select(el).append('svg').attr('viewBox', vb || [0, 0, W, H]).attr('xmlns', NS).attr('font-family', "'IBM Plex Sans', Helvetica, Arial, sans-serif");
+  let SHOWN = [], SHOWN_NAME = 'pairs';
+
+  function draw() {
+    const G = groupList(), gi = new Map(G.map((g, i) => [g.id, i])), E = edgesNow(), k = G.length;
+    const N = Array.from({ length: k }, () => Array(k).fill(0)), S = Array.from({ length: k }, () => Array(k).fill(0));
+    for (const e of E) { const i = gi.get(M.nodes[e.a].g), j = gi.get(M.nodes[e.b].g); N[i][j]++; S[i][j] += e.w; if (i !== j) { N[j][i]++; S[j][i] += e.w; } }
+    box.querySelectorAll('.cc-seg button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.v === ST.view)));
+    q('.cc-off').textContent = '';
+    drawMatrix(G, N);
+    if (ST.view === 'comm') drawChord(G, N, S); else drawProteins(G, gi, E);
+    q('.cc-legend').innerHTML = G.map((g) => `<span><i style="background:${g.color}"></i>${esc(g.short)} · ${esc(g.name)} (${fmtInt(size.get(g.id) || 0)})</span>`).join('');
+    drawPairs();
+  }
+  function drawMatrix(G0, N0) {   // lower triangle; the diagonal only with pairs inside shown (never for the ungrouped); only groups with a pair
+    const diag = ST.inside, keep = G0.map((g, i) => i).filter((i) => G0.some((h, j) => (i !== j || (diag && G0[i].id >= 0)) && N0[i][j] > 0));
+    const G = keep.map((i) => G0[i]), N = keep.map((i) => keep.map((j) => N0[i][j])), k = G.length, off = G0.filter((g, i) => !keep.includes(i));
+    q('.cc-mxoff').textContent = off.length ? `No pairs here: ${off.map((g) => g.short).join(', ')}.` : '';
+    const el = q('.cc-mx'); el.innerHTML = '';
+    if (!k || (!diag && k < 2)) { el.innerHTML = '<p class="muted">No pairs between communities.</p>'; return; }
+    const vals = N.flatMap((r, i) => r.filter((v, j) => (j < i || (diag && j === i && G[i].id >= 0)) && v > 0)), mx = Math.max(1, ...vals);
+    const r0 = diag ? 0 : 1, nr = k - r0, nc = diag ? k : k - 1, c = 34, L = 54, T = 8, W = L + nc * c + 6, H = T + nr * c + 26;
+    const ramp = (v) => d3.interpolateRgb('#E3ECF4', '#123B5A')(Math.sqrt(v) / Math.sqrt(mx));
+    const svg = svgOf(el, W, H);
+    const isSel = (a, b) => ST.sel && ST.sel.t === 'gg' && ((ST.sel.a === a && ST.sel.b === b) || (ST.sel.a === b && ST.sel.b === a));
+    for (let i = r0; i < k; i++) {
+      const y = T + (i - r0) * c;
+      svg.append('circle').attr('cx', 8).attr('cy', y + c / 2).attr('r', 4.5).attr('fill', G[i].color);
+      svg.append('text').attr('x', 17).attr('y', y + c / 2).attr('dy', '0.35em').attr('font-size', 12).attr('font-weight', 600).attr('fill', '#445368').text(G[i].short);
+      for (let j = 0; j <= i; j++) {
+        if (j === i && (!diag || G[i].id < 0)) continue;
+        const v = N[i][j], x = L + j * c, sel = isSel(G[i].id, G[j].id), g = svg.append('g').style('cursor', v ? 'pointer' : 'default');
+        g.append('rect').attr('x', x + 1.5).attr('y', y + 1.5).attr('width', c - 3).attr('height', c - 3).attr('rx', 5).attr('fill', v ? ramp(v) : '#F1F4F8')
+          .attr('stroke', sel ? '#17263A' : j === i ? '#C9D3DE' : 'none').attr('stroke-width', sel ? 2 : 1);
+        if (!v) continue;
+        g.append('text').attr('x', x + c / 2).attr('y', y + c / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').attr('font-size', 12.5).attr('font-family', "'IBM Plex Mono', Menlo, monospace")
+          .attr('font-weight', 500).attr('fill', Math.sqrt(v) / Math.sqrt(mx) > 0.55 ? '#fff' : '#17263A').text(v);
+        g.on('click', () => { ST.sel = { t: 'gg', a: G[i].id, b: G[j].id }; draw(); })
+          .on('mousemove', (e) => showTip(`<b>${esc(G[i].short)} ${i === j ? '(inside)' : '↔ ' + esc(G[j].short)}</b><br>${v} pair${v === 1 ? '' : 's'}`, e.clientX, e.clientY)).on('mouseleave', hideTip);
+      }
+    }
+    for (let j = 0; j < nc; j++) { const x = L + j * c + c / 2, y = T + nr * c + 13;
+      svg.append('circle').attr('cx', x - 11).attr('cy', y).attr('r', 3.5).attr('fill', G[j].color);
+      svg.append('text').attr('x', x - 5).attr('y', y).attr('dy', '0.35em').attr('font-size', 11.5).attr('font-weight', 600).attr('fill', '#445368').text(G[j].short); }
+  }
+  function drawChord(G0, N0, S0) {   // groups with no ribbon leave the circle and are named under it
+    const keep = G0.map((g, i) => i).filter((i) => G0.some((h, j) => (i !== j || ST.inside) && N0[i][j] > 0)), G = keep.map((i) => G0[i]);
+    const N = keep.map((i) => keep.map((j) => N0[i][j])), S = keep.map((i) => keep.map((j) => S0[i][j])), off = G0.filter((g, i) => !keep.includes(i));
+    q('.cc-off').textContent = off.length ? `Not on the circle (no pairs ${ST.inside ? '' : 'to other communities'}): ${off.map((g) => g.short).join(', ')}.` : '';
+    const el = q('.cc-plot'); el.innerHTML = ''; el.dataset.v = 'comm';
+    const W = 760, R = 270, Mx = G.map((g, i) => G.map((h, j) => (i === j && !ST.inside ? 0 : ST.wt === 'n' ? N[i][j] : S[i][j])));
+    const svg = svgOf(el, W, W, [-W / 2, -W / 2, W, W]);
+    if (!Mx.some((r) => r.some((v) => v > 0))) { svg.append('text').attr('text-anchor', 'middle').attr('fill', '#627085').attr('font-size', 18).text('No pairs between communities'); return; }
+    const chords = d3.chord().padAngle(0.035).sortSubgroups(d3.descending).sortChords(d3.descending)(Mx);
+    const arc = d3.arc().innerRadius(R).outerRadius(R + 16), rib = d3.ribbon().radius(R - 2).padAngle(0.004);
+    const hit = (c) => ST.sel && ST.sel.t === 'gg' && ((G[c.source.index].id === ST.sel.a && G[c.target.index].id === ST.sel.b) || (G[c.source.index].id === ST.sel.b && G[c.target.index].id === ST.sel.a));
+    const op = (c) => (ST.sel && ST.sel.t === 'gg' ? (hit(c) ? 0.9 : 0.12) : 0.72);
+    const rb = svg.append('g').selectAll('path').data(chords).join('path').attr('d', rib)
+      .attr('fill', (c) => { const a = G[c.source.index], b = G[c.target.index]; return ((size.get(a.id) || 0) <= (size.get(b.id) || 0) ? a : b).color; })   // the smaller community's color
+      .attr('fill-opacity', op).attr('stroke', '#fff').attr('stroke-width', 0.6).style('cursor', 'pointer')
+      .on('mousemove', (e, c) => { const a = G[c.source.index], b = G[c.target.index], n = N[c.source.index][c.target.index];
+        showTip(`<b>${esc(a.short)} ${a === b ? '(inside)' : '↔ ' + esc(b.short)}</b><br>${n} pair${n === 1 ? '' : 's'} · summed iLIS ${S[c.source.index][c.target.index].toFixed(2)}`, e.clientX, e.clientY); })
+      .on('mouseleave', hideTip).on('click', (e, c) => { ST.sel = { t: 'gg', a: G[c.source.index].id, b: G[c.target.index].id }; draw(); });
+    const grp = svg.append('g').selectAll('g').data(chords.groups).join('g');
+    grp.append('path').attr('d', arc).attr('fill', (d) => G[d.index].color).attr('stroke', '#fff').style('cursor', 'pointer')
+      .on('mouseenter', (e, d) => rb.attr('fill-opacity', (c) => (c.source.index === d.index || c.target.index === d.index ? 0.88 : 0.08)))
+      .on('mousemove', (e, d) => { const g = G[d.index], out = N[d.index].reduce((s, v, j) => s + (j === d.index ? 0 : v), 0); showTip(`<b>${esc(g.short)} · ${esc(g.name)}</b><br>${fmtInt(size.get(g.id) || 0)} proteins · ${out} pairs to other communities`, e.clientX, e.clientY); })
+      .on('mouseleave', () => { hideTip(); rb.attr('fill-opacity', op); });
+    grp.append('text').each((d) => { d.mid = (d.startAngle + d.endAngle) / 2; }).attr('dy', '0.35em').attr('font-size', 19).attr('font-weight', 600).attr('fill', '#17263A')
+      .attr('transform', (d) => `rotate(${(d.mid * 180) / Math.PI - 90}) translate(${R + 26}) ${d.mid > Math.PI ? 'rotate(180)' : ''}`).attr('text-anchor', (d) => (d.mid > Math.PI ? 'end' : null))
+      .text((d) => (d.endAngle - d.startAngle > 0.06 ? `${G[d.index].short} ${size.get(G[d.index].id) || 0}` : G[d.index].short));
+  }
+  function drawProteins(G, gi, E) {   // every protein around the ring by community; pairs drawn protein to protein, between communities in a two-color gradient
+    const el = q('.cc-plot'); el.innerHTML = ''; el.dataset.v = 'prot';
+    const W = 860, R = 300, nodes = M.nodes.map((n, i) => ({ ...n, i })).filter((n) => gi.has(n.g));
+    const deg = new Map(); for (const e of E) { deg.set(e.a, (deg.get(e.a) || 0) + 1); deg.set(e.b, (deg.get(e.b) || 0) + 1); }
+    nodes.sort((x, y) => gi.get(x.g) - gi.get(y.g) || (deg.get(y.i) || 0) - (deg.get(x.i) || 0) || (x.gene < y.gene ? -1 : 1));
+    const gap = 0.05, n = nodes.length, step = (2 * Math.PI - gap * G.length) / Math.max(1, n), ang = new Map(), span = new Map(); let t = 0, prev = null;
+    for (const x of nodes) { if (prev !== null && prev !== x.g) t += gap; ang.set(x.i, t + step / 2); const s = span.get(x.g) || [t, t]; s[1] = t + step; span.set(x.g, s); t += step; prev = x.g; }
+    const pt = (a, r) => [r * Math.sin(a), -r * Math.cos(a)], svg = svgOf(el, W, W, [-W / 2, -W / 2, W, W]), defs = svg.append('defs');
+    const GS = G.filter((g) => span.has(g.id));
+    svg.append('g').selectAll('path').data(GS).join('path').attr('d', (g) => d3.arc()({ innerRadius: R + 2, outerRadius: R + 9, startAngle: span.get(g.id)[0], endAngle: span.get(g.id)[1] })).attr('fill', (g) => g.color);
+    const hot = ST.sel && ST.sel.t === 'p' ? ST.sel.i : null, sg = ST.sel && ST.sel.t === 'gg' ? ST.sel : null, gOf = (i) => M.nodes[i].g;
+    const on = (e) => (hot != null ? e.a === hot || e.b === hot : sg ? ((gOf(e.a) === sg.a && gOf(e.b) === sg.b) || (gOf(e.a) === sg.b && gOf(e.b) === sg.a)) : true);
+    const ws = M.edges.map((e) => e.w), wid = d3.scaleLinear().domain([Math.min(...ws), Math.max(...ws)]).range([0.6, 3.2]), lit = (e) => (on(e) ? (hot != null || sg ? 0.95 : 0.55) : 0.06);
+    const show = E.filter((e) => ST.inside || gOf(e.a) !== gOf(e.b)).sort((x, y) => on(x) - on(y) || x.w - y.w);
+    const lines = svg.append('g').attr('fill', 'none').selectAll('path').data(show).join('path')
+      .attr('d', (e) => { const p = pt(ang.get(e.a), R - 2), r = pt(ang.get(e.b), R - 2), f = gOf(e.a) === gOf(e.b) ? 0.62 : 0.12; return `M${p}Q${(p[0] + r[0]) * f},${(p[1] + r[1]) * f} ${r}`; })
+      .attr('stroke', (e, ix) => { const ca = G[gi.get(gOf(e.a))].color, cb = G[gi.get(gOf(e.b))].color; if (ca === cb) return ca;
+        const id = `cc-g${ix}`, p = pt(ang.get(e.a), R), r = pt(ang.get(e.b), R), lg = defs.append('linearGradient').attr('id', id).attr('gradientUnits', 'userSpaceOnUse').attr('x1', p[0]).attr('y1', p[1]).attr('x2', r[0]).attr('y2', r[1]);
+        lg.append('stop').attr('offset', '0%').attr('stop-color', ca); lg.append('stop').attr('offset', '100%').attr('stop-color', cb); return `url(#${id})`; })
+      .attr('stroke-width', (e) => wid(e.w)).attr('stroke-opacity', lit).attr('stroke-linecap', 'round')
+      .on('mousemove', (ev, x) => showTip(`<b>${esc(M.nodes[x.a].gene)} – ${esc(M.nodes[x.b].gene)}</b><br>best iLIS ${x.w.toFixed(3)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
+    const lab = svg.append('g').selectAll('g').data(nodes).join('g').attr('transform', (x) => `rotate(${(ang.get(x.i) * 180) / Math.PI - 90}) translate(${R + 13})`).style('cursor', 'pointer');
+    lab.append('text').attr('dy', '0.32em').attr('font-size', n > 220 ? 7.5 : n > 150 ? 9 : 10.5).attr('transform', (x) => (ang.get(x.i) > Math.PI ? 'rotate(180)' : null))
+      .attr('text-anchor', (x) => (ang.get(x.i) > Math.PI ? 'end' : null)).attr('fill', '#17263A').attr('font-weight', (x) => (hot === x.i ? 700 : 400)).text((x) => x.gene);
+    lab.on('mouseenter', (ev, x) => lines.attr('stroke-opacity', (l) => (l.a === x.i || l.b === x.i ? 0.95 : 0.04)))
+      .on('mousemove', (ev, x) => { const d = E.filter((l) => l.a === x.i || l.b === x.i); showTip(`<b>${esc(x.gene)}</b> · ${esc(G[gi.get(x.g)].short)}<br>${d.length} pair${d.length === 1 ? '' : 's'}, ${d.filter((l) => gOf(l.a) !== gOf(l.b)).length} to other communities`, ev.clientX, ev.clientY); })
+      .on('mouseleave', () => { hideTip(); lines.attr('stroke-opacity', lit); }).on('click', (ev, x) => { ST.sel = hot === x.i ? null : { t: 'p', i: x.i }; draw(); });
+    svg.append('g').selectAll('text').data(GS).join('text').each((g) => { g.mid = (span.get(g.id)[0] + span.get(g.id)[1]) / 2; })
+      .attr('x', (g) => pt(g.mid, R - 18)[0]).attr('y', (g) => pt(g.mid, R - 18)[1]).attr('text-anchor', 'middle').attr('dy', '0.35em').attr('font-size', 12).attr('font-weight', 700)
+      .attr('fill', (g) => g.color).text((g) => (span.get(g.id)[1] - span.get(g.id)[0] > 0.12 ? g.short : ''));
+  }
+  const gshort = (g) => { const x = groupList().find((y) => y.id === g); return x ? x.short : 'other'; };
+  const HEAD = ['protein_1', 'id_1', 'community_1', 'protein_2', 'id_2', 'community_2', 'iLIS_best', 'pair', 'atlas_pair_page', 'livia'];
+  const rowsOf = (L) => L.map((e) => { const a = M.nodes[e.a], b = M.nodes[e.b]; return [a.gene, a.key, gshort(a.g), b.gene, b.key, gshort(b.g), e.w.toFixed(3), a.g === b.g ? 'inside' : 'between', location.href.split('#')[0] + pairUrl(e), liviaUrl(e)]; });
+  const csvq = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v), toCsv = (L) => '﻿' + [HEAD, ...rowsOf(L)].map((r) => r.map(csvq).join(',')).join('\n') + '\n';
+  const dlText = (text, name, type) => { const u = URL.createObjectURL(new Blob([text], { type })), a = document.createElement('a'); a.href = u; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
+  function drawPairs() {
+    const G = groupList(), gs = new Map(G.map((g) => [g.id, g])), E = edgesNow(), s = ST.sel;
+    let L = [], head = 'Pairs', sub = 'Click a ribbon, a cell or a protein.', fname = 'pairs';
+    if (s && s.t === 'gg') { const a = gs.get(s.a), b = gs.get(s.b); if (a && b) { L = E.filter((e) => { const x = M.nodes[e.a].g, y = M.nodes[e.b].g; return (x === s.a && y === s.b) || (x === s.b && y === s.a); });
+      head = a === b ? `Inside ${a.short}` : `${a.short} ↔ ${b.short}`; fname = a === b ? `inside_${a.short}` : `${a.short}_${b.short}`; sub = `${L.length} pair${L.length === 1 ? '' : 's'} · ${esc(a.name)}${a === b ? '' : ' and ' + esc(b.name)}`; } }
+    if (s && s.t === 'p') { const x = M.nodes[s.i]; L = E.filter((e) => e.a === s.i || e.b === s.i); head = x.gene; fname = x.gene; sub = `${L.length} pair${L.length === 1 ? '' : 's'}`; }
+    q('.cc-ph').textContent = head; q('.cc-psub').innerHTML = sub;
+    L.sort((x, y) => y.w - x.w); SHOWN = L; SHOWN_NAME = fname.replace(/[^\w.-]+/g, '_');
+    q('[data-dl="csv"]').hidden = q('[data-dl="copy"]').hidden = !L.length;
+    const cell = (i) => { const nn = M.nodes[i], g = gs.get(nn.g); return `<span class="cc-dot" style="background:${g ? g.color : GRAY}"></span>${esc(nn.gene)}`; };
+    const links = (e) => [liviaUrl(e) && `<a href="${esc(liviaUrl(e))}" target="_blank" rel="noopener" title="this pair in FlyPredictome-LIVIA">LIVIA ↗</a>`, `<a href="${esc(pairUrl(e))}" title="the pair page: interaction residues and every run">pair</a>`].filter(Boolean).join(' ');
+    q('.cc-pairs').innerHTML = L.length ? `<table><thead><tr><th>Protein</th><th>Protein</th><th class="n">iLIS</th><th></th></tr></thead><tbody>${L.map((e) => `<tr><td>${cell(e.a)}</td><td>${cell(e.b)}</td><td class="n">${e.w.toFixed(3)}</td><td class="lk">${links(e)}</td></tr>`).join('')}</tbody></table>` : '';
+  }
+  box.querySelectorAll('.cc-seg button').forEach((b) => b.onclick = () => { ST.view = b.dataset.v; draw(); });
+  q('.cc-inside').onchange = (e) => { ST.inside = e.target.checked; draw(); };
+  q('.cc-ungr').onchange = (e) => { ST.ungr = e.target.checked; draw(); };
+  q('.cc-wt').onchange = (e) => { ST.wt = e.target.value; draw(); };
+  const svgDl = (el, name) => { if (el) dlText(new XMLSerializer().serializeToString(el), name, 'image/svg+xml'); };
+  q('[data-dl="plot"]').onclick = () => svgDl(q('.cc-plot svg'), `atlas_${M.sp.id}_community_chord_${ST.view === 'comm' ? 'communities' : 'proteins'}.svg`);
+  q('[data-dl="mx"]').onclick = () => svgDl(q('.cc-mx svg'), `atlas_${M.sp.id}_community_matrix.svg`);
+  q('[data-dl="all"]').onclick = () => dlText(toCsv(edgesNow().slice().sort((x, y) => y.w - x.w)), `atlas_${M.sp.id}_community_pairs.csv`, 'text/csv;charset=utf-8');
+  q('[data-dl="csv"]').onclick = () => dlText(toCsv(SHOWN), `atlas_${M.sp.id}_community_pairs_${SHOWN_NAME}.csv`, 'text/csv;charset=utf-8');
+  q('[data-dl="copy"]').onclick = async () => { const b = q('[data-dl="copy"]'), t = [HEAD, ...rowsOf(SHOWN)].map((r) => r.join('\t')).join('\n') + '\n';
+    try { await navigator.clipboard.writeText(t); b.textContent = 'Copied'; } catch (err) { b.textContent = 'Copy failed'; } setTimeout(() => { b.textContent = 'Copy'; }, 1500); };
+  draw();
+}
 async function viewNetwork(spId, q) {
   const gen = ROUTE, sp = await species(spId);
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
@@ -4571,6 +4728,7 @@ async function viewNetwork(spId, q) {
 
       <div class="netkey"><div class="kbkey" id="nw-key"></div><div class="kbkey" id="nw-nkey"></div>
         <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div>
+<div id="nw-chord-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Community chord</h3><span class="muted">the pairs between communities, around one circle</span></div><div id="nw-chord"></div></div>
 <div id="nw-heat-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Pairs as a matrix</h3><div class="controls" style="margin:0"><span class="muted" id="nw-heat-note"></span>
         <label class="ctl" title="the matrix shows every folded pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="nw-heat-show"><option value="all">every folded pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label>
         <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
@@ -5156,6 +5314,13 @@ async function viewNetwork(spId, q) {
       restyle(); relabel(d3.zoomTransform(svg.node()).k); };
     net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote, xo, XO, disp };
     if (EXPECT) { const X = EXPECT; EXPECT = null; checkLoaded(X); }   // loaded settings: does this drawing match the saved one?
+    {   // the community chord: the groups of this drawing in their colors, every pair by its best iLIS
+      const wrap = $('#nw-chord-wrap'), gidx = new Map(groups.map((k, n) => [k, n])), ix = new Map(nodes.map((d, i) => [d.id, i])), cat = S.grp.startsWith('col:');
+      wrap.hidden = groups.length < 2;
+      if (!wrap.hidden) chordCard($('#nw-chord'), { sp, groups: groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${n + 1}`, color: GCOL(n) })),
+        nodes: nodes.map((d) => { const k = gk.get(d.id); return { gene: d.row.gene, key: d.row.key, g: gidx.has(k) ? gidx.get(k) : -1 }; }),
+        edges: links.map((l) => ({ a: ix.get(typeof l.source === 'object' ? l.source.id : l.source), b: ix.get(typeof l.target === 'object' ? l.target.id : l.target), w: l.best })).filter((e) => e.a != null && e.b != null && Number.isFinite(e.w)) });
+    }
     heatArgs = [nodes, links, gk, groups, gname2, deg]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
   }
   $('#nw-go').onclick = () => draw();

@@ -768,3 +768,34 @@ button.linkish:focus-visible { outline: 2px solid #1A5276; outline-offset: 2px; 
 .data-line { font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
 .lic-tbl td { white-space: normal; vertical-align: top; }
 @media (max-width: 640px) { .lic-tbl thead { display: none; } .lic-tbl, .lic-tbl tbody, .lic-tbl tr, .lic-tbl td { display: block; } .lic-tbl tr { border-bottom: 1px solid var(--line-2); padding: 6px 0; } .lic-tbl td { border: 0; padding: 2px 10px; } .lic-tbl td[data-l]:not([data-l="Source"])::before { content: attr(data-l) ": "; color: var(--ink-3); font-size: 12px; } }
+/* community chord (network builder): the chord or protein ring, a lower-triangle matrix and the pairs of a selection */
+.cc-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 6px 0 10px; font-size: 13.5px; }
+.cc-sp { flex: 1; }
+.cc-seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.cc-seg button { font: 500 13.5px var(--sans); border: 0; background: var(--card); color: var(--ink-2); padding: 5px 11px; cursor: pointer; }
+.cc-seg button[aria-pressed="true"] { background: var(--navy); color: #fff; }
+.cc-seg button + button { border-left: 1px solid var(--line); }
+.cc-grid { display: grid; grid-template-columns: minmax(0, 1fr) 440px; gap: 16px; align-items: start; }
+@media (max-width: 1000px) { .cc-grid { grid-template-columns: minmax(0, 1fr); } }
+.cc-plot svg { display: block; width: 100%; max-width: 600px; height: auto; margin: 0 auto; }   /* the circle at a reading size */
+.cc-plot[data-v="prot"] svg { max-width: 760px; }   /* every protein named: a little more room */
+.cc-off { font-size: 12.5px; margin: 4px 0; }
+.cc-legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--ink-2); }
+.cc-legend span { display: inline-flex; align-items: center; gap: 5px; }
+.cc-legend i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+.cc-side { display: grid; gap: 14px; min-width: 0; grid-template-columns: minmax(0, 1fr); }
+.cc-box { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; background: var(--card); min-width: 0; }
+.cc-h { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; font-family: var(--display); font-size: 15px; }
+.cc-sub { font-size: 12.5px; margin: 2px 0 8px; }
+.cc-mx svg { display: block; width: 100%; height: auto; }
+.cc-mxoff { font-size: 12.5px; margin: 6px 0 0; }
+.btn.sm { padding: 3px 9px; font-size: 13px; }
+.cc-pairs { max-height: 380px; overflow: auto; }
+.cc-pairs table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+.cc-pairs th { text-align: left; font-weight: 600; color: var(--ink-3); font-size: 12px; border-bottom: 1px solid var(--line); padding: 4px 6px; position: sticky; top: 0; background: var(--card); }
+.cc-pairs th.n, .cc-pairs td.n { text-align: right; }
+.cc-pairs td { padding: 4px 6px; border-bottom: 1px solid var(--line-2); }
+.cc-pairs td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.cc-pairs td.lk { white-space: nowrap; text-align: right; font-size: 12.5px; }
+.cc-pairs td.lk a { margin-left: 6px; }
+.cc-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; }
