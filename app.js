@@ -3857,7 +3857,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 // A pair reported in BioGRID: a badge in the pair's header that jumps to a card listing each publication (PubMed title,
 // authors and year from NCBI where the record is a PubMed id), from the same BioGRID release as the counts elsewhere.
 // A FlyPredictome run in FlyPredictome-LIVIA: the run's own names (its bundle row's name, split on '___', never reordered) and
-// its SET, from setmap.tsv (batch → folder → SET; the Atlas batch is not the SET number). No map, or a batch it lacks: no link.
+// its SET, from setmap.tsv (batch → SET; the Atlas batch is not the SET number). No map, or a batch it lacks: no link.
 let FPSET = null;
 const fpSetmap = () => (FPSET ||= fetch('data/screens/flypredictome/setmap.tsv').then((r) => (r.ok ? r.text() : '')).then((t) => {
   const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), bi = h.indexOf('batch'), si = h.indexOf('set'); if (bi < 0 || si < 0) return null;
