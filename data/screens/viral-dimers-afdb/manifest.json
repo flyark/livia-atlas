@@ -10,9 +10,9 @@
  },
  "ids": "UniProt accession; polyprotein mature peptides as <accession>_p<md5(sequence)[:10]>",
  "source": {
-  "citation": "Han Y, Narain R, et al. (2026). Systematic exploration of predicted quaternary structures within pandemic-relevant viral proteomes. Models: AlphaFold Database / EMBL-EBI FTP (alphafold/collaborations/nvda/pandemic_prep), CC BY 4.0.",
-  "url": "https://research.nvidia.com/labs/dbr/assets/data/manuscripts/viralcomplexes.pdf",
-  "method": "AlphaFold-Multimer v3, one model per pair (model_1_multimer_v3), 12 recycles, Logan-enriched unpaired MSA (NVIDIA BioNeMo / OpenFold); rescored with lis.py. The iLIS cutoffs were calibrated on the top-ranked of five models per pair, so for one model they are a guide rather than a measured error rate, and interfaces that only some models capture can be missed; a low iLIS here means \"not seen by model_1\"."
+  "citation": "Han Y, Narain R, et al. (2026). Systematic exploration of predicted quaternary structures within pandemic-relevant viral proteomes. bioRxiv. Models: AlphaFold Database / EMBL-EBI FTP (alphafold/collaborations/nvda/pandemic_prep), CC BY 4.0.",
+  "url": "https://doi.org/10.64898/2026.09.29.755321",
+  "method": "AlphaFold-Multimer v3, one model per pair (model_1_multimer_v3), 12 recycles, Logan-enriched unpaired MSA (NVIDIA BioNeMo / OpenFold); rescored with lis.py."
  },
  "analysis": {
   "tool": "lis.py (AFM-LIS)",

@@ -137,7 +137,7 @@ const REF = {
   molstar: ['Sehnal et al. 2021', '10.1093/nar/gkab314'], d3: ['Bostock et al. 2011', '10.1109/TVCG.2011.185'],
   leiden: ['Traag et al. 2019', '10.1038/s41598-019-41695-z'],
   schmid2025: ['Schmid et al. 2025', '10.1101/2025.11.10.687652'], kim2025: ['Kim et al. 2025', '10.1101/2025.10.10.681672'],
-  han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'],
+  han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'], hannarain2026: ['Han, Narain et al. 2026', '10.64898/2026.09.29.755321'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
 // A screen's reference, the one text About and the pair page's Prediction sources both use: the named papers, Han et al. for
@@ -145,7 +145,8 @@ const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel=
 // the registry's own source. → { k: REF key or null, text: HTML citation, url: its DOI or paper link }
 const SCREEN_SRC = { 'human-predictomes': ['schmid2025', 'Schmid, E. W. et al. (2025). Proteome-wide in silico screening for human protein-protein interactions. <i>bioRxiv</i>.'],
   'human-kinase-tf': ['kim2025', 'Kim, A.-R. et al. (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. <i>bioRxiv</i>.'],
-  flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'] };
+  flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'],
+  'viral-dimers-afdb': ['hannarain2026', 'Han, Y., Narain, R. et al. (2026). Systematic exploration of predicted quaternary structures within pandemic-relevant viral proteomes. <i>bioRxiv</i>. Models: AlphaFold Database viral protein complexes, EMBL-EBI / Google DeepMind / NVIDIA and collaborators, CC BY 4.0.'] };
 const AFDB_SRC = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>. Models: AlphaFold Database complexes release, EMBL-EBI / Google DeepMind / NVIDIA and collaborators, CC BY 4.0.'];
 const LIVIA_SRC = ['livia', 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.'];
 function screenCite(d) {
