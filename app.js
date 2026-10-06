@@ -68,7 +68,7 @@ function overlapNote(sp, B, preds, P, html) {
   const top = [...by].sort((a, b) => b[1].best - a[1].best)[0], setOf = ([rid, r]) => (r.set && !runLabel(sp, B, rid, P).startsWith(r.set) ? ` (${r.set})` : '');   // the set, unless the run's label already names it
   const sum = `Folded in ${fmtInt(by.size)} runs: ${screens.join(', ')}. Highest iLIS ${top[1].best.toFixed(3)}: ${runLabel(sp, B, top[0], P)}${setOf(top)}.${agree}${also.length ? ' A pair folded more than once counts once, by its run with the highest iLIS.' : ''}`;
   if (!html) return sum;
-  const rows = [...by].sort((a, b) => b[1].best - a[1].best).map((x) => `<li>${esc(lab(x))}${esc(setOf(x))}${x[1].rep ? ' <span class="rep-tag">repeat</span>' : ''}</li>`).join('');
+  const rows = [...by].sort((a, b) => b[1].best - a[1].best).map((x) => `<li>${esc(lab(x))}${esc(setOf(x))}${x[1].rep ? ' <span class="rep-tag">repeat</span>' : ''}${fpLink(B, x[0])}</li>`).join('');
   return `${esc(sum)}<details class="ovl-all"><summary>All ${fmtInt(by.size)} runs</summary><ol>${rows}</ol></details>`;
 }
 const bandIn = (cuts, v) => (v >= cuts[2] ? 1 : v >= cuts[1] ? 5 : v >= cuts[0] ? 10 : 0);
@@ -890,7 +890,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
           const ps = primarySet(tags), qc = own(qi ? a : b), pc = own(qi ? b : a), key = keyOf(pc), set = ps ? ps.short : H.set != null ? own(r[H.set]) : '';
           if (/^afdb-het-/.test(sp.dsIds[part.di] || '') && !sp.byKey.get(key)) continue;   // an AFDB pair with another species' protein: left out, as the species index leaves it out
           const rid = part.di + '|' + nm + (H.batch != null ? '|' + r[H.batch] : '');
-          if (!runs.has(rid)) runs.set(rid, { id: rid, di: part.di, qi, key, qc, pc, set, tags: tags ? tags.map((t) => t.id) : [] });
+          if (!runs.has(rid)) runs.set(rid, { id: rid, di: part.di, ds: sp.dsIds[part.di], name: nm, batch: H.batch != null ? +r[H.batch] : null, qi, key, qc, pc, set, tags: tags ? tags.map((t) => t.id) : [] });   // name and batch: the run as the screen's own table has it
           if (set && !sets.includes(set)) sets.push(set);
           const s = (x, y) => (qi ? x : y);
           const p = { partner: key, run: rid, di: part.di, qi, qc, pc, set, tags: runs.get(rid).tags, rank: num(r, 'rank'), iLIS: num(r, 'iLIS'), iLIA: num(r, 'iLIA'), iLISA: num(r, 'iLISA'), ipTM: num(r, 'ipTM'),
@@ -3856,6 +3856,16 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 /* ── pair page ───────────────────────────────────────────────────────────────────────────────────────── */
 // A pair reported in BioGRID: a badge in the pair's header that jumps to a card listing each publication (PubMed title,
 // authors and year from NCBI where the record is a PubMed id), from the same BioGRID release as the counts elsewhere.
+// A FlyPredictome run in FlyPredictome-LIVIA: the run's own names (its bundle row's name, split on '___', never reordered) and
+// its SET, from setmap.tsv (batch → folder → SET; the Atlas batch is not the SET number). No map, or a batch it lacks: no link.
+let FPSET = null;
+const fpSetmap = () => (FPSET ||= fetch('data/screens/flypredictome/setmap.tsv').then((r) => (r.ok ? r.text() : '')).then((t) => {
+  const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), bi = h.indexOf('batch'), si = h.indexOf('set'); if (bi < 0 || si < 0) return null;
+  return new Map(L.map((l) => l.split('\t')).filter((f) => f[si]).map((f) => [+f[bi], f[si].trim()])); }).catch(() => null));
+const fpUrl = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru || ru.ds !== 'flypredictome' || !B.fpSet || ru.batch == null || !ru.name) return '';
+  const set = B.fpSet.get(ru.batch), at = ru.name.indexOf('___'); if (!set || at < 0) return '';
+  return `${LIVIA}flypredictome.html?url=https://www.flyrnai.org/tools/fly_predictome/web/famdb_details/${encodeURIComponent(ru.name.slice(0, at))}/${encodeURIComponent(ru.name.slice(at + 3))}/${encodeURIComponent(set)}/`; };
+const fpLink = (B, rid) => { const u = fpUrl(B, rid); return u ? ` <a class="fp-open" href="${esc(u)}" target="_blank" rel="noopener" title="this run in FlyPredictome-LIVIA, read from FlyPredictome">Open in FlyPredictome-LIVIA ↗</a>` : ''; };
 // A pair's Prediction sources: one row per screen it was predicted in, with that screen's full reference (screenCite, the
 // About page's own text), how many of the pair's models it holds (repeats apart), its run settings and license.
 function pairSources(sp, P, O, part, consOnly) {
@@ -3917,6 +3927,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   app.innerHTML = crumbs + '<div class="loading">Loading…</div>';
   let B;
   try { B = await merged(sp, P, scope); if (B.split) B = await merged(sp, P, scope, true); } catch (e) { B = { partners: [] }; }   // the protein page's entry serves; a split gene reads every isoform file for every model of the pair
+  if (sp.dsIds.includes('flypredictome') && B.runs) B.fpSet = await fpSetmap();   // FlyPredictome runs link to FlyPredictome-LIVIA when the map has their SET
   if (stale(gen)) return;
   const part0 = B.partners.find((p) => p.id === O.key), dpart = (B.droppedPartners || []).find((p) => p.id === O.key);
   const consOnly = !part0 && !!dpart, part = part0 || dpart, consPreds = consOnly ? part.preds : dpart ? dpart.preds : [], consSet = new Set(consPreds);   // constructs: phosphosite windows, mutants, tag/linker variants, engineered
@@ -3952,7 +3963,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
           <th colspan="2" class="grp" title="PAE ≤ 12 Å">Local interaction residues (LIR)</th><th colspan="2" class="grp" title="the interaction residues that also have Cβ ≤ 8 Å">Contact residues (cLIR)</th></tr>
         <tr><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th></tr></thead>
         <tbody>${rowsP.map((p, i) => { const cn = consSet.has(p) && !consOnly, bl = !consSet.has(p) && fold && !(p.iLIS >= CUT[CUTP] || p === best);
-          return `<tr data-i="${i}"${cn ? ' class="cons" hidden' : bl ? ' class="below" hidden' : ''}><td><span class="src" style="--c:${runColor(sp, p)}">${esc(lab(p))}</span>${consSet.has(p) ? ` <span class="flag">${esc([kindOf(p.qc), kindOf(p.pc)].filter((k) => KIND_DROP.has(k)).join(', '))}</span>` : ''}</td><td>${p.rank}</td>
+          return `<tr data-i="${i}"${cn ? ' class="cons" hidden' : bl ? ' class="below" hidden' : ''}><td><span class="src" style="--c:${runColor(sp, p)}">${esc(lab(p))}</span>${p.rank === Math.min(...rowsP.filter((x) => x.run === p.run).map((x) => x.rank)) ? fpLink(B, p.run) : ''}${consSet.has(p) ? ` <span class="flag">${esc([kindOf(p.qc), kindOf(p.pc)].filter((k) => KIND_DROP.has(k)).join(', '))}</span>` : ''}</td><td>${p.rank}</td>
           <td class="n">${fmtNum(p.iLIS, 3)} <span class="band b${bandOf(p.iLIS)}">${bandLabel[bandOf(p.iLIS)]}</span></td>
           ${band(FPR.iLISA, p.iLISA, 1)}${band(FPR.ipTM, p.ipTM, 2)}${band(FPR.LIS, p.LIS, 3)}${band(FPR.cLIS, p.cLIS, 3)}${band(FPR.ipSAE, p.ipSAE, 3)}${band(FPR.actifpTM, p.actifpTM, 3)}${band(FPR.pDockQ, p.pDockQ, 3)}${band(FPR.LIpDockQ, p.LIpDockQ, 3)}${band(FPR.pDockQ2, p.pDockQ2, 3)}${band(FPR.LIpDockQ2, p.LIpDockQ2, 3)}${num(p.qLIR, 0)}${num(p.pLIR, 0)}${num(p.qcLIR, 0)}${num(p.pcLIR, 0)}</tr>`; }).join('')}</tbody></table></div>
       ${fold || (consPreds.length && !consOnly) ? `<div class="pager">${fold ? `<button class="more" type="button" id="models-more" aria-expanded="false">Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})</button>` : ''}${consPreds.length && !consOnly ? `<button class="more" type="button" id="models-cons" aria-expanded="false">Show the ${fmtInt(consPreds.length)} construct model${consPreds.length === 1 ? '' : 's'} (not counted)</button>` : ''}</div>` : ''}</div>
