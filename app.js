@@ -3834,30 +3834,35 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 // FlyPredictome runs: setmap.tsv (batch → SET; the Atlas batch is not the SET number), opened in FlyPredictome-LIVIA.
 // Human kinase–TF runs: their setmap.tsv (set, kinase, its TFs in that SET), opened in LIVIA's ortholog page; only the runs
 // FlyPredictome shows have a SET. No map, or a run it lacks: no link.
-let FPSET = null, FPMAP = null, KTSET = null, KTMAP = null;   // FPMAP, KTMAP: the resolved maps, once loaded
+let FPSET = null, FPMAP = null;   // FPMAP: the resolved map, once loaded
 const fpSetmap = () => (FPSET ||= fetch('data/screens/flypredictome/setmap.tsv').then((r) => (r.ok ? r.text() : '')).then((t) => {
   const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), bi = h.indexOf('batch'), si = h.indexOf('set'); if (bi < 0 || si < 0) return null;
   return (FPMAP = new Map(L.map((l) => l.split('\t')).filter((f) => f[si]).map((f) => [+f[bi], f[si].trim()]))); }).catch(() => null));
-const ktSetmap = () => (KTSET ||= fetch('data/screens/human-kinase-tf/setmap.tsv').then((r) => (r.ok ? r.text() : '')).then((t) => {
-  const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), si = h.indexOf('set'), ki = h.indexOf('kinase'), ti = h.indexOf('tfs'); if (si < 0 || ki < 0 || ti < 0) return null;
-  const m = new Map(); for (const l of L) { const f = l.split('\t'), set = (f[si] || '').trim(), kin = f[ki]; if (!set || !kin) continue; for (const tf of (f[ti] || '').trim().split(',')) if (tf) m.set(kin + '___' + tf, set); }
-  return (KTMAP = m); }).catch(() => null));
-const linkMaps = async (sp, B) => {   // the SET maps a page's runs need: FlyPredictome's, and the kinase–TF one only when the page has kinase–TF runs
+// Screens FlyPredictome shows through its ortholog search: each a setmap.tsv (set, then the run's first name and its second names in
+// that SET: columns kinase/tfs or a/bs), opened in LIVIA's ortholog page with the screen's taxon pair. Add a screen here and its file.
+const ORTHO_DS = { 'human-kinase-tf': '9606/9606' }, OSET = new Map(), OMAP = new Map();
+const oSetmap = (ds) => { if (!OSET.has(ds)) OSET.set(ds, fetch(`data/screens/${ds}/setmap.tsv`).then((r) => (r.ok ? r.text() : '')).then((t) => {
+  const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), si = h.indexOf('set'), ai = Math.max(h.indexOf('kinase'), h.indexOf('a')), bi = Math.max(h.indexOf('tfs'), h.indexOf('bs')); if (si < 0 || ai < 0 || bi < 0) return null;
+  const m = new Map(); for (const l of L) { const f = l.split('\t'), set = (f[si] || '').trim(), a = f[ai]; if (!set || !a) continue; for (const b of (f[bi] || '').trim().split(',')) if (b) m.set(a + '___' + b, set); }
+  OMAP.set(ds, m); return m; }).catch(() => null)); return OSET.get(ds); };
+const linkMaps = async (sp, B) => {   // the SET maps a page's runs need: FlyPredictome's, and an ortholog-search screen's only when the page has its runs
   if (!B || !B.runs) return;
   if (sp.dsIds.includes('flypredictome')) B.fpSet = await fpSetmap();
-  if (sp.dsIds.includes('human-kinase-tf') && [...B.runs.values()].some((r) => r.ds === 'human-kinase-tf')) B.ktSet = await ktSetmap(); };
+  const want = new Set([...B.runs.values()].map((r) => r.ds).filter((d) => ORTHO_DS[d]));
+  B.oSet = new Map(); for (const d of want) { const m = await oSetmap(d); if (m) B.oSet.set(d, m); } };
 const FP_DETAILS = 'https://www.flyrnai.org/tools/fly_predictome/web/';
 const fpUrl = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru || !ru.name) return ''; const at = ru.name.indexOf('___'); if (at < 0) return '';
   const a = encodeURIComponent(ru.name.slice(0, at)), b = encodeURIComponent(ru.name.slice(at + 3));
-  if (ru.ds === 'human-kinase-tf') { const ks = (B && B.ktSet) || KTMAP, set = ks && ks.get(ru.name); return set ? `${LIVIA}ortholog_predictome.html?url=${FP_DETAILS}famdb_details_all/${a}/${b}/${encodeURIComponent(set)}/9606/9606/` : ''; }
+  if (ORTHO_DS[ru.ds]) { const ks = (B && B.oSet && B.oSet.get(ru.ds)) || OMAP.get(ru.ds), set = ks && ks.get(ru.name); return set ? `${LIVIA}ortholog_predictome.html?url=${FP_DETAILS}famdb_details_all/${a}/${b}/${encodeURIComponent(set)}/${ORTHO_DS[ru.ds]}/` : ''; }
   const fs = (B && B.fpSet) || FPMAP; if (ru.ds !== 'flypredictome' || !fs || ru.batch == null) return '';
   const set = fs.get(ru.batch); return set ? `${LIVIA}flypredictome.html?url=${FP_DETAILS}famdb_details/${a}/${b}/${encodeURIComponent(set)}/` : ''; };
 // Why a pair has no 3D link: its best run is a FlyPredictome run the FlyPredictome server does not show yet (no SET), or no model the Atlas can open
 const no3dWhy = (B, p, AX) => { const ru = p && p.bm && B.runs && B.runs.get(p.bm.run);
   if (ru && ru.ds === 'flypredictome' && !fpUrl(B, ru.id)) return 'its best run is not on the FlyPredictome server yet (a batch FlyPredictome has not loaded), so it cannot open in LIVIA';
-  if (ru && ru.ds === 'human-kinase-tf' && !fpUrl(B, ru.id)) return 'its best run is in a kinase–TF batch FlyPredictome does not show, so it cannot open in LIVIA';
+  if (ru && ORTHO_DS[ru.ds] && !fpUrl(B, ru.id)) return 'its best run is in a batch FlyPredictome does not show, so it cannot open in LIVIA';
+  if (ru && /kinase-kinase$/.test(ru.ds)) return 'no LIVIA link for the runs of this screen yet';
   return AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'; };
-const fpPage = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); return ru && ru.ds === 'human-kinase-tf' ? "LIVIA's ortholog page" : 'FlyPredictome-LIVIA'; };
+const fpPage = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); return ru && ORTHO_DS[ru.ds] ? "LIVIA's ortholog page" : 'FlyPredictome-LIVIA'; };
 const fpLink = (B, rid) => { const u = fpUrl(B, rid); return u ? ` <a class="fp-open" href="${esc(u)}" target="_blank" rel="noopener" title="this run in ${fpPage(B, rid)}, read from FlyPredictome">Open in ${fpPage(B, rid)} ↗</a>` : ''; };
 // A pair's best run that opens in LIVIA from FlyPredictome: its best-iLIS run when that one has a SET, else its best run that has.
 const fpBest = (B, p) => { if (!p.bm) return null; if (fpUrl(B, p.bm.run)) return p.bm;
