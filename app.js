@@ -5308,7 +5308,8 @@ async function viewNetwork(spId, q) {
     const ends = (d) => [typeof d.source === 'object' ? d.source.id : d.source, typeof d.target === 'object' ? d.target.id : d.target];
     const K = KBN, restyle = () => { const st = edgeStyle('nw', K);   // recolor in place: no new layout
       const byC = S.ncol === 'comm:' && groups.length && !catOrder, gOf = (d) => { const [a, b] = ends(d), x = gk.get(a); return x != null && x === gk.get(b) ? x : null; };   // as LIVIA's network page: an edge inside a community in its color, between communities light gray
-      link.attr('stroke', (d) => (st.hit(d) || !byC || st.kb ? st.color(d) : gOf(d) != null ? GCOL(groups.indexOf(gOf(d))) : '#C7CED6')).attr('stroke-opacity', (d) => (st.hit(d) ? 0.95 : byC && !st.kb ? (gOf(d) != null ? 0.75 : 0.3) : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
+      const selEl = SELN ? g.selectAll('circle.nfill').filter((n) => n && n.id === SELN).node() : null, selCol = selEl ? selEl.getAttribute('fill') : null, out = (d) => selCol && byC && !st.kb && !st.hit(d) && gOf(d) == null && ends(d).includes(SELN);   // a highlighted protein's pairs into other communities take its color, not the between-community gray
+      link.attr('stroke', (d) => (out(d) ? selCol : st.hit(d) || !byC || st.kb ? st.color(d) : gOf(d) != null ? GCOL(groups.indexOf(gOf(d))) : '#C7CED6')).attr('stroke-opacity', (d) => (out(d) ? 0.85 : st.hit(d) ? 0.95 : byC && !st.kb ? (gOf(d) != null ? 0.75 : 0.3) : 0.8)); link.filter(st.hit).raise();   // reported pairs on top
       const keep = shownPairs(gOf); link.attr('display', (d) => (keep(d) ? null : 'none')); halo.attr('display', (d) => (keep(d) ? null : 'none'));
       const shownExtra = st.kb ? extra.filter((d) => kbHit(d, st.ev)) : []; dash.attr('display', (d) => (shownExtra.includes(d) ? null : 'none'));
       const fo = (d) => FOLD.get(fkey(...ends(d)));
@@ -5441,7 +5442,8 @@ async function viewNetwork(spId, q) {
       const nb = new Set(SELN ? [SELN] : []); if (SELN) for (const l of [...links, ...extra, ...xo]) { const [a, b] = ends(l); if (a === SELN) nb.add(b); else if (b === SELN) nb.add(a); }
       node.attr('opacity', (d) => (!SELN || nb.has(d.id) ? null : 0.15));
       g.selectAll('text').filter(function () { const d = this.__data__; return d && d.row; }).attr('opacity', function () { return !SELN || nb.has(this.__data__.id) ? null : 0.15; });
-      for (const sel of [link, dash, halo, xol]) sel.attr('opacity', (l) => { if (!SELN) return null; const [a, b] = ends(l); return a === SELN || b === SELN ? 1 : 0.05; }); }
+      for (const sel of [link, dash, halo, xol]) sel.attr('opacity', (l) => { if (!SELN) return null; const [a, b] = ends(l); return a === SELN || b === SELN ? 1 : 0.05; });
+      restyle(); }
     svg.on('click.hl', (ev) => { if (S.click === 'select' && SELN && !ev.defaultPrevented && !(ev.target.__data__ && ev.target.__data__.row)) hl(null); });
     hl(SELN);   // a redraw keeps the highlight
     net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote, xo, XO, disp };
