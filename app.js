@@ -3510,6 +3510,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <span class="num tl-plain" title="the same model's iLISA">${Number.isFinite(la) ? la.toFixed(1) : '—'}</span>
       <span class="num" style="${bandSty(FPR.ipTM, ip)}" title="${tip(FPR.ipTM, ip, "the same model's ipTM")}">${Number.isFinite(ip) ? ip.toFixed(2) : '—'}</span>
       ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of the pair's ${p.preds.length} in the screens shown">${p.preds.filter((x) => x.iLIS >= CUT[10]).length}/${p.preds.length}</span>`}</li>`; }).join('');
+    {   // the list as wide as its longest partner name needs (90-220 px for the name), the plot taking the rest: no name cut short
+      const ov = $('#toplist').closest('.overview'); let w = 0;
+      if (ov && innerWidth > 900) { $('#toplist').querySelectorAll('.tl-name').forEach((e) => { e.style.width = 'max-content'; w = Math.max(w, e.getBoundingClientRect().width); e.style.width = ''; });
+        if (w) { const nm = Math.min(220, Math.max(90, Math.ceil(w) + 4)); ov.style.setProperty('--tlname', `${nm}px`); ov.style.setProperty('--tlw', `${Math.max(380, nm + (ONE ? 312 : 345))}px`); } }
+    }
     $('#toplist').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const M2 = VX || AX, x = M2 && [...M2.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
   }
   // The 3D cell of a top partner, as the partner table's: its run in LIVIA from FlyPredictome when a SET is known, else the AFDB

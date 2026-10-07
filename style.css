@@ -217,11 +217,11 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .gtip { position: fixed; z-index: 100; pointer-events: none; background: rgba(23, 38, 58, 0.94); color: #fff; font-size: 12.5px; line-height: 1.4; padding: 7px 10px; border-radius: 8px; max-width: min(420px, calc(100vw - 20px)); box-shadow: 0 8px 24px rgba(23, 38, 58, 0.25); }
 .gtip[hidden] { display: none; }
 /* overview: scatter left, ranked list right */
-.overview { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 26px; align-items: start; margin-top: 8px; }
+.overview { display: grid; grid-template-columns: minmax(0, 1fr) var(--tlw, minmax(0, 0.65fr)); gap: 26px; align-items: start; margin-top: 8px; }
 @media (max-width: 900px) { .overview { grid-template-columns: 1fr; } }
 .toplist { list-style: none; margin: 0; padding: 0; counter-reset: t; display: grid; gap: 2px; }
-.toplist li, .tl-head { display: grid; grid-template-columns: 22px minmax(72px, 1fr) 40px 54px 46px 52px 40px 40px; align-items: center; gap: 5px; padding: 6px 8px; }   /* #, partner (the room: TP53BP1 in full), cluster, 3D, iLIS, iLISA, ipTM, models past */
-.toplist.one li, .tl-head.one { grid-template-columns: 22px minmax(64px, 1fr) 40px 54px 50px 56px 44px; }   /* one model per pair: no share of models */
+.toplist li, .tl-head { display: grid; grid-template-columns: 22px var(--tlname, minmax(72px, 1fr)) 40px 54px 46px 52px 40px 40px; align-items: center; gap: 5px; padding: 6px 8px; }   /* #, partner (the room: TP53BP1 in full), cluster, 3D, iLIS, iLISA, ipTM, models past */
+.toplist.one li, .tl-head.one { grid-template-columns: 22px var(--tlname, minmax(64px, 1fr)) 40px 54px 50px 56px 44px; }   /* one model per pair: no share of models */
 .tl-3d { font-size: 12.5px; white-space: nowrap; }
 .tl-3d a { font-weight: 500; }
 .toplist .num.tl-plain { font-weight: 500; color: var(--ink-2); }
