@@ -1886,7 +1886,7 @@ function edgeKey(st, K, links, extra = []) {   // the key under a network: the i
   const base = K && st.kb ? `<span><i style="background:${KB_DIM}"></i>not reported (width: best iLIS)</span>` : st.shade ? `<span><i class="kb-grad" style="background:linear-gradient(90deg, ${lo}, ${hi})"></i>best iLIS, 0.223 to 0.85+</span>` : `<span><i style="background:${EFLAT}"></i>predicted pair</span>`;
   const on = links.filter((d) => kbHit(d, st.ev)), n = (f) => fmtInt(on.filter(f).length);
   const red = K === null ? '<span class="muted">no BioGRID records for this species</span>'   // undefined: not read yet (read on the first BioGRID tick)
-    : K && st.kb ? `<span class="muted">reported in BioGRID ${esc(K.release)} (${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
+    : K && st.kb ? `<span class="muted">Literature evidence (reported in BioGRID ${esc(K.release)}; ${fmtInt(on.length)} of ${fmtInt(links.length)} pairs):</span>`
       + (st.ev !== 'g' ? `<span><i style="background:${KB_COL.p}"></i>physical (${n((d) => d.pubs > 0 && !(d.gen > 0))})</span>` : '')
       + (st.ev !== 'p' ? `<span><i style="background:${KB_COL.g}"></i>genetic (${n((d) => d.gen > 0 && !(d.pubs > 0))})</span>` : '')
       + `<span><i style="background:${KB_COL.pg}"></i>both (${n((d) => d.pubs > 0 && d.gen > 0)})</span>`
@@ -3241,8 +3241,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         return `<a href="#/${sp.id}/${P.key}/${r.key}${scopeQ}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''}>${esc(r.gene)}</a>`; }).join(', ')}${rows.length > cap ? ` <button class="more" data-c="${c}">${infoOpen.has(c) ? 'show fewer' : `+${rows.length - cap} more`}</button>` : ''}</div></div>`; }).join('');
     box.querySelectorAll('.more').forEach((b) => b.onclick = () => { const c = +b.dataset.c; infoOpen.has(c) ? infoOpen.delete(c) : infoOpen.add(c); renderClusterInfo(); });
     const leg = $('#info-kb'), all = [...new Set(Object.values(mem).flatMap((x) => [...x]))].map(kbOf).filter(Boolean);
-    const nP = all.filter((x) => x.ph).length, nG = all.filter((x) => x.ge).length, nB = all.filter((x) => x.ph && x.ge).length;
-    leg.hidden = !KB; if (KB) leg.innerHTML = `<span>reported in BioGRID ${KB.release}: <span class="kb-mark kb-p">physical</span> (${fmtInt(nP)} partner${nP === 1 ? '' : 's'}), <span class="kb-mark kb-g">genetic</span> (${fmtInt(nG)}), <span class="kb-mark kb-p kb-g">both</span> (${fmtInt(nB)})</span>` + (KB ? kbBase() : '');
+    const nP = all.filter((x) => x.ph && !x.ge).length, nG = all.filter((x) => x.ge && !x.ph).length, nB = all.filter((x) => x.ph && x.ge).length;
+    leg.hidden = !KB; if (KB) leg.innerHTML = `<span>Literature evidence: <span class="kb-mark kb-p">physical</span> ${fmtInt(nP)} <span class="kb-mark kb-g">genetic</span> ${fmtInt(nG)} <span class="kb-mark kb-p kb-g">both</span> ${fmtInt(nB)} (reported in BioGRID ${esc(KB.release)}; partners counted)</span>` + (KB ? kbBase() : '');
   }
 
   /* Interaction Residues: any partner, any screen, any model */
