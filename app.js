@@ -3548,7 +3548,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const showSrc = () => SRC0 && !!T.showSrc;   // the Source column is hidden until asked for (several screens make it wide)
   const AX = !VX && sp.reg && sp.reg.structs ? new Map() : null;
   if (AX) afdbPartnerRows(sp, P.i, B.partners).then((m) => { if (gone()) return; for (const [j, x] of m) AX.set(j, x); drawTable(); drawTopList(); });
-  const colsNow = () => VX ? [['gene', 'Partner'], ['c', 'Cluster'], ['pair', 'Pair'], ['d3', '3D'], ...VMCOL.map((k) => ['m:' + k, k]), ['contacts', 'Contacts']]
+  const colsNow = () => VX ? [['gene', 'Partner'], ['c', 'Cluster'], ['pair', 'Pair'], ['d3', '3D'], ...VMCOL.map((k) => ['m:' + k, k === 'actifpTM' ? 'actifpTM*' : k]), ['contacts', 'Contacts']]
     : [['gene', 'Partner'], ['c', 'Cluster'], ...(showSrc() ? [['src', 'Source']] : []), ['pair', 'Pair'], ['d3', '3D'], ['best', 'iLIS'],
       ...BCOL.map((k) => ['b:' + k, k === 'actifpTM' ? 'actifpTM*' : k]), ['contacts', 'Contacts'], ...(ONE ? [] : [['pass', 'Models past']])];
   function drawTable() {
