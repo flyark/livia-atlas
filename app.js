@@ -5193,7 +5193,7 @@ async function viewNetwork(spId, q) {
     if (!seed) { const s0 = Math.min(W / FW, H / FH); fitK = s0; svg.call(zoom.transform, d3.zoomIdentity.translate((W - FW * s0) / 2, (H - FH * s0) / 2).scale(s0)); }
     if (seed) { svg.call(zoom.transform, seed.t);   // a click added partners: the old nodes stay put, the new ones start at the protein clicked
       const [ax, ay] = seed.pos.get(seed.at) || [FW / 2, FH / 2];
-      nodes.forEach((d, n) => { const p = seed.pos.get(d.id); if (p) { [d.x, d.y] = p; } else { d.x = ax + 25 * Math.cos(n); d.y = ay + 25 * Math.sin(n); } }); }
+      nodes.forEach((d, n) => { const p = seed.pos.get(d.id); if (p) { [d.x, d.y] = p; d.fx = d.x; d.fy = d.y; } else { d.x = ax + 25 * Math.cos(n); d.y = ay + 25 * Math.sin(n); } }); }   // the drawn proteins pinned where they were (a drag frees one), so only the new partners move
     const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); });
     const r = (d) => (d.q ? 10 : 4) + Math.min(8, Math.sqrt(deg.get(d.id) || 0) * 1.4);   // the layout's spacing (collisions), kept so a seed repeats the same drawing
     const dmax = Math.max(1, ...deg.values()), qbig = nodes.some((d) => !d.q), rd = (d) => ((d.q && qbig ? 2.5 : 0) + 3 + 12 * Math.sqrt((deg.get(d.id) || 0) / dmax)) * S.nsize;   // proteins-of-interest larger only beside added partners   // drawn size, as LIVIA's network page: grows with the square root of the pairs
