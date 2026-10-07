@@ -1711,7 +1711,7 @@ async function viewAbout() {
       with a reported physical interaction is ringed in the Overview (partners past 10% FPR by default; the menu shows all), and in the Clusters and Partners lists a reported partner's name is marked in the same colors, light.
       The matched pairs are a file on this site for each species; a pair page asks PubMed (NCBI) for the titles, authors and years of the publications BioGRID lists.</p></div>
     <div class="card" id="about-limits"><h2>How the pages count, and their limits</h2>
-      <p><b>Three ways a partner is counted past a cutoff.</b> The header tiles and the partner lists count a partner when its <i>best model</i>, over every model of every screen, passes. Predicted binding sites (cLIP) cluster <i>every model</i> that passes, whatever its rank, so a partner can sit in more than one site when its models bind in different ways. Top partners ranks by the <i>share of a pair's models</i> that pass, so a pair past the cutoff in all its models comes before one past it in one. The cards say which rule they use.</p>
+      <p><b>Three ways a partner is counted past a cutoff.</b> The header tiles and the partner lists count a partner when its <i>best model</i>, over every model of every screen, passes. Predicted binding sites (cLIP) cluster <i>every model</i> that passes, whatever its rank, so a partner can sit in more than one site when its models bind in different ways. Top partners ranks by iLIS alone, each pair by its <i>best model</i>, whatever its number of models; a pair folded both full length and as a part (a fragment, a peptide) is shown by its best full-length model. The cards say which rule they use.</p>
       <p><b>What the false-positive rates mean.</b> The cutoffs were set on the top-ranked of five AlphaFold-Multimer models × five recycles per pair (the reference sets above); screens with other settings, or pairs folded in many runs, get them as a guide. The Atlas applies them to a pair's best model, which on that set gives 10.4%, 5.3% and 1.1%. A pair folded in several runs or constructs has more models to choose its best from (some pairs were folded in dozens of runs), so for it the stated rate is a lower bound. In a one-model screen (the AlphaFold Database heterodimers, viral dimers included) the best model is the only model, which was not the setting of the calibration either, so there the rates are a guide. The cutoffs were not calibrated separately for bacteria, plants or viruses.</p>
       <p><b>Limits.</b> Every interaction here is a prediction, not an experiment. BioGRID marks depend on which proteins have been studied and on how each screen chose its pairs (a literature-derived set is reported by design), so a reported share is not a measure of accuracy. A site contacted by many partners can be a surface many proteins are predicted to touch (a DNA-binding face, a kinase domain in a kinase screen) rather than a specific binding site; its partner list and the screens they come from can help tell them apart. Paralogs that share an oligomerization domain can be predicted to pair through it whether or not they do in cells. Contacts in disordered regions count only where the predicted aligned error is at most 12 Å, but they remain the least certain. Network chance tests compare only pairs that were folded where the Atlas knows which were.</p>
       <p><b>Homodimers.</b> A protein page can show its homodimer from the AlphaFold Database homodimer release, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}), and the card colors each score by its band. The current files hold the entries the release lists (${esc((reg.homodimers || {}).selection || 'its confidence filter')}); the full set is being scored. It has one model per protein and does not enter the partner counts, binding sites or networks.</p></div>
@@ -2315,7 +2315,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <label>show <select id="sc-pts"><option value="partner">one per partner (best model)</option><option value="all">every model</option><option value="rank1">rank-1 per pair</option></select></label>
           <input type="search" id="sc-find" placeholder="Find partner" aria-label="Find a partner in the plot" style="width:140px"></div></div>
       <div class="overview"><div><div class="muted" id="sc-rho" style="margin:2px 0 8px"></div><div class="muted" id="sc-def" style="margin:-4px 0 8px" hidden></div><div class="plot" id="scat2"><canvas id="scatter-canvas" role="img" aria-label="Each partner's scores, one metric against another"></canvas></div><div class="legend" id="sc-legend"></div></div>
-        <div><h3>Top partners <span class="muted">by the share of models past the 10% cutoff, then iLIS; at equal shares, one-model pairs last. Each row: the pair's best-iLIS model</span></h3>
+        <div><h3>Top partners <span class="muted">by iLIS, each pair's best model; full-length models first when a pair was also folded as a part</span></h3>
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span>3D</span><span>iLIS</span><span>iLISA</span><span>ipTM</span><span title="models past the 10% FPR cutoff, of the pair's models">models<br>past</span></div>
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:${BAND[1]}"></i>1%</span><span><i style="background:${BAND[5]}"></i>5%</span><span><i style="background:${BAND[10]}"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div></div></div></div>
@@ -3497,16 +3497,18 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function drawTopList() {
     const list = B.partners.filter((p) => p.id !== P.key && !p.rep).map((p) => ({ ...p, gene: gname(p.id), c: partnerCluster.get(p.id) || 0 })), k = M ? M.k : 1;
     const tip = (cuts, v, what) => `${what}: ${bandLabel[bandIn(cuts, v)]} (cutoffs ${cuts.join(' / ')})`;
-    // the steadiest calls first: the share of a pair's models past the 10% cutoff (3 of 3 = 5 of 5, whatever the screen), then iLIS;
-    // a pair with one model has no share to speak of, so it follows the pairs with several. Each row shows the pair's best-iLIS model
-    // (its iLIS, iLISA and ipTM), as the partner table (author, 2026-10-06)
-    const past = (p) => p.preds.filter((x) => x.iLIS >= CUT[10]).length / Math.max(1, p.preds.length), one = (p) => (p.preds.length < 2 ? 1 : 0);
-    const L = [...list].sort((a, b) => past(b) - past(a) || one(a) - one(b) || b.best - a.best).slice(0, 12);
-    $('#toplist').innerHTML = L.map((p) => { const xs = partnerIsos(p), bm = p.bm || {}, la = bm.iLISA > 0 || Number.isFinite(bm.iLIA) ? bm.iLISA : NaN, ip = bm.ipTM;   // the best-iLIS model's own values (an iLISA derived without iLIA is no value); a dash when it has none, never another model's
+    // ranked by iLIS alone, whatever the number of models; each row one model: the pair's highest iLIS, and when the pair was folded both
+    // full length and as a part (a fragment, a peptide, a phosphosite window), its highest full-length model (author, 2026-10-06)
+    const PART = new Set(['fragment', 'peptide', 'phosphosite']), part = (nm) => { const c = B.cons && B.cons.get(nm); return !!(c && PART.has(c.kind)); };
+    const repOf = (p) => { const cs = p.counted && p.counted.length ? p.counted : p.preds, full = cs.filter((x) => !part(x.qc) && !part(x.pc)), pool = full.length ? full : cs;
+      return pool.reduce((t, x) => ((x.iLIS || 0) > (t.iLIS || 0) ? x : t), pool[0]) || p.bm || {}; };
+    const L = list.map((p) => ({ ...p, R: repOf(p) })).sort((a, b) => (b.R.iLIS || 0) - (a.R.iLIS || 0)).slice(0, 12);
+    $('#toplist').innerHTML = L.map((p) => { const xs = partnerIsos(p), bm = p.R, la = bm.iLISA > 0 || Number.isFinite(bm.iLIA) ? bm.iLISA : NaN, ip = bm.ipTM, v = bm.iLIS || 0;
+      const why = bm !== p.bm && p.bm && (p.bm.iLIS || 0) > v ? ` (a part of the protein scores higher: ${(p.bm.iLIS || 0).toFixed(3)})` : '';
       return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
-      <span class="tl-3d">${tl3d(p)}</span>
-      <span class="num" style="${bandSty(FPR.iLIS, p.best)}" title="${tip(FPR.iLIS, p.best, 'iLIS')}">${p.best.toFixed(3)}</span>
+      <span class="tl-3d">${tl3d(p, bm)}</span>
+      <span class="num" style="${bandSty(FPR.iLIS, v)}" title="${tip(FPR.iLIS, v, why ? 'iLIS, the best full-length model' : 'iLIS')}${why}">${v.toFixed(3)}</span>
       <span class="num tl-plain" title="the same model's iLISA">${Number.isFinite(la) ? la.toFixed(1) : '—'}</span>
       <span class="num" style="${bandSty(FPR.ipTM, ip)}" title="${tip(FPR.ipTM, ip, "the same model's ipTM")}">${Number.isFinite(ip) ? ip.toFixed(2) : '—'}</span>
       ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of the pair's ${p.preds.length} in the screens shown">${p.preds.filter((x) => x.iLIS >= CUT[10]).length}/${p.preds.length}</span>`}</li>`; }).join('');
@@ -3519,11 +3521,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   }
   // The 3D cell of a top partner, as the partner table's: its run in LIVIA from FlyPredictome when a SET is known, else the AFDB
   // model (displayed, or read from the release archive); a dash when there is none
-  function tl3d(p) {
+  function tl3d(p, m) {   // m: the row's model; its own run when that opens in LIVIA
     const r = sp.byKey.get(p.id), dash = '<span class="muted">–</span>';
     if (VX) { const x = r && VX.get(r.i); return x && x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>`
       : x && x.addr && x.model ? `<a href="#" class="arch" data-m="${esc(x.model)}" title="${esc(x.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>` : dash; }
-    const x = fpBest(B, p), fu = x && fpUrl(B, x.run); if (fu) return `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`;
+    const x = m && fpUrl(B, m.run) ? m : fpBest(B, p), fu = x && fpUrl(B, x.run); if (fu) return `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`;
     const ax = r && AX ? AX.get(r.i) : null; return ax && ax.addr && ax.model ? `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>` : dash;
   }
   reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
