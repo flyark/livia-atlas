@@ -852,10 +852,12 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         return c && c.exact && c.off != null && !c.mut && c.kind !== 'mutant' && c.kind !== 'variant' ? `${c.key}@${c.off}+${c.len || len}` : `${nm}:${len}`; };
       const pairKey = (S, q, o, ql, ol, C) => { const x = S && S.get(q), y = S && S.get(o);   // the two sequences, the query's first
         return x && y ? sno(x) + '|' + sno(y) : `${seqId(C, q, ql)}|${seqId(C, o, ol)}`; };   // (their placement, or names and lengths, without a FASTA)
+      let refSeq0 = '';   // the gene-keyed screen's reference sequence: a model of another screen with this very sequence sits on the same axis
       for (const part of parts) {
         if (!part.raw.rows) Object.assign(part.raw, await csvRows(await JSZip.loadAsync(part.raw.bytes), part.raw.csvName));   // read again: an earlier view let them go
         const C = part.raw.cons;
         if (C) for (const [nm, c] of C) cons.set(nm, c);
+        if (C && !refSeq0) refSeq0 = part.raw.seqs.get(P.key) || '';
         const keyOf = (nm) => { const c = C && C.get(nm); if (c) return c.key; const r = sp.byName.get(nm); return r ? r.key : nm; };
         for (const [nm, s] of part.raw.seqs) seqs.set(C ? nm : keyOf(nm), s);   // gene-keyed: the reference under the gene key, constructs by name
         const H = part.raw.H, hdr = CLIP_COLS.map(own), keep = CLIP_COLS.map((c) => H[c]), num = (r, c) => (H[c] == null || r[H[c]] === '' ? NaN : +r[H[c]]);
@@ -870,7 +872,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
           if (!runs.has(rid)) runs.set(rid, { id: rid, di: part.di, ds: sp.dsIds[part.di], name: nm, batch: H.batch != null ? +r[H.batch] : null, qi, key, qc, pc, set, tags: tags ? tags.map((t) => t.id) : [] });   // name and batch: the run as the screen's own table has it
           if (set && !sets.includes(set)) sets.push(set);
           const s = (x, y) => (qi ? x : y);
-          const p = { partner: key, run: rid, di: part.di, qi, qc, pc, set, tags: runs.get(rid).tags, rank: num(r, 'rank'), iLIS: num(r, 'iLIS'), iLIA: num(r, 'iLIA'), iLISA: num(r, 'iLISA'), ipTM: num(r, 'ipTM'),
+          const p = { partner: key, run: rid, di: part.di, qi, qc, pc, qs: C ? null : part.raw.seqs.get(qi ? a : b) || null, set, tags: runs.get(rid).tags, rank: num(r, 'rank'), iLIS: num(r, 'iLIS'), iLIA: num(r, 'iLIA'), iLISA: num(r, 'iLISA'), ipTM: num(r, 'ipTM'),
             pTM: num(r, 'pTM'), LIS: num(r, 'LIS'), cLIS: num(r, 'cLIS'), LIA: num(r, 'LIA'), cLIA: num(r, 'cLIA'), ipSAE: num(r, 'ipSAE'), actifpTM: num(r, 'actifpTM'),
             pDockQ: num(r, 'pDockQ'), LIpDockQ: num(r, 'LIpDockQ'), pDockQ2: num(r, 'pDockQ2'), LIpDockQ2: num(r, 'LIpDockQ2'),
             qPl: num(r, s('pLDDT_i', 'pLDDT_j')), pPl: num(r, s('pLDDT_j', 'pLDDT_i')), qLIR: num(r, s('LIR_i', 'LIR_j')), pLIR: num(r, s('LIR_j', 'LIR_i')),
@@ -929,6 +931,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
       // one construct, the reference-length one (UniProt) when a screen used it, else the one most predictions used.
       const R0 = P.len || 0;
       const onRef = (p) => { const c = cons.get(p.qc);
+        if (!c) return !!(R0 && p.qLen === R0 && p.qs && refSeq0 && p.qs === refSeq0);   // another screen's model (AFDB) folded on the reference's own sequence: the same axis, residue for residue
         return !!(c && c.len === p.qLen && c.kind !== 'mutant' && c.kind !== 'variant' && ((c.exact && c.off != null && c.off + p.qLen <= R0) || c.seg)); };
       const choices = [];
       if (cons.size && R0) {
@@ -967,7 +970,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
           const o = {}; p.hdr.forEach((c, i) => { o[c] = p.row[i]; });
           if (ref) {   // the query side in the reference's numbering
             const q = p.qi ? 'i' : 'j', c = cons.get(p.qc);
-            if (!(c.exact && c.off === 0)) { o['LIR_indices_' + q] = onRefRanges(o['LIR_indices_' + q], c); o['cLIR_indices_' + q] = onRefRanges(o['cLIR_indices_' + q], c); }
+            if (c && !(c.exact && c.off === 0)) { o['LIR_indices_' + q] = onRefRanges(o['LIR_indices_' + q], c); o['cLIR_indices_' + q] = onRefRanges(o['cLIR_indices_' + q], c); }
             o['len_' + q] = String(R0);
           }
           o.name = p.qi ? `${P.key}___${p.label}` : `${p.label}___${P.key}`;
