@@ -3840,7 +3840,7 @@ const fpSetmap = () => (FPSET ||= fetch('data/screens/flypredictome/setmap.tsv')
   return (FPMAP = new Map(L.map((l) => l.split('\t')).filter((f) => f[si]).map((f) => [+f[bi], f[si].trim()]))); }).catch(() => null));
 // Screens FlyPredictome shows through its ortholog search: each a setmap.tsv (set, then the run's first name and its second names in
 // that SET: columns kinase/tfs or a/bs), opened in LIVIA's ortholog page with the screen's taxon pair. Add a screen here and its file.
-const ORTHO_DS = { 'human-kinase-tf': '9606/9606' }, OSET = new Map(), OMAP = new Map();
+const ORTHO_DS = { 'human-kinase-tf': '9606/9606', 'human-kinase-kinase': '9606/9606', 'zebrafish-kinase-kinase': '7955/7955', 'worm-kinase-kinase': '6239/6239', 'yeast-kinase-kinase': '4932/4932' }, OSET = new Map(), OMAP = new Map();
 const oSetmap = (ds) => { if (!OSET.has(ds)) OSET.set(ds, fetch(`data/screens/${ds}/setmap.tsv`).then((r) => (r.ok ? r.text() : '')).then((t) => {
   const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), si = h.indexOf('set'), ai = Math.max(h.indexOf('kinase'), h.indexOf('a')), bi = Math.max(h.indexOf('tfs'), h.indexOf('bs')); if (si < 0 || ai < 0 || bi < 0) return null;
   const m = new Map(); for (const l of L) { const f = l.split('\t'), set = (f[si] || '').trim(), a = f[ai]; if (!set || !a) continue; for (const b of (f[bi] || '').trim().split(',')) if (b) m.set(a + '___' + b, set); }
@@ -3860,7 +3860,6 @@ const fpUrl = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru |
 const no3dWhy = (B, p, AX) => { const ru = p && p.bm && B.runs && B.runs.get(p.bm.run);
   if (ru && ru.ds === 'flypredictome' && !fpUrl(B, ru.id)) return 'its best run is not on the FlyPredictome server yet (a batch FlyPredictome has not loaded), so it cannot open in LIVIA';
   if (ru && ORTHO_DS[ru.ds] && !fpUrl(B, ru.id)) return 'its best run is in a batch FlyPredictome does not show, so it cannot open in LIVIA';
-  if (ru && /kinase-kinase$/.test(ru.ds)) return 'no LIVIA link for the runs of this screen yet';
   return AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'; };
 const fpPage = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); return ru && ORTHO_DS[ru.ds] ? "LIVIA's ortholog page" : 'FlyPredictome-LIVIA'; };
 const fpLink = (B, rid) => { const u = fpUrl(B, rid); return u ? ` <a class="fp-open" href="${esc(u)}" target="_blank" rel="noopener" title="this run in ${fpPage(B, rid)}, read from FlyPredictome">Open in ${fpPage(B, rid)} ↗</a>` : ''; };
@@ -4783,7 +4782,7 @@ async function viewNetwork(spId, q) {
         <span class="optlab">Share</span><div class="controls"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
         <button class="btn" id="nw-save" type="button" title="a file with every setting that draws this network again: the proteins (and your table), cutoff, partners, layout and groups with their seeds, plus the Atlas and data versions and the result, so a drawing can be checked. Load it with Load settings, above">↓ Settings</button>
         <button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div>
-        <span class="optlab">Explore</span><div class="controls"><label class="ctl" title="find a protein in this network: it is centered and marked">Find <input type="search" id="nw-find" placeholder="a protein in the network" aria-label="Find a protein in the network" style="width:190px"></label><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="select" class="${S.click === 'select' ? 'on' : ''}" title="mark it and its pairs, the rest dimmed; nothing moves (click it again, or the background, to clear)">highlight it</button><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click opens its page in a new tab">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
+        <span class="optlab">Explore</span><div class="controls"><label class="ctl" title="find a protein in this network: it is centered and marked">Find <input type="search" id="nw-find" placeholder="a protein in the network" aria-label="Find a protein in the network" style="width:190px"></label><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="select" class="${S.click === 'select' ? 'on' : ''}" title="mark it and its pairs, the rest dimmed; nothing moves (click it again, or the background, to clear); ⌘ or Ctrl-click opens its page in a new tab">highlight it</button><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click opens its page in a new tab">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
           <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
       </div>
       <p class="muted" style="margin:2px 0 12px">Proteins-of-interest are large, added partners small; they are colored by community (Group by), or as you choose under Color proteins by; a ring of dashes marks a protein you expanded. An added partner's p (in its tooltip; the box "only partners linking more than chance" uses its Benjamini–Hochberg q ≤ 0.05) is the chance of pairing with at least that many of the proteins-of-interest it was folded with, given its own share of partners past the cutoff, with 20 pseudo-partners at the cutoff's false-positive rate added so a protein with few partners is not over-read. Click an edge for the interaction residues of the pair. Drag to move, scroll to zoom.</p>
@@ -5400,11 +5399,11 @@ async function viewNetwork(spId, q) {
     function paintChord(keep = false) {   // the community chord: the groups of this drawing in their colors, every pair by its best iLIS
       const wrap = $('#nw-chord-wrap'), gidx = new Map(groups.map((k, n) => [k, n])), ix = new Map(nodes.map((d, i) => [d.id, i])), cat = S.grp.startsWith('col:');
       wrap.hidden = groups.length < 2;
-      if (!wrap.hidden) chordCard($('#nw-chord'), { sp, groups: groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${n + 1}`, color: GCOL(n) })),
+      if (!wrap.hidden) chordCard($('#nw-chord'), { sp, groups: groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${CI[n] + 1}`, color: GCOL(n) })),
         nodes: nodes.map((d) => { const k = gk.get(d.id); return { gene: d.row.gene, key: d.row.key, g: gidx.has(k) ? gidx.get(k) : -1 }; }),
         edges: links.map((l) => ({ a: ix.get(typeof l.source === 'object' ? l.source.id : l.source), b: ix.get(typeof l.target === 'object' ? l.target.id : l.target), w: l.best })).filter((e) => e.a != null && e.b != null && Number.isFinite(e.w)) }, keep);
     }
-    paintChord(); net.repaint = paintGroups;
+    paintChord(); net.repaint = paintGroups; net.hl = hl;
     heatArgs = [nodes, links, gk, groups, gname2, deg]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
   }
   $('#nw-go').onclick = () => draw();
@@ -5416,8 +5415,8 @@ async function viewNetwork(spId, q) {
     onText: (t) => { $('#nw-ids').value = t; S.col = null; S.exp = []; S.ncolUser = false; S.autoPick = true; draw(); } });
   $('#nw-col').onchange = (e) => { S.col = e.target.value === 'all' ? 'all' : +e.target.value; S.exp = []; S.ncolUser = false; draw(); };
   $('#nw-ids').oninput = () => { S.col = null; S.ncolUser = false; };
-  $('#nw-click').onclick = (e) => { const m = e.target.dataset.m; if (!m) return; S.click = m; [...$('#nw-click').children].forEach((b) => b.classList.toggle('on', b.dataset.m === m)); showK();
-    const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); m === 'open' ? u.set('click', 'open') : u.delete('click'); history.replaceState(null, '', `${path}?${u}`); };
+  $('#nw-click').onclick = (e) => { const m = e.target.dataset.m; if (!m) return; S.click = m; if (m !== 'select' && net && net.hl) net.hl(null); [...$('#nw-click').children].forEach((b) => b.classList.toggle('on', b.dataset.m === m)); showK();   // leaving highlight mode clears it
+    const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); m === 'select' ? u.delete('click') : u.set('click', m); history.replaceState(null, '', `${path}?${u}`); };   // highlight is the default, so only add and open go in the link
   $('#nw-unexp').onclick = () => { S.exp = []; draw(); };
   $('#nw-grp').onchange = (e) => { S.grp = e.target.value; showRes(); draw(); };
   $('#nw-lay').onchange = (e) => { S.lay = e.target.value; showRes(); draw(); };
