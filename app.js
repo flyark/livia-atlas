@@ -2378,7 +2378,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <div class="tl-head"><span></span><span>Partner</span><span>Cluster</span><span title="the model's structure in LIVIA (hover a link for which model it opens)">Structure</span><span>iLIS</span><span>iLISA</span><span>ipTM</span><span title="models past: of the pair's models, how many pass the 10% FPR cutoff">models<br>past</span></div>
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:${BAND[1]}"></i>1%</span><span><i style="background:${BAND[5]}"></i>5%</span><span><i style="background:${BAND[10]}"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div>
-          <div class="legend tl-key" id="tl-m3d" hidden><span>Structure</span><span class="tl-keys"><span><span class="m3d-key same">LIVIA ↗</span> opens the model the row shows</span><span><span class="m3d-key other">LIVIA ↗</span> opens another model of the pair (hover for which)</span></span></div></div></div></div>
+          <div class="legend tl-key" id="tl-m3d" hidden></div></div></div></div>
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
         <div class="clip-ctl"><label class="ctl muted" title="a residue number or a variant (983, T983A): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or T983A" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg" title="the cutoff of this card and of the frequency and fingerprint cards below it; kept in the link (other cards have their own)">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === CUT0 ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
@@ -3573,11 +3573,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       return `<li><span class="tl-name"><a href="#/${sp.id}/${P.key}/${p.id}${scopeQ}" title="${esc(p.gene)}">${esc(p.gene)}</a>${KB && scKnown !== 'off' && (kbOf(p.id) || {}).ph ? `<i class="kb-ring" title="${kbTip(kbOf(p.id))}"></i>` : ''}${xs ? `<span class="iso-tag" title="${esc(isoTip(p, xs))}">×${xs.length}</span>` : ''}</span>
       <span class="tl-c" title="${p.c ? clusterLabel(p.c) : 'not clustered at this cutoff'}"><span class="mdot" style="background:${p.c ? clusterColor(p.c, k) : '#DDE3EA'}"></span>${p.c ? clusterLabel(p.c, true) : '—'}</span>
       <span class="tl-3d">${tl3d(p, bm)}</span>
-      <span class="num" style="${bandSty(FPR.iLIS, v)}" title="${tip(FPR.iLIS, v, why ? 'iLIS, the best full-length model' : 'iLIS')}${why}">${v.toFixed(3)}</span>
+      <span class="num" style="${bandSty(FPR.iLIS, v)}" title="${tip(FPR.iLIS, v, why ? 'iLIS, the best full-length model' : 'iLIS')}${why}">${VX ? '' : srcDot(bm)}${v.toFixed(3)}</span>
       <span class="num tl-plain" title="the same model's iLISA">${Number.isFinite(la) ? la.toFixed(1) : '—'}</span>
       <span class="num" style="${bandSty(FPR.ipTM, ip)}" title="${tip(FPR.ipTM, ip, "the same model's ipTM")}">${Number.isFinite(ip) ? ip.toFixed(2) : '—'}</span>
       ${ONE ? '' : `<span class="num tl-past" title="models past the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), of the pair's ${p.preds.length} in the screens shown">${p.preds.filter((x) => x.iLIS >= CUT[10]).length}/${p.preds.length}</span>`}</li>`; }).join('');
-    { const k3 = $('#tl-m3d'); if (k3) k3.hidden = !$('#toplist a[data-m3d]'); }   // after the list is drawn: the color key only when it has colored links (virus pages have none)
+    { const k3 = $('#tl-m3d'); if (k3) { k3.hidden = !$('#toplist a[data-m3d]'); k3.innerHTML = k3.hidden ? '' : `<span>${m3dKey($('#toplist'))}</span>`; } }   // after the list is drawn: the color key only when it has colored links (virus pages have none)
     {   // the list as wide as its longest partner name needs (90-220 px for the name), the plot taking the rest: no name cut short
       const ov = $('#toplist').closest('.overview'); let w = 0;
       if (ov && innerWidth > 900) { $('#toplist').querySelectorAll('.tl-name').forEach((e) => { e.style.width = 'max-content'; w = Math.max(w, e.getBoundingClientRect().width); e.style.width = ''; });
@@ -3585,26 +3585,29 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     }
     $('#toplist').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const M2 = VX || AX, x = M2 && [...M2.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
   }
-  // Whether the 3D link opens the model whose scores the row shows (the pair's best full-length model): the link takes a blue pill
-  // when it does and an amber one when it opens another model, or that model's run where the model is not rank 1; the hover says which.
-  function tag3d(p, x, afdb, link) {   // link: the 3D link's HTML; returned with its pill color and the reason in its hover
+  // The 3D link takes the color of the screen it opens, as the screen badges do; the dot before the row's iLIS takes the color of its
+  // model's screen (pages with several screens), so a link to another screen's model shows two colors. The hover names the model.
+  function tag3d(p, x, afdb, link) {   // link: the 3D link's HTML; returned in its screen's color with the model in its hover
     const bm = p.R || (typeof repOf === 'function' && repOf(p)) || p.bm; if (!bm) return link;   // the model whose scores the row shows
     const sc = (m) => `${esc(sp.dsShort[m.di] || '')} rank ${m.rank}, iLIS ${(m.iLIS || 0).toFixed(3)}`;
-    const same = afdb ? /^afdb-het-/.test(sp.dsIds[bm.di] || '') : !!(x && x.run === bm.run);
-    const am = afdb ? (p.preds || []).find((m) => /^afdb-het-/.test(sp.dsIds[m.di] || '')) : null;   // the AFDB model the link opens
-    let cls, note;
-    if (same && (afdb || bm.rank === 1)) { cls = 'same'; note = `Opens this row's model (${sc(bm)})`; }
-    else if (same) { cls = 'other'; note = `Opens this row's run, which starts on rank 1; this row's model is rank ${bm.rank} there (${sc(bm)}): pick rank ${bm.rank} in LIVIA`; }
-    else { cls = 'other'; note = `Opens another model of this pair${x && !afdb ? ` (${sc(x)})` : am ? ` (${sc(am)})` : ' (its AlphaFold Database model)'}; this row shows the best-iLIS model (${sc(bm)})`; }
-    return link.replace('<a ', `<a data-m3d="${cls}" `).replace(/title="/, `title="${note} · `);
+    const om = afdb ? (p.preds || []).find((m) => /^afdb-het-/.test(sp.dsIds[m.di] || '')) : x;   // the model the link opens
+    const di = om ? om.di : sp.dsIds.findIndex((d) => /^afdb-het-/.test(d));
+    const same = afdb ? /^afdb-het-/.test(sp.dsIds[bm.di] || '') : !!(x && x.run === bm.run && x.rank === bm.rank);
+    const note = same ? `Opens this row's model (${sc(bm)})` : `Opens another model of this pair${om ? ` (${sc(om)})` : ' (its AlphaFold Database model)'}; this row shows ${sc(bm)}`;
+    return link.replace('<a ', `<a data-m3d data-di="${di}" style="--c:${sp.dsColor[di] || '#5B6B7F'}" `).replace(/title="/, `title="${note} · `);
   }
+  // The dot before a row's iLIS: its model's screen, in that screen's color (only on pages with several screens)
+  const srcDot = (m) => (m && sp.dsIds.length > 1 ? `<i class="sdot" data-di="${m.di}" style="--c:${sp.dsColor[m.di] || '#5B6B7F'}" title="from ${esc(sp.dsShort[m.di] || '')}"></i>` : '');
+  // The key under a list with 3D links: each screen whose color appears in it
+  const m3dKey = (root) => { const ds = [...new Set([...root.querySelectorAll('[data-di]')].map((e) => +e.dataset.di))].filter((d) => d >= 0);
+    return `<span class="nl-k">Structure</span> LIVIA ↗${sp.dsIds.length > 1 ? ' and the dot before iLIS take' : ' takes'} the color of the screen: ${ds.map((d) => `<span class="src" style="--c:${sp.dsColor[d]}">${esc(sp.dsShort[d])}</span>`).join('')}`; };
   // The 3D cell of a top partner, as the partner table's: its run in LIVIA from FlyPredictome when a SET is known, else the AFDB
   // model (displayed, or read from the release archive); a dash when there is none
   function tl3d(p, m) {   // m: the row's model; its own run when that opens in LIVIA
     const r = sp.byKey.get(p.id), dash = `<span class="muted" title="${esc(no3dWhy(B, p, AX))}">–</span>`;
     if (VX) { const x = r && VX.get(r.i); return x && x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>`
       : x && x.addr && x.model ? `<a href="#" class="arch" data-m="${esc(x.model)}" title="${esc(x.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>` : dash; }
-    const x = m && fpUrl(B, m.run) ? m : fpBest(B, p), fu = x && fpUrl(B, x.run); if (fu) return tag3d(p, x, false, `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : x === m ? "this row's model" : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`);
+    const x = m && fpUrl(B, m.run) ? m : fpBest(B, p), fu = x && fpUrl(B, x.run, x.rank); if (fu) return tag3d(p, x, false, `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : x === m ? "this row's model" : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`);
     const ax = r && AX ? AX.get(r.i) : null; return ax && ax.addr && ax.model ? tag3d(p, null, true, `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>`) : dash;
   }
   reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
@@ -3625,7 +3628,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const showSrc = () => SRC0 && !!T.showSrc;   // the Source column is hidden until asked for (several screens make it wide)
   const AX = !VX && sp.reg && sp.reg.structs ? new Map() : null;
   if (AX) afdbPartnerRows(sp, P.i, B.partners).then((m) => { if (gone()) return; for (const [j, x] of m) AX.set(j, x); drawTable(); drawTopList(); });
-  const COLTIP = { pair: "the pair's page: its interaction residues and every model", d3: "the model's structure in LIVIA (blue: the model this row shows; amber: another model of the pair)", pass: `models past: of the pair's models, how many pass the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), in the screens shown` };
+  const COLTIP = { pair: "the pair's page: its interaction residues and every model", d3: "the model's structure in LIVIA, in the color of the screen it opens", pass: `models past: of the pair's models, how many pass the 10% FPR cutoff (iLIS ≥ ${CUT[10]}), in the screens shown` };
   const colsNow = () => VX ? [['gene', 'Partner'], ['c', 'Cluster'], ['pair', 'Residues'], ['d3', 'Structure'], ...VMCOL.map((k) => ['m:' + k, k === 'actifpTM' ? 'actifpTM*' : k]), ['contacts', 'Contacts']]
     : [['gene', 'Partner'], ['c', 'Cluster'], ...(showSrc() ? [['src', 'Source']] : []), ['pair', 'Residues'], ['d3', 'Structure'], ['best', 'iLIS'],
       ...BCOL.map((k) => ['b:' + k, k === 'actifpTM' ? 'actifpTM*' : k]), ['contacts', 'Contacts'], ...(ONE ? [] : [['pass', 'Models past']])];
@@ -3643,7 +3646,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const entry = B.partners.map((x) => (sp.byKey.get(x.id) || {}).gene || '').find((n) => ENTRY_NAME.test(n));
       const notes = [ONE || VX ? '' : '<span class="nl-k">Models past</span> of the pair\'s models, how many pass the 10% FPR cutoff', 'actifpTM* is approximate', entry ? `a name such as ${esc(entry)} is a UniProt entry with no gene symbol` : ''].filter(Boolean);
       return `<div class="note-lines"><div>${fmtInt(list.length)} shown · ${fmtInt(B.partners.filter((x) => !x.rep).length)} predicted${B.partners.some((x) => x.id === P.key && !x.rep) ? ` (${esc(P.gene)} itself included, as a homodimer; the header tiles count the others)` : ''}${ONE ? '' : ' · each row shows the pair\'s model with the highest iLIS'}</div>`
-        + (VX ? '' : '<div><span class="nl-k">Structure</span> <span class="m3d-key same">LIVIA ↗</span> opens that model · <span class="m3d-key other">LIVIA ↗</span> opens another model of the pair (hover for which)</div>')
+        + (VX ? '' : '<div id="pt-m3d" hidden></div>')
         + notes.map((x) => `<div>${x}</div>`).join('')
         + (KB ? `<div><span class="nl-k">Literature evidence</span> <span class="kb-mark kb-p">physical</span> <span class="kb-mark kb-g">genetic</span> <span class="kb-mark kb-p kb-g">both</span> (reported in BioGRID ${esc(KB.release)})</div>` : '')
         + '</div>'; })();
@@ -3651,9 +3654,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     $('#pt').innerHTML = `<thead><tr>${cols.map(([c, l]) => `<th data-c="${c}" class="${T.sort === c ? 'sorted' + (T.asc ? ' asc' : '') : ''}${(['best', 'avg', 'iptmBest', 'iptmAvg', 'contacts', 'pass'].includes(c) || c.startsWith('m:') || c.startsWith('b:')) ? ' n' : ''}"${(c === 'd3' && VX ? "the model's structure in LIVIA" : COLTIP[c]) ? ` title="${c === 'd3' && VX ? "the model's structure in LIVIA" : COLTIP[c]}"` : ''}>${l}</th>`).join('')}</tr></thead><tbody>${view.map((p) => {
       const b = bandOf(p.best), xs = partnerIsos(p), open = xs && isoOpen.has(p.id);
       const tag = xs ? ` <button type="button" class="iso-tag" data-iso="${esc(p.id)}" aria-expanded="${!!open}" title="${esc(isoTip(p, xs))}">${xs.length} ${isoWord(xs)} ${open ? '▾' : '▸'}</button>` : '';
-      const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best), fu = x.bm && fpUrl(B, x.bm.run);   // one construct of the partner: its best-iLIS model's scores (every column, as the row), its run in LIVIA, contacts
+      const subs = open ? xs.map((x) => { const c = isoCluster(x), bb = bandOf(x.best), fu = x.bm && fpUrl(B, x.bm.run, x.bm.rank);   // one construct of the partner: its best-iLIS model's scores (every column, as the row), its run in LIVIA, contacts
         return `<tr class="iso-sub"><td class="g">${esc(x.label)}</td><td>${c ? `<span class="mdot" style="background:${clusterColor(c, k)}"></span>${clusterLabel(c, true)}` : '<span class="muted">—</span>'}</td>
-          ${showSrc() ? '<td></td>' : ''}<td class="nm">${fmtInt(x.n)} model${x.n === 1 ? '' : 's'}</td><td>${fu ? `<a href="${esc(fu)}" target="_blank" rel="noopener" data-m3d="${x.bm.rank === 1 ? 'same' : 'other'}" title="${x.bm.rank === 1 ? "Opens this construct's model" : `Opens this construct's run, which starts on rank 1; its model is rank ${x.bm.rank} there`}, in ${fpPage(B, x.bm.run)}">LIVIA ↗</a>` : ''}</td><td class="n v" style="color:${BAND_TXT[bb]};font-weight:${BAND_W[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
+          ${showSrc() ? '<td></td>' : ''}<td class="nm">${fmtInt(x.n)} model${x.n === 1 ? '' : 's'}</td><td>${fu ? `<a href="${esc(fu)}" target="_blank" rel="noopener" data-m3d data-di="${x.bm.di}" style="--c:${sp.dsColor[x.bm.di] || '#5B6B7F'}" title="Opens this construct's model (${esc(sp.dsShort[x.bm.di] || '')} rank ${x.bm.rank}), in ${fpPage(B, x.bm.run)}">LIVIA ↗</a>` : ''}</td><td class="n v" style="color:${BAND_TXT[bb]};font-weight:${BAND_W[bb]}" title="${bandLabel[bb]}">${x.best.toFixed(3)}</td>
           ${BCOL.map((kk) => { const val = x.bm ? x.bm[kk] : NaN; return kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, val)}" title="this construct's best model's ipTM">${vmfmt(kk, val)}</td>` : `<td class="n">${vmfmt(kk, val)}</td>`; }).join('')}
           <td class="n">${fmtInt(x.contacts)}</td>${ONE ? '' : `<td class="n">${x.pass} / ${x.n}</td>`}</tr>`; }).join('') : '';
       if (VX) { const x = p.vx, href = `#/${sp.id}/${P.key}/${p.id}${scopeQ}`, kb = kbOf(p.id);
@@ -3673,11 +3676,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <td>${p.c ? `<span class="mdot" style="background:${clusterColor(p.c, k)}"></span>${clusterLabel(p.c, true)}` : '<span class="muted">—</span>'}</td>
         ${showSrc() ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
         <td><a href="${href}" title="the pair's page: its interaction residues and every model">view</a></td>
-        <td>${(() => { const x = fpBest(B, p), fu = x && fpUrl(B, x.run); return fu ? tag3d(p, x, false, `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`) : ''; })() || (ax && ax.addr && ax.model ? tag3d(p, null, true, `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`)
+        <td>${(() => { const x = fpBest(B, p), fu = x && fpUrl(B, x.run, x.rank); return fu ? tag3d(p, x, false, `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`) : ''; })() || (ax && ax.addr && ax.model ? tag3d(p, null, true, `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`)
           : `<span class="muted" title="${esc(no3dWhy(B, p, AX))}">–</span>`)}</td>
-        <td class="n v"><a href="${href}" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</a></td>
+        <td class="n v">${srcDot(p.bm)}<a href="${href}" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}">${p.best.toFixed(3)}</a></td>
         ${BCOL.map((kk) => { const val = p['b:' + kk]; return kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, val)}" title="the best model's ipTM">${vmfmt(kk, val)}</td>` : `<td class="n">${vmfmt(kk, val)}</td>`; }).join('')}
         <td class="n">${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff, of the pair's models in the screens shown${p.preds.length > p.counted.length ? `; the scores in this row leave out repeat runs of the same two sequences, keeping the run with the highest iLIS (${p.counted.length} of the ${p.preds.length} models)` : ''}">${p.pass} / ${p.preds.length}</td>`}</tr>${subs}`; }).join('')}</tbody>`;
+    { const k3 = $('#pt-m3d'); if (k3) { k3.hidden = !$('#pt a[data-m3d]'); k3.innerHTML = k3.hidden ? '' : m3dKey($('#pt')); } }   // the color key, from the screens the rows show
     if (AX) $('#pt').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = [...AX.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
     if (VX) $('#pt').querySelectorAll('a.arch').forEach((a) => a.onclick = (e) => { e.preventDefault(); const x = [...VX.values()].find((y) => y.model === a.dataset.m); if (x && x.addr) openFromArchive(x.model, x.addr, a); });
     $('#pt').querySelectorAll('[data-iso]').forEach((btn) => btn.onclick = () => { const id = btn.dataset.iso; if (isoOpen.has(id)) isoOpen.delete(id); else isoOpen.add(id); drawTable(); });
@@ -3944,12 +3948,12 @@ const fpUrl0 = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru 
 // The run's lis.py scores ride along in the link's hash (#atlas=…, never sent to a server), so LIVIA shows them instead of
 // recomputing pDockQ from the structures; LIVIA uses them only when each rank's iLIS matches FlyPredictome's own table.
 const ATLAS_K = ['iLIS', 'ipSAE', 'actifpTM', 'pDockQ', 'LIpDockQ', 'pDockQ2', 'LIpDockQ2'];
-const runScores = (B, rid) => {
+const runScores = (B, rid, rk) => {   // rk: the rank LIVIA opens first (the row's model); rank 1 when absent
   if (!B._rp) { B._rp = new Map(); for (const p of [...(B.partners || []), ...(B.droppedPartners || [])]) for (const x of p.preds || []) { if (!B._rp.has(x.run)) B._rp.set(x.run, new Map()); B._rp.get(x.run).set(x.rank, x); } }
   const xs = B._rp.get(rid); if (!xs || !xs.size) return '';
   const r = {}; for (const [rk, x] of xs) if (rk != null) r[rk] = ATLAS_K.map((k) => (Number.isFinite(x[k]) ? +x[k].toFixed(4) : null));
-  return '#atlas=' + encodeURIComponent(JSON.stringify({ k: ATLAS_K, r })); };
-const fpUrl = (B, rid) => { const u = fpUrl0(B, rid); return u ? u + runScores(B, rid) : ''; };
+  return '#atlas=' + encodeURIComponent(JSON.stringify({ k: ATLAS_K, r, ...(rk > 1 && r[rk] ? { o: rk } : {}) })); };
+const fpUrl = (B, rid, rk) => { const u = fpUrl0(B, rid); return u ? u + runScores(B, rid, rk) : ''; };
 // Why a pair has no 3D link: its best run is a FlyPredictome run the FlyPredictome server does not show yet (no SET), or no model the Atlas can open
 const no3dWhy = (B, p, AX) => { const ru = p && p.bm && B.runs && B.runs.get(p.bm.run);
   if (ru && ru.ds === 'flypredictome' && !fpUrl(B, ru.id)) return 'its best run is not on the FlyPredictome server yet (a batch FlyPredictome has not loaded), so it cannot open in LIVIA';
