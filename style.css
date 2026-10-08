@@ -808,3 +808,7 @@ button.linkish:focus-visible { outline: 2px solid #1A5276; outline-offset: 2px; 
 .models:not(.show-pdq) [data-pdq] { display: none; }   /* pDockQ family behind "Show pDockQ ..." */
 .no3d { font-size: 13px; align-self: center; }
 .models th.grp { white-space: normal; line-height: 1.25; }   /* the residue groups wrap over their two narrow columns */
+/* beside a 3D link: whether it opens the model whose scores the row shows */
+.t3d { display: inline-block; font-size: 11px; line-height: 1.4; padding: 0 5px; border-radius: 5px; margin-left: 2px; cursor: help; white-space: nowrap; }
+.t3d.same { background: var(--blue-soft); color: var(--navy); }
+.t3d.other { background: #FFF4E0; color: #8A5A00; }
