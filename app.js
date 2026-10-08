@@ -1949,6 +1949,8 @@ const homoKey = (n) => `<span><i style="background:#fff;border:3px solid ${HOMO_
 // A seeded random number generator (mulberry32): the same seed gives the same numbers, so a seeded layout or community run
 // repeats exactly. Callers treat seed 0 as no randomness at all (the fixed order or start they always had).
 const seededRandom = (seed) => { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; };
+const NEWTAB = '⌘-click (Mac) or Ctrl-click (Windows) opens it in a new tab';   // the hint on every network element a click opens
+const openHash = (u, ev) => { if (ev && (ev.metaKey || ev.ctrlKey)) window.open(u, '_blank'); else location.hash = u; };   // a click follows the link; ⌘ or Ctrl opens it in a new tab
 const shuffled = (n, rand) => { const o = [...Array(n).keys()]; if (rand) for (let i = n - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [o[i], o[j]] = [o[j], o[i]]; } return o; };   // 0..n-1, in a seeded order (index order without rand)
 // Modularity of a grouping (Newman 2006; with a resolution, Reichardt & Bornholdt 2006): edges [u, v, weight], comm a group per node.
 function modularity(n, edges, comm, gamma = 1) {
@@ -3769,9 +3771,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       label.attr('dy', (d) => -rd(d) - 6).attr('font-size', (d) => (d.q ? ND.lbsize + 2 : ND.lbsize - 1)).attr('fill', ND.lbcol).attr('stroke', ND.lbout ? 'rgba(255,255,255,0.92)' : 'none').attr('display', (d) => (named(d) ? null : 'none'));
       restyle(); } };
     NET.recolor();
-    node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR in every screen` : `<b>${esc(d.row.gene)}</b> · iLIS ${ONE ? d.e.best.toFixed(3) : `best ${d.e.best.toFixed(3)}${Number.isFinite(d.e.avg) ? ` · average ${d.e.avg.toFixed(3)}` : ''}`} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}`, ev.clientX, ev.clientY))
+    node.on('mousemove', (ev, d) => showTip(d.q ? `<b>${esc(d.row.gene)}</b> · ${fmtInt(d.row.pos10)} partners past 10% FPR in every screen` : `<b>${esc(d.row.gene)}</b> · iLIS ${ONE ? d.e.best.toFixed(3) : `best ${d.e.best.toFixed(3)}${Number.isFinite(d.e.avg) ? ` · average ${d.e.avg.toFixed(3)}` : ''}`} with ${esc(P.gene)}<br>${srcBadges(sp, d.e.src)}<br>click for its page · ${NEWTAB}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip)
-      .on('click', (ev, d) => { if (!d.q && !ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}${scopeQ}`; });
+      .on('click', (ev, d) => { if (!d.q && !ev.defaultPrevented) openHash(`#/${sp.id}/${d.row.key}${scopeQ}`, ev); });
     const q = nodes[0]; q.fx = W / 2; q.fy = H / 2;
     const R = Math.min(W, H) * 0.42;
     if (C.seed) { const sr = seededRandom(C.seed); nodes.slice(1).forEach((d) => { const t = sr() * 2 * Math.PI, rr = R * (0.4 + 0.6 * sr()); d.x = W / 2 + rr * Math.cos(t); d.y = H / 2 + rr * Math.sin(t); }); }   // a seed: seeded starting places
@@ -4248,8 +4250,8 @@ async function viewVirus(spId, taxid) {
     const link = g.append('g').selectAll('line').data(links).join('line').attr('stroke-linecap', 'round').style('cursor', 'pointer');
     const ecol = () => { link.attr('stroke', (d) => (!grouped ? EGRAY(d.best) : inC(d) ? ccol(inC(d)) : '#C7CED6')).attr('stroke-opacity', (d) => (!grouped ? 0.85 : inC(d) ? 0.8 : 0.3)).attr('stroke-width', (d) => EWID(d.best) * ND.ewid)
       .attr('display', (d) => (ND.intra && grouped && !inC(d) ? 'none' : null)); link.filter((d) => grouped && inC(d)).raise(); };
-    link.on('mousemove', (ev, d) => showTip(`<b>${esc(d.x && G(d.x.a))}</b> × <b>${esc(d.x && G(d.x.b))}</b> · iLIS ${d.best.toFixed(3)} · ${bandLabel[bandOf(d.best)]}${Number.isFinite(d.x.iptm) ? ` · ipTM ${d.x.iptm.toFixed(2)}` : ''}<br>click for the pair`, ev.clientX, ev.clientY))
-      .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); location.hash = pairHref(d.x); });
+    link.on('mousemove', (ev, d) => showTip(`<b>${esc(d.x && G(d.x.a))}</b> × <b>${esc(d.x && G(d.x.b))}</b> · iLIS ${d.best.toFixed(3)} · ${bandLabel[bandOf(d.best)]}${Number.isFinite(d.x.iptm) ? ` · ipTM ${d.x.iptm.toFixed(2)}` : ''}<br>click for the pair · ${NEWTAB}`, ev.clientX, ev.clientY))
+      .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); openHash(pairHref(d.x), ev); });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
         .on('drag', (ev, d) => { d.fx = ev.x; d.fy = ev.y; }).on('end', (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
@@ -4265,8 +4267,8 @@ async function viewVirus(spId, taxid) {
       label.attr('display', (d) => (named(d) && rank.get(d.id) < budget ? null : 'none')).attr('font-size', (ND.lbsize - 0.5) / z).attr('stroke-width', 3 / z).attr('dy', (d) => -rd(d) - 5 / z);
     }
     let fitK = 1; relabel(1);
-    node.on('mousemove', (ev, d) => showTip(`<b>${esc(G(d.id))}</b>${d.row.name && d.row.name !== d.row.gene ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} partner${(deg.get(d.id) || 0) === 1 ? '' : 's'} in the virus at this cutoff${homo.has(d.id) ? ' · predicted homodimer' : ''}`, ev.clientX, ev.clientY))
-      .on('mouseleave', hideTip).on('click', (ev, d) => { if (!ev.defaultPrevented) location.hash = `#/${sp.id}/${d.row.key}`; });
+    node.on('mousemove', (ev, d) => showTip(`<b>${esc(G(d.id))}</b>${d.row.name && d.row.name !== d.row.gene ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} partner${(deg.get(d.id) || 0) === 1 ? '' : 's'} in the virus at this cutoff${homo.has(d.id) ? ' · predicted homodimer' : ''}<br>click for its page · ${NEWTAB}`, ev.clientX, ev.clientY))
+      .on('mouseleave', hideTip).on('click', (ev, d) => { if (!ev.defaultPrevented) openHash(`#/${sp.id}/${d.row.key}`, ev); });
     const same = (l) => (typeof l.source === 'object' ? l.source.c === l.target.c : true);
     const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => 60 + 60 * (1 - Math.min(1, l.best))).strength((l) => (grouped && !same(l) ? 0.02 : 0.5)))
       .force('charge', d3.forceManyBody().strength(nodes.length > 150 ? -90 : -200)).force('collide', d3.forceCollide().radius((d) => r(d) + 8))
@@ -4508,15 +4510,15 @@ async function viewNested(spId, q) {
     const X = (i) => 70 + (col(i) / Math.max(1, nc - 1)) * (W - 180), Y = (i) => 20 + y.get(i) * (H - 40);
     g.append('g').selectAll('line').data(links).join('line').attr('x1', (d) => X(d.a)).attr('y1', (d) => Y(d.a)).attr('x2', (d) => X(d.b)).attr('y2', (d) => Y(d.b))
       .attr('stroke', (d) => RC[Math.min(d.r, RC.length - 1)]).attr('stroke-opacity', (d) => (col(d.a) === col(d.b) ? 0.25 : 0.55)).attr('stroke-width', (d) => EWID(d.e.best)).style('cursor', 'pointer')
-      .on('mousemove', (ev, d) => showTip(`<b>${esc(gname(d.a))}</b> × <b>${esc(gname(d.b))}</b> · iLIS ${d.e.best.toFixed(3)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip)
-      .on('click', (ev, d) => { hideTip(); location.hash = `#/${sp.id}/${sp.rows[d.a].key}/${sp.rows[d.b].key}`; });
+      .on('mousemove', (ev, d) => showTip(`<b>${esc(gname(d.a))}</b> × <b>${esc(gname(d.b))}</b> · iLIS ${d.e.best.toFixed(3)}<br>click for the pair · ${NEWTAB}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip)
+      .on('click', (ev, d) => { hideTip(); openHash(`#/${sp.id}/${sp.rows[d.a].key}/${sp.rows[d.b].key}`, ev); });
     const many = ids.length > 90, node = g.append('g').selectAll('g').data(ids).join('g').attr('transform', (i) => `translate(${X(i)},${Y(i)})`).style('cursor', 'pointer');
     node.append('circle').attr('r', (i) => (col(i) === 0 ? 8 : 5.5)).attr('fill', (i) => (res.info.get(i) && res.info.get(i).hidden ? '#fff' : S.cm ? (cgrp.has(i) ? commHue(cgrp.get(i)) : '#C3CCD6') : RC[Math.min(col(i), RC.length - 1)]))
       .attr('stroke', (i) => RC[Math.min(col(i), RC.length - 1)]).attr('stroke-width', 1.6).attr('stroke-dasharray', (i) => (res.info.get(i) && res.info.get(i).hidden ? '2 2' : null));
     lab = node.append('text').attr('display', (i) => (!many || col(i) === 0 || (res.info.get(i) && res.info.get(i).p < 0.01) ? null : 'none')).text(gname).attr('x', 9).attr('dy', '0.32em').attr('font-size', 10.5)
       .attr('font-family', 'IBM Plex Sans, sans-serif').attr('font-weight', (i) => (col(i) === 0 ? 700 : 600)).attr('fill', '#17263A').attr('paint-order', 'stroke').attr('stroke', 'rgba(255,255,255,0.92)').attr('stroke-width', 3);
-    node.on('mousemove', (ev, i) => { const x = res.info.get(i); showTip(`<b>${esc(gname(i))}</b> · ${col(i) === 0 ? 'bait' : `${x.hidden ? 'hidden, ' : ''}round ${x.r}`}${x ? `<br>${fmtInt(x.n)} connection${x.n === 1 ? '' : 's'} into the network · p ${x.p.toExponential(1)} · q ${x.q.toFixed(3)}` : ''}`, ev.clientX, ev.clientY); })
-      .on('mouseleave', hideTip).on('click', (ev, i) => { location.hash = `#/${sp.id}/${sp.rows[i].key}`; });
+    node.on('mousemove', (ev, i) => { const x = res.info.get(i); showTip(`<b>${esc(gname(i))}</b> · ${col(i) === 0 ? 'bait' : `${x.hidden ? 'hidden, ' : ''}round ${x.r}`}${x ? `<br>${fmtInt(x.n)} connection${x.n === 1 ? '' : 's'} into the network · p ${x.p.toExponential(1)} · q ${x.q.toFixed(3)}` : ''}<br>click for its page · ${NEWTAB}`, ev.clientX, ev.clientY); })
+      .on('mouseleave', hideTip).on('click', (ev, i) => { openHash(`#/${sp.id}/${sp.rows[i].key}`, ev); });
     $('#ns-legend').innerHTML = RC.slice(0, nc).map((cc, k) => `<span><i style="${S.cm ? `background:#fff;border:2px solid ${cc}` : `background:${cc}`};border-radius:50%"></i>${k === 0 ? 'baits' : `round ${k}`} (${fmtInt(byCol[k].filter((i) => !(res.info.get(i) || {}).hidden).length)})</span>`).join('')
       + (S.cm ? cbig.map((x, n) => `<span><i style="background:${commHue(n)};border-radius:50%"></i>${commWord(S.cm, n + 1)} (${fmtInt(csz.get(x))})</span>`).join('') + `<span><i style="background:#C3CCD6;border-radius:50%"></i>in no ${S.cm === 'cc' ? 'part' : 'community'} of three or more</span><span class="muted">fill: ${S.cm === 'cc' ? 'connected part' : 'community'}; outline and column: round</span>` : '')
       + (showH && [...res.info.values()].some((x) => x.hidden) ? '<span><i style="background:#fff;border:1.5px dashed #5B6573;border-radius:50%"></i>hidden: below the rule</span>' : '') + (ids.length >= 400 ? '<span class="muted">capped at 400, kept by p, then connections</span>' : '');
@@ -5240,7 +5242,8 @@ async function viewNetwork(spId, q) {
     const M = new Map(), key = (a, b) => (a < b ? a + ',' + b : b + ',' + a);
     for (const l of links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; M.set(key(a, b), l); }
     if (!S.set && TPN == null) { try { TPN = await tested(sp); } catch (e) { TPN = null; } if (SCAN) SCAN.TP = TPN; }   // the matrix marks folded pairs
-    const TP = S.set ? null : TPN, cut = cutV(), names = ord.map((d) => d.row.gene);
+    const gcount = new Map(); ord.forEach((d) => gcount.set(d.row.gene, (gcount.get(d.row.gene) || 0) + 1));
+    const TP = S.set ? null : TPN, cut = cutV(), names = ord.map((d) => (gcount.get(d.row.gene) > 1 ? `${d.row.gene} (${d.row.key})` : d.row.gene));   // two proteins with one symbol (two accessions) keep their own rows
     const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB;   // the matrix: every pair in the edge table (the screen's, with a filter), apart from the network's cutoff
     const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
       const l = M.get(key(a, b)); if (l) return { v: l.best, ip: l.iptm, exact: true };
@@ -5261,10 +5264,10 @@ async function viewNetwork(spId, q) {
     const cs = $('#nw-heat-cs').value || 'Blues';
     if (box.querySelector(':scope > .empty')) box.innerHTML = '';
     P.react(box, [
-      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],
+      { type: 'heatmap', z: zi, x: [...names.keys()], y: [...names.keys()], text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],   // axes by row number, names as labels: a repeated name never merges two rows, and every row is labeled
       { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
-        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain' },
-        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x' }, dragmode: 'zoom' },
+        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain', tickmode: 'array', tickvals: [...names.keys()], ticktext: names, range: [-0.5, n - 0.5] },
+        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x', tickmode: 'array', tickvals: [...names.keys()], ticktext: names }, dragmode: 'zoom' },
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_${sp.id}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
     box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
     box.on('plotly_relayout', (ev) => {   // zoomed in, the labels grow with the room each one has (6 to 14 px)
@@ -5361,12 +5364,12 @@ async function viewNetwork(spId, q) {
     restyle();
     const pubsText = (d) => (d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : '');
     const consText = (ev) => ev.map((x) => `${XO ? XO.lab(x.y) : esc(x.y)}: ${esc(x.a2)} × ${esc(x.b2)}, iLIS ${x.best.toFixed(3)}`).join('<br>');
-    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interaction residues${d.cons ? `<br><b>conserved</b>, also predicted between the orthologs in<br>${consText(d.cons)}` : ''}`, ev.clientX, ev.clientY); })
+    link.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b> · iLIS ${sp.one ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${Number.isFinite(d.iptm) ? ` · ipTM ${d.iptm.toFixed(2)}` : ''}${pubsText(d)}<br>${srcBadges(sp, d.src)} · click for the interaction residues · ${NEWTAB}${d.cons ? `<br><b>conserved</b>, also predicted between the orthologs in<br>${consText(d.cons)}` : ''}`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d), u = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}${S.set ? `?set=${encodeURIComponent(S.set)}` : ''}`; if (ev.metaKey || ev.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
-    xol.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>: ${d.folded === false ? 'never folded in these screens' : `not predicted past iLIS ${cutV()} ${S.set ? 'in this scope' : 'here'}`}<br>predicted between the orthologs in<br>${consText(d.xo)}<br>click for the strongest of those pairs`, ev.clientX, ev.clientY); })
+    xol.on('mousemove', (ev, d) => { const [a, b] = ends(d); showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>: ${d.folded === false ? 'never folded in these screens' : `not predicted past iLIS ${cutV()} ${S.set ? 'in this scope' : 'here'}`}<br>predicted between the orthologs in<br>${consText(d.xo)}<br>click for the strongest of those pairs · ${NEWTAB}`, ev.clientX, ev.clientY); })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const x = [...d.xo].sort((p, q) => q.best - p.best)[0], u = `#/${x.y}/${x.k2}`; if (ev.metaKey || ev.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
     dash.on('mousemove', (ev, d) => { const [a, b] = ends(d), f = FOLD.get(fkey(a, b));
-        showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${cutV()}${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}: ${esc(foldText(f))}<br>click for the pair's predictions`, ev.clientX, ev.clientY);
+        showTip(`<b>${esc(gname(a))}</b> × <b>${esc(gname(b))}</b>${pubsText(d)}<br>not predicted past iLIS ${cutV()}${S.iptm ? ` with ipTM ≥ ${S.iptm}` : ''}: ${esc(foldText(f))}<br>click for the pair's predictions · ${NEWTAB}`, ev.clientX, ev.clientY);
         if ((!f || (f.st === 'low' && !Number.isFinite(f.best))) && !d.checking) { d.checking = true; if (f) FOLD.delete(fkey(a, b)); checkFolded([[a, b]]).then(() => { d.checking = false; restyle(); }); } })
       .on('mouseleave', hideTip).on('click', (ev, d) => { hideTip(); const [a, b] = ends(d), u = `#/${sp.id}/${sp.rows[a].key}/${sp.rows[b].key}`; if (ev.metaKey || ev.ctrlKey) window.open(u, '_blank'); else location.hash = u; });
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
@@ -5426,7 +5429,7 @@ async function viewNetwork(spId, q) {
     mods();
     const placeLabels = liftLabels(g, node);
     hullLabG.raise();   // group names above the protein-name layer too
-    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas${SIG.has(d.id) ? (() => { const x = SIG.get(d.id), f = (v) => (v < 0.001 ? v.toExponential(1) : v.toFixed(3)); return `<br>pairs with ${fmtInt(x.k)} of the ${fmtInt(x.m)} proteins-of-interest${x.t ? ' it was folded with' : ''} · p ${f(x.p)}, q ${f(x.q)}${x.q <= 0.05 ? ' (more than chance)' : ''}`; })() : ''}${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partners · ⌘ or Ctrl-click opens its page in a new tab` : 'click for its page'}`, ev.clientX, ev.clientY))
+    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partners past 10% FPR in the Atlas${SIG.has(d.id) ? (() => { const x = SIG.get(d.id), f = (v) => (v < 0.001 ? v.toExponential(1) : v.toFixed(3)); return `<br>pairs with ${fmtInt(x.k)} of the ${fmtInt(x.m)} proteins-of-interest${x.t ? ' it was folded with' : ''} · p ${f(x.p)}, q ${f(x.q)}${x.q <= 0.05 ? ' (more than chance)' : ''}`; })() : ''}${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partners · ${NEWTAB.replace('opens it', 'opens its page')}` : S.click === 'select' ? `click to highlight its pairs · ${NEWTAB.replace('opens it', 'opens its page')}` : `click for its page · ${NEWTAB}`}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, d) => { if (ev.defaultPrevented) return; hideTip();
         if (ev.metaKey || ev.ctrlKey) { window.open(`#/${sp.id}/${d.row.key}`, '_blank'); return; }   // a new tab, as for a link
         if (S.click === 'open') { location.hash = `#/${sp.id}/${d.row.key}`; return; }
