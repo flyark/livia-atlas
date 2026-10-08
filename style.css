@@ -810,5 +810,10 @@ button.linkish:focus-visible { outline: 2px solid #1A5276; outline-offset: 2px; 
 .models th.grp { white-space: normal; line-height: 1.25; }   /* the residue groups wrap over their two narrow columns */
 /* a 3D link's pill: blue when it opens the model whose scores the row shows, amber when it opens another model of the pair */
 a[data-m3d], .m3d-key { display: inline-block; padding: 0 6px; border-radius: 6px; line-height: 1.5; white-space: nowrap; }
-a[data-m3d="same"], .m3d-key.same { background: var(--blue-soft); }
+a[data-m3d="same"], .m3d-key.same { background: var(--blue-soft); color: var(--navy); }   /* navy on the pale blue: 4.5:1 or better */
 a[data-m3d="other"], .m3d-key.other { background: #FFF4E0; color: #8A5A00; }
+/* a card's notes, one line per kind, each led by its subject */
+.note-lines { display: grid; gap: 3px; }
+.note-lines .nl-k { font-weight: 600; color: var(--ink-2); margin-right: 4px; }
+.card-note { font-size: 13px; line-height: 1.5; margin-top: 4px; max-width: 980px; }
+#tl-m3d .tl-keys { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; white-space: normal; }   /* the color key's two items, each on its own line: they never run past the card */
