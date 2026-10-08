@@ -5305,9 +5305,10 @@ async function viewNetwork(spId, q) {
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_${sp.id}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
     box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
     box.on('plotly_relayout', (ev) => {   // zoomed in, the labels grow with the room each one has (6 to 14 px)
-      const xr = ev['xaxis.range[0]'] != null ? [ev['xaxis.range[0]'], ev['xaxis.range[1]']] : Array.isArray(ev['xaxis.range']) ? ev['xaxis.range'] : ev['xaxis.autorange'] ? [-0.5, n - 0.5] : null;
-      if (!xr) return; const shown = Math.max(1, Math.abs(xr[1] - xr[0])), f = Math.max(6, Math.min(14, 520 / shown)), tk = ticksIn(xr[0], xr[1]);   // the names of the rows now shown
-      box.__tick = f; P.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tk.tickvals, 'xaxis.ticktext': tk.ticktext, 'yaxis.tickvals': tk.tickvals, 'yaxis.ticktext': tk.ticktext }); });
+      if (!Object.keys(ev).some((k) => /^[xy]axis\.(range|autorange)/.test(k))) return;   // a zoom or pan, not this handler's own label update
+      const fl = box._fullLayout, xr = (fl && fl.xaxis.range) || [-0.5, n - 0.5], yr = (fl && fl.yaxis.range) || [n - 0.5, -0.5];   // each axis labels the rows it shows (a zoom box need not be square)
+      const shown = Math.max(1, Math.min(Math.abs(xr[1] - xr[0]), Math.abs(yr[1] - yr[0]))), f = Math.max(6, Math.min(14, 520 / shown)), tx = ticksIn(xr[0], xr[1]), ty = ticksIn(yr[0], yr[1]);
+      box.__tick = f; P.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tx.tickvals, 'xaxis.ticktext': tx.ticktext, 'yaxis.tickvals': ty.tickvals, 'yaxis.ticktext': ty.ticktext }); });
     box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; window.open(u, '_blank'); });
   }
   function graph(nodes, links, extra = [], seed = null, xo = [], XO = null) {
